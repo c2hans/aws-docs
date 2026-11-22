@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-managedblockchain-node-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ManagedBlockchain::Node",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-managedblockchain-node-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ManagedBlockchain::Node
 Properties:
   [MemberId](#cfn-managedblockchain-node-memberid): {{String}}
@@ -114,7 +114,7 @@ The unique identifier of the node.
 #### YAML
 <a name="aws-resource-managedblockchain-node--examples--Create_a_node_on_an_Ethereum_network--yaml"></a>
 
-```
+```yaml
 Description: "Basic Ethereum node template"
 Parameters:
   NetworkId:
@@ -136,7 +136,7 @@ Resources:
 #### JSON
 <a name="aws-resource-managedblockchain-node--examples--Create_a_node_on_an_Ethereum_network--json"></a>
 
-```
+```json
 {
     "Description": "Basic Ethereum node template",
     "Parameters": {
@@ -171,7 +171,7 @@ Resources:
 #### YAML
 <a name="aws-resource-managedblockchain-node--examples--Create_a_node_in_a_Hyperledger_Fabric_network_member--yaml"></a>
 
-```
+```yaml
 Description: "Basic Hyperledger Fabric node template"
 Parameters:
   NetworkId:
@@ -197,7 +197,7 @@ Resources:
 #### JSON
 <a name="aws-resource-managedblockchain-node--examples--Create_a_node_in_a_Hyperledger_Fabric_network_member--json"></a>
 
-```
+```json
 {
   "Description": "Basic Hyperledger Fabric node template",
   "Parameters": {

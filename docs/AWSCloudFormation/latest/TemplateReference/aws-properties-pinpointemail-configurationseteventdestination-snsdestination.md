@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pinpointemail-configurationseteventdestination-snsdestination-syntax.json"></a>
 
-```
+```json
 {
   "[TopicArn](#cfn-pinpointemail-configurationseteventdestination-snsdestination-topicarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pinpointemail-configurationseteventdestination-snsdestination-syntax.yaml"></a>
 
-```
+```yaml
   [TopicArn](#cfn-pinpointemail-configurationseteventdestination-snsdestination-topicarn): {{String}}
 ```
 

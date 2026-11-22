@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-elasticache-securitygroupingress-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ElastiCache::SecurityGroupIngress",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-elasticache-securitygroupingress-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ElastiCache::SecurityGroupIngress
 Properties:
   [CacheSecurityGroupName](#cfn-elasticache-securitygroupingress-cachesecuritygroupname): {{String}}

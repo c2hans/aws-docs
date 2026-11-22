@@ -68,7 +68,7 @@ The following permissions policy for an external account binding role allows ACM
 
 Issuance and revocation are separate statements because the two actions do not carry the same condition keys. Adding the `acm:KeyAlgorithm` or `acm:DomainNames` condition to the revocation statement would prevent the client from revoking anything.
 
-```
+```JSON
 {
   "Version": "2012-10-17",
   "Statement": [

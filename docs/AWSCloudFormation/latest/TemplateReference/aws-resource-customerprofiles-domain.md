@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-customerprofiles-domain-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CustomerProfiles::Domain",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-customerprofiles-domain-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CustomerProfiles::Domain
 Properties:
   [DataStore](#cfn-customerprofiles-domain-datastore): {{
@@ -154,7 +154,7 @@ The following example creates a Domain.
 #### YAML
 <a name="aws-resource-customerprofiles-domain--examples----yaml"></a>
 
-```
+```yaml
 Type: "AWS::CustomerProfiles::Domain"
 Properties:
     DomainName: "ExampleDomain"
@@ -166,7 +166,7 @@ Properties:
 #### JSON
 <a name="aws-resource-customerprofiles-domain--examples----json"></a>
 
-```
+```json
 "Type": "AWS::CustomerProfiles::Domain",
 "Properties": {
     "DomainName": "ExampleDomain",

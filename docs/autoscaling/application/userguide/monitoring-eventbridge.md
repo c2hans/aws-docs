@@ -28,7 +28,7 @@ The following example event shows that Application Auto Scaling increased (scale
 
 In the `detail` object, the values for the `resourceId`, `serviceNamespace`, and `scalableDimension` attributes identify the scalable target. The values for the `newDesiredCapacity` and `oldDesiredCapacity` attributes refer to the new capacity after the scale-out event and the original capacity before the scale-out event. The `maxCapacity` is the maximum size limit of the scalable target.
 
-```
+```json
 {
   "version": "0",
   "id": "11112222-3333-4444-5555-666677778888",
@@ -56,7 +56,7 @@ In the `detail` object, the values for the `resourceId`, `serviceNamespace`, and
 
 To create a rule that captures all `scaledToMax` state change events for all scalable targets, use the following sample event pattern.
 
-```
+```json
 {
   "source": [
     "aws.application-autoscaling"
@@ -81,7 +81,7 @@ Events that are delivered via CloudTrail have `AWS API Call via CloudTrail` as t
 
 The following example event represents a CloudTrail log file entry that shows that a console user called the Application Auto Scaling [RegisterScalableTarget](https://docs.aws.amazon.com/autoscaling/application/APIReference/API_RegisterScalableTarget.html) action.
 
-```
+```json
 {
   "version": "0",
   "id": "99998888-7777-6666-5555-444433332222",
@@ -145,7 +145,7 @@ The following example event represents a CloudTrail log file entry that shows th
 
 To create a rule based on all [DeleteScalingPolicy](https://docs.aws.amazon.com/autoscaling/application/APIReference/API_DeleteScalingPolicy.html) and [DeregisterScalableTarget](https://docs.aws.amazon.com/autoscaling/application/APIReference/API_DeregisterScalableTarget.html) API calls for all scalable targets, use the following sample event pattern:
 
-```
+```json
 {
   "source": [
     "aws.autoscaling"

@@ -35,7 +35,7 @@ Requests can be viewed for 24 hours after they enter the `cancelled`, `expired`,
 **(Capacity Reservation owner) To view requests you initiated**
 Use the [describe-capacity-reservation-billing-requests](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-capacity-reservation-billing-requests.html) command.
 
-```
+```bash
 aws ec2 describe-capacity-reservation-billing-requests \
     --role odcr-owner
 ```
@@ -43,7 +43,7 @@ aws ec2 describe-capacity-reservation-billing-requests \
 **(Consumer account) To view requests sent to you**
 Use the [describe-capacity-reservation-billing-requests](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-capacity-reservation-billing-requests.html) command.
 
-```
+```bash
 aws ec2 describe-capacity-reservation-billing-requests \
     --role unused-reservation-billing-owner
 ```
@@ -54,7 +54,7 @@ aws ec2 describe-capacity-reservation-billing-requests \
 **(Capacity Reservation owner) To view requests you initiated**
 Use the [Get-EC2CapacityReservationBillingRequest](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2CapacityReservationBillingRequest.html) cmdlet.
 
-```
+```powershell
 Get-EC2CapacityReservationBillingRequest `
     -Role odcr-owner
 ```
@@ -62,7 +62,7 @@ Get-EC2CapacityReservationBillingRequest `
 **(Consumer account) To view requests sent to you**
 Use the [Get-EC2CapacityReservationBillingRequest](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2CapacityReservationBillingRequest.html) cmdlet.
 
-```
+```powershell
 Get-EC2CapacityReservationBillingRequest `
     -Role unused-reservation-billing-owner
 ```

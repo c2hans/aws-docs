@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-integration-triggerproperties-syntax.json"></a>
 
-```
+```json
 {
   "[Scheduled](#cfn-customerprofiles-integration-triggerproperties-scheduled)" : {{ScheduledTriggerProperties}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-integration-triggerproperties-syntax.yaml"></a>
 
-```
+```yaml
   [Scheduled](#cfn-customerprofiles-integration-triggerproperties-scheduled): {{
     ScheduledTriggerProperties}}
 ```

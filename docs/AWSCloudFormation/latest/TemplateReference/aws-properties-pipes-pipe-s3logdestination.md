@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-s3logdestination-syntax.json"></a>
 
-```
+```json
 {
   "[BucketName](#cfn-pipes-pipe-s3logdestination-bucketname)" : {{String}},
   "[BucketOwner](#cfn-pipes-pipe-s3logdestination-bucketowner)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-s3logdestination-syntax.yaml"></a>
 
-```
+```yaml
   [BucketName](#cfn-pipes-pipe-s3logdestination-bucketname): {{String}}
   [BucketOwner](#cfn-pipes-pipe-s3logdestination-bucketowner): {{String}}
   [OutputFormat](#cfn-pipes-pipe-s3logdestination-outputformat): {{String}}

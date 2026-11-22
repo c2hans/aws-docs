@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-route53resolver-resolverqueryloggingconfig-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-route53resolver-resolverqueryloggingconfig-tag-key)" : {{String}},
   "[Value](#cfn-route53resolver-resolverqueryloggingconfig-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-route53resolver-resolverqueryloggingconfig-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-route53resolver-resolverqueryloggingconfig-tag-key): {{String}}
   [Value](#cfn-route53resolver-resolverqueryloggingconfig-tag-value): {{String}}
 ```

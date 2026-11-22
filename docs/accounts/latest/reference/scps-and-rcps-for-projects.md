@@ -14,7 +14,7 @@ When you use our new AWS experience, AWS manages the organization management pol
 
 The following is a service control policy for all users in a project and cannot be changed:
 
-```
+```JSON
 {
   "Version" : "2012-10-17",
   "Statement" : [
@@ -63,7 +63,7 @@ After you activate advanced features, this policy stays attached to the root of 
 
 In addition, we apply the following service control policy for all users in a project to restrict certain modifications to your project that are either not supported or must be completed in AWS Settings:
 
-```
+```JSON
 {
   "Version" : "2012-10-17",
   "Statement" : [
@@ -163,7 +163,7 @@ Removing this policy doesn't let you update the root user email address of a pro
 
 In addition, we also apply the following service control policy for all users in a project to restrict AWS Regions to allow for support for partitional services, depending on your {{selected-region}}:
 
-```
+```JSON
 {
   "Version" : "2012-10-17",
   "Statement" : [
@@ -367,7 +367,7 @@ In addition, we also apply the following service control policy for all users in
 
 After you activate advanced features, the following service control policy is applied to your account:
 
-```
+```JSON
 {
   "Version" : "2012-10-17",
   "Statement" : [
@@ -615,7 +615,7 @@ After you activate advanced features, the following service control policy is ap
 
 If you use a spend limit, the following service control policies are applied to your project as it nears the spend limit. For more information about spend limits, see [Create a spend limit in AWS Settings](create-spend-limit.md).
 
-```
+```JSON
 {
   "Version": "2012-10-17",
   "Statement": {
@@ -645,7 +645,7 @@ If you use a spend limit, the following service control policies are applied to 
 }
 ```
 
-```
+```JSON
 {
   "Version": "2012-10-17",
   "Statement": {
@@ -663,7 +663,7 @@ If you use a spend limit, the following service control policies are applied to 
 }
 ```
 
-```
+```JSON
 {
   "Version": "2012-10-17",
   "Statement": {
@@ -679,7 +679,7 @@ If you use a spend limit, the following service control policies are applied to 
 }
 ```
 
-```
+```JSON
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -951,7 +951,7 @@ If you use a spend limit, the following service control policies are applied to 
 
 The following service control policy controls access to the AWS services available in the Free Tier of our new AWS experience. This policy cannot be modified. To access additional services, upgrade your account. For more information, see [Upgrade your account in AWS Settings](upgrade-account.md).
 
-```
+```JSON
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -1441,7 +1441,7 @@ The following service control policy controls access to the AWS services availab
 
 The following service control policy controls access to the AWS services available in the Paid Plan of our new AWS experience. This policy cannot be modified. To access additional services, activate advanced features. For more information, see [Activate advanced AWS features](activate-advanced-features.md).
 
-```
+```JSON
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -1942,7 +1942,7 @@ The following service control policy controls access to the AWS services availab
 
 The following is the resource control policy for the [resources in the project](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_rcps.html#rcp-supported-services). This policy cannot be modified:
 
-```
+```JSON
 {
   "Version" : "2012-10-17",
   "Statement" : [

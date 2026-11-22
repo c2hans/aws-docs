@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eventsv2-subscriber-retrypolicy-syntax.json"></a>
 
-```
+```json
 {
   "[MaxEventAgeInSeconds](#cfn-eventsv2-subscriber-retrypolicy-maxeventageinseconds)" : {{Integer}},
   "[MaxRetryAttempts](#cfn-eventsv2-subscriber-retrypolicy-maxretryattempts)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eventsv2-subscriber-retrypolicy-syntax.yaml"></a>
 
-```
+```yaml
   [MaxEventAgeInSeconds](#cfn-eventsv2-subscriber-retrypolicy-maxeventageinseconds): {{Integer}}
   [MaxRetryAttempts](#cfn-eventsv2-subscriber-retrypolicy-maxretryattempts): {{Integer}}
   [RetryStrategy](#cfn-eventsv2-subscriber-retrypolicy-retrystrategy): {{String}}

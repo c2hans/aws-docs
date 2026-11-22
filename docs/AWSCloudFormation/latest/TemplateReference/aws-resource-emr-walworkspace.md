@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-emr-walworkspace-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EMR::WALWorkspace",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-emr-walworkspace-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EMR::WALWorkspace
 Properties:
   [Tags](#cfn-emr-walworkspace-tags): {{

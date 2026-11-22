@@ -50,7 +50,7 @@ You can enable hibernation for your On-Demand Instances.
 **To enable hibernation for an On-Demand Instance**
 Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command to launch an instance. Specify the EBS root volume parameters using the `--block-device-mappings file://mapping.json` parameter, and enable hibernation using the `--hibernation-options Configured=true` parameter.
 
-```
+```bash
 aws ec2 run-instances \
     --image-id {{ami-0abcdef1234567890}} \
     --instance-type {{m5.large}} \
@@ -62,7 +62,7 @@ aws ec2 run-instances \
 
 Specify the following in `mapping.json`.
 
-```
+```json
 [
     {
         "DeviceName": "{{/dev/xvda}}",
@@ -77,7 +77,7 @@ Specify the following in `mapping.json`.
 
 The value for `DeviceName` must match the root device name that's associated with the AMI. To find the root device name, use the [describe-images](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command.
 
-```
+```bash
 aws ec2 describe-images --image-id ami-{{0abcdef1234567890}}
 ```
 
@@ -89,7 +89,7 @@ If you enabled encryption by default in this AWS Region, you can omit `"Encrypte
 **To enable hibernation for an On-Demand Instance**
 Use the [New-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Instance.html) command to launch an instance. Specify the EBS root volume by first defining the block device mapping, and then adding it to the command using the `-BlockDeviceMappings` parameter. Enable hibernation using the `-HibernationOptions_Configured $true` parameter.
 
-```
+```powershell
 $ebs_encrypt = New-Object Amazon.EC2.Model.BlockDeviceMapping
 $ebs_encrypt.DeviceName = "{{/dev/xvda}}"
 $ebs_encrypt.Ebs = New-Object Amazon.EC2.Model.EbsBlockDevice
@@ -109,7 +109,7 @@ New-EC2Instance `
 
 The value for `DeviceName` must match the root device name associated with the AMI. To find the root device name, use the [Get-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Image.html) command.
 
-```
+```powershell
 Get-EC2Image -ImageId {{ami-0abcdef1234567890}}
 ```
 
@@ -157,7 +157,7 @@ You can enable hibernation for your Spot Instances. For more information about h
 **To enable hibernation for a Spot Instance**
 Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command to request a Spot Instance. Specify the EBS root volume parameters using the `--block-device-mappings file://mapping.json` parameter, and enable hibernation using the `--hibernation-options Configured=true` parameter. The Spot request type (`SpotInstanceType`) must be `persistent`.
 
-```
+```bash
 aws ec2 run-instances \
     --image-id {{ami-0abcdef1234567890}} \
     --instance-type {{c4.xlarge}} \
@@ -177,7 +177,7 @@ aws ec2 run-instances \
 
 Specify the EBS root volume parameters in `mapping.json` as follows.
 
-```
+```json
 [
     {
         "DeviceName": "{{/dev/xvda}}",
@@ -192,7 +192,7 @@ Specify the EBS root volume parameters in `mapping.json` as follows.
 
 The value for `DeviceName` must match the root device name that's associated with the AMI. To find the root device name, use the [describe-images](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command.
 
-```
+```bash
 aws ec2 describe-images --image-id ami-{{0abcdef1234567890}}
 ```
 
@@ -204,7 +204,7 @@ If you enabled encryption by default in this AWS Region, you can omit `"Encrypte
 **To enable hibernation for a Spot Instance**
 Use the [New-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Instance.html) command to request a Spot Instance. Specify the EBS root volume by first defining the block device mapping, and then adding it to the command using the `-BlockDeviceMappings` parameter. Enable hibernation using the `-HibernationOptions_Configured $true` parameter.
 
-```
+```powershell
 $ebs_encrypt = New-Object Amazon.EC2.Model.BlockDeviceMapping
 $ebs_encrypt.DeviceName = "{{/dev/xvda}}"
 $ebs_encrypt.Ebs = New-Object Amazon.EC2.Model.EbsBlockDevice
@@ -230,7 +230,7 @@ New-EC2Instance `
 
 The value for `DeviceName` must match the root device name associated with the AMI. To find the root device name, use the [Get-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Image.html) command.
 
-```
+```powershell
 Get-EC2Image -ImageId {{ami-0abcdef1234567890}}
 ```
 
@@ -260,14 +260,14 @@ You can check whether an instance is enabled for hibernation.
 **To view if an instance is enabled for hibernation**
 Use the [describe-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html) command and specify the `--filters "Name=hibernation-options.configured,Values=true"` parameter to filter instances that are enabled for hibernation.
 
-```
+```bash
 aws ec2 describe-instances \
     --filters "Name=hibernation-options.configured,Values=true"
 ```
 
 The following field in the output indicates that the instance is enabled for hibernation.
 
-```
+```json
 "HibernationOptions": {
     "Configured": true
 }
@@ -279,7 +279,7 @@ The following field in the output indicates that the instance is enabled for hib
 **To view if an instance is enabled for hibernation**
 Use the [Get-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html) cmdlet and filter instances that are enabled for hibernation.
 
-```
+```powershell
 (Get-EC2Instance `
     -Filter @{Name="hibernation-options.configured"; Values="true"}).Instances
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-mpa-identitysource-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MPA::IdentitySource",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-mpa-identitysource-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MPA::IdentitySource
 Properties:
   [IdentitySourceParameters](#cfn-mpa-identitysource-identitysourceparameters): {{

@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-greengrass-group-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Greengrass::Group",
   "Properties" : {
@@ -48,7 +48,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-greengrass-group-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Greengrass::Group
 Properties:
   [InitialVersion](#cfn-greengrass-group-initialversion): {{
@@ -85,7 +85,7 @@ The Amazon Resource Name (ARN) of the IAM role attached to the group. This role 
 Application-specific metadata to attach to the group. You can use tags in IAM policies to control access to AWS IoT Greengrass resources. You can also use tags to categorize your resources. For more information, see [Tagging Your AWS IoT Greengrass Resources](https://docs.aws.amazon.com/greengrass/v1/developerguide/tagging.html) in the * AWS IoT Greengrass Version 1 Developer Guide *.
 This `Json` property type is processed as a map of key-value pairs. It uses the following format, which is different from most `Tags` implementations in CloudFormation templates.
 
-```
+```json
 "Tags": {
     "KeyName0": "value",
     "KeyName1": "value",
@@ -150,7 +150,7 @@ After you create the group version in your CloudFormation template, you can depl
 #### JSON
 <a name="aws-resource-greengrass-group--examples--Create_a_Group--json"></a>
 
-```
+```json
 {
     "Description": "AWS IoT Greengrass example template that creates a group version with a core, device, function, logger, subscription, and resources.",
     "Parameters": {
@@ -470,7 +470,7 @@ After you create the group version in your CloudFormation template, you can depl
 #### YAML
 <a name="aws-resource-greengrass-group--examples--Create_a_Group--yaml"></a>
 
-```
+```yaml
 Description: >-
   AWS IoT Greengrass example template that creates a group version with a core,
   device, function, logger, subscription, and resources.

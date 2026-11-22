@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-applicationstatuscheck-healthcheckpath-syntax.json"></a>
 
-```
+```json
 {
   "[Destinations](#cfn-ec2-applicationstatuscheck-healthcheckpath-destinations)" : {{[ HealthCheckPathDestination, ... ]}},
   "[Source](#cfn-ec2-applicationstatuscheck-healthcheckpath-source)" : {{HealthCheckPathSource}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-applicationstatuscheck-healthcheckpath-syntax.yaml"></a>
 
-```
+```yaml
   [Destinations](#cfn-ec2-applicationstatuscheck-healthcheckpath-destinations): {{
     - HealthCheckPathDestination}}
   [Source](#cfn-ec2-applicationstatuscheck-healthcheckpath-source): {{

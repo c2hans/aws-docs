@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-volume-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::Volume",
   "Properties" : {
@@ -56,7 +56,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-volume-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::Volume
 Properties:
   [AutoEnableIO](#cfn-ec2-volume-autoenableio): {{Boolean}}
@@ -256,7 +256,7 @@ The following example creates an encrypted `gp2` volume with a DeletionPolicy at
 #### JSON
 <a name="aws-resource-ec2-volume--examples--Encrypted_Amazon_EBS_volume_with_DeletionPolicy--json"></a>
 
-```
+```json
 "NewVolume" : {
    "Type" : "AWS::EC2::Volume",
    "Properties" : {
@@ -275,7 +275,7 @@ The following example creates an encrypted `gp2` volume with a DeletionPolicy at
 #### YAML
 <a name="aws-resource-ec2-volume--examples--Encrypted_Amazon_EBS_volume_with_DeletionPolicy--yaml"></a>
 
-```
+```yaml
 NewVolume:
   Type: AWS::EC2::Volume
   Properties:
@@ -296,7 +296,7 @@ The following example creates a 100 GiB `io1` with `100` provisioned IOPS.
 #### JSON
 <a name="aws-resource-ec2-volume--examples--Provisioned_IOPS_SSD_io1_volume--json"></a>
 
-```
+```json
 "NewVolume" : {
    "Type" : "AWS::EC2::Volume",
    "Properties" : {
@@ -311,7 +311,7 @@ The following example creates a 100 GiB `io1` with `100` provisioned IOPS.
 #### YAML
 <a name="aws-resource-ec2-volume--examples--Provisioned_IOPS_SSD_io1_volume--yaml"></a>
 
-```
+```yaml
 NewVolume:
   Type: AWS::EC2::Volume
   Properties:
@@ -329,7 +329,7 @@ The following example creates an encrypted `gp3` volume from a snapshot. The vol
 #### JSON
 <a name="aws-resource-ec2-volume--examples--Volume_from_snapshot_with_encryption_and_initialization_rate--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "Create an encrypted gp3 volume from a snapshot",
@@ -391,7 +391,7 @@ The following example creates an encrypted `gp3` volume from a snapshot. The vol
 #### YAML
 <a name="aws-resource-ec2-volume--examples--Volume_from_snapshot_with_encryption_and_initialization_rate--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Create an encrypted gp3 volume from a snapshot
 Parameters:

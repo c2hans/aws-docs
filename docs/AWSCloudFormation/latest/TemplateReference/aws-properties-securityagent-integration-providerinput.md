@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityagent-integration-providerinput-syntax.json"></a>
 
-```
+```json
 {
   "[Bitbucket](#cfn-securityagent-integration-providerinput-bitbucket)" : {{BitbucketInput}},
   "[Confluence](#cfn-securityagent-integration-providerinput-confluence)" : {{ConfluenceInput}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityagent-integration-providerinput-syntax.yaml"></a>
 
-```
+```yaml
   [Bitbucket](#cfn-securityagent-integration-providerinput-bitbucket): {{
     BitbucketInput}}
   [Confluence](#cfn-securityagent-integration-providerinput-confluence): {{

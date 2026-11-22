@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3tables-tablebucket-unreferencedfileremoval-syntax.json"></a>
 
-```
+```json
 {
   "[NoncurrentDays](#cfn-s3tables-tablebucket-unreferencedfileremoval-noncurrentdays)" : {{Integer}},
   "[Status](#cfn-s3tables-tablebucket-unreferencedfileremoval-status)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3tables-tablebucket-unreferencedfileremoval-syntax.yaml"></a>
 
-```
+```yaml
   [NoncurrentDays](#cfn-s3tables-tablebucket-unreferencedfileremoval-noncurrentdays): {{Integer}}
   [Status](#cfn-s3tables-tablebucket-unreferencedfileremoval-status): {{String}}
   [UnreferencedDays](#cfn-s3tables-tablebucket-unreferencedfileremoval-unreferenceddays): {{Integer}}

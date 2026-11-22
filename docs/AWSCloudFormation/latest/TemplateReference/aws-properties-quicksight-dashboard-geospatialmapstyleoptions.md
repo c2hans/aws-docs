@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-geospatialmapstyleoptions-syntax.json"></a>
 
-```
+```json
 {
   "[BaseMapStyle](#cfn-quicksight-dashboard-geospatialmapstyleoptions-basemapstyle)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-geospatialmapstyleoptions-syntax.yaml"></a>
 
-```
+```yaml
   [BaseMapStyle](#cfn-quicksight-dashboard-geospatialmapstyleoptions-basemapstyle): {{String}}
 ```
 

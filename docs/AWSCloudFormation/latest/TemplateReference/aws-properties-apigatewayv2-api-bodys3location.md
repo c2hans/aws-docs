@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apigatewayv2-api-bodys3location-syntax.json"></a>
 
-```
+```json
 {
   "[Bucket](#cfn-apigatewayv2-api-bodys3location-bucket)" : {{String}},
   "[Etag](#cfn-apigatewayv2-api-bodys3location-etag)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apigatewayv2-api-bodys3location-syntax.yaml"></a>
 
-```
+```yaml
   [Bucket](#cfn-apigatewayv2-api-bodys3location-bucket): {{String}}
   [Etag](#cfn-apigatewayv2-api-bodys3location-etag): {{String}}
   [Key](#cfn-apigatewayv2-api-bodys3location-key): {{String}}

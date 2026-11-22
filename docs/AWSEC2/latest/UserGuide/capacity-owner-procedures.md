@@ -59,7 +59,7 @@ You can use the console or the AWS CLI to create an interruptible Capacity Reser
 **To create an interruptible Capacity Reservation**
 Use the [create-interruptible-capacity-reservation-allocation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-interruptible-capacity-reservation-allocation.html) command:
 
-```
+```bash
 aws ec2 create-interruptible-capacity-reservation-allocation \
     --capacity-reservation-id {{cr-1234567890abcdef0}} \
     --instance-count {{10}}
@@ -93,7 +93,7 @@ Use the following procedure to view the interruptible Capacity Reservations in y
 
 **To view the interruptible Capacity Reservations in your account**
 
-```
+```bash
 aws ec2 describe-capacity-reservations \
     --capacity-reservation-id {{cr-interruptible-id}} \
     --filters Name=interruptible,Values=true
@@ -106,7 +106,7 @@ aws ec2 describe-capacity-reservations \
 
 Use the following procedure to view the interruptible Capacity Reservation created from a specific source Capacity Reservation.
 
-```
+```bash
 aws ec2 describe-capacity-reservations \
     --capacity-reservation-id {{cr-source-id}}
 ```
@@ -141,7 +141,7 @@ Use the following procedure to edit your interruptible Capacity Reservation.
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws ec2 update-interruptible-capacity-reservation-allocation \
     --capacity-reservation-id {{cr-1234567890abcdef0}} \
     --target-instance-count {{80}}
@@ -168,7 +168,7 @@ Use the following procedure to permanently remove the allocation and return all 
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws ec2 update-interruptible-capacity-reservation-allocation \
 --capacity-reservation-id {{cr-1234567890abcdef0}} \
 --target-instance-count {{0}}
@@ -202,7 +202,7 @@ After you save the change, the setting appears as the read-only **Zero size pref
 
 To keep the interruptible Capacity Reservation active at zero capacity, specify `--zero-size-preference retain` when you call [create-interruptible-capacity-reservation-allocation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-interruptible-capacity-reservation-allocation.html) or [update-interruptible-capacity-reservation-allocation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/update-interruptible-capacity-reservation-allocation.html). To cancel the reservation when its allocation reaches zero, specify `default`.
 
-```
+```bash
 aws ec2 update-interruptible-capacity-reservation-allocation \
     --capacity-reservation-id {{cr-1234567890abcdef0}} \
     --zero-size-preference retain
@@ -226,7 +226,7 @@ Complete reclamation can take a few minutes depending on instance type and shutd
 
 Monitor reclamation progress by describing your source reservation:
 
-```
+```bash
 aws ec2 describe-capacity-reservations \
 --capacity-reservation-id {{cr-1234567890abcdef0}}
 ```

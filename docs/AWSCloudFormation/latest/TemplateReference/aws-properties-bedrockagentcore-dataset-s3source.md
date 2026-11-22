@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-dataset-s3source-syntax.json"></a>
 
-```
+```json
 {
   "[S3Uri](#cfn-bedrockagentcore-dataset-s3source-s3uri)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-dataset-s3source-syntax.yaml"></a>
 
-```
+```yaml
   [S3Uri](#cfn-bedrockagentcore-dataset-s3source-s3uri): {{String}}
 ```
 

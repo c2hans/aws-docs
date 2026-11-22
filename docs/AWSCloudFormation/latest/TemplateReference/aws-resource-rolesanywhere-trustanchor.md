@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-rolesanywhere-trustanchor-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RolesAnywhere::TrustAnchor",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-rolesanywhere-trustanchor-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RolesAnywhere::TrustAnchor
 Properties:
   [CrlDpRevocationEnabled](#cfn-rolesanywhere-trustanchor-crldprevocationenabled): {{Boolean}}

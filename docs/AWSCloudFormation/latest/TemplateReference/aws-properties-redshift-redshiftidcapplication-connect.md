@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-redshift-redshiftidcapplication-connect-syntax.json"></a>
 
-```
+```json
 {
   "[Authorization](#cfn-redshift-redshiftidcapplication-connect-authorization)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-redshift-redshiftidcapplication-connect-syntax.yaml"></a>
 
-```
+```yaml
   [Authorization](#cfn-redshift-redshiftidcapplication-connect-authorization): {{String}}
 ```
 

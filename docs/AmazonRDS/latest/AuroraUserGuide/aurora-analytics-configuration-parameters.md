@@ -104,7 +104,7 @@ When to decrease this value:
 
 Set different limits for different user roles:
 
-```
+```SQL
 -- Heavy analytics users
 ALTER USER data_scientist SET aurora_analytics.query_mem = '16GB';
 -- Light reporting users
@@ -113,7 +113,7 @@ ALTER USER dashboard_user SET aurora_analytics.query_mem = '8GB';
 
 Use a session-level setting for a specific complex query:
 
-```
+```SQL
 SET aurora_analytics.query_mem = '16GB';
 SELECT complex_aggregation FROM ft_large_table;
 RESET aurora_analytics.query_mem;

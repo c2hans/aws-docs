@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3files-filesystem-importdatarule-syntax.json"></a>
 
-```
+```json
 {
   "[Prefix](#cfn-s3files-filesystem-importdatarule-prefix)" : {{String}},
   "[SizeLessThan](#cfn-s3files-filesystem-importdatarule-sizelessthan)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3files-filesystem-importdatarule-syntax.yaml"></a>
 
-```
+```yaml
   [Prefix](#cfn-s3files-filesystem-importdatarule-prefix): {{String}}
   [SizeLessThan](#cfn-s3files-filesystem-importdatarule-sizelessthan): {{Integer}}
   [Trigger](#cfn-s3files-filesystem-importdatarule-trigger): {{String}}

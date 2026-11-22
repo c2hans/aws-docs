@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-appimageconfig-jupyterlabappimageconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ContainerConfig](#cfn-sagemaker-appimageconfig-jupyterlabappimageconfig-containerconfig)" : {{ContainerConfig}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-appimageconfig-jupyterlabappimageconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ContainerConfig](#cfn-sagemaker-appimageconfig-jupyterlabappimageconfig-containerconfig): {{
     ContainerConfig}}
 ```

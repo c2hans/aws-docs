@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssmcontacts-contact-stage-syntax.json"></a>
 
-```
+```json
 {
   "[DurationInMinutes](#cfn-ssmcontacts-contact-stage-durationinminutes)" : {{Integer}},
   "[RotationIds](#cfn-ssmcontacts-contact-stage-rotationids)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssmcontacts-contact-stage-syntax.yaml"></a>
 
-```
+```yaml
   [DurationInMinutes](#cfn-ssmcontacts-contact-stage-durationinminutes): {{Integer}}
   [RotationIds](#cfn-ssmcontacts-contact-stage-rotationids): {{
     - String}}

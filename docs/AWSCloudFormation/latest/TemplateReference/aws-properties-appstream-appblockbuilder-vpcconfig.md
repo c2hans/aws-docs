@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appstream-appblockbuilder-vpcconfig-syntax.json"></a>
 
-```
+```json
 {
   "[SecurityGroupIds](#cfn-appstream-appblockbuilder-vpcconfig-securitygroupids)" : {{[ String, ... ]}},
   "[SubnetIds](#cfn-appstream-appblockbuilder-vpcconfig-subnetids)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appstream-appblockbuilder-vpcconfig-syntax.yaml"></a>
 
-```
+```yaml
   [SecurityGroupIds](#cfn-appstream-appblockbuilder-vpcconfig-securitygroupids): {{
     - String}}
   [SubnetIds](#cfn-appstream-appblockbuilder-vpcconfig-subnetids): {{

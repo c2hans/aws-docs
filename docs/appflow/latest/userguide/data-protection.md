@@ -47,7 +47,7 @@ Amazon AppFlow stores the encrypted credentials that are used to connect to flow
 **Note**
 The [[`AmazonAppFlowFullAccess`](https://docs.aws.amazon.com/appflow/latest/userguide/identity-access-management.html#example-1)](https://docs.aws.amazon.com/appflow/latest/userguide/identity-access-management.html#policy-examples) policy includes these permissions.
 
-```
+```json
 {
           "Sid": "SecretsManagerCreateSecretAccess",
           "Effect": "Allow",

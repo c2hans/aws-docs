@@ -85,7 +85,7 @@ The following is an example of the updated IAM policy for AWS WAF. This IAM poli
 **Example**
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[

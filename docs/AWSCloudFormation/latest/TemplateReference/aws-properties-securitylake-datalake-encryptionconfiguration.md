@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securitylake-datalake-encryptionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[KmsKeyId](#cfn-securitylake-datalake-encryptionconfiguration-kmskeyid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securitylake-datalake-encryptionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [KmsKeyId](#cfn-securitylake-datalake-encryptionconfiguration-kmskeyid): {{String}}
 ```
 

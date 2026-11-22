@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-tableunaggregatedfieldwells-syntax.json"></a>
 
-```
+```json
 {
   "[Values](#cfn-quicksight-dashboard-tableunaggregatedfieldwells-values)" : {{[ UnaggregatedField, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-tableunaggregatedfieldwells-syntax.yaml"></a>
 
-```
+```yaml
   [Values](#cfn-quicksight-dashboard-tableunaggregatedfieldwells-values): {{
     - UnaggregatedField}}
 ```

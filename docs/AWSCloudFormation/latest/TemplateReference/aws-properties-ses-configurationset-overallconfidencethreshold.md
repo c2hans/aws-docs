@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-configurationset-overallconfidencethreshold-syntax.json"></a>
 
-```
+```json
 {
   "[ConfidenceVerdictThreshold](#cfn-ses-configurationset-overallconfidencethreshold-confidenceverdictthreshold)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-configurationset-overallconfidencethreshold-syntax.yaml"></a>
 
-```
+```yaml
   [ConfidenceVerdictThreshold](#cfn-ses-configurationset-overallconfidencethreshold-confidenceverdictthreshold): {{String}}
 ```
 

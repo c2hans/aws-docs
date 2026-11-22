@@ -71,7 +71,7 @@ Returns a list of all revisions for the specified configuration.
 #### ListConfigurationRevisionsOutput schema
 <a name="configurations-configuration-id-revisions-response-body-listconfigurationrevisionsoutput-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "maxResults": integer,
@@ -89,7 +89,7 @@ Returns a list of all revisions for the specified configuration.
 #### Error schema
 <a name="configurations-configuration-id-revisions-response-body-error-example"></a>
 
-```
+```json
 {
   "errorAttribute": "string",
   "message": "string"

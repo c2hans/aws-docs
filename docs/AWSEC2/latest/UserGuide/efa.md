@@ -232,9 +232,9 @@ All of the following instance types support EFA. Additionally, the tables indica
 | g7e.12xlarge | Yes | Yes | Yes | Yes |
 | g7e.24xlarge | Yes | Yes | Yes | Yes |
 | g7e.48xlarge | Yes | Yes | Yes | Yes |
-| p6e-gb200.36xlarge | Yes | Yes | Yes | No |
 | p6-b200.48xlarge | Yes | Yes | Yes | Yes |
 | p6-b300.48xlarge | Yes | Yes | Yes | Yes |
+| p6e-gb200.36xlarge | Yes | Yes | Yes | No |
 | High Performance Computing |
 | --- |
 | hpc8a.96xlarge | Yes | Yes | No | No |
@@ -469,7 +469,7 @@ All of the following instance types support EFA. Additionally, the tables indica
 **To see the available instance types that support EFAs in a specific Region**
 The available instance types vary by Region. To see the available instance types that support EFAs in a Region, use the [describe-instance-types](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-types.html) command with the `--region` parameter. Include the `--filters` parameter to scope the results to the instance types that support EFA and the `--query` parameter to scope the output to the value of `InstanceType`.
 
-```
+```bash
 aws ec2 describe-instance-types \
     --region {{us-east-1}}  \
     --filters Name=network-info.efa-supported,Values=true \

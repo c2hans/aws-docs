@@ -81,7 +81,7 @@ https://autoscaling.amazonaws.com/?Action=CancelInstanceRefresh
 #### Sample Response
 <a name="API_CancelInstanceRefresh_Example_1_Response"></a>
 
-```
+```xml
 <CancelInstanceRefreshResponse xmlns="https://autoscaling.amazonaws.com/doc/2011-01-01/">
   <CancelInstanceRefreshResult>
     <InstanceRefreshId>08b91cf7-8fa6-48af-b6a6-d227f40f1b9b</InstanceRefreshId>

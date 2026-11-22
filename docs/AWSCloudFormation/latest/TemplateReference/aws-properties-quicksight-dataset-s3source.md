@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-s3source-syntax.json"></a>
 
-```
+```json
 {
   "[DataSourceArn](#cfn-quicksight-dataset-s3source-datasourcearn)" : {{String}},
   "[InputColumns](#cfn-quicksight-dataset-s3source-inputcolumns)" : {{[ InputColumn, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-s3source-syntax.yaml"></a>
 
-```
+```yaml
   [DataSourceArn](#cfn-quicksight-dataset-s3source-datasourcearn): {{String}}
   [InputColumns](#cfn-quicksight-dataset-s3source-inputcolumns): {{
     - InputColumn}}

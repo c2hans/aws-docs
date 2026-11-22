@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-brand-brandcolorpalette-syntax.json"></a>
 
-```
+```json
 {
   "[Accent](#cfn-quicksight-brand-brandcolorpalette-accent)" : {{Palette}},
   "[Danger](#cfn-quicksight-brand-brandcolorpalette-danger)" : {{Palette}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-brand-brandcolorpalette-syntax.yaml"></a>
 
-```
+```yaml
   [Accent](#cfn-quicksight-brand-brandcolorpalette-accent): {{
     Palette}}
   [Danger](#cfn-quicksight-brand-brandcolorpalette-danger): {{

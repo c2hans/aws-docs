@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-vpcconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[RoleARN](#cfn-kinesisfirehose-deliverystream-vpcconfiguration-rolearn)" : {{String}},
   "[SecurityGroupIds](#cfn-kinesisfirehose-deliverystream-vpcconfiguration-securitygroupids)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-vpcconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [RoleARN](#cfn-kinesisfirehose-deliverystream-vpcconfiguration-rolearn): {{String}}
   [SecurityGroupIds](#cfn-kinesisfirehose-deliverystream-vpcconfiguration-securitygroupids): {{
     - String}}

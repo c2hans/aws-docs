@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-flow-flowtransitencryptionkeyconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Automatic](#cfn-mediaconnect-flow-flowtransitencryptionkeyconfiguration-automatic)" : {{Json}},
   "[SecretsManager](#cfn-mediaconnect-flow-flowtransitencryptionkeyconfiguration-secretsmanager)" : {{SecretsManagerEncryptionKeyConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-flow-flowtransitencryptionkeyconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Automatic](#cfn-mediaconnect-flow-flowtransitencryptionkeyconfiguration-automatic): {{Json}}
   [SecretsManager](#cfn-mediaconnect-flow-flowtransitencryptionkeyconfiguration-secretsmanager): {{
     SecretsManagerEncryptionKeyConfiguration}}

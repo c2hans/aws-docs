@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-verifiedaccessinstance-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::VerifiedAccessInstance",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-verifiedaccessinstance-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::VerifiedAccessInstance
 Properties:
   [CidrEndpointsCustomSubDomain](#cfn-ec2-verifiedaccessinstance-cidrendpointscustomsubdomain): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-policygrant-domainunitpolicygrantprincipal-syntax.json"></a>
 
-```
+```json
 {
   "[DomainUnitDesignation](#cfn-datazone-policygrant-domainunitpolicygrantprincipal-domainunitdesignation)" : {{String}},
   "[DomainUnitGrantFilter](#cfn-datazone-policygrant-domainunitpolicygrantprincipal-domainunitgrantfilter)" : {{DomainUnitGrantFilter}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-policygrant-domainunitpolicygrantprincipal-syntax.yaml"></a>
 
-```
+```yaml
   [DomainUnitDesignation](#cfn-datazone-policygrant-domainunitpolicygrantprincipal-domainunitdesignation): {{String}}
   [DomainUnitGrantFilter](#cfn-datazone-policygrant-domainunitpolicygrantprincipal-domainunitgrantfilter): {{
     DomainUnitGrantFilter}}

@@ -192,7 +192,7 @@ Optionally, you can use SSM to specify other configuration options for the Cloud
 
 The following is an example of a customized configuration:
 
-```
+```json
 {
   "agent": {
       "region": "us-east-1"
@@ -238,7 +238,7 @@ The following is an example of a customized configuration:
 
 1. Modify the task definition file. Remove the following section:
 
-   ```
+   ```json
    "environment": [
                  {
                      "name": "USE_DEFAULT_CONFIG",
@@ -249,7 +249,7 @@ The following is an example of a customized configuration:
 
    Replace that section with the following:
 
-   ```
+   ```json
    "secrets": [
                  {
                      "name": "CW_CONFIG_CONTENT",

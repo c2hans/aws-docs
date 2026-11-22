@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dynamodb-globaltable-ssespecification-syntax.json"></a>
 
-```
+```json
 {
   "[SSEEnabled](#cfn-dynamodb-globaltable-ssespecification-sseenabled)" : {{Boolean}},
   "[SSEType](#cfn-dynamodb-globaltable-ssespecification-ssetype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dynamodb-globaltable-ssespecification-syntax.yaml"></a>
 
-```
+```yaml
   [SSEEnabled](#cfn-dynamodb-globaltable-ssespecification-sseenabled): {{Boolean}}
   [SSEType](#cfn-dynamodb-globaltable-ssespecification-ssetype): {{String}}
 ```

@@ -10,33 +10,33 @@ You can use the following steps to customize the UEFI Secure Boot variables duri
 
 1. Create an empty PK signature list.
 
-   ```
+   ```bash
    touch empty_key.crt
    cert-to-efi-sig-list empty_key.crt PK.esl
    ```
 
 1. Download the KEK certificates.
 
-   ```
+   ```bash
    https://go.microsoft.com/fwlink/?LinkId=321185
    ```
 
 1. Wrap the KEK certificates in a UEFI signature list (`siglist`).
 
-   ```
+   ```bash
    sbsiglist --owner 77fa9abd-0359-4d32-bd60-28f4e78f784b --type x509 --output MS_Win_KEK.esl MicCorKEKCA2011_2011-06-24.crt
    ```
 
 1. Download Microsoft's db certificates.
 
-   ```
+   ```bash
    https://www.microsoft.com/pkiops/certs/MicWinProPCA2011_2011-10-19.crt
    https://www.microsoft.com/pkiops/certs/MicCorUEFCA2011_2011-06-27.crt
    ```
 
 1. Generate the db signature list.
 
-   ```
+   ```bash
    sbsiglist --owner 77fa9abd-0359-4d32-bd60-28f4e78f784b --type x509 --output MS_Win_db.esl MicWinProPCA2011_2011-10-19.crt
    sbsiglist --owner 77fa9abd-0359-4d32-bd60-28f4e78f784b --type x509 --output MS_UEFI_db.esl MicCorUEFCA2011_2011-06-27.crt
    cat MS_Win_db.esl MS_UEFI_db.esl > MS_db.esl
@@ -48,7 +48,7 @@ You can use the following steps to customize the UEFI Secure Boot variables duri
 
    Create `SplitDbxContent.ps1` with the script content below. Alternatively, you can install the script from [ PowerShell Gallery](https://www.powershellgallery.com/packages/SplitDbxContent/1.0) using `Install-Script -Name SplitDbxContent`.
 
-   ```
+   ```PowerShell
    <#PSScriptInfo
 
    .VERSION 1.0
@@ -118,7 +118,7 @@ You can use the following steps to customize the UEFI Secure Boot variables duri
 
    Use the script to unpack the signed DBX files.
 
-   ```
+   ```bash
    PS C:\Windows\system32> SplitDbxContent.ps1 .\dbx.bin
    ```
 
@@ -126,19 +126,19 @@ You can use the following steps to customize the UEFI Secure Boot variables duri
 
 1. Build a UEFI variable store using the `uefivars.py` script.
 
-   ```
+   ```bash
    ./uefivars.py -i none -o aws -O uefiblob-microsoft-keys-empty-pk.bin -P ~/PK.esl -K ~/MS_Win_KEK.esl --db ~/MS_db.esl  --dbx ~/content.bin
    ```
 
 1. Check the binary blob and the UEFI variable store.
 
-   ```
+   ```bash
    ./uefivars.py -i aws -I uefiblob-microsoft-keys-empty-pk.bin -o json | less
    ```
 
 1. You can update the blob by passing it to the same tool again.
 
-   ```
+   ```bash
    ./uefivars.py -i aws -I uefiblob-microsoft-keys-empty-pk.bin -o aws -O uefiblob-microsoft-keys-empty-pk.bin -P ~/PK.esl -K ~/MS_Win_KEK.esl --db ~/MS_db.esl  --dbx ~/content.bin
    ```
 

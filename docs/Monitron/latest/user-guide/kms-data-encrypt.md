@@ -15,7 +15,7 @@ When using AWS KMS to encrypt your data, keep the following in mind:
 + When data is encrypted using an AWS owned CMK, Amazon Monitron uses a separate CMK for each customer.
 + IAM users must have the required permissions to call the AWS KMS API operations connected with Amazon Monitron. Amazon Monitron includes the following permissions in its managed policy for console use.
 
-  ```
+  ```json
   {
                    "Effect": "Allow",
                    "Action": [

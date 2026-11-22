@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-metadatadestination-syntax.json"></a>
 
-```
+```json
 {
   "[TableBucketArn](#cfn-s3-bucket-metadatadestination-tablebucketarn)" : {{String}},
   "[TableBucketType](#cfn-s3-bucket-metadatadestination-tablebuckettype)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-metadatadestination-syntax.yaml"></a>
 
-```
+```yaml
   [TableBucketArn](#cfn-s3-bucket-metadatadestination-tablebucketarn): {{String}}
   [TableBucketType](#cfn-s3-bucket-metadatadestination-tablebuckettype): {{String}}
   [TableNamespace](#cfn-s3-bucket-metadatadestination-tablenamespace): {{String}}

@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codepipeline-pipeline-artifactstoremap-syntax.json"></a>
 
-```
+```json
 {
   "[ArtifactStore](#cfn-codepipeline-pipeline-artifactstoremap-artifactstore)" : {{ArtifactStore}},
   "[Region](#cfn-codepipeline-pipeline-artifactstoremap-region)" : {{String}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codepipeline-pipeline-artifactstoremap-syntax.yaml"></a>
 
-```
+```yaml
   [ArtifactStore](#cfn-codepipeline-pipeline-artifactstoremap-artifactstore): {{
     ArtifactStore}}
   [Region](#cfn-codepipeline-pipeline-artifactstoremap-region): {{String}}

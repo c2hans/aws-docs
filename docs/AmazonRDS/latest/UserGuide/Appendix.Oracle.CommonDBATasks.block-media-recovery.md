@@ -27,7 +27,7 @@ This procedure is supported for the following Amazon RDS for Oracle DB engine ve
 
 The following example recovers block 100 in data file 5.
 
-```
+```sql
 BEGIN
     rdsadmin.rdsadmin_rman_util.recover_datafile_block(
         p_datafile            => 5,
@@ -39,7 +39,7 @@ END;
 
 The following example recovers blocks 100 to 150 in data file 5.
 
-```
+```sql
 BEGIN
     rdsadmin.rdsadmin_rman_util.recover_datafile_block(
         p_datafile            => 5,

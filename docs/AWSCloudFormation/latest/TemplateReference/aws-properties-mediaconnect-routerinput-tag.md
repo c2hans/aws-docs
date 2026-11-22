@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-routerinput-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-mediaconnect-routerinput-tag-key)" : {{String}},
   "[Value](#cfn-mediaconnect-routerinput-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-routerinput-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-mediaconnect-routerinput-tag-key): {{String}}
   [Value](#cfn-mediaconnect-routerinput-tag-value): {{String}}
 ```

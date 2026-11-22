@@ -51,7 +51,7 @@ In the following commands, replace {{region}} with the Region of your cluster, {
 **Register the cluster as a delivery source**
 Run the following AWS CLI command to register the cluster as a delivery source with the `AUDIT_LOGS` log type:
 
-```
+```bash
 aws logs put-delivery-source \
   --name {{my-cluster-audit-logs}} \
   --resource-arn arn:aws:dsql:{{region}}:{{111122223333}}:cluster/{{cluster-id}} \
@@ -62,7 +62,7 @@ aws logs put-delivery-source \
 **Register the bucket as a delivery destination**
 Run the following AWS CLI command to register the Amazon S3 bucket as a delivery destination with the `json` output format:
 
-```
+```bash
 aws logs put-delivery-destination \
   --name {{my-audit-log-destination}} \
   --output-format json \
@@ -75,7 +75,7 @@ Record the delivery destination ARN from the output. You need it in the next com
 **Create the delivery**
 Run the following AWS CLI command to connect the delivery source to the delivery destination:
 
-```
+```bash
 aws logs create-delivery \
   --delivery-source-name {{my-cluster-audit-logs}} \
   --delivery-destination-arn arn:aws:logs:{{region}}:{{111122223333}}:delivery-destination:{{my-audit-log-destination}} \
@@ -89,7 +89,7 @@ By default, CloudWatch Logs delivers your audit records under `AWSLogs/{{1111222
 
 To deliver only some of the fields of each audit record, use the `--record-fields` option of `create-delivery` or `update-delivery-configuration` with the fields in [Record fields](audit-logging-records.md#audit-logging-record-format). For example, the following command creates a delivery that includes only the fields that show who ran which command. In `DDL` and `FUNCTION` records, these fields also show the object of the command:
 
-```
+```bash
 aws logs create-delivery \
   --delivery-source-name {{my-cluster-audit-logs}} \
   --delivery-destination-arn arn:aws:logs:{{region}}:{{111122223333}}:delivery-destination:{{my-audit-log-destination}} \
@@ -102,7 +102,7 @@ aws logs create-delivery \
 **Confirm that delivery is set up**
 Connect to your cluster and run the following SQL query. The query returns one row for each AWS Region of the cluster:
 
-```
+```sql
 SELECT * FROM sys.audit_delivery_status();
 ```
 
@@ -140,13 +140,13 @@ If you created an audit administrator role in the previous step, connect to your
 
 Then choose what to audit for each database role. The following SQL example audits the DDL statements, role and privilege changes, and writes of the `admin` role:
 
-```
+```sql
 SELECT sys.set_audit_config('admin', 'dsql_audit.log', 'ddl,role,write');
 ```
 
 To also record the number of rows that each statement read or changed, turn on `dsql_audit.log_rows` for the role:
 
-```
+```sql
 SELECT sys.set_audit_config('admin', 'dsql_audit.log_rows', 'on');
 ```
 
@@ -155,7 +155,7 @@ To audit other roles, run the same statements with their names. Changes to audit
 **Confirm your audit settings**
 Run the following SQL query to list the audit settings that you set for each role:
 
-```
+```sql
 SELECT r.rolname, s.setconfig
 FROM pg_db_role_setting s
 JOIN pg_roles r ON r.oid = s.setrole;
@@ -172,7 +172,7 @@ The following example output shows the audit settings from the previous examples
 
 To see the audit settings that apply to your connection, reconnect to your cluster as `admin`, and then run the following command. If the output doesn't show your changes, wait a few minutes and reconnect.
 
-```
+```sql
 SHOW dsql_audit.log;
 ```
 
@@ -190,20 +190,20 @@ The following example output shows the setting from the previous examples. If th
 
 Reconnect to your cluster as `admin`, and run a statement that your audit settings cover. For example, the following SQL statements create and drop a table, which generates `DDL` records:
 
-```
+```sql
 CREATE TABLE audit_test (id int PRIMARY KEY);
 DROP TABLE audit_test;
 ```
 
 To verify that the audit records arrived, run the following AWS CLI command to list the audit log files in your bucket. Replace {{amzn-s3-demo-destination-bucket}} with the name of your bucket, and {{111122223333}} with your AWS account ID. It can take several minutes for records to arrive. If the output doesn't include any files, wait a few minutes and run the command again.
 
-```
+```bash
 aws s3 ls s3://{{amzn-s3-demo-destination-bucket}}/AWSLogs/{{111122223333}}/dsql/ --recursive
 ```
 
 To print the audit records of a file, run the following AWS CLI command. Replace {{object-key}} with the key of a file from the output of the previous command:
 
-```
+```bash
 aws s3 cp s3://{{amzn-s3-demo-destination-bucket}}/{{object-key}} - | gunzip
 ```
 
@@ -216,21 +216,21 @@ If you set up audit logging only to try it, turn it off to avoid ongoing charges
 
 First, connect to your cluster as `admin`, and reset the audit settings that you chose in [Setting up audit logging](#audit-logging-setup-configure). Reset them before you delete the delivery, because Aurora DSQL accepts changes to audit settings only while delivery is set up:
 
-```
+```sql
 SELECT sys.reset_audit_config('admin', 'dsql_audit.log');
 SELECT sys.reset_audit_config('admin', 'dsql_audit.log_rows');
 ```
 
 Then run the following AWS CLI command to find the ID of the delivery. Replace {{region}} with the AWS Region of your cluster:
 
-```
+```bash
 aws logs describe-deliveries \
   --region {{region}}
 ```
 
 Run the following AWS CLI commands to delete the delivery, the delivery source, and the delivery destination. Replace {{delivery-id}} with the ID of the delivery from the output of the previous command:
 
-```
+```bash
 aws logs delete-delivery \
   --id {{delivery-id}} \
   --region {{region}}
@@ -252,7 +252,7 @@ To avoid charges for storing the audit records, delete the audit log files from 
 **Listing deliveries**
 To list the deliveries in a Region, run the following AWS CLI command. Replace {{region}} with the AWS Region of your cluster:
 
-```
+```bash
 aws logs describe-deliveries \
   --region {{region}}
 ```
@@ -262,13 +262,13 @@ The output includes the ID and the delivery source name of each delivery. You ne
 **Turning off audit logging**
 To stop auditing statements, reset the audit settings. Reset them before you delete the delivery, because Aurora DSQL accepts changes to audit settings only while delivery is set up. Reset the settings of each role that you audit. The following SQL example resets the `dsql_audit.log` setting of the {{app\_user}} role:
 
-```
+```sql
 SELECT sys.reset_audit_config('{{app_user}}', 'dsql_audit.log');
 ```
 
 To stop delivering audit records, run the following AWS CLI commands to delete the delivery and the delivery source. Replace {{delivery-id}} with the ID of the delivery from the output of `describe-deliveries`, {{my-cluster-audit-logs}} with the name of the delivery source, and {{region}} with the AWS Region of your cluster:
 
-```
+```bash
 aws logs delete-delivery \
   --id {{delivery-id}} \
   --region {{region}}

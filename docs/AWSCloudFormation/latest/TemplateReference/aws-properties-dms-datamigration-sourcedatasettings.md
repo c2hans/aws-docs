@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dms-datamigration-sourcedatasettings-syntax.json"></a>
 
-```
+```json
 {
   "[CDCStartPosition](#cfn-dms-datamigration-sourcedatasettings-cdcstartposition)" : {{String}},
   "[CDCStartTime](#cfn-dms-datamigration-sourcedatasettings-cdcstarttime)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dms-datamigration-sourcedatasettings-syntax.yaml"></a>
 
-```
+```yaml
   [CDCStartPosition](#cfn-dms-datamigration-sourcedatasettings-cdcstartposition): {{String}}
   [CDCStartTime](#cfn-dms-datamigration-sourcedatasettings-cdcstarttime): {{String}}
   [CDCStopTime](#cfn-dms-datamigration-sourcedatasettings-cdcstoptime): {{String}}

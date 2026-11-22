@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-evaluator-inferenceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MaxTokens](#cfn-bedrockagentcore-evaluator-inferenceconfiguration-maxtokens)" : {{Integer}},
   "[StopSequences](#cfn-bedrockagentcore-evaluator-inferenceconfiguration-stopsequences)" : {{[ String, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-evaluator-inferenceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MaxTokens](#cfn-bedrockagentcore-evaluator-inferenceconfiguration-maxtokens): {{Integer}}
   [StopSequences](#cfn-bedrockagentcore-evaluator-inferenceconfiguration-stopsequences): {{
     - String}}

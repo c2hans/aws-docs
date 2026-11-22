@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotsitewise-gateway-greengrassv2-syntax.json"></a>
 
-```
+```json
 {
   "[CoreDeviceOperatingSystem](#cfn-iotsitewise-gateway-greengrassv2-coredeviceoperatingsystem)" : {{String}},
   "[CoreDeviceThingName](#cfn-iotsitewise-gateway-greengrassv2-coredevicethingname)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotsitewise-gateway-greengrassv2-syntax.yaml"></a>
 
-```
+```yaml
   [CoreDeviceOperatingSystem](#cfn-iotsitewise-gateway-greengrassv2-coredeviceoperatingsystem): {{String}}
   [CoreDeviceThingName](#cfn-iotsitewise-gateway-greengrassv2-coredevicethingname): {{String}}
 ```

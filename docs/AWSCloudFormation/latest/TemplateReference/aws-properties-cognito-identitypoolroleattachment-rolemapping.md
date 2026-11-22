@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-identitypoolroleattachment-rolemapping-syntax.json"></a>
 
-```
+```json
 {
   "[AmbiguousRoleResolution](#cfn-cognito-identitypoolroleattachment-rolemapping-ambiguousroleresolution)" : {{String}},
   "[IdentityProvider](#cfn-cognito-identitypoolroleattachment-rolemapping-identityprovider)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-identitypoolroleattachment-rolemapping-syntax.yaml"></a>
 
-```
+```yaml
   [AmbiguousRoleResolution](#cfn-cognito-identitypoolroleattachment-rolemapping-ambiguousroleresolution): {{String}}
   [IdentityProvider](#cfn-cognito-identitypoolroleattachment-rolemapping-identityprovider): {{String}}
   [RulesConfiguration](#cfn-cognito-identitypoolroleattachment-rolemapping-rulesconfiguration): {{

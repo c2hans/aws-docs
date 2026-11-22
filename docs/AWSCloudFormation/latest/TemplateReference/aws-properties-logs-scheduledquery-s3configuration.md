@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-logs-scheduledquery-s3configuration-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationIdentifier](#cfn-logs-scheduledquery-s3configuration-destinationidentifier)" : {{String}},
   "[RoleArn](#cfn-logs-scheduledquery-s3configuration-rolearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-logs-scheduledquery-s3configuration-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationIdentifier](#cfn-logs-scheduledquery-s3configuration-destinationidentifier): {{String}}
   [RoleArn](#cfn-logs-scheduledquery-s3configuration-rolearn): {{String}}
 ```

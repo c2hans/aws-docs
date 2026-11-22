@@ -86,11 +86,11 @@ The default TTL can vary according to the version of your JVM and whether a secu
 To modify the JVM's TTL, set the [`networkaddress.cache.ttl`](https://docs.oracle.com/javase/7/docs/technotes/guides/net/properties.html) property value. Use one of the following methods, depending on your needs:
 + To set the property value globally for all applications that use the JVM, set `networkaddress.cache.ttl` in the `$JAVA_HOME/jre/lib/security/java.security` file.
 
-  ```
+  ```java
   networkaddress.cache.ttl=60
   ```
 + To set the property locally for your application only, set `networkaddress.cache.ttl` in your application's initialization code before any network connections are established.
 
-  ```
+  ```java
   java.security.Security.setProperty("networkaddress.cache.ttl" , "60");
   ```

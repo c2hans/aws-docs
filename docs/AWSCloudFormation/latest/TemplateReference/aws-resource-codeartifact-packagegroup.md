@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-codeartifact-packagegroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CodeArtifact::PackageGroup",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-codeartifact-packagegroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CodeArtifact::PackageGroup
 Properties:
   [ContactInfo](#cfn-codeartifact-packagegroup-contactinfo): {{String}}

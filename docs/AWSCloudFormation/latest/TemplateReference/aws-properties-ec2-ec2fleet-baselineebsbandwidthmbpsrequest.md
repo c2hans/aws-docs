@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-ec2fleet-baselineebsbandwidthmbpsrequest-syntax.json"></a>
 
-```
+```json
 {
   "[Max](#cfn-ec2-ec2fleet-baselineebsbandwidthmbpsrequest-max)" : {{Integer}},
   "[Min](#cfn-ec2-ec2fleet-baselineebsbandwidthmbpsrequest-min)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-ec2fleet-baselineebsbandwidthmbpsrequest-syntax.yaml"></a>
 
-```
+```yaml
   [Max](#cfn-ec2-ec2fleet-baselineebsbandwidthmbpsrequest-max): {{Integer}}
   [Min](#cfn-ec2-ec2fleet-baselineebsbandwidthmbpsrequest-min): {{Integer}}
 ```

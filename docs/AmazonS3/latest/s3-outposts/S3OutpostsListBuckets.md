@@ -33,7 +33,7 @@ aws s3control list-regional-buckets --account-id {{123456789012}} --outpost-id {
 
 The following SDK for Java example gets a list of buckets in an Outpost. For more information, see [ListRegionalBuckets](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListRegionalBuckets.html) in the *Amazon Simple Storage Service API Reference*.
 
-```
+```Java
 import com.amazonaws.services.s3control.model.*;
 
 public void listRegionalBuckets() {

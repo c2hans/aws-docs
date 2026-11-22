@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-smsvoice-registrationattachment-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-smsvoice-registrationattachment-tag-key)" : {{String}},
   "[Value](#cfn-smsvoice-registrationattachment-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-smsvoice-registrationattachment-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-smsvoice-registrationattachment-tag-key): {{String}}
   [Value](#cfn-smsvoice-registrationattachment-tag-value): {{String}}
 ```

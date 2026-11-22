@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotfleetwise-signalcatalog-sensor-syntax.json"></a>
 
-```
+```json
 {
   "[AllowedValues](#cfn-iotfleetwise-signalcatalog-sensor-allowedvalues)" : {{[ String, ... ]}},
   "[DataType](#cfn-iotfleetwise-signalcatalog-sensor-datatype)" : {{String}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotfleetwise-signalcatalog-sensor-syntax.yaml"></a>
 
-```
+```yaml
   [AllowedValues](#cfn-iotfleetwise-signalcatalog-sensor-allowedvalues): {{
     - String}}
   [DataType](#cfn-iotfleetwise-signalcatalog-sensor-datatype): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewaytarget-apischemaconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[InlinePayload](#cfn-bedrockagentcore-gatewaytarget-apischemaconfiguration-inlinepayload)" : {{String}},
   "[S3](#cfn-bedrockagentcore-gatewaytarget-apischemaconfiguration-s3)" : {{S3Configuration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewaytarget-apischemaconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [InlinePayload](#cfn-bedrockagentcore-gatewaytarget-apischemaconfiguration-inlinepayload): {{String}}
   [S3](#cfn-bedrockagentcore-gatewaytarget-apischemaconfiguration-s3): {{
     S3Configuration}}

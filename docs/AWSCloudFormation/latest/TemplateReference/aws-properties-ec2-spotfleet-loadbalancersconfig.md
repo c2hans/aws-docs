@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-spotfleet-loadbalancersconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ClassicLoadBalancersConfig](#cfn-ec2-spotfleet-loadbalancersconfig-classicloadbalancersconfig)" : {{ClassicLoadBalancersConfig}},
   "[TargetGroupsConfig](#cfn-ec2-spotfleet-loadbalancersconfig-targetgroupsconfig)" : {{TargetGroupsConfig}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-spotfleet-loadbalancersconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ClassicLoadBalancersConfig](#cfn-ec2-spotfleet-loadbalancersconfig-classicloadbalancersconfig): {{
     ClassicLoadBalancersConfig}}
   [TargetGroupsConfig](#cfn-ec2-spotfleet-loadbalancersconfig-targetgroupsconfig): {{

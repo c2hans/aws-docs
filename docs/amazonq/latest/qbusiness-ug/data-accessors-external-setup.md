@@ -54,7 +54,7 @@ To access these variables in the Amazon Q Business console:
 
 Amazon Q Business `applicationId` and the `dataAccessorArn` are included in the response of `GetDataAccessor` API. To get the IDC Region of your IDC instance and the IDC application environment, you need to visit IAM identity center page in the AWS Management Console.
 
-```
+```bash
 # To get qbusiness application id
 aws qbusiness list-applications
 {

@@ -37,7 +37,7 @@ aws autoscaling describe-scaling-activities --auto-scaling-group-name {{my-asg}}
 
 The following is an example response, where `Cause` contains the reason for the health check failure.
 
-```
+```json
 {
   "Activities": [
     {

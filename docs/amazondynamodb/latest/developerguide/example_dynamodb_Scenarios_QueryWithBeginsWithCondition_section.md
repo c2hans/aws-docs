@@ -14,7 +14,7 @@ The following code examples show how to query a table using a begins\_with condi
 **SDK for Java 2.x**
 Query a DynamoDB table using a begins\_with condition on the sort key with AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -75,7 +75,7 @@ import java.util.logging.Logger;
 ```
 Demonstrate using begins\_with with different prefix lengths with AWS SDK for Java 2.x.
 
-```
+```java
     public static void main(String[] args) {
         try {
             CodeSampleUtils.BeginsWithQueryConfig config = CodeSampleUtils.BeginsWithQueryConfig.fromArgs(args);
@@ -138,7 +138,7 @@ Demonstrate using begins\_with with different prefix lengths with AWS SDK for Ja
 **SDK for JavaScript (v3)**
 Query a DynamoDB table using a begins\_with condition on the sort key with AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient, QueryCommand } = require("@aws-sdk/client-dynamodb");
 
 /**
@@ -195,7 +195,7 @@ async function queryWithBeginsWith(
 **SDK for Python (Boto3)**
 Query a DynamoDB table using a begins\_with condition on the sort key with AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 from boto3.dynamodb.conditions import Key
 

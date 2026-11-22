@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-numericalmeasurefield-syntax.json"></a>
 
-```
+```json
 {
   "[AggregationFunction](#cfn-quicksight-template-numericalmeasurefield-aggregationfunction)" : {{NumericalAggregationFunction}},
   "[Column](#cfn-quicksight-template-numericalmeasurefield-column)" : {{ColumnIdentifier}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-numericalmeasurefield-syntax.yaml"></a>
 
-```
+```yaml
   [AggregationFunction](#cfn-quicksight-template-numericalmeasurefield-aggregationfunction): {{
     NumericalAggregationFunction}}
   [Column](#cfn-quicksight-template-numericalmeasurefield-column): {{

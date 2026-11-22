@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eventsv2-subscriber-eventbusv2parameters-syntax.json"></a>
 
-```
+```json
 {
   "[DeduplicationConfiguration](#cfn-eventsv2-subscriber-eventbusv2parameters-deduplicationconfiguration)" : {{DeduplicationConfiguration}},
   "[Metadata](#cfn-eventsv2-subscriber-eventbusv2parameters-metadata)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eventsv2-subscriber-eventbusv2parameters-syntax.yaml"></a>
 
-```
+```yaml
   [DeduplicationConfiguration](#cfn-eventsv2-subscriber-eventbusv2parameters-deduplicationconfiguration): {{
     DeduplicationConfiguration}}
   [Metadata](#cfn-eventsv2-subscriber-eventbusv2parameters-metadata): {{

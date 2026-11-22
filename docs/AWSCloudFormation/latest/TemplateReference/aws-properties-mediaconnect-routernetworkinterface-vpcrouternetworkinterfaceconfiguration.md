@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-routernetworkinterface-vpcrouternetworkinterfaceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[SecurityGroupIds](#cfn-mediaconnect-routernetworkinterface-vpcrouternetworkinterfaceconfiguration-securitygroupids)" : {{[ String, ... ]}},
   "[SubnetId](#cfn-mediaconnect-routernetworkinterface-vpcrouternetworkinterfaceconfiguration-subnetid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-routernetworkinterface-vpcrouternetworkinterfaceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [SecurityGroupIds](#cfn-mediaconnect-routernetworkinterface-vpcrouternetworkinterfaceconfiguration-securitygroupids): {{
     - String}}
   [SubnetId](#cfn-mediaconnect-routernetworkinterface-vpcrouternetworkinterfaceconfiguration-subnetid): {{String}}

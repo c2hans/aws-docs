@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-metricconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MetricNames](#cfn-ecs-service-metricconfiguration-metricnames)" : {{[ String, ... ]}},
   "[ResolutionSeconds](#cfn-ecs-service-metricconfiguration-resolutionseconds)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-metricconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MetricNames](#cfn-ecs-service-metricconfiguration-metricnames): {{
     - String}}
   [ResolutionSeconds](#cfn-ecs-service-metricconfiguration-resolutionseconds): {{Integer}}

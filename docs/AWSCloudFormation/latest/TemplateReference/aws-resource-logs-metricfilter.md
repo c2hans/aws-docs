@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-logs-metricfilter-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Logs::MetricFilter",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-logs-metricfilter-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Logs::MetricFilter
 Properties:
   [ApplyOnTransformedLogs](#cfn-logs-metricfilter-applyontransformedlogs): {{Boolean}}
@@ -118,7 +118,7 @@ The following example sends a value of `1` to the `404Count` metric whenever the
 #### JSON
 <a name="aws-resource-logs-metricfilter--examples--Create_a_Metric_Filter--json"></a>
 
-```
+```json
 "404MetricFilter": {
     "Type": "AWS::Logs::MetricFilter",
     "Properties": {
@@ -138,7 +138,7 @@ The following example sends a value of `1` to the `404Count` metric whenever the
 #### YAML
 <a name="aws-resource-logs-metricfilter--examples--Create_a_Metric_Filter--yaml"></a>
 
-```
+```yaml
 404MetricFilter:
   Type: AWS::Logs::MetricFilter
   Properties:

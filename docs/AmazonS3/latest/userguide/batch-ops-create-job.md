@@ -390,7 +390,7 @@ Batch Operations jobs that perform actions on directory buckets require specific
       + Replace `{{amzn-s3-demo-manifest-bucket}}` with the name of the bucket where you want to save the manifest.
       + Replace `{{amzn-s3-demo-completion-report-bucket}}` with the name of the bucket where you want the completion report to be delivered to.
 
-      ```
+      ```bash
       aws iam put-role-policy \
         --role-name {{S3BatchJobRole}} \
         --policy-name {{DeleteObjectTaggingBatchJobPolicy}} \
@@ -448,7 +448,7 @@ Batch Operations jobs that perform actions on directory buckets require specific
 
    To use this example command, replace the `{{user input placeholders}}` with your own information. Replace {{`IAM-role`}} with the ARN of the IAM role that you created earlier.
 
-   ```
+   ```bash
    aws s3control create-job \
        --account-id {{012345678901}} \
        --operation '{

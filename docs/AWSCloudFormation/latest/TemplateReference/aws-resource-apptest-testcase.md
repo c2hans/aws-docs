@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apptest-testcase-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppTest::TestCase",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apptest-testcase-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppTest::TestCase
 Properties:
   [Description](#cfn-apptest-testcase-description): {{String}}

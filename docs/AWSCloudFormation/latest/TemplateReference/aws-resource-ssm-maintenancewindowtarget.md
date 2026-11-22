@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ssm-maintenancewindowtarget-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SSM::MaintenanceWindowTarget",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ssm-maintenancewindowtarget-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SSM::MaintenanceWindowTarget
 Properties:
   [Description](#cfn-ssm-maintenancewindowtarget-description): {{String}}
@@ -132,7 +132,7 @@ The following example creates a Systems Manager maintenance window target that t
 #### JSON
 <a name="aws-resource-ssm-maintenancewindowtarget--examples--Create_a_maintenance_window_that_targets_instances_by_using_tags--json"></a>
 
-```
+```json
 {
     "Resources": {
         "MaintenanceWindowTarget": {
@@ -161,7 +161,7 @@ The following example creates a Systems Manager maintenance window target that t
 #### YAML
 <a name="aws-resource-ssm-maintenancewindowtarget--examples--Create_a_maintenance_window_that_targets_instances_by_using_tags--yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   MaintenanceWindowTarget:

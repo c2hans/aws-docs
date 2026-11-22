@@ -48,7 +48,7 @@ Create a SAML application for AWS that the agent can request an assertion from i
 
 1. Create a claims-mapping policy with the following definition. It emits the attributes in [Step 2: Configure the SAML attributes](#agent-access-agent-identity-dj-attributes). Replace the role ARN, the IAM SAML identity provider ARN, and the domain name with your own values.
 
-   ```
+   ```json
    {
        "ClaimsMappingPolicy": {
            "Version": 1,
@@ -151,7 +151,7 @@ For testing only, you can emit the SID of an Active Directory account as a const
 
 1. Add the following statements to the trust policy of the role that you created for the OIDC exchange. The role then trusts both identity providers. As in the OIDC trust policy, the `Null` conditions are in a separate statement from `sts:SetSourceIdentity`.
 
-   ```
+   ```json
    {
        "Sid": "AssumeRoleWithSAMLBothIdentities",
        "Effect": "Allow",
@@ -185,7 +185,7 @@ For testing only, you can emit the SID of an Active Directory account as a const
 
 1. Allow the role to stream from the stack. Without this permission, the streaming session can't be established.
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [
@@ -205,7 +205,7 @@ The agent runs both exchanges from the same user token. It signs MCP requests wi
 
 Microsoft Entra ID returns the assertion from the OBO exchange as a bare SAML assertion, encoded in base64url. AWS Sign-In expects a SAML response, so the agent wraps the assertion in an unsigned `samlp:Response` element. AWS Sign-In validates the signature of the assertion inside it.
 
-```
+```python
 import base64
 import json
 import uuid

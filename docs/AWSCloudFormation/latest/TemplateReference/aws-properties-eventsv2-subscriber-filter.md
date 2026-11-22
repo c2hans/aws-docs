@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eventsv2-subscriber-filter-syntax.json"></a>
 
-```
+```json
 {
   "[Pattern](#cfn-eventsv2-subscriber-filter-pattern)" : {{String}},
   "[Scope](#cfn-eventsv2-subscriber-filter-scope)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eventsv2-subscriber-filter-syntax.yaml"></a>
 
-```
+```yaml
   [Pattern](#cfn-eventsv2-subscriber-filter-pattern): {{String}}
   [Scope](#cfn-eventsv2-subscriber-filter-scope): {{String}}
 ```

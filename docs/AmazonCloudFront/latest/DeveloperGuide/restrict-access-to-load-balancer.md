@@ -49,7 +49,7 @@ You can edit the **Origin Custom Headers** setting when you create or edit an or
 In a CloudFormation template, use the `OriginCustomHeaders` property, as shown in the following example.
 The header name and value in this example are just for demonstration. In production, use randomly generated values. Treat the header name and value as a secure credential, like a user name and password.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   TestDistribution:

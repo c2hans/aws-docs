@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-numberformatconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[FormatConfiguration](#cfn-quicksight-dashboard-numberformatconfiguration-formatconfiguration)" : {{NumericFormatConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-numberformatconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [FormatConfiguration](#cfn-quicksight-dashboard-numberformatconfiguration-formatconfiguration): {{
     NumericFormatConfiguration}}
 ```

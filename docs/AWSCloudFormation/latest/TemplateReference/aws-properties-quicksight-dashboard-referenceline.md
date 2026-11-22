@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-referenceline-syntax.json"></a>
 
-```
+```json
 {
   "[DataConfiguration](#cfn-quicksight-dashboard-referenceline-dataconfiguration)" : {{ReferenceLineDataConfiguration}},
   "[LabelConfiguration](#cfn-quicksight-dashboard-referenceline-labelconfiguration)" : {{ReferenceLineLabelConfiguration}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-referenceline-syntax.yaml"></a>
 
-```
+```yaml
   [DataConfiguration](#cfn-quicksight-dashboard-referenceline-dataconfiguration): {{
     ReferenceLineDataConfiguration}}
   [LabelConfiguration](#cfn-quicksight-dashboard-referenceline-labelconfiguration): {{

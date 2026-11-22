@@ -56,7 +56,7 @@ Use Mountpoint for Amazon S3 to do the following:
 
       For new Amazon EC2 instances, you can modify user data on an Amazon EC2 template and set up the `fstab` file as follows. To use the following example, replace the {{user input placeholders}} with your own information.
 
-      ```
+      ```bash
       #!/bin/bash -e
       MP_RPM=$(mktemp --suffix=.rpm)
       curl https://s3.amazonaws.com/mountpoint-s3-release/latest/x86_64/mount-s3.rpm > $MP_RPM

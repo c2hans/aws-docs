@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lightsail-container-healthcheckconfig-syntax.json"></a>
 
-```
+```json
 {
   "[HealthyThreshold](#cfn-lightsail-container-healthcheckconfig-healthythreshold)" : {{Integer}},
   "[IntervalSeconds](#cfn-lightsail-container-healthcheckconfig-intervalseconds)" : {{Integer}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lightsail-container-healthcheckconfig-syntax.yaml"></a>
 
-```
+```yaml
   [HealthyThreshold](#cfn-lightsail-container-healthcheckconfig-healthythreshold): {{Integer}}
   [IntervalSeconds](#cfn-lightsail-container-healthcheckconfig-intervalseconds): {{Integer}}
   [Path](#cfn-lightsail-container-healthcheckconfig-path): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dms-datamigration-datamigrationsettings-syntax.json"></a>
 
-```
+```json
 {
   "[CloudwatchLogsEnabled](#cfn-dms-datamigration-datamigrationsettings-cloudwatchlogsenabled)" : {{Boolean}},
   "[NumberOfJobs](#cfn-dms-datamigration-datamigrationsettings-numberofjobs)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dms-datamigration-datamigrationsettings-syntax.yaml"></a>
 
-```
+```yaml
   [CloudwatchLogsEnabled](#cfn-dms-datamigration-datamigrationsettings-cloudwatchlogsenabled): {{Boolean}}
   [NumberOfJobs](#cfn-dms-datamigration-datamigrationsettings-numberofjobs): {{Integer}}
   [SelectionRules](#cfn-dms-datamigration-datamigrationsettings-selectionrules): {{String}}

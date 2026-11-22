@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-prefetchschedule-recurringconsumption-syntax.json"></a>
 
-```
+```json
 {
   "[AvailMatchingCriteria](#cfn-mediatailor-prefetchschedule-recurringconsumption-availmatchingcriteria)" : {{[ AvailMatchingCriteria, ... ]}},
   "[RetrievedAdExpirationSeconds](#cfn-mediatailor-prefetchschedule-recurringconsumption-retrievedadexpirationseconds)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-prefetchschedule-recurringconsumption-syntax.yaml"></a>
 
-```
+```yaml
   [AvailMatchingCriteria](#cfn-mediatailor-prefetchschedule-recurringconsumption-availmatchingcriteria): {{
     - AvailMatchingCriteria}}
   [RetrievedAdExpirationSeconds](#cfn-mediatailor-prefetchschedule-recurringconsumption-retrievedadexpirationseconds): {{Integer}}

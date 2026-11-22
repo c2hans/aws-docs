@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-launchwizard-deployment-tags-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-launchwizard-deployment-tags-key)" : {{String}},
   "[Value](#cfn-launchwizard-deployment-tags-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-launchwizard-deployment-tags-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-launchwizard-deployment-tags-key): {{String}}
   [Value](#cfn-launchwizard-deployment-tags-value): {{String}}
 ```

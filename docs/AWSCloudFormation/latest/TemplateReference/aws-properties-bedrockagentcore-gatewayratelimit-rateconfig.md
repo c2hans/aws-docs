@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewayratelimit-rateconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Period](#cfn-bedrockagentcore-gatewayratelimit-rateconfig-period)" : {{String}},
   "[Rate](#cfn-bedrockagentcore-gatewayratelimit-rateconfig-rate)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewayratelimit-rateconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Period](#cfn-bedrockagentcore-gatewayratelimit-rateconfig-period): {{String}}
   [Rate](#cfn-bedrockagentcore-gatewayratelimit-rateconfig-rate): {{Number}}
 ```

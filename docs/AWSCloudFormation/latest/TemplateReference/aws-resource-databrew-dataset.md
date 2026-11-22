@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-databrew-dataset-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DataBrew::Dataset",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-databrew-dataset-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DataBrew::Dataset
 Properties:
   [Format](#cfn-databrew-dataset-format): {{String}}
@@ -122,7 +122,7 @@ The following examples create new DataBrew datasets.
 #### YAML
 <a name="aws-resource-databrew-dataset--examples--Creating_datasets--yaml"></a>
 
-```
+```yaml
 Resources:
   TestDataBrewDataset:
     Type: AWS::DataBrew::Dataset
@@ -140,7 +140,7 @@ Resources:
 #### JSON
 <a name="aws-resource-databrew-dataset--examples--Creating_datasets--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "This CloudFormation template specifies a DataBrew Dataset",

@@ -8,7 +8,7 @@ With this pipeline, you can collect asset inventory, software component, Externa
 
 The following example shows the complete pipeline configuration:
 
-```
+```yaml
 extension:
   aws:
     secrets:

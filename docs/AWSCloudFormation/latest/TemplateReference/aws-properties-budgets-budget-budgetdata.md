@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-budgets-budget-budgetdata-syntax.json"></a>
 
-```
+```json
 {
   "[AutoAdjustData](#cfn-budgets-budget-budgetdata-autoadjustdata)" : {{AutoAdjustData}},
   "[BillingViewArn](#cfn-budgets-budget-budgetdata-billingviewarn)" : {{String}},
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-budgets-budget-budgetdata-syntax.yaml"></a>
 
-```
+```yaml
   [AutoAdjustData](#cfn-budgets-budget-budgetdata-autoadjustdata): {{
     AutoAdjustData}}
   [BillingViewArn](#cfn-budgets-budget-budgetdata-billingviewarn): {{String}}
@@ -167,7 +167,7 @@ The following example creates a budget and shows the format for the CostFilters 
 #### JSON
 <a name="aws-properties-budgets-budget-budgetdata--examples--Create_a_budget--json"></a>
 
-```
+```json
 {
     "Budget": {
         "BudgetName": "Example S3 Usage Budget",
@@ -215,7 +215,7 @@ The following example creates a budget and shows the format for the CostFilters 
 #### YAML
 <a name="aws-properties-budgets-budget-budgetdata--examples--Create_a_budget--yaml"></a>
 
-```
+```yaml
 ---
 Budget:
   BudgetName: Example S3 Usage Budget

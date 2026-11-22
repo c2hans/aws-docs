@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-datasource-recommendationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EnableBusinessNameGeneration](#cfn-datazone-datasource-recommendationconfiguration-enablebusinessnamegeneration)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-datasource-recommendationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EnableBusinessNameGeneration](#cfn-datazone-datasource-recommendationconfiguration-enablebusinessnamegeneration): {{Boolean}}
 ```
 

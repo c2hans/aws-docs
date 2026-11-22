@@ -47,12 +47,12 @@ Amazon RDS normally purges a binary log as soon as possible. However, the binary
 
 The following example sets the retention period to 1 day.
 
-```
+```sql
 call mysql.rds_set_configuration('binlog retention hours', 24);
 ```
 
 To display the current setting, use the `mysql.rds_show_configuration` stored procedure.
 
-```
+```sql
 call mysql.rds_show_configuration;
 ```

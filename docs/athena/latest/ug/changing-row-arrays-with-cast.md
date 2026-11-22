@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/changing-row-arrays-wit
 
 To change the field name in an array that contains `ROW` values, you can `CAST` the `ROW` declaration:
 
-```
+```sql
 WITH dataset AS (
   SELECT
     CAST(

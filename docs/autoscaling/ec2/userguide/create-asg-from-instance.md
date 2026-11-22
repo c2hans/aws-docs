@@ -72,7 +72,7 @@ Before you begin, find the ID of the EC2 instance using the Amazon EC2 console o
 
   The following example response shows that the desired capacity of the group is 2, the group has 2 running instances, and the launch configuration is named `my-asg-from-instance`.
 
-  ```
+  ```json
   {
     "AutoScalingGroups":[
       {
@@ -135,7 +135,7 @@ Before you begin, find the ID of the EC2 instance using the Amazon EC2 console o
 
   The following is example output:
 
-  ```
+  ```json
   {
     "LaunchConfigurations":[
       {

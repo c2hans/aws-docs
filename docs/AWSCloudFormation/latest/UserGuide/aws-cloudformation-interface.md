@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudformation-interface-syntax.json"></a>
 
-```
+```json
 "Metadata" : {
   "AWS::CloudFormation::Interface" : {
     "ParameterGroups": [
@@ -49,7 +49,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudformation-interface-syntax.yaml"></a>
 
-```
+```yaml
 Metadata:
   AWS::CloudFormation::Interface:
     ParameterGroups:
@@ -103,7 +103,7 @@ The example also defines a label for the `VPCID` parameter. The console will sho
 ### JSON
 <a name="aws-cloudformation-interface-example.json"></a>
 
-```
+```json
 "Metadata" : {
   "AWS::CloudFormation::Interface" : {
     "ParameterGroups" : [
@@ -126,7 +126,7 @@ The example also defines a label for the `VPCID` parameter. The console will sho
 ### YAML
 <a name="aws-cloudformation-interface-example.yaml"></a>
 
-```
+```yaml
 Metadata:
   AWS::CloudFormation::Interface:
     ParameterGroups:

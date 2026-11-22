@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dms-endpoint-mysqlsettings-syntax.json"></a>
 
-```
+```json
 {
   "[AfterConnectScript](#cfn-dms-endpoint-mysqlsettings-afterconnectscript)" : {{String}},
   "[CleanSourceMetadataOnMismatch](#cfn-dms-endpoint-mysqlsettings-cleansourcemetadataonmismatch)" : {{Boolean}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dms-endpoint-mysqlsettings-syntax.yaml"></a>
 
-```
+```yaml
   [AfterConnectScript](#cfn-dms-endpoint-mysqlsettings-afterconnectscript): {{String}}
   [CleanSourceMetadataOnMismatch](#cfn-dms-endpoint-mysqlsettings-cleansourcemetadataonmismatch): {{Boolean}}
   [EventsPollInterval](#cfn-dms-endpoint-mysqlsettings-eventspollinterval): {{Integer}}

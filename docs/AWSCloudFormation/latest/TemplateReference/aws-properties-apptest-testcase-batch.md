@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apptest-testcase-batch-syntax.json"></a>
 
-```
+```json
 {
   "[BatchJobName](#cfn-apptest-testcase-batch-batchjobname)" : {{String}},
   "[BatchJobParameters](#cfn-apptest-testcase-batch-batchjobparameters)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apptest-testcase-batch-syntax.yaml"></a>
 
-```
+```yaml
   [BatchJobName](#cfn-apptest-testcase-batch-batchjobname): {{String}}
   [BatchJobParameters](#cfn-apptest-testcase-batch-batchjobparameters): {{
     {{Key}}: {{Value}}}}

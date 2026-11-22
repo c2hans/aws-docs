@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-uploadsettings-syntax.json"></a>
 
-```
+```json
 {
   "[ContainsHeader](#cfn-quicksight-dataset-uploadsettings-containsheader)" : {{Boolean}},
   "[Delimiter](#cfn-quicksight-dataset-uploadsettings-delimiter)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-uploadsettings-syntax.yaml"></a>
 
-```
+```yaml
   [ContainsHeader](#cfn-quicksight-dataset-uploadsettings-containsheader): {{Boolean}}
   [Delimiter](#cfn-quicksight-dataset-uploadsettings-delimiter): {{String}}
   [Format](#cfn-quicksight-dataset-uploadsettings-format): {{String}}

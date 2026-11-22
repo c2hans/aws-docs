@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-bedrock-guardrail-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Bedrock::Guardrail",
   "Properties" : {
@@ -49,7 +49,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-bedrock-guardrail-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Bedrock::Guardrail
 Properties:
   [AutomatedReasoningPolicyConfig](#cfn-bedrock-guardrail-automatedreasoningpolicyconfig): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-mediapackagev2-originendpoint-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MediaPackageV2::OriginEndpoint",
   "Properties" : {
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-mediapackagev2-originendpoint-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MediaPackageV2::OriginEndpoint
 Properties:
   [ChannelGroupName](#cfn-mediapackagev2-originendpoint-channelgroupname): {{String}}

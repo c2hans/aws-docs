@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-version-runtimepolicy-syntax.json"></a>
 
-```
+```json
 {
   "[RuntimeVersionArn](#cfn-lambda-version-runtimepolicy-runtimeversionarn)" : {{String}},
   "[UpdateRuntimeOn](#cfn-lambda-version-runtimepolicy-updateruntimeon)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-version-runtimepolicy-syntax.yaml"></a>
 
-```
+```yaml
   [RuntimeVersionArn](#cfn-lambda-version-runtimepolicy-runtimeversionarn): {{String}}
   [UpdateRuntimeOn](#cfn-lambda-version-runtimepolicy-updateruntimeon): {{String}}
 ```

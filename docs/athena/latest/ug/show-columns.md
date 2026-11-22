@@ -15,11 +15,11 @@ For Data Catalog views, the output of the statement is controlled by Lake Format
 ## Synopsis
 <a name="synopsis"></a>
 
-```
+```sql
 SHOW COLUMNS {FROM|IN} {{database_name}}.{{table_or_view_name}}
 ```
 
-```
+```sql
 SHOW COLUMNS {FROM|IN} {{table_or_view_name}} [{FROM|IN} {{database_name}}]
 ```
 
@@ -30,26 +30,26 @@ The `FROM` and `IN` keywords can be used interchangeably. If {{table\_or\_view\_
 
 The following equivalent examples show the columns from the `orders` table in the `customers` database. The first two examples assume that `customers` is the current database.
 
-```
+```sql
 SHOW COLUMNS FROM orders
 ```
 
-```
+```sql
 SHOW COLUMNS IN orders
 ```
 
-```
+```sql
 SHOW COLUMNS FROM customers.orders
 ```
 
-```
+```sql
 SHOW COLUMNS IN customers.orders
 ```
 
-```
+```sql
 SHOW COLUMNS FROM orders FROM customers
 ```
 
-```
+```sql
 SHOW COLUMNS IN orders IN customers
 ```

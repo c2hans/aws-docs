@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-glue-securityconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Glue::SecurityConfiguration",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-glue-securityconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Glue::SecurityConfiguration
 Properties:
   [EncryptionConfiguration](#cfn-glue-securityconfiguration-encryptionconfiguration): {{

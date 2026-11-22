@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrcontainers-endpoint-monitoringconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CloudWatchMonitoringConfiguration](#cfn-emrcontainers-endpoint-monitoringconfiguration-cloudwatchmonitoringconfiguration)" : {{CloudWatchMonitoringConfiguration}},
   "[ContainerLogRotationConfiguration](#cfn-emrcontainers-endpoint-monitoringconfiguration-containerlogrotationconfiguration)" : {{ContainerLogRotationConfiguration}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrcontainers-endpoint-monitoringconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CloudWatchMonitoringConfiguration](#cfn-emrcontainers-endpoint-monitoringconfiguration-cloudwatchmonitoringconfiguration): {{
     CloudWatchMonitoringConfiguration}}
   [ContainerLogRotationConfiguration](#cfn-emrcontainers-endpoint-monitoringconfiguration-containerlogrotationconfiguration): {{

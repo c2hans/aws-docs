@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-appmesh-gatewayroute-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppMesh::GatewayRoute",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-appmesh-gatewayroute-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppMesh::GatewayRoute
 Properties:
   [GatewayRouteName](#cfn-appmesh-gatewayroute-gatewayroutename): {{String}}

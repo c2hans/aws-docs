@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-observabilityadmin-telemetryrule-condition-syntax.json"></a>
 
-```
+```json
 {
   "[ActionCondition](#cfn-observabilityadmin-telemetryrule-condition-actioncondition)" : {{ActionCondition}},
   "[LabelNameCondition](#cfn-observabilityadmin-telemetryrule-condition-labelnamecondition)" : {{LabelNameCondition}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-observabilityadmin-telemetryrule-condition-syntax.yaml"></a>
 
-```
+```yaml
   [ActionCondition](#cfn-observabilityadmin-telemetryrule-condition-actioncondition): {{
     ActionCondition}}
   [LabelNameCondition](#cfn-observabilityadmin-telemetryrule-condition-labelnamecondition): {{

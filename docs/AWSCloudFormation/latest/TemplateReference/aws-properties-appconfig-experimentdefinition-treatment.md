@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appconfig-experimentdefinition-treatment-syntax.json"></a>
 
-```
+```json
 {
   "[AttributeValues](#cfn-appconfig-experimentdefinition-treatment-attributevalues)" : {{{{{Key}}: {{Value}}, ...}}},
   "[Description](#cfn-appconfig-experimentdefinition-treatment-description)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appconfig-experimentdefinition-treatment-syntax.yaml"></a>
 
-```
+```yaml
   [AttributeValues](#cfn-appconfig-experimentdefinition-treatment-attributevalues): {{
     {{Key}}: {{Value}}}}
   [Description](#cfn-appconfig-experimentdefinition-treatment-description): {{String}}

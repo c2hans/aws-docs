@@ -73,7 +73,7 @@ After you’ve created or modified your backup plan, navigate to Backup plans in
 
 You can use the operation name `start-backup-job`. Include the following parameters:
 
-```
+```java
 aws backup start-backup-job \
 --backup-vault-name {{backup-vault-name}} \
 --resource-arn arn:aws:timestream:{{region}}:{{account}}:database/{{database-name}}/table/{{table-name}} \

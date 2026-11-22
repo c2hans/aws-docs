@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-scheduler-schedule-awsvpcconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AssignPublicIp](#cfn-scheduler-schedule-awsvpcconfiguration-assignpublicip)" : {{String}},
   "[SecurityGroups](#cfn-scheduler-schedule-awsvpcconfiguration-securitygroups)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-scheduler-schedule-awsvpcconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AssignPublicIp](#cfn-scheduler-schedule-awsvpcconfiguration-assignpublicip): {{String}}
   [SecurityGroups](#cfn-scheduler-schedule-awsvpcconfiguration-securitygroups): {{
     - String}}

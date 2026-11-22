@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-config-aggregationauthorization-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Config::AggregationAuthorization",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-config-aggregationauthorization-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Config::AggregationAuthorization
 Properties:
   [AuthorizedAccountId](#cfn-config-aggregationauthorization-authorizedaccountid): {{String}}
@@ -98,7 +98,7 @@ The following example creates an AggregationAuthorization that authorizes anothe
 #### JSON
 <a name="aws-resource-config-aggregationauthorization--examples--Authorize_Another_Account--json"></a>
 
-```
+```json
 "AggregationAuthorization": {
     "Type": "AWS::Config::AggregationAuthorization",
     "Properties": {
@@ -111,7 +111,7 @@ The following example creates an AggregationAuthorization that authorizes anothe
 #### YAML
 <a name="aws-resource-config-aggregationauthorization--examples--Authorize_Another_Account--yaml"></a>
 
-```
+```yaml
 AggregationAuthorization:
   Type: "AWS::Config::AggregationAuthorization"
   Properties:
@@ -127,7 +127,7 @@ The following example enables AWS Config and creates an AWS Config rule, an aggr
 #### JSON
 <a name="aws-resource-config-aggregationauthorization--examples--Aggregation_Authorization--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Enable Config",
@@ -412,7 +412,7 @@ The following example enables AWS Config and creates an AWS Config rule, an aggr
 #### YAML
 <a name="aws-resource-config-aggregationauthorization--examples--Aggregation_Authorization--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Enable Config
 

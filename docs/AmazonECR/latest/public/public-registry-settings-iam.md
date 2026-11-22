@@ -16,7 +16,7 @@ The following IAM policy can be added as an inline policy to the principal perfo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -14,7 +14,7 @@ onDraftEmailCreated(handler: SubscriptionHandler<EmailContactId>, contactId?: st
 
  **Usage**
 
-```
+```typescript
 const handler: SubscriptionHandler<EmailContactId> = async (emailContact: EmailContactId) => {
    const { contactId } = emailContact;
    console.log(`Draft Email Contact Created with Id: ${contactId}`);

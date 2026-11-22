@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-macie-allowlist-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Macie::AllowList",
   "Properties" : {
@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-macie-allowlist-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Macie::AllowList
 Properties:
   [Criteria](#cfn-macie-allowlist-criteria): {{
@@ -135,7 +135,7 @@ This example creates an allow list that uses a regular expression to specify a t
 #### JSON
 <a name="aws-resource-macie-allowlist--examples--Creating_an_allow_list_that_specifies_a_regular_expression--json"></a>
 
-```
+```json
 {
     "Type": "AWS::Macie::AllowList",
     "DependsOn": "Session",
@@ -158,7 +158,7 @@ This example creates an allow list that uses a regular expression to specify a t
 #### YAML
 <a name="aws-resource-macie-allowlist--examples--Creating_an_allow_list_that_specifies_a_regular_expression--yaml"></a>
 
-```
+```yaml
 Type: 'AWS::Macie::AllowList'
 DependsOn: Session
 Properties:
@@ -179,7 +179,7 @@ This example creates an allow list that specifies a list of predefined text to i
 #### JSON
 <a name="aws-resource-macie-allowlist--examples--Creating_an_allow_list_that_specifies_predefined_text--json"></a>
 
-```
+```json
 {
     "Type": "AWS::Macie::AllowList",
     "DependsOn": "Session",
@@ -205,7 +205,7 @@ This example creates an allow list that specifies a list of predefined text to i
 #### YAML
 <a name="aws-resource-macie-allowlist--examples--Creating_an_allow_list_that_specifies_predefined_text--yaml"></a>
 
-```
+```yaml
 Type: 'AWS::Macie::AllowList'
 DependsOn: Session
 Properties:

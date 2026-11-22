@@ -61,7 +61,7 @@ The following is an example of an event that Amazon EC2 generates when the AMI e
 
 `"State": "available"` indicates that the operation was successful.
 
-```
+```JSON
 {
     "version": "0",
     "id": "example-9f07-51db-246b-d8b8441bcdf0",
@@ -89,7 +89,7 @@ The following fields provide pertinent information:
 + `"State": "failed"` – Indicates that the operation failed.
 + `"ErrorMessage": ""` – Provides the reason for the failed operation.
 
-```
+```JSON
 {
     "version": "0",
     "id": "example-9f07-51db-246b-d8b8441bcdf0",
@@ -115,7 +115,7 @@ The following is an example of an event that Amazon EC2 generates when the AMI e
 
 `"State": "deregistered"` indicates that the `DeregisterImage` operation was successful.
 
-```
+```JSON
 {
     "version": "0",
     "id": "example-9f07-51db-246b-d8b8441bcdf0",
@@ -141,7 +141,7 @@ The following is an example of an event that Amazon EC2 generates when the AMI e
 
 `"State": "disabled"` indicates that the `DisableImage` operation was successful.
 
-```
+```JSON
 {
     "version": "0",
     "id": "example-9f07-51db-246b-d8b8441bcdf0",

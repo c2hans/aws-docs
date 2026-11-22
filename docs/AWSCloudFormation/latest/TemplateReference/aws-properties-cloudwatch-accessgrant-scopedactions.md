@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-accessgrant-scopedactions-syntax.json"></a>
 
-```
+```json
 {
   "[Actions](#cfn-cloudwatch-accessgrant-scopedactions-actions)" : {{[ String, ... ]}},
   "[ContextConditions](#cfn-cloudwatch-accessgrant-scopedactions-contextconditions)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-accessgrant-scopedactions-syntax.yaml"></a>
 
-```
+```yaml
   [Actions](#cfn-cloudwatch-accessgrant-scopedactions-actions): {{
     - String}}
   [ContextConditions](#cfn-cloudwatch-accessgrant-scopedactions-contextconditions): {{

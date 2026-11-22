@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-trigger-condition-syntax.json"></a>
 
-```
+```json
 {
   "[CrawlerName](#cfn-glue-trigger-condition-crawlername)" : {{String}},
   "[CrawlState](#cfn-glue-trigger-condition-crawlstate)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-trigger-condition-syntax.yaml"></a>
 
-```
+```yaml
   [CrawlerName](#cfn-glue-trigger-condition-crawlername): {{String}}
   [CrawlState](#cfn-glue-trigger-condition-crawlstate): {{String}}
   [JobName](#cfn-glue-trigger-condition-jobname): {{String}}

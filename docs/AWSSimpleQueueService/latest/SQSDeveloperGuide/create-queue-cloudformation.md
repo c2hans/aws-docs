@@ -12,7 +12,7 @@ Use the CloudFormation console along with a JSON or YAML template to create an A
 **Note**
 The name of a FIFO queue must end with the `.fifo` suffix.
 
-   ```
+   ```json
    {
       "AWSTemplateFormatVersion": "2010-09-09",
       "Resources": {

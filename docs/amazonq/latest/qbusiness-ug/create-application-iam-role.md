@@ -15,7 +15,7 @@ When you create an Amazon Q Business application, you must provide Amazon Q with
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -75,7 +75,7 @@ When you create an Amazon Q Business application, you must provide Amazon Q with
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -108,7 +108,7 @@ When you create an Amazon Q Business application, you must provide Amazon Q with
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

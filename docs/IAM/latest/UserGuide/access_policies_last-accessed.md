@@ -87,7 +87,7 @@ This example shows how you might create an identity-based policy that allows vie
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -137,7 +137,7 @@ This example shows how you might create an identity-based policy that allows vie
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {

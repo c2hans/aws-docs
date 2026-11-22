@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lightsail-keypair-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lightsail::KeyPair",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lightsail-keypair-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lightsail::KeyPair
 Properties:
   [KeyPairName](#cfn-lightsail-keypair-keypairname): {{String}}

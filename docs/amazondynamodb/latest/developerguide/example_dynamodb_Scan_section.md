@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/DynamoDB#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Scans the table for movies released between the specified years.
     /// </summary>
@@ -88,7 +88,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb#code-examples).
 
-```
+```bash
 #############################################################################
 # function dynamodb_scan
 #
@@ -199,7 +199,7 @@ function dynamodb_scan() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -253,7 +253,7 @@ function aws_cli_error_log() {
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 
-```
+```cpp
 //! Scan an Amazon DynamoDB table.
 /*!
   \sa scanTable()
@@ -384,7 +384,7 @@ For more information, see [Working with Scans in DynamoDB](https://docs.aws.amaz
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -450,7 +450,7 @@ func (basics TableBasics) Scan(ctx context.Context, startYear int, endYear int) 
 ```
 Define a Movie struct that is used in this example.
 
-```
+```go
 import (
 	"archive/zip"
 	"bytes"
@@ -502,7 +502,7 @@ func (movie Movie) String() string {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb#code-examples).
 Scans an Amazon DynamoDB table using [DynamoDbClient](http://docs.aws.amazon.com/sdk-for-java/latest/reference/software/amazon/awssdk/services/dynamodb/DynamoDbClient.html).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -583,7 +583,7 @@ public class DynamoDBScanItems {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
 This example uses the document client to simplify working with items in DynamoDB. For API details see [ScanCommand](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-lib-dynamodb/Class/ScanCommand/).
 
-```
+```javascript
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { DynamoDBDocumentClient, ScanCommand } from "@aws-sdk/lib-dynamodb";
 
@@ -609,7 +609,7 @@ export const main = async () => {
 **SDK for JavaScript (v2)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/dynamodb#code-examples).
 
-```
+```javascript
 // Load the AWS SDK for Node.js.
 var AWS = require("aws-sdk");
 // Set the AWS Region.
@@ -655,7 +655,7 @@ ddb.scan(params, function (err, data) {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/dynamodb#code-examples).
 
-```
+```kotlin
 suspend fun scanItems(tableNameVal: String) {
     val request =
         ScanRequest {
@@ -681,7 +681,7 @@ suspend fun scanItems(tableNameVal: String) {
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb#code-examples).
 
-```
+```php
         $yearsKey = [
             'Key' => [
                 'year' => [
@@ -722,7 +722,7 @@ suspend fun scanItems(tableNameVal: String) {
 **Tools for PowerShell V4**
 **Example 1: Returns all items in the Music table.**
 
-```
+```powershell
 Invoke-DDBScan -TableName 'Music' | ConvertFrom-DDBItem
 ```
 **Output:**
@@ -745,7 +745,7 @@ AlbumTitle                     Hey Now
 ```
 **Example 2: Returns items in the Music table with a CriticRating greater than or equal to nine.**
 
-```
+```powershell
 $scanFilter = @{
         CriticRating = [Amazon.DynamoDBv2.Model.Condition]@{
             AttributeValueList = @(@{N = '9'})
@@ -771,7 +771,7 @@ AlbumTitle                     Somewhat Famous
 **Tools for PowerShell V5**
 **Example 1: Returns all items in the Music table.**
 
-```
+```powershell
 Invoke-DDBScan -TableName 'Music' | ConvertFrom-DDBItem
 ```
 **Output:**
@@ -794,7 +794,7 @@ AlbumTitle                     Hey Now
 ```
 **Example 2: Returns items in the Music table with a CriticRating greater than or equal to nine.**
 
-```
+```powershell
 $scanFilter = @{
         CriticRating = [Amazon.DynamoDBv2.Model.Condition]@{
             AttributeValueList = @(@{N = '9'})
@@ -823,7 +823,7 @@ AlbumTitle                     Somewhat Famous
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 
-```
+```python
 class Movies:
     """Encapsulates an Amazon DynamoDB table of movie data.
 
@@ -900,7 +900,7 @@ class Movies:
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 
-```
+```ruby
 class DynamoDBBasics
   attr_reader :dynamo_resource, :table
 
@@ -950,7 +950,7 @@ class DynamoDBBasics
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/dynamodb#code-examples).
 
-```
+```rust
 pub async fn list_items(client: &Client, table: &str, page_size: Option<i32>) -> Result<(), Error> {
     let page_size = page_size.unwrap_or(10);
     let items: Result<Vec<_>, _> = client
@@ -979,7 +979,7 @@ pub async fn list_items(client: &Client, table: &str, page_size: Option<i32>) ->
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/dyn#code-examples).
 
-```
+```sap-abap
     TRY.
         " Scan movies for rating greater than or equal to the rating specified
         DATA(lt_attributelist) = VALUE /aws1/cl_dynattributevalue=>tt_attributevaluelist(
@@ -1013,7 +1013,7 @@ pub async fn list_items(client: &Client, table: &str, page_size: Option<i32>) ->
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/dynamodb#code-examples).
 
-```
+```swift
 import AWSDynamoDB
 
     /// Return an array of `Movie` objects released in the specified range of

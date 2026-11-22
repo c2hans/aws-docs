@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-route53-delegationset-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Route53::DelegationSet"
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-route53-delegationset-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53::DelegationSet
 ```
 

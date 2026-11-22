@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-managedrulegroupconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AWSManagedRulesACFPRuleSet](#cfn-wafv2-webacl-managedrulegroupconfig-awsmanagedrulesacfpruleset)" : {{AWSManagedRulesACFPRuleSet}},
   "[AWSManagedRulesAntiDDoSRuleSet](#cfn-wafv2-webacl-managedrulegroupconfig-awsmanagedrulesantiddosruleset)" : {{AWSManagedRulesAntiDDoSRuleSet}},
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-managedrulegroupconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AWSManagedRulesACFPRuleSet](#cfn-wafv2-webacl-managedrulegroupconfig-awsmanagedrulesacfpruleset): {{
     AWSManagedRulesACFPRuleSet}}
   [AWSManagedRulesAntiDDoSRuleSet](#cfn-wafv2-webacl-managedrulegroupconfig-awsmanagedrulesantiddosruleset): {{

@@ -81,7 +81,7 @@ Per-origin configuration allows you to specify different client certificates for
 
 For per-origin configuration, specify the origin mTLS settings within each origin's configuration:
 
-```
+```json
 {
   "Origins": {
     "Quantity": 2,

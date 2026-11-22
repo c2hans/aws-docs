@@ -14,7 +14,7 @@ The `PutItem` request enables you to create or replace items in DynamoDB through
 
 The `PutItem` request has the following structure:
 
-```
+```TypeScript
 type DynamoDBPutItemRequest = {
   operation: 'PutItem';
   key: { [key: string]: any };

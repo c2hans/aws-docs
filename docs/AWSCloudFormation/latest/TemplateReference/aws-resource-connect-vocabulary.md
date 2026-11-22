@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-connect-vocabulary-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Connect::Vocabulary",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-connect-vocabulary-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Connect::Vocabulary
 Properties:
   [Content](#cfn-connect-vocabulary-content): {{String}}

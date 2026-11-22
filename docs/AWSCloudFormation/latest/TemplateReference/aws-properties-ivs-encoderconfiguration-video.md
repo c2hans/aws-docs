@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ivs-encoderconfiguration-video-syntax.json"></a>
 
-```
+```json
 {
   "[Bitrate](#cfn-ivs-encoderconfiguration-video-bitrate)" : {{Integer}},
   "[Framerate](#cfn-ivs-encoderconfiguration-video-framerate)" : {{Number}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ivs-encoderconfiguration-video-syntax.yaml"></a>
 
-```
+```yaml
   [Bitrate](#cfn-ivs-encoderconfiguration-video-bitrate): {{Integer}}
   [Framerate](#cfn-ivs-encoderconfiguration-video-framerate): {{Number}}
   [Height](#cfn-ivs-encoderconfiguration-video-height): {{Integer}}

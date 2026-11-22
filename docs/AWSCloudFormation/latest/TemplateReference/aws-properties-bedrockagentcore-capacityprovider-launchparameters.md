@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-capacityprovider-launchparameters-syntax.json"></a>
 
-```
+```json
 {
   "[CapacityReservationSpecification](#cfn-bedrockagentcore-capacityprovider-launchparameters-capacityreservationspecification)" : {{CapacityReservationSpecification}},
   "[EphemeralVolumes](#cfn-bedrockagentcore-capacityprovider-launchparameters-ephemeralvolumes)" : {{[ EphemeralBlockDeviceMapping, ... ]}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-capacityprovider-launchparameters-syntax.yaml"></a>
 
-```
+```yaml
   [CapacityReservationSpecification](#cfn-bedrockagentcore-capacityprovider-launchparameters-capacityreservationspecification): {{
     CapacityReservationSpecification}}
   [EphemeralVolumes](#cfn-bedrockagentcore-capacityprovider-launchparameters-ephemeralvolumes): {{

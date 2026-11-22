@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-events-rule-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-events-rule-tag-key)" : {{String}},
   "[Value](#cfn-events-rule-tag-value)" : {{String}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-events-rule-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-events-rule-tag-key): {{String}}
   [Value](#cfn-events-rule-tag-value): {{String}}
 ```

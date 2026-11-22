@@ -29,7 +29,7 @@ You must configure permissions to allow an IAM entity (such as a user, group, or
 **Unable to create the resource. Verify that you have permission to create service linked role. Otherwise wait and try again later.**
  Make sure you have the following permissions enabled:
 
-```
+```json
 {
     "Action": "iam:CreateServiceLinkedRole",
     "Effect": "Allow",
@@ -120,7 +120,7 @@ You must configure permissions to allow an IAM entity (such as a user, group, or
 **Unable to create the resource. Verify that you have permission to create service linked role. Otherwise wait and try again later.**
  Make sure you have the following permissions enabled:
 
-```
+```json
 {
     "Action": "iam:CreateServiceLinkedRole",
     "Effect": "Allow",
@@ -149,7 +149,7 @@ You must configure permissions to allow an IAM entity (such as a user, group, or
 **Unable to create the resource. Verify that you have permission to create service linked role. Otherwise wait and try again later.**
  Make sure you have the following permissions enabled:
 
-```
+```json
 {
     "Action": "iam:CreateServiceLinkedRole",
     "Effect": "Allow",

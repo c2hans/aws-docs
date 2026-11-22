@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotsitewise-gateway-gatewayplatform-syntax.json"></a>
 
-```
+```json
 {
   "[GreengrassV2](#cfn-iotsitewise-gateway-gatewayplatform-greengrassv2)" : {{GreengrassV2}},
   "[SiemensIE](#cfn-iotsitewise-gateway-gatewayplatform-siemensie)" : {{SiemensIE}}
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotsitewise-gateway-gatewayplatform-syntax.yaml"></a>
 
-```
+```yaml
   [GreengrassV2](#cfn-iotsitewise-gateway-gatewayplatform-greengrassv2): {{
     GreengrassV2}}
   [SiemensIE](#cfn-iotsitewise-gateway-gatewayplatform-siemensie): {{

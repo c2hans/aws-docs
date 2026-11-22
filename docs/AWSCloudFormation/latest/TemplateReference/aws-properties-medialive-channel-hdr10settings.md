@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-hdr10settings-syntax.json"></a>
 
-```
+```json
 {
   "[MaxCll](#cfn-medialive-channel-hdr10settings-maxcll)" : {{Integer}},
   "[MaxFall](#cfn-medialive-channel-hdr10settings-maxfall)" : {{Integer}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-hdr10settings-syntax.yaml"></a>
 
-```
+```yaml
   [MaxCll](#cfn-medialive-channel-hdr10settings-maxcll): {{Integer}}
   [MaxFall](#cfn-medialive-channel-hdr10settings-maxfall): {{Integer}}
 ```

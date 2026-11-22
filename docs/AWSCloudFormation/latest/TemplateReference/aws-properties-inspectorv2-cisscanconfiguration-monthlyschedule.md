@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-inspectorv2-cisscanconfiguration-monthlyschedule-syntax.json"></a>
 
-```
+```json
 {
   "[Day](#cfn-inspectorv2-cisscanconfiguration-monthlyschedule-day)" : {{String}},
   "[StartTime](#cfn-inspectorv2-cisscanconfiguration-monthlyschedule-starttime)" : {{Time}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-inspectorv2-cisscanconfiguration-monthlyschedule-syntax.yaml"></a>
 
-```
+```yaml
   [Day](#cfn-inspectorv2-cisscanconfiguration-monthlyschedule-day): {{String}}
   [StartTime](#cfn-inspectorv2-cisscanconfiguration-monthlyschedule-starttime): {{
     Time}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-filesystem-windowsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ActiveDirectoryId](#cfn-fsx-filesystem-windowsconfiguration-activedirectoryid)" : {{String}},
   "[Aliases](#cfn-fsx-filesystem-windowsconfiguration-aliases)" : {{[ String, ... ]}},
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-filesystem-windowsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ActiveDirectoryId](#cfn-fsx-filesystem-windowsconfiguration-activedirectoryid): {{String}}
   [Aliases](#cfn-fsx-filesystem-windowsconfiguration-aliases): {{
     - String}}

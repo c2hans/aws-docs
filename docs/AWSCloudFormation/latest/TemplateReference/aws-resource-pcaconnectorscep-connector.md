@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-pcaconnectorscep-connector-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::PCAConnectorSCEP::Connector",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-pcaconnectorscep-connector-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::PCAConnectorSCEP::Connector
 Properties:
   [CertificateAuthorityArn](#cfn-pcaconnectorscep-connector-certificateauthorityarn): {{String}}
@@ -111,7 +111,7 @@ The following example creates a AWS Private Certificate Authority (CA) general-p
 #### JSON
 <a name="aws-resource-pcaconnectorscep-connector--examples--Create_a_general-purpose_SCEP_connector_and_challenge_resource--json"></a>
 
-```
+```json
 {
    "AWSTemplateFormatVersion": "2010-09-09",
    "Description": "Cloudformation template to set up a general-purpose connector for SCEP and challenge password.",
@@ -240,7 +240,7 @@ The following example creates a AWS Private Certificate Authority (CA) general-p
 #### YAML
 <a name="aws-resource-pcaconnectorscep-connector--examples--Create_a_general-purpose_SCEP_connector_and_challenge_resource--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Cloudformation template to set up a general-purpose connector for SCEP and challenge password.
 Resources:
@@ -322,7 +322,7 @@ The following example creates a AWS Private Certificate Authority (CA) connector
 #### JSON
 <a name="aws-resource-pcaconnectorscep-connector--examples--Create_connector_to_use_with_Microsoft_Intune--json"></a>
 
-```
+```json
 {
       "AWSTemplateFormatVersion": "2010-09-09",
       "Description": "Cloudformation template to set up a connector to use with Microsoft Intune.",
@@ -443,7 +443,7 @@ The following example creates a AWS Private Certificate Authority (CA) connector
 #### YAML
 <a name="aws-resource-pcaconnectorscep-connector--examples--Create_connector_to_use_with_Microsoft_Intune--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Cloudformation template to set up a connector to use with Microsoft Intune.
 Resources:

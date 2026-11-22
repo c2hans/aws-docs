@@ -15,7 +15,7 @@ aws autoscaling describe-auto-scaling-groups --auto-scaling-group-name {{my-asg}
 
 The following is an example response.
 
-```
+```json
 {
     "AutoScalingGroups": [
         {

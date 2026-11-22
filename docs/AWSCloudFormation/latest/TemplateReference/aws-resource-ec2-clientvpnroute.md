@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-clientvpnroute-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::ClientVpnRoute",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-clientvpnroute-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::ClientVpnRoute
 Properties:
   [ClientVpnEndpointId](#cfn-ec2-clientvpnroute-clientvpnendpointid): {{String}}
@@ -86,7 +86,7 @@ The following example adds a route for internet access to a client VPN endpoint.
 #### YAML
 <a name="aws-resource-ec2-clientvpnroute--examples--Add_a_route_to_a_client_VPN_endpoint--yaml"></a>
 
-```
+```yaml
 myRoute:
   Type: "AWS::EC2::ClientVpnRoute"
   Properties:
@@ -101,7 +101,7 @@ myRoute:
 #### JSON
 <a name="aws-resource-ec2-clientvpnroute--examples--Add_a_route_to_a_client_VPN_endpoint--json"></a>
 
-```
+```json
 "myRoute": {
     "Type": "AWS::EC2::ClientVpnRoute",
     "Properties": {

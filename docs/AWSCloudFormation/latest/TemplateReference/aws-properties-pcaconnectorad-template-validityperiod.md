@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcaconnectorad-template-validityperiod-syntax.json"></a>
 
-```
+```json
 {
   "[Period](#cfn-pcaconnectorad-template-validityperiod-period)" : {{Number}},
   "[PeriodType](#cfn-pcaconnectorad-template-validityperiod-periodtype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcaconnectorad-template-validityperiod-syntax.yaml"></a>
 
-```
+```yaml
   [Period](#cfn-pcaconnectorad-template-validityperiod-period): {{Number}}
   [PeriodType](#cfn-pcaconnectorad-template-validityperiod-periodtype): {{String}}
 ```

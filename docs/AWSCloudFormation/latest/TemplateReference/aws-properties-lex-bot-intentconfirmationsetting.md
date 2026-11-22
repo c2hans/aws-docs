@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-intentconfirmationsetting-syntax.json"></a>
 
-```
+```json
 {
   "[CodeHook](#cfn-lex-bot-intentconfirmationsetting-codehook)" : {{DialogCodeHookInvocationSetting}},
   "[ConfirmationConditional](#cfn-lex-bot-intentconfirmationsetting-confirmationconditional)" : {{ConditionalSpecification}},
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-intentconfirmationsetting-syntax.yaml"></a>
 
-```
+```yaml
   [CodeHook](#cfn-lex-bot-intentconfirmationsetting-codehook): {{
     DialogCodeHookInvocationSetting}}
   [ConfirmationConditional](#cfn-lex-bot-intentconfirmationsetting-confirmationconditional): {{

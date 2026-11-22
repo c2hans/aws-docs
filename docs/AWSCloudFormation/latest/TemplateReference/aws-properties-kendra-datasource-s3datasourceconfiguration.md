@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-s3datasourceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AccessControlListConfiguration](#cfn-kendra-datasource-s3datasourceconfiguration-accesscontrollistconfiguration)" : {{AccessControlListConfiguration}},
   "[BucketName](#cfn-kendra-datasource-s3datasourceconfiguration-bucketname)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-s3datasourceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AccessControlListConfiguration](#cfn-kendra-datasource-s3datasourceconfiguration-accesscontrollistconfiguration): {{
     AccessControlListConfiguration}}
   [BucketName](#cfn-kendra-datasource-s3datasourceconfiguration-bucketname): {{String}}

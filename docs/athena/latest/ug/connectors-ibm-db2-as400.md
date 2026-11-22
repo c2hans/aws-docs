@@ -214,12 +214,12 @@ The connector retrieves partition details such as the number of partitions and c
 
 For improved performance, use predicate pushdown to query from Athena, as in the following examples.
 
-```
+```sql
 SELECT * FROM "lambda:{{<LAMBDA_NAME>}}"."{{<SCHEMA_NAME>}}"."{{<TABLE_NAME>}}"
  WHERE integercol = 2147483647
 ```
 
-```
+```sql
 SELECT * FROM "lambda: {{<LAMBDA_NAME>}}"."{{<SCHEMA_NAME>}}"."{{<TABLE_NAME>}}"
  WHERE timestampcol >= TIMESTAMP '2018-03-25 07:30:58.878'
 ```
@@ -231,7 +231,7 @@ The Db2 AS/400 connector supports [passthrough queries](federated-query-passthro
 
 To use passthrough queries with Db2 AS/400, you can use the following syntax:
 
-```
+```sql
 SELECT * FROM TABLE(
         system.query(
             query => '{{query string}}'
@@ -240,7 +240,7 @@ SELECT * FROM TABLE(
 
 The following example query pushes down a query to a data source in Db2 AS/400. The query selects all columns in the `customer` table, limiting the results to 10.
 
-```
+```sql
 SELECT * FROM TABLE(
         system.query(
             query => 'SELECT * FROM customer LIMIT 10'

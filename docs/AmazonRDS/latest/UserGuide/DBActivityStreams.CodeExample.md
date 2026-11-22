@@ -9,7 +9,7 @@ You can programmatically process an activity stream by using the AWS SDK. The fo
 ------
 #### [ Java ]
 
-```
+```java
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -283,7 +283,7 @@ public class DemoConsumer {
 ------
 #### [ Python ]
 
-```
+```python.py
 import base64
 import json
 import zlib

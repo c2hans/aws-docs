@@ -20,7 +20,7 @@ When authoring templates, don't use duplicate major sections, such as the `Resou
 
 The following example shows the structure of a JSON-formatted template with all available sections.
 
-```
+```json
 {
   "AWSTemplateFormatVersion" : "{{version date}}",
 
@@ -65,7 +65,7 @@ The following example shows the structure of a JSON-formatted template with all 
 
 The following example shows the structure of a YAML-formatted template with all available sections.
 
-```
+```yaml
 ---
 AWSTemplateFormatVersion: {{version date}}
 
@@ -106,7 +106,7 @@ In YAML-formatted templates, you can include inline comments by using the `#` sy
 
 The following example shows a YAML template with inline comments.
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: A sample CloudFormation template with YAML comments.
 # Resources section

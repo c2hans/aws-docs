@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-elasticloadbalancingv2-truststorerevocation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ElasticLoadBalancingV2::TrustStoreRevocation",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-elasticloadbalancingv2-truststorerevocation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ElasticLoadBalancingV2::TrustStoreRevocation
 Properties:
   [RevocationContents](#cfn-elasticloadbalancingv2-truststorerevocation-revocationcontents): {{
@@ -89,7 +89,7 @@ The following example creates a revocation list.
 #### YAML
 <a name="aws-resource-elasticloadbalancingv2-truststorerevocation--examples----yaml"></a>
 
-```
+```yaml
 myRevocationList:
   Type: 'AWS::ElasticLoadBalancingV2::TrustStoreRevocation'
   Properties:
@@ -103,7 +103,7 @@ myRevocationList:
 #### JSON
 <a name="aws-resource-elasticloadbalancingv2-truststorerevocation--examples----json"></a>
 
-```
+```json
 {
     "myRevocationList": {
         "Type": "AWS::ElasticLoadBalancingV2::TrustStoreRevocation",

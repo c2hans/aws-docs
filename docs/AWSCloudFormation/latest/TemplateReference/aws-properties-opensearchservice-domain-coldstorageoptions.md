@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchservice-domain-coldstorageoptions-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-opensearchservice-domain-coldstorageoptions-enabled)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchservice-domain-coldstorageoptions-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-opensearchservice-domain-coldstorageoptions-enabled): {{Boolean}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-route53resolver-resolverrule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Route53Resolver::ResolverRule",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-route53resolver-resolverrule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53Resolver::ResolverRule
 Properties:
   [DelegationRecord](#cfn-route53resolver-resolverrule-delegationrecord): {{String}}
@@ -158,7 +158,7 @@ The following example creates an Amazon Route 53 outbound resolver rule.
 #### JSON
 <a name="aws-resource-route53resolver-resolverrule--examples--Create_Resolver_rule--json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Route53Resolver::ResolverRule",
   "Properties" : {
@@ -189,7 +189,7 @@ The following example creates an Amazon Route 53 outbound resolver rule.
 #### YAML
 <a name="aws-resource-route53resolver-resolverrule--examples--Create_Resolver_rule--yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53Resolver::ResolverRule
 Properties:
   DomainName: example.com

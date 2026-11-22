@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-topic-topicconfigoptions-syntax.json"></a>
 
-```
+```json
 {
   "[QBusinessInsightsEnabled](#cfn-quicksight-topic-topicconfigoptions-qbusinessinsightsenabled)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-topic-topicconfigoptions-syntax.yaml"></a>
 
-```
+```yaml
   [QBusinessInsightsEnabled](#cfn-quicksight-topic-topicconfigoptions-qbusinessinsightsenabled): {{Boolean}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-quicksight-folder-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::QuickSight::Folder",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-quicksight-folder-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::QuickSight::Folder
 Properties:
   [AwsAccountId](#cfn-quicksight-folder-awsaccountid): {{String}}

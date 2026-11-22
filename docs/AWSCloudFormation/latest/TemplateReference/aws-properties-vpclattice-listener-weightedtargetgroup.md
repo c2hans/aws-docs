@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-vpclattice-listener-weightedtargetgroup-syntax.json"></a>
 
-```
+```json
 {
   "[TargetGroupIdentifier](#cfn-vpclattice-listener-weightedtargetgroup-targetgroupidentifier)" : {{String}},
   "[Weight](#cfn-vpclattice-listener-weightedtargetgroup-weight)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-vpclattice-listener-weightedtargetgroup-syntax.yaml"></a>
 
-```
+```yaml
   [TargetGroupIdentifier](#cfn-vpclattice-listener-weightedtargetgroup-targetgroupidentifier): {{String}}
   [Weight](#cfn-vpclattice-listener-weightedtargetgroup-weight): {{Integer}}
 ```

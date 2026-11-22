@@ -11,7 +11,7 @@ You can use AWS AppSync integration for AWS Lambda to invoke Lambda functions lo
 
 The Lambda request object handles fields related to your Lambda function:
 
-```
+```sh
 export type LambdaRequest = {
   operation: 'Invoke';
   invocationType?: 'RequestResponse' | 'Event';
@@ -37,7 +37,7 @@ export const onPublish = {
 
 When doing an `Invoke`, the resolved request matches the input payload of the *Lambda* function. The following example modifies the previous example:
 
-```
+```sh
 export const onPublish = {
   request(ctx) {
     return {
@@ -79,7 +79,7 @@ As with other data sources, your Lambda function sends a response to AWS AppSync
 
 If the shape of your Lambda function response matches the expected output, you can forward the response using the following function response handler:
 
-```
+```sh
 export const onPublish = {
   respone(ctx) {
     console.log(`the response: ${ctx.result}`)

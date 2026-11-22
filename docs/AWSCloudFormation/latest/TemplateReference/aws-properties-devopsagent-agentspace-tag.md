@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-agentspace-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-devopsagent-agentspace-tag-key)" : {{String}},
   "[Value](#cfn-devopsagent-agentspace-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-agentspace-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-devopsagent-agentspace-tag-key): {{String}}
   [Value](#cfn-devopsagent-agentspace-tag-value): {{String}}
 ```

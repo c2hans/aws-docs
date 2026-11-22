@@ -68,7 +68,7 @@ Before you begin, install or update the AWS CLI. The `aws signup` command requir
 
 1. In your terminal, run the following command.
 
-   ```
+   ```bash
    aws signup
    ```
 
@@ -88,7 +88,7 @@ Before you begin, install or update the AWS CLI. The `aws signup` command requir
 
 1. Return to your terminal and wait for the command to finish. To confirm that the credentials work, run the following command. The output shows the AWS account ID of your new project.
 
-   ```
+   ```bash
    aws sts get-caller-identity
    ```
 
@@ -96,7 +96,7 @@ AWS hosts your project's Regional resources in one AWS Region. AWS assigns this 
 
 Before you create Regional resources from the AWS CLI, confirm that your profile uses your project's Region. To see the Region in your profile, run `aws configure list`. To find your project's Region, see [Find the selected AWS Region for your projects](project-regions.md#project-regions-find). If the Regions are different, run the following command. Replace {{project-region}} with your project's Region code, such as `us-east-2`. If you use a named profile, add `--profile {{profile-name}}`.
 
-```
+```bash
 aws configure set region {{project-region}}
 ```
 

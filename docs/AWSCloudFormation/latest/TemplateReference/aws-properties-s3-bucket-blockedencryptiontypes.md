@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-blockedencryptiontypes-syntax.json"></a>
 
-```
+```json
 {
   "[EncryptionType](#cfn-s3-bucket-blockedencryptiontypes-encryptiontype)" : {{[ String, ... ]}}
 }
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-blockedencryptiontypes-syntax.yaml"></a>
 
-```
+```yaml
   [EncryptionType](#cfn-s3-bucket-blockedencryptiontypes-encryptiontype): {{
     - String}}
 ```

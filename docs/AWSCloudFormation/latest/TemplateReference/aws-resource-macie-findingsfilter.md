@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-macie-findingsfilter-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Macie::FindingsFilter",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-macie-findingsfilter-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Macie::FindingsFilter
 Properties:
   [Action](#cfn-macie-findingsfilter-action): {{String}}
@@ -130,7 +130,7 @@ This example creates a findings filter that suppresses (automatically archives) 
 #### JSON
 <a name="aws-resource-macie-findingsfilter--examples--Creating_a_findings_filter_that_filters_by_account_ID--json"></a>
 
-```
+```json
 {
     "Type": "AWS::Macie::FindingsFilter",
     "DependsOn": "Session",
@@ -162,7 +162,7 @@ This example creates a findings filter that suppresses (automatically archives) 
 #### YAML
 <a name="aws-resource-macie-findingsfilter--examples--Creating_a_findings_filter_that_filters_by_account_ID--yaml"></a>
 
-```
+```yaml
 Type: 'AWS::Macie::FindingsFilter'
 DependsOn: Session
 Properties:

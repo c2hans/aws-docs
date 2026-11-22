@@ -17,7 +17,7 @@ The second condition uses the `ForAllValues:StringEquals` condition operator. Th
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

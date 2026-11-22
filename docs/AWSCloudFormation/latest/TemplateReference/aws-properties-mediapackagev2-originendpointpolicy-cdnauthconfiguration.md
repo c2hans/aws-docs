@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackagev2-originendpointpolicy-cdnauthconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CdnIdentifierSecretArns](#cfn-mediapackagev2-originendpointpolicy-cdnauthconfiguration-cdnidentifiersecretarns)" : {{[ String, ... ]}},
   "[SecretsRoleArn](#cfn-mediapackagev2-originendpointpolicy-cdnauthconfiguration-secretsrolearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackagev2-originendpointpolicy-cdnauthconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CdnIdentifierSecretArns](#cfn-mediapackagev2-originendpointpolicy-cdnauthconfiguration-cdnidentifiersecretarns): {{
     - String}}
   [SecretsRoleArn](#cfn-mediapackagev2-originendpointpolicy-cdnauthconfiguration-secretsrolearn): {{String}}

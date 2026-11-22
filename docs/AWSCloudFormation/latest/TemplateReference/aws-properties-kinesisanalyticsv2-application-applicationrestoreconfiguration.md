@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisanalyticsv2-application-applicationrestoreconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ApplicationRestoreType](#cfn-kinesisanalyticsv2-application-applicationrestoreconfiguration-applicationrestoretype)" : {{String}},
   "[SnapshotArn](#cfn-kinesisanalyticsv2-application-applicationrestoreconfiguration-snapshotarn)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisanalyticsv2-application-applicationrestoreconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ApplicationRestoreType](#cfn-kinesisanalyticsv2-application-applicationrestoreconfiguration-applicationrestoretype): {{String}}
   [SnapshotArn](#cfn-kinesisanalyticsv2-application-applicationrestoreconfiguration-snapshotarn): {{String}}
   [SnapshotName](#cfn-kinesisanalyticsv2-application-applicationrestoreconfiguration-snapshotname): {{String}}

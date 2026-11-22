@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-paymentcredentialprovider-coinbasecdpconfigurationinput-syntax.json"></a>
 
-```
+```json
 {
   "[ApiKeyId](#cfn-bedrockagentcore-paymentcredentialprovider-coinbasecdpconfigurationinput-apikeyid)" : {{String}},
   "[ApiKeySecret](#cfn-bedrockagentcore-paymentcredentialprovider-coinbasecdpconfigurationinput-apikeysecret)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-paymentcredentialprovider-coinbasecdpconfigurationinput-syntax.yaml"></a>
 
-```
+```yaml
   [ApiKeyId](#cfn-bedrockagentcore-paymentcredentialprovider-coinbasecdpconfigurationinput-apikeyid): {{String}}
   [ApiKeySecret](#cfn-bedrockagentcore-paymentcredentialprovider-coinbasecdpconfigurationinput-apikeysecret): {{String}}
   [ApiKeySecretConfig](#cfn-bedrockagentcore-paymentcredentialprovider-coinbasecdpconfigurationinput-apikeysecretconfig): {{

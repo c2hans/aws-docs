@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-bedrockagentconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BedrockAgentAliasId](#cfn-lex-bot-bedrockagentconfiguration-bedrockagentaliasid)" : {{String}},
   "[BedrockAgentId](#cfn-lex-bot-bedrockagentconfiguration-bedrockagentid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-bedrockagentconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BedrockAgentAliasId](#cfn-lex-bot-bedrockagentconfiguration-bedrockagentaliasid): {{String}}
   [BedrockAgentId](#cfn-lex-bot-bedrockagentconfiguration-bedrockagentid): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-notificationscontacts-emailcontact-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-notificationscontacts-emailcontact-tag-key)" : {{String}},
   "[Value](#cfn-notificationscontacts-emailcontact-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-notificationscontacts-emailcontact-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-notificationscontacts-emailcontact-tag-key): {{String}}
   [Value](#cfn-notificationscontacts-emailcontact-tag-value): {{String}}
 ```

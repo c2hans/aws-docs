@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-topic-topicrelativedatefilter-syntax.json"></a>
 
-```
+```json
 {
   "[Constant](#cfn-quicksight-topic-topicrelativedatefilter-constant)" : {{TopicSingularFilterConstant}},
   "[RelativeDateFilterFunction](#cfn-quicksight-topic-topicrelativedatefilter-relativedatefilterfunction)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-topic-topicrelativedatefilter-syntax.yaml"></a>
 
-```
+```yaml
   [Constant](#cfn-quicksight-topic-topicrelativedatefilter-constant): {{
     TopicSingularFilterConstant}}
   [RelativeDateFilterFunction](#cfn-quicksight-topic-topicrelativedatefilter-relativedatefilterfunction): {{String}}

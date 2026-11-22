@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-mailmanagerruleset-ruledmarcexpression-syntax.json"></a>
 
-```
+```json
 {
   "[Operator](#cfn-ses-mailmanagerruleset-ruledmarcexpression-operator)" : {{String}},
   "[Values](#cfn-ses-mailmanagerruleset-ruledmarcexpression-values)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-mailmanagerruleset-ruledmarcexpression-syntax.yaml"></a>
 
-```
+```yaml
   [Operator](#cfn-ses-mailmanagerruleset-ruledmarcexpression-operator): {{String}}
   [Values](#cfn-ses-mailmanagerruleset-ruledmarcexpression-values): {{
     - String}}

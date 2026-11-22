@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-partition-serdeinfo-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-glue-partition-serdeinfo-name)" : {{String}},
   "[Parameters](#cfn-glue-partition-serdeinfo-parameters)" : {{Json}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-partition-serdeinfo-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-glue-partition-serdeinfo-name): {{String}}
   [Parameters](#cfn-glue-partition-serdeinfo-parameters): {{Json}}
   [SerializationLibrary](#cfn-glue-partition-serdeinfo-serializationlibrary): {{String}}

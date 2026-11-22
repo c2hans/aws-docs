@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-program-timesignalmessage-syntax.json"></a>
 
-```
+```json
 {
   "[SegmentationDescriptors](#cfn-mediatailor-program-timesignalmessage-segmentationdescriptors)" : {{[ SegmentationDescriptor, ... ]}}
 }
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-program-timesignalmessage-syntax.yaml"></a>
 
-```
+```yaml
   [SegmentationDescriptors](#cfn-mediatailor-program-timesignalmessage-segmentationdescriptors): {{
     - SegmentationDescriptor}}
 ```

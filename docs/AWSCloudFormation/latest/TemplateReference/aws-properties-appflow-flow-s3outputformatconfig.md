@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-flow-s3outputformatconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AggregationConfig](#cfn-appflow-flow-s3outputformatconfig-aggregationconfig)" : {{AggregationConfig}},
   "[FileType](#cfn-appflow-flow-s3outputformatconfig-filetype)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-flow-s3outputformatconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AggregationConfig](#cfn-appflow-flow-s3outputformatconfig-aggregationconfig): {{
     AggregationConfig}}
   [FileType](#cfn-appflow-flow-s3outputformatconfig-filetype): {{String}}

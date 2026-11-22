@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-workspacesweb-identityprovider-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::WorkSpacesWeb::IdentityProvider",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-workspacesweb-identityprovider-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::WorkSpacesWeb::IdentityProvider
 Properties:
   [IdentityProviderDetails](#cfn-workspacesweb-identityprovider-identityproviderdetails): {{

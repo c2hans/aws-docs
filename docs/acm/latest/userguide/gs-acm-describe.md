@@ -51,13 +51,13 @@ It can take up to several hours for changes to the certificate status to become 
 
 Use the [describe-certificate](https://docs.aws.amazon.com/cli/latest/reference/acm/describe-certificate.html) in the AWS CLI to display certificate details, as shown in the following command:
 
-```
+```bash
 $ aws acm describe-certificate --certificate-arn arn:aws:acm:{{Region}}:{{444455556666}}:certificate/{{certificate_ID}}
 ```
 
 The command returns information similar to the following:
 
-```
+```json
 {
     "Certificate": {
         "CertificateArn": "arn:aws:acm:{{Region}}:{{444455556666}}:certificate/{{certificate_ID}}",

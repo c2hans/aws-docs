@@ -15,7 +15,7 @@ The AWS AppSync DynamoDB function allows a condition expression to be specified 
 
 The following `PutItem` request object doesn’t have a condition expression. As a result, it puts an item in DynamoDB even if an item with the same key already exists, which overwrites the existing item.
 
-```
+```TypeScript
 import { util } from '@aws-appsync/utils';
 import * as ddb from '@aws-appsync/utils/dynamodb';
 
@@ -33,7 +33,7 @@ export const onPublish = {
 
 The following `PutItem` object does have a condition expression that allows the operation to succeed only if an item with the same key does *not* exist in DynamoDB.
 
-```
+```TypeScript
 import { util } from '@aws-appsync/utils';
 import * as ddb from '@aws-appsync/utils/dynamodb';
 
@@ -59,7 +59,7 @@ The `PutItem`, `UpdateItem`, and `DeleteItem` request objects all allow an optio
 
 The built-in module functions create a `condition` object that has the following structure.
 
-```
+```TypeScript
 type ConditionCheckExpression = {
   expression: string;
   expressionNames?: { [key: string]: string};

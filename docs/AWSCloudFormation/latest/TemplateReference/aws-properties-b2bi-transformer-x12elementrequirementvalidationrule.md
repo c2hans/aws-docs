@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-b2bi-transformer-x12elementrequirementvalidationrule-syntax.json"></a>
 
-```
+```json
 {
   "[ElementPosition](#cfn-b2bi-transformer-x12elementrequirementvalidationrule-elementposition)" : {{String}},
   "[Requirement](#cfn-b2bi-transformer-x12elementrequirementvalidationrule-requirement)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-b2bi-transformer-x12elementrequirementvalidationrule-syntax.yaml"></a>
 
-```
+```yaml
   [ElementPosition](#cfn-b2bi-transformer-x12elementrequirementvalidationrule-elementposition): {{String}}
   [Requirement](#cfn-b2bi-transformer-x12elementrequirementvalidationrule-requirement): {{String}}
 ```

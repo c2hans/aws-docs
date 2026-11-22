@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-applicationinsights-application-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApplicationInsights::Application",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-applicationinsights-application-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApplicationInsights::Application
 Properties:
   [AttachMissingPermission](#cfn-applicationinsights-application-attachmissingpermission): {{Boolean}}
@@ -193,7 +193,7 @@ The following example template performs the following actions:
 #### YAML
 <a name="aws-resource-applicationinsights-application--examples--The_following_example_template_creates_an_Application_Insights_application_with_all_components_configured_with_recommended_monitoring_settings--yaml"></a>
 
-```
+```yaml
 ---
 Type: AWS::ApplicationInsights::Application
 Properties:
@@ -204,7 +204,7 @@ Properties:
 #### JSON
 <a name="aws-resource-applicationinsights-application--examples--The_following_example_template_creates_an_Application_Insights_application_with_all_components_configured_with_recommended_monitoring_settings--json"></a>
 
-```
+```json
 {
     "Type": "AWS::ApplicationInsights::Application",
     "Properties": {
@@ -226,7 +226,7 @@ The following example template performs the following actions:
 #### YAML
 <a name="aws-resource-applicationinsights-application--examples--The_following_example_template_creates_an_Application_Insights_application_that_includes_all_of_the_components_in_the_account--yaml"></a>
 
-```
+```yaml
 ---
 Type: AWS::ApplicationInsights::Application
 Properties:
@@ -238,7 +238,7 @@ Properties:
 #### JSON
 <a name="aws-resource-applicationinsights-application--examples--The_following_example_template_creates_an_Application_Insights_application_that_includes_all_of_the_components_in_the_account--json"></a>
 
-```
+```json
 {
     "Type": "AWS::ApplicationInsights::Application",
     "Properties": {
@@ -262,7 +262,7 @@ The following example template performs the following actions:
 #### YAML
 <a name="aws-resource-applicationinsights-application--examples--The_following_example_template_creates_an_Application_Insights_application_with_detailed_settings--yaml"></a>
 
-```
+```yaml
 ---
 Type: AWS::ApplicationInsights::Application
 Properties:
@@ -303,7 +303,7 @@ Properties:
 #### JSON
 <a name="aws-resource-applicationinsights-application--examples--The_following_example_template_creates_an_Application_Insights_application_with_detailed_settings--json"></a>
 
-```
+```json
 {
     "Type": "AWS::ApplicationInsights::Application",
     "Properties": {
@@ -378,7 +378,7 @@ The following example template performs the following actions:
 #### YAML
 <a name="aws-resource-applicationinsights-application--examples--The_following_example_template_creates_an_Application_Insights_application_with_CUSTOM_mode_component_configuration--yaml"></a>
 
-```
+```yaml
 ---
 Type: AWS::ApplicationInsights::Application
 Properties:
@@ -441,7 +441,7 @@ Properties:
 #### JSON
 <a name="aws-resource-applicationinsights-application--examples--The_following_example_template_creates_an_Application_Insights_application_with_CUSTOM_mode_component_configuration--json"></a>
 
-```
+```json
 {
     "Type": "AWS::ApplicationInsights::Application",
     "Properties": {
@@ -545,7 +545,7 @@ The following example template performs the following actions:
 #### YAML
 <a name="aws-resource-applicationinsights-application--examples--The_following_example_template_creates_an_Application_Insights_application_with_DEFAULT_mode_component_configuration--yaml"></a>
 
-```
+```yaml
 ---
 Type: AWS::ApplicationInsights::Application
 Properties:
@@ -559,7 +559,7 @@ Properties:
 #### JSON
 <a name="aws-resource-applicationinsights-application--examples--The_following_example_template_creates_an_Application_Insights_application_with_DEFAULT_mode_component_configuration--json"></a>
 
-```
+```json
 {
     "Type": "AWS::ApplicationInsights::Application",
     "Properties": {
@@ -589,7 +589,7 @@ The following example template performs the following actions:
 #### YAML
 <a name="aws-resource-applicationinsights-application--examples--The_following_example_template_creates_an_Application_Insights_application_with_DEFAULT_WITH_OVERWRITE_mode_component_configuration--yaml"></a>
 
-```
+```yaml
 ---
 Type: AWS::ApplicationInsights::Application
 Properties:
@@ -616,7 +616,7 @@ Properties:
 #### JSON
 <a name="aws-resource-applicationinsights-application--examples--The_following_example_template_creates_an_Application_Insights_application_with_DEFAULT_WITH_OVERWRITE_mode_component_configuration--json"></a>
 
-```
+```json
 {
     "Type": "AWS::ApplicationInsights::Application",
     "Properties": {

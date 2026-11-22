@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-datetimehierarchy-syntax.json"></a>
 
-```
+```json
 {
   "[DrillDownFilters](#cfn-quicksight-analysis-datetimehierarchy-drilldownfilters)" : {{[ DrillDownFilter, ... ]}},
   "[HierarchyId](#cfn-quicksight-analysis-datetimehierarchy-hierarchyid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-datetimehierarchy-syntax.yaml"></a>
 
-```
+```yaml
   [DrillDownFilters](#cfn-quicksight-analysis-datetimehierarchy-drilldownfilters): {{
     - DrillDownFilter}}
   [HierarchyId](#cfn-quicksight-analysis-datetimehierarchy-hierarchyid): {{String}}

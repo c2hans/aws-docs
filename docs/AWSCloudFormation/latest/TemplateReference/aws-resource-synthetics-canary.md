@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-synthetics-canary-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Synthetics::Canary",
   "Properties" : {
@@ -53,7 +53,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-synthetics-canary-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Synthetics::Canary
 Properties:
   [ArtifactConfig](#cfn-synthetics-canary-artifactconfig): {{
@@ -292,7 +292,7 @@ This example creates a canary that uses an existing script stored in an S3 bucke
 #### JSON
 <a name="aws-resource-synthetics-canary--examples--Canary_with_script_stored_in_an_Amazon_S3_bucket--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "CloudFormation Sample Template for CloudWatch Synthetics: Create a Canary using this template",
@@ -338,7 +338,7 @@ This example creates a canary that uses an existing script stored in an S3 bucke
 #### YAML
 <a name="aws-resource-synthetics-canary--examples--Canary_with_script_stored_in_an_Amazon_S3_bucket--yaml"></a>
 
-```
+```yaml
 Resources:
     SyntheticsCanary:
         Type: 'AWS::Synthetics::Canary'
@@ -364,7 +364,7 @@ This example creates a canary and passes the script code directly into the canar
 #### JSON
 <a name="aws-resource-synthetics-canary--examples--Canary_with_script_passed_through_CloudFormation--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "CloudFormation Sample Template for CloudWatch Synthetics: Create a Canary using this template",
@@ -409,7 +409,7 @@ This example creates a canary and passes the script code directly into the canar
 #### YAML
 <a name="aws-resource-synthetics-canary--examples--Canary_with_script_passed_through_CloudFormation--yaml"></a>
 
-```
+```yaml
 Resources:
     SyntheticsCanary:
         Type: 'AWS::Synthetics::Canary'

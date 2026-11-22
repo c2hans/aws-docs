@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-storagelens-bucketlevel-syntax.json"></a>
 
-```
+```json
 {
   "[ActivityMetrics](#cfn-s3-storagelens-bucketlevel-activitymetrics)" : {{ActivityMetrics}},
   "[AdvancedCostOptimizationMetrics](#cfn-s3-storagelens-bucketlevel-advancedcostoptimizationmetrics)" : {{AdvancedCostOptimizationMetrics}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-storagelens-bucketlevel-syntax.yaml"></a>
 
-```
+```yaml
   [ActivityMetrics](#cfn-s3-storagelens-bucketlevel-activitymetrics): {{
     ActivityMetrics}}
   [AdvancedCostOptimizationMetrics](#cfn-s3-storagelens-bucketlevel-advancedcostoptimizationmetrics): {{

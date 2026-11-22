@@ -52,7 +52,7 @@ For a complete example, see the [example application](https://github.com/awslabs
 
 Add the package to your project:
 
-```
+```bash
 dotnet add package Amazon.AuroraDsql.Npgsql
 ```
 
@@ -62,7 +62,7 @@ dotnet add package Amazon.AuroraDsql.Npgsql
 ### Pool connection
 <a name="SECTION_program-with-dsql-connector-for-dotnet-npgsql-pool-connection"></a>
 
-```
+```csharp
 using Amazon.AuroraDsql.Npgsql;
 
 // Create a connection pool
@@ -96,7 +96,7 @@ await ds.WithTransactionRetryAsync(async conn =>
 
 For simple scripts or when you do not need connection pooling:
 
-```
+```csharp
 await using var conn = await AuroraDsql.ConnectAsync(new DsqlConfig
 {
     Host = "your-cluster.dsql.us-east-1.on.aws"
@@ -113,7 +113,7 @@ Aurora DSQL uses optimistic concurrency control (OCC). When two transactions mod
 
 OCC retry is opt-in. Set `OccMaxRetries` in the config to enable automatic retry with exponential backoff and jitter. Use `WithTransactionRetryAsync` for transactional writes:
 
-```
+```csharp
 await ds.WithTransactionRetryAsync(async conn =>
 {
     await using var cmd = conn.CreateCommand();
@@ -131,7 +131,7 @@ await ds.WithTransactionRetryAsync(async conn =>
 
 For DDL or single statements, use `ExecWithRetryAsync`:
 
-```
+```csharp
 await ds.ExecWithRetryAsync("CREATE TABLE IF NOT EXISTS users (id UUID PRIMARY KEY, name TEXT)");
 ```
 

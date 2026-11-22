@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudfront-originrequestpolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudFront::OriginRequestPolicy",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudfront-originrequestpolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudFront::OriginRequestPolicy
 Properties:
   [OriginRequestPolicyConfig](#cfn-cloudfront-originrequestpolicy-originrequestpolicyconfig): {{

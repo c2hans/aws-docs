@@ -16,6 +16,11 @@ Type: String
 Length Constraints: Minimum length of 20. Maximum length of 2048.
 Required: No
 
+ ** IsTrustedIdentityPropagationEnabled **
+Specifies whether trusted identity propagation is enabled for the OpenID Connect (OIDC) provider. This is `true` when an IAM Identity Center instance is associated with the provider.
+Type: Boolean
+Required: No
+
 ## See Also
 <a name="API_OpenIDConnectProviderListEntry_SeeAlso"></a>
 

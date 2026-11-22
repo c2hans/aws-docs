@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-ecscontaineroverride-syntax.json"></a>
 
-```
+```json
 {
   "[Command](#cfn-pipes-pipe-ecscontaineroverride-command)" : {{[ String, ... ]}},
   "[Cpu](#cfn-pipes-pipe-ecscontaineroverride-cpu)" : {{Integer}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-ecscontaineroverride-syntax.yaml"></a>
 
-```
+```yaml
   [Command](#cfn-pipes-pipe-ecscontaineroverride-command): {{
     - String}}
   [Cpu](#cfn-pipes-pipe-ecscontaineroverride-cpu): {{Integer}}

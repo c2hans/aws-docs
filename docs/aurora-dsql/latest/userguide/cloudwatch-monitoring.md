@@ -129,7 +129,7 @@ After you start the alarm from either console, configure it.
 
 The following AWS CLI command creates the same alarm. Replace {{your-cluster-id}} with your cluster ID, {{hourly-dpu-threshold}} with your hourly DPU threshold, and {{sns-topic-arn}} with the ARN of your Amazon SNS topic.
 
-```
+```bash
 aws cloudwatch put-metric-alarm \
     --alarm-name "DSQL-Hourly-DPU-Budget-Warning" \
     --alarm-description "Alert when hourly DPU exceeds 80% of budget" \
@@ -150,7 +150,7 @@ aws cloudwatch put-metric-alarm \
 Keep the following in mind when you set DPU cost alarms:
 + The alarm tracks DPU usage for each period, not your total spend for the month. A short spike can trigger the alarm even if your monthly usage stays within budget. To track month-to-date spend, use [AWS Budgets](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html).
 + To reduce alarms from short spikes, require more than one breaching data point, such as two out of three evaluation periods.
-+ A multi-Region cluster setup has a separate peered cluster in each Region, and each peered cluster reports its own `TotalDPU`. Create one alarm for each peered cluster, in that cluster's Region.
++ A multi-Region cluster setup has a separate peered cluster in each Region, and each peered cluster reports its own `TotalDPU`. Create one alarm for each peered cluster, in that cluster's Region. DPU prices vary by Region, so set each peer's threshold from the DPU price for that peer's Region, shown on the Aurora DSQL pricing page.
 + If you use CDC streams, `TotalDPU` already includes `StreamDPU`, so your `TotalDPU` alarm covers stream costs. To track the cost of a single stream, you can also create a separate alarm on `StreamDPU`. Aurora DSQL reports `StreamDPU` for each stream with the `ClusterId` and `StreamId` dimensions.
 
 For more information about finding the statements that drive DPU usage, see [Finding high-load queries with Aurora DSQL Database Insights](billing-metering.md#billing-db-insights).

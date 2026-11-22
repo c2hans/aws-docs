@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-sheetimagescalingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ScalingType](#cfn-quicksight-dashboard-sheetimagescalingconfiguration-scalingtype)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-sheetimagescalingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ScalingType](#cfn-quicksight-dashboard-sheetimagescalingconfiguration-scalingtype): {{String}}
 ```
 

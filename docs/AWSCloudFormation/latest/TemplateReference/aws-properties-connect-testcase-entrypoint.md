@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-testcase-entrypoint-syntax.json"></a>
 
-```
+```json
 {
   "[ChatEntryPointParameters](#cfn-connect-testcase-entrypoint-chatentrypointparameters)" : {{ChatEntryPointParameters}},
   "[Type](#cfn-connect-testcase-entrypoint-type)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-testcase-entrypoint-syntax.yaml"></a>
 
-```
+```yaml
   [ChatEntryPointParameters](#cfn-connect-testcase-entrypoint-chatentrypointparameters): {{
     ChatEntryPointParameters}}
   [Type](#cfn-connect-testcase-entrypoint-type): {{String}}

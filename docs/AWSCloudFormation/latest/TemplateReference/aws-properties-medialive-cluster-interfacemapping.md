@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-cluster-interfacemapping-syntax.json"></a>
 
-```
+```json
 {
   "[LogicalInterfaceName](#cfn-medialive-cluster-interfacemapping-logicalinterfacename)" : {{String}},
   "[NetworkId](#cfn-medialive-cluster-interfacemapping-networkid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-cluster-interfacemapping-syntax.yaml"></a>
 
-```
+```yaml
   [LogicalInterfaceName](#cfn-medialive-cluster-interfacemapping-logicalinterfacename): {{String}}
   [NetworkId](#cfn-medialive-cluster-interfacemapping-networkid): {{String}}
 ```

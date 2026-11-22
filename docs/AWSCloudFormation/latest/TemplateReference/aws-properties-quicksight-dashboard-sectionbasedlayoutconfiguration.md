@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-sectionbasedlayoutconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BodySections](#cfn-quicksight-dashboard-sectionbasedlayoutconfiguration-bodysections)" : {{[ BodySectionConfiguration, ... ]}},
   "[CanvasSizeOptions](#cfn-quicksight-dashboard-sectionbasedlayoutconfiguration-canvassizeoptions)" : {{SectionBasedLayoutCanvasSizeOptions}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-sectionbasedlayoutconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BodySections](#cfn-quicksight-dashboard-sectionbasedlayoutconfiguration-bodysections): {{
     - BodySectionConfiguration}}
   [CanvasSizeOptions](#cfn-quicksight-dashboard-sectionbasedlayoutconfiguration-canvassizeoptions): {{

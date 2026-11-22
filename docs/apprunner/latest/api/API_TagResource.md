@@ -81,7 +81,7 @@ This example illustrates how to add two tags to an App Runner service.
 #### Sample Request
 <a name="API_TagResource_Example_1_Request"></a>
 
-```
+```json
 $ aws apprunner tag-resource --cli-input-json "`cat`"
 {
   "ResourceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
@@ -101,7 +101,7 @@ $ aws apprunner tag-resource --cli-input-json "`cat`"
 #### Sample Response
 <a name="API_TagResource_Example_1_Response"></a>
 
-```
+```json
 {
 }
 ```

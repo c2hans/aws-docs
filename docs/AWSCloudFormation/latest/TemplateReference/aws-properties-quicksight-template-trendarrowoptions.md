@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-trendarrowoptions-syntax.json"></a>
 
-```
+```json
 {
   "[Visibility](#cfn-quicksight-template-trendarrowoptions-visibility)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-trendarrowoptions-syntax.yaml"></a>
 
-```
+```yaml
   [Visibility](#cfn-quicksight-template-trendarrowoptions-visibility): {{String}}
 ```
 

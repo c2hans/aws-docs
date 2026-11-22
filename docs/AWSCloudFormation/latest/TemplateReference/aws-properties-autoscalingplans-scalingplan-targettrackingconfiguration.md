@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CustomizedScalingMetricSpecification](#cfn-autoscalingplans-scalingplan-targettrackingconfiguration-customizedscalingmetricspecification)" : {{CustomizedScalingMetricSpecification}},
   "[DisableScaleIn](#cfn-autoscalingplans-scalingplan-targettrackingconfiguration-disablescalein)" : {{Boolean}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CustomizedScalingMetricSpecification](#cfn-autoscalingplans-scalingplan-targettrackingconfiguration-customizedscalingmetricspecification): {{
     CustomizedScalingMetricSpecification}}
   [DisableScaleIn](#cfn-autoscalingplans-scalingplan-targettrackingconfiguration-disablescalein): {{Boolean}}

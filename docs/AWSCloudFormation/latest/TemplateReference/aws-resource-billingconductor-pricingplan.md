@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-billingconductor-pricingplan-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::BillingConductor::PricingPlan",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-billingconductor-pricingplan-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::BillingConductor::PricingPlan
 Properties:
   [Description](#cfn-billingconductor-pricingplan-description): {{String}}
@@ -110,7 +110,7 @@ The following example creates a pricing plan with a 10% global mark up pricing r
 #### JSON
 <a name="aws-resource-billingconductor-pricingplan--examples--Pricing_plan_with_a_pricing_rule_attached--json"></a>
 
-```
+```json
 {
   "Resources": {
       "TestPricingRule": {
@@ -140,7 +140,7 @@ The following example creates a pricing plan with a 10% global mark up pricing r
 #### YAML
 <a name="aws-resource-billingconductor-pricingplan--examples--Pricing_plan_with_a_pricing_rule_attached--yaml"></a>
 
-```
+```yaml
 Resources:
   TestPricingRule:
       Type: 'AWS::BillingConductor::PricingRule'

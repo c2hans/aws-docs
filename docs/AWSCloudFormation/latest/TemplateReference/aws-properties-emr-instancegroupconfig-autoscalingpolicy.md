@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emr-instancegroupconfig-autoscalingpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[Constraints](#cfn-emr-instancegroupconfig-autoscalingpolicy-constraints)" : {{ScalingConstraints}},
   "[Rules](#cfn-emr-instancegroupconfig-autoscalingpolicy-rules)" : {{[ ScalingRule, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emr-instancegroupconfig-autoscalingpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [Constraints](#cfn-emr-instancegroupconfig-autoscalingpolicy-constraints): {{
     ScalingConstraints}}
   [Rules](#cfn-emr-instancegroupconfig-autoscalingpolicy-rules): {{

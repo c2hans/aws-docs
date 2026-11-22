@@ -57,7 +57,7 @@ For more information, see [Amazon EC2 Auto Scaling lifecycle hooks](https://docs
 **Tools for PowerShell V4**
 **Example 1: This example adds the specified lifecycle hook to the specified Auto Scaling group.**
 
-```
+```powershell
 Write-ASLifecycleHook -AutoScalingGroupName my-asg -LifecycleHookName "myLifecycleHook" -LifecycleTransition "autoscaling:EC2_INSTANCE_LAUNCHING" -NotificationTargetARN "arn:aws:sns:us-west-2:123456789012:my-sns-topic" -RoleARN "arn:aws:iam::123456789012:role/my-iam-role"
 ```
 +  For API details, see [PutLifecycleHook](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -65,7 +65,7 @@ Write-ASLifecycleHook -AutoScalingGroupName my-asg -LifecycleHookName "myLifecyc
 **Tools for PowerShell V5**
 **Example 1: This example adds the specified lifecycle hook to the specified Auto Scaling group.**
 
-```
+```powershell
 Write-ASLifecycleHook -AutoScalingGroupName my-asg -LifecycleHookName "myLifecycleHook" -LifecycleTransition "autoscaling:EC2_INSTANCE_LAUNCHING" -NotificationTargetARN "arn:aws:sns:us-west-2:123456789012:my-sns-topic" -RoleARN "arn:aws:iam::123456789012:role/my-iam-role"
 ```
 +  For API details, see [PutLifecycleHook](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

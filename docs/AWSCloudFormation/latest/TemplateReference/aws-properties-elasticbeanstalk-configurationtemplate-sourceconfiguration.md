@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticbeanstalk-configurationtemplate-sourceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ApplicationName](#cfn-elasticbeanstalk-configurationtemplate-sourceconfiguration-applicationname)" : {{String}},
   "[TemplateName](#cfn-elasticbeanstalk-configurationtemplate-sourceconfiguration-templatename)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticbeanstalk-configurationtemplate-sourceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ApplicationName](#cfn-elasticbeanstalk-configurationtemplate-sourceconfiguration-applicationname): {{String}}
   [TemplateName](#cfn-elasticbeanstalk-configurationtemplate-sourceconfiguration-templatename): {{String}}
 ```

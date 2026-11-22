@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-capacityprovider-ec2configuration-syntax.json"></a>
 
-```
+```json
 {
   "[LaunchTemplateSource](#cfn-bedrockagentcore-capacityprovider-ec2configuration-launchtemplatesource)" : {{LaunchTemplateSource}},
   "[LifecycleConfiguration](#cfn-bedrockagentcore-capacityprovider-ec2configuration-lifecycleconfiguration)" : {{InstanceLifecycleConfiguration}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-capacityprovider-ec2configuration-syntax.yaml"></a>
 
-```
+```yaml
   [LaunchTemplateSource](#cfn-bedrockagentcore-capacityprovider-ec2configuration-launchtemplatesource): {{
     LaunchTemplateSource}}
   [LifecycleConfiguration](#cfn-bedrockagentcore-capacityprovider-ec2configuration-lifecycleconfiguration): {{

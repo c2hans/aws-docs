@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/create-cloudfront-table
 
 The following example CREATE TABLE statement automatically uses partition projection on CloudFront logs in Parquet, from a specified CloudFront distribution until present for a single AWS Region. After you run the query successfully, you can query the table.
 
-```
+```sql
 CREATE EXTERNAL TABLE `{{cloudfront_logs_parquet_pp}}`(
 `date` string,
 `time` string,

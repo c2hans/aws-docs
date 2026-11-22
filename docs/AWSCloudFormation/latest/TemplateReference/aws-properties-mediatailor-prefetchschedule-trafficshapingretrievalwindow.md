@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-prefetchschedule-trafficshapingretrievalwindow-syntax.json"></a>
 
-```
+```json
 {
   "[RetrievalWindowDurationSeconds](#cfn-mediatailor-prefetchschedule-trafficshapingretrievalwindow-retrievalwindowdurationseconds)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-prefetchschedule-trafficshapingretrievalwindow-syntax.yaml"></a>
 
-```
+```yaml
   [RetrievalWindowDurationSeconds](#cfn-mediatailor-prefetchschedule-trafficshapingretrievalwindow-retrievalwindowdurationseconds): {{Integer}}
 ```
 

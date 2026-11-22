@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sso-instance-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SSO::Instance",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sso-instance-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SSO::Instance
 Properties:
   [Name](#cfn-sso-instance-name): {{String}}
@@ -99,7 +99,7 @@ The following example creates an instance of IAM Identity Center for a specific 
 #### JSON
 <a name="aws-resource-sso-instance--examples--Creating_a_new_instance_of--json"></a>
 
-```
+```json
 "Instance": {
     "Type": "AWS::SSO::Instance",
     "Properties": {
@@ -114,7 +114,7 @@ The following example creates an instance of IAM Identity Center for a specific 
 #### YAML
 <a name="aws-resource-sso-instance--examples--Creating_a_new_instance_of--yaml"></a>
 
-```
+```yaml
  Instance:
     Type: AWS::SSO::Instance
     Properties:

@@ -63,7 +63,8 @@ In some cases, you must explicitly acknowledge that your StackSet template conta
 
   Some templates reference macros. If your StackSet template references one or more macros, you must create the StackSet directly from the processed template, without first reviewing the resulting changes in a change set. To create the StackSet directly, you must acknowledge this capability. For more information, see [Perform custom processing on CloudFormation templates with template macros](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-macros.html).
 **Important**
-StackSets with service-managed permissions don't currently support the use of macros in templates. (This includes the [AWS::Include](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/transform-aws-include.html) and [AWS::Serverless](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/transform-aws-serverless.html) transforms, which are macros hosted by CloudFormation.) Even if you specify this capability for a StackSet with service-managed permissions, if you reference a macro in your template the StackSet operation will fail.
+With service-managed permissions, CloudFormation can process macros, nested stacks, and transforms in your StackSet template only when you provide a custom execution role template. (Macros include the [AWS::Include](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/transform-aws-include.html) and [AWS::Serverless](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/transform-aws-serverless.html) transforms, which are macros hosted by CloudFormation.) The default service-managed execution role can't provision them: if you reference a macro in your template, the StackSet operation fails even when you specify this capability.
+To use macros, nested stacks, or transforms with service-managed permissions, specify a custom execution role template in `ExecutionRoleTemplateBody` or `ExecutionRoleTemplateUrl`, and specify both `CAPABILITY_NAMED_IAM` and `CAPABILITY_AUTO_EXPAND`.
 Type: Array of strings
 Valid Values: `CAPABILITY_IAM | CAPABILITY_NAMED_IAM | CAPABILITY_AUTO_EXPAND`
 Required: No
@@ -82,12 +83,26 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** ExecutionRoleName **
-The name of the IAM execution role to use to create the StackSet. If you do not specify an execution role, CloudFormation uses the `AWSCloudFormationStackSetExecutionRole` role for the StackSet operation.
-Specify an IAM role only if you are using customized execution roles to control which stack resources users and groups can include in their StackSets.
-Valid only if the permissions model is `SELF_MANAGED`.
+The name of the IAM execution role that CloudFormation uses for StackSet operations in your target accounts.
+[Self-managed permissions] If you do not specify an execution role, CloudFormation uses the `AWSCloudFormationStackSetExecutionRole` role for the StackSet operation. Specify an IAM role only if you are using customized execution roles to control which stack resources users and groups can include in their StackSets.
+[Service-managed permissions] Set this name when you use custom execution roles. The role that your custom execution role template provisions in your target accounts must have this same name, and the name must begin with `stacksets-exec-custom-`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[a-zA-Z_0-9+=,.@-]+`
+Required: No
+
+ ** ExecutionRoleTemplateBody **
+The body of the template that creates a custom execution role in target accounts. This parameter applies only when the permissions model is `SERVICE_MANAGED`.
+Conditional: Specify either `ExecutionRoleTemplateBody` or `ExecutionRoleTemplateUrl`, but not both. If you don't specify either, CloudFormation uses the default service-managed execution role in target accounts.
+Type: String
+Length Constraints: Minimum length of 1.
+Required: No
+
+ ** ExecutionRoleTemplateUrl **
+The URL of an Amazon S3 object that contains the template that creates a custom execution role in target accounts. This parameter applies only when the permissions model is `SERVICE_MANAGED`.
+Conditional: Specify either `ExecutionRoleTemplateBody` or `ExecutionRoleTemplateUrl`, but not both. If you don't specify either, CloudFormation uses the default service-managed execution role in target accounts.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 5120.
 Required: No
 
  ** ManagedExecution **
@@ -118,6 +133,11 @@ The name to associate with the StackSet. The name must be unique in the Region w
 A stack name can contain only alphanumeric characters (case-sensitive) and hyphens. It must start with an alphabetic character and can't be longer than 128 characters.
 Type: String
 Required: Yes
+
+ ** StackSetOutputBucket **
+The name of the Amazon S3 bucket that stores the execution role stack template body. CloudFormation uses this bucket only when you specify a custom execution role template.
+Type: String
+Required: No
 
  **Tags.member.N**
 The key-value pairs to associate with this StackSet and the stacks created from it. CloudFormation also propagates these tags to supported resources that are created in the stacks. A maximum number of 50 tags can be specified.

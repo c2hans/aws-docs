@@ -15,14 +15,14 @@ To delete a directory, the `@rds_file_path` must end with a backslash (`\`) and 
 
 The following example deletes the file `D:\S3\delete_me.txt`.
 
-```
+```SQL
 exec msdb.dbo.rds_delete_from_filesystem
     @rds_file_path='D:\S3\{{delete_me.txt}}';
 ```
 
 The following example deletes the directory `D:\S3\example_folder\`.
 
-```
+```SQL
 exec msdb.dbo.rds_delete_from_filesystem
     @rds_file_path='D:\S3\{{example_folder}}\',
     @force_delete=1;

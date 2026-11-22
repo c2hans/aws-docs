@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-accesscontrollistconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[KeyPath](#cfn-kendra-datasource-accesscontrollistconfiguration-keypath)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-accesscontrollistconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [KeyPath](#cfn-kendra-datasource-accesscontrollistconfiguration-keypath): {{String}}
 ```
 

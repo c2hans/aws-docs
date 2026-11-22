@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-glue-classifier-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Glue::Classifier",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-glue-classifier-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Glue::Classifier
 Properties:
   [CsvClassifier](#cfn-glue-classifier-csvclassifier): {{

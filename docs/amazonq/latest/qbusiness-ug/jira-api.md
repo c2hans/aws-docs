@@ -97,7 +97,7 @@ The following provides information about important configuration properties requ
 
 The following is the Jira JSON schema:
 
-```
+```json
 {
   "type": "object",
   "properties": {
@@ -423,7 +423,7 @@ The following is the Jira JSON schema:
 
 The following is the Jira JSON schema example:
 
-```
+```json
 {
   "type": "JIRA",
   "syncMode": "FULL_CRAWL",

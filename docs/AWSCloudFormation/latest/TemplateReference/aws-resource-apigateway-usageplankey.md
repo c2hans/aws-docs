@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigateway-usageplankey-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGateway::UsagePlanKey",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigateway-usageplankey-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGateway::UsagePlanKey
 Properties:
   [KeyId](#cfn-apigateway-usageplankey-keyid): {{String}}
@@ -92,7 +92,7 @@ The ID for the usage plan key. For example: `abc123`.
 #### JSON
 <a name="aws-resource-apigateway-usageplankey--examples--Create_usage_plan_key--json"></a>
 
-```
+```json
 {
     "usagePlanKey": {
         "Type": "AWS::ApiGateway::UsagePlanKey",
@@ -112,7 +112,7 @@ The ID for the usage plan key. For example: `abc123`.
 #### YAML
 <a name="aws-resource-apigateway-usageplankey--examples--Create_usage_plan_key--yaml"></a>
 
-```
+```yaml
 usagePlanKey:
   Type: 'AWS::ApiGateway::UsagePlanKey'
   Properties:

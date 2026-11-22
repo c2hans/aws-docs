@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-cachepolicy-headersconfig-syntax.json"></a>
 
-```
+```json
 {
   "[HeaderBehavior](#cfn-cloudfront-cachepolicy-headersconfig-headerbehavior)" : {{String}},
   "[Headers](#cfn-cloudfront-cachepolicy-headersconfig-headers)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-cachepolicy-headersconfig-syntax.yaml"></a>
 
-```
+```yaml
   [HeaderBehavior](#cfn-cloudfront-cachepolicy-headersconfig-headerbehavior): {{String}}
   [Headers](#cfn-cloudfront-cachepolicy-headersconfig-headers): {{
     - String}}

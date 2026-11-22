@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-connect-user-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Connect::User",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-connect-user-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Connect::User
 Properties:
   [AfterContactWorkConfigs](#cfn-connect-user-aftercontactworkconfigs): {{
@@ -221,7 +221,7 @@ The following example specifies a user resource for an Connect Customer instance
 #### YAML
 <a name="aws-resource-connect-user--examples--Specify_a_user_resource--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Specifies a user for an Connect Customer instance
 Resources:

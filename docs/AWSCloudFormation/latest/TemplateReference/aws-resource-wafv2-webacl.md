@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-wafv2-webacl-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::WAFv2::WebACL",
   "Properties" : {
@@ -62,7 +62,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-wafv2-webacl-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::WAFv2::WebACL
 Properties:
   [ApplicationConfig](#cfn-wafv2-webacl-applicationconfig): {{
@@ -262,7 +262,7 @@ The following example web ACL specification shows a number of rate-based rules. 
 #### YAML
 <a name="aws-resource-wafv2-webacl--examples--Create_a_web_ACL_with_a_variety_of_rate-based_rules--yaml"></a>
 
-```
+```yaml
 Name: exampleWebACL
 Id: exampleWebACLExampleID
 ARN: arn:aws:wafv2:us-east-1:ExampleAccountNumber:regional/webacl/exampleWebACL/exampleWebACLExampleID
@@ -391,7 +391,7 @@ LabelNamespace: 'awswaf:ExampleAccountNumber:webacl:exampleWebACL:'
 #### JSON
 <a name="aws-resource-wafv2-webacl--examples--Create_a_web_ACL_with_a_variety_of_rate-based_rules--json"></a>
 
-```
+```json
  {
   "Name": "exampleWebACL",
   "Id": "exampleWebACLExampleID",
@@ -604,7 +604,7 @@ The following shows an example web ACL specification. This example includes cust
 #### YAML
 <a name="aws-resource-wafv2-webacl--examples--Create_a_web_ACL_with_custom_request_and_response_handling--yaml"></a>
 
-```
+```yaml
  ExampleWebACL:
     Type: 'AWS::WAFv2::WebACL'
     Properties:
@@ -675,7 +675,7 @@ The following shows an example web ACL specification. This example includes cust
 #### JSON
 <a name="aws-resource-wafv2-webacl--examples--Create_a_web_ACL_with_custom_request_and_response_handling--json"></a>
 
-```
+```json
  "ExampleWebACL": {
       "Type": "AWS::WAFv2::WebACL",
       "Properties": {
@@ -790,7 +790,7 @@ The following shows an example web ACL specification. This example includes insp
 #### YAML
 <a name="aws-resource-wafv2-webacl--examples--Create_a_web_ACL_with_JSON_body_parsing--yaml"></a>
 
-```
+```yaml
   ExampleWebACL:
     Type: 'AWS::WAFv2::WebACL'
     Properties:
@@ -832,7 +832,7 @@ The following shows an example web ACL specification. This example includes insp
 #### JSON
 <a name="aws-resource-wafv2-webacl--examples--Create_a_web_ACL_with_JSON_body_parsing--json"></a>
 
-```
+```json
   "ExampleWebACL": {
     "Type": "AWS::WAFv2::WebACL",
     "Properties": {

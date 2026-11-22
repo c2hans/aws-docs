@@ -53,7 +53,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudtrail-trail-advancedeventselector-syntax.json"></a>
 
-```
+```json
 {
   "[FieldSelectors](#cfn-cloudtrail-trail-advancedeventselector-fieldselectors)" : {{[ AdvancedFieldSelector, ... ]}},
   "[Name](#cfn-cloudtrail-trail-advancedeventselector-name)" : {{String}}
@@ -63,7 +63,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudtrail-trail-advancedeventselector-syntax.yaml"></a>
 
-```
+```yaml
   [FieldSelectors](#cfn-cloudtrail-trail-advancedeventselector-fieldselectors): {{
     - AdvancedFieldSelector}}
   [Name](#cfn-cloudtrail-trail-advancedeventselector-name): {{String}}

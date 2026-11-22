@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-sheetdefinition-syntax.json"></a>
 
-```
+```json
 {
   "[ContentType](#cfn-quicksight-template-sheetdefinition-contenttype)" : {{String}},
   "[CustomActionDefaults](#cfn-quicksight-template-sheetdefinition-customactiondefaults)" : {{VisualCustomActionDefaults}},
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-sheetdefinition-syntax.yaml"></a>
 
-```
+```yaml
   [ContentType](#cfn-quicksight-template-sheetdefinition-contenttype): {{String}}
   [CustomActionDefaults](#cfn-quicksight-template-sheetdefinition-customactiondefaults): {{
     VisualCustomActionDefaults}}

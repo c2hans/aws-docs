@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-opensearchserverless-securitypolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::OpenSearchServerless::SecurityPolicy",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-opensearchserverless-securitypolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::OpenSearchServerless::SecurityPolicy
 Properties:
   [Description](#cfn-opensearchserverless-securitypolicy-description): {{String}}
@@ -105,7 +105,7 @@ For a complete sample policy that creates network, encryption, and access polici
 #### JSON
 <a name="aws-resource-opensearchserverless-securitypolicy--examples--Create_an_encryption_policy--json"></a>
 
-```
+```json
 {
    "Description":"OpenSearch Serverless encryption policy template",
    "Resources":{
@@ -125,7 +125,7 @@ For a complete sample policy that creates network, encryption, and access polici
 #### YAML
 <a name="aws-resource-opensearchserverless-securitypolicy--examples--Create_an_encryption_policy--yaml"></a>
 
-```
+```yaml
 Description: OpenSearch Serverless encryption policy template
 Resources:
   TestSecurityPolicy:
@@ -146,7 +146,7 @@ The following example specifies an OpenSearch Serverless network policy named `l
 #### JSON
 <a name="aws-resource-opensearchserverless-securitypolicy--examples--Create_a_network_policy--json"></a>
 
-```
+```json
 {
    "Description":"OpenSearch Serverless network policy template",
    "Resources":{
@@ -167,7 +167,7 @@ The following example specifies an OpenSearch Serverless network policy named `l
 #### YAML
 <a name="aws-resource-opensearchserverless-securitypolicy--examples--Create_a_network_policy--yaml"></a>
 
-```
+```yaml
 Description: OpenSearch Serverless network policy template
 Resources:
   SecurityPolicy:

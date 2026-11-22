@@ -18,7 +18,7 @@ The following is an example of a permissions policy.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

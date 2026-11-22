@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-bedrock-datasource-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Bedrock::DataSource",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-bedrock-datasource-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Bedrock::DataSource
 Properties:
   [DataDeletionPolicy](#cfn-bedrock-datasource-datadeletionpolicy): {{String}}

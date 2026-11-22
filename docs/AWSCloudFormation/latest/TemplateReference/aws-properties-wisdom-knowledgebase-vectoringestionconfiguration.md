@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-knowledgebase-vectoringestionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ChunkingConfiguration](#cfn-wisdom-knowledgebase-vectoringestionconfiguration-chunkingconfiguration)" : {{ChunkingConfiguration}},
   "[ParsingConfiguration](#cfn-wisdom-knowledgebase-vectoringestionconfiguration-parsingconfiguration)" : {{ParsingConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-knowledgebase-vectoringestionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ChunkingConfiguration](#cfn-wisdom-knowledgebase-vectoringestionconfiguration-chunkingconfiguration): {{
     ChunkingConfiguration}}
   [ParsingConfiguration](#cfn-wisdom-knowledgebase-vectoringestionconfiguration-parsingconfiguration): {{

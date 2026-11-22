@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rtbfabric-linkroutingrule-querystringkeyvaluepair-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-rtbfabric-linkroutingrule-querystringkeyvaluepair-key)" : {{String}},
   "[Value](#cfn-rtbfabric-linkroutingrule-querystringkeyvaluepair-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rtbfabric-linkroutingrule-querystringkeyvaluepair-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-rtbfabric-linkroutingrule-querystringkeyvaluepair-key): {{String}}
   [Value](#cfn-rtbfabric-linkroutingrule-querystringkeyvaluepair-value): {{String}}
 ```

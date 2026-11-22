@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-calculatedattributedefinition-filterdimension-syntax.json"></a>
 
-```
+```json
 {
   "[Attributes](#cfn-customerprofiles-calculatedattributedefinition-filterdimension-attributes)" : {{{{{Key}}: {{Value}}, ...}}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-calculatedattributedefinition-filterdimension-syntax.yaml"></a>
 
-```
+```yaml
   [Attributes](#cfn-customerprofiles-calculatedattributedefinition-filterdimension-attributes): {{
     {{Key}}: {{Value}}}}
 ```

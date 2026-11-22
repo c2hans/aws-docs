@@ -159,7 +159,7 @@ aws cloudformation describe-events \
 
 Example output of validation errors:
 
-```
+```json
 {
    "OperationEvents":[
       {

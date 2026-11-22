@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackagev2-originendpoint-segment-syntax.json"></a>
 
-```
+```json
 {
   "[Encryption](#cfn-mediapackagev2-originendpoint-segment-encryption)" : {{Encryption}},
   "[IncludeIframeOnlyStreams](#cfn-mediapackagev2-originendpoint-segment-includeiframeonlystreams)" : {{Boolean}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackagev2-originendpoint-segment-syntax.yaml"></a>
 
-```
+```yaml
   [Encryption](#cfn-mediapackagev2-originendpoint-segment-encryption): {{
     Encryption}}
   [IncludeIframeOnlyStreams](#cfn-mediapackagev2-originendpoint-segment-includeiframeonlystreams): {{Boolean}}

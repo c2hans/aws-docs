@@ -6,7 +6,11 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::Lambda::NetworkConnector ElasticIpConfiguration
 
-<a name="aws-properties-lambda-networkconnector-elasticipconfiguration-description"></a>The `ElasticIpConfiguration` property type specifies Property description not available. for an [AWS::Lambda::NetworkConnector](aws-resource-lambda-networkconnector.md).
+Specifies whether Lambda assigns an Elastic IP address to each of the network connector's elastic network interfaces (ENIs).
+
+When you specify `ServiceManaged`, Lambda allocates a service-managed Elastic IP address in your account for each ENI and associates it with that ENI. Outbound traffic from a public subnet then reaches the internet through that address. Each address stays the same for the life of its ENI. ENIs that Lambda creates later, for example after an update, get new addresses. Lambda releases the address when it deletes the ENI. The connector's operator role must allow the `ec2:AllocateAddress` and `ec2:AssociateAddress` actions on Elastic IP addresses and on the connector's ENIs.
+
+If you don't specify an Elastic IP configuration, no Elastic IP address is assigned. When you update this configuration, the change applies to the ENIs of the new connector version.
 
 ## Syntax
 <a name="aws-properties-lambda-networkconnector-elasticipconfiguration-syntax"></a>
@@ -16,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-networkconnector-elasticipconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-lambda-networkconnector-elasticipconfiguration-type)" : {{String}}
 }
@@ -25,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-networkconnector-elasticipconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-lambda-networkconnector-elasticipconfiguration-type): {{String}}
 ```
 
@@ -33,7 +37,9 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-lambda-networkconnector-elasticipconfiguration-properties"></a>
 
 `Type`  <a name="cfn-lambda-networkconnector-elasticipconfiguration-type"></a>
-Property description not available.
+The Elastic IP address type for the connector's ENIs:
++ `None` – Lambda doesn't assign an Elastic IP address.
++ `ServiceManaged` – Lambda assigns a service-managed Elastic IP address to each ENI.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `None | ServiceManaged`

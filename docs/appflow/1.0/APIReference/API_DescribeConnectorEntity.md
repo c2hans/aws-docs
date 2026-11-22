@@ -160,7 +160,7 @@ This example shows a sample request and response for the `DescribeConnectorEntit
 #### Sample Request
 <a name="API_DescribeConnectorEntity_Example_1_Request"></a>
 
-```
+```json
 {
   "connectorEntityName": "tickets",
   "connectorProfileName": "connector_profile_name",
@@ -171,7 +171,7 @@ This example shows a sample request and response for the `DescribeConnectorEntit
 #### Sample Response
 <a name="API_DescribeConnectorEntity_Example_1_Response"></a>
 
-```
+```json
 {
   "connectorEntityFields": [
     {

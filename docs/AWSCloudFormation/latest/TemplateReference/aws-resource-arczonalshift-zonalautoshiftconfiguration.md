@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-arczonalshift-zonalautoshiftconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ARCZonalShift::ZonalAutoshiftConfiguration",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-arczonalshift-zonalautoshiftconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ARCZonalShift::ZonalAutoshiftConfiguration
 Properties:
   [PracticeRunConfiguration](#cfn-arczonalshift-zonalautoshiftconfiguration-practicerunconfiguration): {{

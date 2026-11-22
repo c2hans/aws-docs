@@ -33,7 +33,7 @@ You might encounter situations where you have to add or remove log senders from 
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement" : [

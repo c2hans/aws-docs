@@ -88,7 +88,7 @@ In this step, you create a Docker image of a simple web application, and test it
 
 1. Edit the `Dockerfile` you just created and add the following content.
 
-   ```
+   ```Bash/Shell
    FROM public.ecr.aws/amazonlinux/amazonlinux:latest
 
    # Install dependencies

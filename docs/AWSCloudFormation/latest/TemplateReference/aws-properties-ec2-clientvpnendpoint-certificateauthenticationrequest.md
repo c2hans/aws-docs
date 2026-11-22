@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-clientvpnendpoint-certificateauthenticationrequest-syntax.json"></a>
 
-```
+```json
 {
   "[ClientRootCertificateChainArn](#cfn-ec2-clientvpnendpoint-certificateauthenticationrequest-clientrootcertificatechainarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-clientvpnendpoint-certificateauthenticationrequest-syntax.yaml"></a>
 
-```
+```yaml
   [ClientRootCertificateChainArn](#cfn-ec2-clientvpnendpoint-certificateauthenticationrequest-clientrootcertificatechainarn): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-macie-member-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-macie-member-tag-key)" : {{String}},
   "[Value](#cfn-macie-member-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-macie-member-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-macie-member-tag-key): {{String}}
   [Value](#cfn-macie-member-tag-value): {{String}}
 ```

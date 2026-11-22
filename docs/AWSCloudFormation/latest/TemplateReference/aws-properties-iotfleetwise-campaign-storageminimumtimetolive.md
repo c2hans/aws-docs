@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotfleetwise-campaign-storageminimumtimetolive-syntax.json"></a>
 
-```
+```json
 {
   "[Unit](#cfn-iotfleetwise-campaign-storageminimumtimetolive-unit)" : {{String}},
   "[Value](#cfn-iotfleetwise-campaign-storageminimumtimetolive-value)" : {{Integer}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotfleetwise-campaign-storageminimumtimetolive-syntax.yaml"></a>
 
-```
+```yaml
   [Unit](#cfn-iotfleetwise-campaign-storageminimumtimetolive-unit): {{String}}
   [Value](#cfn-iotfleetwise-campaign-storageminimumtimetolive-value): {{Integer}}
 ```

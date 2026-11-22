@@ -21,7 +21,7 @@ The following template contains an Amazon S3 bucket resource with a `Condition` 
 ### JSON
 <a name="aws-attribute-condition-example.json"></a>
 
-```
+```json
 {
    "AWSTemplateFormatVersion" : "2010-09-09",
    "Parameters" : {
@@ -50,7 +50,7 @@ The following template contains an Amazon S3 bucket resource with a `Condition` 
 ### YAML
 <a name="aws-attribute-condition-example.yaml"></a>
 
-```
+```yaml
  1. AWSTemplateFormatVersion: 2010-09-09
  2. Parameters:
  3.   EnvType:
@@ -78,7 +78,7 @@ You can combine multiple conditions using intrinsic functions like [`Fn::And`](i
 ### JSON
 <a name="aws-attribute-condition-multiple.json"></a>
 
-```
+```json
 {
    "AWSTemplateFormatVersion" : "2010-09-09",
    "Parameters" : {
@@ -124,7 +124,7 @@ You can combine multiple conditions using intrinsic functions like [`Fn::And`](i
 ### YAML
 <a name="aws-attribute-condition-multiple.yaml"></a>
 
-```
+```yaml
  1. AWSTemplateFormatVersion: 2010-09-09
  2. Parameters:
  3.   EnvType:
@@ -175,7 +175,7 @@ You can use pseudo parameters like `AWS::AccountId` in your conditions to create
 ### JSON
 <a name="aws-attribute-condition-account.json"></a>
 
-```
+```json
 {
    "AWSTemplateFormatVersion" : "2010-09-09",
    "Conditions" : {
@@ -204,7 +204,7 @@ You can use pseudo parameters like `AWS::AccountId` in your conditions to create
 ### YAML
 <a name="aws-attribute-condition-account.yaml"></a>
 
-```
+```yaml
  1. AWSTemplateFormatVersion: 2010-09-09
  2. Conditions:
  3.   ExcludeAccount1: !Not [!Equals [!Ref 'AWS::AccountId', '111111111111']]

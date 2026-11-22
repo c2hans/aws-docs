@@ -42,7 +42,7 @@ The Amazon ECS console simplifies the experience of creating the AWS Distro for 
 
 If you're not using the Amazon ECS console, you can add the AWS Distro for OpenTelemetry sidecar container to your task definition manually. The following task definition example shows the container definition for adding the AWS Distro for OpenTelemetry sidecar for Amazon Managed Service for Prometheus integration.
 
-```
+```JSON
 {
 	"family": "otel-using-cloudwatch",
 	"taskRoleArn": "arn:aws:iam::111122223333:role/{{AmazonECS_OpenTelemetryCloudWatchRole}}",

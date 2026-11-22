@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-defaultpaginatedlayoutconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[SectionBased](#cfn-quicksight-dashboard-defaultpaginatedlayoutconfiguration-sectionbased)" : {{DefaultSectionBasedLayoutConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-defaultpaginatedlayoutconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [SectionBased](#cfn-quicksight-dashboard-defaultpaginatedlayoutconfiguration-sectionbased): {{
     DefaultSectionBasedLayoutConfiguration}}
 ```

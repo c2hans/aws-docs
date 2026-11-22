@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-accelerateconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AccelerationStatus](#cfn-s3-bucket-accelerateconfiguration-accelerationstatus)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-accelerateconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AccelerationStatus](#cfn-s3-bucket-accelerateconfiguration-accelerationstatus): {{String}}
 ```
 

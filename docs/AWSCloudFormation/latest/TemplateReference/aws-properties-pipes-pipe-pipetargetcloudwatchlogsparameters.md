@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-pipetargetcloudwatchlogsparameters-syntax.json"></a>
 
-```
+```json
 {
   "[LogStreamName](#cfn-pipes-pipe-pipetargetcloudwatchlogsparameters-logstreamname)" : {{String}},
   "[Timestamp](#cfn-pipes-pipe-pipetargetcloudwatchlogsparameters-timestamp)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-pipetargetcloudwatchlogsparameters-syntax.yaml"></a>
 
-```
+```yaml
   [LogStreamName](#cfn-pipes-pipe-pipetargetcloudwatchlogsparameters-logstreamname): {{String}}
   [Timestamp](#cfn-pipes-pipe-pipetargetcloudwatchlogsparameters-timestamp): {{String}}
 ```

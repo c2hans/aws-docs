@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-capacityprovider-capacityprovidervpcconfig-syntax.json"></a>
 
-```
+```json
 {
   "[SecurityGroupIds](#cfn-lambda-capacityprovider-capacityprovidervpcconfig-securitygroupids)" : {{[ String, ... ]}},
   "[SubnetIds](#cfn-lambda-capacityprovider-capacityprovidervpcconfig-subnetids)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-capacityprovider-capacityprovidervpcconfig-syntax.yaml"></a>
 
-```
+```yaml
   [SecurityGroupIds](#cfn-lambda-capacityprovider-capacityprovidervpcconfig-securitygroupids): {{
     - String}}
   [SubnetIds](#cfn-lambda-capacityprovider-capacityprovidervpcconfig-subnetids): {{

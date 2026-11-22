@@ -51,7 +51,7 @@ To append additional dimensions such as `InstanceId`, use the `append_dimensions
 
 The following example configuration collects a subset of EFA metrics every 60 seconds and appends the `InstanceId` dimension to each metric.
 
-```
+```JSON
 {
   "metrics": {
     "append_dimensions": {

@@ -42,7 +42,7 @@ If you use the recommended settings above, logs from all canary execution Region
 
 You can use CloudWatch Logs Insights to query across all log entries. For example, to find failures from a specific Region:
 
-```
+```sql
 fields @timestamp, @message, @logStream
 | filter @aws.region like /us-west-2/
 | filter @message like /ERROR/

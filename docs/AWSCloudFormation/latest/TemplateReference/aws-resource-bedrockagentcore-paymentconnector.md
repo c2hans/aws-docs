@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-bedrockagentcore-paymentconnector-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::BedrockAgentCore::PaymentConnector",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-bedrockagentcore-paymentconnector-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::BedrockAgentCore::PaymentConnector
 Properties:
   [ConnectorName](#cfn-bedrockagentcore-paymentconnector-connectorname): {{String}}
@@ -59,7 +59,7 @@ The name of the payment connector.
 The type of payment connector, which determines the payment provider integration.
 *Required*: Yes
 *Type*: String
-*Allowed values*: `CoinbaseCDP | StripePrivy`
+*Allowed values*: `CoinbaseCDP | StripePrivy | AwsBilling`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `CredentialProviderConfigurations`  <a name="cfn-bedrockagentcore-paymentconnector-credentialproviderconfigurations"></a>
@@ -112,6 +112,9 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 <a name="aws-resource-bedrockagentcore-paymentconnector-return-values-fn--getatt-fn--getatt"></a>
 
 `AuthorizationUrl`  <a name="AuthorizationUrl-fn::getatt"></a>
+Property description not available.
+
+`AwsBillingIamRoleArn`  <a name="AwsBillingIamRoleArn-fn::getatt"></a>
 Property description not available.
 
 `ConnectorCreatedAt`  <a name="ConnectorCreatedAt-fn::getatt"></a>

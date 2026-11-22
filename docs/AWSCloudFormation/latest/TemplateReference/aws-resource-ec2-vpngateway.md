@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-vpngateway-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::VPNGateway",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-vpngateway-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::VPNGateway
 Properties:
   [AmazonSideAsn](#cfn-ec2-vpngateway-amazonsideasn): {{Integer}}
@@ -97,7 +97,7 @@ The following example declares a VPN gateway that uses IPSec 1.
 #### JSON
 <a name="aws-resource-ec2-vpngateway--examples--VPN_gateway--json"></a>
 
-```
+```json
 "myVPNGateway" : {
    "Type" : "AWS::EC2::VPNGateway",
    "Properties" : {
@@ -110,7 +110,7 @@ The following example declares a VPN gateway that uses IPSec 1.
 #### YAML
 <a name="aws-resource-ec2-vpngateway--examples--VPN_gateway--yaml"></a>
 
-```
+```yaml
   myVPNGateway:
    Type: AWS::EC2::VPNGateway
    Properties:

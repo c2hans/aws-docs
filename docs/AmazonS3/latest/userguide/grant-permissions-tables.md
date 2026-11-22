@@ -67,7 +67,7 @@ If you're creating a new table in the Athena query editor, don't select a table.
 
 1. Run the following command to grant Lake Formation permissions on table in S3 table bucket to an IAM principal to access the table. To use this example, replace the {{`user input placeholders`}} with your own information.
 
-   ```
+   ```bash
    aws lakeformation grant-permissions \
    --region {{us-east-1}} \
    --cli-input-json \

@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-route53recoveryreadiness-readinesscheck-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Route53RecoveryReadiness::ReadinessCheck",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-route53recoveryreadiness-readinesscheck-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53RecoveryReadiness::ReadinessCheck
 Properties:
   [ReadinessCheckName](#cfn-route53recoveryreadiness-readinesscheck-readinesscheckname): {{String}}

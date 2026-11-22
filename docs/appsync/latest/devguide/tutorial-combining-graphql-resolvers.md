@@ -63,7 +63,7 @@ In this example you would have a total of 6 resolvers to attach. One possible wa
 
 You might have the need to return results from a database such as DynamoDB (or Amazon Aurora) to clients with some of the attributes changed. This might be due to formatting of the data types, such as timestamp differences on clients, or to handle backwards compatibility issues. For illustrative purposes, in the following example, an AWS Lambda function manipulates the up-votes and down-votes for blog posts by assigning them random numbers each time the GraphQL resolver is invoked:
 
-```
+```javascript
 'use strict';
 const doc = require('dynamodb-doc');
 const dynamo = new doc.DynamoDB();
@@ -134,7 +134,7 @@ Because the data is written directly to DynamoDB, you can still perform efficien
 
  **Note:** This code is for example only.
 
-```
+```javascript
 var AWS = require('aws-sdk');
 var path = require('path');
 var stream = require('stream');

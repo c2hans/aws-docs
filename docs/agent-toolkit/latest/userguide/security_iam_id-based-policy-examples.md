@@ -16,7 +16,7 @@ The following examples show how to use IAM policies with the MCP condition conte
 
 The following SCP or IAM policy denies all actions when the request originates from any AWS managed MCP server. Use this to completely block MCP server access across an organization or for specific principals.
 
-```
+```json
 {
     "Sid": "DenyAllActionsViaMCP",
     "Effect": "Deny",
@@ -35,7 +35,7 @@ The following SCP or IAM policy denies all actions when the request originates f
 
 The following policy allows read operations but denies destructive actions when the request comes through AWS MCP Server. This lets AI agents inspect resources without being able to delete them.
 
-```
+```json
 [
     {
         "Sid": "AllowS3ReadOperations",
@@ -68,7 +68,7 @@ The following policy allows read operations but denies destructive actions when 
 
 The following policy denies all actions when the request comes specifically through AWS MCP Server, while allowing requests from other AWS managed MCP servers or direct API calls.
 
-```
+```json
 {
     "Sid": "DenyActionsViaAWSMCPServer",
     "Effect": "Deny",

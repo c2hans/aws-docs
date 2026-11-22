@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-config-configurationrecorder-exclusionbyresourcetypes-syntax.json"></a>
 
-```
+```json
 {
   "[ResourceTypes](#cfn-config-configurationrecorder-exclusionbyresourcetypes-resourcetypes)" : {{[ String, ... ]}}
 }
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-config-configurationrecorder-exclusionbyresourcetypes-syntax.yaml"></a>
 
-```
+```yaml
   [ResourceTypes](#cfn-config-configurationrecorder-exclusionbyresourcetypes-resourcetypes): {{
     - String}}
 ```
@@ -67,7 +67,7 @@ The recordingGroup file specifies which types of resources AWS Config will recor
 #### JSON
 <a name="aws-properties-config-configurationrecorder-exclusionbyresourcetypes--examples--Record_all_current_and_future_supported_resource_types_excluding_the_types_you_specify--json"></a>
 
-```
+```json
 {
     "AllSupported": false,
     "ExclusionByResourceTypes": {
@@ -87,7 +87,7 @@ The recordingGroup file specifies which types of resources AWS Config will recor
 #### YAML
 <a name="aws-properties-config-configurationrecorder-exclusionbyresourcetypes--examples--Record_all_current_and_future_supported_resource_types_excluding_the_types_you_specify--yaml"></a>
 
-```
+```yaml
 AllSupported: false
 ExclusionByResourceTypes:
     ResourceTypes:

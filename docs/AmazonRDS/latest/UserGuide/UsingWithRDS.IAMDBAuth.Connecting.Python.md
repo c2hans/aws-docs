@@ -38,7 +38,7 @@ This code connects to a MariaDB or MySQL DB instance.
 
 Before running this code, install the PyMySQL driver by following the instructions in the [ Python Package Index](https://pypi.org/project/PyMySQL/).
 
-```
+```python
 import pymysql
 import sys
 import boto3
@@ -71,7 +71,7 @@ This code connects to a PostgreSQL DB instance.
 
 Before running this code, install `psycopg2` by following the instructions in [Psycopg documentation](https://pypi.org/project/psycopg2/).
 
-```
+```python
 import psycopg2
 import sys
 import boto3

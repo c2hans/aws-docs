@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-rds-eventsubscription-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RDS::EventSubscription",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-rds-eventsubscription-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RDS::EventSubscription
 Properties:
   [Enabled](#cfn-rds-eventsubscription-enabled): {{Boolean}}
@@ -129,7 +129,7 @@ The following example creates an event subscription for an existing database ins
 #### JSON
 <a name="aws-resource-rds-eventsubscription--examples--Create_an_event_subscription--json"></a>
 
-```
+```json
 {
     "myEventSubscription": {
         "Type": "AWS::RDS::EventSubscription",
@@ -156,7 +156,7 @@ The following example creates an event subscription for an existing database ins
 #### YAML
 <a name="aws-resource-rds-eventsubscription--examples--Create_an_event_subscription--yaml"></a>
 
-```
+```yaml
 ---
 myEventSubscription:
   Type: 'AWS::RDS::EventSubscription'

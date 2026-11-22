@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-dataprepaggregationfunction-syntax.json"></a>
 
-```
+```json
 {
   "[ListAggregation](#cfn-quicksight-dataset-dataprepaggregationfunction-listaggregation)" : {{DataPrepListAggregationFunction}},
   "[PercentileAggregation](#cfn-quicksight-dataset-dataprepaggregationfunction-percentileaggregation)" : {{DataPrepPercentileAggregationFunction}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-dataprepaggregationfunction-syntax.yaml"></a>
 
-```
+```yaml
   [ListAggregation](#cfn-quicksight-dataset-dataprepaggregationfunction-listaggregation): {{
     DataPrepListAggregationFunction}}
   [PercentileAggregation](#cfn-quicksight-dataset-dataprepaggregationfunction-percentileaggregation): {{

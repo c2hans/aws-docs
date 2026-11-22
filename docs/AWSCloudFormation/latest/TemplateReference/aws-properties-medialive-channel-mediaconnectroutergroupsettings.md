@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-mediaconnectroutergroupsettings-syntax.json"></a>
 
-```
+```json
 {
   "[AvailabilityZones](#cfn-medialive-channel-mediaconnectroutergroupsettings-availabilityzones)" : {{[ String, ... ]}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-mediaconnectroutergroupsettings-syntax.yaml"></a>
 
-```
+```yaml
   [AvailabilityZones](#cfn-medialive-channel-mediaconnectroutergroupsettings-availabilityzones): {{
     - String}}
 ```

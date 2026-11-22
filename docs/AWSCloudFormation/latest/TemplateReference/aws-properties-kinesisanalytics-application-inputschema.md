@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisanalytics-application-inputschema-syntax.json"></a>
 
-```
+```json
 {
   "[RecordColumns](#cfn-kinesisanalytics-application-inputschema-recordcolumns)" : {{[ RecordColumn, ... ]}},
   "[RecordEncoding](#cfn-kinesisanalytics-application-inputschema-recordencoding)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisanalytics-application-inputschema-syntax.yaml"></a>
 
-```
+```yaml
   [RecordColumns](#cfn-kinesisanalytics-application-inputschema-recordcolumns): {{
     - RecordColumn}}
   [RecordEncoding](#cfn-kinesisanalytics-application-inputschema-recordencoding): {{String}}

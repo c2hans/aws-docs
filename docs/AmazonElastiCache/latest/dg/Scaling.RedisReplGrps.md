@@ -132,7 +132,7 @@ The amount of time it takes to scale up to a larger node type varies, depending 
 
    Output from this operation looks something like this (JSON format).
 
-   ```
+   ```json
    {
    	    "ScaleUpModifications": [
    	        "cache.m5.2xlarge",
@@ -182,7 +182,7 @@ The amount of time it takes to scale up to a larger node type varies, depending 
 
    Output from this command looks something like this (JSON format).
 
-   ```
+   ```json
    {
    	"ReplicationGroup": {
    		"Status": "available",
@@ -395,7 +395,7 @@ The amount of time it takes to scale down to a smaller node type varies, dependi
 
    Output from this operation looks something like this (JSON format).
 
-   ```
+   ```json
    {
    	    "ScaleDownModifications": [
    	        "cache.m5.2xlarge",
@@ -445,7 +445,7 @@ The amount of time it takes to scale down to a smaller node type varies, dependi
 
    Output from this command looks something like this (JSON format).
 
-   ```
+   ```json
    {"ReplicationGroup": {
    	        "Status": "available",
    	        "Description": "Some description",

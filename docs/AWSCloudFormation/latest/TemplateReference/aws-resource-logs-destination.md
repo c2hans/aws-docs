@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-logs-destination-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Logs::Destination",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-logs-destination-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Logs::Destination
 Properties:
   [DestinationName](#cfn-logs-destination-destinationname): {{String}}
@@ -116,7 +116,7 @@ In the following example, the target stream (`TestStream`) can receive log event
 #### JSON
 <a name="aws-resource-logs-destination--examples--Create_a_Destination--json"></a>
 
-```
+```json
 "DestinationWithName" : {
   "Type" : "AWS::Logs::Destination",
   "Properties" : {
@@ -131,7 +131,7 @@ In the following example, the target stream (`TestStream`) can receive log event
 #### YAML
 <a name="aws-resource-logs-destination--examples--Create_a_Destination--yaml"></a>
 
-```
+```yaml
 DestinationWithName:
   Type: AWS::Logs::Destination
   Properties:

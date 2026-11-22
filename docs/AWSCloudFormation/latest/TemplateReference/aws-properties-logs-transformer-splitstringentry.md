@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-logs-transformer-splitstringentry-syntax.json"></a>
 
-```
+```json
 {
   "[Delimiter](#cfn-logs-transformer-splitstringentry-delimiter)" : {{String}},
   "[Source](#cfn-logs-transformer-splitstringentry-source)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-logs-transformer-splitstringentry-syntax.yaml"></a>
 
-```
+```yaml
   [Delimiter](#cfn-logs-transformer-splitstringentry-delimiter): {{String}}
   [Source](#cfn-logs-transformer-splitstringentry-source): {{String}}
 ```

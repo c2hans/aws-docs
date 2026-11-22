@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-spotfleet-groupidentifier-syntax.json"></a>
 
-```
+```json
 {
   "[GroupId](#cfn-ec2-spotfleet-groupidentifier-groupid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-spotfleet-groupidentifier-syntax.yaml"></a>
 
-```
+```yaml
   [GroupId](#cfn-ec2-spotfleet-groupidentifier-groupid): {{String}}
 ```
 

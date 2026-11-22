@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-rekognition-project-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Rekognition::Project",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-rekognition-project-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Rekognition::Project
 Properties:
   [ProjectName](#cfn-rekognition-project-projectname): {{String}}

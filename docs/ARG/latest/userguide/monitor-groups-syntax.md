@@ -13,7 +13,7 @@ AWS Group Lifecycle Events (GLE) feature of AWS Resource Groups is no longer ope
 
 The lifecycle events for AWS Resource Groups take the form of [JSON](https://json.org) object strings in the following general format.
 
-```
+```JSON
 {
     "version": "0",
     "id": "08f00e24-2e30-ec44-b824-8acddf1ac868",

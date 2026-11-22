@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspacesweb-dataprotectionsettings-custompattern-syntax.json"></a>
 
-```
+```json
 {
   "[KeywordRegex](#cfn-workspacesweb-dataprotectionsettings-custompattern-keywordregex)" : {{String}},
   "[PatternDescription](#cfn-workspacesweb-dataprotectionsettings-custompattern-patterndescription)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspacesweb-dataprotectionsettings-custompattern-syntax.yaml"></a>
 
-```
+```yaml
   [KeywordRegex](#cfn-workspacesweb-dataprotectionsettings-custompattern-keywordregex): {{String}}
   [PatternDescription](#cfn-workspacesweb-dataprotectionsettings-custompattern-patterndescription): {{String}}
   [PatternName](#cfn-workspacesweb-dataprotectionsettings-custompattern-patternname): {{String}}

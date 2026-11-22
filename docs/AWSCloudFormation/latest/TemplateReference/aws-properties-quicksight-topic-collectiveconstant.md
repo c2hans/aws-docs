@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-topic-collectiveconstant-syntax.json"></a>
 
-```
+```json
 {
   "[ValueList](#cfn-quicksight-topic-collectiveconstant-valuelist)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-topic-collectiveconstant-syntax.yaml"></a>
 
-```
+```yaml
   [ValueList](#cfn-quicksight-topic-collectiveconstant-valuelist): {{
     - String}}
 ```

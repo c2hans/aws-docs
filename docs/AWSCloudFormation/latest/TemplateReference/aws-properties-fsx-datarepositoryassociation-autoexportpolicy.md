@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-datarepositoryassociation-autoexportpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[Events](#cfn-fsx-datarepositoryassociation-autoexportpolicy-events)" : {{[ String, ... ]}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-datarepositoryassociation-autoexportpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [Events](#cfn-fsx-datarepositoryassociation-autoexportpolicy-events): {{
     - String}}
 ```

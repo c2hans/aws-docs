@@ -60,7 +60,7 @@ Add the `aurora-dsql-hibernate-dialect` dependency to your project.
 
 Add the following dependency to your `pom.xml` file:
 
-```
+```xml
 <dependency>
     <groupId>software.amazon.dsql</groupId>
     <artifactId>aurora-dsql-hibernate-dialect</artifactId>
@@ -73,7 +73,7 @@ Add the following dependency to your `pom.xml` file:
 
 Add the following dependency to your `build.gradle` file:
 
-```
+```groovy
 implementation("software.amazon.dsql:aurora-dsql-hibernate-dialect:2.2.0")
 ```
 
@@ -84,7 +84,7 @@ Add the JDBC connector for IAM authentication as a separate dependency:
 
 **Maven**
 
-```
+```xml
 <dependency>
     <groupId>software.amazon.dsql</groupId>
     <artifactId>aurora-dsql-jdbc-connector</artifactId>
@@ -94,7 +94,7 @@ Add the JDBC connector for IAM authentication as a separate dependency:
 
 **Gradle**
 
-```
+```groovy
 implementation("software.amazon.dsql:aurora-dsql-jdbc-connector:1.5.0")
 ```
 
@@ -111,7 +111,7 @@ Explicitly specify `AuroraDSQLDialect`. Otherwise, Hibernate selects `PostgreSQL
 
 Add the following line to your `hibernate.properties` file:
 
-```
+```properties
 hibernate.dialect=software.amazon.dsql.hibernate.dialect.AuroraDSQLDialect
 ```
 
@@ -120,7 +120,7 @@ hibernate.dialect=software.amazon.dsql.hibernate.dialect.AuroraDSQLDialect
 
 Add the following property to your `persistence.xml` file:
 
-```
+```xml
 <property name="hibernate.dialect" value="software.amazon.dsql.hibernate.dialect.AuroraDSQLDialect"/>
 ```
 
@@ -129,7 +129,7 @@ Add the following property to your `persistence.xml` file:
 
 Add the following line to your `application.properties` file:
 
-```
+```properties
 spring.jpa.properties.hibernate.dialect=software.amazon.dsql.hibernate.dialect.AuroraDSQLDialect
 ```
 
@@ -138,7 +138,7 @@ spring.jpa.properties.hibernate.dialect=software.amazon.dsql.hibernate.dialect.A
 
 Set the dialect when you build the service registry:
 
-```
+```java
 ServiceRegistry registry = new StandardServiceRegistryBuilder()
     .applySetting("hibernate.dialect", "software.amazon.dsql.hibernate.dialect.AuroraDSQLDialect")
     .build();
@@ -154,7 +154,7 @@ The Aurora DSQL JDBC Connector turns on `sslmode=verify-full` and direct SSL neg
 
 The following properties configure the database connection. In this example, replace {{cluster-id}} and {{region}} with the values for your cluster.
 
-```
+```properties
 hibernate.connection.url=jdbc:aws-dsql:postgresql://{{cluster-id}}.dsql.{{region}}.on.aws/postgres
 hibernate.connection.username=admin
 hibernate.connection.driver_class=software.amazon.dsql.jdbc.DSQLConnector
@@ -165,7 +165,7 @@ hibernate.connection.driver_class=software.amazon.dsql.jdbc.DSQLConnector
 
 The following example creates a Hibernate `SessionFactory` connected to Aurora DSQL and performs a basic read operation.
 
-```
+```java
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -213,7 +213,7 @@ The dialect works with any JDBC connection pool. The recommended pool for produc
 
 Configure HikariCP with the `DsqlExceptionOverride` class so that the pool keeps healthy connections after Aurora DSQL rejects an unsupported statement, instead of evicting them.
 
-```
+```java
 import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.boot.jdbc.autoconfigure.DataSourceProperties;
 import org.springframework.context.annotation.Bean;
@@ -245,7 +245,7 @@ Set the `maxLifetime` parameter to less than 3,600,000 milliseconds (one hour), 
 
 Some Aurora DSQL errors leave the connection healthy, such as OCC conflicts (SQLSTATE `40001`) and unsupported statements (SQLSTATE `0Axxx`). By default, HikariCP evicts connections on `0A000`. Implement `SQLExceptionOverride` and register it with HikariCP so that the pool keeps these connections:
 
-```
+```java
 import com.zaxxer.hikari.SQLExceptionOverride;
 import java.sql.SQLException;
 
@@ -274,7 +274,7 @@ public class DsqlExceptionOverride implements SQLExceptionOverride {
 
 UUID primary keys are the recommended choice in Aurora DSQL because they avoid sequence contention in a distributed environment. With `@GeneratedValue`, Hibernate generates the UUID in the application before the insert. The `@ColumnDefault` annotation adds a `gen_random_uuid()` column default for rows that you insert outside Hibernate. The following Java code example adds a UUID primary key to a base entity class:
 
-```
+```java
 import jakarta.persistence.*;
 import java.util.UUID;
 import org.hibernate.annotations.ColumnDefault;
@@ -292,7 +292,7 @@ public class BaseEntity {
 
 The dialect also supports sequence and identity-based integer primary keys. The dialect uses a default `CACHE` parameter of `65536` in sequence and identity column definitions. You can override this with the configuration property `hibernate.dialect.aurora_dsql.sequence_cache_size`.
 
-```
+```java
 @Entity
 public class OrderEntity {
 
@@ -323,7 +323,7 @@ Use only `NONE` and `PESSIMISTIC_WRITE`, the two lock modes that the dialect ove
 
 Because OCC errors are retryable, you can retry the transaction. The following Java code example implements a retry aspect around your transactional methods:
 
-```
+```java
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;

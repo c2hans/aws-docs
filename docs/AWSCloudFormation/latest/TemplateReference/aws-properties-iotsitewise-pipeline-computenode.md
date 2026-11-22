@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotsitewise-pipeline-computenode-syntax.json"></a>
 
-```
+```json
 {
   "[ComputeNodeName](#cfn-iotsitewise-pipeline-computenode-computenodename)" : {{String}},
   "[DependsOn](#cfn-iotsitewise-pipeline-computenode-dependson)" : {{[ String, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotsitewise-pipeline-computenode-syntax.yaml"></a>
 
-```
+```yaml
   [ComputeNodeName](#cfn-iotsitewise-pipeline-computenode-computenodename): {{String}}
   [DependsOn](#cfn-iotsitewise-pipeline-computenode-dependson): {{
     - String}}

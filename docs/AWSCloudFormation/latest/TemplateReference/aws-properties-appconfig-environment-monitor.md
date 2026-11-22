@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appconfig-environment-monitor-syntax.json"></a>
 
-```
+```json
 {
   "[AlarmArn](#cfn-appconfig-environment-monitor-alarmarn)" : {{String}},
   "[AlarmRoleArn](#cfn-appconfig-environment-monitor-alarmrolearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appconfig-environment-monitor-syntax.yaml"></a>
 
-```
+```yaml
   [AlarmArn](#cfn-appconfig-environment-monitor-alarmarn): {{String}}
   [AlarmRoleArn](#cfn-appconfig-environment-monitor-alarmrolearn): {{String}}
 ```

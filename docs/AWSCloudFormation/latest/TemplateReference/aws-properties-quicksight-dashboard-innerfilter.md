@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-innerfilter-syntax.json"></a>
 
-```
+```json
 {
   "[CategoryInnerFilter](#cfn-quicksight-dashboard-innerfilter-categoryinnerfilter)" : {{CategoryInnerFilter}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-innerfilter-syntax.yaml"></a>
 
-```
+```yaml
   [CategoryInnerFilter](#cfn-quicksight-dashboard-innerfilter-categoryinnerfilter): {{
     CategoryInnerFilter}}
 ```

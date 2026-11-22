@@ -25,7 +25,7 @@ The following considerations might impact how you provide access to your private
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Id": "abcd1234-1234-abcd-abcd-1234abcdefg",
@@ -122,7 +122,7 @@ The following `policy` for the `execute-api` service allows incoming traffic to 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

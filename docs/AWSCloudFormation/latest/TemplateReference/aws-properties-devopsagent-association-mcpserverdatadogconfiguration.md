@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-association-mcpserverdatadogconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-devopsagent-association-mcpserverdatadogconfiguration-description)" : {{String}},
   "[EnabledElevatedTools](#cfn-devopsagent-association-mcpserverdatadogconfiguration-enabledelevatedtools)" : {{[ String, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-association-mcpserverdatadogconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-devopsagent-association-mcpserverdatadogconfiguration-description): {{String}}
   [EnabledElevatedTools](#cfn-devopsagent-association-mcpserverdatadogconfiguration-enabledelevatedtools): {{
     - String}}

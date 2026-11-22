@@ -8,7 +8,7 @@ PostgreSQL supports creating custom data types and working with enumerations. Fo
 
 The following is an example of creating a type as an enumeration and then inserting values into a table.
 
-```
+```sql
 CREATE TYPE rainbow AS ENUM ('red', 'orange', 'yellow', 'green', 'blue', 'purple');
 CREATE TYPE
 CREATE TABLE t1 (colors rainbow);

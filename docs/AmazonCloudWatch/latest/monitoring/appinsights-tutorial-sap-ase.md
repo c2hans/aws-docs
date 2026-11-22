@@ -83,7 +83,7 @@ You must perform the following prerequisites to configure an SAP ASE database wi
 
 ****
 
-    ```
+    ```json
     {
         "Version":"2012-10-17",
         "Statement": [
@@ -110,7 +110,7 @@ You must perform the following prerequisites to configure an SAP ASE database wi
 
 ****
 
-    ```
+    ```json
     {
       "Version":"2012-10-17",
       "Statement": [

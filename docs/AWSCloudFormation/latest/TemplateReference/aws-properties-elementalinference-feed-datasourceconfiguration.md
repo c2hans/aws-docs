@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elementalinference-feed-datasourceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[FixtureId](#cfn-elementalinference-feed-datasourceconfiguration-fixtureid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elementalinference-feed-datasourceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [FixtureId](#cfn-elementalinference-feed-datasourceconfiguration-fixtureid): {{String}}
 ```
 

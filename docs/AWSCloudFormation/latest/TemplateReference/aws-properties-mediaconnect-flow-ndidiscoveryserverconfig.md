@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-flow-ndidiscoveryserverconfig-syntax.json"></a>
 
-```
+```json
 {
   "[DiscoveryServerAddress](#cfn-mediaconnect-flow-ndidiscoveryserverconfig-discoveryserveraddress)" : {{String}},
   "[DiscoveryServerPort](#cfn-mediaconnect-flow-ndidiscoveryserverconfig-discoveryserverport)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-flow-ndidiscoveryserverconfig-syntax.yaml"></a>
 
-```
+```yaml
   [DiscoveryServerAddress](#cfn-mediaconnect-flow-ndidiscoveryserverconfig-discoveryserveraddress): {{String}}
   [DiscoveryServerPort](#cfn-mediaconnect-flow-ndidiscoveryserverconfig-discoveryserverport): {{Integer}}
   [VpcInterfaceAdapter](#cfn-mediaconnect-flow-ndidiscoveryserverconfig-vpcinterfaceadapter): {{String}}

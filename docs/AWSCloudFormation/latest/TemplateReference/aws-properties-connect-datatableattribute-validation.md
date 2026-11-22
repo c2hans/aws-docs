@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-datatableattribute-validation-syntax.json"></a>
 
-```
+```json
 {
   "[Enum](#cfn-connect-datatableattribute-validation-enum)" : {{Enum}},
   "[ExclusiveMaximum](#cfn-connect-datatableattribute-validation-exclusivemaximum)" : {{Number}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-datatableattribute-validation-syntax.yaml"></a>
 
-```
+```yaml
   [Enum](#cfn-connect-datatableattribute-validation-enum): {{
     Enum}}
   [ExclusiveMaximum](#cfn-connect-datatableattribute-validation-exclusivemaximum): {{Number}}

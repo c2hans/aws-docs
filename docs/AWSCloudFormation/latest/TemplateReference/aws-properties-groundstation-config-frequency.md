@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-groundstation-config-frequency-syntax.json"></a>
 
-```
+```json
 {
   "[Units](#cfn-groundstation-config-frequency-units)" : {{String}},
   "[Value](#cfn-groundstation-config-frequency-value)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-groundstation-config-frequency-syntax.yaml"></a>
 
-```
+```yaml
   [Units](#cfn-groundstation-config-frequency-units): {{String}}
   [Value](#cfn-groundstation-config-frequency-value): {{Number}}
 ```
@@ -58,7 +58,7 @@ The following example creates a Ground Station `Frequency`
 #### JSON
 <a name="aws-properties-groundstation-config-frequency--examples--Create_a_Frequency--json"></a>
 
-```
+```json
 {
   "CenterFrequency": {
     "Value": 7812,
@@ -70,7 +70,7 @@ The following example creates a Ground Station `Frequency`
 #### YAML
 <a name="aws-properties-groundstation-config-frequency--examples--Create_a_Frequency--yaml"></a>
 
-```
+```yaml
 CenterFrequency:
   Value: 7812
   Units: MHz

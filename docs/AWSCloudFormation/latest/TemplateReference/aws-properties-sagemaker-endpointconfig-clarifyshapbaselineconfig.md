@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-endpointconfig-clarifyshapbaselineconfig-syntax.json"></a>
 
-```
+```json
 {
   "[MimeType](#cfn-sagemaker-endpointconfig-clarifyshapbaselineconfig-mimetype)" : {{String}},
   "[ShapBaseline](#cfn-sagemaker-endpointconfig-clarifyshapbaselineconfig-shapbaseline)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-endpointconfig-clarifyshapbaselineconfig-syntax.yaml"></a>
 
-```
+```yaml
   [MimeType](#cfn-sagemaker-endpointconfig-clarifyshapbaselineconfig-mimetype): {{String}}
   [ShapBaseline](#cfn-sagemaker-endpointconfig-clarifyshapbaselineconfig-shapbaseline): {{String}}
   [ShapBaselineUri](#cfn-sagemaker-endpointconfig-clarifyshapbaselineconfig-shapbaselineuri): {{String}}

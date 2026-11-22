@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-fieldseriesitem-syntax.json"></a>
 
-```
+```json
 {
   "[AxisBinding](#cfn-quicksight-analysis-fieldseriesitem-axisbinding)" : {{String}},
   "[FieldId](#cfn-quicksight-analysis-fieldseriesitem-fieldid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-fieldseriesitem-syntax.yaml"></a>
 
-```
+```yaml
   [AxisBinding](#cfn-quicksight-analysis-fieldseriesitem-axisbinding): {{String}}
   [FieldId](#cfn-quicksight-analysis-fieldseriesitem-fieldid): {{String}}
   [Settings](#cfn-quicksight-analysis-fieldseriesitem-settings): {{

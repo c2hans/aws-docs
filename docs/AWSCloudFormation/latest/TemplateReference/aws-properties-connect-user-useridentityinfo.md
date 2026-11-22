@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-user-useridentityinfo-syntax.json"></a>
 
-```
+```json
 {
   "[Email](#cfn-connect-user-useridentityinfo-email)" : {{String}},
   "[FirstName](#cfn-connect-user-useridentityinfo-firstname)" : {{String}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-user-useridentityinfo-syntax.yaml"></a>
 
-```
+```yaml
   [Email](#cfn-connect-user-useridentityinfo-email): {{String}}
   [FirstName](#cfn-connect-user-useridentityinfo-firstname): {{String}}
   [LastName](#cfn-connect-user-useridentityinfo-lastname): {{String}}

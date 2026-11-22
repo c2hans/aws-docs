@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-configuredtable-tablereference-syntax.json"></a>
 
-```
+```json
 {
   "[Athena](#cfn-cleanrooms-configuredtable-tablereference-athena)" : {{AthenaTableReference}},
   "[Databricks](#cfn-cleanrooms-configuredtable-tablereference-databricks)" : {{DatabricksTableReference}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-configuredtable-tablereference-syntax.yaml"></a>
 
-```
+```yaml
   [Athena](#cfn-cleanrooms-configuredtable-tablereference-athena): {{
     AthenaTableReference}}
   [Databricks](#cfn-cleanrooms-configuredtable-tablereference-databricks): {{

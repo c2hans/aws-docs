@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-storagelens-ssekms-syntax.json"></a>
 
-```
+```json
 {
   "[KeyId](#cfn-s3-storagelens-ssekms-keyid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-storagelens-ssekms-syntax.yaml"></a>
 
-```
+```yaml
   [KeyId](#cfn-s3-storagelens-ssekms-keyid): {{String}}
 ```
 

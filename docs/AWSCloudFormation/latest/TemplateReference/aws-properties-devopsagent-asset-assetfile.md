@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-asset-assetfile-syntax.json"></a>
 
-```
+```json
 {
   "[ContentBytes](#cfn-devopsagent-asset-assetfile-contentbytes)" : {{String}},
   "[ContentText](#cfn-devopsagent-asset-assetfile-contenttext)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-asset-assetfile-syntax.yaml"></a>
 
-```
+```yaml
   [ContentBytes](#cfn-devopsagent-asset-assetfile-contentbytes): {{String}}
   [ContentText](#cfn-devopsagent-asset-assetfile-contenttext): {{String}}
   [Metadata](#cfn-devopsagent-asset-assetfile-metadata): {{Json}}

@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 
 # TryDax.js
 
-```
+```javascript
 import { DynamoDB, waitUntilTableExists, waitUntilTableNotExists } from "@aws-sdk/client-dynamodb";
 import { DaxDocument, daxPaginateScan, daxPaginateQuery } from "@amazon-dax-sdk/lib-dax";
 import { DynamoDBDocument, paginateQuery, paginateScan } from "@aws-sdk/lib-dynamodb";

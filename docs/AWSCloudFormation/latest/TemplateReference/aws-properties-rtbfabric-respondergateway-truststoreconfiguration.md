@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rtbfabric-respondergateway-truststoreconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CertificateAuthorityCertificates](#cfn-rtbfabric-respondergateway-truststoreconfiguration-certificateauthoritycertificates)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rtbfabric-respondergateway-truststoreconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CertificateAuthorityCertificates](#cfn-rtbfabric-respondergateway-truststoreconfiguration-certificateauthoritycertificates): {{
     - String}}
 ```

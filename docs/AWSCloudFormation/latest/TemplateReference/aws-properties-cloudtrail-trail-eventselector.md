@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudtrail-trail-eventselector-syntax.json"></a>
 
-```
+```json
 {
   "[DataResources](#cfn-cloudtrail-trail-eventselector-dataresources)" : {{[ DataResource, ... ]}},
   "[ExcludeManagementEventSources](#cfn-cloudtrail-trail-eventselector-excludemanagementeventsources)" : {{[ String, ... ]}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudtrail-trail-eventselector-syntax.yaml"></a>
 
-```
+```yaml
   [DataResources](#cfn-cloudtrail-trail-eventselector-dataresources): {{
     - DataResource}}
   [ExcludeManagementEventSources](#cfn-cloudtrail-trail-eventselector-excludemanagementeventsources): {{

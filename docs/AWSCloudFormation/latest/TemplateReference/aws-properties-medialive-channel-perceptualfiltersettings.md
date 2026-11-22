@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-perceptualfiltersettings-syntax.json"></a>
 
-```
+```json
 {
   "[Strength](#cfn-medialive-channel-perceptualfiltersettings-strength)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-perceptualfiltersettings-syntax.yaml"></a>
 
-```
+```yaml
   [Strength](#cfn-medialive-channel-perceptualfiltersettings-strength): {{String}}
 ```
 

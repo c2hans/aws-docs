@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-guardduty-filter-condition-syntax.json"></a>
 
-```
+```json
 {
   "[Eq](#cfn-guardduty-filter-condition-eq)" : {{[ String, ... ]}},
   "[Equals](#cfn-guardduty-filter-condition-equals)" : {{[ String, ... ]}},
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-guardduty-filter-condition-syntax.yaml"></a>
 
-```
+```yaml
   [Eq](#cfn-guardduty-filter-condition-eq): {{
     - String}}
   [Equals](#cfn-guardduty-filter-condition-equals): {{

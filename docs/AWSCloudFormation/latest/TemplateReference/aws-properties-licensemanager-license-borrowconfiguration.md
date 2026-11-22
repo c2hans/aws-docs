@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-licensemanager-license-borrowconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AllowEarlyCheckIn](#cfn-licensemanager-license-borrowconfiguration-allowearlycheckin)" : {{Boolean}},
   "[MaxTimeToLiveInMinutes](#cfn-licensemanager-license-borrowconfiguration-maxtimetoliveinminutes)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-licensemanager-license-borrowconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AllowEarlyCheckIn](#cfn-licensemanager-license-borrowconfiguration-allowearlycheckin): {{Boolean}}
   [MaxTimeToLiveInMinutes](#cfn-licensemanager-license-borrowconfiguration-maxtimetoliveinminutes): {{Integer}}
 ```

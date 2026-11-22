@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-userprofile-codeeditorappsettings-syntax.json"></a>
 
-```
+```json
 {
   "[AppLifecycleManagement](#cfn-sagemaker-userprofile-codeeditorappsettings-applifecyclemanagement)" : {{AppLifecycleManagement}},
   "[BuiltInLifecycleConfigArn](#cfn-sagemaker-userprofile-codeeditorappsettings-builtinlifecycleconfigarn)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-userprofile-codeeditorappsettings-syntax.yaml"></a>
 
-```
+```yaml
   [AppLifecycleManagement](#cfn-sagemaker-userprofile-codeeditorappsettings-applifecyclemanagement): {{
     AppLifecycleManagement}}
   [BuiltInLifecycleConfigArn](#cfn-sagemaker-userprofile-codeeditorappsettings-builtinlifecycleconfigarn): {{String}}

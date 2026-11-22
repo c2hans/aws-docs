@@ -41,7 +41,7 @@ For more information about using pipeline resolvers, see [Pipeline resolvers](pi
 
 1. For common use cases, the AWS AppSync console has built-in templates that you can use for getting items from data sources (e.g., all item queries, individual lookups, etc.). For example, on the simple version of the schema from [Designing your schema](designing-your-schema.md#aws-appsync-designing-your-schema) where `getTodos` didn’t have pagination, the request mapping template for listing items is as follows:
 
-   ```
+   ```sh
    {
        "version" : "2017-02-28",
        "operation" : "Scan"
@@ -50,7 +50,7 @@ For more information about using pipeline resolvers, see [Pipeline resolvers](pi
 
 1. You always need a response mapping template to accompany the request. The console provides a default with the following passthrough value for lists:
 
-   ```
+   ```sh
    $util.toJson($ctx.result.items)
    ```
 
@@ -158,7 +158,7 @@ The next step is to create a resolver for your `Mutation` type.
 
    For this resolver, use the following response mapping template:
 
-   ```
+   ```sh
    $util.toJson($ctx.result)
    ```
 
@@ -185,7 +185,7 @@ At this point, if you’re not using the advanced resolvers you can begin using 
 
 If you are following the Advanced section and you’re building a sample schema in [Designing your schema](designing-your-schema.md#aws-appsync-designing-your-schema) to do a paginated scan, use the following request template for the `getTodos` field instead:
 
-```
+```sh
 {
     "version" : "2017-02-28",
     "operation" : "Scan",
@@ -196,7 +196,7 @@ If you are following the Advanced section and you’re building a sample schema 
 
 For this pagination use case, the response mapping is more than just a passthrough because it must contain both the *cursor* (so that the client knows what page to start at next) and the result set. The mapping template is as follows:
 
-```
+```sh
 {
     "todos": $util.toJson($context.result.items),
     "nextToken": $util.toJson($context.result.nextToken)
@@ -225,7 +225,7 @@ We’re using a query operation against a second table for illustrative purposes
 
 1. Add the following snippet to your request mapping template:
 
-   ```
+   ```sh
    {
        "version": "2017-02-28",
        "operation": "Query",
@@ -245,7 +245,7 @@ We’re using a query operation against a second table for illustrative purposes
 
    You can use the passthrough response mapping template as follows:
 
-   ```
+   ```sh
    $util.toJson($ctx.result.items)
    ```
 
@@ -253,7 +253,7 @@ We’re using a query operation against a second table for illustrative purposes
 
 1. Finally, back on the **Schema** page in the console, attach a resolver to the `addComment` field, and specify the data source for the `Comments` table. The request mapping template in this case is a simple `PutItem` with the specific `todoid` that is commented on as an argument, but you use the `$utils.autoId()` utility to create a unique sort key for the comment as follows:
 
-   ```
+   ```sh
    {
        "version": "2017-02-28",
        "operation": "PutItem",
@@ -267,7 +267,7 @@ We’re using a query operation against a second table for illustrative purposes
 
    Use a passthrough response template as follows:
 
-   ```
+   ```sh
    $util.toJson($ctx.result)
    ```
 

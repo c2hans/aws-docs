@@ -16,7 +16,7 @@ A AWS CloudTrail log file includes information about the requested API operation
 
 The following example shows a CloudTrail log file example that demonstrates the [`GetObject`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html) API operation.
 
-```
+```json
     {
         "eventVersion": "1.11",
         "userIdentity": {
@@ -77,7 +77,7 @@ The following example shows a CloudTrail log file example that demonstrates the 
 
 The following is a CloudTrail log file example that demonstrates a maintenance event for table compaction performed by S3 as part of automatic table maintenance. For more information on events for table maintenance, see [CloudTrail management events for S3 Tables maintenance](s3-tables-logging.md#s3-tables-maintenance-events)
 
-```
+```json
 {
   "eventVersion": "1.11",
   "userIdentity": {
@@ -122,7 +122,7 @@ The following is a CloudTrail log file example that demonstrates a maintenance e
 
 The following example shows a CloudTrail log file example that demonstrates the [`PutObject`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html) API operation.
 
-```
+```json
 {
         "eventVersion": "1.11",
         "userIdentity": {

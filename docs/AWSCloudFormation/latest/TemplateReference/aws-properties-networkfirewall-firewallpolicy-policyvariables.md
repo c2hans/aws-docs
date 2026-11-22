@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkfirewall-firewallpolicy-policyvariables-syntax.json"></a>
 
-```
+```json
 {
   "[RuleVariables](#cfn-networkfirewall-firewallpolicy-policyvariables-rulevariables)" : {{{{{Key}}: {{Value}}, ...}}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkfirewall-firewallpolicy-policyvariables-syntax.yaml"></a>
 
-```
+```yaml
   [RuleVariables](#cfn-networkfirewall-firewallpolicy-policyvariables-rulevariables): {{
     {{Key}}: {{Value}}}}
 ```

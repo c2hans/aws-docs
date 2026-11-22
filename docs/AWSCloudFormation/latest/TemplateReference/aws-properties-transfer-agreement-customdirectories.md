@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-transfer-agreement-customdirectories-syntax.json"></a>
 
-```
+```json
 {
   "[FailedFilesDirectory](#cfn-transfer-agreement-customdirectories-failedfilesdirectory)" : {{String}},
   "[MdnFilesDirectory](#cfn-transfer-agreement-customdirectories-mdnfilesdirectory)" : {{String}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-transfer-agreement-customdirectories-syntax.yaml"></a>
 
-```
+```yaml
   [FailedFilesDirectory](#cfn-transfer-agreement-customdirectories-failedfilesdirectory): {{String}}
   [MdnFilesDirectory](#cfn-transfer-agreement-customdirectories-mdnfilesdirectory): {{String}}
   [PayloadFilesDirectory](#cfn-transfer-agreement-customdirectories-payloadfilesdirectory): {{String}}

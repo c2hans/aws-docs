@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-elementalinference-feed-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ElementalInference::Feed",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-elementalinference-feed-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ElementalInference::Feed
 Properties:
   [AccessRoleArn](#cfn-elementalinference-feed-accessrolearn): {{String}}

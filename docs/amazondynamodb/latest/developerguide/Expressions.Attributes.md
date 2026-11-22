@@ -14,7 +14,7 @@ This section describes how to refer to item attributes in an expression in Amazo
 **A Sample Item: ProductCatalog**
 The examples on this page use the following sample item in the `ProductCatalog` table. (This table is described in [Example tables and data for use in DynamoDB](AppendixSampleTables.md).)
 
-```
+```json
 {
     "Id": 123,
     "Title": "Bicycle 123",

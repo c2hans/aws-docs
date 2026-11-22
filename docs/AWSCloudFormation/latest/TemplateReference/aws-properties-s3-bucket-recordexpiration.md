@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-recordexpiration-syntax.json"></a>
 
-```
+```json
 {
   "[Days](#cfn-s3-bucket-recordexpiration-days)" : {{Integer}},
   "[Expiration](#cfn-s3-bucket-recordexpiration-expiration)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-recordexpiration-syntax.yaml"></a>
 
-```
+```yaml
   [Days](#cfn-s3-bucket-recordexpiration-days): {{Integer}}
   [Expiration](#cfn-s3-bucket-recordexpiration-expiration): {{String}}
 ```

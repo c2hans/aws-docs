@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-routerinput-contentqualityanalysisfeatureconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BlackFrames](#cfn-mediaconnect-routerinput-contentqualityanalysisfeatureconfiguration-blackframes)" : {{BlackFramesConfiguration}},
   "[FrozenFrames](#cfn-mediaconnect-routerinput-contentqualityanalysisfeatureconfiguration-frozenframes)" : {{FrozenFramesConfiguration}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-routerinput-contentqualityanalysisfeatureconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BlackFrames](#cfn-mediaconnect-routerinput-contentqualityanalysisfeatureconfiguration-blackframes): {{
     BlackFramesConfiguration}}
   [FrozenFrames](#cfn-mediaconnect-routerinput-contentqualityanalysisfeatureconfiguration-frozenframes): {{

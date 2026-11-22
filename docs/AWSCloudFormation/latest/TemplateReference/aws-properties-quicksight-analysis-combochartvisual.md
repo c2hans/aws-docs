@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-combochartvisual-syntax.json"></a>
 
-```
+```json
 {
   "[Actions](#cfn-quicksight-analysis-combochartvisual-actions)" : {{[ VisualCustomAction, ... ]}},
   "[ChartConfiguration](#cfn-quicksight-analysis-combochartvisual-chartconfiguration)" : {{ComboChartConfiguration}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-combochartvisual-syntax.yaml"></a>
 
-```
+```yaml
   [Actions](#cfn-quicksight-analysis-combochartvisual-actions): {{
     - VisualCustomAction}}
   [ChartConfiguration](#cfn-quicksight-analysis-combochartvisual-chartconfiguration): {{

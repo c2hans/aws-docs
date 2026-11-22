@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticsearch-domain-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-elasticsearch-domain-tag-key)" : {{String}},
   "[Value](#cfn-elasticsearch-domain-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticsearch-domain-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-elasticsearch-domain-tag-key): {{String}}
   [Value](#cfn-elasticsearch-domain-tag-value): {{String}}
 ```

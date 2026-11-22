@@ -23,7 +23,7 @@ The following bucket policy denies any Amazon S3 presigned URL request on object
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -52,7 +52,7 @@ The following bucket policy allows only requests that use the `Authorization` he
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -81,7 +81,7 @@ The following bucket policy denies requests that use presigned URLS for request 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -110,7 +110,7 @@ The following bucket policy denies any uploads with unsigned payloads:
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [

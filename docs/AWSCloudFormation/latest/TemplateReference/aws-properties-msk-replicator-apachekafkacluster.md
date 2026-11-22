@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-replicator-apachekafkacluster-syntax.json"></a>
 
-```
+```json
 {
   "[ApacheKafkaClusterId](#cfn-msk-replicator-apachekafkacluster-apachekafkaclusterid)" : {{String}},
   "[BootstrapBrokerString](#cfn-msk-replicator-apachekafkacluster-bootstrapbrokerstring)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-replicator-apachekafkacluster-syntax.yaml"></a>
 
-```
+```yaml
   [ApacheKafkaClusterId](#cfn-msk-replicator-apachekafkacluster-apachekafkaclusterid): {{String}}
   [BootstrapBrokerString](#cfn-msk-replicator-apachekafkacluster-bootstrapbrokerstring): {{
     String}}

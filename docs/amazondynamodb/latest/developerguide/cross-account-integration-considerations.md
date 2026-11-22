@@ -27,7 +27,7 @@ The following AWS KMS key policy enables cross-account access between your Dynam
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -70,7 +70,7 @@ The following IAM policy allows a Amazon Redshift service to access DynamoDB tab
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -119,7 +119,7 @@ The following IAM policy allows a Amazon Redshift service to access DynamoDB tab
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -146,7 +146,7 @@ The following resource-based policy allows a Amazon Redshift service in account 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

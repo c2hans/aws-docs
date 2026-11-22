@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewaytarget-s3configuration-syntax.json"></a>
 
-```
+```json
 {
   "[BucketOwnerAccountId](#cfn-bedrockagentcore-gatewaytarget-s3configuration-bucketowneraccountid)" : {{String}},
   "[Uri](#cfn-bedrockagentcore-gatewaytarget-s3configuration-uri)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewaytarget-s3configuration-syntax.yaml"></a>
 
-```
+```yaml
   [BucketOwnerAccountId](#cfn-bedrockagentcore-gatewaytarget-s3configuration-bucketowneraccountid): {{String}}
   [Uri](#cfn-bedrockagentcore-gatewaytarget-s3configuration-uri): {{String}}
 ```

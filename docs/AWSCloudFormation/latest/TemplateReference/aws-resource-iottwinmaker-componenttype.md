@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iottwinmaker-componenttype-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoTTwinMaker::ComponentType",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iottwinmaker-componenttype-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoTTwinMaker::ComponentType
 Properties:
   [ComponentTypeId](#cfn-iottwinmaker-componenttype-componenttypeid): {{String}}

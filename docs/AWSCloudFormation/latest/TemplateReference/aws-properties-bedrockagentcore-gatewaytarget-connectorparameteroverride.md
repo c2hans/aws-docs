@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewaytarget-connectorparameteroverride-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-bedrockagentcore-gatewaytarget-connectorparameteroverride-description)" : {{String}},
   "[Path](#cfn-bedrockagentcore-gatewaytarget-connectorparameteroverride-path)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewaytarget-connectorparameteroverride-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-bedrockagentcore-gatewaytarget-connectorparameteroverride-description): {{String}}
   [Path](#cfn-bedrockagentcore-gatewaytarget-connectorparameteroverride-path): {{String}}
   [Visible](#cfn-bedrockagentcore-gatewaytarget-connectorparameteroverride-visible): {{Boolean}}

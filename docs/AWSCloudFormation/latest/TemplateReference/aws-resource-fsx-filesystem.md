@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-fsx-filesystem-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::FSx::FileSystem",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-fsx-filesystem-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::FSx::FileSystem
 Properties:
   [BackupId](#cfn-fsx-filesystem-backupid): {{String}}
@@ -262,7 +262,7 @@ The following examples create a 1.2 TiB persistent Amazon FSx for Lustre file sy
 #### JSON
 <a name="aws-resource-fsx-filesystem--examples--Create_an_Amazon_FSx_for_Lustre_File_System--json"></a>
 
-```
+```json
 {
     "Resources": {
         "BasicS3LinkedLustreFileSystem": {
@@ -333,7 +333,7 @@ The following examples create a 1.2 TiB persistent Amazon FSx for Lustre file sy
 #### YAML
 <a name="aws-resource-fsx-filesystem--examples--Create_an_Amazon_FSx_for_Lustre_File_System--yaml"></a>
 
-```
+```yaml
 Resources:
   BasicS3LinkedLustreFileSystem:
     Type: AWS::FSx::FileSystem
@@ -368,7 +368,7 @@ The following examples create a Multi-AZ Amazon FSx for Windows File Server file
 #### JSON
 <a name="aws-resource-fsx-filesystem--examples--Create_an_Amazon_FSx_for_Windows_File_Server_File_System_in_a_Self-managed_Active_Directory--json"></a>
 
-```
+```json
 {
     "Resources": {
         "WindowsSelfManagedADFileSystemWithAllConfigs": {
@@ -461,7 +461,7 @@ The following examples create a Multi-AZ Amazon FSx for Windows File Server file
 #### YAML
 <a name="aws-resource-fsx-filesystem--examples--Create_an_Amazon_FSx_for_Windows_File_Server_File_System_in_a_Self-managed_Active_Directory--yaml"></a>
 
-```
+```yaml
 Resources:
   WindowsSelfManagedADFileSystemWithAllConfigs:
     Type: 'AWS::FSx::FileSystem'
@@ -517,7 +517,7 @@ The following examples create a Multi-AZ Amazon FSx for Windows File Server file
 #### JSON
 <a name="aws-resource-fsx-filesystem--examples--Create_an_Amazon_FSx_for_Windows_File_Server_File_System_in_an_Amazon_Managed_Active_Directory--json"></a>
 
-```
+```json
 {
     "Resources": {
         "WindowsMadFileSystemWithAllConfigs": {
@@ -578,7 +578,7 @@ The following examples create a Multi-AZ Amazon FSx for Windows File Server file
 #### YAML
 <a name="aws-resource-fsx-filesystem--examples--Create_an_Amazon_FSx_for_Windows_File_Server_File_System_in_an_Amazon_Managed_Active_Directory--yaml"></a>
 
-```
+```yaml
 Resources:
   WindowsMadFileSystemWithAllConfigs:
     Type: 'AWS::FSx::FileSystem'
@@ -618,7 +618,7 @@ The following examples create a Multi-AZ Amazon FSx for Windows File Server file
 #### JSON
 <a name="aws-resource-fsx-filesystem--examples--Create_an_Amazon_FSx_for_Windows_File_Server_File_System_with_file_access_audit_event_logging_enabled--json"></a>
 
-```
+```json
 {
     "Resources": {
         "WindowsMadFileSystemWithAllConfigs": {
@@ -689,7 +689,7 @@ The following examples create a Multi-AZ Amazon FSx for Windows File Server file
 #### YAML
 <a name="aws-resource-fsx-filesystem--examples--Create_an_Amazon_FSx_for_Windows_File_Server_File_System_with_file_access_audit_event_logging_enabled--yaml"></a>
 
-```
+```yaml
 Resources:
   WindowsMadFileSystemWithAllConfigs:
     Type: "AWS::FSx::FileSystem"
@@ -731,7 +731,7 @@ The following examples create a 1 TiB Amazon FSx for NetApp ONTAP file system.
 #### JSON
 <a name="aws-resource-fsx-filesystem--examples--Create_an_Amazon_FSx_for_NetApp_ONTAP_File_System--json"></a>
 
-```
+```json
 {
    "OntapMultiAzFileSystemWithAllConfigs": {
       "Type": "AWS::FSx::FileSystem",
@@ -776,7 +776,7 @@ The following examples create a 1 TiB Amazon FSx for NetApp ONTAP file system.
 #### YAML
 <a name="aws-resource-fsx-filesystem--examples--Create_an_Amazon_FSx_for_NetApp_ONTAP_File_System--yaml"></a>
 
-```
+```yaml
 OntapMultiAzFileSystemWithAllConfigs:
    Type: "AWS::FSx::FileSystem"
    Condition: OntapMazEnabled

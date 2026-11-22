@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-visualsubtitlelabeloptions-syntax.json"></a>
 
-```
+```json
 {
   "[FormatText](#cfn-quicksight-analysis-visualsubtitlelabeloptions-formattext)" : {{LongFormatText}},
   "[Visibility](#cfn-quicksight-analysis-visualsubtitlelabeloptions-visibility)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-visualsubtitlelabeloptions-syntax.yaml"></a>
 
-```
+```yaml
   [FormatText](#cfn-quicksight-analysis-visualsubtitlelabeloptions-formattext): {{
     LongFormatText}}
   [Visibility](#cfn-quicksight-analysis-visualsubtitlelabeloptions-visibility): {{String}}

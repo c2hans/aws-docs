@@ -52,7 +52,7 @@ If you plan to run the application on a multi-session fleet, validate the follow
 + The application's installer, updater, and any background processes do not require interactive administrator access while users are signed in.
 
 **Note**
-Multi-session fleets currently do not support webcam, [Dynamic Application Framework](https://docs.aws.amazon.com/appstream2/latest/developerguide/dynamic-app-framework.html), and [Smart Card Authentication](https://docs.aws.amazon.com/appstream2/latest/developerguide/active-directory-prerequisites-smart-card-authentication.html). If you need any of these features, we recommend that you use single-session fleets.
+Multi-session fleets currently don't support webcam and [Dynamic Application Framework](dynamic-app-framework.md). If you need either of these features, we recommend that you use single-session fleets.
 
 ### Native application mode compatibility
 <a name="onboarding-native-app-mode"></a>

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-association-dynatraceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EnableWebhookUpdates](#cfn-devopsagent-association-dynatraceconfiguration-enablewebhookupdates)" : {{Boolean}},
   "[EnvId](#cfn-devopsagent-association-dynatraceconfiguration-envid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-association-dynatraceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EnableWebhookUpdates](#cfn-devopsagent-association-dynatraceconfiguration-enablewebhookupdates): {{Boolean}}
   [EnvId](#cfn-devopsagent-association-dynatraceconfiguration-envid): {{String}}
   [Resources](#cfn-devopsagent-association-dynatraceconfiguration-resources): {{

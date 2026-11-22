@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-association-releasemanagementconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-devopsagent-association-releasemanagementconfiguration-name)" : {{String}},
   "[NetworkAccess](#cfn-devopsagent-association-releasemanagementconfiguration-networkaccess)" : {{NetworkAccessConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-association-releasemanagementconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-devopsagent-association-releasemanagementconfiguration-name): {{String}}
   [NetworkAccess](#cfn-devopsagent-association-releasemanagementconfiguration-networkaccess): {{
     NetworkAccessConfiguration}}

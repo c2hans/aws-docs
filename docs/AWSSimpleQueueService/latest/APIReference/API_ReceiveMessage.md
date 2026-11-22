@@ -254,7 +254,7 @@ The following example query request receives messages from the specified queue. 
 #### Sample Request
 <a name="API_ReceiveMessage_Example_1_Request"></a>
 
-```
+```json
 POST / HTTP/1.1
 Host: sqs.us-east-1.amazonaws.com
 X-Amz-Target: AmazonSQS.ReceiveMessage
@@ -274,7 +274,7 @@ Connection: Keep-Alive
 #### Sample Response
 <a name="API_ReceiveMessage_Example_1_Response"></a>
 
-```
+```json
 HTTP/1.1 200 OK
 x-amzn-RequestId: <requestId>
 Content-Length: <PayloadSizeBytes>
@@ -306,7 +306,7 @@ Content-Type: application/x-amz-json-1.0
 #### Sample Request
 <a name="API_ReceiveMessage_Example_2_Request"></a>
 
-```
+```xml
 POST /177715257436/MyQueue/ HTTP/1.1
 Host: sqs.us-east-1.amazonaws.com
 X-Amz-Date: <Date>
@@ -323,7 +323,7 @@ Action=ReceiveMessage
 #### Sample Response
 <a name="API_ReceiveMessage_Example_2_Response"></a>
 
-```
+```xml
 HTTP/1.1 200 OK
 <ReceiveMessageResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/">
     <ReceiveMessageResult>
@@ -366,7 +366,7 @@ The following example enables long polling by calling the `ReceiveMessage` actio
 #### Sample Request
 <a name="API_ReceiveMessage_Example_3_Request"></a>
 
-```
+```json
 POST / HTTP/1.1
 Host: sqs.us-east-1.amazonaws.com
 X-Amz-Target: AmazonSQS.ReceiveMessage
@@ -401,7 +401,7 @@ aws sqs receive-message \
 #### Sample Response
 <a name="API_ReceiveMessage_Example_4_Response"></a>
 
-```
+```json
 {
   "Messages": [
     {
@@ -426,7 +426,7 @@ aws sqs receive-message \
 #### Sample Request
 <a name="API_ReceiveMessage_Example_5_Request"></a>
 
-```
+```xml
 POST /177715257436/MyQueue/ HTTP/1.1
 Host: sqs.us-east-1.amazonaws.com
 X-Amz-Date: <Date>

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-version-provisionedconcurrencyconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ProvisionedConcurrentExecutions](#cfn-lambda-version-provisionedconcurrencyconfiguration-provisionedconcurrentexecutions)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-version-provisionedconcurrencyconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ProvisionedConcurrentExecutions](#cfn-lambda-version-provisionedconcurrencyconfiguration-provisionedconcurrentexecutions): {{Integer}}
 ```
 
@@ -49,7 +49,7 @@ Allocate 20 provisioned concurrency for a version.
 #### YAML
 <a name="aws-properties-lambda-version-provisionedconcurrencyconfiguration--examples--Provisioned_Concurrency_Configuration--yaml"></a>
 
-```
+```yaml
       ProvisionedConcurrencyConfig:
         ProvisionedConcurrentExecutions: 20
 ```

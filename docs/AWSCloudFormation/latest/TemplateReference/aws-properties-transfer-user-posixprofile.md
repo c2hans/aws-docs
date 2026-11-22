@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-transfer-user-posixprofile-syntax.json"></a>
 
-```
+```json
 {
   "[Gid](#cfn-transfer-user-posixprofile-gid)" : {{Number}},
   "[SecondaryGids](#cfn-transfer-user-posixprofile-secondarygids)" : {{[ Number, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-transfer-user-posixprofile-syntax.yaml"></a>
 
-```
+```yaml
   [Gid](#cfn-transfer-user-posixprofile-gid): {{Number}}
   [SecondaryGids](#cfn-transfer-user-posixprofile-secondarygids): {{
     - Number}}

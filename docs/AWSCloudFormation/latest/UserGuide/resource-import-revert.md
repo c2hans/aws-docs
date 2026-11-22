@@ -12,7 +12,7 @@ To revert an import operation, specify a `Retain` deletion policy for the resour
 1. Specify a `Retain` [DeletionPolicy](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-attribute-deletionpolicy.html) for the resources you want to remove from your stack. In the following example template, `GamesTable` is the target of this revert operation.
 **Example JSON**
 
-   ```
+   ```json
    {
        "AWSTemplateFormatVersion": "2010-09-09",
        "Description": "Import test",
@@ -85,7 +85,7 @@ To revert an import operation, specify a `Retain` deletion policy for the resour
 1. Remove the resource, related parameters, and outputs from the stack template. In this example, the template now looks like the following.
 **Example JSON**
 
-   ```
+   ```json
    {
        "AWSTemplateFormatVersion": "2010-09-09",
        "Description": "Import test",
@@ -124,7 +124,7 @@ To revert an import operation, specify a `Retain` deletion policy for the resour
 1. Specify a `Retain` [DeletionPolicy](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-attribute-deletionpolicy.html) for the resources you want to remove from your stack. In the following example template, `GamesTable` is the target of this revert operation.
 **Example JSON**
 
-   ```
+   ```json
    {
        "AWSTemplateFormatVersion": "2010-09-09",
        "Description": "Import test",
@@ -187,7 +187,7 @@ To revert an import operation, specify a `Retain` deletion policy for the resour
 1. Remove the resource, related parameters, and outputs from the stack template. In this example, the template now looks like the following.
 **Example JSON**
 
-   ```
+   ```json
    {
        "AWSTemplateFormatVersion": "2010-09-09",
        "Description": "Import test",

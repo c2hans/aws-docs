@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-networkmanager-device-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::NetworkManager::Device",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-networkmanager-device-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::NetworkManager::Device
 Properties:
   [AWSLocation](#cfn-networkmanager-device-awslocation): {{
@@ -186,7 +186,7 @@ The following example creates a device in a global network.
 #### JSON
 <a name="aws-resource-networkmanager-device--examples--Device--json"></a>
 
-```
+```json
 {
     "Type": "AWS::NetworkManager::Device",
     "Properties": {
@@ -218,7 +218,7 @@ The following example creates a device in a global network.
 #### YAML
 <a name="aws-resource-networkmanager-device--examples--Device--yaml"></a>
 
-```
+```yaml
 Type: AWS::NetworkManager::Device
 Properties:
   Description: "Chicago office device"

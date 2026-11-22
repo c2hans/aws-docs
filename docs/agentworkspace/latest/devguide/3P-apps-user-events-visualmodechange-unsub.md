@@ -8,12 +8,12 @@ Unsubscribes the callback function from the visual mode change event in the Conn
 
  **Signature**
 
-```
+```typescript
 offVisualModeChange(handler: VisualModeChangedHandler)
 ```
 
  **Usage**
 
-```
+```typescript
 settingsClient.offVisualModeChange(handler);
 ```

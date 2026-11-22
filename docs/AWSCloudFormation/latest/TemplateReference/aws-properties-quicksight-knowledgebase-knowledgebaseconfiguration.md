@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-knowledgebase-knowledgebaseconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[TemplateConfiguration](#cfn-quicksight-knowledgebase-knowledgebaseconfiguration-templateconfiguration)" : {{KbTemplateConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-knowledgebase-knowledgebaseconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [TemplateConfiguration](#cfn-quicksight-knowledgebase-knowledgebaseconfiguration-templateconfiguration): {{
     KbTemplateConfiguration}}
 ```

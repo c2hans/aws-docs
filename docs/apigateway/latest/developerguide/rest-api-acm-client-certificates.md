@@ -30,7 +30,7 @@ Create the ACM certificate in the same AWS Region as the REST API that will use 
 
 To import a client certificate and its private key into ACM, run the following command. For more information, see [Importing certificates](https://docs.aws.amazon.com/acm/latest/userguide/import-certificate.html) in the *AWS Certificate Manager User Guide*.
 
-```
+```shell
 aws acm import-certificate \
   --certificate fileb://{{client-cert.pem}} \
   --private-key fileb://{{private-key.pem}} \
@@ -45,7 +45,7 @@ The command returns the ACM certificate ARN. Record this value for the following
 
 To request a private certificate that ACM manages and can auto-renew, run the following command. For more information, see [Requesting a private certificate](https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-request-private.html) in the *AWS Certificate Manager User Guide*.
 
-```
+```shell
 aws acm request-certificate \
   --domain-name {{www.example.com}} \
   --certificate-authority-arn arn:aws:acm-pca:{{us-east-1}}:{{123456789012}}:certificate-authority/{{12345678-1234-1234-1234-123456789012}} \
@@ -59,7 +59,7 @@ The command returns the ACM certificate ARN. Record this value for the following
 
 If you need direct control over certificate parameters (such as custom extensions or signing algorithms), you can issue a certificate through AWS Private Certificate Authority and then import it into ACM. Certificates imported this way are not auto-renewed by ACM. Ensure the certificate meets the [certificate requirements](#rest-api-acm-client-certificates-requirements). For more information about issuing private certificates, see [Issuing a private end-entity certificate](https://docs.aws.amazon.com/privateca/latest/userguide/PcaIssueCert.html) in the *AWS Private Certificate Authority User Guide*.
 
-```
+```shell
 aws acm-pca issue-certificate \
   --certificate-authority-arn arn:aws:acm-pca:{{us-east-1}}:{{123456789012}}:certificate-authority/{{12345678-1234-1234-1234-123456789012}} \
   --csr fileb://{{csr.pem}} \
@@ -95,7 +95,7 @@ After you have an ACM certificate ARN, set up your API stage to present the cert
 
 Run the following command:
 
-```
+```shell
 aws apigateway update-stage \
   --rest-api-id {{abc123}} \
   --stage-name {{prod}} \

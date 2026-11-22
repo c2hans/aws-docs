@@ -36,7 +36,7 @@ The CloudWatch agent with Prometheus monitoring needs two configurations to scra
 
 The CloudWatch agent supports the standard Prometheus scrape configurations as documented in [ <scrape\_config>](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#scrape_config) in the Prometheus documentation. You can edit this section to update the configurations that are already in this file, and add additional Prometheus scraping targets. A sample configuration file contains the following global configuration lines:
 
-```
+```yaml
 PS C:\ProgramData\Amazon\AmazonCloudWatchAgent> cat prometheus.yaml
 global:
   scrape_interval: 1m
@@ -63,7 +63,7 @@ The CloudWatch agent supports the following service discovery configuration type
 
 The following is a sample static config to scrape Prometheus metrics from a local host. Metrics can also be scraped from other servers if the Prometheus port is open to the server where the agent runs.
 
-```
+```yaml
 PS C:\ProgramData\Amazon\AmazonCloudWatchAgent> cat prometheus_sd_1.yaml
 - targets:
     - 127.0.0.1:9404
@@ -78,7 +78,7 @@ This example contains the following parameters:
 
 **`ec2_sd_config`** Allows retrieving scrape targets from Amazon EC2 instances. The following is a sample `ec2_sd_config` to scrape Prometheus metrics from a list of EC2 instances. The Prometheus ports of these instances have to open to the server where the CloudWatch agent runs. The IAM role for the EC2 instance where the CloudWatch agent runs must include the `ec2:DescribeInstance` permission. For example, you could attach the managed policy **AmazonEC2ReadOnlyAccess** to the instance running the CloudWatch agent.
 
-```
+```yaml
 PS C:\ProgramData\Amazon\AmazonCloudWatchAgent> cat prometheus.yaml
 global:
   scrape_interval: 1m
@@ -122,7 +122,7 @@ The CloudWatch agent configuration file includes `prometheus` sections under bot
 
 The following is an example CloudWatch agent configuration for Prometheus.
 
-```
+```json
 {
    "logs":{
       "metrics_collected":{
@@ -171,7 +171,7 @@ The previous example configures an embedded metric format section to be sent as 
 
 The log event that is sent includes the following highlighted section.
 
-```
+```json
 {
     "CloudWatchMetrics": [
         {
@@ -240,7 +240,7 @@ The `config.yaml` file is the JMX exporter configuration file. For more informat
 
 Here is a sample configuration for Java and Tomcat.
 
-```
+```yaml
 ---
 lowercaseOutputName: true
 lowercaseOutputLabelNames: true
@@ -445,7 +445,7 @@ Next, set up the Prometheus scrape configuration in the CloudWatch agent configu
 
    The following is a sample configuration with Java/JHX Prometheus metrics defined. Be sure to replace {{path-to-Prometheus-Scrape-Configuration-file}} with the correct path.
 
-   ```
+   ```json
    {
      "agent": {
        "region": "us-east-1"

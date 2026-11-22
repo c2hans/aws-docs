@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eventsv2-eventsource-eventsourceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AwsServiceEventsConfiguration](#cfn-eventsv2-eventsource-eventsourceconfiguration-awsserviceeventsconfiguration)" : {{AwsServiceEventsConfiguration}},
   "[PartnerEventsConfiguration](#cfn-eventsv2-eventsource-eventsourceconfiguration-partnereventsconfiguration)" : {{PartnerEventsConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eventsv2-eventsource-eventsourceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AwsServiceEventsConfiguration](#cfn-eventsv2-eventsource-eventsourceconfiguration-awsserviceeventsconfiguration): {{
     AwsServiceEventsConfiguration}}
   [PartnerEventsConfiguration](#cfn-eventsv2-eventsource-eventsourceconfiguration-partnereventsconfiguration): {{

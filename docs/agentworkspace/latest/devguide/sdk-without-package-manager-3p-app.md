@@ -16,7 +16,7 @@ The following prerequisites are required:
 ## HTML setup
 <a name="sdk-without-package-manager-3p-html"></a>
 
-```
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -39,7 +39,7 @@ The following prerequisites are required:
 
 In your `app.js` file:
 
-```
+```javascript
 // Initialize the third-party app - this must be called first
 var initResult = AmazonConnectSDK.AmazonConnectApp.init({
   // Optional lifecycle callbacks

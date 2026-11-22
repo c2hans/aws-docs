@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-connect-securitykey-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Connect::SecurityKey",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-connect-securitykey-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Connect::SecurityKey
 Properties:
   [InstanceId](#cfn-connect-securitykey-instanceid): {{String}}
@@ -94,7 +94,7 @@ The following example specifies a security key for an Connect Customer instance.
 #### YAML
 <a name="aws-resource-connect-securitykey--examples--Specify_a_security_key_for_an_Amazon_Connect_instance--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Specifies a security key for an Amazon Connect instance
 Resources:

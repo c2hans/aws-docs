@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-configurationset-deliveryoptions-syntax.json"></a>
 
-```
+```json
 {
   "[MaxDeliverySeconds](#cfn-ses-configurationset-deliveryoptions-maxdeliveryseconds)" : {{Number}},
   "[SendingPoolName](#cfn-ses-configurationset-deliveryoptions-sendingpoolname)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-configurationset-deliveryoptions-syntax.yaml"></a>
 
-```
+```yaml
   [MaxDeliverySeconds](#cfn-ses-configurationset-deliveryoptions-maxdeliveryseconds): {{Number}}
   [SendingPoolName](#cfn-ses-configurationset-deliveryoptions-sendingpoolname): {{String}}
   [TlsPolicy](#cfn-ses-configurationset-deliveryoptions-tlspolicy): {{String}}

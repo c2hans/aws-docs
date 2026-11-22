@@ -35,7 +35,7 @@ Instead of using `NotPrincipal`, we recommend using a Deny statement with global
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -72,7 +72,7 @@ Instead of using `NotPrincipal`, we recommend using a Deny statement with global
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

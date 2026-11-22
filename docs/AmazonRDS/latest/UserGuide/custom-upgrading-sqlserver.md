@@ -115,6 +115,6 @@ When you upgrade your DB instance, all existing databases remain at their origin
 
 You can change the compatibility level of a database by using the ALTER DATABASE command. For example, to change a database named `customeracct` to be compatible with SQL Server 2022, issue the following command:
 
-```
+```sql
 1. ALTER DATABASE customeracct SET COMPATIBILITY_LEVEL = 160
 ```

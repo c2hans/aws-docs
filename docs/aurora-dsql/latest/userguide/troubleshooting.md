@@ -168,4 +168,4 @@ Use the following steps to confirm whether this explains what you're seeing:
 
 1. Wait a few minutes after running that workload, then refresh the Database Insights console.
 
-1. Verify that you're viewing the same AWS Region and account where the cluster was created. Selecting the wrong Region or account is a common reason a cluster appears to be missing.
+1. Verify that you're viewing the same AWS Region and account where the cluster was created. Selecting the wrong Region or account is a common reason a cluster appears to be missing. For a multi-Region cluster, each active peer is a separate cluster in its own AWS Region. View Database Insights in the Region and account of the specific peer that you want to inspect.

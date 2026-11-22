@@ -92,7 +92,7 @@ https://autoscaling.amazonaws.com/?Action=DescribeLoadBalancers
 #### Sample Response
 <a name="API_DescribeLoadBalancers_Example_1_Response"></a>
 
-```
+```xml
 <DescribeLoadBalancersResponse xmlns="https://autoscaling.amazonaws.com/doc/2011-01-01/">
   <DescribeLoadBalancersResult>
     <LoadBalancers>

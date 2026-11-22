@@ -137,7 +137,7 @@ To set Object Ownership when you create a new bucket, use the `create-bucket` AW
 
 This example applies the Bucket owner enforced setting for a new bucket using the AWS CLI:
 
-```
+```bash
 aws s3api create-bucket --bucket  {{amzn-s3-demo-bucket}} --region {{us-east-1}} --object-ownership BucketOwnerEnforced
 ```
 
@@ -149,7 +149,7 @@ If you don’t set Object Ownership when you create a bucket by using the AWS CL
 
 This example sets the Bucket owner enforced setting for a new bucket using the AWS SDK for Java:
 
-```
+```java
     // Build the ObjectOwnership for CreateBucket
     CreateBucketRequest createBucketRequest = CreateBucketRequest.builder()
             .bucket(bucketName)

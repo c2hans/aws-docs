@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-secretsmanager-rotationschedule-rotationrules-syntax.json"></a>
 
-```
+```json
 {
   "[AutomaticallyAfterDays](#cfn-secretsmanager-rotationschedule-rotationrules-automaticallyafterdays)" : {{Integer}},
   "[Duration](#cfn-secretsmanager-rotationschedule-rotationrules-duration)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-secretsmanager-rotationschedule-rotationrules-syntax.yaml"></a>
 
-```
+```yaml
   [AutomaticallyAfterDays](#cfn-secretsmanager-rotationschedule-rotationrules-automaticallyafterdays): {{Integer}}
   [Duration](#cfn-secretsmanager-rotationschedule-rotationrules-duration): {{String}}
   [ScheduleExpression](#cfn-secretsmanager-rotationschedule-rotationrules-scheduleexpression): {{String}}

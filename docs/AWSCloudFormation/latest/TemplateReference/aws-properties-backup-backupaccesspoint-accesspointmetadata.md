@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-backup-backupaccesspoint-accesspointmetadata-syntax.json"></a>
 
-```
+```json
 {
   "[AccessPointInTime](#cfn-backup-backupaccesspoint-accesspointmetadata-accesspointintime)" : {{String}},
   "[S3AccessPointAlias](#cfn-backup-backupaccesspoint-accesspointmetadata-s3accesspointalias)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-backup-backupaccesspoint-accesspointmetadata-syntax.yaml"></a>
 
-```
+```yaml
   [AccessPointInTime](#cfn-backup-backupaccesspoint-accesspointmetadata-accesspointintime): {{String}}
   [S3AccessPointAlias](#cfn-backup-backupaccesspoint-accesspointmetadata-s3accesspointalias): {{String}}
   [S3AccessPointArn](#cfn-backup-backupaccesspoint-accesspointmetadata-s3accesspointarn): {{String}}

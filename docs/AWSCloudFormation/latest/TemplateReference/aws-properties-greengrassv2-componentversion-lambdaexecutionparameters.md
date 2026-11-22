@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrassv2-componentversion-lambdaexecutionparameters-syntax.json"></a>
 
-```
+```json
 {
   "[EnvironmentVariables](#cfn-greengrassv2-componentversion-lambdaexecutionparameters-environmentvariables)" : {{{{{Key}}: {{Value}}, ...}}},
   "[EventSources](#cfn-greengrassv2-componentversion-lambdaexecutionparameters-eventsources)" : {{[ LambdaEventSource, ... ]}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrassv2-componentversion-lambdaexecutionparameters-syntax.yaml"></a>
 
-```
+```yaml
   [EnvironmentVariables](#cfn-greengrassv2-componentversion-lambdaexecutionparameters-environmentvariables): {{
     {{Key}}: {{Value}}}}
   [EventSources](#cfn-greengrassv2-componentversion-lambdaexecutionparameters-eventsources): {{

@@ -62,7 +62,7 @@ When Amazon RDS finishes removing a DB instance from the domain, the `DomainMemb
 
 The following example shows the `DomainMemberships` output for a DB instance that joined a self-managed AD domain.
 
-```
+```JSON
 [
     {
         "Status": "kerberos-enabled",

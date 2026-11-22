@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-verifiedpermissions-identitysource-openidconnectaccesstokenconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Audiences](#cfn-verifiedpermissions-identitysource-openidconnectaccesstokenconfiguration-audiences)" : {{[ String, ... ]}},
   "[PrincipalIdClaim](#cfn-verifiedpermissions-identitysource-openidconnectaccesstokenconfiguration-principalidclaim)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-verifiedpermissions-identitysource-openidconnectaccesstokenconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Audiences](#cfn-verifiedpermissions-identitysource-openidconnectaccesstokenconfiguration-audiences): {{
     - String}}
   [PrincipalIdClaim](#cfn-verifiedpermissions-identitysource-openidconnectaccesstokenconfiguration-principalidclaim): {{String}}

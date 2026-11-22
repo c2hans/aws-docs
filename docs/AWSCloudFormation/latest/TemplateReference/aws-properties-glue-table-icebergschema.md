@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-table-icebergschema-syntax.json"></a>
 
-```
+```json
 {
   "[Fields](#cfn-glue-table-icebergschema-fields)" : {{[ IcebergStructField, ... ]}},
   "[IdentifierFieldIds](#cfn-glue-table-icebergschema-identifierfieldids)" : {{[ Integer, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-table-icebergschema-syntax.yaml"></a>
 
-```
+```yaml
   [Fields](#cfn-glue-table-icebergschema-fields): {{
     - IcebergStructField}}
   [IdentifierFieldIds](#cfn-glue-table-icebergschema-identifierfieldids): {{

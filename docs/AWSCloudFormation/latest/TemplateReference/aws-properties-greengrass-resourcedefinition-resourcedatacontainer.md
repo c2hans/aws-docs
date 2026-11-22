@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrass-resourcedefinition-resourcedatacontainer-syntax.json"></a>
 
-```
+```json
 {
   "[LocalDeviceResourceData](#cfn-greengrass-resourcedefinition-resourcedatacontainer-localdeviceresourcedata)" : {{LocalDeviceResourceData}},
   "[LocalVolumeResourceData](#cfn-greengrass-resourcedefinition-resourcedatacontainer-localvolumeresourcedata)" : {{LocalVolumeResourceData}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrass-resourcedefinition-resourcedatacontainer-syntax.yaml"></a>
 
-```
+```yaml
   [LocalDeviceResourceData](#cfn-greengrass-resourcedefinition-resourcedatacontainer-localdeviceresourcedata): {{
     LocalDeviceResourceData}}
   [LocalVolumeResourceData](#cfn-greengrass-resourcedefinition-resourcedatacontainer-localvolumeresourcedata): {{

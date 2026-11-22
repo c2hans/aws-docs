@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securitylake-datalake-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-securitylake-datalake-tag-key)" : {{String}},
   "[Value](#cfn-securitylake-datalake-tag-value)" : {{String}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securitylake-datalake-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-securitylake-datalake-tag-key): {{String}}
   [Value](#cfn-securitylake-datalake-tag-value): {{String}}
 ```

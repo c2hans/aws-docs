@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-athena-workgroup-s3loggingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-athena-workgroup-s3loggingconfiguration-enabled)" : {{Boolean}},
   "[KmsKey](#cfn-athena-workgroup-s3loggingconfiguration-kmskey)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-athena-workgroup-s3loggingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-athena-workgroup-s3loggingconfiguration-enabled): {{Boolean}}
   [KmsKey](#cfn-athena-workgroup-s3loggingconfiguration-kmskey): {{String}}
   [LogLocation](#cfn-athena-workgroup-s3loggingconfiguration-loglocation): {{String}}

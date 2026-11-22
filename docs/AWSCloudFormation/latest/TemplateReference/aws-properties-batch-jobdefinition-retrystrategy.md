@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-retrystrategy-syntax.json"></a>
 
-```
+```json
 {
   "[Attempts](#cfn-batch-jobdefinition-retrystrategy-attempts)" : {{Integer}},
   "[EvaluateOnExit](#cfn-batch-jobdefinition-retrystrategy-evaluateonexit)" : {{[ EvaluateOnExit, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-retrystrategy-syntax.yaml"></a>
 
-```
+```yaml
   [Attempts](#cfn-batch-jobdefinition-retrystrategy-attempts): {{Integer}}
   [EvaluateOnExit](#cfn-batch-jobdefinition-retrystrategy-evaluateonexit): {{
     - EvaluateOnExit}}
@@ -58,7 +58,7 @@ This example will retry the job attempt up to 3 times if the job status reason i
 #### JSON
 <a name="aws-properties-batch-jobdefinition-retrystrategy--examples--Retrying_jobs--json"></a>
 
-```
+```json
 {
   "Attempts": 3,
   "EvaluateOnExit": [
@@ -81,7 +81,7 @@ This example will retry the job attempt up to 3 times if the job status reason i
 #### YAML
 <a name="aws-properties-batch-jobdefinition-retrystrategy--examples--Retrying_jobs--yaml"></a>
 
-```
+```yaml
 Attempts: 3
 EvaluateOnExit:
   - Action: RETRY

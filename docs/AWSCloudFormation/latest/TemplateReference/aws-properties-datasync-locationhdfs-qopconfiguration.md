@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datasync-locationhdfs-qopconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DataTransferProtection](#cfn-datasync-locationhdfs-qopconfiguration-datatransferprotection)" : {{String}},
   "[RpcProtection](#cfn-datasync-locationhdfs-qopconfiguration-rpcprotection)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datasync-locationhdfs-qopconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DataTransferProtection](#cfn-datasync-locationhdfs-qopconfiguration-datatransferprotection): {{String}}
   [RpcProtection](#cfn-datasync-locationhdfs-qopconfiguration-rpcprotection): {{String}}
 ```

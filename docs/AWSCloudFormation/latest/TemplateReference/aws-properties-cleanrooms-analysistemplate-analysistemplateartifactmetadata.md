@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-analysistemplate-analysistemplateartifactmetadata-syntax.json"></a>
 
-```
+```json
 {
   "[AdditionalArtifactHashes](#cfn-cleanrooms-analysistemplate-analysistemplateartifactmetadata-additionalartifacthashes)" : {{[ Hash, ... ]}},
   "[EntryPointHash](#cfn-cleanrooms-analysistemplate-analysistemplateartifactmetadata-entrypointhash)" : {{Hash}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-analysistemplate-analysistemplateartifactmetadata-syntax.yaml"></a>
 
-```
+```yaml
   [AdditionalArtifactHashes](#cfn-cleanrooms-analysistemplate-analysistemplateartifactmetadata-additionalartifacthashes): {{
     - Hash}}
   [EntryPointHash](#cfn-cleanrooms-analysistemplate-analysistemplateartifactmetadata-entrypointhash): {{

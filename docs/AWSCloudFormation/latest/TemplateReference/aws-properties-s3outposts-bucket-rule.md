@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3outposts-bucket-rule-syntax.json"></a>
 
-```
+```json
 {
   "[AbortIncompleteMultipartUpload](#cfn-s3outposts-bucket-rule-abortincompletemultipartupload)" : {{AbortIncompleteMultipartUpload}},
   "[ExpirationDate](#cfn-s3outposts-bucket-rule-expirationdate)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3outposts-bucket-rule-syntax.yaml"></a>
 
-```
+```yaml
   [AbortIncompleteMultipartUpload](#cfn-s3outposts-bucket-rule-abortincompletemultipartupload): {{
     AbortIncompleteMultipartUpload}}
   [ExpirationDate](#cfn-s3outposts-bucket-rule-expirationdate): {{String}}

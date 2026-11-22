@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-b2bi-transformer-advancedoptions-syntax.json"></a>
 
-```
+```json
 {
   "[X12](#cfn-b2bi-transformer-advancedoptions-x12)" : {{X12AdvancedOptions}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-b2bi-transformer-advancedoptions-syntax.yaml"></a>
 
-```
+```yaml
   [X12](#cfn-b2bi-transformer-advancedoptions-x12): {{
     X12AdvancedOptions}}
 ```

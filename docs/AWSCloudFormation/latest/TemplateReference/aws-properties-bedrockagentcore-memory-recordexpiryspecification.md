@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-memory-recordexpiryspecification-syntax.json"></a>
 
-```
+```json
 {
   "[RecordExpiryDurationDays](#cfn-bedrockagentcore-memory-recordexpiryspecification-recordexpirydurationdays)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-memory-recordexpiryspecification-syntax.yaml"></a>
 
-```
+```yaml
   [RecordExpiryDurationDays](#cfn-bedrockagentcore-memory-recordexpiryspecification-recordexpirydurationdays): {{Integer}}
 ```
 

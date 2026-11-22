@@ -16,15 +16,17 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-storagelens-storagelensconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AccountLevel](#cfn-s3-storagelens-storagelensconfiguration-accountlevel)" : {{AccountLevel}},
   "[AwsOrg](#cfn-s3-storagelens-storagelensconfiguration-awsorg)" : {{AwsOrg}},
+  "[CostAndUsageReportsPublish](#cfn-s3-storagelens-storagelensconfiguration-costandusagereportspublish)" : {{CostAndUsageReportsPublish}},
   "[DataExport](#cfn-s3-storagelens-storagelensconfiguration-dataexport)" : {{DataExport}},
   "[Exclude](#cfn-s3-storagelens-storagelensconfiguration-exclude)" : {{BucketsAndRegions}},
   "[ExpandedPrefixesDataExport](#cfn-s3-storagelens-storagelensconfiguration-expandedprefixesdataexport)" : {{StorageLensExpandedPrefixesDataExport}},
   "[Id](#cfn-s3-storagelens-storagelensconfiguration-id)" : {{String}},
   "[Include](#cfn-s3-storagelens-storagelensconfiguration-include)" : {{BucketsAndRegions}},
+  "[IntAccessTiers](#cfn-s3-storagelens-storagelensconfiguration-intaccesstiers)" : {{IntAccessTiers}},
   "[IsEnabled](#cfn-s3-storagelens-storagelensconfiguration-isenabled)" : {{Boolean}},
   "[PrefixDelimiter](#cfn-s3-storagelens-storagelensconfiguration-prefixdelimiter)" : {{String}},
   "[StorageLensArn](#cfn-s3-storagelens-storagelensconfiguration-storagelensarn)" : {{String}}
@@ -34,11 +36,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-storagelens-storagelensconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AccountLevel](#cfn-s3-storagelens-storagelensconfiguration-accountlevel): {{
     AccountLevel}}
   [AwsOrg](#cfn-s3-storagelens-storagelensconfiguration-awsorg): {{
     AwsOrg}}
+  [CostAndUsageReportsPublish](#cfn-s3-storagelens-storagelensconfiguration-costandusagereportspublish): {{
+    CostAndUsageReportsPublish}}
   [DataExport](#cfn-s3-storagelens-storagelensconfiguration-dataexport): {{
     DataExport}}
   [Exclude](#cfn-s3-storagelens-storagelensconfiguration-exclude): {{
@@ -48,6 +52,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   [Id](#cfn-s3-storagelens-storagelensconfiguration-id): {{String}}
   [Include](#cfn-s3-storagelens-storagelensconfiguration-include): {{
     BucketsAndRegions}}
+  [IntAccessTiers](#cfn-s3-storagelens-storagelensconfiguration-intaccesstiers): {{
+    IntAccessTiers}}
   [IsEnabled](#cfn-s3-storagelens-storagelensconfiguration-isenabled): {{Boolean}}
   [PrefixDelimiter](#cfn-s3-storagelens-storagelensconfiguration-prefixdelimiter): {{String}}
   [StorageLensArn](#cfn-s3-storagelens-storagelensconfiguration-storagelensarn): {{String}}
@@ -66,6 +72,12 @@ This property contains the details of the account-level metrics for Amazon S3 St
 This property contains the details of the AWS Organization for the S3 Storage Lens configuration.
 *Required*: No
 *Type*: [AwsOrg](aws-properties-s3-storagelens-awsorg.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`CostAndUsageReportsPublish`  <a name="cfn-s3-storagelens-storagelensconfiguration-costandusagereportspublish"></a>
+Property description not available.
+*Required*: No
+*Type*: [CostAndUsageReportsPublish](aws-properties-s3-storagelens-costandusagereportspublish.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DataExport`  <a name="cfn-s3-storagelens-storagelensconfiguration-dataexport"></a>
@@ -99,6 +111,12 @@ This property contains the details of the ID of the S3 Storage Lens configuratio
 This property contains the details of the bucket and or Regions included for Amazon S3 Storage Lens configuration.
 *Required*: No
 *Type*: [BucketsAndRegions](aws-properties-s3-storagelens-bucketsandregions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`IntAccessTiers`  <a name="cfn-s3-storagelens-storagelensconfiguration-intaccesstiers"></a>
+Property description not available.
+*Required*: No
+*Type*: [IntAccessTiers](aws-properties-s3-storagelens-intaccesstiers.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `IsEnabled`  <a name="cfn-s3-storagelens-storagelensconfiguration-isenabled"></a>

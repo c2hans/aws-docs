@@ -29,7 +29,7 @@ It uses the `Fn::Join` and `Rev` intrinsic functions to construct the `ResourceI
 ### JSON
 <a name="quickref-autoscaling-example-6.json"></a>
 
-```
+```json
 {
   "Resources" : {
     "ScalableTarget" : {
@@ -88,7 +88,7 @@ It uses the `Fn::Join` and `Rev` intrinsic functions to construct the `ResourceI
 ### YAML
 <a name="quickref-autoscaling-example-6.yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   ScalableTarget:
@@ -135,7 +135,7 @@ This example uses the `Fn::Sub` intrinsic function to construct the `ResourceId`
 ### JSON
 <a name="quickref-autoscaling-example-7.json"></a>
 
-```
+```json
 {
   "Resources" : {
     "ScalableTarget" : {
@@ -174,7 +174,7 @@ This example uses the `Fn::Sub` intrinsic function to construct the `ResourceId`
 ### YAML
 <a name="quickref-autoscaling-example-7.yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   ScalableTarget:
@@ -216,7 +216,7 @@ For more information about how to create an CloudFormation template for DynamoDB
 ### JSON
 <a name="quickref-autoscaling-example-8.json"></a>
 
-```
+```json
 {
   "Resources" : {
     "WriteCapacityScalableTarget" : {
@@ -263,7 +263,7 @@ For more information about how to create an CloudFormation template for DynamoDB
 ### YAML
 <a name="quickref-autoscaling-example-8.yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   WriteCapacityScalableTarget:
@@ -303,7 +303,7 @@ It creates two scaling policies with the `TargetTrackingScaling` policy type. Th
 ### JSON
 <a name="quickref-autoscaling-example-9.json"></a>
 
-```
+```json
 {
   "Resources" : {
     "ECSScalableTarget" : {
@@ -372,7 +372,7 @@ It creates two scaling policies with the `TargetTrackingScaling` policy type. Th
 ### YAML
 <a name="quickref-autoscaling-example-9.yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   ECSScalableTarget:
@@ -427,7 +427,7 @@ The `MaxCapacity` and `MinCapacity` properties of the scalable target and the `T
 ### JSON
 <a name="quickref-autoscaling-example-10.json"></a>
 
-```
+```json
 {
   "Resources" : {
     "ECSScalableTarget" : {
@@ -500,7 +500,7 @@ The `MaxCapacity` and `MinCapacity` properties of the scalable target and the `T
 ### YAML
 <a name="quickref-autoscaling-example-10.yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   ECSScalableTarget:
@@ -550,7 +550,7 @@ For more information about how to create an CloudFormation template for Lambda r
 ### JSON
 <a name="quickref-autoscaling-example-11.json"></a>
 
-```
+```json
 {
   "ScalableTarget" : {
     "Type" : "AWS::ApplicationAutoScaling::ScalableTarget",
@@ -590,7 +590,7 @@ For more information about how to create an CloudFormation template for Lambda r
 ### YAML
 <a name="quickref-autoscaling-example-11.yaml"></a>
 
-```
+```yaml
 ScalableTarget:
   Type: AWS::ApplicationAutoScaling::ScalableTarget
   Properties:
@@ -625,7 +625,7 @@ The Spot Fleet request must have a request type of `maintain`. Automatic scaling
 ### JSON
 <a name="quickref-autoscaling-example-12.json"></a>
 
-```
+```json
 {
   "Resources" : {
     "SpotFleetScalableTarget" : {
@@ -674,7 +674,7 @@ The Spot Fleet request must have a request type of `maintain`. Automatic scaling
 ### YAML
 <a name="quickref-autoscaling-example-12.yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   SpotFleetScalableTarget:

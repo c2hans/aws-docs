@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-deadline-fleet-vcpucountrange-syntax.json"></a>
 
-```
+```json
 {
   "[Max](#cfn-deadline-fleet-vcpucountrange-max)" : {{Integer}},
   "[Min](#cfn-deadline-fleet-vcpucountrange-min)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-deadline-fleet-vcpucountrange-syntax.yaml"></a>
 
-```
+```yaml
   [Max](#cfn-deadline-fleet-vcpucountrange-max): {{Integer}}
   [Min](#cfn-deadline-fleet-vcpucountrange-min): {{Integer}}
 ```

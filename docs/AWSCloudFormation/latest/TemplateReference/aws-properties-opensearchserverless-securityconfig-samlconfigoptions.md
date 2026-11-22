@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchserverless-securityconfig-samlconfigoptions-syntax.json"></a>
 
-```
+```json
 {
   "[GroupAttribute](#cfn-opensearchserverless-securityconfig-samlconfigoptions-groupattribute)" : {{String}},
   "[Metadata](#cfn-opensearchserverless-securityconfig-samlconfigoptions-metadata)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchserverless-securityconfig-samlconfigoptions-syntax.yaml"></a>
 
-```
+```yaml
   [GroupAttribute](#cfn-opensearchserverless-securityconfig-samlconfigoptions-groupattribute): {{String}}
   [Metadata](#cfn-opensearchserverless-securityconfig-samlconfigoptions-metadata): {{String}}
   [OpenSearchServerlessEntityId](#cfn-opensearchserverless-securityconfig-samlconfigoptions-opensearchserverlessentityid): {{String}}

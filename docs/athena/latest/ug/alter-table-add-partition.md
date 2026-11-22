@@ -13,7 +13,7 @@ For information about the resource-level permissions required in IAM policies (i
 ## Synopsis
 <a name="synopsis"></a>
 
-```
+```sql
 ALTER TABLE table_name ADD [IF NOT EXISTS]
   PARTITION
   (partition_col1_name = partition_col1_value
@@ -47,7 +47,7 @@ Specifies the directory in which to store the partition defined by the preceding
 
 Amazon Athena does not impose a specific limit on the number of partitions you can add in a single `ALTER TABLE ADD PARTITION` DDL statement. However, if you need to add a significant number of partitions, consider breaking the operation into smaller batches to avoid potential performance issues. The following example uses successive commands to add partitions individually and uses `IF NOT EXISTS` to avoid adding duplicates.
 
-```
+```sql
 ALTER TABLE {{table_name}} ADD IF NOT EXISTS PARTITION (ds='2023-01-01')
 ALTER TABLE {{table_name}} ADD IF NOT EXISTS PARTITION (ds='2023-01-02')
 ALTER TABLE {{table_name}} ADD IF NOT EXISTS PARTITION (ds='2023-01-03')
@@ -64,14 +64,14 @@ For additional considerations regarding working with partitions in Athena, see [
 
 The following example adds a single partition to a table for Hive-style partitioned data.
 
-```
+```sql
 ALTER TABLE orders ADD
   PARTITION (dt = '2016-05-14', country = 'IN');
 ```
 
 The following example adds multiple partitions to a table for Hive-style partitioned data.
 
-```
+```sql
 ALTER TABLE orders ADD
   PARTITION (dt = '2016-05-31', country = 'IN')
   PARTITION (dt = '2016-06-01', country = 'IN');
@@ -79,7 +79,7 @@ ALTER TABLE orders ADD
 
 When the table is not for Hive-style partitioned data, the `LOCATION` clause is required and should be the full Amazon S3 URI for the prefix that contains the partition's data.
 
-```
+```sql
 ALTER TABLE orders ADD
   PARTITION (dt = '2016-05-31', country = 'IN') LOCATION 's3://amzn-s3-demo-bucket/path/to/INDIA_31_May_2016/'
   PARTITION (dt = '2016-06-01', country = 'IN') LOCATION 's3://amzn-s3-demo-bucket/path/to/INDIA_01_June_2016/';
@@ -87,7 +87,7 @@ ALTER TABLE orders ADD
 
 To ignore errors when the partition already exists, use the `IF NOT EXISTS` clause, as in the following example.
 
-```
+```sql
 ALTER TABLE orders ADD IF NOT EXISTS
   PARTITION (dt = '2016-05-14', country = 'IN');
 ```
@@ -99,6 +99,6 @@ If you run an `ALTER TABLE ADD PARTITION` statement and mistakenly specify a par
 
 To prevent this from happening, use the `ADD IF NOT EXISTS` syntax in your `ALTER TABLE ADD PARTITION` statement, as in the following example.
 
-```
+```sql
 ALTER TABLE table_name ADD IF NOT EXISTS PARTITION […]
 ```

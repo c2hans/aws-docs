@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apigatewayv2-integration-tlsconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ServerNameToVerify](#cfn-apigatewayv2-integration-tlsconfig-servernametoverify)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apigatewayv2-integration-tlsconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ServerNameToVerify](#cfn-apigatewayv2-integration-tlsconfig-servernametoverify): {{String}}
 ```
 

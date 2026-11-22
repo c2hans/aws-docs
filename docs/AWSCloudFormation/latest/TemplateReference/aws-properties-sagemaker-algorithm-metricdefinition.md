@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-algorithm-metricdefinition-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-sagemaker-algorithm-metricdefinition-name)" : {{String}},
   "[Regex](#cfn-sagemaker-algorithm-metricdefinition-regex)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-algorithm-metricdefinition-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-sagemaker-algorithm-metricdefinition-name): {{String}}
   [Regex](#cfn-sagemaker-algorithm-metricdefinition-regex): {{String}}
 ```

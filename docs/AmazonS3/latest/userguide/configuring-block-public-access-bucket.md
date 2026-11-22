@@ -35,7 +35,7 @@ These bucket-level operations are not restricted by organization-level policies.
 ------
 #### [ Java ]
 
-```
+```java
 AmazonS3 client = AmazonS3ClientBuilder.standard()
 	  .withCredentials({{<credentials>}})
 	  .build();

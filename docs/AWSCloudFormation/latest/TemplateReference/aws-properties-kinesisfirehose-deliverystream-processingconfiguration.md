@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-processingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-kinesisfirehose-deliverystream-processingconfiguration-enabled)" : {{Boolean}},
   "[Processors](#cfn-kinesisfirehose-deliverystream-processingconfiguration-processors)" : {{[ Processor, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-processingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-kinesisfirehose-deliverystream-processingconfiguration-enabled): {{Boolean}}
   [Processors](#cfn-kinesisfirehose-deliverystream-processingconfiguration-processors): {{
     - Processor}}

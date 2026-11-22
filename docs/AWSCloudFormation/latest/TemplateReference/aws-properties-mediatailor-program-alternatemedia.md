@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-program-alternatemedia-syntax.json"></a>
 
-```
+```json
 {
   "[AdBreaks](#cfn-mediatailor-program-alternatemedia-adbreaks)" : {{[ AdBreak, ... ]}},
   "[ClipRange](#cfn-mediatailor-program-alternatemedia-cliprange)" : {{ClipRange}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-program-alternatemedia-syntax.yaml"></a>
 
-```
+```yaml
   [AdBreaks](#cfn-mediatailor-program-alternatemedia-adbreaks): {{
     - AdBreak}}
   [ClipRange](#cfn-mediatailor-program-alternatemedia-cliprange): {{

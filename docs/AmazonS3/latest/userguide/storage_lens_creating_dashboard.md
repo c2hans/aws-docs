@@ -162,7 +162,7 @@ aws s3control put-storage-lens-configuration --account-id={{222222222222}} --con
 **Example – Create and update an Amazon S3 Storage Lens configuration**
 The following example creates and updates an Amazon S3 Storage Lens configuration in SDK for Java:
 
-```
+```Java
 package aws.example.s3control;
 
 import software.amazon.awssdk.awscore.exception.AwsServiceException;

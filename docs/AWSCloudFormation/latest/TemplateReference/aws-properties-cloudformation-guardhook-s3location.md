@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudformation-guardhook-s3location-syntax.json"></a>
 
-```
+```json
 {
   "[Uri](#cfn-cloudformation-guardhook-s3location-uri)" : {{String}},
   "[VersionId](#cfn-cloudformation-guardhook-s3location-versionid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudformation-guardhook-s3location-syntax.yaml"></a>
 
-```
+```yaml
   [Uri](#cfn-cloudformation-guardhook-s3location-uri): {{String}}
   [VersionId](#cfn-cloudformation-guardhook-s3location-versionid): {{String}}
 ```

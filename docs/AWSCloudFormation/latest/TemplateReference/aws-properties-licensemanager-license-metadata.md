@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-licensemanager-license-metadata-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-licensemanager-license-metadata-name)" : {{String}},
   "[Value](#cfn-licensemanager-license-metadata-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-licensemanager-license-metadata-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-licensemanager-license-metadata-name): {{String}}
   [Value](#cfn-licensemanager-license-metadata-value): {{String}}
 ```

@@ -20,7 +20,7 @@ The following request stores the image, `my-image.jpg`, in the `myBucket` bucket
 
 **Example**
 
-```
+```http
 PUT /my-image.jpg HTTP/1.1
 Host: myBucket.s3.<Region>.amazonaws.com (http://amazonaws.com/)
 Date: Wed, 1 Sep 2021 17:50:00 GMT
@@ -40,7 +40,7 @@ You can specify S3 Lifecycle configurations at the bucket or prefix level. In th
 
 **Example**
 
-```
+```xml
 <LifecycleConfiguration>
   <Rule>
     <ID>ExampleRule</ID>
@@ -111,7 +111,7 @@ The following example puts an S3 Intelligent-Tiering configuration to the specif
 
 **Example [`put-bucket-intelligent-tiering-configuration`](https://docs.aws.amazon.com/cli/latest/reference/s3api/put-bucket-intelligent-tiering-configuration.html)**
 
-```
+```json
 {
   "Id": "string",
   "Filter": {
@@ -142,7 +142,7 @@ The following example puts an S3 Intelligent-Tiering configuration to the specif
 }
 ```
 
-```
+```xml
 PUT /?intelligent-tiering&id=Id HTTP/1.1
 Host: Bucket.s3.amazonaws.com
 <?xml version="1.0" encoding="UTF-8"?>

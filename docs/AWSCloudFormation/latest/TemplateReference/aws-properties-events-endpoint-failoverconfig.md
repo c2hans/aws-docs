@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-events-endpoint-failoverconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Primary](#cfn-events-endpoint-failoverconfig-primary)" : {{Primary}},
   "[Secondary](#cfn-events-endpoint-failoverconfig-secondary)" : {{Secondary}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-events-endpoint-failoverconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Primary](#cfn-events-endpoint-failoverconfig-primary): {{
     Primary}}
   [Secondary](#cfn-events-endpoint-failoverconfig-secondary): {{

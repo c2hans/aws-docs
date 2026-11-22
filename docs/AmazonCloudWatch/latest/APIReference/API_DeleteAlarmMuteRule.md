@@ -57,7 +57,7 @@ Delete a specific alarm mute rule. This operation does not return any output on 
 #### Sample Request
 <a name="API_DeleteAlarmMuteRule_Example_1_Request"></a>
 
-```
+```bash
 aws cloudwatch delete-alarm-mute-rule \
 	--alarm-mute-rule-name "DailyMaintenanceWindow"
 ```

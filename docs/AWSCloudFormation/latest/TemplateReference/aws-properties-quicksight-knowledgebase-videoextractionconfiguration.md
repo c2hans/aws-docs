@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-knowledgebase-videoextractionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[VideoExtractionStatus](#cfn-quicksight-knowledgebase-videoextractionconfiguration-videoextractionstatus)" : {{String}},
   "[VideoExtractionType](#cfn-quicksight-knowledgebase-videoextractionconfiguration-videoextractiontype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-knowledgebase-videoextractionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [VideoExtractionStatus](#cfn-quicksight-knowledgebase-videoextractionconfiguration-videoextractionstatus): {{String}}
   [VideoExtractionType](#cfn-quicksight-knowledgebase-videoextractionconfiguration-videoextractiontype): {{String}}
 ```

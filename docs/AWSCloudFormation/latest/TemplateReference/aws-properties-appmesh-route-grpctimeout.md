@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-route-grpctimeout-syntax.json"></a>
 
-```
+```json
 {
   "[Idle](#cfn-appmesh-route-grpctimeout-idle)" : {{Duration}},
   "[PerRequest](#cfn-appmesh-route-grpctimeout-perrequest)" : {{Duration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-route-grpctimeout-syntax.yaml"></a>
 
-```
+```yaml
   [Idle](#cfn-appmesh-route-grpctimeout-idle): {{
     Duration}}
   [PerRequest](#cfn-appmesh-route-grpctimeout-perrequest): {{

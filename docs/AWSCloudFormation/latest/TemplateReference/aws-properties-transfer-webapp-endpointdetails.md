@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-transfer-webapp-endpointdetails-syntax.json"></a>
 
-```
+```json
 {
   "[Vpc](#cfn-transfer-webapp-endpointdetails-vpc)" : {{Vpc}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-transfer-webapp-endpointdetails-syntax.yaml"></a>
 
-```
+```yaml
   [Vpc](#cfn-transfer-webapp-endpointdetails-vpc): {{
     Vpc}}
 ```

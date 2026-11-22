@@ -23,7 +23,7 @@ The following is an example policy that grants permissions for three Amazon Glac
 
 ****
 
-```
+```json
       {
          "Version":"2012-10-17",
          "Statement": [
@@ -79,7 +79,7 @@ The Amazon Glacier console provides an integrated environment for you to create 
 
 ****
 
-```
+```json
          {
                "Version":"2012-10-17",
                "Statement": [
@@ -114,7 +114,7 @@ For more information, see [Adding permissions to a user](https://docs.aws.amazon
 
 This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

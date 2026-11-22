@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ivs-encoderconfiguration-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-ivs-encoderconfiguration-tag-key)" : {{String}},
   "[Value](#cfn-ivs-encoderconfiguration-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ivs-encoderconfiguration-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-ivs-encoderconfiguration-tag-key): {{String}}
   [Value](#cfn-ivs-encoderconfiguration-tag-value): {{String}}
 ```

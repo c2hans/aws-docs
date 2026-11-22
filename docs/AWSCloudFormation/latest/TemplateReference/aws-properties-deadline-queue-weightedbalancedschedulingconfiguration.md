@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-deadline-queue-weightedbalancedschedulingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ErrorWeight](#cfn-deadline-queue-weightedbalancedschedulingconfiguration-errorweight)" : {{Number}},
   "[MaxPriorityOverride](#cfn-deadline-queue-weightedbalancedschedulingconfiguration-maxpriorityoverride)" : {{SchedulingMaxPriorityOverride}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-deadline-queue-weightedbalancedschedulingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ErrorWeight](#cfn-deadline-queue-weightedbalancedschedulingconfiguration-errorweight): {{Number}}
   [MaxPriorityOverride](#cfn-deadline-queue-weightedbalancedschedulingconfiguration-maxpriorityoverride): {{
     SchedulingMaxPriorityOverride}}

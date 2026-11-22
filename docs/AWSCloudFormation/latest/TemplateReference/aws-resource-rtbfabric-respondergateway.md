@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-rtbfabric-respondergateway-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RTBFabric::ResponderGateway",
   "Properties" : {
@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-rtbfabric-respondergateway-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RTBFabric::ResponderGateway
 Properties:
   [AcmCertificateArn](#cfn-rtbfabric-respondergateway-acmcertificatearn): {{String}}

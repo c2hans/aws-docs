@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-vpclattice-servicenetworkserviceassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::VpcLattice::ServiceNetworkServiceAssociation",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-vpclattice-servicenetworkserviceassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::VpcLattice::ServiceNetworkServiceAssociation
 Properties:
   [DnsEntry](#cfn-vpclattice-servicenetworkserviceassociation-dnsentry): {{

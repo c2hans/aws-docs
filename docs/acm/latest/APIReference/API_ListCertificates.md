@@ -9,6 +9,9 @@ Retrieves a list of certificate ARNs and domain names. You can request that only
 **Note**
 By default, this action does not return certificates with a `CertificateKeyPairOrigin` of `ACME`. To include ACME certificates, specify `ACME` in the `CertificateKeyPairOrigins` filter.
 
+**Note**
+By default, this action does not return certificates with a `RootHierarchyType` of `N2_AMAZON_MANAGED` or `N2_SFG2_AMAZON_MANAGED`. To list only Amazon N2 certificates, specify one or both of these values in the `RootHierarchyTypes` filter.
+
 ## Request Syntax
 <a name="API_ListCertificates_RequestSyntax"></a>
 
@@ -25,6 +28,7 @@ By default, this action does not return certificates with a `CertificateKeyPairO
    },
    "MaxItems": {{number}},
    "NextToken": "{{string}}",
+   "RootHierarchyTypes": [ "{{string}}" ],
    "SortBy": "{{string}}",
    "SortOrder": "{{string}}"
 }
@@ -71,6 +75,13 @@ Length Constraints: Minimum length of 1. Maximum length of 10000.
 Pattern: `[\u0009\u000A\u000D\u0020-\u00FF]*`
 Required: No
 
+ ** [RootHierarchyTypes](#API_ListCertificates_RequestSyntax) **   <a name="ACM-ListCertificates-request-RootHierarchyTypes"></a>
+Filter the certificate list by root hierarchy type. Specify one or more `RootHierarchyType` values. By default, this action does not return certificates with a `RootHierarchyType` of `N2_AMAZON_MANAGED` or `N2_SFG2_AMAZON_MANAGED`. To list only Amazon N2 certificates, specify one or both of these values in the `RootHierarchyTypes` filter.
+Type: Array of strings
+Array Members: Minimum number of 1 item. Maximum number of 5 items.
+Valid Values: `N2_AMAZON_MANAGED | N2_SFG2_AMAZON_MANAGED`
+Required: No
+
  ** [SortBy](#API_ListCertificates_RequestSyntax) **   <a name="ACM-ListCertificates-request-SortBy"></a>
 Specifies the field to sort results by. If you specify `SortBy`, you must also specify `SortOrder`.
 Type: String
@@ -92,6 +103,7 @@ Required: No
       {
          "CertificateArn": "string",
          "CertificateKeyPairOrigin": "string",
+         "CertificateUsage": "string",
          "CreatedAt": number,
          "DomainName": "string",
          "Exported": boolean,
@@ -108,6 +120,7 @@ Required: No
          "NotBefore": number,
          "RenewalEligibility": "string",
          "RevokedAt": number,
+         "RootHierarchyType": "string",
          "Status": "string",
          "SubjectAlternativeNameSummaries": [ "string" ],
          "Type": "string"

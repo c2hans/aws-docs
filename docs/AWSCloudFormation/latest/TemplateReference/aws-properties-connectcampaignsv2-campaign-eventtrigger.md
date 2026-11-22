@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connectcampaignsv2-campaign-eventtrigger-syntax.json"></a>
 
-```
+```json
 {
   "[CustomerProfilesDomainArn](#cfn-connectcampaignsv2-campaign-eventtrigger-customerprofilesdomainarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connectcampaignsv2-campaign-eventtrigger-syntax.yaml"></a>
 
-```
+```yaml
   [CustomerProfilesDomainArn](#cfn-connectcampaignsv2-campaign-eventtrigger-customerprofilesdomainarn): {{String}}
 ```
 

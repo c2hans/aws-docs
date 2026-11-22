@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kafkaconnect-connector-apachekafkacluster-syntax.json"></a>
 
-```
+```json
 {
   "[BootstrapServers](#cfn-kafkaconnect-connector-apachekafkacluster-bootstrapservers)" : {{String}},
   "[Vpc](#cfn-kafkaconnect-connector-apachekafkacluster-vpc)" : {{Vpc}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kafkaconnect-connector-apachekafkacluster-syntax.yaml"></a>
 
-```
+```yaml
   [BootstrapServers](#cfn-kafkaconnect-connector-apachekafkacluster-bootstrapservers): {{String}}
   [Vpc](#cfn-kafkaconnect-connector-apachekafkacluster-vpc): {{
     Vpc}}

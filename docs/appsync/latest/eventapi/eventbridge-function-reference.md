@@ -11,7 +11,7 @@ The AWS AppSync integration for Amazon EventBridge data source allows you to sen
 
 The request handler allows you to send multiple custom events to an EventBridge event bus:
 
-```
+```sh
 export const onPublish = {
   request(ctx) {
     return {

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-datazone-environmentactions-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DataZone::EnvironmentActions",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-datazone-environmentactions-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DataZone::EnvironmentActions
 Properties:
   [Description](#cfn-datazone-environmentactions-description): {{String}}

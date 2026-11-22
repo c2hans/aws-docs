@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcaconnectorad-connector-vpcinformation-syntax.json"></a>
 
-```
+```json
 {
   "[IpAddressType](#cfn-pcaconnectorad-connector-vpcinformation-ipaddresstype)" : {{String}},
   "[SecurityGroupIds](#cfn-pcaconnectorad-connector-vpcinformation-securitygroupids)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcaconnectorad-connector-vpcinformation-syntax.yaml"></a>
 
-```
+```yaml
   [IpAddressType](#cfn-pcaconnectorad-connector-vpcinformation-ipaddresstype): {{String}}
   [SecurityGroupIds](#cfn-pcaconnectorad-connector-vpcinformation-securitygroupids): {{
     - String}}

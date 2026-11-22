@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ecs-gateway-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ECS::Gateway",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ecs-gateway-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ECS::Gateway
 Properties:
   [Configuration](#cfn-ecs-gateway-configuration): {{

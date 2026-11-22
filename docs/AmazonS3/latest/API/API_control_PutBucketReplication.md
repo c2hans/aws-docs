@@ -180,7 +180,7 @@ Filtering by using the `Filter` element is supported in the latest XML configura
 
 For more examples of S3 replication on Outposts configuration, see [Creating replication rules on Outposts](https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication-between-outposts.html) in the *Amazon S3 User Guide*.
 
-```
+```HTTP
 PUT /v20180820/bucket/example-outpost-bucket/replication HTTP/1.1
 Host:s3-outposts.<Region>.amazonaws.com
 x-amz-account-id: example-account-id

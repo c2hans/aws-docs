@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-input-smpte2110receivergroupsdpsettings-syntax.json"></a>
 
-```
+```json
 {
   "[AncillarySdps](#cfn-medialive-input-smpte2110receivergroupsdpsettings-ancillarysdps)" : {{[ InputSdpLocation, ... ]}},
   "[AudioSdps](#cfn-medialive-input-smpte2110receivergroupsdpsettings-audiosdps)" : {{[ InputSdpLocation, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-input-smpte2110receivergroupsdpsettings-syntax.yaml"></a>
 
-```
+```yaml
   [AncillarySdps](#cfn-medialive-input-smpte2110receivergroupsdpsettings-ancillarysdps): {{
     - InputSdpLocation}}
   [AudioSdps](#cfn-medialive-input-smpte2110receivergroupsdpsettings-audiosdps): {{

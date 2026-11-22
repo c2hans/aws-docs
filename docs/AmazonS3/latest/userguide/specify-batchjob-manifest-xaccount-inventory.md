@@ -52,7 +52,7 @@ The following console procedure contains the high-level steps for setting up per
 
    Then choose **Create policy** to attach the following policy to the role. To use this policy, replace the {{`user input placeholders`}} with your own information.
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -90,7 +90,7 @@ The following console procedure contains the high-level steps for setting up per
 
    The following is an example of the bucket policy for the source account. To use this policy, replace the {{`user input placeholders`}} with your own information.
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

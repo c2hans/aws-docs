@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-endpoint-deploymentconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AutoRollbackConfiguration](#cfn-sagemaker-endpoint-deploymentconfig-autorollbackconfiguration)" : {{AutoRollbackConfig}},
   "[BlueGreenUpdatePolicy](#cfn-sagemaker-endpoint-deploymentconfig-bluegreenupdatepolicy)" : {{BlueGreenUpdatePolicy}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-endpoint-deploymentconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AutoRollbackConfiguration](#cfn-sagemaker-endpoint-deploymentconfig-autorollbackconfiguration): {{
     AutoRollbackConfig}}
   [BlueGreenUpdatePolicy](#cfn-sagemaker-endpoint-deploymentconfig-bluegreenupdatepolicy): {{

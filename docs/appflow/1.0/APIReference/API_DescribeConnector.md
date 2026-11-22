@@ -231,7 +231,7 @@ This example shows a sample request for the `DescribeConnector` API and a sample
 #### Sample Request
 <a name="API_DescribeConnector_Example_1_Request"></a>
 
-```
+```json
 {
   "connectorType": "connectorType",
   "connectorLabel": "connectorLabel"
@@ -241,7 +241,7 @@ This example shows a sample request for the `DescribeConnector` API and a sample
 #### Sample Response
 <a name="API_DescribeConnector_Example_1_Response"></a>
 
-```
+```json
 {
   "connectorConfiguration":
   {

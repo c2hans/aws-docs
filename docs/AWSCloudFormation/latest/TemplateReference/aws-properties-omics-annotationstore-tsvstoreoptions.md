@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-omics-annotationstore-tsvstoreoptions-syntax.json"></a>
 
-```
+```json
 {
   "[AnnotationType](#cfn-omics-annotationstore-tsvstoreoptions-annotationtype)" : {{String}},
   "[FormatToHeader](#cfn-omics-annotationstore-tsvstoreoptions-formattoheader)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-omics-annotationstore-tsvstoreoptions-syntax.yaml"></a>
 
-```
+```yaml
   [AnnotationType](#cfn-omics-annotationstore-tsvstoreoptions-annotationtype): {{String}}
   [FormatToHeader](#cfn-omics-annotationstore-tsvstoreoptions-formattoheader): {{
     {{Key}}: {{Value}}}}

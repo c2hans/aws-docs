@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-input-srtsettings-syntax.json"></a>
 
-```
+```json
 {
   "[SrtCallerSources](#cfn-medialive-input-srtsettings-srtcallersources)" : {{[ SrtCallerSource, ... ]}},
   "[SrtListenerSettings](#cfn-medialive-input-srtsettings-srtlistenersettings)" : {{SrtListenerSettings}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-input-srtsettings-syntax.yaml"></a>
 
-```
+```yaml
   [SrtCallerSources](#cfn-medialive-input-srtsettings-srtcallersources): {{
     - SrtCallerSource}}
   [SrtListenerSettings](#cfn-medialive-input-srtsettings-srtlistenersettings): {{

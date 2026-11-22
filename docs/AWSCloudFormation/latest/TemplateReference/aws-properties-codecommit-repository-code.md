@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codecommit-repository-code-syntax.json"></a>
 
-```
+```json
 {
   "[BranchName](#cfn-codecommit-repository-code-branchname)" : {{String}},
   "[S3](#cfn-codecommit-repository-code-s3)" : {{S3}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codecommit-repository-code-syntax.yaml"></a>
 
-```
+```yaml
   [BranchName](#cfn-codecommit-repository-code-branchname): {{String}}
   [S3](#cfn-codecommit-repository-code-s3): {{
     S3}}

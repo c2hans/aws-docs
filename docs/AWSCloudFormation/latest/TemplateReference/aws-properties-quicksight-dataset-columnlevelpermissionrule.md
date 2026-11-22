@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-columnlevelpermissionrule-syntax.json"></a>
 
-```
+```json
 {
   "[ColumnNames](#cfn-quicksight-dataset-columnlevelpermissionrule-columnnames)" : {{[ String, ... ]}},
   "[Principals](#cfn-quicksight-dataset-columnlevelpermissionrule-principals)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-columnlevelpermissionrule-syntax.yaml"></a>
 
-```
+```yaml
   [ColumnNames](#cfn-quicksight-dataset-columnlevelpermissionrule-columnnames): {{
     - String}}
   [Principals](#cfn-quicksight-dataset-columnlevelpermissionrule-principals): {{

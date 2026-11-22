@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-pinpoint-smstemplate-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Pinpoint::SmsTemplate",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-pinpoint-smstemplate-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Pinpoint::SmsTemplate
 Properties:
   [Body](#cfn-pinpoint-smstemplate-body): {{String}}

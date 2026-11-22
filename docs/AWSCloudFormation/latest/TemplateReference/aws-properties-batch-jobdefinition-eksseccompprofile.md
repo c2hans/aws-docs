@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-eksseccompprofile-syntax.json"></a>
 
-```
+```json
 {
   "[LocalhostProfile](#cfn-batch-jobdefinition-eksseccompprofile-localhostprofile)" : {{String}},
   "[Type](#cfn-batch-jobdefinition-eksseccompprofile-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-eksseccompprofile-syntax.yaml"></a>
 
-```
+```yaml
   [LocalhostProfile](#cfn-batch-jobdefinition-eksseccompprofile-localhostprofile): {{String}}
   [Type](#cfn-batch-jobdefinition-eksseccompprofile-type): {{String}}
 ```

@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3tables-table-schemav2field-syntax.json"></a>
 
-```
+```json
 {
   "[Doc](#cfn-s3tables-table-schemav2field-doc)" : {{String}},
   "[Id](#cfn-s3tables-table-schemav2field-id)" : {{Integer}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3tables-table-schemav2field-syntax.yaml"></a>
 
-```
+```yaml
   [Doc](#cfn-s3tables-table-schemav2field-doc): {{String}}
   [Id](#cfn-s3tables-table-schemav2field-id): {{Integer}}
   [Name](#cfn-s3tables-table-schemav2field-name): {{String}}

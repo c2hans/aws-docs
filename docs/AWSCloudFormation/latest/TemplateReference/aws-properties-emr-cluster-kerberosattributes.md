@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emr-cluster-kerberosattributes-syntax.json"></a>
 
-```
+```json
 {
   "[ADDomainJoinPassword](#cfn-emr-cluster-kerberosattributes-addomainjoinpassword)" : {{String}},
   "[ADDomainJoinUser](#cfn-emr-cluster-kerberosattributes-addomainjoinuser)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emr-cluster-kerberosattributes-syntax.yaml"></a>
 
-```
+```yaml
   [ADDomainJoinPassword](#cfn-emr-cluster-kerberosattributes-addomainjoinpassword): {{String}}
   [ADDomainJoinUser](#cfn-emr-cluster-kerberosattributes-addomainjoinuser): {{String}}
   [CrossRealmTrustPrincipalPassword](#cfn-emr-cluster-kerberosattributes-crossrealmtrustprincipalpassword): {{String}}

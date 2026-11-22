@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-bordersettings-syntax.json"></a>
 
-```
+```json
 {
   "[BorderColor](#cfn-quicksight-analysis-bordersettings-bordercolor)" : {{String}},
   "[BorderVisibility](#cfn-quicksight-analysis-bordersettings-bordervisibility)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-bordersettings-syntax.yaml"></a>
 
-```
+```yaml
   [BorderColor](#cfn-quicksight-analysis-bordersettings-bordercolor): {{String}}
   [BorderVisibility](#cfn-quicksight-analysis-bordersettings-bordervisibility): {{String}}
   [BorderWidth](#cfn-quicksight-analysis-bordersettings-borderwidth): {{String}}

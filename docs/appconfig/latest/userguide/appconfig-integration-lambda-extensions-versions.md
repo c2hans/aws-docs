@@ -88,7 +88,7 @@ To retrieve the latest ARN versions, run the following commands.
 
 **x86\_64**
 
-```
+```bash
 aws ssm get-parameter \
     --name "/aws/service/aws-appconfig/lambda-extension/x86/latest" \
     --query "Parameter.Value" \
@@ -97,7 +97,7 @@ aws ssm get-parameter \
 
 **arm64**
 
-```
+```bash
 aws ssm get-parameter \
     --name "/aws/service/aws-appconfig/lambda-extension/arm64/latest" \
     --query "Parameter.Value" \
@@ -111,7 +111,7 @@ When you deploy Lambda functions with CloudFormation, you can use the `{{resolve
 
 **x86\_64**
 
-```
+```yaml
 Resources:
   MyFunction:
     Type: AWS::Lambda::Function
@@ -132,7 +132,7 @@ Resources:
 
 **arm64**
 
-```
+```yaml
 Resources:
   MyFunction:
     Type: AWS::Lambda::Function

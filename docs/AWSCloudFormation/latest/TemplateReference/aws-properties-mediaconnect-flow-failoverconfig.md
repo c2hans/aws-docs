@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-flow-failoverconfig-syntax.json"></a>
 
-```
+```json
 {
   "[FailoverMode](#cfn-mediaconnect-flow-failoverconfig-failovermode)" : {{String}},
   "[RecoveryWindow](#cfn-mediaconnect-flow-failoverconfig-recoverywindow)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-flow-failoverconfig-syntax.yaml"></a>
 
-```
+```yaml
   [FailoverMode](#cfn-mediaconnect-flow-failoverconfig-failovermode): {{String}}
   [RecoveryWindow](#cfn-mediaconnect-flow-failoverconfig-recoverywindow): {{Integer}}
   [SourcePriority](#cfn-mediaconnect-flow-failoverconfig-sourcepriority): {{

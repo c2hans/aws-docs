@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-cluster-provider-syntax.json"></a>
 
-```
+```json
 {
   "[KeyArn](#cfn-eks-cluster-provider-keyarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-cluster-provider-syntax.yaml"></a>
 
-```
+```yaml
   [KeyArn](#cfn-eks-cluster-provider-keyarn): {{String}}
 ```
 

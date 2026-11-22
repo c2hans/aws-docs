@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-containergroupdefinition-containerhealthcheck-syntax.json"></a>
 
-```
+```json
 {
   "[Command](#cfn-gamelift-containergroupdefinition-containerhealthcheck-command)" : {{[ String, ... ]}},
   "[Interval](#cfn-gamelift-containergroupdefinition-containerhealthcheck-interval)" : {{Integer}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-containergroupdefinition-containerhealthcheck-syntax.yaml"></a>
 
-```
+```yaml
   [Command](#cfn-gamelift-containergroupdefinition-containerhealthcheck-command): {{
     - String}}
   [Interval](#cfn-gamelift-containergroupdefinition-containerhealthcheck-interval): {{Integer}}

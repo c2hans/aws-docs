@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-inspectorv2-codesecurityscanconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::InspectorV2::CodeSecurityScanConfiguration",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-inspectorv2-codesecurityscanconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::InspectorV2::CodeSecurityScanConfiguration
 Properties:
   [Configuration](#cfn-inspectorv2-codesecurityscanconfiguration-configuration): {{

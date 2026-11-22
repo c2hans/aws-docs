@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-timestream-table-partitionkey-syntax.json"></a>
 
-```
+```json
 {
   "[EnforcementInRecord](#cfn-timestream-table-partitionkey-enforcementinrecord)" : {{String}},
   "[Name](#cfn-timestream-table-partitionkey-name)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-timestream-table-partitionkey-syntax.yaml"></a>
 
-```
+```yaml
   [EnforcementInRecord](#cfn-timestream-table-partitionkey-enforcementinrecord): {{String}}
   [Name](#cfn-timestream-table-partitionkey-name): {{String}}
   [Type](#cfn-timestream-table-partitionkey-type): {{String}}

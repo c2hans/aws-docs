@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-datasource-confluencesourceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AuthType](#cfn-bedrock-datasource-confluencesourceconfiguration-authtype)" : {{String}},
   "[CredentialsSecretArn](#cfn-bedrock-datasource-confluencesourceconfiguration-credentialssecretarn)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-datasource-confluencesourceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AuthType](#cfn-bedrock-datasource-confluencesourceconfiguration-authtype): {{String}}
   [CredentialsSecretArn](#cfn-bedrock-datasource-confluencesourceconfiguration-credentialssecretarn): {{String}}
   [HostType](#cfn-bedrock-datasource-confluencesourceconfiguration-hosttype): {{String}}

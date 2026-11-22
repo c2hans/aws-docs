@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticache-serverlesscache-ecpupersecond-syntax.json"></a>
 
-```
+```json
 {
   "[Maximum](#cfn-elasticache-serverlesscache-ecpupersecond-maximum)" : {{Integer}},
   "[Minimum](#cfn-elasticache-serverlesscache-ecpupersecond-minimum)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticache-serverlesscache-ecpupersecond-syntax.yaml"></a>
 
-```
+```yaml
   [Maximum](#cfn-elasticache-serverlesscache-ecpupersecond-maximum): {{Integer}}
   [Minimum](#cfn-elasticache-serverlesscache-ecpupersecond-minimum): {{Integer}}
 ```

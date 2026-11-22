@@ -11,7 +11,7 @@ The permission policy examples in this topic demonstrate required allowed action
 **Example – Allow an IAM principal to run and return queries that contain an Athena UDF statement**
 The following identity-based permissions policy allows actions that a user or other IAM principal requires to run queries that use Athena UDF statements.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -58,7 +58,7 @@ The following identity-based permissions policy allows actions that a user or ot
 
 **Example – Allow an IAM principal to create an Athena UDF**
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

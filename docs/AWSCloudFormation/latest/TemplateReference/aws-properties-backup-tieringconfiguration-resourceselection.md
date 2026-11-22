@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-backup-tieringconfiguration-resourceselection-syntax.json"></a>
 
-```
+```json
 {
   "[Resources](#cfn-backup-tieringconfiguration-resourceselection-resources)" : {{[ String, ... ]}},
   "[ResourceType](#cfn-backup-tieringconfiguration-resourceselection-resourcetype)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-backup-tieringconfiguration-resourceselection-syntax.yaml"></a>
 
-```
+```yaml
   [Resources](#cfn-backup-tieringconfiguration-resourceselection-resources): {{
     - String}}
   [ResourceType](#cfn-backup-tieringconfiguration-resourceselection-resourcetype): {{String}}

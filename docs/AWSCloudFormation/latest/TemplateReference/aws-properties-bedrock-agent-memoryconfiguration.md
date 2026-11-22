@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-agent-memoryconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EnabledMemoryTypes](#cfn-bedrock-agent-memoryconfiguration-enabledmemorytypes)" : {{[ String, ... ]}},
   "[SessionSummaryConfiguration](#cfn-bedrock-agent-memoryconfiguration-sessionsummaryconfiguration)" : {{SessionSummaryConfiguration}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-agent-memoryconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EnabledMemoryTypes](#cfn-bedrock-agent-memoryconfiguration-enabledmemorytypes): {{
     - String}}
   [SessionSummaryConfiguration](#cfn-bedrock-agent-memoryconfiguration-sessionsummaryconfiguration): {{

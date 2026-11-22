@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-observabilityadmin-s3tableintegration-logsource-syntax.json"></a>
 
-```
+```json
 {
   "[Identifier](#cfn-observabilityadmin-s3tableintegration-logsource-identifier)" : {{String}},
   "[Name](#cfn-observabilityadmin-s3tableintegration-logsource-name)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-observabilityadmin-s3tableintegration-logsource-syntax.yaml"></a>
 
-```
+```yaml
   [Identifier](#cfn-observabilityadmin-s3tableintegration-logsource-identifier): {{String}}
   [Name](#cfn-observabilityadmin-s3tableintegration-logsource-name): {{String}}
   [Type](#cfn-observabilityadmin-s3tableintegration-logsource-type): {{String}}

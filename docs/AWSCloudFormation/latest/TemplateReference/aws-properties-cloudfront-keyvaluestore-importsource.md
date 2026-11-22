@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-keyvaluestore-importsource-syntax.json"></a>
 
-```
+```json
 {
   "[SourceArn](#cfn-cloudfront-keyvaluestore-importsource-sourcearn)" : {{String}},
   "[SourceType](#cfn-cloudfront-keyvaluestore-importsource-sourcetype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-keyvaluestore-importsource-syntax.yaml"></a>
 
-```
+```yaml
   [SourceArn](#cfn-cloudfront-keyvaluestore-importsource-sourcearn): {{String}}
   [SourceType](#cfn-cloudfront-keyvaluestore-importsource-sourcetype): {{String}}
 ```

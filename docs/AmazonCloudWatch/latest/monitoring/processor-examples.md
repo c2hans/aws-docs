@@ -11,7 +11,7 @@ Here are common scenarios and example configurations for combining processors.
 **Example Standardize log formats and add metadata**
 Parse JSON logs, standardize field names, and add environment information:
 
-```
+```yaml
 processor:
   - parse_json: {}
   - rename_keys:
@@ -31,7 +31,7 @@ processor:
 **Example Clean and normalize field values**
 Standardize status codes and remove sensitive data:
 
-```
+```yaml
 processor:
   - uppercase_string:
       with_keys: ["status", "method"]
@@ -47,7 +47,7 @@ processor:
 **Example Extract and transform specific fields**
 Extract user information and format for analysis:
 
-```
+```yaml
 processor:
   - extract_value:
       entries:
@@ -66,7 +66,7 @@ processor:
 **Example Conditional processing with entry-level conditions**
 Add different metadata based on log severity using entry-level `when` conditions:
 
-```
+```yaml
 processor:
   - add_entries:
       entries:
@@ -81,7 +81,7 @@ processor:
 **Example Drop unwanted log entries**
 Filter out debug and trace log entries from a third-party source to reduce noise and storage costs:
 
-```
+```yaml
 processor:
   - drop_events:
       when: "log.level in {'DEBUG', 'TRACE'}"
@@ -91,7 +91,7 @@ processor:
 **Example Processor-level conditional with delete\_entries**
 Remove sensitive fields only when the environment is production:
 
-```
+```yaml
 processor:
   - delete_entries:
       with_keys: ["password", "api_key", "ssn"]
@@ -106,7 +106,7 @@ The following examples show processor configurations for metrics pipelines. Metr
 **Example Add business context to metrics**
 Add team ownership and environment tags to metric datapoints:
 
-```
+```yaml
 processor:
   - add_attributes:
       attributes:
@@ -119,7 +119,7 @@ processor:
 **Example Remove high-cardinality attributes**
 Strip attributes that drive up storage costs. Does not apply to cumulative metrics or vended metrics — if any metrics in the selection criteria have unsupported temporality, the pipeline emits an `UnsupportedTemporality` warning metric that you can monitor in the `AWS/Observability Admin` namespace:
 
-```
+```yaml
 processor:
   - delete_attributes:
       with_keys:
@@ -130,7 +130,7 @@ processor:
 **Example Standardize naming conventions**
 Rename metrics and attributes to align with OpenTelemetry semantic conventions. Does not apply to cumulative metrics or vended metrics:
 
-```
+```yaml
 processor:
   - rename_metrics:
       metrics:

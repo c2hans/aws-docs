@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-responseinspection-syntax.json"></a>
 
-```
+```json
 {
   "[BodyContains](#cfn-wafv2-webacl-responseinspection-bodycontains)" : {{ResponseInspectionBodyContains}},
   "[Header](#cfn-wafv2-webacl-responseinspection-header)" : {{ResponseInspectionHeader}},
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-responseinspection-syntax.yaml"></a>
 
-```
+```yaml
   [BodyContains](#cfn-wafv2-webacl-responseinspection-bodycontains): {{
     ResponseInspectionBodyContains}}
   [Header](#cfn-wafv2-webacl-responseinspection-header): {{
@@ -90,7 +90,7 @@ The following shows an example `ResponseInspection` for the status code componen
 #### YAML
 <a name="aws-properties-wafv2-webacl-responseinspection--examples--Configure_the_response_inspection_fields_for_status_code_inspection--yaml"></a>
 
-```
+```yaml
 ResponseInspection:
   StatusCode:
     SuccessCodes:
@@ -104,7 +104,7 @@ ResponseInspection:
 #### JSON
 <a name="aws-properties-wafv2-webacl-responseinspection--examples--Configure_the_response_inspection_fields_for_status_code_inspection--json"></a>
 
-```
+```json
 "ResponseInspection":{
       "StatusCode":{
          "SuccessCodes":[
@@ -127,7 +127,7 @@ The following shows an example `RequestInspection` for inspection of the respons
 #### YAML
 <a name="aws-properties-wafv2-webacl-responseinspection--examples--Configure_the_response_inspection_fields_for_inspection_of_the_response_body--yaml"></a>
 
-```
+```yaml
 ResponseInspection:
   BodyContains:
     SuccessStrings:
@@ -141,7 +141,7 @@ ResponseInspection:
 #### JSON
 <a name="aws-properties-wafv2-webacl-responseinspection--examples--Configure_the_response_inspection_fields_for_inspection_of_the_response_body--json"></a>
 
-```
+```json
 "ResponseInspection":{
       "BodyContains":{
          "SuccessStrings":[

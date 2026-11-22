@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-imagebuilder-containerrecipe-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ImageBuilder::ContainerRecipe",
   "Properties" : {
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-imagebuilder-containerrecipe-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ImageBuilder::ContainerRecipe
 Properties:
   [Components](#cfn-imagebuilder-containerrecipe-components): {{
@@ -227,7 +227,7 @@ The following example shows the template for the ContainerRecipe resource in bot
 #### YAML
 <a name="aws-resource-imagebuilder-containerrecipe--examples--Create_a_container_recipe--yaml"></a>
 
-```
+```yaml
 Resources:
    ContainerRecipeAllParameters:
       Type: 'AWS::ImageBuilder::ContainerRecipe'
@@ -263,7 +263,7 @@ Outputs:
 #### JSON
 <a name="aws-resource-imagebuilder-containerrecipe--examples--Create_a_container_recipe--json"></a>
 
-```
+```json
 {
    "Resources": {
       "ContainerRecipeAllParameters": {

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codebuild-project-projectfilesystemlocation-syntax.json"></a>
 
-```
+```json
 {
   "[Identifier](#cfn-codebuild-project-projectfilesystemlocation-identifier)" : {{String}},
   "[Location](#cfn-codebuild-project-projectfilesystemlocation-location)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codebuild-project-projectfilesystemlocation-syntax.yaml"></a>
 
-```
+```yaml
   [Identifier](#cfn-codebuild-project-projectfilesystemlocation-identifier): {{String}}
   [Location](#cfn-codebuild-project-projectfilesystemlocation-location): {{String}}
   [MountOptions](#cfn-codebuild-project-projectfilesystemlocation-mountoptions): {{String}}

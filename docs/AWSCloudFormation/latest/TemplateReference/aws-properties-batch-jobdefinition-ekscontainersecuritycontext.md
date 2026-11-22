@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-ekscontainersecuritycontext-syntax.json"></a>
 
-```
+```json
 {
   "[AllowPrivilegeEscalation](#cfn-batch-jobdefinition-ekscontainersecuritycontext-allowprivilegeescalation)" : {{Boolean}},
   "[Capabilities](#cfn-batch-jobdefinition-ekscontainersecuritycontext-capabilities)" : {{EksContainerLinuxCapabilities}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-ekscontainersecuritycontext-syntax.yaml"></a>
 
-```
+```yaml
   [AllowPrivilegeEscalation](#cfn-batch-jobdefinition-ekscontainersecuritycontext-allowprivilegeescalation): {{Boolean}}
   [Capabilities](#cfn-batch-jobdefinition-ekscontainersecuritycontext-capabilities): {{
     EksContainerLinuxCapabilities}}

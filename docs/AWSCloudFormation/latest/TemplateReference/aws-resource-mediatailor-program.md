@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-mediatailor-program-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MediaTailor::Program",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-mediatailor-program-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MediaTailor::Program
 Properties:
   [AdBreaks](#cfn-mediatailor-program-adbreaks): {{

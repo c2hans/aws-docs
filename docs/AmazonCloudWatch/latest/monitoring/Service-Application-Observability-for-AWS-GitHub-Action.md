@@ -61,7 +61,7 @@ This action relies on the [aws-actions/configure-aws-credentials](https://github
 
    Create an IAM role (for example, `AWS_IAM_ROLE_ARN`) in the AWS Management Console with the following trust policy template. This allows authorized GitHub repositories to assume the role:
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -109,7 +109,7 @@ For more information about configuring OIDC with AWS, see the [configure-aws-cre
 
    The following is an example workflow that demonstrates using this action with Amazon Bedrock models. Create Application Observability Investigation workflow from this template in your GitHub Repository directory `.github/workflows`.
 
-   ```
+   ```yaml
    name: Application observability for AWS
 
    on:
@@ -236,7 +236,7 @@ The IAM role assumed by GitHub Actions must have the following permissions.
 
 **Note**: `bedrock:InvokeModel` and `bedrock:InvokeModelWithResponseStream` are only required if you're using Amazon Bedrock models
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

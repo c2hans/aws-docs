@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lambda-webfunction-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lambda::WebFunction",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lambda-webfunction-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lambda::WebFunction
 Properties:
   [FunctionName](#cfn-lambda-webfunction-functionname): {{String}}
@@ -100,7 +100,7 @@ Create a web function named `my-web-function`.
 #### JSON
 <a name="aws-resource-lambda-webfunction--examples--Web_function--json"></a>
 
-```
+```json
 "MyWebFunction": {
     "Type": "AWS::Lambda::WebFunction",
     "Properties": {
@@ -118,7 +118,7 @@ Create a web function named `my-web-function`.
 #### YAML
 <a name="aws-resource-lambda-webfunction--examples--Web_function--yaml"></a>
 
-```
+```yaml
 MyWebFunction:
   Type: AWS::Lambda::WebFunction
   Properties:

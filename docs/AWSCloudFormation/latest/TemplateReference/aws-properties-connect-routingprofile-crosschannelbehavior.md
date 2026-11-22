@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-routingprofile-crosschannelbehavior-syntax.json"></a>
 
-```
+```json
 {
   "[BehaviorType](#cfn-connect-routingprofile-crosschannelbehavior-behaviortype)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-routingprofile-crosschannelbehavior-syntax.yaml"></a>
 
-```
+```yaml
   [BehaviorType](#cfn-connect-routingprofile-crosschannelbehavior-behaviortype): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-glue-database-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Glue::Database",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-glue-database-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Glue::Database
 Properties:
   [CatalogId](#cfn-glue-database-catalogid): {{String}}

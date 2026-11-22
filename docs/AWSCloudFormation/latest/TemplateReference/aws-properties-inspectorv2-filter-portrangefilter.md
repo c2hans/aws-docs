@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-inspectorv2-filter-portrangefilter-syntax.json"></a>
 
-```
+```json
 {
   "[BeginInclusive](#cfn-inspectorv2-filter-portrangefilter-begininclusive)" : {{Integer}},
   "[EndInclusive](#cfn-inspectorv2-filter-portrangefilter-endinclusive)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-inspectorv2-filter-portrangefilter-syntax.yaml"></a>
 
-```
+```yaml
   [BeginInclusive](#cfn-inspectorv2-filter-portrangefilter-begininclusive): {{Integer}}
   [EndInclusive](#cfn-inspectorv2-filter-portrangefilter-endinclusive): {{Integer}}
 ```

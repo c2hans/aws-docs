@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-volume-ontapconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AggregateConfiguration](#cfn-fsx-volume-ontapconfiguration-aggregateconfiguration)" : {{AggregateConfiguration}},
   "[CopyTagsToBackups](#cfn-fsx-volume-ontapconfiguration-copytagstobackups)" : {{String}},
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-volume-ontapconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AggregateConfiguration](#cfn-fsx-volume-ontapconfiguration-aggregateconfiguration): {{
     AggregateConfiguration}}
   [CopyTagsToBackups](#cfn-fsx-volume-ontapconfiguration-copytagstobackups): {{String}}

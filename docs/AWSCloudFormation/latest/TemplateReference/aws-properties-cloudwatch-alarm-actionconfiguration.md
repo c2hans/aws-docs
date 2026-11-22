@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-alarm-actionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AlarmTagsPropagation](#cfn-cloudwatch-alarm-actionconfiguration-alarmtagspropagation)" : {{AlarmTagsPropagation}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-alarm-actionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AlarmTagsPropagation](#cfn-cloudwatch-alarm-actionconfiguration-alarmtagspropagation): {{
     AlarmTagsPropagation}}
 ```

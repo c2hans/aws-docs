@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-glue-workflow-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Glue::Workflow",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-glue-workflow-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Glue::Workflow
 Properties:
   [DefaultRunProperties](#cfn-glue-workflow-defaultrunproperties): {{Json}}

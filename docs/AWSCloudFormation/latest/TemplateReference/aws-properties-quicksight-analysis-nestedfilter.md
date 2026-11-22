@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-nestedfilter-syntax.json"></a>
 
-```
+```json
 {
   "[Column](#cfn-quicksight-analysis-nestedfilter-column)" : {{ColumnIdentifier}},
   "[FilterId](#cfn-quicksight-analysis-nestedfilter-filterid)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-nestedfilter-syntax.yaml"></a>
 
-```
+```yaml
   [Column](#cfn-quicksight-analysis-nestedfilter-column): {{
     ColumnIdentifier}}
   [FilterId](#cfn-quicksight-analysis-nestedfilter-filterid): {{String}}

@@ -40,7 +40,7 @@ After creating an organization instance of IAM Identity Center, you can enable a
 
 Before enabling account access manager, run the following command from the AWS organization management account to grant account access manager access to your organization:
 
-```
+```bash
 aws organizations enable-aws-service-access --service-principal account-access.amazonaws.com
 ```
 
@@ -67,7 +67,7 @@ Use one of the following methods to enable account access manager:
 
 First find the ARN of the IAM Identity Center instance and confirm the Region code matches the primary Region of IAM Identity Center. Then, run the following command:
 
-```
+```bash
 aws account-access create-application \
   --region <Region> \
   --identity-source '{
@@ -106,13 +106,13 @@ The account access manager service endpoints:
 
 If you use the AWS CLI, you can find the tenant ID by running the following CLI command in your organization's management or delegated administrator account.
 
-```
+```bash
 aws account-access list-applications
 ```
 
 The response contains information about account access manager including the application ARN and the tenant ID.
 
-```
+```json
 {
     "applications": [
         {
@@ -161,7 +161,7 @@ Use the following procedure to delete account access manager.
 
 Run the following command to delete account access manager:
 
-```
+```bash
 aws account-access delete-application \
   --region "<Region>" \
   --application-arn "<account_access_manager_ARN>"

@@ -64,7 +64,7 @@ For more information on specifying permissions in CloudFormation, see [Control C
 **Example A sample policy that grants permissions to change stack termination protection**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":[{

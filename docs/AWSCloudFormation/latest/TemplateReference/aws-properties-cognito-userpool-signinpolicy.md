@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpool-signinpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[AllowedFirstAuthFactors](#cfn-cognito-userpool-signinpolicy-allowedfirstauthfactors)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpool-signinpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [AllowedFirstAuthFactors](#cfn-cognito-userpool-signinpolicy-allowedfirstauthfactors): {{
     - String}}
 ```

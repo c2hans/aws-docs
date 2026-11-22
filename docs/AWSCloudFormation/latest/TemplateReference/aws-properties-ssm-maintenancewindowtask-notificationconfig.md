@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssm-maintenancewindowtask-notificationconfig-syntax.json"></a>
 
-```
+```json
 {
   "[NotificationArn](#cfn-ssm-maintenancewindowtask-notificationconfig-notificationarn)" : {{String}},
   "[NotificationEvents](#cfn-ssm-maintenancewindowtask-notificationconfig-notificationevents)" : {{[ String, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssm-maintenancewindowtask-notificationconfig-syntax.yaml"></a>
 
-```
+```yaml
   [NotificationArn](#cfn-ssm-maintenancewindowtask-notificationconfig-notificationarn): {{String}}
   [NotificationEvents](#cfn-ssm-maintenancewindowtask-notificationconfig-notificationevents): {{
     - String}}

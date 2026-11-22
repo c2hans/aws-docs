@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-certificatemanager-acmeexternalaccountbinding-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CertificateManager::AcmeExternalAccountBinding",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-certificatemanager-acmeexternalaccountbinding-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CertificateManager::AcmeExternalAccountBinding
 Properties:
   [AcmeEndpointArn](#cfn-certificatemanager-acmeexternalaccountbinding-acmeendpointarn): {{String}}

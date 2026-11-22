@@ -106,7 +106,7 @@ The policy statements in the key policy have the following effect:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Id" : "auto-dynamodb-1",
@@ -171,7 +171,7 @@ Before using an example key policy, replace the example principals with actual p
 
 ****
 
-```
+```json
 {
   "Id": "key-policy-dynamodb",
   "Version":"2012-10-17",

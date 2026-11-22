@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iam-virtualmfadevice-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IAM::VirtualMFADevice",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iam-virtualmfadevice-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IAM::VirtualMFADevice
 Properties:
   [Path](#cfn-iam-virtualmfadevice-path): {{String}}

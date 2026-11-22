@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iam-policy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IAM::Policy",
   "Properties" : {
@@ -46,7 +46,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iam-policy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IAM::Policy
 Properties:
   [Groups](#cfn-iam-policy-groups): {{
@@ -149,7 +149,7 @@ For more information about IDs, see [IAM identifiers](https://docs.aws.amazon.co
 #### JSON
 <a name="aws-resource-iam-policy--examples--Policy_with_policy_group--json"></a>
 
-```
+```json
 {
     "Type": "AWS::IAM::Policy",
     "Properties": {
@@ -180,7 +180,7 @@ For more information about IDs, see [IAM identifiers](https://docs.aws.amazon.co
 #### YAML
 <a name="aws-resource-iam-policy--examples--Policy_with_policy_group--yaml"></a>
 
-```
+```yaml
 Type: 'AWS::IAM::Policy'
 Properties:
   PolicyName: CFNUsers
@@ -203,7 +203,7 @@ Properties:
 #### JSON
 <a name="aws-resource-iam-policy--examples--Policy_with_specified_role--json"></a>
 
-```
+```json
 {
     "Type": "AWS::IAM::Policy",
     "Properties": {
@@ -230,7 +230,7 @@ Properties:
 #### YAML
 <a name="aws-resource-iam-policy--examples--Policy_with_specified_role--yaml"></a>
 
-```
+```yaml
 Type: 'AWS::IAM::Policy'
 Properties:
   PolicyName: root

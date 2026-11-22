@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-acmpca-certificateauthority-accessdescription-syntax.json"></a>
 
-```
+```json
 {
   "[AccessLocation](#cfn-acmpca-certificateauthority-accessdescription-accesslocation)" : {{GeneralName}},
   "[AccessMethod](#cfn-acmpca-certificateauthority-accessdescription-accessmethod)" : {{AccessMethod}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-acmpca-certificateauthority-accessdescription-syntax.yaml"></a>
 
-```
+```yaml
   [AccessLocation](#cfn-acmpca-certificateauthority-accessdescription-accesslocation): {{
     GeneralName}}
   [AccessMethod](#cfn-acmpca-certificateauthority-accessdescription-accessmethod): {{

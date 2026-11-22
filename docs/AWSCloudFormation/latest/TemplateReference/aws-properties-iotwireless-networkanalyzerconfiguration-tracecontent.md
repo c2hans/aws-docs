@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotwireless-networkanalyzerconfiguration-tracecontent-syntax.json"></a>
 
-```
+```json
 {
   "[LogLevel](#cfn-iotwireless-networkanalyzerconfiguration-tracecontent-loglevel)" : {{String}},
   "[WirelessDeviceFrameInfo](#cfn-iotwireless-networkanalyzerconfiguration-tracecontent-wirelessdeviceframeinfo)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotwireless-networkanalyzerconfiguration-tracecontent-syntax.yaml"></a>
 
-```
+```yaml
   [LogLevel](#cfn-iotwireless-networkanalyzerconfiguration-tracecontent-loglevel): {{String}}
   [WirelessDeviceFrameInfo](#cfn-iotwireless-networkanalyzerconfiguration-tracecontent-wirelessdeviceframeinfo): {{String}}
 ```

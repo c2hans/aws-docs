@@ -47,7 +47,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-s3express-directorybucket-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::S3Express::DirectoryBucket",
   "Properties" : {
@@ -66,7 +66,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-s3express-directorybucket-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::S3Express::DirectoryBucket
 Properties:
   [BucketEncryption](#cfn-s3express-directorybucket-bucketencryption): {{

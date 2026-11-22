@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-redshift-clustersubnetgroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Redshift::ClusterSubnetGroup",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-redshift-clustersubnetgroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Redshift::ClusterSubnetGroup
 Properties:
   [Description](#cfn-redshift-clustersubnetgroup-description): {{String}}
@@ -104,7 +104,7 @@ The following example specifies one subnet for an Amazon Redshift cluster subnet
 #### JSON
 <a name="aws-resource-redshift-clustersubnetgroup--examples--Specify_a_Subnet--json"></a>
 
-```
+```json
 "myClusterSubnetGroup": {
   "Type": "AWS::Redshift::ClusterSubnetGroup",
   "Properties": {
@@ -125,7 +125,7 @@ The following example specifies one subnet for an Amazon Redshift cluster subnet
 #### YAML
 <a name="aws-resource-redshift-clustersubnetgroup--examples--Specify_a_Subnet--yaml"></a>
 
-```
+```yaml
 myClusterSubnetGroup:
   Type: 'AWS::Redshift::ClusterSubnetGroup'
   Properties:

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-captionselector-syntax.json"></a>
 
-```
+```json
 {
   "[LanguageCode](#cfn-medialive-channel-captionselector-languagecode)" : {{String}},
   "[Name](#cfn-medialive-channel-captionselector-name)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-captionselector-syntax.yaml"></a>
 
-```
+```yaml
   [LanguageCode](#cfn-medialive-channel-captionselector-languagecode): {{String}}
   [Name](#cfn-medialive-channel-captionselector-name): {{String}}
   [SelectorSettings](#cfn-medialive-channel-captionselector-selectorsettings): {{

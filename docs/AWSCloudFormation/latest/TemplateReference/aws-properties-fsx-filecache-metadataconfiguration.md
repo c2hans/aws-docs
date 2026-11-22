@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-filecache-metadataconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[StorageCapacity](#cfn-fsx-filecache-metadataconfiguration-storagecapacity)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-filecache-metadataconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [StorageCapacity](#cfn-fsx-filecache-metadataconfiguration-storagecapacity): {{Integer}}
 ```
 

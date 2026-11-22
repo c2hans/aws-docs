@@ -52,7 +52,7 @@ When using AWS CLI in AWS CloudShell, you don't need to download or install any 
 
    The output lists summary information for your services.
 
-   ```
+   ```json
    {
      "ServiceSummaryList": [
        {
@@ -85,7 +85,7 @@ When using AWS CLI in AWS CloudShell, you don't need to download or install any 
 
    The output lists a detailed description of the service you specified.
 
-   ```
+   ```json
    {
      "Service": {
        "ServiceName": "my-app-1",

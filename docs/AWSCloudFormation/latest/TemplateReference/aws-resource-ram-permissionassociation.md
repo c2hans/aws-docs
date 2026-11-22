@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ram-permissionassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RAM::PermissionAssociation",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ram-permissionassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RAM::PermissionAssociation
 Properties:
   [PermissionArn](#cfn-ram-permissionassociation-permissionarn): {{String}}
@@ -108,7 +108,7 @@ The following example associates a permission with a resource share.
 #### YAML
 <a name="aws-resource-ram-permissionassociation--examples--Associating_a_permission_with_a_resource_share--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   MyPermissionAssociation:
@@ -121,7 +121,7 @@ Resources:
 #### JSON
 <a name="aws-resource-ram-permissionassociation--examples--Associating_a_permission_with_a_resource_share--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {

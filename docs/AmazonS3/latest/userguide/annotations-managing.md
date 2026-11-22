@@ -68,7 +68,7 @@ aws s3api put-object-annotation \
 
 The following example uses the AWS SDK for Python (Boto3) to add an annotation to an object.
 
-```
+```python
 import boto3
 import json
 
@@ -132,7 +132,7 @@ aws s3api list-object-annotations \
 
 The following example uses the AWS SDK for Python (Boto3) to retrieve and list annotations.
 
-```
+```python
 import boto3
 import json
 
@@ -194,7 +194,7 @@ aws s3api delete-object-annotation \
 
 The following example uses the AWS SDK for Python (Boto3) to delete an annotation.
 
-```
+```python
 import boto3
 
 s3 = boto3.client('s3')

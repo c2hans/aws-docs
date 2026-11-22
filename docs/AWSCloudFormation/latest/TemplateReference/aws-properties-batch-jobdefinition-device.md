@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-device-syntax.json"></a>
 
-```
+```json
 {
   "[ContainerPath](#cfn-batch-jobdefinition-device-containerpath)" : {{String}},
   "[HostPath](#cfn-batch-jobdefinition-device-hostpath)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-device-syntax.yaml"></a>
 
-```
+```yaml
   [ContainerPath](#cfn-batch-jobdefinition-device-containerpath): {{String}}
   [HostPath](#cfn-batch-jobdefinition-device-hostpath): {{String}}
   [Permissions](#cfn-batch-jobdefinition-device-permissions): {{

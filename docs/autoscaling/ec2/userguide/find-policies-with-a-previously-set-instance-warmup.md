@@ -13,7 +13,7 @@ aws autoscaling describe-policies --auto-scaling-group-name {{my-asg}}
 
 The following is example output.
 
-```
+```json
 [
   {
     "AutoScalingGroupName":"my-asg",

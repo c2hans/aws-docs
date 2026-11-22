@@ -127,7 +127,7 @@ If role manager is enabled in your account, AWS Backup selects the default servi
 
 Use `[StartRestoreJob](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_StartRestoreJob.html)`. You can specify the following metadata during Amazon S3 restores:
 
-```
+```json
 // Mandatory metadata:
 DestinationBucketName // The destination bucket for your restore.
 

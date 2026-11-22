@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-route53recoverycontrol-routingcontrol-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Route53RecoveryControl::RoutingControl",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-route53recoverycontrol-routingcontrol-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53RecoveryControl::RoutingControl
 Properties:
   [ClusterArn](#cfn-route53recoverycontrol-routingcontrol-clusterarn): {{String}}

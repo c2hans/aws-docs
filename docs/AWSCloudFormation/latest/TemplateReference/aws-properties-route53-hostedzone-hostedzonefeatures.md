@@ -16,24 +16,50 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-route53-hostedzone-hostedzonefeatures-syntax.json"></a>
 
-```
+```json
 {
-  "[EnableAcceleratedRecovery](#cfn-route53-hostedzone-hostedzonefeatures-enableacceleratedrecovery)" : {{Boolean}}
+  "[ChangeGuardrails](#cfn-route53-hostedzone-hostedzonefeatures-changeguardrails)" : {{[ ChangeGuardrail, ... ]}},
+  "[ChangeHistory](#cfn-route53-hostedzone-hostedzonefeatures-changehistory)" : {{ChangeHistory}},
+  "[EnableAcceleratedRecovery](#cfn-route53-hostedzone-hostedzonefeatures-enableacceleratedrecovery)" : {{Boolean}},
+  "[EnablePublicDNSFallback](#cfn-route53-hostedzone-hostedzonefeatures-enablepublicdnsfallback)" : {{Boolean}}
 }
 ```
 
 ### YAML
 <a name="aws-properties-route53-hostedzone-hostedzonefeatures-syntax.yaml"></a>
 
-```
+```yaml
+  [ChangeGuardrails](#cfn-route53-hostedzone-hostedzonefeatures-changeguardrails): {{
+    - ChangeGuardrail}}
+  [ChangeHistory](#cfn-route53-hostedzone-hostedzonefeatures-changehistory): {{
+    ChangeHistory}}
   [EnableAcceleratedRecovery](#cfn-route53-hostedzone-hostedzonefeatures-enableacceleratedrecovery): {{Boolean}}
+  [EnablePublicDNSFallback](#cfn-route53-hostedzone-hostedzonefeatures-enablepublicdnsfallback): {{Boolean}}
 ```
 
 ## Properties
 <a name="aws-properties-route53-hostedzone-hostedzonefeatures-properties"></a>
+
+`ChangeGuardrails`  <a name="cfn-route53-hostedzone-hostedzonefeatures-changeguardrails"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [ChangeGuardrail](aws-properties-route53-hostedzone-changeguardrail.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ChangeHistory`  <a name="cfn-route53-hostedzone-hostedzonefeatures-changehistory"></a>
+Property description not available.
+*Required*: No
+*Type*: [ChangeHistory](aws-properties-route53-hostedzone-changehistory.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `EnableAcceleratedRecovery`  <a name="cfn-route53-hostedzone-hostedzonefeatures-enableacceleratedrecovery"></a>
 Property description not available.
 *Required*: No
 *Type*: Boolean
 *Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
+
+`EnablePublicDNSFallback`  <a name="cfn-route53-hostedzone-hostedzonefeatures-enablepublicdnsfallback"></a>
+Property description not available.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

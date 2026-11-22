@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-addtag.html
 
 The following example shows how to use the [AddTagsToCertificate](https://docs.aws.amazon.com/acm/latest/APIReference/API_AddTagsToCertificate.html) function.
 
-```
+```java
 package com.amazonaws.samples;
 
 import java.io.IOException;

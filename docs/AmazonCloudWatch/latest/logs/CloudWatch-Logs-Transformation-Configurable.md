@@ -37,7 +37,7 @@ The original `@message` content is not changed, the new keys are added to the me
 
 Suppose an ingested log event looks like this:
 
-```
+```json
 {
     "outer_key": {
         "inner_key": "inner_value"
@@ -47,7 +47,7 @@ Suppose an ingested log event looks like this:
 
 Then if we have this **parseJSON** processor:
 
-```
+```json
 [
    {
         "parseJSON": {
@@ -59,7 +59,7 @@ Then if we have this **parseJSON** processor:
 
 The transformed log event would be the following.
 
-```
+```json
 {
     "new_key": {
         "outer_key": {
@@ -102,13 +102,13 @@ To create more complex matching expressions, you can combine several grok patter
 
 Sample log:
 
-```
+```json
 293750 server-01.internal-network.local OK "[Thread-000] token generated"
 ```
 
 Transformer used:
 
-```
+```json
 [
      {
          "grok": {
@@ -120,7 +120,7 @@ Transformer used:
 
 Output:
 
-```
+```json
 {
   "version": "293750",
   "hostname": "server-01.internal-network.local",
@@ -137,7 +137,7 @@ Sample log:
 
 Transformer used:
 
-```
+```json
 [
     {
         "grok": {
@@ -149,7 +149,7 @@ Transformer used:
 
 Output:
 
-```
+```json
 {
   "timestamp": "23/Nov/2024:10:25:15 -0900",
   "clientip": "172.16.0.1",
@@ -162,7 +162,7 @@ Output:
 
 Sample log:
 
-```
+```json
 {
     "timestamp": "2024-11-23T16:03:12Z",
     "level": "ERROR",
@@ -172,7 +172,7 @@ Sample log:
 
 Transformer used:
 
-```
+```json
 [
      {
         "parseJSON": {}
@@ -188,7 +188,7 @@ Transformer used:
 
 Output:
 
-```
+```json
 {
   "timestamp": "2024-11-23T16:03:12Z",
   "level": "ERROR",
@@ -210,7 +210,7 @@ Sample log:
 
 Transformer used:
 
-```
+```json
 [
     {
         "grok": {
@@ -222,7 +222,7 @@ Transformer used:
 
 Output:
 
-```
+```json
 {
   "client": {
     "ip": "192.168.1.1"
@@ -373,7 +373,7 @@ Sample log:
 
 Transformer:
 
-```
+```json
 [
      {
         "grok": {
@@ -385,7 +385,7 @@ Transformer:
 
 Output:
 
-```
+```json
 {
     "request": "/page.html",
     "http_method": "GET",
@@ -408,7 +408,7 @@ Sample log:
 
 Transformer:
 
-```
+```json
 [
      {
         "grok": {
@@ -420,7 +420,7 @@ Transformer:
 
 Output:
 
-```
+```json
 {
     "request": "/account/login.html",
     "referrer": "https://www.amazon.com/",
@@ -446,7 +446,7 @@ Sample log:
 
 Transformer:
 
-```
+```json
 [
      {
         "grok": {
@@ -458,7 +458,7 @@ Transformer:
 
 Output:
 
-```
+```json
 {
   "pri": 165,
   "version": 1,
@@ -490,13 +490,13 @@ Setting `delimiter` to `\t` will separate each column on a tab character, and `\
 
 Suppose part of an ingested log event looks like this:
 
-```
+```json
 'Akua Mansa':28:'New York: USA'
 ```
 
 Suppose we use only the **csv** processor:
 
-```
+```json
 [
      {
         "csv": {
@@ -509,7 +509,7 @@ Suppose we use only the **csv** processor:
 
 The transformed log event would be the following.
 
-```
+```json
 {
   "column_1": "Akua Mansa",
   "column_2": "28",
@@ -521,7 +521,7 @@ The transformed log event would be the following.
 
 Suppose an ingested log event looks like this:
 
-```
+```json
 {
     "timestamp": "2024-11-23T16:03:12Z",
     "type": "user_data",
@@ -531,7 +531,7 @@ Suppose an ingested log event looks like this:
 
 Suppose we parse the event as JSON, they parse a JSON field with the **csv** processor, specifying column names and destination:
 
-```
+```json
 [
     {
         "parseJSON": {}
@@ -550,7 +550,7 @@ Suppose we parse the event as JSON, they parse a JSON field with the **csv** pro
 
 The transformed log event would be the following.
 
-```
+```json
 {
     "timestamp": "2024-11-23T16:03:12Z",
     "logMsg": "'Akua Mansa':28:'New York: USA'",
@@ -582,13 +582,13 @@ Use the **parseKeyValue** processor to parse a specified field into key-value pa
 
 Take the following example log event:
 
-```
+```json
 key1:value1!key2:value2!key3:value3!key4
 ```
 
 Suppose we use the following processor configuration:
 
-```
+```json
 [
     {
         "parseKeyValue": {
@@ -604,7 +604,7 @@ Suppose we use the following processor configuration:
 
 The transformed log event would be the following.
 
-```
+```json
 {
   "new_key": {
     "parsed_key1": "value1",

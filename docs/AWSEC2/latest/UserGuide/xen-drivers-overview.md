@@ -39,7 +39,7 @@ The following table shows which PV drivers you should run on each version of Win
 
 The AWS PV drivers are stored in the `%ProgramFiles%\Amazon\Xentools` directory. This directory also contains public symbols and a command line tool, `xenstore_client.exe`, that enables you to access entries in XenStore. For example, the following PowerShell command returns the current time from the Hypervisor:
 
-```
+```powershell
 PS C:\> [DateTime]::FromFileTimeUTC((gwmi -n root\wmi -cl AWSXenStoreBase).XenTime).ToString("hh:mm:ss")
 11:17:00
 ```
@@ -157,7 +157,7 @@ Whenever new EC2 Windows drivers are released, we send notifications to subscrib
 **To subscribe to notifications**
 Use the following command.
 
-```
+```bash
 aws sns subscribe \
     --topic-arn arn:aws:sns:us-east-1:801119661308:ec2-windows-drivers \
     --region us-east-1 \
@@ -171,7 +171,7 @@ aws sns subscribe \
 **To subscribe to notifications**
 Use the following command.
 
-```
+```powershell
 Connect-SNSNotification `
     -TopicArn 'arn:aws:sns:us-east-1:801119661308:ec2-windows-drivers' `
     -Region us-east-1 `

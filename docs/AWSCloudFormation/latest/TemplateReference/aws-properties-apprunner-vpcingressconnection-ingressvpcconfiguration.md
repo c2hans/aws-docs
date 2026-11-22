@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apprunner-vpcingressconnection-ingressvpcconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[VpcEndpointId](#cfn-apprunner-vpcingressconnection-ingressvpcconfiguration-vpcendpointid)" : {{String}},
   "[VpcId](#cfn-apprunner-vpcingressconnection-ingressvpcconfiguration-vpcid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apprunner-vpcingressconnection-ingressvpcconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [VpcEndpointId](#cfn-apprunner-vpcingressconnection-ingressvpcconfiguration-vpcendpointid): {{String}}
   [VpcId](#cfn-apprunner-vpcingressconnection-ingressvpcconfiguration-vpcid): {{String}}
 ```

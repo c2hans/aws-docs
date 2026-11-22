@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-events-rule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Events::Rule",
   "Properties" : {
@@ -55,7 +55,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-events-rule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Events::Rule
 Properties:
   [Description](#cfn-events-rule-description): {{String}}
@@ -216,7 +216,7 @@ The following example demonstrates how to create a rule that routes events acros
 #### JSON
 <a name="aws-resource-events-rule--examples--Create_a_cross-Region_rule--json"></a>
 
-```
+```json
 {
    "Resources": {
       "EventRuleRegion1": {
@@ -291,7 +291,7 @@ The following example demonstrates how to create a rule that routes events acros
 #### YAML
 <a name="aws-resource-events-rule--examples--Create_a_cross-Region_rule--yaml"></a>
 
-```
+```yaml
 Resources:
   EventRuleRegion1:
     Type: 'AWS::Events::Rule'
@@ -343,7 +343,7 @@ The following example demonstrates how to send all EC2 events to an SQS queue, a
 #### JSON
 <a name="aws-resource-events-rule--examples--Create_a_rule_that_includes_a_dead-letter_queue_for_a_target--json"></a>
 
-```
+```json
 {
    "MyNewEventsRule": {
       "Type": "AWS::Events::Rule",
@@ -377,7 +377,7 @@ The following example demonstrates how to send all EC2 events to an SQS queue, a
 #### YAML
 <a name="aws-resource-events-rule--examples--Create_a_rule_that_includes_a_dead-letter_queue_for_a_target--yaml"></a>
 
-```
+```yaml
 MyNewEventsRule:
   Type: 'AWS::Events::Rule'
   Properties:
@@ -405,7 +405,7 @@ The following example creates a rule that invokes the specified Lambda function 
 #### JSON
 <a name="aws-resource-events-rule--examples--Regularly_invoke_Lambda_function--json"></a>
 
-```
+```json
 "ScheduledRule": {
   "Type": "AWS::Events::Rule",
   "Properties": {
@@ -432,7 +432,7 @@ The following example creates a rule that invokes the specified Lambda function 
 #### YAML
 <a name="aws-resource-events-rule--examples--Regularly_invoke_Lambda_function--yaml"></a>
 
-```
+```yaml
 ScheduledRule:
   Type: AWS::Events::Rule
   Properties:
@@ -466,7 +466,7 @@ The following example creates a rule that invokes the specified Lambda function 
 #### JSON
 <a name="aws-resource-events-rule--examples--Invoke_Lambda_Function_in_Response_to_an_Event--json"></a>
 
-```
+```json
 "EventRule": {
   "Type": "AWS::Events::Rule",
   "Properties": {
@@ -505,7 +505,7 @@ The following example creates a rule that invokes the specified Lambda function 
 #### YAML
 <a name="aws-resource-events-rule--examples--Invoke_Lambda_Function_in_Response_to_an_Event--yaml"></a>
 
-```
+```yaml
 EventRule:
   Type: AWS::Events::Rule
   Properties:
@@ -547,7 +547,7 @@ The following example creates a rule that notifies an Amazon Simple Notification
 #### JSON
 <a name="aws-resource-events-rule--examples--Notify_a_Topic_in_Response_to_a_Log_Entry--json"></a>
 
-```
+```json
 "OpsEventRule": {
   "Type": "AWS::Events::Rule",
   "Properties": {
@@ -590,7 +590,7 @@ The following example creates a rule that notifies an Amazon Simple Notification
 #### YAML
 <a name="aws-resource-events-rule--examples--Notify_a_Topic_in_Response_to_a_Log_Entry--yaml"></a>
 
-```
+```yaml
 OpsEventRule:
   Type: AWS::Events::Rule
   Properties:

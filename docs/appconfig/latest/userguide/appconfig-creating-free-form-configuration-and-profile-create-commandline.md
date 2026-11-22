@@ -46,7 +46,7 @@ For freeform configurations hosted in the AWS AppConfig hosted configuration sto
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    New-APPCConfigurationProfile `
      -Name {{NAME}} `
      -ApplicationId {{APPLICATION_ID}} `

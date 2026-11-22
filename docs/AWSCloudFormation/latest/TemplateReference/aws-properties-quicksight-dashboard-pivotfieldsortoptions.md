@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-pivotfieldsortoptions-syntax.json"></a>
 
-```
+```json
 {
   "[FieldId](#cfn-quicksight-dashboard-pivotfieldsortoptions-fieldid)" : {{String}},
   "[SortBy](#cfn-quicksight-dashboard-pivotfieldsortoptions-sortby)" : {{PivotTableSortBy}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-pivotfieldsortoptions-syntax.yaml"></a>
 
-```
+```yaml
   [FieldId](#cfn-quicksight-dashboard-pivotfieldsortoptions-fieldid): {{String}}
   [SortBy](#cfn-quicksight-dashboard-pivotfieldsortoptions-sortby): {{
     PivotTableSortBy}}

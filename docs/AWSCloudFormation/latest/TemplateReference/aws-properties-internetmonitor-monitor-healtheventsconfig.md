@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-internetmonitor-monitor-healtheventsconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AvailabilityLocalHealthEventsConfig](#cfn-internetmonitor-monitor-healtheventsconfig-availabilitylocalhealtheventsconfig)" : {{LocalHealthEventsConfig}},
   "[AvailabilityScoreThreshold](#cfn-internetmonitor-monitor-healtheventsconfig-availabilityscorethreshold)" : {{Number}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-internetmonitor-monitor-healtheventsconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AvailabilityLocalHealthEventsConfig](#cfn-internetmonitor-monitor-healtheventsconfig-availabilitylocalhealtheventsconfig): {{
     LocalHealthEventsConfig}}
   [AvailabilityScoreThreshold](#cfn-internetmonitor-monitor-healtheventsconfig-availabilityscorethreshold): {{Number}}

@@ -14,7 +14,7 @@ As a best practice, attach policies with the `aws:PrincipalTag` condition key to
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {

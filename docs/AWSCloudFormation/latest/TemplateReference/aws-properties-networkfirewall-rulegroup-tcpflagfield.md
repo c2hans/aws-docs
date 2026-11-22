@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkfirewall-rulegroup-tcpflagfield-syntax.json"></a>
 
-```
+```json
 {
   "[Flags](#cfn-networkfirewall-rulegroup-tcpflagfield-flags)" : {{[ String, ... ]}},
   "[Masks](#cfn-networkfirewall-rulegroup-tcpflagfield-masks)" : {{[ String, ... ]}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkfirewall-rulegroup-tcpflagfield-syntax.yaml"></a>
 
-```
+```yaml
   [Flags](#cfn-networkfirewall-rulegroup-tcpflagfield-flags): {{
     - String}}
   [Masks](#cfn-networkfirewall-rulegroup-tcpflagfield-masks): {{

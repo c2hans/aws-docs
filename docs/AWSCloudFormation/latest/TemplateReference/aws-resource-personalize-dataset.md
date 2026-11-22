@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-personalize-dataset-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Personalize::Dataset",
   "Properties" : {
@@ -54,7 +54,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-personalize-dataset-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Personalize::Dataset
 Properties:
   [DatasetGroupArn](#cfn-personalize-dataset-datasetgrouparn): {{String}}
@@ -155,7 +155,7 @@ The following example creates an Amazon Personalize dataset and a dataset import
 #### JSON
 <a name="aws-resource-personalize-dataset--examples--Creating_a_dataset--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -182,7 +182,7 @@ The following example creates an Amazon Personalize dataset and a dataset import
 #### YAML
 <a name="aws-resource-personalize-dataset--examples--Creating_a_dataset--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   MyDataset:

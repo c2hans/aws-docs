@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datasync-locationazureblob-azureoidcconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ClientId](#cfn-datasync-locationazureblob-azureoidcconfig-clientid)" : {{String}},
   "[TenantId](#cfn-datasync-locationazureblob-azureoidcconfig-tenantid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datasync-locationazureblob-azureoidcconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ClientId](#cfn-datasync-locationazureblob-azureoidcconfig-clientid): {{String}}
   [TenantId](#cfn-datasync-locationazureblob-azureoidcconfig-tenantid): {{String}}
 ```

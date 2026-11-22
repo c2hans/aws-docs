@@ -85,7 +85,7 @@ aws dynamodb put-item \
 
 On the command line, it can be difficult to compose valid JSON. However, the AWS CLI can read JSON files. For example, consider the following JSON code snippet, which is stored in a file named *key-conditions.json*.
 
-```
+```json
 {
     "Artist": {
         "AttributeValueList": [

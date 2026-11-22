@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-destinationendpoint-srtcallerstandarddestinationendpointconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EncryptionPassphrase](#cfn-mediaconnect-destinationendpoint-srtcallerstandarddestinationendpointconfiguration-encryptionpassphrase)" : {{EndpointEncryptionSecretConfiguration}},
   "[MinimumLatencyMilliseconds](#cfn-mediaconnect-destinationendpoint-srtcallerstandarddestinationendpointconfiguration-minimumlatencymilliseconds)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-destinationendpoint-srtcallerstandarddestinationendpointconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EncryptionPassphrase](#cfn-mediaconnect-destinationendpoint-srtcallerstandarddestinationendpointconfiguration-encryptionpassphrase): {{
     EndpointEncryptionSecretConfiguration}}
   [MinimumLatencyMilliseconds](#cfn-mediaconnect-destinationendpoint-srtcallerstandarddestinationendpointconfiguration-minimumlatencymilliseconds): {{Integer}}

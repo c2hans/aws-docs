@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-verifiedpermissions-identitysource-openidconnecttokenselection-syntax.json"></a>
 
-```
+```json
 {
   "[AccessTokenOnly](#cfn-verifiedpermissions-identitysource-openidconnecttokenselection-accesstokenonly)" : {{OpenIdConnectAccessTokenConfiguration}},
   "[IdentityTokenOnly](#cfn-verifiedpermissions-identitysource-openidconnecttokenselection-identitytokenonly)" : {{OpenIdConnectIdentityTokenConfiguration}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-verifiedpermissions-identitysource-openidconnecttokenselection-syntax.yaml"></a>
 
-```
+```yaml
   [AccessTokenOnly](#cfn-verifiedpermissions-identitysource-openidconnecttokenselection-accesstokenonly): {{
     OpenIdConnectAccessTokenConfiguration}}
   [IdentityTokenOnly](#cfn-verifiedpermissions-identitysource-openidconnecttokenselection-identitytokenonly): {{

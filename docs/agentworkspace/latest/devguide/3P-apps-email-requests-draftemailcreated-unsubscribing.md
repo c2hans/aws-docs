@@ -14,6 +14,6 @@ offDraftEmailCreated(handler: SubscriptionHandler<EmailContactId>, contactId?: s
 
  **Usage**
 
-```
+```typescript
 emailClient.offDraftEmailCreated(handler);
 ```

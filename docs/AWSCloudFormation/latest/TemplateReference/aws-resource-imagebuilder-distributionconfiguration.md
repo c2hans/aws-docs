@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-imagebuilder-distributionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ImageBuilder::DistributionConfiguration",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-imagebuilder-distributionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ImageBuilder::DistributionConfiguration
 Properties:
   [Description](#cfn-imagebuilder-distributionconfiguration-description): {{String}}
@@ -116,7 +116,7 @@ The following example shows the template for a DistributionConfiguration resourc
 #### YAML
 <a name="aws-resource-imagebuilder-distributionconfiguration--examples--Create_a_distribution_configuration_resource_for_an_AMI--yaml"></a>
 
-```
+```yaml
 Resources:
   DistributionConfigurationAllParameters:
     Type: 'AWS::ImageBuilder::DistributionConfiguration'
@@ -165,7 +165,7 @@ Resources:
 #### JSON
 <a name="aws-resource-imagebuilder-distributionconfiguration--examples--Create_a_distribution_configuration_resource_for_an_AMI--json"></a>
 
-```
+```json
 {
     "Resources": {
         "DistributionConfigurationAllParameters": {
@@ -245,7 +245,7 @@ The following example shows the template for a DistributionConfiguration resourc
 #### YAML
 <a name="aws-resource-imagebuilder-distributionconfiguration--examples--Create_a_distribution_configuration_resource_for_a_container_image--yaml"></a>
 
-```
+```yaml
 Resources:
   DistributionConfigurationAllParameters:
     Type: 'AWS::ImageBuilder::DistributionConfiguration'
@@ -279,7 +279,7 @@ Resources:
 #### JSON
 <a name="aws-resource-imagebuilder-distributionconfiguration--examples--Create_a_distribution_configuration_resource_for_a_container_image--json"></a>
 
-```
+```json
 {
     "Resources": {
         "DistributionConfigurationAllParameters": {

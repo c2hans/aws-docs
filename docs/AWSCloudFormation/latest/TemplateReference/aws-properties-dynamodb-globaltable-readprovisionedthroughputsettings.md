@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dynamodb-globaltable-readprovisionedthroughputsettings-syntax.json"></a>
 
-```
+```json
 {
   "[ReadCapacityAutoScalingSettings](#cfn-dynamodb-globaltable-readprovisionedthroughputsettings-readcapacityautoscalingsettings)" : {{CapacityAutoScalingSettings}},
   "[ReadCapacityUnits](#cfn-dynamodb-globaltable-readprovisionedthroughputsettings-readcapacityunits)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dynamodb-globaltable-readprovisionedthroughputsettings-syntax.yaml"></a>
 
-```
+```yaml
   [ReadCapacityAutoScalingSettings](#cfn-dynamodb-globaltable-readprovisionedthroughputsettings-readcapacityautoscalingsettings): {{
     CapacityAutoScalingSettings}}
   [ReadCapacityUnits](#cfn-dynamodb-globaltable-readprovisionedthroughputsettings-readcapacityunits): {{Integer}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpoolclientsessionconfigurationattachment-ssosession-syntax.json"></a>
 
-```
+```json
 {
   "[MaxValidityMinutes](#cfn-cognito-userpoolclientsessionconfigurationattachment-ssosession-maxvalidityminutes)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpoolclientsessionconfigurationattachment-ssosession-syntax.yaml"></a>
 
-```
+```yaml
   [MaxValidityMinutes](#cfn-cognito-userpoolclientsessionconfigurationattachment-ssosession-maxvalidityminutes): {{Integer}}
 ```
 

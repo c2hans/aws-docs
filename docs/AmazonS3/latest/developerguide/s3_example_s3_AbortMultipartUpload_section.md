@@ -16,7 +16,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 
-```
+```cpp
 //! Abort a multipart upload to an S3 bucket.
 /*!
     \param bucket: The name of the S3 bucket where the object will be uploaded.
@@ -73,7 +73,7 @@ For more information, see [Aborting a multipart upload](https://docs.aws.amazon.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/s3#code-examples).
 
-```
+```java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.amazon.awssdk.core.exception.SdkException;
@@ -417,17 +417,17 @@ public class AbortMultipartUploadExamples {
 **Tools for PowerShell V4**
 **Example 1: This command aborts multipart uploads created earlier than 5 days ago.**
 
-```
+```powershell
 Remove-S3MultipartUpload -BucketName amzn-s3-demo-bucket -DaysBefore 5
 ```
 **Example 2: This command aborts multipart uploads created earlier than January 2nd, 2014.**
 
-```
+```powershell
 Remove-S3MultipartUpload -BucketName amzn-s3-demo-bucket -InitiatedDate "Thursday, January 02, 2014"
 ```
 **Example 3: This command aborts multipart uploads created earlier than January 2nd, 2014, 10:45:37.**
 
-```
+```powershell
 Remove-S3MultipartUpload -BucketName amzn-s3-demo-bucket -InitiatedDate "2014/01/02 10:45:37"
 ```
 +  For API details, see [AbortMultipartUpload](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -435,17 +435,17 @@ Remove-S3MultipartUpload -BucketName amzn-s3-demo-bucket -InitiatedDate "2014/01
 **Tools for PowerShell V5**
 **Example 1: This command aborts multipart uploads created earlier than 5 days ago.**
 
-```
+```powershell
 Remove-S3MultipartUpload -BucketName amzn-s3-demo-bucket -DaysBefore 5
 ```
 **Example 2: This command aborts multipart uploads created earlier than January 2nd, 2014.**
 
-```
+```powershell
 Remove-S3MultipartUpload -BucketName amzn-s3-demo-bucket -InitiatedDate "Thursday, January 02, 2014"
 ```
 **Example 3: This command aborts multipart uploads created earlier than January 2nd, 2014, 10:45:37.**
 
-```
+```powershell
 Remove-S3MultipartUpload -BucketName amzn-s3-demo-bucket -InitiatedDate "2014/01/02 10:45:37"
 ```
 +  For API details, see [AbortMultipartUpload](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

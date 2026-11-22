@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-vpclattice-domainverification-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::VpcLattice::DomainVerification",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-vpclattice-domainverification-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::VpcLattice::DomainVerification
 Properties:
   [DomainName](#cfn-vpclattice-domainverification-domainname): {{String}}

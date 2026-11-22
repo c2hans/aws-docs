@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lambda-runtime-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lambda::Runtime",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lambda-runtime-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lambda::Runtime
 Properties:
   [Description](#cfn-lambda-runtime-description): {{String}}
@@ -131,7 +131,7 @@ Create a runtime named `my-runtime` that is generally available and scheduled fo
 #### JSON
 <a name="aws-resource-lambda-runtime--examples--Customer-managed_runtime--json"></a>
 
-```
+```json
 "MyRuntime": {
     "Type": "AWS::Lambda::Runtime",
     "Properties": {
@@ -155,7 +155,7 @@ Create a runtime named `my-runtime` that is generally available and scheduled fo
 #### YAML
 <a name="aws-resource-lambda-runtime--examples--Customer-managed_runtime--yaml"></a>
 
-```
+```yaml
 MyRuntime:
   Type: AWS::Lambda::Runtime
   Properties:

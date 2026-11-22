@@ -143,7 +143,7 @@ A list is similar to a JSON array. There are no restrictions on the data types t
 
 The following example shows a list that contains two strings and a number.
 
-```
+```json
 FavoriteThings: ["Cookies", "Coffee", 3.14159]
 ```
 
@@ -159,7 +159,7 @@ A map is similar to a JSON object. There are no restrictions on the data types t
 
 Maps are ideal for storing JSON documents in DynamoDB. The following example shows a map that contains a string, a number, and a nested list that contains another map.
 
-```
+```json
 {
     Day: "Monday",
     UnreadEmails: 42,
@@ -189,7 +189,7 @@ Each value within a set must be unique. The order of the values within a set is 
 
 The following example shows a string set, a number set, and a binary set:
 
-```
+```json
 ["Black", "Green", "Red"]
 
 [42.2, -19, 7.5, 3.14]

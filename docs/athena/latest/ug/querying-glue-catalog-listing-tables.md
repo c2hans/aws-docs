@@ -9,7 +9,7 @@ To list metadata for tables, you can query by table schema or by table name.
 **Example – Listing tables by schema**
 The following query lists tables that use the `rdspostgresql` table schema.
 
-```
+```sql
 SELECT table_schema,
        table_name,
        table_type
@@ -25,7 +25,7 @@ The following table shows a sample result.
 **Example – Searching for a table by name**
 The following query obtains metadata information for the table `athena1`.
 
-```
+```sql
 SELECT table_schema,
        table_name,
        table_type

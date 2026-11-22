@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssmcontacts-plan-targets-syntax.json"></a>
 
-```
+```json
 {
   "[ChannelTargetInfo](#cfn-ssmcontacts-plan-targets-channeltargetinfo)" : {{ChannelTargetInfo}},
   "[ContactTargetInfo](#cfn-ssmcontacts-plan-targets-contacttargetinfo)" : {{ContactTargetInfo}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssmcontacts-plan-targets-syntax.yaml"></a>
 
-```
+```yaml
   [ChannelTargetInfo](#cfn-ssmcontacts-plan-targets-channeltargetinfo): {{
     ChannelTargetInfo}}
   [ContactTargetInfo](#cfn-ssmcontacts-plan-targets-contacttargetinfo): {{

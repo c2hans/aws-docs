@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-workspace-paletteprimary-syntax.json"></a>
 
-```
+```json
 {
   "[Active](#cfn-connect-workspace-paletteprimary-active)" : {{String}},
   "[ContrastText](#cfn-connect-workspace-paletteprimary-contrasttext)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-workspace-paletteprimary-syntax.yaml"></a>
 
-```
+```yaml
   [Active](#cfn-connect-workspace-paletteprimary-active): {{String}}
   [ContrastText](#cfn-connect-workspace-paletteprimary-contrasttext): {{String}}
   [Default](#cfn-connect-workspace-paletteprimary-default): {{String}}

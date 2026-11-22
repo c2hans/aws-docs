@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-connect-testcase-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Connect::TestCase",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-connect-testcase-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Connect::TestCase
 Properties:
   [Content](#cfn-connect-testcase-content): {{String}}

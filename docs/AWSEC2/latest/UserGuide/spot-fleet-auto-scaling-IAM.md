@@ -13,7 +13,7 @@ To use automatic scaling for Spot Fleet, users must have permissions to use the 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

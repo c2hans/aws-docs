@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-nodegroup-updateconfig-syntax.json"></a>
 
-```
+```json
 {
   "[MaxUnavailable](#cfn-eks-nodegroup-updateconfig-maxunavailable)" : {{Number}},
   "[MaxUnavailablePercentage](#cfn-eks-nodegroup-updateconfig-maxunavailablepercentage)" : {{Number}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-nodegroup-updateconfig-syntax.yaml"></a>
 
-```
+```yaml
   [MaxUnavailable](#cfn-eks-nodegroup-updateconfig-maxunavailable): {{Number}}
   [MaxUnavailablePercentage](#cfn-eks-nodegroup-updateconfig-maxunavailablepercentage): {{Number}}
   [UpdateStrategy](#cfn-eks-nodegroup-updateconfig-updatestrategy): {{String}}

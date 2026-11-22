@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-applicationconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Attributes](#cfn-wafv2-webacl-applicationconfig-attributes)" : {{[ ApplicationAttribute, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-applicationconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Attributes](#cfn-wafv2-webacl-applicationconfig-attributes): {{
     - ApplicationAttribute}}
 ```

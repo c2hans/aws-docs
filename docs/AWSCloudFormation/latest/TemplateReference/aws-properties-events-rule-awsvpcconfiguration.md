@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-events-rule-awsvpcconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AssignPublicIp](#cfn-events-rule-awsvpcconfiguration-assignpublicip)" : {{String}},
   "[SecurityGroups](#cfn-events-rule-awsvpcconfiguration-securitygroups)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-events-rule-awsvpcconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AssignPublicIp](#cfn-events-rule-awsvpcconfiguration-assignpublicip): {{String}}
   [SecurityGroups](#cfn-events-rule-awsvpcconfiguration-securitygroups): {{
     - String}}
@@ -68,7 +68,7 @@ The following example sets the `AwsVpcConfiguration` parameter to not assign a p
 #### JSON
 <a name="aws-properties-events-rule-awsvpcconfiguration--examples--Set_the_AwsVpcConfiguration_parameter--json"></a>
 
-```
+```json
 "AwsVpcConfiguration": {
   "AssignPublicIp": "DISABLED",
   "SecurityGroups": [
@@ -90,7 +90,7 @@ The following example sets the `AwsVpcConfiguration` parameter to not assign a p
 #### YAML
 <a name="aws-properties-events-rule-awsvpcconfiguration--examples--Set_the_AwsVpcConfiguration_parameter--yaml"></a>
 
-```
+```yaml
 AwsVpcConfiguration:
   AssignPublicIp: "DISABLED"
   SecurityGroups:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-project-environmentparameter-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-datazone-project-environmentparameter-name)" : {{String}},
   "[Value](#cfn-datazone-project-environmentparameter-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-project-environmentparameter-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-datazone-project-environmentparameter-name): {{String}}
   [Value](#cfn-datazone-project-environmentparameter-value): {{String}}
 ```

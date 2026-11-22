@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-projectprofile-environmentconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AwsAccount](#cfn-datazone-projectprofile-environmentconfiguration-awsaccount)" : {{AwsAccount}},
   "[AwsRegion](#cfn-datazone-projectprofile-environmentconfiguration-awsregion)" : {{Region}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-projectprofile-environmentconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AwsAccount](#cfn-datazone-projectprofile-environmentconfiguration-awsaccount): {{
     AwsAccount}}
   [AwsRegion](#cfn-datazone-projectprofile-environmentconfiguration-awsregion): {{

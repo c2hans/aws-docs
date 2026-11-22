@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafregional-sqlinjectionmatchset-fieldtomatch-syntax.json"></a>
 
-```
+```json
 {
   "[Data](#cfn-wafregional-sqlinjectionmatchset-fieldtomatch-data)" : {{String}},
   "[Type](#cfn-wafregional-sqlinjectionmatchset-fieldtomatch-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafregional-sqlinjectionmatchset-fieldtomatch-syntax.yaml"></a>
 
-```
+```yaml
   [Data](#cfn-wafregional-sqlinjectionmatchset-fieldtomatch-data): {{String}}
   [Type](#cfn-wafregional-sqlinjectionmatchset-fieldtomatch-type): {{String}}
 ```

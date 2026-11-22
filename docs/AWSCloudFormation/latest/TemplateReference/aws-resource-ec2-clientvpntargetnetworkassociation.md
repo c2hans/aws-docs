@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-clientvpntargetnetworkassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::ClientVpnTargetNetworkAssociation",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-clientvpntargetnetworkassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::ClientVpnTargetNetworkAssociation
 Properties:
   [AvailabilityZone](#cfn-ec2-clientvpntargetnetworkassociation-availabilityzone): {{String}}
@@ -97,7 +97,7 @@ The following example associates a target network with a client VPN endpoint.
 #### YAML
 <a name="aws-resource-ec2-clientvpntargetnetworkassociation--examples--Associate_a_target_subnet_with_a_client_VPN_endpoint--yaml"></a>
 
-```
+```yaml
 myNetworkAssociation:
   Type: "AWS::EC2::ClientVpnTargetNetworkAssociation"
   Properties:
@@ -110,7 +110,7 @@ myNetworkAssociation:
 #### JSON
 <a name="aws-resource-ec2-clientvpntargetnetworkassociation--examples--Associate_a_target_subnet_with_a_client_VPN_endpoint--json"></a>
 
-```
+```json
 "myNetworkAssociation": {
     "Type": "AWS::EC2::ClientVpnTargetNetworkAssociation",
     "Properties": {

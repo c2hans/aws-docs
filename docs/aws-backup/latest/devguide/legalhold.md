@@ -95,7 +95,7 @@ To view all legal holds programmatically, you can use the following API calls: [
 
 The following JSON template can be used for `GetLegalHold`.
 
-```
+```json
 GET /legal-holds/{legalHoldId} HTTP/1.1
 
 Request
@@ -129,7 +129,7 @@ Response
 
 The following JSON template can be used for `ListLegalHolds`.
 
-```
+```json
 GET /legal-holds/
   &maxResults=MaxResults
   &nextToken=NextToken
@@ -192,7 +192,7 @@ To view recovery points in a legal hold programmatically, you can use the [ListR
 
 The following is an example request and response for `ListRecoveryPointsByLegalHold`.
 
-```
+```json
 GET /legal-holds/{legalHoldId}/recovery-points HTTP/1.1
 
 Request
@@ -243,7 +243,7 @@ To remove a hold programmatically, use the API call [CancelLegalHold](https://do
 
 Use the following JSON template.
 
-```
+```json
 DELETE /legal-holds/{legalHoldId}
 
 Request

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-dataautomationproject-videostandardextraction-syntax.json"></a>
 
-```
+```json
 {
   "[BoundingBox](#cfn-bedrock-dataautomationproject-videostandardextraction-boundingbox)" : {{VideoBoundingBox}},
   "[Category](#cfn-bedrock-dataautomationproject-videostandardextraction-category)" : {{VideoExtractionCategory}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-dataautomationproject-videostandardextraction-syntax.yaml"></a>
 
-```
+```yaml
   [BoundingBox](#cfn-bedrock-dataautomationproject-videostandardextraction-boundingbox): {{
     VideoBoundingBox}}
   [Category](#cfn-bedrock-dataautomationproject-videostandardextraction-category): {{

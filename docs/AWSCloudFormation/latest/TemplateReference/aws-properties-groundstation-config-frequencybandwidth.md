@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-groundstation-config-frequencybandwidth-syntax.json"></a>
 
-```
+```json
 {
   "[Units](#cfn-groundstation-config-frequencybandwidth-units)" : {{String}},
   "[Value](#cfn-groundstation-config-frequencybandwidth-value)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-groundstation-config-frequencybandwidth-syntax.yaml"></a>
 
-```
+```yaml
   [Units](#cfn-groundstation-config-frequencybandwidth-units): {{String}}
   [Value](#cfn-groundstation-config-frequencybandwidth-value): {{Number}}
 ```
@@ -61,7 +61,7 @@ The following example creates a Ground Station `Bandwidth`
 #### JSON
 <a name="aws-properties-groundstation-config-frequencybandwidth--examples--Create_a_Bandwidth--json"></a>
 
-```
+```json
 {
   "Bandwidth": {
     "Value": 30,
@@ -73,7 +73,7 @@ The following example creates a Ground Station `Bandwidth`
 #### YAML
 <a name="aws-properties-groundstation-config-frequencybandwidth--examples--Create_a_Bandwidth--yaml"></a>
 
-```
+```yaml
 Bandwidth:
   Value: 30
   Units: MHz

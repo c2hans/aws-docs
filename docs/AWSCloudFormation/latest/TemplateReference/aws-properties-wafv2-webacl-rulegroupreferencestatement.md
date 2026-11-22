@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-rulegroupreferencestatement-syntax.json"></a>
 
-```
+```json
 {
   "[Arn](#cfn-wafv2-webacl-rulegroupreferencestatement-arn)" : {{String}},
   "[ExcludedRules](#cfn-wafv2-webacl-rulegroupreferencestatement-excludedrules)" : {{[ ExcludedRule, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-rulegroupreferencestatement-syntax.yaml"></a>
 
-```
+```yaml
   [Arn](#cfn-wafv2-webacl-rulegroupreferencestatement-arn): {{String}}
   [ExcludedRules](#cfn-wafv2-webacl-rulegroupreferencestatement-excludedrules): {{
     - ExcludedRule}}

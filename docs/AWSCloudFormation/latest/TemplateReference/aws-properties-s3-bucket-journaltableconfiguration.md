@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-journaltableconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EncryptionConfiguration](#cfn-s3-bucket-journaltableconfiguration-encryptionconfiguration)" : {{MetadataTableEncryptionConfiguration}},
   "[RecordExpiration](#cfn-s3-bucket-journaltableconfiguration-recordexpiration)" : {{RecordExpiration}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-journaltableconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EncryptionConfiguration](#cfn-s3-bucket-journaltableconfiguration-encryptionconfiguration): {{
     MetadataTableEncryptionConfiguration}}
   [RecordExpiration](#cfn-s3-bucket-journaltableconfiguration-recordexpiration): {{

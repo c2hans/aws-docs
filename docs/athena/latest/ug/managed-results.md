@@ -52,7 +52,7 @@ The `Principal` section on the key policy specifies who can use this key. The ma
 
 Managed query results uses your workgroup ARN for [encryption context](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#encrypt_context). Because the `Principal` section is an AWS service, you also need to add `aws:sourceArn` and `aws:sourceAccount` to the key policy conditions. The following example shows an AWS KMS key policy that has minimum permissions on a single workgroup.
 
-```
+```json
  {
     "Sid": "Allow athena service principal to use the key",
     "Effect": "Allow",
@@ -78,7 +78,7 @@ Managed query results uses your workgroup ARN for [encryption context](https://d
 
 The following example AWS KMS key policy allows all workgroups within the same account {{account-id}} to use the same AWS KMS key.
 
-```
+```json
 {
     "Sid": "Allow athena service principal to use the key",
     "Effect": "Allow",

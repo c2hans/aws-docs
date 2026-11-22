@@ -10,7 +10,7 @@ The `DeleteItem` request lets you tell the AWS AppSync DynamoDB function to make
 
 The `DeleteItem` request has the following structure:
 
-```
+```TypeScript
 type DynamoDBDeleteItemRequest = {
   operation: 'DeleteItem';
   key: { [key: string]: any };
@@ -58,7 +58,7 @@ For more information about JavaScript resolvers, see [JavaScript resolvers overv
 
 The following example is a function request handler for a GraphQL mutation `deleteItem(id: ID!)`. If an item exists with this ID, it’s deleted.
 
-```
+```TypeScript
 import { util } from '@aws-appsync/utils';
 export function request(ctx) {
   return {
@@ -73,7 +73,7 @@ export function request(ctx) {
 
 The following example is a function request handler for a GraphQL mutation `deleteItem(id: ID!, expectedVersion: Int!)`. If an item exists with this ID, it’s deleted, but only if its `version` field set to `expectedVersion`:
 
-```
+```TypeScript
 import { util } from '@aws-appsync/utils';
 
 export function request(ctx) {

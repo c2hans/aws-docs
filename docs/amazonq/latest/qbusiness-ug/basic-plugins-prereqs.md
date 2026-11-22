@@ -15,7 +15,7 @@ If you use the console and are creating a new web experience, Amazon Q Business 
 Before you can configure built-in plugins, make sure you've added the following permissions in you Amazon Q Business web experience’s IAM permissions policy:
 + In `Action` field for `"Sid": "QBusinessConversationPermissions`, add the following permissions to allow Amazon Q Business to list plugin actions:
 
-  ```
+  ```json
   {
       "Sid": "QBusinessConversationPermissions",
       "Effect": "Allow",
@@ -28,7 +28,7 @@ Before you can configure built-in plugins, make sure you've added the following 
 
   Add the following permissions to allow Amazon Q Business to allow your end users to discover plugins in their web experience:
 
-  ```
+  ```json
   {
       "Sid": "QBusinessPluginDiscoveryPermissions",
       "Effect": "Allow",
@@ -48,7 +48,7 @@ Before you can configure built-in plugins, make sure you've added the following 
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -75,7 +75,7 @@ Before you can configure built-in plugins, make sure you've added the following 
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

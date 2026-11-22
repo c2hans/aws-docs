@@ -100,7 +100,7 @@ HTTP Status Code: 401
 
 This example illustrates one usage of GetDomainNameAccessAssociations.
 
-```
+```request
 GET /domainnameaccessassociations?limit=10&resourceOwner=SELF
 Content-Type: application/json
 Host: apigateway.us-east-1.amazonaws.com

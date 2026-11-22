@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iam-user-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IAM::User",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iam-user-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IAM::User
 Properties:
   [Groups](#cfn-iam-user-groups): {{

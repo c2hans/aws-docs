@@ -95,7 +95,7 @@ When you include the S3 Object Lock event hold duration field, the report also i
 The Object ACL field is defined in JSON format. An inventory report displays the value for the Object ACL field as a base64-encoded string.
 For example, suppose that you have the following Object ACL field in JSON format:
 
-  ```
+  ```json
   {
           "version": "2022-11-10",
           "status": "AVAILABLE",

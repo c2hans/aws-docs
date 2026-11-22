@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-codehookspecification-syntax.json"></a>
 
-```
+```json
 {
   "[LambdaCodeHook](#cfn-lex-bot-codehookspecification-lambdacodehook)" : {{LambdaCodeHook}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-codehookspecification-syntax.yaml"></a>
 
-```
+```yaml
   [LambdaCodeHook](#cfn-lex-bot-codehookspecification-lambdacodehook): {{
     LambdaCodeHook}}
 ```

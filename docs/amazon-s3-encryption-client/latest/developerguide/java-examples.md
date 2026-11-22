@@ -37,7 +37,7 @@ To specify a KMS key as your wrapping key, instantiate your client with the `kms
 
 To use a KMS key as your wrapping key, you need [kms:GenerateDataKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html) and [kms:Decrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html) permissions on the KMS key. The value of the `kmsKeyId` parameter can be any valid KMS key identifier. For details, see [Key identifiers](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-id) in the *AWS Key Management Service Developer Guide*.
 
-```
+```java
 // v4
 
 class v4KMSKeyExample {
@@ -54,7 +54,7 @@ class v4KMSKeyExample {
 
 To specify a Raw AES key (`javax.crypto.SecretKey`) as your wrapping key, instantiate your client with the `aesKey` builder parameter.
 
-```
+```java
 // v4
 
 class v4AESKeyExample {
@@ -76,7 +76,7 @@ To specify a Raw RSA key (`java.security.KeyPair`) as your wrapping key, instant
 
 To instantiate version 3.*x* of the client to perform both encrypt and decrypt operations, specify both the public and private keys of your key pair.
 
-```
+```java
 // v4
 
 class v4RSAKeyPairExample {
@@ -93,7 +93,7 @@ class v4RSAKeyPairExample {
 
 To instantiate the client to encrypt only, specify the **public key**. If you specify the public key alone, all `GetObject` calls will fail because the private key is required to decrypt.
 
-```
+```java
 // v4
 
 class v4RSAKeyPairExample {
@@ -110,7 +110,7 @@ class v4RSAKeyPairExample {
 
 To instantiate the client to decrypt only, specify the **private key**. If you specify the private key alone, all `PutObject` calls will fail because the public key is required to encrypt.
 
-```
+```java
 // v4
 
 class v4RSAKeyPairExample {
@@ -129,7 +129,7 @@ class v4RSAKeyPairExample {
 
 If you want to customize your client, you can manually configure your own keyring and cryptographic materials manager (CMM). The following example manually configures an AWS KMS keyring using a symmetric encryption AWS KMS wrapping key and passes the custom AWS KMS client to the Amazon S3 Encryption Client.
 
-```
+```java
 // v4
 class v4CustomKeyringExample {
     public static void main(String[] args) {
@@ -158,7 +158,7 @@ This example uses a Raw RSA wrapping key and instantiates the Amazon S3 Encrypti
 
 1. Specify your wrapping key by passing it to the Amazon S3 Encryption Client when you [instantiate your client](#java-instantiate-client). The Amazon S3 Encryption Client for Java automatically configures a [keyring](concepts.md#keyring) based on the wrapping key you specify.
 
-   ```
+   ```java
    // v4
 
    class v4RSAKeyPairExample {
@@ -178,7 +178,7 @@ This example uses a Raw RSA wrapping key and instantiates the Amazon S3 Encrypti
 
    1. The Amazon S3 Encryption Client uploads the encrypted data key and the encrypted object to Amazon S3 as part of the `PutObject` call.
 
-   ```
+   ```java
    // v4
 
    class v4EncryptExample {
@@ -197,7 +197,7 @@ This example uses a Raw RSA wrapping key and instantiates the Amazon S3 Encrypti
 
    1. The Amazon S3 Encryption Client uses the plaintext data key to decrypt the object, discards the plaintext data key, and returns the plaintext object as part of the `GetObject` call.
 
-   ```
+   ```java
    // v4
 
    class v4DecryptExample {
@@ -214,13 +214,13 @@ The default decryption mode cannot decrypt objects larger than 64 MB. This decry
 
 1. Optional: verify that the decrypted object matches the original plaintext object that you uploaded.
 
-   ```
+   ```java
    assert output.equals({{objectContent}});
    ```
 
 1. The Amazon S3 Encryption Client implements the `AutoClosable` interface, which automatically calls `close()` when you exit a `try-with-resources` block for which the object has been declared in the resource specification header. As a best practice, you should either use `try-with-resources` or explicitly call the `close()` method.
 
-   ```
+   ```java
    s3Client.close();
    ```
 
@@ -236,7 +236,7 @@ By default, version 4.*x* of the Amazon S3 Encryption Client encrypts and decryp
 
 You can include the `Range` parameter in your `GetObject` request to download and decrypt a specific byte-range from an object. The start and end indices of the byte range are included in the partial object. The byte-range you specify should reflect to the following format:
 
-```
+```java
 range("bytes={{startIndex}}–{{endIndex}}")
 ```
 
@@ -258,7 +258,7 @@ The following walkthrough explains how to perform a ranged request when using ve
 
    The following example specifies a raw AES key as the wrapping key.
 
-   ```
+   ```java
    // v4
 
    class v4EnableRangedGetsExample {
@@ -275,7 +275,7 @@ The following walkthrough explains how to perform a ranged request when using ve
 
    The following example specifies a start index at byte 10 and end index at byte 20.
 
-   ```
+   ```java
    // v4
 
    class v4RangedGetExample {
@@ -291,13 +291,13 @@ The following walkthrough explains how to perform a ranged request when using ve
 
 1. Optional: verify that the decrypted partial object matches the original plaintext object that you uploaded at the same range.
 
-   ```
+   ```java
    assert output.equals({{objectContent}});
    ```
 
 1. The Amazon S3 Encryption Client implements the `AutoClosable` interface, which automatically calls `close()` when you exit a `try-with-resources` block for which the object has been declared in the resource specification header. As a best practice, you should either use `try-with-resources` or explicitly call the `close()` method.
 
-   ```
+   ```java
    s3Client.close();
    ```
 
@@ -321,7 +321,7 @@ To enable automatic multipart uploads with the high-level API, you must add depe
 
 To use the AWS CRT-based Amazon S3 client with the Amazon S3 Encryption Client, add the following two dependencies. For more information on creating dependencies and installing the Amazon S3 Encryption Client, see [Installing the Amazon S3 Encryption Client for Java](java.md#java-installation).
 
-```
+```xml
 <dependency>
   <groupId>software.amazon.awssdk</groupId>
   <artifactId>s3</artifactId>
@@ -340,7 +340,7 @@ To enable the Amazon S3 Encryption Client to automatically perform multipart upl
 
 The following example specifies a raw AES key as the wrapping key.
 
-```
+```java
 // v4
 
 class v4EnableMultipartUploadExample {
@@ -364,7 +364,7 @@ The Amazon S3 Encryption Client does not require any additional configuration to
 
 1. Call [`UploadPart`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_UploadPart.html) to upload each part of your object. When you upload the final part, you must specify `isLastPart` for the Amazon S3 Encryption Client to be able to call `cipher.doFinal()`
 
-   ```
+   ```java
    // v4
 
    class v4UploadFinalPartExample {

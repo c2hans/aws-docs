@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-vpclattice-servicenetworkserviceassociation-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-vpclattice-servicenetworkserviceassociation-tag-key)" : {{String}},
   "[Value](#cfn-vpclattice-servicenetworkserviceassociation-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-vpclattice-servicenetworkserviceassociation-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-vpclattice-servicenetworkserviceassociation-tag-key): {{String}}
   [Value](#cfn-vpclattice-servicenetworkserviceassociation-tag-value): {{String}}
 ```

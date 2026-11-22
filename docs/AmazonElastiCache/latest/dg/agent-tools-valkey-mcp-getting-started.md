@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/agent-tools-
 
 **Configure your MCP client:** Add the following to your MCP client configuration:
 
-```
+```json
 {
   "mcpServers": {
     "valkey": {

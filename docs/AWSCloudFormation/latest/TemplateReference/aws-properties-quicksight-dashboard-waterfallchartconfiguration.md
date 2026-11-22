@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-waterfallchartconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CategoryAxisDisplayOptions](#cfn-quicksight-dashboard-waterfallchartconfiguration-categoryaxisdisplayoptions)" : {{AxisDisplayOptions}},
   "[CategoryAxisLabelOptions](#cfn-quicksight-dashboard-waterfallchartconfiguration-categoryaxislabeloptions)" : {{ChartAxisLabelOptions}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-waterfallchartconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CategoryAxisDisplayOptions](#cfn-quicksight-dashboard-waterfallchartconfiguration-categoryaxisdisplayoptions): {{
     AxisDisplayOptions}}
   [CategoryAxisLabelOptions](#cfn-quicksight-dashboard-waterfallchartconfiguration-categoryaxislabeloptions): {{

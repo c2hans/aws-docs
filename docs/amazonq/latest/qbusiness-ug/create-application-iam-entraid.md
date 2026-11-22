@@ -117,7 +117,7 @@ After you create and configure your Microsoft Entra ID application, create an IA
    + In **Custom trust policy**, add the following trust policy, replacing the value for {{AWS IAM Identity Provider ARN}} with the identity provider ARN you copied in the previous step:
 ****
 
-     ```
+     ```json
 
      ```
 **Note**

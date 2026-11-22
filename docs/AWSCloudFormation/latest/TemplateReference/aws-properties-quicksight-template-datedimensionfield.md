@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-datedimensionfield-syntax.json"></a>
 
-```
+```json
 {
   "[Column](#cfn-quicksight-template-datedimensionfield-column)" : {{ColumnIdentifier}},
   "[DateGranularity](#cfn-quicksight-template-datedimensionfield-dategranularity)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-datedimensionfield-syntax.yaml"></a>
 
-```
+```yaml
   [Column](#cfn-quicksight-template-datedimensionfield-column): {{
     ColumnIdentifier}}
   [DateGranularity](#cfn-quicksight-template-datedimensionfield-dategranularity): {{String}}

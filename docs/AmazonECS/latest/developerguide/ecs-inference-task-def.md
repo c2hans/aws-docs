@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-infe
 
 The following example shows a task definition that requests all Neuron devices on the instance using the `resourceRequirements` parameter. This approach is only available on Managed Instances.
 
-```
+```JSON
 {
     "family": "ecs-neuron",
     "requiresCompatibilities": ["MANAGED_INSTANCES"],
@@ -52,7 +52,7 @@ In this example, the container image includes a vLLM inference server optimized 
 
 The following example shows a Linux task definition for `inf1.xlarge` using the EC2 launch type with `linuxParameters.devices` to specify Neuron device paths.
 
-```
+```JSON
 {
     "family": "ecs-neuron",
     "requiresCompatibilities": ["EC2"],

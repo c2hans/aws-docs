@@ -25,6 +25,7 @@ The following data types are supported:
 +  [McpServerAdditionalData](API_McpServerAdditionalData.md)
 +  [McpServerDescriptor](API_McpServerDescriptor.md)
 +  [McpToolsDescriptor](API_McpToolsDescriptor.md)
++  [RegistryRecordArtifactDownload](API_RegistryRecordArtifactDownload.md)
 +  [RegistryRecordFilter](API_RegistryRecordFilter.md)
 +  [RegistryRecordsEntry](API_RegistryRecordsEntry.md)
 +  [RegistryRecordSummary](API_RegistryRecordSummary.md)

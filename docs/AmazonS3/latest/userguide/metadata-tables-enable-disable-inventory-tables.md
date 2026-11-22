@@ -82,7 +82,7 @@ Before enabling an inventory configuration, make sure that you've reviewed and m
 
    To encrypt your inventory table with server-side encryption using AWS Key Management Service (AWS KMS) keys (SSE-KMS), set `SseAlgorithm` to `aws:kms`. You must also set `KmsKeyArn` to the ARN of a customer managed KMS key in the same Region where your general purpose bucket is located.
 
-   ```
+   ```json
    {
      "ConfigurationState": "ENABLED",
      "EncryptionConfiguration": {
@@ -94,7 +94,7 @@ Before enabling an inventory configuration, make sure that you've reviewed and m
 
    If you want to disable an existing inventory table, use the following configuration:
 
-   ```
+   ```json
    {
      "ConfigurationState": "DISABLED"  }
    }
@@ -102,7 +102,7 @@ Before enabling an inventory configuration, make sure that you've reviewed and m
 
 1. Use the following command to update the inventory table configuration for your general purpose bucket (for example, `{{amzn-s3-demo-bucket}}`):
 
-   ```
+   ```bash
    aws s3api update-bucket-metadata-inventory-table-configuration \
    --bucket {{amzn-s3-demo-source-bucket}} \
    --inventory-table-configuration file://./{{inventory-config}}.json \

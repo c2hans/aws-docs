@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrcontainers-securityconfiguration-atrestencryptionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[LocalDiskEncryptionConfiguration](#cfn-emrcontainers-securityconfiguration-atrestencryptionconfiguration-localdiskencryptionconfiguration)" : {{LocalDiskEncryptionConfiguration}},
   "[S3EncryptionConfiguration](#cfn-emrcontainers-securityconfiguration-atrestencryptionconfiguration-s3encryptionconfiguration)" : {{S3EncryptionConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrcontainers-securityconfiguration-atrestencryptionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [LocalDiskEncryptionConfiguration](#cfn-emrcontainers-securityconfiguration-atrestencryptionconfiguration-localdiskencryptionconfiguration): {{
     LocalDiskEncryptionConfiguration}}
   [S3EncryptionConfiguration](#cfn-emrcontainers-securityconfiguration-atrestencryptionconfiguration-s3encryptionconfiguration): {{

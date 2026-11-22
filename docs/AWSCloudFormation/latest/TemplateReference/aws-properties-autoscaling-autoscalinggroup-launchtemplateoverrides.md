@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-autoscaling-autoscalinggroup-launchtemplateoverrides-syntax.json"></a>
 
-```
+```json
 {
   "[ImageId](#cfn-autoscaling-autoscalinggroup-launchtemplateoverrides-imageid)" : {{String}},
   "[InstanceRequirements](#cfn-autoscaling-autoscalinggroup-launchtemplateoverrides-instancerequirements)" : {{InstanceRequirements}},
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-autoscaling-autoscalinggroup-launchtemplateoverrides-syntax.yaml"></a>
 
-```
+```yaml
   [ImageId](#cfn-autoscaling-autoscalinggroup-launchtemplateoverrides-imageid): {{String}}
   [InstanceRequirements](#cfn-autoscaling-autoscalinggroup-launchtemplateoverrides-instancerequirements): {{
     InstanceRequirements}}

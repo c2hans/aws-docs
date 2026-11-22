@@ -69,7 +69,7 @@ If the action is successful, the service sends back an HTTP 204 response with an
 
 The following DELETE request deletes the tag set from the Outposts bucket `example-outpost-bucket`.
 
-```
+```HTTP
             DELETE v20180820/bucket/example-outpost-bucket/tagging HTTP/1.1
             Host: s3-outposts.<Region>.amazonaws.com
             x-amz-account-id: example-account-id

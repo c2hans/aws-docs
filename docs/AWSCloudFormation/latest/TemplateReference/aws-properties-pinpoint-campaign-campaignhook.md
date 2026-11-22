@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pinpoint-campaign-campaignhook-syntax.json"></a>
 
-```
+```json
 {
   "[LambdaFunctionName](#cfn-pinpoint-campaign-campaignhook-lambdafunctionname)" : {{String}},
   "[Mode](#cfn-pinpoint-campaign-campaignhook-mode)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pinpoint-campaign-campaignhook-syntax.yaml"></a>
 
-```
+```yaml
   [LambdaFunctionName](#cfn-pinpoint-campaign-campaignhook-lambdafunctionname): {{String}}
   [Mode](#cfn-pinpoint-campaign-campaignhook-mode): {{String}}
   [WebUrl](#cfn-pinpoint-campaign-campaignhook-weburl): {{String}}

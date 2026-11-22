@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-deadline-fleet-servicemanagedec2fleetconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AutoScalingConfiguration](#cfn-deadline-fleet-servicemanagedec2fleetconfiguration-autoscalingconfiguration)" : {{ServiceManagedEc2AutoScalingConfiguration}},
   "[InstanceCapabilities](#cfn-deadline-fleet-servicemanagedec2fleetconfiguration-instancecapabilities)" : {{ServiceManagedEc2InstanceCapabilities}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-deadline-fleet-servicemanagedec2fleetconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AutoScalingConfiguration](#cfn-deadline-fleet-servicemanagedec2fleetconfiguration-autoscalingconfiguration): {{
     ServiceManagedEc2AutoScalingConfiguration}}
   [InstanceCapabilities](#cfn-deadline-fleet-servicemanagedec2fleetconfiguration-instancecapabilities): {{

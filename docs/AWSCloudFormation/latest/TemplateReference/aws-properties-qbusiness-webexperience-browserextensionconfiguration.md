@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-qbusiness-webexperience-browserextensionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EnabledBrowserExtensions](#cfn-qbusiness-webexperience-browserextensionconfiguration-enabledbrowserextensions)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-qbusiness-webexperience-browserextensionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EnabledBrowserExtensions](#cfn-qbusiness-webexperience-browserextensionconfiguration-enabledbrowserextensions): {{
     - String}}
 ```

@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-trafficmirrorfilterrule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::TrafficMirrorFilterRule",
   "Properties" : {
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-trafficmirrorfilterrule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::TrafficMirrorFilterRule
 Properties:
   [Description](#cfn-ec2-trafficmirrorfilterrule-description): {{String}}
@@ -163,7 +163,7 @@ This is a filter rule for UDP traffic.
 #### JSON
 <a name="aws-resource-ec2-trafficmirrorfilterrule--examples--Create_a_traffic_mirror_filter_rule_for_inbound_UDP_traffic--json"></a>
 
-```
+```json
 {
   "SampleTrafficMirrorFilterRule": {
     "Type": "AWS::EC2::TrafficMirrorFilterRule",
@@ -192,7 +192,7 @@ This is a filter rule for UDP traffic.
 #### YAML
 <a name="aws-resource-ec2-trafficmirrorfilterrule--examples--Create_a_traffic_mirror_filter_rule_for_inbound_UDP_traffic--yaml"></a>
 
-```
+```yaml
 SampleTrafficMirrorFilterRule:
   Type: "AWS::EC2::TrafficMirrorFilterRule"
   Properties:

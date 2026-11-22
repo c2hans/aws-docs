@@ -35,7 +35,7 @@ Returns `true` if all the specified conditions evaluate to true, or returns `fal
 #### JSON
 <a name="intrinsic-function-reference-conditions-and-syntax.json"></a>
 
-```
+```json
 "Fn::And": [{{{condition}}}, {{{...}}}]
 ```
 
@@ -44,13 +44,13 @@ Returns `true` if all the specified conditions evaluate to true, or returns `fal
 
 Syntax for the full function name:
 
-```
+```yaml
 Fn::And: [{{condition}}]
 ```
 
 Syntax for the short form:
 
-```
+```yaml
 !And [{{condition}}]
 ```
 
@@ -68,7 +68,7 @@ The following `MyAndCondition` evaluates to true if the referenced security grou
 #### JSON
 <a name="intrinsic-function-reference-conditions-and-example.json"></a>
 
-```
+```json
 "MyAndCondition": {
    "Fn::And": [
       {"Fn::Equals": ["sg-mysggroup", {"Ref": "ASecurityGroup"}]},
@@ -80,7 +80,7 @@ The following `MyAndCondition` evaluates to true if the referenced security grou
 #### YAML
 <a name="intrinsic-function-reference-conditions-and-example.yaml"></a>
 
-```
+```yaml
 MyAndCondition: !And
   - !Equals ["sg-mysggroup", !Ref ASecurityGroup]
   - !Condition SomeOtherCondition
@@ -97,7 +97,7 @@ Compares if two values are equal. Returns `true` if the two values are equal or 
 #### JSON
 <a name="intrinsic-function-reference-conditions-equals-syntax.json"></a>
 
-```
+```json
 "Fn::Equals" : ["{{value_1}}", "{{value_2}}"]
 ```
 
@@ -106,13 +106,13 @@ Compares if two values are equal. Returns `true` if the two values are equal or 
 
 Syntax for the full function name:
 
-```
+```yaml
 Fn::Equals: [{{value_1}}, {{value_2}}]
 ```
 
 Syntax for the short form:
 
-```
+```yaml
 !Equals [{{value_1}}, {{value_2}}]
 ```
 
@@ -130,7 +130,7 @@ The following `IsProduction` condition evaluates to true if the value for the `E
 #### JSON
 <a name="intrinsic-function-reference-conditions-equals-example.json"></a>
 
-```
+```json
 "IsProduction" : {
    "Fn::Equals": [
       {"Ref": "EnvironmentType"},
@@ -142,7 +142,7 @@ The following `IsProduction` condition evaluates to true if the value for the `E
 #### YAML
 <a name="intrinsic-function-reference-conditions-equals-example.yaml"></a>
 
-```
+```yaml
 IsProduction:
   !Equals [!Ref EnvironmentType, prod]
 ```
@@ -158,7 +158,7 @@ Returns one value if the specified condition evaluates to `true` and another val
 #### JSON
 <a name="intrinsic-function-reference-conditions-if-syntax.json"></a>
 
-```
+```json
 "Fn::If": [{{condition_name}}, {{value_if_true}}, {{value_if_false}}]
 ```
 
@@ -167,13 +167,13 @@ Returns one value if the specified condition evaluates to `true` and another val
 
 Syntax for the full function name:
 
-```
+```yaml
 Fn::If: [{{condition_name}}, {{value_if_true}}, {{value_if_false}}]
 ```
 
 Syntax for the short form:
 
-```
+```yaml
 !If [{{condition_name}}, {{value_if_true}}, {{value_if_false}}]
 ```
 
@@ -207,7 +207,7 @@ The following example uses an `Fn::If` function in an Amazon EC2 resource defini
 ##### JSON
 <a name="intrinsic-function-reference-conditions-if-example1.json"></a>
 
-```
+```json
 "Resources": {
   "EC2Instance": {
     "Type": "AWS::EC2::Instance",
@@ -229,7 +229,7 @@ The following example uses an `Fn::If` function in an Amazon EC2 resource defini
 ##### YAML
 <a name="intrinsic-function-reference-conditions-if-example1.yaml"></a>
 
-```
+```yaml
 Resources:
   EC2Instance:
     Type: AWS::EC2::Instance
@@ -250,7 +250,7 @@ In the `Output` section of a template, you can use the `Fn::If` function to cond
 ##### JSON
 <a name="intrinsic-function-reference-conditions-if-example2.json"></a>
 
-```
+```json
 "Outputs" : {
   "SecurityGroupId" : {
     "Description" : "Group ID of the security group used.",
@@ -268,7 +268,7 @@ In the `Output` section of a template, you can use the `Fn::If` function to cond
 ##### YAML
 <a name="intrinsic-function-reference-conditions-if-example2.yaml"></a>
 
-```
+```yaml
 Outputs:
   SecurityGroupId:
     Description: Group ID of the security group used.
@@ -283,7 +283,7 @@ The following example uses `Fn::If` to conditionally provide different array val
 ##### JSON
 <a name="intrinsic-function-reference-conditions-if-example-arrays.json"></a>
 
-```
+```json
 "Subnets": {
   "Fn::If": [
     "MoreThan2AZs",
@@ -303,7 +303,7 @@ The following example uses `Fn::If` to conditionally provide different array val
 ##### YAML
 <a name="intrinsic-function-reference-conditions-if-example-arrays.yaml"></a>
 
-```
+```yaml
 Subnets:
   Fn::If:
     - MoreThan2AZs
@@ -324,7 +324,7 @@ It also uses an `Fn::If` function in the `AllocatedStorage` property of the Amaz
 ##### JSON
 <a name="intrinsic-function-reference-conditions-if-example3.json"></a>
 
-```
+```json
 "MyDatabase" : {
   "Type" : "AWS::RDS::DBInstance",
   "Properties": {
@@ -355,7 +355,7 @@ It also uses an `Fn::If` function in the `AllocatedStorage` property of the Amaz
 ##### YAML
 <a name="intrinsic-function-reference-conditions-if-example3.yaml"></a>
 
-```
+```yaml
 MyDatabase:
   Type: AWS::RDS::DBInstance
   Properties:
@@ -377,7 +377,7 @@ The following snippet provides an Auto Scaling update policy only if the `Rollin
 ##### JSON
 <a name="intrinsic-function-reference-conditions-if-example4.json"></a>
 
-```
+```json
 "UpdatePolicy": {
   "Fn::If": [
     "RollingUpdates",
@@ -398,7 +398,7 @@ The following snippet provides an Auto Scaling update policy only if the `Rollin
 ##### YAML
 <a name="intrinsic-function-reference-conditions-if-example4.yaml"></a>
 
-```
+```yaml
 UpdatePolicy: !If
   - RollingUpdates
   - AutoScalingRollingUpdate:
@@ -419,7 +419,7 @@ Returns `true` for a condition that evaluates to `false` or returns `false` for 
 #### JSON
 <a name="intrinsic-function-reference-conditions-not-syntax.json"></a>
 
-```
+```json
 "Fn::Not": [{{{condition}}}]
 ```
 
@@ -428,13 +428,13 @@ Returns `true` for a condition that evaluates to `false` or returns `false` for 
 
 Syntax for the full function name:
 
-```
+```yaml
 Fn::Not: [{{condition}}]
 ```
 
 Syntax for the short form:
 
-```
+```yaml
 !Not [{{condition}}]
 ```
 
@@ -452,7 +452,7 @@ The following `EnvCondition` condition evaluates to true if the value for the `E
 #### JSON
 <a name="intrinsic-function-reference-conditions-not-example.json"></a>
 
-```
+```json
 "MyNotCondition" : {
    "Fn::Not" : [{
       "Fn::Equals" : [
@@ -466,7 +466,7 @@ The following `EnvCondition` condition evaluates to true if the value for the `E
 #### YAML
 <a name="intrinsic-function-reference-conditions-not-example.yaml"></a>
 
-```
+```yaml
 MyNotCondition:
   !Not [!Equals [!Ref EnvironmentType, prod]]
 ```
@@ -482,7 +482,7 @@ Returns `true` if any one of the specified conditions evaluate to true, or retur
 #### JSON
 <a name="intrinsic-function-reference-conditions-or-syntax.json"></a>
 
-```
+```json
 "Fn::Or": [{{{condition}}}, {{{...}}}]
 ```
 
@@ -491,13 +491,13 @@ Returns `true` if any one of the specified conditions evaluate to true, or retur
 
 Syntax for the full function name:
 
-```
+```yaml
 Fn::Or: [{{condition, ...}}]
 ```
 
 Syntax for the short form:
 
-```
+```yaml
 !Or [{{condition, ...}}]
 ```
 
@@ -515,7 +515,7 @@ The following `MyOrCondition` evaluates to true if the referenced security group
 #### JSON
 <a name="intrinsic-function-reference-conditions-or-example.json"></a>
 
-```
+```json
 "MyOrCondition" : {
    "Fn::Or" : [
       {"Fn::Equals" : ["sg-mysggroup", {"Ref" : "ASecurityGroup"}]},
@@ -527,7 +527,7 @@ The following `MyOrCondition` evaluates to true if the referenced security group
 #### YAML
 <a name="intrinsic-function-reference-conditions-or-example.yaml"></a>
 
-```
+```yaml
 MyOrCondition:
   !Or [!Equals [sg-mysggroup, !Ref ASecurityGroup], Condition: SomeOtherCondition]
 ```
@@ -567,7 +567,7 @@ In addition to the instance type, the production environment creates and attache
 
 **Example JSON**
 
-```
+```json
 {
   "AWSTemplateFormatVersion" : "2010-09-09",
   "Parameters" : {
@@ -622,7 +622,7 @@ In addition to the instance type, the production environment creates and attache
 
 **Example YAML**
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Parameters:
   EnvType:

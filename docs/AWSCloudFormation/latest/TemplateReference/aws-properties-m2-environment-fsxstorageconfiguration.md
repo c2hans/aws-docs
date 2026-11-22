@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-m2-environment-fsxstorageconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[FileSystemId](#cfn-m2-environment-fsxstorageconfiguration-filesystemid)" : {{String}},
   "[MountPoint](#cfn-m2-environment-fsxstorageconfiguration-mountpoint)" : {{String}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-m2-environment-fsxstorageconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [FileSystemId](#cfn-m2-environment-fsxstorageconfiguration-filesystemid): {{String}}
   [MountPoint](#cfn-m2-environment-fsxstorageconfiguration-mountpoint): {{String}}
 ```

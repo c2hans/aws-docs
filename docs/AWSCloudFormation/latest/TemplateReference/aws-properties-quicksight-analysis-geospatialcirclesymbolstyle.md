@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-geospatialcirclesymbolstyle-syntax.json"></a>
 
-```
+```json
 {
   "[CircleRadius](#cfn-quicksight-analysis-geospatialcirclesymbolstyle-circleradius)" : {{GeospatialCircleRadius}},
   "[FillColor](#cfn-quicksight-analysis-geospatialcirclesymbolstyle-fillcolor)" : {{GeospatialColor}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-geospatialcirclesymbolstyle-syntax.yaml"></a>
 
-```
+```yaml
   [CircleRadius](#cfn-quicksight-analysis-geospatialcirclesymbolstyle-circleradius): {{
     GeospatialCircleRadius}}
   [FillColor](#cfn-quicksight-analysis-geospatialcirclesymbolstyle-fillcolor): {{

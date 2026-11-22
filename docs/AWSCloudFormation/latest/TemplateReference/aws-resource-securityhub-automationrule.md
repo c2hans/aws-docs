@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-securityhub-automationrule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SecurityHub::AutomationRule",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-securityhub-automationrule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SecurityHub::AutomationRule
 Properties:
   [Actions](#cfn-securityhub-automationrule-actions): {{
@@ -161,7 +161,7 @@ This example creates a Security Hub CSPM automation rule. This example contains 
 #### JSON
 <a name="aws-resource-securityhub-automationrule--examples--Creating_an_automation_rule--json"></a>
 
-```
+```json
 {
   "Description": "Example template to create a Security Hub automation rule",
   "Resources": {
@@ -496,7 +496,7 @@ This example creates a Security Hub CSPM automation rule. This example contains 
 #### YAML
 <a name="aws-resource-securityhub-automationrule--examples--Creating_an_automation_rule--yaml"></a>
 
-```
+```yaml
 Description: Example template to create a Security Hub automation rule
 Resources:
   RuleWithCriteriaActionsTags:

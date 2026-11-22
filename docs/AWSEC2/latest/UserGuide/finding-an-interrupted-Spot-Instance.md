@@ -33,7 +33,7 @@ Use the [describe-instances](https://docs.aws.amazon.com/cli/latest/reference/ec
 
 If the interruption behavior is to terminate the Spot Instances, use the following example:
 
-```
+```bash
 aws ec2 describe-instances \
     --filters Name=instance-lifecycle,Values=spot \
               Name=instance-state-name,Values=terminated \
@@ -43,7 +43,7 @@ aws ec2 describe-instances \
 
 If the interruption behavior is to stop the Spot Instances, use the following example:
 
-```
+```bash
 aws ec2 describe-instances \
     --filters Name=instance-lifecycle,Values=spot \
               Name=instance-state-name,Values=stopped \
@@ -59,7 +59,7 @@ Use the [Get-EC2Instance](https://docs.aws.amazon.com/powershell/latest/referenc
 
 If the interruption behavior is to terminate the Spot Instances, use the following example:
 
-```
+```powershell
 (Get-EC2Instance `
     -Filter @{Key="instance-lifecycle"; Values="spot"} `
             @{Key="instance-state-name"; Values="terminated"} `
@@ -68,7 +68,7 @@ If the interruption behavior is to terminate the Spot Instances, use the followi
 
 If the interruption behavior is to stop the Spot Instances, use the following example:
 
-```
+```powershell
 (Get-EC2Instance `
     -Filter @{Key="instance-lifecycle"; Values="spot"} `
             @{Key="instance-state-name"; Values="stopped"} `

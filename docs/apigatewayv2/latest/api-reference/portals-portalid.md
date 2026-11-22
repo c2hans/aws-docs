@@ -92,7 +92,7 @@ Updates a portal.
 #### PATCH schema
 <a name="portals-portalid-request-body-patch-example"></a>
 
-```
+```json
 {
   "authorization": {
     "cognitoConfig": {
@@ -140,7 +140,7 @@ Updates a portal.
 #### GetPortalResponseContent schema
 <a name="portals-portalid-response-body-getportalresponsecontent-example"></a>
 
-```
+```json
 {
   "preview": {
     "previewUrl": "string",
@@ -202,7 +202,7 @@ Updates a portal.
 #### UpdatePortalResponseContent schema
 <a name="portals-portalid-response-body-updateportalresponsecontent-example"></a>
 
-```
+```json
 {
   "preview": {
     "previewUrl": "string",
@@ -264,7 +264,7 @@ Updates a portal.
 #### BadRequestExceptionResponseContent schema
 <a name="portals-portalid-response-body-badrequestexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -273,7 +273,7 @@ Updates a portal.
 #### AccessDeniedExceptionResponseContent schema
 <a name="portals-portalid-response-body-accessdeniedexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -282,7 +282,7 @@ Updates a portal.
 #### NotFoundExceptionResponseContent schema
 <a name="portals-portalid-response-body-notfoundexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -292,7 +292,7 @@ Updates a portal.
 #### ConflictExceptionResponseContent schema
 <a name="portals-portalid-response-body-conflictexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -301,7 +301,7 @@ Updates a portal.
 #### LimitExceededExceptionResponseContent schema
 <a name="portals-portalid-response-body-limitexceededexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

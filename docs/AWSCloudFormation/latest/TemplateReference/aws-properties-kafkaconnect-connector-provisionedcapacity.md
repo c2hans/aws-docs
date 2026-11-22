@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kafkaconnect-connector-provisionedcapacity-syntax.json"></a>
 
-```
+```json
 {
   "[McuCount](#cfn-kafkaconnect-connector-provisionedcapacity-mcucount)" : {{Integer}},
   "[WorkerCount](#cfn-kafkaconnect-connector-provisionedcapacity-workercount)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kafkaconnect-connector-provisionedcapacity-syntax.yaml"></a>
 
-```
+```yaml
   [McuCount](#cfn-kafkaconnect-connector-provisionedcapacity-mcucount): {{Integer}}
   [WorkerCount](#cfn-kafkaconnect-connector-provisionedcapacity-workercount): {{Integer}}
 ```

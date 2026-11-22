@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dynamodb-table-csv-syntax.json"></a>
 
-```
+```json
 {
   "[Delimiter](#cfn-dynamodb-table-csv-delimiter)" : {{String}},
   "[HeaderList](#cfn-dynamodb-table-csv-headerlist)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dynamodb-table-csv-syntax.yaml"></a>
 
-```
+```yaml
   [Delimiter](#cfn-dynamodb-table-csv-delimiter): {{String}}
   [HeaderList](#cfn-dynamodb-table-csv-headerlist): {{
     - String}}

@@ -87,7 +87,7 @@ The following policies apply to all Amazon S3 resources using the wildcard (`*`)
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement": [
@@ -116,7 +116,7 @@ The following policies apply to all Amazon S3 resources using the wildcard (`*`)
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement": [
@@ -171,7 +171,7 @@ We recommend creating at least one IAM role per service and policy.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

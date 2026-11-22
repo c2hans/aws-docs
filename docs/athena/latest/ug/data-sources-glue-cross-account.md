@@ -48,7 +48,7 @@ The following procedure shows you how to use the Athena to configure an AWS Glue
 
 1. The following `CreateDataCatalog` request body registers an AWS Glue catalog for cross-account access:
 
-   ```
+   ```json
    # Example CreateDataCatalog request to register a cross-account Glue catalog:
    {
        "Description": "{{Cross-account Glue catalog}}",
@@ -61,7 +61,7 @@ The following procedure shows you how to use the Athena to configure an AWS Glue
 
 1. The following sample code uses a Java client to create the `DataCatalog` object.
 
-   ```
+   ```java
    # Sample code to create the DataCatalog through Java client
    CreateDataCatalogRequest request = new CreateDataCatalogRequest()
        .withName("{{ownerCatalog}}")

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityhub-connector-azureproviderconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AWSConfigConnectorArn](#cfn-securityhub-connector-azureproviderconfiguration-awsconfigconnectorarn)" : {{String}},
   "[AzureRegions](#cfn-securityhub-connector-azureproviderconfiguration-azureregions)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityhub-connector-azureproviderconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AWSConfigConnectorArn](#cfn-securityhub-connector-azureproviderconfiguration-awsconfigconnectorarn): {{String}}
   [AzureRegions](#cfn-securityhub-connector-azureproviderconfiguration-azureregions): {{
     - String}}
@@ -43,7 +43,7 @@ The ARN of the multi-cloud configuration connector used to establish the connect
 *Required*: Yes
 *Type*: String
 *Pattern*: `.*\S.*`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `AzureRegions`  <a name="cfn-securityhub-connector-azureproviderconfiguration-azureregions"></a>
 The list of Azure regions to monitor.

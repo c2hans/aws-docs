@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-multiplexm2tssettings-syntax.json"></a>
 
-```
+```json
 {
   "[AbsentInputAudioBehavior](#cfn-medialive-channel-multiplexm2tssettings-absentinputaudiobehavior)" : {{String}},
   "[Arib](#cfn-medialive-channel-multiplexm2tssettings-arib)" : {{String}},
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-multiplexm2tssettings-syntax.yaml"></a>
 
-```
+```yaml
   [AbsentInputAudioBehavior](#cfn-medialive-channel-multiplexm2tssettings-absentinputaudiobehavior): {{String}}
   [Arib](#cfn-medialive-channel-multiplexm2tssettings-arib): {{String}}
   [AudioBufferModel](#cfn-medialive-channel-multiplexm2tssettings-audiobuffermodel): {{String}}

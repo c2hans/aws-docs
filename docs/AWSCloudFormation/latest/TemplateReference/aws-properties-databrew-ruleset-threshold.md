@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-databrew-ruleset-threshold-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-databrew-ruleset-threshold-type)" : {{String}},
   "[Unit](#cfn-databrew-ruleset-threshold-unit)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-databrew-ruleset-threshold-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-databrew-ruleset-threshold-type): {{String}}
   [Unit](#cfn-databrew-ruleset-threshold-unit): {{String}}
   [Value](#cfn-databrew-ruleset-threshold-value): {{Number}}

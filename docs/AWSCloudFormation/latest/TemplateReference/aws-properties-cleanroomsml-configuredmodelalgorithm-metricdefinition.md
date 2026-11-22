@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanroomsml-configuredmodelalgorithm-metricdefinition-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-cleanroomsml-configuredmodelalgorithm-metricdefinition-name)" : {{String}},
   "[Regex](#cfn-cleanroomsml-configuredmodelalgorithm-metricdefinition-regex)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanroomsml-configuredmodelalgorithm-metricdefinition-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-cleanroomsml-configuredmodelalgorithm-metricdefinition-name): {{String}}
   [Regex](#cfn-cleanroomsml-configuredmodelalgorithm-metricdefinition-regex): {{String}}
 ```

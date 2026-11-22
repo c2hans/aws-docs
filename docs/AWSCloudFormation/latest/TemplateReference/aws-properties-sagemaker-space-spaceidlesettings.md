@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-space-spaceidlesettings-syntax.json"></a>
 
-```
+```json
 {
   "[IdleTimeoutInMinutes](#cfn-sagemaker-space-spaceidlesettings-idletimeoutinminutes)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-space-spaceidlesettings-syntax.yaml"></a>
 
-```
+```yaml
   [IdleTimeoutInMinutes](#cfn-sagemaker-space-spaceidlesettings-idletimeoutinminutes): {{Integer}}
 ```
 

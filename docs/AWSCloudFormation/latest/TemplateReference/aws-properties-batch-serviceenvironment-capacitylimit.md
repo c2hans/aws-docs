@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-serviceenvironment-capacitylimit-syntax.json"></a>
 
-```
+```json
 {
   "[CapacityUnit](#cfn-batch-serviceenvironment-capacitylimit-capacityunit)" : {{String}},
   "[MaxCapacity](#cfn-batch-serviceenvironment-capacitylimit-maxcapacity)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-serviceenvironment-capacitylimit-syntax.yaml"></a>
 
-```
+```yaml
   [CapacityUnit](#cfn-batch-serviceenvironment-capacitylimit-capacityunit): {{String}}
   [MaxCapacity](#cfn-batch-serviceenvironment-capacitylimit-maxcapacity): {{Integer}}
 ```

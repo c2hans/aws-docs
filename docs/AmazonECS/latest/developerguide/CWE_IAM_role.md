@@ -13,7 +13,7 @@ The `AmazonEC2ContainerServiceEventsRole` policy is the following.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -56,7 +56,7 @@ Specify the full ARN of your task execution role or task role override.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -87,7 +87,7 @@ Replace all {{user input}} with your own information.
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -180,7 +180,7 @@ Replace all {{user input}} with your own information.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

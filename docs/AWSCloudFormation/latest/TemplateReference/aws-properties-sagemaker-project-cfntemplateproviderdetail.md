@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-project-cfntemplateproviderdetail-syntax.json"></a>
 
-```
+```json
 {
   "[Parameters](#cfn-sagemaker-project-cfntemplateproviderdetail-parameters)" : {{[ CfnStackParameter, ... ]}},
   "[RoleARN](#cfn-sagemaker-project-cfntemplateproviderdetail-rolearn)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-project-cfntemplateproviderdetail-syntax.yaml"></a>
 
-```
+```yaml
   [Parameters](#cfn-sagemaker-project-cfntemplateproviderdetail-parameters): {{
     - CfnStackParameter}}
   [RoleARN](#cfn-sagemaker-project-cfntemplateproviderdetail-rolearn): {{String}}

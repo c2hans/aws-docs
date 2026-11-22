@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-rulegroup-ratelimitquerystring-syntax.json"></a>
 
-```
+```json
 {
   "[TextTransformations](#cfn-wafv2-rulegroup-ratelimitquerystring-texttransformations)" : {{[ TextTransformation, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-rulegroup-ratelimitquerystring-syntax.yaml"></a>
 
-```
+```yaml
   [TextTransformations](#cfn-wafv2-rulegroup-ratelimitquerystring-texttransformations): {{
     - TextTransformation}}
 ```

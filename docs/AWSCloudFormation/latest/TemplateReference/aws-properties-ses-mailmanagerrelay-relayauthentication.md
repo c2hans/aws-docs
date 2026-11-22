@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-mailmanagerrelay-relayauthentication-syntax.json"></a>
 
-```
+```json
 {
   "[NoAuthentication](#cfn-ses-mailmanagerrelay-relayauthentication-noauthentication)" : {{Json}},
   "[SecretArn](#cfn-ses-mailmanagerrelay-relayauthentication-secretarn)" : {{String}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-mailmanagerrelay-relayauthentication-syntax.yaml"></a>
 
-```
+```yaml
   [NoAuthentication](#cfn-ses-mailmanagerrelay-relayauthentication-noauthentication): {{Json}}
   [SecretArn](#cfn-ses-mailmanagerrelay-relayauthentication-secretarn): {{String}}
 ```

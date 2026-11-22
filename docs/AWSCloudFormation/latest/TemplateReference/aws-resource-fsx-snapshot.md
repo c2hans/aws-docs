@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-fsx-snapshot-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::FSx::Snapshot",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-fsx-snapshot-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::FSx::Snapshot
 Properties:
   [Name](#cfn-fsx-snapshot-name): {{String}}

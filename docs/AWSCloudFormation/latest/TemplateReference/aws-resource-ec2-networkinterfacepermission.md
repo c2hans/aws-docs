@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-networkinterfacepermission-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::NetworkInterfacePermission",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-networkinterfacepermission-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::NetworkInterfacePermission
 Properties:
   [AwsAccountId](#cfn-ec2-networkinterfacepermission-awsaccountid): {{String}}
@@ -81,7 +81,7 @@ The following example creates a permission (`INSTANCE-ATTACH`) for a specified n
 #### JSON
 <a name="aws-resource-ec2-networkinterfacepermission--examples--Grant_INSTANCE-ATTACH_permission--json"></a>
 
-```
+```json
 "MyNetworkInterfacePermission": {
    "Type": "AWS::EC2::NetworkInterfacePermission",
    "Properties": {
@@ -95,7 +95,7 @@ The following example creates a permission (`INSTANCE-ATTACH`) for a specified n
 #### YAML
 <a name="aws-resource-ec2-networkinterfacepermission--examples--Grant_INSTANCE-ATTACH_permission--yaml"></a>
 
-```
+```yaml
    MyNetworkInterfacePermission:
       Type: AWS::EC2::NetworkInterfacePermission
       Properties:

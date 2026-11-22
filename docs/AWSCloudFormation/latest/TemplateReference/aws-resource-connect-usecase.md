@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-connect-usecase-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Connect::UseCase",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-connect-usecase-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Connect::UseCase
 Properties:
   [InstanceId](#cfn-connect-usecase-instanceid): {{String}}

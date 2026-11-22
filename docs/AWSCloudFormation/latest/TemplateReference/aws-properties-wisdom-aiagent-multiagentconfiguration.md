@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-aiagent-multiagentconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DelegateAgentConfiguration](#cfn-wisdom-aiagent-multiagentconfiguration-delegateagentconfiguration)" : {{DelegateAgentConfiguration}},
   "[HandoffAgentConfiguration](#cfn-wisdom-aiagent-multiagentconfiguration-handoffagentconfiguration)" : {{HandoffAgentConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-aiagent-multiagentconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DelegateAgentConfiguration](#cfn-wisdom-aiagent-multiagentconfiguration-delegateagentconfiguration): {{
     DelegateAgentConfiguration}}
   [HandoffAgentConfiguration](#cfn-wisdom-aiagent-multiagentconfiguration-handoffagentconfiguration): {{

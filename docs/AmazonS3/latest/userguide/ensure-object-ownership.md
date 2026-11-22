@@ -22,7 +22,7 @@ The following example IAM policy denies the `s3:CreateBucket` permission for a s
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -58,7 +58,7 @@ The following bucket policy specifies that account {{`111122223333`}} can upload
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -88,7 +88,7 @@ The following bucket policy specifies that account {{`111122223333`}} can upload
 
 The following is an example copy operation that includes the `bucket-owner-full-control` canned ACL by using the AWS Command Line Interface (AWS CLI).
 
-```
+```bash
 aws s3 cp {{file.txt}} s3://{{amzn-s3-demo-bucket}} --acl bucket-owner-full-control
 ```
 

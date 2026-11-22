@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-billingconductor-customlineitem-billingperiodrange-syntax.json"></a>
 
-```
+```json
 {
   "[ExclusiveEndBillingPeriod](#cfn-billingconductor-customlineitem-billingperiodrange-exclusiveendbillingperiod)" : {{String}},
   "[InclusiveStartBillingPeriod](#cfn-billingconductor-customlineitem-billingperiodrange-inclusivestartbillingperiod)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-billingconductor-customlineitem-billingperiodrange-syntax.yaml"></a>
 
-```
+```yaml
   [ExclusiveEndBillingPeriod](#cfn-billingconductor-customlineitem-billingperiodrange-exclusiveendbillingperiod): {{String}}
   [InclusiveStartBillingPeriod](#cfn-billingconductor-customlineitem-billingperiodrange-inclusivestartbillingperiod): {{String}}
 ```

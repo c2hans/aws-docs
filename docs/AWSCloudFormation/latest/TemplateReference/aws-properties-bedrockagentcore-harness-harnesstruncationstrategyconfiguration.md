@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-harness-harnesstruncationstrategyconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[SlidingWindow](#cfn-bedrockagentcore-harness-harnesstruncationstrategyconfiguration-slidingwindow)" : {{HarnessSlidingWindowConfiguration}},
   "[Summarization](#cfn-bedrockagentcore-harness-harnesstruncationstrategyconfiguration-summarization)" : {{HarnessSummarizationConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-harness-harnesstruncationstrategyconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [SlidingWindow](#cfn-bedrockagentcore-harness-harnesstruncationstrategyconfiguration-slidingwindow): {{
     HarnessSlidingWindowConfiguration}}
   [Summarization](#cfn-bedrockagentcore-harness-harnesstruncationstrategyconfiguration-summarization): {{

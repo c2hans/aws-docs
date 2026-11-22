@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ses-mailmanageraddresslist-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SES::MailManagerAddressList",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ses-mailmanageraddresslist-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SES::MailManagerAddressList
 Properties:
   [AddressListName](#cfn-ses-mailmanageraddresslist-addresslistname): {{String}}

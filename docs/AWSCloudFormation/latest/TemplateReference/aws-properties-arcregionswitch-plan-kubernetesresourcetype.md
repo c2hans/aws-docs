@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-arcregionswitch-plan-kubernetesresourcetype-syntax.json"></a>
 
-```
+```json
 {
   "[ApiVersion](#cfn-arcregionswitch-plan-kubernetesresourcetype-apiversion)" : {{String}},
   "[Kind](#cfn-arcregionswitch-plan-kubernetesresourcetype-kind)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-arcregionswitch-plan-kubernetesresourcetype-syntax.yaml"></a>
 
-```
+```yaml
   [ApiVersion](#cfn-arcregionswitch-plan-kubernetesresourcetype-apiversion): {{String}}
   [Kind](#cfn-arcregionswitch-plan-kubernetesresourcetype-kind): {{String}}
 ```

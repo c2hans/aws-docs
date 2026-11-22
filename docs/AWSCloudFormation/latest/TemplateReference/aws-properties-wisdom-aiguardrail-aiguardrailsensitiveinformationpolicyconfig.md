@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-aiguardrail-aiguardrailsensitiveinformationpolicyconfig-syntax.json"></a>
 
-```
+```json
 {
   "[PiiEntitiesConfig](#cfn-wisdom-aiguardrail-aiguardrailsensitiveinformationpolicyconfig-piientitiesconfig)" : {{[ GuardrailPiiEntityConfig, ... ]}},
   "[RegexesConfig](#cfn-wisdom-aiguardrail-aiguardrailsensitiveinformationpolicyconfig-regexesconfig)" : {{[ GuardrailRegexConfig, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-aiguardrail-aiguardrailsensitiveinformationpolicyconfig-syntax.yaml"></a>
 
-```
+```yaml
   [PiiEntitiesConfig](#cfn-wisdom-aiguardrail-aiguardrailsensitiveinformationpolicyconfig-piientitiesconfig): {{
     - GuardrailPiiEntityConfig}}
   [RegexesConfig](#cfn-wisdom-aiguardrail-aiguardrailsensitiveinformationpolicyconfig-regexesconfig): {{

@@ -28,19 +28,19 @@ These downloads are available to AWS customers only. By downloading, to adhere t
 
 1. Connect to your instance. Update your package cache and get the package updates for your instance.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo dnf update -y
    ```
 
 1. Install **gcc** and **make**, if they are not already installed.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo dnf install gcc make
    ```
 
 1. Reboot your instance to load the latest kernel version.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo reboot
    ```
 
@@ -48,31 +48,31 @@ These downloads are available to AWS customers only. By downloading, to adhere t
 
 1. Install the kernel headers packages.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo dnf install -y kernel-devel kernel-modules-extra
    ```
 
 1. Download the GRID driver installation utility using the following command:
 
-   ```
+   ```bash
    [ec2-user ~]$ aws s3 cp --recursive s3://ec2-linux-nvidia-drivers/latest/ .
    ```
 
    Multiple versions of the GRID driver are stored in this bucket. You can see all of the available versions using the following command.
 
-   ```
+   ```bash
    [ec2-user ~]$ aws s3 ls --recursive s3://ec2-linux-nvidia-drivers/
    ```
 
 1. Add permissions to run the driver installation utility using the following command.
 
-   ```
+   ```bash
    [ec2-user ~]$ chmod +x NVIDIA-Linux-x86_64*.run
    ```
 
 1. Run the self-install script as follows to install the GRID driver that you downloaded. For example:
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo /bin/sh ./NVIDIA-Linux-x86_64*.run
    ```
 
@@ -80,23 +80,23 @@ These downloads are available to AWS customers only. By downloading, to adhere t
 
 1. Confirm that the driver is functional. The response for the following command lists the installed version of the NVIDIA driver and details about the GPUs.
 
-   ```
+   ```bash
    [ec2-user ~]$ nvidia-smi -q | head
    ```
 
 1. If you are using NVIDIA vGPU software version 14.x or greater on the G4dn, G5, or G5g instances, disable GSP with the following commands. For more information about why this is required, see the [NVIDIA documentation](https://docs.nvidia.com/vgpu/latest/grid-vgpu-user-guide/installing-grid-vgpu-display-drivers.html#disabling-gsp).
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo touch /etc/modprobe.d/nvidia.conf
    ```
 
-   ```
+   ```bash
    [ec2-user ~]$ echo "options nvidia NVreg_EnableGpuFirmware=0" | sudo tee --append /etc/modprobe.d/nvidia.conf
    ```
 
 1. Reboot the instance.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo reboot
    ```
 
@@ -113,19 +113,19 @@ These downloads are available to AWS customers only. By downloading, to adhere t
 
 1. Connect to your instance. Update your package cache and get the package updates for your instance.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo yum update -y
    ```
 
 1. Install **gcc** and **make**, if they are not already installed.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo yum install gcc make
    ```
 
 1. Reboot your instance to load the latest kernel version.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo reboot
    ```
 
@@ -133,37 +133,37 @@ These downloads are available to AWS customers only. By downloading, to adhere t
 
 1. Install the kernel headers package for the version of the kernel that is running.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo yum install -y kernel-devel-$(uname -r)
    ```
 
 1. Download the GRID driver installation utility using the following command:
 
-   ```
+   ```bash
    [ec2-user ~]$ aws s3 cp --recursive s3://ec2-linux-nvidia-drivers/latest/ .
    ```
 
    Multiple versions of the GRID driver are stored in this bucket. You can see all of the available versions using the following command.
 
-   ```
+   ```bash
    [ec2-user ~]$ aws s3 ls --recursive s3://ec2-linux-nvidia-drivers/
    ```
 
 1. Add permissions to run the driver installation utility using the following command.
 
-   ```
+   ```bash
    [ec2-user ~]$ chmod +x NVIDIA-Linux-x86_64*.run
    ```
 
 1. Run the self-install script as follows to install the GRID driver that you downloaded. For example:
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo /bin/sh ./NVIDIA-Linux-x86_64*.run
    ```
 
    If you are using Amazon Linux 2 with kernel version 5.10, use the following command to install the GRID driver.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo CC=/usr/bin/gcc10-cc ./NVIDIA-Linux-x86_64*.run
    ```
 
@@ -171,23 +171,23 @@ These downloads are available to AWS customers only. By downloading, to adhere t
 
 1. Confirm that the driver is functional. The response for the following command lists the installed version of the NVIDIA driver and details about the GPUs.
 
-   ```
+   ```bash
    [ec2-user ~]$ nvidia-smi -q | head
    ```
 
 1. If you are using NVIDIA vGPU software version 14.x or greater on the G4dn, G5, or G5g instances, disable GSP with the following commands. For more information about why this is required, see the [NVIDIA documentation](https://docs.nvidia.com/vgpu/latest/grid-vgpu-user-guide/installing-grid-vgpu-display-drivers.html#disabling-gsp).
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo touch /etc/modprobe.d/nvidia.conf
    ```
 
-   ```
+   ```bash
    [ec2-user ~]$ echo "options nvidia NVreg_EnableGpuFirmware=0" | sudo tee --append /etc/modprobe.d/nvidia.conf
    ```
 
 1. Reboot the instance.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo reboot
    ```
 
@@ -204,19 +204,19 @@ These downloads are available to AWS customers only. By downloading, to adhere t
 
 1. Connect to your instance. Update your package cache and get the package updates for your instance.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo yum update -y
    ```
 
 1. Install **gcc** and **make**, if they are not already installed.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo yum install -y gcc make
    ```
 
 1. Reboot your instance to load the latest kernel version.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo reboot
    ```
 
@@ -224,7 +224,7 @@ These downloads are available to AWS customers only. By downloading, to adhere t
 
 1. Install the kernel headers package for the version of the kernel that you are running.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo yum install -y kernel-devel-$(uname -r)
    ```
 
@@ -232,7 +232,7 @@ These downloads are available to AWS customers only. By downloading, to adhere t
 
    1. Add `nouveau` to the `/etc/modprobe.d/blacklist.conf` blacklist file. Copy the following code block and paste it into a terminal.
 
-      ```
+      ```bash
       [ec2-user ~]$ cat << EOF | sudo tee --append /etc/modprobe.d/blacklist.conf
       blacklist vga16fb
       blacklist nouveau
@@ -244,37 +244,37 @@ These downloads are available to AWS customers only. By downloading, to adhere t
 
    1. Edit the `/etc/default/grub` file and add the following line:
 
-      ```
+      ```bash
       GRUB_CMDLINE_LINUX="rdblacklist=nouveau"
       ```
 
    1. Rebuild the Grub configuration.
 
-      ```
+      ```bash
       [ec2-user ~]$ sudo grub2-mkconfig -o /boot/grub2/grub.cfg
       ```
 
 1. Download the GRID driver installation utility using the following command:
 
-   ```
+   ```bash
    [ec2-user ~]$ aws s3 cp --recursive s3://ec2-linux-nvidia-drivers/latest/ .
    ```
 
    Multiple versions of the GRID driver are stored in this bucket. You can see all of the available versions using the following command.
 
-   ```
+   ```bash
    [ec2-user ~]$ aws s3 ls --recursive s3://ec2-linux-nvidia-drivers/
    ```
 
 1. Add permissions to run the driver installation utility using the following command.
 
-   ```
+   ```bash
    [ec2-user ~]$ chmod +x NVIDIA-Linux-x86_64*.run
    ```
 
 1. Run the self-install script as follows to install the GRID driver that you downloaded. For example:
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo /bin/sh ./NVIDIA-Linux-x86_64*.run
    ```
 
@@ -282,23 +282,23 @@ These downloads are available to AWS customers only. By downloading, to adhere t
 
 1. Confirm that the driver is functional. The response for the following command lists the installed version of the NVIDIA driver and details about the GPUs.
 
-   ```
+   ```bash
    [ec2-user ~]$ nvidia-smi -q | head
    ```
 
 1. If you are using NVIDIA vGPU software version 14.x or greater on the G4dn, G5, or G5g instances, disable GSP with the following commands. For more information about why this is required, see the [NVIDIA documentation](https://docs.nvidia.com/vgpu/latest/grid-vgpu-user-guide/installing-grid-vgpu-display-drivers.html#disabling-gsp).
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo touch /etc/modprobe.d/nvidia.conf
    ```
 
-   ```
+   ```bash
    [ec2-user ~]$ echo "options nvidia NVreg_EnableGpuFirmware=0" | sudo tee --append /etc/modprobe.d/nvidia.conf
    ```
 
 1. Reboot the instance.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo reboot
    ```
 
@@ -310,7 +310,7 @@ These downloads are available to AWS customers only. By downloading, to adhere t
 
    1. Install the GUI desktop/workstation package.
 
-      ```
+      ```bash
       [ec2-user ~]$ sudo yum groupinstall -y "Server with GUI"
       ```
 
@@ -321,19 +321,19 @@ These downloads are available to AWS customers only. By downloading, to adhere t
 
 1. Connect to your instance. Update your package cache and get the package updates for your instance.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo yum update -y
    ```
 
 1. Install **gcc** and **make**, if they are not already installed.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo yum install -y gcc make
    ```
 
 1. Reboot your instance to load the latest kernel version.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo reboot
    ```
 
@@ -341,31 +341,31 @@ These downloads are available to AWS customers only. By downloading, to adhere t
 
 1. Install the kernel headers package for the version of the kernel that you are running.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo dnf install -y elfutils-libelf-devel libglvnd-devel kernel-devel-$(uname -r)
    ```
 
 1. Download the GRID driver installation utility using the following command:
 
-   ```
+   ```bash
    [ec2-user ~]$ aws s3 cp --recursive s3://ec2-linux-nvidia-drivers/latest/ .
    ```
 
    Multiple versions of the GRID driver are stored in this bucket. You can see all of the available versions using the following command.
 
-   ```
+   ```bash
    [ec2-user ~]$ aws s3 ls --recursive s3://ec2-linux-nvidia-drivers/
    ```
 
 1. Add permissions to run the driver installation utility using the following command.
 
-   ```
+   ```bash
    [ec2-user ~]$ chmod +x NVIDIA-Linux-x86_64*.run
    ```
 
 1. Run the self-install script as follows to install the GRID driver that you downloaded. For example:
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo /bin/sh ./NVIDIA-Linux-x86_64*.run
    ```
 
@@ -373,23 +373,23 @@ These downloads are available to AWS customers only. By downloading, to adhere t
 
 1. Confirm that the driver is functional. The response for the following command lists the installed version of the NVIDIA driver and details about the GPUs.
 
-   ```
+   ```bash
    [ec2-user ~]$ nvidia-smi -q | head
    ```
 
 1. If you are using NVIDIA vGPU software version 14.x or greater on the G4dn, G5, or G5g instances, disable GSP with the following commands. For more information about why this is required, see the [NVIDIA documentation](https://docs.nvidia.com/vgpu/latest/grid-vgpu-user-guide/installing-grid-vgpu-display-drivers.html#disabling-gsp).
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo touch /etc/modprobe.d/nvidia.conf
    ```
 
-   ```
+   ```bash
    [ec2-user ~]$ echo "options nvidia NVreg_EnableGpuFirmware=0" | sudo tee --append /etc/modprobe.d/nvidia.conf
    ```
 
 1. Reboot the instance.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo reboot
    ```
 
@@ -401,7 +401,7 @@ These downloads are available to AWS customers only. By downloading, to adhere t
 
    1. Install the GUI workstation package.
 
-      ```
+      ```bash
       [ec2-user ~]$ sudo dnf groupinstall -y workstation
       ```
 
@@ -412,19 +412,19 @@ These downloads are available to AWS customers only. By downloading, to adhere t
 
 1. Connect to your instance. Update your package cache and get the package updates for your instance.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo yum update -y
    ```
 
 1. Install **gcc** and **make**, if they are not already installed.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo yum install -y gcc make
    ```
 
 1. Reboot your instance to load the latest kernel version.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo reboot
    ```
 
@@ -432,31 +432,31 @@ These downloads are available to AWS customers only. By downloading, to adhere t
 
 1. Install the kernel headers package for the version of the kernel that you are running.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo dnf install -y elfutils-libelf-devel libglvnd-devel kernel-devel-$(uname -r)
    ```
 
 1. Download the GRID driver installation utility using the following command:
 
-   ```
+   ```bash
    [ec2-user ~]$ aws s3 cp --recursive s3://ec2-linux-nvidia-drivers/latest/ .
    ```
 
    Multiple versions of the GRID driver are stored in this bucket. You can see all of the available versions using the following command.
 
-   ```
+   ```bash
    [ec2-user ~]$ aws s3 ls --recursive s3://ec2-linux-nvidia-drivers/
    ```
 
 1. Add permissions to run the driver installation utility using the following command.
 
-   ```
+   ```bash
    [ec2-user ~]$ chmod +x NVIDIA-Linux-x86_64*.run
    ```
 
 1. Run the self-install script as follows to install the GRID driver that you downloaded. For example:
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo /bin/sh ./NVIDIA-Linux-x86_64*.run
    ```
 
@@ -464,23 +464,23 @@ These downloads are available to AWS customers only. By downloading, to adhere t
 
 1. Confirm that the driver is functional. The response for the following command lists the installed version of the NVIDIA driver and details about the GPUs.
 
-   ```
+   ```bash
    [ec2-user ~]$ nvidia-smi -q | head
    ```
 
 1. If you are using NVIDIA vGPU software version 14.x or greater on the G4dn, G5, or G5g instances, disable GSP with the following commands. For more information about why this is required, see the [NVIDIA documentation](https://docs.nvidia.com/vgpu/latest/grid-vgpu-user-guide/installing-grid-vgpu-display-drivers.html#disabling-gsp).
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo touch /etc/modprobe.d/nvidia.conf
    ```
 
-   ```
+   ```bash
    [ec2-user ~]$ echo "options nvidia NVreg_EnableGpuFirmware=0" | sudo tee --append /etc/modprobe.d/nvidia.conf
    ```
 
 1. Reboot the instance.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo reboot
    ```
 
@@ -497,31 +497,31 @@ These downloads are available to AWS customers only. By downloading, to adhere t
 
 1. Connect to your instance. Update your package cache and get the package updates for your instance.
 
-   ```
+   ```bash
    $ sudo apt-get update -y
    ```
 
 1. Install **gcc** and **make**, if they are not already installed.
 
-   ```
+   ```bash
    $ sudo apt-get install -y gcc make
    ```
 
 1. (Ubuntu) Upgrade the `linux-aws` package to receive the latest version.
 
-   ```
+   ```bash
    $ sudo apt-get upgrade -y linux-aws
    ```
 
    (Debian) Upgrade package to receive the latest version.
 
-   ```
+   ```bash
    $ sudo apt-get upgrade -y
    ```
 
 1. Reboot your instance to load the latest kernel version.
 
-   ```
+   ```bash
    $ sudo reboot
    ```
 
@@ -529,7 +529,7 @@ These downloads are available to AWS customers only. By downloading, to adhere t
 
 1. Install the kernel headers package for the version of the kernel you are currently running.
 
-   ```
+   ```bash
    $ sudo apt-get install -y linux-headers-$(uname -r) linux-modules-extra-$(uname -r)
    ```
 
@@ -537,7 +537,7 @@ These downloads are available to AWS customers only. By downloading, to adhere t
 
    1. Add `nouveau` to the `/etc/modprobe.d/blacklist.conf` blacklist file. Copy the following code block and paste it into a terminal.
 
-      ```
+      ```bash
       $ cat << EOF | sudo tee --append /etc/modprobe.d/blacklist.conf
       blacklist vga16fb
       blacklist nouveau
@@ -549,37 +549,37 @@ These downloads are available to AWS customers only. By downloading, to adhere t
 
    1. Edit the `/etc/default/grub` file and add the following line:
 
-      ```
+      ```bash
       GRUB_CMDLINE_LINUX="rdblacklist=nouveau"
       ```
 
    1. Rebuild the Grub configuration.
 
-      ```
+      ```bash
       $ sudo update-grub
       ```
 
 1. Download the GRID driver installation utility using the following command:
 
-   ```
+   ```bash
    $ aws s3 cp --recursive s3://ec2-linux-nvidia-drivers/latest/ .
    ```
 
    Multiple versions of the GRID driver are stored in this bucket. You can see all of the available versions using the following command.
 
-   ```
+   ```bash
    $ aws s3 ls --recursive s3://ec2-linux-nvidia-drivers/
    ```
 
 1. Add permissions to run the driver installation utility using the following command.
 
-   ```
+   ```bash
    $ chmod +x NVIDIA-Linux-x86_64*.run
    ```
 
 1. Run the self-install script as follows to install the GRID driver that you downloaded. For example:
 
-   ```
+   ```bash
    $ sudo /bin/sh ./NVIDIA-Linux-x86_64*.run
    ```
 
@@ -587,23 +587,23 @@ These downloads are available to AWS customers only. By downloading, to adhere t
 
 1. Confirm that the driver is functional. The response for the following command lists the installed version of the NVIDIA driver and details about the GPUs.
 
-   ```
+   ```bash
    $ nvidia-smi -q | head
    ```
 
 1. If you are using NVIDIA vGPU software version 14.x or greater on the G4dn, G5, or G5g instances, disable GSP with the following commands. For more information about why this is required, see the [NVIDIA documentation](https://docs.nvidia.com/vgpu/latest/grid-vgpu-user-guide/installing-grid-vgpu-display-drivers.html#disabling-gsp).
 
-   ```
+   ```bash
    $ sudo touch /etc/modprobe.d/nvidia.conf
    ```
 
-   ```
+   ```bash
    $ echo "options nvidia NVreg_EnableGpuFirmware=0" | sudo tee --append /etc/modprobe.d/nvidia.conf
    ```
 
 1. Reboot the instance.
 
-   ```
+   ```bash
    $ sudo reboot
    ```
 
@@ -615,7 +615,7 @@ These downloads are available to AWS customers only. By downloading, to adhere t
 
    1. Install the GUI desktop/workstation package.
 
-      ```
+      ```bash
       $ sudo apt-get install -y lightdm ubuntu-desktop
       ```
 
@@ -628,7 +628,7 @@ These downloads are available to AWS customers only. By downloading, to adhere t
 
 1. Download the drivers and the [NVIDIA GRID Cloud End User License Agreement](https://aws-nvidia-license-agreement.s3.amazonaws.com/NvidiaGridAWSUserLicenseAgreement.DOCX) from Amazon S3 to your desktop using the following PowerShell commands.
 
-   ```
+   ```powershell
    $Bucket = "ec2-windows-nvidia-drivers"
    $KeyPrefix = "latest"
    $LocalPath = "$home\Desktop\NVIDIA"
@@ -653,7 +653,7 @@ These downloads are available to AWS customers only. By downloading, to adhere t
 **PowerShell**
 Run the following PowerShell commands to create the registry value to disable the licensing page in the control panel. The AWS Tools for PowerShell in AWS Windows AMIs defaults to the 32-bit version and this command fails. Instead, use the 64-bit version of PowerShell included with the operating system.
 
-   ```
+   ```PowerShell
    New-Item -Path "HKLM:\SOFTWARE\NVIDIA Corporation\Global" -Name GridLicensing
    New-ItemProperty -Path "HKLM:\SOFTWARE\NVIDIA Corporation\Global\GridLicensing" -Name "NvCplDisableManageLicensePage" -PropertyType "DWord" -Value "1"
    ```
@@ -661,7 +661,7 @@ Run the following PowerShell commands to create the registry value to disable th
 **Command Prompt**
 Run the following registry command to create the registry value to disable the licensing page in the control panel. You can run it using the Command Prompt window or a 64-bit version of PowerShell.
 
-   ```
+   ```batch
    reg add "HKLM\SOFTWARE\NVIDIA Corporation\Global\GridLicensing" /v NvCplDisableManageLicensePage /t REG_DWORD /d 1
    ```
 

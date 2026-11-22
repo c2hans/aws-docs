@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcs-cluster-slurmconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Accounting](#cfn-pcs-cluster-slurmconfiguration-accounting)" : {{Accounting}},
   "[AuthKey](#cfn-pcs-cluster-slurmconfiguration-authkey)" : {{AuthKey}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcs-cluster-slurmconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Accounting](#cfn-pcs-cluster-slurmconfiguration-accounting): {{
     Accounting}}
   [AuthKey](#cfn-pcs-cluster-slurmconfiguration-authkey): {{

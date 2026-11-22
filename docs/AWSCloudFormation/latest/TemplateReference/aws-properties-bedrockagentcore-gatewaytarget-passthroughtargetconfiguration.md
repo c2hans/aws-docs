@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewaytarget-passthroughtargetconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Endpoint](#cfn-bedrockagentcore-gatewaytarget-passthroughtargetconfiguration-endpoint)" : {{String}},
   "[ProtocolType](#cfn-bedrockagentcore-gatewaytarget-passthroughtargetconfiguration-protocoltype)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewaytarget-passthroughtargetconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Endpoint](#cfn-bedrockagentcore-gatewaytarget-passthroughtargetconfiguration-endpoint): {{String}}
   [ProtocolType](#cfn-bedrockagentcore-gatewaytarget-passthroughtargetconfiguration-protocoltype): {{String}}
   [Schema](#cfn-bedrockagentcore-gatewaytarget-passthroughtargetconfiguration-schema): {{

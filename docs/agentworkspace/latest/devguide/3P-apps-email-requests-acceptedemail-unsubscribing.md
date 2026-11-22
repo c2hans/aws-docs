@@ -14,6 +14,6 @@ offAcceptedEmail(handler: SubscriptionHandler<EmailContactId>, contactId?: strin
 
  **Usage**
 
-```
+```typescript
 emailClient.offAcceptedEmail(handler);
 ```

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-elasticache-securitygroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ElastiCache::SecurityGroup",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-elasticache-securitygroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ElastiCache::SecurityGroup
 Properties:
   [Description](#cfn-elasticache-securitygroup-description): {{String}}

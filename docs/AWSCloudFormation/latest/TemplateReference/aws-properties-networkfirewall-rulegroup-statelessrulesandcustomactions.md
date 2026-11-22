@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkfirewall-rulegroup-statelessrulesandcustomactions-syntax.json"></a>
 
-```
+```json
 {
   "[CustomActions](#cfn-networkfirewall-rulegroup-statelessrulesandcustomactions-customactions)" : {{[ CustomAction, ... ]}},
   "[StatelessRules](#cfn-networkfirewall-rulegroup-statelessrulesandcustomactions-statelessrules)" : {{[ StatelessRule, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkfirewall-rulegroup-statelessrulesandcustomactions-syntax.yaml"></a>
 
-```
+```yaml
   [CustomActions](#cfn-networkfirewall-rulegroup-statelessrulesandcustomactions-customactions): {{
     - CustomAction}}
   [StatelessRules](#cfn-networkfirewall-rulegroup-statelessrulesandcustomactions-statelessrules): {{

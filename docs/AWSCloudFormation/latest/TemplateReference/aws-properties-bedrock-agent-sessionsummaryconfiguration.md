@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-agent-sessionsummaryconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MaxRecentSessions](#cfn-bedrock-agent-sessionsummaryconfiguration-maxrecentsessions)" : {{Number}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-agent-sessionsummaryconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MaxRecentSessions](#cfn-bedrock-agent-sessionsummaryconfiguration-maxrecentsessions): {{Number}}
 ```
 

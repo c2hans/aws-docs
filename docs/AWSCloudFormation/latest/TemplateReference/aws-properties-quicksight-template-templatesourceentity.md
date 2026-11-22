@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-templatesourceentity-syntax.json"></a>
 
-```
+```json
 {
   "[SourceAnalysis](#cfn-quicksight-template-templatesourceentity-sourceanalysis)" : {{TemplateSourceAnalysis}},
   "[SourceTemplate](#cfn-quicksight-template-templatesourceentity-sourcetemplate)" : {{TemplateSourceTemplate}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-templatesourceentity-syntax.yaml"></a>
 
-```
+```yaml
   [SourceAnalysis](#cfn-quicksight-template-templatesourceentity-sourceanalysis): {{
     TemplateSourceAnalysis}}
   [SourceTemplate](#cfn-quicksight-template-templatesourceentity-sourcetemplate): {{

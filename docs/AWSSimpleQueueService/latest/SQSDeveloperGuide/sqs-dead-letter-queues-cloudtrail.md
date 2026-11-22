@@ -46,7 +46,7 @@ The following are queue permission examples for each DLQ redrive option. When us
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -88,7 +88,7 @@ The following managed policies contain the required updated permissions:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

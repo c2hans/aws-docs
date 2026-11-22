@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticsearch-domain-masteruseroptions-syntax.json"></a>
 
-```
+```json
 {
   "[MasterUserARN](#cfn-elasticsearch-domain-masteruseroptions-masteruserarn)" : {{String}},
   "[MasterUserName](#cfn-elasticsearch-domain-masteruseroptions-masterusername)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticsearch-domain-masteruseroptions-syntax.yaml"></a>
 
-```
+```yaml
   [MasterUserARN](#cfn-elasticsearch-domain-masteruseroptions-masteruserarn): {{String}}
   [MasterUserName](#cfn-elasticsearch-domain-masteruseroptions-masterusername): {{String}}
   [MasterUserPassword](#cfn-elasticsearch-domain-masteruseroptions-masteruserpassword): {{String}}

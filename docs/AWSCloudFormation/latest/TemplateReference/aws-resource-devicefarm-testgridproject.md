@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-devicefarm-testgridproject-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DeviceFarm::TestGridProject",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-devicefarm-testgridproject-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DeviceFarm::TestGridProject
 Properties:
   [Description](#cfn-devicefarm-testgridproject-description): {{String}}

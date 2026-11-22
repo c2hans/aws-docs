@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-calculatedattributedefinition-valuerange-syntax.json"></a>
 
-```
+```json
 {
   "[End](#cfn-customerprofiles-calculatedattributedefinition-valuerange-end)" : {{Integer}},
   "[Start](#cfn-customerprofiles-calculatedattributedefinition-valuerange-start)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-calculatedattributedefinition-valuerange-syntax.yaml"></a>
 
-```
+```yaml
   [End](#cfn-customerprofiles-calculatedattributedefinition-valuerange-end): {{Integer}}
   [Start](#cfn-customerprofiles-calculatedattributedefinition-valuerange-start): {{Integer}}
 ```

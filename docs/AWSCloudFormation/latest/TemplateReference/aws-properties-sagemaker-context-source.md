@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-context-source-syntax.json"></a>
 
-```
+```json
 {
   "[SourceId](#cfn-sagemaker-context-source-sourceid)" : {{String}},
   "[SourceType](#cfn-sagemaker-context-source-sourcetype)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-context-source-syntax.yaml"></a>
 
-```
+```yaml
   [SourceId](#cfn-sagemaker-context-source-sourceid): {{String}}
   [SourceType](#cfn-sagemaker-context-source-sourcetype): {{String}}
   [SourceUri](#cfn-sagemaker-context-source-sourceuri): {{String}}

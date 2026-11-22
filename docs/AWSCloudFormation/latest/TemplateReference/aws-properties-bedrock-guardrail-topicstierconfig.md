@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-guardrail-topicstierconfig-syntax.json"></a>
 
-```
+```json
 {
   "[TierName](#cfn-bedrock-guardrail-topicstierconfig-tiername)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-guardrail-topicstierconfig-syntax.yaml"></a>
 
-```
+```yaml
   [TierName](#cfn-bedrock-guardrail-topicstierconfig-tiername): {{String}}
 ```
 

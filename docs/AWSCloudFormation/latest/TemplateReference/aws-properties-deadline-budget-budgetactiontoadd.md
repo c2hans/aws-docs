@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-deadline-budget-budgetactiontoadd-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-deadline-budget-budgetactiontoadd-description)" : {{String}},
   "[ThresholdPercentage](#cfn-deadline-budget-budgetactiontoadd-thresholdpercentage)" : {{Number}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-deadline-budget-budgetactiontoadd-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-deadline-budget-budgetactiontoadd-description): {{String}}
   [ThresholdPercentage](#cfn-deadline-budget-budgetactiontoadd-thresholdpercentage): {{Number}}
   [Type](#cfn-deadline-budget-budgetactiontoadd-type): {{String}}

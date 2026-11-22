@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datasync-task-taskschedule-syntax.json"></a>
 
-```
+```json
 {
   "[ScheduleExpression](#cfn-datasync-task-taskschedule-scheduleexpression)" : {{String}},
   "[Status](#cfn-datasync-task-taskschedule-status)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datasync-task-taskschedule-syntax.yaml"></a>
 
-```
+```yaml
   [ScheduleExpression](#cfn-datasync-task-taskschedule-scheduleexpression): {{String}}
   [Status](#cfn-datasync-task-taskschedule-status): {{String}}
 ```

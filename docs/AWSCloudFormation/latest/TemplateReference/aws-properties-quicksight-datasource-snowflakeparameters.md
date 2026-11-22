@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-datasource-snowflakeparameters-syntax.json"></a>
 
-```
+```json
 {
   "[AuthenticationType](#cfn-quicksight-datasource-snowflakeparameters-authenticationtype)" : {{String}},
   "[Database](#cfn-quicksight-datasource-snowflakeparameters-database)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-datasource-snowflakeparameters-syntax.yaml"></a>
 
-```
+```yaml
   [AuthenticationType](#cfn-quicksight-datasource-snowflakeparameters-authenticationtype): {{String}}
   [Database](#cfn-quicksight-datasource-snowflakeparameters-database): {{String}}
   [DatabaseAccessControlRole](#cfn-quicksight-datasource-snowflakeparameters-databaseaccesscontrolrole): {{String}}

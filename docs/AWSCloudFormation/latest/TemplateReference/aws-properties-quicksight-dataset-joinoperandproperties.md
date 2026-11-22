@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-joinoperandproperties-syntax.json"></a>
 
-```
+```json
 {
   "[OutputColumnNameOverrides](#cfn-quicksight-dataset-joinoperandproperties-outputcolumnnameoverrides)" : {{[ OutputColumnNameOverride, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-joinoperandproperties-syntax.yaml"></a>
 
-```
+```yaml
   [OutputColumnNameOverrides](#cfn-quicksight-dataset-joinoperandproperties-outputcolumnnameoverrides): {{
     - OutputColumnNameOverride}}
 ```

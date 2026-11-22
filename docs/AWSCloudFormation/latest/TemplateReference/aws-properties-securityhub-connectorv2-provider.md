@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityhub-connectorv2-provider-syntax.json"></a>
 
-```
+```json
 {
   "[Azure](#cfn-securityhub-connectorv2-provider-azure)" : {{AzureProviderConfiguration}},
   "[JiraCloud](#cfn-securityhub-connectorv2-provider-jiracloud)" : {{JiraCloudProviderConfiguration}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityhub-connectorv2-provider-syntax.yaml"></a>
 
-```
+```yaml
   [Azure](#cfn-securityhub-connectorv2-provider-azure): {{
     AzureProviderConfiguration}}
   [JiraCloud](#cfn-securityhub-connectorv2-provider-jiracloud): {{

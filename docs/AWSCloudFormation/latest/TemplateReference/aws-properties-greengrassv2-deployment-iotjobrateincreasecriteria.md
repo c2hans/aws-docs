@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrassv2-deployment-iotjobrateincreasecriteria-syntax.json"></a>
 
-```
+```json
 {
   "[NumberOfNotifiedThings](#cfn-greengrassv2-deployment-iotjobrateincreasecriteria-numberofnotifiedthings)" : {{Integer}},
   "[NumberOfSucceededThings](#cfn-greengrassv2-deployment-iotjobrateincreasecriteria-numberofsucceededthings)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrassv2-deployment-iotjobrateincreasecriteria-syntax.yaml"></a>
 
-```
+```yaml
   [NumberOfNotifiedThings](#cfn-greengrassv2-deployment-iotjobrateincreasecriteria-numberofnotifiedthings): {{Integer}}
   [NumberOfSucceededThings](#cfn-greengrassv2-deployment-iotjobrateincreasecriteria-numberofsucceededthings): {{Integer}}
 ```

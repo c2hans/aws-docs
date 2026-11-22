@@ -13,7 +13,7 @@ AWS Artifact reports are denoted by the IAM resource, `report`.
 The following policy grants permission to read all AWS Artifact reports under the `Certifications and Attestations` category.
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -44,7 +44,7 @@ The following policy grants permission to read all AWS Artifact reports under th
 The following policy lets you grant permission to read all AWS Artifact reports under the `SOC` series.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -76,7 +76,7 @@ The following policy lets you grant permission to read all AWS Artifact reports 
 The following policy lets you grant permission to read all AWS Artifact reports under the `Certifications and Attestations` category, and `SOC` series.
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

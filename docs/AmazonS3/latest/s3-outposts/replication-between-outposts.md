@@ -135,7 +135,7 @@ To set up a replication configuration when both the source and destination Outpo
 
 ****
 
-         ```
+         ```json
          {
             "Version":"2012-10-17",
             "Statement":[
@@ -167,7 +167,7 @@ To set up a replication configuration when both the source and destination Outpo
 
 ****
 
-         ```
+         ```json
          {
              "Version":"2012-10-17",
              "Statement": [
@@ -209,7 +209,7 @@ To set up a replication configuration when both the source and destination Outpo
 
    1. Although the S3 on Outposts API requires a replication configuration in XML format, the AWS CLI requires that you specify the replication configuration in JSON format. Save the following JSON in a file called `replication.json` to the local directory on your computer. To use this configuration, replace the `{{user input placeholders}}` with your own information.
 
-      ```
+      ```json
       {
         "Role": "{{IAM-role-ARN}}",
         "Rules": [

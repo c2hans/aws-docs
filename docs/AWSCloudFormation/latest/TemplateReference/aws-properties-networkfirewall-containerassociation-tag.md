@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkfirewall-containerassociation-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-networkfirewall-containerassociation-tag-key)" : {{String}},
   "[Value](#cfn-networkfirewall-containerassociation-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkfirewall-containerassociation-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-networkfirewall-containerassociation-tag-key): {{String}}
   [Value](#cfn-networkfirewall-containerassociation-tag-value): {{String}}
 ```

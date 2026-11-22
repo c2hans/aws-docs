@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iotwireless-multicastgroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoTWireless::MulticastGroup",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iotwireless-multicastgroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoTWireless::MulticastGroup
 Properties:
   [AssociateWirelessDevice](#cfn-iotwireless-multicastgroup-associatewirelessdevice): {{String}}

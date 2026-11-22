@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appsync-datasource-lambdaconfig-syntax.json"></a>
 
-```
+```json
 {
   "[LambdaFunctionArn](#cfn-appsync-datasource-lambdaconfig-lambdafunctionarn)" : {{String}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appsync-datasource-lambdaconfig-syntax.yaml"></a>
 
-```
+```yaml
   [LambdaFunctionArn](#cfn-appsync-datasource-lambdaconfig-lambdafunctionarn): {{String}}
 ```
 

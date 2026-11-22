@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dlm-lifecyclepolicy-crossregioncopyretainrule-syntax.json"></a>
 
-```
+```json
 {
   "[Interval](#cfn-dlm-lifecyclepolicy-crossregioncopyretainrule-interval)" : {{Integer}},
   "[IntervalUnit](#cfn-dlm-lifecyclepolicy-crossregioncopyretainrule-intervalunit)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dlm-lifecyclepolicy-crossregioncopyretainrule-syntax.yaml"></a>
 
-```
+```yaml
   [Interval](#cfn-dlm-lifecyclepolicy-crossregioncopyretainrule-interval): {{Integer}}
   [IntervalUnit](#cfn-dlm-lifecyclepolicy-crossregioncopyretainrule-intervalunit): {{String}}
 ```

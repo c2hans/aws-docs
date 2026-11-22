@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-function-imageconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Command](#cfn-lambda-function-imageconfig-command)" : {{[ String, ... ]}},
   "[EntryPoint](#cfn-lambda-function-imageconfig-entrypoint)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-function-imageconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Command](#cfn-lambda-function-imageconfig-command): {{
     - String}}
   [EntryPoint](#cfn-lambda-function-imageconfig-entrypoint): {{

@@ -83,7 +83,7 @@ For more information, see [Tagging your objects](https://docs.aws.amazon.com/Ama
 **Tools for PowerShell V4**
 **Example 1: The sample returns the tags associated with the object present on the given S3 bucket.**
 
-```
+```powershell
 Get-S3ObjectTagSet -Key 'testfile.txt' -BucketName 'amzn-s3-demo-bucket'
 ```
 **Output:**
@@ -98,7 +98,7 @@ test value
 **Tools for PowerShell V5**
 **Example 1: The sample returns the tags associated with the object present on the given S3 bucket.**
 
-```
+```powershell
 Get-S3ObjectTagSet -Key 'testfile.txt' -BucketName 'amzn-s3-demo-bucket'
 ```
 **Output:**

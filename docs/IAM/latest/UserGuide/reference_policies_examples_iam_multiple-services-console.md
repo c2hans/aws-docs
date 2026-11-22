@@ -23,7 +23,7 @@ This policy does not allow access to other services or actions. When the policy 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

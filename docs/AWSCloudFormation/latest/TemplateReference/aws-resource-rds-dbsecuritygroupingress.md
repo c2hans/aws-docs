@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-rds-dbsecuritygroupingress-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RDS::DBSecurityGroupIngress",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-rds-dbsecuritygroupingress-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RDS::DBSecurityGroupIngress
 Properties:
   [CIDRIP](#cfn-rds-dbsecuritygroupingress-cidrip): {{String}}
@@ -106,7 +106,7 @@ The following example creates a DB security group and allows ingress to it from 
 #### JSON
 <a name="aws-resource-rds-dbsecuritygroupingress--examples--Enable_ingress_to_a_DB_security_group--json"></a>
 
-```
+```json
 {
   "Resources": {
     "MyDBSecurityGroupIngress": {
@@ -140,7 +140,7 @@ The following example creates a DB security group and allows ingress to it from 
 #### YAML
 <a name="aws-resource-rds-dbsecuritygroupingress--examples--Enable_ingress_to_a_DB_security_group--yaml"></a>
 
-```
+```yaml
 Resources:
   MyDBSecurityGroupIngress:
     Type: AWS::RDS::DBSecurityGroupIngress

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kafkaconnect-connector-customplugin-syntax.json"></a>
 
-```
+```json
 {
   "[CustomPluginArn](#cfn-kafkaconnect-connector-customplugin-custompluginarn)" : {{String}},
   "[Revision](#cfn-kafkaconnect-connector-customplugin-revision)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kafkaconnect-connector-customplugin-syntax.yaml"></a>
 
-```
+```yaml
   [CustomPluginArn](#cfn-kafkaconnect-connector-customplugin-custompluginarn): {{String}}
   [Revision](#cfn-kafkaconnect-connector-customplugin-revision): {{Integer}}
 ```

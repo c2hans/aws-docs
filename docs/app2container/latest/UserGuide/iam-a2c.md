@@ -128,7 +128,7 @@ Other policy sections in the examples are required for App2Container to generate
 #### IAM policy for Amazon ECS
 <a name="iam-ecs-policy"></a>
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -363,7 +363,7 @@ Other policy sections in the examples are required for App2Container to generate
 #### IAM policy for Amazon EKS
 <a name="iam-eks-policy"></a>
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -516,7 +516,7 @@ Other policy sections in the examples are required for App2Container to generate
 #### IAM policy for AWS App Runner
 <a name="iam-ar-policy"></a>
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -608,7 +608,7 @@ Other policy sections in the examples are required for App2Container to generate
 #### IAM policy for Azure DevOps pipelines
 <a name="iam-azure-devops-policy"></a>
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -637,7 +637,7 @@ Other policy sections in the examples are required for App2Container to generate
 #### IAM policy for Jenkins pipelines
 <a name="iam-jenkins-policy"></a>
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

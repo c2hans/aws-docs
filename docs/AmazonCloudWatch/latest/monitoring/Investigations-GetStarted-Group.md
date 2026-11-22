@@ -49,7 +49,7 @@ CloudWatch investigations uses *cross-Region inference* to distribute traffic ac
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [

@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudformation-customresource-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudFormation::CustomResource",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudformation-customresource-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudFormation::CustomResource
 Properties:
   [ServiceTimeout](#cfn-cloudformation-customresource-servicetimeout): {{String}}
@@ -104,7 +104,7 @@ The following example demonstrates how to create a custom resource definition in
 #### JSON
 <a name="aws-resource-cloudformation-customresource--examples--Creating_a_custom_resource_definition_in_a_template--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -148,7 +148,7 @@ The following example demonstrates how to create a custom resource definition in
 #### YAML
 <a name="aws-resource-cloudformation-customresource--examples--Creating_a_custom_resource_definition_in_a_template--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   MyFrontEndTest:
@@ -181,7 +181,7 @@ With Lambda functions and custom resources, you can run custom code in response 
 #### JSON
 <a name="aws-resource-cloudformation-customresource--examples--Using_a_function_in_a_custom_resource--json"></a>
 
-```
+```json
 {
     "MyCustomResource": {
         "Type": "Custom::TestLambdaCrossStackRef",
@@ -217,7 +217,7 @@ With Lambda functions and custom resources, you can run custom code in response 
 #### YAML
 <a name="aws-resource-cloudformation-customresource--examples--Using_a_function_in_a_custom_resource--yaml"></a>
 
-```
+```yaml
 MyCustomResource:
   Type: 'Custom::TestLambdaCrossStackRef'
   Properties:

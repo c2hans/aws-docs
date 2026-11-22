@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewayrule-circuitbreakerconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Mode](#cfn-bedrockagentcore-gatewayrule-circuitbreakerconfiguration-mode)" : {{}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewayrule-circuitbreakerconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Mode](#cfn-bedrockagentcore-gatewayrule-circuitbreakerconfiguration-mode): {{
     }}
 ```

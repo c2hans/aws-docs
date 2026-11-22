@@ -14,7 +14,7 @@ The AWS AppSync resolver mapping template used with the EventBridge data source 
 
 The `PutEvents` request mapping template allows you to send multiple custom events to an EventBridge event bus. The mapping document has the following structure:
 
-```
+```sh
 {
     "version" : "2018-05-29",
     "operation" : "PutEvents",

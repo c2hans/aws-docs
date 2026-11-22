@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-athena-workgroup-customercontentencryptionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[KmsKey](#cfn-athena-workgroup-customercontentencryptionconfiguration-kmskey)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-athena-workgroup-customercontentencryptionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [KmsKey](#cfn-athena-workgroup-customercontentencryptionconfiguration-kmskey): {{String}}
 ```
 

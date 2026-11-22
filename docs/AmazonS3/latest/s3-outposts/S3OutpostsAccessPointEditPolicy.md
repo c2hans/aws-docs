@@ -30,7 +30,7 @@ The following AWS CLI example puts a policy on an Outposts access point.
 
 1. Save the following access point policy to a JSON file. In this example, the file is named `appolicy1.json`. Replace the `{{user input placeholders}}` with your own information.
 
-   ```
+   ```JSON
    {
       "Version":"2012-10-17",
       "Id":"exampleAccessPointPolicy",
@@ -59,7 +59,7 @@ The following AWS CLI example puts a policy on an Outposts access point.
 
 The following SDK for Java example puts a policy on an Outposts access point.
 
-```
+```Java
 import com.amazonaws.services.s3control.model.*;
 
 public void putAccessPointPolicy(String accessPointArn) {

@@ -33,7 +33,7 @@ You can update a function's code in the CloudFront console or with the AWS Comma
 
    This example uses the `fileb://` notation to pass in the file. It also includes line breaks to make the command more readable.
 
-   ```
+   ```bash
    aws cloudfront update-function \
        --name MaxAge \
        --function-config '{"Comment":"Max Age 2 years","Runtime":"cloudfront-js-2.0","KeyValueStoreAssociations":{"Quantity":1,"Items":[{"KeyValueStoreARN":"arn:aws:cloudfront::111122223333:key-value-store/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}]}}' \
@@ -50,7 +50,7 @@ To remove the association, omit the `KeyValueStoreAssociations` parameter.
 
    When the command is successful, you see output like the following.
 
-   ```
+   ```bash
    ETag: ETVXYZEXAMPLE
    FunctionSummary:
      FunctionConfig:

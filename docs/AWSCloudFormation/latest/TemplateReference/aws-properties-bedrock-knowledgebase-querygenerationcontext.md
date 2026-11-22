@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-knowledgebase-querygenerationcontext-syntax.json"></a>
 
-```
+```json
 {
   "[CuratedQueries](#cfn-bedrock-knowledgebase-querygenerationcontext-curatedqueries)" : {{[ CuratedQuery, ... ]}},
   "[Tables](#cfn-bedrock-knowledgebase-querygenerationcontext-tables)" : {{[ QueryGenerationTable, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-knowledgebase-querygenerationcontext-syntax.yaml"></a>
 
-```
+```yaml
   [CuratedQueries](#cfn-bedrock-knowledgebase-querygenerationcontext-curatedqueries): {{
     - CuratedQuery}}
   [Tables](#cfn-bedrock-knowledgebase-querygenerationcontext-tables): {{

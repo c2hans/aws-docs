@@ -8,13 +8,13 @@ Subscribes a handler that fires when the session and agentic state have been res
 
  **Signature**
 
-```
+```typescript
 onAIAgentContactReady(handler: AIAgentContactReadyHandler, contactId: string): void
 ```
 
  **Usage**
 
-```
+```typescript
 const handler: AIAgentContactReadyHandler = (data: AIAgentContactReadyEvent) => {
     console.log("AI Agent ready for contact:", data.contactId);
     console.log("Agentic enabled:", data.isAgenticEnabled);
@@ -31,6 +31,6 @@ aiAgentsClient.onAIAgentContactReady(handler, contactId);
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

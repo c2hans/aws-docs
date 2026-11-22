@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amplifyuibuilder-component-sortproperty-syntax.json"></a>
 
-```
+```json
 {
   "[Direction](#cfn-amplifyuibuilder-component-sortproperty-direction)" : {{String}},
   "[Field](#cfn-amplifyuibuilder-component-sortproperty-field)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amplifyuibuilder-component-sortproperty-syntax.yaml"></a>
 
-```
+```yaml
   [Direction](#cfn-amplifyuibuilder-component-sortproperty-direction): {{String}}
   [Field](#cfn-amplifyuibuilder-component-sortproperty-field): {{String}}
 ```

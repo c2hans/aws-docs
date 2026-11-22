@@ -25,7 +25,7 @@ This policy does not allow users to view or manage their own MFA devices. They a
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

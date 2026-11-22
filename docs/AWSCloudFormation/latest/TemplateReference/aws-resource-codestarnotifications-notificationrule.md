@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-codestarnotifications-notificationrule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CodeStarNotifications::NotificationRule",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-codestarnotifications-notificationrule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CodeStarNotifications::NotificationRule
 Properties:
   [CreatedBy](#cfn-codestarnotifications-notificationrule-createdby): {{String}}
@@ -162,7 +162,7 @@ The following example creates a notification rule with a name of My Notification
 #### JSON
 <a name="aws-resource-codestarnotifications-notificationrule--examples--Example--json"></a>
 
-```
+```json
 {
     "Type": "AWS::CodeStarNotifications::NotificationRule",
     "Properties": {
@@ -188,7 +188,7 @@ The following example creates a notification rule with a name of My Notification
 #### YAML
 <a name="aws-resource-codestarnotifications-notificationrule--examples--Example--yaml"></a>
 
-```
+```yaml
 Type: 'AWS::CodeStarNotifications::NotificationRule'
 Properties:
         Name: 'My Notification Rule for Comments on Commits'

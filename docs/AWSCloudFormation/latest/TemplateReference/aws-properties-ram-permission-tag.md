@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ram-permission-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-ram-permission-tag-key)" : {{String}},
   "[Value](#cfn-ram-permission-tag-value)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ram-permission-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-ram-permission-tag-key): {{String}}
   [Value](#cfn-ram-permission-tag-value): {{String}}
 ```

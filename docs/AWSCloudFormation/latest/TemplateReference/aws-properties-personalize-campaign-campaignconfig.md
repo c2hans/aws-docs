@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-personalize-campaign-campaignconfig-syntax.json"></a>
 
-```
+```json
 {
   "[EnableMetadataWithRecommendations](#cfn-personalize-campaign-campaignconfig-enablemetadatawithrecommendations)" : {{Boolean}},
   "[ItemExplorationConfig](#cfn-personalize-campaign-campaignconfig-itemexplorationconfig)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-personalize-campaign-campaignconfig-syntax.yaml"></a>
 
-```
+```yaml
   [EnableMetadataWithRecommendations](#cfn-personalize-campaign-campaignconfig-enablemetadatawithrecommendations): {{Boolean}}
   [ItemExplorationConfig](#cfn-personalize-campaign-campaignconfig-itemexplorationconfig): {{
     {{Key}}: {{Value}}}}

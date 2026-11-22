@@ -15,7 +15,7 @@ The SQL language provides the `UPDATE` statement for modifying data. Amazon Dyna
 
 In SQL, you would use the `UPDATE` statement to modify one or more rows. The `SET` clause specifies new values for one or more columns, and the `WHERE` clause determines which rows are modified. The following is an example.
 
-```
+```sql
 UPDATE Music
 SET RecordLabel = 'Global Records'
 WHERE Artist = 'No One You Know' AND SongTitle = 'Call Me Today';
@@ -112,7 +112,7 @@ With PartiQL, you use the `ExecuteStatement` operation to modify an item in a ta
 
 The primary key for this table consists of *Artist* and *SongTitle*. You must specify values for these attributes.
 
-```
+```sql
 UPDATE Music
 SET RecordLabel ='Global Records'
 WHERE Artist='No One You Know' AND SongTitle='Call Me Today'
@@ -120,7 +120,7 @@ WHERE Artist='No One You Know' AND SongTitle='Call Me Today'
 
 You can also modify multiple fields at once, such as in the following example.
 
-```
+```sql
 UPDATE Music
 SET RecordLabel = 'Global Records'
 SET AwardsWon = 10
@@ -131,7 +131,7 @@ WHERE Artist ='No One You Know' AND SongTitle='Call Me Today'
 
 The following is an example of an `Update` statement to initialize a new attribute (*Plays*) to keep track of the number of times a song has been played.
 
-```
+```sql
 UPDATE Music
 SET Plays = 0
 WHERE Artist='No One You Know' AND SongTitle='Call Me Today'
@@ -139,7 +139,7 @@ WHERE Artist='No One You Know' AND SongTitle='Call Me Today'
 
 Whenever someone plays this song, you can use the following `Update` statement to increment *Plays* by one.
 
-```
+```sql
 UPDATE Music
 SET Plays = Plays + 1
 WHERE Artist='No One You Know' AND SongTitle='Call Me Today'

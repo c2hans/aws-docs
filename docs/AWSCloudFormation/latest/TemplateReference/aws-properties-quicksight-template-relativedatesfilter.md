@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-relativedatesfilter-syntax.json"></a>
 
-```
+```json
 {
   "[AnchorDateConfiguration](#cfn-quicksight-template-relativedatesfilter-anchordateconfiguration)" : {{AnchorDateConfiguration}},
   "[Column](#cfn-quicksight-template-relativedatesfilter-column)" : {{ColumnIdentifier}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-relativedatesfilter-syntax.yaml"></a>
 
-```
+```yaml
   [AnchorDateConfiguration](#cfn-quicksight-template-relativedatesfilter-anchordateconfiguration): {{
     AnchorDateConfiguration}}
   [Column](#cfn-quicksight-template-relativedatesfilter-column): {{

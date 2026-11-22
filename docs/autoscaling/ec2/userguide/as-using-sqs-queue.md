@@ -56,7 +56,7 @@ Messages that have not been processed at the time an instance is terminated are 
 
 The following pseudocode shows one way to protect long-running, queue-driven worker processes from scale-in termination.
 
-```
+```php
 while (true)
 {
   SetInstanceProtection(False);

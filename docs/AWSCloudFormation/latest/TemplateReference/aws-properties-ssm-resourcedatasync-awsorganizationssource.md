@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssm-resourcedatasync-awsorganizationssource-syntax.json"></a>
 
-```
+```json
 {
   "[OrganizationalUnits](#cfn-ssm-resourcedatasync-awsorganizationssource-organizationalunits)" : {{[ String, ... ]}},
   "[OrganizationSourceType](#cfn-ssm-resourcedatasync-awsorganizationssource-organizationsourcetype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssm-resourcedatasync-awsorganizationssource-syntax.yaml"></a>
 
-```
+```yaml
   [OrganizationalUnits](#cfn-ssm-resourcedatasync-awsorganizationssource-organizationalunits): {{
     - String}}
   [OrganizationSourceType](#cfn-ssm-resourcedatasync-awsorganizationssource-organizationsourcetype): {{String}}

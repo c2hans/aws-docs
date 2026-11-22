@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudwatch-metricstream-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudWatch::MetricStream",
   "Properties" : {
@@ -47,7 +47,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudwatch-metricstream-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudWatch::MetricStream
 Properties:
   [ExcludeFilters](#cfn-cloudwatch-metricstream-excludefilters): {{
@@ -184,7 +184,7 @@ The following example creates a metric stream that streams only the metrics in t
 #### YAML
 <a name="aws-resource-cloudwatch-metricstream--examples--Metric_stream_example--yaml"></a>
 
-```
+```yaml
 Resources:
   MyMetricStream:
     Type: 'AWS::CloudWatch::MetricStream'
@@ -200,7 +200,7 @@ Resources:
 #### JSON
 <a name="aws-resource-cloudwatch-metricstream--examples--Metric_stream_example--json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudWatch::MetricStream",
   "Properties" : {

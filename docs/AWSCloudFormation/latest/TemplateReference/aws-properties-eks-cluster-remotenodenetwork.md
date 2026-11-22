@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-cluster-remotenodenetwork-syntax.json"></a>
 
-```
+```json
 {
   "[Cidrs](#cfn-eks-cluster-remotenodenetwork-cidrs)" : {{[ String, ... ]}}
 }
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-cluster-remotenodenetwork-syntax.yaml"></a>
 
-```
+```yaml
   [Cidrs](#cfn-eks-cluster-remotenodenetwork-cidrs): {{
     - String}}
 ```

@@ -22,7 +22,7 @@ Each specified event in your publish request must be a stringified valid JSON va
 
 The following is an example of a request.
 
-```
+```json
 {
   "method": "POST",
   "headers": {
@@ -41,7 +41,7 @@ The following is an example of a request.
 
 You can use your Browser’s `fetch API` to publish the events. The following example demonstrates this.
 
-```
+```json
 await fetch(`https://${HTTP_DOMAIN}/event`, {
   "method": "POST",
   "headers": {

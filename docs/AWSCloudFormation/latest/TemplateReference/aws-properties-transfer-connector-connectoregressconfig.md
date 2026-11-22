@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-transfer-connector-connectoregressconfig-syntax.json"></a>
 
-```
+```json
 {
   "[VpcLattice](#cfn-transfer-connector-connectoregressconfig-vpclattice)" : {{ConnectorVpcLatticeEgressConfig}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-transfer-connector-connectoregressconfig-syntax.yaml"></a>
 
-```
+```yaml
   [VpcLattice](#cfn-transfer-connector-connectoregressconfig-vpclattice): {{
     ConnectorVpcLatticeEgressConfig}}
 ```

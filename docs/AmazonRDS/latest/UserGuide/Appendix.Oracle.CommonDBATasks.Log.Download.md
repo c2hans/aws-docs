@@ -24,21 +24,21 @@ The following code creates directories that provide read-only access to your onl
 **Important**
 This code also revokes the `DROP ANY DIRECTORY` privilege.
 
-```
+```sql
 EXEC rdsadmin.rdsadmin_master_util.create_archivelog_dir;
 EXEC rdsadmin.rdsadmin_master_util.create_onlinelog_dir;
 ```
 
 The following code drops the directories for your online and archived redo log files.
 
-```
+```sql
 EXEC rdsadmin.rdsadmin_master_util.drop_archivelog_dir;
 EXEC rdsadmin.rdsadmin_master_util.drop_onlinelog_dir;
 ```
 
 The following code grants and revokes the `DROP ANY DIRECTORY` privilege.
 
-```
+```sql
 EXEC rdsadmin.rdsadmin_master_util.revoke_drop_any_directory;
 EXEC rdsadmin.rdsadmin_master_util.grant_drop_any_directory;
 ```

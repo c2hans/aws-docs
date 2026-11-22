@@ -18,7 +18,7 @@ Rotates the `mysql.general_log` table to a backup table.
 ### Syntax
 <a name="mysql_rds_rotate_general_log-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_rotate_general_log;
 ```
 
@@ -37,7 +37,7 @@ Rotates the `mysql.slow_log` table to a backup table.
 ### Syntax
 <a name="mysql_rds_rotate_slow_log-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_rotate_slow_log;
 ```
 

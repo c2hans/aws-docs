@@ -9,7 +9,7 @@ The following example demonstrates how to dynamically manage AWS managed applica
 ## Iframe container component
 <a name="integrate-aws-managed-apps-react-iframe-container"></a>
 
-```
+```typescript
 const IFrameAppContainer: React.FC<{ appHost: AppHost }> = ({ appHost }) => {
   const iframeRef = useRef<HTMLIFrameElement>(null);
 
@@ -39,7 +39,7 @@ const IFrameAppContainer: React.FC<{ appHost: AppHost }> = ({ appHost }) => {
 ## Application container component
 <a name="integrate-aws-managed-apps-react-app-container"></a>
 
-```
+```typescript
 const ApplicationContainer: React.FC<{provider: AmazonConnectProvider}>
   = ({provider}) => {
 

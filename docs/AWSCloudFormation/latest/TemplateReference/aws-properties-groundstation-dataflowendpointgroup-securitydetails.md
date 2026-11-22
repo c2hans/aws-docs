@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-groundstation-dataflowendpointgroup-securitydetails-syntax.json"></a>
 
-```
+```json
 {
   "[RoleArn](#cfn-groundstation-dataflowendpointgroup-securitydetails-rolearn)" : {{String}},
   "[SecurityGroupIds](#cfn-groundstation-dataflowendpointgroup-securitydetails-securitygroupids)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-groundstation-dataflowendpointgroup-securitydetails-syntax.yaml"></a>
 
-```
+```yaml
   [RoleArn](#cfn-groundstation-dataflowendpointgroup-securitydetails-rolearn): {{String}}
   [SecurityGroupIds](#cfn-groundstation-dataflowendpointgroup-securitydetails-securitygroupids): {{
     - String}}
@@ -69,7 +69,7 @@ The following example creates Ground Station `SecurityDetails`
 #### JSON
 <a name="aws-properties-groundstation-dataflowendpointgroup-securitydetails--examples--Create_SecurityDetails--json"></a>
 
-```
+```json
 {
   "SecurityDetails": {
     "SubnetIds": [
@@ -86,7 +86,7 @@ The following example creates Ground Station `SecurityDetails`
 #### YAML
 <a name="aws-properties-groundstation-dataflowendpointgroup-securitydetails--examples--Create_SecurityDetails--yaml"></a>
 
-```
+```yaml
 SecurityDetails:
   SubnetIds:
     - subnet-12345678

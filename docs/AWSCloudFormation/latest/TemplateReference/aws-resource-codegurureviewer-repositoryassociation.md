@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-codegurureviewer-repositoryassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CodeGuruReviewer::RepositoryAssociation",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-codegurureviewer-repositoryassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CodeGuruReviewer::RepositoryAssociation
 Properties:
   [BucketName](#cfn-codegurureviewer-repositoryassociation-bucketname): {{String}}
@@ -152,7 +152,7 @@ The following example creates an Amazon CodeGuru Reviewer repository association
 #### YAML
 <a name="aws-resource-codegurureviewer-repositoryassociation--examples--Create_an_CodeCommit_repository_association_using_an_existing_CodeCommit_repository--yaml"></a>
 
-```
+```yaml
 Resources:
   MyRepositoryAssociation:
     Type: AWS::CodeGuruReviewer::RepositoryAssociation
@@ -164,7 +164,7 @@ Resources:
 #### JSON
 <a name="aws-resource-codegurureviewer-repositoryassociation--examples--Create_an_CodeCommit_repository_association_using_an_existing_CodeCommit_repository--json"></a>
 
-```
+```json
 {
   "Resources": {
     "MyRepositoryAssociation": {
@@ -186,7 +186,7 @@ The following example creates an AWS CodeCommit repository named `MyRepositoryNa
 #### YAML
 <a name="aws-resource-codegurureviewer-repositoryassociation--examples--Create_an_CodeCommit_repository_association_with_a_new_CodeCommit_repository--yaml"></a>
 
-```
+```yaml
 Resources:
   MyRepository:
     Type: AWS::CodeCommit::Repository
@@ -202,7 +202,7 @@ Resources:
 #### JSON
 <a name="aws-resource-codegurureviewer-repositoryassociation--examples--Create_an_CodeCommit_repository_association_with_a_new_CodeCommit_repository--json"></a>
 
-```
+```json
 {
   "Resources": {
     "MyRepository": {
@@ -230,7 +230,7 @@ The following example creates an Amazon CodeGuru Reviewer repository association
 #### YAML
 <a name="aws-resource-codegurureviewer-repositoryassociation--examples--Create_a_Bitbucket_repository_association--yaml"></a>
 
-```
+```yaml
 Resources:
   MyRepositoryAssociation:
     Type: AWS::CodeGuruReviewer::RepositoryAssociation
@@ -244,7 +244,7 @@ Resources:
 #### JSON
 <a name="aws-resource-codegurureviewer-repositoryassociation--examples--Create_a_Bitbucket_repository_association--json"></a>
 
-```
+```json
 {
   "Resources": {
     "MyRepositoryAssociation": {
@@ -268,7 +268,7 @@ The following example creates an Amazon CodeGuru Reviewer repository association
 #### YAML
 <a name="aws-resource-codegurureviewer-repositoryassociation--examples--Create_a_GitHub_Enterprise_Server_repository_association--yaml"></a>
 
-```
+```yaml
 Resources:
   MyRepositoryAssociation:
     Type: AWS::CodeGuruReviewer::RepositoryAssociation
@@ -282,7 +282,7 @@ Resources:
 #### JSON
 <a name="aws-resource-codegurureviewer-repositoryassociation--examples--Create_a_GitHub_Enterprise_Server_repository_association--json"></a>
 
-```
+```json
 {
   "Resources": {
     "MyRepositoryAssociation": {
@@ -306,7 +306,7 @@ The following example creates an Amazon CodeGuru Reviewer repository association
 #### YAML
 <a name="aws-resource-codegurureviewer-repositoryassociation--examples--Create_a_repository_association_with_tags--yaml"></a>
 
-```
+```yaml
 Resources:
   MyRepositoryAssociation:
     Type: AWS::CodeGuruReviewer::RepositoryAssociation
@@ -323,7 +323,7 @@ Resources:
 #### JSON
 <a name="aws-resource-codegurureviewer-repositoryassociation--examples--Create_a_repository_association_with_tags--json"></a>
 
-```
+```json
 {
   "Resources": {
     "MyRepositoryAssociation": {

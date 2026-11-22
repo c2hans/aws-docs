@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gateway-interceptorconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Lambda](#cfn-bedrockagentcore-gateway-interceptorconfiguration-lambda)" : {{LambdaInterceptorConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gateway-interceptorconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Lambda](#cfn-bedrockagentcore-gateway-interceptorconfiguration-lambda): {{
     LambdaInterceptorConfiguration}}
 ```

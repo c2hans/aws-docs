@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distribution-viewercertificate-syntax.json"></a>
 
-```
+```json
 {
   "[AcmCertificateArn](#cfn-cloudfront-distribution-viewercertificate-acmcertificatearn)" : {{String}},
   "[CloudFrontDefaultCertificate](#cfn-cloudfront-distribution-viewercertificate-cloudfrontdefaultcertificate)" : {{Boolean}},
@@ -44,7 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distribution-viewercertificate-syntax.yaml"></a>
 
-```
+```yaml
   [AcmCertificateArn](#cfn-cloudfront-distribution-viewercertificate-acmcertificatearn): {{String}}
   [CloudFrontDefaultCertificate](#cfn-cloudfront-distribution-viewercertificate-cloudfrontdefaultcertificate): {{Boolean}}
   [IamCertificateId](#cfn-cloudfront-distribution-viewercertificate-iamcertificateid): {{String}}

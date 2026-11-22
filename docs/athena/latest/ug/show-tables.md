@@ -12,7 +12,7 @@ The [StatementType](https://docs.aws.amazon.com/athena/latest/APIReference/API_Q
 ## Synopsis
 <a name="synopsis"></a>
 
-```
+```sql
 SHOW TABLES [IN database_name] ['regular_expression']
 ```
 
@@ -47,7 +47,7 @@ view_2016_flights_dfw
 
 **Example – Show the names of all tables in `sampledb` that include the word "flights"**
 
-```
+```sql
 SHOW TABLES IN sampledb '*flights*'
 ```
 `Results`
@@ -60,7 +60,7 @@ view_2016_flights_dfw
 
 **Example – Show the names of all tables in `sampledb` that end in the word "logs"**
 
-```
+```sql
 SHOW TABLES IN sampledb '*logs'
 ```
 `Results`

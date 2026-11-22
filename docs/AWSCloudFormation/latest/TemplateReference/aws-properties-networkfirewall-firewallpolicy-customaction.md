@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkfirewall-firewallpolicy-customaction-syntax.json"></a>
 
-```
+```json
 {
   "[ActionDefinition](#cfn-networkfirewall-firewallpolicy-customaction-actiondefinition)" : {{ActionDefinition}},
   "[ActionName](#cfn-networkfirewall-firewallpolicy-customaction-actionname)" : {{String}}
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkfirewall-firewallpolicy-customaction-syntax.yaml"></a>
 
-```
+```yaml
   [ActionDefinition](#cfn-networkfirewall-firewallpolicy-customaction-actiondefinition): {{
     ActionDefinition}}
   [ActionName](#cfn-networkfirewall-firewallpolicy-customaction-actionname): {{String}}

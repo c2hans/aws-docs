@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-backup-backupplan-lifecycleresourcetype-syntax.json"></a>
 
-```
+```json
 {
   "[DeleteAfterDays](#cfn-backup-backupplan-lifecycleresourcetype-deleteafterdays)" : {{Number}},
   "[MoveToColdStorageAfterDays](#cfn-backup-backupplan-lifecycleresourcetype-movetocoldstorageafterdays)" : {{Number}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-backup-backupplan-lifecycleresourcetype-syntax.yaml"></a>
 
-```
+```yaml
   [DeleteAfterDays](#cfn-backup-backupplan-lifecycleresourcetype-deleteafterdays): {{Number}}
   [MoveToColdStorageAfterDays](#cfn-backup-backupplan-lifecycleresourcetype-movetocoldstorageafterdays): {{Number}}
   [OptInToArchiveForSupportedResources](#cfn-backup-backupplan-lifecycleresourcetype-optintoarchiveforsupportedresources): {{Boolean}}

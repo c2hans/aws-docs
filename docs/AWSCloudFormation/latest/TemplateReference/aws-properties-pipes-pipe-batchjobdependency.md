@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-batchjobdependency-syntax.json"></a>
 
-```
+```json
 {
   "[JobId](#cfn-pipes-pipe-batchjobdependency-jobid)" : {{String}},
   "[Type](#cfn-pipes-pipe-batchjobdependency-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-batchjobdependency-syntax.yaml"></a>
 
-```
+```yaml
   [JobId](#cfn-pipes-pipe-batchjobdependency-jobid): {{String}}
   [Type](#cfn-pipes-pipe-batchjobdependency-type): {{String}}
 ```

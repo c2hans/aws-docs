@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-fleet-locationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Location](#cfn-gamelift-fleet-locationconfiguration-location)" : {{String}},
   "[LocationCapacity](#cfn-gamelift-fleet-locationconfiguration-locationcapacity)" : {{LocationCapacity}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-fleet-locationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Location](#cfn-gamelift-fleet-locationconfiguration-location): {{String}}
   [LocationCapacity](#cfn-gamelift-fleet-locationconfiguration-locationcapacity): {{
     LocationCapacity}}

@@ -84,7 +84,7 @@ For more information, see [Controlling access to services with VPC endpoints](ht
 **Example: VPC endpoint policy for Amazon RDS API actions**
 The following is an example of an endpoint policy for Amazon RDS API. When attached to an endpoint, this policy grants access to the listed Amazon RDS API actions for all principals on all resources.
 
-```
+```json
 {
    "Statement":[
       {
@@ -104,7 +104,7 @@ The following is an example of an endpoint policy for Amazon RDS API. When attac
 **Example: VPC endpoint policy that denies all access from a specified AWS account**
 The following VPC endpoint policy denies AWS account `123456789012` all access to resources using the endpoint. The policy allows all actions from other accounts.
 
-```
+```json
 {
   "Statement": [
     {

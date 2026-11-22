@@ -46,7 +46,7 @@ The `DisableApiTermination` attribute doesn't prevent you from terminating an in
 **To enable termination protection for an instance**
 Use the [modify-instance-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-attribute.html) command.
 
-```
+```bash
 aws ec2 modify-instance-attribute \
     --instance-id {{i-1234567890abcdef0}} \
     --disable-api-termination
@@ -55,7 +55,7 @@ aws ec2 modify-instance-attribute \
 **To disable termination protection for an instance**
 Use the [modify-instance-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-attribute.html) command.
 
-```
+```bash
 aws ec2 modify-instance-attribute \
     --instance-id {{i-1234567890abcdef0}} \
     --no-disable-api-termination
@@ -67,7 +67,7 @@ aws ec2 modify-instance-attribute \
 **To enable termination protection for an instance**
 Use the [Edit-EC2InstanceAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceAttribute.html) cmdlet.
 
-```
+```powershell
 Edit-EC2InstanceAttribute `
     -InstanceId {{i-1234567890abcdef0}} `
     -DisableApiTermination $true
@@ -76,7 +76,7 @@ Edit-EC2InstanceAttribute `
 **To disable termination protection for an instance**
 Use the [Edit-EC2InstanceAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceAttribute.html) cmdlet.
 
-```
+```powershell
 Edit-EC2InstanceAttribute `
     -InstanceId {{i-1234567890abcdef0}} `
     -DisableApiTermination $false

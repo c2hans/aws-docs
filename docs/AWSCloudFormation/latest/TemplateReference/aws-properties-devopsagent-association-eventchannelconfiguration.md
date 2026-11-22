@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-association-eventchannelconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EnableWebhookUpdates](#cfn-devopsagent-association-eventchannelconfiguration-enablewebhookupdates)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-association-eventchannelconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EnableWebhookUpdates](#cfn-devopsagent-association-eventchannelconfiguration-enablewebhookupdates): {{Boolean}}
 ```
 

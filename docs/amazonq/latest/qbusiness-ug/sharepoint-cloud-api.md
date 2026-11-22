@@ -55,7 +55,7 @@ The following provides information about important configuration properties requ
 
 The following is the SharePoint (Online) JSON schema:
 
-```
+```json
 {
   "type": "object",
   "properties": {
@@ -590,7 +590,7 @@ The following is the SharePoint (Online) JSON schema:
 
 The following is the SharePoint (Online) JSON schema example:
 
-```
+```json
 {
   "type": "SHAREPOINTV2",
   "syncMode": "FULL_CRAWL",

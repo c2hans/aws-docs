@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-integration-scheduledtriggerproperties-syntax.json"></a>
 
-```
+```json
 {
   "[DataPullMode](#cfn-customerprofiles-integration-scheduledtriggerproperties-datapullmode)" : {{String}},
   "[FirstExecutionFrom](#cfn-customerprofiles-integration-scheduledtriggerproperties-firstexecutionfrom)" : {{Number}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-integration-scheduledtriggerproperties-syntax.yaml"></a>
 
-```
+```yaml
   [DataPullMode](#cfn-customerprofiles-integration-scheduledtriggerproperties-datapullmode): {{String}}
   [FirstExecutionFrom](#cfn-customerprofiles-integration-scheduledtriggerproperties-firstexecutionfrom): {{Number}}
   [ScheduleEndTime](#cfn-customerprofiles-integration-scheduledtriggerproperties-scheduleendtime): {{Number}}

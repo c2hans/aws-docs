@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-templateversion-syntax.json"></a>
 
-```
+```json
 {
   "[CreatedTime](#cfn-quicksight-template-templateversion-createdtime)" : {{String}},
   "[DataSetConfigurations](#cfn-quicksight-template-templateversion-datasetconfigurations)" : {{[ DataSetConfiguration, ... ]}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-templateversion-syntax.yaml"></a>
 
-```
+```yaml
   [CreatedTime](#cfn-quicksight-template-templateversion-createdtime): {{String}}
   [DataSetConfigurations](#cfn-quicksight-template-templateversion-datasetconfigurations): {{
     - DataSetConfiguration}}

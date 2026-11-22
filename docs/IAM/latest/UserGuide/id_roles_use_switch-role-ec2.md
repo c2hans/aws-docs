@@ -58,7 +58,7 @@ The following sample policy allows users to use the AWS Management Console to la
 **Example policy that grants a user permission to use the Amazon EC2 console to launch an instance with any role**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -102,7 +102,7 @@ To restrict which roles a user can pass to an Amazon EC2 instance, you create a 
 The following sample policy allows users to use the Amazon EC2 API to launch an instance with a role. The `Resource` element specifies the Amazon Resource Name (ARN) of a role. By specifying the ARN, the policy grants the user the permission to pass only the `Get-pics` role. If the user tries to specify a different role when launching an instance, the action fails. The user does have permissions to run any instance, regardless of whether they pass a role.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -138,7 +138,7 @@ The `abcd` Amazon EC2 instance profile role must have the following permissions 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -186,7 +186,7 @@ The `abcd` role must trust the Amazon EC2 service to assume the role. To do this
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -211,7 +211,7 @@ Assume that the `efgh` cross-account role allows read-only Amazon S3 tasks on th
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -253,7 +253,7 @@ The `efgh` role must trust the `abcd` instance profile role to assume it. To do 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

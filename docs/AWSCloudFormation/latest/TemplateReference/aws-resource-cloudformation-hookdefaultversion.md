@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudformation-hookdefaultversion-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudFormation::HookDefaultVersion",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudformation-hookdefaultversion-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudFormation::HookDefaultVersion
 Properties:
   [TypeName](#cfn-cloudformation-hookdefaultversion-typename): {{String}}
@@ -110,7 +110,7 @@ The following example demonstrates how to specify a new Hook version and use the
 #### JSON
 <a name="aws-resource-cloudformation-hookdefaultversion--examples--Specifying_a_Hook_default_version--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -136,7 +136,7 @@ The following example demonstrates how to specify a new Hook version and use the
 #### YAML
 <a name="aws-resource-cloudformation-hookdefaultversion--examples--Specifying_a_Hook_default_version--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   HookVersion:
@@ -158,7 +158,7 @@ The following example demonstrates how to set a Hook version as the default vers
 #### JSON
 <a name="aws-resource-cloudformation-hookdefaultversion--examples--Specifying_a_Hook_default_version_using_TypeVersionArn--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -175,7 +175,7 @@ The following example demonstrates how to set a Hook version as the default vers
 #### YAML
 <a name="aws-resource-cloudformation-hookdefaultversion--examples--Specifying_a_Hook_default_version_using_TypeVersionArn--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   HookDefaultVersion:
@@ -193,7 +193,7 @@ The following example demonstrates how to set a Hook version as the default vers
 #### JSON
 <a name="aws-resource-cloudformation-hookdefaultversion--examples--Specifying_a_Hook_default_version_using_TypeName_and_VersionId--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -211,7 +211,7 @@ The following example demonstrates how to set a Hook version as the default vers
 #### YAML
 <a name="aws-resource-cloudformation-hookdefaultversion--examples--Specifying_a_Hook_default_version_using_TypeName_and_VersionId--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   HookDefaultVersion:

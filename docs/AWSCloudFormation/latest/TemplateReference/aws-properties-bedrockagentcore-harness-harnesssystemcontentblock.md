@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-harness-harnesssystemcontentblock-syntax.json"></a>
 
-```
+```json
 {
   "[Text](#cfn-bedrockagentcore-harness-harnesssystemcontentblock-text)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-harness-harnesssystemcontentblock-syntax.yaml"></a>
 
-```
+```yaml
   [Text](#cfn-bedrockagentcore-harness-harnesssystemcontentblock-text): {{String}}
 ```
 

@@ -83,13 +83,13 @@ Because the SAML response data that you are viewing might contain sensitive secu
 
 **Built-in option for Windows systems (PowerShell):**
 
-```
+```powershell
 PS C:\> [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("{{base64encodedtext}}"))
 ```
 
 **Built-in option for MacOS and Linux systems:**
 
-```
+```bash
 $ echo "{{base64encodedtext}}" | base64 --decode
 ```
 

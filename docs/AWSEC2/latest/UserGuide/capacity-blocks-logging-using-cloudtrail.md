@@ -47,7 +47,7 @@ Some fields have been redacted from the examples for data privacy.
 ### TerminateCapacityBlocksInstances
 <a name="understanding-capacity-blocks-entries-terminatecapacityblockinstances"></a>
 
-```
+```json
 {
   "eventVersion": "1.05",
   "userIdentity": {
@@ -87,7 +87,7 @@ Some fields have been redacted from the examples for data privacy.
 ### CapacityBlockPaymentFailed
 <a name="understanding-capacity-blocks-entries-capacityblockpaymentfailed"></a>
 
-```
+```json
 {
   "eventVersion": "1.05",
   "userIdentity": {
@@ -123,7 +123,7 @@ Some fields have been redacted from the examples for data privacy.
 ### CapacityBlockScheduled
 <a name="understanding-capacity-blocks-entries-capacityblockscheduled"></a>
 
-```
+```json
 {
   "eventVersion": "1.05",
   "userIdentity": {
@@ -159,7 +159,7 @@ Some fields have been redacted from the examples for data privacy.
 ### CapacityBlockActive
 <a name="understanding-capacity-blocks-entries-capacityblockactive"></a>
 
-```
+```json
 {
   "eventVersion": "1.05",
   "userIdentity": {
@@ -195,7 +195,7 @@ Some fields have been redacted from the examples for data privacy.
 ### CapacityBlockFailed
 <a name="understanding-capacity-blocks-entries-capacityblockfailed"></a>
 
-```
+```json
 {
   "eventVersion": "1.05",
   "userIdentity": {
@@ -231,7 +231,7 @@ Some fields have been redacted from the examples for data privacy.
 ### CapacityBlockExpired
 <a name="understanding-capacity-blocks-entries-capacityblockexpired"></a>
 
-```
+```json
 {
   "eventVersion": "1.05",
   "userIdentity": {

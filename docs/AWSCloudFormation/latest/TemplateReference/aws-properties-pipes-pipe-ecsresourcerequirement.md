@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-ecsresourcerequirement-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-pipes-pipe-ecsresourcerequirement-type)" : {{String}},
   "[Value](#cfn-pipes-pipe-ecsresourcerequirement-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-ecsresourcerequirement-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-pipes-pipe-ecsresourcerequirement-type): {{String}}
   [Value](#cfn-pipes-pipe-ecsresourcerequirement-value): {{String}}
 ```

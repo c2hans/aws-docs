@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-intentoverride-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-lex-bot-intentoverride-name)" : {{String}},
   "[Slots](#cfn-lex-bot-intentoverride-slots)" : {{[ SlotValueOverrideMap, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-intentoverride-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-lex-bot-intentoverride-name): {{String}}
   [Slots](#cfn-lex-bot-intentoverride-slots): {{
     - SlotValueOverrideMap}}

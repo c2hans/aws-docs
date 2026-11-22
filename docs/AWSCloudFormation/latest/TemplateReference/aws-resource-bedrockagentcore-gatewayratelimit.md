@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-bedrockagentcore-gatewayratelimit-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::BedrockAgentCore::GatewayRateLimit",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-bedrockagentcore-gatewayratelimit-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::BedrockAgentCore::GatewayRateLimit
 Properties:
   [Description](#cfn-bedrockagentcore-gatewayratelimit-description): {{String}}

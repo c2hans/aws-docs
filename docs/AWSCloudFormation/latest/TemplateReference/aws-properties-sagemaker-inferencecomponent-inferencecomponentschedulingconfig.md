@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentschedulingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AvailabilityZoneBalance](#cfn-sagemaker-inferencecomponent-inferencecomponentschedulingconfig-availabilityzonebalance)" : {{InferenceComponentAvailabilityZoneBalance}},
   "[PlacementStrategy](#cfn-sagemaker-inferencecomponent-inferencecomponentschedulingconfig-placementstrategy)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentschedulingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AvailabilityZoneBalance](#cfn-sagemaker-inferencecomponent-inferencecomponentschedulingconfig-availabilityzonebalance): {{
     InferenceComponentAvailabilityZoneBalance}}
   [PlacementStrategy](#cfn-sagemaker-inferencecomponent-inferencecomponentschedulingconfig-placementstrategy): {{String}}

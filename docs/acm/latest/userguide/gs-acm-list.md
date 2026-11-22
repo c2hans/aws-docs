@@ -7,14 +7,14 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-list.html
 With the ACM console or AWS CLI, you can search for certificates in your account. The [SearchCertificates](https://docs.aws.amazon.com/acm/latest/APIReference/API_SearchCertificates.html) operation provides advanced filtering capabilities. You can filter certificates by ARN, X.509 attributes, and ACM specific properties like certificate status, type and renewal eligibility. You can also combine filters with AND, OR, and NOT logical operators.
 
 **Note**
-The [ListCertificates](https://docs.aws.amazon.com/acm/latest/APIReference/API_ListCertificates.html) operation still exists for basic listing with limited filtering options such as key type, key usage, certificate status, and certificate key pair origin.
+The [ListCertificates](https://docs.aws.amazon.com/acm/latest/APIReference/API_ListCertificates.html) operation still exists for basic listing with limited filtering options such as key type, key usage, certificate status, and certificate key pair origin. By default, `ListCertificates` does not return Amazon N2 certificates. To include them, use the `RootHierarchyTypes` filter. For more information, see [Listing and finding](acm-amazon-n2-characteristics.md#amazon-n2-listing).
 
 **Filter categories**
 
 You can filter certificates using the following categories:
 + **Certificate ARN** – Filter by the Amazon Resource Name of the certificate.
 + **X.509 attributes** – Filter by subject common name, subject alternative name, extended key usage, key usage, key algorithm, serial number, expiration date range (NotAfter), or validity start date range (NotBefore). Date range filters are inclusive of both the start and end dates. For example, to find all certificates for a specific domain, use the common name and DNS filters together with an OR operator.
-+ **ACM metadata** – Filter by status, type, in-use, exported, export option, managed-by, validation method, renewal status, renewal eligibility, certificate key pair origin, ACME endpoint, or ACME account.
++ **ACM metadata** – Filter by status, type, in-use, exported, export option, managed-by, validation method, renewal status, renewal eligibility, certificate key pair origin, root hierarchy type, ACME endpoint, or ACME account.
 
 The certificate key pair origin filter accepts the values `AWS_MANAGED`, `CUSTOMER_PROVIDED`, and `ACME`. Certificates issued through ACME are returned only when you set the certificate key pair origin filter to `ACME`.
 
@@ -80,7 +80,7 @@ For more information about the available certificate details, see [View AWS Cert
 **To search your certificates using the AWS CLI**
 + Use the [search-certificates](https://docs.aws.amazon.com/cli/latest/reference/acm/search-certificates.html) command to search for ACM-managed certificates. The following example filters for certificates with a status of `ISSUED`:
 
-  ```
+  ```bash
   $ aws acm search-certificates \
       --filter-statement '{"Filter": {"AcmCertificateMetadataFilter": {"Status": "ISSUED"}}}' \
       --max-results 10
@@ -88,7 +88,7 @@ For more information about the available certificate details, see [View AWS Cert
 
 The command returns information similar to the following:
 
-```
+```json
 {
     "Results": [
         {

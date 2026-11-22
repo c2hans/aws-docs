@@ -20,7 +20,7 @@ Before you can create a DB shard group, you must enable DB shard group operation
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

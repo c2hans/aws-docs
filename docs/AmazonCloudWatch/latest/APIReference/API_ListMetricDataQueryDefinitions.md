@@ -94,14 +94,14 @@ The following AWS CLI command lists the metric data query definitions in your ac
 #### Sample Request
 <a name="API_ListMetricDataQueryDefinitions_Example_1_Request"></a>
 
-```
+```bash
 PROMPT> aws cloudwatch list-metric-data-query-definitions
 ```
 
 #### Sample Response
 <a name="API_ListMetricDataQueryDefinitions_Example_1_Response"></a>
 
-```
+```json
 {
     "Items": [
         {

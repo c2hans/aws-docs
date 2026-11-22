@@ -13,7 +13,7 @@ The following example shows a trust relationship for SQL Server Audit. It uses t
 **Example trust relationship for SQL Server Audit**
 ****
 
-```
+```json
 {
 	    "Version":"2012-10-17",
 	    "Statement": [
@@ -39,7 +39,7 @@ In the trust relationship, make sure to use the `aws:SourceArn` global condition
 **Example trust relationship with global condition context key for SQL Server Audit**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -67,7 +67,7 @@ In the following example of a permissions policy for SQL Server Audit, we specif
 **Example permissions policy for SQL Server Audit**
 ****
 
-```
+```json
 {
 	    "Version":"2012-10-17",
 	    "Statement": [

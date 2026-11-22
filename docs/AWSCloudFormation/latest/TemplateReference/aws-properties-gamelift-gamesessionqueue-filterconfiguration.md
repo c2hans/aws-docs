@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-gamesessionqueue-filterconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AllowedLocations](#cfn-gamelift-gamesessionqueue-filterconfiguration-allowedlocations)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-gamesessionqueue-filterconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AllowedLocations](#cfn-gamelift-gamesessionqueue-filterconfiguration-allowedlocations): {{
     - String}}
 ```

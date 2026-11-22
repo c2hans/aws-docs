@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-knowledgebase-supplementaldatastoragelocation-syntax.json"></a>
 
-```
+```json
 {
   "[S3Location](#cfn-bedrock-knowledgebase-supplementaldatastoragelocation-s3location)" : {{S3Location}},
   "[SupplementalDataStorageLocationType](#cfn-bedrock-knowledgebase-supplementaldatastoragelocation-supplementaldatastoragelocationtype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-knowledgebase-supplementaldatastoragelocation-syntax.yaml"></a>
 
-```
+```yaml
   [S3Location](#cfn-bedrock-knowledgebase-supplementaldatastoragelocation-s3location): {{
     S3Location}}
   [SupplementalDataStorageLocationType](#cfn-bedrock-knowledgebase-supplementaldatastoragelocation-supplementaldatastoragelocationtype): {{String}}

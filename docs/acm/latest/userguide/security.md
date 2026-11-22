@@ -17,4 +17,3 @@ This documentation helps you understand how to apply the shared responsibility m
 + [Identity and Access Management for AWS Certificate Manager](security-iam.md)
 + [Resilience in AWS Certificate Manager](disaster-recovery-resiliency.md)
 + [Infrastructure security in AWS Certificate Manager](infrastructure-security.md)
-+ [Best practices](acm-bestpractices.md)

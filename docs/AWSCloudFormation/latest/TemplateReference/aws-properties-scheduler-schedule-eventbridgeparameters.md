@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-scheduler-schedule-eventbridgeparameters-syntax.json"></a>
 
-```
+```json
 {
   "[DetailType](#cfn-scheduler-schedule-eventbridgeparameters-detailtype)" : {{String}},
   "[Source](#cfn-scheduler-schedule-eventbridgeparameters-source)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-scheduler-schedule-eventbridgeparameters-syntax.yaml"></a>
 
-```
+```yaml
   [DetailType](#cfn-scheduler-schedule-eventbridgeparameters-detailtype): {{String}}
   [Source](#cfn-scheduler-schedule-eventbridgeparameters-source): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-osis-pipeline-cloudwatchlogdestination-syntax.json"></a>
 
-```
+```json
 {
   "[LogGroup](#cfn-osis-pipeline-cloudwatchlogdestination-loggroup)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-osis-pipeline-cloudwatchlogdestination-syntax.yaml"></a>
 
-```
+```yaml
   [LogGroup](#cfn-osis-pipeline-cloudwatchlogdestination-loggroup): {{String}}
 ```
 

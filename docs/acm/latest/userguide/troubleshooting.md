@@ -14,5 +14,5 @@ If you don't see your issue addressed in this section, we recommend visiting the
 + [Troubleshoot certificate validation](certificate-validation.md)
 + [Troubleshoot managed certificate renewal](troubleshooting-renewal.md)
 + [Troubleshoot ACME certificate automation](troubleshooting-acme.md)
-+ [Troubleshoot other problems](misc-problems.md)
 + [Handling exceptions](exceptions.md)
++ [Troubleshoot other problems](misc-problems.md)

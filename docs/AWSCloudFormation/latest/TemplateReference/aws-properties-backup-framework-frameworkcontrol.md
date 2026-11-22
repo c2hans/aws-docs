@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-backup-framework-frameworkcontrol-syntax.json"></a>
 
-```
+```json
 {
   "[ControlInputParameters](#cfn-backup-framework-frameworkcontrol-controlinputparameters)" : {{[ ControlInputParameter, ... ]}},
   "[ControlName](#cfn-backup-framework-frameworkcontrol-controlname)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-backup-framework-frameworkcontrol-syntax.yaml"></a>
 
-```
+```yaml
   [ControlInputParameters](#cfn-backup-framework-frameworkcontrol-controlinputparameters): {{
     - ControlInputParameter}}
   [ControlName](#cfn-backup-framework-frameworkcontrol-controlname): {{String}}

@@ -25,7 +25,7 @@ The example uses the following example credentials the signature calculations. Y
 
 The following POST policy supports uploads to Amazon S3 with specific conditions.
 
-```
+```json
  1. { "expiration": "2015-12-30T12:00:00.000Z",
  2.   "conditions": [
  3.     {"bucket": "sigv4examplebucket"},
@@ -73,7 +73,7 @@ The following example form specifies the preceding POST policy and supports a PO
 **Note**
 You must update the bucket name, dates, credential, policy, and signature with valid values for this to successfully upload to S3.
 
-```
+```xml
  1. <html>
  2.   <head>
  3.

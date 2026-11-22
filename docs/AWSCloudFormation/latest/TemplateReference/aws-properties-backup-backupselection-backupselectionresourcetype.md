@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-backup-backupselection-backupselectionresourcetype-syntax.json"></a>
 
-```
+```json
 {
   "[Conditions](#cfn-backup-backupselection-backupselectionresourcetype-conditions)" : {{Conditions}},
   "[IamRoleArn](#cfn-backup-backupselection-backupselectionresourcetype-iamrolearn)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-backup-backupselection-backupselectionresourcetype-syntax.yaml"></a>
 
-```
+```yaml
   [Conditions](#cfn-backup-backupselection-backupselectionresourcetype-conditions): {{
     Conditions}}
   [IamRoleArn](#cfn-backup-backupselection-backupselectionresourcetype-iamrolearn): {{String}}

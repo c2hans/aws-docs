@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-omics-workflow-registrymapping-syntax.json"></a>
 
-```
+```json
 {
   "[EcrAccountId](#cfn-omics-workflow-registrymapping-ecraccountid)" : {{String}},
   "[EcrRepositoryPrefix](#cfn-omics-workflow-registrymapping-ecrrepositoryprefix)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-omics-workflow-registrymapping-syntax.yaml"></a>
 
-```
+```yaml
   [EcrAccountId](#cfn-omics-workflow-registrymapping-ecraccountid): {{String}}
   [EcrRepositoryPrefix](#cfn-omics-workflow-registrymapping-ecrrepositoryprefix): {{String}}
   [UpstreamRegistryUrl](#cfn-omics-workflow-registrymapping-upstreamregistryurl): {{String}}

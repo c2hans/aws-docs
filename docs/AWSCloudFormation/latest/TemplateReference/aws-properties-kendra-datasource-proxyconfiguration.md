@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-proxyconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Credentials](#cfn-kendra-datasource-proxyconfiguration-credentials)" : {{String}},
   "[Host](#cfn-kendra-datasource-proxyconfiguration-host)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-proxyconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Credentials](#cfn-kendra-datasource-proxyconfiguration-credentials): {{String}}
   [Host](#cfn-kendra-datasource-proxyconfiguration-host): {{String}}
   [Port](#cfn-kendra-datasource-proxyconfiguration-port): {{Integer}}

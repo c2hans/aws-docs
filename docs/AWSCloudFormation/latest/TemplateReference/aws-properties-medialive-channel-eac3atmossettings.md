@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-eac3atmossettings-syntax.json"></a>
 
-```
+```json
 {
   "[Bitrate](#cfn-medialive-channel-eac3atmossettings-bitrate)" : {{Number}},
   "[CodingMode](#cfn-medialive-channel-eac3atmossettings-codingmode)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-eac3atmossettings-syntax.yaml"></a>
 
-```
+```yaml
   [Bitrate](#cfn-medialive-channel-eac3atmossettings-bitrate): {{Number}}
   [CodingMode](#cfn-medialive-channel-eac3atmossettings-codingmode): {{String}}
   [Dialnorm](#cfn-medialive-channel-eac3atmossettings-dialnorm): {{Integer}}

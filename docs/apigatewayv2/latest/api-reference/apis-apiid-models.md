@@ -75,7 +75,7 @@ Creates a `Model` for an API.
 #### POST schema
 <a name="apis-apiid-models-request-body-post-example"></a>
 
-```
+```json
 {
   "name": "string",
   "description": "string",
@@ -90,7 +90,7 @@ Creates a `Model` for an API.
 #### Models schema
 <a name="apis-apiid-models-response-body-models-example"></a>
 
-```
+```json
 {
   "items": [
     {
@@ -108,7 +108,7 @@ Creates a `Model` for an API.
 #### Model schema
 <a name="apis-apiid-models-response-body-model-example"></a>
 
-```
+```json
 {
   "modelId": "string",
   "name": "string",
@@ -121,7 +121,7 @@ Creates a `Model` for an API.
 #### BadRequestException schema
 <a name="apis-apiid-models-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -130,7 +130,7 @@ Creates a `Model` for an API.
 #### NotFoundException schema
 <a name="apis-apiid-models-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -140,7 +140,7 @@ Creates a `Model` for an API.
 #### ConflictException schema
 <a name="apis-apiid-models-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -149,7 +149,7 @@ Creates a `Model` for an API.
 #### LimitExceededException schema
 <a name="apis-apiid-models-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-maximumminimumcomputation-syntax.json"></a>
 
-```
+```json
 {
   "[ComputationId](#cfn-quicksight-template-maximumminimumcomputation-computationid)" : {{String}},
   "[Name](#cfn-quicksight-template-maximumminimumcomputation-name)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-maximumminimumcomputation-syntax.yaml"></a>
 
-```
+```yaml
   [ComputationId](#cfn-quicksight-template-maximumminimumcomputation-computationid): {{String}}
   [Name](#cfn-quicksight-template-maximumminimumcomputation-name): {{String}}
   [Time](#cfn-quicksight-template-maximumminimumcomputation-time): {{

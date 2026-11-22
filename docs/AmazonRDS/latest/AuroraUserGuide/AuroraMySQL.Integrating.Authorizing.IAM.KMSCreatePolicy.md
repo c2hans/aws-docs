@@ -13,7 +13,7 @@ The following policy adds the permissions required by Aurora to access KMS keys 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

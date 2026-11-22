@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-dataprivacy-syntax.json"></a>
 
-```
+```json
 {
   "[ChildDirected](#cfn-lex-bot-dataprivacy-childdirected)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-dataprivacy-syntax.yaml"></a>
 
-```
+```yaml
   [ChildDirected](#cfn-lex-bot-dataprivacy-childdirected): {{Boolean}}
 ```
 

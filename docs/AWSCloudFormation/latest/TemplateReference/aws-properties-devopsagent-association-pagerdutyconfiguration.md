@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-association-pagerdutyconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CustomerEmail](#cfn-devopsagent-association-pagerdutyconfiguration-customeremail)" : {{String}},
   "[EnableWebhookUpdates](#cfn-devopsagent-association-pagerdutyconfiguration-enablewebhookupdates)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-association-pagerdutyconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CustomerEmail](#cfn-devopsagent-association-pagerdutyconfiguration-customeremail): {{String}}
   [EnableWebhookUpdates](#cfn-devopsagent-association-pagerdutyconfiguration-enablewebhookupdates): {{Boolean}}
   [Services](#cfn-devopsagent-association-pagerdutyconfiguration-services): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchservice-domain-cognitooptions-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-opensearchservice-domain-cognitooptions-enabled)" : {{Boolean}},
   "[IdentityPoolId](#cfn-opensearchservice-domain-cognitooptions-identitypoolid)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchservice-domain-cognitooptions-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-opensearchservice-domain-cognitooptions-enabled): {{Boolean}}
   [IdentityPoolId](#cfn-opensearchservice-domain-cognitooptions-identitypoolid): {{String}}
   [RoleArn](#cfn-opensearchservice-domain-cognitooptions-rolearn): {{String}}

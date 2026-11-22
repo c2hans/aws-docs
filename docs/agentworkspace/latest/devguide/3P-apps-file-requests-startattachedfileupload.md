@@ -43,7 +43,7 @@ When beginning the process to upload attached files, agents may encounter issues
 
  **Usage**
 
-```
+```typescript
 import {
     isInvalidFileNameError,
     isInvalidFileTypeError,

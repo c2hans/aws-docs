@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackagev2-channel-inputswitchconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MQCSInputSwitching](#cfn-mediapackagev2-channel-inputswitchconfiguration-mqcsinputswitching)" : {{Boolean}},
   "[PreferredInput](#cfn-mediapackagev2-channel-inputswitchconfiguration-preferredinput)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackagev2-channel-inputswitchconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MQCSInputSwitching](#cfn-mediapackagev2-channel-inputswitchconfiguration-mqcsinputswitching): {{Boolean}}
   [PreferredInput](#cfn-mediapackagev2-channel-inputswitchconfiguration-preferredinput): {{Integer}}
 ```

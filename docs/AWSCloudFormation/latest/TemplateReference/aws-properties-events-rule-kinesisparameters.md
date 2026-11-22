@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-events-rule-kinesisparameters-syntax.json"></a>
 
-```
+```json
 {
   "[PartitionKeyPath](#cfn-events-rule-kinesisparameters-partitionkeypath)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-events-rule-kinesisparameters-syntax.yaml"></a>
 
-```
+```yaml
   [PartitionKeyPath](#cfn-events-rule-kinesisparameters-partitionkeypath): {{String}}
 ```
 

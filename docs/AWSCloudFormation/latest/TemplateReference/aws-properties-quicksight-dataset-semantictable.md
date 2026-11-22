@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-semantictable-syntax.json"></a>
 
-```
+```json
 {
   "[Alias](#cfn-quicksight-dataset-semantictable-alias)" : {{String}},
   "[DestinationTableId](#cfn-quicksight-dataset-semantictable-destinationtableid)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-semantictable-syntax.yaml"></a>
 
-```
+```yaml
   [Alias](#cfn-quicksight-dataset-semantictable-alias): {{String}}
   [DestinationTableId](#cfn-quicksight-dataset-semantictable-destinationtableid): {{String}}
   [RowLevelPermissionConfiguration](#cfn-quicksight-dataset-semantictable-rowlevelpermissionconfiguration): {{

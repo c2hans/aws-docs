@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-vpnconnection-cloudwatchlogoptionsspecification-syntax.json"></a>
 
-```
+```json
 {
   "[BgpLogEnabled](#cfn-ec2-vpnconnection-cloudwatchlogoptionsspecification-bgplogenabled)" : {{Boolean}},
   "[BgpLogGroupArn](#cfn-ec2-vpnconnection-cloudwatchlogoptionsspecification-bgploggrouparn)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-vpnconnection-cloudwatchlogoptionsspecification-syntax.yaml"></a>
 
-```
+```yaml
   [BgpLogEnabled](#cfn-ec2-vpnconnection-cloudwatchlogoptionsspecification-bgplogenabled): {{Boolean}}
   [BgpLogGroupArn](#cfn-ec2-vpnconnection-cloudwatchlogoptionsspecification-bgploggrouparn): {{String}}
   [BgpLogOutputFormat](#cfn-ec2-vpnconnection-cloudwatchlogoptionsspecification-bgplogoutputformat): {{String}}

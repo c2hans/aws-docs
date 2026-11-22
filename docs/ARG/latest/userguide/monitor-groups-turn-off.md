@@ -42,7 +42,7 @@ At this point, Resource Groups no longer sends events to the EventBridge default
 **To turn off group lifecycle event notifications to EventBridge**
 The following example show how to use the AWS CLI to turn off group lifecycle events in Resource Groups.
 
-```
+```bash
 $ aws resource-groups update-account-settings \
     ----group-lifecycle-events-desired-status INACTIVE
 {

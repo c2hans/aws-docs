@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-rule-actions-syntax.json"></a>
 
-```
+```json
 {
   "[AssignContactCategoryActions](#cfn-connect-rule-actions-assigncontactcategoryactions)" : {{[ Json, ... ]}},
   "[AssignSlaActions](#cfn-connect-rule-actions-assignslaactions)" : {{[ AssignSlaAction, ... ]}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-rule-actions-syntax.yaml"></a>
 
-```
+```yaml
   [AssignContactCategoryActions](#cfn-connect-rule-actions-assigncontactcategoryactions): {{
     - Json}}
   [AssignSlaActions](#cfn-connect-rule-actions-assignslaactions): {{

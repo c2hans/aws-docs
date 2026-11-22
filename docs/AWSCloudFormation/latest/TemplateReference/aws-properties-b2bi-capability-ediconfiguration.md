@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-b2bi-capability-ediconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CapabilityDirection](#cfn-b2bi-capability-ediconfiguration-capabilitydirection)" : {{String}},
   "[InputLocation](#cfn-b2bi-capability-ediconfiguration-inputlocation)" : {{S3Location}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-b2bi-capability-ediconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CapabilityDirection](#cfn-b2bi-capability-ediconfiguration-capabilitydirection): {{String}}
   [InputLocation](#cfn-b2bi-capability-ediconfiguration-inputlocation): {{
     S3Location}}

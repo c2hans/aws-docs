@@ -83,7 +83,7 @@ The following procedure describes how to use the AWS CLI (on Linux or Windows) o
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    New-APPCDeploymentStrategy `
      --Name {{A_name_for_the_deployment_strategy}} `
      --Description {{A_description_of_the_deployment_strategy}} `

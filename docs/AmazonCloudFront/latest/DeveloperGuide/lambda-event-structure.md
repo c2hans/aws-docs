@@ -35,7 +35,7 @@ The following topics show the structure of the object that CloudFront passes to 
 
 The following example shows a viewer request event object.
 
-```
+```json
 {
   "Records": [
     {
@@ -83,7 +83,7 @@ The following example shows a viewer request event object.
 
 The following example shows an origin request event object.
 
-```
+```json
 {
   "Records": [
     {
@@ -280,7 +280,7 @@ The following topics show the structure of the object that CloudFront passes to 
 
 The following example shows an origin response event object.
 
-```
+```json
 {
   "Records": [
     {
@@ -423,7 +423,7 @@ The following example shows an origin response event object.
 
 The following example shows a viewer response event object.
 
-```
+```json
 {
   "Records": [
     {

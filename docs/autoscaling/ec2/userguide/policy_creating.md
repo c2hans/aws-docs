@@ -104,7 +104,7 @@ For more examples, see [Example scaling policies for the AWS CLI](examples-scali
 
    If successful, this command returns the ARNs and names of the two CloudWatch alarms created on your behalf.
 
-   ```
+   ```json
    {
        "PolicyARN": "arn:aws:autoscaling:us-west-2:123456789012:scalingPolicy:228f02c2-c665-4bfd-aaac-8b04080bea3c:autoScalingGroupName/my-asg:policyName/cpu50-target-tracking-scaling-policy",
        "Alarms": [

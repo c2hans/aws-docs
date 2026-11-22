@@ -55,7 +55,7 @@ With ElastiCache, you can use the system-managed IAM user (`default.iam-user`) a
 
 Run the following command to create a cache with a public endpoint using the system-managed default IAM user group:
 
-```
+```bash
 aws elasticache create-serverless-cache \
     --serverless-cache-name my-public-cache \
     --engine valkey \
@@ -66,7 +66,7 @@ aws elasticache create-serverless-cache \
 
 The command returns a response that includes the cache endpoint:
 
-```
+```json
 {
     "ServerlessCache": {
         "ServerlessCacheName": "my-public-cache",
@@ -94,7 +94,7 @@ The following examples create a cache with a public endpoint.
 
 **Python (boto3)**
 
-```
+```python
 import boto3
 
 client = boto3.client("elasticache", region_name="us-east-1")
@@ -112,7 +112,7 @@ print(response["ServerlessCache"]["Endpoint"]["Address"])
 
 **JavaScript (AWS SDK v3)**
 
-```
+```javascript
 import {
   ElastiCacheClient,
   CreateServerlessCacheCommand
@@ -133,7 +133,7 @@ console.log(response.ServerlessCache?.Endpoint?.Address);
 
 **Java (AWS SDK v2)**
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.elasticache.ElastiCacheClient;
 import software.amazon.awssdk.services.elasticache.model.CreateServerlessCacheRequest;

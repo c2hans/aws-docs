@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-memory-episodicoverride-syntax.json"></a>
 
-```
+```json
 {
   "[Consolidation](#cfn-bedrockagentcore-memory-episodicoverride-consolidation)" : {{EpisodicOverrideConsolidationConfigurationInput}},
   "[Extraction](#cfn-bedrockagentcore-memory-episodicoverride-extraction)" : {{EpisodicOverrideExtractionConfigurationInput}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-memory-episodicoverride-syntax.yaml"></a>
 
-```
+```yaml
   [Consolidation](#cfn-bedrockagentcore-memory-episodicoverride-consolidation): {{
     EpisodicOverrideConsolidationConfigurationInput}}
   [Extraction](#cfn-bedrockagentcore-memory-episodicoverride-extraction): {{

@@ -134,7 +134,7 @@ If the action is successful, the service sends back an HTTP 200 response with an
 
 In the request, you specify the lifecycle configuration in the request body. The lifecycle configuration is specified as XML. The following is an example of a basic lifecycle configuration. It specifies one rule. The `Prefix` in the rule identifies objects to which the rule applies. The rule also specifies two actions (`Transition` and `Expiration`). Each action specifies a time line when Amazon S3 should perform the action. The Status indicates whether the rule is enabled or disabled.
 
-```
+```xml
 <LifecycleConfiguration>
     <Rule>
         <ID>sample-rule</ID>
@@ -156,7 +156,7 @@ In the request, you specify the lifecycle configuration in the request body. The
 
 If the state of your bucket is versioning-enabled or versioning-suspended, you can have many versions of the same object: one current version and zero or more noncurrent versions. The following lifecycle configuration specifies the actions (`NoncurrentVersionTransition`, `NoncurrentVersionExpiration`) that are specific to noncurrent object versions.
 
-```
+```xml
 <LifecycleConfiguration>
     <Rule>
         <ID>sample-rule</ID>
@@ -178,7 +178,7 @@ If the state of your bucket is versioning-enabled or versioning-suspended, you c
 
 You can use the multipart upload to upload large objects in parts. For more information about multipart uploads, see [Multipart Upload Overview](https://docs.aws.amazon.com/AmazonS3/latest/dev/mpuoverview.html) in the *Amazon S3 User Guide*. With lifecycle configuration, you can tell Amazon S3 to abort incomplete multipart uploads, which are identified by the key name prefix specified in the rule, if they don't complete within a specified number of days. When Amazon S3 aborts a multipart upload, it deletes all parts associated with the upload. This ensures that you don't have incomplete multipart uploads that have left parts stored in Amazon S3, so you don't have to pay storage costs for them. The following is an example lifecycle configuration that specifies a rule with the `AbortIncompleteMultipartUpload` action. This action tells Amazon S3 to abort incomplete multipart uploads seven days after initiation.
 
-```
+```xml
 <LifecycleConfiguration>
     <Rule>
         <ID>sample-rule</ID>
@@ -200,7 +200,7 @@ The following is a sample `PUT /?lifecycle` request that adds the lifecycle conf
 
 The sample response follows the sample request.
 
-```
+```xml
 PUT /?lifecycle HTTP/1.1
 Host: examplebucket.s3.<Region>.amazonaws.com
 x-amz-date: Wed, 14 May 2014 02:11:21 GMT
@@ -228,7 +228,7 @@ Content-Length: 415
 </LifecycleConfiguration>
 ```
 
-```
+```HTTP
 HTTP/1.1 200 OK
 x-amz-id-2: r+qR7+nhXtJDDIJ0JJYcd+1j5nM/rUFiiiZ/fNbDOsd3JUE8NWMLNHXmvPfwMpdc
 x-amz-request-id: 9E26D08072A8EF9E
@@ -246,7 +246,7 @@ The following is a sample PUT /?lifecycle request that adds the lifecycle config
 
 The sample response follows the sample request.
 
-```
+```xml
 PUT /?lifecycle HTTP/1.1
 Host: examplebucket.s3.<Region>.amazonaws.com
 x-amz-date: Wed, 14 May 2014 02:21:48 GMT
@@ -274,7 +274,7 @@ Content-Length: 598
 </LifecycleConfiguration>
 ```
 
-```
+```HTTP
 HTTP/1.1 200 OK
 x-amz-id-2: aXQ+KbIrmMmoO//3bMdDTw/CnjArwje+J49Hf+j44yRb/VmbIkgIO5A+PT98Cp/6k07hf+LD2mY=
 x-amz-request-id: 02D7EC4C10381EB1

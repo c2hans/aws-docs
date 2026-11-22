@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskdefinition-runtimeplatform-syntax.json"></a>
 
-```
+```json
 {
   "[CpuArchitecture](#cfn-ecs-taskdefinition-runtimeplatform-cpuarchitecture)" : {{String}},
   "[OperatingSystemFamily](#cfn-ecs-taskdefinition-runtimeplatform-operatingsystemfamily)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskdefinition-runtimeplatform-syntax.yaml"></a>
 
-```
+```yaml
   [CpuArchitecture](#cfn-ecs-taskdefinition-runtimeplatform-cpuarchitecture): {{String}}
   [OperatingSystemFamily](#cfn-ecs-taskdefinition-runtimeplatform-operatingsystemfamily): {{String}}
 ```

@@ -12,7 +12,7 @@ To enable and disable restricted sessions, use the Amazon RDS procedure `rdsadmi
 
 The following example shows how to enable and disable restricted sessions.
 
-```
+```sql
 /* Verify that the database is currently unrestricted. */
 
 SELECT LOGINS FROM V$INSTANCE;

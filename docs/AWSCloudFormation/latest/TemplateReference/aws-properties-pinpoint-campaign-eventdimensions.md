@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pinpoint-campaign-eventdimensions-syntax.json"></a>
 
-```
+```json
 {
   "[Attributes](#cfn-pinpoint-campaign-eventdimensions-attributes)" : {{Json}},
   "[EventType](#cfn-pinpoint-campaign-eventdimensions-eventtype)" : {{SetDimension}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pinpoint-campaign-eventdimensions-syntax.yaml"></a>
 
-```
+```yaml
   [Attributes](#cfn-pinpoint-campaign-eventdimensions-attributes): {{Json}}
   [EventType](#cfn-pinpoint-campaign-eventdimensions-eventtype): {{
     SetDimension}}

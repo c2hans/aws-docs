@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-imagemenuoption-syntax.json"></a>
 
-```
+```json
 {
   "[AvailabilityStatus](#cfn-quicksight-template-imagemenuoption-availabilitystatus)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-imagemenuoption-syntax.yaml"></a>
 
-```
+```yaml
   [AvailabilityStatus](#cfn-quicksight-template-imagemenuoption-availabilitystatus): {{String}}
 ```
 

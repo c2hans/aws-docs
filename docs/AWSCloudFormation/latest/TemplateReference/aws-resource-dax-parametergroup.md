@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-dax-parametergroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DAX::ParameterGroup",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-dax-parametergroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DAX::ParameterGroup
 Properties:
   [Description](#cfn-dax-parametergroup-description): {{String}}
@@ -91,7 +91,7 @@ The following example creates a DAX parameter group.
 #### JSON
 <a name="aws-resource-dax-parametergroup--examples--Create_Parameter_Group--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "DAX parameter group",
@@ -121,7 +121,7 @@ The following example creates a DAX parameter group.
 #### YAML
 <a name="aws-resource-dax-parametergroup--examples--Create_Parameter_Group--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Description: "DAX parameter group"
 Resources:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-guardrail-managedwordsconfig-syntax.json"></a>
 
-```
+```json
 {
   "[InputAction](#cfn-bedrock-guardrail-managedwordsconfig-inputaction)" : {{String}},
   "[InputEnabled](#cfn-bedrock-guardrail-managedwordsconfig-inputenabled)" : {{Boolean}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-guardrail-managedwordsconfig-syntax.yaml"></a>
 
-```
+```yaml
   [InputAction](#cfn-bedrock-guardrail-managedwordsconfig-inputaction): {{String}}
   [InputEnabled](#cfn-bedrock-guardrail-managedwordsconfig-inputenabled): {{Boolean}}
   [OutputAction](#cfn-bedrock-guardrail-managedwordsconfig-outputaction): {{String}}

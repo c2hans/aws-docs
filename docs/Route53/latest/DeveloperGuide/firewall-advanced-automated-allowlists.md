@@ -89,7 +89,7 @@ To review the observed domains, choose **View domain list** in the success messa
 
 You can create an Automated Allowlist rule by running a AWS CLI command like the following and using your own values. Use `--priority` to set the rule's priority. To start the allowlist with the domains from an existing domain list, add `"ImportFromFirewallDomainListId":"{{domain-list-id}}"` to `AutoAllowlist`.
 
-```
+```bash
 aws route53resolver create-firewall-rule \
     --creator-request-id my-request-id \
     --firewall-rule-group-id rslvr-frg-0123456789example \
@@ -132,7 +132,7 @@ DNS Firewall keeps up to 10,000 domains in each status for a rule. When a status
 
 You can list the observed domains for a rule, with the most requested domains first, by running a AWS CLI command like the following and using your own values. To list allowed or denied domains, set `DomainStatus` to `ALLOWED` or `DENIED`. `ALLOWED` lists the domains that DNS Firewall allowed queries for, whether or not they're in the rule's domain list.
 
-```
+```bash
 aws route53resolver list-firewall-rule-domains \
     --firewall-rule-group-id rslvr-frg-0123456789example \
     --firewall-threat-protection-id 0123456789example \
@@ -141,7 +141,7 @@ aws route53resolver list-firewall-rule-domains \
 
 The following is an example output after you run the command:
 
-```
+```json
 {
     "Domains": [
         {
@@ -159,7 +159,7 @@ For more information, see [list-firewall-rule-domains](https://docs.aws.amazon.c
 
 To list the domains in the allowlist itself, specify the rule's domain list instead:
 
-```
+```bash
 aws route53resolver list-firewall-rule-domains \
     --firewall-rule-group-id rslvr-frg-0123456789example \
     --firewall-domain-list-id rslvr-fdl-0123456789example
@@ -195,7 +195,7 @@ To change or remove a domain, select it under **Allowed domains**, and then choo
 
 You can approve observed domains by running a AWS CLI command like the following and using your own values. To remove or reject domains, set `--operation` to `REMOVE` or `DENY`.
 
-```
+```bash
 aws route53resolver update-firewall-domains \
     --firewall-domain-list-id rslvr-fdl-0123456789example \
     --operation ADD \

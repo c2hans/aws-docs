@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-personalize-recommender-recommenderconfig-syntax.json"></a>
 
-```
+```json
 {
   "[EnableMetadataWithRecommendations](#cfn-personalize-recommender-recommenderconfig-enablemetadatawithrecommendations)" : {{Boolean}},
   "[ItemExplorationConfig](#cfn-personalize-recommender-recommenderconfig-itemexplorationconfig)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-personalize-recommender-recommenderconfig-syntax.yaml"></a>
 
-```
+```yaml
   [EnableMetadataWithRecommendations](#cfn-personalize-recommender-recommenderconfig-enablemetadatawithrecommendations): {{Boolean}}
   [ItemExplorationConfig](#cfn-personalize-recommender-recommenderconfig-itemexplorationconfig): {{
     {{Key}}: {{Value}}}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrcontainers-securityconfiguration-containerprovider-syntax.json"></a>
 
-```
+```json
 {
   "[Id](#cfn-emrcontainers-securityconfiguration-containerprovider-id)" : {{String}},
   "[Info](#cfn-emrcontainers-securityconfiguration-containerprovider-info)" : {{ContainerInfo}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrcontainers-securityconfiguration-containerprovider-syntax.yaml"></a>
 
-```
+```yaml
   [Id](#cfn-emrcontainers-securityconfiguration-containerprovider-id): {{String}}
   [Info](#cfn-emrcontainers-securityconfiguration-containerprovider-info): {{
     ContainerInfo}}

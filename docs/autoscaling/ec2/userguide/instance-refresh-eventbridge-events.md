@@ -30,7 +30,7 @@ The following examples show events for the instance refresh feature. Events are 
 
 When the number of instances that have been replaced reaches the percentage threshold defined for the checkpoint, Amazon EC2 Auto Scaling sends the following event.
 
-```
+```json
 {
   "version": "0",
   "id": "{{12345678}}-{{1234}}-{{1234}}-{{1234}}-{{123456789012}}",
@@ -56,7 +56,7 @@ When the number of instances that have been replaced reaches the percentage thre
 
 When the status of an instance refresh changes to `InProgress`, Amazon EC2 Auto Scaling sends the following event.
 
-```
+```json
 {
   "version": "0",
   "id": "{{12345678}}-{{1234}}-{{1234}}-{{1234}}-{{123456789012}}",
@@ -80,7 +80,7 @@ When the status of an instance refresh changes to `InProgress`, Amazon EC2 Auto 
 
 When the status of an instance refresh changes to `Successful`, Amazon EC2 Auto Scaling sends the following event.
 
-```
+```json
 {
   "version": "0",
   "id": "{{12345678}}-{{1234}}-{{1234}}-{{1234}}-{{123456789012}}",
@@ -104,7 +104,7 @@ When the status of an instance refresh changes to `Successful`, Amazon EC2 Auto 
 
 When the status of an instance refresh changes to `Failed`, Amazon EC2 Auto Scaling sends the following event.
 
-```
+```json
 {
   "version": "0",
   "id": "{{12345678}}-{{1234}}-{{1234}}-{{1234}}-{{123456789012}}",
@@ -128,7 +128,7 @@ When the status of an instance refresh changes to `Failed`, Amazon EC2 Auto Scal
 
 When the status of an instance refresh changes to `Cancelled`, Amazon EC2 Auto Scaling sends the following event.
 
-```
+```json
 {
   "version": "0",
   "id": "{{12345678}}-{{1234}}-{{1234}}-{{1234}}-{{123456789012}}",
@@ -152,7 +152,7 @@ When the status of an instance refresh changes to `Cancelled`, Amazon EC2 Auto S
 
 When the status of an instance refresh changes to `RollbackInProgress`, Amazon EC2 Auto Scaling sends the following event.
 
-```
+```json
 {
   "version": "0",
   "id": "{{12345678}}-{{1234}}-{{1234}}-{{1234}}-{{123456789012}}",
@@ -176,7 +176,7 @@ When the status of an instance refresh changes to `RollbackInProgress`, Amazon E
 
 When the status of an instance refresh changes to `RollbackSuccessful`, Amazon EC2 Auto Scaling sends the following event.
 
-```
+```json
 {
   "version": "0",
   "id": "{{12345678}}-{{1234}}-{{1234}}-{{1234}}-{{123456789012}}",
@@ -200,7 +200,7 @@ When the status of an instance refresh changes to `RollbackSuccessful`, Amazon E
 
 When the status of an instance refresh changes to `Failed`, Amazon EC2 Auto Scaling sends the following event.
 
-```
+```json
 {
   "version": "0",
   "id": "{{12345678}}-{{1234}}-{{1234}}-{{1234}}-{{123456789012}}",
@@ -236,7 +236,7 @@ The following examples show events when your Auto Scaling group has instances un
 
 When an instance is selected for root volume replacement during Instance Refresh and its state changes to `ReplacingRootVolume:Wait`.
 
-```
+```json
 {
   "version": "0",
   "id": "{{12345678}}-{{1234}}-{{1234}}-{{1234}}-{{123456789012}}",
@@ -267,7 +267,7 @@ When an instance is selected for root volume replacement during Instance Refresh
 
 When an instance has completed root volume replacement and its state changes to `Pending:Wait`.
 
-```
+```json
 {
   "version": "0",
   "id": "{{12345678}}-{{1234}}-{{1234}}-{{1234}}-{{123456789012}}",
@@ -309,7 +309,7 @@ Identifies what action is being performed on the instance.
 
 Use the following sample event pattern to capture all the events that are associated with instances preparing to replace their root volumes:
 
-```
+```json
 {
   "source": [ "aws.autoscaling" ],
   "detail-type": [ "EC2 Instance-terminate Lifecycle Action" ],
@@ -321,7 +321,7 @@ Use the following sample event pattern to capture all the events that are associ
 
 Use the following sample event pattern to capture all the events that are associated with instances returning to service after completing root volume replacement:
 
-```
+```json
 {
   "source": [ "aws.autoscaling" ],
   "detail-type": [ "EC2 Instance-launch Lifecycle Action" ],

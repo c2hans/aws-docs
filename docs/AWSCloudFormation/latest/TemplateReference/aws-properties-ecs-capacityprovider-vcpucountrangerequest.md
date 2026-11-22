@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-capacityprovider-vcpucountrangerequest-syntax.json"></a>
 
-```
+```json
 {
   "[Max](#cfn-ecs-capacityprovider-vcpucountrangerequest-max)" : {{Integer}},
   "[Min](#cfn-ecs-capacityprovider-vcpucountrangerequest-min)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-capacityprovider-vcpucountrangerequest-syntax.yaml"></a>
 
-```
+```yaml
   [Max](#cfn-ecs-capacityprovider-vcpucountrangerequest-max): {{Integer}}
   [Min](#cfn-ecs-capacityprovider-vcpucountrangerequest-min): {{Integer}}
 ```

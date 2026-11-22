@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-waf-xssmatchset-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::WAF::XssMatchSet",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-waf-xssmatchset-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::WAF::XssMatchSet
 Properties:
   [Name](#cfn-waf-xssmatchset-name): {{String}}
@@ -89,7 +89,7 @@ The following example looks for cross-site scripting in the URI or query string 
 #### JSON
 <a name="aws-resource-waf-xssmatchset--examples--Define_Which_Part_of_a_Request_to_Check_for_Cross-site_Scripting--json"></a>
 
-```
+```json
 "DetectXSS": {
   "Type": "AWS::WAF::XssMatchSet",
   "Properties": {
@@ -115,7 +115,7 @@ The following example looks for cross-site scripting in the URI or query string 
 #### YAML
 <a name="aws-resource-waf-xssmatchset--examples--Define_Which_Part_of_a_Request_to_Check_for_Cross-site_Scripting--yaml"></a>
 
-```
+```yaml
 DetectXSS:
   Type: "AWS::WAF::XssMatchSet"
   Properties:
@@ -139,7 +139,7 @@ The following example associates the `DetectXSS` match set with a web access con
 #### JSON
 <a name="aws-resource-waf-xssmatchset--examples--Associate_an_XssMatchSet_with_a_Web_ACL_Rule--json"></a>
 
-```
+```json
 "XSSRule" : {
   "Type": "AWS::WAF::Rule",
   "Properties": {
@@ -159,7 +159,7 @@ The following example associates the `DetectXSS` match set with a web access con
 #### YAML
 <a name="aws-resource-waf-xssmatchset--examples--Associate_an_XssMatchSet_with_a_Web_ACL_Rule--yaml"></a>
 
-```
+```yaml
 XSSRule:
   Type: "AWS::WAF::Rule"
   Properties:
@@ -181,7 +181,7 @@ The following example associates the `XSSRule` rule with a web ACL. The web ACL 
 #### JSON
 <a name="aws-resource-waf-xssmatchset--examples--Create_a_Web_ACL--json"></a>
 
-```
+```json
 "MyWebACL": {
   "Type": "AWS::WAF::WebACL",
   "Properties": {
@@ -206,7 +206,7 @@ The following example associates the `XSSRule` rule with a web ACL. The web ACL 
 #### YAML
 <a name="aws-resource-waf-xssmatchset--examples--Create_a_Web_ACL--yaml"></a>
 
-```
+```yaml
 MyWebACL:
   Type: "AWS::WAF::WebACL"
   Properties:

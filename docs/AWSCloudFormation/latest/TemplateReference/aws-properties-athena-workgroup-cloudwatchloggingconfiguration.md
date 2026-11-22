@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-athena-workgroup-cloudwatchloggingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-athena-workgroup-cloudwatchloggingconfiguration-enabled)" : {{Boolean}},
   "[LogGroup](#cfn-athena-workgroup-cloudwatchloggingconfiguration-loggroup)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-athena-workgroup-cloudwatchloggingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-athena-workgroup-cloudwatchloggingconfiguration-enabled): {{Boolean}}
   [LogGroup](#cfn-athena-workgroup-cloudwatchloggingconfiguration-loggroup): {{String}}
   [LogStreamNamePrefix](#cfn-athena-workgroup-cloudwatchloggingconfiguration-logstreamnameprefix): {{String}}

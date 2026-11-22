@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticbeanstalk-environment-tier-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-elasticbeanstalk-environment-tier-name)" : {{String}},
   "[Type](#cfn-elasticbeanstalk-environment-tier-type)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticbeanstalk-environment-tier-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-elasticbeanstalk-environment-tier-name): {{String}}
   [Type](#cfn-elasticbeanstalk-environment-tier-type): {{String}}
   [Version](#cfn-elasticbeanstalk-environment-tier-version): {{String}}

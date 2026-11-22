@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-rds-dbsubnetgroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RDS::DBSubnetGroup",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-rds-dbsubnetgroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RDS::DBSubnetGroup
 Properties:
   [DBSubnetGroupDescription](#cfn-rds-dbsubnetgroup-dbsubnetgroupdescription): {{String}}
@@ -107,7 +107,7 @@ The following example creates a DB subnet group with two subnet IDs and a set of
 #### JSON
 <a name="aws-resource-rds-dbsubnetgroup--examples--Create_a_DB_subnet_group--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -134,7 +134,7 @@ The following example creates a DB subnet group with two subnet IDs and a set of
 #### YAML
 <a name="aws-resource-rds-dbsubnetgroup--examples--Create_a_DB_subnet_group--yaml"></a>
 
-```
+```yaml
 ---
 AWSTemplateFormatVersion: "2010-09-09"
 Resources:

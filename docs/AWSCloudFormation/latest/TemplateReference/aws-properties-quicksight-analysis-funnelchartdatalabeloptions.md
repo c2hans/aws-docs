@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-funnelchartdatalabeloptions-syntax.json"></a>
 
-```
+```json
 {
   "[CategoryLabelVisibility](#cfn-quicksight-analysis-funnelchartdatalabeloptions-categorylabelvisibility)" : {{String}},
   "[LabelColor](#cfn-quicksight-analysis-funnelchartdatalabeloptions-labelcolor)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-funnelchartdatalabeloptions-syntax.yaml"></a>
 
-```
+```yaml
   [CategoryLabelVisibility](#cfn-quicksight-analysis-funnelchartdatalabeloptions-categorylabelvisibility): {{String}}
   [LabelColor](#cfn-quicksight-analysis-funnelchartdatalabeloptions-labelcolor): {{String}}
   [LabelFontConfiguration](#cfn-quicksight-analysis-funnelchartdatalabeloptions-labelfontconfiguration): {{

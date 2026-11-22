@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/sorting-arrays.html
 
 To create a sorted array of unique values from a set of rows, you can use the [array\_sort](https://prestodb.io/docs/current/functions/array.html#array_sort) function, as in the following example.
 
-```
+```sql
 WITH
 dataset AS (
   SELECT ARRAY[3,1,2,5,2,3,6,3,4,5] AS items

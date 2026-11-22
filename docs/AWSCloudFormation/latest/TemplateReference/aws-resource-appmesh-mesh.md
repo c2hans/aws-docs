@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-appmesh-mesh-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppMesh::Mesh",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-appmesh-mesh-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppMesh::Mesh
 Properties:
   [MeshName](#cfn-appmesh-mesh-meshname): {{String}}
@@ -119,7 +119,7 @@ This example creates a service mesh that allows all egress traffic.
 #### JSON
 <a name="aws-resource-appmesh-mesh--examples--Create_a_Service_Mesh--json"></a>
 
-```
+```json
 {
    "Description": "Basic Test Mesh",
    "Resources": {
@@ -180,7 +180,7 @@ This example creates a service mesh that allows all egress traffic.
 #### YAML
 <a name="aws-resource-appmesh-mesh--examples--Create_a_Service_Mesh--yaml"></a>
 
-```
+```yaml
 Description: "Basic Test Mesh"
 Resources:
   BasicMesh:

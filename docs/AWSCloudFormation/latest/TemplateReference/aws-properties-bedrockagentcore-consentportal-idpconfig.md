@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-consentportal-idpconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Audience](#cfn-bedrockagentcore-consentportal-idpconfig-audience)" : {{String}},
   "[CredentialProviderArn](#cfn-bedrockagentcore-consentportal-idpconfig-credentialproviderarn)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-consentportal-idpconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Audience](#cfn-bedrockagentcore-consentportal-idpconfig-audience): {{String}}
   [CredentialProviderArn](#cfn-bedrockagentcore-consentportal-idpconfig-credentialproviderarn): {{String}}
   [Scopes](#cfn-bedrockagentcore-consentportal-idpconfig-scopes): {{

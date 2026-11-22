@@ -36,7 +36,7 @@ The example policy uses `"Resource": "*"` for simplicity. For production environ
 
 ****
 
-    ```
+    ```json
     {
       "Version":"2012-10-17",
       "Statement": [
@@ -121,7 +121,7 @@ The example policy uses `"Resource": "*"` for simplicity. For production environ
 
 ****
 
-    ```
+    ```json
     {
       "Version":"2012-10-17",
       "Statement": [

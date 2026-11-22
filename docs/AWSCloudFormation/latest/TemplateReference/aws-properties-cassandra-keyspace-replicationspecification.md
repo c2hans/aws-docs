@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cassandra-keyspace-replicationspecification-syntax.json"></a>
 
-```
+```json
 {
   "[RegionList](#cfn-cassandra-keyspace-replicationspecification-regionlist)" : {{[ String, ... ]}},
   "[ReplicationStrategy](#cfn-cassandra-keyspace-replicationspecification-replicationstrategy)" : {{String}}
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cassandra-keyspace-replicationspecification-syntax.yaml"></a>
 
-```
+```yaml
   [RegionList](#cfn-cassandra-keyspace-replicationspecification-regionlist): {{
     - String}}
   [ReplicationStrategy](#cfn-cassandra-keyspace-replicationspecification-replicationstrategy): {{String}}

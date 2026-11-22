@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-vpclattice-servicenetwork-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::VpcLattice::ServiceNetwork",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-vpclattice-servicenetwork-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::VpcLattice::ServiceNetwork
 Properties:
   [AuthType](#cfn-vpclattice-servicenetwork-authtype): {{String}}

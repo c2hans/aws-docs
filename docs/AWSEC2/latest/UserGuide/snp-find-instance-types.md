@@ -12,7 +12,7 @@ You can find instance types that support AMD SEV-SNP. The Amazon EC2 console doe
 **To find the instance types that support AMD SEV-SNP**
 Use the following [describe-instance-types](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-types.html) command.
 
-```
+```bash
 aws ec2 describe-instance-types \
     --filters Name=processor-info.supported-features,Values=amd-sev-snp \
     --query 'InstanceTypes[*].[InstanceType]' \
@@ -21,7 +21,7 @@ aws ec2 describe-instance-types \
 
 The following is example output.
 
-```
+```bash
 c6a.12xlarge
 c6a.16xlarge
 c6a.2xlarge
@@ -46,14 +46,14 @@ r6a.xlarge
 **To find the instance types that support AMD SEV-SNP**
 Use the [Get-EC2InstanceType](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceType.html) cmdlet.
 
-```
+```powershell
 (Get-EC2InstanceType `
     -Filter @{Name="processor-info.supported-features"; Values="amd-sev-snp"}).InstanceType.Value | Sort-Object
 ```
 
 The following is example output.
 
-```
+```bash
 c6a.12xlarge
 c6a.16xlarge
 c6a.2xlarge

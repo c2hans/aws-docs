@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-deadline-fleet-servicemanagedec2instancecapabilities-syntax.json"></a>
 
-```
+```json
 {
   "[AcceleratorCapabilities](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-acceleratorcapabilities)" : {{AcceleratorCapabilities}},
   "[AllowedInstanceTypes](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-allowedinstancetypes)" : {{[ String, ... ]}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-deadline-fleet-servicemanagedec2instancecapabilities-syntax.yaml"></a>
 
-```
+```yaml
   [AcceleratorCapabilities](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-acceleratorcapabilities): {{
     AcceleratorCapabilities}}
   [AllowedInstanceTypes](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-allowedinstancetypes): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-colorsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CustomColors](#cfn-quicksight-dashboard-colorsconfiguration-customcolors)" : {{[ CustomColor, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-colorsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CustomColors](#cfn-quicksight-dashboard-colorsconfiguration-customcolors): {{
     - CustomColor}}
 ```

@@ -70,7 +70,7 @@ This is an example response of the `GetAccountStatus` API operation for an activ
 #### Sample Response
 <a name="API_GetAccountStatus_Example_1_Response"></a>
 
-```
+```json
 {
     "status": "ACTIVE"
 }

@@ -101,7 +101,7 @@ The rule type configuration for the firewall rule. This is a tagged union — ex
 +  `DnsThreatProtection` — a built-in DNS Firewall Advanced threat detector (`DGA`, `DNS_TUNNELING`, or `DICTIONARY_DGA`).
 +  `PartnerThreatProtection` — a third-party threat feed delivered through AWS Marketplace.
 +  `AutoAllowlist` — an AutoAllowlist rule, which allows the domains on its managed domain list. See [AutoAllowlistConfig](API_route53resolver_AutoAllowlistConfig.md).
-To enumerate the values supported in your account, call [ListFirewallRuleTypes](API_route53resolver_ListFirewallRuleTypes.md). It doesn't return `AutoAllowlist`.
+To enumerate the values supported in your account, call [ListFirewallRuleTypes](API_route53resolver_ListFirewallRuleTypes.md).
 Type: [FirewallRuleType](API_route53resolver_FirewallRuleType.md) object
 Required: No
 

@@ -43,7 +43,7 @@ The following AWS SDK for Java example deletes an AWS resource tag from the Stor
 
 **Example – Delete tags for an S3 Storage Lens dashboard configuration**
 
-```
+```Java
 package aws.example.s3control;
 
 import com.amazonaws.AmazonServiceException;

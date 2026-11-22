@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelpackage-modelpackagestatusitem-syntax.json"></a>
 
-```
+```json
 {
   "[FailureReason](#cfn-sagemaker-modelpackage-modelpackagestatusitem-failurereason)" : {{String}},
   "[Name](#cfn-sagemaker-modelpackage-modelpackagestatusitem-name)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelpackage-modelpackagestatusitem-syntax.yaml"></a>
 
-```
+```yaml
   [FailureReason](#cfn-sagemaker-modelpackage-modelpackagestatusitem-failurereason): {{String}}
   [Name](#cfn-sagemaker-modelpackage-modelpackagestatusitem-name): {{String}}
   [Status](#cfn-sagemaker-modelpackage-modelpackagestatusitem-status): {{String}}

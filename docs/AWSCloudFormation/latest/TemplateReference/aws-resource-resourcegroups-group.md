@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-resourcegroups-group-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ResourceGroups::Group",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-resourcegroups-group-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ResourceGroups::Group
 Properties:
   [Configuration](#cfn-resourcegroups-group-configuration): {{
@@ -140,7 +140,7 @@ This example creates a CloudFormation stack-based resource group using defaults.
 #### JSON
 <a name="aws-resource-resourcegroups-group--examples--Creating_a_CloudFormation_stack-based_resource_group_using_defaults--json"></a>
 
-```
+```json
 {
     "ResourceGroup": {
         "Type": "AWS::ResourceGroups::Group",
@@ -155,7 +155,7 @@ This example creates a CloudFormation stack-based resource group using defaults.
 #### YAML
 <a name="aws-resource-resourcegroups-group--examples--Creating_a_CloudFormation_stack-based_resource_group_using_defaults--yaml"></a>
 
-```
+```yaml
 ResourceGroup:
   Type: "AWS::ResourceGroups::Group"
   Properties:
@@ -171,7 +171,7 @@ This example creates a CloudFormation stack-based resource group that's similar 
 #### JSON
 <a name="aws-resource-resourcegroups-group--examples--Creating_a_CloudFormation_stack-based_resource_group_with_specific_resources--json"></a>
 
-```
+```json
 {
     "CloudFormationStackGroupForSelectedResourceTypes": {
         "Type": "AWS::ResourceGroups::Group",
@@ -194,7 +194,7 @@ This example creates a CloudFormation stack-based resource group that's similar 
 #### YAML
 <a name="aws-resource-resourcegroups-group--examples--Creating_a_CloudFormation_stack-based_resource_group_with_specific_resources--yaml"></a>
 
-```
+```yaml
 CloudFormationStackGroupForSelectedResourceTypes:
   Type: "AWS::ResourceGroups::Group"
   Properties:
@@ -215,7 +215,7 @@ This example creates a resource group that's built from another stack. The `Stac
 #### JSON
 <a name="aws-resource-resourcegroups-group--examples--Creating_a_CloudFormation_stack-based_resource_group_based_on_another_stack--json"></a>
 
-```
+```json
 {
     "CloudFormationStackGroupForAnotherStack": {
         "Type": "AWS::ResourceGroups::Group",
@@ -245,7 +245,7 @@ This example creates a resource group that's built from another stack. The `Stac
 #### YAML
 <a name="aws-resource-resourcegroups-group--examples--Creating_a_CloudFormation_stack-based_resource_group_based_on_another_stack--yaml"></a>
 
-```
+```yaml
 CloudFormationStackGroupForAnotherStack:
   Type: "AWS::ResourceGroups::Group"
   Properties:
@@ -271,7 +271,7 @@ This example shows how to create a resource group whose membership is based on a
 #### JSON
 <a name="aws-resource-resourcegroups-group--examples--Creating_a_tag-based_resource_group--json"></a>
 
-```
+```json
 {
     "TagBasedGroup": {
         "Type": "AWS::ResourceGroups::Group",
@@ -302,7 +302,7 @@ This example shows how to create a resource group whose membership is based on a
 #### YAML
 <a name="aws-resource-resourcegroups-group--examples--Creating_a_tag-based_resource_group--yaml"></a>
 
-```
+```yaml
 TagBasedGroup:
   Type: "AWS::ResourceGroups::Group"
   Properties:
@@ -329,7 +329,7 @@ This example creates a capacity reservations resource group by specifying a conf
 #### JSON
 <a name="aws-resource-resourcegroups-group--examples--Creating_a_resource_group_for_EC2_capacity_reservations--json"></a>
 
-```
+```json
 {
    "CapacityReservationsGroupWithoutResources": {
       "Type": "AWS::ResourceGroups::Group",
@@ -361,7 +361,7 @@ This example creates a capacity reservations resource group by specifying a conf
 #### YAML
 <a name="aws-resource-resourcegroups-group--examples--Creating_a_resource_group_for_EC2_capacity_reservations--yaml"></a>
 
-```
+```yaml
 CapacityReservationsGroupWithoutResources:
   Type: "AWS::ResourceGroups::Group"
   Properties:
@@ -385,7 +385,7 @@ This example creates a capacity reservations resource group identical to the pre
 #### JSON
 <a name="aws-resource-resourcegroups-group--examples--Creating_a_resource_group_for_EC2_capacity_reservations_with_initial_members--json"></a>
 
-```
+```json
 {
    "CapacityReservationsGroupWithResources": {
       "Type": "AWS::ResourceGroups::Group",
@@ -421,7 +421,7 @@ This example creates a capacity reservations resource group identical to the pre
 #### YAML
 <a name="aws-resource-resourcegroups-group--examples--Creating_a_resource_group_for_EC2_capacity_reservations_with_initial_members--yaml"></a>
 
-```
+```yaml
 CapacityReservationsGroupWithResources:
   Type: "AWS::ResourceGroups::Group"
   Properties:
@@ -448,7 +448,7 @@ This example creates a host resource group. Instances in the group are automatic
 #### JSON
 <a name="aws-resource-resourcegroups-group--examples--Creating_an_EC2_hosts_resource_group--json"></a>
 
-```
+```json
 {
   "HostResourceGroup": {
     "Type": "AWS::ResourceGroups::Group",
@@ -505,7 +505,7 @@ This example creates a host resource group. Instances in the group are automatic
 #### YAML
 <a name="aws-resource-resourcegroups-group--examples--Creating_an_EC2_hosts_resource_group--yaml"></a>
 
-```
+```yaml
 HostResourceGroup:
   Type: "AWS::ResourceGroups::Group"
   Properties:
@@ -541,7 +541,7 @@ This example creates an EC2 host resource group that is configured to work with 
 #### JSON
 <a name="aws-resource-resourcegroups-group--examples--Creating_an_EC2_hosts_resource_group_with_some_initial_members--json"></a>
 
-```
+```json
 {
   "HostResourceGroupWithResources": {
     "Type": "AWS::ResourceGroups::Group",
@@ -579,7 +579,7 @@ This example creates an EC2 host resource group that is configured to work with 
 #### YAML
 <a name="aws-resource-resourcegroups-group--examples--Creating_an_EC2_hosts_resource_group_with_some_initial_members--yaml"></a>
 
-```
+```yaml
 HostResourceGroupWithResources:
   Type: "AWS::ResourceGroups::Group"
   Properties:

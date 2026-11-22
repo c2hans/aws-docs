@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-promptversion-toolchoice-syntax.json"></a>
 
-```
+```json
 {
   "[Any](#cfn-bedrock-promptversion-toolchoice-any)" : {{Json}},
   "[Auto](#cfn-bedrock-promptversion-toolchoice-auto)" : {{Json}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-promptversion-toolchoice-syntax.yaml"></a>
 
-```
+```yaml
   [Any](#cfn-bedrock-promptversion-toolchoice-any): {{Json}}
   [Auto](#cfn-bedrock-promptversion-toolchoice-auto): {{Json}}
   [Tool](#cfn-bedrock-promptversion-toolchoice-tool): {{

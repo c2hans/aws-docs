@@ -39,7 +39,7 @@ The following Java code example demonstrates the preceding steps. The code creat
 
 Because `Precipitation` is not a key attribute for the table, it is not required. However, `WeatherData` items without `Precipitation` do not appear in `PrecipIndex`.
 
-```
+```java
 AmazonDynamoDB client = AmazonDynamoDBClientBuilder.standard().build();
 DynamoDB dynamoDB = new DynamoDB(client);
 
@@ -116,7 +116,7 @@ The following Java code example demonstrates the preceding steps.
 
 **Example**
 
-```
+```java
 AmazonDynamoDB client = AmazonDynamoDBClientBuilder.standard().build();
 DynamoDB dynamoDB = new DynamoDB(client);
 
@@ -165,7 +165,7 @@ The following Java code example demonstrates the preceding steps.
 
 **Example**
 
-```
+```java
 AmazonDynamoDB client = AmazonDynamoDBClientBuilder.standard().build();
 DynamoDB dynamoDB = new DynamoDB(client);
 

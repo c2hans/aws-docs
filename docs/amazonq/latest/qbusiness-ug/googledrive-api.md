@@ -53,7 +53,7 @@ The following provides information about important configuration properties requ
 
 The following is the Google Drive JSON schema:
 
-```
+```json
 {
   "type": "object",
   "properties": {
@@ -346,7 +346,7 @@ The following is the Google Drive JSON schema:
 
 The following is the GoogleDrive JSON schema example:
 
-```
+```json
 {
   "type": "GOOGLEDRIVEV2",
   "syncMode": "FULL_CRAWL",

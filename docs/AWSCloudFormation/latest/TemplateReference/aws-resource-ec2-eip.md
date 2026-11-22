@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-eip-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::EIP",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-eip-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::EIP
 Properties:
   [Address](#cfn-ec2-eip-address): {{String}}
@@ -147,7 +147,7 @@ This example shows how to allocate an Elastic IP address and assign it to an Ama
 #### JSON
 <a name="aws-resource-ec2-eip--examples--Allocate_an_Elastic_IP_address--json"></a>
 
-```
+```json
 "Resources": {
   "myEIP" : {
       "Type" : "AWS::EC2::EIP",
@@ -161,7 +161,7 @@ This example shows how to allocate an Elastic IP address and assign it to an Ama
 #### YAML
 <a name="aws-resource-ec2-eip--examples--Allocate_an_Elastic_IP_address--yaml"></a>
 
-```
+```yaml
 Resources:
   myEIP:
     Type: AWS::EC2::EIP

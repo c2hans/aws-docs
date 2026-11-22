@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-featuregroup-offlinestoreconfig-syntax.json"></a>
 
-```
+```json
 {
   "[DataCatalogConfig](#cfn-sagemaker-featuregroup-offlinestoreconfig-datacatalogconfig)" : {{DataCatalogConfig}},
   "[DisableGlueTableCreation](#cfn-sagemaker-featuregroup-offlinestoreconfig-disablegluetablecreation)" : {{Boolean}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-featuregroup-offlinestoreconfig-syntax.yaml"></a>
 
-```
+```yaml
   [DataCatalogConfig](#cfn-sagemaker-featuregroup-offlinestoreconfig-datacatalogconfig): {{
     DataCatalogConfig}}
   [DisableGlueTableCreation](#cfn-sagemaker-featuregroup-offlinestoreconfig-disablegluetablecreation): {{Boolean}}

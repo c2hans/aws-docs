@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-timestream-table-magneticstorewriteproperties-syntax.json"></a>
 
-```
+```json
 {
   "[EnableMagneticStoreWrites](#cfn-timestream-table-magneticstorewriteproperties-enablemagneticstorewrites)" : {{Boolean}},
   "[MagneticStoreRejectedDataLocation](#cfn-timestream-table-magneticstorewriteproperties-magneticstorerejecteddatalocation)" : {{MagneticStoreRejectedDataLocation}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-timestream-table-magneticstorewriteproperties-syntax.yaml"></a>
 
-```
+```yaml
   [EnableMagneticStoreWrites](#cfn-timestream-table-magneticstorewriteproperties-enablemagneticstorewrites): {{Boolean}}
   [MagneticStoreRejectedDataLocation](#cfn-timestream-table-magneticstorewriteproperties-magneticstorerejecteddatalocation): {{
     MagneticStoreRejectedDataLocation}}

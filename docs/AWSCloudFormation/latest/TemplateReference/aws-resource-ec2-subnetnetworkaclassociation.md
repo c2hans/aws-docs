@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-subnetnetworkaclassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::SubnetNetworkAclAssociation",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-subnetnetworkaclassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::SubnetNetworkAclAssociation
 Properties:
   [NetworkAclId](#cfn-ec2-subnetnetworkaclassociation-networkaclid): {{String}}
@@ -83,7 +83,7 @@ The following example associates subnet mySubnet with the myNetworkAcl network A
 #### JSON
 <a name="aws-resource-ec2-subnetnetworkaclassociation--examples--Subnet_network_ACL_association--json"></a>
 
-```
+```json
 "mySubnetNetworkAclAssociation" : {
    "Type" : "AWS::EC2::SubnetNetworkAclAssociation",
    "Properties" : {
@@ -96,7 +96,7 @@ The following example associates subnet mySubnet with the myNetworkAcl network A
 #### YAML
 <a name="aws-resource-ec2-subnetnetworkaclassociation--examples--Subnet_network_ACL_association--yaml"></a>
 
-```
+```yaml
    mySubnetNetworkAclAssociation:
      Type: AWS::EC2::SubnetNetworkAclAssociation
      Properties:

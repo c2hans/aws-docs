@@ -21,7 +21,7 @@ You can use [GetDefaultScraperConfiguration](https://docs.aws.amazon.com/prometh
 
 Use the `CreateScraper` API operation to create a scraper with a CloudWatch destination. Replace the AWS account, security group, subnet, Amazon EKS cluster, and dataset information with your own values.
 
-```
+```json
 POST /scrapers HTTP/1.1
 
 {
@@ -49,7 +49,7 @@ POST /scrapers HTTP/1.1
 
 Use the `create-scraper` command to create a scraper with a CloudWatch destination. Replace the AWS account, security group, subnet, Amazon EKS cluster, and dataset information with your own values.
 
-```
+```bash
 aws amp create-scraper \
   --alias "eks-metrics-scraper" \
   --source eksConfiguration="{clusterArn='arn:aws:eks:{{us-west-2}}:{{123456789012}}:cluster/{{my-cluster}}', \

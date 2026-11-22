@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackagev2-originendpoint-scte-syntax.json"></a>
 
-```
+```json
 {
   "[CustomAdTypes](#cfn-mediapackagev2-originendpoint-scte-customadtypes)" : {{[ String, ... ]}},
   "[ScteFilter](#cfn-mediapackagev2-originendpoint-scte-sctefilter)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackagev2-originendpoint-scte-syntax.yaml"></a>
 
-```
+```yaml
   [CustomAdTypes](#cfn-mediapackagev2-originendpoint-scte-customadtypes): {{
     - String}}
   [ScteFilter](#cfn-mediapackagev2-originendpoint-scte-sctefilter): {{

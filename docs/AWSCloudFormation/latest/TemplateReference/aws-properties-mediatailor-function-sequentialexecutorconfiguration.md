@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-function-sequentialexecutorconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[FunctionList](#cfn-mediatailor-function-sequentialexecutorconfiguration-functionlist)" : {{[ FunctionRef, ... ]}},
   "[Output](#cfn-mediatailor-function-sequentialexecutorconfiguration-output)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-function-sequentialexecutorconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [FunctionList](#cfn-mediatailor-function-sequentialexecutorconfiguration-functionlist): {{
     - FunctionRef}}
   [Output](#cfn-mediatailor-function-sequentialexecutorconfiguration-output): {{

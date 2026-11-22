@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-eventtrigger-intentfiltercondition-syntax.json"></a>
 
-```
+```json
 {
   "[ComparisonOperator](#cfn-customerprofiles-eventtrigger-intentfiltercondition-comparisonoperator)" : {{String}},
   "[Intent](#cfn-customerprofiles-eventtrigger-intentfiltercondition-intent)" : {{Intent}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-eventtrigger-intentfiltercondition-syntax.yaml"></a>
 
-```
+```yaml
   [ComparisonOperator](#cfn-customerprofiles-eventtrigger-intentfiltercondition-comparisonoperator): {{String}}
   [Intent](#cfn-customerprofiles-eventtrigger-intentfiltercondition-intent): {{
     Intent}}

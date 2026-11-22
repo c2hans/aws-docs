@@ -91,7 +91,7 @@ For example, the following [role trust policy](id_roles.md#term_trust-policy) al
 **Example role trust policy for session tags**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -157,7 +157,7 @@ The following example shows a sample request that uses `AssumeRole`. In this exa
 
 **Example AssumeRole CLI request**
 
-```
+```http
 aws sts assume-role \
 --role-arn arn:aws:iam::123456789012:role/my-role-example \
 --role-session-name my-session \
@@ -194,7 +194,7 @@ To pass these attributes, include the following elements in your SAML assertion.
 
 **Example snippet of a SAML assertion**
 
-```
+```xml
 <Attribute Name="https://aws.amazon.com/SAML/Attributes/PrincipalTag:Project">
   <AttributeValue>Automation</AttributeValue>
 </Attribute>
@@ -212,7 +212,7 @@ To set the `Project` and `Department` tags as transitive, use the following mult
 
 **Example snippet of a SAML assertion**
 
-```
+```xml
 <Attribute Name="https://aws.amazon.com/SAML/Attributes/TransitiveTagKeys">
   <AttributeValue>Project</AttributeValue>
   <AttributeValue>Department</AttributeValue>
@@ -243,7 +243,7 @@ The following example demonstrates a decoded JWT using the nested object format:
 
 **Example decoded JSON Web Token using the nested claim format**
 
-```
+```json
 {
     "sub": "johndoe",
     "aud": "ac_oic_client",
@@ -278,7 +278,7 @@ Now, let's look at how the same information is represented using the flattened c
 
 **Example decoded JSON Web Token using the flattened claim format**
 
-```
+```json
 {
     "sub": "johndoe",
     "aud": "ac_oic_client",
@@ -310,7 +310,7 @@ The following example shows a sample request using `GetFederationToken`. In this
 
 **Example GetFederationToken CLI request**
 
-```
+```http
 aws sts get-federation-token \
 --name my-fed-user \
 --tags key=Project,value=Automation key=Department,value=Engineering
@@ -340,7 +340,7 @@ You perform this request using the following AWS CLI command:
 
 **Example AssumeRole CLI request**
 
-```
+```http
 aws sts assume-role \
 --role-arn arn:aws:iam::123456789012:role/Role1 \
 --role-session-name Session1 \
@@ -356,7 +356,7 @@ You perform this second request using the following AWS CLI command:
 
 **Example AssumeRole CLI request**
 
-```
+```http
 aws sts assume-role \
 --role-arn arn:aws:iam::123456789012:role/Role2 \
 --role-session-name Session2
@@ -370,7 +370,7 @@ You perform the third request using the following AWS CLI command:
 
 **Example AssumeRole CLI request**
 
-```
+```http
 aws sts assume-role \
 --role-arn arn:aws:iam::123456789012:role/Role3 \
 --role-session-name Session3
@@ -394,7 +394,7 @@ For example, assume that you make an AWS STS `AssumeRoleWithSAML` request, pass 
 
 **Example AssumeRoleWithSAML CloudTrail log**
 
-```
+```json
     "requestParameters": {
         "sAMLAssertionID": "_c0046cEXAMPLEb9d4b8eEXAMPLE2619aEXAMPLE",
         "roleSessionName": "MyRoleSessionName",

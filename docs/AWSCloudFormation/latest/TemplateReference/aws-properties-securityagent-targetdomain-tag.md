@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityagent-targetdomain-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-securityagent-targetdomain-tag-key)" : {{String}},
   "[Value](#cfn-securityagent-targetdomain-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityagent-targetdomain-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-securityagent-targetdomain-tag-key): {{String}}
   [Value](#cfn-securityagent-targetdomain-tag-value): {{String}}
 ```

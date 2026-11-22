@@ -83,7 +83,7 @@ You can configure advanced event selectors to filter on the `eventName` and `res
 
 The following example shows how to use AWS CLI to configure `dsql-data-events-trail` to receive data events for Aurora DSQL.
 
-```
+```bash
 aws cloudtrail put-event-selectors \
 --region us-east-1 \
 --trail-name dsql-data-events-trail \

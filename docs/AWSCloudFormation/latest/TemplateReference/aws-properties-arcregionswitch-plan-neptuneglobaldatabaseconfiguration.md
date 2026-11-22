@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-arcregionswitch-plan-neptuneglobaldatabaseconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Behavior](#cfn-arcregionswitch-plan-neptuneglobaldatabaseconfiguration-behavior)" : {{}},
   "[CrossAccountRole](#cfn-arcregionswitch-plan-neptuneglobaldatabaseconfiguration-crossaccountrole)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-arcregionswitch-plan-neptuneglobaldatabaseconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Behavior](#cfn-arcregionswitch-plan-neptuneglobaldatabaseconfiguration-behavior): {{
     }}
   [CrossAccountRole](#cfn-arcregionswitch-plan-neptuneglobaldatabaseconfiguration-crossaccountrole): {{String}}

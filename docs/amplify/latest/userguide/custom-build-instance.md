@@ -131,7 +131,7 @@ To work around the Node.js default heap size memory limits, you can do one of th
 
   The following example Amplify build specification sets a Node.js heap memory size to 7000 MB for building a React frontend application:
 
-  ```
+  ```yaml
   version: 1
   frontend:
     phases:

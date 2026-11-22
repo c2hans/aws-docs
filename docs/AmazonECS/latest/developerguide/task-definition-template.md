@@ -8,7 +8,7 @@ An empty task definition template is shown as follows. You can use this template
 
 **EC2 template**
 
-```
+```JSON
 {
   "family": "",
   "taskRoleArn": "",
@@ -260,7 +260,7 @@ An empty task definition template is shown as follows. You can use this template
 `WINDOWS_SERVER_2022_FULL`
 `WINDOWS_SERVER_2022_CORE`
 
-```
+```JSON
 {
     "family": "",
     "runtimePlatform": {"operatingSystemFamily": ""},

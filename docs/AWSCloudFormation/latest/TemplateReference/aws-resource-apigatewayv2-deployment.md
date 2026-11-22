@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigatewayv2-deployment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGatewayV2::Deployment",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigatewayv2-deployment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGatewayV2::Deployment
 Properties:
   [ApiId](#cfn-apigatewayv2-deployment-apiid): {{String}}
@@ -93,7 +93,7 @@ The following example creates a `deployment` resource for the `MyApi` API, which
 #### JSON
 <a name="aws-resource-apigatewayv2-deployment--examples--Deployment_creation_example--json"></a>
 
-```
+```json
 {
     "Deployment": {
         "Type": "AWS::ApiGatewayV2::Deployment",
@@ -114,7 +114,7 @@ The following example creates a `deployment` resource for the `MyApi` API, which
 #### YAML
 <a name="aws-resource-apigatewayv2-deployment--examples--Deployment_creation_example--yaml"></a>
 
-```
+```yaml
 Deployment:
   Type: 'AWS::ApiGatewayV2::Deployment'
   DependsOn:

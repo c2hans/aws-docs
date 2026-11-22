@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-fieldlevelencryptionconfig-queryargprofileconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ForwardWhenQueryArgProfileIsUnknown](#cfn-cloudfront-fieldlevelencryptionconfig-queryargprofileconfig-forwardwhenqueryargprofileisunknown)" : {{Boolean}},
   "[QueryArgProfiles](#cfn-cloudfront-fieldlevelencryptionconfig-queryargprofileconfig-queryargprofiles)" : {{[ QueryArgProfile, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-fieldlevelencryptionconfig-queryargprofileconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ForwardWhenQueryArgProfileIsUnknown](#cfn-cloudfront-fieldlevelencryptionconfig-queryargprofileconfig-forwardwhenqueryargprofileisunknown): {{Boolean}}
   [QueryArgProfiles](#cfn-cloudfront-fieldlevelencryptionconfig-queryargprofileconfig-queryargprofiles): {{
     - QueryArgProfile}}

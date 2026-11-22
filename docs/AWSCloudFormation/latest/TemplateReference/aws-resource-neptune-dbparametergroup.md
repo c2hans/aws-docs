@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-neptune-dbparametergroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Neptune::DBParameterGroup",
   "Properties" : {
@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-neptune-dbparametergroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Neptune::DBParameterGroup
 Properties:
   [Description](#cfn-neptune-dbparametergroup-description): {{String}}

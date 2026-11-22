@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-domain-domainsettings-syntax.json"></a>
 
-```
+```json
 {
   "[DockerSettings](#cfn-sagemaker-domain-domainsettings-dockersettings)" : {{DockerSettings}},
   "[ExecutionRoleIdentityConfig](#cfn-sagemaker-domain-domainsettings-executionroleidentityconfig)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-domain-domainsettings-syntax.yaml"></a>
 
-```
+```yaml
   [DockerSettings](#cfn-sagemaker-domain-domainsettings-dockersettings): {{
     DockerSettings}}
   [ExecutionRoleIdentityConfig](#cfn-sagemaker-domain-domainsettings-executionroleidentityconfig): {{String}}

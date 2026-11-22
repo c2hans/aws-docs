@@ -8,7 +8,7 @@ Collects log data from the Cisco Meraki Dashboard REST API v1 using API key auth
 
 Configure the Cisco Meraki source with the following parameters:
 
-```
+```yaml
 source:
   cisco_meraki:
     organization_id: "<meraki-organization-ID>"

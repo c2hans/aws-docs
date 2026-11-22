@@ -63,7 +63,7 @@ Enables CORS by returning the correct headers.
 #### RemoveBackendConfigRespObj schema
 <a name="backend-appid-config-remove-response-body-removebackendconfigrespobj-example"></a>
 
-```
+```json
 {
   "error": "string"
 }
@@ -72,7 +72,7 @@ Enables CORS by returning the correct headers.
 #### BadRequestException schema
 <a name="backend-appid-config-remove-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -81,7 +81,7 @@ Enables CORS by returning the correct headers.
 #### NotFoundException schema
 <a name="backend-appid-config-remove-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -91,7 +91,7 @@ Enables CORS by returning the correct headers.
 #### LimitExceededException schema
 <a name="backend-appid-config-remove-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"
@@ -101,7 +101,7 @@ Enables CORS by returning the correct headers.
 #### InternalServiceException schema
 <a name="backend-appid-config-remove-response-body-internalserviceexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

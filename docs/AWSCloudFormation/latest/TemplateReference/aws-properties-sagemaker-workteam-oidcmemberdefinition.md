@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-workteam-oidcmemberdefinition-syntax.json"></a>
 
-```
+```json
 {
   "[OidcGroups](#cfn-sagemaker-workteam-oidcmemberdefinition-oidcgroups)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-workteam-oidcmemberdefinition-syntax.yaml"></a>
 
-```
+```yaml
   [OidcGroups](#cfn-sagemaker-workteam-oidcmemberdefinition-oidcgroups): {{
     - String}}
 ```

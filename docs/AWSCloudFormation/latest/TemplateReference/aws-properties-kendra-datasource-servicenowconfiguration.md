@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-servicenowconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AuthenticationType](#cfn-kendra-datasource-servicenowconfiguration-authenticationtype)" : {{String}},
   "[HostUrl](#cfn-kendra-datasource-servicenowconfiguration-hosturl)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-servicenowconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AuthenticationType](#cfn-kendra-datasource-servicenowconfiguration-authenticationtype): {{String}}
   [HostUrl](#cfn-kendra-datasource-servicenowconfiguration-hosturl): {{String}}
   [KnowledgeArticleConfiguration](#cfn-kendra-datasource-servicenowconfiguration-knowledgearticleconfiguration): {{

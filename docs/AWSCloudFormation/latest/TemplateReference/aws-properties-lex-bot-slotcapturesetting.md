@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-slotcapturesetting-syntax.json"></a>
 
-```
+```json
 {
   "[CaptureConditional](#cfn-lex-bot-slotcapturesetting-captureconditional)" : {{ConditionalSpecification}},
   "[CaptureNextStep](#cfn-lex-bot-slotcapturesetting-capturenextstep)" : {{DialogState}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-slotcapturesetting-syntax.yaml"></a>
 
-```
+```yaml
   [CaptureConditional](#cfn-lex-bot-slotcapturesetting-captureconditional): {{
     ConditionalSpecification}}
   [CaptureNextStep](#cfn-lex-bot-slotcapturesetting-capturenextstep): {{

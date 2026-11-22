@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-servicecatalog-cloudformationprovisionedproduct-provisioningpreferences-syntax.json"></a>
 
-```
+```json
 {
   "[StackSetAccounts](#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningpreferences-stacksetaccounts)" : {{[ String, ... ]}},
   "[StackSetFailureToleranceCount](#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningpreferences-stacksetfailuretolerancecount)" : {{Integer}},
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-servicecatalog-cloudformationprovisionedproduct-provisioningpreferences-syntax.yaml"></a>
 
-```
+```yaml
   [StackSetAccounts](#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningpreferences-stacksetaccounts): {{
     - String}}
   [StackSetFailureToleranceCount](#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningpreferences-stacksetfailuretolerancecount): {{Integer}}

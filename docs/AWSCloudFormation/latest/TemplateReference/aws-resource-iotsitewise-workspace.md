@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iotsitewise-workspace-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoTSiteWise::Workspace",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iotsitewise-workspace-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoTSiteWise::Workspace
 Properties:
   [EncryptionConfiguration](#cfn-iotsitewise-workspace-encryptionconfiguration): {{

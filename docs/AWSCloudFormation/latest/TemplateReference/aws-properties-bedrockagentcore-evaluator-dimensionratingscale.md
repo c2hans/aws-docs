@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-evaluator-dimensionratingscale-syntax.json"></a>
 
-```
+```json
 {
   "[Categorical](#cfn-bedrockagentcore-evaluator-dimensionratingscale-categorical)" : {{[ CategoricalScaleDefinition, ... ]}},
   "[Numerical](#cfn-bedrockagentcore-evaluator-dimensionratingscale-numerical)" : {{[ NumericalScaleDefinition, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-evaluator-dimensionratingscale-syntax.yaml"></a>
 
-```
+```yaml
   [Categorical](#cfn-bedrockagentcore-evaluator-dimensionratingscale-categorical): {{
     - CategoricalScaleDefinition}}
   [Numerical](#cfn-bedrockagentcore-evaluator-dimensionratingscale-numerical): {{

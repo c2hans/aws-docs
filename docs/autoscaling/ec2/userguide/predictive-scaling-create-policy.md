@@ -131,7 +131,7 @@ For more information about the CloudWatch metrics you can specify, see [Predicti
 
 The following example policy shows a complete policy configuration that uses CPU utilization metrics for predictive scaling with a target utilization of `40`. `ForecastOnly` mode is used by default, unless you explicitly specify which mode to use. Save this configuration in a file named `config.json`.
 
-```
+```json
 {
     "MetricSpecifications": [
         {
@@ -154,7 +154,7 @@ aws autoscaling put-scaling-policy --policy-name {{cpu40-predictive-scaling-poli
 
 If successful, this command returns the policy's Amazon Resource Name (ARN).
 
-```
+```json
 {
   "PolicyARN": "arn:aws:autoscaling:region:account-id:scalingPolicy:2f4f5048-d8a8-4d14-b13a-d1905620f345:autoScalingGroupName/my-asg:policyName/cpu40-predictive-scaling-policy",
   "Alarms": []
@@ -166,7 +166,7 @@ If successful, this command returns the policy's Amazon Resource Name (ARN).
 
 For a policy that allows Amazon EC2 Auto Scaling to forecast and scale, add the property `Mode` with a value of `ForecastAndScale`. The following example shows a policy configuration that uses Application Load Balancer request count metrics. The target utilization is `1000`, and predictive scaling is set to `ForecastAndScale` mode.
 
-```
+```json
 {
     "MetricSpecifications": [
         {
@@ -191,7 +191,7 @@ aws autoscaling put-scaling-policy --policy-name {{alb1000-predictive-scaling-po
 
 If successful, this command returns the policy's Amazon Resource Name (ARN).
 
-```
+```json
 {
   "PolicyARN": "arn:aws:autoscaling:region:account-id:scalingPolicy:19556d63-7914-4997-8c81-d27ca5241386:autoScalingGroupName/my-asg:policyName/alb1000-predictive-scaling-policy",
   "Alarms": []
@@ -205,7 +205,7 @@ The following example shows how to create a policy that can scale higher than th
 
 To provide room for Amazon EC2 Auto Scaling to provision additional capacity when the capacity is predicted to be at or very close to your group's maximum size, specify the `MaxCapacityBreachBehavior` and `MaxCapacityBuffer` properties, as shown in the following example. You must specify `MaxCapacityBreachBehavior` with a value of `IncreaseMaxCapacity`. The maximum number of instances that your group can have depends on the value of `MaxCapacityBuffer`.
 
-```
+```json
 {
     "MetricSpecifications": [
         {
@@ -232,7 +232,7 @@ aws autoscaling put-scaling-policy --policy-name {{cpu70-predictive-scaling-poli
 
 If successful, this command returns the policy's Amazon Resource Name (ARN).
 
-```
+```json
 {
   "PolicyARN": "arn:aws:autoscaling:region:account-id:scalingPolicy:d02ef525-8651-4314-bf14-888331ebd04f:autoScalingGroupName/my-asg:policyName/cpu70-predictive-scaling-policy",
   "Alarms": []

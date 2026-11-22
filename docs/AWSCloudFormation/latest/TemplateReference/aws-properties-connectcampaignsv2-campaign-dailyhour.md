@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connectcampaignsv2-campaign-dailyhour-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-connectcampaignsv2-campaign-dailyhour-key)" : {{String}},
   "[Value](#cfn-connectcampaignsv2-campaign-dailyhour-value)" : {{[ TimeRange, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connectcampaignsv2-campaign-dailyhour-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-connectcampaignsv2-campaign-dailyhour-key): {{String}}
   [Value](#cfn-connectcampaignsv2-campaign-dailyhour-value): {{
     - TimeRange}}

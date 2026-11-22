@@ -51,7 +51,7 @@ To encrypt an EBS volume that's attached to your task by using a customer manage
 
 The following JSON snippet shows key policy statements that you can attach to your KMS key policy. Using these statements will provide access for Amazon ECS to use the key for encrypting the EBS volume. To use the example policy statements, replace the `{{user input placeholders}}` with your own information. As always, only configure the permissions that you need.
 
-```
+```JSON
 {
       "Effect": "Allow",
       "Principal": { "AWS": "arn:aws:iam::{{111122223333}}:role/ecsInfrastructureRole" },

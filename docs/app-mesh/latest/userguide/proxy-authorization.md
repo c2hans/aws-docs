@@ -19,7 +19,7 @@ If you want all mesh endpoints in a service mesh to be able to read the configur
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

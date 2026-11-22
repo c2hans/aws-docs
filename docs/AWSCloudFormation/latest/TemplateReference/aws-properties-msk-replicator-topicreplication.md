@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-replicator-topicreplication-syntax.json"></a>
 
-```
+```json
 {
   "[CopyAccessControlListsForTopics](#cfn-msk-replicator-topicreplication-copyaccesscontrollistsfortopics)" : {{Boolean}},
   "[CopyTopicConfigurations](#cfn-msk-replicator-topicreplication-copytopicconfigurations)" : {{Boolean}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-replicator-topicreplication-syntax.yaml"></a>
 
-```
+```yaml
   [CopyAccessControlListsForTopics](#cfn-msk-replicator-topicreplication-copyaccesscontrollistsfortopics): {{Boolean}}
   [CopyTopicConfigurations](#cfn-msk-replicator-topicreplication-copytopicconfigurations): {{Boolean}}
   [DetectAndCopyNewTopics](#cfn-msk-replicator-topicreplication-detectandcopynewtopics): {{Boolean}}

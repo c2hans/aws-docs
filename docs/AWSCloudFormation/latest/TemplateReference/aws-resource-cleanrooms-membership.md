@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cleanrooms-membership-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CleanRooms::Membership",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cleanrooms-membership-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CleanRooms::Membership
 Properties:
   [CollaborationIdentifier](#cfn-cleanrooms-membership-collaborationidentifier): {{String}}
@@ -173,7 +173,7 @@ The following an example of a membership for a collaboration creator. See the Re
 #### JSON
 <a name="aws-resource-cleanrooms-membership--examples--Membership_for_a_collaboration_creator--json"></a>
 
-```
+```json
 "CollaborationCreatorMembership": {
   "Type" : "AWS::CleanRooms::Membership",
   "DeletionPolicy": "Retain",
@@ -188,7 +188,7 @@ The following an example of a membership for a collaboration creator. See the Re
 #### YAML
 <a name="aws-resource-cleanrooms-membership--examples--Membership_for_a_collaboration_creator--yaml"></a>
 
-```
+```yaml
 CollaborationCreatorMembership:
   Type: AWS::CleanRooms::Membership
   DeletionPolicy: Retain
@@ -206,7 +206,7 @@ The following is an example of a membership for a non-collaboration creator.
 #### JSON
 <a name="aws-resource-cleanrooms-membership--examples--Membership_for_a_non-collaboration_creator--json"></a>
 
-```
+```json
 "ExampleMembership": {
   "Type" : "AWS::CleanRooms::Membership",
   "Properties" : {
@@ -219,7 +219,7 @@ The following is an example of a membership for a non-collaboration creator.
 #### YAML
 <a name="aws-resource-cleanrooms-membership--examples--Membership_for_a_non-collaboration_creator--yaml"></a>
 
-```
+```yaml
 ExampleMembership:
   Type: AWS::CleanRooms::Membership
   Properties:

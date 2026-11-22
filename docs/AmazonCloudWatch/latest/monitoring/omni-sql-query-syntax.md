@@ -13,7 +13,7 @@ The examples on this page assume that your telemetry contains records like the f
 
 **Log example** (`logs.default`)
 
-```
+```json
 {
   "request_id": "abc-123",
   "path": "/api/auth/login",
@@ -26,7 +26,7 @@ The examples on this page assume that your telemetry contains records like the f
 
 **Trace example** (`traces.default`)
 
-```
+```json
 {
   "traceId": "5b8efff798038103d269b633813fc60c",
   "spanId": "eee19b7ec3c1b174",
@@ -50,7 +50,7 @@ To add a comment, use `--` for the rest of a line or `/* ... */` for a block. Th
 
 The following example uses both comment styles.
 
-```
+```sql
 /* Most recent login requests */
 SELECT `@timestamp`, request_id, status_code
 FROM "logs.default"
@@ -90,7 +90,7 @@ The following table describes each clause and command. Every clause and command 
 
 **Example – Count failing traces with WITH**
 
-```
+```sql
 WITH errors AS (
   SELECT traceId
   FROM "logs.default"
@@ -103,7 +103,7 @@ FROM errors
 
 **Example – Sample the most recent 5 GB of the last 30 days with TABLESAMPLE**
 
-```
+```sql
 SELECT `@timestamp`, request_id, status_code
 FROM "logs.default" TABLESAMPLE (5G MAX_VOLUME, BIAS LATEST)
 WHERE `@timestamp` BETWEEN NOW() - INTERVAL '30' DAY AND NOW()
@@ -113,7 +113,7 @@ LIMIT 1000
 
 **Example – Count errors and distinct users per path with FILTER and HAVING**
 
-```
+```sql
 SELECT path,
        COUNT(*) AS requests,
        COUNT(*) FILTER (WHERE status_code >= 500) AS errors,
@@ -127,7 +127,7 @@ ORDER BY errors DESC
 
 **Example – Compare log and trace record counts with UNION ALL**
 
-```
+```sql
 SELECT 'logs' AS signal, COUNT(*) AS records
 FROM "logs.default"
 WHERE `@timestamp` BETWEEN NOW() - INTERVAL '1' HOUR AND NOW()
@@ -139,7 +139,7 @@ WHERE `@timestamp` BETWEEN NOW() - INTERVAL '1' HOUR AND NOW()
 
 **Example – Find paths seen in the last hour but not in the 23 hours before it with EXCEPT**
 
-```
+```sql
 SELECT path
 FROM "logs.default"
 WHERE `@timestamp` BETWEEN NOW() - INTERVAL '1' HOUR AND NOW()
@@ -151,7 +151,7 @@ WHERE `@timestamp` BETWEEN NOW() - INTERVAL '1' DAY AND NOW() - INTERVAL '1' HOU
 
 **Example – Discover the fields on agent spans**
 
-```
+```sql
 EXPLAIN (ANALYZE_FIELDS)
 SELECT *
 FROM "traces.default"

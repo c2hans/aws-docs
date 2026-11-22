@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elementalinference-feed-croppingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[TemplateGroups](#cfn-elementalinference-feed-croppingconfig-templategroups)" : {{[ TemplateGroup, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elementalinference-feed-croppingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [TemplateGroups](#cfn-elementalinference-feed-croppingconfig-templategroups): {{
     - TemplateGroup}}
 ```

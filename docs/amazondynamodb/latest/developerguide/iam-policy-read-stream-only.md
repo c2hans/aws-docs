@@ -21,7 +21,7 @@ The following example policy grants users permissions to access the streams of a
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

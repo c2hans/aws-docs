@@ -17,7 +17,7 @@ To connect your data source connector to Amazon Q, you must give Amazon Q an IAM
 + Permission to access the [User Store](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-principal-store.html) API operations to ingest user and group access control information from documents.
 + Permission to access your AWS Secrets Manager secret to authenticate your data source connector instance.
 
-```
+```json
 {
   "Version": "2012-10-17",		 	 	 ,
   "Statement": [
@@ -79,7 +79,7 @@ To connect your data source connector to Amazon Q, you must give Amazon Q an IAM
 
 **To allow Amazon Q to assume a role, you must also use the following trust policy:**
 
-```
+```json
 {
   "Version": "2012-10-17",		 	 	 ,
   "Statement": [

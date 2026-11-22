@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-promptversion-contentblock-syntax.json"></a>
 
-```
+```json
 {
   "[CachePoint](#cfn-bedrock-promptversion-contentblock-cachepoint)" : {{CachePointBlock}},
   "[Text](#cfn-bedrock-promptversion-contentblock-text)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-promptversion-contentblock-syntax.yaml"></a>
 
-```
+```yaml
   [CachePoint](#cfn-bedrock-promptversion-contentblock-cachepoint): {{
     CachePointBlock}}
   [Text](#cfn-bedrock-promptversion-contentblock-text): {{String}}

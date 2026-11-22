@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-radarchartconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AlternateBandColorsVisibility](#cfn-quicksight-template-radarchartconfiguration-alternatebandcolorsvisibility)" : {{String}},
   "[AlternateBandEvenColor](#cfn-quicksight-template-radarchartconfiguration-alternatebandevencolor)" : {{String}},
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-radarchartconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AlternateBandColorsVisibility](#cfn-quicksight-template-radarchartconfiguration-alternatebandcolorsvisibility): {{String}}
   [AlternateBandEvenColor](#cfn-quicksight-template-radarchartconfiguration-alternatebandevencolor): {{String}}
   [AlternateBandOddColor](#cfn-quicksight-template-radarchartconfiguration-alternatebandoddcolor): {{String}}

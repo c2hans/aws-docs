@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-accountaccess-application-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AccountAccess::Application",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-accountaccess-application-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AccountAccess::Application
 Properties:
   [IdentitySource](#cfn-accountaccess-application-identitysource): {{

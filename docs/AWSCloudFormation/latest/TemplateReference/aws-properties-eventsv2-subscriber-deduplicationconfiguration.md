@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eventsv2-subscriber-deduplicationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DeduplicationType](#cfn-eventsv2-subscriber-deduplicationconfiguration-deduplicationtype)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eventsv2-subscriber-deduplicationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DeduplicationType](#cfn-eventsv2-subscriber-deduplicationconfiguration-deduplicationtype): {{String}}
 ```
 

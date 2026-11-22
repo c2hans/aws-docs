@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kafkaconnect-connector-workerlogdelivery-syntax.json"></a>
 
-```
+```json
 {
   "[CloudWatchLogs](#cfn-kafkaconnect-connector-workerlogdelivery-cloudwatchlogs)" : {{CloudWatchLogsLogDelivery}},
   "[Firehose](#cfn-kafkaconnect-connector-workerlogdelivery-firehose)" : {{FirehoseLogDelivery}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kafkaconnect-connector-workerlogdelivery-syntax.yaml"></a>
 
-```
+```yaml
   [CloudWatchLogs](#cfn-kafkaconnect-connector-workerlogdelivery-cloudwatchlogs): {{
     CloudWatchLogsLogDelivery}}
   [Firehose](#cfn-kafkaconnect-connector-workerlogdelivery-firehose): {{

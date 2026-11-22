@@ -46,7 +46,7 @@ AgentCore is not covered by the AI services opt-out policy.
 
 Amazon Transcribe and Amazon Polly process the audio and text for voice input and voice playback. Both services can use content for service improvement, and both are covered by the AI services opt-out policy. To opt out for these services, create an AI services opt-out policy that includes the `transcribe` and `polly` service keys.
 
-```
+```json
 {
     "services": {
         "transcribe": {
@@ -70,7 +70,7 @@ For instructions, see [AI services opt-out policies](https://docs.aws.amazon.com
 
 Other Amazon CloudWatch features that use artificial intelligence (including natural language query generation for CloudWatch Metrics Insights and CloudWatch Logs Insights, and CloudWatch investigations) can use your content for service improvement. Those features are covered by the AI services opt-out policy under the `cloudwatch` service key. Opting out with that key does not change CloudWatch Omni, which does not use your content for service improvement.
 
-```
+```json
 {
     "services": {
         "cloudwatch": {

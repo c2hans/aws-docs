@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-spotfleet-ebsblockdevice-syntax.json"></a>
 
-```
+```json
 {
   "[DeleteOnTermination](#cfn-ec2-spotfleet-ebsblockdevice-deleteontermination)" : {{Boolean}},
   "[Encrypted](#cfn-ec2-spotfleet-ebsblockdevice-encrypted)" : {{Boolean}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-spotfleet-ebsblockdevice-syntax.yaml"></a>
 
-```
+```yaml
   [DeleteOnTermination](#cfn-ec2-spotfleet-ebsblockdevice-deleteontermination): {{Boolean}}
   [Encrypted](#cfn-ec2-spotfleet-ebsblockdevice-encrypted): {{Boolean}}
   [Iops](#cfn-ec2-spotfleet-ebsblockdevice-iops): {{Integer}}

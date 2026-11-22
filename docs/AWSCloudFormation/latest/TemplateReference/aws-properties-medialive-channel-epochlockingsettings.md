@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-epochlockingsettings-syntax.json"></a>
 
-```
+```json
 {
   "[CustomEpoch](#cfn-medialive-channel-epochlockingsettings-customepoch)" : {{String}},
   "[JamSyncTime](#cfn-medialive-channel-epochlockingsettings-jamsynctime)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-epochlockingsettings-syntax.yaml"></a>
 
-```
+```yaml
   [CustomEpoch](#cfn-medialive-channel-epochlockingsettings-customepoch): {{String}}
   [JamSyncTime](#cfn-medialive-channel-epochlockingsettings-jamsynctime): {{String}}
 ```

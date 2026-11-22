@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-cluster-gatewayapi-syntax.json"></a>
 
-```
+```json
 {
   "[Crds](#cfn-eks-cluster-gatewayapi-crds)" : {{GatewayApiCrds}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-cluster-gatewayapi-syntax.yaml"></a>
 
-```
+```yaml
   [Crds](#cfn-eks-cluster-gatewayapi-crds): {{
     GatewayApiCrds}}
 ```

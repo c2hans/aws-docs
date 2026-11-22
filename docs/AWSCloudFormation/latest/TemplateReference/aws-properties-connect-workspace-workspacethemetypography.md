@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-workspace-workspacethemetypography-syntax.json"></a>
 
-```
+```json
 {
   "[FontFamily](#cfn-connect-workspace-workspacethemetypography-fontfamily)" : {{FontFamily}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-workspace-workspacethemetypography-syntax.yaml"></a>
 
-```
+```yaml
   [FontFamily](#cfn-connect-workspace-workspacethemetypography-fontfamily): {{
     FontFamily}}
 ```

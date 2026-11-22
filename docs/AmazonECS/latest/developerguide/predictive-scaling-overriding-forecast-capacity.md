@@ -46,7 +46,7 @@ Start by analyzing the forecast time series data. This is an optional step, but 
 
    If successful, the command returns data similar to the following example.
 
-   ```
+   ```json
    {
        "LoadForecast": [
            {

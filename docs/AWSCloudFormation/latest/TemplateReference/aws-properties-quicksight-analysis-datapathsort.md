@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-datapathsort-syntax.json"></a>
 
-```
+```json
 {
   "[Direction](#cfn-quicksight-analysis-datapathsort-direction)" : {{String}},
   "[SortPaths](#cfn-quicksight-analysis-datapathsort-sortpaths)" : {{[ DataPathValue, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-datapathsort-syntax.yaml"></a>
 
-```
+```yaml
   [Direction](#cfn-quicksight-analysis-datapathsort-direction): {{String}}
   [SortPaths](#cfn-quicksight-analysis-datapathsort-sortpaths): {{
     - DataPathValue}}

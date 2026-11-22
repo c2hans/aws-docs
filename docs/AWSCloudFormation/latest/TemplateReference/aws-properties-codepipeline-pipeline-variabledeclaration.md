@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codepipeline-pipeline-variabledeclaration-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultValue](#cfn-codepipeline-pipeline-variabledeclaration-defaultvalue)" : {{String}},
   "[Description](#cfn-codepipeline-pipeline-variabledeclaration-description)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codepipeline-pipeline-variabledeclaration-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultValue](#cfn-codepipeline-pipeline-variabledeclaration-defaultvalue): {{String}}
   [Description](#cfn-codepipeline-pipeline-variabledeclaration-description): {{String}}
   [Name](#cfn-codepipeline-pipeline-variabledeclaration-name): {{String}}

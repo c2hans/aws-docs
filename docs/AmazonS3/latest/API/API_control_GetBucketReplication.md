@@ -154,7 +154,7 @@ Type: [ReplicationConfiguration](API_control_ReplicationConfiguration.md) data t
 
 The following example shows how to get the replication configuration of an Outposts bucket.
 
-```
+```HTTP
 GET /v20180820/bucket/example-outpost-bucket/replication HTTP/1.1
 Host: s3-outposts.<Region>.amazonaws.com
 x-amz-account-id: example-account-id

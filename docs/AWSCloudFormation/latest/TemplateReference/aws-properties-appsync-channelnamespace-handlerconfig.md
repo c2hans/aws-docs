@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appsync-channelnamespace-handlerconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Behavior](#cfn-appsync-channelnamespace-handlerconfig-behavior)" : {{String}},
   "[Integration](#cfn-appsync-channelnamespace-handlerconfig-integration)" : {{Integration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appsync-channelnamespace-handlerconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Behavior](#cfn-appsync-channelnamespace-handlerconfig-behavior): {{String}}
   [Integration](#cfn-appsync-channelnamespace-handlerconfig-integration): {{
     Integration}}

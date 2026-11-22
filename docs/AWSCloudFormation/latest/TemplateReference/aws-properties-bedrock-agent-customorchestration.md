@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-agent-customorchestration-syntax.json"></a>
 
-```
+```json
 {
   "[Executor](#cfn-bedrock-agent-customorchestration-executor)" : {{OrchestrationExecutor}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-agent-customorchestration-syntax.yaml"></a>
 
-```
+```yaml
   [Executor](#cfn-bedrock-agent-customorchestration-executor): {{
     OrchestrationExecutor}}
 ```

@@ -43,7 +43,7 @@ The following list contains AWS services and features that are out of scope for 
 + AWS CodeCommit
 + AWS CodeDeploy
 + Amazon Corretto
-+ AWS Fault Injection Simulator (AWS FIS)
++ AWS Fault Injection Service (AWS FIS)
 + AWS Tools and SDKs
 
 ## Front-End Web and Mobile

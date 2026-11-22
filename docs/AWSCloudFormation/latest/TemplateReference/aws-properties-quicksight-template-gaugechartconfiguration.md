@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-gaugechartconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ColorConfiguration](#cfn-quicksight-template-gaugechartconfiguration-colorconfiguration)" : {{GaugeChartColorConfiguration}},
   "[DataLabels](#cfn-quicksight-template-gaugechartconfiguration-datalabels)" : {{DataLabelOptions}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-gaugechartconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ColorConfiguration](#cfn-quicksight-template-gaugechartconfiguration-colorconfiguration): {{
     GaugeChartColorConfiguration}}
   [DataLabels](#cfn-quicksight-template-gaugechartconfiguration-datalabels): {{

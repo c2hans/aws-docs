@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-physicaltable-syntax.json"></a>
 
-```
+```json
 {
   "[CustomSql](#cfn-quicksight-dataset-physicaltable-customsql)" : {{CustomSql}},
   "[RelationalTable](#cfn-quicksight-dataset-physicaltable-relationaltable)" : {{RelationalTable}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-physicaltable-syntax.yaml"></a>
 
-```
+```yaml
   [CustomSql](#cfn-quicksight-dataset-physicaltable-customsql): {{
     CustomSql}}
   [RelationalTable](#cfn-quicksight-dataset-physicaltable-relationaltable): {{

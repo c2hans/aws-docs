@@ -56,7 +56,7 @@ If you change the secret later, you must also update the `SSRS` or `PBIRS` optio
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement" : [ {

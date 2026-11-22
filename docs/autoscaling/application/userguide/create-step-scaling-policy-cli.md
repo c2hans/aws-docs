@@ -39,7 +39,7 @@ aws application-autoscaling register-scalable-target --service-namespace {{ecs}}
 **Output**
 If successful, this command returns the ARN of the scalable target. The following is example output.
 
-```
+```json
 {
     "ScalableTargetARN": "arn:aws:application-autoscaling:{{region}}:{{account-id}}:scalable-target/1234abcd56ab78cd901ef1234567890ab123"
 }
@@ -113,7 +113,7 @@ To create a step scaling policy for your scalable target, you can use the follow
 **Output**
 The output includes the ARN that serves as a unique name for the policy. You need it to create a CloudWatch alarm for your policy. The following is example output.
 
-   ```
+   ```json
    {
        "PolicyARN": "arn:aws:autoscaling:{{region}}:{{123456789012}}:scalingPolicy:{{ac542982-cbeb-4294-891c-a5a941dfa787}}:resource/{{ecs/service/my-cluster/my-service}}:policyName/{{my-step-scaling-policy"}}
    }
@@ -181,7 +181,7 @@ The output includes the ARN that serves as a unique name for the policy. You nee
 **Output**
 The output includes the ARN that serves as a unique name for the policy. You need this ARN to create a CloudWatch alarm for your policy. The following is example output.
 
-   ```
+   ```json
    {
        "PolicyARN": "arn:aws:autoscaling:{{region}}:{{123456789012}}:scalingPolicy:{{ac542982-cbeb-4294-891c-a5a941dfa787}}:resource/{{ecs/service/my-cluster/my-service}}:policyName/{{my-step-scaling-policy"}}
    }

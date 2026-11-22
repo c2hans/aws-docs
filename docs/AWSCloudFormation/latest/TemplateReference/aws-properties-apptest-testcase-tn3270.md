@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apptest-testcase-tn3270-syntax.json"></a>
 
-```
+```json
 {
   "[ExportDataSetNames](#cfn-apptest-testcase-tn3270-exportdatasetnames)" : {{[ String, ... ]}},
   "[Script](#cfn-apptest-testcase-tn3270-script)" : {{Script}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apptest-testcase-tn3270-syntax.yaml"></a>
 
-```
+```yaml
   [ExportDataSetNames](#cfn-apptest-testcase-tn3270-exportdatasetnames): {{
     - String}}
   [Script](#cfn-apptest-testcase-tn3270-script): {{

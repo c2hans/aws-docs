@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-memorydb-user-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MemoryDB::User",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-memorydb-user-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MemoryDB::User
 Properties:
   [AccessString](#cfn-memorydb-user-accessstring): {{
@@ -56,7 +56,7 @@ Access permissions string used for this user.
 Denotes whether the user requires a password to authenticate.
  **Example:**
 
-```
+```json
 mynewdbuser:
      Type: AWS::MemoryDB::User
      Properties:

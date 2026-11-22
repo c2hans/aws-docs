@@ -58,7 +58,7 @@ or call the GetRequestAuthorizationDetails API with the following authorization 
 
 1.  Call `GetRequestAuthorizationDetails` with the authorization ID in the same AWS Region where the denial occurred. The following AWS CLI command uses `us-east-1`:
 
-   ```
+   ```bash
    aws iam-toolbox get-request-authorization-details \
        --region us-east-1 \
        --authorization-id a0b1c2d3e4f5g6h7i8j9k0l1m
@@ -79,7 +79,7 @@ or call the GetRequestAuthorizationDetails API with the following authorization 
 
  In the example error, the policy URI is `arn:aws:organizations::111111111111:policy/o-exampleorgid/service_control_policy/p-examplepolicyid111`. The following AWS CLI command retrieves the recorded policy document:
 
-```
+```bash
 aws iam-toolbox get-request-authorization-policy \
     --region us-east-1 \
     --authorization-id a0b1c2d3e4f5g6h7i8j9k0l1m \
@@ -88,7 +88,7 @@ aws iam-toolbox get-request-authorization-policy \
 
  The response contains the captured policy document as a JSON object in `policyDocument`. For this example, the response is:
 
-```
+```json
 {
     "policyDocument": {
         "Version": "2012-10-17",

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sagemaker-studiolifecycleconfig-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SageMaker::StudioLifecycleConfig",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sagemaker-studiolifecycleconfig-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SageMaker::StudioLifecycleConfig
 Properties:
   [StudioLifecycleConfigAppType](#cfn-sagemaker-studiolifecycleconfig-studiolifecycleconfigapptype): {{String}}

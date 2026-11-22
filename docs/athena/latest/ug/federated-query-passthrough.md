@@ -49,7 +49,7 @@ When using passthrough queries in Athena, consider the following points:
 
 The general Athena query passthrough syntax is as follows.
 
-```
+```sql
 SELECT * FROM TABLE(catalog.system.{{function_name}}({{arg1}} => '{{arg1Value}}'[, {{arg2}} => '{{arg2Value}}', ...]))
 ```
 
@@ -61,25 +61,25 @@ Note the following:
 
 For most data sources, the first and only argument is `query` followed by the arrow operator `=>` and the query string.
 
-```
+```sql
 SELECT * FROM TABLE(catalog.system.query(query => 'query string'))
 ```
 
 For simplicity, you can omit the optional named argument `query` and the arrow operator `=>`.
 
-```
+```sql
 SELECT * FROM TABLE(catalog.system.query('query string'))
 ```
 
 You can further simplify the query by removing the `catalog` name if the query is run within the context of the target catalog.
 
-```
+```sql
 SELECT * FROM TABLE(system.query('query string'))
 ```
 
 If the data source requires more than the query string, use named arguments in the order expected by the data source. For example, the expression `{{arg1}} => '{{arg1Value}}'` contains the first argument and its value. The name {{arg1}} is specific to the data source and can differ from connector to connector.
 
-```
+```sql
 SELECT * FROM TABLE(
         system.query(
             {{arg1}} => '{{arg1Value}}',
@@ -90,13 +90,13 @@ SELECT * FROM TABLE(
 
 The above can also be simplified by omitting the argument names. However, you must follow the order of the method's signature. See each connector's documentation for more information about the function's signature.
 
-```
+```sql
 SELECT * FROM TABLE(catalog.system.query('arg1Value', 'arg2Value', 'arg3Value'))
 ```
 
 You can run multiple passthrough queries across different Athena connectors by utilizing the full function resolution path, as in the following example.
 
-```
+```sql
 SELECT c_customer_sk
     FROM TABLE (postgresql.system.query('select * from customer limit 10'))
 UNION
@@ -106,7 +106,7 @@ SELECT c_customer_sk
 
 You can use passthrough queries as part of a federated view. The same limitations apply. For more information, see [Query federated views](https://docs.aws.amazon.com/athena/latest/ug/running-federated-queries.html#running-federated-queries-federated-views).
 
-```
+```sql
 CREATE VIEW catalog.database.ViewName AS
     SELECT * FROM TABLE (
         catalog.system.query('query')
@@ -120,13 +120,13 @@ For information about the exact syntax to use with a particular connector, see t
 
 Argument values, including the query string that you pass, must be enclosed in single quotes, as in the following example.
 
-```
+```sql
 SELECT * FROM TABLE(system.query(query => 'SELECT * FROM testdb.persons LIMIT 10'))
 ```
 
 When the query string is surrounded by double quotes, the query fails. The following query fails with the error message `COLUMN_NOT_FOUND: line 1:43: Column 'select * from testdb.persons limit 10' cannot be resolved`.
 
-```
+```sql
 SELECT * FROM TABLE(system.query(query => "SELECT * FROM testdb.persons LIMIT 10"))
 ```
 
@@ -137,7 +137,7 @@ To escape a single quote, add a single quote to the original (for example, `terr
 
 The following example query pushes down a query to a data source. The query selects all columns in the `customer` table, limiting the results to 10.
 
-```
+```sql
 SELECT * FROM TABLE(
         catalog.system.query(
             query => 'SELECT * FROM customer LIMIT 10;'
@@ -146,7 +146,7 @@ SELECT * FROM TABLE(
 
 The following statement runs the same query, but eliminates the optional named argument `query` and the arrow operator `=>`.
 
-```
+```sql
 SELECT * FROM TABLE(
         catalog.system.query(
             'SELECT * FROM customer LIMIT 10;'
@@ -155,7 +155,7 @@ SELECT * FROM TABLE(
 
 This can also be encapsulated within a federated view for ease of reuse. When used with a view, you must use the full function resolution path.
 
-```
+```sql
 CREATE VIEW AwsDataCatalog.default.example_view AS
     SELECT * FROM TABLE (
         catalog.system.query('SELECT * FROM customer LIMIT 10;')

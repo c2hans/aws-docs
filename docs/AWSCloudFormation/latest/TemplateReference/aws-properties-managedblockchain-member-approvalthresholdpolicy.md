@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-managedblockchain-member-approvalthresholdpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[ProposalDurationInHours](#cfn-managedblockchain-member-approvalthresholdpolicy-proposaldurationinhours)" : {{Integer}},
   "[ThresholdComparator](#cfn-managedblockchain-member-approvalthresholdpolicy-thresholdcomparator)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-managedblockchain-member-approvalthresholdpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [ProposalDurationInHours](#cfn-managedblockchain-member-approvalthresholdpolicy-proposaldurationinhours): {{Integer}}
   [ThresholdComparator](#cfn-managedblockchain-member-approvalthresholdpolicy-thresholdcomparator): {{String}}
   [ThresholdPercentage](#cfn-managedblockchain-member-approvalthresholdpolicy-thresholdpercentage): {{Integer}}

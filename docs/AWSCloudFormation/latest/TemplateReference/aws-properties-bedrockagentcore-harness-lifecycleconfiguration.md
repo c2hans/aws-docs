@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-harness-lifecycleconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[IdleRuntimeSessionTimeout](#cfn-bedrockagentcore-harness-lifecycleconfiguration-idleruntimesessiontimeout)" : {{Integer}},
   "[MaxLifetime](#cfn-bedrockagentcore-harness-lifecycleconfiguration-maxlifetime)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-harness-lifecycleconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [IdleRuntimeSessionTimeout](#cfn-bedrockagentcore-harness-lifecycleconfiguration-idleruntimesessiontimeout): {{Integer}}
   [MaxLifetime](#cfn-bedrockagentcore-harness-lifecycleconfiguration-maxlifetime): {{Integer}}
 ```

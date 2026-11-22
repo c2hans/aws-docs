@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-flowversion-lambdafunctionflownodeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[LambdaArn](#cfn-bedrock-flowversion-lambdafunctionflownodeconfiguration-lambdaarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-flowversion-lambdafunctionflownodeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [LambdaArn](#cfn-bedrock-flowversion-lambdafunctionflownodeconfiguration-lambdaarn): {{String}}
 ```
 

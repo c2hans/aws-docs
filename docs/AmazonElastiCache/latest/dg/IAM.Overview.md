@@ -81,7 +81,7 @@ The following is an example policy that allows a user to perform the `DescribeCa
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

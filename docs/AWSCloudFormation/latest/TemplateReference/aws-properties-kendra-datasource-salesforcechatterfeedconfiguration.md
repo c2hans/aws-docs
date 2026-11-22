@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-salesforcechatterfeedconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DocumentDataFieldName](#cfn-kendra-datasource-salesforcechatterfeedconfiguration-documentdatafieldname)" : {{String}},
   "[DocumentTitleFieldName](#cfn-kendra-datasource-salesforcechatterfeedconfiguration-documenttitlefieldname)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-salesforcechatterfeedconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DocumentDataFieldName](#cfn-kendra-datasource-salesforcechatterfeedconfiguration-documentdatafieldname): {{String}}
   [DocumentTitleFieldName](#cfn-kendra-datasource-salesforcechatterfeedconfiguration-documenttitlefieldname): {{String}}
   [FieldMappings](#cfn-kendra-datasource-salesforcechatterfeedconfiguration-fieldmappings): {{

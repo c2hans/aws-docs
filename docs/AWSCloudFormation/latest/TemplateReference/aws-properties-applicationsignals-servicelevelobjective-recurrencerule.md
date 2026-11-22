@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationsignals-servicelevelobjective-recurrencerule-syntax.json"></a>
 
-```
+```json
 {
   "[Expression](#cfn-applicationsignals-servicelevelobjective-recurrencerule-expression)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationsignals-servicelevelobjective-recurrencerule-syntax.yaml"></a>
 
-```
+```yaml
   [Expression](#cfn-applicationsignals-servicelevelobjective-recurrencerule-expression): {{String}}
 ```
 

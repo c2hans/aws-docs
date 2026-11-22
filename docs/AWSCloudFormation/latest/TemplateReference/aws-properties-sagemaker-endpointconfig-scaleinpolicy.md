@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-endpointconfig-scaleinpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[CooldownInMinutes](#cfn-sagemaker-endpointconfig-scaleinpolicy-cooldowninminutes)" : {{Integer}},
   "[MaximumStepSize](#cfn-sagemaker-endpointconfig-scaleinpolicy-maximumstepsize)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-endpointconfig-scaleinpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [CooldownInMinutes](#cfn-sagemaker-endpointconfig-scaleinpolicy-cooldowninminutes): {{Integer}}
   [MaximumStepSize](#cfn-sagemaker-endpointconfig-scaleinpolicy-maximumstepsize): {{Integer}}
   [Strategy](#cfn-sagemaker-endpointconfig-scaleinpolicy-strategy): {{String}}

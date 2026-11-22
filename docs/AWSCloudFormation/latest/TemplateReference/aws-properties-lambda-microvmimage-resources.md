@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-microvmimage-resources-syntax.json"></a>
 
-```
+```json
 {
   "[MinimumMemoryInMiB](#cfn-lambda-microvmimage-resources-minimummemoryinmib)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-microvmimage-resources-syntax.yaml"></a>
 
-```
+```yaml
   [MinimumMemoryInMiB](#cfn-lambda-microvmimage-resources-minimummemoryinmib): {{Integer}}
 ```
 

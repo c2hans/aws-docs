@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codebuild-project-source-syntax.json"></a>
 
-```
+```json
 {
   "[Auth](#cfn-codebuild-project-source-auth)" : {{SourceAuth}},
   "[BuildSpec](#cfn-codebuild-project-source-buildspec)" : {{String}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codebuild-project-source-syntax.yaml"></a>
 
-```
+```yaml
   [Auth](#cfn-codebuild-project-source-auth): {{
     SourceAuth}}
   [BuildSpec](#cfn-codebuild-project-source-buildspec): {{String}}

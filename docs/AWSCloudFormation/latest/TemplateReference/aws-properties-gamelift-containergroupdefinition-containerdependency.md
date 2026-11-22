@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-containergroupdefinition-containerdependency-syntax.json"></a>
 
-```
+```json
 {
   "[Condition](#cfn-gamelift-containergroupdefinition-containerdependency-condition)" : {{String}},
   "[ContainerName](#cfn-gamelift-containergroupdefinition-containerdependency-containername)" : {{String}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-containergroupdefinition-containerdependency-syntax.yaml"></a>
 
-```
+```yaml
   [Condition](#cfn-gamelift-containergroupdefinition-containerdependency-condition): {{String}}
   [ContainerName](#cfn-gamelift-containergroupdefinition-containerdependency-containername): {{String}}
 ```

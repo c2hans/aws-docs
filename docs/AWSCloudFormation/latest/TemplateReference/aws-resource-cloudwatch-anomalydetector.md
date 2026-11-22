@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudwatch-anomalydetector-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudWatch::AnomalyDetector",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudwatch-anomalydetector-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudWatch::AnomalyDetector
 Properties:
   [Configuration](#cfn-cloudwatch-anomalydetector-configuration): {{
@@ -127,7 +127,7 @@ This example creates an anomaly detector model for the metric named `JvmMetric` 
 #### JSON
 <a name="aws-resource-cloudwatch-anomalydetector--examples--Anomaly_Detector--json"></a>
 
-```
+```json
 {
     "Description": "AnomalyDetectorOnUsedMemory",
     "Resources": {
@@ -161,7 +161,7 @@ This example creates an anomaly detector model for the metric named `JvmMetric` 
 #### YAML
 <a name="aws-resource-cloudwatch-anomalydetector--examples--Anomaly_Detector--yaml"></a>
 
-```
+```yaml
 Description: AnomalyDetectorOnUsedMemory
 Resources:
   AnomalyDetectorOnUsedMemory:

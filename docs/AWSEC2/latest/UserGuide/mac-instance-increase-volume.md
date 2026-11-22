@@ -14,7 +14,7 @@ After you increase the size of the volume, you must increase the size of your AP
 
    View current status of disk sizes:
 
-   ```
+   ```bash
    [ec2-user ~]$  diskutil list external physical
    /dev/disk0 (external, physical):
       #:                       TYPE NAME                    SIZE       IDENTIFIER
@@ -25,7 +25,7 @@ After you increase the size of the volume, you must increase the size of your AP
 
 1. Copy and paste the following command.
 
-   ```
+   ```bash
    [ec2-user ~]$ PDISK=$(diskutil list physical external | head -n1 | cut -d" " -f1)
    APFSCONT=$(diskutil list physical external | grep "Apple_APFS" | tr -s " " | cut -d" " -f8)
    yes | sudo diskutil repairDisk $PDISK
@@ -33,6 +33,6 @@ After you increase the size of the volume, you must increase the size of your AP
 
 1. Copy and paste the following command.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo diskutil apfs resizeContainer $APFSCONT 0
    ```

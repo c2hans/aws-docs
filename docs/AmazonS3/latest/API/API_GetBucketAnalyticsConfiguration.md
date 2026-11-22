@@ -121,7 +121,7 @@ Type: [StorageClassAnalysis](API_StorageClassAnalysis.md) data type
 
 The following GET request for the bucket `amzn-s3-demo-bucket` returns the inventory configuration with the ID `list1`:
 
-```
+```HTTP
 GET /?analytics&id=list1 HTTP/1.1
 Host: amzn-s3-demo-bucket.s3.<Region>.amazonaws.com
 Date: Mon, 31 Oct 2016 12:00:00 GMT
@@ -133,7 +133,7 @@ Authorization: authorization string
 
 The following is a sample response to the preceding GET request.
 
-```
+```xml
 HTTP/1.1 200 OK
 x-amz-id-2: YgIPIfBiKa2bj0KMgUAdQkf3ShJTOOpXUueF6QKo
 x-amz-request-id: 236A8905248E5A02

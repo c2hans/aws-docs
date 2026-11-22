@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-environmentblueprintconfiguration-regionalparameter-syntax.json"></a>
 
-```
+```json
 {
   "[Parameters](#cfn-datazone-environmentblueprintconfiguration-regionalparameter-parameters)" : {{{{{Key}}: {{Value}}, ...}}},
   "[Region](#cfn-datazone-environmentblueprintconfiguration-regionalparameter-region)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-environmentblueprintconfiguration-regionalparameter-syntax.yaml"></a>
 
-```
+```yaml
   [Parameters](#cfn-datazone-environmentblueprintconfiguration-regionalparameter-parameters): {{
     {{Key}}: {{Value}}}}
   [Region](#cfn-datazone-environmentblueprintconfiguration-regionalparameter-region): {{String}}

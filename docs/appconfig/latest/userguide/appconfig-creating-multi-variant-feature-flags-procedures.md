@@ -228,7 +228,7 @@ Complete the following tasks before you create a multi-variant feature flag by u
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    New-APPCHostedConfigurationVersion `
      -ApplicationId {{APPLICATION_ID}} `
      -ConfigurationProfileId {{CONFIGURATION_PROFILE_ID}} `

@@ -8,7 +8,7 @@ Collects vulnerability management data, asset inventory, host detection findings
 
 The following example shows the complete pipeline configuration:
 
-```
+```yaml
 extension:
   aws:
     secrets:

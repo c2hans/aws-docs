@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-playbackconfiguration-liveprerollconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AdDecisionServerConfiguration](#cfn-mediatailor-playbackconfiguration-liveprerollconfiguration-addecisionserverconfiguration)" : {{PreRollAdDecisionServerConfiguration}},
   "[AdDecisionServerUrl](#cfn-mediatailor-playbackconfiguration-liveprerollconfiguration-addecisionserverurl)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-playbackconfiguration-liveprerollconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AdDecisionServerConfiguration](#cfn-mediatailor-playbackconfiguration-liveprerollconfiguration-addecisionserverconfiguration): {{
     PreRollAdDecisionServerConfiguration}}
   [AdDecisionServerUrl](#cfn-mediatailor-playbackconfiguration-liveprerollconfiguration-addecisionserverurl): {{String}}

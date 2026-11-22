@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-user-persistentconnectionconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Channel](#cfn-connect-user-persistentconnectionconfig-channel)" : {{String}},
   "[PersistentConnection](#cfn-connect-user-persistentconnectionconfig-persistentconnection)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-user-persistentconnectionconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Channel](#cfn-connect-user-persistentconnectionconfig-channel): {{String}}
   [PersistentConnection](#cfn-connect-user-persistentconnectionconfig-persistentconnection): {{Boolean}}
 ```

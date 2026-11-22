@@ -30,7 +30,7 @@ Setting up live replication when the source and destination buckets are owned by
 To use the following example, replace the `{{user input placeholders}}` with your own information. Replace `{{{{amzn-s3-demo-destination-bucket}}}}` with your destination bucket name. Replace `{{source-bucket-account-ID}}:role/{{source-account-IAM-role}}` in the IAM Amazon Resource Name (ARN) with the IAM role that you're using for this replication configuration.
 The role path in the IAM ARN depends on how you created the role. If you created the role with the AWS CLI (as shown in [Configuring replication for buckets in the same account](replication-walkthrough1.md)), the path is `role/{{role-name}}`. If you created the role with the IAM console as a service role, the path includes `service-role/` (that is, `role/service-role/{{role-name}}`). For more information, see [IAM ARNs](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns) in the *IAM User Guide*.
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Id": "",

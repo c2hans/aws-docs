@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-crawler-dynamodbtarget-syntax.json"></a>
 
-```
+```json
 {
   "[Path](#cfn-glue-crawler-dynamodbtarget-path)" : {{String}},
   "[ScanAll](#cfn-glue-crawler-dynamodbtarget-scanall)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-crawler-dynamodbtarget-syntax.yaml"></a>
 
-```
+```yaml
   [Path](#cfn-glue-crawler-dynamodbtarget-path): {{String}}
   [ScanAll](#cfn-glue-crawler-dynamodbtarget-scanall): {{Boolean}}
   [ScanRate](#cfn-glue-crawler-dynamodbtarget-scanrate): {{Number}}

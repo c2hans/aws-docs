@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-healthlake-datatransformationprofile-starterprofilesource-syntax.json"></a>
 
-```
+```json
 {
   "[StarterProfileName](#cfn-healthlake-datatransformationprofile-starterprofilesource-starterprofilename)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-healthlake-datatransformationprofile-starterprofilesource-syntax.yaml"></a>
 
-```
+```yaml
   [StarterProfileName](#cfn-healthlake-datatransformationprofile-starterprofilesource-starterprofilename): {{String}}
 ```
 

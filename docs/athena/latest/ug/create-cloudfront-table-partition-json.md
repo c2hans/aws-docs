@@ -8,7 +8,7 @@ You can reduce query runtime and automate partition management with Athena parti
 
 The following example CREATE TABLE statement automatically uses partition projection on CloudFront logs from a specified CloudFront distribution until present for a single AWS Region. After you run the query successfully, you can query the table.
 
-```
+```sql
 CREATE EXTERNAL TABLE `{{cloudfront_logs_pp}}`(
   `date` string,
   `time` string,

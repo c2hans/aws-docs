@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-table-schemareference-syntax.json"></a>
 
-```
+```json
 {
   "[SchemaId](#cfn-glue-table-schemareference-schemaid)" : {{SchemaId}},
   "[SchemaVersionId](#cfn-glue-table-schemareference-schemaversionid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-table-schemareference-syntax.yaml"></a>
 
-```
+```yaml
   [SchemaId](#cfn-glue-table-schemareference-schemaid): {{
     SchemaId}}
   [SchemaVersionId](#cfn-glue-table-schemareference-schemaversionid): {{String}}

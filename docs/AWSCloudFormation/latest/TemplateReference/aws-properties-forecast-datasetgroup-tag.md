@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-forecast-datasetgroup-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-forecast-datasetgroup-tag-key)" : {{String}},
   "[Value](#cfn-forecast-datasetgroup-tag-value)" : {{String}}
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-forecast-datasetgroup-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-forecast-datasetgroup-tag-key): {{String}}
   [Value](#cfn-forecast-datasetgroup-tag-value): {{String}}
 ```

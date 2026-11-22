@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-databasecolumns-syntax.json"></a>
 
-```
+```json
 {
   "[Exclude](#cfn-kinesisfirehose-deliverystream-databasecolumns-exclude)" : {{[ String, ... ]}},
   "[Include](#cfn-kinesisfirehose-deliverystream-databasecolumns-include)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-databasecolumns-syntax.yaml"></a>
 
-```
+```yaml
   [Exclude](#cfn-kinesisfirehose-deliverystream-databasecolumns-exclude): {{
     - String}}
   [Include](#cfn-kinesisfirehose-deliverystream-databasecolumns-include): {{

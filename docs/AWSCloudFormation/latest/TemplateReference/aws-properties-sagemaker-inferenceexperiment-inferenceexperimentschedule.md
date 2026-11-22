@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-inferenceexperiment-inferenceexperimentschedule-syntax.json"></a>
 
-```
+```json
 {
   "[EndTime](#cfn-sagemaker-inferenceexperiment-inferenceexperimentschedule-endtime)" : {{String}},
   "[StartTime](#cfn-sagemaker-inferenceexperiment-inferenceexperimentschedule-starttime)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-inferenceexperiment-inferenceexperimentschedule-syntax.yaml"></a>
 
-```
+```yaml
   [EndTime](#cfn-sagemaker-inferenceexperiment-inferenceexperimentschedule-endtime): {{String}}
   [StartTime](#cfn-sagemaker-inferenceexperiment-inferenceexperimentschedule-starttime): {{String}}
 ```

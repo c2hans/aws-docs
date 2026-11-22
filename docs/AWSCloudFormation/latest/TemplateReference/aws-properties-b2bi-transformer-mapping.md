@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-b2bi-transformer-mapping-syntax.json"></a>
 
-```
+```json
 {
   "[Template](#cfn-b2bi-transformer-mapping-template)" : {{String}},
   "[TemplateLanguage](#cfn-b2bi-transformer-mapping-templatelanguage)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-b2bi-transformer-mapping-syntax.yaml"></a>
 
-```
+```yaml
   [Template](#cfn-b2bi-transformer-mapping-template): {{String}}
   [TemplateLanguage](#cfn-b2bi-transformer-mapping-templatelanguage): {{String}}
 ```

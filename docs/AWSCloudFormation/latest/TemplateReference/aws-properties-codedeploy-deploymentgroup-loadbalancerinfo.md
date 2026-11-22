@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codedeploy-deploymentgroup-loadbalancerinfo-syntax.json"></a>
 
-```
+```json
 {
   "[ElbInfoList](#cfn-codedeploy-deploymentgroup-loadbalancerinfo-elbinfolist)" : {{[ ELBInfo, ... ]}},
   "[TargetGroupInfoList](#cfn-codedeploy-deploymentgroup-loadbalancerinfo-targetgroupinfolist)" : {{[ TargetGroupInfo, ... ]}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codedeploy-deploymentgroup-loadbalancerinfo-syntax.yaml"></a>
 
-```
+```yaml
   [ElbInfoList](#cfn-codedeploy-deploymentgroup-loadbalancerinfo-elbinfolist): {{
     - ELBInfo}}
   [TargetGroupInfoList](#cfn-codedeploy-deploymentgroup-loadbalancerinfo-targetgroupinfolist): {{

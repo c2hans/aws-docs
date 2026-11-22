@@ -40,7 +40,7 @@ Complete the following steps to enable IAM authentication for replication connec
 
    The following SQL commands grant the necessary roles to enable IAM authentication for replication connections:
 
-   ```
+   ```sql
    -- Grant IAM authentication role
    GRANT rds_iam TO replication_user_name;
    -- Grant replication privileges

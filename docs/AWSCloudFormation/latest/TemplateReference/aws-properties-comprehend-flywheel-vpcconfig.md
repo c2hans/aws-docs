@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-comprehend-flywheel-vpcconfig-syntax.json"></a>
 
-```
+```json
 {
   "[SecurityGroupIds](#cfn-comprehend-flywheel-vpcconfig-securitygroupids)" : {{[ String, ... ]}},
   "[Subnets](#cfn-comprehend-flywheel-vpcconfig-subnets)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-comprehend-flywheel-vpcconfig-syntax.yaml"></a>
 
-```
+```yaml
   [SecurityGroupIds](#cfn-comprehend-flywheel-vpcconfig-securitygroupids): {{
     - String}}
   [Subnets](#cfn-comprehend-flywheel-vpcconfig-subnets): {{

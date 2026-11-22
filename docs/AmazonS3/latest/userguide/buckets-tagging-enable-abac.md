@@ -34,7 +34,7 @@ You will need the following permissions to apply tags to and remove them from ge
 
 The following IAM policy grants the permission to enable ABAC and view its status for your bucket.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -86,7 +86,7 @@ To enable ABAC for a general purpose bucket using the Amazon S3 console:
 
 This example shows you how to add enable ABAC for a general purpose bucket by using the AWS SDK for Java 2.x. To use the command replace the {{user input placeholders}} with your own information.
 
-```
+```java
 import software.amazon.awssdk.services.s3.S3Client;
 import software.amazon.awssdk.services.s3.model.AbacStatus;
 import software.amazon.awssdk.services.s3.model.GetBucketAbacRequest;

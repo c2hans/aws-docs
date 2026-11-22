@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-pipes-pipe-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Pipes::Pipe",
   "Properties" : {
@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-pipes-pipe-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Pipes::Pipe
 Properties:
   [Description](#cfn-pipes-pipe-description): {{String}}
@@ -223,7 +223,7 @@ Create a Pipe with an Amazon SQS source, an API Gateway enrichment, and a Step F
 #### JSON
 <a name="aws-resource-pipes-pipe--examples--Create_a_Pipe_with_an_enrichment--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -244,7 +244,7 @@ Create a Pipe with an Amazon SQS source, an API Gateway enrichment, and a Step F
 #### YAML
 <a name="aws-resource-pipes-pipe--examples--Create_a_Pipe_with_an_enrichment--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   TestPipe:
@@ -272,7 +272,7 @@ Be aware that you will be billed for the AWS resources used if you create a stac
 #### JSON
 <a name="aws-resource-pipes-pipe--examples--Create_a_pipe_with_an_event_filter--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
 
@@ -433,7 +433,7 @@ Be aware that you will be billed for the AWS resources used if you create a stac
 #### YAML
 <a name="aws-resource-pipes-pipe--examples--Create_a_pipe_with_an_event_filter--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: >-
   EventBridge Pipe template example. Provisions a pipe, along with a DynamoDB

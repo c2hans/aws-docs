@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisanalyticsv2-application-applicationmaintenanceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ApplicationMaintenanceWindowStartTime](#cfn-kinesisanalyticsv2-application-applicationmaintenanceconfiguration-applicationmaintenancewindowstarttime)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisanalyticsv2-application-applicationmaintenanceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ApplicationMaintenanceWindowStartTime](#cfn-kinesisanalyticsv2-application-applicationmaintenanceconfiguration-applicationmaintenancewindowstarttime): {{String}}
 ```
 

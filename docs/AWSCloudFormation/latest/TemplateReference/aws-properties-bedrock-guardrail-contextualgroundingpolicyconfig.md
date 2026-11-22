@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-guardrail-contextualgroundingpolicyconfig-syntax.json"></a>
 
-```
+```json
 {
   "[FiltersConfig](#cfn-bedrock-guardrail-contextualgroundingpolicyconfig-filtersconfig)" : {{[ ContextualGroundingFilterConfig, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-guardrail-contextualgroundingpolicyconfig-syntax.yaml"></a>
 
-```
+```yaml
   [FiltersConfig](#cfn-bedrock-guardrail-contextualgroundingpolicyconfig-filtersconfig): {{
     - ContextualGroundingFilterConfig}}
 ```

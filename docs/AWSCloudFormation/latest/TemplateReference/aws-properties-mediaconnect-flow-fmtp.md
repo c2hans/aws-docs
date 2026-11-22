@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-flow-fmtp-syntax.json"></a>
 
-```
+```json
 {
   "[ChannelOrder](#cfn-mediaconnect-flow-fmtp-channelorder)" : {{String}},
   "[Colorimetry](#cfn-mediaconnect-flow-fmtp-colorimetry)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-flow-fmtp-syntax.yaml"></a>
 
-```
+```yaml
   [ChannelOrder](#cfn-mediaconnect-flow-fmtp-channelorder): {{String}}
   [Colorimetry](#cfn-mediaconnect-flow-fmtp-colorimetry): {{String}}
   [ExactFramerate](#cfn-mediaconnect-flow-fmtp-exactframerate): {{String}}

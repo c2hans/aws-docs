@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-responseheaderspolicy-contenttypeoptions-syntax.json"></a>
 
-```
+```json
 {
   "[Override](#cfn-cloudfront-responseheaderspolicy-contenttypeoptions-override)" : {{Boolean}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-responseheaderspolicy-contenttypeoptions-syntax.yaml"></a>
 
-```
+```yaml
   [Override](#cfn-cloudfront-responseheaderspolicy-contenttypeoptions-override): {{Boolean}}
 ```
 

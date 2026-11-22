@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchservice-domain-offpeakwindowoptions-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-opensearchservice-domain-offpeakwindowoptions-enabled)" : {{Boolean}},
   "[OffPeakWindow](#cfn-opensearchservice-domain-offpeakwindowoptions-offpeakwindow)" : {{OffPeakWindow}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchservice-domain-offpeakwindowoptions-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-opensearchservice-domain-offpeakwindowoptions-enabled): {{Boolean}}
   [OffPeakWindow](#cfn-opensearchservice-domain-offpeakwindowoptions-offpeakwindow): {{
     OffPeakWindow}}

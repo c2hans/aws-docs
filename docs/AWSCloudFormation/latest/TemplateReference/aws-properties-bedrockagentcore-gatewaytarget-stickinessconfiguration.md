@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewaytarget-stickinessconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Identifier](#cfn-bedrockagentcore-gatewaytarget-stickinessconfiguration-identifier)" : {{String}},
   "[Timeout](#cfn-bedrockagentcore-gatewaytarget-stickinessconfiguration-timeout)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewaytarget-stickinessconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Identifier](#cfn-bedrockagentcore-gatewaytarget-stickinessconfiguration-identifier): {{String}}
   [Timeout](#cfn-bedrockagentcore-gatewaytarget-stickinessconfiguration-timeout): {{Number}}
 ```

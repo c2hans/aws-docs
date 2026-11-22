@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-podidentityassociation-workloadidentityconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-eks-podidentityassociation-workloadidentityconfig-enabled)" : {{Boolean}},
   "[ProviderArn](#cfn-eks-podidentityassociation-workloadidentityconfig-providerarn)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-podidentityassociation-workloadidentityconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-eks-podidentityassociation-workloadidentityconfig-enabled): {{Boolean}}
   [ProviderArn](#cfn-eks-podidentityassociation-workloadidentityconfig-providerarn): {{String}}
   [TemplateArn](#cfn-eks-podidentityassociation-workloadidentityconfig-templatearn): {{String}}

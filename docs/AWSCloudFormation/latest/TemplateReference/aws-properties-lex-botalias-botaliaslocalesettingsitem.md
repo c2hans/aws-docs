@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-botalias-botaliaslocalesettingsitem-syntax.json"></a>
 
-```
+```json
 {
   "[BotAliasLocaleSetting](#cfn-lex-botalias-botaliaslocalesettingsitem-botaliaslocalesetting)" : {{BotAliasLocaleSettings}},
   "[LocaleId](#cfn-lex-botalias-botaliaslocalesettingsitem-localeid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-botalias-botaliaslocalesettingsitem-syntax.yaml"></a>
 
-```
+```yaml
   [BotAliasLocaleSetting](#cfn-lex-botalias-botaliaslocalesettingsitem-botaliaslocalesetting): {{
     BotAliasLocaleSettings}}
   [LocaleId](#cfn-lex-botalias-botaliaslocalesettingsitem-localeid): {{String}}

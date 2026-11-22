@@ -20,7 +20,7 @@ With HelloWorldWorkflowAsync, a single application serves as the workflow and ac
 
 HelloWorldWorkflowDistributed implements its activities host in GreeterActivitiesWorker, as follows:
 
-```
+```java
 import com.amazonaws.ClientConfiguration;
 import com.amazonaws.auth.AWSCredentials;
 import com.amazonaws.auth.BasicAWSCredentials;
@@ -51,7 +51,7 @@ public class GreeterActivitiesWorker {
 
 HelloWorldWorkflowDistributed implements its workflow host in `GreeterWorkflowWorker`, as follows:
 
-```
+```java
 import com.amazonaws.ClientConfiguration;
 import com.amazonaws.auth.AWSCredentials;
 import com.amazonaws.auth.BasicAWSCredentials;

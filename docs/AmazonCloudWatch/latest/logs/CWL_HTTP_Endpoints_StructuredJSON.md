@@ -69,7 +69,7 @@ The `"timestamp"` field is in epoch milliseconds, same as the NDJSON endpoint.
 ## Example request
 <a name="CWL_StructuredJSON_Example"></a>
 
-```
+```bash
 curl -X POST "https://logs.<region>.amazonaws.com/ingest/json?logGroup=MyLogGroup&logStream=MyStream" \
   -H "Authorization: Bearer ACWL<token>" \
   -H "Content-Type: application/json" \
@@ -88,7 +88,7 @@ HTTP 200 OK
 
 **Partial success (some events rejected):**
 
-```
+```JSON
 {
   "partialSuccess": {
     "rejectedLogRecords": 5,

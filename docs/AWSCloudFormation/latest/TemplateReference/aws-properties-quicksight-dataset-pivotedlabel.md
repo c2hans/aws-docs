@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-pivotedlabel-syntax.json"></a>
 
-```
+```json
 {
   "[LabelName](#cfn-quicksight-dataset-pivotedlabel-labelname)" : {{String}},
   "[NewColumnId](#cfn-quicksight-dataset-pivotedlabel-newcolumnid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-pivotedlabel-syntax.yaml"></a>
 
-```
+```yaml
   [LabelName](#cfn-quicksight-dataset-pivotedlabel-labelname): {{String}}
   [NewColumnId](#cfn-quicksight-dataset-pivotedlabel-newcolumnid): {{String}}
   [NewColumnName](#cfn-quicksight-dataset-pivotedlabel-newcolumnname): {{String}}

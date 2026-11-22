@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-supportauthz-supportpermit-actionset-syntax.json"></a>
 
-```
+```json
 {
   "[Actions](#cfn-supportauthz-supportpermit-actionset-actions)" : {{[ String, ... ]}},
   "[AllActions](#cfn-supportauthz-supportpermit-actionset-allactions)" : {{Json}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-supportauthz-supportpermit-actionset-syntax.yaml"></a>
 
-```
+```yaml
   [Actions](#cfn-supportauthz-supportpermit-actionset-actions): {{
     - String}}
   [AllActions](#cfn-supportauthz-supportpermit-actionset-allactions): {{Json}}

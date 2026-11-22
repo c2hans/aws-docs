@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-temporalfiltersettings-syntax.json"></a>
 
-```
+```json
 {
   "[PostFilterSharpening](#cfn-medialive-channel-temporalfiltersettings-postfiltersharpening)" : {{String}},
   "[Strength](#cfn-medialive-channel-temporalfiltersettings-strength)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-temporalfiltersettings-syntax.yaml"></a>
 
-```
+```yaml
   [PostFilterSharpening](#cfn-medialive-channel-temporalfiltersettings-postfiltersharpening): {{String}}
   [Strength](#cfn-medialive-channel-temporalfiltersettings-strength): {{String}}
 ```

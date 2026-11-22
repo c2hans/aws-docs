@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-flowoutput-encodingparameters-syntax.json"></a>
 
-```
+```json
 {
   "[CompressionFactor](#cfn-mediaconnect-flowoutput-encodingparameters-compressionfactor)" : {{Number}},
   "[EncoderProfile](#cfn-mediaconnect-flowoutput-encodingparameters-encoderprofile)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-flowoutput-encodingparameters-syntax.yaml"></a>
 
-```
+```yaml
   [CompressionFactor](#cfn-mediaconnect-flowoutput-encodingparameters-compressionfactor): {{Number}}
   [EncoderProfile](#cfn-mediaconnect-flowoutput-encodingparameters-encoderprofile): {{String}}
 ```

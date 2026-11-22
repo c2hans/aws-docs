@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelqualityjobdefinition-stoppingcondition-syntax.json"></a>
 
-```
+```json
 {
   "[MaxRuntimeInSeconds](#cfn-sagemaker-modelqualityjobdefinition-stoppingcondition-maxruntimeinseconds)" : {{Integer}}
 }
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelqualityjobdefinition-stoppingcondition-syntax.yaml"></a>
 
-```
+```yaml
   [MaxRuntimeInSeconds](#cfn-sagemaker-modelqualityjobdefinition-stoppingcondition-maxruntimeinseconds): {{Integer}}
 ```
 

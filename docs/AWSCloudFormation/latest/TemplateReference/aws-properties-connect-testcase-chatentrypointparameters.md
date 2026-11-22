@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-testcase-chatentrypointparameters-syntax.json"></a>
 
-```
+```json
 {
   "[FlowId](#cfn-connect-testcase-chatentrypointparameters-flowid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-testcase-chatentrypointparameters-syntax.yaml"></a>
 
-```
+```yaml
   [FlowId](#cfn-connect-testcase-chatentrypointparameters-flowid): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-pcs-queue-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::PCS::Queue",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-pcs-queue-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::PCS::Queue
 Properties:
   [ClusterId](#cfn-pcs-queue-clusterid): {{String}}

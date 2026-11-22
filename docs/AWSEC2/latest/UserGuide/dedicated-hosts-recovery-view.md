@@ -23,7 +23,7 @@ You can view the host recovery configuration for a Dedicated Host at any time.
 **To view the host recovery configuration for a Dedicated Host**
 Use the [describe-hosts](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-hosts.html) command.
 
-```
+```bash
 aws ec2 describe-hosts \
     --host-ids {{h-012a3456b7890cdef}} \
     --query Hosts[].HostRecovery
@@ -31,7 +31,7 @@ aws ec2 describe-hosts \
 
 The following is example output.
 
-```
+```bash
 on
 ```
 
@@ -41,13 +41,13 @@ on
 **To view the host recovery configuration for a Dedicated Host**
 Use the [Get-EC2Host](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Host.html) cmdlet.
 
-```
+```powershell
 (Get-EC2Host -HostId {{h-012a3456b7890cdef}}).Hosts | Select HostRecovery
 ```
 
 The following is example output.
 
-```
+```bash
 HostRecovery
 ------------
 on

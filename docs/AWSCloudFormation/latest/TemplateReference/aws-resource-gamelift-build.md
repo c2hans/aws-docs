@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-gamelift-build-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::GameLift::Build",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-gamelift-build-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::GameLift::Build
 Properties:
   [Name](#cfn-gamelift-build-name): {{String}}
@@ -132,7 +132,7 @@ The following example creates a GameLift build named `MyGameServerBuild`. The bu
 #### JSON
 <a name="aws-resource-gamelift-build--examples--Create_a_Custom_Game_Server_Build--json"></a>
 
-```
+```json
 {
     "Resources": {
         "IAMRole": {
@@ -203,7 +203,7 @@ The following example creates a GameLift build named `MyGameServerBuild`. The bu
 #### YAML
 <a name="aws-resource-gamelift-build--examples--Create_a_Custom_Game_Server_Build--yaml"></a>
 
-```
+```yaml
 Resources:
   IAMRole:
     Type: "AWS::IAM::Role"

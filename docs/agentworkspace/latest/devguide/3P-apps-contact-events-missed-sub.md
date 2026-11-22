@@ -8,13 +8,13 @@ Subscribes a callback function to-be-invoked whenever a contact missed event occ
 
  **Signature**
 
-```
+```typescript
 onMissed(handler: ContactMissedHandler, contactId?: string)
 ```
 
  **Usage**
 
-```
+```typescript
 const handler: ContactMissedHandler = async (data: ContactMissed) => {
     console.log("Contact missed occurred! " + data);
 };
@@ -32,6 +32,6 @@ contactClient.onMissed(handler);
 
  **Permissions required:**
 
-```
+```typescript
 Contact.Details.View
 ```

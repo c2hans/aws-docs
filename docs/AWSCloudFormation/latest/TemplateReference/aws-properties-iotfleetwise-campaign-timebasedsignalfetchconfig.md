@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotfleetwise-campaign-timebasedsignalfetchconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ExecutionFrequencyMs](#cfn-iotfleetwise-campaign-timebasedsignalfetchconfig-executionfrequencyms)" : {{Number}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotfleetwise-campaign-timebasedsignalfetchconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ExecutionFrequencyMs](#cfn-iotfleetwise-campaign-timebasedsignalfetchconfig-executionfrequencyms): {{Number}}
 ```
 

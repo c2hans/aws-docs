@@ -17,7 +17,7 @@ The lookup table configuration includes the following settings:
 
 The destination delivery IAM role requires the following permissions, and must include a trust policy that allows the CloudWatch Logs service (`logs.amazonaws.com`) to assume the role:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

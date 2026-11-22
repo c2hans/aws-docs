@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-classifier-csvclassifier-syntax.json"></a>
 
-```
+```json
 {
   "[AllowSingleColumn](#cfn-glue-classifier-csvclassifier-allowsinglecolumn)" : {{Boolean}},
   "[ContainsCustomDatatype](#cfn-glue-classifier-csvclassifier-containscustomdatatype)" : {{[ String, ... ]}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-classifier-csvclassifier-syntax.yaml"></a>
 
-```
+```yaml
   [AllowSingleColumn](#cfn-glue-classifier-csvclassifier-allowsinglecolumn): {{Boolean}}
   [ContainsCustomDatatype](#cfn-glue-classifier-csvclassifier-containscustomdatatype): {{
     - String}}
@@ -128,7 +128,7 @@ With `AWS::Glue::Classifier` you can create a custom classifier test.
 #### JSON
 <a name="aws-properties-glue-classifier-csvclassifier--examples--Create_a_custom_classifier_test--json"></a>
 
-```
+```json
 {
     "Description": "AWS Glue custom classifier test",
     "Resources": {
@@ -155,7 +155,7 @@ With `AWS::Glue::Classifier` you can create a custom classifier test.
 #### YAML
 <a name="aws-properties-glue-classifier-csvclassifier--examples--Create_a_custom_classifier_test--yaml"></a>
 
-```
+```yaml
 Description: AWS Glue custom classifier test
 Resources:
   MyCSVclassifier:

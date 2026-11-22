@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-resourceexplorer2-index-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ResourceExplorer2::Index",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-resourceexplorer2-index-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ResourceExplorer2::Index
 Properties:
   [Tags](#cfn-resourceexplorer2-index-tags): {{
@@ -99,7 +99,7 @@ Indicates the current state of the index. For example:
 #### JSON
 <a name="aws-resource-resourceexplorer2-index--examples--Turning_on_Resource_Explorer_in_a_Region_by_creating_an_index--json"></a>
 
-```
+```json
 {
     "Description": "Sample stack template that creates a Resource Explorer aggregator index",
     "Resources": {
@@ -119,7 +119,7 @@ Indicates the current state of the index. For example:
 #### YAML
 <a name="aws-resource-resourceexplorer2-index--examples--Turning_on_Resource_Explorer_in_a_Region_by_creating_an_index--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Description: A sample template that creates a Resource Explorer aggregator index
 Resources:

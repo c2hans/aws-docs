@@ -18,7 +18,7 @@ This section will first cover the required definitions for the OpenAPI schema. T
 
 The following is the general format of an OpenAPI schema for a custom plugin.
 
-```
+```json
 {
     "openapi": "3.0.0",
     "servers": [
@@ -78,7 +78,7 @@ For details on configuring the fields review the following sections:
 
 The following is a sample response.
 
-```
+```json
 "responses": {
     "200": {
         "content": {
@@ -112,7 +112,7 @@ Each key in the `responses` object is a response code, which describes the statu
 
 The following are examples of parameters.
 
-```
+```json
 "parameters": [
     {
         "name": "string", // e.g. "userName"
@@ -152,7 +152,7 @@ Your custom plugin uses the following fields to determine the information it mus
 
 The following is the general structure of a `requestBody` field:
 
-```
+```json
 "requestBody": {
     "required": boolean,
     "content": {
@@ -187,7 +187,7 @@ The following list describes each field:
 
 Following is the general structure of a `securityScheme` field:
 
-```
+```json
 "securitySchemes": {
       "OAuth2": {
         "type": "oauth2",

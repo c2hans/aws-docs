@@ -47,7 +47,7 @@ aws autoscaling describe-warm-pool --auto-scaling-group-name {{my-asg}}
 
 Example output.
 
-```
+```json
 {
     "WarmPoolConfiguration": {
         "MinSize": 0,
@@ -93,7 +93,7 @@ The following is an example response, where `Description` indicates that your Au
 
 Scaling activities are ordered by start time. Activities still in progress are described first.
 
-```
+```json
 {
   "Activities": [
     {

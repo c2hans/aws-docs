@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-tablepathelement-syntax.json"></a>
 
-```
+```json
 {
   "[Id](#cfn-quicksight-dataset-tablepathelement-id)" : {{String}},
   "[Name](#cfn-quicksight-dataset-tablepathelement-name)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-tablepathelement-syntax.yaml"></a>
 
-```
+```yaml
   [Id](#cfn-quicksight-dataset-tablepathelement-id): {{String}}
   [Name](#cfn-quicksight-dataset-tablepathelement-name): {{String}}
 ```

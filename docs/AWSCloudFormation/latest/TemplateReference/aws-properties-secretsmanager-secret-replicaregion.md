@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-secretsmanager-secret-replicaregion-syntax.json"></a>
 
-```
+```json
 {
   "[KmsKeyId](#cfn-secretsmanager-secret-replicaregion-kmskeyid)" : {{String}},
   "[Region](#cfn-secretsmanager-secret-replicaregion-region)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-secretsmanager-secret-replicaregion-syntax.yaml"></a>
 
-```
+```yaml
   [KmsKeyId](#cfn-secretsmanager-secret-replicaregion-kmskeyid): {{String}}
   [Region](#cfn-secretsmanager-secret-replicaregion-region): {{String}}
 ```

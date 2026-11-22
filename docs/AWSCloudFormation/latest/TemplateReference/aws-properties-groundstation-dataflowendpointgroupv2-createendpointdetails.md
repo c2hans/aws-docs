@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-groundstation-dataflowendpointgroupv2-createendpointdetails-syntax.json"></a>
 
-```
+```json
 {
   "[DownlinkAwsGroundStationAgentEndpoint](#cfn-groundstation-dataflowendpointgroupv2-createendpointdetails-downlinkawsgroundstationagentendpoint)" : {{DownlinkAwsGroundStationAgentEndpoint}},
   "[UplinkAwsGroundStationAgentEndpoint](#cfn-groundstation-dataflowendpointgroupv2-createendpointdetails-uplinkawsgroundstationagentendpoint)" : {{UplinkAwsGroundStationAgentEndpoint}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-groundstation-dataflowendpointgroupv2-createendpointdetails-syntax.yaml"></a>
 
-```
+```yaml
   [DownlinkAwsGroundStationAgentEndpoint](#cfn-groundstation-dataflowendpointgroupv2-createendpointdetails-downlinkawsgroundstationagentendpoint): {{
     DownlinkAwsGroundStationAgentEndpoint}}
   [UplinkAwsGroundStationAgentEndpoint](#cfn-groundstation-dataflowendpointgroupv2-createendpointdetails-uplinkawsgroundstationagentendpoint): {{

@@ -24,7 +24,7 @@ IAM roles and trust policy are not required for using browser extensions.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -89,7 +89,7 @@ IAM roles and trust policy are not required for using browser extensions.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -126,7 +126,7 @@ IAM roles and trust policy are not required for using browser extensions.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

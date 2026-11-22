@@ -13,7 +13,7 @@ To analyze these log events, you can use the following methods:
 
 The following is an example of a Lambda Insights log event with embedded metric format.
 
-```
+```json
 {
     "_aws": {
         "Timestamp": 1605034324256,
@@ -74,7 +74,7 @@ The following is an example of a Lambda Insights log event with embedded metric 
 
 The following is an example of a Lambda Insights log event for a Lambda function running on Lambda Managed Instances.
 
-```
+```json
 {
     "total_network": 16443,
     "tmp_free": 531492864,

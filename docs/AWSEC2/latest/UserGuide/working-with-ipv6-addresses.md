@@ -43,20 +43,20 @@ Follow the procedure to [launch an instance](ec2-launch-instance-wizard.md). Whe
 **To assign an IPv6 address at launch**
 Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command with the `--ipv6-addresses` option. The following example assigns two IPv6 addresses.
 
-```
+```bash
 --ipv6-addresses Ipv6Address={{2001:db8::1234:5678:1.2.3.4}} Ipv6Address={{2001:db8::1234:5678:5.6.7.8}}
 ```
 
 To let Amazon EC2 choose the IPv6 addresses, use the `--ipv6-address-count` option instead. The following example assigns two IPv6 addresses.
 
-```
+```bash
 --ipv6-address-count 2
 ```
 
 **To assign an IPv6 address after launch**
 Use the [assign-ipv6-addresses](https://docs.aws.amazon.com/cli/latest/reference/ec2/assign-ipv6-addresses.html) command. The following example assigns two IPv6 addresses.
 
-```
+```bash
 aws ec2 assign-ipv6-addresses \
     --network-interface-id {{eni-1234567890abcdef0}} \
     --ipv6-addresses {{2001:db8::1234:5678:1.2.3.4}} {{2001:db8::1234:5678:5.6.7.8}}
@@ -64,7 +64,7 @@ aws ec2 assign-ipv6-addresses \
 
 To let Amazon EC2 choose the IPv6 addresses, use the `--ipv6-address-count` option instead. The following example assigns two IPv6 addresses.
 
-```
+```bash
 aws ec2 assign-ipv6-addresses \
     --network-interface-id {{eni-1234567890abcdef0}} \
     --ipv6-address-count 2
@@ -76,13 +76,13 @@ aws ec2 assign-ipv6-addresses \
 **To assign an IPv6 address at launch**
 Use the [New-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Instance.html) cmdlet with the `-Ipv6Address` parameter. The following example assigns two IPv6 addresses.
 
-```
+```powershell
 -Ipv6Address $ipv6addr1,$ipv6addr2
 ```
 
 Define the IPv6 addresses as follows.
 
-```
+```powershell
 $ipv6addr1 = New-Object Amazon.EC2.Model.InstanceIpv6Address
 $ipv6addr1.Ipv6Address = "{{2001:db8::1234:5678:1.2.3.4}}"
 $ipv6addr2 = New-Object Amazon.EC2.Model.InstanceIpv6Address
@@ -91,14 +91,14 @@ $ipv6addr2.Ipv6Address = "{{2001:db8::1234:5678:5.6.7.8}}"
 
 To let Amazon EC2 choose the IPv6 addresses, use the `-Ipv6AddressCount` parameter instead. The following example assigns two IPv6 addresses.
 
-```
+```powershell
 -Ipv6AddressCount 2
 ```
 
 **To assign an IPv6 address after launch**
 Use the [Register-EC2Ipv6AddressList](https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2Ipv6AddressList.html) cmdlet. The following example assigns two IPv6 addresses.
 
-```
+```powershell
 Register-EC2Ipv6AddressList `
     -NetworkInterfaceId {{eni-1234567890abcdef0}} `
     -Ipv6Address "{{2001:db8::1234:5678:1.2.3.4}}","{{2001:db8::1234:5678:5.6.7.8}}"
@@ -106,7 +106,7 @@ Register-EC2Ipv6AddressList `
 
 To let Amazon EC2 choose the IPv6 addresses, use the `-Ipv6AddressCount` parameter instead. The following example assigns two IPv6 addresses.
 
-```
+```powershell
 Register-EC2Ipv6AddressList `
     -NetworkInterfaceId {{eni-1234567890abcdef0}} `
     -Ipv6AddressCount 2
@@ -138,7 +138,7 @@ You can view the IPv6 addresses for your instances.
 **To view the IPv6 address for an instance**
 Use the [describe-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html) command.
 
-```
+```bash
 aws ec2 describe-instances \
     --instance-ids {{i-1234567890abcdef0}} \
     --query "Reservations[*].Instances[].Ipv6Address" \
@@ -147,7 +147,7 @@ aws ec2 describe-instances \
 
 The following is example output.
 
-```
+```bash
 2001:db8::1234:5678:1.2.3.4
 ```
 
@@ -157,14 +157,14 @@ The following is example output.
 **To view the IPv6 address for an instance**
 Use the [Get-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html) cmdlet.
 
-```
+```powershell
 (Get-EC2Instance `
     -InstanceId {{i-1234567890abcdef0}}).Instances.Ipv6Address
 ```
 
 The following is example output.
 
-```
+```bash
 2001:db8::1234:5678:1.2.3.4
 ```
 
@@ -181,7 +181,7 @@ After you connect to your instance, you can retrieve the IPv6 addresses using in
 **Linux**
 Run the following command from your Linux instance.
 
-```
+```bash
 TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` \
 && curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/network/interfaces/macs/{{mac-address}}/ipv6s
 ```
@@ -189,12 +189,12 @@ TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metad
 **Windows**
 Run the following cmdlets from your Windows instance.
 
-```
+```powershell
 [string]$token = Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token-ttl-seconds" = "21600"} `
     -Method PUT -Uri http://169.254.169.254/latest/api/token
 ```
 
-```
+```powershell
 Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token" = $token} `
     -Method GET -Uri http://169.254.169.254/latest/meta-data/network/interfaces/macs/{{mac-address}}/ipv6s
 ```
@@ -205,14 +205,14 @@ Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token" = $token} `
 **Linux**
 Run the following command from your Linux instance.
 
-```
+```bash
 curl http://169.254.169.254/latest/meta-data/network/interfaces/macs/{{mac-address}}/ipv6s
 ```
 
 **Windows**
 Run the following cmdlet from your Windows instance.
 
-```
+```PowerShell
 Invoke-RestMethod -Uri http://169.254.169.254/latest/meta-data/network/interfaces/macs/{{mac-address}}/ipv6s
 ```
 
@@ -244,7 +244,7 @@ You can unassign an IPv6 address from an instance at any time.
 **To unassign an IPv6 address from an instance**
 Use the [unassign-ipv6-addresses](https://docs.aws.amazon.com/cli/latest/reference/ec2/unassign-ipv6-addresses.html) command.
 
-```
+```bash
 aws ec2 unassign-ipv6-addresses \
     --network-interface-id {{eni-1234567890abcdef0}} \
     --ipv6-addresses {{2001:db8::1234:5678:1.2.3.4}}
@@ -256,7 +256,7 @@ aws ec2 unassign-ipv6-addresses \
 **To unassign an IPv6 address from an instance**
 Use the [Unregister-EC2Ipv6AddressList](https://docs.aws.amazon.com/powershell/latest/reference/items/Unregister-EC2Ipv6AddressList.html) cmdlet.
 
-```
+```powershell
 Unregister-EC2Ipv6AddressList `
     -NetworkInterfaceId {{eni-1234567890abcdef0}} `
     -Ipv6Address {{2001:db8::1234:5678:1.2.3.4}}

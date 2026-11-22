@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-oam-link-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Oam::Link",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-oam-link-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Oam::Link
 Properties:
   [LabelTemplate](#cfn-oam-link-labeltemplate): {{String}}
@@ -143,7 +143,7 @@ This example creates a link from the current source account to the sink created 
 #### JSON
 <a name="aws-resource-oam-link--examples--Sample_CloudWatch_cross-account_observability_link--json"></a>
 
-```
+```json
 {
     "LabelTemplate": "$AccountEmail",
     "ResourceTypes": [
@@ -157,7 +157,7 @@ This example creates a link from the current source account to the sink created 
 #### YAML
 <a name="aws-resource-oam-link--examples--Sample_CloudWatch_cross-account_observability_link--yaml"></a>
 
-```
+```yaml
 LabelTemplate: "$AccountEmail"
 ResourceTypes:
    - "AWS::Logs::LogGroup"
@@ -173,7 +173,7 @@ This example creates a link from the current source account to the sink created 
 #### JSON
 <a name="aws-resource-oam-link--examples--Sample_link_for_applications_support--json"></a>
 
-```
+```json
 {
      "LabelTemplate": "$AccountEmail",
      "ResourceTypes": [
@@ -189,7 +189,7 @@ This example creates a link from the current source account to the sink created 
 #### YAML
 <a name="aws-resource-oam-link--examples--Sample_link_for_applications_support--yaml"></a>
 
-```
+```yaml
 LabelTemplate: "$AccountEmail"
  ResourceTypes:
     - "AWS::Logs::LogGroup"
@@ -208,7 +208,7 @@ This example creates a link that shares only one metric namespace and one log gr
 #### JSON
 <a name="aws-resource-oam-link--examples--Cross-account_observability_link_with_resource_filtering.--json"></a>
 
-```
+```json
 {
     "TestLink": {
 
@@ -238,7 +238,7 @@ This example creates a link that shares only one metric namespace and one log gr
 #### YAML
 <a name="aws-resource-oam-link--examples--Cross-account_observability_link_with_resource_filtering.--yaml"></a>
 
-```
+```yaml
 TestLink:
   DependsOn: WaiterCustomResource
   Type: AWS::Oam::Link

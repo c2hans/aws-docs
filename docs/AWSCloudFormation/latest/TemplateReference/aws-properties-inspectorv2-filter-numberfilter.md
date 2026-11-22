@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-inspectorv2-filter-numberfilter-syntax.json"></a>
 
-```
+```json
 {
   "[LowerInclusive](#cfn-inspectorv2-filter-numberfilter-lowerinclusive)" : {{Number}},
   "[UpperInclusive](#cfn-inspectorv2-filter-numberfilter-upperinclusive)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-inspectorv2-filter-numberfilter-syntax.yaml"></a>
 
-```
+```yaml
   [LowerInclusive](#cfn-inspectorv2-filter-numberfilter-lowerinclusive): {{Number}}
   [UpperInclusive](#cfn-inspectorv2-filter-numberfilter-upperinclusive): {{Number}}
 ```

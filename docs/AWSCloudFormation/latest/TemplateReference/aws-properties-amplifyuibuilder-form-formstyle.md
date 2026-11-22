@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amplifyuibuilder-form-formstyle-syntax.json"></a>
 
-```
+```json
 {
   "[HorizontalGap](#cfn-amplifyuibuilder-form-formstyle-horizontalgap)" : {{FormStyleConfig}},
   "[OuterPadding](#cfn-amplifyuibuilder-form-formstyle-outerpadding)" : {{FormStyleConfig}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amplifyuibuilder-form-formstyle-syntax.yaml"></a>
 
-```
+```yaml
   [HorizontalGap](#cfn-amplifyuibuilder-form-formstyle-horizontalgap): {{
     FormStyleConfig}}
   [OuterPadding](#cfn-amplifyuibuilder-form-formstyle-outerpadding): {{

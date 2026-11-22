@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrass-functiondefinition-execution-syntax.json"></a>
 
-```
+```json
 {
   "[IsolationMode](#cfn-greengrass-functiondefinition-execution-isolationmode)" : {{String}},
   "[RunAs](#cfn-greengrass-functiondefinition-execution-runas)" : {{RunAs}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrass-functiondefinition-execution-syntax.yaml"></a>
 
-```
+```yaml
   [IsolationMode](#cfn-greengrass-functiondefinition-execution-isolationmode): {{String}}
   [RunAs](#cfn-greengrass-functiondefinition-execution-runas): {{
     RunAs}}

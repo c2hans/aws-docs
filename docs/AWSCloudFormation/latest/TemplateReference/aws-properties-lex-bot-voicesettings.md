@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-voicesettings-syntax.json"></a>
 
-```
+```json
 {
   "[Engine](#cfn-lex-bot-voicesettings-engine)" : {{String}},
   "[VoiceId](#cfn-lex-bot-voicesettings-voiceid)" : {{String}}
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-voicesettings-syntax.yaml"></a>
 
-```
+```yaml
   [Engine](#cfn-lex-bot-voicesettings-engine): {{String}}
   [VoiceId](#cfn-lex-bot-voicesettings-voiceid): {{String}}
 ```

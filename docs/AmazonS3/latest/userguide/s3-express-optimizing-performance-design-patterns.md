@@ -144,13 +144,13 @@ s3://my-bucket/2024/07/12-01-file2
 
 For better `ListObjectsV2` performance, use a delimited list to list your subdirectories and objects, if your application's logic allows for it. For example, you can run the following command for the delimited list operation,
 
-```
+```bash
 aws s3api list-objects-v2 --bucket my-bucket --prefix '2024/' --delimiter '/'
 ```
 
 The output is the list of subdirectories.
 
-```
+```json
 {
     "CommonPrefixes": [
         {
@@ -173,13 +173,13 @@ To list each subdirectory with better performance, you can run a command like th
 
 Command:
 
-```
+```bash
 aws s3api list-objects-v2 --bucket my-bucket --prefix '2024/04' --delimiter '/'
 ```
 
 Output:
 
-```
+```json
 {
     "Contents": [
         {

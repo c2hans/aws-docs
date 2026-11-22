@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codestarnotifications-notificationrule-target-syntax.json"></a>
 
-```
+```json
 {
   "[TargetAddress](#cfn-codestarnotifications-notificationrule-target-targetaddress)" : {{String}},
   "[TargetType](#cfn-codestarnotifications-notificationrule-target-targettype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codestarnotifications-notificationrule-target-syntax.yaml"></a>
 
-```
+```yaml
   [TargetAddress](#cfn-codestarnotifications-notificationrule-target-targetaddress): {{String}}
   [TargetType](#cfn-codestarnotifications-notificationrule-target-targettype): {{String}}
 ```

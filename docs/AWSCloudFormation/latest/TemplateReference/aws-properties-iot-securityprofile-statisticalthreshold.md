@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-securityprofile-statisticalthreshold-syntax.json"></a>
 
-```
+```json
 {
   "[Statistic](#cfn-iot-securityprofile-statisticalthreshold-statistic)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-securityprofile-statisticalthreshold-syntax.yaml"></a>
 
-```
+```yaml
   [Statistic](#cfn-iot-securityprofile-statisticalthreshold-statistic): {{String}}
 ```
 

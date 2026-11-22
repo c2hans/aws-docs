@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-accessanalyzer-analyzer-filter-syntax.json"></a>
 
-```
+```json
 {
   "[Contains](#cfn-accessanalyzer-analyzer-filter-contains)" : {{[ String, ... ]}},
   "[Eq](#cfn-accessanalyzer-analyzer-filter-eq)" : {{[ String, ... ]}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-accessanalyzer-analyzer-filter-syntax.yaml"></a>
 
-```
+```yaml
   [Contains](#cfn-accessanalyzer-analyzer-filter-contains): {{
     - String}}
   [Eq](#cfn-accessanalyzer-analyzer-filter-eq): {{

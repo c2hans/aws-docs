@@ -36,7 +36,7 @@ Serverless – `arn:aws:redshift-serverless:{region}:{account-id}:namespace/{{na
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -103,7 +103,7 @@ The role must have the following permissions, which allow the user to view avail
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -130,7 +130,7 @@ The role must have the following trust policy, which specifies the target accoun
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -271,7 +271,7 @@ The following sample policy demonstrates how to provide the required permissions
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "Key policy",

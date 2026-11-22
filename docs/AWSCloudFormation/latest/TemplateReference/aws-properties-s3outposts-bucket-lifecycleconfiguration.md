@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3outposts-bucket-lifecycleconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Rules](#cfn-s3outposts-bucket-lifecycleconfiguration-rules)" : {{[ Rule, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3outposts-bucket-lifecycleconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Rules](#cfn-s3outposts-bucket-lifecycleconfiguration-rules): {{
     - Rule}}
 ```

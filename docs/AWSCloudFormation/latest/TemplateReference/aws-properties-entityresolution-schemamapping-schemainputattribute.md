@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-entityresolution-schemamapping-schemainputattribute-syntax.json"></a>
 
-```
+```json
 {
   "[FieldName](#cfn-entityresolution-schemamapping-schemainputattribute-fieldname)" : {{String}},
   "[GroupName](#cfn-entityresolution-schemamapping-schemainputattribute-groupname)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-entityresolution-schemamapping-schemainputattribute-syntax.yaml"></a>
 
-```
+```yaml
   [FieldName](#cfn-entityresolution-schemamapping-schemainputattribute-fieldname): {{String}}
   [GroupName](#cfn-entityresolution-schemamapping-schemainputattribute-groupname): {{String}}
   [Hashed](#cfn-entityresolution-schemamapping-schemainputattribute-hashed): {{Boolean}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-arcregionswitch-plan-customactionlambdaconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Lambdas](#cfn-arcregionswitch-plan-customactionlambdaconfiguration-lambdas)" : {{[ Lambdas, ... ]}},
   "[RegionToRun](#cfn-arcregionswitch-plan-customactionlambdaconfiguration-regiontorun)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-arcregionswitch-plan-customactionlambdaconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Lambdas](#cfn-arcregionswitch-plan-customactionlambdaconfiguration-lambdas): {{
     - Lambdas}}
   [RegionToRun](#cfn-arcregionswitch-plan-customactionlambdaconfiguration-regiontorun): {{String}}

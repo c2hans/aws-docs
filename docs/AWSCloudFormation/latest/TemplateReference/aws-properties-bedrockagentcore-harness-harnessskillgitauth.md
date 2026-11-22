@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-harness-harnessskillgitauth-syntax.json"></a>
 
-```
+```json
 {
   "[CredentialArn](#cfn-bedrockagentcore-harness-harnessskillgitauth-credentialarn)" : {{String}},
   "[Username](#cfn-bedrockagentcore-harness-harnessskillgitauth-username)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-harness-harnessskillgitauth-syntax.yaml"></a>
 
-```
+```yaml
   [CredentialArn](#cfn-bedrockagentcore-harness-harnessskillgitauth-credentialarn): {{String}}
   [Username](#cfn-bedrockagentcore-harness-harnessskillgitauth-username): {{String}}
 ```

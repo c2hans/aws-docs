@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisanalytics-application-kinesisstreamsinput-syntax.json"></a>
 
-```
+```json
 {
   "[ResourceARN](#cfn-kinesisanalytics-application-kinesisstreamsinput-resourcearn)" : {{String}},
   "[RoleARN](#cfn-kinesisanalytics-application-kinesisstreamsinput-rolearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisanalytics-application-kinesisstreamsinput-syntax.yaml"></a>
 
-```
+```yaml
   [ResourceARN](#cfn-kinesisanalytics-application-kinesisstreamsinput-resourcearn): {{String}}
   [RoleARN](#cfn-kinesisanalytics-application-kinesisstreamsinput-rolearn): {{String}}
 ```

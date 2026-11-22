@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-endpointconfig-productionvariant-syntax.json"></a>
 
-```
+```json
 {
   "[CapacityReservationConfig](#cfn-sagemaker-endpointconfig-productionvariant-capacityreservationconfig)" : {{CapacityReservationConfig}},
   "[ContainerStartupHealthCheckTimeoutInSeconds](#cfn-sagemaker-endpointconfig-productionvariant-containerstartuphealthchecktimeoutinseconds)" : {{Integer}},
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-endpointconfig-productionvariant-syntax.yaml"></a>
 
-```
+```yaml
   [CapacityReservationConfig](#cfn-sagemaker-endpointconfig-productionvariant-capacityreservationconfig): {{
     CapacityReservationConfig}}
   [ContainerStartupHealthCheckTimeoutInSeconds](#cfn-sagemaker-endpointconfig-productionvariant-containerstartuphealthchecktimeoutinseconds): {{Integer}}

@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ivs-channel-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IVS::Channel",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ivs-channel-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IVS::Channel
 Properties:
   [Authorized](#cfn-ivs-channel-authorized): {{Boolean}}
@@ -185,7 +185,7 @@ The following examples specify an Amazon IVS channel and stream key.
 #### JSON
 <a name="aws-resource-ivs-channel--examples--Channel_and_Stream_Key_Template_Examples--json"></a>
 
-```
+```json
 {
      "AWSTemplateFormatVersion": "2010-09-09",
      "Resources": {
@@ -245,7 +245,7 @@ The following examples specify an Amazon IVS channel and stream key.
 #### YAML
 <a name="aws-resource-ivs-channel--examples--Channel_and_Stream_Key_Template_Examples--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   Channel:

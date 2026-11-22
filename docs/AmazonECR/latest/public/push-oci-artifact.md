@@ -77,7 +77,7 @@ Amazon ECR Public supports pushing Open Container Initiative (OCI) artifacts to 
         --region us-east-1
    ```
 
-   ```
+   ```JSON
    {
        "imageDetails": [
            {

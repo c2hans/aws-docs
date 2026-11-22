@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-dataautomationproject-imageoverrideconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ModalityProcessing](#cfn-bedrock-dataautomationproject-imageoverrideconfiguration-modalityprocessing)" : {{ModalityProcessingConfiguration}},
   "[SensitiveDataConfiguration](#cfn-bedrock-dataautomationproject-imageoverrideconfiguration-sensitivedataconfiguration)" : {{SensitiveDataConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-dataautomationproject-imageoverrideconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ModalityProcessing](#cfn-bedrock-dataautomationproject-imageoverrideconfiguration-modalityprocessing): {{
     ModalityProcessingConfiguration}}
   [SensitiveDataConfiguration](#cfn-bedrock-dataautomationproject-imageoverrideconfiguration-sensitivedataconfiguration): {{

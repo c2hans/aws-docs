@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-cmafingestwatermarkingsettings-syntax.json"></a>
 
-```
+```json
 {
   "[CmafIngestAbWatermarkerIrdetoSettings](#cfn-medialive-channel-cmafingestwatermarkingsettings-cmafingestabwatermarkerirdetosettings)" : {{CmafIngestMediaPackageV2AbWatermarkerIrdetoSettings}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-cmafingestwatermarkingsettings-syntax.yaml"></a>
 
-```
+```yaml
   [CmafIngestAbWatermarkerIrdetoSettings](#cfn-medialive-channel-cmafingestwatermarkingsettings-cmafingestabwatermarkerirdetosettings): {{
     CmafIngestMediaPackageV2AbWatermarkerIrdetoSettings}}
 ```

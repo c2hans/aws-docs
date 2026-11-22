@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudformation-guardhook-options-syntax.json"></a>
 
-```
+```json
 {
   "[InputParams](#cfn-cloudformation-guardhook-options-inputparams)" : {{S3Location}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudformation-guardhook-options-syntax.yaml"></a>
 
-```
+```yaml
   [InputParams](#cfn-cloudformation-guardhook-options-inputparams): {{
     S3Location}}
 ```

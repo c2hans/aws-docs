@@ -88,7 +88,7 @@ Updates a domain name.
 #### PATCH schema
 <a name="domainnames-domainname-request-body-patch-example"></a>
 
-```
+```json
 {
   "domainNameConfigurations": [
     {
@@ -119,7 +119,7 @@ Updates a domain name.
 #### DomainName schema
 <a name="domainnames-domainname-response-body-domainname-example"></a>
 
-```
+```json
 {
   "domainName": "string",
   "domainNameArn": "string",
@@ -155,7 +155,7 @@ Updates a domain name.
 #### BadRequestException schema
 <a name="domainnames-domainname-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -164,7 +164,7 @@ Updates a domain name.
 #### NotFoundException schema
 <a name="domainnames-domainname-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -174,7 +174,7 @@ Updates a domain name.
 #### ConflictException schema
 <a name="domainnames-domainname-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -183,7 +183,7 @@ Updates a domain name.
 #### LimitExceededException schema
 <a name="domainnames-domainname-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkfirewall-tlsinspectionconfiguration-tlsinspectionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ServerCertificateConfigurations](#cfn-networkfirewall-tlsinspectionconfiguration-tlsinspectionconfiguration-servercertificateconfigurations)" : {{[ ServerCertificateConfiguration, ... ]}}
 }
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkfirewall-tlsinspectionconfiguration-tlsinspectionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ServerCertificateConfigurations](#cfn-networkfirewall-tlsinspectionconfiguration-tlsinspectionconfiguration-servercertificateconfigurations): {{
     - ServerCertificateConfiguration}}
 ```

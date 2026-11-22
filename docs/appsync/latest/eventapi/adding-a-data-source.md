@@ -53,7 +53,7 @@ Alternatively, if you're creating a DynamoDB data source, you can go to the **Sc
 
   An example command will look like the following:
 
-  ```
+  ```TypeScript
    aws appsync create-data-source --api-id abcdefghijklmnopqrstuvwxyz --name data_source_name --type data_source_type --service-role-arn arn:aws:iam::107289374856:role/role_name --[data_source_type]-config {params}
   ```
 
@@ -69,7 +69,7 @@ If you’re using an existing IAM role for your data source, you need to grant t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -93,7 +93,7 @@ You can also add conditions to your trust policy to limit access to the data sou
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -122,7 +122,7 @@ Alternatively, you can limit access to a data source to a specific API, such as 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -151,7 +151,7 @@ You can limit access to all AWS AppSync APIs from a specific region, such as `us
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

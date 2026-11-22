@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-aiagent-tooloutputfilter-syntax.json"></a>
 
-```
+```json
 {
   "[JsonPath](#cfn-wisdom-aiagent-tooloutputfilter-jsonpath)" : {{String}},
   "[OutputConfiguration](#cfn-wisdom-aiagent-tooloutputfilter-outputconfiguration)" : {{ToolOutputConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-aiagent-tooloutputfilter-syntax.yaml"></a>
 
-```
+```yaml
   [JsonPath](#cfn-wisdom-aiagent-tooloutputfilter-jsonpath): {{String}}
   [OutputConfiguration](#cfn-wisdom-aiagent-tooloutputfilter-outputconfiguration): {{
     ToolOutputConfiguration}}

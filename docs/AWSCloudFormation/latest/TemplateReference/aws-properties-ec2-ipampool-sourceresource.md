@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-ipampool-sourceresource-syntax.json"></a>
 
-```
+```json
 {
   "[ResourceId](#cfn-ec2-ipampool-sourceresource-resourceid)" : {{String}},
   "[ResourceOwner](#cfn-ec2-ipampool-sourceresource-resourceowner)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-ipampool-sourceresource-syntax.yaml"></a>
 
-```
+```yaml
   [ResourceId](#cfn-ec2-ipampool-sourceresource-resourceid): {{String}}
   [ResourceOwner](#cfn-ec2-ipampool-sourceresource-resourceowner): {{String}}
   [ResourceRegion](#cfn-ec2-ipampool-sourceresource-resourceregion): {{String}}

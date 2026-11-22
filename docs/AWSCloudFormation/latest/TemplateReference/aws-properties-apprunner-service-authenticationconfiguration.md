@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apprunner-service-authenticationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AccessRoleArn](#cfn-apprunner-service-authenticationconfiguration-accessrolearn)" : {{String}},
   "[ConnectionArn](#cfn-apprunner-service-authenticationconfiguration-connectionarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apprunner-service-authenticationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AccessRoleArn](#cfn-apprunner-service-authenticationconfiguration-accessrolearn): {{String}}
   [ConnectionArn](#cfn-apprunner-service-authenticationconfiguration-connectionarn): {{String}}
 ```

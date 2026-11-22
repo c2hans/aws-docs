@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appsync-api-dnsmap-syntax.json"></a>
 
-```
+```json
 {
   "[Http](#cfn-appsync-api-dnsmap-http)" : {{String}},
   "[Realtime](#cfn-appsync-api-dnsmap-realtime)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appsync-api-dnsmap-syntax.yaml"></a>
 
-```
+```yaml
   [Http](#cfn-appsync-api-dnsmap-http): {{String}}
   [Realtime](#cfn-appsync-api-dnsmap-realtime): {{String}}
 ```

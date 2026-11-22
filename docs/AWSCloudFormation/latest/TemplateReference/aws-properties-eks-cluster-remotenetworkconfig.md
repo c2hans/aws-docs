@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-cluster-remotenetworkconfig-syntax.json"></a>
 
-```
+```json
 {
   "[RemoteNodeNetworks](#cfn-eks-cluster-remotenetworkconfig-remotenodenetworks)" : {{[ RemoteNodeNetwork, ... ]}},
   "[RemotePodNetworks](#cfn-eks-cluster-remotenetworkconfig-remotepodnetworks)" : {{[ RemotePodNetwork, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-cluster-remotenetworkconfig-syntax.yaml"></a>
 
-```
+```yaml
   [RemoteNodeNetworks](#cfn-eks-cluster-remotenetworkconfig-remotenodenetworks): {{
     - RemoteNodeNetwork}}
   [RemotePodNetworks](#cfn-eks-cluster-remotenetworkconfig-remotepodnetworks): {{

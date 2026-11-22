@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-connect-hoursofoperation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Connect::HoursOfOperation",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-connect-hoursofoperation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Connect::HoursOfOperation
 Properties:
   [ChildHoursOfOperations](#cfn-connect-hoursofoperation-childhoursofoperations): {{
@@ -156,7 +156,7 @@ The following example specifies an hours of operation resource for an Connect Cu
 #### YAML
 <a name="aws-resource-connect-hoursofoperation--examples--Specify_an_hours_of_operation_resource--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Specifies an hours of operation for an Connect Customer instance
 Resources:

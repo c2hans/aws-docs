@@ -63,7 +63,7 @@ In the command line, run the [register-account](https://awscli.amazonaws.com/v2/
 
 Input example (replace the {{placeholder text}} with your own information):
 
-```
+```json
 aws auditmanager register-account \
 --kms-key {{arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab}} \
 --delegated-admin-account {{111122224444}}
@@ -71,7 +71,7 @@ aws auditmanager register-account \
 
 Output example:
 
-```
+```json
 {
     "status": "ACTIVE"
 }
@@ -91,7 +91,7 @@ Use the [RegisterAccount](https://docs.aws.amazon.com/audit-manager/latest/APIRe
 
 Input example (replace the {{placeholder text}} with your own information):
 
-```
+```json
 {
     "kmsKey":"{{arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab}}",
     "delegatedAdminAccount":"{{111122224444}}"
@@ -100,7 +100,7 @@ Input example (replace the {{placeholder text}} with your own information):
 
 Output example:
 
-```
+```json
 {
   "status": "ACTIVE"
 }

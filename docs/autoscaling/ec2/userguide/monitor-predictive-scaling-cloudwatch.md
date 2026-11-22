@@ -54,7 +54,7 @@ For example, you can use a metric math expression to monitor the [mean absolute 
 
 To get started with this type of graph, you can create a metric math expression like the one shown in the following example.
 
-```
+```json
 {
   "MetricDataQueries": [
     {

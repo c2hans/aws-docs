@@ -34,7 +34,7 @@ aws application-autoscaling register-scalable-target \
 
 If successful, this command returns the ARN of the scalable target.
 
-```
+```json
 {
     "ScalableTargetARN": "arn:aws:application-autoscaling:{{region}}:{{account-id}}:scalable-target/1234abcd56ab78cd901ef1234567890ab123"
 }
@@ -58,7 +58,7 @@ For example, the following IAM policy grants permissions to use the `DeregisterS
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -103,7 +103,7 @@ For example, you could create an IAM policy that allows removing only the tag wi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

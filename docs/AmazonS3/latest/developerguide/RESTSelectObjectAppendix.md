@@ -152,7 +152,7 @@ For uncompressed files, `BytesScanned` and `BytesProcessed` are equal.
 
 Example:
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <Progress>
      <BytesScanned>512</BytesScanned>
@@ -183,7 +183,7 @@ For uncompressed files, `BytesScanned` and `BytesProcessed` are equal.
 
 Example:
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <Stats>
      <BytesScanned>512</BytesScanned>

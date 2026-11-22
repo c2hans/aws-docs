@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-datasource-mediaextractionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AudioExtractionConfiguration](#cfn-bedrock-datasource-mediaextractionconfiguration-audioextractionconfiguration)" : {{AudioExtractionConfiguration}},
   "[ImageExtractionConfiguration](#cfn-bedrock-datasource-mediaextractionconfiguration-imageextractionconfiguration)" : {{ImageExtractionConfiguration}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-datasource-mediaextractionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AudioExtractionConfiguration](#cfn-bedrock-datasource-mediaextractionconfiguration-audioextractionconfiguration): {{
     AudioExtractionConfiguration}}
   [ImageExtractionConfiguration](#cfn-bedrock-datasource-mediaextractionconfiguration-imageextractionconfiguration): {{

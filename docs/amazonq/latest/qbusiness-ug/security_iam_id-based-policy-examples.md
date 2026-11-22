@@ -47,7 +47,7 @@ To ensure that users and roles can still use the Amazon Q Business console, also
 
 This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -92,7 +92,7 @@ This example allows a user to start conversations with Amazon Q Business, view p
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -127,7 +127,7 @@ This example allows an Amazon Q Business admin to manage plugins in a chat appli
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -161,7 +161,7 @@ This example allows an Amazon Q Business admin to manage a specific plugin.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -199,7 +199,7 @@ This example policy grants a user or role in your AWS account permission to use 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -234,7 +234,7 @@ This example policy grants a user or role in your AWS account permission to use 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -273,7 +273,7 @@ This example policy restricts access for a user or role in your AWS account to u
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

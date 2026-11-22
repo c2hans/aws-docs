@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apptest-testcase-cloudformationaction-syntax.json"></a>
 
-```
+```json
 {
   "[ActionType](#cfn-apptest-testcase-cloudformationaction-actiontype)" : {{String}},
   "[Resource](#cfn-apptest-testcase-cloudformationaction-resource)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apptest-testcase-cloudformationaction-syntax.yaml"></a>
 
-```
+```yaml
   [ActionType](#cfn-apptest-testcase-cloudformationaction-actiontype): {{String}}
   [Resource](#cfn-apptest-testcase-cloudformationaction-resource): {{String}}
 ```

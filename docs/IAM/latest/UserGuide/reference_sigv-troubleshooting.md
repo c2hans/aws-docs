@@ -47,7 +47,7 @@ You can also verify that you didn't send the request through a proxy that modifi
 
 **Example canonical request**
 
-```
+```json
 GET                                                      -------- HTTP method
 /                                                        -------- Path. For API stage endpoint, it should be /{stage-name}/{resource-path}
                                                          -------- Query string key-value pair. Leave it blank if the request doesn't have a query string.
@@ -76,7 +76,7 @@ If you received an IncompleteSignatureException error and the construction of th
 
 1. Get the [authorization header](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_sigv-authentication-methods.html) you sent in the request. Your authorization header appears similar to the following example:
 
-   ```
+   ```json
    Authorization: AWS4-HMAC-SHA256
    Credential=AKIAIOSFODNN7EXAMPLE/20130524/us-east-1/s3/aws4_request,
    SignedHeaders=host;range;x-amz-date,
@@ -85,19 +85,19 @@ If you received an IncompleteSignatureException error and the construction of th
 
 1. Compute a SHA-256 hash of the authorization header.
 
-   ```
+   ```json
    hashSHA256(rawAuthorizationHeader) = hashedAuthorizationHeader
    ```
 
 1. Encode the hashed authorization header to Base64 format.
 
-   ```
+   ```json
    base64(hashedAuthorizationHeader) = encodedHashedAuthorizationHeader
    ```
 
 1. Compare the hashed and encoded string you just calculated against the string you received in your error message. Your error message should be similar to the following example:
 
-   ```
+   ```json
    com.amazon.coral.service#IncompleteSignatureException:
    The signature contains an in-valid key=value pair (missing equal-sign)
    in Authorization header (hashed with SHA-256 and encoded with Base64):

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-cluster-rollbackconfig-syntax.json"></a>
 
-```
+```json
 {
   "[TimeoutMinutes](#cfn-eks-cluster-rollbackconfig-timeoutminutes)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-cluster-rollbackconfig-syntax.yaml"></a>
 
-```
+```yaml
   [TimeoutMinutes](#cfn-eks-cluster-rollbackconfig-timeoutminutes): {{Integer}}
 ```
 

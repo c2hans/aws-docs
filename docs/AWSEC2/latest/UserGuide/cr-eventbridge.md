@@ -29,7 +29,7 @@ AWS Health sends the following events when capacity usage for a Capacity Reserva
 
   The following is an example of an event that is generated when a newly created Capacity Reservation is below 20 percent capacity usage over a 24-hour period.
 
-  ```
+  ```json
   {
       "version": "0",
       "id": "b3e00086-f271-12a1-a36c-55e8ddaa130a",
@@ -66,7 +66,7 @@ AWS Health sends the following events when capacity usage for a Capacity Reserva
 
   The following is an example of an event that is generated when one or more Capacity Reservation is below 20 percent capacity usage over a 7-day period.
 
-  ```
+  ```json
   {
       "version": "0", "id":"7439d42b-3c7f-ad50-6a88-25e2a70977e2",
       "detail-type": "AWS Health Event",

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-route53recoveryreadiness-resourceset-targetresource-syntax.json"></a>
 
-```
+```json
 {
   "[NLBResource](#cfn-route53recoveryreadiness-resourceset-targetresource-nlbresource)" : {{NLBResource}},
   "[R53Resource](#cfn-route53recoveryreadiness-resourceset-targetresource-r53resource)" : {{R53ResourceRecord}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-route53recoveryreadiness-resourceset-targetresource-syntax.yaml"></a>
 
-```
+```yaml
   [NLBResource](#cfn-route53recoveryreadiness-resourceset-targetresource-nlbresource): {{
     NLBResource}}
   [R53Resource](#cfn-route53recoveryreadiness-resourceset-targetresource-r53resource): {{

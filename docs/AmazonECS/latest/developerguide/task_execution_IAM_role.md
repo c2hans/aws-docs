@@ -72,7 +72,7 @@ Replace all {{user input}} with your own information.
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -137,7 +137,7 @@ The following is an example inline policy that adds the permissions.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -175,7 +175,7 @@ The following example policy adds the required permissions.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -211,7 +211,7 @@ The following example policy adds the required permissions:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -250,7 +250,7 @@ The following task execution role policy provides an example for adding conditio
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -297,7 +297,7 @@ If you're creating a custom policy, include the following permissions to allow p
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -330,7 +330,7 @@ The following example policy adds the required permissions for retrieving a file
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -365,7 +365,7 @@ The following example policy adds the required permissions for retrieving a file
 
 **Recommended IAM Policy Condition:**
 
-```
+```json
                "Condition": {
                  "StringEquals": {
                    "aws:ResourceAccount": "{{TRUSTED-ACCOUNT-ID}}"

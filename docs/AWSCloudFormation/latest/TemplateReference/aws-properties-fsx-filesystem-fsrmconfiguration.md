@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-filesystem-fsrmconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EventLogDestination](#cfn-fsx-filesystem-fsrmconfiguration-eventlogdestination)" : {{String}},
   "[FsrmServiceEnabled](#cfn-fsx-filesystem-fsrmconfiguration-fsrmserviceenabled)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-filesystem-fsrmconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EventLogDestination](#cfn-fsx-filesystem-fsrmconfiguration-eventlogdestination): {{String}}
   [FsrmServiceEnabled](#cfn-fsx-filesystem-fsrmconfiguration-fsrmserviceenabled): {{Boolean}}
 ```

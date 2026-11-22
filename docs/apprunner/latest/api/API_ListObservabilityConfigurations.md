@@ -118,7 +118,7 @@ In this example, the response includes two results and there aren't additional o
 #### Sample Request
 <a name="API_ListObservabilityConfigurations_Example_1_Request"></a>
 
-```
+```json
 $ aws apprunner list-observability-configurations --cli-input-json "`cat`"
 {
   "LatestOnly": false,
@@ -129,7 +129,7 @@ $ aws apprunner list-observability-configurations --cli-input-json "`cat`"
 #### Sample Response
 <a name="API_ListObservabilityConfigurations_Example_1_Response"></a>
 
-```
+```json
 {
   "ObservabilityConfigurationSummaryList": [
     {

@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-ipamprefixlistresolver-ipamprefixlistresolverrulecondition-syntax.json"></a>
 
-```
+```json
 {
   "[Cidr](#cfn-ec2-ipamprefixlistresolver-ipamprefixlistresolverrulecondition-cidr)" : {{String}},
   "[IpamPoolId](#cfn-ec2-ipamprefixlistresolver-ipamprefixlistresolverrulecondition-ipampoolid)" : {{String}},
@@ -60,7 +60,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-ipamprefixlistresolver-ipamprefixlistresolverrulecondition-syntax.yaml"></a>
 
-```
+```yaml
   [Cidr](#cfn-ec2-ipamprefixlistresolver-ipamprefixlistresolverrulecondition-cidr): {{String}}
   [IpamPoolId](#cfn-ec2-ipamprefixlistresolver-ipamprefixlistresolverrulecondition-ipampoolid): {{String}}
   [Operation](#cfn-ec2-ipamprefixlistresolver-ipamprefixlistresolverrulecondition-operation): {{String}}

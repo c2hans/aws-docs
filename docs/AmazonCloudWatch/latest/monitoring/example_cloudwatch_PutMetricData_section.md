@@ -15,7 +15,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Wrapper to add metric data to a CloudWatch metric.
     /// </summary>
@@ -44,7 +44,7 @@ Action examples are code excerpts from larger programs and must be run in contex
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudwatch#code-examples).
 Include the required files.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/monitoring/CloudWatchClient.h>
 #include <aws/monitoring/model/PutMetricDataRequest.h>
@@ -52,7 +52,7 @@ Include the required files.
 ```
 Put data into the metric.
 
-```
+```cpp
         Aws::CloudWatch::CloudWatchClient cw;
 
         Aws::CloudWatch::Model::Dimension dimension;
@@ -129,7 +129,7 @@ For more information, see [Metrics concepts](https://docs.aws.amazon.com/AmazonC
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
     /**
      * Adds metric data for an alarm asynchronously.
      *
@@ -205,7 +205,7 @@ For more information, see [Metrics concepts](https://docs.aws.amazon.com/AmazonC
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch#code-examples).
 Import the SDK and client modules and call the API.
 
-```
+```javascript
 import { PutMetricDataCommand } from "@aws-sdk/client-cloudwatch";
 import { client } from "../libs/client.js";
 
@@ -241,7 +241,7 @@ export default run();
 ```
 Create the client in a separate module and export it.
 
-```
+```javascript
 import { CloudWatchClient } from "@aws-sdk/client-cloudwatch";
 
 export const client = new CloudWatchClient({});
@@ -252,7 +252,7 @@ export const client = new CloudWatchClient({});
 **SDK for JavaScript (v2)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/cloudwatch#code-examples).
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -296,7 +296,7 @@ cw.putMetricData(params, function (err, data) {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun addMetricData(
     namespaceVal: String,
     metricNameVal: String,
@@ -341,7 +341,7 @@ suspend fun addMetricData(
 **Tools for PowerShell V4**
 **Example 1: Creates a new MetricDatum object, and writes it to Amazon Web Services CloudWatch Metrics.**
 
-```
+```powershell
 ### Create a MetricDatum .NET object
 $Metric = New-Object -TypeName Amazon.CloudWatch.Model.MetricDatum
 $Metric.Timestamp = [DateTime]::UtcNow
@@ -356,7 +356,7 @@ Write-CWMetricData -Namespace instance1 -MetricData $Metric
 **Tools for PowerShell V5**
 **Example 1: Creates a new MetricDatum object, and writes it to Amazon Web Services CloudWatch Metrics.**
 
-```
+```powershell
 ### Create a MetricDatum .NET object
 $Metric = New-Object -TypeName Amazon.CloudWatch.Model.MetricDatum
 $Metric.Timestamp = [DateTime]::UtcNow
@@ -374,7 +374,7 @@ Write-CWMetricData -Namespace instance1 -MetricData $Metric
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
 
-```
+```python
 class CloudWatchWrapper:
     """Encapsulates Amazon CloudWatch functions."""
 
@@ -407,7 +407,7 @@ class CloudWatchWrapper:
 ```
 Put a set of data into a CloudWatch metric.
 
-```
+```python
 class CloudWatchWrapper:
     """Encapsulates Amazon CloudWatch functions."""
 
@@ -457,7 +457,7 @@ class CloudWatchWrapper:
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/cloudwatch#code-examples).
 
-```
+```ruby
 require 'aws-sdk-cloudwatch'
 
 # Adds a datapoint to a metric in Amazon CloudWatch.
@@ -526,7 +526,7 @@ end
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cwt#code-examples).
 
-```
+```sap-abap
     DATA lt_metricdata TYPE /aws1/cl_cwtmetricdatum=>tt_metricdata.
 
     "Create metric data object.
@@ -548,7 +548,7 @@ end
 ```
 Put a set of data into a CloudWatch metric.
 
-```
+```sap-abap
     DATA lt_metricdata TYPE /aws1/cl_cwtmetricdatum=>tt_metricdata.
 
     "Create metric data object with values and counts.

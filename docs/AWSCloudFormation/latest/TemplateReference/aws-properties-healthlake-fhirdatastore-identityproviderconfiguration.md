@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-healthlake-fhirdatastore-identityproviderconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AuthorizationStrategy](#cfn-healthlake-fhirdatastore-identityproviderconfiguration-authorizationstrategy)" : {{String}},
   "[FineGrainedAuthorizationEnabled](#cfn-healthlake-fhirdatastore-identityproviderconfiguration-finegrainedauthorizationenabled)" : {{Boolean}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-healthlake-fhirdatastore-identityproviderconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AuthorizationStrategy](#cfn-healthlake-fhirdatastore-identityproviderconfiguration-authorizationstrategy): {{String}}
   [FineGrainedAuthorizationEnabled](#cfn-healthlake-fhirdatastore-identityproviderconfiguration-finegrainedauthorizationenabled): {{Boolean}}
   [IdpLambdaArn](#cfn-healthlake-fhirdatastore-identityproviderconfiguration-idplambdaarn): {{String}}

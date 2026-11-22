@@ -24,7 +24,7 @@ The following template contains an Amazon S3 bucket resource with a `Metadata` a
 ### JSON
 <a name="aws-attribute-metadata-example.json"></a>
 
-```
+```json
 {
    "AWSTemplateFormatVersion" : "2010-09-09",
    "Resources" : {
@@ -42,7 +42,7 @@ The following template contains an Amazon S3 bucket resource with a `Metadata` a
 ### YAML
 <a name="aws-attribute-metadata-example.yaml"></a>
 
-```
+```yaml
 1. AWSTemplateFormatVersion: '2010-09-09'
 2. Resources:
 3.   MyBucket:
@@ -64,7 +64,7 @@ To have an AI agent retrieve and preserve context when it authors or updates a t
 
 The following example records architecture at the template level and rationale, constraints, and change-safety guidance at the resource level.
 
-```
+```yaml
  1. AWSTemplateFormatVersion: '2010-09-09'
  2. Description: Order event buffer — decouples producers from bursty asynchronous processing
  3. Metadata:
@@ -94,7 +94,7 @@ The schema is advisory and intended for client-side validation. CloudFormation d
 
 The following JSON Schema uses JSON Schema Draft 2020-12 and defines version 1 of `Metadata Context`.
 
-```
+```json
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://cloudformation.aws.dev/schema/metadata-context/v1.json",

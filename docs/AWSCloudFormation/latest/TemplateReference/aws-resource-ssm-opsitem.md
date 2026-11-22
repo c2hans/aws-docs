@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ssm-opsitem-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SSM::OpsItem",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ssm-opsitem-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SSM::OpsItem
 Properties:
   [Category](#cfn-ssm-opsitem-category): {{String}}

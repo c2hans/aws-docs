@@ -98,7 +98,7 @@ A JSON CORS configuration defines a way for client web applications (video playe
 
    The CORS configuration must be in JSON format. In this example, the `AllowedOrigins` attribute uses the wildcard character (`*`) to specify all origins. If you know your specific origin, you can restrict the `AllowedOrigins` attribute to your specific player URL. For more information about configuring this and other attributes, see [Elements of a CORS configuration](ManageCorsUsing.md).
 
-   ```
+   ```json
    [
        {
            "AllowedOrigins": [
@@ -187,7 +187,7 @@ To grant permissions to the MediaConvert resource that's needed for the Lambda f
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -279,7 +279,7 @@ In this section of the tutorial, you build a Lambda function using the AWS SDK f
 
    If you don't want to use the example settings provided here, you can generate a `job.json` specification based on your use case. To ensure consistency across your outputs, make sure that your input files have similar video and audio configurations. For any input files with different video and audio configurations, create separate automations (unique `job.json` settings). For more information, see [Example AWS Elemental MediaConvert job settings in JSON](https://docs.aws.amazon.com/mediaconvert/latest/ug/example-job-settings.html) in the *AWS Elemental MediaConvert User Guide*.
 
-   ```
+   ```json
    {
      "OutputGroups": [
        {
@@ -768,7 +768,7 @@ In this section of the tutorial, you build a Lambda function using the AWS SDK f
 
    S3 Batch Operations sends specific task data to a Lambda function and requires result data back. For request and response examples for the Lambda function, information about response and result codes, and example Lambda functions for S3 Batch Operations, see [Invoke AWS Lambda function](batch-ops-invoke-lambda.md).
 
-   ```
+   ```python
    import json
    import os
    from urllib.parse import urlparse
@@ -891,17 +891,17 @@ In this section of the tutorial, you build a Lambda function using the AWS SDK f
 
    For **macOS users**, run the following command:
 
-   ```
+   ```xml
    zip -r lambda.zip convert.py job.json
    ```
 
    For **Windows users**, run the following commands:
 
-   ```
+   ```xml
    powershell Compress-Archive convert.py lambda.zip
    ```
 
-   ```
+   ```xml
    powershell Compress-Archive -update job.json lambda.zip
    ```
 
@@ -1021,7 +1021,7 @@ To store an S3 Inventory report that lists the objects of the S3 source bucket, 
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement":[
@@ -1157,7 +1157,7 @@ You must create an IAM policy that gives S3 Batch Operations permission to read 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -1231,7 +1231,7 @@ You must create an IAM policy that gives S3 Batch Operations permission to read 
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement":[

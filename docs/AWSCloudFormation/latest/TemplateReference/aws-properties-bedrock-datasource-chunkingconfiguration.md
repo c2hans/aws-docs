@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-datasource-chunkingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ChunkingStrategy](#cfn-bedrock-datasource-chunkingconfiguration-chunkingstrategy)" : {{String}},
   "[FixedSizeChunkingConfiguration](#cfn-bedrock-datasource-chunkingconfiguration-fixedsizechunkingconfiguration)" : {{FixedSizeChunkingConfiguration}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-datasource-chunkingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ChunkingStrategy](#cfn-bedrock-datasource-chunkingconfiguration-chunkingstrategy): {{String}}
   [FixedSizeChunkingConfiguration](#cfn-bedrock-datasource-chunkingconfiguration-fixedsizechunkingconfiguration): {{
     FixedSizeChunkingConfiguration}}

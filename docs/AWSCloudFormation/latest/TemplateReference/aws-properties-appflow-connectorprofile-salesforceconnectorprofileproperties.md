@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-connectorprofile-salesforceconnectorprofileproperties-syntax.json"></a>
 
-```
+```json
 {
   "[InstanceUrl](#cfn-appflow-connectorprofile-salesforceconnectorprofileproperties-instanceurl)" : {{String}},
   "[isSandboxEnvironment](#cfn-appflow-connectorprofile-salesforceconnectorprofileproperties-issandboxenvironment)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-connectorprofile-salesforceconnectorprofileproperties-syntax.yaml"></a>
 
-```
+```yaml
   [InstanceUrl](#cfn-appflow-connectorprofile-salesforceconnectorprofileproperties-instanceurl): {{String}}
   [isSandboxEnvironment](#cfn-appflow-connectorprofile-salesforceconnectorprofileproperties-issandboxenvironment): {{Boolean}}
   [usePrivateLinkForMetadataAndAuthorization](#cfn-appflow-connectorprofile-salesforceconnectorprofileproperties-useprivatelinkformetadataandauthorization): {{Boolean}}

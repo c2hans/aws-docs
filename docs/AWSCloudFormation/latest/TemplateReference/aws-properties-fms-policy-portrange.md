@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fms-policy-portrange-syntax.json"></a>
 
-```
+```json
 {
   "[From](#cfn-fms-policy-portrange-from)" : {{Integer}},
   "[To](#cfn-fms-policy-portrange-to)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fms-policy-portrange-syntax.yaml"></a>
 
-```
+```yaml
   [From](#cfn-fms-policy-portrange-from): {{Integer}}
   [To](#cfn-fms-policy-portrange-to): {{Integer}}
 ```

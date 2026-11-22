@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-containerrecipe-ebsinstanceblockdevicespecification-syntax.json"></a>
 
-```
+```json
 {
   "[DeleteOnTermination](#cfn-imagebuilder-containerrecipe-ebsinstanceblockdevicespecification-deleteontermination)" : {{Boolean}},
   "[Encrypted](#cfn-imagebuilder-containerrecipe-ebsinstanceblockdevicespecification-encrypted)" : {{Boolean}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-containerrecipe-ebsinstanceblockdevicespecification-syntax.yaml"></a>
 
-```
+```yaml
   [DeleteOnTermination](#cfn-imagebuilder-containerrecipe-ebsinstanceblockdevicespecification-deleteontermination): {{Boolean}}
   [Encrypted](#cfn-imagebuilder-containerrecipe-ebsinstanceblockdevicespecification-encrypted): {{Boolean}}
   [Iops](#cfn-imagebuilder-containerrecipe-ebsinstanceblockdevicespecification-iops): {{Integer}}

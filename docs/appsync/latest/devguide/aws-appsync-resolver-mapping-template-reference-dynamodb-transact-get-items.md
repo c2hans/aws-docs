@@ -12,7 +12,7 @@ The DynamoDB `TransactGetItems` limits apply and **no condition expression** can
 
 The `TransactGetItems` mapping document has the following structure:
 
-```
+```TypeScript
 {
     "version": "2018-05-29",
     "operation": "TransactGetItems",
@@ -75,7 +75,7 @@ Things to remember:
 
 For the following example request mapping template:
 
-```
+```TypeScript
 {
     "version": "2018-05-29",
     "operation": "TransactGetItems",
@@ -104,7 +104,7 @@ For the following example request mapping template:
 
 If the transaction succeeds and only the first requested item is retrieved, the invocation result available in `$ctx.result` is as follows:
 
-```
+```TypeScript
 {
     "items": [
        {
@@ -122,7 +122,7 @@ If the transaction succeeds and only the first requested item is retrieved, the 
 
 If the transaction fails due to *TransactionCanceledException* caused by the first request item, the invocation result available in `$ctx.result` is as follows:
 
-```
+```TypeScript
 {
     "items": null,
     "cancellationReasons": [

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-redshiftserverless-workgroup-endpoint-syntax.json"></a>
 
-```
+```json
 {
   "[Address](#cfn-redshiftserverless-workgroup-endpoint-address)" : {{String}},
   "[Port](#cfn-redshiftserverless-workgroup-endpoint-port)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-redshiftserverless-workgroup-endpoint-syntax.yaml"></a>
 
-```
+```yaml
   [Address](#cfn-redshiftserverless-workgroup-endpoint-address): {{String}}
   [Port](#cfn-redshiftserverless-workgroup-endpoint-port): {{Integer}}
   [VpcEndpoints](#cfn-redshiftserverless-workgroup-endpoint-vpcendpoints): {{

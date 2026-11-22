@@ -36,6 +36,6 @@ Requires an instance that is scoped to the contact that you pass in `contactId`,
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

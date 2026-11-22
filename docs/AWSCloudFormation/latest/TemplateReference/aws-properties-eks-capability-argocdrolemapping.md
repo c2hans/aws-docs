@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-capability-argocdrolemapping-syntax.json"></a>
 
-```
+```json
 {
   "[Identities](#cfn-eks-capability-argocdrolemapping-identities)" : {{[ SsoIdentity, ... ]}},
   "[Role](#cfn-eks-capability-argocdrolemapping-role)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-capability-argocdrolemapping-syntax.yaml"></a>
 
-```
+```yaml
   [Identities](#cfn-eks-capability-argocdrolemapping-identities): {{
     - SsoIdentity}}
   [Role](#cfn-eks-capability-argocdrolemapping-role): {{String}}

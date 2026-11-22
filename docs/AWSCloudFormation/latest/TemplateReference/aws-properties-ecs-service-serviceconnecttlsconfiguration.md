@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-serviceconnecttlsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[IssuerCertificateAuthority](#cfn-ecs-service-serviceconnecttlsconfiguration-issuercertificateauthority)" : {{ServiceConnectTlsCertificateAuthority}},
   "[KmsKey](#cfn-ecs-service-serviceconnecttlsconfiguration-kmskey)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-serviceconnecttlsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [IssuerCertificateAuthority](#cfn-ecs-service-serviceconnecttlsconfiguration-issuercertificateauthority): {{
     ServiceConnectTlsCertificateAuthority}}
   [KmsKey](#cfn-ecs-service-serviceconnecttlsconfiguration-kmskey): {{String}}

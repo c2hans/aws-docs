@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticbeanstalk-applicationversion-imageconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Build](#cfn-elasticbeanstalk-applicationversion-imageconfiguration-build)" : {{ImageBuildConfiguration}},
   "[Source](#cfn-elasticbeanstalk-applicationversion-imageconfiguration-source)" : {{ImageSource}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticbeanstalk-applicationversion-imageconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Build](#cfn-elasticbeanstalk-applicationversion-imageconfiguration-build): {{
     ImageBuildConfiguration}}
   [Source](#cfn-elasticbeanstalk-applicationversion-imageconfiguration-source): {{

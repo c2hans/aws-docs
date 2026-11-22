@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-config-remediationconfiguration-executioncontrols-syntax.json"></a>
 
-```
+```json
 {
   "[SsmControls](#cfn-config-remediationconfiguration-executioncontrols-ssmcontrols)" : {{SsmControls}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-config-remediationconfiguration-executioncontrols-syntax.yaml"></a>
 
-```
+```yaml
   [SsmControls](#cfn-config-remediationconfiguration-executioncontrols-ssmcontrols): {{
     SsmControls}}
 ```

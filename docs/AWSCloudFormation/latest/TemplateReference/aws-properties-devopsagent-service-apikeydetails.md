@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-service-apikeydetails-syntax.json"></a>
 
-```
+```json
 {
   "[ApiKeyHeader](#cfn-devopsagent-service-apikeydetails-apikeyheader)" : {{String}},
   "[ApiKeyName](#cfn-devopsagent-service-apikeydetails-apikeyname)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-service-apikeydetails-syntax.yaml"></a>
 
-```
+```yaml
   [ApiKeyHeader](#cfn-devopsagent-service-apikeydetails-apikeyheader): {{String}}
   [ApiKeyName](#cfn-devopsagent-service-apikeydetails-apikeyname): {{String}}
   [ApiKeyValue](#cfn-devopsagent-service-apikeydetails-apikeyvalue): {{String}}

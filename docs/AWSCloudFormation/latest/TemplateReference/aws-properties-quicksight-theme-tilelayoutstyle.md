@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-theme-tilelayoutstyle-syntax.json"></a>
 
-```
+```json
 {
   "[Gutter](#cfn-quicksight-theme-tilelayoutstyle-gutter)" : {{GutterStyle}},
   "[Margin](#cfn-quicksight-theme-tilelayoutstyle-margin)" : {{MarginStyle}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-theme-tilelayoutstyle-syntax.yaml"></a>
 
-```
+```yaml
   [Gutter](#cfn-quicksight-theme-tilelayoutstyle-gutter): {{
     GutterStyle}}
   [Margin](#cfn-quicksight-theme-tilelayoutstyle-margin): {{

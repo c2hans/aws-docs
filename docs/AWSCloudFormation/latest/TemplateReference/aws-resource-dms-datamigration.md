@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-dms-datamigration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DMS::DataMigration",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-dms-datamigration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DMS::DataMigration
 Properties:
   [DataMigrationName](#cfn-dms-datamigration-datamigrationname): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-histogramfieldwells-syntax.json"></a>
 
-```
+```json
 {
   "[HistogramAggregatedFieldWells](#cfn-quicksight-dashboard-histogramfieldwells-histogramaggregatedfieldwells)" : {{HistogramAggregatedFieldWells}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-histogramfieldwells-syntax.yaml"></a>
 
-```
+```yaml
   [HistogramAggregatedFieldWells](#cfn-quicksight-dashboard-histogramfieldwells-histogramaggregatedfieldwells): {{
     HistogramAggregatedFieldWells}}
 ```

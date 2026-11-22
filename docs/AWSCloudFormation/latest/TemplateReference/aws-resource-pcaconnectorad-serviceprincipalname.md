@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-pcaconnectorad-serviceprincipalname-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::PCAConnectorAD::ServicePrincipalName",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-pcaconnectorad-serviceprincipalname-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::PCAConnectorAD::ServicePrincipalName
 Properties:
   [ConnectorArn](#cfn-pcaconnectorad-serviceprincipalname-connectorarn): {{String}}

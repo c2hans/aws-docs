@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-deepgramspeechmodelconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ApiTokenSecretArn](#cfn-lex-bot-deepgramspeechmodelconfig-apitokensecretarn)" : {{String}},
   "[ModelId](#cfn-lex-bot-deepgramspeechmodelconfig-modelid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-deepgramspeechmodelconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ApiTokenSecretArn](#cfn-lex-bot-deepgramspeechmodelconfig-apitokensecretarn): {{String}}
   [ModelId](#cfn-lex-bot-deepgramspeechmodelconfig-modelid): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-segmentdefinition-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-customerprofiles-segmentdefinition-tag-key)" : {{String}},
   "[Value](#cfn-customerprofiles-segmentdefinition-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-segmentdefinition-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-customerprofiles-segmentdefinition-tag-key): {{String}}
   [Value](#cfn-customerprofiles-segmentdefinition-tag-value): {{String}}
 ```

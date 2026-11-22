@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iottwinmaker-componenttype-lambdafunction-syntax.json"></a>
 
-```
+```json
 {
   "[Arn](#cfn-iottwinmaker-componenttype-lambdafunction-arn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iottwinmaker-componenttype-lambdafunction-syntax.yaml"></a>
 
-```
+```yaml
   [Arn](#cfn-iottwinmaker-componenttype-lambdafunction-arn): {{String}}
 ```
 

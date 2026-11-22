@@ -60,7 +60,7 @@ You can use the AWS CLI to configure request metrics for your directory buckets.
 
 1. Run the following command to add a metrics configuration.
 
-   ```
+   ```bash
    aws s3api put-bucket-metrics-configuration --endpoint https://s3express-control.{{region-code}}.amazonaws.com --bucket {{directory-bucket-name}} --id {{metrics-config-id}} --metrics-configuration '{"Id":"{{metrics-config-id}}"}'
    ```
 

@@ -131,7 +131,7 @@ aws elasticache create-snapshot ^
 
 Output from the operation looks something like the following.
 
-```
+```json
 {
     "Snapshot": {
         "Engine": "redis",
@@ -189,7 +189,7 @@ aws elasticache create-snapshot ^
 
 Output from this operation looks something like the following.
 
-```
+```json
 {
     "Snapshot": {
         "Engine": "redis",

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-odb-cloudvmcluster-datacollectionoptions-syntax.json"></a>
 
-```
+```json
 {
   "[IsDiagnosticsEventsEnabled](#cfn-odb-cloudvmcluster-datacollectionoptions-isdiagnosticseventsenabled)" : {{Boolean}},
   "[IsHealthMonitoringEnabled](#cfn-odb-cloudvmcluster-datacollectionoptions-ishealthmonitoringenabled)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-odb-cloudvmcluster-datacollectionoptions-syntax.yaml"></a>
 
-```
+```yaml
   [IsDiagnosticsEventsEnabled](#cfn-odb-cloudvmcluster-datacollectionoptions-isdiagnosticseventsenabled): {{Boolean}}
   [IsHealthMonitoringEnabled](#cfn-odb-cloudvmcluster-datacollectionoptions-ishealthmonitoringenabled): {{Boolean}}
   [IsIncidentLogsEnabled](#cfn-odb-cloudvmcluster-datacollectionoptions-isincidentlogsenabled): {{Boolean}}

@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-kinesisanalytics-applicationoutput-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::KinesisAnalytics::ApplicationOutput",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-kinesisanalytics-applicationoutput-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::KinesisAnalytics::ApplicationOutput
 Properties:
   [ApplicationName](#cfn-kinesisanalytics-applicationoutput-applicationname): {{String}}
@@ -82,7 +82,7 @@ The following example creates an `ApplicationOutput` resource:
 #### YAML
 <a name="aws-resource-kinesisanalytics-applicationoutput--examples--Adding_an_ApplicationOutput_Resource--yaml"></a>
 
-```
+```yaml
 Type: AWS::KinesisAnalytics::ApplicationOutput
     Properties:
       ApplicationName: !Ref BasicApplication

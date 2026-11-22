@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-odb-cloudvmcluster-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ODB::CloudVmCluster",
   "Properties" : {
@@ -49,7 +49,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-odb-cloudvmcluster-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ODB::CloudVmCluster
 Properties:
   [CloudExadataInfrastructureId](#cfn-odb-cloudvmcluster-cloudexadatainfrastructureid): {{String}}

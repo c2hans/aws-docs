@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkfirewall-rulegroup-statelessrule-syntax.json"></a>
 
-```
+```json
 {
   "[Priority](#cfn-networkfirewall-rulegroup-statelessrule-priority)" : {{Integer}},
   "[RuleDefinition](#cfn-networkfirewall-rulegroup-statelessrule-ruledefinition)" : {{RuleDefinition}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkfirewall-rulegroup-statelessrule-syntax.yaml"></a>
 
-```
+```yaml
   [Priority](#cfn-networkfirewall-rulegroup-statelessrule-priority): {{Integer}}
   [RuleDefinition](#cfn-networkfirewall-rulegroup-statelessrule-ruledefinition): {{
     RuleDefinition}}

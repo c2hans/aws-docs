@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkfirewall-rulegroup-actiondefinition-syntax.json"></a>
 
-```
+```json
 {
   "[PublishMetricAction](#cfn-networkfirewall-rulegroup-actiondefinition-publishmetricaction)" : {{PublishMetricAction}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkfirewall-rulegroup-actiondefinition-syntax.yaml"></a>
 
-```
+```yaml
   [PublishMetricAction](#cfn-networkfirewall-rulegroup-actiondefinition-publishmetricaction): {{
     PublishMetricAction}}
 ```

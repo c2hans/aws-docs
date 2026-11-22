@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcaconnectorad-template-applicationpolicies-syntax.json"></a>
 
-```
+```json
 {
   "[Critical](#cfn-pcaconnectorad-template-applicationpolicies-critical)" : {{Boolean}},
   "[Policies](#cfn-pcaconnectorad-template-applicationpolicies-policies)" : {{[ ApplicationPolicy, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcaconnectorad-template-applicationpolicies-syntax.yaml"></a>
 
-```
+```yaml
   [Critical](#cfn-pcaconnectorad-template-applicationpolicies-critical): {{Boolean}}
   [Policies](#cfn-pcaconnectorad-template-applicationpolicies-policies): {{
     - ApplicationPolicy}}

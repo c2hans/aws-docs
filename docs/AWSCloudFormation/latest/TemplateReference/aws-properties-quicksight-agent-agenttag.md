@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-agent-agenttag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-quicksight-agent-agenttag-key)" : {{String}},
   "[Value](#cfn-quicksight-agent-agenttag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-agent-agenttag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-quicksight-agent-agenttag-key): {{String}}
   [Value](#cfn-quicksight-agent-agenttag-value): {{String}}
 ```

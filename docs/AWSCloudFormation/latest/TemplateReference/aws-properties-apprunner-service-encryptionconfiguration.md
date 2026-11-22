@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apprunner-service-encryptionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[KmsKey](#cfn-apprunner-service-encryptionconfiguration-kmskey)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apprunner-service-encryptionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [KmsKey](#cfn-apprunner-service-encryptionconfiguration-kmskey): {{String}}
 ```
 

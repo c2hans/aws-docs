@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-integration-connectoroperator-syntax.json"></a>
 
-```
+```json
 {
   "[Marketo](#cfn-customerprofiles-integration-connectoroperator-marketo)" : {{String}},
   "[S3](#cfn-customerprofiles-integration-connectoroperator-s3)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-integration-connectoroperator-syntax.yaml"></a>
 
-```
+```yaml
   [Marketo](#cfn-customerprofiles-integration-connectoroperator-marketo): {{String}}
   [S3](#cfn-customerprofiles-integration-connectoroperator-s3): {{String}}
   [Salesforce](#cfn-customerprofiles-integration-connectoroperator-salesforce): {{String}}

@@ -68,7 +68,7 @@ The `codewhisperer` prefix is a legacy name from a service that merged with Amaz
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -106,7 +106,7 @@ Denying access to Amazon Q Developer doesn't hide the AWS assistant icon or chat
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

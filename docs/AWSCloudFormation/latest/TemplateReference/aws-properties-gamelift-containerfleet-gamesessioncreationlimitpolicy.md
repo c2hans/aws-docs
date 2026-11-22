@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-containerfleet-gamesessioncreationlimitpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[NewGameSessionsPerCreator](#cfn-gamelift-containerfleet-gamesessioncreationlimitpolicy-newgamesessionspercreator)" : {{Integer}},
   "[PolicyPeriodInMinutes](#cfn-gamelift-containerfleet-gamesessioncreationlimitpolicy-policyperiodinminutes)" : {{Integer}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-containerfleet-gamesessioncreationlimitpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [NewGameSessionsPerCreator](#cfn-gamelift-containerfleet-gamesessioncreationlimitpolicy-newgamesessionspercreator): {{Integer}}
   [PolicyPeriodInMinutes](#cfn-gamelift-containerfleet-gamesessioncreationlimitpolicy-policyperiodinminutes): {{Integer}}
 ```

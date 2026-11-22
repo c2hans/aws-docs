@@ -109,7 +109,7 @@ HTTP Status Code: 400
 #### Sample Request
 <a name="API_UpdateVpcIngressConnection_Example_1_Request"></a>
 
-```
+```json
 $ aws apprunner update-vpc-ingress-connection --cli-input-json "`cat`"
 {
     "IngressVpcConfiguration": {
@@ -123,7 +123,7 @@ $ aws apprunner update-vpc-ingress-connection --cli-input-json "`cat`"
 #### Sample Response
 <a name="API_UpdateVpcIngressConnection_Example_1_Response"></a>
 
-```
+```json
 {
     "VpcIngressConnection": {
         "AccountId": "123456789012",

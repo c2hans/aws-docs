@@ -228,7 +228,7 @@ In this example, the Lambda authorizer function checks the input parameters and 
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [
@@ -373,7 +373,7 @@ In this example, when the API receives a method request, API Gateway passes the 
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [
@@ -394,7 +394,7 @@ In this example, when the API receives a method request, API Gateway passes the 
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [

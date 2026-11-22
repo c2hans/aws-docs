@@ -487,7 +487,7 @@ This example shows a sample request and response for the `DescribeFlow` API.
 #### Sample Request
 <a name="API_DescribeFlow_Example_1_Request"></a>
 
-```
+```json
 {
   "flowName": "name"
 }
@@ -496,7 +496,7 @@ This example shows a sample request and response for the `DescribeFlow` API.
 #### Sample Response
 <a name="API_DescribeFlow_Example_1_Response"></a>
 
-```
+```json
 {
   "createdAt": "2022-02-22T15:31:41.467000-08:00",
   "createdBy": "user",

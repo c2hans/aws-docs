@@ -9,7 +9,7 @@ As of November 7th, 2025, S3 Object Lambda is available only to existing custome
 
 Amazon S3 Object Lambda provides context about the request that's being made in the event that's passed to your AWS Lambda function. The following shows an example request. Descriptions of the fields are included after the example.
 
-```
+```json
 {
     "xAmzRequestId": "{{requestId}}",
     "getObjectContext": {

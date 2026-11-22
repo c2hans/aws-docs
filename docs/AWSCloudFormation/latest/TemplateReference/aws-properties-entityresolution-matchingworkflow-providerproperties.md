@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-entityresolution-matchingworkflow-providerproperties-syntax.json"></a>
 
-```
+```json
 {
   "[IntermediateSourceConfiguration](#cfn-entityresolution-matchingworkflow-providerproperties-intermediatesourceconfiguration)" : {{IntermediateSourceConfiguration}},
   "[ProviderConfiguration](#cfn-entityresolution-matchingworkflow-providerproperties-providerconfiguration)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-entityresolution-matchingworkflow-providerproperties-syntax.yaml"></a>
 
-```
+```yaml
   [IntermediateSourceConfiguration](#cfn-entityresolution-matchingworkflow-providerproperties-intermediatesourceconfiguration): {{
     IntermediateSourceConfiguration}}
   [ProviderConfiguration](#cfn-entityresolution-matchingworkflow-providerproperties-providerconfiguration): {{

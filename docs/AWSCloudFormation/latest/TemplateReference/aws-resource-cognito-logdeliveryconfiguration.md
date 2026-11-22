@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cognito-logdeliveryconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Cognito::LogDeliveryConfiguration",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cognito-logdeliveryconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Cognito::LogDeliveryConfiguration
 Properties:
   [LogConfigurations](#cfn-cognito-logdeliveryconfiguration-logconfigurations): {{
@@ -89,7 +89,7 @@ The following example creates log delivery of user message-delivery errors to a 
 #### JSON
 <a name="aws-resource-cognito-logdeliveryconfiguration--examples--Creating_a_new_log_delivery_configuration_for_a_user_pool--json"></a>
 
-```
+```json
 {
     "LogDeliveryConfiguration": {
         "Properties": {
@@ -119,7 +119,7 @@ The following example creates log delivery of user message-delivery errors to a 
 #### YAML
 <a name="aws-resource-cognito-logdeliveryconfiguration--examples--Creating_a_new_log_delivery_configuration_for_a_user_pool--yaml"></a>
 
-```
+```yaml
 LogDeliveryConfiguration:
     Type: AWS::Cognito::LogDeliveryConfiguration
     Properties:

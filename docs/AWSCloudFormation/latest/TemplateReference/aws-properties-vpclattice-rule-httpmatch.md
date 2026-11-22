@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-vpclattice-rule-httpmatch-syntax.json"></a>
 
-```
+```json
 {
   "[HeaderMatches](#cfn-vpclattice-rule-httpmatch-headermatches)" : {{[ HeaderMatch, ... ]}},
   "[Method](#cfn-vpclattice-rule-httpmatch-method)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-vpclattice-rule-httpmatch-syntax.yaml"></a>
 
-```
+```yaml
   [HeaderMatches](#cfn-vpclattice-rule-httpmatch-headermatches): {{
     - HeaderMatch}}
   [Method](#cfn-vpclattice-rule-httpmatch-method): {{String}}

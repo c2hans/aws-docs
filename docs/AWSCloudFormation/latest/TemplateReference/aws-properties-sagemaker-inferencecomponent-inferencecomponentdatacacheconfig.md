@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentdatacacheconfig-syntax.json"></a>
 
-```
+```json
 {
   "[EnableCaching](#cfn-sagemaker-inferencecomponent-inferencecomponentdatacacheconfig-enablecaching)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentdatacacheconfig-syntax.yaml"></a>
 
-```
+```yaml
   [EnableCaching](#cfn-sagemaker-inferencecomponent-inferencecomponentdatacacheconfig-enablecaching): {{Boolean}}
 ```
 

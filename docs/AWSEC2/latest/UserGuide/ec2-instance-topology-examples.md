@@ -44,7 +44,7 @@ The following permissions are required:
 **To describe the topology of specific instances**
 Use the [describe-instance-topology](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-topology.html) command with the `--instance-ids` parameter. The output includes only the instances that match the specified instance IDs.
 
-```
+```bash
 aws ec2 describe-instance-topology \
     --region {{us-west-2}} \
     --instance-ids {{i-1111111111example}} {{i-2222222222example}}
@@ -52,7 +52,7 @@ aws ec2 describe-instance-topology \
 
 The following is example output.
 
-```
+```JSON
 {
     "Instances": [
         {
@@ -92,7 +92,7 @@ The following is example output.
 **To describe the topology of specific instances**
 Use the [Get-EC2InstanceTopology](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceTopology.html) cmdlet.
 
-```
+```powershell
 Get-EC2InstanceTopology `
     -InstanceId {{i-1111111111example}}, {{i-2222222222example}}
 ```
@@ -108,7 +108,7 @@ Get-EC2InstanceTopology `
 **To describe the topology of instances in a specific placement group**
 Use the [describe-instance-topology](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-topology.html) command with the `group-names` parameter. The output includes only the instances that are in either of the specified placement groups.
 
-```
+```bash
 aws ec2 describe-instance-topology \
     --region {{us-west-2}} \
     --group-names {{ML-group}} {{HPC-group}}
@@ -116,7 +116,7 @@ aws ec2 describe-instance-topology \
 
 The following is example output.
 
-```
+```JSON
 {
     "Instances": [
         {
@@ -156,7 +156,7 @@ The following is example output.
 **To describe the topology of instances in a specific placement group**
 Use the [Get-EC2InstanceTopology](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceTopology.html) cmdlet.
 
-```
+```powershell
 Get-EC2InstanceTopology `
     -GroupName {{ML-group}}, {{HPC-group}}
 ```
@@ -177,7 +177,7 @@ You can filter by a specified instance type (exact match) or filter by an instan
 **To describe the topology of instances with a specific instance type**
 Use the [describe-instance-topology](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-topology.html) command with the `instance-type` filter. The output includes only the instances with the specified instance type.
 
-```
+```bash
 aws ec2 describe-instance-topology \
     --region {{us-west-2}} \
     --filters Name=instance-type,Values={{trn1n.32xlarge}}
@@ -185,7 +185,7 @@ aws ec2 describe-instance-topology \
 
 The following is example output.
 
-```
+```JSON
 {
     "Instances": [
         {
@@ -211,7 +211,7 @@ The following is example output.
 **To describe the topology of instances with a specific instance type**
 Use the [Get-EC2InstanceTopology](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceTopology.html) cmdlet.
 
-```
+```powershell
 Get-EC2InstanceTopology `
     -Filter @{Name="instance-type"; Values="{{trn1n.32xlarge}}"}
 ```
@@ -227,7 +227,7 @@ Get-EC2InstanceTopology `
 **To describe the topology of instances with a specific instance family**
 Use the [describe-instance-topology](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-topology.html) command with the `instance-type` filter. The output includes only the instances with the specified instance family.
 
-```
+```bash
 aws ec2 describe-instance-topology \
     --region {{us-west-2}} \
     --filters Name=instance-type,Values={{trn1*}}
@@ -235,7 +235,7 @@ aws ec2 describe-instance-topology \
 
 The following is example output.
 
-```
+```JSON
 {
     "Instances": [
         {
@@ -285,7 +285,7 @@ The following is example output.
 **To describe the topology of instances with a specific instance family**
 Use the [Get-EC2InstanceTopology](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceTopology.html) cmdlet.
 
-```
+```powershell
 Get-EC2InstanceTopology `
     -Filter @{Name="instance-type"; Values="{{trn1*}}"}
 ```
@@ -301,7 +301,7 @@ Get-EC2InstanceTopology `
 **To describe the topology of instances with an instance family or instance type**
 Use the [describe-instance-topology](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-topology.html) command with the `instance-type` filter. The output includes only the instances that meet the specified criteria.
 
-```
+```bash
 aws ec2 describe-instance-topology \
     --region {{us-west-2}} \
     --filters "Name=instance-type,Values={{p4d*}},{{trn1n.32xlarge}}"
@@ -309,7 +309,7 @@ aws ec2 describe-instance-topology \
 
 The following is example output.
 
-```
+```JSON
 {
     "Instances": [
         {
@@ -348,7 +348,7 @@ The following is example output.
 **To describe the topology of instances with an instance family or instance type**
 Use the [Get-EC2InstanceTopology](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceTopology.html) cmdlet.
 
-```
+```powershell
 Get-EC2InstanceTopology `
     -Filter @{Name="instance-type"; Values="{{p4d*}}", "{{trn1n.32xlarge}}"}
 ```
@@ -369,7 +369,7 @@ You can use the `zone-id` filter to filter by an Availability Zone or Local Zone
 **To describe the topology of instances in a specific Availability Zone**
 Use the [describe-instance-topology](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-topology.html) command with the `zone-id` filter. The output includes only the instances in the specified Availability Zone.
 
-```
+```bash
 aws ec2 describe-instance-topology \
     --region {{us-east-1}} \
     --filters Name=zone-id,Values={{use1-az1}}
@@ -377,7 +377,7 @@ aws ec2 describe-instance-topology \
 
 The following is example output.
 
-```
+```JSON
 {
     "Instances": [
         {
@@ -403,7 +403,7 @@ The following is example output.
 **To describe the topology of instances in a specific Availability Zone**
 Use the [Get-EC2InstanceTopology](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceTopology.html) cmdlet.
 
-```
+```powershell
 Get-EC2InstanceTopology `
     -Filter @{Name="zone-id"; Values="{{use1-az1}}"}
 ```
@@ -419,7 +419,7 @@ Get-EC2InstanceTopology `
 **To describe the topology of instances in a specific Local Zone**
 Use the [describe-instance-topology](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-topology.html) command with the `zone-id` filter. The output includes only the instances in the specified Local Zone.
 
-```
+```bash
 aws ec2 describe-instance-topology \
     --region {{us-east-1}} \
     --filters Name=zone-id,Values={{use1-atl2-az1}}
@@ -427,7 +427,7 @@ aws ec2 describe-instance-topology \
 
 The following is example output.
 
-```
+```JSON
 {
     "Instances": [
         {
@@ -454,7 +454,7 @@ The following is example output.
 **To describe the topology of instances in a specific Local Zone**
 Use the [Get-EC2InstanceTopology](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceTopology.html) cmdlet.
 
-```
+```powershell
 Get-EC2InstanceTopology `
     -Filter @{Name="zone-id"; Values="{{use1-atl2-az1}}"}
 ```
@@ -470,7 +470,7 @@ Get-EC2InstanceTopology `
 **To describe the topology of instances in a specific zone**
 Use the [describe-instance-topology](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-topology.html) command with the `zone-id` filter. The output includes only the instances that are in either of the specified zones.
 
-```
+```bash
 aws ec2 describe-instance-topology \
     --region {{us-east-1}} \
     --filters Name=zone-id,Values={{use1-az1}},{{use1-atl2-az1}}
@@ -478,7 +478,7 @@ aws ec2 describe-instance-topology \
 
 The following is example output.
 
-```
+```JSON
 {
     "Instances": [
         {
@@ -517,7 +517,7 @@ The following is example output.
 **To describe the topology of instances in a specific zone**
 Use the [Get-EC2InstanceTopology](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceTopology.html) cmdlet.
 
-```
+```powershell
 Get-EC2InstanceTopology `
     -Filter @{Name="zone-id"; Values="{{use1-az1}}", "{{use1-atl2-az1}}"}
 ```
@@ -535,7 +535,7 @@ You can combine filters in a single command.
 **To describe the topology of instances with specific instance types, instance families, and zones**
 Use the [describe-instance-topology](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-topology.html) command with the `instance-type` and `zone-id` filters. The response contains any instances with either of the specified instance types and are in either of the specified zones.
 
-```
+```bash
 aws ec2 describe-instance-topology \
     --region {{us-east-1}} \
     --filters "Name=instance-type,Values={{p4d*}},{{trn1n.32xlarge}}" \
@@ -544,7 +544,7 @@ aws ec2 describe-instance-topology \
 
 The following is example output.
 
-```
+```JSON
 {
     "Instances": [
         {
@@ -583,7 +583,7 @@ The following is example output.
 **To describe the topology of instances with specific instance types, instance families, and zones**
 Use the [Get-EC2InstanceTopology](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceTopology.html) cmdlet.
 
-```
+```powershell
 Get-EC2InstanceTopology `
     -Filter @{Name="instance-type"; Values="{{p4d*}}", "{{trn1n.32xlarge}}"} `
             @{Name="zone-id"; Values="{{use1-az1}}", "{{use1-atl2-az1}}"}
@@ -600,7 +600,7 @@ Get-EC2InstanceTopology `
 **To describe the topology of specific Capacity Reservations**
 Use the [describe-capacity-reservation-topology](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-capacity-reservation-topology.html) command with the `capacity-reservation-id` parameter. The output includes only the Capacity Reservations that match the specified Capacity Reservation IDs.
 
-```
+```bash
 aws ec2 describe-capacity-reservation-topology \
     --region {{us-east-1}} \
     --capacity-reservation-id {{cr-1111111111example}} {{cr-2222222222example}}
@@ -608,7 +608,7 @@ aws ec2 describe-capacity-reservation-topology \
 
 The following is example output.
 
-```
+```JSON
 {
     "CapacityReservations": [
         {
@@ -644,7 +644,7 @@ The following is example output.
 **To describe the topology of specific Capacity Reservations**
 Use the [Get-EC2CapacityReservationTopology](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2CapacityReservationTopology.html) cmdlet.
 
-```
+```powershell
 Get-EC2CapacityReservationTopology `
     -CapacityReservationId {{cr-1111111111example}} {{cr-2222222222example}}
 ```
@@ -662,7 +662,7 @@ You can filter by a specified instance type (exact match) or filter by an instan
 **To describe the topology of Capacity Reservations with a specific instance type**
 Use the [describe-capacity-reservation-topology](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-capacity-reservation-topology.html) command with the `instance-type` filter. The response contains any instances with the specified instance type.
 
-```
+```bash
 aws ec2 describe-capacity-reservation-topology \
     --region {{us-east-1}} \
     --filters Name=instance-type,Values={{p5en.48xlarge}}
@@ -670,7 +670,7 @@ aws ec2 describe-capacity-reservation-topology \
 
 The following is example output.
 
-```
+```JSON
 {
     "CapacityReservations": [
         {
@@ -695,7 +695,7 @@ The following is example output.
 **To describe the topology of Capacity Reservations with a specific instance type**
 Use the [Get-EC2CapacityReservationTopology](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2CapacityReservationTopology.html) cmdlet.
 
-```
+```powershell
 Get-EC2CapacityReservationTopology `
     -Filter @{Name="instance-type"; Values="{{p5en.48xlarge}}"}
 ```

@@ -18,7 +18,7 @@ Alternatively, you can change the tenancy of specific instances. For more inform
 **To modify the instance tenancy attribute of a VPC**
 Use the [modify-vpc-tenancy](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-vpc-tenancy.html) command. The only supported tenancy value is `default`.
 
-```
+```bash
 aws ec2 modify-vpc-tenancy \
     --vpc-id {{vpc-1234567890abcdef0}} \
     --instance-tenancy default
@@ -30,7 +30,7 @@ aws ec2 modify-vpc-tenancy \
 **To modify the instance tenancy attribute of a VPC**
 Use the [Edit-EC2VpcTenancy](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2VpcTenancy.html) cmdlet. The only supported tenancy value is `Default`.
 
-```
+```powershell
 Edit-EC2VpcTenancy `
     -VpcId {{vpc-1234567890abcdef0}} `
     -InstanceTenancy Default

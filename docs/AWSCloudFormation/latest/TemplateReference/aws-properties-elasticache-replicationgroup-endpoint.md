@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticache-replicationgroup-endpoint-syntax.json"></a>
 
-```
+```json
 {
   "[Address](#cfn-elasticache-replicationgroup-endpoint-address)" : {{String}},
   "[Port](#cfn-elasticache-replicationgroup-endpoint-port)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticache-replicationgroup-endpoint-syntax.yaml"></a>
 
-```
+```yaml
   [Address](#cfn-elasticache-replicationgroup-endpoint-address): {{String}}
   [Port](#cfn-elasticache-replicationgroup-endpoint-port): {{String}}
 ```

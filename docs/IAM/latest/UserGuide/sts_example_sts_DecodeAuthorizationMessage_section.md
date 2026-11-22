@@ -33,7 +33,7 @@ For more information, see [Policy evaluation logic](https://docs.aws.amazon.com/
 **Tools for PowerShell V4**
 **Example 1: Decodes the additional information contained in the supplied encoded message content that was returned in response to a request. The additional information is encoded because details of the authorization status can constitute privileged information that the user who requested the action should not see.**
 
-```
+```powershell
 Convert-STSAuthorizationMessage -EncodedMessage "...encoded message..."
 ```
 +  For API details, see [DecodeAuthorizationMessage](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -41,7 +41,7 @@ Convert-STSAuthorizationMessage -EncodedMessage "...encoded message..."
 **Tools for PowerShell V5**
 **Example 1: Decodes the additional information contained in the supplied encoded message content that was returned in response to a request. The additional information is encoded because details of the authorization status can constitute privileged information that the user who requested the action should not see.**
 
-```
+```powershell
 Convert-STSAuthorizationMessage -EncodedMessage "...encoded message..."
 ```
 +  For API details, see [DecodeAuthorizationMessage](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

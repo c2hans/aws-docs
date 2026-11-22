@@ -79,7 +79,7 @@ You can create a VPC interface endpoint for S3 Vectors using the VPC console, AW
 
 To create a new VPC endpoint that returns both IPv4 and IPv6 for S3 Vectors, use the following example CLI command. For more information, see [create-vpc-endpoint](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-vpc-endpoint.html).
 
-```
+```bash
 aws ec2 create-vpc-endpoint \
     --vpc-id {{vpc-12345678}} \
     --service-name com.amazonaws.{{region}}.s3vectors \
@@ -104,7 +104,7 @@ Similar to resource-based policies, you can attach an endpoint policy to your VP
 
 The following example VPC endpoint policy allows access to all S3 Vectors operations for all principals:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -122,7 +122,7 @@ The following example VPC endpoint policy allows access to all S3 Vectors operat
 
 The following example VPC endpoint policy restricts access to a specific vector bucket:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -147,7 +147,7 @@ The following example VPC endpoint policy restricts access to a specific vector 
 
 The following example VPC endpoint policy allows access only during business hours using the `aws:CurrentTime` condition key:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -182,7 +182,7 @@ When using VPC endpoints with S3 Vectors, you can configure your S3 Vectors clie
 
 The following example shows how to configure the S3 Vectors client in SDK for Python (Boto3) to use a VPC endpoint:
 
-```
+```Python
 import boto3
 
 # Using service DNS name (requires private DNS feature enabled on VPC endpoint)

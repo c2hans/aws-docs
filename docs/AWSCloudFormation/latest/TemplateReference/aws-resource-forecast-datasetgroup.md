@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-forecast-datasetgroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Forecast::DatasetGroup",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-forecast-datasetgroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Forecast::DatasetGroup
 Properties:
   [DatasetArns](#cfn-forecast-datasetgroup-datasetarns): {{

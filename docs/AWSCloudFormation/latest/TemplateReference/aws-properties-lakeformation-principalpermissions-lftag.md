@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lakeformation-principalpermissions-lftag-syntax.json"></a>
 
-```
+```json
 {
   "[TagKey](#cfn-lakeformation-principalpermissions-lftag-tagkey)" : {{String}},
   "[TagValues](#cfn-lakeformation-principalpermissions-lftag-tagvalues)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lakeformation-principalpermissions-lftag-syntax.yaml"></a>
 
-```
+```yaml
   [TagKey](#cfn-lakeformation-principalpermissions-lftag-tagkey): {{String}}
   [TagValues](#cfn-lakeformation-principalpermissions-lftag-tagvalues): {{
     - String}}
@@ -62,7 +62,7 @@ The following example demonstrates how to grant permissions on a `LFTag` resourc
 #### JSON
 <a name="aws-properties-lakeformation-principalpermissions-lftag--examples--Permissons_on_an_LF-tag--json"></a>
 
-```
+```json
 {
     "SamplePermission": {
         "LFTag": {
@@ -79,7 +79,7 @@ The following example demonstrates how to grant permissions on a `LFTag` resourc
 #### YAML
 <a name="aws-properties-lakeformation-principalpermissions-lftag--examples--Permissons_on_an_LF-tag--yaml"></a>
 
-```
+```yaml
 SamplePermission:
   Type: AWS::LakeFormation::PrincipalPermissions
   Properties:

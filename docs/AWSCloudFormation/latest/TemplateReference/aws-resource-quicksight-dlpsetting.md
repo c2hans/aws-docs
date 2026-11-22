@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-quicksight-dlpsetting-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::QuickSight::DLPSetting",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-quicksight-dlpsetting-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::QuickSight::DLPSetting
 Properties:
   [AwsAccountId](#cfn-quicksight-dlpsetting-awsaccountid): {{String}}

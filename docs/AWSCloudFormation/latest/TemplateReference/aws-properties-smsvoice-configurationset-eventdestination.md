@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-smsvoice-configurationset-eventdestination-syntax.json"></a>
 
-```
+```json
 {
   "[CloudWatchLogsDestination](#cfn-smsvoice-configurationset-eventdestination-cloudwatchlogsdestination)" : {{CloudWatchLogsDestination}},
   "[Enabled](#cfn-smsvoice-configurationset-eventdestination-enabled)" : {{Boolean}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-smsvoice-configurationset-eventdestination-syntax.yaml"></a>
 
-```
+```yaml
   [CloudWatchLogsDestination](#cfn-smsvoice-configurationset-eventdestination-cloudwatchlogsdestination): {{
     CloudWatchLogsDestination}}
   [Enabled](#cfn-smsvoice-configurationset-eventdestination-enabled): {{Boolean}}

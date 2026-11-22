@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/rabbitm
 
  For JMS 1.1 and 2.0:
 
-```
+```xml
 <dependencies>
 
   <dependency>
@@ -24,7 +24,7 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/rabbitm
 
  For JMS 3.1:
 
-```
+```xml
 <dependencies>
 
   <dependency>
@@ -41,7 +41,7 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/rabbitm
 
  The following code example shows how to write to a RabbitMQ queue using JMS:
 
-```
+```java
 import jakarta.jms.*;
 import com.rabbitmq.jms.admin.*;
 
@@ -78,7 +78,7 @@ System.out.printf("Published to AMQP queue '%s': %s", queueName, msg_content);
 
  The following code example shows how to read from a RabbitMQ queue using JMS:
 
-```
+```java
 import jakarta.jms.*;
 import com.rabbitmq.jms.admin.*;
 

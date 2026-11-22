@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-udpgroupsettings-syntax.json"></a>
 
-```
+```json
 {
   "[InputLossAction](#cfn-medialive-channel-udpgroupsettings-inputlossaction)" : {{String}},
   "[TimedMetadataId3Frame](#cfn-medialive-channel-udpgroupsettings-timedmetadataid3frame)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-udpgroupsettings-syntax.yaml"></a>
 
-```
+```yaml
   [InputLossAction](#cfn-medialive-channel-udpgroupsettings-inputlossaction): {{String}}
   [TimedMetadataId3Frame](#cfn-medialive-channel-udpgroupsettings-timedmetadataid3frame): {{String}}
   [TimedMetadataId3Period](#cfn-medialive-channel-udpgroupsettings-timedmetadataid3period): {{Integer}}

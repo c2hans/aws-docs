@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-algorithm-integerparameterrangespecification-syntax.json"></a>
 
-```
+```json
 {
   "[MaxValue](#cfn-sagemaker-algorithm-integerparameterrangespecification-maxvalue)" : {{String}},
   "[MinValue](#cfn-sagemaker-algorithm-integerparameterrangespecification-minvalue)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-algorithm-integerparameterrangespecification-syntax.yaml"></a>
 
-```
+```yaml
   [MaxValue](#cfn-sagemaker-algorithm-integerparameterrangespecification-maxvalue): {{String}}
   [MinValue](#cfn-sagemaker-algorithm-integerparameterrangespecification-minvalue): {{String}}
 ```

@@ -11,7 +11,7 @@ Amazon RDS supports Oracle Java Virtual Machine (JVM) through the use of the `JV
 
 Java implementation in Amazon RDS has a limited set of permissions. The master user is granted the `RDS_JAVA_ADMIN` role, which grants a subset of the privileges granted by the `JAVA_ADMIN` role. To list the privileges granted to the `RDS_JAVA_ADMIN` role, run the following query on your DB instance:
 
-```
+```sql
 SELECT * FROM dba_java_policy
    WHERE grantee IN ('RDS_JAVA_ADMIN', 'PUBLIC')
    AND enabled = 'ENABLED'
@@ -74,7 +74,7 @@ During this outage, password verification functions are disabled briefly. You ca
 
    The following example grants the permissions to use the `JVM` option to the `test_proc` user.
 
-   ```
+   ```sql
    create user test_proc identified by {{password}};
    CALL dbms_java.grant_permission('TEST_PROC', 'oracle.aurora.security.JServerPermission', 'LoadClassInPackage.*', '');
    ```
@@ -83,7 +83,7 @@ Specify a password other than the prompt shown here as a security best practice.
 
    After the user is granted the permissions, the following query should return output.
 
-   ```
+   ```sql
    select * from dba_java_policy where grantee='TEST_PROC';
    ```
 **Note**

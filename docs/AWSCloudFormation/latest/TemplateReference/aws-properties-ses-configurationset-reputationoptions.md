@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-configurationset-reputationoptions-syntax.json"></a>
 
-```
+```json
 {
   "[ReputationMetricsEnabled](#cfn-ses-configurationset-reputationoptions-reputationmetricsenabled)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-configurationset-reputationoptions-syntax.yaml"></a>
 
-```
+```yaml
   [ReputationMetricsEnabled](#cfn-ses-configurationset-reputationoptions-reputationmetricsenabled): {{Boolean}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iot-authorizer-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoT::Authorizer",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iot-authorizer-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoT::Authorizer
 Properties:
   [AuthorizerFunctionArn](#cfn-iot-authorizer-authorizerfunctionarn): {{String}}

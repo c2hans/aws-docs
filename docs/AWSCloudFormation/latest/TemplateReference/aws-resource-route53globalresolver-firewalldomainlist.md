@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-route53globalresolver-firewalldomainlist-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Route53GlobalResolver::FirewallDomainList",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-route53globalresolver-firewalldomainlist-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53GlobalResolver::FirewallDomainList
 Properties:
   [ClientToken](#cfn-route53globalresolver-firewalldomainlist-clienttoken): {{String}}

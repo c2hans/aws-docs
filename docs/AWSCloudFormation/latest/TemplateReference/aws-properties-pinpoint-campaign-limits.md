@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pinpoint-campaign-limits-syntax.json"></a>
 
-```
+```json
 {
   "[Daily](#cfn-pinpoint-campaign-limits-daily)" : {{Integer}},
   "[MaximumDuration](#cfn-pinpoint-campaign-limits-maximumduration)" : {{Integer}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pinpoint-campaign-limits-syntax.yaml"></a>
 
-```
+```yaml
   [Daily](#cfn-pinpoint-campaign-limits-daily): {{Integer}}
   [MaximumDuration](#cfn-pinpoint-campaign-limits-maximumduration): {{Integer}}
   [MessagesPerSecond](#cfn-pinpoint-campaign-limits-messagespersecond): {{Integer}}

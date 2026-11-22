@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 
 The `06-delete-table.py` program deletes `TryDaxTable`. Run this program after you have finished testing Amazon DynamoDB Accelerator (DAX) functionality.
 
-```
+```python
 import boto3
 
 def delete_dax_table(dyn_resource=None):

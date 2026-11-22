@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-nodegroup-remoteaccess-syntax.json"></a>
 
-```
+```json
 {
   "[Ec2SshKey](#cfn-eks-nodegroup-remoteaccess-ec2sshkey)" : {{String}},
   "[SourceSecurityGroups](#cfn-eks-nodegroup-remoteaccess-sourcesecuritygroups)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-nodegroup-remoteaccess-syntax.yaml"></a>
 
-```
+```yaml
   [Ec2SshKey](#cfn-eks-nodegroup-remoteaccess-ec2sshkey): {{String}}
   [SourceSecurityGroups](#cfn-eks-nodegroup-remoteaccess-sourcesecuritygroups): {{
     - String}}

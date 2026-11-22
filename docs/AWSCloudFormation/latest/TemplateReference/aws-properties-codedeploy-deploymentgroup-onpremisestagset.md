@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codedeploy-deploymentgroup-onpremisestagset-syntax.json"></a>
 
-```
+```json
 {
   "[OnPremisesTagSetList](#cfn-codedeploy-deploymentgroup-onpremisestagset-onpremisestagsetlist)" : {{[ OnPremisesTagSetListObject, ... ]}}
 }
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codedeploy-deploymentgroup-onpremisestagset-syntax.yaml"></a>
 
-```
+```yaml
   [OnPremisesTagSetList](#cfn-codedeploy-deploymentgroup-onpremisestagset-onpremisestagsetlist): {{
     - OnPremisesTagSetListObject}}
 ```

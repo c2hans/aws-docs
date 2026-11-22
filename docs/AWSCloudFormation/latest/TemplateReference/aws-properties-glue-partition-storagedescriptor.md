@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-partition-storagedescriptor-syntax.json"></a>
 
-```
+```json
 {
   "[BucketColumns](#cfn-glue-partition-storagedescriptor-bucketcolumns)" : {{[ String, ... ]}},
   "[Columns](#cfn-glue-partition-storagedescriptor-columns)" : {{[ Column, ... ]}},
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-partition-storagedescriptor-syntax.yaml"></a>
 
-```
+```yaml
   [BucketColumns](#cfn-glue-partition-storagedescriptor-bucketcolumns): {{
     - String}}
   [Columns](#cfn-glue-partition-storagedescriptor-columns): {{

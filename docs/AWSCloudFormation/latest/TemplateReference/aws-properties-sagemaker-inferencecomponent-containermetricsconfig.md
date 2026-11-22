@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-inferencecomponent-containermetricsconfig-syntax.json"></a>
 
-```
+```json
 {
   "[MetricsEndpoints](#cfn-sagemaker-inferencecomponent-containermetricsconfig-metricsendpoints)" : {{[ MetricsEndpoint, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-inferencecomponent-containermetricsconfig-syntax.yaml"></a>
 
-```
+```yaml
   [MetricsEndpoints](#cfn-sagemaker-inferencecomponent-containermetricsconfig-metricsendpoints): {{
     - MetricsEndpoint}}
 ```

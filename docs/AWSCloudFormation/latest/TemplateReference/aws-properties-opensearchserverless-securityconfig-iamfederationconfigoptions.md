@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchserverless-securityconfig-iamfederationconfigoptions-syntax.json"></a>
 
-```
+```json
 {
   "[GroupAttribute](#cfn-opensearchserverless-securityconfig-iamfederationconfigoptions-groupattribute)" : {{String}},
   "[UserAttribute](#cfn-opensearchserverless-securityconfig-iamfederationconfigoptions-userattribute)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchserverless-securityconfig-iamfederationconfigoptions-syntax.yaml"></a>
 
-```
+```yaml
   [GroupAttribute](#cfn-opensearchserverless-securityconfig-iamfederationconfigoptions-groupattribute): {{String}}
   [UserAttribute](#cfn-opensearchserverless-securityconfig-iamfederationconfigoptions-userattribute): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-controltower-enabledcontrol-enabledcontrolparameter-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-controltower-enabledcontrol-enabledcontrolparameter-key)" : {{String}},
   "[Value](#cfn-controltower-enabledcontrol-enabledcontrolparameter-value)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-controltower-enabledcontrol-enabledcontrolparameter-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-controltower-enabledcontrol-enabledcontrolparameter-key): {{String}}
   [Value](#cfn-controltower-enabledcontrol-enabledcontrolparameter-value): {{
     - String}}

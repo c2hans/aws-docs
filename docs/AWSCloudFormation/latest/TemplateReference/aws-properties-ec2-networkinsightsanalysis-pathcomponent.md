@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-networkinsightsanalysis-pathcomponent-syntax.json"></a>
 
-```
+```json
 {
   "[AclRule](#cfn-ec2-networkinsightsanalysis-pathcomponent-aclrule)" : {{AnalysisAclRule}},
   "[AdditionalDetails](#cfn-ec2-networkinsightsanalysis-pathcomponent-additionaldetails)" : {{[ AdditionalDetail, ... ]}},
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-networkinsightsanalysis-pathcomponent-syntax.yaml"></a>
 
-```
+```yaml
   [AclRule](#cfn-ec2-networkinsightsanalysis-pathcomponent-aclrule): {{
     AnalysisAclRule}}
   [AdditionalDetails](#cfn-ec2-networkinsightsanalysis-pathcomponent-additionaldetails): {{

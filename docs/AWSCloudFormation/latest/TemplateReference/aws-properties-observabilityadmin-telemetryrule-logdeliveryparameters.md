@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::ObservabilityAdmin::TelemetryRule LogDeliveryParameters
 
-The configuration parameters for log delivery, including `logType` settings. Applies to resource types that support configurable log delivery, such as Amazon Bedrock Knowledge Bases and Elastic Load Balancing Application Load Balancers.
+The configuration parameters for log delivery, including `logType` settings. Applies to resource types that support configurable log delivery, such as Amazon Bedrock Knowledge Bases, Amazon Bedrock AgentCore payment managers, and Elastic Load Balancing Application Load Balancers.
 
 ## Syntax
 <a name="aws-properties-observabilityadmin-telemetryrule-logdeliveryparameters-syntax"></a>
@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-observabilityadmin-telemetryrule-logdeliveryparameters-syntax.json"></a>
 
-```
+```json
 {
   "[LogTypes](#cfn-observabilityadmin-telemetryrule-logdeliveryparameters-logtypes)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-observabilityadmin-telemetryrule-logdeliveryparameters-syntax.yaml"></a>
 
-```
+```yaml
   [LogTypes](#cfn-observabilityadmin-telemetryrule-logdeliveryparameters-logtypes): {{
     - String}}
 ```

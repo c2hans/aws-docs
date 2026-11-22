@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fms-policy-policyoption-syntax.json"></a>
 
-```
+```json
 {
   "[NetworkAclCommonPolicy](#cfn-fms-policy-policyoption-networkaclcommonpolicy)" : {{NetworkAclCommonPolicy}},
   "[NetworkFirewallPolicy](#cfn-fms-policy-policyoption-networkfirewallpolicy)" : {{NetworkFirewallPolicy}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fms-policy-policyoption-syntax.yaml"></a>
 
-```
+```yaml
   [NetworkAclCommonPolicy](#cfn-fms-policy-policyoption-networkaclcommonpolicy): {{
     NetworkAclCommonPolicy}}
   [NetworkFirewallPolicy](#cfn-fms-policy-policyoption-networkfirewallpolicy): {{

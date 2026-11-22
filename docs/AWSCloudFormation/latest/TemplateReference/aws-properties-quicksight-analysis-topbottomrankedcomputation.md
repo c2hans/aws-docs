@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-topbottomrankedcomputation-syntax.json"></a>
 
-```
+```json
 {
   "[Category](#cfn-quicksight-analysis-topbottomrankedcomputation-category)" : {{DimensionField}},
   "[ComputationId](#cfn-quicksight-analysis-topbottomrankedcomputation-computationid)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-topbottomrankedcomputation-syntax.yaml"></a>
 
-```
+```yaml
   [Category](#cfn-quicksight-analysis-topbottomrankedcomputation-category): {{
     DimensionField}}
   [ComputationId](#cfn-quicksight-analysis-topbottomrankedcomputation-computationid): {{String}}

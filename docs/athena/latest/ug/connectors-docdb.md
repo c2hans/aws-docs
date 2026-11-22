@@ -76,11 +76,11 @@ The DocumentDB connector created using a AWS Glue Data Catalog federated connect
 
 You can provide one or more properties that define the DocumentDB connection details for the DocumentDB instances that you use with the connector. To do this, set a Lambda environment variable that corresponds to the catalog name that you want to use in Athena. For example, suppose you want to use the following queries to query two different DocumentDB instances from Athena:
 
-```
+```sql
 SELECT * FROM "docdb_instance_1".database.table
 ```
 
-```
+```sql
 SELECT * FROM "docdb_instance_2".database.table
 ```
 
@@ -232,7 +232,7 @@ The Athena Amazon DocumentDB connector supports [passthrough queries](federated-
 
 To use passthrough queries with Amazon DocumentDB, use the following syntax:
 
-```
+```sql
 SELECT * FROM TABLE(
         system.query(
             database => '{{database_name}}',
@@ -243,7 +243,7 @@ SELECT * FROM TABLE(
 
 The following example queries the `example` database within the `TPCDS` collection, filtering on all books with the title *Bill of Rights*.
 
-```
+```sql
 SELECT * FROM TABLE(
         system.query(
             database => 'example',

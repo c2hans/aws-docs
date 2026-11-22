@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-dynamodb-table-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DynamoDB::Table",
   "Properties" : {
@@ -54,7 +54,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-dynamodb-table-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DynamoDB::Table
 Properties:
   [AttributeDefinitions](#cfn-dynamodb-table-attributedefinitions): {{
@@ -303,7 +303,7 @@ For querying the sales of an album, the local secondary index uses the same hash
 #### JSON
 <a name="aws-resource-dynamodb-table--examples--DynamoDB_Table_with_Local_and_Secondary_Indexes--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -424,7 +424,7 @@ For querying the sales of an album, the local secondary index uses the same hash
 #### YAML
 <a name="aws-resource-dynamodb-table--examples--DynamoDB_Table_with_Local_and_Secondary_Indexes--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   myDynamoDBTable:
@@ -501,7 +501,7 @@ The following sample assumes that the `myFirstDDBTable` table is declared in the
 #### JSON
 <a name="aws-resource-dynamodb-table--examples--DynamoDB_Table_with_a_DependsOn_Attribute--json"></a>
 
-```
+```json
 {
     "mySecondDDBTable": {
         "Type": "AWS::DynamoDB::Table",
@@ -575,7 +575,7 @@ The following sample assumes that the `myFirstDDBTable` table is declared in the
 #### YAML
 <a name="aws-resource-dynamodb-table--examples--DynamoDB_Table_with_a_DependsOn_Attribute--yaml"></a>
 
-```
+```yaml
 mySecondDDBTable:
   Type: AWS::DynamoDB::Table
   DependsOn: myFirstDDBTable
@@ -618,7 +618,7 @@ This example sets up Application Auto Scaling for a `AWS::DynamoDB::Table` resou
 #### JSON
 <a name="aws-resource-dynamodb-table--examples--DynamoDB_Table_with_Application_Auto_Scaling--json"></a>
 
-```
+```json
 {
   "Resources": {
     "DDBTable": {
@@ -761,7 +761,7 @@ This example sets up Application Auto Scaling for a `AWS::DynamoDB::Table` resou
 #### YAML
 <a name="aws-resource-dynamodb-table--examples--DynamoDB_Table_with_Application_Auto_Scaling--yaml"></a>
 
-```
+```yaml
 Resources:
   DDBTable:
     Type: AWS::DynamoDB::Table

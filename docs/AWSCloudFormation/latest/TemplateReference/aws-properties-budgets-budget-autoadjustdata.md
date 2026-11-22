@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-budgets-budget-autoadjustdata-syntax.json"></a>
 
-```
+```json
 {
   "[AutoAdjustType](#cfn-budgets-budget-autoadjustdata-autoadjusttype)" : {{String}},
   "[HistoricalOptions](#cfn-budgets-budget-autoadjustdata-historicaloptions)" : {{HistoricalOptions}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-budgets-budget-autoadjustdata-syntax.yaml"></a>
 
-```
+```yaml
   [AutoAdjustType](#cfn-budgets-budget-autoadjustdata-autoadjusttype): {{String}}
   [HistoricalOptions](#cfn-budgets-budget-autoadjustdata-historicaloptions): {{
     HistoricalOptions}}
@@ -59,7 +59,7 @@ The following example creates an auto-adjusting AWS budget based on historical d
 #### JSON
 <a name="aws-properties-budgets-budget-autoadjustdata--examples--Creating_an_auto-adjusting_budget_based_on_historical_data--json"></a>
 
-```
+```json
 {
     "Resources": {
         "BudgetExample": {
@@ -84,7 +84,7 @@ The following example creates an auto-adjusting AWS budget based on historical d
 #### YAML
 <a name="aws-properties-budgets-budget-autoadjustdata--examples--Creating_an_auto-adjusting_budget_based_on_historical_data--yaml"></a>
 
-```
+```yaml
 Resources:
   BudgetExample:
     Type: "AWS::Budgets::Budget"

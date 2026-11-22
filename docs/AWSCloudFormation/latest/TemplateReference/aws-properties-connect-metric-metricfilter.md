@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-metric-metricfilter-syntax.json"></a>
 
-```
+```json
 {
   "[BooleanCondition](#cfn-connect-metric-metricfilter-booleancondition)" : {{MetricFilterBooleanCondition}},
   "[MetricFilterKey](#cfn-connect-metric-metricfilter-metricfilterkey)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-metric-metricfilter-syntax.yaml"></a>
 
-```
+```yaml
   [BooleanCondition](#cfn-connect-metric-metricfilter-booleancondition): {{
     MetricFilterBooleanCondition}}
   [MetricFilterKey](#cfn-connect-metric-metricfilter-metricfilterkey): {{String}}

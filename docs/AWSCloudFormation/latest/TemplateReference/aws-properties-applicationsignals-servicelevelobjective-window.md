@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationsignals-servicelevelobjective-window-syntax.json"></a>
 
-```
+```json
 {
   "[Duration](#cfn-applicationsignals-servicelevelobjective-window-duration)" : {{Integer}},
   "[DurationUnit](#cfn-applicationsignals-servicelevelobjective-window-durationunit)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationsignals-servicelevelobjective-window-syntax.yaml"></a>
 
-```
+```yaml
   [Duration](#cfn-applicationsignals-servicelevelobjective-window-duration): {{Integer}}
   [DurationUnit](#cfn-applicationsignals-servicelevelobjective-window-durationunit): {{String}}
 ```

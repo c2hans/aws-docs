@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-guardduty-ipset-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::GuardDuty::IPSet",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-guardduty-ipset-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::GuardDuty::IPSet
 Properties:
   [Activate](#cfn-guardduty-ipset-activate): {{Boolean}}
@@ -135,7 +135,7 @@ The following example shows how to declare a GuardDuty`IPSet` resource:
 #### JSON
 <a name="aws-resource-guardduty-ipset--examples--Declare_an_IPSet_Resource--json"></a>
 
-```
+```json
 "myipset": {
     "Type" : "AWS::GuardDuty::IPSet",
     "Properties" : {
@@ -152,7 +152,7 @@ The following example shows how to declare a GuardDuty`IPSet` resource:
 #### YAML
 <a name="aws-resource-guardduty-ipset--examples--Declare_an_IPSet_Resource--yaml"></a>
 
-```
+```yaml
 myipset:
     Type: AWS::GuardDuty::IPSet
     Properties:

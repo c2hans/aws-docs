@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-notificationfilter-syntax.json"></a>
 
-```
+```json
 {
   "[S3Key](#cfn-s3-bucket-notificationfilter-s3key)" : {{S3KeyFilter}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-notificationfilter-syntax.yaml"></a>
 
-```
+```yaml
   [S3Key](#cfn-s3-bucket-notificationfilter-s3key): {{
     S3KeyFilter}}
 ```

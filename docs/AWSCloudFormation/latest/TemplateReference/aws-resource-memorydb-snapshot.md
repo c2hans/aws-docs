@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-memorydb-snapshot-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MemoryDB::Snapshot",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-memorydb-snapshot-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MemoryDB::Snapshot
 Properties:
   [ClusterName](#cfn-memorydb-snapshot-clustername): {{String}}

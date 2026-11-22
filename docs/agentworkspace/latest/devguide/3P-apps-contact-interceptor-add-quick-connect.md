@@ -8,7 +8,7 @@ Registers an interceptor for the Quick Connect action, which runs when the user 
 
 **Signature**
 
-```
+```typescript
 addOpenQuickConnectInterceptor(
   interceptor: Interceptor<ContactInterceptorContext>,
   options?: RegisterInterceptorOptions
@@ -23,7 +23,7 @@ addOpenQuickConnectInterceptor(
 
 **Usage**
 
-```
+```typescript
 // Block the Quick Connect menu from opening
 await service.addOpenQuickConnectInterceptor(async (context) => {
   return { continue: false };

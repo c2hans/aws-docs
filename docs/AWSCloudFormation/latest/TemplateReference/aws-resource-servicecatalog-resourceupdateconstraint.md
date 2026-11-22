@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-servicecatalog-resourceupdateconstraint-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ServiceCatalog::ResourceUpdateConstraint",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-servicecatalog-resourceupdateconstraint-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ServiceCatalog::ResourceUpdateConstraint
 Properties:
   [AcceptLanguage](#cfn-servicecatalog-resourceupdateconstraint-acceptlanguage): {{String}}
@@ -111,7 +111,7 @@ For more information about using the `Ref` function, see [`Ref`](https://docs.aw
 #### JSON
 <a name="aws-resource-servicecatalog-resourceupdateconstraint--examples--Create_a_RESOURCE_UPDATE_constraint--json"></a>
 
-```
+```json
 {
     "Type" : "AWS::ServiceCatalog::ResourceUpdateConstraint",
     "Properties" : {
@@ -126,7 +126,7 @@ For more information about using the `Ref` function, see [`Ref`](https://docs.aw
 #### YAML
 <a name="aws-resource-servicecatalog-resourceupdateconstraint--examples--Create_a_RESOURCE_UPDATE_constraint--yaml"></a>
 
-```
+```yaml
 Type: 'AWS::ServiceCatalog::ResourceUpdateConstraint'
 Properties:
   Description: Sample description

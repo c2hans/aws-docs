@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-targetgroupstickinessconfig-syntax.json"></a>
 
-```
+```json
 {
   "[DurationSeconds](#cfn-elasticloadbalancingv2-listenerrule-targetgroupstickinessconfig-durationseconds)" : {{Integer}},
   "[Enabled](#cfn-elasticloadbalancingv2-listenerrule-targetgroupstickinessconfig-enabled)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-targetgroupstickinessconfig-syntax.yaml"></a>
 
-```
+```yaml
   [DurationSeconds](#cfn-elasticloadbalancingv2-listenerrule-targetgroupstickinessconfig-durationseconds): {{Integer}}
   [Enabled](#cfn-elasticloadbalancingv2-listenerrule-targetgroupstickinessconfig-enabled): {{Boolean}}
 ```

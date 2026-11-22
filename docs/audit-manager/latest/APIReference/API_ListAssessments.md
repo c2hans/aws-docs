@@ -131,7 +131,7 @@ This shows a sample response that the `ListAssessments` operation might return i
 #### Sample Response
 <a name="API_ListAssessments_Example_1_Response"></a>
 
-```
+```json
 {
     "assessmentMetadata": [
         {

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-totalaggregationoption-syntax.json"></a>
 
-```
+```json
 {
   "[FieldId](#cfn-quicksight-dashboard-totalaggregationoption-fieldid)" : {{String}},
   "[TotalAggregationFunction](#cfn-quicksight-dashboard-totalaggregationoption-totalaggregationfunction)" : {{TotalAggregationFunction}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-totalaggregationoption-syntax.yaml"></a>
 
-```
+```yaml
   [FieldId](#cfn-quicksight-dashboard-totalaggregationoption-fieldid): {{String}}
   [TotalAggregationFunction](#cfn-quicksight-dashboard-totalaggregationoption-totalaggregationfunction): {{
     TotalAggregationFunction}}

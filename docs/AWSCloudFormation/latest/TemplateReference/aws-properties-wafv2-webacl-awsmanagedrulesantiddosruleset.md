@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-awsmanagedrulesantiddosruleset-syntax.json"></a>
 
-```
+```json
 {
   "[ClientSideActionConfig](#cfn-wafv2-webacl-awsmanagedrulesantiddosruleset-clientsideactionconfig)" : {{ClientSideActionConfig}},
   "[SensitivityToBlock](#cfn-wafv2-webacl-awsmanagedrulesantiddosruleset-sensitivitytoblock)" : {{String}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-awsmanagedrulesantiddosruleset-syntax.yaml"></a>
 
-```
+```yaml
   [ClientSideActionConfig](#cfn-wafv2-webacl-awsmanagedrulesantiddosruleset-clientsideactionconfig): {{
     ClientSideActionConfig}}
   [SensitivityToBlock](#cfn-wafv2-webacl-awsmanagedrulesantiddosruleset-sensitivitytoblock): {{String}}

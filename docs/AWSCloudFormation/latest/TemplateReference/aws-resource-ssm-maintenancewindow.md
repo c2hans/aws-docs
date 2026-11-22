@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ssm-maintenancewindow-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SSM::MaintenanceWindow",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ssm-maintenancewindow-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SSM::MaintenanceWindow
 Properties:
   [AllowUnassociatedTargets](#cfn-ssm-maintenancewindow-allowunassociatedtargets): {{Boolean}}
@@ -174,7 +174,7 @@ The following example creates a Systems Manager maintenance window that runs for
 #### JSON
 <a name="aws-resource-ssm-maintenancewindow--examples--Create_a_maintenance_window_that_does_not_allow_unregistered_targets--json"></a>
 
-```
+```json
 {
     "Resources": {
         "MaintenanceWindow": {
@@ -196,7 +196,7 @@ The following example creates a Systems Manager maintenance window that runs for
 #### YAML
 <a name="aws-resource-ssm-maintenancewindow--examples--Create_a_maintenance_window_that_does_not_allow_unregistered_targets--yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   MaintenanceWindow:

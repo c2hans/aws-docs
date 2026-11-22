@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appsync-channelnamespace-integration-syntax.json"></a>
 
-```
+```json
 {
   "[DataSourceName](#cfn-appsync-channelnamespace-integration-datasourcename)" : {{String}},
   "[LambdaConfig](#cfn-appsync-channelnamespace-integration-lambdaconfig)" : {{LambdaConfig}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appsync-channelnamespace-integration-syntax.yaml"></a>
 
-```
+```yaml
   [DataSourceName](#cfn-appsync-channelnamespace-integration-datasourcename): {{String}}
   [LambdaConfig](#cfn-appsync-channelnamespace-integration-lambdaconfig): {{
     LambdaConfig}}

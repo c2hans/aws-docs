@@ -13,7 +13,7 @@ For `PutItem`, `DeleteItem`, and `UpdateItem`, the transaction condition express
 
 The following transactional `DeleteItem` function request handler does not have a condition expression. As a result, it deletes the item in DynamoDB.
 
-```
+```TypeScript
 export const onPublish = {
   request(ctx) {
     const table = "events"
@@ -32,7 +32,7 @@ export const onPublish = {
 
 The following transactional `DeleteItem` function request handler does have a transaction condition expression that allows the operation succeed only if the author of that post equals a certain name.
 
-```
+```TypeScript
 export const onPublish = {
   request(ctx) {
     return ddb.remove({

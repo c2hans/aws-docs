@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-analyticsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Id](#cfn-s3-bucket-analyticsconfiguration-id)" : {{String}},
   "[Prefix](#cfn-s3-bucket-analyticsconfiguration-prefix)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-analyticsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Id](#cfn-s3-bucket-analyticsconfiguration-id): {{String}}
   [Prefix](#cfn-s3-bucket-analyticsconfiguration-prefix): {{String}}
   [StorageClassAnalysis](#cfn-s3-bucket-analyticsconfiguration-storageclassanalysis): {{
@@ -76,7 +76,7 @@ The following example specifies analytics and inventory results to be generated 
 #### JSON
 <a name="aws-properties-s3-bucket-analyticsconfiguration--examples--Specify_analytics_and_inventory_configurations_for_an_S3_bucket--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "S3 Bucket with Inventory and Analytics Configurations",
@@ -142,7 +142,7 @@ The following example specifies analytics and inventory results to be generated 
 #### YAML
 <a name="aws-properties-s3-bucket-analyticsconfiguration--examples--Specify_analytics_and_inventory_configurations_for_an_S3_bucket--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: S3 Bucket with Inventory and Analytics Configurations
 Resources:

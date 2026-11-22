@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-columnidentifier-syntax.json"></a>
 
-```
+```json
 {
   "[ColumnName](#cfn-quicksight-analysis-columnidentifier-columnname)" : {{String}},
   "[DataSetIdentifier](#cfn-quicksight-analysis-columnidentifier-datasetidentifier)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-columnidentifier-syntax.yaml"></a>
 
-```
+```yaml
   [ColumnName](#cfn-quicksight-analysis-columnidentifier-columnname): {{String}}
   [DataSetIdentifier](#cfn-quicksight-analysis-columnidentifier-datasetidentifier): {{String}}
   [TopicIdentifier](#cfn-quicksight-analysis-columnidentifier-topicidentifier): {{String}}

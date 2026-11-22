@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchserverless-collection-fipsendpoints-syntax.json"></a>
 
-```
+```json
 {
   "[CollectionEndpoint](#cfn-opensearchserverless-collection-fipsendpoints-collectionendpoint)" : {{String}},
   "[DashboardEndpoint](#cfn-opensearchserverless-collection-fipsendpoints-dashboardendpoint)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchserverless-collection-fipsendpoints-syntax.yaml"></a>
 
-```
+```yaml
   [CollectionEndpoint](#cfn-opensearchserverless-collection-fipsendpoints-collectionendpoint): {{String}}
   [DashboardEndpoint](#cfn-opensearchserverless-collection-fipsendpoints-dashboardendpoint): {{String}}
 ```

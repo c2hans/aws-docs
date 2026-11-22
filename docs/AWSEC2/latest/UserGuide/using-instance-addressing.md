@@ -78,7 +78,7 @@ The following list contains actions you can take to optimize the number of publi
 + If the only reason for using a NAT gateway is to SSH into an EC2 instance in a private subnet for maintenance or emergencies, consider using [EC2 Instance Connect Endpoint](connect-using-eice.md) instead. With EC2 Instance Connect Endpoint, you can connect to an instance from the internet without requiring the instance to have a public IPv4 address.
 + If your EC2 instances are in a public subnet with public IP addresses allocated to them, consider moving the instances to a private subnet, removing the public IP addresses, and using a [public NAT gateway](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html) to allow access to and from your EC2 instances. There are cost considerations for using NAT gateways. Use this calculation method to decide if NAT gateways are cost effective. You can get the `Number of public IPv4 addresses` required for this calculation by [creating an AWS Billing Cost and Usage Report](https://aws.amazon.com/blogs/networking-and-content-delivery/identify-and-optimize-public-ipv4-address-usage-on-aws/).
 
-  ```
+  ```bash
   NAT gateway per hour + NAT gateway public IPs + NAT gateway transfer / Existing public IP cost
   ```
 

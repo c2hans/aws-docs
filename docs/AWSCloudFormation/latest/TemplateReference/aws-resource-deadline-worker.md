@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-deadline-worker-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Deadline::Worker",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-deadline-worker-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Deadline::Worker
 Properties:
   [FarmId](#cfn-deadline-worker-farmid): {{String}}

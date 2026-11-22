@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-timestream-table-retentionproperties-syntax.json"></a>
 
-```
+```json
 {
   "[MagneticStoreRetentionPeriodInDays](#cfn-timestream-table-retentionproperties-magneticstoreretentionperiodindays)" : {{String}},
   "[MemoryStoreRetentionPeriodInHours](#cfn-timestream-table-retentionproperties-memorystoreretentionperiodinhours)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-timestream-table-retentionproperties-syntax.yaml"></a>
 
-```
+```yaml
   [MagneticStoreRetentionPeriodInDays](#cfn-timestream-table-retentionproperties-magneticstoreretentionperiodindays): {{String}}
   [MemoryStoreRetentionPeriodInHours](#cfn-timestream-table-retentionproperties-memorystoreretentionperiodinhours): {{String}}
 ```

@@ -35,7 +35,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 The following example shows a CloudTrail log entry that demonstrates the AWS Amplify Console API Reference [`ListApps`](https://docs.aws.amazon.com/amplify/latest/APIReference/API_ListApps.html) operation.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -76,7 +76,7 @@ The following example shows a CloudTrail log entry that demonstrates the AWS Amp
 
 The following example shows a CloudTrail log entry that demonstrates the AWS Amplify Admin UI API Reference [`ListBackendJobs`](https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/backend-appid-job-backendenvironmentname.html#backend-appid-job-backendenvironmentnamepost) operation.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

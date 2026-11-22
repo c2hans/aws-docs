@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-omics-annotationstore-referenceitem-syntax.json"></a>
 
-```
+```json
 {
   "[ReferenceArn](#cfn-omics-annotationstore-referenceitem-referencearn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-omics-annotationstore-referenceitem-syntax.yaml"></a>
 
-```
+```yaml
   [ReferenceArn](#cfn-omics-annotationstore-referenceitem-referencearn): {{String}}
 ```
 

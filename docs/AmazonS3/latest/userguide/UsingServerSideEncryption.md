@@ -20,7 +20,7 @@ If you require your data uploads to be encrypted using only Amazon S3 managed ke
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Id": "PutObjectPolicy",

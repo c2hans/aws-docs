@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sagemaker-cluster-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SageMaker::Cluster",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sagemaker-cluster-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SageMaker::Cluster
 Properties:
   [AutoScaling](#cfn-sagemaker-cluster-autoscaling): {{

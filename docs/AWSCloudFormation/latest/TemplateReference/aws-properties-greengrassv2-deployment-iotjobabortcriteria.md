@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrassv2-deployment-iotjobabortcriteria-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-greengrassv2-deployment-iotjobabortcriteria-action)" : {{String}},
   "[FailureType](#cfn-greengrassv2-deployment-iotjobabortcriteria-failuretype)" : {{String}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrassv2-deployment-iotjobabortcriteria-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-greengrassv2-deployment-iotjobabortcriteria-action): {{String}}
   [FailureType](#cfn-greengrassv2-deployment-iotjobabortcriteria-failuretype): {{String}}
   [MinNumberOfExecutedThings](#cfn-greengrassv2-deployment-iotjobabortcriteria-minnumberofexecutedthings): {{Integer}}

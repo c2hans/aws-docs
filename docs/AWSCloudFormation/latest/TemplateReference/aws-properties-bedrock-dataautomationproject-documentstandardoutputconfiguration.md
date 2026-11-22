@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-dataautomationproject-documentstandardoutputconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Extraction](#cfn-bedrock-dataautomationproject-documentstandardoutputconfiguration-extraction)" : {{DocumentStandardExtraction}},
   "[GenerativeField](#cfn-bedrock-dataautomationproject-documentstandardoutputconfiguration-generativefield)" : {{DocumentStandardGenerativeField}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-dataautomationproject-documentstandardoutputconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Extraction](#cfn-bedrock-dataautomationproject-documentstandardoutputconfiguration-extraction): {{
     DocumentStandardExtraction}}
   [GenerativeField](#cfn-bedrock-dataautomationproject-documentstandardoutputconfiguration-generativefield): {{

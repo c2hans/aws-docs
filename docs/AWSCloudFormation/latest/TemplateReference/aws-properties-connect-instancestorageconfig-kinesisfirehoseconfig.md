@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-instancestorageconfig-kinesisfirehoseconfig-syntax.json"></a>
 
-```
+```json
 {
   "[FirehoseArn](#cfn-connect-instancestorageconfig-kinesisfirehoseconfig-firehosearn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-instancestorageconfig-kinesisfirehoseconfig-syntax.yaml"></a>
 
-```
+```yaml
   [FirehoseArn](#cfn-connect-instancestorageconfig-kinesisfirehoseconfig-firehosearn): {{String}}
 ```
 

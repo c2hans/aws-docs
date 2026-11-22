@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-knowledgebase-opensearchmanagedclusterfieldmapping-syntax.json"></a>
 
-```
+```json
 {
   "[MetadataField](#cfn-bedrock-knowledgebase-opensearchmanagedclusterfieldmapping-metadatafield)" : {{String}},
   "[TextField](#cfn-bedrock-knowledgebase-opensearchmanagedclusterfieldmapping-textfield)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-knowledgebase-opensearchmanagedclusterfieldmapping-syntax.yaml"></a>
 
-```
+```yaml
   [MetadataField](#cfn-bedrock-knowledgebase-opensearchmanagedclusterfieldmapping-metadatafield): {{String}}
   [TextField](#cfn-bedrock-knowledgebase-opensearchmanagedclusterfieldmapping-textfield): {{String}}
   [VectorField](#cfn-bedrock-knowledgebase-opensearchmanagedclusterfieldmapping-vectorfield): {{String}}

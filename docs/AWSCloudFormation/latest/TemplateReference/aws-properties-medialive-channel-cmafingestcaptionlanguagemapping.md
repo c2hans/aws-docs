@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-cmafingestcaptionlanguagemapping-syntax.json"></a>
 
-```
+```json
 {
   "[CaptionChannel](#cfn-medialive-channel-cmafingestcaptionlanguagemapping-captionchannel)" : {{Integer}},
   "[LanguageCode](#cfn-medialive-channel-cmafingestcaptionlanguagemapping-languagecode)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-cmafingestcaptionlanguagemapping-syntax.yaml"></a>
 
-```
+```yaml
   [CaptionChannel](#cfn-medialive-channel-cmafingestcaptionlanguagemapping-captionchannel): {{Integer}}
   [LanguageCode](#cfn-medialive-channel-cmafingestcaptionlanguagemapping-languagecode): {{String}}
 ```

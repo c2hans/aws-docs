@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-service-githubdetails-syntax.json"></a>
 
-```
+```json
 {
   "[AppVerification](#cfn-devopsagent-service-githubdetails-appverification)" : {{GitHubAppVerificationDetails}},
   "[DirectAccess](#cfn-devopsagent-service-githubdetails-directaccess)" : {{GitHubPatDetails}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-service-githubdetails-syntax.yaml"></a>
 
-```
+```yaml
   [AppVerification](#cfn-devopsagent-service-githubdetails-appverification): {{
     GitHubAppVerificationDetails}}
   [DirectAccess](#cfn-devopsagent-service-githubdetails-directaccess): {{

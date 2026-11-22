@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentdeploymentconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AutoRollbackConfiguration](#cfn-sagemaker-inferencecomponent-inferencecomponentdeploymentconfig-autorollbackconfiguration)" : {{AutoRollbackConfiguration}},
   "[RollingUpdatePolicy](#cfn-sagemaker-inferencecomponent-inferencecomponentdeploymentconfig-rollingupdatepolicy)" : {{InferenceComponentRollingUpdatePolicy}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentdeploymentconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AutoRollbackConfiguration](#cfn-sagemaker-inferencecomponent-inferencecomponentdeploymentconfig-autorollbackconfiguration): {{
     AutoRollbackConfiguration}}
   [RollingUpdatePolicy](#cfn-sagemaker-inferencecomponent-inferencecomponentdeploymentconfig-rollingupdatepolicy): {{

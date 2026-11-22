@@ -117,7 +117,7 @@ Follow these steps to create your Amazon ECS cluster, task definition, and servi
 
    1. Create a file that's named `fargate-task.json` with the contents of the following task definition.
 
-      ```
+      ```json
       {
           "family": "tutorial-task-def",
               "networkMode": "awsvpc",
@@ -163,7 +163,7 @@ Follow these steps to create your Amazon ECS cluster, task definition, and servi
 
       When you create the ECS service, specify Fargate and the `LATEST` platform version that supports service discovery. When the service discovery service is created in AWS Cloud Map , `registryArn` is the ARN returned. The `securityGroups` and `subnets` must belong to the VPC that's used to create the Cloud Map namespace. You can obtain the security group and subnet IDs from the Amazon VPC Console.
 
-      ```
+      ```json
       {
           "cluster": "tutorial",
           "serviceName": "ecs-service-discovery",

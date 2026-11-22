@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rekognition-streamprocessor-facesearchsettings-syntax.json"></a>
 
-```
+```json
 {
   "[CollectionId](#cfn-rekognition-streamprocessor-facesearchsettings-collectionid)" : {{String}},
   "[FaceMatchThreshold](#cfn-rekognition-streamprocessor-facesearchsettings-facematchthreshold)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rekognition-streamprocessor-facesearchsettings-syntax.yaml"></a>
 
-```
+```yaml
   [CollectionId](#cfn-rekognition-streamprocessor-facesearchsettings-collectionid): {{String}}
   [FaceMatchThreshold](#cfn-rekognition-streamprocessor-facesearchsettings-facematchthreshold): {{Number}}
 ```

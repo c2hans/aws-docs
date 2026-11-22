@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-omics-configuration-runconfigurations-syntax.json"></a>
 
-```
+```json
 {
   "[VpcConfig](#cfn-omics-configuration-runconfigurations-vpcconfig)" : {{VpcConfig}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-omics-configuration-runconfigurations-syntax.yaml"></a>
 
-```
+```yaml
   [VpcConfig](#cfn-omics-configuration-runconfigurations-vpcconfig): {{
     VpcConfig}}
 ```

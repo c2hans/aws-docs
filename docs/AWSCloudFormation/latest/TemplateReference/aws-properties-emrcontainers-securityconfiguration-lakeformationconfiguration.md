@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrcontainers-securityconfiguration-lakeformationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AuthorizedSessionTagValue](#cfn-emrcontainers-securityconfiguration-lakeformationconfiguration-authorizedsessiontagvalue)" : {{String}},
   "[QueryAccessControlEnabled](#cfn-emrcontainers-securityconfiguration-lakeformationconfiguration-queryaccesscontrolenabled)" : {{Boolean}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrcontainers-securityconfiguration-lakeformationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AuthorizedSessionTagValue](#cfn-emrcontainers-securityconfiguration-lakeformationconfiguration-authorizedsessiontagvalue): {{String}}
   [QueryAccessControlEnabled](#cfn-emrcontainers-securityconfiguration-lakeformationconfiguration-queryaccesscontrolenabled): {{Boolean}}
   [QueryEngineRoleArn](#cfn-emrcontainers-securityconfiguration-lakeformationconfiguration-queryenginerolearn): {{String}}

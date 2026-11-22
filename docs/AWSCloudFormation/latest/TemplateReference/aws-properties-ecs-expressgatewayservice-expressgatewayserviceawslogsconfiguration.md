@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-expressgatewayservice-expressgatewayserviceawslogsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[LogGroup](#cfn-ecs-expressgatewayservice-expressgatewayserviceawslogsconfiguration-loggroup)" : {{String}},
   "[LogStreamPrefix](#cfn-ecs-expressgatewayservice-expressgatewayserviceawslogsconfiguration-logstreamprefix)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-expressgatewayservice-expressgatewayserviceawslogsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [LogGroup](#cfn-ecs-expressgatewayservice-expressgatewayserviceawslogsconfiguration-loggroup): {{String}}
   [LogStreamPrefix](#cfn-ecs-expressgatewayservice-expressgatewayserviceawslogsconfiguration-logstreamprefix): {{String}}
 ```

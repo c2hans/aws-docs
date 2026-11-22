@@ -115,7 +115,7 @@ On servers running either Linux or Windows Server, the `metrics` section include
 
   For example, the following part of the metrics section of the configuration file sets the agent to use a VPC Endpoint when sending metrics.
 
-  ```
+  ```json
   {
     "metrics": {
       "endpoint_override": "vpce-XXXXXXXXXXXXXXXXXXXXXXXXX.monitoring.us-east-1.vpce.amazonaws.com",
@@ -131,7 +131,7 @@ On servers running either Linux or Windows Server, the `metrics` section include
   + `amp` – Amazon Managed Service for Prometheus.
     + `workspace_id` – The ID corresponding to the Amazon Managed Service for Prometheus workspace.
 
-  ```
+  ```json
   {
     "metrics": {
       "metrics_destinations": {
@@ -387,13 +387,13 @@ Within the subsection for each object, you specify a `measurement` array of the 
 
 Powershell:
 
-```
+```powershell
 Get-Counter -ListSet *
 ```
 
 Command line (not Powershell):
 
-```
+```cmd
 TypePerf.exe –q
 ```
 
@@ -569,7 +569,7 @@ The CloudWatch agent doesn't check the performance of any regular expression tha
 
         For example, the following excerpt of the CloudWatch agent configuration file publishes logs that are PUT and POST requests to CloudWatch Logs, but excluding logs that come from Firefox.
 
-        ```
+        ```json
         "collect_list": [
           {
             "file_path": "/opt/aws/amazon-cloudwatch-agent/logs/test.log",
@@ -803,7 +803,7 @@ Running the agent as any user other than root requires the user to be added to t
     + In the fourth entry, the agent uses compound filtering to collect logs from the `systemd-logind` unit that are also from the root user (`_UID` of `0`).
     + For the last entry, the agent collects journald logs from the `sshd` service and applies layered regex filtering.
 
-    ```
+    ```json
     "journald": {
         "collect_list": [
             {
@@ -858,7 +858,7 @@ When you combine `units`, `priority`, and `matches` filters in a single entry, a
 
   For example, the following part of the logs section of the configuration file sets the agent to use a VPC Endpoint when sending logs.
 
-  ```
+  ```json
   {
     "logs": {
       "endpoint_override": "vpce-XXXXXXXXXXXXXXXXXXXXXXXXX.logs.us-east-1.vpce.amazonaws.com",
@@ -953,7 +953,7 @@ The agent's IAM role or IAM user must have the **AWSXrayWriteOnlyAccess** policy
 
 For a quick start for collecting traces, you can add just the following to the CloudWatch agent configuration file.
 
-```
+```json
 "traces_collected": {
         "xray": {
         },
@@ -964,7 +964,7 @@ For a quick start for collecting traces, you can add just the following to the C
 
 If you add the previous section to the CloudWatch agent configuration file and restart the agent, this causes the agent to start collecting traces using the following default options and values. For more information about these parameters, see the parameter definitions later in this section.
 
-```
+```json
 "traces_collected": {
         "xray": {
             "bind_address": "127.0.0.1:2000",
@@ -1057,7 +1057,7 @@ Make sure Transaction Search is enabled before you send traces to the OTLP trace
 
 The following is an example of an `opentelemetry` section that collects OTLP telemetry and a log file.
 
-```
+```json
 "opentelemetry": {
   "collect": {
     "otlp": {
@@ -1089,7 +1089,7 @@ The items listed in the `measurement` sections for the metrics you want to colle
 
 This example includes both ways of specifying metrics in the `measurement` section.
 
-```
+```json
     {
       "agent": {
         "metrics_collection_interval": 10,
@@ -1229,7 +1229,7 @@ This example includes both ways of specifying metrics in the `measurement` secti
 
 The following is an example of a complete CloudWatch agent configuration file for a server running Windows Server.
 
-```
+```json
 {
       "agent": {
         "metrics_collection_interval": 60,

@@ -98,7 +98,7 @@ IAM policies that filter IP addresses use [IP Address Condition Operators](https
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -24,7 +24,7 @@ The following examples demonstrate how to list the AWS resource tags associated 
 
 The following AWS CLI example command lists all the Storage Lens group tag values for the Storage Lens group named `{{marketing-department}}`. To use this example command, replace the `{{user input placeholders}}` with your own information.
 
-```
+```bash
 aws s3control list-tags-for-resource --account-id {{111122223333}} \
 --resource-arn arn:aws:s3:{{us-east-1}}:{{111122223333}}:storage-lens-group/{{marketing-department}} \
 --region {{us-east-1}}
@@ -35,7 +35,7 @@ aws s3control list-tags-for-resource --account-id {{111122223333}} \
 
 The following AWS SDK for Java example lists the Storage Lens group tag values for the Storage Lens group Amazon Resource Name (ARN) that you specify. To use this example, replace the `{{user input placeholders}}` with your own information.
 
-```
+```java
 package aws.example.s3control;
 
 import com.amazonaws.AmazonServiceException;

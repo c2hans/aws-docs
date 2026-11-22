@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-function-code-syntax.json"></a>
 
-```
+```json
 {
   "[ImageUri](#cfn-lambda-function-code-imageuri)" : {{String}},
   "[S3Bucket](#cfn-lambda-function-code-s3bucket)" : {{String}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-function-code-syntax.yaml"></a>
 
-```
+```yaml
   [ImageUri](#cfn-lambda-function-code-imageuri): {{String}}
   [S3Bucket](#cfn-lambda-function-code-s3bucket): {{String}}
   [S3Key](#cfn-lambda-function-code-s3key): {{String}}
@@ -115,7 +115,7 @@ Inline Node.js function that lists Amazon S3 buckets in ` us-east-1 `. This exam
 #### YAML
 <a name="aws-properties-lambda-function-code--examples--Inline_Function--yaml"></a>
 
-```
+```yaml
       Code:
         ZipFile: |
           const { S3Client, ListBucketsCommand } = require("@aws-sdk/client-s3");

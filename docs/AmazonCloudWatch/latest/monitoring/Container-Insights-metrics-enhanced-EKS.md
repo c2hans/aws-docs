@@ -162,7 +162,7 @@ By default, GPU metrics are collected and ingested at 60-second intervals. With 
 
 To enable detailed GPU monitoring, update your CloudWatch agent configuration to include the `accelerated_compute_gpu_metrics_collection_interval` parameter in the `kubernetes` section, as in the following example.
 
-```
+```json
 {
     "logs": {
         "metrics_collected": {

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-neptunegraph-graphsnapshot-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-neptunegraph-graphsnapshot-tag-key)" : {{String}},
   "[Value](#cfn-neptunegraph-graphsnapshot-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-neptunegraph-graphsnapshot-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-neptunegraph-graphsnapshot-tag-key): {{String}}
   [Value](#cfn-neptunegraph-graphsnapshot-tag-value): {{String}}
 ```

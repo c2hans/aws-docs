@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-bridge-vpcinterfaceattachment-syntax.json"></a>
 
-```
+```json
 {
   "[VpcInterfaceName](#cfn-mediaconnect-bridge-vpcinterfaceattachment-vpcinterfacename)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-bridge-vpcinterfaceattachment-syntax.yaml"></a>
 
-```
+```yaml
   [VpcInterfaceName](#cfn-mediaconnect-bridge-vpcinterfaceattachment-vpcinterfacename): {{String}}
 ```
 

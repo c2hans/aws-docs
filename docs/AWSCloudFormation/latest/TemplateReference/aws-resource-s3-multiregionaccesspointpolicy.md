@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-s3-multiregionaccesspointpolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::S3::MultiRegionAccessPointPolicy",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-s3-multiregionaccesspointpolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::S3::MultiRegionAccessPointPolicy
 Properties:
   [MrapName](#cfn-s3-multiregionaccesspointpolicy-mrapname): {{String}}
@@ -79,7 +79,7 @@ It is very important to note where you need to use the name versus the alias for
 #### JSON
 <a name="aws-resource-s3-multiregionaccesspointpolicy--examples--Simple_Multi-Region_Access_Point_Policy--json"></a>
 
-```
+```json
 {
    "SampleMultiRegionAccessPointPolicy":{
       "Type":"AWS::S3::MultiRegionAccessPointPolicy",
@@ -123,7 +123,7 @@ It is very important to note where you need to use the name versus the alias for
 #### YAML
 <a name="aws-resource-s3-multiregionaccesspointpolicy--examples--Simple_Multi-Region_Access_Point_Policy--yaml"></a>
 
-```
+```yaml
 SampleMultiRegionAccessPointPolicy:
   Type: 'AWS::S3::MultiRegionAccessPointPolicy'
   DeletionPolicy: Retain

@@ -52,7 +52,7 @@ Projected date columns are generated in Coordinated Universal Time (UTC) at quer
 **Example – Partitioning by month**
 The following example table configuration partitions data by month from 2015 to the present.
 
-```
+```sql
 'projection.month.type'='date',
 'projection.month.format'='yyyy-MM',
 'projection.month.interval'='1',

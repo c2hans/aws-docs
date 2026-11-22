@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-input-routerdestinationsettings-syntax.json"></a>
 
-```
+```json
 {
   "[AvailabilityZoneName](#cfn-medialive-input-routerdestinationsettings-availabilityzonename)" : {{String}},
   "[RouterOutputArn](#cfn-medialive-input-routerdestinationsettings-routeroutputarn)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-input-routerdestinationsettings-syntax.yaml"></a>
 
-```
+```yaml
   [AvailabilityZoneName](#cfn-medialive-input-routerdestinationsettings-availabilityzonename): {{String}}
   [RouterOutputArn](#cfn-medialive-input-routerdestinationsettings-routeroutputarn): {{String}}
 ```

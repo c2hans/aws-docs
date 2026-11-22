@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityagent-privateconnection-servicemanaged-syntax.json"></a>
 
-```
+```json
 {
   "[DnsResolution](#cfn-securityagent-privateconnection-servicemanaged-dnsresolution)" : {{String}},
   "[HostAddress](#cfn-securityagent-privateconnection-servicemanaged-hostaddress)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityagent-privateconnection-servicemanaged-syntax.yaml"></a>
 
-```
+```yaml
   [DnsResolution](#cfn-securityagent-privateconnection-servicemanaged-dnsresolution): {{String}}
   [HostAddress](#cfn-securityagent-privateconnection-servicemanaged-hostaddress): {{String}}
   [IpAddressType](#cfn-securityagent-privateconnection-servicemanaged-ipaddresstype): {{String}}

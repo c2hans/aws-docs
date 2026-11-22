@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sagemaker-domain-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SageMaker::Domain",
   "Properties" : {
@@ -59,7 +59,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sagemaker-domain-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SageMaker::Domain
 Properties:
   [AppNetworkAccessType](#cfn-sagemaker-domain-appnetworkaccesstype): {{String}}

@@ -12,7 +12,7 @@ The following code examples show how to get started using Auto Scaling.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/AutoScaling#code-examples).
 
-```
+```csharp
 namespace AutoScalingActions;
 
 using Amazon.AutoScaling;
@@ -55,7 +55,7 @@ public class HelloAutoScaling
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/autoscaling/hello_autoscaling#code-examples).
 Code for the CMakeLists.txt CMake file.
 
-```
+```cpp
 # Set the minimum required version of CMake for this project.
 cmake_minimum_required(VERSION 3.13)
 
@@ -97,7 +97,7 @@ target_link_libraries(${PROJECT_NAME}
 ```
 Code for the hello\_autoscaling.cpp source file.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/autoscaling/AutoScalingClient.h>
 #include <aws/autoscaling/model/DescribeAutoScalingGroupsRequest.h>
@@ -174,7 +174,7 @@ int main(int argc, char **argv) {
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/autoscale#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.autoscaling.AutoScalingClient;
 import software.amazon.awssdk.services.autoscaling.model.AutoScalingGroup;
@@ -216,7 +216,7 @@ public class DescribeAutoScalingGroups {
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/auto-scaling#code-examples).
 
-```
+```php
     public function helloService()
     {
         $autoScalingClient = new AutoScalingClient([
@@ -237,7 +237,7 @@ public class DescribeAutoScalingGroups {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/auto-scaling#code-examples).
 
-```
+```python
 import boto3
 
 def hello_autoscaling(autoscaling_client):
@@ -271,7 +271,7 @@ if __name__ == "__main__":
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/auto-scaling#code-examples).
 
-```
+```ruby
 require 'aws-sdk-autoscaling'
 require 'logger'
 
@@ -318,7 +318,7 @@ end
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/auto-scaling#code-examples).
 
-```
+```rust
 async fn list_groups(client: &Client) -> Result<(), Error> {
     let resp = client.describe_auto_scaling_groups().send().await?;
 

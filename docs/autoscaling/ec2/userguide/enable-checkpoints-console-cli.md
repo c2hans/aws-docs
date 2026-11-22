@@ -53,7 +53,7 @@ aws autoscaling start-instance-refresh --cli-input-json file://config.json
 
 Contents of `config.json`:
 
-```
+```json
 {
     "AutoScalingGroupName": "{{my-asg}}",
     "Preferences": {
@@ -74,7 +74,7 @@ aws autoscaling start-instance-refresh --cli-input-json file://config.json
 
 Contents of `config.json`:
 
-```
+```json
 {
     "AutoScalingGroupName": "{{my-asg}}",
     "Preferences": {
@@ -95,7 +95,7 @@ aws autoscaling start-instance-refresh --cli-input-json file://config.json
 
 Contents of `config.json`:
 
-```
+```json
 {
     "AutoScalingGroupName": "{{my-asg}}",
     "Preferences": {

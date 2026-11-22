@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-cluster-provisionedthroughput-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-msk-cluster-provisionedthroughput-enabled)" : {{Boolean}},
   "[VolumeThroughput](#cfn-msk-cluster-provisionedthroughput-volumethroughput)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-cluster-provisionedthroughput-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-msk-cluster-provisionedthroughput-enabled): {{Boolean}}
   [VolumeThroughput](#cfn-msk-cluster-provisionedthroughput-volumethroughput): {{Integer}}
 ```

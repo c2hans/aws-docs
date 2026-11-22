@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrass-functiondefinition-environment-syntax.json"></a>
 
-```
+```json
 {
   "[AccessSysfs](#cfn-greengrass-functiondefinition-environment-accesssysfs)" : {{Boolean}},
   "[Execution](#cfn-greengrass-functiondefinition-environment-execution)" : {{Execution}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrass-functiondefinition-environment-syntax.yaml"></a>
 
-```
+```yaml
   [AccessSysfs](#cfn-greengrass-functiondefinition-environment-accesssysfs): {{Boolean}}
   [Execution](#cfn-greengrass-functiondefinition-environment-execution): {{
     Execution}}

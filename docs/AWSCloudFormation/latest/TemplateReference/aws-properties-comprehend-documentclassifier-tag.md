@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-comprehend-documentclassifier-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-comprehend-documentclassifier-tag-key)" : {{String}},
   "[Value](#cfn-comprehend-documentclassifier-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-comprehend-documentclassifier-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-comprehend-documentclassifier-tag-key): {{String}}
   [Value](#cfn-comprehend-documentclassifier-tag-value): {{String}}
 ```

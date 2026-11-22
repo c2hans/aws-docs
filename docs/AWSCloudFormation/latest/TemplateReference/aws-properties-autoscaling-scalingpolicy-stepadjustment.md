@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-autoscaling-scalingpolicy-stepadjustment-syntax.json"></a>
 
-```
+```json
 {
   "[MetricIntervalLowerBound](#cfn-autoscaling-scalingpolicy-stepadjustment-metricintervallowerbound)" : {{Number}},
   "[MetricIntervalUpperBound](#cfn-autoscaling-scalingpolicy-stepadjustment-metricintervalupperbound)" : {{Number}},
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-autoscaling-scalingpolicy-stepadjustment-syntax.yaml"></a>
 
-```
+```yaml
   [MetricIntervalLowerBound](#cfn-autoscaling-scalingpolicy-stepadjustment-metricintervallowerbound): {{Number}}
   [MetricIntervalUpperBound](#cfn-autoscaling-scalingpolicy-stepadjustment-metricintervalupperbound): {{Number}}
   [ScalingAdjustment](#cfn-autoscaling-scalingpolicy-stepadjustment-scalingadjustment): {{Integer}}

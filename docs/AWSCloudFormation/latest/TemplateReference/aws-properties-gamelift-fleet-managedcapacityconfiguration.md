@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-fleet-managedcapacityconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ScaleInAfterInactivityMinutes](#cfn-gamelift-fleet-managedcapacityconfiguration-scaleinafterinactivityminutes)" : {{Integer}},
   "[ZeroCapacityStrategy](#cfn-gamelift-fleet-managedcapacityconfiguration-zerocapacitystrategy)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-fleet-managedcapacityconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ScaleInAfterInactivityMinutes](#cfn-gamelift-fleet-managedcapacityconfiguration-scaleinafterinactivityminutes): {{Integer}}
   [ZeroCapacityStrategy](#cfn-gamelift-fleet-managedcapacityconfiguration-zerocapacitystrategy): {{String}}
 ```

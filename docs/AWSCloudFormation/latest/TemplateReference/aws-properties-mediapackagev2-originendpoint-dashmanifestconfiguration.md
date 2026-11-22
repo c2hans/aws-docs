@@ -16,10 +16,11 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackagev2-originendpoint-dashmanifestconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AudioTimelinePattern](#cfn-mediapackagev2-originendpoint-dashmanifestconfiguration-audiotimelinepattern)" : {{String}},
   "[AvailabilityStartTimeConfiguration](#cfn-mediapackagev2-originendpoint-dashmanifestconfiguration-availabilitystarttimeconfiguration)" : {{DashAvailabilityStartTimeConfiguration}},
+  "[BandwidthReportingMode](#cfn-mediapackagev2-originendpoint-dashmanifestconfiguration-bandwidthreportingmode)" : {{String}},
   "[BaseUrls](#cfn-mediapackagev2-originendpoint-dashmanifestconfiguration-baseurls)" : {{[ DashBaseUrl, ... ]}},
   "[Compactness](#cfn-mediapackagev2-originendpoint-dashmanifestconfiguration-compactness)" : {{String}},
   "[DrmSignaling](#cfn-mediapackagev2-originendpoint-dashmanifestconfiguration-drmsignaling)" : {{String}},
@@ -44,10 +45,11 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackagev2-originendpoint-dashmanifestconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AudioTimelinePattern](#cfn-mediapackagev2-originendpoint-dashmanifestconfiguration-audiotimelinepattern): {{String}}
   [AvailabilityStartTimeConfiguration](#cfn-mediapackagev2-originendpoint-dashmanifestconfiguration-availabilitystarttimeconfiguration): {{
     DashAvailabilityStartTimeConfiguration}}
+  [BandwidthReportingMode](#cfn-mediapackagev2-originendpoint-dashmanifestconfiguration-bandwidthreportingmode): {{String}}
   [BaseUrls](#cfn-mediapackagev2-originendpoint-dashmanifestconfiguration-baseurls): {{
     - DashBaseUrl}}
   [Compactness](#cfn-mediapackagev2-originendpoint-dashmanifestconfiguration-compactness): {{String}}
@@ -91,6 +93,13 @@ Property description not available.
 Property description not available.
 *Required*: No
 *Type*: [DashAvailabilityStartTimeConfiguration](aws-properties-mediapackagev2-originendpoint-dashavailabilitystarttimeconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`BandwidthReportingMode`  <a name="cfn-mediapackagev2-originendpoint-dashmanifestconfiguration-bandwidthreportingmode"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `AVERAGE | MAX`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `BaseUrls`  <a name="cfn-mediapackagev2-originendpoint-dashmanifestconfiguration-baseurls"></a>

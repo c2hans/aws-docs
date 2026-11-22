@@ -19,7 +19,7 @@ The generated artifacts for the workflow contain three client-side interfaces an
 
 For example, the generated client interfaces for the example `MyWorkflow` interface are:
 
-```
+```java
 //Client for use from within a workflow
 public interface MyWorkflowClient extends WorkflowClient
 {
@@ -111,13 +111,13 @@ On the other hand, the asynchronous client has methods that allow asynchronous i
 
    Original method:
 
-   ```
+   ```java
    void startMyWF(int a, String b);
    ```
 
    Generated method:
 
-   ```
+   ```java
    Promise<Void> startMyWF(int a, String b);
    ```
 
@@ -127,13 +127,13 @@ On the other hand, the asynchronous client has methods that allow asynchronous i
 
    Original method:
 
-   ```
+   ```java
    void startMyWF(int a, String b);
    ```
 
    Generated method:
 
-   ```
+   ```java
    Promise<void> startMyWF(int a, String b, Promise<?>...waitFor);
    ```
 
@@ -143,13 +143,13 @@ On the other hand, the asynchronous client has methods that allow asynchronous i
 
    Original method:
 
-   ```
+   ```java
    void startMyWF(int a, String b);
    ```
 
    Generated method:
 
-   ```
+   ```java
    Promise<void> startMyWF(
       int a,
       String b,
@@ -361,7 +361,7 @@ The interface contains a set of overloaded methods corresponding to each activit
 
    Generated method:
 
-   ```
+   ```java
    Promise<Void> activity2(
      int foo,
      ActivitySchedulingOptions optionsOverride,
@@ -396,7 +396,7 @@ The interface contains a set of overloaded methods corresponding to each activit
 
    Generated method:
 
-   ```
+   ```java
    Promise<Void> activity2(
       Promise<Integer> foo,
       ActivitySchedulingOptions optionsOverride,
@@ -426,13 +426,13 @@ The interface contains a set of overloaded methods corresponding to each activit
 
    Original method:
 
-   ```
+   ```java
    void activity2(int foo);
    ```
 
    Generated method:
 
-   ```
+   ```java
    Promise<Void> activity2(
      Promise<Integer> foo,
      Promise<?>... waitFor);
@@ -450,7 +450,7 @@ void activity2(int foo);
 
 Generated method:
 
-```
+```java
 Promise<Void> activity2Impl(
    Promise<Integer> foo,
    ActivitySchedulingOptions optionsOverride,
@@ -462,7 +462,7 @@ Promise<Void> activity2Impl(
 
 The generated activity client allows you to pass in `ActivitySchedulingOptions` as an argument. The `ActivitySchedulingOptions` structure contains settings that determine the configuration of the activity task that the framework schedules in Amazon SWF. These settings override the defaults that are specified as registration options. To specify scheduling options dynamically, create an `ActivitySchedulingOptions` object, configure it as desired, and pass it to the activity method. In the following example, we have specified the task list that should be used for the activity task. This will override the default registered task list for this invocation of the activity.
 
-```
+```java
 public class OrderProcessingWorkflowImpl implements OrderProcessingWorkflow {
 
     OrderProcessingActivitiesClient activitiesClient
@@ -492,7 +492,7 @@ public class OrderProcessingWorkflowImpl implements OrderProcessingWorkflow {
 
 In addition to the generated clients, the framework also provides general purpose clients—`DynamicWorkflowClient` and `DynamicActivityClient`—that you can use to dynamically start workflow executions, send signals, schedule activities, etc. For instance, you may want to schedule an activity whose type isn't known at design time. You can use the `DynamicActivityClient` for scheduling such an activity task. Similarly, you can dynamically schedule a child workflow execution by using the `DynamicWorkflowClient`. In the following example, the workflow looks up the activity from a database and uses the dynamic activity client to schedule it:
 
-```
+```java
 //Workflow entrypoint
 @Override
 public void start() {
@@ -526,7 +526,7 @@ The generated workflow client has methods corresponding to each signal that can 
 
 In the following example, the workflow looks up the execution to send a signal to from a database and sends the signal dynamically using the dynamic workflow client.
 
-```
+```java
 //Workflow entrypoint
 public void start()
 {

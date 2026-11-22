@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amplify-branch-backend-syntax.json"></a>
 
-```
+```json
 {
   "[StackArn](#cfn-amplify-branch-backend-stackarn)" : {{String}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amplify-branch-backend-syntax.yaml"></a>
 
-```
+```yaml
   [StackArn](#cfn-amplify-branch-backend-stackarn): {{String}}
 ```
 

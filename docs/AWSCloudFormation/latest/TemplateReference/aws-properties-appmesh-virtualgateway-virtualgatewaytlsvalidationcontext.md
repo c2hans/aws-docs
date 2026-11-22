@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-virtualgateway-virtualgatewaytlsvalidationcontext-syntax.json"></a>
 
-```
+```json
 {
   "[SubjectAlternativeNames](#cfn-appmesh-virtualgateway-virtualgatewaytlsvalidationcontext-subjectalternativenames)" : {{SubjectAlternativeNames}},
   "[Trust](#cfn-appmesh-virtualgateway-virtualgatewaytlsvalidationcontext-trust)" : {{VirtualGatewayTlsValidationContextTrust}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-virtualgateway-virtualgatewaytlsvalidationcontext-syntax.yaml"></a>
 
-```
+```yaml
   [SubjectAlternativeNames](#cfn-appmesh-virtualgateway-virtualgatewaytlsvalidationcontext-subjectalternativenames): {{
     SubjectAlternativeNames}}
   [Trust](#cfn-appmesh-virtualgateway-virtualgatewaytlsvalidationcontext-trust): {{

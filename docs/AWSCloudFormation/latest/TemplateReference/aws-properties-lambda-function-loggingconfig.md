@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-function-loggingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ApplicationLogLevel](#cfn-lambda-function-loggingconfig-applicationloglevel)" : {{String}},
   "[LogFormat](#cfn-lambda-function-loggingconfig-logformat)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-function-loggingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ApplicationLogLevel](#cfn-lambda-function-loggingconfig-applicationloglevel): {{String}}
   [LogFormat](#cfn-lambda-function-loggingconfig-logformat): {{String}}
   [LogGroup](#cfn-lambda-function-loggingconfig-loggroup): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-glue-tableoptimizer-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Glue::TableOptimizer",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-glue-tableoptimizer-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Glue::TableOptimizer
 Properties:
   [CatalogId](#cfn-glue-tableoptimizer-catalogid): {{String}}
@@ -105,7 +105,7 @@ The type of table optimizer. The valid values are:
 #### JSON
 <a name="aws-resource-glue-tableoptimizer--examples--Compaction_table_optimizer_example--json"></a>
 
-```
+```json
 {
   "GlueTableOptimizer": {
     "Type": "AWS::Glue::TableOptimizer",
@@ -126,7 +126,7 @@ The type of table optimizer. The valid values are:
 #### YAML
 <a name="aws-resource-glue-tableoptimizer--examples--Compaction_table_optimizer_example--yaml"></a>
 
-```
+```yaml
 GlueTableOptimizer:
   Type: AWS::Glue::TableOptimizer
   Properties:
@@ -145,7 +145,7 @@ GlueTableOptimizer:
 #### JSON
 <a name="aws-resource-glue-tableoptimizer--examples--Snapshot_retention_table_optimizer_example--json"></a>
 
-```
+```json
 {
   "GlueTableOptimizer": {
     "Type": "AWS::Glue::TableOptimizer",
@@ -173,7 +173,7 @@ GlueTableOptimizer:
 #### YAML
 <a name="aws-resource-glue-tableoptimizer--examples--Snapshot_retention_table_optimizer_example--yaml"></a>
 
-```
+```yaml
 GlueTableOptimizer:
     Type: AWS::Glue::TableOptimizer
     Properties:
@@ -197,7 +197,7 @@ GlueTableOptimizer:
 #### JSON
 <a name="aws-resource-glue-tableoptimizer--examples--Orphan_file_deletion_table_optimizer_example--json"></a>
 
-```
+```json
 {
   "OrphanFileDeletionOptimizer": {
     "Type": "AWS::Glue::TableOptimizer",
@@ -224,7 +224,7 @@ GlueTableOptimizer:
 #### YAML
 <a name="aws-resource-glue-tableoptimizer--examples--Orphan_file_deletion_table_optimizer_example--yaml"></a>
 
-```
+```yaml
 GlueTableOptimizer:
     Type: AWS::Glue::TableOptimizer
     Properties:

@@ -16,7 +16,7 @@ This example sets up Application Auto Scaling for a `AWS::DynamoDB::Table` resou
 ### JSON
 <a name="quickref-dynamodb-example.json"></a>
 
-```
+```json
 {
     "Resources": {
         "DDBTable": {
@@ -116,7 +116,7 @@ This example sets up Application Auto Scaling for a `AWS::DynamoDB::Table` resou
 ### YAML
 <a name="quickref-dynamodb-example.yaml"></a>
 
-```
+```yaml
 Resources:
   DDBTable:
     Type: AWS::DynamoDB::Table

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fis-experimenttemplate-experimenttemplatelogconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CloudWatchLogsConfiguration](#cfn-fis-experimenttemplate-experimenttemplatelogconfiguration-cloudwatchlogsconfiguration)" : {{CloudWatchLogsConfiguration}},
   "[LogSchemaVersion](#cfn-fis-experimenttemplate-experimenttemplatelogconfiguration-logschemaversion)" : {{Integer}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fis-experimenttemplate-experimenttemplatelogconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CloudWatchLogsConfiguration](#cfn-fis-experimenttemplate-experimenttemplatelogconfiguration-cloudwatchlogsconfiguration): {{
     CloudWatchLogsConfiguration}}
   [LogSchemaVersion](#cfn-fis-experimenttemplate-experimenttemplatelogconfiguration-logschemaversion): {{Integer}}

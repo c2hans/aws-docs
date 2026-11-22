@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-directconnect-directconnectgateway-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DirectConnect::DirectConnectGateway",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-directconnect-directconnectgateway-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DirectConnect::DirectConnectGateway
 Properties:
   [AmazonSideAsn](#cfn-directconnect-directconnectgateway-amazonsideasn): {{String}}
@@ -102,7 +102,7 @@ This example shows a basic Direct Connect gateway.
 #### JSON
 <a name="aws-resource-directconnect-directconnectgateway--examples--Basic_Direct_Connect_gateway--json"></a>
 
-```
+```json
 {
   "Resources": {
     "myDirectConnectGateway": {
@@ -125,7 +125,7 @@ This example shows a basic Direct Connect gateway.
 #### YAML
 <a name="aws-resource-directconnect-directconnectgateway--examples--Basic_Direct_Connect_gateway--yaml"></a>
 
-```
+```yaml
 Resources:
   myDirectConnectGateway:
     Type: AWS::DirectConnect::DirectConnectGateway

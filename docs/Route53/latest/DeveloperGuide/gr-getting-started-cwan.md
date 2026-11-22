@@ -15,7 +15,7 @@ The following sections describe how to get started with a private-only Route 53 
 
 Before you begin, make sure that you have the following:
 + Completion of the setup steps. Your system administrator must complete the steps in [Setting up account access for Route 53 Global Resolver](gr-setting-up.md), and then return to this tutorial.
-+ An existing AWS Cloud WAN core network that you own. We recommend that its core network policy is at version 2026.10 or later so that DNS queries route to the closest AWS Region.
++ An existing AWS Cloud WAN core network that you own. We recommend that its core network policy is at version `2026.10` or later so that DNS queries route to the closest AWS Region. For more information, see [Core network policy versions](https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan-policies-json.html#cloudwan-version-json).
 + An AWS account and the appropriate permissions to access, view, and edit Route 53 Global Resolver components.
 
 ## Step 1: Create a global resolver with public IP connectivity disabled

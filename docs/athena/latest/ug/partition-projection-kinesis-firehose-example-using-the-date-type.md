@@ -13,7 +13,7 @@ Configure a range that matches your data as closely as possible so that Athena l
 
 When a query is run on the sample table, Athena uses the conditions on the `datehour` partition key in combination with the range to generate values. Consider the following query:
 
-```
+```sql
 SELECT *
 FROM my_ingested_data
 WHERE datehour >= '2020/12/15/00'
@@ -36,7 +36,7 @@ Similarly, if the query ran at a date and time before February 3, 2021 at 15:00,
 
 If you want to query for the most recent data, you can take advantage of the fact that Athena does not generate future dates and specify only a beginning `datehour`, as in the following example.
 
-```
+```sql
 SELECT *
 FROM my_ingested_data
 WHERE datehour >= '2021/11/09/00'

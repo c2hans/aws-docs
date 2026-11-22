@@ -16,14 +16,14 @@ Amazon Aurora DSQL supports the service-specific condition keys `dsql:WitnessReg
 ## Example: Restrict the witness Region for multi-Region clusters
 <a name="using-iam-condition-keys-create-cluster"></a>
 
-The following policy uses the `dsql:WitnessRegion` condition key to restrict multi-Region cluster creation to cases where the witness Region is US West (Oregon). Without this condition, you can specify any Region as the witness Region.
+The following policy uses the `dsql:WitnessRegion` condition key to restrict multi-Region cluster creation to cases where the witness Region is US West (Oregon). Without this condition, you can specify any supported witness Region. You can use the `dsql:WitnessRegion` condition key to constrain witness placement to the Regions that your organization approves. For the Regions that you can select, see [Multi-Region cluster availability for Aurora DSQL](what-is-aurora-dsql.md#aurora-dsql-multi-region-availability).
 
 ------
 #### [ JSON ]
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -68,7 +68,7 @@ The following policy uses the `aws:RequestTag` and `aws:TagKeys` condition keys 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -111,7 +111,7 @@ The following policy uses the `dsql:FisActionId` and `dsql:FisTargetArns` condit
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

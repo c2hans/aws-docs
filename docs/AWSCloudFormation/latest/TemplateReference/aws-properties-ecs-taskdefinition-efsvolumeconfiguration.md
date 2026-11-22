@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskdefinition-efsvolumeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AuthorizationConfig](#cfn-ecs-taskdefinition-efsvolumeconfiguration-authorizationconfig)" : {{AuthorizationConfig}},
   "[FilesystemId](#cfn-ecs-taskdefinition-efsvolumeconfiguration-filesystemid)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskdefinition-efsvolumeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AuthorizationConfig](#cfn-ecs-taskdefinition-efsvolumeconfiguration-authorizationconfig): {{
     AuthorizationConfig}}
   [FilesystemId](#cfn-ecs-taskdefinition-efsvolumeconfiguration-filesystemid): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-flow-textprompttemplateconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[InputVariables](#cfn-bedrock-flow-textprompttemplateconfiguration-inputvariables)" : {{[ PromptInputVariable, ... ]}},
   "[Text](#cfn-bedrock-flow-textprompttemplateconfiguration-text)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-flow-textprompttemplateconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [InputVariables](#cfn-bedrock-flow-textprompttemplateconfiguration-inputvariables): {{
     - PromptInputVariable}}
   [Text](#cfn-bedrock-flow-textprompttemplateconfiguration-text): {{String}}

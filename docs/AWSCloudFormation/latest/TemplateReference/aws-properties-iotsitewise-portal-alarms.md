@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotsitewise-portal-alarms-syntax.json"></a>
 
-```
+```json
 {
   "[AlarmRoleArn](#cfn-iotsitewise-portal-alarms-alarmrolearn)" : {{String}},
   "[NotificationLambdaArn](#cfn-iotsitewise-portal-alarms-notificationlambdaarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotsitewise-portal-alarms-syntax.yaml"></a>
 
-```
+```yaml
   [AlarmRoleArn](#cfn-iotsitewise-portal-alarms-alarmrolearn): {{String}}
   [NotificationLambdaArn](#cfn-iotsitewise-portal-alarms-notificationlambdaarn): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-inferenceexperiment-endpointmetadata-syntax.json"></a>
 
-```
+```json
 {
   "[EndpointConfigName](#cfn-sagemaker-inferenceexperiment-endpointmetadata-endpointconfigname)" : {{String}},
   "[EndpointName](#cfn-sagemaker-inferenceexperiment-endpointmetadata-endpointname)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-inferenceexperiment-endpointmetadata-syntax.yaml"></a>
 
-```
+```yaml
   [EndpointConfigName](#cfn-sagemaker-inferenceexperiment-endpointmetadata-endpointconfigname): {{String}}
   [EndpointName](#cfn-sagemaker-inferenceexperiment-endpointmetadata-endpointname): {{String}}
   [EndpointStatus](#cfn-sagemaker-inferenceexperiment-endpointmetadata-endpointstatus): {{String}}

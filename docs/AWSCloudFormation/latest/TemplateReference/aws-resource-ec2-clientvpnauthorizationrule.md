@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-clientvpnauthorizationrule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::ClientVpnAuthorizationRule",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-clientvpnauthorizationrule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::ClientVpnAuthorizationRule
 Properties:
   [AccessGroupId](#cfn-ec2-clientvpnauthorizationrule-accessgroupid): {{String}}
@@ -86,7 +86,7 @@ The following example adds an authorization rule that grants all users access to
 #### YAML
 <a name="aws-resource-ec2-clientvpnauthorizationrule--examples--Add_an_authorization_rule_to_a_client_VPN_endpoint--yaml"></a>
 
-```
+```yaml
 myAuthRule:
   Type: "AWS::EC2::ClientVpnAuthorizationRule"
   Properties:
@@ -100,7 +100,7 @@ myAuthRule:
 #### JSON
 <a name="aws-resource-ec2-clientvpnauthorizationrule--examples--Add_an_authorization_rule_to_a_client_VPN_endpoint--json"></a>
 
-```
+```json
 "myAuthRule": {
     "Type": "AWS::EC2::ClientVpnAuthorizationRule",
     "Properties": {

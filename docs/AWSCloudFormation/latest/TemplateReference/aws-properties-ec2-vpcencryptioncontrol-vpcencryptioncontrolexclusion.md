@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-vpcencryptioncontrol-vpcencryptioncontrolexclusion-syntax.json"></a>
 
-```
+```json
 {
   "[State](#cfn-ec2-vpcencryptioncontrol-vpcencryptioncontrolexclusion-state)" : {{String}},
   "[StateMessage](#cfn-ec2-vpcencryptioncontrol-vpcencryptioncontrolexclusion-statemessage)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-vpcencryptioncontrol-vpcencryptioncontrolexclusion-syntax.yaml"></a>
 
-```
+```yaml
   [State](#cfn-ec2-vpcencryptioncontrol-vpcencryptioncontrolexclusion-state): {{String}}
   [StateMessage](#cfn-ec2-vpcencryptioncontrol-vpcencryptioncontrolexclusion-statemessage): {{String}}
 ```

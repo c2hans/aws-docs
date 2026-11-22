@@ -42,7 +42,7 @@ Following is a sample IAM policy that includes these actions.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -137,7 +137,7 @@ The *trust policy* identifies which principal identities can assume the IAM role
 
 ****
 
-  ```
+  ```json
   {
      "Version":"2012-10-17",
      "Statement":[
@@ -160,7 +160,7 @@ The *trust policy* identifies which principal identities can assume the IAM role
 
 ****
 
-  ```
+  ```json
   {
      "Version":"2012-10-17",
      "Statement":[
@@ -188,7 +188,7 @@ The *trust policy* identifies which principal identities can assume the IAM role
 
 ****
 
-  ```
+  ```json
   {
      "Version":"2012-10-17",
      "Statement": [
@@ -264,7 +264,7 @@ The ARN format of the role might appear different. If the role was created by us
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "PolicyForDestinationBucket",

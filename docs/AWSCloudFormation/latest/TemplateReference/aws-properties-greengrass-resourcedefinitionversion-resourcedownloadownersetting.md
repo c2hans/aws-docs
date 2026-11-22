@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrass-resourcedefinitionversion-resourcedownloadownersetting-syntax.json"></a>
 
-```
+```json
 {
   "[GroupOwner](#cfn-greengrass-resourcedefinitionversion-resourcedownloadownersetting-groupowner)" : {{String}},
   "[GroupPermission](#cfn-greengrass-resourcedefinitionversion-resourcedownloadownersetting-grouppermission)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrass-resourcedefinitionversion-resourcedownloadownersetting-syntax.yaml"></a>
 
-```
+```yaml
   [GroupOwner](#cfn-greengrass-resourcedefinitionversion-resourcedownloadownersetting-groupowner): {{String}}
   [GroupPermission](#cfn-greengrass-resourcedefinitionversion-resourcedownloadownersetting-grouppermission): {{String}}
 ```

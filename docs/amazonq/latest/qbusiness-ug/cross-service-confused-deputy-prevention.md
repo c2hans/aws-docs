@@ -19,7 +19,7 @@ The following example—which grants Amazon Q Business permission to perform a d
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {

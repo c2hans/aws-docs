@@ -17,7 +17,7 @@ Install the CloudWatch agent for each service that sends embedded metric format 
 
 After you install the agent, configure it to listen on a UDP or TCP port for the embedded metric format logs. The following example configuration listens on the default socket `tcp:25888`. For more information about agent configuration, see [Manually create or edit the CloudWatch agent configuration file](CloudWatch-Agent-Configuration-File-Details.md).
 
-```
+```json
 {
   "logs": {
     "metrics_collected": {

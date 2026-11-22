@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-launchtemplate-spotoptions-syntax.json"></a>
 
-```
+```json
 {
   "[BlockDurationMinutes](#cfn-ec2-launchtemplate-spotoptions-blockdurationminutes)" : {{Integer}},
   "[InstanceInterruptionBehavior](#cfn-ec2-launchtemplate-spotoptions-instanceinterruptionbehavior)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-launchtemplate-spotoptions-syntax.yaml"></a>
 
-```
+```yaml
   [BlockDurationMinutes](#cfn-ec2-launchtemplate-spotoptions-blockdurationminutes): {{Integer}}
   [InstanceInterruptionBehavior](#cfn-ec2-launchtemplate-spotoptions-instanceinterruptionbehavior): {{String}}
   [MaxPrice](#cfn-ec2-launchtemplate-spotoptions-maxprice): {{String}}

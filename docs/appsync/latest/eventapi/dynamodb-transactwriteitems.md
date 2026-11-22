@@ -16,7 +16,7 @@ The DynamoDB `TransactWriteItems` limits apply.
 
 The `TransactWriteItems` request object has the following structure:
 
-```
+```TypeScript
 type DynamoDBTransactWriteItemsRequest = {
   operation: 'TransactWriteItems';
   transactItems: TransactItem[];
@@ -121,7 +121,7 @@ Things to remember:
 
 Response structure (in `ctx.result`)
 
-```
+```TypeScript
 type Responser = {
   keys?: {[key: string]: string}[];
   cancellationReasons?: {

@@ -24,7 +24,7 @@ To use a customer managed key, you need the following settings:
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

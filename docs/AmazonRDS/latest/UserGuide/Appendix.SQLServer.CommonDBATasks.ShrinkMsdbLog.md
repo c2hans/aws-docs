@@ -15,7 +15,7 @@ The `rds_shrink_msdb_log_file` procedure has the following parameters.
 
 The following example gets the logical name and current size of the `msdb` transaction log file.
 
-```
+```sql
 USE msdb;
 GO
 
@@ -25,7 +25,7 @@ GO
 
 The following example shrinks the `msdb` transaction log file to 30 MB. In the example, replace the `@log_file_name` value {{MSDBLog}} with the logical name of your log file and the `@TargetSizeMB` value {{30}} with the target size in MB.
 
-```
+```sql
 EXEC msdb.dbo.rds_shrink_msdb_log_file @log_file_name = N'{{MSDBLog}}', @TargetSizeMB = {{30}};
 ```
 

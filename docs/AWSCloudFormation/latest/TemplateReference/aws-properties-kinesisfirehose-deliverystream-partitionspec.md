@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-partitionspec-syntax.json"></a>
 
-```
+```json
 {
   "[Identity](#cfn-kinesisfirehose-deliverystream-partitionspec-identity)" : {{[ PartitionField, ... ]}}
 }
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-partitionspec-syntax.yaml"></a>
 
-```
+```yaml
   [Identity](#cfn-kinesisfirehose-deliverystream-partitionspec-identity): {{
     - PartitionField}}
 ```

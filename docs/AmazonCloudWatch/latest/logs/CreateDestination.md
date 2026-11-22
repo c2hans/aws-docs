@@ -161,7 +161,7 @@ When the destination is created, CloudWatch Logs sends a test message to the des
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -192,7 +192,7 @@ When the destination is created, CloudWatch Logs sends a test message to the des
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [

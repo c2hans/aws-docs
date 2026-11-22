@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigateway-vpclink-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGateway::VpcLink",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigateway-vpclink-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGateway::VpcLink
 Properties:
   [Description](#cfn-apigateway-vpclink-description): {{String}}
@@ -101,7 +101,7 @@ The ID for the VPC link. For example: `abc123`.
 #### JSON
 <a name="aws-resource-apigateway-vpclink--examples--Create_VPC_link--json"></a>
 
-```
+```json
 {
     "Parameters": {
         "description": {
@@ -175,7 +175,7 @@ The ID for the VPC link. For example: `abc123`.
 #### YAML
 <a name="aws-resource-apigateway-vpclink--examples--Create_VPC_link--yaml"></a>
 
-```
+```yaml
 Parameters:
     description:
         Type: String

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrcontainers-jobtemplate-parametrics3monitoringconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[LogUri](#cfn-emrcontainers-jobtemplate-parametrics3monitoringconfiguration-loguri)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrcontainers-jobtemplate-parametrics3monitoringconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [LogUri](#cfn-emrcontainers-jobtemplate-parametrics3monitoringconfiguration-loguri): {{String}}
 ```
 

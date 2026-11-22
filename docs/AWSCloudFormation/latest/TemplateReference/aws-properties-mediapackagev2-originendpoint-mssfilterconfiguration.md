@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackagev2-originendpoint-mssfilterconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ClipStartTime](#cfn-mediapackagev2-originendpoint-mssfilterconfiguration-clipstarttime)" : {{String}},
   "[DrmSettings](#cfn-mediapackagev2-originendpoint-mssfilterconfiguration-drmsettings)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackagev2-originendpoint-mssfilterconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ClipStartTime](#cfn-mediapackagev2-originendpoint-mssfilterconfiguration-clipstarttime): {{String}}
   [DrmSettings](#cfn-mediapackagev2-originendpoint-mssfilterconfiguration-drmsettings): {{String}}
   [End](#cfn-mediapackagev2-originendpoint-mssfilterconfiguration-end): {{String}}

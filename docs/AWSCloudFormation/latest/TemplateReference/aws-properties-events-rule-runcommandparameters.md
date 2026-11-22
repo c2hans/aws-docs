@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-events-rule-runcommandparameters-syntax.json"></a>
 
-```
+```json
 {
   "[RunCommandTargets](#cfn-events-rule-runcommandparameters-runcommandtargets)" : {{[ RunCommandTarget, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-events-rule-runcommandparameters-syntax.yaml"></a>
 
-```
+```yaml
   [RunCommandTargets](#cfn-events-rule-runcommandparameters-runcommandtargets): {{
     - RunCommandTarget}}
 ```

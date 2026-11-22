@@ -98,7 +98,7 @@ Type: Array of [RegionalBucket](API_control_RegionalBucket.md) data types
 
 This request lists regional buckets.
 
-```
+```HTTP
             GET /v20180820/bucket HTTP /1.1
             Host:s3-outposts.us-west-2.amazonaws.com
             Content-Length: 0

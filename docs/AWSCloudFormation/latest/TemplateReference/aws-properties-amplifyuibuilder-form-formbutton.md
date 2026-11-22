@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amplifyuibuilder-form-formbutton-syntax.json"></a>
 
-```
+```json
 {
   "[Children](#cfn-amplifyuibuilder-form-formbutton-children)" : {{String}},
   "[Excluded](#cfn-amplifyuibuilder-form-formbutton-excluded)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amplifyuibuilder-form-formbutton-syntax.yaml"></a>
 
-```
+```yaml
   [Children](#cfn-amplifyuibuilder-form-formbutton-children): {{String}}
   [Excluded](#cfn-amplifyuibuilder-form-formbutton-excluded): {{Boolean}}
   [Position](#cfn-amplifyuibuilder-form-formbutton-position): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-workforce-oidcconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AuthenticationRequestExtraParams](#cfn-sagemaker-workforce-oidcconfig-authenticationrequestextraparams)" : {{{{{Key}}: {{Value}}, ...}}},
   "[AuthorizationEndpoint](#cfn-sagemaker-workforce-oidcconfig-authorizationendpoint)" : {{String}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-workforce-oidcconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AuthenticationRequestExtraParams](#cfn-sagemaker-workforce-oidcconfig-authenticationrequestextraparams): {{
     {{Key}}: {{Value}}}}
   [AuthorizationEndpoint](#cfn-sagemaker-workforce-oidcconfig-authorizationendpoint): {{String}}

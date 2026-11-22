@@ -16,7 +16,7 @@ For example, you could deny access to all Auto Scaling groups that include a tag
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

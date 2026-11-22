@@ -118,7 +118,7 @@ Updates an `Api` resource.
 #### PUT schema
 <a name="apis-apiid-request-body-put-example"></a>
 
-```
+```json
 {
   "body": "string"
 }
@@ -127,7 +127,7 @@ Updates an `Api` resource.
 #### PATCH schema
 <a name="apis-apiid-request-body-patch-example"></a>
 
-```
+```json
 {
   "name": "string",
   "description": "string",
@@ -165,7 +165,7 @@ Updates an `Api` resource.
 #### Api schema
 <a name="apis-apiid-response-body-api-example"></a>
 
-```
+```json
 {
   "apiId": "string",
   "name": "string",
@@ -210,7 +210,7 @@ Updates an `Api` resource.
 #### BadRequestException schema
 <a name="apis-apiid-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -219,7 +219,7 @@ Updates an `Api` resource.
 #### NotFoundException schema
 <a name="apis-apiid-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -229,7 +229,7 @@ Updates an `Api` resource.
 #### ConflictException schema
 <a name="apis-apiid-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -238,7 +238,7 @@ Updates an `Api` resource.
 #### LimitExceededException schema
 <a name="apis-apiid-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

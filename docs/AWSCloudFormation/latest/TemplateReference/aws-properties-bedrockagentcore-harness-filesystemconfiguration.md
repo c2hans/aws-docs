@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-harness-filesystemconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EfsAccessPoint](#cfn-bedrockagentcore-harness-filesystemconfiguration-efsaccesspoint)" : {{EfsAccessPointConfiguration}},
   "[S3FilesAccessPoint](#cfn-bedrockagentcore-harness-filesystemconfiguration-s3filesaccesspoint)" : {{S3FilesAccessPointConfiguration}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-harness-filesystemconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EfsAccessPoint](#cfn-bedrockagentcore-harness-filesystemconfiguration-efsaccesspoint): {{
     EfsAccessPointConfiguration}}
   [S3FilesAccessPoint](#cfn-bedrockagentcore-harness-filesystemconfiguration-s3filesaccesspoint): {{

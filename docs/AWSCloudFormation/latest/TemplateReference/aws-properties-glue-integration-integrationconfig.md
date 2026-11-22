@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-integration-integrationconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ContinuousSync](#cfn-glue-integration-integrationconfig-continuoussync)" : {{Boolean}},
   "[RefreshInterval](#cfn-glue-integration-integrationconfig-refreshinterval)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-integration-integrationconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ContinuousSync](#cfn-glue-integration-integrationconfig-continuoussync): {{Boolean}}
   [RefreshInterval](#cfn-glue-integration-integrationconfig-refreshinterval): {{String}}
   [SourceProperties](#cfn-glue-integration-integrationconfig-sourceproperties): {{

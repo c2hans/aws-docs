@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-matchmakingruleset-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-gamelift-matchmakingruleset-tag-key)" : {{String}},
   "[Value](#cfn-gamelift-matchmakingruleset-tag-value)" : {{String}}
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-matchmakingruleset-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-gamelift-matchmakingruleset-tag-key): {{String}}
   [Value](#cfn-gamelift-matchmakingruleset-tag-value): {{String}}
 ```

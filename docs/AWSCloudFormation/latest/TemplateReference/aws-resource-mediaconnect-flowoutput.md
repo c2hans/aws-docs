@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-mediaconnect-flowoutput-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MediaConnect::FlowOutput",
   "Properties" : {
@@ -51,7 +51,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-mediaconnect-flowoutput-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MediaConnect::FlowOutput
 Properties:
   [CidrAllowList](#cfn-mediaconnect-flowoutput-cidrallowlist): {{

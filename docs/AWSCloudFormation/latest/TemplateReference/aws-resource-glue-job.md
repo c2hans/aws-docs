@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-glue-job-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Glue::Job",
   "Properties" : {
@@ -50,7 +50,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-glue-job-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Glue::Job
 Properties:
   [AllocatedCapacity](#cfn-glue-job-allocatedcapacity): {{Number}}
@@ -294,7 +294,7 @@ The following example creates a job with an associated role. The ScriptLocation 
 #### JSON
 <a name="aws-resource-glue-job--examples----json"></a>
 
-```
+```json
 {
   "Description": "AWS Glue Job Test",
   "Resources": {
@@ -362,7 +362,7 @@ The following example creates a job with an associated role. The ScriptLocation 
 #### YAML
 <a name="aws-resource-glue-job--examples----yaml"></a>
 
-```
+```yaml
 ---
 Description: "AWS Glue Job Test"
 Resources:

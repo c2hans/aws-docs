@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcaconnectorad-template-enrollmentflagsv2-syntax.json"></a>
 
-```
+```json
 {
   "[EnableKeyReuseOnNtTokenKeysetStorageFull](#cfn-pcaconnectorad-template-enrollmentflagsv2-enablekeyreuseonnttokenkeysetstoragefull)" : {{Boolean}},
   "[IncludeSymmetricAlgorithms](#cfn-pcaconnectorad-template-enrollmentflagsv2-includesymmetricalgorithms)" : {{Boolean}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcaconnectorad-template-enrollmentflagsv2-syntax.yaml"></a>
 
-```
+```yaml
   [EnableKeyReuseOnNtTokenKeysetStorageFull](#cfn-pcaconnectorad-template-enrollmentflagsv2-enablekeyreuseonnttokenkeysetstoragefull): {{Boolean}}
   [IncludeSymmetricAlgorithms](#cfn-pcaconnectorad-template-enrollmentflagsv2-includesymmetricalgorithms): {{Boolean}}
   [NoSecurityExtension](#cfn-pcaconnectorad-template-enrollmentflagsv2-nosecurityextension): {{Boolean}}

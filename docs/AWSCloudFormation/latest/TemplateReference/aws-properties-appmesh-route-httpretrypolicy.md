@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-route-httpretrypolicy-syntax.json"></a>
 
-```
+```json
 {
   "[HttpRetryEvents](#cfn-appmesh-route-httpretrypolicy-httpretryevents)" : {{[ String, ... ]}},
   "[MaxRetries](#cfn-appmesh-route-httpretrypolicy-maxretries)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-route-httpretrypolicy-syntax.yaml"></a>
 
-```
+```yaml
   [HttpRetryEvents](#cfn-appmesh-route-httpretrypolicy-httpretryevents): {{
     - String}}
   [MaxRetries](#cfn-appmesh-route-httpretrypolicy-maxretries): {{Integer}}

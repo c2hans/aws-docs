@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-clusterschedulerconfig-priorityclass-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-sagemaker-clusterschedulerconfig-priorityclass-name)" : {{String}},
   "[Weight](#cfn-sagemaker-clusterschedulerconfig-priorityclass-weight)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-clusterschedulerconfig-priorityclass-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-sagemaker-clusterschedulerconfig-priorityclass-name): {{String}}
   [Weight](#cfn-sagemaker-clusterschedulerconfig-priorityclass-weight): {{Integer}}
 ```

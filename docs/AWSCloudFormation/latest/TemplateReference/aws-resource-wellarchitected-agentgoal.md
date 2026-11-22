@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-wellarchitected-agentgoal-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::WellArchitected::AgentGoal",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-wellarchitected-agentgoal-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::WellArchitected::AgentGoal
 Properties:
   [Description](#cfn-wellarchitected-agentgoal-description): {{String}}

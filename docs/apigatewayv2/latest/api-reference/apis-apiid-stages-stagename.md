@@ -91,7 +91,7 @@ Updates a `Stage`.
 #### PATCH schema
 <a name="apis-apiid-stages-stagename-request-body-patch-example"></a>
 
-```
+```json
 {
   "description": "string",
   "deploymentId": "string",
@@ -121,7 +121,7 @@ Updates a `Stage`.
 #### Stage schema
 <a name="apis-apiid-stages-stagename-response-body-stage-example"></a>
 
-```
+```json
 {
   "stageName": "string",
   "description": "string",
@@ -155,7 +155,7 @@ Updates a `Stage`.
 #### BadRequestException schema
 <a name="apis-apiid-stages-stagename-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -164,7 +164,7 @@ Updates a `Stage`.
 #### NotFoundException schema
 <a name="apis-apiid-stages-stagename-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -174,7 +174,7 @@ Updates a `Stage`.
 #### ConflictException schema
 <a name="apis-apiid-stages-stagename-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -183,7 +183,7 @@ Updates a `Stage`.
 #### LimitExceededException schema
 <a name="apis-apiid-stages-stagename-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

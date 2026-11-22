@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-entityresolution-matchingworkflow-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EntityResolution::MatchingWorkflow",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-entityresolution-matchingworkflow-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EntityResolution::MatchingWorkflow
 Properties:
   [Description](#cfn-entityresolution-matchingworkflow-description): {{String}}

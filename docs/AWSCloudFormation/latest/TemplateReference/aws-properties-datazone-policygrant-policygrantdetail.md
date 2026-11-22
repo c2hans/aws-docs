@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-policygrant-policygrantdetail-syntax.json"></a>
 
-```
+```json
 {
   "[AddToProjectMemberPool](#cfn-datazone-policygrant-policygrantdetail-addtoprojectmemberpool)" : {{AddToProjectMemberPoolPolicyGrantDetail}},
   "[CreateAssetType](#cfn-datazone-policygrant-policygrantdetail-createassettype)" : {{CreateAssetTypePolicyGrantDetail}},
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-policygrant-policygrantdetail-syntax.yaml"></a>
 
-```
+```yaml
   [AddToProjectMemberPool](#cfn-datazone-policygrant-policygrantdetail-addtoprojectmemberpool): {{
     AddToProjectMemberPoolPolicyGrantDetail}}
   [CreateAssetType](#cfn-datazone-policygrant-policygrantdetail-createassettype): {{

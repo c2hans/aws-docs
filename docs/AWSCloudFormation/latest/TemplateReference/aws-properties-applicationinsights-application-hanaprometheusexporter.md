@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationinsights-application-hanaprometheusexporter-syntax.json"></a>
 
-```
+```json
 {
   "[AgreeToInstallHANADBClient](#cfn-applicationinsights-application-hanaprometheusexporter-agreetoinstallhanadbclient)" : {{Boolean}},
   "[HANAPort](#cfn-applicationinsights-application-hanaprometheusexporter-hanaport)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationinsights-application-hanaprometheusexporter-syntax.yaml"></a>
 
-```
+```yaml
   [AgreeToInstallHANADBClient](#cfn-applicationinsights-application-hanaprometheusexporter-agreetoinstallhanadbclient): {{Boolean}}
   [HANAPort](#cfn-applicationinsights-application-hanaprometheusexporter-hanaport): {{String}}
   [HANASecretName](#cfn-applicationinsights-application-hanaprometheusexporter-hanasecretname): {{String}}

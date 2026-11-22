@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gateway-gatewaypolicyengineconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Arn](#cfn-bedrockagentcore-gateway-gatewaypolicyengineconfiguration-arn)" : {{String}},
   "[Mode](#cfn-bedrockagentcore-gateway-gatewaypolicyengineconfiguration-mode)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gateway-gatewaypolicyengineconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Arn](#cfn-bedrockagentcore-gateway-gatewaypolicyengineconfiguration-arn): {{String}}
   [Mode](#cfn-bedrockagentcore-gateway-gatewaypolicyengineconfiguration-mode): {{String}}
 ```

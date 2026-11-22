@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewayrule-routetotargetaction-syntax.json"></a>
 
-```
+```json
 {
   "[StaticRoute](#cfn-bedrockagentcore-gatewayrule-routetotargetaction-staticroute)" : {{StaticRoute}},
   "[WeightedRoute](#cfn-bedrockagentcore-gatewayrule-routetotargetaction-weightedroute)" : {{WeightedRoute}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewayrule-routetotargetaction-syntax.yaml"></a>
 
-```
+```yaml
   [StaticRoute](#cfn-bedrockagentcore-gatewayrule-routetotargetaction-staticroute): {{
     StaticRoute}}
   [WeightedRoute](#cfn-bedrockagentcore-gatewayrule-routetotargetaction-weightedroute): {{

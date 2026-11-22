@@ -14,7 +14,7 @@ You can configure Amazon SNS notifications using the AWS Management Console or t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

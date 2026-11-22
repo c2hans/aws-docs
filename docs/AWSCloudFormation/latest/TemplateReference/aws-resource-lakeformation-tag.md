@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lakeformation-tag-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::LakeFormation::Tag",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lakeformation-tag-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::LakeFormation::Tag
 Properties:
   [CatalogId](#cfn-lakeformation-tag-catalogid): {{String}}
@@ -101,7 +101,7 @@ The following example demonstrates how to define a tag resource in a template.
 #### JSON
 <a name="aws-resource-lakeformation-tag--examples--Creating_a_tag_resource_in_a_template--json"></a>
 
-```
+```json
 {
     "SampleTag": {
         "Type": "AWS::LakeFormation::Tag",
@@ -116,7 +116,7 @@ The following example demonstrates how to define a tag resource in a template.
 #### YAML
 <a name="aws-resource-lakeformation-tag--examples--Creating_a_tag_resource_in_a_template--yaml"></a>
 
-```
+```yaml
 SampleTag:
     Type: AWS::LakeFormation::Tag
     Properties:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-sheet-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-quicksight-analysis-sheet-name)" : {{String}},
   "[SheetId](#cfn-quicksight-analysis-sheet-sheetid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-sheet-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-quicksight-analysis-sheet-name): {{String}}
   [SheetId](#cfn-quicksight-analysis-sheet-sheetid): {{String}}
 ```

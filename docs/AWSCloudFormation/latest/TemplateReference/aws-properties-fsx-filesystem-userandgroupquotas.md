@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-filesystem-userandgroupquotas-syntax.json"></a>
 
-```
+```json
 {
   "[Id](#cfn-fsx-filesystem-userandgroupquotas-id)" : {{Integer}},
   "[StorageCapacityQuotaGiB](#cfn-fsx-filesystem-userandgroupquotas-storagecapacityquotagib)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-filesystem-userandgroupquotas-syntax.yaml"></a>
 
-```
+```yaml
   [Id](#cfn-fsx-filesystem-userandgroupquotas-id): {{Integer}}
   [StorageCapacityQuotaGiB](#cfn-fsx-filesystem-userandgroupquotas-storagecapacityquotagib): {{Integer}}
   [Type](#cfn-fsx-filesystem-userandgroupquotas-type): {{String}}

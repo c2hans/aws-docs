@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-association-slackbidirectionalconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-devopsagent-association-slackbidirectionalconfiguration-enabled)" : {{Boolean}},
   "[RoleArn](#cfn-devopsagent-association-slackbidirectionalconfiguration-rolearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-association-slackbidirectionalconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-devopsagent-association-slackbidirectionalconfiguration-enabled): {{Boolean}}
   [RoleArn](#cfn-devopsagent-association-slackbidirectionalconfiguration-rolearn): {{String}}
 ```

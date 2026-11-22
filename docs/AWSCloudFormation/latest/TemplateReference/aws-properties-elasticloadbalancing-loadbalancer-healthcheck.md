@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancing-loadbalancer-healthcheck-syntax.json"></a>
 
-```
+```json
 {
   "[HealthyThreshold](#cfn-elasticloadbalancing-loadbalancer-healthcheck-healthythreshold)" : {{String}},
   "[Interval](#cfn-elasticloadbalancing-loadbalancer-healthcheck-interval)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancing-loadbalancer-healthcheck-syntax.yaml"></a>
 
-```
+```yaml
   [HealthyThreshold](#cfn-elasticloadbalancing-loadbalancer-healthcheck-healthythreshold): {{String}}
   [Interval](#cfn-elasticloadbalancing-loadbalancer-healthcheck-interval): {{String}}
   [Target](#cfn-elasticloadbalancing-loadbalancer-healthcheck-target): {{String}}

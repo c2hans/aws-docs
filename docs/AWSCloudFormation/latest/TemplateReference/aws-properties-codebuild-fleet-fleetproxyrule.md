@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codebuild-fleet-fleetproxyrule-syntax.json"></a>
 
-```
+```json
 {
   "[Effect](#cfn-codebuild-fleet-fleetproxyrule-effect)" : {{String}},
   "[Entities](#cfn-codebuild-fleet-fleetproxyrule-entities)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codebuild-fleet-fleetproxyrule-syntax.yaml"></a>
 
-```
+```yaml
   [Effect](#cfn-codebuild-fleet-fleetproxyrule-effect): {{String}}
   [Entities](#cfn-codebuild-fleet-fleetproxyrule-entities): {{
     - String}}

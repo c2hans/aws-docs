@@ -139,7 +139,7 @@ The time stamp for when the tasks `DesiredStatus` moved to `STOPPED`. This occur
 
 The following JSON response is for a single-container task.
 
-```
+```json
 {
   "Cluster": "default",
   "TaskARN": "arn:aws:ecs:us-east-2:{{012345678910}}:task/9781c248-0edd-4cdb-9a93-f63cb662a5d3",

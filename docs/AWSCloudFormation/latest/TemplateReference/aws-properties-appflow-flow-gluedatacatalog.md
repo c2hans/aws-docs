@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-flow-gluedatacatalog-syntax.json"></a>
 
-```
+```json
 {
   "[DatabaseName](#cfn-appflow-flow-gluedatacatalog-databasename)" : {{String}},
   "[RoleArn](#cfn-appflow-flow-gluedatacatalog-rolearn)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-flow-gluedatacatalog-syntax.yaml"></a>
 
-```
+```yaml
   [DatabaseName](#cfn-appflow-flow-gluedatacatalog-databasename): {{String}}
   [RoleArn](#cfn-appflow-flow-gluedatacatalog-rolearn): {{String}}
   [TablePrefix](#cfn-appflow-flow-gluedatacatalog-tableprefix): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-datasource-s3parameters-syntax.json"></a>
 
-```
+```json
 {
   "[ManifestFileLocation](#cfn-quicksight-datasource-s3parameters-manifestfilelocation)" : {{ManifestFileLocation}},
   "[RoleArn](#cfn-quicksight-datasource-s3parameters-rolearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-datasource-s3parameters-syntax.yaml"></a>
 
-```
+```yaml
   [ManifestFileLocation](#cfn-quicksight-datasource-s3parameters-manifestfilelocation): {{
     ManifestFileLocation}}
   [RoleArn](#cfn-quicksight-datasource-s3parameters-rolearn): {{String}}

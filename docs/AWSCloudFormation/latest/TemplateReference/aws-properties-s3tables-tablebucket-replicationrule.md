@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3tables-tablebucket-replicationrule-syntax.json"></a>
 
-```
+```json
 {
   "[Destinations](#cfn-s3tables-tablebucket-replicationrule-destinations)" : {{[ ReplicationDestination, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3tables-tablebucket-replicationrule-syntax.yaml"></a>
 
-```
+```yaml
   [Destinations](#cfn-s3tables-tablebucket-replicationrule-destinations): {{
     - ReplicationDestination}}
 ```

@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-backup-framework-controlscope-syntax.json"></a>
 
-```
+```json
 {
   "[ComplianceResourceIds](#cfn-backup-framework-controlscope-complianceresourceids)" : {{[ String, ... ]}},
   "[ComplianceResourceTypes](#cfn-backup-framework-controlscope-complianceresourcetypes)" : {{[ String, ... ]}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-backup-framework-controlscope-syntax.yaml"></a>
 
-```
+```yaml
   [ComplianceResourceIds](#cfn-backup-framework-controlscope-complianceresourceids): {{
     - String}}
   [ComplianceResourceTypes](#cfn-backup-framework-controlscope-complianceresourcetypes): {{

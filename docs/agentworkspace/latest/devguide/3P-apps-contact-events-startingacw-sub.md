@@ -8,13 +8,13 @@ Subscribes a callback function to-be-invoked whenever a contact StartingAcw even
 
  **Signature**
 
-```
+```typescript
 onStartingAcw(handler: ContactStartingAcwHandler, contactId?: string)
 ```
 
  **Usage**
 
-```
+```typescript
 const handler: ContactStartingAcwHandler = async (data: ContactStartingAcw) => {
     console.log("Contact StartingAcw occurred! " + data);
 };
@@ -32,6 +32,6 @@ contactClient.onStartingAcw(handler);
 
  **Permissions required:**
 
-```
+```typescript
 Contact.Details.View
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-partition-skewedinfo-syntax.json"></a>
 
-```
+```json
 {
   "[SkewedColumnNames](#cfn-glue-partition-skewedinfo-skewedcolumnnames)" : {{[ String, ... ]}},
   "[SkewedColumnValueLocationMaps](#cfn-glue-partition-skewedinfo-skewedcolumnvaluelocationmaps)" : {{Json}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-partition-skewedinfo-syntax.yaml"></a>
 
-```
+```yaml
   [SkewedColumnNames](#cfn-glue-partition-skewedinfo-skewedcolumnnames): {{
     - String}}
   [SkewedColumnValueLocationMaps](#cfn-glue-partition-skewedinfo-skewedcolumnvaluelocationmaps): {{Json}}

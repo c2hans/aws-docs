@@ -27,7 +27,7 @@ Consider the following when you use the deployment circuit breaker method on a s
 
 The following `create-service` AWS CLI example shows how to create a Linux service when the deployment circuit breaker is used with the rollback option.
 
-```
+```JSON
 aws ecs create-service \
      --service-name {{MyService}} \
      --deployment-controller type={{ECS}} \
@@ -42,7 +42,7 @@ aws ecs create-service \
 
 The following `create-service` AWS CLI example shows how to create a service with a custom deployment circuit breaker configuration that uses a fixed failure count of 5 and cumulative failure tracking.
 
-```
+```JSON
 aws ecs create-service \
      --service-name {{MyService}} \
      --deployment-controller type={{ECS}} \

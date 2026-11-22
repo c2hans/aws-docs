@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-boxplotvisual-syntax.json"></a>
 
-```
+```json
 {
   "[Actions](#cfn-quicksight-analysis-boxplotvisual-actions)" : {{[ VisualCustomAction, ... ]}},
   "[ChartConfiguration](#cfn-quicksight-analysis-boxplotvisual-chartconfiguration)" : {{BoxPlotChartConfiguration}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-boxplotvisual-syntax.yaml"></a>
 
-```
+```yaml
   [Actions](#cfn-quicksight-analysis-boxplotvisual-actions): {{
     - VisualCustomAction}}
   [ChartConfiguration](#cfn-quicksight-analysis-boxplotvisual-chartconfiguration): {{

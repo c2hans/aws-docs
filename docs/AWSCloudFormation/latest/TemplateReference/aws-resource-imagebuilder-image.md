@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-imagebuilder-image-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ImageBuilder::Image",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-imagebuilder-image-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ImageBuilder::Image
 Properties:
   [ContainerRecipeArn](#cfn-imagebuilder-image-containerrecipearn): {{String}}
@@ -218,7 +218,7 @@ The following example shows the template for the Image resource in both YAML and
 #### YAML
 <a name="aws-resource-imagebuilder-image--examples--Create_an_image--yaml"></a>
 
-```
+```yaml
 Resources:
   ImageAllParameters:
     Type: 'AWS::ImageBuilder::Image'
@@ -237,7 +237,7 @@ Resources:
 #### JSON
 <a name="aws-resource-imagebuilder-image--examples--Create_an_image--json"></a>
 
-```
+```json
 {
     "Resources": {
         "ImageAllParameters": {
@@ -274,7 +274,7 @@ The following example creates an image by running an existing image pipeline. Wh
 #### YAML
 <a name="aws-resource-imagebuilder-image--examples--Create_a_pipeline-driven_image--yaml"></a>
 
-```
+```yaml
 Resources:
   PipelineDrivenImage:
     Type: AWS::ImageBuilder::Image
@@ -289,7 +289,7 @@ Resources:
 #### JSON
 <a name="aws-resource-imagebuilder-image--examples--Create_a_pipeline-driven_image--json"></a>
 
-```
+```json
 {
     "Resources": {
         "PipelineDrivenImage": {

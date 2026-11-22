@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-logs-logstream-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Logs::LogStream",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-logs-logstream-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Logs::LogStream
 Properties:
   [LogGroupName](#cfn-logs-logstream-loggroupname): {{String}}
@@ -85,7 +85,7 @@ The following example creates a log stream named `MyAppLogStream` in the `exampl
 #### JSON
 <a name="aws-resource-logs-logstream--examples--Create_a_Log_Stream--json"></a>
 
-```
+```json
 "LogStream": {
   "Type": "AWS::Logs::LogStream",
   "Properties": {
@@ -98,7 +98,7 @@ The following example creates a log stream named `MyAppLogStream` in the `exampl
 #### YAML
 <a name="aws-resource-logs-logstream--examples--Create_a_Log_Stream--yaml"></a>
 
-```
+```yaml
 LogStream:
   Type: AWS::Logs::LogStream
   Properties:

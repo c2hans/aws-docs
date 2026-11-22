@@ -11,6 +11,6 @@ You can list all columns for all tables in `AwsDataCatalog` or for all tables in
 **Example – Listing all columns for all tables in a specific database**
 The following example query lists all columns for all tables in the database `webdata`.
 
-```
+```sql
 SELECT * FROM information_schema.columns WHERE table_schema = 'webdata'
 ```

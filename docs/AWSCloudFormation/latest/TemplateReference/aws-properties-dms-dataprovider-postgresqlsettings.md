@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dms-dataprovider-postgresqlsettings-syntax.json"></a>
 
-```
+```json
 {
   "[CertificateArn](#cfn-dms-dataprovider-postgresqlsettings-certificatearn)" : {{String}},
   "[DatabaseName](#cfn-dms-dataprovider-postgresqlsettings-databasename)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dms-dataprovider-postgresqlsettings-syntax.yaml"></a>
 
-```
+```yaml
   [CertificateArn](#cfn-dms-dataprovider-postgresqlsettings-certificatearn): {{String}}
   [DatabaseName](#cfn-dms-dataprovider-postgresqlsettings-databasename): {{String}}
   [Port](#cfn-dms-dataprovider-postgresqlsettings-port): {{Integer}}

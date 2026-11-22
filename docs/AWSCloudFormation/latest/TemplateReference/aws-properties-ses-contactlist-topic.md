@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-contactlist-topic-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultSubscriptionStatus](#cfn-ses-contactlist-topic-defaultsubscriptionstatus)" : {{String}},
   "[Description](#cfn-ses-contactlist-topic-description)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-contactlist-topic-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultSubscriptionStatus](#cfn-ses-contactlist-topic-defaultsubscriptionstatus): {{String}}
   [Description](#cfn-ses-contactlist-topic-description): {{String}}
   [DisplayName](#cfn-ses-contactlist-topic-displayname): {{String}}

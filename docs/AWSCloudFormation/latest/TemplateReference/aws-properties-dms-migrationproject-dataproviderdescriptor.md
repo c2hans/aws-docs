@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dms-migrationproject-dataproviderdescriptor-syntax.json"></a>
 
-```
+```json
 {
   "[DataProviderArn](#cfn-dms-migrationproject-dataproviderdescriptor-dataproviderarn)" : {{String}},
   "[DataProviderIdentifier](#cfn-dms-migrationproject-dataproviderdescriptor-dataprovideridentifier)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dms-migrationproject-dataproviderdescriptor-syntax.yaml"></a>
 
-```
+```yaml
   [DataProviderArn](#cfn-dms-migrationproject-dataproviderdescriptor-dataproviderarn): {{String}}
   [DataProviderIdentifier](#cfn-dms-migrationproject-dataproviderdescriptor-dataprovideridentifier): {{String}}
   [DataProviderName](#cfn-dms-migrationproject-dataproviderdescriptor-dataprovidername): {{String}}

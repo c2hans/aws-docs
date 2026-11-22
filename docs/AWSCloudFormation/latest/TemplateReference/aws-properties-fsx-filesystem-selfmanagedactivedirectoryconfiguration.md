@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-filesystem-selfmanagedactivedirectoryconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DnsIps](#cfn-fsx-filesystem-selfmanagedactivedirectoryconfiguration-dnsips)" : {{[ String, ... ]}},
   "[DomainJoinServiceAccountSecret](#cfn-fsx-filesystem-selfmanagedactivedirectoryconfiguration-domainjoinserviceaccountsecret)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-filesystem-selfmanagedactivedirectoryconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DnsIps](#cfn-fsx-filesystem-selfmanagedactivedirectoryconfiguration-dnsips): {{
     - String}}
   [DomainJoinServiceAccountSecret](#cfn-fsx-filesystem-selfmanagedactivedirectoryconfiguration-domainjoinserviceaccountsecret): {{String}}

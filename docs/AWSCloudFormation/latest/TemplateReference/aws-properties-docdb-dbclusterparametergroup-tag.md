@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-docdb-dbclusterparametergroup-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-docdb-dbclusterparametergroup-tag-key)" : {{String}},
   "[Value](#cfn-docdb-dbclusterparametergroup-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-docdb-dbclusterparametergroup-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-docdb-dbclusterparametergroup-tag-key): {{String}}
   [Value](#cfn-docdb-dbclusterparametergroup-tag-value): {{String}}
 ```

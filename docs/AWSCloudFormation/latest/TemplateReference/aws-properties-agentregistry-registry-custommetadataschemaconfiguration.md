@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-agentregistry-registry-custommetadataschemaconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultSchema](#cfn-agentregistry-registry-custommetadataschemaconfiguration-defaultschema)" : {{String}},
   "[RecordTypeSchemaOverrides](#cfn-agentregistry-registry-custommetadataschemaconfiguration-recordtypeschemaoverrides)" : {{[ RecordTypeSchemaOverride, ... ]}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-agentregistry-registry-custommetadataschemaconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultSchema](#cfn-agentregistry-registry-custommetadataschemaconfiguration-defaultschema): {{String}}
   [RecordTypeSchemaOverrides](#cfn-agentregistry-registry-custommetadataschemaconfiguration-recordtypeschemaoverrides): {{
     - RecordTypeSchemaOverride}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-association-slacktransmissiontarget-syntax.json"></a>
 
-```
+```json
 {
   "[IncidentResponseTarget](#cfn-devopsagent-association-slacktransmissiontarget-incidentresponsetarget)" : {{SlackChannel}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-association-slacktransmissiontarget-syntax.yaml"></a>
 
-```
+```yaml
   [IncidentResponseTarget](#cfn-devopsagent-association-slacktransmissiontarget-incidentresponsetarget): {{
     SlackChannel}}
 ```

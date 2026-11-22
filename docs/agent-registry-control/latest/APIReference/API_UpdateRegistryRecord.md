@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 
 # UpdateRegistryRecord
 
-Updates a registry record. The update is asynchronous: the record is returned with the UPDATING status while it is processed. Fields that use update wrappers follow PATCH semantics: omit the field to leave it unchanged.
+Updates a registry record. The update is asynchronous: the operation returns the record with the `UPDATING` status while the registry processes it. If a GitHub user must first authorize access to the record's skill source, the operation returns the record with the `UPDATE_PENDING_AUTH` status instead. Fields that use update wrappers follow PATCH semantics: omit the field to leave it unchanged.
 
 ## Request Syntax
 <a name="API_UpdateRegistryRecord_RequestSyntax"></a>
@@ -14,6 +14,12 @@ PATCH /registries/{{registryId}}/records/{{recordId}} HTTP/1.1
 Content-type: application/json
 
 {
+   "artifact": {
+      "optionalValue": {
+         "content": {{blob}},
+         "sha256": "{{string}}"
+      }
+   },
    "customMetadata": {
       "optionalValue": {{JSON value}}
    },
@@ -49,6 +55,9 @@ Content-type: application/json
             "optionalValue": {
                "additionalData": {
                   "optionalValue": {
+                     "repositoryProvider": {
+                        "optionalValue": "{{string}}"
+                     },
                      "skillMd": {
                         "optionalValue": {
                            "data": {
@@ -71,6 +80,24 @@ Content-type: application/json
                               }
                            }
                         }
+                     },
+                     "skillPackage": {
+                        "optionalValue": {
+                           "source": {
+                              "fromUrl": {
+                                 "credentialProviderConfigurations": [
+                                    {
+                                       "credentialProvider": { ... },
+                                       "credentialProviderType": "{{string}}"
+                                    }
+                                 ],
+                                 "url": "{{string}}"
+                              }
+                           }
+                        }
+                     },
+                     "sourceConfiguration": {
+                        "optionalValue": { ... }
                      }
                   }
                },
@@ -165,6 +192,7 @@ Content-type: application/json
    "displayName": {
       "optionalValue": "{{string}}"
    },
+   "forceAuthentication": {{boolean}},
    "name": "{{string}}",
    "provenance": [
       {
@@ -202,6 +230,11 @@ Required: Yes
 
 The request accepts the following data in JSON format.
 
+ ** [artifact](#API_UpdateRegistryRecord_RequestSyntax) **   <a name="agentregistrycontrol-UpdateRegistryRecord-request-artifact"></a>
+The change to the record's uploaded skill package. Omit it to keep the current package, specify an empty object to remove an uploaded package, or specify `optionalValue` to upload a new package. An empty object doesn't remove a package that the record synchronizes from a source. To stop that synchronization, remove `skillPackage`. A request that changes `skillMd.data` replaces the record's package with that text, even if you omit this member.
+Type: [UpdatedRegistryRecordArtifact](API_UpdatedRegistryRecordArtifact.md) object
+Required: No
+
  ** [customMetadata](#API_UpdateRegistryRecord_RequestSyntax) **   <a name="agentregistrycontrol-UpdateRegistryRecord-request-customMetadata"></a>
 The updated custom metadata for the registry record. Values can be strings (maximum 128 characters) or native JSON booleans (`true` or `false`). Omit to leave the existing metadata unchanged. Supply the wrapper with a full replacement set to update, or with a null value to clear all metadata.
 Type: [UpdatedCustomMetadataMap](API_UpdatedCustomMetadataMap.md) object
@@ -220,6 +253,11 @@ Required: No
  ** [displayName](#API_UpdateRegistryRecord_RequestSyntax) **   <a name="agentregistrycontrol-UpdateRegistryRecord-request-displayName"></a>
 The updated display name of the registry record. Omit to leave the display name unchanged; provide an empty wrapper to unset it.
 Type: [UpdatedDisplayName](API_UpdatedDisplayName.md) object
+Required: No
+
+ ** [forceAuthentication](#API_UpdateRegistryRecord_RequestSyntax) **   <a name="agentregistrycontrol-UpdateRegistryRecord-request-forceAuthentication"></a>
+Specifies whether to ask a GitHub user to authorize access again, even when the current authorization still works, for example to use a different GitHub account. You can use it only together with `triggerSynchronization`, for a GitHub source whose credential provider uses the `AUTHORIZATION_CODE` grant. The new authorization also replaces the one that the same IAM principal's other records in the registry use for the same host, credential provider, scopes, and custom parameters.
+Type: Boolean
 Required: No
 
  ** [name](#API_UpdateRegistryRecord_RequestSyntax) **   <a name="agentregistrycontrol-UpdateRegistryRecord-request-name"></a>
@@ -249,7 +287,7 @@ Pattern: `[a-zA-Z0-9.-]+`
 Required: No
 
  ** [triggerSynchronization](#API_UpdateRegistryRecord_RequestSyntax) **   <a name="agentregistrycontrol-UpdateRegistryRecord-request-triggerSynchronization"></a>
-Whether to trigger synchronization of the record's descriptor content from its source
+Specifies whether to synchronize the record's descriptor content from its source. For a skill record, the registry reads the stored `skillMd.source` or `skillPackage.source` again, because it doesn't watch the source for changes. For a GitHub source, the operation also returns a new authorization link when one is needed. An update that sets a different skill source starts a synchronization even if you omit this member.
 Type: Boolean
 Required: No
 
@@ -261,6 +299,7 @@ HTTP/1.1 202
 Content-type: application/json
 
 {
+   "authorizationData": { ... },
    "createdAt": "string",
    "createdBy": "string",
    "createdByAutoDetection": boolean,
@@ -285,6 +324,7 @@ Content-type: application/json
       },
       "agentSkillsDefinition": {
          "additionalData": {
+            "repositoryProvider": "string",
             "skillMd": {
                "data": "string",
                "dataSchemaVersion": "string",
@@ -299,7 +339,21 @@ Content-type: application/json
                      "url": "string"
                   }
                }
-            }
+            },
+            "skillPackage": {
+               "source": {
+                  "fromUrl": {
+                     "credentialProviderConfigurations": [
+                        {
+                           "credentialProvider": { ... },
+                           "credentialProviderType": "string"
+                        }
+                     ],
+                     "url": "string"
+                  }
+               }
+            },
+            "sourceConfiguration": { ... }
          },
          "data": "string",
          "dataSchemaVersion": "string"
@@ -383,6 +437,11 @@ If the action is successful, the service sends back an HTTP 202 response.
 
 The following data is returned in JSON format by the service.
 
+ ** [authorizationData](#API_UpdateRegistryRecord_ResponseSyntax) **   <a name="agentregistrycontrol-UpdateRegistryRecord-response-authorizationData"></a>
+The authorization that a GitHub user must complete before the record's synchronization starts. Present only in this response, and only while the status is `UPDATE_PENDING_AUTH`. If the status is `UPDATE_PENDING_AUTH` but this member is absent, call `UpdateRegistryRecord` again with `triggerSynchronization` to get a new authorization link.
+Type: [AuthorizationData](API_AuthorizationData.md) object
+ **Note: **This object is a Union. Only one member of this object can be specified or returned.
+
  ** [createdAt](#API_UpdateRegistryRecord_ResponseSyntax) **   <a name="agentregistrycontrol-UpdateRegistryRecord-response-createdAt"></a>
 The timestamp when the registry record was created.
 Type: Timestamp
@@ -461,9 +520,9 @@ Length Constraints: Minimum length of 46. Maximum length of 2048.
 Pattern: `arn:aws(-[^:]+)?:agent-registry:[a-z0-9-]+:[0-9]{12}:registry/[a-zA-Z0-9]{12,16}`
 
  ** [status](#API_UpdateRegistryRecord_ResponseSyntax) **   <a name="agentregistrycontrol-UpdateRegistryRecord-response-status"></a>
-The lifecycle status of the registry record.
+The lifecycle status of the registry record. `UPDATE_PENDING_AUTH` means that the update waits for a GitHub user to authorize access before the record synchronizes from its GitHub source. For the authorization link, see `authorizationData`.
 Type: String
-Valid Values: `DRAFT | PENDING_APPROVAL | APPROVED | REJECTED | DEPRECATED | CREATING | UPDATING | CREATE_FAILED | UPDATE_FAILED`
+Valid Values: `DRAFT | PENDING_APPROVAL | APPROVED | REJECTED | DEPRECATED | CREATING | UPDATING | CREATE_FAILED | UPDATE_FAILED | CREATE_PENDING_AUTH | UPDATE_PENDING_AUTH`
 
  ** [statusReason](#API_UpdateRegistryRecord_ResponseSyntax) **   <a name="agentregistrycontrol-UpdateRegistryRecord-response-statusReason"></a>
 The reason for the current status. Typically populated when the status indicates a failure state.

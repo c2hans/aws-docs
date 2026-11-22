@@ -40,7 +40,7 @@ The following `put-object-tagging` example command shows how you can use the AWS
 
 The following command adds a tag-set for existing object `puppy.jpg` using access point {{my-access-point}}.
 
-```
+```bash
 aws s3api put-object-tagging --bucket arn:aws:s3:{{AWS Region}}:111122223333:accesspoint/{{my-access-point}} --key {{puppy.jpg}} --tagging TagSet=[{Key="{{animal}}",Value="{{true}}"}]
 ```
 

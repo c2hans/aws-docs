@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationinsights-application-sqlserverprometheusexporter-syntax.json"></a>
 
-```
+```json
 {
   "[PrometheusPort](#cfn-applicationinsights-application-sqlserverprometheusexporter-prometheusport)" : {{String}},
   "[SQLSecretName](#cfn-applicationinsights-application-sqlserverprometheusexporter-sqlsecretname)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationinsights-application-sqlserverprometheusexporter-syntax.yaml"></a>
 
-```
+```yaml
   [PrometheusPort](#cfn-applicationinsights-application-sqlserverprometheusexporter-prometheusport): {{String}}
   [SQLSecretName](#cfn-applicationinsights-application-sqlserverprometheusexporter-sqlsecretname): {{String}}
 ```

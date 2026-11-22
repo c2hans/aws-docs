@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-servicecatalog-cloudformationproduct-provisioningartifactproperties-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-servicecatalog-cloudformationproduct-provisioningartifactproperties-description)" : {{String}},
   "[DisableTemplateValidation](#cfn-servicecatalog-cloudformationproduct-provisioningartifactproperties-disabletemplatevalidation)" : {{Boolean}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-servicecatalog-cloudformationproduct-provisioningartifactproperties-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-servicecatalog-cloudformationproduct-provisioningartifactproperties-description): {{String}}
   [DisableTemplateValidation](#cfn-servicecatalog-cloudformationproduct-provisioningartifactproperties-disabletemplatevalidation): {{Boolean}}
   [Info](#cfn-servicecatalog-cloudformationproduct-provisioningartifactproperties-info): {{
@@ -92,7 +92,7 @@ The type of provisioning artifact.
 #### JSON
 <a name="aws-properties-servicecatalog-cloudformationproduct-provisioningartifactproperties--examples--Example_-_Specify_the_template_of_a_provisioning_artifact--json"></a>
 
-```
+```json
 {
     "Name": "v2",
     "Description": "Adds an output for the bucket name",
@@ -106,7 +106,7 @@ The type of provisioning artifact.
 #### YAML
 <a name="aws-properties-servicecatalog-cloudformationproduct-provisioningartifactproperties--examples--Example_-_Specify_the_template_of_a_provisioning_artifact--yaml"></a>
 
-```
+```yaml
 Name: v2
 Description: Adds an output for the bucket name
 Type: CLOUD_FORMATION_TEMPLATE

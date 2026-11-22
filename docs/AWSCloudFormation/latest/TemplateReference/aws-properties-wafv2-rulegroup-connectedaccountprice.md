@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-rulegroup-connectedaccountprice-syntax.json"></a>
 
-```
+```json
 {
   "[Amount](#cfn-wafv2-rulegroup-connectedaccountprice-amount)" : {{String}},
   "[Currency](#cfn-wafv2-rulegroup-connectedaccountprice-currency)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-rulegroup-connectedaccountprice-syntax.yaml"></a>
 
-```
+```yaml
   [Amount](#cfn-wafv2-rulegroup-connectedaccountprice-amount): {{String}}
   [Currency](#cfn-wafv2-rulegroup-connectedaccountprice-currency): {{String}}
 ```

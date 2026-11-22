@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-joininstruction-syntax.json"></a>
 
-```
+```json
 {
   "[LeftJoinKeyProperties](#cfn-quicksight-dataset-joininstruction-leftjoinkeyproperties)" : {{JoinKeyProperties}},
   "[LeftOperand](#cfn-quicksight-dataset-joininstruction-leftoperand)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-joininstruction-syntax.yaml"></a>
 
-```
+```yaml
   [LeftJoinKeyProperties](#cfn-quicksight-dataset-joininstruction-leftjoinkeyproperties): {{
     JoinKeyProperties}}
   [LeftOperand](#cfn-quicksight-dataset-joininstruction-leftoperand): {{String}}

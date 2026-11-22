@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-endpoint-bluegreenupdatepolicy-syntax.json"></a>
 
-```
+```json
 {
   "[MaximumExecutionTimeoutInSeconds](#cfn-sagemaker-endpoint-bluegreenupdatepolicy-maximumexecutiontimeoutinseconds)" : {{Integer}},
   "[TerminationWaitInSeconds](#cfn-sagemaker-endpoint-bluegreenupdatepolicy-terminationwaitinseconds)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-endpoint-bluegreenupdatepolicy-syntax.yaml"></a>
 
-```
+```yaml
   [MaximumExecutionTimeoutInSeconds](#cfn-sagemaker-endpoint-bluegreenupdatepolicy-maximumexecutiontimeoutinseconds): {{Integer}}
   [TerminationWaitInSeconds](#cfn-sagemaker-endpoint-bluegreenupdatepolicy-terminationwaitinseconds): {{Integer}}
   [TrafficRoutingConfiguration](#cfn-sagemaker-endpoint-bluegreenupdatepolicy-trafficroutingconfiguration): {{

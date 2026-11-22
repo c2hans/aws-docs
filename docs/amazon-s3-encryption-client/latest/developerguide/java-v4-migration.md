@@ -90,7 +90,7 @@ Update your Maven or Gradle dependencies to use the latest version of the Amazon
 
 **Maven (pom.xml):**
 
-```
+```xml
 <dependency>
     <groupId>software.amazon.encryption.s3</groupId>
     <artifactId>amazon-s3-encryption-client-java</artifactId>
@@ -100,7 +100,7 @@ Update your Maven or Gradle dependencies to use the latest version of the Amazon
 
 **Gradle (build.gradle):**
 
-```
+```groovy
 dependencies {
     implementation 'software.amazon.encryption.s3:amazon-s3-encryption-client-java:3.6.0'
 }
@@ -113,25 +113,25 @@ After updating your dependencies, rebuild and deploy your applications:
 
 1. **Clean and rebuild:**
 
-   ```
+   ```bash
    mvn clean install
    ```
 
    or for Gradle:
 
-   ```
+   ```bash
    gradle clean build
    ```
 
 1. **Run your tests:**
 
-   ```
+   ```bash
    mvn test
    ```
 
    or for Gradle:
 
-   ```
+   ```bash
    gradle test
    ```
 
@@ -149,7 +149,7 @@ The following examples show how to migrate from 3.*x* to 4.*x* clients using dif
 
 **Pre-migration (3.x Client)**
 
-```
+```java
 // V3 Client (Prior 3.x versions)
 // Uses default algorithm without key commitment (ALG_AES_256_GCM_IV12_TAG16_NO_KDF)
 S3Client v3Client = S3EncryptionClient.builder()
@@ -172,7 +172,7 @@ Update your Maven or Gradle dependencies to use the latest version of the Amazon
 
 **Maven (pom.xml):**
 
-```
+```xml
 <dependency>
     <groupId>software.amazon.encryption.s3</groupId>
     <artifactId>amazon-s3-encryption-client-java</artifactId>
@@ -182,7 +182,7 @@ Update your Maven or Gradle dependencies to use the latest version of the Amazon
 
 **Gradle (build.gradle):**
 
-```
+```groovy
 dependencies {
     implementation 'software.amazon.encryption.s3:amazon-s3-encryption-client-java:{{4.x}}'
 }
@@ -190,7 +190,7 @@ dependencies {
 
 After updating your dependencies, make code changes as described below. This should result in no functional changes to your application.
 
-```
+```java
 // V4 Client with FORBID_ENCRYPT_ALLOW_DECRYPT
 // This maintains V2/V3 compatibility during migration
 // Uses non-committing algorithm to maintain compatibility with V2/V3 clients
@@ -205,7 +205,7 @@ S3Client v4Client = S3EncryptionClient.builderV4()
 
 After deploying the FORBID\_ENCRYPT\_ALLOW\_DECRYPT changes, make code changes as described below. This will cause your application to start writing objects encrypted with key commitment.
 
-```
+```java
 // V4 Client with REQUIRE_ENCRYPT_ALLOW_DECRYPT
 // This encrypts with commitment but can read objects with or without commitment
 // Uses committing algorithm to protect against data key tampering
@@ -219,7 +219,7 @@ S3Client v4Client = S3EncryptionClient.builderV4()
 
 After deploying the REQUIRE\_ENCRYPT\_ALLOW\_DECRYPT changes, make code changes as described below. This will cause your application to stop reading objects encrypted without key commitment. Before deploying this change, ensure any existing objects are now encrypted with key commitment.
 
-```
+```java
 // V4 Client with default REQUIRE_ENCRYPT_REQUIRE_DECRYPT policy
 // This encrypts with commitment and only reads objects with commitment (most secure)
 // Uses committing algorithm by default
@@ -241,7 +241,7 @@ If your `v4Client` doesn't include the necessary settings, and it encounters an 
 
 For example, this code builds a `v4Client` object with a user-provided raw AES wrapping key. This client always encrypts only with fully supported algorithms. However, it can decrypt objects and data keys encrypted with fully supported or legacy algorithms.
 
-```
+```java
 // v4
 
 class v4EnableLegacyDecryptionModesExample {

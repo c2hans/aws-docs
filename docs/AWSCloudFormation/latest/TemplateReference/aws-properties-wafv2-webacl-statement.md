@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-statement-syntax.json"></a>
 
-```
+```json
 {
   "[AndStatement](#cfn-wafv2-webacl-statement-andstatement)" : {{AndStatement}},
   "[AsnMatchStatement](#cfn-wafv2-webacl-statement-asnmatchstatement)" : {{AsnMatchStatement}},
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-statement-syntax.yaml"></a>
 
-```
+```yaml
   [AndStatement](#cfn-wafv2-webacl-statement-andstatement): {{
     AndStatement}}
   [AsnMatchStatement](#cfn-wafv2-webacl-statement-asnmatchstatement): {{

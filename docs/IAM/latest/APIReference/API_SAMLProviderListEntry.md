@@ -20,6 +20,11 @@ The date and time when the SAML provider was created.
 Type: Timestamp
 Required: No
 
+ ** IsTrustedIdentityPropagationEnabled **
+Specifies whether trusted identity propagation is enabled for the SAML provider. This is `true` when an IAM Identity Center instance is associated with the provider.
+Type: Boolean
+Required: No
+
  ** ValidUntil **
 The expiration date and time for the SAML provider.
 Type: Timestamp

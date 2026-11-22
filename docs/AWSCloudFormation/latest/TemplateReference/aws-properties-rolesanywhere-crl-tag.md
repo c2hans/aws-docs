@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rolesanywhere-crl-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-rolesanywhere-crl-tag-key)" : {{String}},
   "[Value](#cfn-rolesanywhere-crl-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rolesanywhere-crl-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-rolesanywhere-crl-tag-key): {{String}}
   [Value](#cfn-rolesanywhere-crl-tag-value): {{String}}
 ```

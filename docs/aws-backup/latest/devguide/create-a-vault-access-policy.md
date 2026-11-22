@@ -31,7 +31,7 @@ This policy denies access to the specified API operations for all Amazon EBS sna
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -68,7 +68,7 @@ This policy denies access to the specified API operations targeting a backup vau
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -120,7 +120,7 @@ Follow these steps to create a resource-based access policy on a backup vault th
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -153,7 +153,7 @@ Follow these steps to create a resource-based access policy on a backup vault th
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -183,7 +183,7 @@ Follow these steps to create a resource-based access policy on a backup vault th
 
    If you want to limit this to specific resource types, instead of `"Resource": "*"`, you can explicitly include the recovery point types to deny. For example, for Amazon EBS snapshots, change the resource type to the following.
 
-   ```
+   ```json
    "Resource": ["arn:aws:ec2:*:*:snapshot/*"]
    ```
 

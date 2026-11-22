@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dlpsetting-labelactionmapping-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-quicksight-dlpsetting-labelactionmapping-action)" : {{String}},
   "[LabelId](#cfn-quicksight-dlpsetting-labelactionmapping-labelid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dlpsetting-labelactionmapping-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-quicksight-dlpsetting-labelactionmapping-action): {{String}}
   [LabelId](#cfn-quicksight-dlpsetting-labelactionmapping-labelid): {{String}}
   [LabelName](#cfn-quicksight-dlpsetting-labelactionmapping-labelname): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-databrew-job-databasetableoutputoptions-syntax.json"></a>
 
-```
+```json
 {
   "[TableName](#cfn-databrew-job-databasetableoutputoptions-tablename)" : {{String}},
   "[TempDirectory](#cfn-databrew-job-databasetableoutputoptions-tempdirectory)" : {{S3Location}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-databrew-job-databasetableoutputoptions-syntax.yaml"></a>
 
-```
+```yaml
   [TableName](#cfn-databrew-job-databasetableoutputoptions-tablename): {{String}}
   [TempDirectory](#cfn-databrew-job-databasetableoutputoptions-tempdirectory): {{
     S3Location}}

@@ -11,7 +11,7 @@ To list the columns, use a `SELECT *` query. In the `FROM` clause, specify `info
 **Example – Listing all columns for a specified table**
 The following example query lists all columns for the table `rdspostgresqldb1_public_account`.
 
-```
+```sql
 SELECT *
 FROM   information_schema.columns
 WHERE  table_schema = 'rdspostgresql'
@@ -31,7 +31,7 @@ The following table shows sample results.
 **Example – Listing the columns for a specified view**
 The following example query lists all the columns in the `default` database for the view `arrayview`.
 
-```
+```sql
 SELECT *
 FROM   information_schema.columns
 WHERE  table_schema = 'default'
@@ -52,7 +52,7 @@ The following table shows sample results.
 **Example – Searching for a column by name in a specified database and table**
 The following example query searches for metadata for the `sid` column in the `arrayview` view of the `default` database.
 
-```
+```sql
 SELECT *
 FROM   information_schema.columns
 WHERE  table_schema = 'default'

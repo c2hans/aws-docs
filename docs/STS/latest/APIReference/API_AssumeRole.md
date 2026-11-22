@@ -125,7 +125,7 @@ The source identity specified by the principal that is calling the `AssumeRole` 
 You can require users to specify a source identity when they assume a role. You do this by using the [`sts:SourceIdentity`](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-sourceidentity) condition key in a role trust policy. You can use source identity information in AWS CloudTrail logs to determine who took actions with a role. You can use the `aws:SourceIdentity` condition key to further control access to AWS resources based on the value of source identity. For more information about using source identity, see [Monitor and control actions taken with assumed roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_control-access_monitor.html) in the *IAM User Guide*.
 The regex used to validate this parameter is a string of characters consisting of upper- and lower-case alphanumeric characters with no spaces. You can also include underscores or any of the following characters: \+=,.@-. You cannot use a value that begins with the text `aws:`. This prefix is reserved for AWS internal use.
 Type: String
-Length Constraints: Minimum length of 2. Maximum length of 64.
+Length Constraints: Minimum length of 2. Maximum length of 256.
 Pattern: `[\w+=,.@-]*`
 Required: No
 
@@ -192,7 +192,7 @@ The source identity specified by the principal that is calling the `AssumeRole` 
 You can require users to specify a source identity when they assume a role. You do this by using the `sts:SourceIdentity` condition key in a role trust policy. You can use source identity information in AWS CloudTrail logs to determine who took actions with a role. You can use the `aws:SourceIdentity` condition key to further control access to AWS resources based on the value of source identity. For more information about using source identity, see [Monitor and control actions taken with assumed roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_control-access_monitor.html) in the *IAM User Guide*.
 The regex used to validate this parameter is a string of characters consisting of upper- and lower-case alphanumeric characters with no spaces. You can also include underscores or any of the following characters: =,.@-
 Type: String
-Length Constraints: Minimum length of 2. Maximum length of 64.
+Length Constraints: Minimum length of 2. Maximum length of 256.
 Pattern: `[\w+=,.@-]*`
 
 ## Errors
@@ -202,6 +202,10 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** ExpiredToken **
 The web identity token that was passed is expired or is not valid. Get a new identity token from the identity provider and then retry the request.
+HTTP Status Code: 400
+
+ ** InvalidContextAssertion **
+The request was rejected because the context assertion that was provided is invalid. This can happen if the context assertion supplied in the `ProvidedContexts` parameter is malformed, has expired, or does not match a trusted context provider.
 HTTP Status Code: 400
 
  ** MalformedPolicyDocument **

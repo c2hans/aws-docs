@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-rollingdateconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DataSetIdentifier](#cfn-quicksight-template-rollingdateconfiguration-datasetidentifier)" : {{String}},
   "[Expression](#cfn-quicksight-template-rollingdateconfiguration-expression)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-rollingdateconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DataSetIdentifier](#cfn-quicksight-template-rollingdateconfiguration-datasetidentifier): {{String}}
   [Expression](#cfn-quicksight-template-rollingdateconfiguration-expression): {{String}}
 ```

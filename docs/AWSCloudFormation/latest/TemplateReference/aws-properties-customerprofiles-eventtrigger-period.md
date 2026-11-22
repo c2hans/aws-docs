@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-eventtrigger-period-syntax.json"></a>
 
-```
+```json
 {
   "[MaxInvocationsPerProfile](#cfn-customerprofiles-eventtrigger-period-maxinvocationsperprofile)" : {{Integer}},
   "[Unit](#cfn-customerprofiles-eventtrigger-period-unit)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-eventtrigger-period-syntax.yaml"></a>
 
-```
+```yaml
   [MaxInvocationsPerProfile](#cfn-customerprofiles-eventtrigger-period-maxinvocationsperprofile): {{Integer}}
   [Unit](#cfn-customerprofiles-eventtrigger-period-unit): {{String}}
   [Unlimited](#cfn-customerprofiles-eventtrigger-period-unlimited): {{Boolean}}

@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-kinesisvideo-stream-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::KinesisVideo::Stream",
   "Properties" : {
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-kinesisvideo-stream-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::KinesisVideo::Stream
 Properties:
   [DataRetentionInHours](#cfn-kinesisvideo-stream-dataretentioninhours): {{Integer}}

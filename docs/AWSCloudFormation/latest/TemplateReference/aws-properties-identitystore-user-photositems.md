@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-identitystore-user-photositems-syntax.json"></a>
 
-```
+```json
 {
   "[Display](#cfn-identitystore-user-photositems-display)" : {{String}},
   "[Primary](#cfn-identitystore-user-photositems-primary)" : {{Boolean}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-identitystore-user-photositems-syntax.yaml"></a>
 
-```
+```yaml
   [Display](#cfn-identitystore-user-photositems-display): {{String}}
   [Primary](#cfn-identitystore-user-photositems-primary): {{Boolean}}
   [Type](#cfn-identitystore-user-photositems-type): {{String}}

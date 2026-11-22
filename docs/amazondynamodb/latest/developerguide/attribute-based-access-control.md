@@ -25,7 +25,7 @@ The following example allows the [UpdateItem](https://docs.aws.amazon.com/amazon
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

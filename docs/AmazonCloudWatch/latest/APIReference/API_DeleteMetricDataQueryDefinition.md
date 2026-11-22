@@ -56,7 +56,7 @@ The following AWS CLI command deletes a definition by its ID. Replace the ID wit
 #### Sample Request
 <a name="API_DeleteMetricDataQueryDefinition_Example_1_Request"></a>
 
-```
+```bash
 PROMPT> aws cloudwatch delete-metric-data-query-definition \
     --id a1b2c3d4-5678-90ab-cdef-EXAMPLE11111
 ```

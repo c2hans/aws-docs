@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-daemontaskdefinition-kernelcapabilities-syntax.json"></a>
 
-```
+```json
 {
   "[Add](#cfn-ecs-daemontaskdefinition-kernelcapabilities-add)" : {{[ String, ... ]}},
   "[Drop](#cfn-ecs-daemontaskdefinition-kernelcapabilities-drop)" : {{[ String, ... ]}}
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-daemontaskdefinition-kernelcapabilities-syntax.yaml"></a>
 
-```
+```yaml
   [Add](#cfn-ecs-daemontaskdefinition-kernelcapabilities-add): {{
     - String}}
   [Drop](#cfn-ecs-daemontaskdefinition-kernelcapabilities-drop): {{

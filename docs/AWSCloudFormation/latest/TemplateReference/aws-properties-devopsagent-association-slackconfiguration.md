@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-association-slackconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Bidirectional](#cfn-devopsagent-association-slackconfiguration-bidirectional)" : {{SlackBidirectionalConfiguration}},
   "[TransmissionTarget](#cfn-devopsagent-association-slackconfiguration-transmissiontarget)" : {{SlackTransmissionTarget}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-association-slackconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Bidirectional](#cfn-devopsagent-association-slackconfiguration-bidirectional): {{
     SlackBidirectionalConfiguration}}
   [TransmissionTarget](#cfn-devopsagent-association-slackconfiguration-transmissiontarget): {{

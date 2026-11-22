@@ -92,7 +92,7 @@ Deletes the sharing policy for a portal product.
 #### PUT schema
 <a name="portalproducts-portalproductid-sharingpolicy-request-body-put-example"></a>
 
-```
+```json
 {
   "policyDocument": "string"
 }
@@ -104,7 +104,7 @@ Deletes the sharing policy for a portal product.
 #### GetPortalProductSharingPolicyResponseContent schema
 <a name="portalproducts-portalproductid-sharingpolicy-response-body-getportalproductsharingpolicyresponsecontent-example"></a>
 
-```
+```json
 {
   "policyDocument": "string",
   "portalProductId": "string"
@@ -114,7 +114,7 @@ Deletes the sharing policy for a portal product.
 #### BadRequestExceptionResponseContent schema
 <a name="portalproducts-portalproductid-sharingpolicy-response-body-badrequestexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -123,7 +123,7 @@ Deletes the sharing policy for a portal product.
 #### AccessDeniedExceptionResponseContent schema
 <a name="portalproducts-portalproductid-sharingpolicy-response-body-accessdeniedexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -132,7 +132,7 @@ Deletes the sharing policy for a portal product.
 #### NotFoundExceptionResponseContent schema
 <a name="portalproducts-portalproductid-sharingpolicy-response-body-notfoundexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -142,7 +142,7 @@ Deletes the sharing policy for a portal product.
 #### LimitExceededExceptionResponseContent schema
 <a name="portalproducts-portalproductid-sharingpolicy-response-body-limitexceededexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eventsv2-subscriber-pointintimeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EndPoint](#cfn-eventsv2-subscriber-pointintimeconfiguration-endpoint)" : {{Integer}},
   "[PointType](#cfn-eventsv2-subscriber-pointintimeconfiguration-pointtype)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eventsv2-subscriber-pointintimeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EndPoint](#cfn-eventsv2-subscriber-pointintimeconfiguration-endpoint): {{Integer}}
   [PointType](#cfn-eventsv2-subscriber-pointintimeconfiguration-pointtype): {{String}}
   [StartingPoint](#cfn-eventsv2-subscriber-pointintimeconfiguration-startingpoint): {{Integer}}

@@ -16,7 +16,7 @@ This topic presents examples that show how you can use service control policies 
 The following example denies the `PutAlternateContact` and `DeleteAlternateContact` API operations from being called by any member account in [standalone account mode](manage-acct-api-modes-of-operation.md). This prevents any principal in the affected accounts from changing their own alternate contacts.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -37,7 +37,7 @@ The following example denies the `PutAlternateContact` and `DeleteAlternateConta
 The following example generalizes the `Resource` element to "\*", which means that it applies to both [standalone mode requests and organizations mode requests](manage-acct-api-modes-of-operation.md). This means that even the delegated admin account for Account Management, if the SCP applies to it, is blocked from changing any alternate contact for any account in the organization.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

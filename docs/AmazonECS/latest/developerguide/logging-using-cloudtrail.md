@@ -58,7 +58,7 @@ The following example shows a CloudTrail event that demonstrates the `CreateServ
 **Note**
 This example has been formatted for improved readability. In a CloudTrail log file, all entries and events are concatenated into a single line. In addition, this example has been limited to a single Amazon ECS entry. In a real CloudTrail log file, you see entries and events from multiple AWS services.
 
-```
+```JSON
 {
     "eventVersion": "1.04",
     "userIdentity": {

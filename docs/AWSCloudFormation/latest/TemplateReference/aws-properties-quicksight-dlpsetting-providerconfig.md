@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dlpsetting-providerconfig-syntax.json"></a>
 
-```
+```json
 {
   "[MicrosoftPurview](#cfn-quicksight-dlpsetting-providerconfig-microsoftpurview)" : {{MicrosoftPurviewProviderConfig}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dlpsetting-providerconfig-syntax.yaml"></a>
 
-```
+```yaml
   [MicrosoftPurview](#cfn-quicksight-dlpsetting-providerconfig-microsoftpurview): {{
     MicrosoftPurviewProviderConfig}}
 ```

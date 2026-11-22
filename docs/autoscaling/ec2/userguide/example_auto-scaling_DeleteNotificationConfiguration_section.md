@@ -28,7 +28,7 @@ For more information, see [Delete the notification configuration](https://docs.a
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified notification action. You are prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASNotificationConfiguration -AutoScalingGroupName my-asg -TopicARN "arn:aws:sns:us-west-2:123456789012:my-topic"
 ```
 **Output:**
@@ -42,7 +42,7 @@ Performing operation "Remove-ASNotificationConfiguration (DeleteNotificationConf
 ```
 **Example 2: If you specify the Force parameter, you are not prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASNotificationConfiguration -AutoScalingGroupName my-asg -TopicARN "arn:aws:sns:us-west-2:123456789012:my-topic" -Force
 ```
 +  For API details, see [DeleteNotificationConfiguration](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -50,7 +50,7 @@ Remove-ASNotificationConfiguration -AutoScalingGroupName my-asg -TopicARN "arn:a
 **Tools for PowerShell V5**
 **Example 1: This example deletes the specified notification action. You are prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASNotificationConfiguration -AutoScalingGroupName my-asg -TopicARN "arn:aws:sns:us-west-2:123456789012:my-topic"
 ```
 **Output:**
@@ -64,7 +64,7 @@ Performing operation "Remove-ASNotificationConfiguration (DeleteNotificationConf
 ```
 **Example 2: If you specify the Force parameter, you are not prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASNotificationConfiguration -AutoScalingGroupName my-asg -TopicARN "arn:aws:sns:us-west-2:123456789012:my-topic" -Force
 ```
 +  For API details, see [DeleteNotificationConfiguration](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

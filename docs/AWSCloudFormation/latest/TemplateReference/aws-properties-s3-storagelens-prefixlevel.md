@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-storagelens-prefixlevel-syntax.json"></a>
 
-```
+```json
 {
   "[StorageMetrics](#cfn-s3-storagelens-prefixlevel-storagemetrics)" : {{PrefixLevelStorageMetrics}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-storagelens-prefixlevel-syntax.yaml"></a>
 
-```
+```yaml
   [StorageMetrics](#cfn-s3-storagelens-prefixlevel-storagemetrics): {{
     PrefixLevelStorageMetrics}}
 ```

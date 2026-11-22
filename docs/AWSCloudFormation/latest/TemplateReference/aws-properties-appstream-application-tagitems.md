@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appstream-application-tagitems-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-appstream-application-tagitems-key)" : {{String}},
   "[Value](#cfn-appstream-application-tagitems-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appstream-application-tagitems-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-appstream-application-tagitems-key): {{String}}
   [Value](#cfn-appstream-application-tagitems-value): {{String}}
 ```

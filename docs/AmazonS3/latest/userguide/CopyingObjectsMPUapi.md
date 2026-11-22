@@ -48,7 +48,7 @@ The following C\# example shows how to use the SDK for .NET to copy an Amazon S3
 
 This example shows how to copy an Amazon S3 object that is larger than 5 GB from one S3 bucket to another using the SDK for .NET multipart upload API.
 
-```
+```csharp
 using Amazon;
 using Amazon.S3;
 using Amazon.S3.Model;

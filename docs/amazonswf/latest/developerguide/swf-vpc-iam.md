@@ -11,7 +11,7 @@ You can create an Amazon VPC endpoint policy for Amazon SWF in which you specify
 
 The following example adds a specific IAM role to a policy:
 
-```
+```json
 "Principal": {
    "AWS": "arn:aws:iam::123456789012:role/MyRole"
 }

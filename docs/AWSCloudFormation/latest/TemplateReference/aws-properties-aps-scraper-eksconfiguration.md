@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-aps-scraper-eksconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ClusterArn](#cfn-aps-scraper-eksconfiguration-clusterarn)" : {{String}},
   "[SecurityGroupIds](#cfn-aps-scraper-eksconfiguration-securitygroupids)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-aps-scraper-eksconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ClusterArn](#cfn-aps-scraper-eksconfiguration-clusterarn): {{String}}
   [SecurityGroupIds](#cfn-aps-scraper-eksconfiguration-securitygroupids): {{
     - String}}

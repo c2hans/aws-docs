@@ -42,7 +42,7 @@ aws elasticache describe-events --source-type cache-cluster --duration 1440
 
 The output from the `describe-events` command looks something like this.
 
-```
+```json
 aws elasticache describe-events --source-type cache-cluster --max-items 40
 {
     "Events": [

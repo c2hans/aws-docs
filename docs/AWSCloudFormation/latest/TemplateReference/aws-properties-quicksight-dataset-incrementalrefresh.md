@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-incrementalrefresh-syntax.json"></a>
 
-```
+```json
 {
   "[LookbackWindow](#cfn-quicksight-dataset-incrementalrefresh-lookbackwindow)" : {{LookbackWindow}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-incrementalrefresh-syntax.yaml"></a>
 
-```
+```yaml
   [LookbackWindow](#cfn-quicksight-dataset-incrementalrefresh-lookbackwindow): {{
     LookbackWindow}}
 ```

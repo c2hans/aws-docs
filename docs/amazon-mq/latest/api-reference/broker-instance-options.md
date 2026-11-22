@@ -58,7 +58,7 @@ Describe available broker instance options.
 #### BrokerInstanceOptionsOutput schema
 <a name="broker-instance-options-response-body-brokerinstanceoptionsoutput-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "maxResults": integer,
@@ -86,7 +86,7 @@ Describe available broker instance options.
 #### Error schema
 <a name="broker-instance-options-response-body-error-example"></a>
 
-```
+```json
 {
   "errorAttribute": "string",
   "message": "string"

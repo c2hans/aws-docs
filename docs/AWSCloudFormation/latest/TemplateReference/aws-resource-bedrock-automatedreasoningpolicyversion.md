@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-bedrock-automatedreasoningpolicyversion-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Bedrock::AutomatedReasoningPolicyVersion",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-bedrock-automatedreasoningpolicyversion-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Bedrock::AutomatedReasoningPolicyVersion
 Properties:
   [LastUpdatedDefinitionHash](#cfn-bedrock-automatedreasoningpolicyversion-lastupdateddefinitionhash): {{String}}

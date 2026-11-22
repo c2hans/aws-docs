@@ -42,7 +42,7 @@ The CloudWatch Logs agent supports IAM roles and users. If your instance already
 1. Choose the **JSON** tab and type the following JSON policy document.
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-channel-s3destinationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DataFreshnessInSeconds](#cfn-msk-channel-s3destinationconfiguration-datafreshnessinseconds)" : {{Integer}},
   "[DeadLetterQueueS3](#cfn-msk-channel-s3destinationconfiguration-deadletterqueues3)" : {{DeadLetterQueueS3}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-channel-s3destinationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DataFreshnessInSeconds](#cfn-msk-channel-s3destinationconfiguration-datafreshnessinseconds): {{Integer}}
   [DeadLetterQueueS3](#cfn-msk-channel-s3destinationconfiguration-deadletterqueues3): {{
     DeadLetterQueueS3}}

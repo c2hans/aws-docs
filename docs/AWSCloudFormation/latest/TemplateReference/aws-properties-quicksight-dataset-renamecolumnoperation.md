@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-renamecolumnoperation-syntax.json"></a>
 
-```
+```json
 {
   "[ColumnName](#cfn-quicksight-dataset-renamecolumnoperation-columnname)" : {{String}},
   "[NewColumnName](#cfn-quicksight-dataset-renamecolumnoperation-newcolumnname)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-renamecolumnoperation-syntax.yaml"></a>
 
-```
+```yaml
   [ColumnName](#cfn-quicksight-dataset-renamecolumnoperation-columnname): {{String}}
   [NewColumnName](#cfn-quicksight-dataset-renamecolumnoperation-newcolumnname): {{String}}
 ```

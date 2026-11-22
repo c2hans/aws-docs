@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelpackage-driftcheckmodeldataquality-syntax.json"></a>
 
-```
+```json
 {
   "[Constraints](#cfn-sagemaker-modelpackage-driftcheckmodeldataquality-constraints)" : {{MetricsSource}},
   "[Statistics](#cfn-sagemaker-modelpackage-driftcheckmodeldataquality-statistics)" : {{MetricsSource}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelpackage-driftcheckmodeldataquality-syntax.yaml"></a>
 
-```
+```yaml
   [Constraints](#cfn-sagemaker-modelpackage-driftcheckmodeldataquality-constraints): {{
     MetricsSource}}
   [Statistics](#cfn-sagemaker-modelpackage-driftcheckmodeldataquality-statistics): {{

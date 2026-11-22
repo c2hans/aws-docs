@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-capacityreservation-capacityallocation-syntax.json"></a>
 
-```
+```json
 {
   "[AllocationType](#cfn-ec2-capacityreservation-capacityallocation-allocationtype)" : {{String}},
   "[Count](#cfn-ec2-capacityreservation-capacityallocation-count)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-capacityreservation-capacityallocation-syntax.yaml"></a>
 
-```
+```yaml
   [AllocationType](#cfn-ec2-capacityreservation-capacityallocation-allocationtype): {{String}}
   [Count](#cfn-ec2-capacityreservation-capacityallocation-count): {{Integer}}
 ```

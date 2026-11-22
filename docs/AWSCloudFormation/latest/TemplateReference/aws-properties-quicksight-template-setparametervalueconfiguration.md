@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-setparametervalueconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationParameterName](#cfn-quicksight-template-setparametervalueconfiguration-destinationparametername)" : {{String}},
   "[Value](#cfn-quicksight-template-setparametervalueconfiguration-value)" : {{DestinationParameterValueConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-setparametervalueconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationParameterName](#cfn-quicksight-template-setparametervalueconfiguration-destinationparametername): {{String}}
   [Value](#cfn-quicksight-template-setparametervalueconfiguration-value): {{
     DestinationParameterValueConfiguration}}

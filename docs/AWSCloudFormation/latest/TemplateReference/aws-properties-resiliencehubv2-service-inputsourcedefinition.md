@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-resiliencehubv2-service-inputsourcedefinition-syntax.json"></a>
 
-```
+```json
 {
   "[ResourceConfiguration](#cfn-resiliencehubv2-service-inputsourcedefinition-resourceconfiguration)" : {{ResourceConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-resiliencehubv2-service-inputsourcedefinition-syntax.yaml"></a>
 
-```
+```yaml
   [ResourceConfiguration](#cfn-resiliencehubv2-service-inputsourcedefinition-resourceconfiguration): {{
     ResourceConfiguration}}
 ```

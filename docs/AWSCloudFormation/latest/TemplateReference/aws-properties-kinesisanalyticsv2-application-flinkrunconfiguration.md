@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisanalyticsv2-application-flinkrunconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AllowNonRestoredState](#cfn-kinesisanalyticsv2-application-flinkrunconfiguration-allownonrestoredstate)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisanalyticsv2-application-flinkrunconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AllowNonRestoredState](#cfn-kinesisanalyticsv2-application-flinkrunconfiguration-allownonrestoredstate): {{Boolean}}
 ```
 

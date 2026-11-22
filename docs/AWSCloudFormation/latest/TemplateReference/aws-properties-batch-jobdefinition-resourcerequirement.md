@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-resourcerequirement-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-batch-jobdefinition-resourcerequirement-type)" : {{String}},
   "[Value](#cfn-batch-jobdefinition-resourcerequirement-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-resourcerequirement-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-batch-jobdefinition-resourcerequirement-type): {{String}}
   [Value](#cfn-batch-jobdefinition-resourcerequirement-value): {{String}}
 ```
@@ -119,7 +119,7 @@ This example specifies 4096 MiB of memory and 2 vCPUs.
 #### JSON
 <a name="aws-properties-batch-jobdefinition-resourcerequirement--examples--Resource_requirements--json"></a>
 
-```
+```json
 "ResourceRequirements": [
           {
             "Type": "MEMORY",
@@ -135,7 +135,7 @@ This example specifies 4096 MiB of memory and 2 vCPUs.
 #### YAML
 <a name="aws-properties-batch-jobdefinition-resourcerequirement--examples--Resource_requirements--yaml"></a>
 
-```
+```yaml
 ResourceRequirements:
         - Type: MEMORY
           Value: '4096'

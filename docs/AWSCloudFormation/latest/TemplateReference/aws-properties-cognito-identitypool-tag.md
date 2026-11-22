@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-identitypool-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-cognito-identitypool-tag-key)" : {{String}},
   "[Value](#cfn-cognito-identitypool-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-identitypool-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-cognito-identitypool-tag-key): {{String}}
   [Value](#cfn-cognito-identitypool-tag-value): {{String}}
 ```

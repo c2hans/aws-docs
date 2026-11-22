@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-servicecatalog-cloudformationproduct-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ServiceCatalog::CloudFormationProduct",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-servicecatalog-cloudformationproduct-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ServiceCatalog::CloudFormationProduct
 Properties:
   [AcceptLanguage](#cfn-servicecatalog-cloudformationproduct-acceptlanguage): {{String}}
@@ -205,7 +205,7 @@ The following example creates a product with one version (provisioning artifact)
 #### JSON
 <a name="aws-resource-servicecatalog-cloudformationproduct--examples--Example_-_Create_a_product_from_a_template_in_Amazon_S3--json"></a>
 
-```
+```json
 {
     "MyProduct": {
         "Type": "AWS::ServiceCatalog::CloudFormationProduct",
@@ -231,7 +231,7 @@ The following example creates a product with one version (provisioning artifact)
 #### YAML
 <a name="aws-resource-servicecatalog-cloudformationproduct--examples--Example_-_Create_a_product_from_a_template_in_Amazon_S3--yaml"></a>
 
-```
+```yaml
 MyProduct:
   Type: AWS::ServiceCatalog::CloudFormationProduct
   Properties:
@@ -254,7 +254,7 @@ The following example creates a product that is synced with a template file in a
 #### JSON
 <a name="aws-resource-servicecatalog-cloudformationproduct--examples--Example_-_Create_a_product_that_syncs_versions_from_a_Git_repository--json"></a>
 
-```
+```json
 {
     "MySyncedProduct": {
         "Type": "AWS::ServiceCatalog::CloudFormationProduct",
@@ -281,7 +281,7 @@ The following example creates a product that is synced with a template file in a
 #### YAML
 <a name="aws-resource-servicecatalog-cloudformationproduct--examples--Example_-_Create_a_product_that_syncs_versions_from_a_Git_repository--yaml"></a>
 
-```
+```yaml
 MySyncedProduct:
   Type: AWS::ServiceCatalog::CloudFormationProduct
   Properties:

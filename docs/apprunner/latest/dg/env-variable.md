@@ -72,7 +72,7 @@ Copy, the following template to your instance role to add permission to referenc
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -100,7 +100,7 @@ Copy the following template to your instance role to add permission to reference
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

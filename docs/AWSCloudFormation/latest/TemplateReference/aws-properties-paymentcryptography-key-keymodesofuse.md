@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-paymentcryptography-key-keymodesofuse-syntax.json"></a>
 
-```
+```json
 {
   "[Decrypt](#cfn-paymentcryptography-key-keymodesofuse-decrypt)" : {{Boolean}},
   "[DeriveKey](#cfn-paymentcryptography-key-keymodesofuse-derivekey)" : {{Boolean}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-paymentcryptography-key-keymodesofuse-syntax.yaml"></a>
 
-```
+```yaml
   [Decrypt](#cfn-paymentcryptography-key-keymodesofuse-decrypt): {{Boolean}}
   [DeriveKey](#cfn-paymentcryptography-key-keymodesofuse-derivekey): {{Boolean}}
   [Encrypt](#cfn-paymentcryptography-key-keymodesofuse-encrypt): {{Boolean}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-space-jupyterserverappsettings-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultResourceSpec](#cfn-sagemaker-space-jupyterserverappsettings-defaultresourcespec)" : {{ResourceSpec}},
   "[LifecycleConfigArns](#cfn-sagemaker-space-jupyterserverappsettings-lifecycleconfigarns)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-space-jupyterserverappsettings-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultResourceSpec](#cfn-sagemaker-space-jupyterserverappsettings-defaultresourcespec): {{
     ResourceSpec}}
   [LifecycleConfigArns](#cfn-sagemaker-space-jupyterserverappsettings-lifecycleconfigarns): {{

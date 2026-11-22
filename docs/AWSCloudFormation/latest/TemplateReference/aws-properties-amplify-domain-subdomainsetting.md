@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amplify-domain-subdomainsetting-syntax.json"></a>
 
-```
+```json
 {
   "[BranchName](#cfn-amplify-domain-subdomainsetting-branchname)" : {{String}},
   "[Prefix](#cfn-amplify-domain-subdomainsetting-prefix)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amplify-domain-subdomainsetting-syntax.yaml"></a>
 
-```
+```yaml
   [BranchName](#cfn-amplify-domain-subdomainsetting-branchname): {{String}}
   [Prefix](#cfn-amplify-domain-subdomainsetting-prefix): {{String}}
 ```

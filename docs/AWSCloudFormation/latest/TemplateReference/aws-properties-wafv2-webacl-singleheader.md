@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-singleheader-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-wafv2-webacl-singleheader-name)" : {{String}}
 }
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-singleheader-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-wafv2-webacl-singleheader-name): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-webfunctionendpoint-scalingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[MaxEnvironments](#cfn-lambda-webfunctionendpoint-scalingconfig-maxenvironments)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-webfunctionendpoint-scalingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [MaxEnvironments](#cfn-lambda-webfunctionendpoint-scalingconfig-maxenvironments): {{Integer}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-knowledgebase-parsingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BedrockFoundationModelConfiguration](#cfn-wisdom-knowledgebase-parsingconfiguration-bedrockfoundationmodelconfiguration)" : {{BedrockFoundationModelConfiguration}},
   "[ParsingStrategy](#cfn-wisdom-knowledgebase-parsingconfiguration-parsingstrategy)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-knowledgebase-parsingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BedrockFoundationModelConfiguration](#cfn-wisdom-knowledgebase-parsingconfiguration-bedrockfoundationmodelconfiguration): {{
     BedrockFoundationModelConfiguration}}
   [ParsingStrategy](#cfn-wisdom-knowledgebase-parsingconfiguration-parsingstrategy): {{String}}

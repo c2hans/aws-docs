@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-refactorspaces-environment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RefactorSpaces::Environment",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-refactorspaces-environment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RefactorSpaces::Environment
 Properties:
   [Description](#cfn-refactorspaces-environment-description): {{String}}

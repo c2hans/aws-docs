@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-qbusiness-plugin-apischema-syntax.json"></a>
 
-```
+```json
 {
   "[Payload](#cfn-qbusiness-plugin-apischema-payload)" : {{String}},
   "[S3](#cfn-qbusiness-plugin-apischema-s3)" : {{S3}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-qbusiness-plugin-apischema-syntax.yaml"></a>
 
-```
+```yaml
   [Payload](#cfn-qbusiness-plugin-apischema-payload): {{String}}
   [S3](#cfn-qbusiness-plugin-apischema-s3): {{
     S3}}

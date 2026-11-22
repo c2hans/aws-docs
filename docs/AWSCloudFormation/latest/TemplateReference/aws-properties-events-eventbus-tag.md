@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-events-eventbus-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-events-eventbus-tag-key)" : {{String}},
   "[Value](#cfn-events-eventbus-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-events-eventbus-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-events-eventbus-tag-key): {{String}}
   [Value](#cfn-events-eventbus-tag-value): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-agentregistry-registryrecord-customdescriptor-syntax.json"></a>
 
-```
+```json
 {
   "[Data](#cfn-agentregistry-registryrecord-customdescriptor-data)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-agentregistry-registryrecord-customdescriptor-syntax.yaml"></a>
 
-```
+```yaml
   [Data](#cfn-agentregistry-registryrecord-customdescriptor-data): {{String}}
 ```
 

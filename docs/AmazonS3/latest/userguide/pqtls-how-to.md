@@ -17,7 +17,7 @@ In this procedure, add a Maven dependency for the AWS Common Runtime HTTP Client
 
    For example, this statement adds version `2.35.11` of the AWS Common Runtime client to your Maven dependencies.
 
-   ```
+   ```xml
    <dependency>
        <groupId>software.amazon.awssdk</groupId>
        <artifactId>aws-crt-client</artifactId>
@@ -31,7 +31,7 @@ In this procedure, add a Maven dependency for the AWS Common Runtime HTTP Client
 **Important**
 Starting with version 2.35.11, the AWS CRT HTTP client enables hybrid post-quantum TLS by default, so you don't need to call `.postQuantumTlsEnabled(true)`. Setting it, as in the following example, has no effect on these versions but makes the behavior explicit.
 
-   ```
+   ```java
    // Configure HTTP client
    SdkAsyncHttpClient awsCrtHttpClient = AwsCrtAsyncHttpClient.builder()
              .postQuantumTlsEnabled(true)

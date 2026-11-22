@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-endpoint-trafficroutingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[CanarySize](#cfn-sagemaker-endpoint-trafficroutingconfig-canarysize)" : {{CapacitySize}},
   "[LinearStepSize](#cfn-sagemaker-endpoint-trafficroutingconfig-linearstepsize)" : {{CapacitySize}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-endpoint-trafficroutingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [CanarySize](#cfn-sagemaker-endpoint-trafficroutingconfig-canarysize): {{
     CapacitySize}}
   [LinearStepSize](#cfn-sagemaker-endpoint-trafficroutingconfig-linearstepsize): {{

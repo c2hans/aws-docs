@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-smsvoice-configurationset-snsdestination-syntax.json"></a>
 
-```
+```json
 {
   "[TopicArn](#cfn-smsvoice-configurationset-snsdestination-topicarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-smsvoice-configurationset-snsdestination-syntax.yaml"></a>
 
-```
+```yaml
   [TopicArn](#cfn-smsvoice-configurationset-snsdestination-topicarn): {{String}}
 ```
 

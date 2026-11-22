@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-channel-deadletterqueues3-syntax.json"></a>
 
-```
+```json
 {
   "[BucketArn](#cfn-msk-channel-deadletterqueues3-bucketarn)" : {{String}},
   "[ErrorOutputPrefix](#cfn-msk-channel-deadletterqueues3-erroroutputprefix)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-channel-deadletterqueues3-syntax.yaml"></a>
 
-```
+```yaml
   [BucketArn](#cfn-msk-channel-deadletterqueues3-bucketarn): {{String}}
   [ErrorOutputPrefix](#cfn-msk-channel-deadletterqueues3-erroroutputprefix): {{String}}
   [ExpectedBucketOwner](#cfn-msk-channel-deadletterqueues3-expectedbucketowner): {{String}}

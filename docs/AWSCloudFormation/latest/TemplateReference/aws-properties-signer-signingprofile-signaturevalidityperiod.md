@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-signer-signingprofile-signaturevalidityperiod-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-signer-signingprofile-signaturevalidityperiod-type)" : {{String}},
   "[Value](#cfn-signer-signingprofile-signaturevalidityperiod-value)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-signer-signingprofile-signaturevalidityperiod-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-signer-signingprofile-signaturevalidityperiod-type): {{String}}
   [Value](#cfn-signer-signingprofile-signaturevalidityperiod-value): {{Integer}}
 ```

@@ -16,7 +16,7 @@ To enable sending logs to Firehose, you must be signed in with the following per
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -89,7 +89,7 @@ Because Firehose does not use resource policies, AWS uses IAM roles when setting
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -122,7 +122,7 @@ This service-linked role also has a trust policy that allows the `delivery.logs.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

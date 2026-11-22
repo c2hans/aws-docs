@@ -31,7 +31,7 @@ After you cancel having an AMI shared with your account, you can't undo it. To r
 **To cancel having an AMI shared with your account**
 Use the [cancel-image-launch-permission](https://docs.aws.amazon.com/cli/latest/reference/ec2/cancel-image-launch-permission.html) command.
 
-```
+```bash
 aws ec2 cancel-image-launch-permission \
     --image-id {{ami-0abcdef1234567890}} \
     --region {{us-east-1}}
@@ -43,7 +43,7 @@ aws ec2 cancel-image-launch-permission \
 **To cancel having an AMI shared with your account**
 Use the [Stop-EC2ImageLaunchPermission](https://docs.aws.amazon.com/powershell/latest/reference/index.html) cmdlet.
 
-```
+```powershell
 Stop-EC2ImageLaunchPermission `
     -ImageId {{ami-0abcdef1234567890}} `
     -Region {{us-east-1}}

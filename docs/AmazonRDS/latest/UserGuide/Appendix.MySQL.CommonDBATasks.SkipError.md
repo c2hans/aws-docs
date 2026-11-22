@@ -9,7 +9,7 @@ You can skip an error on your read replica if the error is causing your read rep
 **Note**
 First verify that the error in question can be safely skipped. In a MySQL utility, connect to the read replica and run the following MySQL command.
 
-```
+```sql
 SHOW REPLICA STATUS\G
 ```
 For information about the values returned, see [the MySQL documentation](https://dev.mysql.com/doc/refman/8.0/en/show-replica-status.html).
@@ -28,7 +28,7 @@ Amazon RDS provides a stored procedure that you can call to skip an error on you
 
  To skip the error, issue the following command.
 
-```
+```sql
 CALL mysql.rds_skip_repl_error;
 ```
 

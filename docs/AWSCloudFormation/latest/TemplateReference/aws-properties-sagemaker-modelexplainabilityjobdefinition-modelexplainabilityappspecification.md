@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityappspecification-syntax.json"></a>
 
-```
+```json
 {
   "[ConfigUri](#cfn-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityappspecification-configuri)" : {{String}},
   "[Environment](#cfn-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityappspecification-environment)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityappspecification-syntax.yaml"></a>
 
-```
+```yaml
   [ConfigUri](#cfn-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityappspecification-configuri): {{String}}
   [Environment](#cfn-sagemaker-modelexplainabilityjobdefinition-modelexplainabilityappspecification-environment): {{
     {{Key}}: {{Value}}}}

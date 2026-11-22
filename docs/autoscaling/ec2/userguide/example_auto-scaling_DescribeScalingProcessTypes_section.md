@@ -60,7 +60,7 @@ For more information, see [Suspending and resuming scaling processes](https://do
 **Tools for PowerShell V4**
 **Example 1: This example lists the process types that are supported by Auto Scaling.**
 
-```
+```powershell
 Get-ASScalingProcessType
 ```
 **Output:**
@@ -82,7 +82,7 @@ Terminate
 **Tools for PowerShell V5**
 **Example 1: This example lists the process types that are supported by Auto Scaling.**
 
-```
+```powershell
 Get-ASScalingProcessType
 ```
 **Output:**

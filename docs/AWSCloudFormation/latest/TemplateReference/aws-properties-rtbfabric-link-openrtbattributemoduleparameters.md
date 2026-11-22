@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rtbfabric-link-openrtbattributemoduleparameters-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-rtbfabric-link-openrtbattributemoduleparameters-action)" : {{Action}},
   "[FilterConfiguration](#cfn-rtbfabric-link-openrtbattributemoduleparameters-filterconfiguration)" : {{[ Filter, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rtbfabric-link-openrtbattributemoduleparameters-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-rtbfabric-link-openrtbattributemoduleparameters-action): {{
     Action}}
   [FilterConfiguration](#cfn-rtbfabric-link-openrtbattributemoduleparameters-filterconfiguration): {{

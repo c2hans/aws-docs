@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-autoscalingplans-scalingplan-predefinedscalingmetricspecification-syntax.json"></a>
 
-```
+```json
 {
   "[PredefinedScalingMetricType](#cfn-autoscalingplans-scalingplan-predefinedscalingmetricspecification-predefinedscalingmetrictype)" : {{String}},
   "[ResourceLabel](#cfn-autoscalingplans-scalingplan-predefinedscalingmetricspecification-resourcelabel)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-autoscalingplans-scalingplan-predefinedscalingmetricspecification-syntax.yaml"></a>
 
-```
+```yaml
   [PredefinedScalingMetricType](#cfn-autoscalingplans-scalingplan-predefinedscalingmetricspecification-predefinedscalingmetrictype): {{String}}
   [ResourceLabel](#cfn-autoscalingplans-scalingplan-predefinedscalingmetricspecification-resourcelabel): {{String}}
 ```

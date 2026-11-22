@@ -51,13 +51,13 @@ The file sizes in this sample are relatively small. By merging them into larger 
 
 1. In the Athena query editor, run the [CREATE DATABASE](create-database.md) command to create a database.
 
-   ```
+   ```sql
    CREATE DATABASE blogdb
    ```
 
 1. Run the following statement to [create a table](create-table.md).
 
-   ```
+   ```sql
    CREATE EXTERNAL TABLE `blogdb`.`original_csv` (
      `id` string,
      `date` string,
@@ -87,7 +87,7 @@ The table you created in Step 1 has a `date` field with the date formatted as `Y
 **To convert the data to parquet format with snappy compression, partitioning by year**
 + Run the following CTAS statement, replacing {{your-bucket}} with your Amazon S3 bucket location.
 
-  ```
+  ```sql
   CREATE table new_parquet
   WITH (format='PARQUET',
   parquet_compression='SNAPPY',
@@ -155,7 +155,7 @@ In Step 2, you used CTAS to create a table with partitions for the years 2015 to
 
 1. Run the following INSERT INTO command, specifying the years before 2015 in the WHERE clause.
 
-   ```
+   ```sql
    INSERT INTO new_parquet
    SELECT id,
             date,
@@ -209,7 +209,7 @@ In Step 2, you used CTAS to create a table with partitions for the years 2015 to
 
 1. If more CSV data is added to original table, you can add that data to the parquet table by using INSERT INTO statements. For example, if you had new data for the year 2020, you could run the following INSERT INTO statement. The statement adds the data and the relevant partition to the `new_parquet` table.
 
-   ```
+   ```sql
    INSERT INTO new_parquet
    SELECT id,
             date,
@@ -238,7 +238,7 @@ For Athena per-query cost information, see [Amazon Athena pricing](https://aws.a
 
 1. Run the following query on the original table. The query finds the number of distinct IDs for every value of the year.
 
-   ```
+   ```sql
    SELECT substr("date",1,4) as year,
           COUNT(DISTINCT id)
    FROM original_csv
@@ -249,7 +249,7 @@ For Athena per-query cost information, see [Amazon Athena pricing](https://aws.a
 
 1. Run the same query on the new table, noting the query runtime and amount of data scanned.
 
-   ```
+   ```sql
    SELECT year,
      COUNT(DISTINCT id)
    FROM new_parquet
@@ -270,7 +270,7 @@ For Athena per-query cost information, see [Amazon Athena pricing](https://aws.a
 
 1. Run the following sample query on the original table. The query calculates the average maximum temperature (Celsius), average minimum temperature (Celsius), and average rainfall (mm) for the Earth in 2018.
 
-   ```
+   ```sql
    SELECT element, round(avg(CAST(datavalue AS real)/10),2) AS value
    FROM original_csv
    WHERE element IN ('TMIN', 'TMAX', 'PRCP') AND substr("date",1,4) = '2018'
@@ -281,7 +281,7 @@ For Athena per-query cost information, see [Amazon Athena pricing](https://aws.a
 
 1. Run the same query on the new table, noting the query runtime and amount of data scanned.
 
-   ```
+   ```sql
    SELECT element, round(avg(CAST(datavalue AS real)/10),2) AS value
    FROM new_parquet
    WHERE element IN ('TMIN', 'TMAX', 'PRCP') and year = '2018'

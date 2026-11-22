@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-aps-anomalydetector-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-aps-anomalydetector-tag-key)" : {{String}},
   "[Value](#cfn-aps-anomalydetector-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-aps-anomalydetector-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-aps-anomalydetector-tag-key): {{String}}
   [Value](#cfn-aps-anomalydetector-tag-value): {{String}}
 ```

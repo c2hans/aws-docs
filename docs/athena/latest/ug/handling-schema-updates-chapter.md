@@ -57,7 +57,7 @@ The following sections describe these cases in detail.
 
 A table in *ORC is read by index*, by default. This is defined by the following syntax:
 
-```
+```sql
 {{WITH SERDEPROPERTIES (
   'orc.column.index.access'='true')}}
 ```
@@ -71,7 +71,7 @@ In Athena engine version 2, when ORC tables are set to read by name, Athena requ
 
 The following example illustrates how to change the ORC to make it read by name:
 
-```
+```sql
 CREATE EXTERNAL TABLE orders_orc_read_by_name (
    `o_comment` string,
    `o_orderkey` int,
@@ -98,7 +98,7 @@ LOCATION 's3://amzn-s3-demo-bucket/orders_orc/';
 
 A table in *Parquet is read by name*, by default. This is defined by the following syntax:
 
-```
+```sql
 {{WITH SERDEPROPERTIES (
   'parquet.column.index.access'='false')}}
 ```

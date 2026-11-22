@@ -105,7 +105,7 @@ The following sample JSON policy grants the required permissions in addition to 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -16,7 +16,7 @@ The following policy allows users to delete clusters when the tag has a key/valu
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

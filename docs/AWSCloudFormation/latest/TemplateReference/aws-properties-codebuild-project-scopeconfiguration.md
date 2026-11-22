@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codebuild-project-scopeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Domain](#cfn-codebuild-project-scopeconfiguration-domain)" : {{String}},
   "[Name](#cfn-codebuild-project-scopeconfiguration-name)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codebuild-project-scopeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Domain](#cfn-codebuild-project-scopeconfiguration-domain): {{String}}
   [Name](#cfn-codebuild-project-scopeconfiguration-name): {{String}}
   [Scope](#cfn-codebuild-project-scopeconfiguration-scope): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-location-geofencecollection-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Location::GeofenceCollection",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-location-geofencecollection-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Location::GeofenceCollection
 Properties:
   [CollectionName](#cfn-location-geofencecollection-collectionname): {{String}}

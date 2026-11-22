@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-service-registeredazureidentitydetails-syntax.json"></a>
 
-```
+```json
 {
   "[ClientId](#cfn-devopsagent-service-registeredazureidentitydetails-clientid)" : {{String}},
   "[TenantId](#cfn-devopsagent-service-registeredazureidentitydetails-tenantid)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-service-registeredazureidentitydetails-syntax.yaml"></a>
 
-```
+```yaml
   [ClientId](#cfn-devopsagent-service-registeredazureidentitydetails-clientid): {{String}}
   [TenantId](#cfn-devopsagent-service-registeredazureidentitydetails-tenantid): {{String}}
   [WebIdentityRoleArn](#cfn-devopsagent-service-registeredazureidentitydetails-webidentityrolearn): {{String}}

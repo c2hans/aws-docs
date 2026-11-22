@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-redshiftserverless-workgroup-configparameter-syntax.json"></a>
 
-```
+```json
 {
   "[ParameterKey](#cfn-redshiftserverless-workgroup-configparameter-parameterkey)" : {{String}},
   "[ParameterValue](#cfn-redshiftserverless-workgroup-configparameter-parametervalue)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-redshiftserverless-workgroup-configparameter-syntax.yaml"></a>
 
-```
+```yaml
   [ParameterKey](#cfn-redshiftserverless-workgroup-configparameter-parameterkey): {{String}}
   [ParameterValue](#cfn-redshiftserverless-workgroup-configparameter-parametervalue): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-evaluationform-evaluationformmetricconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MetricName](#cfn-connect-evaluationform-evaluationformmetricconfiguration-metricname)" : {{String}},
   "[MetricType](#cfn-connect-evaluationform-evaluationformmetricconfiguration-metrictype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-evaluationform-evaluationformmetricconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MetricName](#cfn-connect-evaluationform-evaluationformmetricconfiguration-metricname): {{String}}
   [MetricType](#cfn-connect-evaluationform-evaluationformmetricconfiguration-metrictype): {{String}}
 ```

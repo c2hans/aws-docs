@@ -19,7 +19,7 @@ The `cancel` procedure has the following parameters.
 
 The following example cancels a SQL statement in a session.
 
-```
+```sql
 begin
     rdsadmin.rdsadmin_util.cancel(
         sid    => {{sid}},
@@ -31,6 +31,6 @@ end;
 
 To get the session identifier, the session serial number, and the SQL identifier of a SQL statement, query the `V$SESSION` view. The following example gets all sessions and SQL identifiers for the user `AWSUSER`.
 
-```
+```sql
 select SID, SERIAL#, SQL_ID, STATUS from V$SESSION where USERNAME = '{{AWSUSER}}';
 ```

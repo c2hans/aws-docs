@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-acmpca-certificate-customextension-syntax.json"></a>
 
-```
+```json
 {
   "[Critical](#cfn-acmpca-certificate-customextension-critical)" : {{Boolean}},
   "[ObjectIdentifier](#cfn-acmpca-certificate-customextension-objectidentifier)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-acmpca-certificate-customextension-syntax.yaml"></a>
 
-```
+```yaml
   [Critical](#cfn-acmpca-certificate-customextension-critical): {{Boolean}}
   [ObjectIdentifier](#cfn-acmpca-certificate-customextension-objectidentifier): {{String}}
   [Value](#cfn-acmpca-certificate-customextension-value): {{String}}

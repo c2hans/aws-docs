@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-instance-enasrdspecification-syntax.json"></a>
 
-```
+```json
 {
   "[EnaSrdEnabled](#cfn-ec2-instance-enasrdspecification-enasrdenabled)" : {{Boolean}},
   "[EnaSrdUdpSpecification](#cfn-ec2-instance-enasrdspecification-enasrdudpspecification)" : {{EnaSrdUdpSpecification}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-instance-enasrdspecification-syntax.yaml"></a>
 
-```
+```yaml
   [EnaSrdEnabled](#cfn-ec2-instance-enasrdspecification-enasrdenabled): {{Boolean}}
   [EnaSrdUdpSpecification](#cfn-ec2-instance-enasrdspecification-enasrdudpspecification): {{
     EnaSrdUdpSpecification}}

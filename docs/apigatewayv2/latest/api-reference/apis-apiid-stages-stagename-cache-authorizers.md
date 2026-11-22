@@ -45,7 +45,7 @@ Resets all authorizer cache entries for the specified stage. Supported only for 
 #### NotFoundException schema
 <a name="apis-apiid-stages-stagename-cache-authorizers-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -55,7 +55,7 @@ Resets all authorizer cache entries for the specified stage. Supported only for 
 #### LimitExceededException schema
 <a name="apis-apiid-stages-stagename-cache-authorizers-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iottwinmaker-syncjob-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoTTwinMaker::SyncJob",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iottwinmaker-syncjob-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoTTwinMaker::SyncJob
 Properties:
   [SyncRole](#cfn-iottwinmaker-syncjob-syncrole): {{String}}

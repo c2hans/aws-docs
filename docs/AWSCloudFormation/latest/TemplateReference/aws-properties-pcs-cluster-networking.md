@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcs-cluster-networking-syntax.json"></a>
 
-```
+```json
 {
   "[NetworkType](#cfn-pcs-cluster-networking-networktype)" : {{String}},
   "[SecurityGroupIds](#cfn-pcs-cluster-networking-securitygroupids)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcs-cluster-networking-syntax.yaml"></a>
 
-```
+```yaml
   [NetworkType](#cfn-pcs-cluster-networking-networktype): {{String}}
   [SecurityGroupIds](#cfn-pcs-cluster-networking-securitygroupids): {{
     - String}}

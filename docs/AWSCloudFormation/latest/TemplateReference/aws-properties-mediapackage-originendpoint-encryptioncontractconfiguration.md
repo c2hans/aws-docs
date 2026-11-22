@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackage-originendpoint-encryptioncontractconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[PresetSpeke20Audio](#cfn-mediapackage-originendpoint-encryptioncontractconfiguration-presetspeke20audio)" : {{String}},
   "[PresetSpeke20Video](#cfn-mediapackage-originendpoint-encryptioncontractconfiguration-presetspeke20video)" : {{String}}
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackage-originendpoint-encryptioncontractconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [PresetSpeke20Audio](#cfn-mediapackage-originendpoint-encryptioncontractconfiguration-presetspeke20audio): {{String}}
   [PresetSpeke20Video](#cfn-mediapackage-originendpoint-encryptioncontractconfiguration-presetspeke20video): {{String}}
 ```

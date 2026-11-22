@@ -70,7 +70,7 @@ Perform the following operations before you migrate the service ARN.
 
    Example output
 
-   ```
+   ```json
    {
        "setting": {
            "name": "serviceLongArnFormat",
@@ -91,7 +91,7 @@ Perform the following operations before you migrate the service ARN.
 
    Example output
 
-   ```
+   ```json
    {
        "setting": {
            "name": "taskLongArnFormat",

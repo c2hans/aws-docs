@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-catalog-datalakeaccessproperties-syntax.json"></a>
 
-```
+```json
 {
   "[AllowFullTableExternalDataAccess](#cfn-glue-catalog-datalakeaccessproperties-allowfulltableexternaldataaccess)" : {{String}},
   "[CatalogType](#cfn-glue-catalog-datalakeaccessproperties-catalogtype)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-catalog-datalakeaccessproperties-syntax.yaml"></a>
 
-```
+```yaml
   [AllowFullTableExternalDataAccess](#cfn-glue-catalog-datalakeaccessproperties-allowfulltableexternaldataaccess): {{String}}
   [CatalogType](#cfn-glue-catalog-datalakeaccessproperties-catalogtype): {{String}}
   [DataLakeAccess](#cfn-glue-catalog-datalakeaccessproperties-datalakeaccess): {{Boolean}}

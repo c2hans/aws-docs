@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-connectiontype-sourceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[FilterConfiguration](#cfn-glue-connectiontype-sourceconfiguration-filterconfiguration)" : {{FilterConfiguration}},
   "[PaginationConfiguration](#cfn-glue-connectiontype-sourceconfiguration-paginationconfiguration)" : {{PaginationConfiguration}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-connectiontype-sourceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [FilterConfiguration](#cfn-glue-connectiontype-sourceconfiguration-filterconfiguration): {{
     FilterConfiguration}}
   [PaginationConfiguration](#cfn-glue-connectiontype-sourceconfiguration-paginationconfiguration): {{

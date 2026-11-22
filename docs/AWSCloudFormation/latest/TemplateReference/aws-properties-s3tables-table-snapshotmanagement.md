@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3tables-table-snapshotmanagement-syntax.json"></a>
 
-```
+```json
 {
   "[MaxSnapshotAgeHours](#cfn-s3tables-table-snapshotmanagement-maxsnapshotagehours)" : {{Integer}},
   "[MinSnapshotsToKeep](#cfn-s3tables-table-snapshotmanagement-minsnapshotstokeep)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3tables-table-snapshotmanagement-syntax.yaml"></a>
 
-```
+```yaml
   [MaxSnapshotAgeHours](#cfn-s3tables-table-snapshotmanagement-maxsnapshotagehours): {{Integer}}
   [MinSnapshotsToKeep](#cfn-s3tables-table-snapshotmanagement-minsnapshotstokeep): {{Integer}}
   [Status](#cfn-s3tables-table-snapshotmanagement-status): {{String}}

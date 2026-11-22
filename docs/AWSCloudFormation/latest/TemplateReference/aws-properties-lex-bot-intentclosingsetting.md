@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-intentclosingsetting-syntax.json"></a>
 
-```
+```json
 {
   "[ClosingResponse](#cfn-lex-bot-intentclosingsetting-closingresponse)" : {{ResponseSpecification}},
   "[Conditional](#cfn-lex-bot-intentclosingsetting-conditional)" : {{ConditionalSpecification}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-intentclosingsetting-syntax.yaml"></a>
 
-```
+```yaml
   [ClosingResponse](#cfn-lex-bot-intentclosingsetting-closingresponse): {{
     ResponseSpecification}}
   [Conditional](#cfn-lex-bot-intentclosingsetting-conditional): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-service-pagerdutyauthorizationconfig-syntax.json"></a>
 
-```
+```json
 {
   "[OAuthClientCredentials](#cfn-devopsagent-service-pagerdutyauthorizationconfig-oauthclientcredentials)" : {{OAuthClientDetails}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-service-pagerdutyauthorizationconfig-syntax.yaml"></a>
 
-```
+```yaml
   [OAuthClientCredentials](#cfn-devopsagent-service-pagerdutyauthorizationconfig-oauthclientcredentials): {{
     OAuthClientDetails}}
 ```

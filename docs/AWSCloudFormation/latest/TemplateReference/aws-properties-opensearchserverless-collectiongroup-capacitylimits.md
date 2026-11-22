@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchserverless-collectiongroup-capacitylimits-syntax.json"></a>
 
-```
+```json
 {
   "[MaxIndexingCapacityInOcu](#cfn-opensearchserverless-collectiongroup-capacitylimits-maxindexingcapacityinocu)" : {{Number}},
   "[MaxSearchCapacityInOcu](#cfn-opensearchserverless-collectiongroup-capacitylimits-maxsearchcapacityinocu)" : {{Number}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchserverless-collectiongroup-capacitylimits-syntax.yaml"></a>
 
-```
+```yaml
   [MaxIndexingCapacityInOcu](#cfn-opensearchserverless-collectiongroup-capacitylimits-maxindexingcapacityinocu): {{Number}}
   [MaxSearchCapacityInOcu](#cfn-opensearchserverless-collectiongroup-capacitylimits-maxsearchcapacityinocu): {{Number}}
   [MinIndexingCapacityInOcu](#cfn-opensearchserverless-collectiongroup-capacitylimits-minindexingcapacityinocu): {{Number}}

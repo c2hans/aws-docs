@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fms-policy-thirdpartyfirewallpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[FirewallDeploymentModel](#cfn-fms-policy-thirdpartyfirewallpolicy-firewalldeploymentmodel)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fms-policy-thirdpartyfirewallpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [FirewallDeploymentModel](#cfn-fms-policy-thirdpartyfirewallpolicy-firewalldeploymentmodel): {{String}}
 ```
 

@@ -28,7 +28,7 @@ Cross-account Amazon S3 buckets are supported. To configure cross-account Amazon
 
 1. **Data Source Inline Policy** - Navigate to the IAM console, select the Role used for the data source, and click on "Create inline policy." Use the following JSON policy:
 
-   ```
+   ```json
    {
    "Version": "2012-10-17",		 	 	 ,
    "Statement": [
@@ -93,7 +93,7 @@ Cross-account Amazon S3 buckets are supported. To configure cross-account Amazon
 
 1. **Amazon S3 Bucket Policy** - Attach the following policy to the Amazon S3 bucket policy:
 
-   ```
+   ```json
    {
    "Version": "2012-10-17",		 	 	 ,
    "Statement": [
@@ -123,7 +123,7 @@ Cross-account Amazon S3 buckets are supported. To configure cross-account Amazon
 
 **To allow Amazon Q to use an Amazon S3 bucket as a data source, use the following role policy:**
 
-```
+```json
 {
   "Version": "2012-10-17",		 	 	 ,
   "Statement": [
@@ -203,7 +203,7 @@ Cross-account Amazon S3 buckets are supported. To configure cross-account Amazon
 
 **If the documents in the Amazon S3 bucket are encrypted, you must provide the following permissions to use the AWS KMS key to decrypt the documents:**
 
-```
+```json
 {
       "Sid": "AllowsAmazonQToDecryptSecret",
       "Effect": "Allow",
@@ -225,7 +225,7 @@ Cross-account Amazon S3 buckets are supported. To configure cross-account Amazon
 
 **If you are using an Amazon VPC, you must add the following VPC access permissions to your policy:**
 
-```
+```json
 {
   "Version": "2012-10-17",		 	 	 ,
   "Statement": [
@@ -361,7 +361,7 @@ Cross-account Amazon S3 buckets are supported. To configure cross-account Amazon
 
 **To allow Amazon Q to assume a role, use the following trust policy:**
 
-```
+```json
 {
   "Version": "2012-10-17",		 	 	 ,
   "Statement": [

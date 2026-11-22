@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-flow-sourceconnectorproperties-syntax.json"></a>
 
-```
+```json
 {
   "[Amplitude](#cfn-appflow-flow-sourceconnectorproperties-amplitude)" : {{AmplitudeSourceProperties}},
   "[CustomConnector](#cfn-appflow-flow-sourceconnectorproperties-customconnector)" : {{CustomConnectorSourceProperties}},
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-flow-sourceconnectorproperties-syntax.yaml"></a>
 
-```
+```yaml
   [Amplitude](#cfn-appflow-flow-sourceconnectorproperties-amplitude): {{
     AmplitudeSourceProperties}}
   [CustomConnector](#cfn-appflow-flow-sourceconnectorproperties-customconnector): {{

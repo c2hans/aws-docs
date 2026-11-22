@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-evs-environment-connectivityinfo-syntax.json"></a>
 
-```
+```json
 {
   "[PrivateRouteServerPeerings](#cfn-evs-environment-connectivityinfo-privaterouteserverpeerings)" : {{[ String, ... ]}}
 }
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-evs-environment-connectivityinfo-syntax.yaml"></a>
 
-```
+```yaml
   [PrivateRouteServerPeerings](#cfn-evs-environment-connectivityinfo-privaterouteserverpeerings): {{
     - String}}
 ```

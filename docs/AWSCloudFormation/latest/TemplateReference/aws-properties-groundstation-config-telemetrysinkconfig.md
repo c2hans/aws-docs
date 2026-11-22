@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-groundstation-config-telemetrysinkconfig-syntax.json"></a>
 
-```
+```json
 {
   "[TelemetrySinkData](#cfn-groundstation-config-telemetrysinkconfig-telemetrysinkdata)" : {{TelemetrySinkData}},
   "[TelemetrySinkType](#cfn-groundstation-config-telemetrysinkconfig-telemetrysinktype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-groundstation-config-telemetrysinkconfig-syntax.yaml"></a>
 
-```
+```yaml
   [TelemetrySinkData](#cfn-groundstation-config-telemetrysinkconfig-telemetrysinkdata): {{
     TelemetrySinkData}}
   [TelemetrySinkType](#cfn-groundstation-config-telemetrysinkconfig-telemetrysinktype): {{String}}
@@ -59,7 +59,7 @@ The following example creates a Ground Station `TelemetrySinkConfig` that delive
 #### JSON
 <a name="aws-properties-groundstation-config-telemetrysinkconfig--examples--Create_a_TelemetrySinkConfig--json"></a>
 
-```
+```json
 {
   "TelemetrySinkConfig": {
     "TelemetrySinkType": "KINESIS_DATA_STREAM",
@@ -76,7 +76,7 @@ The following example creates a Ground Station `TelemetrySinkConfig` that delive
 #### YAML
 <a name="aws-properties-groundstation-config-telemetrysinkconfig--examples--Create_a_TelemetrySinkConfig--yaml"></a>
 
-```
+```yaml
 TelemetrySinkConfig:
   TelemetrySinkType: KINESIS_DATA_STREAM
   TelemetrySinkData:

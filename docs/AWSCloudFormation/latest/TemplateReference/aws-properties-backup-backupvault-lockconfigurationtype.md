@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-backup-backupvault-lockconfigurationtype-syntax.json"></a>
 
-```
+```json
 {
   "[ChangeableForDays](#cfn-backup-backupvault-lockconfigurationtype-changeablefordays)" : {{Integer}},
   "[MaxRetentionDays](#cfn-backup-backupvault-lockconfigurationtype-maxretentiondays)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-backup-backupvault-lockconfigurationtype-syntax.yaml"></a>
 
-```
+```yaml
   [ChangeableForDays](#cfn-backup-backupvault-lockconfigurationtype-changeablefordays): {{Integer}}
   [MaxRetentionDays](#cfn-backup-backupvault-lockconfigurationtype-maxretentiondays): {{Integer}}
   [MinRetentionDays](#cfn-backup-backupvault-lockconfigurationtype-minretentiondays): {{Integer}}

@@ -159,7 +159,7 @@ If you are creating an access grant that grants access to only one object, inclu
 
 **Example Create an access grant request**
 
-```
+```java
 public void createAccessGrant() {
 CreateAccessGrantRequest createRequest = CreateAccessGrantRequest.builder()
 .accountId("{{111122223333}}")
@@ -175,7 +175,7 @@ LOGGER.info("CreateAccessGrantResponse: " + createResponse);
 
 **Example Create an access grant response**
 
-```
+```java
 CreateAccessGrantResponse(
 CreatedAt=2023-06-07T05:20:26.330Z,
 AccessGrantId=a1b2c3d4-5678-90ab-cdef-EXAMPLE33333,

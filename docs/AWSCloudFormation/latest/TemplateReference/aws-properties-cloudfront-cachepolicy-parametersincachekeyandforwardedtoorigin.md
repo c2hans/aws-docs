@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-cachepolicy-parametersincachekeyandforwardedtoorigin-syntax.json"></a>
 
-```
+```json
 {
   "[CookiesConfig](#cfn-cloudfront-cachepolicy-parametersincachekeyandforwardedtoorigin-cookiesconfig)" : {{CookiesConfig}},
   "[EnableAcceptEncodingBrotli](#cfn-cloudfront-cachepolicy-parametersincachekeyandforwardedtoorigin-enableacceptencodingbrotli)" : {{Boolean}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-cachepolicy-parametersincachekeyandforwardedtoorigin-syntax.yaml"></a>
 
-```
+```yaml
   [CookiesConfig](#cfn-cloudfront-cachepolicy-parametersincachekeyandforwardedtoorigin-cookiesconfig): {{
     CookiesConfig}}
   [EnableAcceptEncodingBrotli](#cfn-cloudfront-cachepolicy-parametersincachekeyandforwardedtoorigin-enableacceptencodingbrotli): {{Boolean}}

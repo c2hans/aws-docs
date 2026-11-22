@@ -43,7 +43,7 @@ We recommend creating at least one IAM role per service and policy.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

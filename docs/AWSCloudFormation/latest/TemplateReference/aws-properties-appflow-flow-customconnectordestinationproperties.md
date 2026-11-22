@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-flow-customconnectordestinationproperties-syntax.json"></a>
 
-```
+```json
 {
   "[CustomProperties](#cfn-appflow-flow-customconnectordestinationproperties-customproperties)" : {{{{{Key}}: {{Value}}, ...}}},
   "[EntityName](#cfn-appflow-flow-customconnectordestinationproperties-entityname)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-flow-customconnectordestinationproperties-syntax.yaml"></a>
 
-```
+```yaml
   [CustomProperties](#cfn-appflow-flow-customconnectordestinationproperties-customproperties): {{
     {{Key}}: {{Value}}}}
   [EntityName](#cfn-appflow-flow-customconnectordestinationproperties-entityname): {{String}}

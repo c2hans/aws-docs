@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-sourcetable-syntax.json"></a>
 
-```
+```json
 {
   "[DataSet](#cfn-quicksight-dataset-sourcetable-dataset)" : {{ParentDataSet}},
   "[PhysicalTableId](#cfn-quicksight-dataset-sourcetable-physicaltableid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-sourcetable-syntax.yaml"></a>
 
-```
+```yaml
   [DataSet](#cfn-quicksight-dataset-sourcetable-dataset): {{
     ParentDataSet}}
   [PhysicalTableId](#cfn-quicksight-dataset-sourcetable-physicaltableid): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-backup-backupplan-backupruleresourcetype-syntax.json"></a>
 
-```
+```json
 {
   "[CompletionWindowMinutes](#cfn-backup-backupplan-backupruleresourcetype-completionwindowminutes)" : {{Number}},
   "[CopyActions](#cfn-backup-backupplan-backupruleresourcetype-copyactions)" : {{[ CopyActionResourceType, ... ]}},
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-backup-backupplan-backupruleresourcetype-syntax.yaml"></a>
 
-```
+```yaml
   [CompletionWindowMinutes](#cfn-backup-backupplan-backupruleresourcetype-completionwindowminutes): {{Number}}
   [CopyActions](#cfn-backup-backupplan-backupruleresourcetype-copyactions): {{
     - CopyActionResourceType}}

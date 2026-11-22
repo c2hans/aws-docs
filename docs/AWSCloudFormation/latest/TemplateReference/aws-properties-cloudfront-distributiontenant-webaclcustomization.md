@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distributiontenant-webaclcustomization-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-cloudfront-distributiontenant-webaclcustomization-action)" : {{String}},
   "[Arn](#cfn-cloudfront-distributiontenant-webaclcustomization-arn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distributiontenant-webaclcustomization-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-cloudfront-distributiontenant-webaclcustomization-action): {{String}}
   [Arn](#cfn-cloudfront-distributiontenant-webaclcustomization-arn): {{String}}
 ```

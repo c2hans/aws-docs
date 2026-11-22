@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-pinpoint-gcmchannel-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Pinpoint::GCMChannel",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-pinpoint-gcmchannel-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Pinpoint::GCMChannel
 Properties:
   [ApiKey](#cfn-pinpoint-gcmchannel-apikey): {{String}}

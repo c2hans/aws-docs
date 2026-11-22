@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-multiregionaccesspointpolicy-policystatus-syntax.json"></a>
 
-```
+```json
 {
   "[IsPublic](#cfn-s3-multiregionaccesspointpolicy-policystatus-ispublic)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-multiregionaccesspointpolicy-policystatus-syntax.yaml"></a>
 
-```
+```yaml
   [IsPublic](#cfn-s3-multiregionaccesspointpolicy-policystatus-ispublic): {{String}}
 ```
 

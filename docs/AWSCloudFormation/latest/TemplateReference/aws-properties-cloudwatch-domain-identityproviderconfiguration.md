@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-domain-identityproviderconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[IdentityCenterConfiguration](#cfn-cloudwatch-domain-identityproviderconfiguration-identitycenterconfiguration)" : {{IdentityCenterConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-domain-identityproviderconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [IdentityCenterConfiguration](#cfn-cloudwatch-domain-identityproviderconfiguration-identitycenterconfiguration): {{
     IdentityCenterConfiguration}}
 ```

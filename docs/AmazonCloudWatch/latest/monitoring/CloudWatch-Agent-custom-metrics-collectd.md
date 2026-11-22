@@ -44,7 +44,7 @@ Optional parameters are also available. If you are using collectd and you do not
 
 The following is an example of the collectd section of the agent configuration file.
 
-```
+```json
 {
    "metrics":{
       "metrics_collected":{

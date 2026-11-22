@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-aps-workspace-label-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-aps-workspace-label-name)" : {{String}},
   "[Value](#cfn-aps-workspace-label-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-aps-workspace-label-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-aps-workspace-label-name): {{String}}
   [Value](#cfn-aps-workspace-label-value): {{String}}
 ```

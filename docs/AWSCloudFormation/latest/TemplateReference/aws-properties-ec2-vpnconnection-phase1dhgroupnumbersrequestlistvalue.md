@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-vpnconnection-phase1dhgroupnumbersrequestlistvalue-syntax.json"></a>
 
-```
+```json
 {
   "[Value](#cfn-ec2-vpnconnection-phase1dhgroupnumbersrequestlistvalue-value)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-vpnconnection-phase1dhgroupnumbersrequestlistvalue-syntax.yaml"></a>
 
-```
+```yaml
   [Value](#cfn-ec2-vpnconnection-phase1dhgroupnumbersrequestlistvalue-value): {{Integer}}
 ```
 
@@ -36,5 +36,5 @@ To declare this entity in your CloudFormation template, use the following syntax
 The Diffie-Hellmann group number.
 *Required*: No
 *Type*: Integer
-*Allowed values*: `2 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24`
+*Allowed values*: `2 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 35`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

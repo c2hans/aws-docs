@@ -13,7 +13,7 @@ You provide your code for the handlers using the namespace's code property. Esse
 
 You can define a handler with no data source integration. In this case, the handler is defined as a single function. In the following example, the onPublish handler shows the default behavior when no handler is defined. It simply forwards the list of events.
 
-```
+```js
 export function onPublish(ctx) {
   return ctx.events
 }
@@ -21,13 +21,13 @@ export function onPublish(ctx) {
 
 As an alternate example, this definition returns an empty list, which means that no event will be broadcast to the subscribers.
 
-```
+```js
 export const onPublish = (ctx) => ([])
 ```
 
 In this example, the handler only returns the list of published events, but adds the property `msg` to the payload.
 
-```
+```js
 export function onPublish(ctx) {
   return ctx.events.map(({id, payload}) => {
     return {id: payload: {...payload, msg: "Hello!"}}
@@ -42,7 +42,7 @@ You can define a handler with a data source integration. In this case, you defin
 
 The following example defines an `onPublish` handler that saves all published events to a `messages_table` before forwarding them to be broadcast. The `onSubscribe` handler doesn't have a data source integration and is defined by a single function that simply logs a message.
 
-```
+```js
 import * as ddb from `@aws-appsync/utils/dynamodb`
 
 const TABLE = 'messages_table'
@@ -71,7 +71,7 @@ export const onSubscribe = (ctx) => {
 
 You might have situations where you need to skip the data source invocation at run time. You can do this by using the `runtime.earlyReturn` utility. `earlyReturn` immediately returns the provided payload and skips the response function.
 
-```
+```js
 import * as ddb from `@aws-appsync/utils/dynamodb`
 
 const TABLE = 'messages_table'
@@ -99,7 +99,7 @@ export const onPublish = {
 
 During the execution of an event handler, you might need to return an error back to the publisher or subscriber. Use the `util.error` function to do this. When publishing is done using the HTTP endpoint, this returns an HTTP 403 response. When publishing over WebSocket, this returns a `publish_error` message with the provided message. The following example demonstrates how to return an error message.
 
-```
+```js
 export function onPublish(ctx) {
   util.error("Not possible!")
   return ctx.events
@@ -111,7 +111,7 @@ export function onPublish(ctx) {
 
 Your event handlers are always called after AWS AppSync has authorized the requests. However, you can run additional business logic and unauthorize a request in your event handler using the `util.unauthorize` function. When publishing over HTTP, this returns an HTTP 401 response. Over WebSocket, this returns a `publish_error` message with an `UnauthorizedException` error type. When trying to connect over WebSocket, you get a `subscribe_error` with an `Unauthorized` error type.
 
-```
+```js
 export function onSubscribe(ctx) {
   if (somethingNotValid() === true) {
     util.unauthorized()

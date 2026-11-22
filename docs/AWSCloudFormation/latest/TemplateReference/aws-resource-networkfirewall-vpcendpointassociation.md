@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-networkfirewall-vpcendpointassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::NetworkFirewall::VpcEndpointAssociation",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-networkfirewall-vpcendpointassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::NetworkFirewall::VpcEndpointAssociation
 Properties:
   [Description](#cfn-networkfirewall-vpcendpointassociation-description): {{String}}
@@ -142,7 +142,7 @@ The following shows example VPC Endpoint Association specifications.
 #### JSON
 <a name="aws-resource-networkfirewall-vpcendpointassociation--examples--Create_a_VPC_Endpoint_Association--json"></a>
 
-```
+```json
 "SampleVpcEndpointAssociation": {
     "Type": "AWS::NetworkFirewall::VpcEndpointAssociation",
     "Properties": {
@@ -171,7 +171,7 @@ The following shows example VPC Endpoint Association specifications.
 #### YAML
 <a name="aws-resource-networkfirewall-vpcendpointassociation--examples--Create_a_VPC_Endpoint_Association--yaml"></a>
 
-```
+```yaml
 SampleVpcEndpointAssociation:
   Type: AWS::NetworkFirewall::VpcEndpointAssociation
   Properties:

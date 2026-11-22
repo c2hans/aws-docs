@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-headers-syntax.json"></a>
 
-```
+```json
 {
   "[MatchPattern](#cfn-wafv2-webacl-headers-matchpattern)" : {{HeaderMatchPattern}},
   "[MatchScope](#cfn-wafv2-webacl-headers-matchscope)" : {{String}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-headers-syntax.yaml"></a>
 
-```
+```yaml
   [MatchPattern](#cfn-wafv2-webacl-headers-matchpattern): {{
     HeaderMatchPattern}}
   [MatchScope](#cfn-wafv2-webacl-headers-matchscope): {{String}}
@@ -81,7 +81,7 @@ The following shows an example Headers field to match specification.
 #### YAML
 <a name="aws-properties-wafv2-webacl-headers--examples--Set_the_Headers_specification--yaml"></a>
 
-```
+```yaml
 FieldToMatch:
   Headers:
     MatchPattern:
@@ -95,7 +95,7 @@ FieldToMatch:
 #### JSON
 <a name="aws-properties-wafv2-webacl-headers--examples--Set_the_Headers_specification--json"></a>
 
-```
+```json
 "FieldToMatch": {
   "Headers": {
     "MatchPattern": {

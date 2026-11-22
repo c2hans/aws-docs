@@ -15,7 +15,7 @@ To allow access to the DB instance from the appropriate clients, ensure that you
 
    The path to your Oracle home directory depends on your installation. The following example sets the `ORACLE_HOME` environment variable.
 
-   ```
+   ```bash
    prompt>export ORACLE_HOME=/home/user/app/user/product/19.0.0/dbhome_1
    ```
 
@@ -25,7 +25,7 @@ To allow access to the DB instance from the appropriate clients, ensure that you
 
    The following is an example that sets the LD\_LIBRARY\_PATH environment variable.
 
-   ```
+   ```bash
    prompt>export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$ORACLE_HOME/lib
    ```
 
@@ -33,7 +33,7 @@ To allow access to the DB instance from the appropriate clients, ensure that you
 
    The following is an example that creates the Oracle wallet directory.
 
-   ```
+   ```bash
    prompt>mkdir $ORACLE_HOME/ssl_wallet
    ```
 
@@ -76,7 +76,7 @@ You can set `SSL_VERSION` to a different value if your DB instance supports it.
 
 1. Run the following command to create the Oracle wallet.
 
-   ```
+   ```bash
    prompt>orapki wallet create -wallet $ORACLE_HOME/ssl_wallet -auto_login_only
    ```
 
@@ -84,7 +84,7 @@ You can set `SSL_VERSION` to a different value if your DB instance supports it.
 
 1. Add each certificate to your wallet using separate `orapki` commands, replacing `{{certificate-pem-file}}` with the absolute file name of the .pem file.
 
-   ```
+   ```bash
    prompt>orapki wallet add -wallet $ORACLE_HOME/ssl_wallet -trusted_cert -cert
          {{certificate-pem-file}} -auto_login_only
    ```

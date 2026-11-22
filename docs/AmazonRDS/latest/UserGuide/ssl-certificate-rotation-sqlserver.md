@@ -28,7 +28,7 @@ Check the DB instance configuration for the value of the `rds.force_ssl` paramet
 
 Run the following query to get the current encryption option for all the open connections to a DB instance. The column `ENCRYPT_OPTION` returns `TRUE` if the connection is encrypted.
 
-```
+```sql
 select SESSION_ID,
     ENCRYPT_OPTION,
     NET_TRANSPORT,

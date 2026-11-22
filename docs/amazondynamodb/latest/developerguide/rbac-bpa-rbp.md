@@ -75,7 +75,7 @@ The following example of a non-public resource-based policy constrains `sourceVP
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

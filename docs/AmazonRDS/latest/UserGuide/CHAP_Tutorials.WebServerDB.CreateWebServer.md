@@ -159,7 +159,7 @@ Next, you add content to your Apache web server that connects to your Amazon RDS
 We recommend placing the user name and password information in a folder that isn't part of the document root for your web server. Doing this reduces the possibility of your security information being exposed.
 Make sure to change `master password` to a suitable password in your application.
 
-   ```
+   ```php
    <?php
 
    define('DB_SERVER', '{{db_instance_endpoint}}');
@@ -189,7 +189,7 @@ Make sure to change `master password` to a suitable password in your application
 ------
 #### [ MariaDB & MySQL ]
 
-   ```
+   ```php
    <?php include "../inc/dbinfo.inc"; ?>
    <html>
    <body>
@@ -314,7 +314,7 @@ Make sure to change `master password` to a suitable password in your application
 ------
 #### [ PostgreSQL ]
 
-   ```
+   ```php
    <?php include "../inc/dbinfo.inc"; ?>
 
    <html>

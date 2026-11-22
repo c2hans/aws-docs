@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-autoscalingplans-scalingplan-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AutoScalingPlans::ScalingPlan",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-autoscalingplans-scalingplan-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AutoScalingPlans::ScalingPlan
 Properties:
   [ApplicationSource](#cfn-autoscalingplans-scalingplan-applicationsource): {{
@@ -94,7 +94,7 @@ The [ScalingInstructions](https://docs.aws.amazon.com/AWSCloudFormation/latest/U
 #### JSON
 <a name="aws-resource-autoscalingplans-scalingplan--examples--Scaling_plan--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion":"2010-09-09",
   "Parameters":{
@@ -191,7 +191,7 @@ The [ScalingInstructions](https://docs.aws.amazon.com/AWSCloudFormation/latest/U
 #### YAML
 <a name="aws-resource-autoscalingplans-scalingplan--examples--Scaling_plan--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:
   myTagKey:

@@ -66,7 +66,7 @@ The following examples show you how to delete a single object or multiple object
 
 The following S3 on Outposts example deletes an object in a bucket by using the SDK for Java. To use this example, specify the access point ARN for the Outpost and the key name for the object that you want to delete. For more information, see [DeleteObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObject.html) in the *Amazon Simple Storage Service API Reference*.
 
-```
+```Java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.SdkClientException;
 import com.amazonaws.services.s3.AmazonS3;
@@ -104,7 +104,7 @@ public class DeleteObject {
 
 The following S3 on Outposts example uploads and then deletes objects in a bucket by using the SDK for Java. To use this example, specify the access point ARN for the Outpost. For more information, see [DeleteObjects](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObjects.html) in the *Amazon Simple Storage Service API Reference*.
 
-```
+```Java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.SdkClientException;
 import com.amazonaws.services.s3.AmazonS3;

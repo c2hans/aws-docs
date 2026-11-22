@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rbin-rule-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-rbin-rule-tag-key)" : {{String}},
   "[Value](#cfn-rbin-rule-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rbin-rule-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-rbin-rule-tag-key): {{String}}
   [Value](#cfn-rbin-rule-tag-value): {{String}}
 ```

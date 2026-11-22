@@ -36,7 +36,7 @@ ACM no longer supports WHOIS email validation for new certificates or renewals. 
 
 Observe the following considerations about email validation.
 + You need a working email address registered in your domain in order to use email validation. Procedures for setting up an email address are outside the scope of this guide.
-+ Validation applies only to publicly trusted certificates issued by ACM. ACM does not validate domain ownership for [imported certificates](import-certificate.md) or for certificates signed by a private CA. ACM cannot validate resources in an Amazon VPC [private hosted zone](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-dns.html#vpc-private-hosted-zones) or any other private domain. For more information, see [Troubleshoot certificate validation](certificate-validation.md).
++ Validation applies only to certificates that ACM issues from Amazon CAs, whose `Type` is `AMAZON_ISSUED`: public certificates and Amazon N2 certificates. ACM does not validate domain ownership for [imported certificates](import-certificate.md) or for certificates signed by a private CA. ACM cannot validate resources in an Amazon VPC [private hosted zone](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-dns.html#vpc-private-hosted-zones) or any other private domain. For more information, see [Troubleshoot certificate validation](certificate-validation.md).
 + To switch an existing certificate from email validation to DNS validation, use the [`UpdateCertificateOptions`](https://docs.aws.amazon.com/acm/latest/APIReference/API_UpdateCertificateOptions.html) API.
 
 ## Certificate expiration and renewal

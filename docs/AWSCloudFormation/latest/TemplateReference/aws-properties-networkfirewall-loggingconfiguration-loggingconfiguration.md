@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkfirewall-loggingconfiguration-loggingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[LogDestinationConfigs](#cfn-networkfirewall-loggingconfiguration-loggingconfiguration-logdestinationconfigs)" : {{[ LogDestinationConfig, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkfirewall-loggingconfiguration-loggingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [LogDestinationConfigs](#cfn-networkfirewall-loggingconfiguration-loggingconfiguration-logdestinationconfigs): {{
     - LogDestinationConfig}}
 ```

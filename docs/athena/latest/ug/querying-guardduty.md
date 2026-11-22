@@ -23,7 +23,7 @@ To query your GuardDuty findings from Athena, you must create a table for them.
 
 1. Paste the following DDL statement into the Athena console. Modify the values in `LOCATION 's3://amzn-s3-demo-bucket/AWSLogs/{{account-id}}/GuardDuty/'` to point to your GuardDuty findings in Amazon S3.
 
-   ```
+   ```sql
    CREATE EXTERNAL TABLE `gd_logs` (
      `schemaversion` string,
      `accountid` string,
@@ -56,7 +56,7 @@ The following examples show how to query GuardDuty findings from Athena.
 **Example – DNS data exfiltration**
 The following query returns information about Amazon EC2 instances that might be exfiltrating data through DNS queries.
 
-```
+```sql
 SELECT
     title,
     severity,
@@ -80,7 +80,7 @@ ORDER BY severity DESC
 **Example – Unauthorized IAM user access**
 The following query returns all `UnauthorizedAccess:IAMUser` finding types for an IAM Principal from all regions.
 
-```
+```sql
 SELECT title,
          severity,
          type,

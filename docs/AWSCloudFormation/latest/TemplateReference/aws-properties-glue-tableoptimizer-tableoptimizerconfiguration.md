@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-tableoptimizer-tableoptimizerconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CompactionConfiguration](#cfn-glue-tableoptimizer-tableoptimizerconfiguration-compactionconfiguration)" : {{CompactionConfiguration}},
   "[Enabled](#cfn-glue-tableoptimizer-tableoptimizerconfiguration-enabled)" : {{Boolean}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-tableoptimizer-tableoptimizerconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CompactionConfiguration](#cfn-glue-tableoptimizer-tableoptimizerconfiguration-compactionconfiguration): {{
     CompactionConfiguration}}
   [Enabled](#cfn-glue-tableoptimizer-tableoptimizerconfiguration-enabled): {{Boolean}}

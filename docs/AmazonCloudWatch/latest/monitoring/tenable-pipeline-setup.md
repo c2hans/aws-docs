@@ -8,7 +8,7 @@ Collects vulnerability management data from Tenable using API key authentication
 
 Configure the Tenable Vulnerability Management source with the following parameters:
 
-```
+```yaml
 source:
   tenable_vulnerabilitymanagement:
     authentication:

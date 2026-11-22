@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-directconnect-publicvirtualinterface-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-directconnect-publicvirtualinterface-tag-key)" : {{String}},
   "[Value](#cfn-directconnect-publicvirtualinterface-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-directconnect-publicvirtualinterface-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-directconnect-publicvirtualinterface-tag-key): {{String}}
   [Value](#cfn-directconnect-publicvirtualinterface-tag-value): {{String}}
 ```

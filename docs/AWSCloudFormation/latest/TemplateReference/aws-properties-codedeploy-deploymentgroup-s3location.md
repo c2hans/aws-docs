@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codedeploy-deploymentgroup-s3location-syntax.json"></a>
 
-```
+```json
 {
   "[Bucket](#cfn-codedeploy-deploymentgroup-s3location-bucket)" : {{String}},
   "[BundleType](#cfn-codedeploy-deploymentgroup-s3location-bundletype)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codedeploy-deploymentgroup-s3location-syntax.yaml"></a>
 
-```
+```yaml
   [Bucket](#cfn-codedeploy-deploymentgroup-s3location-bucket): {{String}}
   [BundleType](#cfn-codedeploy-deploymentgroup-s3location-bundletype): {{String}}
   [ETag](#cfn-codedeploy-deploymentgroup-s3location-etag): {{String}}

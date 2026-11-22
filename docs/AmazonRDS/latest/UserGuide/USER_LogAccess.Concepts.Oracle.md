@@ -49,31 +49,31 @@ Following, you can find descriptions of Amazon RDS procedures to create, refresh
 
 You can use either of two procedures to allow access to any file in the `background_dump_dest` path. The first procedure refreshes a view containing a listing of all files currently in `background_dump_dest`.
 
-```
+```sql
 1. EXEC rdsadmin.manage_tracefiles.refresh_tracefile_listing;
 ```
 
 After the view is refreshed, query the following view to access the results.
 
-```
+```sql
 1. SELECT * FROM rdsadmin.tracefile_listing;
 ```
 
 An alternative to the previous process is to use `FROM table` to stream nonrelational data in a table-like format to list database directory contents.
 
-```
+```sql
 1. SELECT * FROM TABLE(rdsadmin.rds_file_util.listdir('BDUMP'));
 ```
 
 The following query shows the text of a log file.
 
-```
+```sql
 1. SELECT text FROM TABLE(rdsadmin.rds_file_util.read_text_file('BDUMP','alert_{{dbname}}.log.{{date}}'));
 ```
 
 On a read replica, get the name of the BDUMP directory by querying `V$DATABASE.DB_UNIQUE_NAME`. If the unique name is `DATABASE_B`, then the BDUMP directory is `BDUMP_B`. The following example queries the BDUMP name on a replica and then uses this name to query the contents of `alert_DATABASE.log.2020-06-23`.
 
-```
+```sql
 1. SELECT 'BDUMP' || (SELECT regexp_replace(DB_UNIQUE_NAME,'.*(_[A-Z])', '\1') FROM V$DATABASE) AS BDUMP_VARIABLE FROM DUAL;
 2.
 3. BDUMP_VARIABLE
@@ -102,13 +102,13 @@ You can retrieve any trace file in `background_dump_dest` using a standard SQL q
 
 For example, you can use the `rdsadmin.tracefile_listing` view mentioned preceding to list all of the trace files on the system. You can then set the `tracefile_table` view to point to the intended trace file using the following procedure.
 
-```
+```sql
 1. EXEC rdsadmin.manage_tracefiles.set_tracefile_table_location('CUST01_ora_3260_SYSTEMSTATE.trc');
 ```
 
 The following example creates an external table in the current schema with the location set to the file provided. You can retrieve the contents into a local file using a SQL query.
 
-```
+```sql
 1. SPOOL /tmp/tracefile.txt
 2. SELECT * FROM tracefile_table;
 3. SPOOL OFF;
@@ -121,7 +121,7 @@ Trace files can accumulate and consume disk space. Amazon RDS purges trace files
 
 The following example shows the current trace file retention period, and then sets a new trace file retention period.
 
-```
+```sql
  1. # Show the current tracefile retention
  2. SQL> EXEC rdsadmin.rdsadmin_util.show_configuration;
  3. NAME:tracefile retention
@@ -141,13 +141,13 @@ The following example shows the current trace file retention period, and then se
 
 In addition to the periodic purge process, you can manually remove files from the `background_dump_dest`. The following example shows how to purge all files older than five minutes.
 
-```
+```sql
 EXEC rdsadmin.manage_tracefiles.purge_tracefiles(5);
 ```
 
 You can also purge all files that match a specific pattern (if you do, don't include the file extension, such as .trc). The following example shows how to purge all files that start with `SCHPOC1_ora_5935`.
 
-```
+```sql
 1. EXEC rdsadmin.manage_tracefiles.purge_tracefiles('SCHPOC1_ora_5935');
 ```
 
@@ -304,7 +304,7 @@ Other parameters might be required depending on the RDS operation that you run.
 
 You can view the alert log using the Amazon RDS console. You can also use the following SQL statement.
 
-```
+```sql
 1. SELECT message_text FROM alertlog;
 ```
 

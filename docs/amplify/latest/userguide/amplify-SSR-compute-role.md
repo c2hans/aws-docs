@@ -15,7 +15,7 @@ The instructions later in this section describe how to create a policy with cust
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -88,7 +88,7 @@ After you create a policy, use the following instructions to attach the policy t
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

@@ -50,7 +50,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-applicationsignals-servicelevelobjective-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApplicationSignals::ServiceLevelObjective",
   "Properties" : {
@@ -69,7 +69,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-applicationsignals-servicelevelobjective-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApplicationSignals::ServiceLevelObjective
 Properties:
   [BurnRateConfigurations](#cfn-applicationsignals-servicelevelobjective-burnrateconfigurations): {{
@@ -194,7 +194,7 @@ The following example creates a period-based SLO on service dependency latency.
 #### YAML
 <a name="aws-resource-applicationsignals-servicelevelobjective--examples--A_period-based_SLO_on_service_dependency_latency--yaml"></a>
 
-```
+```yaml
 Resources:
   ServiceLevelObjective:
     Type: AWS::ApplicationSignals::ServiceLevelObjective
@@ -236,7 +236,7 @@ The following example creates a request-based SLO on service dependency availabi
 #### YAML
 <a name="aws-resource-applicationsignals-servicelevelobjective--examples--A_request-based_SLO_on_service_dependency_latency--yaml"></a>
 
-```
+```yaml
 Resources:
   ServiceLevelObjective:
     Type: AWS::ApplicationSignals::ServiceLevelObjective
@@ -274,7 +274,7 @@ The following example creates a period-based SLO on service operation latency.
 #### YAML
 <a name="aws-resource-applicationsignals-servicelevelobjective--examples--A_period-based_SLO_on_service_operation_latency--yaml"></a>
 
-```
+```yaml
 Resources:
   ServiceLevelObjective:
     Type: AWS::ApplicationSignals::ServiceLevelObjective
@@ -310,7 +310,7 @@ The following example creates a period-based SLO on service operation availabili
 #### YAML
 <a name="aws-resource-applicationsignals-servicelevelobjective--examples--A_period-based_SLO_on_service_operation_availability--yaml"></a>
 
-```
+```yaml
 Resources:
   ServiceLevelObjective:
     Type: AWS::ApplicationSignals::ServiceLevelObjective
@@ -345,7 +345,7 @@ The following example creates a period-based SLO on CloudWatch metrics.
 #### YAML
 <a name="aws-resource-applicationsignals-servicelevelobjective--examples--A_period-based_SLO_on_CloudWatch_metrics--yaml"></a>
 
-```
+```yaml
 Resources:
   ServiceLevelObjective:
     Type: AWS::ApplicationSignals::ServiceLevelObjective
@@ -393,7 +393,7 @@ The following example creates a request-based SLO on CloudWatch metrics.
 #### YAML
 <a name="aws-resource-applicationsignals-servicelevelobjective--examples--A_request-based_SLO_on_CloudWatch_metrics--yaml"></a>
 
-```
+```yaml
 Resources:
   ServiceLevelObjective:
     Type: AWS::ApplicationSignals::ServiceLevelObjective

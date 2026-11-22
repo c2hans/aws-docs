@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-b2bi-partnership-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-b2bi-partnership-tag-key)" : {{String}},
   "[Value](#cfn-b2bi-partnership-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-b2bi-partnership-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-b2bi-partnership-tag-key): {{String}}
   [Value](#cfn-b2bi-partnership-tag-value): {{String}}
 ```

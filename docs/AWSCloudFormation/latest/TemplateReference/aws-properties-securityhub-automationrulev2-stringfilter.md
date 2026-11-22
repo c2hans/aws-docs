@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityhub-automationrulev2-stringfilter-syntax.json"></a>
 
-```
+```json
 {
   "[Comparison](#cfn-securityhub-automationrulev2-stringfilter-comparison)" : {{String}},
   "[Value](#cfn-securityhub-automationrulev2-stringfilter-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityhub-automationrulev2-stringfilter-syntax.yaml"></a>
 
-```
+```yaml
   [Comparison](#cfn-securityhub-automationrulev2-stringfilter-comparison): {{String}}
   [Value](#cfn-securityhub-automationrulev2-stringfilter-value): {{String}}
 ```

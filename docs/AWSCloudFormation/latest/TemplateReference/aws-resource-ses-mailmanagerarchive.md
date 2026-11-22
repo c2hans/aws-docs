@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ses-mailmanagerarchive-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SES::MailManagerArchive",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ses-mailmanagerarchive-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SES::MailManagerArchive
 Properties:
   [ArchiveName](#cfn-ses-mailmanagerarchive-archivename): {{String}}

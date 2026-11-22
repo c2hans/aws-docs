@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-categoricaldimensionfield-syntax.json"></a>
 
-```
+```json
 {
   "[Column](#cfn-quicksight-template-categoricaldimensionfield-column)" : {{ColumnIdentifier}},
   "[FieldId](#cfn-quicksight-template-categoricaldimensionfield-fieldid)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-categoricaldimensionfield-syntax.yaml"></a>
 
-```
+```yaml
   [Column](#cfn-quicksight-template-categoricaldimensionfield-column): {{
     ColumnIdentifier}}
   [FieldId](#cfn-quicksight-template-categoricaldimensionfield-fieldid): {{String}}

@@ -119,7 +119,7 @@ This shows a sample response that the `ListControls` operation might return if y
 #### Sample Response
 <a name="API_ListControls_Example_1_Response"></a>
 
-```
+```json
 {
     "controlMetadataList": [
         {
@@ -171,14 +171,14 @@ The sample response shows the results that the `ListControls` operation might re
 #### Sample Request
 <a name="API_ListControls_Example_2_Request"></a>
 
-```
+```json
 aws auditmanager list-controls --controlType Core --controlCatalogId "arn:aws:controlcatalog:::domain/d4msesd9vvmzmmuvlv06m92uq"
 ```
 
 #### Sample Response
 <a name="API_ListControls_Example_2_Response"></a>
 
-```
+```json
 {
    "controlMetadataList": [
     {

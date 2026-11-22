@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-transitgatewaypeeringattachment-peeringattachmentstatus-syntax.json"></a>
 
-```
+```json
 {
   "[Code](#cfn-ec2-transitgatewaypeeringattachment-peeringattachmentstatus-code)" : {{String}},
   "[Message](#cfn-ec2-transitgatewaypeeringattachment-peeringattachmentstatus-message)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-transitgatewaypeeringattachment-peeringattachmentstatus-syntax.yaml"></a>
 
-```
+```yaml
   [Code](#cfn-ec2-transitgatewaypeeringattachment-peeringattachmentstatus-code): {{String}}
   [Message](#cfn-ec2-transitgatewaypeeringattachment-peeringattachmentstatus-message): {{String}}
 ```

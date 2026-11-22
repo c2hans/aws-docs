@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-deadline-fleet-customermanagedworkercapabilities-syntax.json"></a>
 
-```
+```json
 {
   "[AcceleratorCount](#cfn-deadline-fleet-customermanagedworkercapabilities-acceleratorcount)" : {{AcceleratorCountRange}},
   "[AcceleratorTotalMemoryMiB](#cfn-deadline-fleet-customermanagedworkercapabilities-acceleratortotalmemorymib)" : {{AcceleratorTotalMemoryMiBRange}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-deadline-fleet-customermanagedworkercapabilities-syntax.yaml"></a>
 
-```
+```yaml
   [AcceleratorCount](#cfn-deadline-fleet-customermanagedworkercapabilities-acceleratorcount): {{
     AcceleratorCountRange}}
   [AcceleratorTotalMemoryMiB](#cfn-deadline-fleet-customermanagedworkercapabilities-acceleratortotalmemorymib): {{

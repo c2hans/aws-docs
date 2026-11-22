@@ -13,13 +13,13 @@ To get started:
 
 1. On your local machine, navigate to your project's directory. Install the Amplify library using the command below:
 
-   ```
+   ```TypeScript
    npm install aws-amplify
    ```
 
 1. Download your configuration file and place it in your project folder. Your configuration file will typically contain a `config` variable with some settings (endpoint, Region, authorization mode, etc.) defined. For example, it may look like this:
 
-   ```
+   ```SDL
    const config =  {
        API: {
            GraphQL: {
@@ -36,7 +36,7 @@ To get started:
 
 1. In your code, import the Amplify Library and your configuration to set up Amplify:
 
-   ```
+   ```TypeScript
    import { Amplify } from 'aws-amplify';
    import config from './aws-exports.js';
 
@@ -45,7 +45,7 @@ To get started:
 
    Alternatively, use the snippet in your API configuration to set up Amplify directly:
 
-   ```
+   ```TypeScript
    import { Amplify } from 'aws-amplify';
 
    Amplify.configure({
@@ -62,7 +62,7 @@ To get started:
 
 1. Using the Amplify toolchain, you have the option to autogenerate operations based on your schema, which saves you the effort of manual scripting. In your application's root directory, use the following CLI command:
 
-   ```
+   ```TypeScript
    npx @aws-amplify/cli codegen add --apiId {{<id goes here>}} --region {{<region goes here>}}
    ```
 
@@ -74,7 +74,7 @@ To get started:
 
 1. You can now generate models for Android, Swift, Flutter, and JavaScript DataStore. Use the following command to download your schema:
 
-   ```
+   ```TypeScript
    aws appsync get-introspection-schema --api-id {{<id goes here>}} --region {{<region goes here>}} --format SDL schema.graphql
    ```
 

@@ -14,7 +14,7 @@ The following container image has TensorFlow 2.7.0 and Ubuntu 20.04. A complete 
 
 The following is an example task definition for Linux containers on Amazon EC2, displaying the syntax to use. This example uses an image containing the Habana Labs System Management Interface Tool (HL-SMI) found here: `vault.habana.ai/gaudi-docker/1.1.0/ubuntu20.04/habanalabs/tensorflow-installer-tf-cpu-2.6.0:1.1.0-614`
 
-```
+```JSON
 {
     "family": "dl-test",
     "requiresCompatibilities": ["EC2"],

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-pcs-cluster-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::PCS::Cluster",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-pcs-cluster-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::PCS::Cluster
 Properties:
   [Name](#cfn-pcs-cluster-name): {{String}}

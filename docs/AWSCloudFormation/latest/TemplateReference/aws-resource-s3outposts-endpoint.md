@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-s3outposts-endpoint-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::S3Outposts::Endpoint",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-s3outposts-endpoint-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::S3Outposts::Endpoint
 Properties:
   [AccessType](#cfn-s3outposts-endpoint-accesstype): {{String}}
@@ -145,7 +145,7 @@ This example creates an endpoint for an Outpost.
 #### JSON
 <a name="aws-resource-s3outposts-endpoint--examples--Creating_an_endpoint_for_your_Outpost_using_CloudFormation--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Endpoint",
@@ -193,7 +193,7 @@ This example creates an endpoint for an Outpost.
 #### YAML
 <a name="aws-resource-s3outposts-endpoint--examples--Creating_an_endpoint_for_your_Outpost_using_CloudFormation--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Endpoint
 Resources:
@@ -231,7 +231,7 @@ This example creates an on-premises endpoint for an Outpost using customer-owner
 #### JSON
 <a name="aws-resource-s3outposts-endpoint--examples--Creating_an_on-premises_endpoint_for_your_Outpost_using_CloudFormation--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Endpoint",
@@ -281,7 +281,7 @@ This example creates an on-premises endpoint for an Outpost using customer-owner
 #### YAML
 <a name="aws-resource-s3outposts-endpoint--examples--Creating_an_on-premises_endpoint_for_your_Outpost_using_CloudFormation--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Endpoint
 Resources:

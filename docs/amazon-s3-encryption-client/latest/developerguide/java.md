@@ -45,7 +45,7 @@ To install the Amazon S3 Encryption Client for Java, clone or download the [amaz
 **Using Apache Maven**
 The Amazon S3 Encryption Client for Java is available through [Apache Maven](https://maven.apache.org/) with the following dependency definition. Install the latest version offered.
 
-```
+```xml
 <dependency>
   <groupId>software.amazon.encryption.s3</groupId>
   <artifactId>amazon-s3-encryption-client-java</artifactId>

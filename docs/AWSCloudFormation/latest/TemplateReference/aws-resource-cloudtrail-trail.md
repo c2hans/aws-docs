@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudtrail-trail-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudTrail::Trail",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudtrail-trail-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudTrail::Trail
 Properties:
   [AdvancedEventSelectors](#cfn-cloudtrail-trail-advancedeventselectors): {{
@@ -256,7 +256,7 @@ The following example creates a trail that logs events in all regions, an Amazon
 #### JSON
 <a name="aws-resource-cloudtrail-trail--examples--Example:_Create_a_trail_by_using_advanced_event_selectors--json"></a>
 
-```
+```json
 {
     "Parameters": {
         "TrailName": {
@@ -380,7 +380,7 @@ The following example creates a trail that logs events in all regions, an Amazon
 #### YAML
 <a name="aws-resource-cloudtrail-trail--examples--Example:_Create_a_trail_by_using_advanced_event_selectors--yaml"></a>
 
-```
+```yaml
 Parameters:
   TrailName:
     Type: String
@@ -451,7 +451,7 @@ The following example creates a trail that logs events in all regions, an Amazon
 #### JSON
 <a name="aws-resource-cloudtrail-trail--examples--Example:_Create_a_trail_by_using_event_selectors--json"></a>
 
-```
+```json
 {
     "Parameters": {
         "TrailName": {
@@ -553,7 +553,7 @@ The following example creates a trail that logs events in all regions, an Amazon
 #### YAML
 <a name="aws-resource-cloudtrail-trail--examples--Example:_Create_a_trail_by_using_event_selectors--yaml"></a>
 
-```
+```yaml
 Parameters:
   TrailName:
     Type: String

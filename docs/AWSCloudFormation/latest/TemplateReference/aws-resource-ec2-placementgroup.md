@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-placementgroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::PlacementGroup",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-placementgroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::PlacementGroup
 Properties:
   [ParentGroupId](#cfn-ec2-placementgroup-parentgroupid): {{String}}
@@ -129,7 +129,7 @@ The following example declares a placement group with a cluster placement strate
 #### JSON
 <a name="aws-resource-ec2-placementgroup--examples--Create_a_placement_group--json"></a>
 
-```
+```json
 "PlacementGroup" : {
    "Type" : "AWS::EC2::PlacementGroup",
    "Properties" : {
@@ -141,7 +141,7 @@ The following example declares a placement group with a cluster placement strate
 #### YAML
 <a name="aws-resource-ec2-placementgroup--examples--Create_a_placement_group--yaml"></a>
 
-```
+```yaml
 PlacementGroup:
   Type: AWS::EC2::PlacementGroup
    Properties:
@@ -156,7 +156,7 @@ The following example declares a placement group with a spread placement strateg
 #### JSON
 <a name="aws-resource-ec2-placementgroup--examples--Create_a_spread_placement_group_with_a_specific_name--json"></a>
 
-```
+```json
 "PlacementGroup" : {
    "Type" : "AWS::EC2::PlacementGroup",
    "Properties" : {
@@ -170,7 +170,7 @@ The following example declares a placement group with a spread placement strateg
 #### YAML
 <a name="aws-resource-ec2-placementgroup--examples--Create_a_spread_placement_group_with_a_specific_name--yaml"></a>
 
-```
+```yaml
 PlacementGroup:
   Type: AWS::EC2::PlacementGroup
   Properties:
@@ -187,7 +187,7 @@ The following example declares a placement group with a partition placement stra
 #### JSON
 <a name="aws-resource-ec2-placementgroup--examples--Create_a_partition_placement_group_with_a_specific_name--json"></a>
 
-```
+```json
 "PlacementGroup" : {
    "Type" : "AWS::EC2::PlacementGroup",
    "Properties" : {
@@ -201,7 +201,7 @@ The following example declares a placement group with a partition placement stra
 #### YAML
 <a name="aws-resource-ec2-placementgroup--examples--Create_a_partition_placement_group_with_a_specific_name--yaml"></a>
 
-```
+```yaml
 PlacementGroup:
   Type: AWS::EC2::PlacementGroup
   Properties:

@@ -12,7 +12,7 @@ Changes the name, type, order or comment of a column in an Iceberg table.
 ## Synopsis
 <a name="querying-iceberg-alter-table-change-column-synopsis"></a>
 
-```
+```sql
 ALTER TABLE [{{db_name}}.]{{table_name}}
   CHANGE [COLUMN] {{col_old_name}} {{col_new_name}} {{column_type}}
   [COMMENT {{col_comment}}] [FIRST|AFTER {{column_name}}]
@@ -21,6 +21,6 @@ ALTER TABLE [{{db_name}}.]{{table_name}}
 ## Example
 <a name="querying-iceberg-alter-table-change-column-example"></a>
 
-```
+```sql
 ALTER TABLE iceberg_table CHANGE comment blog_comment string AFTER id
 ```

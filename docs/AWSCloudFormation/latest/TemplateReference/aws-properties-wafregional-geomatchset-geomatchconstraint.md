@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafregional-geomatchset-geomatchconstraint-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-wafregional-geomatchset-geomatchconstraint-type)" : {{String}},
   "[Value](#cfn-wafregional-geomatchset-geomatchconstraint-value)" : {{String}}
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafregional-geomatchset-geomatchconstraint-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-wafregional-geomatchset-geomatchconstraint-type): {{String}}
   [Value](#cfn-wafregional-geomatchset-geomatchconstraint-value): {{String}}
 ```

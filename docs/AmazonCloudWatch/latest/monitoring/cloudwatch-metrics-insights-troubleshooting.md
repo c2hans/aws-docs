@@ -11,7 +11,7 @@ This means that the query includes a **GROUP BY** clause that specifies a label 
 
  For example, suppose you have the following query:
 
-```
+```sql
 SELECT AVG(Faults)
 FROM MyCustomNamespace
 GROUP BY Operation, ServiceName
@@ -21,7 +21,7 @@ If some of the returned metrics don't include `ServiceName` as a dimension, then
 
 To prevent seeing "Other" in your results, use **SCHEMA** in your **FROM** clause, as in the following example:
 
-```
+```sql
 SELECT AVG(Faults)
 FROM SCHEMA(MyCustomNamespace, Operation)
 GROUP BY Operation, ServiceName

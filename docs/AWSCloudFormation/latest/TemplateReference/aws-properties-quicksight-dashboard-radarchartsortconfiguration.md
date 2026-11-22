@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-radarchartsortconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CategoryItemsLimit](#cfn-quicksight-dashboard-radarchartsortconfiguration-categoryitemslimit)" : {{ItemsLimitConfiguration}},
   "[CategorySort](#cfn-quicksight-dashboard-radarchartsortconfiguration-categorysort)" : {{[ FieldSortOptions, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-radarchartsortconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CategoryItemsLimit](#cfn-quicksight-dashboard-radarchartsortconfiguration-categoryitemslimit): {{
     ItemsLimitConfiguration}}
   [CategorySort](#cfn-quicksight-dashboard-radarchartsortconfiguration-categorysort): {{

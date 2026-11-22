@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrassv2-componentversion-lambdadevicemount-syntax.json"></a>
 
-```
+```json
 {
   "[AddGroupOwner](#cfn-greengrassv2-componentversion-lambdadevicemount-addgroupowner)" : {{Boolean}},
   "[Path](#cfn-greengrassv2-componentversion-lambdadevicemount-path)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrassv2-componentversion-lambdadevicemount-syntax.yaml"></a>
 
-```
+```yaml
   [AddGroupOwner](#cfn-greengrassv2-componentversion-lambdadevicemount-addgroupowner): {{Boolean}}
   [Path](#cfn-greengrassv2-componentversion-lambdadevicemount-path): {{String}}
   [Permission](#cfn-greengrassv2-componentversion-lambdadevicemount-permission): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-membership-membershipprotectedjoboutputconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[S3](#cfn-cleanrooms-membership-membershipprotectedjoboutputconfiguration-s3)" : {{ProtectedJobS3OutputConfigurationInput}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-membership-membershipprotectedjoboutputconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [S3](#cfn-cleanrooms-membership-membershipprotectedjoboutputconfiguration-s3): {{
     ProtectedJobS3OutputConfigurationInput}}
 ```

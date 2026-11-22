@@ -30,7 +30,7 @@ aws elasticache describe-replication-groups {{redis2x2}}
 
 This command should produce output similar to the following:
 
-```
+```json
 {
     "ReplicationGroups": [
         {

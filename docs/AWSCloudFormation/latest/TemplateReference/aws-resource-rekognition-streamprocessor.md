@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-rekognition-streamprocessor-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Rekognition::StreamProcessor",
   "Properties" : {
@@ -48,7 +48,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-rekognition-streamprocessor-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Rekognition::StreamProcessor
 Properties:
   [BoundingBoxRegionsOfInterest](#cfn-rekognition-streamprocessor-boundingboxregionsofinterest): {{
@@ -214,7 +214,7 @@ This template creates a stream processor configured to recognize faces defined i
 #### JSON
 <a name="aws-resource-rekognition-streamprocessor--examples--StreamProcessor_configured_to_recognize_faces_given_an_input_Rekognition_Collection--json"></a>
 
-```
+```json
 {
     "ExampleStreamProcessor": {
         "Type": "AWS::Rekognition::StreamProcessor",
@@ -250,7 +250,7 @@ This template creates a stream processor configured to recognize faces defined i
 #### YAML
 <a name="aws-resource-rekognition-streamprocessor--examples--StreamProcessor_configured_to_recognize_faces_given_an_input_Rekognition_Collection--yaml"></a>
 
-```
+```yaml
 ExampleStreamProcessor:
     Type: AWS::Rekognition::StreamProcessor
     Properties:
@@ -277,7 +277,7 @@ This template creates a stream processor that is configured to detect all suppor
 #### JSON
 <a name="aws-resource-rekognition-streamprocessor--examples--StreamProcessor_to_detect_ConnectedHome_labels_without_any_specific_regions_of_interest_configured--json"></a>
 
-```
+```json
 {
     "ExampleStreamProcessor": {
         "Type": "AWS::Rekognition::StreamProcessor",
@@ -305,7 +305,7 @@ This template creates a stream processor that is configured to detect all suppor
 #### YAML
 <a name="aws-resource-rekognition-streamprocessor--examples--StreamProcessor_to_detect_ConnectedHome_labels_without_any_specific_regions_of_interest_configured--yaml"></a>
 
-```
+```yaml
 ExampleStreamProcessor:
     Type: AWS::Rekognition::StreamProcessor
     Properties:
@@ -329,7 +329,7 @@ This template creates a stream processor that is configured to detect PERSON and
 #### JSON
 <a name="aws-resource-rekognition-streamprocessor--examples--StreamProcessor_to_detect_ConnectedHome_labels_with_specific_bounding-box_based_regions_of_interest_and_polygon_based_regions_of_interest_and_polygons_configured--json"></a>
 
-```
+```json
 {
     "ExampleStreamProcessor": {
         "Type": "AWS::Rekognition::StreamProcessor",
@@ -415,7 +415,7 @@ This template creates a stream processor that is configured to detect PERSON and
 #### YAML
 <a name="aws-resource-rekognition-streamprocessor--examples--StreamProcessor_to_detect_ConnectedHome_labels_with_specific_bounding-box_based_regions_of_interest_and_polygon_based_regions_of_interest_and_polygons_configured--yaml"></a>
 
-```
+```yaml
 ExampleStreamProcessor:
     Type: AWS::Rekognition::StreamProcessor
     Properties:
@@ -472,7 +472,7 @@ This template creates a stream processor that is configured to detect PERSON and
 #### JSON
 <a name="aws-resource-rekognition-streamprocessor--examples--StreamProcessor_to_detect_ConnectedHome_labels_with_specific_bounding-box_based_regions_of_interest_and_polygon_based_regions_of_interest_configured--json"></a>
 
-```
+```json
 {
     "ExampleStreamProcessor": {
         "Type": "AWS::Rekognition::StreamProcessor",
@@ -528,7 +528,7 @@ This template creates a stream processor that is configured to detect PERSON and
 #### YAML
 <a name="aws-resource-rekognition-streamprocessor--examples--StreamProcessor_to_detect_ConnectedHome_labels_with_specific_bounding-box_based_regions_of_interest_and_polygon_based_regions_of_interest_configured--yaml"></a>
 
-```
+```yaml
 ExampleStreamProcessor:
     Type: AWS::Rekognition::StreamProcessor
     Properties:
@@ -570,7 +570,7 @@ This template creates a stream processor that is configured to detect PERSON and
 #### JSON
 <a name="aws-resource-rekognition-streamprocessor--examples--StreamProcessor_to_detect_ConnectedHome_labels_with_specific_polygons_configured--json"></a>
 
-```
+```json
 {
     "ExampleStreamProcessor": {
         "Type": "AWS::Rekognition::StreamProcessor",
@@ -642,7 +642,7 @@ This template creates a stream processor that is configured to detect PERSON and
 #### YAML
 <a name="aws-resource-rekognition-streamprocessor--examples--StreamProcessor_to_detect_ConnectedHome_labels_with_specific_polygons_configured--yaml"></a>
 
-```
+```yaml
 ExampleStreamProcessor:
     Type: AWS::Rekognition::StreamProcessor
     Properties:

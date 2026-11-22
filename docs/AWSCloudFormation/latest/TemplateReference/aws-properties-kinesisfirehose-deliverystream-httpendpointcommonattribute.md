@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-httpendpointcommonattribute-syntax.json"></a>
 
-```
+```json
 {
   "[AttributeName](#cfn-kinesisfirehose-deliverystream-httpendpointcommonattribute-attributename)" : {{String}},
   "[AttributeValue](#cfn-kinesisfirehose-deliverystream-httpendpointcommonattribute-attributevalue)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-httpendpointcommonattribute-syntax.yaml"></a>
 
-```
+```yaml
   [AttributeName](#cfn-kinesisfirehose-deliverystream-httpendpointcommonattribute-attributename): {{String}}
   [AttributeValue](#cfn-kinesisfirehose-deliverystream-httpendpointcommonattribute-attributevalue): {{String}}
 ```

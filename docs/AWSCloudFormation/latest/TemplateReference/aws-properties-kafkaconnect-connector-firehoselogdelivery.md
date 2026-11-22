@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kafkaconnect-connector-firehoselogdelivery-syntax.json"></a>
 
-```
+```json
 {
   "[DeliveryStream](#cfn-kafkaconnect-connector-firehoselogdelivery-deliverystream)" : {{String}},
   "[Enabled](#cfn-kafkaconnect-connector-firehoselogdelivery-enabled)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kafkaconnect-connector-firehoselogdelivery-syntax.yaml"></a>
 
-```
+```yaml
   [DeliveryStream](#cfn-kafkaconnect-connector-firehoselogdelivery-deliverystream): {{String}}
   [Enabled](#cfn-kafkaconnect-connector-firehoselogdelivery-enabled): {{Boolean}}
 ```

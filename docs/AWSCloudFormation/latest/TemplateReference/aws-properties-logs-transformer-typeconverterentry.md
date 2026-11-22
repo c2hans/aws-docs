@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-logs-transformer-typeconverterentry-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-logs-transformer-typeconverterentry-key)" : {{String}},
   "[Type](#cfn-logs-transformer-typeconverterentry-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-logs-transformer-typeconverterentry-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-logs-transformer-typeconverterentry-key): {{String}}
   [Type](#cfn-logs-transformer-typeconverterentry-type): {{String}}
 ```

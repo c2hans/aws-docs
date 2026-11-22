@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-networkmanager-vpcattachment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::NetworkManager::VpcAttachment",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-networkmanager-vpcattachment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::NetworkManager::VpcAttachment
 Properties:
   [CoreNetworkId](#cfn-networkmanager-vpcattachment-corenetworkid): {{String}}

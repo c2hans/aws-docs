@@ -9,7 +9,7 @@ Use the procedure `rdsadmin.rdsadmin_transport_util.import_xtts_metadata` to imp
 ## Syntax
 <a name="rdsadmin_transport_util_import_xtts_metadata-syntax"></a>
 
-```
+```sql
 PROCEDURE import_xtts_metadata(
     p_datapump_metadata_file IN SYS.DBA_DATA_FILES.FILE_NAME%TYPE,
     p_directory_name         IN VARCHAR2,
@@ -34,7 +34,7 @@ PROCEDURE import_xtts_metadata(
 
 The example imports the tablespace metadata from the file {{xttdump.dmp}}, which is located in directory {{DATA\_PUMP\_DIR}}.
 
-```
+```sql
 BEGIN
   rdsadmin.rdsadmin_transport_util.import_xtts_metadata('{{xttdump.dmp}}','{{DATA_PUMP_DIR}}');
 END;

@@ -69,7 +69,7 @@ To update the account password policy, call the following operation:
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

@@ -106,7 +106,7 @@ The IAM role trust relationship should be modified to add the backup-gateway.ama
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -163,7 +163,7 @@ AWS Backup uses the API call [`PutHypervisorPropertyMappings`](https://docs.aws.
 
 In the AWS CLI, use the operation `put-hypervisor-property-mappings`:
 
-```
+```json
 aws backup-gateway put-hypervisor-property-mappings \
 --hypervisor-arn arn:aws:backup-gateway:region:account:hypervisor/hypervisorId \
 --vmware-to-aws-tag-mappings {{list of VMware to AWS tag mappings}} \
@@ -174,7 +174,7 @@ aws backup-gateway put-hypervisor-property-mappings \
 
 Here is an example:
 
-```
+```json
 aws backup-gateway put-hypervisor-property-mappings \
 --hypervisor-arn arn:aws:backup-gateway:us-east-1:123456789012:hypervisor/hype-12345 \
 --vmware-to-aws-tag-mappings VmwareCategory=OS,VmwareTagName=Windows,AwsTagKey=OS-Windows,AwsTagValue=Windows \
@@ -184,14 +184,14 @@ aws backup-gateway put-hypervisor-property-mappings \
 
 You can also use [`GetHypervisorPropertyMappings`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_GetHypervisorPropertyMappings.html) to assist with property mappings information. In the AWS CLI, use the operation `get-hypervisor-property-mappings`. Here is an example template:
 
-```
+```json
 aws backup-gateway get-hypervisor-property-mappings --hypervisor-arn {{HypervisorARN}}
 --region {{AWSRegion}}
 ```
 
 Here is an example:
 
-```
+```json
 aws backup-gateway get-hypervisor-property-mappings \
 --hypervisor-arn arn:aws:backup-gateway:us-east-1:123456789012:hypervisor/hype-12345 \
 --region us-east-1
@@ -206,7 +206,7 @@ AWS Backup uses the API call [`StartVirtualMachinesMetadataSync`](https://docs.a
 
 Example template:
 
-```
+```json
 aws backup-gateway start-virtual-machines-metadata-sync \
 --hypervisor-arn {{Hypervisor ARN}}
 --region {{AWSRegion}}
@@ -214,7 +214,7 @@ aws backup-gateway start-virtual-machines-metadata-sync \
 
 Example:
 
-```
+```json
 aws backup-gateway start-virtual-machines-metadata-sync \
 --hypervisor-arn arn:aws:backup-gateway:us-east-1:123456789012:hypervisor/hype-12345 \
 --region us-east-1
@@ -224,7 +224,7 @@ You can also use [`GetHypervisor`](https://docs.aws.amazon.com/aws-backup/latest
 
 Example template:
 
-```
+```json
 aws backup-gateway get-hypervisor \
 --hypervisor-arn {{Hypervisor ARN}}
 --region {{AWSRegion}}
@@ -232,7 +232,7 @@ aws backup-gateway get-hypervisor \
 
 Example:
 
-```
+```json
 aws backup-gateway get-hypervisor \
 --hypervisor-arn arn:aws:backup-gateway:us-east-1:123456789012:hypervisor/hype-12345 \
 --region us-east-1
@@ -244,7 +244,7 @@ This feature will be available on new gateways deployed after December 15, 2022.
 
 Example:
 
-```
+```json
 aws backup-gateway update-gateway-software-now \
 --gateway-arn arn:aws:backup-gateway:us-east-1:123456789012:gateway/bgw-12345 \
 --region us-east-1

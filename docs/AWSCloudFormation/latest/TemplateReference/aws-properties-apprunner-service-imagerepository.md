@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apprunner-service-imagerepository-syntax.json"></a>
 
-```
+```json
 {
   "[ImageConfiguration](#cfn-apprunner-service-imagerepository-imageconfiguration)" : {{ImageConfiguration}},
   "[ImageIdentifier](#cfn-apprunner-service-imagerepository-imageidentifier)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apprunner-service-imagerepository-syntax.yaml"></a>
 
-```
+```yaml
   [ImageConfiguration](#cfn-apprunner-service-imagerepository-imageconfiguration): {{
     ImageConfiguration}}
   [ImageIdentifier](#cfn-apprunner-service-imagerepository-imageidentifier): {{String}}

@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-rulegroup-urifragment-syntax.json"></a>
 
-```
+```json
 {
   "[FallbackBehavior](#cfn-wafv2-rulegroup-urifragment-fallbackbehavior)" : {{String}}
 }
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-rulegroup-urifragment-syntax.yaml"></a>
 
-```
+```yaml
   [FallbackBehavior](#cfn-wafv2-rulegroup-urifragment-fallbackbehavior): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-launchtemplate-memorymib-syntax.json"></a>
 
-```
+```json
 {
   "[Max](#cfn-ec2-launchtemplate-memorymib-max)" : {{Integer}},
   "[Min](#cfn-ec2-launchtemplate-memorymib-min)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-launchtemplate-memorymib-syntax.yaml"></a>
 
-```
+```yaml
   [Max](#cfn-ec2-launchtemplate-memorymib-max): {{Integer}}
   [Min](#cfn-ec2-launchtemplate-memorymib-min): {{Integer}}
 ```

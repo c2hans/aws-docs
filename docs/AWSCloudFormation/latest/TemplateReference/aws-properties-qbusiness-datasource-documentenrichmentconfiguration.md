@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-qbusiness-datasource-documentenrichmentconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[InlineConfigurations](#cfn-qbusiness-datasource-documentenrichmentconfiguration-inlineconfigurations)" : {{[ InlineDocumentEnrichmentConfiguration, ... ]}},
   "[PostExtractionHookConfiguration](#cfn-qbusiness-datasource-documentenrichmentconfiguration-postextractionhookconfiguration)" : {{HookConfiguration}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-qbusiness-datasource-documentenrichmentconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [InlineConfigurations](#cfn-qbusiness-datasource-documentenrichmentconfiguration-inlineconfigurations): {{
     - InlineDocumentEnrichmentConfiguration}}
   [PostExtractionHookConfiguration](#cfn-qbusiness-datasource-documentenrichmentconfiguration-postextractionhookconfiguration): {{

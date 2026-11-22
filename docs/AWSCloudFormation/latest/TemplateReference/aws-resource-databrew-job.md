@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-databrew-job-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DataBrew::Job",
   "Properties" : {
@@ -47,7 +47,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-databrew-job-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DataBrew::Job
 Properties:
   [DatabaseOutputs](#cfn-databrew-job-databaseoutputs): {{
@@ -249,7 +249,7 @@ The following examples create new DataBrew profile jobs.
 #### YAML
 <a name="aws-resource-databrew-job--examples--Creating_jobs--yaml"></a>
 
-```
+```yaml
 Resources:
   TestDataBrewJob:
     Type: AWS::DataBrew::Job
@@ -269,7 +269,7 @@ Resources:
 #### JSON
 <a name="aws-resource-databrew-job--examples--Creating_jobs--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "This CloudFormation template specifies a DataBrew Profile Job",

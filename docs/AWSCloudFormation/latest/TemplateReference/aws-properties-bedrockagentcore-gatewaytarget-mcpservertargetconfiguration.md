@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewaytarget-mcpservertargetconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Endpoint](#cfn-bedrockagentcore-gatewaytarget-mcpservertargetconfiguration-endpoint)" : {{String}},
   "[ListingMode](#cfn-bedrockagentcore-gatewaytarget-mcpservertargetconfiguration-listingmode)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewaytarget-mcpservertargetconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Endpoint](#cfn-bedrockagentcore-gatewaytarget-mcpservertargetconfiguration-endpoint): {{String}}
   [ListingMode](#cfn-bedrockagentcore-gatewaytarget-mcpservertargetconfiguration-listingmode): {{String}}
   [McpToolSchema](#cfn-bedrockagentcore-gatewaytarget-mcpservertargetconfiguration-mcptoolschema): {{

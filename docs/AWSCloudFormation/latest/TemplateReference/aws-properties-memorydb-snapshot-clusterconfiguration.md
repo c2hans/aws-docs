@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-memorydb-snapshot-clusterconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-memorydb-snapshot-clusterconfiguration-description)" : {{String}},
   "[Engine](#cfn-memorydb-snapshot-clusterconfiguration-engine)" : {{String}},
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-memorydb-snapshot-clusterconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-memorydb-snapshot-clusterconfiguration-description): {{String}}
   [Engine](#cfn-memorydb-snapshot-clusterconfiguration-engine): {{String}}
   [EngineVersion](#cfn-memorydb-snapshot-clusterconfiguration-engineversion): {{String}}

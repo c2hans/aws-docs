@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcaconnectorad-templategroupaccesscontrolentry-accessrights-syntax.json"></a>
 
-```
+```json
 {
   "[AutoEnroll](#cfn-pcaconnectorad-templategroupaccesscontrolentry-accessrights-autoenroll)" : {{String}},
   "[Enroll](#cfn-pcaconnectorad-templategroupaccesscontrolentry-accessrights-enroll)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcaconnectorad-templategroupaccesscontrolentry-accessrights-syntax.yaml"></a>
 
-```
+```yaml
   [AutoEnroll](#cfn-pcaconnectorad-templategroupaccesscontrolentry-accessrights-autoenroll): {{String}}
   [Enroll](#cfn-pcaconnectorad-templategroupaccesscontrolentry-accessrights-enroll): {{String}}
 ```

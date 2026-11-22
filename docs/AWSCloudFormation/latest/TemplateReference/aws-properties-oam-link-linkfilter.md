@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-oam-link-linkfilter-syntax.json"></a>
 
-```
+```json
 {
   "[Filter](#cfn-oam-link-linkfilter-filter)" : {{String}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-oam-link-linkfilter-syntax.yaml"></a>
 
-```
+```yaml
   [Filter](#cfn-oam-link-linkfilter-filter): {{String}}
 ```
 

@@ -28,7 +28,7 @@ To create a launch template in the console or by using the APIs, the principal m
 
 For example, the following IAM policy statement gives the principal permission to create launch templates only if the template uses the specified tag ({{`purpose`}}={{`testing`}}).
 
-```
+```json
 {
     "Sid": "IAMPolicyForCreatingTaggedLaunchTemplates",
     "Action": "ec2:CreateLaunchTemplate",
@@ -48,7 +48,7 @@ Principals who create launch templates might need some related permissions, such
 
 For resource-creating actions that apply tags, users must have the `ec2:CreateTags` permission. The following IAM policy statement uses the `ec2:CreateAction` condition key to allow users to create tags only in the context of `CreateLaunchTemplate`. Users cannot tag existing launch templates or any other resources. For more information, see [Grant permission to tag Amazon EC2 resources during creation](supported-iam-actions-tagging.md).
 
-```
+```json
 {
     "Sid": "IAMPolicyForTaggingLaunchTemplatesOnCreation",
     "Action": "ec2:CreateTags",
@@ -71,7 +71,7 @@ To list and view launch templates in the account, the principal must have the `e
 
 For example, the following IAM policy statement gives the principal permission to list and view all launch templates in the account.
 
-```
+```json
 {
     "Sid": "IAMPolicyForDescribingLaunchTemplates",
     "Action": "ec2:DescribeLaunchTemplates",
@@ -89,7 +89,7 @@ To list and view launch template versions in the account, the principal must hav
 
 For example, the following IAM policy statement gives the principal permission to list and view all launch template versions in the account.
 
-```
+```json
 {
     "Sid": "IAMPolicyForDescribingLaunchTemplateVersions",
     "Effect": "Allow",
@@ -108,7 +108,7 @@ To delete a launch template, the principal must have the `ec2:DeleteLaunchTempla
 
 For example, the following IAM policy statement gives the principal permission to delete launch templates only if the template has the specified tag ({{`purpose`}}={{`testing`}}).
 
-```
+```json
 {
     "Sid": "IAMPolicyForDeletingLaunchTemplates",
     "Action": "ec2:DeleteLaunchTemplate",
@@ -126,7 +126,7 @@ Alternatively, you can use ARNs to identify the launch template that the IAM pol
 
 A launch template has the following ARN.
 
-```
+```json
 "Resource": "arn:aws:ec2:{{us-east-1}}:{{111122223333}}:launch-template/{{lt-09477bcd97b0d310e}}"
 ```
 
@@ -150,7 +150,7 @@ To create a new version of a launch template, the principal must have the `ec2:C
 
 For example, the following IAM policy statement gives the principal permission to create launch template versions only if the version uses the specified tag ({{`environment`}}={{`production`}}). Alternatively, you can specify one or multiple launch template ARNs, or you can specify a `Resource` value of `"*"` without the `Condition` element to allow the principal to create versions of any launch template in the account.
 
-```
+```json
 {
     "Sid": "IAMPolicyForCreatingLaunchTemplateVersions",
     "Action": "ec2:CreateLaunchTemplateVersion",
@@ -174,7 +174,7 @@ To delete a launch template version, the principal must have the `ec2:DeleteLaun
 
 For example, the following IAM policy statement gives the principal permission to delete launch template versions only if the version uses the specified tag ({{`environment`}}={{`production`}}). Alternatively, you can specify one or multiple launch template ARNs, or you can specify a `Resource` value of `"*"` without the `Condition` element to allow the principal to delete versions of any launch template in the account.
 
-```
+```json
 {
     "Sid": "IAMPolicyForDeletingLaunchTemplateVersions",
     "Action": "ec2:DeleteLaunchTemplateVersions",
@@ -195,7 +195,7 @@ To change the `Default` version that is associated with a launch template, the p
 
 For example, the following IAM policy statement gives the principal permission to modify launch templates only if the launch template uses the specified tag ({{`environment`}}={{`production`}}). Alternatively, you can specify one or multiple launch template ARNs, or you can specify a `Resource` value of `"*"` without the `Condition` element to allow the principal to modify any launch template in the account.
 
-```
+```json
 {
     "Sid": "IAMPolicyForModifyingLaunchTemplates",
     "Action": "ec2:ModifyLaunchTemplate",
@@ -214,7 +214,7 @@ For example, the following IAM policy statement gives the principal permission t
 
 You can use condition keys to limit tagging permissions when the resource is a launch template. For example, the following IAM policy allows removing only the tag with the `{{temporary}}` key from launch templates in the specified account and Region.
 
-```
+```json
 {
     "Sid": "IAMPolicyForDeletingTagsOnLaunchTemplates",
     "Action": "ec2:DeleteTags",

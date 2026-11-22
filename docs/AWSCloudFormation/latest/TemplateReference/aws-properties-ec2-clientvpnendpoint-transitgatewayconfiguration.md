@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-clientvpnendpoint-transitgatewayconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AvailabilityZoneIds](#cfn-ec2-clientvpnendpoint-transitgatewayconfiguration-availabilityzoneids)" : {{[ String, ... ]}},
   "[AvailabilityZones](#cfn-ec2-clientvpnendpoint-transitgatewayconfiguration-availabilityzones)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-clientvpnendpoint-transitgatewayconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AvailabilityZoneIds](#cfn-ec2-clientvpnendpoint-transitgatewayconfiguration-availabilityzoneids): {{
     - String}}
   [AvailabilityZones](#cfn-ec2-clientvpnendpoint-transitgatewayconfiguration-availabilityzones): {{

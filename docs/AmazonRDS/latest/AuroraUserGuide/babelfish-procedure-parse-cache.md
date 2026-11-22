@@ -34,7 +34,7 @@ You can measure the effect using `SET BABELFISH_STATISTICS PROFILE ON`, which re
 
 In the following example, first create the procedure with caching ON to populate the persistent cache:
 
-```
+```sql
 -- New session 0: caching ON (at CREATE PROCEDURE time)
 SELECT set_config('babelfishpg_tsql.enable_antlr_parse_cache', 'on', false);
 GO
@@ -48,7 +48,7 @@ GO
 
 Next, in a new session with caching OFF (the default), execute the procedure:
 
-```
+```sql
 -- New session 1: caching OFF (default)
 SET BABELFISH_STATISTICS PROFILE ON;
 GO
@@ -64,7 +64,7 @@ Babelfish T-SQL Batch Parsing Time: 20359.465 ms
 
 Finally, in another new session with caching ON, execute the procedure:
 
-```
+```sql
 -- New session 2: caching ON
 SELECT set_config('babelfishpg_tsql.enable_antlr_parse_cache', 'on', false);
 GO
@@ -87,7 +87,7 @@ The first execution in a new session drops from \~20 s of parsing to \~0.15 s on
 
 The feature is controlled by a session-level GUC (default **OFF**):
 
-```
+```sql
 -- Enable parse caching for the current session
 SELECT set_config('babelfishpg_tsql.enable_antlr_parse_cache', 'on', false);
 GO
@@ -106,7 +106,7 @@ This GUC is not currently configurable cluster-wide through `sp_babelfish_config
 
 You can override the session GUC for an individual routine using `sys.enable_antlr_parse_cache`, which accepts the routine's object id:
 
-```
+```sql
 -- Force caching ON for a specific routine (even if the session GUC is OFF)
 SELECT sys.enable_antlr_parse_cache(sys.object_id('dbo.my_proc'), true);
 GO
@@ -130,7 +130,7 @@ The per-routine setting persists across sessions (it is stored in the catalog) a
 
 `sys.antlr_parse_cache_stats()` returns parse-cache activity for the current session:
 
-```
+```sql
 SELECT * FROM sys.antlr_parse_cache_stats();
 GO
 ```
@@ -150,7 +150,7 @@ Counters are per-session and reset on a new connection.
 ## Example scenario
 <a name="babelfish-procedure-parse-cache-example"></a>
 
-```
+```sql
 -- Enable caching for this session
 SELECT set_config('babelfishpg_tsql.enable_antlr_parse_cache', 'on', false);
 GO

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelbiasjobdefinition-json-syntax.json"></a>
 
-```
+```json
 {
   "[Line](#cfn-sagemaker-modelbiasjobdefinition-json-line)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelbiasjobdefinition-json-syntax.yaml"></a>
 
-```
+```yaml
   [Line](#cfn-sagemaker-modelbiasjobdefinition-json-line): {{Boolean}}
 ```
 

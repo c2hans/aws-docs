@@ -21,7 +21,7 @@ For example, assume that the IAM user named `Shirley` should be allowed to manag
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -47,7 +47,7 @@ When you use a policy to set the permissions boundary for a user, it limits the 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {
@@ -128,7 +128,7 @@ To enforce these rules, María completes the following tasks, for which details 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -204,7 +204,7 @@ Each statement serves a different purpose:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -316,7 +316,7 @@ María then assigns the `DelegatedUserBoundary` policy [as the permissions bound
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

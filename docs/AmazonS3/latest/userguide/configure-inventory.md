@@ -72,7 +72,7 @@ The following is the example bucket policy.
 
 ****
 
-```
+```json
 {
       "Version":"2012-10-17",
       "Statement": [
@@ -107,7 +107,7 @@ For more information, see [Grant permissions for S3 Inventory and S3 analytics](
 **Directory buckets**
 For directory buckets, you must manually add a destination bucket policy. The destination bucket policy uses a different service principal and ARN format than general purpose buckets. Specify `s3express.amazonaws.com` as the service principal, and use the directory bucket ARN format for the source bucket. The following example shows a destination bucket policy for directory buckets.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -196,7 +196,7 @@ For more information about creating customer managed keys and using key policies
 **Directory buckets**
 For directory buckets, the KMS key policy uses a different service principal and source ARN format than general purpose buckets. Specify `s3express.amazonaws.com` as the service principal, and use the directory bucket ARN format for the source ARN. The following example shows the key policy statement for directory buckets.
 
-```
+```json
 {
     "Sid": "Allow S3 Express use of the KMS key",
     "Effect": "Allow",

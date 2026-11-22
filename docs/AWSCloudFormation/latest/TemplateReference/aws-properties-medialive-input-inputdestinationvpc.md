@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-input-inputdestinationvpc-syntax.json"></a>
 
-```
+```json
 {
   "[AvailabilityZone](#cfn-medialive-input-inputdestinationvpc-availabilityzone)" : {{String}},
   "[NetworkInterfaceId](#cfn-medialive-input-inputdestinationvpc-networkinterfaceid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-input-inputdestinationvpc-syntax.yaml"></a>
 
-```
+```yaml
   [AvailabilityZone](#cfn-medialive-input-inputdestinationvpc-availabilityzone): {{String}}
   [NetworkInterfaceId](#cfn-medialive-input-inputdestinationvpc-networkinterfaceid): {{String}}
 ```

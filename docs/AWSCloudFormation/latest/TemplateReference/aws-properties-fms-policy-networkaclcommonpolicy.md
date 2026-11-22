@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fms-policy-networkaclcommonpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[NetworkAclEntrySet](#cfn-fms-policy-networkaclcommonpolicy-networkaclentryset)" : {{NetworkAclEntrySet}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fms-policy-networkaclcommonpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [NetworkAclEntrySet](#cfn-fms-policy-networkaclcommonpolicy-networkaclentryset): {{
     NetworkAclEntrySet}}
 ```

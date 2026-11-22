@@ -29,7 +29,7 @@ The ElastiCache .NET cluster client has been deprecated as of May, 2022.
 
 The C\# program below demonstrates how to use the ElastiCache Cluster Client to connect to a cluster configuration endpoint and add a data item to the cache. Using Auto Discovery, the program will connect to all of the nodes in the cluster without any further intervention.
 
-```
+```cs
 // *****************
 // Sample C# code to show how to integrate with the Amazon ElastiCcache Auto Discovery feature.
 

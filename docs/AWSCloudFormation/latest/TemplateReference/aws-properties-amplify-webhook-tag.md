@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amplify-webhook-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-amplify-webhook-tag-key)" : {{String}},
   "[Value](#cfn-amplify-webhook-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amplify-webhook-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-amplify-webhook-tag-key): {{String}}
   [Value](#cfn-amplify-webhook-tag-value): {{String}}
 ```

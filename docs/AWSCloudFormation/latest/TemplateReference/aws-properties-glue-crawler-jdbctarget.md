@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-crawler-jdbctarget-syntax.json"></a>
 
-```
+```json
 {
   "[ConnectionName](#cfn-glue-crawler-jdbctarget-connectionname)" : {{String}},
   "[EnableAdditionalMetadata](#cfn-glue-crawler-jdbctarget-enableadditionalmetadata)" : {{[ String, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-crawler-jdbctarget-syntax.yaml"></a>
 
-```
+```yaml
   [ConnectionName](#cfn-glue-crawler-jdbctarget-connectionname): {{String}}
   [EnableAdditionalMetadata](#cfn-glue-crawler-jdbctarget-enableadditionalmetadata): {{
     - String}}

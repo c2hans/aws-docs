@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ssmcontacts-rotation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SSMContacts::Rotation",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ssmcontacts-rotation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SSMContacts::Rotation
 Properties:
   [ContactIds](#cfn-ssmcontacts-rotation-contactids): {{

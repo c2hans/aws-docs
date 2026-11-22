@@ -13,14 +13,14 @@ The `postgres_get_av_diag()` function is currently available in the following RD
 
  In order to use `postgres_get_av_diag()`, create the `rds_tools` extension.
 
-```
+```sql
 postgres=> CREATE EXTENSION rds_tools ;
 CREATE EXTENSION
 ```
 
 Verify that the extension is installed.
 
-```
+```sql
 postgres=> \dx rds_tools
              List of installed extensions
    Name    | Version |  Schema   |                    Description
@@ -31,7 +31,7 @@ postgres=> \dx rds_tools
 
 Verify that the function is created.
 
-```
+```sql
 postgres=> SELECT
     proname function_name,
     pronamespace::regnamespace function_schema,

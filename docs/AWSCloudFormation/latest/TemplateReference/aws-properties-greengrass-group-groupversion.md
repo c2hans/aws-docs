@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrass-group-groupversion-syntax.json"></a>
 
-```
+```json
 {
   "[ConnectorDefinitionVersionArn](#cfn-greengrass-group-groupversion-connectordefinitionversionarn)" : {{String}},
   "[CoreDefinitionVersionArn](#cfn-greengrass-group-groupversion-coredefinitionversionarn)" : {{String}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrass-group-groupversion-syntax.yaml"></a>
 
-```
+```yaml
   [ConnectorDefinitionVersionArn](#cfn-greengrass-group-groupversion-connectordefinitionversionarn): {{String}}
   [CoreDefinitionVersionArn](#cfn-greengrass-group-groupversion-coredefinitionversionarn): {{String}}
   [DeviceDefinitionVersionArn](#cfn-greengrass-group-groupversion-devicedefinitionversionarn): {{String}}

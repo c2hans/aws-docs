@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-omics-configuration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Omics::Configuration",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-omics-configuration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Omics::Configuration
 Properties:
   [Description](#cfn-omics-configuration-description): {{String}}

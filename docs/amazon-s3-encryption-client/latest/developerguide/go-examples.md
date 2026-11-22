@@ -24,7 +24,7 @@ To use a KMS key as your wrapping key, you need [kms:GenerateDataKey](https://do
 
 The following example instantiates the Amazon S3 Encryption Client with the default decryption mode. This means that all objects will be decrypted using the fully supported buffered decryption mode. For more information, see [Decryption modes (Version 3.*x* and later)](encryption-algorithms.md#decryption-modes).
 
-```
+```go
 import (
    ...
    // Import the materials and client package
@@ -52,7 +52,7 @@ The following example shows you how to use the Amazon S3 Encryption Client for G
 
 1. Create a [keyring](concepts.md#keyring) with a KMS key as your wrapping key when you [instantiate your client](#go-instantiate-client).
 
-   ```
+   ```go
    s3Client = s3.NewFromConfig(cfg)
    kmsClient := kms.NewFromConfig(cfg)
    cmm, err := materials.NewCryptographicMaterialsManager(materials.NewKmsKeyring(kmsClient, {{kmsKeyArn}}, func(options *materials.KeyringOptions) {
@@ -71,7 +71,7 @@ The following example shows you how to use the Amazon S3 Encryption Client for G
 
    1. The Amazon S3 Encryption Client uploads the encrypted data key and the encrypted object to Amazon S3 as part of the `PutObject` call.
 
-   ```
+   ```go
    ctx := context.Background()
    ...
    encryptionContext := context.WithValue(ctx, "EncryptionContext", map[string]string{"ec-key": "ec-value"})
@@ -94,7 +94,7 @@ The following example shows you how to use the Amazon S3 Encryption Client for G
 
    1. The Amazon S3 Encryption Client uses the plaintext data key to decrypt the object, discards the plaintext data key, and returns the plaintext object as part of the `GetObject` call.
 
-   ```
+   ```go
    result, err := s3EncryptionClient.GetObject(ctx, &s3.GetObjectInput{
    		Bucket: aws.String({{bucket}}),
    		Key:    aws.String({{objectKey}}),
@@ -111,7 +111,7 @@ The following example shows you how to use the Amazon S3 Encryption Client for G
 
 1. Optional: verify that the decrypted object matches the original plaintext object that you uploaded.
 
-   ```
+   ```go
    if e, a := []byte(plaintext), decryptedPlaintext; !bytes.Equal(e, a) {
    		return fmt.Errorf("expect %v text, got %v", e, a)
    	}

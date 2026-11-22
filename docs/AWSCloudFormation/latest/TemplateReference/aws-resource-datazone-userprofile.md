@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-datazone-userprofile-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DataZone::UserProfile",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-datazone-userprofile-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DataZone::UserProfile
 Properties:
   [DomainIdentifier](#cfn-datazone-userprofile-domainidentifier): {{String}}

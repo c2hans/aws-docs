@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-arcregionswitch-plan-triggercondition-syntax.json"></a>
 
-```
+```json
 {
   "[AssociatedAlarmName](#cfn-arcregionswitch-plan-triggercondition-associatedalarmname)" : {{String}},
   "[Condition](#cfn-arcregionswitch-plan-triggercondition-condition)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-arcregionswitch-plan-triggercondition-syntax.yaml"></a>
 
-```
+```yaml
   [AssociatedAlarmName](#cfn-arcregionswitch-plan-triggercondition-associatedalarmname): {{String}}
   [Condition](#cfn-arcregionswitch-plan-triggercondition-condition): {{String}}
 ```

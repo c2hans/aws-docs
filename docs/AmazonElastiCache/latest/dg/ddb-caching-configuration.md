@@ -4,42 +4,59 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/ddb-caching-
 
 # Configuring DynamoDB caching
 
-You configure Amazon DynamoDB caching through the Amazon ElastiCache integration client in your application. Connection settings control how the client connects to the serverless cache, and caching behavior settings control which data is cached and how long cache entries live.
+You configure DynamoDB caching when you install the Amazon ElastiCache integration client in your application. The client install operation takes connection arguments plus an optional client configuration. Optional cache policy overrides control what the client caches and for how long.
 
-## Connection configuration
+**Note**
+The settings and options below use the Python client names. Names in other languages (for example, Node.js or Java) might differ slightly because of each language's case conventions. For the names and defaults in your language, see the client library READMEs on GitHub ([elasticache-integration-client](https://github.com/awslabs/elasticache-integration-client)).
+
+## Client installation arguments
 <a name="ddb-caching-configuration.connection"></a>
 
-The following settings are used to configure the ElastiCache integration client's connection to the serverless cache.
+You pass the following arguments to the client's install operation.
 
-**DynamoDB caching connection settings**
+**Client installation arguments**
 
-| Setting | Required | Default | Description |
+| Argument | Required | Default | Description |
 | --- | --- | --- | --- |
-| `cache_name` | Yes | None | The name specified when the serverless cache was created. This is distinct from the endpoint hostname. |
-| `endpoint` | Yes | None | The serverless endpoint to connect to. |
-| `fallback_duration` | No | unlimited | How long requests route directly to DynamoDB after fallback behavior is triggered. A value of zero disables fallback; a negative or null value means unlimited. |
-| `integration_request_timeout` | No | 5 seconds | The maximum time to wait for a DynamoDB caching request. This is separate from the AWS SDK HTTP read timeout. |
-| `reconnect_timeout` | No | 2 seconds | The period since the last successful connection after which requests fall back directly to DynamoDB. |
-| `region_name` | No | Configured in SDK | The AWS Region to connect to. |
-| `user_id` | No | `default.iam-user` | The IAM user authenticated upon connection. |
+| `client` | Yes | None | The DynamoDB client from the AWS SDK. |
+| `endpoint` | Yes | None | The cache endpoint (host:port). |
+| `cache_name` | Yes | None | The name of the serverless cache. |
+| `ca_certs` | No | System trust store | The path to a certificate authority (CA) bundle used to verify the cache's TLS certificate. |
+| `client_configuration` | No | All defaults | The client configuration options. |
+| `user_id` | No | `default.iam-user` | The ElastiCache IAM user to authenticate as. |
 
-## Configuring caching behavior
+## Client configuration options
 <a name="ddb-caching-configuration.behavior"></a>
 
-You can control caching behavior at a global or per-table scope with the following settings. Settings are applied for each connection, so two different workloads can configure different values for the same setting on different connections.
+Client configuration options are used to control client behavior.
 
-**DynamoDB caching behavior settings**
+**Client configuration options**
 
-| Setting | Required | Default value | Valid values | Valid scopes | Description |
-| --- | --- | --- | --- | --- | --- |
-| `cached_tables` | No | All tables | list | cache | Which DynamoDB tables to cache. Defining this setting limits caching to the tables specified. |
-| `cached_operations` | No | All operations | list | cache | Which DynamoDB operations to cache (must be in the list of supported operations). Defining this setting limits caching to the operations specified. |
-| `item_enable_negative_caching` | No | true | false, true | cache, table | Whether to cache negative results for item operations. |
-| `item_populate_full_item` | No | false | false, true | cache, table | Whether to populate the cache with the complete item as a projection upon a successful PutItem operation. |
-| `item_populate_on_write` | No | false | false, true | cache, table | Whether to populate the cache with projections for an item on write operations. |
-| `query_enable_negative_caching` | No | true | false, true | cache, table | Whether to cache negative results for query operations. |
-| `scan_enable_negative_caching` | No | true | false, true | cache, table | Whether to cache negative results for scan operations. |
-| `negative_ttl` | No | 60 | 0-86400 | operation, cache, table | Sets the time to live value in seconds for negative cache entries globally. A zero value means negative caching is disabled. |
-| `ttl` | No | 300 | 1-86400 | operation, cache, table | Sets the time to live value in seconds for cache entries. The default is 300 seconds (5 minutes). |
+| Option | Default | Description |
+| --- | --- | --- |
+| `cache_policy_overrides` | None | The tables, operations, and entry lifetimes to cache. See the following table. |
+| `cache_policy_timeout` | 3600 | The time the client keeps using a cache policy that the cache has not confirmed, in seconds. |
+| `cache_request_timeout` | 5000 | The time to wait for the cache to answer a request, in milliseconds. |
+| `connection_timeout` | 5000 | The time to try connecting at startup, and the time a request waits for a lost connection to return, in milliseconds. |
+| `fallback_duration` | No limit | The time that requests can go to DynamoDB directly while the cache is unreachable, in seconds. A value of 0 means requests never fall back to DynamoDB. |
+| `iam_token_refresh_delay` | 300 | The time after an IAM token is issued before a replacement is signed in the background, in seconds. Valid values are 1–879. |
 
-For more information about configuration for your preferred language, see [elasticache-integration-client](https://github.com/awslabs/elasticache-integration-client) on the GitHub website.
+## Cache policy overrides
+<a name="ddb-caching-configuration.overrides"></a>
+
+Cache policy overrides control what the client caches and for how long.
+
+**Cache policy override options**
+
+| Option | Default | Description |
+| --- | --- | --- |
+| `cached_operations` | All operations | The DynamoDB operations to cache, such as GetItem or Query. Empty or absent means all supported operations. |
+| `cached_tables` | All tables | The DynamoDB tables to cache. Empty or absent means all tables. |
+| `item_negative_ttl` | 60 | How long negative item cache entries (a cached "item does not exist" result) live, in seconds. |
+| `item_ttl` | 300 | How long item cache entries live, in seconds. |
+| `item_write_behavior` | UPDATE\_CACHED | How write requests affect cached entries.+ `INVALIDATE_ONLY`: Invalidates (deletes) cached item projections instead of updating them.<br />+ `UPDATE_CACHED`: Updates any cached item projections.<br />+ `UPDATE_CACHED_AND_STORE_FULL_ITEM`: Caches the complete item and updates any cached item projections. |
+| `query_ttl` | 300 | How long query cache entries live, in seconds. |
+| `scan_ttl` | 300 | How long scan cache entries live, in seconds. |
+| `table_overrides` | None | Cache policy overrides for specific tables. Per-table settings override global cache policy settings. |
+
+For the full configuration reference for your preferred language, see [elasticache-integration-client](https://github.com/awslabs/elasticache-integration-client) on GitHub.

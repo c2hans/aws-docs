@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codepipeline-pipeline-environmentvariable-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-codepipeline-pipeline-environmentvariable-name)" : {{String}},
   "[Type](#cfn-codepipeline-pipeline-environmentvariable-type)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codepipeline-pipeline-environmentvariable-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-codepipeline-pipeline-environmentvariable-name): {{String}}
   [Type](#cfn-codepipeline-pipeline-environmentvariable-type): {{String}}
   [Value](#cfn-codepipeline-pipeline-environmentvariable-value): {{String}}

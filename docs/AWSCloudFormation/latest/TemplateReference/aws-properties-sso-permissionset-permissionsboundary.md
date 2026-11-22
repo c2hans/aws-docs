@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sso-permissionset-permissionsboundary-syntax.json"></a>
 
-```
+```json
 {
   "[CustomerManagedPolicyReference](#cfn-sso-permissionset-permissionsboundary-customermanagedpolicyreference)" : {{CustomerManagedPolicyReference}},
   "[ManagedPolicyArn](#cfn-sso-permissionset-permissionsboundary-managedpolicyarn)" : {{String}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sso-permissionset-permissionsboundary-syntax.yaml"></a>
 
-```
+```yaml
   [CustomerManagedPolicyReference](#cfn-sso-permissionset-permissionsboundary-customermanagedpolicyreference): {{
     CustomerManagedPolicyReference}}
   [ManagedPolicyArn](#cfn-sso-permissionset-permissionsboundary-managedpolicyarn): {{String}}

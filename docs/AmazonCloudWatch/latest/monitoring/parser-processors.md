@@ -17,7 +17,7 @@ Parses and transforms log data according to Open Cybersecurity Schema Framework 
 **Configuration**
 Configure the OCSF processor with the following parameters:
 
-```
+```yaml
 processor:
   - ocsf:
       version: "1.5"
@@ -67,7 +67,7 @@ Parses CSV formatted data into structured fields.
 **Configuration**
 Configure the CSV processor with the following parameters:
 
-```
+```yaml
 processor:
   - csv:
       column_names: ["col1", "col2", "col3"]
@@ -86,7 +86,7 @@ Character used to quote CSV fields containing delimiters. Must be a single chara
 
 To use the processor without specifying additional parameters, use the following command:
 
-```
+```yaml
 processor:
   - csv: {}
 ```
@@ -101,7 +101,7 @@ Configure the Grok processor with the following parameters:
 
 When the data source is a dictionary, you can use this configuration:
 
-```
+```yaml
 processor:
   - grok:
       match:
@@ -110,7 +110,7 @@ processor:
 
 When the data source is CloudWatch Logs, you can use this configuration:
 
-```
+```yaml
 processor:
   - grok:
       match:
@@ -137,7 +137,7 @@ Parses VPC Flow Log data into structured fields.
 **Configuration**
 Configure the VPC processor with the following parameters:
 
-```
+```yaml
 processor:
   - parse_vpc: {}
 ```
@@ -150,7 +150,7 @@ Parses JSON data into structured fields.
 **Configuration**
 Configure the JSON processor with the following parameters:
 
-```
+```yaml
 processor:
   - parse_json:
       source: "message"
@@ -171,7 +171,7 @@ Parses Route 53 resolver log data into structured fields.
 **Configuration**
 Configure the Route 53 processor with the following parameters:
 
-```
+```yaml
 processor:
   - parse_route53: {}
 ```
@@ -184,7 +184,7 @@ Parses Amazon RDS Aurora log data into structured fields. The `parse_rds` proces
 **Configuration**
 Configure the Amazon RDS processor with the following parameters:
 
-```
+```yaml
 processor:
   - parse_rds: {}
 ```
@@ -197,7 +197,7 @@ Parses key-value pair formatted data into structured fields.
 **Configuration**
 Configure the key-value processor with the following parameters:
 
-```
+```yaml
 processor:
   - key_value:
       source: "message"
@@ -229,7 +229,7 @@ Value for keys without matches. Maximum 128 characters.
 
 To use the processor without specifying additional parameters, use the following command:
 
-```
+```yaml
 processor:
   - key_value: {}
 ```
@@ -242,7 +242,7 @@ Use the XML parser to convert a specified field that contains an XML string to J
 **Configuration**
 Configure the XML parser with the following parameters:
 
-```
+```yaml
 processor:
   - parse_json:
       source: "@message"
@@ -263,7 +263,7 @@ A conditional expression that determines whether this parser runs. Maximum lengt
 **Example – XML parser output**
 Given the following JSON log event with an embedded XML field:
 
-```
+```json
 {
   "body": "<Person id=\"123\" active=\"true\"><name>John</name><age>30</age></Person>"
 }
@@ -271,7 +271,7 @@ Given the following JSON log event with an embedded XML field:
 
 With the following configuration:
 
-```
+```yaml
 processor:
   - parse_json:
       source: "@message"
@@ -282,7 +282,7 @@ processor:
 
 The XML parser produces the following output:
 
-```
+```json
 {
   "body": "<Person id=\"123\" active=\"true\"><name>John</name><age>30</age></Person>",
   "parsed_xml": {

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-cluster-s3-syntax.json"></a>
 
-```
+```json
 {
   "[Bucket](#cfn-msk-cluster-s3-bucket)" : {{String}},
   "[Enabled](#cfn-msk-cluster-s3-enabled)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-cluster-s3-syntax.yaml"></a>
 
-```
+```yaml
   [Bucket](#cfn-msk-cluster-s3-bucket): {{String}}
   [Enabled](#cfn-msk-cluster-s3-enabled): {{Boolean}}
   [Prefix](#cfn-msk-cluster-s3-prefix): {{String}}

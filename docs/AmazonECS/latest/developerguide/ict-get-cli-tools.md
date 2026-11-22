@@ -19,7 +19,7 @@ Download the archive for your architecture. These links resolve to the latest re
 
 Extract the archive with the following `tar` command. It expands flat, with no directories, and contains both tools along with a `LICENSE` and `ATTRIBUTION` file:
 
-```
+```bash
 tar -xzf nitro-sandboxes-runtime.tar.gz
 ```
 
@@ -35,7 +35,7 @@ AWS signs each release so that you can confirm it is intact and came from AWS. T
 
 1. Create the public key file. Copy the following into a text file named `nitro-sandboxes-runtime-v1.pub`:
 
-   ```
+   ```text
    -----BEGIN PUBLIC KEY-----
    MHYwEAYHKoZIzj0CAQYFK4EEACIDYgAESqdVXO82n+Zh5+IFLh1xjmxZLkjjZWvf
    DCS927SdVYjP0AZ92XCxS+ucrs9cjuNlTaDARTHov2XVfMVgau8TEPFKGDRmVZXJ
@@ -49,7 +49,7 @@ AWS signs each release so that you can confirm it is intact and came from AWS. T
 
 1. Verify the signature over the manifest. The digest is SHA-384 (it pairs with the P-384 key), even though the hashes listed inside the manifest are SHA-256:
 
-   ```
+   ```bash
    openssl dgst -sha384 -verify nitro-sandboxes-runtime-v1.pub \
      -signature SHA256SUM.sig SHA256SUM
    ```
@@ -58,7 +58,7 @@ AWS signs each release so that you can confirm it is intact and came from AWS. T
 
 1. Verify the downloaded archive and the extracted tools against the signed manifest:
 
-   ```
+   ```bash
    sha256sum -c SHA256SUM
    ```
 

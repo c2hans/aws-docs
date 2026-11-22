@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-integration-objecttypemapping-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-customerprofiles-integration-objecttypemapping-key)" : {{String}},
   "[Value](#cfn-customerprofiles-integration-objecttypemapping-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-integration-objecttypemapping-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-customerprofiles-integration-objecttypemapping-key): {{String}}
   [Value](#cfn-customerprofiles-integration-objecttypemapping-value): {{String}}
 ```

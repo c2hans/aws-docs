@@ -44,7 +44,7 @@ The `keyExchange` field contains one of the following values:
 
 The following example shows the `tlsDetails` element of a CloudTrail event for a request that used hybrid post-quantum TLS.
 
-```
+```json
 {
   "eventVersion": "1.11",
   "eventSource": "s3.amazonaws.com",

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-b2bi-transformer-x12validationoptions-syntax.json"></a>
 
-```
+```json
 {
   "[ValidationRules](#cfn-b2bi-transformer-x12validationoptions-validationrules)" : {{[ X12ValidationRule, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-b2bi-transformer-x12validationoptions-syntax.yaml"></a>
 
-```
+```yaml
   [ValidationRules](#cfn-b2bi-transformer-x12validationoptions-validationrules): {{
     - X12ValidationRule}}
 ```

@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-acmpca-certificateauthority-crlconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CrlDistributionPointExtensionConfiguration](#cfn-acmpca-certificateauthority-crlconfiguration-crldistributionpointextensionconfiguration)" : {{CrlDistributionPointExtensionConfiguration}},
   "[CrlType](#cfn-acmpca-certificateauthority-crlconfiguration-crltype)" : {{String}},
@@ -61,7 +61,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-acmpca-certificateauthority-crlconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CrlDistributionPointExtensionConfiguration](#cfn-acmpca-certificateauthority-crlconfiguration-crldistributionpointextensionconfiguration): {{
     CrlDistributionPointExtensionConfiguration}}
   [CrlType](#cfn-acmpca-certificateauthority-crlconfiguration-crltype): {{String}}

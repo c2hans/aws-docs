@@ -63,7 +63,7 @@ The following recommendations apply when you remove bloat from the tables and in
 
 1. Install the `pg_repack` extension on your RDS for PostgreSQL DB instance by running the following command.
 
-   ```
+   ```sql
    CREATE EXTENSION pg_repack;
    ```
 

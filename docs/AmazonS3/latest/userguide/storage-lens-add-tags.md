@@ -48,7 +48,7 @@ The following example adds tags to an Amazon S3 Storage Lens configuration in SD
 
 **Example – Add tags to an S3 Storage Lens configuration**
 
-```
+```Java
 package aws.example.s3control;
 
 import com.amazonaws.AmazonServiceException;

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-resourcegroups-group-resourcequery-syntax.json"></a>
 
-```
+```json
 {
   "[Query](#cfn-resourcegroups-group-resourcequery-query)" : {{Query}},
   "[Type](#cfn-resourcegroups-group-resourcequery-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-resourcegroups-group-resourcequery-syntax.yaml"></a>
 
-```
+```yaml
   [Query](#cfn-resourcegroups-group-resourcequery-query): {{
     Query}}
   [Type](#cfn-resourcegroups-group-resourcequery-type): {{String}}

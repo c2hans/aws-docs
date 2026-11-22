@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-groundstation-config-uplinkechoconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AntennaUplinkConfigArn](#cfn-groundstation-config-uplinkechoconfig-antennauplinkconfigarn)" : {{String}},
   "[Enabled](#cfn-groundstation-config-uplinkechoconfig-enabled)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-groundstation-config-uplinkechoconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AntennaUplinkConfigArn](#cfn-groundstation-config-uplinkechoconfig-antennauplinkconfigarn): {{String}}
   [Enabled](#cfn-groundstation-config-uplinkechoconfig-enabled): {{Boolean}}
 ```
@@ -58,7 +58,7 @@ The following example creates a Ground Station `UplinkEchoConfig`
 #### JSON
 <a name="aws-properties-groundstation-config-uplinkechoconfig--examples--Create_an_UplinkEchoConfig--json"></a>
 
-```
+```json
 {
   "UplinkEchoConfig": {
     "AntennaUplinkConfigArn": "arn:aws:groundstation:us-east-2:012345678910:config/antenna-uplink/11111111-1111-1111-1111-111111111111",
@@ -70,7 +70,7 @@ The following example creates a Ground Station `UplinkEchoConfig`
 #### YAML
 <a name="aws-properties-groundstation-config-uplinkechoconfig--examples--Create_an_UplinkEchoConfig--yaml"></a>
 
-```
+```yaml
 UplinkEchoConfig:
   AntennaUplinkConfigArn: arn:aws:groundstation:us-east-2:012345678910:config/antenna-uplink/11111111-1111-1111-1111-111111111111
   Enabled: true

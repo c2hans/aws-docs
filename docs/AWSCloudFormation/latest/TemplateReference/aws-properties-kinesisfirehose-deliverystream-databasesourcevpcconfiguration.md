@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-databasesourcevpcconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[VpcEndpointServiceName](#cfn-kinesisfirehose-deliverystream-databasesourcevpcconfiguration-vpcendpointservicename)" : {{String}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-databasesourcevpcconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [VpcEndpointServiceName](#cfn-kinesisfirehose-deliverystream-databasesourcevpcconfiguration-vpcendpointservicename): {{String}}
 ```
 

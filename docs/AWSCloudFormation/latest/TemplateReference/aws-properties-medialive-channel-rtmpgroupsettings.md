@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-rtmpgroupsettings-syntax.json"></a>
 
-```
+```json
 {
   "[AdMarkers](#cfn-medialive-channel-rtmpgroupsettings-admarkers)" : {{[ String, ... ]}},
   "[AuthenticationScheme](#cfn-medialive-channel-rtmpgroupsettings-authenticationscheme)" : {{String}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-rtmpgroupsettings-syntax.yaml"></a>
 
-```
+```yaml
   [AdMarkers](#cfn-medialive-channel-rtmpgroupsettings-admarkers): {{
     - String}}
   [AuthenticationScheme](#cfn-medialive-channel-rtmpgroupsettings-authenticationscheme): {{String}}

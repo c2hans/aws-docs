@@ -116,7 +116,7 @@ For more information about using Transfer Acceleration, see [Getting started wit
 
 The following code example shows how to configure Transfer Acceleration with the AWS SDK for Java.
 
-```
+```java
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
 import software.amazon.awssdk.core.sync.RequestBody;
 import software.amazon.awssdk.regions.Region;
@@ -187,7 +187,7 @@ The following example shows how to use the AWS SDK for .NET to enable Transfer A
 
 **Example**
 
-```
+```cs
 using Amazon;
 using Amazon.S3;
 using Amazon.S3.Model;

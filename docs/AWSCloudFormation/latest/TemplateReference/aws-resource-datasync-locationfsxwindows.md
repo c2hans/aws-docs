@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-datasync-locationfsxwindows-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DataSync::LocationFSxWindows",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-datasync-locationfsxwindows-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DataSync::LocationFSxWindows
 Properties:
   [CmkSecretConfig](#cfn-datasync-locationfsxwindows-cmksecretconfig): {{
@@ -171,7 +171,7 @@ The following examples specify an FSx for Windows File Server location for DataS
 #### JSON
 <a name="aws-resource-datasync-locationfsxwindows--examples--Specify_an_Amazon_FSx_for_Windows_File_Server_location_for_DataSync--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Specifies an FSx for Windows File Server location for DataSync",
@@ -197,7 +197,7 @@ The following examples specify an FSx for Windows File Server location for DataS
 #### YAML
 <a name="aws-resource-datasync-locationfsxwindows--examples--Specify_an_Amazon_FSx_for_Windows_File_Server_location_for_DataSync--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Specifies an FSx for Windows File Server location for DataSync
 Resources:

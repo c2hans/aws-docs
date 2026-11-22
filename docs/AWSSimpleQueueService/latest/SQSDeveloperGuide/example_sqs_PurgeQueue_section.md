@@ -27,7 +27,7 @@ For more information, see [Purging messages from an queue using the Amazon SQS c
 **Tools for PowerShell V4**
 **Example 1: This example deletes all messages from the specified queue.**
 
-```
+```powershell
 Clear-SQSQueue -QueueUrl https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyQueue
 ```
 +  For API details, see [PurgeQueue](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -35,7 +35,7 @@ Clear-SQSQueue -QueueUrl https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyQueu
 **Tools for PowerShell V5**
 **Example 1: This example deletes all messages from the specified queue.**
 
-```
+```powershell
 Clear-SQSQueue -QueueUrl https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyQueue
 ```
 +  For API details, see [PurgeQueue](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

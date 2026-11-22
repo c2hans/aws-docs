@@ -35,7 +35,7 @@ The following example shows a JSON response. The following fields are shown:
 + `ActivityStreamMode`
 + `ActivityStreamPolicyStatus`
 
-```
+```json
 {
     "DBInstances": [
         {

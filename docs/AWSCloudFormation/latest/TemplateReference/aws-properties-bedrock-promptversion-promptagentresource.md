@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-promptversion-promptagentresource-syntax.json"></a>
 
-```
+```json
 {
   "[AgentIdentifier](#cfn-bedrock-promptversion-promptagentresource-agentidentifier)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-promptversion-promptagentresource-syntax.yaml"></a>
 
-```
+```yaml
   [AgentIdentifier](#cfn-bedrock-promptversion-promptagentresource-agentidentifier): {{String}}
 ```
 

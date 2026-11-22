@@ -101,7 +101,7 @@ Beta environments are not supported for App Runner.
 **Examples**
 The following example shows a `pipeline.json` file that uses the CodePipeline environment as the pipeline for an IIS application that runs on Windows. The application runs in a beta environment, and there is no prod environment configured yet.
 
-```
+```json
 {
     "a2CTemplateVersion": "3.1",
     "imageInfo": {
@@ -132,7 +132,7 @@ The following example shows a `pipeline.json` file that uses the CodePipeline en
 
 The following example shows a `pipeline.json` file that uses the Jenkins environment as the pipeline for an IIS application that runs on Windows.
 
-```
+```json
 {
     "a2CTemplateVersion": "1.0",
     "imageInfo": {
@@ -192,7 +192,7 @@ The following example shows a `pipeline.json` file that uses the Jenkins environ
 
 The following example shows a `pipeline.json` file that uses Microsoft Azure DevOps as the pipeline for a Java application that runs on Linux.
 
-```
+```json
 {
  	"a2CTemplateVersion": "1.0",
  	"imageInfo": {

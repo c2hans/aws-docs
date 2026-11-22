@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-filter-syntax.json"></a>
 
-```
+```json
 {
   "[Pattern](#cfn-pipes-pipe-filter-pattern)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-filter-syntax.yaml"></a>
 
-```
+```yaml
   [Pattern](#cfn-pipes-pipe-filter-pattern): {{String}}
 ```
 

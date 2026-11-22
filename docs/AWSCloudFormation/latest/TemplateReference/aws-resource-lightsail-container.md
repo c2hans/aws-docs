@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lightsail-container-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lightsail::Container",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lightsail-container-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lightsail::Container
 Properties:
   [ContainerServiceDeployment](#cfn-lightsail-container-containerservicedeployment): {{

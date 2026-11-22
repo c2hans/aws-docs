@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-growthratecomputation-syntax.json"></a>
 
-```
+```json
 {
   "[ComputationId](#cfn-quicksight-analysis-growthratecomputation-computationid)" : {{String}},
   "[Name](#cfn-quicksight-analysis-growthratecomputation-name)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-growthratecomputation-syntax.yaml"></a>
 
-```
+```yaml
   [ComputationId](#cfn-quicksight-analysis-growthratecomputation-computationid): {{String}}
   [Name](#cfn-quicksight-analysis-growthratecomputation-name): {{String}}
   [PeriodSize](#cfn-quicksight-analysis-growthratecomputation-periodsize): {{Number}}

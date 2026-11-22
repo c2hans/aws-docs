@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelbiasjobdefinition-modelbiasappspecification-syntax.json"></a>
 
-```
+```json
 {
   "[ConfigUri](#cfn-sagemaker-modelbiasjobdefinition-modelbiasappspecification-configuri)" : {{String}},
   "[Environment](#cfn-sagemaker-modelbiasjobdefinition-modelbiasappspecification-environment)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelbiasjobdefinition-modelbiasappspecification-syntax.yaml"></a>
 
-```
+```yaml
   [ConfigUri](#cfn-sagemaker-modelbiasjobdefinition-modelbiasappspecification-configuri): {{String}}
   [Environment](#cfn-sagemaker-modelbiasjobdefinition-modelbiasappspecification-environment): {{
     {{Key}}: {{Value}}}}

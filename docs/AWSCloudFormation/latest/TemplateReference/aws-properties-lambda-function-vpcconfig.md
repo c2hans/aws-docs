@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-function-vpcconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Ipv6AllowedForDualStack](#cfn-lambda-function-vpcconfig-ipv6allowedfordualstack)" : {{Boolean}},
   "[SecurityGroupIds](#cfn-lambda-function-vpcconfig-securitygroupids)" : {{[ String, ... ]}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-function-vpcconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Ipv6AllowedForDualStack](#cfn-lambda-function-vpcconfig-ipv6allowedfordualstack): {{Boolean}}
   [SecurityGroupIds](#cfn-lambda-function-vpcconfig-securitygroupids): {{
     - String}}
@@ -73,7 +73,7 @@ Connect a function to a VPC.
 #### YAML
 <a name="aws-properties-lambda-function-vpcconfig--examples--VPC_Configuration--yaml"></a>
 
-```
+```yaml
       VpcConfig:
         SecurityGroupIds:
           - sg-085912345678492fb

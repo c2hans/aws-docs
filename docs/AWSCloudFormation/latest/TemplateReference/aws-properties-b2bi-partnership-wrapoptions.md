@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-b2bi-partnership-wrapoptions-syntax.json"></a>
 
-```
+```json
 {
   "[LineLength](#cfn-b2bi-partnership-wrapoptions-linelength)" : {{Number}},
   "[LineTerminator](#cfn-b2bi-partnership-wrapoptions-lineterminator)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-b2bi-partnership-wrapoptions-syntax.yaml"></a>
 
-```
+```yaml
   [LineLength](#cfn-b2bi-partnership-wrapoptions-linelength): {{Number}}
   [LineTerminator](#cfn-b2bi-partnership-wrapoptions-lineterminator): {{String}}
   [WrapBy](#cfn-b2bi-partnership-wrapoptions-wrapby): {{String}}

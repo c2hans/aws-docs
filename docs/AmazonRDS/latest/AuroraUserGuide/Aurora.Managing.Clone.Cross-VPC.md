@@ -123,7 +123,7 @@ aws ec2 describe-subnets \
 
  The following example shows partial output from such a `describe-subnets` command. The output shows some of the important attributes you can see for each subnet, such as its associated AZ and the VPC that it's part of.
 
-```
+```json
 {
     'Subnets': [
         {
@@ -211,7 +211,7 @@ aws ec2 create-subnet --vpc-id {{my_vpc}} \
 
  The following example shows some important attributes of a newly created subnet.
 
-```
+```json
 {
     'Subnet': {
         'AvailabilityZone': 'us-east-1b',
@@ -256,7 +256,7 @@ aws rds create-db-subnet-group --db-subnet-group-name {{my_subnet_group}} \
 
  The following example shows partial output of the `create-db-subnet-group` command.
 
-```
+```json
 {
     'DBSubnetGroup': {
         'DBSubnetGroupName': '{{my_subnet_group}}',
@@ -376,7 +376,7 @@ aws rds create-db-instance --db-cluster-identifier {{my_aurora_postgresql_clone}
 
  The following example shows partial output from such a command.
 
-```
+```json
 {
   'DBInstanceIdentifier': '{{my_postgres_instance}}',
   'DBClusterIdentifier': '{{my_aurora_postgresql_clone}}',
@@ -398,7 +398,7 @@ aws rds create-db-instance --db-cluster-identifier {{my_aurora_mysql_clone}} \
 
  The following example shows partial output from such a command.
 
-```
+```json
 {
   'DBInstanceIdentifier': '{{my_mysql_instance}}',
   'DBClusterIdentifier': '{{my_aurora_mysql_clone}}',

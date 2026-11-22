@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicrule-assetpropertyvariant-syntax.json"></a>
 
-```
+```json
 {
   "[BooleanValue](#cfn-iot-topicrule-assetpropertyvariant-booleanvalue)" : {{String}},
   "[DoubleValue](#cfn-iot-topicrule-assetpropertyvariant-doublevalue)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicrule-assetpropertyvariant-syntax.yaml"></a>
 
-```
+```yaml
   [BooleanValue](#cfn-iot-topicrule-assetpropertyvariant-booleanvalue): {{String}}
   [DoubleValue](#cfn-iot-topicrule-assetpropertyvariant-doublevalue): {{String}}
   [IntegerValue](#cfn-iot-topicrule-assetpropertyvariant-integervalue): {{String}}

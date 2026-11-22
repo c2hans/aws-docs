@@ -26,7 +26,7 @@ The substitutions for expression attribute *name* placeholders in the form of ke
 
 The following example is a projection section for a JavaScript function in which only the attributes `author` and `id` are returned from DynamoDB.
 
-```
+```TypeScript
 projection : {
     expression : "#author, id",
     expressionNames : {
@@ -40,7 +40,7 @@ projection : {
 
 The following example demonstrates that when you use the built-in DynamoDB module, you can simply pass an array for your projection.
 
-```
+```TypeScript
 export const onPublish = {
   request(ctx) {
     return ddb.batchGet({

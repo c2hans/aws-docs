@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-slotpriority-syntax.json"></a>
 
-```
+```json
 {
   "[Priority](#cfn-lex-bot-slotpriority-priority)" : {{Integer}},
   "[SlotName](#cfn-lex-bot-slotpriority-slotname)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-slotpriority-syntax.yaml"></a>
 
-```
+```yaml
   [Priority](#cfn-lex-bot-slotpriority-priority): {{Integer}}
   [SlotName](#cfn-lex-bot-slotpriority-slotname): {{String}}
 ```

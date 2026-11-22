@@ -90,7 +90,7 @@ This is an example response for the `GetServicesInScope` API operation. You can 
 #### Sample Response
 <a name="API_GetServicesInScope_Example_1_Response"></a>
 
-```
+```json
 {
     "serviceMetadata": [
         {

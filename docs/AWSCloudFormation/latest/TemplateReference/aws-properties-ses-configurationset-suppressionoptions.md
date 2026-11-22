@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-configurationset-suppressionoptions-syntax.json"></a>
 
-```
+```json
 {
   "[SuppressedReasons](#cfn-ses-configurationset-suppressionoptions-suppressedreasons)" : {{[ String, ... ]}},
   "[ValidationOptions](#cfn-ses-configurationset-suppressionoptions-validationoptions)" : {{ValidationOptions}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-configurationset-suppressionoptions-syntax.yaml"></a>
 
-```
+```yaml
   [SuppressedReasons](#cfn-ses-configurationset-suppressionoptions-suppressedreasons): {{
     - String}}
   [ValidationOptions](#cfn-ses-configurationset-suppressionoptions-validationoptions): {{

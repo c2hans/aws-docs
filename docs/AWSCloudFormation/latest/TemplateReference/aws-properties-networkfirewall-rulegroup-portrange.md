@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkfirewall-rulegroup-portrange-syntax.json"></a>
 
-```
+```json
 {
   "[FromPort](#cfn-networkfirewall-rulegroup-portrange-fromport)" : {{Integer}},
   "[ToPort](#cfn-networkfirewall-rulegroup-portrange-toport)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkfirewall-rulegroup-portrange-syntax.yaml"></a>
 
-```
+```yaml
   [FromPort](#cfn-networkfirewall-rulegroup-portrange-fromport): {{Integer}}
   [ToPort](#cfn-networkfirewall-rulegroup-portrange-toport): {{Integer}}
 ```

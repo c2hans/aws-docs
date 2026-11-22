@@ -151,7 +151,7 @@ If your Outposts compute capacity is on an Outpost rack, you can create EBS volu
 
 The following [create-volume](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-volume.html) command creates an empty 50 GB volume on the specified Outpost.
 
-```
+```bash
 aws ec2 create-volume --availability-zone {{us-east-2a}} --outpost-arn arn:aws:outposts:{{us-east-2}}:{{123456789012}}:outpost/{{op-03e6fecad652a6138}} --size {{50}}
 ```
 

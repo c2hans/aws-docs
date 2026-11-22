@@ -21,7 +21,7 @@ In the following example, you apply a target-tracking scaling policy named `mysc
 
 For Linux, macOS, or Unix:
 
-```
+```json
 aws application-autoscaling put-scaling-policy \
     --policy-name myscalablepolicy \
     --policy-type TargetTrackingScaling \
@@ -33,7 +33,7 @@ aws application-autoscaling put-scaling-policy \
 
 For Windows:
 
-```
+```json
 aws application-autoscaling put-scaling-policy ^
     --policy-name myscalablepolicy ^
     --policy-type TargetTrackingScaling ^
@@ -55,7 +55,7 @@ To apply a scaling policy to your ElastiCache for Valkey and Redis OSS cluster, 
 
 In the following example, you apply a target-tracking scaling policy named `myscalablepolicy` to an ElastiCache cluster named `myscalablecluster` with ElastiCache auto scaling. You use a policy configuration based on the `ElastiCachePrimaryEngineCPUUtilization` predefined metric.
 
-```
+```json
 POST / HTTP/1.1
 Host: autoscaling.us-east-2.amazonaws.com
 Accept-Encoding: identity

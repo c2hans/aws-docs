@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-distributionconfiguration-amidistributionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AmiTags](#cfn-imagebuilder-distributionconfiguration-amidistributionconfiguration-amitags)" : {{{{{Key}}: {{Value}}, ...}}},
   "[Description](#cfn-imagebuilder-distributionconfiguration-amidistributionconfiguration-description)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-distributionconfiguration-amidistributionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AmiTags](#cfn-imagebuilder-distributionconfiguration-amidistributionconfiguration-amitags): {{
     {{Key}}: {{Value}}}}
   [Description](#cfn-imagebuilder-distributionconfiguration-amidistributionconfiguration-description): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityhub-automationrulev2-ocsfmapfilter-syntax.json"></a>
 
-```
+```json
 {
   "[FieldName](#cfn-securityhub-automationrulev2-ocsfmapfilter-fieldname)" : {{String}},
   "[Filter](#cfn-securityhub-automationrulev2-ocsfmapfilter-filter)" : {{MapFilter}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityhub-automationrulev2-ocsfmapfilter-syntax.yaml"></a>
 
-```
+```yaml
   [FieldName](#cfn-securityhub-automationrulev2-ocsfmapfilter-fieldname): {{String}}
   [Filter](#cfn-securityhub-automationrulev2-ocsfmapfilter-filter): {{
     MapFilter}}

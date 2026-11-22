@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-datasource-identitycenterconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EnableIdentityPropagation](#cfn-quicksight-datasource-identitycenterconfiguration-enableidentitypropagation)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-datasource-identitycenterconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EnableIdentityPropagation](#cfn-quicksight-datasource-identitycenterconfiguration-enableidentitypropagation): {{Boolean}}
 ```
 

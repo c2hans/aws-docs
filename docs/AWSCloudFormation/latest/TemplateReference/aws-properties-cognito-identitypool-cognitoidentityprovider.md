@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-identitypool-cognitoidentityprovider-syntax.json"></a>
 
-```
+```json
 {
   "[ClientId](#cfn-cognito-identitypool-cognitoidentityprovider-clientid)" : {{String}},
   "[ProviderName](#cfn-cognito-identitypool-cognitoidentityprovider-providername)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-identitypool-cognitoidentityprovider-syntax.yaml"></a>
 
-```
+```yaml
   [ClientId](#cfn-cognito-identitypool-cognitoidentityprovider-clientid): {{String}}
   [ProviderName](#cfn-cognito-identitypool-cognitoidentityprovider-providername): {{String}}
   [ServerSideTokenCheck](#cfn-cognito-identitypool-cognitoidentityprovider-serversidetokencheck): {{Boolean}}

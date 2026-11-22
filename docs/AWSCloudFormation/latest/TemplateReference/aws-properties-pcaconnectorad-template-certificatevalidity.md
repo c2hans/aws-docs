@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcaconnectorad-template-certificatevalidity-syntax.json"></a>
 
-```
+```json
 {
   "[RenewalPeriod](#cfn-pcaconnectorad-template-certificatevalidity-renewalperiod)" : {{ValidityPeriod}},
   "[ValidityPeriod](#cfn-pcaconnectorad-template-certificatevalidity-validityperiod)" : {{ValidityPeriod}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcaconnectorad-template-certificatevalidity-syntax.yaml"></a>
 
-```
+```yaml
   [RenewalPeriod](#cfn-pcaconnectorad-template-certificatevalidity-renewalperiod): {{
     ValidityPeriod}}
   [ValidityPeriod](#cfn-pcaconnectorad-template-certificatevalidity-validityperiod): {{

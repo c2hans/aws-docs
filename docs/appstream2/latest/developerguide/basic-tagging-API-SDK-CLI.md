@@ -49,7 +49,7 @@ aws appstream describe-fleets
 
 For an environment that contains a single fleet named `TestFleet`, the ARN for this resource would appear in the JSON output similar to the following.
 
-```
+```json
 "Arn": "arn:aws:appstream:us-east-1:123456789012:fleet/TestFleet"
 ```
 
@@ -69,7 +69,7 @@ aws appstream list-tags-for-resource --resource arn:aws:appstream:us-east-1:1234
 
 For this example, the JSON output appears as follows:
 
-```
+```json
 {
     "Tags": {
        "Environment" : "Test",

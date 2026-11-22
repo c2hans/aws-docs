@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssm-maintenancewindowtask-cloudwatchoutputconfig-syntax.json"></a>
 
-```
+```json
 {
   "[CloudWatchLogGroupName](#cfn-ssm-maintenancewindowtask-cloudwatchoutputconfig-cloudwatchloggroupname)" : {{String}},
   "[CloudWatchOutputEnabled](#cfn-ssm-maintenancewindowtask-cloudwatchoutputconfig-cloudwatchoutputenabled)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssm-maintenancewindowtask-cloudwatchoutputconfig-syntax.yaml"></a>
 
-```
+```yaml
   [CloudWatchLogGroupName](#cfn-ssm-maintenancewindowtask-cloudwatchoutputconfig-cloudwatchloggroupname): {{String}}
   [CloudWatchOutputEnabled](#cfn-ssm-maintenancewindowtask-cloudwatchoutputconfig-cloudwatchoutputenabled): {{Boolean}}
 ```

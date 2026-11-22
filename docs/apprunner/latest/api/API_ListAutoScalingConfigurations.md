@@ -122,7 +122,7 @@ In this example, the response includes two results and there aren't additional o
 #### Sample Request
 <a name="API_ListAutoScalingConfigurations_Example_1_Request"></a>
 
-```
+```json
 $ aws apprunner list-auto-scaling-configurations --cli-input-json "`cat`"
 {
   "MaxResults": 5
@@ -132,7 +132,7 @@ $ aws apprunner list-auto-scaling-configurations --cli-input-json "`cat`"
 #### Sample Response
 <a name="API_ListAutoScalingConfigurations_Example_1_Response"></a>
 
-```
+```json
 {
   "AutoScalingConfigurationSummaryList": [
     {

@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-qbusiness-webexperience-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::QBusiness::WebExperience",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-qbusiness-webexperience-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::QBusiness::WebExperience
 Properties:
   [ApplicationId](#cfn-qbusiness-webexperience-applicationid): {{String}}

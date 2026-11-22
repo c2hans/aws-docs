@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-knowledgebase-rdsfieldmapping-syntax.json"></a>
 
-```
+```json
 {
   "[CustomMetadataField](#cfn-bedrock-knowledgebase-rdsfieldmapping-custommetadatafield)" : {{String}},
   "[MetadataField](#cfn-bedrock-knowledgebase-rdsfieldmapping-metadatafield)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-knowledgebase-rdsfieldmapping-syntax.yaml"></a>
 
-```
+```yaml
   [CustomMetadataField](#cfn-bedrock-knowledgebase-rdsfieldmapping-custommetadatafield): {{String}}
   [MetadataField](#cfn-bedrock-knowledgebase-rdsfieldmapping-metadatafield): {{String}}
   [PrimaryKeyField](#cfn-bedrock-knowledgebase-rdsfieldmapping-primarykeyfield): {{String}}

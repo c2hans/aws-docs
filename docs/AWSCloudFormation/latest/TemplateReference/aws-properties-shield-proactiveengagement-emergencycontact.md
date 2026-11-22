@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-shield-proactiveengagement-emergencycontact-syntax.json"></a>
 
-```
+```json
 {
   "[ContactNotes](#cfn-shield-proactiveengagement-emergencycontact-contactnotes)" : {{String}},
   "[EmailAddress](#cfn-shield-proactiveengagement-emergencycontact-emailaddress)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-shield-proactiveengagement-emergencycontact-syntax.yaml"></a>
 
-```
+```yaml
   [ContactNotes](#cfn-shield-proactiveengagement-emergencycontact-contactnotes): {{String}}
   [EmailAddress](#cfn-shield-proactiveengagement-emergencycontact-emailaddress): {{String}}
   [PhoneNumber](#cfn-shield-proactiveengagement-emergencycontact-phonenumber): {{String}}

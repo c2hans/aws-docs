@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchservice-domain-vpcoptions-syntax.json"></a>
 
-```
+```json
 {
   "[EgressEnabled](#cfn-opensearchservice-domain-vpcoptions-egressenabled)" : {{Boolean}},
   "[SecurityGroupIds](#cfn-opensearchservice-domain-vpcoptions-securitygroupids)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchservice-domain-vpcoptions-syntax.yaml"></a>
 
-```
+```yaml
   [EgressEnabled](#cfn-opensearchservice-domain-vpcoptions-egressenabled): {{Boolean}}
   [SecurityGroupIds](#cfn-opensearchservice-domain-vpcoptions-securitygroupids): {{
     - String}}

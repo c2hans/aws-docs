@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-transfer-workflow-s3filelocation-syntax.json"></a>
 
-```
+```json
 {
   "[S3FileLocation](#cfn-transfer-workflow-s3filelocation-s3filelocation)" : {{S3InputFileLocation}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-transfer-workflow-s3filelocation-syntax.yaml"></a>
 
-```
+```yaml
   [S3FileLocation](#cfn-transfer-workflow-s3filelocation-s3filelocation): {{
     S3InputFileLocation}}
 ```

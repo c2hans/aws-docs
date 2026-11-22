@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-program-adbreak-syntax.json"></a>
 
-```
+```json
 {
   "[AdBreakMetadata](#cfn-mediatailor-program-adbreak-adbreakmetadata)" : {{[ KeyValuePair, ... ]}},
   "[MessageType](#cfn-mediatailor-program-adbreak-messagetype)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-program-adbreak-syntax.yaml"></a>
 
-```
+```yaml
   [AdBreakMetadata](#cfn-mediatailor-program-adbreak-adbreakmetadata): {{
     - KeyValuePair}}
   [MessageType](#cfn-mediatailor-program-adbreak-messagetype): {{String}}

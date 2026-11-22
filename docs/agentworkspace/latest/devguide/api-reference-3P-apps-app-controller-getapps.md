@@ -8,13 +8,13 @@ Returns the application information for the active application instances that sh
 
  **Signature**
 
-```
+```typescript
 getApps(): Promise<AppInfo[]>
 ```
 
  **Usage**
 
-```
+```typescript
 const applicationInfo: AppInfo[] = await appControllerClient.getApps();
 ```
 
@@ -35,6 +35,6 @@ const applicationInfo: AppInfo[] = await appControllerClient.getApps();
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

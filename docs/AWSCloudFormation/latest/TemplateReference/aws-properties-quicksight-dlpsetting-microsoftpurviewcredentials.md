@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dlpsetting-microsoftpurviewcredentials-syntax.json"></a>
 
-```
+```json
 {
   "[SecretArn](#cfn-quicksight-dlpsetting-microsoftpurviewcredentials-secretarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dlpsetting-microsoftpurviewcredentials-syntax.yaml"></a>
 
-```
+```yaml
   [SecretArn](#cfn-quicksight-dlpsetting-microsoftpurviewcredentials-secretarn): {{String}}
 ```
 

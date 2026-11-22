@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-continuousdeploymentpolicy-singleweightconfig-syntax.json"></a>
 
-```
+```json
 {
   "[SessionStickinessConfig](#cfn-cloudfront-continuousdeploymentpolicy-singleweightconfig-sessionstickinessconfig)" : {{SessionStickinessConfig}},
   "[Weight](#cfn-cloudfront-continuousdeploymentpolicy-singleweightconfig-weight)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-continuousdeploymentpolicy-singleweightconfig-syntax.yaml"></a>
 
-```
+```yaml
   [SessionStickinessConfig](#cfn-cloudfront-continuousdeploymentpolicy-singleweightconfig-sessionstickinessconfig): {{
     SessionStickinessConfig}}
   [Weight](#cfn-cloudfront-continuousdeploymentpolicy-singleweightconfig-weight): {{Number}}

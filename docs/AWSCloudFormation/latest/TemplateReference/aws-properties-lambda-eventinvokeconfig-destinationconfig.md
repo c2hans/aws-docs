@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-eventinvokeconfig-destinationconfig-syntax.json"></a>
 
-```
+```json
 {
   "[OnFailure](#cfn-lambda-eventinvokeconfig-destinationconfig-onfailure)" : {{OnFailure}},
   "[OnSuccess](#cfn-lambda-eventinvokeconfig-destinationconfig-onsuccess)" : {{OnSuccess}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-eventinvokeconfig-destinationconfig-syntax.yaml"></a>
 
-```
+```yaml
   [OnFailure](#cfn-lambda-eventinvokeconfig-destinationconfig-onfailure): {{
     OnFailure}}
   [OnSuccess](#cfn-lambda-eventinvokeconfig-destinationconfig-onsuccess): {{
@@ -61,7 +61,7 @@ Configure a function to send a record of failed asynchronous invocations to an S
 #### YAML
 <a name="aws-properties-lambda-eventinvokeconfig-destinationconfig--examples--On-Failure_Destination_Configuration--yaml"></a>
 
-```
+```yaml
       DestinationConfig:
           OnFailure:
             Destination: arn:aws:sqs:us-east-2:123456789012:dlq

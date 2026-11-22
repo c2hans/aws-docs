@@ -46,7 +46,7 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/SECTION_pro
 ### Installation
 <a name="installation"></a>
 
-```
+```bash
 pip install aurora-dsql-python-connector
 ```
 
@@ -55,17 +55,17 @@ pip install aurora-dsql-python-connector
 
  The Aurora DSQL Connector for Python installer does not install the underlying libraries. They need to be installed separately, e.g.:
 
-```
+```bash
 # Install psycopg and psycopg pool
 pip install "psycopg[binary,pool]"
 ```
 
-```
+```bash
 # Install psycopg2
 pip install psycopg2-binary
 ```
 
-```
+```bash
 # Install asyncpg
 pip install asyncpg
 ```
@@ -82,7 +82,7 @@ pip install asyncpg
 #### psycopg
 <a name="psycopg"></a>
 
-```
+```python
     import aurora_dsql_psycopg as dsql
 
     config = {
@@ -101,7 +101,7 @@ pip install asyncpg
 #### psycopg2
 <a name="psycopg2"></a>
 
-```
+```python
     import aurora_dsql_psycopg2 as dsql
 
     config = {
@@ -120,7 +120,7 @@ pip install asyncpg
 #### asyncpg
 <a name="asyncpg"></a>
 
-```
+```python
     import asyncio
     import aurora_dsql_asyncpg as dsql
 
@@ -142,7 +142,7 @@ pip install asyncpg
 ##### psycopg
 <a name="psycopg-1"></a>
 
-```
+```python
     import aurora_dsql_psycopg as dsql
 
     conn = dsql.connect("your-cluster.dsql.us-east-1.on.aws")
@@ -151,7 +151,7 @@ pip install asyncpg
 ##### psycopg2
 <a name="psycopg2-1"></a>
 
-```
+```python
     import aurora_dsql_psycopg2 as dsql
 
     conn = dsql.connect("your-cluster.dsql.us-east-1.on.aws")
@@ -160,7 +160,7 @@ pip install asyncpg
 ##### asyncpg
 <a name="asyncpg-1"></a>
 
-```
+```python
     import asyncio
     import aurora_dsql_asyncpg as dsql
 
@@ -173,7 +173,7 @@ pip install asyncpg
 ##### psycopg
 <a name="psycopg-2"></a>
 
-```
+```python
     import aurora_dsql_psycopg as dsql
 
     conn = dsql.connect("your-cluster")
@@ -182,7 +182,7 @@ pip install asyncpg
 ##### psycopg2
 <a name="psycopg2-2"></a>
 
-```
+```python
     import aurora_dsql_psycopg2 as dsql
 
     conn = dsql.connect("your-cluster")
@@ -191,7 +191,7 @@ pip install asyncpg
 ##### asyncpg
 <a name="asyncpg-2"></a>
 
-```
+```python
     import asyncio
     import aurora_dsql_asyncpg as dsql
 
@@ -202,7 +202,7 @@ pip install asyncpg
 
  In the "using just cluster ID" scenario, the region that was set previously on the machine is used, e.g.:
 
-```
+```bash
 aws configure set region us-east-1
 ```
 
@@ -211,7 +211,7 @@ aws configure set region us-east-1
 ##### psycopg
 <a name="psycopg-3"></a>
 
-```
+```python
     import aurora_dsql_psycopg as dsql
 
     config = {
@@ -224,7 +224,7 @@ aws configure set region us-east-1
 ##### psycopg2
 <a name="psycopg2-3"></a>
 
-```
+```python
     import aurora_dsql_psycopg2 as dsql
 
     config = {
@@ -237,7 +237,7 @@ aws configure set region us-east-1
 ##### asyncpg
 <a name="asyncpg-3"></a>
 
-```
+```python
     import asyncio
     import aurora_dsql_asyncpg as dsql
 
@@ -254,7 +254,7 @@ aws configure set region us-east-1
 #### psycopg
 <a name="psycopg-4"></a>
 
-```
+```python
     import aurora_dsql_psycopg as dsql
 
     conn = dsql.connect("postgresql://your-cluster.dsql.us-east-1.on.aws/postgres?user=admin&token_duration_secs=15")
@@ -263,7 +263,7 @@ aws configure set region us-east-1
 #### psycopg2
 <a name="psycopg2-4"></a>
 
-```
+```python
     import aurora_dsql_psycopg2 as dsql
 
     conn = dsql.connect("postgresql://your-cluster.dsql.us-east-1.on.aws/postgres?user=admin&token_duration_secs=15")
@@ -272,7 +272,7 @@ aws configure set region us-east-1
 #### asyncpg
 <a name="asyncpg-4"></a>
 
-```
+```python
     import asyncio
     import aurora_dsql_asyncpg as dsql
 
@@ -285,7 +285,7 @@ aws configure set region us-east-1
 #### psycopg
 <a name="psycopg-5"></a>
 
-```
+```python
     import aurora_dsql_psycopg as dsql
 
     config = {
@@ -306,7 +306,7 @@ aws configure set region us-east-1
 #### psycopg2
 <a name="psycopg2-5"></a>
 
-```
+```python
     import aurora_dsql_psycopg2 as dsql
 
     config = {
@@ -327,7 +327,7 @@ aws configure set region us-east-1
 #### asyncpg
 <a name="asyncpg-5"></a>
 
-```
+```python
     import asyncio
     import aurora_dsql_asyncpg as dsql
 
@@ -371,7 +371,7 @@ aws configure set region us-east-1
 
  For psycopg, the connector implements a connection class named DSQLConnection that can be passed directly to the psycopg\_pool.ConnectionPool constructor. For asynchronous operations, there is also an async version of the class named DSQLAsyncConnection.
 
-```
+```python
     from psycopg_pool import ConnectionPool as PsycopgPool
 
     ...
@@ -394,7 +394,7 @@ aws configure set region us-east-1
 
  For psycopg2, the connector provides a class named AuroraDSQLThreadedConnectionPool that inherits from psycopg2.pool.ThreadedConnectionPool. The AuroraDSQLThreadedConnectionPool class only overrides the internal \_connect method. The rest of the implementation is provided by psycopg2.pool.ThreadedConnectionPool unchanged.
 
-```
+```python
     import aurora_dsql_psycopg2 as dsql
 
     pool = dsql.AuroraDSQLThreadedConnectionPool(
@@ -409,7 +409,7 @@ aws configure set region us-east-1
 
  For asyncpg, the connector provides a create\_pool function that returns an instance of asyncpg.Pool.
 
-```
+```python
     import asyncio
     import os
 

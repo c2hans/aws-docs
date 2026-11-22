@@ -25,7 +25,7 @@ aws autoscaling describe-auto-scaling-groups --region {{REGION}} \
 
 The following is example output.
 
-```
+```json
 [
     {
 	"AutoScalingGroupName": "group-1",
@@ -99,7 +99,7 @@ aws autoscaling describe-auto-scaling-groups --region {{REGION}} \
 
 The following shows example output.
 
-```
+```json
 [
     {
         "AutoScalingGroupName": "group-1",

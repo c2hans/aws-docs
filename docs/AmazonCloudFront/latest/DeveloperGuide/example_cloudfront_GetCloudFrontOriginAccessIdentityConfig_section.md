@@ -37,7 +37,7 @@ For more information, see [Restrict access to an Amazon S3 origin](https://docs.
 **Tools for PowerShell V4**
 **Example 1: This example returns configuration information about a single Amazon CloudFront origin access identity, specified by the -Id parameter. Errors occur if no -Id parameter is specified..**
 
-```
+```powershell
 Get-CFCloudFrontOriginAccessIdentityConfig -Id E3XXXXXXXXXXRT
 ```
 **Output:**
@@ -52,7 +52,7 @@ Get-CFCloudFrontOriginAccessIdentityConfig -Id E3XXXXXXXXXXRT
 **Tools for PowerShell V5**
 **Example 1: This example returns configuration information about a single Amazon CloudFront origin access identity, specified by the -Id parameter. Errors occur if no -Id parameter is specified..**
 
-```
+```powershell
 Get-CFCloudFrontOriginAccessIdentityConfig -Id E3XXXXXXXXXXRT
 ```
 **Output:**

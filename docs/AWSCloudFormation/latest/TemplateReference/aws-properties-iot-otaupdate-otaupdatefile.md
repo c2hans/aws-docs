@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-otaupdate-otaupdatefile-syntax.json"></a>
 
-```
+```json
 {
   "[Attributes](#cfn-iot-otaupdate-otaupdatefile-attributes)" : {{{{{Key}}: {{Value}}, ...}}},
   "[CodeSigning](#cfn-iot-otaupdate-otaupdatefile-codesigning)" : {{CodeSigning}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-otaupdate-otaupdatefile-syntax.yaml"></a>
 
-```
+```yaml
   [Attributes](#cfn-iot-otaupdate-otaupdatefile-attributes): {{
     {{Key}}: {{Value}}}}
   [CodeSigning](#cfn-iot-otaupdate-otaupdatefile-codesigning): {{

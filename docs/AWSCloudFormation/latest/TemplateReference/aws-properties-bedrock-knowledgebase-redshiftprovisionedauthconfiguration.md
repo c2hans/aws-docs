@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-knowledgebase-redshiftprovisionedauthconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DatabaseUser](#cfn-bedrock-knowledgebase-redshiftprovisionedauthconfiguration-databaseuser)" : {{String}},
   "[Type](#cfn-bedrock-knowledgebase-redshiftprovisionedauthconfiguration-type)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-knowledgebase-redshiftprovisionedauthconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DatabaseUser](#cfn-bedrock-knowledgebase-redshiftprovisionedauthconfiguration-databaseuser): {{String}}
   [Type](#cfn-bedrock-knowledgebase-redshiftprovisionedauthconfiguration-type): {{String}}
   [UsernamePasswordSecretArn](#cfn-bedrock-knowledgebase-redshiftprovisionedauthconfiguration-usernamepasswordsecretarn): {{String}}

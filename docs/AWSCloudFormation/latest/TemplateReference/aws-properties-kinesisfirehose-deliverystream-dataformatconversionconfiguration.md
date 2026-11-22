@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-dataformatconversionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-kinesisfirehose-deliverystream-dataformatconversionconfiguration-enabled)" : {{Boolean}},
   "[InputFormatConfiguration](#cfn-kinesisfirehose-deliverystream-dataformatconversionconfiguration-inputformatconfiguration)" : {{InputFormatConfiguration}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-dataformatconversionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-kinesisfirehose-deliverystream-dataformatconversionconfiguration-enabled): {{Boolean}}
   [InputFormatConfiguration](#cfn-kinesisfirehose-deliverystream-dataformatconversionconfiguration-inputformatconfiguration): {{
     InputFormatConfiguration}}

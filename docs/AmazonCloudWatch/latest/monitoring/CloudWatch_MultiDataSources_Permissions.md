@@ -16,7 +16,7 @@ You can find template URLs for data sources on the **Create stack** page in the 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

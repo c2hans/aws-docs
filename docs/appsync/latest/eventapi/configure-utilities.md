@@ -46,13 +46,13 @@ AWS AppSync provides the following two libraries that help you develop event han
 
 To add the plugin to your project, follow the installation and usage steps at [Getting Started with ESLint](https://eslint.org/docs/latest/user-guide/getting-started#installation-and-usage). Then, install the [plugin](https://www.npmjs.com/package/@aws-appsync/eslint-plugin) in your project using your project package manager (e.g., npm, yarn, or pnpm):
 
-```
+```Sh
 $ npm install @aws-appsync/eslint-plugin
 ```
 
 In your `.eslintrc.{js,yml,json}` file, add **"plugin:@aws-appsync/base"** or **"plugin:@aws-appsync/recommended"** to the `extends` property. The snippet below is a basic sample `.eslintrc` configuration for JavaScript:
 
-```
+```TypeScript
 {
   "extends": ["plugin:@aws-appsync/base"]
 }
@@ -60,13 +60,13 @@ In your `.eslintrc.{js,yml,json}` file, add **"plugin:@aws-appsync/base"** or **
 
 To use the **"plugin:@aws-appsync/recommended"** rule set, install the required dependency:
 
-```
+```Sh
 $ npm install -D @typescript-eslint/parser
 ```
 
 Then, create an `.eslintrc.js` file:
 
-```
+```TypeScript
 {
   "parser": "@typescript-eslint/parser",
   "parserOptions": {

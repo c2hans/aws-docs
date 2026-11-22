@@ -62,7 +62,7 @@ aws cloudformation list-exports --region {{us-east-1}}
 
 The following is example output.
 
-```
+```json
 {
     "Exports": [
         {
@@ -111,7 +111,7 @@ aws cloudformation list-imports --region {{us-east-1}} \
 
 CloudFormation returns a list of stacks that are importing the value.
 
-```
+```json
 {
     "Imports": [
         "my-app-stack"

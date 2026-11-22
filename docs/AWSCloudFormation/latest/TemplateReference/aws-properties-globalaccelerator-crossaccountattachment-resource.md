@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-globalaccelerator-crossaccountattachment-resource-syntax.json"></a>
 
-```
+```json
 {
   "[Cidr](#cfn-globalaccelerator-crossaccountattachment-resource-cidr)" : {{String}},
   "[EndpointId](#cfn-globalaccelerator-crossaccountattachment-resource-endpointid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-globalaccelerator-crossaccountattachment-resource-syntax.yaml"></a>
 
-```
+```yaml
   [Cidr](#cfn-globalaccelerator-crossaccountattachment-resource-cidr): {{String}}
   [EndpointId](#cfn-globalaccelerator-crossaccountattachment-resource-endpointid): {{String}}
   [Region](#cfn-globalaccelerator-crossaccountattachment-resource-region): {{String}}

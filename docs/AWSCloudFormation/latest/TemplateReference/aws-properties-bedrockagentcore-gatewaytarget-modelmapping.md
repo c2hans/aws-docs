@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewaytarget-modelmapping-syntax.json"></a>
 
-```
+```json
 {
   "[ProviderPrefix](#cfn-bedrockagentcore-gatewaytarget-modelmapping-providerprefix)" : {{ProviderPrefix}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewaytarget-modelmapping-syntax.yaml"></a>
 
-```
+```yaml
   [ProviderPrefix](#cfn-bedrockagentcore-gatewaytarget-modelmapping-providerprefix): {{
     ProviderPrefix}}
 ```

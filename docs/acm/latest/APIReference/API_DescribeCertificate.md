@@ -47,6 +47,7 @@ Required: Yes
       "CertificateArn": "string",
       "CertificateAuthorityArn": "string",
       "CertificateKeyPairOrigin": "string",
+      "CertificateUsage": "string",
       "CreatedAt": number,
       "DomainName": "string",
       "DomainValidationOptions": [
@@ -118,6 +119,7 @@ Required: Yes
       },
       "RevocationReason": "string",
       "RevokedAt": number,
+      "RootHierarchyType": "string",
       "Serial": "string",
       "SignatureAlgorithm": "string",
       "Status": "string",

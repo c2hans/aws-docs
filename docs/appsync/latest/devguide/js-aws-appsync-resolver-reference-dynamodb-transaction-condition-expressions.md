@@ -13,7 +13,7 @@ For `PutItem`, `DeleteItem`, and `UpdateItem`, the transaction condition express
 
 The following transactional `DeleteItem` function request handler does not have a condition expression. As a result, it deletes the item in DynamoDB.
 
-```
+```TypeScript
 import { util } from '@aws-appsync/utils';
 
 export function request(ctx) {
@@ -36,7 +36,7 @@ export function request(ctx) {
 
 The following transactional `DeleteItem` function request handler does have a transaction condition expression that allows the operation succeed only if the author of that post equals a certain name.
 
-```
+```TypeScript
 import { util } from '@aws-appsync/utils';
 
 export function request(ctx) {
@@ -66,7 +66,7 @@ The `PutItem`, `UpdateItem`, and `DeleteItem` request objects all allow an optio
 
 A `condition` section has the following structure:
 
-```
+```TypeScript
 type TransactConditionCheckExpression = {
   expression: string;
   expressionNames?: { [key: string]: string };

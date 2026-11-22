@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-docdb-dbclusterparametergroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DocDB::DBClusterParameterGroup",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-docdb-dbclusterparametergroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DocDB::DBClusterParameterGroup
 Properties:
   [Description](#cfn-docdb-dbclusterparametergroup-description): {{String}}
@@ -112,7 +112,7 @@ For more information about using the `Ref` function, see [`Ref`](https://docs.aw
 #### JSON
 <a name="aws-resource-docdb-dbclusterparametergroup--examples----json"></a>
 
-```
+```json
 {
    "Type" : "AWS::DocDB::DBClusterParameterGroup",
    "Properties" : {
@@ -132,7 +132,7 @@ For more information about using the `Ref` function, see [`Ref`](https://docs.aw
 #### YAML
 <a name="aws-resource-docdb-dbclusterparametergroup--examples----yaml"></a>
 
-```
+```yaml
 Type: "AWS::DocDB::DBClusterParameterGroup"
 Properties:
    Description: "description"

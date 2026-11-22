@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-topbottommoverscomputation-syntax.json"></a>
 
-```
+```json
 {
   "[Category](#cfn-quicksight-template-topbottommoverscomputation-category)" : {{DimensionField}},
   "[ComputationId](#cfn-quicksight-template-topbottommoverscomputation-computationid)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-topbottommoverscomputation-syntax.yaml"></a>
 
-```
+```yaml
   [Category](#cfn-quicksight-template-topbottommoverscomputation-category): {{
     DimensionField}}
   [ComputationId](#cfn-quicksight-template-topbottommoverscomputation-computationid): {{String}}

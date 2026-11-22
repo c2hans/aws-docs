@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-crawler-lakeformationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AccountId](#cfn-glue-crawler-lakeformationconfiguration-accountid)" : {{String}},
   "[UseLakeFormationCredentials](#cfn-glue-crawler-lakeformationconfiguration-uselakeformationcredentials)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-crawler-lakeformationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AccountId](#cfn-glue-crawler-lakeformationconfiguration-accountid): {{String}}
   [UseLakeFormationCredentials](#cfn-glue-crawler-lakeformationconfiguration-uselakeformationcredentials): {{Boolean}}
 ```

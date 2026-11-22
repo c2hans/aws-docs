@@ -8,13 +8,13 @@ Returns the AWS Region that the given contact is handled in, for example `us-eas
 
  **Signature**
 
-```
+```typescript
 getContactRegion(contactId: string): Promise<string>
 ```
 
  **Usage**
 
-```
+```typescript
 const region: string = await contactClient.getContactRegion(contactId);
 ```
 
@@ -30,6 +30,6 @@ Requires an instance that is scoped to the contact that you pass in `contactId`,
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

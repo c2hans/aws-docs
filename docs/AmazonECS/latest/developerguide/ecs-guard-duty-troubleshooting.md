@@ -31,7 +31,7 @@ Output
 
 The setting with **name** set to `guardDutyActivate` and **value** set to `on` indicates that the account is configured. You must check with your GuardDuty administrator to see if the management is automatic or manual.
 
-```
+```json
 {
     "setting": {
         "name": "guardDutyActivate",
@@ -66,7 +66,7 @@ Output
 
 The container named `gd-agent` is in the `RUNNING` state.
 
-```
+```json
 "containers": [
       {
         "containerArn": "arn:aws:ecs:us-east-1:123456789012:container/4df26bb4-f057-467b-a079-96167EXAMPLE",
@@ -106,7 +106,7 @@ In order to tag a cluster, you must have the `ecs:TagResource` action for both `
 
 The following is a snippet of an example policy.
 
-```
+```json
 {
   "Statement": [
     {

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-evaluationform-scoringstrategy-syntax.json"></a>
 
-```
+```json
 {
   "[Mode](#cfn-connect-evaluationform-scoringstrategy-mode)" : {{String}},
   "[ScoreThresholds](#cfn-connect-evaluationform-scoringstrategy-scorethresholds)" : {{[ EvaluationFormScoreThreshold, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-evaluationform-scoringstrategy-syntax.yaml"></a>
 
-```
+```yaml
   [Mode](#cfn-connect-evaluationform-scoringstrategy-mode): {{String}}
   [ScoreThresholds](#cfn-connect-evaluationform-scoringstrategy-scorethresholds): {{
     - EvaluationFormScoreThreshold}}

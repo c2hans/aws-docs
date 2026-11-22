@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-flow-mediastream-syntax.json"></a>
 
-```
+```json
 {
   "[Attributes](#cfn-mediaconnect-flow-mediastream-attributes)" : {{MediaStreamAttributes}},
   "[ClockRate](#cfn-mediaconnect-flow-mediastream-clockrate)" : {{Integer}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-flow-mediastream-syntax.yaml"></a>
 
-```
+```yaml
   [Attributes](#cfn-mediaconnect-flow-mediastream-attributes): {{
     MediaStreamAttributes}}
   [ClockRate](#cfn-mediaconnect-flow-mediastream-clockrate): {{Integer}}

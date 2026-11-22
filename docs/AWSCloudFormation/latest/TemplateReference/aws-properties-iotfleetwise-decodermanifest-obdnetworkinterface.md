@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotfleetwise-decodermanifest-obdnetworkinterface-syntax.json"></a>
 
-```
+```json
 {
   "[InterfaceId](#cfn-iotfleetwise-decodermanifest-obdnetworkinterface-interfaceid)" : {{String}},
   "[ObdInterface](#cfn-iotfleetwise-decodermanifest-obdnetworkinterface-obdinterface)" : {{ObdInterface}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotfleetwise-decodermanifest-obdnetworkinterface-syntax.yaml"></a>
 
-```
+```yaml
   [InterfaceId](#cfn-iotfleetwise-decodermanifest-obdnetworkinterface-interfaceid): {{String}}
   [ObdInterface](#cfn-iotfleetwise-decodermanifest-obdnetworkinterface-obdinterface): {{
     ObdInterface}}

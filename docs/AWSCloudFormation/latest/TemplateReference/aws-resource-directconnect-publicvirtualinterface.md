@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-directconnect-publicvirtualinterface-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DirectConnect::PublicVirtualInterface",
   "Properties" : {
@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-directconnect-publicvirtualinterface-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DirectConnect::PublicVirtualInterface
 Properties:
   [AllocatePublicVirtualInterfaceRoleArn](#cfn-directconnect-publicvirtualinterface-allocatepublicvirtualinterfacerolearn): {{String}}
@@ -160,7 +160,7 @@ This example shows a basic public virtual interface setup using a pre-existing c
 #### JSON
 <a name="aws-resource-directconnect-publicvirtualinterface--examples--Create_a_public_virtual_interface_using_resources_in_the_same_account--json"></a>
 
-```
+```json
 {
   "Resources": {
     "myPublicVirtualInterface": {
@@ -200,7 +200,7 @@ This example shows a basic public virtual interface setup using a pre-existing c
 #### YAML
 <a name="aws-resource-directconnect-publicvirtualinterface--examples--Create_a_public_virtual_interface_using_resources_in_the_same_account--yaml"></a>
 
-```
+```yaml
 Resources:
   myPublicVirtualInterface:
     Type: AWS::DirectConnect::PublicVirtualInterface

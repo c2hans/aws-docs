@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotwireless-partneraccount-sidewalkaccountinfowithfingerprint-syntax.json"></a>
 
-```
+```json
 {
   "[AmazonId](#cfn-iotwireless-partneraccount-sidewalkaccountinfowithfingerprint-amazonid)" : {{String}},
   "[Arn](#cfn-iotwireless-partneraccount-sidewalkaccountinfowithfingerprint-arn)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotwireless-partneraccount-sidewalkaccountinfowithfingerprint-syntax.yaml"></a>
 
-```
+```yaml
   [AmazonId](#cfn-iotwireless-partneraccount-sidewalkaccountinfowithfingerprint-amazonid): {{String}}
   [Arn](#cfn-iotwireless-partneraccount-sidewalkaccountinfowithfingerprint-arn): {{String}}
   [Fingerprint](#cfn-iotwireless-partneraccount-sidewalkaccountinfowithfingerprint-fingerprint): {{String}}

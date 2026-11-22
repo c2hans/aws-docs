@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-containerfleet-deploymentconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ImpairmentStrategy](#cfn-gamelift-containerfleet-deploymentconfiguration-impairmentstrategy)" : {{String}},
   "[MinimumHealthyPercentage](#cfn-gamelift-containerfleet-deploymentconfiguration-minimumhealthypercentage)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-containerfleet-deploymentconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ImpairmentStrategy](#cfn-gamelift-containerfleet-deploymentconfiguration-impairmentstrategy): {{String}}
   [MinimumHealthyPercentage](#cfn-gamelift-containerfleet-deploymentconfiguration-minimumhealthypercentage): {{Integer}}
   [ProtectionStrategy](#cfn-gamelift-containerfleet-deploymentconfiguration-protectionstrategy): {{String}}

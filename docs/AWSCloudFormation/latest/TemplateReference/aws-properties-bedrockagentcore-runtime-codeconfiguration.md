@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-runtime-codeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Code](#cfn-bedrockagentcore-runtime-codeconfiguration-code)" : {{Code}},
   "[EntryPoint](#cfn-bedrockagentcore-runtime-codeconfiguration-entrypoint)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-runtime-codeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Code](#cfn-bedrockagentcore-runtime-codeconfiguration-code): {{
     Code}}
   [EntryPoint](#cfn-bedrockagentcore-runtime-codeconfiguration-entrypoint): {{

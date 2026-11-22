@@ -15,6 +15,8 @@ When you create the SAML provider resource, you upload a SAML metadata document 
 
  For more information, see [Enabling SAML 2.0 federated users to access the AWS Management Console](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_enable-console-saml.html) and [About SAML 2.0-based federation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_saml.html) in the *IAM User Guide*.
 
+To control who can configure trusted identity propagation on a SAML provider, use the [iam:EnableIdentityPropagation](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_EnableIdentityPropagation), [iam:EnableIdentityCenterAssociation](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_EnableIdentityCenterAssociation), [iam:RequestIdentityProviderIssuers](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_RequestIdentityProviderIssuers), [iam:ResourceIdentityProviderIssuers](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_ResourceIdentityProviderIssuers), [iam:RequestIdentityCenterInstanceArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_RequestIdentityCenterInstanceArn), and [iam:ResourceIdentityCenterInstanceArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_ResourceIdentityCenterInstanceArn) condition keys in IAM policies. The `Request` keys contain the values in the request. The `Resource` keys contain the values stored on the provider.
+
 ## Request Parameters
 <a name="API_CreateSAMLProvider_RequestParameters"></a>
 
@@ -31,6 +33,18 @@ Required: No
 Specifies the encryption setting for the SAML provider.
 Type: String
 Valid Values: `Required | Allowed`
+Required: No
+
+ ** ContextProvider **
+The trusted identity propagation context provider configuration to associate with the SAML provider. The context provider defines how the subject is derived and how keys from the provider's SAML assertion are mapped into trusted context keys. Specifying a context provider enables trusted identity propagation for the provider. For more information, see [ContextProvider](https://docs.aws.amazon.com/IAM/latest/APIReference/API_ContextProvider.html).
+Type: [ContextProvider](API_ContextProvider.md) object
+Required: No
+
+ ** IdentityCenterInstanceArn **
+The Amazon Resource Name (ARN) of the IAM Identity Center instance to associate with the SAML provider. If you specify this parameter, you must also specify `ContextProvider`.
+For the format, see [InstanceMetadata](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_InstanceMetadata.html) in the *IAM Identity Center API Reference*.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 1224.
 Required: No
 
  ** Name **
@@ -111,8 +125,13 @@ https://iam.amazonaws.com/?Action=CreateSAMLProvider
 &AddPrivateKey=HOIiDq6o3PFd9tkdrzgCG41zJu2tdWEwPQwrzb+ettT+pwWfwBoSr6WnuSEropxeBn+gN/AuX24cRG0HjsUP2dcs
 &AssertionEncryptionMode=Required
 &Name=MyUniversity
-&SAMLProviderDocument=VGhpcyBpcyB3aGVyZSB5b3UgcHV0IHRoZSBTQU1MIHByb3ZpZGVyIG1ldGFkYXRhIGRvY3VtZW50
+&SAMLMetadataDocument=VGhpcyBpcyB3aGVyZSB5b3UgcHV0IHRoZSBTQU1MIHByb3ZpZGVyIG1ldGFkYXRhIGRvY3VtZW50
 LCBCYXNlNjQtZW5jb2RlZCBpbnRvIGEgYmlnIHN0cmluZy4=
+&ContextProvider.SubjectSourceKey=email
+&ContextProvider.SubjectTypeValue=user
+&ContextProvider.KeyDefinitionList.member.1.SourceKey=department
+&ContextProvider.KeyDefinitionList.member.1.TargetKey=department
+&IdentityCenterInstanceArn=arn:aws:sso:::instance/ssoins-1234567890abcdef
 &Version=2010-05-08
 &AUTHPARAMS
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-inspectorv2-cisscanconfiguration-time-syntax.json"></a>
 
-```
+```json
 {
   "[TimeOfDay](#cfn-inspectorv2-cisscanconfiguration-time-timeofday)" : {{String}},
   "[TimeZone](#cfn-inspectorv2-cisscanconfiguration-time-timezone)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-inspectorv2-cisscanconfiguration-time-syntax.yaml"></a>
 
-```
+```yaml
   [TimeOfDay](#cfn-inspectorv2-cisscanconfiguration-time-timeofday): {{String}}
   [TimeZone](#cfn-inspectorv2-cisscanconfiguration-time-timezone): {{String}}
 ```

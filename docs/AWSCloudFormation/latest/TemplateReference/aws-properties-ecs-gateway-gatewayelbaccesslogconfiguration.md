@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-gateway-gatewayelbaccesslogconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Destination](#cfn-ecs-gateway-gatewayelbaccesslogconfiguration-destination)" : {{GatewayElbAccessLogDestination}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-gateway-gatewayelbaccesslogconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Destination](#cfn-ecs-gateway-gatewayelbaccesslogconfiguration-destination): {{
     GatewayElbAccessLogDestination}}
 ```

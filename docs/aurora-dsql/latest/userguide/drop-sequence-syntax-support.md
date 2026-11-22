@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/drop-sequen
 ## Supported syntax
 <a name="drop-sequence-supported-syntax"></a>
 
-```
+```sql
 DROP SEQUENCE [ IF EXISTS ] name [, ...] [ CASCADE | RESTRICT ]
 ```
 
@@ -38,7 +38,7 @@ Refuse to drop the sequence if any objects depend on it. This is the default.
 
 To remove the sequence `seq`:
 
-```
+```sql
 DROP SEQUENCE seq;
 ```
 

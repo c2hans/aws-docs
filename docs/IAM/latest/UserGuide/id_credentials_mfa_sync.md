@@ -29,7 +29,7 @@ To resynchronize virtual or hardware MFA devices for your own IAM user, you must
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -141,12 +141,12 @@ You can resynchronize virtual and hardware MFA devices from the AWS CLI.
 At a command prompt, issue the [aws iam resync-mfa-device](https://docs.aws.amazon.com/cli/latest/reference/iam/resync-mfa-device.html) command:
 + Virtual MFA device: Specify Amazon Resource Name (ARN) of device as the serial number.
 
-  ```
+  ```bash
   aws iam resync-mfa-device --user-name {{Richard}} --serial-number arn:aws:iam::{{123456789012}}:mfa/{{RichardsMFA}} --authentication-code1 {{123456}} --authentication-code2 {{987654}}
   ```
 + Hardware MFA device: Specify hardware device's serial number as serial number. The format is vendor-specific. For example, you can purchase a gemalto token from Amazon. Its serial number is typically four letters followed by four numbers.
 
-  ```
+  ```bash
   aws iam resync-mfa-device --user-name {{Richard}} --serial-number {{ABCD12345678}} --authentication-code1 {{123456}} --authentication-code2 {{987654}}
   ```
 

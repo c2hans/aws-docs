@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-pipetargetparameters-syntax.json"></a>
 
-```
+```json
 {
   "[BatchJobParameters](#cfn-pipes-pipe-pipetargetparameters-batchjobparameters)" : {{PipeTargetBatchJobParameters}},
   "[CloudWatchLogsParameters](#cfn-pipes-pipe-pipetargetparameters-cloudwatchlogsparameters)" : {{PipeTargetCloudWatchLogsParameters}},
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-pipetargetparameters-syntax.yaml"></a>
 
-```
+```yaml
   [BatchJobParameters](#cfn-pipes-pipe-pipetargetparameters-batchjobparameters): {{
     PipeTargetBatchJobParameters}}
   [CloudWatchLogsParameters](#cfn-pipes-pipe-pipetargetparameters-cloudwatchlogsparameters): {{

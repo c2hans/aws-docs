@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-rolesanywhere-profile-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RolesAnywhere::Profile",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-rolesanywhere-profile-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RolesAnywhere::Profile
 Properties:
   [AcceptRoleSessionName](#cfn-rolesanywhere-profile-acceptrolesessionname): {{Boolean}}

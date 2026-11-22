@@ -79,7 +79,7 @@ Pattern: `arn:aws(-[^:]+)?:agent-registry:[a-z0-9-]+:[0-9]{12}:registry/[a-zA-Z0
  ** [status](#API_SubmitRegistryRecordForApproval_ResponseSyntax) **   <a name="agentregistrycontrol-SubmitRegistryRecordForApproval-response-status"></a>
 The resulting status of the registry record
 Type: String
-Valid Values: `DRAFT | PENDING_APPROVAL | APPROVED | REJECTED | DEPRECATED | CREATING | UPDATING | CREATE_FAILED | UPDATE_FAILED`
+Valid Values: `DRAFT | PENDING_APPROVAL | APPROVED | REJECTED | DEPRECATED | CREATING | UPDATING | CREATE_FAILED | UPDATE_FAILED | CREATE_PENDING_AUTH | UPDATE_PENDING_AUTH`
 
  ** [updatedAt](#API_SubmitRegistryRecordForApproval_ResponseSyntax) **   <a name="agentregistrycontrol-SubmitRegistryRecordForApproval-response-updatedAt"></a>
 The timestamp when the record was last updated

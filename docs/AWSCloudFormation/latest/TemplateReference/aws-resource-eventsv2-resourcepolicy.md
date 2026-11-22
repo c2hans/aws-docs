@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-eventsv2-resourcepolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EventsV2::ResourcePolicy",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-eventsv2-resourcepolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EventsV2::ResourcePolicy
 Properties:
   [EventBusArn](#cfn-eventsv2-resourcepolicy-eventbusarn): {{String}}
@@ -94,7 +94,7 @@ The following example grants accounts in an organization permission to send even
 #### JSON
 <a name="aws-resource-eventsv2-resourcepolicy--examples--Grant_an_organization_permission_to_send_events--json"></a>
 
-```
+```json
 {
   "Resources": {
     "OrdersBusPolicy": {
@@ -127,7 +127,7 @@ The following example grants accounts in an organization permission to send even
 #### YAML
 <a name="aws-resource-eventsv2-resourcepolicy--examples--Grant_an_organization_permission_to_send_events--yaml"></a>
 
-```
+```yaml
 Resources:
   OrdersBusPolicy:
     Type: AWS::EventsV2::ResourcePolicy
@@ -154,7 +154,7 @@ The following example grants one account permission to send events to the event 
 #### JSON
 <a name="aws-resource-eventsv2-resourcepolicy--examples--Grant_a_single_account_permission_to_send_events--json"></a>
 
-```
+```json
 {
   "Resources": {
     "OrdersBusPolicy": {
@@ -187,7 +187,7 @@ The following example grants one account permission to send events to the event 
 #### YAML
 <a name="aws-resource-eventsv2-resourcepolicy--examples--Grant_a_single_account_permission_to_send_events--yaml"></a>
 
-```
+```yaml
 Resources:
   OrdersBusPolicy:
     Type: AWS::EventsV2::ResourcePolicy

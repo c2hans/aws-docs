@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-mitigationaction-updatedevicecertificateparams-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-iot-mitigationaction-updatedevicecertificateparams-action)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-mitigationaction-updatedevicecertificateparams-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-iot-mitigationaction-updatedevicecertificateparams-action): {{String}}
 ```
 

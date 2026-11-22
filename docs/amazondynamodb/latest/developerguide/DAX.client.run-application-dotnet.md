@@ -57,7 +57,7 @@ After you do this, you should be able to run the `dotnet --version` command with
 
 1. The `myApp/myApp.csproj` file contains metadata about your project. To use the DAX client in your application, modify the file so that it looks like the following.
 
-   ```
+   ```xml
    <Project Sdk="Microsoft.NET.Sdk">
        <PropertyGroup>
            <OutputType>Exe</OutputType>
@@ -107,7 +107,7 @@ After you do this, you should be able to run the `dotnet --version` command with
 
      The cluster endpoint is shown in the output, as in the following example.
 
-     ```
+     ```json
      {
          "Address": "my-cluster.l6fzcv.dax-clusters.us-east-1.amazonaws.com",
          "Port": 8111,

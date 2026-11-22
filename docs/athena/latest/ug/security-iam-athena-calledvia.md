@@ -13,7 +13,7 @@ You can use the [aws:CalledVia](https://docs.aws.amazon.com/IAM/latest/UserGuide
 
 By specifying a service principal name for the `aws:CalledVia` context key, you can make the context key AWS service-specific. For example, you can use the `aws:CalledVia` condition key to limit requests to only those made from Athena. To use the `aws:CalledVia` condition key in a policy with Athena, you specify the Athena service principal name `athena.amazonaws.com`, as in the following example.
 
-```
+```json
  ...
     "Condition": {
         "ForAnyValue:StringEquals": {
@@ -38,7 +38,7 @@ Athena requires the caller to have `lambda:InvokeFunction` permissions in order 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -66,7 +66,7 @@ The following example shows the addition of the previous statement to a policy t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

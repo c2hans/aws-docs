@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkfirewall-rulegroup-dimension-syntax.json"></a>
 
-```
+```json
 {
   "[Value](#cfn-networkfirewall-rulegroup-dimension-value)" : {{String}}
 }
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkfirewall-rulegroup-dimension-syntax.yaml"></a>
 
-```
+```yaml
   [Value](#cfn-networkfirewall-rulegroup-dimension-value): {{String}}
 ```
 

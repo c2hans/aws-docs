@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigateway-authorizer-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGateway::Authorizer",
   "Properties" : {
@@ -26,6 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[AuthType](#cfn-apigateway-authorizer-authtype)" : {{String}},
       "[IdentitySource](#cfn-apigateway-authorizer-identitysource)" : {{String}},
       "[IdentityValidationExpression](#cfn-apigateway-authorizer-identityvalidationexpression)" : {{String}},
+      "[JwtConfiguration](#cfn-apigateway-authorizer-jwtconfiguration)" : {{JwtConfiguration}},
       "[Name](#cfn-apigateway-authorizer-name)" : {{String}},
       "[ProviderARNs](#cfn-apigateway-authorizer-providerarns)" : {{[ String, ... ]}},
       "[RestApiId](#cfn-apigateway-authorizer-restapiid)" : {{String}},
@@ -37,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigateway-authorizer-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGateway::Authorizer
 Properties:
   [AuthorizerCredentials](#cfn-apigateway-authorizer-authorizercredentials): {{String}}
@@ -46,6 +47,8 @@ Properties:
   [AuthType](#cfn-apigateway-authorizer-authtype): {{String}}
   [IdentitySource](#cfn-apigateway-authorizer-identitysource): {{String}}
   [IdentityValidationExpression](#cfn-apigateway-authorizer-identityvalidationexpression): {{String}}
+  [JwtConfiguration](#cfn-apigateway-authorizer-jwtconfiguration): {{
+    JwtConfiguration}}
   [Name](#cfn-apigateway-authorizer-name): {{String}}
   [ProviderARNs](#cfn-apigateway-authorizer-providerarns): {{
     - String}}
@@ -90,6 +93,12 @@ The identity source for which authorization is requested. For a `TOKEN` or `COGN
 A validation expression for the incoming identity token. For `TOKEN` authorizers, this value is a regular expression. For `COGNITO_USER_POOLS` authorizers, API Gateway will match the `aud` field of the incoming token from the client against the specified regular expression. It will invoke the authorizer's Lambda function when there is a match. Otherwise, it will return a 401 Unauthorized response without calling the Lambda function. The validation expression does not apply to the `REQUEST` authorizer.
 *Required*: No
 *Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`JwtConfiguration`  <a name="cfn-apigateway-authorizer-jwtconfiguration"></a>
+Property description not available.
+*Required*: No
+*Type*: [JwtConfiguration](aws-properties-apigateway-authorizer-jwtconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Name`  <a name="cfn-apigateway-authorizer-name"></a>
@@ -150,7 +159,7 @@ The following examples create a custom authorizer that is an AWS Lambda function
 #### JSON
 <a name="aws-resource-apigateway-authorizer--examples--Create_authorizer--json"></a>
 
-```
+```json
 {
     "Authorizer": {
         "Type": "AWS::ApiGateway::Authorizer",
@@ -195,7 +204,7 @@ The following examples create a custom authorizer that is an AWS Lambda function
 #### YAML
 <a name="aws-resource-apigateway-authorizer--examples--Create_authorizer--yaml"></a>
 
-```
+```yaml
 Authorizer:
   Type: 'AWS::ApiGateway::Authorizer'
   Properties:

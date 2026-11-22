@@ -22,7 +22,7 @@ The role permissions policy allows CloudWatch Application Insights to complete t
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-routeroutput-flowtransitencryption-syntax.json"></a>
 
-```
+```json
 {
   "[EncryptionKeyConfiguration](#cfn-mediaconnect-routeroutput-flowtransitencryption-encryptionkeyconfiguration)" : {{FlowTransitEncryptionKeyConfiguration}},
   "[EncryptionKeyType](#cfn-mediaconnect-routeroutput-flowtransitencryption-encryptionkeytype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-routeroutput-flowtransitencryption-syntax.yaml"></a>
 
-```
+```yaml
   [EncryptionKeyConfiguration](#cfn-mediaconnect-routeroutput-flowtransitencryption-encryptionkeyconfiguration): {{
     FlowTransitEncryptionKeyConfiguration}}
   [EncryptionKeyType](#cfn-mediaconnect-routeroutput-flowtransitencryption-encryptionkeytype): {{String}}

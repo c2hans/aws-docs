@@ -8,13 +8,13 @@ Checks whether the Connect Customer instance has an AI Agent configured.
 
  **Signature**
 
-```
+```typescript
 isAIAgentSupported(): Promise<AIAgentSupportedResult>
 ```
 
  **Usage**
 
-```
+```typescript
 const result = await aiAgentsClient.isAIAgentSupported();
 console.log("AI Agent supported:", result.isSupported);
 
@@ -26,6 +26,6 @@ console.log("AI Agent supported:", result.isSupported);
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

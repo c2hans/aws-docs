@@ -33,7 +33,7 @@ Add the `--capacity-reservation-specification` parameter to the [create-auto-sca
 
 The following example creates an Auto Scaling group with a preference of `capacity-reservations-only` and a specific Capacity Reservation as the target.
 
-```
+```bash
 aws autoscaling create-auto-scaling-group \
     --auto-scaling-group-name {{my-asg}} \
     --launch-template LaunchTemplateName={{my-launch-template}} \
@@ -78,7 +78,7 @@ Add the `--capacity-reservation-specification` parameter to the [update-auto-sca
 
 The following example updates an Auto Scaling group to use a Capacity Reservation Resource Group as the target with a preference of `capacity-reservations-first`.
 
-```
+```bash
 aws autoscaling update-auto-scaling-group \
     --auto-scaling-group-name {{my-asg}} \
     --capacity-reservation-specification '{
@@ -107,7 +107,7 @@ In your launch template, set the following:
 
 The following example uses the [create-launch-template](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-launch-template.html) command to create a launch template that targets a Capacity Block. For an interruptible Capacity Reservation, replace the `MarketType` value with `interruptible-capacity-reservation`.
 
-```
+```bash
 aws ec2 create-launch-template \
     --launch-template-name {{my-cr-launch-template}} \
     --launch-template-data '{
@@ -133,7 +133,7 @@ Create an Auto Scaling group that uses the launch template. The Auto Scaling gro
 
 The following example creates an Auto Scaling group that uses the launch template created in the previous step.
 
-```
+```bash
 aws autoscaling create-auto-scaling-group \
     --auto-scaling-group-name {{my-cr-asg}} \
     --launch-template LaunchTemplateName={{my-cr-launch-template}} \

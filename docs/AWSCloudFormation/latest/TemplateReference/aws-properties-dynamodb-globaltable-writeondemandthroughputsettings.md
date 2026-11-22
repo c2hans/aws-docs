@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dynamodb-globaltable-writeondemandthroughputsettings-syntax.json"></a>
 
-```
+```json
 {
   "[MaxWriteRequestUnits](#cfn-dynamodb-globaltable-writeondemandthroughputsettings-maxwriterequestunits)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dynamodb-globaltable-writeondemandthroughputsettings-syntax.yaml"></a>
 
-```
+```yaml
   [MaxWriteRequestUnits](#cfn-dynamodb-globaltable-writeondemandthroughputsettings-maxwriterequestunits): {{Integer}}
 ```
 

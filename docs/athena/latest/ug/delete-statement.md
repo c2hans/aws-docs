@@ -11,7 +11,7 @@ Deletes rows in an Apache Iceberg table. `DELETE` is transactional and is suppor
 
 To delete the rows from an Iceberg table, use the following syntax.
 
-```
+```sql
 DELETE FROM [{{db_name}}.]{{table_name}} [WHERE {{predicate}}]
 ```
 

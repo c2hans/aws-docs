@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-medialive-input-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MediaLive::Input",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-medialive-input-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MediaLive::Input
 Properties:
   [Destinations](#cfn-medialive-input-destinations): {{
@@ -249,7 +249,7 @@ This example creates a standard (redundant) MediaLive input that uses MediaConne
 #### JSON
 <a name="aws-resource-medialive-input--examples--Create_a_MEDIACONNECT_ROUTER_input--json"></a>
 
-```
+```json
 {
   "Type": "AWS::MediaLive::Input",
   "Properties": {
@@ -273,7 +273,7 @@ This example creates a standard (redundant) MediaLive input that uses MediaConne
 #### YAML
 <a name="aws-resource-medialive-input--examples--Create_a_MEDIACONNECT_ROUTER_input--yaml"></a>
 
-```
+```yaml
 Type: AWS::MediaLive::Input
 Properties:
   Name: my-router-input

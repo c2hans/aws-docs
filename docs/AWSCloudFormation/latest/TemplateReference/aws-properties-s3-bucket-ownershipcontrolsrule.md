@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-ownershipcontrolsrule-syntax.json"></a>
 
-```
+```json
 {
   "[ObjectOwnership](#cfn-s3-bucket-ownershipcontrolsrule-objectownership)" : {{String}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-ownershipcontrolsrule-syntax.yaml"></a>
 
-```
+```yaml
   [ObjectOwnership](#cfn-s3-bucket-ownershipcontrolsrule-objectownership): {{String}}
 ```
 
@@ -56,7 +56,7 @@ The following examples show Object Ownership set to `BucketOwnerEnforced`.
 #### JSON
 <a name="aws-properties-s3-bucket-ownershipcontrolsrule--examples--Object_Ownership_-_BucketOwnerEnforced--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -79,7 +79,7 @@ The following examples show Object Ownership set to `BucketOwnerEnforced`.
 #### YAML
 <a name="aws-properties-s3-bucket-ownershipcontrolsrule--examples--Object_Ownership_-_BucketOwnerEnforced--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   S3Bucket:
@@ -98,7 +98,7 @@ The following examples show Object Ownership set to `BucketOwnerPreferred`.
 #### JSON
 <a name="aws-properties-s3-bucket-ownershipcontrolsrule--examples--Object_Ownership_-_BucketOwnerPreferred--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -121,7 +121,7 @@ The following examples show Object Ownership set to `BucketOwnerPreferred`.
 #### YAML
 <a name="aws-properties-s3-bucket-ownershipcontrolsrule--examples--Object_Ownership_-_BucketOwnerPreferred--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   S3Bucket:

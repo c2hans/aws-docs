@@ -134,7 +134,7 @@ For more information, see [Configure distributions](https://docs.aws.amazon.com/
 **Tools for PowerShell V4**
 **Example 1: Returns distributions.**
 
-```
+```powershell
 Get-CFDistributionList
 ```
 +  For API details, see [ListDistributions](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -142,7 +142,7 @@ Get-CFDistributionList
 **Tools for PowerShell V5**
 **Example 1: Returns distributions.**
 
-```
+```powershell
 Get-CFDistributionList
 ```
 +  For API details, see [ListDistributions](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -153,7 +153,7 @@ Get-CFDistributionList
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudfront#code-examples).
 
-```
+```python
 class CloudFrontWrapper:
     """Encapsulates Amazon CloudFront operations."""
 
@@ -190,7 +190,7 @@ class CloudFrontWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/fnt#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_fnt->listdistributions( ). " oo_result is returned for testing purposes. "
         MESSAGE 'Retrieved list of CloudFront distributions.' TYPE 'I'.

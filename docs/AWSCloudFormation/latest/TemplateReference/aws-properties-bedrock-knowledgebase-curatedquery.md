@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-knowledgebase-curatedquery-syntax.json"></a>
 
-```
+```json
 {
   "[NaturalLanguage](#cfn-bedrock-knowledgebase-curatedquery-naturallanguage)" : {{String}},
   "[Sql](#cfn-bedrock-knowledgebase-curatedquery-sql)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-knowledgebase-curatedquery-syntax.yaml"></a>
 
-```
+```yaml
   [NaturalLanguage](#cfn-bedrock-knowledgebase-curatedquery-naturallanguage): {{String}}
   [Sql](#cfn-bedrock-knowledgebase-curatedquery-sql): {{String}}
 ```

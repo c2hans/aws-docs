@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-cluster-certificateauthority-syntax.json"></a>
 
-```
+```json
 {
   "[Active](#cfn-eks-cluster-certificateauthority-active)" : {{ActiveCertificateAuthority}},
   "[Data](#cfn-eks-cluster-certificateauthority-data)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-cluster-certificateauthority-syntax.yaml"></a>
 
-```
+```yaml
   [Active](#cfn-eks-cluster-certificateauthority-active): {{
     ActiveCertificateAuthority}}
   [Data](#cfn-eks-cluster-certificateauthority-data): {{String}}

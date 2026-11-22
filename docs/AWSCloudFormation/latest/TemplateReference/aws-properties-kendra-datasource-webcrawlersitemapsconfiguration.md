@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-webcrawlersitemapsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[SiteMaps](#cfn-kendra-datasource-webcrawlersitemapsconfiguration-sitemaps)" : {{[ String, ... ]}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-webcrawlersitemapsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [SiteMaps](#cfn-kendra-datasource-webcrawlersitemapsconfiguration-sitemaps): {{
     - String}}
 ```

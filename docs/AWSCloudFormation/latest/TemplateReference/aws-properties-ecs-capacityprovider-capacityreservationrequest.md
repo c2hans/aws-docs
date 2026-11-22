@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-capacityprovider-capacityreservationrequest-syntax.json"></a>
 
-```
+```json
 {
   "[ReservationGroupArn](#cfn-ecs-capacityprovider-capacityreservationrequest-reservationgrouparn)" : {{String}},
   "[ReservationPreference](#cfn-ecs-capacityprovider-capacityreservationrequest-reservationpreference)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-capacityprovider-capacityreservationrequest-syntax.yaml"></a>
 
-```
+```yaml
   [ReservationGroupArn](#cfn-ecs-capacityprovider-capacityreservationrequest-reservationgrouparn): {{String}}
   [ReservationPreference](#cfn-ecs-capacityprovider-capacityreservationrequest-reservationpreference): {{String}}
 ```

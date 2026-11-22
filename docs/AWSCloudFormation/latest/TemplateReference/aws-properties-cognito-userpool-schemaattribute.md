@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpool-schemaattribute-syntax.json"></a>
 
-```
+```json
 {
   "[AttributeDataType](#cfn-cognito-userpool-schemaattribute-attributedatatype)" : {{String}},
   "[DeveloperOnlyAttribute](#cfn-cognito-userpool-schemaattribute-developeronlyattribute)" : {{Boolean}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpool-schemaattribute-syntax.yaml"></a>
 
-```
+```yaml
   [AttributeDataType](#cfn-cognito-userpool-schemaattribute-attributedatatype): {{String}}
   [DeveloperOnlyAttribute](#cfn-cognito-userpool-schemaattribute-developeronlyattribute): {{Boolean}}
   [Mutable](#cfn-cognito-userpool-schemaattribute-mutable): {{Boolean}}

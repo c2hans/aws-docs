@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-wellarchitected-profile-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::WellArchitected::Profile",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-wellarchitected-profile-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::WellArchitected::Profile
 Properties:
   [ProfileDescription](#cfn-wellarchitected-profile-profiledescription): {{String}}

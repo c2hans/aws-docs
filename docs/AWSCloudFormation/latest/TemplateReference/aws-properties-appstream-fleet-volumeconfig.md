@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appstream-fleet-volumeconfig-syntax.json"></a>
 
-```
+```json
 {
   "[VolumeSizeInGb](#cfn-appstream-fleet-volumeconfig-volumesizeingb)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appstream-fleet-volumeconfig-syntax.yaml"></a>
 
-```
+```yaml
   [VolumeSizeInGb](#cfn-appstream-fleet-volumeconfig-volumesizeingb): {{Integer}}
 ```
 

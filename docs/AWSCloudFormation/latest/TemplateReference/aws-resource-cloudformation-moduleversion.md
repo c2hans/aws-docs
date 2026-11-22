@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudformation-moduleversion-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudFormation::ModuleVersion",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudformation-moduleversion-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudFormation::ModuleVersion
 Properties:
   [ModuleName](#cfn-cloudformation-moduleversion-modulename): {{String}}
@@ -136,7 +136,7 @@ The following example registers a module version. If this is the only version of
 #### JSON
 <a name="aws-resource-cloudformation-moduleversion--examples--Registering_a_module_version--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -154,7 +154,7 @@ The following example registers a module version. If this is the only version of
 #### YAML
 <a name="aws-resource-cloudformation-moduleversion--examples--Registering_a_module_version--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   ModuleVersion:
@@ -174,7 +174,7 @@ The following example registers two versions of a module. Note the following:
 #### JSON
 <a name="aws-resource-cloudformation-moduleversion--examples--Registering_multiple_module_versions--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -200,7 +200,7 @@ The following example registers two versions of a module. Note the following:
 #### YAML
 <a name="aws-resource-cloudformation-moduleversion--examples--Registering_multiple_module_versions--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   ModuleVersion1:

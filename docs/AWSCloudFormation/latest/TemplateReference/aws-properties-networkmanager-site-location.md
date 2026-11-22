@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkmanager-site-location-syntax.json"></a>
 
-```
+```json
 {
   "[Address](#cfn-networkmanager-site-location-address)" : {{String}},
   "[Latitude](#cfn-networkmanager-site-location-latitude)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkmanager-site-location-syntax.yaml"></a>
 
-```
+```yaml
   [Address](#cfn-networkmanager-site-location-address): {{String}}
   [Latitude](#cfn-networkmanager-site-location-latitude): {{String}}
   [Longitude](#cfn-networkmanager-site-location-longitude): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-fontsize-syntax.json"></a>
 
-```
+```json
 {
   "[Absolute](#cfn-quicksight-analysis-fontsize-absolute)" : {{String}},
   "[Relative](#cfn-quicksight-analysis-fontsize-relative)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-fontsize-syntax.yaml"></a>
 
-```
+```yaml
   [Absolute](#cfn-quicksight-analysis-fontsize-absolute): {{String}}
   [Relative](#cfn-quicksight-analysis-fontsize-relative): {{String}}
 ```

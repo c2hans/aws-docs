@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apigatewayv2-routingrule-matchbasepaths-syntax.json"></a>
 
-```
+```json
 {
   "[AnyOf](#cfn-apigatewayv2-routingrule-matchbasepaths-anyof)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apigatewayv2-routingrule-matchbasepaths-syntax.yaml"></a>
 
-```
+```yaml
   [AnyOf](#cfn-apigatewayv2-routingrule-matchbasepaths-anyof): {{
     - String}}
 ```

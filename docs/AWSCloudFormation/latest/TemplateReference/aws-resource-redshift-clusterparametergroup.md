@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-redshift-clusterparametergroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Redshift::ClusterParameterGroup",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-redshift-clusterparametergroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Redshift::ClusterParameterGroup
 Properties:
   [Description](#cfn-redshift-clusterparametergroup-description): {{String}}
@@ -111,7 +111,7 @@ The following example describes a parameter group with one parameter that's spec
 #### JSON
 <a name="aws-resource-redshift-clusterparametergroup--examples--Single_Parameter--json"></a>
 
-```
+```json
 "myClusterParameterGroup" : {
   "Type" : "AWS::Redshift::ClusterParameterGroup",
   "Properties" : {
@@ -128,7 +128,7 @@ The following example describes a parameter group with one parameter that's spec
 #### YAML
 <a name="aws-resource-redshift-clusterparametergroup--examples--Single_Parameter--yaml"></a>
 
-```
+```yaml
 myClusterParameterGroup:
   Type: "AWS::Redshift::ClusterParameterGroup"
   Properties:
@@ -148,7 +148,7 @@ The following example modifies the workload management configuration using the `
 #### JSON
 <a name="aws-resource-redshift-clusterparametergroup--examples--Workload_Management_Configuration--json"></a>
 
-```
+```json
 "RedshiftClusterParameterGroup": {
   "Type": "AWS::Redshift::ClusterParameterGroup",
   "Properties": {
@@ -171,7 +171,7 @@ The following example modifies the workload management configuration using the `
 #### YAML
 <a name="aws-resource-redshift-clusterparametergroup--examples--Workload_Management_Configuration--yaml"></a>
 
-```
+```yaml
 RedshiftClusterParameterGroup:
   Type: "AWS::Redshift::ClusterParameterGroup"
   Properties:

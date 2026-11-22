@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-project-servicecatalogprovisionedproductdetails-syntax.json"></a>
 
-```
+```json
 {
   "[ProvisionedProductId](#cfn-sagemaker-project-servicecatalogprovisionedproductdetails-provisionedproductid)" : {{String}},
   "[ProvisionedProductStatusMessage](#cfn-sagemaker-project-servicecatalogprovisionedproductdetails-provisionedproductstatusmessage)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-project-servicecatalogprovisionedproductdetails-syntax.yaml"></a>
 
-```
+```yaml
   [ProvisionedProductId](#cfn-sagemaker-project-servicecatalogprovisionedproductdetails-provisionedproductid): {{String}}
   [ProvisionedProductStatusMessage](#cfn-sagemaker-project-servicecatalogprovisionedproductdetails-provisionedproductstatusmessage): {{String}}
 ```

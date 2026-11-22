@@ -25,7 +25,7 @@ This document was last published on July 7, 2021
 
 The following is an example of an Amazon MQ REST request (and its headers) which creates a new Amazon MQ for ActiveMQ broker:
 
-```
+```http
 POST /v1/brokers HTTP/1.1
 Content-Type: application/json
 X-Amz-Date: 20171123T214525Z
@@ -66,7 +66,7 @@ Cache-Control: no-cache
 
 The following is an example of an Amazon MQ REST request (and its headers) which creates a new Amazon MQ for RabbitMQ broker:
 
-```
+```http
 POST /v1/brokers HTTP/1.1
 Content-Type: application/json
 X-Amz-Date: 20171123T214525Z
@@ -105,7 +105,7 @@ Cache-Control: no-cache
 
 The following is an example of an Amazon MQ REST response (and its headers) which acknowledges the creation of the new broker:
 
-```
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 250

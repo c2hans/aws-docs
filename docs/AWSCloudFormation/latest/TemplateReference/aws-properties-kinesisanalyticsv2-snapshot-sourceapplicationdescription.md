@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisanalyticsv2-snapshot-sourceapplicationdescription-syntax.json"></a>
 
-```
+```json
 {
   "[ApplicationCreationTimestamp](#cfn-kinesisanalyticsv2-snapshot-sourceapplicationdescription-applicationcreationtimestamp)" : {{String}},
   "[ApplicationName](#cfn-kinesisanalyticsv2-snapshot-sourceapplicationdescription-applicationname)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisanalyticsv2-snapshot-sourceapplicationdescription-syntax.yaml"></a>
 
-```
+```yaml
   [ApplicationCreationTimestamp](#cfn-kinesisanalyticsv2-snapshot-sourceapplicationdescription-applicationcreationtimestamp): {{String}}
   [ApplicationName](#cfn-kinesisanalyticsv2-snapshot-sourceapplicationdescription-applicationname): {{String}}
   [ApplicationVersionId](#cfn-kinesisanalyticsv2-snapshot-sourceapplicationdescription-applicationversionid): {{Integer}}

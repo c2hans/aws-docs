@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-destination-syntax.json"></a>
 
-```
+```json
 {
   "[BucketAccountId](#cfn-s3-bucket-destination-bucketaccountid)" : {{String}},
   "[BucketArn](#cfn-s3-bucket-destination-bucketarn)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-destination-syntax.yaml"></a>
 
-```
+```yaml
   [BucketAccountId](#cfn-s3-bucket-destination-bucketaccountid): {{String}}
   [BucketArn](#cfn-s3-bucket-destination-bucketarn): {{String}}
   [Format](#cfn-s3-bucket-destination-format): {{String}}

@@ -65,7 +65,7 @@ When you create a JSON data protection policy to use in an AWS CLI command or AP
 
 The following is an example of a data protection policy that masks email addresses and United States driver's licenses.
 
-```
+```json
 {
     "Name": "data-protection-policy",
     "Description": "test description",

@@ -69,7 +69,7 @@ For more information about how some other AWS services are affected by this, con
 
 You might receive the following error when you attempt to assign or remove a virtual MFA device for yourself or others:
 
-```
+```yaml
 User: arn:aws:iam::123456789012:user/Diego is not authorized to perform: iam:DeleteVirtualMFADevice on resource: arn:aws:iam::123456789012:mfa/Diego with an explicit deny
 ```
 

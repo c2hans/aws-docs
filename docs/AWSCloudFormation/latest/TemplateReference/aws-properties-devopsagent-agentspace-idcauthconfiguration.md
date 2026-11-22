@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-agentspace-idcauthconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CreatedAt](#cfn-devopsagent-agentspace-idcauthconfiguration-createdat)" : {{String}},
   "[IdcApplicationArn](#cfn-devopsagent-agentspace-idcauthconfiguration-idcapplicationarn)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-agentspace-idcauthconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CreatedAt](#cfn-devopsagent-agentspace-idcauthconfiguration-createdat): {{String}}
   [IdcApplicationArn](#cfn-devopsagent-agentspace-idcauthconfiguration-idcapplicationarn): {{String}}
   [IdcInstanceArn](#cfn-devopsagent-agentspace-idcauthconfiguration-idcinstancearn): {{String}}

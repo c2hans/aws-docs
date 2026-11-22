@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-eventschemas-registry-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EventSchemas::Registry",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-eventschemas-registry-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EventSchemas::Registry
 Properties:
   [Description](#cfn-eventschemas-registry-description): {{String}}
@@ -101,7 +101,7 @@ The name of the registry.
 #### YAML
 <a name="aws-resource-eventschemas-registry--examples--Create_a_Schema_Registry_for_Events_Emitted_by_Step_Functions--yaml"></a>
 
-```
+```yaml
 Resources:
   StatesSchemasRegistry:
     Type: AWS::EventSchemas::Registry

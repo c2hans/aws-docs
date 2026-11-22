@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iotsitewise-dashboard-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoTSiteWise::Dashboard",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iotsitewise-dashboard-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoTSiteWise::Dashboard
 Properties:
   [DashboardDefinition](#cfn-iotsitewise-dashboard-dashboarddefinition): {{String}}

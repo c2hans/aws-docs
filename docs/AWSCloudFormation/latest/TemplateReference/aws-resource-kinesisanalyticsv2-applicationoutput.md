@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-kinesisanalyticsv2-applicationoutput-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::KinesisAnalyticsV2::ApplicationOutput",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-kinesisanalyticsv2-applicationoutput-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::KinesisAnalyticsV2::ApplicationOutput
 Properties:
   [ApplicationName](#cfn-kinesisanalyticsv2-applicationoutput-applicationname): {{String}}
@@ -77,7 +77,7 @@ The name of the application.
 #### JSON
 <a name="aws-resource-kinesisanalyticsv2-applicationoutput--examples--Create_an_ApplicationOutput_object--json"></a>
 
-```
+```json
 {
     "Type": "AWS::KinesisAnalyticsV2::ApplicationOutput",
     "Properties": {
@@ -105,7 +105,7 @@ The name of the application.
 #### YAML
 <a name="aws-resource-kinesisanalyticsv2-applicationoutput--examples--Create_an_ApplicationOutput_object--yaml"></a>
 
-```
+```yaml
 Type: AWS::KinesisAnalyticsV2::ApplicationOutput
 Properties:
   ApplicationName:

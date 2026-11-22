@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskdefinition-containerdefinition-syntax.json"></a>
 
-```
+```json
 {
   "[Command](#cfn-ecs-taskdefinition-containerdefinition-command)" : {{[ String, ... ]}},
   "[Cpu](#cfn-ecs-taskdefinition-containerdefinition-cpu)" : {{Integer}},
@@ -66,7 +66,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskdefinition-containerdefinition-syntax.yaml"></a>
 
-```
+```yaml
   [Command](#cfn-ecs-taskdefinition-containerdefinition-command): {{
     - String}}
   [Cpu](#cfn-ecs-taskdefinition-containerdefinition-cpu): {{Integer}}

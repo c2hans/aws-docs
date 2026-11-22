@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesis-channel-encryptionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EncryptionType](#cfn-kinesis-channel-encryptionconfiguration-encryptiontype)" : {{String}},
   "[KeyId](#cfn-kinesis-channel-encryptionconfiguration-keyid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesis-channel-encryptionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EncryptionType](#cfn-kinesis-channel-encryptionconfiguration-encryptiontype): {{String}}
   [KeyId](#cfn-kinesis-channel-encryptionconfiguration-keyid): {{String}}
 ```

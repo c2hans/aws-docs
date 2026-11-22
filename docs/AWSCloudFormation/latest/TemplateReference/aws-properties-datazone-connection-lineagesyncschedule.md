@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-connection-lineagesyncschedule-syntax.json"></a>
 
-```
+```json
 {
   "[Schedule](#cfn-datazone-connection-lineagesyncschedule-schedule)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-connection-lineagesyncschedule-syntax.yaml"></a>
 
-```
+```yaml
   [Schedule](#cfn-datazone-connection-lineagesyncschedule-schedule): {{String}}
 ```
 

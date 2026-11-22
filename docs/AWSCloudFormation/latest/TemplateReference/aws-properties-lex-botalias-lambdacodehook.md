@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-botalias-lambdacodehook-syntax.json"></a>
 
-```
+```json
 {
   "[CodeHookInterfaceVersion](#cfn-lex-botalias-lambdacodehook-codehookinterfaceversion)" : {{String}},
   "[LambdaArn](#cfn-lex-botalias-lambdacodehook-lambdaarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-botalias-lambdacodehook-syntax.yaml"></a>
 
-```
+```yaml
   [CodeHookInterfaceVersion](#cfn-lex-botalias-lambdacodehook-codehookinterfaceversion): {{String}}
   [LambdaArn](#cfn-lex-botalias-lambdacodehook-lambdaarn): {{String}}
 ```

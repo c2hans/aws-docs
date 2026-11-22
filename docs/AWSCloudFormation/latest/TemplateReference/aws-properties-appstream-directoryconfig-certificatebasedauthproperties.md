@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appstream-directoryconfig-certificatebasedauthproperties-syntax.json"></a>
 
-```
+```json
 {
   "[CertificateAuthorityArn](#cfn-appstream-directoryconfig-certificatebasedauthproperties-certificateauthorityarn)" : {{String}},
   "[Status](#cfn-appstream-directoryconfig-certificatebasedauthproperties-status)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appstream-directoryconfig-certificatebasedauthproperties-syntax.yaml"></a>
 
-```
+```yaml
   [CertificateAuthorityArn](#cfn-appstream-directoryconfig-certificatebasedauthproperties-certificateauthorityarn): {{String}}
   [Status](#cfn-appstream-directoryconfig-certificatebasedauthproperties-status): {{String}}
 ```

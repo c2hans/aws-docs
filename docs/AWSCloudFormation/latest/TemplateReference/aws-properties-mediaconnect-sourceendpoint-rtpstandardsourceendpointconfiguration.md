@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-sourceendpoint-rtpstandardsourceendpointconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationIngestPort](#cfn-mediaconnect-sourceendpoint-rtpstandardsourceendpointconfiguration-destinationingestport)" : {{Integer}},
   "[ForwardErrorCorrectionState](#cfn-mediaconnect-sourceendpoint-rtpstandardsourceendpointconfiguration-forwarderrorcorrectionstate)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-sourceendpoint-rtpstandardsourceendpointconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationIngestPort](#cfn-mediaconnect-sourceendpoint-rtpstandardsourceendpointconfiguration-destinationingestport): {{Integer}}
   [ForwardErrorCorrectionState](#cfn-mediaconnect-sourceendpoint-rtpstandardsourceendpointconfiguration-forwarderrorcorrectionstate): {{String}}
 ```

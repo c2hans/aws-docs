@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-securityprofile-behaviorcriteria-syntax.json"></a>
 
-```
+```json
 {
   "[ComparisonOperator](#cfn-iot-securityprofile-behaviorcriteria-comparisonoperator)" : {{String}},
   "[ConsecutiveDatapointsToAlarm](#cfn-iot-securityprofile-behaviorcriteria-consecutivedatapointstoalarm)" : {{Integer}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-securityprofile-behaviorcriteria-syntax.yaml"></a>
 
-```
+```yaml
   [ComparisonOperator](#cfn-iot-securityprofile-behaviorcriteria-comparisonoperator): {{String}}
   [ConsecutiveDatapointsToAlarm](#cfn-iot-securityprofile-behaviorcriteria-consecutivedatapointstoalarm): {{Integer}}
   [ConsecutiveDatapointsToClear](#cfn-iot-securityprofile-behaviorcriteria-consecutivedatapointstoclear): {{Integer}}

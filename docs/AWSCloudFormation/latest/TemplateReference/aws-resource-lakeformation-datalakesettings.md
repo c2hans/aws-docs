@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lakeformation-datalakesettings-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::LakeFormation::DataLakeSettings",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lakeformation-datalakesettings-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::LakeFormation::DataLakeSettings
 Properties:
   [Admins](#cfn-lakeformation-datalakesettings-admins): {{
@@ -167,7 +167,7 @@ In this example the value of `AllowExternalDataFiltering` is set to `false`. Whe
 #### JSON
 <a name="aws-resource-lakeformation-datalakesettings--examples--Input_format_for_DataLakeSettings_with_AllowExternalDataFiltering_set_to_false--json"></a>
 
-```
+```json
 {
   "Description": "DataLakeSettings_Example1",
   "Resources": {
@@ -205,7 +205,7 @@ In this example the value of `AllowExternalDataFiltering` is set to `false`. Whe
 #### YAML
 <a name="aws-resource-lakeformation-datalakesettings--examples--Input_format_for_DataLakeSettings_with_AllowExternalDataFiltering_set_to_false--yaml"></a>
 
-```
+```yaml
 Description: "DataLakeSettings_Example1"
 Resources:
   DataLakeSettings:
@@ -235,7 +235,7 @@ In this example, the `AllowExternalDataFiltering` property is set to true, and i
 #### JSON
 <a name="aws-resource-lakeformation-datalakesettings--examples--Input_format_for_DataLakeSettings_with_AllowExternalDataFiltering_set_to_true--json"></a>
 
-```
+```json
 {
   "Description": "DataLakeSettings_Example2",
   "Resources": {
@@ -298,7 +298,7 @@ In this example, the `AllowExternalDataFiltering` property is set to true, and i
 #### YAML
 <a name="aws-resource-lakeformation-datalakesettings--examples--Input_format_for_DataLakeSettings_with_AllowExternalDataFiltering_set_to_true--yaml"></a>
 
-```
+```yaml
 Description: "DataLakeSettings_Example2"
 Resources:
   DataLakeSettings:

@@ -64,7 +64,7 @@ The following examples show you how to use Amazon S3 Block Public Access with th
 **Note**
 `PutPublicAccessBlock` and `DeletePublicAccessBlock` operations will fail with an "Access Denied" error if the account is managed by organization-level policies.
 
-```
+```java
 AWSS3ControlClientBuilder controlClientBuilder = AWSS3ControlClientBuilder.standard();
 controlClientBuilder.setRegion({{<region>}});
 controlClientBuilder.setCredentials({{<credentials>}});

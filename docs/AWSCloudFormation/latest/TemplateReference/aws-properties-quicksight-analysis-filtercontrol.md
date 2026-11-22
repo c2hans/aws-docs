@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-filtercontrol-syntax.json"></a>
 
-```
+```json
 {
   "[CrossSheet](#cfn-quicksight-analysis-filtercontrol-crosssheet)" : {{FilterCrossSheetControl}},
   "[DateTimePicker](#cfn-quicksight-analysis-filtercontrol-datetimepicker)" : {{FilterDateTimePickerControl}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-filtercontrol-syntax.yaml"></a>
 
-```
+```yaml
   [CrossSheet](#cfn-quicksight-analysis-filtercontrol-crosssheet): {{
     FilterCrossSheetControl}}
   [DateTimePicker](#cfn-quicksight-analysis-filtercontrol-datetimepicker): {{

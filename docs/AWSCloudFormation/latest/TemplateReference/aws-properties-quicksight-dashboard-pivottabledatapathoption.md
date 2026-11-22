@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-pivottabledatapathoption-syntax.json"></a>
 
-```
+```json
 {
   "[DataPathList](#cfn-quicksight-dashboard-pivottabledatapathoption-datapathlist)" : {{[ DataPathValue, ... ]}},
   "[Width](#cfn-quicksight-dashboard-pivottabledatapathoption-width)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-pivottabledatapathoption-syntax.yaml"></a>
 
-```
+```yaml
   [DataPathList](#cfn-quicksight-dashboard-pivottabledatapathoption-datapathlist): {{
     - DataPathValue}}
   [Width](#cfn-quicksight-dashboard-pivottabledatapathoption-width): {{String}}

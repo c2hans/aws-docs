@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-image-deletionsettings-syntax.json"></a>
 
-```
+```json
 {
   "[ExecutionRole](#cfn-imagebuilder-image-deletionsettings-executionrole)" : {{String}}
 }
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-image-deletionsettings-syntax.yaml"></a>
 
-```
+```yaml
   [ExecutionRole](#cfn-imagebuilder-image-deletionsettings-executionrole): {{String}}
 ```
 

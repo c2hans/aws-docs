@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-domainconfiguration-servercertificateconfig-syntax.json"></a>
 
-```
+```json
 {
   "[EnableOCSPCheck](#cfn-iot-domainconfiguration-servercertificateconfig-enableocspcheck)" : {{Boolean}},
   "[OcspAuthorizedResponderArn](#cfn-iot-domainconfiguration-servercertificateconfig-ocspauthorizedresponderarn)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-domainconfiguration-servercertificateconfig-syntax.yaml"></a>
 
-```
+```yaml
   [EnableOCSPCheck](#cfn-iot-domainconfiguration-servercertificateconfig-enableocspcheck): {{Boolean}}
   [OcspAuthorizedResponderArn](#cfn-iot-domainconfiguration-servercertificateconfig-ocspauthorizedresponderarn): {{String}}
   [OcspLambdaArn](#cfn-iot-domainconfiguration-servercertificateconfig-ocsplambdaarn): {{String}}

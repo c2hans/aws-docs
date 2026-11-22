@@ -13,7 +13,7 @@ This policy will not work when using IAM roles because the `aws:username` variab
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

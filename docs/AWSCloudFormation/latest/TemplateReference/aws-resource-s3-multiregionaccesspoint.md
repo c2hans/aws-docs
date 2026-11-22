@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-s3-multiregionaccesspoint-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::S3::MultiRegionAccessPoint",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-s3-multiregionaccesspoint-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::S3::MultiRegionAccessPoint
 Properties:
   [Name](#cfn-s3-multiregionaccesspoint-name): {{String}}
@@ -104,7 +104,7 @@ The following template can be used to create a Multi-Region Access Point (with t
 #### JSON
 <a name="aws-resource-s3-multiregionaccesspoint--examples--Multi-Region_Access_Point_with_two_Regions--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -127,7 +127,7 @@ The following template can be used to create a Multi-Region Access Point (with t
 #### YAML
 <a name="aws-resource-s3-multiregionaccesspoint--examples--Multi-Region_Access_Point_with_two_Regions--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Resources:
   DOC-EXAMPLE-MULTI-REGION-ACCESS-POINT:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-networkinsightsanalysis-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::NetworkInsightsAnalysis",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-networkinsightsanalysis-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::NetworkInsightsAnalysis
 Properties:
   [AdditionalAccounts](#cfn-ec2-networkinsightsanalysis-additionalaccounts): {{

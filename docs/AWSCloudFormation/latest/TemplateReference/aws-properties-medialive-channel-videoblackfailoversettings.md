@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-videoblackfailoversettings-syntax.json"></a>
 
-```
+```json
 {
   "[BlackDetectThreshold](#cfn-medialive-channel-videoblackfailoversettings-blackdetectthreshold)" : {{Number}},
   "[VideoBlackThresholdMsec](#cfn-medialive-channel-videoblackfailoversettings-videoblackthresholdmsec)" : {{Integer}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-videoblackfailoversettings-syntax.yaml"></a>
 
-```
+```yaml
   [BlackDetectThreshold](#cfn-medialive-channel-videoblackfailoversettings-blackdetectthreshold): {{Number}}
   [VideoBlackThresholdMsec](#cfn-medialive-channel-videoblackfailoversettings-videoblackthresholdmsec): {{Integer}}
 ```

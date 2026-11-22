@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iam-rolepolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IAM::RolePolicy",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iam-rolepolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IAM::RolePolicy
 Properties:
   [PolicyDocument](#cfn-iam-rolepolicy-policydocument): {{Json}}
@@ -106,7 +106,7 @@ This example shows an inline policy document in `AWS::IAM::RolePolicy`. The poli
 #### JSON
 <a name="aws-resource-iam-rolepolicy--examples--Role_embedded_inline_policy_document--json"></a>
 
-```
+```json
 {
     "Type": "AWS::IAM::RolePolicy",
     "Properties": {
@@ -129,7 +129,7 @@ This example shows an inline policy document in `AWS::IAM::RolePolicy`. The poli
 #### YAML
 <a name="aws-resource-iam-rolepolicy--examples--Role_embedded_inline_policy_document--yaml"></a>
 
-```
+```yaml
 Type: 'AWS::IAM::RolePolicy'
 Properties:
   PolicyName: root
@@ -150,7 +150,7 @@ This example shows an inline policy document in `AWS::IAM::RolePolicy`. The exam
 #### JSON
 <a name="aws-resource-iam-rolepolicy--examples--Role_embedded_inline_policy_document_with_Ref_function--json"></a>
 
-```
+```json
 {
     "Type": "AWS::IAM::RolePolicy",
     "Properties": {
@@ -175,7 +175,7 @@ This example shows an inline policy document in `AWS::IAM::RolePolicy`. The exam
 #### YAML
 <a name="aws-resource-iam-rolepolicy--examples--Role_embedded_inline_policy_document_with_Ref_function--yaml"></a>
 
-```
+```yaml
 Type: 'AWS::IAM::RolePolicy'
 Properties:
   PolicyName: root

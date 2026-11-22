@@ -15,6 +15,8 @@ AWS offers several ways to issue and manage X.509 certificates. Choose the optio
 | Deployment | Bound to AWS integrated services, or exported for use anywhere | Installed on your systems by the ACME client | You install the certificate on your systems |
 | Automation | AWS SDK and CLI | Industry-standard ACME clients (Certbot, cert-manager, acme.sh) | AWS SDK and CLI |
 
+To issue certificates for mutual TLS authentication between workloads, see [Amazon N2 certificates](acm-amazon-n2-certificates.md).
+
 **AWS Certificate Manager (ACM)**
 Use ACM when you need certificates for AWS integrated services such as Elastic Load Balancing, Amazon CloudFront, and Amazon API Gateway, or when you want AWS to manage the certificate lifecycle including renewal. ACM generates and manages the private key and automates renewal. For workloads outside of AWS integrated services, ACM also supports exportable certificates that let you retrieve the private key and use the certificate on your own infrastructure. ACM can issue public certificates from Amazon Trust Services or private certificates when integrated with AWS Private CA.
 

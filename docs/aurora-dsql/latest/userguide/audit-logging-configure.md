@@ -50,13 +50,13 @@ To set an audit setting for all database roles, use `ALTER SYSTEM`. The setting 
 
 The following SQL example audits DDL statements, role and privilege changes, and writes for all roles:
 
-```
+```sql
 ALTER SYSTEM SET dsql_audit.log = 'ddl,role,write';
 ```
 
 To remove a cluster-wide setting, reset it, as in the following SQL example:
 
-```
+```sql
 ALTER SYSTEM RESET dsql_audit.log;
 ```
 
@@ -67,7 +67,7 @@ To set an audit setting for a specific database role, use the `sys.set_audit_con
 
 The following SQL example audits DDL statements, role and privilege changes, and writes of the {{app\_user}} role. It also records the bound parameter values and the row counts of the role's statements:
 
-```
+```sql
 SELECT sys.set_audit_config('{{app_user}}', 'dsql_audit.log', 'ddl,role,write');
 SELECT sys.set_audit_config('{{app_user}}', 'dsql_audit.log_parameter', 'on');
 SELECT sys.set_audit_config('{{app_user}}', 'dsql_audit.log_rows', 'on');
@@ -75,7 +75,7 @@ SELECT sys.set_audit_config('{{app_user}}', 'dsql_audit.log_rows', 'on');
 
 To return a setting of a role to its default value, use the `sys.reset_audit_config` function. The following SQL example resets the `dsql_audit.log` setting of the {{app\_user}} role:
 
-```
+```sql
 SELECT sys.reset_audit_config('{{app_user}}', 'dsql_audit.log');
 ```
 
@@ -84,19 +84,19 @@ SELECT sys.reset_audit_config('{{app_user}}', 'dsql_audit.log');
 
 A cluster-wide baseline applies to every database role, including roles that run frequent, routine statements, such as monitoring or health-check roles. To reduce the volume of audit records, exclude these roles from auditing. To exclude a role, set its `dsql_audit.log` setting to `none`. The following SQL example excludes the {{monitor\_user}} role:
 
-```
+```sql
 SELECT sys.set_audit_config('{{monitor_user}}', 'dsql_audit.log', 'none');
 ```
 
 To exclude only some classes of statements, set the classes to audit for the role. The role's value replaces the baseline, so include every class that you want to audit. The following SQL example audits all statements of the {{reporting\_user}} role except reads:
 
-```
+```sql
 SELECT sys.set_audit_config('{{reporting_user}}', 'dsql_audit.log', 'all,-read');
 ```
 
 To audit the role with the cluster-wide baseline again, reset its setting, as in the following SQL example:
 
-```
+```sql
 SELECT sys.reset_audit_config('{{monitor_user}}', 'dsql_audit.log');
 ```
 
@@ -115,14 +115,14 @@ The following details describe how Aurora DSQL applies audit settings to the sta
 **Settings of your connection**
 To see the audit settings that apply to your current connection, run `SHOW`:
 
-```
+```sql
 SHOW dsql_audit.log;
 ```
 
 **Settings of specific roles**
 To see the audit settings that you set for specific roles, query the `pg_db_role_setting` catalog:
 
-```
+```sql
 SELECT r.rolname, s.setconfig
 FROM pg_db_role_setting s
 JOIN pg_roles r ON r.oid = s.setrole;

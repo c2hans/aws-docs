@@ -13,7 +13,7 @@ The `DeleteItem` request enables you to delete an item in a DynamoDB table. The 
 
 The `DeleteItem` request has the following structure:
 
-```
+```TypeScript
 type DynamoDBDeleteItemRequest = {
   operation: 'DeleteItem';
   key: { [key: string]: any };

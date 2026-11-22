@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codebuild-project-registrycredential-syntax.json"></a>
 
-```
+```json
 {
   "[Credential](#cfn-codebuild-project-registrycredential-credential)" : {{String}},
   "[CredentialProvider](#cfn-codebuild-project-registrycredential-credentialprovider)" : {{String}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codebuild-project-registrycredential-syntax.yaml"></a>
 
-```
+```yaml
   [Credential](#cfn-codebuild-project-registrycredential-credential): {{String}}
   [CredentialProvider](#cfn-codebuild-project-registrycredential-credentialprovider): {{String}}
 ```

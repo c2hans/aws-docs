@@ -68,7 +68,7 @@ The following policy grants permissions to view the account status, and to allow
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -111,13 +111,13 @@ For more information, see [Creating IAM policies](https://docs.aws.amazon.com/IA
 **To view account access to the serial console**
 Use the [get-serial-console-access-status](https://docs.aws.amazon.com/cli/latest/reference/ec2/get-serial-console-access-status.html) command.
 
-```
+```bash
 aws ec2 get-serial-console-access-status
 ```
 
 The following is example output. A value of `true` indicates that the account is allowed access to the serial console.
 
-```
+```json
 {
     "SerialConsoleAccessEnabled": true,
     "ManagedBy": "account"
@@ -132,13 +132,13 @@ The `ManagedBy` field indicates the entity that configured the setting. The poss
 **To view account access to the serial console**
 Use the [Get-EC2SerialConsoleAccessStatus](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2SerialConsoleAccessStatus.html) cmdlet.
 
-```
+```powershell
 Get-EC2SerialConsoleAccessStatus -Select *
 ```
 
 The following is example output. A value of `True` indicates that the account is allowed access to the serial console.
 
-```
+```bash
 ManagedBy SerialConsoleAccessEnabled
 --------- --------------------------
 account   True
@@ -174,13 +174,13 @@ The `ManagedBy` field indicates the entity that configured the setting. The poss
 **To grant account access to the serial console**
 Use the [enable-serial-console-access](https://docs.aws.amazon.com/cli/latest/reference/ec2/enable-serial-console-access.html) command.
 
-```
+```bash
 aws ec2 enable-serial-console-access
 ```
 
 The following is example output.
 
-```
+```json
 {
     "SerialConsoleAccessEnabled": true
 }
@@ -192,13 +192,13 @@ The following is example output.
 **To grant account access to the serial console**
 Use the [Enable-EC2SerialConsoleAccess](https://docs.aws.amazon.com/powershell/latest/reference/items/Enable-EC2SerialConsoleAccess.html) cmdlet.
 
-```
+```powershell
 Enable-EC2SerialConsoleAccess
 ```
 
 The following is example output.
 
-```
+```bash
 True
 ```
 
@@ -230,13 +230,13 @@ True
 **To deny account access to the serial console**
 Use the [disable-serial-console-access](https://docs.aws.amazon.com/cli/latest/reference/ec2/disable-serial-console-access.html) command.
 
-```
+```bash
 aws ec2 disable-serial-console-access
 ```
 
 The following is example output.
 
-```
+```json
 {
     "SerialConsoleAccessEnabled": false
 }
@@ -248,13 +248,13 @@ The following is example output.
 **To deny account access to the serial console**
 Use the [Disable-EC2SerialConsoleAccess](https://docs.aws.amazon.com/powershell/latest/reference/items/Disable-EC2SerialConsoleAccess.html) cmdlet.
 
-```
+```powershell
 Disable-EC2SerialConsoleAccess
 ```
 
 The following is example output.
 
-```
+```bash
 False
 ```
 
@@ -286,7 +286,7 @@ Note that the `DescribeInstances`, `DescribeInstanceTypes`, and `GetSerialConsol
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -324,7 +324,7 @@ The following IAM policy allows access to the serial console of all instances, d
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -369,7 +369,7 @@ Note that the `DescribeInstances`, `DescribeInstanceTypes`, and `GetSerialConsol
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -420,13 +420,13 @@ By default, AMIs provided by AWS are not configured with a password-based user. 
 
 1. To set the password for a user, use the **passwd** command. In the following example, the user is `root`.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo passwd root
    ```
 
    The following is example output.
 
-   ```
+   ```bash
    Changing password for user root.
    New password:
    ```

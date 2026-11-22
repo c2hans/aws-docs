@@ -19,7 +19,7 @@ To connect your data source connector to Amazon Q, you must give Amazon Q an IAM
 + Permission to access the SSL certificate stored in your Amazon S3 bucket.
 + **(Optional)** If you're using Amazon VPC, permission to access your Amazon VPC.
 
-```
+```json
 {
     "Version": "2012-10-17",		 	 	 ,
     "Statement": [{
@@ -169,7 +169,7 @@ To connect your data source connector to Amazon Q, you must give Amazon Q an IAM
 
 **To allow Amazon Q to assume a role, you must also use the following trust policy:**
 
-```
+```json
 {
   "Version": "2012-10-17",		 	 	 ,
   "Statement": [

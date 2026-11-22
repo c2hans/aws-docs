@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ivschat-loggingconfiguration-cloudwatchlogsdestinationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[LogGroupName](#cfn-ivschat-loggingconfiguration-cloudwatchlogsdestinationconfiguration-loggroupname)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ivschat-loggingconfiguration-cloudwatchlogsdestinationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [LogGroupName](#cfn-ivschat-loggingconfiguration-cloudwatchlogsdestinationconfiguration-loggroupname): {{String}}
 ```
 

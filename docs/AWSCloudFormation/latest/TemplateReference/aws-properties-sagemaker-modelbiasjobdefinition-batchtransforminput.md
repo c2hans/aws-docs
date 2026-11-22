@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelbiasjobdefinition-batchtransforminput-syntax.json"></a>
 
-```
+```json
 {
   "[DataCapturedDestinationS3Uri](#cfn-sagemaker-modelbiasjobdefinition-batchtransforminput-datacaptureddestinations3uri)" : {{String}},
   "[DatasetFormat](#cfn-sagemaker-modelbiasjobdefinition-batchtransforminput-datasetformat)" : {{DatasetFormat}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelbiasjobdefinition-batchtransforminput-syntax.yaml"></a>
 
-```
+```yaml
   [DataCapturedDestinationS3Uri](#cfn-sagemaker-modelbiasjobdefinition-batchtransforminput-datacaptureddestinations3uri): {{String}}
   [DatasetFormat](#cfn-sagemaker-modelbiasjobdefinition-batchtransforminput-datasetformat): {{
     DatasetFormat}}

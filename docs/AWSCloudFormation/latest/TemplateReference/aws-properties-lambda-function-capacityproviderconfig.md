@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-function-capacityproviderconfig-syntax.json"></a>
 
-```
+```json
 {
   "[LambdaManagedInstancesCapacityProviderConfig](#cfn-lambda-function-capacityproviderconfig-lambdamanagedinstancescapacityproviderconfig)" : {{LambdaManagedInstancesCapacityProviderConfig}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-function-capacityproviderconfig-syntax.yaml"></a>
 
-```
+```yaml
   [LambdaManagedInstancesCapacityProviderConfig](#cfn-lambda-function-capacityproviderconfig-lambdamanagedinstancescapacityproviderconfig): {{
     LambdaManagedInstancesCapacityProviderConfig}}
 ```

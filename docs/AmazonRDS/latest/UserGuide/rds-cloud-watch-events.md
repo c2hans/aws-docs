@@ -17,7 +17,7 @@ You can write simple rules to indicate which Amazon RDS events interest you and 
 
 **To create a rule that triggers on an RDS event:**
 
-1. Open the CloudWatch console at [https://console.aws.amazon.com/cloudwatch/](https://console.aws.amazon.com/cloudwatch/).
+1. Open the Amazon EventBridge console at [https://console.aws.amazon.com/events/](https://console.aws.amazon.com/events/).
 
 1. Under **Events** in the navigation pane, choose **Rules**.
 

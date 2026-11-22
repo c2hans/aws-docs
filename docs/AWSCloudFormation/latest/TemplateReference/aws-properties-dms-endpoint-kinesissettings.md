@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dms-endpoint-kinesissettings-syntax.json"></a>
 
-```
+```json
 {
   "[IncludeControlDetails](#cfn-dms-endpoint-kinesissettings-includecontroldetails)" : {{Boolean}},
   "[IncludeNullAndEmpty](#cfn-dms-endpoint-kinesissettings-includenullandempty)" : {{Boolean}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dms-endpoint-kinesissettings-syntax.yaml"></a>
 
-```
+```yaml
   [IncludeControlDetails](#cfn-dms-endpoint-kinesissettings-includecontroldetails): {{Boolean}}
   [IncludeNullAndEmpty](#cfn-dms-endpoint-kinesissettings-includenullandempty): {{Boolean}}
   [IncludePartitionValue](#cfn-dms-endpoint-kinesissettings-includepartitionvalue): {{Boolean}}

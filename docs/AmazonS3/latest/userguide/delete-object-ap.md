@@ -34,7 +34,7 @@ The following `delete-object` example command shows how you can use the AWS CLI 
 
 The following command deletes the existing object `puppy.jpg` using access point {{my-access-point}}.
 
-```
+```bash
 aws s3api delete-object --bucket arn:aws:s3:{{AWS Region}}:111122223333:accesspoint/{{my-access-point}} --key {{puppy.jpg}}
 ```
 

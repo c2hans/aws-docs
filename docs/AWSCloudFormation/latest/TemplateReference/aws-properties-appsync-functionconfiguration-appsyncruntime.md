@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appsync-functionconfiguration-appsyncruntime-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-appsync-functionconfiguration-appsyncruntime-name)" : {{String}},
   "[RuntimeVersion](#cfn-appsync-functionconfiguration-appsyncruntime-runtimeversion)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appsync-functionconfiguration-appsyncruntime-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-appsync-functionconfiguration-appsyncruntime-name): {{String}}
   [RuntimeVersion](#cfn-appsync-functionconfiguration-appsyncruntime-runtimeversion): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanroomsml-trainingdataset-gluedatasource-syntax.json"></a>
 
-```
+```json
 {
   "[CatalogId](#cfn-cleanroomsml-trainingdataset-gluedatasource-catalogid)" : {{String}},
   "[DatabaseName](#cfn-cleanroomsml-trainingdataset-gluedatasource-databasename)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanroomsml-trainingdataset-gluedatasource-syntax.yaml"></a>
 
-```
+```yaml
   [CatalogId](#cfn-cleanroomsml-trainingdataset-gluedatasource-catalogid): {{String}}
   [DatabaseName](#cfn-cleanroomsml-trainingdataset-gluedatasource-databasename): {{String}}
   [TableName](#cfn-cleanroomsml-trainingdataset-gluedatasource-tablename): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-redshiftserverless-workgroup-workgroup-syntax.json"></a>
 
-```
+```json
 {
   "[BaseCapacity](#cfn-redshiftserverless-workgroup-workgroup-basecapacity)" : {{Integer}},
   "[ConfigParameters](#cfn-redshiftserverless-workgroup-workgroup-configparameters)" : {{[ ConfigParameter, ... ]}},
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-redshiftserverless-workgroup-workgroup-syntax.yaml"></a>
 
-```
+```yaml
   [BaseCapacity](#cfn-redshiftserverless-workgroup-workgroup-basecapacity): {{Integer}}
   [ConfigParameters](#cfn-redshiftserverless-workgroup-workgroup-configparameters): {{
     - ConfigParameter}}

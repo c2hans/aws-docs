@@ -34,6 +34,6 @@ contains( {{path}}, {{substring}} )
 ## Examples
 <a name="ql-functions.contains.examples"></a>
 
-```
+```sql
 SELECT * FROM "Orders" WHERE "OrderID"=1 AND contains("Address", 'Kirkland')
 ```

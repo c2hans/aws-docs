@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrserverless-application-workertypespecificationinput-syntax.json"></a>
 
-```
+```json
 {
   "[ImageConfiguration](#cfn-emrserverless-application-workertypespecificationinput-imageconfiguration)" : {{ImageConfigurationInput}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrserverless-application-workertypespecificationinput-syntax.yaml"></a>
 
-```
+```yaml
   [ImageConfiguration](#cfn-emrserverless-application-workertypespecificationinput-imageconfiguration): {{
     ImageConfigurationInput}}
 ```

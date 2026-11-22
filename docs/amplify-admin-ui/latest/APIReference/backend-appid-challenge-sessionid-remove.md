@@ -65,7 +65,7 @@ Enables CORS by returning the correct headers.
 #### DeleteTokenRespObj schema
 <a name="backend-appid-challenge-sessionid-remove-response-body-deletetokenrespobj-example"></a>
 
-```
+```json
 {
   "isSuccess": boolean
 }
@@ -74,7 +74,7 @@ Enables CORS by returning the correct headers.
 #### BadRequestException schema
 <a name="backend-appid-challenge-sessionid-remove-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -83,7 +83,7 @@ Enables CORS by returning the correct headers.
 #### NotFoundException schema
 <a name="backend-appid-challenge-sessionid-remove-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -93,7 +93,7 @@ Enables CORS by returning the correct headers.
 #### LimitExceededException schema
 <a name="backend-appid-challenge-sessionid-remove-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"
@@ -103,7 +103,7 @@ Enables CORS by returning the correct headers.
 #### InternalServiceException schema
 <a name="backend-appid-challenge-sessionid-remove-response-body-internalserviceexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

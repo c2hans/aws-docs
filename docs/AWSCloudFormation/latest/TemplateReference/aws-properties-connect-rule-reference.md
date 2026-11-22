@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-rule-reference-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-connect-rule-reference-type)" : {{String}},
   "[Value](#cfn-connect-rule-reference-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-rule-reference-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-connect-rule-reference-type): {{String}}
   [Value](#cfn-connect-rule-reference-value): {{String}}
 ```

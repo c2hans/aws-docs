@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-personalize-solution-hporesourceconfig-syntax.json"></a>
 
-```
+```json
 {
   "[MaxNumberOfTrainingJobs](#cfn-personalize-solution-hporesourceconfig-maxnumberoftrainingjobs)" : {{String}},
   "[MaxParallelTrainingJobs](#cfn-personalize-solution-hporesourceconfig-maxparalleltrainingjobs)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-personalize-solution-hporesourceconfig-syntax.yaml"></a>
 
-```
+```yaml
   [MaxNumberOfTrainingJobs](#cfn-personalize-solution-hporesourceconfig-maxnumberoftrainingjobs): {{String}}
   [MaxParallelTrainingJobs](#cfn-personalize-solution-hporesourceconfig-maxparalleltrainingjobs): {{String}}
 ```

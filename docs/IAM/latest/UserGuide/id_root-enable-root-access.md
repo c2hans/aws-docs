@@ -85,7 +85,7 @@ If you see **Root access management is disabled**, enable trusted access for AWS
 
    The following example assigns account 111111111111 as the delegated administrator for the IAM service.
 
-   ```
+   ```bash
    aws organizations register-delegated-administrator
    --service-principal iam.amazonaws.com
    --account-id {{111111111111}}

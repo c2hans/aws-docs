@@ -45,7 +45,7 @@ Gets a model template.
 #### Template schema
 <a name="apis-apiid-models-modelid-template-response-body-template-example"></a>
 
-```
+```json
 {
   "value": "string"
 }
@@ -54,7 +54,7 @@ Gets a model template.
 #### NotFoundException schema
 <a name="apis-apiid-models-modelid-template-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -64,7 +64,7 @@ Gets a model template.
 #### LimitExceededException schema
 <a name="apis-apiid-models-modelid-template-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

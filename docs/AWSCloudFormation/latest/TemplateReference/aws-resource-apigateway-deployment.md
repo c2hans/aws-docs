@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigateway-deployment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGateway::Deployment",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigateway-deployment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGateway::Deployment
 Properties:
   [DeploymentCanarySettings](#cfn-apigateway-deployment-deploymentcanarysettings): {{
@@ -117,7 +117,7 @@ The following example deploys the `MyApi` API to a stage named `DummyStage`.
 #### JSON
 <a name="aws-resource-apigateway-deployment--examples--Deployment_with_an_empty_embedded_stage--json"></a>
 
-```
+```json
 {
     "Deployment": {
         "Type": "AWS::ApiGateway::Deployment",
@@ -135,7 +135,7 @@ The following example deploys the `MyApi` API to a stage named `DummyStage`.
 #### YAML
 <a name="aws-resource-apigateway-deployment--examples--Deployment_with_an_empty_embedded_stage--yaml"></a>
 
-```
+```yaml
 Deployment:
   Type: 'AWS::ApiGateway::Deployment'
   Properties:
@@ -152,7 +152,7 @@ If you create an [AWS::ApiGateway::RestApi](https://docs.aws.amazon.com/AWSCloud
 #### JSON
 <a name="aws-resource-apigateway-deployment--examples--AWS::ApiGateway::Method_Dependency--json"></a>
 
-```
+```json
 {
     "Deployment": {
         "DependsOn": "MyMethod",
@@ -171,7 +171,7 @@ If you create an [AWS::ApiGateway::RestApi](https://docs.aws.amazon.com/AWSCloud
 #### YAML
 <a name="aws-resource-apigateway-deployment--examples--AWS::ApiGateway::Method_Dependency--yaml"></a>
 
-```
+```yaml
 Deployment:
   DependsOn: MyMethod
   Type: 'AWS::ApiGateway::Deployment'

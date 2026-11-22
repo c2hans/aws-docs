@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-invoicing-procurementportalpreference-contact-syntax.json"></a>
 
-```
+```json
 {
   "[Email](#cfn-invoicing-procurementportalpreference-contact-email)" : {{String}},
   "[Name](#cfn-invoicing-procurementportalpreference-contact-name)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-invoicing-procurementportalpreference-contact-syntax.yaml"></a>
 
-```
+```yaml
   [Email](#cfn-invoicing-procurementportalpreference-contact-email): {{String}}
   [Name](#cfn-invoicing-procurementportalpreference-contact-name): {{String}}
 ```

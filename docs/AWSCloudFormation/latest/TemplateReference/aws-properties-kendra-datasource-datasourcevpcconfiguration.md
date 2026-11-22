@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-datasourcevpcconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[SecurityGroupIds](#cfn-kendra-datasource-datasourcevpcconfiguration-securitygroupids)" : {{[ String, ... ]}},
   "[SubnetIds](#cfn-kendra-datasource-datasourcevpcconfiguration-subnetids)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-datasourcevpcconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [SecurityGroupIds](#cfn-kendra-datasource-datasourcevpcconfiguration-securitygroupids): {{
     - String}}
   [SubnetIds](#cfn-kendra-datasource-datasourcevpcconfiguration-subnetids): {{

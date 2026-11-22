@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dms-dataprovider-redshiftsettings-syntax.json"></a>
 
-```
+```json
 {
   "[DatabaseName](#cfn-dms-dataprovider-redshiftsettings-databasename)" : {{String}},
   "[Port](#cfn-dms-dataprovider-redshiftsettings-port)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dms-dataprovider-redshiftsettings-syntax.yaml"></a>
 
-```
+```yaml
   [DatabaseName](#cfn-dms-dataprovider-redshiftsettings-databasename): {{String}}
   [Port](#cfn-dms-dataprovider-redshiftsettings-port): {{Integer}}
   [ServerName](#cfn-dms-dataprovider-redshiftsettings-servername): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-contentassociation-amazonconnectguideassociationdata-syntax.json"></a>
 
-```
+```json
 {
   "[FlowId](#cfn-wisdom-contentassociation-amazonconnectguideassociationdata-flowid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-contentassociation-amazonconnectguideassociationdata-syntax.yaml"></a>
 
-```
+```yaml
   [FlowId](#cfn-wisdom-contentassociation-amazonconnectguideassociationdata-flowid): {{String}}
 ```
 

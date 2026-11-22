@@ -14,7 +14,7 @@ To specify a workgroup to use, you must have permissions to the workgroup.
    + If you are using the Athena console, set the workgroup by [switching workgroups](switching-workgroups.md).
    + If you are using the Athena API operations, specify the workgroup name in the API action. For example, you can set the workgroup name in [StartQueryExecution](https://docs.aws.amazon.com/athena/latest/APIReference/API_StartQueryExecution.html), as follows:
 
-     ```
+     ```java
      StartQueryExecutionRequest startQueryExecutionRequest = new StartQueryExecutionRequest()
                    .withQueryString(ExampleConstants.ATHENA_SAMPLE_QUERY)
                    .withQueryExecutionContext(queryExecutionContext)

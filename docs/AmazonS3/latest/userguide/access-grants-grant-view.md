@@ -116,7 +116,7 @@ To use the following examples, replace the `{{user input placeholders}}` with yo
 
 **Example – Get the details of an access grant**
 
-```
+```java
 public void getAccessGrant() {
 GetAccessGrantRequest getRequest = GetAccessGrantRequest.builder()
 .accountId("{{111122223333}}")
@@ -128,7 +128,7 @@ LOGGER.info("GetAccessGrantResponse: " + getResponse);
 ```
 Response:
 
-```
+```java
 GetAccessGrantResponse(
 CreatedAt={{2023-06-07T05:20:26.330Z}},
 AccessGrantId={{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}},
@@ -151,7 +151,7 @@ You can optionally use these parameters to restrict the results to an S3 prefix 
 + **Scope** – `GrantScope=s3://{{bucket-name/prefix*}}`
 + **Grantee ** – `GranteeType=IAM` and `GranteeIdentifier= arn:aws:iam::{{{{111122223333}}}}:role/{{accessGrantsConsumerRole}}`
 
-```
+```java
 public void listAccessGrants() {
 ListAccessGrantsRequest listRequest = ListAccessGrantsRequest.builder()
 .accountId("{{111122223333}}")
@@ -162,7 +162,7 @@ LOGGER.info("ListAccessGrantsResponse: " + listResponse);
 ```
 Response:
 
-```
+```java
 ListAccessGrantsResponse(
 AccessGrantsList=[
 ListAccessGrantEntry(

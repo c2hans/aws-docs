@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appsync-resolver-cachingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[CachingKeys](#cfn-appsync-resolver-cachingconfig-cachingkeys)" : {{[ String, ... ]}},
   "[Ttl](#cfn-appsync-resolver-cachingconfig-ttl)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appsync-resolver-cachingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [CachingKeys](#cfn-appsync-resolver-cachingconfig-cachingkeys): {{
     - String}}
   [Ttl](#cfn-appsync-resolver-cachingconfig-ttl): {{Number}}

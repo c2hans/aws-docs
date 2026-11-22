@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-wafregional-webaclassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::WAFRegional::WebACLAssociation",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-wafregional-webaclassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::WAFRegional::WebACLAssociation
 Properties:
   [ResourceArn](#cfn-wafregional-webaclassociation-resourcearn): {{String}}
@@ -72,7 +72,7 @@ The following example associates an Application Load Balancer resource with a we
 #### JSON
 <a name="aws-resource-wafregional-webaclassociation--examples--Associate_an_Application_Load_Balancer_resource_with_a_web_ACL--json"></a>
 
-```
+```json
 "MyWebACLAssociation": {
   "Type": "AWS::WAFRegional::WebACLAssociation",
   "Properties": {
@@ -85,7 +85,7 @@ The following example associates an Application Load Balancer resource with a we
 #### YAML
 <a name="aws-resource-wafregional-webaclassociation--examples--Associate_an_Application_Load_Balancer_resource_with_a_web_ACL--yaml"></a>
 
-```
+```yaml
 MyWebACLAssociation:
   Type: "AWS::WAFRegional::WebACLAssociation"
   Properties:

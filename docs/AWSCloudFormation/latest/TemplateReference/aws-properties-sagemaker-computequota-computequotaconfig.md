@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-computequota-computequotaconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ComputeQuotaResources](#cfn-sagemaker-computequota-computequotaconfig-computequotaresources)" : {{[ ComputeQuotaResourceConfig, ... ]}},
   "[PreemptTeamTasks](#cfn-sagemaker-computequota-computequotaconfig-preemptteamtasks)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-computequota-computequotaconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ComputeQuotaResources](#cfn-sagemaker-computequota-computequotaconfig-computequotaresources): {{
     - ComputeQuotaResourceConfig}}
   [PreemptTeamTasks](#cfn-sagemaker-computequota-computequotaconfig-preemptteamtasks): {{String}}

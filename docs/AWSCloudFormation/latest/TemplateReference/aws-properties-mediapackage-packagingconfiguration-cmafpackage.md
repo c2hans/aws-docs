@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackage-packagingconfiguration-cmafpackage-syntax.json"></a>
 
-```
+```json
 {
   "[Encryption](#cfn-mediapackage-packagingconfiguration-cmafpackage-encryption)" : {{CmafEncryption}},
   "[HlsManifests](#cfn-mediapackage-packagingconfiguration-cmafpackage-hlsmanifests)" : {{[ HlsManifest, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackage-packagingconfiguration-cmafpackage-syntax.yaml"></a>
 
-```
+```yaml
   [Encryption](#cfn-mediapackage-packagingconfiguration-cmafpackage-encryption): {{
     CmafEncryption}}
   [HlsManifests](#cfn-mediapackage-packagingconfiguration-cmafpackage-hlsmanifests): {{

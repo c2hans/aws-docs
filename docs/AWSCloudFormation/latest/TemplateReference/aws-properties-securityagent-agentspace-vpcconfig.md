@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityagent-agentspace-vpcconfig-syntax.json"></a>
 
-```
+```json
 {
   "[SecurityGroupArns](#cfn-securityagent-agentspace-vpcconfig-securitygrouparns)" : {{[ String, ... ]}},
   "[SubnetArns](#cfn-securityagent-agentspace-vpcconfig-subnetarns)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityagent-agentspace-vpcconfig-syntax.yaml"></a>
 
-```
+```yaml
   [SecurityGroupArns](#cfn-securityagent-agentspace-vpcconfig-securitygrouparns): {{
     - String}}
   [SubnetArns](#cfn-securityagent-agentspace-vpcconfig-subnetarns): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-schedulingpolicy-shareattributes-syntax.json"></a>
 
-```
+```json
 {
   "[ShareIdentifier](#cfn-batch-schedulingpolicy-shareattributes-shareidentifier)" : {{String}},
   "[WeightFactor](#cfn-batch-schedulingpolicy-shareattributes-weightfactor)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-schedulingpolicy-shareattributes-syntax.yaml"></a>
 
-```
+```yaml
   [ShareIdentifier](#cfn-batch-schedulingpolicy-shareattributes-shareidentifier): {{String}}
   [WeightFactor](#cfn-batch-schedulingpolicy-shareattributes-weightfactor): {{Number}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisanalyticsv2-application-deployasapplicationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[S3ContentLocation](#cfn-kinesisanalyticsv2-application-deployasapplicationconfiguration-s3contentlocation)" : {{S3ContentBaseLocation}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisanalyticsv2-application-deployasapplicationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [S3ContentLocation](#cfn-kinesisanalyticsv2-application-deployasapplicationconfiguration-s3contentlocation): {{
     S3ContentBaseLocation}}
 ```

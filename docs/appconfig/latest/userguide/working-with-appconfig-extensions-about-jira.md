@@ -50,7 +50,7 @@ Use the following procedure to create an IAM permission policy that allows Atlas
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

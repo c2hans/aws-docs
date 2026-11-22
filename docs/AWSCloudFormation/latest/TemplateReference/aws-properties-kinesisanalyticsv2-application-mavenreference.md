@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisanalyticsv2-application-mavenreference-syntax.json"></a>
 
-```
+```json
 {
   "[ArtifactId](#cfn-kinesisanalyticsv2-application-mavenreference-artifactid)" : {{String}},
   "[GroupId](#cfn-kinesisanalyticsv2-application-mavenreference-groupid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisanalyticsv2-application-mavenreference-syntax.yaml"></a>
 
-```
+```yaml
   [ArtifactId](#cfn-kinesisanalyticsv2-application-mavenreference-artifactid): {{String}}
   [GroupId](#cfn-kinesisanalyticsv2-application-mavenreference-groupid): {{String}}
   [Version](#cfn-kinesisanalyticsv2-application-mavenreference-version): {{String}}

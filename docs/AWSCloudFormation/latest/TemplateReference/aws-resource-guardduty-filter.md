@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-guardduty-filter-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::GuardDuty::Filter",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-guardduty-filter-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::GuardDuty::Filter
 Properties:
   [Action](#cfn-guardduty-filter-action): {{String}}
@@ -126,7 +126,7 @@ The following example shows how to declare a GuardDuty`Filter` resource:
 #### JSON
 <a name="aws-resource-guardduty-filter--examples--Declare_a_Filter_Resource--json"></a>
 
-```
+```json
 {
     "Type": "AWS::GuardDuty::Filter",
     "Properties": {
@@ -151,7 +151,7 @@ The following example shows how to declare a GuardDuty`Filter` resource:
 #### YAML
 <a name="aws-resource-guardduty-filter--examples--Declare_a_Filter_Resource--yaml"></a>
 
-```
+```yaml
 Type: "AWS::GuardDuty::Filter"
 Properties:
     Action : "ARCHIVE"

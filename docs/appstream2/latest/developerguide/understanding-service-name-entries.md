@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/underst
 
 The following example shows a CloudTrail log entry that demonstrates the `AssociateFleet` event.
 
-```
+```json
 {
   "eventVersion": "1.05",
   "userIdentity": {
@@ -51,7 +51,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Associ
 
 The following example shows a CloudTrail log entry that demonstrates the `CreateImage` event when an image is created using the WorkSpaces Applications image builder.
 
-```
+```json
 {
   "eventVersion": "1.05",
   "userIdentity": {

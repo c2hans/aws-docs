@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-defaultfiltercontroloptions-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultDateTimePickerOptions](#cfn-quicksight-analysis-defaultfiltercontroloptions-defaultdatetimepickeroptions)" : {{DefaultDateTimePickerControlOptions}},
   "[DefaultDropdownOptions](#cfn-quicksight-analysis-defaultfiltercontroloptions-defaultdropdownoptions)" : {{DefaultFilterDropDownControlOptions}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-defaultfiltercontroloptions-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultDateTimePickerOptions](#cfn-quicksight-analysis-defaultfiltercontroloptions-defaultdatetimepickeroptions): {{
     DefaultDateTimePickerControlOptions}}
   [DefaultDropdownOptions](#cfn-quicksight-analysis-defaultfiltercontroloptions-defaultdropdownoptions): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-rule-preevaluationfilters-syntax.json"></a>
 
-```
+```json
 {
   "[AndConditions](#cfn-connect-rule-preevaluationfilters-andconditions)" : {{[ PreEvaluationFilter, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-rule-preevaluationfilters-syntax.yaml"></a>
 
-```
+```yaml
   [AndConditions](#cfn-connect-rule-preevaluationfilters-andconditions): {{
     - PreEvaluationFilter}}
 ```

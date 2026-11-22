@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-kpivisual-syntax.json"></a>
 
-```
+```json
 {
   "[Actions](#cfn-quicksight-analysis-kpivisual-actions)" : {{[ VisualCustomAction, ... ]}},
   "[ChartConfiguration](#cfn-quicksight-analysis-kpivisual-chartconfiguration)" : {{KPIConfiguration}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-kpivisual-syntax.yaml"></a>
 
-```
+```yaml
   [Actions](#cfn-quicksight-analysis-kpivisual-actions): {{
     - VisualCustomAction}}
   [ChartConfiguration](#cfn-quicksight-analysis-kpivisual-chartconfiguration): {{

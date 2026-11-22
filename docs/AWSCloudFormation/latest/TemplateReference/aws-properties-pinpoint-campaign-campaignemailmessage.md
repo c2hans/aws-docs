@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pinpoint-campaign-campaignemailmessage-syntax.json"></a>
 
-```
+```json
 {
   "[Body](#cfn-pinpoint-campaign-campaignemailmessage-body)" : {{String}},
   "[FromAddress](#cfn-pinpoint-campaign-campaignemailmessage-fromaddress)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pinpoint-campaign-campaignemailmessage-syntax.yaml"></a>
 
-```
+```yaml
   [Body](#cfn-pinpoint-campaign-campaignemailmessage-body): {{String}}
   [FromAddress](#cfn-pinpoint-campaign-campaignemailmessage-fromaddress): {{String}}
   [HtmlBody](#cfn-pinpoint-campaign-campaignemailmessage-htmlbody): {{String}}

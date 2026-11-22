@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-pricingplanmanager-subscription-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::PricingPlanManager::Subscription",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-pricingplanmanager-subscription-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::PricingPlanManager::Subscription
 Properties:
   [PlanFamily](#cfn-pricingplanmanager-subscription-planfamily): {{String}}
@@ -158,7 +158,7 @@ The following example creates a `FREE`-tier CloudFront subscription that covers 
 #### YAML
 <a name="aws-resource-pricingplanmanager-subscription--examples--Associate_existing_resources_with_a_free-tier_subscription--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 
 Resources:
@@ -181,7 +181,7 @@ The following example provisions a WAFv2 web ACL and a CloudFront distribution, 
 #### YAML
 <a name="aws-resource-pricingplanmanager-subscription--examples--Create_a_subscription_together_with_its_associated_resources--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 
 Resources:
@@ -237,7 +237,7 @@ The following example extends the previous template with a Route 53 hosted zone 
 #### YAML
 <a name="aws-resource-pricingplanmanager-subscription--examples--Associate_a_Route_53_hosted_zone_with_a_subscription--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 
 Resources:
@@ -299,7 +299,7 @@ A subscription associates exactly one distribution and one web ACL. A CloudFront
 #### YAML
 <a name="aws-resource-pricingplanmanager-subscription--examples--Add_a_CloudFront_KeyValueStore_to_a_paid-tier_subscription--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 
 Resources:

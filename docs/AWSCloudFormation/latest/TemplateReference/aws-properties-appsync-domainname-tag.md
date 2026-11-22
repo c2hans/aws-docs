@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appsync-domainname-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-appsync-domainname-tag-key)" : {{String}},
   "[Value](#cfn-appsync-domainname-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appsync-domainname-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-appsync-domainname-tag-key): {{String}}
   [Value](#cfn-appsync-domainname-tag-value): {{String}}
 ```

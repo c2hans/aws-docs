@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lambda-capacityprovider-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lambda::CapacityProvider",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lambda-capacityprovider-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lambda::CapacityProvider
 Properties:
   [CapacityProviderName](#cfn-lambda-capacityprovider-capacityprovidername): {{String}}

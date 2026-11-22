@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-synthetics-canary-artifactconfig-syntax.json"></a>
 
-```
+```json
 {
   "[S3Encryption](#cfn-synthetics-canary-artifactconfig-s3encryption)" : {{S3Encryption}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-synthetics-canary-artifactconfig-syntax.yaml"></a>
 
-```
+```yaml
   [S3Encryption](#cfn-synthetics-canary-artifactconfig-s3encryption): {{
     S3Encryption}}
 ```

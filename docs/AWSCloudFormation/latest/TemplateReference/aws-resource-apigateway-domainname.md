@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigateway-domainname-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGateway::DomainName",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigateway-domainname-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGateway::DomainName
 Properties:
   [CertificateArn](#cfn-apigateway-domainname-certificatearn): {{String}}
@@ -178,7 +178,7 @@ The following example creates a custom domain name of `api.mydomain.com`.
 #### JSON
 <a name="aws-resource-apigateway-domainname--examples--Create_Custom_Domain--json"></a>
 
-```
+```json
 {
     "MyDomainName": {
         "Type": "AWS::ApiGateway::DomainName",
@@ -193,7 +193,7 @@ The following example creates a custom domain name of `api.mydomain.com`.
 #### YAML
 <a name="aws-resource-apigateway-domainname--examples--Create_Custom_Domain--yaml"></a>
 
-```
+```yaml
 MyDomainName:
   Type: 'AWS::ApiGateway::DomainName'
   Properties:
@@ -210,7 +210,7 @@ The following example creates a custom domain name of `example.mydomain.com`.
 #### JSON
 <a name="aws-resource-apigateway-domainname--examples--Create_Custom_Domain_from_Parameters--json"></a>
 
-```
+```json
 {
     "Parameters": {
         "basePath": {
@@ -285,7 +285,7 @@ The following example creates a custom domain name of `example.mydomain.com`.
 #### YAML
 <a name="aws-resource-apigateway-domainname--examples--Create_Custom_Domain_from_Parameters--yaml"></a>
 
-```
+```yaml
 Parameters:
   basePath:
     Type: String
@@ -331,7 +331,7 @@ The following example creates a custom domain name that specifies a regional cer
 #### JSON
 <a name="aws-resource-apigateway-domainname--examples--Create_domain_name_with_EndpointConfiguration--json"></a>
 
-```
+```json
 {
   "Parameters": {
     "cfnDomainName": {
@@ -380,7 +380,7 @@ The following example creates a custom domain name that specifies a regional cer
 #### YAML
 <a name="aws-resource-apigateway-domainname--examples--Create_domain_name_with_EndpointConfiguration--yaml"></a>
 
-```
+```yaml
 Parameters:
   cfnDomainName:
     Type: String
@@ -411,7 +411,7 @@ The following example defines the distribution and regional domain names, as wel
 #### JSON
 <a name="aws-resource-apigateway-domainname--examples--Create_Domain_Names_and_Zone_IDs_as_Outputs--json"></a>
 
-```
+```json
 {
     "Resources": {
         "myDomainName": {
@@ -476,7 +476,7 @@ The following example defines the distribution and regional domain names, as wel
 #### YAML
 <a name="aws-resource-apigateway-domainname--examples--Create_Domain_Names_and_Zone_IDs_as_Outputs--yaml"></a>
 
-```
+```yaml
 Resources:
   myDomainName:
     Type: 'AWS::ApiGateway::DomainName'
@@ -514,7 +514,7 @@ The following example creates a domain name with a routing mode of `ROUTING_RULE
 #### JSON
 <a name="aws-resource-apigateway-domainname--examples--Create_Domain_Name_with_routing_mode_ROUTING_RULE_ONLY--json"></a>
 
-```
+```json
 {
   "MyDomainName": {
     "Type": "AWS::ApiGateway::DomainName",
@@ -536,7 +536,7 @@ The following example creates a domain name with a routing mode of `ROUTING_RULE
 #### YAML
 <a name="aws-resource-apigateway-domainname--examples--Create_Domain_Name_with_routing_mode_ROUTING_RULE_ONLY--yaml"></a>
 
-```
+```yaml
 MyDomainName:
     Type: AWS::ApiGateway::DomainName
     Properties:

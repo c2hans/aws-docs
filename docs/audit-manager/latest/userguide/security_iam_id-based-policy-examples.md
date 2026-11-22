@@ -56,7 +56,7 @@ To grant the minimum access required to enable Audit Manager, use the following 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -142,7 +142,7 @@ Replace the {{placeholder text}} with your own information. Include the S3 bucke
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -183,7 +183,7 @@ The following permission policy is required if you want to enable and use the ev
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -224,7 +224,7 @@ Before you use this policy, replace the {{placeholder text}} with your own infor
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -254,7 +254,7 @@ This policy grants the ability to manage all Audit Manager resources (assessment
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -406,7 +406,7 @@ This policy grants read-only access to AWS Audit Manager resources such as asses
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -430,7 +430,7 @@ This policy grants read-only access to AWS Audit Manager resources such as asses
 
 This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -489,7 +489,7 @@ Before using this policy, replace the {{placeholder text}} with your own informa
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {
@@ -549,7 +549,7 @@ Before using this policy, replace the {{placeholder text}} with your own informa
 
 ****
 
-```
+```json
 {
      "Version":"2012-10-17",
      "Statement": {
@@ -607,7 +607,7 @@ The following policy grants permissions to perform queries on a CloudTrail Lake 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

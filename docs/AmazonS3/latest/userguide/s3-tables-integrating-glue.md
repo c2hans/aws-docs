@@ -64,7 +64,7 @@ Prerequisites use the Amazon S3 Tables Catalog for Apache Iceberg to run AWS Glu
 
     1. Upload the downloaded JAR to an S3 bucket that your AWS Glue IAM role can access. You can use the following AWS CLI command to upload the JAR. Make sure to replace the {{version number}} with the latest version, and the {{bucket name}} and {{path}} with your own.
 
-       ```
+       ```bash
        aws s3 cp s3-tables-catalog-for-iceberg-runtime-{{0.1.5}}.jar s3://{{amzn-s3-demo-bucket}}{{/jars/}}
        ```
 
@@ -186,7 +186,7 @@ Choose from the following scripts based on your S3 Tables access method.
 ------
 #### [ S3 Tables integration with AWS analytics services ]
 
-```
+```python
 from pyspark.sql import SparkSession
 
 spark = SparkSession.builder.appName("SparkIcebergSQL") \
@@ -227,7 +227,7 @@ spark.sql(f"SELECT * FROM {namespace}.{table} LIMIT 10").show()
 ------
 #### [ Amazon S3 Tables Iceberg REST endpoint ]
 
-```
+```python
 from pyspark.sql import SparkSession
 
 spark = SparkSession.builder.appName("glue-s3-tables-rest") \
@@ -273,7 +273,7 @@ spark.sql(f"SELECT * FROM {namespace}.{table} LIMIT 10").show()
 ------
 #### [ Amazon S3 Tables Catalog for Apache Iceberg ]
 
-```
+```python
 from pyspark.sql import SparkSession
 
 #Spark session configurations
@@ -354,7 +354,7 @@ The following procedure shows how to use the AWS CLI to create an ETL job that q
 
 1. Create an AWS Glue job.
 
-   ```
+   ```bash
    aws glue create-job \
    --name {{etl-tables-job}} \
    --role arn:aws:iam::{{111122223333}}:role/{{AWSGlueServiceRole}} \
@@ -378,14 +378,14 @@ The following procedure shows how to use the AWS CLI to create an ETL job that q
 
 1. Start your job.
 
-   ```
+   ```bash
    aws glue start-job-run \
    --job-name {{etl-tables-job}}
    ```
 
 1. To review you job status, copy the run ID from the previous command and enter it into the following command.
 
-   ```
+   ```bash
    aws glue get-job-run --job-name {{etl-tables-job}} \
    --run-id {{jr_ec9a8a302e71f8483060f87b6c309601ea9ee9c1ffc2db56706dfcceb3d0e1ad}}
    ```

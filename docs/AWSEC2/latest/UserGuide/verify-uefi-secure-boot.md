@@ -14,7 +14,7 @@ You can use the `mokutil` utility to verify whether a Linux instance is enabled 
 **To verify whether a Linux instance is enabled for UEFI Secure Boot**
 Connect to your instance and run the following command as `root` in a terminal window.
 
-```
+```bash
 mokutil --sb-state
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-transformstep-syntax.json"></a>
 
-```
+```json
 {
   "[AggregateStep](#cfn-quicksight-dataset-transformstep-aggregatestep)" : {{AggregateOperation}},
   "[AppendStep](#cfn-quicksight-dataset-transformstep-appendstep)" : {{AppendOperation}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-transformstep-syntax.yaml"></a>
 
-```
+```yaml
   [AggregateStep](#cfn-quicksight-dataset-transformstep-aggregatestep): {{
     AggregateOperation}}
   [AppendStep](#cfn-quicksight-dataset-transformstep-appendstep): {{

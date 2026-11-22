@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters-syntax.json"></a>
 
-```
+```json
 {
   "[Input](#cfn-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters-input)" : {{String}},
   "[Name](#cfn-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters-name)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters-syntax.yaml"></a>
 
-```
+```yaml
   [Input](#cfn-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters-input): {{String}}
   [Name](#cfn-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters-name): {{String}}
 ```

@@ -168,7 +168,7 @@ A stack is a unit of deployment. All resources must be in a stack, and all the r
 
 Update `lib/hello-ecs-stack.ts` so that it resembles the following.
 
-```
+```javascript
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import * as ecs from 'aws-cdk-lib/aws-ecs';
@@ -193,7 +193,7 @@ export class HelloEcsStack extends cdk.Stack {
 
 Update `lib/hello-ecs-stack.js` so that it resembles the following.
 
-```
+```javascript
 const cdk = require('aws-cdk-lib');
 const { Construct } = require('constructs');
 const ecs = require('aws-cdk-lib/aws-ecs');
@@ -220,7 +220,7 @@ module.exports = { HelloEcsStack }
 
 Update `hello-ecs/hello_ecs_stack.py` so that it resembles the following.
 
-```
+```python
 import aws_cdk as cdk
 from constructs import Construct
 
@@ -244,7 +244,7 @@ class HelloEcsStack(cdk.Stack):
 
 Update `src/main/java/com.myorg/HelloEcsStack.java` so that it resembles the following.
 
-```
+```java
 package com.myorg;
 
 import software.constructs.Construct;
@@ -278,7 +278,7 @@ public class HelloEcsStack extends Stack {
 
 Update `src/HelloEcs/HelloEcsStack.cs` so that it resembles the following.
 
-```
+```csharp
 using Amazon.CDK;
 using Constructs;
 using Amazon.CDK.AWS.ECS;
@@ -308,7 +308,7 @@ namespace HelloEcs
 
 Update `hello-ecs.go` so that it resembles the following.
 
-```
+```go
 package main
 
 import (
@@ -409,7 +409,7 @@ The preceding short snippet includes the following:
 
 Save the source file, then run the `cdk synth` command in your application's main directory. The AWS CDK runs the app and synthesizes an CloudFormation template from it, and then displays the template. The template is an approximately 600-line YAML file. The beginning of the file is shown here. Your template might differ from this example.
 
-```
+```yaml
 Resources:
   MyWebServerLB3B5FD3AB:
     Type: AWS::ElasticLoadBalancingV2::LoadBalancer

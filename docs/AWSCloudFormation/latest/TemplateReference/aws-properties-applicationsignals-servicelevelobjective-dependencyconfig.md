@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationsignals-servicelevelobjective-dependencyconfig-syntax.json"></a>
 
-```
+```json
 {
   "[DependencyKeyAttributes](#cfn-applicationsignals-servicelevelobjective-dependencyconfig-dependencykeyattributes)" : {{String}},
   "[DependencyOperationName](#cfn-applicationsignals-servicelevelobjective-dependencyconfig-dependencyoperationname)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationsignals-servicelevelobjective-dependencyconfig-syntax.yaml"></a>
 
-```
+```yaml
   [DependencyKeyAttributes](#cfn-applicationsignals-servicelevelobjective-dependencyconfig-dependencykeyattributes): {{String}}
   [DependencyOperationName](#cfn-applicationsignals-servicelevelobjective-dependencyconfig-dependencyoperationname): {{String}}
 ```

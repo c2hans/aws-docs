@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-parameterlistcontrol-syntax.json"></a>
 
-```
+```json
 {
   "[CascadingControlConfiguration](#cfn-quicksight-template-parameterlistcontrol-cascadingcontrolconfiguration)" : {{CascadingControlConfiguration}},
   "[DisplayOptions](#cfn-quicksight-template-parameterlistcontrol-displayoptions)" : {{ListControlDisplayOptions}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-parameterlistcontrol-syntax.yaml"></a>
 
-```
+```yaml
   [CascadingControlConfiguration](#cfn-quicksight-template-parameterlistcontrol-cascadingcontrolconfiguration): {{
     CascadingControlConfiguration}}
   [DisplayOptions](#cfn-quicksight-template-parameterlistcontrol-displayoptions): {{

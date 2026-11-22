@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-confluencespacetoindexfieldmapping-syntax.json"></a>
 
-```
+```json
 {
   "[DataSourceFieldName](#cfn-kendra-datasource-confluencespacetoindexfieldmapping-datasourcefieldname)" : {{String}},
   "[DateFieldFormat](#cfn-kendra-datasource-confluencespacetoindexfieldmapping-datefieldformat)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-confluencespacetoindexfieldmapping-syntax.yaml"></a>
 
-```
+```yaml
   [DataSourceFieldName](#cfn-kendra-datasource-confluencespacetoindexfieldmapping-datasourcefieldname): {{String}}
   [DateFieldFormat](#cfn-kendra-datasource-confluencespacetoindexfieldmapping-datefieldformat): {{String}}
   [IndexFieldName](#cfn-kendra-datasource-confluencespacetoindexfieldmapping-indexfieldname): {{String}}

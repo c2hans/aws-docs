@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-mwaa-environment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MWAA::Environment",
   "Properties" : {
@@ -53,7 +53,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-mwaa-environment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MWAA::Environment
 Properties:
   [AirflowConfigurationOptions](#cfn-mwaa-environment-airflowconfigurationoptions): {{Json}}
@@ -356,7 +356,7 @@ The following example shows how to create a MWAA environment:
 #### JSON
 <a name="aws-resource-mwaa-environment--examples--Create_a_MWAA_environment_-_JSON--json"></a>
 
-```
+```json
 {
     "Environment": {
         "Type": "AWS::MWAA::Environment",
@@ -419,7 +419,7 @@ The following example shows how to create a MWAA environment:
 #### YAML
 <a name="aws-resource-mwaa-environment--examples--Create_a_MWAA_environment_-_YAML--yaml"></a>
 
-```
+```yaml
 Environment:
     Properties:
       AirflowConfigurationOptions:

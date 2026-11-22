@@ -55,7 +55,7 @@ The following provides information about important configuration properties requ
 
 The following is the Confluence (Cloud) JSON schema:
 
-```
+```json
 {
   "type": "object",
   "properties": {
@@ -516,7 +516,7 @@ The following is the Confluence (Cloud) JSON schema:
 
 The following is the Confluence (Cloud) JSON schema example:
 
-```
+```json
 {
   "type": "CONFLUENCEV2",
   "syncMode": "FULL_CRAWL",

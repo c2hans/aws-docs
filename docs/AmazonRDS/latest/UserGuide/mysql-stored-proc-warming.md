@@ -19,7 +19,7 @@ Dumps the current state of the buffer pool to disk.
 ### Syntax
 <a name="mysql_rds_innodb_buffer_pool_dump_now-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_innodb_buffer_pool_dump_now();
 ```
 
@@ -36,7 +36,7 @@ Cancels a load of the saved buffer pool state while in progress.
 ### Syntax
 <a name="mysql_rds_innodb_buffer_pool_load_abort-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_innodb_buffer_pool_load_abort();
 ```
 
@@ -53,7 +53,7 @@ Loads the saved state of the buffer pool from disk.
 ### Syntax
 <a name="mysql_rds_innodb_buffer_pool_load_now-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_innodb_buffer_pool_load_now();
 ```
 

@@ -11,7 +11,7 @@ DevOps Guru detects, analyzes, and makes recommendations for existing operation
 You can now view these recommendations in RDS console. For more information, see [Recommendations from Amazon Aurora](monitoring-recommendations.md).
 
 **Important**
-Amazon DevOps Guru isn't available for Aurora Serverless DB clusters.
+Amazon DevOps Guru is available only for provisioned DB instances. It isn't available for Aurora Serverless v2 DB instances, including serverless instances in a DB cluster that also contains provisioned instances.
 
 The following video is an overview of DevOps Guru for RDS.
 

@@ -70,7 +70,7 @@ aws ec2 create-launch-template --launch-template-name {{my-template-for-auto-sca
 
 Contents of `config.json`:
 
-```
+```json
 {
     "ImageId":"resolve:ssm:{{/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2}}",
     "InstanceType":"{{t2.micro}}"
@@ -79,7 +79,7 @@ Contents of `config.json`:
 
 The following is an example response.
 
-```
+```json
 {
     "LaunchTemplate": {
         "LaunchTemplateId": "lt-089c023a30example",
@@ -104,7 +104,7 @@ aws ec2 create-launch-template --launch-template-name {{my-template-for-auto-sca
 
 Contents of `config.json`:
 
-```
+```json
 {
     "ImageId":"resolve:ssm:{{golden-ami}}",
     "InstanceType":"{{t2.micro}}"
@@ -115,7 +115,7 @@ The default version of the parameter, if it is not specified, is the latest vers
 
 The following example references a specific version of the {{`golden-ami`}} parameter. The example uses version {{`3`}} of the {{`golden-ami`}} parameter, but you can use any valid version number.
 
-```
+```json
 {
     "ImageId":"resolve:ssm:{{golden-ami:3}}",
     "InstanceType":"{{t2.micro}}"
@@ -124,7 +124,7 @@ The following example references a specific version of the {{`golden-ami`}} para
 
 The following similar example references the parameter label {{`prod`}} that maps to a specific version of the {{`golden-ami`}} parameter.
 
-```
+```json
 {
     "ImageId":"resolve:ssm:{{golden-ami:prod}}",
     "InstanceType":"{{t2.micro}}"
@@ -133,7 +133,7 @@ The following similar example references the parameter label {{`prod`}} that map
 
 The following is example output.
 
-```
+```json
 {
     "LaunchTemplate": {
         "LaunchTemplateId": "lt-068f72b724example",
@@ -158,7 +158,7 @@ aws ec2 create-launch-template --launch-template-name {{my-template-for-auto-sca
 
 Contents of `config.json`:
 
-```
+```json
 {
     "ImageId":"resolve:ssm:{{arn:aws:ssm:us-east-2:123456789012:parameter/MyParameter}}",
     "InstanceType":"{{t2.micro}}"
@@ -169,7 +169,7 @@ The default version of the parameter, if it is not specified, is the latest vers
 
 The following example references a specific version of the `{{MyParameter}}` parameter. The example uses version {{`3`}} of the `{{MyParameter}}` parameter, but you can use any valid version number.
 
-```
+```json
 {
     "ImageId":"resolve:ssm:{{arn:aws:ssm:us-east-2:123456789012:parameter/MyParameter:3}}",
     "InstanceType":"{{t2.micro}}"
@@ -178,7 +178,7 @@ The following example references a specific version of the `{{MyParameter}}` par
 
 The following similar example references the parameter label {{`prod`}} that maps to a specific version of the `{{MyParameter}}` parameter.
 
-```
+```json
 {
     "ImageId":"resolve:ssm:{{arn:aws:ssm:us-east-2:123456789012:parameter/MyParameter:prod}}",
     "InstanceType":"{{t2.micro}}"
@@ -187,7 +187,7 @@ The following similar example references the parameter label {{`prod`}} that map
 
 The following is an example response.
 
-```
+```json
 {
     "LaunchTemplate": {
         "LaunchTemplateId": "lt-00f93d4588example",
@@ -216,7 +216,7 @@ aws ec2 describe-launch-template-versions --launch-template-name {{my-template-f
 
 The example returns the AMI ID for `ImageId`. When an instance is launched using this launch template, the AMI ID resolves to `ami-0ac394d6a3example`.
 
-```
+```json
 {
     "LaunchTemplateVersions": [
         {

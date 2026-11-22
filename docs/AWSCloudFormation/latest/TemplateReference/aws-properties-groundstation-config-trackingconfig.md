@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-groundstation-config-trackingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Autotrack](#cfn-groundstation-config-trackingconfig-autotrack)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-groundstation-config-trackingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Autotrack](#cfn-groundstation-config-trackingconfig-autotrack): {{String}}
 ```
 
@@ -50,7 +50,7 @@ The following example creates a Ground Station `TrackingConfig`
 #### JSON
 <a name="aws-properties-groundstation-config-trackingconfig--examples--Create_a_TrackingConfig--json"></a>
 
-```
+```json
 {
   "TrackingConfig": {
     "Autotrack": "PREFERRED"
@@ -61,7 +61,7 @@ The following example creates a Ground Station `TrackingConfig`
 #### YAML
 <a name="aws-properties-groundstation-config-trackingconfig--examples--Create_a_TrackingConfig--yaml"></a>
 
-```
+```yaml
 TrackingConfig:
   Autotrack: "PREFERRED"
 ```

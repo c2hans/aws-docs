@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-personalize-recommender-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Personalize::Recommender",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-personalize-recommender-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Personalize::Recommender
 Properties:
   [DatasetGroupArn](#cfn-personalize-recommender-datasetgrouparn): {{String}}

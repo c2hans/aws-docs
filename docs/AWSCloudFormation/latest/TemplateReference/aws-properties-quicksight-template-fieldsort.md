@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-fieldsort-syntax.json"></a>
 
-```
+```json
 {
   "[Direction](#cfn-quicksight-template-fieldsort-direction)" : {{String}},
   "[FieldId](#cfn-quicksight-template-fieldsort-fieldid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-fieldsort-syntax.yaml"></a>
 
-```
+```yaml
   [Direction](#cfn-quicksight-template-fieldsort-direction): {{String}}
   [FieldId](#cfn-quicksight-template-fieldsort-fieldid): {{String}}
 ```

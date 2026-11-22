@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-pluginvisualoptions-syntax.json"></a>
 
-```
+```json
 {
   "[VisualProperties](#cfn-quicksight-template-pluginvisualoptions-visualproperties)" : {{[ PluginVisualProperty, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-pluginvisualoptions-syntax.yaml"></a>
 
-```
+```yaml
   [VisualProperties](#cfn-quicksight-template-pluginvisualoptions-visualproperties): {{
     - PluginVisualProperty}}
 ```

@@ -17,7 +17,7 @@ If you don't have the code snippet that was previously generated, you can find i
 
    The following is an example of a generated code snippet:
 
-   ```
+   ```html
    <script>
    (function (n, i, v, r, s, c, x, z) {
        x = window.AwsRumClient = {q: [], n: n, i: i, v: v, r: r, c: c};

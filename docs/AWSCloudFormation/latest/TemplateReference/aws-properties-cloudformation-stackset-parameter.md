@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudformation-stackset-parameter-syntax.json"></a>
 
-```
+```json
 {
   "[ParameterKey](#cfn-cloudformation-stackset-parameter-parameterkey)" : {{String}},
   "[ParameterValue](#cfn-cloudformation-stackset-parameter-parametervalue)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudformation-stackset-parameter-syntax.yaml"></a>
 
-```
+```yaml
   [ParameterKey](#cfn-cloudformation-stackset-parameter-parameterkey): {{String}}
   [ParameterValue](#cfn-cloudformation-stackset-parameter-parametervalue): {{String}}
 ```

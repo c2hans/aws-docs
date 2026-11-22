@@ -30,7 +30,7 @@ You can use the following template to create a sample Fargate Linux task.
 ------
 #### [ JSON ]
 
-```
+```JSON
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "ECS Task Definition with parameterized values",
@@ -157,7 +157,7 @@ You can use the following template to create a sample Fargate Linux task.
 ------
 #### [ YAML ]
 
-```
+```YAML
 AWSTemplateFormatVersion: 2010-09-09
 Description: 'ECS Task Definition to deploy a sample app'
 Parameters:
@@ -267,7 +267,7 @@ You can use the following template to create a task that uses an Amazon EFS file
 ------
 #### [ JSON ]
 
-```
+```JSON
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "Create a task definition for a web server with parameterized values.",
@@ -426,7 +426,7 @@ You can use the following template to create a task that uses an Amazon EFS file
 ------
 #### [ YAML ]
 
-```
+```YAML
 AWSTemplateFormatVersion: 2010-09-09
 Description: Create a task definition for a web server with parameterized values.
 Parameters:
@@ -558,7 +558,7 @@ Capacity providers are associated with an Amazon ECS cluster and are used to man
 ------
 #### [ JSON ]
 
-```
+```JSON
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -600,7 +600,7 @@ Capacity providers are associated with an Amazon ECS cluster and are used to man
 ------
 #### [ YAML ]
 
-```
+```YAML
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   MyCapacityProvider:
@@ -641,7 +641,7 @@ You can use the following template to create an empty cluster with default setti
 ------
 #### [ JSON ]
 
-```
+```JSON
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -658,7 +658,7 @@ You can use the following template to create an empty cluster with default setti
 ------
 #### [ YAML ]
 
-```
+```YAML
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   ECSCluster:
@@ -677,7 +677,7 @@ You can use the following template to create a cluster with cluster-level manage
 ------
 #### [ JSON ]
 
-```
+```JSON
 {
     "AWSTemplateFormatVersion": "2010-09-09",
    "Resources": {
@@ -705,7 +705,7 @@ You can use the following template to create a cluster with cluster-level manage
 ------
 #### [ YAML ]
 
-```
+```YAML
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   Cluster:
@@ -733,7 +733,7 @@ For the latest AMI IDs, see [Amazon ECS-optimized AMI](https://docs.aws.amazon.c
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "EC2 ECS cluster that starts out empty, with no EC2 instances yet. An ECS capacity provider automatically launches more EC2 instances as required on the fly when you request ECS to launch services or standalone tasks.",
@@ -1009,7 +1009,7 @@ For the latest AMI IDs, see [Amazon ECS-optimized AMI](https://docs.aws.amazon.c
 ------
 #### [ YAML ]
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: EC2 ECS cluster that starts out empty, with no EC2 instances yet. An ECS capacity provider automatically launches more EC2 instances as required on the fly when you request ECS to launch services or standalone tasks.
 Parameters:
@@ -1191,7 +1191,7 @@ You can use an Amazon ECS service to run and maintain a specified number of inst
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "[AWSDocs] ECS: load-balanced-web-application",
@@ -2129,7 +2129,7 @@ You can use an Amazon ECS service to run and maintain a specified number of inst
 ------
 #### [ YAML ]
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: '[AWSDocs] ECS: load-balanced-web-application'
 
@@ -2655,7 +2655,7 @@ You can use the following template to deploy a service with ECS Exec enabled. Th
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "ECS Cluster with Fargate Service and Task Definition and ECS Exec enabled.",
@@ -2868,7 +2868,7 @@ You can use the following template to deploy a service with ECS Exec enabled. Th
 ------
 #### [ YAML ]
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: ECS Cluster with Fargate Service and Task Definition and ECS Exec enabled.
 Parameters:
@@ -3044,7 +3044,7 @@ For more information about using VPC Lattice with Amazon ECS, see [Use Amazon VP
 ------
 #### [ JSON ]
 
-```
+```json
 {
 	"AWSTemplateFormatVersion": "2010-09-09",
 	"Description": "The template used to create an ECS Service with VPC Lattice.",
@@ -3311,7 +3311,7 @@ For more information about using VPC Lattice with Amazon ECS, see [Use Amazon VP
 ------
 #### [ YAML ]
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: The template used to create an ECS Service with VPC Lattice.
 
@@ -3515,7 +3515,7 @@ The following template includes a volume configuration in the service definition
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "The template used to create an ECS Service that includes a volume configuration. The configuration is used to create Amazon EBS volumes for attachment to the tasks. One volume is attached per task.",
@@ -3744,7 +3744,7 @@ The following template includes a volume configuration in the service definition
 ------
 #### [ YAML ]
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: The template used to create an ECS Service that includes a volume configuration. The configuration is used to create Amazon EBS volumes for attachment to the tasks. One volume is attached per task.
 Parameters:
@@ -3933,7 +3933,7 @@ The following template defines a service that uses the capacity provider to requ
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "An example service that deploys in AWS VPC networking mode on EC2 capacity. Service uses a capacity provider to request EC2 instances to run on. Service runs with networking in private subnets, but still accessible to the internet via a load balancer hosted in public subnets.",
@@ -4240,7 +4240,7 @@ The following template defines a service that uses the capacity provider to requ
 ------
 #### [ YAML ]
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: >-
   An example service that deploys in AWS VPC networking mode on EC2 capacity.
@@ -4429,7 +4429,7 @@ The following template can be used to create a simple task execution role that u
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "CloudFormation template for ECS Task Execution Role",
@@ -4497,7 +4497,7 @@ The following template can be used to create a simple task execution role that u
 ------
 #### [ YAML ]
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: 'CloudFormation template for ECS Task Execution Role'
 Resources:

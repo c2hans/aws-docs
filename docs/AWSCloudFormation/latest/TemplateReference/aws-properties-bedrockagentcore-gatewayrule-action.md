@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewayrule-action-syntax.json"></a>
 
-```
+```json
 {
   "[ConfigurationBundle](#cfn-bedrockagentcore-gatewayrule-action-configurationbundle)" : {{ConfigurationBundleAction}},
   "[RouteToTarget](#cfn-bedrockagentcore-gatewayrule-action-routetotarget)" : {{RouteToTargetAction}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewayrule-action-syntax.yaml"></a>
 
-```
+```yaml
   [ConfigurationBundle](#cfn-bedrockagentcore-gatewayrule-action-configurationbundle): {{
     ConfigurationBundleAction}}
   [RouteToTarget](#cfn-bedrockagentcore-gatewayrule-action-routetotarget): {{

@@ -12,7 +12,7 @@ Retrieving configuration data from a separate AWS account isn't supported.
 ## Using AWS AppConfig Agent for user- or entity-based gradual deployments
 <a name="appconfig-entity-based-gradual-deployments"></a>
 
-AWS AppConfig Agent supports deploying feature flag or free-form configuration data to specific segments or individual users during a gradual rollout. Entity-based gradual deployments ensure that once a user or segment receives a configuration version, they continue to receive that same version throughout the deployment period, regardless of which compute resource serves their requests.
+AWS AppConfig Agent supports deploying feature flag, free-form, and AI configuration data to specific segments or individual users during a gradual rollout. Entity-based gradual deployments ensure that once a user or segment receives a configuration version, they continue to receive that same version throughout the deployment period, regardless of which compute resource serves their requests.
 
 With entity-based gradual deployments, AWS AppConfig Agent evaluates a unique identifier (`Entity-Id`) supplied with each HTTP request. Based on this identifier, the agent consistently serves either the new or previous configuration version throughout the deployment period. This process ensures that once a user receives the updated configuration, they continue to receive it. It also ensures that rollback alarms have sufficient time and data to detect issues.
 

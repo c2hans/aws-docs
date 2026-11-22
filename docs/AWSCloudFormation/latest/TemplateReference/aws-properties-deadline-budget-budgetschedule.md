@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-deadline-budget-budgetschedule-syntax.json"></a>
 
-```
+```json
 {
   "[Fixed](#cfn-deadline-budget-budgetschedule-fixed)" : {{FixedBudgetSchedule}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-deadline-budget-budgetschedule-syntax.yaml"></a>
 
-```
+```yaml
   [Fixed](#cfn-deadline-budget-budgetschedule-fixed): {{
     FixedBudgetSchedule}}
 ```

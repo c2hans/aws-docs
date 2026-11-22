@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigatewayv2-integrationresponse-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGatewayV2::IntegrationResponse",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigatewayv2-integrationresponse-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGatewayV2::IntegrationResponse
 Properties:
   [ApiId](#cfn-apigatewayv2-integrationresponse-apiid): {{String}}
@@ -128,7 +128,7 @@ The following example creates an `IntegrationResponse` resource for an API named
 #### JSON
 <a name="aws-resource-apigatewayv2-integrationresponse--examples--Integration_response_creation_example--json"></a>
 
-```
+```json
 {
     "IntegrationResponse": {
         "Type": "AWS::ApiGatewayV2::IntegrationResponse",
@@ -148,7 +148,7 @@ The following example creates an `IntegrationResponse` resource for an API named
 #### YAML
 <a name="aws-resource-apigatewayv2-integrationresponse--examples--Integration_response_creation_example--yaml"></a>
 
-```
+```yaml
 IntegrationResponse:
   Type: 'AWS::ApiGatewayV2::IntegrationResponse'
   Properties:

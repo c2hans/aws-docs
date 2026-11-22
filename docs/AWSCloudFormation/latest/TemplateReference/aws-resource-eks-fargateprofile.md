@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-eks-fargateprofile-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EKS::FargateProfile",
   "Properties" : {
@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-eks-fargateprofile-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EKS::FargateProfile
 Properties:
   [ClusterName](#cfn-eks-fargateprofile-clustername): {{String}}
@@ -145,7 +145,7 @@ The following example creates a Fargate profile for pods deployed to a namespace
 #### JSON
 <a name="aws-resource-eks-fargateprofile--examples--Create_a_profile--json"></a>
 
-```
+```json
 {
    "Resources" : {
       "EKSFargateProfile" : {
@@ -176,7 +176,7 @@ The following example creates a Fargate profile for pods deployed to a namespace
 #### YAML
 <a name="aws-resource-eks-fargateprofile--examples--Create_a_profile--yaml"></a>
 
-```
+```yaml
 Resources:
   EKSFargateProfile:
     DependsOn: EKSIdpConfig

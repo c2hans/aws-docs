@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-budgets-budgetsaction-ssmactiondefinition-syntax.json"></a>
 
-```
+```json
 {
   "[InstanceIds](#cfn-budgets-budgetsaction-ssmactiondefinition-instanceids)" : {{[ String, ... ]}},
   "[Region](#cfn-budgets-budgetsaction-ssmactiondefinition-region)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-budgets-budgetsaction-ssmactiondefinition-syntax.yaml"></a>
 
-```
+```yaml
   [InstanceIds](#cfn-budgets-budgetsaction-ssmactiondefinition-instanceids): {{
     - String}}
   [Region](#cfn-budgets-budgetsaction-ssmactiondefinition-region): {{String}}

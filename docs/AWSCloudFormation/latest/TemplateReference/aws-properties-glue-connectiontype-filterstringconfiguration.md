@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-connectiontype-filterstringconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[QueryParameterName](#cfn-glue-connectiontype-filterstringconfiguration-queryparametername)" : {{String}},
   "[QuoteCharacter](#cfn-glue-connectiontype-filterstringconfiguration-quotecharacter)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-connectiontype-filterstringconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [QueryParameterName](#cfn-glue-connectiontype-filterstringconfiguration-queryparametername): {{String}}
   [QuoteCharacter](#cfn-glue-connectiontype-filterstringconfiguration-quotecharacter): {{String}}
   [QuoteStringValues](#cfn-glue-connectiontype-filterstringconfiguration-quotestringvalues): {{Boolean}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appsync-api-authprovider-syntax.json"></a>
 
-```
+```json
 {
   "[AuthType](#cfn-appsync-api-authprovider-authtype)" : {{String}},
   "[CognitoConfig](#cfn-appsync-api-authprovider-cognitoconfig)" : {{CognitoConfig}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appsync-api-authprovider-syntax.yaml"></a>
 
-```
+```yaml
   [AuthType](#cfn-appsync-api-authprovider-authtype): {{String}}
   [CognitoConfig](#cfn-appsync-api-authprovider-cognitoconfig): {{
     CognitoConfig}}

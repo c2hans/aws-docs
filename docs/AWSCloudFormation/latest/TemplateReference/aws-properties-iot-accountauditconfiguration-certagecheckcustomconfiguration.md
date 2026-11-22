@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-accountauditconfiguration-certagecheckcustomconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CertAgeThresholdInDays](#cfn-iot-accountauditconfiguration-certagecheckcustomconfiguration-certagethresholdindays)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-accountauditconfiguration-certagecheckcustomconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CertAgeThresholdInDays](#cfn-iot-accountauditconfiguration-certagecheckcustomconfiguration-certagethresholdindays): {{String}}
 ```
 

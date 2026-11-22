@@ -18,7 +18,7 @@ The following task definition example demonstrates how to specify a log configur
 
 In the log configuration options, specify the log group name and the Region it exists in. To have Fluent Bit create the log group on your behalf, specify `"auto_create_group":"true"`. You can also specify the task ID as the log stream prefix, which assists in filtering. For more information, see [Fluent Bit Plugin for CloudWatch Logs](https://github.com/aws/amazon-cloudwatch-logs-for-fluent-bit/blob/mainline/README.md).
 
-```
+```JSON
 {
 	"family": "firelens-example-cloudwatch",
 	"taskRoleArn": "arn:aws:iam::{{123456789012}}:role/{{ecs_task_iam_role}}",

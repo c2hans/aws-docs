@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-arcregionswitch-plan-reportoutputconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[S3Configuration](#cfn-arcregionswitch-plan-reportoutputconfiguration-s3configuration)" : {{S3ReportOutputConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-arcregionswitch-plan-reportoutputconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [S3Configuration](#cfn-arcregionswitch-plan-reportoutputconfiguration-s3configuration): {{
     S3ReportOutputConfiguration}}
 ```

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancing-loadbalancer-policies-syntax.json"></a>
 
-```
+```json
 {
   "[Attributes](#cfn-elasticloadbalancing-loadbalancer-policies-attributes)" : {{[ {{{Key}}: {{Value}}, ...}, ... ]}},
   "[InstancePorts](#cfn-elasticloadbalancing-loadbalancer-policies-instanceports)" : {{[ String, ... ]}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancing-loadbalancer-policies-syntax.yaml"></a>
 
-```
+```yaml
   [Attributes](#cfn-elasticloadbalancing-loadbalancer-policies-attributes): {{
     -
     {{Key}}: {{Value}}}}
@@ -85,7 +85,7 @@ The name of the policy type.
 #### JSON
 <a name="aws-properties-elasticloadbalancing-loadbalancer-policies--examples----json"></a>
 
-```
+```json
 "Policies": [{
     "PolicyName": "My-SSLNegotiation-Policy",
     "PolicyType": "SSLNegotiationPolicyType",
@@ -99,7 +99,7 @@ The name of the policy type.
 #### YAML
 <a name="aws-properties-elasticloadbalancing-loadbalancer-policies--examples----yaml"></a>
 
-```
+```yaml
 Policies:
     - PolicyName: My-SSLNegotiation-Policy
       PolicyType: SSLNegotiationPolicyType

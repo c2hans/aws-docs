@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-billingconductor-customlineitem-customlineitempercentagechargedetails-syntax.json"></a>
 
-```
+```json
 {
   "[ChildAssociatedResources](#cfn-billingconductor-customlineitem-customlineitempercentagechargedetails-childassociatedresources)" : {{[ String, ... ]}},
   "[PercentageValue](#cfn-billingconductor-customlineitem-customlineitempercentagechargedetails-percentagevalue)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-billingconductor-customlineitem-customlineitempercentagechargedetails-syntax.yaml"></a>
 
-```
+```yaml
   [ChildAssociatedResources](#cfn-billingconductor-customlineitem-customlineitempercentagechargedetails-childassociatedresources): {{
     - String}}
   [PercentageValue](#cfn-billingconductor-customlineitem-customlineitempercentagechargedetails-percentagevalue): {{Number}}

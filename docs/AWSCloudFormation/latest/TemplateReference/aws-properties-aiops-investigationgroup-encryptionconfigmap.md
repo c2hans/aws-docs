@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-aiops-investigationgroup-encryptionconfigmap-syntax.json"></a>
 
-```
+```json
 {
   "[EncryptionConfigurationType](#cfn-aiops-investigationgroup-encryptionconfigmap-encryptionconfigurationtype)" : {{String}},
   "[KmsKeyId](#cfn-aiops-investigationgroup-encryptionconfigmap-kmskeyid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-aiops-investigationgroup-encryptionconfigmap-syntax.yaml"></a>
 
-```
+```yaml
   [EncryptionConfigurationType](#cfn-aiops-investigationgroup-encryptionconfigmap-encryptionconfigurationtype): {{String}}
   [KmsKeyId](#cfn-aiops-investigationgroup-encryptionconfigmap-kmskeyid): {{String}}
 ```

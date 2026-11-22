@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-stringparameterdeclaration-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultValues](#cfn-quicksight-analysis-stringparameterdeclaration-defaultvalues)" : {{StringDefaultValues}},
   "[MappedDataSetParameters](#cfn-quicksight-analysis-stringparameterdeclaration-mappeddatasetparameters)" : {{[ MappedDataSetParameter, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-stringparameterdeclaration-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultValues](#cfn-quicksight-analysis-stringparameterdeclaration-defaultvalues): {{
     StringDefaultValues}}
   [MappedDataSetParameters](#cfn-quicksight-analysis-stringparameterdeclaration-mappeddatasetparameters): {{

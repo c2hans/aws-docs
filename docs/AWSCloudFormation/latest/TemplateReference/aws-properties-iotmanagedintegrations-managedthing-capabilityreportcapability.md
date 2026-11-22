@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotmanagedintegrations-managedthing-capabilityreportcapability-syntax.json"></a>
 
-```
+```json
 {
   "[Actions](#cfn-iotmanagedintegrations-managedthing-capabilityreportcapability-actions)" : {{[ String, ... ]}},
   "[Events](#cfn-iotmanagedintegrations-managedthing-capabilityreportcapability-events)" : {{[ String, ... ]}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotmanagedintegrations-managedthing-capabilityreportcapability-syntax.yaml"></a>
 
-```
+```yaml
   [Actions](#cfn-iotmanagedintegrations-managedthing-capabilityreportcapability-actions): {{
     - String}}
   [Events](#cfn-iotmanagedintegrations-managedthing-capabilityreportcapability-events): {{

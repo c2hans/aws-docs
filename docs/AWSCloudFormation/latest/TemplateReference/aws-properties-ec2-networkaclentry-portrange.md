@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-networkaclentry-portrange-syntax.json"></a>
 
-```
+```json
 {
   "[From](#cfn-ec2-networkaclentry-portrange-from)" : {{Integer}},
   "[To](#cfn-ec2-networkaclentry-portrange-to)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-networkaclentry-portrange-syntax.yaml"></a>
 
-```
+```yaml
   [From](#cfn-ec2-networkaclentry-portrange-from): {{Integer}}
   [To](#cfn-ec2-networkaclentry-portrange-to): {{Integer}}
 ```

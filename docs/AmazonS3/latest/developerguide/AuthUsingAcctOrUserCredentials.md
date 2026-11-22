@@ -158,7 +158,7 @@ The following PHP example shows how the client makes a request using your securi
 
 **Example**
 
-```
+```PHP
 
 require 'vendor/autoload.php';
 
@@ -210,7 +210,7 @@ The following Ruby code snippet uses the credentials in a shared AWS credentials
 
 **Example**
 
-```
+```ruby
 # Prerequisites:
 #  - An existing Amazon S3 bucket.
 
@@ -260,7 +260,7 @@ If you don't have a local AWS credentials file, you can still create the `Aws::S
 
 You can use and expand the previous code snippet for SDK for Ruby applications, as in the following more robust example.
 
-```
+```ruby
 # Prerequisites:
 #  - An existing Amazon S3 bucket.
 
@@ -312,7 +312,7 @@ run_me if $PROGRAM_NAME == __FILE__
 **Example**
 The following example uses AWS credentials automatically loaded by the SDK for Go from the shared credentials file.
 
-```
+```go
 package main
 
 import (

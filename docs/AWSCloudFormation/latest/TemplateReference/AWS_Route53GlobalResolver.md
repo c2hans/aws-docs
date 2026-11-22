@@ -9,6 +9,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 **Resource types**
 + [AWS::Route53GlobalResolver::AccessSource](aws-resource-route53globalresolver-accesssource.md)
 + [AWS::Route53GlobalResolver::AccessToken](aws-resource-route53globalresolver-accesstoken.md)
++ [AWS::Route53GlobalResolver::CoreNetworkEndpoint](aws-resource-route53globalresolver-corenetworkendpoint.md)
 + [AWS::Route53GlobalResolver::DnsView](aws-resource-route53globalresolver-dnsview.md)
 + [AWS::Route53GlobalResolver::FirewallDomainList](aws-resource-route53globalresolver-firewalldomainlist.md)
 + [AWS::Route53GlobalResolver::FirewallRule](aws-resource-route53globalresolver-firewallrule.md)

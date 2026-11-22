@@ -46,7 +46,7 @@ The following procedure uses the **Create table with Athena** workflow to create
 
 This example shows how to create a table namespace by using the AWS CLI. To use this example, replace the `{{user input placeholders}}` with your own information.
 
-```
+```bash
 aws s3tables create-namespace \
     --table-bucket-arn arn:aws:s3tables:{{us-east-1}}:{{111122223333}}:bucket/{{amzn-s3-demo-bucket1}} \
     --namespace {{example_namespace}}

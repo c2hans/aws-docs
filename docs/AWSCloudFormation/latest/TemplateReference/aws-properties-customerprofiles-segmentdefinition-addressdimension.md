@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-segmentdefinition-addressdimension-syntax.json"></a>
 
-```
+```json
 {
   "[City](#cfn-customerprofiles-segmentdefinition-addressdimension-city)" : {{ProfileDimension}},
   "[Country](#cfn-customerprofiles-segmentdefinition-addressdimension-country)" : {{ProfileDimension}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-segmentdefinition-addressdimension-syntax.yaml"></a>
 
-```
+```yaml
   [City](#cfn-customerprofiles-segmentdefinition-addressdimension-city): {{
     ProfileDimension}}
   [Country](#cfn-customerprofiles-segmentdefinition-addressdimension-country): {{

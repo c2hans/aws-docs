@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-databrew-recipe-secondaryinput-syntax.json"></a>
 
-```
+```json
 {
   "[DataCatalogInputDefinition](#cfn-databrew-recipe-secondaryinput-datacataloginputdefinition)" : {{DataCatalogInputDefinition}},
   "[S3InputDefinition](#cfn-databrew-recipe-secondaryinput-s3inputdefinition)" : {{S3Location}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-databrew-recipe-secondaryinput-syntax.yaml"></a>
 
-```
+```yaml
   [DataCatalogInputDefinition](#cfn-databrew-recipe-secondaryinput-datacataloginputdefinition): {{
     DataCatalogInputDefinition}}
   [S3InputDefinition](#cfn-databrew-recipe-secondaryinput-s3inputdefinition): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-config-organizationconformancepack-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-config-organizationconformancepack-tag-key)" : {{String}},
   "[Value](#cfn-config-organizationconformancepack-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-config-organizationconformancepack-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-config-organizationconformancepack-tag-key): {{String}}
   [Value](#cfn-config-organizationconformancepack-tag-value): {{String}}
 ```

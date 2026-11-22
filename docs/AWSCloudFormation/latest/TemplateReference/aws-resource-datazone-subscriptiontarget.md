@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-datazone-subscriptiontarget-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DataZone::SubscriptionTarget",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-datazone-subscriptiontarget-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DataZone::SubscriptionTarget
 Properties:
   [ApplicableAssetTypes](#cfn-datazone-subscriptiontarget-applicableassettypes): {{

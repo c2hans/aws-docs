@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rtbfabric-link-filter-syntax.json"></a>
 
-```
+```json
 {
   "[Criteria](#cfn-rtbfabric-link-filter-criteria)" : {{[ FilterCriterion, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rtbfabric-link-filter-syntax.yaml"></a>
 
-```
+```yaml
   [Criteria](#cfn-rtbfabric-link-filter-criteria): {{
     - FilterCriterion}}
 ```

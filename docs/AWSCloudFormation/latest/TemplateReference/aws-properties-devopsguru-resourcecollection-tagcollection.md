@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsguru-resourcecollection-tagcollection-syntax.json"></a>
 
-```
+```json
 {
   "[AppBoundaryKey](#cfn-devopsguru-resourcecollection-tagcollection-appboundarykey)" : {{String}},
   "[TagValues](#cfn-devopsguru-resourcecollection-tagcollection-tagvalues)" : {{[ String, ... ]}}
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsguru-resourcecollection-tagcollection-syntax.yaml"></a>
 
-```
+```yaml
   [AppBoundaryKey](#cfn-devopsguru-resourcecollection-tagcollection-appboundarykey): {{String}}
   [TagValues](#cfn-devopsguru-resourcecollection-tagcollection-tagvalues): {{
     - String}}

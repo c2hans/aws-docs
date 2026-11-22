@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-securityhub-productsubscription-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SecurityHub::ProductSubscription",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-securityhub-productsubscription-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SecurityHub::ProductSubscription
 Properties:
   [ProductArn](#cfn-securityhub-productsubscription-productarn): {{String}}
@@ -82,7 +82,7 @@ The following example creates a Security Hub CSPM product subscription to the sp
 #### JSON
 <a name="aws-resource-securityhub-productsubscription--examples--Creating_a_product_subscription--json"></a>
 
-```
+```json
 {
 	"Description": "Example template to create a Security Hub product subscription",
 	"Resources": {
@@ -101,7 +101,7 @@ The following example creates a Security Hub CSPM product subscription to the sp
 #### YAML
 <a name="aws-resource-securityhub-productsubscription--examples--Creating_a_product_subscription--yaml"></a>
 
-```
+```yaml
 Description: Example template to create a Security Hub product subscription
 Resources:
   SecurityHubProductSubscription:

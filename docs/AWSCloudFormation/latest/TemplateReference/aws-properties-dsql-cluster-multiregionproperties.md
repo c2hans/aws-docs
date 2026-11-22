@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dsql-cluster-multiregionproperties-syntax.json"></a>
 
-```
+```json
 {
   "[Clusters](#cfn-dsql-cluster-multiregionproperties-clusters)" : {{[ String, ... ]}},
   "[WitnessRegion](#cfn-dsql-cluster-multiregionproperties-witnessregion)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dsql-cluster-multiregionproperties-syntax.yaml"></a>
 
-```
+```yaml
   [Clusters](#cfn-dsql-cluster-multiregionproperties-clusters): {{
     - String}}
   [WitnessRegion](#cfn-dsql-cluster-multiregionproperties-witnessregion): {{String}}

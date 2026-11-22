@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-capacityprovider-autoscalinggroupprovider-syntax.json"></a>
 
-```
+```json
 {
   "[AutoScalingGroupArn](#cfn-ecs-capacityprovider-autoscalinggroupprovider-autoscalinggrouparn)" : {{String}},
   "[ManagedDraining](#cfn-ecs-capacityprovider-autoscalinggroupprovider-manageddraining)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-capacityprovider-autoscalinggroupprovider-syntax.yaml"></a>
 
-```
+```yaml
   [AutoScalingGroupArn](#cfn-ecs-capacityprovider-autoscalinggroupprovider-autoscalinggrouparn): {{String}}
   [ManagedDraining](#cfn-ecs-capacityprovider-autoscalinggroupprovider-manageddraining): {{String}}
   [ManagedScaling](#cfn-ecs-capacityprovider-autoscalinggroupprovider-managedscaling): {{

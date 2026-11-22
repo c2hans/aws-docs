@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 
 The `04-Query-Test.cs` program performs `Query` operations on `TryDaxTable`.
 
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;

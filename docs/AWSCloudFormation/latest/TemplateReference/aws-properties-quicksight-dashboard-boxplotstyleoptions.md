@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-boxplotstyleoptions-syntax.json"></a>
 
-```
+```json
 {
   "[FillStyle](#cfn-quicksight-dashboard-boxplotstyleoptions-fillstyle)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-boxplotstyleoptions-syntax.yaml"></a>
 
-```
+```yaml
   [FillStyle](#cfn-quicksight-dashboard-boxplotstyleoptions-fillstyle): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cases-caserule-booleanoperands-syntax.json"></a>
 
-```
+```json
 {
   "[OperandOne](#cfn-cases-caserule-booleanoperands-operandone)" : {{OperandOne}},
   "[OperandTwo](#cfn-cases-caserule-booleanoperands-operandtwo)" : {{OperandTwo}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cases-caserule-booleanoperands-syntax.yaml"></a>
 
-```
+```yaml
   [OperandOne](#cfn-cases-caserule-booleanoperands-operandone): {{
     OperandOne}}
   [OperandTwo](#cfn-cases-caserule-booleanoperands-operandtwo): {{

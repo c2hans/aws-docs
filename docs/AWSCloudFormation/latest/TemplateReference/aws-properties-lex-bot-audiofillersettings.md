@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-audiofillersettings-syntax.json"></a>
 
-```
+```json
 {
   "[AudioType](#cfn-lex-bot-audiofillersettings-audiotype)" : {{String}},
   "[Enabled](#cfn-lex-bot-audiofillersettings-enabled)" : {{Boolean}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-audiofillersettings-syntax.yaml"></a>
 
-```
+```yaml
   [AudioType](#cfn-lex-bot-audiofillersettings-audiotype): {{String}}
   [Enabled](#cfn-lex-bot-audiofillersettings-enabled): {{Boolean}}
   [MinimumPlayDurationInMilliseconds](#cfn-lex-bot-audiofillersettings-minimumplaydurationinmilliseconds): {{Integer}}

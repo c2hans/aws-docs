@@ -78,7 +78,7 @@ For the CLI, transformation job history information is stored locally in the `.a
 
 The basic command to view your transformation job history is:
 
-```
+```bash
 qct history
 ```
 
@@ -86,6 +86,6 @@ By default, this command displays the 10 most recent transformation jobs, in add
 
 You can also specify how many job history entries to display with the **--limit** flag. For example, to show 20 jobs, run:
 
-```
+```bash
 qct history --limit 20
 ```

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchservice-domain-masteruseroptions-syntax.json"></a>
 
-```
+```json
 {
   "[MasterUserARN](#cfn-opensearchservice-domain-masteruseroptions-masteruserarn)" : {{String}},
   "[MasterUserName](#cfn-opensearchservice-domain-masteruseroptions-masterusername)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchservice-domain-masteruseroptions-syntax.yaml"></a>
 
-```
+```yaml
   [MasterUserARN](#cfn-opensearchservice-domain-masteruseroptions-masteruserarn): {{String}}
   [MasterUserName](#cfn-opensearchservice-domain-masteruseroptions-masterusername): {{String}}
   [MasterUserPassword](#cfn-opensearchservice-domain-masteruseroptions-masteruserpassword): {{String}}

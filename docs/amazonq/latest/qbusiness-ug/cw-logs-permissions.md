@@ -13,7 +13,7 @@ To set up Amazon CloudWatch Logs for Amazon Q Business, use the following IAM po
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

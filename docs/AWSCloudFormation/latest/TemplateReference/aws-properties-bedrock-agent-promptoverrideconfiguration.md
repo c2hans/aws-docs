@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-agent-promptoverrideconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[OverrideLambda](#cfn-bedrock-agent-promptoverrideconfiguration-overridelambda)" : {{String}},
   "[PromptConfigurations](#cfn-bedrock-agent-promptoverrideconfiguration-promptconfigurations)" : {{[ PromptConfiguration, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-agent-promptoverrideconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [OverrideLambda](#cfn-bedrock-agent-promptoverrideconfiguration-overridelambda): {{String}}
   [PromptConfigurations](#cfn-bedrock-agent-promptoverrideconfiguration-promptconfigurations): {{
     - PromptConfiguration}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-datasource-sagemakerrunconfigurationinput-syntax.json"></a>
 
-```
+```json
 {
   "[TrackingAssets](#cfn-datazone-datasource-sagemakerrunconfigurationinput-trackingassets)" : {{{{{Key}}: {{Value}}, ...}}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-datasource-sagemakerrunconfigurationinput-syntax.yaml"></a>
 
-```
+```yaml
   [TrackingAssets](#cfn-datazone-datasource-sagemakerrunconfigurationinput-trackingassets): {{
     {{Key}}: {{Value}}}}
 ```

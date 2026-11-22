@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-tasktemplate-field-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-connect-tasktemplate-field-description)" : {{String}},
   "[Id](#cfn-connect-tasktemplate-field-id)" : {{FieldIdentifier}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-tasktemplate-field-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-connect-tasktemplate-field-description): {{String}}
   [Id](#cfn-connect-tasktemplate-field-id): {{
     FieldIdentifier}}

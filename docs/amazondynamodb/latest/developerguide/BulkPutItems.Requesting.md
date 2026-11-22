@@ -77,7 +77,7 @@ aws dynamodb start-bulk-put-items \
 
 The following example uses the AWS SDK for Python (Boto3) to start a bulk put items operation.
 
-```
+```python
 import boto3
 
 client = boto3.client("dynamodb")
@@ -158,7 +158,7 @@ aws dynamodb describe-bulk-operation \
 ### Describing an operation (Python)
 <a name="BulkPutItems.Requesting.Describe.Python"></a>
 
-```
+```python
 import boto3
 
 client = boto3.client("dynamodb")
@@ -203,7 +203,7 @@ aws dynamodb list-bulk-operations \
 ### Listing operations (Python)
 <a name="BulkPutItems.Requesting.List.Python"></a>
 
-```
+```python
 import boto3
 
 client = boto3.client("dynamodb")
@@ -236,7 +236,7 @@ aws dynamodb cancel-bulk-operation \
 ### Cancelling an operation (Python)
 <a name="BulkPutItems.Requesting.Cancel.Python"></a>
 
-```
+```python
 import boto3
 
 client = boto3.client("dynamodb")

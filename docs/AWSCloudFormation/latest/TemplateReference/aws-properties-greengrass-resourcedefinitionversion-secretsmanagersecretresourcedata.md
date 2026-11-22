@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrass-resourcedefinitionversion-secretsmanagersecretresourcedata-syntax.json"></a>
 
-```
+```json
 {
   "[AdditionalStagingLabelsToDownload](#cfn-greengrass-resourcedefinitionversion-secretsmanagersecretresourcedata-additionalstaginglabelstodownload)" : {{[ String, ... ]}},
   "[ARN](#cfn-greengrass-resourcedefinitionversion-secretsmanagersecretresourcedata-arn)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrass-resourcedefinitionversion-secretsmanagersecretresourcedata-syntax.yaml"></a>
 
-```
+```yaml
   [AdditionalStagingLabelsToDownload](#cfn-greengrass-resourcedefinitionversion-secretsmanagersecretresourcedata-additionalstaginglabelstodownload): {{
     - String}}
   [ARN](#cfn-greengrass-resourcedefinitionversion-secretsmanagersecretresourcedata-arn): {{String}}

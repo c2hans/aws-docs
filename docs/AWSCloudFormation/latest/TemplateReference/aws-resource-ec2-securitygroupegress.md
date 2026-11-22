@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-securitygroupegress-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::SecurityGroupEgress",
   "Properties" : {
@@ -44,7 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-securitygroupegress-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::SecurityGroupEgress
 Properties:
   [CidrIp](#cfn-ec2-securitygroupegress-cidrip): {{String}}
@@ -144,7 +144,7 @@ In some cases, you might have an originating (source) security group to which yo
 #### JSON
 <a name="aws-resource-ec2-securitygroupegress--examples--VPC_security_groups_with_egress_and_ingress_rules--json"></a>
 
-```
+```json
 "SourceSG": {
    "Type": "AWS::EC2::SecurityGroup",
    "Properties": {
@@ -204,7 +204,7 @@ In some cases, you might have an originating (source) security group to which yo
 #### YAML
 <a name="aws-resource-ec2-securitygroupegress--examples--VPC_security_groups_with_egress_and_ingress_rules--yaml"></a>
 
-```
+```yaml
 SourceSG:
   Type: AWS::EC2::SecurityGroup
   Properties:

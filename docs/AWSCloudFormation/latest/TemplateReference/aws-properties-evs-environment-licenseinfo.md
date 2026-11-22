@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-evs-environment-licenseinfo-syntax.json"></a>
 
-```
+```json
 {
   "[SolutionKey](#cfn-evs-environment-licenseinfo-solutionkey)" : {{String}},
   "[VsanKey](#cfn-evs-environment-licenseinfo-vsankey)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-evs-environment-licenseinfo-syntax.yaml"></a>
 
-```
+```yaml
   [SolutionKey](#cfn-evs-environment-licenseinfo-solutionkey): {{String}}
   [VsanKey](#cfn-evs-environment-licenseinfo-vsankey): {{String}}
 ```

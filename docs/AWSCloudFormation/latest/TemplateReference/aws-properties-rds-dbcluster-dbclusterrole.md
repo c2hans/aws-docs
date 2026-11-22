@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rds-dbcluster-dbclusterrole-syntax.json"></a>
 
-```
+```json
 {
   "[FeatureName](#cfn-rds-dbcluster-dbclusterrole-featurename)" : {{String}},
   "[RoleArn](#cfn-rds-dbcluster-dbclusterrole-rolearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rds-dbcluster-dbclusterrole-syntax.yaml"></a>
 
-```
+```yaml
   [FeatureName](#cfn-rds-dbcluster-dbclusterrole-featurename): {{String}}
   [RoleArn](#cfn-rds-dbcluster-dbclusterrole-rolearn): {{String}}
 ```
@@ -57,7 +57,7 @@ The following specifies a role to associate with a DB cluster.
 #### JSON
 <a name="aws-properties-rds-dbcluster-dbclusterrole--examples----json"></a>
 
-```
+```json
 "AssociatedRoles": [
     {
         "FeatureName": "s3Import",
@@ -69,7 +69,7 @@ The following specifies a role to associate with a DB cluster.
 #### YAML
 <a name="aws-properties-rds-dbcluster-dbclusterrole--examples----yaml"></a>
 
-```
+```yaml
 AssociatedRoles:
     - FeatureName: s3Import
       RoleArn: 'arn:aws:iam::123456789012:role/RDSLoadFromS3'

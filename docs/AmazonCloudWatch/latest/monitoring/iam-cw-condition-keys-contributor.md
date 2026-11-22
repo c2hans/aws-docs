@@ -39,7 +39,7 @@ The following policy grants permission to create Contributor Insights rules for 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -70,7 +70,7 @@ The following policy allows creating rules for any log group by default, but exp
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -102,7 +102,7 @@ The following policy allows creating rules for any log group by default, but exp
 
 The following policy denies creation of rules that target log groups with `/production/` in the ARN path.
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [

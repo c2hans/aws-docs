@@ -8,7 +8,7 @@ Collects enterprise events, user inventory, group inventory, group memberships, 
 
 Configure the Box source with the following parameters:
 
-```
+```yaml
 source:
   box:
     enterprise_id: "123456789"

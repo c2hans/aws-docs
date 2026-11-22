@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-bodysectionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Content](#cfn-quicksight-analysis-bodysectionconfiguration-content)" : {{BodySectionContent}},
   "[PageBreakConfiguration](#cfn-quicksight-analysis-bodysectionconfiguration-pagebreakconfiguration)" : {{SectionPageBreakConfiguration}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-bodysectionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Content](#cfn-quicksight-analysis-bodysectionconfiguration-content): {{
     BodySectionContent}}
   [PageBreakConfiguration](#cfn-quicksight-analysis-bodysectionconfiguration-pagebreakconfiguration): {{

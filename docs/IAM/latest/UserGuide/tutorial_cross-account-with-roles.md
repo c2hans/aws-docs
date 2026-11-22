@@ -94,7 +94,7 @@ Before you can create a role, you need the *account ID* of the **Originating** A
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -198,7 +198,7 @@ At this point, both Analysts and Developers have permissions that allow them to 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": {
@@ -236,7 +236,7 @@ In most environments, you may not need the following procedure. If, however, you
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": {
@@ -324,7 +324,7 @@ David's default environment uses the `David` user credentials from his default p
 
    David then sees the following in the output:
 
-   ```
+   ```json
    {
        "Credentials": {
            "SecretAccessKey": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",

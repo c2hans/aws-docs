@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrcontainers-securityconfiguration-iamconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[SystemRole](#cfn-emrcontainers-securityconfiguration-iamconfiguration-systemrole)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrcontainers-securityconfiguration-iamconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [SystemRole](#cfn-emrcontainers-securityconfiguration-iamconfiguration-systemrole): {{String}}
 ```
 

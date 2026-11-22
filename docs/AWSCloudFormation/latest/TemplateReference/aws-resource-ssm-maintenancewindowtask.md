@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ssm-maintenancewindowtask-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SSM::MaintenanceWindowTask",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ssm-maintenancewindowtask-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SSM::MaintenanceWindowTask
 Properties:
   [CutoffBehavior](#cfn-ssm-maintenancewindowtask-cutoffbehavior): {{String}}
@@ -227,7 +227,7 @@ The following example creates a maintenance window Run Command task that install
 #### JSON
 <a name="aws-resource-ssm-maintenancewindowtask--examples--Create_a_Run_Command_task_that_targets_instances_using_a_resource_group_name--json"></a>
 
-```
+```json
 {
     "Resources": {
         "PatchTask": {
@@ -301,7 +301,7 @@ The following example creates a maintenance window Run Command task that install
 #### YAML
 <a name="aws-resource-ssm-maintenancewindowtask--examples--Create_a_Run_Command_task_that_targets_instances_using_a_resource_group_name--yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   PatchTask:
@@ -355,7 +355,7 @@ The following example creates a maintenance window Run Command task that install
 #### JSON
 <a name="aws-resource-ssm-maintenancewindowtask--examples--Create_a_Run_Command_task_that_targets_instances_using_a_maintenance_window_target_ID--json"></a>
 
-```
+```json
 {
     "Resources": {
         "MaintenanceWindowRunCommandTask": {
@@ -397,7 +397,7 @@ The following example creates a maintenance window Run Command task that install
 #### YAML
 <a name="aws-resource-ssm-maintenancewindowtask--examples--Create_a_Run_Command_task_that_targets_instances_using_a_maintenance_window_target_ID--yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   MaintenanceWindowRunCommandTask:
@@ -431,7 +431,7 @@ The following example demonstrates running a command with `AWS-RunPowerShellScri
 #### JSON
 <a name="aws-resource-ssm-maintenancewindowtask--examples--Create_a_Run_Command_task_that_runs_a_PowerShell_script--json"></a>
 
-```
+```json
 {
     "Resources": {
         "MaintenanceWindowRunCommandTask": {
@@ -480,7 +480,7 @@ The following example demonstrates running a command with `AWS-RunPowerShellScri
 #### YAML
 <a name="aws-resource-ssm-maintenancewindowtask--examples--Create_a_Run_Command_task_that_runs_a_PowerShell_script--yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   MaintenanceWindowRunCommandTask:
@@ -520,7 +520,7 @@ The following example creates a Systems Manager maintenance window task that use
 #### JSON
 <a name="aws-resource-ssm-maintenancewindowtask--examples--Create_a_task_that_runs_an_Automation_runbook--json"></a>
 
-```
+```json
 {
     "Resources": {
         "MaintenanceWindowStepFunctionsTask": {
@@ -562,7 +562,7 @@ The following example creates a Systems Manager maintenance window task that use
 #### YAML
 <a name="aws-resource-ssm-maintenancewindowtask--examples--Create_a_task_that_runs_an_Automation_runbook--yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   MaintenanceWindowStepFunctionsTask:
@@ -597,7 +597,7 @@ The following example creates a Systems Manager maintenance window task that run
 #### JSON
 <a name="aws-resource-ssm-maintenancewindowtask--examples--Create_a_Step_Functions_task_that_targets_a_maintenance_window_target_ID--json"></a>
 
-```
+```json
 {
     "Resources": {
         "MaintenanceWindowStepFunctionsTask": {
@@ -635,7 +635,7 @@ The following example creates a Systems Manager maintenance window task that run
 #### YAML
 <a name="aws-resource-ssm-maintenancewindowtask--examples--Create_a_Step_Functions_task_that_targets_a_maintenance_window_target_ID--yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   MaintenanceWindowStepFunctionsTask:
@@ -668,7 +668,7 @@ The following example creates a Systems Manager maintenance window task that run
 #### JSON
 <a name="aws-resource-ssm-maintenancewindowtask--examples--Create_a_Step_Functions_task_that_targets_an_instance_ID--json"></a>
 
-```
+```json
 {
     "Resources": {
         "StepFunctionsTask": {
@@ -706,7 +706,7 @@ The following example creates a Systems Manager maintenance window task that run
 #### YAML
 <a name="aws-resource-ssm-maintenancewindowtask--examples--Create_a_Step_Functions_task_that_targets_an_instance_ID--yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   StepFunctionsTask:
@@ -742,7 +742,7 @@ The value for `Payload` in `MaintenanceWindowLambdaParameters` must be formatted
 #### JSON
 <a name="aws-resource-ssm-maintenancewindowtask--examples--Create_a_task_that_runs_an_function--json"></a>
 
-```
+```json
 {
    "Resources": {
       "LambdaTask": {
@@ -770,7 +770,7 @@ The value for `Payload` in `MaintenanceWindowLambdaParameters` must be formatted
 #### YAML
 <a name="aws-resource-ssm-maintenancewindowtask--examples--Create_a_task_that_runs_an_function--yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   LambdaTask:

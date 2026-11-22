@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-evaluationform-evaluationformnumericquestionoption-syntax.json"></a>
 
-```
+```json
 {
   "[AutomaticFail](#cfn-connect-evaluationform-evaluationformnumericquestionoption-automaticfail)" : {{Boolean}},
   "[AutomaticFailConfiguration](#cfn-connect-evaluationform-evaluationformnumericquestionoption-automaticfailconfiguration)" : {{AutomaticFailConfiguration}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-evaluationform-evaluationformnumericquestionoption-syntax.yaml"></a>
 
-```
+```yaml
   [AutomaticFail](#cfn-connect-evaluationform-evaluationformnumericquestionoption-automaticfail): {{Boolean}}
   [AutomaticFailConfiguration](#cfn-connect-evaluationform-evaluationformnumericquestionoption-automaticfailconfiguration): {{
     AutomaticFailConfiguration}}

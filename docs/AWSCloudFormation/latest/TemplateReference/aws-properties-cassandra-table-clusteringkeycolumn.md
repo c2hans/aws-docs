@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cassandra-table-clusteringkeycolumn-syntax.json"></a>
 
-```
+```json
 {
   "[Column](#cfn-cassandra-table-clusteringkeycolumn-column)" : {{Column}},
   "[OrderBy](#cfn-cassandra-table-clusteringkeycolumn-orderby)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cassandra-table-clusteringkeycolumn-syntax.yaml"></a>
 
-```
+```yaml
   [Column](#cfn-cassandra-table-clusteringkeycolumn-column): {{
     Column}}
   [OrderBy](#cfn-cassandra-table-clusteringkeycolumn-orderby): {{String}}

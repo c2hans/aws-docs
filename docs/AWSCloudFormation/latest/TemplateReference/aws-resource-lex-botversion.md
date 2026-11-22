@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lex-botversion-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lex::BotVersion",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lex-botversion-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lex::BotVersion
 Properties:
   [BotId](#cfn-lex-botversion-botid): {{String}}

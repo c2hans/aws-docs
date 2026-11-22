@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-expressgatewayservice-ingresspatharns-syntax.json"></a>
 
-```
+```json
 {
   "[CertificateArn](#cfn-ecs-expressgatewayservice-ingresspatharns-certificatearn)" : {{String}},
   "[ListenerArn](#cfn-ecs-expressgatewayservice-ingresspatharns-listenerarn)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-expressgatewayservice-ingresspatharns-syntax.yaml"></a>
 
-```
+```yaml
   [CertificateArn](#cfn-ecs-expressgatewayservice-ingresspatharns-certificatearn): {{String}}
   [ListenerArn](#cfn-ecs-expressgatewayservice-ingresspatharns-listenerarn): {{String}}
   [ListenerRuleArn](#cfn-ecs-expressgatewayservice-ingresspatharns-listenerrulearn): {{String}}

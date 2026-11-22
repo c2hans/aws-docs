@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-paymentcredentialprovider-stripeprivyconfigurationinput-syntax.json"></a>
 
-```
+```json
 {
   "[AppId](#cfn-bedrockagentcore-paymentcredentialprovider-stripeprivyconfigurationinput-appid)" : {{String}},
   "[AppSecret](#cfn-bedrockagentcore-paymentcredentialprovider-stripeprivyconfigurationinput-appsecret)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-paymentcredentialprovider-stripeprivyconfigurationinput-syntax.yaml"></a>
 
-```
+```yaml
   [AppId](#cfn-bedrockagentcore-paymentcredentialprovider-stripeprivyconfigurationinput-appid): {{String}}
   [AppSecret](#cfn-bedrockagentcore-paymentcredentialprovider-stripeprivyconfigurationinput-appsecret): {{String}}
   [AppSecretConfig](#cfn-bedrockagentcore-paymentcredentialprovider-stripeprivyconfigurationinput-appsecretconfig): {{

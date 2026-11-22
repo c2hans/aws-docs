@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-usecase-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-connect-usecase-tag-key)" : {{String}},
   "[Value](#cfn-connect-usecase-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-usecase-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-connect-usecase-tag-key): {{String}}
   [Value](#cfn-connect-usecase-tag-value): {{String}}
 ```

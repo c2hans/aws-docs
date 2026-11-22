@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-routernetworkinterface-publicrouternetworkinterfaceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AllowRules](#cfn-mediaconnect-routernetworkinterface-publicrouternetworkinterfaceconfiguration-allowrules)" : {{[ PublicRouterNetworkInterfaceRule, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-routernetworkinterface-publicrouternetworkinterfaceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AllowRules](#cfn-mediaconnect-routernetworkinterface-publicrouternetworkinterfaceconfiguration-allowrules): {{
     - PublicRouterNetworkInterfaceRule}}
 ```

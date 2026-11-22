@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-dvbsdtsettings-syntax.json"></a>
 
-```
+```json
 {
   "[OutputSdt](#cfn-medialive-channel-dvbsdtsettings-outputsdt)" : {{String}},
   "[RepInterval](#cfn-medialive-channel-dvbsdtsettings-repinterval)" : {{Integer}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-dvbsdtsettings-syntax.yaml"></a>
 
-```
+```yaml
   [OutputSdt](#cfn-medialive-channel-dvbsdtsettings-outputsdt): {{String}}
   [RepInterval](#cfn-medialive-channel-dvbsdtsettings-repinterval): {{Integer}}
   [ServiceName](#cfn-medialive-channel-dvbsdtsettings-servicename): {{String}}

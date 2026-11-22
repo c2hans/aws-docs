@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcaconnectorad-template-keyusageproperty-syntax.json"></a>
 
-```
+```json
 {
   "[PropertyFlags](#cfn-pcaconnectorad-template-keyusageproperty-propertyflags)" : {{KeyUsagePropertyFlags}},
   "[PropertyType](#cfn-pcaconnectorad-template-keyusageproperty-propertytype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcaconnectorad-template-keyusageproperty-syntax.yaml"></a>
 
-```
+```yaml
   [PropertyFlags](#cfn-pcaconnectorad-template-keyusageproperty-propertyflags): {{
     KeyUsagePropertyFlags}}
   [PropertyType](#cfn-pcaconnectorad-template-keyusageproperty-propertytype): {{String}}

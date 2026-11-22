@@ -32,7 +32,7 @@ The following identity-based policy allows `Read` and `Write` access to objects 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -72,7 +72,7 @@ The following example permissions policy limits a user to reading objects that h
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

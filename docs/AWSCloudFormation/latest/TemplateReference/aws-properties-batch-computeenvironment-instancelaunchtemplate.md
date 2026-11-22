@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-computeenvironment-instancelaunchtemplate-syntax.json"></a>
 
-```
+```json
 {
   "[CapacityOptionType](#cfn-batch-computeenvironment-instancelaunchtemplate-capacityoptiontype)" : {{String}},
   "[CapacityReservations](#cfn-batch-computeenvironment-instancelaunchtemplate-capacityreservations)" : {{CapacityReservations}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-computeenvironment-instancelaunchtemplate-syntax.yaml"></a>
 
-```
+```yaml
   [CapacityOptionType](#cfn-batch-computeenvironment-instancelaunchtemplate-capacityoptiontype): {{String}}
   [CapacityReservations](#cfn-batch-computeenvironment-instancelaunchtemplate-capacityreservations): {{
     CapacityReservations}}

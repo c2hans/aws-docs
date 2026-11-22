@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-connect-securityprofile-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Connect::SecurityProfile",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-connect-securityprofile-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Connect::SecurityProfile
 Properties:
   [AllowedAccessControlHierarchyGroupId](#cfn-connect-securityprofile-allowedaccesscontrolhierarchygroupid): {{String}}

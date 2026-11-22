@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-annotationtableconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ConfigurationState](#cfn-s3-bucket-annotationtableconfiguration-configurationstate)" : {{String}},
   "[EncryptionConfiguration](#cfn-s3-bucket-annotationtableconfiguration-encryptionconfiguration)" : {{MetadataTableEncryptionConfiguration}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-annotationtableconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ConfigurationState](#cfn-s3-bucket-annotationtableconfiguration-configurationstate): {{String}}
   [EncryptionConfiguration](#cfn-s3-bucket-annotationtableconfiguration-encryptionconfiguration): {{
     MetadataTableEncryptionConfiguration}}
@@ -90,7 +90,7 @@ The following example enables an annotation table configuration with server-side
 #### JSON
 <a name="aws-properties-s3-bucket-annotationtableconfiguration--examples--Enable_an_annotation_table_with_SSE-KMS_encryption--json"></a>
 
-```
+```json
 {
   "Resources": {
     "S3Bucket": {
@@ -117,7 +117,7 @@ The following example enables an annotation table configuration with server-side
 #### YAML
 <a name="aws-properties-s3-bucket-annotationtableconfiguration--examples--Enable_an_annotation_table_with_SSE-KMS_encryption--yaml"></a>
 
-```
+```yaml
 Resources:
   S3Bucket:
     Type: AWS::S3::Bucket
@@ -141,7 +141,7 @@ The following example disables an annotation table configuration. Disabling the 
 #### JSON
 <a name="aws-properties-s3-bucket-annotationtableconfiguration--examples--Disable_an_annotation_table--json"></a>
 
-```
+```json
 {
   "Resources": {
     "S3Bucket": {
@@ -163,7 +163,7 @@ The following example disables an annotation table configuration. Disabling the 
 #### YAML
 <a name="aws-properties-s3-bucket-annotationtableconfiguration--examples--Disable_an_annotation_table--yaml"></a>
 
-```
+```yaml
 Resources:
   S3Bucket:
     Type: AWS::S3::Bucket

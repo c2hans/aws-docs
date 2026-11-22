@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-filterrule-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-s3-bucket-filterrule-name)" : {{String}},
   "[Value](#cfn-s3-bucket-filterrule-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-filterrule-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-s3-bucket-filterrule-name): {{String}}
   [Value](#cfn-s3-bucket-filterrule-value): {{String}}
 ```

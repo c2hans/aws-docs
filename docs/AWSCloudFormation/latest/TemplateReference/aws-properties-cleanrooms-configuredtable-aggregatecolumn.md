@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-configuredtable-aggregatecolumn-syntax.json"></a>
 
-```
+```json
 {
   "[ColumnNames](#cfn-cleanrooms-configuredtable-aggregatecolumn-columnnames)" : {{[ String, ... ]}},
   "[Function](#cfn-cleanrooms-configuredtable-aggregatecolumn-function)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-configuredtable-aggregatecolumn-syntax.yaml"></a>
 
-```
+```yaml
   [ColumnNames](#cfn-cleanrooms-configuredtable-aggregatecolumn-columnnames): {{
     - String}}
   [Function](#cfn-cleanrooms-configuredtable-aggregatecolumn-function): {{String}}

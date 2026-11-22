@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-transitgateway-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::TransitGateway",
   "Properties" : {
@@ -51,7 +51,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-transitgateway-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::TransitGateway
 Properties:
   [AmazonSideAsn](#cfn-ec2-transitgateway-amazonsideasn): {{Integer}}
@@ -205,7 +205,7 @@ The following example declares a transit gateway.
 #### JSON
 <a name="aws-resource-ec2-transitgateway--examples--Create_a_transit_gateway--json"></a>
 
-```
+```json
 "myTransitGateway": {
    "Type": "AWS::EC2::TransitGateway",
    "Properties": {
@@ -231,7 +231,7 @@ The following example declares a transit gateway.
 #### YAML
 <a name="aws-resource-ec2-transitgateway--examples--Create_a_transit_gateway--yaml"></a>
 
-```
+```yaml
   myTransitGateway:
     Type: "AWS::EC2::TransitGateway"
     Properties:

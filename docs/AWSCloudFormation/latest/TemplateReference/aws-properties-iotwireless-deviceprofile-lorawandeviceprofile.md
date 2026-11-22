@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotwireless-deviceprofile-lorawandeviceprofile-syntax.json"></a>
 
-```
+```json
 {
   "[ClassBTimeout](#cfn-iotwireless-deviceprofile-lorawandeviceprofile-classbtimeout)" : {{Integer}},
   "[ClassCTimeout](#cfn-iotwireless-deviceprofile-lorawandeviceprofile-classctimeout)" : {{Integer}},
@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotwireless-deviceprofile-lorawandeviceprofile-syntax.yaml"></a>
 
-```
+```yaml
   [ClassBTimeout](#cfn-iotwireless-deviceprofile-lorawandeviceprofile-classbtimeout): {{Integer}}
   [ClassCTimeout](#cfn-iotwireless-deviceprofile-lorawandeviceprofile-classctimeout): {{Integer}}
   [FactoryPresetFreqsList](#cfn-iotwireless-deviceprofile-lorawandeviceprofile-factorypresetfreqslist): {{

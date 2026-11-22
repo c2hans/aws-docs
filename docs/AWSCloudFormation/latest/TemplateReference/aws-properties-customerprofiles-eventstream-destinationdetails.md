@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-eventstream-destinationdetails-syntax.json"></a>
 
-```
+```json
 {
   "[Status](#cfn-customerprofiles-eventstream-destinationdetails-status)" : {{String}},
   "[Uri](#cfn-customerprofiles-eventstream-destinationdetails-uri)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-eventstream-destinationdetails-syntax.yaml"></a>
 
-```
+```yaml
   [Status](#cfn-customerprofiles-eventstream-destinationdetails-status): {{String}}
   [Uri](#cfn-customerprofiles-eventstream-destinationdetails-uri): {{String}}
 ```

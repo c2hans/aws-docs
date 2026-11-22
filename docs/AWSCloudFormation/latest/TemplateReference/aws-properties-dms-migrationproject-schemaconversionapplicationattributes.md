@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dms-migrationproject-schemaconversionapplicationattributes-syntax.json"></a>
 
-```
+```json
 {
   "[S3BucketPath](#cfn-dms-migrationproject-schemaconversionapplicationattributes-s3bucketpath)" : {{String}},
   "[S3BucketRoleArn](#cfn-dms-migrationproject-schemaconversionapplicationattributes-s3bucketrolearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dms-migrationproject-schemaconversionapplicationattributes-syntax.yaml"></a>
 
-```
+```yaml
   [S3BucketPath](#cfn-dms-migrationproject-schemaconversionapplicationattributes-s3bucketpath): {{String}}
   [S3BucketRoleArn](#cfn-dms-migrationproject-schemaconversionapplicationattributes-s3bucketrolearn): {{String}}
 ```

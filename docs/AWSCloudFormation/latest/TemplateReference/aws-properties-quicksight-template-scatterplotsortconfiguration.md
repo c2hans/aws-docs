@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-scatterplotsortconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ScatterPlotLimitConfiguration](#cfn-quicksight-template-scatterplotsortconfiguration-scatterplotlimitconfiguration)" : {{ItemsLimitConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-scatterplotsortconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ScatterPlotLimitConfiguration](#cfn-quicksight-template-scatterplotsortconfiguration-scatterplotlimitconfiguration): {{
     ItemsLimitConfiguration}}
 ```

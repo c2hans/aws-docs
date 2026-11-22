@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-capacityprovider-licensespecification-syntax.json"></a>
 
-```
+```json
 {
   "[LicenseConfigurationArn](#cfn-bedrockagentcore-capacityprovider-licensespecification-licenseconfigurationarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-capacityprovider-licensespecification-syntax.yaml"></a>
 
-```
+```yaml
   [LicenseConfigurationArn](#cfn-bedrockagentcore-capacityprovider-licensespecification-licenseconfigurationarn): {{String}}
 ```
 

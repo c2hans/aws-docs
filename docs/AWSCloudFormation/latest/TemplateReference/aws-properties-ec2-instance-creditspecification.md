@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-instance-creditspecification-syntax.json"></a>
 
-```
+```json
 {
   "[CPUCredits](#cfn-ec2-instance-creditspecification-cpucredits)" : {{String}}
 }
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-instance-creditspecification-syntax.yaml"></a>
 
-```
+```yaml
   [CPUCredits](#cfn-ec2-instance-creditspecification-cpucredits): {{String}}
 ```
 

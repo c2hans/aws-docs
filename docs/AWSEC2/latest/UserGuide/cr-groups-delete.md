@@ -37,7 +37,7 @@ aws resource-groups delete-group --group {{MyCRGroup}}
 **To delete a group**
 Use the [Remove-RGGroup](https://docs.aws.amazon.com/powershell/latest/reference/items/Remove-RGGroup.html) cmdlet.
 
-```
+```powershell
 Remove-RGGroup -GroupName {{MyCRGroup}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-route53resolver-firewallrulegroupassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Route53Resolver::FirewallRuleGroupAssociation",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-route53resolver-firewallrulegroupassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53Resolver::FirewallRuleGroupAssociation
 Properties:
   [FirewallRuleGroupId](#cfn-route53resolver-firewallrulegroupassociation-firewallrulegroupid): {{String}}

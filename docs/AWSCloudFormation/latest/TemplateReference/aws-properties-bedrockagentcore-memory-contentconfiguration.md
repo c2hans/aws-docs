@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-memory-contentconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Level](#cfn-bedrockagentcore-memory-contentconfiguration-level)" : {{String}},
   "[Type](#cfn-bedrockagentcore-memory-contentconfiguration-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-memory-contentconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Level](#cfn-bedrockagentcore-memory-contentconfiguration-level): {{String}}
   [Type](#cfn-bedrockagentcore-memory-contentconfiguration-type): {{String}}
 ```

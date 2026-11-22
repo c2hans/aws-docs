@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-jobtimeout-syntax.json"></a>
 
-```
+```json
 {
   "[AttemptDurationSeconds](#cfn-batch-jobdefinition-jobtimeout-attemptdurationseconds)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-jobtimeout-syntax.yaml"></a>
 
-```
+```yaml
   [AttemptDurationSeconds](#cfn-batch-jobdefinition-jobtimeout-attemptdurationseconds): {{Integer}}
 ```
 

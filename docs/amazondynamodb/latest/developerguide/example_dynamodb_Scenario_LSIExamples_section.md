@@ -15,7 +15,7 @@ The following code example shows how to create and query tables with Local Secon
 **AWS CLI with Bash script**
 Create a table with a Local Secondary Index.
 
-```
+```bash
 # Create a table with a Local Secondary Index
 aws dynamodb create-table \
     --table-name CustomerOrders \
@@ -34,7 +34,7 @@ aws dynamodb create-table \
 ```
 Create a table with multiple LSIs.
 
-```
+```bash
 # Create a table with multiple Local Secondary Indexes
 aws dynamodb create-table \
     --table-name CustomerDetails \
@@ -69,7 +69,7 @@ aws dynamodb create-table \
 ```
 Query data using LSIs.
 
-```
+```bash
 # Query the OrderDateIndex LSI
 aws dynamodb query \
     --table-name CustomerOrders \

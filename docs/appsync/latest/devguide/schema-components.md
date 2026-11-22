@@ -15,7 +15,7 @@ To visualize what a schema would look like, let's review the contents of a simpl
 ------
 #### [ schema.graphql ]
 
-```
+```SDL
 type Person {
    id: ID!
    name: String

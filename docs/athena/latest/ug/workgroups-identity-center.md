@@ -71,7 +71,7 @@ The IAM user of the admin who creates the IAM Identity Center enabled workgroup 
 
 ****
 
-  ```
+  ```json
   { "Version":"2012-10-17",		 	 	  "Statement": [ { "Action": [ "iam:createRole",
       "iam:CreatePolicy", "iam:AttachRolePolicy", "iam:ListRoles", "identitystore:ListUsers",
       "identitystore:ListGroups", "identitystore:CreateUser", "identitystore:CreateGroup",
@@ -150,7 +150,7 @@ The following sample shows a policy for a role to attach to an Amazon S3 Access 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

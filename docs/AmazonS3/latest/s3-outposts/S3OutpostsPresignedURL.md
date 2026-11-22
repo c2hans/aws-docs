@@ -21,7 +21,7 @@ To enforce specific behavior when presigned URL requests are authenticated by us
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

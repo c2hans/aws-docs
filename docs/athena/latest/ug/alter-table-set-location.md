@@ -9,7 +9,7 @@ Changes the location for the table named `table_name`, and optionally a partitio
 ## Synopsis
 <a name="synopsis"></a>
 
-```
+```sql
 ALTER TABLE table_name [ PARTITION (partition_spec) ] SET LOCATION 'new location'
 ```
 
@@ -25,6 +25,6 @@ Specifies the new location, which must be an Amazon S3 location. For information
 ## Examples
 <a name="alter-table-set-location-examples"></a>
 
-```
+```sql
 ALTER TABLE customers PARTITION (zip='98040', state='WA') SET LOCATION 's3://amzn-s3-demo-bucket/custdata/';
 ```

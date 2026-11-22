@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-localnavigationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[TargetSheetId](#cfn-quicksight-dashboard-localnavigationconfiguration-targetsheetid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-localnavigationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [TargetSheetId](#cfn-quicksight-dashboard-localnavigationconfiguration-targetsheetid): {{String}}
 ```
 

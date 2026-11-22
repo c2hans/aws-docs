@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-pivottablefieldcollapsestatetarget-syntax.json"></a>
 
-```
+```json
 {
   "[FieldDataPathValues](#cfn-quicksight-analysis-pivottablefieldcollapsestatetarget-fielddatapathvalues)" : {{[ DataPathValue, ... ]}},
   "[FieldId](#cfn-quicksight-analysis-pivottablefieldcollapsestatetarget-fieldid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-pivottablefieldcollapsestatetarget-syntax.yaml"></a>
 
-```
+```yaml
   [FieldDataPathValues](#cfn-quicksight-analysis-pivottablefieldcollapsestatetarget-fielddatapathvalues): {{
     - DataPathValue}}
   [FieldId](#cfn-quicksight-analysis-pivottablefieldcollapsestatetarget-fieldid): {{String}}

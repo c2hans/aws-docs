@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-verifiedaccessinstance-verifiedaccesslogs-syntax.json"></a>
 
-```
+```json
 {
   "[CloudWatchLogs](#cfn-ec2-verifiedaccessinstance-verifiedaccesslogs-cloudwatchlogs)" : {{CloudWatchLogs}},
   "[IncludeTrustContext](#cfn-ec2-verifiedaccessinstance-verifiedaccesslogs-includetrustcontext)" : {{Boolean}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-verifiedaccessinstance-verifiedaccesslogs-syntax.yaml"></a>
 
-```
+```yaml
   [CloudWatchLogs](#cfn-ec2-verifiedaccessinstance-verifiedaccesslogs-cloudwatchlogs): {{
     CloudWatchLogs}}
   [IncludeTrustContext](#cfn-ec2-verifiedaccessinstance-verifiedaccesslogs-includetrustcontext): {{Boolean}}

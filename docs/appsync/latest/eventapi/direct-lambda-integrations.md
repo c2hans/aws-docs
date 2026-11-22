@@ -20,7 +20,7 @@ Your Lambda function receives a context object containing event information. The
 **Example Setting a Lambda configuration of a channel namespace in AWS CloudFormation**
 Set up a direct Lambda integration, configure `handlerConfigs` on your [channel namespace](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-channelnamespace.html) using AWS CloudFormation.
 
-```
+```json
 {
   "Type" : "AWS::AppSync::ChannelNamespace",
   "Properties" : {

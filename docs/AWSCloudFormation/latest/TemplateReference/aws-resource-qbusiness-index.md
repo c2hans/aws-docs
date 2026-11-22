@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-qbusiness-index-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::QBusiness::Index",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-qbusiness-index-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::QBusiness::Index
 Properties:
   [ApplicationId](#cfn-qbusiness-index-applicationid): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-inferencecomponent-alarm-syntax.json"></a>
 
-```
+```json
 {
   "[AlarmName](#cfn-sagemaker-inferencecomponent-alarm-alarmname)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-inferencecomponent-alarm-syntax.yaml"></a>
 
-```
+```yaml
   [AlarmName](#cfn-sagemaker-inferencecomponent-alarm-alarmname): {{String}}
 ```
 

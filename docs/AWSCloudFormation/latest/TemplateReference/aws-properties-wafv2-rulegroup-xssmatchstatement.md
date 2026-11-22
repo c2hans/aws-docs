@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-rulegroup-xssmatchstatement-syntax.json"></a>
 
-```
+```json
 {
   "[FieldToMatch](#cfn-wafv2-rulegroup-xssmatchstatement-fieldtomatch)" : {{FieldToMatch}},
   "[PreParseTextTransformations](#cfn-wafv2-rulegroup-xssmatchstatement-preparsetexttransformations)" : {{[ PreParseTextTransformation, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-rulegroup-xssmatchstatement-syntax.yaml"></a>
 
-```
+```yaml
   [FieldToMatch](#cfn-wafv2-rulegroup-xssmatchstatement-fieldtomatch): {{
     FieldToMatch}}
   [PreParseTextTransformations](#cfn-wafv2-rulegroup-xssmatchstatement-preparsetexttransformations): {{

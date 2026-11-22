@@ -10,7 +10,7 @@ For more information about the CloudWatch metrics you can specify, see [Predicti
 
 The following is an example policy with a predefined memory configuration.
 
-```
+```json
 cat policy.json
 {
     "MetricSpecifications": [
@@ -42,7 +42,7 @@ aws aas put-scaling-policy \
 
 If successful, this command returns the policy's ARN.
 
-```
+```json
 {
 "PolicyARN": "arn:aws:autoscaling:us-east-1:012345678912:scalingPolicy:d1d72dfe-5fd3-464f-83cf-824f16cb88b7:resource/ecs/service/MyCluster/test:policyName/predictive-scaling-policy-example",
 "Alarms": []

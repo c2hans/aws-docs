@@ -38,7 +38,7 @@ Amazon Q Developer also makes API calls with a `dryRun` parameter to verify that
 
 The following example shows a CloudTrail log entry that demonstrates the `SendMessage` action.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -111,7 +111,7 @@ The following example shows a CloudTrail log entry that demonstrates the `SendMe
 
 The following example shows a CloudTrail log entry that demonstrates the `PassRequest` action.
 
-```
+```json
 {
     "eventVersion": "1.09",
     "userIdentity": {
@@ -155,7 +155,7 @@ The following example shows a CloudTrail log entry that demonstrates the `PassRe
 
 The following example shows a CloudTrail log entry that demonstrates Amazon Q calling the `s3:ListBuckets` action on your behalf.
 
-```
+```json
 {
     "eventVersion": "1.09",
     "userIdentity": {

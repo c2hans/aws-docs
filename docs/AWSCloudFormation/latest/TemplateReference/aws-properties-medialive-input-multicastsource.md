@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-input-multicastsource-syntax.json"></a>
 
-```
+```json
 {
   "[SourceIp](#cfn-medialive-input-multicastsource-sourceip)" : {{String}},
   "[Url](#cfn-medialive-input-multicastsource-url)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-input-multicastsource-syntax.yaml"></a>
 
-```
+```yaml
   [SourceIp](#cfn-medialive-input-multicastsource-sourceip): {{String}}
   [Url](#cfn-medialive-input-multicastsource-url): {{String}}
 ```

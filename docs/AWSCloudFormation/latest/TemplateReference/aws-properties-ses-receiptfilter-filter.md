@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-receiptfilter-filter-syntax.json"></a>
 
-```
+```json
 {
   "[IpFilter](#cfn-ses-receiptfilter-filter-ipfilter)" : {{IpFilter}},
   "[Name](#cfn-ses-receiptfilter-filter-name)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-receiptfilter-filter-syntax.yaml"></a>
 
-```
+```yaml
   [IpFilter](#cfn-ses-receiptfilter-filter-ipfilter): {{
     IpFilter}}
   [Name](#cfn-ses-receiptfilter-filter-name): {{String}}

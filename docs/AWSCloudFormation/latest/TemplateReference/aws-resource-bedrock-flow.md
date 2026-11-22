@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-bedrock-flow-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Bedrock::Flow",
   "Properties" : {
@@ -44,7 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-bedrock-flow-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Bedrock::Flow
 Properties:
   [CustomerEncryptionKeyArn](#cfn-bedrock-flow-customerencryptionkeyarn): {{String}}

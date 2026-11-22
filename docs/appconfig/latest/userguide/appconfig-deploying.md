@@ -88,7 +88,7 @@ The following procedure describes how to use the AWS CLI (on Linux or Windows) o
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    Start-APPCDeployment `
      -ApplicationId {{The_application_ID}} `
      -ConfigurationProfileId {{The_configuration_profile_ID}} `

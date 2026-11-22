@@ -71,7 +71,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-logs-accountpolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Logs::AccountPolicy",
   "Properties" : {
@@ -87,7 +87,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-logs-accountpolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Logs::AccountPolicy
 Properties:
   [PolicyDocument](#cfn-logs-accountpolicy-policydocument): {{String}}
@@ -202,7 +202,7 @@ The following example creates an account-level field index policy that creates a
 #### JSON
 <a name="aws-resource-logs-accountpolicy--examples--Create_an_account-level_field_index_policy--json"></a>
 
-```
+```json
 "IndexingAccountPolicy": {
     "Type": "AWS::Logs::AccountPolicy",
     "Properties": {
@@ -218,7 +218,7 @@ The following example creates an account-level field index policy that creates a
 #### YAML
 <a name="aws-resource-logs-accountpolicy--examples--Create_an_account-level_field_index_policy--yaml"></a>
 
-```
+```yaml
 IndexingAccountPolicy:
   Type: AWS::Logs::AccountPolicy
     Properties:
@@ -237,7 +237,7 @@ The following example creates an account-level data protection policy that finds
 #### JSON
 <a name="aws-resource-logs-accountpolicy--examples--Create_an_account-level_data_protection_policy--json"></a>
 
-```
+```json
 {
     "Resources": {
         "AccountPolicy": {
@@ -256,7 +256,7 @@ The following example creates an account-level data protection policy that finds
 #### YAML
 <a name="aws-resource-logs-accountpolicy--examples--Create_an_account-level_data_protection_policy--yaml"></a>
 
-```
+```yaml
 Resources:
   AccountPolicy:
     Type: AWS::Logs::AccountPolicy
@@ -307,7 +307,7 @@ The following example creates an account-level subscription filter policy that f
 #### JSON
 <a name="aws-resource-logs-accountpolicy--examples--Create_an_account-level_subscription_filter_policy--json"></a>
 
-```
+```json
 {
     "Resources": {
         "AccountPolicy": {
@@ -331,7 +331,7 @@ The following example creates an account-level subscription filter policy that f
 #### YAML
 <a name="aws-resource-logs-accountpolicy--examples--Create_an_account-level_subscription_filter_policy--yaml"></a>
 
-```
+```yaml
 Resources:
   AccountPolicy:
     Type: AWS::Logs::AccountPolicy

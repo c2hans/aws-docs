@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-secondarynetwork-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::SecondaryNetwork",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-secondarynetwork-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::SecondaryNetwork
 Properties:
   [Ipv4CidrBlock](#cfn-ec2-secondarynetwork-ipv4cidrblock): {{String}}

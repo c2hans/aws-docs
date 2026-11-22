@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-b2bi-partnership-capabilityoptions-syntax.json"></a>
 
-```
+```json
 {
   "[InboundEdi](#cfn-b2bi-partnership-capabilityoptions-inboundedi)" : {{InboundEdiOptions}},
   "[OutboundEdi](#cfn-b2bi-partnership-capabilityoptions-outboundedi)" : {{OutboundEdiOptions}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-b2bi-partnership-capabilityoptions-syntax.yaml"></a>
 
-```
+```yaml
   [InboundEdi](#cfn-b2bi-partnership-capabilityoptions-inboundedi): {{
     InboundEdiOptions}}
   [OutboundEdi](#cfn-b2bi-partnership-capabilityoptions-outboundedi): {{

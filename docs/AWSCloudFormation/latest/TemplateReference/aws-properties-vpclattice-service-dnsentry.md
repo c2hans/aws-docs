@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-vpclattice-service-dnsentry-syntax.json"></a>
 
-```
+```json
 {
   "[DomainName](#cfn-vpclattice-service-dnsentry-domainname)" : {{String}},
   "[HostedZoneId](#cfn-vpclattice-service-dnsentry-hostedzoneid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-vpclattice-service-dnsentry-syntax.yaml"></a>
 
-```
+```yaml
   [DomainName](#cfn-vpclattice-service-dnsentry-domainname): {{String}}
   [HostedZoneId](#cfn-vpclattice-service-dnsentry-hostedzoneid): {{String}}
 ```

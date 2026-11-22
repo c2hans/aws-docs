@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dynamodb-globaltable-replicaspecification-syntax.json"></a>
 
-```
+```json
 {
   "[ContributorInsightsSpecification](#cfn-dynamodb-globaltable-replicaspecification-contributorinsightsspecification)" : {{ContributorInsightsSpecification}},
   "[DeletionProtectionEnabled](#cfn-dynamodb-globaltable-replicaspecification-deletionprotectionenabled)" : {{Boolean}},
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dynamodb-globaltable-replicaspecification-syntax.yaml"></a>
 
-```
+```yaml
   [ContributorInsightsSpecification](#cfn-dynamodb-globaltable-replicaspecification-contributorinsightsspecification): {{
     ContributorInsightsSpecification}}
   [DeletionProtectionEnabled](#cfn-dynamodb-globaltable-replicaspecification-deletionprotectionenabled): {{Boolean}}

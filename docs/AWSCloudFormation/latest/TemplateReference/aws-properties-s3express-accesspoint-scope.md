@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3express-accesspoint-scope-syntax.json"></a>
 
-```
+```json
 {
   "[Permissions](#cfn-s3express-accesspoint-scope-permissions)" : {{[ String, ... ]}},
   "[Prefixes](#cfn-s3express-accesspoint-scope-prefixes)" : {{[ String, ... ]}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3express-accesspoint-scope-syntax.yaml"></a>
 
-```
+```yaml
   [Permissions](#cfn-s3express-accesspoint-scope-permissions): {{
     - String}}
   [Prefixes](#cfn-s3express-accesspoint-scope-prefixes): {{

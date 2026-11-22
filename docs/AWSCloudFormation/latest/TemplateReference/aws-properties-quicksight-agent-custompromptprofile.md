@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-agent-custompromptprofile-syntax.json"></a>
 
-```
+```json
 {
   "[ModelProfileId](#cfn-quicksight-agent-custompromptprofile-modelprofileid)" : {{String}},
   "[QbsAwsAccountId](#cfn-quicksight-agent-custompromptprofile-qbsawsaccountid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-agent-custompromptprofile-syntax.yaml"></a>
 
-```
+```yaml
   [ModelProfileId](#cfn-quicksight-agent-custompromptprofile-modelprofileid): {{String}}
   [QbsAwsAccountId](#cfn-quicksight-agent-custompromptprofile-qbsawsaccountid): {{String}}
   [SubscriptionId](#cfn-quicksight-agent-custompromptprofile-subscriptionid): {{String}}

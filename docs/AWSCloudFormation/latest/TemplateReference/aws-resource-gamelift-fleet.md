@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-gamelift-fleet-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::GameLift::Fleet",
   "Properties" : {
@@ -51,7 +51,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-gamelift-fleet-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::GameLift::Fleet
 Properties:
   [AnywhereConfiguration](#cfn-gamelift-fleet-anywhereconfiguration): {{
@@ -321,7 +321,7 @@ Note: the JSON example shows how to escape the slashes (`\\`).
 #### JSON
 <a name="aws-resource-gamelift-fleet--examples--Create_GameLift_fleet_with_a_Build--json"></a>
 
-```
+```json
 {
     "Resources": {
         "FleetResource": {
@@ -388,7 +388,7 @@ Note: the JSON example shows how to escape the slashes (`\\`).
 #### YAML
 <a name="aws-resource-gamelift-fleet--examples--Create_GameLift_fleet_with_a_Build--yaml"></a>
 
-```
+```yaml
 Resources:
   FleetResource:
     Type: AWS::GameLift::Fleet
@@ -439,7 +439,7 @@ The following example creates and configures a GameLift fleet to run Realtime Se
 #### JSON
 <a name="aws-resource-gamelift-fleet--examples--Create_GameLift_fleet_with_a_Script--json"></a>
 
-```
+```json
 {
     "Resources": {
         "FleetResource": {
@@ -509,7 +509,7 @@ The following example creates and configures a GameLift fleet to run Realtime Se
 #### YAML
 <a name="aws-resource-gamelift-fleet--examples--Create_GameLift_fleet_with_a_Script--yaml"></a>
 
-```
+```yaml
 Resources:
   FleetResource:
     Type: AWS::GameLift::Fleet

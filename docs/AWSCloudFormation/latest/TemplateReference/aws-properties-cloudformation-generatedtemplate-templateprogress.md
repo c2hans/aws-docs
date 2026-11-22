@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudformation-generatedtemplate-templateprogress-syntax.json"></a>
 
-```
+```json
 {
   "[ResourcesFailed](#cfn-cloudformation-generatedtemplate-templateprogress-resourcesfailed)" : {{Integer}},
   "[ResourcesPending](#cfn-cloudformation-generatedtemplate-templateprogress-resourcespending)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudformation-generatedtemplate-templateprogress-syntax.yaml"></a>
 
-```
+```yaml
   [ResourcesFailed](#cfn-cloudformation-generatedtemplate-templateprogress-resourcesfailed): {{Integer}}
   [ResourcesPending](#cfn-cloudformation-generatedtemplate-templateprogress-resourcespending): {{Integer}}
   [ResourcesProcessing](#cfn-cloudformation-generatedtemplate-templateprogress-resourcesprocessing): {{Integer}}

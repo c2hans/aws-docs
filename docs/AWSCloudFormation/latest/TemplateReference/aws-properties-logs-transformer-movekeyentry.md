@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-logs-transformer-movekeyentry-syntax.json"></a>
 
-```
+```json
 {
   "[OverwriteIfExists](#cfn-logs-transformer-movekeyentry-overwriteifexists)" : {{Boolean}},
   "[Source](#cfn-logs-transformer-movekeyentry-source)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-logs-transformer-movekeyentry-syntax.yaml"></a>
 
-```
+```yaml
   [OverwriteIfExists](#cfn-logs-transformer-movekeyentry-overwriteifexists): {{Boolean}}
   [Source](#cfn-logs-transformer-movekeyentry-source): {{String}}
   [Target](#cfn-logs-transformer-movekeyentry-target): {{String}}

@@ -92,7 +92,7 @@ This example creates an EC2 Instance Connect Endpoint in the specified subnet.
 #### Sample Request
 <a name="API_CreateInstanceConnectEndpoint_Example_1_Request"></a>
 
-```
+```https
 https://ec2.amazonaws.com/?Action=CreateInstanceConnectEndpoint
 &SubnetId=subnet-0123456789example
 &AUTHPARAMS
@@ -101,7 +101,7 @@ https://ec2.amazonaws.com/?Action=CreateInstanceConnectEndpoint
 #### Sample Response
 <a name="API_CreateInstanceConnectEndpoint_Example_1_Response"></a>
 
-```
+```https
 <CreateInstanceConnectEndpointResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
   <requestId>a9effc88-e86c-4730-b1e8-30ba091babd1</requestId>
   <instanceConnectEndpoint>

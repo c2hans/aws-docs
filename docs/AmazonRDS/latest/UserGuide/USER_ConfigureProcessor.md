@@ -297,7 +297,7 @@ aws rds describe-orderable-db-instance-options --engine oracle-ee --db-instance-
 ```
 Following is sample output for the command in JSON format.
 
-```
+```json
     {
                 "SupportsIops": true,
                 "MaxIopsPerGib": 50.0,

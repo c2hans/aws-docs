@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssm-cloudconnector-azureconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ApplicationDisplayName](#cfn-ssm-cloudconnector-azureconfiguration-applicationdisplayname)" : {{String}},
   "[ApplicationId](#cfn-ssm-cloudconnector-azureconfiguration-applicationid)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssm-cloudconnector-azureconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ApplicationDisplayName](#cfn-ssm-cloudconnector-azureconfiguration-applicationdisplayname): {{String}}
   [ApplicationId](#cfn-ssm-cloudconnector-azureconfiguration-applicationid): {{String}}
   [Targets](#cfn-ssm-cloudconnector-azureconfiguration-targets): {{

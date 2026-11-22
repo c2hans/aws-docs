@@ -50,13 +50,13 @@ The following PowerShell script lists each disk and its corresponding device nam
 
 Connect to your Windows instance and run the following command to enable PowerShell script execution.
 
-```
+```PowerShell
 Set-ExecutionPolicy RemoteSigned
 ```
 
 Copy the following script and save it as `mapping.ps1` on your Windows instance.
 
-```
+```powershell
 # List the disks
 function Convert-SCSITargetIdToDeviceName {
   param([int]$SCSITargetId)
@@ -182,13 +182,13 @@ Get-disk | ForEach-Object {
 
 Run the script as follows:
 
-```
+```bash
 PS C:\> .\mapping.ps1
 ```
 
 The following is example output.
 
-```
+```bash
 Disk  Partitions  DriveLetter   EbsVolumeId             Device      VirtualDevice   DeviceName              VolumeName
 ----  ----------  -----------   -----------             ------      -------------   ----------              ----------
    0           1            C   vol-0561f1783298efedd   /dev/sda1   N/A             NVMe Amazon Elastic B   N/A

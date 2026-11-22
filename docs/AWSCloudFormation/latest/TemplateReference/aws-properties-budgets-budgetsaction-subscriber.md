@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-budgets-budgetsaction-subscriber-syntax.json"></a>
 
-```
+```json
 {
   "[Address](#cfn-budgets-budgetsaction-subscriber-address)" : {{String}},
   "[Type](#cfn-budgets-budgetsaction-subscriber-type)" : {{String}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-budgets-budgetsaction-subscriber-syntax.yaml"></a>
 
-```
+```yaml
   [Address](#cfn-budgets-budgetsaction-subscriber-address): {{String}}
   [Type](#cfn-budgets-budgetsaction-subscriber-type): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchservice-domain-deploymentstrategyoptions-syntax.json"></a>
 
-```
+```json
 {
   "[DeploymentStrategy](#cfn-opensearchservice-domain-deploymentstrategyoptions-deploymentstrategy)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchservice-domain-deploymentstrategyoptions-syntax.yaml"></a>
 
-```
+```yaml
   [DeploymentStrategy](#cfn-opensearchservice-domain-deploymentstrategyoptions-deploymentstrategy): {{String}}
 ```
 

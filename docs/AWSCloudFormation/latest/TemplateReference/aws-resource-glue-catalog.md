@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-glue-catalog-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Glue::Catalog",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-glue-catalog-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Glue::Catalog
 Properties:
   [AllowFullTableExternalDataAccess](#cfn-glue-catalog-allowfulltableexternaldataaccess): {{String}}

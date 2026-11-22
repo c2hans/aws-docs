@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-intermediatetable-populationanalysissqlparameters-syntax.json"></a>
 
-```
+```json
 {
   "[AnalysisTemplateArn](#cfn-cleanrooms-intermediatetable-populationanalysissqlparameters-analysistemplatearn)" : {{String}},
   "[QueryString](#cfn-cleanrooms-intermediatetable-populationanalysissqlparameters-querystring)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-intermediatetable-populationanalysissqlparameters-syntax.yaml"></a>
 
-```
+```yaml
   [AnalysisTemplateArn](#cfn-cleanrooms-intermediatetable-populationanalysissqlparameters-analysistemplatearn): {{String}}
   [QueryString](#cfn-cleanrooms-intermediatetable-populationanalysissqlparameters-querystring): {{
     String}}

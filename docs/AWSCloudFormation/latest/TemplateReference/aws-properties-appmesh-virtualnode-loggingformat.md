@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-virtualnode-loggingformat-syntax.json"></a>
 
-```
+```json
 {
   "[Json](#cfn-appmesh-virtualnode-loggingformat-json)" : {{[ JsonFormatRef, ... ]}},
   "[Text](#cfn-appmesh-virtualnode-loggingformat-text)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-virtualnode-loggingformat-syntax.yaml"></a>
 
-```
+```yaml
   [Json](#cfn-appmesh-virtualnode-loggingformat-json): {{
     - JsonFormatRef}}
   [Text](#cfn-appmesh-virtualnode-loggingformat-text): {{String}}

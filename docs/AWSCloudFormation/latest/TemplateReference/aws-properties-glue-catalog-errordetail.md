@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-catalog-errordetail-syntax.json"></a>
 
-```
+```json
 {
   "[ErrorCode](#cfn-glue-catalog-errordetail-errorcode)" : {{String}},
   "[ErrorMessage](#cfn-glue-catalog-errordetail-errormessage)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-catalog-errordetail-syntax.yaml"></a>
 
-```
+```yaml
   [ErrorCode](#cfn-glue-catalog-errordetail-errorcode): {{String}}
   [ErrorMessage](#cfn-glue-catalog-errordetail-errormessage): {{String}}
 ```

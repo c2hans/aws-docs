@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-filecache-datarepositoryassociation-syntax.json"></a>
 
-```
+```json
 {
   "[DataRepositoryPath](#cfn-fsx-filecache-datarepositoryassociation-datarepositorypath)" : {{String}},
   "[FileCachePath](#cfn-fsx-filecache-datarepositoryassociation-filecachepath)" : {{String}}
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-filecache-datarepositoryassociation-syntax.yaml"></a>
 
-```
+```yaml
   [DataRepositoryPath](#cfn-fsx-filecache-datarepositoryassociation-datarepositorypath): {{String}}
   [FileCachePath](#cfn-fsx-filecache-datarepositoryassociation-filecachepath): {{String}}
 ```

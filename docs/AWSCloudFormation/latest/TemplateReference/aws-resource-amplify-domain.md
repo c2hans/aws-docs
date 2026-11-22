@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-amplify-domain-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Amplify::Domain",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-amplify-domain-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Amplify::Domain
 Properties:
   [AppId](#cfn-amplify-domain-appid): {{String}}

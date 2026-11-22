@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrserverless-application-autostopconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-emrserverless-application-autostopconfiguration-enabled)" : {{Boolean}},
   "[IdleTimeoutMinutes](#cfn-emrserverless-application-autostopconfiguration-idletimeoutminutes)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrserverless-application-autostopconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-emrserverless-application-autostopconfiguration-enabled): {{Boolean}}
   [IdleTimeoutMinutes](#cfn-emrserverless-application-autostopconfiguration-idletimeoutminutes): {{Integer}}
 ```

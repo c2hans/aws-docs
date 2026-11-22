@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dynamodb-globaltable-projection-syntax.json"></a>
 
-```
+```json
 {
   "[NonKeyAttributes](#cfn-dynamodb-globaltable-projection-nonkeyattributes)" : {{[ String, ... ]}},
   "[ProjectionType](#cfn-dynamodb-globaltable-projection-projectiontype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dynamodb-globaltable-projection-syntax.yaml"></a>
 
-```
+```yaml
   [NonKeyAttributes](#cfn-dynamodb-globaltable-projection-nonkeyattributes): {{
     - String}}
   [ProjectionType](#cfn-dynamodb-globaltable-projection-projectiontype): {{String}}

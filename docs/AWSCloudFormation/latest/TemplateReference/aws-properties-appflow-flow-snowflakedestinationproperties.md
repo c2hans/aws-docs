@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-flow-snowflakedestinationproperties-syntax.json"></a>
 
-```
+```json
 {
   "[BucketPrefix](#cfn-appflow-flow-snowflakedestinationproperties-bucketprefix)" : {{String}},
   "[ErrorHandlingConfig](#cfn-appflow-flow-snowflakedestinationproperties-errorhandlingconfig)" : {{ErrorHandlingConfig}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-flow-snowflakedestinationproperties-syntax.yaml"></a>
 
-```
+```yaml
   [BucketPrefix](#cfn-appflow-flow-snowflakedestinationproperties-bucketprefix): {{String}}
   [ErrorHandlingConfig](#cfn-appflow-flow-snowflakedestinationproperties-errorhandlingconfig): {{
     ErrorHandlingConfig}}

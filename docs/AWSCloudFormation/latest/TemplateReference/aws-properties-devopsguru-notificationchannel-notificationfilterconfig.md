@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsguru-notificationchannel-notificationfilterconfig-syntax.json"></a>
 
-```
+```json
 {
   "[MessageTypes](#cfn-devopsguru-notificationchannel-notificationfilterconfig-messagetypes)" : {{[ String, ... ]}},
   "[Severities](#cfn-devopsguru-notificationchannel-notificationfilterconfig-severities)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsguru-notificationchannel-notificationfilterconfig-syntax.yaml"></a>
 
-```
+```yaml
   [MessageTypes](#cfn-devopsguru-notificationchannel-notificationfilterconfig-messagetypes): {{
     - String}}
   [Severities](#cfn-devopsguru-notificationchannel-notificationfilterconfig-severities): {{

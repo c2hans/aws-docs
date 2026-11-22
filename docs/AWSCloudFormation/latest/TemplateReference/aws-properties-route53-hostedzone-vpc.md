@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-route53-hostedzone-vpc-syntax.json"></a>
 
-```
+```json
 {
   "[VPCId](#cfn-route53-hostedzone-vpc-vpcid)" : {{String}},
   "[VPCRegion](#cfn-route53-hostedzone-vpc-vpcregion)" : {{String}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-route53-hostedzone-vpc-syntax.yaml"></a>
 
-```
+```yaml
   [VPCId](#cfn-route53-hostedzone-vpc-vpcid): {{String}}
   [VPCRegion](#cfn-route53-hostedzone-vpc-vpcregion): {{String}}
 ```

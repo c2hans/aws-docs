@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-dms-replicationsubnetgroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DMS::ReplicationSubnetGroup",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-dms-replicationsubnetgroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DMS::ReplicationSubnetGroup
 Properties:
   [ReplicationSubnetGroupDescription](#cfn-dms-replicationsubnetgroup-replicationsubnetgroupdescription): {{String}}
@@ -91,7 +91,7 @@ For more information about using the `Ref` function, see [`Ref`](https://docs.aw
 #### JSON
 <a name="aws-resource-dms-replicationsubnetgroup--examples----json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -119,7 +119,7 @@ For more information about using the `Ref` function, see [`Ref`](https://docs.aw
 #### YAML
 <a name="aws-resource-dms-replicationsubnetgroup--examples----yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   myReplicationSubnetGroup:

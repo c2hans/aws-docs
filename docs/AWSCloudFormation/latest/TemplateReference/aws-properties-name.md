@@ -25,7 +25,7 @@ If you want to use a custom name, specify a name property for that resource in y
 ### JSON
 <a name="aws-properties-name-example.json"></a>
 
-```
+```json
 "myDynamoDBTable" : {
    "Type" : "AWS::DynamoDB::Table",
    "Properties" : {
@@ -51,7 +51,7 @@ If you want to use a custom name, specify a name property for that resource in y
 ### YAML
 <a name="aws-properties-name-example.yaml"></a>
 
-```
+```yaml
 myDynamoDBTable:
   Type: AWS::DynamoDB::Table
   Properties:

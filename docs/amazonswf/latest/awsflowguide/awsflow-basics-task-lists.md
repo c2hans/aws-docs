@@ -11,7 +11,7 @@ You can specify as many task lists as you need, with different workers assigned 
 
 The following excerpt from the `HelloWorldWorkflow` host application creates a new activity worker and assigns it to the `HelloWorldList` activities task list.
 
-```
+```java
 public class GreeterWorker  {
     public static void main(String[] args) throws Exception {
     ...
@@ -36,7 +36,7 @@ To support such scenarios, you can explicitly specify a task list when you call 
 
 For example, suppose that the `say` activity of the `HelloWorldWorkflow` application is hosted by an activity worker different from `getName` and `getGreeting`. The following example shows how to ensure that `say` uses the same task list as `getName` and `getGreeting`, even if they were originally assigned to different lists.
 
-```
+```java
 public class GreeterWorkflowImpl implements GreeterWorkflow {
   private GreeterActivitiesClient operations1 = new GreeterActivitiesClientImpl1(); //getGreeting and getName
   private GreeterActivitiesClient operations2 = new GreeterActivitiesClientImpl2(); //say

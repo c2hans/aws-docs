@@ -30,13 +30,13 @@ Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: No
 
  ** FirewallRuleGroupId **   <a name="Route53Resolver-Type-route53resolver_FirewallDomainListMetadata-FirewallRuleGroupId"></a>
-For an AutoAllowlist domain list, the ID of the firewall rule group that contains the auto-allowlist rule that owns this domain list. Use it to navigate to the rule group and its VPC associations. Present only when `ManagedListType` is `AUTOALLOWLIST`.
+For an AutoAllowlist domain list, the ID of the firewall rule group that contains the AutoAllowlist rule that owns this domain list. Present only when `ManagedListType` is `AUTOALLOWLIST`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: No
 
  ** FirewallThreatProtectionId **   <a name="Route53Resolver-Type-route53resolver_FirewallDomainListMetadata-FirewallThreatProtectionId"></a>
-For an AutoAllowlist domain list, the threat protection ID of the auto-allowlist rule that owns this domain list. Provide it to [ListFirewallRuleDomains](API_route53resolver_ListFirewallRuleDomains.md) to review the observed, allowed, and denied domains. Present only when `ManagedListType` is `AUTOALLOWLIST`.
+For an AutoAllowlist domain list, the threat protection ID of the AutoAllowlist rule that owns this domain list. Provide it to [ListFirewallRuleDomains](API_route53resolver_ListFirewallRuleDomains.md) to review the observed, allowed, and denied domains. Present only when `ManagedListType` is `AUTOALLOWLIST`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: No
@@ -67,7 +67,7 @@ Pattern: `(?!^[0-9]+$)([a-zA-Z0-9\-_' ']+)`
 Required: No
 
  ** Status **   <a name="Route53Resolver-Type-route53resolver_FirewallDomainListMetadata-Status"></a>
-For an AutoAllowlist domain list, the status of the list: `IMPORTING` while domains are being copied from the source domain list specified at rule creation, `COMPLETE_IMPORT_FAILED` if that copy failed, `UPDATING` while a change made with [UpdateFirewallDomains](API_route53resolver_UpdateFirewallDomains.md) is being applied, `COMPLETE` otherwise, and `DELETING` while the owning rule is being deleted. The first change that you make after a failed copy replaces `COMPLETE_IMPORT_FAILED` with `UPDATING` and then `COMPLETE`. Present only when `ManagedListType` is `AUTOALLOWLIST`. Use [GetFirewallDomainList](API_route53resolver_GetFirewallDomainList.md) for the status of other domain lists.
+For an AutoAllowlist domain list, the status of the list: `IMPORTING` while domains are being copied from the source domain list specified at rule creation, `COMPLETE_IMPORT_FAILED` if that copy failed, `UPDATING` while a change made with [UpdateFirewallDomains](API_route53resolver_UpdateFirewallDomains.md) is being applied, `COMPLETE` otherwise, and `DELETING` while the owning rule is being deleted. You can't change the list's domains while its status is `IMPORTING`. The first change that you make after a failed copy replaces `COMPLETE_IMPORT_FAILED` with `UPDATING` and then `COMPLETE`. Present only when `ManagedListType` is `AUTOALLOWLIST`. Use [GetFirewallDomainList](API_route53resolver_GetFirewallDomainList.md) for the status of other domain lists.
 Type: String
 Valid Values: `COMPLETE | COMPLETE_IMPORT_FAILED | IMPORTING | DELETING | UPDATING`
 Required: No

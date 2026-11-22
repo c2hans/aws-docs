@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-expressgatewayservice-keyvaluepair-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-ecs-expressgatewayservice-keyvaluepair-name)" : {{String}},
   "[Value](#cfn-ecs-expressgatewayservice-keyvaluepair-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-expressgatewayservice-keyvaluepair-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-ecs-expressgatewayservice-keyvaluepair-name): {{String}}
   [Value](#cfn-ecs-expressgatewayservice-keyvaluepair-value): {{String}}
 ```

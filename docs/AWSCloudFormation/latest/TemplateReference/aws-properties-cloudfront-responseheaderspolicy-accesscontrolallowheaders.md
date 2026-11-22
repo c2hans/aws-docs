@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-responseheaderspolicy-accesscontrolallowheaders-syntax.json"></a>
 
-```
+```json
 {
   "[Items](#cfn-cloudfront-responseheaderspolicy-accesscontrolallowheaders-items)" : {{[ String, ... ]}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-responseheaderspolicy-accesscontrolallowheaders-syntax.yaml"></a>
 
-```
+```yaml
   [Items](#cfn-cloudfront-responseheaderspolicy-accesscontrolallowheaders-items): {{
     - String}}
 ```

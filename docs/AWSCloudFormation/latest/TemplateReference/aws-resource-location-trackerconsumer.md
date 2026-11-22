@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-location-trackerconsumer-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Location::TrackerConsumer",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-location-trackerconsumer-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Location::TrackerConsumer
 Properties:
   [ConsumerArn](#cfn-location-trackerconsumer-consumerarn): {{String}}

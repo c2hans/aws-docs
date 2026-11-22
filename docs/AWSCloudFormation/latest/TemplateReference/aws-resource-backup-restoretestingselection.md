@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-backup-restoretestingselection-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Backup::RestoreTestingSelection",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-backup-restoretestingselection-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Backup::RestoreTestingSelection
 Properties:
   [IamRoleArn](#cfn-backup-restoretestingselection-iamrolearn): {{String}}

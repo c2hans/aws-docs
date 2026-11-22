@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-job-connectionslist-syntax.json"></a>
 
-```
+```json
 {
   "[Connections](#cfn-glue-job-connectionslist-connections)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-job-connectionslist-syntax.yaml"></a>
 
-```
+```yaml
   [Connections](#cfn-glue-job-connectionslist-connections): {{
     - String}}
 ```

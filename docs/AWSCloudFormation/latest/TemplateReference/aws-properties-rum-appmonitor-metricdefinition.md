@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rum-appmonitor-metricdefinition-syntax.json"></a>
 
-```
+```json
 {
   "[DimensionKeys](#cfn-rum-appmonitor-metricdefinition-dimensionkeys)" : {{{{{Key}}: {{Value}}, ...}}},
   "[EventPattern](#cfn-rum-appmonitor-metricdefinition-eventpattern)" : {{String}},
@@ -46,7 +46,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rum-appmonitor-metricdefinition-syntax.yaml"></a>
 
-```
+```yaml
   [DimensionKeys](#cfn-rum-appmonitor-metricdefinition-dimensionkeys): {{
     {{Key}}: {{Value}}}}
   [EventPattern](#cfn-rum-appmonitor-metricdefinition-eventpattern): {{String}}

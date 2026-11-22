@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-networkfirewall-firewallpolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::NetworkFirewall::FirewallPolicy",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-networkfirewall-firewallpolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::NetworkFirewall::FirewallPolicy
 Properties:
   [Description](#cfn-networkfirewall-firewallpolicy-description): {{String}}
@@ -117,7 +117,7 @@ The following shows example firewall policy specifications.
 #### JSON
 <a name="aws-resource-networkfirewall-firewallpolicy--examples--Create_a_firewall_policy--json"></a>
 
-```
+```json
 "SampleFirewallPolicy": {
     "Type": "AWS::NetworkFirewall::FirewallPolicy",
     "Properties": {
@@ -159,7 +159,7 @@ The following shows example firewall policy specifications.
 #### YAML
 <a name="aws-resource-networkfirewall-firewallpolicy--examples--Create_a_firewall_policy--yaml"></a>
 
-```
+```yaml
 SampleFirewallPolicy:
   Type: 'AWS::NetworkFirewall::FirewallPolicy'
   Properties:

@@ -76,7 +76,7 @@ To see what skills are available from within your agent, ask: *"What AWS skills 
 
 You can also browse and install skills from the command line:
 
-```
+```bash
 npx skills add aws/agent-toolkit-for-aws/skills
 ```
 

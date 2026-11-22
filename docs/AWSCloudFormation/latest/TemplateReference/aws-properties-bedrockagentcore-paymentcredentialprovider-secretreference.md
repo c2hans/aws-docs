@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-paymentcredentialprovider-secretreference-syntax.json"></a>
 
-```
+```json
 {
   "[JsonKey](#cfn-bedrockagentcore-paymentcredentialprovider-secretreference-jsonkey)" : {{String}},
   "[SecretId](#cfn-bedrockagentcore-paymentcredentialprovider-secretreference-secretid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-paymentcredentialprovider-secretreference-syntax.yaml"></a>
 
-```
+```yaml
   [JsonKey](#cfn-bedrockagentcore-paymentcredentialprovider-secretreference-jsonkey): {{String}}
   [SecretId](#cfn-bedrockagentcore-paymentcredentialprovider-secretreference-secretid): {{String}}
 ```

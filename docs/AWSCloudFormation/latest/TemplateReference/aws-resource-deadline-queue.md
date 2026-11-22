@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-deadline-queue-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Deadline::Queue",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-deadline-queue-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Deadline::Queue
 Properties:
   [AllowedStorageProfileIds](#cfn-deadline-queue-allowedstorageprofileids): {{

@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iam-user-policy-syntax.json"></a>
 
-```
+```json
 {
   "[PolicyDocument](#cfn-iam-user-policy-policydocument)" : {{Json}},
   "[PolicyName](#cfn-iam-user-policy-policyname)" : {{String}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iam-user-policy-syntax.yaml"></a>
 
-```
+```yaml
   [PolicyDocument](#cfn-iam-user-policy-policydocument): {{Json}}
   [PolicyName](#cfn-iam-user-policy-policyname): {{String}}
 ```
@@ -64,7 +64,7 @@ This example shows how the policy document is declared.
 #### JSON
 <a name="aws-properties-iam-user-policy--examples--IAM_User_Policy--json"></a>
 
-```
+```json
 {
     "PolicyName": "root",
     "PolicyDocument": {
@@ -87,7 +87,7 @@ This example shows how the policy document is declared.
 #### YAML
 <a name="aws-properties-iam-user-policy--examples--IAM_User_Policy--yaml"></a>
 
-```
+```yaml
 PolicyName: root
 PolicyDocument:
    Version: 2012-10-17

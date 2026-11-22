@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-redirectrule-syntax.json"></a>
 
-```
+```json
 {
   "[HostName](#cfn-s3-bucket-redirectrule-hostname)" : {{String}},
   "[HttpRedirectCode](#cfn-s3-bucket-redirectrule-httpredirectcode)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-redirectrule-syntax.yaml"></a>
 
-```
+```yaml
   [HostName](#cfn-s3-bucket-redirectrule-hostname): {{String}}
   [HttpRedirectCode](#cfn-s3-bucket-redirectrule-httpredirectcode): {{String}}
   [Protocol](#cfn-s3-bucket-redirectrule-protocol): {{String}}
@@ -86,7 +86,7 @@ This example also specifies a metrics configuration called `EntireBucket` that e
 #### JSON
 <a name="aws-properties-s3-bucket-redirectrule--examples--Configure_a_static_website_with_a_routing_rule--json"></a>
 
-```
+```json
 {
     "Resources": {
         "S3Bucket": {
@@ -153,7 +153,7 @@ This example also specifies a metrics configuration called `EntireBucket` that e
 #### YAML
 <a name="aws-properties-s3-bucket-redirectrule--examples--Configure_a_static_website_with_a_routing_rule--yaml"></a>
 
-```
+```yaml
 Resources:
   S3Bucket:
     Type: 'AWS::S3::Bucket'

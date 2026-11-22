@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-rulegroup-customresponsebody-syntax.json"></a>
 
-```
+```json
 {
   "[Content](#cfn-wafv2-rulegroup-customresponsebody-content)" : {{String}},
   "[ContentType](#cfn-wafv2-rulegroup-customresponsebody-contenttype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-rulegroup-customresponsebody-syntax.yaml"></a>
 
-```
+```yaml
   [Content](#cfn-wafv2-rulegroup-customresponsebody-content): {{String}}
   [ContentType](#cfn-wafv2-rulegroup-customresponsebody-contenttype): {{String}}
 ```

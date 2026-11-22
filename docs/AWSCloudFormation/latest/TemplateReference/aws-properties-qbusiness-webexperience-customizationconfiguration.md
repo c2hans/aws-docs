@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-qbusiness-webexperience-customizationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CustomCSSUrl](#cfn-qbusiness-webexperience-customizationconfiguration-customcssurl)" : {{String}},
   "[FaviconUrl](#cfn-qbusiness-webexperience-customizationconfiguration-faviconurl)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-qbusiness-webexperience-customizationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CustomCSSUrl](#cfn-qbusiness-webexperience-customizationconfiguration-customcssurl): {{String}}
   [FaviconUrl](#cfn-qbusiness-webexperience-customizationconfiguration-faviconurl): {{String}}
   [FontUrl](#cfn-qbusiness-webexperience-customizationconfiguration-fonturl): {{String}}

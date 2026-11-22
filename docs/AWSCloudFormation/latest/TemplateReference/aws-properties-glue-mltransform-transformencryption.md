@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-mltransform-transformencryption-syntax.json"></a>
 
-```
+```json
 {
   "[MLUserDataEncryption](#cfn-glue-mltransform-transformencryption-mluserdataencryption)" : {{MLUserDataEncryption}},
   "[TaskRunSecurityConfigurationName](#cfn-glue-mltransform-transformencryption-taskrunsecurityconfigurationname)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-mltransform-transformencryption-syntax.yaml"></a>
 
-```
+```yaml
   [MLUserDataEncryption](#cfn-glue-mltransform-transformencryption-mluserdataencryption): {{
     MLUserDataEncryption}}
   [TaskRunSecurityConfigurationName](#cfn-glue-mltransform-transformencryption-taskrunsecurityconfigurationname): {{String}}

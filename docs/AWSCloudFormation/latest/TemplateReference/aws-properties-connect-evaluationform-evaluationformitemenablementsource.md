@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-evaluationform-evaluationformitemenablementsource-syntax.json"></a>
 
-```
+```json
 {
   "[RefId](#cfn-connect-evaluationform-evaluationformitemenablementsource-refid)" : {{String}},
   "[Type](#cfn-connect-evaluationform-evaluationformitemenablementsource-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-evaluationform-evaluationformitemenablementsource-syntax.yaml"></a>
 
-```
+```yaml
   [RefId](#cfn-connect-evaluationform-evaluationformitemenablementsource-refid): {{String}}
   [Type](#cfn-connect-evaluationform-evaluationformitemenablementsource-type): {{String}}
 ```

@@ -24,7 +24,7 @@ You can add additional custom tags to Amazon ECS Managed Instances by adding tag
 
 The following example capacity provider definition shows how tags can be specified and propagated from the capacity provider when creating the capacity provider using the `CAPACITY_PROVIDER` value for `propagateTags`.
 
-```
+```json
 {
     "name": "my-cluster-managed-instances-cp",
     "cluster": "my-cluster",

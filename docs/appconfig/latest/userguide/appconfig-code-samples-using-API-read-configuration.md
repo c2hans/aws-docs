@@ -11,7 +11,7 @@ Each of the following samples includes comments about the actions performed by t
 ------
 #### [ Java ]
 
-```
+```java
 /*
 The example below uses two AWS AppConfig Data APIs: StartConfigurationSession and GetLatestConfiguration.
 For more information about these APIs, see [AWS AppConfig Data](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Operations_AWS_AppConfig_Data.html).
@@ -149,7 +149,7 @@ public class AppConfigApiRetriever {
 ------
 #### [ Python ]
 
-```
+```python
 # The example below uses two AWS AppConfig Data APIs: StartConfigurationSession and GetLatestConfiguration.
 # For more information about these APIs, see [AWS AppConfig Data](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Operations_AWS_AppConfig_Data.html).
 #
@@ -255,7 +255,7 @@ class AppConfigApiRetriever:
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 /*
 The example below uses two AWS AppConfig Data APIs: StartConfigurationSession and GetLatestConfiguration.
 For more information about these APIs, see [AWS AppConfig Data](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Operations_AWS_AppConfig_Data.html)

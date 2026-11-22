@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-events-rule-batchparameters-syntax.json"></a>
 
-```
+```json
 {
   "[ArrayProperties](#cfn-events-rule-batchparameters-arrayproperties)" : {{BatchArrayProperties}},
   "[JobDefinition](#cfn-events-rule-batchparameters-jobdefinition)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-events-rule-batchparameters-syntax.yaml"></a>
 
-```
+```yaml
   [ArrayProperties](#cfn-events-rule-batchparameters-arrayproperties): {{
     BatchArrayProperties}}
   [JobDefinition](#cfn-events-rule-batchparameters-jobdefinition): {{String}}
@@ -75,7 +75,7 @@ The following example sets the `BatchParameters` parameter for a job that has 95
 #### JSON
 <a name="aws-properties-events-rule-batchparameters--examples--Set_the_BatchParameters_parameters--json"></a>
 
-```
+```json
 "BatchParameters": {
   "ArrayProperties": {
       "Size": 950
@@ -91,7 +91,7 @@ The following example sets the `BatchParameters` parameter for a job that has 95
 #### YAML
 <a name="aws-properties-events-rule-batchparameters--examples--Set_the_BatchParameters_parameters--yaml"></a>
 
-```
+```yaml
 BatchParameters:
   ArrayProperties:
     Size: 950

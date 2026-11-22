@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-cookies-syntax.json"></a>
 
-```
+```json
 {
   "[MatchPattern](#cfn-wafv2-webacl-cookies-matchpattern)" : {{CookieMatchPattern}},
   "[MatchScope](#cfn-wafv2-webacl-cookies-matchscope)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-cookies-syntax.yaml"></a>
 
-```
+```yaml
   [MatchPattern](#cfn-wafv2-webacl-cookies-matchpattern): {{
     CookieMatchPattern}}
   [MatchScope](#cfn-wafv2-webacl-cookies-matchscope): {{String}}
@@ -79,7 +79,7 @@ The following shows an example Cookies field to match specification.
 #### YAML
 <a name="aws-properties-wafv2-webacl-cookies--examples--Set_the_Cookies_specification--yaml"></a>
 
-```
+```yaml
 FieldToMatch:
   Cookies:
     MatchPattern:
@@ -93,7 +93,7 @@ FieldToMatch:
 #### JSON
 <a name="aws-properties-wafv2-webacl-cookies--examples--Set_the_Cookies_specification--json"></a>
 
-```
+```json
 "FieldToMatch": {
   "Cookies": {
     "MatchPattern": {

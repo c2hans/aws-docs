@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-managedblockchain-member-networkconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-managedblockchain-member-networkconfiguration-description)" : {{String}},
   "[Framework](#cfn-managedblockchain-member-networkconfiguration-framework)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-managedblockchain-member-networkconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-managedblockchain-member-networkconfiguration-description): {{String}}
   [Framework](#cfn-managedblockchain-member-networkconfiguration-framework): {{String}}
   [FrameworkVersion](#cfn-managedblockchain-member-networkconfiguration-frameworkversion): {{String}}

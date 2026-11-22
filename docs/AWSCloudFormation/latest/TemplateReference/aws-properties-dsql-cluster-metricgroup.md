@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dsql-cluster-metricgroup-syntax.json"></a>
 
-```
+```json
 {
   "[MetricGroup](#cfn-dsql-cluster-metricgroup-metricgroup)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dsql-cluster-metricgroup-syntax.yaml"></a>
 
-```
+```yaml
   [MetricGroup](#cfn-dsql-cluster-metricgroup-metricgroup): {{String}}
 ```
 

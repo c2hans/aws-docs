@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codeartifact-packagegroup-restrictions-syntax.json"></a>
 
-```
+```json
 {
   "[ExternalUpstream](#cfn-codeartifact-packagegroup-restrictions-externalupstream)" : {{RestrictionType}},
   "[InternalUpstream](#cfn-codeartifact-packagegroup-restrictions-internalupstream)" : {{RestrictionType}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codeartifact-packagegroup-restrictions-syntax.yaml"></a>
 
-```
+```yaml
   [ExternalUpstream](#cfn-codeartifact-packagegroup-restrictions-externalupstream): {{
     RestrictionType}}
   [InternalUpstream](#cfn-codeartifact-packagegroup-restrictions-internalupstream): {{

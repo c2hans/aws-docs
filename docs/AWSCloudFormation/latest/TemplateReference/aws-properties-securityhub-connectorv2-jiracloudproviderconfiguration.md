@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityhub-connectorv2-jiracloudproviderconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ProjectKey](#cfn-securityhub-connectorv2-jiracloudproviderconfiguration-projectkey)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityhub-connectorv2-jiracloudproviderconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ProjectKey](#cfn-securityhub-connectorv2-jiracloudproviderconfiguration-projectkey): {{String}}
 ```
 

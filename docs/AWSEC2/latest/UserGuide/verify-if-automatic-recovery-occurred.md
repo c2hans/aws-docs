@@ -36,7 +36,7 @@ You can verify if an underlying hardware or software issue was detected for your
 
 1. Paste the following metric in the **Metrics** search field, and press Enter.
 
-   ```
+   ```bash
    StatusCheckFailed_System
    ```
 

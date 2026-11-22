@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-flowlog-destinationoptions-syntax.json"></a>
 
-```
+```json
 {
   "[FileFormat](#cfn-ec2-flowlog-destinationoptions-fileformat)" : {{String}},
   "[HiveCompatiblePartitions](#cfn-ec2-flowlog-destinationoptions-hivecompatiblepartitions)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-flowlog-destinationoptions-syntax.yaml"></a>
 
-```
+```yaml
   [FileFormat](#cfn-ec2-flowlog-destinationoptions-fileformat): {{String}}
   [HiveCompatiblePartitions](#cfn-ec2-flowlog-destinationoptions-hivecompatiblepartitions): {{Boolean}}
   [PerHourPartition](#cfn-ec2-flowlog-destinationoptions-perhourpartition): {{Boolean}}

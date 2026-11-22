@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpooluser-attributetype-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-cognito-userpooluser-attributetype-name)" : {{String}},
   "[Value](#cfn-cognito-userpooluser-attributetype-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpooluser-attributetype-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-cognito-userpooluser-attributetype-name): {{String}}
   [Value](#cfn-cognito-userpooluser-attributetype-value): {{String}}
 ```

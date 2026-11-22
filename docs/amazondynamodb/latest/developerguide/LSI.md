@@ -114,7 +114,7 @@ You can query a local secondary index using either eventually consistent or stro
 **Example**
 Consider the following data returned from a `Query` that requests data from the discussion threads in a particular forum.
 
-```
+```json
 {
     "TableName": "Thread",
     "IndexName": "LastPostIndex",

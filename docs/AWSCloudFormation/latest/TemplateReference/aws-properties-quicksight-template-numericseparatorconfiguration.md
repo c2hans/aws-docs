@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-numericseparatorconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DecimalSeparator](#cfn-quicksight-template-numericseparatorconfiguration-decimalseparator)" : {{String}},
   "[ThousandsSeparator](#cfn-quicksight-template-numericseparatorconfiguration-thousandsseparator)" : {{ThousandSeparatorOptions}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-numericseparatorconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DecimalSeparator](#cfn-quicksight-template-numericseparatorconfiguration-decimalseparator): {{String}}
   [ThousandsSeparator](#cfn-quicksight-template-numericseparatorconfiguration-thousandsseparator): {{
     ThousandSeparatorOptions}}

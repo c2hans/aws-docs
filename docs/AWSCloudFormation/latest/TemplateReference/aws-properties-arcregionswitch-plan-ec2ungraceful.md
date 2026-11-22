@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-arcregionswitch-plan-ec2ungraceful-syntax.json"></a>
 
-```
+```json
 {
   "[MinimumSuccessPercentage](#cfn-arcregionswitch-plan-ec2ungraceful-minimumsuccesspercentage)" : {{Number}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-arcregionswitch-plan-ec2ungraceful-syntax.yaml"></a>
 
-```
+```yaml
   [MinimumSuccessPercentage](#cfn-arcregionswitch-plan-ec2ungraceful-minimumsuccesspercentage): {{Number}}
 ```
 

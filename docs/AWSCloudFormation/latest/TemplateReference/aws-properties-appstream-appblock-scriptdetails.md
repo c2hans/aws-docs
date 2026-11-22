@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appstream-appblock-scriptdetails-syntax.json"></a>
 
-```
+```json
 {
   "[ExecutableParameters](#cfn-appstream-appblock-scriptdetails-executableparameters)" : {{String}},
   "[ExecutablePath](#cfn-appstream-appblock-scriptdetails-executablepath)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appstream-appblock-scriptdetails-syntax.yaml"></a>
 
-```
+```yaml
   [ExecutableParameters](#cfn-appstream-appblock-scriptdetails-executableparameters): {{String}}
   [ExecutablePath](#cfn-appstream-appblock-scriptdetails-executablepath): {{String}}
   [ScriptS3Location](#cfn-appstream-appblock-scriptdetails-scripts3location): {{

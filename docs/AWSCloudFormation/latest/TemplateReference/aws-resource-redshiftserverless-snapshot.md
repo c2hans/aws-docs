@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-redshiftserverless-snapshot-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RedshiftServerless::Snapshot",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-redshiftserverless-snapshot-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RedshiftServerless::Snapshot
 Properties:
   [NamespaceName](#cfn-redshiftserverless-snapshot-namespacename): {{String}}

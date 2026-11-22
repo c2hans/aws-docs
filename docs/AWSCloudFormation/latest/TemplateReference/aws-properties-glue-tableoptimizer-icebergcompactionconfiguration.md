@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-tableoptimizer-icebergcompactionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DeleteFileThreshold](#cfn-glue-tableoptimizer-icebergcompactionconfiguration-deletefilethreshold)" : {{Integer}},
   "[MinInputFiles](#cfn-glue-tableoptimizer-icebergcompactionconfiguration-mininputfiles)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-tableoptimizer-icebergcompactionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DeleteFileThreshold](#cfn-glue-tableoptimizer-icebergcompactionconfiguration-deletefilethreshold): {{Integer}}
   [MinInputFiles](#cfn-glue-tableoptimizer-icebergcompactionconfiguration-mininputfiles): {{Integer}}
   [Strategy](#cfn-glue-tableoptimizer-icebergcompactionconfiguration-strategy): {{String}}

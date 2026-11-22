@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-resourceexplorer2-view-searchfilter-syntax.json"></a>
 
-```
+```json
 {
   "[FilterString](#cfn-resourceexplorer2-view-searchfilter-filterstring)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-resourceexplorer2-view-searchfilter-syntax.yaml"></a>
 
-```
+```yaml
   [FilterString](#cfn-resourceexplorer2-view-searchfilter-filterstring): {{
     String}}
 ```

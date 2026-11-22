@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-networkinsightsanalysis-transitgatewayroutetableroute-syntax.json"></a>
 
-```
+```json
 {
   "[AttachmentId](#cfn-ec2-networkinsightsanalysis-transitgatewayroutetableroute-attachmentid)" : {{String}},
   "[DestinationCidr](#cfn-ec2-networkinsightsanalysis-transitgatewayroutetableroute-destinationcidr)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-networkinsightsanalysis-transitgatewayroutetableroute-syntax.yaml"></a>
 
-```
+```yaml
   [AttachmentId](#cfn-ec2-networkinsightsanalysis-transitgatewayroutetableroute-attachmentid): {{String}}
   [DestinationCidr](#cfn-ec2-networkinsightsanalysis-transitgatewayroutetableroute-destinationcidr): {{String}}
   [PrefixListId](#cfn-ec2-networkinsightsanalysis-transitgatewayroutetableroute-prefixlistid): {{String}}

@@ -31,7 +31,7 @@ Function definitions:
 #### set\_config(options)
 <a name="CloudWatch_Synthetics_Library_setConfig_Python"></a>
 
-```
+```python
 from aws_synthetics.common import synthetics_configuration
 ```
 
@@ -169,7 +169,7 @@ Enables all step metrics, including both step success metrics and step duration 
 
 First, import the synthetics dependency and fetch the configuration. Then, set the configuration for each option by calling the setConfig method using one of the following options.
 
-```
+```python
 from aws_synthetics.common import synthetics_configuration
 
 synthetics_configuration.set_config(
@@ -185,7 +185,7 @@ or
 
 Or
 
-```
+```python
 synthetics_configuration.with_screenshot_on_step_start(False).with_screenshot_on_step_success(False).with_screenshot_on_step_failure(True)
 ```
 
@@ -214,7 +214,7 @@ Using `synthetics_logger` is not required to create a log file that is uploaded 
 
 To use `synthetics_logger`:
 
-```
+```python
 from aws_synthetics.common import synthetics_logger
 ```
 
@@ -222,35 +222,35 @@ from aws_synthetics.common import synthetics_logger
 
 Get log level:
 
-```
+```python
 log_level = synthetics_logger.get_level()
 ```
 
 Set log level:
 
-```
+```python
 synthetics_logger.set_level()
 ```
 
 Log a message with a specified level. The level can be `DEBUG`, ` INFO`, `WARN`, or `ERROR`, as in the following syntax examples:
 
-```
+```python
 synthetics_logger.debug(message, *args, **kwargs)
 ```
 
-```
+```python
 synthetics_logger.info(message, *args, **kwargs)
 ```
 
-```
+```python
 synthetics_logger.log(message, *args, **kwargs)
 ```
 
-```
+```python
 synthetics_logger.warning(message, *args, **kwargs)
 ```
 
-```
+```python
 synthetics_logger.error(message, *args, **kwargs)
 ```
 
@@ -267,37 +267,37 @@ Examples:
 
 Log a message with the level `DEBUG`:
 
-```
+```python
 synthetics_logger.debug('Starting step - login.')
 ```
 
 Log a message with the level `INFO`. `logger.log` is a synonym for `logger.info`:
 
-```
+```python
 synthetics_logger.info('Successfully completed step - login.')
 ```
 
 or
 
-```
+```python
 synthetics_logger.log('Successfully completed step - login.')
 ```
 
 Log a message with the level `WARN`:
 
-```
+```python
 synthetics_logger.warning('Warning encountered trying to publish %s', 'CloudWatch Metric')
 ```
 
 Log a message with the level `ERROR`:
 
-```
+```python
 synthetics_logger.error('Error encountered trying to publish %s', 'CloudWatch Metric')
 ```
 
 Log an exception:
 
-```
+```python
 synthetics_logger.exception(message, *args, **kwargs)
 ```
 
@@ -314,7 +314,7 @@ There are three keyword arguments in `kwargs`:
 
 Example:
 
-```
+```python
 synthetics_logger.exception('Error encountered trying to publish %s', 'CloudWatch Metric')
 ```
 
@@ -349,7 +349,7 @@ In addition to the standard Selenium methods, it also provides the following met
 
 Sets the viewport of the browser. Example:
 
-```
+```python
 browser.set_viewport_size(1920, 1080)
 ```
 
@@ -362,7 +362,7 @@ Saves screenshots to the `/tmp` directory. The screenshots are uploaded from the
 
 Example:
 
-```
+```python
 browser.save_screenshot('loaded.png', 'page1')
 ```
 
@@ -371,7 +371,7 @@ browser.save_screenshot('loaded.png', 'page1')
 
 To use this class, use the following in your script:
 
-```
+```python
 from aws_synthetics.selenium import synthetics_webdriver
 ```
 
@@ -393,7 +393,7 @@ You should track errors as execution errors only if they are not important to in
 
 An example of the use of `add_execution_error` is the following. You are monitoring the availability of your endpoint and taking screenshots after the page has loaded. Because the failure of taking a screenshot doesn't determine availability of the endpoint, you can catch any errors encountered while taking screenshots and add them as execution errors. Your availability metrics will still indicate that the endpoint is up and running, but your canary status will be marked as failed. The following sample code block catches such an error and adds it as an execution error.
 
-```
+```python
 try:
     browser.save_screenshot("loaded.png")
 except Exception as ex:
@@ -407,7 +407,7 @@ Appends the value of `user_agent_str` to the browser's user agent header. You mu
 
 Example:
 
-```
+```python
 await synthetics_webdriver.add_user_agent('MyApp-1.0')
 ```
 
@@ -431,7 +431,7 @@ Processes one function. It also does the following:
 
 Example:
 
-```
+```python
 from selenium.webdriver.common.by import By
 
 def custom_actions():
@@ -450,7 +450,7 @@ Makes an HTTP request to the provided URL and returns the response code of the H
 
 Example:
 
-```
+```python
 response_code = syn_webdriver.get_http_response(url)
 if not response_code or response_code == "error" or response_code < 200 or response_code > 299:
     raise Exception("Failed to load page!")
@@ -463,26 +463,26 @@ Launches an instance of the Chromium browser and returns the created instance of
 
 Example:
 
-```
+```python
 browser = synthetics_webdriver.Chrome()
 browser.get("https://example.com/)
 ```
 
 To launch a browser in incognito mode, use the following:
 
-```
+```python
 add_argument('--incognito')
 ```
 
 To add proxy settings, use the following:
 
-```
+```python
 add_argument('--proxy-server=%s' % {{PROXY}})
 ```
 
 Example:
 
-```
+```python
 from selenium.webdriver.chrome.options import Options
 chrome_options = Options()
 chrome_options.add_argument("--incognito")

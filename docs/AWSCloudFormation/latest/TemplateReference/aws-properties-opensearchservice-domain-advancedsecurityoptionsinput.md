@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchservice-domain-advancedsecurityoptionsinput-syntax.json"></a>
 
-```
+```json
 {
   "[AnonymousAuthDisableDate](#cfn-opensearchservice-domain-advancedsecurityoptionsinput-anonymousauthdisabledate)" : {{String}},
   "[AnonymousAuthEnabled](#cfn-opensearchservice-domain-advancedsecurityoptionsinput-anonymousauthenabled)" : {{Boolean}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchservice-domain-advancedsecurityoptionsinput-syntax.yaml"></a>
 
-```
+```yaml
   [AnonymousAuthDisableDate](#cfn-opensearchservice-domain-advancedsecurityoptionsinput-anonymousauthdisabledate): {{String}}
   [AnonymousAuthEnabled](#cfn-opensearchservice-domain-advancedsecurityoptionsinput-anonymousauthenabled): {{Boolean}}
   [Enabled](#cfn-opensearchservice-domain-advancedsecurityoptionsinput-enabled): {{Boolean}}

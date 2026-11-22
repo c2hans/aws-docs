@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-servicecatalog-cloudformationprovisionedproduct-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ServiceCatalog::CloudFormationProvisionedProduct",
   "Properties" : {
@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-servicecatalog-cloudformationprovisionedproduct-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ServiceCatalog::CloudFormationProvisionedProduct
 Properties:
   [AcceptLanguage](#cfn-servicecatalog-cloudformationprovisionedproduct-acceptlanguage): {{String}}
@@ -203,7 +203,7 @@ The ID of the record, such as `rec-rjeatvy434trk`.
 #### YAML
 <a name="aws-resource-servicecatalog-cloudformationprovisionedproduct--examples--GetAtt_Example--yaml"></a>
 
-```
+```yaml
       AWSTemplateFormatVersion: '2010-09-09'
       Description: Serverless Stack
       Resources:

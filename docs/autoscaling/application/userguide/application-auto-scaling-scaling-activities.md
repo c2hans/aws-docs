@@ -32,7 +32,7 @@ aws application-autoscaling describe-scaling-activities --service-namespace {{ec
 
 The following is an example response, where `StatusCode` contains the current status of the activity and `StatusMessage` contains information about the status of the scaling activity.
 
-```
+```json
 {
     "ScalingActivities": [
         {
@@ -90,7 +90,7 @@ If this command throws an error, make sure that you have updated the AWS CLI loc
 
 To confirm that the response includes the not scaled activities, the `NotScaledReasons` element is shown in the output for some, if not all, failed scaling activities.
 
-```
+```json
 {
     "ScalingActivities": [
         {

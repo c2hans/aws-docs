@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-macie-allowlist-s3wordslist-syntax.json"></a>
 
-```
+```json
 {
   "[BucketName](#cfn-macie-allowlist-s3wordslist-bucketname)" : {{String}},
   "[ObjectKey](#cfn-macie-allowlist-s3wordslist-objectkey)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-macie-allowlist-s3wordslist-syntax.yaml"></a>
 
-```
+```yaml
   [BucketName](#cfn-macie-allowlist-s3wordslist-bucketname): {{String}}
   [ObjectKey](#cfn-macie-allowlist-s3wordslist-objectkey): {{String}}
 ```

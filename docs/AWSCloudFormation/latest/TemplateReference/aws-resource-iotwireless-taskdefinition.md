@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iotwireless-taskdefinition-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoTWireless::TaskDefinition",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iotwireless-taskdefinition-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoTWireless::TaskDefinition
 Properties:
   [AutoCreateTasks](#cfn-iotwireless-taskdefinition-autocreatetasks): {{Boolean}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-userprofile-userprofiledetails-syntax.json"></a>
 
-```
+```json
 {
   "[Iam](#cfn-datazone-userprofile-userprofiledetails-iam)" : {{IamUserProfileDetails}},
   "[Sso](#cfn-datazone-userprofile-userprofiledetails-sso)" : {{SsoUserProfileDetails}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-userprofile-userprofiledetails-syntax.yaml"></a>
 
-```
+```yaml
   [Iam](#cfn-datazone-userprofile-userprofiledetails-iam): {{
     IamUserProfileDetails}}
   [Sso](#cfn-datazone-userprofile-userprofiledetails-sso): {{

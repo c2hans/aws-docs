@@ -72,7 +72,7 @@ If the action is successful, the service sends back an HTTP 204 response with an
 
 This request deletes the bucket named `amzn-s3-demo-bucket`.
 
-```
+```HTTP
 DELETE / HTTP/1.1
 Host: amzn-s3-demo-bucket.s3.<Region>.amazonaws.com
 Date: Wed, 01 Mar  2006 12:00:00 GMT
@@ -82,7 +82,7 @@ Authorization: authorization string
 ### Sample Response for general purpose buckets
 <a name="API_DeleteBucket_Example_2"></a>
 
-```
+```HTTP
 HTTP/1.1 204 No Content
 x-amz-id-2: JuKZqmXuiwFeDQxhD7M8KtsKobSzWA1QEjLbTMTagkKdBX2z7Il/jGhDeJ3j6s80
 x-amz-request-id: 32FE2CEB32F5EE25

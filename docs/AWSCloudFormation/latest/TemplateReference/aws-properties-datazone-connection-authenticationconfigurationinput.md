@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-connection-authenticationconfigurationinput-syntax.json"></a>
 
-```
+```json
 {
   "[AuthenticationType](#cfn-datazone-connection-authenticationconfigurationinput-authenticationtype)" : {{String}},
   "[BasicAuthenticationCredentials](#cfn-datazone-connection-authenticationconfigurationinput-basicauthenticationcredentials)" : {{BasicAuthenticationCredentials}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-connection-authenticationconfigurationinput-syntax.yaml"></a>
 
-```
+```yaml
   [AuthenticationType](#cfn-datazone-connection-authenticationconfigurationinput-authenticationtype): {{String}}
   [BasicAuthenticationCredentials](#cfn-datazone-connection-authenticationconfigurationinput-basicauthenticationcredentials): {{
     BasicAuthenticationCredentials}}

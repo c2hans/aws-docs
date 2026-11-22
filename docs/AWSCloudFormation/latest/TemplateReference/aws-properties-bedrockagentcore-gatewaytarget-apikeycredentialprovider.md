@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewaytarget-apikeycredentialprovider-syntax.json"></a>
 
-```
+```json
 {
   "[CredentialLocation](#cfn-bedrockagentcore-gatewaytarget-apikeycredentialprovider-credentiallocation)" : {{String}},
   "[CredentialParameterName](#cfn-bedrockagentcore-gatewaytarget-apikeycredentialprovider-credentialparametername)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewaytarget-apikeycredentialprovider-syntax.yaml"></a>
 
-```
+```yaml
   [CredentialLocation](#cfn-bedrockagentcore-gatewaytarget-apikeycredentialprovider-credentiallocation): {{String}}
   [CredentialParameterName](#cfn-bedrockagentcore-gatewaytarget-apikeycredentialprovider-credentialparametername): {{String}}
   [CredentialPrefix](#cfn-bedrockagentcore-gatewaytarget-apikeycredentialprovider-credentialprefix): {{String}}

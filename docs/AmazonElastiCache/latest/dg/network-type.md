@@ -64,7 +64,7 @@ When creating a cluster with Valkey or Redis OSS using the CLI, you use the [cre
 
 For Linux, macOS, or Unix:
 
-```
+```json
 aws elasticache create-cache-cluster \
     --cache-cluster-id "cluster-test" \
     --engine redis \
@@ -76,7 +76,7 @@ aws elasticache create-cache-cluster \
 
 For Windows:
 
-```
+```json
 aws elasticache create-cache-cluster ^
     --cache-cluster-id "cluster-test" ^
     --engine redis ^
@@ -90,7 +90,7 @@ When creating a replication group with cluster mode disabled using the CLI, you 
 
 For Linux, macOS, or Unix:
 
-```
+```json
 aws elasticache create-replication-group \
    --replication-group-id sample-repl-group \
    --replication-group-description "demo cluster with replicas" \
@@ -102,7 +102,7 @@ aws elasticache create-replication-group \
 
 For Windows:
 
-```
+```json
 aws elasticache create-replication-group ^
    --replication-group-id sample-repl-group ^
    --replication-group-description "demo cluster with replicas" ^
@@ -116,7 +116,7 @@ When creating a replication group with cluster mode enabled and use IPv4 for IP 
 
 For Linux, macOS, or Unix:
 
-```
+```json
 aws elasticache create-replication-group \
   --replication-group-id demo-cluster \
   --replication-group-description "demo cluster" \
@@ -131,7 +131,7 @@ aws elasticache create-replication-group \
 
 For Windows:
 
-```
+```json
 aws elasticache create-replication-group ^
   --replication-group-id demo-cluster ^
   --replication-group-description "demo cluster" ^
@@ -148,7 +148,7 @@ When creating a replication group with cluster mode enabled and use IPv6 for IP 
 
 For Linux, macOS, or Unix:
 
-```
+```json
 aws elasticache create-replication-group \
   --replication-group-id demo-cluster \
   --replication-group-description "demo cluster" \
@@ -163,7 +163,7 @@ aws elasticache create-replication-group \
 
 For Windows:
 
-```
+```json
 aws elasticache create-replication-group ^
   --replication-group-id demo-cluster ^
   --replication-group-description "demo cluster" ^
@@ -182,7 +182,7 @@ When creating a cluster with Memcached using the CLI, you use the [create-cache-
 
 For Linux, macOS, or Unix:
 
-```
+```json
 aws elasticache create-cache-cluster \
     --cache-cluster-id "cluster-test" \
     --engine memcached \
@@ -194,7 +194,7 @@ aws elasticache create-cache-cluster \
 
 For Windows:
 
-```
+```json
 aws elasticache create-cache-cluster ^
     --cache-cluster-id "cluster-test" ^
     --engine memcached ^

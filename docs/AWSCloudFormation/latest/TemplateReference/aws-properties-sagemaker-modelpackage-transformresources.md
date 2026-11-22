@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelpackage-transformresources-syntax.json"></a>
 
-```
+```json
 {
   "[InstanceCount](#cfn-sagemaker-modelpackage-transformresources-instancecount)" : {{Integer}},
   "[InstanceType](#cfn-sagemaker-modelpackage-transformresources-instancetype)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelpackage-transformresources-syntax.yaml"></a>
 
-```
+```yaml
   [InstanceCount](#cfn-sagemaker-modelpackage-transformresources-instancecount): {{Integer}}
   [InstanceType](#cfn-sagemaker-modelpackage-transformresources-instancetype): {{String}}
   [VolumeKmsKeyId](#cfn-sagemaker-modelpackage-transformresources-volumekmskeyid): {{String}}

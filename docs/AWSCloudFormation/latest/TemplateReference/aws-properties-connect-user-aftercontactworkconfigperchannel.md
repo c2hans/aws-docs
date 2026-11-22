@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-user-aftercontactworkconfigperchannel-syntax.json"></a>
 
-```
+```json
 {
   "[AfterContactWorkConfig](#cfn-connect-user-aftercontactworkconfigperchannel-aftercontactworkconfig)" : {{AfterContactWorkConfig}},
   "[AgentFirstCallbackAfterContactWorkConfig](#cfn-connect-user-aftercontactworkconfigperchannel-agentfirstcallbackaftercontactworkconfig)" : {{AfterContactWorkConfig}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-user-aftercontactworkconfigperchannel-syntax.yaml"></a>
 
-```
+```yaml
   [AfterContactWorkConfig](#cfn-connect-user-aftercontactworkconfigperchannel-aftercontactworkconfig): {{
     AfterContactWorkConfig}}
   [AgentFirstCallbackAfterContactWorkConfig](#cfn-connect-user-aftercontactworkconfigperchannel-agentfirstcallbackaftercontactworkconfig): {{

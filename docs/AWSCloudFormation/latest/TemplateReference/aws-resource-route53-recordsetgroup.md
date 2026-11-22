@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-route53-recordsetgroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Route53::RecordSetGroup",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-route53-recordsetgroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53::RecordSetGroup
 Properties:
   [Comment](#cfn-route53-recordsetgroup-comment): {{String}}
@@ -113,7 +113,7 @@ The following example shows how to create three records for a mail server:
 #### JSON
 <a name="aws-resource-route53-recordsetgroup--examples--Creating_records_for_a_mail_server--json"></a>
 
-```
+```json
 {
    "myExampleDotComEmailServer": {
       "Type": "AWS::Route53::RecordSetGroup",
@@ -154,7 +154,7 @@ The following example shows how to create three records for a mail server:
 #### YAML
 <a name="aws-resource-route53-recordsetgroup--examples--Creating_records_for_a_mail_server--yaml"></a>
 
-```
+```yaml
 myExampleDotComEmailServer:
   Type: AWS::Route53::RecordSetGroup
   Properties:

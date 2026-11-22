@@ -8,13 +8,13 @@ Subscribes a callback function to-be-invoked whenever the user's visual mode cha
 
  **Signature**
 
-```
+```typescript
 onVisualModeChange(handler: VisualModeChangedHandler)
 ```
 
  **Usage**
 
-```
+```typescript
 const handler: VisualModeChangedHandler = async (data: VisualModeChanged) => {
     console.log("Visual mode changed! " + data.visualMode);
 };
@@ -32,6 +32,6 @@ settingsClient.onVisualModeChange(handler);
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

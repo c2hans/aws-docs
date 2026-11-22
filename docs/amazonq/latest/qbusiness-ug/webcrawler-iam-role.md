@@ -12,7 +12,7 @@ To connect Web Crawler to Amazon Q Business, you must give Amazon Q an IAM role 
 + Permission to access the `BatchPutDocument` and `BatchDeleteDocument` operations to ingest documents.
 + Permission to access the [User Store](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-principal-store.html) operations to ingest access control information from documents.
 
-```
+```json
 {
             "Sid": "AllowsAmazonQToIngestDocuments",
             "Effect": "Allow",
@@ -43,7 +43,7 @@ To connect Web Crawler to Amazon Q Business, you must give Amazon Q an IAM role 
 **If you're crawling a website which uses authentication:**
 + Permission to access the AWS Secrets Manager secret that contains the credentials to connect to websites or a web proxy server backed by basic authentication.
 
-```
+```json
 {
             "Sid": "AllowsAmazonQToGetSecret",
             "Effect": "Allow",
@@ -58,7 +58,7 @@ To connect Web Crawler to Amazon Q Business, you must give Amazon Q an IAM role 
 
 **If your Secrets Manager secret is decrypted, add permissions for a AWS KMS key to decrypt the username and password secret stored by Secrets Manager:**
 
-```
+```json
 {
             "Sid": "AllowsAmazonQToDecryptSecret",
             "Effect": "Allow",
@@ -83,7 +83,7 @@ To connect Web Crawler to Amazon Q Business, you must give Amazon Q an IAM role 
 **Note**
 Check that the file path to the object in your Amazon S3 bucket is of the following format: {{s3://BucketName/FolderName/FileName.extension}}.
 
-```
+```json
 {
             "Sid": "AllowsAmazonQToGetS3Objects",
             "Action": [
@@ -108,7 +108,7 @@ Check that the file path to the object in your Amazon S3 bucket is of the follow
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -196,7 +196,7 @@ Check that the file path to the object in your Amazon S3 bucket is of the follow
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

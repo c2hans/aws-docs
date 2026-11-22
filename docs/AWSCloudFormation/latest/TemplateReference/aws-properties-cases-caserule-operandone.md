@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cases-caserule-operandone-syntax.json"></a>
 
-```
+```json
 {
   "[FieldId](#cfn-cases-caserule-operandone-fieldid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cases-caserule-operandone-syntax.yaml"></a>
 
-```
+```yaml
   [FieldId](#cfn-cases-caserule-operandone-fieldid): {{String}}
 ```
 

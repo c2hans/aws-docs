@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-appconfig-hostedconfigurationversion-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppConfig::HostedConfigurationVersion",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-appconfig-hostedconfigurationversion-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppConfig::HostedConfigurationVersion
 Properties:
   [ApplicationId](#cfn-appconfig-hostedconfigurationversion-applicationid): {{String}}
@@ -139,7 +139,7 @@ The following example creates an AWS AppConfig configuration profile of type `Ho
 #### JSON
 <a name="aws-resource-appconfig-hostedconfigurationversion--examples--feature_flag--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Transform": "AWS::LanguageExtensions",
@@ -217,7 +217,7 @@ The following example creates an AWS AppConfig configuration profile of type `Ho
 #### YAML
 <a name="aws-resource-appconfig-hostedconfigurationversion--examples--feature_flag--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Transform: 'AWS::LanguageExtensions'
 Resources:
@@ -279,7 +279,7 @@ The following example creates an AWS AppConfig configuration profile named `MyTe
 #### JSON
 <a name="aws-resource-appconfig-hostedconfigurationversion--examples--hosted_configuration--json"></a>
 
-```
+```json
 {
   "Resources": {
     "DependentApplication": {
@@ -313,7 +313,7 @@ The following example creates an AWS AppConfig configuration profile named `MyTe
 #### YAML
 <a name="aws-resource-appconfig-hostedconfigurationversion--examples--hosted_configuration--yaml"></a>
 
-```
+```yaml
 Resources:
   DependentApplication:
     Type: AWS::AppConfig::Application

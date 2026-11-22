@@ -33,7 +33,7 @@ aws elasticache describe-replication-groups --max-items {{25}}
 ```
 Output from this operation should look something like this (JSON format).
 
-```
+```json
 {
    "ReplicationGroups": [
      {

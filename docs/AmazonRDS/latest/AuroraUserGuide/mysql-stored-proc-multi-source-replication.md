@@ -32,7 +32,7 @@ Changes the source DB instance log position to the start of the next binary log 
 ### Syntax
 <a name="mysql_rds_next_source_log_for_channel-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_next_source_log_for_channel(
 {{curr_master_log}},
 {{channel_name}}
@@ -90,7 +90,7 @@ mysql> SHOW REPLICA STATUS FOR CHANNEL 'channel_1'\G
 
 The `Last_IO_Errno` field shows that the instance is receiving I/O error 1236. The `Source_Log_File` field shows that the file name is `mysql-bin-changelog.012345`, which means that the log file index is `12345`. To resolve the error, you can call `mysql.rds_next_source_log_for_channel` with the following parameters:
 
-```
+```sql
 CALL mysql.rds_next_source_log_for_channel(12345,'channel_1');
 ```
 
@@ -105,7 +105,7 @@ To run this procedure, `autocommit` must be enabled. To enable it, set the `auto
 ### Syntax
 <a name="mysql_rds_reset_external_source_for_channel-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_reset_external_source_for_channel ({{channel_name}});
 ```
 
@@ -134,7 +134,7 @@ You can use the [mysql.rds\_set\_external\_source\_with\_delay\_for\_channel](#m
 ### Syntax
 <a name="mysql_rds_set_external_source_for_channel-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_set_external_source_for_channel (
   {{host_name}}
   , {{host_port}}
@@ -190,13 +190,13 @@ The name of the replication channel. Each replication channel receives the binar
 **Important**
 As a security best practice, specify a password other than the placeholder value shown in the following examples.
 
-   ```
+   ```sql
    CREATE USER 'repl_user'@'example.com' IDENTIFIED BY '{{password}}';
    ```
 
 1. On the source DB instance, grant `REPLICATION CLIENT` and `REPLICATION SLAVE` privileges to your replication user. The following example grants `REPLICATION CLIENT` and `REPLICATION SLAVE` privileges on all databases for the 'repl\_user' user for your domain.
 
-   ```
+   ```sql
    GRANT REPLICATION CLIENT, REPLICATION SLAVE ON *.* TO 'repl_user'@'example.com';
    ```
 
@@ -211,7 +211,7 @@ When you call `mysql.rds_set_external_source_for_channel`, Amazon RDS records th
 
 When run on a RDS for MySQL DB instance, the following example configures a replication channel named `channel_1` on this DB instance to replicate data from the source specified by host `sourcedb.example.com` and port `3306`.
 
-```
+```sql
 call mysql.rds_set_external_source_for_channel(
   'sourcedb.example.com',
   3306,
@@ -234,7 +234,7 @@ To run this procedure, `autocommit` must be enabled. To enable it, set the `auto
 ### Syntax
 <a name="mysql_rds_set_external_master_with_auto_position_for_channel-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_set_external_source_with_auto_position_for_channel (
   {{host_name}}
   , {{host_port}}
@@ -285,13 +285,13 @@ Before you run `rds_set_external_source_with_auto_position_for_channel`, configu
 **Important**
 As a security best practice, specify a password other than the placeholder value shown in the following examples.
 
-   ```
+   ```sql
    CREATE USER 'repl_user'@'example.com' IDENTIFIED BY '{{password}}';
    ```
 
 1. On the source DB instance, grant `REPLICATION CLIENT` and `REPLICATION SLAVE` privileges to your replication user. The following example grants `REPLICATION CLIENT` and `REPLICATION SLAVE` privileges on all databases for the 'repl\_user' user for your domain.
 
-   ```
+   ```sql
    GRANT REPLICATION CLIENT, REPLICATION SLAVE ON *.* TO 'repl_user'@'example.com';
    ```
 
@@ -306,7 +306,7 @@ After calling `mysql.rds_set_external_source_with_auto_position_for_channel` to 
 
 When run on a RDS for MySQL DB instance, the following example configures a replication channel named `channel_1` on this DB instance to replicate data from the source specified by host `sourcedb.example.com` and port `3306` It sets the minimum replication delay to one hour (3,600 seconds). This means that a change from the source RDS for MySQL DB instance isn't applied on the multi-source replica for at least one hour.
 
-```
+```sql
 call mysql.rds_set_external_source_with_auto_position_for_channel(
   'sourcedb.example.com',
   3306,
@@ -328,7 +328,7 @@ To run this procedure, `autocommit` must be enabled. To enable it, set the `auto
 ### Syntax
 <a name="mysql_rds_set_external_source_with_delay_for_channel-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_set_external_source_with_delay_for_channel (
   {{host_name}}
   , {{host_port}}
@@ -389,13 +389,13 @@ Before you run `mysql.rds_set_external_source_with_delay_for_channel`, configure
 **Important**
 As a security best practice, specify a password other than the placeholder value shown in the following examples.
 
-   ```
+   ```sql
    CREATE USER 'repl_user'@'example.com' IDENTIFIED BY '{{password}}';
    ```
 
 1. On the source DB instance, grant `REPLICATION CLIENT` and `REPLICATION SLAVE` privileges to your replication user. The following example grants `REPLICATION CLIENT` and `REPLICATION SLAVE` privileges on all databases for the 'repl\_user' user for your domain.
 
-   ```
+   ```sql
    GRANT REPLICATION CLIENT, REPLICATION SLAVE ON *.* TO 'repl_user'@'example.com';
    ```
 
@@ -410,7 +410,7 @@ When you call `mysql.rds_set_external_source_with_delay_for_channel`, Amazon RDS
 
 When run on a RDS for MySQL DB instance, the following example configures a replication channel named `channel_1` on this DB instance to replicate data from the source specified by host `sourcedb.example.com` and port `3306` It sets the minimum replication delay to one hour (3,600 seconds). This means that a change from the source RDS for MySQL DB instance isn't applied on the multi-source replica for at least one hour.
 
-```
+```sql
 call mysql.rds_set_external_source_with_delay_for_channel(
   'sourcedb.example.com',
   3306,
@@ -431,7 +431,7 @@ Sets the replication mode for the specified channel to be based on either binary
 ### Syntax
 <a name="mysql_rds_set_source_auto_position_for_channel-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_set_source_auto_position_for_channel (
 {{auto_position_mode}}
  , {{channel_name}}
@@ -459,7 +459,7 @@ The master user must run the `mysql.rds_set_source_auto_position_for_channel` pr
 
 The following example sets the auto position mode for channel\_1 to use the GTID-based replication method.
 
-```
+```sql
 call mysql.rds_set_source_auto_position_for_channel(1,'channel_1');
 ```
 
@@ -471,7 +471,7 @@ Sets the minimum number of seconds to delay replication from the source database
 ### Syntax
 <a name="mysql_rds_set_source_delay_for_channel-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_set_source_delay_for_channel({{delay}}, {{channel_name}});
 ```
 
@@ -495,7 +495,7 @@ The master user must run the `mysql.rds_set_source_delay_for_channel` procedure.
 
 The following example sets the delay for replication from the source database instance on `channel_1` of the multi-source replica for at least one hour (3,600 seconds).
 
-```
+```sql
 CALL mysql.rds_set_source_delay_for_channel(3600,'channel_1');
 ```
 
@@ -507,7 +507,7 @@ Skips a binary log event and deletes a replication error on a MySQL DB multi-sou
 ### Syntax
 <a name="mysql_rds_skip_repl_error_for_channel-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_skip_repl_error_for_channel({{channel_name}});
 ```
 
@@ -538,7 +538,7 @@ You can use the [mysql.rds\_start\_replication\_until\_for\_channel](#mysql_rds_
 ### Syntax
 <a name="mysql_rds_start_replication_for_channel-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_start_replication_for_channel({{channel_name}});
 ```
 
@@ -558,7 +558,7 @@ The master user must run the `mysql.rds_start_replication_for_channel` procedure
 
 The following example starts replication on `channel_1` of the multi-source replica.
 
-```
+```sql
 CALL mysql.rds_start_replication_for_channel('channel_1');
 ```
 
@@ -570,7 +570,7 @@ Initiates replication from an RDS for MySQL DB instance on the specified channel
 ### Syntax
 <a name="mysql_rds_start_replication_until_for_channel-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_start_replication_until_for_channel (
 {{replication_log_file}}
   , {{replication_stop_point}}
@@ -604,7 +604,7 @@ When the `replication_stop_point` parameter specifies a stop location that's in 
 
 The following example initiates replication on `channel_1`, and replicates changes until it reaches location `120` in the `mysql-bin-changelog.000777` binary log file.
 
-```
+```sql
 call mysql.rds_start_replication_until_for_channel(
   'mysql-bin-changelog.000777',
   120,
@@ -620,7 +620,7 @@ Initiates replication on the specified channel from an RDS for MySQL DB instance
 ### Syntax
 <a name="mysql_rds_start_replication_until_gtid_for_channel-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_start_replication_until_gtid_for_channel({{gtid}},{{channel_name}});
 ```
 
@@ -647,7 +647,7 @@ Before you run this procedure, you must disable multi-threaded replication by se
 
 The following example initiates replication on `channel_1`, and replicates changes until it reaches GTID `3E11FA47-71CA-11E1-9E33-C80AA9429562:23`.
 
-```
+```sql
 call mysql.rds_start_replication_until_gtid_for_channel('3E11FA47-71CA-11E1-9E33-C80AA9429562:23','channel_1');
 ```
 
@@ -659,7 +659,7 @@ Stops replication from a MySQL DB instance on the specified channel.
 ### Syntax
 <a name="mysql_rds_stop_replication_for_channel-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_stop_replication_for_channel({{channel_name}});
 ```
 
@@ -679,6 +679,6 @@ The master user must run the `mysql.rds_stop_replication_for_channel` procedure.
 
 The following example stops replication on `channel_1` of the multi-source replica.
 
-```
+```sql
 CALL mysql.rds_stop_replication_for_channel('channel_1');
 ```

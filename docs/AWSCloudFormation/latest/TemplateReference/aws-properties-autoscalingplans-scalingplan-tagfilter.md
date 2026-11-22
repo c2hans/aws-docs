@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-autoscalingplans-scalingplan-tagfilter-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-autoscalingplans-scalingplan-tagfilter-key)" : {{String}},
   "[Values](#cfn-autoscalingplans-scalingplan-tagfilter-values)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-autoscalingplans-scalingplan-tagfilter-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-autoscalingplans-scalingplan-tagfilter-key): {{String}}
   [Values](#cfn-autoscalingplans-scalingplan-tagfilter-values): {{
     - String}}

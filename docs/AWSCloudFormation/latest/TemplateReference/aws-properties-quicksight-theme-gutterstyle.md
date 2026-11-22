@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-theme-gutterstyle-syntax.json"></a>
 
-```
+```json
 {
   "[Show](#cfn-quicksight-theme-gutterstyle-show)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-theme-gutterstyle-syntax.yaml"></a>
 
-```
+```yaml
   [Show](#cfn-quicksight-theme-gutterstyle-show): {{Boolean}}
 ```
 

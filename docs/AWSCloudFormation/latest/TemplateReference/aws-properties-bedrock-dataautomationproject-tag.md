@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-dataautomationproject-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-bedrock-dataautomationproject-tag-key)" : {{String}},
   "[Value](#cfn-bedrock-dataautomationproject-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-dataautomationproject-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-bedrock-dataautomationproject-tag-key): {{String}}
   [Value](#cfn-bedrock-dataautomationproject-tag-value): {{String}}
 ```

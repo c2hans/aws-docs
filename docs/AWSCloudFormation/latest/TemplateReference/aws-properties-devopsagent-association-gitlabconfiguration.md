@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-association-gitlabconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EnableWebhookUpdates](#cfn-devopsagent-association-gitlabconfiguration-enablewebhookupdates)" : {{Boolean}},
   "[InstanceIdentifier](#cfn-devopsagent-association-gitlabconfiguration-instanceidentifier)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-association-gitlabconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EnableWebhookUpdates](#cfn-devopsagent-association-gitlabconfiguration-enablewebhookupdates): {{Boolean}}
   [InstanceIdentifier](#cfn-devopsagent-association-gitlabconfiguration-instanceidentifier): {{String}}
   [ProjectId](#cfn-devopsagent-association-gitlabconfiguration-projectid): {{String}}

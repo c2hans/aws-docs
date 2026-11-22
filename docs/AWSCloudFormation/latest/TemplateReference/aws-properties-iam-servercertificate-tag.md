@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iam-servercertificate-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-iam-servercertificate-tag-key)" : {{String}},
   "[Value](#cfn-iam-servercertificate-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iam-servercertificate-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-iam-servercertificate-tag-key): {{String}}
   [Value](#cfn-iam-servercertificate-tag-value): {{String}}
 ```

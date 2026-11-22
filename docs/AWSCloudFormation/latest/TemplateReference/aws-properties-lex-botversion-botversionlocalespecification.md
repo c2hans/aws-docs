@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-botversion-botversionlocalespecification-syntax.json"></a>
 
-```
+```json
 {
   "[BotVersionLocaleDetails](#cfn-lex-botversion-botversionlocalespecification-botversionlocaledetails)" : {{BotVersionLocaleDetails}},
   "[LocaleId](#cfn-lex-botversion-botversionlocalespecification-localeid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-botversion-botversionlocalespecification-syntax.yaml"></a>
 
-```
+```yaml
   [BotVersionLocaleDetails](#cfn-lex-botversion-botversionlocalespecification-botversionlocaledetails): {{
     BotVersionLocaleDetails}}
   [LocaleId](#cfn-lex-botversion-botversionlocalespecification-localeid): {{String}}

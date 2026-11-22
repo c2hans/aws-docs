@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-knowledgebase-redshiftqueryenginestorageconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AwsDataCatalogConfiguration](#cfn-bedrock-knowledgebase-redshiftqueryenginestorageconfiguration-awsdatacatalogconfiguration)" : {{RedshiftQueryEngineAwsDataCatalogStorageConfiguration}},
   "[RedshiftConfiguration](#cfn-bedrock-knowledgebase-redshiftqueryenginestorageconfiguration-redshiftconfiguration)" : {{RedshiftQueryEngineRedshiftStorageConfiguration}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-knowledgebase-redshiftqueryenginestorageconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AwsDataCatalogConfiguration](#cfn-bedrock-knowledgebase-redshiftqueryenginestorageconfiguration-awsdatacatalogconfiguration): {{
     RedshiftQueryEngineAwsDataCatalogStorageConfiguration}}
   [RedshiftConfiguration](#cfn-bedrock-knowledgebase-redshiftqueryenginestorageconfiguration-redshiftconfiguration): {{

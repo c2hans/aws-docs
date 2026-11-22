@@ -173,6 +173,7 @@ The following actions are supported:
 +  [UpdateDelegationRequest](API_UpdateDelegationRequest.md)
 +  [UpdateGroup](API_UpdateGroup.md)
 +  [UpdateLoginProfile](API_UpdateLoginProfile.md)
++  [UpdateOpenIDConnectProvider](API_UpdateOpenIDConnectProvider.md)
 +  [UpdateOpenIDConnectProviderThumbprint](API_UpdateOpenIDConnectProviderThumbprint.md)
 +  [UpdateRole](API_UpdateRole.md)
 +  [UpdateRoleDescription](API_UpdateRoleDescription.md)

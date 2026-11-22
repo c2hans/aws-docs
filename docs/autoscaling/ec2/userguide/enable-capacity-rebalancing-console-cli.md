@@ -68,7 +68,7 @@ The following procedures show how to use a configuration file formatted in JSON 
 
   Add the following line to the top-level JSON object in the configuration file.
 
-  ```
+  ```json
   {
       "CapacityRebalance": true
   }
@@ -76,7 +76,7 @@ The following procedures show how to use a configuration file formatted in JSON 
 
   The following is an example `config.json` file.
 
-  ```
+  ```json
   {
       "AutoScalingGroupName": "{{my-asg}}",
       "DesiredCapacity": {{12}},
@@ -139,13 +139,13 @@ The following procedures show how to use a configuration file formatted in JSON 
 
   Add the following line to your configuration file formatted in YAML.
 
-  ```
+  ```YAML
   CapacityRebalance: true
   ```
 
   The following is an example `config.yaml` file.
 
-  ```
+  ```YAML
   ---
   AutoScalingGroupName: {{my-asg}}
   DesiredCapacity: {{12}}
@@ -192,7 +192,7 @@ The following procedures show how to use a configuration file formatted in JSON 
 
   The following is an example response.
 
-  ```
+  ```json
   {
       "AutoScalingGroups": [
           {

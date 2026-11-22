@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="alexa-properties-ask-skill-skillpackage-syntax.json"></a>
 
-```
+```json
 {
   "[Overrides](#cfn-ask-skill-skillpackage-overrides)" : {{Overrides}},
   "[S3Bucket](#cfn-ask-skill-skillpackage-s3bucket)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="alexa-properties-ask-skill-skillpackage-syntax.yaml"></a>
 
-```
+```yaml
   [Overrides](#cfn-ask-skill-skillpackage-overrides): {{
     Overrides}}
   [S3Bucket](#cfn-ask-skill-skillpackage-s3bucket): {{String}}

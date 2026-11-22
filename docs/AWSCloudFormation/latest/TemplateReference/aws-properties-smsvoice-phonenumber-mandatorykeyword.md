@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-smsvoice-phonenumber-mandatorykeyword-syntax.json"></a>
 
-```
+```json
 {
   "[Message](#cfn-smsvoice-phonenumber-mandatorykeyword-message)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-smsvoice-phonenumber-mandatorykeyword-syntax.yaml"></a>
 
-```
+```yaml
   [Message](#cfn-smsvoice-phonenumber-mandatorykeyword-message): {{String}}
 ```
 

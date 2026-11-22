@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-assistantassociation-externalbedrockknowledgebaseconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AccessRoleArn](#cfn-wisdom-assistantassociation-externalbedrockknowledgebaseconfig-accessrolearn)" : {{String}},
   "[BedrockKnowledgeBaseArn](#cfn-wisdom-assistantassociation-externalbedrockknowledgebaseconfig-bedrockknowledgebasearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-assistantassociation-externalbedrockknowledgebaseconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AccessRoleArn](#cfn-wisdom-assistantassociation-externalbedrockknowledgebaseconfig-accessrolearn): {{String}}
   [BedrockKnowledgeBaseArn](#cfn-wisdom-assistantassociation-externalbedrockknowledgebaseconfig-bedrockknowledgebasearn): {{String}}
 ```

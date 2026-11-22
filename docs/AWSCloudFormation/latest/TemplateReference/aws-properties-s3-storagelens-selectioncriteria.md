@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-storagelens-selectioncriteria-syntax.json"></a>
 
-```
+```json
 {
   "[Delimiter](#cfn-s3-storagelens-selectioncriteria-delimiter)" : {{String}},
   "[MaxDepth](#cfn-s3-storagelens-selectioncriteria-maxdepth)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-storagelens-selectioncriteria-syntax.yaml"></a>
 
-```
+```yaml
   [Delimiter](#cfn-s3-storagelens-selectioncriteria-delimiter): {{String}}
   [MaxDepth](#cfn-s3-storagelens-selectioncriteria-maxdepth): {{Integer}}
   [MinStorageBytesPercentage](#cfn-s3-storagelens-selectioncriteria-minstoragebytespercentage): {{Number}}

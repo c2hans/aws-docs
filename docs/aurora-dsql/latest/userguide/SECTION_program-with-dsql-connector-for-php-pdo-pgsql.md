@@ -53,7 +53,7 @@ For a complete example, see the [example application](https://github.com/awslabs
 
 Add the package to your project:
 
-```
+```bash
 composer require awslabs/aurora-dsql-pdo-pgsql
 ```
 
@@ -63,7 +63,7 @@ composer require awslabs/aurora-dsql-pdo-pgsql
 ### Configuration-based connection
 <a name="SECTION_program-with-dsql-connector-for-php-pdo-pgsql-config-connection"></a>
 
-```
+```php
 <?php
 
 require_once 'vendor/autoload.php';
@@ -95,7 +95,7 @@ $id = $pdo->transaction(function (PDO $conn): string {
 
 For simple scripts or when you prefer connection string syntax, the connector supports `postgres://` and `postgresql://` connection strings with Aurora DSQL-specific query parameters:
 
-```
+```php
 $pdo = AuroraDsql::connectFromDsn(
     'postgres://admin@your-cluster.dsql.us-east-1.on.aws/postgres?region=us-east-1'
 );
@@ -110,7 +110,7 @@ Aurora DSQL uses optimistic concurrency control (OCC). When two transactions mod
 
 OCC retry is opt-in. Set `occMaxRetries` in the config to enable automatic retry with exponential backoff and jitter:
 
-```
+```php
 $config = new DsqlConfig(
     host: 'your-cluster.dsql.us-east-1.on.aws',
     occMaxRetries: 3

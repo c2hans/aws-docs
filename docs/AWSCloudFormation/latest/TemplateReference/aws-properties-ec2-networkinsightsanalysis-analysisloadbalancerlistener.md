@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-networkinsightsanalysis-analysisloadbalancerlistener-syntax.json"></a>
 
-```
+```json
 {
   "[InstancePort](#cfn-ec2-networkinsightsanalysis-analysisloadbalancerlistener-instanceport)" : {{Integer}},
   "[LoadBalancerPort](#cfn-ec2-networkinsightsanalysis-analysisloadbalancerlistener-loadbalancerport)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-networkinsightsanalysis-analysisloadbalancerlistener-syntax.yaml"></a>
 
-```
+```yaml
   [InstancePort](#cfn-ec2-networkinsightsanalysis-analysisloadbalancerlistener-instanceport): {{Integer}}
   [LoadBalancerPort](#cfn-ec2-networkinsightsanalysis-analysisloadbalancerlistener-loadbalancerport): {{Integer}}
 ```

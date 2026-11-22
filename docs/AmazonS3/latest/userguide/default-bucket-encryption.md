@@ -96,7 +96,7 @@ For more information about default encryption, see [Setting default server-side 
 **Example – Default encryption with SSE-S3**
 This example configures default bucket encryption with Amazon S3 managed keys.
 
-```
+```JSON
 aws s3api put-bucket-encryption --bucket {{amzn-s3-demo-bucket}} --server-side-encryption-configuration '{
     "Rules": [
         {
@@ -111,7 +111,7 @@ aws s3api put-bucket-encryption --bucket {{amzn-s3-demo-bucket}} --server-side-e
 **Example – Default encryption with SSE-KMS using an S3 Bucket Key**
 This example configures default bucket encryption with SSE-KMS using an S3 Bucket Key.
 
-```
+```JSON
 aws s3api put-bucket-encryption --bucket {{amzn-s3-demo-bucket}} --server-side-encryption-configuration '{
     "Rules": [
             {

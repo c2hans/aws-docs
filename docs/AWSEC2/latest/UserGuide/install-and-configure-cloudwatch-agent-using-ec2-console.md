@@ -36,7 +36,7 @@ To use this feature, your IAM console user or role must have the permissions req
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

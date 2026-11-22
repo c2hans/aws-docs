@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-logdeliveryconfiguration-logconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CloudWatchLogsConfiguration](#cfn-cognito-logdeliveryconfiguration-logconfiguration-cloudwatchlogsconfiguration)" : {{CloudWatchLogsConfiguration}},
   "[EventSource](#cfn-cognito-logdeliveryconfiguration-logconfiguration-eventsource)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-logdeliveryconfiguration-logconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CloudWatchLogsConfiguration](#cfn-cognito-logdeliveryconfiguration-logconfiguration-cloudwatchlogsconfiguration): {{
     CloudWatchLogsConfiguration}}
   [EventSource](#cfn-cognito-logdeliveryconfiguration-logconfiguration-eventsource): {{String}}

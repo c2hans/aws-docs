@@ -49,7 +49,7 @@ dbtask-{{task-id}}.log
 
 You can view the result by displaying the task's output file.
 
-```
+```sql
 SELECT text FROM table(rdsadmin.rds_file_util.read_text_file('BDUMP','dbtask-{{task-id}}.log'));
 ```
 

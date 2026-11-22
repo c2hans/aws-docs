@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-numericequalityfilter-syntax.json"></a>
 
-```
+```json
 {
   "[AggregationFunction](#cfn-quicksight-dashboard-numericequalityfilter-aggregationfunction)" : {{AggregationFunction}},
   "[Column](#cfn-quicksight-dashboard-numericequalityfilter-column)" : {{ColumnIdentifier}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-numericequalityfilter-syntax.yaml"></a>
 
-```
+```yaml
   [AggregationFunction](#cfn-quicksight-dashboard-numericequalityfilter-aggregationfunction): {{
     AggregationFunction}}
   [Column](#cfn-quicksight-dashboard-numericequalityfilter-column): {{

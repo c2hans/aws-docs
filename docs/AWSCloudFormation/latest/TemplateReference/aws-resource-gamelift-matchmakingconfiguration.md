@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-gamelift-matchmakingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::GameLift::MatchmakingConfiguration",
   "Properties" : {
@@ -44,7 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-gamelift-matchmakingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::GameLift::MatchmakingConfiguration
 Properties:
   [AcceptanceRequired](#cfn-gamelift-matchmakingconfiguration-acceptancerequired): {{Boolean}}
@@ -242,7 +242,7 @@ The following example creates a matchmaking configuration for a game that is bei
 #### JSON
 <a name="aws-resource-gamelift-matchmakingconfiguration--examples--Create_a_matchmaking_configuration_for_use_with_GameLift_managed_hosting--json"></a>
 
-```
+```json
 {
     "Resources": {
         "QueueResource": {
@@ -307,7 +307,7 @@ The following example creates a matchmaking configuration for a game that is bei
 #### YAML
 <a name="aws-resource-gamelift-matchmakingconfiguration--examples--Create_a_matchmaking_configuration_for_use_with_GameLift_managed_hosting--yaml"></a>
 
-```
+```yaml
 Resources:
   QueueResource:
     Type: "AWS::GameLift::GameSessionQueue"
@@ -362,7 +362,7 @@ The following example creates a matchmaking configuration for a game that is hos
 #### JSON
 <a name="aws-resource-gamelift-matchmakingconfiguration--examples--Create_a_matchmaking_configuration_for_a_standalone_FlexMatch_system--json"></a>
 
-```
+```json
 {
     "Resources": {
         "MatchmakingRuleSetResource": {
@@ -400,7 +400,7 @@ The following example creates a matchmaking configuration for a game that is hos
 #### YAML
 <a name="aws-resource-gamelift-matchmakingconfiguration--examples--Create_a_matchmaking_configuration_for_a_standalone_FlexMatch_system--yaml"></a>
 
-```
+```yaml
 Resources:
     MatchmakingRuleSetResource:
         Type: "AWS::GameLift::MatchmakingRuleSet"

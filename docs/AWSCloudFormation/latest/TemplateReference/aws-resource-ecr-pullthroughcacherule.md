@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ecr-pullthroughcacherule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ECR::PullThroughCacheRule",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ecr-pullthroughcacherule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ECR::PullThroughCacheRule
 Properties:
   [CredentialArn](#cfn-ecr-pullthroughcacherule-credentialarn): {{String}}
@@ -111,7 +111,7 @@ The following example creates a pull through cache rule for the upstream registr
 #### JSON
 <a name="aws-resource-ecr-pullthroughcacherule--examples--Create_a_pull_through_cache_rule_for_an_upstream_registry_that_requires_authentication--json"></a>
 
-```
+```json
 {
     "Resources": {
         "MyECRPullThroughCacheRule": {
@@ -129,7 +129,7 @@ The following example creates a pull through cache rule for the upstream registr
 #### YAML
 <a name="aws-resource-ecr-pullthroughcacherule--examples--Create_a_pull_through_cache_rule_for_an_upstream_registry_that_requires_authentication--yaml"></a>
 
-```
+```yaml
 Resources:
   MyECRPullThroughCacheRule:
     Type: 'AWS::ECR::PullThroughCacheRule'
@@ -148,7 +148,7 @@ The following example creates a pull through cache rule that caches repositories
 #### JSON
 <a name="aws-resource-ecr-pullthroughcacherule--examples--Create_a_pull_through_cache_rule_for_an_upstream_registry_that_does_not_require_authentication--json"></a>
 
-```
+```json
 {
     "Resources": {
         "MyECRPullThroughCacheRule": {
@@ -165,7 +165,7 @@ The following example creates a pull through cache rule that caches repositories
 #### YAML
 <a name="aws-resource-ecr-pullthroughcacherule--examples--Create_a_pull_through_cache_rule_for_an_upstream_registry_that_does_not_require_authentication--yaml"></a>
 
-```
+```yaml
 Resources:
   MyECRPullThroughCacheRule:
     Type: 'AWS::ECR::PullThroughCacheRule'

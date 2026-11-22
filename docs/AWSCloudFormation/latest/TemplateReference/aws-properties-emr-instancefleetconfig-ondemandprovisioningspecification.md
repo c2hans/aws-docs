@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emr-instancefleetconfig-ondemandprovisioningspecification-syntax.json"></a>
 
-```
+```json
 {
   "[AllocationStrategy](#cfn-emr-instancefleetconfig-ondemandprovisioningspecification-allocationstrategy)" : {{String}},
   "[CapacityReservationOptions](#cfn-emr-instancefleetconfig-ondemandprovisioningspecification-capacityreservationoptions)" : {{OnDemandCapacityReservationOptions}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emr-instancefleetconfig-ondemandprovisioningspecification-syntax.yaml"></a>
 
-```
+```yaml
   [AllocationStrategy](#cfn-emr-instancefleetconfig-ondemandprovisioningspecification-allocationstrategy): {{String}}
   [CapacityReservationOptions](#cfn-emr-instancefleetconfig-ondemandprovisioningspecification-capacityreservationoptions): {{
     OnDemandCapacityReservationOptions}}

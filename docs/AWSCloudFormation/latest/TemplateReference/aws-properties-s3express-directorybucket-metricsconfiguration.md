@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3express-directorybucket-metricsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AccessPointArn](#cfn-s3express-directorybucket-metricsconfiguration-accesspointarn)" : {{String}},
   "[Id](#cfn-s3express-directorybucket-metricsconfiguration-id)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3express-directorybucket-metricsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AccessPointArn](#cfn-s3express-directorybucket-metricsconfiguration-accesspointarn): {{String}}
   [Id](#cfn-s3express-directorybucket-metricsconfiguration-id): {{String}}
   [Prefix](#cfn-s3express-directorybucket-metricsconfiguration-prefix): {{String}}

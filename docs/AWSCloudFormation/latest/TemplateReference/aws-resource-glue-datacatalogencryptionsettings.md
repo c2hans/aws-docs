@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-glue-datacatalogencryptionsettings-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Glue::DataCatalogEncryptionSettings",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-glue-datacatalogencryptionsettings-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Glue::DataCatalogEncryptionSettings
 Properties:
   [CatalogId](#cfn-glue-datacatalogencryptionsettings-catalogid): {{String}}

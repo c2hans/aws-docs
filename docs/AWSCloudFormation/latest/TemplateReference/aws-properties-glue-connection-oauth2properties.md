@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-connection-oauth2properties-syntax.json"></a>
 
-```
+```json
 {
   "[AuthorizationCodeProperties](#cfn-glue-connection-oauth2properties-authorizationcodeproperties)" : {{AuthorizationCodeProperties}},
   "[OAuth2ClientApplication](#cfn-glue-connection-oauth2properties-oauth2clientapplication)" : {{OAuth2ClientApplication}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-connection-oauth2properties-syntax.yaml"></a>
 
-```
+```yaml
   [AuthorizationCodeProperties](#cfn-glue-connection-oauth2properties-authorizationcodeproperties): {{
     AuthorizationCodeProperties}}
   [OAuth2ClientApplication](#cfn-glue-connection-oauth2properties-oauth2clientapplication): {{

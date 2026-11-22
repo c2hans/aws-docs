@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-dms-replicationtask-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DMS::ReplicationTask",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-dms-replicationtask-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DMS::ReplicationTask
 Properties:
   [CdcStartPosition](#cfn-dms-replicationtask-cdcstartposition): {{String}}
@@ -192,7 +192,7 @@ The following example creates a replication task with a selection rule and actio
 #### JSON
 <a name="aws-resource-dms-replicationtask--examples--Create_a_replication_task--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -213,7 +213,7 @@ The following example creates a replication task with a selection rule and actio
 #### YAML
 <a name="aws-resource-dms-replicationtask--examples--Create_a_replication_task--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   myReplicationTask:
@@ -234,7 +234,7 @@ The following example creates a replication task with a selection rule and full-
 #### JSON
 <a name="aws-resource-dms-replicationtask--examples--Create_a_replication_task_with_full_load_task_settings--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -256,7 +256,7 @@ The following example creates a replication task with a selection rule and full-
 #### YAML
 <a name="aws-resource-dms-replicationtask--examples--Create_a_replication_task_with_full_load_task_settings--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   myReplicationTask:

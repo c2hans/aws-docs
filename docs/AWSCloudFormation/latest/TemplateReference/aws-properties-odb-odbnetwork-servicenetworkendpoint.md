@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-odb-odbnetwork-servicenetworkendpoint-syntax.json"></a>
 
-```
+```json
 {
   "[VpcEndpointId](#cfn-odb-odbnetwork-servicenetworkendpoint-vpcendpointid)" : {{String}},
   "[VpcEndpointType](#cfn-odb-odbnetwork-servicenetworkendpoint-vpcendpointtype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-odb-odbnetwork-servicenetworkendpoint-syntax.yaml"></a>
 
-```
+```yaml
   [VpcEndpointId](#cfn-odb-odbnetwork-servicenetworkendpoint-vpcendpointid): {{String}}
   [VpcEndpointType](#cfn-odb-odbnetwork-servicenetworkendpoint-vpcendpointtype): {{String}}
 ```

@@ -8,7 +8,7 @@ The AWS Serverless Application Model (SAM) is an open-source framework for build
 
 Replace `migra-abcdefg123456` with the tag value needed for your migrated resource followed by your MAP term agreement number in the following example to tag resources at the Global and Resource level:
 
-```
+```yaml
 Globals:
   Function:
     Tags:

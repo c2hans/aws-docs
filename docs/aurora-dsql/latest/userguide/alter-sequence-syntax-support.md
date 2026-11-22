@@ -13,7 +13,7 @@ For guidance on how best to use sequences based on workload patterns, see [Worki
 ## Supported syntax
 <a name="alter-sequence-supported-syntax"></a>
 
-```
+```sql
 ALTER SEQUENCE [ IF EXISTS ] name
     [ INCREMENT [ BY ] increment ]
     [ MINVALUE minvalue | NO MINVALUE ] [ MAXVALUE maxvalue | NO MAXVALUE ]
@@ -98,7 +98,7 @@ For historical reasons, `ALTER TABLE` can be used with sequences too; but the on
 
 Restart a sequence called `serial`, at 105:
 
-```
+```sql
 ALTER SEQUENCE serial RESTART WITH 105;
 ```
 

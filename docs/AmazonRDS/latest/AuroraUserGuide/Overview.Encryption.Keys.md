@@ -40,7 +40,7 @@ When Aurora uses your KMS key, or when Amazon EBS uses the KMS key on behalf of 
 
 At minimum, Aurora always uses the DB cluster ID for the encryption context, as in the following JSON-formatted example:
 
-```
+```json
 { "aws:rds:dbc-id": "cluster-CQYSMDPBRZ7BPMH7Y3RTDG5QY" }
 ```
 
@@ -48,7 +48,7 @@ This encryption context can help you identify the DB cluster for which your KMS 
 
 When your KMS key is used for a specific DB cluster and a specific Amazon EBS volume, both the DB cluster ID and the Amazon EBS volume ID are used for the encryption context, as in the following JSON-formatted example:
 
-```
+```json
 {
   "aws:rds:dbc-id": "cluster-BRG7VYS3SVIFQW7234EJQOM5RQ",
   "aws:ebs:id": "vol-ad8c6542"

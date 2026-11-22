@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-licensemanager-reportgenerator-s3location-syntax.json"></a>
 
-```
+```json
 {
   "[Bucket](#cfn-licensemanager-reportgenerator-s3location-bucket)" : {{String}},
   "[KeyPrefix](#cfn-licensemanager-reportgenerator-s3location-keyprefix)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-licensemanager-reportgenerator-s3location-syntax.yaml"></a>
 
-```
+```yaml
   [Bucket](#cfn-licensemanager-reportgenerator-s3location-bucket): {{String}}
   [KeyPrefix](#cfn-licensemanager-reportgenerator-s3location-keyprefix): {{String}}
 ```

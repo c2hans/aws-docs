@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudformation-stack-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-cloudformation-stack-tag-key)" : {{String}},
   "[Value](#cfn-cloudformation-stack-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudformation-stack-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-cloudformation-stack-tag-key): {{String}}
   [Value](#cfn-cloudformation-stack-tag-value): {{String}}
 ```

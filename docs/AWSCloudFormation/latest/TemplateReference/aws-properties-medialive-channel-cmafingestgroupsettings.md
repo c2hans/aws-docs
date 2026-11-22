@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-cmafingestgroupsettings-syntax.json"></a>
 
-```
+```json
 {
   "[AdditionalDestinations](#cfn-medialive-channel-cmafingestgroupsettings-additionaldestinations)" : {{[ AdditionalDestinations, ... ]}},
   "[CaptionLanguageMappings](#cfn-medialive-channel-cmafingestgroupsettings-captionlanguagemappings)" : {{[ CmafIngestCaptionLanguageMapping, ... ]}},
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-cmafingestgroupsettings-syntax.yaml"></a>
 
-```
+```yaml
   [AdditionalDestinations](#cfn-medialive-channel-cmafingestgroupsettings-additionaldestinations): {{
     - AdditionalDestinations}}
   [CaptionLanguageMappings](#cfn-medialive-channel-cmafingestgroupsettings-captionlanguagemappings): {{

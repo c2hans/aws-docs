@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Appendi
 
 The following query shows the values of some of the parameters that directly affect autovacuum and its behavior. The [autovacuum parameters](https://www.postgresql.org/docs/current/static/runtime-config-autovacuum.html) are described fully in the PostgreSQL documentation.
 
-```
+```sql
 SELECT name, setting, unit, short_desc
 FROM pg_settings
 WHERE name IN (

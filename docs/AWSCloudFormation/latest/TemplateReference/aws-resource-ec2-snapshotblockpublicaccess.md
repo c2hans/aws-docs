@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-snapshotblockpublicaccess-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::SnapshotBlockPublicAccess",
   "Properties" : {
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-snapshotblockpublicaccess-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::SnapshotBlockPublicAccess
 Properties:
   [State](#cfn-ec2-snapshotblockpublicaccess-state): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-accountauditconfiguration-certexpirationcheckcustomconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CertExpirationThresholdInDays](#cfn-iot-accountauditconfiguration-certexpirationcheckcustomconfiguration-certexpirationthresholdindays)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-accountauditconfiguration-certexpirationcheckcustomconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CertExpirationThresholdInDays](#cfn-iot-accountauditconfiguration-certexpirationcheckcustomconfiguration-certexpirationthresholdindays): {{String}}
 ```
 

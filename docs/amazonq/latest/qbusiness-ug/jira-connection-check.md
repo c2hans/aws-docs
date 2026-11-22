@@ -23,7 +23,7 @@ curl --location '{{https://<jira-url>/wiki/rest/api/user/current}}'
 
 If your data source is connected as expected, the JSON response should resemble the following:
 
-```
+```json
 {
     "type": "known",
     "accountId": "{{accountId}}",

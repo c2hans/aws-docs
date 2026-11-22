@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-logsconfigurationpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[AllowedAccountIds](#cfn-cleanroomsml-configuredmodelalgorithmassociation-logsconfigurationpolicy-allowedaccountids)" : {{[ String, ... ]}},
   "[FilterPattern](#cfn-cleanroomsml-configuredmodelalgorithmassociation-logsconfigurationpolicy-filterpattern)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-logsconfigurationpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [AllowedAccountIds](#cfn-cleanroomsml-configuredmodelalgorithmassociation-logsconfigurationpolicy-allowedaccountids): {{
     - String}}
   [FilterPattern](#cfn-cleanroomsml-configuredmodelalgorithmassociation-logsconfigurationpolicy-filterpattern): {{String}}

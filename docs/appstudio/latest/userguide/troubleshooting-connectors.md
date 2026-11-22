@@ -18,7 +18,7 @@ While setting up the IAM role for your connector, ensure that the custom trust p
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

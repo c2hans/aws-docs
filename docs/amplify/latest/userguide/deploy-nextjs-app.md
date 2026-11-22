@@ -47,7 +47,7 @@ When you deploy a Next.js app, Amplify inspects the app's build script in the `p
 
 The following is an example of the build script for a Next.js app. The build script `"next build"` indicates that the app supports both SSG and SSR pages. This build script is also used for Next.js 14 or later SSG only apps.
 
-```
+```json
 "scripts": {
   "dev": "next dev",
   "build": "next build",
@@ -57,7 +57,7 @@ The following is an example of the build script for a Next.js app. The build scr
 
 The following is an example of the build script for a Next.js 13 or earlier SSG app. The build script `"next build && next export"` indicates that the app supports only SSG pages.
 
-```
+```json
 "scripts": {
   "dev": "next dev",
   "build": "next build && next export",
@@ -74,7 +74,7 @@ If Amplify detects that you are deploying a Next.js SSR app, and no `amplify.yml
 
 The following is an example of the build settings for an app where `baseDirectory` is set to `.next`. This indicates that the build artifacts are for a Next.js app that supports SSG and SSR pages.
 
-```
+```yaml
 version: 1
 frontend:
   phases:
@@ -100,7 +100,7 @@ If Amplify detects that you are deploying a Next.js 13 or earlier SSG app, it ge
 
 The following is an example of the build settings for an app where `baseDirectory` is set to `out` to indicate that the build artifacts are for a Next.js 13 or earlier app that supports only SSG pages.
 
-```
+```yaml
 version: 1
 frontend:
   phases:
@@ -126,7 +126,7 @@ In Next.js version 14, the `next export` command was deprecated and replaced wit
 
 The following is an example of the build settings for a Next.js 14 SSG only app with the `baseDirectory` set to `.next`.
 
-```
+```yaml
 version: 1
 frontend:
   phases:

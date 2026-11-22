@@ -8,13 +8,13 @@ Closes the application for the given application instance ID in the Connect Cust
 
  **Signature**
 
-```
+```typescript
 closeApp(instanceId: string): Promise<void>
 ```
 
  **Usage**
 
-```
+```typescript
 await appControllerClient.closeApp(appInstanceId);
 ```
 
@@ -30,6 +30,6 @@ The target instance must belong to the AppManager of the calling instance, or to
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

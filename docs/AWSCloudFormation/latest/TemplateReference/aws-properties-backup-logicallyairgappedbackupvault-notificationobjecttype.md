@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-backup-logicallyairgappedbackupvault-notificationobjecttype-syntax.json"></a>
 
-```
+```json
 {
   "[BackupVaultEvents](#cfn-backup-logicallyairgappedbackupvault-notificationobjecttype-backupvaultevents)" : {{[ String, ... ]}},
   "[SNSTopicArn](#cfn-backup-logicallyairgappedbackupvault-notificationobjecttype-snstopicarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-backup-logicallyairgappedbackupvault-notificationobjecttype-syntax.yaml"></a>
 
-```
+```yaml
   [BackupVaultEvents](#cfn-backup-logicallyairgappedbackupvault-notificationobjecttype-backupvaultevents): {{
     - String}}
   [SNSTopicArn](#cfn-backup-logicallyairgappedbackupvault-notificationobjecttype-snstopicarn): {{String}}

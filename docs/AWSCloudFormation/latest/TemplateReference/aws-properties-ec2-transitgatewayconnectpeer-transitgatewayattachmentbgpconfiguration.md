@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-transitgatewayconnectpeer-transitgatewayattachmentbgpconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BgpStatus](#cfn-ec2-transitgatewayconnectpeer-transitgatewayattachmentbgpconfiguration-bgpstatus)" : {{String}},
   "[PeerAddress](#cfn-ec2-transitgatewayconnectpeer-transitgatewayattachmentbgpconfiguration-peeraddress)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-transitgatewayconnectpeer-transitgatewayattachmentbgpconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BgpStatus](#cfn-ec2-transitgatewayconnectpeer-transitgatewayattachmentbgpconfiguration-bgpstatus): {{String}}
   [PeerAddress](#cfn-ec2-transitgatewayconnectpeer-transitgatewayattachmentbgpconfiguration-peeraddress): {{String}}
   [PeerAsn](#cfn-ec2-transitgatewayconnectpeer-transitgatewayattachmentbgpconfiguration-peerasn): {{Number}}

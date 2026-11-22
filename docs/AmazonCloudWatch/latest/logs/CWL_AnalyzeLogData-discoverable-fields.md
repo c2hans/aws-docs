@@ -14,7 +14,7 @@ CloudWatch Logs Insights supports different log types. For every log that's sent
 
   For example, this JSON can represent an entity.
 
-  ```
+  ```json
   {
     "Entity": {
       "KeyAttributes": {
@@ -67,7 +67,7 @@ With CloudWatch Logs Insights, you use dot notation to represent JSON fields. Th
 
 **Example: JSON event**
 
-```
+```JSON
 {
     "eventVersion": "1.0",
     "userIdentity": {

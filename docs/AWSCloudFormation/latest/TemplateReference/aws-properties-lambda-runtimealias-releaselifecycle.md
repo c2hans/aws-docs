@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-runtimealias-releaselifecycle-syntax.json"></a>
 
-```
+```json
 {
   "[DeprecationDate](#cfn-lambda-runtimealias-releaselifecycle-deprecationdate)" : {{String}},
   "[FunctionCreateBlockDate](#cfn-lambda-runtimealias-releaselifecycle-functioncreateblockdate)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-runtimealias-releaselifecycle-syntax.yaml"></a>
 
-```
+```yaml
   [DeprecationDate](#cfn-lambda-runtimealias-releaselifecycle-deprecationdate): {{String}}
   [FunctionCreateBlockDate](#cfn-lambda-runtimealias-releaselifecycle-functioncreateblockdate): {{String}}
   [FunctionUpdateBlockDate](#cfn-lambda-runtimealias-releaselifecycle-functionupdateblockdate): {{String}}

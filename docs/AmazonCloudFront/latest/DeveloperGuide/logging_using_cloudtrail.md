@@ -69,7 +69,7 @@ The following example shows a CloudTrail event that demonstrates the [UpdateDist
 
 For calls to the CloudFront API, the `eventSource` is `cloudfront.amazonaws.com`.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -414,7 +414,7 @@ The following example shows a CloudTrail event that demonstrates the [UpdateKeys
 
 For calls to the CloudFront KeyValueStore API, the `eventSource` is `edgekeyvaluestore.amazonaws.com` instead of `cloudfront.amazonaws.com`.
 
-```
+```json
 {
     "eventVersion": "1.09",
     "userIdentity": {

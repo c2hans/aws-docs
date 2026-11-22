@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dynamodb-table-globalsecondaryindex-syntax.json"></a>
 
-```
+```json
 {
   "[ContributorInsightsSpecification](#cfn-dynamodb-table-globalsecondaryindex-contributorinsightsspecification)" : {{ContributorInsightsSpecification}},
   "[IndexName](#cfn-dynamodb-table-globalsecondaryindex-indexname)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dynamodb-table-globalsecondaryindex-syntax.yaml"></a>
 
-```
+```yaml
   [ContributorInsightsSpecification](#cfn-dynamodb-table-globalsecondaryindex-contributorinsightsspecification): {{
     ContributorInsightsSpecification}}
   [IndexName](#cfn-dynamodb-table-globalsecondaryindex-indexname): {{String}}

@@ -140,7 +140,7 @@ For information about the syntax for quoting JSON-formatted parameter values, se
 **Tools for PowerShell V4**
 **Example 1: This example creates a launch configuration named 'my-lc'. The EC2 instances launched by Auto Scaling groups that use this launch configuration use specified instance type, AMI, security group, and IAM role.**
 
-```
+```powershell
 New-ASLaunchConfiguration -LaunchConfigurationName my-lc -InstanceType "m3.medium" -ImageId "ami-12345678" -SecurityGroup "sg-12345678" -IamInstanceProfile "myIamRole"
 ```
 +  For API details, see [CreateLaunchConfiguration](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -148,7 +148,7 @@ New-ASLaunchConfiguration -LaunchConfigurationName my-lc -InstanceType "m3.mediu
 **Tools for PowerShell V5**
 **Example 1: This example creates a launch configuration named 'my-lc'. The EC2 instances launched by Auto Scaling groups that use this launch configuration use specified instance type, AMI, security group, and IAM role.**
 
-```
+```powershell
 New-ASLaunchConfiguration -LaunchConfigurationName my-lc -InstanceType "m3.medium" -ImageId "ami-12345678" -SecurityGroup "sg-12345678" -IamInstanceProfile "myIamRole"
 ```
 +  For API details, see [CreateLaunchConfiguration](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

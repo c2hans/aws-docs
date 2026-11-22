@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-userprofile-resourcespec-syntax.json"></a>
 
-```
+```json
 {
   "[InstanceType](#cfn-sagemaker-userprofile-resourcespec-instancetype)" : {{String}},
   "[LifecycleConfigArn](#cfn-sagemaker-userprofile-resourcespec-lifecycleconfigarn)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-userprofile-resourcespec-syntax.yaml"></a>
 
-```
+```yaml
   [InstanceType](#cfn-sagemaker-userprofile-resourcespec-instancetype): {{String}}
   [LifecycleConfigArn](#cfn-sagemaker-userprofile-resourcespec-lifecycleconfigarn): {{String}}
   [SageMakerImageArn](#cfn-sagemaker-userprofile-resourcespec-sagemakerimagearn): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-resiliencehubv2-policy-multiaztargets-syntax.json"></a>
 
-```
+```json
 {
   "[DisasterRecoveryApproach](#cfn-resiliencehubv2-policy-multiaztargets-disasterrecoveryapproach)" : {{String}},
   "[RpoInMinutes](#cfn-resiliencehubv2-policy-multiaztargets-rpoinminutes)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-resiliencehubv2-policy-multiaztargets-syntax.yaml"></a>
 
-```
+```yaml
   [DisasterRecoveryApproach](#cfn-resiliencehubv2-policy-multiaztargets-disasterrecoveryapproach): {{String}}
   [RpoInMinutes](#cfn-resiliencehubv2-policy-multiaztargets-rpoinminutes): {{Integer}}
   [RtoInMinutes](#cfn-resiliencehubv2-policy-multiaztargets-rtoinminutes): {{Integer}}

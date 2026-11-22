@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-events-rule-httpparameters-syntax.json"></a>
 
-```
+```json
 {
   "[HeaderParameters](#cfn-events-rule-httpparameters-headerparameters)" : {{{{{Key}}: {{Value}}, ...}}},
   "[PathParameterValues](#cfn-events-rule-httpparameters-pathparametervalues)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-events-rule-httpparameters-syntax.yaml"></a>
 
-```
+```yaml
   [HeaderParameters](#cfn-events-rule-httpparameters-headerparameters): {{
     {{Key}}: {{Value}}}}
   [PathParameterValues](#cfn-events-rule-httpparameters-pathparametervalues): {{

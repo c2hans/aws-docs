@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iot-otaupdate-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoT::OTAUpdate",
   "Properties" : {
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iot-otaupdate-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoT::OTAUpdate
 Properties:
   [AdditionalParameters](#cfn-iot-otaupdate-additionalparameters): {{

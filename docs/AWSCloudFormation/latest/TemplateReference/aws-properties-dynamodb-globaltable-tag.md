@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dynamodb-globaltable-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-dynamodb-globaltable-tag-key)" : {{String}},
   "[Value](#cfn-dynamodb-globaltable-tag-value)" : {{String}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dynamodb-globaltable-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-dynamodb-globaltable-tag-key): {{String}}
   [Value](#cfn-dynamodb-globaltable-tag-value): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-route53resolver-resolverendpoint-ipaddressrequest-syntax.json"></a>
 
-```
+```json
 {
   "[Ip](#cfn-route53resolver-resolverendpoint-ipaddressrequest-ip)" : {{String}},
   "[Ipv6](#cfn-route53resolver-resolverendpoint-ipaddressrequest-ipv6)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-route53resolver-resolverendpoint-ipaddressrequest-syntax.yaml"></a>
 
-```
+```yaml
   [Ip](#cfn-route53resolver-resolverendpoint-ipaddressrequest-ip): {{String}}
   [Ipv6](#cfn-route53resolver-resolverendpoint-ipaddressrequest-ipv6): {{String}}
   [SubnetId](#cfn-route53resolver-resolverendpoint-ipaddressrequest-subnetid): {{String}}

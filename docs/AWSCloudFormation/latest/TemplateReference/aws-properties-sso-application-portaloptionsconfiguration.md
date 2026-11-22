@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sso-application-portaloptionsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[SignInOptions](#cfn-sso-application-portaloptionsconfiguration-signinoptions)" : {{SignInOptions}},
   "[Visibility](#cfn-sso-application-portaloptionsconfiguration-visibility)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sso-application-portaloptionsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [SignInOptions](#cfn-sso-application-portaloptionsconfiguration-signinoptions): {{
     SignInOptions}}
   [Visibility](#cfn-sso-application-portaloptionsconfiguration-visibility): {{String}}

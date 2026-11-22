@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kafkaconnect-connector-scaleoutpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[CpuUtilizationPercentage](#cfn-kafkaconnect-connector-scaleoutpolicy-cpuutilizationpercentage)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kafkaconnect-connector-scaleoutpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [CpuUtilizationPercentage](#cfn-kafkaconnect-connector-scaleoutpolicy-cpuutilizationpercentage): {{Integer}}
 ```
 

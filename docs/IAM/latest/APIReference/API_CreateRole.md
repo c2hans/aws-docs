@@ -40,6 +40,13 @@ Type: Integer
 Valid Range: Minimum value of 3600. Maximum value of 43200.
 Required: No
 
+ ** MaxSigninSessionDuration **
+The maximum duration (in seconds) of an AWS Sign-In session for users who sign in with this role. This setting can have a value from 1 hour (3600 seconds) to 90 days (7776000 seconds), inclusive. If you do not specify a value, the setting remains unset and the existing sign-in session behavior applies.
+This setting is independent of `MaxSessionDuration`.
+Type: Integer
+Valid Range: Minimum value of 3600. Maximum value of 7776000.
+Required: No
+
  ** Path **
  The path to the role. For more information about paths, see [IAM Identifiers](https://docs.aws.amazon.com/IAM/latest/UserGuide/Using_Identifiers.html) in the *IAM User Guide*.
 This parameter is optional. If it is not included, it defaults to a slash (/).

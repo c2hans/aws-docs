@@ -23,7 +23,7 @@ You can create and manage launch templates through the AWS Management Console, A
 ## Example usage
 <a name="example-usage"></a>
 
-```
+```json
 {
     "LaunchTemplateName": "my-template-for-auto-scaling",
     "VersionDescription": "test description",
@@ -79,7 +79,7 @@ aws ec2 create-launch-template --launch-template-name {{my-template-for-auto-sca
 
 Contents of `config.json`:
 
-```
+```json
 {
     "ImageId":"{{ami-04d5cc9b88example}}",
     "InstanceType":"{{t2.micro}}"
@@ -211,7 +211,7 @@ aws ec2 describe-launch-templates --launch-template-names {{my-template-for-auto
 
 The following is an example response.
 
-```
+```json
 {
     "LaunchTemplates": [
         {
@@ -236,7 +236,7 @@ aws ec2 describe-launch-template-versions --launch-template-id {{lt-068f72b729ex
 
 The following is an example response.
 
-```
+```json
 {
     "LaunchTemplateVersions": [
         {

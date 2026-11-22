@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-associationconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ChallengeJavascriptSdkInjection](#cfn-wafv2-webacl-associationconfig-challengejavascriptsdkinjection)" : {{Json}},
   "[RequestBody](#cfn-wafv2-webacl-associationconfig-requestbody)" : {{{{{Key}}: {{Value}}, ...}}}
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-associationconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ChallengeJavascriptSdkInjection](#cfn-wafv2-webacl-associationconfig-challengejavascriptsdkinjection): {{Json}}
   [RequestBody](#cfn-wafv2-webacl-associationconfig-requestbody): {{
     {{Key}}: {{Value}}}}

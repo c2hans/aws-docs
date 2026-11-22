@@ -35,7 +35,7 @@ For resources [fully managed by AWS Backup](whatisbackup.md#full-management), yo
 
   The AWS managed policy `AWSBackupServiceRolePolicyForBackup` includes both of these permissions. If you use a custom IAM role, you must add these permissions explicitly. The following is an example identity-based policy:
 
-  ```
+  ```JSON
   {
     "Statement": [
       {
@@ -122,7 +122,7 @@ For **Allow Backup vault access**, choose **Allow**. Then choose **Allow** in th
 AWS Backup needs permissions to access the external account to copy backup to the specified value. The wizard shows the following example policy that provides this access.
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -182,7 +182,7 @@ You can copy a backup to a different AWS account on demand.
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -265,7 +265,7 @@ The following policy configures vault access for account number `4444555566666` 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement":[
@@ -294,7 +294,7 @@ The following policy shares a backup vault with organizational units using their
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement":[
@@ -326,7 +326,7 @@ The following policy shares a backup vault with the organization with `Principal
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement":[
@@ -362,7 +362,7 @@ When attached to an AWS Organizations root, OU, or individual account, this poli
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement":[
@@ -390,7 +390,7 @@ When attached to an AWS Organizations root, OU, or individual account, this poli
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -422,7 +422,7 @@ When attached to an AWS Organizations root or OU that contains your source accou
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement":[

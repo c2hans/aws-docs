@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-domain-unifiedstudiosettings-syntax.json"></a>
 
-```
+```json
 {
   "[DomainAccountId](#cfn-sagemaker-domain-unifiedstudiosettings-domainaccountid)" : {{String}},
   "[DomainId](#cfn-sagemaker-domain-unifiedstudiosettings-domainid)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-domain-unifiedstudiosettings-syntax.yaml"></a>
 
-```
+```yaml
   [DomainAccountId](#cfn-sagemaker-domain-unifiedstudiosettings-domainaccountid): {{String}}
   [DomainId](#cfn-sagemaker-domain-unifiedstudiosettings-domainid): {{String}}
   [DomainRegion](#cfn-sagemaker-domain-unifiedstudiosettings-domainregion): {{String}}

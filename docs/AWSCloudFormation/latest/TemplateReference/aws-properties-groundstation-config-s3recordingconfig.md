@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-groundstation-config-s3recordingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[BucketArn](#cfn-groundstation-config-s3recordingconfig-bucketarn)" : {{String}},
   "[Prefix](#cfn-groundstation-config-s3recordingconfig-prefix)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-groundstation-config-s3recordingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [BucketArn](#cfn-groundstation-config-s3recordingconfig-bucketarn): {{String}}
   [Prefix](#cfn-groundstation-config-s3recordingconfig-prefix): {{String}}
   [RoleArn](#cfn-groundstation-config-s3recordingconfig-rolearn): {{String}}
@@ -69,7 +69,7 @@ The following example creates a Ground Station `S3RecordingConfig`
 #### JSON
 <a name="aws-properties-groundstation-config-s3recordingconfig--examples--Create_an_S3RecordingConfig--json"></a>
 
-```
+```json
 {
     "S3RecordingConfig": {
       "BucketArn": "arn:aws:s3:us-west-2:123456789012:bucket-name",
@@ -82,7 +82,7 @@ The following example creates a Ground Station `S3RecordingConfig`
 #### YAML
 <a name="aws-properties-groundstation-config-s3recordingconfig--examples--Create_an_S3RecordingConfig--yaml"></a>
 
-```
+```yaml
 S3RecordingConfig:
     BucketArn: arn:aws:s3:us-west-2:123456789012:bucket-name
     Prefix: {satellite_id}/{config-name}_{config-id}/{year}/{month}/{day}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-kendra-datasource-tag-key)" : {{String}},
   "[Value](#cfn-kendra-datasource-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-kendra-datasource-tag-key): {{String}}
   [Value](#cfn-kendra-datasource-tag-value): {{String}}
 ```

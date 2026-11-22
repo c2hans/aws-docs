@@ -33,7 +33,7 @@ You can view information about the latest macOS versions supported on your alloc
 **To view Dedicated Host firmware information using the AWS CLI**
 Use the [`describe-mac-hosts`](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-mac-hosts.html) command, replacing `region` with the appropriate AWS Region.
 
-```
+```bash
 $ aws ec2 describe-mac-hosts --region {{us-east-1}}
   {
       "MacHosts": [

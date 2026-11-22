@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-refreshschedule-refreshonday-syntax.json"></a>
 
-```
+```json
 {
   "[DayOfMonth](#cfn-quicksight-refreshschedule-refreshonday-dayofmonth)" : {{String}},
   "[DayOfWeek](#cfn-quicksight-refreshschedule-refreshonday-dayofweek)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-refreshschedule-refreshonday-syntax.yaml"></a>
 
-```
+```yaml
   [DayOfMonth](#cfn-quicksight-refreshschedule-refreshonday-dayofmonth): {{String}}
   [DayOfWeek](#cfn-quicksight-refreshschedule-refreshonday-dayofweek): {{String}}
 ```

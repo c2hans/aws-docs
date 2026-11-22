@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-deadline-queue-windowsuser-syntax.json"></a>
 
-```
+```json
 {
   "[PasswordArn](#cfn-deadline-queue-windowsuser-passwordarn)" : {{String}},
   "[User](#cfn-deadline-queue-windowsuser-user)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-deadline-queue-windowsuser-syntax.yaml"></a>
 
-```
+```yaml
   [PasswordArn](#cfn-deadline-queue-windowsuser-passwordarn): {{String}}
   [User](#cfn-deadline-queue-windowsuser-user): {{String}}
 ```

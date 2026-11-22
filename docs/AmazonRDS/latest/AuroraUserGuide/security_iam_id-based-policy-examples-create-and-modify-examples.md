@@ -16,7 +16,7 @@ The following is an example policy that allows the account with the ID `12345678
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -70,7 +70,7 @@ The following permissions policy grants permissions to a user to run all of the 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -96,7 +96,7 @@ The following permissions policy grants permissions to allow a user to only crea
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -125,7 +125,7 @@ You can use conditions in your identity-based policy to control access to Aurora
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -166,7 +166,7 @@ The following policy allows permission to perform the `ModifyDBInstance` API ope
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -214,7 +214,7 @@ The following permissions policy grants permissions to prevent a user from delet
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -240,7 +240,7 @@ You can explicitly deny access to a resource. Deny policies take precedence over
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [

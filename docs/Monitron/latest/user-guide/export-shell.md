@@ -56,7 +56,7 @@ You are responsible for taking the appropriate steps to secure your data. We str
 
 ****
 
-   ```
+   ```json
    {
    	"Version":"2012-10-17",
    	"Statement": [{
@@ -80,7 +80,7 @@ You are responsible for taking the appropriate steps to secure your data. We str
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
 
@@ -121,7 +121,7 @@ You are responsible for taking the appropriate steps to secure your data. We str
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
 
@@ -165,7 +165,7 @@ You are responsible for taking the appropriate steps to secure your data. We str
 
     You should see output that looks something like this:
 
-   ```
+   ```json
     {
    	"Role": {
    		"Path": "/",
@@ -202,7 +202,7 @@ You are responsible for taking the appropriate steps to secure your data. We str
 
     You should see output that looks something like this:
 
-   ```
+   ```json
     {
    	"Policy": {
    		"PolicyName": "role-uses-bucket",

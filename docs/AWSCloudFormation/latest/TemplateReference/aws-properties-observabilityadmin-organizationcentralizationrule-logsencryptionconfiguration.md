@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-observabilityadmin-organizationcentralizationrule-logsencryptionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EncryptionConflictResolutionStrategy](#cfn-observabilityadmin-organizationcentralizationrule-logsencryptionconfiguration-encryptionconflictresolutionstrategy)" : {{String}},
   "[EncryptionScope](#cfn-observabilityadmin-organizationcentralizationrule-logsencryptionconfiguration-encryptionscope)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-observabilityadmin-organizationcentralizationrule-logsencryptionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EncryptionConflictResolutionStrategy](#cfn-observabilityadmin-organizationcentralizationrule-logsencryptionconfiguration-encryptionconflictresolutionstrategy): {{String}}
   [EncryptionScope](#cfn-observabilityadmin-organizationcentralizationrule-logsencryptionconfiguration-encryptionscope): {{String}}
   [EncryptionStrategy](#cfn-observabilityadmin-organizationcentralizationrule-logsencryptionconfiguration-encryptionstrategy): {{String}}

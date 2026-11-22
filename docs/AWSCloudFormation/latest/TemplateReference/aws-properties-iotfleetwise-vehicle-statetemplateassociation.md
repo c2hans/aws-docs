@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotfleetwise-vehicle-statetemplateassociation-syntax.json"></a>
 
-```
+```json
 {
   "[Identifier](#cfn-iotfleetwise-vehicle-statetemplateassociation-identifier)" : {{String}},
   "[StateTemplateUpdateStrategy](#cfn-iotfleetwise-vehicle-statetemplateassociation-statetemplateupdatestrategy)" : {{StateTemplateUpdateStrategy}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotfleetwise-vehicle-statetemplateassociation-syntax.yaml"></a>
 
-```
+```yaml
   [Identifier](#cfn-iotfleetwise-vehicle-statetemplateassociation-identifier): {{String}}
   [StateTemplateUpdateStrategy](#cfn-iotfleetwise-vehicle-statetemplateassociation-statetemplateupdatestrategy): {{
     StateTemplateUpdateStrategy}}

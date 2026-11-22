@@ -90,7 +90,7 @@ This example illustrates how to list all the tags that are associated with an Ap
 #### Sample Request
 <a name="API_ListTagsForResource_Example_1_Request"></a>
 
-```
+```json
 $ aws apprunner list-tags-for-resource --cli-input-json "`cat`"
 {
   "ResourceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa"
@@ -100,7 +100,7 @@ $ aws apprunner list-tags-for-resource --cli-input-json "`cat`"
 #### Sample Response
 <a name="API_ListTagsForResource_Example_1_Response"></a>
 
-```
+```json
 {
   "Tags": [
     {

@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-appflow-flow-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppFlow::Flow",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-appflow-flow-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppFlow::Flow
 Properties:
   [Description](#cfn-appflow-flow-description): {{String}}
@@ -174,7 +174,7 @@ The following example shows a test event flow for CloudFormation using Salesforc
 #### JSON
 <a name="aws-resource-appflow-flow--examples--Test_flow_for_CloudFormation_from_Salesforce_to_Amazon_S3--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion":"2010-09-09",
     "Resources": {
@@ -280,7 +280,7 @@ The following example shows a test event flow for CloudFormation using Salesforc
 #### YAML
 <a name="aws-resource-appflow-flow--examples--Test_flow_for_CloudFormation_from_Salesforce_to_Amazon_S3--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   TestFlow:

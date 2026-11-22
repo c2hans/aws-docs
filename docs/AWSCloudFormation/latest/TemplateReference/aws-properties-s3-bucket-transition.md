@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-transition-syntax.json"></a>
 
-```
+```json
 {
   "[StorageClass](#cfn-s3-bucket-transition-storageclass)" : {{String}},
   "[TransitionDate](#cfn-s3-bucket-transition-transitiondate)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-transition-syntax.yaml"></a>
 
-```
+```yaml
   [StorageClass](#cfn-s3-bucket-transition-storageclass): {{String}}
   [TransitionDate](#cfn-s3-bucket-transition-transitiondate): {{String}}
   [TransitionInDays](#cfn-s3-bucket-transition-transitionindays): {{Integer}}

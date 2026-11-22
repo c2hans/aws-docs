@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-service-registeredmcpserversigv4details-syntax.json"></a>
 
-```
+```json
 {
   "[CustomHeaders](#cfn-devopsagent-service-registeredmcpserversigv4details-customheaders)" : {{{{{Key}}: {{Value}}, ...}}},
   "[Description](#cfn-devopsagent-service-registeredmcpserversigv4details-description)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-service-registeredmcpserversigv4details-syntax.yaml"></a>
 
-```
+```yaml
   [CustomHeaders](#cfn-devopsagent-service-registeredmcpserversigv4details-customheaders): {{
     {{Key}}: {{Value}}}}
   [Description](#cfn-devopsagent-service-registeredmcpserversigv4details-description): {{String}}

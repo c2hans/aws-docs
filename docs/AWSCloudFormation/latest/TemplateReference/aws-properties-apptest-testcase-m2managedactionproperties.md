@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apptest-testcase-m2managedactionproperties-syntax.json"></a>
 
-```
+```json
 {
   "[ForceStop](#cfn-apptest-testcase-m2managedactionproperties-forcestop)" : {{Boolean}},
   "[ImportDataSetLocation](#cfn-apptest-testcase-m2managedactionproperties-importdatasetlocation)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apptest-testcase-m2managedactionproperties-syntax.yaml"></a>
 
-```
+```yaml
   [ForceStop](#cfn-apptest-testcase-m2managedactionproperties-forcestop): {{Boolean}}
   [ImportDataSetLocation](#cfn-apptest-testcase-m2managedactionproperties-importdatasetlocation): {{String}}
 ```

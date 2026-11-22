@@ -74,7 +74,7 @@ The Neptune connector supports [passthrough queries](federated-query-passthrough
 
 To create passthrough queries with Neptune, use the following syntax:
 
-```
+```sql
 SELECT * FROM TABLE(
         system.query(
             DATABASE => '{{database_name}}',
@@ -85,7 +85,7 @@ SELECT * FROM TABLE(
 
 The following example Neptune passthrough query filters for airports with the code `ATL`. The doubled single quotes are for escaping.
 
-```
+```sql
 SELECT * FROM TABLE(
         system.query(
             DATABASE => 'graph-database',

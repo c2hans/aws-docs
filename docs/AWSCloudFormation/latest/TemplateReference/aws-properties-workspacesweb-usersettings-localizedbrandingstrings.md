@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspacesweb-usersettings-localizedbrandingstrings-syntax.json"></a>
 
-```
+```json
 {
   "[BrowserTabTitle](#cfn-workspacesweb-usersettings-localizedbrandingstrings-browsertabtitle)" : {{String}},
   "[ContactButtonText](#cfn-workspacesweb-usersettings-localizedbrandingstrings-contactbuttontext)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspacesweb-usersettings-localizedbrandingstrings-syntax.yaml"></a>
 
-```
+```yaml
   [BrowserTabTitle](#cfn-workspacesweb-usersettings-localizedbrandingstrings-browsertabtitle): {{String}}
   [ContactButtonText](#cfn-workspacesweb-usersettings-localizedbrandingstrings-contactbuttontext): {{String}}
   [ContactLink](#cfn-workspacesweb-usersettings-localizedbrandingstrings-contactlink): {{String}}

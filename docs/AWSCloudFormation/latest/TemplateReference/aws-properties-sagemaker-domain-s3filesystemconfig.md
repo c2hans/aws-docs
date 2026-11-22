@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-domain-s3filesystemconfig-syntax.json"></a>
 
-```
+```json
 {
   "[MountPath](#cfn-sagemaker-domain-s3filesystemconfig-mountpath)" : {{String}},
   "[S3Uri](#cfn-sagemaker-domain-s3filesystemconfig-s3uri)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-domain-s3filesystemconfig-syntax.yaml"></a>
 
-```
+```yaml
   [MountPath](#cfn-sagemaker-domain-s3filesystemconfig-mountpath): {{String}}
   [S3Uri](#cfn-sagemaker-domain-s3filesystemconfig-s3uri): {{String}}
 ```

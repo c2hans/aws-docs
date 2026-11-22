@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-smsvoice-pool-twoway-syntax.json"></a>
 
-```
+```json
 {
   "[ChannelArn](#cfn-smsvoice-pool-twoway-channelarn)" : {{String}},
   "[ChannelRole](#cfn-smsvoice-pool-twoway-channelrole)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-smsvoice-pool-twoway-syntax.yaml"></a>
 
-```
+```yaml
   [ChannelArn](#cfn-smsvoice-pool-twoway-channelarn): {{String}}
   [ChannelRole](#cfn-smsvoice-pool-twoway-channelrole): {{String}}
   [Enabled](#cfn-smsvoice-pool-twoway-enabled): {{Boolean}}

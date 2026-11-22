@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-rds-dbproxyendpoint-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RDS::DBProxyEndpoint",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-rds-dbproxyendpoint-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RDS::DBProxyEndpoint
 Properties:
   [DBProxyEndpointName](#cfn-rds-dbproxyendpoint-dbproxyendpointname): {{String}}
@@ -151,7 +151,7 @@ The following example creates a custom DB proxy endpoint.
 #### JSON
 <a name="aws-resource-rds-dbproxyendpoint--examples--Creating_a_custom_DB_proxy_endpoint--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Parameters": {
@@ -208,7 +208,7 @@ The following example creates a custom DB proxy endpoint.
 #### YAML
 <a name="aws-resource-rds-dbproxyendpoint--examples--Creating_a_custom_DB_proxy_endpoint--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:
   ProxyEndpointName:

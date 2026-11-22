@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-eventsourcemapping-selfmanagedkafkaeventsourceconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ConsumerGroupId](#cfn-lambda-eventsourcemapping-selfmanagedkafkaeventsourceconfig-consumergroupid)" : {{String}},
   "[ConsumptionMode](#cfn-lambda-eventsourcemapping-selfmanagedkafkaeventsourceconfig-consumptionmode)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-eventsourcemapping-selfmanagedkafkaeventsourceconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ConsumerGroupId](#cfn-lambda-eventsourcemapping-selfmanagedkafkaeventsourceconfig-consumergroupid): {{String}}
   [ConsumptionMode](#cfn-lambda-eventsourcemapping-selfmanagedkafkaeventsourceconfig-consumptionmode): {{String}}
   [SchemaRegistryConfig](#cfn-lambda-eventsourcemapping-selfmanagedkafkaeventsourceconfig-schemaregistryconfig): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-kinesisanalyticsv2-application-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::KinesisAnalyticsV2::Application",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-kinesisanalyticsv2-application-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::KinesisAnalyticsV2::Application
 Properties:
   [ApplicationConfiguration](#cfn-kinesisanalyticsv2-application-applicationconfiguration): {{
@@ -138,7 +138,7 @@ The following example shows how to create a simple application by using a deploy
 #### JSON
 <a name="aws-resource-kinesisanalyticsv2-application--examples--Creating_an_Amazon_Kinesis_Data_Analytics_Application_using_Apache_Flink--json"></a>
 
-```
+```json
 {
     "Description": "Simple KDA Flink application",
     "Parameters": {
@@ -223,7 +223,7 @@ The following example shows how to create a simple application by using a deploy
 #### YAML
 <a name="aws-resource-kinesisanalyticsv2-application--examples--Creating_an_Amazon_Kinesis_Data_Analytics_Application_using_Apache_Flink--yaml"></a>
 
-```
+```yaml
 Description: Simple KDA Flink application
 Parameters:
   CodeBucketArn:
@@ -276,7 +276,7 @@ The following example shows how to create a simple Studio application with an Am
 #### JSON
 <a name="aws-resource-kinesisanalyticsv2-application--examples--Creating_an_Amazon_Kinesis_Data_Analytics_Studio_Application--json"></a>
 
-```
+```json
 {
     "Description": "KDA Studio application",
     "Parameters": {
@@ -428,7 +428,7 @@ The following example shows how to create a simple Studio application with an Am
 #### YAML
 <a name="aws-resource-kinesisanalyticsv2-application--examples--Creating_an_Amazon_Kinesis_Data_Analytics_Studio_Application--yaml"></a>
 
-```
+```yaml
 Description: KDA Studio application
 Parameters:
   GlueDatabaseName:

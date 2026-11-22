@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-smartsubtitlesourcesettings-syntax.json"></a>
 
-```
+```json
 {
   "[CaptionSynchronizationMode](#cfn-medialive-channel-smartsubtitlesourcesettings-captionsynchronizationmode)" : {{String}},
   "[InferenceFeedOutput](#cfn-medialive-channel-smartsubtitlesourcesettings-inferencefeedoutput)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-smartsubtitlesourcesettings-syntax.yaml"></a>
 
-```
+```yaml
   [CaptionSynchronizationMode](#cfn-medialive-channel-smartsubtitlesourcesettings-captionsynchronizationmode): {{String}}
   [InferenceFeedOutput](#cfn-medialive-channel-smartsubtitlesourcesettings-inferencefeedoutput): {{String}}
 ```

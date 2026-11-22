@@ -6,6 +6,8 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 
 Returns the description of the specified StackSet operation.
 
+Reports role provisioning and stack instances deployment progress in `StatusDetails.Stages`. A breakdown for each AWS Region is available in `RegionalStatusDetails`.
+
 **Note**
 This API provides *strongly consistent* reads meaning it will always return the most up-to-date data.
 
@@ -87,7 +89,7 @@ https://cloudformation.us-east-1.amazonaws.com/
 <a name="API_DescribeStackSetOperation_Example_1_Response"></a>
 
 ```
-<DescribeStackSetOperationResponse xmlns="http://internal.amazon.com/coral/com.amazonaws.maestro.service.v20160713/">
+<DescribeStackSetOperationResponse xmlns="http://cloudformation.amazonaws.com/doc/2010-05-15/">
   <DescribeStackSetOperationResult>
     <StackSetOperation>
       <StackSetId>stack-set-example:c14cd6d1-cd17-40bd-82ed-ff97example</StackSetId>
@@ -109,13 +111,126 @@ https://cloudformation.us-east-1.amazonaws.com/
 </DescribeStackSetOperationResponse>
 ```
 
-### Describing a Drift Detection StackSet Operation
+### Describing a running service-managed operation with progress details
 <a name="API_DescribeStackSetOperation_Example_2"></a>
+
+The following example returns information about a running service-managed `CREATE` operation in which role provisioning failed for two of the ten target accounts. The stack instances for those accounts are skipped, the remaining stack instances are still deploying, and the response includes both stages, the account and stack instance totals, and the breakdown for each Region.
+
+#### Sample Request
+<a name="API_DescribeStackSetOperation_Example_2_Request"></a>
+
+```
+https://cloudformation.us-east-1.amazonaws.com/
+ ?Action=DescribeStackSetOperation
+ &StackSetName=my-service-managed-stack-set
+ &OperationId=a1b2c3d4-5678-90ab-cdef-EXAMPLE11111
+ &Version=2010-05-15
+ &X-Amz-Algorithm=AWS4-HMAC-SHA256
+ &X-Amz-Credential=[Access key ID and scope]
+ &X-Amz-Date=20260702T154500Z
+ &X-Amz-SignedHeaders=content-type;host
+ &X-Amz-Signature=[Signature]
+```
+
+#### Sample Response
+<a name="API_DescribeStackSetOperation_Example_2_Response"></a>
+
+```
+<DescribeStackSetOperationResponse xmlns="http://cloudformation.amazonaws.com/doc/2010-05-15/">
+  <DescribeStackSetOperationResult>
+    <StackSetOperation>
+      <StackSetId>my-service-managed-stack-set:8f3d2b6c-1111-2222-3333-exampleabcd</StackSetId>
+      <CreationTimestamp>2026-07-02T15:42:11.123Z</CreationTimestamp>
+      <OperationId>a1b2c3d4-5678-90ab-cdef-EXAMPLE11111</OperationId>
+      <Action>CREATE</Action>
+      <OperationPreferences>
+        <RegionConcurrencyType>PARALLEL</RegionConcurrencyType>
+        <FailureToleranceCount>5</FailureToleranceCount>
+        <MaxConcurrentCount>10</MaxConcurrentCount>
+        <RegionOrder>
+          <member>us-east-1</member>
+          <member>us-west-2</member>
+        </RegionOrder>
+      </OperationPreferences>
+      <Status>RUNNING</Status>
+      <StatusDetails>
+        <Stages>
+          <RoleProvisioning>
+            <Status>PARTIAL_SUCCESS</Status>
+            <SucceededAccountsCount>8</SucceededAccountsCount>
+            <FailedAccountsCount>2</FailedAccountsCount>
+            <CompletedAccountsCount>10</CompletedAccountsCount>
+            <PendingAccountsCount>0</PendingAccountsCount>
+            <PercentageCompleted>100.0</PercentageCompleted>
+          </RoleProvisioning>
+          <StackInstancesDeployment>
+            <Status>IN_PROGRESS</Status>
+            <SucceededStackInstancesCount>6</SucceededStackInstancesCount>
+            <FailedStackInstancesCount>0</FailedStackInstancesCount>
+            <CompletedStackInstancesCount>10</CompletedStackInstancesCount>
+            <PendingStackInstancesCount>10</PendingStackInstancesCount>
+            <SkippedStackInstancesCount>4</SkippedStackInstancesCount>
+            <CancelledStackInstancesCount>0</CancelledStackInstancesCount>
+            <PercentageCompleted>50.0</PercentageCompleted>
+          </StackInstancesDeployment>
+        </Stages>
+        <TotalAccountsCount>10</TotalAccountsCount>
+        <TotalStackInstancesCount>20</TotalStackInstancesCount>
+        <FailedStackInstancesCount>0</FailedStackInstancesCount>
+      </StatusDetails>
+      <RegionalStatusDetails>
+        <entry>
+          <key>us-east-1</key>
+          <value>
+            <Stages>
+              <RegionalStackInstancesDeployment>
+                <Status>IN_PROGRESS</Status>
+                <SucceededStackInstancesCount>6</SucceededStackInstancesCount>
+                <FailedStackInstancesCount>0</FailedStackInstancesCount>
+                <CompletedStackInstancesCount>8</CompletedStackInstancesCount>
+                <PendingStackInstancesCount>2</PendingStackInstancesCount>
+                <SkippedStackInstancesCount>2</SkippedStackInstancesCount>
+                <CancelledStackInstancesCount>0</CancelledStackInstancesCount>
+                <TotalStackInstancesCount>10</TotalStackInstancesCount>
+                <PercentageCompleted>80.0</PercentageCompleted>
+              </RegionalStackInstancesDeployment>
+            </Stages>
+          </value>
+        </entry>
+        <entry>
+          <key>us-west-2</key>
+          <value>
+            <Stages>
+              <RegionalStackInstancesDeployment>
+                <Status>IN_PROGRESS</Status>
+                <SucceededStackInstancesCount>0</SucceededStackInstancesCount>
+                <FailedStackInstancesCount>0</FailedStackInstancesCount>
+                <CompletedStackInstancesCount>2</CompletedStackInstancesCount>
+                <PendingStackInstancesCount>8</PendingStackInstancesCount>
+                <SkippedStackInstancesCount>2</SkippedStackInstancesCount>
+                <CancelledStackInstancesCount>0</CancelledStackInstancesCount>
+                <TotalStackInstancesCount>10</TotalStackInstancesCount>
+                <PercentageCompleted>20.0</PercentageCompleted>
+              </RegionalStackInstancesDeployment>
+            </Stages>
+          </value>
+        </entry>
+      </RegionalStatusDetails>
+    </StackSetOperation>
+  </DescribeStackSetOperationResult>
+  <ResponseMetadata>
+    <RequestId>20133b62-7e1a-11e7-838a-a182example</RequestId>
+  </ResponseMetadata>
+</DescribeStackSetOperationResponse>
+```
+
+### Describing a Drift Detection StackSet Operation
+<a name="API_DescribeStackSetOperation_Example_3"></a>
 
 The following example returns information about a drift detection operation run on a StackSet.
 
 #### Sample Request
-<a name="API_DescribeStackSetOperation_Example_2_Request"></a>
+<a name="API_DescribeStackSetOperation_Example_3_Request"></a>
 
 ```
 https://cloudformation.us-east-1.amazonaws.com/
@@ -131,10 +246,10 @@ https://cloudformation.us-east-1.amazonaws.com/
 ```
 
 #### Sample Response
-<a name="API_DescribeStackSetOperation_Example_2_Response"></a>
+<a name="API_DescribeStackSetOperation_Example_3_Response"></a>
 
 ```
-<DescribeStackSetOperationResponse xmlns="http://internal.amazon.com/coral/com.amazonaws.maestro.service.v20160713/">
+<DescribeStackSetOperationResponse xmlns="http://cloudformation.amazonaws.com/doc/2010-05-15/">
   <DescribeStackSetOperationResult>
     <StackSetOperation>
       <ExecutionRoleName>AWSCloudFormationStackSetExecutionRole</ExecutionRoleName>

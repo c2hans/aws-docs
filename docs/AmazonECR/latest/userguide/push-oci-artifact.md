@@ -81,7 +81,7 @@ For information about using your Amazon ECR hosted Helm charts with Amazon EKS, 
 
    In the output, verify that the `artifactMediaType` parameter indicates the proper artifact type.
 
-   ```
+   ```JSON
    {
        "imageDetails": [
            {

@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-transfer-server-protocoldetails-syntax.json"></a>
 
-```
+```json
 {
   "[As2Transports](#cfn-transfer-server-protocoldetails-as2transports)" : {{[ String, ... ]}},
   "[PassiveIp](#cfn-transfer-server-protocoldetails-passiveip)" : {{String}},
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-transfer-server-protocoldetails-syntax.yaml"></a>
 
-```
+```yaml
   [As2Transports](#cfn-transfer-server-protocoldetails-as2transports): {{
     - String}}
   [PassiveIp](#cfn-transfer-server-protocoldetails-passiveip): {{String}}

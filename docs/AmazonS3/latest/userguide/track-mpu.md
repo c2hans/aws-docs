@@ -16,7 +16,7 @@ The following section show how to track a multipart upload with the AWS SDKs.
 **Example**
 The following Java code uploads a file and uses the `ExecutionInterceptor` to track the upload progress. For instructions on how to create and test a working sample, see [Getting Started](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/get-started.html) in the AWS SDK for Java 2.x Developer Guide.
 
-```
+```xml
 import java.nio.file.Paths;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
@@ -88,7 +88,7 @@ public class TrackMPUProgressUsingHighLevelAPI {
 
 The following C\# example uploads a file to an S3 bucket using the `TransferUtility` class, and tracks the progress of the upload. For information about setting up and running the code examples, see [Getting Started with the AWS SDK for .NET](https://docs.aws.amazon.com/sdk-for-net/latest/developer-guide/net-dg-setup.html) in the *AWS SDK for .NET Developer Guide*.
 
-```
+```csharp
 using Amazon;
 using Amazon.S3;
 using Amazon.S3.Transfer;

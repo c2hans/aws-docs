@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-datasource-relationalfilterconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DatabaseName](#cfn-datazone-datasource-relationalfilterconfiguration-databasename)" : {{String}},
   "[FilterExpressions](#cfn-datazone-datasource-relationalfilterconfiguration-filterexpressions)" : {{[ FilterExpression, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-datasource-relationalfilterconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DatabaseName](#cfn-datazone-datasource-relationalfilterconfiguration-databasename): {{String}}
   [FilterExpressions](#cfn-datazone-datasource-relationalfilterconfiguration-filterexpressions): {{
     - FilterExpression}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rds-dbinstance-dbinstancestatusinfo-syntax.json"></a>
 
-```
+```json
 {
   "[Message](#cfn-rds-dbinstance-dbinstancestatusinfo-message)" : {{String}},
   "[Normal](#cfn-rds-dbinstance-dbinstancestatusinfo-normal)" : {{Boolean}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rds-dbinstance-dbinstancestatusinfo-syntax.yaml"></a>
 
-```
+```yaml
   [Message](#cfn-rds-dbinstance-dbinstancestatusinfo-message): {{String}}
   [Normal](#cfn-rds-dbinstance-dbinstancestatusinfo-normal): {{Boolean}}
   [Status](#cfn-rds-dbinstance-dbinstancestatusinfo-status): {{String}}

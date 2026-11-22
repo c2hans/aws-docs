@@ -22,7 +22,7 @@ CannotPullContainerError: Error response from daemon: pull access denied for {{8
 **Resolution**
 This error indicates that the task execution role being used does not have permission to communicate to Amazon ECR and cannot pull the Envoy container image from the repository. The task execution role assigned to your Amazon ECS task needs an IAM policy with the following statements:
 
-```
+```json
 {
   "Action": [
     "ecr:BatchCheckLayerAvailability",

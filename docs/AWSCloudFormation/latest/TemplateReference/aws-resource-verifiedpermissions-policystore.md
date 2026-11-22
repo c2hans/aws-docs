@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-verifiedpermissions-policystore-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::VerifiedPermissions::PolicyStore",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-verifiedpermissions-policystore-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::VerifiedPermissions::PolicyStore
 Properties:
   [DeletionProtection](#cfn-verifiedpermissions-policystore-deletionprotection): {{
@@ -134,7 +134,7 @@ The following example creates a policy store that is configured with a schema an
 #### JSON
 <a name="aws-resource-verifiedpermissions-policystore--examples--Creating_a_policy_store_with_a_schema_and_verification_enabled--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "AWS CloudFormation sample template for creating a policy store for Verified Permissions.",
@@ -157,7 +157,7 @@ The following example creates a policy store that is configured with a schema an
 #### YAML
 <a name="aws-resource-verifiedpermissions-policystore--examples--Creating_a_policy_store_with_a_schema_and_verification_enabled--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: >-
   Description": "AWS CloudFormation sample template for creating a policy store for Verified Permissions."

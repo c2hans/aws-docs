@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-outputgroup-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-medialive-channel-outputgroup-name)" : {{String}},
   "[OutputGroupSettings](#cfn-medialive-channel-outputgroup-outputgroupsettings)" : {{OutputGroupSettings}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-outputgroup-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-medialive-channel-outputgroup-name): {{String}}
   [OutputGroupSettings](#cfn-medialive-channel-outputgroup-outputgroupsettings): {{
     OutputGroupSettings}}

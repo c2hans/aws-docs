@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-cluster-elasticloadbalancing-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-eks-cluster-elasticloadbalancing-enabled)" : {{Boolean}},
   "[GatewayApi](#cfn-eks-cluster-elasticloadbalancing-gatewayapi)" : {{GatewayApi}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-cluster-elasticloadbalancing-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-eks-cluster-elasticloadbalancing-enabled): {{Boolean}}
   [GatewayApi](#cfn-eks-cluster-elasticloadbalancing-gatewayapi): {{
     GatewayApi}}

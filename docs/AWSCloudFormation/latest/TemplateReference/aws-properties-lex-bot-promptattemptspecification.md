@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-promptattemptspecification-syntax.json"></a>
 
-```
+```json
 {
   "[AllowedInputTypes](#cfn-lex-bot-promptattemptspecification-allowedinputtypes)" : {{AllowedInputTypes}},
   "[AllowInterrupt](#cfn-lex-bot-promptattemptspecification-allowinterrupt)" : {{Boolean}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-promptattemptspecification-syntax.yaml"></a>
 
-```
+```yaml
   [AllowedInputTypes](#cfn-lex-bot-promptattemptspecification-allowedinputtypes): {{
     AllowedInputTypes}}
   [AllowInterrupt](#cfn-lex-bot-promptattemptspecification-allowinterrupt): {{Boolean}}

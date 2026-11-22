@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appconfig-extension-action-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-appconfig-extension-action-description)" : {{String}},
   "[Name](#cfn-appconfig-extension-action-name)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appconfig-extension-action-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-appconfig-extension-action-description): {{String}}
   [Name](#cfn-appconfig-extension-action-name): {{String}}
   [RoleArn](#cfn-appconfig-extension-action-rolearn): {{String}}

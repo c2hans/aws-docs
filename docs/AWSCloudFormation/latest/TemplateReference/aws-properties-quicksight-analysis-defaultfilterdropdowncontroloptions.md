@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-defaultfilterdropdowncontroloptions-syntax.json"></a>
 
-```
+```json
 {
   "[CommitMode](#cfn-quicksight-analysis-defaultfilterdropdowncontroloptions-commitmode)" : {{String}},
   "[DisplayOptions](#cfn-quicksight-analysis-defaultfilterdropdowncontroloptions-displayoptions)" : {{DropDownControlDisplayOptions}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-defaultfilterdropdowncontroloptions-syntax.yaml"></a>
 
-```
+```yaml
   [CommitMode](#cfn-quicksight-analysis-defaultfilterdropdowncontroloptions-commitmode): {{String}}
   [DisplayOptions](#cfn-quicksight-analysis-defaultfilterdropdowncontroloptions-displayoptions): {{
     DropDownControlDisplayOptions}}

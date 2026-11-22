@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-secretsmanagerconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-kinesisfirehose-deliverystream-secretsmanagerconfiguration-enabled)" : {{Boolean}},
   "[RoleARN](#cfn-kinesisfirehose-deliverystream-secretsmanagerconfiguration-rolearn)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-secretsmanagerconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-kinesisfirehose-deliverystream-secretsmanagerconfiguration-enabled): {{Boolean}}
   [RoleARN](#cfn-kinesisfirehose-deliverystream-secretsmanagerconfiguration-rolearn): {{String}}
   [SecretARN](#cfn-kinesisfirehose-deliverystream-secretsmanagerconfiguration-secretarn): {{String}}

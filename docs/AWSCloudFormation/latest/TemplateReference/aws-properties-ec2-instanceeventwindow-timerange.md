@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-instanceeventwindow-timerange-syntax.json"></a>
 
-```
+```json
 {
   "[EndHour](#cfn-ec2-instanceeventwindow-timerange-endhour)" : {{Integer}},
   "[EndWeekDay](#cfn-ec2-instanceeventwindow-timerange-endweekday)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-instanceeventwindow-timerange-syntax.yaml"></a>
 
-```
+```yaml
   [EndHour](#cfn-ec2-instanceeventwindow-timerange-endhour): {{Integer}}
   [EndWeekDay](#cfn-ec2-instanceeventwindow-timerange-endweekday): {{String}}
   [StartHour](#cfn-ec2-instanceeventwindow-timerange-starthour): {{Integer}}

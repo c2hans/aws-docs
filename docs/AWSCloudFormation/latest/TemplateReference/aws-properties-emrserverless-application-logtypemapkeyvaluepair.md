@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrserverless-application-logtypemapkeyvaluepair-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-emrserverless-application-logtypemapkeyvaluepair-key)" : {{String}},
   "[Value](#cfn-emrserverless-application-logtypemapkeyvaluepair-value)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrserverless-application-logtypemapkeyvaluepair-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-emrserverless-application-logtypemapkeyvaluepair-key): {{String}}
   [Value](#cfn-emrserverless-application-logtypemapkeyvaluepair-value): {{
     - String}}

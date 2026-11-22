@@ -129,7 +129,7 @@ A call to the [ListTableMetadata](https://docs.aws.amazon.com/athena/latest/APIR
 
   First, run a query that gets all the tables, as in the following example.
 
-  ```
+  ```shell
   aws athena start-query-execution --region us-east-1 \
   --query-string "SELECT table_name FROM information_schema.tables LIMIT 50" \
   --work-group "{{your-work-group-name}}"
@@ -137,7 +137,7 @@ A call to the [ListTableMetadata](https://docs.aws.amazon.com/athena/latest/APIR
 
   Next, retrieve the metadata of an individual table, as in the following example.
 
-  ```
+  ```shell
   aws athena start-query-execution --region us-east-1 \
   --query-string "SELECT * FROM information_schema.columns \
   WHERE table_name = '{{your-table-name}}' AND \
@@ -235,7 +235,7 @@ To workaround this issue, use the [CREATE TABLE](create-table.md) or [ALTER TABL
 
 CREATE TABLE example
 
-```
+```sql
 ...
 ROW FORMAT SERDE
 'org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe'
@@ -246,7 +246,7 @@ STORED AS PARQUET
 
 ALTER TABLE example
 
-```
+```sql
 ALTER TABLE ... SET TBLPROPERTIES ('parquet.ignore.statistics'='true')
 ```
 
@@ -323,7 +323,7 @@ If you run an `ALTER TABLE ADD PARTITION` statement and mistakenly specify a par
 
 To prevent this from happening, use the `ADD IF NOT EXISTS` syntax in your `ALTER TABLE ADD PARTITION` statement, like this:
 
-```
+```sql
 ALTER TABLE table_name ADD IF NOT EXISTS PARTITIION […]
 ```
 
@@ -358,7 +358,7 @@ When you may receive the error message `Access Denied (Service: Amazon S3; Statu
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

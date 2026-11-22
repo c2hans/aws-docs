@@ -29,14 +29,14 @@ If the AWS VMClock device shows a warning icon in Device Manager, which indicate
 
 1. [Download](https://s3.amazonaws.com/ec2-windows-drivers-downloads/AWSVMClock/Latest/AWSVMClock.zip) and extract the driver package from Amazon S3.
 
-   ```
+   ```powershell
    Invoke-WebRequest https://s3.amazonaws.com/ec2-windows-drivers-downloads/AWSVMClock/Latest/AWSVMClock.zip -OutFile $env:USERPROFILE\AWSVMClock.zip
    Expand-Archive $env:USERPROFILE\AWSVMClock.zip -DestinationPath $env:USERPROFILE\AWSVMClock
    ```
 
 1. Install the driver using `pnputil`.
 
-   ```
+   ```powershell
    pnputil /add-driver $env:USERPROFILE\AWSVMClock\aws_vmclock.inf /install
    ```
 

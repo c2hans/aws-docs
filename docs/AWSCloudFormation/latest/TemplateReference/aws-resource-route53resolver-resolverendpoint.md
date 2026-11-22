@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-route53resolver-resolverendpoint-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Route53Resolver::ResolverEndpoint",
   "Properties" : {
@@ -46,7 +46,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-route53resolver-resolverendpoint-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53Resolver::ResolverEndpoint
 Properties:
   [Direction](#cfn-route53resolver-resolverendpoint-direction): {{String}}
@@ -235,7 +235,7 @@ The following example creates an Amazon Route 53 outbound resolver endpoint. The
 #### JSON
 <a name="aws-resource-route53resolver-resolverendpoint--examples--Create_Resolver_endpoint--json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Route53Resolver::ResolverEndpoint",
   "Properties" : {
@@ -263,7 +263,7 @@ The following example creates an Amazon Route 53 outbound resolver endpoint. The
 #### YAML
 <a name="aws-resource-route53resolver-resolverendpoint--examples--Create_Resolver_endpoint--yaml"></a>
 
-```
+```yaml
 Type : AWS::Route53Resolver::ResolverEndpoint
 Properties :
   Direction : Outbound
@@ -287,7 +287,7 @@ The following example associates a resolver rule with a VPC. When you associate 
 #### JSON
 <a name="aws-resource-route53resolver-resolverendpoint--examples--Associate_a_Resolver_rule_with_a_VPC--json"></a>
 
-```
+```json
 {
  "Type" : "AWS::Route53Resolver::ResolverRuleAssociation",
  "Properties" : {
@@ -301,7 +301,7 @@ The following example associates a resolver rule with a VPC. When you associate 
 #### YAML
 <a name="aws-resource-route53resolver-resolverendpoint--examples--Associate_a_Resolver_rule_with_a_VPC--yaml"></a>
 
-```
+```yaml
 Type: "AWS::Route53Resolver::ResolverRuleAssociation"
 	Properties:
 	  Name: MyResolverRuleAssociation

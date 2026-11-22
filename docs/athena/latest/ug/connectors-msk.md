@@ -122,13 +122,13 @@ Kafka topics are split into partitions. Each partition is ordered. Each message 
 
 As a best practice, use predicate pushdown when you query Athena, as in the following examples.
 
-```
+```sql
 SELECT *
 FROM "{{msk_catalog_name}}"."{{glue_schema_registry_name}}"."{{glue_schema_name}}"
 WHERE integercol = 2147483647
 ```
 
-```
+```sql
 SELECT *
 FROM "{{msk_catalog_name}}"."{{glue_schema_registry_name}}"."{{glue_schema_name}}"
 WHERE timestampcol >= TIMESTAMP '2018-03-25 07:30:58.878'
@@ -165,7 +165,7 @@ In the following example, the schema to be created in the AWS Glue Schema Regist
 **Note**
 The value for `topicName` should use the same casing as the topic name in Kafka.
 
-```
+```json
 {
   "topicName": "datatypejson",
   "message": {
@@ -228,7 +228,7 @@ The value for `topicName` should use the same casing as the topic name in Kafka.
 
 In the following example, the schema to be created in the AWS Glue Schema Registry specifies `csv` as the value for `dataFormat` and uses `datatypecsvbulk` for `topicName`. The value for `topicName` should use the same casing as the topic name in Kafka.
 
-```
+```json
 {
   "topicName": "datatypecsvbulk",
   "message": {

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancingv2-listener-mutualauthentication-syntax.json"></a>
 
-```
+```json
 {
   "[AdvertiseTrustStoreCaNames](#cfn-elasticloadbalancingv2-listener-mutualauthentication-advertisetruststorecanames)" : {{String}},
   "[IgnoreClientCertificateExpiry](#cfn-elasticloadbalancingv2-listener-mutualauthentication-ignoreclientcertificateexpiry)" : {{Boolean}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancingv2-listener-mutualauthentication-syntax.yaml"></a>
 
-```
+```yaml
   [AdvertiseTrustStoreCaNames](#cfn-elasticloadbalancingv2-listener-mutualauthentication-advertisetruststorecanames): {{String}}
   [IgnoreClientCertificateExpiry](#cfn-elasticloadbalancingv2-listener-mutualauthentication-ignoreclientcertificateexpiry): {{Boolean}}
   [Mode](#cfn-elasticloadbalancingv2-listener-mutualauthentication-mode): {{String}}
@@ -74,7 +74,7 @@ The following example configures mutual TLS verify mode.
 #### YAML
 <a name="aws-properties-elasticloadbalancingv2-listener-mutualauthentication--examples----yaml"></a>
 
-```
+```yaml
 myHTTPSListener:
   Type: 'AWS::ElasticLoadBalancingV2::Listener'
   Properties:
@@ -95,7 +95,7 @@ myHTTPSListener:
 #### JSON
 <a name="aws-properties-elasticloadbalancingv2-listener-mutualauthentication--examples----json"></a>
 
-```
+```json
 {
     "myHTTPSListener": {
         "Type": "AWS::ElasticLoadBalancingV2::Listener",

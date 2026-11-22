@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-greengrass-resourcedefinition-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Greengrass::ResourceDefinition",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-greengrass-resourcedefinition-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Greengrass::ResourceDefinition
 Properties:
   [InitialVersion](#cfn-greengrass-resourcedefinition-initialversion): {{
@@ -66,7 +66,7 @@ The name of the resource definition.
 Application-specific metadata to attach to the resource definition. You can use tags in IAM policies to control access to AWS IoT Greengrass resources. You can also use tags to categorize your resources. For more information, see [Tagging Your AWS IoT Greengrass Resources](https://docs.aws.amazon.com/greengrass/v1/developerguide/tagging.html) in the * AWS IoT Greengrass Version 1 Developer Guide *.
 This `Json` property type is processed as a map of key-value pairs. It uses the following format, which is different from most `Tags` implementations in CloudFormation templates.
 
-```
+```json
 "Tags": {
     "KeyName0": "value",
     "KeyName1": "value",
@@ -122,7 +122,7 @@ For an example of a complete template, see the [`AWS::Greengrass::Group`](https:
 #### JSON
 <a name="aws-resource-greengrass-resourcedefinition--examples--Resource_Definition_Snippet--json"></a>
 
-```
+```json
 "TestResourceDefinition": {
     "Type": "AWS::Greengrass::ResourceDefinition",
     "Properties": {
@@ -226,7 +226,7 @@ For an example of a complete template, see the [`AWS::Greengrass::Group`](https:
 #### YAML
 <a name="aws-resource-greengrass-resourcedefinition--examples--Resource_Definition_Snippet--yaml"></a>
 
-```
+```yaml
 TestResourceDefinition:
   Type: 'AWS::Greengrass::ResourceDefinition'
   Properties:

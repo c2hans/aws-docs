@@ -105,7 +105,7 @@ aws elasticache create-replication-group ^
 
 The preceding command generates the following output.
 
-```
+```json
 {
     "ReplicationGroup": {
         "Status": "creating",
@@ -179,7 +179,7 @@ aws elasticache create-replication-group ^
 
 The preceding operation generates the following output.
 
-```
+```json
 {
     "ReplicationGroup": {
         "Status": "creating",

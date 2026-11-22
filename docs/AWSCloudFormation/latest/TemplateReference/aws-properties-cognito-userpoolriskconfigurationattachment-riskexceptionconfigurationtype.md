@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpoolriskconfigurationattachment-riskexceptionconfigurationtype-syntax.json"></a>
 
-```
+```json
 {
   "[BlockedIPRangeList](#cfn-cognito-userpoolriskconfigurationattachment-riskexceptionconfigurationtype-blockediprangelist)" : {{[ String, ... ]}},
   "[SkippedIPRangeList](#cfn-cognito-userpoolriskconfigurationattachment-riskexceptionconfigurationtype-skippediprangelist)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpoolriskconfigurationattachment-riskexceptionconfigurationtype-syntax.yaml"></a>
 
-```
+```yaml
   [BlockedIPRangeList](#cfn-cognito-userpoolriskconfigurationattachment-riskexceptionconfigurationtype-blockediprangelist): {{
     - String}}
   [SkippedIPRangeList](#cfn-cognito-userpoolriskconfigurationattachment-riskexceptionconfigurationtype-skippediprangelist): {{

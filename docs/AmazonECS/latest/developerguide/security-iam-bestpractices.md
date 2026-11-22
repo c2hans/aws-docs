@@ -31,7 +31,7 @@ When you need an added layer of security, add a condition to your policy. This c
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -60,7 +60,7 @@ Tags applied to services are propagated to all the tasks that are part of that s
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

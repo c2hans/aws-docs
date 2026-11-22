@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-notifications-channelassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Notifications::ChannelAssociation",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-notifications-channelassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Notifications::ChannelAssociation
 Properties:
   [Arn](#cfn-notifications-channelassociation-arn): {{String}}

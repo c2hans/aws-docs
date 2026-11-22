@@ -41,7 +41,7 @@ The following policy contains the required permissions, and limits the actions t
 
 ****
 
-```
+```json
 {
 "Statement": [
       {
@@ -88,7 +88,7 @@ The following policy contains the required permissions, and limits the actions t
 
 ****
 
-```
+```json
 {
 "Statement": [
     {
@@ -116,7 +116,7 @@ The following policy contains the required permissions, and limits the actions t
 
 ****
 
-```
+```json
 {
 "Statement": [
       {
@@ -138,7 +138,7 @@ The following policy contains the required permissions, and limits the actions t
 
 ****
 
-```
+```json
 {
 "Statement": [
     {
@@ -171,7 +171,7 @@ The following policy contains the required permissions, and limits the actions t
 
 ****
 
-```
+```json
 {
  "Statement": [
     {
@@ -214,7 +214,7 @@ Replace the `account`, `cluster-name`, and `service-name` with your values.
 
 ****
 
-```
+```json
 {
 "Statement": [
     {
@@ -249,7 +249,7 @@ The following permissions are required to view the lifecycle events. Add the fol
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -281,7 +281,7 @@ The following permissions are required to configure the lifecycle events:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

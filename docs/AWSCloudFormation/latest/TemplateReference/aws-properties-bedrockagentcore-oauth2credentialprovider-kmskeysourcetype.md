@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-oauth2credentialprovider-kmskeysourcetype-syntax.json"></a>
 
-```
+```json
 {
   "[KmsKeyArn](#cfn-bedrockagentcore-oauth2credentialprovider-kmskeysourcetype-kmskeyarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-oauth2credentialprovider-kmskeysourcetype-syntax.yaml"></a>
 
-```
+```yaml
   [KmsKeyArn](#cfn-bedrockagentcore-oauth2credentialprovider-kmskeysourcetype-kmskeyarn): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-billingconductor-pricingrule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::BillingConductor::PricingRule",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-billingconductor-pricingrule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::BillingConductor::PricingRule
 Properties:
   [BillingEntity](#cfn-billingconductor-pricingrule-billingentity): {{String}}
@@ -184,7 +184,7 @@ The following example shows a pricing rule that applies a 10% global markup.
 #### JSON
 <a name="aws-resource-billingconductor-pricingrule--examples--Simple_pricing_rule--json"></a>
 
-```
+```json
 {
   "Resources": {
       "TestPricingRule": {
@@ -204,7 +204,7 @@ The following example shows a pricing rule that applies a 10% global markup.
 #### YAML
 <a name="aws-resource-billingconductor-pricingrule--examples--Simple_pricing_rule--yaml"></a>
 
-```
+```yaml
 Resources:
   TestPricingRule:
       Type: 'AWS::BillingConductor::PricingRule'
@@ -224,7 +224,7 @@ The following example shows a pricing rule that targets only AWS Marketplace cha
 #### JSON
 <a name="aws-resource-billingconductor-pricingrule--examples--pricing_rule--json"></a>
 
-```
+```json
 {
   "Resources": {
       "TestPricingRule": {
@@ -245,7 +245,7 @@ The following example shows a pricing rule that targets only AWS Marketplace cha
 #### YAML
 <a name="aws-resource-billingconductor-pricingrule--examples--pricing_rule--yaml"></a>
 
-```
+```yaml
 Resources:
   TestPricingRule:
     Type: 'AWS::BillingConductor::PricingRule'

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kafkaconnect-customplugin-custompluginfiledescription-syntax.json"></a>
 
-```
+```json
 {
   "[FileMd5](#cfn-kafkaconnect-customplugin-custompluginfiledescription-filemd5)" : {{String}},
   "[FileSize](#cfn-kafkaconnect-customplugin-custompluginfiledescription-filesize)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kafkaconnect-customplugin-custompluginfiledescription-syntax.yaml"></a>
 
-```
+```yaml
   [FileMd5](#cfn-kafkaconnect-customplugin-custompluginfiledescription-filemd5): {{String}}
   [FileSize](#cfn-kafkaconnect-customplugin-custompluginfiledescription-filesize): {{Integer}}
 ```

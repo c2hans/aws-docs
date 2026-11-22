@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connectcampaignsv2-campaign-communicationtimeconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Email](#cfn-connectcampaignsv2-campaign-communicationtimeconfig-email)" : {{TimeWindow}},
   "[LocalTimeZoneConfig](#cfn-connectcampaignsv2-campaign-communicationtimeconfig-localtimezoneconfig)" : {{LocalTimeZoneConfig}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connectcampaignsv2-campaign-communicationtimeconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Email](#cfn-connectcampaignsv2-campaign-communicationtimeconfig-email): {{
     TimeWindow}}
   [LocalTimeZoneConfig](#cfn-connectcampaignsv2-campaign-communicationtimeconfig-localtimezoneconfig): {{

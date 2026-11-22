@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-aps-scraper-scraperloggingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[LoggingDestination](#cfn-aps-scraper-scraperloggingconfiguration-loggingdestination)" : {{ScraperLoggingDestination}},
   "[ScraperComponents](#cfn-aps-scraper-scraperloggingconfiguration-scrapercomponents)" : {{[ ScraperComponent, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-aps-scraper-scraperloggingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [LoggingDestination](#cfn-aps-scraper-scraperloggingconfiguration-loggingdestination): {{
     ScraperLoggingDestination}}
   [ScraperComponents](#cfn-aps-scraper-scraperloggingconfiguration-scrapercomponents): {{

@@ -93,7 +93,7 @@ For more information, see [Create an IAM User and Get Your AWS Credentials](http
 #### POST schema
 <a name="brokers-request-body-post-example"></a>
 
-```
+```json
 {
   "engineVersion": "string",
   "deploymentMode": enum,
@@ -173,7 +173,7 @@ For more information, see [Create an IAM User and Get Your AWS Credentials](http
 #### ListBrokersOutput schema
 <a name="brokers-response-body-listbrokersoutput-example"></a>
 
-```
+```json
 {
   "brokerSummaries": [
     {
@@ -194,7 +194,7 @@ For more information, see [Create an IAM User and Get Your AWS Credentials](http
 #### CreateBrokerOutput schema
 <a name="brokers-response-body-createbrokeroutput-example"></a>
 
-```
+```json
 {
   "brokerArn": "string",
   "brokerId": "string"
@@ -204,7 +204,7 @@ For more information, see [Create an IAM User and Get Your AWS Credentials](http
 #### Error schema
 <a name="brokers-response-body-error-example"></a>
 
-```
+```json
 {
   "errorAttribute": "string",
   "message": "string"

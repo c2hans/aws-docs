@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-lifecyclepolicy-recipeselection-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-imagebuilder-lifecyclepolicy-recipeselection-name)" : {{String}},
   "[SemanticVersion](#cfn-imagebuilder-lifecyclepolicy-recipeselection-semanticversion)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-lifecyclepolicy-recipeselection-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-imagebuilder-lifecyclepolicy-recipeselection-name): {{String}}
   [SemanticVersion](#cfn-imagebuilder-lifecyclepolicy-recipeselection-semanticversion): {{String}}
 ```

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-ipamprefixlistresolver-ipamprefixlistresolverrule-syntax.json"></a>
 
-```
+```json
 {
   "[Conditions](#cfn-ec2-ipamprefixlistresolver-ipamprefixlistresolverrule-conditions)" : {{[ IpamPrefixListResolverRuleCondition, ... ]}},
   "[IpamScopeId](#cfn-ec2-ipamprefixlistresolver-ipamprefixlistresolverrule-ipamscopeid)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-ipamprefixlistresolver-ipamprefixlistresolverrule-syntax.yaml"></a>
 
-```
+```yaml
   [Conditions](#cfn-ec2-ipamprefixlistresolver-ipamprefixlistresolverrule-conditions): {{
     - IpamPrefixListResolverRuleCondition}}
   [IpamScopeId](#cfn-ec2-ipamprefixlistresolver-ipamprefixlistresolverrule-ipamscopeid): {{String}}

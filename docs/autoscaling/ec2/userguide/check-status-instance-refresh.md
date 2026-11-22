@@ -45,7 +45,7 @@ The following is example output.
 
 Instance refreshes are ordered by start time. Instance refreshes still in progress are described first.
 
-```
+```json
 {
   "InstanceRefreshes":[
     {

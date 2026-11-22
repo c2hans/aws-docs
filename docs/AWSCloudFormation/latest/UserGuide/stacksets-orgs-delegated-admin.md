@@ -50,7 +50,7 @@ You can register and deregister delegated administrators using the [CloudFormati
 
 1. Run the `register-delegated-administrator` command.
 
-   ```
+   ```sh
    $ aws organizations register-delegated-administrator \
      --service-principal=member.org.stacksets.cloudformation.amazonaws.com \
      --account-id="{{memberAccountId}}"
@@ -58,7 +58,7 @@ You can register and deregister delegated administrators using the [CloudFormati
 
 1. Run the `list-delegated-administrators` command to verify that the specified member account is successfully registered as a delegated administrator.
 
-   ```
+   ```sh
    $ aws organizations list-delegated-administrators \
      --service-principal=member.org.stacksets.cloudformation.amazonaws.com
    ```
@@ -70,7 +70,7 @@ You can register and deregister delegated administrators using the [CloudFormati
 
 1. Run the `deregister-delegated-administrator` command.
 
-   ```
+   ```sh
    $ aws organizations deregister-delegated-administrator \
      --service-principal=member.org.stacksets.cloudformation.amazonaws.com \
      --account-id="{{memberAccountId}}"
@@ -78,7 +78,7 @@ You can register and deregister delegated administrators using the [CloudFormati
 
 1. Run the `list-delegated-administrators` command to verify that the specified member account is successfully deregistered as a delegated administrator.
 
-   ```
+   ```sh
    $ aws organizations list-delegated-administrators \
      --service-principal=member.org.stacksets.cloudformation.amazonaws.com
    ```

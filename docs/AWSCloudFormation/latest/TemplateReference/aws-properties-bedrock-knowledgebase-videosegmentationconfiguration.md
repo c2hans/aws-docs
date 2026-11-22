@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-knowledgebase-videosegmentationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[FixedLengthDuration](#cfn-bedrock-knowledgebase-videosegmentationconfiguration-fixedlengthduration)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-knowledgebase-videosegmentationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [FixedLengthDuration](#cfn-bedrock-knowledgebase-videosegmentationconfiguration-fixedlengthduration): {{Integer}}
 ```
 

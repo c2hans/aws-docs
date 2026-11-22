@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-browsercustom-browsernetworkconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[NetworkMode](#cfn-bedrockagentcore-browsercustom-browsernetworkconfiguration-networkmode)" : {{String}},
   "[VpcConfig](#cfn-bedrockagentcore-browsercustom-browsernetworkconfiguration-vpcconfig)" : {{VpcConfig}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-browsercustom-browsernetworkconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [NetworkMode](#cfn-bedrockagentcore-browsercustom-browsernetworkconfiguration-networkmode): {{String}}
   [VpcConfig](#cfn-bedrockagentcore-browsercustom-browsernetworkconfiguration-vpcconfig): {{
     VpcConfig}}

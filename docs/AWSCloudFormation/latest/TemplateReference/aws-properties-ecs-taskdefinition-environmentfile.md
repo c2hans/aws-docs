@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskdefinition-environmentfile-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-ecs-taskdefinition-environmentfile-type)" : {{String}},
   "[Value](#cfn-ecs-taskdefinition-environmentfile-value)" : {{String}}
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskdefinition-environmentfile-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-ecs-taskdefinition-environmentfile-type): {{String}}
   [Value](#cfn-ecs-taskdefinition-environmentfile-value): {{String}}
 ```

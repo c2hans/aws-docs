@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-harness-customjwtauthorizerconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AdvertisedScopeMapping](#cfn-bedrockagentcore-harness-customjwtauthorizerconfiguration-advertisedscopemapping)" : {{{{{Key}}: {{Value}}, ...}}},
   "[AllowedAudience](#cfn-bedrockagentcore-harness-customjwtauthorizerconfiguration-allowedaudience)" : {{[ String, ... ]}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-harness-customjwtauthorizerconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AdvertisedScopeMapping](#cfn-bedrockagentcore-harness-customjwtauthorizerconfiguration-advertisedscopemapping): {{
     {{Key}}: {{Value}}}}
   [AllowedAudience](#cfn-bedrockagentcore-harness-customjwtauthorizerconfiguration-allowedaudience): {{

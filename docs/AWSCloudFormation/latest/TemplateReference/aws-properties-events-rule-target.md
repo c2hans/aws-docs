@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-events-rule-target-syntax.json"></a>
 
-```
+```json
 {
   "[AppSyncParameters](#cfn-events-rule-target-appsyncparameters)" : {{AppSyncParameters}},
   "[Arn](#cfn-events-rule-target-arn)" : {{String}},
@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-events-rule-target-syntax.yaml"></a>
 
-```
+```yaml
   [AppSyncParameters](#cfn-events-rule-target-appsyncparameters): {{
     AppSyncParameters}}
   [Arn](#cfn-events-rule-target-arn): {{String}}
@@ -208,7 +208,7 @@ The following snippet creates a Kinesis data stream target.
 #### JSON
 <a name="aws-properties-events-rule-target--examples--Target_with_KinesisParameters--json"></a>
 
-```
+```json
 "MyEventsRule": {
     "Type": "AWS::Events::Rule",
     "Properties": {
@@ -253,7 +253,7 @@ The following snippet creates a Kinesis data stream target.
 #### YAML
 <a name="aws-properties-events-rule-target--examples--Target_with_KinesisParameters--yaml"></a>
 
-```
+```yaml
 MyEventsRule:
   Type: AWS::Events::Rule
   Properties:
@@ -286,7 +286,7 @@ The following snippet creates an Amazon ECS task target.
 #### JSON
 <a name="aws-properties-events-rule-target--examples--Target_with_EcsParameters--json"></a>
 
-```
+```json
 "MyEventsRule": {
   "Type": "AWS::Events::Rule",
   "Properties": {
@@ -336,7 +336,7 @@ The following snippet creates an Amazon ECS task target.
 #### YAML
 <a name="aws-properties-events-rule-target--examples--Target_with_EcsParameters--yaml"></a>
 
-```
+```yaml
 MyEventsRule:
   Type: AWS::Events::Rule
   Properties:

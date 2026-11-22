@@ -41,7 +41,7 @@ In this step, you create an IAM policy that provides AWS DMS with access to Amaz
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -179,7 +179,7 @@ In this step, you create an IAM role that provides access to AWS Secrets Manager
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

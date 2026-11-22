@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-ruleaction-syntax.json"></a>
 
-```
+```json
 {
   "[Allow](#cfn-wafv2-webacl-ruleaction-allow)" : {{AllowAction}},
   "[Block](#cfn-wafv2-webacl-ruleaction-block)" : {{BlockAction}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-ruleaction-syntax.yaml"></a>
 
-```
+```yaml
   [Allow](#cfn-wafv2-webacl-ruleaction-allow): {{
     AllowAction}}
   [Block](#cfn-wafv2-webacl-ruleaction-block): {{

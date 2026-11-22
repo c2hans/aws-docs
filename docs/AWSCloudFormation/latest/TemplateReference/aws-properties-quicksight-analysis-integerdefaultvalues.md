@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-integerdefaultvalues-syntax.json"></a>
 
-```
+```json
 {
   "[DynamicValue](#cfn-quicksight-analysis-integerdefaultvalues-dynamicvalue)" : {{DynamicDefaultValue}},
   "[StaticValues](#cfn-quicksight-analysis-integerdefaultvalues-staticvalues)" : {{[ Number, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-integerdefaultvalues-syntax.yaml"></a>
 
-```
+```yaml
   [DynamicValue](#cfn-quicksight-analysis-integerdefaultvalues-dynamicvalue): {{
     DynamicDefaultValue}}
   [StaticValues](#cfn-quicksight-analysis-integerdefaultvalues-staticvalues): {{

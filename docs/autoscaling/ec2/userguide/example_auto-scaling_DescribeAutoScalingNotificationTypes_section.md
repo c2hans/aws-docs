@@ -38,7 +38,7 @@ For more information, see [Getting Amazon SNS notifications when your Auto Scali
 **Tools for PowerShell V4**
 **Example 1: This example lists the notification types that are supported by Auto Scaling.**
 
-```
+```powershell
 Get-ASAutoScalingNotificationType
 ```
 **Output:**
@@ -55,7 +55,7 @@ autoscaling:TEST_NOTIFICATION
 **Tools for PowerShell V5**
 **Example 1: This example lists the notification types that are supported by Auto Scaling.**
 
-```
+```powershell
 Get-ASAutoScalingNotificationType
 ```
 **Output:**

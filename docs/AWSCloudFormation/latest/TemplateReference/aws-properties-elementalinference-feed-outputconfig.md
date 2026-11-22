@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elementalinference-feed-outputconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Clipping](#cfn-elementalinference-feed-outputconfig-clipping)" : {{ClippingConfig}},
   "[Cropping](#cfn-elementalinference-feed-outputconfig-cropping)" : {{CroppingConfig}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elementalinference-feed-outputconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Clipping](#cfn-elementalinference-feed-outputconfig-clipping): {{
     ClippingConfig}}
   [Cropping](#cfn-elementalinference-feed-outputconfig-cropping): {{

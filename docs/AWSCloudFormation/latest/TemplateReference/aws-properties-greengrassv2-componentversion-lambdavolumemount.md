@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrassv2-componentversion-lambdavolumemount-syntax.json"></a>
 
-```
+```json
 {
   "[AddGroupOwner](#cfn-greengrassv2-componentversion-lambdavolumemount-addgroupowner)" : {{Boolean}},
   "[DestinationPath](#cfn-greengrassv2-componentversion-lambdavolumemount-destinationpath)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrassv2-componentversion-lambdavolumemount-syntax.yaml"></a>
 
-```
+```yaml
   [AddGroupOwner](#cfn-greengrassv2-componentversion-lambdavolumemount-addgroupowner): {{Boolean}}
   [DestinationPath](#cfn-greengrassv2-componentversion-lambdavolumemount-destinationpath): {{String}}
   [Permission](#cfn-greengrassv2-componentversion-lambdavolumemount-permission): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securitylake-subscriber-subscriberidentity-syntax.json"></a>
 
-```
+```json
 {
   "[ExternalId](#cfn-securitylake-subscriber-subscriberidentity-externalid)" : {{String}},
   "[Principal](#cfn-securitylake-subscriber-subscriberidentity-principal)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securitylake-subscriber-subscriberidentity-syntax.yaml"></a>
 
-```
+```yaml
   [ExternalId](#cfn-securitylake-subscriber-subscriberidentity-externalid): {{String}}
   [Principal](#cfn-securitylake-subscriber-subscriberidentity-principal): {{String}}
 ```

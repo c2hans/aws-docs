@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-b2bi-partnership-x12outboundediheaders-syntax.json"></a>
 
-```
+```json
 {
   "[ControlNumbers](#cfn-b2bi-partnership-x12outboundediheaders-controlnumbers)" : {{X12ControlNumbers}},
   "[Delimiters](#cfn-b2bi-partnership-x12outboundediheaders-delimiters)" : {{X12Delimiters}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-b2bi-partnership-x12outboundediheaders-syntax.yaml"></a>
 
-```
+```yaml
   [ControlNumbers](#cfn-b2bi-partnership-x12outboundediheaders-controlnumbers): {{
     X12ControlNumbers}}
   [Delimiters](#cfn-b2bi-partnership-x12outboundediheaders-delimiters): {{

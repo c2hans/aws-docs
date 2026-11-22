@@ -72,6 +72,12 @@ Default: `False`
 Type: Boolean
 Required: No
 
+ ** DisableValidation **
+ Set to `true` to disable pre-deployment validations in changeset or stack operations.
+ Default: `false`
+Type: Boolean
+Required: No
+
  **NotificationARNs.member.N**
 Amazon Simple Notification Service topic Amazon Resource Names (ARNs) that CloudFormation associates with the stack. Specify an empty list to remove all notification topics.
 Type: Array of strings

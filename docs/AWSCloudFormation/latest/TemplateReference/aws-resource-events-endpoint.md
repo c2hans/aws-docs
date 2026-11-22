@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-events-endpoint-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Events::Endpoint",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-events-endpoint-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Events::Endpoint
 Properties:
   [Description](#cfn-events-endpoint-description): {{String}}
@@ -143,7 +143,7 @@ The following example creates a global endpoint with event replication enabled.
 #### JSON
 <a name="aws-resource-events-endpoint--examples--Create_a_global_endpoint_with_event_replication--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "This template will create an Endpoint resource",
@@ -200,7 +200,7 @@ The following example creates a global endpoint with event replication enabled.
 #### YAML
 <a name="aws-resource-events-endpoint--examples--Create_a_global_endpoint_with_event_replication--yaml"></a>
 
-```
+```yaml
   AWSTemplateFormatVersion: "2010-09-09"
   Description: "This template will create an Endpoint resource"
   Resources:
@@ -234,7 +234,7 @@ The following example creates a global endpoint with event replication disabled.
 #### JSON
 <a name="aws-resource-events-endpoint--examples--Create_a_global_endpoint_without_event_replication--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "This template will create an Endpoint resource",
@@ -288,7 +288,7 @@ The following example creates a global endpoint with event replication disabled.
 #### YAML
 <a name="aws-resource-events-endpoint--examples--Create_a_global_endpoint_without_event_replication--yaml"></a>
 
-```
+```yaml
   AWSTemplateFormatVersion: "2010-09-09"
   Description: "This template will create an Endpoint resource"
   Resources:

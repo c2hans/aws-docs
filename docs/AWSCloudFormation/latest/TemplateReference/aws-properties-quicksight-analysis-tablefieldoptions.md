@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-tablefieldoptions-syntax.json"></a>
 
-```
+```json
 {
   "[Order](#cfn-quicksight-analysis-tablefieldoptions-order)" : {{[ String, ... ]}},
   "[PinnedFieldOptions](#cfn-quicksight-analysis-tablefieldoptions-pinnedfieldoptions)" : {{TablePinnedFieldOptions}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-tablefieldoptions-syntax.yaml"></a>
 
-```
+```yaml
   [Order](#cfn-quicksight-analysis-tablefieldoptions-order): {{
     - String}}
   [PinnedFieldOptions](#cfn-quicksight-analysis-tablefieldoptions-pinnedfieldoptions): {{

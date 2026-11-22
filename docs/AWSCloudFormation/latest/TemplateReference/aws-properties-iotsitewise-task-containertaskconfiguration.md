@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotsitewise-task-containertaskconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Command](#cfn-iotsitewise-task-containertaskconfiguration-command)" : {{[ String, ... ]}},
   "[EcrUri](#cfn-iotsitewise-task-containertaskconfiguration-ecruri)" : {{String}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotsitewise-task-containertaskconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Command](#cfn-iotsitewise-task-containertaskconfiguration-command): {{
     - String}}
   [EcrUri](#cfn-iotsitewise-task-containertaskconfiguration-ecruri): {{String}}

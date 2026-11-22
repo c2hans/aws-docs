@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcaconnectorscep-connector-openidconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Audience](#cfn-pcaconnectorscep-connector-openidconfiguration-audience)" : {{String}},
   "[Issuer](#cfn-pcaconnectorscep-connector-openidconfiguration-issuer)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcaconnectorscep-connector-openidconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Audience](#cfn-pcaconnectorscep-connector-openidconfiguration-audience): {{String}}
   [Issuer](#cfn-pcaconnectorscep-connector-openidconfiguration-issuer): {{String}}
   [Subject](#cfn-pcaconnectorscep-connector-openidconfiguration-subject): {{String}}

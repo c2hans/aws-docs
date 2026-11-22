@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-template-template-syntax.json"></a>
 
-```
+```json
 {
   "[HtmlPart](#cfn-ses-template-template-htmlpart)" : {{String}},
   "[SubjectPart](#cfn-ses-template-template-subjectpart)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-template-template-syntax.yaml"></a>
 
-```
+```yaml
   [HtmlPart](#cfn-ses-template-template-htmlpart): {{String}}
   [SubjectPart](#cfn-ses-template-template-subjectpart): {{String}}
   [TemplateName](#cfn-ses-template-template-templatename): {{String}}

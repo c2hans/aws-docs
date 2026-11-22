@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-flow-redshiftdestinationproperties-syntax.json"></a>
 
-```
+```json
 {
   "[BucketPrefix](#cfn-appflow-flow-redshiftdestinationproperties-bucketprefix)" : {{String}},
   "[ErrorHandlingConfig](#cfn-appflow-flow-redshiftdestinationproperties-errorhandlingconfig)" : {{ErrorHandlingConfig}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-flow-redshiftdestinationproperties-syntax.yaml"></a>
 
-```
+```yaml
   [BucketPrefix](#cfn-appflow-flow-redshiftdestinationproperties-bucketprefix): {{String}}
   [ErrorHandlingConfig](#cfn-appflow-flow-redshiftdestinationproperties-errorhandlingconfig): {{
     ErrorHandlingConfig}}

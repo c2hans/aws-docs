@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apigateway-domainname-mutualtlsauthentication-syntax.json"></a>
 
-```
+```json
 {
   "[TruststoreUri](#cfn-apigateway-domainname-mutualtlsauthentication-truststoreuri)" : {{String}},
   "[TruststoreVersion](#cfn-apigateway-domainname-mutualtlsauthentication-truststoreversion)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apigateway-domainname-mutualtlsauthentication-syntax.yaml"></a>
 
-```
+```yaml
   [TruststoreUri](#cfn-apigateway-domainname-mutualtlsauthentication-truststoreuri): {{String}}
   [TruststoreVersion](#cfn-apigateway-domainname-mutualtlsauthentication-truststoreversion): {{String}}
 ```

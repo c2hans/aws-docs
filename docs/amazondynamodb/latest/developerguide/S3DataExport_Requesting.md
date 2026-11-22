@@ -37,7 +37,7 @@ You can export your table data to any Amazon S3 bucket you have permission to wr
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -70,7 +70,7 @@ If you need to write to an Amazon S3 bucket that is in another account or you do
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -196,7 +196,7 @@ aws dynamodb export-table-to-point-in-time \
 ------
 #### [ Python ]
 
-```
+```python
 import boto3
 from datetime import datetime
 
@@ -215,7 +215,7 @@ client.export_table_to_point_in_time(
 ------
 #### [ Java ]
 
-```
+```java
 DynamoDbClient client = DynamoDbClient.create();
 
 client.exportTableToPointInTime(b -> b
@@ -230,7 +230,7 @@ client.exportTableToPointInTime(b -> b
 ------
 #### [ .NET ]
 
-```
+```csharp
 var client = new AmazonDynamoDBClient();
 
 await client.ExportTableToPointInTimeAsync(new ExportTableToPointInTimeRequest
@@ -247,7 +247,7 @@ await client.ExportTableToPointInTimeAsync(new ExportTableToPointInTimeRequest
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 import { DynamoDBClient, ExportTableToPointInTimeCommand } from "@aws-sdk/client-dynamodb";
 
 const client = new DynamoDBClient();
@@ -265,7 +265,7 @@ await client.send(new ExportTableToPointInTimeCommand({
 ------
 #### [ Go ]
 
-```
+```go
 cfg, _ := config.LoadDefaultConfig(context.TODO())
 client := dynamodb.NewFromConfig(cfg)
 
@@ -298,7 +298,7 @@ aws dynamodb export-table-to-point-in-time \
 ------
 #### [ Python ]
 
-```
+```python
 import boto3
 from datetime import datetime
 
@@ -322,7 +322,7 @@ client.export_table_to_point_in_time(
 ------
 #### [ Java ]
 
-```
+```java
 DynamoDbClient client = DynamoDbClient.create();
 
 client.exportTableToPointInTime(b -> b
@@ -341,7 +341,7 @@ client.exportTableToPointInTime(b -> b
 ------
 #### [ .NET ]
 
-```
+```csharp
 var client = new AmazonDynamoDBClient();
 
 await client.ExportTableToPointInTimeAsync(new ExportTableToPointInTimeRequest
@@ -364,7 +364,7 @@ await client.ExportTableToPointInTimeAsync(new ExportTableToPointInTimeRequest
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 import { DynamoDBClient, ExportTableToPointInTimeCommand } from "@aws-sdk/client-dynamodb";
 
 const client = new DynamoDBClient();
@@ -387,7 +387,7 @@ await client.send(new ExportTableToPointInTimeCommand({
 ------
 #### [ Go ]
 
-```
+```go
 cfg, _ := config.LoadDefaultConfig(context.TODO())
 client := dynamodb.NewFromConfig(cfg)
 
@@ -437,7 +437,7 @@ aws dynamodb export-table-to-point-in-time \
 ------
 #### [ Python ]
 
-```
+```python
 import boto3
 from datetime import datetime
 
@@ -466,7 +466,7 @@ client.export_table_to_point_in_time(
 ------
 #### [ Java ]
 
-```
+```java
 DynamoDbClient client = DynamoDbClient.create();
 
 client.exportTableToPointInTime(b -> b
@@ -489,7 +489,7 @@ client.exportTableToPointInTime(b -> b
 ------
 #### [ .NET ]
 
-```
+```csharp
 var client = new AmazonDynamoDBClient();
 
 await client.ExportTableToPointInTimeAsync(new ExportTableToPointInTimeRequest
@@ -521,7 +521,7 @@ await client.ExportTableToPointInTimeAsync(new ExportTableToPointInTimeRequest
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 import { DynamoDBClient, ExportTableToPointInTimeCommand } from "@aws-sdk/client-dynamodb";
 
 const client = new DynamoDBClient();
@@ -549,7 +549,7 @@ await client.send(new ExportTableToPointInTimeCommand({
 ------
 #### [ Go ]
 
-```
+```go
 cfg, _ := config.LoadDefaultConfig(context.TODO())
 client := dynamodb.NewFromConfig(cfg)
 
@@ -604,7 +604,7 @@ aws dynamodb list-exports \
 ------
 #### [ Python ]
 
-```
+```python
 import boto3
 
 client = boto3.client('dynamodb')
@@ -619,7 +619,7 @@ print(
 ------
 #### [ Java ]
 
-```
+```java
 DynamoDbClient client = DynamoDbClient.create();
 
 ListExportsResponse response = client.listExports(b -> b
@@ -631,7 +631,7 @@ response.exportSummaries().forEach(System.out::println);
 ------
 #### [ .NET ]
 
-```
+```csharp
 var client = new AmazonDynamoDBClient();
 
 var response = await client.ListExportsAsync(new ListExportsRequest
@@ -645,7 +645,7 @@ response.ExportSummaries.ForEach(Console.WriteLine);
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 import { DynamoDBClient, ListExportsCommand } from "@aws-sdk/client-dynamodb";
 
 const client = new DynamoDBClient();
@@ -660,7 +660,7 @@ console.log(response.ExportSummaries);
 ------
 #### [ Go ]
 
-```
+```go
 cfg, _ := config.LoadDefaultConfig(context.TODO())
 client := dynamodb.NewFromConfig(cfg)
 
@@ -686,7 +686,7 @@ aws dynamodb describe-export \
 ------
 #### [ Python ]
 
-```
+```python
 import boto3
 
 client = boto3.client('dynamodb')
@@ -701,7 +701,7 @@ print(
 ------
 #### [ Java ]
 
-```
+```java
 DynamoDbClient client = DynamoDbClient.create();
 
 DescribeExportResponse response = client.describeExport(b -> b
@@ -713,7 +713,7 @@ System.out.println(response.exportDescription());
 ------
 #### [ .NET ]
 
-```
+```csharp
 var client = new AmazonDynamoDBClient();
 
 var response = await client.DescribeExportAsync(new DescribeExportRequest
@@ -727,7 +727,7 @@ Console.WriteLine(response.ExportDescription);
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 import { DynamoDBClient, DescribeExportCommand } from "@aws-sdk/client-dynamodb";
 
 const client = new DynamoDBClient();
@@ -742,7 +742,7 @@ console.log(response.ExportDescription);
 ------
 #### [ Go ]
 
-```
+```go
 cfg, _ := config.LoadDefaultConfig(context.TODO())
 client := dynamodb.NewFromConfig(cfg)
 

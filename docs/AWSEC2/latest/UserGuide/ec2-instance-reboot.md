@@ -45,7 +45,7 @@ If updates are installing on your instance, we recommend that you do not reboot 
 **To reboot an instance**
 Use the [reboot-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/reboot-instances.html) command.
 
-```
+```bash
 aws ec2 reboot-instances --instance-ids {{i-1234567890abcdef0}}
 ```
 
@@ -55,7 +55,7 @@ aws ec2 reboot-instances --instance-ids {{i-1234567890abcdef0}}
 **To reboot an instance**
 Use the [Restart-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Restart-EC2Instance.html) cmdlet.
 
-```
+```powershell
 Restart-EC2Instance -InstanceId {{i-1234567890abcdef0}}
 ```
 

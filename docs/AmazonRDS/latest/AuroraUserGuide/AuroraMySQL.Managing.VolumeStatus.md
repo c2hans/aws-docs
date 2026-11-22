@@ -15,7 +15,7 @@ You can avoid that error by using the `SHOW VOLUME STATUS` statement. The statem
 ## Syntax
 <a name="AuroraMySQL.Managing.VolumeStatus.Syntax"></a>
 
-```
+```sql
 SHOW VOLUME STATUS
 ```
 
@@ -24,7 +24,7 @@ SHOW VOLUME STATUS
 
 The following example illustrates a typical SHOW VOLUME STATUS result.
 
-```
+```sql
 mysql> SHOW VOLUME STATUS;
 +---------------+-------+
 | Variable_name | Value |

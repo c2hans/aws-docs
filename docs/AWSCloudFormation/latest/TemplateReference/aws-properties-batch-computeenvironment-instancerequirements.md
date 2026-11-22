@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-computeenvironment-instancerequirements-syntax.json"></a>
 
-```
+```json
 {
   "[AllowedInstanceTypes](#cfn-batch-computeenvironment-instancerequirements-allowedinstancetypes)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-computeenvironment-instancerequirements-syntax.yaml"></a>
 
-```
+```yaml
   [AllowedInstanceTypes](#cfn-batch-computeenvironment-instancerequirements-allowedinstancetypes): {{
     - String}}
 ```

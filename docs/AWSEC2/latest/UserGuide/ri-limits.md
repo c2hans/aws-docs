@@ -44,7 +44,7 @@ You can view how many Reserved Instances you have purchased by using the Amazon 
 **To view the number of Reserved Instances you have purchased**
 Use the [ describe-reserved-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-reserved-instances.html) command and specify the ID of the Reserved Instance configuration.
 
-```
+```bash
 aws ec2 describe-reserved-instances \
     --reserved-instances-ids {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --output table
@@ -52,7 +52,7 @@ aws ec2 describe-reserved-instances \
 
 The following is example output. The `InstanceCount` field indicates that there are 10 Reserved Instances for this configuration.
 
-```
+```bash
 -------------------------------------------------------------------
 |                    DescribeReservedInstances                    |
 +-----------------------------------------------------------------+
@@ -87,7 +87,7 @@ The following is example output. The `InstanceCount` field indicates that there 
 **To view the number of Reserved Instances you have purchased**
 Use the [ Get-EC2ReservedInstance](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2ReservedInstance.html) Cmdlet and specify the ID of the Reserved Instance configuration.
 
-```
+```PowerShell
 Get-EC2ReservedInstance -ReservedInstancesId {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 

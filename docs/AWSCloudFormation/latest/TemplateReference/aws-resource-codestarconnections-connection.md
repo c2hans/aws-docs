@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-codestarconnections-connection-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CodeStarConnections::Connection",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-codestarconnections-connection-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CodeStarConnections::Connection
 Properties:
   [ConnectionName](#cfn-codestarconnections-connection-connectionname): {{String}}
@@ -124,7 +124,7 @@ The following example creates a connection with Bitbucket.
 #### JSON
 <a name="aws-resource-codestarconnections-connection--examples--Bitbucket_Connection_Configuration--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -148,7 +148,7 @@ The following example creates a connection with Bitbucket.
 #### YAML
 <a name="aws-resource-codestarconnections-connection--examples--Bitbucket_Connection_Configuration--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   SampleConnection:
@@ -169,7 +169,7 @@ The following example creates a connection with GitHub Enterprise Server.
 #### JSON
 <a name="aws-resource-codestarconnections-connection--examples--GitHub_Enterprise_Server_Connection_Configuration--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -194,7 +194,7 @@ The following example creates a connection with GitHub Enterprise Server.
 #### YAML
 <a name="aws-resource-codestarconnections-connection--examples--GitHub_Enterprise_Server_Connection_Configuration--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   SampleConnection:

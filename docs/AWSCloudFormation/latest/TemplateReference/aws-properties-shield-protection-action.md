@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-shield-protection-action-syntax.json"></a>
 
-```
+```json
 {
   "[Block](#cfn-shield-protection-action-block)" : {{Json}},
   "[Count](#cfn-shield-protection-action-count)" : {{Json}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-shield-protection-action-syntax.yaml"></a>
 
-```
+```yaml
   [Block](#cfn-shield-protection-action-block): {{Json}}
   [Count](#cfn-shield-protection-action-count): {{Json}}
 ```

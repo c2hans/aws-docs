@@ -36,7 +36,7 @@ You can create an interface VPC endpoint using the AWS Management Console or the
 
 To create an endpoint using the AWS CLI:
 
-```
+```bash
 aws ec2 create-vpc-endpoint \
   --vpc-id <your-vpc-id> \
   --service-name com.amazonaws.<region>.athena.sessions \
@@ -59,7 +59,7 @@ For more information, see [Controlling access to services with VPC endpoints](ht
 
 The following example allows only a specific IAM role to generate session endpoint URLs:
 
-```
+```json
 {
   "Statement": [
     {

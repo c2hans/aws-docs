@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-cluster-scheduledupdateconfig-syntax.json"></a>
 
-```
+```json
 {
   "[DeploymentConfig](#cfn-sagemaker-cluster-scheduledupdateconfig-deploymentconfig)" : {{DeploymentConfig}},
   "[ScheduleExpression](#cfn-sagemaker-cluster-scheduledupdateconfig-scheduleexpression)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-cluster-scheduledupdateconfig-syntax.yaml"></a>
 
-```
+```yaml
   [DeploymentConfig](#cfn-sagemaker-cluster-scheduledupdateconfig-deploymentconfig): {{
     DeploymentConfig}}
   [ScheduleExpression](#cfn-sagemaker-cluster-scheduledupdateconfig-scheduleexpression): {{String}}

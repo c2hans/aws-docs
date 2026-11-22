@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-launchtemplate-instancemarketoptions-syntax.json"></a>
 
-```
+```json
 {
   "[MarketType](#cfn-ec2-launchtemplate-instancemarketoptions-markettype)" : {{String}},
   "[SpotOptions](#cfn-ec2-launchtemplate-instancemarketoptions-spotoptions)" : {{SpotOptions}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-launchtemplate-instancemarketoptions-syntax.yaml"></a>
 
-```
+```yaml
   [MarketType](#cfn-ec2-launchtemplate-instancemarketoptions-markettype): {{String}}
   [SpotOptions](#cfn-ec2-launchtemplate-instancemarketoptions-spotoptions): {{
     SpotOptions}}

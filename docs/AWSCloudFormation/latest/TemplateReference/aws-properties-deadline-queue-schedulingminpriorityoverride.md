@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-deadline-queue-schedulingminpriorityoverride-syntax.json"></a>
 
-```
+```json
 {
   "[AlwaysScheduleLast](#cfn-deadline-queue-schedulingminpriorityoverride-alwaysschedulelast)" : {{Json}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-deadline-queue-schedulingminpriorityoverride-syntax.yaml"></a>
 
-```
+```yaml
   [AlwaysScheduleLast](#cfn-deadline-queue-schedulingminpriorityoverride-alwaysschedulelast): {{Json}}
 ```
 

@@ -149,7 +149,7 @@ This example shows sample requests and a sample response for the `ListConnectorE
 #### Sample Request
 <a name="API_ListConnectorEntities_Example_1_Request"></a>
 
-```
+```json
 {
   "connectorType": "Slack",
   "connectorProfileName": "vmSlackProfile"
@@ -159,7 +159,7 @@ This example shows sample requests and a sample response for the `ListConnectorE
 #### Sample Request
 <a name="API_ListConnectorEntities_Example_1_Request"></a>
 
-```
+```json
 {
   "connectorProfileName": "vmSlackProfile"
 }
@@ -168,7 +168,7 @@ This example shows sample requests and a sample response for the `ListConnectorE
 #### Sample Response
 <a name="API_ListConnectorEntities_Example_1_Response"></a>
 
-```
+```json
 {
   "connectorEntityMap":
   {
@@ -184,7 +184,7 @@ This example shows sample requests and a sample response for the `ListConnectorE
 #### Sample Request
 <a name="API_ListConnectorEntities_Example_1_Request"></a>
 
-```
+```json
 {
   "connectorProfileName": "vmSlackProfile",
   "connectorType": "Slack",
@@ -195,7 +195,7 @@ This example shows sample requests and a sample response for the `ListConnectorE
 #### Sample Response
 <a name="API_ListConnectorEntities_Example_1_Response"></a>
 
-```
+```json
 {
   "connectorEntityMap":
   {

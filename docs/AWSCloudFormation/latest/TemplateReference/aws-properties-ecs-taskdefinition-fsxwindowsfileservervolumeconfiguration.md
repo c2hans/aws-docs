@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskdefinition-fsxwindowsfileservervolumeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AuthorizationConfig](#cfn-ecs-taskdefinition-fsxwindowsfileservervolumeconfiguration-authorizationconfig)" : {{FSxAuthorizationConfig}},
   "[FileSystemId](#cfn-ecs-taskdefinition-fsxwindowsfileservervolumeconfiguration-filesystemid)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskdefinition-fsxwindowsfileservervolumeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AuthorizationConfig](#cfn-ecs-taskdefinition-fsxwindowsfileservervolumeconfiguration-authorizationconfig): {{
     FSxAuthorizationConfig}}
   [FileSystemId](#cfn-ecs-taskdefinition-fsxwindowsfileservervolumeconfiguration-filesystemid): {{String}}

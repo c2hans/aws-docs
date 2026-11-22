@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-personalize-metricattribution-metricsoutputconfig-syntax.json"></a>
 
-```
+```json
 {
   "[RoleArn](#cfn-personalize-metricattribution-metricsoutputconfig-rolearn)" : {{String}},
   "[S3DataDestination](#cfn-personalize-metricattribution-metricsoutputconfig-s3datadestination)" : {{S3DataDestination}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-personalize-metricattribution-metricsoutputconfig-syntax.yaml"></a>
 
-```
+```yaml
   [RoleArn](#cfn-personalize-metricattribution-metricsoutputconfig-rolearn): {{String}}
   [S3DataDestination](#cfn-personalize-metricattribution-metricsoutputconfig-s3datadestination): {{
     S3DataDestination}}

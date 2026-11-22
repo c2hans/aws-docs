@@ -9,7 +9,7 @@ Analyzes an existing table named `table_name` to generate the query that created
 ## Synopsis
 <a name="synopsis"></a>
 
-```
+```sql
 SHOW CREATE TABLE [db_name.]table_name
 ```
 
@@ -23,11 +23,11 @@ The table name is required.
 ## Examples
 <a name="examples"></a>
 
-```
+```sql
 SHOW CREATE TABLE orderclickstoday;
 ```
 
-```
+```sql
 SHOW CREATE TABLE `salesdata.orderclickstoday`;
 ```
 

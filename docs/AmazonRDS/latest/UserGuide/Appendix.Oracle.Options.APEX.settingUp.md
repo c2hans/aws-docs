@@ -62,7 +62,7 @@ After you have installed the `APEX` or `APEX-DEV` options your DB instance, make
 
 You can do this by using the Oracle SQL\*Plus command line utility. Connect to your DB instance as the master user, and issue the following commands. Replace `new_password` with a password of your choice.
 
-```
+```sql
 1. ALTER USER APEX_PUBLIC_USER IDENTIFIED BY {{new_password}};
 2. ALTER USER APEX_PUBLIC_USER ACCOUNT UNLOCK;
 ```
@@ -81,7 +81,7 @@ Configuration isn't required for Oracle APEX version 4.1.1.v1. For this Oracle A
 
 The following command runs the stored procedure.
 
-```
+```sql
 1. EXEC rdsadmin.rdsadmin_run_apex_rest_config('{{apex_listener_password}}', '{{apex_rest_public_user_password}}');
 ```
 
@@ -98,13 +98,13 @@ Before you can install ORDS, you need to create a nonprivileged OS user, and the
 
 1. Create a nonprivileged OS user to own the listener installation. The following command creates a new user named *apexuser*.
 
-   ```
+   ```bash
    useradd -d /home/apexuser {{apexuser}}
    ```
 
    The following command assigns a password to the new user.
 
-   ```
+   ```bash
    passwd apexuser;
    ```
 
@@ -143,13 +143,13 @@ Before you can install Oracle APEX Listener, you need to create a nonprivileged 
 
 1. Create a nonprivileged OS user to own the listener installation. The following command creates a new user named *apexuser*.
 
-   ```
+   ```bash
    useradd -d /home/apexuser {{apexuser}}
    ```
 
    The following command assigns a password to the new user.
 
-   ```
+   ```bash
    passwd apexuser;
    ```
 
@@ -217,7 +217,7 @@ Before you can use Oracle APEX, you need to download the `apex.war` file, use Ja
 
 1. Set a password for the Oracle APEX `admin` user. To do this, use SQL\*Plus to connect to your DB instance as the master user, and then run the following commands.
 
-   ```
+   ```sql
    1. EXEC rdsadmin.rdsadmin_util.grant_apex_admin_role;
    2. grant APEX_ADMINISTRATOR_ROLE to {{master}};
    3. @/home/apexuser/apex/apxchpwd.sql

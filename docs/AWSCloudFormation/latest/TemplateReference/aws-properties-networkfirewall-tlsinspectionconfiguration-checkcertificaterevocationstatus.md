@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkfirewall-tlsinspectionconfiguration-checkcertificaterevocationstatus-syntax.json"></a>
 
-```
+```json
 {
   "[RevokedStatusAction](#cfn-networkfirewall-tlsinspectionconfiguration-checkcertificaterevocationstatus-revokedstatusaction)" : {{String}},
   "[UnknownStatusAction](#cfn-networkfirewall-tlsinspectionconfiguration-checkcertificaterevocationstatus-unknownstatusaction)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkfirewall-tlsinspectionconfiguration-checkcertificaterevocationstatus-syntax.yaml"></a>
 
-```
+```yaml
   [RevokedStatusAction](#cfn-networkfirewall-tlsinspectionconfiguration-checkcertificaterevocationstatus-revokedstatusaction): {{String}}
   [UnknownStatusAction](#cfn-networkfirewall-tlsinspectionconfiguration-checkcertificaterevocationstatus-unknownstatusaction): {{String}}
 ```

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-gameservergroup-autoscalingpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[EstimatedInstanceWarmup](#cfn-gamelift-gameservergroup-autoscalingpolicy-estimatedinstancewarmup)" : {{Number}},
   "[TargetTrackingConfiguration](#cfn-gamelift-gameservergroup-autoscalingpolicy-targettrackingconfiguration)" : {{TargetTrackingConfiguration}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-gameservergroup-autoscalingpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [EstimatedInstanceWarmup](#cfn-gamelift-gameservergroup-autoscalingpolicy-estimatedinstancewarmup): {{Number}}
   [TargetTrackingConfiguration](#cfn-gamelift-gameservergroup-autoscalingpolicy-targettrackingconfiguration): {{
     TargetTrackingConfiguration}}

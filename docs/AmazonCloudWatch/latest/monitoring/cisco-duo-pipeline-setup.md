@@ -8,7 +8,7 @@ Collects log data from Cisco Duo using HMAC authentication through the Duo Admin
 
 Configure the Cisco Duo source with the following parameters:
 
-```
+```yaml
 source:
   cisco_duo:
     api_host: "api-XXXXXXXX.duosecurity.com"

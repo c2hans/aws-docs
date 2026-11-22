@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-emr-cluster-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EMR::Cluster",
   "Properties" : {
@@ -57,7 +57,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-emr-cluster-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EMR::Cluster
 Properties:
   [AdditionalInfo](#cfn-emr-cluster-additionalinfo): {{Json}}
@@ -335,7 +335,7 @@ The following example template specifies a cluster using a custom Amazon Linux A
 #### JSON
 <a name="aws-resource-emr-cluster--examples--Create_a_cluster_using_a_custom_AMI_for_EC2_instances--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Parameters" : {
@@ -466,7 +466,7 @@ The following example template specifies a cluster using a custom Amazon Linux A
 #### YAML
 <a name="aws-resource-emr-cluster--examples--Create_a_cluster_using_a_custom_AMI_for_EC2_instances--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:
   CustomAmiId:
@@ -563,7 +563,7 @@ The following example template enables you to specify the size of the EBS root v
 #### JSON
 <a name="aws-resource-emr-cluster--examples--Create_a_cluster_and_specify_the_root_volume_size_of_EC2_instances--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Parameters" : {
@@ -688,7 +688,7 @@ The following example template enables you to specify the size of the EBS root v
 #### YAML
 <a name="aws-resource-emr-cluster--examples--Create_a_cluster_and_specify_the_root_volume_size_of_EC2_instances--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:
   InstanceType:
@@ -781,7 +781,7 @@ The following example template enables you to specify the Kerberos authenticatio
 #### JSON
 <a name="aws-resource-emr-cluster--examples--Create_a_cluster_with_Kerberos_authentication--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Parameters" : {
@@ -967,7 +967,7 @@ The following example template enables you to specify the Kerberos authenticatio
 #### YAML
 <a name="aws-resource-emr-cluster--examples--Create_a_cluster_with_Kerberos_authentication--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:
   CrossRealmTrustPrincipalPassword:
@@ -1108,7 +1108,7 @@ The following example template enables you to specify the managed scaling policy
 #### JSON
 <a name="aws-resource-emr-cluster--examples--Create_a_cluster_with_a_managed_scaling_policy--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Parameters" : {
@@ -1192,7 +1192,7 @@ The following example template enables you to specify the managed scaling policy
 #### YAML
 <a name="aws-resource-emr-cluster--examples--Create_a_cluster_with_a_managed_scaling_policy--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:
   InstanceType:
@@ -1257,7 +1257,7 @@ The following example template enables you to create task instance groups for an
 #### JSON
 <a name="aws-resource-emr-cluster--examples--Create_a_cluster_with_task_instance_groups--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Parameters" : {
@@ -1385,7 +1385,7 @@ The following example template enables you to create task instance groups for an
 #### YAML
 <a name="aws-resource-emr-cluster--examples--Create_a_cluster_with_task_instance_groups--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:
   InstanceType:
@@ -1479,7 +1479,7 @@ The following example template enables you to create a task instance fleet for a
 #### JSON
 <a name="aws-resource-emr-cluster--examples--Create_a_cluster_with_a_task_instance_fleet--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Parameters" : {
@@ -1618,7 +1618,7 @@ The following example template enables you to create a task instance fleet for a
 #### YAML
 <a name="aws-resource-emr-cluster--examples--Create_a_cluster_with_a_task_instance_fleet--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:
   InstanceType:

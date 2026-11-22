@@ -8,12 +8,12 @@ Unsubscribes the callback function from the network connection status change eve
 
  **Signature**
 
-```
+```typescript
 offNetworkConnectionStatusChanged(handler: NetworkConnectionStatusChangedHandler)
 ```
 
  **Usage**
 
-```
+```typescript
 agentClient.offNetworkConnectionStatusChanged(handler);
 ```

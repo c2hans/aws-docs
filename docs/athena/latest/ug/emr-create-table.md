@@ -8,7 +8,7 @@ The following example creates a basic table, `myemrlogs`, based on log files sav
 
 For information about creating a partitioned table to potentially improve query performance and reduce data transfer, see [Create and query a partitioned table based on Amazon EMR logs](emr-create-table-partitioned.md).
 
-```
+```sql
 CREATE EXTERNAL TABLE `{{myemrlogs}}`(
   `data` string COMMENT 'from deserializer')
 ROW FORMAT DELIMITED
@@ -29,7 +29,7 @@ The following example queries can be run on the `myemrlogs` table created by the
 
 **Example – Query step logs for occurrences of ERROR, WARN, INFO, EXCEPTION, FATAL, or DEBUG**
 
-```
+```sql
 SELECT data,
         "$PATH"
 FROM "default"."myemrlogs"
@@ -39,7 +39,7 @@ WHERE regexp_like("$PATH",'s-86URH188Z6B1')
 
 **Example – Query a specific instance log, i-00b3c0a839ece0a9c, for ERROR, WARN, INFO, EXCEPTION, FATAL, or DEBUG**
 
-```
+```sql
 SELECT "data",
         "$PATH" AS filepath
 FROM "default"."myemrlogs"
@@ -70,7 +70,7 @@ WHERE regexp_like("$PATH",'namenode')
 
 **Example – Query all logs by date and hour for ERROR, WARN, INFO, EXCEPTION, FATAL, or DEBUG**
 
-```
+```sql
 SELECT distinct("$PATH") AS filepath
 FROM "default"."myemrlogs"
 WHERE regexp_like("$PATH",'2019-07-23-10')

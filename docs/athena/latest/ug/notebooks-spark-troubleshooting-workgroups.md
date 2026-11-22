@@ -18,7 +18,7 @@ Add the following example trust policy. The policy includes a confused deputy ch
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -50,7 +50,7 @@ Add a permissions policy like the following default policy for notebook enabled 
 
 ****
 
-```
+```json
 { "Version":"2012-10-17",		 	 	  "Statement": [ { "Effect": "Allow", "Action": [
     "s3:PutObject", "s3:ListBucket", "s3:DeleteObject", "s3:GetObject" ], "Resource": [
         "arn:aws:s3:::{{amzn-s3-demo-bucket}}/*",

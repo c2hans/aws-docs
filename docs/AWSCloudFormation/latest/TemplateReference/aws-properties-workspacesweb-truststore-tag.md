@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspacesweb-truststore-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-workspacesweb-truststore-tag-key)" : {{String}},
   "[Value](#cfn-workspacesweb-truststore-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspacesweb-truststore-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-workspacesweb-truststore-tag-key): {{String}}
   [Value](#cfn-workspacesweb-truststore-tag-value): {{String}}
 ```

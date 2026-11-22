@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-route53-recordsetgroup-recordset-syntax.json"></a>
 
-```
+```json
 {
   "[AliasTarget](#cfn-route53-recordsetgroup-recordset-aliastarget)" : {{AliasTarget}},
   "[CidrRoutingConfig](#cfn-route53-recordsetgroup-recordset-cidrroutingconfig)" : {{CidrRoutingConfig}},
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-route53-recordsetgroup-recordset-syntax.yaml"></a>
 
-```
+```yaml
   [AliasTarget](#cfn-route53-recordsetgroup-recordset-aliastarget): {{
     AliasTarget}}
   [CidrRoutingConfig](#cfn-route53-recordsetgroup-recordset-cidrroutingconfig): {{

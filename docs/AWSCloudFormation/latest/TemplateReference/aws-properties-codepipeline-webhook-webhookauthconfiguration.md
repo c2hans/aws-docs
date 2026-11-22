@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codepipeline-webhook-webhookauthconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AllowedIPRange](#cfn-codepipeline-webhook-webhookauthconfiguration-allowediprange)" : {{String}},
   "[SecretToken](#cfn-codepipeline-webhook-webhookauthconfiguration-secrettoken)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codepipeline-webhook-webhookauthconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AllowedIPRange](#cfn-codepipeline-webhook-webhookauthconfiguration-allowediprange): {{String}}
   [SecretToken](#cfn-codepipeline-webhook-webhookauthconfiguration-secrettoken): {{String}}
 ```

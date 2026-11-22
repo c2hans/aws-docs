@@ -68,7 +68,7 @@ If the action is successful, the service sends back an HTTP 200 response with an
 
 This request deletes the Outposts bucket named `example-outpost-bucket`.
 
-```
+```HTTP
 DELETE /v20180820/bucket/example-outpost-bucket/ HTTP/1.1
 Host: s3-outposts.<Region>.amazonaws.com
 x-amz-outpost-id: op-01ac5d28a6a232904

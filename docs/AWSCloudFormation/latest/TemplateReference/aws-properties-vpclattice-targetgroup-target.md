@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-vpclattice-targetgroup-target-syntax.json"></a>
 
-```
+```json
 {
   "[Id](#cfn-vpclattice-targetgroup-target-id)" : {{String}},
   "[Port](#cfn-vpclattice-targetgroup-target-port)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-vpclattice-targetgroup-target-syntax.yaml"></a>
 
-```
+```yaml
   [Id](#cfn-vpclattice-targetgroup-target-id): {{String}}
   [Port](#cfn-vpclattice-targetgroup-target-port): {{Integer}}
 ```

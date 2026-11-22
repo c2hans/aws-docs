@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentplacementstatus-syntax.json"></a>
 
-```
+```json
 {
   "[CurrentCopyCount](#cfn-sagemaker-inferencecomponent-inferencecomponentplacementstatus-currentcopycount)" : {{Integer}},
   "[InstanceType](#cfn-sagemaker-inferencecomponent-inferencecomponentplacementstatus-instancetype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentplacementstatus-syntax.yaml"></a>
 
-```
+```yaml
   [CurrentCopyCount](#cfn-sagemaker-inferencecomponent-inferencecomponentplacementstatus-currentcopycount): {{Integer}}
   [InstanceType](#cfn-sagemaker-inferencecomponent-inferencecomponentplacementstatus-instancetype): {{String}}
 ```

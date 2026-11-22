@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apprunner-vpcingressconnection-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-apprunner-vpcingressconnection-tag-key)" : {{String}},
   "[Value](#cfn-apprunner-vpcingressconnection-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apprunner-vpcingressconnection-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-apprunner-vpcingressconnection-tag-key): {{String}}
   [Value](#cfn-apprunner-vpcingressconnection-tag-value): {{String}}
 ```

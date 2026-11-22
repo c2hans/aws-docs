@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-playbackconfiguration-bumper-syntax.json"></a>
 
-```
+```json
 {
   "[EndUrl](#cfn-mediatailor-playbackconfiguration-bumper-endurl)" : {{String}},
   "[StartUrl](#cfn-mediatailor-playbackconfiguration-bumper-starturl)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-playbackconfiguration-bumper-syntax.yaml"></a>
 
-```
+```yaml
   [EndUrl](#cfn-mediatailor-playbackconfiguration-bumper-endurl): {{String}}
   [StartUrl](#cfn-mediatailor-playbackconfiguration-bumper-starturl): {{String}}
 ```

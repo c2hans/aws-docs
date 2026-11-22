@@ -8,7 +8,7 @@ Collects audit logs from PingIdentity PingOne using OAuth2 authentication.
 
 Configure the PingIdentity PingOne source with the following parameters:
 
-```
+```yaml
 source:
   pingidentity_pingone:
     range: "P7D"

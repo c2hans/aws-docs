@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ivs-recordingconfiguration-renditionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Renditions](#cfn-ivs-recordingconfiguration-renditionconfiguration-renditions)" : {{[ String, ... ]}},
   "[RenditionSelection](#cfn-ivs-recordingconfiguration-renditionconfiguration-renditionselection)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ivs-recordingconfiguration-renditionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Renditions](#cfn-ivs-recordingconfiguration-renditionconfiguration-renditions): {{
     - String}}
   [RenditionSelection](#cfn-ivs-recordingconfiguration-renditionconfiguration-renditionselection): {{String}}

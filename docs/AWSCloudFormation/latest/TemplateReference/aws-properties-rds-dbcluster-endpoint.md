@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rds-dbcluster-endpoint-syntax.json"></a>
 
-```
+```json
 {
   "[Address](#cfn-rds-dbcluster-endpoint-address)" : {{String}},
   "[Port](#cfn-rds-dbcluster-endpoint-port)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rds-dbcluster-endpoint-syntax.yaml"></a>
 
-```
+```yaml
   [Address](#cfn-rds-dbcluster-endpoint-address): {{String}}
   [Port](#cfn-rds-dbcluster-endpoint-port): {{String}}
 ```

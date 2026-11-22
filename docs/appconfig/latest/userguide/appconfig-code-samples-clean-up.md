@@ -17,7 +17,7 @@ If you ran one or more of the code samples in this section, we recommend you use
 ------
 #### [ Java ]
 
-```
+```java
 /*
     This sample provides cleanup code that deletes all the AWS AppConfig resources created in the samples above.
 
@@ -69,7 +69,7 @@ If you ran one or more of the code samples in this section, we recommend you use
 ------
 #### [ Python ]
 
-```
+```python
 # this sample provides cleanup code that deletes all the AWS AppConfig resources created in the samples above.
 #
 # WARNING: this code will permanently delete the given application and all of its sub-resources, including
@@ -119,7 +119,7 @@ print(f"deleted application {application['Name']} (id={application['Id']})")
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 // this sample provides cleanup code that deletes all the AWS AppConfig resources created in the samples above.
 
 // WARNING: this code will permanently delete the given application and all of its sub-resources, including

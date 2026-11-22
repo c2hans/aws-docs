@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-agentspace-preferences-syntax.json"></a>
 
-```
+```json
 {
   "[ElevatedActionsEnabled](#cfn-devopsagent-agentspace-preferences-elevatedactionsenabled)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-agentspace-preferences-syntax.yaml"></a>
 
-```
+```yaml
   [ElevatedActionsEnabled](#cfn-devopsagent-agentspace-preferences-elevatedactionsenabled): {{Boolean}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisvideo-signalingchannel-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-kinesisvideo-signalingchannel-tag-key)" : {{String}},
   "[Value](#cfn-kinesisvideo-signalingchannel-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisvideo-signalingchannel-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-kinesisvideo-signalingchannel-tag-key): {{String}}
   [Value](#cfn-kinesisvideo-signalingchannel-tag-value): {{String}}
 ```

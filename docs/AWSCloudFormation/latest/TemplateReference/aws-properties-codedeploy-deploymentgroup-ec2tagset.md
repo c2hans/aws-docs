@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codedeploy-deploymentgroup-ec2tagset-syntax.json"></a>
 
-```
+```json
 {
   "[Ec2TagSetList](#cfn-codedeploy-deploymentgroup-ec2tagset-ec2tagsetlist)" : {{[ EC2TagSetListObject, ... ]}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codedeploy-deploymentgroup-ec2tagset-syntax.yaml"></a>
 
-```
+```yaml
   [Ec2TagSetList](#cfn-codedeploy-deploymentgroup-ec2tagset-ec2tagsetlist): {{
     - EC2TagSetListObject}}
 ```

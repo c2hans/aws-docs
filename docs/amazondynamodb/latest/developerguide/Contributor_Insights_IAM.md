@@ -24,7 +24,7 @@ The following IAM policy grants permissions to enable or disable CloudWatch Cont
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -54,7 +54,7 @@ The following IAM policy grants permissions to enable or disable CloudWatch Cont
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -98,7 +98,7 @@ The following IAM policy grants permissions to retrieve CloudWatch Contributor I
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -125,7 +125,7 @@ The following IAM policy grants permissions to allow the `ListContributorInsight
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

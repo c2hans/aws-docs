@@ -45,7 +45,7 @@ Example destination registry policy:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -69,7 +69,7 @@ Example destination registry policy:
 
 If the source registry's replication rule has the `deleteReplication` setting enabled, the destination registry policy must also grant the `ecr:ReplicateImageDelete` action:
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [

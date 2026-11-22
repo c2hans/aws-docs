@@ -65,7 +65,7 @@ Enables CORS by returning the correct headers.
 #### POST schema
 <a name="backend-appid-api-backendenvironmentname-getmodels-request-body-post-example"></a>
 
-```
+```json
 {
   "resourceName": "string"
 }
@@ -77,7 +77,7 @@ Enables CORS by returning the correct headers.
 #### GetBackendAPIModelsResponse schema
 <a name="backend-appid-api-backendenvironmentname-getmodels-response-body-getbackendapimodelsresponse-example"></a>
 
-```
+```json
 {
   "models": "string",
   "modelIntrospectionSchema": "string",
@@ -88,7 +88,7 @@ Enables CORS by returning the correct headers.
 #### BadRequestException schema
 <a name="backend-appid-api-backendenvironmentname-getmodels-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -97,7 +97,7 @@ Enables CORS by returning the correct headers.
 #### NotFoundException schema
 <a name="backend-appid-api-backendenvironmentname-getmodels-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -107,7 +107,7 @@ Enables CORS by returning the correct headers.
 #### LimitExceededException schema
 <a name="backend-appid-api-backendenvironmentname-getmodels-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"
@@ -117,7 +117,7 @@ Enables CORS by returning the correct headers.
 #### InternalServiceException schema
 <a name="backend-appid-api-backendenvironmentname-getmodels-response-body-internalserviceexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

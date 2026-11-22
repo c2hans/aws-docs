@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisanalytics-application-inputprocessingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[InputLambdaProcessor](#cfn-kinesisanalytics-application-inputprocessingconfiguration-inputlambdaprocessor)" : {{InputLambdaProcessor}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisanalytics-application-inputprocessingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [InputLambdaProcessor](#cfn-kinesisanalytics-application-inputprocessingconfiguration-inputlambdaprocessor): {{
     InputLambdaProcessor}}
 ```

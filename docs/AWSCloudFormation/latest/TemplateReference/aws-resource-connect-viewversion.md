@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-connect-viewversion-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Connect::ViewVersion",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-connect-viewversion-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Connect::ViewVersion
 Properties:
   [VersionDescription](#cfn-connect-viewversion-versiondescription): {{String}}

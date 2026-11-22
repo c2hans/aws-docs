@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-price-syntax.json"></a>
 
-```
+```json
 {
   "[Amount](#cfn-wafv2-webacl-price-amount)" : {{String}},
   "[Currency](#cfn-wafv2-webacl-price-currency)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-price-syntax.yaml"></a>
 
-```
+```yaml
   [Amount](#cfn-wafv2-webacl-price-amount): {{String}}
   [Currency](#cfn-wafv2-webacl-price-currency): {{String}}
 ```

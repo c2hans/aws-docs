@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ssm-association-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SSM::Association",
   "Properties" : {
@@ -46,7 +46,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ssm-association-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SSM::Association
 Properties:
   [ApplyOnlyAtCronInterval](#cfn-ssm-association-applyonlyatcroninterval): {{Boolean}}
@@ -272,7 +272,7 @@ The following example creates an association that uses the AWS-RunShellScript SS
 #### JSON
 <a name="aws-resource-ssm-association--examples--Create_an_association_for_a_specific_instance--json"></a>
 
-```
+```json
 {
     "Resources": {
         "SpecificInstanceIdAssociation": {
@@ -304,7 +304,7 @@ The following example creates an association that uses the AWS-RunShellScript SS
 #### YAML
 <a name="aws-resource-ssm-association--examples--Create_an_association_for_a_specific_instance--yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   SpecificInstanceIdAssociation:
@@ -330,7 +330,7 @@ The following example creates an association that uses the AWS-UpdateSSMAgent SS
 #### JSON
 <a name="aws-resource-ssm-association--examples--Create_an_association_for_all_managed_instances_in_an--json"></a>
 
-```
+```json
 {
     "Resources": {
         "AllInstanceIdsAssociation": {
@@ -356,7 +356,7 @@ The following example creates an association that uses the AWS-UpdateSSMAgent SS
 #### YAML
 <a name="aws-resource-ssm-association--examples--Create_an_association_for_all_managed_instances_in_an--yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   AllInstanceIdsAssociation:
@@ -379,7 +379,7 @@ The following example creates an association that uses the AWS-UpdateSSMAgent SS
 #### JSON
 <a name="aws-resource-ssm-association--examples--Create_an_association_for_a_specific_tag--json"></a>
 
-```
+```json
 {
     "Resources": {
         "TaggedInstancesAssociation": {
@@ -405,7 +405,7 @@ The following example creates an association that uses the AWS-UpdateSSMAgent SS
 #### YAML
 <a name="aws-resource-ssm-association--examples--Create_an_association_for_a_specific_tag--yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   TaggedInstancesAssociation:
@@ -431,7 +431,7 @@ This example specifies the following Amazon Resource Name (ARN): `arn:${AWS::Par
 #### YAML
 <a name="aws-resource-ssm-association--examples--Create_an_association_that_associates_an_automation_document_with_an_instance--yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   AutomationExecutionRole:
@@ -470,7 +470,7 @@ The following example creates an association that uses rate controls. The associ
 #### JSON
 <a name="aws-resource-ssm-association--examples--Create_an_association_that_uses_rate_controls_and_sends_log_output_to--json"></a>
 
-```
+```json
 {
     "Resources": {
         "RateControlAssociation": {
@@ -502,7 +502,7 @@ The following example creates an association that uses rate controls. The associ
 #### YAML
 <a name="aws-resource-ssm-association--examples--Create_an_association_that_uses_rate_controls_and_sends_log_output_to--yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   RateControlAssociation:
@@ -529,7 +529,7 @@ The following example creates an association that uses Ansible and Systems Manag
 #### YAML
 <a name="aws-resource-ssm-association--examples--Create_an_association_that_works_with_Ansible--yaml"></a>
 
-```
+```yaml
 ---
 Description: "Deploy single Amazon Linux 2 EC2 instance"
 Parameters:
@@ -652,7 +652,7 @@ The following example creates an association that runs a bash script. Target is 
 #### YAML
 <a name="aws-resource-ssm-association--examples--Create_an_association_that_runs_a_bash_script--yaml"></a>
 
-```
+```yaml
 ---
 Description: "Deploy single Amazon Linux 2 EC2 instance and install Nginx by a State Manager association"
 Parameters:
@@ -758,7 +758,7 @@ The following example creates an assocation that runs a bash script using State 
 #### YAML
 <a name="aws-resource-ssm-association--examples--Create_an_association_that_runs_a_bash_script_with_Automation--yaml"></a>
 
-```
+```yaml
 ---
 Description: "Deploy single Amazon Linux 2 EC2 instance"
 Parameters:

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-instance-hibernationoptions-syntax.json"></a>
 
-```
+```json
 {
   "[Configured](#cfn-ec2-instance-hibernationoptions-configured)" : {{Boolean}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-instance-hibernationoptions-syntax.yaml"></a>
 
-```
+```yaml
   [Configured](#cfn-ec2-instance-hibernationoptions-configured): {{Boolean}}
 ```
 

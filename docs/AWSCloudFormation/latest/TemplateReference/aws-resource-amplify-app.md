@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-amplify-app-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Amplify::App",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-amplify-app-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Amplify::App
 Properties:
   [AccessToken](#cfn-amplify-app-accesstoken): {{String}}

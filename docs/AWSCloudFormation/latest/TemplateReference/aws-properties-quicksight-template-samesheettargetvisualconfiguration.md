@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-samesheettargetvisualconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[TargetVisualOptions](#cfn-quicksight-template-samesheettargetvisualconfiguration-targetvisualoptions)" : {{String}},
   "[TargetVisuals](#cfn-quicksight-template-samesheettargetvisualconfiguration-targetvisuals)" : {{[ String, ... ]}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-samesheettargetvisualconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [TargetVisualOptions](#cfn-quicksight-template-samesheettargetvisualconfiguration-targetvisualoptions): {{String}}
   [TargetVisuals](#cfn-quicksight-template-samesheettargetvisualconfiguration-targetvisuals): {{
     - String}}

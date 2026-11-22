@@ -77,7 +77,7 @@ Creates a `RouteResponse` for a `Route`.
 #### POST schema
 <a name="apis-apiid-routes-routeid-routeresponses-request-body-post-example"></a>
 
-```
+```json
 {
   "routeResponseKey": "string",
   "responseParameters": {
@@ -94,7 +94,7 @@ Creates a `RouteResponse` for a `Route`.
 #### RouteResponses schema
 <a name="apis-apiid-routes-routeid-routeresponses-response-body-routeresponses-example"></a>
 
-```
+```json
 {
   "items": [
     {
@@ -114,7 +114,7 @@ Creates a `RouteResponse` for a `Route`.
 #### RouteResponse schema
 <a name="apis-apiid-routes-routeid-routeresponses-response-body-routeresponse-example"></a>
 
-```
+```json
 {
   "routeResponseId": "string",
   "routeResponseKey": "string",
@@ -129,7 +129,7 @@ Creates a `RouteResponse` for a `Route`.
 #### BadRequestException schema
 <a name="apis-apiid-routes-routeid-routeresponses-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -138,7 +138,7 @@ Creates a `RouteResponse` for a `Route`.
 #### NotFoundException schema
 <a name="apis-apiid-routes-routeid-routeresponses-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -148,7 +148,7 @@ Creates a `RouteResponse` for a `Route`.
 #### ConflictException schema
 <a name="apis-apiid-routes-routeid-routeresponses-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -157,7 +157,7 @@ Creates a `RouteResponse` for a `Route`.
 #### LimitExceededException schema
 <a name="apis-apiid-routes-routeid-routeresponses-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

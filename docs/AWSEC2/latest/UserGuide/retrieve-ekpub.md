@@ -15,7 +15,7 @@ Use the [get-instance-tpm-ek-pub](https://docs.aws.amazon.com/cli/latest/referen
 **Example 1**
 The following example gets the `rsa-2048` public endorsement key in `tpmt` format for the specified instance.
 
-```
+```bash
 aws ec2 get-instance-tpm-ek-pub \
     --instance-id {{i-1234567890abcdef0}} \
     --key-format tpmt \
@@ -24,7 +24,7 @@ aws ec2 get-instance-tpm-ek-pub \
 
 The following is the example output.
 
-```
+```json
 {
     "InstanceId": "i-01234567890abcdef",
     "KeyFormat": "tpmt",
@@ -41,7 +41,7 @@ The following is the example output.
 **Example 2**
 The following example gets the `rsa-2048` public endorsement key in `der` format for the specified instance.
 
-```
+```bash
 aws ec2 get-instance-tpm-ek-pub \
     --instance-id {{i-1234567890abcdef0}} \
     --key-format der \
@@ -50,7 +50,7 @@ aws ec2 get-instance-tpm-ek-pub \
 
 The following is the example output.
 
-```
+```json
 {
     "InstanceId": "i-1234567890abcdef0",
     "KeyFormat": "der",
@@ -73,7 +73,7 @@ Use the [Get-EC2InstanceTpmEkPub](https://docs.aws.amazon.com/powershell/latest/
 **Example 1**
 The following example gets the `rsa-2048` public endorsement key in `tpmt` format for the specified instance.
 
-```
+```powershell
 Get-EC2InstanceTpmEkPub `
     -InstanceId {{i-1234567890abcdef0}} `
     -KeyFormat tpmt `
@@ -83,7 +83,7 @@ Get-EC2InstanceTpmEkPub `
 **Example 2**
 The following example gets the `rsa-2048` public endorsement key in `der` format for the specified instance.
 
-```
+```powershell
 Get-EC2InstanceTpmEkPub `
     -InstanceId {{i-1234567890abcdef0}} `
     -KeyFormat der `

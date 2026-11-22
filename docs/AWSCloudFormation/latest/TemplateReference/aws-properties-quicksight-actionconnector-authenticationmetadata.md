@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-actionconnector-authenticationmetadata-syntax.json"></a>
 
-```
+```json
 {
   "[ApiKeyConnectionMetadata](#cfn-quicksight-actionconnector-authenticationmetadata-apikeyconnectionmetadata)" : {{APIKeyConnectionMetadata}},
   "[AuthorizationCodeGrantMetadata](#cfn-quicksight-actionconnector-authenticationmetadata-authorizationcodegrantmetadata)" : {{AuthorizationCodeGrantMetadata}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-actionconnector-authenticationmetadata-syntax.yaml"></a>
 
-```
+```yaml
   [ApiKeyConnectionMetadata](#cfn-quicksight-actionconnector-authenticationmetadata-apikeyconnectionmetadata): {{
     APIKeyConnectionMetadata}}
   [AuthorizationCodeGrantMetadata](#cfn-quicksight-actionconnector-authenticationmetadata-authorizationcodegrantmetadata): {{

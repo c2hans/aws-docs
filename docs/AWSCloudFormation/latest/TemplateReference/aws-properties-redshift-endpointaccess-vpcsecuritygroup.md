@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-redshift-endpointaccess-vpcsecuritygroup-syntax.json"></a>
 
-```
+```json
 {
   "[Status](#cfn-redshift-endpointaccess-vpcsecuritygroup-status)" : {{String}},
   "[VpcSecurityGroupId](#cfn-redshift-endpointaccess-vpcsecuritygroup-vpcsecuritygroupid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-redshift-endpointaccess-vpcsecuritygroup-syntax.yaml"></a>
 
-```
+```yaml
   [Status](#cfn-redshift-endpointaccess-vpcsecuritygroup-status): {{String}}
   [VpcSecurityGroupId](#cfn-redshift-endpointaccess-vpcsecuritygroup-vpcsecuritygroupid): {{String}}
 ```

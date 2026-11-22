@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-logdeliveryconfiguration-firehoseconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[StreamArn](#cfn-cognito-logdeliveryconfiguration-firehoseconfiguration-streamarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-logdeliveryconfiguration-firehoseconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [StreamArn](#cfn-cognito-logdeliveryconfiguration-firehoseconfiguration-streamarn): {{String}}
 ```
 

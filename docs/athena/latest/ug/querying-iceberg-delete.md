@@ -8,6 +8,6 @@ Athena Iceberg `DELETE` writes Iceberg position delete files to a table. This is
 
 The following example deletes rows from `iceberg_table` that have `c3` as the value for `category`.
 
-```
+```sql
 DELETE FROM iceberg_table WHERE category='c3'
 ```

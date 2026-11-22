@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-groundstation-dataflowendpointgroup-rangedconnectiondetails-syntax.json"></a>
 
-```
+```json
 {
   "[Mtu](#cfn-groundstation-dataflowendpointgroup-rangedconnectiondetails-mtu)" : {{Integer}},
   "[SocketAddress](#cfn-groundstation-dataflowendpointgroup-rangedconnectiondetails-socketaddress)" : {{RangedSocketAddress}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-groundstation-dataflowendpointgroup-rangedconnectiondetails-syntax.yaml"></a>
 
-```
+```yaml
   [Mtu](#cfn-groundstation-dataflowendpointgroup-rangedconnectiondetails-mtu): {{Integer}}
   [SocketAddress](#cfn-groundstation-dataflowendpointgroup-rangedconnectiondetails-socketaddress): {{
     RangedSocketAddress}}

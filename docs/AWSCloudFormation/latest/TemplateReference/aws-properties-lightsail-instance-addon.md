@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lightsail-instance-addon-syntax.json"></a>
 
-```
+```json
 {
   "[AddOnType](#cfn-lightsail-instance-addon-addontype)" : {{String}},
   "[AutoSnapshotAddOnRequest](#cfn-lightsail-instance-addon-autosnapshotaddonrequest)" : {{AutoSnapshotAddOn}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lightsail-instance-addon-syntax.yaml"></a>
 
-```
+```yaml
   [AddOnType](#cfn-lightsail-instance-addon-addontype): {{String}}
   [AutoSnapshotAddOnRequest](#cfn-lightsail-instance-addon-autosnapshotaddonrequest): {{
     AutoSnapshotAddOn}}

@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-smsvoice-phonenumber-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SMSVOICE::PhoneNumber",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-smsvoice-phonenumber-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SMSVOICE::PhoneNumber
 Properties:
   [DeletionProtectionEnabled](#cfn-smsvoice-phonenumber-deletionprotectionenabled): {{Boolean}}

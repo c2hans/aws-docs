@@ -34,7 +34,7 @@ The following instructions show how to edit the method request settings and how 
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [

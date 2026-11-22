@@ -8,13 +8,13 @@ Disconnects a specific participant from the contact.
 
  **Signature**
 
-```
+```typescript
 disconnectParticipant(participantId: string): Promise<void>
 ```
 
  **Usage**
 
-```
+```typescript
 await contactClient.disconnectParticipant("participant-456");
 console.log("Participant disconnected");
 ```
@@ -31,6 +31,6 @@ Requires an instance that is scoped to the contact that the participant belongs 
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

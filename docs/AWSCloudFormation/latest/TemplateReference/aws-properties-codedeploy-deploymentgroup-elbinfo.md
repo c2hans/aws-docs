@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codedeploy-deploymentgroup-elbinfo-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-codedeploy-deploymentgroup-elbinfo-name)" : {{String}}
 }
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codedeploy-deploymentgroup-elbinfo-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-codedeploy-deploymentgroup-elbinfo-name): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-grafana-workspace-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Grafana::Workspace",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-grafana-workspace-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Grafana::Workspace
 Properties:
   [AccountAccessType](#cfn-grafana-workspace-accountaccesstype): {{String}}
@@ -277,7 +277,7 @@ Create an Amazon Managed Grafana workspace using CloudFormation
 #### JSON
 <a name="aws-resource-grafana-workspace--examples--Create_a_workspace--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Amazon Grafana workspace stack",
@@ -376,7 +376,7 @@ Create an Amazon Managed Grafana workspace using CloudFormation
 #### YAML
 <a name="aws-resource-grafana-workspace--examples--Create_a_workspace--yaml"></a>
 
-```
+```yaml
 Description: Amazon Grafana workspace stack
 Resources:
   AmazonGrafanaWorkspaceIAMRole:

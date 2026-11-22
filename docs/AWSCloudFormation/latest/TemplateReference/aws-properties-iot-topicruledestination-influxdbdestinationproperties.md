@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicruledestination-influxdbdestinationproperties-syntax.json"></a>
 
-```
+```json
 {
   "[Endpoint](#cfn-iot-topicruledestination-influxdbdestinationproperties-endpoint)" : {{String}},
   "[InfluxDBVersion](#cfn-iot-topicruledestination-influxdbdestinationproperties-influxdbversion)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicruledestination-influxdbdestinationproperties-syntax.yaml"></a>
 
-```
+```yaml
   [Endpoint](#cfn-iot-topicruledestination-influxdbdestinationproperties-endpoint): {{String}}
   [InfluxDBVersion](#cfn-iot-topicruledestination-influxdbdestinationproperties-influxdbversion): {{String}}
   [SecretId](#cfn-iot-topicruledestination-influxdbdestinationproperties-secretid): {{String}}

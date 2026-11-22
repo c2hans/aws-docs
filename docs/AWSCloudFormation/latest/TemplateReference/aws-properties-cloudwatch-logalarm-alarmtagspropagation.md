@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-logalarm-alarmtagspropagation-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-cloudwatch-logalarm-alarmtagspropagation-enabled)" : {{Boolean}},
   "[ExcludedTagKeys](#cfn-cloudwatch-logalarm-alarmtagspropagation-excludedtagkeys)" : {{[ String, ... ]}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-logalarm-alarmtagspropagation-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-cloudwatch-logalarm-alarmtagspropagation-enabled): {{Boolean}}
   [ExcludedTagKeys](#cfn-cloudwatch-logalarm-alarmtagspropagation-excludedtagkeys): {{
     - String}}

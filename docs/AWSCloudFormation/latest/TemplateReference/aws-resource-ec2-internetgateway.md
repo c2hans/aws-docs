@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-internetgateway-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::InternetGateway",
   "Properties" : {
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-internetgateway-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::InternetGateway
 Properties:
   [Tags](#cfn-ec2-internetgateway-tags): {{
@@ -78,7 +78,7 @@ The following example creates an internet gateway and assigns it a tag.
 #### JSON
 <a name="aws-resource-ec2-internetgateway--examples--Create_an_internet_gateway--json"></a>
 
-```
+```json
 "Resources" : {
    "myInternetGateway" : {
       "Type" : "AWS::EC2::InternetGateway",
@@ -92,7 +92,7 @@ The following example creates an internet gateway and assigns it a tag.
 #### YAML
 <a name="aws-resource-ec2-internetgateway--examples--Create_an_internet_gateway--yaml"></a>
 
-```
+```yaml
   myInternetGateway:
     Type: AWS::EC2::InternetGateway
     Properties:

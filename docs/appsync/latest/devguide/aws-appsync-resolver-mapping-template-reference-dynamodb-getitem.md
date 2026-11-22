@@ -10,7 +10,7 @@ The `GetItem` request mapping document lets you tell the AWS AppSync DynamoDB re
 
 The `GetItem` mapping document has the following structure:
 
-```
+```TypeScript
 {
     "version" : "2017-02-28",
     "operation" : "GetItem",
@@ -59,7 +59,7 @@ For more information about response mapping templates, see [Resolver mapping tem
 
 The following example is a mapping template for a GraphQL query `getThing(foo: String!, bar: String!)`:
 
-```
+```TypeScript
 {
     "version" : "2017-02-28",
     "operation" : "GetItem",

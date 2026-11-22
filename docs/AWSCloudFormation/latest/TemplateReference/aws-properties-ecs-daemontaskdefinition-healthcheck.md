@@ -77,7 +77,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-daemontaskdefinition-healthcheck-syntax.json"></a>
 
-```
+```json
 {
   "[Command](#cfn-ecs-daemontaskdefinition-healthcheck-command)" : {{[ String, ... ]}},
   "[Interval](#cfn-ecs-daemontaskdefinition-healthcheck-interval)" : {{Integer}},
@@ -90,7 +90,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-daemontaskdefinition-healthcheck-syntax.yaml"></a>
 
-```
+```yaml
   [Command](#cfn-ecs-daemontaskdefinition-healthcheck-command): {{
     - String}}
   [Interval](#cfn-ecs-daemontaskdefinition-healthcheck-interval): {{Integer}}

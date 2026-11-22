@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-quickresponse-groupingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Criteria](#cfn-wisdom-quickresponse-groupingconfiguration-criteria)" : {{String}},
   "[Values](#cfn-wisdom-quickresponse-groupingconfiguration-values)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-quickresponse-groupingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Criteria](#cfn-wisdom-quickresponse-groupingconfiguration-criteria): {{String}}
   [Values](#cfn-wisdom-quickresponse-groupingconfiguration-values): {{
     - String}}

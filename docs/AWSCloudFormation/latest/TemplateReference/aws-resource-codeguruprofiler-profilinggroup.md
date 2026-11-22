@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-codeguruprofiler-profilinggroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CodeGuruProfiler::ProfilingGroup",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-codeguruprofiler-profilinggroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CodeGuruProfiler::ProfilingGroup
 Properties:
   [AgentPermissions](#cfn-codeguruprofiler-profilinggroup-agentpermissions): {{
@@ -125,7 +125,7 @@ The following is an example of the profiling group resource with the profiling g
 #### JSON
 <a name="aws-resource-codeguruprofiler-profilinggroup--examples--CodeGuru_Profiler_profiling_group_resource_configuration--json"></a>
 
-```
+```json
 "MyProfilingGroupWithAgentPermissions": {
   "Type": "AWS::CodeGuruProfiler::ProfilingGroup",
   "Properties": {
@@ -143,7 +143,7 @@ The following is an example of the profiling group resource with the profiling g
 #### YAML
 <a name="aws-resource-codeguruprofiler-profilinggroup--examples--CodeGuru_Profiler_profiling_group_resource_configuration--yaml"></a>
 
-```
+```yaml
 MyProfilingGroupWithAgentPermissions:
   Type: AWS::CodeGuruProfiler::ProfilingGroup
   Properties:
@@ -162,7 +162,7 @@ The following is an example of the profiling group resource that runs on AWS Lam
 #### JSON
 <a name="aws-resource-codeguruprofiler-profilinggroup--examples--CodeGuru_Profiler_profiling_group_resource_with_compute_platform--json"></a>
 
-```
+```json
 "MyProfilingGroupWithComputePlatform": {
   "Type": "AWS::CodeGuruProfiler::ProfilingGroup",
   "Properties": {
@@ -175,7 +175,7 @@ The following is an example of the profiling group resource that runs on AWS Lam
 #### YAML
 <a name="aws-resource-codeguruprofiler-profilinggroup--examples--CodeGuru_Profiler_profiling_group_resource_with_compute_platform--yaml"></a>
 
-```
+```yaml
 MyProfilingGroupWithComputePlatform:
   Type: AWS::CodeGuruProfiler::ProfilingGroup
   Properties:
@@ -191,7 +191,7 @@ The following is an example of the a notification configuration for a profiling 
 #### JSON
 <a name="aws-resource-codeguruprofiler-profilinggroup--examples--CodeGuru_Profiler_profiling_group_resource_with_notifications--json"></a>
 
-```
+```json
 "MyProfilingGroupWithNotificationChannelConfiguration": {
   "Type": "AWS::CodeGuruProfiler::ProfilingGroup",
   "Properties": {
@@ -209,7 +209,7 @@ The following is an example of the a notification configuration for a profiling 
 #### YAML
 <a name="aws-resource-codeguruprofiler-profilinggroup--examples--CodeGuru_Profiler_profiling_group_resource_with_notifications--yaml"></a>
 
-```
+```yaml
 MyProfilingGroupWithNotificationChannelConfiguration:
   Type: AWS::CodeGuruProfiler::ProfilingGroup
   Properties:
@@ -227,7 +227,7 @@ The following is an example of a profiling group that runs on AWS Lambda. This p
 #### JSON
 <a name="aws-resource-codeguruprofiler-profilinggroup--examples--CodeGuru_Profiler_profiling_group_configuration--json"></a>
 
-```
+```json
 "MyProfilingGroupWithAgentPermissions": {
   "Type": "AWS::CodeGuruProfiler::ProfilingGroup",
   "Properties": {
@@ -252,7 +252,7 @@ The following is an example of a profiling group that runs on AWS Lambda. This p
 #### YAML
 <a name="aws-resource-codeguruprofiler-profilinggroup--examples--CodeGuru_Profiler_profiling_group_configuration--yaml"></a>
 
-```
+```yaml
 MyProfilingGroup:
   Type: AWS::CodeGuruProfiler::ProfilingGroup
   Properties:

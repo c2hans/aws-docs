@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-connectiontype-secretconnectorproperty-syntax.json"></a>
 
-```
+```json
 {
   "[KeyOverride](#cfn-glue-connectiontype-secretconnectorproperty-keyoverride)" : {{String}},
   "[Name](#cfn-glue-connectiontype-secretconnectorproperty-name)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-connectiontype-secretconnectorproperty-syntax.yaml"></a>
 
-```
+```yaml
   [KeyOverride](#cfn-glue-connectiontype-secretconnectorproperty-keyoverride): {{String}}
   [Name](#cfn-glue-connectiontype-secretconnectorproperty-name): {{String}}
   [PropertyLocation](#cfn-glue-connectiontype-secretconnectorproperty-propertylocation): {{String}}

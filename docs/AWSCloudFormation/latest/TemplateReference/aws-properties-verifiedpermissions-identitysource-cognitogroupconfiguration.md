@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-verifiedpermissions-identitysource-cognitogroupconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[GroupEntityType](#cfn-verifiedpermissions-identitysource-cognitogroupconfiguration-groupentitytype)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-verifiedpermissions-identitysource-cognitogroupconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [GroupEntityType](#cfn-verifiedpermissions-identitysource-cognitogroupconfiguration-groupentitytype): {{String}}
 ```
 

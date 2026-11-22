@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codedeploy-deploymentconfig-timebasedcanary-syntax.json"></a>
 
-```
+```json
 {
   "[CanaryInterval](#cfn-codedeploy-deploymentconfig-timebasedcanary-canaryinterval)" : {{Integer}},
   "[CanaryPercentage](#cfn-codedeploy-deploymentconfig-timebasedcanary-canarypercentage)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codedeploy-deploymentconfig-timebasedcanary-syntax.yaml"></a>
 
-```
+```yaml
   [CanaryInterval](#cfn-codedeploy-deploymentconfig-timebasedcanary-canaryinterval): {{Integer}}
   [CanaryPercentage](#cfn-codedeploy-deploymentconfig-timebasedcanary-canarypercentage): {{Integer}}
 ```

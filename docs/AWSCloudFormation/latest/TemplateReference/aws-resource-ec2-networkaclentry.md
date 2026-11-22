@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-networkaclentry-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::NetworkAclEntry",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-networkaclentry-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::NetworkAclEntry
 Properties:
   [CidrBlock](#cfn-ec2-networkaclentry-cidrblock): {{String}}
@@ -149,7 +149,7 @@ The following example creates a network ACL, and creates two entries in the NACL
 #### JSON
 <a name="aws-resource-ec2-networkaclentry--examples--Network_ACL_entries_for_inbound_and_outbound_traffic--json"></a>
 
-```
+```json
 {
     "Resources": {
         "MyNACL": {
@@ -200,7 +200,7 @@ The following example creates a network ACL, and creates two entries in the NACL
 #### YAML
 <a name="aws-resource-ec2-networkaclentry--examples--Network_ACL_entries_for_inbound_and_outbound_traffic--yaml"></a>
 
-```
+```yaml
 Resources:
   MyNACL:
     Type: AWS::EC2::NetworkAcl

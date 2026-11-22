@@ -14,7 +14,7 @@ For information about attaching policies to IAM identities, see [Adding and remo
 The following identity-based permissions policy allows actions that a user or other IAM principal requires to use Athena Federated Query. Principals who are allowed to perform these actions are able to run queries that specify Athena catalogs associated with a federated data source.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -82,7 +82,7 @@ The following identity-based permissions policy allows actions that a user or ot
 
 **Example – Allow an IAM principal to create a data source connector**
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

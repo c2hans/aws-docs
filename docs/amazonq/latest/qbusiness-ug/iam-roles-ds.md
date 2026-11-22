@@ -33,7 +33,7 @@ This policy assumes your data source doesn't use any authentication.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -78,7 +78,7 @@ This policy assumes your data source doesn't use any authentication.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -106,7 +106,7 @@ This policy assumes your data source doesn't use any authentication.
 
  **If your data source uses authentication, you must add the following policy to your IAM role to allow Amazon Q Business to access your AWS Secrets Manager secret:**
 
-```
+```json
 {
             "Sid": "AllowsAmazonQToGetSecret",
             "Effect": "Allow",
@@ -126,7 +126,7 @@ This policy assumes your data source doesn't use any authentication.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -209,7 +209,7 @@ This policy assumes your data source doesn't use any authentication.
 
  **If your Secrets Manager secret is encrypted, you must add permissions for AWS KMS key to decrypt the username and password secret stored by Secrets Manager:**
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [
@@ -234,7 +234,7 @@ This policy assumes your data source doesn't use any authentication.
 **Note**
 Check that the file path to the object in your Amazon S3 bucket is of the following format: {{s3://BucketName/FolderName/FileName.extension}}.
 
-```
+```json
 {
             "Sid": "AllowsAmazonQToGetS3Objects",
             "Action": [
@@ -274,7 +274,7 @@ When you use an Amazon S3 bucket as a data source, you must provide a role that 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -344,7 +344,7 @@ When you use an Amazon S3 bucket as a data source, you must provide a role that 
 
 **If the documents in the Amazon S3 bucket are encrypted, you must provide the following permissions to use the AWS KMS key to decrypt the documents:**
 
-```
+```json
 {
       "Sid": "AllowsAmazonQToDecryptSecret",
       "Effect": "Allow",
@@ -371,7 +371,7 @@ When you use an Amazon S3 bucket as a data source, you must provide a role that 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -517,7 +517,7 @@ When you use an Amazon S3 bucket as a data source, you must provide a role that 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

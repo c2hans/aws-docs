@@ -112,7 +112,7 @@ function connectionHandler(connection) {
 
 The full specification of client certificate properties available on the connection object are available here:
 
-```
+```json
 {
   "connectionId": "Fdb-Eb7L9gVn2cFakz7wWyBJIDAD4-oNO6g8r3vXDV132BtnIVtqDA==", // Unique identifier for this TLS connection
   "clientIp": "203.0.113.42", // IP address of the connecting client (IPv4 or IPv6)

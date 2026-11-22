@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-licensemanager-licenseassetgroup-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-licensemanager-licenseassetgroup-tag-key)" : {{String}},
   "[Value](#cfn-licensemanager-licenseassetgroup-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-licensemanager-licenseassetgroup-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-licensemanager-licenseassetgroup-tag-key): {{String}}
   [Value](#cfn-licensemanager-licenseassetgroup-tag-value): {{String}}
 ```

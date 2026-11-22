@@ -18,7 +18,7 @@ The `Query` request enables you to efficiently select all items in a DynamoDB ta
 
 The `Query` request object has the following structure:
 
-```
+```TypeScript
 type DynamoDBQueryRequest = {
   operation: 'Query';
   query: {

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecr-publicrepository-repositorycatalogdata-syntax.json"></a>
 
-```
+```json
 {
   "[AboutText](#cfn-ecr-publicrepository-repositorycatalogdata-abouttext)" : {{String}},
   "[Architectures](#cfn-ecr-publicrepository-repositorycatalogdata-architectures)" : {{[ String, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecr-publicrepository-repositorycatalogdata-syntax.yaml"></a>
 
-```
+```yaml
   [AboutText](#cfn-ecr-publicrepository-repositorycatalogdata-abouttext): {{String}}
   [Architectures](#cfn-ecr-publicrepository-repositorycatalogdata-architectures): {{
     - String}}

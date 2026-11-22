@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datasync-locationhdfs-managedsecretconfig-syntax.json"></a>
 
-```
+```json
 {
   "[SecretArn](#cfn-datasync-locationhdfs-managedsecretconfig-secretarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datasync-locationhdfs-managedsecretconfig-syntax.yaml"></a>
 
-```
+```yaml
   [SecretArn](#cfn-datasync-locationhdfs-managedsecretconfig-secretarn): {{String}}
 ```
 

@@ -13,7 +13,7 @@ Alternatively, you can use the global condition key [`aws:RequestedRegion`](http
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

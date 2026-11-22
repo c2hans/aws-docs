@@ -39,7 +39,7 @@ Do not try to control who can pass a role by tagging the role and then using the
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -74,7 +74,7 @@ This example shows how you might create an identity-based policy that uses the `
 
 ****
 
-```
+```json
 {
       "Version":"2012-10-17",
       "Statement": {
@@ -100,7 +100,7 @@ This example shows how you might create an identity-based policy that allows usi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -131,7 +131,7 @@ We recommend that when you use policies to control access using tags, you use th
 
 This example shows how you might create an identity-based policy that allows creating and tagging a Secrets Manager secret, but only with the tag keys `environment` or `cost-center`. The `Null` condition ensures that the condition evaluates to `false` if there are no tags in the request.
 
-```
+```json
 {
         "Effect": "Allow",
         "Action": [

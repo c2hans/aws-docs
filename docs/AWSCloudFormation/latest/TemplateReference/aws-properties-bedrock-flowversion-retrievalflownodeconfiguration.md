@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-flowversion-retrievalflownodeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ServiceConfiguration](#cfn-bedrock-flowversion-retrievalflownodeconfiguration-serviceconfiguration)" : {{RetrievalFlowNodeServiceConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-flowversion-retrievalflownodeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ServiceConfiguration](#cfn-bedrock-flowversion-retrievalflownodeconfiguration-serviceconfiguration): {{
     RetrievalFlowNodeServiceConfiguration}}
 ```

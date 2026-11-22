@@ -92,7 +92,7 @@ Type: Array of [S3Tag](API_control_S3Tag.md) data types
 
 The following request gets the tag set of the specified Outposts bucket `example-outpost-bucket`.
 
-```
+```HTTP
             GET /v20180820/bucket/example-outpost-bucket/tagging HTTP/1.1
             Host: s3-outposts.<Region>.amazonaws.com
             x-amz-date: Wed, 28 Oct 2020 22:32:00 GMT

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-botalias-audiologdestination-syntax.json"></a>
 
-```
+```json
 {
   "[S3Bucket](#cfn-lex-botalias-audiologdestination-s3bucket)" : {{S3BucketLogDestination}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-botalias-audiologdestination-syntax.yaml"></a>
 
-```
+```yaml
   [S3Bucket](#cfn-lex-botalias-audiologdestination-s3bucket): {{
     S3BucketLogDestination}}
 ```

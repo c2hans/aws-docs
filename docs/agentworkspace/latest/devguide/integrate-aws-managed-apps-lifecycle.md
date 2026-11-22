@@ -48,7 +48,7 @@ When managing multiple applications, based on how you arrange them, some applica
 
 Implement application lifecycle event handlers to manage iframe visibility and cleanup operations. In the following example, `appIframe` is the iframe element that you passed to `setIFrame`.
 
-```
+```typescript
 // Handle destroying event
 appHost.onDestroying((event) => {
     console.log(`Application ${appHost.config.name} is being destroyed`);

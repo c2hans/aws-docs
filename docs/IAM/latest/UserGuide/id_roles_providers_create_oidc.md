@@ -53,7 +53,7 @@ Revoke active sessions for roles that trust the provider. For more information, 
 **Note**
 You can include additional claims like `my_custom_claim` in the example below; however, AWS STS will ignore the claim.
 
-   ```
+   ```JSON
    {
      "issuer": "https://example-domain.com",
      "jwks_uri": "https://example-domain.com/jwks/keys",

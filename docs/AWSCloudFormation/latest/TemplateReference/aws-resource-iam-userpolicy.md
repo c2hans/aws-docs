@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iam-userpolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IAM::UserPolicy",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iam-userpolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IAM::UserPolicy
 Properties:
   [PolicyDocument](#cfn-iam-userpolicy-policydocument): {{Json}}
@@ -104,7 +104,7 @@ This example shows an inline policy document in `AWS::IAM::UserPolicy`. The poli
 #### JSON
 <a name="aws-resource-iam-userpolicy--examples--User_embedded_inline_policy_document--json"></a>
 
-```
+```json
 {
     "Type": "AWS::IAM::UserPolicy",
     "Properties": {
@@ -127,7 +127,7 @@ This example shows an inline policy document in `AWS::IAM::UserPolicy`. The poli
 #### YAML
 <a name="aws-resource-iam-userpolicy--examples--User_embedded_inline_policy_document--yaml"></a>
 
-```
+```yaml
 Type: 'AWS::IAM::UserPolicy'
 Properties:
   PolicyName: root
@@ -148,7 +148,7 @@ This example shows an inline policy document in `AWS::IAM::UserPolicy`. The exam
 #### JSON
 <a name="aws-resource-iam-userpolicy--examples--User_embedded_inline_policy_document_with_Ref_function--json"></a>
 
-```
+```json
 {
     "Type": "AWS::IAM::UserPolicy",
     "Properties": {
@@ -173,7 +173,7 @@ This example shows an inline policy document in `AWS::IAM::UserPolicy`. The exam
 #### YAML
 <a name="aws-resource-iam-userpolicy--examples--User_embedded_inline_policy_document_with_Ref_function--yaml"></a>
 
-```
+```yaml
 Type: 'AWS::IAM::UserPolicy'
 Properties:
   PolicyName: root

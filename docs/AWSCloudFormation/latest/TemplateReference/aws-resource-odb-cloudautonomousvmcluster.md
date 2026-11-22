@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-odb-cloudautonomousvmcluster-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ODB::CloudAutonomousVmCluster",
   "Properties" : {
@@ -44,7 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-odb-cloudautonomousvmcluster-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ODB::CloudAutonomousVmCluster
 Properties:
   [AutonomousDataStorageSizeInTBs](#cfn-odb-cloudautonomousvmcluster-autonomousdatastoragesizeintbs): {{Number}}

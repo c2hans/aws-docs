@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-smsvoice-protectconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SMSVOICE::ProtectConfiguration",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-smsvoice-protectconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SMSVOICE::ProtectConfiguration
 Properties:
   [CountryRuleSet](#cfn-smsvoice-protectconfiguration-countryruleset): {{

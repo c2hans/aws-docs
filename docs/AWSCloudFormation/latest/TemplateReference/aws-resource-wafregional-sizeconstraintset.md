@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-wafregional-sizeconstraintset-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::WAFRegional::SizeConstraintSet",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-wafregional-sizeconstraintset-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::WAFRegional::SizeConstraintSet
 Properties:
   [Name](#cfn-wafregional-sizeconstraintset-name): {{String}}
@@ -89,7 +89,7 @@ The following example checks that the body of an HTTP request equals `4096` byte
 #### JSON
 <a name="aws-resource-wafregional-sizeconstraintset--examples--Define_a_Size_Constraint--json"></a>
 
-```
+```json
 "MySizeConstraint": {
   "Type": "AWS::WAFRegional::SizeConstraintSet",
   "Properties": {
@@ -111,7 +111,7 @@ The following example checks that the body of an HTTP request equals `4096` byte
 #### YAML
 <a name="aws-resource-wafregional-sizeconstraintset--examples--Define_a_Size_Constraint--yaml"></a>
 
-```
+```yaml
   MySizeConstraint:
     Type: "AWS::WAFRegional::SizeConstraintSet"
     Properties:
@@ -133,7 +133,7 @@ The following example associates the `MySizeConstraint` object with a web ACL ru
 #### JSON
 <a name="aws-resource-wafregional-sizeconstraintset--examples--Associate_a_SizeConstraintSet_with_a_Web_ACL_Rule--json"></a>
 
-```
+```json
 "SizeConstraintRule" : {
   "Type": "AWS::WAFRegional::Rule",
   "Properties": {
@@ -153,7 +153,7 @@ The following example associates the `MySizeConstraint` object with a web ACL ru
 #### YAML
 <a name="aws-resource-wafregional-sizeconstraintset--examples--Associate_a_SizeConstraintSet_with_a_Web_ACL_Rule--yaml"></a>
 
-```
+```yaml
 SizeConstraintRule:
   Type: "AWS::WAFRegional::Rule"
   Properties:
@@ -175,7 +175,7 @@ The following example associates the `SizeConstraintRule` rule with a web ACL. T
 #### JSON
 <a name="aws-resource-wafregional-sizeconstraintset--examples--Create_a_Web_ACL--json"></a>
 
-```
+```json
 "MyWebACL": {
   "Type": "AWS::WAFRegional::WebACL",
   "Properties": {
@@ -200,7 +200,7 @@ The following example associates the `SizeConstraintRule` rule with a web ACL. T
 #### YAML
 <a name="aws-resource-wafregional-sizeconstraintset--examples--Create_a_Web_ACL--yaml"></a>
 
-```
+```yaml
 MyWebACL:
   Type: "AWS::WAFRegional::WebACL"
   Properties:

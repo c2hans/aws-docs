@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appsync-api-eventlogconfig-syntax.json"></a>
 
-```
+```json
 {
   "[CloudWatchLogsRoleArn](#cfn-appsync-api-eventlogconfig-cloudwatchlogsrolearn)" : {{String}},
   "[LogLevel](#cfn-appsync-api-eventlogconfig-loglevel)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appsync-api-eventlogconfig-syntax.yaml"></a>
 
-```
+```yaml
   [CloudWatchLogsRoleArn](#cfn-appsync-api-eventlogconfig-cloudwatchlogsrolearn): {{String}}
   [LogLevel](#cfn-appsync-api-eventlogconfig-loglevel): {{String}}
 ```

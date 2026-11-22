@@ -16,11 +16,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sagemaker-endpointconfig-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SageMaker::EndpointConfig",
   "Properties" : {
       "[AsyncInferenceConfig](#cfn-sagemaker-endpointconfig-asyncinferenceconfig)" : {{AsyncInferenceConfig}},
+      "[CrossRegionTrafficConfig](#cfn-sagemaker-endpointconfig-crossregiontrafficconfig)" : {{CrossRegionTrafficConfig}},
       "[DataCaptureConfig](#cfn-sagemaker-endpointconfig-datacaptureconfig)" : {{DataCaptureConfig}},
       "[EnableNetworkIsolation](#cfn-sagemaker-endpointconfig-enablenetworkisolation)" : {{Boolean}},
       "[EndpointConfigName](#cfn-sagemaker-endpointconfig-endpointconfigname)" : {{String}},
@@ -39,11 +40,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sagemaker-endpointconfig-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SageMaker::EndpointConfig
 Properties:
   [AsyncInferenceConfig](#cfn-sagemaker-endpointconfig-asyncinferenceconfig): {{
     AsyncInferenceConfig}}
+  [CrossRegionTrafficConfig](#cfn-sagemaker-endpointconfig-crossregiontrafficconfig): {{
+    CrossRegionTrafficConfig}}
   [DataCaptureConfig](#cfn-sagemaker-endpointconfig-datacaptureconfig): {{
     DataCaptureConfig}}
   [EnableNetworkIsolation](#cfn-sagemaker-endpointconfig-enablenetworkisolation): {{Boolean}}
@@ -71,6 +74,12 @@ Properties:
 Specifies configuration for how an endpoint performs asynchronous inference.
 *Required*: No
 *Type*: [AsyncInferenceConfig](aws-properties-sagemaker-endpointconfig-asyncinferenceconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`CrossRegionTrafficConfig`  <a name="cfn-sagemaker-endpointconfig-crossregiontrafficconfig"></a>
+The cross-Region traffic cap for an endpoint. The cap limits the requests per second that the endpoint accepts from inference routers in other AWS Regions. The cap is `MaxCrossRegionPercentPerEndpoint` percent of `MaxInvocationsPerSecondPerInstance` multiplied by the number of `InService` instances, rounded up. All production variants and inference components of the endpoint share it. Requests that you send to the endpoint directly aren't counted. A request over the cap fails with a `ThrottlingException`.
+*Required*: No
+*Type*: [CrossRegionTrafficConfig](aws-properties-sagemaker-endpointconfig-crossregiontrafficconfig.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `DataCaptureConfig`  <a name="cfn-sagemaker-endpointconfig-datacaptureconfig"></a>
@@ -196,7 +205,7 @@ The following example creates an endpoint configuration from a trained model, an
 #### JSON
 <a name="aws-resource-sagemaker-endpointconfig--examples--SageMaker_EndpointConfig_Example--json"></a>
 
-```
+```json
 {
   "Description": "Basic Hosting entities test.  We need models to create endpoint configs.",
   "Mappings": {
@@ -311,7 +320,7 @@ The following example creates an endpoint configuration from a trained model, an
 #### YAML
 <a name="aws-resource-sagemaker-endpointconfig--examples--SageMaker_EndpointConfig_Example--yaml"></a>
 
-```
+```yaml
 Description: "Basic Hosting entities test.  We need models to create endpoint configs."
 Mappings:
   RegionMap:

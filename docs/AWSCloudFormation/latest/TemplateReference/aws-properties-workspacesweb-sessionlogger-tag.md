@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspacesweb-sessionlogger-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-workspacesweb-sessionlogger-tag-key)" : {{String}},
   "[Value](#cfn-workspacesweb-sessionlogger-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspacesweb-sessionlogger-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-workspacesweb-sessionlogger-tag-key): {{String}}
   [Value](#cfn-workspacesweb-sessionlogger-tag-value): {{String}}
 ```

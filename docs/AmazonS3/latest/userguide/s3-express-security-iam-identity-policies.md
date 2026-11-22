@@ -11,7 +11,7 @@ As a best practice, grant only the permissions required to perform a task (least
 
 **Example — Identity-based policy for directory bucket access**
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

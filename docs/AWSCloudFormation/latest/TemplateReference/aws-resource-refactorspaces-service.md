@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-refactorspaces-service-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RefactorSpaces::Service",
   "Properties" : {
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-refactorspaces-service-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RefactorSpaces::Service
 Properties:
   [ApplicationIdentifier](#cfn-refactorspaces-service-applicationidentifier): {{String}}

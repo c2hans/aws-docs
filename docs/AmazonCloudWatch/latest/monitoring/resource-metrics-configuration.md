@@ -39,14 +39,14 @@ If you attempt to create a ResourceMetricsConfiguration for a resource type that
 
 1. Run the following command, replacing the placeholder ARN with the ARN of the resource that you want to monitor.
 
-   ```
+   ```bash
    aws cloudwatch create-resource-metrics-configuration \
        --resource-arn {{arn:aws:service:us-east-1:111122223333:resource-type/resource-id}}
    ```
 
 1. To collect only specific metrics instead of all available detailed metrics, include the `--metric-selections` parameter.
 
-   ```
+   ```bash
    aws cloudwatch create-resource-metrics-configuration \
        --resource-arn {{arn:aws:service:us-east-1:111122223333:resource-type/resource-id}} \
        --metric-selections '[{"IncludeMetrics": ["{{MetricName1}}", "{{MetricName2}}"]}]'
@@ -55,7 +55,7 @@ If you attempt to create a ResourceMetricsConfiguration for a resource type that
 **To enable detailed monitoring (CloudFormation)**
 + Add the `AWS::CloudWatch::ResourceMetricsConfiguration` resource type to your CloudFormation template.
 
-  ```
+  ```yaml
   Resources:
     DetailedMonitoring:
       Type: AWS::CloudWatch::ResourceMetricsConfiguration
@@ -72,7 +72,7 @@ To check whether detailed monitoring is enabled for a specific resource, use the
 
 1. Run the following command for the resource that you want to check.
 
-   ```
+   ```bash
    aws cloudwatch get-resource-metrics-configuration \
        --resource-arn {{arn:aws:service:us-east-1:111122223333:resource-type/resource-id}}
    ```
@@ -88,7 +88,7 @@ You can update an existing ResourceMetricsConfiguration to change which metrics 
 
 1. Run the following command. Include the complete list of metrics you want to collect.
 
-   ```
+   ```bash
    aws cloudwatch update-resource-metrics-configuration \
        --resource-arn {{arn:aws:service:us-east-1:111122223333:resource-type/resource-id}} \
        --metric-selections '[{"IncludeMetrics": ["{{MetricName1}}", "{{MetricName2}}"]}]'
@@ -108,7 +108,7 @@ To disable detailed monitoring for a resource, delete its ResourceMetricsConfigu
 
 1. Run the following command for the resource that you no longer want to monitor.
 
-   ```
+   ```bash
    aws cloudwatch delete-resource-metrics-configuration \
        --resource-arn {{arn:aws:service:us-east-1:111122223333:resource-type/resource-id}}
    ```
@@ -129,7 +129,7 @@ Ensure your IAM policy includes the actions for the operations you use.
 
 The following example IAM policy grants permissions for all ResourceMetricsConfiguration operations, scoped to a single resource with the `cloudwatch:ResourceArn` condition key.
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [

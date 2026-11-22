@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-events-endpoint-endpointeventbus-syntax.json"></a>
 
-```
+```json
 {
   "[EventBusArn](#cfn-events-endpoint-endpointeventbus-eventbusarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-events-endpoint-endpointeventbus-syntax.yaml"></a>
 
-```
+```yaml
   [EventBusArn](#cfn-events-endpoint-endpointeventbus-eventbusarn): {{String}}
 ```
 

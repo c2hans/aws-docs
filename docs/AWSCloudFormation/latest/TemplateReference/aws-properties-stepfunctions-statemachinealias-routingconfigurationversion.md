@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-stepfunctions-statemachinealias-routingconfigurationversion-syntax.json"></a>
 
-```
+```json
 {
   "[StateMachineVersionArn](#cfn-stepfunctions-statemachinealias-routingconfigurationversion-statemachineversionarn)" : {{String}},
   "[Weight](#cfn-stepfunctions-statemachinealias-routingconfigurationversion-weight)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-stepfunctions-statemachinealias-routingconfigurationversion-syntax.yaml"></a>
 
-```
+```yaml
   [StateMachineVersionArn](#cfn-stepfunctions-statemachinealias-routingconfigurationversion-statemachineversionarn): {{String}}
   [Weight](#cfn-stepfunctions-statemachinealias-routingconfigurationversion-weight): {{Integer}}
 ```

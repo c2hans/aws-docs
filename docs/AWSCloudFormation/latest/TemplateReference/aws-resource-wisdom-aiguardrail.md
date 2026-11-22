@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-wisdom-aiguardrail-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Wisdom::AIGuardrail",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-wisdom-aiguardrail-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Wisdom::AIGuardrail
 Properties:
   [AssistantId](#cfn-wisdom-aiguardrail-assistantid): {{String}}

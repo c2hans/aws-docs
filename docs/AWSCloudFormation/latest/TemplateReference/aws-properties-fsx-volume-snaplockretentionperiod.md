@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-volume-snaplockretentionperiod-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultRetention](#cfn-fsx-volume-snaplockretentionperiod-defaultretention)" : {{RetentionPeriod}},
   "[MaximumRetention](#cfn-fsx-volume-snaplockretentionperiod-maximumretention)" : {{RetentionPeriod}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-volume-snaplockretentionperiod-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultRetention](#cfn-fsx-volume-snaplockretentionperiod-defaultretention): {{
     RetentionPeriod}}
   [MaximumRetention](#cfn-fsx-volume-snaplockretentionperiod-maximumretention): {{

@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-logs-transformer-parsewaf-syntax.json"></a>
 
-```
+```json
 {
   "[Source](#cfn-logs-transformer-parsewaf-source)" : {{String}}
 }
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-logs-transformer-parsewaf-syntax.yaml"></a>
 
-```
+```yaml
   [Source](#cfn-logs-transformer-parsewaf-source): {{String}}
 ```
 

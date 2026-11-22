@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudformation-stack-output-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-cloudformation-stack-output-description)" : {{String}},
   "[ExportName](#cfn-cloudformation-stack-output-exportname)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudformation-stack-output-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-cloudformation-stack-output-description): {{String}}
   [ExportName](#cfn-cloudformation-stack-output-exportname): {{String}}
   [OutputKey](#cfn-cloudformation-stack-output-outputkey): {{String}}

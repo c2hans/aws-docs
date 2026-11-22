@@ -87,7 +87,7 @@ Imports an API.
 #### POST schema
 <a name="apis-request-body-post-example"></a>
 
-```
+```json
 {
   "name": "string",
   "description": "string",
@@ -125,7 +125,7 @@ Imports an API.
 #### PUT schema
 <a name="apis-request-body-put-example"></a>
 
-```
+```json
 {
   "body": "string"
 }
@@ -137,7 +137,7 @@ Imports an API.
 #### Apis schema
 <a name="apis-response-body-apis-example"></a>
 
-```
+```json
 {
   "items": [
     {
@@ -187,7 +187,7 @@ Imports an API.
 #### Api schema
 <a name="apis-response-body-api-example"></a>
 
-```
+```json
 {
   "apiId": "string",
   "name": "string",
@@ -232,7 +232,7 @@ Imports an API.
 #### BadRequestException schema
 <a name="apis-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -241,7 +241,7 @@ Imports an API.
 #### NotFoundException schema
 <a name="apis-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -251,7 +251,7 @@ Imports an API.
 #### ConflictException schema
 <a name="apis-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -260,7 +260,7 @@ Imports an API.
 #### LimitExceededException schema
 <a name="apis-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

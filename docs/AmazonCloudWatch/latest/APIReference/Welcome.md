@@ -38,4 +38,4 @@ Developers in the Amazon Web Services developer community also provide their own
 
  [Windows and .NET Developer Center](http://aws.amazon.com/net/)
 
-This document was last published on November 18, 2026.
+This document was last published on November 19, 2026.

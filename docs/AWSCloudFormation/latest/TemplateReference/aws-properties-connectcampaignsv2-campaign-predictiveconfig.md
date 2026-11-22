@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connectcampaignsv2-campaign-predictiveconfig-syntax.json"></a>
 
-```
+```json
 {
   "[BandwidthAllocation](#cfn-connectcampaignsv2-campaign-predictiveconfig-bandwidthallocation)" : {{Number}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connectcampaignsv2-campaign-predictiveconfig-syntax.yaml"></a>
 
-```
+```yaml
   [BandwidthAllocation](#cfn-connectcampaignsv2-campaign-predictiveconfig-bandwidthallocation): {{Number}}
 ```
 

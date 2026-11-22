@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrserverless-application-autostartconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-emrserverless-application-autostartconfiguration-enabled)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrserverless-application-autostartconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-emrserverless-application-autostartconfiguration-enabled): {{Boolean}}
 ```
 

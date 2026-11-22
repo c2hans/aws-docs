@@ -86,7 +86,7 @@ This example illustrates how to perform a manual deployment to an App Runner ser
 #### Sample Request
 <a name="API_StartDeployment_Example_1_Request"></a>
 
-```
+```json
 $ aws apprunner start-deployment --cli-input-json "`cat`"
 {
   "ServiceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa"
@@ -96,7 +96,7 @@ $ aws apprunner start-deployment --cli-input-json "`cat`"
 #### Sample Response
 <a name="API_StartDeployment_Example_1_Response"></a>
 
-```
+```json
 {
   "OperationId": "853a7d5b-fc9f-4730-831b-fd8037ab832a"
 }

@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cassandra-table-replicaspecification-syntax.json"></a>
 
-```
+```json
 {
   "[ReadCapacityAutoScaling](#cfn-cassandra-table-replicaspecification-readcapacityautoscaling)" : {{AutoScalingSetting}},
   "[ReadCapacityUnits](#cfn-cassandra-table-replicaspecification-readcapacityunits)" : {{Integer}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cassandra-table-replicaspecification-syntax.yaml"></a>
 
-```
+```yaml
   [ReadCapacityAutoScaling](#cfn-cassandra-table-replicaspecification-readcapacityautoscaling): {{
     AutoScalingSetting}}
   [ReadCapacityUnits](#cfn-cassandra-table-replicaspecification-readcapacityunits): {{Integer}}

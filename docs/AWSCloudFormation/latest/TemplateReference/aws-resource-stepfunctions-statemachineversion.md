@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-stepfunctions-statemachineversion-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::StepFunctions::StateMachineVersion",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-stepfunctions-statemachineversion-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::StepFunctions::StateMachineVersion
 Properties:
   [Description](#cfn-stepfunctions-statemachineversion-description): {{String}}
@@ -110,7 +110,7 @@ The following CloudFormation template examples show how you can create multiple 
 #### YAML
 <a name="aws-resource-stepfunctions-statemachineversion--examples--Publish_multiple_state_machine_versions--yaml"></a>
 
-```
+```yaml
 MyStateMachineVersionA:
   Type: AWS::StepFunctions::StateMachineVersion
   Properties:
@@ -132,7 +132,7 @@ The following example uses the [`StateMachineRevisionId`](https://docs.aws.amazo
 #### YAML
 <a name="aws-resource-stepfunctions-statemachineversion--examples--Publish_a_version_for_the_latest_revision_of_a_state_machine--yaml"></a>
 
-```
+```yaml
 MyLatestStateMachineVersion:
   Type: AWS::StepFunctions::StateMachineVersion
   Properties:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-deadline-fleet-fleetconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CustomerManaged](#cfn-deadline-fleet-fleetconfiguration-customermanaged)" : {{CustomerManagedFleetConfiguration}},
   "[ServiceManagedEc2](#cfn-deadline-fleet-fleetconfiguration-servicemanagedec2)" : {{ServiceManagedEc2FleetConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-deadline-fleet-fleetconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CustomerManaged](#cfn-deadline-fleet-fleetconfiguration-customermanaged): {{
     CustomerManagedFleetConfiguration}}
   [ServiceManagedEc2](#cfn-deadline-fleet-fleetconfiguration-servicemanagedec2): {{

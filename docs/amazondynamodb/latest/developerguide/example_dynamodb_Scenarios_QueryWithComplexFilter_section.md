@@ -15,7 +15,7 @@ The following code examples show how to query a table with a complex filter expr
 **SDK for Java 2.x**
 Query a DynamoDB table with a complex filter expression using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -95,7 +95,7 @@ import java.util.logging.Logger;
 **SDK for JavaScript (v3)**
 Query a DynamoDB table with a complex filter expression using AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient, QueryCommand } = require("@aws-sdk/client-dynamodb");
 
 /**
@@ -156,7 +156,7 @@ async function queryWithComplexFilter(
 **SDK for Python (Boto3)**
 Query a DynamoDB table with a complex filter expression using AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 from boto3.dynamodb.conditions import Attr, Key
 

@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lambda-layerversionpermission-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lambda::LayerVersionPermission",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lambda-layerversionpermission-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lambda::LayerVersionPermission
 Properties:
   [Action](#cfn-lambda-layerversionpermission-action): {{String}}
@@ -104,7 +104,7 @@ Grant layer use permission to accounts in organization `o-t194hfs8cz`.
 #### JSON
 <a name="aws-resource-lambda-layerversionpermission--examples--Layer_Version_Permission--json"></a>
 
-```
+```json
 "MyLayerPermission": {
     "Type": "AWS::Lambda::LayerVersionPermission",
     "Properties": {
@@ -119,7 +119,7 @@ Grant layer use permission to accounts in organization `o-t194hfs8cz`.
 #### YAML
 <a name="aws-resource-lambda-layerversionpermission--examples--Layer_Version_Permission--yaml"></a>
 
-```
+```yaml
 MyLayerPermission:
   Type: AWS::Lambda::LayerVersionPermission
   Properties:

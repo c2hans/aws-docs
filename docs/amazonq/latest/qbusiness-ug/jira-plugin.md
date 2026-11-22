@@ -33,7 +33,7 @@ To successfully connect Amazon Q to Jira, you need to give Amazon Q the followin
 
 The following is the service access IAM role required:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [{
@@ -51,7 +51,7 @@ The following is the service access IAM role required:
 
 To allow Amazon Q to assume a role, use the following trust policy:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

@@ -92,7 +92,7 @@ Suppose that you have a `Document` object named `doc`, that contains a represent
 
 **Example**
 
-```
+```csharp
 forum101 = context.FromDocument<Forum>(101);
 ```
 
@@ -132,7 +132,7 @@ By default, DynamoDB returns the item with values that are eventually consistent
 **Note**
 To perform this operation in the background, use the `LoadAsync` method instead. To view an example of using the `LoadAsync` method to perform high-level CRUD operations on a DynamoDB table, see the following example.
 
-```
+```csharp
     /// <summary>
     /// Shows how to perform high-level CRUD operations on an Amazon DynamoDB
     /// table.
@@ -205,7 +205,7 @@ Suppose that you have a client-side `Reply` class mapped to the `Reply` table in
 
 **Example**
 
-```
+```csharp
 DynamoDBContext context = new DynamoDBContext(client);
 
 string replyId = "DynamoDB#DynamoDB Thread 1"; //Partition key
@@ -241,7 +241,7 @@ You can filter scan results by specifying a scan condition. The condition can be
 
 **Example**
 
-```
+```csharp
 IEnumerable<Book> itemsWithWrongPrice = context.Scan<Book>(
                     new ScanCondition("Price", ScanOperator.LessThan, price),
                     new ScanCondition("ProductCategory", ScanOperator.Equal, "Book")
@@ -266,7 +266,7 @@ Suppose that you have a client-side class mapped to the sample `Forum` table. Yo
 
 **Example**
 
-```
+```csharp
 DynamoDBContext context = new DynamoDBContext(client);
 
 Forum forum101 = context.Load<Forum>(101); // Retrieve a forum by primary key.
@@ -291,7 +291,7 @@ When using the object persistence model, you can specify the following optional 
 
   The following example sets the conversion schema version to V2, which changes the conversion behavior between .NET types and DynamoDB data types.
 
-  ```
+  ```csharp
   var config = new DynamoDBContextConfig
   {
       Conversion = DynamoDBEntryConversion.V2
@@ -303,7 +303,7 @@ The following C\# example creates a new `DynamoDBContext` by specifying two of t
 
 **Example**
 
-```
+```csharp
 AmazonDynamoDBClient client = new AmazonDynamoDBClient();
 ...
 DynamoDBContext context =
@@ -316,7 +316,7 @@ Instead of setting these parameters at the `DynamoDBContext` level, you can spec
 
 **Example**
 
-```
+```csharp
 AmazonDynamoDBClient client = new AmazonDynamoDBClient();
 ...
 DynamoDBContext context = new DynamoDBContext(client);

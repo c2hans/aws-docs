@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distribution-georestriction-syntax.json"></a>
 
-```
+```json
 {
   "[Locations](#cfn-cloudfront-distribution-georestriction-locations)" : {{[ String, ... ]}},
   "[RestrictionType](#cfn-cloudfront-distribution-georestriction-restrictiontype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distribution-georestriction-syntax.yaml"></a>
 
-```
+```yaml
   [Locations](#cfn-cloudfront-distribution-georestriction-locations): {{
     - String}}
   [RestrictionType](#cfn-cloudfront-distribution-georestriction-restrictiontype): {{String}}
@@ -64,7 +64,7 @@ The following examples show how to add georestrictions.
 #### JSON
 <a name="aws-properties-cloudfront-distribution-georestriction--examples--Add_georestrictions--json"></a>
 
-```
+```json
 {
   "Restrictions": {
     "GeoRestriction": {
@@ -81,7 +81,7 @@ The following examples show how to add georestrictions.
 #### YAML
 <a name="aws-properties-cloudfront-distribution-georestriction--examples--Add_georestrictions--yaml"></a>
 
-```
+```yaml
         Restrictions:
           GeoRestriction:
             RestrictionType: whitelist

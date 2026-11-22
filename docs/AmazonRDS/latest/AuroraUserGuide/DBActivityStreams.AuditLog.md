@@ -22,7 +22,7 @@ Following are sample decrypted JSON audit logs of activity event records.
 **Example Activity event record of an Aurora PostgreSQL CONNECT SQL statement**
 The following activity event record shows a login with the use of a `CONNECT` SQL statement (`command`) by a psql client (`clientApplication`).
 
-```
+```json
 {
   "type":"DatabaseActivityMonitoringRecords",
   "version":"1.1",
@@ -70,7 +70,7 @@ The following activity event record shows a login with the use of a `CONNECT` SQ
 **Example Activity event record of an Aurora MySQL CONNECT SQL statement**
 The following activity event record shows a logon with the use of a `CONNECT` SQL statement (`command`) by a mysql client (`clientApplication`).
 
-```
+```json
 {
   "type":"DatabaseActivityMonitoringRecord",
   "clusterId":"cluster-{{some_id}}",
@@ -114,7 +114,7 @@ The following activity event record shows a logon with the use of a `CONNECT` SQ
 **Example Activity event record of an Aurora PostgreSQL CREATE TABLE statement**
 The following example shows a `CREATE TABLE` event for Aurora PostgreSQL.
 
-```
+```json
 {
   "type":"DatabaseActivityMonitoringRecords",
   "version":"1.1",
@@ -163,7 +163,7 @@ The following example shows a `CREATE TABLE` event for Aurora PostgreSQL.
 The following example shows a `CREATE TABLE` statement for Aurora MySQL. The operation is represented as two separate event records. One event has `"class":"MAIN"`. The other event has `"class":"AUX"`. The messages might arrive in any order. The `logTime` field of the `MAIN` event is always earlier than the `logTime` fields of any corresponding `AUX` events.
 The following example shows the event with a `class` value of `MAIN`.
 
-```
+```json
 {
   "type":"DatabaseActivityMonitoringRecord",
   "clusterId":"cluster-{{some_id}}",
@@ -205,7 +205,7 @@ The following example shows the event with a `class` value of `MAIN`.
 ```
  The following example shows the corresponding event with a `class` value of `AUX`.
 
-```
+```json
 {
   "type":"DatabaseActivityMonitoringRecord",
   "clusterId":"cluster-{{some_id}}",
@@ -249,7 +249,7 @@ The following example shows the event with a `class` value of `MAIN`.
 **Example Activity event record of an Aurora PostgreSQL SELECT statement**
 The following example shows a `SELECT` event .
 
-```
+```json
 {
   "type":"DatabaseActivityMonitoringRecords",
   "version":"1.1",
@@ -365,7 +365,7 @@ The following example shows a `SELECT` event .
 The following example shows a `SELECT` event.
  The following example shows the event with a `class` value of `MAIN`.
 
-```
+```json
 {
   "type":"DatabaseActivityMonitoringRecord",
   "clusterId":"cluster-{{some_id}}",
@@ -407,7 +407,7 @@ The following example shows a `SELECT` event.
 ```
  The following example shows the corresponding event with a `class` value of `AUX`.
 
-```
+```json
 {
   "type":"DatabaseActivityMonitoringRecord",
   "instanceId":"db-{{some_id}}",
@@ -484,7 +484,7 @@ Version 1.0 represents the original data activity streams support for Aurora Pos
 
  The following example shows the format of this record.
 
-```
+```json
 {
   "type":"DatabaseActivityMonitoringRecords",
   "version":"1.1",

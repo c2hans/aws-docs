@@ -45,7 +45,7 @@ For more information, see [Control access to services using endpoint policies](h
 **Example: VPC endpoint policy for Resource Groups actions**
 The following is an example of a custom endpoint policy. When you attach this policy to your interface endpoint, it grants access to the listed Resource Groups actions for all principals on all resources.
 
-```
+```json
 {
    "Statement": [
       {

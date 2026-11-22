@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appintegrations-dataintegration-scheduleconfig-syntax.json"></a>
 
-```
+```json
 {
   "[FirstExecutionFrom](#cfn-appintegrations-dataintegration-scheduleconfig-firstexecutionfrom)" : {{String}},
   "[Object](#cfn-appintegrations-dataintegration-scheduleconfig-object)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appintegrations-dataintegration-scheduleconfig-syntax.yaml"></a>
 
-```
+```yaml
   [FirstExecutionFrom](#cfn-appintegrations-dataintegration-scheduleconfig-firstexecutionfrom): {{String}}
   [Object](#cfn-appintegrations-dataintegration-scheduleconfig-object): {{String}}
   [ScheduleExpression](#cfn-appintegrations-dataintegration-scheduleconfig-scheduleexpression): {{String}}

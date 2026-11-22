@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-datapathcolor-syntax.json"></a>
 
-```
+```json
 {
   "[Color](#cfn-quicksight-template-datapathcolor-color)" : {{String}},
   "[Element](#cfn-quicksight-template-datapathcolor-element)" : {{DataPathValue}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-datapathcolor-syntax.yaml"></a>
 
-```
+```yaml
   [Color](#cfn-quicksight-template-datapathcolor-color): {{String}}
   [Element](#cfn-quicksight-template-datapathcolor-element): {{
     DataPathValue}}

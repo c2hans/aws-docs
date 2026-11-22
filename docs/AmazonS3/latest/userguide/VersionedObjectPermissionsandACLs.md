@@ -9,7 +9,7 @@ Permissions for objects in Amazon S3 are set at the version level. Each version 
 **Example — Setting permissions for an object version**
 The following request sets the permission of the grantee with canonical user ID {{b4bf1b36f9716f094c3079dcf5ac9982d4f2847de46204d47448bc557fb5ac2a}}, to `FULL_CONTROL` on the key, `my-image.jpg`, version ID, `3HL4kqtJvjVBH40Nrjfkd`.
 
-```
+```http
  1. PUT /my-image.jpg?acl&versionId=3HL4kqtJvjVBH40Nrjfkd HTTP/1.1
  2. Host: bucket.s3.amazonaws.com
  3. Date: Wed, 28 Oct 2009 22:32:00 GMT
@@ -36,7 +36,7 @@ Likewise, to get the permissions of a specific object version, you must specify 
 **Example — Retrieving the permissions for a specified object version**
 In the following example, Amazon S3 returns the permissions for the key, `my-image.jpg`, version ID, `DVBH40Nr8X8gUMLUo`.
 
-```
+```http
 1. GET /my-image.jpg?versionId=DVBH40Nr8X8gUMLUo&acl HTTP/1.1
 2. Host: bucket.s3.amazonaws.com
 3. Date: Wed, 28 Oct 2009 22:32:00 GMT

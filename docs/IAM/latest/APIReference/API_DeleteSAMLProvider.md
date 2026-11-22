@@ -27,6 +27,10 @@ Required: Yes
 
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
+ ** ConcurrentModification **
+The request was rejected because multiple requests to change this object were submitted simultaneously. Wait a few minutes and submit your request again.
+HTTP Status Code: 409
+
  ** InvalidInput **
 The request was rejected because an invalid or out-of-range value was supplied for an input parameter.
 HTTP Status Code: 400

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-containerfleet-connectionportrange-syntax.json"></a>
 
-```
+```json
 {
   "[FromPort](#cfn-gamelift-containerfleet-connectionportrange-fromport)" : {{Integer}},
   "[ToPort](#cfn-gamelift-containerfleet-connectionportrange-toport)" : {{Integer}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-containerfleet-connectionportrange-syntax.yaml"></a>
 
-```
+```yaml
   [FromPort](#cfn-gamelift-containerfleet-connectionportrange-fromport): {{Integer}}
   [ToPort](#cfn-gamelift-containerfleet-connectionportrange-toport): {{Integer}}
 ```

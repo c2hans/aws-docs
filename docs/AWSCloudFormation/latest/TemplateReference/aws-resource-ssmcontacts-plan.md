@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ssmcontacts-plan-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SSMContacts::Plan",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ssmcontacts-plan-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SSMContacts::Plan
 Properties:
   [ContactId](#cfn-ssmcontacts-plan-contactid): {{String}}

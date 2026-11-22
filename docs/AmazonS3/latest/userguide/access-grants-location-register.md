@@ -38,7 +38,7 @@ Before you can register a specific bucket or prefix, make sure that you do the f
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
       "Statement": [
@@ -73,7 +73,7 @@ You can restrict the IAM role to access S3 data only if the credentials are vend
 
   *iam-policy.json*
 
-  ```
+  ```json
   {
      "Version":"2012-10-17",
      "Statement": [
@@ -203,7 +203,7 @@ Create a policy that allows S3 Access Grants to assume the IAM role. To do so, y
 *TestRolePolicy.json*
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -262,7 +262,7 @@ To make sure that the IAM role can only be used to access data in S3 if the cred
 *iam-policy.json*
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -346,7 +346,7 @@ To make sure that the IAM role can only be used to access data in S3 if the cred
 **Example**
 Run the following command:
 
-```
+```bash
 aws iam put-role-policy \
 --role-name accessGrantsTestRole \
 --policy-name accessGrantsTestRole \
@@ -418,7 +418,7 @@ To use the following example commands, replace the `{{user input placeholders}}`
 **Example Register a default location**
 Request:
 
-```
+```java
 public void createAccessGrantsLocation() {
 CreateAccessGrantsLocationRequest createRequest = CreateAccessGrantsLocationRequest.builder()
 .accountId("{{111122223333}}")
@@ -431,7 +431,7 @@ LOGGER.info("CreateAccessGrantsLocationResponse: " + createResponse);
 ```
 Response:
 
-```
+```java
 CreateAccessGrantsLocationResponse(
 CreatedAt=2023-06-07T04:35:11.027Z,
 AccessGrantsLocationId=default,
@@ -444,7 +444,7 @@ IAMRoleArn=arn:aws:iam::{{111122223333}}:role/accessGrantsTestRole
 **Example Register a custom location**
 Request:
 
-```
+```java
 public void createAccessGrantsLocation() {
 CreateAccessGrantsLocationRequest createRequest = CreateAccessGrantsLocationRequest.builder()
 .accountId("{{111122223333}}")
@@ -457,7 +457,7 @@ LOGGER.info("CreateAccessGrantsLocationResponse: " + createResponse);
 ```
 Response:
 
-```
+```java
 CreateAccessGrantsLocationResponse(
 CreatedAt=2023-06-07T04:35:10.027Z,
 AccessGrantsLocationId=18cfe6fb-eb5a-4ac5-aba9-8d79f04c2012,

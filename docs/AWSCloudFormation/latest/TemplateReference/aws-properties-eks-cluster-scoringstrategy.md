@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-cluster-scoringstrategy-syntax.json"></a>
 
-```
+```json
 {
   "[Resources](#cfn-eks-cluster-scoringstrategy-resources)" : {{[ ResourceWeight, ... ]}},
   "[Type](#cfn-eks-cluster-scoringstrategy-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-cluster-scoringstrategy-syntax.yaml"></a>
 
-```
+```yaml
   [Resources](#cfn-eks-cluster-scoringstrategy-resources): {{
     - ResourceWeight}}
   [Type](#cfn-eks-cluster-scoringstrategy-type): {{String}}

@@ -17,7 +17,7 @@ When you create a bucket or an object, Amazon S3 creates a default ACL that gran
 
 **Example**
 
-```
+```xml
  1. <?xml version="1.0" encoding="UTF-8"?>
  2. <AccessControlPolicy xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
  3.   <Owner>
@@ -211,7 +211,7 @@ The following sample ACL on a bucket identifies the resource owner and a set of 
 
 **Example**
 
-```
+```xml
  1. <?xml version="1.0" encoding="UTF-8"?>
  2. <AccessControlPolicy xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
  3.   <Owner>

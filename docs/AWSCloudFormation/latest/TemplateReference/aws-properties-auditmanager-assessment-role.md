@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-auditmanager-assessment-role-syntax.json"></a>
 
-```
+```json
 {
   "[RoleArn](#cfn-auditmanager-assessment-role-rolearn)" : {{String}},
   "[RoleType](#cfn-auditmanager-assessment-role-roletype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-auditmanager-assessment-role-syntax.yaml"></a>
 
-```
+```yaml
   [RoleArn](#cfn-auditmanager-assessment-role-rolearn): {{String}}
   [RoleType](#cfn-auditmanager-assessment-role-roletype): {{String}}
 ```

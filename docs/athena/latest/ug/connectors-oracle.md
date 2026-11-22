@@ -247,7 +247,7 @@ The following Athena Oracle connector operators support predicate pushdown:
 
 For enhanced querying capabilities, combine the pushdown types, as in the following example:
 
-```
+```sql
 SELECT *
 FROM my_table
 WHERE col_a > 10
@@ -262,7 +262,7 @@ The Oracle connector supports [passthrough queries](federated-query-passthrough.
 
 To use passthrough queries with Oracle, you can use the following syntax:
 
-```
+```sql
 SELECT * FROM TABLE(
         system.query(
             query => '{{query string}}'
@@ -271,7 +271,7 @@ SELECT * FROM TABLE(
 
 The following example query pushes down a query to a data source in Oracle. The query selects all columns in the `customer` table.
 
-```
+```sql
 SELECT * FROM TABLE(
         system.query(
             query => 'SELECT * FROM customer'

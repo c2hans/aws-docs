@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-mailmanagerruleset-snsaction-syntax.json"></a>
 
-```
+```json
 {
   "[ActionFailurePolicy](#cfn-ses-mailmanagerruleset-snsaction-actionfailurepolicy)" : {{String}},
   "[Encoding](#cfn-ses-mailmanagerruleset-snsaction-encoding)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-mailmanagerruleset-snsaction-syntax.yaml"></a>
 
-```
+```yaml
   [ActionFailurePolicy](#cfn-ses-mailmanagerruleset-snsaction-actionfailurepolicy): {{String}}
   [Encoding](#cfn-ses-mailmanagerruleset-snsaction-encoding): {{String}}
   [PayloadType](#cfn-ses-mailmanagerruleset-snsaction-payloadtype): {{String}}

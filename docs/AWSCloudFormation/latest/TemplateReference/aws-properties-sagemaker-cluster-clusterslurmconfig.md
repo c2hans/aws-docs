@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-cluster-clusterslurmconfig-syntax.json"></a>
 
-```
+```json
 {
   "[NodeType](#cfn-sagemaker-cluster-clusterslurmconfig-nodetype)" : {{String}},
   "[PartitionNames](#cfn-sagemaker-cluster-clusterslurmconfig-partitionnames)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-cluster-clusterslurmconfig-syntax.yaml"></a>
 
-```
+```yaml
   [NodeType](#cfn-sagemaker-cluster-clusterslurmconfig-nodetype): {{String}}
   [PartitionNames](#cfn-sagemaker-cluster-clusterslurmconfig-partitionnames): {{
     - String}}

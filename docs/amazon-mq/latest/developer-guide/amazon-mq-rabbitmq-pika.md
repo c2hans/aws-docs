@@ -23,7 +23,7 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-
 + [Python 3](https://www.python.org/downloads/) installed for your operating system.
 + [Pika](https://pika.readthedocs.io/en/stable/) installed using Python `pip`. To install Pika, open a new terminal window and run the following.
 
-  ```
+  ```bash
   $ python3 -m pip install pika
   ```
 
@@ -47,14 +47,14 @@ To create a Python Pika client base class that defines a constructor and provide
 
 1.  Open a new terminal window, create a new directory for your project, and navigate to the directory.
 
-   ```
+   ```bash
    $ mkdir pika-tutorial
    $ cd pika-tutorial
    ```
 
 1.  Create a new file, `basicClient.py`, that contains the following Python code.
 
-   ```
+   ```python
    import ssl
    import pika
 
@@ -83,7 +83,7 @@ To create a Python Pika client base class that defines a constructor and provide
 
 1.  Copy the contents of the following code sample, and save locally as `publisher.py` in the same directory you created in the previous step.
 
-   ```
+   ```python
    from basicClient import BasicPikaClient
 
    class BasicMessageSender(BasicPikaClient):
@@ -134,7 +134,7 @@ To create a Python Pika client base class that defines a constructor and provide
 
 1.  Run the following command in the same directory you created `publisher.py`.
 
-   ```
+   ```bash
    $ python3 publisher.py
    ```
 
@@ -152,7 +152,7 @@ To create a Python Pika client base class that defines a constructor and provide
 
 1.  Copy the contents of the following code sample, and save locally as `consumer.py` in the same directory.
 
-   ```
+   ```python
    from basicClient import BasicPikaClient
 
    class BasicMessageReceiver(BasicPikaClient):
@@ -194,7 +194,7 @@ To create a Python Pika client base class that defines a constructor and provide
 
 1.  Run the following command in your project directory.
 
-   ```
+   ```bash
    $ python3 consumer.py
    ```
 
@@ -211,7 +211,7 @@ To create a Python Pika client base class that defines a constructor and provide
 
 1.  In `consumer.py`, add the following method definition to the `BasicMessageReceiver` class.
 
-   ```
+   ```python
    def consume_messages(self, queue):
        def callback(ch, method, properties, body):
            print(" [x] Received %r" % body)
@@ -224,7 +224,7 @@ To create a Python Pika client base class that defines a constructor and provide
 
 1.  In `consumer.py`, under `if __name__ == "__main__":`, invoke the `consume_messages` method you defined in the previous step.
 
-   ```
+   ```python
    if __name__ == "__main__":
 
        # Create Basic Message Receiver which creates a connection and channel for consuming messages.

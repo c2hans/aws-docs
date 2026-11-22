@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-virtualrouter-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-appmesh-virtualrouter-tag-key)" : {{String}},
   "[Value](#cfn-appmesh-virtualrouter-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-virtualrouter-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-appmesh-virtualrouter-tag-key): {{String}}
   [Value](#cfn-appmesh-virtualrouter-tag-value): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-pipesourcerabbitmqbrokerparameters-syntax.json"></a>
 
-```
+```json
 {
   "[BatchSize](#cfn-pipes-pipe-pipesourcerabbitmqbrokerparameters-batchsize)" : {{Integer}},
   "[Credentials](#cfn-pipes-pipe-pipesourcerabbitmqbrokerparameters-credentials)" : {{MQBrokerAccessCredentials}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-pipesourcerabbitmqbrokerparameters-syntax.yaml"></a>
 
-```
+```yaml
   [BatchSize](#cfn-pipes-pipe-pipesourcerabbitmqbrokerparameters-batchsize): {{Integer}}
   [Credentials](#cfn-pipes-pipe-pipesourcerabbitmqbrokerparameters-credentials): {{
     MQBrokerAccessCredentials}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-domain-rulebasedmatching-syntax.json"></a>
 
-```
+```json
 {
   "[AttributeTypesSelector](#cfn-customerprofiles-domain-rulebasedmatching-attributetypesselector)" : {{AttributeTypesSelector}},
   "[ConflictResolution](#cfn-customerprofiles-domain-rulebasedmatching-conflictresolution)" : {{ConflictResolution}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-domain-rulebasedmatching-syntax.yaml"></a>
 
-```
+```yaml
   [AttributeTypesSelector](#cfn-customerprofiles-domain-rulebasedmatching-attributetypesselector): {{
     AttributeTypesSelector}}
   [ConflictResolution](#cfn-customerprofiles-domain-rulebasedmatching-conflictresolution): {{

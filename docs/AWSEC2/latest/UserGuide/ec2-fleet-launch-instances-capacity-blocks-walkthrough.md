@@ -43,7 +43,7 @@ For more information about Capacity Blocks, see [Capacity Blocks for ML](ec2-cap
 
    For more information about configuring an EC2 Fleet, see [Create an EC2 Fleet](create-ec2-fleet.md).
 
-   ```
+   ```JSON
    {
        "LaunchTemplateConfigs": [
            {
@@ -71,7 +71,7 @@ For more information about Capacity Blocks, see [Capacity Blocks for ML](ec2-cap
 
    Use the following [create-fleet](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-fleet.html) command.
 
-   ```
+   ```bash
    aws ec2 create-fleet --cli-input-json file://config.json
    ```
 

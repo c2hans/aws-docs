@@ -12,7 +12,7 @@ AWS might need to end support for extensions. When feasible, we provide 12 month
 
 The PostgreSQL community sometimes refers to the extensions as modules. Extensions expand on the functionality provided by the PostgreSQL engine. You can find a list of extensions supported by Amazon RDS in the default DB parameter group for that PostgreSQL version. You can also see the current extensions list using `psql` by showing the `rds.extensions` parameter as in the following example.
 
-```
+```sql
 SHOW rds.extensions;
 ```
 

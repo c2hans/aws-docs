@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudformation-publisher-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudFormation::Publisher",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudformation-publisher-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudFormation::Publisher
 Properties:
   [AcceptTermsAndConditions](#cfn-cloudformation-publisher-accepttermsandconditions): {{Boolean}}

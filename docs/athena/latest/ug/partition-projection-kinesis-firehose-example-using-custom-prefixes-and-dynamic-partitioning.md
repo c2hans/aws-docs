@@ -16,7 +16,7 @@ prefix/!{timestamp:yyyy}-!{timestamp:MM}-!{timestamp:dd}/!{partitionKeyFromQuery
 
 With that Amazon S3 prefix, the Firehose delivery stream would write objects to keys such as `s3://amzn-s3-demo-bucket/prefix/2021-11-01/customer-1234/file.extension`. For a property like `customer_id`, where the values may not be known in advance, you can use the partition projection type `injected` and use a `CREATE TABLE` statement like the following:
 
-```
+```sql
 CREATE EXTERNAL TABLE my_ingested_data3 (
  ...
 )
@@ -40,7 +40,7 @@ TBLPROPERTIES (
 
 When you query a table that has a partition key of type `injected`, your query must include a value for that partition key. A query for the `my_ingested_data3` table might look like this:
 
-```
+```sql
 SELECT *
 FROM my_ingested_data3
 WHERE day BETWEEN '2021-11-01' AND '2021-11-30'
@@ -52,13 +52,13 @@ AND customer_id = 'customer-1234'
 
 Because the values for the `day` partition key are ISO formatted, you can also use the `DATE` type for the day partition key instead of `STRING`, as in the following example:
 
-```
+```sql
 PARTITIONED BY (day DATE, customer_id STRING)
 ```
 
 When you query, this strategy allows you to use date functions on the partition key without parsing or casting, as in the following example:
 
-```
+```sql
 SELECT *
 FROM my_ingested_data3
 WHERE day > CURRENT_DATE - INTERVAL '7' DAY
@@ -68,7 +68,7 @@ AND customer_id = 'customer-1234'
 **Note**
 Specifying a partition key of the `DATE` type assumes that you have used the [custom prefix](https://docs.aws.amazon.com/firehose/latest/dev/s3-prefixes.html) feature to create Amazon S3 keys that have ISO formatted dates. If you are using the default Firehose format of `yyyy/MM/dd/HH`, you must specify the partition key as type `string` even though the corresponding table property is of type `date`, as in the following example:
 
-```
+```sql
 PARTITIONED BY (
   `mydate` string)
 TBLPROPERTIES (

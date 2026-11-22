@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dynamodb-table-kinesisstreamspecification-syntax.json"></a>
 
-```
+```json
 {
   "[ApproximateCreationDateTimePrecision](#cfn-dynamodb-table-kinesisstreamspecification-approximatecreationdatetimeprecision)" : {{String}},
   "[StreamArn](#cfn-dynamodb-table-kinesisstreamspecification-streamarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dynamodb-table-kinesisstreamspecification-syntax.yaml"></a>
 
-```
+```yaml
   [ApproximateCreationDateTimePrecision](#cfn-dynamodb-table-kinesisstreamspecification-approximatecreationdatetimeprecision): {{String}}
   [StreamArn](#cfn-dynamodb-table-kinesisstreamspecification-streamarn): {{String}}
 ```

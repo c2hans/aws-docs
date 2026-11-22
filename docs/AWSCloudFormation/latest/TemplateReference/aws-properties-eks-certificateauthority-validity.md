@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-certificateauthority-validity-syntax.json"></a>
 
-```
+```json
 {
   "[NotAfter](#cfn-eks-certificateauthority-validity-notafter)" : {{String}},
   "[NotBefore](#cfn-eks-certificateauthority-validity-notbefore)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-certificateauthority-validity-syntax.yaml"></a>
 
-```
+```yaml
   [NotAfter](#cfn-eks-certificateauthority-validity-notafter): {{String}}
   [NotBefore](#cfn-eks-certificateauthority-validity-notbefore): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkfirewall-firewallpolicy-statefulrulegroupoverride-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-networkfirewall-firewallpolicy-statefulrulegroupoverride-action)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkfirewall-firewallpolicy-statefulrulegroupoverride-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-networkfirewall-firewallpolicy-statefulrulegroupoverride-action): {{String}}
 ```
 

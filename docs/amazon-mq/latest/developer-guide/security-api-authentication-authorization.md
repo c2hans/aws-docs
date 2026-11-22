@@ -34,7 +34,7 @@ The `ec2:AuthorizedService` condition key ensures that ENI permissions can be gr
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

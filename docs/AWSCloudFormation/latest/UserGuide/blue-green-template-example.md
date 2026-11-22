@@ -11,7 +11,7 @@ Creating a stack with the template will provision the initial configuration of t
 ## JSON
 <a name="blue-green-template-example.json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion":"2010-09-09",
   "Parameters":{
@@ -280,7 +280,7 @@ Creating a stack with the template will provision the initial configuration of t
 ## YAML
 <a name="blue-green-template-example.yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:
   Vpc:

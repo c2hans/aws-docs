@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-chatbot-customaction-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-chatbot-customaction-tag-key)" : {{String}},
   "[Value](#cfn-chatbot-customaction-tag-value)" : {{String}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-chatbot-customaction-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-chatbot-customaction-tag-key): {{String}}
   [Value](#cfn-chatbot-customaction-tag-value): {{String}}
 ```

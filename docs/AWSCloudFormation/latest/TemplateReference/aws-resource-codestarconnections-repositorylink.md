@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-codestarconnections-repositorylink-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CodeStarConnections::RepositoryLink",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-codestarconnections-repositorylink-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CodeStarConnections::RepositoryLink
 Properties:
   [ConnectionArn](#cfn-codestarconnections-repositorylink-connectionarn): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationsignals-servicelevelobjective-metricsource-syntax.json"></a>
 
-```
+```json
 {
   "[MetricSourceAttributes](#cfn-applicationsignals-servicelevelobjective-metricsource-metricsourceattributes)" : {{String}},
   "[MetricSourceKeyAttributes](#cfn-applicationsignals-servicelevelobjective-metricsource-metricsourcekeyattributes)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationsignals-servicelevelobjective-metricsource-syntax.yaml"></a>
 
-```
+```yaml
   [MetricSourceAttributes](#cfn-applicationsignals-servicelevelobjective-metricsource-metricsourceattributes): {{String}}
   [MetricSourceKeyAttributes](#cfn-applicationsignals-servicelevelobjective-metricsource-metricsourcekeyattributes): {{String}}
 ```

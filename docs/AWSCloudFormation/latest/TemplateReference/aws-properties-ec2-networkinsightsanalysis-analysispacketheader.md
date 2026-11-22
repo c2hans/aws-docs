@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-networkinsightsanalysis-analysispacketheader-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationAddresses](#cfn-ec2-networkinsightsanalysis-analysispacketheader-destinationaddresses)" : {{[ String, ... ]}},
   "[DestinationPortRanges](#cfn-ec2-networkinsightsanalysis-analysispacketheader-destinationportranges)" : {{[ PortRange, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-networkinsightsanalysis-analysispacketheader-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationAddresses](#cfn-ec2-networkinsightsanalysis-analysispacketheader-destinationaddresses): {{
     - String}}
   [DestinationPortRanges](#cfn-ec2-networkinsightsanalysis-analysispacketheader-destinationportranges): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-stepfunctions-activity-tagsentry-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-stepfunctions-activity-tagsentry-key)" : {{String}},
   "[Value](#cfn-stepfunctions-activity-tagsentry-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-stepfunctions-activity-tagsentry-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-stepfunctions-activity-tagsentry-key): {{String}}
   [Value](#cfn-stepfunctions-activity-tagsentry-value): {{String}}
 ```

@@ -69,7 +69,7 @@ You can stop an instance using the default stop method, which includes an attemp
 **To stop an instance using the default stop method**
 Use the [stop-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/stop-instances.html) command.
 
-```
+```bash
 aws ec2 stop-instances --instance-ids {{i-1234567890abcdef0}}
 ```
 
@@ -79,7 +79,7 @@ aws ec2 stop-instances --instance-ids {{i-1234567890abcdef0}}
 **To stop an instance using the default stop method**
 Use the [Stop-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Stop-EC2Instance.html) cmdlet
 
-```
+```powershell
 Stop-EC2Instance -InstanceId {{i-1234567890abcdef0}}
 ```
 
@@ -114,7 +114,7 @@ Bypassing the graceful OS shutdown might result in data loss or corruption (for 
 **To stop an instance and bypass the graceful OS shutdown**
 Use the [stop-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/stop-instances.html) command with `--skip-os-shutdown`.
 
-```
+```bash
 aws ec2 stop-instances \
     --instance-ids {{i-1234567890abcdef0}} \
     --skip-os-shutdown
@@ -126,7 +126,7 @@ aws ec2 stop-instances \
 **To stop an instance and bypass the graceful OS shutdown**
 Use the [Stop-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Stop-EC2Instance.html) cmdlet with `-SkipOsShutdown $true`.
 
-```
+```powershell
 Stop-EC2Instance `
     -InstanceId {{i-1234567890abcdef0}} `
     -SkipOsShutdown $true
@@ -158,7 +158,7 @@ You can start a stopped instance.
 **To start an instance**
 Use the [start-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/start-instances.html) command.
 
-```
+```bash
 aws ec2 start-instances --instance-ids {{i-1234567890abcdef0}}
 ```
 
@@ -168,7 +168,7 @@ aws ec2 start-instances --instance-ids {{i-1234567890abcdef0}}
 **To start an instance**
 Use the [Start-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Start-EC2Instance.html) cmdlet.
 
-```
+```powershell
 Start-EC2Instance -InstanceId {{i-1234567890abcdef0}}
 ```
 
@@ -201,7 +201,7 @@ Alternatively, you can run a command or cmdlet in each Region where you have ins
 **To get the number of EC2 instances in a Region**
 Use the following [describe-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html) command to count the instances in the current Region. You must run this command in each Region where you have instances.
 
-```
+```bash
 aws ec2 describe-instances \
     --region {{us-east-2}} \
     --query "length(Reservations[].Instances[])"
@@ -209,14 +209,14 @@ aws ec2 describe-instances \
 
 The following is example output.
 
-```
+```bash
 27
 ```
 
 **To get summary info about your EC2 instances in a Region**
 Use the following [describe-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html) command. You must run this command in each Region where you have instances.
 
-```
+```bash
 aws ec2 describe-instances \
     --region {{us-east-2}} \
     --query "Reservations[].Instances[].[InstanceId,InstanceType,PrivateIpAddress]" \
@@ -225,7 +225,7 @@ aws ec2 describe-instances \
 
 The following is example output.
 
-```
+```bash
 ---------------------------------------------------------
 |                   DescribeInstances                   |
 +---------------------+---------------+-----------------+
@@ -241,26 +241,26 @@ The following is example output.
 **To get the number of EC2 instances in a Region**
 Use the [Get-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html) cmdlet.
 
-```
+```powershell
 (Get-EC2Instance -Region {{us-east-2}}).Instances.Length
 ```
 
 The following is example output.
 
-```
+```bash
 27
 ```
 
 **To get summary info about your EC2 instances in a Region**
 Use the [Get-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html) cmdlet. You must run this command in each Region where you have instances.
 
-```
+```powershell
 (Get-EC2Instance).Instances | Select InstanceId, InstanceType, PrivateIpAddress
 ```
 
 The following is example output.
 
-```
+```bash
 InstanceId          InstanceType PrivateIpAddress
 ----------          ------------ ----------------
 i-0e3e777f4362f1bf7 t2.micro     10.0.12.9
@@ -290,7 +290,7 @@ Select the instance and find the primary network interface (device index is 0) u
 **To find the initial and most recent launch times**
 Use the following [describe-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html) command to display both the initial launch time and the most recent launch time for the specified instance.
 
-```
+```bash
 aws ec2 describe-instances \
     --instance-id {{i-1234567890abcdef0}} \
     --query 'Reservations[].Instances[].{InstanceID:InstanceId,InitialLaunch:NetworkInterfaces[0].Attachment.AttachTime,LastLaunch:LaunchTime}'
@@ -298,7 +298,7 @@ aws ec2 describe-instances \
 
 The following is example output.
 
-```
+```json
 [
     {
         "InstanceID": "i-1234567890abcdef0",
@@ -314,26 +314,26 @@ The following is example output.
 **To find the most recent launch time**
 Use the [Get-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html) cmdlet.
 
-```
+```powershell
 (Get-EC2Instance -InstanceId {{i-1234567890abcdef0}}).Instances.LaunchTime
 ```
 
 The following is example output.
 
-```
+```bash
 Monday, May 27, 2024 6:24:06 AM
 ```
 
 **To find the initial launch time**
 Use the [Get-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html) cmdlet.
 
-```
+```powershell
 (Get-EC2Instance -InstanceId {{i-1234567890abcdef0}}).Instances.NetworkInterfaces.Attachment.AttachTime
 ```
 
 The following is example output.
 
-```
+```bash
 Friday, April 19, 2024 12:47:08 AM
 ```
 

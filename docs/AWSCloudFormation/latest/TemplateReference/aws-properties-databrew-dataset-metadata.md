@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-databrew-dataset-metadata-syntax.json"></a>
 
-```
+```json
 {
   "[SourceArn](#cfn-databrew-dataset-metadata-sourcearn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-databrew-dataset-metadata-syntax.yaml"></a>
 
-```
+```yaml
   [SourceArn](#cfn-databrew-dataset-metadata-sourcearn): {{String}}
 ```
 

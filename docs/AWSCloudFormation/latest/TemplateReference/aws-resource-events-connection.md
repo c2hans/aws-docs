@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-events-connection-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Events::Connection",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-events-connection-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Events::Connection
 Properties:
   [AuthorizationType](#cfn-events-connection-authorizationtype): {{String}}
@@ -166,7 +166,7 @@ The following example creates a connection named pagerduty-connection using ApiK
 #### JSON
 <a name="aws-resource-events-connection--examples--Create_a_connection_with_ApiKey_authorization_parameters--json"></a>
 
-```
+```json
 {
   "Resources": {
     "Connection": {
@@ -198,7 +198,7 @@ The following example creates a connection named pagerduty-connection using ApiK
 #### YAML
 <a name="aws-resource-events-connection--examples--Create_a_connection_with_ApiKey_authorization_parameters--yaml"></a>
 
-```
+```yaml
 Resources:
   Connection:
     Type: AWS::Events::Connection
@@ -224,7 +224,7 @@ The following example creates a connection named auth0-connection using OAuth au
 #### JSON
 <a name="aws-resource-events-connection--examples--Create_a_connection_with_OAuth_authorization_parameters--json"></a>
 
-```
+```json
 {
   "Resources": {
     "Auth0Connection": {
@@ -260,7 +260,7 @@ The following example creates a connection named auth0-connection using OAuth au
 #### YAML
 <a name="aws-resource-events-connection--examples--Create_a_connection_with_OAuth_authorization_parameters--yaml"></a>
 
-```
+```yaml
 Resources:
   Auth0Connection:
     Type: AWS::Events::Connection

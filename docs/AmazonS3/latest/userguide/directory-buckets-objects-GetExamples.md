@@ -15,7 +15,7 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buck
 **Example**
 The following code example shows how to read data from an object in a directory bucket by using the AWS SDK for Java 2.x.
 
-```
+```JavaV2
 public static void getObject(S3Client s3Client, String bucketName, String objectKey) {
      try {
          GetObjectRequest objectRequest = GetObjectRequest
@@ -45,7 +45,7 @@ public static void getObject(S3Client s3Client, String bucketName, String object
 **Example**
 The following code example shows how to read data from an object in a directory bucket by using the AWS SDK for Python (Boto3).
 
-```
+```Python
 import boto3
 from botocore.exceptions import ClientError
 from botocore.response import StreamingBody
@@ -84,7 +84,7 @@ if __name__ == "__main__":
 
 The following `get-object` example command shows how you can use the AWS CLI to download an object from Amazon S3. This command gets the object `{{KEY_NAME}}` from the directory bucket `{{bucket-base-name}}--{{zone-id}}--x-s3`. The object will be downloaded to a file named `{{LOCAL_FILE_NAME}}`. To run this command, replace the `{{user input placeholders}}` with your own information.
 
-```
+```bash
 aws s3api get-object --bucket {{bucket-base-name}}--{{zone-id}}--x-s3 --key {{KEY_NAME}} {{LOCAL_FILE_NAME}}
 ```
 

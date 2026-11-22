@@ -8,7 +8,7 @@ The Cisco Umbrella setup on AWS reads log data from Amazon S3 buckets using Amaz
 
 Configure the Cisco Umbrella source using the following parameters:
 
-```
+```yaml
 source:
   s3:
     aws:

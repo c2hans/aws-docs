@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-resiliencehubv2-policy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ResilienceHubV2::Policy",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-resiliencehubv2-policy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ResilienceHubV2::Policy
 Properties:
   [AvailabilitySlo](#cfn-resiliencehubv2-policy-availabilityslo): {{

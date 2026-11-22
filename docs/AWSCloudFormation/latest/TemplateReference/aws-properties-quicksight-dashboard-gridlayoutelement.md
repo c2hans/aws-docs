@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-gridlayoutelement-syntax.json"></a>
 
-```
+```json
 {
   "[BackgroundStyle](#cfn-quicksight-dashboard-gridlayoutelement-backgroundstyle)" : {{GridLayoutElementBackgroundStyle}},
   "[BorderRadius](#cfn-quicksight-dashboard-gridlayoutelement-borderradius)" : {{String}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-gridlayoutelement-syntax.yaml"></a>
 
-```
+```yaml
   [BackgroundStyle](#cfn-quicksight-dashboard-gridlayoutelement-backgroundstyle): {{
     GridLayoutElementBackgroundStyle}}
   [BorderRadius](#cfn-quicksight-dashboard-gridlayoutelement-borderradius): {{String}}

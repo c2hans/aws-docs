@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-dropdowncontroldisplayoptions-syntax.json"></a>
 
-```
+```json
 {
   "[InfoIconLabelOptions](#cfn-quicksight-dashboard-dropdowncontroldisplayoptions-infoiconlabeloptions)" : {{SheetControlInfoIconLabelOptions}},
   "[SelectAllOptions](#cfn-quicksight-dashboard-dropdowncontroldisplayoptions-selectalloptions)" : {{ListControlSelectAllOptions}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-dropdowncontroldisplayoptions-syntax.yaml"></a>
 
-```
+```yaml
   [InfoIconLabelOptions](#cfn-quicksight-dashboard-dropdowncontroldisplayoptions-infoiconlabeloptions): {{
     SheetControlInfoIconLabelOptions}}
   [SelectAllOptions](#cfn-quicksight-dashboard-dropdowncontroldisplayoptions-selectalloptions): {{

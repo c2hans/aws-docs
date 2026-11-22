@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-connectorprofile-sapodataconnectorprofilecredentials-syntax.json"></a>
 
-```
+```json
 {
   "[BasicAuthCredentials](#cfn-appflow-connectorprofile-sapodataconnectorprofilecredentials-basicauthcredentials)" : {{BasicAuthCredentials}},
   "[OAuthCredentials](#cfn-appflow-connectorprofile-sapodataconnectorprofilecredentials-oauthcredentials)" : {{OAuthCredentials}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-connectorprofile-sapodataconnectorprofilecredentials-syntax.yaml"></a>
 
-```
+```yaml
   [BasicAuthCredentials](#cfn-appflow-connectorprofile-sapodataconnectorprofilecredentials-basicauthcredentials): {{
     BasicAuthCredentials}}
   [OAuthCredentials](#cfn-appflow-connectorprofile-sapodataconnectorprofilecredentials-oauthcredentials): {{

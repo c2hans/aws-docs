@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-capacityprovider-infrastructureoptimization-syntax.json"></a>
 
-```
+```json
 {
   "[ScaleInAfter](#cfn-ecs-capacityprovider-infrastructureoptimization-scaleinafter)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-capacityprovider-infrastructureoptimization-syntax.yaml"></a>
 
-```
+```yaml
   [ScaleInAfter](#cfn-ecs-capacityprovider-infrastructureoptimization-scaleinafter): {{Integer}}
 ```
 

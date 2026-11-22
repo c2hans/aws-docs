@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-serviceconnecttesttrafficrulesheadervalue-syntax.json"></a>
 
-```
+```json
 {
   "[Exact](#cfn-ecs-service-serviceconnecttesttrafficrulesheadervalue-exact)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-serviceconnecttesttrafficrulesheadervalue-syntax.yaml"></a>
 
-```
+```yaml
   [Exact](#cfn-ecs-service-serviceconnecttesttrafficrulesheadervalue-exact): {{String}}
 ```
 

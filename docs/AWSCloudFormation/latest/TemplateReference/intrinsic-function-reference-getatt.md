@@ -14,7 +14,7 @@ The `Fn::GetAtt` intrinsic function returns the value of an attribute from a res
 ### JSON
 <a name="intrinsic-function-reference-getatt-syntax.json"></a>
 
-```
+```json
 { "Fn::GetAtt" : [ "{{logicalNameOfResource}}", "{{attributeName}}" ] }
 ```
 
@@ -23,13 +23,13 @@ The `Fn::GetAtt` intrinsic function returns the value of an attribute from a res
 
 Syntax for the full function name:
 
-```
+```yaml
 Fn::GetAtt: [ {{logicalNameOfResource}}, {{attributeName}} ]
 ```
 
 Syntax for the short form:
 
-```
+```yaml
 !GetAtt {{logicalNameOfResource}}.{{attributeName}}
 ```
 
@@ -58,14 +58,14 @@ The following examples return a string containing the DNS name of the load balan
 #### JSON
 <a name="intrinsic-function-reference-getatt-example.json"></a>
 
-```
+```json
 "Fn::GetAtt" : [ "myELB" , "DNSName" ]
 ```
 
 #### YAML
 <a name="intrinsic-function-reference-getatt-example.yaml"></a>
 
-```
+```yaml
 !GetAtt myELB.DNSName
 ```
 
@@ -77,7 +77,7 @@ The following examples return the `SourceSecurityGroup.OwnerAlias` and `SourceSe
 ##### JSON
 <a name="intrinsic-function-reference-getatt-example2.json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -128,7 +128,7 @@ The following examples return the `SourceSecurityGroup.OwnerAlias` and `SourceSe
 ##### YAML
 <a name="intrinsic-function-reference-getatt-example2.yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   myELB:
@@ -163,7 +163,7 @@ The following examples show how to use `Fn::GetAtt` with [`Fn::Sub`](intrinsic-f
 ##### JSON
 <a name="intrinsic-function-reference-getatt-foreach.json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Transform": "AWS::LanguageExtensions",
@@ -236,7 +236,7 @@ The following examples show how to use `Fn::GetAtt` with [`Fn::Sub`](intrinsic-f
 ##### YAML
 <a name="intrinsic-function-reference-getatt-foreach.yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Transform: AWS::LanguageExtensions
 Mappings:

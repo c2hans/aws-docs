@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-av1settings-syntax.json"></a>
 
-```
+```json
 {
   "[AfdSignaling](#cfn-medialive-channel-av1settings-afdsignaling)" : {{String}},
   "[BitDepth](#cfn-medialive-channel-av1settings-bitdepth)" : {{String}},
@@ -49,7 +49,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-av1settings-syntax.yaml"></a>
 
-```
+```yaml
   [AfdSignaling](#cfn-medialive-channel-av1settings-afdsignaling): {{String}}
   [BitDepth](#cfn-medialive-channel-av1settings-bitdepth): {{String}}
   [Bitrate](#cfn-medialive-channel-av1settings-bitrate): {{Integer}}

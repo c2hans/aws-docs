@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-directoryservice-microsoftad-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DirectoryService::MicrosoftAD",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-directoryservice-microsoftad-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DirectoryService::MicrosoftAD
 Properties:
   [CreateAlias](#cfn-directoryservice-microsoftad-createalias): {{Boolean}}
@@ -142,7 +142,7 @@ The following example creates a Microsoft Active Directory in AWS, where the dir
 #### JSON
 <a name="aws-resource-directoryservice-microsoftad--examples--Create_an--json"></a>
 
-```
+```json
 "myDirectory" : {
   "Type" : "AWS::DirectoryService::MicrosoftAD",
   "Properties" : {
@@ -160,7 +160,7 @@ The following example creates a Microsoft Active Directory in AWS, where the dir
 #### YAML
 <a name="aws-resource-directoryservice-microsoftad--examples--Create_an--yaml"></a>
 
-```
+```yaml
 myDirectory:
   Type: AWS::DirectoryService::MicrosoftAD
   Properties:

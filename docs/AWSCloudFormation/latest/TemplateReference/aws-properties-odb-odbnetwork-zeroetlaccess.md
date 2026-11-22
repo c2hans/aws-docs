@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-odb-odbnetwork-zeroetlaccess-syntax.json"></a>
 
-```
+```json
 {
   "[Cidr](#cfn-odb-odbnetwork-zeroetlaccess-cidr)" : {{String}},
   "[Status](#cfn-odb-odbnetwork-zeroetlaccess-status)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-odb-odbnetwork-zeroetlaccess-syntax.yaml"></a>
 
-```
+```yaml
   [Cidr](#cfn-odb-odbnetwork-zeroetlaccess-cidr): {{String}}
   [Status](#cfn-odb-odbnetwork-zeroetlaccess-status): {{String}}
 ```

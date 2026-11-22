@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-replicationrulefilter-syntax.json"></a>
 
-```
+```json
 {
   "[And](#cfn-s3-bucket-replicationrulefilter-and)" : {{ReplicationRuleAndOperator}},
   "[Prefix](#cfn-s3-bucket-replicationrulefilter-prefix)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-replicationrulefilter-syntax.yaml"></a>
 
-```
+```yaml
   [And](#cfn-s3-bucket-replicationrulefilter-and): {{
     ReplicationRuleAndOperator}}
   [Prefix](#cfn-s3-bucket-replicationrulefilter-prefix): {{String}}

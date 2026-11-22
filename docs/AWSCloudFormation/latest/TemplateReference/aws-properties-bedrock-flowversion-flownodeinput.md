@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-flowversion-flownodeinput-syntax.json"></a>
 
-```
+```json
 {
   "[Expression](#cfn-bedrock-flowversion-flownodeinput-expression)" : {{String}},
   "[Name](#cfn-bedrock-flowversion-flownodeinput-name)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-flowversion-flownodeinput-syntax.yaml"></a>
 
-```
+```yaml
   [Expression](#cfn-bedrock-flowversion-flownodeinput-expression): {{String}}
   [Name](#cfn-bedrock-flowversion-flownodeinput-name): {{String}}
   [Type](#cfn-bedrock-flowversion-flownodeinput-type): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-agentregistry-registryrecord-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-agentregistry-registryrecord-tag-key)" : {{String}},
   "[Value](#cfn-agentregistry-registryrecord-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-agentregistry-registryrecord-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-agentregistry-registryrecord-tag-key): {{String}}
   [Value](#cfn-agentregistry-registryrecord-tag-value): {{String}}
 ```

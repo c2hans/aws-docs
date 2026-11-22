@@ -89,7 +89,7 @@ To establish this setup:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -133,7 +133,7 @@ To establish this setup:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -174,7 +174,7 @@ In this setup, there are 3 replicas ReplicaA, ReplicaB, and ReplicaC in Account 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -220,7 +220,7 @@ In this setup, there are 3 replicas ReplicaA, ReplicaB, and ReplicaC in Account 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -266,7 +266,7 @@ In this setup, there are 3 replicas ReplicaA, ReplicaB, and ReplicaC in Account 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -373,7 +373,7 @@ The AWS KMS policy allows DynamoDB to access both AWS KMS keys for replication b
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codeartifact-packagegroup-restrictiontype-syntax.json"></a>
 
-```
+```json
 {
   "[Repositories](#cfn-codeartifact-packagegroup-restrictiontype-repositories)" : {{[ String, ... ]}},
   "[RestrictionMode](#cfn-codeartifact-packagegroup-restrictiontype-restrictionmode)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codeartifact-packagegroup-restrictiontype-syntax.yaml"></a>
 
-```
+```yaml
   [Repositories](#cfn-codeartifact-packagegroup-restrictiontype-repositories): {{
     - String}}
   [RestrictionMode](#cfn-codeartifact-packagegroup-restrictiontype-restrictionmode): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-webfunctionrevision-buildconfig-syntax.json"></a>
 
-```
+```json
 {
   "[CodeConfig](#cfn-lambda-webfunctionrevision-buildconfig-codeconfig)" : {{CodeConfig}},
   "[RuntimeConfig](#cfn-lambda-webfunctionrevision-buildconfig-runtimeconfig)" : {{RuntimeConfig}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-webfunctionrevision-buildconfig-syntax.yaml"></a>
 
-```
+```yaml
   [CodeConfig](#cfn-lambda-webfunctionrevision-buildconfig-codeconfig): {{
     CodeConfig}}
   [RuntimeConfig](#cfn-lambda-webfunctionrevision-buildconfig-runtimeconfig): {{

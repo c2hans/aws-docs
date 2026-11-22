@@ -64,7 +64,7 @@ To ensure that an instance runs in a specific Reserved Instance, the platform of
 **To check the AMI platform**
 Use the [describe-images](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command and check the value of `PlatformDetails`.
 
-```
+```bash
 aws ec2 describe-images \
     --image-id {{ami-0abcdef1234567890}} \
     --query Images[*].PlatformDetails
@@ -72,7 +72,7 @@ aws ec2 describe-images \
 
 The following is example output.
 
-```
+```json
 [
     "Linux/UNIX"
 ]
@@ -84,7 +84,7 @@ The following is example output.
 **To check the AMI platform**
 Use the [Get-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Image.html) cmdlet and check the value of `PlatformDetails`.
 
-```
+```powershell
 Get-EC2Image `
     -ImageId {{ami-0abcdef1234567890}} | `
     Select PlatformDetails
@@ -92,7 +92,7 @@ Get-EC2Image `
 
 The following is example output.
 
-```
+```bash
 PlatformDetails
 ---------------
 Linux/UNIX
@@ -162,7 +162,7 @@ For examples of how Reserved Instances are applied to your running instances, se
 
 1. Find available Reserved Instances using the [describe-reserved-instances-offerings](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-reserved-instances-offerings.html) command. Specify `standard` for the `--offering-class` option to return only Standard Reserved Instances. You can apply additional criteria to narrow your results. For example, use the following command to purchase a regional `t2.large` Reserved Instance with a default tenancy for `Linux/UNIX` for a 1-year term only.
 
-   ```
+   ```bash
    aws ec2 describe-reserved-instances-offerings \
        --instance-type {{t2.large}} \
        --offering-class standard \
@@ -174,7 +174,7 @@ For examples of how Reserved Instances are applied to your running instances, se
 
    To find Reserved Instances on the Reserved Instance Marketplace only, use the `marketplace` filter and do not specify a duration in the request, as the term might be shorter than a 1– or 3-year term.
 
-   ```
+   ```bash
    aws ec2 describe-reserved-instances-offerings \
        --instance-type {{t2.large}} \
        --offering-class standard \
@@ -185,13 +185,13 @@ For examples of how Reserved Instances are applied to your running instances, se
 
    When you find a Reserved Instance that meets your needs, take note of the offering ID. For example:
 
-   ```
+   ```json
    "ReservedInstancesOfferingId": "bec624df-a8cc-4aad-a72f-4f8abc34caf2"
    ```
 
 1. Use the [purchase-reserved-instances-offering](https://docs.aws.amazon.com/cli/latest/reference/ec2/purchase-reserved-instances-offering.html) command to buy your Reserved Instance. You must specify the Reserved Instance offering ID you obtained the previous step and you must specify the number of instances for the reservation.
 
-   ```
+   ```bash
    aws ec2 purchase-reserved-instances-offering \
        --reserved-instances-offering-id {{bec624df-a8cc-4aad-a72f-4f8abc34caf2}} \
        --instance-count {{1}}
@@ -199,13 +199,13 @@ For examples of how Reserved Instances are applied to your running instances, se
 
    By default, the purchase is completed immediately. Alternatively, to queue the purchase, add the following option to the previous call.
 
-   ```
+   ```bash
    --purchase-time "{{2020}}-{{12}}-{{01}}T{{00}}:{{00}}:{{00}}Z"
    ```
 
 1. Use the [describe-reserved-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-reserved-instances.html) command to get the status of your Reserved Instance.
 
-   ```
+   ```bash
    aws ec2 describe-reserved-instances \
        --reserved-instances-ids {{b847fa93-e282-4f55-b59a-1342fec06327}} \
        --query ReservedInstances[].State
@@ -218,7 +218,7 @@ For examples of how Reserved Instances are applied to your running instances, se
 
 1. Find available Reserved Instances using the [Get-EC2ReservedInstancesOffering](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2ReservedInstancesOffering.html) cmdlet. Specify `standard` for the `-OfferingClass` parameter to return only Standard Reserved Instances. You can apply additional criteria to narrow your results. For example, use the following command to purchase a regional `t2.large` Reserved Instance with a default tenancy for `Linux/UNIX` for a 1-year term only.
 
-   ```
+   ```powershell
    Get-EC2ReservedInstancesOffering `
        -InstanceType "{{t2.large}}" `
        -OfferingClass "standard" `
@@ -230,7 +230,7 @@ For examples of how Reserved Instances are applied to your running instances, se
 
    To find Reserved Instances on the Reserved Instance Marketplace only, use the `marketplace` filter and do not specify a duration in the request, as the term might be shorter than a 1– or 3-year term.
 
-   ```
+   ```powershell
    Get-EC2ReservedInstancesOffering `
        -InstanceType {{t2.large}} `
        -OfferingClass "standard" `
@@ -241,13 +241,13 @@ For examples of how Reserved Instances are applied to your running instances, se
 
    When you find a Reserved Instance that meets your needs, take note of the offering ID. For example:
 
-   ```
+   ```bash
    bec624df-a8cc-4aad-a72f-4f8abc34caf2
    ```
 
 1. Use the [New-EC2ReservedInstance](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2ReservedInstance.html) cmdlet to buy your Reserved Instance. You must specify the Reserved Instance offering ID you obtained the previous step and you must specify the number of instances for the reservation.
 
-   ```
+   ```powershell
    New-EC2ReservedInstance `
        -ReservedInstancesOfferingId "{{bec624df-a8cc-4aad-a72f-4f8abc34caf2}}" `
        -InstanceCount {{1}}
@@ -255,13 +255,13 @@ For examples of how Reserved Instances are applied to your running instances, se
 
    By default, the purchase is completed immediately. Alternatively, to queue the purchase, add the following parameter to the previous call.
 
-   ```
+   ```powershell
    -PurchaseTime "{{2020}}-{{12}}-{{01}}T{{00}}:{{00}}:{{00}}Z"
    ```
 
 1. Use the [Get-EC2ReservedInstance](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2ReservedInstance.html) cmdlet to get the status of your Reserved Instance.
 
-   ```
+   ```powershell
    Get-EC2ReservedInstance `
        -ReservedInstancesId {{b847fa93-e282-4f55-b59a-1342fec06327}} | `
        Select State
@@ -318,7 +318,7 @@ For examples of how Reserved Instances are applied to your running instances, se
 
 1. Find available Reserved Instances using the [describe-reserved-instances-offerings](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-reserved-instances-offerings.html) command. Specify `convertible` for the `--offering-class` option to return only Convertible Reserved Instances. You can apply additional criteria to narrow your results. For example, use the following command to purchase a regional `t2.large` Reserved Instance with a default tenancy for `Linux/UNIX`.
 
-   ```
+   ```bash
    aws ec2 describe-reserved-instances-offerings \
        --instance-type {{t2.large}} \
        --offering-class convertible \
@@ -329,13 +329,13 @@ For examples of how Reserved Instances are applied to your running instances, se
 
    When you find a Reserved Instance that meets your needs, take note of the offering ID. For example:
 
-   ```
+   ```json
    "ReservedInstancesOfferingId": "bec624df-a8cc-4aad-a72f-4f8abc34caf2"
    ```
 
 1. Use the [purchase-reserved-instances-offering](https://docs.aws.amazon.com/cli/latest/reference/ec2/purchase-reserved-instances-offering.html) command to buy your Reserved Instance. You must specify the Reserved Instance offering ID you obtained the previous step and you must specify the number of instances for the reservation.
 
-   ```
+   ```bash
    aws ec2 purchase-reserved-instances-offering \
        --reserved-instances-offering-id {{bec624df-a8cc-4aad-a72f-4f8abc34caf2}} \
        --instance-count {{1}}
@@ -343,13 +343,13 @@ For examples of how Reserved Instances are applied to your running instances, se
 
    By default, the purchase is completed immediately. Alternatively, to queue the purchase, add the following option to the previous call.
 
-   ```
+   ```bash
    --purchase-time "{{2020}}-{{12}}-{{01}}T{{00}}:{{00}}:{{00}}Z"
    ```
 
 1. Use the [describe-reserved-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-reserved-instances.html) command to get the status of your Reserved Instance.
 
-   ```
+   ```bash
    aws ec2 describe-reserved-instances \
        --reserved-instances-ids {{b847fa93-e282-4f55-b59a-1342fec06327}} \
        --query ReservedInstances[].State
@@ -362,7 +362,7 @@ For examples of how Reserved Instances are applied to your running instances, se
 
 1. Find available Reserved Instances using the [Get-EC2ReservedInstancesOffering](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2ReservedInstancesOffering.html) cmdlet. Specify `convertible` for the `-OfferingClass` parameter to return only Convertible Reserved Instances. You can apply additional criteria to narrow your results. For example, use the following command to purchase a regional `t2.large` Reserved Instance with a default tenancy for `Linux/UNIX`.
 
-   ```
+   ```powershell
    Get-EC2ReservedInstancesOffering `
        -InstanceType "{{t2.large}}" `
        -OfferingClass "convertible" `
@@ -373,13 +373,13 @@ For examples of how Reserved Instances are applied to your running instances, se
 
    When you find a Reserved Instance that meets your needs, take note of the offering ID. For example:
 
-   ```
+   ```bash
    bec624df-a8cc-4aad-a72f-4f8abc34caf2
    ```
 
 1. Use the [New-EC2ReservedInstance](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2ReservedInstance.html) cmdlet to buy your Reserved Instance. You must specify the Reserved Instance offering ID that you obtained the previous step and you must specify the number of instances for the reservation.
 
-   ```
+   ```powershell
    New-EC2ReservedInstance `
        -ReservedInstancesOfferingId "{{bec624df-a8cc-4aad-a72f-4f8abc34caf2}}" `
        -InstanceCount {{1}}
@@ -387,13 +387,13 @@ For examples of how Reserved Instances are applied to your running instances, se
 
    By default, the purchase is completed immediately. Alternatively, to queue the purchase, add the following parameter to the previous call.
 
-   ```
+   ```powershell
    -PurchaseTime "{{2020}}-{{12}}-{{01}}T{{00}}:{{00}}:{{00}}Z"
    ```
 
 1. Use the [Get-EC2ReservedInstance](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2ReservedInstance.html) cmdlet to get the status of your Reserved Instance.
 
-   ```
+   ```powershell
    Get-EC2ReservedInstance `
        -ReservedInstancesId {{b847fa93-e282-4f55-b59a-1342fec06327}} | `
        Select State
@@ -443,7 +443,7 @@ You can queue a purchase up to three years in advance. You can cancel a queued p
 **To cancel a queued purchase**
 Use the [delete-queued-reserved-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/delete-queued-reserved-instances.html) command.
 
-```
+```bash
 aws ec2 delete-queued-reserved-instances \
     --reserved-instances-ids {{b847fa93-e282-4f55-b59a-1342fec06327}}
 ```
@@ -454,7 +454,7 @@ aws ec2 delete-queued-reserved-instances \
 **To cancel a queued purchase**
 Use the [Remove-EC2QueuedReservedInstance](https://docs.aws.amazon.com/powershell/latest/reference/items/Remove-EC2QueuedReservedInstance.html) cmdlet.
 
-```
+```powershell
 Remove-EC2QueuedReservedInstance `
     -ReservedInstancesId {{b847fa93-e282-4f55-b59a-1342fec06327}}
 ```

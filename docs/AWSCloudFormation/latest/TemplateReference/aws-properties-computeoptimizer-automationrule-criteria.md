@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-computeoptimizer-automationrule-criteria-syntax.json"></a>
 
-```
+```json
 {
   "[EbsVolumeSizeInGib](#cfn-computeoptimizer-automationrule-criteria-ebsvolumesizeingib)" : {{[ IntegerCriteriaCondition, ... ]}},
   "[EbsVolumeType](#cfn-computeoptimizer-automationrule-criteria-ebsvolumetype)" : {{[ StringCriteriaCondition, ... ]}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-computeoptimizer-automationrule-criteria-syntax.yaml"></a>
 
-```
+```yaml
   [EbsVolumeSizeInGib](#cfn-computeoptimizer-automationrule-criteria-ebsvolumesizeingib): {{
     - IntegerCriteriaCondition}}
   [EbsVolumeType](#cfn-computeoptimizer-automationrule-criteria-ebsvolumetype): {{

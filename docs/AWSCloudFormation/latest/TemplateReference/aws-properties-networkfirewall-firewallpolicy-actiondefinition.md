@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkfirewall-firewallpolicy-actiondefinition-syntax.json"></a>
 
-```
+```json
 {
   "[PublishMetricAction](#cfn-networkfirewall-firewallpolicy-actiondefinition-publishmetricaction)" : {{PublishMetricAction}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkfirewall-firewallpolicy-actiondefinition-syntax.yaml"></a>
 
-```
+```yaml
   [PublishMetricAction](#cfn-networkfirewall-firewallpolicy-actiondefinition-publishmetricaction): {{
     PublishMetricAction}}
 ```

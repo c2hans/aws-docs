@@ -83,7 +83,7 @@ You can pass only one of `--replicas-to-remove` or `--new-replica-count` paramet
 
    This operation produces output similar to the following (JSON format):
 
-   ```
+   ```json
    {
        "ReplicationGroup": {
            "ReplicationGroupId": "node-test",

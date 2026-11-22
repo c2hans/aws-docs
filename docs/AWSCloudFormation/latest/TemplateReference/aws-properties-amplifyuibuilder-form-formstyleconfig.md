@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amplifyuibuilder-form-formstyleconfig-syntax.json"></a>
 
-```
+```json
 {
   "[TokenReference](#cfn-amplifyuibuilder-form-formstyleconfig-tokenreference)" : {{String}},
   "[Value](#cfn-amplifyuibuilder-form-formstyleconfig-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amplifyuibuilder-form-formstyleconfig-syntax.yaml"></a>
 
-```
+```yaml
   [TokenReference](#cfn-amplifyuibuilder-form-formstyleconfig-tokenreference): {{String}}
   [Value](#cfn-amplifyuibuilder-form-formstyleconfig-value): {{String}}
 ```

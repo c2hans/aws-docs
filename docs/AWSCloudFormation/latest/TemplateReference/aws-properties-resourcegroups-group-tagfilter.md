@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-resourcegroups-group-tagfilter-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-resourcegroups-group-tagfilter-key)" : {{String}},
   "[Values](#cfn-resourcegroups-group-tagfilter-values)" : {{[ String, ... ]}}
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-resourcegroups-group-tagfilter-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-resourcegroups-group-tagfilter-key): {{String}}
   [Values](#cfn-resourcegroups-group-tagfilter-values): {{
     - String}}

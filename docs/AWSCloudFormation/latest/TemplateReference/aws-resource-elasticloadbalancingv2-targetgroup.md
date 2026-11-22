@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-elasticloadbalancingv2-targetgroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ElasticLoadBalancingV2::TargetGroup",
   "Properties" : {
@@ -49,7 +49,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-elasticloadbalancingv2-targetgroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ElasticLoadBalancingV2::TargetGroup
 Properties:
   [HealthCheckEnabled](#cfn-elasticloadbalancingv2-targetgroup-healthcheckenabled): {{Boolean}}
@@ -279,7 +279,7 @@ The following example creates a target group where the targets are EC2 instances
 #### YAML
 <a name="aws-resource-elasticloadbalancingv2-targetgroup--examples--Target_group_with_instance_targets--yaml"></a>
 
-```
+```yaml
 myTargetGroup:
     Type: AWS::ElasticLoadBalancingV2::TargetGroup
     Properties:
@@ -298,7 +298,7 @@ myTargetGroup:
 #### JSON
 <a name="aws-resource-elasticloadbalancingv2-targetgroup--examples--Target_group_with_instance_targets--json"></a>
 
-```
+```json
 {
     "myTargetGroup": {
         "Type": "AWS::ElasticLoadBalancingV2::TargetGroup",
@@ -343,7 +343,7 @@ The following example creates a target group where the targets are IP addresses.
 #### YAML
 <a name="aws-resource-elasticloadbalancingv2-targetgroup--examples--Target_group_with_ip_targets--yaml"></a>
 
-```
+```yaml
 myTargetGroup:
     Type: AWS::ElasticLoadBalancingV2::TargetGroup
     Properties:
@@ -362,7 +362,7 @@ myTargetGroup:
 #### JSON
 <a name="aws-resource-elasticloadbalancingv2-targetgroup--examples--Target_group_with_ip_targets--json"></a>
 
-```
+```json
 {
     "myTargetGroup": {
         "Type": "AWS::ElasticLoadBalancingV2::TargetGroup",
@@ -407,7 +407,7 @@ The following example creates a target group where the targets are configured fo
 #### YAML
 <a name="aws-resource-elasticloadbalancingv2-targetgroup--examples--Target_group_with_QUIC_targets--yaml"></a>
 
-```
+```yaml
 myTargetGroup:
     Type: AWS::ElasticLoadBalancingV2::TargetGroup
     Properties:
@@ -428,7 +428,7 @@ myTargetGroup:
 #### JSON
 <a name="aws-resource-elasticloadbalancingv2-targetgroup--examples--Target_group_with_QUIC_targets--json"></a>
 
-```
+```json
 {
     "myTargetGroup": {
         "Type": "AWS::ElasticLoadBalancingV2::TargetGroup",
@@ -475,7 +475,7 @@ The following example creates a target group where the target is an Application 
 #### YAML
 <a name="aws-resource-elasticloadbalancingv2-targetgroup--examples--Target_group_with_an_Application_Load_Balancer_target--yaml"></a>
 
-```
+```yaml
 myTargetGroup:
     Type: AWS::ElasticLoadBalancingV2::TargetGroup
     Properties:
@@ -492,7 +492,7 @@ myTargetGroup:
 #### JSON
 <a name="aws-resource-elasticloadbalancingv2-targetgroup--examples--Target_group_with_an_Application_Load_Balancer_target--json"></a>
 
-```
+```json
 {
     "myTargetGroup": {
         "Type": "AWS::ElasticLoadBalancingV2::TargetGroup",
@@ -525,7 +525,7 @@ The following example creates a target group where the target is a Lambda functi
 #### YAML
 <a name="aws-resource-elasticloadbalancingv2-targetgroup--examples--Target_group_with_a_Lambda_target--yaml"></a>
 
-```
+```yaml
 Resources:
   MyLambdaInvokePermission:
     Type: AWS::Lambda::Permission

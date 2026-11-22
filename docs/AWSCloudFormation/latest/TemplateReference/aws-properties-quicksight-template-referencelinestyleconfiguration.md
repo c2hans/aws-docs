@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-referencelinestyleconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Color](#cfn-quicksight-template-referencelinestyleconfiguration-color)" : {{String}},
   "[Pattern](#cfn-quicksight-template-referencelinestyleconfiguration-pattern)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-referencelinestyleconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Color](#cfn-quicksight-template-referencelinestyleconfiguration-color): {{String}}
   [Pattern](#cfn-quicksight-template-referencelinestyleconfiguration-pattern): {{String}}
 ```

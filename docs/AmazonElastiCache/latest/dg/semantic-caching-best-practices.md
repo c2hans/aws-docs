@@ -44,7 +44,7 @@ Use TTL to control how long cached responses are served before they are regenera
 | Real-time data (prices, inventory) | 5–15 minutes | Data changes frequently |
 | Conversation context | 30 minutes | Session-scoped, short-lived |
 
-```
+```python
 # Set TTL with random jitter to spread out cache invalidations
 import random
 
@@ -61,7 +61,7 @@ Set TTLs that match your application use case and how often your data or model o
 
 Track cache performance metrics to optimize your semantic cache over time:
 
-```
+```python
 def record_cache_event(valkey_client, event_type: str):
     """Track cache hits and misses using atomic counters."""
     valkey_client.incr(f"cache:metrics:{event_type}")
@@ -98,7 +98,7 @@ def get_cache_stats(valkey_client) -> dict:
 + **Plan for capacity** – Each cache entry typically requires approximately 4–6 KB (embedding dimensions × 4 bytes \+ query text \+ response text). A 1 GB ElastiCache instance can store approximately 170,000 cached entries.
 + **Use cache invalidation for stale data** – When underlying data changes, use text search to find and invalidate related cache entries:
 
-  ```
+  ```python
   def invalidate_by_topic(valkey_client, topic_keyword: str):
       """Remove cached entries matching a topic after a data update."""
       results = valkey_client.execute_command(

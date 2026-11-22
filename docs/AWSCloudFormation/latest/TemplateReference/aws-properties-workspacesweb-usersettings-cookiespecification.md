@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspacesweb-usersettings-cookiespecification-syntax.json"></a>
 
-```
+```json
 {
   "[Domain](#cfn-workspacesweb-usersettings-cookiespecification-domain)" : {{String}},
   "[Name](#cfn-workspacesweb-usersettings-cookiespecification-name)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspacesweb-usersettings-cookiespecification-syntax.yaml"></a>
 
-```
+```yaml
   [Domain](#cfn-workspacesweb-usersettings-cookiespecification-domain): {{String}}
   [Name](#cfn-workspacesweb-usersettings-cookiespecification-name): {{String}}
   [Path](#cfn-workspacesweb-usersettings-cookiespecification-path): {{String}}

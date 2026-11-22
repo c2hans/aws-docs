@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cognito-identitypool-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Cognito::IdentityPool",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cognito-identitypool-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Cognito::IdentityPool
 Properties:
   [AllowClassicFlow](#cfn-cognito-identitypool-allowclassicflow): {{Boolean}}

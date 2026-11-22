@@ -46,7 +46,7 @@ For more information, see [Amazon EC2 Auto Scaling instance lifecycle](https://d
 **Tools for PowerShell V4**
 **Example 1: This example puts the specified instance into standby mode and decreases the desired capacity so that Auto Scaling does not launch a replacement instance.**
 
-```
+```powershell
 Enter-ASStandby -InstanceId i-93633f9b -AutoScalingGroupName my-asg -ShouldDecrementDesiredCapacity $true
 ```
 **Output:**
@@ -66,7 +66,7 @@ StatusMessage        :
 ```
 **Example 2: This example puts the specified instance into standby mode without decreasing the desired capacity. Auto Scaling launches a replacement instance.**
 
-```
+```powershell
 Enter-ASStandby -InstanceId i-93633f9b -AutoScalingGroupName my-asg -ShouldDecrementDesiredCapacity $false
 ```
 **Output:**
@@ -88,7 +88,7 @@ StatusMessage        :
 **Tools for PowerShell V5**
 **Example 1: This example puts the specified instance into standby mode and decreases the desired capacity so that Auto Scaling does not launch a replacement instance.**
 
-```
+```powershell
 Enter-ASStandby -InstanceId i-93633f9b -AutoScalingGroupName my-asg -ShouldDecrementDesiredCapacity $true
 ```
 **Output:**
@@ -108,7 +108,7 @@ StatusMessage        :
 ```
 **Example 2: This example puts the specified instance into standby mode without decreasing the desired capacity. Auto Scaling launches a replacement instance.**
 
-```
+```powershell
 Enter-ASStandby -InstanceId i-93633f9b -AutoScalingGroupName my-asg -ShouldDecrementDesiredCapacity $false
 ```
 **Output:**

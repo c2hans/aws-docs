@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-syntax.json"></a>
 
-```
+```json
 {
   "[CloudWatchOutputConfig](#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-cloudwatchoutputconfig)" : {{CloudWatchOutputConfig}},
   "[Comment](#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-comment)" : {{String}},
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-syntax.yaml"></a>
 
-```
+```yaml
   [CloudWatchOutputConfig](#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-cloudwatchoutputconfig): {{
     CloudWatchOutputConfig}}
   [Comment](#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-comment): {{String}}

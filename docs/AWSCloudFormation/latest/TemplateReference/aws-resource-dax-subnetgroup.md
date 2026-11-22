@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-dax-subnetgroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DAX::SubnetGroup",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-dax-subnetgroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DAX::SubnetGroup
 Properties:
   [Description](#cfn-dax-subnetgroup-description): {{String}}
@@ -91,7 +91,7 @@ The following example creates a DAX subnet group.
 #### JSON
 <a name="aws-resource-dax-subnetgroup--examples--Create_Subnet_group--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "Create a DAX subnet group",
@@ -155,7 +155,7 @@ The following example creates a DAX subnet group.
 #### YAML
 <a name="aws-resource-dax-subnetgroup--examples--Create_Subnet_group--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Description: "DAX subnet group"
 Resources:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-databrew-schedule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DataBrew::Schedule",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-databrew-schedule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DataBrew::Schedule
 Properties:
   [CronExpression](#cfn-databrew-schedule-cronexpression): {{String}}
@@ -97,7 +97,7 @@ The following examples create new DataBrew schedules.
 #### YAML
 <a name="aws-resource-databrew-schedule--examples--Creating_schedules--yaml"></a>
 
-```
+```yaml
 Resources:
   TestDataBrewSchedule:
     Type: AWS::DataBrew::Schedule
@@ -111,7 +111,7 @@ Resources:
 #### JSON
 <a name="aws-resource-databrew-schedule--examples--Creating_schedules--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "This CloudFormation template specifies a DataBrew Schedule",

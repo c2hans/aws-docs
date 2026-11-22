@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-layercustomaction-syntax.json"></a>
 
-```
+```json
 {
   "[ActionOperations](#cfn-quicksight-analysis-layercustomaction-actionoperations)" : {{[ LayerCustomActionOperation, ... ]}},
   "[CustomActionId](#cfn-quicksight-analysis-layercustomaction-customactionid)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-layercustomaction-syntax.yaml"></a>
 
-```
+```yaml
   [ActionOperations](#cfn-quicksight-analysis-layercustomaction-actionoperations): {{
     - LayerCustomActionOperation}}
   [CustomActionId](#cfn-quicksight-analysis-layercustomaction-customactionid): {{String}}

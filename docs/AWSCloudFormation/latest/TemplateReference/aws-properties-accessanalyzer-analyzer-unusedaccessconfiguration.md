@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-accessanalyzer-analyzer-unusedaccessconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AnalysisRule](#cfn-accessanalyzer-analyzer-unusedaccessconfiguration-analysisrule)" : {{AnalysisRule}},
   "[UnusedAccessAge](#cfn-accessanalyzer-analyzer-unusedaccessconfiguration-unusedaccessage)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-accessanalyzer-analyzer-unusedaccessconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AnalysisRule](#cfn-accessanalyzer-analyzer-unusedaccessconfiguration-analysisrule): {{
     AnalysisRule}}
   [UnusedAccessAge](#cfn-accessanalyzer-analyzer-unusedaccessconfiguration-unusedaccessage): {{Integer}}

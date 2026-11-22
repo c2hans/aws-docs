@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelpackage-sourcealgorithmspecification-syntax.json"></a>
 
-```
+```json
 {
   "[SourceAlgorithms](#cfn-sagemaker-modelpackage-sourcealgorithmspecification-sourcealgorithms)" : {{[ SourceAlgorithm, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelpackage-sourcealgorithmspecification-syntax.yaml"></a>
 
-```
+```yaml
   [SourceAlgorithms](#cfn-sagemaker-modelpackage-sourcealgorithmspecification-sourcealgorithms): {{
     - SourceAlgorithm}}
 ```

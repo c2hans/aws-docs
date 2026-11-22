@@ -64,7 +64,7 @@ The following CLI example shows you how to create a vector bucket with tags by u
 
 When you create a vector bucket you must provide configuration details and use the following naming convention: `example-vector-bucket`
 
-```
+```bash
 aws s3vector create-vector-bucket --vector-bucket-name {{acc-bucket}} \
   --tags {{Department}}={{Accounting}},{{Stage}}={{Prod}}
 ```

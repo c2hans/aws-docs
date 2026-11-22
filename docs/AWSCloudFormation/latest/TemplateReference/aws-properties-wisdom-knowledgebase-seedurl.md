@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-knowledgebase-seedurl-syntax.json"></a>
 
-```
+```json
 {
   "[Url](#cfn-wisdom-knowledgebase-seedurl-url)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-knowledgebase-seedurl-syntax.yaml"></a>
 
-```
+```yaml
   [Url](#cfn-wisdom-knowledgebase-seedurl-url): {{String}}
 ```
 

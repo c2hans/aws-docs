@@ -11,7 +11,7 @@ On top of the `AmazonConnect_FullAccess` IAM policy, users need the following IA
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

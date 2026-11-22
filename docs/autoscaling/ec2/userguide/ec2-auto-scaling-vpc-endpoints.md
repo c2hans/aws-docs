@@ -35,7 +35,7 @@ You can attach a policy to your VPC endpoint to control access to the Amazon EC2
 
 The following example shows a VPC endpoint policy that denies everyone permission to delete a scaling policy through the endpoint. The example policy also grants everyone permission to perform all other actions.
 
-```
+```json
 {
    "Statement": [
         {

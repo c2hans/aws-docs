@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-entityresolution-matchingworkflow-matchingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[EnableTransitiveMatching](#cfn-entityresolution-matchingworkflow-matchingconfig-enabletransitivematching)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-entityresolution-matchingworkflow-matchingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [EnableTransitiveMatching](#cfn-entityresolution-matchingworkflow-matchingconfig-enabletransitivematching): {{Boolean}}
 ```
 

@@ -74,7 +74,7 @@ Slow log supports both JSON and TEXT
 
 The following shows a JSON format example:
 
-```
+```json
 {
   "CacheClusterId": "logslowxxxxmsxj",
   "CacheNodeId": "0001",
@@ -100,7 +100,7 @@ Engine log supports both JSON and TEXT
 
 The following shows a JSON format example:
 
-```
+```json
 {
   "CacheClusterId": "xxxxxxxxxzy-engine-log-test",
   "CacheNodeId": "0001",

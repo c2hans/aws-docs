@@ -40,7 +40,7 @@ For more information about best practices in IAM, see [Security best practices i
 
 This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -85,7 +85,7 @@ The following IAM policy allows permission to create and list clusters. The `Cre
 
 ****
 
-```
+```json
 {
     "Statement": [
         {
@@ -107,7 +107,7 @@ The following IAM policy allows permission to create and list clusters. The `Cre
 
 ****
 
-```
+```json
 {
     "Statement": [
         {
@@ -131,7 +131,7 @@ The following IAM policy allows permission to describe and delete a specific clu
 
 ****
 
-```
+```json
 {
     "Statement": [
         {
@@ -183,7 +183,7 @@ The following IAM policy can be attached to a user or group that would only allo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -241,7 +241,7 @@ The following IAM policy allows a user to list and deregister container instance
 
 ****
 
-```
+```json
 {
     "Statement": [
         {
@@ -270,7 +270,7 @@ If you use the console, you must add `CloudFormation: CreateStack` as an `Action
 
 ****
 
-```
+```json
 {
     "Statement": [
         {
@@ -300,7 +300,7 @@ The following IAM policy allows permission to run any revision of a specific tas
 
 ****
 
-```
+```json
 {
     "Statement": [
         {
@@ -332,7 +332,7 @@ For this example, when you call the `StartTask` API with the AWS CLI or another 
 
 ****
 
-```
+```json
 {
     "Statement": [
         {
@@ -362,7 +362,7 @@ The following IAM policy allows a user to describe a specified task in a specifi
 
 ****
 
-```
+```json
 {
     "Statement": [
         {
@@ -389,7 +389,7 @@ The following IAM policy allows a user to create Amazon ECS services in the AWS 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -431,7 +431,7 @@ You can use conditions in your identity-based policy to control access to Amazon
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -468,7 +468,7 @@ The following IAM policy denies a user from overriding the default Service Conne
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

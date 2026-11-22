@@ -20,7 +20,7 @@ The following IAM policy grants permissions to run all PartiQL for DynamoDB stat
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -52,7 +52,7 @@ The following IAM policy grants permissions to run the `select` statement on a s
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -81,7 +81,7 @@ The following IAM policy grants permissions to run the `select` statement on a s
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -110,7 +110,7 @@ The following IAM policy grants permissions to run only transactional statements
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -149,7 +149,7 @@ The following IAM policy grants permissions to run only transactional statements
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -200,7 +200,7 @@ The following IAM policy grants permissions to run the `select` statement on a s
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[

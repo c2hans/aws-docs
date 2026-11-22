@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-config-remediationconfiguration-ssmcontrols-syntax.json"></a>
 
-```
+```json
 {
   "[ConcurrentExecutionRatePercentage](#cfn-config-remediationconfiguration-ssmcontrols-concurrentexecutionratepercentage)" : {{Integer}},
   "[ErrorPercentage](#cfn-config-remediationconfiguration-ssmcontrols-errorpercentage)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-config-remediationconfiguration-ssmcontrols-syntax.yaml"></a>
 
-```
+```yaml
   [ConcurrentExecutionRatePercentage](#cfn-config-remediationconfiguration-ssmcontrols-concurrentexecutionratepercentage): {{Integer}}
   [ErrorPercentage](#cfn-config-remediationconfiguration-ssmcontrols-errorpercentage): {{Integer}}
 ```

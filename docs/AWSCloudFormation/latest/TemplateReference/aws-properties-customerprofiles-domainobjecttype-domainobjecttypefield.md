@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-domainobjecttype-domainobjecttypefield-syntax.json"></a>
 
-```
+```json
 {
   "[ContentType](#cfn-customerprofiles-domainobjecttype-domainobjecttypefield-contenttype)" : {{String}},
   "[FeatureType](#cfn-customerprofiles-domainobjecttype-domainobjecttypefield-featuretype)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-domainobjecttype-domainobjecttypefield-syntax.yaml"></a>
 
-```
+```yaml
   [ContentType](#cfn-customerprofiles-domainobjecttype-domainobjecttypefield-contenttype): {{String}}
   [FeatureType](#cfn-customerprofiles-domainobjecttype-domainobjecttypefield-featuretype): {{String}}
   [Source](#cfn-customerprofiles-domainobjecttype-domainobjecttypefield-source): {{String}}

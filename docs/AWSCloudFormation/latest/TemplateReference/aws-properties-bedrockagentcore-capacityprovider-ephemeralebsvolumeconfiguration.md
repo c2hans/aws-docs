@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-capacityprovider-ephemeralebsvolumeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EbsCardIndex](#cfn-bedrockagentcore-capacityprovider-ephemeralebsvolumeconfiguration-ebscardindex)" : {{Integer}},
   "[Encrypted](#cfn-bedrockagentcore-capacityprovider-ephemeralebsvolumeconfiguration-encrypted)" : {{Boolean}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-capacityprovider-ephemeralebsvolumeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EbsCardIndex](#cfn-bedrockagentcore-capacityprovider-ephemeralebsvolumeconfiguration-ebscardindex): {{Integer}}
   [Encrypted](#cfn-bedrockagentcore-capacityprovider-ephemeralebsvolumeconfiguration-encrypted): {{Boolean}}
   [Iops](#cfn-bedrockagentcore-capacityprovider-ephemeralebsvolumeconfiguration-iops): {{Integer}}

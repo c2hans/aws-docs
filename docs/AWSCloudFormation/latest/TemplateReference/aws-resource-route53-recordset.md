@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-route53-recordset-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Route53::RecordSet",
   "Properties" : {
@@ -47,7 +47,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-route53-recordset-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53::RecordSet
 Properties:
   [AliasTarget](#cfn-route53-recordset-aliastarget): {{
@@ -320,7 +320,7 @@ The following example shows how to specify the settings for an A record.
 #### JSON
 <a name="aws-resource-route53-recordset--examples--Creating_a_Route_53_A_record--json"></a>
 
-```
+```json
 {
    "Resources" : {
       "myDNSRecord" : {
@@ -342,7 +342,7 @@ The following example shows how to specify the settings for an A record.
 #### YAML
 <a name="aws-resource-route53-recordset--examples--Creating_a_Route_53_A_record--yaml"></a>
 
-```
+```yaml
 Resources:
   myDNSRecord:
     Type: AWS::Route53::RecordSet
@@ -363,7 +363,7 @@ The following example shows how to create an A record for an Amazon EC2 instance
 #### JSON
 <a name="aws-resource-route53-recordset--examples--Creating_a_Route_53_A_record_for_an_Amazon_EC2_instance--json"></a>
 
-```
+```json
 {
    "Resources" : {
       "Ec2Instance" : {
@@ -424,7 +424,7 @@ The following example shows how to create an A record for an Amazon EC2 instance
 #### YAML
 <a name="aws-resource-route53-recordset--examples--Creating_a_Route_53_A_record_for_an_Amazon_EC2_instance--yaml"></a>
 
-```
+```yaml
 Resources:
   Ec2Instance:
     Type: AWS::EC2::Instance

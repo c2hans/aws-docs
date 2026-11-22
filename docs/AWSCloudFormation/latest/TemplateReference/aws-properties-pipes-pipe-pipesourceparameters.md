@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-pipesourceparameters-syntax.json"></a>
 
-```
+```json
 {
   "[ActiveMQBrokerParameters](#cfn-pipes-pipe-pipesourceparameters-activemqbrokerparameters)" : {{PipeSourceActiveMQBrokerParameters}},
   "[DynamoDBStreamParameters](#cfn-pipes-pipe-pipesourceparameters-dynamodbstreamparameters)" : {{PipeSourceDynamoDBStreamParameters}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-pipesourceparameters-syntax.yaml"></a>
 
-```
+```yaml
   [ActiveMQBrokerParameters](#cfn-pipes-pipe-pipesourceparameters-activemqbrokerparameters): {{
     PipeSourceActiveMQBrokerParameters}}
   [DynamoDBStreamParameters](#cfn-pipes-pipe-pipesourceparameters-dynamodbstreamparameters): {{

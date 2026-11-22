@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cleanroomsml-configuredmodelalgorithm-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CleanRoomsML::ConfiguredModelAlgorithm",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cleanroomsml-configuredmodelalgorithm-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CleanRoomsML::ConfiguredModelAlgorithm
 Properties:
   [Description](#cfn-cleanroomsml-configuredmodelalgorithm-description): {{String}}
@@ -153,7 +153,7 @@ The following example creates a configured model algorithm with training and inf
 #### JSON
 <a name="aws-resource-cleanroomsml-configuredmodelalgorithm--examples--Create_a_configured_model_algorithm--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -190,7 +190,7 @@ The following example creates a configured model algorithm with training and inf
 #### YAML
 <a name="aws-resource-cleanroomsml-configuredmodelalgorithm--examples--Create_a_configured_model_algorithm--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   MyConfiguredModelAlgorithm:

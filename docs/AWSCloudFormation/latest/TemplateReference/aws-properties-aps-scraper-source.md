@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-aps-scraper-source-syntax.json"></a>
 
-```
+```json
 {
   "[EksConfiguration](#cfn-aps-scraper-source-eksconfiguration)" : {{EksConfiguration}},
   "[VpcConfiguration](#cfn-aps-scraper-source-vpcconfiguration)" : {{VpcConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-aps-scraper-source-syntax.yaml"></a>
 
-```
+```yaml
   [EksConfiguration](#cfn-aps-scraper-source-eksconfiguration): {{
     EksConfiguration}}
   [VpcConfiguration](#cfn-aps-scraper-source-vpcconfiguration): {{

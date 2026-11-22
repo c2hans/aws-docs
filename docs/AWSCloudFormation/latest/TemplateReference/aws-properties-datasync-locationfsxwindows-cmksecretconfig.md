@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datasync-locationfsxwindows-cmksecretconfig-syntax.json"></a>
 
-```
+```json
 {
   "[KmsKeyArn](#cfn-datasync-locationfsxwindows-cmksecretconfig-kmskeyarn)" : {{String}},
   "[SecretArn](#cfn-datasync-locationfsxwindows-cmksecretconfig-secretarn)" : {{String}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datasync-locationfsxwindows-cmksecretconfig-syntax.yaml"></a>
 
-```
+```yaml
   [KmsKeyArn](#cfn-datasync-locationfsxwindows-cmksecretconfig-kmskeyarn): {{String}}
   [SecretArn](#cfn-datasync-locationfsxwindows-cmksecretconfig-secretarn): {{String}}
 ```

@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-wafregional-geomatchset-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::WAFRegional::GeoMatchSet",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-wafregional-geomatchset-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::WAFRegional::GeoMatchSet
 Properties:
   [GeoMatchConstraints](#cfn-wafregional-geomatchset-geomatchconstraints): {{
@@ -89,7 +89,7 @@ The following example defines a set of GeoMatchConstraints for a web access cont
 #### JSON
 <a name="aws-resource-wafregional-geomatchset--examples--Define_Geographic_Constraints--json"></a>
 
-```
+```json
 "MyGeoConstraints": {
   "Type": "AWS::WAFRegional::GeoMatchSet",
   "Properties": {
@@ -111,7 +111,7 @@ The following example defines a set of GeoMatchConstraints for a web access cont
 #### YAML
 <a name="aws-resource-wafregional-geomatchset--examples--Define_Geographic_Constraints--yaml"></a>
 
-```
+```yaml
 MyGeoConstraints:
   Type: "AWS::WAFRegional::GeoMatchSet"
   Properties:
@@ -133,7 +133,7 @@ The following example associates the `MyGeoConstraints` with a web ACL rule.
 #### JSON
 <a name="aws-resource-wafregional-geomatchset--examples--Associate_a_GeoMatchSet_with_a_Web_ACL_Rule--json"></a>
 
-```
+```json
 "MyGeoMatchRule" : {
   "Type": "AWS::WAFRegional::Rule",
   "Properties": {
@@ -153,7 +153,7 @@ The following example associates the `MyGeoConstraints` with a web ACL rule.
 #### YAML
 <a name="aws-resource-wafregional-geomatchset--examples--Associate_a_GeoMatchSet_with_a_Web_ACL_Rule--yaml"></a>
 
-```
+```yaml
 MyGeoMatchRule:
   Type: "AWS::WAFRegional::Rule"
   Properties:
@@ -175,7 +175,7 @@ The following example associates the `MyGeoMatchRule` rule with a web ACL. The w
 #### JSON
 <a name="aws-resource-wafregional-geomatchset--examples--Create_a_Web_ACL--json"></a>
 
-```
+```json
 "MyWebACL": {
   "Type": "AWS::WAFRegional::WebACL",
   "Properties": {
@@ -200,7 +200,7 @@ The following example associates the `MyGeoMatchRule` rule with a web ACL. The w
 #### YAML
 <a name="aws-resource-wafregional-geomatchset--examples--Create_a_Web_ACL--yaml"></a>
 
-```
+```yaml
 MyWebACL:
   Type: "AWS::WAFRegional::WebACL"
   Properties:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-input-inputdestinationroute-syntax.json"></a>
 
-```
+```json
 {
   "[Cidr](#cfn-medialive-input-inputdestinationroute-cidr)" : {{String}},
   "[Gateway](#cfn-medialive-input-inputdestinationroute-gateway)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-input-inputdestinationroute-syntax.yaml"></a>
 
-```
+```yaml
   [Cidr](#cfn-medialive-input-inputdestinationroute-cidr): {{String}}
   [Gateway](#cfn-medialive-input-inputdestinationroute-gateway): {{String}}
 ```

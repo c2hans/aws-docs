@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-pivottablepaginatedreportoptions-syntax.json"></a>
 
-```
+```json
 {
   "[OverflowColumnHeaderVisibility](#cfn-quicksight-dashboard-pivottablepaginatedreportoptions-overflowcolumnheadervisibility)" : {{String}},
   "[VerticalOverflowVisibility](#cfn-quicksight-dashboard-pivottablepaginatedreportoptions-verticaloverflowvisibility)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-pivottablepaginatedreportoptions-syntax.yaml"></a>
 
-```
+```yaml
   [OverflowColumnHeaderVisibility](#cfn-quicksight-dashboard-pivottablepaginatedreportoptions-overflowcolumnheadervisibility): {{String}}
   [VerticalOverflowVisibility](#cfn-quicksight-dashboard-pivottablepaginatedreportoptions-verticaloverflowvisibility): {{String}}
 ```

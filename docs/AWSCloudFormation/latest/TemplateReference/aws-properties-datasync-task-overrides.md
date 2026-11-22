@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datasync-task-overrides-syntax.json"></a>
 
-```
+```json
 {
   "[Deleted](#cfn-datasync-task-overrides-deleted)" : {{Deleted}},
   "[Skipped](#cfn-datasync-task-overrides-skipped)" : {{Skipped}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datasync-task-overrides-syntax.yaml"></a>
 
-```
+```yaml
   [Deleted](#cfn-datasync-task-overrides-deleted): {{
     Deleted}}
   [Skipped](#cfn-datasync-task-overrides-skipped): {{

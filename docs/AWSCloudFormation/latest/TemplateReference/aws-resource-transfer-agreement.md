@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-transfer-agreement-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Transfer::Agreement",
   "Properties" : {
@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-transfer-agreement-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Transfer::Agreement
 Properties:
   [AccessRole](#cfn-transfer-agreement-accessrole): {{String}}

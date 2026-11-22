@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-instance-blockdevicemapping-syntax.json"></a>
 
-```
+```json
 {
   "[DeviceName](#cfn-ec2-instance-blockdevicemapping-devicename)" : {{String}},
   "[Ebs](#cfn-ec2-instance-blockdevicemapping-ebs)" : {{Ebs}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-instance-blockdevicemapping-syntax.yaml"></a>
 
-```
+```yaml
   [DeviceName](#cfn-ec2-instance-blockdevicemapping-devicename): {{String}}
   [Ebs](#cfn-ec2-instance-blockdevicemapping-ebs): {{
     Ebs}}
@@ -89,7 +89,7 @@ This example sets the size of an EBS-backed root device to 50 GiB and adds anoth
 #### JSON
 <a name="aws-properties-ec2-instance-blockdevicemapping--examples--Block_device_mapping_with_two_EBS_volumes--json"></a>
 
-```
+```json
 "BlockDeviceMappings" : [
    {
       "DeviceName" : "/dev/sda1",
@@ -105,7 +105,7 @@ This example sets the size of an EBS-backed root device to 50 GiB and adds anoth
 #### YAML
 <a name="aws-properties-ec2-instance-blockdevicemapping--examples--Block_device_mapping_with_two_EBS_volumes--yaml"></a>
 
-```
+```yaml
 BlockDeviceMappings:
   - DeviceName: /dev/sda1
     Ebs:
@@ -123,7 +123,7 @@ To unmap a device defined in the AMI, set the `NoDevice` property to an empty ma
 #### JSON
 <a name="aws-properties-ec2-instance-blockdevicemapping--examples--Unmap_an_AMI-defined_device--json"></a>
 
-```
+```json
 "BlockDeviceMappings" : [
    {
       "DeviceName":"/dev/sde",
@@ -135,7 +135,7 @@ To unmap a device defined in the AMI, set the `NoDevice` property to an empty ma
 #### YAML
 <a name="aws-properties-ec2-instance-blockdevicemapping--examples--Unmap_an_AMI-defined_device--yaml"></a>
 
-```
+```yaml
 BlockDeviceMappings:
   - DeviceName: /dev/sde
     NoDevice: {}

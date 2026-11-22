@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-experimenttrialcomponent-status-syntax.json"></a>
 
-```
+```json
 {
   "[Message](#cfn-sagemaker-experimenttrialcomponent-status-message)" : {{String}},
   "[PrimaryStatus](#cfn-sagemaker-experimenttrialcomponent-status-primarystatus)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-experimenttrialcomponent-status-syntax.yaml"></a>
 
-```
+```yaml
   [Message](#cfn-sagemaker-experimenttrialcomponent-status-message): {{String}}
   [PrimaryStatus](#cfn-sagemaker-experimenttrialcomponent-status-primarystatus): {{String}}
 ```

@@ -55,14 +55,14 @@ Exports a definition of an API in a particular output format and specification.
 #### ExportedApi schema
 <a name="apis-apiid-exports-specification-response-body-exportedapi-example"></a>
 
-```
+```json
 "string"
 ```
 
 #### BadRequestException schema
 <a name="apis-apiid-exports-specification-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -71,7 +71,7 @@ Exports a definition of an API in a particular output format and specification.
 #### NotFoundException schema
 <a name="apis-apiid-exports-specification-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -81,7 +81,7 @@ Exports a definition of an API in a particular output format and specification.
 #### LimitExceededException schema
 <a name="apis-apiid-exports-specification-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

@@ -29,7 +29,7 @@ When constructing your request, make sure that the `file` field is the last fiel
 ### Syntax
 <a name="RESTObjectPOST-requests-syntax"></a>
 
-```
+```http
  1. POST / HTTP/1.1
  2. Host: {{destinationBucket}}.s3.amazonaws.com
  3. User-Agent: {{browser_data}}
@@ -221,7 +221,7 @@ This implementation of the operation does not return special errors. For general
 ### Sample Request
 <a name="ExampleVersionObjectPost"></a>
 
-```
+```http
 1. POST /Neo HTTP/1.1
 2. Content-Length: 4
 3. Host: quotes.s3.amazonaws.com
@@ -238,7 +238,7 @@ This implementation of the operation does not return special errors. For general
 
 The following is a sample response when bucket versioning is suspended:
 
-```
+```http
  1. HTTP/1.1 100 Continue
  2. HTTP/1.1 200 OK
  3. x-amz-id-2: LriYPLdmOdAiIfgSm/F1YsViT1LW94/xUQxMsF7xiEb1a0wiIOIxl+zbwZ163pt7
@@ -258,7 +258,7 @@ In this response, the version ID is `null`.
 
 The following is a sample response when bucket versioning is enabled.
 
-```
+```http
  1. HTTP/1.1 100 Continue
  2. HTTP/1.1 200 OK
  3. x-amz-id-2: LriYPLdmOdAiIfgSm/F1YsViT1LW94/xUQxMsF7xiEb1a0wiIOIxl+zbwZ163pt7

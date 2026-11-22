@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-image-workflowconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[OnFailure](#cfn-imagebuilder-image-workflowconfiguration-onfailure)" : {{String}},
   "[ParallelGroup](#cfn-imagebuilder-image-workflowconfiguration-parallelgroup)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-image-workflowconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [OnFailure](#cfn-imagebuilder-image-workflowconfiguration-onfailure): {{String}}
   [ParallelGroup](#cfn-imagebuilder-image-workflowconfiguration-parallelgroup): {{String}}
   [Parameters](#cfn-imagebuilder-image-workflowconfiguration-parameters): {{

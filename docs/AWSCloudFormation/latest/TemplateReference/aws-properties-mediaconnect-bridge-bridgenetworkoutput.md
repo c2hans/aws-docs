@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-bridge-bridgenetworkoutput-syntax.json"></a>
 
-```
+```json
 {
   "[IpAddress](#cfn-mediaconnect-bridge-bridgenetworkoutput-ipaddress)" : {{String}},
   "[Name](#cfn-mediaconnect-bridge-bridgenetworkoutput-name)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-bridge-bridgenetworkoutput-syntax.yaml"></a>
 
-```
+```yaml
   [IpAddress](#cfn-mediaconnect-bridge-bridgenetworkoutput-ipaddress): {{String}}
   [Name](#cfn-mediaconnect-bridge-bridgenetworkoutput-name): {{String}}
   [NetworkName](#cfn-mediaconnect-bridge-bridgenetworkoutput-networkname): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emr-cluster-computelimits-syntax.json"></a>
 
-```
+```json
 {
   "[MaximumCapacityUnits](#cfn-emr-cluster-computelimits-maximumcapacityunits)" : {{Integer}},
   "[MaximumCoreCapacityUnits](#cfn-emr-cluster-computelimits-maximumcorecapacityunits)" : {{Integer}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emr-cluster-computelimits-syntax.yaml"></a>
 
-```
+```yaml
   [MaximumCapacityUnits](#cfn-emr-cluster-computelimits-maximumcapacityunits): {{Integer}}
   [MaximumCoreCapacityUnits](#cfn-emr-cluster-computelimits-maximumcorecapacityunits): {{Integer}}
   [MaximumOnDemandCapacityUnits](#cfn-emr-cluster-computelimits-maximumondemandcapacityunits): {{Integer}}

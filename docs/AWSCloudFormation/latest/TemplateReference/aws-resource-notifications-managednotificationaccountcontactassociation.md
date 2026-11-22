@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-notifications-managednotificationaccountcontactassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Notifications::ManagedNotificationAccountContactAssociation",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-notifications-managednotificationaccountcontactassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Notifications::ManagedNotificationAccountContactAssociation
 Properties:
   [ContactIdentifier](#cfn-notifications-managednotificationaccountcontactassociation-contactidentifier): {{String}}

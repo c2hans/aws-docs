@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-geospatialpointstyleoptions-syntax.json"></a>
 
-```
+```json
 {
   "[ClusterMarkerConfiguration](#cfn-quicksight-analysis-geospatialpointstyleoptions-clustermarkerconfiguration)" : {{ClusterMarkerConfiguration}},
   "[HeatmapConfiguration](#cfn-quicksight-analysis-geospatialpointstyleoptions-heatmapconfiguration)" : {{GeospatialHeatmapConfiguration}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-geospatialpointstyleoptions-syntax.yaml"></a>
 
-```
+```yaml
   [ClusterMarkerConfiguration](#cfn-quicksight-analysis-geospatialpointstyleoptions-clustermarkerconfiguration): {{
     ClusterMarkerConfiguration}}
   [HeatmapConfiguration](#cfn-quicksight-analysis-geospatialpointstyleoptions-heatmapconfiguration): {{

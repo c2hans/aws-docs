@@ -16,7 +16,7 @@ This policy demonstrates an allow and a deny for the same service.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -60,7 +60,7 @@ This policy provides row-level access to Amazon DynamoDB based on the user's Ama
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -111,7 +111,7 @@ This policy includes multiple resources and conditions.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -164,7 +164,7 @@ The following policy allows users to get a screenshot of a running Amazon EC2 in
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -214,7 +214,7 @@ This policy provides access to specific CodeBuild, CodeCommit, and CodeDeploy re
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

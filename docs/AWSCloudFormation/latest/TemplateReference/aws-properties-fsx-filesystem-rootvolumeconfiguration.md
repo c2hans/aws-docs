@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-filesystem-rootvolumeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CopyTagsToSnapshots](#cfn-fsx-filesystem-rootvolumeconfiguration-copytagstosnapshots)" : {{Boolean}},
   "[DataCompressionType](#cfn-fsx-filesystem-rootvolumeconfiguration-datacompressiontype)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-filesystem-rootvolumeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CopyTagsToSnapshots](#cfn-fsx-filesystem-rootvolumeconfiguration-copytagstosnapshots): {{Boolean}}
   [DataCompressionType](#cfn-fsx-filesystem-rootvolumeconfiguration-datacompressiontype): {{String}}
   [NfsExports](#cfn-fsx-filesystem-rootvolumeconfiguration-nfsexports): {{

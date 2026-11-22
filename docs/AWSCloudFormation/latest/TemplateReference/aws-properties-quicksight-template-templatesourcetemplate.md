@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-templatesourcetemplate-syntax.json"></a>
 
-```
+```json
 {
   "[Arn](#cfn-quicksight-template-templatesourcetemplate-arn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-templatesourcetemplate-syntax.yaml"></a>
 
-```
+```yaml
   [Arn](#cfn-quicksight-template-templatesourcetemplate-arn): {{String}}
 ```
 

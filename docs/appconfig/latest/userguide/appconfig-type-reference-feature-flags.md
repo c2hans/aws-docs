@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-typ
 
 Use the `AWS.AppConfig.FeatureFlags` JSON schema as a reference to create your feature flag configuration data.
 
-```
+```json
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "definitions": {

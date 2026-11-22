@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-actionconnector-clientcredentialsgrantmetadata-syntax.json"></a>
 
-```
+```json
 {
   "[BaseEndpoint](#cfn-quicksight-actionconnector-clientcredentialsgrantmetadata-baseendpoint)" : {{String}},
   "[ClientCredentialsDetails](#cfn-quicksight-actionconnector-clientcredentialsgrantmetadata-clientcredentialsdetails)" : {{ClientCredentialsDetails}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-actionconnector-clientcredentialsgrantmetadata-syntax.yaml"></a>
 
-```
+```yaml
   [BaseEndpoint](#cfn-quicksight-actionconnector-clientcredentialsgrantmetadata-baseendpoint): {{String}}
   [ClientCredentialsDetails](#cfn-quicksight-actionconnector-clientcredentialsgrantmetadata-clientcredentialsdetails): {{
     ClientCredentialsDetails}}

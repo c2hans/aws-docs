@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-flowalias-flowaliasconcurrencyconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MaxConcurrency](#cfn-bedrock-flowalias-flowaliasconcurrencyconfiguration-maxconcurrency)" : {{Number}},
   "[Type](#cfn-bedrock-flowalias-flowaliasconcurrencyconfiguration-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-flowalias-flowaliasconcurrencyconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MaxConcurrency](#cfn-bedrock-flowalias-flowaliasconcurrencyconfiguration-maxconcurrency): {{Number}}
   [Type](#cfn-bedrock-flowalias-flowaliasconcurrencyconfiguration-type): {{String}}
 ```

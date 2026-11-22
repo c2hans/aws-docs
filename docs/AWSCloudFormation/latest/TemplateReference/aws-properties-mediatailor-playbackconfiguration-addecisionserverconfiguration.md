@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-playbackconfiguration-addecisionserverconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[HttpRequest](#cfn-mediatailor-playbackconfiguration-addecisionserverconfiguration-httprequest)" : {{HttpRequest}},
   "[VastResponse](#cfn-mediatailor-playbackconfiguration-addecisionserverconfiguration-vastresponse)" : {{VastResponse}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-playbackconfiguration-addecisionserverconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [HttpRequest](#cfn-mediatailor-playbackconfiguration-addecisionserverconfiguration-httprequest): {{
     HttpRequest}}
   [VastResponse](#cfn-mediatailor-playbackconfiguration-addecisionserverconfiguration-vastresponse): {{

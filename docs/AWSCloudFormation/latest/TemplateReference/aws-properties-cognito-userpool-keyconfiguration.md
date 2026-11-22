@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpool-keyconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[KeyType](#cfn-cognito-userpool-keyconfiguration-keytype)" : {{String}},
   "[KmsKeyArn](#cfn-cognito-userpool-keyconfiguration-kmskeyarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpool-keyconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [KeyType](#cfn-cognito-userpool-keyconfiguration-keytype): {{String}}
   [KmsKeyArn](#cfn-cognito-userpool-keyconfiguration-kmskeyarn): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-alert-telemetryrule-syntax.json"></a>
 
-```
+```json
 {
   "[Condition](#cfn-cloudwatch-alert-telemetryrule-condition)" : {{Condition}},
   "[Evaluation](#cfn-cloudwatch-alert-telemetryrule-evaluation)" : {{Evaluation}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-alert-telemetryrule-syntax.yaml"></a>
 
-```
+```yaml
   [Condition](#cfn-cloudwatch-alert-telemetryrule-condition): {{
     Condition}}
   [Evaluation](#cfn-cloudwatch-alert-telemetryrule-evaluation): {{

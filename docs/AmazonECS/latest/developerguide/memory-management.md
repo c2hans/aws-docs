@@ -24,7 +24,7 @@ When the ECS Managed Instances agent receives a task, it calculates the memory r
 **Example Task-level memory specified**
 When task-level memory is specified, it takes precedence over container-level settings:
 
-```
+```json
 {
   "family": "my-task",
   "memory": "2048",
@@ -42,7 +42,7 @@ The agent reserves 2048 MiB (task-level memory takes precedence).
 **Example Container-level memory with reservations**
 When task-level memory is not specified, the agent sums container memory requirements:
 
-```
+```json
 {
   "family": "my-task",
   "containerDefinitions": [
@@ -84,7 +84,7 @@ The Amazon ECS container agent uses the Docker `ReadMemInfo()` function to query
 **Example - Determine Linux total memory**
 The **free** command returns the total memory that is recognized by the operating system.
 
-```
+```sh
 $ free -b
 ```
 Example output for an `m4.large` instance running the Amazon ECS-optimized Amazon Linux AMI.
@@ -99,7 +99,7 @@ This instance has 8373026816 bytes of total memory, which translates to 7985 MiB
 **Example - Determine Windows total memory**
 The **wmic** command returns the total memory that is recognized by the operating system.
 
-```
+```cmd
 C:\> wmic ComputerSystem get TotalPhysicalMemory
 ```
 Example output for an `m4.large` instance running the Amazon ECS-optimized Windows Server AMI.

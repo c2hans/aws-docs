@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-capacityprovider-rootvolumeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Encrypted](#cfn-bedrockagentcore-capacityprovider-rootvolumeconfiguration-encrypted)" : {{Boolean}},
   "[FreeSpaceGiB](#cfn-bedrockagentcore-capacityprovider-rootvolumeconfiguration-freespacegib)" : {{Integer}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-capacityprovider-rootvolumeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Encrypted](#cfn-bedrockagentcore-capacityprovider-rootvolumeconfiguration-encrypted): {{Boolean}}
   [FreeSpaceGiB](#cfn-bedrockagentcore-capacityprovider-rootvolumeconfiguration-freespacegib): {{Integer}}
   [Iops](#cfn-bedrockagentcore-capacityprovider-rootvolumeconfiguration-iops): {{Integer}}

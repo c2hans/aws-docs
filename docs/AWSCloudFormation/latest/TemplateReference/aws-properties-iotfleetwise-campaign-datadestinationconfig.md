@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotfleetwise-campaign-datadestinationconfig-syntax.json"></a>
 
-```
+```json
 {
   "[MqttTopicConfig](#cfn-iotfleetwise-campaign-datadestinationconfig-mqtttopicconfig)" : {{MqttTopicConfig}},
   "[S3Config](#cfn-iotfleetwise-campaign-datadestinationconfig-s3config)" : {{S3Config}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotfleetwise-campaign-datadestinationconfig-syntax.yaml"></a>
 
-```
+```yaml
   [MqttTopicConfig](#cfn-iotfleetwise-campaign-datadestinationconfig-mqtttopicconfig): {{
     MqttTopicConfig}}
   [S3Config](#cfn-iotfleetwise-campaign-datadestinationconfig-s3config): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mwaaserverless-workflow-environment-syntax.json"></a>
 
-```
+```json
 {
   "[Variables](#cfn-mwaaserverless-workflow-environment-variables)" : {{{{{Key}}: {{Value}}, ...}}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mwaaserverless-workflow-environment-syntax.yaml"></a>
 
-```
+```yaml
   [Variables](#cfn-mwaaserverless-workflow-environment-variables): {{
     {{Key}}: {{Value}}}}
 ```

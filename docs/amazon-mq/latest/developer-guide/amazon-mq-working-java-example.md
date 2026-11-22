@@ -58,7 +58,7 @@ To ensure that your broker is accessible within your VPC, you must enable the `e
 
 Add the `activemq-client.jar` and `activemq-pool.jar` packages to your Java class path. The following example shows these dependencies in a Maven project `pom.xml` file.
 
-```
+```xml
 <dependencies>
     <dependency>
         <groupId>org.apache.activemq</groupId>
@@ -80,7 +80,7 @@ For more information about `activemq-client.jar`, see [Initial Configuration](ht
 
 Add the `org.eclipse.paho.client.mqttv3.jar` package to your Java class path. The following example shows this dependency in a Maven project `pom.xml` file.
 
-```
+```xml
 <dependencies>
                     <dependency>
                         <groupId>org.eclipse.paho</groupId>
@@ -105,7 +105,7 @@ Add the following packages to your Java class path:
 
 The following example shows these dependencies in a Maven project `pom.xml` file.
 
-```
+```xml
 <dependencies>
                     <dependency>
                         <groupId>org.springframework</groupId>
@@ -154,7 +154,7 @@ In the following example code, producers and consumers run in a single thread. F
 ------
 #### [ OpenWire ]
 
-```
+```java
 /*
  * Copyright 2010-2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  *
@@ -289,7 +289,7 @@ In the following example code, producers and consumers run in a single thread. F
 ------
 #### [ MQTT ]
 
-```
+```java
 /*
  * Copyright 2010-2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  *
@@ -374,7 +374,7 @@ In the following example code, producers and consumers run in a single thread. F
 ------
 #### [ STOMP\+WSS ]
 
-```
+```java
 /*
  * Copyright 2010-2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  *

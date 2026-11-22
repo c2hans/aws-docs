@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-privateconnection-selfmanagedmode-syntax.json"></a>
 
-```
+```json
 {
   "[ResourceConfigurationId](#cfn-devopsagent-privateconnection-selfmanagedmode-resourceconfigurationid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-privateconnection-selfmanagedmode-syntax.yaml"></a>
 
-```
+```yaml
   [ResourceConfigurationId](#cfn-devopsagent-privateconnection-selfmanagedmode-resourceconfigurationid): {{String}}
 ```
 

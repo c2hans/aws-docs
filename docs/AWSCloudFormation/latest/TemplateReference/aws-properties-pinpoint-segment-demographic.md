@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pinpoint-segment-demographic-syntax.json"></a>
 
-```
+```json
 {
   "[AppVersion](#cfn-pinpoint-segment-demographic-appversion)" : {{SetDimension}},
   "[Channel](#cfn-pinpoint-segment-demographic-channel)" : {{SetDimension}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pinpoint-segment-demographic-syntax.yaml"></a>
 
-```
+```yaml
   [AppVersion](#cfn-pinpoint-segment-demographic-appversion): {{
     SetDimension}}
   [Channel](#cfn-pinpoint-segment-demographic-channel): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackage-packagingconfiguration-mssencryption-syntax.json"></a>
 
-```
+```json
 {
   "[SpekeKeyProvider](#cfn-mediapackage-packagingconfiguration-mssencryption-spekekeyprovider)" : {{SpekeKeyProvider}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackage-packagingconfiguration-mssencryption-syntax.yaml"></a>
 
-```
+```yaml
   [SpekeKeyProvider](#cfn-mediapackage-packagingconfiguration-mssencryption-spekekeyprovider): {{
     SpekeKeyProvider}}
 ```

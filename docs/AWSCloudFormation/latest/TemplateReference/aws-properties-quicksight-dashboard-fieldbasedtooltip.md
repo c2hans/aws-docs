@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-fieldbasedtooltip-syntax.json"></a>
 
-```
+```json
 {
   "[AggregationVisibility](#cfn-quicksight-dashboard-fieldbasedtooltip-aggregationvisibility)" : {{String}},
   "[TooltipFields](#cfn-quicksight-dashboard-fieldbasedtooltip-tooltipfields)" : {{[ TooltipItem, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-fieldbasedtooltip-syntax.yaml"></a>
 
-```
+```yaml
   [AggregationVisibility](#cfn-quicksight-dashboard-fieldbasedtooltip-aggregationvisibility): {{String}}
   [TooltipFields](#cfn-quicksight-dashboard-fieldbasedtooltip-tooltipfields): {{
     - TooltipItem}}

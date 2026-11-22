@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-configuration-latestrevision-syntax.json"></a>
 
-```
+```json
 {
   "[CreationTime](#cfn-msk-configuration-latestrevision-creationtime)" : {{String}},
   "[Description](#cfn-msk-configuration-latestrevision-description)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-configuration-latestrevision-syntax.yaml"></a>
 
-```
+```yaml
   [CreationTime](#cfn-msk-configuration-latestrevision-creationtime): {{String}}
   [Description](#cfn-msk-configuration-latestrevision-description): {{String}}
   [Revision](#cfn-msk-configuration-latestrevision-revision): {{Integer}}

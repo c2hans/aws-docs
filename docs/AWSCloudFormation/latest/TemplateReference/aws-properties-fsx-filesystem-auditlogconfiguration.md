@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-filesystem-auditlogconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AuditLogDestination](#cfn-fsx-filesystem-auditlogconfiguration-auditlogdestination)" : {{String}},
   "[FileAccessAuditLogLevel](#cfn-fsx-filesystem-auditlogconfiguration-fileaccessauditloglevel)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-filesystem-auditlogconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AuditLogDestination](#cfn-fsx-filesystem-auditlogconfiguration-auditlogdestination): {{String}}
   [FileAccessAuditLogLevel](#cfn-fsx-filesystem-auditlogconfiguration-fileaccessauditloglevel): {{String}}
   [FileShareAccessAuditLogLevel](#cfn-fsx-filesystem-auditlogconfiguration-fileshareaccessauditloglevel): {{String}}

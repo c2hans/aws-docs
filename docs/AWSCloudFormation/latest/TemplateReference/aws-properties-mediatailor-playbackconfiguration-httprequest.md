@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-playbackconfiguration-httprequest-syntax.json"></a>
 
-```
+```json
 {
   "[Body](#cfn-mediatailor-playbackconfiguration-httprequest-body)" : {{String}},
   "[CompressRequest](#cfn-mediatailor-playbackconfiguration-httprequest-compressrequest)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-playbackconfiguration-httprequest-syntax.yaml"></a>
 
-```
+```yaml
   [Body](#cfn-mediatailor-playbackconfiguration-httprequest-body): {{String}}
   [CompressRequest](#cfn-mediatailor-playbackconfiguration-httprequest-compressrequest): {{String}}
   [Headers](#cfn-mediatailor-playbackconfiguration-httprequest-headers): {{

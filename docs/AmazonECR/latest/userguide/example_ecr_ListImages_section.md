@@ -46,7 +46,7 @@ For more information, see [Private images in Amazon ECR](https://docs.aws.amazon
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ecr#code-examples).
 
-```
+```rust
 async fn show_images(
     client: &aws_sdk_ecr::Client,
     repository: &str,

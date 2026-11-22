@@ -29,7 +29,7 @@ The root configuration defines the overall structure of your advanced API bluepr
 
  **Example**
 
-```
+```json
 {
   "globalSettings": {
     "stepTimeout": 30000,
@@ -68,7 +68,7 @@ Global settings provide default configurations that apply to all steps unless ov
 
  **Example**
 
-```
+```json
 {
   "globalSettings": {
     "stepTimeout": 60000
@@ -97,7 +97,7 @@ Variables allow you to define reusable values that can be referenced throughout 
 
  **Example**
 
-```
+```json
 {
   "variables": {
     "baseUrl": "https://api.example.com",
@@ -110,7 +110,7 @@ Variables allow you to define reusable values that can be referenced throughout 
 
  **Configuration usage**
 
-```
+```json
 {
   "steps": {
     "1": {
@@ -196,7 +196,7 @@ Monitor web endpoints and APIs with comprehensive request and response validatio
 
  **Example**
 
-```
+```json
 {
   "stepName": "createUser",
   "checkerType": "HTTP",
@@ -355,7 +355,7 @@ Test TCP port connectivity and response validation.
 
  **No authentication**
 
-```
+```json
 {
   "type": "NONE"
 }

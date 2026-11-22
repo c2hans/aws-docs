@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-workspace-mediaitem-syntax.json"></a>
 
-```
+```json
 {
   "[Source](#cfn-connect-workspace-mediaitem-source)" : {{String}},
   "[Type](#cfn-connect-workspace-mediaitem-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-workspace-mediaitem-syntax.yaml"></a>
 
-```
+```yaml
   [Source](#cfn-connect-workspace-mediaitem-source): {{String}}
   [Type](#cfn-connect-workspace-mediaitem-type): {{String}}
 ```

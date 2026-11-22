@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-connect-quickconnect-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Connect::QuickConnect",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-connect-quickconnect-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Connect::QuickConnect
 Properties:
   [Description](#cfn-connect-quickconnect-description): {{String}}

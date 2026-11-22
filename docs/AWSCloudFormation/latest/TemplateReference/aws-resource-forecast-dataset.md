@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-forecast-dataset-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Forecast::Dataset",
   "Properties" : {
@@ -51,7 +51,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-forecast-dataset-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Forecast::Dataset
 Properties:
   [DataFrequency](#cfn-forecast-dataset-datafrequency): {{String}}

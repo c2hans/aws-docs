@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-playbackconfiguration-availsuppression-syntax.json"></a>
 
-```
+```json
 {
   "[FillPolicy](#cfn-mediatailor-playbackconfiguration-availsuppression-fillpolicy)" : {{String}},
   "[Mode](#cfn-mediatailor-playbackconfiguration-availsuppression-mode)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-playbackconfiguration-availsuppression-syntax.yaml"></a>
 
-```
+```yaml
   [FillPolicy](#cfn-mediatailor-playbackconfiguration-availsuppression-fillpolicy): {{String}}
   [Mode](#cfn-mediatailor-playbackconfiguration-availsuppression-mode): {{String}}
   [Value](#cfn-mediatailor-playbackconfiguration-availsuppression-value): {{String}}

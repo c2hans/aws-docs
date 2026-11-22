@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-databasesourceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Columns](#cfn-kinesisfirehose-deliverystream-databasesourceconfiguration-columns)" : {{DatabaseColumns}},
   "[Databases](#cfn-kinesisfirehose-deliverystream-databasesourceconfiguration-databases)" : {{Databases}},
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-databasesourceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Columns](#cfn-kinesisfirehose-deliverystream-databasesourceconfiguration-columns): {{
     DatabaseColumns}}
   [Databases](#cfn-kinesisfirehose-deliverystream-databasesourceconfiguration-databases): {{

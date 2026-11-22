@@ -147,7 +147,7 @@ When the **containerize** command runs, it determines if your application is sui
 
 The following example shows a `deployment.json` file for a Java application running on Linux, with default settings to deploy to an Amazon ECS environment.
 
-```
+```json
 {
        "a2CTemplateVersion": "3.1",
        "applicationId": "java-tomcat-6e6f3a87",
@@ -255,7 +255,7 @@ The following example shows a `deployment.json` file for a Java application runn
 
 The following example shows a `deployment.json` file for a .NET application running on Windows. The application has been configured to deploy to an Amazon ECS Fargate environment.
 
-```
+```json
 {
        "a2CTemplateVersion": "3.1",
        "applicationId": "iis-smarts-51d2dbf8",
@@ -335,7 +335,7 @@ For complex Windows .NET web applications that consist of a root application and
 The following example shows the `deployment.json` file for the root application in a complex .NET web service running on Windows, followed by `deployment.json` files for the two dependent applications that it refers to. The applications are deployed to an Amazon ECS environment running together in the same VPC.
 + **Root application example**
 
-  ```
+  ```json
   {
          "a2CTemplateVersion": "3.1",
          "applicationId": "iis-smarts-51d2dbf8",
@@ -420,7 +420,7 @@ The following example shows the `deployment.json` file for the root application 
   ```
 + **Dependent application B**
 
-  ```
+  ```json
   {
          "a2CTemplateVersion": "3.1",
          "applicationId": "iis-appB-ab800cde",
@@ -493,7 +493,7 @@ The following example shows the `deployment.json` file for the root application 
   ```
 + **Dependent application C**
 
-  ```
+  ```json
   {
          "a2CTemplateVersion": "3.1",
          "applicationId": "service-appC-9fghi90j",

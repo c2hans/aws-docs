@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-globalaccelerator-endpointgroup-endpointconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AttachmentArn](#cfn-globalaccelerator-endpointgroup-endpointconfiguration-attachmentarn)" : {{String}},
   "[ClientIPPreservationEnabled](#cfn-globalaccelerator-endpointgroup-endpointconfiguration-clientippreservationenabled)" : {{Boolean}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-globalaccelerator-endpointgroup-endpointconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AttachmentArn](#cfn-globalaccelerator-endpointgroup-endpointconfiguration-attachmentarn): {{String}}
   [ClientIPPreservationEnabled](#cfn-globalaccelerator-endpointgroup-endpointconfiguration-clientippreservationenabled): {{Boolean}}
   [EndpointId](#cfn-globalaccelerator-endpointgroup-endpointconfiguration-endpointid): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codedeploy-deploymentgroup-deployment-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-codedeploy-deploymentgroup-deployment-description)" : {{String}},
   "[IgnoreApplicationStopFailures](#cfn-codedeploy-deploymentgroup-deployment-ignoreapplicationstopfailures)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codedeploy-deploymentgroup-deployment-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-codedeploy-deploymentgroup-deployment-description): {{String}}
   [IgnoreApplicationStopFailures](#cfn-codedeploy-deploymentgroup-deployment-ignoreapplicationstopfailures): {{Boolean}}
   [Revision](#cfn-codedeploy-deploymentgroup-deployment-revision): {{

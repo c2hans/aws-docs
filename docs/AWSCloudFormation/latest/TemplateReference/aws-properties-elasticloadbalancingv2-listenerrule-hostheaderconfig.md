@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-hostheaderconfig-syntax.json"></a>
 
-```
+```json
 {
   "[RegexValues](#cfn-elasticloadbalancingv2-listenerrule-hostheaderconfig-regexvalues)" : {{[ String, ... ]}},
   "[Values](#cfn-elasticloadbalancingv2-listenerrule-hostheaderconfig-values)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-hostheaderconfig-syntax.yaml"></a>
 
-```
+```yaml
   [RegexValues](#cfn-elasticloadbalancingv2-listenerrule-hostheaderconfig-regexvalues): {{
     - String}}
   [Values](#cfn-elasticloadbalancingv2-listenerrule-hostheaderconfig-values): {{
@@ -60,7 +60,7 @@ This example creates a listener rule with an action that forwards requests desti
 #### YAML
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-hostheaderconfig--examples----yaml"></a>
 
-```
+```yaml
 myHostHeaderListenerRule:
    Type: 'AWS::ElasticLoadBalancingV2::ListenerRule'
    Properties:
@@ -79,7 +79,7 @@ myHostHeaderListenerRule:
 #### JSON
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-hostheaderconfig--examples----json"></a>
 
-```
+```json
 {
     "myHostHeaderListenerRule": {
         "Type": "AWS::ElasticLoadBalancingV2::ListenerRule",

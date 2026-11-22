@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudtrail-dashboard-widget-syntax.json"></a>
 
-```
+```json
 {
   "[QueryParameters](#cfn-cloudtrail-dashboard-widget-queryparameters)" : {{[ String, ... ]}},
   "[QueryStatement](#cfn-cloudtrail-dashboard-widget-querystatement)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudtrail-dashboard-widget-syntax.yaml"></a>
 
-```
+```yaml
   [QueryParameters](#cfn-cloudtrail-dashboard-widget-queryparameters): {{
     - String}}
   [QueryStatement](#cfn-cloudtrail-dashboard-widget-querystatement): {{String}}

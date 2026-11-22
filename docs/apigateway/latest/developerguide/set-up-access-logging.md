@@ -22,22 +22,22 @@ Choose a log format that is also adopted by your analytic backend, such as [Comm
 Examples of some commonly used access log formats are shown in the API Gateway console and are listed as follows.
 + `CLF` ([Common Log Format](https://httpd.apache.org/docs/current/logs.html#common)):
 
-  ```
+  ```clf
   $context.identity.sourceIp $context.identity.caller $context.identity.user [$context.requestTime]"$context.httpMethod $context.resourcePath $context.protocol" $context.status $context.responseLength $context.requestId $context.extendedRequestId
   ```
 + `JSON`:
 
-  ```
+  ```json
   { "requestId":"$context.requestId", "extendedRequestId":"$context.extendedRequestId","ip": "$context.identity.sourceIp", "caller":"$context.identity.caller", "user":"$context.identity.user", "requestTime":"$context.requestTime", "httpMethod":"$context.httpMethod", "resourcePath":"$context.resourcePath", "status":"$context.status", "protocol":"$context.protocol", "responseLength":"$context.responseLength" }
   ```
 + `XML`:
 
-  ```
+  ```xml
   <request id="$context.requestId"> <extendedRequestId>$context.extendedRequestId</extendedRequestId> <ip>$context.identity.sourceIp</ip> <caller>$context.identity.caller</caller> <user>$context.identity.user</user> <requestTime>$context.requestTime</requestTime> <httpMethod>$context.httpMethod</httpMethod> <resourcePath>$context.resourcePath</resourcePath> <status>$context.status</status> <protocol>$context.protocol</protocol> <responseLength>$context.responseLength</responseLength> </request>
   ```
 + `CSV` (comma-separated values):
 
-  ```
+  ```csv
   $context.identity.sourceIp,$context.identity.caller,$context.identity.user,$context.requestTime,$context.httpMethod,$context.resourcePath,$context.protocol,$context.status,$context.responseLength,$context.requestId,$context.extendedRequestId
   ```
 
@@ -73,7 +73,7 @@ API Gateway is now ready to log requests to your API. You don't need to redeploy
 
 Use the following example CloudFormation template to create a Amazon CloudWatch Logs log group and configure access logging for a stage. To enable CloudWatch Logs, you must grant API Gateway permission to read and write logs to CloudWatch for your account. To learn more, see [Associate account with IAM role](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-account.html#aws-resource-apigateway-account--examples) in the *AWS CloudFormation User Guide*.
 
-```
+```YAML
   TestStage:
     Type: AWS::ApiGateway::Stage
     Properties:

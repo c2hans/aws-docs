@@ -19,7 +19,7 @@ Metadata table based file listing is disabled by default. To enable the Hudi met
 **Example**
 The following `ALTER TABLE SET TBLPROPERTIES` example enables the metadata table on the example `partition_cow` table.
 
-```
+```sql
 ALTER TABLE partition_cow SET TBLPROPERTIES('hudi.metadata-listing-enabled'='TRUE')
 ```
 

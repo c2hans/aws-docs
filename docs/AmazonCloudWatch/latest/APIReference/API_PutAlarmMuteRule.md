@@ -119,7 +119,7 @@ Create a mute rule that mutes specific alarms every day from 2:00 AM to 4:00 AM 
 #### Sample Request
 <a name="API_PutAlarmMuteRule_Example_1_Request"></a>
 
-```
+```bash
 aws cloudwatch put-alarm-mute-rule \
     --name "DailyMaintenanceWindow" \
     --description "Mute alarms during daily maintenance" \
@@ -143,7 +143,7 @@ Create a mute rule for a one-time deployment window.
 #### Sample Request
 <a name="API_PutAlarmMuteRule_Example_2_Request"></a>
 
-```
+```bash
 aws cloudwatch put-alarm-mute-rule \
     --name "ProductionDeployment-2026-01-20" \
     --description "Mute alarms during production deployment" \
@@ -167,7 +167,7 @@ Create a mute rule that mutes specific alarms every Saturday for 4 hours.
 #### Sample Request
 <a name="API_PutAlarmMuteRule_Example_3_Request"></a>
 
-```
+```bash
 aws cloudwatch put-alarm-mute-rule \
     --name "WeeklyBackupWindow" \
     --description "Mute alarms during weekly backup" \

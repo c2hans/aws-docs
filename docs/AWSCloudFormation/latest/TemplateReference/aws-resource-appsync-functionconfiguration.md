@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-appsync-functionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppSync::FunctionConfiguration",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-appsync-functionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppSync::FunctionConfiguration
 Properties:
   [ApiId](#cfn-appsync-functionconfiguration-apiid): {{String}}
@@ -204,7 +204,7 @@ The following example creates a function and associates it with an existing Grap
 #### YAML
 <a name="aws-resource-appsync-functionconfiguration--examples--Function_Creation_Example--yaml"></a>
 
-```
+```yaml
 Parameters:
   graphQlApiId:
     Type: String
@@ -243,7 +243,7 @@ Resources:
 #### JSON
 <a name="aws-resource-appsync-functionconfiguration--examples--Function_Creation_Example--json"></a>
 
-```
+```json
 {
   "Parameters": {
     "graphQlApiId": {

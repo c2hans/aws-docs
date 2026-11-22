@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-pipesourcekinesisstreamparameters-syntax.json"></a>
 
-```
+```json
 {
   "[BatchSize](#cfn-pipes-pipe-pipesourcekinesisstreamparameters-batchsize)" : {{Integer}},
   "[DeadLetterConfig](#cfn-pipes-pipe-pipesourcekinesisstreamparameters-deadletterconfig)" : {{DeadLetterConfig}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-pipesourcekinesisstreamparameters-syntax.yaml"></a>
 
-```
+```yaml
   [BatchSize](#cfn-pipes-pipe-pipesourcekinesisstreamparameters-batchsize): {{Integer}}
   [DeadLetterConfig](#cfn-pipes-pipe-pipesourcekinesisstreamparameters-deadletterconfig): {{
     DeadLetterConfig}}

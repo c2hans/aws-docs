@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-quickconnect-queuequickconnectconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ContactFlowArn](#cfn-connect-quickconnect-queuequickconnectconfig-contactflowarn)" : {{String}},
   "[QueueArn](#cfn-connect-quickconnect-queuequickconnectconfig-queuearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-quickconnect-queuequickconnectconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ContactFlowArn](#cfn-connect-quickconnect-queuequickconnectconfig-contactflowarn): {{String}}
   [QueueArn](#cfn-connect-quickconnect-queuequickconnectconfig-queuearn): {{String}}
 ```

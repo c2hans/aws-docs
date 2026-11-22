@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicrule-influxdbbatchconfig-syntax.json"></a>
 
-```
+```json
 {
   "[BatchAcrossTopics](#cfn-iot-topicrule-influxdbbatchconfig-batchacrosstopics)" : {{Boolean}},
   "[MaxBatchOpenMs](#cfn-iot-topicrule-influxdbbatchconfig-maxbatchopenms)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicrule-influxdbbatchconfig-syntax.yaml"></a>
 
-```
+```yaml
   [BatchAcrossTopics](#cfn-iot-topicrule-influxdbbatchconfig-batchacrosstopics): {{Boolean}}
   [MaxBatchOpenMs](#cfn-iot-topicrule-influxdbbatchconfig-maxbatchopenms): {{Integer}}
   [MaxBatchSize](#cfn-iot-topicrule-influxdbbatchconfig-maxbatchsize): {{Integer}}

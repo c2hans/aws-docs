@@ -63,7 +63,7 @@ When you launch a new instance, you can turn on nested virtualization to run hyp
 **To launch an instance with nested virtualization enabled**
 Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command.
 
-```
+```bash
 aws ec2 run-instances \
     --image-id {{ami-0abcdef1234567890}} \
     --instance-type {{r8i.4xlarge}} \
@@ -77,7 +77,7 @@ aws ec2 run-instances \
 **To launch an instance with nested virtualization enabled**
 Use the [New-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Instance.html) command.
 
-```
+```powershell
 New-EC2Instance `
     -ImageId {{ami-0abcdef1234567890}} `
     -InstanceType {{r8i.4xlarge}} `
@@ -121,7 +121,7 @@ You can turn on nested virtualization on an existing Amazon EC2 instance.
 **To enable nested virtualization on an existing instance**
 First stop the instance, and then use the [modify-instance-cpu-options](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-cpu-options.html) command.
 
-```
+```bash
 aws ec2 modify-instance-cpu-options \
     --instance-id {{i-1234567890abcdef0}} \
     --core-count {{4}} \
@@ -135,7 +135,7 @@ aws ec2 modify-instance-cpu-options \
 **To enable nested virtualization on an existing instance**
 First stop the instance, and then use the [Edit-EC2InstanceCpuOption](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceCpuOption.html) command.
 
-```
+```powershell
 Edit-EC2InstanceCpuOption `
     -InstanceId {{i-1234567890abcdef0}} `
     -CoreCount {{4}} `
@@ -156,7 +156,7 @@ You can find which Amazon EC2 instance types support nested virtualization. You 
 **To list all instance families that support nested virtualization in a Region**
 Use the [describe-instance-types](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-types.html) command with the `processor-info.supported-features` filter set to the value of `nested-virtualization`:
 
-```
+```bash
 aws ec2 describe-instance-types --region {{us-east-1}} \
   --filters "Name=processor-info.supported-features,Values=nested-virtualization" \
   --query "InstanceTypes[].InstanceType" --output text \
@@ -166,7 +166,7 @@ aws ec2 describe-instance-types --region {{us-east-1}} \
 **To check whether a specific instance type supports nested virtualization**
 Use the [describe-instance-types](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-types.html) command and query the `ProcessorInfo.SupportedFeatures` field of the specified instance type:
 
-```
+```bash
 aws ec2 describe-instance-types \
   --instance-types {{m8i.2xlarge}} \
   --query "InstanceTypes[].ProcessorInfo.SupportedFeatures"
@@ -180,7 +180,7 @@ If the instance type supports nested virtualization, the output includes `nested
 **To list all instance families that support nested virtualization in a Region**
 Use the [Get-EC2InstanceType](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceType.html) command with the `processor-info.supported-features` filter set to the value of `nested-virtualization`:
 
-```
+```powershell
 Get-EC2InstanceType -Region {{us-east-1}} -Filter @{ Name='processor-info.supported-features'; Values='nested-virtualization' } |
   ForEach-Object { ($_.InstanceType -split '\.')[0] } |
   Sort-Object -Unique
@@ -189,7 +189,7 @@ Get-EC2InstanceType -Region {{us-east-1}} -Filter @{ Name='processor-info.suppor
 **To check whether a specific instance type supports nested virtualization**
 Use the [Get-EC2InstanceType](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceType.html) command and query the `ProcessorInfo.SupportedFeatures` property of the specified instance type:
 
-```
+```powershell
 (Get-EC2InstanceType -InstanceType {{m8i.2xlarge}}).ProcessorInfo.SupportedFeatures
 ```
 

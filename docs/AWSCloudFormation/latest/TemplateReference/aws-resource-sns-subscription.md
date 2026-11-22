@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sns-subscription-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SNS::Subscription",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sns-subscription-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SNS::Subscription
 Properties:
   [DeliveryPolicy](#cfn-sns-subscription-deliverypolicy): {{Json}}
@@ -174,7 +174,7 @@ The following example creates a subscription with only an endpoint, protocol, an
 #### JSON
 <a name="aws-resource-sns-subscription--examples--Create_a_subscription_with_mandatory_attributes--json"></a>
 
-```
+```json
 "MySubscription" : {
   "Type" : "AWS::SNS::Subscription",
   "Properties" : {
@@ -188,7 +188,7 @@ The following example creates a subscription with only an endpoint, protocol, an
 #### YAML
 <a name="aws-resource-sns-subscription--examples--Create_a_subscription_with_mandatory_attributes--yaml"></a>
 
-```
+```yaml
 MySubscription:
   Type: AWS::SNS::Subscription
   Properties:
@@ -208,7 +208,7 @@ You can set subscription attributes only on standalone Amazon SNS subscriptions 
 #### YAML
 <a name="aws-resource-sns-subscription--examples--Create_a_subscription_with_optional_attributes--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   CarSalesTopic:
@@ -263,7 +263,7 @@ Parameters:
 #### JSON
 <a name="aws-resource-sns-subscription--examples--Create_a_subscription_with_optional_attributes--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {

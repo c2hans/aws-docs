@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-mountpoint-syntax.json"></a>
 
-```
+```json
 {
   "[ContainerPath](#cfn-batch-jobdefinition-mountpoint-containerpath)" : {{String}},
   "[ReadOnly](#cfn-batch-jobdefinition-mountpoint-readonly)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-mountpoint-syntax.yaml"></a>
 
-```
+```yaml
   [ContainerPath](#cfn-batch-jobdefinition-mountpoint-containerpath): {{String}}
   [ReadOnly](#cfn-batch-jobdefinition-mountpoint-readonly): {{Boolean}}
   [SourceVolume](#cfn-batch-jobdefinition-mountpoint-sourcevolume): {{String}}

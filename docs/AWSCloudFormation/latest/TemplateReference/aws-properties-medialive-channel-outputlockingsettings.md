@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-outputlockingsettings-syntax.json"></a>
 
-```
+```json
 {
   "[DisabledLockingSettings](#cfn-medialive-channel-outputlockingsettings-disabledlockingsettings)" : {{DisabledLockingSettings}},
   "[EpochLockingSettings](#cfn-medialive-channel-outputlockingsettings-epochlockingsettings)" : {{EpochLockingSettings}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-outputlockingsettings-syntax.yaml"></a>
 
-```
+```yaml
   [DisabledLockingSettings](#cfn-medialive-channel-outputlockingsettings-disabledlockingsettings): {{
     DisabledLockingSettings}}
   [EpochLockingSettings](#cfn-medialive-channel-outputlockingsettings-epochlockingsettings): {{

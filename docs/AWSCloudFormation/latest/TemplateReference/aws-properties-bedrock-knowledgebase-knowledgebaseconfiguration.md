@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-knowledgebase-knowledgebaseconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[KendraKnowledgeBaseConfiguration](#cfn-bedrock-knowledgebase-knowledgebaseconfiguration-kendraknowledgebaseconfiguration)" : {{KendraKnowledgeBaseConfiguration}},
   "[ManagedKnowledgeBaseConfiguration](#cfn-bedrock-knowledgebase-knowledgebaseconfiguration-managedknowledgebaseconfiguration)" : {{ManagedKnowledgeBaseConfiguration}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-knowledgebase-knowledgebaseconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [KendraKnowledgeBaseConfiguration](#cfn-bedrock-knowledgebase-knowledgebaseconfiguration-kendraknowledgebaseconfiguration): {{
     KendraKnowledgeBaseConfiguration}}
   [ManagedKnowledgeBaseConfiguration](#cfn-bedrock-knowledgebase-knowledgebaseconfiguration-managedknowledgebaseconfiguration): {{

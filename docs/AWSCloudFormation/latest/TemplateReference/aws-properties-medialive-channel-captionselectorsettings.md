@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-captionselectorsettings-syntax.json"></a>
 
-```
+```json
 {
   "[AncillarySourceSettings](#cfn-medialive-channel-captionselectorsettings-ancillarysourcesettings)" : {{AncillarySourceSettings}},
   "[AribSourceSettings](#cfn-medialive-channel-captionselectorsettings-aribsourcesettings)" : {{Json}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-captionselectorsettings-syntax.yaml"></a>
 
-```
+```yaml
   [AncillarySourceSettings](#cfn-medialive-channel-captionselectorsettings-ancillarysourcesettings): {{
     AncillarySourceSettings}}
   [AribSourceSettings](#cfn-medialive-channel-captionselectorsettings-aribsourcesettings): {{Json}}

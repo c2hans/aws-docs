@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-computeenvironment-ec2configurationobject-syntax.json"></a>
 
-```
+```json
 {
   "[BatchImageStatus](#cfn-batch-computeenvironment-ec2configurationobject-batchimagestatus)" : {{String}},
   "[ImageIdOverride](#cfn-batch-computeenvironment-ec2configurationobject-imageidoverride)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-computeenvironment-ec2configurationobject-syntax.yaml"></a>
 
-```
+```yaml
   [BatchImageStatus](#cfn-batch-computeenvironment-ec2configurationobject-batchimagestatus): {{String}}
   [ImageIdOverride](#cfn-batch-computeenvironment-ec2configurationobject-imageidoverride): {{String}}
   [ImageKubernetesVersion](#cfn-batch-computeenvironment-ec2configurationobject-imagekubernetesversion): {{String}}

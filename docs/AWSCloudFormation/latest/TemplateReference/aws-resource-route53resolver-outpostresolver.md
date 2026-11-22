@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-route53resolver-outpostresolver-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Route53Resolver::OutpostResolver",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-route53resolver-outpostresolver-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53Resolver::OutpostResolver
 Properties:
   [InstanceCount](#cfn-route53resolver-outpostresolver-instancecount): {{Integer}}
@@ -140,7 +140,7 @@ The following example creates a Amazon Route 53 Resolver on an AWS Outposts.
 #### JSON
 <a name="aws-resource-route53resolver-outpostresolver--examples--Create_a_Resolver_on_Outpost--json"></a>
 
-```
+```json
 {
 "Type": "AWS::Route53Resolver::OutpostResolver",
 "Properties": {
@@ -165,7 +165,7 @@ The following example creates a Amazon Route 53 Resolver on an AWS Outposts.
 #### YAML
 <a name="aws-resource-route53resolver-outpostresolver--examples--Create_a_Resolver_on_Outpost--yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53Resolver::OutpostResolver
 Properties:
   Name: SampleOutpostResolver

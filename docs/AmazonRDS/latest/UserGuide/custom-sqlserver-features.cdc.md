@@ -38,13 +38,13 @@ When implementing CDC on RDS Custom for SQL Server, be aware the following key c
 
 To identify remote logins or linked logins associated with the old server name, use the following queries. Validate the results and remove these logins to ensure proper CDC functionality.
 
-```
+```sql
 SELECT * FROM sys.remote_logins WHERE server_id=0
 ```
 
 or
 
-```
+```sql
 select sss.srvname,ssp.name,srl.remote_name  from sys.server_principals ssp
 inner join sys.remote_logins srl on srl.local_principal_id=ssp.principal_id
 inner join sys.sysservers sss  on srl.server_id = sss.srvid

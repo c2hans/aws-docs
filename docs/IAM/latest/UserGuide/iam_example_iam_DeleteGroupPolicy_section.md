@@ -29,7 +29,7 @@ For more information, see [Managing IAM policies](https://docs.aws.amazon.com/IA
 **Tools for PowerShell V4**
 **Example 1: This example removes the inline policy named `TesterPolicy` from the IAM group `Testers`. The users in that group immediately lose the permissions defined in that policy.**
 
-```
+```powershell
 Remove-IAMGroupPolicy -GroupName Testers -PolicyName TestPolicy
 ```
 +  For API details, see [DeleteGroupPolicy](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -37,7 +37,7 @@ Remove-IAMGroupPolicy -GroupName Testers -PolicyName TestPolicy
 **Tools for PowerShell V5**
 **Example 1: This example removes the inline policy named `TesterPolicy` from the IAM group `Testers`. The users in that group immediately lose the permissions defined in that policy.**
 
-```
+```powershell
 Remove-IAMGroupPolicy -GroupName Testers -PolicyName TestPolicy
 ```
 +  For API details, see [DeleteGroupPolicy](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-flow-encodingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[EncodingProfile](#cfn-mediaconnect-flow-encodingconfig-encodingprofile)" : {{String}},
   "[VideoMaxBitrate](#cfn-mediaconnect-flow-encodingconfig-videomaxbitrate)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-flow-encodingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [EncodingProfile](#cfn-mediaconnect-flow-encodingconfig-encodingprofile): {{String}}
   [VideoMaxBitrate](#cfn-mediaconnect-flow-encodingconfig-videomaxbitrate): {{Integer}}
 ```

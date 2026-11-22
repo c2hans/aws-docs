@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-transitgatewayconnect-transitgatewayconnectoptions-syntax.json"></a>
 
-```
+```json
 {
   "[Protocol](#cfn-ec2-transitgatewayconnect-transitgatewayconnectoptions-protocol)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-transitgatewayconnect-transitgatewayconnectoptions-syntax.yaml"></a>
 
-```
+```yaml
   [Protocol](#cfn-ec2-transitgatewayconnect-transitgatewayconnectoptions-protocol): {{String}}
 ```
 

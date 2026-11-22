@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amplifyuibuilder-theme-themevalue-syntax.json"></a>
 
-```
+```json
 {
   "[Children](#cfn-amplifyuibuilder-theme-themevalue-children)" : {{[ ThemeValues, ... ]}},
   "[Value](#cfn-amplifyuibuilder-theme-themevalue-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amplifyuibuilder-theme-themevalue-syntax.yaml"></a>
 
-```
+```yaml
   [Children](#cfn-amplifyuibuilder-theme-themevalue-children): {{
     - ThemeValues}}
   [Value](#cfn-amplifyuibuilder-theme-themevalue-value): {{String}}

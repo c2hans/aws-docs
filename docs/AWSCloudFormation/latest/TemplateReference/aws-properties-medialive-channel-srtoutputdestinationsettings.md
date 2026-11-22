@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-srtoutputdestinationsettings-syntax.json"></a>
 
-```
+```json
 {
   "[ConnectionMode](#cfn-medialive-channel-srtoutputdestinationsettings-connectionmode)" : {{String}},
   "[EncryptionPassphraseSecretArn](#cfn-medialive-channel-srtoutputdestinationsettings-encryptionpassphrasesecretarn)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-srtoutputdestinationsettings-syntax.yaml"></a>
 
-```
+```yaml
   [ConnectionMode](#cfn-medialive-channel-srtoutputdestinationsettings-connectionmode): {{String}}
   [EncryptionPassphraseSecretArn](#cfn-medialive-channel-srtoutputdestinationsettings-encryptionpassphrasesecretarn): {{String}}
   [ListenerPort](#cfn-medialive-channel-srtoutputdestinationsettings-listenerport): {{Integer}}

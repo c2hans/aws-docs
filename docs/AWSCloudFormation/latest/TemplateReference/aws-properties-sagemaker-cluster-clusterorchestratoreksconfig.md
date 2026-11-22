@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-cluster-clusterorchestratoreksconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ClusterArn](#cfn-sagemaker-cluster-clusterorchestratoreksconfig-clusterarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-cluster-clusterorchestratoreksconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ClusterArn](#cfn-sagemaker-cluster-clusterorchestratoreksconfig-clusterarn): {{String}}
 ```
 

@@ -39,7 +39,7 @@ Install the `databases-on-aws` plugin in Claude Code.<a name="claude-skill-direc
 
 Run these commands in Claude Code to add the marketplace and install the plugin:
 
-```
+```text
 /plugin marketplace add awslabs/agent-plugins
 /plugin install databases-on-aws@agent-plugins-for-aws
 ```
@@ -53,7 +53,7 @@ Install the `databases-on-aws` plugin from the repository's marketplace:
 
 1. Use Git to clone the Agent Plugins for AWS repository:
 
-   ```
+   ```bash
    git clone https://github.com/awslabs/agent-plugins.git
    ```
 
@@ -101,7 +101,7 @@ Use the Aurora DSQL power for guidance and MCP tools in the Kiro IDE.
 
  Install Node.js 22.20.0 or later and npm. Run this command to install the Aurora DSQL skill:
 
-```
+```bash
 npx skills add https://github.com/awslabs/agent-plugins --skill dsql
 ```
 
@@ -115,30 +115,30 @@ npx skills add https://github.com/awslabs/agent-plugins --skill dsql
 
  To list skills in the current project, run this command:
 
-```
+```bash
 npx skills list
 ```
 
  To list only global skills, run this command:
 
-```
+```bash
 npx skills list --global
 ```
 
  To update the Aurora DSQL skill in both the current project and global scope, run this command. The command defaults to both scopes.
 
-```
+```bash
 npx skills update dsql
 ```
 
  To update only the current project's Aurora DSQL skill, run this command:
 
-```
+```bash
 npx skills update dsql --project
 ```
 
  To update only the global Aurora DSQL skill, run this command:
 
-```
+```bash
 npx skills update dsql --global
 ```

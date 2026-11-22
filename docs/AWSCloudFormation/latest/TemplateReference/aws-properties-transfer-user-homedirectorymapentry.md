@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-transfer-user-homedirectorymapentry-syntax.json"></a>
 
-```
+```json
 {
   "[Entry](#cfn-transfer-user-homedirectorymapentry-entry)" : {{String}},
   "[Target](#cfn-transfer-user-homedirectorymapentry-target)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-transfer-user-homedirectorymapentry-syntax.yaml"></a>
 
-```
+```yaml
   [Entry](#cfn-transfer-user-homedirectorymapentry-entry): {{String}}
   [Target](#cfn-transfer-user-homedirectorymapentry-target): {{String}}
   [Type](#cfn-transfer-user-homedirectorymapentry-type): {{String}}

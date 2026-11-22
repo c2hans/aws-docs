@@ -56,7 +56,7 @@ aws cloudformation start-resource-scan --region {{us-east-1}}
 
 If successful, this command returns the ARN of the scan. Note the ARN in the `ResourceScanId` property. You need it to create your template.
 
-```
+```json
 {
     "ResourceScanId":
       "arn:aws:cloudformation:{{region}}:{{account-id}}:resourceScan/{{0a699f15-489c-43ca-a3ef-3e6ecfa5da60}}"
@@ -88,7 +88,7 @@ If successful, this command returns the ARN of the scan. Note the ARN in the `Re
 
    If successful, this command returns the ARN of the scan. Note the ARN in the `ResourceScanId` property. You need it to create your template.
 
-   ```
+   ```json
    {
        "ResourceScanId":
          "arn:aws:cloudformation:{{region}}:{{account-id}}:resourceScan/{{0a699f15-489c-43ca-a3ef-3e6ecfa5da60}}"
@@ -105,7 +105,7 @@ aws cloudformation describe-resource-scan --region {{us-east-1}} \
 
 If successful, this command returns output similar to the following:
 
-```
+```json
 {
     "ResourceScanId": "arn:aws:cloudformation:{{region}}:{{account-id}}:resourceScan/{{0a699f15-489c-43ca-a3ef-3e6ecfa5da60}}",
     "Status": "COMPLETE",
@@ -137,7 +137,7 @@ If successful, this command returns output similar to the following:
 
 For a partial scan, the output will look similar to the following:
 
-```
+```json
 {
     "ResourceScanId": "arn:aws:cloudformation:{{region}}:{{account-id}}:resourceScan/{{0a699f15-489c-43ca-a3ef-3e6ecfa5da60}}",
     "Status": "COMPLETE",

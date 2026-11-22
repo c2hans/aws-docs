@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-database-databaseinput-syntax.json"></a>
 
-```
+```json
 {
   "[CreateTableDefaultPermissions](#cfn-glue-database-databaseinput-createtabledefaultpermissions)" : {{[ PrincipalPrivileges, ... ]}},
   "[Description](#cfn-glue-database-databaseinput-description)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-database-databaseinput-syntax.yaml"></a>
 
-```
+```yaml
   [CreateTableDefaultPermissions](#cfn-glue-database-databaseinput-createtabledefaultpermissions): {{
     - PrincipalPrivileges}}
   [Description](#cfn-glue-database-databaseinput-description): {{String}}

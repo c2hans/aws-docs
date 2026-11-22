@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-mp2settings-syntax.json"></a>
 
-```
+```json
 {
   "[Bitrate](#cfn-medialive-channel-mp2settings-bitrate)" : {{Number}},
   "[CodingMode](#cfn-medialive-channel-mp2settings-codingmode)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-mp2settings-syntax.yaml"></a>
 
-```
+```yaml
   [Bitrate](#cfn-medialive-channel-mp2settings-bitrate): {{Number}}
   [CodingMode](#cfn-medialive-channel-mp2settings-codingmode): {{String}}
   [SampleRate](#cfn-medialive-channel-mp2settings-samplerate): {{Number}}

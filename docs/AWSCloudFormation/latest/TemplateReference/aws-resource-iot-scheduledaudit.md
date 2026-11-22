@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iot-scheduledaudit-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoT::ScheduledAudit",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iot-scheduledaudit-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoT::ScheduledAudit
 Properties:
   [DayOfMonth](#cfn-iot-scheduledaudit-dayofmonth): {{String}}
@@ -139,7 +139,7 @@ In this ScheduledAudit example, all audit checks are enabled, the frequency of t
 #### JSON
 <a name="aws-resource-iot-scheduledaudit--examples----json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "Amazon Web Services IoT ScheduledAudit Sample Template",
@@ -175,7 +175,7 @@ In this ScheduledAudit example, all audit checks are enabled, the frequency of t
 #### YAML
 <a name="aws-resource-iot-scheduledaudit--examples----yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Amazon Web Services IoT ScheduledAudit Sample Template
 Resources:

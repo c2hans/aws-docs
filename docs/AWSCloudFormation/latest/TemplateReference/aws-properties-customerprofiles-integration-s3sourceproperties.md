@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-integration-s3sourceproperties-syntax.json"></a>
 
-```
+```json
 {
   "[BucketName](#cfn-customerprofiles-integration-s3sourceproperties-bucketname)" : {{String}},
   "[BucketPrefix](#cfn-customerprofiles-integration-s3sourceproperties-bucketprefix)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-integration-s3sourceproperties-syntax.yaml"></a>
 
-```
+```yaml
   [BucketName](#cfn-customerprofiles-integration-s3sourceproperties-bucketname): {{String}}
   [BucketPrefix](#cfn-customerprofiles-integration-s3sourceproperties-bucketprefix): {{String}}
 ```

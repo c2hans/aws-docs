@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelpackage-s3modeldatasource-syntax.json"></a>
 
-```
+```json
 {
   "[CompressionType](#cfn-sagemaker-modelpackage-s3modeldatasource-compressiontype)" : {{String}},
   "[ModelAccessConfig](#cfn-sagemaker-modelpackage-s3modeldatasource-modelaccessconfig)" : {{ModelAccessConfig}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelpackage-s3modeldatasource-syntax.yaml"></a>
 
-```
+```yaml
   [CompressionType](#cfn-sagemaker-modelpackage-s3modeldatasource-compressiontype): {{String}}
   [ModelAccessConfig](#cfn-sagemaker-modelpackage-s3modeldatasource-modelaccessconfig): {{
     ModelAccessConfig}}

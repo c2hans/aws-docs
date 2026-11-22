@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-wordcloudsortconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CategoryItemsLimit](#cfn-quicksight-template-wordcloudsortconfiguration-categoryitemslimit)" : {{ItemsLimitConfiguration}},
   "[CategorySort](#cfn-quicksight-template-wordcloudsortconfiguration-categorysort)" : {{[ FieldSortOptions, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-wordcloudsortconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CategoryItemsLimit](#cfn-quicksight-template-wordcloudsortconfiguration-categoryitemslimit): {{
     ItemsLimitConfiguration}}
   [CategorySort](#cfn-quicksight-template-wordcloudsortconfiguration-categorysort): {{

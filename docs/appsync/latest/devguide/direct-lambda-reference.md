@@ -49,7 +49,7 @@ Before you can activate direct Lambda resolvers, you must add a Lambda data sour
 
 ****
 
-      ```
+      ```json
       {
            "Version":"2012-10-17",
            "Statement": [

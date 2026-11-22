@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-entity-syntax.json"></a>
 
-```
+```json
 {
   "[Path](#cfn-quicksight-template-entity-path)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-entity-syntax.yaml"></a>
 
-```
+```yaml
   [Path](#cfn-quicksight-template-entity-path): {{String}}
 ```
 

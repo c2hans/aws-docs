@@ -36,7 +36,7 @@ In order for your API to invoke your `Calc` Lambda function, you'll need to have
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -61,7 +61,7 @@ The role you create will need to have Lambda [InvokeFunction](https://docs.aws.a
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -103,7 +103,7 @@ Here's how to accomplish all this:
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -153,7 +153,7 @@ Here's how to accomplish all this:
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

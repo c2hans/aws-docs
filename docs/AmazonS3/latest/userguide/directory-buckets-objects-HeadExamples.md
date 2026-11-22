@@ -17,7 +17,7 @@ The following AWS SDK for Java 2.x example shows how to determine if a bucket ex
 **Example**
  AWS SDK for Java 2.x
 
-```
+```Java V2
 public static void headBucket(S3Client s3Client, String bucketName) {
    try {
         HeadBucketRequest headBucketRequest = HeadBucketRequest
@@ -42,7 +42,7 @@ public static void headBucket(S3Client s3Client, String bucketName) {
 
 The following `head-bucket` example command shows how you can use the AWS CLI to determine if a directory bucket exists and if you have permission to access it. To run this command, replace the user input placeholders with your own information.
 
-```
+```bash
 aws s3api head-bucket --bucket {{bucket-base-name}}--{{zone-id}}--x-s3
 ```
 

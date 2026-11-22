@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-aps-scraper-scrapeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ConfigurationBlob](#cfn-aps-scraper-scrapeconfiguration-configurationblob)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-aps-scraper-scrapeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ConfigurationBlob](#cfn-aps-scraper-scrapeconfiguration-configurationblob): {{String}}
 ```
 

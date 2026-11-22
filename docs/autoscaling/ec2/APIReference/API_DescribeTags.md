@@ -90,7 +90,7 @@ https://autoscaling.amazonaws.com/?Action=DescribeTags
 #### Sample Response
 <a name="API_DescribeTags_Example_1_Response"></a>
 
-```
+```xml
 <DescribeTagsResponse xmlns="https://autoscaling.amazonaws.com/doc/2011-01-01/">
   <DescribeTagsResult>
     <Tags>

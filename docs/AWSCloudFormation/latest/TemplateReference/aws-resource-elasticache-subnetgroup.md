@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-elasticache-subnetgroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ElastiCache::SubnetGroup",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-elasticache-subnetgroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ElastiCache::SubnetGroup
 Properties:
   [CacheSubnetGroupName](#cfn-elasticache-subnetgroup-cachesubnetgroupname): {{String}}
@@ -90,7 +90,7 @@ When the logical ID of this resource is provided to the Ref intrinsic function, 
 #### JSON
 <a name="aws-resource-elasticache-subnetgroup--examples----json"></a>
 
-```
+```json
 {
     "SubnetGroup": {
         "Type": "AWS::ElastiCache::SubnetGroup",
@@ -112,7 +112,7 @@ When the logical ID of this resource is provided to the Ref intrinsic function, 
 #### YAML
 <a name="aws-resource-elasticache-subnetgroup--examples----yaml"></a>
 
-```
+```yaml
 SubnetGroup:
   Type: 'AWS::ElastiCache::SubnetGroup'
   Properties:

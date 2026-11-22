@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityhub-configurationpolicy-policy-syntax.json"></a>
 
-```
+```json
 {
   "[SecurityHub](#cfn-securityhub-configurationpolicy-policy-securityhub)" : {{SecurityHubPolicy}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityhub-configurationpolicy-policy-syntax.yaml"></a>
 
-```
+```yaml
   [SecurityHub](#cfn-securityhub-configurationpolicy-policy-securityhub): {{
     SecurityHubPolicy}}
 ```

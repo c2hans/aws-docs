@@ -45,7 +45,7 @@ aws resource-groups create-group \
 **To create a group for Capacity Reservations**
 Use the [New-RGGroup](https://docs.aws.amazon.com/powershell/latest/reference/items/New-RGGroup.html) cmdlet.
 
-```
+```powershell
 New-RGGroup `
     -Name {{MyCRGroup}} `
     -Configuration `

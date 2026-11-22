@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-distributionconfiguration-launchtemplateconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AccountId](#cfn-imagebuilder-distributionconfiguration-launchtemplateconfiguration-accountid)" : {{String}},
   "[LaunchTemplateId](#cfn-imagebuilder-distributionconfiguration-launchtemplateconfiguration-launchtemplateid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-distributionconfiguration-launchtemplateconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AccountId](#cfn-imagebuilder-distributionconfiguration-launchtemplateconfiguration-accountid): {{String}}
   [LaunchTemplateId](#cfn-imagebuilder-distributionconfiguration-launchtemplateconfiguration-launchtemplateid): {{String}}
   [SetDefaultVersion](#cfn-imagebuilder-distributionconfiguration-launchtemplateconfiguration-setdefaultversion): {{Boolean}}

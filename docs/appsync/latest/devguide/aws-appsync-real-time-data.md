@@ -25,7 +25,7 @@ The following example shows how to work with GraphQL subscriptions. It doesn't s
 
 To get started with subscriptions, you must add a subscription entry point to your schema as follows:
 
-```
+```sh
 schema {
     query: Query
     mutation: Mutation
@@ -35,7 +35,7 @@ schema {
 
 Suppose you have a blog post site, and you want to subscribe to new blogs and changes to existing blogs. To do this, add the following `Subscription` definition to your schema:
 
-```
+```sh
 type Subscription {
     addedPost: Post
     updatedPost: Post
@@ -45,7 +45,7 @@ type Subscription {
 
 Suppose further that you have the following mutations:
 
-```
+```sh
 type Mutation {
     addPost(id: ID! author: String! title: String content: String url: String): Post!
     updatePost(id: ID! author: String! title: String content: String url: String ups: Int! downs: Int! expectedVersion: Int!): Post!
@@ -55,7 +55,7 @@ type Mutation {
 
 You can make these fields real time by adding an `@aws_subscribe(mutations: ["mutation_field_1", "mutation_field_2"])` directive for each of the subscriptions you want to receive notifications for, as follows:
 
-```
+```sh
 type Subscription {
     addedPost: Post
     @aws_subscribe(mutations: ["addPost"])
@@ -68,7 +68,7 @@ type Subscription {
 
 Because the `@aws_subscribe(mutations: ["",..,""])` takes an array of mutation inputs, you can specify multiple mutations, which initiate a subscription. If you're subscribing from a client, your GraphQL query might look like the following:
 
-```
+```sh
 subscription NewPostSub {
     addedPost {
         __typename
@@ -89,7 +89,7 @@ The subscription selection set is essential when using pure WebSockets. If a fie
 
 In the previous example, the subscriptions didn't have arguments. Suppose that your schema looks like the following:
 
-```
+```sh
 type Subscription {
     updatedPost(id:ID! author:String): Post
     @aws_subscribe(mutations: ["updatePost"])
@@ -98,7 +98,7 @@ type Subscription {
 
 In this case, your client defines a subscription as follows:
 
-```
+```sh
 subscription UpdatedPostSub {
     updatedPost(id:"XYZ", author:"ABC") {
         title
@@ -116,7 +116,7 @@ To set up subscriptions on the client, see [Building a client application using 
 
 An important part of using GraphQL subscriptions is understanding when and how to use arguments. You can make subtle changes to modify how and when to notify clients about mutations that have occurred. To do this, see the sample schema from the quickstart chapter, which creates "Todos". For this sample schema, the following mutations are defined:
 
-```
+```json
 type Mutation {
     createTodo(input: CreateTodoInput!): Todo
     updateTodo(input: UpdateTodoInput!): Todo
@@ -126,7 +126,7 @@ type Mutation {
 
 In the default sample, clients can subscribe to updates to any `Todo` by using the `onUpdateTodo` `subscription` with no arguments:
 
-```
+```json
 subscription OnUpdateTodo {
   onUpdateTodo {
     description
@@ -139,7 +139,7 @@ subscription OnUpdateTodo {
 
 You can filter your `subscription` by using its arguments. For example, to only trigger a `subscription` when a `todo` with a specific `ID` is updated, specify the `ID` value:
 
-```
+```json
 subscription OnUpdateTodo {
   onUpdateTodo(id: "{{a-todo-id}}") {
     description
@@ -152,7 +152,7 @@ subscription OnUpdateTodo {
 
 You can also pass multiple arguments. For example, the following `subscription` demonstrates how to get notified of any `Todo` updates at a specific place and time:
 
-```
+```json
 subscription todosAtHome {
   onUpdateTodo(when: "tomorrow", where: "at home") {
     description
@@ -166,7 +166,7 @@ subscription todosAtHome {
 
 Note that all of the arguments are optional. If you don't specify any arguments in your `subscription`, you will be subscribed to all `Todo` updates that occur in your application. However, you could update your `subscription`'s field definition to require the `ID` argument. This would force the response of a specific `todo` instead of all `todo`s:
 
-```
+```json
 onUpdateTodo(
   id: ID!,
   name: String,
@@ -185,7 +185,7 @@ Let's go back to the todos API sample where we could create todos. See the sampl
 
 Let's modify our schema to include a new `owner` field, on the `Todo` type, that describes who the owner is. The `owner` field is not required and can only be set on `UpdateTodoInput`. See the following simplified version of the schema:
 
-```
+```json
 type Todo {
   id: ID!
   name: String!
@@ -224,7 +224,7 @@ type Subscription {
 
 The following subscription returns all `Todo`updates:
 
-```
+```json
 subscription MySubscription {
   onUpdateTodo {
     description
@@ -238,7 +238,7 @@ subscription MySubscription {
 
 If you modify the preceding subscription to add the field argument `owner: null`, you are now asking a different question. This subscription now registers the client to get notified of all the `Todo` updates that have not provided an owner.
 
-```
+```json
 subscription MySubscription {
   onUpdateTodo(owner: null) {
     description

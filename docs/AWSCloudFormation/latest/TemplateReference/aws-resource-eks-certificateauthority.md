@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-eks-certificateauthority-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EKS::CertificateAuthority",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-eks-certificateauthority-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EKS::CertificateAuthority
 Properties:
   [ClusterName](#cfn-eks-certificateauthority-clustername): {{String}}

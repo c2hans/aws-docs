@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-emailidentity-feedbackattributes-syntax.json"></a>
 
-```
+```json
 {
   "[EmailForwardingEnabled](#cfn-ses-emailidentity-feedbackattributes-emailforwardingenabled)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-emailidentity-feedbackattributes-syntax.yaml"></a>
 
-```
+```yaml
   [EmailForwardingEnabled](#cfn-ses-emailidentity-feedbackattributes-emailforwardingenabled): {{Boolean}}
 ```
 

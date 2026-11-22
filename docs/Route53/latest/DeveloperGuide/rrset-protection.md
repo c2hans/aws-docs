@@ -96,7 +96,7 @@ To manage protections programmatically, use the [CreateResourceRecordSetProtecti
 
 The following command creates two protections at the apex of the `example.com` hosted zone: one for the `A` records, with a comment, and one for the `MX` records.
 
-```
+```bash
 aws route53 create-resource-record-set-protections \
     --hosted-zone-id Z1D633PJN98FT9 \
     --protections '[{"RecordName":"example.com","RecordType":"A","Comment":"Production apex. Contact the DNS team before changing."},{"RecordName":"example.com","RecordType":"MX"}]'
@@ -119,14 +119,14 @@ A successful request returns an empty response.
 
 The following command lists the protections in the hosted zone.
 
-```
+```bash
 aws route53 list-resource-record-set-protections \
     --hosted-zone-id Z1D633PJN98FT9
 ```
 
 Example output:
 
-```
+```json
 {
     "ResourceRecordSetProtections": [
         {
@@ -148,7 +148,7 @@ Route 53 returns `RecordName` in fully qualified form with a trailing dot, as `
 
 The following command deletes the protection for the `A` records at the zone apex.
 
-```
+```bash
 aws route53 delete-resource-record-set-protections \
     --hosted-zone-id Z1D633PJN98FT9 \
     --protections '[{"RecordName":"example.com","RecordType":"A"}]'

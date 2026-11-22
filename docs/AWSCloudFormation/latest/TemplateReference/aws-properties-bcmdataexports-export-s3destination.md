@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bcmdataexports-export-s3destination-syntax.json"></a>
 
-```
+```json
 {
   "[S3Bucket](#cfn-bcmdataexports-export-s3destination-s3bucket)" : {{String}},
   "[S3BucketOwner](#cfn-bcmdataexports-export-s3destination-s3bucketowner)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bcmdataexports-export-s3destination-syntax.yaml"></a>
 
-```
+```yaml
   [S3Bucket](#cfn-bcmdataexports-export-s3destination-s3bucket): {{String}}
   [S3BucketOwner](#cfn-bcmdataexports-export-s3destination-s3bucketowner): {{String}}
   [S3OutputConfigurations](#cfn-bcmdataexports-export-s3destination-s3outputconfigurations): {{

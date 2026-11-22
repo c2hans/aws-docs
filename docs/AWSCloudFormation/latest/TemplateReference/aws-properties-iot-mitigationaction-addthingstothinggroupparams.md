@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-mitigationaction-addthingstothinggroupparams-syntax.json"></a>
 
-```
+```json
 {
   "[OverrideDynamicGroups](#cfn-iot-mitigationaction-addthingstothinggroupparams-overridedynamicgroups)" : {{Boolean}},
   "[ThingGroupNames](#cfn-iot-mitigationaction-addthingstothinggroupparams-thinggroupnames)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-mitigationaction-addthingstothinggroupparams-syntax.yaml"></a>
 
-```
+```yaml
   [OverrideDynamicGroups](#cfn-iot-mitigationaction-addthingstothinggroupparams-overridedynamicgroups): {{Boolean}}
   [ThingGroupNames](#cfn-iot-mitigationaction-addthingstothinggroupparams-thinggroupnames): {{
     - String}}

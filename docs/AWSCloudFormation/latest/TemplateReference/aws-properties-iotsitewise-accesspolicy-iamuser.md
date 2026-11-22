@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotsitewise-accesspolicy-iamuser-syntax.json"></a>
 
-```
+```json
 {
   "[arn](#cfn-iotsitewise-accesspolicy-iamuser-arn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotsitewise-accesspolicy-iamuser-syntax.yaml"></a>
 
-```
+```yaml
   [arn](#cfn-iotsitewise-accesspolicy-iamuser-arn): {{String}}
 ```
 

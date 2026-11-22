@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-collaboration-dataencryptionmetadata-syntax.json"></a>
 
-```
+```json
 {
   "[AllowCleartext](#cfn-cleanrooms-collaboration-dataencryptionmetadata-allowcleartext)" : {{Boolean}},
   "[AllowDuplicates](#cfn-cleanrooms-collaboration-dataencryptionmetadata-allowduplicates)" : {{Boolean}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-collaboration-dataencryptionmetadata-syntax.yaml"></a>
 
-```
+```yaml
   [AllowCleartext](#cfn-cleanrooms-collaboration-dataencryptionmetadata-allowcleartext): {{Boolean}}
   [AllowDuplicates](#cfn-cleanrooms-collaboration-dataencryptionmetadata-allowduplicates): {{Boolean}}
   [AllowJoinsOnColumnsWithDifferentNames](#cfn-cleanrooms-collaboration-dataencryptionmetadata-allowjoinsoncolumnswithdifferentnames): {{Boolean}}

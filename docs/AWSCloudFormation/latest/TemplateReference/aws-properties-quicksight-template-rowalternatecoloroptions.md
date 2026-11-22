@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-rowalternatecoloroptions-syntax.json"></a>
 
-```
+```json
 {
   "[RowAlternateColors](#cfn-quicksight-template-rowalternatecoloroptions-rowalternatecolors)" : {{[ String, ... ]}},
   "[Status](#cfn-quicksight-template-rowalternatecoloroptions-status)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-rowalternatecoloroptions-syntax.yaml"></a>
 
-```
+```yaml
   [RowAlternateColors](#cfn-quicksight-template-rowalternatecoloroptions-rowalternatecolors): {{
     - String}}
   [Status](#cfn-quicksight-template-rowalternatecoloroptions-status): {{String}}

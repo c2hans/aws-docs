@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-batch-serviceenvironment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Batch::ServiceEnvironment",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-batch-serviceenvironment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Batch::ServiceEnvironment
 Properties:
   [CapacityLimits](#cfn-batch-serviceenvironment-capacitylimits): {{
@@ -114,7 +114,7 @@ The following example creates a service environment called `SageMakerTrainingEnv
 #### JSON
 <a name="aws-resource-batch-serviceenvironment--examples--Service_Environment--json"></a>
 
-```
+```json
 {
     "ServiceEnvironment": {
         "Type": "AWS::Batch::ServiceEnvironment",

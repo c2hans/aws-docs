@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-decalsettings-syntax.json"></a>
 
-```
+```json
 {
   "[DecalColor](#cfn-quicksight-dashboard-decalsettings-decalcolor)" : {{String}},
   "[DecalPatternType](#cfn-quicksight-dashboard-decalsettings-decalpatterntype)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-decalsettings-syntax.yaml"></a>
 
-```
+```yaml
   [DecalColor](#cfn-quicksight-dashboard-decalsettings-decalcolor): {{String}}
   [DecalPatternType](#cfn-quicksight-dashboard-decalsettings-decalpatterntype): {{String}}
   [DecalStyleType](#cfn-quicksight-dashboard-decalsettings-decalstyletype): {{String}}

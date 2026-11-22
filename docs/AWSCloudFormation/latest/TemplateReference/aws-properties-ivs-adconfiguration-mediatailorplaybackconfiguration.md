@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ivs-adconfiguration-mediatailorplaybackconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[PlaybackConfigurationArn](#cfn-ivs-adconfiguration-mediatailorplaybackconfiguration-playbackconfigurationarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ivs-adconfiguration-mediatailorplaybackconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [PlaybackConfigurationArn](#cfn-ivs-adconfiguration-mediatailorplaybackconfiguration-playbackconfigurationarn): {{String}}
 ```
 

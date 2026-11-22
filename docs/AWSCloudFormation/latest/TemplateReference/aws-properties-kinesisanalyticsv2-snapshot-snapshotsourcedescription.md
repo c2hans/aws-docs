@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisanalyticsv2-snapshot-snapshotsourcedescription-syntax.json"></a>
 
-```
+```json
 {
   "[S3PrefixLocation](#cfn-kinesisanalyticsv2-snapshot-snapshotsourcedescription-s3prefixlocation)" : {{S3PrefixLocation}},
   "[SourceApplicationDescription](#cfn-kinesisanalyticsv2-snapshot-snapshotsourcedescription-sourceapplicationdescription)" : {{SourceApplicationDescription}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisanalyticsv2-snapshot-snapshotsourcedescription-syntax.yaml"></a>
 
-```
+```yaml
   [S3PrefixLocation](#cfn-kinesisanalyticsv2-snapshot-snapshotsourcedescription-s3prefixlocation): {{
     S3PrefixLocation}}
   [SourceApplicationDescription](#cfn-kinesisanalyticsv2-snapshot-snapshotsourcedescription-sourceapplicationdescription): {{

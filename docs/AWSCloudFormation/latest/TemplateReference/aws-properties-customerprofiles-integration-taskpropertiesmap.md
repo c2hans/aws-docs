@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-integration-taskpropertiesmap-syntax.json"></a>
 
-```
+```json
 {
   "[OperatorPropertyKey](#cfn-customerprofiles-integration-taskpropertiesmap-operatorpropertykey)" : {{String}},
   "[Property](#cfn-customerprofiles-integration-taskpropertiesmap-property)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-integration-taskpropertiesmap-syntax.yaml"></a>
 
-```
+```yaml
   [OperatorPropertyKey](#cfn-customerprofiles-integration-taskpropertiesmap-operatorpropertykey): {{String}}
   [Property](#cfn-customerprofiles-integration-taskpropertiesmap-property): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-axislabeloptions-syntax.json"></a>
 
-```
+```json
 {
   "[ApplyTo](#cfn-quicksight-template-axislabeloptions-applyto)" : {{AxisLabelReferenceOptions}},
   "[CustomLabel](#cfn-quicksight-template-axislabeloptions-customlabel)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-axislabeloptions-syntax.yaml"></a>
 
-```
+```yaml
   [ApplyTo](#cfn-quicksight-template-axislabeloptions-applyto): {{
     AxisLabelReferenceOptions}}
   [CustomLabel](#cfn-quicksight-template-axislabeloptions-customlabel): {{String}}

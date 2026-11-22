@@ -55,11 +55,13 @@ https://iam.amazonaws.com/?Action=ListSAMLProviders
       <Arn>arn:aws:iam::123456789012:saml-provider/MyUniversity</Arn>
       <ValidUntil>2032-05-09T16:27:11Z</ValidUntil>
       <CreateDate>2012-05-09T16:27:03Z</CreateDate>
+      <IsTrustedIdentityPropagationEnabled>true</IsTrustedIdentityPropagationEnabled>
     </member>
     <member>
       <Arn>arn:aws:iam::123456789012:saml-provider/MyUniversity</Arn>
       <ValidUntil>2015-03-11T13:11:02Z</ValidUntil>
       <CreateDate>2012-05-09T16:27:11Z</CreateDate>
+      <IsTrustedIdentityPropagationEnabled>false</IsTrustedIdentityPropagationEnabled>
     </member>
   </SAMLProviderList>
 </ListSAMLProvidersResult>

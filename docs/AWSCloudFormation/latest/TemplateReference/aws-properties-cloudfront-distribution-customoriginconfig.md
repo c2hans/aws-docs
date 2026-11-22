@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distribution-customoriginconfig-syntax.json"></a>
 
-```
+```json
 {
   "[HTTPPort](#cfn-cloudfront-distribution-customoriginconfig-httpport)" : {{Integer}},
   "[HTTPSPort](#cfn-cloudfront-distribution-customoriginconfig-httpsport)" : {{Integer}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distribution-customoriginconfig-syntax.yaml"></a>
 
-```
+```yaml
   [HTTPPort](#cfn-cloudfront-distribution-customoriginconfig-httpport): {{Integer}}
   [HTTPSPort](#cfn-cloudfront-distribution-customoriginconfig-httpsport): {{Integer}}
   [IpAddressType](#cfn-cloudfront-distribution-customoriginconfig-ipaddresstype): {{String}}

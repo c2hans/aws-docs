@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apprunner-service-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppRunner::Service",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apprunner-service-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppRunner::Service
 Properties:
   [AutoScalingConfigurationArn](#cfn-apprunner-service-autoscalingconfigurationarn): {{String}}
@@ -172,7 +172,7 @@ This example illustrates creating a service based on a Python source code reposi
 #### JSON
 <a name="aws-resource-apprunner-service--examples--Service_based_on_source_code--json"></a>
 
-```
+```json
 {
   "Type": "AWS::AppRunner::Service",
   "Properties": {
@@ -216,7 +216,7 @@ This example illustrates creating a service based on a Python source code reposi
 #### YAML
 <a name="aws-resource-apprunner-service--examples--Service_based_on_source_code--yaml"></a>
 
-```
+```yaml
 Type: AWS::AppRunner::Service
 Properties:
   ServiceName: python-app
@@ -253,7 +253,7 @@ This example illustrates creating a service based on an image stored in Amazon E
 #### JSON
 <a name="aws-resource-apprunner-service--examples--Service_based_on_source_image--json"></a>
 
-```
+```json
 {
   "Type": "AWS::AppRunner::Service",
   "Properties": {
@@ -288,7 +288,7 @@ This example illustrates creating a service based on an image stored in Amazon E
 #### YAML
 <a name="aws-resource-apprunner-service--examples--Service_based_on_source_image--yaml"></a>
 
-```
+```yaml
 Type: AWS::AppRunner::Service
 Properties:
   ServiceName: golang-container-app

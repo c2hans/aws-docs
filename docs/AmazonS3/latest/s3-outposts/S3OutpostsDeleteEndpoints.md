@@ -33,7 +33,7 @@ aws s3outposts delete-endpoint --endpoint-id {{example-endpoint-id}} --outpost-i
 
 The following SDK for Java example deletes an endpoint for an Outpost. To use this example, replace the `{{user input placeholders}}` with your own information.
 
-```
+```Java
 import com.amazonaws.arn.Arn;
 import com.amazonaws.services.s3outposts.AmazonS3Outposts;
 import com.amazonaws.services.s3outposts.AmazonS3OutpostsClientBuilder;

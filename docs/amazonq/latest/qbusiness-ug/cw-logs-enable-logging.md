@@ -55,7 +55,7 @@ To enable conversation logging, you need the Amazon Resource Name (ARN) of your 
 
 1.  Create a delivery source with the [PutDeliverySource](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliverySource.html) Amazon CloudWatch Logs API operation. Give the delivery source a name and for `resourceArn`, specify the ARN of your application. For `logType`, specify `EVENT_LOGS`.
 
-   ```
+   ```json
    {
      "logType": "EVENT_LOGS",
      "name": "my-q-business-application-delivery-source",
@@ -65,7 +65,7 @@ To enable conversation logging, you need the Amazon Resource Name (ARN) of your 
 
 1.  Configure the log delivery destination with the [PutDeliveryDestination](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliveryDestination.html) Amazon CloudWatch Logs API operation. You can choose either Amazon CloudWatch Logs, Amazon S3, or Amazon Data Firehose as the destination for storing logs. You must specify the Amazon Resource Name of one of the destination options for where your logs will be stored. The `outputFormat` of the logs can be one of the following: json, plain, w3c, raw, or parquet. The following shows how to specify an Amazon S3 bucket as a log delivery destination with an `outputFormat` of `json`.
 
-   ```
+   ```json
    {
        "deliveryDestinationConfiguration": {
            "destinationResourceArn": "arn:aws:s3:::bucket-name"
@@ -80,7 +80,7 @@ To enable conversation logging, you need the Amazon Resource Name (ARN) of your 
 
 1.  Enable monitoring with the [CreateDelivery](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateDelivery.html) Amazon CloudWatch Logs API operation. This API operation links the delivery source to the destination you created in the previous steps.
 
-   ```
+   ```json
    {
      "deliveryDestinationArn": "string",
      "deliverySourceName": "string",

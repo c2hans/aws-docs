@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sso-assignment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SSO::Assignment",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sso-assignment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SSO::Assignment
 Properties:
   [InstanceArn](#cfn-sso-assignment-instancearn): {{String}}
@@ -119,7 +119,7 @@ The following example creates a custom assignment, assigning the user `"user_id"
 #### JSON
 <a name="aws-resource-sso-assignment--examples--Creating_a_new_assignment_for--json"></a>
 
-```
+```json
 {
    "Assignment": {
       "Type": "AWS::SSO::Assignment",
@@ -143,7 +143,7 @@ The following example creates a custom assignment, assigning the user `"user_id"
 #### YAML
 <a name="aws-resource-sso-assignment--examples--Creating_a_new_assignment_for--yaml"></a>
 
-```
+```yaml
 Assignment:
     Type: AWS::SSO::Assignment
     Properties:

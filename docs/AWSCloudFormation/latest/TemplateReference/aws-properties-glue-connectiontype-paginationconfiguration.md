@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-connectiontype-paginationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CursorConfiguration](#cfn-glue-connectiontype-paginationconfiguration-cursorconfiguration)" : {{CursorConfiguration}},
   "[OffsetConfiguration](#cfn-glue-connectiontype-paginationconfiguration-offsetconfiguration)" : {{OffsetConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-connectiontype-paginationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CursorConfiguration](#cfn-glue-connectiontype-paginationconfiguration-cursorconfiguration): {{
     CursorConfiguration}}
   [OffsetConfiguration](#cfn-glue-connectiontype-paginationconfiguration-offsetconfiguration): {{

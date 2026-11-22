@@ -130,7 +130,7 @@ Data loading requires you to provide access to AWS resources. To provide access,
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -210,7 +210,7 @@ For more information, see [Modifying a role](https://docs.aws.amazon.com/IAM/lat
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

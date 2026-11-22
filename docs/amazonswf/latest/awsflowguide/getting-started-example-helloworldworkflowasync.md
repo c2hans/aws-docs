@@ -25,7 +25,7 @@ The following sections describe how to modify the original HelloWorldWorkflow co
 
 HelloWorldWorkflowAsync implements its activities worker interface in `GreeterActivities`, as follows:
 
-```
+```java
 import com.amazonaws.services.simpleworkflow.flow.annotations.Activities;
 import com.amazonaws.services.simpleworkflow.flow.annotations.ActivityRegistrationOptions;
 
@@ -49,7 +49,7 @@ The remaining activity method implementations are identical to HelloWorldWorkflo
 
 HelloWorldWorkflowAsync defines the workflow interface as follows:
 
-```
+```java
 import com.amazonaws.services.simpleworkflow.flow.annotations.Execute;
 import com.amazonaws.services.simpleworkflow.flow.annotations.Workflow;
 import com.amazonaws.services.simpleworkflow.flow.annotations.WorkflowRegistrationOptions;
@@ -67,7 +67,7 @@ The interface is identical to HelloWorldWorkflow apart from a new version number
 
 HelloWorldWorkflowAsync implements the workflow as follows:
 
-```
+```java
 import com.amazonaws.services.simpleworkflow.flow.annotations.Asynchronous;
 import com.amazonaws.services.simpleworkflow.flow.core.Promise;
 
@@ -115,7 +115,7 @@ The difference is that, instead of calling the activities client to execute a `g
 
 HelloWorldWorkflowAsync implements `GreeterWorker` as the host class for the workflow and activity implementations. It is identical to the HelloWorldWorkflow implementation except for the `taskListToPoll` name, which is set to "`HelloWorldAsyncList`".
 
-```
+```java
 import com.amazonaws.ClientConfiguration;
 import com.amazonaws.auth.AWSCredentials;
 import com.amazonaws.auth.BasicAWSCredentials;

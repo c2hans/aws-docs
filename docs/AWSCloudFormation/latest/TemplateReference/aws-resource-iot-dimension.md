@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iot-dimension-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoT::Dimension",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iot-dimension-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoT::Dimension
 Properties:
   [Name](#cfn-iot-dimension-name): {{String}}
@@ -106,7 +106,7 @@ The Amazon Resource Name (ARN) of the dimension.
 #### JSON
 <a name="aws-resource-iot-dimension--examples----json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "Amazon Web Services IoT Dimension Sample Template",
@@ -134,7 +134,7 @@ The Amazon Resource Name (ARN) of the dimension.
 #### YAML
 <a name="aws-resource-iot-dimension--examples----yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Amazon Web Services IoT Dimension Sample Template
 Resources:

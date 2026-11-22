@@ -300,7 +300,7 @@ The `-y` option installs the updates without asking for confirmation. To examine
 
    For example, the following SQL command shows the current date and time:
 
-   ```
+   ```sql
    SELECT CURRENT_TIMESTAMP;
    ```
 

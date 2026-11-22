@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrass-coredefinition-core-syntax.json"></a>
 
-```
+```json
 {
   "[CertificateArn](#cfn-greengrass-coredefinition-core-certificatearn)" : {{String}},
   "[Id](#cfn-greengrass-coredefinition-core-id)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrass-coredefinition-core-syntax.yaml"></a>
 
-```
+```yaml
   [CertificateArn](#cfn-greengrass-coredefinition-core-certificatearn): {{String}}
   [Id](#cfn-greengrass-coredefinition-core-id): {{String}}
   [SyncShadow](#cfn-greengrass-coredefinition-core-syncshadow): {{Boolean}}

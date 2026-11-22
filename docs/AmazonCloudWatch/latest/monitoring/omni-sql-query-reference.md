@@ -28,7 +28,7 @@ Every row carries system fields alongside the fields your telemetry brought with
 
 Quote any field name that is not a plain identifier: one with a leading `@`, a dot, or a hyphen. Backticks and double quotes both work:
 
-```
+```sql
 SELECT `@timestamp`, `@message`
 FROM "logs.default"
 WHERE `@timestamp` BETWEEN NOW() - INTERVAL '1' DAY AND NOW()
@@ -56,7 +56,7 @@ Because the Dataset contains records from different sources, each can have a dif
 
 Name the fields you want as columns:
 
-```
+```sql
 SELECT
   request_id,
   path,
@@ -76,7 +76,7 @@ You can filter on a field whether or not you select it, so `WHERE path = '/api/a
 
 Read into an attribute map with bracket syntax:
 
-```
+```sql
 SELECT
   attributes['http.status_code'],
   resource['attributes']['service.name']
@@ -102,7 +102,7 @@ The time range you select in Explore automatically applies to your query. You ca
 
 **In a join, bound each table separately.** A condition on one side does not constrain the other, so a join with a single bound reads the whole retention window on the unbounded side:
 
-```
+```sql
 SELECT a.request_id, a.path, b.user_id
 FROM "logs.default" a
 JOIN "logs.default" b ON a.request_id = b.request_id
@@ -117,7 +117,7 @@ WHERE a.`@timestamp` >= NOW() - INTERVAL '1' HOUR
 
 Wrap any query in `EXPLAIN (ANALYZE_FIELDS)` to get one row per field observed in the rows that query selects, instead of the data rows:
 
-```
+```sql
 EXPLAIN (ANALYZE_FIELDS)
 SELECT *
 FROM "logs.default"
@@ -143,7 +143,7 @@ For information about every supported clause, command, and function, with exampl
 
 **Slowest agent runs in the last hour.** Each span's duration is the difference between its `startTimeUnixNano` and `endTimeUnixNano`, and the agent's name comes from its resource attributes:
 
-```
+```sql
 SELECT
   resource['attributes']['service.name'] AS agent,
   `@timestamp`,
@@ -156,7 +156,7 @@ LIMIT 20
 
 **Error rate by service.** Counting over a grouped select:
 
-```
+```sql
 SELECT resource['attributes']['service.name'] AS service,
        COUNT(*) AS spans,
        COUNT(*) FILTER (WHERE status['code'] IN ('2', 'ERROR')) AS errors
@@ -168,7 +168,7 @@ ORDER BY errors DESC
 
 **One request across an application and an agent.** Both carry the same trace ID when context propagates:
 
-```
+```sql
 SELECT *
 FROM "traces.default"
 WHERE

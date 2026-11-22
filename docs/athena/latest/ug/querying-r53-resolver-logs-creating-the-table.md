@@ -12,7 +12,7 @@ You can use the Query Editor in the Athena console to create and query a table f
 
 1. In the Athena Query Editor, enter the following `CREATE TABLE` statement. Replace the `LOCATION` clause values with those corresponding to the location of your Resolver logs in Amazon S3.
 
-   ```
+   ```sql
    CREATE EXTERNAL TABLE r53_rlogs (
      version string,
      account_id string,
@@ -54,6 +54,6 @@ The SerDe expects each JSON document to be on a single line of text with no line
 
 1. In the Athena console Query Editor, run the following query to verify that your table has been created.
 
-   ```
+   ```sql
    SELECT * FROM "r53_rlogs" LIMIT 10
    ```

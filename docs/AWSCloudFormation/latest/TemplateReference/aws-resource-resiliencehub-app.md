@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-resiliencehub-app-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ResilienceHub::App",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-resiliencehub-app-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ResilienceHub::App
 Properties:
   [AppAssessmentSchedule](#cfn-resiliencehub-app-appassessmentschedule): {{String}}
@@ -305,7 +305,7 @@ The following examples show how to create an application in AWS Resilience Hub.
 #### YAML
 <a name="aws-resource-resiliencehub-app--examples--Creating_an_application--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   Type: AWS::ResilienceHub::App
@@ -326,7 +326,7 @@ Resources:
 #### JSON
 <a name="aws-resource-resiliencehub-app--examples--Creating_an_application--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09T00:00:00.000Z",
     "Resources": {

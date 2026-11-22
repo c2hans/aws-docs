@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-qbusiness-permission-condition-syntax.json"></a>
 
-```
+```json
 {
   "[ConditionKey](#cfn-qbusiness-permission-condition-conditionkey)" : {{String}},
   "[ConditionOperator](#cfn-qbusiness-permission-condition-conditionoperator)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-qbusiness-permission-condition-syntax.yaml"></a>
 
-```
+```yaml
   [ConditionKey](#cfn-qbusiness-permission-condition-conditionkey): {{String}}
   [ConditionOperator](#cfn-qbusiness-permission-condition-conditionoperator): {{String}}
   [ConditionValues](#cfn-qbusiness-permission-condition-conditionvalues): {{

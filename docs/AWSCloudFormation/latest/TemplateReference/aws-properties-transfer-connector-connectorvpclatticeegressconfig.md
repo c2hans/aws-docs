@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-transfer-connector-connectorvpclatticeegressconfig-syntax.json"></a>
 
-```
+```json
 {
   "[PortNumber](#cfn-transfer-connector-connectorvpclatticeegressconfig-portnumber)" : {{Integer}},
   "[ResourceConfigurationArn](#cfn-transfer-connector-connectorvpclatticeegressconfig-resourceconfigurationarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-transfer-connector-connectorvpclatticeegressconfig-syntax.yaml"></a>
 
-```
+```yaml
   [PortNumber](#cfn-transfer-connector-connectorvpclatticeegressconfig-portnumber): {{Integer}}
   [ResourceConfigurationArn](#cfn-transfer-connector-connectorvpclatticeegressconfig-resourceconfigurationarn): {{String}}
 ```

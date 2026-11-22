@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-salesforceknowledgearticleconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CustomKnowledgeArticleTypeConfigurations](#cfn-kendra-datasource-salesforceknowledgearticleconfiguration-customknowledgearticletypeconfigurations)" : {{[ SalesforceCustomKnowledgeArticleTypeConfiguration, ... ]}},
   "[IncludedStates](#cfn-kendra-datasource-salesforceknowledgearticleconfiguration-includedstates)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-salesforceknowledgearticleconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CustomKnowledgeArticleTypeConfigurations](#cfn-kendra-datasource-salesforceknowledgearticleconfiguration-customknowledgearticletypeconfigurations): {{
     - SalesforceCustomKnowledgeArticleTypeConfiguration}}
   [IncludedStates](#cfn-kendra-datasource-salesforceknowledgearticleconfiguration-includedstates): {{

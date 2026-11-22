@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datasync-locationfsxopenzfs-nfs-syntax.json"></a>
 
-```
+```json
 {
   "[MountOptions](#cfn-datasync-locationfsxopenzfs-nfs-mountoptions)" : {{MountOptions}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datasync-locationfsxopenzfs-nfs-syntax.yaml"></a>
 
-```
+```yaml
   [MountOptions](#cfn-datasync-locationfsxopenzfs-nfs-mountoptions): {{
     MountOptions}}
 ```

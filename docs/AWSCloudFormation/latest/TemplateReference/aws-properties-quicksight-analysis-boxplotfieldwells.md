@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-boxplotfieldwells-syntax.json"></a>
 
-```
+```json
 {
   "[BoxPlotAggregatedFieldWells](#cfn-quicksight-analysis-boxplotfieldwells-boxplotaggregatedfieldwells)" : {{BoxPlotAggregatedFieldWells}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-boxplotfieldwells-syntax.yaml"></a>
 
-```
+```yaml
   [BoxPlotAggregatedFieldWells](#cfn-quicksight-analysis-boxplotfieldwells-boxplotaggregatedfieldwells): {{
     BoxPlotAggregatedFieldWells}}
 ```

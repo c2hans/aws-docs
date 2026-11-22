@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrassv2-deployment-deploymentiotjobconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AbortConfig](#cfn-greengrassv2-deployment-deploymentiotjobconfiguration-abortconfig)" : {{IoTJobAbortConfig}},
   "[JobExecutionsRolloutConfig](#cfn-greengrassv2-deployment-deploymentiotjobconfiguration-jobexecutionsrolloutconfig)" : {{IoTJobExecutionsRolloutConfig}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrassv2-deployment-deploymentiotjobconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AbortConfig](#cfn-greengrassv2-deployment-deploymentiotjobconfiguration-abortconfig): {{
     IoTJobAbortConfig}}
   [JobExecutionsRolloutConfig](#cfn-greengrassv2-deployment-deploymentiotjobconfiguration-jobexecutionsrolloutconfig): {{

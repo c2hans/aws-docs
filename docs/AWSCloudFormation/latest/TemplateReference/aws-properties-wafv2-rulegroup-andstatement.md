@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-rulegroup-andstatement-syntax.json"></a>
 
-```
+```json
 {
   "[Statements](#cfn-wafv2-rulegroup-andstatement-statements)" : {{[ Statement, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-rulegroup-andstatement-syntax.yaml"></a>
 
-```
+```yaml
   [Statements](#cfn-wafv2-rulegroup-andstatement-statements): {{
     - Statement}}
 ```

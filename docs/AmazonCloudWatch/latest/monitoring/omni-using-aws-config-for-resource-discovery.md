@@ -113,6 +113,11 @@ AWS Config records the following resource types for Omni.
 | Developer tools and migration | AWS Transfer Family | AWS::Transfer::Server |
 | Developer tools and migration | Amazon AppFlow | AWS::AppFlow::Flow |
 
+## Azure resources
+<a name="omni-using-aws-config-for-resource-discovery-azure-resources"></a>
+
+For a connected Microsoft Azure tenant, Omni discovers Azure resources through an AWS Config connector that Azure setup creates. The connector authenticates as a Microsoft Entra application named `AWS Config <account-id>-<aws-region>`. The application trusts the AWS Config service-linked role and holds the Reader role at the tenant root management group. For setup, see [Send platform telemetry from Microsoft Azure](omni-send-platform-telemetry-from-microsoft-azure.md).
+
 ## Related information
 <a name="omni-using-aws-config-for-resource-discovery-related-information"></a>
 + [Using Context Graph](omni-using-context-graph.md)

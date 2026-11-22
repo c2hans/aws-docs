@@ -34,7 +34,7 @@ The following example with MySQL Connector/J 8.0 shows one way to check an appli
 
 When using the MySQL Connector/J 8.0, an SSL connection requires verification against the server CA certificate if your connection properties have `sslMode` set to `VERIFY_CA` or `VERIFY_IDENTITY`, as in the following example.
 
-```
+```jdbc
 Properties properties = new Properties();
 properties.setProperty("sslMode", "VERIFY_IDENTITY");
 properties.put("user", DB_USER);
@@ -95,7 +95,7 @@ Specify passwords other than the prompts shown here as a security best practice.
 
 The following code example shows how to set up the SSL connection using JDBC.
 
-```
+```java
 private static final String DB_USER = "admin";
 
         private static final String DB_USER = "{{user name}}";

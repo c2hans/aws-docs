@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-pipetargetstatemachineparameters-syntax.json"></a>
 
-```
+```json
 {
   "[InvocationType](#cfn-pipes-pipe-pipetargetstatemachineparameters-invocationtype)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-pipetargetstatemachineparameters-syntax.yaml"></a>
 
-```
+```yaml
   [InvocationType](#cfn-pipes-pipe-pipetargetstatemachineparameters-invocationtype): {{String}}
 ```
 

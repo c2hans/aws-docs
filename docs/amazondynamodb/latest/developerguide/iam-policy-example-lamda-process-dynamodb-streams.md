@@ -15,7 +15,7 @@ For example, you can associate the following permissions policy with an executio
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

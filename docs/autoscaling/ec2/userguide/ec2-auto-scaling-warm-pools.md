@@ -62,7 +62,7 @@ To perform custom actions on instances while they are in a wait state due to a l
 **Tip**
 To run user data scripts when an instance restarts, the user data must be in the MIME multi-part format and specify the following in the `#cloud-config` section of the user data:
 
-  ```
+  ```yaml
   #cloud-config
   cloud_final_modules:
    - [scripts-user, always]
@@ -95,5 +95,4 @@ You can visit our [GitHub repository](https://github.com/aws-samples/amazon-ec2-
 + If your warm pool is depleted when there is a scale-out event, instances will launch directly into the Auto Scaling group (a *cold start*). You could also experience cold starts if an Availability Zone is out of capacity.
 + If an instance within the warm pool encounters an issue during the launch process, preventing it from reaching the `InService` state, the instance will be considered a failed launch and terminated. This applies regardless of the underlying cause, such as an insufficient capacity error or any other factor.
 + Amazon EC2 Auto Scaling stops or hibernates instances as they enter the warm pool, and does not wait for user data to finish running. As a result, the stop or hibernate action can interrupt long-running user data. For more information, see [Use lifecycle hooks with a warm pool in Auto Scaling group](warm-pool-instance-lifecycle.md).
-+ If you try using a warm pool with an Amazon Elastic Kubernetes Service (Amazon EKS) managed node group, instances that are still initializing might register with your Amazon EKS cluster. As a result, the cluster might schedule jobs on an instance as it is preparing to be stopped or hibernated.
-+ Likewise, if you try using a warm pool with an Amazon ECS cluster, instances might register with the cluster before they finish initializing. To solve this problem, you must configure a launch template or launch configuration that includes a special agent configuration variable in the user data. For more information, see [Using a warm pool for your Auto Scaling group](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/asg-capacity-providers.html#using-warm-pool) in the *Amazon Elastic Container Service Developer Guide*.
++ If you try using a warm pool with an Amazon ECS cluster, instances might register with the cluster before they finish initializing. To solve this problem, you must configure a launch template or launch configuration that includes a special agent configuration variable in the user data. For more information, see [Using a warm pool for your Auto Scaling group](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/asg-capacity-providers.html#using-warm-pool) in the *Amazon Elastic Container Service Developer Guide*.

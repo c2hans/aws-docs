@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apptest-testcase-mainframeactiontype-syntax.json"></a>
 
-```
+```json
 {
   "[Batch](#cfn-apptest-testcase-mainframeactiontype-batch)" : {{Batch}},
   "[Tn3270](#cfn-apptest-testcase-mainframeactiontype-tn3270)" : {{TN3270}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apptest-testcase-mainframeactiontype-syntax.yaml"></a>
 
-```
+```yaml
   [Batch](#cfn-apptest-testcase-mainframeactiontype-batch): {{
     Batch}}
   [Tn3270](#cfn-apptest-testcase-mainframeactiontype-tn3270): {{

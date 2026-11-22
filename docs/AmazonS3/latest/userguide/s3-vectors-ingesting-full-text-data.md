@@ -20,7 +20,7 @@ The following examples write a document chunk for a Retrieval Augmented Generati
 
 **Example: Write a vector with searchable text**
 
-```
+```bash
 aws s3vectors put-vectors \
     --vector-bucket-name "{{amzn-s3-demo-vector-bucket}}" \
     --index-name "{{documents}}" \
@@ -42,7 +42,7 @@ aws s3vectors put-vectors \
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```python
 import boto3
 
 client = boto3.client("s3vectors")

@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-subslotvalueelicitationsetting-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultValueSpecification](#cfn-lex-bot-subslotvalueelicitationsetting-defaultvaluespecification)" : {{SlotDefaultValueSpecification}},
   "[PromptSpecification](#cfn-lex-bot-subslotvalueelicitationsetting-promptspecification)" : {{PromptSpecification}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-subslotvalueelicitationsetting-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultValueSpecification](#cfn-lex-bot-subslotvalueelicitationsetting-defaultvaluespecification): {{
     SlotDefaultValueSpecification}}
   [PromptSpecification](#cfn-lex-bot-subslotvalueelicitationsetting-promptspecification): {{

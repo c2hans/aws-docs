@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-clientvpnendpoint-directoryserviceauthenticationrequest-syntax.json"></a>
 
-```
+```json
 {
   "[DirectoryId](#cfn-ec2-clientvpnendpoint-directoryserviceauthenticationrequest-directoryid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-clientvpnendpoint-directoryserviceauthenticationrequest-syntax.yaml"></a>
 
-```
+```yaml
   [DirectoryId](#cfn-ec2-clientvpnendpoint-directoryserviceauthenticationrequest-directoryid): {{String}}
 ```
 

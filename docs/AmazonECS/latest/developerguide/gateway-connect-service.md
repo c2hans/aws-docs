@@ -23,7 +23,7 @@ Add a gateway connector to the service and set `portName` to the container port 
 
 **To connect a service to a gateway**
 
-```
+```bash
 aws ecs update-service \
     --cluster my-cluster \
     --service my-service \
@@ -44,7 +44,7 @@ The `filters.accessTypes` narrows the gateways your service connects to. Set it 
 
 **To connect only to private gateways**
 
-```
+```bash
 aws ecs update-service \
     --cluster my-cluster \
     --service my-service \
@@ -68,7 +68,7 @@ Set a different path if `/` is slow or does real work, such as querying a databa
 
 **To set a health check path**
 
-```
+```bash
 aws ecs update-service \
     --cluster my-cluster \
     --service my-service \
@@ -89,7 +89,7 @@ Set a shorter delay when your requests complete in a few seconds, so that tasks 
 
 **To set a deregistration delay**
 
-```
+```bash
 aws ecs update-service \
     --cluster my-cluster \
     --service my-service \
@@ -157,7 +157,7 @@ You get a revision ARN from the service's deployment. `describe-service-deployme
 
 **To verify a connection and get the service URL**
 
-```
+```bash
 aws ecs describe-service-revisions \
     --service-revision-arns arn:aws:ecs:us-west-2:123456789012:service-revision/my-cluster/my-service/1234567890123456789 \
     --query 'serviceRevisions[0].ecsManagedResources.gatewayConnections'
@@ -192,7 +192,7 @@ Disassociating a gateway affects all services using that cluster association. Pl
 
 **To disconnect a service from all gateways**
 
-```
+```bash
 aws ecs update-service \
     --cluster my-cluster \
     --service my-service \

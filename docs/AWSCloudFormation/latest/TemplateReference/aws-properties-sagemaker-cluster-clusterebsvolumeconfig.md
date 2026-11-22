@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-cluster-clusterebsvolumeconfig-syntax.json"></a>
 
-```
+```json
 {
   "[RootVolume](#cfn-sagemaker-cluster-clusterebsvolumeconfig-rootvolume)" : {{Boolean}},
   "[VolumeKmsKeyId](#cfn-sagemaker-cluster-clusterebsvolumeconfig-volumekmskeyid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-cluster-clusterebsvolumeconfig-syntax.yaml"></a>
 
-```
+```yaml
   [RootVolume](#cfn-sagemaker-cluster-clusterebsvolumeconfig-rootvolume): {{Boolean}}
   [VolumeKmsKeyId](#cfn-sagemaker-cluster-clusterebsvolumeconfig-volumekmskeyid): {{String}}
   [VolumeSizeInGB](#cfn-sagemaker-cluster-clusterebsvolumeconfig-volumesizeingb): {{Integer}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rtbfabric-link-moduleparameters-syntax.json"></a>
 
-```
+```json
 {
   "[NoBid](#cfn-rtbfabric-link-moduleparameters-nobid)" : {{NoBidModuleParameters}},
   "[OpenRtbAttribute](#cfn-rtbfabric-link-moduleparameters-openrtbattribute)" : {{OpenRtbAttributeModuleParameters}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rtbfabric-link-moduleparameters-syntax.yaml"></a>
 
-```
+```yaml
   [NoBid](#cfn-rtbfabric-link-moduleparameters-nobid): {{
     NoBidModuleParameters}}
   [OpenRtbAttribute](#cfn-rtbfabric-link-moduleparameters-openrtbattribute): {{

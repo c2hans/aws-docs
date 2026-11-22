@@ -36,7 +36,7 @@ You can view the following information about your public keys that are stored in
 **To view information about a key pair**
 Use the [describe-key-pairs](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-key-pairs.html) command.
 
-```
+```bash
 aws ec2 describe-key-pairs --key-names {{key-pair-name}}
 ```
 
@@ -46,7 +46,7 @@ aws ec2 describe-key-pairs --key-names {{key-pair-name}}
 **To view information about a key pair**
 Use the [Get-EC2KeyPair](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2KeyPair.html) cmdlet.
 
-```
+```powershell
 Get-EC2KeyPair -KeyName {{key-pair-name}}
 ```
 
@@ -57,7 +57,7 @@ Get-EC2KeyPair -KeyName {{key-pair-name}}
 
 You can get the public key material for your key pairs. The following is an example public key. Note that there are line breaks added for readability.
 
-```
+```bash
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQClKsfkNkuSevGj3eYhCe53pcjqP3maAhDFcvBS7O6V
 hz2ItxCih+PnDSUaw+WNQn/mZphTk/a/gU8jEzoOWbkM4yxyb/wB96xbiFveSFJuOp/d6RJhJOI0iBXr
 lsLnBItntckiJ7FbtxJMXLvvwJryDUilBMTjYtwB+QhYXUMOzce5Pjz5/i8SeJtjnV3iAoG/cQk+0FzZ
@@ -71,13 +71,13 @@ BQoQzd8v7yeb7OzlPnWOyN0qFU0XA246RA8QFYiCNYwI3f05p6KLxEXAMPLE
 **To retrieve the public key material using ssh-keygen (Linux)**
 On your local Linux or macOS computer, use the **ssh-keygen** command. Specify the path where you downloaded your private key (the `.pem` file).
 
-```
+```bash
 ssh-keygen -y -f /{{path_to_key_pair}}/{{my-key-pair}}.pem
 ```
 
 If this **ssh-keygen** command fails, run the following **chmod** command to ensure that the private key file has the required permissions.
 
-```
+```bash
 chmod 400 {{key-pair-name}}.pem
 ```
 
@@ -90,7 +90,7 @@ On your local Windows computer, start PuTTYgen. Choose **Load**. Select the `.pp
 **To retrieve the public key material**
 Use the following [describe-key-pairs](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-key-pairs.html) command and specify the `--include-public-key` option.
 
-```
+```bash
 aws ec2 describe-key-pairs \
     --key-names {{key-pair-name}} \
     --include-public-key \
@@ -103,7 +103,7 @@ aws ec2 describe-key-pairs \
 **To retrieve the public key material**
 Use the [Get-EC2KeyPair](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2KeyPair.html) cmdlet.
 
-```
+```powershell
 (Get-EC2KeyPair -KeyName {{key-pair-name}} -IncludePublicKey $true).PublicKey
 ```
 
@@ -113,7 +113,7 @@ Use the [Get-EC2KeyPair](https://docs.aws.amazon.com/powershell/latest/reference
 **Linux**
 Run the following commands from your Linux instance.
 
-```
+```bash
 TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` \
 && curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/public-keys/0/openssh-key
 ```
@@ -121,11 +121,11 @@ TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metad
 **Windows**
 Run the following cmdlets from your Windows instance.
 
-```
+```powershell
 [string]$token = Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token-ttl-seconds" = "21600"} -Method PUT -Uri http://169.254.169.254/latest/api/token
 ```
 
-```
+```powershell
 Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token" = $token} -Method GET -Uri http://169.254.169.254/latest/meta-data/public-keys/0/openssh-key
 ```
 
@@ -135,14 +135,14 @@ Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token" = $token} -Method GET -U
 **Linux**
 Run the following command from your Linux instance.
 
-```
+```bash
 curl http://169.254.169.254/latest/meta-data/public-keys/0/openssh-key
 ```
 
 **Windows**
 Run the following cmdlet from your Windows instance.
 
-```
+```powershell
 Invoke-RestMethod -uri  http://169.254.169.254/latest/meta-data/public-keys/0/openssh-key
 ```
 
@@ -172,7 +172,7 @@ If you specify a public key when you launch an instance, the public key name is 
 **To identify the public key specified at instance launch**
 Use the following [describe-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html) command.
 
-```
+```bash
 aws ec2 describe-instances \
     --instance-id {{i-1234567890abcdef0}} \
     --query "Reservations[].Instances[].KeyName" \
@@ -181,7 +181,7 @@ aws ec2 describe-instances \
 
 The following is example output.
 
-```
+```bash
 key-pair-name
 ```
 
@@ -191,13 +191,13 @@ key-pair-name
 **To identify the public key specified at instance launch**
 Use the [Get-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html) cmdlet.
 
-```
+```powershell
 (Get-EC2Instance -InstanceId {{i-1234567890abcdef0}}).Instances | Select KeyName
 ```
 
 The following is example output.
 
-```
+```bash
 KeyName
 -------
 key-pair-name

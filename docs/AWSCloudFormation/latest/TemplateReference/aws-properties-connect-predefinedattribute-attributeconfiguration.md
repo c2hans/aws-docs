@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-predefinedattribute-attributeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EnableValueValidationOnAssociation](#cfn-connect-predefinedattribute-attributeconfiguration-enablevaluevalidationonassociation)" : {{Boolean}},
   "[IsReadOnly](#cfn-connect-predefinedattribute-attributeconfiguration-isreadonly)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-predefinedattribute-attributeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EnableValueValidationOnAssociation](#cfn-connect-predefinedattribute-attributeconfiguration-enablevaluevalidationonassociation): {{Boolean}}
   [IsReadOnly](#cfn-connect-predefinedattribute-attributeconfiguration-isreadonly): {{Boolean}}
 ```

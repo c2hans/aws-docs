@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-connectorprofile-sapodataconnectorprofileproperties-syntax.json"></a>
 
-```
+```json
 {
   "[ApplicationHostUrl](#cfn-appflow-connectorprofile-sapodataconnectorprofileproperties-applicationhosturl)" : {{String}},
   "[ApplicationServicePath](#cfn-appflow-connectorprofile-sapodataconnectorprofileproperties-applicationservicepath)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-connectorprofile-sapodataconnectorprofileproperties-syntax.yaml"></a>
 
-```
+```yaml
   [ApplicationHostUrl](#cfn-appflow-connectorprofile-sapodataconnectorprofileproperties-applicationhosturl): {{String}}
   [ApplicationServicePath](#cfn-appflow-connectorprofile-sapodataconnectorprofileproperties-applicationservicepath): {{String}}
   [ClientNumber](#cfn-appflow-connectorprofile-sapodataconnectorprofileproperties-clientnumber): {{String}}

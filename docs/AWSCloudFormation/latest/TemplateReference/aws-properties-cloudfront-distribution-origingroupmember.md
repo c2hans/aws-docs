@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distribution-origingroupmember-syntax.json"></a>
 
-```
+```json
 {
   "[OriginId](#cfn-cloudfront-distribution-origingroupmember-originid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distribution-origingroupmember-syntax.yaml"></a>
 
-```
+```yaml
   [OriginId](#cfn-cloudfront-distribution-origingroupmember-originid): {{String}}
 ```
 

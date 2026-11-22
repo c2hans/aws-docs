@@ -33,7 +33,7 @@ For more information, see [Configuring fast, secure file transfers using Amazon 
 **Tools for PowerShell V4**
 **Example 1: This command returns the value Enabled, if the transfer acceleration settings is enabled for the bucket specified.**
 
-```
+```powershell
 Get-S3BucketAccelerateConfiguration -BucketName 'amzn-s3-demo-bucket'
 ```
 **Output:**
@@ -48,7 +48,7 @@ Enabled
 **Tools for PowerShell V5**
 **Example 1: This command returns the value Enabled, if the transfer acceleration settings is enabled for the bucket specified.**
 
-```
+```powershell
 Get-S3BucketAccelerateConfiguration -BucketName 'amzn-s3-demo-bucket'
 ```
 **Output:**

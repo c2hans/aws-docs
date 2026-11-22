@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-parametertextareacontrol-syntax.json"></a>
 
-```
+```json
 {
   "[Delimiter](#cfn-quicksight-template-parametertextareacontrol-delimiter)" : {{String}},
   "[DisplayOptions](#cfn-quicksight-template-parametertextareacontrol-displayoptions)" : {{TextAreaControlDisplayOptions}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-parametertextareacontrol-syntax.yaml"></a>
 
-```
+```yaml
   [Delimiter](#cfn-quicksight-template-parametertextareacontrol-delimiter): {{String}}
   [DisplayOptions](#cfn-quicksight-template-parametertextareacontrol-displayoptions): {{
     TextAreaControlDisplayOptions}}

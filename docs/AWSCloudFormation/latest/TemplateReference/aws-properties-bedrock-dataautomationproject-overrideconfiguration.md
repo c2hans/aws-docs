@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-dataautomationproject-overrideconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Audio](#cfn-bedrock-dataautomationproject-overrideconfiguration-audio)" : {{AudioOverrideConfiguration}},
   "[Document](#cfn-bedrock-dataautomationproject-overrideconfiguration-document)" : {{DocumentOverrideConfiguration}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-dataautomationproject-overrideconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Audio](#cfn-bedrock-dataautomationproject-overrideconfiguration-audio): {{
     AudioOverrideConfiguration}}
   [Document](#cfn-bedrock-dataautomationproject-overrideconfiguration-document): {{

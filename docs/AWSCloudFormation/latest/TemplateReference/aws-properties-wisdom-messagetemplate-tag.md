@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-messagetemplate-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-wisdom-messagetemplate-tag-key)" : {{String}},
   "[Value](#cfn-wisdom-messagetemplate-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-messagetemplate-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-wisdom-messagetemplate-tag-key): {{String}}
   [Value](#cfn-wisdom-messagetemplate-tag-value): {{String}}
 ```

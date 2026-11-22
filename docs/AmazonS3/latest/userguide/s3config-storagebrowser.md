@@ -8,7 +8,7 @@ To allow Storage Browser for S3 access to S3 buckets, the Storage Browser compon
 
 For example, to enable CORS on your S3 bucket, you can update your CORS policy like this:
 
-```
+```json
 [
     {
         "ID": "S3CORSRuleId1",

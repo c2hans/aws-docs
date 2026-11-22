@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-analysisdefinition-syntax.json"></a>
 
-```
+```json
 {
   "[AnalysisDefaults](#cfn-quicksight-analysis-analysisdefinition-analysisdefaults)" : {{AnalysisDefaults}},
   "[CalculatedFields](#cfn-quicksight-analysis-analysisdefinition-calculatedfields)" : {{[ CalculatedField, ... ]}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-analysisdefinition-syntax.yaml"></a>
 
-```
+```yaml
   [AnalysisDefaults](#cfn-quicksight-analysis-analysisdefinition-analysisdefaults): {{
     AnalysisDefaults}}
   [CalculatedFields](#cfn-quicksight-analysis-analysisdefinition-calculatedfields): {{

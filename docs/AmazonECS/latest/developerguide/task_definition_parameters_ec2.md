@@ -303,7 +303,7 @@ For more information, see [Using non-AWS container images in Amazon ECS](private
 When you use the Amazon ECS API, AWS CLI, or AWS SDKs, if the secret exists in the same Region as the task that you're launching then you can use either the full ARN or the name of the secret. When you use the AWS Management Console, you must specify the full ARN of the secret.
 The following is a snippet of a task definition that shows the required parameters:
 
-```
+```json
 "containerDefinitions": [
     {
         "image": "{{private-repo/private-image}}",

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distribution-connectionfunctionassociation-syntax.json"></a>
 
-```
+```json
 {
   "[Id](#cfn-cloudfront-distribution-connectionfunctionassociation-id)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distribution-connectionfunctionassociation-syntax.yaml"></a>
 
-```
+```yaml
   [Id](#cfn-cloudfront-distribution-connectionfunctionassociation-id): {{String}}
 ```
 

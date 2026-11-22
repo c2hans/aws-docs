@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-mediatailor-prefetchschedule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MediaTailor::PrefetchSchedule",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-mediatailor-prefetchschedule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MediaTailor::PrefetchSchedule
 Properties:
   [Consumption](#cfn-mediatailor-prefetchschedule-consumption): {{

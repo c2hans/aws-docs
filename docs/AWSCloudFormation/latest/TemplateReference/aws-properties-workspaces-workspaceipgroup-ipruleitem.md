@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspaces-workspaceipgroup-ipruleitem-syntax.json"></a>
 
-```
+```json
 {
   "[IpRule](#cfn-workspaces-workspaceipgroup-ipruleitem-iprule)" : {{String}},
   "[RuleDesc](#cfn-workspaces-workspaceipgroup-ipruleitem-ruledesc)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspaces-workspaceipgroup-ipruleitem-syntax.yaml"></a>
 
-```
+```yaml
   [IpRule](#cfn-workspaces-workspaceipgroup-ipruleitem-iprule): {{String}}
   [RuleDesc](#cfn-workspaces-workspaceipgroup-ipruleitem-ruledesc): {{String}}
 ```

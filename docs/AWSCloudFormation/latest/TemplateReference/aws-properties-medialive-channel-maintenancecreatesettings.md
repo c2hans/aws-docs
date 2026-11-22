@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-maintenancecreatesettings-syntax.json"></a>
 
-```
+```json
 {
   "[MaintenanceDay](#cfn-medialive-channel-maintenancecreatesettings-maintenanceday)" : {{String}},
   "[MaintenanceStartTime](#cfn-medialive-channel-maintenancecreatesettings-maintenancestarttime)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-maintenancecreatesettings-syntax.yaml"></a>
 
-```
+```yaml
   [MaintenanceDay](#cfn-medialive-channel-maintenancecreatesettings-maintenanceday): {{String}}
   [MaintenanceStartTime](#cfn-medialive-channel-maintenancecreatesettings-maintenancestarttime): {{String}}
 ```

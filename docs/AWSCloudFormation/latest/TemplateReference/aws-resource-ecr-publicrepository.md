@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ecr-publicrepository-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ECR::PublicRepository",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ecr-publicrepository-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ECR::PublicRepository
 Properties:
   [RepositoryCatalogData](#cfn-ecr-publicrepository-repositorycatalogdata): {{
@@ -108,7 +108,7 @@ The following example specifies a public repository named `test-repository`. The
 #### JSON
 <a name="aws-resource-ecr-publicrepository--examples--Specify_a_public_repository--json"></a>
 
-```
+```json
 "MyPublicRepository": {
   "Type": "AWS::ECR::PublicRepository",
   "Properties": {
@@ -133,7 +133,7 @@ The following example specifies a public repository named `test-repository`. The
 #### YAML
 <a name="aws-resource-ecr-publicrepository--examples--Specify_a_public_repository--yaml"></a>
 
-```
+```yaml
 Resources:
   MyPublicRepositry:
     Type: AWS::ECR::PublicRepository

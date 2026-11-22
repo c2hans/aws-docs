@@ -33,7 +33,7 @@ Starting October 28, 2024, you can specify snapshots in the `Resource` element. 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -65,7 +65,7 @@ The following example policy grants you permission to copy any EBS-backed AMI, b
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -100,7 +100,7 @@ The following example policy grants you permission to copy any Amazon S3-backed 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

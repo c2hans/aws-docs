@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lookoutequipment-inferencescheduler-dataoutputconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[KmsKeyId](#cfn-lookoutequipment-inferencescheduler-dataoutputconfiguration-kmskeyid)" : {{String}},
   "[S3OutputConfiguration](#cfn-lookoutequipment-inferencescheduler-dataoutputconfiguration-s3outputconfiguration)" : {{S3OutputConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lookoutequipment-inferencescheduler-dataoutputconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [KmsKeyId](#cfn-lookoutequipment-inferencescheduler-dataoutputconfiguration-kmskeyid): {{String}}
   [S3OutputConfiguration](#cfn-lookoutequipment-inferencescheduler-dataoutputconfiguration-s3outputconfiguration): {{
     S3OutputConfiguration}}

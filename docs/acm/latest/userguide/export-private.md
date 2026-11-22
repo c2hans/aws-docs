@@ -92,7 +92,7 @@ Fs5kw5mvEoe5DAe3rSKsSUJ1tM4RagJj2WH+BC04SZWNH8kxfOC1E/GSLBCixv3v
 
 To output everything to a file, append the `>` redirect to the previous example, yielding the following.
 
-```
+```bash
 $ aws acm export-certificate \
      --certificate-arn arn:aws:acm:{{Region}}:{{444455556666}}:certificate/{{certificate_ID}} \
      --passphrase fileb://{{path-to-passphrase-file}} \

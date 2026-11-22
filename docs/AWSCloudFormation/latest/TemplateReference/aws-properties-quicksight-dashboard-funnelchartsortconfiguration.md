@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-funnelchartsortconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CategoryItemsLimit](#cfn-quicksight-dashboard-funnelchartsortconfiguration-categoryitemslimit)" : {{ItemsLimitConfiguration}},
   "[CategorySort](#cfn-quicksight-dashboard-funnelchartsortconfiguration-categorysort)" : {{[ FieldSortOptions, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-funnelchartsortconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CategoryItemsLimit](#cfn-quicksight-dashboard-funnelchartsortconfiguration-categoryitemslimit): {{
     ItemsLimitConfiguration}}
   [CategorySort](#cfn-quicksight-dashboard-funnelchartsortconfiguration-categorysort): {{

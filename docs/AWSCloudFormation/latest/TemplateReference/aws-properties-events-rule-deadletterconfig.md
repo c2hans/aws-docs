@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-events-rule-deadletterconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Arn](#cfn-events-rule-deadletterconfig-arn)" : {{String}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-events-rule-deadletterconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Arn](#cfn-events-rule-deadletterconfig-arn): {{String}}
 ```
 
@@ -53,7 +53,7 @@ The following example sets the `DeadLetterConfig` parameter to set up arn:aws:sq
 #### JSON
 <a name="aws-properties-events-rule-deadletterconfig--examples--Set_the_DeadLetterConfig_parameter--json"></a>
 
-```
+```json
 "DeadLetterConfig": {
   "Arn": "arn:aws:sqs:us-west-2:081035103721:demoDLQ"
 }
@@ -62,7 +62,7 @@ The following example sets the `DeadLetterConfig` parameter to set up arn:aws:sq
 #### YAML
 <a name="aws-properties-events-rule-deadletterconfig--examples--Set_the_DeadLetterConfig_parameter--yaml"></a>
 
-```
+```yaml
 DeadLetterConfig:
   Arn: 'arn:aws:sqs:us-west-2:081035103721:demoDLQ'
 ```

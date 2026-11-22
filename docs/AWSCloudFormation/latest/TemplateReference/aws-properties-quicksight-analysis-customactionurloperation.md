@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-customactionurloperation-syntax.json"></a>
 
-```
+```json
 {
   "[URLTarget](#cfn-quicksight-analysis-customactionurloperation-urltarget)" : {{String}},
   "[URLTemplate](#cfn-quicksight-analysis-customactionurloperation-urltemplate)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-customactionurloperation-syntax.yaml"></a>
 
-```
+```yaml
   [URLTarget](#cfn-quicksight-analysis-customactionurloperation-urltarget): {{String}}
   [URLTemplate](#cfn-quicksight-analysis-customactionurloperation-urltemplate): {{String}}
 ```

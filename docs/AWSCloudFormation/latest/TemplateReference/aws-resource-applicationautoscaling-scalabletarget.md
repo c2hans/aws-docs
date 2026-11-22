@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-applicationautoscaling-scalabletarget-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApplicationAutoScaling::ScalableTarget",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-applicationautoscaling-scalabletarget-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApplicationAutoScaling::ScalableTarget
 Properties:
   [MaxCapacity](#cfn-applicationautoscaling-scalabletarget-maxcapacity): {{Integer}}
@@ -206,7 +206,7 @@ The `RoleArn` property references a service-linked role that is created for you 
 #### JSON
 <a name="aws-resource-applicationautoscaling-scalabletarget--examples--Register_a_scalable_target--json"></a>
 
-```
+```json
 {
   "ScalableTarget":{
     "Type":"AWS::ApplicationAutoScaling::ScalableTarget",
@@ -227,7 +227,7 @@ The `RoleArn` property references a service-linked role that is created for you 
 #### YAML
 <a name="aws-resource-applicationautoscaling-scalabletarget--examples--Register_a_scalable_target--yaml"></a>
 
-```
+```yaml
 ScalableTarget:
   Type: AWS::ApplicationAutoScaling::ScalableTarget
   Properties:

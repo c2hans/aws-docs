@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codepipeline-pipeline-retryconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[RetryMode](#cfn-codepipeline-pipeline-retryconfiguration-retrymode)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codepipeline-pipeline-retryconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [RetryMode](#cfn-codepipeline-pipeline-retryconfiguration-retrymode): {{String}}
 ```
 

@@ -15,7 +15,7 @@ To learn more about DynamoDB condition keys, see [Specifying Conditions: Using C
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

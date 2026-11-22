@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dms-endpoint-docdbsettings-syntax.json"></a>
 
-```
+```json
 {
   "[DocsToInvestigate](#cfn-dms-endpoint-docdbsettings-docstoinvestigate)" : {{Integer}},
   "[ExtractDocId](#cfn-dms-endpoint-docdbsettings-extractdocid)" : {{Boolean}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dms-endpoint-docdbsettings-syntax.yaml"></a>
 
-```
+```yaml
   [DocsToInvestigate](#cfn-dms-endpoint-docdbsettings-docstoinvestigate): {{Integer}}
   [ExtractDocId](#cfn-dms-endpoint-docdbsettings-extractdocid): {{Boolean}}
   [NestingLevel](#cfn-dms-endpoint-docdbsettings-nestinglevel): {{String}}

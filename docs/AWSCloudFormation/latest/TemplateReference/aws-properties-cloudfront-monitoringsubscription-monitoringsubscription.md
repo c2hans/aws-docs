@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-monitoringsubscription-monitoringsubscription-syntax.json"></a>
 
-```
+```json
 {
   "[RealtimeMetricsSubscriptionConfig](#cfn-cloudfront-monitoringsubscription-monitoringsubscription-realtimemetricssubscriptionconfig)" : {{RealtimeMetricsSubscriptionConfig}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-monitoringsubscription-monitoringsubscription-syntax.yaml"></a>
 
-```
+```yaml
   [RealtimeMetricsSubscriptionConfig](#cfn-cloudfront-monitoringsubscription-monitoringsubscription-realtimemetricssubscriptionconfig): {{
     RealtimeMetricsSubscriptionConfig}}
 ```

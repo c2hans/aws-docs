@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-topic-rangeconstant-syntax.json"></a>
 
-```
+```json
 {
   "[Maximum](#cfn-quicksight-topic-rangeconstant-maximum)" : {{String}},
   "[Minimum](#cfn-quicksight-topic-rangeconstant-minimum)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-topic-rangeconstant-syntax.yaml"></a>
 
-```
+```yaml
   [Maximum](#cfn-quicksight-topic-rangeconstant-maximum): {{String}}
   [Minimum](#cfn-quicksight-topic-rangeconstant-minimum): {{String}}
 ```

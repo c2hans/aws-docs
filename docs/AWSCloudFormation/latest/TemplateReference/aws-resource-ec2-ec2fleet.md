@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-ec2fleet-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::EC2Fleet",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-ec2fleet-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::EC2Fleet
 Properties:
   [Context](#cfn-ec2-ec2fleet-context): {{String}}

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-inputspecification-syntax.json"></a>
 
-```
+```json
 {
   "[Codec](#cfn-medialive-channel-inputspecification-codec)" : {{String}},
   "[MaximumBitrate](#cfn-medialive-channel-inputspecification-maximumbitrate)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-inputspecification-syntax.yaml"></a>
 
-```
+```yaml
   [Codec](#cfn-medialive-channel-inputspecification-codec): {{String}}
   [MaximumBitrate](#cfn-medialive-channel-inputspecification-maximumbitrate): {{String}}
   [Resolution](#cfn-medialive-channel-inputspecification-resolution): {{String}}

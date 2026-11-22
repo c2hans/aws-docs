@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspacesweb-usersettings-brandingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ColorTheme](#cfn-workspacesweb-usersettings-brandingconfiguration-colortheme)" : {{String}},
   "[Favicon](#cfn-workspacesweb-usersettings-brandingconfiguration-favicon)" : {{String}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspacesweb-usersettings-brandingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ColorTheme](#cfn-workspacesweb-usersettings-brandingconfiguration-colortheme): {{String}}
   [Favicon](#cfn-workspacesweb-usersettings-brandingconfiguration-favicon): {{String}}
   [FaviconMetadata](#cfn-workspacesweb-usersettings-brandingconfiguration-faviconmetadata): {{

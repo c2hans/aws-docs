@@ -8,7 +8,7 @@ Collects security events and alerts from Netskope using REST API v2 token-based 
 
 Configure the Netskope source with the following parameters:
 
-```
+```yaml
 source:
   netskope_cloudexchange:
     tenant_url: "<<your-tenant-url>>"

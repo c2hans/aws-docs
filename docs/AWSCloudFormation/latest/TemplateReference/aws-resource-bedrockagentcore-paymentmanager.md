@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-bedrockagentcore-paymentmanager-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::BedrockAgentCore::PaymentManager",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-bedrockagentcore-paymentmanager-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::BedrockAgentCore::PaymentManager
 Properties:
   [AuthorizerConfiguration](#cfn-bedrockagentcore-paymentmanager-authorizerconfiguration): {{

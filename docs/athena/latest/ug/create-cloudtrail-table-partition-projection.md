@@ -8,7 +8,7 @@ Because CloudTrail logs have a known structure whose partition scheme you can sp
 
 The following example `CREATE TABLE` statement automatically uses partition projection on CloudTrail logs from a specified date until the present for a single AWS Region. In the `LOCATION` and `storage.location.template` clauses, replace the {{bucket}}, {{account-id}}, and {{aws-region}} placeholders with correspondingly identical values. For `projection.timestamp.range`, replace {{2020}}/{{01}}/{{01}} with the starting date that you want to use. After you run the query successfully, you can query the table. You do not have to run `ALTER TABLE ADD PARTITION` to load the partitions.
 
-```
+```sql
 CREATE EXTERNAL TABLE cloudtrail_logs_pp(
     eventversion STRING,
     useridentity STRUCT<

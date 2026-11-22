@@ -56,7 +56,7 @@ Security Hub CSPM ingests DNS Firewall findings in the [AWS Security Finding For
 
 Here is an example of a typical finding from DNS Firewall in ASFF.
 
-```
+```JSON
 {
             "SchemaVersion": "2018-10-08",
             "Id": "00000000-0000-0000-0000-example1",

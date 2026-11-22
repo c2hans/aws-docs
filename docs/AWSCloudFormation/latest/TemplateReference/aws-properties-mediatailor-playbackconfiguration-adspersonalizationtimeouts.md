@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-playbackconfiguration-adspersonalizationtimeouts-syntax.json"></a>
 
-```
+```json
 {
   "[AdsRequestTimeoutMilliseconds](#cfn-mediatailor-playbackconfiguration-adspersonalizationtimeouts-adsrequesttimeoutmilliseconds)" : {{Integer}},
   "[LiveMaximumAdsPersonalizationTimeMilliseconds](#cfn-mediatailor-playbackconfiguration-adspersonalizationtimeouts-livemaximumadspersonalizationtimemilliseconds)" : {{Integer}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-playbackconfiguration-adspersonalizationtimeouts-syntax.yaml"></a>
 
-```
+```yaml
   [AdsRequestTimeoutMilliseconds](#cfn-mediatailor-playbackconfiguration-adspersonalizationtimeouts-adsrequesttimeoutmilliseconds): {{Integer}}
   [LiveMaximumAdsPersonalizationTimeMilliseconds](#cfn-mediatailor-playbackconfiguration-adspersonalizationtimeouts-livemaximumadspersonalizationtimemilliseconds): {{Integer}}
   [PrefetchAdsRequestTimeoutMilliseconds](#cfn-mediatailor-playbackconfiguration-adspersonalizationtimeouts-prefetchadsrequesttimeoutmilliseconds): {{Integer}}

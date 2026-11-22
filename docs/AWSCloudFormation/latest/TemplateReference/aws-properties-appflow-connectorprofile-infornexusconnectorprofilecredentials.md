@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-connectorprofile-infornexusconnectorprofilecredentials-syntax.json"></a>
 
-```
+```json
 {
   "[AccessKeyId](#cfn-appflow-connectorprofile-infornexusconnectorprofilecredentials-accesskeyid)" : {{String}},
   "[Datakey](#cfn-appflow-connectorprofile-infornexusconnectorprofilecredentials-datakey)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-connectorprofile-infornexusconnectorprofilecredentials-syntax.yaml"></a>
 
-```
+```yaml
   [AccessKeyId](#cfn-appflow-connectorprofile-infornexusconnectorprofilecredentials-accesskeyid): {{String}}
   [Datakey](#cfn-appflow-connectorprofile-infornexusconnectorprofilecredentials-datakey): {{String}}
   [SecretAccessKey](#cfn-appflow-connectorprofile-infornexusconnectorprofilecredentials-secretaccesskey): {{String}}

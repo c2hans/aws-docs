@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-bridge-sourcepriority-syntax.json"></a>
 
-```
+```json
 {
   "[PrimarySource](#cfn-mediaconnect-bridge-sourcepriority-primarysource)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-bridge-sourcepriority-syntax.yaml"></a>
 
-```
+```yaml
   [PrimarySource](#cfn-mediaconnect-bridge-sourcepriority-primarysource): {{String}}
 ```
 

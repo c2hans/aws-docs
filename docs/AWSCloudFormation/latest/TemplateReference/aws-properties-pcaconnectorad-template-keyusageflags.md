@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcaconnectorad-template-keyusageflags-syntax.json"></a>
 
-```
+```json
 {
   "[DataEncipherment](#cfn-pcaconnectorad-template-keyusageflags-dataencipherment)" : {{Boolean}},
   "[DigitalSignature](#cfn-pcaconnectorad-template-keyusageflags-digitalsignature)" : {{Boolean}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcaconnectorad-template-keyusageflags-syntax.yaml"></a>
 
-```
+```yaml
   [DataEncipherment](#cfn-pcaconnectorad-template-keyusageflags-dataencipherment): {{Boolean}}
   [DigitalSignature](#cfn-pcaconnectorad-template-keyusageflags-digitalsignature): {{Boolean}}
   [KeyAgreement](#cfn-pcaconnectorad-template-keyusageflags-keyagreement): {{Boolean}}

@@ -36,14 +36,14 @@ When you describe a public AMI, the response includes the associated AWS Systems
 **To find the SSM parameter for a public AMI**
 Use the [describe-images](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command. The response includes the `PublicSsmParameterName` field for public AMIs that have an associated SSM parameter.
 
-```
+```bash
 aws ec2 describe-images \
     --image-ids {{ami-0abcdef1234567890}}
 ```
 
 The following example output shows the `PublicSsmParameterName` field. Some fields are omitted for brevity.
 
-```
+```json
 {
     "Images": [
         {
@@ -62,13 +62,13 @@ The following example output shows the `PublicSsmParameterName` field. Some fiel
 **To find the SSM parameter for a public AMI**
 Use the [Get-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Image.html) cmdlet. The response includes the `PublicSsmParameterName` field for public AMIs that have an associated SSM parameter.
 
-```
+```powershell
 Get-EC2Image -ImageId {{ami-0abcdef1234567890}}
 ```
 
 The following example output shows the `PublicSsmParameterName` field. Some fields are omitted for brevity.
 
-```
+```powershell
 ImageId                : ami-0abcdef1234567890
 Name                   : al2023-ami-2023.7.20260601.0-kernel-6.1-x86_64
 ...
@@ -86,7 +86,7 @@ PublicSsmParameterName : aws/service/ami-amazon-linux-latest/al2023-ami-kernel-d
 **To list the Linux AMIs in the current AWS Region**
 Use the following [get-parameters-by-path](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-parameters-by-path.html) command. The value for the `--path` parameter is specific to Linux AMIs.
 
-```
+```bash
 aws ssm get-parameters-by-path \
     --path /aws/service/ami-amazon-linux-latest \
     --query "Parameters[].Name"
@@ -98,7 +98,7 @@ aws ssm get-parameters-by-path \
 **To list the Linux AMIs in the current AWS Region**
 Use the [Get-SSMParametersByPath](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-SSMParametersByPath.html) cmdlet.
 
-```
+```powershell
 Get-SSMParametersByPath `
     -Path "/aws/service/ami-amazon-linux-latest" | `
     Sort-Object Name | Format-Table Name
@@ -115,7 +115,7 @@ Get-SSMParametersByPath `
 **To list the Windows AMIs in the current AWS Region**
 Use the following [get-parameters-by-path](https://docs.aws.amazon.com/cli/latest/reference/ssm/get-parameters-by-path.html) command. The value for the `--path` parameter is specific to Windows AMIs.
 
-```
+```bash
 aws ssm get-parameters-by-path \
     --path /aws/service/ami-windows-latest \
     --query "Parameters[].Name"
@@ -127,7 +127,7 @@ aws ssm get-parameters-by-path \
 **To list the Windows AMIs in the current AWS Region**
 Use the [Get-SSMParametersByPath](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-SSMParametersByPath.html) cmdlet.
 
-```
+```powershell
 Get-SSMParametersByPath `
     -Path "/aws/service/ami-windows-latest" | `
     Sort-Object Name | Format-Table Name
@@ -146,7 +146,7 @@ To specify the public parameter when launching an instance, use the following sy
 **To launch an instance using a public parameter**
 Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command with the `--image-id` option. This example specifies a Systems Manager public parameter for the image ID to launch an instance using the latest Amazon Linux 2023 AMI
 
-```
+```bash
 --image-id resolve:ssm:{{/aws/service/ami-amazon-linux-latest/al2023-ami-kernel-default-x86_64}}
 ```
 
@@ -156,7 +156,7 @@ Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run
 **To launch an instance using a public parameter**
 Use the [New-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Instance.html) cmdlet with the `-ImageId` parameter. This example specifies a Systems Manager public parameter for the image ID to launch an instance using the latest AMI for Windows Server 2022.
 
-```
+```powershell
 -ImageId "resolve:ssm:{{/aws/service/ami-windows-latest/Windows_Server-2022-English-Full-Base}}"
 ```
 

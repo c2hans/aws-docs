@@ -32,7 +32,7 @@ In the following example IAM policy, the following actions and condition are spe
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -78,7 +78,7 @@ The `ec2:DescribeVpcs` action is specified to grant permission to users who will
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

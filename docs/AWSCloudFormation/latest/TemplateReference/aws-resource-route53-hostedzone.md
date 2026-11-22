@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-route53-hostedzone-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Route53::HostedZone",
   "Properties" : {
@@ -55,7 +55,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-route53-hostedzone-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53::HostedZone
 Properties:
   [DelegationSetId](#cfn-route53-hostedzone-delegationsetid): {{String}}
@@ -207,7 +207,7 @@ The following template snippet creates a private hosted zone for the example.com
 #### JSON
 <a name="aws-resource-route53-hostedzone--examples--Creating_a_private_hosted_zone--json"></a>
 
-```
+```json
 {
    "DNS": {
       "Type": "AWS: : Route53: : HostedZone",
@@ -244,7 +244,7 @@ The following template snippet creates a private hosted zone for the example.com
 #### YAML
 <a name="aws-resource-route53-hostedzone--examples--Creating_a_private_hosted_zone--yaml"></a>
 
-```
+```yaml
 DNS:
   Type: "AWS::Route53::HostedZone"
   Properties:

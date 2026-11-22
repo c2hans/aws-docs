@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-axisdataoptions-syntax.json"></a>
 
-```
+```json
 {
   "[DateAxisOptions](#cfn-quicksight-dashboard-axisdataoptions-dateaxisoptions)" : {{DateAxisOptions}},
   "[NumericAxisOptions](#cfn-quicksight-dashboard-axisdataoptions-numericaxisoptions)" : {{NumericAxisOptions}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-axisdataoptions-syntax.yaml"></a>
 
-```
+```yaml
   [DateAxisOptions](#cfn-quicksight-dashboard-axisdataoptions-dateaxisoptions): {{
     DateAxisOptions}}
   [NumericAxisOptions](#cfn-quicksight-dashboard-axisdataoptions-numericaxisoptions): {{

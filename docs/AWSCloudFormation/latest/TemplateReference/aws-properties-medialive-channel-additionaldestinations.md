@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-additionaldestinations-syntax.json"></a>
 
-```
+```json
 {
   "[Destination](#cfn-medialive-channel-additionaldestinations-destination)" : {{OutputLocationRef}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-additionaldestinations-syntax.yaml"></a>
 
-```
+```yaml
   [Destination](#cfn-medialive-channel-additionaldestinations-destination): {{
     OutputLocationRef}}
 ```

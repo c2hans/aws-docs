@@ -8,13 +8,13 @@ Subscribes to participant added events. This event fires when a new participant 
 
  **Signature**
 
-```
+```typescript
 onParticipantAdded(handler: ParticipantAddedHandler, contactId?: string): void
 ```
 
  **Usage**
 
-```
+```typescript
 const handleParticipantAdded = (event) => {
     console.log(`New participant added: ${event.participant.participantId}`);
     console.log(`Type: ${event.participant.type.value}`);
@@ -41,6 +41,6 @@ The handler receives a ParticipantAdded event with:
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

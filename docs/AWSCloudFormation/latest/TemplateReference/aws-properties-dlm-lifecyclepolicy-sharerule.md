@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dlm-lifecyclepolicy-sharerule-syntax.json"></a>
 
-```
+```json
 {
   "[TargetAccounts](#cfn-dlm-lifecyclepolicy-sharerule-targetaccounts)" : {{[ String, ... ]}},
   "[UnshareInterval](#cfn-dlm-lifecyclepolicy-sharerule-unshareinterval)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dlm-lifecyclepolicy-sharerule-syntax.yaml"></a>
 
-```
+```yaml
   [TargetAccounts](#cfn-dlm-lifecyclepolicy-sharerule-targetaccounts): {{
     - String}}
   [UnshareInterval](#cfn-dlm-lifecyclepolicy-sharerule-unshareinterval): {{Integer}}

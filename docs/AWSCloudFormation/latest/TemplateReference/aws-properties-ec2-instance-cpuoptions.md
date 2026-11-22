@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-instance-cpuoptions-syntax.json"></a>
 
-```
+```json
 {
   "[CoreCount](#cfn-ec2-instance-cpuoptions-corecount)" : {{Integer}},
   "[ThreadsPerCore](#cfn-ec2-instance-cpuoptions-threadspercore)" : {{Integer}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-instance-cpuoptions-syntax.yaml"></a>
 
-```
+```yaml
   [CoreCount](#cfn-ec2-instance-cpuoptions-corecount): {{Integer}}
   [ThreadsPerCore](#cfn-ec2-instance-cpuoptions-threadspercore): {{Integer}}
 ```

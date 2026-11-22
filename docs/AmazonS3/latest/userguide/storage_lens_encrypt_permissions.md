@@ -24,7 +24,7 @@ To grant Amazon S3 Storage Lens permission to encrypt your metrics exports by us
 
 1. Under **Edit key policy**, add the following key policy to the existing key policy. To use this policy, replace the ` {{user input placeholders}} ` with your information.
 
-   ```
+   ```json
    {
        "Sid": "Allow Amazon S3 Storage Lens use of the KMS key",
         "Effect": "Allow",

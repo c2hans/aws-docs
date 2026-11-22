@@ -74,7 +74,7 @@ If the action is successful, the service sends back an HTTP 200 response with an
 
 The following `DELETE` request deletes the `replication` subresource from the specified S3 on Outposts bucket. This request removes the replication configuration that is set for the bucket.
 
-```
+```HTTP
 DELETE /v20180820/bucket/example-outpost-bucket/replication HTTP/1.1
 Host: s3-outposts.<Region>.amazonaws.com
 x-amz-outpost-id: op-01ac5d28a6a232904

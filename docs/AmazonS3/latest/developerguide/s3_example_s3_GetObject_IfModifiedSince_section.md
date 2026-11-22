@@ -12,7 +12,7 @@ The following code example shows how to read data from an object in an S3 bucket
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/s3#code-examples).
 
-```
+```rust
 use aws_sdk_s3::{
     error::SdkError,
     primitives::{ByteStream, DateTime, DateTimeFormat},

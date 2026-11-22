@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-featuregroup-featuredefinition-syntax.json"></a>
 
-```
+```json
 {
   "[FeatureName](#cfn-sagemaker-featuregroup-featuredefinition-featurename)" : {{String}},
   "[FeatureType](#cfn-sagemaker-featuregroup-featuredefinition-featuretype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-featuregroup-featuredefinition-syntax.yaml"></a>
 
-```
+```yaml
   [FeatureName](#cfn-sagemaker-featuregroup-featuredefinition-featurename): {{String}}
   [FeatureType](#cfn-sagemaker-featuregroup-featuredefinition-featuretype): {{String}}
 ```

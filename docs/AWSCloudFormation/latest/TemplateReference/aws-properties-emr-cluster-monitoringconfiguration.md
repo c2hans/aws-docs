@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emr-cluster-monitoringconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CloudWatchLogConfiguration](#cfn-emr-cluster-monitoringconfiguration-cloudwatchlogconfiguration)" : {{CloudWatchLogConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emr-cluster-monitoringconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CloudWatchLogConfiguration](#cfn-emr-cluster-monitoringconfiguration-cloudwatchlogconfiguration): {{
     CloudWatchLogConfiguration}}
 ```

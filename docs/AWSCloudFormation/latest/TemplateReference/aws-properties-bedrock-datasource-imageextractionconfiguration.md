@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-datasource-imageextractionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ImageExtractionStatus](#cfn-bedrock-datasource-imageextractionconfiguration-imageextractionstatus)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-datasource-imageextractionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ImageExtractionStatus](#cfn-bedrock-datasource-imageextractionconfiguration-imageextractionstatus): {{String}}
 ```
 

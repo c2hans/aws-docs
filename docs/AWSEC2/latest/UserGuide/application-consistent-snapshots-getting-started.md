@@ -84,7 +84,7 @@ Use the following procedure to download and install the `AwsVssComponents` packa
 **To install the VSS package**
 Run the following command to download and install the required VSS components for Systems Manager.
 
-```
+```bash
 aws ssm send-command \
     --document-name "AWS-ConfigureAWSPackage" \
     --instance-ids "{{i-1234567890abcdef0}}" \
@@ -99,7 +99,7 @@ Use the following procedure to download and install the `AwsVssComponents` packa
 **To install the VSS package**
 Run the following command to download and install the required VSS components for Systems Manager.
 
-```
+```powershell
 Send-SSMCommand `
     -DocumentName "AWS-ConfigureAWSPackage" `
     -InstanceId "{{i-1234567890abcdef0}}" `
@@ -198,7 +198,7 @@ Use the [create-association](https://docs.aws.amazon.com/cli/latest/reference/ss
 **To create a State Manager association**
 Run the following command to create an association. The value of `--name`, the document name, is always `AWS-ConfigureAWSPackage`. The following command uses the key `InstanceIds` to specify target instances.
 
-```
+```bash
 aws ssm create-association \
     --name "AWS-ConfigureAWSPackage" \
     --parameters action=Install,installationType="Uninstall and reinstall",name=AwsVssComponents \
@@ -211,7 +211,7 @@ aws ssm create-association \
 **To create a State Manager association**
 Use the [New-SSMAssociation](https://docs.aws.amazon.com/powershell/latest/reference/items/New-SSMAssociation.html) cmdlet.
 
-```
+```powershell
 New-SSMAssociation `
     -Name "AWS-ConfigureAWSPackage" `
     -Parameter  @{

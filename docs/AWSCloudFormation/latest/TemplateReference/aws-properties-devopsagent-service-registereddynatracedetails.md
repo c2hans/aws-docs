@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-service-registereddynatracedetails-syntax.json"></a>
 
-```
+```json
 {
   "[AccountUrn](#cfn-devopsagent-service-registereddynatracedetails-accounturn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-service-registereddynatracedetails-syntax.yaml"></a>
 
-```
+```yaml
   [AccountUrn](#cfn-devopsagent-service-registereddynatracedetails-accounturn): {{String}}
 ```
 

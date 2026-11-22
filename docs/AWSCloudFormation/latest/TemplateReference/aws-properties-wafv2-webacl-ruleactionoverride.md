@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-ruleactionoverride-syntax.json"></a>
 
-```
+```json
 {
   "[ActionToUse](#cfn-wafv2-webacl-ruleactionoverride-actiontouse)" : {{RuleAction}},
   "[Name](#cfn-wafv2-webacl-ruleactionoverride-name)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-ruleactionoverride-syntax.yaml"></a>
 
-```
+```yaml
   [ActionToUse](#cfn-wafv2-webacl-ruleactionoverride-actiontouse): {{
     RuleAction}}
   [Name](#cfn-wafv2-webacl-ruleactionoverride-name): {{String}}

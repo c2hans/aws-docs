@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-channel-cloudwatchlogslogdestination-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-msk-channel-cloudwatchlogslogdestination-enabled)" : {{Boolean}},
   "[LogGroup](#cfn-msk-channel-cloudwatchlogslogdestination-loggroup)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-channel-cloudwatchlogslogdestination-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-msk-channel-cloudwatchlogslogdestination-enabled): {{Boolean}}
   [LogGroup](#cfn-msk-channel-cloudwatchlogslogdestination-loggroup): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-logs-querydefinition-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Logs::QueryDefinition",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-logs-querydefinition-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Logs::QueryDefinition
 Properties:
   [LogGroupNames](#cfn-logs-querydefinition-loggroupnames): {{
@@ -119,7 +119,7 @@ The following example creates a query definition.
 #### JSON
 <a name="aws-resource-logs-querydefinition--examples--Query_definition_example--json"></a>
 
-```
+```json
 "myQueryDefinition": {
   "Type": "AWS::Logs::QueryDefinition",
   "Properties": {
@@ -132,7 +132,7 @@ The following example creates a query definition.
 #### YAML
 <a name="aws-resource-logs-querydefinition--examples--Query_definition_example--yaml"></a>
 
-```
+```yaml
 myQueryDefinition:
   Type: AWS::Logs::QueryDefinition
   Properties:

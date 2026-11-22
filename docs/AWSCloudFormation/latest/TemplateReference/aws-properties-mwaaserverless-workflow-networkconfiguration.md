@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mwaaserverless-workflow-networkconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[SecurityGroupIds](#cfn-mwaaserverless-workflow-networkconfiguration-securitygroupids)" : {{[ String, ... ]}},
   "[SubnetIds](#cfn-mwaaserverless-workflow-networkconfiguration-subnetids)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mwaaserverless-workflow-networkconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [SecurityGroupIds](#cfn-mwaaserverless-workflow-networkconfiguration-securitygroupids): {{
     - String}}
   [SubnetIds](#cfn-mwaaserverless-workflow-networkconfiguration-subnetids): {{

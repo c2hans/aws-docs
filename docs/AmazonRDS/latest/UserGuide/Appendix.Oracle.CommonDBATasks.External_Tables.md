@@ -15,7 +15,7 @@ You can move an external data file from one Oracle database to another by using 
 
 After you move the external data file, you can create an external table with it. The following example creates an external table that uses the `emp_xt_file1.txt` file in the USER\_DIR1 directory.
 
-```
+```sql
 CREATE TABLE emp_xt (
   emp_id      NUMBER,
   first_name  VARCHAR2(50),
@@ -39,7 +39,7 @@ REJECT LIMIT UNLIMITED;
 
 Suppose that you want to move data that is in an Amazon RDS Oracle DB instance into an external data file. In this case, you can populate the external data file by creating an external table and selecting the data from the table in the database. For example, the following SQL statement creates the `orders_xt` external table by querying the `orders` table in the database.
 
-```
+```sql
 CREATE TABLE orders_xt
   ORGANIZATION EXTERNAL
    (

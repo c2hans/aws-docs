@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-routerinput-srtcallerrouterinputconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DecryptionConfiguration](#cfn-mediaconnect-routerinput-srtcallerrouterinputconfiguration-decryptionconfiguration)" : {{SrtDecryptionConfiguration}},
   "[MinimumLatencyMilliseconds](#cfn-mediaconnect-routerinput-srtcallerrouterinputconfiguration-minimumlatencymilliseconds)" : {{Integer}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-routerinput-srtcallerrouterinputconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DecryptionConfiguration](#cfn-mediaconnect-routerinput-srtcallerrouterinputconfiguration-decryptionconfiguration): {{
     SrtDecryptionConfiguration}}
   [MinimumLatencyMilliseconds](#cfn-mediaconnect-routerinput-srtcallerrouterinputconfiguration-minimumlatencymilliseconds): {{Integer}}

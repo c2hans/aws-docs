@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-gatewayroute-grpcgatewayroutematch-syntax.json"></a>
 
-```
+```json
 {
   "[Hostname](#cfn-appmesh-gatewayroute-grpcgatewayroutematch-hostname)" : {{GatewayRouteHostnameMatch}},
   "[Metadata](#cfn-appmesh-gatewayroute-grpcgatewayroutematch-metadata)" : {{[ GrpcGatewayRouteMetadata, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-gatewayroute-grpcgatewayroutematch-syntax.yaml"></a>
 
-```
+```yaml
   [Hostname](#cfn-appmesh-gatewayroute-grpcgatewayroutematch-hostname): {{
     GatewayRouteHostnameMatch}}
   [Metadata](#cfn-appmesh-gatewayroute-grpcgatewayroutematch-metadata): {{

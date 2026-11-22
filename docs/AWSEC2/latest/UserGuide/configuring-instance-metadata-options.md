@@ -58,7 +58,7 @@ If IMDSv2 enforcement is enabled and `httpTokens` has not been set to `required`
 
 In this example, an EC2 instance is launched into a Region where the `HttpPutResponseHopLimit` is set to `1` at the account level. The specified AMI has `ImdsSupport` set to `v2.0`. No metadata options are specified directly on the instance at launch. The instance is launched with the following metadata options:
 
-```
+```json
 "MetadataOptions": {
     ...
     "HttpTokens": "required",
@@ -75,7 +75,7 @@ These values were determined as follows:
 
 In this example, the EC2 instance is launched with the same settings as in the previous Example 1, but with `HttpTokens` set to `optional` directly on the instance at launch. The instance is launched with the following metadata options:
 
-```
+```json
 "MetadataOptions": {
     ...
     "HttpTokens": "optional",

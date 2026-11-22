@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotfleetwise-signalcatalog-nodecounts-syntax.json"></a>
 
-```
+```json
 {
   "[TotalActuators](#cfn-iotfleetwise-signalcatalog-nodecounts-totalactuators)" : {{Number}},
   "[TotalAttributes](#cfn-iotfleetwise-signalcatalog-nodecounts-totalattributes)" : {{Number}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotfleetwise-signalcatalog-nodecounts-syntax.yaml"></a>
 
-```
+```yaml
   [TotalActuators](#cfn-iotfleetwise-signalcatalog-nodecounts-totalactuators): {{Number}}
   [TotalAttributes](#cfn-iotfleetwise-signalcatalog-nodecounts-totalattributes): {{Number}}
   [TotalBranches](#cfn-iotfleetwise-signalcatalog-nodecounts-totalbranches): {{Number}}

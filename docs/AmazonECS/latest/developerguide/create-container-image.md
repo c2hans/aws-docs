@@ -89,7 +89,7 @@ Amazon ECS task definitions use container images to launch containers on the con
 
 1. Edit the `Dockerfile` you just created and add the following content.
 
-   ```
+   ```Bash/Shell
    FROM public.ecr.aws/amazonlinux/amazonlinux:latest
 
    # Update installed packages and install Apache

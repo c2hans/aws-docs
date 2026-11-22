@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-notificationscontacts-emailcontact-emailcontact-syntax.json"></a>
 
-```
+```json
 {
   "[Address](#cfn-notificationscontacts-emailcontact-emailcontact-address)" : {{String}},
   "[Arn](#cfn-notificationscontacts-emailcontact-emailcontact-arn)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-notificationscontacts-emailcontact-emailcontact-syntax.yaml"></a>
 
-```
+```yaml
   [Address](#cfn-notificationscontacts-emailcontact-emailcontact-address): {{String}}
   [Arn](#cfn-notificationscontacts-emailcontact-emailcontact-arn): {{String}}
   [CreationTime](#cfn-notificationscontacts-emailcontact-emailcontact-creationtime): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigateway-model-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGateway::Model",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigateway-model-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGateway::Model
 Properties:
   [ContentType](#cfn-apigateway-model-contenttype): {{String}}
@@ -97,7 +97,7 @@ The following example creates a model that transforms input data into the descri
 #### JSON
 <a name="aws-resource-apigateway-model--examples--Create_model--json"></a>
 
-```
+```json
 {
     "PetsModelNoFlatten": {
         "Type": "AWS::ApiGateway::Model",
@@ -135,7 +135,7 @@ The following example creates a model that transforms input data into the descri
 #### YAML
 <a name="aws-resource-apigateway-model--examples--Create_model--yaml"></a>
 
-```
+```yaml
 PetsModelNoFlatten:
   Type: 'AWS::ApiGateway::Model'
   Properties:

@@ -38,7 +38,7 @@ For more information, see [Managing passwords for IAM users](https://docs.aws.am
 **Tools for PowerShell V4**
 **Example 1: This example returns the password creation date and whether a password reset is required for the IAM user `David`.**
 
-```
+```powershell
 Get-IAMLoginProfile -UserName David
 ```
 **Output:**
@@ -53,7 +53,7 @@ CreateDate                   PasswordResetRequired                 UserName
 **Tools for PowerShell V5**
 **Example 1: This example returns the password creation date and whether a password reset is required for the IAM user `David`.**
 
-```
+```powershell
 Get-IAMLoginProfile -UserName David
 ```
 **Output:**

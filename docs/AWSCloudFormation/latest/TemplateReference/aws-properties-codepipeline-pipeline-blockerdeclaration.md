@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codepipeline-pipeline-blockerdeclaration-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-codepipeline-pipeline-blockerdeclaration-name)" : {{String}},
   "[Type](#cfn-codepipeline-pipeline-blockerdeclaration-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codepipeline-pipeline-blockerdeclaration-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-codepipeline-pipeline-blockerdeclaration-name): {{String}}
   [Type](#cfn-codepipeline-pipeline-blockerdeclaration-type): {{String}}
 ```

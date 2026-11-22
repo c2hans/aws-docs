@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-resiliencehubv2-service-effectivepolicyvalues-syntax.json"></a>
 
-```
+```json
 {
   "[AvailabilitySlo](#cfn-resiliencehubv2-service-effectivepolicyvalues-availabilityslo)" : {{SloSource}},
   "[MultiAzDrApproach](#cfn-resiliencehubv2-service-effectivepolicyvalues-multiazdrapproach)" : {{DisasterRecoverySource}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-resiliencehubv2-service-effectivepolicyvalues-syntax.yaml"></a>
 
-```
+```yaml
   [AvailabilitySlo](#cfn-resiliencehubv2-service-effectivepolicyvalues-availabilityslo): {{
     SloSource}}
   [MultiAzDrApproach](#cfn-resiliencehubv2-service-effectivepolicyvalues-multiazdrapproach): {{

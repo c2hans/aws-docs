@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gateway-claimmatchvaluetype-syntax.json"></a>
 
-```
+```json
 {
   "[MatchValueString](#cfn-bedrockagentcore-gateway-claimmatchvaluetype-matchvaluestring)" : {{String}},
   "[MatchValueStringList](#cfn-bedrockagentcore-gateway-claimmatchvaluetype-matchvaluestringlist)" : {{[ String, ... ]}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gateway-claimmatchvaluetype-syntax.yaml"></a>
 
-```
+```yaml
   [MatchValueString](#cfn-bedrockagentcore-gateway-claimmatchvaluetype-matchvaluestring): {{
     String}}
   [MatchValueStringList](#cfn-bedrockagentcore-gateway-claimmatchvaluetype-matchvaluestringlist): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-servicediscovery-publicdnsnamespace-soa-syntax.json"></a>
 
-```
+```json
 {
   "[TTL](#cfn-servicediscovery-publicdnsnamespace-soa-ttl)" : {{Number}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-servicediscovery-publicdnsnamespace-soa-syntax.yaml"></a>
 
-```
+```yaml
   [TTL](#cfn-servicediscovery-publicdnsnamespace-soa-ttl): {{Number}}
 ```
 

@@ -119,7 +119,7 @@ You can use the `EvaluateMappingTemplate` API command to remotely test your mapp
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

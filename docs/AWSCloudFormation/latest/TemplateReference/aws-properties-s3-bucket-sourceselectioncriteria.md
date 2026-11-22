@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-sourceselectioncriteria-syntax.json"></a>
 
-```
+```json
 {
   "[ReplicaModifications](#cfn-s3-bucket-sourceselectioncriteria-replicamodifications)" : {{ReplicaModifications}},
   "[SseKmsEncryptedObjects](#cfn-s3-bucket-sourceselectioncriteria-ssekmsencryptedobjects)" : {{SseKmsEncryptedObjects}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-sourceselectioncriteria-syntax.yaml"></a>
 
-```
+```yaml
   [ReplicaModifications](#cfn-s3-bucket-sourceselectioncriteria-replicamodifications): {{
     ReplicaModifications}}
   [SseKmsEncryptedObjects](#cfn-s3-bucket-sourceselectioncriteria-ssekmsencryptedobjects): {{

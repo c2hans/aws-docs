@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-uniquevaluescomputation-syntax.json"></a>
 
-```
+```json
 {
   "[Category](#cfn-quicksight-template-uniquevaluescomputation-category)" : {{DimensionField}},
   "[ComputationId](#cfn-quicksight-template-uniquevaluescomputation-computationid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-uniquevaluescomputation-syntax.yaml"></a>
 
-```
+```yaml
   [Category](#cfn-quicksight-template-uniquevaluescomputation-category): {{
     DimensionField}}
   [ComputationId](#cfn-quicksight-template-uniquevaluescomputation-computationid): {{String}}

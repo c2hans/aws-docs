@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-onlineevaluationconfig-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-bedrockagentcore-onlineevaluationconfig-tag-key)" : {{String}},
   "[Value](#cfn-bedrockagentcore-onlineevaluationconfig-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-onlineevaluationconfig-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-bedrockagentcore-onlineevaluationconfig-tag-key): {{String}}
   [Value](#cfn-bedrockagentcore-onlineevaluationconfig-tag-value): {{String}}
 ```

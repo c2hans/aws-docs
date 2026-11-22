@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-capacityprovider-instancelifecycleconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[IdleInstanceTimeout](#cfn-bedrockagentcore-capacityprovider-instancelifecycleconfiguration-idleinstancetimeout)" : {{Integer}},
   "[MaxLifetime](#cfn-bedrockagentcore-capacityprovider-instancelifecycleconfiguration-maxlifetime)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-capacityprovider-instancelifecycleconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [IdleInstanceTimeout](#cfn-bedrockagentcore-capacityprovider-instancelifecycleconfiguration-idleinstancetimeout): {{Integer}}
   [MaxLifetime](#cfn-bedrockagentcore-capacityprovider-instancelifecycleconfiguration-maxlifetime): {{Integer}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationinsights-application-logpatternset-syntax.json"></a>
 
-```
+```json
 {
   "[LogPatterns](#cfn-applicationinsights-application-logpatternset-logpatterns)" : {{[ LogPattern, ... ]}},
   "[PatternSetName](#cfn-applicationinsights-application-logpatternset-patternsetname)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationinsights-application-logpatternset-syntax.yaml"></a>
 
-```
+```yaml
   [LogPatterns](#cfn-applicationinsights-application-logpatternset-logpatterns): {{
     - LogPattern}}
   [PatternSetName](#cfn-applicationinsights-application-logpatternset-patternsetname): {{String}}

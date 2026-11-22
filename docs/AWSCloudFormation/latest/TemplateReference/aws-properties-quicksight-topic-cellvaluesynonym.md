@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-topic-cellvaluesynonym-syntax.json"></a>
 
-```
+```json
 {
   "[CellValue](#cfn-quicksight-topic-cellvaluesynonym-cellvalue)" : {{String}},
   "[Synonyms](#cfn-quicksight-topic-cellvaluesynonym-synonyms)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-topic-cellvaluesynonym-syntax.yaml"></a>
 
-```
+```yaml
   [CellValue](#cfn-quicksight-topic-cellvaluesynonym-cellvalue): {{String}}
   [Synonyms](#cfn-quicksight-topic-cellvaluesynonym-synonyms): {{
     - String}}

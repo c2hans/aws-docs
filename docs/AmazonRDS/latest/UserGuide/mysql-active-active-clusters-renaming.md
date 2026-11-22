@@ -20,7 +20,9 @@ You can change the name of a DB instance in an active-active cluster. To rename 
 
    In the parameter setting, replace the old DB instance endpoint with the new DB instance endpoint. For more information about setting parameters, see [Modifying parameters in a DB parameter group in Amazon RDS](USER_WorkingWithParamGroups.Modifying.md).
 
-1. Connect to the DB instance in a SQL client, and call the [mysql.rds\_group\_replication\_start](mysql-stored-proc-active-active-clusters.md#mysql_rds_group_replication_start) stored procedure:
+1. For RDS for MySQL 9.7, first synchronize local GTIDs. For more information, see [Synchronizing local GTIDs before a DB instance joins an active-active cluster (MySQL 9.7)](mysql-active-active-clusters-sync-gtids.md).
+
+   Connect to the DB instance in a SQL client, and call the [mysql.rds\_group\_replication\_start](mysql-stored-proc-active-active-clusters.md#mysql_rds_group_replication_start) stored procedure:
 
    ```
    call mysql.rds_group_replication_start(0);

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-statickeysettings-syntax.json"></a>
 
-```
+```json
 {
   "[KeyProviderServer](#cfn-medialive-channel-statickeysettings-keyproviderserver)" : {{InputLocation}},
   "[StaticKeyValue](#cfn-medialive-channel-statickeysettings-statickeyvalue)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-statickeysettings-syntax.yaml"></a>
 
-```
+```yaml
   [KeyProviderServer](#cfn-medialive-channel-statickeysettings-keyproviderserver): {{
     InputLocation}}
   [StaticKeyValue](#cfn-medialive-channel-statickeysettings-statickeyvalue): {{String}}

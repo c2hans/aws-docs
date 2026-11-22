@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-transitgatewayattachment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::TransitGatewayAttachment",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-transitgatewayattachment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::TransitGatewayAttachment
 Properties:
   [Options](#cfn-ec2-transitgatewayattachment-options): {{

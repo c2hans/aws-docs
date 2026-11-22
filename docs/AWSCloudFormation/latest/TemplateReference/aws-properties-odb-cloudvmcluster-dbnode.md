@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-odb-cloudvmcluster-dbnode-syntax.json"></a>
 
-```
+```json
 {
   "[BackupIpId](#cfn-odb-cloudvmcluster-dbnode-backupipid)" : {{String}},
   "[BackupVnic2Id](#cfn-odb-cloudvmcluster-dbnode-backupvnic2id)" : {{String}},
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-odb-cloudvmcluster-dbnode-syntax.yaml"></a>
 
-```
+```yaml
   [BackupIpId](#cfn-odb-cloudvmcluster-dbnode-backupipid): {{String}}
   [BackupVnic2Id](#cfn-odb-cloudvmcluster-dbnode-backupvnic2id): {{String}}
   [CpuCoreCount](#cfn-odb-cloudvmcluster-dbnode-cpucorecount): {{Integer}}

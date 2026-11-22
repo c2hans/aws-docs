@@ -9,7 +9,7 @@ This example creates one pricing plan with a 10% global markup pricing rule. Thi
 ## JSON
 <a name="quickref-billingconductor-example-1.json"></a>
 
-```
+```json
  1. {
  2.    "Parameters": {
  3.       "LinkedAccountIds": {
@@ -100,7 +100,7 @@ This example creates one pricing plan with a 10% global markup pricing rule. Thi
 ## YAML
 <a name="quickref-billingconductor-example-1.yaml"></a>
 
-```
+```yaml
  1. Parameters:
  2.   LinkedAccountIds:
  3.     Type: List{{Number}}

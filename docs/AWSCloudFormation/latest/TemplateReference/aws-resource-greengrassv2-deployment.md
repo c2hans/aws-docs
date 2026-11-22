@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-greengrassv2-deployment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::GreengrassV2::Deployment",
   "Properties" : {
@@ -46,7 +46,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-greengrassv2-deployment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::GreengrassV2::Deployment
 Properties:
   [Components](#cfn-greengrassv2-deployment-components): {{
@@ -102,7 +102,7 @@ The parent deployment's [ARN](https://docs.aws.amazon.com/general/latest/gr/aws-
 Application-specific metadata to attach to the deployment. You can use tags in IAM policies to control access to AWS IoT Greengrass resources. You can also use tags to categorize your resources. For more information, see [Tag your AWS IoT Greengrass Version 2 resources](https://docs.aws.amazon.com/greengrass/v2/developerguide/tag-resources.html) in the *AWS IoT Greengrass V2 Developer Guide*.
 This `Json` property type is processed as a map of key-value pairs. It uses the following format, which is different from most `Tags` implementations in CloudFormation templates.
 
-```
+```json
 "Tags": {
     "KeyName0": "value",
     "KeyName1": "value",

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-observabilityadmin-organizationcentralizationrule-tagpropagationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationRoleArn](#cfn-observabilityadmin-organizationcentralizationrule-tagpropagationconfiguration-destinationrolearn)" : {{String}},
   "[TagConflictResolutionStrategy](#cfn-observabilityadmin-organizationcentralizationrule-tagpropagationconfiguration-tagconflictresolutionstrategy)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-observabilityadmin-organizationcentralizationrule-tagpropagationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationRoleArn](#cfn-observabilityadmin-organizationcentralizationrule-tagpropagationconfiguration-destinationrolearn): {{String}}
   [TagConflictResolutionStrategy](#cfn-observabilityadmin-organizationcentralizationrule-tagpropagationconfiguration-tagconflictresolutionstrategy): {{String}}
 ```

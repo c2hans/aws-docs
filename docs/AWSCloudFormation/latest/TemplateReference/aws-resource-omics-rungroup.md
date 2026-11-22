@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-omics-rungroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Omics::RunGroup",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-omics-rungroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Omics::RunGroup
 Properties:
   [MaxCpus](#cfn-omics-rungroup-maxcpus): {{Number}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-vpnconnection-phase1integrityalgorithmsrequestlistvalue-syntax.json"></a>
 
-```
+```json
 {
   "[Value](#cfn-ec2-vpnconnection-phase1integrityalgorithmsrequestlistvalue-value)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-vpnconnection-phase1integrityalgorithmsrequestlistvalue-syntax.yaml"></a>
 
-```
+```yaml
   [Value](#cfn-ec2-vpnconnection-phase1integrityalgorithmsrequestlistvalue-value): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wellarchitected-workload-discoveryconfig-syntax.json"></a>
 
-```
+```json
 {
   "[TrustedAdvisorIntegrationStatus](#cfn-wellarchitected-workload-discoveryconfig-trustedadvisorintegrationstatus)" : {{String}},
   "[WorkloadResourceDefinition](#cfn-wellarchitected-workload-discoveryconfig-workloadresourcedefinition)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wellarchitected-workload-discoveryconfig-syntax.yaml"></a>
 
-```
+```yaml
   [TrustedAdvisorIntegrationStatus](#cfn-wellarchitected-workload-discoveryconfig-trustedadvisorintegrationstatus): {{String}}
   [WorkloadResourceDefinition](#cfn-wellarchitected-workload-discoveryconfig-workloadresourcedefinition): {{
     - String}}

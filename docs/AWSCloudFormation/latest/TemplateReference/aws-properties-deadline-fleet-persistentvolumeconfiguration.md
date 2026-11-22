@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-deadline-fleet-persistentvolumeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Iops](#cfn-deadline-fleet-persistentvolumeconfiguration-iops)" : {{Integer}},
   "[LastUsedTtlHours](#cfn-deadline-fleet-persistentvolumeconfiguration-lastusedttlhours)" : {{Integer}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-deadline-fleet-persistentvolumeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Iops](#cfn-deadline-fleet-persistentvolumeconfiguration-iops): {{Integer}}
   [LastUsedTtlHours](#cfn-deadline-fleet-persistentvolumeconfiguration-lastusedttlhours): {{Integer}}
   [MountPath](#cfn-deadline-fleet-persistentvolumeconfiguration-mountpath): {{String}}

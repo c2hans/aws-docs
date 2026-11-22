@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cassandra-table-targettrackingscalingpolicyconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DisableScaleIn](#cfn-cassandra-table-targettrackingscalingpolicyconfiguration-disablescalein)" : {{Boolean}},
   "[ScaleInCooldown](#cfn-cassandra-table-targettrackingscalingpolicyconfiguration-scaleincooldown)" : {{Integer}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cassandra-table-targettrackingscalingpolicyconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DisableScaleIn](#cfn-cassandra-table-targettrackingscalingpolicyconfiguration-disablescalein): {{Boolean}}
   [ScaleInCooldown](#cfn-cassandra-table-targettrackingscalingpolicyconfiguration-scaleincooldown): {{Integer}}
   [ScaleOutCooldown](#cfn-cassandra-table-targettrackingscalingpolicyconfiguration-scaleoutcooldown): {{Integer}}

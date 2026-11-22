@@ -66,7 +66,7 @@ Update an attribute value in an existing item. If the attribute does not exist, 
 
 The following query updates an item in the `"Music"` table by adding an attribute of type number (`AwardsWon`) and an attribute of type map (`AwardDetail`).
 
-```
+```sql
 UPDATE "Music"
 SET AwardsWon=1
 SET AwardDetail={'Grammys':[2020, 2018]}
@@ -75,7 +75,7 @@ WHERE Artist='Acme Band' AND SongTitle='PartiQL Rocks'
 
 You can add `RETURNING ALL OLD *` to return the attributes as they appeared before the `Update` operation.
 
-```
+```sql
 UPDATE "Music"
 SET AwardsWon=1
 SET AwardDetail={'Grammys':[2020, 2018]}
@@ -85,7 +85,7 @@ RETURNING ALL OLD *
 
 This returns the following:
 
-```
+```json
 {
     "Items": [
         {
@@ -102,7 +102,7 @@ This returns the following:
 
 You can add `RETURNING ALL NEW *` to return the attributes as they appeared after the `Update` operation.
 
-```
+```sql
 UPDATE "Music"
 SET AwardsWon=1
 SET AwardDetail={'Grammys':[2020, 2018]}
@@ -112,7 +112,7 @@ RETURNING ALL NEW *
 
 This returns the following:
 
-```
+```json
 {
     "Items": [
         {
@@ -140,7 +140,7 @@ This returns the following:
 
 The following query updates an item in the `"Music"` table by appending to a list `AwardDetail.Grammys`.
 
-```
+```sql
 UPDATE "Music"
 SET AwardDetail.Grammys =list_append(AwardDetail.Grammys,[2016])
 WHERE Artist='Acme Band' AND SongTitle='PartiQL Rocks'
@@ -148,7 +148,7 @@ WHERE Artist='Acme Band' AND SongTitle='PartiQL Rocks'
 
 The following query updates an item in the `"Music"` table by removing from a list `AwardDetail.Grammys`.
 
-```
+```sql
 UPDATE "Music"
 REMOVE AwardDetail.Grammys[2]
 WHERE Artist='Acme Band' AND SongTitle='PartiQL Rocks'
@@ -156,7 +156,7 @@ WHERE Artist='Acme Band' AND SongTitle='PartiQL Rocks'
 
 The following query updates an item in the `"Music"` table by adding `BillBoard` to the map `AwardDetail`.
 
-```
+```sql
 UPDATE "Music"
 SET AwardDetail.BillBoard=[2020]
 WHERE Artist='Acme Band' AND SongTitle='PartiQL Rocks'
@@ -164,7 +164,7 @@ WHERE Artist='Acme Band' AND SongTitle='PartiQL Rocks'
 
 The following query updates an item in the `"Music"` table by adding the string set attribute `BandMembers`.
 
-```
+```sql
 UPDATE "Music"
 SET BandMembers =<<'member1', 'member2'>>
 WHERE Artist='Acme Band' AND SongTitle='PartiQL Rocks'
@@ -172,7 +172,7 @@ WHERE Artist='Acme Band' AND SongTitle='PartiQL Rocks'
 
 The following query updates an item in the `"Music"` table by adding `newbandmember` to the string set `BandMembers`.
 
-```
+```sql
 UPDATE "Music"
 SET BandMembers =set_add(BandMembers, <<'newbandmember'>>)
 WHERE Artist='Acme Band' AND SongTitle='PartiQL Rocks'

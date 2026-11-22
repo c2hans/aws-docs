@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-mesh-meshservicediscovery-syntax.json"></a>
 
-```
+```json
 {
   "[IpPreference](#cfn-appmesh-mesh-meshservicediscovery-ippreference)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-mesh-meshservicediscovery-syntax.yaml"></a>
 
-```
+```yaml
   [IpPreference](#cfn-appmesh-mesh-meshservicediscovery-ippreference): {{String}}
 ```
 

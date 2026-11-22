@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-endpointconfig-routingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[PrefixAwareRoutingConfig](#cfn-sagemaker-endpointconfig-routingconfig-prefixawareroutingconfig)" : {{PrefixAwareRoutingConfig}},
   "[RoutingStrategy](#cfn-sagemaker-endpointconfig-routingconfig-routingstrategy)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-endpointconfig-routingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [PrefixAwareRoutingConfig](#cfn-sagemaker-endpointconfig-routingconfig-prefixawareroutingconfig): {{
     PrefixAwareRoutingConfig}}
   [RoutingStrategy](#cfn-sagemaker-endpointconfig-routingconfig-routingstrategy): {{String}}

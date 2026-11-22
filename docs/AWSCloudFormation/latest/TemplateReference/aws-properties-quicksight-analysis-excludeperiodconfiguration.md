@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-excludeperiodconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Amount](#cfn-quicksight-analysis-excludeperiodconfiguration-amount)" : {{Number}},
   "[Granularity](#cfn-quicksight-analysis-excludeperiodconfiguration-granularity)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-excludeperiodconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Amount](#cfn-quicksight-analysis-excludeperiodconfiguration-amount): {{Number}}
   [Granularity](#cfn-quicksight-analysis-excludeperiodconfiguration-granularity): {{String}}
   [Status](#cfn-quicksight-analysis-excludeperiodconfiguration-status): {{String}}

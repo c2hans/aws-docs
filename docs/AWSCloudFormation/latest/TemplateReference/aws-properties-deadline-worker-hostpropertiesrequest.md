@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-deadline-worker-hostpropertiesrequest-syntax.json"></a>
 
-```
+```json
 {
   "[HostName](#cfn-deadline-worker-hostpropertiesrequest-hostname)" : {{String}},
   "[IpAddresses](#cfn-deadline-worker-hostpropertiesrequest-ipaddresses)" : {{IpAddresses}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-deadline-worker-hostpropertiesrequest-syntax.yaml"></a>
 
-```
+```yaml
   [HostName](#cfn-deadline-worker-hostpropertiesrequest-hostname): {{String}}
   [IpAddresses](#cfn-deadline-worker-hostpropertiesrequest-ipaddresses): {{
     IpAddresses}}

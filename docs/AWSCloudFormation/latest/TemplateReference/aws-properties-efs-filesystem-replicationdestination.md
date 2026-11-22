@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-efs-filesystem-replicationdestination-syntax.json"></a>
 
-```
+```json
 {
   "[AvailabilityZoneName](#cfn-efs-filesystem-replicationdestination-availabilityzonename)" : {{String}},
   "[FileSystemId](#cfn-efs-filesystem-replicationdestination-filesystemid)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-efs-filesystem-replicationdestination-syntax.yaml"></a>
 
-```
+```yaml
   [AvailabilityZoneName](#cfn-efs-filesystem-replicationdestination-availabilityzonename): {{String}}
   [FileSystemId](#cfn-efs-filesystem-replicationdestination-filesystemid): {{String}}
   [KmsKeyId](#cfn-efs-filesystem-replicationdestination-kmskeyid): {{String}}

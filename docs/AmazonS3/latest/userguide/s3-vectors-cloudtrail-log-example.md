@@ -9,7 +9,7 @@ The following examples show CloudTrail log entries for S3 Vectors data events. D
 ## Example: CloudTrail log file for `GetVectors` data event
 <a name="s3-vectors-cloudtrail-getvectors-example"></a>
 
-```
+```json
 {
     "eventVersion": "1.11",
     "userIdentity": {

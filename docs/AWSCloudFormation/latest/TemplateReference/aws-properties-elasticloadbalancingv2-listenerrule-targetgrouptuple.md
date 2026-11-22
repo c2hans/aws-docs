@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-targetgrouptuple-syntax.json"></a>
 
-```
+```json
 {
   "[TargetGroupArn](#cfn-elasticloadbalancingv2-listenerrule-targetgrouptuple-targetgrouparn)" : {{String}},
   "[Weight](#cfn-elasticloadbalancingv2-listenerrule-targetgrouptuple-weight)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-targetgrouptuple-syntax.yaml"></a>
 
-```
+```yaml
   [TargetGroupArn](#cfn-elasticloadbalancingv2-listenerrule-targetgrouptuple-targetgrouparn): {{String}}
   [Weight](#cfn-elasticloadbalancingv2-listenerrule-targetgrouptuple-weight): {{Integer}}
 ```

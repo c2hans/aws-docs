@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-framecapturegroupsettings-syntax.json"></a>
 
-```
+```json
 {
   "[Destination](#cfn-medialive-channel-framecapturegroupsettings-destination)" : {{OutputLocationRef}},
   "[FrameCaptureCdnSettings](#cfn-medialive-channel-framecapturegroupsettings-framecapturecdnsettings)" : {{FrameCaptureCdnSettings}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-framecapturegroupsettings-syntax.yaml"></a>
 
-```
+```yaml
   [Destination](#cfn-medialive-channel-framecapturegroupsettings-destination): {{
     OutputLocationRef}}
   [FrameCaptureCdnSettings](#cfn-medialive-channel-framecapturegroupsettings-framecapturecdnsettings): {{

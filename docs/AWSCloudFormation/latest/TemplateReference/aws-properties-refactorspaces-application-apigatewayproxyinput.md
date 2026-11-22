@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-refactorspaces-application-apigatewayproxyinput-syntax.json"></a>
 
-```
+```json
 {
   "[EndpointType](#cfn-refactorspaces-application-apigatewayproxyinput-endpointtype)" : {{String}},
   "[StageName](#cfn-refactorspaces-application-apigatewayproxyinput-stagename)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-refactorspaces-application-apigatewayproxyinput-syntax.yaml"></a>
 
-```
+```yaml
   [EndpointType](#cfn-refactorspaces-application-apigatewayproxyinput-endpointtype): {{String}}
   [StageName](#cfn-refactorspaces-application-apigatewayproxyinput-stagename): {{String}}
 ```

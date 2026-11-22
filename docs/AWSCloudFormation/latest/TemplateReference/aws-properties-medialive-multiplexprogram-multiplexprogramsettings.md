@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-multiplexprogram-multiplexprogramsettings-syntax.json"></a>
 
-```
+```json
 {
   "[PreferredChannelPipeline](#cfn-medialive-multiplexprogram-multiplexprogramsettings-preferredchannelpipeline)" : {{String}},
   "[ProgramNumber](#cfn-medialive-multiplexprogram-multiplexprogramsettings-programnumber)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-multiplexprogram-multiplexprogramsettings-syntax.yaml"></a>
 
-```
+```yaml
   [PreferredChannelPipeline](#cfn-medialive-multiplexprogram-multiplexprogramsettings-preferredchannelpipeline): {{String}}
   [ProgramNumber](#cfn-medialive-multiplexprogram-multiplexprogramsettings-programnumber): {{Integer}}
   [ServiceDescriptor](#cfn-medialive-multiplexprogram-multiplexprogramsettings-servicedescriptor): {{

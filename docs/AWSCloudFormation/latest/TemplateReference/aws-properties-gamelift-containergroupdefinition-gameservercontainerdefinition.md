@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-containergroupdefinition-gameservercontainerdefinition-syntax.json"></a>
 
-```
+```json
 {
   "[ContainerName](#cfn-gamelift-containergroupdefinition-gameservercontainerdefinition-containername)" : {{String}},
   "[DependsOn](#cfn-gamelift-containergroupdefinition-gameservercontainerdefinition-dependson)" : {{[ ContainerDependency, ... ]}},
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-containergroupdefinition-gameservercontainerdefinition-syntax.yaml"></a>
 
-```
+```yaml
   [ContainerName](#cfn-gamelift-containergroupdefinition-gameservercontainerdefinition-containername): {{String}}
   [DependsOn](#cfn-gamelift-containergroupdefinition-gameservercontainerdefinition-dependson): {{
     - ContainerDependency}}

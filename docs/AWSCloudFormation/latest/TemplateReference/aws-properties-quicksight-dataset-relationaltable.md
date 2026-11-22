@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-relationaltable-syntax.json"></a>
 
-```
+```json
 {
   "[Catalog](#cfn-quicksight-dataset-relationaltable-catalog)" : {{String}},
   "[DataSourceArn](#cfn-quicksight-dataset-relationaltable-datasourcearn)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-relationaltable-syntax.yaml"></a>
 
-```
+```yaml
   [Catalog](#cfn-quicksight-dataset-relationaltable-catalog): {{String}}
   [DataSourceArn](#cfn-quicksight-dataset-relationaltable-datasourcearn): {{String}}
   [InputColumns](#cfn-quicksight-dataset-relationaltable-inputcolumns): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-computeenvironment-eksconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AccessEntry](#cfn-batch-computeenvironment-eksconfiguration-accessentry)" : {{EksAccessEntry}},
   "[EksClusterArn](#cfn-batch-computeenvironment-eksconfiguration-eksclusterarn)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-computeenvironment-eksconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AccessEntry](#cfn-batch-computeenvironment-eksconfiguration-accessentry): {{
     EksAccessEntry}}
   [EksClusterArn](#cfn-batch-computeenvironment-eksconfiguration-eksclusterarn): {{String}}

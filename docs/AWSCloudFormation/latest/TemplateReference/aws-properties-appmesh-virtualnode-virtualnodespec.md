@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-virtualnode-virtualnodespec-syntax.json"></a>
 
-```
+```json
 {
   "[BackendDefaults](#cfn-appmesh-virtualnode-virtualnodespec-backenddefaults)" : {{BackendDefaults}},
   "[Backends](#cfn-appmesh-virtualnode-virtualnodespec-backends)" : {{[ Backend, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-virtualnode-virtualnodespec-syntax.yaml"></a>
 
-```
+```yaml
   [BackendDefaults](#cfn-appmesh-virtualnode-virtualnodespec-backenddefaults): {{
     BackendDefaults}}
   [Backends](#cfn-appmesh-virtualnode-virtualnodespec-backends): {{

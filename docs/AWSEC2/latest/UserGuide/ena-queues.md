@@ -638,14 +638,14 @@ Before you change the queue count, check your current count with the following c
 ------
 #### [ AWS CLI ]
 
-```
+```json
 aws ec2 describe-instances --instance-id {{i-1234567890abcdef0}}
 ```
 
 ------
 #### [ PowerShell ]
 
-```
+```powershell
 (Get-EC2Instance -InstanceId i-{{1234567890abcdef0}}).Instances.NetworkInterfaces |
   Select-Object NetworkInterfaceId,
     @{N='DeviceIndex';E={$_.Attachment.DeviceIndex}},
@@ -666,7 +666,7 @@ In the following example, 16 ENA queues are configured on an ENI.
 **To attach a network interface with ENA queues**
 Use the [attach-network-interface](https://docs.aws.amazon.com/cli/latest/reference/ec2/attach-network-interface.html) command.
 
-```
+```json
 aws ec2 attach-network-interface \
   --network-interface-id eni-{{abcdef01234567890}} \
   --instance-id {{i-1234567890abcdef0}} \
@@ -680,7 +680,7 @@ aws ec2 attach-network-interface \
 **To attach a network interface with ENA queues**
 Use the [Add-EC2NetworkInterface](https://docs.aws.amazon.com/powershell/latest/reference/items/Add-EC2NetworkInterface.html) cmdlet.
 
-```
+```powershell
 Add-EC2NetworkInterface `
   -NetworkInterfaceId eni-{{abcdef01234567890}} `
   -InstanceId {{i-1234567890abcdef0}} `
@@ -701,7 +701,7 @@ In the following example, 16 ENA queues each are configured on 3 ENIs.
 **To launch an instance with ENA queues**
 Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command.
 
-```
+```json
 aws ec2 run-instances \
   --image-id ami-{{1234567890abcdef0}} \
   --instance-type c8i.4xlarge \
@@ -717,7 +717,7 @@ aws ec2 run-instances \
 **To launch an instance with ENA queues**
 Use the [New-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Instance.html) cmdlet.
 
-```
+```powershell
 New-EC2Instance `
   -ImageId ami-{{1234567890abcdef0}} `
   -InstanceType c8i.4xlarge `
@@ -741,7 +741,7 @@ In the following example, 16 ENA queues are configured on an ENI.
 **To modify ENA queues on a network interface**
 Use the [modify-network-interface-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-network-interface-attribute.html) command.
 
-```
+```json
 aws ec2 modify-network-interface-attribute \
   --network-interface-id eni-{{1234567890abcdef0}} \
   --attachment AttachmentId=eni-attach-{{1234567890abcdef0}},EnaQueueCount=16
@@ -753,7 +753,7 @@ aws ec2 modify-network-interface-attribute \
 **To modify ENA queues on a network interface**
 Use the [Edit-EC2NetworkInterfaceAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2NetworkInterfaceAttribute.html) cmdlet.
 
-```
+```powershell
 Edit-EC2NetworkInterfaceAttribute `
   -NetworkInterfaceId eni-{{1234567890abcdef0}} `
   -Attachment_AttachmentId eni-attach-{{1234567890abcdef0}} `
@@ -767,7 +767,7 @@ In the following example, the ENA count is reset to the default value.
 ------
 #### [ AWS CLI ]
 
-```
+```json
 aws ec2 modify-network-interface-attribute \
   --network-interface-id eni-{{1234567890abcdef0}} \
   --attachment AttachmentId=eni-attach-{{1234567890abcdef0}},DefaultEnaQueueCount=true
@@ -776,7 +776,7 @@ aws ec2 modify-network-interface-attribute \
 ------
 #### [ PowerShell ]
 
-```
+```powershell
 Edit-EC2NetworkInterfaceAttribute `
   -NetworkInterfaceId eni-{{1234567890abcdef0}} `
   -Attachment_AttachmentId eni-attach-{{1234567890abcdef0}} `

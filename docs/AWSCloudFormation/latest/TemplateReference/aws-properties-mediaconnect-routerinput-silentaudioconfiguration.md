@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-routerinput-silentaudioconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[State](#cfn-mediaconnect-routerinput-silentaudioconfiguration-state)" : {{String}},
   "[ThresholdSeconds](#cfn-mediaconnect-routerinput-silentaudioconfiguration-thresholdseconds)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-routerinput-silentaudioconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [State](#cfn-mediaconnect-routerinput-silentaudioconfiguration-state): {{String}}
   [ThresholdSeconds](#cfn-mediaconnect-routerinput-silentaudioconfiguration-thresholdseconds): {{Integer}}
 ```

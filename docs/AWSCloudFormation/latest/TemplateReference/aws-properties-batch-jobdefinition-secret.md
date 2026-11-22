@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-secret-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-batch-jobdefinition-secret-name)" : {{String}},
   "[ValueFrom](#cfn-batch-jobdefinition-secret-valuefrom)" : {{String}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-secret-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-batch-jobdefinition-secret-name): {{String}}
   [ValueFrom](#cfn-batch-jobdefinition-secret-valuefrom): {{String}}
 ```

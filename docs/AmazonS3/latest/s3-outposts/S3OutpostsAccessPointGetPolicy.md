@@ -37,7 +37,7 @@ aws s3control get-access-point-policy --account-id {{123456789012}} --name arn:a
 
 The following SDK for Java example gets a policy for an Outposts access point.
 
-```
+```Java
 import com.amazonaws.services.s3control.model.*;
 
 public void getAccessPointPolicy(String accessPointArn) {

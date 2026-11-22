@@ -76,7 +76,7 @@ Wait for about two minutes for Linux instances and about five minutes for Window
 
 If your Spot Instance was hibernated successfully but failed to resume, and instead rebooted (a fresh restart where the hibernated state is not retained), it might be because the user data contained the following script:
 
-```
+```bash
 /usr/bin/enable-ec2-spot-hibernation
 ```
 

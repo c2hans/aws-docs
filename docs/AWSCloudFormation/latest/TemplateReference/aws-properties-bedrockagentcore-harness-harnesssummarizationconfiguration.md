@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-harness-harnesssummarizationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[PreserveRecentMessages](#cfn-bedrockagentcore-harness-harnesssummarizationconfiguration-preserverecentmessages)" : {{Integer}},
   "[SummarizationSystemPrompt](#cfn-bedrockagentcore-harness-harnesssummarizationconfiguration-summarizationsystemprompt)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-harness-harnesssummarizationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [PreserveRecentMessages](#cfn-bedrockagentcore-harness-harnesssummarizationconfiguration-preserverecentmessages): {{Integer}}
   [SummarizationSystemPrompt](#cfn-bedrockagentcore-harness-harnesssummarizationconfiguration-summarizationsystemprompt): {{String}}
   [SummaryRatio](#cfn-bedrockagentcore-harness-harnesssummarizationconfiguration-summaryratio): {{Number}}

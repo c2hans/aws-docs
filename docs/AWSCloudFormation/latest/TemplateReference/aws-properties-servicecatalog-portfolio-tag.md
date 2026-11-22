@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-servicecatalog-portfolio-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-servicecatalog-portfolio-tag-key)" : {{String}},
   "[Value](#cfn-servicecatalog-portfolio-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-servicecatalog-portfolio-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-servicecatalog-portfolio-tag-key): {{String}}
   [Value](#cfn-servicecatalog-portfolio-tag-value): {{String}}
 ```

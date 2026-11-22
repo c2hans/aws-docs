@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-cluster-autopatchconfig-syntax.json"></a>
 
-```
+```json
 {
   "[DeploymentConfig](#cfn-sagemaker-cluster-autopatchconfig-deploymentconfig)" : {{DeploymentConfig}},
   "[PatchingStrategy](#cfn-sagemaker-cluster-autopatchconfig-patchingstrategy)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-cluster-autopatchconfig-syntax.yaml"></a>
 
-```
+```yaml
   [DeploymentConfig](#cfn-sagemaker-cluster-autopatchconfig-deploymentconfig): {{
     DeploymentConfig}}
   [PatchingStrategy](#cfn-sagemaker-cluster-autopatchconfig-patchingstrategy): {{String}}

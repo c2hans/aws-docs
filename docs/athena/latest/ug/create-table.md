@@ -12,7 +12,7 @@ This page contains summary reference information. For more information about cre
 ## Synopsis
 <a name="synopsis"></a>
 
-```
+```sql
 CREATE EXTERNAL TABLE [IF NOT EXISTS]
  [db_name.]table_name [(col_name data_type [COMMENT col_comment] [, ...] )]
  [COMMENT table_comment]
@@ -124,7 +124,7 @@ For more information about other table properties, see [ALTER TABLE SET TBLPROPE
 
 The following example `CREATE TABLE` statement creates a table based on tab-separated planet data stored in Amazon S3.
 
-```
+```sql
 CREATE EXTERNAL TABLE planet_data (
   planet_name string,
   order_from_sun int,
@@ -147,7 +147,7 @@ Note the following points:
 
 To query the data, you could use a simple `SELECT` statement like the following:
 
-```
+```sql
 SELECT * FROM planet_data
 ```
 

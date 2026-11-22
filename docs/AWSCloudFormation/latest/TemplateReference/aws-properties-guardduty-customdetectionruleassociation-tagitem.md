@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-guardduty-customdetectionruleassociation-tagitem-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-guardduty-customdetectionruleassociation-tagitem-key)" : {{String}},
   "[Value](#cfn-guardduty-customdetectionruleassociation-tagitem-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-guardduty-customdetectionruleassociation-tagitem-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-guardduty-customdetectionruleassociation-tagitem-key): {{String}}
   [Value](#cfn-guardduty-customdetectionruleassociation-tagitem-value): {{String}}
 ```

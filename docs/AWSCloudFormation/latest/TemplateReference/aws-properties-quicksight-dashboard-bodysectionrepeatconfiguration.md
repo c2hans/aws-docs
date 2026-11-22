@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-bodysectionrepeatconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DimensionConfigurations](#cfn-quicksight-dashboard-bodysectionrepeatconfiguration-dimensionconfigurations)" : {{[ BodySectionRepeatDimensionConfiguration, ... ]}},
   "[NonRepeatingVisuals](#cfn-quicksight-dashboard-bodysectionrepeatconfiguration-nonrepeatingvisuals)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-bodysectionrepeatconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DimensionConfigurations](#cfn-quicksight-dashboard-bodysectionrepeatconfiguration-dimensionconfigurations): {{
     - BodySectionRepeatDimensionConfiguration}}
   [NonRepeatingVisuals](#cfn-quicksight-dashboard-bodysectionrepeatconfiguration-nonrepeatingvisuals): {{

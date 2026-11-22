@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-connectorprofile-marketoconnectorprofileproperties-syntax.json"></a>
 
-```
+```json
 {
   "[InstanceUrl](#cfn-appflow-connectorprofile-marketoconnectorprofileproperties-instanceurl)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-connectorprofile-marketoconnectorprofileproperties-syntax.yaml"></a>
 
-```
+```yaml
   [InstanceUrl](#cfn-appflow-connectorprofile-marketoconnectorprofileproperties-instanceurl): {{String}}
 ```
 

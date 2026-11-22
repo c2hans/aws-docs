@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-entityresolution-schemamapping-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-entityresolution-schemamapping-tag-key)" : {{String}},
   "[Value](#cfn-entityresolution-schemamapping-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-entityresolution-schemamapping-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-entityresolution-schemamapping-tag-key): {{String}}
   [Value](#cfn-entityresolution-schemamapping-tag-value): {{String}}
 ```

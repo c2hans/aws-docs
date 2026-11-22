@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-logs-transformer-renamekeyentry-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-logs-transformer-renamekeyentry-key)" : {{String}},
   "[OverwriteIfExists](#cfn-logs-transformer-renamekeyentry-overwriteifexists)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-logs-transformer-renamekeyentry-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-logs-transformer-renamekeyentry-key): {{String}}
   [OverwriteIfExists](#cfn-logs-transformer-renamekeyentry-overwriteifexists): {{Boolean}}
   [RenameTo](#cfn-logs-transformer-renamekeyentry-renameto): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-datasourceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BedrockKnowledgeStoreConfiguration](#cfn-lex-bot-datasourceconfiguration-bedrockknowledgestoreconfiguration)" : {{BedrockKnowledgeStoreConfiguration}},
   "[KendraConfiguration](#cfn-lex-bot-datasourceconfiguration-kendraconfiguration)" : {{QnAKendraConfiguration}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-datasourceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BedrockKnowledgeStoreConfiguration](#cfn-lex-bot-datasourceconfiguration-bedrockknowledgestoreconfiguration): {{
     BedrockKnowledgeStoreConfiguration}}
   [KendraConfiguration](#cfn-lex-bot-datasourceconfiguration-kendraconfiguration): {{

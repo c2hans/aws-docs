@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-config-organizationconfigrule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Config::OrganizationConfigRule",
   "Properties" : {
@@ -46,7 +46,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-config-organizationconfigrule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Config::OrganizationConfigRule
 Properties:
   [ExcludedAccounts](#cfn-config-organizationconfigrule-excludedaccounts): {{
@@ -132,7 +132,7 @@ The following example creates a managed organization config rule.
 #### JSON
 <a name="aws-resource-config-organizationconfigrule--examples--Managed_Rule--json"></a>
 
-```
+```json
 {
     "BasicOrganizationConfigRule": {
         "Type": "AWS::Config::OrganizationConfigRule",
@@ -153,7 +153,7 @@ The following example creates a managed organization config rule.
 #### YAML
 <a name="aws-resource-config-organizationconfigrule--examples--Managed_Rule--yaml"></a>
 
-```
+```yaml
 BasicOrganizationConfigRule:
     Type: "AWS::Config::OrganizationConfigRule"
     Properties:
@@ -173,7 +173,7 @@ The following example creates a custom organization config rule.
 #### JSON
 <a name="aws-resource-config-organizationconfigrule--examples--Custom_Rule--json"></a>
 
-```
+```json
 {
     "BasicOrganizationConfigRule": {
         "Type": "AWS::Config::OrganizationConfigRule",
@@ -196,7 +196,7 @@ The following example creates a custom organization config rule.
 #### YAML
 <a name="aws-resource-config-organizationconfigrule--examples--Custom_Rule--yaml"></a>
 
-```
+```yaml
 BasicOrganizationConfigRule:
     Type: "AWS::Config::OrganizationConfigRule"
     Properties:

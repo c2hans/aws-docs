@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-resiliencehub-resiliencypolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ResilienceHub::ResiliencyPolicy",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-resiliencehub-resiliencypolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ResilienceHub::ResiliencyPolicy
 Properties:
   [DataLocationConstraint](#cfn-resiliencehub-resiliencypolicy-datalocationconstraint): {{String}}

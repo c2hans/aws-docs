@@ -130,7 +130,7 @@ The client for the DAX SDK for Java is available on Apache Maven. For more infor
 
      The cluster endpoint is shown in the output, as in the following example.
 
-     ```
+     ```json
      {
          "Address": "my-cluster.l6fzcv.dax-clusters.us-east-1.amazonaws.com",
          "Port": 8111,
@@ -162,7 +162,7 @@ Follow these steps to use the client for the DAX SDK for Java in your applicatio
 
 1. Add the client Maven dependency to your application's Project Object Model (POM) file. In this example, replace `x.x.x.x` with the actual version number of the client (for example, `1.0.200704.0`).
 
-   ```
+   ```xml
    <!--Dependency:-->
    <dependencies>
        <dependency>

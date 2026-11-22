@@ -10,7 +10,7 @@ If you use the CDN installation option, ad blockers might block the default CDN 
 
 The code snippet sits in the `<head>` tag of an HTML file and installs the web client by downloading the web client, and then configuring the web client for the application it is monitoring. The snippet is a self-executing function which looks similar to the following. In this example, the body of the snippet's function has been omitted for readability.
 
-```
+```javascript
 <script>
 (function(n,i,v,r,s,c,u,x,z){...})(
 'cwr',

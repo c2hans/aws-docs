@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-events-apidestination-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Events::ApiDestination",
   "Properties" : {
@@ -44,7 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-events-apidestination-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Events::ApiDestination
 Properties:
   [ConnectionArn](#cfn-events-apidestination-connectionarn): {{String}}
@@ -158,7 +158,7 @@ The following example creates an ApiDestination connection to PagerDuty.
 #### JSON
 <a name="aws-resource-events-apidestination--examples--Create_an_ApiDestination_for_PagerDuty--json"></a>
 
-```
+```json
 "Parameters": {
    "PagerDutyAPIKeyParam": {
        "Type": "String",
@@ -201,7 +201,7 @@ The following example creates an ApiDestination connection to PagerDuty.
 #### YAML
 <a name="aws-resource-events-apidestination--examples--Create_an_ApiDestination_for_PagerDuty--yaml"></a>
 
-```
+```yaml
 Parameters:
   PagerDutyAPIKeyParam:
     Type: String
@@ -236,7 +236,7 @@ The following example creates an ApiDestination connection to Slack.
 #### JSON
 <a name="aws-resource-events-apidestination--examples--Create_an_ApiDestination_for_Slack--json"></a>
 
-```
+```json
 "Parameters": {
    "pName": {
        "Type": "String"
@@ -433,7 +433,7 @@ The following example creates an ApiDestination connection to Slack.
 #### YAML
 <a name="aws-resource-events-apidestination--examples--Create_an_ApiDestination_for_Slack--yaml"></a>
 
-```
+```yaml
 Parameters:
   pName:
     Type: String

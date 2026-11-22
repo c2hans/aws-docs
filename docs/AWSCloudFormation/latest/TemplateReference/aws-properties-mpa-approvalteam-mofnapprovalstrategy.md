@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mpa-approvalteam-mofnapprovalstrategy-syntax.json"></a>
 
-```
+```json
 {
   "[MinApprovalsRequired](#cfn-mpa-approvalteam-mofnapprovalstrategy-minapprovalsrequired)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mpa-approvalteam-mofnapprovalstrategy-syntax.yaml"></a>
 
-```
+```yaml
   [MinApprovalsRequired](#cfn-mpa-approvalteam-mofnapprovalstrategy-minapprovalsrequired): {{Integer}}
 ```
 

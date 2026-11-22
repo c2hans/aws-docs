@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-mediapackagegroupsettings-syntax.json"></a>
 
-```
+```json
 {
   "[Destination](#cfn-medialive-channel-mediapackagegroupsettings-destination)" : {{OutputLocationRef}},
   "[MediapackageV2GroupSettings](#cfn-medialive-channel-mediapackagegroupsettings-mediapackagev2groupsettings)" : {{MediaPackageV2GroupSettings}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-mediapackagegroupsettings-syntax.yaml"></a>
 
-```
+```yaml
   [Destination](#cfn-medialive-channel-mediapackagegroupsettings-destination): {{
     OutputLocationRef}}
   [MediapackageV2GroupSettings](#cfn-medialive-channel-mediapackagegroupsettings-mediapackagev2groupsettings): {{

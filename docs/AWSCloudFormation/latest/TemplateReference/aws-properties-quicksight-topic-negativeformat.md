@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-topic-negativeformat-syntax.json"></a>
 
-```
+```json
 {
   "[Prefix](#cfn-quicksight-topic-negativeformat-prefix)" : {{String}},
   "[Suffix](#cfn-quicksight-topic-negativeformat-suffix)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-topic-negativeformat-syntax.yaml"></a>
 
-```
+```yaml
   [Prefix](#cfn-quicksight-topic-negativeformat-prefix): {{String}}
   [Suffix](#cfn-quicksight-topic-negativeformat-suffix): {{String}}
 ```

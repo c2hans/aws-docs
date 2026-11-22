@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iot-fleetmetric-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoT::FleetMetric",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iot-fleetmetric-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoT::FleetMetric
 Properties:
   [AggregationField](#cfn-iot-fleetmetric-aggregationfield): {{String}}

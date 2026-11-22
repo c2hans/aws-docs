@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-qbusiness-retriever-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::QBusiness::Retriever",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-qbusiness-retriever-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::QBusiness::Retriever
 Properties:
   [ApplicationId](#cfn-qbusiness-retriever-applicationid): {{String}}

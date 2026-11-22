@@ -115,7 +115,7 @@ You must choose **AWS service**.
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-grafana-workspace-rolevalues-syntax.json"></a>
 
-```
+```json
 {
   "[Admin](#cfn-grafana-workspace-rolevalues-admin)" : {{[ String, ... ]}},
   "[Editor](#cfn-grafana-workspace-rolevalues-editor)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-grafana-workspace-rolevalues-syntax.yaml"></a>
 
-```
+```yaml
   [Admin](#cfn-grafana-workspace-rolevalues-admin): {{
     - String}}
   [Editor](#cfn-grafana-workspace-rolevalues-editor): {{

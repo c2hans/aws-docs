@@ -116,7 +116,7 @@ This shows a sample response that the `ListAssessmentFrameworks` operation might
 #### Sample Response
 <a name="API_ListAssessmentFrameworks_Example_1_Response"></a>
 
-```
+```json
 {
     "frameworkMetadataList": [
         {

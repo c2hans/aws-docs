@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-daemontaskdefinition-containerdependency-syntax.json"></a>
 
-```
+```json
 {
   "[Condition](#cfn-ecs-daemontaskdefinition-containerdependency-condition)" : {{String}},
   "[ContainerName](#cfn-ecs-daemontaskdefinition-containerdependency-containername)" : {{String}}
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-daemontaskdefinition-containerdependency-syntax.yaml"></a>
 
-```
+```yaml
   [Condition](#cfn-ecs-daemontaskdefinition-containerdependency-condition): {{String}}
   [ContainerName](#cfn-ecs-daemontaskdefinition-containerdependency-containername): {{String}}
 ```

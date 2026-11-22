@@ -67,7 +67,7 @@ aws elasticache create-cache-subnet-group ^
 
 This command should produce output similar to the following:
 
-```
+```json
 {
     "CacheSubnetGroup": {
         "VpcId": "vpc-37c3cd17",

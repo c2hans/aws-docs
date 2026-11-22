@@ -119,7 +119,7 @@ The call returns an `ObservabilityConfiguration` object. In the example, this is
 #### Sample Request
 <a name="API_CreateObservabilityConfiguration_Example_1_Request"></a>
 
-```
+```json
 $ aws apprunner create-observability-configuration --cli-input-json "`cat`"
 {
   "ObservabilityConfigurationName": "xray-tracing",
@@ -132,7 +132,7 @@ $ aws apprunner create-observability-configuration --cli-input-json "`cat`"
 #### Sample Response
 <a name="API_CreateObservabilityConfiguration_Example_1_Response"></a>
 
-```
+```json
 {
   "ObservabilityConfiguration": {
     "ObservabilityConfigurationArn": "arn:aws:apprunner:us-east-1:123456789012:observabilityconfiguration/xray-tracing/1/2f50e7656d7819fead0f59672e68042e",

@@ -87,7 +87,7 @@ Additional log fields include the requested action, the date and time of the act
 
 The following example shows a CloudTrail log entry that demonstrates a [PutObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html) action on `s3-outposts`.
 
-```
+```json
 {
       "eventVersion": "1.08",
       "userIdentity": {

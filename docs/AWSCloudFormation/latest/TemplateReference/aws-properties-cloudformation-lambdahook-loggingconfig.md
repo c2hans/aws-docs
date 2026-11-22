@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudformation-lambdahook-loggingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[LogGroupName](#cfn-cloudformation-lambdahook-loggingconfig-loggroupname)" : {{String}},
   "[LogRoleArn](#cfn-cloudformation-lambdahook-loggingconfig-logrolearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudformation-lambdahook-loggingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [LogGroupName](#cfn-cloudformation-lambdahook-loggingconfig-loggroupname): {{String}}
   [LogRoleArn](#cfn-cloudformation-lambdahook-loggingconfig-logrolearn): {{String}}
 ```

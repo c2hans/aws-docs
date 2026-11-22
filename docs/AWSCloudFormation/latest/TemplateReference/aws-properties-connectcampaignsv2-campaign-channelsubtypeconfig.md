@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connectcampaignsv2-campaign-channelsubtypeconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Email](#cfn-connectcampaignsv2-campaign-channelsubtypeconfig-email)" : {{EmailChannelSubtypeConfig}},
   "[Sms](#cfn-connectcampaignsv2-campaign-channelsubtypeconfig-sms)" : {{SmsChannelSubtypeConfig}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connectcampaignsv2-campaign-channelsubtypeconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Email](#cfn-connectcampaignsv2-campaign-channelsubtypeconfig-email): {{
     EmailChannelSubtypeConfig}}
   [Sms](#cfn-connectcampaignsv2-campaign-channelsubtypeconfig-sms): {{

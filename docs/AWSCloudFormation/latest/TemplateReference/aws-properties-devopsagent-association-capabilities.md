@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-association-capabilities-syntax.json"></a>
 
-```
+```json
 {
   "[CodeChangeRiskAnalysis](#cfn-devopsagent-association-capabilities-codechangeriskanalysis)" : {{CapabilityConfiguration}},
   "[CodeChangeRiskAnalysisAutomatedTesting](#cfn-devopsagent-association-capabilities-codechangeriskanalysisautomatedtesting)" : {{AutomatedTestingCapabilityConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-association-capabilities-syntax.yaml"></a>
 
-```
+```yaml
   [CodeChangeRiskAnalysis](#cfn-devopsagent-association-capabilities-codechangeriskanalysis): {{
     CapabilityConfiguration}}
   [CodeChangeRiskAnalysisAutomatedTesting](#cfn-devopsagent-association-capabilities-codechangeriskanalysisautomatedtesting): {{

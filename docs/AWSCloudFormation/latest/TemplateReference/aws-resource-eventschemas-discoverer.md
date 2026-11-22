@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-eventschemas-discoverer-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EventSchemas::Discoverer",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-eventschemas-discoverer-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EventSchemas::Discoverer
 Properties:
   [CrossAccount](#cfn-eventschemas-discoverer-crossaccount): {{Boolean}}
@@ -106,7 +106,7 @@ The state of the discoverer.
 #### YAML
 <a name="aws-resource-eventschemas-discoverer--examples--Generate_Schemas_for_Events_on_the_Default_Event_Bus--yaml"></a>
 
-```
+```yaml
 Resources:
   MyDiscoverer:
     Type: AWS::EventSchemas::Discoverer

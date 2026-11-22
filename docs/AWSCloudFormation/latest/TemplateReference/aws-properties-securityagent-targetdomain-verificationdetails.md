@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityagent-targetdomain-verificationdetails-syntax.json"></a>
 
-```
+```json
 {
   "[DnsTxt](#cfn-securityagent-targetdomain-verificationdetails-dnstxt)" : {{DnsVerification}},
   "[HttpRoute](#cfn-securityagent-targetdomain-verificationdetails-httproute)" : {{HttpVerification}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityagent-targetdomain-verificationdetails-syntax.yaml"></a>
 
-```
+```yaml
   [DnsTxt](#cfn-securityagent-targetdomain-verificationdetails-dnstxt): {{
     DnsVerification}}
   [HttpRoute](#cfn-securityagent-targetdomain-verificationdetails-httproute): {{

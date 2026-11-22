@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-observabilityadmin-organizationcentralizationrule-destinationmetricsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BackupConfiguration](#cfn-observabilityadmin-organizationcentralizationrule-destinationmetricsconfiguration-backupconfiguration)" : {{MetricsBackupConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-observabilityadmin-organizationcentralizationrule-destinationmetricsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BackupConfiguration](#cfn-observabilityadmin-organizationcentralizationrule-destinationmetricsconfiguration-backupconfiguration): {{
     MetricsBackupConfiguration}}
 ```

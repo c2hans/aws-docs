@@ -25,7 +25,7 @@ The `rdsadmin_rman_util.backup_tenant_full` procedure is supported for the follo
 
 The following example performs a full backup of the current tenant database using the specified values for the parameters.
 
-```
+```sql
 BEGIN
     rdsadmin.rdsadmin_rman_util.backup_tenant_full(
         p_owner               => '{{SYS}}',

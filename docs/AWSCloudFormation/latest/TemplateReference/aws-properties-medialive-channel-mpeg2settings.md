@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-mpeg2settings-syntax.json"></a>
 
-```
+```json
 {
   "[AdaptiveQuantization](#cfn-medialive-channel-mpeg2settings-adaptivequantization)" : {{String}},
   "[AfdSignaling](#cfn-medialive-channel-mpeg2settings-afdsignaling)" : {{String}},
@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-mpeg2settings-syntax.yaml"></a>
 
-```
+```yaml
   [AdaptiveQuantization](#cfn-medialive-channel-mpeg2settings-adaptivequantization): {{String}}
   [AfdSignaling](#cfn-medialive-channel-mpeg2settings-afdsignaling): {{String}}
   [ColorMetadata](#cfn-medialive-channel-mpeg2settings-colormetadata): {{String}}

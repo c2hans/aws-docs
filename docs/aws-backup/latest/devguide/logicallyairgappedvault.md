@@ -139,7 +139,7 @@ You can use AWS CLI to programmatically carry out operations for logically air-g
 
 Use the CLI command [`create-logically-air-gapped-backup-vault`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/create-logically-air-gapped-backup-vault.html), modified with the following parameters:
 
-```
+```json
 aws backup create-logically-air-gapped-backup-vault
 --region us-east-1 // optional
 --backup-vault-name {{sampleName}} // required
@@ -153,7 +153,7 @@ The optional `--encryption-key-arn` parameter allows you to specify a customer-m
 
 Example CLI command to create a logically air-gapped vault:
 
-```
+```json
 aws backup create-logically-air-gapped-backup-vault
 --region us-east-1
 --backup-vault-name sampleName
@@ -164,7 +164,7 @@ aws backup create-logically-air-gapped-backup-vault
 
 Example CLI command to create a logically air-gapped vault with customer-managed encryption:
 
-```
+```json
 aws backup create-logically-air-gapped-backup-vault
 --region us-east-1
 --backup-vault-name sampleName
@@ -205,7 +205,7 @@ View details of a logically air-gapped vault through CLI
 
 The CLI command [`describe-backup-vault`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/describe-backup-vault.html) can be used to obtain details about a vault. Parameter `backup-vault-name` is required; `region` is optional.
 
-```
+```json
 aws backup describe-backup-vault
 --region {{us-east-1}}
 --backup-vault-name {{testvaultname}}
@@ -213,7 +213,7 @@ aws backup describe-backup-vault
 
 Example of response:
 
-```
+```json
 {
             "BackupVaultName": "LOG-AIR-GAP-VAULT-TEST",
             "BackupVaultArn": "arn:aws:backup:us-east-1:234567890123:backup-vault:IAD-LAGV-01",
@@ -296,7 +296,7 @@ Use [start-copy-job](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_
 
 Sample CLI input:
 
-```
+```json
 aws backup start-copy-job
 --region {{us-east-1}}
 --recovery-point-arn {{arn:aws:resourcetype:region::snapshot/snap-12345678901234567}}
@@ -372,7 +372,7 @@ Steps 1 through 4 are conducted with the account that owns the logically air-gap
 
    1. Example input:
 
-      ```
+      ```json
       aws ram create-resource-share
       --name {{MyLogicallyAirGappedVault}}
       --resource-arns arn:aws:backup:us-east-1:{{123456789012}}:backup-vault:{{test-vault-1}}
@@ -382,7 +382,7 @@ Steps 1 through 4 are conducted with the account that owns the logically air-gap
 
    1. Example output:
 
-      ```
+      ```json
       {
          "resourceShare":{
             "resourceShareArn":"arn:aws:ram:us-east-1:123456789012:resource-share/12345678-abcd-09876543",
@@ -436,7 +436,7 @@ Once a backup has been shared from a logically air-gapped vault to your account,
 
 A sample CLI input can include the following command and parameters:
 
-```
+```json
 aws backup start-restore-job
 --recovery-point-arn {{arn:aws:backup:us-east-1:accountnumber:recovery-point:RecoveryPointID}}
 --metadata {\"availabilityzone\":\"us-east-1d\"}
@@ -458,7 +458,7 @@ Deletion of a vault also deletes the key associated with the vault seven days af
 
 The following sample CLI command [`delete-backup-vault`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/delete-backup-vault.html) can be used to delete a vault.
 
-```
+```json
 aws backup delete-backup-vault
 --region us-east-1
 --backup-vault-name {{testvaultname}}
@@ -469,20 +469,20 @@ aws backup delete-backup-vault
 
 The CLI command [`list-backup-vaults`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_ListBackupVaults.html) can be modified to list all the vaults owned by and present in the account:
 
-```
+```json
 aws backup list-backup-vaults
 --region us-east-1
 ```
 
 To list just the logically air-gapped vaults, add the parameter
 
-```
+```java
 --by-vault-type LOGICALLY_AIR_GAPPED_BACKUP_VAULT
 ```
 
 Include the parameter `by-shared` to filter the returned list of vaults to show only shared logically air-gapped vaults. The response will include encryption key type information for each shared vault.
 
-```
+```json
 aws backup list-backup-vaults
 --region us-east-1
 --by-shared
@@ -490,7 +490,7 @@ aws backup list-backup-vaults
 
 Example response showing encryption key type information:
 
-```
+```json
 {
     "BackupVaultList": [
         {
@@ -533,7 +533,7 @@ If your organization policy requires using a customer managed key, AWS does not 
 When creating a logically air-gapped vault with a customer managed key, you must apply the AWS-managed policy `AWSBackupFullAccess` to your account role. This policy includes `Allow` actions that enable AWS Backup to interact with AWS KMS for grant creation on KMS keys during backup, copy, and storage operations. Additionally, you must ensure your customer managed key (if used) policy includes specific required permissions.
 + The CMK must be shared with the account where the logically air-gapped vault resides
 
-```
+```json
 {
     "Sid": "Allow use of the key to create a logically air-gapped vault",
     "Effect": "Allow",
@@ -558,7 +558,7 @@ When creating a logically air-gapped vault with a customer managed key, you must
 To prevent job failures, review your AWS KMS key policy to ensure it includes all required permissions and doesn't contain any deny statements that could block operations. The following conditions apply:
 + For all copy scenarios, the logically air-gapped vault's CMK must be shared with the source copy role. For the source resource's CMK, see [Key policy for CMK encrypted source resources](#key-policy-lag-source-resource).
 
-```
+```json
 {
     "Sid": "Allow use of the key for copy",
     "Effect": "Allow",
@@ -601,7 +601,7 @@ To prevent job failures, review your AWS KMS key policy to ensure it includes al
 ```
 + When copying from a CMK encrypted logically air-gapped vault to a backup vault, the CMK must also be shared with the destination account SLR
 
-```
+```json
 {
     "Sid": "Allow use of the key for copy from a CMK encrypted logically air-gapped vault to normal backup vault",
     "Effect": "Allow",
@@ -638,7 +638,7 @@ To prevent job failures, review your AWS KMS key policy to ensure it includes al
 ```
 + When copying or restoring from a recovery account using RAM/MPA shared logically air-gapped vault
 
-```
+```json
 {
     "Sid": "Allow use of the key for copy/restore from a recovery account",
     "Effect": "Allow",
@@ -678,7 +678,7 @@ To prevent job failures, review your AWS KMS key policy to ensure it includes al
 ```
 + When transitioning Amazon EBS Snapshot to cold storage in CMK encrypted logically air-gapped vault, the vault-owning account's SLR must have create grant permission on the CMK key policy.
 
-```
+```json
 {
     "Sid": "Allow AWS Backup to create grant on the key for snapshot archival",
     "Effect": "Allow",
@@ -703,7 +703,7 @@ For resources that don't support [full AWS Backup management](https://docs.aws.a
 
 The source key's policy must allow the IAM role that AWS Backup uses for the job to use the key and create grants on it. That's the role in your backup plan, or the role you specify for an on-demand copy. Add the following statements to the source resource's key policy. If they're missing, the copy job fails.
 
-```
+```json
 {
     "Sid": "Allow use of the source resource key for copy to a logically air-gapped vault",
     "Effect": "Allow",
@@ -742,7 +742,7 @@ The source key's policy must allow the IAM role that AWS Backup uses for the job
 When performing logically air-gapped vault copy operations, customers can utilize the `AWSBackupDefaultServiceRole` which includes the AWS-managed policy `AWSBackupServiceRolePolicyForBackup`. However, if customers prefer to implement a least-privilege policy approach, their IAM policy must include a specific requirement:
 + The source account's copy role must have access permissions to the source resource's CMK and to the source and destination logically air-gapped vault CMKs.
 
-```
+```json
 {
     "Version": "2012-10-17"		 	 	 ,
     "Statement": [
@@ -826,7 +826,7 @@ This exclusion is safe because the copy is authorized by your vault access polic
 
 Example EventBridge rule event pattern that excludes AWS Backup operations:
 
-```
+```json
 {
   "source": ["aws.ec2"],
   "detail-type": ["AWS API Call via CloudTrail"],

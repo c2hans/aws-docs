@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-servicediscovery-instance-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ServiceDiscovery::Instance",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-servicediscovery-instance-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ServiceDiscovery::Instance
 Properties:
   [InstanceAttributes](#cfn-servicediscovery-instance-instanceattributes): {{Json}}
@@ -123,7 +123,7 @@ The following example registers application resources like a DynamoDB table and 
 #### JSON
 <a name="aws-resource-servicediscovery-instance--examples--Use_custom_attributes_to_register_resources--json"></a>
 
-```
+```json
 {
   "Resources": {
     "ReadInstance": {
@@ -165,7 +165,7 @@ The following example registers application resources like a DynamoDB table and 
 #### YAML
 <a name="aws-resource-servicediscovery-instance--examples--Use_custom_attributes_to_register_resources--yaml"></a>
 
-```
+```yaml
 Resources:
   ReadInstance:
     Type: AWS::ServiceDiscovery::Instance
@@ -200,7 +200,7 @@ The following example provides IPv4 and IPV6 IP addresses for the instance that 
 #### JSON
 <a name="aws-resource-servicediscovery-instance--examples--Provide_IP_addresses_for_an_instance--json"></a>
 
-```
+```json
 {
     "Resources": {
         "Instance": {
@@ -221,7 +221,7 @@ The following example provides IPv4 and IPV6 IP addresses for the instance that 
 #### YAML
 <a name="aws-resource-servicediscovery-instance--examples--Provide_IP_addresses_for_an_instance--yaml"></a>
 
-```
+```yaml
 Resources:
   Instance:
     Type: AWS::ServiceDiscovery::Instance

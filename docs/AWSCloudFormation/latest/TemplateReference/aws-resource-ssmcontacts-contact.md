@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ssmcontacts-contact-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SSMContacts::Contact",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ssmcontacts-contact-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SSMContacts::Contact
 Properties:
   [Alias](#cfn-ssmcontacts-contact-alias): {{String}}
@@ -121,7 +121,7 @@ The following example demonstrates the creation of not only contacts, but also a
 #### JSON
 <a name="aws-resource-ssmcontacts-contact--examples--Create_resources--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -272,7 +272,7 @@ The following example demonstrates the creation of not only contacts, but also a
 #### YAML
 <a name="aws-resource-ssmcontacts-contact--examples--Create_resources--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   MySSMContact:

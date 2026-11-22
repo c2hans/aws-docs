@@ -17,7 +17,7 @@ Add an `opentelemetry` section to your CloudWatch agent configuration file and i
 
 The following example configures the agent to receive OTLP data over gRPC and HTTP.
 
-```
+```json
 {
   "opentelemetry": {
     "collect": {
@@ -155,7 +155,7 @@ The following steps are the same regardless of where the agent runs.
 
 1. Point your application's OTLP exporter at the local agent instead of the public CloudWatch endpoint (for example, `http://localhost:4318`). The agent forwards the metrics for you. The following Python example uses the OpenTelemetry SDK to export metrics to the agent.
 
-   ```
+   ```python
    from opentelemetry import metrics
    from opentelemetry.sdk.metrics import MeterProvider
    from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader
@@ -192,7 +192,7 @@ On Amazon EKS, install or upgrade the CloudWatch Observability EKS add-on to ver
 
 You must also supply the agent `opentelemetry` and `otlp` configuration to the add-on through its configuration values. The add-on does not enable the OTLP receiver by default. Supply the following configuration values to the add-on.
 
-```
+```json
 {
   "agent": {
     "config": {

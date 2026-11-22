@@ -99,7 +99,7 @@ The following example Lambda functions return the required CORS headers:
 ------
 #### [ Node.js ]
 
-```
+```javascript
 export const handler = async (event) => {
     const response = {
         statusCode: 200,
@@ -117,7 +117,7 @@ export const handler = async (event) => {
 ------
 #### [ Python 3 ]
 
-```
+```python
 import json
 
 def lambda_handler(event, context):

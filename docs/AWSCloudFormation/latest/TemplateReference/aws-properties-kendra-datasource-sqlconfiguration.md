@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-sqlconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[QueryIdentifiersEnclosingOption](#cfn-kendra-datasource-sqlconfiguration-queryidentifiersenclosingoption)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-sqlconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [QueryIdentifiersEnclosingOption](#cfn-kendra-datasource-sqlconfiguration-queryidentifiersenclosingoption): {{String}}
 ```
 

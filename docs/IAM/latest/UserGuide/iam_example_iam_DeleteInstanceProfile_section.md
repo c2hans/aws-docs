@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/ResilientService/AutoScalerActions#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Detaches a role from an instance profile, detaches policies from the role,
     /// and deletes all the resources.
@@ -90,7 +90,7 @@ For more information, see [Using instance profiles](https://docs.aws.amazon.com/
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cross-services/wkflw-resilient-service#code-examples).
 
-```
+```javascript
       const client = new IAMClient({});
       await client.send(
         new DeleteInstanceProfileCommand({
@@ -106,7 +106,7 @@ For more information, see [Using instance profiles](https://docs.aws.amazon.com/
 **Tools for PowerShell V4**
 **Example 1: This example deletes the EC2 instance profile named `MyAppInstanceProfile`. The first command detaches any roles from the instance profile, and then the second command deletes the instance profile.**
 
-```
+```powershell
 (Get-IAMInstanceProfile -InstanceProfileName MyAppInstanceProfile).Roles | Remove-IAMRoleFromInstanceProfile -InstanceProfileName MyAppInstanceProfile
 Remove-IAMInstanceProfile -InstanceProfileName MyAppInstanceProfile
 ```
@@ -115,7 +115,7 @@ Remove-IAMInstanceProfile -InstanceProfileName MyAppInstanceProfile
 **Tools for PowerShell V5**
 **Example 1: This example deletes the EC2 instance profile named `MyAppInstanceProfile`. The first command detaches any roles from the instance profile, and then the second command deletes the instance profile.**
 
-```
+```powershell
 (Get-IAMInstanceProfile -InstanceProfileName MyAppInstanceProfile).Roles | Remove-IAMRoleFromInstanceProfile -InstanceProfileName MyAppInstanceProfile
 Remove-IAMInstanceProfile -InstanceProfileName MyAppInstanceProfile
 ```
@@ -128,7 +128,7 @@ Remove-IAMInstanceProfile -InstanceProfileName MyAppInstanceProfile
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 This example removes the role from the instance profile, detaches all policies attached to the role, and deletes all the resources.
 
-```
+```python
 class AutoScalingWrapper:
     """
     Encapsulates Amazon EC2 Auto Scaling and EC2 management actions.

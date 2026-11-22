@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-natgateway-availabilityzoneaddress-syntax.json"></a>
 
-```
+```json
 {
   "[AllocationIds](#cfn-ec2-natgateway-availabilityzoneaddress-allocationids)" : {{[ String, ... ]}},
   "[AvailabilityZone](#cfn-ec2-natgateway-availabilityzoneaddress-availabilityzone)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-natgateway-availabilityzoneaddress-syntax.yaml"></a>
 
-```
+```yaml
   [AllocationIds](#cfn-ec2-natgateway-availabilityzoneaddress-allocationids): {{
     - String}}
   [AvailabilityZone](#cfn-ec2-natgateway-availabilityzoneaddress-availabilityzone): {{String}}

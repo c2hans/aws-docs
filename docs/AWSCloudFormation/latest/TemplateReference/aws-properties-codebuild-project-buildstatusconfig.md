@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codebuild-project-buildstatusconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Context](#cfn-codebuild-project-buildstatusconfig-context)" : {{String}},
   "[TargetUrl](#cfn-codebuild-project-buildstatusconfig-targeturl)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codebuild-project-buildstatusconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Context](#cfn-codebuild-project-buildstatusconfig-context): {{String}}
   [TargetUrl](#cfn-codebuild-project-buildstatusconfig-targeturl): {{String}}
 ```

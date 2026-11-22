@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-eventschemas-registrypolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EventSchemas::RegistryPolicy",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-eventschemas-registrypolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EventSchemas::RegistryPolicy
 Properties:
   [Policy](#cfn-eventschemas-registrypolicy-policy): {{Json}}
@@ -94,7 +94,7 @@ The ID of the policy.
 #### YAML
 <a name="aws-resource-eventschemas-registrypolicy--examples----yaml"></a>
 
-```
+```yaml
 Resources:
   RegistryPolicy:
     Type: AWS::EventSchemas::RegistryPolicy
@@ -119,7 +119,7 @@ Resources:
 #### YAML
 <a name="aws-resource-eventschemas-registrypolicy--examples----yaml"></a>
 
-```
+```yaml
 Resources:
   RegistryPolicy:
     Type: 'AWS::EventSchemas::RegistryPolicy'
@@ -146,7 +146,7 @@ Resources:
 #### JSON
 <a name="aws-resource-eventschemas-registrypolicy--examples----json"></a>
 
-```
+```json
 {
   "Resources": {
     "RegistryPolicy": {

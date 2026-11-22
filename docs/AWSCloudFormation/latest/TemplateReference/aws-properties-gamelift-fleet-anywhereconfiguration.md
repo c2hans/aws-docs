@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-fleet-anywhereconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Cost](#cfn-gamelift-fleet-anywhereconfiguration-cost)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-fleet-anywhereconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Cost](#cfn-gamelift-fleet-anywhereconfiguration-cost): {{String}}
 ```
 

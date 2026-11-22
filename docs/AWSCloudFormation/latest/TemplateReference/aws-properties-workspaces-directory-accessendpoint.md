@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspaces-directory-accessendpoint-syntax.json"></a>
 
-```
+```json
 {
   "[AccessEndpointType](#cfn-workspaces-directory-accessendpoint-accessendpointtype)" : {{String}},
   "[VpcEndpointId](#cfn-workspaces-directory-accessendpoint-vpcendpointid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspaces-directory-accessendpoint-syntax.yaml"></a>
 
-```
+```yaml
   [AccessEndpointType](#cfn-workspaces-directory-accessendpoint-accessendpointtype): {{String}}
   [VpcEndpointId](#cfn-workspaces-directory-accessendpoint-vpcendpointid): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gameliftstreams-streamgroup-locationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AlwaysOnCapacity](#cfn-gameliftstreams-streamgroup-locationconfiguration-alwaysoncapacity)" : {{Integer}},
   "[LocationName](#cfn-gameliftstreams-streamgroup-locationconfiguration-locationname)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gameliftstreams-streamgroup-locationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AlwaysOnCapacity](#cfn-gameliftstreams-streamgroup-locationconfiguration-alwaysoncapacity): {{Integer}}
   [LocationName](#cfn-gameliftstreams-streamgroup-locationconfiguration-locationname): {{String}}
   [MaximumCapacity](#cfn-gameliftstreams-streamgroup-locationconfiguration-maximumcapacity): {{Integer}}

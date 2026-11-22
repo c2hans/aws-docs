@@ -16,7 +16,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/AutoScaling#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Terminate all instances in the Auto Scaling group in preparation for
     /// deleting the group.
@@ -53,7 +53,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/autoscaling#code-examples).
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -120,7 +120,7 @@ For more information, see [Manual scaling for Amazon EC2 Auto Scaling](https://d
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/autoscale#code-examples).
 
-```
+```java
     public static void terminateInstanceInAutoScalingGroup(AutoScalingClient autoScalingClient, String instanceId) {
         try {
             TerminateInstanceInAutoScalingGroupRequest request = TerminateInstanceInAutoScalingGroupRequest.builder()
@@ -145,7 +145,7 @@ For more information, see [Manual scaling for Amazon EC2 Auto Scaling](https://d
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/autoscale#code-examples).
 
-```
+```kotlin
 suspend fun terminateInstanceInAutoScalingGroup(instanceIdVal: String) {
     val request =
         TerminateInstanceInAutoScalingGroupRequest {
@@ -167,7 +167,7 @@ suspend fun terminateInstanceInAutoScalingGroup(instanceIdVal: String) {
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/auto-scaling#code-examples).
 
-```
+```php
     public function terminateInstanceInAutoScalingGroup(
         $instanceId,
         $shouldDecrementDesiredCapacity = true,
@@ -201,7 +201,7 @@ suspend fun terminateInstanceInAutoScalingGroup(instanceIdVal: String) {
 **Tools for PowerShell V4**
 **Example 1: This example terminates the specified instance and decreases the desired capacity of its Auto Scaling group so that Auto Scaling does not launch a replacement instance.**
 
-```
+```powershell
 Stop-ASInstanceInAutoScalingGroup -InstanceId i-93633f9b -ShouldDecrementDesiredCapacity $true
 ```
 **Output:**
@@ -221,7 +221,7 @@ StatusMessage        :
 ```
 **Example 2: This example terminates the specified instance without decreasing the desired capacity of its Auto Scaling group. Auto Scaling launches a replacement instance.**
 
-```
+```powershell
 Stop-ASInstanceInAutoScalingGroup -InstanceId i-93633f9b -ShouldDecrementDesiredCapacity $false
 ```
 **Output:**
@@ -244,7 +244,7 @@ StatusMessage        :
 **Tools for PowerShell V5**
 **Example 1: This example terminates the specified instance and decreases the desired capacity of its Auto Scaling group so that Auto Scaling does not launch a replacement instance.**
 
-```
+```powershell
 Stop-ASInstanceInAutoScalingGroup -InstanceId i-93633f9b -ShouldDecrementDesiredCapacity $true
 ```
 **Output:**
@@ -264,7 +264,7 @@ StatusMessage        :
 ```
 **Example 2: This example terminates the specified instance without decreasing the desired capacity of its Auto Scaling group. Auto Scaling launches a replacement instance.**
 
-```
+```powershell
 Stop-ASInstanceInAutoScalingGroup -InstanceId i-93633f9b -ShouldDecrementDesiredCapacity $false
 ```
 **Output:**
@@ -290,7 +290,7 @@ StatusMessage        :
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/auto-scaling#code-examples).
 
-```
+```python
 class AutoScalingWrapper:
     """Encapsulates Amazon EC2 Auto Scaling actions."""
 
@@ -349,7 +349,7 @@ class AutoScalingWrapper:
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/auto-scaling#code-examples).
 
-```
+```rust
     pub async fn terminate_some_instance(&self) -> Result<(), ScenarioError> {
         // Retrieve a list of instances in the auto scaling group.
         let auto_scaling_group = self.get_group().await?;
@@ -422,7 +422,7 @@ class AutoScalingWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/asc#code-examples).
 
-```
+```sap-abap
     " Example: iv_instance_id = 'i-1234567890abcdef0'
     " Example: iv_decrease_capacity = abap_true
 

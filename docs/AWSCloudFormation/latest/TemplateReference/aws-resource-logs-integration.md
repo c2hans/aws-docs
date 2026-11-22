@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-logs-integration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Logs::Integration",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-logs-integration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Logs::Integration
 Properties:
   [IntegrationName](#cfn-logs-integration-integrationname): {{String}}

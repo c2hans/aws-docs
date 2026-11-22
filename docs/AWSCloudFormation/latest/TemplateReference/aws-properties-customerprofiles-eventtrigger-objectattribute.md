@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-eventtrigger-objectattribute-syntax.json"></a>
 
-```
+```json
 {
   "[ComparisonOperator](#cfn-customerprofiles-eventtrigger-objectattribute-comparisonoperator)" : {{String}},
   "[FieldName](#cfn-customerprofiles-eventtrigger-objectattribute-fieldname)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-eventtrigger-objectattribute-syntax.yaml"></a>
 
-```
+```yaml
   [ComparisonOperator](#cfn-customerprofiles-eventtrigger-objectattribute-comparisonoperator): {{String}}
   [FieldName](#cfn-customerprofiles-eventtrigger-objectattribute-fieldname): {{String}}
   [Source](#cfn-customerprofiles-eventtrigger-objectattribute-source): {{String}}

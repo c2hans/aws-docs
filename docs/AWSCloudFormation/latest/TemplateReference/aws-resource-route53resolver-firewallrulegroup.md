@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-route53resolver-firewallrulegroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Route53Resolver::FirewallRuleGroup",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-route53resolver-firewallrulegroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53Resolver::FirewallRuleGroup
 Properties:
   [FirewallRules](#cfn-route53resolver-firewallrulegroup-firewallrules): {{
@@ -126,7 +126,7 @@ The following example creates a DNS Firewall rule group with associated rules fo
 #### JSON
 <a name="aws-resource-route53resolver-firewallrulegroup--examples--Create_Firewall_rule_group--json"></a>
 
-```
+```json
 {"Type": "AWS::Route53Resolver::FirewallRuleGroup",
 "Properties": {
      "FirewallRules": [
@@ -176,7 +176,7 @@ The following example creates a DNS Firewall rule group with associated rules fo
 #### YAML
 <a name="aws-resource-route53resolver-firewallrulegroup--examples--Create_Firewall_rule_group--yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53Resolver::FirewallRuleGroup
 Properties:
    FirewallRules:

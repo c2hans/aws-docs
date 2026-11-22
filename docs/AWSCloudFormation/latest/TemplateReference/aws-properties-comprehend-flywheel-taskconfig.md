@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-comprehend-flywheel-taskconfig-syntax.json"></a>
 
-```
+```json
 {
   "[DocumentClassificationConfig](#cfn-comprehend-flywheel-taskconfig-documentclassificationconfig)" : {{DocumentClassificationConfig}},
   "[EntityRecognitionConfig](#cfn-comprehend-flywheel-taskconfig-entityrecognitionconfig)" : {{EntityRecognitionConfig}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-comprehend-flywheel-taskconfig-syntax.yaml"></a>
 
-```
+```yaml
   [DocumentClassificationConfig](#cfn-comprehend-flywheel-taskconfig-documentclassificationconfig): {{
     DocumentClassificationConfig}}
   [EntityRecognitionConfig](#cfn-comprehend-flywheel-taskconfig-entityrecognitionconfig): {{

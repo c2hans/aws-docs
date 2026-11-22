@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-body-syntax.json"></a>
 
-```
+```json
 {
   "[OversizeHandling](#cfn-wafv2-webacl-body-oversizehandling)" : {{String}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-body-syntax.yaml"></a>
 
-```
+```yaml
   [OversizeHandling](#cfn-wafv2-webacl-body-oversizehandling): {{String}}
 ```
 
@@ -62,7 +62,7 @@ The following shows an example Body field to match specification.
 #### YAML
 <a name="aws-properties-wafv2-webacl-body--examples--Set_the_Body_specification--yaml"></a>
 
-```
+```yaml
 FieldToMatch:
   Body:
     OversizeHandling: MATCH
@@ -71,7 +71,7 @@ FieldToMatch:
 #### JSON
 <a name="aws-properties-wafv2-webacl-body--examples--Set_the_Body_specification--json"></a>
 
-```
+```json
 "FieldToMatch": {
   "Body": {
     "OversizeHandling": "MATCH"

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codedeploy-deploymentgroup-ecsservice-syntax.json"></a>
 
-```
+```json
 {
   "[ClusterName](#cfn-codedeploy-deploymentgroup-ecsservice-clustername)" : {{String}},
   "[ServiceName](#cfn-codedeploy-deploymentgroup-ecsservice-servicename)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codedeploy-deploymentgroup-ecsservice-syntax.yaml"></a>
 
-```
+```yaml
   [ClusterName](#cfn-codedeploy-deploymentgroup-ecsservice-clustername): {{String}}
   [ServiceName](#cfn-codedeploy-deploymentgroup-ecsservice-servicename): {{String}}
 ```

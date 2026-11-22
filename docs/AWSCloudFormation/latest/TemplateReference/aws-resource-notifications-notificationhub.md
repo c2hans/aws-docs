@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-notifications-notificationhub-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Notifications::NotificationHub",
   "Properties" : {
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-notifications-notificationhub-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Notifications::NotificationHub
 Properties:
   [Region](#cfn-notifications-notificationhub-region): {{String}}

@@ -22,7 +22,7 @@ A canary with tracing enabled must use a role with the following permissions. If
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

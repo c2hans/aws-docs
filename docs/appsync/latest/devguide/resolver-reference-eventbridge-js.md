@@ -11,7 +11,7 @@ The AWS AppSync resolver function request and response used with the EventBridge
 
 The request handler allows you to send multiple custom events to an EventBridge event bus:
 
-```
+```sh
 export function request(ctx) {
   return {
     "operation" : "PutEvents",

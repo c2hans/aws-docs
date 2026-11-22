@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codepipeline-pipeline-ruletypeid-syntax.json"></a>
 
-```
+```json
 {
   "[Category](#cfn-codepipeline-pipeline-ruletypeid-category)" : {{String}},
   "[Owner](#cfn-codepipeline-pipeline-ruletypeid-owner)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codepipeline-pipeline-ruletypeid-syntax.yaml"></a>
 
-```
+```yaml
   [Category](#cfn-codepipeline-pipeline-ruletypeid-category): {{String}}
   [Owner](#cfn-codepipeline-pipeline-ruletypeid-owner): {{String}}
   [Provider](#cfn-codepipeline-pipeline-ruletypeid-provider): {{String}}

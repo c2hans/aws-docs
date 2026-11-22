@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-databrew-dataset-pathoptions-syntax.json"></a>
 
-```
+```json
 {
   "[FilesLimit](#cfn-databrew-dataset-pathoptions-fileslimit)" : {{FilesLimit}},
   "[LastModifiedDateCondition](#cfn-databrew-dataset-pathoptions-lastmodifieddatecondition)" : {{FilterExpression}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-databrew-dataset-pathoptions-syntax.yaml"></a>
 
-```
+```yaml
   [FilesLimit](#cfn-databrew-dataset-pathoptions-fileslimit): {{
     FilesLimit}}
   [LastModifiedDateCondition](#cfn-databrew-dataset-pathoptions-lastmodifieddatecondition): {{

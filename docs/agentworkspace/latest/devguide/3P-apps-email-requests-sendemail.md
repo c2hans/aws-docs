@@ -46,7 +46,7 @@ When sending draft emails, agents may encounter issues. The @amazon-connect/emai
 
  **Usage**
 
-```
+```typescript
 import {
     isOutboundEmailAddressNotConfiguredError,
     isEmailBodySizeExceededError,

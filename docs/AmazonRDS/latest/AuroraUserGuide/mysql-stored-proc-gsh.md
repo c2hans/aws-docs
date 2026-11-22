@@ -26,7 +26,7 @@ Takes a snapshot on demand for the Global Status History.
 ### Syntax
 <a name="rds_collect_global_status_history-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_collect_global_status_history;
 ```
 
@@ -38,7 +38,7 @@ Turns off snapshots taken by the Global Status History.
 ### Syntax
 <a name="mysql_rds_disable_gsh_collector-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_disable_gsh_collector;
 ```
 
@@ -50,7 +50,7 @@ Turns off rotation of the `mysql.global_status_history` table.
 ### Syntax
 <a name="mysql_rds_disable_gsh_rotation-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_disable_gsh_rotation;
 ```
 
@@ -62,7 +62,7 @@ Turns on the Global Status History to take default snapshots at intervals specif
 ### Syntax
 <a name="mysql_rds_enable_gsh_collector-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_enable_gsh_collector;
 ```
 
@@ -74,7 +74,7 @@ Turns on rotation of the contents of the `mysql.global_status_history` table to 
 ### Syntax
 <a name="mysql_rds_enable_gsh_rotation-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_enable_gsh_rotation;
 ```
 
@@ -86,7 +86,7 @@ Rotates the contents of the `mysql.global_status_history` table to `mysql.global
 ### Syntax
 <a name="mysql_rds_rotate_global_status_history-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_rotate_global_status_history;
 ```
 
@@ -98,7 +98,7 @@ Specifies the interval, in minutes, between snapshots taken by the Global Status
 ### Syntax
 <a name="mysql_rds_set_gsh_collector-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_set_gsh_collector({{intervalPeriod}});
 ```
 
@@ -116,7 +116,7 @@ Specifies the interval, in days, between rotations of the `mysql.global_status_h
 ### Syntax
 <a name="mysql_rds_set_gsh_rotation-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_set_gsh_rotation({{intervalPeriod}});
 ```
 

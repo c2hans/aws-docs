@@ -70,3 +70,4 @@ The following data types are supported:
 +  [UserStackAssociationError](API_UserStackAssociationError.md)
 +  [VolumeConfig](API_VolumeConfig.md)
 +  [VpcConfig](API_VpcConfig.md)
++  [WebAuthnRedirection](API_WebAuthnRedirection.md)

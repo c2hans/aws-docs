@@ -130,7 +130,7 @@ To access DynamoDB tables or DynamoDB control API operations through DynamoDB in
 **Example: Use an endpoint URL to access a DynamoDB table**
 In the following example, replace the Region `us-east-1` and VPC endpoint ID `https://vpce-1a2b3c4d-5e6f.dynamodb.us-east-1.vpce.amazonaws.com` with your own information.
 
-```
+```python
 ddb_client = session.client(
 service_name='dynamodb',
 region_name='us-east-1',
@@ -144,7 +144,7 @@ endpoint_url='https://vpce-1a2b3c4d-5e6f.dynamodb.us-east-1.vpce.amazonaws.com'
 **Example: Use an endpoint URL to access a DynamoDB table**
 In the following example, replace the Region `us-east-1` and VPC endpoint ID `https://vpce-1a2b3c4d-5e6f.dynamodb.us-east-1.vpce.amazonaws.com` with your own information.
 
-```
+```java
 //client build with endpoint config
 final AmazonDynamoDB dynamodb = AmazonDynamoDBClientBuilder.standard().withEndpointConfiguration(
         new AwsClientBuilder.EndpointConfiguration(
@@ -160,7 +160,7 @@ final AmazonDynamoDB dynamodb = AmazonDynamoDBClientBuilder.standard().withEndpo
 **Example: Use an endpoint URL to access DynamoDB table**
 In the following example, replace the Region us-east-1 and VPC endpoint ID https://vpce-1a2b3c4d-5e6f.dynamodb.us-east-1.vpce.amazonaws.com with your own information.
 
-```
+```java
 Region region = Region.US_EAST_1;
 dynamoDbClient = DynamoDbClient.builder().region(region)
 .endpointOverride(URI.create("https://vpce-1a2b3c4d-5e6f.dynamodb.us-east-1.vpce.amazonaws.com"))
@@ -221,7 +221,7 @@ You can create an endpoint policy that restricts access to only specific DynamoD
 
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
   "Id": "Policy1216114807515",

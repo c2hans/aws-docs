@@ -97,7 +97,7 @@ The two revisions in our examples are identical, because App Runner doesn't yet 
 #### Sample Request
 <a name="API_DeleteObservabilityConfiguration_Example_1_Request"></a>
 
-```
+```json
 $ aws apprunner delete-observability-configuration --cli-input-json "`cat`"
 {
   "ObservabilityConfigurationArn": "arn:aws:apprunner:us-east-1:123456789012:observabilityconfiguration/xray-tracing"
@@ -107,7 +107,7 @@ $ aws apprunner delete-observability-configuration --cli-input-json "`cat`"
 #### Sample Response
 <a name="API_DeleteObservabilityConfiguration_Example_1_Response"></a>
 
-```
+```json
 {
   "ObservabilityConfiguration": {
     "ObservabilityConfigurationArn": "arn:aws:apprunner:us-east-1:123456789012:observabilityconfiguration/xray-tracing/2/e76562f50d78042e819fead0f59672e6",
@@ -134,7 +134,7 @@ In the example, several revisions exist before this action. The action deletes r
 #### Sample Request
 <a name="API_DeleteObservabilityConfiguration_Example_2_Request"></a>
 
-```
+```json
 $ aws apprunner delete-observability-configuration --cli-input-json "`cat`"
 {
   "ObservabilityConfigurationArn": "arn:aws:apprunner:us-east-1:123456789012:observabilityconfiguration/xray-tracing/1"
@@ -144,7 +144,7 @@ $ aws apprunner delete-observability-configuration --cli-input-json "`cat`"
 #### Sample Response
 <a name="API_DeleteObservabilityConfiguration_Example_2_Response"></a>
 
-```
+```json
 {
   "ObservabilityConfiguration": {
     "ObservabilityConfigurationArn": "arn:aws:apprunner:us-east-1:123456789012:observabilityconfiguration/xray-tracing/1/2f50e7656d7819fead0f59672e68042e",

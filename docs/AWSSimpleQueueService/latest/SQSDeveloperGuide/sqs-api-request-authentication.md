@@ -29,7 +29,7 @@ Amazon SQS supports Signature Version 4, which provides improved SHA256-based se
 
   1. Base64-encode the request signature. The following sample Java code does this:
 
-     ```
+     ```java
      package amazon.webservices.common;
 
      // Define common routines for encoding data in AWS requests.

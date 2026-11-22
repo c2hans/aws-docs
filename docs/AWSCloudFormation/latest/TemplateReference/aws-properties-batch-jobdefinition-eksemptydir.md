@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-eksemptydir-syntax.json"></a>
 
-```
+```json
 {
   "[Medium](#cfn-batch-jobdefinition-eksemptydir-medium)" : {{String}},
   "[SizeLimit](#cfn-batch-jobdefinition-eksemptydir-sizelimit)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-eksemptydir-syntax.yaml"></a>
 
-```
+```yaml
   [Medium](#cfn-batch-jobdefinition-eksemptydir-medium): {{String}}
   [SizeLimit](#cfn-batch-jobdefinition-eksemptydir-sizelimit): {{String}}
 ```

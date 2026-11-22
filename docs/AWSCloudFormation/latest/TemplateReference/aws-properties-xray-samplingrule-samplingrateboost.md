@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-xray-samplingrule-samplingrateboost-syntax.json"></a>
 
-```
+```json
 {
   "[CooldownWindowMinutes](#cfn-xray-samplingrule-samplingrateboost-cooldownwindowminutes)" : {{Integer}},
   "[MaxRate](#cfn-xray-samplingrule-samplingrateboost-maxrate)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-xray-samplingrule-samplingrateboost-syntax.yaml"></a>
 
-```
+```yaml
   [CooldownWindowMinutes](#cfn-xray-samplingrule-samplingrateboost-cooldownwindowminutes): {{Integer}}
   [MaxRate](#cfn-xray-samplingrule-samplingrateboost-maxrate): {{Number}}
 ```

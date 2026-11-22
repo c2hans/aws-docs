@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rds-dbsecuritygroup-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-rds-dbsecuritygroup-tag-key)" : {{String}},
   "[Value](#cfn-rds-dbsecuritygroup-tag-value)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rds-dbsecuritygroup-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-rds-dbsecuritygroup-tag-key): {{String}}
   [Value](#cfn-rds-dbsecuritygroup-tag-value): {{String}}
 ```
@@ -59,7 +59,7 @@ The following example specifies a tag for a DB security group.
 #### JSON
 <a name="aws-properties-rds-dbsecuritygroup-tag--examples----json"></a>
 
-```
+```json
 "Tags" : [
    {
       "Key" : "keyname1",
@@ -75,7 +75,7 @@ The following example specifies a tag for a DB security group.
 #### YAML
 <a name="aws-properties-rds-dbsecuritygroup-tag--examples----yaml"></a>
 
-```
+```yaml
 Tags:
   - Key: keyname1
     Value: value1

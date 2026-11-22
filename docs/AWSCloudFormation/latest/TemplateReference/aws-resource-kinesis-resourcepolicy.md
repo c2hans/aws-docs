@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-kinesis-resourcepolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Kinesis::ResourcePolicy",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-kinesis-resourcepolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Kinesis::ResourcePolicy
 Properties:
   [ResourceArn](#cfn-kinesis-resourcepolicy-resourcearn): {{String}}
@@ -78,7 +78,7 @@ This policy allows Account12345 to perform the `DescribeStreamSummary`, `ListSha
 #### JSON
 <a name="aws-resource-kinesis-resourcepolicy--examples--Resource_policy_that_gives_write_access_to_a_specific_data_stream--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "Kinesis Data Streams resource policy example",
@@ -115,7 +115,7 @@ This policy allows Account12345 to perform the `DescribeStreamSummary`, `ListSha
 #### YAML
 <a name="aws-resource-kinesis-resourcepolicy--examples--Resource_policy_that_gives_write_access_to_a_specific_data_stream--yaml"></a>
 
-```
+```yaml
 SampleResourcePolicy:
   Type: AWS::Kinesis::ResourcePolicy
   Properties:

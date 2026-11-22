@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-autoscaling-autoscalinggroup-retentiontriggers-syntax.json"></a>
 
-```
+```json
 {
   "[TerminateHookAbandon](#cfn-autoscaling-autoscalinggroup-retentiontriggers-terminatehookabandon)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-autoscaling-autoscalinggroup-retentiontriggers-syntax.yaml"></a>
 
-```
+```yaml
   [TerminateHookAbandon](#cfn-autoscaling-autoscalinggroup-retentiontriggers-terminatehookabandon): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrserverless-application-cloudwatchloggingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-emrserverless-application-cloudwatchloggingconfiguration-enabled)" : {{Boolean}},
   "[EncryptionKeyArn](#cfn-emrserverless-application-cloudwatchloggingconfiguration-encryptionkeyarn)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrserverless-application-cloudwatchloggingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-emrserverless-application-cloudwatchloggingconfiguration-enabled): {{Boolean}}
   [EncryptionKeyArn](#cfn-emrserverless-application-cloudwatchloggingconfiguration-encryptionkeyarn): {{String}}
   [LogGroupName](#cfn-emrserverless-application-cloudwatchloggingconfiguration-loggroupname): {{String}}

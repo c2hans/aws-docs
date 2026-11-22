@@ -15,7 +15,7 @@ Resource-based policies are evaluated in combination with identity-based policie
 
 This policy demonstrates how to grant specific permissions to users from different AWS accounts:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -46,7 +46,7 @@ This policy demonstrates how to grant specific permissions to users from differe
 
 This policy demonstrates how to deny specific vector index level actions to an IAM role:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -77,7 +77,7 @@ This policy demonstrates how to deny specific vector index level actions to an I
 
 This policy demonstrates how to deny modification requests for both vector index and bucket-level actions by specifying multiple resources:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

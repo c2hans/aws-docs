@@ -172,7 +172,7 @@ Do not include `SessionDuration` if your `AssumeRoleSession` credentials are fro
 ### Use GET Requests
 <a name="post-api-py-example"></a>
 
-```
+```python
 import urllib, json, sys
 import requests # 'pip install requests'
 import boto3 # AWS SDK for Python (Boto3) 'pip install boto3'
@@ -236,7 +236,7 @@ print (request_url)
 ### Use POST Requests
 <a name="get-api-py-example-1"></a>
 
-```
+```python
 import urllib, json, sys
 import requests # 'pip install requests'
 import boto3 # AWS SDK for Python (Boto3) 'pip install boto3'
@@ -328,7 +328,7 @@ input("Press Enter to close the browser window...")
 
 The following example shows how to use Java to programmatically construct a URL that gives users direct access to the AWS Management Console. The following code snippet uses the [AWS SDK for Java](http://aws.amazon.com/documentation/sdkforjava/).
 
-```
+```java
 import java.net.URLEncoder;
 import java.net.URL;
 import java.net.URLConnection;
@@ -431,7 +431,7 @@ String loginURL = signInURL + "?Action=login" +
 
 The following example shows how to use Ruby to programmatically construct a URL that gives users direct access to the AWS Management Console. This code snippet uses the [AWS SDK for Ruby](http://aws.amazon.com/documentation/sdkforruby/).
 
-```
+```ruby
 require 'rubygems'
 require 'json'
 require 'open-uri'

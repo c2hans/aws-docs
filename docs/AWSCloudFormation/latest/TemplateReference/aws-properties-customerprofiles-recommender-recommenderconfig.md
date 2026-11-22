@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-recommender-recommenderconfig-syntax.json"></a>
 
-```
+```json
 {
   "[EventsConfig](#cfn-customerprofiles-recommender-recommenderconfig-eventsconfig)" : {{EventsConfig}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-recommender-recommenderconfig-syntax.yaml"></a>
 
-```
+```yaml
   [EventsConfig](#cfn-customerprofiles-recommender-recommenderconfig-eventsconfig): {{
     EventsConfig}}
 ```

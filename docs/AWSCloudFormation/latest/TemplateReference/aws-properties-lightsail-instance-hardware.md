@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lightsail-instance-hardware-syntax.json"></a>
 
-```
+```json
 {
   "[CpuCount](#cfn-lightsail-instance-hardware-cpucount)" : {{Integer}},
   "[Disks](#cfn-lightsail-instance-hardware-disks)" : {{[ Disk, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lightsail-instance-hardware-syntax.yaml"></a>
 
-```
+```yaml
   [CpuCount](#cfn-lightsail-instance-hardware-cpucount): {{Integer}}
   [Disks](#cfn-lightsail-instance-hardware-disks): {{
     - Disk}}

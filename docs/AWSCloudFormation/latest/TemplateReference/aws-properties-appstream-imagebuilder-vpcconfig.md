@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appstream-imagebuilder-vpcconfig-syntax.json"></a>
 
-```
+```json
 {
   "[SecurityGroupIds](#cfn-appstream-imagebuilder-vpcconfig-securitygroupids)" : {{[ String, ... ]}},
   "[SubnetIds](#cfn-appstream-imagebuilder-vpcconfig-subnetids)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appstream-imagebuilder-vpcconfig-syntax.yaml"></a>
 
-```
+```yaml
   [SecurityGroupIds](#cfn-appstream-imagebuilder-vpcconfig-securitygroupids): {{
     - String}}
   [SubnetIds](#cfn-appstream-imagebuilder-vpcconfig-subnetids): {{
@@ -41,10 +41,10 @@ The identifiers of the security groups for the image builder.
 *Required*: No
 *Type*: Array of String
 *Maximum*: `5`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `SubnetIds`  <a name="cfn-appstream-imagebuilder-vpcconfig-subnetids"></a>
 The identifier of the subnet to which a network interface is attached from the image builder instance. An image builder instance can use one subnet.
 *Required*: No
 *Type*: Array of String
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

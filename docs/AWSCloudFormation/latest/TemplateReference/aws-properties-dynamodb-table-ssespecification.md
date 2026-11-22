@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dynamodb-table-ssespecification-syntax.json"></a>
 
-```
+```json
 {
   "[KMSMasterKeyId](#cfn-dynamodb-table-ssespecification-kmsmasterkeyid)" : {{String}},
   "[SSEEnabled](#cfn-dynamodb-table-ssespecification-sseenabled)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dynamodb-table-ssespecification-syntax.yaml"></a>
 
-```
+```yaml
   [KMSMasterKeyId](#cfn-dynamodb-table-ssespecification-kmsmasterkeyid): {{String}}
   [SSEEnabled](#cfn-dynamodb-table-ssespecification-sseenabled): {{Boolean}}
   [SSEType](#cfn-dynamodb-table-ssespecification-ssetype): {{String}}

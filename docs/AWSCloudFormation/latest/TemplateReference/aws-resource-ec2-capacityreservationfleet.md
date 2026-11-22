@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-capacityreservationfleet-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::CapacityReservationFleet",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-capacityreservationfleet-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::CapacityReservationFleet
 Properties:
   [AllocationStrategy](#cfn-ec2-capacityreservationfleet-allocationstrategy): {{String}}
@@ -151,7 +151,7 @@ The following example creates a Capacity Feservation Fleet that creates Capacity
 #### YAML
 <a name="aws-resource-ec2-capacityreservationfleet--examples--Creating_a_Capacity_Reservation_Fleet--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   EC2CapacityReservationFleetCanary:

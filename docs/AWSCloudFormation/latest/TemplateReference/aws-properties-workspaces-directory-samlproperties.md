@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspaces-directory-samlproperties-syntax.json"></a>
 
-```
+```json
 {
   "[RelayStateParameterName](#cfn-workspaces-directory-samlproperties-relaystateparametername)" : {{String}},
   "[Status](#cfn-workspaces-directory-samlproperties-status)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspaces-directory-samlproperties-syntax.yaml"></a>
 
-```
+```yaml
   [RelayStateParameterName](#cfn-workspaces-directory-samlproperties-relaystateparametername): {{String}}
   [Status](#cfn-workspaces-directory-samlproperties-status): {{String}}
   [UserAccessUrl](#cfn-workspaces-directory-samlproperties-useraccessurl): {{String}}

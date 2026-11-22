@@ -40,7 +40,7 @@ For more information, see [Time to Live](https://docs.aws.amazon.com/amazondynam
 **SDK for Java 2.x**
 Enable TTL on an existing DynamoDB table using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -78,7 +78,7 @@ import java.util.logging.Logger;
 ```
 Disable TTL on an existing DynamoDB table using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -123,7 +123,7 @@ import java.util.logging.Logger;
 **SDK for JavaScript (v3)**
 Enable TTL on an existing DynamoDB table.
 
-```
+```javascript
 import { DynamoDBClient, UpdateTimeToLiveCommand } from "@aws-sdk/client-dynamodb";
 
 export const enableTTL = async (tableName, ttlAttribute, region = 'us-east-1') => {
@@ -160,7 +160,7 @@ export const enableTTL = async (tableName, ttlAttribute, region = 'us-east-1') =
 ```
 Disable TTL on an existing DynamoDB table.
 
-```
+```javascript
 import { DynamoDBClient, UpdateTimeToLiveCommand } from "@aws-sdk/client-dynamodb";
 
 export const disableTTL = async (tableName, ttlAttribute, region = 'us-east-1') => {
@@ -203,7 +203,7 @@ export const disableTTL = async (tableName, ttlAttribute, region = 'us-east-1') 
 **SDK for Python (Boto3)**
 Enable TTL on an existing DynamoDB table.
 
-```
+```python
 import boto3
 
 def enable_ttl(table_name, ttl_attribute_name):
@@ -241,7 +241,7 @@ enable_ttl("your-table-name", "expireAt")
 ```
 Disable TTL on an existing DynamoDB table.
 
-```
+```python
 import boto3
 
 def disable_ttl(table_name, ttl_attribute_name):

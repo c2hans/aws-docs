@@ -14,11 +14,11 @@ The intrinsic function `Ref` returns the value of a specified parameter, resourc
 ### JSON
 <a name="intrinsic-function-reference-ref-syntax.json"></a>
 
-```
+```json
 { "Ref" : "{{logicalName}}" }
 ```
 
-```
+```json
 { "Ref" : "{{IntrinsicFunction}}" }
 ```
 
@@ -27,22 +27,22 @@ The intrinsic function `Ref` returns the value of a specified parameter, resourc
 
 Syntax for the full function name:
 
-```
+```yaml
 Ref: {{logicalName}}
 ```
 
-```
+```yaml
 Ref:
    {{IntrinsicFunction}}
 ```
 
 Syntax for the short form:
 
-```
+```yaml
 !Ref {{logicalName}}
 ```
 
-```
+```yaml
 !Ref
    {{IntrinsicFunction}}
 ```
@@ -75,7 +75,7 @@ The following resource declaration for an Elastic IP address needs the instance 
 #### JSON
 <a name="intrinsic-function-reference-ref-example.json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion":"2010-09-09",
   "Resources":{
@@ -97,7 +97,7 @@ The following resource declaration for an Elastic IP address needs the instance 
 #### YAML
 <a name="intrinsic-function-reference-ref-example.yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
 
@@ -117,7 +117,7 @@ The following examples show how to use the `Ref` function to return the name of 
 #### JSON
 <a name="intrinsic-function-reference-ref-example-2.json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion":"2010-09-09",
   "Resources":{
@@ -144,7 +144,7 @@ The following examples show how to use the `Ref` function to return the name of 
 #### YAML
 <a name="intrinsic-function-reference-ref-example-2.yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   MyBucket:
@@ -169,7 +169,7 @@ The following examples show how to set identifiers of resources using the `Fn::S
 #### JSON
 <a name="ref-example-intrinsic-functions-multiple-stages.json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Transform": "AWS::LanguageExtensions",
@@ -251,7 +251,7 @@ The following examples show how to set identifiers of resources using the `Fn::S
 #### YAML
 <a name="ref-example-intrinsic-functions-multiple-stages.yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Transform: AWS::LanguageExtensions
 Parameters:

@@ -110,7 +110,7 @@ Update the IAM policy of your instance role so App Runner can access secrets and
    The following examples shows how to reference secrets and configurations as environment variables on a code-based and an image-based App Runner service.
 **Example Input.json file for image-based App Runner service**
 
-   ```
+   ```json
    {
      "ServiceName": "example-secrets",
      "SourceConfiguration": {
@@ -141,7 +141,7 @@ Update the IAM policy of your instance role so App Runner can access secrets and
    ```
 **Example Image-based App Runner service – Response**
 
-   ```
+   ```json
    {
    ...
          "ImageRepository": {
@@ -165,7 +165,7 @@ Update the IAM policy of your instance role so App Runner can access secrets and
    ```
 **Example Input.json file for code-based App Runner service**
 
-   ```
+   ```json
    {
      "ServiceName": "example-secrets",
      "SourceConfiguration": {
@@ -209,7 +209,7 @@ Update the IAM policy of your instance role so App Runner can access secrets and
    ```
 **Example Code-based App Runner service – Response**
 
-   ```
+   ```json
    {
    ...
       "SourceConfiguration":{
@@ -247,7 +247,7 @@ Update the IAM policy of your instance role so App Runner can access secrets and
    The following is an example of the updated `apprunner.yaml`model.
 **Example `apprunner.yaml`**
 
-   ```
+   ```yaml
    version: 1.0
    runtime: python3
    build:

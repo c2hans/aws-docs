@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-routeroutput-maintenanceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Default](#cfn-mediaconnect-routeroutput-maintenanceconfiguration-default)" : {{Json}},
   "[PreferredDayTime](#cfn-mediaconnect-routeroutput-maintenanceconfiguration-preferreddaytime)" : {{PreferredDayTimeMaintenanceConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-routeroutput-maintenanceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Default](#cfn-mediaconnect-routeroutput-maintenanceconfiguration-default): {{Json}}
   [PreferredDayTime](#cfn-mediaconnect-routeroutput-maintenanceconfiguration-preferreddaytime): {{
     PreferredDayTimeMaintenanceConfiguration}}

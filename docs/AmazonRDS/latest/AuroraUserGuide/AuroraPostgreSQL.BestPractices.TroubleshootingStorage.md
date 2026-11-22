@@ -8,7 +8,7 @@ If the amount of working memory needed for sort or index-creation operations exc
 
 You can monitor your Aurora PostgreSQL DB cluster's local storage space by watching the Amazon CloudWatch metric for `FreeLocalStorage`. This metric reports the amount of storage available to each DB instance in the Aurora DB cluster for temporary tables and logs. For more information, see [Monitoring Amazon Aurora metrics with Amazon CloudWatch](monitoring-cloudwatch.md).
 
-Sorting, indexing, and grouping operations start in working memory but often must be offloaded to local storage. If your Aurora PostgreSQL DB cluster runs out of local storage because of these types of operations, you can resolve the issue by taking one of the following actions.
+Sorting, indexing, and grouping operations start in working memory but often must be offloaded to local storage. For example, `VACUUM FULL` and the `pg_repack` extension rebuild every index on the table, and these index builds can use local storage. For more information, see [Temporary storage limits for Aurora PostgreSQL](AuroraPostgreSQL.Managing.md#AuroraPostgreSQL.Managing.TempStorage). If your Aurora PostgreSQL DB cluster runs out of local storage because of these types of operations, you can resolve the issue by taking one of the following actions.
 + Increase the amount of working memory. This reduces the need to use local storage. By default, PostgreSQL allocates 4 MB for each sort, group, and index operation. To check the current working memory value for your Aurora PostgreSQL DB cluster's writer instance, connect to the instance using `psql` and run the following command.
 
   ```

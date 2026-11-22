@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-evaluator-openresponsesevaluatormodelconfig-syntax.json"></a>
 
-```
+```json
 {
   "[MaxOutputTokens](#cfn-bedrockagentcore-evaluator-openresponsesevaluatormodelconfig-maxoutputtokens)" : {{Integer}},
   "[ModelId](#cfn-bedrockagentcore-evaluator-openresponsesevaluatormodelconfig-modelid)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-evaluator-openresponsesevaluatormodelconfig-syntax.yaml"></a>
 
-```
+```yaml
   [MaxOutputTokens](#cfn-bedrockagentcore-evaluator-openresponsesevaluatormodelconfig-maxoutputtokens): {{Integer}}
   [ModelId](#cfn-bedrockagentcore-evaluator-openresponsesevaluatormodelconfig-modelid): {{String}}
   [Reasoning](#cfn-bedrockagentcore-evaluator-openresponsesevaluatormodelconfig-reasoning): {{

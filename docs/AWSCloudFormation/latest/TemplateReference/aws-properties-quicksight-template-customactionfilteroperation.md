@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-customactionfilteroperation-syntax.json"></a>
 
-```
+```json
 {
   "[SelectedFieldsConfiguration](#cfn-quicksight-template-customactionfilteroperation-selectedfieldsconfiguration)" : {{FilterOperationSelectedFieldsConfiguration}},
   "[TargetVisualsConfiguration](#cfn-quicksight-template-customactionfilteroperation-targetvisualsconfiguration)" : {{FilterOperationTargetVisualsConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-customactionfilteroperation-syntax.yaml"></a>
 
-```
+```yaml
   [SelectedFieldsConfiguration](#cfn-quicksight-template-customactionfilteroperation-selectedfieldsconfiguration): {{
     FilterOperationSelectedFieldsConfiguration}}
   [TargetVisualsConfiguration](#cfn-quicksight-template-customactionfilteroperation-targetvisualsconfiguration): {{

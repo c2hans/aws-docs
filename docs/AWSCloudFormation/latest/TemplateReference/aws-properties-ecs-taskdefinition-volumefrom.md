@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskdefinition-volumefrom-syntax.json"></a>
 
-```
+```json
 {
   "[ReadOnly](#cfn-ecs-taskdefinition-volumefrom-readonly)" : {{Boolean}},
   "[SourceContainer](#cfn-ecs-taskdefinition-volumefrom-sourcecontainer)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskdefinition-volumefrom-syntax.yaml"></a>
 
-```
+```yaml
   [ReadOnly](#cfn-ecs-taskdefinition-volumefrom-readonly): {{Boolean}}
   [SourceContainer](#cfn-ecs-taskdefinition-volumefrom-sourcecontainer): {{String}}
 ```

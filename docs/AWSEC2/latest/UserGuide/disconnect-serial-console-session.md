@@ -18,7 +18,7 @@ To disconnect from the serial console, close the serial console in-browser termi
 **Standard OpenSSH client**
 To disconnect from the serial console, use the following command to close the SSH connection. This command must be run immediately following a new line.
 
-```
+```bash
 ~.
 ```
 

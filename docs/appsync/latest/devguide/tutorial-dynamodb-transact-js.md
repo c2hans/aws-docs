@@ -20,7 +20,7 @@ Like other resolvers, you need to create a data source in AWS AppSync and either
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -86,7 +86,7 @@ Replace `region` and `accountID` with your Region and account ID:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -192,7 +192,7 @@ In the Schema section, click on **Attach** next to the `Mutation.populateAccount
 
 Now use the following code:
 
-```
+```TypeScript
 import { util } from '@aws-appsync/utils'
 
 export function request(ctx) {
@@ -239,7 +239,7 @@ Save the resolver and navigate to the **Queries** section of the AWS AppSync con
 
 Execute the following mutation:
 
-```
+```SDL
 mutation populateAccounts {
   populateAccounts (
     savingAccounts: [
@@ -271,7 +271,7 @@ Use the DynamoDB console to validate that data shows up in both the **savingAcco
 
 Attach a resolver to the `transferMoney` mutation with the following code. For each transfer, we need a success modifier to both the checking and savings accounts, and we need to track the transfer in transactions.
 
-```
+```TypeScript
 import { util } from '@aws-appsync/utils'
 
 export function request(ctx) {
@@ -335,7 +335,7 @@ export function response(ctx) {
 
 Now, navigate to the **Queries** section of the AWS AppSync console and execute the **transferMoney** mutation as follows:
 
-```
+```SDL
 mutation write {
   transferMoney(
     transactions: [
@@ -398,7 +398,7 @@ export function response(ctx) {
 
 Save the resolver and navigate to the **Queries** sections of the AWS AppSync console. In order to retrieve the savings and checking accounts, execute the following query:
 
-```
+```SDL
 query getAccounts {
   getAccounts(
     savingAccountNumbers: ["1", "2", "3"],

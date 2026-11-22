@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-route53globalresolver-accesstoken-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Route53GlobalResolver::AccessToken",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-route53globalresolver-accesstoken-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53GlobalResolver::AccessToken
 Properties:
   [ClientToken](#cfn-route53globalresolver-accesstoken-clienttoken): {{String}}

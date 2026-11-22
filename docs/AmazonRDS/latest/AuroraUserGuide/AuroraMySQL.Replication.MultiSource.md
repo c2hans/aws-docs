@@ -60,13 +60,13 @@ Perform the following steps for each source DB instance.
 
    **For MySQL 8.4**
 
-   ```
+   ```sql
    SHOW BINARY LOG STATUS;
    ```
 
    **For MySQL 8.0 and earlier**
 
-   ```
+   ```sql
    SHOW MASTER STATUS;
    ```
 
@@ -84,7 +84,7 @@ Perform the following steps for each source DB instance.
 
 1. Copy the database from the source DB instance to the Aurora MySQL cluster using `mysqldump`.
 
-   ```
+   ```bash
    mysqldump --databases {{database_name}} \
      --single-transaction \
      --compress \
@@ -109,7 +109,7 @@ For each source DB instance, connect to the **writer instance** of the Aurora My
 
 **Option A: Using binary log file position**
 
-```
+```sql
 CALL mysql.rds_set_external_source_for_channel(
   '{{source-endpoint.region.rds.amazonaws.com}}',
   3306,
@@ -128,7 +128,7 @@ CALL mysql.rds_start_replication_for_channel('{{channel_1}}');
 
 If your source DB instances use GTID-based replication, you can use auto-positioning instead of specifying binary log coordinates:
 
-```
+```sql
 CALL mysql.rds_set_external_source_with_auto_position_for_channel(
   '{{source-endpoint.region.rds.amazonaws.com}}',
   3306,
@@ -171,7 +171,7 @@ You can monitor individual channels on an Aurora MySQL multi-source replica usin
 
 Connect to the writer instance of the Aurora MySQL DB cluster and run:
 
-```
+```sql
 -- View status for all channels
 SHOW REPLICA STATUS\G
 
@@ -267,7 +267,7 @@ The following example demonstrates configuring an Aurora MySQL DB cluster as a m
 
 Connect to each source and record the binary log coordinates:
 
-```
+```sql
 -- On source 1 (orders-db.xxxxx.us-east-1.rds.amazonaws.com)
 SHOW BINARY LOG STATUS;
 -- Result: mysql-bin-changelog.000045, Position: 3892
@@ -284,7 +284,7 @@ SHOW BINARY LOG STATUS;
 ### Step 2: Import data from each source
 <a name="AuroraMySQL.Replication.MultiSource.Example.Step2"></a>
 
-```
+```bash
 # Import from source 1
 mysqldump --databases orders_db --single-transaction --compress \
  -u admin -p --host=orders-db.xxxxx.us-east-1.rds.amazonaws.com | \
@@ -306,7 +306,7 @@ mysqldump --databases analytics_db --single-transaction --compress \
 
 Connect to the Aurora MySQL writer instance:
 
-```
+```sql
 -- Configure channel for source 1 (orders)
 CALL mysql.rds_set_external_source_for_channel(
  'orders-db.xxxxx.us-east-1.rds.amazonaws.com',
@@ -337,7 +337,7 @@ CALL mysql.rds_start_replication_for_channel('analytics_channel');
 ### Step 4: Verify replication status
 <a name="AuroraMySQL.Replication.MultiSource.Example.Step4"></a>
 
-```
+```sql
 SHOW REPLICA STATUS\G
 ```
 

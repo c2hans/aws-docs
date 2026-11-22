@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-integration-task-syntax.json"></a>
 
-```
+```json
 {
   "[ConnectorOperator](#cfn-customerprofiles-integration-task-connectoroperator)" : {{ConnectorOperator}},
   "[DestinationField](#cfn-customerprofiles-integration-task-destinationfield)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-integration-task-syntax.yaml"></a>
 
-```
+```yaml
   [ConnectorOperator](#cfn-customerprofiles-integration-task-connectoroperator): {{
     ConnectorOperator}}
   [DestinationField](#cfn-customerprofiles-integration-task-destinationfield): {{String}}

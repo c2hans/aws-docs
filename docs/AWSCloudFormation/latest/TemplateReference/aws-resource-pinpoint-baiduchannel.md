@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-pinpoint-baiduchannel-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Pinpoint::BaiduChannel",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-pinpoint-baiduchannel-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Pinpoint::BaiduChannel
 Properties:
   [ApiKey](#cfn-pinpoint-baiduchannel-apikey): {{String}}

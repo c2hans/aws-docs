@@ -83,7 +83,7 @@ You can disable an AMI by using the EC2 console or the AWS Command Line Interfac
 **To disable an AMI**
 Use the following [disable-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/disable-image.html) command.
 
-```
+```bash
 aws ec2 disable-image --image-id {{ami-0abcdef1234567890}}
 ```
 
@@ -93,7 +93,7 @@ aws ec2 disable-image --image-id {{ami-0abcdef1234567890}}
 **To disable an AMI**
 Use the [Disable-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Disable-EC2Image.html) cmdlet.
 
-```
+```powershell
 Disable-EC2Image -ImageId {{ami-0abcdef1234567890}}
 ```
 
@@ -126,7 +126,7 @@ By default, when you describe all AMIs, the disabled AMIs are not included in th
 **To include disabled AMIs when describing all AMIs for an account**
 Use the following [describe-images](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command.
 
-```
+```bash
 aws ec2 describe-images \
     --owners {{123456789012}} \
     --include-disabled
@@ -135,7 +135,7 @@ aws ec2 describe-images \
 **To list the disabled AMIs for your account**
 Use the following [describe-images](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command.
 
-```
+```bash
 aws ec2 describe-images \
     --owners self \
     --include-disabled \
@@ -146,14 +146,14 @@ aws ec2 describe-images \
 
 The following is example output.
 
-```
+```bash
 ami-0abcdef1234567890
 ```
 
 **To describe the status of an AMI**
 Use the following [describe-images](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command. If `DeprecationTime` is not present in the output, the AMI is not deprecated or set to deprecate at a future date.
 
-```
+```bash
 aws ec2 describe-images \
     --image-ids {{ami-0abcdef1234567890}} \
     --query Images[].State \
@@ -162,7 +162,7 @@ aws ec2 describe-images \
 
 The following is example output.
 
-```
+```bash
 disabled
 ```
 
@@ -174,7 +174,7 @@ By default, when you describe all AMIs, the disabled AMIs are not included in th
 **To list the disabled AMIs for your account**
 Use the [Get-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Image.html) cmdlet.
 
-```
+```powershell
 (Get-EC2Image `
     -Owner self `
     -IncludeDisabled $true | Where-Object {$_.State -eq "disabled"}).ImageId
@@ -182,20 +182,20 @@ Use the [Get-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/i
 
 The following is example output.
 
-```
+```bash
 ami-0abcdef1234567890
 ```
 
 **To describe the status of an AMI**
 Use the [Get-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Image.html) cmdlet.
 
-```
+```powershell
 (Get-EC2Image -ImageId {{ami-0abcdef1234567890}}).State.Value
 ```
 
 The following is example output.
 
-```
+```bash
 disabled
 ```
 
@@ -227,7 +227,7 @@ You can re-enable a disabled AMI. You must be the AMI owner to perform this proc
 **To re-enable a disabled AMI**
 Use the following [enable-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/enable-image.html) command.
 
-```
+```bash
 aws ec2 enable-image --image-id {{ami-0abcdef1234567890}}
 ```
 
@@ -237,7 +237,7 @@ aws ec2 enable-image --image-id {{ami-0abcdef1234567890}}
 **To re-enable a disabled AMI**
 Use the [Enable-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Enable-EC2Image.html) cmdlet.
 
-```
+```powershell
 Enable-EC2Image -ImageId {{ami-0abcdef1234567890}}
 ```
 

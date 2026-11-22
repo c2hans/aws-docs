@@ -29,7 +29,7 @@ All data in S3 tables including S3 Storage Lens metrics are encrypted with SSE-S
 
 1. On the key policy for the AWS KMS key, you need the following permissions. You can grant these permissions by using the AWS KMS console at [https://console.aws.amazon.com/kms](https://console.aws.amazon.com/kms). To use this policy, replace the ` {{user input placeholders}} ` with your own information.
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-signer-signingprofile-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Signer::SigningProfile",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-signer-signingprofile-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Signer::SigningProfile
 Properties:
   [PlatformId](#cfn-signer-signingprofile-platformid): {{String}}

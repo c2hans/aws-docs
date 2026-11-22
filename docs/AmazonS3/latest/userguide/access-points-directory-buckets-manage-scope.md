@@ -42,7 +42,7 @@ The following `get-access-point-scope` example command shows how you can use the
 
 The following command shows the scope of the access point {{{{my-access-point}}}}--{{zoneID}}--xa-s3 for AWS account {{111122223333}}.
 
-```
+```bash,sh,zsh
 aws s3control get-access-point-scope --name {{{{my-access-point}}}}--{{zoneID}}--xa-s3 --account-id {{111122223333}}
 ```
 
@@ -50,7 +50,7 @@ For more information and examples, see [get-access-point-scope](https://awscli.a
 
 **Example result of `get-access-point-scope`**
 
-```
+```JSON
 {
     "Scope": {
         "Permissions": [
@@ -72,7 +72,7 @@ The following `GetAccessPointScope` example request shows how you can use the RE
 
 The following request shows the scope of the access point {{{{my-access-point}}}}--{{region}}-{{zoneID}}--xa-s3 for AWS account {{111122223333}}.
 
-```
+```http
 GET /v20180820/accesspoint/{{{{my-access-point}}}}--{{zoneID}}--xa-s3/scope HTTP/1.1
 Host: s3express-control.{{region}}.amazonaws.com
 x-amz-account-id: {{111122223333}}
@@ -80,7 +80,7 @@ x-amz-account-id: {{111122223333}}
 
 **Example result of `GetAccessPointScope`**
 
-```
+```JSON
       HTTP/1.1 200
       <?xml version="1.0" encoding="UTF-8"?>
       <GetAccessPointScopeResult>
@@ -165,7 +165,7 @@ You can use wildcards in prefixes by using the asterisk (\*) character. If you w
 All prefixes have an implicit '\*' ending, meaning all paths withing the prefix will be included.
 When you modify the scope of an access point with the AWS CLI, you replace the existing scope.
 
-```
+```bash,sh,zsh
 aws s3control put-access-point-scope --name {{{{my-access-point}}}}--{{zoneID}}--xa-s3 --account-id {{111122223333}} --scope Prefixes={{string}},Permissions={{string}}
 ```
 
@@ -183,7 +183,7 @@ You can use wildcards in prefixes by using the asterisk (\*) character. If you w
 All prefixes have an implicit '\*' ending, meaning all paths withing the prefix will be included.
 When you modify the scope of an access point with the API, you replace the existing scope.
 
-```
+```http
 PUT /v20180820/accesspoint/{{{{my-access-point}}}}--{{zoneID}}--xa-s3/scope HTTP/1.1
 Host: s3express-control.{{region}}.amazonaws.com
 x-amz-account-id: {{111122223333}}
@@ -244,7 +244,7 @@ The following `delete-access-point-scope` example command shows how you can use 
 
 The following command deletes the scope of the access point {{{{my-access-point}}}}--{{zoneID}}--xa-s3 for AWS account {{111122223333}}.
 
-```
+```bash,sh,zsh
 aws s3control delete-access-point-scope --name {{{{my-access-point}}}}--{{region}}-{{zoneID}}--xa-s3 --account-id {{111122223333}}
 ```
 
@@ -255,7 +255,7 @@ For more information and examples, see [delete-access-point-scope](https://awscl
 
 The following request deletes the scope of the access point {{{{my-access-point}}}}--{{zoneID}}--xa-s3 for AWS account {{111122223333}}.
 
-```
+```http
 DELETE /v20180820/accesspoint/{{{{my-access-point}}}}--{{zoneID}}--xa-s3/scope HTTP/1.1
 Host: s3express-control.{{region}}.amazonaws.com
 x-amz-account-id: {{111122223333}}

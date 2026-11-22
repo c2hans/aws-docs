@@ -27,7 +27,7 @@ The role permissions policy named `AWSS3OnOutpostsServiceRolePolicy` allows S3 o
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

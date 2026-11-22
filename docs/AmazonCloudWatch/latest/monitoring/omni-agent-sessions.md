@@ -39,7 +39,7 @@ Omni groups traces into sessions using the OpenTelemetry `session.id` span attri
 
 Set `session.id` on the root span of every turn that belongs to the same conversation, reusing one stable ID per conversation and starting a fresh ID when a new conversation starts:
 
-```
+```python
 from opentelemetry import trace
 
 # Reuse the SAME id for every turn in one conversation.

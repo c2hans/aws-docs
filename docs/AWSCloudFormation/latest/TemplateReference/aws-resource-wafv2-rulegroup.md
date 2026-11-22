@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-wafv2-rulegroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::WAFv2::RuleGroup",
   "Properties" : {
@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-wafv2-rulegroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::WAFv2::RuleGroup
 Properties:
   [AvailableLabels](#cfn-wafv2-rulegroup-availablelabels): {{
@@ -188,7 +188,7 @@ The following shows an example rule group specification.
 #### YAML
 <a name="aws-resource-wafv2-rulegroup--examples--Create_a_rule_group--yaml"></a>
 
-```
+```yaml
  SampleRuleGroup:
       Type: 'AWS::WAFv2::RuleGroup'
       Properties:
@@ -305,7 +305,7 @@ The following shows an example rule group specification.
 #### JSON
 <a name="aws-resource-wafv2-rulegroup--examples--Create_a_rule_group--json"></a>
 
-```
+```json
     "SampleRuleGroup": {
         "Type": "AWS::WAFv2::RuleGroup",
         "Properties": {

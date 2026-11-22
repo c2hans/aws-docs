@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-exporttocsvoption-syntax.json"></a>
 
-```
+```json
 {
   "[AvailabilityStatus](#cfn-quicksight-dashboard-exporttocsvoption-availabilitystatus)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-exporttocsvoption-syntax.yaml"></a>
 
-```
+```yaml
   [AvailabilityStatus](#cfn-quicksight-dashboard-exporttocsvoption-availabilitystatus): {{String}}
 ```
 

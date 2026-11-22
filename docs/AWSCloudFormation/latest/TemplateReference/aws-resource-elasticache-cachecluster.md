@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-elasticache-cachecluster-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ElastiCache::CacheCluster",
   "Properties" : {
@@ -52,7 +52,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-elasticache-cachecluster-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ElastiCache::CacheCluster
 Properties:
   [AutoMinorVersionUpgrade](#cfn-elasticache-cachecluster-autominorversionupgrade): {{Boolean}}
@@ -404,7 +404,7 @@ For the cache cluster, the `VpcSecurityGroupIds` property is used to associate t
 #### JSON
 <a name="aws-resource-elasticache-cachecluster--examples--Cluster_in_a_Default_VPC--json"></a>
 
-```
+```json
 {
     "ElasticacheSecurityGroup": {
         "Type": "AWS::EC2::SecurityGroup",
@@ -444,7 +444,7 @@ For the cache cluster, the `VpcSecurityGroupIds` property is used to associate t
 #### YAML
 <a name="aws-resource-elasticache-cachecluster--examples--Cluster_in_a_Default_VPC--yaml"></a>
 
-```
+```yaml
 ElasticacheSecurityGroup:
   Type: 'AWS::EC2::SecurityGroup'
   Properties:
@@ -474,7 +474,7 @@ The following example launches a cache cluster with three nodes, where two nodes
 #### JSON
 <a name="aws-resource-elasticache-cachecluster--examples--Memcached_Nodes_in_Multiple_Availability_Zones--json"></a>
 
-```
+```json
 {
     "myCacheCluster": {
         "Type": "AWS::ElastiCache::CacheCluster",
@@ -496,7 +496,7 @@ The following example launches a cache cluster with three nodes, where two nodes
 #### YAML
 <a name="aws-resource-elasticache-cachecluster--examples--Memcached_Nodes_in_Multiple_Availability_Zones--yaml"></a>
 
-```
+```yaml
 myCacheCluster:
   Type: 'AWS::ElastiCache::CacheCluster'
   Properties:

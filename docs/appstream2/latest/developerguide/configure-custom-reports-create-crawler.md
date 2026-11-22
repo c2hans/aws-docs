@@ -36,7 +36,7 @@ Completing the steps in the following procedure creates an AWS Glue crawler. How
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

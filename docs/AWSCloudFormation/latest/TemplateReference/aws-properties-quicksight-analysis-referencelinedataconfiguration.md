@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-referencelinedataconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AxisBinding](#cfn-quicksight-analysis-referencelinedataconfiguration-axisbinding)" : {{String}},
   "[DynamicConfiguration](#cfn-quicksight-analysis-referencelinedataconfiguration-dynamicconfiguration)" : {{ReferenceLineDynamicDataConfiguration}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-referencelinedataconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AxisBinding](#cfn-quicksight-analysis-referencelinedataconfiguration-axisbinding): {{String}}
   [DynamicConfiguration](#cfn-quicksight-analysis-referencelinedataconfiguration-dynamicconfiguration): {{
     ReferenceLineDynamicDataConfiguration}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-identitystore-user-rolesitems-syntax.json"></a>
 
-```
+```json
 {
   "[Primary](#cfn-identitystore-user-rolesitems-primary)" : {{Boolean}},
   "[Type](#cfn-identitystore-user-rolesitems-type)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-identitystore-user-rolesitems-syntax.yaml"></a>
 
-```
+```yaml
   [Primary](#cfn-identitystore-user-rolesitems-primary): {{Boolean}}
   [Type](#cfn-identitystore-user-rolesitems-type): {{String}}
   [Value](#cfn-identitystore-user-rolesitems-value): {{String}}

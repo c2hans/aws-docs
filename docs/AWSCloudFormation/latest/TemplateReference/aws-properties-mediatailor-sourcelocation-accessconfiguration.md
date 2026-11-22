@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-sourcelocation-accessconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AccessType](#cfn-mediatailor-sourcelocation-accessconfiguration-accesstype)" : {{String}},
   "[SecretsManagerAccessTokenConfiguration](#cfn-mediatailor-sourcelocation-accessconfiguration-secretsmanageraccesstokenconfiguration)" : {{SecretsManagerAccessTokenConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-sourcelocation-accessconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AccessType](#cfn-mediatailor-sourcelocation-accessconfiguration-accesstype): {{String}}
   [SecretsManagerAccessTokenConfiguration](#cfn-mediatailor-sourcelocation-accessconfiguration-secretsmanageraccesstokenconfiguration): {{
     SecretsManagerAccessTokenConfiguration}}

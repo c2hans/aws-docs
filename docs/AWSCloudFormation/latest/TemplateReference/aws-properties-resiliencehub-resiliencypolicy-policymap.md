@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-resiliencehub-resiliencypolicy-policymap-syntax.json"></a>
 
-```
+```json
 {
   "[AZ](#cfn-resiliencehub-resiliencypolicy-policymap-az)" : {{FailurePolicy}},
   "[Hardware](#cfn-resiliencehub-resiliencypolicy-policymap-hardware)" : {{FailurePolicy}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-resiliencehub-resiliencypolicy-policymap-syntax.yaml"></a>
 
-```
+```yaml
   [AZ](#cfn-resiliencehub-resiliencypolicy-policymap-az): {{
     FailurePolicy}}
   [Hardware](#cfn-resiliencehub-resiliencypolicy-policymap-hardware): {{

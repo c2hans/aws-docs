@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-kinesisvideo-signalingchannel-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::KinesisVideo::SignalingChannel",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-kinesisvideo-signalingchannel-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::KinesisVideo::SignalingChannel
 Properties:
   [MessageTtlSeconds](#cfn-kinesisvideo-signalingchannel-messagettlseconds): {{Integer}}

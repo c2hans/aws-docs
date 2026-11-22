@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-eventsourcemapping-selfmanagedeventsource-syntax.json"></a>
 
-```
+```json
 {
   "[Endpoints](#cfn-lambda-eventsourcemapping-selfmanagedeventsource-endpoints)" : {{Endpoints}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-eventsourcemapping-selfmanagedeventsource-syntax.yaml"></a>
 
-```
+```yaml
   [Endpoints](#cfn-lambda-eventsourcemapping-selfmanagedeventsource-endpoints): {{
     Endpoints}}
 ```

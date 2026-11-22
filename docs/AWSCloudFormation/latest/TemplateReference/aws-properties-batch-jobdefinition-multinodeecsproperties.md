@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-multinodeecsproperties-syntax.json"></a>
 
-```
+```json
 {
   "[TaskProperties](#cfn-batch-jobdefinition-multinodeecsproperties-taskproperties)" : {{[ MultiNodeEcsTaskProperties, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-multinodeecsproperties-syntax.yaml"></a>
 
-```
+```yaml
   [TaskProperties](#cfn-batch-jobdefinition-multinodeecsproperties-taskproperties): {{
     - MultiNodeEcsTaskProperties}}
 ```

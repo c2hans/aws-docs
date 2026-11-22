@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-tablepinnedfieldoptions-syntax.json"></a>
 
-```
+```json
 {
   "[PinnedLeftFields](#cfn-quicksight-dashboard-tablepinnedfieldoptions-pinnedleftfields)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-tablepinnedfieldoptions-syntax.yaml"></a>
 
-```
+```yaml
   [PinnedLeftFields](#cfn-quicksight-dashboard-tablepinnedfieldoptions-pinnedleftfields): {{
     - String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-observabilityadmin-organizationcentralizationrule-logsbackupconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[KmsKeyArn](#cfn-observabilityadmin-organizationcentralizationrule-logsbackupconfiguration-kmskeyarn)" : {{String}},
   "[Region](#cfn-observabilityadmin-organizationcentralizationrule-logsbackupconfiguration-region)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-observabilityadmin-organizationcentralizationrule-logsbackupconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [KmsKeyArn](#cfn-observabilityadmin-organizationcentralizationrule-logsbackupconfiguration-kmskeyarn): {{String}}
   [Region](#cfn-observabilityadmin-organizationcentralizationrule-logsbackupconfiguration-region): {{String}}
 ```

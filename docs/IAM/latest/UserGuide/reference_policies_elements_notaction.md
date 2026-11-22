@@ -12,7 +12,7 @@ You can use the `NotAction` element in a statement with `"Effect": "Allow"` to p
 
 The following example allows users to access all of the Amazon S3 actions that can be performed on any S3 resource *except* for deleting a bucket. This policy also does not allow actions in other services, because other service actions are not applicable to the S3 resources.
 
-```
+```json
 "Effect": "Allow",
 "NotAction": "s3:DeleteBucket",
 "Resource": "arn:aws:s3:::*",
@@ -22,7 +22,7 @@ Sometimes, you might want to allow access to a large number of actions. By using
 
 The following example allows users to access every action in every AWS service except for IAM.
 
-```
+```json
 "Effect": "Allow",
 "NotAction": "iam:*",
 "Resource": "*"
@@ -41,7 +41,7 @@ The following conditional example denies access to non-IAM actions if the user i
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-vpclattice-listener-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::VpcLattice::Listener",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-vpclattice-listener-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::VpcLattice::Listener
 Properties:
   [DefaultAction](#cfn-vpclattice-listener-defaultaction): {{

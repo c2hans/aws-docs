@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-deadline-fleet-customermanagedfleetconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AutoScalingConfiguration](#cfn-deadline-fleet-customermanagedfleetconfiguration-autoscalingconfiguration)" : {{CustomerManagedAutoScalingConfiguration}},
   "[Mode](#cfn-deadline-fleet-customermanagedfleetconfiguration-mode)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-deadline-fleet-customermanagedfleetconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AutoScalingConfiguration](#cfn-deadline-fleet-customermanagedfleetconfiguration-autoscalingconfiguration): {{
     CustomerManagedAutoScalingConfiguration}}
   [Mode](#cfn-deadline-fleet-customermanagedfleetconfiguration-mode): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-enforcedguardrailconfiguration-selectivecontentguarding-syntax.json"></a>
 
-```
+```json
 {
   "[Messages](#cfn-bedrock-enforcedguardrailconfiguration-selectivecontentguarding-messages)" : {{String}},
   "[System](#cfn-bedrock-enforcedguardrailconfiguration-selectivecontentguarding-system)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-enforcedguardrailconfiguration-selectivecontentguarding-syntax.yaml"></a>
 
-```
+```yaml
   [Messages](#cfn-bedrock-enforcedguardrailconfiguration-selectivecontentguarding-messages): {{String}}
   [System](#cfn-bedrock-enforcedguardrailconfiguration-selectivecontentguarding-system): {{String}}
 ```

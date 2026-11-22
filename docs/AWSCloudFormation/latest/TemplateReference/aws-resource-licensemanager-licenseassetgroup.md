@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-licensemanager-licenseassetgroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::LicenseManager::LicenseAssetGroup",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-licensemanager-licenseassetgroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::LicenseManager::LicenseAssetGroup
 Properties:
   [AssociatedLicenseAssetRulesetARNs](#cfn-licensemanager-licenseassetgroup-associatedlicenseassetrulesetarns): {{

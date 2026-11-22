@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-lookbackwindow-syntax.json"></a>
 
-```
+```json
 {
   "[ColumnName](#cfn-quicksight-dataset-lookbackwindow-columnname)" : {{String}},
   "[Size](#cfn-quicksight-dataset-lookbackwindow-size)" : {{Number}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-lookbackwindow-syntax.yaml"></a>
 
-```
+```yaml
   [ColumnName](#cfn-quicksight-dataset-lookbackwindow-columnname): {{String}}
   [Size](#cfn-quicksight-dataset-lookbackwindow-size): {{Number}}
   [SizeUnit](#cfn-quicksight-dataset-lookbackwindow-sizeunit): {{String}}

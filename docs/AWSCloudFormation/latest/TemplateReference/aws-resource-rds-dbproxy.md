@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-rds-dbproxy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RDS::DBProxy",
   "Properties" : {
@@ -49,7 +49,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-rds-dbproxy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RDS::DBProxy
 Properties:
   [Auth](#cfn-rds-dbproxy-auth): {{
@@ -211,7 +211,7 @@ The following example creates a DB proxy and registers a DB instance.
 #### JSON
 <a name="aws-resource-rds-dbproxy--examples--Creating_a_DB_proxy_and_registering_a_DB_instance--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Parameters": {
@@ -295,7 +295,7 @@ The following example creates a DB proxy and registers a DB instance.
 #### YAML
 <a name="aws-resource-rds-dbproxy--examples--Creating_a_DB_proxy_and_registering_a_DB_instance--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:
   ProxyName:

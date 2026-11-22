@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-parquetserde-syntax.json"></a>
 
-```
+```json
 {
   "[BlockSizeBytes](#cfn-kinesisfirehose-deliverystream-parquetserde-blocksizebytes)" : {{Integer}},
   "[Compression](#cfn-kinesisfirehose-deliverystream-parquetserde-compression)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-parquetserde-syntax.yaml"></a>
 
-```
+```yaml
   [BlockSizeBytes](#cfn-kinesisfirehose-deliverystream-parquetserde-blocksizebytes): {{Integer}}
   [Compression](#cfn-kinesisfirehose-deliverystream-parquetserde-compression): {{String}}
   [EnableDictionaryCompression](#cfn-kinesisfirehose-deliverystream-parquetserde-enabledictionarycompression): {{Boolean}}

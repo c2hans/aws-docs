@@ -28,7 +28,7 @@ Some resources require explicit tag propagation settings. For example, the `AWS:
 ### JSON
 <a name="aws-properties-resource-tags-syntax.json"></a>
 
-```
+```json
 {
   "Key" : {{String}},
   "Value" : {{String}}
@@ -38,7 +38,7 @@ Some resources require explicit tag propagation settings. For example, the `AWS:
 ### YAML
 <a name="aws-properties-resource-tags-syntax.yaml"></a>
 
-```
+```yaml
 Key: {{String}}
 Value: {{String}}
 ```
@@ -64,7 +64,7 @@ This example shows a `Tags` property. You specify this property within the `Prop
 ### JSON
 <a name="aws-properties-resource-tags-example.json"></a>
 
-```
+```json
  1. "Tags" : [
  2.    {
  3.       "Key" : "Environment",
@@ -80,7 +80,7 @@ This example shows a `Tags` property. You specify this property within the `Prop
 ### YAML
 <a name="aws-properties-resource-tags-example.yaml"></a>
 
-```
+```yaml
 1. Tags:
 2.   - Key: Environment
 3.     Value: !Ref Environment

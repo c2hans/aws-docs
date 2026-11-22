@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-knowledgebase-chunkingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ChunkingStrategy](#cfn-wisdom-knowledgebase-chunkingconfiguration-chunkingstrategy)" : {{String}},
   "[FixedSizeChunkingConfiguration](#cfn-wisdom-knowledgebase-chunkingconfiguration-fixedsizechunkingconfiguration)" : {{FixedSizeChunkingConfiguration}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-knowledgebase-chunkingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ChunkingStrategy](#cfn-wisdom-knowledgebase-chunkingconfiguration-chunkingstrategy): {{String}}
   [FixedSizeChunkingConfiguration](#cfn-wisdom-knowledgebase-chunkingconfiguration-fixedsizechunkingconfiguration): {{
     FixedSizeChunkingConfiguration}}

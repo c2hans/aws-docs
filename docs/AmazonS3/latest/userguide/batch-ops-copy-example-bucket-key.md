@@ -78,7 +78,7 @@ Although the following steps show how to filter by using [Amazon S3 Select](http
 
    The following JSON is an example `manifest.json` file for a CSV-formatted inventory on a bucket with versioning enabled. Depending on how you configured your inventory report, your manifest might look different.
 
-   ```
+   ```csv
      {
        "sourceBucket": "batchoperationsdemo",
        "destinationBucket": "arn:aws:s3:::{{amzn-s3-demo-destination-bucket}}",
@@ -116,7 +116,7 @@ Although the following steps show how to filter by using [Amazon S3 Select](http
 
    The following are example results.
 
-   ```
+   ```json
          batchoperationsdemo,0100059%7Ethumb.jpg,lsrtIxksLu0R0ZkYPL.LhgD5caTYn6vu
          batchoperationsdemo,0100074%7Ethumb.jpg,sd2M60g6Fdazoi6D5kNARIE7KzUibmHR
          batchoperationsdemo,0100075%7Ethumb.jpg,TLYESLnl1mXD5c4BwiOIinqFrktddkoL
@@ -167,7 +167,7 @@ As part of copying the objects, specify that Amazon S3 should encrypt the object
 
    1. Replace `{{amzn-s3-demo-completion-report-bucket}}` with the name of the bucket where you want to save your completion reports.
 
-   ```
+   ```json
      {
        "Version":"2012-10-17",
        "Statement": [
@@ -244,7 +244,7 @@ As part of copying the objects, specify that Amazon S3 should encrypt the object
 
    Replace `{{account-id}}` with your AWS account ID and `{{IAM-role-name}}` with the name that you plan to apply to the IAM role that you will create in the Batch Operations job creation step later. For more information, see [Granting permissions for Batch Operations](batch-ops-iam-role-policies.md).
 
-   ```
+   ```json
                {
                "Sid": "AddIamPermissions",
                "Effect": "Allow",

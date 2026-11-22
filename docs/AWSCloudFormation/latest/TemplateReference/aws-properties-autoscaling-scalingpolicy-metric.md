@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-autoscaling-scalingpolicy-metric-syntax.json"></a>
 
-```
+```json
 {
   "[Dimensions](#cfn-autoscaling-scalingpolicy-metric-dimensions)" : {{[ MetricDimension, ... ]}},
   "[MetricName](#cfn-autoscaling-scalingpolicy-metric-metricname)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-autoscaling-scalingpolicy-metric-syntax.yaml"></a>
 
-```
+```yaml
   [Dimensions](#cfn-autoscaling-scalingpolicy-metric-dimensions): {{
     - MetricDimension}}
   [MetricName](#cfn-autoscaling-scalingpolicy-metric-metricname): {{String}}

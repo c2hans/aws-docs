@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/sailp
 
 The following pipeline configuration collects identity governance audit events from SailPoint ISC using OAuth 2.0 client credentials authentication. Replace the placeholder values shown between `<<` and `>>` with values for your environment.
 
-```
+```yaml
 extension:
   aws:
     secrets:

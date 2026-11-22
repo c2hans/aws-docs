@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-groundstation-config-configdata-syntax.json"></a>
 
-```
+```json
 {
   "[AntennaDownlinkConfig](#cfn-groundstation-config-configdata-antennadownlinkconfig)" : {{AntennaDownlinkConfig}},
   "[AntennaDownlinkDemodDecodeConfig](#cfn-groundstation-config-configdata-antennadownlinkdemoddecodeconfig)" : {{AntennaDownlinkDemodDecodeConfig}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-groundstation-config-configdata-syntax.yaml"></a>
 
-```
+```yaml
   [AntennaDownlinkConfig](#cfn-groundstation-config-configdata-antennadownlinkconfig): {{
     AntennaDownlinkConfig}}
   [AntennaDownlinkDemodDecodeConfig](#cfn-groundstation-config-configdata-antennadownlinkdemoddecodeconfig): {{
@@ -113,7 +113,7 @@ A `ConfigData` can only contain a single config subtype. See the config subtype'
 #### JSON
 <a name="aws-properties-groundstation-config-configdata--examples--Create_a_ConfigData--json"></a>
 
-```
+```json
 {
   "TrackingConfig": {
     "Autotrack": "PREFERRED"
@@ -124,7 +124,7 @@ A `ConfigData` can only contain a single config subtype. See the config subtype'
 #### YAML
 <a name="aws-properties-groundstation-config-configdata--examples--Create_a_ConfigData--yaml"></a>
 
-```
+```yaml
 TrackingConfig:
   Autotrack: "PREFERRED"
 ```

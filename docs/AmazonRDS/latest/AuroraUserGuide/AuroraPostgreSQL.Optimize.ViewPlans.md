@@ -15,7 +15,7 @@ As discussed in [Normalization and the SQL hash](AuroraPostgreSQL.Optimize.Start
 
 To list the managed plans, use a SELECT statement on the `apg_plan_mgmt.dba_plans` view. The following example displays some columns in the `dba_plans` view such as the `status`, which identifies the approved and unapproved plans.
 
-```
+```sql
 SELECT sql_hash, plan_hash, status, enabled, stmt_name
 FROM apg_plan_mgmt.dba_plans;
 

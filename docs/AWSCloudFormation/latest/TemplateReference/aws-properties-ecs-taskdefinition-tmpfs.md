@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskdefinition-tmpfs-syntax.json"></a>
 
-```
+```json
 {
   "[ContainerPath](#cfn-ecs-taskdefinition-tmpfs-containerpath)" : {{String}},
   "[MountOptions](#cfn-ecs-taskdefinition-tmpfs-mountoptions)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskdefinition-tmpfs-syntax.yaml"></a>
 
-```
+```yaml
   [ContainerPath](#cfn-ecs-taskdefinition-tmpfs-containerpath): {{String}}
   [MountOptions](#cfn-ecs-taskdefinition-tmpfs-mountoptions): {{
     - String}}

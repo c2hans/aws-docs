@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediastore-container-corsrule-syntax.json"></a>
 
-```
+```json
 {
   "[AllowedHeaders](#cfn-mediastore-container-corsrule-allowedheaders)" : {{[ String, ... ]}},
   "[AllowedMethods](#cfn-mediastore-container-corsrule-allowedmethods)" : {{[ String, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediastore-container-corsrule-syntax.yaml"></a>
 
-```
+```yaml
   [AllowedHeaders](#cfn-mediastore-container-corsrule-allowedheaders): {{
     - String}}
   [AllowedMethods](#cfn-mediastore-container-corsrule-allowedmethods): {{

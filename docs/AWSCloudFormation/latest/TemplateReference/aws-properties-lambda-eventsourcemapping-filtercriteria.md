@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-eventsourcemapping-filtercriteria-syntax.json"></a>
 
-```
+```json
 {
   "[Filters](#cfn-lambda-eventsourcemapping-filtercriteria-filters)" : {{[ Filter, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-eventsourcemapping-filtercriteria-syntax.yaml"></a>
 
-```
+```yaml
   [Filters](#cfn-lambda-eventsourcemapping-filtercriteria-filters): {{
     - Filter}}
 ```

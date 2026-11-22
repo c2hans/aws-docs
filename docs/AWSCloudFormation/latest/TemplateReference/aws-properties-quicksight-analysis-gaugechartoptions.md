@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-gaugechartoptions-syntax.json"></a>
 
-```
+```json
 {
   "[Arc](#cfn-quicksight-analysis-gaugechartoptions-arc)" : {{ArcConfiguration}},
   "[ArcAxis](#cfn-quicksight-analysis-gaugechartoptions-arcaxis)" : {{ArcAxisConfiguration}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-gaugechartoptions-syntax.yaml"></a>
 
-```
+```yaml
   [Arc](#cfn-quicksight-analysis-gaugechartoptions-arc): {{
     ArcConfiguration}}
   [ArcAxis](#cfn-quicksight-analysis-gaugechartoptions-arcaxis): {{

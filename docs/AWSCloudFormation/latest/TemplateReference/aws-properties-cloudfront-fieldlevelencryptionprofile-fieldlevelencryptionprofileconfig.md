@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-fieldlevelencryptionprofile-fieldlevelencryptionprofileconfig-syntax.json"></a>
 
-```
+```json
 {
   "[CallerReference](#cfn-cloudfront-fieldlevelencryptionprofile-fieldlevelencryptionprofileconfig-callerreference)" : {{String}},
   "[Comment](#cfn-cloudfront-fieldlevelencryptionprofile-fieldlevelencryptionprofileconfig-comment)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-fieldlevelencryptionprofile-fieldlevelencryptionprofileconfig-syntax.yaml"></a>
 
-```
+```yaml
   [CallerReference](#cfn-cloudfront-fieldlevelencryptionprofile-fieldlevelencryptionprofileconfig-callerreference): {{String}}
   [Comment](#cfn-cloudfront-fieldlevelencryptionprofile-fieldlevelencryptionprofileconfig-comment): {{String}}
   [EncryptionEntities](#cfn-cloudfront-fieldlevelencryptionprofile-fieldlevelencryptionprofileconfig-encryptionentities): {{

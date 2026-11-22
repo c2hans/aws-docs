@@ -122,7 +122,7 @@ If you receive the error `Template error: Unable to get mapping for AWSRegionArc
 
    With:
 
-   ```
+   ```json
    "ImageId": { "Ref": "LatestAmiId" },
    ```
 

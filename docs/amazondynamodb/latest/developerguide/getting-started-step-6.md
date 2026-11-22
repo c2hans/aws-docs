@@ -41,7 +41,7 @@ The following code examples show how to delete a DynamoDB table using an AWS SDK
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/DynamoDB#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Deletes a DynamoDB table.
     /// </summary>
@@ -87,7 +87,7 @@ The following code examples show how to delete a DynamoDB table using an AWS SDK
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb#code-examples).
 
-```
+```bash
 ###############################################################################
 # function dynamodb_delete_table
 #
@@ -155,7 +155,7 @@ function dynamodb_delete_table() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function iecho
 #
@@ -221,7 +221,7 @@ function aws_cli_error_log() {
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 
-```
+```cpp
 //! Delete an Amazon DynamoDB table.
 /*!
   \sa deleteTable()
@@ -290,7 +290,7 @@ For more information, see [Deleting a Table](https://docs.aws.amazon.com/amazond
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -329,7 +329,7 @@ func (basics TableBasics) DeleteTable(ctx context.Context) error {
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
@@ -397,7 +397,7 @@ public class DeleteTable {
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
 
-```
+```javascript
 import { DeleteTableCommand, DynamoDBClient } from "@aws-sdk/client-dynamodb";
 
 const client = new DynamoDBClient({});
@@ -417,7 +417,7 @@ export const main = async () => {
 **SDK for JavaScript (v2)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/dynamodb#code-examples).
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -450,7 +450,7 @@ ddb.deleteTable(params, function (err, data) {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/dynamodb#code-examples).
 
-```
+```kotlin
 suspend fun deleteDynamoDBTable(tableNameVal: String) {
     val request =
         DeleteTableRequest {
@@ -471,7 +471,7 @@ suspend fun deleteDynamoDBTable(tableNameVal: String) {
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb#code-examples).
 
-```
+```php
     public function deleteTable(string $TableName)
     {
         $this->customWaiter(function () use ($TableName) {
@@ -489,12 +489,12 @@ suspend fun deleteDynamoDBTable(tableNameVal: String) {
 **Tools for PowerShell V4**
 **Example 1: Deletes the specified table. You are prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-DDBTable -TableName "myTable"
 ```
 **Example 2: Deletes the specified table. You are not prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-DDBTable -TableName "myTable" -Force
 ```
 +  For API details, see [DeleteTable](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -502,12 +502,12 @@ Remove-DDBTable -TableName "myTable" -Force
 **Tools for PowerShell V5**
 **Example 1: Deletes the specified table. You are prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-DDBTable -TableName "myTable"
 ```
 **Example 2: Deletes the specified table. You are not prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-DDBTable -TableName "myTable" -Force
 ```
 +  For API details, see [DeleteTable](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -518,7 +518,7 @@ Remove-DDBTable -TableName "myTable" -Force
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 
-```
+```python
 class Movies:
     """Encapsulates an Amazon DynamoDB table of movie data.
 
@@ -574,7 +574,7 @@ class Movies:
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 
-```
+```ruby
 # Encapsulates an Amazon DynamoDB table of movie data.
 class Scaffold
   attr_reader :dynamo_resource, :table_name, :table
@@ -606,7 +606,7 @@ class Scaffold
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/dynamodb#code-examples).
 
-```
+```rust
 pub async fn delete_table(client: &Client, table: &str) -> Result<DeleteTableOutput, Error> {
     let resp = client.delete_table().table_name(table).send().await;
 
@@ -627,7 +627,7 @@ pub async fn delete_table(client: &Client, table: &str) -> Result<DeleteTableOut
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/dyn#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_dyn->deletetable( iv_tablename = iv_table_name ).
         " Wait till the table is actually deleted.
@@ -649,7 +649,7 @@ pub async fn delete_table(client: &Client, table: &str) -> Result<DeleteTableOut
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/dynamodb#code-examples).
 
-```
+```swift
 import AWSDynamoDB
 
     ///

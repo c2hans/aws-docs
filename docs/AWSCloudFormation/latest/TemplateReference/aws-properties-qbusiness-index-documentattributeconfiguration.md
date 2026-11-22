@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-qbusiness-index-documentattributeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-qbusiness-index-documentattributeconfiguration-name)" : {{String}},
   "[Search](#cfn-qbusiness-index-documentattributeconfiguration-search)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-qbusiness-index-documentattributeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-qbusiness-index-documentattributeconfiguration-name): {{String}}
   [Search](#cfn-qbusiness-index-documentattributeconfiguration-search): {{String}}
   [Type](#cfn-qbusiness-index-documentattributeconfiguration-type): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sagemaker-notebookinstancelifecycleconfig-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SageMaker::NotebookInstanceLifecycleConfig",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sagemaker-notebookinstancelifecycleconfig-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SageMaker::NotebookInstanceLifecycleConfig
 Properties:
   [NotebookInstanceLifecycleConfigName](#cfn-sagemaker-notebookinstancelifecycleconfig-notebookinstancelifecycleconfigname): {{String}}
@@ -113,7 +113,7 @@ The following example creates a notebook instance with an associated lifecycle c
 #### JSON
 <a name="aws-resource-sagemaker-notebookinstancelifecycleconfig--examples--SageMaker_NotebookInstanceLifecycleConfig_Example--json"></a>
 
-```
+```json
 {
   "Description": "Basic NotebookInstance test",
   "Resources": {
@@ -189,7 +189,7 @@ The following example creates a notebook instance with an associated lifecycle c
 #### YAML
 <a name="aws-resource-sagemaker-notebookinstancelifecycleconfig--examples--SageMaker_NotebookInstanceLifecycleConfig_Example--yaml"></a>
 
-```
+```yaml
 Description: "Basic NotebookInstance test"
 Resources:
   BasicNotebookInstance:

@@ -92,7 +92,7 @@ In the create service or update service flow, under Deployment configuration, tu
 AWS CLI
 Set the `earlySuccessCriteria` values in the `--deployment-configuration` parameter when you create or update a service.
 
-```
+```bash
 aws ecs update-service \
     --cluster MyCluster \
     --service MyService \

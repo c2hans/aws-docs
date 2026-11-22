@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3files-accesspoint-creationpermissions-syntax.json"></a>
 
-```
+```json
 {
   "[OwnerGid](#cfn-s3files-accesspoint-creationpermissions-ownergid)" : {{String}},
   "[OwnerUid](#cfn-s3files-accesspoint-creationpermissions-owneruid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3files-accesspoint-creationpermissions-syntax.yaml"></a>
 
-```
+```yaml
   [OwnerGid](#cfn-s3files-accesspoint-creationpermissions-ownergid): {{String}}
   [OwnerUid](#cfn-s3files-accesspoint-creationpermissions-owneruid): {{String}}
   [Permissions](#cfn-s3files-accesspoint-creationpermissions-permissions): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrcontainers-jobtemplate-parametricmonitoringconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CloudWatchMonitoringConfiguration](#cfn-emrcontainers-jobtemplate-parametricmonitoringconfiguration-cloudwatchmonitoringconfiguration)" : {{ParametricCloudWatchMonitoringConfiguration}},
   "[PersistentAppUI](#cfn-emrcontainers-jobtemplate-parametricmonitoringconfiguration-persistentappui)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrcontainers-jobtemplate-parametricmonitoringconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CloudWatchMonitoringConfiguration](#cfn-emrcontainers-jobtemplate-parametricmonitoringconfiguration-cloudwatchmonitoringconfiguration): {{
     ParametricCloudWatchMonitoringConfiguration}}
   [PersistentAppUI](#cfn-emrcontainers-jobtemplate-parametricmonitoringconfiguration-persistentappui): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-index-relevance-syntax.json"></a>
 
-```
+```json
 {
   "[Duration](#cfn-kendra-index-relevance-duration)" : {{String}},
   "[Freshness](#cfn-kendra-index-relevance-freshness)" : {{Boolean}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-index-relevance-syntax.yaml"></a>
 
-```
+```yaml
   [Duration](#cfn-kendra-index-relevance-duration): {{String}}
   [Freshness](#cfn-kendra-index-relevance-freshness): {{Boolean}}
   [Importance](#cfn-kendra-index-relevance-importance): {{Integer}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pinpoint-campaign-schedule-syntax.json"></a>
 
-```
+```json
 {
   "[EndTime](#cfn-pinpoint-campaign-schedule-endtime)" : {{String}},
   "[EventFilter](#cfn-pinpoint-campaign-schedule-eventfilter)" : {{CampaignEventFilter}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pinpoint-campaign-schedule-syntax.yaml"></a>
 
-```
+```yaml
   [EndTime](#cfn-pinpoint-campaign-schedule-endtime): {{String}}
   [EventFilter](#cfn-pinpoint-campaign-schedule-eventfilter): {{
     CampaignEventFilter}}

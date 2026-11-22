@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-route53-recordsetgroup-geoproximitylocation-syntax.json"></a>
 
-```
+```json
 {
   "[AWSRegion](#cfn-route53-recordsetgroup-geoproximitylocation-awsregion)" : {{String}},
   "[Bias](#cfn-route53-recordsetgroup-geoproximitylocation-bias)" : {{Integer}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-route53-recordsetgroup-geoproximitylocation-syntax.yaml"></a>
 
-```
+```yaml
   [AWSRegion](#cfn-route53-recordsetgroup-geoproximitylocation-awsregion): {{String}}
   [Bias](#cfn-route53-recordsetgroup-geoproximitylocation-bias): {{Integer}}
   [Coordinates](#cfn-route53-recordsetgroup-geoproximitylocation-coordinates): {{

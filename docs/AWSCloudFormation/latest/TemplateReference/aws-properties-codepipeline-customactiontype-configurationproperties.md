@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codepipeline-customactiontype-configurationproperties-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-codepipeline-customactiontype-configurationproperties-description)" : {{String}},
   "[Key](#cfn-codepipeline-customactiontype-configurationproperties-key)" : {{Boolean}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codepipeline-customactiontype-configurationproperties-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-codepipeline-customactiontype-configurationproperties-description): {{String}}
   [Key](#cfn-codepipeline-customactiontype-configurationproperties-key): {{Boolean}}
   [Name](#cfn-codepipeline-customactiontype-configurationproperties-name): {{String}}

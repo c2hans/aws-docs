@@ -21,7 +21,7 @@ For a read replica, if the lag time is too long, query the following views:
 
   To view the transport lag (time for redo to reach the replica) and apply lag (time for redo to be applied), run the following query on the read replica:
 
-  ```
+  ```sql
   SELECT name, value, time_computed, datum_time FROM V$DATAGUARD_STATS WHERE name IN ('transport lag', 'apply lag');
   ```
 + `V$DATAGUARD_STATUS` – Shows the log output from Oracle's internal replication processes.

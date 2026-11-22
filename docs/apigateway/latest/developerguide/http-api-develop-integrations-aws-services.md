@@ -33,7 +33,7 @@ To create a first-class integration, choose a supported AWS service action, such
 
 The following [create-integration](https://docs.aws.amazon.com/cli/latest/reference/apigatewayv2/create-integration.html) command creates an integration that sends an Amazon SQS message:
 
-```
+```shell
 aws apigatewayv2 create-integration \
     --api-id abcdef123 \
     --integration-subtype SQS-SendMessage \

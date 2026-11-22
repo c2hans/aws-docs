@@ -44,7 +44,7 @@ The request accepts the following data in JSON format.
  ** [status](#API_UpdateRegistryRecordStatus_RequestSyntax) **   <a name="agentregistrycontrol-UpdateRegistryRecordStatus-request-status"></a>
 The target status for the registry record
 Type: String
-Valid Values: `DRAFT | PENDING_APPROVAL | APPROVED | REJECTED | DEPRECATED | CREATING | UPDATING | CREATE_FAILED | UPDATE_FAILED`
+Valid Values: `DRAFT | PENDING_APPROVAL | APPROVED | REJECTED | DEPRECATED | CREATING | UPDATING | CREATE_FAILED | UPDATE_FAILED | CREATE_PENDING_AUTH | UPDATE_PENDING_AUTH`
 Required: Yes
 
  ** [statusReason](#API_UpdateRegistryRecordStatus_RequestSyntax) **   <a name="agentregistrycontrol-UpdateRegistryRecordStatus-request-statusReason"></a>
@@ -98,7 +98,7 @@ Pattern: `arn:aws(-[^:]+)?:agent-registry:[a-z0-9-]+:[0-9]{12}:registry/[a-zA-Z0
  ** [status](#API_UpdateRegistryRecordStatus_ResponseSyntax) **   <a name="agentregistrycontrol-UpdateRegistryRecordStatus-response-status"></a>
 The resulting status of the registry record
 Type: String
-Valid Values: `DRAFT | PENDING_APPROVAL | APPROVED | REJECTED | DEPRECATED | CREATING | UPDATING | CREATE_FAILED | UPDATE_FAILED`
+Valid Values: `DRAFT | PENDING_APPROVAL | APPROVED | REJECTED | DEPRECATED | CREATING | UPDATING | CREATE_FAILED | UPDATE_FAILED | CREATE_PENDING_AUTH | UPDATE_PENDING_AUTH`
 
  ** [statusReason](#API_UpdateRegistryRecordStatus_ResponseSyntax) **   <a name="agentregistrycontrol-UpdateRegistryRecordStatus-response-statusReason"></a>
 The reason for the status change

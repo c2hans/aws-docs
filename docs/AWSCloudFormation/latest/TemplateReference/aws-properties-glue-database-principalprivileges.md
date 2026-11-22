@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-database-principalprivileges-syntax.json"></a>
 
-```
+```json
 {
   "[Permissions](#cfn-glue-database-principalprivileges-permissions)" : {{[ String, ... ]}},
   "[Principal](#cfn-glue-database-principalprivileges-principal)" : {{DataLakePrincipal}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-database-principalprivileges-syntax.yaml"></a>
 
-```
+```yaml
   [Permissions](#cfn-glue-database-principalprivileges-permissions): {{
     - String}}
   [Principal](#cfn-glue-database-principalprivileges-principal): {{

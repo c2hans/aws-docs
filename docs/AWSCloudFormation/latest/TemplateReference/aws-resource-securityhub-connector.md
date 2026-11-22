@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-securityhub-connector-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SecurityHub::Connector",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-securityhub-connector-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SecurityHub::Connector
 Properties:
   [Description](#cfn-securityhub-connector-description): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-accessanalyzer-analyzer-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-accessanalyzer-analyzer-tag-key)" : {{String}},
   "[Value](#cfn-accessanalyzer-analyzer-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-accessanalyzer-analyzer-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-accessanalyzer-analyzer-tag-key): {{String}}
   [Value](#cfn-accessanalyzer-analyzer-tag-value): {{String}}
 ```

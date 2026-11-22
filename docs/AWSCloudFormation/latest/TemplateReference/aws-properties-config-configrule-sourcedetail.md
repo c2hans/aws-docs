@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-config-configrule-sourcedetail-syntax.json"></a>
 
-```
+```json
 {
   "[EventSource](#cfn-config-configrule-sourcedetail-eventsource)" : {{String}},
   "[MaximumExecutionFrequency](#cfn-config-configrule-sourcedetail-maximumexecutionfrequency)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-config-configrule-sourcedetail-syntax.yaml"></a>
 
-```
+```yaml
   [EventSource](#cfn-config-configrule-sourcedetail-eventsource): {{String}}
   [MaximumExecutionFrequency](#cfn-config-configrule-sourcedetail-maximumexecutionfrequency): {{String}}
   [MessageType](#cfn-config-configrule-sourcedetail-messagetype): {{String}}

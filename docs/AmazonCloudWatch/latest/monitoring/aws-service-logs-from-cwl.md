@@ -12,7 +12,7 @@ Pipelines with processors mutate the log events in the original CloudWatch log g
 **Configuration**
 Configure the CloudWatch Logs source with the following parameters:
 
-```
+```yaml
 source:
   cloudwatch_logs:
     aws:

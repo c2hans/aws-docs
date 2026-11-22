@@ -27,7 +27,7 @@ The following example allows anyone to write data to your app monitor, including
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -50,7 +50,7 @@ You can modify the policy to block specified source IP addresses by using the `a
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -87,7 +87,7 @@ For mobile app monitors, you must configure your instrumentation according to th
 
 In the following example, the resource policy requires that requests must contain either `alias1` or `alias2` for the event to be accepted.
 
-```
+```JSON
     {
     "Version":"2012-10-17",
     "Statement": [

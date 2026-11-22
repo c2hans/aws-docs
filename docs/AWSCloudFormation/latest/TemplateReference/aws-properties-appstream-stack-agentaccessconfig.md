@@ -16,8 +16,10 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appstream-stack-agentaccessconfig-syntax.json"></a>
 
-```
+```json
 {
+  "[KmsKeyArn](#cfn-appstream-stack-agentaccessconfig-kmskeyarn)" : {{String}},
+  "[ReplaySessionEnabled](#cfn-appstream-stack-agentaccessconfig-replaysessionenabled)" : {{Boolean}},
   "[S3BucketArn](#cfn-appstream-stack-agentaccessconfig-s3bucketarn)" : {{String}},
   "[ScreenImageFormat](#cfn-appstream-stack-agentaccessconfig-screenimageformat)" : {{String}},
   "[ScreenResolution](#cfn-appstream-stack-agentaccessconfig-screenresolution)" : {{String}},
@@ -30,7 +32,9 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appstream-stack-agentaccessconfig-syntax.yaml"></a>
 
-```
+```yaml
+  [KmsKeyArn](#cfn-appstream-stack-agentaccessconfig-kmskeyarn): {{String}}
+  [ReplaySessionEnabled](#cfn-appstream-stack-agentaccessconfig-replaysessionenabled): {{Boolean}}
   [S3BucketArn](#cfn-appstream-stack-agentaccessconfig-s3bucketarn): {{String}}
   [ScreenImageFormat](#cfn-appstream-stack-agentaccessconfig-screenimageformat): {{String}}
   [ScreenResolution](#cfn-appstream-stack-agentaccessconfig-screenresolution): {{String}}
@@ -42,6 +46,19 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ## Properties
 <a name="aws-properties-appstream-stack-agentaccessconfig-properties"></a>
+
+`KmsKeyArn`  <a name="cfn-appstream-stack-agentaccessconfig-kmskeyarn"></a>
+The Amazon Resource Name (ARN) of the customer managed symmetric encryption KMS key that encrypts Replay Session artifacts while WorkSpaces Applications processes them. The key must be in the same Region as the stack, and ReplaySessionEnabled must be true.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws(?:\-cn|\-iso\-b|\-iso|\-us\-gov)?:kms:[a-z0-9\-]+:\d{12}:key/[A-Za-z0-9\-]+$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ReplaySessionEnabled`  <a name="cfn-appstream-stack-agentaccessconfig-replaysessionenabled"></a>
+Indicates whether Replay Session is enabled for agent sessions. WorkSpaces Applications delivers a video combining session screenshots, a transcript, and a report for each session. Requires the COMPUTER\_VISION agent action.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `S3BucketArn`  <a name="cfn-appstream-stack-agentaccessconfig-s3bucketarn"></a>
 The Amazon Resource Name (ARN) of the Amazon S3 bucket where agent screenshots and Replay Session artifacts are stored. Required when ScreenshotsUploadEnabled or ReplaySessionEnabled is true.

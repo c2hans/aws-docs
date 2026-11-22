@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-distributionconfiguration-fastlaunchsnapshotconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[TargetResourceCount](#cfn-imagebuilder-distributionconfiguration-fastlaunchsnapshotconfiguration-targetresourcecount)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-distributionconfiguration-fastlaunchsnapshotconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [TargetResourceCount](#cfn-imagebuilder-distributionconfiguration-fastlaunchsnapshotconfiguration-targetresourcecount): {{Integer}}
 ```
 

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudformation-guardhook-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudFormation::GuardHook",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudformation-guardhook-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudFormation::GuardHook
 Properties:
   [Alias](#cfn-cloudformation-guardhook-alias): {{String}}
@@ -116,12 +116,12 @@ Specifies the S3 location of your Guard rules.
 Specifies the stack level filters for the Hook.
 Example stack level filter in JSON:
 
-```
+```json
 "StackFilters": {"FilteringCriteria": "ALL", "StackNames": {"Exclude": [ "stack-1", "stack-2"]}}
 ```
 Example stack level filter in YAML:
 
-```
+```yaml
 StackFilters:
   FilteringCriteria: ALL
   StackNames:
@@ -137,12 +137,12 @@ StackFilters:
 Specifies the target filters for the Hook.
 Example target filter in JSON:
 
-```
+```json
 "TargetFilters": {"Actions": [ "CREATE", "UPDATE", "DELETE" ]}
 ```
 Example target filter in YAML:
 
-```
+```yaml
 TargetFilters:
   Actions:
     - CREATE
@@ -194,7 +194,7 @@ The following example demonstrates how to create a Guard Hook in a template.
 #### JSON
 <a name="aws-resource-cloudformation-guardhook--examples--Creating_a_Hook_in_a_template--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Create a Guard Hook",
@@ -306,7 +306,7 @@ The following example demonstrates how to create a Guard Hook in a template.
 #### YAML
 <a name="aws-resource-cloudformation-guardhook--examples--Creating_a_Hook_in_a_template--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Create a Guard Hook
 Parameters:

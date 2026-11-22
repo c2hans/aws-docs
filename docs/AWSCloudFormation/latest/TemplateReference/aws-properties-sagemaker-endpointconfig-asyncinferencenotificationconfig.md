@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-endpointconfig-asyncinferencenotificationconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ErrorTopic](#cfn-sagemaker-endpointconfig-asyncinferencenotificationconfig-errortopic)" : {{String}},
   "[IncludeInferenceResponseIn](#cfn-sagemaker-endpointconfig-asyncinferencenotificationconfig-includeinferenceresponsein)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-endpointconfig-asyncinferencenotificationconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ErrorTopic](#cfn-sagemaker-endpointconfig-asyncinferencenotificationconfig-errortopic): {{String}}
   [IncludeInferenceResponseIn](#cfn-sagemaker-endpointconfig-asyncinferencenotificationconfig-includeinferenceresponsein): {{
     - String}}

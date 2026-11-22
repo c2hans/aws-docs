@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-rulegroup-paymentnetwork-syntax.json"></a>
 
-```
+```json
 {
   "[Chain](#cfn-wafv2-rulegroup-paymentnetwork-chain)" : {{String}},
   "[Prices](#cfn-wafv2-rulegroup-paymentnetwork-prices)" : {{[ Price, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-rulegroup-paymentnetwork-syntax.yaml"></a>
 
-```
+```yaml
   [Chain](#cfn-wafv2-rulegroup-paymentnetwork-chain): {{String}}
   [Prices](#cfn-wafv2-rulegroup-paymentnetwork-prices): {{
     - Price}}

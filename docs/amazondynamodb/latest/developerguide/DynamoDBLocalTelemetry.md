@@ -22,7 +22,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Dyn
 
  In macOS and Linux operating systems, you can turn off telemetry for a single session. To turn off telemetry for your current session, run the following command to set the environment variable `DDB_LOCAL_TELEMETRY` to `false`. Repeat the command for each new terminal or session.
 
-```
+```bash
 export DDB_LOCAL_TELEMETRY=0
 ```
 
@@ -35,13 +35,13 @@ export DDB_LOCAL_TELEMETRY=0
 
 1.  Run:
 
-   ```
+   ```bash
    echo "export DDB_LOCAL_TELEMETRY=0" >>~/.profile
    ```
 
 1.  Run:
 
-   ```
+   ```bash
    source ~/.profile
    ```
 
@@ -49,13 +49,13 @@ export DDB_LOCAL_TELEMETRY=0
 
 1.  Run:
 
-   ```
+   ```bash
    echo "export DDB_LOCAL_TELEMETRY=0" >>~/.profile
    ```
 
 1.  Run:
 
-   ```
+   ```bash
    source ~/.profile
    ```
 
@@ -63,13 +63,13 @@ export DDB_LOCAL_TELEMETRY=0
 
 1.  Run:
 
-   ```
+   ```cmd
    setx DDB_LOCAL_TELEMETRY 0
    ```
 
 1.  Run:
 
-   ```
+   ```cmd
    refreshenv
    ```
 

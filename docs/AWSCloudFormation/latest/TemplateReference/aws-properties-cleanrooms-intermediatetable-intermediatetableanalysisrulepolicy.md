@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-intermediatetable-intermediatetableanalysisrulepolicy-syntax.json"></a>
 
-```
+```json
 {
   "[V1](#cfn-cleanrooms-intermediatetable-intermediatetableanalysisrulepolicy-v1)" : {{IntermediateTableAnalysisRulePolicyV1}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-intermediatetable-intermediatetableanalysisrulepolicy-syntax.yaml"></a>
 
-```
+```yaml
   [V1](#cfn-cleanrooms-intermediatetable-intermediatetableanalysisrulepolicy-v1): {{
     IntermediateTableAnalysisRulePolicyV1}}
 ```

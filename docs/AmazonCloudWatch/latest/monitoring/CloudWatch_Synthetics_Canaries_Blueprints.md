@@ -90,7 +90,7 @@ The visual monitoring blueprint includes code to compare screenshots taken durin
 
 The visual monitoring blueprint includes the following line of code in the default blueprint canary script, which enables visual monitoring.
 
-```
+```nodejs
 syntheticsConfiguration.withVisualCompareWithBaseRun(true);
 ```
 

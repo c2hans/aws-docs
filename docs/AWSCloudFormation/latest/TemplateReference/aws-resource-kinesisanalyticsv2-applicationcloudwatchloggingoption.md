@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-kinesisanalyticsv2-applicationcloudwatchloggingoption-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::KinesisAnalyticsV2::ApplicationCloudWatchLoggingOption",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-kinesisanalyticsv2-applicationcloudwatchloggingoption-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::KinesisAnalyticsV2::ApplicationCloudWatchLoggingOption
 Properties:
   [ApplicationName](#cfn-kinesisanalyticsv2-applicationcloudwatchloggingoption-applicationname): {{String}}
@@ -70,7 +70,7 @@ Provides a description of Amazon CloudWatch logging options, including the log s
 #### JSON
 <a name="aws-resource-kinesisanalyticsv2-applicationcloudwatchloggingoption--examples--Create_an_ApplicationCloudWatchLoggingOption_resource--json"></a>
 
-```
+```json
 {
     "BasicApplicationV2CloudWatchLoggingOption": {
         "Type": "AWS::KinesisAnalyticsV2::ApplicationCloudWatchLoggingOption",
@@ -110,7 +110,7 @@ Provides a description of Amazon CloudWatch logging options, including the log s
 #### YAML
 <a name="aws-resource-kinesisanalyticsv2-applicationcloudwatchloggingoption--examples--Create_an_ApplicationCloudWatchLoggingOption_resource--yaml"></a>
 
-```
+```yaml
 BasicApplicationV2CloudWatchLoggingOption:
   Type: AWS::KinesisAnalyticsV2::ApplicationCloudWatchLoggingOption
   Properties:

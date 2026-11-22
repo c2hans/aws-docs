@@ -23,7 +23,7 @@ The permissions required to start replication on an Aurora MySQL DB cluster are 
 
 1.  Make the source MySQL DB instance read-only:
 
-   ```
+   ```sql
    mysql> FLUSH TABLES WITH READ LOCK;
    mysql> SET GLOBAL read_only = ON;
    ```
@@ -77,7 +77,7 @@ Make sure that there is not a space between the `-p` option and the entered pass
 
 1. Make the source MySQL DB instance writeable again:
 
-   ```
+   ```sql
    mysql> SET GLOBAL read_only = OFF;
    mysql> UNLOCK TABLES;
    ```
@@ -96,13 +96,13 @@ Make sure that there is not a space between the `-p` option and the entered pass
 
 1. Using the client of your choice, connect to the external MySQL instance and create a MySQL user to be used for replication. This account is used solely for replication and must be restricted to your domain to improve security. The following is an example.
 
-   ```
+   ```sql
    CREATE USER '{{repl_user}}'@'{{example.com}}' IDENTIFIED BY '{{password}}';
    ```
 
 1. For the external MySQL instance, grant `REPLICATION CLIENT` and `REPLICATION SLAVE` privileges to your replication user. For example, to grant the `REPLICATION CLIENT` and `REPLICATION SLAVE` privileges on all databases for the '`repl_user`' user for your domain, issue the following command.
 
-   ```
+   ```sql
    GRANT REPLICATION CLIENT, REPLICATION SLAVE ON *.* TO '{{repl_user}}'@'{{example.com}}'
        IDENTIFIED BY '{{password}}';
    ```
@@ -113,7 +113,7 @@ Make sure that there is not a space between the `-p` option and the entered pass
 
    Use the binlog file name and position that you determined in Step 2. The following is an example.
 
-   ```
+   ```sql
    For Aurora MySQL version 2:
    CALL mysql.rds_set_external_master ('mymasterserver.example.com', 3306,
        'repl_user', 'password', 'mysql-bin-changelog.000031', 107, 0);
@@ -125,7 +125,7 @@ Make sure that there is not a space between the `-p` option and the entered pass
 
 1. On the Amazon Aurora DB cluster, call the [mysql.rds\_start\_replication](mysql-stored-proc-replicating.md#mysql_rds_start_replication) procedure to start replication.
 
-   ```
+   ```sql
    CALL mysql.rds_start_replication;
    ```
 

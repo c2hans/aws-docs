@@ -13,14 +13,14 @@ For more information, see [Work with views](views.md) and [Use Data Catalog view
 ## Synopsis
 <a name="synopsis"></a>
 
-```
+```sql
 DROP VIEW [ IF EXISTS ] {{view_name}}
 ```
 
 ## Examples
 <a name="examples"></a>
 
-```
+```sql
 DROP VIEW orders_by_date
 ```
 

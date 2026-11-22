@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-mailmanagerruleset-replacerecipientaction-syntax.json"></a>
 
-```
+```json
 {
   "[ReplaceWith](#cfn-ses-mailmanagerruleset-replacerecipientaction-replacewith)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-mailmanagerruleset-replacerecipientaction-syntax.yaml"></a>
 
-```
+```yaml
   [ReplaceWith](#cfn-ses-mailmanagerruleset-replacerecipientaction-replacewith): {{
     - String}}
 ```

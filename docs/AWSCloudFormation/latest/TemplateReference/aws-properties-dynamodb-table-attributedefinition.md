@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dynamodb-table-attributedefinition-syntax.json"></a>
 
-```
+```json
 {
   "[AttributeName](#cfn-dynamodb-table-attributedefinition-attributename)" : {{String}},
   "[AttributeType](#cfn-dynamodb-table-attributedefinition-attributetype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dynamodb-table-attributedefinition-syntax.yaml"></a>
 
-```
+```yaml
   [AttributeName](#cfn-dynamodb-table-attributedefinition-attributename): {{String}}
   [AttributeType](#cfn-dynamodb-table-attributedefinition-attributetype): {{String}}
 ```

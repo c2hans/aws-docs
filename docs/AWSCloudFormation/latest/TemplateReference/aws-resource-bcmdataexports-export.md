@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-bcmdataexports-export-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::BCMDataExports::Export",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-bcmdataexports-export-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::BCMDataExports::Export
 Properties:
   [Export](#cfn-bcmdataexports-export-export): {{

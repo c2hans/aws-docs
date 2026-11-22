@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-connection-athenapropertiesinput-syntax.json"></a>
 
-```
+```json
 {
   "[WorkgroupName](#cfn-datazone-connection-athenapropertiesinput-workgroupname)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-connection-athenapropertiesinput-syntax.yaml"></a>
 
-```
+```yaml
   [WorkgroupName](#cfn-datazone-connection-athenapropertiesinput-workgroupname): {{String}}
 ```
 

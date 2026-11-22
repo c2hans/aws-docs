@@ -14,6 +14,13 @@ For MySQL version 8.0 and lower, Amazon RDS for MySQL uses OpenSSL for secure co
 
 | MySQL version | TLS 1.0 | TLS 1.1 | TLS 1.2 | TLS 1.3 |
 | --- | --- | --- | --- | --- |
+| MySQL 9.7 | Not supported | Not supported | Supported | Supported |
 | MySQL 8.4 | Not supported | Not supported | Supported | Supported |
 | MySQL 8.0 | Not supported | Not supported | Supported | Supported |
 | MySQL 5.7 | Supported | Supported | Supported | Not supported |
+
+For MySQL version 9.7 and for MySQL version 8.4.11 and higher 8.4 versions, Amazon RDS for MySQL supports post-quantum hybrid key exchange (`X25519MLKEM768` and `SecP256r1MLKEM768`) for TLS 1.3 connections. Clients that support post-quantum key exchange negotiate a quantum-resistant shared secret automatically. Your client's TLS library must support ML-KEM. To confirm which group the current session negotiated, query the `Ssl_named_group` status variable, as in the following example.
+
+```sql
+SHOW STATUS LIKE 'Ssl_named_group';
+```

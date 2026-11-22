@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcaconnectorscep-connector-intuneconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AzureApplicationId](#cfn-pcaconnectorscep-connector-intuneconfiguration-azureapplicationid)" : {{String}},
   "[Domain](#cfn-pcaconnectorscep-connector-intuneconfiguration-domain)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcaconnectorscep-connector-intuneconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AzureApplicationId](#cfn-pcaconnectorscep-connector-intuneconfiguration-azureapplicationid): {{String}}
   [Domain](#cfn-pcaconnectorscep-connector-intuneconfiguration-domain): {{String}}
 ```

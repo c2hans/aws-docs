@@ -30,7 +30,7 @@ Before running a backup, ensure the target directory exists. To create a directo
 
 The following example performs a full backup of the DB instance using the specified values for the parameters.
 
-```
+```sql
 BEGIN
     rdsadmin.rdsadmin_rman_util.backup_database_full(
         p_owner               => '{{SYS}}',
@@ -45,6 +45,6 @@ END;
 
 To verify the backup completed and list the output files:
 
-```
+```sql
 SELECT FILENAME, FILESIZE FROM TABLE(rdsadmin.rds_file_util.listdir('MYDIRECTORY'));
 ```

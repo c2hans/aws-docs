@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appintegrations-application-authconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AudienceOverride](#cfn-appintegrations-application-authconfig-audienceoverride)" : {{String}},
   "[AuthType](#cfn-appintegrations-application-authconfig-authtype)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appintegrations-application-authconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AudienceOverride](#cfn-appintegrations-application-authconfig-audienceoverride): {{String}}
   [AuthType](#cfn-appintegrations-application-authconfig-authtype): {{String}}
   [CredentialProviderIdentifier](#cfn-appintegrations-application-authconfig-credentialprovideridentifier): {{String}}

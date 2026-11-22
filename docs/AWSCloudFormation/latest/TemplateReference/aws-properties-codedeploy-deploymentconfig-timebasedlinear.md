@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codedeploy-deploymentconfig-timebasedlinear-syntax.json"></a>
 
-```
+```json
 {
   "[LinearInterval](#cfn-codedeploy-deploymentconfig-timebasedlinear-linearinterval)" : {{Integer}},
   "[LinearPercentage](#cfn-codedeploy-deploymentconfig-timebasedlinear-linearpercentage)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codedeploy-deploymentconfig-timebasedlinear-syntax.yaml"></a>
 
-```
+```yaml
   [LinearInterval](#cfn-codedeploy-deploymentconfig-timebasedlinear-linearinterval): {{Integer}}
   [LinearPercentage](#cfn-codedeploy-deploymentconfig-timebasedlinear-linearpercentage): {{Integer}}
 ```

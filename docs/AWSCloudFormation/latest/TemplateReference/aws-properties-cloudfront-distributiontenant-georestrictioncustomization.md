@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distributiontenant-georestrictioncustomization-syntax.json"></a>
 
-```
+```json
 {
   "[Locations](#cfn-cloudfront-distributiontenant-georestrictioncustomization-locations)" : {{[ String, ... ]}},
   "[RestrictionType](#cfn-cloudfront-distributiontenant-georestrictioncustomization-restrictiontype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distributiontenant-georestrictioncustomization-syntax.yaml"></a>
 
-```
+```yaml
   [Locations](#cfn-cloudfront-distributiontenant-georestrictioncustomization-locations): {{
     - String}}
   [RestrictionType](#cfn-cloudfront-distributiontenant-georestrictioncustomization-restrictiontype): {{String}}

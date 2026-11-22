@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-browsercustom-browserenterprisepolicy-syntax.json"></a>
 
-```
+```json
 {
   "[Location](#cfn-bedrockagentcore-browsercustom-browserenterprisepolicy-location)" : {{S3Location}},
   "[Type](#cfn-bedrockagentcore-browsercustom-browserenterprisepolicy-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-browsercustom-browserenterprisepolicy-syntax.yaml"></a>
 
-```
+```yaml
   [Location](#cfn-bedrockagentcore-browsercustom-browserenterprisepolicy-location): {{
     S3Location}}
   [Type](#cfn-bedrockagentcore-browsercustom-browserenterprisepolicy-type): {{String}}

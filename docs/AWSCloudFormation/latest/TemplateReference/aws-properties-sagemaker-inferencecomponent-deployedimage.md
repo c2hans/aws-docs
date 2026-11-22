@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-inferencecomponent-deployedimage-syntax.json"></a>
 
-```
+```json
 {
   "[ResolutionTime](#cfn-sagemaker-inferencecomponent-deployedimage-resolutiontime)" : {{String}},
   "[ResolvedImage](#cfn-sagemaker-inferencecomponent-deployedimage-resolvedimage)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-inferencecomponent-deployedimage-syntax.yaml"></a>
 
-```
+```yaml
   [ResolutionTime](#cfn-sagemaker-inferencecomponent-deployedimage-resolutiontime): {{String}}
   [ResolvedImage](#cfn-sagemaker-inferencecomponent-deployedimage-resolvedimage): {{String}}
   [SpecifiedImage](#cfn-sagemaker-inferencecomponent-deployedimage-specifiedimage): {{String}}

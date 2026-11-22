@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-route-httprouteheader-syntax.json"></a>
 
-```
+```json
 {
   "[Invert](#cfn-appmesh-route-httprouteheader-invert)" : {{Boolean}},
   "[Match](#cfn-appmesh-route-httprouteheader-match)" : {{HeaderMatchMethod}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-route-httprouteheader-syntax.yaml"></a>
 
-```
+```yaml
   [Invert](#cfn-appmesh-route-httprouteheader-invert): {{Boolean}}
   [Match](#cfn-appmesh-route-httprouteheader-match): {{
     HeaderMatchMethod}}

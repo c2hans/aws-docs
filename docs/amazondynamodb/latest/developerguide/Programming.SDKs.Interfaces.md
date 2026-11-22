@@ -30,7 +30,7 @@ The following Java program uses the low-level interface of the AWS SDK for Java.
 ### Low-level interface example
 <a name="low-level-example"></a>
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
@@ -130,7 +130,7 @@ The `software.amazon.dynamodb.document.DynamoDB` class implements the DynamoDB d
 ### Document interface example
 <a name="document-level-example"></a>
 
-```
+```java
 package com.amazonaws.codesamples.gsg;
 
 import software.amazon.dynamodb.AmazonDynamoDB;
@@ -169,7 +169,7 @@ Object persistence interfaces are available in the AWS SDKs for Java and .NET. F
 ### Object persistence interface example
 <a name="mapper-level-example"></a>
 
-```
+```java
 import com.example.dynamodb.Customer;
 import software.amazon.awssdk.enhanced.dynamodb.DynamoDbEnhancedClient;
 import software.amazon.awssdk.enhanced.dynamodb.DynamoDbTable;
@@ -181,7 +181,7 @@ import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
 ```
 
-```
+```java
 import com.example.dynamodb.Customer;
 import software.amazon.awssdk.enhanced.dynamodb.DynamoDbEnhancedClient;
 import software.amazon.awssdk.enhanced.dynamodb.DynamoDbTable;

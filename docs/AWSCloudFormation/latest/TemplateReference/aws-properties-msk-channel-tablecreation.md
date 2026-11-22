@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-channel-tablecreation-syntax.json"></a>
 
-```
+```json
 {
   "[EnableTableCreation](#cfn-msk-channel-tablecreation-enabletablecreation)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-channel-tablecreation-syntax.yaml"></a>
 
-```
+```yaml
   [EnableTableCreation](#cfn-msk-channel-tablecreation-enabletablecreation): {{Boolean}}
 ```
 

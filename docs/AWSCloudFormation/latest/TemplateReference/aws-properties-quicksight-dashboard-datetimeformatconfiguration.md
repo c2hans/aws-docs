@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-datetimeformatconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DateTimeFormat](#cfn-quicksight-dashboard-datetimeformatconfiguration-datetimeformat)" : {{String}},
   "[NullValueFormatConfiguration](#cfn-quicksight-dashboard-datetimeformatconfiguration-nullvalueformatconfiguration)" : {{NullValueFormatConfiguration}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-datetimeformatconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DateTimeFormat](#cfn-quicksight-dashboard-datetimeformatconfiguration-datetimeformat): {{String}}
   [NullValueFormatConfiguration](#cfn-quicksight-dashboard-datetimeformatconfiguration-nullvalueformatconfiguration): {{
     NullValueFormatConfiguration}}

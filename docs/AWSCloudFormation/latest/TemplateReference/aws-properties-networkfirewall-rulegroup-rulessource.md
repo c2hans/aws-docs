@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkfirewall-rulegroup-rulessource-syntax.json"></a>
 
-```
+```json
 {
   "[RulesSourceList](#cfn-networkfirewall-rulegroup-rulessource-rulessourcelist)" : {{RulesSourceList}},
   "[RulesString](#cfn-networkfirewall-rulegroup-rulessource-rulesstring)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkfirewall-rulegroup-rulessource-syntax.yaml"></a>
 
-```
+```yaml
   [RulesSourceList](#cfn-networkfirewall-rulegroup-rulessource-rulessourcelist): {{
     RulesSourceList}}
   [RulesString](#cfn-networkfirewall-rulegroup-rulessource-rulesstring): {{

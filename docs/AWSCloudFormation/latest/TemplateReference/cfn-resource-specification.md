@@ -56,7 +56,7 @@ Resource availability may vary by region. To check the availability of a resourc
 
 The following example shows the specification for an AWS Key Management Service key resource (`AWS::KMS::Key`). It shows the properties for the `AWS::KMS::Key` resource, which properties are required, the type of allowed value for each property, and their update behavior. For details about the specification, see [Specification format](cfn-resource-specification-format.md).
 
-```
+```json
     "AWS::KMS::Key": {
       "Attributes": {
         "Arn": {

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotsitewise-computationmodel-assetpropertybindingvalue-syntax.json"></a>
 
-```
+```json
 {
   "[AssetId](#cfn-iotsitewise-computationmodel-assetpropertybindingvalue-assetid)" : {{String}},
   "[PropertyId](#cfn-iotsitewise-computationmodel-assetpropertybindingvalue-propertyid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotsitewise-computationmodel-assetpropertybindingvalue-syntax.yaml"></a>
 
-```
+```yaml
   [AssetId](#cfn-iotsitewise-computationmodel-assetpropertybindingvalue-assetid): {{String}}
   [PropertyId](#cfn-iotsitewise-computationmodel-assetpropertybindingvalue-propertyid): {{String}}
 ```

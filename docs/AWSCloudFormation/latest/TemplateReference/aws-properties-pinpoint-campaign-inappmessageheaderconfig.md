@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pinpoint-campaign-inappmessageheaderconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Alignment](#cfn-pinpoint-campaign-inappmessageheaderconfig-alignment)" : {{String}},
   "[Header](#cfn-pinpoint-campaign-inappmessageheaderconfig-header)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pinpoint-campaign-inappmessageheaderconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Alignment](#cfn-pinpoint-campaign-inappmessageheaderconfig-alignment): {{String}}
   [Header](#cfn-pinpoint-campaign-inappmessageheaderconfig-header): {{String}}
   [TextColor](#cfn-pinpoint-campaign-inappmessageheaderconfig-textcolor): {{String}}

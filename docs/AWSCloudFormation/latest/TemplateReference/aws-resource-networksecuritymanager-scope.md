@@ -8,6 +8,8 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 The `AWS::NetworkSecurityManager::Scope` resource specifies an AWS Network Security Manager scope. A scope selects the accounts and the resources that a deployment applies to.
 
+A scope can instead be a *specialized* scope, which is built for one specific purpose. A scope with a `SpecializedScopeType` of `IGW_FIREWALL_SUBNET_CONNECTIVITY_OVERRIDE` selects the subnets that a subnet connectivity override in an AWS Network Firewall automated internet firewall policy applies to. You can't associate a specialized scope with a deployment.
+
 You define reusable rules and templates, combine them into policies, then use a scope to choose where those protections apply. For more information, see the [AWS Network Security Manager Developer Guide](https://docs.aws.amazon.com/network-security-manager/latest/devguide/what-is.html).
 
 ## Syntax
@@ -18,13 +20,14 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-networksecuritymanager-scope-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::NetworkSecurityManager::Scope",
   "Properties" : {
       "[ScopeConfiguration](#cfn-networksecuritymanager-scope-scopeconfiguration)" : {{String}},
       "[ScopeDescription](#cfn-networksecuritymanager-scope-scopedescription)" : {{String}},
       "[ScopeName](#cfn-networksecuritymanager-scope-scopename)" : {{String}},
+      "[SpecializedScopeType](#cfn-networksecuritymanager-scope-specializedscopetype)" : {{String}},
       "[Tags](#cfn-networksecuritymanager-scope-tags)" : {{[ Tag, ... ]}}
     }
 }
@@ -33,12 +36,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-networksecuritymanager-scope-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::NetworkSecurityManager::Scope
 Properties:
   [ScopeConfiguration](#cfn-networksecuritymanager-scope-scopeconfiguration): {{String}}
   [ScopeDescription](#cfn-networksecuritymanager-scope-scopedescription): {{String}}
   [ScopeName](#cfn-networksecuritymanager-scope-scopename): {{String}}
+  [SpecializedScopeType](#cfn-networksecuritymanager-scope-specializedscopetype): {{String}}
   [Tags](#cfn-networksecuritymanager-scope-tags): {{
     - Tag}}
 ```
@@ -55,6 +59,7 @@ The account filter that determines which accounts are in scope. Set exactly one 
 The `Include` and `Exclude` members each take a set of accounts and organizational units, with `AccountIds` for AWS account IDs and `OrganizationalUnits` for AWS Organizations organizational units (OUs).
  `ResourceScopes`
 The resource-level scoping configuration, keyed by resource type, that defines which resources within the selected accounts are in scope. For each resource type, set exactly one of `IncludeAll`, `Include`, or `Exclude`.
+The supported resource types are `AWS::ApiGateway::Stage`, `AWS::CloudFront::Distribution`, `AWS::EC2::EIP`, `AWS::ElasticLoadBalancingV2::LoadBalancer::application`, `AWS::ElasticLoadBalancing::LoadBalancer`, `AWS::EC2::VPC`, and `AWS::EC2::Subnet`. Select `AWS::EC2::VPC` for a scope that a deployment of an `IGW_FIREWALL` policy protects. A scope whose `SpecializedScopeType` is `IGW_FIREWALL_SUBNET_CONNECTIVITY_OVERRIDE` can select only `AWS::EC2::Subnet`.
 The `Include` and `Exclude` members each take a set of resources defined by `ExplicitArns`, by an `Expression`, or by both. An expression combines leaf conditions with the `And`, `Or`, and `Not` operators. A leaf condition matches resources by tag key-value pairs or by resource-type-specific configuration.
 *Required*: No
 *Type*: String
@@ -64,9 +69,7 @@ The `Include` and `Exclude` members each take a set of resources defined by `Exp
 A description of the scope.
 *Required*: No
 *Type*: String
-*Pattern*: `[a-zA-Z0-9 _.:/=+\-@]*`
-*Minimum*: `0`
-*Maximum*: `256`
+*Pattern*: `^[a-zA-Z0-9 _.:/=+\-@]*$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ScopeName`  <a name="cfn-networksecuritymanager-scope-scopename"></a>
@@ -74,9 +77,16 @@ The name of the scope.
  To change the name of a scope, AWS CloudFormation deletes the existing scope and creates a new one, which also changes the values returned for `ScopeId` and `ScopeArn`.
 *Required*: Yes
 *Type*: String
-*Pattern*: `[a-zA-Z0-9][a-zA-Z0-9 _.:/=+\-@]*`
-*Minimum*: `1`
-*Maximum*: `128`
+*Pattern*: `^[a-zA-Z0-9][a-zA-Z0-9 _.:/=+\-@]*$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`SpecializedScopeType`  <a name="cfn-networksecuritymanager-scope-specializedscopetype"></a>
+The specialized type of the scope. Omit this property to create a standard scope, which you can associate with a deployment.
+Specify `IGW_FIREWALL_SUBNET_CONNECTIVITY_OVERRIDE` to create a scope that selects the subnets a subnet connectivity override applies to in an AWS Network Firewall automated internet firewall policy. Reference the scope from the `Scopes` property of a `SubnetConnectivityOverride` in the policy's `IgwFirewallConfig`. A scope of this type must select only `AWS::EC2::Subnet` resources and must not include an `AccountFilter`, because the deployment that applies the policy determines which accounts are in scope. You can't associate a specialized scope with a deployment.
+You can't change the specialized type after you create the scope. Changing this property replaces the scope.
+*Required*: No
+*Type*: String
+*Allowed values*: `IGW_FIREWALL_SUBNET_CONNECTIVITY_OVERRIDE`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Tags`  <a name="cfn-networksecuritymanager-scope-tags"></a>
@@ -121,7 +131,7 @@ Scopes that you manage with AWS CloudFormation are always published, so this att
 *Allowed Values*: `ACTIVE`
 
 `UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
-The time when the resource was last updated. For a snapshot, this is the time when the snapshot was created.
+The date and time when the scope was last updated, in ISO 8601 format. For example: `2026-11-19T21:42:56Z`.
 
 `Version`  <a name="Version-fn::getatt"></a>
 The version of the scope. AWS Network Security Manager increments this value each time it publishes a new version of the scope. For example: `1`.
@@ -129,13 +139,17 @@ The version of the scope. AWS Network Security Manager increments this value eac
 ## Examples
 <a name="aws-resource-networksecuritymanager-scope--examples"></a>
 
+**Topics**
++ [Select every CloudFront distribution in the organization](#aws-resource-networksecuritymanager-scope--examples--Select_every_CloudFront_distribution_in_the_organization)
++ [Select subnets for an internet firewall connectivity override](#aws-resource-networksecuritymanager-scope--examples--Select_subnets_for_an_internet_firewall_connectivity_override)
+
 ### Select every CloudFront distribution in the organization
 <a name="aws-resource-networksecuritymanager-scope--examples--Select_every_CloudFront_distribution_in_the_organization"></a>
 
 #### YAML
 <a name="aws-resource-networksecuritymanager-scope--examples--Select_every_CloudFront_distribution_in_the_organization--yaml"></a>
 
-```
+```yaml
                 AWSTemplateFormatVersion: "2010-09-09"
                 Description: Selects the accounts and resources that a Network Security Manager deployment protects.
                 Resources:
@@ -148,4 +162,26 @@ The version of the scope. AWS Network Security Manager increments this value eac
                 Outputs:
                   ScopeArn:
                     Value: !GetAtt AllDistributionsScope.ScopeArn
+```
+
+### Select subnets for an internet firewall connectivity override
+<a name="aws-resource-networksecuritymanager-scope--examples--Select_subnets_for_an_internet_firewall_connectivity_override"></a>
+
+#### YAML
+<a name="aws-resource-networksecuritymanager-scope--examples--Select_subnets_for_an_internet_firewall_connectivity_override--yaml"></a>
+
+```yaml
+                AWSTemplateFormatVersion: "2010-09-09"
+                Description: Selects the subnets that an internet firewall policy override applies to.
+                Resources:
+                  IsolatedSubnetsScope:
+                    Type: AWS::NetworkSecurityManager::Scope
+                    Properties:
+                      ScopeName: isolated-subnets
+                      ScopeDescription: Subnets tagged as isolated.
+                      SpecializedScopeType: IGW_FIREWALL_SUBNET_CONNECTIVITY_OVERRIDE
+                      ScopeConfiguration: '{"ResourceScopes":{"AWS::EC2::Subnet":{"Include":{"Expression":{"Criteria":{"Tags":{"network-zone":"isolated"}}}}}}}'
+                Outputs:
+                  ScopeArn:
+                    Value: !GetAtt IsolatedSubnetsScope.ScopeArn
 ```

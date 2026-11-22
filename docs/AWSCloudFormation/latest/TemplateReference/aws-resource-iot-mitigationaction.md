@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iot-mitigationaction-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoT::MitigationAction",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iot-mitigationaction-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoT::MitigationAction
 Properties:
   [ActionName](#cfn-iot-mitigationaction-actionname): {{String}}
@@ -108,7 +108,7 @@ The ID of the mitigation action.
 #### JSON
 <a name="aws-resource-iot-mitigationaction--examples----json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "Amazon Web Services IoT MitigationAction Sample Template",
@@ -132,7 +132,7 @@ The ID of the mitigation action.
 #### YAML
 <a name="aws-resource-iot-mitigationaction--examples----yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Amazon Web Services IoT MitigationAction Sample Template
 Resources:

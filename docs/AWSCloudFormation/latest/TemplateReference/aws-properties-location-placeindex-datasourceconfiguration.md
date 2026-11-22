@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-location-placeindex-datasourceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[IntendedUse](#cfn-location-placeindex-datasourceconfiguration-intendeduse)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-location-placeindex-datasourceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [IntendedUse](#cfn-location-placeindex-datasourceconfiguration-intendeduse): {{String}}
 ```
 

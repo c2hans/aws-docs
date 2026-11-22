@@ -29,7 +29,7 @@ Suppose you want to grant a user the ability to pass any of an approved set of r
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": {
@@ -48,7 +48,7 @@ Suppose you want to grant a user the ability to pass any of an approved set of r
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": {
@@ -68,7 +68,7 @@ Suppose you want to grant a user the ability to pass any of an approved set of r
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -115,7 +115,7 @@ The role automatically gets a trust policy that grants the `monitoring.rds.amazo
 
 The user that you want to access Enhanced Monitoring needs a policy that includes a statement that allows the user to list the RDS roles and a statement that allows the user to pass the role, like the following. Use your account number and replace the role name with the name you provided in step 6.
 
-```
+```json
     {
       "Sid": "PolicyStatementToAllowUserToListRoles",
       "Effect": "Allow",
@@ -132,7 +132,7 @@ The user that you want to access Enhanced Monitoring needs a policy that include
 
 You can combine this statement with statements in another policy or put it in its own policy. To instead specify that the user can pass any role that begins with `RDS-`, you can replace the role name in the resource ARN with a wildcard, as follows.
 
-```
+```json
         "Resource": "arn:aws:iam::{{account-id}}:role/RDS-*"
 ```
 

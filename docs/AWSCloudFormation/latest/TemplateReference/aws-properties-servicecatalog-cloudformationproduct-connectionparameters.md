@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-servicecatalog-cloudformationproduct-connectionparameters-syntax.json"></a>
 
-```
+```json
 {
   "[CodeStar](#cfn-servicecatalog-cloudformationproduct-connectionparameters-codestar)" : {{CodeStarParameters}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-servicecatalog-cloudformationproduct-connectionparameters-syntax.yaml"></a>
 
-```
+```yaml
   [CodeStar](#cfn-servicecatalog-cloudformationproduct-connectionparameters-codestar): {{
     CodeStarParameters}}
 ```

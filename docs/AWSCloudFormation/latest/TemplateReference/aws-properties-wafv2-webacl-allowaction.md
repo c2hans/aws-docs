@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-allowaction-syntax.json"></a>
 
-```
+```json
 {
   "[CustomRequestHandling](#cfn-wafv2-webacl-allowaction-customrequesthandling)" : {{CustomRequestHandling}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-allowaction-syntax.yaml"></a>
 
-```
+```yaml
   [CustomRequestHandling](#cfn-wafv2-webacl-allowaction-customrequesthandling): {{
     CustomRequestHandling}}
 ```
@@ -57,7 +57,7 @@ The following shows an example allow action specification.
 #### YAML
 <a name="aws-properties-wafv2-webacl-allowaction--examples--Set_an_allow_action--yaml"></a>
 
-```
+```yaml
 Action:
   Allow: {}
 ```
@@ -65,7 +65,7 @@ Action:
 #### JSON
 <a name="aws-properties-wafv2-webacl-allowaction--examples--Set_an_allow_action--json"></a>
 
-```
+```json
 "Action": {
   "Allow": {}
 }
@@ -79,7 +79,7 @@ The following shows an example allow action specification with custom request ha
 #### YAML
 <a name="aws-properties-wafv2-webacl-allowaction--examples--Set_an_allow_action_with_a_custom_request_setting--yaml"></a>
 
-```
+```yaml
 Allow:
   CustomRequestHandling:
     InsertHeaders:
@@ -92,7 +92,7 @@ Allow:
 #### JSON
 <a name="aws-properties-wafv2-webacl-allowaction--examples--Set_an_allow_action_with_a_custom_request_setting--json"></a>
 
-```
+```json
 "Allow": {
    "CustomRequestHandling": {
      "InsertHeaders": [

@@ -102,7 +102,7 @@ Updates a product REST endpoint page.
 #### PATCH schema
 <a name="portalproducts-portalproductid-productrestendpointpages-productrestendpointpageid-request-body-patch-example"></a>
 
-```
+```json
 {
   "displayContent": {
     "none": {
@@ -123,7 +123,7 @@ Updates a product REST endpoint page.
 #### GetProductRestEndpointPageResponseContent schema
 <a name="portalproducts-portalproductid-productrestendpointpages-productrestendpointpageid-response-body-getproductrestendpointpageresponsecontent-example"></a>
 
-```
+```json
 {
   "displayContent": {
     "endpoint": "string",
@@ -154,7 +154,7 @@ Updates a product REST endpoint page.
 #### UpdateProductRestEndpointPageResponseContent schema
 <a name="portalproducts-portalproductid-productrestendpointpages-productrestendpointpageid-response-body-updateproductrestendpointpageresponsecontent-example"></a>
 
-```
+```json
 {
   "displayContent": {
     "endpoint": "string",
@@ -184,7 +184,7 @@ Updates a product REST endpoint page.
 #### BadRequestExceptionResponseContent schema
 <a name="portalproducts-portalproductid-productrestendpointpages-productrestendpointpageid-response-body-badrequestexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -193,7 +193,7 @@ Updates a product REST endpoint page.
 #### AccessDeniedExceptionResponseContent schema
 <a name="portalproducts-portalproductid-productrestendpointpages-productrestendpointpageid-response-body-accessdeniedexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -202,7 +202,7 @@ Updates a product REST endpoint page.
 #### NotFoundExceptionResponseContent schema
 <a name="portalproducts-portalproductid-productrestendpointpages-productrestendpointpageid-response-body-notfoundexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -212,7 +212,7 @@ Updates a product REST endpoint page.
 #### LimitExceededExceptionResponseContent schema
 <a name="portalproducts-portalproductid-productrestendpointpages-productrestendpointpageid-response-body-limitexceededexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-personalize-metricattribution-metricattribute-syntax.json"></a>
 
-```
+```json
 {
   "[EventType](#cfn-personalize-metricattribution-metricattribute-eventtype)" : {{String}},
   "[Expression](#cfn-personalize-metricattribution-metricattribute-expression)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-personalize-metricattribution-metricattribute-syntax.yaml"></a>
 
-```
+```yaml
   [EventType](#cfn-personalize-metricattribution-metricattribute-eventtype): {{String}}
   [Expression](#cfn-personalize-metricattribution-metricattribute-expression): {{String}}
   [MetricName](#cfn-personalize-metricattribution-metricattribute-metricname): {{String}}

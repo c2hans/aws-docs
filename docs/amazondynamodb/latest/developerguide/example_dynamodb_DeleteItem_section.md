@@ -16,7 +16,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/DynamoDB#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Deletes a single item from a DynamoDB table.
     /// </summary>
@@ -68,7 +68,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb#code-examples).
 
-```
+```bash
 ##############################################################################
 # function dynamodb_delete_item
 #
@@ -148,7 +148,7 @@ function dynamodb_delete_item() {
 ```
 The utility functions used in this example.
 
-```
+```bash
 ###############################################################################
 # function iecho
 #
@@ -214,7 +214,7 @@ function aws_cli_error_log() {
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 
-```
+```cpp
 //! Delete an item from an Amazon DynamoDB table.
 /*!
   \sa deleteItem()
@@ -253,7 +253,7 @@ bool AwsDoc::DynamoDB::deleteItem(const Aws::String &tableName,
 ```
 Code that waits for the table to become active.
 
-```
+```cpp
 //! Query a newly created DynamoDB table until it is active.
 /*!
   \sa waitTableActive()
@@ -406,7 +406,7 @@ For more information, see [Writing an Item](https://docs.aws.amazon.com/amazondy
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -440,7 +440,7 @@ func (basics TableBasics) DeleteMovie(ctx context.Context, movie Movie) error {
 ```
 Define a Movie struct that is used in this example.
 
-```
+```go
 import (
 	"archive/zip"
 	"bytes"
@@ -491,7 +491,7 @@ func (movie Movie) String() string {
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -567,7 +567,7 @@ public class DeleteItem {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
 This example uses the document client to simplify working with items in DynamoDB. For API details see [DeleteCommand](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-lib-dynamodb/Class/DeleteCommand/).
 
-```
+```javascript
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { DynamoDBDocumentClient, DeleteCommand } from "@aws-sdk/lib-dynamodb";
 
@@ -594,7 +594,7 @@ export const main = async () => {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/dynamodb#code-examples).
 Delete an item from a table.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -621,7 +621,7 @@ ddb.deleteItem(params, function (err, data) {
 ```
 Delete an item from a table using the DynamoDB document client.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -654,7 +654,7 @@ docClient.delete(params, function (err, data) {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/dynamodb#code-examples).
 
-```
+```kotlin
 suspend fun deleteDynamoDBItem(
     tableNameVal: String,
     keyName: String,
@@ -683,7 +683,7 @@ suspend fun deleteDynamoDBItem(
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb#code-examples).
 
-```
+```php
         $key = [
             'Item' => [
                 'title' => [
@@ -714,7 +714,7 @@ suspend fun deleteDynamoDBItem(
 **Tools for PowerShell V4**
 **Example 1: Removes the DynamoDB item that matches the provided key.**
 
-```
+```powershell
 $key = @{
     SongTitle = 'Somewhere Down The Road'
     Artist = 'No One You Know'
@@ -726,7 +726,7 @@ Remove-DDBItem -TableName 'Music' -Key $key -Confirm:$false
 **Tools for PowerShell V5**
 **Example 1: Removes the DynamoDB item that matches the provided key.**
 
-```
+```powershell
 $key = @{
     SongTitle = 'Somewhere Down The Road'
     Artist = 'No One You Know'
@@ -741,7 +741,7 @@ Remove-DDBItem -TableName 'Music' -Key $key -Confirm:$false
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 
-```
+```python
 class Movies:
     """Encapsulates an Amazon DynamoDB table of movie data.
 
@@ -794,7 +794,7 @@ class Movies:
 ```
 You can specify a condition so that an item is deleted only when it meets certain criteria.
 
-```
+```python
 class UpdateQueryWrapper:
     def __init__(self, table):
         self.table = table
@@ -839,7 +839,7 @@ class UpdateQueryWrapper:
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 
-```
+```ruby
 class DynamoDBBasics
   attr_reader :dynamo_resource, :table
 
@@ -869,7 +869,7 @@ class DynamoDBBasics
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/dynamodb#code-examples).
 
-```
+```rust
 pub async fn delete_item(
     client: &Client,
     table: &str,
@@ -899,7 +899,7 @@ pub async fn delete_item(
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/dyn#code-examples).
 
-```
+```sap-abap
     TRY.
         DATA(lo_resp) = lo_dyn->deleteitem(
           iv_tablename                = iv_table_name
@@ -921,7 +921,7 @@ pub async fn delete_item(
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/dynamodb#code-examples).
 
-```
+```swift
 import AWSDynamoDB
 
     /// Delete a movie, given its title and release year.

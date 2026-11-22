@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-alert-target-syntax.json"></a>
 
-```
+```json
 {
   "[Arn](#cfn-cloudwatch-alert-target-arn)" : {{String}},
   "[Metadata](#cfn-cloudwatch-alert-target-metadata)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-alert-target-syntax.yaml"></a>
 
-```
+```yaml
   [Arn](#cfn-cloudwatch-alert-target-arn): {{String}}
   [Metadata](#cfn-cloudwatch-alert-target-metadata): {{
     {{Key}}: {{Value}}}}

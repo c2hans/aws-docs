@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mpa-identitysource-identitysourceparameters-syntax.json"></a>
 
-```
+```json
 {
   "[IamIdentityCenter](#cfn-mpa-identitysource-identitysourceparameters-iamidentitycenter)" : {{IamIdentityCenter}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mpa-identitysource-identitysourceparameters-syntax.yaml"></a>
 
-```
+```yaml
   [IamIdentityCenter](#cfn-mpa-identitysource-identitysourceparameters-iamidentitycenter): {{
     IamIdentityCenter}}
 ```

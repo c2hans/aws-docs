@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-deadline-fleet-hostconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ScriptBody](#cfn-deadline-fleet-hostconfiguration-scriptbody)" : {{String}},
   "[ScriptTimeoutSeconds](#cfn-deadline-fleet-hostconfiguration-scripttimeoutseconds)" : {{Integer}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-deadline-fleet-hostconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ScriptBody](#cfn-deadline-fleet-hostconfiguration-scriptbody): {{String}}
   [ScriptTimeoutSeconds](#cfn-deadline-fleet-hostconfiguration-scripttimeoutseconds): {{Integer}}
 ```

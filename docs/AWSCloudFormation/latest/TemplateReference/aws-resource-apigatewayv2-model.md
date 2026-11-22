@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigatewayv2-model-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGatewayV2::Model",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigatewayv2-model-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGatewayV2::Model
 Properties:
   [ApiId](#cfn-apigatewayv2-model-apiid): {{String}}
@@ -109,7 +109,7 @@ The following example creates a `model` resource called `MyModel` for an API cal
 #### JSON
 <a name="aws-resource-apigatewayv2-model--examples--Model_creation_example--json"></a>
 
-```
+```json
 {
     "MyModel": {
         "Type": "AWS::ApiGatewayV2::Model",
@@ -137,7 +137,7 @@ The following example creates a `model` resource called `MyModel` for an API cal
 #### YAML
 <a name="aws-resource-apigatewayv2-model--examples--Model_creation_example--yaml"></a>
 
-```
+```yaml
 MyModel:
   Type: 'AWS::ApiGatewayV2::Model'
   Properties:

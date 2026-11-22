@@ -63,7 +63,7 @@ You are responsible for taking the appropriate steps to secure your data. We str
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
 
@@ -160,7 +160,7 @@ You are responsible for taking the appropriate steps to secure your data. We str
 
 ****
 
-   ```
+   ```json
    {
    	"Version":"2012-10-17",
    	"Statement": [{

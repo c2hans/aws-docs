@@ -38,7 +38,7 @@ You can create a presigned URL for sharing an object without writing any code by
 
 The following example AWS CLI command generates a presigned URL for sharing an object from an Amazon S3 bucket. When you use the AWS CLI, the maximum expiration time for a presigned URL is 7 days from the time of creation. To use this example, replace the {{`user input placeholders`}} with your own information.
 
-```
+```bash
 aws s3 presign s3://{{amzn-s3-demo-bucket}}/{{mydoc.txt}} --expires-in {{604800}}
 ```
 
@@ -47,7 +47,7 @@ The `--expires-in` parameter specifies the expiration time in seconds.
 **Note**
 For all AWS Regions launched after March 20, 2019 you need to specify the `endpoint-url` and `AWS Region` with the request. For a list of all the Amazon S3 Regions and endpoints, see [Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region) in the *AWS General Reference*.
 
-```
+```bash
 aws s3 presign s3://{{amzn-s3-demo-bucket}}/{{mydoc.txt}} --expires-in {{604800}} --region {{af-south-1}} --endpoint-url {{https://s3.af-south-1.amazonaws.com}}
 ```
 
@@ -65,7 +65,7 @@ You can generate a presigned URL programmatically by using the AWS SDKs.
 
 1. Copy the contents of the script and save it as “{{get-only-url.py}}” file. To use the following examples, replace the {{user input placeholders}} with your own information (such as your file name).
 
-   ```
+   ```python
    import argparse
    import boto3
    from botocore.exceptions import ClientError

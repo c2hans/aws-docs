@@ -31,7 +31,7 @@ aws s3control list-access-points --account-id {{123456789012}} --bucket arn:aws:
 
 The following SDK for Java example lists the access points for an Outposts bucket.
 
-```
+```Java
 import com.amazonaws.services.s3control.model.*;
 
 public void listAccessPoints(String bucketArn) {

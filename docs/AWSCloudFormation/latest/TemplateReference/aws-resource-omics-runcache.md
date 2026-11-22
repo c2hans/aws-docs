@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-omics-runcache-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Omics::RunCache",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-omics-runcache-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Omics::RunCache
 Properties:
   [CacheBehavior](#cfn-omics-runcache-cachebehavior): {{String}}

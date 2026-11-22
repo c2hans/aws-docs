@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-athena-workgroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Athena::WorkGroup",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-athena-workgroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Athena::WorkGroup
 Properties:
   [Description](#cfn-athena-workgroup-description): {{String}}
@@ -131,7 +131,7 @@ The following example template creates or updates the Athena workgroup `MyCustom
 #### JSON
 <a name="aws-resource-athena-workgroup--examples--Create_or_update_an_Athena_workgroup--json"></a>
 
-```
+```json
 {
     "Resources":{
         "MyAthenaWorkGroup":{
@@ -168,7 +168,7 @@ The following example template creates or updates the Athena workgroup `MyCustom
 #### YAML
 <a name="aws-resource-athena-workgroup--examples--Create_or_update_an_Athena_workgroup--yaml"></a>
 
-```
+```yaml
 Resources:
   MyAthenaWorkGroup:
     Type: AWS::Athena::WorkGroup

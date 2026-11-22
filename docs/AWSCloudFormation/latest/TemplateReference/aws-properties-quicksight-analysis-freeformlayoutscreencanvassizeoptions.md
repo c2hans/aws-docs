@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-freeformlayoutscreencanvassizeoptions-syntax.json"></a>
 
-```
+```json
 {
   "[OptimizedViewPortWidth](#cfn-quicksight-analysis-freeformlayoutscreencanvassizeoptions-optimizedviewportwidth)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-freeformlayoutscreencanvassizeoptions-syntax.yaml"></a>
 
-```
+```yaml
   [OptimizedViewPortWidth](#cfn-quicksight-analysis-freeformlayoutscreencanvassizeoptions-optimizedviewportwidth): {{String}}
 ```
 

@@ -28,6 +28,6 @@ For supported types, see DynamoDB [size](https://docs.aws.amazon.com/amazondynam
 ## Examples
 <a name="ql-functions.size.examples"></a>
 
-```
+```sql
  SELECT * FROM "Orders" WHERE "OrderID"=1 AND size("Image") >300
 ```

@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gameliftstreams-application-runtimeenvironment-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-gameliftstreams-application-runtimeenvironment-type)" : {{String}},
   "[Version](#cfn-gameliftstreams-application-runtimeenvironment-version)" : {{String}}
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gameliftstreams-application-runtimeenvironment-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-gameliftstreams-application-runtimeenvironment-type): {{String}}
   [Version](#cfn-gameliftstreams-application-runtimeenvironment-version): {{String}}
 ```

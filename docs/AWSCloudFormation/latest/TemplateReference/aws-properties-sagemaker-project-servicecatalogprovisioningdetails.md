@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-project-servicecatalogprovisioningdetails-syntax.json"></a>
 
-```
+```json
 {
   "[PathId](#cfn-sagemaker-project-servicecatalogprovisioningdetails-pathid)" : {{String}},
   "[ProductId](#cfn-sagemaker-project-servicecatalogprovisioningdetails-productid)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-project-servicecatalogprovisioningdetails-syntax.yaml"></a>
 
-```
+```yaml
   [PathId](#cfn-sagemaker-project-servicecatalogprovisioningdetails-pathid): {{String}}
   [ProductId](#cfn-sagemaker-project-servicecatalogprovisioningdetails-productid): {{String}}
   [ProvisioningArtifactId](#cfn-sagemaker-project-servicecatalogprovisioningdetails-provisioningartifactid): {{String}}

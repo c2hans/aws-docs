@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-securityprofile-behavior-syntax.json"></a>
 
-```
+```json
 {
   "[Criteria](#cfn-iot-securityprofile-behavior-criteria)" : {{BehaviorCriteria}},
   "[ExportMetric](#cfn-iot-securityprofile-behavior-exportmetric)" : {{Boolean}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-securityprofile-behavior-syntax.yaml"></a>
 
-```
+```yaml
   [Criteria](#cfn-iot-securityprofile-behavior-criteria): {{
     BehaviorCriteria}}
   [ExportMetric](#cfn-iot-securityprofile-behavior-exportmetric): {{Boolean}}

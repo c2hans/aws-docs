@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-channel-channellogginginfo-syntax.json"></a>
 
-```
+```json
 {
   "[CloudWatchLogs](#cfn-msk-channel-channellogginginfo-cloudwatchlogs)" : {{CloudWatchLogsLogDestination}},
   "[Firehose](#cfn-msk-channel-channellogginginfo-firehose)" : {{FirehoseLogDestination}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-channel-channellogginginfo-syntax.yaml"></a>
 
-```
+```yaml
   [CloudWatchLogs](#cfn-msk-channel-channellogginginfo-cloudwatchlogs): {{
     CloudWatchLogsLogDestination}}
   [Firehose](#cfn-msk-channel-channellogginginfo-firehose): {{

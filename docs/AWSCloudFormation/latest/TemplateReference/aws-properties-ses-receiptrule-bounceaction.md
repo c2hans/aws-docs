@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-receiptrule-bounceaction-syntax.json"></a>
 
-```
+```json
 {
   "[Message](#cfn-ses-receiptrule-bounceaction-message)" : {{String}},
   "[Sender](#cfn-ses-receiptrule-bounceaction-sender)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-receiptrule-bounceaction-syntax.yaml"></a>
 
-```
+```yaml
   [Message](#cfn-ses-receiptrule-bounceaction-message): {{String}}
   [Sender](#cfn-ses-receiptrule-bounceaction-sender): {{String}}
   [SmtpReplyCode](#cfn-ses-receiptrule-bounceaction-smtpreplycode): {{String}}

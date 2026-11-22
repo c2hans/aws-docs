@@ -8,18 +8,18 @@ Returns the Connect Customer instance ID associated with the user that's current
 
  **Signature**
 
-```
+```typescript
 async getInstanceId(): Promise<string>
 ```
 
  **Usage**
 
-```
+```typescript
 const instanceId: string = await userClient.getInstanceId();
 ```
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

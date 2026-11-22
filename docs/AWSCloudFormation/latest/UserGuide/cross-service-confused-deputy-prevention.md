@@ -28,7 +28,7 @@ This example role trust policy uses condition statements to limit the `AssumeRol
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

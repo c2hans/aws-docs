@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-grafana-workspace-idpmetadata-syntax.json"></a>
 
-```
+```json
 {
   "[Url](#cfn-grafana-workspace-idpmetadata-url)" : {{String}},
   "[Xml](#cfn-grafana-workspace-idpmetadata-xml)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-grafana-workspace-idpmetadata-syntax.yaml"></a>
 
-```
+```yaml
   [Url](#cfn-grafana-workspace-idpmetadata-url): {{String}}
   [Xml](#cfn-grafana-workspace-idpmetadata-xml): {{String}}
 ```

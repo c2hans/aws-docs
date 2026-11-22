@@ -17,7 +17,7 @@ The following section compares how you would create a table with SQL to how you 
 
 With SQL you would use the `CREATE TABLE` statement to create a table, as shown in the following example.
 
-```
+```sql
 CREATE TABLE Music (
     Artist VARCHAR(20) NOT NULL,
     SongTitle VARCHAR(30) NOT NULL,

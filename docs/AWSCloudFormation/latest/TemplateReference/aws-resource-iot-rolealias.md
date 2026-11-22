@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iot-rolealias-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoT::RoleAlias",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iot-rolealias-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoT::RoleAlias
 Properties:
   [CredentialDurationSeconds](#cfn-iot-rolealias-credentialdurationseconds): {{Integer}}

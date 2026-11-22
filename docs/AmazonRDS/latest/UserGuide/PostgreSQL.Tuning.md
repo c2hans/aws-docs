@@ -17,6 +17,7 @@ The wait events in this section are specific to RDS for PostgreSQL.
 + [IO:BufFileRead and IO:BufFileWrite](wait-event.iobuffile.md)
 + [IO:DataFileRead](wait-event.iodatafileread.md)
 + [IO:WALWrite](wait-event.iowalwrite.md)
++ [IO:WALSync](wait-event.iowalsync.md)
 + [IPC:parallel wait events](rpg-ipc-parallel.md)
 + [IPC:ProcArrayGroupUpdate](apg-rpg-ipcprocarraygroup.md)
 + [Lock:advisory](wait-event.lockadvisory.md)

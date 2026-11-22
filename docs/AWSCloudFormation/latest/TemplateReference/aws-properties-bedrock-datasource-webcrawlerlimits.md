@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-datasource-webcrawlerlimits-syntax.json"></a>
 
-```
+```json
 {
   "[MaxPages](#cfn-bedrock-datasource-webcrawlerlimits-maxpages)" : {{Integer}},
   "[RateLimit](#cfn-bedrock-datasource-webcrawlerlimits-ratelimit)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-datasource-webcrawlerlimits-syntax.yaml"></a>
 
-```
+```yaml
   [MaxPages](#cfn-bedrock-datasource-webcrawlerlimits-maxpages): {{Integer}}
   [RateLimit](#cfn-bedrock-datasource-webcrawlerlimits-ratelimit): {{Integer}}
 ```

@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-s3vectors-index-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::S3Vectors::Index",
   "Properties" : {
@@ -53,7 +53,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-s3vectors-index-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::S3Vectors::Index
 Properties:
   [DataType](#cfn-s3vectors-index-datatype): {{String}}

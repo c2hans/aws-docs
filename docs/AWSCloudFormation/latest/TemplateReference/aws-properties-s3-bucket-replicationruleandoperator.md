@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-replicationruleandoperator-syntax.json"></a>
 
-```
+```json
 {
   "[Prefix](#cfn-s3-bucket-replicationruleandoperator-prefix)" : {{String}},
   "[TagFilters](#cfn-s3-bucket-replicationruleandoperator-tagfilters)" : {{[ TagFilter, ... ]}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-replicationruleandoperator-syntax.yaml"></a>
 
-```
+```yaml
   [Prefix](#cfn-s3-bucket-replicationruleandoperator-prefix): {{String}}
   [TagFilters](#cfn-s3-bucket-replicationruleandoperator-tagfilters): {{
     - TagFilter}}

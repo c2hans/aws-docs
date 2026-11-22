@@ -4485,7 +4485,7 @@ PostgreSQL version 9.6.3 contains several new features and bug fixes. This versi
 + Supports `wal2json`, an output plugin for logical decoding.
 + Supports the `auto_explain` extension. You can use this extension to log execution plans of slow statements automatically. The following example shows how to use `auto_explain` from within an Amazon RDS PostgreSQL session:
 
-  ```
+  ```sql
   LOAD '$libdir/plugins/auto_explain';
   ```
 

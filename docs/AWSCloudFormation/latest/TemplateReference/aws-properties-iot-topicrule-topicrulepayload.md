@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicrule-topicrulepayload-syntax.json"></a>
 
-```
+```json
 {
   "[Actions](#cfn-iot-topicrule-topicrulepayload-actions)" : {{[ Action, ... ]}},
   "[AwsIotSqlVersion](#cfn-iot-topicrule-topicrulepayload-awsiotsqlversion)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicrule-topicrulepayload-syntax.yaml"></a>
 
-```
+```yaml
   [Actions](#cfn-iot-topicrule-topicrulepayload-actions): {{
     - Action}}
   [AwsIotSqlVersion](#cfn-iot-topicrule-topicrulepayload-awsiotsqlversion): {{String}}

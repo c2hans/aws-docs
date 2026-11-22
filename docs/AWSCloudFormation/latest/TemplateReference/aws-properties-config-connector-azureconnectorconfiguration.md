@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-config-connector-azureconnectorconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ClientIdentifier](#cfn-config-connector-azureconnectorconfiguration-clientidentifier)" : {{String}},
   "[TenantIdentifier](#cfn-config-connector-azureconnectorconfiguration-tenantidentifier)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-config-connector-azureconnectorconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ClientIdentifier](#cfn-config-connector-azureconnectorconfiguration-clientidentifier): {{String}}
   [TenantIdentifier](#cfn-config-connector-azureconnectorconfiguration-tenantidentifier): {{String}}
 ```

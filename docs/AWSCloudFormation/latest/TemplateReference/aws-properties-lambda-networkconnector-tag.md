@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-networkconnector-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-lambda-networkconnector-tag-key)" : {{String}},
   "[Value](#cfn-lambda-networkconnector-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-networkconnector-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-lambda-networkconnector-tag-key): {{String}}
   [Value](#cfn-lambda-networkconnector-tag-value): {{String}}
 ```

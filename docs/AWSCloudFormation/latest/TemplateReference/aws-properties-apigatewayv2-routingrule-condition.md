@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apigatewayv2-routingrule-condition-syntax.json"></a>
 
-```
+```json
 {
   "[MatchBasePaths](#cfn-apigatewayv2-routingrule-condition-matchbasepaths)" : {{MatchBasePaths}},
   "[MatchHeaders](#cfn-apigatewayv2-routingrule-condition-matchheaders)" : {{MatchHeaders}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apigatewayv2-routingrule-condition-syntax.yaml"></a>
 
-```
+```yaml
   [MatchBasePaths](#cfn-apigatewayv2-routingrule-condition-matchbasepaths): {{
     MatchBasePaths}}
   [MatchHeaders](#cfn-apigatewayv2-routingrule-condition-matchheaders): {{

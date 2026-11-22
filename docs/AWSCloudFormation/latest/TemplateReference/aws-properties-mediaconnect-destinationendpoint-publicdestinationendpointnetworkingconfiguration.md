@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-destinationendpoint-publicdestinationendpointnetworkingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationAllowRules](#cfn-mediaconnect-destinationendpoint-publicdestinationendpointnetworkingconfiguration-destinationallowrules)" : {{[ PublicDestinationEndpointNetworkingConfigurationAllowRule, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-destinationendpoint-publicdestinationendpointnetworkingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationAllowRules](#cfn-mediaconnect-destinationendpoint-publicdestinationendpointnetworkingconfiguration-destinationallowrules): {{
     - PublicDestinationEndpointNetworkingConfigurationAllowRule}}
 ```

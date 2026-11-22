@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-virtualnode-awscloudmapservicediscovery-syntax.json"></a>
 
-```
+```json
 {
   "[Attributes](#cfn-appmesh-virtualnode-awscloudmapservicediscovery-attributes)" : {{[ AwsCloudMapInstanceAttribute, ... ]}},
   "[IpPreference](#cfn-appmesh-virtualnode-awscloudmapservicediscovery-ippreference)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-virtualnode-awscloudmapservicediscovery-syntax.yaml"></a>
 
-```
+```yaml
   [Attributes](#cfn-appmesh-virtualnode-awscloudmapservicediscovery-attributes): {{
     - AwsCloudMapInstanceAttribute}}
   [IpPreference](#cfn-appmesh-virtualnode-awscloudmapservicediscovery-ippreference): {{String}}

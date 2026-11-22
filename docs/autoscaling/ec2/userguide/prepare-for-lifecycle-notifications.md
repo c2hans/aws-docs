@@ -62,7 +62,7 @@ For an introductory tutorial that is directed towards console users, see [Tutori
 
    The following example shows the `pattern.json` for an instance launch lifecycle action. Replace the text in *{{italics}}* with the name of your Auto Scaling group.
 
-   ```
+   ```json
    {
      "source": [ "aws.autoscaling" ],
      "detail-type": [ "EC2 Instance-launch Lifecycle Action" ],

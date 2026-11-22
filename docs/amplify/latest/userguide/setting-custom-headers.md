@@ -62,7 +62,7 @@ Custom headers set in the `customHttp.yml` file and deployed in the app's root d
 
 Custom security headers enable enforcing HTTPS, preventing XSS attacks, and defending your browser against clickjacking. Use the following YAML syntax to apply custom security headers to your app.
 
-```
+```yaml
 customHeaders:
   - pattern: '**'
     headers:
@@ -87,7 +87,7 @@ You can manually adjust the `s-maxage` directive to have more control over the p
 
 To specify a custom value for `s-maxage`, use the following YAML format. This example keeps the associated content cached at the edge for 3600 seconds (one hour).
 
-```
+```yaml
 customHeaders:
   - pattern: '/img/*'
     headers:

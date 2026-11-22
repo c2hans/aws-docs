@@ -55,7 +55,7 @@ The following CLI example shows you how to view tags applied to a table bucket. 
 
 **Request:**
 
-```
+```bash
 aws --region {{us-west-2}} \
 s3tables list-tags-for-resource \
 --resource-arn arn:aws::s3tables:{{us-west-2}}:{{111122223333}}:bucket/{{amzn-s3-demo-table-bucket}}/table/{{example_table}}
@@ -63,7 +63,7 @@ s3tables list-tags-for-resource \
 
 **Response - tags present:**
 
-```
+```json
 {
     "tags": {
         "project": "Trinity",
@@ -74,7 +74,7 @@ s3tables list-tags-for-resource \
 
 **Response - no tags present:**
 
-```
+```json
 {
   "Tags": []
 }

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amplifyuibuilder-form-formcta-syntax.json"></a>
 
-```
+```json
 {
   "[Cancel](#cfn-amplifyuibuilder-form-formcta-cancel)" : {{FormButton}},
   "[Clear](#cfn-amplifyuibuilder-form-formcta-clear)" : {{FormButton}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amplifyuibuilder-form-formcta-syntax.yaml"></a>
 
-```
+```yaml
   [Cancel](#cfn-amplifyuibuilder-form-formcta-cancel): {{
     FormButton}}
   [Clear](#cfn-amplifyuibuilder-form-formcta-clear): {{

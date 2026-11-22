@@ -38,7 +38,7 @@ The following example bucket policy shows the `Effect`, `Principal`, `Action`, a
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "ExamplePolicy01",

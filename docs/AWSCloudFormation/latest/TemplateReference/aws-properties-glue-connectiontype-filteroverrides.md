@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-connectiontype-filteroverrides-syntax.json"></a>
 
-```
+```json
 {
   "[BetweenConfiguration](#cfn-glue-connectiontype-filteroverrides-betweenconfiguration)" : {{BetweenConfiguration}},
   "[DateTimeFormat](#cfn-glue-connectiontype-filteroverrides-datetimeformat)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-connectiontype-filteroverrides-syntax.yaml"></a>
 
-```
+```yaml
   [BetweenConfiguration](#cfn-glue-connectiontype-filteroverrides-betweenconfiguration): {{
     BetweenConfiguration}}
   [DateTimeFormat](#cfn-glue-connectiontype-filteroverrides-datetimeformat): {{String}}

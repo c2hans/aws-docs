@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-humantaskui-uitemplate-syntax.json"></a>
 
-```
+```json
 {
   "[Content](#cfn-sagemaker-humantaskui-uitemplate-content)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-humantaskui-uitemplate-syntax.yaml"></a>
 
-```
+```yaml
   [Content](#cfn-sagemaker-humantaskui-uitemplate-content): {{String}}
 ```
 

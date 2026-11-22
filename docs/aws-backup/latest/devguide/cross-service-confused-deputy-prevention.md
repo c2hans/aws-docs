@@ -14,7 +14,7 @@ The most effective way to protect against the confused deputy problem is to use 
 
 The following example shows how you can use the `aws:SourceArn` and `aws:SourceAccount` global condition context keys in AWS Backup to prevent the confused deputy problem. Add the following statement to your *KMS key policy* to deny the service principal `backup-storage.amazonaws.com` from performing KMS actions unless the request originates from your specified backup vaults and account:
 
-```
+```JSON
 {
   "Sid": "Deny Backup Storage confused deputy",
   "Effect": "Deny",

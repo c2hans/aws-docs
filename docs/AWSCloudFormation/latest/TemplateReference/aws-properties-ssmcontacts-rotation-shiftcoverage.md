@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssmcontacts-rotation-shiftcoverage-syntax.json"></a>
 
-```
+```json
 {
   "[CoverageTimes](#cfn-ssmcontacts-rotation-shiftcoverage-coveragetimes)" : {{[ CoverageTime, ... ]}},
   "[DayOfWeek](#cfn-ssmcontacts-rotation-shiftcoverage-dayofweek)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssmcontacts-rotation-shiftcoverage-syntax.yaml"></a>
 
-```
+```yaml
   [CoverageTimes](#cfn-ssmcontacts-rotation-shiftcoverage-coveragetimes): {{
     - CoverageTime}}
   [DayOfWeek](#cfn-ssmcontacts-rotation-shiftcoverage-dayofweek): {{String}}

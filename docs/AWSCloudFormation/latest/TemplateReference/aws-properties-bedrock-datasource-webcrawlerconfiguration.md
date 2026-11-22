@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-datasource-webcrawlerconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CrawlerLimits](#cfn-bedrock-datasource-webcrawlerconfiguration-crawlerlimits)" : {{WebCrawlerLimits}},
   "[ExclusionFilters](#cfn-bedrock-datasource-webcrawlerconfiguration-exclusionfilters)" : {{[ String, ... ]}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-datasource-webcrawlerconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CrawlerLimits](#cfn-bedrock-datasource-webcrawlerconfiguration-crawlerlimits): {{
     WebCrawlerLimits}}
   [ExclusionFilters](#cfn-bedrock-datasource-webcrawlerconfiguration-exclusionfilters): {{

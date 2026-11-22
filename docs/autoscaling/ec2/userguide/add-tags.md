@@ -68,7 +68,7 @@ If you want to view the tags that are applied to a specific Auto Scaling group, 
 
   The following is an example response.
 
-  ```
+  ```json
   {
       "Tags": [
           {
@@ -89,7 +89,7 @@ If you want to view the tags that are applied to a specific Auto Scaling group, 
 
   The following is an example response.
 
-  ```
+  ```json
   {
       "AutoScalingGroups": [
           {

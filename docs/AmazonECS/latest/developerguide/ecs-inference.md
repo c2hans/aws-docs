@@ -44,7 +44,7 @@ To select Neuron-enabled instance types for your Managed Instances workloads, us
 
 The following example uses `allowedInstanceTypes`:
 
-```
+```JSON
 {
     "instanceRequirements": {
         "allowedInstanceTypes": ["inf*", "trn*"]

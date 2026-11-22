@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-deliverystreamencryptionconfigurationinput-syntax.json"></a>
 
-```
+```json
 {
   "[KeyARN](#cfn-kinesisfirehose-deliverystream-deliverystreamencryptionconfigurationinput-keyarn)" : {{String}},
   "[KeyType](#cfn-kinesisfirehose-deliverystream-deliverystreamencryptionconfigurationinput-keytype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-deliverystreamencryptionconfigurationinput-syntax.yaml"></a>
 
-```
+```yaml
   [KeyARN](#cfn-kinesisfirehose-deliverystream-deliverystreamencryptionconfigurationinput-keyarn): {{String}}
   [KeyType](#cfn-kinesisfirehose-deliverystream-deliverystreamencryptionconfigurationinput-keytype): {{String}}
 ```

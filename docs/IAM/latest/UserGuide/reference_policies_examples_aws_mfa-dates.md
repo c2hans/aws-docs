@@ -13,7 +13,7 @@ To learn about using multiple conditions within the `Condition` block of an IAM 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {

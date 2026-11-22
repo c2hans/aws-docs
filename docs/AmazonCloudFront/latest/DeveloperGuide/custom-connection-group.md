@@ -39,6 +39,8 @@ When your connection group is created, you can find the settings that you specif
 
 You can edit or delete your custom connection group after you create it. Before you can delete a connection group, you must first delete all associated distribution tenants from it. You can't disable or delete the default connection group that CloudFront created for you when you created your multi-tenant distribution.
 
+If your connection group uses an Anycast static IP list, you can also choose which domains its distribution tenants serve only on that list, how CloudFront handles viewers that don't send SNI, and get connection logs for HTTPS connections to its distribution tenants. For more information, see [Serve domains on specific IP addresses with address-based selection](address-based-selection.md), [Serve viewers that don't send SNI with a viewer fallback](connection-group-viewer-fallback.md), and [Connection logs for distribution tenants on Anycast static IPs](connection-logs.md#connection-logs-anycast-tenants).
+
 **Important**
 If you change the connection group for a distribution tenant, CloudFront will continue to carry traffic for the distribution tenant, but with increased latency. We recommend that you update the DNS record for the distribution tenant to use the CloudFront routing endpoint from the new connection group.
 Until you update the DNS record, CloudFront will route based on settings defined for the routing endpoint that the website is currently pointing to with DNS. For example, assume that your default connection group does not use Anycast static IPs but your new, custom connection group does. You must update the DNS record before CloudFront will use Anycast static IPs for the distribution tenants in your custom connection group.

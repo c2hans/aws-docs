@@ -64,7 +64,7 @@ To disable log collection entirely, update the add-on configuration with contain
 **To disable log collection**
 + Run the following command. Replace {{cluster-name}} with the name of your Amazon EKS cluster.
 
-  ```
+  ```bash
   aws eks update-addon \
     --cluster-name {{cluster-name}} \
     --addon-name amazon-cloudwatch-observability \
@@ -80,7 +80,7 @@ By default, CloudWatch Logs retains log data indefinitely. To control storage co
 **To set log retention**
 + Run the following command. Replace {{cluster-name}} with the name of your Amazon EKS cluster. Replace {{30}} with the number of days to retain logs.
 
-  ```
+  ```bash
   aws logs put-retention-policy \
     --log-group-name "/aws/containerinsights/{{cluster-name}}/application" \
     --retention-in-days {{30}}
@@ -94,7 +94,7 @@ To verify that log collection is working, check that the expected log groups exi
 **To verify log collection**
 + Run the following command. Replace {{cluster-name}} with the name of your Amazon EKS cluster.
 
-  ```
+  ```bash
   aws logs describe-log-groups \
     --log-group-name-prefix "/aws/containerinsights/{{cluster-name}}" \
     --query "logGroups[].{Name:logGroupName,StoredBytes:storedBytes}" \
@@ -130,13 +130,13 @@ Use the following guidance to resolve common log collection issues.
 
 1. Check that the collector DaemonSet pod has a volume mount for `/var/log/pods`.
 
-   ```
+   ```bash
    kubectl get daemonset -n amazon-cloudwatch -o yaml | grep -A 5 "var/log/pods"
    ```
 
 1. Check the collector logs for file access errors.
 
-   ```
+   ```bash
    kubectl logs -n amazon-cloudwatch -l app.kubernetes.io/name=cloudwatch-agent --tail=50 | grep -i "error\|permission"
    ```
 

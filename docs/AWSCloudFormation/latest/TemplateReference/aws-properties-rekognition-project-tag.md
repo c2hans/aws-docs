@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rekognition-project-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-rekognition-project-tag-key)" : {{String}},
   "[Value](#cfn-rekognition-project-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rekognition-project-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-rekognition-project-tag-key): {{String}}
   [Value](#cfn-rekognition-project-tag-value): {{String}}
 ```

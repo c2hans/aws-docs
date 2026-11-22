@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-datasource-manifestfilelocation-syntax.json"></a>
 
-```
+```json
 {
   "[Bucket](#cfn-quicksight-datasource-manifestfilelocation-bucket)" : {{String}},
   "[Key](#cfn-quicksight-datasource-manifestfilelocation-key)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-datasource-manifestfilelocation-syntax.yaml"></a>
 
-```
+```yaml
   [Bucket](#cfn-quicksight-datasource-manifestfilelocation-bucket): {{String}}
   [Key](#cfn-quicksight-datasource-manifestfilelocation-key): {{String}}
 ```

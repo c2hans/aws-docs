@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-quicksight-customization-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::QuickSight::Customization",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-quicksight-customization-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::QuickSight::Customization
 Properties:
   [DefaultTheme](#cfn-quicksight-customization-defaulttheme): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpoolriskconfigurationattachment-compromisedcredentialsactionstype-syntax.json"></a>
 
-```
+```json
 {
   "[EventAction](#cfn-cognito-userpoolriskconfigurationattachment-compromisedcredentialsactionstype-eventaction)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpoolriskconfigurationattachment-compromisedcredentialsactionstype-syntax.yaml"></a>
 
-```
+```yaml
   [EventAction](#cfn-cognito-userpoolriskconfigurationattachment-compromisedcredentialsactionstype-eventaction): {{String}}
 ```
 

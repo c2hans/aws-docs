@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-dms-certificate-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DMS::Certificate",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-dms-certificate-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DMS::Certificate
 Properties:
   [CertificateIdentifier](#cfn-dms-certificate-certificateidentifier): {{String}}
@@ -91,7 +91,7 @@ The Amazon Resource Name (ARN) for the certificate.
 #### JSON
 <a name="aws-resource-dms-certificate--examples----json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Certificate test",
@@ -109,7 +109,7 @@ The Amazon Resource Name (ARN) for the certificate.
 #### YAML
 <a name="aws-resource-dms-certificate--examples----yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: "Certificate test"
 Resources:

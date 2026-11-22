@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-notifications-organizationalunitassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Notifications::OrganizationalUnitAssociation",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-notifications-organizationalunitassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Notifications::OrganizationalUnitAssociation
 Properties:
   [NotificationConfigurationArn](#cfn-notifications-organizationalunitassociation-notificationconfigurationarn): {{String}}

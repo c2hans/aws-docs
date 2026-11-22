@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityhub-connectorv2-azurescopeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ScopeType](#cfn-securityhub-connectorv2-azurescopeconfiguration-scopetype)" : {{String}},
   "[ScopeValues](#cfn-securityhub-connectorv2-azurescopeconfiguration-scopevalues)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityhub-connectorv2-azurescopeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ScopeType](#cfn-securityhub-connectorv2-azurescopeconfiguration-scopetype): {{String}}
   [ScopeValues](#cfn-securityhub-connectorv2-azurescopeconfiguration-scopevalues): {{
     - String}}

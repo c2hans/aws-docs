@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-timestream-influxdbcluster-s3configuration-syntax.json"></a>
 
-```
+```json
 {
   "[BucketName](#cfn-timestream-influxdbcluster-s3configuration-bucketname)" : {{String}},
   "[Enabled](#cfn-timestream-influxdbcluster-s3configuration-enabled)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-timestream-influxdbcluster-s3configuration-syntax.yaml"></a>
 
-```
+```yaml
   [BucketName](#cfn-timestream-influxdbcluster-s3configuration-bucketname): {{String}}
   [Enabled](#cfn-timestream-influxdbcluster-s3configuration-enabled): {{Boolean}}
 ```

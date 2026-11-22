@@ -106,6 +106,11 @@ Type: Array of [UserSetting](API_UserSetting.md) objects
 Array Members: Minimum number of 1 item.
 Required: No
 
+ ** WebAuthnRedirection **   <a name="WorkSpacesApplications-Type-Stack-WebAuthnRedirection"></a>
+Configuration for WebAuthn redirection between the streaming session and the user's local device. Use ProcessCompatibilityList to specify which processes can use WebAuthn redirection on Windows fleets.
+Type: [WebAuthnRedirection](API_WebAuthnRedirection.md) object
+Required: No
+
 ## See Also
 <a name="API_Stack_SeeAlso"></a>
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-aps-anomalydetector-missingdataaction-syntax.json"></a>
 
-```
+```json
 {
   "[MarkAsAnomaly](#cfn-aps-anomalydetector-missingdataaction-markasanomaly)" : {{Boolean}},
   "[Skip](#cfn-aps-anomalydetector-missingdataaction-skip)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-aps-anomalydetector-missingdataaction-syntax.yaml"></a>
 
-```
+```yaml
   [MarkAsAnomaly](#cfn-aps-anomalydetector-missingdataaction-markasanomaly): {{Boolean}}
   [Skip](#cfn-aps-anomalydetector-missingdataaction-skip): {{Boolean}}
 ```

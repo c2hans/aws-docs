@@ -8,7 +8,7 @@ Collects log data from Microsoft Office 365 Management API using OAuth2 authenti
 
 Configure the Microsoft Office 365 source with the following parameters:
 
-```
+```yaml
 source:
   microsoft_office365:
     tenant_id: "<example-tenant-ID>"

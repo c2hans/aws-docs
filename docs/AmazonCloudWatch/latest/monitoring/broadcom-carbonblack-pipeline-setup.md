@@ -8,7 +8,7 @@ The Broadcom Carbon Black setup on AWS reads log data from Amazon S3 buckets usi
 
 Configure the Broadcom Carbon Black source with the following parameters:
 
-```
+```yaml
 source:
   s3:
     aws:

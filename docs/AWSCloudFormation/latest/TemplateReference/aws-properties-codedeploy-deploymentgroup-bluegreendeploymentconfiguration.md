@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codedeploy-deploymentgroup-bluegreendeploymentconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DeploymentReadyOption](#cfn-codedeploy-deploymentgroup-bluegreendeploymentconfiguration-deploymentreadyoption)" : {{DeploymentReadyOption}},
   "[GreenFleetProvisioningOption](#cfn-codedeploy-deploymentgroup-bluegreendeploymentconfiguration-greenfleetprovisioningoption)" : {{GreenFleetProvisioningOption}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codedeploy-deploymentgroup-bluegreendeploymentconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DeploymentReadyOption](#cfn-codedeploy-deploymentgroup-bluegreendeploymentconfiguration-deploymentreadyoption): {{
     DeploymentReadyOption}}
   [GreenFleetProvisioningOption](#cfn-codedeploy-deploymentgroup-bluegreendeploymentconfiguration-greenfleetprovisioningoption): {{

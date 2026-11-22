@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lightsail-container-ecrimagepullerrole-syntax.json"></a>
 
-```
+```json
 {
   "[IsActive](#cfn-lightsail-container-ecrimagepullerrole-isactive)" : {{Boolean}},
   "[PrincipalArn](#cfn-lightsail-container-ecrimagepullerrole-principalarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lightsail-container-ecrimagepullerrole-syntax.yaml"></a>
 
-```
+```yaml
   [IsActive](#cfn-lightsail-container-ecrimagepullerrole-isactive): {{Boolean}}
   [PrincipalArn](#cfn-lightsail-container-ecrimagepullerrole-principalarn): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dms-endpoint-s3settings-syntax.json"></a>
 
-```
+```json
 {
   "[AddColumnName](#cfn-dms-endpoint-s3settings-addcolumnname)" : {{Boolean}},
   "[AddTrailingPaddingCharacter](#cfn-dms-endpoint-s3settings-addtrailingpaddingcharacter)" : {{Boolean}},
@@ -65,7 +65,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dms-endpoint-s3settings-syntax.yaml"></a>
 
-```
+```yaml
   [AddColumnName](#cfn-dms-endpoint-s3settings-addcolumnname): {{Boolean}}
   [AddTrailingPaddingCharacter](#cfn-dms-endpoint-s3settings-addtrailingpaddingcharacter): {{Boolean}}
   [BucketFolder](#cfn-dms-endpoint-s3settings-bucketfolder): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-elasticloadbalancingv2-loadbalancer-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ElasticLoadBalancingV2::LoadBalancer",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-elasticloadbalancingv2-loadbalancer-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ElasticLoadBalancingV2::LoadBalancer
 Properties:
   [EnableCapacityReservationProvisionStabilize](#cfn-elasticloadbalancingv2-loadbalancer-enablecapacityreservationprovisionstabilize): {{Boolean}}
@@ -234,7 +234,7 @@ The following example creates an internal Application Load Balancer with an asso
 #### YAML
 <a name="aws-resource-elasticloadbalancingv2-loadbalancer--examples--Create_an_Application_Load_Balancer--yaml"></a>
 
-```
+```yaml
 myLoadBalancer:
     Type: 'AWS::ElasticLoadBalancingV2::LoadBalancer'
     Properties:
@@ -254,7 +254,7 @@ myLoadBalancer:
 #### JSON
 <a name="aws-resource-elasticloadbalancingv2-loadbalancer--examples--Create_an_Application_Load_Balancer--json"></a>
 
-```
+```json
 {
     "myLoadBalancer": {
         "Type": "AWS::ElasticLoadBalancingV2::LoadBalancer",
@@ -294,7 +294,7 @@ The following example creates an internal Network Load Balancer with an associat
 #### YAML
 <a name="aws-resource-elasticloadbalancingv2-loadbalancer--examples--Create_a_Network_Load_Balancer--yaml"></a>
 
-```
+```yaml
 myLoadBalancer:
     Type: 'AWS::ElasticLoadBalancingV2::LoadBalancer'
     Properties:
@@ -314,7 +314,7 @@ myLoadBalancer:
 #### JSON
 <a name="aws-resource-elasticloadbalancingv2-loadbalancer--examples--Create_a_Network_Load_Balancer--json"></a>
 
-```
+```json
 {
     "myLoadBalancer": {
         "Type": "AWS::ElasticLoadBalancingV2::LoadBalancer",

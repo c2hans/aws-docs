@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityhub-automationrule-numberfilter-syntax.json"></a>
 
-```
+```json
 {
   "[Eq](#cfn-securityhub-automationrule-numberfilter-eq)" : {{Number}},
   "[Gte](#cfn-securityhub-automationrule-numberfilter-gte)" : {{Number}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityhub-automationrule-numberfilter-syntax.yaml"></a>
 
-```
+```yaml
   [Eq](#cfn-securityhub-automationrule-numberfilter-eq): {{Number}}
   [Gte](#cfn-securityhub-automationrule-numberfilter-gte): {{Number}}
   [Lte](#cfn-securityhub-automationrule-numberfilter-lte): {{Number}}

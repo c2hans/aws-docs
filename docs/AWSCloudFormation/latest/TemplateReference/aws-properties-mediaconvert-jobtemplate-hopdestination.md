@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconvert-jobtemplate-hopdestination-syntax.json"></a>
 
-```
+```json
 {
   "[Priority](#cfn-mediaconvert-jobtemplate-hopdestination-priority)" : {{Integer}},
   "[Queue](#cfn-mediaconvert-jobtemplate-hopdestination-queue)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconvert-jobtemplate-hopdestination-syntax.yaml"></a>
 
-```
+```yaml
   [Priority](#cfn-mediaconvert-jobtemplate-hopdestination-priority): {{Integer}}
   [Queue](#cfn-mediaconvert-jobtemplate-hopdestination-queue): {{String}}
   [WaitMinutes](#cfn-mediaconvert-jobtemplate-hopdestination-waitminutes): {{Integer}}

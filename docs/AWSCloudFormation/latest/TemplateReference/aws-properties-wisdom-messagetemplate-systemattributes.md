@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-messagetemplate-systemattributes-syntax.json"></a>
 
-```
+```json
 {
   "[CustomerEndpoint](#cfn-wisdom-messagetemplate-systemattributes-customerendpoint)" : {{SystemEndpointAttributes}},
   "[Name](#cfn-wisdom-messagetemplate-systemattributes-name)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-messagetemplate-systemattributes-syntax.yaml"></a>
 
-```
+```yaml
   [CustomerEndpoint](#cfn-wisdom-messagetemplate-systemattributes-customerendpoint): {{
     SystemEndpointAttributes}}
   [Name](#cfn-wisdom-messagetemplate-systemattributes-name): {{String}}

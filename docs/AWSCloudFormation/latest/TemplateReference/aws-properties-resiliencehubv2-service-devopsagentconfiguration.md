@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-resiliencehubv2-service-devopsagentconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AgentSpaceArn](#cfn-resiliencehubv2-service-devopsagentconfiguration-agentspacearn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-resiliencehubv2-service-devopsagentconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AgentSpaceArn](#cfn-resiliencehubv2-service-devopsagentconfiguration-agentspacearn): {{String}}
 ```
 

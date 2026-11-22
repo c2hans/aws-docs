@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ssm-resourcepolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SSM::ResourcePolicy",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ssm-resourcepolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SSM::ResourcePolicy
 Properties:
   [Policy](#cfn-ssm-resourcepolicy-policy): {{Json}}
@@ -87,7 +87,7 @@ The following example specifies the management or delegated administrator accoun
 #### YAML
 <a name="aws-resource-ssm-resourcepolicy--examples--Create_a_resource_policy_for_OpsCenter--yaml"></a>
 
-```
+```yaml
 ---
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Creates resources needed for a member account to work with OpsCenter OpsItems across multiple accounts.

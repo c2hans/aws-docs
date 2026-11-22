@@ -17,7 +17,7 @@ For an example of the API request, see [CreateDataSource](https://docs.aws.amazo
 
 The following is the Microsoft Teams new connector JSON schema:
 
-```
+```json
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
   "$id": "https://amazonaws.com/plato/connector/configuration/msteams",

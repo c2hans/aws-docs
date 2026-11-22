@@ -116,7 +116,7 @@ Alternatively, if you're creating a DynamoDB data source, you can go to the **Sc
 
   An example command may look like this:
 
-  ```
+  ```TypeScript
    aws appsync create-data-source --api-id abcdefghijklmnopqrstuvwxyz --name data_source_name --type data_source_type --service-role-arn arn:aws:iam::107289374856:role/role_name --[data_source_type]-config {params}
   ```
 
@@ -138,14 +138,14 @@ To add your particular data source, you'll need to add the construct to your sta
 
 1. In general, you may have to add the import directive to the service you're using. For example, it may follow the forms:
 
-   ```
+   ```TypeScript
    import * as {{x}} from '{{x}}'; # import wildcard as the 'x' keyword from 'x-service'
    import {{{a}}, {{b}}, ...} from '{{c}}'; # import {specific constructs} from 'c-service'
    ```
 
    For example, here's how you could import the AWS AppSync and DynamoDB services:
 
-   ```
+   ```TypeScript
    import * as appsync from 'aws-cdk-lib/aws-appsync';
    import * as dynamodb from 'aws-cdk-lib/aws-dynamodb';
    ```
@@ -154,13 +154,13 @@ To add your particular data source, you'll need to add the construct to your sta
 
 1. For most data sources, especially AWS services, you'll be creating a new instance of the data source in your stack file. Typically, this will look like the following:
 
-   ```
+   ```TypeScript
    const {{add_data_source_func}} = new {{service_scope}}.{{resource_name}}(scope: Construct, id: string, props: data_source_props);
    ```
 
    For example, here's an example Amazon DynamoDB table:
 
-   ```
+   ```TypeScript
    const add_ddb_table = new dynamodb.Table(this, 'Table_ID', {
      partitionKey: {
        name: 'id',
@@ -178,7 +178,7 @@ Most data sources will have at least one required prop (will be denoted **withou
 
 1. Next, you need to link the data source to the GraphQL API. The recommended method is to add it when you make a function for your pipeline resolver. For instance, the snippet below is a function that scans all elements in a DynamoDB table:
 
-   ```
+   ```TypeScript
    const add_func = new appsync.AppsyncFunction(this, 'func_ID', {
      name: 'func_name_in_console',
      add_api,
@@ -200,7 +200,7 @@ Most data sources will have at least one required prop (will be denoted **withou
 
    There are alternative methods for linking a data source. You could technically add `api` to the props list in the table function. For example, here's the snippet from step 3 but with an `api` props containing a GraphQL API:
 
-   ```
+   ```TypeScript
    const add_api = new appsync.GraphqlApi(this, 'API_ID', {
      ...
    });
@@ -215,7 +215,7 @@ Most data sources will have at least one required prop (will be denoted **withou
 
    Alternatively, you can call the `GraphqlApi` construct separately:
 
-   ```
+   ```TypeScript
    const add_api = new appsync.GraphqlApi(this, 'API_ID', {
      ...
    });
@@ -243,7 +243,7 @@ If you’re using an existing IAM role for your data source, you need to grant t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -267,7 +267,7 @@ You can also add conditions to your trust policy to limit access to the data sou
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -296,7 +296,7 @@ Alternatively, you can limit access to a data source to a specific API, such as 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -325,7 +325,7 @@ You can limit access to all AWS AppSync APIs from a specific region, such as `us
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

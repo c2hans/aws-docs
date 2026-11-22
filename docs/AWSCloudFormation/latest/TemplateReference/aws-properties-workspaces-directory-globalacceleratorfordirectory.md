@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspaces-directory-globalacceleratorfordirectory-syntax.json"></a>
 
-```
+```json
 {
   "[Mode](#cfn-workspaces-directory-globalacceleratorfordirectory-mode)" : {{String}},
   "[PreferredProtocol](#cfn-workspaces-directory-globalacceleratorfordirectory-preferredprotocol)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspaces-directory-globalacceleratorfordirectory-syntax.yaml"></a>
 
-```
+```yaml
   [Mode](#cfn-workspaces-directory-globalacceleratorfordirectory-mode): {{String}}
   [PreferredProtocol](#cfn-workspaces-directory-globalacceleratorfordirectory-preferredprotocol): {{String}}
 ```

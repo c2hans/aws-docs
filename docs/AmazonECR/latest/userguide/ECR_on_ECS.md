@@ -22,7 +22,7 @@ The AWS managed IAM policies contain additional permissions that you may not req
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -46,7 +46,7 @@ When creating an Amazon ECS task definition, you can specify a container image h
 
 The following task definition snippet shows the syntax you would use to specify a container image hosted in Amazon ECR in your Amazon ECS task definition.
 
-```
+```JSON
 {
     "family": "{{task-definition-name}}",
     ...

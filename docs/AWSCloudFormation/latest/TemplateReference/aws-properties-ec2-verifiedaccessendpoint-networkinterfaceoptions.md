@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-verifiedaccessendpoint-networkinterfaceoptions-syntax.json"></a>
 
-```
+```json
 {
   "[NetworkInterfaceId](#cfn-ec2-verifiedaccessendpoint-networkinterfaceoptions-networkinterfaceid)" : {{String}},
   "[Port](#cfn-ec2-verifiedaccessendpoint-networkinterfaceoptions-port)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-verifiedaccessendpoint-networkinterfaceoptions-syntax.yaml"></a>
 
-```
+```yaml
   [NetworkInterfaceId](#cfn-ec2-verifiedaccessendpoint-networkinterfaceoptions-networkinterfaceid): {{String}}
   [Port](#cfn-ec2-verifiedaccessendpoint-networkinterfaceoptions-port): {{Integer}}
   [PortRanges](#cfn-ec2-verifiedaccessendpoint-networkinterfaceoptions-portranges): {{

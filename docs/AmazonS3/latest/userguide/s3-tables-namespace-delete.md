@@ -13,7 +13,7 @@ For information about the permissions required to delete a namespace, see [Delet
 
 This example shows you how to delete a table namespace by using the AWS CLI. To use this example, replace the `{{user input placeholders}}` with your own information.
 
-```
+```bash
 aws s3tables delete-namespace \
     --table-bucket-arn arn:aws:s3tables:{{us-east-1}}:{{111122223333}}:bucket/{{amzn-s3-demo-bucket1}} \
     --namespace {{example_namespace}}

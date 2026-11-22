@@ -8,12 +8,12 @@ Unsubscribes a callback function from the expiration warning event that is trigg
 
  **Signature**
 
-```
+```typescript
 offExpirationWarning(handler: ExpirationWarningHandler);
 ```
 
  **Usage**
 
-```
+```typescript
 sessionExpirationWarningClient.offExpirationWarning(handler);
 ```

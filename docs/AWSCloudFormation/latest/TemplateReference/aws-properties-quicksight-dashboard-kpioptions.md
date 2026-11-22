@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-kpioptions-syntax.json"></a>
 
-```
+```json
 {
   "[Comparison](#cfn-quicksight-dashboard-kpioptions-comparison)" : {{ComparisonConfiguration}},
   "[PrimaryValueDisplayType](#cfn-quicksight-dashboard-kpioptions-primaryvaluedisplaytype)" : {{String}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-kpioptions-syntax.yaml"></a>
 
-```
+```yaml
   [Comparison](#cfn-quicksight-dashboard-kpioptions-comparison): {{
     ComparisonConfiguration}}
   [PrimaryValueDisplayType](#cfn-quicksight-dashboard-kpioptions-primaryvaluedisplaytype): {{String}}

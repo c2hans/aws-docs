@@ -48,7 +48,7 @@ The following is an example IAM role trust policy for a resource type extension.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -81,7 +81,7 @@ The following is an example IAM role trust policy for a Hook extension.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -91,7 +91,7 @@ If the action is successful, the service sends back an HTTP 200 response with an
 
 In the following example, the request to submit these routing changes to initiate a failover is sent to the failover control infrastructure in the `us-east-1` Region. In this example, the `eu-north-1` Region is set to active, and the `ap-northeast-3` Region is set to passive. In other words, the `ap-northeast-3` Region is failed over to the `eu-north-1` Region.
 
-```
+```HTTP
 PATCH /v20180820/mrap/instances/<Multi-Region Access Point>/routes HTTP/1.1
 Host: example-account-id.s3-control.us-east-1.amazonaws.com
 
@@ -116,7 +116,7 @@ Host: example-account-id.s3-control.us-east-1.amazonaws.com
 
 The following request updates the route configuration of the `eu-north-1` Region to active. The request is sent to the failover control infrastructure in the `eu-west-1` Region.
 
-```
+```HTTP
 PATCH /v20180820/mrap/instances/<Multi-Region Access Point>/routes HTTP/1.1
 Host: example-account-id.s3-control.eu-west-1.amazonaws.com
 

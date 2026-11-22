@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-configurationset-trackingoptions-syntax.json"></a>
 
-```
+```json
 {
   "[CustomRedirectDomain](#cfn-ses-configurationset-trackingoptions-customredirectdomain)" : {{String}},
   "[HttpsPolicy](#cfn-ses-configurationset-trackingoptions-httpspolicy)" : {{String}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-configurationset-trackingoptions-syntax.yaml"></a>
 
-```
+```yaml
   [CustomRedirectDomain](#cfn-ses-configurationset-trackingoptions-customredirectdomain): {{String}}
   [HttpsPolicy](#cfn-ses-configurationset-trackingoptions-httpspolicy): {{String}}
 ```

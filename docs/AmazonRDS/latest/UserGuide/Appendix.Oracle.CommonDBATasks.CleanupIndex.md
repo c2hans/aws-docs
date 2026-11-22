@@ -15,7 +15,7 @@ The `online_index_clean` procedure has the following parameters.
 
 The following example cleans up a failed online index build:
 
-```
+```sql
 declare
   is_clean boolean;
 begin

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancing-loadbalancer-connectiondrainingpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-elasticloadbalancing-loadbalancer-connectiondrainingpolicy-enabled)" : {{Boolean}},
   "[Timeout](#cfn-elasticloadbalancing-loadbalancer-connectiondrainingpolicy-timeout)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancing-loadbalancer-connectiondrainingpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-elasticloadbalancing-loadbalancer-connectiondrainingpolicy-enabled): {{Boolean}}
   [Timeout](#cfn-elasticloadbalancing-loadbalancer-connectiondrainingpolicy-timeout): {{Integer}}
 ```

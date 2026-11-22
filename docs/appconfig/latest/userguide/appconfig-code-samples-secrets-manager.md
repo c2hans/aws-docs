@@ -11,7 +11,7 @@ Each of the following samples includes comments about the actions performed by t
 ------
 #### [ Java ]
 
-```
+```java
 private void createSecretsManagerConfigProfile() {
         AppConfigClient appconfig = AppConfigClient.create();
 
@@ -31,7 +31,7 @@ private void createSecretsManagerConfigProfile() {
 ------
 #### [ Python ]
 
-```
+```python
 import boto3
 
 appconfig = boto3.client('appconfig')
@@ -51,7 +51,7 @@ config_profile = appconfig.create_configuration_profile(
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 import {
   AppConfigClient,
   CreateConfigurationProfileCommand,

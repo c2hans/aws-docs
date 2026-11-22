@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-onlineevaluationconfig-filtervalue-syntax.json"></a>
 
-```
+```json
 {
   "[BooleanValue](#cfn-bedrockagentcore-onlineevaluationconfig-filtervalue-booleanvalue)" : {{Boolean}},
   "[DoubleValue](#cfn-bedrockagentcore-onlineevaluationconfig-filtervalue-doublevalue)" : {{Number}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-onlineevaluationconfig-filtervalue-syntax.yaml"></a>
 
-```
+```yaml
   [BooleanValue](#cfn-bedrockagentcore-onlineevaluationconfig-filtervalue-booleanvalue): {{
     Boolean}}
   [DoubleValue](#cfn-bedrockagentcore-onlineevaluationconfig-filtervalue-doublevalue): {{Number}}

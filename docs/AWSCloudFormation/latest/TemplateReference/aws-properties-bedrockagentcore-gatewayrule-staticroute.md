@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewayrule-staticroute-syntax.json"></a>
 
-```
+```json
 {
   "[Fallback](#cfn-bedrockagentcore-gatewayrule-staticroute-fallback)" : {{Fallback}},
   "[Model](#cfn-bedrockagentcore-gatewayrule-staticroute-model)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewayrule-staticroute-syntax.yaml"></a>
 
-```
+```yaml
   [Fallback](#cfn-bedrockagentcore-gatewayrule-staticroute-fallback): {{
     Fallback}}
   [Model](#cfn-bedrockagentcore-gatewayrule-staticroute-model): {{String}}

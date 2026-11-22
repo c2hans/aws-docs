@@ -127,7 +127,7 @@ You can use the `Query` operation to access one or more items in a global seco
 
 Consider the following data returned from a `Query` that requests gaming data for a leaderboard application.
 
-```
+```json
 {
     "TableName": "GameScores",
     "IndexName": "GameTitleIndex",

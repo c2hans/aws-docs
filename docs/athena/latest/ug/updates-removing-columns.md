@@ -10,7 +10,7 @@ You may need to remove columns from tables if they no longer contain data, or to
 
 In this example, remove a column ``totalprice`` from a table in Parquet and run a query. In Athena, Parquet is read by name by default, this is why we omit the SERDEPROPERTIES configuration that specifies reading by name. Notice that the following query succeeds, even though you changed the schema:
 
-```
+```sql
 CREATE EXTERNAL TABLE orders_parquet_column_removed (
    `o_orderkey` int,
    `o_custkey` int,

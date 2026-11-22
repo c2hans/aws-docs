@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-medialive-signalmap-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MediaLive::SignalMap",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-medialive-signalmap-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MediaLive::SignalMap
 Properties:
   [CloudWatchAlarmTemplateGroupIdentifiers](#cfn-medialive-signalmap-cloudwatchalarmtemplategroupidentifiers): {{

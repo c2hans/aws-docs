@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-alert-evaluation-syntax.json"></a>
 
-```
+```json
 {
   "[IntervalSeconds](#cfn-cloudwatch-alert-evaluation-intervalseconds)" : {{Integer}},
   "[PendingDurationSeconds](#cfn-cloudwatch-alert-evaluation-pendingdurationseconds)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-alert-evaluation-syntax.yaml"></a>
 
-```
+```yaml
   [IntervalSeconds](#cfn-cloudwatch-alert-evaluation-intervalseconds): {{Integer}}
   [PendingDurationSeconds](#cfn-cloudwatch-alert-evaluation-pendingdurationseconds): {{Integer}}
   [RecoveryDurationSeconds](#cfn-cloudwatch-alert-evaluation-recoverydurationseconds): {{Integer}}

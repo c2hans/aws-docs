@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-memorydb-cluster-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MemoryDB::Cluster",
   "Properties" : {
@@ -56,7 +56,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-memorydb-cluster-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MemoryDB::Cluster
 Properties:
   [ACLName](#cfn-memorydb-cluster-aclname): {{String}}

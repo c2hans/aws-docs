@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-dataautomationproject-documentstandardextraction-syntax.json"></a>
 
-```
+```json
 {
   "[BoundingBox](#cfn-bedrock-dataautomationproject-documentstandardextraction-boundingbox)" : {{DocumentBoundingBox}},
   "[Granularity](#cfn-bedrock-dataautomationproject-documentstandardextraction-granularity)" : {{DocumentExtractionGranularity}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-dataautomationproject-documentstandardextraction-syntax.yaml"></a>
 
-```
+```yaml
   [BoundingBox](#cfn-bedrock-dataautomationproject-documentstandardextraction-boundingbox): {{
     DocumentBoundingBox}}
   [Granularity](#cfn-bedrock-dataautomationproject-documentstandardextraction-granularity): {{

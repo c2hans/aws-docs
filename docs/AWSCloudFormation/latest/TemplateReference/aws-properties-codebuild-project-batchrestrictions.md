@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codebuild-project-batchrestrictions-syntax.json"></a>
 
-```
+```json
 {
   "[ComputeTypesAllowed](#cfn-codebuild-project-batchrestrictions-computetypesallowed)" : {{[ String, ... ]}},
   "[FleetsAllowed](#cfn-codebuild-project-batchrestrictions-fleetsallowed)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codebuild-project-batchrestrictions-syntax.yaml"></a>
 
-```
+```yaml
   [ComputeTypesAllowed](#cfn-codebuild-project-batchrestrictions-computetypesallowed): {{
     - String}}
   [FleetsAllowed](#cfn-codebuild-project-batchrestrictions-fleetsallowed): {{

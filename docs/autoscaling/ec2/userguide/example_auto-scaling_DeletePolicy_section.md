@@ -28,7 +28,7 @@ For more information, see [Delete a scaling policy for an Auto Scaling group](ht
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified policy for the specified Auto Scaling group. You are prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASPolicy -AutoScalingGroupName my-asg -PolicyName myScaleInPolicy
 ```
 **Output:**
@@ -41,7 +41,7 @@ Performing operation "Remove-ASPolicy (DeletePolicy)" on Target "myScaleInPolicy
 ```
 **Example 2: If you specify the Force parameter, you are not prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASPolicy -AutoScalingGroupName my-asg -PolicyName myScaleInPolicy -Force
 ```
 +  For API details, see [DeletePolicy](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -49,7 +49,7 @@ Remove-ASPolicy -AutoScalingGroupName my-asg -PolicyName myScaleInPolicy -Force
 **Tools for PowerShell V5**
 **Example 1: This example deletes the specified policy for the specified Auto Scaling group. You are prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASPolicy -AutoScalingGroupName my-asg -PolicyName myScaleInPolicy
 ```
 **Output:**
@@ -62,7 +62,7 @@ Performing operation "Remove-ASPolicy (DeletePolicy)" on Target "myScaleInPolicy
 ```
 **Example 2: If you specify the Force parameter, you are not prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASPolicy -AutoScalingGroupName my-asg -PolicyName myScaleInPolicy -Force
 ```
 +  For API details, see [DeletePolicy](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

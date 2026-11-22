@@ -81,7 +81,7 @@ The following CLI example shows you how to create an access point with tags by u
 
 **Request:**
 
-```
+```bash
 aws s3control create-access-point --name {{{{my-access-point}}}} \
 --bucket {{{{amzn-s3-demo-bucket}}}} \
 --account-id {{111122223333}} \ --profile personal \

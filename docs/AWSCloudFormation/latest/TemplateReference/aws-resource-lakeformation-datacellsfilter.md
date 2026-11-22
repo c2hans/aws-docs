@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lakeformation-datacellsfilter-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::LakeFormation::DataCellsFilter",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lakeformation-datacellsfilter-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::LakeFormation::DataCellsFilter
 Properties:
   [ColumnNames](#cfn-lakeformation-datacellsfilter-columnnames): {{
@@ -143,7 +143,7 @@ The following example demonstrates how to create a `DataCellsFilter` resource us
 #### JSON
 <a name="aws-resource-lakeformation-datacellsfilter--examples--Creating_a_DataCellsFilter_using_row_and_column_wildcards--json"></a>
 
-```
+```json
 {
   "SampleDataCellsFilter": {
     "Type": "AWS::LakeFormation::DataCellsFilter",
@@ -164,7 +164,7 @@ The following example demonstrates how to create a `DataCellsFilter` resource us
 #### YAML
 <a name="aws-resource-lakeformation-datacellsfilter--examples--Creating_a_DataCellsFilter_using_row_and_column_wildcards--yaml"></a>
 
-```
+```yaml
 SampleDataCellsFilter:
     Type: AWS::LakeFormation::DataCellsFilter
     Properties:
@@ -185,7 +185,7 @@ The following example demonstrates how to create a `DataCellsFilter` resource us
 #### JSON
 <a name="aws-resource-lakeformation-datacellsfilter--examples--Creating_a_DataCellsFilter_using_a_row_wild_card_and_specified_columns--json"></a>
 
-```
+```json
 {
     "SampleDataCellsFilter": {
         "Type": "AWS::LakeFormation::DataCellsFilter",
@@ -206,7 +206,7 @@ The following example demonstrates how to create a `DataCellsFilter` resource us
 #### YAML
 <a name="aws-resource-lakeformation-datacellsfilter--examples--Creating_a_DataCellsFilter_using_a_row_wild_card_and_specified_columns--yaml"></a>
 
-```
+```yaml
 SampleDataCellsFilter:
     Type: AWS::LakeFormation::DataCellsFilter
     Properties:
@@ -227,7 +227,7 @@ The following example demonstrates how to create a `DataCellsFilter` using a row
 #### JSON
 <a name="aws-resource-lakeformation-datacellsfilter--examples--Creating_a_DataCellsFilter_using_a_row_filter_expression_and_a_column_wildcard--json"></a>
 
-```
+```json
 {
     "SampleDataCellsFilter": {
         "Type": "AWS::LakeFormation::DataCellsFilter",
@@ -248,7 +248,7 @@ The following example demonstrates how to create a `DataCellsFilter` using a row
 #### YAML
 <a name="aws-resource-lakeformation-datacellsfilter--examples--Creating_a_DataCellsFilter_using_a_row_filter_expression_and_a_column_wildcard--yaml"></a>
 
-```
+```yaml
 SampleDataCellsFilter:
     Type: AWS::LakeFormation::DataCellsFilter
     Properties:
@@ -269,7 +269,7 @@ The following example demonstrates how to create a `DataCellsFilter` resource us
 #### JSON
 <a name="aws-resource-lakeformation-datacellsfilter--examples--Creating_a_DataCellsFilter_using_a_row_filter_and_specified_columns--json"></a>
 
-```
+```json
 {
     "SampleDataCellsFilter": {
         "Type": "AWS::LakeFormation::DataCellsFilter",
@@ -290,7 +290,7 @@ The following example demonstrates how to create a `DataCellsFilter` resource us
 #### YAML
 <a name="aws-resource-lakeformation-datacellsfilter--examples--Creating_a_DataCellsFilter_using_a_row_filter_and_specified_columns--yaml"></a>
 
-```
+```yaml
 SampleDataCellsFilter:
     Type: AWS::LakeFormation::DataCellsFilter
     Properties:

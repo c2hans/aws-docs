@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-bridge-failoverconfig-syntax.json"></a>
 
-```
+```json
 {
   "[FailoverMode](#cfn-mediaconnect-bridge-failoverconfig-failovermode)" : {{String}},
   "[SourcePriority](#cfn-mediaconnect-bridge-failoverconfig-sourcepriority)" : {{SourcePriority}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-bridge-failoverconfig-syntax.yaml"></a>
 
-```
+```yaml
   [FailoverMode](#cfn-mediaconnect-bridge-failoverconfig-failovermode): {{String}}
   [SourcePriority](#cfn-mediaconnect-bridge-failoverconfig-sourcepriority): {{
     SourcePriority}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distribution-originmtlsconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ClientCertificateArn](#cfn-cloudfront-distribution-originmtlsconfig-clientcertificatearn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distribution-originmtlsconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ClientCertificateArn](#cfn-cloudfront-distribution-originmtlsconfig-clientcertificatearn): {{String}}
 ```
 

@@ -41,7 +41,7 @@ The following policy allows a user to perform all the tasks associated with mana
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -114,7 +114,7 @@ When you give a user full access to IAM, there is no limit to the permissions th
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {

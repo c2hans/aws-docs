@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationsignals-servicelevelobjective-slimetric-syntax.json"></a>
 
-```
+```json
 {
   "[CompositeSliConfig](#cfn-applicationsignals-servicelevelobjective-slimetric-compositesliconfig)" : {{CompositeSliConfig}},
   "[DependencyConfig](#cfn-applicationsignals-servicelevelobjective-slimetric-dependencyconfig)" : {{DependencyConfig}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationsignals-servicelevelobjective-slimetric-syntax.yaml"></a>
 
-```
+```yaml
   [CompositeSliConfig](#cfn-applicationsignals-servicelevelobjective-slimetric-compositesliconfig): {{
     CompositeSliConfig}}
   [DependencyConfig](#cfn-applicationsignals-servicelevelobjective-slimetric-dependencyconfig): {{

@@ -12,7 +12,7 @@ You can use the Resource Tags property to apply tags to resources, which can hel
 
 Replace `migra-abcdefg123456` with the tag value needed for your migrated resource followed by your PRM ID in the following example:
 
-```
+```json
 {
     "Key" : "aws-apn-id",
     "Value" : "{{migra-abcdefg123456}}"

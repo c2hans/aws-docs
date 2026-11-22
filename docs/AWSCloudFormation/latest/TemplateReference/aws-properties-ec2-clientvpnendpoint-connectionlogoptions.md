@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-clientvpnendpoint-connectionlogoptions-syntax.json"></a>
 
-```
+```json
 {
   "[CloudwatchLogGroup](#cfn-ec2-clientvpnendpoint-connectionlogoptions-cloudwatchloggroup)" : {{String}},
   "[CloudwatchLogStream](#cfn-ec2-clientvpnendpoint-connectionlogoptions-cloudwatchlogstream)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-clientvpnendpoint-connectionlogoptions-syntax.yaml"></a>
 
-```
+```yaml
   [CloudwatchLogGroup](#cfn-ec2-clientvpnendpoint-connectionlogoptions-cloudwatchloggroup): {{String}}
   [CloudwatchLogStream](#cfn-ec2-clientvpnendpoint-connectionlogoptions-cloudwatchlogstream): {{String}}
   [Enabled](#cfn-ec2-clientvpnendpoint-connectionlogoptions-enabled): {{Boolean}}

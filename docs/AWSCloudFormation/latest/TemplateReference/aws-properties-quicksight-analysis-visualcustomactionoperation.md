@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-visualcustomactionoperation-syntax.json"></a>
 
-```
+```json
 {
   "[FilterOperation](#cfn-quicksight-analysis-visualcustomactionoperation-filteroperation)" : {{CustomActionFilterOperation}},
   "[NavigationOperation](#cfn-quicksight-analysis-visualcustomactionoperation-navigationoperation)" : {{CustomActionNavigationOperation}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-visualcustomactionoperation-syntax.yaml"></a>
 
-```
+```yaml
   [FilterOperation](#cfn-quicksight-analysis-visualcustomactionoperation-filteroperation): {{
     CustomActionFilterOperation}}
   [NavigationOperation](#cfn-quicksight-analysis-visualcustomactionoperation-navigationoperation): {{

@@ -18,7 +18,7 @@ To view a monitor for Network Synthetic Monitor in the AWS Management Console, y
 
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
     "Statement": [
@@ -52,7 +52,7 @@ If you create an identity-based permissions policy that is more restrictive, use
 
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
     "Statement": [

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-followerchannelsettings-syntax.json"></a>
 
-```
+```json
 {
   "[LinkedChannelType](#cfn-medialive-channel-followerchannelsettings-linkedchanneltype)" : {{String}},
   "[PrimaryChannelArn](#cfn-medialive-channel-followerchannelsettings-primarychannelarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-followerchannelsettings-syntax.yaml"></a>
 
-```
+```yaml
   [LinkedChannelType](#cfn-medialive-channel-followerchannelsettings-linkedchanneltype): {{String}}
   [PrimaryChannelArn](#cfn-medialive-channel-followerchannelsettings-primarychannelarn): {{String}}
 ```

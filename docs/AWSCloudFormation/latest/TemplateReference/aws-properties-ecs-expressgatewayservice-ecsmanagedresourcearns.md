@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-expressgatewayservice-ecsmanagedresourcearns-syntax.json"></a>
 
-```
+```json
 {
   "[AutoScaling](#cfn-ecs-expressgatewayservice-ecsmanagedresourcearns-autoscaling)" : {{AutoScalingArns}},
   "[IngressPath](#cfn-ecs-expressgatewayservice-ecsmanagedresourcearns-ingresspath)" : {{IngressPathArns}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-expressgatewayservice-ecsmanagedresourcearns-syntax.yaml"></a>
 
-```
+```yaml
   [AutoScaling](#cfn-ecs-expressgatewayservice-ecsmanagedresourcearns-autoscaling): {{
     AutoScalingArns}}
   [IngressPath](#cfn-ecs-expressgatewayservice-ecsmanagedresourcearns-ingresspath): {{

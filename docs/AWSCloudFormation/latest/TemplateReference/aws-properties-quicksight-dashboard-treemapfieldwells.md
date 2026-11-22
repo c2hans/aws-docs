@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-treemapfieldwells-syntax.json"></a>
 
-```
+```json
 {
   "[TreeMapAggregatedFieldWells](#cfn-quicksight-dashboard-treemapfieldwells-treemapaggregatedfieldwells)" : {{TreeMapAggregatedFieldWells}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-treemapfieldwells-syntax.yaml"></a>
 
-```
+```yaml
   [TreeMapAggregatedFieldWells](#cfn-quicksight-dashboard-treemapfieldwells-treemapaggregatedfieldwells): {{
     TreeMapAggregatedFieldWells}}
 ```

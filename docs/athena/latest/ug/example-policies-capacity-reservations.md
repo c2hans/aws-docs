@@ -24,7 +24,7 @@ For a complete list of Amazon Athena actions, see the API action names in the [A
 The following policy allows all users to list all capacity reservations.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -43,7 +43,7 @@ The following policy allows all users to list all capacity reservations.
 The following policy allows a user to create, cancel, obtain details, and update the capacity reservation `test_capacity_reservation`. The policy also allows a user to assign `workgroupA` and `workgroupB` to `test_capacity_reservation`.
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[

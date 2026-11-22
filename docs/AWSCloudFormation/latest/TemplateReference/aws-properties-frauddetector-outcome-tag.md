@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-frauddetector-outcome-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-frauddetector-outcome-tag-key)" : {{String}},
   "[Value](#cfn-frauddetector-outcome-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-frauddetector-outcome-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-frauddetector-outcome-tag-key): {{String}}
   [Value](#cfn-frauddetector-outcome-tag-value): {{String}}
 ```

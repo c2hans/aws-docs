@@ -54,7 +54,7 @@ For more information, see [Using multi-factor authentication (MFA) in AWS](https
 **Tools for PowerShell V4**
 **Example 1: This example returns details about the MFA device assigned to the IAM user `David`. In this example you can tell that it is a virtual device because the `SerialNumber` is an ARN instead of a physical device's actual serial number.**
 
-```
+```powershell
 Get-IAMMFADevice -UserName David
 ```
 **Output:**
@@ -69,7 +69,7 @@ EnableDate                  SerialNumber                           UserName
 **Tools for PowerShell V5**
 **Example 1: This example returns details about the MFA device assigned to the IAM user `David`. In this example you can tell that it is a virtual device because the `SerialNumber` is an ARN instead of a physical device's actual serial number.**
 
-```
+```powershell
 Get-IAMMFADevice -UserName David
 ```
 **Output:**

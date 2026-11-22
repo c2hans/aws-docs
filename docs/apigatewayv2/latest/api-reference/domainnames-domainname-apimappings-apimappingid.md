@@ -99,7 +99,7 @@ The API mapping.
 #### PATCH schema
 <a name="domainnames-domainname-apimappings-apimappingid-request-body-patch-example"></a>
 
-```
+```json
 {
   "apiMappingKey": "string",
   "apiId": "string",
@@ -113,7 +113,7 @@ The API mapping.
 #### ApiMapping schema
 <a name="domainnames-domainname-apimappings-apimappingid-response-body-apimapping-example"></a>
 
-```
+```json
 {
   "apiMappingId": "string",
   "apiMappingKey": "string",
@@ -125,7 +125,7 @@ The API mapping.
 #### BadRequestException schema
 <a name="domainnames-domainname-apimappings-apimappingid-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -134,7 +134,7 @@ The API mapping.
 #### NotFoundException schema
 <a name="domainnames-domainname-apimappings-apimappingid-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -144,7 +144,7 @@ The API mapping.
 #### ConflictException schema
 <a name="domainnames-domainname-apimappings-apimappingid-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -153,7 +153,7 @@ The API mapping.
 #### LimitExceededException schema
 <a name="domainnames-domainname-apimappings-apimappingid-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

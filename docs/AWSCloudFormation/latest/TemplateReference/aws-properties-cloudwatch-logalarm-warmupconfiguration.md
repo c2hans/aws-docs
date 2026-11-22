@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-logalarm-warmupconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[OnlyStartEvaluatingAfterWarmUpPeriodEnds](#cfn-cloudwatch-logalarm-warmupconfiguration-onlystartevaluatingafterwarmupperiodends)" : {{Boolean}},
   "[WarmUpPeriodDurationInMinutes](#cfn-cloudwatch-logalarm-warmupconfiguration-warmupperioddurationinminutes)" : {{Integer}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-logalarm-warmupconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [OnlyStartEvaluatingAfterWarmUpPeriodEnds](#cfn-cloudwatch-logalarm-warmupconfiguration-onlystartevaluatingafterwarmupperiodends): {{Boolean}}
   [WarmUpPeriodDurationInMinutes](#cfn-cloudwatch-logalarm-warmupconfiguration-warmupperioddurationinminutes): {{Integer}}
 ```

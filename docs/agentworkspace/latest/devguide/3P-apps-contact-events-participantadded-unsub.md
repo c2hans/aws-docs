@@ -8,13 +8,13 @@ Unsubscribes from participant added events.
 
  **Signature**
 
-```
+```typescript
 offParticipantAdded(handler: ParticipantAddedHandler, contactId?: string): void
 ```
 
  **Usage**
 
-```
+```typescript
 contactClient.offParticipantAdded(handleParticipantAdded);
 ```
 

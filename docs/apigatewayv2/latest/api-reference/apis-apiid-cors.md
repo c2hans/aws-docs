@@ -44,7 +44,7 @@ Deletes a CORS configuration.
 #### NotFoundException schema
 <a name="apis-apiid-cors-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -54,7 +54,7 @@ Deletes a CORS configuration.
 #### LimitExceededException schema
 <a name="apis-apiid-cors-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

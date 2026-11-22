@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-synthetics-canary-dependency-syntax.json"></a>
 
-```
+```json
 {
   "[Reference](#cfn-synthetics-canary-dependency-reference)" : {{String}},
   "[Type](#cfn-synthetics-canary-dependency-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-synthetics-canary-dependency-syntax.yaml"></a>
 
-```
+```yaml
   [Reference](#cfn-synthetics-canary-dependency-reference): {{String}}
   [Type](#cfn-synthetics-canary-dependency-type): {{String}}
 ```

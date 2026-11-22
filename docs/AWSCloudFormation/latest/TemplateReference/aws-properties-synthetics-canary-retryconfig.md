@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-synthetics-canary-retryconfig-syntax.json"></a>
 
-```
+```json
 {
   "[MaxRetries](#cfn-synthetics-canary-retryconfig-maxretries)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-synthetics-canary-retryconfig-syntax.yaml"></a>
 
-```
+```yaml
   [MaxRetries](#cfn-synthetics-canary-retryconfig-maxretries): {{Integer}}
 ```
 

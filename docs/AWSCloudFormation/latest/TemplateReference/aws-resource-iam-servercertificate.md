@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iam-servercertificate-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IAM::ServerCertificate",
   "Properties" : {
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iam-servercertificate-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IAM::ServerCertificate
 Properties:
   [CertificateBody](#cfn-iam-servercertificate-certificatebody): {{String}}

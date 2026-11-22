@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-otaupdate-signingprofileparameter-syntax.json"></a>
 
-```
+```json
 {
   "[CertificateArn](#cfn-iot-otaupdate-signingprofileparameter-certificatearn)" : {{String}},
   "[CertificatePathOnDevice](#cfn-iot-otaupdate-signingprofileparameter-certificatepathondevice)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-otaupdate-signingprofileparameter-syntax.yaml"></a>
 
-```
+```yaml
   [CertificateArn](#cfn-iot-otaupdate-signingprofileparameter-certificatearn): {{String}}
   [CertificatePathOnDevice](#cfn-iot-otaupdate-signingprofileparameter-certificatepathondevice): {{String}}
   [Platform](#cfn-iot-otaupdate-signingprofileparameter-platform): {{String}}

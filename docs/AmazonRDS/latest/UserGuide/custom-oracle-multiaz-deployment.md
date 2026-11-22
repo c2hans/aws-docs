@@ -122,7 +122,7 @@ Before you can deploy RDS Custom for Oracle, you need to download and configure 
 
 Instead of using the console, you can create the stack using the AWS CLI:
 
-```
+```bash
 aws cloudformation create-stack \
   --stack-name rds-custom-oracle \
   --template-body file://rds-custom-oracle-prereqs.yaml \
@@ -172,7 +172,7 @@ aws cloudformation create-stack \
 
 **Optional: Deploy Using AWS CLI**
 
-```
+```bash
 aws cloudformation create-stack \
   --stack-name rds-custom-oracle \
   --template-body file://rds-custom-oracle.yaml \

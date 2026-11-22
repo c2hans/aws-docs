@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-memory-triggerconditioninput-syntax.json"></a>
 
-```
+```json
 {
   "[MessageBasedTrigger](#cfn-bedrockagentcore-memory-triggerconditioninput-messagebasedtrigger)" : {{MessageBasedTriggerInput}},
   "[TimeBasedTrigger](#cfn-bedrockagentcore-memory-triggerconditioninput-timebasedtrigger)" : {{TimeBasedTriggerInput}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-memory-triggerconditioninput-syntax.yaml"></a>
 
-```
+```yaml
   [MessageBasedTrigger](#cfn-bedrockagentcore-memory-triggerconditioninput-messagebasedtrigger): {{
     MessageBasedTriggerInput}}
   [TimeBasedTrigger](#cfn-bedrockagentcore-memory-triggerconditioninput-timebasedtrigger): {{

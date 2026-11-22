@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelcard-modelpackagedetails-syntax.json"></a>
 
-```
+```json
 {
   "[ApprovalDescription](#cfn-sagemaker-modelcard-modelpackagedetails-approvaldescription)" : {{String}},
   "[CreatedBy](#cfn-sagemaker-modelcard-modelpackagedetails-createdby)" : {{ModelPackageCreator}},
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelcard-modelpackagedetails-syntax.yaml"></a>
 
-```
+```yaml
   [ApprovalDescription](#cfn-sagemaker-modelcard-modelpackagedetails-approvaldescription): {{String}}
   [CreatedBy](#cfn-sagemaker-modelcard-modelpackagedetails-createdby): {{
     ModelPackageCreator}}

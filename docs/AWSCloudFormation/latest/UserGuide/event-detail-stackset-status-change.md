@@ -8,7 +8,7 @@ Below are the detail fields for StackSet Status Change events.
 
 The `source` and `detail-type` fields are included because they contain specific values for events.
 
-```
+```json
 {
   . . .,
   "detail-type": "CloudFormation StackSet Status Change",
@@ -43,7 +43,7 @@ The StackSet status.
 **Example: StackSet Status Change event**  <a name="event-detail-stackset-status-change.example"></a>
 The following is an example StackSet Status Change event. This event details that CloudFormation has deleted the specified stack set.
 
-```
+```json
 {
   "version": "0",
   "id": "42h6hb90-hg0w-11op-b01v-0xhnh0934z09",

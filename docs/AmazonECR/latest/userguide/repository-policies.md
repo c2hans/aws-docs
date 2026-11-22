@@ -30,7 +30,7 @@ This example shows an Amazon ECR repository policy, which allows for a specific 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -57,7 +57,7 @@ This example shows an IAM policy that achieves the same goal as above, by scopin
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticsearch-domain-ebsoptions-syntax.json"></a>
 
-```
+```json
 {
   "[EBSEnabled](#cfn-elasticsearch-domain-ebsoptions-ebsenabled)" : {{Boolean}},
   "[Iops](#cfn-elasticsearch-domain-ebsoptions-iops)" : {{Integer}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticsearch-domain-ebsoptions-syntax.yaml"></a>
 
-```
+```yaml
   [EBSEnabled](#cfn-elasticsearch-domain-ebsoptions-ebsenabled): {{Boolean}}
   [Iops](#cfn-elasticsearch-domain-ebsoptions-iops): {{Integer}}
   [VolumeSize](#cfn-elasticsearch-domain-ebsoptions-volumesize): {{Integer}}

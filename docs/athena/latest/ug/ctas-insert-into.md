@@ -16,7 +16,7 @@ The example in this topic uses a database called `tpch100` whose data resides in
 
    The following example statement partitions the data by the column `l_shipdate`. The table has 2525 partitions.
 
-   ```
+   ```sql
    CREATE EXTERNAL TABLE `tpch100.lineitem_parq_partitioned`(
      `l_orderkey` int,
      `l_partkey` int,
@@ -42,7 +42,7 @@ The example in this topic uses a database called `tpch100` whose data resides in
 
 1. Run a `SHOW PARTITIONS {{<table_name>}}` command like the following to list the partitions.
 
-   ```
+   ```sql
    SHOW PARTITIONS lineitem_parq_partitioned
    ```
 
@@ -73,7 +73,7 @@ The example in this topic uses a database called `tpch100` whose data resides in
 
    The following example creates a table called `my_lineitem_parq_partitioned` and uses the `WHERE `clause to restrict the `DATE` to earlier than `1992-02-01`. Because the sample dataset starts with January 1992, only partitions for January 1992 are created.
 
-   ```
+   ```sql
    CREATE table my_lineitem_parq_partitioned
    WITH (partitioned_by = ARRAY['l_shipdate']) AS
    SELECT l_orderkey,
@@ -97,7 +97,7 @@ The example in this topic uses a database called `tpch100` whose data resides in
 
 1. Run the `SHOW PARTITIONS` command to verify that the table contains the partitions that you want.
 
-   ```
+   ```sql
    SHOW PARTITIONS my_lineitem_parq_partitioned;
    ```
 
@@ -142,7 +142,7 @@ The example in this topic uses a database called `tpch100` whose data resides in
 
    The following example adds partitions for the dates from the month of February 1992.
 
-   ```
+   ```sql
    INSERT INTO my_lineitem_parq_partitioned
    SELECT l_orderkey,
             l_partkey,
@@ -166,7 +166,7 @@ The example in this topic uses a database called `tpch100` whose data resides in
 
 1. Run `SHOW PARTITIONS` again.
 
-   ```
+   ```sql
    SHOW PARTITIONS my_lineitem_parq_partitioned;
    ```
 

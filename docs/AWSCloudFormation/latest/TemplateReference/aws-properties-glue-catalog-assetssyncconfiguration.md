@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-catalog-assetssyncconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ManagedCrawlerDetails](#cfn-glue-catalog-assetssyncconfiguration-managedcrawlerdetails)" : {{ManagedCrawlerDetails}},
   "[RefreshIntervalMinutes](#cfn-glue-catalog-assetssyncconfiguration-refreshintervalminutes)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-catalog-assetssyncconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ManagedCrawlerDetails](#cfn-glue-catalog-assetssyncconfiguration-managedcrawlerdetails): {{
     ManagedCrawlerDetails}}
   [RefreshIntervalMinutes](#cfn-glue-catalog-assetssyncconfiguration-refreshintervalminutes): {{Integer}}

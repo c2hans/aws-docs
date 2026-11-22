@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-billingconductor-pricingrule-tiering-syntax.json"></a>
 
-```
+```json
 {
   "[CustomTiers](#cfn-billingconductor-pricingrule-tiering-customtiers)" : {{[ CustomTier, ... ]}},
   "[FreeTier](#cfn-billingconductor-pricingrule-tiering-freetier)" : {{FreeTier}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-billingconductor-pricingrule-tiering-syntax.yaml"></a>
 
-```
+```yaml
   [CustomTiers](#cfn-billingconductor-pricingrule-tiering-customtiers): {{
     - CustomTier}}
   [FreeTier](#cfn-billingconductor-pricingrule-tiering-freetier): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-sparklinesoptions-syntax.json"></a>
 
-```
+```json
 {
   "[AllPointsMarker](#cfn-quicksight-template-sparklinesoptions-allpointsmarker)" : {{LineChartMarkerStyleSettings}},
   "[FieldId](#cfn-quicksight-template-sparklinesoptions-fieldid)" : {{String}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-sparklinesoptions-syntax.yaml"></a>
 
-```
+```yaml
   [AllPointsMarker](#cfn-quicksight-template-sparklinesoptions-allpointsmarker): {{
     LineChartMarkerStyleSettings}}
   [FieldId](#cfn-quicksight-template-sparklinesoptions-fieldid): {{String}}

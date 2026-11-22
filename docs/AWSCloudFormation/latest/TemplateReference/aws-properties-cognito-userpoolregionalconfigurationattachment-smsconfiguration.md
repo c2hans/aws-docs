@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpoolregionalconfigurationattachment-smsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EumsSms](#cfn-cognito-userpoolregionalconfigurationattachment-smsconfiguration-eumssms)" : {{EumsSmsConfiguration}},
   "[ExternalId](#cfn-cognito-userpoolregionalconfigurationattachment-smsconfiguration-externalid)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpoolregionalconfigurationattachment-smsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EumsSms](#cfn-cognito-userpoolregionalconfigurationattachment-smsconfiguration-eumssms): {{
     EumsSmsConfiguration}}
   [ExternalId](#cfn-cognito-userpoolregionalconfigurationattachment-smsconfiguration-externalid): {{String}}

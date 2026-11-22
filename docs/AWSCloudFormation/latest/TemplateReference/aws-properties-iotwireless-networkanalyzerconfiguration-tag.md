@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotwireless-networkanalyzerconfiguration-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-iotwireless-networkanalyzerconfiguration-tag-key)" : {{String}},
   "[Value](#cfn-iotwireless-networkanalyzerconfiguration-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotwireless-networkanalyzerconfiguration-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-iotwireless-networkanalyzerconfiguration-tag-key): {{String}}
   [Value](#cfn-iotwireless-networkanalyzerconfiguration-tag-value): {{String}}
 ```

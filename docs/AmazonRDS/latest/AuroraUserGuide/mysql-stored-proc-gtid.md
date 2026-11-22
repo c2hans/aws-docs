@@ -20,7 +20,7 @@ Configures the `ASSIGN_GTIDS_TO_ANONYMOUS_TRANSACTIONS` option of the `CHANGE RE
 ### Syntax
 <a name="mysql_assign_gtids_to_anonymous_transactions-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_assign_gtids_to_anonymous_transactions({{gtid_option}});
 ```
 
@@ -96,13 +96,13 @@ To allow compatibility with MySQL 8.0, there are two ways to set the value of `g
 
 To replace the value of `gtid_purged` with your specified GTID set:
 
-```
+```sql
 CALL mysql.rds_gtid_purged ({{gtid_set}});
 ```
 
 To append the value of `gtid_purged` to your specified GTID set:
 
-```
+```sql
 CALL mysql.rds_gtid_purged (+{{gtid_set}});
 ```
 
@@ -124,7 +124,7 @@ This procedure is supported for Aurora MySQL version 3.04 and higher.
 
 The following example assigns the GTID `3E11FA47-71CA-11E1-9E33-C80AA9429562:23` to the `gtid_purged` global variable.
 
-```
+```sql
 CALL mysql.rds_gtid_purged('3E11FA47-71CA-11E1-9E33-C80AA9429562:23');
 ```
 
@@ -138,7 +138,7 @@ You can use this procedure for disaster recovery when a specific GTID transactio
 ### Syntax
 <a name="mysql_rds_skip_transaction_with_gtid-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_skip_transaction_with_gtid (
 {{gtid_to_skip}}
 );
@@ -162,7 +162,7 @@ This procedure is supported for Aurora MySQL version 2 and 3.
 
 The following example skips replication of the transaction with the GTID `3E11FA47-71CA-11E1-9E33-C80AA9429562:23`.
 
-```
+```sql
 CALL mysql.rds_skip_transaction_with_gtid('3E11FA47-71CA-11E1-9E33-C80AA9429562:23');
 ```
 
@@ -174,7 +174,7 @@ Initiates replication from an Aurora MySQL DB cluster and stops replication imme
 ### Syntax
 <a name="mysql_rds_start_replication_until_gtid-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_start_replication_until_gtid({{gtid}});
 ```
 
@@ -202,6 +202,6 @@ When the `gtid` parameter specifies a transaction that has already been run by t
 
 The following example initiates replication and replicates changes until it reaches GTID `3E11FA47-71CA-11E1-9E33-C80AA9429562:23`.
 
-```
+```sql
 call mysql.rds_start_replication_until_gtid('3E11FA47-71CA-11E1-9E33-C80AA9429562:23');
 ```

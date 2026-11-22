@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-codedeploy-application-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CodeDeploy::Application",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-codedeploy-application-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CodeDeploy::Application
 Properties:
   [ApplicationName](#cfn-codedeploy-application-applicationname): {{String}}
@@ -90,7 +90,7 @@ The following example specifies a CodeDeploy application with a Lambda compute p
 #### JSON
 <a name="aws-resource-codedeploy-application--examples--Specify_an_application_with_a_compute_platform--json"></a>
 
-```
+```json
 "CodeDeployApplication": {
     "Type": "AWS::CodeDeploy::Application",
     "Properties": {
@@ -102,7 +102,7 @@ The following example specifies a CodeDeploy application with a Lambda compute p
 #### YAML
 <a name="aws-resource-codedeploy-application--examples--Specify_an_application_with_a_compute_platform--yaml"></a>
 
-```
+```yaml
 CodeDeployApplication:
   Type: AWS::CodeDeploy::Application
   Properties:
@@ -117,7 +117,7 @@ The following example creates a CodeDeploy application with a `Server` compute p
 #### JSON
 <a name="aws-resource-codedeploy-application--examples--Specify_an_application_with_a_Server_compute_platform--json"></a>
 
-```
+```json
 "CodeDeployApplication": {
     "Type": "AWS::CodeDeploy::Application",
     "Properties": {
@@ -129,7 +129,7 @@ The following example creates a CodeDeploy application with a `Server` compute p
 #### YAML
 <a name="aws-resource-codedeploy-application--examples--Specify_an_application_with_a_Server_compute_platform--yaml"></a>
 
-```
+```yaml
 CodeDeployApplication:
   Type: AWS::CodeDeploy::Application
   Properties:

@@ -107,7 +107,7 @@ This example illustrates how to create a connection to a private GitHub code rep
 #### Sample Request
 <a name="API_CreateConnection_Example_1_Request"></a>
 
-```
+```json
 $ aws apprunner create-connection --cli-input-json "`cat`"
 {
   "ConnectionName": "my-github-connection",
@@ -118,7 +118,7 @@ $ aws apprunner create-connection --cli-input-json "`cat`"
 #### Sample Response
 <a name="API_CreateConnection_Example_1_Response"></a>
 
-```
+```json
 {
   "Connection": {
     "ConnectionArn": "arn:aws:apprunner:us-east-1:123456789012:connection/my-github-connection",

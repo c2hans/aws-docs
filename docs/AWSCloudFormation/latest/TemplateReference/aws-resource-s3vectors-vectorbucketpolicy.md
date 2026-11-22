@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-s3vectors-vectorbucketpolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::S3Vectors::VectorBucketPolicy",
   "Properties" : {
@@ -53,7 +53,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-s3vectors-vectorbucketpolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::S3Vectors::VectorBucketPolicy
 Properties:
   [Policy](#cfn-s3vectors-vectorbucketpolicy-policy): {{Json}}

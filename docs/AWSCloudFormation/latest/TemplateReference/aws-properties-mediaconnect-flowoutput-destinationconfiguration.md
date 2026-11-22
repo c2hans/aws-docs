@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-flowoutput-destinationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationIp](#cfn-mediaconnect-flowoutput-destinationconfiguration-destinationip)" : {{String}},
   "[DestinationPort](#cfn-mediaconnect-flowoutput-destinationconfiguration-destinationport)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-flowoutput-destinationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationIp](#cfn-mediaconnect-flowoutput-destinationconfiguration-destinationip): {{String}}
   [DestinationPort](#cfn-mediaconnect-flowoutput-destinationconfiguration-destinationport): {{Integer}}
   [Interface](#cfn-mediaconnect-flowoutput-destinationconfiguration-interface): {{

@@ -32,7 +32,7 @@ Within each `scrape_configs` entry, the following fields are supported:
 
 The following example demonstrates a basic scrape configuration:
 
-```
+```yaml
 global:
   scrape_interval: 60s
   scrape_timeout: 10s

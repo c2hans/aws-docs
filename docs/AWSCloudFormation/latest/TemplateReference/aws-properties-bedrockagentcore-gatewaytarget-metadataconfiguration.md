@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewaytarget-metadataconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AllowedQueryParameters](#cfn-bedrockagentcore-gatewaytarget-metadataconfiguration-allowedqueryparameters)" : {{[ String, ... ]}},
   "[AllowedRequestHeaders](#cfn-bedrockagentcore-gatewaytarget-metadataconfiguration-allowedrequestheaders)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewaytarget-metadataconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AllowedQueryParameters](#cfn-bedrockagentcore-gatewaytarget-metadataconfiguration-allowedqueryparameters): {{
     - String}}
   [AllowedRequestHeaders](#cfn-bedrockagentcore-gatewaytarget-metadataconfiguration-allowedrequestheaders): {{

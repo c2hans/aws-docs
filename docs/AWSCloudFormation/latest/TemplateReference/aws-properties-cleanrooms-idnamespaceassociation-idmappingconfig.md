@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-idnamespaceassociation-idmappingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AllowUseAsDimensionColumn](#cfn-cleanrooms-idnamespaceassociation-idmappingconfig-allowuseasdimensioncolumn)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-idnamespaceassociation-idmappingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AllowUseAsDimensionColumn](#cfn-cleanrooms-idnamespaceassociation-idmappingconfig-allowuseasdimensioncolumn): {{Boolean}}
 ```
 

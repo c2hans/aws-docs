@@ -13,7 +13,7 @@ From the container, you can use curl followed by the task meta data endpoint to 
 
 When querying the `${ECS_CONTAINER_METADATA_URI_V4}` endpoint you are returned only metadata about the container itself. The following is an example output.
 
-```
+```JSON
 {
     "DockerId": "cd189a933e5849daa93386466019ab50-2495160603",
     "Name": "curl",
@@ -72,7 +72,7 @@ When querying the `${ECS_CONTAINER_METADATA_URI_V4}` endpoint you are returned o
 
 When querying the `${ECS_CONTAINER_METADATA_URI_V4}/task` endpoint you are returned metadata about the task the container is part of. The following is an example output.
 
-```
+```JSON
 {
   "Cluster": "arn:aws:ecs:us-east-1:123456789012:cluster/MyEmptyCluster",
   "TaskARN": "arn:aws:ecs:us-east-1:123456789012:task/MyEmptyCluster/bfa2636268144d039771334145e490c5",
@@ -177,7 +177,7 @@ When querying the `${ECS_CONTAINER_METADATA_URI_V4}/task` endpoint you are retur
 
 When querying the `${ECS_CONTAINER_METADATA_URI_V4}/task/stats` endpoint you are returned network metrics about the task the container is part of. The following is an example output.
 
-```
+```JSON
 {
   "3d1f891cded94dc795608466cce8ddcf-464223573": {
     "read": "2020-10-08T21:24:44.938937019Z",

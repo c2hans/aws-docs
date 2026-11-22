@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-containergroupdefinition-containermountpoint-syntax.json"></a>
 
-```
+```json
 {
   "[AccessLevel](#cfn-gamelift-containergroupdefinition-containermountpoint-accesslevel)" : {{String}},
   "[ContainerPath](#cfn-gamelift-containergroupdefinition-containermountpoint-containerpath)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-containergroupdefinition-containermountpoint-syntax.yaml"></a>
 
-```
+```yaml
   [AccessLevel](#cfn-gamelift-containergroupdefinition-containermountpoint-accesslevel): {{String}}
   [ContainerPath](#cfn-gamelift-containergroupdefinition-containermountpoint-containerpath): {{String}}
   [InstancePath](#cfn-gamelift-containergroupdefinition-containermountpoint-instancepath): {{String}}

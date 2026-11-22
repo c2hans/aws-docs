@@ -32,7 +32,7 @@ You can create a Profile by running a AWS CLI command like the following and usi
 
 The following is an example output after you run the command:
 
-```
+```json
 {
     "Profile": {
         "Arn": "arn:aws:route53profiles:us-east-1:123456789012:profile/rp-6ffe47d5example",

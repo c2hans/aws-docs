@@ -8,7 +8,7 @@ IAM principals who run Athena ML queries must be allowed to perform the `sagemak
 
 Replace `arn:aws:sagemaker:{{region}}:{{AWSAcctID}}:{{ModelEndpoint}}` in the example with the ARN or ARNs of model endpoints to be used in queries. For more information, see [Actions, resources, and condition keys for SageMaker AI](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonsagemaker.html) in the *Service Authorization Reference*.
 
-```
+```json
 {
             "Effect": "Allow",
             "Action": [

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-cachepolicy-cookiesconfig-syntax.json"></a>
 
-```
+```json
 {
   "[CookieBehavior](#cfn-cloudfront-cachepolicy-cookiesconfig-cookiebehavior)" : {{String}},
   "[Cookies](#cfn-cloudfront-cachepolicy-cookiesconfig-cookies)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-cachepolicy-cookiesconfig-syntax.yaml"></a>
 
-```
+```yaml
   [CookieBehavior](#cfn-cloudfront-cachepolicy-cookiesconfig-cookiebehavior): {{String}}
   [Cookies](#cfn-cloudfront-cachepolicy-cookiesconfig-cookies): {{
     - String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotwireless-multicastgroup-lorawan-syntax.json"></a>
 
-```
+```json
 {
   "[DlClass](#cfn-iotwireless-multicastgroup-lorawan-dlclass)" : {{String}},
   "[NumberOfDevicesInGroup](#cfn-iotwireless-multicastgroup-lorawan-numberofdevicesingroup)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotwireless-multicastgroup-lorawan-syntax.yaml"></a>
 
-```
+```yaml
   [DlClass](#cfn-iotwireless-multicastgroup-lorawan-dlclass): {{String}}
   [NumberOfDevicesInGroup](#cfn-iotwireless-multicastgroup-lorawan-numberofdevicesingroup): {{Integer}}
   [NumberOfDevicesRequested](#cfn-iotwireless-multicastgroup-lorawan-numberofdevicesrequested): {{Integer}}

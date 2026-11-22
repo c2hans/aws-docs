@@ -29,7 +29,7 @@ To receive event notifications, you must grant ElastiCache permission to publish
 
 The following policy grants ElastiCache the required permission:
 
-```
+```JSON
 {
   "Version": "2012-10-17",
   "Statement": [

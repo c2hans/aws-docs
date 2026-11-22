@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dynamodb-globaltable-writeprovisionedthroughputsettings-syntax.json"></a>
 
-```
+```json
 {
   "[WriteCapacityAutoScalingSettings](#cfn-dynamodb-globaltable-writeprovisionedthroughputsettings-writecapacityautoscalingsettings)" : {{CapacityAutoScalingSettings}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dynamodb-globaltable-writeprovisionedthroughputsettings-syntax.yaml"></a>
 
-```
+```yaml
   [WriteCapacityAutoScalingSettings](#cfn-dynamodb-globaltable-writeprovisionedthroughputsettings-writecapacityautoscalingsettings): {{
     CapacityAutoScalingSettings}}
 ```

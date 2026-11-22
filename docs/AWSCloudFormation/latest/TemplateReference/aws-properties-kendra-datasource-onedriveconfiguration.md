@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-onedriveconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DisableLocalGroups](#cfn-kendra-datasource-onedriveconfiguration-disablelocalgroups)" : {{Boolean}},
   "[ExclusionPatterns](#cfn-kendra-datasource-onedriveconfiguration-exclusionpatterns)" : {{[ String, ... ]}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-onedriveconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DisableLocalGroups](#cfn-kendra-datasource-onedriveconfiguration-disablelocalgroups): {{Boolean}}
   [ExclusionPatterns](#cfn-kendra-datasource-onedriveconfiguration-exclusionpatterns): {{
     - String}}

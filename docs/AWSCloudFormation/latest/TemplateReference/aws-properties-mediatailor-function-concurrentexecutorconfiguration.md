@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-function-concurrentexecutorconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[FunctionList](#cfn-mediatailor-function-concurrentexecutorconfiguration-functionlist)" : {{[ FunctionRef, ... ]}},
   "[MaxConcurrency](#cfn-mediatailor-function-concurrentexecutorconfiguration-maxconcurrency)" : {{Integer}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-function-concurrentexecutorconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [FunctionList](#cfn-mediatailor-function-concurrentexecutorconfiguration-functionlist): {{
     - FunctionRef}}
   [MaxConcurrency](#cfn-mediatailor-function-concurrentexecutorconfiguration-maxconcurrency): {{Integer}}

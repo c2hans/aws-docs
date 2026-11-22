@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-omics-workflowversion-imagemapping-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationImage](#cfn-omics-workflowversion-imagemapping-destinationimage)" : {{String}},
   "[SourceImage](#cfn-omics-workflowversion-imagemapping-sourceimage)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-omics-workflowversion-imagemapping-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationImage](#cfn-omics-workflowversion-imagemapping-destinationimage): {{String}}
   [SourceImage](#cfn-omics-workflowversion-imagemapping-sourceimage): {{String}}
 ```

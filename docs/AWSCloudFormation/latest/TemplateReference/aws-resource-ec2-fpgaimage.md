@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-fpgaimage-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::FpgaImage",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-fpgaimage-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::FpgaImage
 Properties:
   [Description](#cfn-ec2-fpgaimage-description): {{String}}

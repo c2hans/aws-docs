@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-b2bi-partnership-x12delimiters-syntax.json"></a>
 
-```
+```json
 {
   "[ComponentSeparator](#cfn-b2bi-partnership-x12delimiters-componentseparator)" : {{String}},
   "[DataElementSeparator](#cfn-b2bi-partnership-x12delimiters-dataelementseparator)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-b2bi-partnership-x12delimiters-syntax.yaml"></a>
 
-```
+```yaml
   [ComponentSeparator](#cfn-b2bi-partnership-x12delimiters-componentseparator): {{String}}
   [DataElementSeparator](#cfn-b2bi-partnership-x12delimiters-dataelementseparator): {{String}}
   [SegmentTerminator](#cfn-b2bi-partnership-x12delimiters-segmentterminator): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-trigger-condition-syntax.json"></a>
 
-```
+```json
 {
   "[Schedule](#cfn-devopsagent-trigger-condition-schedule)" : {{Schedule}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-trigger-condition-syntax.yaml"></a>
 
-```
+```yaml
   [Schedule](#cfn-devopsagent-trigger-condition-schedule): {{
     Schedule}}
 ```

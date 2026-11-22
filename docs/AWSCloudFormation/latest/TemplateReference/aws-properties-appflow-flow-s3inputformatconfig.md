@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-flow-s3inputformatconfig-syntax.json"></a>
 
-```
+```json
 {
   "[S3InputFileType](#cfn-appflow-flow-s3inputformatconfig-s3inputfiletype)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-flow-s3inputformatconfig-syntax.yaml"></a>
 
-```
+```yaml
   [S3InputFileType](#cfn-appflow-flow-s3inputformatconfig-s3inputfiletype): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-tableoptimizer-vpcconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[GlueConnectionName](#cfn-glue-tableoptimizer-vpcconfiguration-glueconnectionname)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-tableoptimizer-vpcconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [GlueConnectionName](#cfn-glue-tableoptimizer-vpcconfiguration-glueconnectionname): {{String}}
 ```
 

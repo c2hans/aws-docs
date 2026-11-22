@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gameliftstreams-streamgroup-vpctransitconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Ipv4CidrBlocks](#cfn-gameliftstreams-streamgroup-vpctransitconfiguration-ipv4cidrblocks)" : {{[ String, ... ]}},
   "[VpcId](#cfn-gameliftstreams-streamgroup-vpctransitconfiguration-vpcid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gameliftstreams-streamgroup-vpctransitconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Ipv4CidrBlocks](#cfn-gameliftstreams-streamgroup-vpctransitconfiguration-ipv4cidrblocks): {{
     - String}}
   [VpcId](#cfn-gameliftstreams-streamgroup-vpctransitconfiguration-vpcid): {{String}}

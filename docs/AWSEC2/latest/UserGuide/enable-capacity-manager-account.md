@@ -26,7 +26,7 @@ Enable Capacity Manager at the account-level to monitor and analyze your EC2 cap
 **To enable Capacity Manager for your account**
 Run the following command:
 
-```
+```bash
 aws ec2 enable-capacity-manager
 ```
 
@@ -36,7 +36,7 @@ aws ec2 enable-capacity-manager
 **To enable Capacity Manager for your account**
 Use the [Enable-EC2CapacityManager](https://docs.aws.amazon.com/powershell/latest/reference/items/Enable-EC2CapacityManager.html) cmdlet.
 
-```
+```powershell
 Enable-EC2CapacityManager
 ```
 

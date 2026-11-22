@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-waterfallchartoptions-syntax.json"></a>
 
-```
+```json
 {
   "[TotalBarLabel](#cfn-quicksight-analysis-waterfallchartoptions-totalbarlabel)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-waterfallchartoptions-syntax.yaml"></a>
 
-```
+```yaml
   [TotalBarLabel](#cfn-quicksight-analysis-waterfallchartoptions-totalbarlabel): {{String}}
 ```
 

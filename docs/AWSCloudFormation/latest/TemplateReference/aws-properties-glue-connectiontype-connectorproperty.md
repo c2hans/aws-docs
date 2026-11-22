@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-connectiontype-connectorproperty-syntax.json"></a>
 
-```
+```json
 {
   "[AllowedValues](#cfn-glue-connectiontype-connectorproperty-allowedvalues)" : {{[ String, ... ]}},
   "[DefaultValue](#cfn-glue-connectiontype-connectorproperty-defaultvalue)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-connectiontype-connectorproperty-syntax.yaml"></a>
 
-```
+```yaml
   [AllowedValues](#cfn-glue-connectiontype-connectorproperty-allowedvalues): {{
     - String}}
   [DefaultValue](#cfn-glue-connectiontype-connectorproperty-defaultvalue): {{String}}

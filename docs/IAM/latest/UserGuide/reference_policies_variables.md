@@ -29,7 +29,7 @@ In IAM policies, many actions allow you to provide a name for the specific resou
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -77,7 +77,7 @@ The following example shows a policy for an IAM role or user that replaces a spe
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -116,7 +116,7 @@ A policy that allows a principal to get objects from the /David path of an S3 bu
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -144,7 +144,7 @@ By using a policy variable, you can create policies that can be reused. The foll
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [{
@@ -171,7 +171,7 @@ When you use a policy variable in place of a user like this, you don't have to h
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -219,7 +219,7 @@ Many AWS resources use ARNs that contain a user-created name. The following IAM 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -252,7 +252,7 @@ For example, the following policy example allows full access to users, but only 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -293,7 +293,7 @@ In the following example, `aws:principaltag/Team` must be equal to `s3:ExistingO
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -368,7 +368,7 @@ To add a default value to a variable, surround the default value with single quo
 
 For example, if a principal is tagged with `team=yellow`, they can access `ExampleCorp's` Amazon S3 bucket named `amzn-s3-demo-bucket-yellow`. A policy with this resource allows team members to access their team bucket, but not those of other teams. For users without team tags, it sets a default value of `company-wide` for the bucket name. These users can access only the `amzn-s3-demo-bucket-company-wide` bucket where they can view broad information, such as instructions for joining a team.
 
-```
+```json
 "Resource":"arn:aws:s3:::{{amzn-s3-demo-bucket}}-${aws:PrincipalTag/team, '{{company-wide}}'}"
 ```
 

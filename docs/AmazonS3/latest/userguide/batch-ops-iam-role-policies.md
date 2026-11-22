@@ -39,7 +39,7 @@ To allow the S3 Batch Operations service principal to assume the IAM role, attac
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -77,7 +77,7 @@ Before you configure permissions, note the following:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -136,7 +136,7 @@ Before you configure permissions, note the following:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement":[
@@ -181,7 +181,7 @@ Before you configure permissions, note the following:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -228,7 +228,7 @@ Before you configure permissions, note the following:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -273,7 +273,7 @@ Before you configure permissions, note the following:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement":[
@@ -317,7 +317,7 @@ Before you configure permissions, note the following:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -371,7 +371,7 @@ Before you configure permissions, note the following:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -424,7 +424,7 @@ Use this policy if you're using and storing an S3 generated manifest. For more i
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -483,7 +483,7 @@ Use this policy if you're using a user supplied manifest. For more information a
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -526,7 +526,7 @@ Use this policy if you're using a user supplied manifest. For more information a
 
 Use this policy if you're trying to use the **Compute checksum** operation with S3 Batch Operations. Permissions for `GetObject`, `GetObjectVersion`, and `RestoreObject` are required to obtain and read the bytes of stored data. Replace the user input placeholders with your own information. For more information about **Compute checksum**, see [Checking object integrity for data at rest in Amazon S3](checking-object-integrity-at-rest.md).
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -569,7 +569,7 @@ Use this policy if you're trying to use the **Compute checksum** operation with 
 
 You must attach the following permissions policy to allow Batch Operations to read a manifest, update the encryption type of your objects, and write a completion report. To use this permissions policy, replace the {{`user input placeholders`}} with your own information. For more information about using this operation and the permissions that you must attach to the role used by your IAM principal, see [Update object encryption](batch-ops-update-encryption.md).
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-bridge-egressgatewaybridge-syntax.json"></a>
 
-```
+```json
 {
   "[MaxBitrate](#cfn-mediaconnect-bridge-egressgatewaybridge-maxbitrate)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-bridge-egressgatewaybridge-syntax.yaml"></a>
 
-```
+```yaml
   [MaxBitrate](#cfn-mediaconnect-bridge-egressgatewaybridge-maxbitrate): {{Integer}}
 ```
 

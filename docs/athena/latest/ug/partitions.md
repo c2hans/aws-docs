@@ -28,7 +28,7 @@ When using partitioning, keep in mind the following points:
 
 To create a table that uses partitions, use the `PARTITIONED BY` clause in your [CREATE TABLE](create-table.md) statement. The `PARTITIONED BY` clause defines the keys on which to partition data, as in the following example. The `LOCATION` clause specifies the root location of the partitioned data.
 
-```
+```sql
 CREATE EXTERNAL TABLE users (
 first string,
 last string,
@@ -75,7 +75,7 @@ Here, logs are stored with the column name (dt) set equal to date, hour, and min
 
 To make a table from this data, create a partition along 'dt' as in the following Athena DDL statement:
 
-```
+```sql
 CREATE EXTERNAL TABLE impressions (
     requestBeginTime string,
     adId string,
@@ -104,7 +104,7 @@ This table uses Hive's native JSON serializer-deserializer to read JSON data sto
 
 After you run the `CREATE TABLE` query, run the `MSCK REPAIR TABLE` command in the Athena query editor to load the partitions, as in the following example.
 
-```
+```sql
 MSCK REPAIR TABLE impressions
 ```
 
@@ -115,7 +115,7 @@ After you run this command, the data is ready for querying.
 
 Query the data from the impressions table using the partition column. Here's an example:
 
-```
+```sql
 SELECT dt,impressionid FROM impressions WHERE dt<'2009-04-12-14-00' and dt>='2009-04-12-13-00' ORDER BY dt DESC LIMIT 100
 ```
 
@@ -200,7 +200,7 @@ aws s3 ls s3://athena-examples-{{myregion}}/elb/plaintext/ --recursive
 
 Because the data is not in Hive format, you cannot use the `MSCK REPAIR TABLE` command to add the partitions to the table after you create it. Instead, you can use the [ALTER TABLE ADD PARTITION](alter-table-add-partition.md) command to add each partition manually. For example, to load the data in s3://athena-examples-{{myregion}}/elb/plaintext/2015/01/01/, you can run the following query. Note that a separate partition column for each Amazon S3 folder is not required, and that the partition key value can be different from the Amazon S3 key.
 
-```
+```sql
 ALTER TABLE elb_logs_raw_native_part ADD PARTITION (dt='2015-01-01') location 's3://athena-examples-{{us-west-1}}/elb/plaintext/2015/01/01/'
 ```
 

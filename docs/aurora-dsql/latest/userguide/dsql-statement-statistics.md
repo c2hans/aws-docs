@@ -107,7 +107,7 @@ In the following commands, replace {{region}} with the Region of your cluster an
 **Turn on statement statistics when you create a cluster**
 Run the following AWS CLI command:
 
-```
+```bash
 aws dsql create-cluster \
   --metric-groups '[{"metricGroup":"STATEMENT_STATISTICS"}]' \
   --region {{region}}
@@ -115,7 +115,7 @@ aws dsql create-cluster \
 
 The response includes `metricGroups`. The following example response shows only some of the fields.
 
-```
+```json
 {
     "identifier": "abc0def1baz2quux3quuux4abc",
     "arn": "arn:aws:dsql:us-east-1:111122223333:cluster/abc0def1baz2quux3quuux4abc",
@@ -131,7 +131,7 @@ The response includes `metricGroups`. The following example response shows only 
 **Turn on statement statistics for an existing cluster**
 Run the following AWS CLI command:
 
-```
+```bash
 aws dsql update-cluster \
   --identifier {{your_cluster_id}} \
   --metric-groups '[{"metricGroup":"STATEMENT_STATISTICS"}]' \
@@ -141,7 +141,7 @@ aws dsql update-cluster \
 **Confirm the setting**
 Run the following AWS CLI command. The output is `STATEMENT_STATISTICS` when statement statistics are on, and empty when they're off.
 
-```
+```bash
 aws dsql get-cluster \
   --identifier {{your_cluster_id}} \
   --query 'metricGroups[].metricGroup' --output text \
@@ -150,14 +150,14 @@ aws dsql get-cluster \
 
 The following example output shows that statement statistics are on.
 
-```
+```text
 STATEMENT_STATISTICS
 ```
 
 **Turn off statement statistics**
 Run the following AWS CLI command with an empty list:
 
-```
+```bash
 aws dsql update-cluster \
   --identifier {{your_cluster_id}} \
   --metric-groups '[]' \
@@ -220,7 +220,7 @@ Every query follows the two steps in [How Aurora DSQL aggregates statement stati
 **Statements that take the most total time**
 The following query ranks the 10 statements with the most total time, in seconds, over the last hour. To rank by another metric, such as calls or DPUs, use its name in place of `aws.dsql.query.time`.
 
-```
+```promql
 topk(10,
   sum by ("db.query.id") (
     sum_over_time({
@@ -234,7 +234,7 @@ topk(10,
 **Mean planning and execution time per execution call**
 The following query divides the total planning and execution time of each statement by its number of execution calls, and then converts seconds to milliseconds. The `>= 100` filter hides statements with fewer than 100 execution calls. Lower it to see them.
 
-```
+```promql
 topk(10,
   sum by ("db.query.id") (
     sum_over_time({
@@ -256,7 +256,7 @@ topk(10,
 **Calls per second, as a trend**
 The following query shows how often each statement runs. Use the graph view with a 5-minute step. The query divides each 5-minute sum by 300 seconds.
 
-```
+```promql
 topk(10,
   sum by ("db.query.id") (
     sum_over_time({
@@ -270,7 +270,7 @@ topk(10,
 **Scanned rows per call**
 The following query shows how many rows each call visits in storage. A statement that scans many rows but returns few might need an index.
 
-```
+```promql
 topk(10,
   sum by ("db.query.id") (
     sum_over_time({
@@ -305,7 +305,7 @@ PromQL results identify each statement by its query ID. To find the normalized S
 
 1. In the following query, replace {{your\_query\_id}} with the query ID from your results, and then run the query.
 
-   ```
+   ```text
    fields @timestamp, queryId, normalizedText
    | filter queryId = "{{your_query_id}}"
    | limit 1

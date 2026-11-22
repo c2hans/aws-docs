@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-qbusiness-datasource-inlinedocumentenrichmentconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Condition](#cfn-qbusiness-datasource-inlinedocumentenrichmentconfiguration-condition)" : {{DocumentAttributeCondition}},
   "[DocumentContentOperator](#cfn-qbusiness-datasource-inlinedocumentenrichmentconfiguration-documentcontentoperator)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-qbusiness-datasource-inlinedocumentenrichmentconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Condition](#cfn-qbusiness-datasource-inlinedocumentenrichmentconfiguration-condition): {{
     DocumentAttributeCondition}}
   [DocumentContentOperator](#cfn-qbusiness-datasource-inlinedocumentenrichmentconfiguration-documentcontentoperator): {{String}}

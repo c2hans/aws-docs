@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-backup-backupplan-backupplanresourcetype-syntax.json"></a>
 
-```
+```json
 {
   "[AdvancedBackupSettings](#cfn-backup-backupplan-backupplanresourcetype-advancedbackupsettings)" : {{[ AdvancedBackupSettingResourceType, ... ]}},
   "[BackupPlanName](#cfn-backup-backupplan-backupplanresourcetype-backupplanname)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-backup-backupplan-backupplanresourcetype-syntax.yaml"></a>
 
-```
+```yaml
   [AdvancedBackupSettings](#cfn-backup-backupplan-backupplanresourcetype-advancedbackupsettings): {{
     - AdvancedBackupSettingResourceType}}
   [BackupPlanName](#cfn-backup-backupplan-backupplanresourcetype-backupplanname): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcs-computenodegroup-instanceconfig-syntax.json"></a>
 
-```
+```json
 {
   "[InstanceType](#cfn-pcs-computenodegroup-instanceconfig-instancetype)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcs-computenodegroup-instanceconfig-syntax.yaml"></a>
 
-```
+```yaml
   [InstanceType](#cfn-pcs-computenodegroup-instanceconfig-instancetype): {{String}}
 ```
 

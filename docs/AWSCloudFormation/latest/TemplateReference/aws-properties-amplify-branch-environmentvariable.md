@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amplify-branch-environmentvariable-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-amplify-branch-environmentvariable-name)" : {{String}},
   "[Value](#cfn-amplify-branch-environmentvariable-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amplify-branch-environmentvariable-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-amplify-branch-environmentvariable-name): {{String}}
   [Value](#cfn-amplify-branch-environmentvariable-value): {{String}}
 ```

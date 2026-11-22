@@ -454,7 +454,7 @@ This example shows a sample request for the `CreateFlow` API using Salesforce. I
 #### Sample Request
 <a name="API_CreateFlow_Example_1_Request"></a>
 
-```
+```json
 {
   "flowName": "testFlowSaleforce",
   "description": "TestFlow",
@@ -513,7 +513,7 @@ This example shows a sample request for the `CreateFlow` API using Salesforce. I
 }
 ```
 
-```
+```json
 {
   "message": "Error while authenticating to connector"
 }
@@ -527,7 +527,7 @@ This example shows a sample request for the `CreateFlow` API using Zendesk.
 #### Sample Request
 <a name="API_CreateFlow_Example_2_Request"></a>
 
-```
+```json
 {
   "useDefaultEncryption": false,
   "flowName": "testFlowZendesk",
@@ -584,7 +584,7 @@ This example shows a sample request for the `CreateFlow` API using Google Analyt
 #### Sample Request
 <a name="API_CreateFlow_Example_3_Request"></a>
 
-```
+```json
  {
   "useDefaultEncryption": false,
   "flowName": "testFlowGAnalytics",
@@ -641,7 +641,7 @@ This example shows a sample request for the `CreateFlow` API using Marketo.
 #### Sample Request
 <a name="API_CreateFlow_Example_4_Request"></a>
 
-```
+```json
 {
   "flowName": "testMarketo",
   "description": "TestFlow",
@@ -708,7 +708,7 @@ This example shows a sample request for the `CreateFlow` API using Marketo.
 
 This Java example shows credentials associated with a connection. In this case, the example uses OAuth. These credentials are stored in secrets manager after the profile is created.
 
-```
+```java
 ConnectorProfileCredentials credentials = new ConnectorProfileCredentials().withSalesforce(
         new SalesforceConnectorProfileCredentials().withAccessToken(accessToken)
            .withRefreshToken(refreshToken));
@@ -719,7 +719,7 @@ ConnectorProfileCredentials credentials = new ConnectorProfileCredentials().with
 
 This Java example shows other properties associated with a connection to Salesforce.
 
-```
+```java
 ConnectorProfileProperties properties = new ConnectorProfileProperties().withSalesforce(
                 new SalesforceConnectorProfileProperties().withInstanceUrl(instanceUrl));
 ```
@@ -729,7 +729,7 @@ ConnectorProfileProperties properties = new ConnectorProfileProperties().withSal
 
 To create a flow, you must first create a connector profile. This Java example shows information about connecting to Salesforce.
 
-```
+```java
 amazonAppflow.createConnectorProfile(new CreateConnectorProfileRequest().withConnectorProfileConfig(
                 new ConnectorProfileConfig().withConnectorProfileCredentials(credentials)
                         .withConnectorProfileProperties(properties))
@@ -743,7 +743,7 @@ amazonAppflow.createConnectorProfile(new CreateConnectorProfileRequest().withCon
 
 This Java example shows properties for a source connection. `Account` is the object in Salesforce that we want to retrieve. You can find a list of all supported objects by using the `listConnectorEntity` API. The `ConnectorProfileName` is the connector profile, the creation of which is seen in the previous example.
 
-```
+```java
   SourceFlowConfig sourceFlowConfig = new SourceFlowConfig().withSourceConnectorProperties(
                 new SourceConnectorProperties().withSalesforce(new SalesforceSourceProperties().withObject("Account")))
                 .withConnectorType(ConnectorType.Salesforce)
@@ -755,7 +755,7 @@ This Java example shows properties for a source connection. `Account` is the obj
 
 This Java example shows properties for a destination connection. Note that many AWS connectors such as Amazon S3 don't require a connector profile. Amazon AppFlow accesses S3 buckets through a bucket resource policy, therefore a connector profile isn't needed.
 
-```
+```java
    DestinationFlowConfig destinationFlowConfig = new DestinationFlowConfig().withConnectorType(ConnectorType.S3)
                 .withDestinationConnectorProperties(new DestinationConnectorProperties().withS3(
                         new S3DestinationProperties().withBucketName(bucketName).withBucketPrefix("testPrefix")));
@@ -766,7 +766,7 @@ This Java example shows properties for a destination connection. Note that many 
 
  Tasks describe what to do with the data once it has been retrieved, but before it is sent to the destination. Most connectors require a projection task. A projection task describes what fields should be retrieved from the source object. Fields that can be retrieved can be discovered by making a call to the `DescribeConnectorEntity` API.
 
-```
+```java
 Task projectionTask = new Task().withTaskType(TaskType.Filter)
                 .withConnectorOperator(new ConnectorOperator().withSalesforce(SalesforceConnectorOperator.PROJECTION))
                 .withSourceFields("Id", "Name");
@@ -777,7 +777,7 @@ Task projectionTask = new Task().withTaskType(TaskType.Filter)
 
 Most flows also require at least one mapping task. Mapping tasks map a source field to a destination field. This Java example shows the mapping between the retrieved field, `Id`, to a new field, `AccountId`.
 
-```
+```java
 Task createdMappingTask = new Task().withTaskType(TaskType.Map)
                 .withConnectorOperator(new ConnectorOperator().withSalesforce(SalesforceConnectorOperator.NO_OP))
                 .withSourceFields("Id")
@@ -795,7 +795,7 @@ Task createdMappingTask = new Task().withTaskType(TaskType.Map)
 
 This Java example shows sample imports.
 
-```
+```java
 import com.amazonaws.services.appflow.AmazonAppflow;
 import com.amazonaws.services.appflow.model.ConnectionMode;
 import com.amazonaws.services.appflow.model.ConnectorOperator;

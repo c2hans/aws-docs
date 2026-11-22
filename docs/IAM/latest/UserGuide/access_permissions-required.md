@@ -19,7 +19,7 @@ The permissions that are required to administer IAM groups, users, roles, and cr
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {
@@ -39,7 +39,7 @@ In a policy, the value of the `Resource` element depends on the action and what 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -74,7 +74,7 @@ Using a wildcard character (`*`) in the action name often makes it easier to gra
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fis-experimenttemplate-experimenttemplateexperimentreportconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DataSources](#cfn-fis-experimenttemplate-experimenttemplateexperimentreportconfiguration-datasources)" : {{DataSources}},
   "[Outputs](#cfn-fis-experimenttemplate-experimenttemplateexperimentreportconfiguration-outputs)" : {{Outputs}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fis-experimenttemplate-experimenttemplateexperimentreportconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DataSources](#cfn-fis-experimenttemplate-experimenttemplateexperimentreportconfiguration-datasources): {{
     DataSources}}
   [Outputs](#cfn-fis-experimenttemplate-experimenttemplateexperimentreportconfiguration-outputs): {{

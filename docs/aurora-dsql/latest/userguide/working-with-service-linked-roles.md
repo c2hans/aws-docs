@@ -24,7 +24,7 @@ You must configure permissions to allow an IAM entity (such as a user, group, or
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

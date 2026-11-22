@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskdefinition-hostentry-syntax.json"></a>
 
-```
+```json
 {
   "[Hostname](#cfn-ecs-taskdefinition-hostentry-hostname)" : {{String}},
   "[IpAddress](#cfn-ecs-taskdefinition-hostentry-ipaddress)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskdefinition-hostentry-syntax.yaml"></a>
 
-```
+```yaml
   [Hostname](#cfn-ecs-taskdefinition-hostentry-hostname): {{String}}
   [IpAddress](#cfn-ecs-taskdefinition-hostentry-ipaddress): {{String}}
 ```

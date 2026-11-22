@@ -93,7 +93,7 @@ CloudWatch provides code snippets as samples to help you get started. For more i
 
 The following is an example of a `GetMetricData` request payload sent as input to the Lambda function.
 
-```
+```json
 {
   "EventType": "GetMetricData",
   "GetMetricDataRequest": {
@@ -113,7 +113,7 @@ The following is an example of a `GetMetricData` request payload sent as input t
 
 The following is an example of a `GetMetricData` response payload returned by the Lambda function.
 
-```
+```json
 {
    "MetricDataResults": [
       {
@@ -153,7 +153,7 @@ You can optionally use the error response to provide more information about erro
 
 The following is an example of the response when the Lambda function wants to raise a `GetMetricData` validation exception.
 
-```
+```json
 {
    "Error": {
       "Code": "Validation",
@@ -164,7 +164,7 @@ The following is an example of the response when the Lambda function wants to ra
 
 The following is an example of the response when the Lambda function indicates that it's unable to return data because of an access issue. The response is translated into a single time series with a status code of `Forbidden`.
 
-```
+```json
 {
    "Error": {
       "Code": "Forbidden",
@@ -175,7 +175,7 @@ The following is an example of the response when the Lambda function indicates t
 
 The following is an example of when the Lambda function raises an overall `InternalError` exception, which is translated into a single time series with a status code of `InternalError` and a message. Whenever an error code has a value other than `Validation` or `Forbidden`, CloudWatch assumes that it's a generic internal error.
 
-```
+```json
 {
    "Error": {
       "Code": "PrometheusClusterUnreachable",
@@ -191,7 +191,7 @@ The following is an example of when the Lambda function raises an overall `Inter
 
 The following is an example of a `DescribeGetMetricData` request payload.
 
-```
+```json
 {
   "EventType": "DescribeGetMetricData"
 }
@@ -201,7 +201,7 @@ The following is an example of a `DescribeGetMetricData` request payload.
 
 The following is an example of a `DescribeGetMetricData` response payload.
 
-```
+```json
 {
     "Description": "Data source connector",
     "ArgumentDefaults": [{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-scheduler-schedule-sqsparameters-syntax.json"></a>
 
-```
+```json
 {
   "[MessageGroupId](#cfn-scheduler-schedule-sqsparameters-messagegroupid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-scheduler-schedule-sqsparameters-syntax.yaml"></a>
 
-```
+```yaml
   [MessageGroupId](#cfn-scheduler-schedule-sqsparameters-messagegroupid): {{String}}
 ```
 

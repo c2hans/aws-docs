@@ -52,7 +52,7 @@ This example shows a minimal configuration file that you can use with a Go manag
 
 **Example apprunner.yaml**
 
-```
+```yaml
 version: 1.0
 runtime: go1
 build:
@@ -73,7 +73,7 @@ The runtime version that's used in these examples is {{1.18.7}}. You can replace
 
 **Example apprunner.yaml**
 
-```
+```yaml
 version: 1.0
 runtime: go1
 build:
@@ -105,7 +105,7 @@ These examples shows the source code for a complete Go application that you can 
 
 **Example main.go**
 
-```
+```yaml
 package main
 import (
     "fmt"
@@ -123,7 +123,7 @@ func main() {
 
 **Example apprunner.yaml**
 
-```
+```yaml
 version: 1.0
 runtime: go1
 build:

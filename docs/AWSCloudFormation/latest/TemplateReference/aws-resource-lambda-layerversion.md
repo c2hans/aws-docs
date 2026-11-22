@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lambda-layerversion-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lambda::LayerVersion",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lambda-layerversion-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lambda::LayerVersion
 Properties:
   [CompatibleArchitectures](#cfn-lambda-layerversion-compatiblearchitectures): {{
@@ -130,7 +130,7 @@ Create a layer named `my-layer`.
 #### JSON
 <a name="aws-resource-lambda-layerversion--examples--Layer_Version--json"></a>
 
-```
+```json
 "MyLayer": {
     "Type": "AWS::Lambda::LayerVersion",
     "Properties": {
@@ -152,7 +152,7 @@ Create a layer named `my-layer`.
 #### YAML
 <a name="aws-resource-lambda-layerversion--examples--Layer_Version--yaml"></a>
 
-```
+```yaml
 MyLayer:
   Type: AWS::Lambda::LayerVersion
   Properties:

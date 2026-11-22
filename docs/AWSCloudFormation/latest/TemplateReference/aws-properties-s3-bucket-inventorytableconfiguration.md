@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-inventorytableconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ConfigurationState](#cfn-s3-bucket-inventorytableconfiguration-configurationstate)" : {{String}},
   "[EncryptionConfiguration](#cfn-s3-bucket-inventorytableconfiguration-encryptionconfiguration)" : {{MetadataTableEncryptionConfiguration}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-inventorytableconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ConfigurationState](#cfn-s3-bucket-inventorytableconfiguration-configurationstate): {{String}}
   [EncryptionConfiguration](#cfn-s3-bucket-inventorytableconfiguration-encryptionconfiguration): {{
     MetadataTableEncryptionConfiguration}}

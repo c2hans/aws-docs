@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-neptunegraph-graph-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::NeptuneGraph::Graph",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-neptunegraph-graph-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::NeptuneGraph::Graph
 Properties:
   [DeletionProtection](#cfn-neptunegraph-graph-deletionprotection): {{Boolean}}

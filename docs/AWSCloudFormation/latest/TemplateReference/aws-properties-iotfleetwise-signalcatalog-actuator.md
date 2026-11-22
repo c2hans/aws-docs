@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotfleetwise-signalcatalog-actuator-syntax.json"></a>
 
-```
+```json
 {
   "[AllowedValues](#cfn-iotfleetwise-signalcatalog-actuator-allowedvalues)" : {{[ String, ... ]}},
   "[AssignedValue](#cfn-iotfleetwise-signalcatalog-actuator-assignedvalue)" : {{String}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotfleetwise-signalcatalog-actuator-syntax.yaml"></a>
 
-```
+```yaml
   [AllowedValues](#cfn-iotfleetwise-signalcatalog-actuator-allowedvalues): {{
     - String}}
   [AssignedValue](#cfn-iotfleetwise-signalcatalog-actuator-assignedvalue): {{String}}

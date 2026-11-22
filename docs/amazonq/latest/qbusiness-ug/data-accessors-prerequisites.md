@@ -21,7 +21,7 @@ To add an ISV as a data accessor, complete the following prerequisites:
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Id": "isv-key-consolepolicy",

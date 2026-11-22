@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-alias-provisionedconcurrencyconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ProvisionedConcurrentExecutions](#cfn-lambda-alias-provisionedconcurrencyconfiguration-provisionedconcurrentexecutions)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-alias-provisionedconcurrencyconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ProvisionedConcurrentExecutions](#cfn-lambda-alias-provisionedconcurrencyconfiguration-provisionedconcurrentexecutions): {{Integer}}
 ```
 
@@ -49,7 +49,7 @@ An alias with 20 provisioned concurrency.
 #### YAML
 <a name="aws-properties-lambda-alias-provisionedconcurrencyconfiguration--examples--Provisioned_Concurrency--yaml"></a>
 
-```
+```yaml
   alias:
     Type: AWS::Lambda::Alias
     Properties:

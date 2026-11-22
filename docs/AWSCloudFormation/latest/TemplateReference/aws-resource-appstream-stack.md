@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-appstream-stack-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppStream::Stack",
   "Properties" : {
@@ -44,7 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-appstream-stack-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppStream::Stack
 Properties:
   [AccessEndpoints](#cfn-appstream-stack-accessendpoints): {{

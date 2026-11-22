@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-devopsagent-asset-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DevOpsAgent::Asset",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-devopsagent-asset-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DevOpsAgent::Asset
 Properties:
   [AgentSpaceId](#cfn-devopsagent-asset-agentspaceid): {{String}}

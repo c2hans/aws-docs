@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudformation-lambdahook-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudFormation::LambdaHook",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudformation-lambdahook-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudFormation::LambdaHook
 Properties:
   [Alias](#cfn-cloudformation-lambdahook-alias): {{String}}
@@ -120,12 +120,12 @@ Contains logging configuration information for an extension.
 Specifies the stack level filters for the Hook.
 Example stack level filter in JSON:
 
-```
+```json
 "StackFilters": {"FilteringCriteria": "ALL", "StackNames": {"Exclude": [ "stack-1", "stack-2"]}}
 ```
 Example stack level filter in YAML:
 
-```
+```yaml
 StackFilters:
   FilteringCriteria: ALL
   StackNames:
@@ -141,12 +141,12 @@ StackFilters:
 Specifies the target filters for the Hook.
 Example target filter in JSON:
 
-```
+```json
 "TargetFilters": {"Actions": [ "CREATE", "UPDATE", "DELETE" ]}
 ```
 Example target filter in YAML:
 
-```
+```yaml
 TargetFilters:
   Actions:
     - CREATE
@@ -198,7 +198,7 @@ The following example demonstrates how to create a Lambda Hook in a template.
 #### JSON
 <a name="aws-resource-cloudformation-lambdahook--examples--Creating_a_Hook_in_a_template--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Create a Lambda Hook",
@@ -287,7 +287,7 @@ The following example demonstrates how to create a Lambda Hook in a template.
 #### YAML
 <a name="aws-resource-cloudformation-lambdahook--examples--Creating_a_Hook_in_a_template--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Create a Lambda Hook
 Parameters:

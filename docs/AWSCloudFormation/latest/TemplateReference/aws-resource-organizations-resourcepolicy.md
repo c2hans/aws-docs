@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-organizations-resourcepolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Organizations::ResourcePolicy",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-organizations-resourcepolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Organizations::ResourcePolicy
 Properties:
   [Content](#cfn-organizations-resourcepolicy-content): {{Json}}
@@ -102,7 +102,7 @@ This example illustrates how to specify the organization resource policy content
 #### JSON
 <a name="aws-resource-organizations-resourcepolicy--examples--Organization_Resource_Policy_Content_Specified_as_a_JSON_Object--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "AWS CloudFormation Organizations Template Example",
@@ -136,7 +136,7 @@ This example illustrates how to specify the organization resource policy content
 #### YAML
 <a name="aws-resource-organizations-resourcepolicy--examples--Organization_Resource_Policy_Content_Specified_as_a_JSON_Object--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: AWS CloudFormation Organizations Template Example
 Resources:
@@ -164,7 +164,7 @@ This example illustrates how to specify the organization resource policy content
 #### JSON
 <a name="aws-resource-organizations-resourcepolicy--examples--Organization_Resource_Policy_Content_Specified_as_a_JSON_String--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "AWS CloudFormation Organizations Template Example",
@@ -183,7 +183,7 @@ This example illustrates how to specify the organization resource policy content
 #### YAML
 <a name="aws-resource-organizations-resourcepolicy--examples--Organization_Resource_Policy_Content_Specified_as_a_JSON_String--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: AWS CloudFormation Organizations Template Example
 Resources:
@@ -198,7 +198,7 @@ Resources:
 #### YAML
 <a name="aws-resource-organizations-resourcepolicy--examples--Organization_Resource_Policy_Content_Specified_as_a_JSON_String--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: AWS CloudFormation Organizations Template Example
 Resources:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-deadline-queuefleetassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Deadline::QueueFleetAssociation",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-deadline-queuefleetassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Deadline::QueueFleetAssociation
 Properties:
   [FarmId](#cfn-deadline-queuefleetassociation-farmid): {{String}}

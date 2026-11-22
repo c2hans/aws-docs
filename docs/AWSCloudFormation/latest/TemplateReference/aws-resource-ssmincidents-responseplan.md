@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ssmincidents-responseplan-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SSMIncidents::ResponsePlan",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ssmincidents-responseplan-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SSMIncidents::ResponsePlan
 Properties:
   [Actions](#cfn-ssmincidents-responseplan-actions): {{
@@ -129,7 +129,7 @@ This example also demonstrates creating a replication set. We recommend creating
 #### JSON
 <a name="aws-resource-ssmincidents-responseplan--examples--Create_a_response_plan--json"></a>
 
-```
+```json
 {
    "AWSTemplateFormatVersion": "2010-09-09",
    "Description": "Sample AWS CloudFormation template to create a response plan and replication set (JSON).",
@@ -335,7 +335,7 @@ This example also demonstrates creating a replication set. We recommend creating
 #### YAML
 <a name="aws-resource-ssmincidents-responseplan--examples--Create_a_response_plan--yaml"></a>
 
-```
+```yaml
 ---
 AWSTemplateFormatVersion: 2010-09-09
 Description: "Sample AWS CloudFormation template to create a response plan and replication set (YAML)."

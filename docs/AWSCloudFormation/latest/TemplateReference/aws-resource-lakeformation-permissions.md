@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lakeformation-permissions-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::LakeFormation::Permissions",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lakeformation-permissions-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::LakeFormation::Permissions
 Properties:
   [DataLakePrincipal](#cfn-lakeformation-permissions-datalakeprincipal): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-apikeycredentialprovider-secretreference-syntax.json"></a>
 
-```
+```json
 {
   "[JsonKey](#cfn-bedrockagentcore-apikeycredentialprovider-secretreference-jsonkey)" : {{String}},
   "[SecretId](#cfn-bedrockagentcore-apikeycredentialprovider-secretreference-secretid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-apikeycredentialprovider-secretreference-syntax.yaml"></a>
 
-```
+```yaml
   [JsonKey](#cfn-bedrockagentcore-apikeycredentialprovider-secretreference-jsonkey): {{String}}
   [SecretId](#cfn-bedrockagentcore-apikeycredentialprovider-secretreference-secretid): {{String}}
 ```

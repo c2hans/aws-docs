@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicrule-influxdbaction-syntax.json"></a>
 
-```
+```json
 {
   "[BatchConfig](#cfn-iot-topicrule-influxdbaction-batchconfig)" : {{InfluxDBBatchConfig}},
   "[DatabaseName](#cfn-iot-topicrule-influxdbaction-databasename)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicrule-influxdbaction-syntax.yaml"></a>
 
-```
+```yaml
   [BatchConfig](#cfn-iot-topicrule-influxdbaction-batchconfig): {{
     InfluxDBBatchConfig}}
   [DatabaseName](#cfn-iot-topicrule-influxdbaction-databasename): {{String}}

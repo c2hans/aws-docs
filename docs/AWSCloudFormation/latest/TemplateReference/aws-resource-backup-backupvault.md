@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-backup-backupvault-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Backup::BackupVault",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-backup-backupvault-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Backup::BackupVault
 Properties:
   [AccessPolicy](#cfn-backup-backupvault-accesspolicy): {{Json}}

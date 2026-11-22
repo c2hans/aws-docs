@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicrule-iotsitewiseaction-syntax.json"></a>
 
-```
+```json
 {
   "[PutAssetPropertyValueEntries](#cfn-iot-topicrule-iotsitewiseaction-putassetpropertyvalueentries)" : {{[ PutAssetPropertyValueEntry, ... ]}},
   "[RoleArn](#cfn-iot-topicrule-iotsitewiseaction-rolearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicrule-iotsitewiseaction-syntax.yaml"></a>
 
-```
+```yaml
   [PutAssetPropertyValueEntries](#cfn-iot-topicrule-iotsitewiseaction-putassetpropertyvalueentries): {{
     - PutAssetPropertyValueEntry}}
   [RoleArn](#cfn-iot-topicrule-iotsitewiseaction-rolearn): {{String}}

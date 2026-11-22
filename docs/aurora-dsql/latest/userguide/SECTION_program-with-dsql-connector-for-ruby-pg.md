@@ -51,13 +51,13 @@ For a complete example, see the [example application](https://github.com/awslabs
 
 Add to your Gemfile:
 
-```
+```ruby
 gem "aurora-dsql-ruby-pg"
 ```
 
 Or install directly:
 
-```
+```bash
 gem install aurora-dsql-ruby-pg
 ```
 
@@ -67,7 +67,7 @@ gem install aurora-dsql-ruby-pg
 ### Pool connection
 <a name="SECTION_program-with-dsql-connector-for-ruby-pg-pool-connection"></a>
 
-```
+```ruby
 require "aurora_dsql_pg"
 
 # Create a connection pool with OCC retry enabled
@@ -97,7 +97,7 @@ pool.shutdown
 
 For simple scripts or when connection pooling is not needed:
 
-```
+```ruby
 conn = AuroraDsql::Pg.connect(host: "your-cluster.dsql.us-east-1.on.aws")
 conn.exec("SELECT 1")
 conn.close
@@ -110,7 +110,7 @@ conn.close
 
 The connector supports both full cluster endpoints (region auto-detected) and cluster IDs (region required):
 
-```
+```ruby
 # Full endpoint (region auto-detected)
 pool = AuroraDsql::Pg.create_pool(
   host: "your-cluster.dsql.us-east-1.on.aws"
@@ -127,7 +127,7 @@ pool = AuroraDsql::Pg.create_pool(
 
 Specify an AWS profile for credentials:
 
-```
+```ruby
 pool = AuroraDsql::Pg.create_pool(
   host: "your-cluster.dsql.us-east-1.on.aws",
   profile: "production"
@@ -138,14 +138,14 @@ pool = AuroraDsql::Pg.create_pool(
 
 The connector supports PostgreSQL connection string formats:
 
-```
+```text
 postgres://[user@]host[:port]/[database][?param=value&...]
 postgresql://[user@]host[:port]/[database][?param=value&...]
 ```
 
 Supported query parameters: `region`, `profile`, `tokenDurationSecs`.
 
-```
+```ruby
 # Full endpoint with profile
 pool = AuroraDsql::Pg.create_pool(
   "postgres://admin@cluster.dsql.us-east-1.on.aws/postgres?profile=dev"
@@ -158,7 +158,7 @@ Aurora DSQL uses optimistic concurrency control (OCC). When two transactions mod
 
 OCC retry is opt-in. Set `occ_max_retries` when creating the pool to enable automatic retry with exponential backoff and jitter on `pool.with`:
 
-```
+```ruby
 pool = AuroraDsql::Pg.create_pool(
   host: "your-cluster.dsql.us-east-1.on.aws",
   occ_max_retries: 3
@@ -177,7 +177,7 @@ end
 
 To skip retry on individual calls, pass `retry_occ: false`:
 
-```
+```ruby
 pool.with(retry_occ: false) do |conn|
   conn.exec("SELECT 1")
 end
@@ -203,7 +203,7 @@ end
 
 `create_pool` also accepts a `pool:` keyword with a hash of options that you pass directly to `ConnectionPool.new`. If you omit `pool:`, the connector defaults to `{size: 5, timeout: 5}`. Keys you provide override only those specific defaults.
 
-```
+```ruby
 pool = AuroraDsql::Pg.create_pool(
   host: "your-cluster.dsql.us-east-1.on.aws",
   pool: { size: 10, timeout: 10 }

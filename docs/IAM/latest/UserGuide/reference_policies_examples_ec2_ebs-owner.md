@@ -13,7 +13,7 @@ For more information about creating IAM policies to control access to Amazon EC2
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

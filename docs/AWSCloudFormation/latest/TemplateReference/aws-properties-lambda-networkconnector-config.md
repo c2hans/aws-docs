@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-networkconnector-config-syntax.json"></a>
 
-```
+```json
 {
   "[VpcEgressConfiguration](#cfn-lambda-networkconnector-config-vpcegressconfiguration)" : {{VpcEgressConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-networkconnector-config-syntax.yaml"></a>
 
-```
+```yaml
   [VpcEgressConfiguration](#cfn-lambda-networkconnector-config-vpcegressconfiguration): {{
     VpcEgressConfiguration}}
 ```

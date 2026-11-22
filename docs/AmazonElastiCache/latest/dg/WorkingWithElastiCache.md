@@ -17,6 +17,7 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/WorkingWithE
 + [Getting started with Bloom filters](BloomFilters.md)
 + [Getting started with Watch in Serverless](ServerlessWatch.md)
 + [DynamoDB caching](ddb-caching.md)
++ [Distributed KV caching](distributed-kv-caching.md)
 + [Getting started with Search](search.md)
 + [Getting started with data aggregations](aggregations.md)
 + [Getting started with JSON for Valkey and Redis OSS](json-gs.md)

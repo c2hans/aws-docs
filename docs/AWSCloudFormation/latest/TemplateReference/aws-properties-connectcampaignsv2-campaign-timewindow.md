@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connectcampaignsv2-campaign-timewindow-syntax.json"></a>
 
-```
+```json
 {
   "[OpenHours](#cfn-connectcampaignsv2-campaign-timewindow-openhours)" : {{OpenHours}},
   "[RestrictedPeriods](#cfn-connectcampaignsv2-campaign-timewindow-restrictedperiods)" : {{RestrictedPeriods}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connectcampaignsv2-campaign-timewindow-syntax.yaml"></a>
 
-```
+```yaml
   [OpenHours](#cfn-connectcampaignsv2-campaign-timewindow-openhours): {{
     OpenHours}}
   [RestrictedPeriods](#cfn-connectcampaignsv2-campaign-timewindow-restrictedperiods): {{

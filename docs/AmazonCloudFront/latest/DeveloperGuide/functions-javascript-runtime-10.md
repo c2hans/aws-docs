@@ -387,7 +387,7 @@ For example, for the following query string:
 ```
 The return value of `querystring.parse()` is:
 
-```
+```js
 {
 name: 'value',
 abc: ['xyz', '123']
@@ -405,7 +405,7 @@ The function to use for converting URL-unsafe characters to percent-encoding in 
 By default, characters that require percent-encoding within the query string are encoded as UTF-8. To use a different encoding, specify the `encodeURIComponent` option.
 For example, for the following code:
 
-```
+```js
 querystring.stringify({ name: 'value', abc: ['xyz', '123'], anotherName: '' });
 ```
 The return value is:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-listcontroldisplayoptions-syntax.json"></a>
 
-```
+```json
 {
   "[InfoIconLabelOptions](#cfn-quicksight-analysis-listcontroldisplayoptions-infoiconlabeloptions)" : {{SheetControlInfoIconLabelOptions}},
   "[SearchOptions](#cfn-quicksight-analysis-listcontroldisplayoptions-searchoptions)" : {{ListControlSearchOptions}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-listcontroldisplayoptions-syntax.yaml"></a>
 
-```
+```yaml
   [InfoIconLabelOptions](#cfn-quicksight-analysis-listcontroldisplayoptions-infoiconlabeloptions): {{
     SheetControlInfoIconLabelOptions}}
   [SearchOptions](#cfn-quicksight-analysis-listcontroldisplayoptions-searchoptions): {{

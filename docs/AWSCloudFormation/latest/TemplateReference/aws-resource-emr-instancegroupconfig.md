@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-emr-instancegroupconfig-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EMR::InstanceGroupConfig",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-emr-instancegroupconfig-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EMR::InstanceGroupConfig
 Properties:
   [AutoScalingPolicy](#cfn-emr-instancegroupconfig-autoscalingpolicy): {{
@@ -180,7 +180,7 @@ The following example adds a task instance group to a cluster named `TestCluster
 #### JSON
 <a name="aws-resource-emr-instancegroupconfig--examples--Add_a_task_instance_group--json"></a>
 
-```
+```json
 "TestInstanceGroupConfig": {
     "Type": "AWS: : EMR: : InstanceGroupConfig",
     "Properties": {
@@ -199,7 +199,7 @@ The following example adds a task instance group to a cluster named `TestCluster
 #### YAML
 <a name="aws-resource-emr-instancegroupconfig--examples--Add_a_task_instance_group--yaml"></a>
 
-```
+```yaml
 TestInstanceGroupConfig:
   Properties:
     InstanceCount: 2
@@ -220,7 +220,7 @@ The following example defines an `AutoScalingPolicy` for an `InstanceGroupConfig
 #### JSON
 <a name="aws-resource-emr-instancegroupconfig--examples--Specify_an_Automatic_Scaling_Policy--json"></a>
 
-```
+```json
 "MyInstanceGroupConfig": {
   "Type": "AWS::EMR::InstanceGroupConfig",
   "Properties": {
@@ -311,7 +311,7 @@ The following example defines an `AutoScalingPolicy` for an `InstanceGroupConfig
 #### YAML
 <a name="aws-resource-emr-instancegroupconfig--examples--Specify_an_Automatic_Scaling_Policy--yaml"></a>
 
-```
+```yaml
 MyInstanceGroupConfig:
   Type: 'AWS::EMR::InstanceGroupConfig'
   Properties:

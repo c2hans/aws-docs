@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpool-admincreateuserconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AllowAdminCreateUserOnly](#cfn-cognito-userpool-admincreateuserconfig-allowadmincreateuseronly)" : {{Boolean}},
   "[InviteMessageTemplate](#cfn-cognito-userpool-admincreateuserconfig-invitemessagetemplate)" : {{InviteMessageTemplate}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpool-admincreateuserconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AllowAdminCreateUserOnly](#cfn-cognito-userpool-admincreateuserconfig-allowadmincreateuseronly): {{Boolean}}
   [InviteMessageTemplate](#cfn-cognito-userpool-admincreateuserconfig-invitemessagetemplate): {{
     InviteMessageTemplate}}

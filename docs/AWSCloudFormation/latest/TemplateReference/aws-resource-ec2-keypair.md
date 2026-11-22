@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-keypair-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::KeyPair",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-keypair-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::KeyPair
 Properties:
   [KeyFormat](#cfn-ec2-keypair-keyformat): {{String}}
@@ -132,7 +132,7 @@ The following example omits the `PublicKeyMaterial` property to create a new key
 #### JSON
 <a name="aws-resource-ec2-keypair--examples--Create_a_new_key_pair_and_specify_it_when_launching_an_instance--json"></a>
 
-```
+```json
 {
     "Resources": {
         "NewKeyPair": {
@@ -157,7 +157,7 @@ The following example omits the `PublicKeyMaterial` property to create a new key
 #### YAML
 <a name="aws-resource-ec2-keypair--examples--Create_a_new_key_pair_and_specify_it_when_launching_an_instance--yaml"></a>
 
-```
+```yaml
 Resources:
   NewKeyPair:
     Type: 'AWS::EC2::KeyPair'
@@ -178,7 +178,7 @@ The following example uses the `PublicKeyMaterial` property to import an existin
 #### JSON
 <a name="aws-resource-ec2-keypair--examples--Import_an_existing_key_pair_and_specify_it_when_launching_an_instance--json"></a>
 
-```
+```json
 {
     "Resources": {
         "ImportedKeyPair": {
@@ -204,7 +204,7 @@ The following example uses the `PublicKeyMaterial` property to import an existin
 #### YAML
 <a name="aws-resource-ec2-keypair--examples--Import_an_existing_key_pair_and_specify_it_when_launching_an_instance--yaml"></a>
 
-```
+```yaml
 Resources:
   ImportedKeyPair:
     Type: AWS::EC2::KeyPair

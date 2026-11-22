@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-association-awsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AccountId](#cfn-devopsagent-association-awsconfiguration-accountid)" : {{String}},
   "[AccountType](#cfn-devopsagent-association-awsconfiguration-accounttype)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-association-awsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AccountId](#cfn-devopsagent-association-awsconfiguration-accountid): {{String}}
   [AccountType](#cfn-devopsagent-association-awsconfiguration-accounttype): {{String}}
   [AgentElevatedRoleArn](#cfn-devopsagent-association-awsconfiguration-agentelevatedrolearn): {{String}}

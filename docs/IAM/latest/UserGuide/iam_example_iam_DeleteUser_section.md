@@ -16,7 +16,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete an IAM user.
     /// </summary>
@@ -37,7 +37,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/iam#code-examples).
 
-```
+```bash
 ###############################################################################
 # function iecho
 #
@@ -141,7 +141,7 @@ function iam_delete_user() {
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
     Aws::IAM::IAMClient iam(clientConfig);
 
     Aws::IAM::Model::DeleteUserRequest request;
@@ -180,7 +180,7 @@ For more information, see [Deleting an IAM user](https://docs.aws.amazon.com/IAM
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -218,7 +218,7 @@ func (wrapper UserWrapper) DeleteUser(ctx context.Context, userName string) erro
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/iam#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.iam.IamClient;
 import software.amazon.awssdk.services.iam.model.DeleteUserRequest;
@@ -284,7 +284,7 @@ public class DeleteUser {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 Delete the user.
 
-```
+```javascript
 import { DeleteUserCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -304,7 +304,7 @@ export const deleteUser = (name) => {
 **SDK for JavaScript (v2)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/iam#code-examples).
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -340,7 +340,7 @@ iam.getUser(params, function (err, data) {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/iam#code-examples).
 
-```
+```kotlin
 suspend fun deleteIAMUser(userNameVal: String) {
     val request =
         DeleteUserRequest {
@@ -362,12 +362,12 @@ suspend fun deleteIAMUser(userNameVal: String) {
 **Tools for PowerShell V4**
 **Example 1: This example deletes the IAM user named `Bob`.**
 
-```
+```powershell
 Remove-IAMUser -UserName Bob
 ```
 **Example 2: This example deletes the IAM user named `Theresa` along with any elements that must be deleted first.**
 
-```
+```powershell
 $name = "Theresa"
 
 # find any groups and remove user from them
@@ -409,12 +409,12 @@ Remove-IAMUser -UserName $name -Force
 **Tools for PowerShell V5**
 **Example 1: This example deletes the IAM user named `Bob`.**
 
-```
+```powershell
 Remove-IAMUser -UserName Bob
 ```
 **Example 2: This example deletes the IAM user named `Theresa` along with any elements that must be deleted first.**
 
-```
+```powershell
 $name = "Theresa"
 
 # find any groups and remove user from them
@@ -459,7 +459,7 @@ Remove-IAMUser -UserName $name -Force
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
 
-```
+```python
 def delete_user(user_name):
     """
     Deletes a user. Before a user can be deleted, all associated resources,
@@ -482,7 +482,7 @@ def delete_user(user_name):
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 
-```
+```ruby
   # Deletes a user and their associated resources
   #
   # @param user_name [String] The name of the user to delete
@@ -507,7 +507,7 @@ def delete_user(user_name):
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 pub async fn delete_user(client: &iamClient, user: &User) -> Result<(), SdkError<DeleteUserError>> {
     let user = user.clone();
     let mut tries: i32 = 0;
@@ -544,7 +544,7 @@ pub async fn delete_user(client: &iamClient, user: &User) -> Result<(), SdkError
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/iam#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_iam->deleteuser( iv_username = iv_user_name ).
         MESSAGE 'User deleted successfully.' TYPE 'I'.
@@ -562,7 +562,7 @@ pub async fn delete_user(client: &iamClient, user: &User) -> Result<(), SdkError
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/iam#code-examples).
 
-```
+```swift
 import AWSIAM
 import AWSS3
 

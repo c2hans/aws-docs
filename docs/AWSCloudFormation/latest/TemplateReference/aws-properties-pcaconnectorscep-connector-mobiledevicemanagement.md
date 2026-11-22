@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcaconnectorscep-connector-mobiledevicemanagement-syntax.json"></a>
 
-```
+```json
 {
   "[Intune](#cfn-pcaconnectorscep-connector-mobiledevicemanagement-intune)" : {{IntuneConfiguration}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcaconnectorscep-connector-mobiledevicemanagement-syntax.yaml"></a>
 
-```
+```yaml
   [Intune](#cfn-pcaconnectorscep-connector-mobiledevicemanagement-intune): {{
     IntuneConfiguration}}
 ```

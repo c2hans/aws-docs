@@ -8,13 +8,13 @@ Subscribes a callback function to-be-invoked whenever a contact turns to Pending
 
  **Signature**
 
-```
+```typescript
 onPending(handler: ContactPendingHandler, contactId?: string)
 ```
 
  **Usage**
 
-```
+```typescript
 const handler: ContactPendingHandler = async (data: ContactPending) => {
     console.log("Contact Pending occurred! " + data.contactId);
 };
@@ -32,6 +32,6 @@ contactClient.onPending(handler);
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

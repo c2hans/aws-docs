@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-signer-profilepermission-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Signer::ProfilePermission",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-signer-profilepermission-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Signer::ProfilePermission
 Properties:
   [Action](#cfn-signer-profilepermission-action): {{String}}

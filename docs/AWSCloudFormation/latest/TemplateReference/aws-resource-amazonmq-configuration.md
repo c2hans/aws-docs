@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-amazonmq-configuration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AmazonMQ::Configuration",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-amazonmq-configuration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AmazonMQ::Configuration
 Properties:
   [AuthenticationStrategy](#cfn-amazonmq-configuration-authenticationstrategy): {{String}}
@@ -133,7 +133,7 @@ The revision number of the configuration.
 #### JSON
 <a name="aws-resource-amazonmq-configuration--examples--Amazon_MQ_Configuration--json"></a>
 
-```
+```json
 {
   "Description": "Create an Amazon MQ for ActiveMQ configuration",
     "Configuration1": {
@@ -153,7 +153,7 @@ The revision number of the configuration.
 #### YAML
 <a name="aws-resource-amazonmq-configuration--examples--Amazon_MQ_Configuration--yaml"></a>
 
-```
+```yaml
 ---
 Description: "Create an Amazon MQ for ActiveMQ configuration"
 Resources:

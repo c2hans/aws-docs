@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-columnsort-syntax.json"></a>
 
-```
+```json
 {
   "[AggregationFunction](#cfn-quicksight-dashboard-columnsort-aggregationfunction)" : {{AggregationFunction}},
   "[Direction](#cfn-quicksight-dashboard-columnsort-direction)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-columnsort-syntax.yaml"></a>
 
-```
+```yaml
   [AggregationFunction](#cfn-quicksight-dashboard-columnsort-aggregationfunction): {{
     AggregationFunction}}
   [Direction](#cfn-quicksight-dashboard-columnsort-direction): {{String}}

@@ -35,7 +35,7 @@ For more information, see [Common parameters for RMAN procedures](Appendix.Oracl
 
 The following example backs up all archived redo logs for the DB instance.
 
-```
+```sql
 BEGIN
     rdsadmin.rdsadmin_rman_util.backup_archivelog_all(
         p_owner               => '{{SYS}}',
@@ -72,7 +72,7 @@ This procedure also uses the following additional parameters.
 
 The following example backs up archived redo logs in the date range for the DB instance.
 
-```
+```sql
 BEGIN
     rdsadmin.rdsadmin_rman_util.backup_archivelog_date(
         p_owner               => '{{SYS}}',
@@ -111,7 +111,7 @@ This procedure also uses the following additional parameters.
 
 The following example backs up archived redo logs in the SCN range for the DB instance.
 
-```
+```sql
 BEGIN
     rdsadmin.rdsadmin_rman_util.backup_archivelog_scn(
         p_owner               => '{{SYS}}',
@@ -150,7 +150,7 @@ This procedure also uses the following additional parameters.
 
 The following example backs up archived redo logs in the sequence number range for the DB instance.
 
-```
+```sql
 BEGIN
     rdsadmin.rdsadmin_rman_util.backup_archivelog_sequence(
         p_owner               => '{{SYS}}',

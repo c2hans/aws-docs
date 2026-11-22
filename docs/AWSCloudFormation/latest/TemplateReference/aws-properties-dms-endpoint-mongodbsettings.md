@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dms-endpoint-mongodbsettings-syntax.json"></a>
 
-```
+```json
 {
   "[AuthMechanism](#cfn-dms-endpoint-mongodbsettings-authmechanism)" : {{String}},
   "[AuthSource](#cfn-dms-endpoint-mongodbsettings-authsource)" : {{String}},
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dms-endpoint-mongodbsettings-syntax.yaml"></a>
 
-```
+```yaml
   [AuthMechanism](#cfn-dms-endpoint-mongodbsettings-authmechanism): {{String}}
   [AuthSource](#cfn-dms-endpoint-mongodbsettings-authsource): {{String}}
   [AuthType](#cfn-dms-endpoint-mongodbsettings-authtype): {{String}}

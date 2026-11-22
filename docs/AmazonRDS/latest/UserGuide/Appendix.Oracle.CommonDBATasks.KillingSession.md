@@ -14,13 +14,13 @@ To terminate a session, use the Amazon RDS procedure `rdsadmin.rdsadmin_util.kil
 
 To get the session identifier and the session serial number, query the `V$SESSION` view. The following example gets all sessions for the user {{AWSUSER}}.
 
-```
+```sql
 SELECT SID, SERIAL#, STATUS FROM V$SESSION WHERE USERNAME = '{{AWSUSER}}';
 ```
 
 The following example terminates a session.
 
-```
+```sql
 BEGIN
     rdsadmin.rdsadmin_util.kill(
         sid    => {{sid}},
@@ -32,7 +32,7 @@ END;
 
 The following example terminates the processes associated with a session.
 
-```
+```sql
 BEGIN
     rdsadmin.rdsadmin_util.kill(
         sid    => {{sid}},

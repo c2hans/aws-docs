@@ -20,7 +20,7 @@ To use this operation, you must have permission to perform the `s3:GetLifecycleC
 ### Syntax
 <a name="v1-rel-RESTBucketGETlifecycle-requests-syntax"></a>
 
-```
+```http
 1. GET /?lifecycle HTTP/1.1
 2. Host: {{bucketname}}.s3.amazonaws.com
 3. Date: {{date}}
@@ -94,7 +94,7 @@ This example is a GET request to retrieve the `lifecycle` subresource from the s
 #### Sample Request
 <a name="v1-rel-RESTBucketGETlifecycle-examples-example-1-retrieve-lifecycle-subresource--sample-request"></a>
 
-```
+```http
 1. GET /?lifecycle HTTP/1.1
 2. Host: examplebucket.s3.amazonaws.com
 3. x-amz-date: Thu, 15 Nov 2012 00:17:21 GMT
@@ -104,7 +104,7 @@ This example is a GET request to retrieve the `lifecycle` subresource from the s
 #### Sample Response
 <a name="v1-rel-RESTBucketGETlifecycle-examples-example-1-retrieve-lifecycle-subresource--sample-response"></a>
 
-```
+```http
  1. HTTP/1.1 200 OK
  2. x-amz-id-2: ITnGT1y4RyTmXa3rPi4hklTXouTf0hccUjo0iCPjz6FnfIutBj3M7fPGlWO2SEWp
  3. x-amz-request-id: 51991C342C575321

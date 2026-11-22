@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspaces-directory-microsoftentraconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ApplicationConfigSecretArn](#cfn-workspaces-directory-microsoftentraconfig-applicationconfigsecretarn)" : {{String}},
   "[TenantId](#cfn-workspaces-directory-microsoftentraconfig-tenantid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspaces-directory-microsoftentraconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ApplicationConfigSecretArn](#cfn-workspaces-directory-microsoftentraconfig-applicationconfigsecretarn): {{String}}
   [TenantId](#cfn-workspaces-directory-microsoftentraconfig-tenantid): {{String}}
 ```

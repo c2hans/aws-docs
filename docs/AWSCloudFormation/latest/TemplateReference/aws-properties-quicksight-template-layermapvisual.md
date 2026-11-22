@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-layermapvisual-syntax.json"></a>
 
-```
+```json
 {
   "[ChartConfiguration](#cfn-quicksight-template-layermapvisual-chartconfiguration)" : {{GeospatialLayerMapConfiguration}},
   "[DataSetIdentifier](#cfn-quicksight-template-layermapvisual-datasetidentifier)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-layermapvisual-syntax.yaml"></a>
 
-```
+```yaml
   [ChartConfiguration](#cfn-quicksight-template-layermapvisual-chartconfiguration): {{
     GeospatialLayerMapConfiguration}}
   [DataSetIdentifier](#cfn-quicksight-template-layermapvisual-datasetidentifier): {{String}}

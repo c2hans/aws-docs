@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-fsx-storagevirtualmachine-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::FSx::StorageVirtualMachine",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-fsx-storagevirtualmachine-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::FSx::StorageVirtualMachine
 Properties:
   [ActiveDirectoryConfiguration](#cfn-fsx-storagevirtualmachine-activedirectoryconfiguration): {{
@@ -140,7 +140,7 @@ The following examples create an Amazon FSx for NetApp ONTAP storage virtual mac
 #### JSON
 <a name="aws-resource-fsx-storagevirtualmachine--examples--Create_an_Amazon_FSx_for_NetApp_ONTAP_Storage_Virtual_Machine--json"></a>
 
-```
+```json
 {
   "OntapStorageVirtualMachineWithAllConfigs": {
     "Type": "AWS::FSx::StorageVirtualMachine",
@@ -202,7 +202,7 @@ The following examples create an Amazon FSx for NetApp ONTAP storage virtual mac
 #### YAML
 <a name="aws-resource-fsx-storagevirtualmachine--examples--Create_an_Amazon_FSx_for_NetApp_ONTAP_Storage_Virtual_Machine--yaml"></a>
 
-```
+```yaml
 OntapStorageVirtualMachineWithAllConfigs:
   Type: "AWS::FSx::StorageVirtualMachine"
   Properties:

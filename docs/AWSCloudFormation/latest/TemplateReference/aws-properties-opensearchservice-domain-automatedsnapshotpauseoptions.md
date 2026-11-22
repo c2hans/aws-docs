@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchservice-domain-automatedsnapshotpauseoptions-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-opensearchservice-domain-automatedsnapshotpauseoptions-enabled)" : {{Boolean}},
   "[EndTime](#cfn-opensearchservice-domain-automatedsnapshotpauseoptions-endtime)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchservice-domain-automatedsnapshotpauseoptions-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-opensearchservice-domain-automatedsnapshotpauseoptions-enabled): {{Boolean}}
   [EndTime](#cfn-opensearchservice-domain-automatedsnapshotpauseoptions-endtime): {{String}}
   [StartTime](#cfn-opensearchservice-domain-automatedsnapshotpauseoptions-starttime): {{String}}

@@ -42,7 +42,7 @@ aws dynamodb get-item \
 
 The following JSON would be returned for this example.
 
-```
+```json
 {
     "Item": {
         "Description": {

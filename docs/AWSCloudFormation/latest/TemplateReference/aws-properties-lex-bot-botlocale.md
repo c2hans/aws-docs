@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-botlocale-syntax.json"></a>
 
-```
+```json
 {
   "[AudioFillerSettings](#cfn-lex-bot-botlocale-audiofillersettings)" : {{AudioFillerSettings}},
   "[CustomVocabulary](#cfn-lex-bot-botlocale-customvocabulary)" : {{CustomVocabulary}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-botlocale-syntax.yaml"></a>
 
-```
+```yaml
   [AudioFillerSettings](#cfn-lex-bot-botlocale-audiofillersettings): {{
     AudioFillerSettings}}
   [CustomVocabulary](#cfn-lex-bot-botlocale-customvocabulary): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-formtype-model-syntax.json"></a>
 
-```
+```json
 {
   "[Smithy](#cfn-datazone-formtype-model-smithy)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-formtype-model-syntax.yaml"></a>
 
-```
+```yaml
   [Smithy](#cfn-datazone-formtype-model-smithy): {{String}}
 ```
 

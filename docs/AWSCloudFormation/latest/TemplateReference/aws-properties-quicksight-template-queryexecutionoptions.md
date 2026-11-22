@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-queryexecutionoptions-syntax.json"></a>
 
-```
+```json
 {
   "[QueryExecutionMode](#cfn-quicksight-template-queryexecutionoptions-queryexecutionmode)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-queryexecutionoptions-syntax.yaml"></a>
 
-```
+```yaml
   [QueryExecutionMode](#cfn-quicksight-template-queryexecutionoptions-queryexecutionmode): {{String}}
 ```
 

@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/create-cloudfront-table
 
    The follow example contains all of the available fields. You can comment out or remove fields that you do not require.
 
-   ```
+   ```sql
    CREATE EXTERNAL TABLE IF NOT EXISTS cloudfront_real_time_logs (
    `timestamp` STRING,
    c_ip STRING,

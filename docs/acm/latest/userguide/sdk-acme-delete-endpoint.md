@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-acme-delete-end
 
 The following example shows how to use the [DeleteAcmeEndpoint](https://docs.aws.amazon.com/acm/latest/APIReference/API_DeleteAcmeEndpoint.html) function.
 
-```
+```java
 package com.amazonaws.samples;
 
 import com.amazonaws.services.certificatemanager.AWSCertificateManagerClientBuilder;

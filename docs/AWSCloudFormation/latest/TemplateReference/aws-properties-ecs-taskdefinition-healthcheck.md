@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskdefinition-healthcheck-syntax.json"></a>
 
-```
+```json
 {
   "[Command](#cfn-ecs-taskdefinition-healthcheck-command)" : {{[ String, ... ]}},
   "[Interval](#cfn-ecs-taskdefinition-healthcheck-interval)" : {{Integer}},
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskdefinition-healthcheck-syntax.yaml"></a>
 
-```
+```yaml
   [Command](#cfn-ecs-taskdefinition-healthcheck-command): {{
     - String}}
   [Interval](#cfn-ecs-taskdefinition-healthcheck-interval): {{Integer}}

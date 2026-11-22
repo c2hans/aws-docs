@@ -200,7 +200,7 @@ Disabling TCP offloading may reduce the network performance of your instance.
 
 1. Run the following commands from a Command Prompt window.
 
-   ```
+   ```batch
    netsh int ip set global taskoffload=disabled
    netsh int tcp set global chimney=disabled
    netsh int tcp set global rss=disabled
@@ -304,11 +304,11 @@ We recommend that you do not distribute IO preparation without also distributing
 
    1. Run the following commands to remove the `NotifierDistributed` and `DpcRedirection` registry keys.
 
-      ```
+      ```powershell
       Remove-ItemProperty -Path HKLM:\System\CurrentControlSet\Services\xenvbd\Parameters -Name NotifierDistributed
       ```
 
-      ```
+      ```powershell
       Remove-ItemProperty -Path HKLM:\System\CurrentControlSet\Services\xenvbd\Parameters -Name DpcRedirection
       ```
 
@@ -324,7 +324,7 @@ We recommend that you do not distribute IO preparation without also distributing
 
    1. Run the following command to set the `NotiferDistributed` registry key.
 
-      ```
+      ```powershell
       Set-ItemProperty -Type DWORD -Path HKLM:\System\CurrentControlSet\Services\xenvbd\Parameters -Value 0x00000001 -Name NotifierDistributed
       ```
 
@@ -340,11 +340,11 @@ We recommend that you do not distribute IO preparation without also distributing
 
    1. Run the following commands to set the `NotifierDistributed` and `DpcRedirection` registry keys.
 
-      ```
+      ```powershell
       Set-ItemProperty -Type DWORD -Path HKLM:\System\CurrentControlSet\Services\xenvbd\Parameters -Value 0x00000002 -Name NotifierDistributed
       ```
 
-      ```
+      ```powershell
       Set-ItemProperty -Type DWORD -Path HKLM:\System\CurrentControlSet\Services\xenvbd\Parameters -Value 0x00000001 -Name DpcRedirection
       ```
 

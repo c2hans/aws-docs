@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-domain-jobschedule-syntax.json"></a>
 
-```
+```json
 {
   "[DayOfTheWeek](#cfn-customerprofiles-domain-jobschedule-dayoftheweek)" : {{String}},
   "[Time](#cfn-customerprofiles-domain-jobschedule-time)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-domain-jobschedule-syntax.yaml"></a>
 
-```
+```yaml
   [DayOfTheWeek](#cfn-customerprofiles-domain-jobschedule-dayoftheweek): {{String}}
   [Time](#cfn-customerprofiles-domain-jobschedule-time): {{String}}
 ```

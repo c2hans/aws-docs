@@ -95,7 +95,7 @@ For more information about `SELECT` queries, see [SELECT](select.md).
 ### Synopsis
 <a name="insert-into-select-synopsis"></a>
 
-```
+```sql
 INSERT INTO destination_table
 SELECT select_query
 FROM source_table_or_view
@@ -106,7 +106,7 @@ FROM source_table_or_view
 
 Select all rows in the `vancouver_pageviews` table and insert them into the `canada_pageviews` table:
 
-```
+```sql
 INSERT INTO canada_pageviews
 SELECT *
 FROM vancouver_pageviews;
@@ -114,7 +114,7 @@ FROM vancouver_pageviews;
 
 Select only those rows in the `vancouver_pageviews` table where the `date` column has a value between `2019-07-01` and `2019-07-31`, and then insert them into `canada_july_pageviews`:
 
-```
+```sql
 INSERT INTO canada_july_pageviews
 SELECT *
 FROM vancouver_pageviews
@@ -125,7 +125,7 @@ WHERE date
 
 Select the values in the `city` and `state` columns in the `cities_world` table only from those rows with a value of `usa` in the `country` column and insert them into the `city` and `state` columns in the `cities_usa` table:
 
-```
+```sql
 INSERT INTO cities_usa (city,state)
 SELECT city,state
 FROM cities_world
@@ -143,7 +143,7 @@ We do not recommend inserting rows using `VALUES` because Athena generates files
 ### Synopsis
 <a name="insert-into-values-synopsis"></a>
 
-```
+```sql
 INSERT INTO destination_table [(col1,col2,...)]
 VALUES (col1value,col2value,...)[,
        (col1value,col2value,...)][,
@@ -157,14 +157,14 @@ In the following examples, the cities table has three columns: `id`, `city`, `st
 
 Insert a single row into the `cities` table, with all column values specified:
 
-```
+```sql
 INSERT INTO cities
 VALUES (1,'Lansing','MI','Si quaeris peninsulam amoenam circumspice')
 ```
 
 Insert two rows into the `cities` table:
 
-```
+```sql
 INSERT INTO cities
 VALUES (1,'Lansing','MI','Si quaeris peninsulam amoenam circumspice'),
        (3,'Boise','ID','Esto perpetua')

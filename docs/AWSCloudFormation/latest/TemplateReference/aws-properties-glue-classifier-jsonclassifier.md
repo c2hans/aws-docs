@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-classifier-jsonclassifier-syntax.json"></a>
 
-```
+```json
 {
   "[JsonPath](#cfn-glue-classifier-jsonclassifier-jsonpath)" : {{String}},
   "[Name](#cfn-glue-classifier-jsonclassifier-name)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-classifier-jsonclassifier-syntax.yaml"></a>
 
-```
+```yaml
   [JsonPath](#cfn-glue-classifier-jsonclassifier-jsonpath): {{String}}
   [Name](#cfn-glue-classifier-jsonclassifier-name): {{String}}
 ```

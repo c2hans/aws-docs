@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amplify-app-autobranchcreationconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AutoBranchCreationPatterns](#cfn-amplify-app-autobranchcreationconfig-autobranchcreationpatterns)" : {{[ String, ... ]}},
   "[BasicAuthConfig](#cfn-amplify-app-autobranchcreationconfig-basicauthconfig)" : {{BasicAuthConfig}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amplify-app-autobranchcreationconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AutoBranchCreationPatterns](#cfn-amplify-app-autobranchcreationconfig-autobranchcreationpatterns): {{
     - String}}
   [BasicAuthConfig](#cfn-amplify-app-autobranchcreationconfig-basicauthconfig): {{

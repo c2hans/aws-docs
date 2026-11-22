@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityhub-insight-numberfilter-syntax.json"></a>
 
-```
+```json
 {
   "[Eq](#cfn-securityhub-insight-numberfilter-eq)" : {{Number}},
   "[Gte](#cfn-securityhub-insight-numberfilter-gte)" : {{Number}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityhub-insight-numberfilter-syntax.yaml"></a>
 
-```
+```yaml
   [Eq](#cfn-securityhub-insight-numberfilter-eq): {{Number}}
   [Gte](#cfn-securityhub-insight-numberfilter-gte): {{Number}}
   [Lte](#cfn-securityhub-insight-numberfilter-lte): {{Number}}

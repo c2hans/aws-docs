@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-config-configrule-evaluationmodeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Mode](#cfn-config-configrule-evaluationmodeconfiguration-mode)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-config-configrule-evaluationmodeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Mode](#cfn-config-configrule-evaluationmodeconfiguration-mode): {{String}}
 ```
 

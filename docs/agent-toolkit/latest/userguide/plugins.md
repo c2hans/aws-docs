@@ -29,7 +29,7 @@ Plugins work with Claude Code, Codex, and Devin. They are open source and publis
 
 In Claude Code:
 
-```
+```bash
 /plugin install aws-core@claude-plugins-official
 /reload-plugins
 ```
@@ -39,7 +39,7 @@ In Claude Code:
 
 In your terminal:
 
-```
+```bash
 codex plugin marketplace add aws/agent-toolkit-for-aws
 ```
 
@@ -50,7 +50,7 @@ Then launch Codex and run `/plugins` to browse and install the **aws-core** plug
 
 In your terminal:
 
-```
+```bash
 devin plugins install aws/agent-toolkit-for-aws#plugins/aws-core
 ```
 

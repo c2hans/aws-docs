@@ -21,7 +21,7 @@ To grant these IAM user permissions, you can do either of the following:
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -79,7 +79,7 @@ To grant these IAM user permissions, you can do either of the following:
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

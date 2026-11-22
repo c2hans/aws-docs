@@ -120,7 +120,7 @@ This example shows a sample request for the `ListFlows` API. In the second sampl
 #### Sample Request
 <a name="API_ListFlows_Example_1_Request"></a>
 
-```
+```json
 {
   "flowList": [
     {
@@ -154,7 +154,7 @@ This example shows a sample request for the `ListFlows` API. In the second sampl
 }
 ```
 
-```
+```json
 {
   "maxResults": 1
 }

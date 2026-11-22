@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-eventsourcemapping-documentdbeventsourceconfig-syntax.json"></a>
 
-```
+```json
 {
   "[CollectionName](#cfn-lambda-eventsourcemapping-documentdbeventsourceconfig-collectionname)" : {{String}},
   "[DatabaseName](#cfn-lambda-eventsourcemapping-documentdbeventsourceconfig-databasename)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-eventsourcemapping-documentdbeventsourceconfig-syntax.yaml"></a>
 
-```
+```yaml
   [CollectionName](#cfn-lambda-eventsourcemapping-documentdbeventsourceconfig-collectionname): {{String}}
   [DatabaseName](#cfn-lambda-eventsourcemapping-documentdbeventsourceconfig-databasename): {{String}}
   [FullDocument](#cfn-lambda-eventsourcemapping-documentdbeventsourceconfig-fulldocument): {{String}}

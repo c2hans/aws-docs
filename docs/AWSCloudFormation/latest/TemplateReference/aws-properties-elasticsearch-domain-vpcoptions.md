@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticsearch-domain-vpcoptions-syntax.json"></a>
 
-```
+```json
 {
   "[SecurityGroupIds](#cfn-elasticsearch-domain-vpcoptions-securitygroupids)" : {{[ String, ... ]}},
   "[SubnetIds](#cfn-elasticsearch-domain-vpcoptions-subnetids)" : {{[ String, ... ]}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticsearch-domain-vpcoptions-syntax.yaml"></a>
 
-```
+```yaml
   [SecurityGroupIds](#cfn-elasticsearch-domain-vpcoptions-securitygroupids): {{
     - String}}
   [SubnetIds](#cfn-elasticsearch-domain-vpcoptions-subnetids): {{

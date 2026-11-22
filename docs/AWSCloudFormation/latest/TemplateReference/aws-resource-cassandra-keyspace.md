@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cassandra-keyspace-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Cassandra::Keyspace",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cassandra-keyspace-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Cassandra::Keyspace
 Properties:
   [ClientSideTimestampsEnabled](#cfn-cassandra-keyspace-clientsidetimestampsenabled): {{Boolean}}
@@ -108,7 +108,7 @@ The following example creates a new keyspace named `MyNewKeyspace` with the foll
 #### JSON
 <a name="aws-resource-cassandra-keyspace--examples--Create_a_new_keyspace_with_tags--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -126,7 +126,7 @@ The following example creates a new keyspace named `MyNewKeyspace` with the foll
 #### YAML
 <a name="aws-resource-cassandra-keyspace--examples--Create_a_new_keyspace_with_tags--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   MyNewKeyspace:
@@ -148,7 +148,7 @@ The following example creates a new multi-Region keyspace named `MultiRegionKeys
 #### JSON
 <a name="aws-resource-cassandra-keyspace--examples--Create_a_new_multi-Region_keyspace--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -169,7 +169,7 @@ The following example creates a new multi-Region keyspace named `MultiRegionKeys
 #### YAML
 <a name="aws-resource-cassandra-keyspace--examples--Create_a_new_multi-Region_keyspace--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   MultiRegionKeyspace:
@@ -192,7 +192,7 @@ The following example shows how to add the Region `eu-west-1` to a single-Region
 #### JSON
 <a name="aws-resource-cassandra-keyspace--examples--Add_a_new_Region_to_a_single-Region_keyspace--json"></a>
 
-```
+```json
 {
    "AWSTemplateFormatVersion":"2010-09-09",
    "Resources":{
@@ -217,7 +217,7 @@ The following example shows how to add the Region `eu-west-1` to a single-Region
 #### YAML
 <a name="aws-resource-cassandra-keyspace--examples--Add_a_new_Region_to_a_single-Region_keyspace--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   MultiRegionKeyspace:
@@ -240,7 +240,7 @@ The following example shows how to add the new Region `us-west-2` to the existin
 #### JSON
 <a name="aws-resource-cassandra-keyspace--examples--Add_a_new_Region_to_a_multi-Region_keyspace--json"></a>
 
-```
+```json
 {
    "AWSTemplateFormatVersion":"2010-09-09",
    "Resources":{
@@ -265,7 +265,7 @@ The following example shows how to add the new Region `us-west-2` to the existin
 #### YAML
 <a name="aws-resource-cassandra-keyspace--examples--Add_a_new_Region_to_a_multi-Region_keyspace--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   MultiRegionKeyspace:

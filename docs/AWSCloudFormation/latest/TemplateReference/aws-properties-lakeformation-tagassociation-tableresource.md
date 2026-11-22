@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lakeformation-tagassociation-tableresource-syntax.json"></a>
 
-```
+```json
 {
   "[CatalogId](#cfn-lakeformation-tagassociation-tableresource-catalogid)" : {{String}},
   "[DatabaseName](#cfn-lakeformation-tagassociation-tableresource-databasename)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lakeformation-tagassociation-tableresource-syntax.yaml"></a>
 
-```
+```yaml
   [CatalogId](#cfn-lakeformation-tagassociation-tableresource-catalogid): {{String}}
   [DatabaseName](#cfn-lakeformation-tagassociation-tableresource-databasename): {{String}}
   [Name](#cfn-lakeformation-tagassociation-tableresource-name): {{String}}

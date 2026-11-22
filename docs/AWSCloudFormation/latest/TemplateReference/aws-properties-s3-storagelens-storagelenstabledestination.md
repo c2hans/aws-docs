@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-storagelens-storagelenstabledestination-syntax.json"></a>
 
-```
+```json
 {
   "[Encryption](#cfn-s3-storagelens-storagelenstabledestination-encryption)" : {{Encryption}},
   "[IsEnabled](#cfn-s3-storagelens-storagelenstabledestination-isenabled)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-storagelens-storagelenstabledestination-syntax.yaml"></a>
 
-```
+```yaml
   [Encryption](#cfn-s3-storagelens-storagelenstabledestination-encryption): {{
     Encryption}}
   [IsEnabled](#cfn-s3-storagelens-storagelenstabledestination-isenabled): {{Boolean}}

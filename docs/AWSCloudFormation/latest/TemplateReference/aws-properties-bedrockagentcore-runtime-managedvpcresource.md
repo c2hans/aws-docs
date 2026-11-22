@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-runtime-managedvpcresource-syntax.json"></a>
 
-```
+```json
 {
   "[EndpointIpAddressType](#cfn-bedrockagentcore-runtime-managedvpcresource-endpointipaddresstype)" : {{String}},
   "[RoutingDomain](#cfn-bedrockagentcore-runtime-managedvpcresource-routingdomain)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-runtime-managedvpcresource-syntax.yaml"></a>
 
-```
+```yaml
   [EndpointIpAddressType](#cfn-bedrockagentcore-runtime-managedvpcresource-endpointipaddresstype): {{String}}
   [RoutingDomain](#cfn-bedrockagentcore-runtime-managedvpcresource-routingdomain): {{String}}
   [SecurityGroupIds](#cfn-bedrockagentcore-runtime-managedvpcresource-securitygroupids): {{

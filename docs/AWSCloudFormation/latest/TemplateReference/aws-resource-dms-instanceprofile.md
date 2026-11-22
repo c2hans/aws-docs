@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-dms-instanceprofile-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DMS::InstanceProfile",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-dms-instanceprofile-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DMS::InstanceProfile
 Properties:
   [AvailabilityZone](#cfn-dms-instanceprofile-availabilityzone): {{String}}

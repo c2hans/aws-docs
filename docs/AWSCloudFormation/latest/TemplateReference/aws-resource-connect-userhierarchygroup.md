@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-connect-userhierarchygroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Connect::UserHierarchyGroup",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-connect-userhierarchygroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Connect::UserHierarchyGroup
 Properties:
   [InstanceArn](#cfn-connect-userhierarchygroup-instancearn): {{String}}
@@ -109,7 +109,7 @@ The following example specifies a user hierarchy group for an Connect Customer i
 #### YAML
 <a name="aws-resource-connect-userhierarchygroup--examples--Specify_a_user_hierarchy_group--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Specifies a user hierarchy group for an Connect Customer instance
 Resources:

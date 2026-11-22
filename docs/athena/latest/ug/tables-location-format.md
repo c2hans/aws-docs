@@ -45,7 +45,7 @@ Do not use any of the following items for specifying the `LOCATION` for your dat
 + Do not use empty folders like `//` in the path, as follows: `S3://amzn-s3-demo-bucket/{{folder}}//{{folder}}/`.
 + Do not use paths like the following:
 
-  ```
+  ```HTML
   s3://amzn-s3-demo-bucket
   s3://amzn-s3-demo-bucket/*
   s3://amzn-s3-demo-bucket/mySpecialFile.dat

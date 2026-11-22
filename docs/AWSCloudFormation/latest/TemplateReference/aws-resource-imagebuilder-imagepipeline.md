@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-imagebuilder-imagepipeline-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ImageBuilder::ImagePipeline",
   "Properties" : {
@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-imagebuilder-imagepipeline-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ImageBuilder::ImagePipeline
 Properties:
   [ContainerRecipeArn](#cfn-imagebuilder-imagepipeline-containerrecipearn): {{String}}
@@ -223,7 +223,7 @@ The following example shows the template for the ImagePipeline resource in both 
 #### YAML
 <a name="aws-resource-imagebuilder-imagepipeline--examples--Create_an_image_pipeline--yaml"></a>
 
-```
+```yaml
 Resources:
   ImagePipelineAllParameters:
     Type: 'AWS::ImageBuilder::ImagePipeline'
@@ -248,7 +248,7 @@ Resources:
 #### JSON
 <a name="aws-resource-imagebuilder-imagepipeline--examples--Create_an_image_pipeline--json"></a>
 
-```
+```json
 {
     "Resources": {
         "ImagePipelineAllParameters": {
@@ -292,7 +292,7 @@ The following example creates an image pipeline that uses a custom workflow, wri
 #### YAML
 <a name="aws-resource-imagebuilder-imagepipeline--examples--Create_an_image_pipeline_with_workflows_and_logging--yaml"></a>
 
-```
+```yaml
 Resources:
   PipelineWithWorkflows:
     Type: AWS::ImageBuilder::ImagePipeline
@@ -324,7 +324,7 @@ Resources:
 #### JSON
 <a name="aws-resource-imagebuilder-imagepipeline--examples--Create_an_image_pipeline_with_workflows_and_logging--json"></a>
 
-```
+```json
 {
     "Resources": {
         "PipelineWithWorkflows": {

@@ -12,7 +12,7 @@ You can retrieve the AWS Marketplace product code for your instance using its in
 **Linux**
 Run the following command from your Linux instance.
 
-```
+```bash
 TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` \
     && curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/product-codes
 ```
@@ -20,12 +20,12 @@ TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metad
 **Windows**
 Run the following cmdlets from your Windows instance.
 
-```
+```powershell
 [string]$token = Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token-ttl-seconds" = "21600"} `
     -Method PUT -Uri http://169.254.169.254/latest/api/token
 ```
 
-```
+```powershell
 Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token" = $token} `
     -Method GET -Uri http://169.254.169.254/latest/meta-data/product-codes
 ```
@@ -36,14 +36,14 @@ Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token" = $token} `
 **Linux**
 Run the following command from your Linux instance.
 
-```
+```bash
 curl http://169.254.169.254/latest/meta-data/product-codes
 ```
 
 **Windows**
 Run the following command from your Windows instance.
 
-```
+```powershell
 Invoke-RestMethod -Uri http://169.254.169.254/latest/meta-data/product-codes
 ```
 

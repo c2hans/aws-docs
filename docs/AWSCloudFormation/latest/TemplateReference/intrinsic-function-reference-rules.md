@@ -36,7 +36,7 @@ Returns `true` if all the specified conditions evaluate to `true`; returns `fals
 ### Declaration
 <a name="fn-and-declaration"></a>
 
-```
+```text
 "Fn::And" : [{{{condition}}}, {{{...}}}]
 ```
 
@@ -51,7 +51,7 @@ A rule-specific intrinsic function that evaluates to `true` or `false`.
 
 The following example evaluates to `true` if the referenced security group name is equal to `sg-mysggroup` and if the `InstanceType` parameter value is either `t3.large` or `t3.small`:
 
-```
+```json
 "Fn::And": [
   {
     "Fn::Equals": [
@@ -79,7 +79,7 @@ Returns `true` if a specified string matches at least one value in a list of str
 ### Declaration
 <a name="fn-contains-declaration"></a>
 
-```
+```text
 "Fn::Contains" : [[{{list_of_strings}}], {{string}}]
 ```
 
@@ -97,7 +97,7 @@ A string, such as `"A"`, that you want to compare against a list of strings.
 
 The following function evaluates to `true` if the `InstanceType` parameter value is contained in the list (`t3.large` or `t3.small`):
 
-```
+```json
 "Fn::Contains" : [
   ["t3.large", "t3.small"], {"Ref" : "InstanceType"}
 ]
@@ -111,7 +111,7 @@ Returns `true` if a specified string matches all values in a list.
 ### Declaration
 <a name="fn-eachmemberequals-declaration"></a>
 
-```
+```text
 "Fn::EachMemberEquals" : [[{{list_of_strings}}], {{string}}]
 ```
 
@@ -129,7 +129,7 @@ A string, such as `"A"`, that you want to compare against a list of strings.
 
 The following function returns `true` if the `Department` tag for all parameters of type `AWS::EC2::VPC::Id` have a value of `IT`:
 
-```
+```json
 "Fn::EachMemberEquals" : [
   {"Fn::ValueOfAll" : ["AWS::EC2::VPC::Id", "Tags.Department"]}, "IT"
 ]
@@ -143,7 +143,7 @@ Returns `true` if each member in a list of strings matches at least one value in
 ### Declaration
 <a name="fn-eachmemberin-declaration"></a>
 
-```
+```text
 "Fn::EachMemberIn" : [[{{strings_to_check}}], [{{strings_to_match}}]]
 ```
 
@@ -161,7 +161,7 @@ A list of strings, such as `"A", "B", "C"`. Each member in the `strings_to_match
 
 The following function checks whether users specify a subnet that's in a valid virtual private cloud (VPC). The VPC must be in the account and the Region in which users are working with the stack. The function applies to all parameters of type `AWS::EC2::Subnet::Id`.
 
-```
+```json
 "Fn::EachMemberIn" : [
   {"Fn::ValueOfAll" : ["AWS::EC2::Subnet::Id", "VpcId"]}, {"Fn::RefAll" : "AWS::EC2::VPC::Id"}
 ]
@@ -175,7 +175,7 @@ Compares two values to determine whether they're equal. Returns `true` if the tw
 ### Declaration
 <a name="fn-equals-declaration"></a>
 
-```
+```text
 "Fn::Equals" : ["{{value_1}}", "{{value_2}}"]
 ```
 
@@ -190,7 +190,7 @@ A value of any type that you want to compare with another value.
 
 The following example evaluates to `true` if the value for the `EnvironmentType` parameter is equal to `prod`:
 
-```
+```json
 "Fn::Equals" : [{"Ref" : "EnvironmentType"}, "prod"]
 ```
 
@@ -202,7 +202,7 @@ Returns `true` for a condition that evaluates to `false`, and returns `false` fo
 ### Declaration
 <a name="fn-not-declaration"></a>
 
-```
+```text
 "Fn::Not" : [{{{condition}}}]
 ```
 
@@ -217,7 +217,7 @@ A rule-specific intrinsic function that evaluates to `true` or `false`.
 
 The following example evaluates to `true` if the value for the `EnvironmentType` parameter isn't equal to `prod`:
 
-```
+```json
 "Fn::Not" : [{"Fn::Equals" : [{"Ref" : "EnvironmentType"}, "prod"]}]
 ```
 
@@ -229,7 +229,7 @@ Returns `true` if any one of the specified conditions evaluates to `true`; retur
 ### Declaration
 <a name="fn-or-declaration"></a>
 
-```
+```text
 "Fn::Or" : [{{{condition}}}, {{{...}}}]
 ```
 
@@ -244,7 +244,7 @@ A rule-specific intrinsic function that evaluates to `true` or `false`.
 
 The following example evaluates to `true` if the referenced security group name is equal to `sg-mysggroup` or if the `InstanceType` parameter value is either `t3.large` or `t3.small`:
 
-```
+```json
 "Fn::Or" : [
   {"Fn::Equals" : ["sg-mysggroup", {"Ref" : "ASecurityGroup"}]},
   {"Fn::Contains" : [["t3.large", "t3.small"], {"Ref" : "InstanceType"}]}
@@ -259,7 +259,7 @@ Returns all values for a specified parameter type.
 ### Declaration
 <a name="fn-refall-declaration"></a>
 
-```
+```text
 "Fn::RefAll" : "{{parameter_type}}"
 ```
 
@@ -274,7 +274,7 @@ An AWS-specific parameter type, such as `AWS::EC2::SecurityGroup::Id` or `AWS::E
 
 The following function returns a list of all VPC IDs for the Region and AWS account in which the stack is being created or updated:
 
-```
+```json
 "Fn::RefAll" : "AWS::EC2::VPC::Id"
 ```
 
@@ -286,7 +286,7 @@ Returns an attribute value or list of values for a specific parameter and attrib
 ### Declaration
 <a name="fn-valueof-declaration"></a>
 
-```
+```text
 "Fn::ValueOf" : [ "{{parameter_logical_id}}", "{{attribute}}" ]
 ```
 
@@ -304,13 +304,13 @@ The name of a parameter to retrieve attribute values from. The parameter must be
 
 The following example returns the value of the `Department` tag for the VPC that's specified by the `ElbVpc` parameter:
 
-```
+```json
 "Fn::ValueOf" : ["ElbVpc", "Tags.Department"]
 ```
 
 If you specify multiple values for a parameter, the Fn::ValueOf function can return a list. For example, you can specify multiple subnets and get a list of Availability Zones where each member is the Availability Zone of a particular subnet:
 
-```
+```json
 "Fn::ValueOf" : ["ListOfElbSubnets", "AvailabilityZone"]
 ```
 
@@ -322,7 +322,7 @@ Returns a list of all attribute values for a given parameter type and attribute.
 ### Declaration
 <a name="fn-valueofall-declaration"></a>
 
-```
+```text
 "Fn::ValueOfAll" : ["{{parameter_type}}", "{{attribute}}"]
 ```
 
@@ -340,7 +340,7 @@ An AWS-specific parameter type, such as `AWS::EC2::SecurityGroup::Id` or `AWS::E
 
 In the following example, the `Fn::ValueOfAll` function returns a list of values, where each member is the `Department` tag value for VPCs with that tag:
 
-```
+```json
 "Fn::ValueOfAll" : ["AWS::EC2::VPC::Id", "Tags.Department"]
 ```
 

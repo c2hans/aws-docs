@@ -160,7 +160,7 @@ HTTP Status Code: 400
 
 This request creates an Outposts bucket named `example-outpost-bucket`.
 
-```
+```HTTP
             PUT /v20180820/bucket/example-outpost-bucket/  HTTP/1.1
             Host:s3-outposts.<Region>.amazonaws.com
             x-amz-outpost-id: op-01ac5d28a6a232904

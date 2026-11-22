@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssmquicksetup-configurationmanager-configurationdefinition-syntax.json"></a>
 
-```
+```json
 {
   "[id](#cfn-ssmquicksetup-configurationmanager-configurationdefinition-id)" : {{String}},
   "[LocalDeploymentAdministrationRoleArn](#cfn-ssmquicksetup-configurationmanager-configurationdefinition-localdeploymentadministrationrolearn)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssmquicksetup-configurationmanager-configurationdefinition-syntax.yaml"></a>
 
-```
+```yaml
   [id](#cfn-ssmquicksetup-configurationmanager-configurationdefinition-id): {{String}}
   [LocalDeploymentAdministrationRoleArn](#cfn-ssmquicksetup-configurationmanager-configurationdefinition-localdeploymentadministrationrolearn): {{String}}
   [LocalDeploymentExecutionRoleName](#cfn-ssmquicksetup-configurationmanager-configurationdefinition-localdeploymentexecutionrolename): {{String}}

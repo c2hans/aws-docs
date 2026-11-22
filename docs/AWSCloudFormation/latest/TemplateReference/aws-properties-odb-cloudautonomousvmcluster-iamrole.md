@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-odb-cloudautonomousvmcluster-iamrole-syntax.json"></a>
 
-```
+```json
 {
   "[AwsIntegration](#cfn-odb-cloudautonomousvmcluster-iamrole-awsintegration)" : {{String}},
   "[IamRoleArn](#cfn-odb-cloudautonomousvmcluster-iamrole-iamrolearn)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-odb-cloudautonomousvmcluster-iamrole-syntax.yaml"></a>
 
-```
+```yaml
   [AwsIntegration](#cfn-odb-cloudautonomousvmcluster-iamrole-awsintegration): {{String}}
   [IamRoleArn](#cfn-odb-cloudautonomousvmcluster-iamrole-iamrolearn): {{String}}
   [Status](#cfn-odb-cloudautonomousvmcluster-iamrole-status): {{String}}

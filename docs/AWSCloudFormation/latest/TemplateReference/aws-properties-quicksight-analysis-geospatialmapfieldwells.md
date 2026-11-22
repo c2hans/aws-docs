@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-geospatialmapfieldwells-syntax.json"></a>
 
-```
+```json
 {
   "[GeospatialMapAggregatedFieldWells](#cfn-quicksight-analysis-geospatialmapfieldwells-geospatialmapaggregatedfieldwells)" : {{GeospatialMapAggregatedFieldWells}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-geospatialmapfieldwells-syntax.yaml"></a>
 
-```
+```yaml
   [GeospatialMapAggregatedFieldWells](#cfn-quicksight-analysis-geospatialmapfieldwells-geospatialmapaggregatedfieldwells): {{
     GeospatialMapAggregatedFieldWells}}
 ```

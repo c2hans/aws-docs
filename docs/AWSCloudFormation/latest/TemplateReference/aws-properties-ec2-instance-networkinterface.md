@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-instance-networkinterface-syntax.json"></a>
 
-```
+```json
 {
   "[AssociateCarrierIpAddress](#cfn-ec2-instance-networkinterface-associatecarrieripaddress)" : {{Boolean}},
   "[AssociatePublicIpAddress](#cfn-ec2-instance-networkinterface-associatepublicipaddress)" : {{Boolean}},
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-instance-networkinterface-syntax.yaml"></a>
 
-```
+```yaml
   [AssociateCarrierIpAddress](#cfn-ec2-instance-networkinterface-associatecarrieripaddress): {{Boolean}}
   [AssociatePublicIpAddress](#cfn-ec2-instance-networkinterface-associatepublicipaddress): {{Boolean}}
   [DeleteOnTermination](#cfn-ec2-instance-networkinterface-deleteontermination): {{Boolean}}

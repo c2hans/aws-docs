@@ -64,7 +64,7 @@ The upper limit for the deprecation date is 10 years from now, except for public
 **To deprecate an AMI on a specific date**
 Use the [enable-image-deprecation](https://docs.aws.amazon.com/cli/latest/reference/ec2/enable-image-deprecation.html) command. If you specify a value for seconds, Amazon EC2 rounds the seconds to the nearest minute.
 
-```
+```bash
 aws ec2 enable-image-deprecation \
     --image-id {{ami-0abcdef1234567890}} \
     --deprecate-at "{{2025-04-15T13:17:12.000Z}}"
@@ -76,7 +76,7 @@ aws ec2 enable-image-deprecation \
 **To deprecate an AMI on a specific date**
 Use the [Enable-EC2ImageDeprecation](https://docs.aws.amazon.com/powershell/latest/reference/items/Enable-EC2ImageDeprecation.html) cmdlet. If you specify a value for seconds, Amazon EC2 rounds the seconds to the nearest minute.
 
-```
+```powershell
 Enable-EC2ImageDeprecation `
     -ImageId {{ami-0abcdef1234567890}} `
     -DeprecateAt {{2025-04-15T13:17:12.000Z}}
@@ -120,7 +120,7 @@ When you describe all AMIs, the results depend on whether you are an AMI user or
 **To include deprecated AMIs when describing all AMIs for an account**
 Use the following [describe-images](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command.
 
-```
+```bash
 aws ec2 describe-images
     --owners {{123456789012}} \
     --include-deprecated
@@ -129,7 +129,7 @@ aws ec2 describe-images
 **To describe the deprecated AMIs for your account**
 Use the following [describe-images](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command.
 
-```
+```bash
 aws ec2 describe-images \
     --owners self \
     --query "Images[?DeprecationTime!=null].ImageId" \
@@ -138,14 +138,14 @@ aws ec2 describe-images \
 
 The following is example output.
 
-```
+```bash
 ami-0abcdef1234567890
 ```
 
 **To describe the deprecation date of an AMI**
 Use the following [describe-images](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command. If `DeprecationTime` is not present in the output, the AMI is not deprecated or set to deprecate at a future date.
 
-```
+```bash
 aws ec2 describe-images \
     --image-ids {{ami-0abcdef1234567890}} \
     --query Images[].DeprecationTime \
@@ -154,7 +154,7 @@ aws ec2 describe-images \
 
 The following is example output.
 
-```
+```bash
 2025-05-01T00:00:00.000Z
 ```
 
@@ -164,26 +164,26 @@ The following is example output.
 **To list the deprecated AMIs for your account**
 Use the [Get-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Image.html) cmdlet.
 
-```
+```powershell
 (Get-EC2Image -Owner self | Where-Object {$_.DeprecationTime -ne $null}).ImageId
 ```
 
 The following is example output.
 
-```
+```bash
 ami-0abcdef1234567890
 ```
 
 **To describe the deprecation date of an AMI**
 Use the [Get-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Image.html) cmdlet. If `DeprecationTime` is not present in the output, the AMI is not deprecated or set to deprecate at a future date.
 
-```
+```powershell
 (Get-EC2Image -ImageId {{ami-0abcdef1234567890}}).DeprecationTime
 ```
 
 The following is example output.
 
-```
+```bash
 2025-05-01T00:00:00.000Z
 ```
 
@@ -215,7 +215,7 @@ You can cancel the deprecation of an AMI, which removes the deprecation date and
 **To cancel the deprecation of an AMI**
 Use the following [disable-image-deprecation](https://docs.aws.amazon.com/cli/latest/reference/ec2/disable-image-deprecation.html) command.
 
-```
+```bash
 aws ec2 disable-image-deprecation --image-id {{ami-0abcdef1234567890}}
 ```
 
@@ -225,7 +225,7 @@ aws ec2 disable-image-deprecation --image-id {{ami-0abcdef1234567890}}
 **To cancel the deprecation of an AMI**
 Use the [Disable-EC2ImageDeprecation](https://docs.aws.amazon.com/powershell/latest/reference/items/Disable-EC2ImageDeprecation.html) cmdlet.
 
-```
+```powershell
 Disable-EC2ImageDeprecation -ImageId {{ami-0abcdef1234567890}}
 ```
 

@@ -56,12 +56,12 @@ Binary logs must remain available on the DB instance for the mysqlbinlog utility
 
 The following example sets the retention period to 1 day.
 
-```
+```sql
 call mysql.rds_set_configuration('binlog retention hours', 24);
 ```
 
 To display the current setting, use the [mysql.rds\_show\_configuration](mysql-stored-proc-configuring.md#mysql_rds_show_configuration) stored procedure.
 
-```
+```sql
 call mysql.rds_show_configuration;
 ```

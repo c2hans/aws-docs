@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-workspace-workspacepage-syntax.json"></a>
 
-```
+```json
 {
   "[InputData](#cfn-connect-workspace-workspacepage-inputdata)" : {{String}},
   "[Page](#cfn-connect-workspace-workspacepage-page)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-workspace-workspacepage-syntax.yaml"></a>
 
-```
+```yaml
   [InputData](#cfn-connect-workspace-workspacepage-inputdata): {{String}}
   [Page](#cfn-connect-workspace-workspacepage-page): {{String}}
   [ResourceArn](#cfn-connect-workspace-workspacepage-resourcearn): {{String}}

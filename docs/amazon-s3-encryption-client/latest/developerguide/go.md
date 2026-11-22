@@ -25,7 +25,7 @@ Before you install the Amazon S3 Encryption Client for Go, be sure you have the 
 The Amazon S3 Encryption Client for Go requires Go 1.24 or later, but we recommend that you use the latest version.
 You can view your current version of Go by running the following command.
 
-```
+```go
 go version
 ```
 
@@ -38,6 +38,6 @@ For information about updating your version of the AWS SDK for Go, see [Migrate 
 
 To install the Amazon S3 Encryption Client for Go and its dependencies, run the following Go command.
 
-```
+```go
 go get github.com/aws/amazon-s3-encryption-client-go
 ```

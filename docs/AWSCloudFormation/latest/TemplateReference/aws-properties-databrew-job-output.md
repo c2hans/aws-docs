@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-databrew-job-output-syntax.json"></a>
 
-```
+```json
 {
   "[CompressionFormat](#cfn-databrew-job-output-compressionformat)" : {{String}},
   "[Format](#cfn-databrew-job-output-format)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-databrew-job-output-syntax.yaml"></a>
 
-```
+```yaml
   [CompressionFormat](#cfn-databrew-job-output-compressionformat): {{String}}
   [Format](#cfn-databrew-job-output-format): {{String}}
   [FormatOptions](#cfn-databrew-job-output-formatoptions): {{

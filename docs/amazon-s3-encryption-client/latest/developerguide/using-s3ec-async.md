@@ -27,7 +27,7 @@ The following examples instantiate the asynchronous Amazon S3 Encryption Client 
 
 To specify a KMS key as your wrapping key, instantiate your client with the `kmsKeyId` builder parameter. The value of the `kmsKeyId` parameter can be any valid KMS key identifier. For details, see [Key identifiers](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-id) in the *AWS Key Management Service Developer Guide*.
 
-```
+```java
 // v4
 
 class v4KMSKeyExample {
@@ -44,7 +44,7 @@ class v4KMSKeyExample {
 
 To specify a raw AES key (`javax.crypto.SecretKey`) as your wrapping key, instantiate your client with the `aesKey` builder parameter.
 
-```
+```java
 // v4
 
 class v4AESKeyExample {
@@ -63,7 +63,7 @@ To specify a raw RSA key (`java.security.KeyPair`) as your wrapping key, instant
 
 To instantiate version 4.*x* of the client to perform both encrypt and decrypt operations, specify both the public and private keys of your key pair.
 
-```
+```java
 // v4
 
 class v4RSAKeyPairExample {
@@ -77,7 +77,7 @@ class v4RSAKeyPairExample {
 
 To instantiate the client to encrypt only, specify the **public key**. If you specify the public key alone, all `GetObject` calls will fail because the private key is required to decrypt.
 
-```
+```java
 // v4
 
 class v4RSAKeyPairExample {
@@ -91,7 +91,7 @@ class v4RSAKeyPairExample {
 
 To instantiate the client to decrypt only, specify the **private key**. If you specify the private key alone, all `PutObject` calls will fail because the public key is required to encrypt.
 
-```
+```java
 // v4
 
 class v4RSAKeyPairExample {
@@ -109,7 +109,7 @@ You can customize your asynchronous client by specifying different builder param
 
 For example, if you need to decrypt data keys that were encrypted with a legacy wrapping algorithm, specify the [`enableLegacyWrappingAlgorithms`](java-v3-migration.md#enable-legacy-v2-v3) parameter when you instantiate your client. The following example specifies a raw AES key as the wrapping key.
 
-```
+```java
 // v4
 
 class v4EnableLegacyModesAsyncClientExample {
@@ -131,7 +131,7 @@ The following walkthrough demonstrates how encrypt and decrypt asynchronously wi
 
    The following example specifies a raw AES key as the wrapping key.
 
-   ```
+   ```java
    // v4
 
    class v4EnableAsyncClientExample {
@@ -147,7 +147,7 @@ The following walkthrough demonstrates how encrypt and decrypt asynchronously wi
 
    The asynchronous client stores the response to confirm that the `PutObject` request completed when you call `GetObject` in the future.
 
-   ```
+   ```java
    // v4
 
    class v4PutObjectAsyncClientExample {
@@ -164,7 +164,7 @@ The following walkthrough demonstrates how encrypt and decrypt asynchronously wi
 
 1. Call [`GetObject`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html) to download and decrypt the encrypted object.
 
-   ```
+   ```java
    // v4
 
    class v4GetObjectAsyncClientExample {
@@ -181,13 +181,13 @@ The following walkthrough demonstrates how encrypt and decrypt asynchronously wi
 
 1. Optional: verify that the decrypted object matches the original plaintext object that you uploaded.
 
-   ```
+   ```java
    assert output.equals({{objectContent}});
    ```
 
 1. The Amazon S3 Encryption Client implements the `AutoClosable` interface, which automatically calls `close()` when you exit a `try-with-resources` block for which the object has been declared in the resource specification header. As a best practice, you should either use `try-with-resources` or explicitly call the `close()` method.
 
-   ```
+   ```java
    s3Client.close();
    ```
 

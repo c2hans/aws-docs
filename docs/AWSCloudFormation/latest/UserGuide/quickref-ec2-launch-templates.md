@@ -25,7 +25,7 @@ The launch template also includes an IAM role that allows applications running o
 ### JSON
 <a name="quickref-launch-template-example-1.json"></a>
 
-```
+```json
  1. {
  2.   "Resources":{
  3.     "myLaunchTemplate":{
@@ -125,7 +125,7 @@ The launch template also includes an IAM role that allows applications running o
 ### YAML
 <a name="quickref-launch-template-example-1.yaml"></a>
 
-```
+```yaml
  1. ---
  2. Resources:
  3.   myLaunchTemplate:

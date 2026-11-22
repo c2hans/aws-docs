@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-staticfiles3sourceoptions-syntax.json"></a>
 
-```
+```json
 {
   "[BucketName](#cfn-quicksight-analysis-staticfiles3sourceoptions-bucketname)" : {{String}},
   "[ObjectKey](#cfn-quicksight-analysis-staticfiles3sourceoptions-objectkey)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-staticfiles3sourceoptions-syntax.yaml"></a>
 
-```
+```yaml
   [BucketName](#cfn-quicksight-analysis-staticfiles3sourceoptions-bucketname): {{String}}
   [ObjectKey](#cfn-quicksight-analysis-staticfiles3sourceoptions-objectkey): {{String}}
   [Region](#cfn-quicksight-analysis-staticfiles3sourceoptions-region): {{String}}

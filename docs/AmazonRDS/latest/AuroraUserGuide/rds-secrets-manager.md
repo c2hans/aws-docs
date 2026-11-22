@@ -97,7 +97,7 @@ You can use IAM condition keys to enforce Aurora management of the master user p
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

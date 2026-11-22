@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-boxplotaggregatedfieldwells-syntax.json"></a>
 
-```
+```json
 {
   "[GroupBy](#cfn-quicksight-dashboard-boxplotaggregatedfieldwells-groupby)" : {{[ DimensionField, ... ]}},
   "[Values](#cfn-quicksight-dashboard-boxplotaggregatedfieldwells-values)" : {{[ MeasureField, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-boxplotaggregatedfieldwells-syntax.yaml"></a>
 
-```
+```yaml
   [GroupBy](#cfn-quicksight-dashboard-boxplotaggregatedfieldwells-groupby): {{
     - DimensionField}}
   [Values](#cfn-quicksight-dashboard-boxplotaggregatedfieldwells-values): {{

@@ -10,7 +10,7 @@ The following Java code example creates the JMS provider for the Extended Client
 
 See the prerequisites in [Prerequisites for working with JMS and Amazon SQS](prerequisites.md) before testing this example.
 
-```
+```java
 AmazonS3 s3 = new AmazonS3Client(credentials);
 Region s3Region = Region.getRegion(Regions.US_WEST_2);
 s3.setRegion(s3Region);
@@ -37,7 +37,7 @@ sqsExtended.setRegion(sqsRegion);
 
 The following Java code example creates the connection factory:
 
-```
+```java
 // Create the connection factory using the environment variable credential provider.
 // Pass the configured Amazon SQS Extended Client to the JMS connection factory.
 SQSConnectionFactory connectionFactory = new SQSConnectionFactory(

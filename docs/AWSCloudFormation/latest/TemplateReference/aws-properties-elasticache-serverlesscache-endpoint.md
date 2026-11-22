@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticache-serverlesscache-endpoint-syntax.json"></a>
 
-```
+```json
 {
   "[Address](#cfn-elasticache-serverlesscache-endpoint-address)" : {{String}},
   "[Port](#cfn-elasticache-serverlesscache-endpoint-port)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticache-serverlesscache-endpoint-syntax.yaml"></a>
 
-```
+```yaml
   [Address](#cfn-elasticache-serverlesscache-endpoint-address): {{String}}
   [Port](#cfn-elasticache-serverlesscache-endpoint-port): {{String}}
 ```

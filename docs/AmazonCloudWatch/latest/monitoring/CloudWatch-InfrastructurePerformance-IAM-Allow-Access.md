@@ -21,7 +21,7 @@ Create a policy that provides users full access to Infrastructure Performance. T
 
 1. In the policy editor, choose **JSON**, and then replace the contents with the following policy:
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [

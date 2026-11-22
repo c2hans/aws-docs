@@ -57,7 +57,7 @@ Environment variable: `AWS_ACCOUNT_ID_ENDPOINT_MODE=disabled`
 JVM system property (Java and Kotlin only): `aws.accountIdEndpointMode=disabled`
 Client configuration. For example, with the AWS SDK for Java 2.x:
 
-  ```
+  ```java
   import software.amazon.awssdk.awscore.endpoints.AccountIdEndpointMode;
   import software.amazon.awssdk.services.dynamodb.streams.DynamoDbStreamsClient;
 

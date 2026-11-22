@@ -64,7 +64,7 @@ The following should be noted when constructing your module YAML files:
 
 Example one (`mod.d/ps.yaml`):
 
-```
+```yaml
 --- !ec2rlcore.module.Module
 # Module document. Translates directly into an almost-complete Module object
 name: !!str ps

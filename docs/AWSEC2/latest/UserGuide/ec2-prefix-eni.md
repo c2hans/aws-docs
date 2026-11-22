@@ -37,12 +37,12 @@ Assigning prefixes has the following benefits:
 + We assign each private IPv4 address for a network interface, including those from prefixes, using the following format:
   + `us-east-1` Region
 
-    ```
+    ```bash
     {{ip-private-ipv4-address}}.ec2.internal
     ```
   + All other Regions
 
-    ```
+    ```bash
     {{ip-private-ipv4-address}}.{{region}}.compute.internal
     ```
 

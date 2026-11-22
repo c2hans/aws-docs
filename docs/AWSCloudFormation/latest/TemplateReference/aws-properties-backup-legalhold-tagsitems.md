@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-backup-legalhold-tagsitems-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-backup-legalhold-tagsitems-key)" : {{String}},
   "[Value](#cfn-backup-legalhold-tagsitems-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-backup-legalhold-tagsitems-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-backup-legalhold-tagsitems-key): {{String}}
   [Value](#cfn-backup-legalhold-tagsitems-value): {{String}}
 ```

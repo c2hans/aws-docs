@@ -28,7 +28,7 @@ The following snippet contains an Amazon RDS database instance resource with a `
 ## JSON
 <a name="aws-attribute-updatereplacepolicy-example.json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion" : "2010-09-09",
   "Resources" : {
@@ -45,7 +45,7 @@ The following snippet contains an Amazon RDS database instance resource with a `
 ## YAML
 <a name="aws-attribute-updatereplacepolicy-example.yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   myDB:

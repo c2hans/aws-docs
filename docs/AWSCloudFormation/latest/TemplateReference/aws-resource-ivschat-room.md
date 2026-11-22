@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ivschat-room-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IVSChat::Room",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ivschat-room-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IVSChat::Room
 Properties:
   [LoggingConfigurationIdentifiers](#cfn-ivschat-room-loggingconfigurationidentifiers): {{
@@ -137,7 +137,7 @@ The following examples specify an Amazon IVS Chat Room.
 #### JSON
 <a name="aws-resource-ivschat-room--examples--Room_Template_Examples--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -170,7 +170,7 @@ The following examples specify an Amazon IVS Chat Room.
 #### YAML
 <a name="aws-resource-ivschat-room--examples--Room_Template_Examples--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   Room:

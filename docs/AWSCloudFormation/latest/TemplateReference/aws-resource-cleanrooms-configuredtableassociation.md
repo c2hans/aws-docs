@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cleanrooms-configuredtableassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CleanRooms::ConfiguredTableAssociation",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cleanrooms-configuredtableassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CleanRooms::ConfiguredTableAssociation
 Properties:
   [ConfiguredTableAssociationAnalysisRules](#cfn-cleanrooms-configuredtableassociation-configuredtableassociationanalysisrules): {{
@@ -146,7 +146,7 @@ The following is an example of a configured table association which associates a
 #### JSON
 <a name="aws-resource-cleanrooms-configuredtableassociation--examples--A_configured_table_association--json"></a>
 
-```
+```json
 "ExampleAssociation": {
   "Type" : "AWS::CleanRooms::ConfiguredTableAssociation",
   "Properties" : {
@@ -162,7 +162,7 @@ The following is an example of a configured table association which associates a
 #### YAML
 <a name="aws-resource-cleanrooms-configuredtableassociation--examples--A_configured_table_association--yaml"></a>
 
-```
+```yaml
 ExampleAssociation:
   Type: AWS::CleanRooms::ConfiguredTableAssociation
   Properties:

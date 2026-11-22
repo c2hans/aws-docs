@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicrule-timestreamaction-syntax.json"></a>
 
-```
+```json
 {
   "[DatabaseName](#cfn-iot-topicrule-timestreamaction-databasename)" : {{String}},
   "[Dimensions](#cfn-iot-topicrule-timestreamaction-dimensions)" : {{[ TimestreamDimension, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicrule-timestreamaction-syntax.yaml"></a>
 
-```
+```yaml
   [DatabaseName](#cfn-iot-topicrule-timestreamaction-databasename): {{String}}
   [Dimensions](#cfn-iot-topicrule-timestreamaction-dimensions): {{
     - TimestreamDimension}}

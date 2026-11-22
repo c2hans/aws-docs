@@ -24,7 +24,7 @@ The migration follows four phases:
 
 Add the OTel SDK alongside your existing PutMetricData calls. Both paths can publish simultaneously — you don't lose data.
 
-```
+```python
 # Existing Classic publishing (keep running during migration)
 cloudwatch.put_metric_data(
     Namespace='MyApp',

@@ -74,7 +74,7 @@ Starting with add-on version v6.2.0, the add-on supports publishing metrics thro
 
 To enable OTel Container Insights alongside Enhanced Container Insights (Classic), run the following command.
 
-```
+```bash
 aws eks update-addon \
   --cluster-name {{cluster-name}} \
   --addon-name amazon-cloudwatch-observability \
@@ -83,7 +83,7 @@ aws eks update-addon \
 
 To disable OTel Container Insights and keep only Enhanced Container Insights (Classic), run the following command.
 
-```
+```bash
 aws eks update-addon \
   --cluster-name {{cluster-name}} \
   --addon-name amazon-cloudwatch-observability \
@@ -92,7 +92,7 @@ aws eks update-addon \
 
 To disable Enhanced Container Insights (Classic) and keep only OTel Container Insights, run the following command.
 
-```
+```bash
 aws eks update-addon \
   --cluster-name {{cluster-name}} \
   --addon-name amazon-cloudwatch-observability \
@@ -117,7 +117,7 @@ Check your alarms before you upgrade. A threshold alarm on a pod-level `containe
 
 1. Find your current version. For the add-on, run the following command. Replace {{cluster-name}} with the name of your Amazon EKS cluster.
 
-   ```
+   ```bash
    aws eks describe-addon \
      --cluster-name {{cluster-name}} \
      --addon-name amazon-cloudwatch-observability \
@@ -126,7 +126,7 @@ Check your alarms before you upgrade. A threshold alarm on a pod-level `containe
 
    For the Helm chart, run the following command.
 
-   ```
+   ```bash
    helm list -n amazon-cloudwatch
    ```
 

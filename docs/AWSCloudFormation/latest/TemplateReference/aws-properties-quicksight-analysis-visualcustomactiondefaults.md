@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-visualcustomactiondefaults-syntax.json"></a>
 
-```
+```json
 {
   "[HighlightOperation](#cfn-quicksight-analysis-visualcustomactiondefaults-highlightoperation)" : {{VisualHighlightOperation}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-visualcustomactiondefaults-syntax.yaml"></a>
 
-```
+```yaml
   [HighlightOperation](#cfn-quicksight-analysis-visualcustomactiondefaults-highlightoperation): {{
     VisualHighlightOperation}}
 ```

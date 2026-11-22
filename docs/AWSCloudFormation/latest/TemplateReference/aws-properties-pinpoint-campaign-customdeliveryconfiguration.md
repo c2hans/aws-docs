@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pinpoint-campaign-customdeliveryconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DeliveryUri](#cfn-pinpoint-campaign-customdeliveryconfiguration-deliveryuri)" : {{String}},
   "[EndpointTypes](#cfn-pinpoint-campaign-customdeliveryconfiguration-endpointtypes)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pinpoint-campaign-customdeliveryconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DeliveryUri](#cfn-pinpoint-campaign-customdeliveryconfiguration-deliveryuri): {{String}}
   [EndpointTypes](#cfn-pinpoint-campaign-customdeliveryconfiguration-endpointtypes): {{
     - String}}

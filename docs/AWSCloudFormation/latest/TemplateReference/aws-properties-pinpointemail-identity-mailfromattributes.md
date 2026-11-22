@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pinpointemail-identity-mailfromattributes-syntax.json"></a>
 
-```
+```json
 {
   "[BehaviorOnMxFailure](#cfn-pinpointemail-identity-mailfromattributes-behavioronmxfailure)" : {{String}},
   "[MailFromDomain](#cfn-pinpointemail-identity-mailfromattributes-mailfromdomain)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pinpointemail-identity-mailfromattributes-syntax.yaml"></a>
 
-```
+```yaml
   [BehaviorOnMxFailure](#cfn-pinpointemail-identity-mailfromattributes-behavioronmxfailure): {{String}}
   [MailFromDomain](#cfn-pinpointemail-identity-mailfromattributes-mailfromdomain): {{String}}
 ```

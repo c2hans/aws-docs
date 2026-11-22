@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-channel-icebergdestinationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AppendOnly](#cfn-msk-channel-icebergdestinationconfiguration-appendonly)" : {{Boolean}},
   "[Catalog](#cfn-msk-channel-icebergdestinationconfiguration-catalog)" : {{Catalog}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-channel-icebergdestinationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AppendOnly](#cfn-msk-channel-icebergdestinationconfiguration-appendonly): {{Boolean}}
   [Catalog](#cfn-msk-channel-icebergdestinationconfiguration-catalog): {{
     Catalog}}

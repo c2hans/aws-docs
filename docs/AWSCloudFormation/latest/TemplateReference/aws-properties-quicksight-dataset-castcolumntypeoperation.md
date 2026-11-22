@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-castcolumntypeoperation-syntax.json"></a>
 
-```
+```json
 {
   "[ColumnName](#cfn-quicksight-dataset-castcolumntypeoperation-columnname)" : {{String}},
   "[Format](#cfn-quicksight-dataset-castcolumntypeoperation-format)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-castcolumntypeoperation-syntax.yaml"></a>
 
-```
+```yaml
   [ColumnName](#cfn-quicksight-dataset-castcolumntypeoperation-columnname): {{String}}
   [Format](#cfn-quicksight-dataset-castcolumntypeoperation-format): {{String}}
   [NewColumnType](#cfn-quicksight-dataset-castcolumntypeoperation-newcolumntype): {{String}}

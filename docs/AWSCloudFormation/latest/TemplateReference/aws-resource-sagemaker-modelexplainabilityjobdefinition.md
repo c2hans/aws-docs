@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sagemaker-modelexplainabilityjobdefinition-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SageMaker::ModelExplainabilityJobDefinition",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sagemaker-modelexplainabilityjobdefinition-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SageMaker::ModelExplainabilityJobDefinition
 Properties:
   [EndpointName](#cfn-sagemaker-modelexplainabilityjobdefinition-endpointname): {{String}}
@@ -177,7 +177,7 @@ The following example creates a Model Explainabiltiy monitoring job defintion.
 #### JSON
 <a name="aws-resource-sagemaker-modelexplainabilityjobdefinition--examples--SageMaker_ModelExplainabilityJobDefinition_Example--json"></a>
 
-```
+```json
 {
    "AWSTemplateFormatVersion": "2010-09-09",
    "Description": "Basic SageMaker Hosting entities to create a model explainability job definition",
@@ -377,7 +377,7 @@ The following example creates a Model Explainabiltiy monitoring job defintion.
 #### YAML
 <a name="aws-resource-sagemaker-modelexplainabilityjobdefinition--examples--SageMaker_ModelExplainabilityJobDefinition_Example--yaml"></a>
 
-```
+```yaml
 ---
 
 AWSTemplateFormatVersion: '2010-09-09'

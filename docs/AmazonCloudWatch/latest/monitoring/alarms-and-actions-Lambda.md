@@ -37,7 +37,7 @@ The following example specifies the account where the alarm is located, so that 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "default",
@@ -67,7 +67,7 @@ The following example has a narrower scope, allowing only the specified alarm in
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Id": "default",
@@ -114,7 +114,7 @@ When you configure a Lambda function as an alarm action, CloudWatch delivers a J
 
 When the alarm has tag propagation enabled, the `alarmData` object also includes an `alarmTags` list of key-value objects and an `alarmTagsStatus` field. For information about how to enable this feature and what the status values mean, see [Alarm tags in action payloads](alarm-tags-in-notifications.md).
 
-```
+```json
 {
   'source': 'aws.cloudwatch',
   'alarmArn': 'arn:aws:cloudwatch:us-east-1:444455556666:alarm:lambda-demo-metric-alarm',
@@ -165,7 +165,7 @@ When the alarm has tag propagation enabled, the `alarmData` object also includes
 
 The following is an example of an event object from a composite alarm.
 
-```
+```json
 {
   'source': 'aws.cloudwatch',
   'alarmArn': 'arn:aws:cloudwatch:us-east-1:111122223333:alarm:SuppressionDemo.Main',
@@ -204,7 +204,7 @@ The following is an example of an event object from a composite alarm.
 
 The following is an example of an event object from a log alarm.
 
-```
+```json
 {
   "source": "aws.cloudwatch",
   "alarmArn": "arn:aws:cloudwatch:us-east-1:123456789012:alarm:HighErrorRate",

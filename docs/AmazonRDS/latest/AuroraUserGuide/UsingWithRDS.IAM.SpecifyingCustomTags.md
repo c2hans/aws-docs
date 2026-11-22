@@ -41,7 +41,7 @@ If you manage access to your RDS resources using tagging, we recommend that you 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -78,7 +78,7 @@ The following policy allows permission to perform the `CreateDBSnapshot` API ope
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -119,7 +119,7 @@ The following policy allows permission to perform the `ModifyDBInstance` API ope
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -169,7 +169,7 @@ Explicitly denying permission supersedes any other permissions granted. This ens
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -202,7 +202,7 @@ The `Resource` line in the policy identifies a resource by its Amazon Resource N
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[

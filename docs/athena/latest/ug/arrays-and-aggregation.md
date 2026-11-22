@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/arrays-and-aggregation.
 **Note**
 `ORDER BY` is supported for aggregation functions starting in Athena engine version 2.
 
-```
+```sql
 WITH
 dataset AS (
   SELECT ARRAY
@@ -30,7 +30,7 @@ GROUP BY array_items;
 
 In the last `SELECT` statement, instead of using `sum()` and `UNNEST`, you can use `reduce()` to decrease processing time and data transfer, as in the following example.
 
-```
+```sql
 WITH
 dataset AS (
   SELECT ARRAY

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisanalytics-applicationoutput-output-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationSchema](#cfn-kinesisanalytics-applicationoutput-output-destinationschema)" : {{DestinationSchema}},
   "[KinesisFirehoseOutput](#cfn-kinesisanalytics-applicationoutput-output-kinesisfirehoseoutput)" : {{KinesisFirehoseOutput}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisanalytics-applicationoutput-output-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationSchema](#cfn-kinesisanalytics-applicationoutput-output-destinationschema): {{
     DestinationSchema}}
   [KinesisFirehoseOutput](#cfn-kinesisanalytics-applicationoutput-output-kinesisfirehoseoutput): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-responseheaderspolicy-removeheadersconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Items](#cfn-cloudfront-responseheaderspolicy-removeheadersconfig-items)" : {{[ RemoveHeader, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-responseheaderspolicy-removeheadersconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Items](#cfn-cloudfront-responseheaderspolicy-removeheadersconfig-items): {{
     - RemoveHeader}}
 ```

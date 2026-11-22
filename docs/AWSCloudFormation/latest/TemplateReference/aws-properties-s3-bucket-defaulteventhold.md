@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-defaulteventhold-syntax.json"></a>
 
-```
+```json
 {
   "[Days](#cfn-s3-bucket-defaulteventhold-days)" : {{Integer}},
   "[Years](#cfn-s3-bucket-defaulteventhold-years)" : {{Integer}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-defaulteventhold-syntax.yaml"></a>
 
-```
+```yaml
   [Days](#cfn-s3-bucket-defaulteventhold-days): {{Integer}}
   [Years](#cfn-s3-bucket-defaulteventhold-years): {{Integer}}
 ```
@@ -64,7 +64,7 @@ The following example enables Object Lock on a bucket and configures a default r
 #### JSON
 <a name="aws-properties-s3-bucket-defaulteventhold--examples--Set_a_bucket_default_event_hold--json"></a>
 
-```
+```json
 {
   "Resources": {
     "S3Bucket": {
@@ -93,7 +93,7 @@ The following example enables Object Lock on a bucket and configures a default r
 #### YAML
 <a name="aws-properties-s3-bucket-defaulteventhold--examples--Set_a_bucket_default_event_hold--yaml"></a>
 
-```
+```yaml
 Resources:
   S3Bucket:
     Type: AWS::S3::Bucket
@@ -118,7 +118,7 @@ The following example configures a bucket default that combines a fixed retentio
 #### JSON
 <a name="aws-properties-s3-bucket-defaulteventhold--examples--Combine_a_default_retention_period_with_an_event_hold--json"></a>
 
-```
+```json
 {
   "Resources": {
     "S3Bucket": {
@@ -148,7 +148,7 @@ The following example configures a bucket default that combines a fixed retentio
 #### YAML
 <a name="aws-properties-s3-bucket-defaulteventhold--examples--Combine_a_default_retention_period_with_an_event_hold--yaml"></a>
 
-```
+```yaml
 Resources:
   S3Bucket:
     Type: AWS::S3::Bucket

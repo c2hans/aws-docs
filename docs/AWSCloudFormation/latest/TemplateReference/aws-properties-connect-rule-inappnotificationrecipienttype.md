@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-rule-inappnotificationrecipienttype-syntax.json"></a>
 
-```
+```json
 {
   "[UserArns](#cfn-connect-rule-inappnotificationrecipienttype-userarns)" : {{[ String, ... ]}},
   "[UserTags](#cfn-connect-rule-inappnotificationrecipienttype-usertags)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-rule-inappnotificationrecipienttype-syntax.yaml"></a>
 
-```
+```yaml
   [UserArns](#cfn-connect-rule-inappnotificationrecipienttype-userarns): {{
     - String}}
   [UserTags](#cfn-connect-rule-inappnotificationrecipienttype-usertags): {{String}}

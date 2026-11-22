@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-intermediatetable-outputcolumnthreshold-syntax.json"></a>
 
-```
+```json
 {
   "[MinimumIdentityCount](#cfn-cleanrooms-intermediatetable-outputcolumnthreshold-minimumidentitycount)" : {{Integer}},
   "[OutputColumnName](#cfn-cleanrooms-intermediatetable-outputcolumnthreshold-outputcolumnname)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-intermediatetable-outputcolumnthreshold-syntax.yaml"></a>
 
-```
+```yaml
   [MinimumIdentityCount](#cfn-cleanrooms-intermediatetable-outputcolumnthreshold-minimumidentitycount): {{Integer}}
   [OutputColumnName](#cfn-cleanrooms-intermediatetable-outputcolumnthreshold-outputcolumnname): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-queue-outboundemailconfig-syntax.json"></a>
 
-```
+```json
 {
   "[OutboundEmailAddressId](#cfn-connect-queue-outboundemailconfig-outboundemailaddressid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-queue-outboundemailconfig-syntax.yaml"></a>
 
-```
+```yaml
   [OutboundEmailAddressId](#cfn-connect-queue-outboundemailconfig-outboundemailaddressid): {{String}}
 ```
 

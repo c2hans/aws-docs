@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-spotfleet-blockdevicemapping-syntax.json"></a>
 
-```
+```json
 {
   "[DeviceName](#cfn-ec2-spotfleet-blockdevicemapping-devicename)" : {{String}},
   "[Ebs](#cfn-ec2-spotfleet-blockdevicemapping-ebs)" : {{EbsBlockDevice}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-spotfleet-blockdevicemapping-syntax.yaml"></a>
 
-```
+```yaml
   [DeviceName](#cfn-ec2-spotfleet-blockdevicemapping-devicename): {{String}}
   [Ebs](#cfn-ec2-spotfleet-blockdevicemapping-ebs): {{
     EbsBlockDevice}}

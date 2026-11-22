@@ -30,7 +30,7 @@ For a complete list of Amazon Athena actions, see the API action names in the [A
 The following policy allows full access to all data catalog resources that might exist in the account. We recommend that you use this policy for those users in your account that must administer and manage data catalogs for all other users.
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -51,7 +51,7 @@ The following policy allows full access to all data catalog resources that might
 The following policy allows full access to the single specific data catalog resource, named `datacatalogA`. You could use this policy for users with full control over a particular data catalog.
 ****
 
-```
+```json
 { "Version":"2012-10-17",		 	 	  "Statement":[ { "Effect":"Allow", "Action":[
    "athena:ListDataCatalogs", "athena:ListWorkGroups", "athena:GetDatabase", "athena:ListDatabases",
    "athena:ListTableMetadata", "athena:GetTableMetadata" ], "Resource":"*" }, { "Effect":"Allow",
@@ -73,7 +73,7 @@ The following policy allows full access to the single specific data catalog reso
 In the following policy, a user is allowed to run queries on the specified `datacatalogA`. The user is not allowed to perform management tasks for the data catalog itself, such as updating or deleting it.
 ****
 
-```
+```json
 { "Version":"2012-10-17",		 	 	  "Statement":[ { "Effect":"Allow", "Action":[
    "athena:StartQueryExecution" ], "Resource":[
       "arn:aws:athena:{{us-east-1}}:{{123456789012}}:workgroup/*"
@@ -86,7 +86,7 @@ In the following policy, a user is allowed to run queries on the specified `data
 In the following policy, a user is allowed to create, delete, obtain details, and update a data catalog `datacatalogA`.
 ****
 
-```
+```json
 { "Version":"2012-10-17",		 	 	  "Statement": [ { "Effect": "Allow", "Action": [
     "athena:CreateDataCatalog", "athena:GetDataCatalog", "athena:DeleteDataCatalog",
     "athena:UpdateDataCatalog" ], "Resource": [
@@ -98,7 +98,7 @@ In the following policy, a user is allowed to create, delete, obtain details, an
 The following policy allows all users to list all data catalogs:
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -117,7 +117,7 @@ The following policy allows all users to list all data catalogs:
 The following policy allows metadata operations on data catalogs:
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotwireless-serviceprofile-lorawanserviceprofile-syntax.json"></a>
 
-```
+```json
 {
   "[AddGwMetadata](#cfn-iotwireless-serviceprofile-lorawanserviceprofile-addgwmetadata)" : {{Boolean}},
   "[ChannelMask](#cfn-iotwireless-serviceprofile-lorawanserviceprofile-channelmask)" : {{String}},
@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotwireless-serviceprofile-lorawanserviceprofile-syntax.yaml"></a>
 
-```
+```yaml
   [AddGwMetadata](#cfn-iotwireless-serviceprofile-lorawanserviceprofile-addgwmetadata): {{Boolean}}
   [ChannelMask](#cfn-iotwireless-serviceprofile-lorawanserviceprofile-channelmask): {{String}}
   [DevStatusReqFreq](#cfn-iotwireless-serviceprofile-lorawanserviceprofile-devstatusreqfreq): {{Integer}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amplify-domain-certificatesettings-syntax.json"></a>
 
-```
+```json
 {
   "[CertificateType](#cfn-amplify-domain-certificatesettings-certificatetype)" : {{String}},
   "[CustomCertificateArn](#cfn-amplify-domain-certificatesettings-customcertificatearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amplify-domain-certificatesettings-syntax.yaml"></a>
 
-```
+```yaml
   [CertificateType](#cfn-amplify-domain-certificatesettings-certificatetype): {{String}}
   [CustomCertificateArn](#cfn-amplify-domain-certificatesettings-customcertificatearn): {{String}}
 ```

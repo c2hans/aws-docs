@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-glue-trigger-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Glue::Trigger",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-glue-trigger-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Glue::Trigger
 Properties:
   [Actions](#cfn-glue-trigger-actions): {{
@@ -152,7 +152,7 @@ The following example creates an on-demand trigger that triggers one job.
 #### JSON
 <a name="aws-resource-glue-trigger--examples--On-Demand_Trigger--json"></a>
 
-```
+```json
 {
   "Resources": {
     "OnDemandJobTrigger": {
@@ -175,7 +175,7 @@ The following example creates an on-demand trigger that triggers one job.
 #### YAML
 <a name="aws-resource-glue-trigger--examples--On-Demand_Trigger--yaml"></a>
 
-```
+```yaml
 Resources:
   OnDemandJobTrigger:
     Type: AWS::Glue::Trigger
@@ -195,7 +195,7 @@ The following example creates a scheduled trigger that runs every two hours and 
 #### JSON
 <a name="aws-resource-glue-trigger--examples--Scheduled_Trigger--json"></a>
 
-```
+```json
 {
   "Resources": {
     "ScheduledJobTrigger": {
@@ -225,7 +225,7 @@ The following example creates a scheduled trigger that runs every two hours and 
 #### YAML
 <a name="aws-resource-glue-trigger--examples--Scheduled_Trigger--yaml"></a>
 
-```
+```yaml
 Resources:
   ScheduledJobTrigger:
     Type: AWS::Glue::Trigger
@@ -249,7 +249,7 @@ The following example creates a conditional trigger that starts a job based on t
 #### JSON
 <a name="aws-resource-glue-trigger--examples--Conditional_Trigger--json"></a>
 
-```
+```json
 {
   "Description": "AWS Glue trigger test",
   "Resources": {
@@ -344,7 +344,7 @@ The following example creates a conditional trigger that starts a job based on t
 #### YAML
 <a name="aws-resource-glue-trigger--examples--Conditional_Trigger--yaml"></a>
 
-```
+```yaml
 ---
 Description: "AWS Glue trigger test"
 Resources:

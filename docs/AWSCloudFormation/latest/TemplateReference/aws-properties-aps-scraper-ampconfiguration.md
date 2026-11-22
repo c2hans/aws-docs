@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-aps-scraper-ampconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[WorkspaceArn](#cfn-aps-scraper-ampconfiguration-workspacearn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-aps-scraper-ampconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [WorkspaceArn](#cfn-aps-scraper-ampconfiguration-workspacearn): {{String}}
 ```
 

@@ -30,7 +30,7 @@ Before using this policy, replace the Region, account ID, UUID, and group name w
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {

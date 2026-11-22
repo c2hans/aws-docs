@@ -31,6 +31,6 @@ To retrieve replication status information from a bucket in an external account,
 
 The following AWS CLI example gets your current Multi-Region Access Point configuration. To use this example command, replace the `{{user input placeholders}}` with your own information.
 
-```
+```bash
 aws s3control get-multi-region-access-point --account-id {{111122223333}} --name {{{{amzn-s3-demo-bucket}}}}
 ```

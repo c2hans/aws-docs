@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-dataautomationproject-imageextractioncategory-syntax.json"></a>
 
-```
+```json
 {
   "[State](#cfn-bedrock-dataautomationproject-imageextractioncategory-state)" : {{String}},
   "[Types](#cfn-bedrock-dataautomationproject-imageextractioncategory-types)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-dataautomationproject-imageextractioncategory-syntax.yaml"></a>
 
-```
+```yaml
   [State](#cfn-bedrock-dataautomationproject-imageextractioncategory-state): {{String}}
   [Types](#cfn-bedrock-dataautomationproject-imageextractioncategory-types): {{
     - String}}

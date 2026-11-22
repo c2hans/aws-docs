@@ -8,11 +8,11 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 **Important**
 This page only applies to Amazon Q Business web experiences connected to IAM Federated Amazon Q Business applications.
++ **Latest policy update:** December 3, 2024
 
-**Policy history**
-+ **Latest policy update:** — December 3, 2024
+The following table lists and describes the changes to this policy over time.
 
-The following table list and describes the changes to this policy over time.
+**IAM Federated policy history**
 
 | Change | Description | Date |
 | --- | --- | --- |
@@ -52,7 +52,7 @@ You must create and update an IAM policy for your Amazon Q Business application 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -243,7 +243,7 @@ You must create and update an IAM policy for your Amazon Q Business application 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -288,7 +288,7 @@ You must create and update an IAM policy for your Amazon Q Business application 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -332,7 +332,7 @@ You must create and update an IAM policy for your Amazon Q Business application 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

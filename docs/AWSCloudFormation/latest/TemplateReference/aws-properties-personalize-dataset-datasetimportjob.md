@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-personalize-dataset-datasetimportjob-syntax.json"></a>
 
-```
+```json
 {
   "[DatasetArn](#cfn-personalize-dataset-datasetimportjob-datasetarn)" : {{String}},
   "[DatasetImportJobArn](#cfn-personalize-dataset-datasetimportjob-datasetimportjobarn)" : {{String}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-personalize-dataset-datasetimportjob-syntax.yaml"></a>
 
-```
+```yaml
   [DatasetArn](#cfn-personalize-dataset-datasetimportjob-datasetarn): {{String}}
   [DatasetImportJobArn](#cfn-personalize-dataset-datasetimportjob-datasetimportjobarn): {{String}}
   [DataSource](#cfn-personalize-dataset-datasetimportjob-datasource): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ce-anomalymonitor-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CE::AnomalyMonitor",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ce-anomalymonitor-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CE::AnomalyMonitor
 Properties:
   [MonitorDimension](#cfn-ce-anomalymonitor-monitordimension): {{String}}
@@ -142,7 +142,7 @@ The following example creates a service anomaly monitor.
 #### JSON
 <a name="aws-resource-ce-anomalymonitor--examples--Service_monitor--json"></a>
 
-```
+```json
 {
   "Resources": {
     "AnomalyServiceMonitor": {
@@ -160,7 +160,7 @@ The following example creates a service anomaly monitor.
 #### YAML
 <a name="aws-resource-ce-anomalymonitor--examples--Service_monitor--yaml"></a>
 
-```
+```yaml
 Resources:
   AnomalyServiceMonitor:
     Type: 'AWS::CE::AnomalyMonitor'
@@ -178,7 +178,7 @@ The following example creates a custom anomaly monitor with tags.
 #### JSON
 <a name="aws-resource-ce-anomalymonitor--examples--Anomaly_monitor_with_tags--json"></a>
 
-```
+```json
 {
   "Resources": {
     "CustomAnomalyMonitorWithTags": {
@@ -196,7 +196,7 @@ The following example creates a custom anomaly monitor with tags.
 #### YAML
 <a name="aws-resource-ce-anomalymonitor--examples--Anomaly_monitor_with_tags--yaml"></a>
 
-```
+```yaml
 Resources:
   CustomAnomalyMonitorWithTags:
     Type: 'AWS::CE::AnomalyMonitor'
@@ -220,7 +220,7 @@ The following example creates a custom anomaly monitor with a Cost Category.
 #### JSON
 <a name="aws-resource-ce-anomalymonitor--examples--Anomaly_monitor_with_Cost_Category--json"></a>
 
-```
+```json
 {
   "Resources": {
     "CustomAnomalyMonitorWithCC": {
@@ -238,7 +238,7 @@ The following example creates a custom anomaly monitor with a Cost Category.
 #### YAML
 <a name="aws-resource-ce-anomalymonitor--examples--Anomaly_monitor_with_Cost_Category--yaml"></a>
 
-```
+```yaml
 Resources:
    CustomAnomalyMonitorWithCC:
     Type: 'AWS::CE::AnomalyMonitor'
@@ -262,7 +262,7 @@ The following example creates a custom anomaly monitor with a linked account.
 #### JSON
 <a name="aws-resource-ce-anomalymonitor--examples--Anomaly_monitor_with_linked_account--json"></a>
 
-```
+```json
 {
   "Resources": {
     "CustomAnomalyMonitorWithLinkedAccount": {
@@ -280,7 +280,7 @@ The following example creates a custom anomaly monitor with a linked account.
 #### YAML
 <a name="aws-resource-ce-anomalymonitor--examples--Anomaly_monitor_with_linked_account--yaml"></a>
 
-```
+```yaml
 Resources:
    CustomAnomalyMonitorWithLinkedAccount:
     Type: 'AWS::CE::AnomalyMonitor'
@@ -304,7 +304,7 @@ The following example shows two anomaly monitors attached to an anomaly subscrip
 #### JSON
 <a name="aws-resource-ce-anomalymonitor--examples--Attaching_subscriptions_to_monitors--json"></a>
 
-```
+```json
 {
   "Resources": {
     "CustomAnomalyMonitorWithLinkedAccount": {
@@ -348,7 +348,7 @@ The following example shows two anomaly monitors attached to an anomaly subscrip
 #### YAML
 <a name="aws-resource-ce-anomalymonitor--examples--Attaching_subscriptions_to_monitors--yaml"></a>
 
-```
+```yaml
 Resources:
    CustomAnomalyMonitorWithLinkedAccount:
     Type: 'AWS::CE::AnomalyMonitor'

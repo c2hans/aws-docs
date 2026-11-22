@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-config-configurationaggregator-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Config::ConfigurationAggregator",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-config-configurationaggregator-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Config::ConfigurationAggregator
 Properties:
   [AccountAggregationSources](#cfn-config-configurationaggregator-accountaggregationsources): {{
@@ -110,7 +110,7 @@ The following example creates a `ConfigurationAggregator`.
 #### JSON
 <a name="aws-resource-config-configurationaggregator--examples--Configuration_Aggregator_With_Multiple_Accounts_Multiple_Regions--json"></a>
 
-```
+```json
 "ConfigurationAggregator": {
     "Type": "AWS::Config::ConfigurationAggregator",
     "Properties": {
@@ -135,7 +135,7 @@ The following example creates a `ConfigurationAggregator`.
 #### YAML
 <a name="aws-resource-config-configurationaggregator--examples--Configuration_Aggregator_With_Multiple_Accounts_Multiple_Regions--yaml"></a>
 
-```
+```yaml
 ConfigurationAggregator:
   Type: 'AWS::Config::ConfigurationAggregator'
   Properties:
@@ -163,7 +163,7 @@ The following example creates a `ConfigurationAggregator` for an organization.
 #### JSON
 <a name="aws-resource-config-configurationaggregator--examples--Configuration_Aggregator_for_an_Organization--json"></a>
 
-```
+```json
 "ConfigurationAggregator": {
     "Type": "AWS::Config::ConfigurationAggregator",
     "Properties": {
@@ -224,7 +224,7 @@ The following example creates a `ConfigurationAggregator` for an organization.
 #### YAML
 <a name="aws-resource-config-configurationaggregator--examples--Configuration_Aggregator_for_an_Organization--yaml"></a>
 
-```
+```yaml
 ConfigurationAggregator:
     Type: 'AWS::Config::ConfigurationAggregator'
     Properties:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-inspectorv2-codesecurityscanconfiguration-continuousintegrationscanconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[supportedEvents](#cfn-inspectorv2-codesecurityscanconfiguration-continuousintegrationscanconfiguration-supportedevents)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-inspectorv2-codesecurityscanconfiguration-continuousintegrationscanconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [supportedEvents](#cfn-inspectorv2-codesecurityscanconfiguration-continuousintegrationscanconfiguration-supportedevents): {{
     - String}}
 ```

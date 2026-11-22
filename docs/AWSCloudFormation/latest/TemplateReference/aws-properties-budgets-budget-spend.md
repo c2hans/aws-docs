@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-budgets-budget-spend-syntax.json"></a>
 
-```
+```json
 {
   "[Amount](#cfn-budgets-budget-spend-amount)" : {{Number}},
   "[Unit](#cfn-budgets-budget-spend-unit)" : {{String}}
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-budgets-budget-spend-syntax.yaml"></a>
 
-```
+```yaml
   [Amount](#cfn-budgets-budget-spend-amount): {{Number}}
   [Unit](#cfn-budgets-budget-spend-unit): {{String}}
 ```

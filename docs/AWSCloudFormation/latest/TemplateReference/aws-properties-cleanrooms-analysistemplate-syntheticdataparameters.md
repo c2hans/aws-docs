@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-analysistemplate-syntheticdataparameters-syntax.json"></a>
 
-```
+```json
 {
   "[MlSyntheticDataParameters](#cfn-cleanrooms-analysistemplate-syntheticdataparameters-mlsyntheticdataparameters)" : {{MLSyntheticDataParameters}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-analysistemplate-syntheticdataparameters-syntax.yaml"></a>
 
-```
+```yaml
   [MlSyntheticDataParameters](#cfn-cleanrooms-analysistemplate-syntheticdataparameters-mlsyntheticdataparameters): {{
     MLSyntheticDataParameters}}
 ```

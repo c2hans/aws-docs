@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-billingconductor-customlineitem-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::BillingConductor::CustomLineItem",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-billingconductor-customlineitem-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::BillingConductor::CustomLineItem
 Properties:
   [AccountId](#cfn-billingconductor-customlineitem-accountid): {{String}}
@@ -165,7 +165,7 @@ The following example shows a flat charge custom line item of $10 attached to a 
 #### JSON
 <a name="aws-resource-billingconductor-customlineitem--examples--Flat_custom_line_item--json"></a>
 
-```
+```json
 {
   "Resources": {
       "TestFlatCustomLineItem": {
@@ -194,7 +194,7 @@ The following example shows a flat charge custom line item of $10 attached to a 
 #### YAML
 <a name="aws-resource-billingconductor-customlineitem--examples--Flat_custom_line_item--yaml"></a>
 
-```
+```yaml
 Resources:
   TestFlatCustomLineItem:
       Type: 'AWS::BillingConductor::CustomLineItem'
@@ -218,7 +218,7 @@ The following example shows a percentage charge custom line item that is 10% of 
 #### JSON
 <a name="aws-resource-billingconductor-customlineitem--examples--Percentage_custom_line_item--json"></a>
 
-```
+```json
 {
   "Resources": {
       "TestPercentageCustomLineItem": {
@@ -247,7 +247,7 @@ The following example shows a percentage charge custom line item that is 10% of 
 #### YAML
 <a name="aws-resource-billingconductor-customlineitem--examples--Percentage_custom_line_item--yaml"></a>
 
-```
+```yaml
 Resources:
         TestPercentageCustomLineItem:
         Type: 'AWS::BillingConductor::CustomLineItem'

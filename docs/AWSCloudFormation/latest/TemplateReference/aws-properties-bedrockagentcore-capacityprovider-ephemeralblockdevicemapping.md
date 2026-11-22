@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-capacityprovider-ephemeralblockdevicemapping-syntax.json"></a>
 
-```
+```json
 {
   "[DeviceName](#cfn-bedrockagentcore-capacityprovider-ephemeralblockdevicemapping-devicename)" : {{String}},
   "[Ebs](#cfn-bedrockagentcore-capacityprovider-ephemeralblockdevicemapping-ebs)" : {{EphemeralEBSVolumeConfiguration}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-capacityprovider-ephemeralblockdevicemapping-syntax.yaml"></a>
 
-```
+```yaml
   [DeviceName](#cfn-bedrockagentcore-capacityprovider-ephemeralblockdevicemapping-devicename): {{String}}
   [Ebs](#cfn-bedrockagentcore-capacityprovider-ephemeralblockdevicemapping-ebs): {{
     EphemeralEBSVolumeConfiguration}}

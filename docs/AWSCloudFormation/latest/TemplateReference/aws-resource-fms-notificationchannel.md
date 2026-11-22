@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-fms-notificationchannel-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::FMS::NotificationChannel",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-fms-notificationchannel-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::FMS::NotificationChannel
 Properties:
   [SnsRoleName](#cfn-fms-notificationchannel-snsrolename): {{String}}
@@ -82,7 +82,7 @@ The following shows an example SNS notification channel for Firewall Manager.
 #### YAML
 <a name="aws-resource-fms-notificationchannel--examples--Create_a_Firewall_Manager_notification_channel--yaml"></a>
 
-```
+```yaml
 NotificationChannel:
     Type: AWS::FMS::NotificationChannel
     Properties:
@@ -93,7 +93,7 @@ NotificationChannel:
 #### JSON
 <a name="aws-resource-fms-notificationchannel--examples--Create_a_Firewall_Manager_notification_channel--json"></a>
 
-```
+```json
 "NotificationChannel": {
     "Type": "AWS::FMS::NotificationChannel",
     "Properties": {

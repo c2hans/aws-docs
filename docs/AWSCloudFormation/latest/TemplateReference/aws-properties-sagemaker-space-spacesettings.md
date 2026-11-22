@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-space-spacesettings-syntax.json"></a>
 
-```
+```json
 {
   "[AppType](#cfn-sagemaker-space-spacesettings-apptype)" : {{String}},
   "[CodeEditorAppSettings](#cfn-sagemaker-space-spacesettings-codeeditorappsettings)" : {{SpaceCodeEditorAppSettings}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-space-spacesettings-syntax.yaml"></a>
 
-```
+```yaml
   [AppType](#cfn-sagemaker-space-spacesettings-apptype): {{String}}
   [CodeEditorAppSettings](#cfn-sagemaker-space-spacesettings-codeeditorappsettings): {{
     SpaceCodeEditorAppSettings}}

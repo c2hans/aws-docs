@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-subnet-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::Subnet",
   "Properties" : {
@@ -48,7 +48,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-subnet-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::Subnet
 Properties:
   [AssignIpv6AddressOnCreation](#cfn-ec2-subnet-assignipv6addressoncreation): {{Boolean}}
@@ -247,7 +247,7 @@ The following example creates a subnet with an IPv4 CIDR in a VPC with an IPv4 C
 #### JSON
 <a name="aws-resource-ec2-subnet--examples--Subnet_with_an_IPv4_CIDR--json"></a>
 
-```
+```json
 "mySubnet" : {
    "Type" : "AWS::EC2::Subnet",
    "Properties" : {
@@ -262,7 +262,7 @@ The following example creates a subnet with an IPv4 CIDR in a VPC with an IPv4 C
 #### YAML
 <a name="aws-resource-ec2-subnet--examples--Subnet_with_an_IPv4_CIDR--yaml"></a>
 
-```
+```yaml
   mySubnet:
     Type: AWS::EC2::Subnet
     Properties:
@@ -282,7 +282,7 @@ The following example creates a subnet with an IPv6 CIDR in a VPC with an IPv6 C
 #### JSON
 <a name="aws-resource-ec2-subnet--examples--Subnet_with_an_IPv6_CIDR--json"></a>
 
-```
+```json
 "mySubnet": {
    "Type": "AWS::EC2::Subnet",
    "Properties": {
@@ -300,7 +300,7 @@ The following example creates a subnet with an IPv6 CIDR in a VPC with an IPv6 C
 #### YAML
 <a name="aws-resource-ec2-subnet--examples--Subnet_with_an_IPv6_CIDR--yaml"></a>
 
-```
+```yaml
   mySubnet:
     Type: AWS::EC2::Subnet
     Properties:

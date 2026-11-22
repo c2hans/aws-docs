@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apptest-testcase-filemetadata-syntax.json"></a>
 
-```
+```json
 {
   "[DatabaseCDC](#cfn-apptest-testcase-filemetadata-databasecdc)" : {{DatabaseCDC}},
   "[DataSets](#cfn-apptest-testcase-filemetadata-datasets)" : {{[ DataSet, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apptest-testcase-filemetadata-syntax.yaml"></a>
 
-```
+```yaml
   [DatabaseCDC](#cfn-apptest-testcase-filemetadata-databasecdc): {{
     DatabaseCDC}}
   [DataSets](#cfn-apptest-testcase-filemetadata-datasets): {{

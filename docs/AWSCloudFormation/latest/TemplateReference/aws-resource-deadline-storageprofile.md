@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-deadline-storageprofile-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Deadline::StorageProfile",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-deadline-storageprofile-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Deadline::StorageProfile
 Properties:
   [DisplayName](#cfn-deadline-storageprofile-displayname): {{String}}

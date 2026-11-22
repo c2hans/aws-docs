@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ivs-recordingconfiguration-s3destinationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BucketName](#cfn-ivs-recordingconfiguration-s3destinationconfiguration-bucketname)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ivs-recordingconfiguration-s3destinationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BucketName](#cfn-ivs-recordingconfiguration-s3destinationconfiguration-bucketname): {{String}}
 ```
 

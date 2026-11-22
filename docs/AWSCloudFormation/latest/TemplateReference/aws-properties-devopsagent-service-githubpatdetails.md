@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-service-githubpatdetails-syntax.json"></a>
 
-```
+```json
 {
   "[OrganizationName](#cfn-devopsagent-service-githubpatdetails-organizationname)" : {{String}},
   "[TargetUrl](#cfn-devopsagent-service-githubpatdetails-targeturl)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-service-githubpatdetails-syntax.yaml"></a>
 
-```
+```yaml
   [OrganizationName](#cfn-devopsagent-service-githubpatdetails-organizationname): {{String}}
   [TargetUrl](#cfn-devopsagent-service-githubpatdetails-targeturl): {{String}}
   [TokenValue](#cfn-devopsagent-service-githubpatdetails-tokenvalue): {{String}}

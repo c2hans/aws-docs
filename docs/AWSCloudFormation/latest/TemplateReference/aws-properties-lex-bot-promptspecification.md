@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-promptspecification-syntax.json"></a>
 
-```
+```json
 {
   "[AllowInterrupt](#cfn-lex-bot-promptspecification-allowinterrupt)" : {{Boolean}},
   "[MaxRetries](#cfn-lex-bot-promptspecification-maxretries)" : {{Integer}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-promptspecification-syntax.yaml"></a>
 
-```
+```yaml
   [AllowInterrupt](#cfn-lex-bot-promptspecification-allowinterrupt): {{Boolean}}
   [MaxRetries](#cfn-lex-bot-promptspecification-maxretries): {{Integer}}
   [MessageGroupsList](#cfn-lex-bot-promptspecification-messagegroupslist): {{

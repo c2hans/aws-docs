@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dynamodb-table-contributorinsightsspecification-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-dynamodb-table-contributorinsightsspecification-enabled)" : {{Boolean}},
   "[Mode](#cfn-dynamodb-table-contributorinsightsspecification-mode)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dynamodb-table-contributorinsightsspecification-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-dynamodb-table-contributorinsightsspecification-enabled): {{Boolean}}
   [Mode](#cfn-dynamodb-table-contributorinsightsspecification-mode): {{String}}
 ```

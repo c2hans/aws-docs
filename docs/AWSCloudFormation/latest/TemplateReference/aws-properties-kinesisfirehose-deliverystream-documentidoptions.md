@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-documentidoptions-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultDocumentIdFormat](#cfn-kinesisfirehose-deliverystream-documentidoptions-defaultdocumentidformat)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-documentidoptions-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultDocumentIdFormat](#cfn-kinesisfirehose-deliverystream-documentidoptions-defaultdocumentidformat): {{String}}
 ```
 

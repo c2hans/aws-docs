@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-webfunctionrevision-codeconfig-syntax.json"></a>
 
-```
+```json
 {
   "[S3Object](#cfn-lambda-webfunctionrevision-codeconfig-s3object)" : {{S3Object}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-webfunctionrevision-codeconfig-syntax.yaml"></a>
 
-```
+```yaml
   [S3Object](#cfn-lambda-webfunctionrevision-codeconfig-s3object): {{
     S3Object}}
 ```

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/create-a-named-query.ht
 
 The `CreateNamedQueryExample` shows how to create a named query.
 
-```
+```java
 package aws.example.athena;
 
 import software.amazon.awssdk.regions.Region;

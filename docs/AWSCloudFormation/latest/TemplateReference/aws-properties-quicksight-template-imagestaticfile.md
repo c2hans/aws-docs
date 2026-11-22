@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-imagestaticfile-syntax.json"></a>
 
-```
+```json
 {
   "[Source](#cfn-quicksight-template-imagestaticfile-source)" : {{StaticFileSource}},
   "[StaticFileId](#cfn-quicksight-template-imagestaticfile-staticfileid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-imagestaticfile-syntax.yaml"></a>
 
-```
+```yaml
   [Source](#cfn-quicksight-template-imagestaticfile-source): {{
     StaticFileSource}}
   [StaticFileId](#cfn-quicksight-template-imagestaticfile-staticfileid): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-networkmanager-directconnectgatewayattachment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::NetworkManager::DirectConnectGatewayAttachment",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-networkmanager-directconnectgatewayattachment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::NetworkManager::DirectConnectGatewayAttachment
 Properties:
   [CoreNetworkId](#cfn-networkmanager-directconnectgatewayattachment-corenetworkid): {{String}}

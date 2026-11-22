@@ -184,13 +184,13 @@ To disable telemetry for a single instance, you can either set a system environm
 
 To disable telemetry by setting a system environment variable, run the following command as an administrator.
 
-```
+```powershell
 setx /M EC2LAUNCH_TELEMETRY 0
 ```
 
 To disable telemetry using the MSI, run the following command after you [download the MSI](ec2launch-v2-install.md).
 
-```
+```powershell
 msiexec /i ".\AmazonEC2Launch.msi" Remove="Telemetry" /q
 ```
 

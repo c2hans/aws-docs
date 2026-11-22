@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-events-connection-basicauthparameters-syntax.json"></a>
 
-```
+```json
 {
   "[Password](#cfn-events-connection-basicauthparameters-password)" : {{String}},
   "[Username](#cfn-events-connection-basicauthparameters-username)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-events-connection-basicauthparameters-syntax.yaml"></a>
 
-```
+```yaml
   [Password](#cfn-events-connection-basicauthparameters-password): {{String}}
   [Username](#cfn-events-connection-basicauthparameters-username): {{String}}
 ```

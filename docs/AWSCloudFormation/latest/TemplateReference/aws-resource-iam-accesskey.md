@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iam-accesskey-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IAM::AccessKey",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iam-accesskey-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IAM::AccessKey
 Properties:
   [Serial](#cfn-iam-accesskey-serial): {{Integer}}

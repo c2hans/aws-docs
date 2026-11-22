@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-tableoptimizer-icebergretentionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CleanExpiredFiles](#cfn-glue-tableoptimizer-icebergretentionconfiguration-cleanexpiredfiles)" : {{Boolean}},
   "[NumberOfSnapshotsToRetain](#cfn-glue-tableoptimizer-icebergretentionconfiguration-numberofsnapshotstoretain)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-tableoptimizer-icebergretentionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CleanExpiredFiles](#cfn-glue-tableoptimizer-icebergretentionconfiguration-cleanexpiredfiles): {{Boolean}}
   [NumberOfSnapshotsToRetain](#cfn-glue-tableoptimizer-icebergretentionconfiguration-numberofsnapshotstoretain): {{Integer}}
   [SnapshotRetentionPeriodInDays](#cfn-glue-tableoptimizer-icebergretentionconfiguration-snapshotretentionperiodindays): {{Integer}}

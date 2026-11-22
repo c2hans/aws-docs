@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-dataqualityjobdefinition-constraintsresource-syntax.json"></a>
 
-```
+```json
 {
   "[S3Uri](#cfn-sagemaker-dataqualityjobdefinition-constraintsresource-s3uri)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-dataqualityjobdefinition-constraintsresource-syntax.yaml"></a>
 
-```
+```yaml
   [S3Uri](#cfn-sagemaker-dataqualityjobdefinition-constraintsresource-s3uri): {{String}}
 ```
 

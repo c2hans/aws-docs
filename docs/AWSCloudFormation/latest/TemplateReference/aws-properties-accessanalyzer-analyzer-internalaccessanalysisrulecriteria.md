@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-accessanalyzer-analyzer-internalaccessanalysisrulecriteria-syntax.json"></a>
 
-```
+```json
 {
   "[AccountIds](#cfn-accessanalyzer-analyzer-internalaccessanalysisrulecriteria-accountids)" : {{[ String, ... ]}},
   "[ResourceArns](#cfn-accessanalyzer-analyzer-internalaccessanalysisrulecriteria-resourcearns)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-accessanalyzer-analyzer-internalaccessanalysisrulecriteria-syntax.yaml"></a>
 
-```
+```yaml
   [AccountIds](#cfn-accessanalyzer-analyzer-internalaccessanalysisrulecriteria-accountids): {{
     - String}}
   [ResourceArns](#cfn-accessanalyzer-analyzer-internalaccessanalysisrulecriteria-resourcearns): {{

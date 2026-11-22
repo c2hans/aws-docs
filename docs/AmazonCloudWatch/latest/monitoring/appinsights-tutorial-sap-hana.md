@@ -72,7 +72,7 @@ You must perform the following prerequisites to configure an SAP HANA database w
 **Example**
 The following SQL commands create a user with monitoring roles.
 
-  ```
+  ```sql
   su - <sid>adm
   hdbsql -u SYSTEM -p <SYSTEMDB password> -d SYSTEMDB
   CREATE USER CW_HANADB_EXPORTER_USER PASSWORD <Monitoring user password> NO FORCE_FIRST_PASSWORD_CHANGE;
@@ -99,7 +99,7 @@ Manual installation of Python 3.8 or higher is required for SuSE Linux 15 SP4, R
 
 ****
 
-    ```
+    ```json
     {
         "Version":"2012-10-17",
         "Statement": [
@@ -126,7 +126,7 @@ Manual installation of Python 3.8 or higher is required for SuSE Linux 15 SP4, R
 
 ****
 
-    ```
+    ```json
     {
       "Version":"2012-10-17",
       "Statement": [

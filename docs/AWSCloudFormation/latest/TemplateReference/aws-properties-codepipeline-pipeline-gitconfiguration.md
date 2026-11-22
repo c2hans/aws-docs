@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codepipeline-pipeline-gitconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[PullRequest](#cfn-codepipeline-pipeline-gitconfiguration-pullrequest)" : {{[ GitPullRequestFilter, ... ]}},
   "[Push](#cfn-codepipeline-pipeline-gitconfiguration-push)" : {{[ GitPushFilter, ... ]}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codepipeline-pipeline-gitconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [PullRequest](#cfn-codepipeline-pipeline-gitconfiguration-pullrequest): {{
     - GitPullRequestFilter}}
   [Push](#cfn-codepipeline-pipeline-gitconfiguration-push): {{

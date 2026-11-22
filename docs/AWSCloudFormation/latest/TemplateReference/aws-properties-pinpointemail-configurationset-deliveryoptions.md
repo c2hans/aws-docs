@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pinpointemail-configurationset-deliveryoptions-syntax.json"></a>
 
-```
+```json
 {
   "[SendingPoolName](#cfn-pinpointemail-configurationset-deliveryoptions-sendingpoolname)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pinpointemail-configurationset-deliveryoptions-syntax.yaml"></a>
 
-```
+```yaml
   [SendingPoolName](#cfn-pinpointemail-configurationset-deliveryoptions-sendingpoolname): {{String}}
 ```
 

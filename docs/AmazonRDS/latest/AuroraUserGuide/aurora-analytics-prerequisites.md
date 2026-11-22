@@ -87,7 +87,7 @@ Create an IAM role that Aurora can assume to access your Amazon S3 data on behal
 
 1. Create a role named `AuroraAnalyticsRole`:
 
-   ```
+   ```bash
    aws iam create-role \
      --role-name AuroraAnalyticsRole \
      --assume-role-policy-document '{
@@ -106,7 +106,7 @@ Create an IAM role that Aurora can assume to access your Amazon S3 data on behal
 
 1. Attach the policy to the role:
 
-   ```
+   ```bash
    aws iam attach-role-policy \
      --role-name AuroraAnalyticsRole \
      --policy-arn arn:aws:iam::111122223333:policy/AuroraAnalyticsReadAccess
@@ -134,7 +134,7 @@ After you create the DB cluster, associate the IAM role that you created for the
 **To attach the IAM role using the AWS CLI**
 + Run the following command.
 
-  ```
+  ```bash
   aws rds add-role-to-db-cluster \
     --region us-east-1 \
     --db-cluster-identifier my-analytics-cluster \
@@ -183,7 +183,7 @@ The `aurora_analytics.enabled` parameter is set to `false` by default. After you
 **To enable the feature using the AWS CLI**
 + Run the following command.
 
-  ```
+  ```bash
   aws rds modify-db-cluster-parameter-group \
     --db-cluster-parameter-group-name my-analytics-params \
     --parameters "ParameterName=aurora_analytics.enabled,ParameterValue=true,ApplyMethod=immediate"

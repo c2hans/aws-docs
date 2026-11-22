@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-flowoutput-encryption-syntax.json"></a>
 
-```
+```json
 {
   "[Algorithm](#cfn-mediaconnect-flowoutput-encryption-algorithm)" : {{String}},
   "[KeyType](#cfn-mediaconnect-flowoutput-encryption-keytype)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-flowoutput-encryption-syntax.yaml"></a>
 
-```
+```yaml
   [Algorithm](#cfn-mediaconnect-flowoutput-encryption-algorithm): {{String}}
   [KeyType](#cfn-mediaconnect-flowoutput-encryption-keytype): {{String}}
   [RoleArn](#cfn-mediaconnect-flowoutput-encryption-rolearn): {{String}}

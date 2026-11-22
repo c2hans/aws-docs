@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sagemaker-hub-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SageMaker::Hub",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sagemaker-hub-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SageMaker::Hub
 Properties:
   [HubDescription](#cfn-sagemaker-hub-hubdescription): {{String}}

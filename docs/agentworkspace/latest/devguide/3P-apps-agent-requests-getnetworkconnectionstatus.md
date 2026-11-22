@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-a
 
 Returns the current network connection health status of the agent's connection to Connect Customer backend services.
 
-```
+```typescript
 async getNetworkConnectionStatus(): Promise<NetworkConnectionStatusChanged>
 ```
 
@@ -19,6 +19,6 @@ async getNetworkConnectionStatus(): Promise<NetworkConnectionStatusChanged>
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

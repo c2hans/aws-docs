@@ -25,7 +25,7 @@ For Spot Instances, if Amazon EC2 hibernated the instance, then only Amazon EC2 
 **To start a hibernated instance**
 Use the [start-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/start-instances.html) command.
 
-```
+```bash
 aws ec2 start-instances --instance-ids {{i-1234567890abcdef0}}
 ```
 
@@ -35,7 +35,7 @@ aws ec2 start-instances --instance-ids {{i-1234567890abcdef0}}
 **To start a hibernated instance**
 Use the [Start-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Start-EC2Instance.html) cmdlet.
 
-```
+```powershell
 Start-EC2Instance -InstanceId {{i-1234567890abcdef0}}
 ```
 

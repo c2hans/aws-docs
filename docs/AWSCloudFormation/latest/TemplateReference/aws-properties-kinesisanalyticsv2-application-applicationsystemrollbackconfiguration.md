@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisanalyticsv2-application-applicationsystemrollbackconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[RollbackEnabled](#cfn-kinesisanalyticsv2-application-applicationsystemrollbackconfiguration-rollbackenabled)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisanalyticsv2-application-applicationsystemrollbackconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [RollbackEnabled](#cfn-kinesisanalyticsv2-application-applicationsystemrollbackconfiguration-rollbackenabled): {{Boolean}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityhub-automationrulev2-ocsffindingfilters-syntax.json"></a>
 
-```
+```json
 {
   "[CompositeFilters](#cfn-securityhub-automationrulev2-ocsffindingfilters-compositefilters)" : {{[ CompositeFilter, ... ]}},
   "[CompositeOperator](#cfn-securityhub-automationrulev2-ocsffindingfilters-compositeoperator)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityhub-automationrulev2-ocsffindingfilters-syntax.yaml"></a>
 
-```
+```yaml
   [CompositeFilters](#cfn-securityhub-automationrulev2-ocsffindingfilters-compositefilters): {{
     - CompositeFilter}}
   [CompositeOperator](#cfn-securityhub-automationrulev2-ocsffindingfilters-compositeoperator): {{String}}

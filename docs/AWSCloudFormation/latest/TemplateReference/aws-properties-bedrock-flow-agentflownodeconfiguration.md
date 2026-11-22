@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-flow-agentflownodeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AgentAliasArn](#cfn-bedrock-flow-agentflownodeconfiguration-agentaliasarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-flow-agentflownodeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AgentAliasArn](#cfn-bedrock-flow-agentflownodeconfiguration-agentaliasarn): {{String}}
 ```
 

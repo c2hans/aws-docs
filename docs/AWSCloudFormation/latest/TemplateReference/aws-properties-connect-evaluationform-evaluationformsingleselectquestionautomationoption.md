@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-evaluationform-evaluationformsingleselectquestionautomationoption-syntax.json"></a>
 
-```
+```json
 {
   "[RuleCategory](#cfn-connect-evaluationform-evaluationformsingleselectquestionautomationoption-rulecategory)" : {{SingleSelectQuestionRuleCategoryAutomation}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-evaluationform-evaluationformsingleselectquestionautomationoption-syntax.yaml"></a>
 
-```
+```yaml
   [RuleCategory](#cfn-connect-evaluationform-evaluationformsingleselectquestionautomationoption-rulecategory): {{
     SingleSelectQuestionRuleCategoryAutomation}}
 ```

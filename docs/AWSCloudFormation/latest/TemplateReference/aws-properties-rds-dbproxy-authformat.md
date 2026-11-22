@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rds-dbproxy-authformat-syntax.json"></a>
 
-```
+```json
 {
   "[AuthScheme](#cfn-rds-dbproxy-authformat-authscheme)" : {{String}},
   "[ClientPasswordAuthType](#cfn-rds-dbproxy-authformat-clientpasswordauthtype)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rds-dbproxy-authformat-syntax.yaml"></a>
 
-```
+```yaml
   [AuthScheme](#cfn-rds-dbproxy-authformat-authscheme): {{String}}
   [ClientPasswordAuthType](#cfn-rds-dbproxy-authformat-clientpasswordauthtype): {{String}}
   [Description](#cfn-rds-dbproxy-authformat-description): {{String}}
@@ -89,7 +89,7 @@ The following example specifies authentication details for a proxy.
 #### JSON
 <a name="aws-properties-rds-dbproxy-authformat--examples--Authentication_details--json"></a>
 
-```
+```json
 "ProcessorFeatures":[
    {
       "AuthScheme": "SECRETS",
@@ -104,7 +104,7 @@ The following example specifies authentication details for a proxy.
 #### YAML
 <a name="aws-properties-rds-dbproxy-authformat--examples--Authentication_details--yaml"></a>
 
-```
+```yaml
 Auth:
   AuthScheme: SECRETS
   ClientPasswordAuthType: MYSQL_NATIVE_PASSWORD

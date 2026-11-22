@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-cluster-rollingupdatepolicy-syntax.json"></a>
 
-```
+```json
 {
   "[MaximumBatchSize](#cfn-sagemaker-cluster-rollingupdatepolicy-maximumbatchsize)" : {{CapacitySizeConfig}},
   "[RollbackMaximumBatchSize](#cfn-sagemaker-cluster-rollingupdatepolicy-rollbackmaximumbatchsize)" : {{CapacitySizeConfig}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-cluster-rollingupdatepolicy-syntax.yaml"></a>
 
-```
+```yaml
   [MaximumBatchSize](#cfn-sagemaker-cluster-rollingupdatepolicy-maximumbatchsize): {{
     CapacitySizeConfig}}
   [RollbackMaximumBatchSize](#cfn-sagemaker-cluster-rollingupdatepolicy-rollbackmaximumbatchsize): {{

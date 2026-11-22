@@ -55,7 +55,7 @@ This example shows a minimal configuration file that you can use with a .NET man
 
 **Example apprunner.yaml**
 
-```
+```yaml
 version: 1.0
 runtime: dotnet6
 build:
@@ -76,7 +76,7 @@ The runtime version that's used in these examples is {{6.0.9}}. You can replace 
 
 **Example apprunner.yaml**
 
-```
+```yaml
 version: 1.0
 runtime: dotnet6
 build:
@@ -112,7 +112,7 @@ This example shows the source code for a complete .NET application that you can 
 
 **Example HelloWorldDotNetApp**
 
-```
+```yaml
 version: 1.0
 runtime: dotnet6
 build:

@@ -61,7 +61,7 @@ You can specify the storage class on an object when you create it using the `Put
 
 This example request uses the `[PutObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html)` command to set the storage class on a new object to S3 Intelligent-Tiering:
 
-```
+```http
 PUT /my-image.jpg HTTP/1.1
 Host: {{{{amzn-s3-demo-bucket1}}}}.s3.{{Region}}.amazonaws.com
 Date: Wed, 12 Oct 2009 17:50:00 GMT
@@ -77,13 +77,13 @@ x-amz-storage-class: INTELLIGENT_TIERING
 
 This example uses the `put-object` command to upload the {{my\_images.tar.bz2}} to {{{{amzn-s3-demo-bucket1}}}} in the `{{GLACIER}} `storage class:
 
-```
+```bash
 aws s3api put-object --bucket {{{{amzn-s3-demo-bucket1}}}} --key {{dir-1/my_images.tar.bz2}} --storage-class {{GLACIER}} --body {{my_images.tar.bz2}}
 ```
 
 If the object size is more than 5 GB, use the following command to set the storage class:
 
-```
+```bash
 aws s3 cp {{large_test_file}} {{s3://{{amzn-s3-demo-bucket1}}}} --storage-class {{GLACIER}}
 ```
 
@@ -122,7 +122,7 @@ To change the storage class of an existing object, use the following methods.
 
 To change the storage class of an existing object, you make a copy of the object to the same location with a new storage class using the `[CopyObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html)` operation. The following example request copies an object to itself with the storage class changed to S3 Intelligent-Tiering:
 
-```
+```http
 PUT /my-image.jpg HTTP/1.1
 Host: {{{{amzn-s3-demo-bucket1}}}}.s3.{{Region}}.amazonaws.com
 Date: Wed, 12 Oct 2009 17:50:00 GMT
@@ -137,7 +137,7 @@ x-amz-storage-class: INTELLIGENT_TIERING
 
 This example uses the `cp` command to change the storage class of the of an existing object from its current storage class to `{{DEEP_ARCHIVE}} `storage class:
 
-```
+```bash
 aws s3 cp {{object_S3_URI}} {{object_S3_URI}} --storage-class {{DEEP_ARCHIVE}}
 ```
 

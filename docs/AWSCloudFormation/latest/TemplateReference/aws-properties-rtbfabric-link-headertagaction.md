@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rtbfabric-link-headertagaction-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-rtbfabric-link-headertagaction-name)" : {{String}},
   "[Value](#cfn-rtbfabric-link-headertagaction-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rtbfabric-link-headertagaction-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-rtbfabric-link-headertagaction-name): {{String}}
   [Value](#cfn-rtbfabric-link-headertagaction-value): {{String}}
 ```

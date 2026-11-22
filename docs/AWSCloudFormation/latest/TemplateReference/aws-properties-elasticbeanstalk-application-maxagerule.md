@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticbeanstalk-application-maxagerule-syntax.json"></a>
 
-```
+```json
 {
   "[DeleteSourceFromS3](#cfn-elasticbeanstalk-application-maxagerule-deletesourcefroms3)" : {{Boolean}},
   "[Enabled](#cfn-elasticbeanstalk-application-maxagerule-enabled)" : {{Boolean}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticbeanstalk-application-maxagerule-syntax.yaml"></a>
 
-```
+```yaml
   [DeleteSourceFromS3](#cfn-elasticbeanstalk-application-maxagerule-deletesourcefroms3): {{Boolean}}
   [Enabled](#cfn-elasticbeanstalk-application-maxagerule-enabled): {{Boolean}}
   [MaxAgeInDays](#cfn-elasticbeanstalk-application-maxagerule-maxageindays): {{Integer}}

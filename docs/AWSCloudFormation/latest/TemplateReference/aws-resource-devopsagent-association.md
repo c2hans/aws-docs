@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-devopsagent-association-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DevOpsAgent::Association",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-devopsagent-association-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DevOpsAgent::Association
 Properties:
   [AgentSpaceId](#cfn-devopsagent-association-agentspaceid): {{String}}

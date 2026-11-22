@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationinsights-application-netweaverprometheusexporter-syntax.json"></a>
 
-```
+```json
 {
   "[InstanceNumbers](#cfn-applicationinsights-application-netweaverprometheusexporter-instancenumbers)" : {{[ String, ... ]}},
   "[PrometheusPort](#cfn-applicationinsights-application-netweaverprometheusexporter-prometheusport)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationinsights-application-netweaverprometheusexporter-syntax.yaml"></a>
 
-```
+```yaml
   [InstanceNumbers](#cfn-applicationinsights-application-netweaverprometheusexporter-instancenumbers): {{
     - String}}
   [PrometheusPort](#cfn-applicationinsights-application-netweaverprometheusexporter-prometheusport): {{String}}

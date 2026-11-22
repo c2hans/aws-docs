@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-wafregional-sqlinjectionmatchset-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::WAFRegional::SqlInjectionMatchSet",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-wafregional-sqlinjectionmatchset-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::WAFRegional::SqlInjectionMatchSet
 Properties:
   [Name](#cfn-wafregional-sqlinjectionmatchset-name): {{String}}
@@ -89,7 +89,7 @@ The following example looks for snippets of SQL code in the query string of an H
 #### JSON
 <a name="aws-resource-wafregional-sqlinjectionmatchset--examples--Find_SQL_Injections--json"></a>
 
-```
+```json
 "SqlInjDetection": {
   "Type": "AWS::WAFRegional::SqlInjectionMatchSet",
   "Properties": {
@@ -109,7 +109,7 @@ The following example looks for snippets of SQL code in the query string of an H
 #### YAML
 <a name="aws-resource-wafregional-sqlinjectionmatchset--examples--Find_SQL_Injections--yaml"></a>
 
-```
+```yaml
 SqlInjDetection:
   Type: "AWS::WAFRegional::SqlInjectionMatchSet"
   Properties:
@@ -129,7 +129,7 @@ The following example associates the `SqlInjDetection` match set with a web acce
 #### JSON
 <a name="aws-resource-wafregional-sqlinjectionmatchset--examples--Associate_a_SQL_Injection_Match_Set_with_a_Web_ACL_Rule--json"></a>
 
-```
+```json
 "SqlInjRule" : {
   "Type": "AWS::WAFRegional::Rule",
   "Properties": {
@@ -149,7 +149,7 @@ The following example associates the `SqlInjDetection` match set with a web acce
 #### YAML
 <a name="aws-resource-wafregional-sqlinjectionmatchset--examples--Associate_a_SQL_Injection_Match_Set_with_a_Web_ACL_Rule--yaml"></a>
 
-```
+```yaml
 SqlInjRule:
   Type: "AWS::WAFRegional::Rule"
   Properties:
@@ -171,7 +171,7 @@ The following example associates the `SqlInjRule` rule with a web ACL. The web A
 #### JSON
 <a name="aws-resource-wafregional-sqlinjectionmatchset--examples--Create_a_Web_ACL--json"></a>
 
-```
+```json
 "MyWebACL": {
   "Type": "AWS::WAFRegional::WebACL",
   "Properties": {
@@ -196,7 +196,7 @@ The following example associates the `SqlInjRule` rule with a web ACL. The web A
 #### YAML
 <a name="aws-resource-wafregional-sqlinjectionmatchset--examples--Create_a_Web_ACL--yaml"></a>
 
-```
+```yaml
 MyWebACL:
   Type: "AWS::WAFRegional::WebACL"
   Properties:

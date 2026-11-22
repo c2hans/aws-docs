@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecr-repository-imagetagmutabilityexclusionfilter-syntax.json"></a>
 
-```
+```json
 {
   "[ImageTagMutabilityExclusionFilterType](#cfn-ecr-repository-imagetagmutabilityexclusionfilter-imagetagmutabilityexclusionfiltertype)" : {{String}},
   "[ImageTagMutabilityExclusionFilterValue](#cfn-ecr-repository-imagetagmutabilityexclusionfilter-imagetagmutabilityexclusionfiltervalue)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecr-repository-imagetagmutabilityexclusionfilter-syntax.yaml"></a>
 
-```
+```yaml
   [ImageTagMutabilityExclusionFilterType](#cfn-ecr-repository-imagetagmutabilityexclusionfilter-imagetagmutabilityexclusionfiltertype): {{String}}
   [ImageTagMutabilityExclusionFilterValue](#cfn-ecr-repository-imagetagmutabilityexclusionfilter-imagetagmutabilityexclusionfiltervalue): {{String}}
 ```

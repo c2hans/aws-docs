@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appstream-stack-usersetting-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-appstream-stack-usersetting-action)" : {{String}},
   "[MaximumLength](#cfn-appstream-stack-usersetting-maximumlength)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appstream-stack-usersetting-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-appstream-stack-usersetting-action): {{String}}
   [MaximumLength](#cfn-appstream-stack-usersetting-maximumlength): {{Integer}}
   [Permission](#cfn-appstream-stack-usersetting-permission): {{String}}

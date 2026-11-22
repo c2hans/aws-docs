@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-sourceendpoint-sourceendpointassociatedresourcedetails-syntax.json"></a>
 
-```
+```json
 {
   "[RouterOutput](#cfn-mediaconnect-sourceendpoint-sourceendpointassociatedresourcedetails-routeroutput)" : {{RouterOutputSourceEndpointAssociatedResourceDetails}},
   "[Standard](#cfn-mediaconnect-sourceendpoint-sourceendpointassociatedresourcedetails-standard)" : {{Json}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-sourceendpoint-sourceendpointassociatedresourcedetails-syntax.yaml"></a>
 
-```
+```yaml
   [RouterOutput](#cfn-mediaconnect-sourceendpoint-sourceendpointassociatedresourcedetails-routeroutput): {{
     RouterOutputSourceEndpointAssociatedResourceDetails}}
   [Standard](#cfn-mediaconnect-sourceendpoint-sourceendpointassociatedresourcedetails-standard): {{Json}}

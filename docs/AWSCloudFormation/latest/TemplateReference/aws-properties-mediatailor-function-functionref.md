@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-function-functionref-syntax.json"></a>
 
-```
+```json
 {
   "[Alias](#cfn-mediatailor-function-functionref-alias)" : {{String}},
   "[FunctionId](#cfn-mediatailor-function-functionref-functionid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-function-functionref-syntax.yaml"></a>
 
-```
+```yaml
   [Alias](#cfn-mediatailor-function-functionref-alias): {{String}}
   [FunctionId](#cfn-mediatailor-function-functionref-functionid): {{String}}
   [RunCondition](#cfn-mediatailor-function-functionref-runcondition): {{String}}

@@ -34,7 +34,7 @@ For cross-partition identity federation, specify exactly one audience when calli
 
 The following AWS CLI example shows the runtime phase, using `us-east-1` in the `aws` partition as the source Region and `cn-north-1` in the `aws-cn` partition as the destination Region. Use credentials for the source IAM principal to call `GetWebIdentityToken`. The `AssumeRoleWithWebIdentity` call authenticates using the JWT returned by `GetWebIdentityToken` and doesn't require AWS credentials.
 
-```
+```bash
 # Source partition (aws): get a short-lived JWT
 TOKEN=$(aws sts get-web-identity-token \
   --region us-east-1 \
@@ -55,7 +55,7 @@ aws sts assume-role-with-web-identity \
 
 The following example shows the same flow using the AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 from botocore import UNSIGNED
 from botocore.config import Config

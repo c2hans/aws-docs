@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-classifier-xmlclassifier-syntax.json"></a>
 
-```
+```json
 {
   "[Classification](#cfn-glue-classifier-xmlclassifier-classification)" : {{String}},
   "[Name](#cfn-glue-classifier-xmlclassifier-name)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-classifier-xmlclassifier-syntax.yaml"></a>
 
-```
+```yaml
   [Classification](#cfn-glue-classifier-xmlclassifier-classification): {{String}}
   [Name](#cfn-glue-classifier-xmlclassifier-name): {{String}}
   [RowTag](#cfn-glue-classifier-xmlclassifier-rowtag): {{String}}

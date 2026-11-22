@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-boxplotsortconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CategorySort](#cfn-quicksight-template-boxplotsortconfiguration-categorysort)" : {{[ FieldSortOptions, ... ]}},
   "[PaginationConfiguration](#cfn-quicksight-template-boxplotsortconfiguration-paginationconfiguration)" : {{PaginationConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-boxplotsortconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CategorySort](#cfn-quicksight-template-boxplotsortconfiguration-categorysort): {{
     - FieldSortOptions}}
   [PaginationConfiguration](#cfn-quicksight-template-boxplotsortconfiguration-paginationconfiguration): {{

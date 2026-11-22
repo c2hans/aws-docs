@@ -14,7 +14,7 @@ To declare multiple macros, use a list format and specify one or more macros.
 
 For example, in the template sample below, CloudFormation evaluates `MyMacro` and then `AWS::Serverless`, both of which can process the contents of the entire template because of their inclusion in the `Transform` section.
 
-```
+```yaml
 # Start of processable content for MyMacro and AWS::Serverless
 Transform:
   - MyMacro

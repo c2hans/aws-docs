@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/k
 
 When you create a UTF-8 encoded file, use the following JSON format:
 
-```
+```json
 {
   "data":[
     {

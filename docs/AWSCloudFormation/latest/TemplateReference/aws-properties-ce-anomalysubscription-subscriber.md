@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ce-anomalysubscription-subscriber-syntax.json"></a>
 
-```
+```json
 {
   "[Address](#cfn-ce-anomalysubscription-subscriber-address)" : {{String}},
   "[Status](#cfn-ce-anomalysubscription-subscriber-status)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ce-anomalysubscription-subscriber-syntax.yaml"></a>
 
-```
+```yaml
   [Address](#cfn-ce-anomalysubscription-subscriber-address): {{String}}
   [Status](#cfn-ce-anomalysubscription-subscriber-status): {{String}}
   [Type](#cfn-ce-anomalysubscription-subscriber-type): {{String}}

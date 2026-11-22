@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-schemaversion-schema-syntax.json"></a>
 
-```
+```json
 {
   "[RegistryName](#cfn-glue-schemaversion-schema-registryname)" : {{String}},
   "[SchemaArn](#cfn-glue-schemaversion-schema-schemaarn)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-schemaversion-schema-syntax.yaml"></a>
 
-```
+```yaml
   [RegistryName](#cfn-glue-schemaversion-schema-registryname): {{String}}
   [SchemaArn](#cfn-glue-schemaversion-schema-schemaarn): {{String}}
   [SchemaName](#cfn-glue-schemaversion-schema-schemaname): {{String}}

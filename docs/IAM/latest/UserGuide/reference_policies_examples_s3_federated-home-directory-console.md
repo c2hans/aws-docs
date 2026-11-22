@@ -15,7 +15,7 @@ You can view the role ID using the AWS CLI command `aws iam get-role --role-name
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

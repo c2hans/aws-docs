@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-dataautomationproject-modalityroutingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[jpeg](#cfn-bedrock-dataautomationproject-modalityroutingconfiguration-jpeg)" : {{String}},
   "[mov](#cfn-bedrock-dataautomationproject-modalityroutingconfiguration-mov)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-dataautomationproject-modalityroutingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [jpeg](#cfn-bedrock-dataautomationproject-modalityroutingconfiguration-jpeg): {{String}}
   [mov](#cfn-bedrock-dataautomationproject-modalityroutingconfiguration-mov): {{String}}
   [mp4](#cfn-bedrock-dataautomationproject-modalityroutingconfiguration-mp4): {{String}}

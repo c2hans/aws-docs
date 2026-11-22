@@ -279,7 +279,7 @@ Configuring multiple log sources to send data to a single log stream is not supp
 The CloudWatch Logs agent requires permission to perform `CreateLogGroup`, `CreateLogStream`, `DescribeLogStreams`, `DescribeLogGroups`, `PutLogEvents` and `PutRetentionPolicy` actions. If you're using the latest agent, `DescribeLogStreams` is not needed. See the sample IAM policy below.
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
 "Statement": [

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-alarmmuterule-mutetargets-syntax.json"></a>
 
-```
+```json
 {
   "[AlarmNames](#cfn-cloudwatch-alarmmuterule-mutetargets-alarmnames)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-alarmmuterule-mutetargets-syntax.yaml"></a>
 
-```
+```yaml
   [AlarmNames](#cfn-cloudwatch-alarmmuterule-mutetargets-alarmnames): {{
     - String}}
 ```

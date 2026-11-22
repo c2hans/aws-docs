@@ -53,7 +53,7 @@ In this step, you create a customer managed policy that allows any attached user
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [ {

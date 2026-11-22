@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-onlineevaluationconfig-insight-syntax.json"></a>
 
-```
+```json
 {
   "[InsightId](#cfn-bedrockagentcore-onlineevaluationconfig-insight-insightid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-onlineevaluationconfig-insight-syntax.yaml"></a>
 
-```
+```yaml
   [InsightId](#cfn-bedrockagentcore-onlineevaluationconfig-insight-insightid): {{String}}
 ```
 

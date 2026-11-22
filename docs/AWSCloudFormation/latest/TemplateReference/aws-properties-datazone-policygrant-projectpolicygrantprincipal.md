@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-policygrant-projectpolicygrantprincipal-syntax.json"></a>
 
-```
+```json
 {
   "[ProjectDesignation](#cfn-datazone-policygrant-projectpolicygrantprincipal-projectdesignation)" : {{String}},
   "[ProjectGrantFilter](#cfn-datazone-policygrant-projectpolicygrantprincipal-projectgrantfilter)" : {{ProjectGrantFilter}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-policygrant-projectpolicygrantprincipal-syntax.yaml"></a>
 
-```
+```yaml
   [ProjectDesignation](#cfn-datazone-policygrant-projectpolicygrantprincipal-projectdesignation): {{String}}
   [ProjectGrantFilter](#cfn-datazone-policygrant-projectpolicygrantprincipal-projectgrantfilter): {{
     ProjectGrantFilter}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-knowledgebase-redshiftserverlessconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AuthConfiguration](#cfn-bedrock-knowledgebase-redshiftserverlessconfiguration-authconfiguration)" : {{RedshiftServerlessAuthConfiguration}},
   "[WorkgroupArn](#cfn-bedrock-knowledgebase-redshiftserverlessconfiguration-workgrouparn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-knowledgebase-redshiftserverlessconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AuthConfiguration](#cfn-bedrock-knowledgebase-redshiftserverlessconfiguration-authconfiguration): {{
     RedshiftServerlessAuthConfiguration}}
   [WorkgroupArn](#cfn-bedrock-knowledgebase-redshiftserverlessconfiguration-workgrouparn): {{String}}

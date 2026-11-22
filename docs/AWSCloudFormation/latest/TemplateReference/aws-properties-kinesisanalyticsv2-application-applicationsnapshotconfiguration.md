@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisanalyticsv2-application-applicationsnapshotconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[SnapshotMode](#cfn-kinesisanalyticsv2-application-applicationsnapshotconfiguration-snapshotmode)" : {{String}},
   "[SnapshotsEnabled](#cfn-kinesisanalyticsv2-application-applicationsnapshotconfiguration-snapshotsenabled)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisanalyticsv2-application-applicationsnapshotconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [SnapshotMode](#cfn-kinesisanalyticsv2-application-applicationsnapshotconfiguration-snapshotmode): {{String}}
   [SnapshotsEnabled](#cfn-kinesisanalyticsv2-application-applicationsnapshotconfiguration-snapshotsenabled): {{Boolean}}
 ```

@@ -63,6 +63,8 @@ Customers can listen on this event to alert them if an ACM issued public or priv
      ],
      "detail": {
         "CertificateType" : "AMAZON_ISSUED" | "PRIVATE",
+        "RootHierarchyType" : "N2_AMAZON_MANAGED" | "N2_SFG2_AMAZON_MANAGED",
+        "CertificateUsage" : "CLIENT_AND_SERVER_AUTH" | "CLIENT_AUTH_ONLY",
         "CommonName": "example.com",
         "FirstSubjectAlternativeName": "example.com",
         "ValidityInDays": 90,
@@ -77,6 +79,8 @@ Customers can listen on this event to alert them if an ACM issued public or priv
     }
  }
 ```
+
+`RootHierarchyType` and `CertificateUsage` are present only for Amazon N2 certificates.
 
 ## ACM Certificate Available event
 <a name="available-event"></a>
@@ -100,6 +104,8 @@ Customers can listen on this event to be notified when a managed public or priva
     "detail": {
        “Action” : "ISSUANCE" | "RENEWAL" | "IMPORT" | "REIMPORT",
        "CertificateType" : "AMAZON_ISSUED" | "PRIVATE" | "IMPORTED",
+       "RootHierarchyType" : "N2_AMAZON_MANAGED" | "N2_SFG2_AMAZON_MANAGED",
+       "CertificateUsage" : "CLIENT_AND_SERVER_AUTH" | "CLIENT_AUTH_ONLY",
        "CommonName": "example.com",
        "FirstSubjectAlternativeName": "example.com",
        "ValidityInDays": 90,
@@ -115,6 +121,8 @@ Customers can listen on this event to be notified when a managed public or priva
      }
 }
 ```
+
+`RootHierarchyType` and `CertificateUsage` are present only for Amazon N2 certificates.
 
 ## ACM Certificate Renewal Action Required event
 <a name="renewal-required-event"></a>

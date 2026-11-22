@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-licensemanager-license-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::LicenseManager::License",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-licensemanager-license-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::LicenseManager::License
 Properties:
   [Beneficiary](#cfn-licensemanager-license-beneficiary): {{String}}

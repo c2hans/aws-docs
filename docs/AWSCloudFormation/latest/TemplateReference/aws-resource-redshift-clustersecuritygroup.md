@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-redshift-clustersecuritygroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Redshift::ClusterSecurityGroup",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-redshift-clustersecuritygroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Redshift::ClusterSecurityGroup
 Properties:
   [Description](#cfn-redshift-clustersecuritygroup-description): {{String}}
@@ -87,7 +87,7 @@ The following example describes an Amazon Redshift cluster security group that y
 #### JSON
 <a name="aws-resource-redshift-clustersecuritygroup--examples--Specify_a_Cluster_Security_Group--json"></a>
 
-```
+```json
 "myClusterSecurityGroup": {
   "Type": "AWS::Redshift::ClusterSecurityGroup",
   "Properties": {
@@ -105,7 +105,7 @@ The following example describes an Amazon Redshift cluster security group that y
 #### YAML
 <a name="aws-resource-redshift-clustersecuritygroup--examples--Specify_a_Cluster_Security_Group--yaml"></a>
 
-```
+```yaml
 myClusterSecurityGroup:
   Type: "AWS::Redshift::ClusterSecurityGroup"
   Properties:

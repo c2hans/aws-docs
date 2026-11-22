@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fis-experimenttemplate-s3configuration-syntax.json"></a>
 
-```
+```json
 {
   "[BucketName](#cfn-fis-experimenttemplate-s3configuration-bucketname)" : {{String}},
   "[Prefix](#cfn-fis-experimenttemplate-s3configuration-prefix)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fis-experimenttemplate-s3configuration-syntax.yaml"></a>
 
-```
+```yaml
   [BucketName](#cfn-fis-experimenttemplate-s3configuration-bucketname): {{String}}
   [Prefix](#cfn-fis-experimenttemplate-s3configuration-prefix): {{String}}
 ```

@@ -23,13 +23,13 @@ The `alter_db_time_zone` procedure has the following parameters.
 
 The following example changes the time zone to UTC plus three hours.
 
-```
+```sql
 EXEC rdsadmin.rdsadmin_util.alter_db_time_zone(p_new_tz => '{{+3:00}}');
 ```
 
 The following example changes the time zone to the Africa/Algiers time zone.
 
-```
+```sql
 EXEC rdsadmin.rdsadmin_util.alter_db_time_zone(p_new_tz => '{{Africa/Algiers}}');
 ```
 

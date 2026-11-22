@@ -40,7 +40,7 @@ An IAM user with this policy attached to their account can configure Application
 **Example AWSApplicationDiscoveryServiceFullAccess policy**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -75,7 +75,7 @@ This policy also grants the user access to Arsenal. Arsenal is an agent service 
 **Example AWSApplicationDiscoveryAgentAccess Policy**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -102,7 +102,7 @@ For information about using this policy, see [AWS managed policies for AWS Appli
 **Example ApplicationDiscoveryServiceContinuousExportServiceRolePolicy**
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
     "Statement": [
@@ -190,7 +190,7 @@ The AWSDiscoveryContinuousExportFirehosePolicy policy is required to use data ex
 **Example AWSDiscoveryContinuousExportFirehosePolicy**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -243,7 +243,7 @@ The following example shows how to use the `discovery:GetNetworkConnectionGraph`
 **Example**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

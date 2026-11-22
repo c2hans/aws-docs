@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-deadline-storageprofile-filesystemlocation-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-deadline-storageprofile-filesystemlocation-name)" : {{String}},
   "[Path](#cfn-deadline-storageprofile-filesystemlocation-path)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-deadline-storageprofile-filesystemlocation-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-deadline-storageprofile-filesystemlocation-name): {{String}}
   [Path](#cfn-deadline-storageprofile-filesystemlocation-path): {{String}}
   [Type](#cfn-deadline-storageprofile-filesystemlocation-type): {{String}}

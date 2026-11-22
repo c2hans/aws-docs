@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-filterscopeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AllSheets](#cfn-quicksight-template-filterscopeconfiguration-allsheets)" : {{Json}},
   "[SelectedSheets](#cfn-quicksight-template-filterscopeconfiguration-selectedsheets)" : {{SelectedSheetsFilterScopeConfiguration}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-filterscopeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AllSheets](#cfn-quicksight-template-filterscopeconfiguration-allsheets): {{Json}}
   [SelectedSheets](#cfn-quicksight-template-filterscopeconfiguration-selectedsheets): {{
     SelectedSheetsFilterScopeConfiguration}}

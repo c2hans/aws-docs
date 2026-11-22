@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rekognition-streamprocessor-s3destination-syntax.json"></a>
 
-```
+```json
 {
   "[BucketName](#cfn-rekognition-streamprocessor-s3destination-bucketname)" : {{String}},
   "[ObjectKeyPrefix](#cfn-rekognition-streamprocessor-s3destination-objectkeyprefix)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rekognition-streamprocessor-s3destination-syntax.yaml"></a>
 
-```
+```yaml
   [BucketName](#cfn-rekognition-streamprocessor-s3destination-bucketname): {{String}}
   [ObjectKeyPrefix](#cfn-rekognition-streamprocessor-s3destination-objectkeyprefix): {{String}}
 ```

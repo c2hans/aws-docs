@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-billingconductor-customlineitem-lineitemfilter-syntax.json"></a>
 
-```
+```json
 {
   "[Attribute](#cfn-billingconductor-customlineitem-lineitemfilter-attribute)" : {{String}},
   "[AttributeValues](#cfn-billingconductor-customlineitem-lineitemfilter-attributevalues)" : {{[ String, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-billingconductor-customlineitem-lineitemfilter-syntax.yaml"></a>
 
-```
+```yaml
   [Attribute](#cfn-billingconductor-customlineitem-lineitemfilter-attribute): {{String}}
   [AttributeValues](#cfn-billingconductor-customlineitem-lineitemfilter-attributevalues): {{
     - String}}

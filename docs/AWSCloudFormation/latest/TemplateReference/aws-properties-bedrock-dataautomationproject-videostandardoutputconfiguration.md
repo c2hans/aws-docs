@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-dataautomationproject-videostandardoutputconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Extraction](#cfn-bedrock-dataautomationproject-videostandardoutputconfiguration-extraction)" : {{VideoStandardExtraction}},
   "[GenerativeField](#cfn-bedrock-dataautomationproject-videostandardoutputconfiguration-generativefield)" : {{VideoStandardGenerativeField}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-dataautomationproject-videostandardoutputconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Extraction](#cfn-bedrock-dataautomationproject-videostandardoutputconfiguration-extraction): {{
     VideoStandardExtraction}}
   [GenerativeField](#cfn-bedrock-dataautomationproject-videostandardoutputconfiguration-generativefield): {{

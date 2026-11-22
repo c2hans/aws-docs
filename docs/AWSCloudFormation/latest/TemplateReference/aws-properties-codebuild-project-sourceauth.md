@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codebuild-project-sourceauth-syntax.json"></a>
 
-```
+```json
 {
   "[Resource](#cfn-codebuild-project-sourceauth-resource)" : {{String}},
   "[Type](#cfn-codebuild-project-sourceauth-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codebuild-project-sourceauth-syntax.yaml"></a>
 
-```
+```yaml
   [Resource](#cfn-codebuild-project-sourceauth-resource): {{String}}
   [Type](#cfn-codebuild-project-sourceauth-type): {{String}}
 ```

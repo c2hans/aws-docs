@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-route53recoverycontrol-safetyrule-assertionrule-syntax.json"></a>
 
-```
+```json
 {
   "[AssertedControls](#cfn-route53recoverycontrol-safetyrule-assertionrule-assertedcontrols)" : {{[ String, ... ]}},
   "[WaitPeriodMs](#cfn-route53recoverycontrol-safetyrule-assertionrule-waitperiodms)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-route53recoverycontrol-safetyrule-assertionrule-syntax.yaml"></a>
 
-```
+```yaml
   [AssertedControls](#cfn-route53recoverycontrol-safetyrule-assertionrule-assertedcontrols): {{
     - String}}
   [WaitPeriodMs](#cfn-route53recoverycontrol-safetyrule-assertionrule-waitperiodms): {{Integer}}

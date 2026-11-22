@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecr-signingconfiguration-rule-syntax.json"></a>
 
-```
+```json
 {
   "[RepositoryFilters](#cfn-ecr-signingconfiguration-rule-repositoryfilters)" : {{[ RepositoryFilter, ... ]}},
   "[SigningProfileArn](#cfn-ecr-signingconfiguration-rule-signingprofilearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecr-signingconfiguration-rule-syntax.yaml"></a>
 
-```
+```yaml
   [RepositoryFilters](#cfn-ecr-signingconfiguration-rule-repositoryfilters): {{
     - RepositoryFilter}}
   [SigningProfileArn](#cfn-ecr-signingconfiguration-rule-signingprofilearn): {{String}}

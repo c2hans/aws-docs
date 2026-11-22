@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pinpoint-inapptemplate-bodyconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Alignment](#cfn-pinpoint-inapptemplate-bodyconfig-alignment)" : {{String}},
   "[Body](#cfn-pinpoint-inapptemplate-bodyconfig-body)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pinpoint-inapptemplate-bodyconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Alignment](#cfn-pinpoint-inapptemplate-bodyconfig-alignment): {{String}}
   [Body](#cfn-pinpoint-inapptemplate-bodyconfig-body): {{String}}
   [TextColor](#cfn-pinpoint-inapptemplate-bodyconfig-textcolor): {{String}}

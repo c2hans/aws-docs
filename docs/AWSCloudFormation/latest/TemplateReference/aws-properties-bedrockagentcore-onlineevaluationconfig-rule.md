@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-onlineevaluationconfig-rule-syntax.json"></a>
 
-```
+```json
 {
   "[Filters](#cfn-bedrockagentcore-onlineevaluationconfig-rule-filters)" : {{[ Filter, ... ]}},
   "[SamplingConfig](#cfn-bedrockagentcore-onlineevaluationconfig-rule-samplingconfig)" : {{SamplingConfig}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-onlineevaluationconfig-rule-syntax.yaml"></a>
 
-```
+```yaml
   [Filters](#cfn-bedrockagentcore-onlineevaluationconfig-rule-filters): {{
     - Filter}}
   [SamplingConfig](#cfn-bedrockagentcore-onlineevaluationconfig-rule-samplingconfig): {{

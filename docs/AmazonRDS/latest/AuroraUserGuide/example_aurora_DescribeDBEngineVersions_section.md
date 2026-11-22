@@ -15,7 +15,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Aurora#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get a list of DB engine versions for a particular DB engine.
     /// </summary>
@@ -42,7 +42,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/aurora#code-examples).
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -105,7 +105,7 @@ bool AwsDoc::Aurora::getDBEngineVersions(const Aws::String &engineName,
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/aurora#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -145,7 +145,7 @@ func (clusters *DbClusters) GetEngineVersions(ctx context.Context, engine string
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
     public static void describeDBEngines(RdsClient rdsClient) {
         try {
             DescribeDbEngineVersionsRequest engineVersionsRequest = DescribeDbEngineVersionsRequest.builder()
@@ -179,7 +179,7 @@ func (clusters *DbClusters) GetEngineVersions(ctx context.Context, engine string
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rds#code-examples).
 
-```
+```kotlin
 // Get a list of allowed engine versions.
 suspend fun getAllowedClusterEngines(dbParameterGroupFamilyVal: String?) {
     val versionsRequest =
@@ -205,7 +205,7 @@ suspend fun getAllowedClusterEngines(dbParameterGroupFamilyVal: String?) {
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/aurora#code-examples).
 
-```
+```python
 class AuroraWrapper:
     """Encapsulates Aurora DB cluster actions."""
 
@@ -259,7 +259,7 @@ class AuroraWrapper:
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/aurora#code-examples).
 
-```
+```rust
     // Get available engine families for Aurora MySql. rds.DescribeDbEngineVersions(Engine='aurora-mysql') and build a set of the 'DBParameterGroupFamily' field values. I get {aurora-mysql8.0, aurora-mysql5.7}.
     pub async fn get_engines(&self) -> Result<HashMap<String, Vec<String>>, ScenarioError> {
         let describe_db_engine_versions = self.rds.describe_db_engine_versions(DB_ENGINE).await;
@@ -384,7 +384,7 @@ async fn test_scenario_get_engines_failed() {
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rds#code-examples).
 
-```
+```sap-abap
     " iv_engine                 = 'mysql'
     " iv_dbparametergroupfamily = 'mysql8.0' (optional - filters by parameter group family)
     TRY.

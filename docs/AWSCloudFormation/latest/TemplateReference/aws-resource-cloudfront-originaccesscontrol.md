@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudfront-originaccesscontrol-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudFront::OriginAccessControl",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudfront-originaccesscontrol-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudFront::OriginAccessControl
 Properties:
   [OriginAccessControlConfig](#cfn-cloudfront-originaccesscontrol-originaccesscontrolconfig): {{

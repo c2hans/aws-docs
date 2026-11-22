@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-boxplotoptions-syntax.json"></a>
 
-```
+```json
 {
   "[AllDataPointsVisibility](#cfn-quicksight-dashboard-boxplotoptions-alldatapointsvisibility)" : {{String}},
   "[OutlierVisibility](#cfn-quicksight-dashboard-boxplotoptions-outliervisibility)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-boxplotoptions-syntax.yaml"></a>
 
-```
+```yaml
   [AllDataPointsVisibility](#cfn-quicksight-dashboard-boxplotoptions-alldatapointsvisibility): {{String}}
   [OutlierVisibility](#cfn-quicksight-dashboard-boxplotoptions-outliervisibility): {{String}}
   [StyleOptions](#cfn-quicksight-dashboard-boxplotoptions-styleoptions): {{

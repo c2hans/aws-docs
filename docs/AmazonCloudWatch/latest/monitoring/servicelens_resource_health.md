@@ -29,7 +29,7 @@ To make sure that you get the full benefit of the resource health view, check th
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

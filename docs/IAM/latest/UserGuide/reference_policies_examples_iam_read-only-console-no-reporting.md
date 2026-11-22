@@ -15,7 +15,7 @@ This policy cannot be used to generate reports or service last accessed details.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {

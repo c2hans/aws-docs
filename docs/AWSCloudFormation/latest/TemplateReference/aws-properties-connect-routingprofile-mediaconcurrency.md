@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-routingprofile-mediaconcurrency-syntax.json"></a>
 
-```
+```json
 {
   "[Channel](#cfn-connect-routingprofile-mediaconcurrency-channel)" : {{String}},
   "[Concurrency](#cfn-connect-routingprofile-mediaconcurrency-concurrency)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-routingprofile-mediaconcurrency-syntax.yaml"></a>
 
-```
+```yaml
   [Channel](#cfn-connect-routingprofile-mediaconcurrency-channel): {{String}}
   [Concurrency](#cfn-connect-routingprofile-mediaconcurrency-concurrency): {{Integer}}
   [CrossChannelBehavior](#cfn-connect-routingprofile-mediaconcurrency-crosschannelbehavior): {{

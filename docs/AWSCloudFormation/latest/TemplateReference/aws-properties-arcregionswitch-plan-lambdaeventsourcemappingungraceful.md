@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-arcregionswitch-plan-lambdaeventsourcemappingungraceful-syntax.json"></a>
 
-```
+```json
 {
   "[Behavior](#cfn-arcregionswitch-plan-lambdaeventsourcemappingungraceful-behavior)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-arcregionswitch-plan-lambdaeventsourcemappingungraceful-syntax.yaml"></a>
 
-```
+```yaml
   [Behavior](#cfn-arcregionswitch-plan-lambdaeventsourcemappingungraceful-behavior): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-segmentdefinition-rangeoverride-syntax.json"></a>
 
-```
+```json
 {
   "[End](#cfn-customerprofiles-segmentdefinition-rangeoverride-end)" : {{Integer}},
   "[Start](#cfn-customerprofiles-segmentdefinition-rangeoverride-start)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-segmentdefinition-rangeoverride-syntax.yaml"></a>
 
-```
+```yaml
   [End](#cfn-customerprofiles-segmentdefinition-rangeoverride-end): {{Integer}}
   [Start](#cfn-customerprofiles-segmentdefinition-rangeoverride-start): {{Integer}}
   [Unit](#cfn-customerprofiles-segmentdefinition-rangeoverride-unit): {{String}}

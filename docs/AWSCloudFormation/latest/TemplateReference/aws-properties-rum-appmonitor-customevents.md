@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rum-appmonitor-customevents-syntax.json"></a>
 
-```
+```json
 {
   "[Status](#cfn-rum-appmonitor-customevents-status)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rum-appmonitor-customevents-syntax.yaml"></a>
 
-```
+```yaml
   [Status](#cfn-rum-appmonitor-customevents-status): {{String}}
 ```
 

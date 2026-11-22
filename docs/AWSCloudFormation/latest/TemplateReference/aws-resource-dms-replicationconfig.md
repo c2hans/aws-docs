@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-dms-replicationconfig-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DMS::ReplicationConfig",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-dms-replicationconfig-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DMS::ReplicationConfig
 Properties:
   [ComputeConfig](#cfn-dms-replicationconfig-computeconfig): {{

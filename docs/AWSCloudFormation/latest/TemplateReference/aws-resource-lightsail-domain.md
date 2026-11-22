@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lightsail-domain-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lightsail::Domain",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lightsail-domain-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lightsail::Domain
 Properties:
   [DomainEntries](#cfn-lightsail-domain-domainentries): {{

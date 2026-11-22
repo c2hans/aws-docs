@@ -274,7 +274,7 @@ To use IAM permissions to authorize access to the API method, set the `authoriza
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

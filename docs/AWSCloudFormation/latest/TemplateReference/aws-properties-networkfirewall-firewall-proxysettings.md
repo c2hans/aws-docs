@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkfirewall-firewall-proxysettings-syntax.json"></a>
 
-```
+```json
 {
   "[ListenerProperties](#cfn-networkfirewall-firewall-proxysettings-listenerproperties)" : {{[ ListenerProperty, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkfirewall-firewall-proxysettings-syntax.yaml"></a>
 
-```
+```yaml
   [ListenerProperties](#cfn-networkfirewall-firewall-proxysettings-listenerproperties): {{
     - ListenerProperty}}
 ```

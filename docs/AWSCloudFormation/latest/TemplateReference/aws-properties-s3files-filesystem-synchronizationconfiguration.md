@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3files-filesystem-synchronizationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ExpirationDataRules](#cfn-s3files-filesystem-synchronizationconfiguration-expirationdatarules)" : {{[ ExpirationDataRule, ... ]}},
   "[ImportDataRules](#cfn-s3files-filesystem-synchronizationconfiguration-importdatarules)" : {{[ ImportDataRule, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3files-filesystem-synchronizationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ExpirationDataRules](#cfn-s3files-filesystem-synchronizationconfiguration-expirationdatarules): {{
     - ExpirationDataRule}}
   [ImportDataRules](#cfn-s3files-filesystem-synchronizationconfiguration-importdatarules): {{

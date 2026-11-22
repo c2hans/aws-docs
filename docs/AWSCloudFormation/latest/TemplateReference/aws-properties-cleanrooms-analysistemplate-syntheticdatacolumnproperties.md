@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-analysistemplate-syntheticdatacolumnproperties-syntax.json"></a>
 
-```
+```json
 {
   "[ColumnName](#cfn-cleanrooms-analysistemplate-syntheticdatacolumnproperties-columnname)" : {{String}},
   "[ColumnType](#cfn-cleanrooms-analysistemplate-syntheticdatacolumnproperties-columntype)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-analysistemplate-syntheticdatacolumnproperties-syntax.yaml"></a>
 
-```
+```yaml
   [ColumnName](#cfn-cleanrooms-analysistemplate-syntheticdatacolumnproperties-columnname): {{String}}
   [ColumnType](#cfn-cleanrooms-analysistemplate-syntheticdatacolumnproperties-columntype): {{String}}
   [IsPredictiveValue](#cfn-cleanrooms-analysistemplate-syntheticdatacolumnproperties-ispredictivevalue): {{Boolean}}

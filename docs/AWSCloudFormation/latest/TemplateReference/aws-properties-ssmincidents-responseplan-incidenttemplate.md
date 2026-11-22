@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssmincidents-responseplan-incidenttemplate-syntax.json"></a>
 
-```
+```json
 {
   "[DedupeString](#cfn-ssmincidents-responseplan-incidenttemplate-dedupestring)" : {{String}},
   "[Impact](#cfn-ssmincidents-responseplan-incidenttemplate-impact)" : {{Integer}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssmincidents-responseplan-incidenttemplate-syntax.yaml"></a>
 
-```
+```yaml
   [DedupeString](#cfn-ssmincidents-responseplan-incidenttemplate-dedupestring): {{
     String}}
   [Impact](#cfn-ssmincidents-responseplan-incidenttemplate-impact): {{Integer}}

@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-routeserver-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::RouteServer",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-routeserver-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::RouteServer
 Properties:
   [AmazonSideAsn](#cfn-ec2-routeserver-amazonsideasn): {{Integer}}

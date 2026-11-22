@@ -19,7 +19,7 @@ Not all resources support import operations. See [Resources that support import 
    In the following example source template, `Games` is the target of this refactor.
 **Example JSON**
 
-   ```
+   ```json
    {
        "AWSTemplateFormatVersion": "2010-09-09",
        "Description": "Import test",
@@ -94,7 +94,7 @@ Not all resources support import operations. See [Resources that support import 
    The source template now looks like the following.
 **Example JSON**
 
-   ```
+   ```json
    {
        "AWSTemplateFormatVersion": "2010-09-09",
        "Description": "Import test",
@@ -128,7 +128,7 @@ Not all resources support import operations. See [Resources that support import 
    The following example target template currently has the `PlayersTable` resource, and now also contains `GamesTable`.
 **Example JSON**
 
-   ```
+   ```json
    {
        "AWSTemplateFormatVersion": "2010-09-09",
        "Description": "Import test",
@@ -222,7 +222,7 @@ It's not necessary to run drift detection on the parent stack after this import 
    In the following example source template, `GamesTable` is the target of this refactor.
 **Example JSON**
 
-   ```
+   ```json
    {
        "AWSTemplateFormatVersion": "2010-09-09",
        "Description": "Import test",
@@ -287,7 +287,7 @@ It's not necessary to run drift detection on the parent stack after this import 
    The source template now looks like the following.
 **Example JSON**
 
-   ```
+   ```json
    {
        "AWSTemplateFormatVersion": "2010-09-09",
        "Description": "Import test",
@@ -321,7 +321,7 @@ It's not necessary to run drift detection on the parent stack after this import 
    The following example target template currently has the `PlayersTable` resource, and now also contains `GamesTable`.
 **Example JSON**
 
-   ```
+   ```json
    {
        "AWSTemplateFormatVersion": "2010-09-09",
        "Description": "Import test",
@@ -383,7 +383,7 @@ It's not necessary to run drift detection on the parent stack after this import 
 
 1. Compose a list of actual resources to import and their unique identifiers in the following JSON string format. For more information, see [Resource identifiers](import-resources-manually.md#resource-import-identifiers-unique-ids).
 
-   ```
+   ```text
    [{"ResourceType":"AWS::DynamoDB::Table","LogicalResourceId":"GamesTable","ResourceIdentifier":{"TableName":"Games"}}]
    ```
 
@@ -391,7 +391,7 @@ It's not necessary to run drift detection on the parent stack after this import 
 
    For example, to import `GamesTable`, you might create a {{ResourcesToImport.txt}} file that contains the following configuration.
 
-   ```
+   ```json
    [
      {
          "ResourceType":"AWS::DynamoDB::Table",

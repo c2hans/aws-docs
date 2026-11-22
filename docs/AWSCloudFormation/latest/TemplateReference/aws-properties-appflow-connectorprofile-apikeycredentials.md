@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-connectorprofile-apikeycredentials-syntax.json"></a>
 
-```
+```json
 {
   "[ApiKey](#cfn-appflow-connectorprofile-apikeycredentials-apikey)" : {{String}},
   "[ApiSecretKey](#cfn-appflow-connectorprofile-apikeycredentials-apisecretkey)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-connectorprofile-apikeycredentials-syntax.yaml"></a>
 
-```
+```yaml
   [ApiKey](#cfn-appflow-connectorprofile-apikeycredentials-apikey): {{String}}
   [ApiSecretKey](#cfn-appflow-connectorprofile-apikeycredentials-apisecretkey): {{String}}
 ```

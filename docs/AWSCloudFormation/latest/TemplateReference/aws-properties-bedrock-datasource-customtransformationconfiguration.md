@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-datasource-customtransformationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[IntermediateStorage](#cfn-bedrock-datasource-customtransformationconfiguration-intermediatestorage)" : {{IntermediateStorage}},
   "[Transformations](#cfn-bedrock-datasource-customtransformationconfiguration-transformations)" : {{[ Transformation, ... ]}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-datasource-customtransformationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [IntermediateStorage](#cfn-bedrock-datasource-customtransformationconfiguration-intermediatestorage): {{
     IntermediateStorage}}
   [Transformations](#cfn-bedrock-datasource-customtransformationconfiguration-transformations): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-arcregionswitch-plan-eksresourcescalingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CapacityMonitoringApproach](#cfn-arcregionswitch-plan-eksresourcescalingconfiguration-capacitymonitoringapproach)" : {{}},
   "[EksClusters](#cfn-arcregionswitch-plan-eksresourcescalingconfiguration-eksclusters)" : {{[ EksCluster, ... ]}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-arcregionswitch-plan-eksresourcescalingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CapacityMonitoringApproach](#cfn-arcregionswitch-plan-eksresourcescalingconfiguration-capacitymonitoringapproach): {{
     }}
   [EksClusters](#cfn-arcregionswitch-plan-eksresourcescalingconfiguration-eksclusters): {{

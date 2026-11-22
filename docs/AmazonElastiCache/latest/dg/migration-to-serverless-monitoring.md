@@ -60,7 +60,7 @@ For example, a `preparing` status on a target that contains data would report `F
 **To check the migration status (AWS CLI)**
 + Enter the following AWS CLI command to check the migration status, where `{{my-cache}}` is the name of the target cache:
 
-  ```
+  ```bash
   aws elasticache describe-serverless-caches \
       --serverless-cache-name {{my-cache}} \
       --query "ServerlessCaches[0].[Status,Migration.Status]" \
@@ -86,7 +86,7 @@ For example, a `preparing` status on a target that contains data would report `F
 **To list the migration events (AWS CLI)**
 + Enter the following AWS CLI command to list the events, where `{{my-cache}}` is the name of the target cache and `{{120}}` is the number of minutes of events to return:
 
-  ```
+  ```bash
   aws elasticache describe-events \
       --source-type serverless-cache \
       --source-identifier {{my-cache}} \

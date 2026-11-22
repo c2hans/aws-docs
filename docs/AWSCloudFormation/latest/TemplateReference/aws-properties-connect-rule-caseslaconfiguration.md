@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-rule-caseslaconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[FieldId](#cfn-connect-rule-caseslaconfiguration-fieldid)" : {{String}},
   "[Name](#cfn-connect-rule-caseslaconfiguration-name)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-rule-caseslaconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [FieldId](#cfn-connect-rule-caseslaconfiguration-fieldid): {{String}}
   [Name](#cfn-connect-rule-caseslaconfiguration-name): {{String}}
   [TargetFieldValues](#cfn-connect-rule-caseslaconfiguration-targetfieldvalues): {{

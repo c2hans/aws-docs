@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpool-numberattributeconstraints-syntax.json"></a>
 
-```
+```json
 {
   "[MaxValue](#cfn-cognito-userpool-numberattributeconstraints-maxvalue)" : {{String}},
   "[MinValue](#cfn-cognito-userpool-numberattributeconstraints-minvalue)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpool-numberattributeconstraints-syntax.yaml"></a>
 
-```
+```yaml
   [MaxValue](#cfn-cognito-userpool-numberattributeconstraints-maxvalue): {{String}}
   [MinValue](#cfn-cognito-userpool-numberattributeconstraints-minvalue): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-mailmanagerruleset-archiveaction-syntax.json"></a>
 
-```
+```json
 {
   "[ActionFailurePolicy](#cfn-ses-mailmanagerruleset-archiveaction-actionfailurepolicy)" : {{String}},
   "[TargetArchive](#cfn-ses-mailmanagerruleset-archiveaction-targetarchive)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-mailmanagerruleset-archiveaction-syntax.yaml"></a>
 
-```
+```yaml
   [ActionFailurePolicy](#cfn-ses-mailmanagerruleset-archiveaction-actionfailurepolicy): {{String}}
   [TargetArchive](#cfn-ses-mailmanagerruleset-archiveaction-targetarchive): {{String}}
 ```

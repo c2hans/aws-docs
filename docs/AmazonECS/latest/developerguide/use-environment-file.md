@@ -48,7 +48,7 @@ Consider the following when specifying an environment variable file in a contain
 
 The following is a snippet of a task definition showing how to specify an environment variable file.
 
-```
+```JSON
 {
     "family": "",
     "containerDefinitions": [

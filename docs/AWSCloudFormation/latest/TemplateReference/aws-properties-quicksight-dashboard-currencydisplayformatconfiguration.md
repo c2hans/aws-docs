@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-currencydisplayformatconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DecimalPlacesConfiguration](#cfn-quicksight-dashboard-currencydisplayformatconfiguration-decimalplacesconfiguration)" : {{DecimalPlacesConfiguration}},
   "[NegativeValueConfiguration](#cfn-quicksight-dashboard-currencydisplayformatconfiguration-negativevalueconfiguration)" : {{NegativeValueConfiguration}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-currencydisplayformatconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DecimalPlacesConfiguration](#cfn-quicksight-dashboard-currencydisplayformatconfiguration-decimalplacesconfiguration): {{
     DecimalPlacesConfiguration}}
   [NegativeValueConfiguration](#cfn-quicksight-dashboard-currencydisplayformatconfiguration-negativevalueconfiguration): {{

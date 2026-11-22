@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-pluginvisualsortconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[PluginVisualTableQuerySort](#cfn-quicksight-dashboard-pluginvisualsortconfiguration-pluginvisualtablequerysort)" : {{PluginVisualTableQuerySort}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-pluginvisualsortconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [PluginVisualTableQuerySort](#cfn-quicksight-dashboard-pluginvisualsortconfiguration-pluginvisualtablequerysort): {{
     PluginVisualTableQuerySort}}
 ```

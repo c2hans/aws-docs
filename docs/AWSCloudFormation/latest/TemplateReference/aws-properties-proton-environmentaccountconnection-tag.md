@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-proton-environmentaccountconnection-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-proton-environmentaccountconnection-tag-key)" : {{String}},
   "[Value](#cfn-proton-environmentaccountconnection-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-proton-environmentaccountconnection-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-proton-environmentaccountconnection-tag-key): {{String}}
   [Value](#cfn-proton-environmentaccountconnection-tag-value): {{String}}
 ```

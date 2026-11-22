@@ -193,7 +193,7 @@ To use CloudFront to serve and distribute the video in your S3 bucket, you must 
 
 1. In the **Bucket policy** section, confirm that you see a statement similar to the following in the bucket policy text:
 
-   ```
+   ```json
    {
        "Version": "2008-10-17",
        "Id": "PolicyForCloudFrontPrivateContent",

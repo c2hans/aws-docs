@@ -40,7 +40,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Inves
 
 ****
 
-        ```
+        ```json
         {
             "Version":"2012-10-17",
             "Statement": {
@@ -67,7 +67,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Inves
 
 ****
 
-        ```
+        ```json
         {
             "Version":"2012-10-17",
             "Statement": [
@@ -120,7 +120,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Inves
 
 ****
 
-        ```
+        ```json
         {
             "Version":"2012-10-17",
             "Statement": {
@@ -160,7 +160,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Inves
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bcmdataexports-export-s3outputconfigurations-syntax.json"></a>
 
-```
+```json
 {
   "[Compression](#cfn-bcmdataexports-export-s3outputconfigurations-compression)" : {{String}},
   "[Format](#cfn-bcmdataexports-export-s3outputconfigurations-format)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bcmdataexports-export-s3outputconfigurations-syntax.yaml"></a>
 
-```
+```yaml
   [Compression](#cfn-bcmdataexports-export-s3outputconfigurations-compression): {{String}}
   [Format](#cfn-bcmdataexports-export-s3outputconfigurations-format): {{String}}
   [OutputType](#cfn-bcmdataexports-export-s3outputconfigurations-outputtype): {{String}}

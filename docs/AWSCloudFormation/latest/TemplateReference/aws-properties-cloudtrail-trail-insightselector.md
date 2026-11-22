@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudtrail-trail-insightselector-syntax.json"></a>
 
-```
+```json
 {
   "[EventCategories](#cfn-cloudtrail-trail-insightselector-eventcategories)" : {{[ String, ... ]}},
   "[InsightType](#cfn-cloudtrail-trail-insightselector-insighttype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudtrail-trail-insightselector-syntax.yaml"></a>
 
-```
+```yaml
   [EventCategories](#cfn-cloudtrail-trail-insightselector-eventcategories): {{
     - String}}
   [InsightType](#cfn-cloudtrail-trail-insightselector-insighttype): {{String}}

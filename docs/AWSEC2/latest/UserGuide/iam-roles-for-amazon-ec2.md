@@ -82,13 +82,13 @@ Instance identity roles can’t be used with other AWS services or features beca
 
 The instance identity role ARN takes the following format:
 
-```
+```bash
 arn:{{aws-partition}}:iam::{{account-number}}:assumed-role/aws:ec2-instance/{{instance-id}}
 ```
 
 For example:
 
-```
+```bash
 arn:{{aws}}:iam::{{0123456789012}}:assumed-role/aws:ec2-instance/{{i-1234567890abcdef0}}
 ```
 

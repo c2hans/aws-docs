@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/custom-header-Y
 
 Specify custom headers using the following YAML format:
 
-```
+```yaml
 customHeaders:
   - pattern: {{'*.json'}}
     headers:
@@ -22,7 +22,7 @@ customHeaders:
 
 For a monorepo, use the following YAML format:
 
-```
+```yaml
 applications:
   - appRoot: {{app1}}
     customHeaders:

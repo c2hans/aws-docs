@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-oauthclientapplication-identityprovidervpcconnectionproperties-syntax.json"></a>
 
-```
+```json
 {
   "[VpcConnectionArn](#cfn-quicksight-oauthclientapplication-identityprovidervpcconnectionproperties-vpcconnectionarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-oauthclientapplication-identityprovidervpcconnectionproperties-syntax.yaml"></a>
 
-```
+```yaml
   [VpcConnectionArn](#cfn-quicksight-oauthclientapplication-identityprovidervpcconnectionproperties-vpcconnectionarn): {{String}}
 ```
 

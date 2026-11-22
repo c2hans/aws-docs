@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elementalinference-feed-getoutput-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-elementalinference-feed-getoutput-description)" : {{String}},
   "[Name](#cfn-elementalinference-feed-getoutput-name)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elementalinference-feed-getoutput-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-elementalinference-feed-getoutput-description): {{String}}
   [Name](#cfn-elementalinference-feed-getoutput-name): {{String}}
   [OutputConfig](#cfn-elementalinference-feed-getoutput-outputconfig): {{

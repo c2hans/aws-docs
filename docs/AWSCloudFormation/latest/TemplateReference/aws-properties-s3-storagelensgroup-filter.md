@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-storagelensgroup-filter-syntax.json"></a>
 
-```
+```json
 {
   "[And](#cfn-s3-storagelensgroup-filter-and)" : {{And}},
   "[MatchAnyPrefix](#cfn-s3-storagelensgroup-filter-matchanyprefix)" : {{[ String, ... ]}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-storagelensgroup-filter-syntax.yaml"></a>
 
-```
+```yaml
   [And](#cfn-s3-storagelensgroup-filter-and): {{
     And}}
   [MatchAnyPrefix](#cfn-s3-storagelensgroup-filter-matchanyprefix): {{

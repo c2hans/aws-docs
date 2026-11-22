@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-emr-studiosessionmapping-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EMR::StudioSessionMapping",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-emr-studiosessionmapping-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EMR::StudioSessionMapping
 Properties:
   [IdentityName](#cfn-emr-studiosessionmapping-identityname): {{String}}

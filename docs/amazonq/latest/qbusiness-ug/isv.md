@@ -70,7 +70,7 @@ The ISV doesn't need to change their existing login flow.
 
 1. The ISV application calls the `CreateTokenWithIAM` API operation to get a token with an authorization code. The ISV needs to use the AWS Identity and Access Management (IAM) role that they created during the onboarding process with `tenantId` information in the tags like the following:
 
-   ```
+   ```bash
    aws sts assume-role \
          --role-arn ${your_iam_role} \
          --role-session-name test-session \
@@ -94,7 +94,7 @@ The ISV doesn't need to change their existing login flow.
 
    Using Python:
 
-   ```
+   ```python
    import json
    import base64
 
@@ -106,7 +106,7 @@ The ISV doesn't need to change their existing login flow.
 
 1. Call the [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) API with the extracted `sts:identity_context` and the ISV `tenantId` information.
 
-   ```
+   ```bash
    aws sts assume-role \
          --role-arn ${your_iam_role} \
          --role-session-name test-session \
@@ -116,7 +116,7 @@ The ISV doesn't need to change their existing login flow.
 
 1. Use the AWS Sig V4 credentials returned from the previous step to call `SearchRelevantContent` API.
 
-   ```
+   ```bash
    aws qbusiness search-relevant-content \
          --application-id ${qbusiness_application_id} \
          --query-text "What is Amazon Q?" \

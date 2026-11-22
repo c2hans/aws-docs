@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-appconfig-extensionassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppConfig::ExtensionAssociation",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-appconfig-extensionassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppConfig::ExtensionAssociation
 Properties:
   [ExtensionIdentifier](#cfn-appconfig-extensionassociation-extensionidentifier): {{String}}
@@ -123,7 +123,7 @@ An extension association defines which extension to associate with an AWS AppCon
 #### JSON
 <a name="aws-resource-appconfig-extensionassociation--examples--create_extension_association_example--json"></a>
 
-```
+```json
 {
   "Resources": {
     "BasicExtensionAssociation": {
@@ -156,7 +156,7 @@ An extension association defines which extension to associate with an AWS AppCon
 #### YAML
 <a name="aws-resource-appconfig-extensionassociation--examples--create_extension_association_example--yaml"></a>
 
-```
+```yaml
 Resources:
   BasicExtensionAssociation:
     Type: AWS::AppConfig::ExtensionAssociation

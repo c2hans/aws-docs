@@ -10,7 +10,7 @@ The `@amazon-connect/user` package of the Connect Customer SDK provides two clie
 
 To create either client, pass it the `provider` that `AmazonConnectApp.init` returns. For details, see [Initialize the Connect Customer SDK in your application for Connect Customer agent workspace](getting-started-initialize-sdk.md). This is the recommended option.
 
-```
+```typescript
 import { AmazonConnectApp } from "@amazon-connect/app";
 import { SettingsClient, UserClient } from "@amazon-connect/user";
 
@@ -26,7 +26,7 @@ const userClient = new UserClient(provider);
 
 The constructor argument has the type `ConnectClientConfig`, which is defined as follows:
 
-```
+```typescript
 type ConnectClientConfig =
   | AmazonConnectProvider
   | { context: ModuleContext; provider?: AmazonConnectProvider }

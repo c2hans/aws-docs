@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-c
 
 Returns the original (initial) contact id from which this contact was transferred in the Connect Customer agent workspace, or none if this is not an internal Connect transfer. This is typically a contact owned by another agent, thus this agent will not be able to manipulate it. It is for reference and association purposes only, and can be used to share data between transferred contacts externally if it is linked by originalContactId.
 
-```
+```typescript
 async getInitialContactId(contactId: string): Promise<string | undefined>
 ```
 
@@ -16,6 +16,6 @@ Requires an instance that is scoped to the contact that you pass in `contactId`,
 
  **Permissions required:**
 
-```
+```typescript
 Contact.Details.View
 ```

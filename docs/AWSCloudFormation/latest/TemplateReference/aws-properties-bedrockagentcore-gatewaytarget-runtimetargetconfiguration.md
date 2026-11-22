@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewaytarget-runtimetargetconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Arn](#cfn-bedrockagentcore-gatewaytarget-runtimetargetconfiguration-arn)" : {{String}},
   "[Qualifier](#cfn-bedrockagentcore-gatewaytarget-runtimetargetconfiguration-qualifier)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewaytarget-runtimetargetconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Arn](#cfn-bedrockagentcore-gatewaytarget-runtimetargetconfiguration-arn): {{String}}
   [Qualifier](#cfn-bedrockagentcore-gatewaytarget-runtimetargetconfiguration-qualifier): {{String}}
   [Schema](#cfn-bedrockagentcore-gatewaytarget-runtimetargetconfiguration-schema): {{

@@ -12,7 +12,7 @@ The following code example shows how to enable a bucket to send S3 event notific
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/s3#code-examples).
 
-```
+```java
     /** This method configures a bucket to send events to AWS EventBridge and creates a rule
      * to route the S3 object created events to a topic and a queue.
      *

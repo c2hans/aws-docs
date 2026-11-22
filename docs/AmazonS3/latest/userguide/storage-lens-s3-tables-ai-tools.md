@@ -77,7 +77,7 @@ For more information about installing the MCP Server, see the [AWS S3 Tables MCP
 
 Create or update your Kiro MCP configuration file at `~/.kiro/settings/mcp.json` with the following content:
 
-```
+```json
 {
   "mcpServers": {
     "awslabs.s3-tables-mcp-server": {

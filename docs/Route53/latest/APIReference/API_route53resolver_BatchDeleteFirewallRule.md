@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 
 # BatchDeleteFirewallRule
 
-Deletes multiple DNS Firewall rules from the specified rule group.
+Deletes multiple DNS Firewall rules from the specified rule group. Deleting an AutoAllowlist rule also deletes its managed domain list and the domains that you allowed.
 
 ## Request Syntax
 <a name="API_route53resolver_BatchDeleteFirewallRule_RequestSyntax"></a>

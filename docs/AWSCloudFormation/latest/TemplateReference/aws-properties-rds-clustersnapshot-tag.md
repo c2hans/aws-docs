@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rds-clustersnapshot-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-rds-clustersnapshot-tag-key)" : {{String}},
   "[Value](#cfn-rds-clustersnapshot-tag-value)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rds-clustersnapshot-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-rds-clustersnapshot-tag-key): {{String}}
   [Value](#cfn-rds-clustersnapshot-tag-value): {{String}}
 ```

@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-qbusiness-dataaccessor-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::QBusiness::DataAccessor",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-qbusiness-dataaccessor-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::QBusiness::DataAccessor
 Properties:
   [ActionConfigurations](#cfn-qbusiness-dataaccessor-actionconfigurations): {{

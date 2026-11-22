@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-cluster-horizontalpodautoscalercontrollerconfig-syntax.json"></a>
 
-```
+```json
 {
   "[HorizontalPodAutoscalerSyncPeriod](#cfn-eks-cluster-horizontalpodautoscalercontrollerconfig-horizontalpodautoscalersyncperiod)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-cluster-horizontalpodautoscalercontrollerconfig-syntax.yaml"></a>
 
-```
+```yaml
   [HorizontalPodAutoscalerSyncPeriod](#cfn-eks-cluster-horizontalpodautoscalercontrollerconfig-horizontalpodautoscalersyncperiod): {{String}}
 ```
 

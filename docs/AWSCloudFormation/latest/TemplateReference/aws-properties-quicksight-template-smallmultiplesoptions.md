@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-smallmultiplesoptions-syntax.json"></a>
 
-```
+```json
 {
   "[MaxVisibleColumns](#cfn-quicksight-template-smallmultiplesoptions-maxvisiblecolumns)" : {{Number}},
   "[MaxVisibleRows](#cfn-quicksight-template-smallmultiplesoptions-maxvisiblerows)" : {{Number}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-smallmultiplesoptions-syntax.yaml"></a>
 
-```
+```yaml
   [MaxVisibleColumns](#cfn-quicksight-template-smallmultiplesoptions-maxvisiblecolumns): {{Number}}
   [MaxVisibleRows](#cfn-quicksight-template-smallmultiplesoptions-maxvisiblerows): {{Number}}
   [PanelConfiguration](#cfn-quicksight-template-smallmultiplesoptions-panelconfiguration): {{

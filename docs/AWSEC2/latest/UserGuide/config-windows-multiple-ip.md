@@ -35,7 +35,7 @@ When you configure static IP addressing in your instance, the IP address must ma
 
    1. Run the following command in PowerShell:
 
-     ```
+     ```bash
      ipconfig /all
      ```
 
@@ -66,7 +66,7 @@ When you configure static IP addressing in your instance, the IP address must ma
 
 1. Open the **Network and Sharing Center** by running the following command in PowerShell:
 
-   ```
+   ```PowerShell
    & $env:SystemRoot\system32\control.exe ncpa.cpl
    ```
 

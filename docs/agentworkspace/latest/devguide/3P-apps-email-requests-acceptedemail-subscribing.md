@@ -14,7 +14,7 @@ onAcceptedEmail(handler: SubscriptionHandler<EmailContactId>, contactId?: string
 
  **Usage**
 
-```
+```typescript
 const handler: SubscriptionHandler<EmailContactId> = async (emailContact: EmailContactId) => {
    const { contactId } = emailContact;
    console.log(`Accepted Email Contact with Id: ${contactId}`);

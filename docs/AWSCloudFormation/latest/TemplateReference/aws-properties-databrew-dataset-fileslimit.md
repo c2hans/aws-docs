@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-databrew-dataset-fileslimit-syntax.json"></a>
 
-```
+```json
 {
   "[MaxFiles](#cfn-databrew-dataset-fileslimit-maxfiles)" : {{Integer}},
   "[Order](#cfn-databrew-dataset-fileslimit-order)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-databrew-dataset-fileslimit-syntax.yaml"></a>
 
-```
+```yaml
   [MaxFiles](#cfn-databrew-dataset-fileslimit-maxfiles): {{Integer}}
   [Order](#cfn-databrew-dataset-fileslimit-order): {{String}}
   [OrderedBy](#cfn-databrew-dataset-fileslimit-orderedby): {{String}}

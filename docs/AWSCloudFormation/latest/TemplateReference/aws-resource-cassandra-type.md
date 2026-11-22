@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cassandra-type-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Cassandra::Type",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cassandra-type-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Cassandra::Type
 Properties:
   [Fields](#cfn-cassandra-type-fields): {{
@@ -119,7 +119,7 @@ The following example creates a new type named `my_udt`.
 #### JSON
 <a name="aws-resource-cassandra-type--examples--Create_a_new_UDT--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -150,7 +150,7 @@ The following example creates a new type named `my_udt`.
 #### YAML
 <a name="aws-resource-cassandra-type--examples--Create_a_new_UDT--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   MyNewKeyspaceResource:
@@ -176,7 +176,7 @@ The following example creates a new UDT named `parent_udt` that uses the nested 
 #### JSON
 <a name="aws-resource-cassandra-type--examples--Create_a_new_UDT_with_a_nested_UDT--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -225,7 +225,7 @@ The following example creates a new UDT named `parent_udt` that uses the nested 
 #### YAML
 <a name="aws-resource-cassandra-type--examples--Create_a_new_UDT_with_a_nested_UDT--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   MyNewKeyspaceResource:
@@ -262,7 +262,7 @@ The following example creates a new table called `my_table` that uses a UDT name
 #### JSON
 <a name="aws-resource-cassandra-type--examples--Create_a_new_table_that_uses_UDTs--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -317,7 +317,7 @@ The following example creates a new table called `my_table` that uses a UDT name
 #### YAML
 <a name="aws-resource-cassandra-type--examples--Create_a_new_table_that_uses_UDTs--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   MyNewKeyspaceResource:

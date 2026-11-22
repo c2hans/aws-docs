@@ -35,7 +35,7 @@ For data administrator Account A to share a Lambda function with data analyst Ac
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -63,7 +63,7 @@ For data administrator Account A to share a Lambda function with data analyst Ac
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -89,7 +89,7 @@ For data administrator Account A to share a Lambda function with data analyst Ac
 
 1. If the Lambda function is encrypting the spill bucket with a AWS KMS key instead of the default encryption offered by the federation SDK, the AWS KMS key policy in Account A must grant access to the user in Account B, as in the following example.
 
-   ```
+   ```json
    {
        "Sid": "Allow use of the key",
        "Effect": "Allow",
@@ -111,7 +111,7 @@ For Account A to share its connector with Account B, Account B must create a rol
 
    The trust relationship should have a principal object in which the key is `AWS` and the value is the ARN of Account A, as in the following example.
 
-   ```
+   ```json
    ...
    "Principal":
    {
@@ -122,7 +122,7 @@ For Account A to share its connector with Account B, Account B must create a rol
 
 1. Also in Account B, create a policy like the following that allows the `CreateDataCatalog` action.
 
-   ```
+   ```json
    {
     "Effect": "Allow",
     "Action": "athena:CreateDataCatalog",

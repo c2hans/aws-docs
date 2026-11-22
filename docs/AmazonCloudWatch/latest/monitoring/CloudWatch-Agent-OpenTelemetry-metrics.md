@@ -23,7 +23,7 @@ To send metrics to CloudWatch or Amazon Managed Service for Prometheus, add the 
 **Note**
  If you are running the agent in containerized environments and sending telemetry from outside the agent container's network, make sure to specify the endpoint as `0.0.0.0` instead of the default endpoint `127.0.0.1`.
 
-```
+```JSON
 {
   "metrics": {
     "metrics_collected": {
@@ -38,7 +38,7 @@ To send metrics to CloudWatch or Amazon Managed Service for Prometheus, add the 
 
 To send metrics to Amazon CloudWatch Logs using the Embedded metric format (EMF), add the `otlp` section under `metrics_collected` within the `logs` section. This sends the EMF logs by default to the `/aws/cwagent` log group and a generated log stream. The metrics are extracted into the `CWAgent` namespace by default. The following example shows a configuration that sends metrics as EMF logs to CloudWatch Logs:
 
-```
+```JSON
 {
   "logs": {
     "metrics_collected": {
@@ -53,7 +53,7 @@ To send metrics to Amazon CloudWatch Logs using the Embedded metric format (EMF)
 
 To send traces to AWS X-Ray, add the `otlp` section under `traces_collected` within the `traces` section. The following example shows a configuration that sends traces to X-Ray:
 
-```
+```JSON
 {
   "traces": {
     "traces_collected": {

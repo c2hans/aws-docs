@@ -153,6 +153,6 @@ public class DualStackEndpointsExample2 {
 
 If you're using the AWS SDK for Java 2.x on Windows, you might have to set the following Java virtual machine (JVM) property:
 
-```
+```java
 java.net.preferIPv6Addresses=true
 ```

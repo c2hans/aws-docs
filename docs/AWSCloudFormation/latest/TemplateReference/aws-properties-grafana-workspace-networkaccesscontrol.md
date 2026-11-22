@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-grafana-workspace-networkaccesscontrol-syntax.json"></a>
 
-```
+```json
 {
   "[PrefixListIds](#cfn-grafana-workspace-networkaccesscontrol-prefixlistids)" : {{[ String, ... ]}},
   "[VpceIds](#cfn-grafana-workspace-networkaccesscontrol-vpceids)" : {{[ String, ... ]}}
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-grafana-workspace-networkaccesscontrol-syntax.yaml"></a>
 
-```
+```yaml
   [PrefixListIds](#cfn-grafana-workspace-networkaccesscontrol-prefixlistids): {{
     - String}}
   [VpceIds](#cfn-grafana-workspace-networkaccesscontrol-vpceids): {{

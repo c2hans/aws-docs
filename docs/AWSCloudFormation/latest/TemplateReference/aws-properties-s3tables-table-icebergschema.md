@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3tables-table-icebergschema-syntax.json"></a>
 
-```
+```json
 {
   "[SchemaFieldList](#cfn-s3tables-table-icebergschema-schemafieldlist)" : {{[ SchemaField, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3tables-table-icebergschema-syntax.yaml"></a>
 
-```
+```yaml
   [SchemaFieldList](#cfn-s3tables-table-icebergschema-schemafieldlist): {{
     - SchemaField}}
 ```

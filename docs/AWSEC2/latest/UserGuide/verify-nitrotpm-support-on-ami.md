@@ -14,7 +14,7 @@ The Amazon EC2 console does not display `TpmSupport`.
 **To verify that NitroTPM is enabled**
 Use the [describe-images](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command.
 
-```
+```bash
 aws ec2 describe-images \
     --image-ids {{ami-0abcdef1234567890}} \
     --query Images[*].TpmSupport
@@ -22,7 +22,7 @@ aws ec2 describe-images \
 
 If NitroTPM is enabled for the AMI, the output is as follows. If TPM is not enabled, the output is empty.
 
-```
+```JSON
 [
     "v2.0"
 ]
@@ -30,7 +30,7 @@ If NitroTPM is enabled for the AMI, the output is as follows. If TPM is not enab
 
 Alternatively, if you are the AMI owner, you can use the [describe-image-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-image-attribute.html) command with the `tpmSupport` attribute.
 
-```
+```bash
 aws ec2 describe-image-attribute \
     --image-id {{ami-0abcdef1234567890}} \
     --attribute tpmSupport
@@ -38,7 +38,7 @@ aws ec2 describe-image-attribute \
 
  The following is example output.
 
-```
+```JSON
 {
     "ImageId": "{{ami-0abcdef1234567890}}",
     "TpmSupport": {
@@ -50,7 +50,7 @@ aws ec2 describe-image-attribute \
 **To find AMIs with NitroTPM enabled**
 The following example lists the IDs of the AMIs that you own with NitroTPM enabled.
 
-```
+```bash
 aws ec2 describe-images \
     --owners self \
     --filters Name=tpm-support,Values=v2.0 \
@@ -63,14 +63,14 @@ aws ec2 describe-images \
 **To verify that NitroTPM is enabled**
 Use the [Get-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Image.html) cmdlet.
 
-```
+```powershell
 Get-EC2Image `
     -ImageId {{ami-0abcdef1234567890}} | Select TpmSupport
 ```
 
 If NitroTPM is enabled for the AMI, the output is as follows. If TPM is not enabled, the output is empty.
 
-```
+```bash
 TpmSupport
 ----------
 v2.0
@@ -78,7 +78,7 @@ v2.0
 
 Alternatively, if you are the AMI owner, you can use the [Get-EC2ImageAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2ImageAttribute.html) cmdlet with the `tpmSupport` attribute.
 
-```
+```powershell
 Get-EC2ImageAttribute `
     -ImageId {{ami-0abcdef1234567890}} `
     -Attribute tpmSupport
@@ -87,7 +87,7 @@ Get-EC2ImageAttribute `
 **To find AMIs with NitroTPM enabled**
 The following example lists the IDs of the AMIs that you own with NitroTPM enabled.
 
-```
+```powershell
 Get-EC2Image `
     -Owner self `
     -Filter @{Name="tpm-support; Values="v2.0"} | Select ImageId

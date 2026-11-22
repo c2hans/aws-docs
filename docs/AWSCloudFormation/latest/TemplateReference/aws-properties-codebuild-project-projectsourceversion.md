@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codebuild-project-projectsourceversion-syntax.json"></a>
 
-```
+```json
 {
   "[SourceIdentifier](#cfn-codebuild-project-projectsourceversion-sourceidentifier)" : {{String}},
   "[SourceVersion](#cfn-codebuild-project-projectsourceversion-sourceversion)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codebuild-project-projectsourceversion-syntax.yaml"></a>
 
-```
+```yaml
   [SourceIdentifier](#cfn-codebuild-project-projectsourceversion-sourceidentifier): {{String}}
   [SourceVersion](#cfn-codebuild-project-projectsourceversion-sourceversion): {{String}}
 ```

@@ -105,7 +105,7 @@ In this example, the response includes one result and there aren't additional on
 #### Sample Request
 <a name="API_ListVpcConnectors_Example_1_Request"></a>
 
-```
+```json
 $ aws apprunner list-vpc-connectors --cli-input-json "`cat`"
 {
   "MaxResults": 5
@@ -115,7 +115,7 @@ $ aws apprunner list-vpc-connectors --cli-input-json "`cat`"
 #### Sample Response
 <a name="API_ListVpcConnectors_Example_1_Response"></a>
 
-```
+```json
 {
   "VpcConnectors": [
     {

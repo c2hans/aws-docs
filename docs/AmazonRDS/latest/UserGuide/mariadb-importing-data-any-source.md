@@ -17,7 +17,7 @@ The speed and efficiency of this procedure depends on keeping the size of the fi
 
 On Unix-like systems (including Linux), use the `split` command. For example, the following command splits the `sales.csv` file into multiple files of less than 1 GiB, splitting only at line breaks (-C 1024m). The names of the new files include ascending numerical suffixes. The following command produces files with names such as `sales.part_00` and `sales.part_01`.
 
-```
+```bash
 split -C 1024m -d sales.csv sales.part_
 ```
 

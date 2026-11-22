@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-datasetidentifierdeclaration-syntax.json"></a>
 
-```
+```json
 {
   "[DataSetArn](#cfn-quicksight-dashboard-datasetidentifierdeclaration-datasetarn)" : {{String}},
   "[Identifier](#cfn-quicksight-dashboard-datasetidentifierdeclaration-identifier)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-datasetidentifierdeclaration-syntax.yaml"></a>
 
-```
+```yaml
   [DataSetArn](#cfn-quicksight-dashboard-datasetidentifierdeclaration-datasetarn): {{String}}
   [Identifier](#cfn-quicksight-dashboard-datasetidentifierdeclaration-identifier): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotwireless-wirelessdevice-application-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationName](#cfn-iotwireless-wirelessdevice-application-destinationname)" : {{String}},
   "[FPort](#cfn-iotwireless-wirelessdevice-application-fport)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotwireless-wirelessdevice-application-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationName](#cfn-iotwireless-wirelessdevice-application-destinationname): {{String}}
   [FPort](#cfn-iotwireless-wirelessdevice-application-fport): {{Integer}}
   [Type](#cfn-iotwireless-wirelessdevice-application-type): {{String}}

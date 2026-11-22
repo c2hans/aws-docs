@@ -28,7 +28,7 @@ If you have multiple failed event notifications due to deleted destinations you 
 
 By default, notifications aren't enabled for any type of event. Therefore, the *notification* subresource initially stores an empty configuration.
 
-```
+```xml
 <NotificationConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
 </NotificationConfiguration>
 ```
@@ -38,7 +38,7 @@ To enable notifications for events of specific types, you replace the XML with t
 **To publish event messages to an SQS queue**
 To set an SQS queue as the notification destination for one or more event types, add the `QueueConfiguration`.
 
-```
+```xml
 <NotificationConfiguration>
   <QueueConfiguration>
     <Id>{{optional-id-string}}</Id>
@@ -54,7 +54,7 @@ To set an SQS queue as the notification destination for one or more event types,
 **To publish event messages to an SNS topic**
 To set an SNS topic as the notification destination for specific event types, add the `TopicConfiguration`.
 
-```
+```xml
 <NotificationConfiguration>
   <TopicConfiguration>
      <Id>{{optional-id-string}}</Id>
@@ -70,7 +70,7 @@ To set an SNS topic as the notification destination for specific event types, ad
 **To invoke the AWS Lambda function and provide an event message as an argument**
 To set a Lambda function as the notification destination for specific event types, add the `CloudFunctionConfiguration`.
 
-```
+```xml
 <NotificationConfiguration>
   <CloudFunctionConfiguration>
      <Id>{{optional-id-string}}</Id>

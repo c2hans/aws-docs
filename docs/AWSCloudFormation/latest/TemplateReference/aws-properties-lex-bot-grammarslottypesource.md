@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-grammarslottypesource-syntax.json"></a>
 
-```
+```json
 {
   "[KmsKeyArn](#cfn-lex-bot-grammarslottypesource-kmskeyarn)" : {{String}},
   "[S3BucketName](#cfn-lex-bot-grammarslottypesource-s3bucketname)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-grammarslottypesource-syntax.yaml"></a>
 
-```
+```yaml
   [KmsKeyArn](#cfn-lex-bot-grammarslottypesource-kmskeyarn): {{String}}
   [S3BucketName](#cfn-lex-bot-grammarslottypesource-s3bucketname): {{String}}
   [S3ObjectKey](#cfn-lex-bot-grammarslottypesource-s3objectkey): {{String}}

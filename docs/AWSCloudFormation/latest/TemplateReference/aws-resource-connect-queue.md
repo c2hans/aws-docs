@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-connect-queue-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Connect::Queue",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-connect-queue-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Connect::Queue
 Properties:
   [AdditionalEmailAddresses](#cfn-connect-queue-additionalemailaddresses): {{

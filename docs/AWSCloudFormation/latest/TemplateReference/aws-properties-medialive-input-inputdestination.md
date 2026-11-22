@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-input-inputdestination-syntax.json"></a>
 
-```
+```json
 {
   "[Ip](#cfn-medialive-input-inputdestination-ip)" : {{String}},
   "[Network](#cfn-medialive-input-inputdestination-network)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-input-inputdestination-syntax.yaml"></a>
 
-```
+```yaml
   [Ip](#cfn-medialive-input-inputdestination-ip): {{String}}
   [Network](#cfn-medialive-input-inputdestination-network): {{String}}
   [NetworkRoutes](#cfn-medialive-input-inputdestination-networkroutes): {{

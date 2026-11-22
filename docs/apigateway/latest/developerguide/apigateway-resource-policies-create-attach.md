@@ -153,7 +153,7 @@ In your resource policy, if you set the Principal to an AWS principal, such as t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

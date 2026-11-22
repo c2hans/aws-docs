@@ -15,7 +15,7 @@ The notification configurations you create with AWS User Notifications do not co
 
 The following example of an advanced filter matches an alarm state change from OK to ALARM on the alarm named `ServerCpuTooHigh`.
 
-```
+```json
 {
 "detail": {
     "alarmName": ["ServerCpuTooHigh"],
@@ -221,7 +221,7 @@ This section lists the schemas of the notifications sent to Amazon SNS topics wh
 
 **Schema when a metric alarm changes state**
 
-```
+```json
 {
   "AlarmName": "string",
   "AlarmDescription": "string",
@@ -268,7 +268,7 @@ This section lists the schemas of the notifications sent to Amazon SNS topics wh
 
 **Schema when a composite alarm changes state**
 
-```
+```json
 {
   "AlarmName": "string",
   "AlarmDescription": "string",
@@ -296,7 +296,7 @@ This section lists the schemas of the notifications sent to Amazon SNS topics wh
 
 **Schema when a log alarm changes state**
 
-```
+```json
 {
   "AlarmName": "string",
   "AlarmDescription": "string",

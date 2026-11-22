@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-knowledgebase-storageconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MongoDbAtlasConfiguration](#cfn-bedrock-knowledgebase-storageconfiguration-mongodbatlasconfiguration)" : {{MongoDbAtlasConfiguration}},
   "[NeptuneAnalyticsConfiguration](#cfn-bedrock-knowledgebase-storageconfiguration-neptuneanalyticsconfiguration)" : {{NeptuneAnalyticsConfiguration}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-knowledgebase-storageconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MongoDbAtlasConfiguration](#cfn-bedrock-knowledgebase-storageconfiguration-mongodbatlasconfiguration): {{
     MongoDbAtlasConfiguration}}
   [NeptuneAnalyticsConfiguration](#cfn-bedrock-knowledgebase-storageconfiguration-neptuneanalyticsconfiguration): {{

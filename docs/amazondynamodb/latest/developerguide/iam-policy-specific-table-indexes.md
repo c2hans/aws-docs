@@ -11,7 +11,7 @@ The following policy grants permissions for data modification actions on a Dynam
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

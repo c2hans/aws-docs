@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-runtime-customjwtauthorizerconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AllowedAudience](#cfn-bedrockagentcore-runtime-customjwtauthorizerconfiguration-allowedaudience)" : {{[ String, ... ]}},
   "[AllowedClients](#cfn-bedrockagentcore-runtime-customjwtauthorizerconfiguration-allowedclients)" : {{[ String, ... ]}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-runtime-customjwtauthorizerconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AllowedAudience](#cfn-bedrockagentcore-runtime-customjwtauthorizerconfiguration-allowedaudience): {{
     - String}}
   [AllowedClients](#cfn-bedrockagentcore-runtime-customjwtauthorizerconfiguration-allowedclients): {{

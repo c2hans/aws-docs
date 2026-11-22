@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-rule-slatargetfieldvalue-syntax.json"></a>
 
-```
+```json
 {
   "[StringValue](#cfn-connect-rule-slatargetfieldvalue-stringvalue)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-rule-slatargetfieldvalue-syntax.yaml"></a>
 
-```
+```yaml
   [StringValue](#cfn-connect-rule-slatargetfieldvalue-stringvalue): {{
     String}}
 ```

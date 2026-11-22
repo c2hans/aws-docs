@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-agentspace-operatorapp-syntax.json"></a>
 
-```
+```json
 {
   "[Iam](#cfn-devopsagent-agentspace-operatorapp-iam)" : {{IamAuthConfiguration}},
   "[Idc](#cfn-devopsagent-agentspace-operatorapp-idc)" : {{IdcAuthConfiguration}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-agentspace-operatorapp-syntax.yaml"></a>
 
-```
+```yaml
   [Iam](#cfn-devopsagent-agentspace-operatorapp-iam): {{
     IamAuthConfiguration}}
   [Idc](#cfn-devopsagent-agentspace-operatorapp-idc): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesis-channel-streamconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[RecordConfiguration](#cfn-kinesis-channel-streamconfiguration-recordconfiguration)" : {{RecordConfiguration}},
   "[StreamARN](#cfn-kinesis-channel-streamconfiguration-streamarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesis-channel-streamconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [RecordConfiguration](#cfn-kinesis-channel-streamconfiguration-recordconfiguration): {{
     RecordConfiguration}}
   [StreamARN](#cfn-kinesis-channel-streamconfiguration-streamarn): {{String}}

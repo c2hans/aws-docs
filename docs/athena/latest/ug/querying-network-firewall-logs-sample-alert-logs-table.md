@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-network-firewa
 
 1. Modify the following sample DDL statement to conform to the structure of your alert log. You may need to update the statement to include the columns for the latest version of the logs. For more information, see [Contents of a firewall log](https://docs.aws.amazon.com/network-firewall/latest/developerguide/firewall-logging.html#firewall-logging-contents) in the *AWS Network Firewall Developer Guide*.
 
-   ```
+   ```sql
    CREATE EXTERNAL TABLE network_firewall_alert_logs (
      firewall_name string,
      availability_zone string,
@@ -72,7 +72,7 @@ The query uses aliases to create output column headings that show the `struct` t
 
 Remember to modify column names and `struct` references based on your table definition and on the fields that you want in the query result.
 
-```
+```sql
 SELECT
   firewall_name,
   availability_zone,

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-accountaccess-entitlement-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AccountAccess::Entitlement",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-accountaccess-entitlement-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AccountAccess::Entitlement
 Properties:
   [ApplicationArn](#cfn-accountaccess-entitlement-applicationarn): {{String}}

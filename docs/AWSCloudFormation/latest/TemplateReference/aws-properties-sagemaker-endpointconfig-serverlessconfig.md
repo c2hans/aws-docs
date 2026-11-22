@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-endpointconfig-serverlessconfig-syntax.json"></a>
 
-```
+```json
 {
   "[MaxConcurrency](#cfn-sagemaker-endpointconfig-serverlessconfig-maxconcurrency)" : {{Integer}},
   "[MemorySizeInMB](#cfn-sagemaker-endpointconfig-serverlessconfig-memorysizeinmb)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-endpointconfig-serverlessconfig-syntax.yaml"></a>
 
-```
+```yaml
   [MaxConcurrency](#cfn-sagemaker-endpointconfig-serverlessconfig-maxconcurrency): {{Integer}}
   [MemorySizeInMB](#cfn-sagemaker-endpointconfig-serverlessconfig-memorysizeinmb): {{Integer}}
   [ProvisionedConcurrency](#cfn-sagemaker-endpointconfig-serverlessconfig-provisionedconcurrency): {{Integer}}

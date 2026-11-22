@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-agent-agentcollaborator-syntax.json"></a>
 
-```
+```json
 {
   "[AgentDescriptor](#cfn-bedrock-agent-agentcollaborator-agentdescriptor)" : {{AgentDescriptor}},
   "[CollaborationInstruction](#cfn-bedrock-agent-agentcollaborator-collaborationinstruction)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-agent-agentcollaborator-syntax.yaml"></a>
 
-```
+```yaml
   [AgentDescriptor](#cfn-bedrock-agent-agentcollaborator-agentdescriptor): {{
     AgentDescriptor}}
   [CollaborationInstruction](#cfn-bedrock-agent-agentcollaborator-collaborationinstruction): {{String}}

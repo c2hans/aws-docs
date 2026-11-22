@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelpackage-additionalinferencespecificationdefinition-syntax.json"></a>
 
-```
+```json
 {
   "[Containers](#cfn-sagemaker-modelpackage-additionalinferencespecificationdefinition-containers)" : {{[ ModelPackageContainerDefinition, ... ]}},
   "[Description](#cfn-sagemaker-modelpackage-additionalinferencespecificationdefinition-description)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelpackage-additionalinferencespecificationdefinition-syntax.yaml"></a>
 
-```
+```yaml
   [Containers](#cfn-sagemaker-modelpackage-additionalinferencespecificationdefinition-containers): {{
     - ModelPackageContainerDefinition}}
   [Description](#cfn-sagemaker-modelpackage-additionalinferencespecificationdefinition-description): {{String}}

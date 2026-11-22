@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-wellarchitected-agentprofile-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::WellArchitected::AgentProfile",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-wellarchitected-agentprofile-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::WellArchitected::AgentProfile
 Properties:
   [AggregationConfiguration](#cfn-wellarchitected-agentprofile-aggregationconfiguration): {{

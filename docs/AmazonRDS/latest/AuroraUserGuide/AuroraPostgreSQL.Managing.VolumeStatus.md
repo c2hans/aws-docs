@@ -25,7 +25,7 @@ The `aurora_show_volume_status()` function is available for Aurora PostgreSQL ve
 
 **Example**
 
-```
+```sql
 customer_database=> SELECT * FROM aurora_show_volume_status();
  disks | nodes
 -------+-------

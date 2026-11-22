@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchservice-domain-aimloptions-syntax.json"></a>
 
-```
+```json
 {
   "[S3VectorsEngine](#cfn-opensearchservice-domain-aimloptions-s3vectorsengine)" : {{S3VectorsEngine}},
   "[ServerlessVectorAcceleration](#cfn-opensearchservice-domain-aimloptions-serverlessvectoracceleration)" : {{ServerlessVectorAcceleration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchservice-domain-aimloptions-syntax.yaml"></a>
 
-```
+```yaml
   [S3VectorsEngine](#cfn-opensearchservice-domain-aimloptions-s3vectorsengine): {{
     S3VectorsEngine}}
   [ServerlessVectorAcceleration](#cfn-opensearchservice-domain-aimloptions-serverlessvectoracceleration): {{

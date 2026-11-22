@@ -22,7 +22,7 @@ To create an IAM policy using the IAM console, perform the following steps.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

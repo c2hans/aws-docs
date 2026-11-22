@@ -45,7 +45,7 @@ Consider implementing all three access controls on an Amazon EFS file system for
 
 The following task definition snippet shows how to mount an Amazon EFS file system using an access point.
 
-```
+```JSON
 "volumes": [
     {
       "efsVolumeConfiguration": {

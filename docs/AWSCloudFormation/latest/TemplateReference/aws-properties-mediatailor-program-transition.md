@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-program-transition-syntax.json"></a>
 
-```
+```json
 {
   "[DurationMillis](#cfn-mediatailor-program-transition-durationmillis)" : {{Integer}},
   "[RelativePosition](#cfn-mediatailor-program-transition-relativeposition)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-program-transition-syntax.yaml"></a>
 
-```
+```yaml
   [DurationMillis](#cfn-mediatailor-program-transition-durationmillis): {{Integer}}
   [RelativePosition](#cfn-mediatailor-program-transition-relativeposition): {{String}}
   [RelativeProgram](#cfn-mediatailor-program-transition-relativeprogram): {{String}}

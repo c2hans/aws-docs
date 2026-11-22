@@ -94,7 +94,7 @@ Updates a `RouteResponse`.
 #### PATCH schema
 <a name="apis-apiid-routes-routeid-routeresponses-routeresponseid-request-body-patch-example"></a>
 
-```
+```json
 {
   "routeResponseKey": "string",
   "responseParameters": {
@@ -111,7 +111,7 @@ Updates a `RouteResponse`.
 #### RouteResponse schema
 <a name="apis-apiid-routes-routeid-routeresponses-routeresponseid-response-body-routeresponse-example"></a>
 
-```
+```json
 {
   "routeResponseId": "string",
   "routeResponseKey": "string",
@@ -126,7 +126,7 @@ Updates a `RouteResponse`.
 #### BadRequestException schema
 <a name="apis-apiid-routes-routeid-routeresponses-routeresponseid-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -135,7 +135,7 @@ Updates a `RouteResponse`.
 #### NotFoundException schema
 <a name="apis-apiid-routes-routeid-routeresponses-routeresponseid-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -145,7 +145,7 @@ Updates a `RouteResponse`.
 #### ConflictException schema
 <a name="apis-apiid-routes-routeid-routeresponses-routeresponseid-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -154,7 +154,7 @@ Updates a `RouteResponse`.
 #### LimitExceededException schema
 <a name="apis-apiid-routes-routeid-routeresponses-routeresponseid-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

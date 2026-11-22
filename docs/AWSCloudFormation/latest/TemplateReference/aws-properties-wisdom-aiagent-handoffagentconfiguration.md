@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-aiagent-handoffagentconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AgentTarget](#cfn-wisdom-aiagent-handoffagentconfiguration-agenttarget)" : {{AgentTarget}},
   "[AudioStreamingEnabled](#cfn-wisdom-aiagent-handoffagentconfiguration-audiostreamingenabled)" : {{Boolean}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-aiagent-handoffagentconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AgentTarget](#cfn-wisdom-aiagent-handoffagentconfiguration-agenttarget): {{
     AgentTarget}}
   [AudioStreamingEnabled](#cfn-wisdom-aiagent-handoffagentconfiguration-audiostreamingenabled): {{Boolean}}

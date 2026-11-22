@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-hoursofoperation-recurrencepattern-syntax.json"></a>
 
-```
+```json
 {
   "[ByMonth](#cfn-connect-hoursofoperation-recurrencepattern-bymonth)" : {{[ Integer, ... ]}},
   "[ByMonthDay](#cfn-connect-hoursofoperation-recurrencepattern-bymonthday)" : {{[ Integer, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-hoursofoperation-recurrencepattern-syntax.yaml"></a>
 
-```
+```yaml
   [ByMonth](#cfn-connect-hoursofoperation-recurrencepattern-bymonth): {{
     - Integer}}
   [ByMonthDay](#cfn-connect-hoursofoperation-recurrencepattern-bymonthday): {{

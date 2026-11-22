@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-multiplex-tags-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-medialive-multiplex-tags-key)" : {{String}},
   "[Value](#cfn-medialive-multiplex-tags-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-multiplex-tags-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-medialive-multiplex-tags-key): {{String}}
   [Value](#cfn-medialive-multiplex-tags-value): {{String}}
 ```

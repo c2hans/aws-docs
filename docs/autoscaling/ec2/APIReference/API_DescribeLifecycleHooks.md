@@ -67,7 +67,7 @@ https://autoscaling.amazonaws.com/?Action=DescribeLifecycleHooks
 #### Sample Response
 <a name="API_DescribeLifecycleHooks_Example_1_Response"></a>
 
-```
+```xml
 <DescribeLifecycleHooksResponse xmlns="https://autoscaling.amazonaws.com/doc/2011-01-01/">
   <DescribeLifecycleHooksResult>
     <LifecycleHooks>

@@ -15,7 +15,7 @@ To understand the details of these responses, see:
 
 If the request is successful, the main response element is `x-amzn-RequestId`, which contains the Universal Unique Identifier (UUID) of the request, as well as other appended response field(s). For example, the following [`CreateQueue`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_CreateQueue.html) response contains the `QueueUrl` field, which, in turn, contains the URL of the created queue.
 
-```
+```xml
 HTTP/1.1 200 OK
 x-amzn-RequestId: <requestId>
 Content-Length: <PayloadSizeBytes>
@@ -37,7 +37,7 @@ In the response body, `"__type"` indicates other error details, and `Message` in
 
 The following is an example error response in JSON format:
 
-```
+```xml
 HTTP/1.1 400 Bad Request
 x-amzn-RequestId: 66916324-67ca-54bb-a410-3f567a7a0571
 x-amzn-query-error: AWS.SimpleQueueService.NonExistentQueue;Sender

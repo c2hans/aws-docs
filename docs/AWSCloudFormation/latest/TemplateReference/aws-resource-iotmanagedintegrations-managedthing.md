@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iotmanagedintegrations-managedthing-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoTManagedIntegrations::ManagedThing",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iotmanagedintegrations-managedthing-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoTManagedIntegrations::ManagedThing
 Properties:
   [AuthenticationMaterial](#cfn-iotmanagedintegrations-managedthing-authenticationmaterial): {{String}}

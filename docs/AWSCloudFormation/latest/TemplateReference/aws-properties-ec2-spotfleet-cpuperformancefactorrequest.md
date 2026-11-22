@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-spotfleet-cpuperformancefactorrequest-syntax.json"></a>
 
-```
+```json
 {
   "[References](#cfn-ec2-spotfleet-cpuperformancefactorrequest-references)" : {{[ PerformanceFactorReferenceRequest, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-spotfleet-cpuperformancefactorrequest-syntax.yaml"></a>
 
-```
+```yaml
   [References](#cfn-ec2-spotfleet-cpuperformancefactorrequest-references): {{
     - PerformanceFactorReferenceRequest}}
 ```

@@ -429,7 +429,7 @@ AWS AppSync supports allowing or denying this permission on specific top-level f
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -451,7 +451,7 @@ If you want to limit the access to only a specific top-level field, you can use 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

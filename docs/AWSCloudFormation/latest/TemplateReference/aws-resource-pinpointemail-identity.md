@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-pinpointemail-identity-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::PinpointEmail::Identity",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-pinpointemail-identity-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::PinpointEmail::Identity
 Properties:
   [DkimSigningEnabled](#cfn-pinpointemail-identity-dkimsigningenabled): {{Boolean}}

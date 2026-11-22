@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesis-channel-s3tableconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CompressionType](#cfn-kinesis-channel-s3tableconfiguration-compressiontype)" : {{String}},
   "[Namespace](#cfn-kinesis-channel-s3tableconfiguration-namespace)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesis-channel-s3tableconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CompressionType](#cfn-kinesis-channel-s3tableconfiguration-compressiontype): {{String}}
   [Namespace](#cfn-kinesis-channel-s3tableconfiguration-namespace): {{String}}
   [PartitionSpec](#cfn-kinesis-channel-s3tableconfiguration-partitionspec): {{

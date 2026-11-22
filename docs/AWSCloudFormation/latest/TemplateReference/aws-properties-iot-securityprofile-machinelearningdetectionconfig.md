@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-securityprofile-machinelearningdetectionconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ConfidenceLevel](#cfn-iot-securityprofile-machinelearningdetectionconfig-confidencelevel)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-securityprofile-machinelearningdetectionconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ConfidenceLevel](#cfn-iot-securityprofile-machinelearningdetectionconfig-confidencelevel): {{String}}
 ```
 

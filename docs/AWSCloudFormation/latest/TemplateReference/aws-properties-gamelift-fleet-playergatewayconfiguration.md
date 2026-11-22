@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-fleet-playergatewayconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[GameServerIpProtocolSupported](#cfn-gamelift-fleet-playergatewayconfiguration-gameserveripprotocolsupported)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-fleet-playergatewayconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [GameServerIpProtocolSupported](#cfn-gamelift-fleet-playergatewayconfiguration-gameserveripprotocolsupported): {{String}}
 ```
 

@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-daemontaskdefinition-environmentfile-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-ecs-daemontaskdefinition-environmentfile-type)" : {{String}},
   "[Value](#cfn-ecs-daemontaskdefinition-environmentfile-value)" : {{String}}
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-daemontaskdefinition-environmentfile-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-ecs-daemontaskdefinition-environmentfile-type): {{String}}
   [Value](#cfn-ecs-daemontaskdefinition-environmentfile-value): {{String}}
 ```

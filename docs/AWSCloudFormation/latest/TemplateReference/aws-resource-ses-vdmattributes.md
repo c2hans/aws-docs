@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ses-vdmattributes-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SES::VdmAttributes",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ses-vdmattributes-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SES::VdmAttributes
 Properties:
   [DashboardAttributes](#cfn-ses-vdmattributes-dashboardattributes): {{

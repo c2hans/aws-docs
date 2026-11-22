@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emr-cluster-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-emr-cluster-tag-key)" : {{String}},
   "[Value](#cfn-emr-cluster-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emr-cluster-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-emr-cluster-tag-key): {{String}}
   [Value](#cfn-emr-cluster-tag-value): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-computequota-computequotaresourceconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AcceleratorPartition](#cfn-sagemaker-computequota-computequotaresourceconfig-acceleratorpartition)" : {{AcceleratorPartitionConfig}},
   "[Accelerators](#cfn-sagemaker-computequota-computequotaresourceconfig-accelerators)" : {{Integer}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-computequota-computequotaresourceconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AcceleratorPartition](#cfn-sagemaker-computequota-computequotaresourceconfig-acceleratorpartition): {{
     AcceleratorPartitionConfig}}
   [Accelerators](#cfn-sagemaker-computequota-computequotaresourceconfig-accelerators): {{Integer}}

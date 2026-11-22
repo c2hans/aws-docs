@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest-syntax.json"></a>
 
-```
+```json
 {
   "[AvailabilityZone](#cfn-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest-availabilityzone)" : {{String}},
   "[AvailabilityZoneId](#cfn-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest-availabilityzoneid)" : {{String}},
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest-syntax.yaml"></a>
 
-```
+```yaml
   [AvailabilityZone](#cfn-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest-availabilityzone): {{String}}
   [AvailabilityZoneId](#cfn-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest-availabilityzoneid): {{String}}
   [BlockDeviceMappings](#cfn-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest-blockdevicemappings): {{

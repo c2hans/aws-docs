@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-docdb-globalcluster-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DocDB::GlobalCluster",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-docdb-globalcluster-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DocDB::GlobalCluster
 Properties:
   [DeletionProtection](#cfn-docdb-globalcluster-deletionprotection): {{Boolean}}

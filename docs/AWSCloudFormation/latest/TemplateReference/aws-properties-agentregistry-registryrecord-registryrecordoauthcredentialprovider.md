@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-agentregistry-registryrecord-registryrecordoauthcredentialprovider-syntax.json"></a>
 
-```
+```json
 {
   "[CustomParameters](#cfn-agentregistry-registryrecord-registryrecordoauthcredentialprovider-customparameters)" : {{{{{Key}}: {{Value}}, ...}}},
   "[GrantType](#cfn-agentregistry-registryrecord-registryrecordoauthcredentialprovider-granttype)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-agentregistry-registryrecord-registryrecordoauthcredentialprovider-syntax.yaml"></a>
 
-```
+```yaml
   [CustomParameters](#cfn-agentregistry-registryrecord-registryrecordoauthcredentialprovider-customparameters): {{
     {{Key}}: {{Value}}}}
   [GrantType](#cfn-agentregistry-registryrecord-registryrecordoauthcredentialprovider-granttype): {{String}}

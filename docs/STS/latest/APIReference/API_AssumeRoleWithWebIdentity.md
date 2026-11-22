@@ -157,13 +157,18 @@ The value of the source identity that is returned in the JSON web token (JWT) fr
 You can require users to set a source identity value when they assume a role. You do this by using the `sts:SourceIdentity` condition key in a role trust policy. That way, actions that are taken with the role are associated with that user. After the source identity is set, the value cannot be changed. It is present in the request for all actions that are taken by the role and persists across [chained role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html#id_roles_terms-and-concepts) sessions. You can configure your identity provider to use an attribute associated with your users, like user name or email, as the source identity when calling `AssumeRoleWithWebIdentity`. You do this by adding a claim to the JSON web token. To learn more about OIDC tokens and claims, see [Using Tokens with User Pools](https://docs.aws.amazon.com/cognito/latest/developerguide/amazon-cognito-user-pools-using-tokens-with-identity-providers.html) in the *Amazon Cognito Developer Guide*. For more information about using source identity, see [Monitor and control actions taken with assumed roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_control-access_monitor.html) in the *IAM User Guide*.
 The regex used to validate this parameter is a string of characters consisting of upper- and lower-case alphanumeric characters with no spaces. You can also include underscores or any of the following characters: =,.@-
 Type: String
-Length Constraints: Minimum length of 2. Maximum length of 64.
+Length Constraints: Minimum length of 2. Maximum length of 256.
 Pattern: `[\w+=,.@-]*`
 
  ** SubjectFromWebIdentityToken **
 The unique user identifier that is returned by the identity provider. This identifier is associated with the `WebIdentityToken` that was submitted with the `AssumeRoleWithWebIdentity` call. The identifier is typically unique to the user and the application that acquired the `WebIdentityToken` (pairwise identifier). For OpenID Connect ID tokens, this field contains the value returned by the identity provider as the token's `sub` (Subject) claim.
 Type: String
 Length Constraints: Minimum length of 6. Maximum length of 255.
+
+ ** TrustedIdentityPropagationContext **
+The trusted identity propagation context that AWS STS set in the session from the web identity token, through the context provider attached to the OpenID Connect identity provider. It is present only when AWS STS set such context in the session. It contains the `aws:OriginIdentity/Subject`, `aws:OriginIdentity/SubjectType`, `aws:OriginIdentity/Issuer` and `aws:OriginIdentity/FederatedProviderArn` keys and the `aws:TransactionContext/IdentityProvider/*` keys that AWS STS set in the session. Other keys in the session, such as `aws:IdentityCenterInstanceArn` and `aws:IdentityStoreArn` for an identity provider with an Identity Center instance attached, are not returned.
+This element contains information about the end user. Do not log it.
+Type: [TrustedIdentityPropagationContext](API_TrustedIdentityPropagationContext.md) object
 
 ## Errors
 <a name="API_AssumeRoleWithWebIdentity_Errors"></a>

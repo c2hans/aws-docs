@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amazonmq-broker-encryptionoptions-syntax.json"></a>
 
-```
+```json
 {
   "[KmsKeyId](#cfn-amazonmq-broker-encryptionoptions-kmskeyid)" : {{String}},
   "[UseAwsOwnedKey](#cfn-amazonmq-broker-encryptionoptions-useawsownedkey)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amazonmq-broker-encryptionoptions-syntax.yaml"></a>
 
-```
+```yaml
   [KmsKeyId](#cfn-amazonmq-broker-encryptionoptions-kmskeyid): {{String}}
   [UseAwsOwnedKey](#cfn-amazonmq-broker-encryptionoptions-useawsownedkey): {{Boolean}}
 ```

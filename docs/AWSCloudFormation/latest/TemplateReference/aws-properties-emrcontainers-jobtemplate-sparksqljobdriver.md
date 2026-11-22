@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrcontainers-jobtemplate-sparksqljobdriver-syntax.json"></a>
 
-```
+```json
 {
   "[EntryPoint](#cfn-emrcontainers-jobtemplate-sparksqljobdriver-entrypoint)" : {{String}},
   "[SparkSqlParameters](#cfn-emrcontainers-jobtemplate-sparksqljobdriver-sparksqlparameters)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrcontainers-jobtemplate-sparksqljobdriver-syntax.yaml"></a>
 
-```
+```yaml
   [EntryPoint](#cfn-emrcontainers-jobtemplate-sparksqljobdriver-entrypoint): {{String}}
   [SparkSqlParameters](#cfn-emrcontainers-jobtemplate-sparksqljobdriver-sparksqlparameters): {{String}}
 ```

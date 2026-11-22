@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-tenant-tenantsuppressionattributes-syntax.json"></a>
 
-```
+```json
 {
   "[SuppressedReasons](#cfn-ses-tenant-tenantsuppressionattributes-suppressedreasons)" : {{[ String, ... ]}},
   "[SuppressionScope](#cfn-ses-tenant-tenantsuppressionattributes-suppressionscope)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-tenant-tenantsuppressionattributes-syntax.yaml"></a>
 
-```
+```yaml
   [SuppressedReasons](#cfn-ses-tenant-tenantsuppressionattributes-suppressedreasons): {{
     - String}}
   [SuppressionScope](#cfn-ses-tenant-tenantsuppressionattributes-suppressionscope): {{String}}

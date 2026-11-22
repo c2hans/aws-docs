@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-budgets-budget-costcategoryvalues-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-budgets-budget-costcategoryvalues-key)" : {{String}},
   "[MatchOptions](#cfn-budgets-budget-costcategoryvalues-matchoptions)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-budgets-budget-costcategoryvalues-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-budgets-budget-costcategoryvalues-key): {{String}}
   [MatchOptions](#cfn-budgets-budget-costcategoryvalues-matchoptions): {{
     - String}}

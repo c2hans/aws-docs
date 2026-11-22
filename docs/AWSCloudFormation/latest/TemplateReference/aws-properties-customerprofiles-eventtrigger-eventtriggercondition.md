@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-eventtrigger-eventtriggercondition-syntax.json"></a>
 
-```
+```json
 {
   "[EventTriggerDimensions](#cfn-customerprofiles-eventtrigger-eventtriggercondition-eventtriggerdimensions)" : {{[ EventTriggerDimension, ... ]}},
   "[LogicalOperator](#cfn-customerprofiles-eventtrigger-eventtriggercondition-logicaloperator)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-eventtrigger-eventtriggercondition-syntax.yaml"></a>
 
-```
+```yaml
   [EventTriggerDimensions](#cfn-customerprofiles-eventtrigger-eventtriggercondition-eventtriggerdimensions): {{
     - EventTriggerDimension}}
   [LogicalOperator](#cfn-customerprofiles-eventtrigger-eventtriggercondition-logicaloperator): {{String}}

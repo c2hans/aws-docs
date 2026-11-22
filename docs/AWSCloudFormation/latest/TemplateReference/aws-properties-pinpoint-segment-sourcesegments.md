@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pinpoint-segment-sourcesegments-syntax.json"></a>
 
-```
+```json
 {
   "[Id](#cfn-pinpoint-segment-sourcesegments-id)" : {{String}},
   "[Version](#cfn-pinpoint-segment-sourcesegments-version)" : {{Integer}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pinpoint-segment-sourcesegments-syntax.yaml"></a>
 
-```
+```yaml
   [Id](#cfn-pinpoint-segment-sourcesegments-id): {{String}}
   [Version](#cfn-pinpoint-segment-sourcesegments-version): {{Integer}}
 ```

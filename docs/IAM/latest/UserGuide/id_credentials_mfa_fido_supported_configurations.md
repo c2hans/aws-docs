@@ -75,7 +75,7 @@ The following use cases show sample policies that allow you to register MFA devi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -113,7 +113,7 @@ The following use cases show sample policies that allow you to register MFA devi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -152,7 +152,7 @@ The following use cases show sample policies that allow you to register MFA devi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -201,7 +201,7 @@ The following use cases show sample policies that allow you to register MFA devi
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

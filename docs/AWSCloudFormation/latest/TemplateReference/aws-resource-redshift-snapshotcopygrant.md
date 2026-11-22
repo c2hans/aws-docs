@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-redshift-snapshotcopygrant-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Redshift::SnapshotCopyGrant",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-redshift-snapshotcopygrant-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Redshift::SnapshotCopyGrant
 Properties:
   [KmsKeyId](#cfn-redshift-snapshotcopygrant-kmskeyid): {{String}}

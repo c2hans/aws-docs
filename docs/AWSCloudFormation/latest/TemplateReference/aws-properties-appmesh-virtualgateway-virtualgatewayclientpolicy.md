@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-virtualgateway-virtualgatewayclientpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[TLS](#cfn-appmesh-virtualgateway-virtualgatewayclientpolicy-tls)" : {{VirtualGatewayClientPolicyTls}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-virtualgateway-virtualgatewayclientpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [TLS](#cfn-appmesh-virtualgateway-virtualgatewayclientpolicy-tls): {{
     VirtualGatewayClientPolicyTls}}
 ```

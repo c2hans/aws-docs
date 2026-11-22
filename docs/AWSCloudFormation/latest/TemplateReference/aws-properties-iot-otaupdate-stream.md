@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-otaupdate-stream-syntax.json"></a>
 
-```
+```json
 {
   "[FileId](#cfn-iot-otaupdate-stream-fileid)" : {{Integer}},
   "[StreamId](#cfn-iot-otaupdate-stream-streamid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-otaupdate-stream-syntax.yaml"></a>
 
-```
+```yaml
   [FileId](#cfn-iot-otaupdate-stream-fileid): {{Integer}}
   [StreamId](#cfn-iot-otaupdate-stream-streamid): {{String}}
 ```

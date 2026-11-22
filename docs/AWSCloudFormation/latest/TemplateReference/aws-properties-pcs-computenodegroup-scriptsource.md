@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcs-computenodegroup-scriptsource-syntax.json"></a>
 
-```
+```json
 {
   "[Checksum](#cfn-pcs-computenodegroup-scriptsource-checksum)" : {{String}},
   "[S3VersionId](#cfn-pcs-computenodegroup-scriptsource-s3versionid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcs-computenodegroup-scriptsource-syntax.yaml"></a>
 
-```
+```yaml
   [Checksum](#cfn-pcs-computenodegroup-scriptsource-checksum): {{String}}
   [S3VersionId](#cfn-pcs-computenodegroup-scriptsource-s3versionid): {{String}}
   [ScriptLocation](#cfn-pcs-computenodegroup-scriptsource-scriptlocation): {{String}}

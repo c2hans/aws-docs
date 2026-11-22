@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-replicationdestination-syntax.json"></a>
 
-```
+```json
 {
   "[AccessControlTranslation](#cfn-s3-bucket-replicationdestination-accesscontroltranslation)" : {{AccessControlTranslation}},
   "[Account](#cfn-s3-bucket-replicationdestination-account)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-replicationdestination-syntax.yaml"></a>
 
-```
+```yaml
   [AccessControlTranslation](#cfn-s3-bucket-replicationdestination-accesscontroltranslation): {{
     AccessControlTranslation}}
   [Account](#cfn-s3-bucket-replicationdestination-account): {{String}}

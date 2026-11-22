@@ -110,7 +110,7 @@ For more information, see [Amazon SQS batch actions](https://docs.aws.amazon.com
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/sqs#code-examples).
 
-```
+```java
             SendMessageBatchRequest sendMessageBatchRequest = SendMessageBatchRequest.builder()
                     .queueUrl(queueUrl)
                     .entries(SendMessageBatchRequestEntry.builder().id("id1").messageBody("Hello from msg 1").build(),
@@ -127,7 +127,7 @@ For more information, see [Amazon SQS batch actions](https://docs.aws.amazon.com
 **Tools for PowerShell V4**
 **Example 1: This example sends 2 messages with the specified attributes and message bodies to the specified queue. Delivery is delayed for 15 seconds for the first message and 10 seconds for the second message.**
 
-```
+```powershell
 $student1NameAttributeValue = New-Object Amazon.SQS.Model.MessageAttributeValue
 $student1NameAttributeValue.DataType = "String"
 $student1NameAttributeValue.StringValue = "John Doe"
@@ -172,7 +172,7 @@ Failed    Successful
 **Tools for PowerShell V5**
 **Example 1: This example sends 2 messages with the specified attributes and message bodies to the specified queue. Delivery is delayed for 15 seconds for the first message and 10 seconds for the second message.**
 
-```
+```powershell
 $student1NameAttributeValue = New-Object Amazon.SQS.Model.MessageAttributeValue
 $student1NameAttributeValue.DataType = "String"
 $student1NameAttributeValue.StringValue = "John Doe"
@@ -220,7 +220,7 @@ Failed    Successful
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sqs#code-examples).
 
-```
+```python
 def send_messages(queue, messages):
     """
     Send a batch of messages in a single request to an SQS queue.
@@ -272,7 +272,7 @@ def send_messages(queue, messages):
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/sqs#code-examples).
 
-```
+```ruby
 require 'aws-sdk-sqs'
 require 'aws-sdk-sts'
 
@@ -349,7 +349,7 @@ end
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sqs#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_sqs->sendmessagebatch(         " oo_result is returned for testing purposes. "
            iv_queueurl = iv_queue_url

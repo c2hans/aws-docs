@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rds-dbcluster-serverlessv2scalingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MaxCapacity](#cfn-rds-dbcluster-serverlessv2scalingconfiguration-maxcapacity)" : {{Number}},
   "[MinCapacity](#cfn-rds-dbcluster-serverlessv2scalingconfiguration-mincapacity)" : {{Number}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rds-dbcluster-serverlessv2scalingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MaxCapacity](#cfn-rds-dbcluster-serverlessv2scalingconfiguration-maxcapacity): {{Number}}
   [MinCapacity](#cfn-rds-dbcluster-serverlessv2scalingconfiguration-mincapacity): {{Number}}
   [SecondsUntilAutoPause](#cfn-rds-dbcluster-serverlessv2scalingconfiguration-secondsuntilautopause): {{Integer}}
@@ -74,7 +74,7 @@ The following example specifies a scaling configuration for an Aurora Serverless
 #### JSON
 <a name="aws-properties-rds-dbcluster-serverlessv2scalingconfiguration--examples--Specifying_a_scaling_configuration_for_a_Serverless_v2_DB_cluster--json"></a>
 
-```
+```json
 "ServerlessV2ScalingConfiguration":{
    "MinCapacity": 9,
    "MaxCapacity": 42
@@ -84,7 +84,7 @@ The following example specifies a scaling configuration for an Aurora Serverless
 #### YAML
 <a name="aws-properties-rds-dbcluster-serverlessv2scalingconfiguration--examples--Specifying_a_scaling_configuration_for_a_Serverless_v2_DB_cluster--yaml"></a>
 
-```
+```yaml
 ServerlessV2ScalingConfiguration:
   MinCapacity: 9
   MaxCapacity: 42

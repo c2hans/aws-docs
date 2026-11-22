@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-routingrulecondition-syntax.json"></a>
 
-```
+```json
 {
   "[HttpErrorCodeReturnedEquals](#cfn-s3-bucket-routingrulecondition-httperrorcodereturnedequals)" : {{String}},
   "[KeyPrefixEquals](#cfn-s3-bucket-routingrulecondition-keyprefixequals)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-routingrulecondition-syntax.yaml"></a>
 
-```
+```yaml
   [HttpErrorCodeReturnedEquals](#cfn-s3-bucket-routingrulecondition-httperrorcodereturnedequals): {{String}}
   [KeyPrefixEquals](#cfn-s3-bucket-routingrulecondition-keyprefixequals): {{String}}
 ```
@@ -61,7 +61,7 @@ This example also specifies a metrics configuration called `EntireBucket` that e
 #### JSON
 <a name="aws-properties-s3-bucket-routingrulecondition--examples--Configure_a_static_website_with_a_routing_rule--json"></a>
 
-```
+```json
 {
     "Resources": {
         "S3Bucket": {
@@ -128,7 +128,7 @@ This example also specifies a metrics configuration called `EntireBucket` that e
 #### YAML
 <a name="aws-properties-s3-bucket-routingrulecondition--examples--Configure_a_static_website_with_a_routing_rule--yaml"></a>
 
-```
+```yaml
 Resources:
   S3Bucket:
     Type: 'AWS::S3::Bucket'

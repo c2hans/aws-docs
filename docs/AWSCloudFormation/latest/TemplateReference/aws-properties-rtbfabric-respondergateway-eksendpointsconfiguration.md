@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rtbfabric-respondergateway-eksendpointsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ClusterApiServerCaCertificateChain](#cfn-rtbfabric-respondergateway-eksendpointsconfiguration-clusterapiservercacertificatechain)" : {{String}},
   "[ClusterApiServerEndpointUri](#cfn-rtbfabric-respondergateway-eksendpointsconfiguration-clusterapiserverendpointuri)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rtbfabric-respondergateway-eksendpointsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ClusterApiServerCaCertificateChain](#cfn-rtbfabric-respondergateway-eksendpointsconfiguration-clusterapiservercacertificatechain): {{String}}
   [ClusterApiServerEndpointUri](#cfn-rtbfabric-respondergateway-eksendpointsconfiguration-clusterapiserverendpointuri): {{String}}
   [ClusterName](#cfn-rtbfabric-respondergateway-eksendpointsconfiguration-clustername): {{String}}

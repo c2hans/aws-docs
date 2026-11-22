@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-aiguardrail-guardrailcontentfilterconfig-syntax.json"></a>
 
-```
+```json
 {
   "[InputStrength](#cfn-wisdom-aiguardrail-guardrailcontentfilterconfig-inputstrength)" : {{String}},
   "[OutputStrength](#cfn-wisdom-aiguardrail-guardrailcontentfilterconfig-outputstrength)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-aiguardrail-guardrailcontentfilterconfig-syntax.yaml"></a>
 
-```
+```yaml
   [InputStrength](#cfn-wisdom-aiguardrail-guardrailcontentfilterconfig-inputstrength): {{String}}
   [OutputStrength](#cfn-wisdom-aiguardrail-guardrailcontentfilterconfig-outputstrength): {{String}}
   [Type](#cfn-wisdom-aiguardrail-guardrailcontentfilterconfig-type): {{String}}

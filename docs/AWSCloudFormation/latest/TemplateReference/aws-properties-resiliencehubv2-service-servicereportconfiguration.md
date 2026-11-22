@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-resiliencehubv2-service-servicereportconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ReportOutput](#cfn-resiliencehubv2-service-servicereportconfiguration-reportoutput)" : {{[ ReportOutputConfiguration, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-resiliencehubv2-service-servicereportconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ReportOutput](#cfn-resiliencehubv2-service-servicereportconfiguration-reportoutput): {{
     - ReportOutputConfiguration}}
 ```

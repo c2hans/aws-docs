@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewaytarget-apigatewaytargetconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ApiGatewayToolConfiguration](#cfn-bedrockagentcore-gatewaytarget-apigatewaytargetconfiguration-apigatewaytoolconfiguration)" : {{ApiGatewayToolConfiguration}},
   "[RestApiId](#cfn-bedrockagentcore-gatewaytarget-apigatewaytargetconfiguration-restapiid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewaytarget-apigatewaytargetconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ApiGatewayToolConfiguration](#cfn-bedrockagentcore-gatewaytarget-apigatewaytargetconfiguration-apigatewaytoolconfiguration): {{
     ApiGatewayToolConfiguration}}
   [RestApiId](#cfn-bedrockagentcore-gatewaytarget-apigatewaytargetconfiguration-restapiid): {{String}}

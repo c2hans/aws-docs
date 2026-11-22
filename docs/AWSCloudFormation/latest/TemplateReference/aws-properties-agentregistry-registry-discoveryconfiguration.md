@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-agentregistry-registry-discoveryconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AuthorizerConfiguration](#cfn-agentregistry-registry-discoveryconfiguration-authorizerconfiguration)" : {{AuthorizerConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-agentregistry-registry-discoveryconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AuthorizerConfiguration](#cfn-agentregistry-registry-discoveryconfiguration-authorizerconfiguration): {{
     AuthorizerConfiguration}}
 ```

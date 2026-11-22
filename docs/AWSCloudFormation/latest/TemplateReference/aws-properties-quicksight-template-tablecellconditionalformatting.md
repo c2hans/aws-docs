@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-tablecellconditionalformatting-syntax.json"></a>
 
-```
+```json
 {
   "[FieldId](#cfn-quicksight-template-tablecellconditionalformatting-fieldid)" : {{String}},
   "[TextFormat](#cfn-quicksight-template-tablecellconditionalformatting-textformat)" : {{TextConditionalFormat}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-tablecellconditionalformatting-syntax.yaml"></a>
 
-```
+```yaml
   [FieldId](#cfn-quicksight-template-tablecellconditionalformatting-fieldid): {{String}}
   [TextFormat](#cfn-quicksight-template-tablecellconditionalformatting-textformat): {{
     TextConditionalFormat}}

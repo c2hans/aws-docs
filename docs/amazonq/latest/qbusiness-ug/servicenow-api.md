@@ -53,7 +53,7 @@ The following provides information about important configuration properties requ
 
 The following is the ServiceNow JSON schema:
 
-```
+```json
 {
   "type": "object",
   "properties": {
@@ -505,7 +505,7 @@ The following is the ServiceNow JSON schema:
 
 The following is the ServiceNow JSON schema example:
 
-```
+```json
 {
   "type": "SERVICENOWV2",
   "syncMode": "FULL_CRAWL",

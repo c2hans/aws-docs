@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-eventsourcemapping-provisionedpollerconfig-syntax.json"></a>
 
-```
+```json
 {
   "[MaximumPollers](#cfn-lambda-eventsourcemapping-provisionedpollerconfig-maximumpollers)" : {{Integer}},
   "[MinimumPollers](#cfn-lambda-eventsourcemapping-provisionedpollerconfig-minimumpollers)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-eventsourcemapping-provisionedpollerconfig-syntax.yaml"></a>
 
-```
+```yaml
   [MaximumPollers](#cfn-lambda-eventsourcemapping-provisionedpollerconfig-maximumpollers): {{Integer}}
   [MinimumPollers](#cfn-lambda-eventsourcemapping-provisionedpollerconfig-minimumpollers): {{Integer}}
   [PollerGroupName](#cfn-lambda-eventsourcemapping-provisionedpollerconfig-pollergroupname): {{String}}

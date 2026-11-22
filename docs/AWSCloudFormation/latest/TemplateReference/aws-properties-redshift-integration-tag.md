@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-redshift-integration-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-redshift-integration-tag-key)" : {{String}},
   "[Value](#cfn-redshift-integration-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-redshift-integration-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-redshift-integration-tag-key): {{String}}
   [Value](#cfn-redshift-integration-tag-value): {{String}}
 ```

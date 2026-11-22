@@ -165,7 +165,7 @@ In your template, specify installation and configuration states in the `AWS::Clo
 
 The CloudFormation helper scripts are updated periodically. Be sure you include the following command in the `UserData` property of your template before you call the helper scripts to ensure that your launched instances get the latest helper scripts:
 
-```
+```sh
 yum install -y aws-cfn-bootstrap
 ```
 

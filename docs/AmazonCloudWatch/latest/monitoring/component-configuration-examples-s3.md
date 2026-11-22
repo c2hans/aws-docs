@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/compo
 
 The following example shows a component configurations in JSON format for Amazon S3 bucket.
 
-```
+```json
 {
     "alarmMetrics" : [
         {

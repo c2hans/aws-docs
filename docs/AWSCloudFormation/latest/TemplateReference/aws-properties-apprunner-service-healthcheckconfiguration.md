@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apprunner-service-healthcheckconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[HealthyThreshold](#cfn-apprunner-service-healthcheckconfiguration-healthythreshold)" : {{Integer}},
   "[Interval](#cfn-apprunner-service-healthcheckconfiguration-interval)" : {{Integer}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apprunner-service-healthcheckconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [HealthyThreshold](#cfn-apprunner-service-healthcheckconfiguration-healthythreshold): {{Integer}}
   [Interval](#cfn-apprunner-service-healthcheckconfiguration-interval): {{Integer}}
   [Path](#cfn-apprunner-service-healthcheckconfiguration-path): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networksecuritymanager-deployment-associatedscope-syntax.json"></a>
 
-```
+```json
 {
   "[ScopeArn](#cfn-networksecuritymanager-deployment-associatedscope-scopearn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networksecuritymanager-deployment-associatedscope-syntax.yaml"></a>
 
-```
+```yaml
   [ScopeArn](#cfn-networksecuritymanager-deployment-associatedscope-scopearn): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-events-rule-batchretrystrategy-syntax.json"></a>
 
-```
+```json
 {
   "[Attempts](#cfn-events-rule-batchretrystrategy-attempts)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-events-rule-batchretrystrategy-syntax.yaml"></a>
 
-```
+```yaml
   [Attempts](#cfn-events-rule-batchretrystrategy-attempts): {{Integer}}
 ```
 
@@ -49,7 +49,7 @@ The following example sets the `BatchRetryStrategy` property to 8 retries.
 #### JSON
 <a name="aws-properties-events-rule-batchretrystrategy--examples--Set_the_BatchRetryStrategy_property--json"></a>
 
-```
+```json
 "RetryStrategy": {
   "Attempts": 8
 }
@@ -58,7 +58,7 @@ The following example sets the `BatchRetryStrategy` property to 8 retries.
 #### YAML
 <a name="aws-properties-events-rule-batchretrystrategy--examples--Set_the_BatchRetryStrategy_property--yaml"></a>
 
-```
+```yaml
 RetryStrategy
   Attempts: 8
 ```

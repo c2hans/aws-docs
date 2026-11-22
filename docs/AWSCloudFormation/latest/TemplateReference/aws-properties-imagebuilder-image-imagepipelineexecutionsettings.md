@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-image-imagepipelineexecutionsettings-syntax.json"></a>
 
-```
+```json
 {
   "[DeploymentId](#cfn-imagebuilder-image-imagepipelineexecutionsettings-deploymentid)" : {{String}},
   "[OnUpdate](#cfn-imagebuilder-image-imagepipelineexecutionsettings-onupdate)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-image-imagepipelineexecutionsettings-syntax.yaml"></a>
 
-```
+```yaml
   [DeploymentId](#cfn-imagebuilder-image-imagepipelineexecutionsettings-deploymentid): {{String}}
   [OnUpdate](#cfn-imagebuilder-image-imagepipelineexecutionsettings-onupdate): {{Boolean}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-notifications-eventrule-eventrulestatussummary-syntax.json"></a>
 
-```
+```json
 {
   "[Reason](#cfn-notifications-eventrule-eventrulestatussummary-reason)" : {{String}},
   "[Status](#cfn-notifications-eventrule-eventrulestatussummary-status)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-notifications-eventrule-eventrulestatussummary-syntax.yaml"></a>
 
-```
+```yaml
   [Reason](#cfn-notifications-eventrule-eventrulestatussummary-reason): {{String}}
   [Status](#cfn-notifications-eventrule-eventrulestatussummary-status): {{String}}
 ```

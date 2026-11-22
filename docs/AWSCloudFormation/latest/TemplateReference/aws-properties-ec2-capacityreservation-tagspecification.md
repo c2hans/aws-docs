@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-capacityreservation-tagspecification-syntax.json"></a>
 
-```
+```json
 {
   "[ResourceType](#cfn-ec2-capacityreservation-tagspecification-resourcetype)" : {{String}},
   "[Tags](#cfn-ec2-capacityreservation-tagspecification-tags)" : {{[ Tag, ... ]}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-capacityreservation-tagspecification-syntax.yaml"></a>
 
-```
+```yaml
   [ResourceType](#cfn-ec2-capacityreservation-tagspecification-resourcetype): {{String}}
   [Tags](#cfn-ec2-capacityreservation-tagspecification-tags): {{
     - Tag}}

@@ -8,13 +8,13 @@ Unsubscribes from participant state change events. Pass the same handler and `pa
 
  **Signature**
 
-```
+```typescript
 offParticipantStateChanged(handler: ParticipantStateChangedHandler, participantId?: string): void
 ```
 
  **Usage**
 
-```
+```typescript
 contactClient.offParticipantStateChanged(handleStateChanged);
 ```
 

@@ -24,7 +24,7 @@ The following example shows an identity-based policy that allows a user to creat
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

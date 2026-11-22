@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-rule-ruletriggereventsource-syntax.json"></a>
 
-```
+```json
 {
   "[EventSourceName](#cfn-connect-rule-ruletriggereventsource-eventsourcename)" : {{String}},
   "[IntegrationAssociationArn](#cfn-connect-rule-ruletriggereventsource-integrationassociationarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-rule-ruletriggereventsource-syntax.yaml"></a>
 
-```
+```yaml
   [EventSourceName](#cfn-connect-rule-ruletriggereventsource-eventsourcename): {{String}}
   [IntegrationAssociationArn](#cfn-connect-rule-ruletriggereventsource-integrationassociationarn): {{String}}
 ```

@@ -50,7 +50,7 @@ For more information, see [Downloading a Vault Inventory in Amazon Glacier](http
 **Tools for PowerShell V4**
 **Example 1: Returns details of the specified job. When the job completes successfully the Read-GCJobOutput cmdlet can be used to retrieve the contents of the job (an archive or inventory list) to the local file system.**
 
-```
+```powershell
 Get-GLCJob -VaultName myvault -JobId "op1x...JSbthM"
 ```
 **Output:**
@@ -83,7 +83,7 @@ VaultARN                     : arn:aws:glacier:us-west-2:012345678912:vaults/tes
 **Tools for PowerShell V5**
 **Example 1: Returns details of the specified job. When the job completes successfully the Read-GCJobOutput cmdlet can be used to retrieve the contents of the job (an archive or inventory list) to the local file system.**
 
-```
+```powershell
 Get-GLCJob -VaultName myvault -JobId "op1x...JSbthM"
 ```
 **Output:**
@@ -119,7 +119,7 @@ VaultARN                     : arn:aws:glacier:us-west-2:012345678912:vaults/tes
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glacier#code-examples).
 
-```
+```python
 class GlacierWrapper:
     """Encapsulates Amazon S3 Glacier API operations."""
 

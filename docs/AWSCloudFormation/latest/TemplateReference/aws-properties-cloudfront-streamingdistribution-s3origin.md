@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-streamingdistribution-s3origin-syntax.json"></a>
 
-```
+```json
 {
   "[DomainName](#cfn-cloudfront-streamingdistribution-s3origin-domainname)" : {{String}},
   "[OriginAccessIdentity](#cfn-cloudfront-streamingdistribution-s3origin-originaccessidentity)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-streamingdistribution-s3origin-syntax.yaml"></a>
 
-```
+```yaml
   [DomainName](#cfn-cloudfront-streamingdistribution-s3origin-domainname): {{String}}
   [OriginAccessIdentity](#cfn-cloudfront-streamingdistribution-s3origin-originaccessidentity): {{String}}
 ```

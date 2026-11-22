@@ -31,6 +31,7 @@ For RDS for MariaDB, blue/green deployments are supported for the following vers
 <a name="Concepts.RDS_Fea_Regions_DB-eng.Feature.BlueGreenDeployments.mysql"></a>
 
 For RDS for MySQL, blue/green deployments are supported for the following versions:
++ RDS for MySQL 9.7 (All available versions)
 + RDS for MySQL 8.4 (All available versions)
 + RDS for MySQL 8.0 (All available versions)
 + RDS for MySQL 5.7 (All available versions)

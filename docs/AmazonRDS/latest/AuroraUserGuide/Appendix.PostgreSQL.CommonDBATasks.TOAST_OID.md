@@ -53,7 +53,7 @@ A global counter generates the OIDs and wraps around every 4 billion values, so 
 
   You can run the following SQL query to identify long-running INSERT transactions with wait events:
 
-  ```
+  ```sql
   SELECT
       datname AS database_name,
       usename AS database_user,
@@ -112,7 +112,7 @@ Depending on the number of OIDs in the TOAST table, it may take time to complete
 
 The following anonymous block counts the number of distinct OIDs used in each TOAST table and displays the parent table information:
 
-```
+```sql
 DO $$
 DECLARE
     r record;
@@ -162,7 +162,7 @@ DO
 
 The following anonymous block retrieves the maximum assigned OID for each non-empty TOAST table:
 
-```
+```sql
 DO $$
 DECLARE
     r record;

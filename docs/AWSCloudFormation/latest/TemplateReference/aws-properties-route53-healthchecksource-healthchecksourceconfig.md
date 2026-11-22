@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-route53-healthchecksource-healthchecksourceconfig-syntax.json"></a>
 
-```
+```json
 {
   "[SubnetConfigurationList](#cfn-route53-healthchecksource-healthchecksourceconfig-subnetconfigurationlist)" : {{[ SubnetConfiguration, ... ]}},
   "[VpcId](#cfn-route53-healthchecksource-healthchecksourceconfig-vpcid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-route53-healthchecksource-healthchecksourceconfig-syntax.yaml"></a>
 
-```
+```yaml
   [SubnetConfigurationList](#cfn-route53-healthchecksource-healthchecksourceconfig-subnetconfigurationlist): {{
     - SubnetConfiguration}}
   [VpcId](#cfn-route53-healthchecksource-healthchecksourceconfig-vpcid): {{String}}

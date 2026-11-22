@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspacesweb-sessionlogger-eventfilter-syntax.json"></a>
 
-```
+```json
 {
   "[All](#cfn-workspacesweb-sessionlogger-eventfilter-all)" : {{Json}},
   "[Include](#cfn-workspacesweb-sessionlogger-eventfilter-include)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspacesweb-sessionlogger-eventfilter-syntax.yaml"></a>
 
-```
+```yaml
   [All](#cfn-workspacesweb-sessionlogger-eventfilter-all): {{Json}}
   [Include](#cfn-workspacesweb-sessionlogger-eventfilter-include): {{
     - String}}

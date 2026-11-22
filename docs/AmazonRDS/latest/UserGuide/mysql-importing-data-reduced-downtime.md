@@ -45,7 +45,7 @@ Make sure that you're aware of the following recommendations and considerations:
 
 1. Edit the `my.cnf` file. This file is usually located under `/etc`.
 
-   ```
+   ```bash
    sudo vi /etc/my.cnf
    ```
 
@@ -63,11 +63,11 @@ Make sure that you're aware of the following recommendations and considerations:
 
 1. For replication with a Multi-AZ DB cluster set the `ENFORCE_GTID_CONSISTENCY` and the `GTID_MODE` parameter to `ON`.
 
-   ```
+   ```SQL
    mysql> SET @@GLOBAL.ENFORCE_GTID_CONSISTENCY = ON;
    ```
 
-   ```
+   ```SQL
    mysql> SET @@GLOBAL.GTID_MODE = ON;
    ```
 
@@ -75,7 +75,7 @@ Make sure that you're aware of the following recommendations and considerations:
 
 1. Restart the `mysql` service.
 
-   ```
+   ```bash
    sudo service mysqld restart
    ```
 
@@ -185,12 +185,12 @@ Make sure to create any stored procedures, triggers, functions, or events manual
 1. Compress the copied data to reduce the amount of network resources needed to copy your data to the Amazon RDS database. Note the size of the backup file. You need this information when determining how large an Amazon EC2 instance to create. When you are done, compress the backup file using GZIP or your preferred compression utility.
    + To compress SQL output, use the following command:
 
-     ```
+     ```bash
      gzip backup.sql
      ```
    + To compress delimited-text output, use the following command:
 
-     ```
+     ```bash
      tar -zcvf backup.tar.gz {{target_directory}}
      ```
 
@@ -214,7 +214,7 @@ The following diagram shows copying the database backup to an Amazon EC2 instanc
 
 1. Copy your compressed database backup file from your local system to your Amazon EC2 instance. Use `chmod`, if necessary, to make sure that you have write permission for the target directory of the Amazon EC2 instance. You can use `scp` or a Secure Shell (SSH) client to copy the file. The following command is an example `scp` command:
 
-   ```
+   ```bash
    scp -r -i {{key pair}}.pem backup.sql.gz ec2-user@{{EC2 DNS}}:/{{target_directory}}/backup.sql.gz
    ```
 **Important**
@@ -222,7 +222,7 @@ When copying sensitive data, be sure to use a secure network transfer protocol.
 
 1. Connect to your Amazon EC2 instance and install the latest updates and the MySQL client tools using the following commands:
 
-   ```
+   ```bash
    sudo yum update -y
    sudo yum install mysql -y
    ```
@@ -234,12 +234,12 @@ This example installs the MySQL client on an Amazon Machine Image (AMI) for an A
 1. While connected to your Amazon EC2 instance, decompress your database backup file. The following commands are examples.
    + To decompress SQL output, use the following command:
 
-     ```
+     ```bash
      gzip backup.sql.gz -d
      ```
    + To decompress delimited-text output, use the following command:
 
-     ```
+     ```bash
      tar xzvf backup.tar.gz
      ```
 
@@ -288,14 +288,14 @@ The following diagram shows importing the backup from an Amazon EC2 instance int
      ```
    + For delimited-text format, first create the database, if it isn't the default database that you created when setting up the Amazon RDS database.
 
-     ```
+     ```sql
      mysql> create database {{database_name}};
      mysql> use {{database_name}};
      ```
 
      Then create the tables.
 
-     ```
+     ```sql
      mysql> source {{table1}}.sql
      mysql> source {{table2}}.sql
      etc...
@@ -303,7 +303,7 @@ The following diagram shows importing the backup from an Amazon EC2 instance int
 
      Then import the data.
 
-     ```
+     ```sql
      mysql> LOAD DATA LOCAL INFILE 'table1.txt' INTO TABLE table1 FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '0x0d0a';
      mysql> LOAD DATA LOCAL INFILE 'table2.txt' INTO TABLE table2 FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '0x0d0a';
      etc...
@@ -346,7 +346,7 @@ In Task 1, [when you set replication options](#mysql-importing-data-reduced-down
 
 1. Using the client of your choice, connect to the source instance and create a user to be used for replication. This account is used solely for replication and must be restricted to your domain to improve security. The following command is an example:
 
-   ```
+   ```sql
    CREATE USER 'repl_user'@'{{mydomain.com}}' IDENTIFIED BY '{{password}}';
    ```
 **Note**
@@ -354,7 +354,7 @@ Specify credentials other than the prompts shown here as a security best practic
 
 1. For the source instance, grant `REPLICATION CLIENT` and `REPLICATION SLAVE` privileges to your replication user. For example, to grant the `REPLICATION CLIENT` and `REPLICATION SLAVE` privileges on all databases for the '`repl_user`' user for your domain, issue the following command:
 
-   ```
+   ```sql
    GRANT REPLICATION CLIENT, REPLICATION SLAVE ON *.* TO '{{repl_user}}'@'{{mydomain.com}}';
    ```
 
@@ -366,14 +366,14 @@ Specify credentials other than the prompts shown here as a security best practic
 
    **MySQL 8.4 and higher versions**
 
-   ```
+   ```sql
    CALL mysql.rds_set_external_source ('myserver.mydomain.com', 3306,
        'repl_user', '{{password}}', 'mysql-bin-changelog.000031', 107, 1);
    ```
 
    **MySQL 8.0 and lower versions**
 
-   ```
+   ```sql
    CALL mysql.rds_set_external_master ('myserver.mydomain.com', 3306,
        'repl_user', '{{password}}', 'mysql-bin-changelog.000031', 107, 1);
    ```
@@ -382,7 +382,7 @@ Specify credentials other than the prompts shown here as a security best practic
 
 1. On the Amazon RDS database, to start replication, run the following command that uses the [mysql.rds\_start\_replication](mysql-stored-proc-replicating.md#mysql_rds_start_replication) stored procedure:
 
-   ```
+   ```sql
    CALL mysql.rds_start_replication;
    ```
 
@@ -406,7 +406,7 @@ After the MySQL database is up to date with the source replication instance, you
 
 1. Verify that the `Seconds_Behind_Master` field in the [SHOW REPLICA STATUS](https://dev.mysql.com/doc/refman/8.0/en/show-replica-status.html) command results is 0, which indicates that the replica is up to date with the source replication instance.
 
-   ```
+   ```sql
    SHOW REPLICA STATUS;
    ```
 **Note**
@@ -422,7 +422,7 @@ Previous versions of MySQL used `SHOW SLAVE STATUS` instead of `SHOW REPLICA STA
 
 1. Stop replication for the Amazon RDS instance by running the following command that uses the [mysql.rds\_stop\_replication](mysql-stored-proc-replicating.md#mysql_rds_stop_replication) stored procedure:
 
-   ```
+   ```sql
    CALL mysql.rds_stop_replication;
    ```
 
@@ -438,7 +438,7 @@ Previous versions of MySQL used `SHOW SLAVE STATUS` instead of `SHOW REPLICA STA
 
    **MySQL 8.0 and lower versions**
 
-   ```
+   ```sql
    CALL mysql.rds_reset_external_master;
    ```
 

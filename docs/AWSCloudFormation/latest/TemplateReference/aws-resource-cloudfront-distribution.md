@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudfront-distribution-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudFront::Distribution",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudfront-distribution-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudFront::Distribution
 Properties:
   [DistributionConfig](#cfn-cloudfront-distribution-distributionconfig): {{
@@ -95,7 +95,7 @@ The following example specifies a standard distribution and assigns it a single 
 #### JSON
 <a name="aws-resource-cloudfront-distribution--examples--Create_a_standard_distribution--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -146,7 +146,7 @@ The following example specifies a standard distribution and assigns it a single 
 #### YAML
 <a name="aws-resource-cloudfront-distribution--examples--Create_a_standard_distribution--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   cloudfrontdistribution:
@@ -179,7 +179,7 @@ The following example specifies a basic multi-tenant distribution without a cert
 #### JSON
 <a name="aws-resource-cloudfront-distribution--examples--Create_a_multi-tenant_distribution_without_a_certificate--json"></a>
 
-```
+```json
 {
   "Resources": {
     "MyMultiTenantDistribution": {
@@ -277,7 +277,7 @@ The following example specifies a basic multi-tenant distribution without a cert
 #### YAML
 <a name="aws-resource-cloudfront-distribution--examples--Create_a_multi-tenant_distribution_without_a_certificate--yaml"></a>
 
-```
+```yaml
 Resources:
   MyMultiTenantDistribution:
     Type: AWS::CloudFront::Distribution
@@ -346,7 +346,7 @@ The following example specifies a basic multi-tenant distribution with a wildcar
 #### JSON
 <a name="aws-resource-cloudfront-distribution--examples--Create_a_multi-tenant_distribution_with_a_wildcard_certificate--json"></a>
 
-```
+```json
 {
   "Resources": {
     "MyMultiTenantDistribution": {
@@ -448,7 +448,7 @@ The following example specifies a basic multi-tenant distribution with a wildcar
 #### YAML
 <a name="aws-resource-cloudfront-distribution--examples--Create_a_multi-tenant_distribution_with_a_wildcard_certificate--yaml"></a>
 
-```
+```yaml
 Resources:
   MyMultiTenantDistribution:
     Type: AWS::CloudFront::Distribution

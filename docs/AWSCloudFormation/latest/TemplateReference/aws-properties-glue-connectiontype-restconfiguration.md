@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-connectiontype-restconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EntityConfigurations](#cfn-glue-connectiontype-restconfiguration-entityconfigurations)" : {{{{{Key}}: {{Value}}, ...}}},
   "[GlobalSourceConfiguration](#cfn-glue-connectiontype-restconfiguration-globalsourceconfiguration)" : {{SourceConfiguration}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-connectiontype-restconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EntityConfigurations](#cfn-glue-connectiontype-restconfiguration-entityconfigurations): {{
     {{Key}}: {{Value}}}}
   [GlobalSourceConfiguration](#cfn-glue-connectiontype-restconfiguration-globalsourceconfiguration): {{

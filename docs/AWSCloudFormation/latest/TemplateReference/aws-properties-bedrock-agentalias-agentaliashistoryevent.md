@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-agentalias-agentaliashistoryevent-syntax.json"></a>
 
-```
+```json
 {
   "[EndDate](#cfn-bedrock-agentalias-agentaliashistoryevent-enddate)" : {{String}},
   "[RoutingConfiguration](#cfn-bedrock-agentalias-agentaliashistoryevent-routingconfiguration)" : {{[ AgentAliasRoutingConfigurationListItem, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-agentalias-agentaliashistoryevent-syntax.yaml"></a>
 
-```
+```yaml
   [EndDate](#cfn-bedrock-agentalias-agentaliashistoryevent-enddate): {{String}}
   [RoutingConfiguration](#cfn-bedrock-agentalias-agentaliashistoryevent-routingconfiguration): {{
     - AgentAliasRoutingConfigurationListItem}}

@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrass-resourcedefinition-resourcedefinitionversion-syntax.json"></a>
 
-```
+```json
 {
   "[Resources](#cfn-greengrass-resourcedefinition-resourcedefinitionversion-resources)" : {{[ ResourceInstance, ... ]}}
 }
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrass-resourcedefinition-resourcedefinitionversion-syntax.yaml"></a>
 
-```
+```yaml
   [Resources](#cfn-greengrass-resourcedefinition-resourcedefinitionversion-resources): {{
     - ResourceInstance}}
 ```

@@ -60,7 +60,7 @@ https://autoscaling.amazonaws.com/?Action=DescribeAccountLimits
 #### Sample Response
 <a name="API_DescribeAccountLimits_Example_1_Response"></a>
 
-```
+```xml
 <DescribeAccountLimitsResponse xmlns="https://autoscaling.amazonaws.com/doc/2011-01-01/">
   <DescribeAccountLimitsResult>
     <NumberOfLaunchConfigurations>5</NumberOfLaunchConfigurations>

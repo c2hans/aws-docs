@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-groundstation-missionprofile-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::GroundStation::MissionProfile",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-groundstation-missionprofile-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::GroundStation::MissionProfile
 Properties:
   [ContactPostPassDurationSeconds](#cfn-groundstation-missionprofile-contactpostpassdurationseconds): {{Integer}}
@@ -190,7 +190,7 @@ The ID of the mission profile, such as `9940bf3b-d2ba-427e-9906-842b5e5d2296`.
 #### JSON
 <a name="aws-resource-groundstation-missionprofile--examples--Mission_Profile_With_Downlink_And_Uplink--json"></a>
 
-```
+```json
 {
   "Resources": {
     "MyMissionProfile": {
@@ -221,7 +221,7 @@ The ID of the mission profile, such as `9940bf3b-d2ba-427e-9906-842b5e5d2296`.
 #### YAML
 <a name="aws-resource-groundstation-missionprofile--examples--Mission_Profile_With_Downlink_And_Uplink--yaml"></a>
 
-```
+```yaml
 Resources:
   MyMissionProfile:
     Type: AWS::GroundStation::MissionProfile

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-destinationtableconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationDatabaseName](#cfn-kinesisfirehose-deliverystream-destinationtableconfiguration-destinationdatabasename)" : {{String}},
   "[DestinationTableName](#cfn-kinesisfirehose-deliverystream-destinationtableconfiguration-destinationtablename)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-destinationtableconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationDatabaseName](#cfn-kinesisfirehose-deliverystream-destinationtableconfiguration-destinationdatabasename): {{String}}
   [DestinationTableName](#cfn-kinesisfirehose-deliverystream-destinationtableconfiguration-destinationtablename): {{String}}
   [PartitionSpec](#cfn-kinesisfirehose-deliverystream-destinationtableconfiguration-partitionspec): {{

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-comprehend-documentclassifier-documentclassifierinputdataconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AugmentedManifests](#cfn-comprehend-documentclassifier-documentclassifierinputdataconfig-augmentedmanifests)" : {{[ AugmentedManifestsListItem, ... ]}},
   "[DataFormat](#cfn-comprehend-documentclassifier-documentclassifierinputdataconfig-dataformat)" : {{String}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-comprehend-documentclassifier-documentclassifierinputdataconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AugmentedManifests](#cfn-comprehend-documentclassifier-documentclassifierinputdataconfig-augmentedmanifests): {{
     - AugmentedManifestsListItem}}
   [DataFormat](#cfn-comprehend-documentclassifier-documentclassifierinputdataconfig-dataformat): {{String}}

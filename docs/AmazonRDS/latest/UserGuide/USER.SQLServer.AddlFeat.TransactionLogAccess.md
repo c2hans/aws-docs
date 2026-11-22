@@ -37,7 +37,7 @@ The following requirements must be met before enabling access to transaction log
 
 ****
 
-  ```
+  ```json
       {
       "Version":"2012-10-17",
       "Statement": [

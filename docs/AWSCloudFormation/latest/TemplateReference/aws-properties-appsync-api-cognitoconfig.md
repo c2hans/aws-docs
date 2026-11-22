@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appsync-api-cognitoconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AppIdClientRegex](#cfn-appsync-api-cognitoconfig-appidclientregex)" : {{String}},
   "[AwsRegion](#cfn-appsync-api-cognitoconfig-awsregion)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appsync-api-cognitoconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AppIdClientRegex](#cfn-appsync-api-cognitoconfig-appidclientregex): {{String}}
   [AwsRegion](#cfn-appsync-api-cognitoconfig-awsregion): {{String}}
   [UserPoolId](#cfn-appsync-api-cognitoconfig-userpoolid): {{String}}

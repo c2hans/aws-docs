@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-sheetimage-syntax.json"></a>
 
-```
+```json
 {
   "[Actions](#cfn-quicksight-template-sheetimage-actions)" : {{[ ImageCustomAction, ... ]}},
   "[ImageContentAltText](#cfn-quicksight-template-sheetimage-imagecontentalttext)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-sheetimage-syntax.yaml"></a>
 
-```
+```yaml
   [Actions](#cfn-quicksight-template-sheetimage-actions): {{
     - ImageCustomAction}}
   [ImageContentAltText](#cfn-quicksight-template-sheetimage-imagecontentalttext): {{String}}

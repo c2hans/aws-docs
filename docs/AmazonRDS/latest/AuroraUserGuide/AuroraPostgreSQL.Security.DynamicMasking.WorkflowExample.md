@@ -8,7 +8,7 @@ This section demonstrates a complete implementation of `pg_columnmask` using a s
 
 1. Create a sample table with some sensitive data:
 
-   ```
+   ```sql
    CREATE SCHEMA hr;
 
    CREATE TABLE hr.employees (
@@ -26,7 +26,7 @@ This section demonstrates a complete implementation of `pg_columnmask` using a s
 
 1. Create custom masking functions. The `mask_ssn` function uses `BEGIN ATOMIC` syntax for early binding semantics (see [Secure masking function development](AuroraPostgreSQL.Security.DynamicMasking.BestPractices.md#AuroraPostgreSQL.Security.DynamicMasking.BestPractices.MaskingDevelopment)). PL/pgSQL functions are also supported, as shown with `mask_salary`:
 
-   ```
+   ```sql
    CREATE OR REPLACE FUNCTION public.mask_ssn(ssn TEXT)
        RETURNS TEXT
        LANGUAGE SQL
@@ -45,7 +45,7 @@ This section demonstrates a complete implementation of `pg_columnmask` using a s
 
 1. Create multiple policies with different masking levels based on user roles:
 
-   ```
+   ```sql
    -- Create different roles
    CREATE ROLE analyst_role;
    CREATE ROLE support_role;
@@ -93,7 +93,7 @@ This section demonstrates a complete implementation of `pg_columnmask` using a s
 
 1. The following examples demonstrate how different users see data based on their role membership and policy weights.
 
-   ```
+   ```sql
    -- Create users
    CREATE USER sarah_intern;
    GRANT intern_role TO sarah_intern;
@@ -113,7 +113,7 @@ This section demonstrates a complete implementation of `pg_columnmask` using a s
 
    As an intern (strictest masking):
 
-   ```
+   ```sql
    SET ROLE sarah_intern;
 
    SELECT * FROM hr.employees;
@@ -125,7 +125,7 @@ This section demonstrates a complete implementation of `pg_columnmask` using a s
 
    As a support user (moderate masking):
 
-   ```
+   ```sql
    SET ROLE lisa_support;
 
    SELECT * FROM hr.employees;
@@ -137,7 +137,7 @@ This section demonstrates a complete implementation of `pg_columnmask` using a s
 
    As an analyst (lightest masking):
 
-   ```
+   ```sql
    SET ROLE mike_analyst;
 
    SELECT * FROM hr.employees;
@@ -149,7 +149,7 @@ This section demonstrates a complete implementation of `pg_columnmask` using a s
 
    As ethan\_support\_intern user which is both intern and support user:
 
-   ```
+   ```sql
    SET ROLE ethan_support_intern;
 
    -- masking policies appliable to this user: employee_mask_strict and employee_mask_moderate
@@ -168,7 +168,7 @@ This section demonstrates a complete implementation of `pg_columnmask` using a s
 
    As a john\_analyst\_intern which is both intern and analyst:
 
-   ```
+   ```sql
    SET ROLE john_analyst_intern;
 
    -- masking policies appliable to this user: employee_mask_strict and employee_mask_light

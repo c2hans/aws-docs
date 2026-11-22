@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amplify-app-customrule-syntax.json"></a>
 
-```
+```json
 {
   "[Condition](#cfn-amplify-app-customrule-condition)" : {{String}},
   "[Source](#cfn-amplify-app-customrule-source)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amplify-app-customrule-syntax.yaml"></a>
 
-```
+```yaml
   [Condition](#cfn-amplify-app-customrule-condition): {{String}}
   [Source](#cfn-amplify-app-customrule-source): {{String}}
   [Status](#cfn-amplify-app-customrule-status): {{String}}

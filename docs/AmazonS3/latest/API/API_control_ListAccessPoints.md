@@ -118,7 +118,7 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 
 The following request returns a list access points of the specified Amazon S3 on Outposts bucket `example-outpost-bucket`.
 
-```
+```HTTP
            GET /v20180820/accesspoint?Bucket=example-outpost-bucket&MaxResults=MaxResults&NextToken=NextToken HTTP/1.1
            Host: s3-outposts.<Region>.amazonaws.com
            Date: Wed, 28 Oct 2020 22:32:00 GMT

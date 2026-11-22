@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distribution-origingroupfailovercriteria-syntax.json"></a>
 
-```
+```json
 {
   "[StatusCodes](#cfn-cloudfront-distribution-origingroupfailovercriteria-statuscodes)" : {{StatusCodes}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distribution-origingroupfailovercriteria-syntax.yaml"></a>
 
-```
+```yaml
   [StatusCodes](#cfn-cloudfront-distribution-origingroupfailovercriteria-statuscodes): {{
     StatusCodes}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-config-remediationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Config::RemediationConfiguration",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-config-remediationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Config::RemediationConfiguration
 Properties:
   [Automatic](#cfn-config-remediationconfiguration-automatic): {{Boolean}}
@@ -149,7 +149,7 @@ The following example creates a remediation configuration using AWS Systems Mana
 #### JSON
 <a name="aws-resource-config-remediationconfiguration--examples--Remeditation_Configuration--json"></a>
 
-```
+```json
 {
     "BasicRemediationConfiguration": {
         "Type": "AWS::Config::RemediationConfiguration",
@@ -182,7 +182,7 @@ The following example creates a remediation configuration using AWS Systems Mana
 #### YAML
 <a name="aws-resource-config-remediationconfiguration--examples--Remeditation_Configuration--yaml"></a>
 
-```
+```yaml
 BasicRemediationConfiguration:
     Type: "AWS::Config::RemediationConfiguration"
     Properties:

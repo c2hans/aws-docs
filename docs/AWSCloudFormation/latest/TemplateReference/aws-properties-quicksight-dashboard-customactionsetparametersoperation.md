@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-customactionsetparametersoperation-syntax.json"></a>
 
-```
+```json
 {
   "[ParameterValueConfigurations](#cfn-quicksight-dashboard-customactionsetparametersoperation-parametervalueconfigurations)" : {{[ SetParameterValueConfiguration, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-customactionsetparametersoperation-syntax.yaml"></a>
 
-```
+```yaml
   [ParameterValueConfigurations](#cfn-quicksight-dashboard-customactionsetparametersoperation-parametervalueconfigurations): {{
     - SetParameterValueConfiguration}}
 ```

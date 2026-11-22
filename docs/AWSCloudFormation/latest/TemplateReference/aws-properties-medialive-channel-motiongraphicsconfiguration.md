@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-motiongraphicsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MotionGraphicsInsertion](#cfn-medialive-channel-motiongraphicsconfiguration-motiongraphicsinsertion)" : {{String}},
   "[MotionGraphicsSettings](#cfn-medialive-channel-motiongraphicsconfiguration-motiongraphicssettings)" : {{MotionGraphicsSettings}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-motiongraphicsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MotionGraphicsInsertion](#cfn-medialive-channel-motiongraphicsconfiguration-motiongraphicsinsertion): {{String}}
   [MotionGraphicsSettings](#cfn-medialive-channel-motiongraphicsconfiguration-motiongraphicssettings): {{
     MotionGraphicsSettings}}

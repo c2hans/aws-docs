@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sso-instanceaccesscontrolattributeconfiguration-accesscontrolattribute-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-sso-instanceaccesscontrolattributeconfiguration-accesscontrolattribute-key)" : {{String}},
   "[Value](#cfn-sso-instanceaccesscontrolattributeconfiguration-accesscontrolattribute-value)" : {{AccessControlAttributeValue}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sso-instanceaccesscontrolattributeconfiguration-accesscontrolattribute-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-sso-instanceaccesscontrolattributeconfiguration-accesscontrolattribute-key): {{String}}
   [Value](#cfn-sso-instanceaccesscontrolattributeconfiguration-accesscontrolattribute-value): {{
     AccessControlAttributeValue}}

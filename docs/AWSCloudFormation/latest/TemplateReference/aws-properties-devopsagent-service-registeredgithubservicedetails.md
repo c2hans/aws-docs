@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-service-registeredgithubservicedetails-syntax.json"></a>
 
-```
+```json
 {
   "[AppVariant](#cfn-devopsagent-service-registeredgithubservicedetails-appvariant)" : {{String}},
   "[AuthMode](#cfn-devopsagent-service-registeredgithubservicedetails-authmode)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-service-registeredgithubservicedetails-syntax.yaml"></a>
 
-```
+```yaml
   [AppVariant](#cfn-devopsagent-service-registeredgithubservicedetails-appvariant): {{String}}
   [AuthMode](#cfn-devopsagent-service-registeredgithubservicedetails-authmode): {{String}}
   [HostingType](#cfn-devopsagent-service-registeredgithubservicedetails-hostingtype): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-capacityprovider-autorepairconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ActionsStatus](#cfn-ecs-capacityprovider-autorepairconfiguration-actionsstatus)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-capacityprovider-autorepairconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ActionsStatus](#cfn-ecs-capacityprovider-autorepairconfiguration-actionsstatus): {{String}}
 ```
 

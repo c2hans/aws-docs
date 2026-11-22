@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-flow-stepaliasmapping-syntax.json"></a>
 
-```
+```json
 {
   "[StepAlias](#cfn-quicksight-flow-stepaliasmapping-stepalias)" : {{String}},
   "[StepId](#cfn-quicksight-flow-stepaliasmapping-stepid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-flow-stepaliasmapping-syntax.yaml"></a>
 
-```
+```yaml
   [StepAlias](#cfn-quicksight-flow-stepaliasmapping-stepalias): {{String}}
   [StepId](#cfn-quicksight-flow-stepaliasmapping-stepid): {{String}}
 ```

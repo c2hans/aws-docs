@@ -39,7 +39,7 @@ Your registry policy must grant permission for the `ecr:ReplicateImage` API acti
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement":[

@@ -27,7 +27,7 @@ Amazon AppStream configuration for a creation policy.
 #### JSON
 <a name="aws-attribute-creation-policy-app-stream-fleet-syntax-json"></a>
 
-```
+```json
 {
     "CreationPolicy": {
         "StartFleet": "{{Boolean}}"
@@ -38,7 +38,7 @@ Amazon AppStream configuration for a creation policy.
 #### YAML
 <a name="aws-attribute-creation-policy-app-stream-fleet-syntax-yaml"></a>
 
-```
+```yaml
 CreationPolicy:
   StartFleet: {{Boolean}}
 ```
@@ -58,7 +58,7 @@ Amazon EC2 Auto Scaling configuration for a creation policy.
 #### JSON
 <a name="aws-attribute-creation-policy-app-auto-scaling-syntax.json"></a>
 
-```
+```json
 "CreationPolicy" : {
   "AutoScalingCreationPolicy" : {
     "MinSuccessfulInstancesPercent" : {{Integer}}
@@ -73,7 +73,7 @@ Amazon EC2 Auto Scaling configuration for a creation policy.
 #### YAML
 <a name="aws-attribute-creation-policy-app-auto-scaling-syntax.yaml"></a>
 
-```
+```yaml
 CreationPolicy:
   AutoScalingCreationPolicy:
     MinSuccessfulInstancesPercent: {{Integer}}
@@ -122,7 +122,7 @@ To have instances wait for an Elastic Load Balancing health check before they si
 #### JSON
 <a name="aws-attribute-creationpolicy-example-1.json"></a>
 
-```
+```json
 "AutoScalingGroup": {
   "Type": "AWS::AutoScaling::AutoScalingGroup",
   "Properties": {
@@ -153,7 +153,7 @@ To have instances wait for an Elastic Load Balancing health check before they si
 #### YAML
 <a name="aws-attribute-creationpolicy-example-1.yaml"></a>
 
-```
+```yaml
 AutoScalingGroup:
   Type: AWS::AutoScaling::AutoScalingGroup
   Properties:
@@ -182,7 +182,7 @@ To signal the `WaitCondition` resource, use the [SignalResource](https://docs.aw
 #### JSON
 <a name="aws-attribute-creationpolicy-example-2.json"></a>
 
-```
+```json
 "WaitCondition" : {
     "Type" : "AWS::CloudFormation::WaitCondition",
     "CreationPolicy" : {
@@ -197,7 +197,7 @@ To signal the `WaitCondition` resource, use the [SignalResource](https://docs.aw
 #### YAML
 <a name="aws-attribute-creationpolicy-example-2.yaml"></a>
 
-```
+```yaml
 WaitCondition:
   Type: AWS::CloudFormation::WaitCondition
   CreationPolicy:

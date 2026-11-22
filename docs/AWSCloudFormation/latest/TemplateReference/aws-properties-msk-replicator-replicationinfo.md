@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-replicator-replicationinfo-syntax.json"></a>
 
-```
+```json
 {
   "[ConsumerGroupReplication](#cfn-msk-replicator-replicationinfo-consumergroupreplication)" : {{ConsumerGroupReplication}},
   "[SourceKafkaClusterArn](#cfn-msk-replicator-replicationinfo-sourcekafkaclusterarn)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-replicator-replicationinfo-syntax.yaml"></a>
 
-```
+```yaml
   [ConsumerGroupReplication](#cfn-msk-replicator-replicationinfo-consumergroupreplication): {{
     ConsumerGroupReplication}}
   [SourceKafkaClusterArn](#cfn-msk-replicator-replicationinfo-sourcekafkaclusterarn): {{String}}

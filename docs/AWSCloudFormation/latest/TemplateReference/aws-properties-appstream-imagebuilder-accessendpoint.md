@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appstream-imagebuilder-accessendpoint-syntax.json"></a>
 
-```
+```json
 {
   "[EndpointType](#cfn-appstream-imagebuilder-accessendpoint-endpointtype)" : {{String}},
   "[VpceId](#cfn-appstream-imagebuilder-accessendpoint-vpceid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appstream-imagebuilder-accessendpoint-syntax.yaml"></a>
 
-```
+```yaml
   [EndpointType](#cfn-appstream-imagebuilder-accessendpoint-endpointtype): {{String}}
   [VpceId](#cfn-appstream-imagebuilder-accessendpoint-vpceid): {{String}}
 ```
@@ -39,11 +39,11 @@ The type of interface endpoint.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `STREAMING`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `VpceId`  <a name="cfn-appstream-imagebuilder-accessendpoint-vpceid"></a>
 The identifier (ID) of the VPC in which the interface endpoint is used.
 *Required*: Yes
 *Type*: String
 *Minimum*: `1`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

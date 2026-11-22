@@ -8,7 +8,7 @@ Collects security data from Palo Alto Prisma Cloud using Access Key and Secret K
 
 Configure the Palo Alto Prisma Cloud source with the following parameters:
 
-```
+```yaml
 source:
   paloaltonetworks_prismacloud:
     cspm_base_url: "https://api.prismacloud.io"

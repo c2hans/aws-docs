@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-testbotaliassettings-syntax.json"></a>
 
-```
+```json
 {
   "[BotAliasLocaleSettings](#cfn-lex-bot-testbotaliassettings-botaliaslocalesettings)" : {{[ BotAliasLocaleSettingsItem, ... ]}},
   "[ConversationLogSettings](#cfn-lex-bot-testbotaliassettings-conversationlogsettings)" : {{ConversationLogSettings}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-testbotaliassettings-syntax.yaml"></a>
 
-```
+```yaml
   [BotAliasLocaleSettings](#cfn-lex-bot-testbotaliassettings-botaliaslocalesettings): {{
     - BotAliasLocaleSettingsItem}}
   [ConversationLogSettings](#cfn-lex-bot-testbotaliassettings-conversationlogsettings): {{

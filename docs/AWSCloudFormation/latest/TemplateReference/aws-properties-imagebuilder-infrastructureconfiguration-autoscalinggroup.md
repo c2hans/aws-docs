@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-infrastructureconfiguration-autoscalinggroup-syntax.json"></a>
 
-```
+```json
 {
   "[CapacityWaitTimeoutSeconds](#cfn-imagebuilder-infrastructureconfiguration-autoscalinggroup-capacitywaittimeoutseconds)" : {{Integer}},
   "[Name](#cfn-imagebuilder-infrastructureconfiguration-autoscalinggroup-name)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-infrastructureconfiguration-autoscalinggroup-syntax.yaml"></a>
 
-```
+```yaml
   [CapacityWaitTimeoutSeconds](#cfn-imagebuilder-infrastructureconfiguration-autoscalinggroup-capacitywaittimeoutseconds): {{Integer}}
   [Name](#cfn-imagebuilder-infrastructureconfiguration-autoscalinggroup-name): {{String}}
 ```

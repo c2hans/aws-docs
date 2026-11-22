@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-memory-episodicmemorystrategy-syntax.json"></a>
 
-```
+```json
 {
   "[CreatedAt](#cfn-bedrockagentcore-memory-episodicmemorystrategy-createdat)" : {{String}},
   "[Description](#cfn-bedrockagentcore-memory-episodicmemorystrategy-description)" : {{String}},
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-memory-episodicmemorystrategy-syntax.yaml"></a>
 
-```
+```yaml
   [CreatedAt](#cfn-bedrockagentcore-memory-episodicmemorystrategy-createdat): {{String}}
   [Description](#cfn-bedrockagentcore-memory-episodicmemorystrategy-description): {{String}}
   [MemoryRecordSchema](#cfn-bedrockagentcore-memory-episodicmemorystrategy-memoryrecordschema): {{

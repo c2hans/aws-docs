@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codepipeline-pipeline-stagedeclaration-syntax.json"></a>
 
-```
+```json
 {
   "[Actions](#cfn-codepipeline-pipeline-stagedeclaration-actions)" : {{[ ActionDeclaration, ... ]}},
   "[BeforeEntry](#cfn-codepipeline-pipeline-stagedeclaration-beforeentry)" : {{BeforeEntryConditions}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codepipeline-pipeline-stagedeclaration-syntax.yaml"></a>
 
-```
+```yaml
   [Actions](#cfn-codepipeline-pipeline-stagedeclaration-actions): {{
     - ActionDeclaration}}
   [BeforeEntry](#cfn-codepipeline-pipeline-stagedeclaration-beforeentry): {{

@@ -21,7 +21,7 @@ The sample Amazon Linux 2023 image description automatically installs the utilit
 
 If you are using Amazon Linux 2023, you can install the `nitro-tpm-attest` utility from the Amazon Linux repository as follows.
 
-```
+```bash
 sudo yum install aws-nitro-tpm-tools
 ```
 
@@ -38,7 +38,7 @@ When you run the command, you can specify the following optional parameters:
 **To retrieve the Attestation Document**
 Use the following command and optional parameters:
 
-```
+```bash
 /usr/bin/nitro-tpm-attest \
 --public-key {{rsa_public_key}} \
 --user-data {{user_data}} \

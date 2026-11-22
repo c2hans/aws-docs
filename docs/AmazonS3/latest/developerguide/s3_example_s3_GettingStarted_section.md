@@ -19,7 +19,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/003-s3-gettingstarted) repository.
 
-```
+```bash
 #!/bin/bash
 # S3 Getting Started - Create a bucket, upload and download objects, copy to a
 # folder prefix, enable versioning, configure encryption and public access

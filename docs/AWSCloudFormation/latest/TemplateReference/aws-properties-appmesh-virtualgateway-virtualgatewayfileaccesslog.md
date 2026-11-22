@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-virtualgateway-virtualgatewayfileaccesslog-syntax.json"></a>
 
-```
+```json
 {
   "[Format](#cfn-appmesh-virtualgateway-virtualgatewayfileaccesslog-format)" : {{LoggingFormat}},
   "[Path](#cfn-appmesh-virtualgateway-virtualgatewayfileaccesslog-path)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-virtualgateway-virtualgatewayfileaccesslog-syntax.yaml"></a>
 
-```
+```yaml
   [Format](#cfn-appmesh-virtualgateway-virtualgatewayfileaccesslog-format): {{
     LoggingFormat}}
   [Path](#cfn-appmesh-virtualgateway-virtualgatewayfileaccesslog-path): {{String}}

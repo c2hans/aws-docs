@@ -53,7 +53,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-ratebasedstatement-syntax.json"></a>
 
-```
+```json
 {
   "[AggregateKeyType](#cfn-wafv2-webacl-ratebasedstatement-aggregatekeytype)" : {{String}},
   "[CustomKeys](#cfn-wafv2-webacl-ratebasedstatement-customkeys)" : {{[ RateBasedStatementCustomKey, ... ]}},
@@ -67,7 +67,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-ratebasedstatement-syntax.yaml"></a>
 
-```
+```yaml
   [AggregateKeyType](#cfn-wafv2-webacl-ratebasedstatement-aggregatekeytype): {{String}}
   [CustomKeys](#cfn-wafv2-webacl-ratebasedstatement-customkeys): {{
     - RateBasedStatementCustomKey}}
@@ -167,7 +167,7 @@ The following example listing shows a rate-based rule statement that counts and 
 #### YAML
 <a name="aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_all_requests_that_match_a_scope-down_statement--yaml"></a>
 
-```
+```yaml
 Rules:
 - Name: rbrCountAll
   Priority: 0
@@ -193,7 +193,7 @@ Rules:
 #### JSON
 <a name="aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_all_requests_that_match_a_scope-down_statement--json"></a>
 
-```
+```json
  "Rules": [
     {
       "Name": "rbrCountAll",
@@ -237,7 +237,7 @@ When you rate limit on only the IP address or only a forwarded IP address, you s
 #### YAML
 <a name="aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_requests_based_on_an_IP_address--yaml"></a>
 
-```
+```yaml
 Rules:
 - Name: rbrNoCustomKeys
   Priority: 1
@@ -259,7 +259,7 @@ Rules:
 #### JSON
 <a name="aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_requests_based_on_an_IP_address--json"></a>
 
-```
+```json
  "Rules": [
     {
       "Name": "rbrNoCustomKeys",
@@ -296,7 +296,7 @@ To rate limit using a combination of an IP address with one or more other keys, 
 #### YAML
 <a name="aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_requests_based_on_an_IP_address_and_a_header--yaml"></a>
 
-```
+```yaml
 Rules:
 - Name: rbrCustomKeysA
   Priority: 2
@@ -325,7 +325,7 @@ Rules:
 #### JSON
 <a name="aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_requests_based_on_an_IP_address_and_a_header--json"></a>
 
-```
+```json
  "Rules": [
     {
       "Name": "rbrCustomKeysA",
@@ -376,7 +376,7 @@ The following example listing shows a rate-based rule statement that aggregates 
 #### YAML
 <a name="aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_requests_based_on_three_custom_aggregate_keys--yaml"></a>
 
-```
+```yaml
 Rules:
 - Name: rbrCustomKeysB
   Priority: 3
@@ -405,7 +405,7 @@ Rules:
 #### JSON
 <a name="aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_requests_based_on_three_custom_aggregate_keys--json"></a>
 
-```
+```json
  "Rules": [
     {
       "Name": "rbrCustomKeysB",
@@ -465,7 +465,7 @@ Following the geo match statement, the rate-based rule uses a scope-down stateme
 #### YAML
 <a name="aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_requests_from_individual_states_in_a_country--yaml"></a>
 
-```
+```yaml
 Rules:
 - Name: labelUSStates
   Priority: 4
@@ -503,7 +503,7 @@ Rules:
 #### JSON
 <a name="aws-properties-wafv2-webacl-ratebasedstatement--examples--Rate_limit_requests_from_individual_states_in_a_country--json"></a>
 
-```
+```json
  "Rules": [
     {
       "Name": "labelUSStates",

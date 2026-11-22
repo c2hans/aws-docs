@@ -20,7 +20,7 @@ For more information about using the `aws:SourceIp` condition key, including inf
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {

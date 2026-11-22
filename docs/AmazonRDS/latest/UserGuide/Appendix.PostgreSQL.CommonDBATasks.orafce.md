@@ -17,13 +17,13 @@ RDS for PostgreSQL doesn't support the `utl_file` package that is part of the or
 
 1. Turn on the orafce extension with the `CREATE EXTENSION` statement.
 
-   ```
+   ```sql
    CREATE EXTENSION orafce;
    ```
 
 1. Transfer ownership of the oracle schema to the rds\_superuser role with the `ALTER SCHEMA` statement.
 
-   ```
+   ```sql
    ALTER SCHEMA oracle OWNER TO rds_superuser;
    ```
 

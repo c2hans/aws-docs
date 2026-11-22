@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-comprehend-flywheel-datasecurityconfig-syntax.json"></a>
 
-```
+```json
 {
   "[DataLakeKmsKeyId](#cfn-comprehend-flywheel-datasecurityconfig-datalakekmskeyid)" : {{String}},
   "[ModelKmsKeyId](#cfn-comprehend-flywheel-datasecurityconfig-modelkmskeyid)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-comprehend-flywheel-datasecurityconfig-syntax.yaml"></a>
 
-```
+```yaml
   [DataLakeKmsKeyId](#cfn-comprehend-flywheel-datasecurityconfig-datalakekmskeyid): {{String}}
   [ModelKmsKeyId](#cfn-comprehend-flywheel-datasecurityconfig-modelkmskeyid): {{String}}
   [VolumeKmsKeyId](#cfn-comprehend-flywheel-datasecurityconfig-volumekmskeyid): {{String}}

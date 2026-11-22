@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-rulegroup-labelmatchstatement-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-wafv2-rulegroup-labelmatchstatement-key)" : {{String}},
   "[Scope](#cfn-wafv2-rulegroup-labelmatchstatement-scope)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-rulegroup-labelmatchstatement-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-wafv2-rulegroup-labelmatchstatement-key): {{String}}
   [Scope](#cfn-wafv2-rulegroup-labelmatchstatement-scope): {{String}}
 ```

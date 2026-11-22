@@ -26,7 +26,7 @@ If you use Amazon EMR along with EMRFS to upload CSE-KMS encrypted Parquet files
 
 In a [CREATE TABLE](create-table.md) statement, use a `TBLPROPERTIES` clause that specifies `encryption_option='CSE_KMS'` and `kms_key='aws_kms_key_arn'`, as in the following example.
 
-```
+```sql
 CREATE EXTERNAL TABLE 'my_encrypted_data' (
    `n_nationkey` int,
    `n_name` string,
@@ -53,7 +53,7 @@ When these properties are configured,
 
 In a [CREATE TABLE](create-table.md) statement, use a `TBLPROPERTIES` clause that specifies `has_encrypted_data='true'`, as in the following example.
 
-```
+```sql
 CREATE EXTERNAL TABLE 'my_encrypted_data' (
    `n_nationkey` int,
    `n_name` string,
@@ -92,7 +92,7 @@ By default, newly inserted data files will be encrypted using the encryption con
 
 In a [CREATE TABLE](create-table.md) statement, use a `TBLPROPERTIES` clause that specifies `encryption_option='SSE_S3 | SSE_KMS | CSE_KMS'` and `kms_key='aws_kms_key_arn'`, as in the following example.
 
-```
+```sql
 CREATE EXTERNAL TABLE 'my_encrypted_data' (
    `n_nationkey` int,
    `n_name` string,

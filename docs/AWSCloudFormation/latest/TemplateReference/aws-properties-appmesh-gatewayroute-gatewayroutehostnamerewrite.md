@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-gatewayroute-gatewayroutehostnamerewrite-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultTargetHostname](#cfn-appmesh-gatewayroute-gatewayroutehostnamerewrite-defaulttargethostname)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-gatewayroute-gatewayroutehostnamerewrite-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultTargetHostname](#cfn-appmesh-gatewayroute-gatewayroutehostnamerewrite-defaulttargethostname): {{String}}
 ```
 

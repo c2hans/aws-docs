@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-mailmanagerruleset-invokelambdaaction-syntax.json"></a>
 
-```
+```json
 {
   "[ActionFailurePolicy](#cfn-ses-mailmanagerruleset-invokelambdaaction-actionfailurepolicy)" : {{String}},
   "[FunctionArn](#cfn-ses-mailmanagerruleset-invokelambdaaction-functionarn)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-mailmanagerruleset-invokelambdaaction-syntax.yaml"></a>
 
-```
+```yaml
   [ActionFailurePolicy](#cfn-ses-mailmanagerruleset-invokelambdaaction-actionfailurepolicy): {{String}}
   [FunctionArn](#cfn-ses-mailmanagerruleset-invokelambdaaction-functionarn): {{String}}
   [InvocationType](#cfn-ses-mailmanagerruleset-invokelambdaaction-invocationtype): {{String}}

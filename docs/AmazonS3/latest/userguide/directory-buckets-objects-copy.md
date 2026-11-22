@@ -120,7 +120,7 @@ If you want to copy objects to a bucket that uses the bucket owner enforced sett
 
 **Example**
 
-```
+```Java V2
  public static void copyBucketObject (S3Client s3, String sourceBucket, String objectKey, String targetBucket) {
       CopyObjectRequest copyReq = CopyObjectRequest.builder()
           .sourceBucket(sourceBucket)
@@ -149,7 +149,7 @@ If you want to copy objects to a bucket that uses the bucket owner enforced sett
 
 The following `copy-object` example command shows how you can use the AWS CLI to copy an object from one bucket to another bucket. You can copy objects between bucket types. To run this command, replace the user input placeholders with your own information.
 
-```
+```bash
 aws s3api copy-object --copy-source {{SOURCE_BUCKET/SOURCE_KEY_NAME}} --key {{TARGET_KEY_NAME}} --bucket {{TARGET_BUCKET_NAME}}
 ```
 

@@ -43,7 +43,7 @@ For T3 instances, you must launch the instance on a Dedicated Host to use a tena
 **To modify instance tenancy or affinity**
 Use the [modify-instance-placement](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-placement.html) command. The following example changes the specified instance's affinity from `default` to `host`, and specifies the Dedicated Host that the instance has affinity with.
 
-```
+```bash
 aws ec2 modify-instance-placement \
     --instance-id {{i-1234567890abcdef0}} \
     --affinity {{host}} \
@@ -57,7 +57,7 @@ aws ec2 modify-instance-placement \
 **To modify instance tenancy or affinity**
 Use the [Edit-EC2InstancePlacement](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstancePlacement.html) cmdlet. The following example changes the specified instance's affinity from `default` to `host`, and specifies the Dedicated Host that the instance has affinity with.
 
-```
+```powershell
 Edit-EC2InstancePlacement `
     -InstanceId {{i-1234567890abcdef0}} `
     -Affinity {{host}} `

@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-originrequestpolicy-originrequestpolicyconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Comment](#cfn-cloudfront-originrequestpolicy-originrequestpolicyconfig-comment)" : {{String}},
   "[CookiesConfig](#cfn-cloudfront-originrequestpolicy-originrequestpolicyconfig-cookiesconfig)" : {{CookiesConfig}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-originrequestpolicy-originrequestpolicyconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Comment](#cfn-cloudfront-originrequestpolicy-originrequestpolicyconfig-comment): {{String}}
   [CookiesConfig](#cfn-cloudfront-originrequestpolicy-originrequestpolicyconfig-cookiesconfig): {{
     CookiesConfig}}

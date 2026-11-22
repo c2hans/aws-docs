@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-input-routersettings-syntax.json"></a>
 
-```
+```json
 {
   "[Destinations](#cfn-medialive-input-routersettings-destinations)" : {{[ RouterDestinationSettings, ... ]}},
   "[EncryptionType](#cfn-medialive-input-routersettings-encryptiontype)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-input-routersettings-syntax.yaml"></a>
 
-```
+```yaml
   [Destinations](#cfn-medialive-input-routersettings-destinations): {{
     - RouterDestinationSettings}}
   [EncryptionType](#cfn-medialive-input-routersettings-encryptiontype): {{String}}

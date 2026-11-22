@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-cluster-clusterorchestratorslurmconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AccountingDatabase](#cfn-sagemaker-cluster-clusterorchestratorslurmconfig-accountingdatabase)" : {{ClusterAccountingDatabase}},
   "[SlurmConfigStrategy](#cfn-sagemaker-cluster-clusterorchestratorslurmconfig-slurmconfigstrategy)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-cluster-clusterorchestratorslurmconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AccountingDatabase](#cfn-sagemaker-cluster-clusterorchestratorslurmconfig-accountingdatabase): {{
     ClusterAccountingDatabase}}
   [SlurmConfigStrategy](#cfn-sagemaker-cluster-clusterorchestratorslurmconfig-slurmconfigstrategy): {{String}}

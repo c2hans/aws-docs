@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-configurationseteventdestination-dimensionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultDimensionValue](#cfn-ses-configurationseteventdestination-dimensionconfiguration-defaultdimensionvalue)" : {{String}},
   "[DimensionName](#cfn-ses-configurationseteventdestination-dimensionconfiguration-dimensionname)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-configurationseteventdestination-dimensionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultDimensionValue](#cfn-ses-configurationseteventdestination-dimensionconfiguration-defaultdimensionvalue): {{String}}
   [DimensionName](#cfn-ses-configurationseteventdestination-dimensionconfiguration-dimensionname): {{String}}
   [DimensionValueSource](#cfn-ses-configurationseteventdestination-dimensionconfiguration-dimensionvaluesource): {{String}}

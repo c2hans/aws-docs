@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-knowledgebase-hierarchicalchunkingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[LevelConfigurations](#cfn-wisdom-knowledgebase-hierarchicalchunkingconfiguration-levelconfigurations)" : {{[ HierarchicalChunkingLevelConfiguration, ... ]}},
   "[OverlapTokens](#cfn-wisdom-knowledgebase-hierarchicalchunkingconfiguration-overlaptokens)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-knowledgebase-hierarchicalchunkingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [LevelConfigurations](#cfn-wisdom-knowledgebase-hierarchicalchunkingconfiguration-levelconfigurations): {{
     - HierarchicalChunkingLevelConfiguration}}
   [OverlapTokens](#cfn-wisdom-knowledgebase-hierarchicalchunkingconfiguration-overlaptokens): {{Number}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticache-replicationgroup-readendpoint-syntax.json"></a>
 
-```
+```json
 {
   "[Addresses](#cfn-elasticache-replicationgroup-readendpoint-addresses)" : {{String}},
   "[AddressesList](#cfn-elasticache-replicationgroup-readendpoint-addresseslist)" : {{[ String, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticache-replicationgroup-readendpoint-syntax.yaml"></a>
 
-```
+```yaml
   [Addresses](#cfn-elasticache-replicationgroup-readendpoint-addresses): {{String}}
   [AddressesList](#cfn-elasticache-replicationgroup-readendpoint-addresseslist): {{
     - String}}

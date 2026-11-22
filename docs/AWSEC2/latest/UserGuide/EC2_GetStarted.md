@@ -101,7 +101,7 @@ You can connect to your Linux instance using any SSH client. If you are running 
 
 1. Copy the example SSH command. The following is an example, where {{key-pair-name}}.pem is the name of your private key file, {{ec2-user}} is the username associated with the image, and the string after the @ symbol is the public DNS name of the instance.
 
-   ```
+   ```bash
    ssh -i {{key-pair-name}}.pem {{ec2-user}}@{{ec2-198-51-100-1.us-east-2.compute.amazonaws.com}}
    ```
 

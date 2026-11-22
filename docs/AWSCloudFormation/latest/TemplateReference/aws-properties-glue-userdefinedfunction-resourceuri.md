@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-userdefinedfunction-resourceuri-syntax.json"></a>
 
-```
+```json
 {
   "[ResourceType](#cfn-glue-userdefinedfunction-resourceuri-resourcetype)" : {{String}},
   "[Uri](#cfn-glue-userdefinedfunction-resourceuri-uri)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-userdefinedfunction-resourceuri-syntax.yaml"></a>
 
-```
+```yaml
   [ResourceType](#cfn-glue-userdefinedfunction-resourceuri-resourcetype): {{String}}
   [Uri](#cfn-glue-userdefinedfunction-resourceuri-uri): {{String}}
 ```

@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cognito-terms-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Cognito::Terms",
   "Properties" : {
@@ -44,7 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cognito-terms-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Cognito::Terms
 Properties:
   [ClientId](#cfn-cognito-terms-clientid): {{String}}

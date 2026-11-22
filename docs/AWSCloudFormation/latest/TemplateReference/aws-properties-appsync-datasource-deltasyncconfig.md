@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appsync-datasource-deltasyncconfig-syntax.json"></a>
 
-```
+```json
 {
   "[BaseTableTTL](#cfn-appsync-datasource-deltasyncconfig-basetablettl)" : {{String}},
   "[DeltaSyncTableName](#cfn-appsync-datasource-deltasyncconfig-deltasynctablename)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appsync-datasource-deltasyncconfig-syntax.yaml"></a>
 
-```
+```yaml
   [BaseTableTTL](#cfn-appsync-datasource-deltasyncconfig-basetablettl): {{String}}
   [DeltaSyncTableName](#cfn-appsync-datasource-deltasyncconfig-deltasynctablename): {{String}}
   [DeltaSyncTableTTL](#cfn-appsync-datasource-deltasyncconfig-deltasynctablettl): {{String}}

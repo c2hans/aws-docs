@@ -17,7 +17,7 @@ Before using OAuth with AWS MCP Server, ensure the following:
 
 **Attach the managed policy**
 
-```
+```bash
 aws iam attach-role-policy \
   --role-name MyRole \
   --policy-arn arn:aws:iam::aws:policy/AWSMCPSignInOAuthAccessPolicy
@@ -25,7 +25,7 @@ aws iam attach-role-policy \
 
 **Or use a custom IAM policy**
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -49,14 +49,14 @@ Add the AWS MCP Server endpoint directly to your MCP client. Unlike the SigV4 pr
 ------
 #### [ Kiro CLI (2.11 or later) ]
 
-```
+```bash
 kiro-cli mcp add --name aws-mcp --url https://aws-mcp.us-east-1.api.aws/mcp
 ```
 
 ------
 #### [ Claude Code ]
 
-```
+```bash
 claude mcp add aws-mcp https://aws-mcp.us-east-1.api.aws/mcp --transport http
 ```
 
@@ -73,14 +73,14 @@ Add as a remote MCP server with URL: `https://aws-mcp.us-east-1.api.aws/mcp?oaut
 ------
 #### [ Codex ]
 
-```
+```bash
 codex mcp add aws-mcp --url https://aws-mcp.us-east-1.api.aws/mcp?oauth=initialize
 ```
 
 ------
 #### [ Gemini CLI ]
 
-```
+```bash
 gemini mcp add aws-mcp https://aws-mcp.us-east-1.api.aws/mcp?oauth=initialize --transport http
 ```
 
@@ -89,7 +89,7 @@ gemini mcp add aws-mcp https://aws-mcp.us-east-1.api.aws/mcp?oauth=initialize --
 
 Add the server to `.vscode/mcp.json` in your workspace, or run *MCP: Open User Configuration* from the Command Palette to configure it for every workspace:
 
-```
+```json
 {
   "servers": {
     "aws-mcp": {
@@ -107,7 +107,7 @@ Visual Studio Code uses a `servers` top-level key rather than the `mcpServers` k
 
 Add the server to `~/.copilot/mcp-config.json` to configure it for all projects, or to `.github/mcp.json` (or `.mcp.json` at your repository root) to configure it for a single project:
 
-```
+```json
 {
   "mcpServers": {
     "aws-mcp": {
@@ -181,7 +181,7 @@ This flow is designed for:
 
 Run the following AWS CLI command to request a token:
 
-```
+```bash
 aws signin create-oauth2-token-with-iam \
     --grant-type client_credentials \
     --resource aws-mcp.amazonaws.com \
@@ -190,7 +190,7 @@ aws signin create-oauth2-token-with-iam \
 
 The response includes an access token:
 
-```
+```json
 {
     "accessToken": "<token>",
     "tokenType": "Bearer",
@@ -231,7 +231,7 @@ Require specific client authentication methods. Values: `none`, `client_secret_b
 
 For example, the following policy restricts OAuth access to localhost redirects only:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -286,7 +286,7 @@ When you make API calls using OAuth access tokens, AWS includes the `aws:SignInS
 
 The following example shows a CloudTrail log entry for an `AuthorizeOAuth2Access` event:
 
-```
+```json
 {
     "eventVersion": "1.11",
     "userIdentity": {
@@ -317,7 +317,7 @@ The following example shows a CloudTrail log entry for an `AuthorizeOAuth2Access
 
 The following example shows a CloudTrail log entry for a `CreateOAuth2Token` event:
 
-```
+```json
 {
     "eventVersion": "1.11",
     "userIdentity": {

@@ -94,7 +94,7 @@ To use the following AWS CLI example commands to create a namespace in your tabl
 
 1. Create a new namespace in your table bucket by running the following command:
 
-   ```
+   ```bash
    aws s3tables create-namespace \
    --table-bucket-arn arn:aws:s3tables:{{us-east-1}}:{{111122223333}}:bucket/{{amzn-s3-demo-table-bucket}} \
    --namespace {{my_namespace}}
@@ -102,20 +102,20 @@ To use the following AWS CLI example commands to create a namespace in your tabl
 
    1. Confirm that your namespace was created successfully by running the following command:
 
-     ```
+     ```bash
      aws s3tables list-namespaces \
      --table-bucket-arn arn:aws:s3tables:{{us-east-1}}:{{111122223333}}:bucket/{{amzn-s3-demo-table-bucket}}
      ```
 
 1. Create a new table with a table schema by running the following command:
 
-   ```
+   ```bash
    aws s3tables create-table --cli-input-json file://{{mytabledefinition.json}}
    ```
 
    For the `mytabledefinition.json` file, use the following example table definition:
 
-   ```
+   ```json
    {
        "tableBucketARN": "arn:aws:s3tables:{{us-east-1}}:{{111122223333}}:bucket/{{amzn-s3-demo-table-bucket}}",
        "namespace": "{{my_namespace}}",

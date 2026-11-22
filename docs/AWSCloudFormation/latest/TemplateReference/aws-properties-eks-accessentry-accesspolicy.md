@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-accessentry-accesspolicy-syntax.json"></a>
 
-```
+```json
 {
   "[AccessScope](#cfn-eks-accessentry-accesspolicy-accessscope)" : {{AccessScope}},
   "[PolicyArn](#cfn-eks-accessentry-accesspolicy-policyarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-accessentry-accesspolicy-syntax.yaml"></a>
 
-```
+```yaml
   [AccessScope](#cfn-eks-accessentry-accesspolicy-accessscope): {{
     AccessScope}}
   [PolicyArn](#cfn-eks-accessentry-accesspolicy-policyarn): {{String}}

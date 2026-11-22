@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-advancedconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AlternateTargetGroupArn](#cfn-ecs-service-advancedconfiguration-alternatetargetgrouparn)" : {{String}},
   "[ProductionListenerRule](#cfn-ecs-service-advancedconfiguration-productionlistenerrule)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-advancedconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AlternateTargetGroupArn](#cfn-ecs-service-advancedconfiguration-alternatetargetgrouparn): {{String}}
   [ProductionListenerRule](#cfn-ecs-service-advancedconfiguration-productionlistenerrule): {{String}}
   [RoleArn](#cfn-ecs-service-advancedconfiguration-rolearn): {{String}}

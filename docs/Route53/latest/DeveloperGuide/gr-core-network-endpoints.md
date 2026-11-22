@@ -9,7 +9,7 @@ A *core network endpoint* connects a global resolver to an AWS Cloud WAN (Cloud 
 A core network endpoint connects one global resolver to one Cloud WAN core network. At this time, a global resolver supports a single core network endpoint. For more information about Cloud WAN and core networks, see the [AWS Cloud WAN section of the *AWS Network Manager User Guide*](https://docs.aws.amazon.com/network-manager/latest/cloudwan/what-is-cloudwan.html).
 
 **Note**
-Core networks use an attached core network policy. To enable closest-Region routing so that clients get the most out of a global resolver that you connect to a Cloud WAN core network, update your core network policy to version `2026.10`.
+Core networks use an attached core network policy. To enable closest-Region routing so that clients get the most out of a global resolver that you connect to a Cloud WAN core network, update your core network policy to version `2026.10`. For more information, see [Core network policy versions](https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan-policies-json.html#cloudwan-version-json).
 
 **Note**
 When you connect a core network, the segments of that core network become available as access sources for every AWS Region where your global resolver runs. Only connect core networks that you trust as sources of DNS traffic.

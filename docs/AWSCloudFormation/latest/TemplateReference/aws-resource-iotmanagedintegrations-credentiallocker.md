@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iotmanagedintegrations-credentiallocker-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoTManagedIntegrations::CredentialLocker",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iotmanagedintegrations-credentiallocker-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoTManagedIntegrations::CredentialLocker
 Properties:
   [Name](#cfn-iotmanagedintegrations-credentiallocker-name): {{String}}

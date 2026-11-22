@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-connectiontype-responseextractionmapping-syntax.json"></a>
 
-```
+```json
 {
   "[ContentPath](#cfn-glue-connectiontype-responseextractionmapping-contentpath)" : {{String}},
   "[HeaderKey](#cfn-glue-connectiontype-responseextractionmapping-headerkey)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-connectiontype-responseextractionmapping-syntax.yaml"></a>
 
-```
+```yaml
   [ContentPath](#cfn-glue-connectiontype-responseextractionmapping-contentpath): {{String}}
   [HeaderKey](#cfn-glue-connectiontype-responseextractionmapping-headerkey): {{String}}
 ```

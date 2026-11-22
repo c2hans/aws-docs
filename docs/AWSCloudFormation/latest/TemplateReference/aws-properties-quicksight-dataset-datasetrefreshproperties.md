@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-datasetrefreshproperties-syntax.json"></a>
 
-```
+```json
 {
   "[FailureConfiguration](#cfn-quicksight-dataset-datasetrefreshproperties-failureconfiguration)" : {{RefreshFailureConfiguration}},
   "[RefreshConfiguration](#cfn-quicksight-dataset-datasetrefreshproperties-refreshconfiguration)" : {{RefreshConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-datasetrefreshproperties-syntax.yaml"></a>
 
-```
+```yaml
   [FailureConfiguration](#cfn-quicksight-dataset-datasetrefreshproperties-failureconfiguration): {{
     RefreshFailureConfiguration}}
   [RefreshConfiguration](#cfn-quicksight-dataset-datasetrefreshproperties-refreshconfiguration): {{

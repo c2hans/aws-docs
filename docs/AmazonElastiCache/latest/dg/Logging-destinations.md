@@ -25,7 +25,7 @@ You must have the following permissions settings to configure ElastiCache to sen
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -79,7 +79,7 @@ You must have the following permissions to configure ElastiCache to send logs to
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

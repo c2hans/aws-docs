@@ -80,7 +80,7 @@ The `Condition` section in this example restricts the key to a single log group 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "key-default-1",
@@ -126,7 +126,7 @@ The `Condition` section in this example limits the use of the AWS KMS key to the
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "key-default-1",
@@ -235,7 +235,7 @@ Alternatively, to grant the full set of permissions for both associating a key a
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -349,7 +349,7 @@ If you have a log group that you encrypted previously and now want to change the
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Id": "key-default-1",
@@ -415,7 +415,7 @@ If you have a log group that you encrypted previously and now want to change the
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Id": "key-default-1",

@@ -54,7 +54,7 @@ The IAM policy that you create and use with App Studio should contain only the m
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement": [
@@ -102,7 +102,7 @@ To use Amazon Bedrock with App Studio, administrators must create an IAM role to
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

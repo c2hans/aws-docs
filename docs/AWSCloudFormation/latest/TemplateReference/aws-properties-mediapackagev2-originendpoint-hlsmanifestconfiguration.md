@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackagev2-originendpoint-hlsmanifestconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ChildManifestName](#cfn-mediapackagev2-originendpoint-hlsmanifestconfiguration-childmanifestname)" : {{String}},
   "[FilterConfiguration](#cfn-mediapackagev2-originendpoint-hlsmanifestconfiguration-filterconfiguration)" : {{FilterConfiguration}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackagev2-originendpoint-hlsmanifestconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ChildManifestName](#cfn-mediapackagev2-originendpoint-hlsmanifestconfiguration-childmanifestname): {{String}}
   [FilterConfiguration](#cfn-mediapackagev2-originendpoint-hlsmanifestconfiguration-filterconfiguration): {{
     FilterConfiguration}}

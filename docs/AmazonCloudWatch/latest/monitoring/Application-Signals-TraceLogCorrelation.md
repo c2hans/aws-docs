@@ -38,7 +38,7 @@ This section contains examples of setting up trace log correlation in several en
 
 Suppose you have a Spring Boot application in a folder called `custom-app`. The application configuration is usually a YAML file named `custom-app/src/main/resources/application.yml` that might look like this:
 
-```
+```yaml
 spring:
   application:
     name: custom-app
@@ -50,7 +50,7 @@ spring:
 
 To enable trace log correlation, add the following logging configuration.
 
-```
+```yaml
 spring:
   application:
     name: custom-app
@@ -74,7 +74,7 @@ Container Insights collects logs from the container's stdout/stderr, not from fi
 
 In the logging configuration (such as logback.xml), insert the trace context `trace_id=%mdc{trace_id} span_id=%mdc{span_id} trace_flags=%mdc{trace_flags} %5p` into `pattern` of Encoder. For example, the following configuration prepends the trace context before the log message.
 
-```
+```xml
 <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
   <encoder>
     <pattern>trace_id=%mdc{trace_id} span_id=%mdc{span_id} trace_flags=%mdc{trace_flags} %5p - %m%n</pattern>
@@ -88,7 +88,7 @@ For more information about encoders in Logback, see [ Encoders](https://logback.
 
 In the logging configuration (such as log4j2.xml), insert the trace context `trace_id=%mdc{trace_id} span_id=%mdc{span_id} trace_flags=%mdc{trace_flags} %5p` into `PatternLayout`. For example, the following configuration prepends the trace context before the log message.
 
-```
+```xml
 <Appenders>
   <Console name="CONSOLE" target="SYSTEM_OUT">
     <PatternLayout pattern="trace_id=%mdc{trace_id} span_id=%mdc{span_id} trace_flags=%mdc{trace_flags} %5p - %m%n"/>
@@ -102,7 +102,7 @@ For more information about pattern layouts in Log4j2, see [ Pattern Layout](http
 
 In the logging configuration (such as log4j.xml), insert the trace context `trace_id=%X{trace_id} span_id=%X{span_id} trace_flags=%X{trace_flags} %5p` into `PatternLayout`. For example, the following configuration prepends the trace context before the log message.
 
-```
+```xml
 <appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
   <layout class="org.apache.log4j.PatternLayout">
     <param name="ConversionPattern" value="trace_id=%X{trace_id} span_id=%X{span_id} trace_flags=%X{trace_flags} %5p - %m%n"/>

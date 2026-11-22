@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-defaultaction-syntax.json"></a>
 
-```
+```json
 {
   "[Allow](#cfn-wafv2-webacl-defaultaction-allow)" : {{AllowAction}},
   "[Block](#cfn-wafv2-webacl-defaultaction-block)" : {{BlockAction}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-defaultaction-syntax.yaml"></a>
 
-```
+```yaml
   [Allow](#cfn-wafv2-webacl-defaultaction-allow): {{
     AllowAction}}
   [Block](#cfn-wafv2-webacl-defaultaction-block): {{
@@ -63,7 +63,7 @@ The following shows an example web ACL default action specification that sets th
 #### YAML
 <a name="aws-properties-wafv2-webacl-defaultaction--examples--Set_a_web_ACL_default_action--yaml"></a>
 
-```
+```yaml
 DefaultAction:
     Block: {}
 ```
@@ -71,7 +71,7 @@ DefaultAction:
 #### JSON
 <a name="aws-properties-wafv2-webacl-defaultaction--examples--Set_a_web_ACL_default_action--json"></a>
 
-```
+```json
 "DefaultAction": {
     "Block": {}
 }
@@ -85,7 +85,7 @@ The following shows an example web ACL default action specification with customi
 #### YAML
 <a name="aws-properties-wafv2-webacl-defaultaction--examples--Set_a_customized_web_ACL_default_action--yaml"></a>
 
-```
+```yaml
 DefaultAction:
   Allow:
     CustomRequestHandling:
@@ -99,7 +99,7 @@ DefaultAction:
 #### JSON
 <a name="aws-properties-wafv2-webacl-defaultaction--examples--Set_a_customized_web_ACL_default_action--json"></a>
 
-```
+```json
 "DefaultAction": {
   "Allow": {
     "CustomRequestHandling": {

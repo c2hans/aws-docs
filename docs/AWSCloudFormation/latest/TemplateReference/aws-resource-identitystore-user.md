@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-identitystore-user-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IdentityStore::User",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-identitystore-user-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IdentityStore::User
 Properties:
   [Addresses](#cfn-identitystore-user-addresses): {{

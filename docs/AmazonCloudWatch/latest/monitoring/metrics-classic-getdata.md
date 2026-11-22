@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metri
 
 Retrieve a single metric:
 
-```
+```bash
 aws cloudwatch get-metric-data \
   --metric-data-queries '[
     {
@@ -37,7 +37,7 @@ aws cloudwatch get-metric-data \
 
 Retrieve multiple metrics in a single call (up to 500 queries):
 
-```
+```bash
 aws cloudwatch get-metric-data \
   --metric-data-queries '[
     {"Id": "cpu", "MetricStat": {"Metric": {"Namespace": "AWS/EC2", "MetricName": "CPUUtilization", "Dimensions": [{"Name": "InstanceId", "Value": "{{i-abc}}"}]}, "Period": 300, "Stat": "Average"}},
@@ -52,7 +52,7 @@ aws cloudwatch get-metric-data \
 
 Combine metrics using arithmetic:
 
-```
+```json
 [
   {"Id": "rx", "MetricStat": {"Metric": {"Namespace": "AWS/EC2", "MetricName": "NetworkIn", "Dimensions": [{"Name": "InstanceId", "Value": "{{i-abc}}"}]}, "Period": 300, "Stat": "Sum"}},
   {"Id": "tx", "MetricStat": {"Metric": {"Namespace": "AWS/EC2", "MetricName": "NetworkOut", "Dimensions": [{"Name": "InstanceId", "Value": "{{i-abc}}"}]}, "Period": 300, "Stat": "Sum"}},

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-trigger-eventbatchingcondition-syntax.json"></a>
 
-```
+```json
 {
   "[BatchSize](#cfn-glue-trigger-eventbatchingcondition-batchsize)" : {{Integer}},
   "[BatchWindow](#cfn-glue-trigger-eventbatchingcondition-batchwindow)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-trigger-eventbatchingcondition-syntax.yaml"></a>
 
-```
+```yaml
   [BatchSize](#cfn-glue-trigger-eventbatchingcondition-batchsize): {{Integer}}
   [BatchWindow](#cfn-glue-trigger-eventbatchingcondition-batchwindow): {{Integer}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-invoicing-procurementportalpreference-purchaseorderdatasource-syntax.json"></a>
 
-```
+```json
 {
   "[EinvoiceDeliveryDocumentType](#cfn-invoicing-procurementportalpreference-purchaseorderdatasource-einvoicedeliverydocumenttype)" : {{String}},
   "[PurchaseOrderDataSourceType](#cfn-invoicing-procurementportalpreference-purchaseorderdatasource-purchaseorderdatasourcetype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-invoicing-procurementportalpreference-purchaseorderdatasource-syntax.yaml"></a>
 
-```
+```yaml
   [EinvoiceDeliveryDocumentType](#cfn-invoicing-procurementportalpreference-purchaseorderdatasource-einvoicedeliverydocumenttype): {{String}}
   [PurchaseOrderDataSourceType](#cfn-invoicing-procurementportalpreference-purchaseorderdatasource-purchaseorderdatasourcetype): {{String}}
 ```

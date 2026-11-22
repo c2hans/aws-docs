@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-eventtrigger-eventtriggerlimits-syntax.json"></a>
 
-```
+```json
 {
   "[EventExpiration](#cfn-customerprofiles-eventtrigger-eventtriggerlimits-eventexpiration)" : {{Integer}},
   "[Periods](#cfn-customerprofiles-eventtrigger-eventtriggerlimits-periods)" : {{[ Period, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-eventtrigger-eventtriggerlimits-syntax.yaml"></a>
 
-```
+```yaml
   [EventExpiration](#cfn-customerprofiles-eventtrigger-eventtriggerlimits-eventexpiration): {{Integer}}
   [Periods](#cfn-customerprofiles-eventtrigger-eventtriggerlimits-periods): {{
     - Period}}

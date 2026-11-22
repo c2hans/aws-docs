@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelpackage-transformoutput-syntax.json"></a>
 
-```
+```json
 {
   "[Accept](#cfn-sagemaker-modelpackage-transformoutput-accept)" : {{String}},
   "[AssembleWith](#cfn-sagemaker-modelpackage-transformoutput-assemblewith)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelpackage-transformoutput-syntax.yaml"></a>
 
-```
+```yaml
   [Accept](#cfn-sagemaker-modelpackage-transformoutput-accept): {{String}}
   [AssembleWith](#cfn-sagemaker-modelpackage-transformoutput-assemblewith): {{String}}
   [KmsKeyId](#cfn-sagemaker-modelpackage-transformoutput-kmskeyid): {{String}}

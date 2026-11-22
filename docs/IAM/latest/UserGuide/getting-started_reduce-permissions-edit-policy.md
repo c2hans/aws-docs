@@ -42,7 +42,7 @@ In the following procedure we are going to reduce the permissions given to a rol
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

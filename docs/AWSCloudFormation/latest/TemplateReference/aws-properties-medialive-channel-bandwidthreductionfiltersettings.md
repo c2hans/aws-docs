@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-bandwidthreductionfiltersettings-syntax.json"></a>
 
-```
+```json
 {
   "[PostFilterSharpening](#cfn-medialive-channel-bandwidthreductionfiltersettings-postfiltersharpening)" : {{String}},
   "[Strength](#cfn-medialive-channel-bandwidthreductionfiltersettings-strength)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-bandwidthreductionfiltersettings-syntax.yaml"></a>
 
-```
+```yaml
   [PostFilterSharpening](#cfn-medialive-channel-bandwidthreductionfiltersettings-postfiltersharpening): {{String}}
   [Strength](#cfn-medialive-channel-bandwidthreductionfiltersettings-strength): {{String}}
 ```

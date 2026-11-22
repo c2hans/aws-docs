@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-accountauditconfiguration-auditnotificationtarget-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-iot-accountauditconfiguration-auditnotificationtarget-enabled)" : {{Boolean}},
   "[RoleArn](#cfn-iot-accountauditconfiguration-auditnotificationtarget-rolearn)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-accountauditconfiguration-auditnotificationtarget-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-iot-accountauditconfiguration-auditnotificationtarget-enabled): {{Boolean}}
   [RoleArn](#cfn-iot-accountauditconfiguration-auditnotificationtarget-rolearn): {{String}}
   [TargetArn](#cfn-iot-accountauditconfiguration-auditnotificationtarget-targetarn): {{String}}

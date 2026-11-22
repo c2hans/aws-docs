@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-route53resolver-resolverruleassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Route53Resolver::ResolverRuleAssociation",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-route53resolver-resolverruleassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53Resolver::ResolverRuleAssociation
 Properties:
   [Name](#cfn-route53resolver-resolverruleassociation-name): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-fieldtoprotect-syntax.json"></a>
 
-```
+```json
 {
   "[FieldKeys](#cfn-wafv2-webacl-fieldtoprotect-fieldkeys)" : {{[ String, ... ]}},
   "[FieldType](#cfn-wafv2-webacl-fieldtoprotect-fieldtype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-fieldtoprotect-syntax.yaml"></a>
 
-```
+```yaml
   [FieldKeys](#cfn-wafv2-webacl-fieldtoprotect-fieldkeys): {{
     - String}}
   [FieldType](#cfn-wafv2-webacl-fieldtoprotect-fieldtype): {{String}}

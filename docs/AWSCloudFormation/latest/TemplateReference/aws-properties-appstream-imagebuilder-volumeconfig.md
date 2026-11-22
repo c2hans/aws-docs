@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appstream-imagebuilder-volumeconfig-syntax.json"></a>
 
-```
+```json
 {
   "[VolumeSizeInGb](#cfn-appstream-imagebuilder-volumeconfig-volumesizeingb)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appstream-imagebuilder-volumeconfig-syntax.yaml"></a>
 
-```
+```yaml
   [VolumeSizeInGb](#cfn-appstream-imagebuilder-volumeconfig-volumesizeingb): {{Integer}}
 ```
 
@@ -36,4 +36,4 @@ To declare this entity in your CloudFormation template, use the following syntax
 The size of the root volume in GB. Valid range is 200-500 GB. The default is 200 GB, which is included in the hourly instance rate. Additional storage beyond 200 GB incurs extra charges and applies to instances regardless of their running state.
 *Required*: No
 *Type*: Integer
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

@@ -34,7 +34,7 @@ listFromEmailAddresses(params: ListFromEmailAddressesParams): Promise<{ emailAdd
 
  **Usage**
 
-```
+```typescript
 const { emailAddresses, nextToken } = await emailClient.listFromEmailAddresses({
    contactId: draftContactId, // The draft email contact that you want to send
    maxResults: 50,

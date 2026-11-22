@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-neptune-dbcluster-dbclusterrole-syntax.json"></a>
 
-```
+```json
 {
   "[FeatureName](#cfn-neptune-dbcluster-dbclusterrole-featurename)" : {{String}},
   "[RoleArn](#cfn-neptune-dbcluster-dbclusterrole-rolearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-neptune-dbcluster-dbclusterrole-syntax.yaml"></a>
 
-```
+```yaml
   [FeatureName](#cfn-neptune-dbcluster-dbclusterrole-featurename): {{String}}
   [RoleArn](#cfn-neptune-dbcluster-dbclusterrole-rolearn): {{String}}
 ```

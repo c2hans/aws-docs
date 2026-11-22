@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-intelligenttieringconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Id](#cfn-s3-bucket-intelligenttieringconfiguration-id)" : {{String}},
   "[Prefix](#cfn-s3-bucket-intelligenttieringconfiguration-prefix)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-intelligenttieringconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Id](#cfn-s3-bucket-intelligenttieringconfiguration-id): {{String}}
   [Prefix](#cfn-s3-bucket-intelligenttieringconfiguration-prefix): {{String}}
   [Status](#cfn-s3-bucket-intelligenttieringconfiguration-status): {{String}}

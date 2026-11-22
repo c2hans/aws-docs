@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisanalyticsv2-application-zeppelinapplicationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CatalogConfiguration](#cfn-kinesisanalyticsv2-application-zeppelinapplicationconfiguration-catalogconfiguration)" : {{CatalogConfiguration}},
   "[CustomArtifactsConfiguration](#cfn-kinesisanalyticsv2-application-zeppelinapplicationconfiguration-customartifactsconfiguration)" : {{[ CustomArtifactConfiguration, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisanalyticsv2-application-zeppelinapplicationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CatalogConfiguration](#cfn-kinesisanalyticsv2-application-zeppelinapplicationconfiguration-catalogconfiguration): {{
     CatalogConfiguration}}
   [CustomArtifactsConfiguration](#cfn-kinesisanalyticsv2-application-zeppelinapplicationconfiguration-customartifactsconfiguration): {{

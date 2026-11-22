@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-cluster-encryptionatrest-syntax.json"></a>
 
-```
+```json
 {
   "[DataVolumeKMSKeyId](#cfn-msk-cluster-encryptionatrest-datavolumekmskeyid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-cluster-encryptionatrest-syntax.yaml"></a>
 
-```
+```yaml
   [DataVolumeKMSKeyId](#cfn-msk-cluster-encryptionatrest-datavolumekmskeyid): {{String}}
 ```
 

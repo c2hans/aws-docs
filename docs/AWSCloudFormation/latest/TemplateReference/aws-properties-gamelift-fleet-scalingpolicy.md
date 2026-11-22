@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-fleet-scalingpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[ComparisonOperator](#cfn-gamelift-fleet-scalingpolicy-comparisonoperator)" : {{String}},
   "[EvaluationPeriods](#cfn-gamelift-fleet-scalingpolicy-evaluationperiods)" : {{Integer}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-fleet-scalingpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [ComparisonOperator](#cfn-gamelift-fleet-scalingpolicy-comparisonoperator): {{String}}
   [EvaluationPeriods](#cfn-gamelift-fleet-scalingpolicy-evaluationperiods): {{Integer}}
   [Location](#cfn-gamelift-fleet-scalingpolicy-location): {{String}}

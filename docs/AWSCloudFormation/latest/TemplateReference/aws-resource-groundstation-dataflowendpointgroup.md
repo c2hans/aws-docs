@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-groundstation-dataflowendpointgroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::GroundStation::DataflowEndpointGroup",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-groundstation-dataflowendpointgroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::GroundStation::DataflowEndpointGroup
 Properties:
   [ContactPostPassDurationSeconds](#cfn-groundstation-dataflowendpointgroup-contactpostpassdurationseconds): {{Integer}}
@@ -119,7 +119,7 @@ The following example creates a Ground Station `DataflowEndpointGroup`
 #### JSON
 <a name="aws-resource-groundstation-dataflowendpointgroup--examples--Create_a_DataflowEndpointGroup--json"></a>
 
-```
+```json
 {
   "Resources": {
     "myDataflowEndpointGroup": {
@@ -155,7 +155,7 @@ The following example creates a Ground Station `DataflowEndpointGroup`
 #### YAML
 <a name="aws-resource-groundstation-dataflowendpointgroup--examples--Create_a_DataflowEndpointGroup--yaml"></a>
 
-```
+```yaml
 Resources:
   myDataflowEndpointGroup:
     Type: AWS::GroundStation::DataflowEndpointGroup

@@ -8,7 +8,7 @@ The Zscaler setup on AWS reads log data from Amazon S3 buckets using Amazon SQS 
 
 Configure the Zscaler source using the following parameters:
 
-```
+```yaml
 source:
   s3:
     aws:

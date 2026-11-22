@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 
 You might query your database and receive the `ORA-28860` error.
 
-```
+```java
 ORA-28860: Fatal SSL error
 28860. 00000 - "Fatal SSL error"
 *Cause: An error occurred during the SSL connection to the peer. It is likely that this side sent data which the peer rejected.

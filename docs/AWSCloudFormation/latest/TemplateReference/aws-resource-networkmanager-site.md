@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-networkmanager-site-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::NetworkManager::Site",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-networkmanager-site-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::NetworkManager::Site
 Properties:
   [Description](#cfn-networkmanager-site-description): {{String}}
@@ -122,7 +122,7 @@ The following example creates a site in a global network.
 #### JSON
 <a name="aws-resource-networkmanager-site--examples--Site--json"></a>
 
-```
+```json
 {
     "Type": "AWS::NetworkManager::Site",
     "Properties": {
@@ -148,7 +148,7 @@ The following example creates a site in a global network.
 #### YAML
 <a name="aws-resource-networkmanager-site--examples--Site--yaml"></a>
 
-```
+```yaml
 Type: AWS::NetworkManager::Site
 Properties:
   Description: "Chicago office"

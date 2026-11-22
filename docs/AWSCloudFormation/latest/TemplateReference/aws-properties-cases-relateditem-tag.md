@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cases-relateditem-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-cases-relateditem-tag-key)" : {{String}},
   "[Value](#cfn-cases-relateditem-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cases-relateditem-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-cases-relateditem-tag-key): {{String}}
   [Value](#cfn-cases-relateditem-tag-value): {{String}}
 ```

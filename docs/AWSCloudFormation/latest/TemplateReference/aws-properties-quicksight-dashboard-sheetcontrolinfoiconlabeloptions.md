@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-sheetcontrolinfoiconlabeloptions-syntax.json"></a>
 
-```
+```json
 {
   "[InfoIconText](#cfn-quicksight-dashboard-sheetcontrolinfoiconlabeloptions-infoicontext)" : {{String}},
   "[Visibility](#cfn-quicksight-dashboard-sheetcontrolinfoiconlabeloptions-visibility)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-sheetcontrolinfoiconlabeloptions-syntax.yaml"></a>
 
-```
+```yaml
   [InfoIconText](#cfn-quicksight-dashboard-sheetcontrolinfoiconlabeloptions-infoicontext): {{String}}
   [Visibility](#cfn-quicksight-dashboard-sheetcontrolinfoiconlabeloptions-visibility): {{String}}
 ```

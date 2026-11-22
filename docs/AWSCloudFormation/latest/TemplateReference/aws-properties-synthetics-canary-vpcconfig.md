@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-synthetics-canary-vpcconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Ipv6AllowedForDualStack](#cfn-synthetics-canary-vpcconfig-ipv6allowedfordualstack)" : {{Boolean}},
   "[SecurityGroupIds](#cfn-synthetics-canary-vpcconfig-securitygroupids)" : {{[ String, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-synthetics-canary-vpcconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Ipv6AllowedForDualStack](#cfn-synthetics-canary-vpcconfig-ipv6allowedfordualstack): {{Boolean}}
   [SecurityGroupIds](#cfn-synthetics-canary-vpcconfig-securitygroupids): {{
     - String}}

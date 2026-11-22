@@ -106,7 +106,7 @@ aws iam create-service-linked-role --aws-service-name autoscaling.amazonaws.com 
 
 The output of this command includes the ARN of the service-linked role, which you can use to give the service-linked role access to your customer managed key.
 
-```
+```json
 {
     "Role": {
         "RoleId": "ABCDEF0123456789ABCDEF",

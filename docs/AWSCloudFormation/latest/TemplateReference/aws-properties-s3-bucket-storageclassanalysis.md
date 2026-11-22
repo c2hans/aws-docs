@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-storageclassanalysis-syntax.json"></a>
 
-```
+```json
 {
   "[DataExport](#cfn-s3-bucket-storageclassanalysis-dataexport)" : {{DataExport}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-storageclassanalysis-syntax.yaml"></a>
 
-```
+```yaml
   [DataExport](#cfn-s3-bucket-storageclassanalysis-dataexport): {{
     DataExport}}
 ```

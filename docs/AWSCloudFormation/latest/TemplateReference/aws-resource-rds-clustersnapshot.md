@@ -14,7 +14,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-rds-clustersnapshot-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RDS::ClusterSnapshot",
   "Properties" : {
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-rds-clustersnapshot-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RDS::ClusterSnapshot
 Properties:
   [DBClusterIdentifier](#cfn-rds-clustersnapshot-dbclusteridentifier): {{String}}

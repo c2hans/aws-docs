@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskdefinition-volume-syntax.json"></a>
 
-```
+```json
 {
   "[ConfiguredAtLaunch](#cfn-ecs-taskdefinition-volume-configuredatlaunch)" : {{Boolean}},
   "[DockerVolumeConfiguration](#cfn-ecs-taskdefinition-volume-dockervolumeconfiguration)" : {{DockerVolumeConfiguration}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskdefinition-volume-syntax.yaml"></a>
 
-```
+```yaml
   [ConfiguredAtLaunch](#cfn-ecs-taskdefinition-volume-configuredatlaunch): {{Boolean}}
   [DockerVolumeConfiguration](#cfn-ecs-taskdefinition-volume-dockervolumeconfiguration): {{
     DockerVolumeConfiguration}}

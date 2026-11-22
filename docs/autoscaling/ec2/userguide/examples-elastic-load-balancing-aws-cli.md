@@ -61,7 +61,7 @@ aws autoscaling describe-traffic-sources --auto-scaling-group-name {{my-asg}}
 
 The example returns the ARN of the Elastic Load Balancing target groups that you attached to the Auto Scaling group.
 
-```
+```json
 {
     "TrafficSources": [
         {

@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distribution-grpcconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-cloudfront-distribution-grpcconfig-enabled)" : {{Boolean}}
 }
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distribution-grpcconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-cloudfront-distribution-grpcconfig-enabled): {{Boolean}}
 ```
 

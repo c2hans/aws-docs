@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-chatbot-customaction-customactionattachmentcriteria-syntax.json"></a>
 
-```
+```json
 {
   "[Operator](#cfn-chatbot-customaction-customactionattachmentcriteria-operator)" : {{String}},
   "[Value](#cfn-chatbot-customaction-customactionattachmentcriteria-value)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-chatbot-customaction-customactionattachmentcriteria-syntax.yaml"></a>
 
-```
+```yaml
   [Operator](#cfn-chatbot-customaction-customactionattachmentcriteria-operator): {{String}}
   [Value](#cfn-chatbot-customaction-customactionattachmentcriteria-value): {{String}}
   [VariableName](#cfn-chatbot-customaction-customactionattachmentcriteria-variablename): {{String}}

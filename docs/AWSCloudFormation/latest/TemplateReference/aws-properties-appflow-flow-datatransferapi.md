@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-flow-datatransferapi-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-appflow-flow-datatransferapi-name)" : {{String}},
   "[Type](#cfn-appflow-flow-datatransferapi-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-flow-datatransferapi-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-appflow-flow-datatransferapi-name): {{String}}
   [Type](#cfn-appflow-flow-datatransferapi-type): {{String}}
 ```

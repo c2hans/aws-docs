@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mwaaserverless-workflow-scheduleconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CronExpression](#cfn-mwaaserverless-workflow-scheduleconfiguration-cronexpression)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mwaaserverless-workflow-scheduleconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CronExpression](#cfn-mwaaserverless-workflow-scheduleconfiguration-cronexpression): {{String}}
 ```
 

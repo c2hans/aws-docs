@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cassandra-table-autoscalingsetting-syntax.json"></a>
 
-```
+```json
 {
   "[AutoScalingDisabled](#cfn-cassandra-table-autoscalingsetting-autoscalingdisabled)" : {{Boolean}},
   "[MaximumUnits](#cfn-cassandra-table-autoscalingsetting-maximumunits)" : {{Integer}},
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cassandra-table-autoscalingsetting-syntax.yaml"></a>
 
-```
+```yaml
   [AutoScalingDisabled](#cfn-cassandra-table-autoscalingsetting-autoscalingdisabled): {{Boolean}}
   [MaximumUnits](#cfn-cassandra-table-autoscalingsetting-maximumunits): {{Integer}}
   [MinimumUnits](#cfn-cassandra-table-autoscalingsetting-minimumunits): {{Integer}}

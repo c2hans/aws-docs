@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-instance-associationparameter-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-ec2-instance-associationparameter-key)" : {{String}},
   "[Value](#cfn-ec2-instance-associationparameter-value)" : {{[ String, ... ]}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-instance-associationparameter-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-ec2-instance-associationparameter-key): {{String}}
   [Value](#cfn-ec2-instance-associationparameter-value): {{
     - String}}

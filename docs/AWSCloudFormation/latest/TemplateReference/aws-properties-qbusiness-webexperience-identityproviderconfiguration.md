@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-qbusiness-webexperience-identityproviderconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[OpenIDConnectConfiguration](#cfn-qbusiness-webexperience-identityproviderconfiguration-openidconnectconfiguration)" : {{OpenIDConnectProviderConfiguration}},
   "[SamlConfiguration](#cfn-qbusiness-webexperience-identityproviderconfiguration-samlconfiguration)" : {{SamlProviderConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-qbusiness-webexperience-identityproviderconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [OpenIDConnectConfiguration](#cfn-qbusiness-webexperience-identityproviderconfiguration-openidconnectconfiguration): {{
     OpenIDConnectProviderConfiguration}}
   [SamlConfiguration](#cfn-qbusiness-webexperience-identityproviderconfiguration-samlconfiguration): {{

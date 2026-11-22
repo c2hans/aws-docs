@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-resourcegroups-group-configurationitem-syntax.json"></a>
 
-```
+```json
 {
   "[Parameters](#cfn-resourcegroups-group-configurationitem-parameters)" : {{[ ConfigurationParameter, ... ]}},
   "[Type](#cfn-resourcegroups-group-configurationitem-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-resourcegroups-group-configurationitem-syntax.yaml"></a>
 
-```
+```yaml
   [Parameters](#cfn-resourcegroups-group-configurationitem-parameters): {{
     - ConfigurationParameter}}
   [Type](#cfn-resourcegroups-group-configurationitem-type): {{String}}

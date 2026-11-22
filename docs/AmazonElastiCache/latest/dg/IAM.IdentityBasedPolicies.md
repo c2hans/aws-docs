@@ -20,7 +20,7 @@ The following shows an example of a permissions policy when using Redis OSS.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -58,7 +58,7 @@ The following shows an example of a permissions policy when using Memcached.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -123,7 +123,7 @@ The following policy grants permissions ElastiCache actions that allow a user to
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[{
@@ -150,7 +150,7 @@ Common system administrator tasks include modifying resources. A system administ
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[{
@@ -179,7 +179,7 @@ The following policy allows a user to access all ElastiCache actions. We recomme
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[{
@@ -206,7 +206,7 @@ The following policy allows user to call the IAM `CreateServiceLinkedRole` API. 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement":[
@@ -239,7 +239,7 @@ The following policy allows any user to connect to any serverless cache using IA
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement" :

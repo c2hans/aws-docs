@@ -33,7 +33,7 @@ Add the same permissions contained in the access point policy to the underlying 
 The following service control policy requires all new access points are to be created with a virtual private cloud (VPC) network origin. With this policy in place, users in your organization can't create any access point that is accessible from the internet.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -55,7 +55,7 @@ The following service control policy requires all new access points are to be cr
 The following access point policy limits all access to the bucket {{amzn-s3-demo-bucket--zoneID--x-s3}} to an access point with a VPC networking origin.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -131,7 +131,7 @@ You can delegate access control from the bucket policy to the access point polic
 
 **Example bucket policy that delegates access control to access points**
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement" : [
@@ -157,7 +157,7 @@ Replace {{Bucket ARN}} with the ARN of the bucket.
 **Example of bucket policy delegating permissions to another AWS account**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement" : [

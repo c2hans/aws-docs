@@ -21,7 +21,7 @@ For example, you have a `My::S3::SampleBucket::MODULE` module that contains an `
 **Example template**
 The following example template creates an S3 bucket using the `My::S3::SampleBucket::MODULE` module. It also create an Amazon SQS queue and set its name to be the same as the bucket name from the module. Additionally, the template outputs the Amazon Resource Name (ARN) of the created S3 bucket.
 
-```
+```yaml
 # Template that uses My::S3::SampleBucket::MODULE
 Parameters:
   BucketName:

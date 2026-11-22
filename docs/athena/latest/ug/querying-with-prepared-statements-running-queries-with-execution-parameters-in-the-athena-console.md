@@ -10,7 +10,7 @@ When you run a parameterized query that has execution parameters (question marks
 
 1. Enter a query with question mark placeholders in the Athena editor, as in the following example.
 
-   ```
+   ```sql
    SELECT * FROM "my_database"."my_table"
    WHERE year = ? and month= ? and day= ?
    ```

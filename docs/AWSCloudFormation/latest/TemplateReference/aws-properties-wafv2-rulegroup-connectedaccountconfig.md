@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-rulegroup-connectedaccountconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ConnectedAccountArn](#cfn-wafv2-rulegroup-connectedaccountconfig-connectedaccountarn)" : {{String}},
   "[PaymentNetworks](#cfn-wafv2-rulegroup-connectedaccountconfig-paymentnetworks)" : {{[ ConnectedAccountChainConfig, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-rulegroup-connectedaccountconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ConnectedAccountArn](#cfn-wafv2-rulegroup-connectedaccountconfig-connectedaccountarn): {{String}}
   [PaymentNetworks](#cfn-wafv2-rulegroup-connectedaccountconfig-paymentnetworks): {{
     - ConnectedAccountChainConfig}}

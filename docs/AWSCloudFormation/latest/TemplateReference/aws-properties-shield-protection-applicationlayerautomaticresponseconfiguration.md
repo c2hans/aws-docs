@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-shield-protection-applicationlayerautomaticresponseconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-shield-protection-applicationlayerautomaticresponseconfiguration-action)" : {{Action}},
   "[Status](#cfn-shield-protection-applicationlayerautomaticresponseconfiguration-status)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-shield-protection-applicationlayerautomaticresponseconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-shield-protection-applicationlayerautomaticresponseconfiguration-action): {{
     Action}}
   [Status](#cfn-shield-protection-applicationlayerautomaticresponseconfiguration-status): {{String}}

@@ -90,7 +90,7 @@ Only the following root CSS variables are supported:
 
 The following is an example of a valid CSS file setting the visual theme for Amazon Q Business.
 
-```
+```css
 :root {
   --background: #FFFFFF;
   --qbusinesness-webexperience-title-color: #9013FE;

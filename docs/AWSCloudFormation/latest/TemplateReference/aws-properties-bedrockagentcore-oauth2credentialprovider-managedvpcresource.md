@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-oauth2credentialprovider-managedvpcresource-syntax.json"></a>
 
-```
+```json
 {
   "[EndpointIpAddressType](#cfn-bedrockagentcore-oauth2credentialprovider-managedvpcresource-endpointipaddresstype)" : {{String}},
   "[RoutingDomain](#cfn-bedrockagentcore-oauth2credentialprovider-managedvpcresource-routingdomain)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-oauth2credentialprovider-managedvpcresource-syntax.yaml"></a>
 
-```
+```yaml
   [EndpointIpAddressType](#cfn-bedrockagentcore-oauth2credentialprovider-managedvpcresource-endpointipaddresstype): {{String}}
   [RoutingDomain](#cfn-bedrockagentcore-oauth2credentialprovider-managedvpcresource-routingdomain): {{String}}
   [SecurityGroupIds](#cfn-bedrockagentcore-oauth2credentialprovider-managedvpcresource-securitygroupids): {{

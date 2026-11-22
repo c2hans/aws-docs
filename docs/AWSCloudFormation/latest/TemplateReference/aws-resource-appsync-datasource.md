@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-appsync-datasource-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppSync::DataSource",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-appsync-datasource-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppSync::DataSource
 Properties:
   [ApiId](#cfn-appsync-datasource-apiid): {{String}}
@@ -187,7 +187,7 @@ The following example creates a data source and associates it with an existing G
 #### YAML
 <a name="aws-resource-appsync-datasource--examples--Data_Source_Creation_Example--yaml"></a>
 
-```
+```yaml
 Parameters:
   graphQlApiId:
     Type: String
@@ -220,7 +220,7 @@ Resources:
 #### JSON
 <a name="aws-resource-appsync-datasource--examples--Data_Source_Creation_Example--json"></a>
 
-```
+```json
 {
   "Parameters": {
     "graphQlApiId": {

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dms-endpoint-redissettings-syntax.json"></a>
 
-```
+```json
 {
   "[AuthPassword](#cfn-dms-endpoint-redissettings-authpassword)" : {{String}},
   "[AuthType](#cfn-dms-endpoint-redissettings-authtype)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dms-endpoint-redissettings-syntax.yaml"></a>
 
-```
+```yaml
   [AuthPassword](#cfn-dms-endpoint-redissettings-authpassword): {{String}}
   [AuthType](#cfn-dms-endpoint-redissettings-authtype): {{String}}
   [AuthUserName](#cfn-dms-endpoint-redissettings-authusername): {{String}}

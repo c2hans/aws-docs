@@ -62,7 +62,7 @@ When you update the trust store, you can retain older certificates in addition t
 
 1. Run the following command to update the Oracle wallet.
 
-   ```
+   ```bash
    prompt>orapki wallet add -wallet $ORACLE_HOME/ssl_wallet -trusted_cert -cert
          $ORACLE_HOME/ssl_wallet/{{ssl-cert.pem}} -auto_login_only
    ```
@@ -71,7 +71,7 @@ When you update the trust store, you can retain older certificates in addition t
 
 1. Run the following command to confirm that the wallet was updated successfully.
 
-   ```
+   ```bash
    prompt>orapki wallet display -wallet $ORACLE_HOME/ssl_wallet
    ```
 
@@ -96,7 +96,7 @@ For sample scripts that import certificates, see [Sample script for importing ce
 
 The following code example shows how to set up the SSL connection using JDBC.
 
-```
+```java
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;

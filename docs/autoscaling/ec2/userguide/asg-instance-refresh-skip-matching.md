@@ -36,7 +36,7 @@ Follow the steps in this section to use the AWS CLI to do the following:
 
    If successful, the command returns output similar to the following.
 
-   ```
+   ```json
    {
       "LaunchTemplate": {
         "LaunchTemplateId": "lt-068f72b729example",
@@ -59,7 +59,7 @@ Follow the steps in this section to use the AWS CLI to do the following:
 
    Contents of `config.json`.
 
-   ```
+   ```json
    {
        "AutoScalingGroupName": "{{my-asg}}",
        "DesiredConfiguration": {
@@ -76,7 +76,7 @@ Follow the steps in this section to use the AWS CLI to do the following:
 
    If successful, the command returns output similar to the following.
 
-   ```
+   ```json
    {
      "InstanceRefreshId": "08b91cf7-8fa6-48af-b6a6-d227f40f1b9b"
    }
@@ -104,7 +104,7 @@ Follow the steps in one of the following sections, depending on which option fit
 
    If successful, the command returns output similar to the following.
 
-   ```
+   ```json
    {
       "LaunchTemplate": {
         "LaunchTemplateId": "lt-04d5cc9b88example",
@@ -129,7 +129,7 @@ Follow the steps in one of the following sections, depending on which option fit
 
    If successful, the command returns output similar to the following.
 
-   ```
+   ```json
    {
      "AutoScalingGroups":[
        {
@@ -181,7 +181,7 @@ Follow the steps in one of the following sections, depending on which option fit
 
    Contents of `config.json`.
 
-   ```
+   ```json
    {
      "AutoScalingGroupName":"my-asg",
      "DesiredConfiguration":{
@@ -223,7 +223,7 @@ Follow the steps in one of the following sections, depending on which option fit
 
    If successful, the command returns output similar to the following.
 
-   ```
+   ```json
    {
      "InstanceRefreshId": "08b91cf7-8fa6-48af-b6a6-d227f40f1b9b"
    }
@@ -243,7 +243,7 @@ In this next procedure, you provide an updated set of instance types without cha
 
    If successful, the command returns output similar to the following.
 
-   ```
+   ```json
    {
      "AutoScalingGroups":[
        {
@@ -297,7 +297,7 @@ In this next procedure, you provide an updated set of instance types without cha
 
    Contents of `config.json`
 
-   ```
+   ```json
    {
      "AutoScalingGroupName":"my-asg",
      "DesiredConfiguration":{

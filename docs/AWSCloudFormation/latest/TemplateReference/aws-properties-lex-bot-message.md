@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-message-syntax.json"></a>
 
-```
+```json
 {
   "[CustomPayload](#cfn-lex-bot-message-custompayload)" : {{CustomPayload}},
   "[ImageResponseCard](#cfn-lex-bot-message-imageresponsecard)" : {{ImageResponseCard}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-message-syntax.yaml"></a>
 
-```
+```yaml
   [CustomPayload](#cfn-lex-bot-message-custompayload): {{
     CustomPayload}}
   [ImageResponseCard](#cfn-lex-bot-message-imageresponsecard): {{

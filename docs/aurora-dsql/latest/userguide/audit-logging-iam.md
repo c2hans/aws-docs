@@ -63,7 +63,7 @@ The following example creates an audit administrator role and a database adminis
 **Create an audit administrator role**
 Connect to your cluster as `admin`, and run the following SQL statements. The statements create the role, grant it `pg_dsql_audit_admin`, and map it to the IAM role of your audit team:
 
-```
+```sql
 CREATE ROLE {{audit_admin}} WITH LOGIN;
 GRANT pg_dsql_audit_admin TO {{audit_admin}};
 AWS IAM GRANT {{audit_admin}} TO 'arn:aws:iam::{{111122223333}}:role/{{AuditTeam}}';
@@ -72,7 +72,7 @@ AWS IAM GRANT {{audit_admin}} TO 'arn:aws:iam::{{111122223333}}:role/{{AuditTeam
 **Create a database administrator role**
 Run the following SQL statements. The statements create the role with the `CREATEROLE` attribute so that it can manage other roles. They also grant it `pg_dsql_admin`, and map it to the IAM role of your database administrators:
 
-```
+```sql
 CREATE ROLE {{db_admin}} WITH LOGIN CREATEROLE;
 GRANT pg_dsql_admin TO {{db_admin}};
 AWS IAM GRANT {{db_admin}} TO 'arn:aws:iam::{{111122223333}}:role/{{DbaTeam}}';
@@ -112,7 +112,7 @@ Aurora DSQL and CloudWatch Logs use Transport Layer Security (TLS) to encrypt au
 
 If your cluster uses a customer managed AWS KMS key, add the following statements to the key policy. Replace {{region}} with the AWS Region of the cluster, and replace {{111122223333}} with your AWS account ID:
 
-```
+```json
 {
   "Sid": "AllowAuroraDsqlToProtectAuditLogFields",
   "Effect": "Allow",

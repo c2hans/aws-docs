@@ -17,7 +17,7 @@ For example, if you specify `GetResourceMetrics` to the `AuthorizedActions` para
 The following example provides access to the specified dimensions for `GetResourceMetrics` and `DescribeDimensionKeys` actions.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -87,7 +87,7 @@ The following is the response for the requested dimension:
 The following example specifies one allow and two deny access for the dimensions.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-routerinput-mergerouterinputconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MergeRecoveryWindowMilliseconds](#cfn-mediaconnect-routerinput-mergerouterinputconfiguration-mergerecoverywindowmilliseconds)" : {{Integer}},
   "[NetworkInterfaceArn](#cfn-mediaconnect-routerinput-mergerouterinputconfiguration-networkinterfacearn)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-routerinput-mergerouterinputconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MergeRecoveryWindowMilliseconds](#cfn-mediaconnect-routerinput-mergerouterinputconfiguration-mergerecoverywindowmilliseconds): {{Integer}}
   [NetworkInterfaceArn](#cfn-mediaconnect-routerinput-mergerouterinputconfiguration-networkinterfacearn): {{String}}
   [ProtocolConfigurations](#cfn-mediaconnect-routerinput-mergerouterinputconfiguration-protocolconfigurations): {{

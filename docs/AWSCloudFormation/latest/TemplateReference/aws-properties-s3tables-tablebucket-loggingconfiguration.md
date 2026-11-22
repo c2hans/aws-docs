@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3tables-tablebucket-loggingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[TargetBucket](#cfn-s3tables-tablebucket-loggingconfiguration-targetbucket)" : {{String}},
   "[TargetObjectKeyFormat](#cfn-s3tables-tablebucket-loggingconfiguration-targetobjectkeyformat)" : {{TargetObjectKeyFormat}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3tables-tablebucket-loggingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [TargetBucket](#cfn-s3tables-tablebucket-loggingconfiguration-targetbucket): {{String}}
   [TargetObjectKeyFormat](#cfn-s3tables-tablebucket-loggingconfiguration-targetobjectkeyformat): {{
     TargetObjectKeyFormat}}

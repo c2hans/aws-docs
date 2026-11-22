@@ -41,7 +41,7 @@ An IAM policy with the following condition does not impact required permissions 
 
 The following example shows how to exclude service-linked role principals from deny statements:
 
-```
+```json
 "Condition": {
     "StringNotEquals": {
         "aws:PrincipalArn": [
@@ -111,7 +111,7 @@ The following identity-based policy allows you to create an MREC or MRSC global 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -162,7 +162,7 @@ The following identity-based policy allows you to create DynamoDB global tables 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -232,7 +232,7 @@ The following identity-based policy allows you to a create a DynamoDB MRSC globa
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -283,7 +283,7 @@ This identity-based policy allows you to create a MRSC global table with replica
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -400,7 +400,7 @@ This identity-based policy allows you to delete a DynamoDB global table named "u
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -433,7 +433,7 @@ This identity-based policy allows you to delete the replica and the witness of a
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

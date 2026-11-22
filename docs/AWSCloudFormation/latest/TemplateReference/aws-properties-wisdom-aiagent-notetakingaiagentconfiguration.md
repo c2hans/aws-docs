@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-aiagent-notetakingaiagentconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Locale](#cfn-wisdom-aiagent-notetakingaiagentconfiguration-locale)" : {{String}},
   "[NoteTakingAIGuardrailId](#cfn-wisdom-aiagent-notetakingaiagentconfiguration-notetakingaiguardrailid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-aiagent-notetakingaiagentconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Locale](#cfn-wisdom-aiagent-notetakingaiagentconfiguration-locale): {{String}}
   [NoteTakingAIGuardrailId](#cfn-wisdom-aiagent-notetakingaiagentconfiguration-notetakingaiguardrailid): {{String}}
   [NoteTakingAIPromptId](#cfn-wisdom-aiagent-notetakingaiagentconfiguration-notetakingaipromptid): {{String}}

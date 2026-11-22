@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-channel-timeshiftconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MaxTimeDelaySeconds](#cfn-mediatailor-channel-timeshiftconfiguration-maxtimedelayseconds)" : {{Number}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-channel-timeshiftconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MaxTimeDelaySeconds](#cfn-mediatailor-channel-timeshiftconfiguration-maxtimedelayseconds): {{Number}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspacesweb-dataprotectionsettings-inlineredactionpattern-syntax.json"></a>
 
-```
+```json
 {
   "[BuiltInPatternId](#cfn-workspacesweb-dataprotectionsettings-inlineredactionpattern-builtinpatternid)" : {{String}},
   "[ConfidenceLevel](#cfn-workspacesweb-dataprotectionsettings-inlineredactionpattern-confidencelevel)" : {{Number}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspacesweb-dataprotectionsettings-inlineredactionpattern-syntax.yaml"></a>
 
-```
+```yaml
   [BuiltInPatternId](#cfn-workspacesweb-dataprotectionsettings-inlineredactionpattern-builtinpatternid): {{String}}
   [ConfidenceLevel](#cfn-workspacesweb-dataprotectionsettings-inlineredactionpattern-confidencelevel): {{Number}}
   [CustomPattern](#cfn-workspacesweb-dataprotectionsettings-inlineredactionpattern-custompattern): {{

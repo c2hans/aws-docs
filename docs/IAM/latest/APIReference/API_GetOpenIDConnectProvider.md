@@ -28,9 +28,28 @@ A list of client IDs (also known as audiences) that are associated with the spec
 Type: Array of strings
 Length Constraints: Minimum length of 1. Maximum length of 255.
 
+ ** ContextProvider **
+The trusted identity propagation context provider configuration associated with the IAM OIDC provider resource object. For more information, see [ContextProvider](https://docs.aws.amazon.com/IAM/latest/APIReference/API_ContextProvider.html).
+This element is returned only when a trusted identity propagation context provider is configured for the OIDC provider.
+Type: [ContextProvider](API_ContextProvider.md) object
+
  ** CreateDate **
 The date and time when the IAM OIDC provider resource object was created in the AWS account.
 Type: Timestamp
+
+ ** IdentityCenterInstanceArn **
+The Amazon Resource Name (ARN) of the IAM Identity Center instance associated with the IAM OIDC provider resource object.
+For the format, see [InstanceMetadata](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_InstanceMetadata.html) in the *IAM Identity Center API Reference*.
+This element is returned only when an IAM Identity Center instance is associated with the OIDC provider.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 1224.
+
+ ** IdentityStoreArn **
+The Amazon Resource Name (ARN) of the identity store that is resolved from the associated IAM Identity Center instance.
+For the format, see [InstanceMetadata](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_InstanceMetadata.html) in the *IAM Identity Center API Reference*.
+This element is returned only when an IAM Identity Center instance is associated with the OIDC provider.
+Type: String
+Length Constraints: Minimum length of 20. Maximum length of 2048.
 
  **Tags.member.N**
 A list of tags that are attached to the specified IAM OIDC provider. The returned list of tags is sorted by tag key. For more information about tagging, see [Tagging IAM resources](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_tags.html) in the *IAM User Guide*.
@@ -96,6 +115,18 @@ https://iam.amazonaws.com/?Action=GetOpenIDConnectProvider
       <member>my-application-ID</member>
     </ClientIDList>
     <Url>server.example.com</Url>
+    <ContextProvider>
+      <SubjectSourceKey>sub</SubjectSourceKey>
+      <SubjectTypeValue>user</SubjectTypeValue>
+      <KeyDefinitionList>
+        <member>
+          <SourceKey>department</SourceKey>
+          <TargetKey>department</TargetKey>
+        </member>
+      </KeyDefinitionList>
+    </ContextProvider>
+    <IdentityCenterInstanceArn>arn:aws:sso:::instance/ssoins-1234567890abcdef</IdentityCenterInstanceArn>
+    <IdentityStoreArn>arn:aws:identitystore::123456789012:identitystore/d-1234567890</IdentityStoreArn>
   </GetOpenIDConnectProviderResult>
   <ResponseMetadata>
     <RequestId>2c91531b-4f65-11e4-aefa-bfd6aEXAMPLE</RequestId>

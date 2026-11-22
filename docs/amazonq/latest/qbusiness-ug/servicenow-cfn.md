@@ -62,7 +62,7 @@ The following is the ServiceNow JSON schema and examples for the configuration p
 
 The following is the ServiceNow JSON schema for the configuration property for CloudFormation
 
-```
+```json
 {
   "type": "object",
   "properties": {
@@ -510,7 +510,7 @@ The following is the ServiceNow JSON schema for the configuration property for C
 
 The following is the ServiceNow JSON schema example for the configuration property for CloudFormation
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "CloudFormation SERVICENOW Data Source Template",
@@ -626,7 +626,7 @@ The following is the ServiceNow YAML schema and examples for the configuration p
 
 The following is the ServiceNow YAML schema for the configuration property for CloudFormation.
 
-```
+```YAML
 type: object
 properties:
   type:
@@ -953,7 +953,7 @@ properties:
 
 The following is the ServiceNow YAML example for the Configuration property for CloudFormation:
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Description: CloudFormation SERVICENOW Data Source Template
 Resources:

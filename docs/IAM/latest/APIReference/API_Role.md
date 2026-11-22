@@ -61,6 +61,13 @@ Type: Integer
 Valid Range: Minimum value of 3600. Maximum value of 43200.
 Required: No
 
+ ** MaxSigninSessionDuration **
+The maximum duration (in seconds) of an AWS Sign-In session for users who sign in with this role. This value is independent of `MaxSessionDuration`.
+This member is omitted when the setting is unset. In that case, no default value is returned and the existing sign-in session behavior applies.
+Type: Integer
+Valid Range: Minimum value of 3600. Maximum value of 7776000.
+Required: No
+
  ** PermissionsBoundary **
 The ARN of the policy used to set the permissions boundary for the role.
 For more information about permissions boundaries, see [Permissions boundaries for IAM identities ](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html) in the *IAM User Guide*.

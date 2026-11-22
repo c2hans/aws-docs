@@ -24,13 +24,13 @@ Example: `ec2:GetAwsNetworkPerformanceData`
 
 To specify multiple actions in a single statement, separate them with commas:
 
-```
+```json
 "Action": ["ec2:action1", "ec2:action2"]
 ```
 
 You can specify multiple actions using wildcards (\*). For example, to specify all actions that begin with the word `Describe`, include the following action. This grants all Amazon EC2 Describe actions, not only Infrastructure Performance actions.
 
-```
+```json
 "Action": "ec2:Describe*"
 ```
 
@@ -45,7 +45,7 @@ The following are the supported Infrastructure Performance actions:
 
 Infrastructure Performance doesn't support resource-level permissions. You must use the following wildcard resource:
 
-```
+```json
 "Resource": "*"
 ```
 

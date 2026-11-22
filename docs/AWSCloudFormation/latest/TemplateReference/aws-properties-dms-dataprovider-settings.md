@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dms-dataprovider-settings-syntax.json"></a>
 
-```
+```json
 {
   "[DocDbSettings](#cfn-dms-dataprovider-settings-docdbsettings)" : {{DocDbSettings}},
   "[IbmDb2LuwSettings](#cfn-dms-dataprovider-settings-ibmdb2luwsettings)" : {{IbmDb2LuwSettings}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dms-dataprovider-settings-syntax.yaml"></a>
 
-```
+```yaml
   [DocDbSettings](#cfn-dms-dataprovider-settings-docdbsettings): {{
     DocDbSettings}}
   [IbmDb2LuwSettings](#cfn-dms-dataprovider-settings-ibmdb2luwsettings): {{

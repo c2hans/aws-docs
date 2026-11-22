@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lightsail-distribution-querystringobject-syntax.json"></a>
 
-```
+```json
 {
   "[Option](#cfn-lightsail-distribution-querystringobject-option)" : {{Boolean}},
   "[QueryStringsAllowList](#cfn-lightsail-distribution-querystringobject-querystringsallowlist)" : {{[ String, ... ]}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lightsail-distribution-querystringobject-syntax.yaml"></a>
 
-```
+```yaml
   [Option](#cfn-lightsail-distribution-querystringobject-option): {{Boolean}}
   [QueryStringsAllowList](#cfn-lightsail-distribution-querystringobject-querystringsallowlist): {{
     - String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ram-permission-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RAM::Permission",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ram-permission-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RAM::Permission
 Properties:
   [Name](#cfn-ram-permission-name): {{String}}

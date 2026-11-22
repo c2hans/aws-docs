@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rds-dbcluster-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-rds-dbcluster-tag-key)" : {{String}},
   "[Value](#cfn-rds-dbcluster-tag-value)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rds-dbcluster-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-rds-dbcluster-tag-key): {{String}}
   [Value](#cfn-rds-dbcluster-tag-value): {{String}}
 ```
@@ -63,7 +63,7 @@ The following example specifies a tag for a DB cluster.
 #### JSON
 <a name="aws-properties-rds-dbcluster-tag--examples----json"></a>
 
-```
+```json
 "Tags" : [
    {
       "Key" : "keyname1",
@@ -79,7 +79,7 @@ The following example specifies a tag for a DB cluster.
 #### YAML
 <a name="aws-properties-rds-dbcluster-tag--examples----yaml"></a>
 
-```
+```yaml
 Tags:
   - Key: keyname1
     Value: value1

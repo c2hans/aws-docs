@@ -20,7 +20,7 @@ This example uses nested `Fn::ForEach` loops in the `Outputs` section to reduce 
 ### JSON
 <a name="intrinsic-function-reference-foreach-example-replicate-outputs.json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Transform": "AWS::LanguageExtensions",
@@ -84,7 +84,7 @@ This example uses nested `Fn::ForEach` loops in the `Outputs` section to reduce 
 ### YAML
 <a name="intrinsic-function-reference-foreach-example-outputs.yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Transform: AWS::LanguageExtensions
 Resources:
@@ -122,7 +122,7 @@ Outputs:
 
 The transformed template will be equivalent to the following template:
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Transform: AWS::LanguageExtensions
 Resources:
@@ -209,7 +209,7 @@ This example references replicated resources in the `Resources` section using th
 ### JSON
 <a name="intrinsic-function-reference-foreach-example-replicate-conditions.json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Transform": "AWS::LanguageExtensions",
@@ -258,7 +258,7 @@ This example references replicated resources in the `Resources` section using th
 ### YAML
 <a name="intrinsic-function-reference-foreach-example-replicate-conditions.yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Transform: AWS::LanguageExtensions
 Mappings:
@@ -288,7 +288,7 @@ Outputs:
 
 The transformed template will be equivalent to the following template:
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Transform: AWS::LanguageExtensions
 Resources:

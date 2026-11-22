@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-topic-semanticentitytype-syntax.json"></a>
 
-```
+```json
 {
   "[SubTypeName](#cfn-quicksight-topic-semanticentitytype-subtypename)" : {{String}},
   "[TypeName](#cfn-quicksight-topic-semanticentitytype-typename)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-topic-semanticentitytype-syntax.yaml"></a>
 
-```
+```yaml
   [SubTypeName](#cfn-quicksight-topic-semanticentitytype-subtypename): {{String}}
   [TypeName](#cfn-quicksight-topic-semanticentitytype-typename): {{String}}
   [TypeParameters](#cfn-quicksight-topic-semanticentitytype-typeparameters): {{

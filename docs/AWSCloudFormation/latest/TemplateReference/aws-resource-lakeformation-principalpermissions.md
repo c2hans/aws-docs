@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lakeformation-principalpermissions-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::LakeFormation::PrincipalPermissions",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lakeformation-principalpermissions-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::LakeFormation::PrincipalPermissions
 Properties:
   [Catalog](#cfn-lakeformation-principalpermissions-catalog): {{String}}
@@ -135,7 +135,7 @@ The following example demonstrates how to grant permissions on a `Database` reso
 #### JSON
 <a name="aws-resource-lakeformation-principalpermissions--examples--Permissions_on_a_database--json"></a>
 
-```
+```json
 {
     "SamplePermission": {
     "Type": "AWS::LakeFormation::PrincipalPermissions",
@@ -159,7 +159,7 @@ The following example demonstrates how to grant permissions on a `Database` reso
 #### YAML
 <a name="aws-resource-lakeformation-principalpermissions--examples--Permissions_on_a_database--yaml"></a>
 
-```
+```yaml
 SamplePermission:
     Type: AWS::LakeFormation::PrincipalPermissions
     Properties:
@@ -189,7 +189,7 @@ The following example demonstrates how to grant permissions on a `Table` resourc
 #### JSON
 <a name="aws-resource-lakeformation-principalpermissions--examples--Permissions_on_a_table--json"></a>
 
-```
+```json
 {
     "SamplePermission": {
     "Type": "AWS::LakeFormation::PrincipalPermissions",
@@ -214,7 +214,7 @@ The following example demonstrates how to grant permissions on a `Table` resourc
 #### YAML
 <a name="aws-resource-lakeformation-principalpermissions--examples--Permissions_on_a_table--yaml"></a>
 
-```
+```yaml
 SamplePermission:
     Type: AWS::LakeFormation::PrincipalPermissions
     Properties:
@@ -249,7 +249,7 @@ The following example demonstrates how to grant permissions on a `TableWithColum
 #### JSON
 <a name="aws-resource-lakeformation-principalpermissions--examples--Permissions_on_columns--json"></a>
 
-```
+```json
 {
     "SamplePermission": {
     "Type": "AWS::LakeFormation::PrincipalPermissions",
@@ -275,7 +275,7 @@ The following example demonstrates how to grant permissions on a `TableWithColum
 #### YAML
 <a name="aws-resource-lakeformation-principalpermissions--examples--Permissions_on_columns--yaml"></a>
 
-```
+```yaml
 SamplePermission:
     Type: AWS::LakeFormation::PrincipalPermissions
     Properties:

@@ -11,7 +11,7 @@ These examples demonstrate using the `Fn::ForEach` intrinsic function in the `Co
 **Important**
 `Conditions` must be the second property listed, or later. Stack creation will fail if `Conditions` is the first property listed within the template fragment parameter of `Fn::ForEach`.
 
-```
+```yaml
 Resources:
   'Fn::ForEach::Topics':
     - LogicalId
@@ -25,7 +25,7 @@ Resources:
 
 `Conditions` must be added as the second key, or later, for stack creation to succeed:
 
-```
+```yaml
 Resources:
   'Fn::ForEach::Topics':
     - LogicalId
@@ -48,7 +48,7 @@ This example uses the `Fn::ForEach` intrinsic function in the `Conditions` secti
 ### JSON
 <a name="intrinsic-function-reference-foreach-example-conditions.json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Transform": "AWS::LanguageExtensions",
@@ -107,7 +107,7 @@ This example uses the `Fn::ForEach` intrinsic function in the `Conditions` secti
 ### YAML
 <a name="intrinsic-function-reference-foreach-example-conditions.yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Transform: AWS::LanguageExtensions
 Parameters:
@@ -146,7 +146,7 @@ Resources:
 
 The transformed template will be equivalent to the following template:
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:
   ParamA:

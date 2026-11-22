@@ -40,7 +40,7 @@ The following IAM policy grants permissions to enable Amazon Kinesis Data Stream
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -77,7 +77,7 @@ The following IAM policy grants permissions to update Amazon Kinesis Data Stream
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -104,7 +104,7 @@ The following IAM policy grants permissions to disable Amazon Kinesis Data Strea
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -131,7 +131,7 @@ The following IAM policy grants permissions to enable and describe Amazon Kinesi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

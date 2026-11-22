@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pinpoint-segment-segmentdimensions-syntax.json"></a>
 
-```
+```json
 {
   "[Attributes](#cfn-pinpoint-segment-segmentdimensions-attributes)" : {{Json}},
   "[Behavior](#cfn-pinpoint-segment-segmentdimensions-behavior)" : {{Behavior}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pinpoint-segment-segmentdimensions-syntax.yaml"></a>
 
-```
+```yaml
   [Attributes](#cfn-pinpoint-segment-segmentdimensions-attributes): {{Json}}
   [Behavior](#cfn-pinpoint-segment-segmentdimensions-behavior): {{
     Behavior}}

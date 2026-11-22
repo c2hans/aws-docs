@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-events-endpoint-secondary-syntax.json"></a>
 
-```
+```json
 {
   "[Route](#cfn-events-endpoint-secondary-route)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-events-endpoint-secondary-syntax.yaml"></a>
 
-```
+```yaml
   [Route](#cfn-events-endpoint-secondary-route): {{String}}
 ```
 

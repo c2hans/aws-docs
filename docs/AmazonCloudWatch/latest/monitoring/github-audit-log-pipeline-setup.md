@@ -11,7 +11,7 @@ Collects audit log data from GitHub organizations or enterprises using personal 
 
 Configure the GitHub Audit Log source with the following parameters:
 
-```
+```yaml
 source:
   github_auditlog:
     scope: "ORGANIZATION"

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-distributionconfiguration-targetcontainerrepository-syntax.json"></a>
 
-```
+```json
 {
   "[RepositoryName](#cfn-imagebuilder-distributionconfiguration-targetcontainerrepository-repositoryname)" : {{String}},
   "[Service](#cfn-imagebuilder-distributionconfiguration-targetcontainerrepository-service)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-distributionconfiguration-targetcontainerrepository-syntax.yaml"></a>
 
-```
+```yaml
   [RepositoryName](#cfn-imagebuilder-distributionconfiguration-targetcontainerrepository-repositoryname): {{String}}
   [Service](#cfn-imagebuilder-distributionconfiguration-targetcontainerrepository-service): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-codesigningconfig-codesigningpolicies-syntax.json"></a>
 
-```
+```json
 {
   "[UntrustedArtifactOnDeployment](#cfn-lambda-codesigningconfig-codesigningpolicies-untrustedartifactondeployment)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-codesigningconfig-codesigningpolicies-syntax.yaml"></a>
 
-```
+```yaml
   [UntrustedArtifactOnDeployment](#cfn-lambda-codesigningconfig-codesigningpolicies-untrustedartifactondeployment): {{String}}
 ```
 

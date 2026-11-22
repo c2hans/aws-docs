@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lookoutequipment-inferencescheduler-s3inputconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Bucket](#cfn-lookoutequipment-inferencescheduler-s3inputconfiguration-bucket)" : {{String}},
   "[Prefix](#cfn-lookoutequipment-inferencescheduler-s3inputconfiguration-prefix)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lookoutequipment-inferencescheduler-s3inputconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Bucket](#cfn-lookoutequipment-inferencescheduler-s3inputconfiguration-bucket): {{String}}
   [Prefix](#cfn-lookoutequipment-inferencescheduler-s3inputconfiguration-prefix): {{String}}
 ```

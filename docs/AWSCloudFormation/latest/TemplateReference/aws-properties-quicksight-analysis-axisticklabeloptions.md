@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-axisticklabeloptions-syntax.json"></a>
 
-```
+```json
 {
   "[LabelOptions](#cfn-quicksight-analysis-axisticklabeloptions-labeloptions)" : {{LabelOptions}},
   "[RotationAngle](#cfn-quicksight-analysis-axisticklabeloptions-rotationangle)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-axisticklabeloptions-syntax.yaml"></a>
 
-```
+```yaml
   [LabelOptions](#cfn-quicksight-analysis-axisticklabeloptions-labeloptions): {{
     LabelOptions}}
   [RotationAngle](#cfn-quicksight-analysis-axisticklabeloptions-rotationangle): {{Number}}

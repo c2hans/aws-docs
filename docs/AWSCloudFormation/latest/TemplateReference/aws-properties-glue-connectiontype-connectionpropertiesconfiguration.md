@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-connectiontype-connectionpropertiesconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AdditionalRequestParameters](#cfn-glue-connectiontype-connectionpropertiesconfiguration-additionalrequestparameters)" : {{[ ConnectorProperty, ... ]}},
   "[Url](#cfn-glue-connectiontype-connectionpropertiesconfiguration-url)" : {{ConnectorProperty}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-connectiontype-connectionpropertiesconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AdditionalRequestParameters](#cfn-glue-connectiontype-connectionpropertiesconfiguration-additionalrequestparameters): {{
     - ConnectorProperty}}
   [Url](#cfn-glue-connectiontype-connectionpropertiesconfiguration-url): {{

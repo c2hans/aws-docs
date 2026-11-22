@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cognito-userpoolgroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Cognito::UserPoolGroup",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cognito-userpoolgroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Cognito::UserPoolGroup
 Properties:
   [Description](#cfn-cognito-userpoolgroup-description): {{String}}
@@ -109,7 +109,7 @@ The following example creates a group named "ExampleGroup" with an IAM role and 
 #### JSON
 <a name="aws-resource-cognito-userpoolgroup--examples--Creating_a_new_user_group_in_a_user_pool--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Provision a new user group to an Amazon Cognito user pool\n",
@@ -131,7 +131,7 @@ The following example creates a group named "ExampleGroup" with an IAM role and 
 #### YAML
 <a name="aws-resource-cognito-userpoolgroup--examples--Creating_a_new_user_group_in_a_user_pool--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 
 Description: |

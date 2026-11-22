@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-filtertextfieldcontrol-syntax.json"></a>
 
-```
+```json
 {
   "[DisplayOptions](#cfn-quicksight-template-filtertextfieldcontrol-displayoptions)" : {{TextFieldControlDisplayOptions}},
   "[FilterControlId](#cfn-quicksight-template-filtertextfieldcontrol-filtercontrolid)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-filtertextfieldcontrol-syntax.yaml"></a>
 
-```
+```yaml
   [DisplayOptions](#cfn-quicksight-template-filtertextfieldcontrol-displayoptions): {{
     TextFieldControlDisplayOptions}}
   [FilterControlId](#cfn-quicksight-template-filtertextfieldcontrol-filtercontrolid): {{String}}

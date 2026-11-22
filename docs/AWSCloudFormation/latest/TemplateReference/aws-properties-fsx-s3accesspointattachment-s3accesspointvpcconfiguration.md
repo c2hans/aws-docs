@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-s3accesspointattachment-s3accesspointvpcconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[VpcId](#cfn-fsx-s3accesspointattachment-s3accesspointvpcconfiguration-vpcid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-s3accesspointattachment-s3accesspointvpcconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [VpcId](#cfn-fsx-s3accesspointattachment-s3accesspointvpcconfiguration-vpcid): {{String}}
 ```
 

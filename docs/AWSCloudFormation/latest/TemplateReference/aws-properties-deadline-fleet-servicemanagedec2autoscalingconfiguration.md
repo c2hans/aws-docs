@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-deadline-fleet-servicemanagedec2autoscalingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ScaleOutWorkersPerMinute](#cfn-deadline-fleet-servicemanagedec2autoscalingconfiguration-scaleoutworkersperminute)" : {{Integer}},
   "[StandbyWorkerCount](#cfn-deadline-fleet-servicemanagedec2autoscalingconfiguration-standbyworkercount)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-deadline-fleet-servicemanagedec2autoscalingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ScaleOutWorkersPerMinute](#cfn-deadline-fleet-servicemanagedec2autoscalingconfiguration-scaleoutworkersperminute): {{Integer}}
   [StandbyWorkerCount](#cfn-deadline-fleet-servicemanagedec2autoscalingconfiguration-standbyworkercount): {{Integer}}
   [WorkerIdleDurationSeconds](#cfn-deadline-fleet-servicemanagedec2autoscalingconfiguration-workeridledurationseconds): {{Integer}}

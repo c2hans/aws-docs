@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lightsail-database-relationaldatabaseparameter-syntax.json"></a>
 
-```
+```json
 {
   "[AllowedValues](#cfn-lightsail-database-relationaldatabaseparameter-allowedvalues)" : {{String}},
   "[ApplyMethod](#cfn-lightsail-database-relationaldatabaseparameter-applymethod)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lightsail-database-relationaldatabaseparameter-syntax.yaml"></a>
 
-```
+```yaml
   [AllowedValues](#cfn-lightsail-database-relationaldatabaseparameter-allowedvalues): {{String}}
   [ApplyMethod](#cfn-lightsail-database-relationaldatabaseparameter-applymethod): {{String}}
   [ApplyType](#cfn-lightsail-database-relationaldatabaseparameter-applytype): {{String}}

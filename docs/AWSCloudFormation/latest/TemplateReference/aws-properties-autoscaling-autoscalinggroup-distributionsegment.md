@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-autoscaling-autoscalinggroup-distributionsegment-syntax.json"></a>
 
-```
+```json
 {
   "[TargetCapacityTypes](#cfn-autoscaling-autoscalinggroup-distributionsegment-targetcapacitytypes)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-autoscaling-autoscalinggroup-distributionsegment-syntax.yaml"></a>
 
-```
+```yaml
   [TargetCapacityTypes](#cfn-autoscaling-autoscalinggroup-distributionsegment-targetcapacitytypes): {{
     - String}}
 ```

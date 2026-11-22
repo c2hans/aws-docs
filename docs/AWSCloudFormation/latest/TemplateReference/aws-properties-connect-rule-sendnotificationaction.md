@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-rule-sendnotificationaction-syntax.json"></a>
 
-```
+```json
 {
   "[Content](#cfn-connect-rule-sendnotificationaction-content)" : {{String}},
   "[ContentType](#cfn-connect-rule-sendnotificationaction-contenttype)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-rule-sendnotificationaction-syntax.yaml"></a>
 
-```
+```yaml
   [Content](#cfn-connect-rule-sendnotificationaction-content): {{String}}
   [ContentType](#cfn-connect-rule-sendnotificationaction-contenttype): {{String}}
   [DeliveryMethod](#cfn-connect-rule-sendnotificationaction-deliverymethod): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-comprehend-flywheel-entityrecognitionconfig-syntax.json"></a>
 
-```
+```json
 {
   "[EntityTypes](#cfn-comprehend-flywheel-entityrecognitionconfig-entitytypes)" : {{[ EntityTypesListItem, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-comprehend-flywheel-entityrecognitionconfig-syntax.yaml"></a>
 
-```
+```yaml
   [EntityTypes](#cfn-comprehend-flywheel-entityrecognitionconfig-entitytypes): {{
     - EntityTypesListItem}}
 ```

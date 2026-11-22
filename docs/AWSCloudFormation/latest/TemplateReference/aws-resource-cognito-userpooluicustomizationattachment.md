@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cognito-userpooluicustomizationattachment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Cognito::UserPoolUICustomizationAttachment",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cognito-userpooluicustomizationattachment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Cognito::UserPoolUICustomizationAttachment
 Properties:
   [ClientId](#cfn-cognito-userpooluicustomizationattachment-clientid): {{String}}
@@ -92,7 +92,7 @@ The following example sets UI customization settings in the referenced user pool
 #### JSON
 <a name="aws-resource-cognito-userpooluicustomizationattachment--examples--Creating_a_new_UI_customization_attachment_for_a_user_pool--json"></a>
 
-```
+```json
 {
    "UserPoolUICustomization":{
       "Type":"AWS::Cognito::UserPoolUICustomizationAttachment",
@@ -113,7 +113,7 @@ The following example sets UI customization settings in the referenced user pool
 #### YAML
 <a name="aws-resource-cognito-userpooluicustomizationattachment--examples--Creating_a_new_UI_customization_attachment_for_a_user_pool--yaml"></a>
 
-```
+```yaml
 UserPoolUICustomization:
   Type: AWS::Cognito::UserPoolUICustomizationAttachment
   Properties:

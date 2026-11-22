@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-batcharrayproperties-syntax.json"></a>
 
-```
+```json
 {
   "[Size](#cfn-pipes-pipe-batcharrayproperties-size)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-batcharrayproperties-syntax.yaml"></a>
 
-```
+```yaml
   [Size](#cfn-pipes-pipe-batcharrayproperties-size): {{Integer}}
 ```
 

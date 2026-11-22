@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-intermediatetable-comparisoncontrols-syntax.json"></a>
 
-```
+```json
 {
   "[AllowedColumnComparisonColumns](#cfn-cleanrooms-intermediatetable-comparisoncontrols-allowedcolumncomparisoncolumns)" : {{[ String, ... ]}},
   "[AllowedLiteralComparisonColumns](#cfn-cleanrooms-intermediatetable-comparisoncontrols-allowedliteralcomparisoncolumns)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-intermediatetable-comparisoncontrols-syntax.yaml"></a>
 
-```
+```yaml
   [AllowedColumnComparisonColumns](#cfn-cleanrooms-intermediatetable-comparisoncontrols-allowedcolumncomparisoncolumns): {{
     - String}}
   [AllowedLiteralComparisonColumns](#cfn-cleanrooms-intermediatetable-comparisoncontrols-allowedliteralcomparisoncolumns): {{

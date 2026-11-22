@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-knowledgebase-redshiftqueryengineconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ProvisionedConfiguration](#cfn-bedrock-knowledgebase-redshiftqueryengineconfiguration-provisionedconfiguration)" : {{RedshiftProvisionedConfiguration}},
   "[ServerlessConfiguration](#cfn-bedrock-knowledgebase-redshiftqueryengineconfiguration-serverlessconfiguration)" : {{RedshiftServerlessConfiguration}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-knowledgebase-redshiftqueryengineconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ProvisionedConfiguration](#cfn-bedrock-knowledgebase-redshiftqueryengineconfiguration-provisionedconfiguration): {{
     RedshiftProvisionedConfiguration}}
   [ServerlessConfiguration](#cfn-bedrock-knowledgebase-redshiftqueryengineconfiguration-serverlessconfiguration): {{

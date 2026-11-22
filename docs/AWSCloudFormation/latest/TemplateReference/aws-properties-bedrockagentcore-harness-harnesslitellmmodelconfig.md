@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-harness-harnesslitellmmodelconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AdditionalParams](#cfn-bedrockagentcore-harness-harnesslitellmmodelconfig-additionalparams)" : {{Json}},
   "[ApiBase](#cfn-bedrockagentcore-harness-harnesslitellmmodelconfig-apibase)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-harness-harnesslitellmmodelconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AdditionalParams](#cfn-bedrockagentcore-harness-harnesslitellmmodelconfig-additionalparams): {{Json}}
   [ApiBase](#cfn-bedrockagentcore-harness-harnesslitellmmodelconfig-apibase): {{String}}
   [ApiKeyArn](#cfn-bedrockagentcore-harness-harnesslitellmmodelconfig-apikeyarn): {{String}}

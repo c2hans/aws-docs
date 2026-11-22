@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-space-spacesharingsettings-syntax.json"></a>
 
-```
+```json
 {
   "[SharingType](#cfn-sagemaker-space-spacesharingsettings-sharingtype)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-space-spacesharingsettings-syntax.yaml"></a>
 
-```
+```yaml
   [SharingType](#cfn-sagemaker-space-spacesharingsettings-sharingtype): {{String}}
 ```
 

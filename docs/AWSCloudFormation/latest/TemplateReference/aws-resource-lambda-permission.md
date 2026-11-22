@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lambda-permission-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lambda::Permission",
   "Properties" : {
@@ -51,7 +51,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lambda-permission-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lambda::Permission
 Properties:
   [Action](#cfn-lambda-permission-action): {{String}}
@@ -167,7 +167,7 @@ Grant account 123456789012 permission to invoke a function resource named `lambd
 #### YAML
 <a name="aws-resource-lambda-permission--examples--Cross_Account_Invoke--yaml"></a>
 
-```
+```yaml
   permission:
     Type: AWS::Lambda::Permission
     Properties:
@@ -184,7 +184,7 @@ Grant public, unauthenticated access to invoke your function named `lambdaFuncti
 #### YAML
 <a name="aws-resource-lambda-permission--examples--Public_Function_URL_Invoke--yaml"></a>
 
-```
+```yaml
   permissionForURLInvoke:
      Type: AWS::Lambda::Permission
      Properties:
@@ -202,7 +202,7 @@ Grant Amazon S3 permission to invoke a function resource named `function` create
 #### JSON
 <a name="aws-resource-lambda-permission--examples--Amazon_S3_Notifications--json"></a>
 
-```
+```json
 "s3Permission": {
     "Type": "AWS::Lambda::Permission",
     "Properties": {
@@ -230,7 +230,7 @@ Grant Amazon S3 permission to invoke a function resource named `function` create
 #### YAML
 <a name="aws-resource-lambda-permission--examples--Amazon_S3_Notifications--yaml"></a>
 
-```
+```yaml
 s3Permission:
   Type: AWS::Lambda::Permission
   Properties:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securitylake-subscriber-awslogsource-syntax.json"></a>
 
-```
+```json
 {
   "[SourceName](#cfn-securitylake-subscriber-awslogsource-sourcename)" : {{String}},
   "[SourceVersion](#cfn-securitylake-subscriber-awslogsource-sourceversion)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securitylake-subscriber-awslogsource-syntax.yaml"></a>
 
-```
+```yaml
   [SourceName](#cfn-securitylake-subscriber-awslogsource-sourcename): {{String}}
   [SourceVersion](#cfn-securitylake-subscriber-awslogsource-sourceversion): {{String}}
 ```

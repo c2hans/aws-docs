@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-imagepipeline-autodisablepolicy-syntax.json"></a>
 
-```
+```json
 {
   "[FailureCount](#cfn-imagebuilder-imagepipeline-autodisablepolicy-failurecount)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-imagepipeline-autodisablepolicy-syntax.yaml"></a>
 
-```
+```yaml
   [FailureCount](#cfn-imagebuilder-imagepipeline-autodisablepolicy-failurecount): {{Integer}}
 ```
 

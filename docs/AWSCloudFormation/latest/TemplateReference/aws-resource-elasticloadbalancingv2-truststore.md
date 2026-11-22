@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-elasticloadbalancingv2-truststore-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ElasticLoadBalancingV2::TrustStore",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-elasticloadbalancingv2-truststore-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ElasticLoadBalancingV2::TrustStore
 Properties:
   [CaCertificatesBundleS3Bucket](#cfn-elasticloadbalancingv2-truststore-cacertificatesbundles3bucket): {{String}}
@@ -120,7 +120,7 @@ The following example creates a trust store.
 #### YAML
 <a name="aws-resource-elasticloadbalancingv2-truststore--examples----yaml"></a>
 
-```
+```yaml
 myTrustStore:
   Type: 'AWS::ElasticLoadBalancingV2::TrustStore'
   Properties:
@@ -132,7 +132,7 @@ myTrustStore:
 #### JSON
 <a name="aws-resource-elasticloadbalancingv2-truststore--examples----json"></a>
 
-```
+```json
 {
   "myTrustStore": {
     "Type": "AWS::ElasticLoadBalancingV2::TrustStore",

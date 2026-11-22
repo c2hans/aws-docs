@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-availconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AvailSettings](#cfn-medialive-channel-availconfiguration-availsettings)" : {{AvailSettings}},
   "[Scte35SegmentationScope](#cfn-medialive-channel-availconfiguration-scte35segmentationscope)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-availconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AvailSettings](#cfn-medialive-channel-availconfiguration-availsettings): {{
     AvailSettings}}
   [Scte35SegmentationScope](#cfn-medialive-channel-availconfiguration-scte35segmentationscope): {{String}}

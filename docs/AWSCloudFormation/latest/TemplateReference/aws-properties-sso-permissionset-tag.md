@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sso-permissionset-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-sso-permissionset-tag-key)" : {{String}},
   "[Value](#cfn-sso-permissionset-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sso-permissionset-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-sso-permissionset-tag-key): {{String}}
   [Value](#cfn-sso-permissionset-tag-value): {{String}}
 ```

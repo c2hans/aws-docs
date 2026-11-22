@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisanalytics-applicationreferencedatasource-referencedatasource-syntax.json"></a>
 
-```
+```json
 {
   "[ReferenceSchema](#cfn-kinesisanalytics-applicationreferencedatasource-referencedatasource-referenceschema)" : {{ReferenceSchema}},
   "[S3ReferenceDataSource](#cfn-kinesisanalytics-applicationreferencedatasource-referencedatasource-s3referencedatasource)" : {{S3ReferenceDataSource}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisanalytics-applicationreferencedatasource-referencedatasource-syntax.yaml"></a>
 
-```
+```yaml
   [ReferenceSchema](#cfn-kinesisanalytics-applicationreferencedatasource-referencedatasource-referenceschema): {{
     ReferenceSchema}}
   [S3ReferenceDataSource](#cfn-kinesisanalytics-applicationreferencedatasource-referencedatasource-s3referencedatasource): {{

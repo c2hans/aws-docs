@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-agentregistry-registry-customjwtauthorizerconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AllowedAudience](#cfn-agentregistry-registry-customjwtauthorizerconfiguration-allowedaudience)" : {{[ String, ... ]}},
   "[AllowedClients](#cfn-agentregistry-registry-customjwtauthorizerconfiguration-allowedclients)" : {{[ String, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-agentregistry-registry-customjwtauthorizerconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AllowedAudience](#cfn-agentregistry-registry-customjwtauthorizerconfiguration-allowedaudience): {{
     - String}}
   [AllowedClients](#cfn-agentregistry-registry-customjwtauthorizerconfiguration-allowedclients): {{

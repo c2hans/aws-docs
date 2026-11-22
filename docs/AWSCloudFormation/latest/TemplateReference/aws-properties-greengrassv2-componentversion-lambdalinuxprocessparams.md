@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrassv2-componentversion-lambdalinuxprocessparams-syntax.json"></a>
 
-```
+```json
 {
   "[ContainerParams](#cfn-greengrassv2-componentversion-lambdalinuxprocessparams-containerparams)" : {{LambdaContainerParams}},
   "[IsolationMode](#cfn-greengrassv2-componentversion-lambdalinuxprocessparams-isolationmode)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrassv2-componentversion-lambdalinuxprocessparams-syntax.yaml"></a>
 
-```
+```yaml
   [ContainerParams](#cfn-greengrassv2-componentversion-lambdalinuxprocessparams-containerparams): {{
     LambdaContainerParams}}
   [IsolationMode](#cfn-greengrassv2-componentversion-lambdalinuxprocessparams-isolationmode): {{String}}

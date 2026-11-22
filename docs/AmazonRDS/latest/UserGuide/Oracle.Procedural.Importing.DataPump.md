@@ -152,7 +152,7 @@ In this step, you create the schemas into which you plan to import data and gran
 
    For example, the following SQL statements create a new user and grant the necessary permissions and roles to import the data into the schema owned by this user. Replace `{{schema_1}}` with the name of your schema in this step and in the following steps.
 
-   ```
+   ```sql
    CREATE USER {{schema_1}} IDENTIFIED BY {{my_password}};
    GRANT CREATE SESSION, RESOURCE TO schema_1;
    ALTER USER schema_1 QUOTA 100M ON users;
@@ -175,7 +175,7 @@ To create a dump file, use the `DBMS_DATAPUMP` package.
 
    The following script exports the `{{SCHEMA_1}}` schema into a dump file named `sample.dmp` in the `DATA_PUMP_DIR` directory. Replace `{{SCHEMA_1}}` with the name of the schema that you want to export.
 
-   ```
+   ```sql
    DECLARE
      v_hdnl NUMBER;
    BEGIN
@@ -268,7 +268,7 @@ Use `DBMS_DATAPUMP` to import the schema into your RDS for Oracle DB instance. A
 
    The following example imports the {{SCHEMA\_1}} data from `sample.dmp` into your target DB instance.
 
-   ```
+   ```sql
    DECLARE
      v_hdnl NUMBER;
    BEGIN
@@ -296,7 +296,7 @@ Data Pump jobs are started asynchronously. For information about monitoring a Da
 
    To monitor the progress of your Data Pump import job, run the following query:
 
-   ```
+   ```sql
    SELECT job_name, operation, job_mode, state, attached_sessions FROM DBA_DATAPUMP_JOBS WHERE owner_name = USER;
    ```
 
@@ -304,7 +304,7 @@ Data Pump jobs are started asynchronously. For information about monitoring a Da
 
    For example, the following query returns the number of tables for `{{SCHEMA_1}}`.
 
-   ```
+   ```sql
    SELECT COUNT(*) FROM DBA_TABLES WHERE OWNER='{{SCHEMA_1}}';
    ```
 
@@ -313,7 +313,7 @@ Data Pump jobs are started asynchronously. For information about monitoring a Da
 
 To check the status of a Data Pump import job, query the import log file:
 
-```
+```sql
 SELECT * FROM TABLE(rdsadmin.rds_file_util.read_text_file('DATA_PUMP_DIR', 'sample_imp.log'));
 ```
 
@@ -336,19 +336,19 @@ After the data has been imported, you can delete the files that you don't want t
 
 1. List the files in `DATA_PUMP_DIR` using the following command.
 
-   ```
+   ```sql
    SELECT * FROM TABLE(rdsadmin.rds_file_util.listdir('DATA_PUMP_DIR')) ORDER BY MTIME;
    ```
 
 1. To delete files in `DATA_PUMP_DIR` that you no longer require, use the following command.
 
-   ```
+   ```sql
    EXEC UTL_FILE.FREMOVE('DATA_PUMP_DIR','{{filename}}');
    ```
 
    For example, the following command deletes the file named `sample.dmp`.
 
-   ```
+   ```sql
    EXEC UTL_FILE.FREMOVE('DATA_PUMP_DIR','sample.dmp');
    ```
 
@@ -401,7 +401,7 @@ To grant privileges to the user on the RDS for Oracle target DB instance, take t
 
    For example, the following commands create a new user named {{schema\_1}} and grant the necessary permissions and roles to import the data into the schema for this user.
 
-   ```
+   ```sql
    CREATE USER {{schema_1}} IDENTIFIED BY {{my-password}};
    GRANT CREATE SESSION, RESOURCE TO schema_1;
    ALTER USER schema_1 QUOTA 100M ON users;
@@ -423,7 +423,7 @@ If the source database is an Amazon RDS instance, you can skip this step. You us
 
 The following commands create a new user and grant the necessary permissions.
 
-```
+```sql
 CREATE USER export_user IDENTIFIED BY {{my-password}};
 GRANT CREATE SESSION, CREATE TABLE, CREATE DATABASE LINK TO export_user;
 ALTER USER export_user QUOTA 100M ON users;
@@ -447,7 +447,7 @@ To create a dump file, do the following:
 
    The following script creates a dump file named *sample.dmp* in the `DATA_PUMP_DIR` directory.
 
-   ```
+   ```sql
    DECLARE
      v_hdnl NUMBER;
    BEGIN
@@ -504,7 +504,7 @@ If you are creating a database link between two DB instances inside the same VPC
 
 The following command creates a database link named `to_rds` that connects to the Amazon RDS master user at the target DB instance.
 
-```
+```sql
 CREATE DATABASE LINK to_rds
   CONNECT TO {{<master_user_account>}} IDENTIFIED BY {{<password>}}
   USING '(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST={{<dns or ip address of remote db>}})
@@ -516,7 +516,7 @@ CREATE DATABASE LINK to_rds
 
 Use `DBMS_FILE_TRANSFER` to copy the dump file from the source database instance to the target DB instance. The following script copies a dump file named sample.dmp from the source instance to a target database link named *to\_rds* (created in the previous step).
 
-```
+```sql
 BEGIN
   DBMS_FILE_TRANSFER.PUT_FILE(
     source_directory_object       => 'DATA_PUMP_DIR',
@@ -535,7 +535,7 @@ Use Oracle Data Pump to import the schema in the DB instance. Additional options
 
  Connect to the DB instance with the Amazon RDS master user account to perform the import.
 
-```
+```sql
 DECLARE
   v_hdnl NUMBER;
 BEGIN
@@ -564,7 +564,7 @@ Data Pump jobs are started asynchronously. For information about monitoring a Da
 
 You can verify the data import by viewing the user's tables on the DB instance. For example, the following query returns the number of tables for `{{schema_1}}`.
 
-```
+```sql
 SELECT COUNT(*) FROM DBA_TABLES WHERE OWNER='{{SCHEMA_1}}';
 ```
 
@@ -573,18 +573,18 @@ SELECT COUNT(*) FROM DBA_TABLES WHERE OWNER='{{SCHEMA_1}}';
 
 After the data has been imported, you can delete the files that you don't want to keep. You can list the files in `DATA_PUMP_DIR` using the following command.
 
-```
+```sql
 SELECT * FROM TABLE(rdsadmin.rds_file_util.listdir('DATA_PUMP_DIR')) ORDER BY MTIME;
 ```
 
 To delete files in `DATA_PUMP_DIR` that you no longer require, use the following command.
 
-```
+```sql
 EXEC UTL_FILE.FREMOVE('DATA_PUMP_DIR','{{<file name>}}');
 ```
 
 For example, the following command deletes the file named `"sample_copied.dmp"`.
 
-```
+```sql
 EXEC UTL_FILE.FREMOVE('DATA_PUMP_DIR','sample_copied.dmp');
 ```

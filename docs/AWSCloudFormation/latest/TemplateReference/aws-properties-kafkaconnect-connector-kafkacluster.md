@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kafkaconnect-connector-kafkacluster-syntax.json"></a>
 
-```
+```json
 {
   "[ApacheKafkaCluster](#cfn-kafkaconnect-connector-kafkacluster-apachekafkacluster)" : {{ApacheKafkaCluster}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kafkaconnect-connector-kafkacluster-syntax.yaml"></a>
 
-```
+```yaml
   [ApacheKafkaCluster](#cfn-kafkaconnect-connector-kafkacluster-apachekafkacluster): {{
     ApacheKafkaCluster}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudfront-monitoringsubscription-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudFront::MonitoringSubscription",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudfront-monitoringsubscription-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudFront::MonitoringSubscription
 Properties:
   [DistributionId](#cfn-cloudfront-monitoringsubscription-distributionid): {{String}}

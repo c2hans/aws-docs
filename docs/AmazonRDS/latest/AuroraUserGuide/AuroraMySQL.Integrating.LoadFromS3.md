@@ -62,7 +62,7 @@ The database user that issues the `LOAD DATA FROM S3` or `LOAD XML FROM S3` stat
 
  Use the following statement for Aurora MySQL version 3 and version 8.4:
 
-```
+```sql
 GRANT AWS_LOAD_S3_ACCESS TO '{{user}}'@'{{domain-or-ip-address}}'
 ```
 
@@ -74,7 +74,7 @@ However, you must call `SET ROLE ALL` explicitly at the beginning of a stored pr
 
 Use the following statement for Aurora MySQL version 2:
 
-```
+```sql
 GRANT LOAD FROM S3 ON *.* TO '{{user}}'@'{{domain-or-ip-address}}'
 ```
 
@@ -118,7 +118,7 @@ Make sure that your Aurora MySQL DB cluster allows outbound connections to S3. F
 ### Syntax
 <a name="AuroraMySQL.Integrating.LoadFromS3.Text.Syntax"></a>
 
-```
+```sql
 LOAD DATA [FROM] S3 [FILE | PREFIX | MANIFEST] '{{S3-URI}}'
     [REPLACE | IGNORE]
     INTO TABLE {{tbl_name}}
@@ -179,7 +179,7 @@ Specifies to ignore a certain number of lines or rows at the start of the input 
 Specifies a comma-separated list of one or more column names or user variables that identify which columns to load by name. The name of a user variable used for this purpose must match the name of an element from the text file, prefixed with @. You can employ user variables to store the corresponding field values for subsequent reuse.
 For example, the following statement loads the first column from the input file into the first column of `table1`, and sets the value of the `table_column2` column in `table1` to the input value of the second column divided by 100.
 
-```
+```sql
 LOAD DATA FROM S3 's3://{{amzn-s3-demo-bucket}}/data.txt'
     INTO TABLE table1
     (column1, @var1)
@@ -190,7 +190,7 @@ LOAD DATA FROM S3 's3://{{amzn-s3-demo-bucket}}/data.txt'
 Specifies a comma-separated list of assignment operations that set the values of columns in the table to values not included in the input file.
 For example, the following statement sets the first two columns of `table1` to the values in the first two columns from the input file, and then sets the value of the `column3` in `table1` to the current time stamp.
 
-```
+```sql
 LOAD DATA FROM S3  's3://{{amzn-s3-demo-bucket}}/data.txt'
     INTO TABLE table1
     (column1, column2)
@@ -207,7 +207,7 @@ You can use the `LOAD DATA FROM S3` statement with the `MANIFEST` keyword to spe
 
 The following JSON schema describes the format and content of a manifest file.
 
-```
+```json
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "additionalProperties": false,
@@ -251,7 +251,7 @@ The following JSON schema describes the format and content of a manifest file.
 
 Each `url` in the manifest must specify a URL with the bucket name and full object path for the file, not just a prefix. You can use a manifest to load files from different buckets, different regions, or files that do not share the same prefix. If a region is not specified in the URL, the region of the target Aurora DB cluster is used. The following example shows a manifest file that loads four files from different buckets.
 
-```
+```json
 {
   "entries": [
     {
@@ -277,7 +277,7 @@ The optional `mandatory` flag specifies whether `LOAD DATA FROM S3` should retur
 
 Manifest files can have any extension. The following example runs the `LOAD DATA FROM S3` statement with the manifest in the previous example, which is named **customer.manifest**.
 
-```
+```sql
 LOAD DATA FROM S3 MANIFEST 's3-us-west-2://aurora-bucket/customer.manifest'
     INTO TABLE CUSTOMER
     FIELDS TERMINATED BY ','
@@ -294,7 +294,7 @@ Every successful `LOAD DATA FROM S3` statement updates the `aurora_s3_load_histo
 
 After you run the `LOAD DATA FROM S3` statement, you can verify which files were loaded by querying the `aurora_s3_load_history` table. To see the files that were loaded from one iteration of the statement, use the `WHERE` clause to filter the records on the Amazon S3 URI for the manifest file used in the statement. If you have used the same manifest file before, filter the results using the `timestamp` field.
 
-```
+```sql
 select * from mysql.aurora_s3_load_history where load_prefix = '{{S3_URI}}';
 ```
 
@@ -313,7 +313,7 @@ The following table describes the fields in the `aurora_s3_load_history` table.
 
 The following statement loads data from an Amazon S3 bucket that is in the same region as the Aurora DB cluster. The statement reads the comma-delimited data in the file `customerdata.txt` that is in the {{amzn-s3-demo-bucket}} Amazon S3 bucket, and then loads the data into the table `store-schema.customer-table`.
 
-```
+```sql
 LOAD DATA FROM S3 's3://{{amzn-s3-demo-bucket}}/customerdata.csv'
     INTO TABLE store-schema.customer-table
     FIELDS TERMINATED BY ','
@@ -323,7 +323,7 @@ LOAD DATA FROM S3 's3://{{amzn-s3-demo-bucket}}/customerdata.csv'
 
 The following statement loads data from an Amazon S3 bucket that is in a different region from the Aurora DB cluster. The statement reads the comma-delimited data from all files that match the `employee-data` object prefix in the {{amzn-s3-demo-bucket}} Amazon S3 bucket in the `us-west-2` region, and then loads the data into the `employees` table.
 
-```
+```sql
 LOAD DATA FROM S3 PREFIX 's3-us-west-2://{{amzn-s3-demo-bucket}}/employee_data'
     INTO TABLE employees
     FIELDS TERMINATED BY ','
@@ -333,7 +333,7 @@ LOAD DATA FROM S3 PREFIX 's3-us-west-2://{{amzn-s3-demo-bucket}}/employee_data'
 
 The following statement loads data from the files specified in a JSON manifest file named q1\_sales.json into the `sales` table.
 
-```
+```sql
 LOAD DATA FROM S3 MANIFEST 's3-us-west-2://{{amzn-s3-demo-bucket1}}/q1_sales.json'
     INTO TABLE sales
     FIELDS TERMINATED BY ','
@@ -347,12 +347,12 @@ LOAD DATA FROM S3 MANIFEST 's3-us-west-2://{{amzn-s3-demo-bucket1}}/q1_sales.jso
 You can use the `LOAD XML FROM S3` statement to load data from XML files stored on an Amazon S3 bucket in one of three different XML formats:
 + Column names as attributes of a `<row>` element. The attribute value identifies the contents of the table field.
 
-  ```
+  ```xml
   <row column1="value1" column2="value2" .../>
   ```
 + Column names as child elements of a `<row>` element. The value of the child element identifies the contents of the table field.
 
-  ```
+  ```xml
   <row>
     <column1>value1</column1>
     <column2>value2</column2>
@@ -360,7 +360,7 @@ You can use the `LOAD XML FROM S3` statement to load data from XML files stored 
   ```
 + Column names in the `name` attribute of `<field>` elements in a `<row>` element. The value of the `<field>` element identifies the contents of the table field.
 
-  ```
+  ```xml
   <row>
     <field name='column1'>value1</field>
     <field name='column2'>value2</field>
@@ -370,7 +370,7 @@ You can use the `LOAD XML FROM S3` statement to load data from XML files stored 
 ### Syntax
 <a name="AuroraMySQL.Integrating.LoadFromS3.XML.Syntax"></a>
 
-```
+```sql
 LOAD XML FROM S3 '{{S3-URI}}'
     [REPLACE | IGNORE]
     INTO TABLE {{tbl_name}}
@@ -414,7 +414,7 @@ Specifies to ignore a certain number of lines or rows at the start of the input 
 Specifies a comma-separated list of one or more XML element names or user variables that identify which elements to load by name. The name of a user variable used for this purpose must match the name of an element from the XML file, prefixed with @. You can employ user variables to store the corresponding field values for subsequent reuse.
 For example, the following statement loads the first column from the input file into the first column of `table1`, and sets the value of the `table_column2` column in `table1` to the input value of the second column divided by 100.
 
-```
+```sql
 LOAD XML FROM S3 's3://{{amzn-s3-demo-bucket}}/data.xml'
    INTO TABLE table1
    (column1, @var1)
@@ -425,7 +425,7 @@ LOAD XML FROM S3 's3://{{amzn-s3-demo-bucket}}/data.xml'
 Specifies a comma-separated list of assignment operations that set the values of columns in the table to values not included in the input file.
 For example, the following statement sets the first two columns of `table1` to the values in the first two columns from the input file, and then sets the value of the `column3` in `table1` to the current time stamp.
 
-```
+```sql
 LOAD XML FROM S3 's3://{{amzn-s3-demo-bucket}}/data.xml'
    INTO TABLE table1
    (column1, column2)

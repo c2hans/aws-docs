@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ssm-resourcedatasync-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SSM::ResourceDataSync",
   "Properties" : {
@@ -49,7 +49,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ssm-resourcedatasync-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SSM::ResourceDataSync
 Properties:
   [BucketName](#cfn-ssm-resourcedatasync-bucketname): {{String}}
@@ -163,7 +163,7 @@ The following example synchronizes Systems Manager Inventory metadata in the US 
 #### JSON
 <a name="aws-resource-ssm-resourcedatasync--examples--Create_a_SyncToDestination_resource_data_sync--json"></a>
 
-```
+```json
 {
     "Description": "Create a resource data sync for Systems Manager",
     "Resources": {
@@ -188,7 +188,7 @@ The following example synchronizes Systems Manager Inventory metadata in the US 
 #### YAML
 <a name="aws-resource-ssm-resourcedatasync--examples--Create_a_SyncToDestination_resource_data_sync--yaml"></a>
 
-```
+```yaml
 ---
 Description: Create a resource data sync for Systems Manager
 Resources:
@@ -213,7 +213,7 @@ The following example synchronizes Systems Manager Explorer OpsData and OpsItems
 #### JSON
 <a name="aws-resource-ssm-resourcedatasync--examples--Create_a_SyncFromSource_resource_data_sync_with_type_SingleAccountMultipleRegions--json"></a>
 
-```
+```json
 {
     "Description": "Create a resource data sync for Systems Manager Explorer",
     "Resources": {
@@ -240,7 +240,7 @@ The following example synchronizes Systems Manager Explorer OpsData and OpsItems
 #### YAML
 <a name="aws-resource-ssm-resourcedatasync--examples--Create_a_SyncFromSource_resource_data_sync_with_type_SingleAccountMultipleRegions--yaml"></a>
 
-```
+```yaml
 ---
 Description: Create a resource data sync for Systems Manager Explorer
 Resources:
@@ -266,7 +266,7 @@ The following example synchronizes Systems Manager Explorer OpsData and OpsItems
 #### JSON
 <a name="aws-resource-ssm-resourcedatasync--examples--Create_a_SyncFromSource_resource_data_sync_with_type_EntireOrganization--json"></a>
 
-```
+```json
 {
     "Description": "Create a resource data sync for Systems Manager Explorer",
     "Resources": {
@@ -294,7 +294,7 @@ The following example synchronizes Systems Manager Explorer OpsData and OpsItems
 #### YAML
 <a name="aws-resource-ssm-resourcedatasync--examples--Create_a_SyncFromSource_resource_data_sync_with_type_EntireOrganization--yaml"></a>
 
-```
+```yaml
 ---
 Description: Create a resource data sync for Systems Manager Explorer
 Resources:
@@ -320,7 +320,7 @@ The following example synchronizes Systems Manager Explorer OpsData and OpsItems
 #### JSON
 <a name="aws-resource-ssm-resourcedatasync--examples--Creating_a_SyncFromSource_resource_data_sync_with_type_OrganizationalUnits--json"></a>
 
-```
+```json
 {
     "Description": "Create a resource data sync for Systems Manager Explorer",
     "Resources": {
@@ -351,7 +351,7 @@ The following example synchronizes Systems Manager Explorer OpsData and OpsItems
 #### YAML
 <a name="aws-resource-ssm-resourcedatasync--examples--Creating_a_SyncFromSource_resource_data_sync_with_type_OrganizationalUnits--yaml"></a>
 
-```
+```yaml
 ---
 Description: Create a resource data sync for Systems Manager Explorer
 Resources:

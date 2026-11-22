@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-connection-iampropertiesinput-syntax.json"></a>
 
-```
+```json
 {
   "[GlueLineageSyncEnabled](#cfn-datazone-connection-iampropertiesinput-gluelineagesyncenabled)" : {{Boolean}},
   "[RoleArn](#cfn-datazone-connection-iampropertiesinput-rolearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-connection-iampropertiesinput-syntax.yaml"></a>
 
-```
+```yaml
   [GlueLineageSyncEnabled](#cfn-datazone-connection-iampropertiesinput-gluelineagesyncenabled): {{Boolean}}
   [RoleArn](#cfn-datazone-connection-iampropertiesinput-rolearn): {{String}}
 ```

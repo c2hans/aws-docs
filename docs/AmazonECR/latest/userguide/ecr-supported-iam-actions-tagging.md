@@ -17,7 +17,7 @@ The following policy would only allow a user to create or tag a repository as `k
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -60,7 +60,7 @@ The following policy would allow a user to pull images from all repositories unl
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

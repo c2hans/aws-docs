@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-monitoringschedule-batchtransforminput-syntax.json"></a>
 
-```
+```json
 {
   "[DataCapturedDestinationS3Uri](#cfn-sagemaker-monitoringschedule-batchtransforminput-datacaptureddestinations3uri)" : {{String}},
   "[DatasetFormat](#cfn-sagemaker-monitoringschedule-batchtransforminput-datasetformat)" : {{DatasetFormat}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-monitoringschedule-batchtransforminput-syntax.yaml"></a>
 
-```
+```yaml
   [DataCapturedDestinationS3Uri](#cfn-sagemaker-monitoringschedule-batchtransforminput-datacaptureddestinations3uri): {{String}}
   [DatasetFormat](#cfn-sagemaker-monitoringschedule-batchtransforminput-datasetformat): {{
     DatasetFormat}}

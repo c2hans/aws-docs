@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-gamelift-script-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::GameLift::Script",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-gamelift-script-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::GameLift::Script
 Properties:
   [Name](#cfn-gamelift-script-name): {{String}}
@@ -127,7 +127,7 @@ The following example creates a GameLift script named `MyRealtimeScript`. The zi
 #### JSON
 <a name="aws-resource-gamelift-script--examples--Create_a_Realtime_Servers_Script--json"></a>
 
-```
+```json
 {
     "Resources": {
         "IAMRole": {
@@ -197,7 +197,7 @@ The following example creates a GameLift script named `MyRealtimeScript`. The zi
 #### YAML
 <a name="aws-resource-gamelift-script--examples--Create_a_Realtime_Servers_Script--yaml"></a>
 
-```
+```yaml
 Resources:
   IAMRole:
     Type: AWS::IAM::Role

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-healthlake-fhirdatastore-createdat-syntax.json"></a>
 
-```
+```json
 {
   "[Nanos](#cfn-healthlake-fhirdatastore-createdat-nanos)" : {{Integer}},
   "[Seconds](#cfn-healthlake-fhirdatastore-createdat-seconds)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-healthlake-fhirdatastore-createdat-syntax.yaml"></a>
 
-```
+```yaml
   [Nanos](#cfn-healthlake-fhirdatastore-createdat-nanos): {{Integer}}
   [Seconds](#cfn-healthlake-fhirdatastore-createdat-seconds): {{String}}
 ```

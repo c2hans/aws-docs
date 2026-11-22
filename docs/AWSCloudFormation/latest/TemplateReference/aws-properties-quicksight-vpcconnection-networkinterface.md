@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-vpcconnection-networkinterface-syntax.json"></a>
 
-```
+```json
 {
   "[AvailabilityZone](#cfn-quicksight-vpcconnection-networkinterface-availabilityzone)" : {{String}},
   "[ErrorMessage](#cfn-quicksight-vpcconnection-networkinterface-errormessage)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-vpcconnection-networkinterface-syntax.yaml"></a>
 
-```
+```yaml
   [AvailabilityZone](#cfn-quicksight-vpcconnection-networkinterface-availabilityzone): {{String}}
   [ErrorMessage](#cfn-quicksight-vpcconnection-networkinterface-errormessage): {{String}}
   [NetworkInterfaceId](#cfn-quicksight-vpcconnection-networkinterface-networkinterfaceid): {{String}}

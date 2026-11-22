@@ -13,7 +13,7 @@ The `s3:*Object` action uses a wildcard as part of the action name. The `AllObje
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-filledmapconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[FieldWells](#cfn-quicksight-template-filledmapconfiguration-fieldwells)" : {{FilledMapFieldWells}},
   "[Interactions](#cfn-quicksight-template-filledmapconfiguration-interactions)" : {{VisualInteractionOptions}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-filledmapconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [FieldWells](#cfn-quicksight-template-filledmapconfiguration-fieldwells): {{
     FilledMapFieldWells}}
   [Interactions](#cfn-quicksight-template-filledmapconfiguration-interactions): {{

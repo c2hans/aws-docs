@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-expressgatewayservice-expressgatewayscalingtarget-syntax.json"></a>
 
-```
+```json
 {
   "[AutoScalingMetric](#cfn-ecs-expressgatewayservice-expressgatewayscalingtarget-autoscalingmetric)" : {{String}},
   "[AutoScalingTargetValue](#cfn-ecs-expressgatewayservice-expressgatewayscalingtarget-autoscalingtargetvalue)" : {{Integer}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-expressgatewayservice-expressgatewayscalingtarget-syntax.yaml"></a>
 
-```
+```yaml
   [AutoScalingMetric](#cfn-ecs-expressgatewayservice-expressgatewayscalingtarget-autoscalingmetric): {{String}}
   [AutoScalingTargetValue](#cfn-ecs-expressgatewayservice-expressgatewayscalingtarget-autoscalingtargetvalue): {{Integer}}
   [MaxTaskCount](#cfn-ecs-expressgatewayservice-expressgatewayscalingtarget-maxtaskcount): {{Integer}}

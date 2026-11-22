@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codedeploy-deploymentgroup-autorollbackconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-codedeploy-deploymentgroup-autorollbackconfiguration-enabled)" : {{Boolean}},
   "[Events](#cfn-codedeploy-deploymentgroup-autorollbackconfiguration-events)" : {{[ String, ... ]}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codedeploy-deploymentgroup-autorollbackconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-codedeploy-deploymentgroup-autorollbackconfiguration-enabled): {{Boolean}}
   [Events](#cfn-codedeploy-deploymentgroup-autorollbackconfiguration-events): {{
     - String}}

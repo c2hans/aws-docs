@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-dateaxisoptions-syntax.json"></a>
 
-```
+```json
 {
   "[MissingDateVisibility](#cfn-quicksight-dashboard-dateaxisoptions-missingdatevisibility)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-dateaxisoptions-syntax.yaml"></a>
 
-```
+```yaml
   [MissingDateVisibility](#cfn-quicksight-dashboard-dateaxisoptions-missingdatevisibility): {{String}}
 ```
 

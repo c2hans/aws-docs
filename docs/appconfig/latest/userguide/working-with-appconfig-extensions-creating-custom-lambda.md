@@ -13,7 +13,7 @@ The following sample code for a Lambda function, when invoked, automatically bac
 
 **Sample Lambda function for an AWS AppConfig extension**
 
-```
+```python
 from datetime import datetime
 import base64
 import json

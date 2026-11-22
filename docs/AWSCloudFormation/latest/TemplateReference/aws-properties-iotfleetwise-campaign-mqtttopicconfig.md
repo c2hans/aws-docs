@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotfleetwise-campaign-mqtttopicconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ExecutionRoleArn](#cfn-iotfleetwise-campaign-mqtttopicconfig-executionrolearn)" : {{String}},
   "[MqttTopicArn](#cfn-iotfleetwise-campaign-mqtttopicconfig-mqtttopicarn)" : {{String}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotfleetwise-campaign-mqtttopicconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ExecutionRoleArn](#cfn-iotfleetwise-campaign-mqtttopicconfig-executionrolearn): {{String}}
   [MqttTopicArn](#cfn-iotfleetwise-campaign-mqtttopicconfig-mqtttopicarn): {{String}}
 ```

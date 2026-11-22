@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-totaloptions-syntax.json"></a>
 
-```
+```json
 {
   "[CustomLabel](#cfn-quicksight-dashboard-totaloptions-customlabel)" : {{String}},
   "[Placement](#cfn-quicksight-dashboard-totaloptions-placement)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-totaloptions-syntax.yaml"></a>
 
-```
+```yaml
   [CustomLabel](#cfn-quicksight-dashboard-totaloptions-customlabel): {{String}}
   [Placement](#cfn-quicksight-dashboard-totaloptions-placement): {{String}}
   [ScrollStatus](#cfn-quicksight-dashboard-totaloptions-scrollstatus): {{String}}

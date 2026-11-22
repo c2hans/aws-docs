@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sagemaker-endpoint-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SageMaker::Endpoint",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sagemaker-endpoint-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SageMaker::Endpoint
 Properties:
   [DeploymentConfig](#cfn-sagemaker-endpoint-deploymentconfig): {{
@@ -140,7 +140,7 @@ The following example creates an endpoint configuration from a trained model, an
 #### JSON
 <a name="aws-resource-sagemaker-endpoint--examples--SageMaker_Endpoint_Example--json"></a>
 
-```
+```json
 {
   "Description": "Basic Hosting entities test.  We need models to create endpoint configs.",
   "Mappings": {
@@ -255,7 +255,7 @@ The following example creates an endpoint configuration from a trained model, an
 #### YAML
 <a name="aws-resource-sagemaker-endpoint--examples--SageMaker_Endpoint_Example--yaml"></a>
 
-```
+```yaml
 Description: "Basic Hosting entities test.  We need models to create endpoint configs."
 Mappings:
   RegionMap:

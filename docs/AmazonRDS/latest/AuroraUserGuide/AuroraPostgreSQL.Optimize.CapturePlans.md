@@ -15,7 +15,7 @@ To control the maximum number of plans that can be captured and stored in the `d
 
 If you have a known set of SQL statements to manage, put the statements into a SQL script file and then manually capture plans. The following shows a psql example of how to capture query plans manually for a set of SQL statements.
 
-```
+```sql
 psql> SET apg_plan_mgmt.capture_plan_baselines = manual;
 psql> \i my-statements.sql
 psql> SET apg_plan_mgmt.capture_plan_baselines = off;

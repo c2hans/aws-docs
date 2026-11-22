@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityagent-agentspace-confluencedocumentresource-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-securityagent-agentspace-confluencedocumentresource-name)" : {{String}},
   "[PageId](#cfn-securityagent-agentspace-confluencedocumentresource-pageid)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityagent-agentspace-confluencedocumentresource-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-securityagent-agentspace-confluencedocumentresource-name): {{String}}
   [PageId](#cfn-securityagent-agentspace-confluencedocumentresource-pageid): {{String}}
   [SpaceKey](#cfn-securityagent-agentspace-confluencedocumentresource-spacekey): {{String}}

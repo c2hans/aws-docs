@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-geospatialcoordinatebounds-syntax.json"></a>
 
-```
+```json
 {
   "[East](#cfn-quicksight-analysis-geospatialcoordinatebounds-east)" : {{Number}},
   "[North](#cfn-quicksight-analysis-geospatialcoordinatebounds-north)" : {{Number}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-geospatialcoordinatebounds-syntax.yaml"></a>
 
-```
+```yaml
   [East](#cfn-quicksight-analysis-geospatialcoordinatebounds-east): {{Number}}
   [North](#cfn-quicksight-analysis-geospatialcoordinatebounds-north): {{Number}}
   [South](#cfn-quicksight-analysis-geospatialcoordinatebounds-south): {{Number}}

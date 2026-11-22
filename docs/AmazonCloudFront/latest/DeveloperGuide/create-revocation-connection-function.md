@@ -17,7 +17,7 @@ aws cloudfront create-connection-function \
 
 The configuration file specifies the KeyValueStore association:
 
-```
+```json
 {
   "Runtime": "cloudfront-js-2.0",
   "Comment": "A function that implements revocation control via KVS",
@@ -34,7 +34,7 @@ The configuration file specifies the KeyValueStore association:
 
 The Connection Function code checks the KeyValueStore for revoked certificates:
 
-```
+```javascript
 import cf from 'cloudfront';
 
 async function connectionHandler(connection) {

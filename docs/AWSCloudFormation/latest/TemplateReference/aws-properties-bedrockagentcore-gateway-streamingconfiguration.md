@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gateway-streamingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EnableResponseStreaming](#cfn-bedrockagentcore-gateway-streamingconfiguration-enableresponsestreaming)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gateway-streamingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EnableResponseStreaming](#cfn-bedrockagentcore-gateway-streamingconfiguration-enableresponsestreaming): {{Boolean}}
 ```
 

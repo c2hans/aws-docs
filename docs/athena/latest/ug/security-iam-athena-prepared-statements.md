@@ -10,7 +10,7 @@ For more information about prepared statements, see [Use parameterized queries](
 
 The following IAM permissions are required for creating, managing, and executing prepared statements.
 
-```
+```sql
 athena:CreatePreparedStatement
 athena:UpdatePreparedStatement
 athena:GetPreparedStatement
@@ -37,7 +37,7 @@ The following example IAM policy grants permissions to manage and run prepared s
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

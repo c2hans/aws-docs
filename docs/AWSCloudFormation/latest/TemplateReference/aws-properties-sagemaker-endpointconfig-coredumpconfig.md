@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-endpointconfig-coredumpconfig-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationS3Uri](#cfn-sagemaker-endpointconfig-coredumpconfig-destinations3uri)" : {{String}},
   "[KmsKeyId](#cfn-sagemaker-endpointconfig-coredumpconfig-kmskeyid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-endpointconfig-coredumpconfig-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationS3Uri](#cfn-sagemaker-endpointconfig-coredumpconfig-destinations3uri): {{String}}
   [KmsKeyId](#cfn-sagemaker-endpointconfig-coredumpconfig-kmskeyid): {{String}}
 ```

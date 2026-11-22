@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-hooktimeoutconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-ecs-service-hooktimeoutconfig-action)" : {{String}},
   "[TimeoutInMinutes](#cfn-ecs-service-hooktimeoutconfig-timeoutinminutes)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-hooktimeoutconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-ecs-service-hooktimeoutconfig-action): {{String}}
   [TimeoutInMinutes](#cfn-ecs-service-hooktimeoutconfig-timeoutinminutes): {{Integer}}
 ```

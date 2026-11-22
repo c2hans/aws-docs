@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-managedblockchain-accessor-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ManagedBlockchain::Accessor",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-managedblockchain-accessor-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ManagedBlockchain::Accessor
 Properties:
   [AccessorType](#cfn-managedblockchain-accessor-accessortype): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-aiagent-casesummarizationaiagentconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CaseSummarizationAIGuardrailId](#cfn-wisdom-aiagent-casesummarizationaiagentconfiguration-casesummarizationaiguardrailid)" : {{String}},
   "[CaseSummarizationAIPromptId](#cfn-wisdom-aiagent-casesummarizationaiagentconfiguration-casesummarizationaipromptid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-aiagent-casesummarizationaiagentconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CaseSummarizationAIGuardrailId](#cfn-wisdom-aiagent-casesummarizationaiagentconfiguration-casesummarizationaiguardrailid): {{String}}
   [CaseSummarizationAIPromptId](#cfn-wisdom-aiagent-casesummarizationaiagentconfiguration-casesummarizationaipromptid): {{String}}
   [Locale](#cfn-wisdom-aiagent-casesummarizationaiagentconfiguration-locale): {{String}}

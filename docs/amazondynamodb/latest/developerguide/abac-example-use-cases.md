@@ -43,7 +43,7 @@ Using the `aws:ResourceTag/tag-key` condition key, you can compare the tag key-v
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -94,7 +94,7 @@ Using the `aws:ResourceTag/tag-key` condition key, you can compare the tag key-v
 
 1. Create a table. The following example uses the [CreateTable](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_CreateTable.html) API to create a table named `myMusicTable`.
 
-   ```
+   ```java
    DynamoDbClient dynamoDB = DynamoDbClient.builder().region(region).build();
    CreateTableRequest createTableRequest = CreateTableRequest.builder()
        .attributeDefinitions(
@@ -128,7 +128,7 @@ Using the `aws:ResourceTag/tag-key` condition key, you can compare the tag key-v
 
 1. Add a tag to this table. The [TagResource](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_TagResource.html) API in the following example adds the tag key-value pair `Title: ProductManager` to the `myMusicTable`.
 
-   ```
+   ```java
    TagResourceRequest tagResourceRequest = TagResourceRequest.builder()
        .resourceArn(tableArn)
        .tags(
@@ -150,7 +150,7 @@ Using the `aws:ResourceTag/tag-key` condition key, you can compare the tag key-v
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -176,7 +176,7 @@ Using the `aws:ResourceTag/tag-key` condition key, you can compare the tag key-v
 
 1. Use the [PutItem](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_PutItem.html) API to put an item to the `myMusicTable`.
 
-   ```
+   ```java
    HashMap<String, AttributeValue> info = new HashMap<>();
    info.put("rating", AttributeValue.builder().s("9").build());
    info.put("artists", AttributeValue.builder().ss(List.of("Acme Band","No One You Know").build());
@@ -196,7 +196,7 @@ Using the `aws:ResourceTag/tag-key` condition key, you can compare the tag key-v
 
 1. Scan the table to verify if the item was added to the table.
 
-   ```
+   ```java
    ScanRequest scanRequest = ScanRequest.builder()
                    .tableName(tableName)
                    .build();
@@ -209,7 +209,7 @@ Using the `aws:ResourceTag/tag-key` condition key, you can compare the tag key-v
 
 1. Create a table. The following example uses the [CreateTable](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_CreateTable.html) API to create a table named `myMusicTable`.
 
-   ```
+   ```python
    create_table_response = ddb_client.create_table(
        AttributeDefinitions=[
            {
@@ -235,7 +235,7 @@ Using the `aws:ResourceTag/tag-key` condition key, you can compare the tag key-v
 
 1. Add a tag to this table. The [TagResource](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_TagResource.html) API in the following example adds the tag key-value pair `Title: ProductManager` to the `myMusicTable`.
 
-   ```
+   ```python
    tag_resouce_response = ddb_client.tag_resource(
        ResourceArn=table_arn,
        Tags=[
@@ -254,7 +254,7 @@ Using the `aws:ResourceTag/tag-key` condition key, you can compare the tag key-v
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -280,7 +280,7 @@ Using the `aws:ResourceTag/tag-key` condition key, you can compare the tag key-v
 
 1. Use the [PutItem](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_PutItem.html) API to put an item to the `myMusicTable`.
 
-   ```
+   ```python
    put_item_response = client.put_item(
        TableName = 'myMusicTable'
        Item = {
@@ -297,7 +297,7 @@ Using the `aws:ResourceTag/tag-key` condition key, you can compare the tag key-v
 
 1. Scan the table to verify if the item was added to the table.
 
-   ```
+   ```python
    scan_response = client.scan(
        TableName='myMusicTable'
    )
@@ -330,7 +330,7 @@ Using the [aws:RequestTag/tag-key](https://docs.aws.amazon.com/IAM/latest/UserGu
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -375,7 +375,7 @@ Using the [aws:RequestTag/tag-key](https://docs.aws.amazon.com/IAM/latest/UserGu
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -400,7 +400,7 @@ Using the [aws:RequestTag/tag-key](https://docs.aws.amazon.com/IAM/latest/UserGu
 
 1. Create a table that contains the tag key-value pair of `"Owner": "John"`.
 
-   ```
+   ```python
    ddb_client = boto3.client('dynamodb')
 
    create_table_response = ddb_client.create_table(
@@ -457,7 +457,7 @@ Using the [aws:TagKeys](https://docs.aws.amazon.com/IAM/latest/UserGuide/referen
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -505,7 +505,7 @@ Using the [aws:TagKeys](https://docs.aws.amazon.com/IAM/latest/UserGuide/referen
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -533,7 +533,7 @@ Using the [aws:TagKeys](https://docs.aws.amazon.com/IAM/latest/UserGuide/referen
 
 1. Assume the role to which the policy was attached, and create a table with the tag key `Title`.
 
-   ```
+   ```python
    ddb_client = boto3.client('dynamodb')
 
    create_table_response = ddb_client.create_table(

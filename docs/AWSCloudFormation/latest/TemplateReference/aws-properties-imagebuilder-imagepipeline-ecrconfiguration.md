@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-imagepipeline-ecrconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ContainerTags](#cfn-imagebuilder-imagepipeline-ecrconfiguration-containertags)" : {{[ String, ... ]}},
   "[RepositoryName](#cfn-imagebuilder-imagepipeline-ecrconfiguration-repositoryname)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-imagepipeline-ecrconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ContainerTags](#cfn-imagebuilder-imagepipeline-ecrconfiguration-containertags): {{
     - String}}
   [RepositoryName](#cfn-imagebuilder-imagepipeline-ecrconfiguration-repositoryname): {{String}}

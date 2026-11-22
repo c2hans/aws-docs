@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssm-association-s3outputlocation-syntax.json"></a>
 
-```
+```json
 {
   "[OutputS3BucketName](#cfn-ssm-association-s3outputlocation-outputs3bucketname)" : {{String}},
   "[OutputS3KeyPrefix](#cfn-ssm-association-s3outputlocation-outputs3keyprefix)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssm-association-s3outputlocation-syntax.yaml"></a>
 
-```
+```yaml
   [OutputS3BucketName](#cfn-ssm-association-s3outputlocation-outputs3bucketname): {{String}}
   [OutputS3KeyPrefix](#cfn-ssm-association-s3outputlocation-outputs3keyprefix): {{String}}
   [OutputS3Region](#cfn-ssm-association-s3outputlocation-outputs3region): {{String}}

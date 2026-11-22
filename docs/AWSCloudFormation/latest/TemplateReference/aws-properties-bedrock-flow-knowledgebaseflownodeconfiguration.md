@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-flow-knowledgebaseflownodeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[GuardrailConfiguration](#cfn-bedrock-flow-knowledgebaseflownodeconfiguration-guardrailconfiguration)" : {{GuardrailConfiguration}},
   "[InferenceConfiguration](#cfn-bedrock-flow-knowledgebaseflownodeconfiguration-inferenceconfiguration)" : {{PromptInferenceConfiguration}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-flow-knowledgebaseflownodeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [GuardrailConfiguration](#cfn-bedrock-flow-knowledgebaseflownodeconfiguration-guardrailconfiguration): {{
     GuardrailConfiguration}}
   [InferenceConfiguration](#cfn-bedrock-flow-knowledgebaseflownodeconfiguration-inferenceconfiguration): {{

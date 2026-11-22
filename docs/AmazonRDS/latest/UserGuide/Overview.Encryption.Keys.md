@@ -40,7 +40,7 @@ When RDS uses your KMS key, or when Amazon EBS uses the KMS key on behalf of RDS
 
 At minimum, Amazon RDS always uses the DB instance ID for the encryption context, as in the following JSON-formatted example:
 
-```
+```json
 { "aws:rds:db-id": "db-CQYSMDPBRZ7BPMH7Y3RTDG5QY" }
 ```
 
@@ -48,7 +48,7 @@ This encryption context can help you identify the DB instance for which your KMS
 
 When your KMS key is used for a specific DB instance and a specific Amazon EBS volume, both the DB instance ID and the Amazon EBS volume ID are used for the encryption context, as in the following JSON-formatted example:
 
-```
+```json
 {
   "aws:rds:db-id": "db-BRG7VYS3SVIFQW7234EJQOM5RQ",
   "aws:ebs:id": "vol-ad8c6542"

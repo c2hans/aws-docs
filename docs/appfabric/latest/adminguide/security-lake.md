@@ -42,7 +42,7 @@ Security Lake supports AppFabric as a custom source using an Amazon Data Firehos
 
 1. Enter the following schema, and complete the AWS Glue table creation process.
 
-   ```
+   ```json
    [
        {
            "Name": "message",

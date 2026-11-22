@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-budgets-budget-timeperiod-syntax.json"></a>
 
-```
+```json
 {
   "[End](#cfn-budgets-budget-timeperiod-end)" : {{String}},
   "[Start](#cfn-budgets-budget-timeperiod-start)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-budgets-budget-timeperiod-syntax.yaml"></a>
 
-```
+```yaml
   [End](#cfn-budgets-budget-timeperiod-end): {{String}}
   [Start](#cfn-budgets-budget-timeperiod-start): {{String}}
 ```

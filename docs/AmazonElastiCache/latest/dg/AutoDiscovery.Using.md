@@ -35,7 +35,7 @@ aws elasticache describe-cache-clusters ^
 ```
 This operation produces output similar to the following (JSON format):
 
-```
+```json
 {
     "CacheClusters": [
         {

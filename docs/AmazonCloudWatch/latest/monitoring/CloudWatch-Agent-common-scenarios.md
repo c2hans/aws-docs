@@ -94,7 +94,7 @@ To add custom dimensions such as tags to metrics collected by the agent, add the
 
 For example, the following example section of the configuration file adds a custom dimension named `stackName` with a value of `Prod` to the `cpu` and `disk` metrics collected by the agent.
 
-```
+```json
 "cpu":{
   "resources":[
     "*"
@@ -133,7 +133,7 @@ To aggregate or roll up metrics collected by the agent, add an `aggregation_dime
 
 For example, the following configuration file snippet rolls up metrics on the `AutoScalingGroupName` dimension. The metrics from all instances in each Auto Scaling group are aggregated and can be viewed as a whole.
 
-```
+```json
 "metrics": {
   "cpu":{...}
   "disk":{...}
@@ -143,7 +143,7 @@ For example, the following configuration file snippet rolls up metrics on the `A
 
 To roll up along the combination of each `InstanceId` and `InstanceType` dimensions in addition to rolling up on the Auto Scaling group name, add the following.
 
-```
+```json
 "metrics": {
   "cpu":{...}
   "disk":{...}
@@ -153,7 +153,7 @@ To roll up along the combination of each `InstanceId` and `InstanceType` dimensi
 
 To roll up metrics into one collection instead, use `[]`.
 
-```
+```json
 "metrics": {
   "cpu":{...}
   "disk":{...}
@@ -170,7 +170,7 @@ The `metrics_collection_interval` field specifies the time interval for the metr
 
 For example, if your metrics should all be high-resolution and collected every 10 seconds, specify 10 as the value for `metrics_collection_interval` under the `agent` section as a global metrics collection interval.
 
-```
+```json
 "agent": {
   "metrics_collection_interval": 10
 }
@@ -178,7 +178,7 @@ For example, if your metrics should all be high-resolution and collected every 1
 
 Alternatively, the following example sets the `cpu` metrics to be collected every second, and all other metrics are collected every minute.
 
-```
+```json
 "agent":{
   "metrics_collection_interval": 60
 },
@@ -219,7 +219,7 @@ You can also specify separate `role_arn` strings in the agent configuration file
 
 The following example of part of the `agent` section of the configuration file sets the agent to use `CrossAccountAgentRole` when sending data to a different account.
 
-```
+```json
 {
   "agent": {
     "credentials": {
@@ -232,7 +232,7 @@ The following example of part of the `agent` section of the configuration file s
 
 Alternatively, the following example sets different roles for the sending account to use for sending metrics, logs, and traces:
 
-```
+```json
 "metrics": {
     "credentials": {
      "role_arn": "RoleToSendMetrics"
@@ -240,7 +240,7 @@ Alternatively, the following example sets different roles for the sending accoun
     "metrics_collected": {....
 ```
 
-```
+```json
 "logs": {
     "credentials": {
     "role_arn": "RoleToSendLogs"
@@ -259,7 +259,7 @@ The role in the sending account also must include the following policy. You add 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -285,7 +285,7 @@ The role in the target account must include the following policy so that it reco
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -322,7 +322,7 @@ For more information about the meanings of the symbols supported by the new Clou
 
 To prevent merge conflicts with pipelines automatically created by CloudWatch agent, add a custom suffix to each of the components and pipelines in your OpenTelemetry collector configuration.
 
-```
+```JSON
 receivers:
   otlp/custom-suffix:
     protocols:

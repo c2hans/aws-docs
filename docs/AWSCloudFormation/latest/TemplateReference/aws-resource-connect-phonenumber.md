@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-connect-phonenumber-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Connect::PhoneNumber",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-connect-phonenumber-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Connect::PhoneNumber
 Properties:
   [CountryCode](#cfn-connect-phonenumber-countrycode): {{String}}
@@ -139,7 +139,7 @@ The following example specifies a phone number resource for an Connect Customer 
 #### YAML
 <a name="aws-resource-connect-phonenumber--examples--Specify_a_phone_number_resource--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
  Description: Specifies a phone number for Connect Customer instance
  Resources:

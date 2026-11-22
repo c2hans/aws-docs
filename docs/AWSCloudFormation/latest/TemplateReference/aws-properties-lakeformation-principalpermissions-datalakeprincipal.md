@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lakeformation-principalpermissions-datalakeprincipal-syntax.json"></a>
 
-```
+```json
 {
   "[DataLakePrincipalIdentifier](#cfn-lakeformation-principalpermissions-datalakeprincipal-datalakeprincipalidentifier)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lakeformation-principalpermissions-datalakeprincipal-syntax.yaml"></a>
 
-```
+```yaml
   [DataLakePrincipalIdentifier](#cfn-lakeformation-principalpermissions-datalakeprincipal-datalakeprincipalidentifier): {{String}}
 ```
 

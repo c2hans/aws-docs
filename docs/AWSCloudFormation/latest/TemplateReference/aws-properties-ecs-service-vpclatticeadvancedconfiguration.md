@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-vpclatticeadvancedconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AlternateTargetGroupArn](#cfn-ecs-service-vpclatticeadvancedconfiguration-alternatetargetgrouparn)" : {{String}},
   "[ProductionListenerRule](#cfn-ecs-service-vpclatticeadvancedconfiguration-productionlistenerrule)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-vpclatticeadvancedconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AlternateTargetGroupArn](#cfn-ecs-service-vpclatticeadvancedconfiguration-alternatetargetgrouparn): {{String}}
   [ProductionListenerRule](#cfn-ecs-service-vpclatticeadvancedconfiguration-productionlistenerrule): {{String}}
   [TestListenerRule](#cfn-ecs-service-vpclatticeadvancedconfiguration-testlistenerrule): {{String}}

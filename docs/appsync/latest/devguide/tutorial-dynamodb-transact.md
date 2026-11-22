@@ -23,7 +23,7 @@ Like other resolvers, you need to create a data source in AWS AppSync and either
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -64,7 +64,7 @@ For this tutorial, any role with the following inline policy will work. Replace 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

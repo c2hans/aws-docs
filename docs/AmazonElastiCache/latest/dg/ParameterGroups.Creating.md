@@ -79,7 +79,7 @@ aws elasticache create-cache-parameter-group ^
 ```
 The output from this command should look something like this.
 
-```
+```json
 {
     "CacheParameterGroup": {
         "CacheParameterGroupName": "myMem14",
@@ -109,7 +109,7 @@ aws elasticache create-cache-parameter-group ^
 ```
 The output from this command should look something like this.
 
-```
+```json
 {
     "CacheParameterGroup": {
         "CacheParameterGroupName": "myRed7",

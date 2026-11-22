@@ -30,7 +30,7 @@ The complete contents of **AmazonCloudWatchRUMServiceRolePolicy** are as follows
 
 ****
 
-```
+```json
 {
 	"Version":"2012-10-17",
 	"Statement": [

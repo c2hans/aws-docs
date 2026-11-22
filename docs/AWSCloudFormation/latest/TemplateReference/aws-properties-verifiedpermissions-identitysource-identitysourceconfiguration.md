@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-verifiedpermissions-identitysource-identitysourceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CognitoUserPoolConfiguration](#cfn-verifiedpermissions-identitysource-identitysourceconfiguration-cognitouserpoolconfiguration)" : {{CognitoUserPoolConfiguration}},
   "[OpenIdConnectConfiguration](#cfn-verifiedpermissions-identitysource-identitysourceconfiguration-openidconnectconfiguration)" : {{OpenIdConnectConfiguration}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-verifiedpermissions-identitysource-identitysourceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CognitoUserPoolConfiguration](#cfn-verifiedpermissions-identitysource-identitysourceconfiguration-cognitouserpoolconfiguration): {{
     CognitoUserPoolConfiguration}}
   [OpenIdConnectConfiguration](#cfn-verifiedpermissions-identitysource-identitysourceconfiguration-openidconnectconfiguration): {{

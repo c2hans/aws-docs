@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrcontainers-securityconfiguration-identitycenterconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EnableIdentityCenter](#cfn-emrcontainers-securityconfiguration-identitycenterconfiguration-enableidentitycenter)" : {{Boolean}},
   "[IdentityCenterApplicationAssignmentRequired](#cfn-emrcontainers-securityconfiguration-identitycenterconfiguration-identitycenterapplicationassignmentrequired)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrcontainers-securityconfiguration-identitycenterconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EnableIdentityCenter](#cfn-emrcontainers-securityconfiguration-identitycenterconfiguration-enableidentitycenter): {{Boolean}}
   [IdentityCenterApplicationAssignmentRequired](#cfn-emrcontainers-securityconfiguration-identitycenterconfiguration-identitycenterapplicationassignmentrequired): {{Boolean}}
   [IdentityCenterInstanceARN](#cfn-emrcontainers-securityconfiguration-identitycenterconfiguration-identitycenterinstancearn): {{String}}

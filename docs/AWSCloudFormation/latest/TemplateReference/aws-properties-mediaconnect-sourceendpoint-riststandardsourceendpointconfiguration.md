@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-sourceendpoint-riststandardsourceendpointconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationIngestPort](#cfn-mediaconnect-sourceendpoint-riststandardsourceendpointconfiguration-destinationingestport)" : {{Integer}},
   "[RecoveryLatencyMilliseconds](#cfn-mediaconnect-sourceendpoint-riststandardsourceendpointconfiguration-recoverylatencymilliseconds)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-sourceendpoint-riststandardsourceendpointconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationIngestPort](#cfn-mediaconnect-sourceendpoint-riststandardsourceendpointconfiguration-destinationingestport): {{Integer}}
   [RecoveryLatencyMilliseconds](#cfn-mediaconnect-sourceendpoint-riststandardsourceendpointconfiguration-recoverylatencymilliseconds): {{Integer}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-identityproviderconfig-oidcidentityproviderconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ClientId](#cfn-eks-identityproviderconfig-oidcidentityproviderconfig-clientid)" : {{String}},
   "[GroupsClaim](#cfn-eks-identityproviderconfig-oidcidentityproviderconfig-groupsclaim)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-identityproviderconfig-oidcidentityproviderconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ClientId](#cfn-eks-identityproviderconfig-oidcidentityproviderconfig-clientid): {{String}}
   [GroupsClaim](#cfn-eks-identityproviderconfig-oidcidentityproviderconfig-groupsclaim): {{String}}
   [GroupsPrefix](#cfn-eks-identityproviderconfig-oidcidentityproviderconfig-groupsprefix): {{String}}

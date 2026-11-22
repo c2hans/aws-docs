@@ -72,7 +72,7 @@ The following sample policy contains the permissions required for full access to
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

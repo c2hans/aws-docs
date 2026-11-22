@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lightsail-distribution-inputorigin-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-lightsail-distribution-inputorigin-name)" : {{String}},
   "[ProtocolPolicy](#cfn-lightsail-distribution-inputorigin-protocolpolicy)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lightsail-distribution-inputorigin-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-lightsail-distribution-inputorigin-name): {{String}}
   [ProtocolPolicy](#cfn-lightsail-distribution-inputorigin-protocolpolicy): {{String}}
   [RegionName](#cfn-lightsail-distribution-inputorigin-regionname): {{String}}

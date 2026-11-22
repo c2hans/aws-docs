@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-servicecatalog-launchroleconstraint-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ServiceCatalog::LaunchRoleConstraint",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-servicecatalog-launchroleconstraint-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ServiceCatalog::LaunchRoleConstraint
 Properties:
   [AcceptLanguage](#cfn-servicecatalog-launchroleconstraint-acceptlanguage): {{String}}

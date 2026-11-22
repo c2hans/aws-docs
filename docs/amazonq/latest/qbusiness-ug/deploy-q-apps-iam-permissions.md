@@ -29,7 +29,7 @@ This Amazon Q Apps IAM policy released on July 10, 2024 supports the ability for
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -177,7 +177,7 @@ If you are using permissions for Amazon Q Apps created prior to July 10, 2024, y
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-servicediscovery-service-dnsconfig-syntax.json"></a>
 
-```
+```json
 {
   "[DnsRecords](#cfn-servicediscovery-service-dnsconfig-dnsrecords)" : {{[ DnsRecord, ... ]}},
   "[NamespaceId](#cfn-servicediscovery-service-dnsconfig-namespaceid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-servicediscovery-service-dnsconfig-syntax.yaml"></a>
 
-```
+```yaml
   [DnsRecords](#cfn-servicediscovery-service-dnsconfig-dnsrecords): {{
     - DnsRecord}}
   [NamespaceId](#cfn-servicediscovery-service-dnsconfig-namespaceid): {{String}}

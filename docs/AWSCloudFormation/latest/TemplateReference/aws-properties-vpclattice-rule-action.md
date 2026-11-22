@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-vpclattice-rule-action-syntax.json"></a>
 
-```
+```json
 {
   "[FixedResponse](#cfn-vpclattice-rule-action-fixedresponse)" : {{FixedResponse}},
   "[Forward](#cfn-vpclattice-rule-action-forward)" : {{Forward}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-vpclattice-rule-action-syntax.yaml"></a>
 
-```
+```yaml
   [FixedResponse](#cfn-vpclattice-rule-action-fixedresponse): {{
     FixedResponse}}
   [Forward](#cfn-vpclattice-rule-action-forward): {{

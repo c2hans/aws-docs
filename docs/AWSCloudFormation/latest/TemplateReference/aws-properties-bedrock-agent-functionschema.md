@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-agent-functionschema-syntax.json"></a>
 
-```
+```json
 {
   "[Functions](#cfn-bedrock-agent-functionschema-functions)" : {{[ Function, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-agent-functionschema-syntax.yaml"></a>
 
-```
+```yaml
   [Functions](#cfn-bedrock-agent-functionschema-functions): {{
     - Function}}
 ```

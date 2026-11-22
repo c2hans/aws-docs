@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-flow-destinationflowconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ApiVersion](#cfn-appflow-flow-destinationflowconfig-apiversion)" : {{String}},
   "[ConnectorProfileName](#cfn-appflow-flow-destinationflowconfig-connectorprofilename)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-flow-destinationflowconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ApiVersion](#cfn-appflow-flow-destinationflowconfig-apiversion): {{String}}
   [ConnectorProfileName](#cfn-appflow-flow-destinationflowconfig-connectorprofilename): {{String}}
   [ConnectorType](#cfn-appflow-flow-destinationflowconfig-connectortype): {{String}}

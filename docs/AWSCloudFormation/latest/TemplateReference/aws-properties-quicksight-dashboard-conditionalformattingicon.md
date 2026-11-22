@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-conditionalformattingicon-syntax.json"></a>
 
-```
+```json
 {
   "[CustomCondition](#cfn-quicksight-dashboard-conditionalformattingicon-customcondition)" : {{ConditionalFormattingCustomIconCondition}},
   "[IconSet](#cfn-quicksight-dashboard-conditionalformattingicon-iconset)" : {{ConditionalFormattingIconSet}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-conditionalformattingicon-syntax.yaml"></a>
 
-```
+```yaml
   [CustomCondition](#cfn-quicksight-dashboard-conditionalformattingicon-customcondition): {{
     ConditionalFormattingCustomIconCondition}}
   [IconSet](#cfn-quicksight-dashboard-conditionalformattingicon-iconset): {{

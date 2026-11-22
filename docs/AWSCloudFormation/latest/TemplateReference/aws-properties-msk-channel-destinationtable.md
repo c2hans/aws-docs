@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-channel-destinationtable-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationDatabaseName](#cfn-msk-channel-destinationtable-destinationdatabasename)" : {{String}},
   "[DestinationTableName](#cfn-msk-channel-destinationtable-destinationtablename)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-channel-destinationtable-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationDatabaseName](#cfn-msk-channel-destinationtable-destinationdatabasename): {{String}}
   [DestinationTableName](#cfn-msk-channel-destinationtable-destinationtablename): {{String}}
   [PartitionSpec](#cfn-msk-channel-destinationtable-partitionspec): {{

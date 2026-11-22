@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-registry-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-glue-registry-tag-key)" : {{String}},
   "[Value](#cfn-glue-registry-tag-value)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-registry-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-glue-registry-tag-key): {{String}}
   [Value](#cfn-glue-registry-tag-value): {{String}}
 ```

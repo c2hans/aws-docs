@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-evaluationform-evaluationformitemenablementconditionoperand-syntax.json"></a>
 
-```
+```json
 {
   "[Expression](#cfn-connect-evaluationform-evaluationformitemenablementconditionoperand-expression)" : {{EvaluationFormItemEnablementExpression}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-evaluationform-evaluationformitemenablementconditionoperand-syntax.yaml"></a>
 
-```
+```yaml
   [Expression](#cfn-connect-evaluationform-evaluationformitemenablementconditionoperand-expression): {{
     EvaluationFormItemEnablementExpression}}
 ```

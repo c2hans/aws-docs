@@ -36,7 +36,7 @@ Sometimes, instead of specifying the metric directly, you might need to first pr
 
 The following is an example predictive scaling policy for this scenario. It specifies scaling and load metrics that are based on the Amazon SQS `ApproximateNumberOfMessagesVisible` metric, which is the number of messages available for retrieval from the queue. It also uses the Amazon EC2 Auto Scaling `GroupInServiceInstances` metric and a math expression to calculate the backlog per instance for the scaling metric.
 
-```
+```json
 aws autoscaling put-scaling-policy --policy-name {{my-sqs-custom-metrics-policy}} \
   --auto-scaling-group-name {{my-asg}} --policy-type PredictiveScaling \
   --predictive-scaling-configuration {{file://config.json}}
@@ -118,7 +118,7 @@ aws autoscaling put-scaling-policy --policy-name {{my-sqs-custom-metrics-policy}
 
 The example returns the policy's ARN.
 
-```
+```json
 {
   "PolicyARN": "arn:aws:autoscaling:region:account-id:scalingPolicy:2f4f5048-d8a8-4d14-b13a-d1905620f345:autoScalingGroupName/my-asg:policyName/my-sqs-custom-metrics-policy",
   "Alarms": []
@@ -139,7 +139,7 @@ The following example policy shows how this can be done. In this example, the po
 
 The search expression finds the `CPUUtilization` of instances in multiple Auto Scaling groups based on the specified search criteria. If you later create a new Auto Scaling group that matches the same search criteria, the `CPUUtilization` of the instances in the new Auto Scaling group is automatically included.
 
-```
+```json
 aws autoscaling put-scaling-policy --policy-name {{my-blue-green-predictive-scaling-policy}} \
   --auto-scaling-group-name {{my-asg}} --policy-type PredictiveScaling \
   --predictive-scaling-configuration {{file://config.json}}
@@ -189,7 +189,7 @@ aws autoscaling put-scaling-policy --policy-name {{my-blue-green-predictive-scal
 
 The example returns the policy's ARN.
 
-```
+```json
 {
   "PolicyARN": "arn:aws:autoscaling:region:account-id:scalingPolicy:2f4f5048-d8a8-4d14-b13a-d1905620f345:autoScalingGroupName/my-asg:policyName/my-blue-green-predictive-scaling-policy",
   "Alarms": []

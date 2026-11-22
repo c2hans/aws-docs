@@ -34,7 +34,7 @@ Firehose needs an IAM [service role](https://docs.aws.amazon.com/IAM/latest/User
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -152,7 +152,7 @@ Firehose needs an IAM [service role](https://docs.aws.amazon.com/IAM/latest/User
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

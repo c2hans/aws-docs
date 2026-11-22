@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-mediatailor-channelpolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MediaTailor::ChannelPolicy",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-mediatailor-channelpolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MediaTailor::ChannelPolicy
 Properties:
   [ChannelName](#cfn-mediatailor-channelpolicy-channelname): {{String}}

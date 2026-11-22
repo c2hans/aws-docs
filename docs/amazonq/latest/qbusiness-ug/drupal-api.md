@@ -17,7 +17,7 @@ For an example of the API request, see [CreateDataSource](https://docs.aws.amazo
 
 The following is the Drupal JSON schema:
 
-```
+```json
 {
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"type": "object",

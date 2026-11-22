@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-geospatialdatasourceitem-syntax.json"></a>
 
-```
+```json
 {
   "[StaticFileDataSource](#cfn-quicksight-analysis-geospatialdatasourceitem-staticfiledatasource)" : {{GeospatialStaticFileSource}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-geospatialdatasourceitem-syntax.yaml"></a>
 
-```
+```yaml
   [StaticFileDataSource](#cfn-quicksight-analysis-geospatialdatasourceitem-staticfiledatasource): {{
     GeospatialStaticFileSource}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-volume-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-fsx-volume-tag-key)" : {{String}},
   "[Value](#cfn-fsx-volume-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-volume-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-fsx-volume-tag-key): {{String}}
   [Value](#cfn-fsx-volume-tag-value): {{String}}
 ```

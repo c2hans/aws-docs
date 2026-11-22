@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-job-rateincreasecriteria-syntax.json"></a>
 
-```
+```json
 {
   "[NumberOfNotifiedThings](#cfn-iot-job-rateincreasecriteria-numberofnotifiedthings)" : {{Integer}},
   "[NumberOfSucceededThings](#cfn-iot-job-rateincreasecriteria-numberofsucceededthings)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-job-rateincreasecriteria-syntax.yaml"></a>
 
-```
+```yaml
   [NumberOfNotifiedThings](#cfn-iot-job-rateincreasecriteria-numberofnotifiedthings): {{Integer}}
   [NumberOfSucceededThings](#cfn-iot-job-rateincreasecriteria-numberofsucceededthings): {{Integer}}
 ```

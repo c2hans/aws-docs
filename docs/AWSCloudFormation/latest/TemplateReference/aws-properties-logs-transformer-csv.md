@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-logs-transformer-csv-syntax.json"></a>
 
-```
+```json
 {
   "[Columns](#cfn-logs-transformer-csv-columns)" : {{[ String, ... ]}},
   "[Delimiter](#cfn-logs-transformer-csv-delimiter)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-logs-transformer-csv-syntax.yaml"></a>
 
-```
+```yaml
   [Columns](#cfn-logs-transformer-csv-columns): {{
     - String}}
   [Delimiter](#cfn-logs-transformer-csv-delimiter): {{String}}

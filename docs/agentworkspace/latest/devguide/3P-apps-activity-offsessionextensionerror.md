@@ -8,12 +8,12 @@ Unsubscribes a callback function from the session extension error event that is 
 
  **Signature**
 
-```
+```typescript
 offSessionExtensionError(handler: SessionExtensionErrorHandler);
 ```
 
  **Usage**
 
-```
+```typescript
 sessionExpirationWarningClient.offSessionExtensionError(handler);
 ```

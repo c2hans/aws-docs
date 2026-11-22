@@ -47,7 +47,7 @@ An explicit deny in either policy overrides an explicit allow. Here are some bas
 If your Amazon SQS queue has [server-side encryption (SSE)](sqs-server-side-encryption.md) turned on with a customer managed AWS KMS key, then permissions must be granted to both producers and consumers. To confirm if a queue is encrypted, you can use the [`GetQueueAttributes`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_GetQueueAttributes.html) API `KmsMasterKeyId` attribute, or from the queue console under **Encryption**.
 + Required [permissions for producers](sqs-key-management.md#send-to-encrypted-queue):
 
-  ```
+  ```json
   {
   "Effect": "Allow",
   "Action": [
@@ -59,7 +59,7 @@ If your Amazon SQS queue has [server-side encryption (SSE)](sqs-server-side-encr
   ```
 + Required [permissions for consumers](sqs-key-management.md#receive-from-encrypted-queue):
 
-  ```
+  ```json
   {
   "Effect": "Allow",
   "Action": [
@@ -70,7 +70,7 @@ If your Amazon SQS queue has [server-side encryption (SSE)](sqs-server-side-encr
   ```
 + Required permissions for [cross-account access](sqs-key-management.md):
 
-  ```
+  ```json
   {
   "Effect": "Allow",
   "Action": [
@@ -103,7 +103,7 @@ If you access [Amazon SQS through an Amazon Virtual Private Cloud (Amazon VPC) e
 
 In the following example, the VPC endpoint policy specifies that the IAM user {{MyUser}} is allowed to send messages to the Amazon SQS queue {{MyQueue}}. Other actions, IAM users, and Amazon SQS resources are denied access through the VPC endpoint.
 
-```
+```json
 {
    "Statement": [{
       "Action": ["sqs:SendMessage"],

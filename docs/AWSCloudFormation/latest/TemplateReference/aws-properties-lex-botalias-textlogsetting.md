@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-botalias-textlogsetting-syntax.json"></a>
 
-```
+```json
 {
   "[Destination](#cfn-lex-botalias-textlogsetting-destination)" : {{TextLogDestination}},
   "[Enabled](#cfn-lex-botalias-textlogsetting-enabled)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-botalias-textlogsetting-syntax.yaml"></a>
 
-```
+```yaml
   [Destination](#cfn-lex-botalias-textlogsetting-destination): {{
     TextLogDestination}}
   [Enabled](#cfn-lex-botalias-textlogsetting-enabled): {{Boolean}}

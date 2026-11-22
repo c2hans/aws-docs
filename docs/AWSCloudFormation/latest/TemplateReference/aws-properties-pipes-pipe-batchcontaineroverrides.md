@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-batchcontaineroverrides-syntax.json"></a>
 
-```
+```json
 {
   "[Command](#cfn-pipes-pipe-batchcontaineroverrides-command)" : {{[ String, ... ]}},
   "[Environment](#cfn-pipes-pipe-batchcontaineroverrides-environment)" : {{[ BatchEnvironmentVariable, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-batchcontaineroverrides-syntax.yaml"></a>
 
-```
+```yaml
   [Command](#cfn-pipes-pipe-batchcontaineroverrides-command): {{
     - String}}
   [Environment](#cfn-pipes-pipe-batchcontaineroverrides-environment): {{

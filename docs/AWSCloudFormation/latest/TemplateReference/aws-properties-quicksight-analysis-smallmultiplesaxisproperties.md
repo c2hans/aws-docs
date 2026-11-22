@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-smallmultiplesaxisproperties-syntax.json"></a>
 
-```
+```json
 {
   "[Placement](#cfn-quicksight-analysis-smallmultiplesaxisproperties-placement)" : {{String}},
   "[Scale](#cfn-quicksight-analysis-smallmultiplesaxisproperties-scale)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-smallmultiplesaxisproperties-syntax.yaml"></a>
 
-```
+```yaml
   [Placement](#cfn-quicksight-analysis-smallmultiplesaxisproperties-placement): {{String}}
   [Scale](#cfn-quicksight-analysis-smallmultiplesaxisproperties-scale): {{String}}
 ```

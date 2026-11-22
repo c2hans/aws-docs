@@ -11,7 +11,7 @@ Unlike `onCreate` and `onDestroy`, the start and stop handlers are not passed to
 + `onStop(handler)`: Registers a handler for the stop event.
 + `offStart(handler)` and `offStop(handler)`: Remove a handler that you registered.
 
-```
+```typescript
 import { AmazonConnectApp, AppStartEvent, AppStopEvent } from "@amazon-connect/app";
 
 const { provider } = AmazonConnectApp.init({

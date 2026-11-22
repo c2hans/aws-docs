@@ -8,7 +8,7 @@ Collects log data from GitLab using Personal Access Token authentication through
 
 Configure the GitLab source with the following parameters:
 
-```
+```yaml
 source:
   gitlab:
     authentication:

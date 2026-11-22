@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-sectionpagebreakconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[After](#cfn-quicksight-dashboard-sectionpagebreakconfiguration-after)" : {{SectionAfterPageBreak}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-sectionpagebreakconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [After](#cfn-quicksight-dashboard-sectionpagebreakconfiguration-after): {{
     SectionAfterPageBreak}}
 ```

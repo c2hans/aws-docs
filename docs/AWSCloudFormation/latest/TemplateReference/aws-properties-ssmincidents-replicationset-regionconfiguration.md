@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssmincidents-replicationset-regionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[SseKmsKeyId](#cfn-ssmincidents-replicationset-regionconfiguration-ssekmskeyid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssmincidents-replicationset-regionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [SseKmsKeyId](#cfn-ssmincidents-replicationset-regionconfiguration-ssekmskeyid): {{String}}
 ```
 

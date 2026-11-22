@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-synthetics-canary-schedule-syntax.json"></a>
 
-```
+```json
 {
   "[DurationInSeconds](#cfn-synthetics-canary-schedule-durationinseconds)" : {{String}},
   "[Expression](#cfn-synthetics-canary-schedule-expression)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-synthetics-canary-schedule-syntax.yaml"></a>
 
-```
+```yaml
   [DurationInSeconds](#cfn-synthetics-canary-schedule-durationinseconds): {{String}}
   [Expression](#cfn-synthetics-canary-schedule-expression): {{String}}
   [RetryConfig](#cfn-synthetics-canary-schedule-retryconfig): {{

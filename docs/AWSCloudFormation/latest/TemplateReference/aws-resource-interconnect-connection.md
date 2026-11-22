@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-interconnect-connection-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Interconnect::Connection",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-interconnect-connection-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Interconnect::Connection
 Properties:
   [ActivationKey](#cfn-interconnect-connection-activationkey): {{String}}

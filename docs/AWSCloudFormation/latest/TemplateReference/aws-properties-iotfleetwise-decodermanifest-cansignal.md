@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotfleetwise-decodermanifest-cansignal-syntax.json"></a>
 
-```
+```json
 {
   "[Factor](#cfn-iotfleetwise-decodermanifest-cansignal-factor)" : {{String}},
   "[IsBigEndian](#cfn-iotfleetwise-decodermanifest-cansignal-isbigendian)" : {{String}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotfleetwise-decodermanifest-cansignal-syntax.yaml"></a>
 
-```
+```yaml
   [Factor](#cfn-iotfleetwise-decodermanifest-cansignal-factor): {{String}}
   [IsBigEndian](#cfn-iotfleetwise-decodermanifest-cansignal-isbigendian): {{String}}
   [IsSigned](#cfn-iotfleetwise-decodermanifest-cansignal-issigned): {{String}}

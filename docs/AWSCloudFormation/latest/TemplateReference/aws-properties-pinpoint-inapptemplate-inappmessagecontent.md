@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pinpoint-inapptemplate-inappmessagecontent-syntax.json"></a>
 
-```
+```json
 {
   "[BackgroundColor](#cfn-pinpoint-inapptemplate-inappmessagecontent-backgroundcolor)" : {{String}},
   "[BodyConfig](#cfn-pinpoint-inapptemplate-inappmessagecontent-bodyconfig)" : {{BodyConfig}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pinpoint-inapptemplate-inappmessagecontent-syntax.yaml"></a>
 
-```
+```yaml
   [BackgroundColor](#cfn-pinpoint-inapptemplate-inappmessagecontent-backgroundcolor): {{String}}
   [BodyConfig](#cfn-pinpoint-inapptemplate-inappmessagecontent-bodyconfig): {{
     BodyConfig}}

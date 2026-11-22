@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sagemaker-image-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SageMaker::Image",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sagemaker-image-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SageMaker::Image
 Properties:
   [ImageDescription](#cfn-sagemaker-image-imagedescription): {{String}}

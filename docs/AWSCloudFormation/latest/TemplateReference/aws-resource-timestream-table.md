@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-timestream-table-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Timestream::Table",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-timestream-table-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Timestream::Table
 Properties:
   [DatabaseName](#cfn-timestream-table-databasename): {{String}}
@@ -74,7 +74,7 @@ This object has the following attributes:
 See the following examples:
  **JSON**
 
-```
+```json
 {
    "Type" : AWS::Timestream::Table",
    "Properties":{

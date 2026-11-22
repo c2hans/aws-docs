@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-service-registeredgitlabservicedetails-syntax.json"></a>
 
-```
+```json
 {
   "[GroupId](#cfn-devopsagent-service-registeredgitlabservicedetails-groupid)" : {{String}},
   "[TargetUrl](#cfn-devopsagent-service-registeredgitlabservicedetails-targeturl)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-service-registeredgitlabservicedetails-syntax.yaml"></a>
 
-```
+```yaml
   [GroupId](#cfn-devopsagent-service-registeredgitlabservicedetails-groupid): {{String}}
   [TargetUrl](#cfn-devopsagent-service-registeredgitlabservicedetails-targeturl): {{String}}
   [TokenType](#cfn-devopsagent-service-registeredgitlabservicedetails-tokentype): {{String}}

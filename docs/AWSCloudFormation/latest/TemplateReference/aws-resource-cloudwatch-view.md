@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudwatch-view-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudWatch::View",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudwatch-view-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudWatch::View
 Properties:
   [Definition](#cfn-cloudwatch-view-definition): {{String}}

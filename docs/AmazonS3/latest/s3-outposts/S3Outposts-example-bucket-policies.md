@@ -42,7 +42,7 @@ The `Condition` block uses the `NotIpAddress` condition and the `aws:SourceIp` c
 **Warning**
 Before using this S3 on Outposts policy, replace the {{`192.0.2.0/24`}} IP address range in this example with an appropriate value for your use case. Otherwise, you'll lose the ability to access your bucket.
 
-```
+```json
  1. {
  2.     "Version": "2012-10-17",
  3.     "Id": "S3OutpostsPolicyId1",
@@ -83,7 +83,7 @@ Replace the IP address ranges in this example with appropriate values for your u
 
 ****
 
-```
+```json
 {
     "Id": "S3OutpostsPolicyId2",
     "Version":"2012-10-17",

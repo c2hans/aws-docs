@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-program-cliprange-syntax.json"></a>
 
-```
+```json
 {
   "[EndOffsetMillis](#cfn-mediatailor-program-cliprange-endoffsetmillis)" : {{Integer}},
   "[StartOffsetMillis](#cfn-mediatailor-program-cliprange-startoffsetmillis)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-program-cliprange-syntax.yaml"></a>
 
-```
+```yaml
   [EndOffsetMillis](#cfn-mediatailor-program-cliprange-endoffsetmillis): {{Integer}}
   [StartOffsetMillis](#cfn-mediatailor-program-cliprange-startoffsetmillis): {{Integer}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-directconnect-resiliencygroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DirectConnect::ResiliencyGroup",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-directconnect-resiliencygroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DirectConnect::ResiliencyGroup
 Properties:
   [ConnectionArns](#cfn-directconnect-resiliencygroup-connectionarns): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codeartifact-repository-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-codeartifact-repository-tag-key)" : {{String}},
   "[Value](#cfn-codeartifact-repository-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codeartifact-repository-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-codeartifact-repository-tag-key): {{String}}
   [Value](#cfn-codeartifact-repository-tag-value): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-inputsecuritygroup-inputwhitelistrule-syntax.json"></a>
 
-```
+```json
 {
   "[Cidr](#cfn-medialive-inputsecuritygroup-inputwhitelistrule-cidr)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-inputsecuritygroup-inputwhitelistrule-syntax.yaml"></a>
 
-```
+```yaml
   [Cidr](#cfn-medialive-inputsecuritygroup-inputwhitelistrule-cidr): {{String}}
 ```
 

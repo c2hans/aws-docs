@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-webcrawlerconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AuthenticationConfiguration](#cfn-kendra-datasource-webcrawlerconfiguration-authenticationconfiguration)" : {{WebCrawlerAuthenticationConfiguration}},
   "[CrawlDepth](#cfn-kendra-datasource-webcrawlerconfiguration-crawldepth)" : {{Integer}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-webcrawlerconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AuthenticationConfiguration](#cfn-kendra-datasource-webcrawlerconfiguration-authenticationconfiguration): {{
     WebCrawlerAuthenticationConfiguration}}
   [CrawlDepth](#cfn-kendra-datasource-webcrawlerconfiguration-crawldepth): {{Integer}}

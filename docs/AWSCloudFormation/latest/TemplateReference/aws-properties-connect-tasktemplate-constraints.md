@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-tasktemplate-constraints-syntax.json"></a>
 
-```
+```json
 {
   "[InvisibleFields](#cfn-connect-tasktemplate-constraints-invisiblefields)" : {{[ InvisibleFieldInfo, ... ]}},
   "[ReadOnlyFields](#cfn-connect-tasktemplate-constraints-readonlyfields)" : {{[ ReadOnlyFieldInfo, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-tasktemplate-constraints-syntax.yaml"></a>
 
-```
+```yaml
   [InvisibleFields](#cfn-connect-tasktemplate-constraints-invisiblefields): {{
     - InvisibleFieldInfo}}
   [ReadOnlyFields](#cfn-connect-tasktemplate-constraints-readonlyfields): {{

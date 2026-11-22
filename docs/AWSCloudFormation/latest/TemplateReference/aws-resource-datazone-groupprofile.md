@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-datazone-groupprofile-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DataZone::GroupProfile",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-datazone-groupprofile-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DataZone::GroupProfile
 Properties:
   [DomainIdentifier](#cfn-datazone-groupprofile-domainidentifier): {{String}}

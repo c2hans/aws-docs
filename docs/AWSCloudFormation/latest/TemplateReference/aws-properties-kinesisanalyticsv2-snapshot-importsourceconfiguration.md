@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisanalyticsv2-snapshot-importsourceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ImportRoleArn](#cfn-kinesisanalyticsv2-snapshot-importsourceconfiguration-importrolearn)" : {{String}},
   "[SourceEncryptionConfiguration](#cfn-kinesisanalyticsv2-snapshot-importsourceconfiguration-sourceencryptionconfiguration)" : {{SnapshotEncryptionConfigurationDescription}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisanalyticsv2-snapshot-importsourceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ImportRoleArn](#cfn-kinesisanalyticsv2-snapshot-importsourceconfiguration-importrolearn): {{String}}
   [SourceEncryptionConfiguration](#cfn-kinesisanalyticsv2-snapshot-importsourceconfiguration-sourceencryptionconfiguration): {{
     SnapshotEncryptionConfigurationDescription}}

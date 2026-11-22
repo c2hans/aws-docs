@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codeguruprofiler-profilinggroup-channel-syntax.json"></a>
 
-```
+```json
 {
   "[channelId](#cfn-codeguruprofiler-profilinggroup-channel-channelid)" : {{String}},
   "[channelUri](#cfn-codeguruprofiler-profilinggroup-channel-channeluri)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codeguruprofiler-profilinggroup-channel-syntax.yaml"></a>
 
-```
+```yaml
   [channelId](#cfn-codeguruprofiler-profilinggroup-channel-channelid): {{String}}
   [channelUri](#cfn-codeguruprofiler-profilinggroup-channel-channeluri): {{String}}
 ```

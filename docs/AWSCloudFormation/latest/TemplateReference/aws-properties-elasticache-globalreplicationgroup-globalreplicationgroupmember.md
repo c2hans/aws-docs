@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticache-globalreplicationgroup-globalreplicationgroupmember-syntax.json"></a>
 
-```
+```json
 {
   "[ReplicationGroupId](#cfn-elasticache-globalreplicationgroup-globalreplicationgroupmember-replicationgroupid)" : {{String}},
   "[ReplicationGroupRegion](#cfn-elasticache-globalreplicationgroup-globalreplicationgroupmember-replicationgroupregion)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticache-globalreplicationgroup-globalreplicationgroupmember-syntax.yaml"></a>
 
-```
+```yaml
   [ReplicationGroupId](#cfn-elasticache-globalreplicationgroup-globalreplicationgroupmember-replicationgroupid): {{String}}
   [ReplicationGroupRegion](#cfn-elasticache-globalreplicationgroup-globalreplicationgroupmember-replicationgroupregion): {{String}}
   [Role](#cfn-elasticache-globalreplicationgroup-globalreplicationgroupmember-role): {{String}}

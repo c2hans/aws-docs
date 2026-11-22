@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcs-cluster-slurmrest-syntax.json"></a>
 
-```
+```json
 {
   "[Mode](#cfn-pcs-cluster-slurmrest-mode)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcs-cluster-slurmrest-syntax.yaml"></a>
 
-```
+```yaml
   [Mode](#cfn-pcs-cluster-slurmrest-mode): {{String}}
 ```
 

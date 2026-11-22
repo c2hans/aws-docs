@@ -27,7 +27,7 @@ Add the following policy to the IAM entity that needs to create the service role
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -61,7 +61,7 @@ Add the following policy to the IAM entity that needs to edit the service role.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -101,7 +101,7 @@ Add the following policy to the IAM entity that needs to edit the service role.
 
 Add the following statement to the permissions policy for the IAM entity that needs to delete the specified service role.
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": "iam:DeleteRole",
@@ -221,7 +221,7 @@ In this example, include the following trust policy in the first command when yo
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {
@@ -241,7 +241,7 @@ When you use the second command, you must attach a permissions policy to the rol
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {

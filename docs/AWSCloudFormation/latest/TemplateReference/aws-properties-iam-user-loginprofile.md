@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iam-user-loginprofile-syntax.json"></a>
 
-```
+```json
 {
   "[Password](#cfn-iam-user-loginprofile-password)" : {{String}},
   "[PasswordResetRequired](#cfn-iam-user-loginprofile-passwordresetrequired)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iam-user-loginprofile-syntax.yaml"></a>
 
-```
+```yaml
   [Password](#cfn-iam-user-loginprofile-password): {{String}}
   [PasswordResetRequired](#cfn-iam-user-loginprofile-passwordresetrequired): {{Boolean}}
 ```

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-hlscdnsettings-syntax.json"></a>
 
-```
+```json
 {
   "[HlsAkamaiSettings](#cfn-medialive-channel-hlscdnsettings-hlsakamaisettings)" : {{HlsAkamaiSettings}},
   "[HlsBasicPutSettings](#cfn-medialive-channel-hlscdnsettings-hlsbasicputsettings)" : {{HlsBasicPutSettings}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-hlscdnsettings-syntax.yaml"></a>
 
-```
+```yaml
   [HlsAkamaiSettings](#cfn-medialive-channel-hlscdnsettings-hlsakamaisettings): {{
     HlsAkamaiSettings}}
   [HlsBasicPutSettings](#cfn-medialive-channel-hlscdnsettings-hlsbasicputsettings): {{

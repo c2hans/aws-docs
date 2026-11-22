@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3vectors-index-metadataconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[NonFilterableMetadataKeys](#cfn-s3vectors-index-metadataconfiguration-nonfilterablemetadatakeys)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3vectors-index-metadataconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [NonFilterableMetadataKeys](#cfn-s3vectors-index-metadataconfiguration-nonfilterablemetadatakeys): {{
     - String}}
 ```

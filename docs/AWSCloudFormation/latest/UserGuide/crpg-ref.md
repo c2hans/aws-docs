@@ -87,7 +87,7 @@ This field contains the contents of the `Properties` object sent by the template
 
 *Example*
 
-```
+```json
 {
    "RequestType" : "Create",
    "RequestId" : "unique-request-id",
@@ -159,7 +159,7 @@ Used only for `Update` requests. The resource property values that were previous
 
 *Example*
 
-```
+```json
 {
    "RequestType" : "Update",
    "RequestId" : "unique-request-id",
@@ -230,7 +230,7 @@ This field contains the contents of the `Properties` object sent by the template
 
 *Example*
 
-```
+```json
 {
    "RequestType" : "Delete",
    "RequestId" : "unique-request-id",
@@ -308,7 +308,7 @@ If the name-value pairs contain sensitive information, you should use the `NoEch
 #### `Create` and `Update` Response
 <a name="crpg-ref-success-response-example-1"></a>
 
-```
+```json
 {
    "Status": "SUCCESS",
    "RequestId": "{{unique-request-id}}",
@@ -326,7 +326,7 @@ If the name-value pairs contain sensitive information, you should use the `NoEch
 #### `Delete` Response
 <a name="crpg-ref-success-response-example-2"></a>
 
-```
+```json
 {
    "Status": "SUCCESS",
    "RequestId": "{{unique-request-id}}",
@@ -339,7 +339,7 @@ If the name-value pairs contain sensitive information, you should use the `NoEch
 ### Failed Response Example
 <a name="crpg-ref-failed-response-example"></a>
 
-```
+```json
 {
    "Status": "FAILED",
    "RequestId": "{{unique-request-id}}",

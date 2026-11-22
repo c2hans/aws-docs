@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ecs-gatewayclusterassociations-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ECS::GatewayClusterAssociations",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ecs-gatewayclusterassociations-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ECS::GatewayClusterAssociations
 Properties:
   [Cluster](#cfn-ecs-gatewayclusterassociations-cluster): {{String}}

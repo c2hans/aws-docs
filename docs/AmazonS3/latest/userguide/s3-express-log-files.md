@@ -14,7 +14,7 @@ A CloudTrail log file includes information about the requested API operation, th
 
 The following example shows a CloudTrail log file example that demonstrates [CreateSession](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateSession.html).
 
-```
+```json
     {
         "eventVersion": "1.09",
         "userIdentity": {
@@ -95,7 +95,7 @@ To use Zonal endpoint API operations (object-level, or data plane, operations), 
 
 The following example shows a CloudTrail log file example that demonstrates the [`GetObject`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html) API operation that was authenticated by `CreateSession`.
 
-```
+```json
     {
         "eventVersion": "1.09",
         "userIdentity": {
@@ -163,7 +163,7 @@ The following example shows a CloudTrail log file example that demonstrates the 
 
 The following example shows a CloudTrail log entry that demonstrates a `DeleteObjects` action on a directory bucket, invoked by S3 Lifecycle. For more information, see [Working with S3 Lifecycle for directory buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buckets-objects-lifecycle.html).
 
-```
+```json
 eventVersion:"1.09",
   userIdentity:{
 
@@ -223,7 +223,7 @@ eventVersion:"1.09",
 
 The following example shows a CloudTrail log entry that demonstrates an `Access Denied` request on a `CreateSession` action invoked by S3 Lifecycle. For more information, see [CreateSession](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateSession.html).
 
-```
+```json
 {
     "eventVersion": "1.09",
     "userIdentity": {

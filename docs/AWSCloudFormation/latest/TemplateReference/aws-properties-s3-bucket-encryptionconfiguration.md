@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-encryptionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ReplicaKmsKeyID](#cfn-s3-bucket-encryptionconfiguration-replicakmskeyid)" : {{String}}
 }
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-encryptionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ReplicaKmsKeyID](#cfn-s3-bucket-encryptionconfiguration-replicakmskeyid): {{String}}
 ```
 

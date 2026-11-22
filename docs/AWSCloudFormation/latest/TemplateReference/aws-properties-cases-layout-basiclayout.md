@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cases-layout-basiclayout-syntax.json"></a>
 
-```
+```json
 {
   "[MoreInfo](#cfn-cases-layout-basiclayout-moreinfo)" : {{LayoutSections}},
   "[TopPanel](#cfn-cases-layout-basiclayout-toppanel)" : {{LayoutSections}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cases-layout-basiclayout-syntax.yaml"></a>
 
-```
+```yaml
   [MoreInfo](#cfn-cases-layout-basiclayout-moreinfo): {{
     LayoutSections}}
   [TopPanel](#cfn-cases-layout-basiclayout-toppanel): {{

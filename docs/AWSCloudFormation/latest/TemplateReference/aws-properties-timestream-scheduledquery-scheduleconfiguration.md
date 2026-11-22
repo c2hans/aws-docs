@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-timestream-scheduledquery-scheduleconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ScheduleExpression](#cfn-timestream-scheduledquery-scheduleconfiguration-scheduleexpression)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-timestream-scheduledquery-scheduleconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ScheduleExpression](#cfn-timestream-scheduledquery-scheduleconfiguration-scheduleexpression): {{String}}
 ```
 

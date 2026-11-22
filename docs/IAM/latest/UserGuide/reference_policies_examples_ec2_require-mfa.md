@@ -18,7 +18,7 @@ The condition check for `MultiFactorAuthPresent` in the `Deny` statement should 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-command-commandpayload-syntax.json"></a>
 
-```
+```json
 {
   "[Content](#cfn-iot-command-commandpayload-content)" : {{String}},
   "[ContentType](#cfn-iot-command-commandpayload-contenttype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-command-commandpayload-syntax.yaml"></a>
 
-```
+```yaml
   [Content](#cfn-iot-command-commandpayload-content): {{String}}
   [ContentType](#cfn-iot-command-commandpayload-contenttype): {{String}}
 ```

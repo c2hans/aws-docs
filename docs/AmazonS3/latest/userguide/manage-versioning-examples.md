@@ -15,14 +15,14 @@ To learn more about how to use S3 Versioning to protect data, see [Tutorial: Pro
 
 Each S3 bucket that you create has a *versioning* subresource associated with it. (For more information, see [General purpose buckets configuration options](UsingBucket.md#bucket-config-options-intro).) By default, your bucket is *unversioned*, and the versioning subresource stores the empty versioning configuration, as follows.
 
-```
+```xml
 <VersioningConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
 </VersioningConfiguration>
 ```
 
 To enable versioning, you can send a request to Amazon S3 with a versioning configuration that includes a status.
 
-```
+```xml
 <VersioningConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
   <Status>Enabled</Status>
 </VersioningConfiguration>
@@ -62,7 +62,7 @@ To use MFA with versioning, you enable `MFA Delete`. However, you can't enable `
 
 The following example enables versioning on an S3 general purpose bucket.
 
-```
+```bash
 aws s3api put-bucket-versioning --bucket {{amzn-s3-demo-bucket1}} --versioning-configuration Status=Enabled
 ```
 
@@ -93,7 +93,7 @@ The following examples enable versioning on a bucket and then retrieve versionin
 
 For information about setting up and running the code examples, see [Getting Started with the AWS SDK for .NET](https://docs.aws.amazon.com/sdk-for-net/latest/developer-guide/net-dg-setup.html) in the *AWS SDK for .NET Developer Guide*.
 
-```
+```CSHARP
 using System;
 using Amazon.S3;
 using Amazon.S3.Model;
@@ -171,7 +171,7 @@ namespace s3.amazon.com.docsamples
 
 For instructions on how to create and test a working sample, see [Getting Started](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/getting-started.html) in the AWS SDK for Java Developer Guide.
 
-```
+```JAVA
 import java.io.IOException;
 
 import com.amazonaws.auth.profile.ProfileCredentialsProvider;
@@ -218,7 +218,7 @@ public class BucketVersioningConfigurationExample {
 
 The following Python code example creates an Amazon S3 bucket, enables it for versioning, and configures a lifecycle that expires noncurrent object versions after 7 days.
 
-```
+```Python
 def create_versioned_bucket(bucket_name, prefix):
     """
     Creates an Amazon S3 bucket, enables it for versioning, and configures a lifecycle

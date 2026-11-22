@@ -22,7 +22,7 @@ Following are sample decrypted JSON audit logs of activity event records.
 **Example Activity event record of a CONNECT SQL statement**
 The following activity event record shows a login with the use of a `CONNECT` SQL statement (`command`) by a JDBC Thin Client (`clientApplication`) for your Oracle DB.
 
-```
+```json
 {
     "class": "Standard",
     "clientApplication": "JDBC Thin Client",
@@ -139,7 +139,7 @@ The following activity event record shows a login with the use of a `CONNECT` SQ
 ```
 The following activity event record shows a login failure for your SQL Server DB.
 
-```
+```json
 {
     "type": "DatabaseActivityMonitoringRecord",
     "clusterId": "",
@@ -210,7 +210,7 @@ If a database activity stream isn't enabled, then the last field in the JSON doc
 **Example Activity event record of a CREATE TABLE statement**
 The following example shows a `CREATE TABLE` event for your Oracle database.
 
-```
+```json
 {
     "class": "Standard",
     "clientApplication": "sqlplus@ip-12-34-5-678 (TNS V1-V3)",
@@ -326,7 +326,7 @@ The following example shows a `CREATE TABLE` event for your Oracle database.
 ```
 The following example shows a `CREATE TABLE` event for your SQL Server database.
 
-```
+```json
 {
     "type": "DatabaseActivityMonitoringRecord",
     "clusterId": "",
@@ -396,7 +396,7 @@ The following example shows a `CREATE TABLE` event for your SQL Server database.
 **Example Activity event record of a SELECT statement**
 The following example shows a `SELECT` event for your Oracle DB.
 
-```
+```json
 {
     "class": "Standard",
     "clientApplication": "sqlplus@ip-12-34-5-678 (TNS V1-V3)",
@@ -615,7 +615,7 @@ The `databaseActivityEvents` JSON object contains the following information.
 
  The following example shows the format of this record.
 
-```
+```json
 {
   "type":"DatabaseActivityMonitoringRecords",
   "version":"1.3",
@@ -624,7 +624,7 @@ The `databaseActivityEvents` JSON object contains the following information.
 }
 ```
 
-```
+```json
            "type":"DatabaseActivityMonitoringRecords",
            "version":"1.4",
            "databaseActivityEvents":"{{encrypted audit records}}",

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-rds-dbshardgroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RDS::DBShardGroup",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-rds-dbshardgroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RDS::DBShardGroup
 Properties:
   [ComputeRedundancy](#cfn-rds-dbshardgroup-computeredundancy): {{Integer}}

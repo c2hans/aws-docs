@@ -39,7 +39,7 @@ You need the `dynamodb:UpdateAbacStatus` permission to enable Streams ABAC for y
 
 The following IAM policy grants the permission to enable Streams ABAC and view its status for an account in the current Region.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

@@ -27,7 +27,7 @@ For more information about certificate rotation, see [Rotating your SSL/TLS cert
 
 If you are using Aurora MySQL version 2 (compatible with MySQL 5.7) and the Performance Schema is enabled, run the following query to check if connections are using TLS. For information about enabling the Performance Schema, see [ Performance Schema quick start](https://dev.mysql.com/doc/refman/8.0/en/performance-schema-quick-start.html) in the MySQL documentation.
 
-```
+```sql
 mysql> SELECT id, user, host, connection_type
        FROM performance_schema.threads pst
        INNER JOIN information_schema.processlist isp
@@ -36,7 +36,7 @@ mysql> SELECT id, user, host, connection_type
 
 In this sample output, you can see both your own session (`admin`) and an application logged in as `webapp1` are using TLS.
 
-```
+```sql
 +----+-----------------+------------------+-----------------+
 | id | user            | host             | connection_type |
 +----+-----------------+------------------+-----------------+
@@ -59,7 +59,7 @@ The following example with MySQL Connector/J 8.0 shows one way to check an appli
 
 When using the MySQL Connector/J 8.0, an TLS connection requires verification against the server CA certificate if your connection properties have `sslMode` set to `VERIFY_CA` or `VERIFY_IDENTITY`, as in the following example.
 
-```
+```jdbc
 Properties properties = new Properties();
 properties.setProperty("sslMode", "VERIFY_IDENTITY");
 properties.put("user", DB_USER);
@@ -124,7 +124,7 @@ java -Djavax.net.ssl.trustStore={{/path_to_truststore/MyTruststore.jks}} -Djavax
 
 The following code example shows how to set up the SSL connection that validates the server certificate using JDBC.
 
-```
+```java
 public class MySQLSSLTest {
 
         private static final String DB_USER = "{{user name}}";

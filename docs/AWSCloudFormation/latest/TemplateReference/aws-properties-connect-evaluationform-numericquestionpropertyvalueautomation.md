@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-evaluationform-numericquestionpropertyvalueautomation-syntax.json"></a>
 
-```
+```json
 {
   "[Label](#cfn-connect-evaluationform-numericquestionpropertyvalueautomation-label)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-evaluationform-numericquestionpropertyvalueautomation-syntax.yaml"></a>
 
-```
+```yaml
   [Label](#cfn-connect-evaluationform-numericquestionpropertyvalueautomation-label): {{String}}
 ```
 

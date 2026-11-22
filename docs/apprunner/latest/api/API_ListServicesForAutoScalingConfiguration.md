@@ -107,7 +107,7 @@ This example illustrates how to list all of the App Runner services that are ass
 #### Sample Request
 <a name="API_ListServicesForAutoScalingConfiguration_Example_1_Request"></a>
 
-```
+```json
 $ aws apprunner list-services-for-auto-scaling-configuration --cli-input-json "`cat`"
 {
     "AutoScalingConfigurationArn": "arn:aws:apprunner:us-east-1:123456789012:autoscalingconfiguration/high-availability/2/6a4d47db94434d30a42cab9a00d21d44",
@@ -118,7 +118,7 @@ $ aws apprunner list-services-for-auto-scaling-configuration --cli-input-json "`
 #### Sample Response
 <a name="API_ListServicesForAutoScalingConfiguration_Example_1_Response"></a>
 
-```
+```json
 {
     "ServiceArnList": [
         "arn:aws:apprunner:us-east-1:123456789012:service/golang-container-app/e598803c0a7848459f3fd978ef5ed86c",

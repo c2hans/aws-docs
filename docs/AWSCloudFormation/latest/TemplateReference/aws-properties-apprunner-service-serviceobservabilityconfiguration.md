@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apprunner-service-serviceobservabilityconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ObservabilityConfigurationArn](#cfn-apprunner-service-serviceobservabilityconfiguration-observabilityconfigurationarn)" : {{String}},
   "[ObservabilityEnabled](#cfn-apprunner-service-serviceobservabilityconfiguration-observabilityenabled)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apprunner-service-serviceobservabilityconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ObservabilityConfigurationArn](#cfn-apprunner-service-serviceobservabilityconfiguration-observabilityconfigurationarn): {{String}}
   [ObservabilityEnabled](#cfn-apprunner-service-serviceobservabilityconfiguration-observabilityenabled): {{Boolean}}
 ```

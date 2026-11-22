@@ -73,7 +73,7 @@ Incompatibilities between MySQL and MariaDB include the following:
 + You can't migrate a DB snapshot created with MySQL 8.0 to MariaDB.
 + If the source MySQL database uses a SHA256 password hash, make sure to reset user passwords that are SHA256 hashed before you connect to the MariaDB database. The following code shows how to reset a password that is SHA256 hashed.
 
-  ```
+  ```sql
   SET old_passwords = 0;
   UPDATE mysql.user SET plugin = 'mysql_native_password',
   Password = PASSWORD('new_password')

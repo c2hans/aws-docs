@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distribution-distributionconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Aliases](#cfn-cloudfront-distribution-distributionconfig-aliases)" : {{[ String, ... ]}},
   "[AnycastIpListId](#cfn-cloudfront-distribution-distributionconfig-anycastiplistid)" : {{String}},
@@ -51,7 +51,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distribution-distributionconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Aliases](#cfn-cloudfront-distribution-distributionconfig-aliases): {{
     - String}}
   [AnycastIpListId](#cfn-cloudfront-distribution-distributionconfig-anycastiplistid): {{String}}

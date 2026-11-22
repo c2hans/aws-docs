@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-numericalaggregationfunction-syntax.json"></a>
 
-```
+```json
 {
   "[PercentileAggregation](#cfn-quicksight-analysis-numericalaggregationfunction-percentileaggregation)" : {{PercentileAggregation}},
   "[SimpleNumericalAggregation](#cfn-quicksight-analysis-numericalaggregationfunction-simplenumericalaggregation)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-numericalaggregationfunction-syntax.yaml"></a>
 
-```
+```yaml
   [PercentileAggregation](#cfn-quicksight-analysis-numericalaggregationfunction-percentileaggregation): {{
     PercentileAggregation}}
   [SimpleNumericalAggregation](#cfn-quicksight-analysis-numericalaggregationfunction-simplenumericalaggregation): {{String}}

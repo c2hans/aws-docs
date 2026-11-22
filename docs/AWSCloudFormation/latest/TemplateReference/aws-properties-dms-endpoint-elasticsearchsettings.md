@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dms-endpoint-elasticsearchsettings-syntax.json"></a>
 
-```
+```json
 {
   "[EndpointUri](#cfn-dms-endpoint-elasticsearchsettings-endpointuri)" : {{String}},
   "[ErrorRetryDuration](#cfn-dms-endpoint-elasticsearchsettings-errorretryduration)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dms-endpoint-elasticsearchsettings-syntax.yaml"></a>
 
-```
+```yaml
   [EndpointUri](#cfn-dms-endpoint-elasticsearchsettings-endpointuri): {{String}}
   [ErrorRetryDuration](#cfn-dms-endpoint-elasticsearchsettings-errorretryduration): {{Integer}}
   [FullLoadErrorPercentage](#cfn-dms-endpoint-elasticsearchsettings-fullloaderrorpercentage): {{Integer}}

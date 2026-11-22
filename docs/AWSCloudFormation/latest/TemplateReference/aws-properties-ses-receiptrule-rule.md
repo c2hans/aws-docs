@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-receiptrule-rule-syntax.json"></a>
 
-```
+```json
 {
   "[Actions](#cfn-ses-receiptrule-rule-actions)" : {{[ Action, ... ]}},
   "[Enabled](#cfn-ses-receiptrule-rule-enabled)" : {{Boolean}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-receiptrule-rule-syntax.yaml"></a>
 
-```
+```yaml
   [Actions](#cfn-ses-receiptrule-rule-actions): {{
     - Action}}
   [Enabled](#cfn-ses-receiptrule-rule-enabled): {{Boolean}}

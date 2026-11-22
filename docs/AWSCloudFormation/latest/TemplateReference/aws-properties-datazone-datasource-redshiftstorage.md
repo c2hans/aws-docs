@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-datasource-redshiftstorage-syntax.json"></a>
 
-```
+```json
 {
   "[RedshiftClusterSource](#cfn-datazone-datasource-redshiftstorage-redshiftclustersource)" : {{RedshiftClusterStorage}},
   "[RedshiftServerlessSource](#cfn-datazone-datasource-redshiftstorage-redshiftserverlesssource)" : {{RedshiftServerlessStorage}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-datasource-redshiftstorage-syntax.yaml"></a>
 
-```
+```yaml
   [RedshiftClusterSource](#cfn-datazone-datasource-redshiftstorage-redshiftclustersource): {{
     RedshiftClusterStorage}}
   [RedshiftServerlessSource](#cfn-datazone-datasource-redshiftstorage-redshiftserverlesssource): {{

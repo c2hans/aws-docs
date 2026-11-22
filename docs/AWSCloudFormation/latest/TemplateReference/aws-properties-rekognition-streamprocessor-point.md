@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rekognition-streamprocessor-point-syntax.json"></a>
 
-```
+```json
 {
   "[X](#cfn-rekognition-streamprocessor-point-x)" : {{Number}},
   "[Y](#cfn-rekognition-streamprocessor-point-y)" : {{Number}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rekognition-streamprocessor-point-syntax.yaml"></a>
 
-```
+```yaml
   [X](#cfn-rekognition-streamprocessor-point-x): {{Number}}
   [Y](#cfn-rekognition-streamprocessor-point-y): {{Number}}
 ```

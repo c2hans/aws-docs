@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-identitystore-user-emailsitems-syntax.json"></a>
 
-```
+```json
 {
   "[Primary](#cfn-identitystore-user-emailsitems-primary)" : {{Boolean}},
   "[Type](#cfn-identitystore-user-emailsitems-type)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-identitystore-user-emailsitems-syntax.yaml"></a>
 
-```
+```yaml
   [Primary](#cfn-identitystore-user-emailsitems-primary): {{Boolean}}
   [Type](#cfn-identitystore-user-emailsitems-type): {{String}}
   [Value](#cfn-identitystore-user-emailsitems-value): {{String}}

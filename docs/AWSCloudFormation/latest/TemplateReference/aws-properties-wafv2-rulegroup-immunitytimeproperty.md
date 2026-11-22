@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-rulegroup-immunitytimeproperty-syntax.json"></a>
 
-```
+```json
 {
   "[ImmunityTime](#cfn-wafv2-rulegroup-immunitytimeproperty-immunitytime)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-rulegroup-immunitytimeproperty-syntax.yaml"></a>
 
-```
+```yaml
   [ImmunityTime](#cfn-wafv2-rulegroup-immunitytimeproperty-immunitytime): {{Integer}}
 ```
 

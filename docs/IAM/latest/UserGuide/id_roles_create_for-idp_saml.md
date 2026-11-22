@@ -36,7 +36,7 @@ Before you can create a role for SAML 2.0 federation, you must first complete th
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": {

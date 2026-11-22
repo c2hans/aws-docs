@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-agent-custompromptinputparameters-syntax.json"></a>
 
-```
+```json
 {
   "[CustomInstructions](#cfn-quicksight-agent-custompromptinputparameters-custominstructions)" : {{String}},
   "[Identity](#cfn-quicksight-agent-custompromptinputparameters-identity)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-agent-custompromptinputparameters-syntax.yaml"></a>
 
-```
+```yaml
   [CustomInstructions](#cfn-quicksight-agent-custompromptinputparameters-custominstructions): {{String}}
   [Identity](#cfn-quicksight-agent-custompromptinputparameters-identity): {{String}}
   [OutputStyle](#cfn-quicksight-agent-custompromptinputparameters-outputstyle): {{String}}

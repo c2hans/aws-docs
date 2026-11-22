@@ -37,7 +37,7 @@ You can use the CloudFront console to create a simple function that redirects th
 
 1. Copy the following function code. This function code redirects the viewer to a different URL, and also returns a custom response header.
 
-   ```
+   ```js
    function handler(event) {
        // NOTE: This example function is for a viewer request event trigger.
        // Choose viewer request for event trigger when you associate this function with a distribution.

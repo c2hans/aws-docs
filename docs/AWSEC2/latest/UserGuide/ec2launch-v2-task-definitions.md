@@ -40,7 +40,7 @@ Activates Windows against a set of AWS KMS servers. Activation is skipped if the
 
 *Example*
 
-```
+```yaml
 task: activateWindows
   inputs:
     activation:
@@ -60,7 +60,7 @@ Enables Jumbo Frames, which increase the maximum transmission unit (MTU) of the 
 
 *Example*
 
-```
+```yaml
 task: enableJumboFrames
 ```
 
@@ -79,7 +79,7 @@ Enables Windows OpenSSH and adds the public key for the instance to the authoriz
 
 The following example shows how to enable OpenSSH on an instance, and to add the public key for the instance to the authorized keys folder. This configuration works only on instances running Windows Server 2019 and later versions.
 
-```
+```yaml
 task: enableOpenSsh
 ```
 
@@ -128,7 +128,7 @@ The following examples show how to run an executable file from a local directory
 **Example 1: Setup executable with one argument**
 This example shows an `executeProgram` task that runs a setup executable in quiet mode.
 
-```
+```yaml
 task: executeProgram
   inputs:
     - frequency: always
@@ -138,7 +138,7 @@ task: executeProgram
 **Example 2: VLC executable with two arguments**
 This example shows an `executeProgram` task that runs a VLC executable file with two arguments passed as input parameters.
 
-```
+```yaml
 task: executeProgram
   inputs:
     - frequency: always
@@ -212,7 +212,7 @@ The following examples show how to run an inline script with the `executeScript`
 **Example 1: Hello world output text file**
 This example shows an `executeScript` task that runs a PowerShell script to create a "Hello world" text file on the `C:` drive.
 
-```
+```yaml
 task: executeScript
   inputs:
     - frequency: always
@@ -227,7 +227,7 @@ This example shows that the `executeScript` task can run more than one script, a
 The first script (`type: powershell`) writes a summary of the processes that are currently running on the instance to a text file located on the `C:` drive.
 The second script (`batch`) writes the system information to the `Output.tmp` file.
 
-```
+```yaml
 task: executeScript
   inputs:
     - frequency: always
@@ -248,7 +248,7 @@ This example shows an `executeScript` task that runs an idempotent script to per
 + Enable Telnet.
 The script ensures that each operation runs one time only. This prevents a reboot loop and makes the script idempotent.
 
-```
+```yaml
 task: executeScript
   inputs:
     - frequency: always
@@ -287,7 +287,7 @@ Extends the root volume to use all of the available space on the disk.
 
 *Example*
 
-```
+```yaml
 task: extendRootPartition
 ```
 
@@ -344,7 +344,7 @@ The following examples show sample input configurations for the `initializeVolum
 **Example 1: Initialize two volumes on an instance**
 This example shows an `initializeVolume` task that initializes two secondary volumes on an instance. The device named `DataVolume2` in the example is ephemeral.
 
-```
+```yaml
 task: initializeVolume
 inputs:
   initialize: devices
@@ -362,7 +362,7 @@ inputs:
 **Example 2: Initialize EBS volumes attached to an instance**
 This example shows an `initializeVolume` task that initializes all empty EBS volumes that are attached to the instance.
 
-```
+```yaml
 task: initializeVolume
 inputs:
   initialize: all
@@ -381,7 +381,7 @@ Optimizes ENA settings based on the current instance type; might reboot the inst
 
 *Example*
 
-```
+```yaml
 task: optimizeEna
 ```
 
@@ -406,7 +406,7 @@ Sets attributes for the default administrator account that is created on the loc
 
 *Example*
 
-```
+```yaml
 task: setAdminAccount
 inputs:
   name: Administrator
@@ -429,7 +429,7 @@ Adds DNS suffixes to the list of search suffixes. Only suffixes that do not alre
 
 *Example*
 
-```
+```yaml
 task: setDnsSuffix
 inputs:
   suffixes:
@@ -456,7 +456,7 @@ Sets the hostname of the computer to a custom string or, if `hostName` is not sp
 
 *Example*
 
-```
+```yaml
 task: setHostName
 inputs:
   reboot: true
@@ -469,7 +469,7 @@ Creates the `setwallpaper.lnk` shortcut file in the startup folder of each exist
 
 The shortcut file path is:
 
-```
+```powershell
 $env:SystemDrive/Users/<user>/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/setwallpaper.lnk
 ```
 
@@ -501,12 +501,12 @@ Input parameters that you provide, and attributes that you can set to configure 
 (Optional) You can use exactly one of the following options for this setting.
 + **AllTags** (string) – Add all instance tags to your wallpaper.
 
-  ```
+  ```YAML
   instanceTags: AllTags
   ```
 + **instanceTags** (list of strings) – Specify a list of instance tag names to add to your wallpaper. For example:
 
-  ```
+  ```yaml
   instanceTags:
     - Tag 1
     - Tag 2
@@ -515,7 +515,7 @@ Input parameters that you provide, and attributes that you can set to configure 
 **Example**
 The following example shows wallpaper configuration inputs that set the file path for the wallpaper background image, along with instance tags named `Tag 1` and `Tag 2`, and attributes that include the host name, instance ID, and private and public IP addresses for the instance.
 
-```
+```yaml
 task: setWallpaper
 inputs:
   path: C:\ProgramData\Amazon\EC2Launch\wallpaper\Ec2Wallpaper.jpg
@@ -545,7 +545,7 @@ Starts the Systems Manager (SSM) service following Sysprep.
 
 *Example*
 
-```
+```yaml
 task: startSsm
 ```
 
@@ -566,7 +566,7 @@ Resets the service state, updates `unattend.xml`, disables RDP, and runs Sysprep
 
 *Example*
 
-```
+```yaml
 task: sysprep
 inputs:
 clean: true
@@ -592,7 +592,7 @@ Writes a file to a destination.
 
 *Example*
 
-```
+```yaml
 task: writeFile
 inputs:
   - frequency: once

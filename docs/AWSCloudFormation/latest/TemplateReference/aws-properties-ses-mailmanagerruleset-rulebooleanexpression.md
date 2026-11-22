@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-mailmanagerruleset-rulebooleanexpression-syntax.json"></a>
 
-```
+```json
 {
   "[Evaluate](#cfn-ses-mailmanagerruleset-rulebooleanexpression-evaluate)" : {{RuleBooleanToEvaluate}},
   "[Operator](#cfn-ses-mailmanagerruleset-rulebooleanexpression-operator)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-mailmanagerruleset-rulebooleanexpression-syntax.yaml"></a>
 
-```
+```yaml
   [Evaluate](#cfn-ses-mailmanagerruleset-rulebooleanexpression-evaluate): {{
     RuleBooleanToEvaluate}}
   [Operator](#cfn-ses-mailmanagerruleset-rulebooleanexpression-operator): {{String}}

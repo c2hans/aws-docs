@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-transfer-server-identityproviderdetails-syntax.json"></a>
 
-```
+```json
 {
   "[DirectoryId](#cfn-transfer-server-identityproviderdetails-directoryid)" : {{String}},
   "[Function](#cfn-transfer-server-identityproviderdetails-function)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-transfer-server-identityproviderdetails-syntax.yaml"></a>
 
-```
+```yaml
   [DirectoryId](#cfn-transfer-server-identityproviderdetails-directoryid): {{String}}
   [Function](#cfn-transfer-server-identityproviderdetails-function): {{String}}
   [InvocationRole](#cfn-transfer-server-identityproviderdetails-invocationrole): {{String}}

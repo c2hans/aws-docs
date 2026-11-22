@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityagent-application-idcconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[IdCApplicationArn](#cfn-securityagent-application-idcconfiguration-idcapplicationarn)" : {{String}},
   "[IdCInstanceArn](#cfn-securityagent-application-idcconfiguration-idcinstancearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityagent-application-idcconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [IdCApplicationArn](#cfn-securityagent-application-idcconfiguration-idcapplicationarn): {{String}}
   [IdCInstanceArn](#cfn-securityagent-application-idcconfiguration-idcinstancearn): {{String}}
 ```

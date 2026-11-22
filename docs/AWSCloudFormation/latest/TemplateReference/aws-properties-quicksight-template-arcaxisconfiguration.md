@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-arcaxisconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Range](#cfn-quicksight-template-arcaxisconfiguration-range)" : {{ArcAxisDisplayRange}},
   "[ReserveRange](#cfn-quicksight-template-arcaxisconfiguration-reserverange)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-arcaxisconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Range](#cfn-quicksight-template-arcaxisconfiguration-range): {{
     ArcAxisDisplayRange}}
   [ReserveRange](#cfn-quicksight-template-arcaxisconfiguration-reserverange): {{Number}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-pipetargetecstaskparameters-syntax.json"></a>
 
-```
+```json
 {
   "[CapacityProviderStrategy](#cfn-pipes-pipe-pipetargetecstaskparameters-capacityproviderstrategy)" : {{[ CapacityProviderStrategyItem, ... ]}},
   "[EnableECSManagedTags](#cfn-pipes-pipe-pipetargetecstaskparameters-enableecsmanagedtags)" : {{Boolean}},
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-pipetargetecstaskparameters-syntax.yaml"></a>
 
-```
+```yaml
   [CapacityProviderStrategy](#cfn-pipes-pipe-pipetargetecstaskparameters-capacityproviderstrategy): {{
     - CapacityProviderStrategyItem}}
   [EnableECSManagedTags](#cfn-pipes-pipe-pipetargetecstaskparameters-enableecsmanagedtags): {{Boolean}}

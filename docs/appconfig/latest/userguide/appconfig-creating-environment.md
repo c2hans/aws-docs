@@ -80,7 +80,7 @@ The following procedure describes how to use the AWS CLI (on Linux or Windows) o
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    New-APPCEnvironment `
      -Name {{Name_for_the_environment}} `
      -ApplicationId {{The_application_ID}}

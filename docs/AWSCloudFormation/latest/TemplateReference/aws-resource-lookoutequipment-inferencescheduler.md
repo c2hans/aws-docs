@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lookoutequipment-inferencescheduler-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::LookoutEquipment::InferenceScheduler",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lookoutequipment-inferencescheduler-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::LookoutEquipment::InferenceScheduler
 Properties:
   [DataDelayOffsetInMinutes](#cfn-lookoutequipment-inferencescheduler-datadelayoffsetinminutes): {{Integer}}
@@ -157,7 +157,7 @@ Creates a schedule inference
 #### JSON
 <a name="aws-resource-lookoutequipment-inferencescheduler--examples--Inference_Scheduler--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Parameters": {
@@ -201,7 +201,7 @@ Creates a schedule inference
 #### YAML
 <a name="aws-resource-lookoutequipment-inferencescheduler--examples--Inference_Scheduler--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:
   Name:

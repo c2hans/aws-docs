@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-audiotrack-syntax.json"></a>
 
-```
+```json
 {
   "[PremixSettings](#cfn-medialive-channel-audiotrack-premixsettings)" : {{AudioPreMixerSettings}},
   "[Track](#cfn-medialive-channel-audiotrack-track)" : {{Integer}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-audiotrack-syntax.yaml"></a>
 
-```
+```yaml
   [PremixSettings](#cfn-medialive-channel-audiotrack-premixsettings): {{
     AudioPreMixerSettings}}
   [Track](#cfn-medialive-channel-audiotrack-track): {{Integer}}

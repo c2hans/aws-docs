@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-multiregionaccesspoint-publicaccessblockconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BlockPublicAcls](#cfn-s3-multiregionaccesspoint-publicaccessblockconfiguration-blockpublicacls)" : {{Boolean}},
   "[BlockPublicPolicy](#cfn-s3-multiregionaccesspoint-publicaccessblockconfiguration-blockpublicpolicy)" : {{Boolean}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-multiregionaccesspoint-publicaccessblockconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BlockPublicAcls](#cfn-s3-multiregionaccesspoint-publicaccessblockconfiguration-blockpublicacls): {{Boolean}}
   [BlockPublicPolicy](#cfn-s3-multiregionaccesspoint-publicaccessblockconfiguration-blockpublicpolicy): {{Boolean}}
   [IgnorePublicAcls](#cfn-s3-multiregionaccesspoint-publicaccessblockconfiguration-ignorepublicacls): {{Boolean}}

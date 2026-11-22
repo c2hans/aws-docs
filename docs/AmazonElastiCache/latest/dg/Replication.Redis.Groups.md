@@ -53,6 +53,9 @@ The node or shard limit can be increased to a maximum of 500 per cluster if the 
 
 To request a limit increase, see [AWS Service Limits](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html) and choose the limit type **Nodes per cluster per instance type**.
 
+**Note**
+Distributed KV caching clusters (`cache.i8ge.48xlarge`) don't support replicas or Multi-AZ. For more information, see [Requirements and limits for distributed KV caching](distributed-kv-caching-limits.md).
+
  Each read replica in a shard maintains a copy of the data from the shard's primary. Asynchronous replication mechanisms are used to keep the read replicas synchronized with the primary. Applications can read from any node in the cluster. Applications can write only to the primary nodes. Read replicas enhance read scalability and guard against data loss. Data is partitioned across the shards in a Valkey or Redis OSS (cluster mode enabled) cluster.
 
 Applications use the Valkey or Redis OSS (cluster mode enabled) cluster's *configuration endpoint* to connect with the nodes in the cluster. For more information, see [Finding connection endpoints in ElastiCache](Endpoints.md).

@@ -24,7 +24,7 @@ The following procedure shows how to set up permissions when using an S3 Batch O
 
    Then choose **Create policy** to attach the following policy to the role. To use this policy, replace the {{`user input placeholders`}} with your own information.
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -69,7 +69,7 @@ The following procedure shows how to set up permissions when using an S3 Batch O
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -100,7 +100,7 @@ The following procedure shows how to set up permissions when using an S3 Batch O
 
    The following is an example of the bucket policy for the bucket that contains the source objects. To use this policy, replace the {{`user input placeholders`}} with your own information.
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

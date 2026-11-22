@@ -40,7 +40,7 @@ Before you begin, you need access to an AWS account and an account for a support
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [

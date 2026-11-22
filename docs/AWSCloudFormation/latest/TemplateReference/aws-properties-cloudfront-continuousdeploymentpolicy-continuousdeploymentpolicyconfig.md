@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-continuousdeploymentpolicy-continuousdeploymentpolicyconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-cloudfront-continuousdeploymentpolicy-continuousdeploymentpolicyconfig-enabled)" : {{Boolean}},
   "[SingleHeaderPolicyConfig](#cfn-cloudfront-continuousdeploymentpolicy-continuousdeploymentpolicyconfig-singleheaderpolicyconfig)" : {{SingleHeaderPolicyConfig}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-continuousdeploymentpolicy-continuousdeploymentpolicyconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-cloudfront-continuousdeploymentpolicy-continuousdeploymentpolicyconfig-enabled): {{Boolean}}
   [SingleHeaderPolicyConfig](#cfn-cloudfront-continuousdeploymentpolicy-continuousdeploymentpolicyconfig-singleheaderpolicyconfig): {{
     SingleHeaderPolicyConfig}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cleanrooms-collaboration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CleanRooms::Collaboration",
   "Properties" : {
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cleanrooms-collaboration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CleanRooms::Collaboration
 Properties:
   [AllowedResultRegions](#cfn-cleanrooms-collaboration-allowedresultregions): {{
@@ -223,7 +223,7 @@ The following example creates a collaboration with the collaboration creator.
 #### JSON
 <a name="aws-resource-cleanrooms-collaboration--examples--Create_a_collaboration--json"></a>
 
-```
+```json
 "ExampleCollaboration": {
   {
     "Type": "AWS::CleanRooms::Collaboration",
@@ -253,7 +253,7 @@ The following example creates a collaboration with the collaboration creator.
 #### YAML
 <a name="aws-resource-cleanrooms-collaboration--examples--Create_a_collaboration--yaml"></a>
 
-```
+```yaml
 ExampleCollaboration:
   Type: AWS::CleanRooms::Collaboration
   Properties:

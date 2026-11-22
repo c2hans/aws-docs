@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewaytarget-managedresourcedetails-syntax.json"></a>
 
-```
+```json
 {
   "[Domain](#cfn-bedrockagentcore-gatewaytarget-managedresourcedetails-domain)" : {{String}},
   "[ResourceAssociationArn](#cfn-bedrockagentcore-gatewaytarget-managedresourcedetails-resourceassociationarn)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewaytarget-managedresourcedetails-syntax.yaml"></a>
 
-```
+```yaml
   [Domain](#cfn-bedrockagentcore-gatewaytarget-managedresourcedetails-domain): {{String}}
   [ResourceAssociationArn](#cfn-bedrockagentcore-gatewaytarget-managedresourcedetails-resourceassociationarn): {{String}}
   [ResourceGatewayArn](#cfn-bedrockagentcore-gatewaytarget-managedresourcedetails-resourcegatewayarn): {{String}}

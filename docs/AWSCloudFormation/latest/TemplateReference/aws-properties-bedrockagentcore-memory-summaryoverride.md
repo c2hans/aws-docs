@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-memory-summaryoverride-syntax.json"></a>
 
-```
+```json
 {
   "[Consolidation](#cfn-bedrockagentcore-memory-summaryoverride-consolidation)" : {{SummaryOverrideConsolidationConfigurationInput}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-memory-summaryoverride-syntax.yaml"></a>
 
-```
+```yaml
   [Consolidation](#cfn-bedrockagentcore-memory-summaryoverride-consolidation): {{
     SummaryOverrideConsolidationConfigurationInput}}
 ```

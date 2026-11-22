@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-events-rule-redshiftdataparameters-syntax.json"></a>
 
-```
+```json
 {
   "[Database](#cfn-events-rule-redshiftdataparameters-database)" : {{String}},
   "[DbUser](#cfn-events-rule-redshiftdataparameters-dbuser)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-events-rule-redshiftdataparameters-syntax.yaml"></a>
 
-```
+```yaml
   [Database](#cfn-events-rule-redshiftdataparameters-database): {{String}}
   [DbUser](#cfn-events-rule-redshiftdataparameters-dbuser): {{String}}
   [SecretManagerArn](#cfn-events-rule-redshiftdataparameters-secretmanagerarn): {{String}}

@@ -33,7 +33,7 @@ For a distribution tenant, you must have the `cloudfront:GetDistributionTenant` 
 
     This example specifies a distribution tenant.
 
-   ```
+   ```bash
    aws cloudfront list-domain-conflicts \
    --domain {{www.example.com}} \
    --domain-control-validation-resource "DistributionTenantId={{dt_2x9GhoK0TZRsohWzv1b9It8JABC}}"
@@ -48,7 +48,7 @@ For a distribution tenant, you must have the `cloudfront:GetDistributionTenant` 
 
    The resource ID and the account ID are partially hidden. This allows you to identify the standard distribution or distribution tenant that belongs to your account, and helps to protect the information of ones that you don’t own.
 
-   ```
+   ```json
    {
        "DomainConflicts": [
            {
@@ -91,7 +91,7 @@ You must have the `cloudfront:GetDistribution` and `cloudfront:ListConflictingAl
 
     This example specifies a standard distribution.
 
-   ```
+   ```bash
    aws cloudfront list-conflicting-aliases \
    --alias {{www.example.com}} \
    --distribution-id {{EDFDVBD6EXAMPLE}}
@@ -101,7 +101,7 @@ You must have the `cloudfront:GetDistribution` and `cloudfront:ListConflictingAl
 
    For each alternate domain name in the command’s output, you can see the ID of the standard distribution that it’s associated with, and the AWS account ID that owns the standard distribution. The standard distribution and account IDs are partially hidden, which allows you to identify the standard distributions and accounts that you own, and helps to protect the information of ones that you don’t own.
 
-   ```
+   ```json
    {
        "ConflictingAliasesList": {
            "MaxItems": 100,

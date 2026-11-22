@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-athena-datacatalog-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Athena::DataCatalog",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-athena-datacatalog-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Athena::DataCatalog
 Properties:
   [ConnectionType](#cfn-athena-datacatalog-connectiontype): {{String}}
@@ -166,7 +166,7 @@ The following example template creates a custom Hive data catalog in Athena.
 #### JSON
 <a name="aws-resource-athena-datacatalog--examples--Create_an_Athena_data_catalog--json"></a>
 
-```
+```json
 {
     "Resources":{
         "MyAthenaDataCatalog":{
@@ -197,7 +197,7 @@ The following example template creates a custom Hive data catalog in Athena.
 #### YAML
 <a name="aws-resource-athena-datacatalog--examples--Create_an_Athena_data_catalog--yaml"></a>
 
-```
+```yaml
 Resources:
   MyAthenaDataCatalog:
     Type: AWS::Athena::DataCatalog

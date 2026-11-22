@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-user-voiceenhancementconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Channel](#cfn-connect-user-voiceenhancementconfig-channel)" : {{String}},
   "[VoiceEnhancementMode](#cfn-connect-user-voiceenhancementconfig-voiceenhancementmode)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-user-voiceenhancementconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Channel](#cfn-connect-user-voiceenhancementconfig-channel): {{String}}
   [VoiceEnhancementMode](#cfn-connect-user-voiceenhancementconfig-voiceenhancementmode): {{String}}
 ```

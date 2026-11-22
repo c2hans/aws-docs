@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-evaluationform-evaluationformbaseitem-syntax.json"></a>
 
-```
+```json
 {
   "[Section](#cfn-connect-evaluationform-evaluationformbaseitem-section)" : {{EvaluationFormSection}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-evaluationform-evaluationformbaseitem-syntax.yaml"></a>
 
-```
+```yaml
   [Section](#cfn-connect-evaluationform-evaluationformbaseitem-section): {{
     EvaluationFormSection}}
 ```

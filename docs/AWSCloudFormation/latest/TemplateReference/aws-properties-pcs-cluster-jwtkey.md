@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcs-cluster-jwtkey-syntax.json"></a>
 
-```
+```json
 {
   "[SecretArn](#cfn-pcs-cluster-jwtkey-secretarn)" : {{String}},
   "[SecretVersion](#cfn-pcs-cluster-jwtkey-secretversion)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcs-cluster-jwtkey-syntax.yaml"></a>
 
-```
+```yaml
   [SecretArn](#cfn-pcs-cluster-jwtkey-secretarn): {{String}}
   [SecretVersion](#cfn-pcs-cluster-jwtkey-secretversion): {{String}}
 ```

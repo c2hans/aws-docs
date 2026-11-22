@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-connect-userhierarchystructure-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Connect::UserHierarchyStructure",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-connect-userhierarchystructure-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Connect::UserHierarchyStructure
 Properties:
   [InstanceArn](#cfn-connect-userhierarchystructure-instancearn): {{String}}

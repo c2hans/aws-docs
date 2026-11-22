@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-documentattributetarget-syntax.json"></a>
 
-```
+```json
 {
   "[TargetDocumentAttributeKey](#cfn-kendra-datasource-documentattributetarget-targetdocumentattributekey)" : {{String}},
   "[TargetDocumentAttributeValue](#cfn-kendra-datasource-documentattributetarget-targetdocumentattributevalue)" : {{DocumentAttributeValue}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-documentattributetarget-syntax.yaml"></a>
 
-```
+```yaml
   [TargetDocumentAttributeKey](#cfn-kendra-datasource-documentattributetarget-targetdocumentattributekey): {{String}}
   [TargetDocumentAttributeValue](#cfn-kendra-datasource-documentattributetarget-targetdocumentattributevalue): {{
     DocumentAttributeValue}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-customerprofiles-objecttype-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CustomerProfiles::ObjectType",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-customerprofiles-objecttype-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CustomerProfiles::ObjectType
 Properties:
   [AllowProfileCreation](#cfn-customerprofiles-objecttype-allowprofilecreation): {{Boolean}}
@@ -203,7 +203,7 @@ The following example creates a object type if Domain existed.
 #### YAML
 <a name="aws-resource-customerprofiles-objecttype--examples----yaml"></a>
 
-```
+```yaml
 Type: "AWS::CustomerProfiles::ObjectType"
 Properties:
     DomainName: "ExampleDomain"
@@ -230,7 +230,7 @@ Properties:
 #### JSON
 <a name="aws-resource-customerprofiles-objecttype--examples----json"></a>
 
-```
+```json
 "Type": "AWS::CustomerProfiles::ObjectType",
 "Properties": {
     "DomainName": "ExampleDomain",

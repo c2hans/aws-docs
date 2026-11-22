@@ -293,13 +293,13 @@ Athena announces the following fixes and improvements:
 
   **Original query pattern**
 
-  ```
+  ```sql
   lead(column1, column_containing_nulls) OVER (...) as transformed
   ```
 
   **Updated query pattern**
 
-  ```
+  ```sql
   CASE
       WHEN column_containing_nulls IS NULL THEN NULL
       ELSE (lead(column1, coalesce(column_containing_nulls, 1)) OVER (...))
@@ -1018,7 +1018,7 @@ Sample data
 
   The following query tries to retrieve the timestamps that match a specific value.
 
-  ```
+  ```sql
   SELECT *
   FROM table
   WHERE timestamps.col = timestamp'2020-06-10 15:55:23.383'
@@ -1037,7 +1037,7 @@ Sample data
 **Example 2: Casting from a timestamp to date**
 The following query returned an erroneous result.
 
-  ```
+  ```sql
   SELECT date(timestamp '2020-12-31 23:59:59.999')
   ```
 
@@ -1124,7 +1124,7 @@ Athena announces the following fixes and improvements.
   + If a single dataset has both `Infinity` and `Double.MAX_VALUE`, and a percentile result is `Double.MAX_VALUE`, Athena returns `Infinity`.
   + To exclude `Infinity` and `NaN` from a calculation, use the `is_finite()` function, as in the following example.
 
-    ```
+    ```sql
     approx_percentile(x, 0.5) FILTER (WHERE is_finite(x))
     ```
 
@@ -1685,7 +1685,7 @@ Published on 2021-11-18
 Athena announces new features and improvements.
 + Support for spill-to-disk for aggregation queries that contain `DISTINCT`, `ORDER BY`, or both, as in the following example:
 
-  ```
+  ```sql
   SELECT array_agg(orderstatus ORDER BY orderstatus)
   FROM orders
   GROUP BY orderpriority, custkey
@@ -1883,7 +1883,7 @@ Athena announces the following feature enhancements and bug fixes.
 
   This example assumes that `Table_B` is an unpartitioned table that has file sizes that add up to less than 20 MB. For queries like this, less data is read from `Table_A` and the query completes more quickly.
 
-  ```
+  ```sql
   SELECT *
   FROM Table_A
   JOIN Table_B ON Table_A.date = Table_B.date

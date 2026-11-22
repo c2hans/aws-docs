@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrassv2-componentversion-lambdacontainerparams-syntax.json"></a>
 
-```
+```json
 {
   "[Devices](#cfn-greengrassv2-componentversion-lambdacontainerparams-devices)" : {{[ LambdaDeviceMount, ... ]}},
   "[MemorySizeInKB](#cfn-greengrassv2-componentversion-lambdacontainerparams-memorysizeinkb)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrassv2-componentversion-lambdacontainerparams-syntax.yaml"></a>
 
-```
+```yaml
   [Devices](#cfn-greengrassv2-componentversion-lambdacontainerparams-devices): {{
     - LambdaDeviceMount}}
   [MemorySizeInKB](#cfn-greengrassv2-componentversion-lambdacontainerparams-memorysizeinkb): {{Integer}}

@@ -40,7 +40,7 @@ If your reservation has more capacity than your group uses (for example, a reser
 **To enable launch before terminate**
 Use the [put-account-setting](https://docs.aws.amazon.com/cli/latest/reference/autoscaling/put-account-setting.html) command to set `launchBeforeTerminate` to `enabled`.
 
-```
+```bash
 aws autoscaling put-account-setting \
     --name launchBeforeTerminate \
     --value enabled
@@ -49,7 +49,7 @@ aws autoscaling put-account-setting \
 **To view the current launch before terminate status**
 Use the [describe-account-settings](https://docs.aws.amazon.com/cli/latest/reference/autoscaling/describe-account-settings.html) command.
 
-```
+```bash
 aws autoscaling describe-account-settings \
     --name launchBeforeTerminate
 ```

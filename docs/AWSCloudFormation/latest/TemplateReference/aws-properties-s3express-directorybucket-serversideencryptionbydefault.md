@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3express-directorybucket-serversideencryptionbydefault-syntax.json"></a>
 
-```
+```json
 {
   "[KMSMasterKeyID](#cfn-s3express-directorybucket-serversideencryptionbydefault-kmsmasterkeyid)" : {{String}},
   "[SSEAlgorithm](#cfn-s3express-directorybucket-serversideencryptionbydefault-ssealgorithm)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3express-directorybucket-serversideencryptionbydefault-syntax.yaml"></a>
 
-```
+```yaml
   [KMSMasterKeyID](#cfn-s3express-directorybucket-serversideencryptionbydefault-kmsmasterkeyid): {{String}}
   [SSEAlgorithm](#cfn-s3express-directorybucket-serversideencryptionbydefault-ssealgorithm): {{String}}
 ```

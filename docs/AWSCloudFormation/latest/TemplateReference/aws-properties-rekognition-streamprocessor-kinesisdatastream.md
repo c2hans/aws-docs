@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rekognition-streamprocessor-kinesisdatastream-syntax.json"></a>
 
-```
+```json
 {
   "[Arn](#cfn-rekognition-streamprocessor-kinesisdatastream-arn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rekognition-streamprocessor-kinesisdatastream-syntax.yaml"></a>
 
-```
+```yaml
   [Arn](#cfn-rekognition-streamprocessor-kinesisdatastream-arn): {{String}}
 ```
 

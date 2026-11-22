@@ -27,7 +27,7 @@ You can create Amazon EventBridge rules that route the CloudTrail event to a tar
 
 The following is an example of an `OpenTunnel` management event that was logged in CloudTrail.
 
-```
+```JSON
 {
      "eventVersion": "1.08",
      "userIdentity": {

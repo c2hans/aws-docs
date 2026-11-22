@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-aps-scraper-componentconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Options](#cfn-aps-scraper-componentconfig-options)" : {{{{{Key}}: {{Value}}, ...}}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-aps-scraper-componentconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Options](#cfn-aps-scraper-componentconfig-options): {{
     {{Key}}: {{Value}}}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-rtbfabric-linkroutingrule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RTBFabric::LinkRoutingRule",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-rtbfabric-linkroutingrule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RTBFabric::LinkRoutingRule
 Properties:
   [Conditions](#cfn-rtbfabric-linkroutingrule-conditions): {{

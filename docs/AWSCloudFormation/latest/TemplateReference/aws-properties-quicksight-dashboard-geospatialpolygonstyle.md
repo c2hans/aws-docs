@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-geospatialpolygonstyle-syntax.json"></a>
 
-```
+```json
 {
   "[PolygonSymbolStyle](#cfn-quicksight-dashboard-geospatialpolygonstyle-polygonsymbolstyle)" : {{GeospatialPolygonSymbolStyle}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-geospatialpolygonstyle-syntax.yaml"></a>
 
-```
+```yaml
   [PolygonSymbolStyle](#cfn-quicksight-dashboard-geospatialpolygonstyle-polygonsymbolstyle): {{
     GeospatialPolygonSymbolStyle}}
 ```

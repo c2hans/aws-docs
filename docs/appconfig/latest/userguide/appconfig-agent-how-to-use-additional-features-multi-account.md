@@ -75,7 +75,7 @@ Use the following procedure to create a permissions policy using the IAM console
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -100,7 +100,7 @@ Use the following procedure to create a permissions policy using the IAM console
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [{
@@ -163,7 +163,7 @@ Use the following procedure to create an IAM role using the IAM console. Complet
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

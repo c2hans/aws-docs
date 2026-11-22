@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-defaultnewsheetconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[InteractiveLayoutConfiguration](#cfn-quicksight-dashboard-defaultnewsheetconfiguration-interactivelayoutconfiguration)" : {{DefaultInteractiveLayoutConfiguration}},
   "[PaginatedLayoutConfiguration](#cfn-quicksight-dashboard-defaultnewsheetconfiguration-paginatedlayoutconfiguration)" : {{DefaultPaginatedLayoutConfiguration}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-defaultnewsheetconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [InteractiveLayoutConfiguration](#cfn-quicksight-dashboard-defaultnewsheetconfiguration-interactivelayoutconfiguration): {{
     DefaultInteractiveLayoutConfiguration}}
   [PaginatedLayoutConfiguration](#cfn-quicksight-dashboard-defaultnewsheetconfiguration-paginatedlayoutconfiguration): {{

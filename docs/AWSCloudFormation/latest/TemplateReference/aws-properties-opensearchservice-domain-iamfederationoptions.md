@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchservice-domain-iamfederationoptions-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-opensearchservice-domain-iamfederationoptions-enabled)" : {{Boolean}},
   "[RolesKey](#cfn-opensearchservice-domain-iamfederationoptions-roleskey)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchservice-domain-iamfederationoptions-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-opensearchservice-domain-iamfederationoptions-enabled): {{Boolean}}
   [RolesKey](#cfn-opensearchservice-domain-iamfederationoptions-roleskey): {{String}}
   [SubjectKey](#cfn-opensearchservice-domain-iamfederationoptions-subjectkey): {{String}}

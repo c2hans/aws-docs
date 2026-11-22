@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationinsights-application-log-syntax.json"></a>
 
-```
+```json
 {
   "[Encoding](#cfn-applicationinsights-application-log-encoding)" : {{String}},
   "[LogGroupName](#cfn-applicationinsights-application-log-loggroupname)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationinsights-application-log-syntax.yaml"></a>
 
-```
+```yaml
   [Encoding](#cfn-applicationinsights-application-log-encoding): {{String}}
   [LogGroupName](#cfn-applicationinsights-application-log-loggroupname): {{String}}
   [LogPath](#cfn-applicationinsights-application-log-logpath): {{String}}

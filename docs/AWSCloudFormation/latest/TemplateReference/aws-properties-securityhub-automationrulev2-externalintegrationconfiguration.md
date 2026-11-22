@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityhub-automationrulev2-externalintegrationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ConnectorArn](#cfn-securityhub-automationrulev2-externalintegrationconfiguration-connectorarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityhub-automationrulev2-externalintegrationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ConnectorArn](#cfn-securityhub-automationrulev2-externalintegrationconfiguration-connectorarn): {{String}}
 ```
 

@@ -62,7 +62,7 @@ aws application-autoscaling register-scalable-target --service-namespace {{dynam
 
 If successful, this command returns the ARN of the scalable target.
 
-```
+```json
 {
     "ScalableTargetARN": "arn:aws:application-autoscaling:{{region}}:{{account-id}}:scalable-target/1234abcd56ab78cd901ef1234567890ab123"
 }
@@ -121,7 +121,7 @@ This example assumes that the file config.json contains the following JSON-forma
 
 If successful, this command returns the ARN of the scalable target.
 
-```
+```json
 {
     "ScalableTargetARN": "arn:aws:application-autoscaling:{{region}}:{{account-id}}:scalable-target/1234abcd56ab78cd901ef1234567890ab123"
 }
@@ -147,7 +147,7 @@ aws application-autoscaling describe-scalable-targets --service-namespace {{dyna
 
 The following is example output.
 
-```
+```json
 {
     "ScalableTargets": [
         {
@@ -201,7 +201,7 @@ This example assumes that the file config.json contains the following JSON-forma
 
 If successful, this command returns the ARN of the scalable target.
 
-```
+```json
 {
     "ScalableTargetARN": "arn:aws:application-autoscaling:{{region}}:{{account-id}}:scalable-target/1234abcd56ab78cd901ef1234567890ab123"
 }

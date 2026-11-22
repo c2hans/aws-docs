@@ -30,12 +30,12 @@ For more information, see [Step and simple scaling policies for Amazon EC2 Auto 
 **Tools for PowerShell V4**
 **Example 1: This example executes the specified policy for the specified Auto Scaling group.**
 
-```
+```powershell
 Start-ASPolicy -AutoScalingGroupName my-asg -PolicyName "myScaleInPolicy"
 ```
 **Example 2: This example executes the specified policy for the specified Auto Scaling group, after waiting for the cooldown period to complete.**
 
-```
+```powershell
 Start-ASPolicy -AutoScalingGroupName my-asg -PolicyName "myScaleInPolicy" -HonorCooldown $true
 ```
 +  For API details, see [ExecutePolicy](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -43,12 +43,12 @@ Start-ASPolicy -AutoScalingGroupName my-asg -PolicyName "myScaleInPolicy" -Honor
 **Tools for PowerShell V5**
 **Example 1: This example executes the specified policy for the specified Auto Scaling group.**
 
-```
+```powershell
 Start-ASPolicy -AutoScalingGroupName my-asg -PolicyName "myScaleInPolicy"
 ```
 **Example 2: This example executes the specified policy for the specified Auto Scaling group, after waiting for the cooldown period to complete.**
 
-```
+```powershell
 Start-ASPolicy -AutoScalingGroupName my-asg -PolicyName "myScaleInPolicy" -HonorCooldown $true
 ```
 +  For API details, see [ExecutePolicy](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

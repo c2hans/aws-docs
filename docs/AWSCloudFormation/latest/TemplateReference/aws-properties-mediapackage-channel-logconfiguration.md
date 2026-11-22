@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackage-channel-logconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[LogGroupName](#cfn-mediapackage-channel-logconfiguration-loggroupname)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackage-channel-logconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [LogGroupName](#cfn-mediapackage-channel-logconfiguration-loggroupname): {{String}}
 ```
 

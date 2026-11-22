@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ecs-o
 
 Save the following configuration. You pass it to the collector in step 3.
 
-```
+```yaml
 extensions:
   sigv4auth/cloudwatch:
     region: ${env:AWS_REGION}

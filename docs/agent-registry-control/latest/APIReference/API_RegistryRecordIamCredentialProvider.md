@@ -4,13 +4,13 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 
 # RegistryRecordIamCredentialProvider
 
-The configuration for an IAM role credential provider that signs requests to a registry record's source with AWS Signature Version 4 (SigV4).
+The configuration for an IAM role credential provider that signs requests to a registry record's source with AWS Signature Version 4 (SigV4). For an Amazon S3 skill source (an `s3://` URL), AWS Agent Registry assumes the role to read the object. The role must be in your AWS account.
 
 ## Contents
 <a name="API_RegistryRecordIamCredentialProvider_Contents"></a>
 
  ** region **   <a name="agentregistrycontrol-Type-RegistryRecordIamCredentialProvider-region"></a>
-The AWS Region to use for request signing. If not specified, the Region is derived from the source URL hostname, falling back to the Region of the registry.
+The AWS Region to use for request signing. If not specified, the Region is derived from the source URL hostname, falling back to the Region of the registry. For an Amazon S3 skill source, omit it or set it to the Region of the registry.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[a-z0-9-]+`
@@ -24,7 +24,7 @@ Pattern: `arn:aws(-[^:]+)?:iam::[0-9]{12}:role/.+`
 Required: No
 
  ** service **   <a name="agentregistrycontrol-Type-RegistryRecordIamCredentialProvider-service"></a>
-The service name to use for request signing, such as execute-api.
+The service name to use for request signing, such as execute-api. For an Amazon S3 skill source, omit it or set it to `s3`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `[a-zA-Z0-9_-]+`

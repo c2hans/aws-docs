@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-directoryservice-simplead-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DirectoryService::SimpleAD",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-directoryservice-simplead-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DirectoryService::SimpleAD
 Properties:
   [CreateAlias](#cfn-directoryservice-simplead-createalias): {{Boolean}}
@@ -162,7 +162,7 @@ The following example creates a Simple AD directory, where the directory DNS nam
 #### JSON
 <a name="aws-resource-directoryservice-simplead--examples--Create_a_Directory--json"></a>
 
-```
+```json
 "myDirectory" : {
   "Type" : "AWS::DirectoryService::SimpleAD",
   "Properties" : {
@@ -180,7 +180,7 @@ The following example creates a Simple AD directory, where the directory DNS nam
 #### YAML
 <a name="aws-resource-directoryservice-simplead--examples--Create_a_Directory--yaml"></a>
 
-```
+```yaml
 myDirectory:
   Type: AWS::DirectoryService::SimpleAD
   Properties:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-memory-memorystrategy-syntax.json"></a>
 
-```
+```json
 {
   "[CustomMemoryStrategy](#cfn-bedrockagentcore-memory-memorystrategy-custommemorystrategy)" : {{CustomMemoryStrategy}},
   "[EpisodicMemoryStrategy](#cfn-bedrockagentcore-memory-memorystrategy-episodicmemorystrategy)" : {{EpisodicMemoryStrategy}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-memory-memorystrategy-syntax.yaml"></a>
 
-```
+```yaml
   [CustomMemoryStrategy](#cfn-bedrockagentcore-memory-memorystrategy-custommemorystrategy): {{
     CustomMemoryStrategy}}
   [EpisodicMemoryStrategy](#cfn-bedrockagentcore-memory-memorystrategy-episodicmemorystrategy): {{

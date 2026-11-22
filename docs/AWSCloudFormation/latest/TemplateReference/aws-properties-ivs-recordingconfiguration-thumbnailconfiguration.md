@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ivs-recordingconfiguration-thumbnailconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[RecordingMode](#cfn-ivs-recordingconfiguration-thumbnailconfiguration-recordingmode)" : {{String}},
   "[Resolution](#cfn-ivs-recordingconfiguration-thumbnailconfiguration-resolution)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ivs-recordingconfiguration-thumbnailconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [RecordingMode](#cfn-ivs-recordingconfiguration-thumbnailconfiguration-recordingmode): {{String}}
   [Resolution](#cfn-ivs-recordingconfiguration-thumbnailconfiguration-resolution): {{String}}
   [Storage](#cfn-ivs-recordingconfiguration-thumbnailconfiguration-storage): {{

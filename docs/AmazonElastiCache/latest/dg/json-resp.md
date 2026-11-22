@@ -15,7 +15,7 @@ Returns the JSON value at the given path in the Valkey or Redis OSS Serializatio
 
 Syntax
 
-```
+```json
 JSON.RESP <key> [path]
 ```
 + key (required) – A Valkey or Redis OSS key of JSON document type.
@@ -35,7 +35,7 @@ If the path is restricted syntax:
 
 Enhanced path syntax:
 
-```
+```json
 127.0.0.1:6379> JSON.SET k1 . '{"firstName":"John","lastName":"Smith","age":27,"weight":135.25,"isAlive":true,"address":{"street":"21 2nd Street","city":"New York","state":"NY","zipcode":"10021-3100"},"phoneNumbers":[{"type":"home","number":"212 555-1234"},{"type":"office","number":"646 555-4567"}],"children":[],"spouse":null}'
 OK
 
@@ -84,7 +84,7 @@ OK
 
 Restricted path syntax:
 
-```
+```json
 127.0.0.1:6379> JSON.SET k1 . '{"firstName":"John","lastName":"Smith","age":27,"weight":135.25,"isAlive":true,"address":{"street":"21 2nd Street","city":"New York","state":"NY","zipcode":"10021-3100"},"phoneNumbers":[{"type":"home","number":"212 555-1234"},{"type":"office","number":"646 555-4567"}],"children":[],"spouse":null}'
 OK
 

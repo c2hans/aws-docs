@@ -32,7 +32,7 @@ Here are the contents of the `CloudWatchSyntheticsFullAccess` policy:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -265,7 +265,7 @@ Here are the contents of the `CloudWatchSyntheticsReadOnlyAccess` policy:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

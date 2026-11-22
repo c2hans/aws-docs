@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-config-organizationconfigrule-organizationcustompolicyrulemetadata-syntax.json"></a>
 
-```
+```json
 {
   "[DebugLogDeliveryAccounts](#cfn-config-organizationconfigrule-organizationcustompolicyrulemetadata-debuglogdeliveryaccounts)" : {{[ String, ... ]}},
   "[Description](#cfn-config-organizationconfigrule-organizationcustompolicyrulemetadata-description)" : {{String}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-config-organizationconfigrule-organizationcustompolicyrulemetadata-syntax.yaml"></a>
 
-```
+```yaml
   [DebugLogDeliveryAccounts](#cfn-config-organizationconfigrule-organizationcustompolicyrulemetadata-debuglogdeliveryaccounts): {{
     - String}}
   [Description](#cfn-config-organizationconfigrule-organizationcustompolicyrulemetadata-description): {{String}}

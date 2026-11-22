@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigatewayv2-routingrule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGatewayV2::RoutingRule",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigatewayv2-routingrule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGatewayV2::RoutingRule
 Properties:
   [Actions](#cfn-apigatewayv2-routingrule-actions): {{
@@ -106,7 +106,7 @@ The following example creates a `RoutingRule` resource called `MyRoutingRule` th
 #### JSON
 <a name="aws-resource-apigatewayv2-routingrule--examples--Routing_rule_creation--json"></a>
 
-```
+```json
 {
   "Resources": {
     "MyRoutingRule": {
@@ -150,7 +150,7 @@ The following example creates a `RoutingRule` resource called `MyRoutingRule` th
 #### YAML
 <a name="aws-resource-apigatewayv2-routingrule--examples--Routing_rule_creation--yaml"></a>
 
-```
+```yaml
 Resources:
   MyRoutingRule:
     Type: 'AWS::ApiGatewayV2::RoutingRule'

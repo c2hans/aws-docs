@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-capacitymanagerdataexport-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::CapacityManagerDataExport",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-capacitymanagerdataexport-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::CapacityManagerDataExport
 Properties:
   [OutputFormat](#cfn-ec2-capacitymanagerdataexport-outputformat): {{String}}

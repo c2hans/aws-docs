@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-redshift-cluster-loggingproperties-syntax.json"></a>
 
-```
+```json
 {
   "[BucketName](#cfn-redshift-cluster-loggingproperties-bucketname)" : {{String}},
   "[LogDestinationType](#cfn-redshift-cluster-loggingproperties-logdestinationtype)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-redshift-cluster-loggingproperties-syntax.yaml"></a>
 
-```
+```yaml
   [BucketName](#cfn-redshift-cluster-loggingproperties-bucketname): {{String}}
   [LogDestinationType](#cfn-redshift-cluster-loggingproperties-logdestinationtype): {{String}}
   [LogExports](#cfn-redshift-cluster-loggingproperties-logexports): {{

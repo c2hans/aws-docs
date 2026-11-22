@@ -80,7 +80,7 @@ For information about modifying instance parameters, see [Parameter groups for A
 
 You can set other NLS initialization parameters in your SQL client. For example, the following statement sets the NLS\_LANGUAGE initialization parameter to GERMAN in a SQL client that is connected to an Oracle DB instance:
 
-```
+```sql
 ALTER SESSION SET NLS_LANGUAGE=GERMAN;
 ```
 

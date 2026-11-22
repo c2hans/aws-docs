@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-acme-create-eab
 
 The following example shows how to use the [CreateAcmeExternalAccountBinding](https://docs.aws.amazon.com/acm/latest/APIReference/API_CreateAcmeExternalAccountBinding.html) function.
 
-```
+```java
 package com.amazonaws.samples;
 
 import com.amazonaws.services.certificatemanager.AWSCertificateManagerClientBuilder;

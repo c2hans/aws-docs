@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-workspacesweb-dataprotectionsettings-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::WorkSpacesWeb::DataProtectionSettings",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-workspacesweb-dataprotectionsettings-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::WorkSpacesWeb::DataProtectionSettings
 Properties:
   [AdditionalEncryptionContext](#cfn-workspacesweb-dataprotectionsettings-additionalencryptioncontext): {{

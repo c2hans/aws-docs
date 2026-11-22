@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-harness-containerconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ContainerUri](#cfn-bedrockagentcore-harness-containerconfiguration-containeruri)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-harness-containerconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ContainerUri](#cfn-bedrockagentcore-harness-containerconfiguration-containeruri): {{String}}
 ```
 

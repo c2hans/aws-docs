@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-domain-defaultebsstoragesettings-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultEbsVolumeSizeInGb](#cfn-sagemaker-domain-defaultebsstoragesettings-defaultebsvolumesizeingb)" : {{Integer}},
   "[MaximumEbsVolumeSizeInGb](#cfn-sagemaker-domain-defaultebsstoragesettings-maximumebsvolumesizeingb)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-domain-defaultebsstoragesettings-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultEbsVolumeSizeInGb](#cfn-sagemaker-domain-defaultebsstoragesettings-defaultebsvolumesizeingb): {{Integer}}
   [MaximumEbsVolumeSizeInGb](#cfn-sagemaker-domain-defaultebsstoragesettings-maximumebsvolumesizeingb): {{Integer}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codeartifact-packagegroup-originconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Restrictions](#cfn-codeartifact-packagegroup-originconfiguration-restrictions)" : {{Restrictions}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codeartifact-packagegroup-originconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Restrictions](#cfn-codeartifact-packagegroup-originconfiguration-restrictions): {{
     Restrictions}}
 ```

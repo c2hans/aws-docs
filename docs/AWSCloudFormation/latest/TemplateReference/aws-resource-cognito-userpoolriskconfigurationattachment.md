@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cognito-userpoolriskconfigurationattachment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Cognito::UserPoolRiskConfigurationAttachment",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cognito-userpoolriskconfigurationattachment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Cognito::UserPoolRiskConfigurationAttachment
 Properties:
   [AccountTakeoverRiskConfiguration](#cfn-cognito-userpoolriskconfigurationattachment-accounttakeoverriskconfiguration): {{
@@ -111,7 +111,7 @@ The following example sets risk configurations in the referenced user pool and c
 #### JSON
 <a name="aws-resource-cognito-userpoolriskconfigurationattachment--examples--Creating_a_new_risk_configuration_attachment_for_a_user_pool--json"></a>
 
-```
+```json
 {
    "UserPoolRiskConfiguration":{
       "Type":"AWS::Cognito::UserPoolRiskConfigurationAttachment",
@@ -197,7 +197,7 @@ The following example sets risk configurations in the referenced user pool and c
 #### YAML
 <a name="aws-resource-cognito-userpoolriskconfigurationattachment--examples--Creating_a_new_risk_configuration_attachment_for_a_user_pool--yaml"></a>
 
-```
+```yaml
 UserPoolRiskConfiguration:
   Type: AWS::Cognito::UserPoolRiskConfigurationAttachment
   Properties:

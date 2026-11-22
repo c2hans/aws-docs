@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-responseheaderspolicy-corsconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AccessControlAllowCredentials](#cfn-cloudfront-responseheaderspolicy-corsconfig-accesscontrolallowcredentials)" : {{Boolean}},
   "[AccessControlAllowHeaders](#cfn-cloudfront-responseheaderspolicy-corsconfig-accesscontrolallowheaders)" : {{AccessControlAllowHeaders}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-responseheaderspolicy-corsconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AccessControlAllowCredentials](#cfn-cloudfront-responseheaderspolicy-corsconfig-accesscontrolallowcredentials): {{Boolean}}
   [AccessControlAllowHeaders](#cfn-cloudfront-responseheaderspolicy-corsconfig-accesscontrolallowheaders): {{
     AccessControlAllowHeaders}}

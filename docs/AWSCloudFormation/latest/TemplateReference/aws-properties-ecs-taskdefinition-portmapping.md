@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskdefinition-portmapping-syntax.json"></a>
 
-```
+```json
 {
   "[AppProtocol](#cfn-ecs-taskdefinition-portmapping-appprotocol)" : {{String}},
   "[ContainerPort](#cfn-ecs-taskdefinition-portmapping-containerport)" : {{Integer}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskdefinition-portmapping-syntax.yaml"></a>
 
-```
+```yaml
   [AppProtocol](#cfn-ecs-taskdefinition-portmapping-appprotocol): {{String}}
   [ContainerPort](#cfn-ecs-taskdefinition-portmapping-containerport): {{Integer}}
   [ContainerPortRange](#cfn-ecs-taskdefinition-portmapping-containerportrange): {{String}}

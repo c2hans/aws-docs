@@ -19,7 +19,7 @@ A table in a relational database is a two-dimensional data structure composed of
 
 In SQL, you would use the `INSERT` statement to add a row to a table.
 
-```
+```sql
 INSERT INTO Music
     (Artist, SongTitle, AlbumTitle,
     Year, Price, Genre,
@@ -149,7 +149,7 @@ In addition to `PutItem`, DynamoDB supports a `BatchWriteItem` operation for wri
 
 With PartiQL, you use the `ExecuteStatement` operation to add an item to a table, using the PartiQL `Insert` statement.
 
-```
+```sql
 INSERT into Music value {
     'Artist': 'No One You Know',
     'SongTitle': 'Call Me Today',

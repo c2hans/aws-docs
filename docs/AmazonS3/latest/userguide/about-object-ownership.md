@@ -55,13 +55,13 @@ New objects can be uploaded to your bucket only if they use bucket owner full co
 
 Because the following example `PutObject` operation using the AWS Command Line Interface (AWS CLI) includes the `bucket-owner-full-control` canned ACL, the object can be uploaded to a bucket with disabled ACLs.
 
-```
+```bash
 aws s3api put-object --bucket {{amzn-s3-demo-bucket}} --key {{key-name}} --body {{path-to-file}} --acl bucket-owner-full-control
 ```
 
 Because the following `PutObject` operation doesn't specify an ACL, it also succeeds for a bucket with disabled ACLs.
 
-```
+```bash
 aws s3api put-object --bucket {{amzn-s3-demo-bucket}} --key {{key-name}} --body {{path-to-file}}
 ```
 

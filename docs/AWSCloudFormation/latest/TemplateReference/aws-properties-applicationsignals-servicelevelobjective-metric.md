@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationsignals-servicelevelobjective-metric-syntax.json"></a>
 
-```
+```json
 {
   "[Dimensions](#cfn-applicationsignals-servicelevelobjective-metric-dimensions)" : {{[ Dimension, ... ]}},
   "[MetricName](#cfn-applicationsignals-servicelevelobjective-metric-metricname)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationsignals-servicelevelobjective-metric-syntax.yaml"></a>
 
-```
+```yaml
   [Dimensions](#cfn-applicationsignals-servicelevelobjective-metric-dimensions): {{
     - Dimension}}
   [MetricName](#cfn-applicationsignals-servicelevelobjective-metric-metricname): {{String}}

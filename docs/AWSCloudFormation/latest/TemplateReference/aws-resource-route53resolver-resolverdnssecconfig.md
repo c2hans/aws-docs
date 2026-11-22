@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-route53resolver-resolverdnssecconfig-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Route53Resolver::ResolverDNSSECConfig",
   "Properties" : {
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-route53resolver-resolverdnssecconfig-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53Resolver::ResolverDNSSECConfig
 Properties:
   [ResourceId](#cfn-route53resolver-resolverdnssecconfig-resourceid): {{String}}

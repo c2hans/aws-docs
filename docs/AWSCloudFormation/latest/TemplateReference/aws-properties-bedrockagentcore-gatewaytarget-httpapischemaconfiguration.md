@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewaytarget-httpapischemaconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Source](#cfn-bedrockagentcore-gatewaytarget-httpapischemaconfiguration-source)" : {{ApiSchemaConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewaytarget-httpapischemaconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Source](#cfn-bedrockagentcore-gatewaytarget-httpapischemaconfiguration-source): {{
     ApiSchemaConfiguration}}
 ```

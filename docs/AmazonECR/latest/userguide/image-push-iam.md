@@ -15,7 +15,7 @@ You can also create a your own IAM policies. The following IAM policy grants the
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

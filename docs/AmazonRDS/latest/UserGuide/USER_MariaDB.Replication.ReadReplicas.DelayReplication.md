@@ -33,7 +33,7 @@ To configure delayed replication for any future read replica created from a DB i
 
    For example, run the following stored procedure to specify that replication is delayed by at least one hour (3,600 seconds) for any read replica created from the current DB instance.
 
-   ```
+   ```sql
    call mysql.rds_set_configuration('target delay', 3600);
    ```
 **Note**
@@ -54,7 +54,7 @@ To modify delayed replication for an existing read replica, run the [mysql.rds\_
 
    For example, run the following stored procedure to specify that replication to the read replica is delayed by at least one hour (3600 seconds).
 
-   ```
+   ```sql
    call mysql.rds_set_source_delay(3600);
    ```
 

@@ -8,7 +8,7 @@ Returns the requested attributes of the contact as a map of attribute key to val
 
  **Signature**
 
-```
+```typescript
 getContactAttributes(
   contactId: string,
   attributes: ContactAttributeKey[],
@@ -19,7 +19,7 @@ type ContactAttributeKey = string;
 
  **Usage**
 
-```
+```typescript
 const attributes = await contactClient.getContactAttributes(contactId, [
   "accountId",
   "priority",
@@ -40,6 +40,6 @@ Requires an instance that is scoped to the contact that you pass in `contactId`,
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

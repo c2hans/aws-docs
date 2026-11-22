@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-timestream-scheduledquery-notificationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[SnsConfiguration](#cfn-timestream-scheduledquery-notificationconfiguration-snsconfiguration)" : {{SnsConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-timestream-scheduledquery-notificationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [SnsConfiguration](#cfn-timestream-scheduledquery-notificationconfiguration-snsconfiguration): {{
     SnsConfiguration}}
 ```

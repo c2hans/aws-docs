@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apigateway-documentationpart-location-syntax.json"></a>
 
-```
+```json
 {
   "[Method](#cfn-apigateway-documentationpart-location-method)" : {{String}},
   "[Name](#cfn-apigateway-documentationpart-location-name)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apigateway-documentationpart-location-syntax.yaml"></a>
 
-```
+```yaml
   [Method](#cfn-apigateway-documentationpart-location-method): {{String}}
   [Name](#cfn-apigateway-documentationpart-location-name): {{String}}
   [Path](#cfn-apigateway-documentationpart-location-path): {{String}}

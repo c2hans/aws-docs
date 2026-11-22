@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-memory-invocationconfigurationinput-syntax.json"></a>
 
-```
+```json
 {
   "[PayloadDeliveryBucketName](#cfn-bedrockagentcore-memory-invocationconfigurationinput-payloaddeliverybucketname)" : {{String}},
   "[TopicArn](#cfn-bedrockagentcore-memory-invocationconfigurationinput-topicarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-memory-invocationconfigurationinput-syntax.yaml"></a>
 
-```
+```yaml
   [PayloadDeliveryBucketName](#cfn-bedrockagentcore-memory-invocationconfigurationinput-payloaddeliverybucketname): {{String}}
   [TopicArn](#cfn-bedrockagentcore-memory-invocationconfigurationinput-topicarn): {{String}}
 ```

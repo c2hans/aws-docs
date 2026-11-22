@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-replicator-kafkaclustersaslscramauthentication-syntax.json"></a>
 
-```
+```json
 {
   "[Mechanism](#cfn-msk-replicator-kafkaclustersaslscramauthentication-mechanism)" : {{String}},
   "[SecretArn](#cfn-msk-replicator-kafkaclustersaslscramauthentication-secretarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-replicator-kafkaclustersaslscramauthentication-syntax.yaml"></a>
 
-```
+```yaml
   [Mechanism](#cfn-msk-replicator-kafkaclustersaslscramauthentication-mechanism): {{String}}
   [SecretArn](#cfn-msk-replicator-kafkaclustersaslscramauthentication-secretarn): {{String}}
 ```

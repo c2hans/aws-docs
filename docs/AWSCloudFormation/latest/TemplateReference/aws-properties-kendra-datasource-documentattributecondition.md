@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-documentattributecondition-syntax.json"></a>
 
-```
+```json
 {
   "[ConditionDocumentAttributeKey](#cfn-kendra-datasource-documentattributecondition-conditiondocumentattributekey)" : {{String}},
   "[ConditionOnValue](#cfn-kendra-datasource-documentattributecondition-conditiononvalue)" : {{DocumentAttributeValue}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-documentattributecondition-syntax.yaml"></a>
 
-```
+```yaml
   [ConditionDocumentAttributeKey](#cfn-kendra-datasource-documentattributecondition-conditiondocumentattributekey): {{String}}
   [ConditionOnValue](#cfn-kendra-datasource-documentattributecondition-conditiononvalue): {{
     DocumentAttributeValue}}

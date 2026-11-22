@@ -90,25 +90,25 @@ You can use ARNs to identify the Auto Scaling groups and launch configurations t
 
 An Auto Scaling group has the following ARN.
 
-```
+```json
 "Resource": "arn:aws:autoscaling:{{region}}:{{account-id}}:autoScalingGroup:{{uuid}}:autoScalingGroupName/{{asg-name}}"
 ```
 
 A launch configuration has the following ARN.
 
-```
+```json
 "Resource": "arn:aws:autoscaling:{{region}}:{{account-id}}:launchConfiguration:{{uuid}}:launchConfigurationName/{{lc-name}}"
 ```
 
 To specify an Auto Scaling group with the `CreateAutoScalingGroup` action, you must replace the UUID with a wildcard (`*`) as shown in the following example.
 
-```
+```json
 "Resource": "arn:aws:autoscaling:{{region}}:{{account-id}}:autoScalingGroup:*:autoScalingGroupName/{{asg-name}}"
 ```
 
 To specify a launch configuration with the `CreateLaunchConfiguration` action, you must replace the UUID with a wildcard (`*`) as shown in the following example.
 
-```
+```json
 "Resource": "arn:aws:autoscaling:{{region}}:{{account-id}}:launchConfiguration:*:launchConfigurationName/{{lc-name}}"
 ```
 

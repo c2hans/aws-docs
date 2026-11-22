@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lakeformation-permissions-tablewithcolumnsresource-syntax.json"></a>
 
-```
+```json
 {
   "[CatalogId](#cfn-lakeformation-permissions-tablewithcolumnsresource-catalogid)" : {{String}},
   "[ColumnNames](#cfn-lakeformation-permissions-tablewithcolumnsresource-columnnames)" : {{[ String, ... ]}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lakeformation-permissions-tablewithcolumnsresource-syntax.yaml"></a>
 
-```
+```yaml
   [CatalogId](#cfn-lakeformation-permissions-tablewithcolumnsresource-catalogid): {{String}}
   [ColumnNames](#cfn-lakeformation-permissions-tablewithcolumnsresource-columnnames): {{
     - String}}
@@ -89,7 +89,7 @@ The name of the table resource. A table is a metadata definition that represents
 #### JSON
 <a name="aws-properties-lakeformation-permissions-tablewithcolumnsresource--examples--Input_format_for_TableWithColumnsResource--json"></a>
 
-```
+```json
 {
   "CatalogId" : “123456789012”,
   "ColumnNames" : [ “col1”, “col2” ],
@@ -101,7 +101,7 @@ The name of the table resource. A table is a metadata definition that represents
 #### YAML
 <a name="aws-properties-lakeformation-permissions-tablewithcolumnsresource--examples--Input_format_for_TableWithColumnsResource--yaml"></a>
 
-```
+```yaml
 CatalogId: “123456789012”
   ColumnNames:
     - “col1”

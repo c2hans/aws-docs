@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-entityresolution-matchingworkflow-resolutiontechniques-syntax.json"></a>
 
-```
+```json
 {
   "[EnableRealTimeMatching](#cfn-entityresolution-matchingworkflow-resolutiontechniques-enablerealtimematching)" : {{Boolean}},
   "[ProviderProperties](#cfn-entityresolution-matchingworkflow-resolutiontechniques-providerproperties)" : {{ProviderProperties}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-entityresolution-matchingworkflow-resolutiontechniques-syntax.yaml"></a>
 
-```
+```yaml
   [EnableRealTimeMatching](#cfn-entityresolution-matchingworkflow-resolutiontechniques-enablerealtimematching): {{Boolean}}
   [ProviderProperties](#cfn-entityresolution-matchingworkflow-resolutiontechniques-providerproperties): {{
     ProviderProperties}}

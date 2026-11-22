@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-timecodeburninsettings-syntax.json"></a>
 
-```
+```json
 {
   "[FontSize](#cfn-medialive-channel-timecodeburninsettings-fontsize)" : {{String}},
   "[Position](#cfn-medialive-channel-timecodeburninsettings-position)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-timecodeburninsettings-syntax.yaml"></a>
 
-```
+```yaml
   [FontSize](#cfn-medialive-channel-timecodeburninsettings-fontsize): {{String}}
   [Position](#cfn-medialive-channel-timecodeburninsettings-position): {{String}}
   [Prefix](#cfn-medialive-channel-timecodeburninsettings-prefix): {{String}}

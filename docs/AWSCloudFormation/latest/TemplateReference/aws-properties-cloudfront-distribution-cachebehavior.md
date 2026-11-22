@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distribution-cachebehavior-syntax.json"></a>
 
-```
+```json
 {
   "[AllowedMethods](#cfn-cloudfront-distribution-cachebehavior-allowedmethods)" : {{[ String, ... ]}},
   "[CachedMethods](#cfn-cloudfront-distribution-cachebehavior-cachedmethods)" : {{[ String, ... ]}},
@@ -60,7 +60,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distribution-cachebehavior-syntax.yaml"></a>
 
-```
+```yaml
   [AllowedMethods](#cfn-cloudfront-distribution-cachebehavior-allowedmethods): {{
     - String}}
   [CachedMethods](#cfn-cloudfront-distribution-cachebehavior-cachedmethods): {{

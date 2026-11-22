@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-livesource-httppackageconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Path](#cfn-mediatailor-livesource-httppackageconfiguration-path)" : {{String}},
   "[SourceGroup](#cfn-mediatailor-livesource-httppackageconfiguration-sourcegroup)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-livesource-httppackageconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Path](#cfn-mediatailor-livesource-httppackageconfiguration-path): {{String}}
   [SourceGroup](#cfn-mediatailor-livesource-httppackageconfiguration-sourcegroup): {{String}}
   [Type](#cfn-mediatailor-livesource-httppackageconfiguration-type): {{String}}

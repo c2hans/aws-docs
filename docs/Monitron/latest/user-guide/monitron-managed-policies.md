@@ -13,7 +13,7 @@ You can attach AmazonMonitronFullAccess to your IAM entities. This policy grants
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

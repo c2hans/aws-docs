@@ -31,7 +31,7 @@ aws ecs put-account-setting --name containerInsights --value enhanced
 
 Example output
 
-```
+```json
 {
   "setting": {
       "name": "containerInsights",
@@ -92,7 +92,7 @@ aws ecs put-account-setting --name containerInsights --value enabled
 
 Example output
 
-```
+```json
 {
   "setting": {
       "name": "container Insights",

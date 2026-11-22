@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-space-spaceapplifecyclemanagement-syntax.json"></a>
 
-```
+```json
 {
   "[IdleSettings](#cfn-sagemaker-space-spaceapplifecyclemanagement-idlesettings)" : {{SpaceIdleSettings}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-space-spaceapplifecyclemanagement-syntax.yaml"></a>
 
-```
+```yaml
   [IdleSettings](#cfn-sagemaker-space-spaceapplifecyclemanagement-idlesettings): {{
     SpaceIdleSettings}}
 ```

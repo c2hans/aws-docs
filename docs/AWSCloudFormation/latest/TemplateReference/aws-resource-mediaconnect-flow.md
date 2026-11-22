@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-mediaconnect-flow-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MediaConnect::Flow",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-mediaconnect-flow-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MediaConnect::Flow
 Properties:
   [AvailabilityZone](#cfn-mediaconnect-flow-availabilityzone): {{String}}
@@ -207,7 +207,7 @@ This example demonstrates a flow that sets the thumbnail state to `ENABLED`. You
 #### JSON
 <a name="aws-resource-mediaconnect-flow--examples--Enabling_thumbnails--json"></a>
 
-```
+```json
 {
   "Parameters": {
     "Name": {
@@ -251,7 +251,7 @@ This example demonstrates a flow that sets the thumbnail state to `ENABLED`. You
 #### YAML
 <a name="aws-resource-mediaconnect-flow--examples--Enabling_thumbnails--yaml"></a>
 
-```
+```yaml
 Parameters:
   Name:
     Type: String
@@ -286,7 +286,7 @@ This example demonstrates a flow that sets the thumbnail state to `DISABLED`. Yo
 #### JSON
 <a name="aws-resource-mediaconnect-flow--examples--Disabling_thumbnails--json"></a>
 
-```
+```json
 {
   "Parameters": {
     "Name": {
@@ -330,7 +330,7 @@ This example demonstrates a flow that sets the thumbnail state to `DISABLED`. Yo
 #### YAML
 <a name="aws-resource-mediaconnect-flow--examples--Disabling_thumbnails--yaml"></a>
 
-```
+```yaml
 Parameters:
   Name:
     Type: String
@@ -373,7 +373,7 @@ When you update an existing flow and remove its thumbnail state (previously set 
 #### JSON
 <a name="aws-resource-mediaconnect-flow--examples--Setting_a_thumbnail_state_to_None--json"></a>
 
-```
+```json
 {
   "Parameters": {
     "Name": {
@@ -414,7 +414,7 @@ When you update an existing flow and remove its thumbnail state (previously set 
 #### YAML
 <a name="aws-resource-mediaconnect-flow--examples--Setting_a_thumbnail_state_to_None--yaml"></a>
 
-```
+```yaml
 Parameters:
   Name:
     Type: String

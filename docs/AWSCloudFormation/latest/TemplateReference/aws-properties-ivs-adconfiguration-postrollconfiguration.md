@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ivs-adconfiguration-postrollconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DurationSeconds](#cfn-ivs-adconfiguration-postrollconfiguration-durationseconds)" : {{Integer}},
   "[Enabled](#cfn-ivs-adconfiguration-postrollconfiguration-enabled)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ivs-adconfiguration-postrollconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DurationSeconds](#cfn-ivs-adconfiguration-postrollconfiguration-durationseconds): {{Integer}}
   [Enabled](#cfn-ivs-adconfiguration-postrollconfiguration-enabled): {{Boolean}}
 ```

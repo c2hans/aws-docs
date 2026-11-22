@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3outposts-endpoint-networkinterface-syntax.json"></a>
 
-```
+```json
 {
   "[NetworkInterfaceId](#cfn-s3outposts-endpoint-networkinterface-networkinterfaceid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3outposts-endpoint-networkinterface-syntax.yaml"></a>
 
-```
+```yaml
   [NetworkInterfaceId](#cfn-s3outposts-endpoint-networkinterface-networkinterfaceid): {{String}}
 ```
 

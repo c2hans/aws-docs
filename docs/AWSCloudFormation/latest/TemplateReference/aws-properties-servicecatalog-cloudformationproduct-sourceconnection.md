@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-servicecatalog-cloudformationproduct-sourceconnection-syntax.json"></a>
 
-```
+```json
 {
   "[ConnectionParameters](#cfn-servicecatalog-cloudformationproduct-sourceconnection-connectionparameters)" : {{ConnectionParameters}},
   "[Type](#cfn-servicecatalog-cloudformationproduct-sourceconnection-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-servicecatalog-cloudformationproduct-sourceconnection-syntax.yaml"></a>
 
-```
+```yaml
   [ConnectionParameters](#cfn-servicecatalog-cloudformationproduct-sourceconnection-connectionparameters): {{
     ConnectionParameters}}
   [Type](#cfn-servicecatalog-cloudformationproduct-sourceconnection-type): {{String}}

@@ -79,7 +79,7 @@ https://autoscaling.amazonaws.com/?Action=EnterStandby
 #### Sample Response
 <a name="API_EnterStandby_Example_1_Response"></a>
 
-```
+```xml
 <EnterStandbyResponse xmlns="https://autoscaling.amazonaws.com/doc/2011-01-01/">
   <EnterStandbyResult>
     <Activities>

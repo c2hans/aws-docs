@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-logs-metricfilter-metrictransformation-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultValue](#cfn-logs-metricfilter-metrictransformation-defaultvalue)" : {{Number}},
   "[Dimensions](#cfn-logs-metricfilter-metrictransformation-dimensions)" : {{[ Dimension, ... ]}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-logs-metricfilter-metrictransformation-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultValue](#cfn-logs-metricfilter-metrictransformation-defaultvalue): {{Number}}
   [Dimensions](#cfn-logs-metricfilter-metrictransformation-dimensions): {{
     - Dimension}}

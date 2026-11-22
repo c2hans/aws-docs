@@ -98,7 +98,7 @@ Updates the portal product.
 #### PATCH schema
 <a name="portalproducts-portalproductid-request-body-patch-example"></a>
 
-```
+```json
 {
   "displayName": "string",
   "displayOrder": {
@@ -125,7 +125,7 @@ Updates the portal product.
 #### GetPortalProductResponseContent schema
 <a name="portalproducts-portalproductid-response-body-getportalproductresponsecontent-example"></a>
 
-```
+```json
 {
   "displayName": "string",
   "displayOrder": {
@@ -154,7 +154,7 @@ Updates the portal product.
 #### UpdatePortalProductResponseContent schema
 <a name="portalproducts-portalproductid-response-body-updateportalproductresponsecontent-example"></a>
 
-```
+```json
 {
   "displayName": "string",
   "displayOrder": {
@@ -183,7 +183,7 @@ Updates the portal product.
 #### BadRequestExceptionResponseContent schema
 <a name="portalproducts-portalproductid-response-body-badrequestexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -192,7 +192,7 @@ Updates the portal product.
 #### AccessDeniedExceptionResponseContent schema
 <a name="portalproducts-portalproductid-response-body-accessdeniedexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -201,7 +201,7 @@ Updates the portal product.
 #### NotFoundExceptionResponseContent schema
 <a name="portalproducts-portalproductid-response-body-notfoundexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -211,7 +211,7 @@ Updates the portal product.
 #### LimitExceededExceptionResponseContent schema
 <a name="portalproducts-portalproductid-response-body-limitexceededexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

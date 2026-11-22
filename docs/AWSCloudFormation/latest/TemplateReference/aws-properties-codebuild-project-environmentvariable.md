@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codebuild-project-environmentvariable-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-codebuild-project-environmentvariable-name)" : {{String}},
   "[Type](#cfn-codebuild-project-environmentvariable-type)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codebuild-project-environmentvariable-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-codebuild-project-environmentvariable-name): {{String}}
   [Type](#cfn-codebuild-project-environmentvariable-type): {{String}}
   [Value](#cfn-codebuild-project-environmentvariable-value): {{String}}
@@ -69,7 +69,7 @@ We strongly discourage the use of `PLAINTEXT` environment variables to store sen
 #### JSON
 <a name="aws-properties-codebuild-project-environmentvariable--examples----json"></a>
 
-```
+```json
 {
   "Project": {
     "Environment": {
@@ -93,7 +93,7 @@ We strongly discourage the use of `PLAINTEXT` environment variables to store sen
 #### YAML
 <a name="aws-properties-codebuild-project-environmentvariable--examples----yaml"></a>
 
-```
+```yaml
 Project:
   Type: AWS::CodeBuild::Project
   Properties:

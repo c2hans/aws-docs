@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-arcregionswitch-plan-ekscluster-syntax.json"></a>
 
-```
+```json
 {
   "[ClusterArn](#cfn-arcregionswitch-plan-ekscluster-clusterarn)" : {{String}},
   "[CrossAccountRole](#cfn-arcregionswitch-plan-ekscluster-crossaccountrole)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-arcregionswitch-plan-ekscluster-syntax.yaml"></a>
 
-```
+```yaml
   [ClusterArn](#cfn-arcregionswitch-plan-ekscluster-clusterarn): {{String}}
   [CrossAccountRole](#cfn-arcregionswitch-plan-ekscluster-crossaccountrole): {{String}}
   [ExternalId](#cfn-arcregionswitch-plan-ekscluster-externalid): {{String}}

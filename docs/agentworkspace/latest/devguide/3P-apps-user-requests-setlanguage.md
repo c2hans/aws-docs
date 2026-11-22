@@ -8,13 +8,13 @@ Sets the language preference for the user that's currently logged in to the Conn
 
  **Signature**
 
-```
+```typescript
 setLanguage(language: Locale): Promise<SetLanguageResult>
 ```
 
  **Usage**
 
-```
+```typescript
 const result: SetLanguageResult = await settingsClient.setLanguage("en_US");
 ```
 
@@ -32,6 +32,6 @@ const result: SetLanguageResult = await settingsClient.setLanguage("en_US");
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-node-nodeinterfacemapping-syntax.json"></a>
 
-```
+```json
 {
   "[LogicalInterfaceName](#cfn-medialive-node-nodeinterfacemapping-logicalinterfacename)" : {{String}},
   "[NetworkInterfaceMode](#cfn-medialive-node-nodeinterfacemapping-networkinterfacemode)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-node-nodeinterfacemapping-syntax.yaml"></a>
 
-```
+```yaml
   [LogicalInterfaceName](#cfn-medialive-node-nodeinterfacemapping-logicalinterfacename): {{String}}
   [NetworkInterfaceMode](#cfn-medialive-node-nodeinterfacemapping-networkinterfacemode): {{String}}
   [PhysicalInterfaceName](#cfn-medialive-node-nodeinterfacemapping-physicalinterfacename): {{String}}

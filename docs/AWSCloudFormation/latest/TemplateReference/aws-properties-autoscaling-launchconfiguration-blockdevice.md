@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-autoscaling-launchconfiguration-blockdevice-syntax.json"></a>
 
-```
+```json
 {
   "[DeleteOnTermination](#cfn-autoscaling-launchconfiguration-blockdevice-deleteontermination)" : {{Boolean}},
   "[Encrypted](#cfn-autoscaling-launchconfiguration-blockdevice-encrypted)" : {{Boolean}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-autoscaling-launchconfiguration-blockdevice-syntax.yaml"></a>
 
-```
+```yaml
   [DeleteOnTermination](#cfn-autoscaling-launchconfiguration-blockdevice-deleteontermination): {{Boolean}}
   [Encrypted](#cfn-autoscaling-launchconfiguration-blockdevice-encrypted): {{Boolean}}
   [Iops](#cfn-autoscaling-launchconfiguration-blockdevice-iops): {{Integer}}

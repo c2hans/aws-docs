@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rds-deployment-deploymenttask-syntax.json"></a>
 
-```
+```json
 {
   "[TaskName](#cfn-rds-deployment-deploymenttask-taskname)" : {{String}},
   "[TaskStatus](#cfn-rds-deployment-deploymenttask-taskstatus)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rds-deployment-deploymenttask-syntax.yaml"></a>
 
-```
+```yaml
   [TaskName](#cfn-rds-deployment-deploymenttask-taskname): {{String}}
   [TaskStatus](#cfn-rds-deployment-deploymenttask-taskstatus): {{String}}
 ```

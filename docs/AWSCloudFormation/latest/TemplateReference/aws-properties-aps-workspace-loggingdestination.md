@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-aps-workspace-loggingdestination-syntax.json"></a>
 
-```
+```json
 {
   "[CloudWatchLogs](#cfn-aps-workspace-loggingdestination-cloudwatchlogs)" : {{CloudWatchLogDestination}},
   "[Filters](#cfn-aps-workspace-loggingdestination-filters)" : {{LoggingFilter}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-aps-workspace-loggingdestination-syntax.yaml"></a>
 
-```
+```yaml
   [CloudWatchLogs](#cfn-aps-workspace-loggingdestination-cloudwatchlogs): {{
     CloudWatchLogDestination}}
   [Filters](#cfn-aps-workspace-loggingdestination-filters): {{

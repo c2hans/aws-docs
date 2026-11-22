@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspacesweb-sessionlogger-s3logconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Bucket](#cfn-workspacesweb-sessionlogger-s3logconfiguration-bucket)" : {{String}},
   "[BucketOwner](#cfn-workspacesweb-sessionlogger-s3logconfiguration-bucketowner)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspacesweb-sessionlogger-s3logconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Bucket](#cfn-workspacesweb-sessionlogger-s3logconfiguration-bucket): {{String}}
   [BucketOwner](#cfn-workspacesweb-sessionlogger-s3logconfiguration-bucketowner): {{String}}
   [FolderStructure](#cfn-workspacesweb-sessionlogger-s3logconfiguration-folderstructure): {{String}}

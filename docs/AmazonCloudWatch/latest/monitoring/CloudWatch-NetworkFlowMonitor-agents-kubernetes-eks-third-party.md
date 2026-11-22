@@ -28,7 +28,7 @@ When using the Amazon EKS Console, these values can be added under Optional conf
 
 **Sample JSON:**
 
-```
+```json
 {
     "env": {
         "OPEN_METRICS": "on",
@@ -40,7 +40,7 @@ When using the Amazon EKS Console, these values can be added under Optional conf
 
 **Sample YAML:**
 
-```
+```yaml
 env:
   OPEN_METRICS: "on"
   OPEN_METRICS_ADDRESS: "0.0.0.0"

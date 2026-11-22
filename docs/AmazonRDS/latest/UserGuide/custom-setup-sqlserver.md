@@ -97,7 +97,7 @@ The following sample JSON policy grants the required permissions.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -149,7 +149,7 @@ The IAM principal requires the following additional permissions to work with cus
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -589,7 +589,7 @@ For example, the following boundary policy restricts instance profile role to ac
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

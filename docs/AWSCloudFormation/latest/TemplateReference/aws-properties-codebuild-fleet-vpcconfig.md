@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codebuild-fleet-vpcconfig-syntax.json"></a>
 
-```
+```json
 {
   "[SecurityGroupIds](#cfn-codebuild-fleet-vpcconfig-securitygroupids)" : {{[ String, ... ]}},
   "[Subnets](#cfn-codebuild-fleet-vpcconfig-subnets)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codebuild-fleet-vpcconfig-syntax.yaml"></a>
 
-```
+```yaml
   [SecurityGroupIds](#cfn-codebuild-fleet-vpcconfig-securitygroupids): {{
     - String}}
   [Subnets](#cfn-codebuild-fleet-vpcconfig-subnets): {{

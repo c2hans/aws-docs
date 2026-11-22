@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-topbottomfilter-syntax.json"></a>
 
-```
+```json
 {
   "[AggregationSortConfigurations](#cfn-quicksight-template-topbottomfilter-aggregationsortconfigurations)" : {{[ AggregationSortConfiguration, ... ]}},
   "[Column](#cfn-quicksight-template-topbottomfilter-column)" : {{ColumnIdentifier}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-topbottomfilter-syntax.yaml"></a>
 
-```
+```yaml
   [AggregationSortConfigurations](#cfn-quicksight-template-topbottomfilter-aggregationsortconfigurations): {{
     - AggregationSortConfiguration}}
   [Column](#cfn-quicksight-template-topbottomfilter-column): {{

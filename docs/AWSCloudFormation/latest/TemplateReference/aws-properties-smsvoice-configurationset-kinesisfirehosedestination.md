@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-smsvoice-configurationset-kinesisfirehosedestination-syntax.json"></a>
 
-```
+```json
 {
   "[DeliveryStreamArn](#cfn-smsvoice-configurationset-kinesisfirehosedestination-deliverystreamarn)" : {{String}},
   "[IamRoleArn](#cfn-smsvoice-configurationset-kinesisfirehosedestination-iamrolearn)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-smsvoice-configurationset-kinesisfirehosedestination-syntax.yaml"></a>
 
-```
+```yaml
   [DeliveryStreamArn](#cfn-smsvoice-configurationset-kinesisfirehosedestination-deliverystreamarn): {{String}}
   [IamRoleArn](#cfn-smsvoice-configurationset-kinesisfirehosedestination-iamrolearn): {{String}}
 ```

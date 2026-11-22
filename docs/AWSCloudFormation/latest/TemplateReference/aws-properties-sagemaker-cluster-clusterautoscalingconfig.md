@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-cluster-clusterautoscalingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AutoScalerType](#cfn-sagemaker-cluster-clusterautoscalingconfig-autoscalertype)" : {{String}},
   "[Mode](#cfn-sagemaker-cluster-clusterautoscalingconfig-mode)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-cluster-clusterautoscalingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AutoScalerType](#cfn-sagemaker-cluster-clusterautoscalingconfig-autoscalertype): {{String}}
   [Mode](#cfn-sagemaker-cluster-clusterautoscalingconfig-mode): {{String}}
 ```

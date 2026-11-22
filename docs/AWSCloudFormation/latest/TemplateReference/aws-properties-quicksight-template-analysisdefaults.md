@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-analysisdefaults-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultNewSheetConfiguration](#cfn-quicksight-template-analysisdefaults-defaultnewsheetconfiguration)" : {{DefaultNewSheetConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-analysisdefaults-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultNewSheetConfiguration](#cfn-quicksight-template-analysisdefaults-defaultnewsheetconfiguration): {{
     DefaultNewSheetConfiguration}}
 ```

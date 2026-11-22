@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-integervaluewhenunsetconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CustomValue](#cfn-quicksight-dashboard-integervaluewhenunsetconfiguration-customvalue)" : {{Number}},
   "[ValueWhenUnsetOption](#cfn-quicksight-dashboard-integervaluewhenunsetconfiguration-valuewhenunsetoption)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-integervaluewhenunsetconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CustomValue](#cfn-quicksight-dashboard-integervaluewhenunsetconfiguration-customvalue): {{Number}}
   [ValueWhenUnsetOption](#cfn-quicksight-dashboard-integervaluewhenunsetconfiguration-valuewhenunsetoption): {{String}}
 ```

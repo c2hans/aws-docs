@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lightsail-disk-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lightsail::Disk",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lightsail-disk-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lightsail::Disk
 Properties:
   [AddOns](#cfn-lightsail-disk-addons): {{

@@ -34,7 +34,7 @@ To create links between a monitoring account and a source account, you must be s
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -69,7 +69,7 @@ To create links between a monitoring account and a source account, you must be s
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -148,7 +148,7 @@ To create links between a monitoring account and a source account, you must be s
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [{
@@ -222,7 +222,7 @@ After a link has been created, to view source account information from a monitor
 + Full administrator access in the monitoring account
 + The following cross-account permissions, in addition to permissions to view the specific types of resources that you will be monitoring
 
-  ```
+  ```json
   {
      "Sid": "AllowReadOnly",
      "Effect": "Allow",

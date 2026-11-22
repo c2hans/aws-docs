@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-membership-membershipprotectedjobresultconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[OutputConfiguration](#cfn-cleanrooms-membership-membershipprotectedjobresultconfiguration-outputconfiguration)" : {{MembershipProtectedJobOutputConfiguration}},
   "[RoleArn](#cfn-cleanrooms-membership-membershipprotectedjobresultconfiguration-rolearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-membership-membershipprotectedjobresultconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [OutputConfiguration](#cfn-cleanrooms-membership-membershipprotectedjobresultconfiguration-outputconfiguration): {{
     MembershipProtectedJobOutputConfiguration}}
   [RoleArn](#cfn-cleanrooms-membership-membershipprotectedjobresultconfiguration-rolearn): {{String}}

@@ -25,6 +25,9 @@ S3 Tables replication offers the following features.
 **Read-only replicas for S3 Tables**
 S3 Tables replication creates read-only replicas of your Apache Iceberg tables across table buckets. You can query replicas independently using any Iceberg-compatible engine.
 
+**Writable tables from replicas**
+To write to a replica table, you can disassociate it from replication. The table becomes a standalone, writable table in place and keeps the data that was already replicated to it. For more information, see [Disassociating a replica table from replication](s3-tables-replication-disassociate.md).
+
 **Automatically maintained replicas**
 The S3 Tables replication service automatically maintains replica tables. Replication typically updates replicas within minutes of updates to the source. S3 Tables commits all updates in the same order as the source table to maintain consistency.
 
@@ -45,3 +48,4 @@ For more information about S3 Tables replication, see the following topics.
 + [How S3 Tables replication works](s3-tables-replication-how-replication-works.md)
 + [Setting up S3 Tables replication](s3-tables-replication-setting-up.md)
 + [Managing S3 Tables replication](s3-tables-replication-managing.md)
++ [Disassociating a replica table from replication](s3-tables-replication-disassociate.md)

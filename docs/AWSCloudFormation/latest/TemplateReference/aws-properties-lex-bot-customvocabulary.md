@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-customvocabulary-syntax.json"></a>
 
-```
+```json
 {
   "[CustomVocabularyItems](#cfn-lex-bot-customvocabulary-customvocabularyitems)" : {{[ CustomVocabularyItem, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-customvocabulary-syntax.yaml"></a>
 
-```
+```yaml
   [CustomVocabularyItems](#cfn-lex-bot-customvocabulary-customvocabularyitems): {{
     - CustomVocabularyItem}}
 ```

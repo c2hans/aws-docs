@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-defaultdatetimepickercontroloptions-syntax.json"></a>
 
-```
+```json
 {
   "[CommitMode](#cfn-quicksight-template-defaultdatetimepickercontroloptions-commitmode)" : {{String}},
   "[DisplayOptions](#cfn-quicksight-template-defaultdatetimepickercontroloptions-displayoptions)" : {{DateTimePickerControlDisplayOptions}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-defaultdatetimepickercontroloptions-syntax.yaml"></a>
 
-```
+```yaml
   [CommitMode](#cfn-quicksight-template-defaultdatetimepickercontroloptions-commitmode): {{String}}
   [DisplayOptions](#cfn-quicksight-template-defaultdatetimepickercontroloptions-displayoptions): {{
     DateTimePickerControlDisplayOptions}}

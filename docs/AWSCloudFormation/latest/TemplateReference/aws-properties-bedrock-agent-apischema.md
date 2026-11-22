@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-agent-apischema-syntax.json"></a>
 
-```
+```json
 {
   "[Payload](#cfn-bedrock-agent-apischema-payload)" : {{String}},
   "[S3](#cfn-bedrock-agent-apischema-s3)" : {{S3Identifier}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-agent-apischema-syntax.yaml"></a>
 
-```
+```yaml
   [Payload](#cfn-bedrock-agent-apischema-payload): {{String}}
   [S3](#cfn-bedrock-agent-apischema-s3): {{
     S3Identifier}}

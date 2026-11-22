@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesis-stream-streammodedetails-syntax.json"></a>
 
-```
+```json
 {
   "[StreamMode](#cfn-kinesis-stream-streammodedetails-streammode)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesis-stream-streammodedetails-syntax.yaml"></a>
 
-```
+```yaml
   [StreamMode](#cfn-kinesis-stream-streammodedetails-streammode): {{String}}
 ```
 

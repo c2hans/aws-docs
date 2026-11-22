@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecr-replicationconfiguration-replicationdestination-syntax.json"></a>
 
-```
+```json
 {
   "[Region](#cfn-ecr-replicationconfiguration-replicationdestination-region)" : {{String}},
   "[RegistryId](#cfn-ecr-replicationconfiguration-replicationdestination-registryid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecr-replicationconfiguration-replicationdestination-syntax.yaml"></a>
 
-```
+```yaml
   [Region](#cfn-ecr-replicationconfiguration-replicationdestination-region): {{String}}
   [RegistryId](#cfn-ecr-replicationconfiguration-replicationdestination-registryid): {{String}}
 ```

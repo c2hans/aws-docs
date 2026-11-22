@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-connectionfunction-keyvaluestoreassociation-syntax.json"></a>
 
-```
+```json
 {
   "[KeyValueStoreARN](#cfn-cloudfront-connectionfunction-keyvaluestoreassociation-keyvaluestorearn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-connectionfunction-keyvaluestoreassociation-syntax.yaml"></a>
 
-```
+```yaml
   [KeyValueStoreARN](#cfn-cloudfront-connectionfunction-keyvaluestoreassociation-keyvaluestorearn): {{String}}
 ```
 

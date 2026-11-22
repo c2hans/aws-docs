@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eventsv2-subscriber-transformer-syntax.json"></a>
 
-```
+```json
 {
   "[JsonataConfiguration](#cfn-eventsv2-subscriber-transformer-jsonataconfiguration)" : {{JsonataConfiguration}},
   "[Type](#cfn-eventsv2-subscriber-transformer-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eventsv2-subscriber-transformer-syntax.yaml"></a>
 
-```
+```yaml
   [JsonataConfiguration](#cfn-eventsv2-subscriber-transformer-jsonataconfiguration): {{
     JsonataConfiguration}}
   [Type](#cfn-eventsv2-subscriber-transformer-type): {{String}}

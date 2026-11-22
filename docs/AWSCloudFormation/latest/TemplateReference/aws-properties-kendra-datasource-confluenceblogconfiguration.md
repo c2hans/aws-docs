@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-confluenceblogconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BlogFieldMappings](#cfn-kendra-datasource-confluenceblogconfiguration-blogfieldmappings)" : {{[ ConfluenceBlogToIndexFieldMapping, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-confluenceblogconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BlogFieldMappings](#cfn-kendra-datasource-confluenceblogconfiguration-blogfieldmappings): {{
     - ConfluenceBlogToIndexFieldMapping}}
 ```

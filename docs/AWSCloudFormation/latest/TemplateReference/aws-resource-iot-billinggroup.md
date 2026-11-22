@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iot-billinggroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoT::BillingGroup",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iot-billinggroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoT::BillingGroup
 Properties:
   [BillingGroupName](#cfn-iot-billinggroup-billinggroupname): {{String}}

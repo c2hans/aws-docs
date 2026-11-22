@@ -87,7 +87,7 @@ The `require_secure_transport` parameter is available for Aurora MySQL versions 
 
 When the `require_secure_transport` parameter is set to `ON` for a DB cluster, a database client can connect to it if it can establish an encrypted connection. Otherwise, an error message similar to the following is returned to the client:
 
-```
+```bash
 MySQL Error 3159 (HY000): Connections using insecure transport are prohibited while --require_secure_transport=ON.
 ```
 
@@ -220,13 +220,13 @@ You can require TLS connections for specific users accounts. For example, you ca
 
 For MySQL 5.7 and 8.0:
 
-```
+```sql
 ALTER USER 'encrypted_user'@'%' REQUIRE SSL;
 ```
 
 For MySQL 5.6:
 
-```
+```sql
 GRANT USAGE ON *.* TO 'encrypted_user'@'%' REQUIRE SSL;
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-backup-backupselection-conditions-syntax.json"></a>
 
-```
+```json
 {
   "[StringEquals](#cfn-backup-backupselection-conditions-stringequals)" : {{[ ConditionParameter, ... ]}},
   "[StringLike](#cfn-backup-backupselection-conditions-stringlike)" : {{[ ConditionParameter, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-backup-backupselection-conditions-syntax.yaml"></a>
 
-```
+```yaml
   [StringEquals](#cfn-backup-backupselection-conditions-stringequals): {{
     - ConditionParameter}}
   [StringLike](#cfn-backup-backupselection-conditions-stringlike): {{

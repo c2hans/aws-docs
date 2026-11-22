@@ -43,7 +43,7 @@ If you want to configure auto scaling using the AWS CLI or one of the AWS SDKs, 
 
   If successful, this command returns the ARN of the scalable target:
 
-  ```
+  ```json
   {
       "ScalableTargetARN": "arn:aws:application-autoscaling:{{region}}:{{account-id}}:scalable-target/1234abcd56ab78cd901ef1234567890ab123"
   }
@@ -62,7 +62,7 @@ If you want to configure auto scaling using the AWS CLI or one of the AWS SDKs, 
 
   If successful, this command returns the ARN of the scalable target:
 
-  ```
+  ```json
   {
       "ScalableTargetARN": "arn:aws:application-autoscaling:{{region}}:{{account-id}}:scalable-target/1234abcd56ab78cd901ef1234567890ab123"
   }
@@ -81,7 +81,7 @@ If you want to configure auto scaling using the AWS CLI or one of the AWS SDKs, 
 
   If successful, this command returns the ARN of the scalable target:
 
-  ```
+  ```json
   {
       "ScalableTargetARN": "arn:aws:application-autoscaling:{{region}}:{{account-id}}:scalable-target/1234abcd56ab78cd901ef1234567890ab123"
   }
@@ -100,7 +100,7 @@ If you want to configure auto scaling using the AWS CLI or one of the AWS SDKs, 
 
   If successful, this command returns the ARN of the scalable target:
 
-  ```
+  ```json
   {
       "ScalableTargetARN": "arn:aws:application-autoscaling:{{region}}:{{account-id}}:scalable-target/1234abcd56ab78cd901ef1234567890ab123"
   }

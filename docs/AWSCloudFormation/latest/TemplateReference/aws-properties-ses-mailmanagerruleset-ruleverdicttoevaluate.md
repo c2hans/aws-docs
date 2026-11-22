@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-mailmanagerruleset-ruleverdicttoevaluate-syntax.json"></a>
 
-```
+```json
 {
   "[Analysis](#cfn-ses-mailmanagerruleset-ruleverdicttoevaluate-analysis)" : {{Analysis}},
   "[Attribute](#cfn-ses-mailmanagerruleset-ruleverdicttoevaluate-attribute)" : {{String}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-mailmanagerruleset-ruleverdicttoevaluate-syntax.yaml"></a>
 
-```
+```yaml
   [Analysis](#cfn-ses-mailmanagerruleset-ruleverdicttoevaluate-analysis): {{
     Analysis}}
   [Attribute](#cfn-ses-mailmanagerruleset-ruleverdicttoevaluate-attribute): {{String}}

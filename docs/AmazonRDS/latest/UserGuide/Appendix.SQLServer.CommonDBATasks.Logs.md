@@ -32,7 +32,7 @@ To view Microsoft SQL Server error and agent logs, use the Amazon RDS stored pro
 **Example**
 The following example requests the current error log.
 
-```
+```sql
 EXEC rdsadmin.dbo.rds_read_error_log @index = {{0}}, @type = {{1}};
 ```
 

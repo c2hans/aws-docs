@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskdefinition-ulimit-syntax.json"></a>
 
-```
+```json
 {
   "[HardLimit](#cfn-ecs-taskdefinition-ulimit-hardlimit)" : {{Integer}},
   "[Name](#cfn-ecs-taskdefinition-ulimit-name)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskdefinition-ulimit-syntax.yaml"></a>
 
-```
+```yaml
   [HardLimit](#cfn-ecs-taskdefinition-ulimit-hardlimit): {{Integer}}
   [Name](#cfn-ecs-taskdefinition-ulimit-name): {{String}}
   [SoftLimit](#cfn-ecs-taskdefinition-ulimit-softlimit): {{Integer}}

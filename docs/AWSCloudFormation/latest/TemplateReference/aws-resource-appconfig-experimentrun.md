@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-appconfig-experimentrun-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppConfig::ExperimentRun",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-appconfig-experimentrun-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppConfig::ExperimentRun
 Properties:
   [ApplicationIdentifier](#cfn-appconfig-experimentrun-applicationidentifier): {{String}}

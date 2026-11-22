@@ -43,7 +43,7 @@ Use the [create-license-configuration](https://docs.aws.amazon.com/cli/latest/re
 
 The following example creates a self-managed license for SQL Server Enterprise Edition.
 
-```
+```bash
 aws license-manager create-license-configuration \
     --cli-input-json file://{{rds-sqlserver-ee.json}} \
     --region {{us-west-2}}
@@ -51,7 +51,7 @@ aws license-manager create-license-configuration \
 
 The following is the sample `rds-sqlserver-ee.json` file used in the example.
 
-```
+```json
 {
     "Name": "{{rds-sqlserver-ee}}",
     "Description": "RDS SQL Server Enterprise Edition",
@@ -74,7 +74,7 @@ The following is the sample `rds-sqlserver-ee.json` file used in the example.
 
 The output is the ARN of the new license configuration.
 
-```
+```json
 {
     "LicenseConfigurationArn": "arn:aws:license-manager:us-west-2:111122223333:license-configuration:lic-0123456789abcdef0123456789abcdef"
 }
@@ -89,7 +89,7 @@ For more information about the `--cli-input` parameter, see [Generating AWS CLI 
 
 Use the [New-LICMLicenseConfiguration](https://docs.aws.amazon.com/powershell/latest/reference/items/New-LICMLicenseConfiguration.html) cmdlet to create a self-managed license for SQL Server Enterprise Edition.
 
-```
+```powershell
 New-LICMLicenseConfiguration `
     -Name {{rds-sqlserver-ee}} `
     -Description '{{RDS SQL Server Enterprise Edition}}' `

@@ -115,14 +115,14 @@ List all alarm mute rules in your account.
 #### Sample Request
 <a name="API_ListAlarmMuteRules_Example_1_Request"></a>
 
-```
+```bash
 aws cloudwatch list-alarm-mute-rules
 ```
 
 #### Sample Response
 <a name="API_ListAlarmMuteRules_Example_1_Response"></a>
 
-```
+```json
 {
     "AlarmMuteRuleSummaries": [
         {
@@ -159,7 +159,7 @@ List all mute rules that target a specific alarm.
 #### Sample Request
 <a name="API_ListAlarmMuteRules_Example_2_Request"></a>
 
-```
+```bash
 aws cloudwatch list-alarm-mute-rules \
 	--alarm-name "WebServerCPUAlarm"
 ```
@@ -167,7 +167,7 @@ aws cloudwatch list-alarm-mute-rules \
 #### Sample Response
 <a name="API_ListAlarmMuteRules_Example_2_Response"></a>
 
-```
+```json
 {
     "AlarmMuteRuleSummaries": [
         {

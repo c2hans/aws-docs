@@ -16,18 +16,21 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-inspectorv2-connector-providerconfiguration-syntax.json"></a>
 
-```
+```json
 {
-  "[Azure](#cfn-inspectorv2-connector-providerconfiguration-azure)" : {{AzureProviderConfiguration}}
+  "[Azure](#cfn-inspectorv2-connector-providerconfiguration-azure)" : {{AzureProviderConfiguration}},
+  "[Gcp](#cfn-inspectorv2-connector-providerconfiguration-gcp)" : {{GcpProviderConfiguration}}
 }
 ```
 
 ### YAML
 <a name="aws-properties-inspectorv2-connector-providerconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Azure](#cfn-inspectorv2-connector-providerconfiguration-azure): {{
     AzureProviderConfiguration}}
+  [Gcp](#cfn-inspectorv2-connector-providerconfiguration-gcp): {{
+    GcpProviderConfiguration}}
 ```
 
 ## Properties
@@ -35,6 +38,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 `Azure`  <a name="cfn-inspectorv2-connector-providerconfiguration-azure"></a>
 Property description not available.
-*Required*: Yes
+*Required*: No
 *Type*: [AzureProviderConfiguration](aws-properties-inspectorv2-connector-azureproviderconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Gcp`  <a name="cfn-inspectorv2-connector-providerconfiguration-gcp"></a>
+Property description not available.
+*Required*: No
+*Type*: [GcpProviderConfiguration](aws-properties-inspectorv2-connector-gcpproviderconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

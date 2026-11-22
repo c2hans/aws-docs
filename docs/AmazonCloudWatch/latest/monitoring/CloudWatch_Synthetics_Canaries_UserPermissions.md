@@ -13,7 +13,7 @@ To create canaries, you must be signed in as an user who has the ` CloudWatchSyn
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

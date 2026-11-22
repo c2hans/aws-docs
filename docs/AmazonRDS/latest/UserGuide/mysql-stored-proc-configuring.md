@@ -18,7 +18,7 @@ Specifies the number of hours to retain binary logs or the number of seconds to 
 ### Syntax
 <a name="mysql_rds_set_configuration-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_set_configuration({{name}},{{value}});
 ```
 
@@ -99,7 +99,7 @@ The number of hours that binary logs are retained.
 ### Syntax
 <a name="mysql_rds_show_configuration-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_show_configuration;
 ```
 
@@ -113,7 +113,7 @@ To verify the number of hours that Amazon RDS retains binary logs, use the `mysq
 
 The following example displays the retention period:
 
-```
+```sql
 call mysql.rds_show_configuration;
                 name                         value     description
                 binlog retention hours       24        binlog retention hours specifies the duration in hours before binary logs are automatically deleted.

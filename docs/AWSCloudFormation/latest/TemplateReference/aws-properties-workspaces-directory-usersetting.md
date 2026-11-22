@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspaces-directory-usersetting-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-workspaces-directory-usersetting-action)" : {{String}},
   "[MaximumLength](#cfn-workspaces-directory-usersetting-maximumlength)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspaces-directory-usersetting-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-workspaces-directory-usersetting-action): {{String}}
   [MaximumLength](#cfn-workspaces-directory-usersetting-maximumlength): {{Integer}}
   [Permission](#cfn-workspaces-directory-usersetting-permission): {{String}}

@@ -15,7 +15,7 @@ Let's start with the template.
 
 **YAML**
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:
   InstanceType:
@@ -152,7 +152,7 @@ Resources:
 
 **JSON**
 
-```
+```json
 {
   "AWSTemplateFormatVersion":"2010-09-09",
   "Parameters":{

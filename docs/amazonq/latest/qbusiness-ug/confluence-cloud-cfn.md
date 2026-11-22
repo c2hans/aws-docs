@@ -64,7 +64,7 @@ The following is the Confluence (Cloud) JSON schema and examples for the configu
 
 The following is the Confluence (Cloud) JSON schema for the configuration property for CloudFormation
 
-```
+```json
 {
   "type": "object",
   "properties": {
@@ -525,7 +525,7 @@ The following is the Confluence (Cloud) JSON schema for the configuration proper
 
 The following is the Confluence (Cloud) JSON schema example for the configuration property for CloudFormation
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "CloudFormation CONFLUENCE Data Source Template",
@@ -648,7 +648,7 @@ The following is the Confluence (Cloud) YAML schema and examples for the configu
 
 The following is the Confluence (Cloud) YAML schema for the configuration property for CloudFormation.
 
-```
+```yaml
 type: object
 properties:
   type:
@@ -969,7 +969,7 @@ required:
 
 The following is the Confluence (Cloud) YAML example for the Configuration property for CloudFormation:
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Description: CloudFormation CONFLUENCE Data Source Template
 Resources:

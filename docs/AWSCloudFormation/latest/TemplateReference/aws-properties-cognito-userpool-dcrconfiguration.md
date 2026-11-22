@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpool-dcrconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AllowedScopes](#cfn-cognito-userpool-dcrconfiguration-allowedscopes)" : {{[ String, ... ]}},
   "[AuthenticatedGrantTypes](#cfn-cognito-userpool-dcrconfiguration-authenticatedgranttypes)" : {{[ String, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpool-dcrconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AllowedScopes](#cfn-cognito-userpool-dcrconfiguration-allowedscopes): {{
     - String}}
   [AuthenticatedGrantTypes](#cfn-cognito-userpool-dcrconfiguration-authenticatedgranttypes): {{

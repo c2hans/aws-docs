@@ -22,7 +22,7 @@ Amazon S3 can publish event notifications to an Amazon Simple Notification Servi
 
 The following is an example of a message that Amazon S3 sends to publish an `s3:IntelligentTiering` event. For more information, see [Event message structure](notification-content-structure.md).
 
-```
+```json
  1. {
  2.    "Records":[
  3.       {
@@ -71,7 +71,7 @@ The following `HEAD` object request returns the metadata of an object (in this c
 
 **Example**
 
-```
+```http
 HEAD /{{my-image.jpg}} HTTP/1.1
 Host: bucket.s3.{{region}}.amazonaws.com
 Date: Wed, 28 Oct 2009 22:32:00 GMT
@@ -84,7 +84,7 @@ The following sample `HEAD` object response shows an object archived by using S3
 
 **Example**
 
-```
+```http
 HTTP/1.1 200 OK
 x-amz-id-2: FSVaTMjrmBp3Izs1NnwBZeu7M19iI8UbxMbi0A8AirHANJBo+hEftBuiESACOMJp
 x-amz-request-id: E5CEFCB143EB505A

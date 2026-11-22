@@ -160,7 +160,7 @@ Type: [VpcConfiguration](API_control_VpcConfiguration.md) data type
 
 The following request returns the access point of the specified S3 on Outposts access point.
 
-```
+```HTTP
            GET /v20180820/accesspoint/example-access-point HTTP/1.1
            Host: s3-outposts.<Region>.amazonaws.com
            Date: Wed, 28 Oct 2020 22:32:00 GMT

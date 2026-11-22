@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-datasync-locations3-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DataSync::LocationS3",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-datasync-locations3-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DataSync::LocationS3
 Properties:
   [S3BucketArn](#cfn-datasync-locations3-s3bucketarn): {{String}}
@@ -133,7 +133,7 @@ AWS Security Token Service (AWS STS) must be activated in your account and Regio
 #### JSON
 <a name="aws-resource-datasync-locations3--examples--Create_an_Amazon_S3_location_for_DataSync--json"></a>
 
-```
+```json
 {
 "AWSTemplateFormatVersion": "2010-09-09",
 "Description": "Specifies an S3 location for DataSync",
@@ -157,7 +157,7 @@ AWS Security Token Service (AWS STS) must be activated in your account and Regio
 #### YAML
 <a name="aws-resource-datasync-locations3--examples--Create_an_Amazon_S3_location_for_DataSync--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Specifies an S3 location for DataSync
 Resources:

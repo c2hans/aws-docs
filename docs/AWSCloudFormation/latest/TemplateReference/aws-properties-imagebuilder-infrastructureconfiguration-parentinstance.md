@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-infrastructureconfiguration-parentinstance-syntax.json"></a>
 
-```
+```json
 {
   "[AutoScalingGroup](#cfn-imagebuilder-infrastructureconfiguration-parentinstance-autoscalinggroup)" : {{AutoScalingGroup}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-infrastructureconfiguration-parentinstance-syntax.yaml"></a>
 
-```
+```yaml
   [AutoScalingGroup](#cfn-imagebuilder-infrastructureconfiguration-parentinstance-autoscalinggroup): {{
     AutoScalingGroup}}
 ```

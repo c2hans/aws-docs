@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lightsail-distribution-cachebehaviorperpath-syntax.json"></a>
 
-```
+```json
 {
   "[Behavior](#cfn-lightsail-distribution-cachebehaviorperpath-behavior)" : {{String}},
   "[Path](#cfn-lightsail-distribution-cachebehaviorperpath-path)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lightsail-distribution-cachebehaviorperpath-syntax.yaml"></a>
 
-```
+```yaml
   [Behavior](#cfn-lightsail-distribution-cachebehaviorperpath-behavior): {{String}}
   [Path](#cfn-lightsail-distribution-cachebehaviorperpath-path): {{String}}
 ```

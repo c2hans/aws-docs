@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-qbusiness-dataaccessor-attributefilter-syntax.json"></a>
 
-```
+```json
 {
   "[AndAllFilters](#cfn-qbusiness-dataaccessor-attributefilter-andallfilters)" : {{[ AttributeFilter, ... ]}},
   "[ContainsAll](#cfn-qbusiness-dataaccessor-attributefilter-containsall)" : {{DocumentAttribute}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-qbusiness-dataaccessor-attributefilter-syntax.yaml"></a>
 
-```
+```yaml
   [AndAllFilters](#cfn-qbusiness-dataaccessor-attributefilter-andallfilters): {{
     - AttributeFilter}}
   [ContainsAll](#cfn-qbusiness-dataaccessor-attributefilter-containsall): {{

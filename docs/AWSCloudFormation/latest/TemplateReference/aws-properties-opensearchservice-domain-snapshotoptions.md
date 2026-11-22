@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchservice-domain-snapshotoptions-syntax.json"></a>
 
-```
+```json
 {
   "[AutomatedSnapshotStartHour](#cfn-opensearchservice-domain-snapshotoptions-automatedsnapshotstarthour)" : {{Integer}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchservice-domain-snapshotoptions-syntax.yaml"></a>
 
-```
+```yaml
   [AutomatedSnapshotStartHour](#cfn-opensearchservice-domain-snapshotoptions-automatedsnapshotstarthour): {{Integer}}
 ```
 

@@ -28,7 +28,7 @@ A resource group can contain a *configuration* that defines service-specific set
 
 A configuration is expressed as a [JSON](https://www.json.org/) object. At the top-most level, a configuration is an array of [group configuration items](https://docs.aws.amazon.com/ARG/latest/APIReference/API_GroupConfigurationItem.html). Each group configuration item contains two elements: a `Type` for the configuration and a set of `Parameters` defined by that type. Each parameter contains a `Name` and an array of one or more `Values`. The following example with {{placeholders}} shows the basic syntax for a configuration for a single sample resource type. This example shows a type with two parameters, and each parameter with two values. The actual valid types, parameters, and values are discussed in the next section.
 
-```
+```json
 [
   {
     "Type": "{{configuration-type}}",

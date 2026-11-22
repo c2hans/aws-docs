@@ -31,7 +31,7 @@ The form and policy must be UTF-8 encoded. You can apply UTF-8 encoding to the f
 
 The following is an example of UTF-8 encoding in the HTML heading:
 
-```
+```xml
 1. <html>
 2.   <head>
 3.     ...
@@ -43,7 +43,7 @@ The following is an example of UTF-8 encoding in the HTML heading:
 
 The following is an example of UTF-8 encoding in a request header:
 
-```
+```http
 1. Content-Type: text/html; charset=UTF-8
 ```
 
@@ -64,7 +64,7 @@ The enclosure type (enctype) must be specified and must be set to multipart/form
 **Example**
 The following example is a form declaration for the bucket "awsexamplebucket1".
 
-```
+```xml
 1. <form action="https://awsexamplebucket1.s3.us-west-1.amazonaws.com/" method="post"
 2.
 3. enctype="multipart/form-data">
@@ -108,7 +108,7 @@ The policy is a UTF-8 and Base64-encoded JSON document that specifies conditions
 
 The following is an example of a policy document:
 
-```
+```json
  1. { "expiration": "2007-12-01T12:00:00.000Z",
  2.
  3.   "conditions": [

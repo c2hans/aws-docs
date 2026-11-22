@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-videoselectorsettings-syntax.json"></a>
 
-```
+```json
 {
   "[VideoSelectorPid](#cfn-medialive-channel-videoselectorsettings-videoselectorpid)" : {{VideoSelectorPid}},
   "[VideoSelectorProgramId](#cfn-medialive-channel-videoselectorsettings-videoselectorprogramid)" : {{VideoSelectorProgramId}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-videoselectorsettings-syntax.yaml"></a>
 
-```
+```yaml
   [VideoSelectorPid](#cfn-medialive-channel-videoselectorsettings-videoselectorpid): {{
     VideoSelectorPid}}
   [VideoSelectorProgramId](#cfn-medialive-channel-videoselectorsettings-videoselectorprogramid): {{

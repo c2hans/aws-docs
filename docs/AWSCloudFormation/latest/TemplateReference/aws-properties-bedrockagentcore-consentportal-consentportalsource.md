@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-consentportal-consentportalsource-syntax.json"></a>
 
-```
+```json
 {
   "[Identifier](#cfn-bedrockagentcore-consentportal-consentportalsource-identifier)" : {{String}},
   "[Type](#cfn-bedrockagentcore-consentportal-consentportalsource-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-consentportal-consentportalsource-syntax.yaml"></a>
 
-```
+```yaml
   [Identifier](#cfn-bedrockagentcore-consentportal-consentportalsource-identifier): {{String}}
   [Type](#cfn-bedrockagentcore-consentportal-consentportalsource-type): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-geospatialmapconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[FieldWells](#cfn-quicksight-dashboard-geospatialmapconfiguration-fieldwells)" : {{GeospatialMapFieldWells}},
   "[Interactions](#cfn-quicksight-dashboard-geospatialmapconfiguration-interactions)" : {{VisualInteractionOptions}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-geospatialmapconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [FieldWells](#cfn-quicksight-dashboard-geospatialmapconfiguration-fieldwells): {{
     GeospatialMapFieldWells}}
   [Interactions](#cfn-quicksight-dashboard-geospatialmapconfiguration-interactions): {{

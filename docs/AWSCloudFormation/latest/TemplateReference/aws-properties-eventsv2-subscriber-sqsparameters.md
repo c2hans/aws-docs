@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eventsv2-subscriber-sqsparameters-syntax.json"></a>
 
-```
+```json
 {
   "[DelaySeconds](#cfn-eventsv2-subscriber-sqsparameters-delayseconds)" : {{String}},
   "[MessageAttributes](#cfn-eventsv2-subscriber-sqsparameters-messageattributes)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eventsv2-subscriber-sqsparameters-syntax.yaml"></a>
 
-```
+```yaml
   [DelaySeconds](#cfn-eventsv2-subscriber-sqsparameters-delayseconds): {{String}}
   [MessageAttributes](#cfn-eventsv2-subscriber-sqsparameters-messageattributes): {{
     {{Key}}: {{Value}}}}

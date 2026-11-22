@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codedeploy-deploymentgroup-blueinstanceterminationoption-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-codedeploy-deploymentgroup-blueinstanceterminationoption-action)" : {{String}},
   "[TerminationWaitTimeInMinutes](#cfn-codedeploy-deploymentgroup-blueinstanceterminationoption-terminationwaittimeinminutes)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codedeploy-deploymentgroup-blueinstanceterminationoption-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-codedeploy-deploymentgroup-blueinstanceterminationoption-action): {{String}}
   [TerminationWaitTimeInMinutes](#cfn-codedeploy-deploymentgroup-blueinstanceterminationoption-terminationwaittimeinminutes): {{Integer}}
 ```

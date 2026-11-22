@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-loggingconfiguration-fieldtomatch-syntax.json"></a>
 
-```
+```json
 {
   "[Method](#cfn-wafv2-loggingconfiguration-fieldtomatch-method)" : {{Json}},
   "[QueryString](#cfn-wafv2-loggingconfiguration-fieldtomatch-querystring)" : {{Json}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-loggingconfiguration-fieldtomatch-syntax.yaml"></a>
 
-```
+```yaml
   [Method](#cfn-wafv2-loggingconfiguration-fieldtomatch-method): {{Json}}
   [QueryString](#cfn-wafv2-loggingconfiguration-fieldtomatch-querystring): {{Json}}
   [SingleHeader](#cfn-wafv2-loggingconfiguration-fieldtomatch-singleheader): {{

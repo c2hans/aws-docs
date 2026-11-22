@@ -28,7 +28,7 @@ aws application-autoscaling register-scalable-target --service-namespace {{rds}}
 **Output**
 If the command succeeds, it returns the ARN of the scalable target. The following is example output.
 
-```
+```json
 {
     "ScalableTargetARN": "arn:aws:application-autoscaling:{{region}}:{{account-id}}:scalable-target/1234abcd56ab78cd901ef1234567890ab123"
 }

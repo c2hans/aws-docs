@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pinpoint-segment-recency-syntax.json"></a>
 
-```
+```json
 {
   "[Duration](#cfn-pinpoint-segment-recency-duration)" : {{String}},
   "[RecencyType](#cfn-pinpoint-segment-recency-recencytype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pinpoint-segment-recency-syntax.yaml"></a>
 
-```
+```yaml
   [Duration](#cfn-pinpoint-segment-recency-duration): {{String}}
   [RecencyType](#cfn-pinpoint-segment-recency-recencytype): {{String}}
 ```

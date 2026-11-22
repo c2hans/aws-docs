@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-vpclatticeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AdvancedConfiguration](#cfn-ecs-service-vpclatticeconfiguration-advancedconfiguration)" : {{VpcLatticeAdvancedConfiguration}},
   "[PortName](#cfn-ecs-service-vpclatticeconfiguration-portname)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-vpclatticeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AdvancedConfiguration](#cfn-ecs-service-vpclatticeconfiguration-advancedconfiguration): {{
     VpcLatticeAdvancedConfiguration}}
   [PortName](#cfn-ecs-service-vpclatticeconfiguration-portname): {{String}}

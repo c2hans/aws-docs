@@ -16,7 +16,7 @@ The following prerequisites are required:
 ## HTML setup
 <a name="sdk-without-package-manager-streamsjs-html"></a>
 
-```
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -42,7 +42,7 @@ The following prerequisites are required:
 
 In your `app.js` file:
 
-```
+```javascript
 // Initialize the CCP
 var ccpContainer = document.getElementById("ccp-container");
 
@@ -82,7 +82,7 @@ connect.core.onInitialized(function () {
 
 If you want to host Connect first-party apps like Cases or Step-by-Step Guides alongside your CCP, include the `@amazon-connect/app-manager` package in your bundle and apply the plugin during CCP initialization:
 
-```
+```javascript
 connect.core.initCCP(ccpContainer, {
   ccpUrl: "https://your-instance.my.connect.aws/ccp-v2/",
   loginPopup: true,

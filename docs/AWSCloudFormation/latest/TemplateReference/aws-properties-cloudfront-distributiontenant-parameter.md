@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distributiontenant-parameter-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-cloudfront-distributiontenant-parameter-name)" : {{String}},
   "[Value](#cfn-cloudfront-distributiontenant-parameter-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distributiontenant-parameter-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-cloudfront-distributiontenant-parameter-name): {{String}}
   [Value](#cfn-cloudfront-distributiontenant-parameter-value): {{String}}
 ```

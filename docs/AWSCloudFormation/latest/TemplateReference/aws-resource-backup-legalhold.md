@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-backup-legalhold-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Backup::LegalHold",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-backup-legalhold-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Backup::LegalHold
 Properties:
   [Description](#cfn-backup-legalhold-description): {{String}}

@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distribution-forwardedvalues-syntax.json"></a>
 
-```
+```json
 {
   "[Cookies](#cfn-cloudfront-distribution-forwardedvalues-cookies)" : {{Cookies}},
   "[Headers](#cfn-cloudfront-distribution-forwardedvalues-headers)" : {{[ String, ... ]}},
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distribution-forwardedvalues-syntax.yaml"></a>
 
-```
+```yaml
   [Cookies](#cfn-cloudfront-distribution-forwardedvalues-cookies): {{
     Cookies}}
   [Headers](#cfn-cloudfront-distribution-forwardedvalues-headers): {{

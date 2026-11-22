@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-redshift-redshiftidcapplication-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Redshift::RedshiftIdcApplication",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-redshift-redshiftidcapplication-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Redshift::RedshiftIdcApplication
 Properties:
   [ApplicationType](#cfn-redshift-redshiftidcapplication-applicationtype): {{String}}

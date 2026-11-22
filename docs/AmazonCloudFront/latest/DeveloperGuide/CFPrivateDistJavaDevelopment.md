@@ -14,7 +14,7 @@ In the `Signature.getInstance` call, note that `SHA1withRSA` can be replaced wit
 
 **Example Java policy and signature encryption methods**  <a name="ExampleJavaPolicyAndSignatureEncryptionMethods"></a>
 
-```
+```java
 package org.example;
 
 import java.time.Instant;
@@ -46,7 +46,7 @@ public class Main {
 
 **Example Canned Policy Signing with SHA256 in Java**  <a name="ExampleJavaPolicySHA256AndSignatureEncryptionMethods"></a>
 
-```
+```java
 package org.example;
 
 import java.io.File;

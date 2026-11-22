@@ -17,7 +17,7 @@ Starting with PostgreSQL version 18, Amazon RDS for PostgreSQL will deprecate th
 
 1. Verify that you need to update. To do this, run the following command while connected to your instance.
 
-   ```
+   ```sql
    SELECT * FROM pg_available_extensions WHERE name IN ('plv8','plls','plcoffee');
    ```
 
@@ -36,7 +36,7 @@ Starting with PostgreSQL version 18, Amazon RDS for PostgreSQL will deprecate th
 
 1. Get a count of the number of PLV8 functions in your DB instance so you can validate that they are all in place after the upgrade. For example, the following SQL query returns the number of functions written in plv8, plcoffee, and plls.
 
-   ```
+   ```sql
    SELECT proname, nspname, lanname
    FROM pg_proc p, pg_language l, pg_namespace n
    WHERE p.prolang = l.oid
@@ -68,7 +68,7 @@ Starting with PostgreSQL version 18, Amazon RDS for PostgreSQL will deprecate th
 
 1. Drop the functions and extensions. The following example drops any PLV8 based objects. The cascade option ensures that any dependent are dropped.
 
-   ```
+   ```sql
    DROP EXTENSION plv8 CASCADE;
    ```
 
@@ -92,7 +92,7 @@ Starting with PostgreSQL version 18, Amazon RDS for PostgreSQL will deprecate th
 
 1. Verify that all your functions have been recreated by using the following query.
 
-   ```
+   ```sql
    SELECT * FROM pg_available_extensions WHERE name IN ('plv8','plls','plcoffee');
    ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-codestar-githubrepository-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CodeStar::GitHubRepository",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-codestar-githubrepository-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CodeStar::GitHubRepository
 Properties:
   [Code](#cfn-codestar-githubrepository-code): {{
@@ -138,7 +138,7 @@ When passing secret parameters, do not enter the value directly into the templat
 #### JSON
 <a name="aws-resource-codestar-githubrepository--examples--GitHub_Repository_Resource_Configuration--json"></a>
 
-```
+```json
 {
     "MyRepo": {
         "Type": "AWS::CodeStar::GitHubRepository",
@@ -164,7 +164,7 @@ When passing secret parameters, do not enter the value directly into the templat
 #### YAML
 <a name="aws-resource-codestar-githubrepository--examples--GitHub_Repository_Resource_Configuration--yaml"></a>
 
-```
+```yaml
 MyRepo:
   Type: AWS::CodeStar::GitHubRepository
   Properties:

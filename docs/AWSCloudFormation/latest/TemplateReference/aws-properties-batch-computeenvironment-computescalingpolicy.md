@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-computeenvironment-computescalingpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[MinScaleDownDelayMinutes](#cfn-batch-computeenvironment-computescalingpolicy-minscaledowndelayminutes)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-computeenvironment-computescalingpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [MinScaleDownDelayMinutes](#cfn-batch-computeenvironment-computescalingpolicy-minscaledowndelayminutes): {{Integer}}
 ```
 

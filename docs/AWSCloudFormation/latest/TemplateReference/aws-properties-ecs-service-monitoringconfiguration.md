@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-monitoringconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MetricConfigurations](#cfn-ecs-service-monitoringconfiguration-metricconfigurations)" : {{[ MetricConfiguration, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-monitoringconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MetricConfigurations](#cfn-ecs-service-monitoringconfiguration-metricconfigurations): {{
     - MetricConfiguration}}
 ```

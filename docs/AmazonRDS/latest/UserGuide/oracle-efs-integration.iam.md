@@ -130,7 +130,7 @@ In this step, you create a file system policy for your EFS file system.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Id": "ExamplePolicy01",

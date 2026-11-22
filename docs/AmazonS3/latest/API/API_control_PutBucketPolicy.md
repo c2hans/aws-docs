@@ -94,7 +94,7 @@ If the action is successful, the service sends back an HTTP 200 response with an
 
 The following request shows the PUT an individual policy request for the Outposts bucket `example-outpost-bucket`.
 
-```
+```HTTP
 PUT v20180820/bucket/example-outpost-bucket/policy HTTP/1.1
 Host: s3-outposts.<Region>.amazonaws.com
 Date: Tue, 04 Apr 2010 20:34:56 GMT

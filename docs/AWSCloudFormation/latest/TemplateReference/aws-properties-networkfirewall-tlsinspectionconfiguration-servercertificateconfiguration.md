@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkfirewall-tlsinspectionconfiguration-servercertificateconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CertificateAuthorityArn](#cfn-networkfirewall-tlsinspectionconfiguration-servercertificateconfiguration-certificateauthorityarn)" : {{String}},
   "[CheckCertificateRevocationStatus](#cfn-networkfirewall-tlsinspectionconfiguration-servercertificateconfiguration-checkcertificaterevocationstatus)" : {{CheckCertificateRevocationStatus}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkfirewall-tlsinspectionconfiguration-servercertificateconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CertificateAuthorityArn](#cfn-networkfirewall-tlsinspectionconfiguration-servercertificateconfiguration-certificateauthorityarn): {{String}}
   [CheckCertificateRevocationStatus](#cfn-networkfirewall-tlsinspectionconfiguration-servercertificateconfiguration-checkcertificaterevocationstatus): {{
     CheckCertificateRevocationStatus}}

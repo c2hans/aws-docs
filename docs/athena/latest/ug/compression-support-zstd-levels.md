@@ -40,7 +40,7 @@ In the [ALTER TABLE SET TBLPROPERTIES](alter-table-set-tblproperties.md) stateme
 
 The following example modifies the table `existing_table` to use Parquet file format with ZSTD compression and ZSTD compression level 4. Note that in the `TBLPROPERTIES` clause the compression level value must be entered as a string rather an integer and therefore must be enclosed in either single or double quotes.
 
-```
+```sql
 ALTER TABLE existing_table
 SET TBLPROPERTIES ('parquet.compression' = 'ZSTD', 'compression_level' = '4')
 ```
@@ -55,7 +55,7 @@ In the [CREATE TABLE](create-table.md) statement `TBLPROPERTIES` clause, specify
 
 The following example creates a table in Parquet file format using ZSTD compression and ZSTD compression level 4.
 
-```
+```sql
 CREATE EXTERNAL TABLE new_table (
   `col0` string COMMENT '',
   `col1` string COMMENT ''
@@ -75,7 +75,7 @@ In the [CREATE TABLE AS](create-table-as.md) statement `WITH` clause, specify `w
 
 The following CTAS example specifies Parquet as the file format using ZSTD compression with compression level 4. Note that, in the `WITH` clause, the value for compression level must be specified as an integer, not as a string.
 
-```
+```sql
 CREATE TABLE new_table
 WITH ( format = 'PARQUET', write_compression = 'ZSTD', compression_level = 4)
 AS SELECT * FROM old_table
@@ -91,7 +91,7 @@ In the [UNLOAD](unload.md) statement `WITH` clause, specify `compression = 'ZSTD
 
 The following example unloads the query results to the specified location using the Parquet file format, ZSTD compression, and ZSTD compression level 4.
 
-```
+```sql
 UNLOAD (SELECT * FROM old_table)
 TO 's3://amzn-s3-demo-bucket/'
 WITH (format = 'PARQUET', compression = 'ZSTD', compression_level = 4)

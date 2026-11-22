@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-pinpoint-apnschannel-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Pinpoint::APNSChannel",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-pinpoint-apnschannel-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Pinpoint::APNSChannel
 Properties:
   [ApplicationId](#cfn-pinpoint-apnschannel-applicationid): {{String}}

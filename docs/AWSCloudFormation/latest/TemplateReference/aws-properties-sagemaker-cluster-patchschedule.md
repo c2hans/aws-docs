@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-cluster-patchschedule-syntax.json"></a>
 
-```
+```json
 {
   "[NextPatchDate](#cfn-sagemaker-cluster-patchschedule-nextpatchdate)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-cluster-patchschedule-syntax.yaml"></a>
 
-```
+```yaml
   [NextPatchDate](#cfn-sagemaker-cluster-patchschedule-nextpatchdate): {{String}}
 ```
 

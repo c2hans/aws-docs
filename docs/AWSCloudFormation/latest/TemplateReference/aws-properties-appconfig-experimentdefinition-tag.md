@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appconfig-experimentdefinition-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-appconfig-experimentdefinition-tag-key)" : {{String}},
   "[Value](#cfn-appconfig-experimentdefinition-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appconfig-experimentdefinition-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-appconfig-experimentdefinition-tag-key): {{String}}
   [Value](#cfn-appconfig-experimentdefinition-tag-value): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-verifiedaccessinstance-cloudwatchlogs-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-ec2-verifiedaccessinstance-cloudwatchlogs-enabled)" : {{Boolean}},
   "[LogGroup](#cfn-ec2-verifiedaccessinstance-cloudwatchlogs-loggroup)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-verifiedaccessinstance-cloudwatchlogs-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-ec2-verifiedaccessinstance-cloudwatchlogs-enabled): {{Boolean}}
   [LogGroup](#cfn-ec2-verifiedaccessinstance-cloudwatchlogs-loggroup): {{String}}
 ```

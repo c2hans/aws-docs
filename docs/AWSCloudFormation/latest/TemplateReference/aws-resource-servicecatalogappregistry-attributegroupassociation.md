@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-servicecatalogappregistry-attributegroupassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ServiceCatalogAppRegistry::AttributeGroupAssociation",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-servicecatalogappregistry-attributegroupassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ServiceCatalogAppRegistry::AttributeGroupAssociation
 Properties:
   [Application](#cfn-servicecatalogappregistry-attributegroupassociation-application): {{String}}

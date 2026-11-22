@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amplifyuibuilder-form-fieldconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Excluded](#cfn-amplifyuibuilder-form-fieldconfig-excluded)" : {{Boolean}},
   "[InputType](#cfn-amplifyuibuilder-form-fieldconfig-inputtype)" : {{FieldInputConfig}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amplifyuibuilder-form-fieldconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Excluded](#cfn-amplifyuibuilder-form-fieldconfig-excluded): {{Boolean}}
   [InputType](#cfn-amplifyuibuilder-form-fieldconfig-inputtype): {{
     FieldInputConfig}}

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-ec2fleet-baselineperformancefactorsrequest-syntax.json"></a>
 
-```
+```json
 {
   "[Cpu](#cfn-ec2-ec2fleet-baselineperformancefactorsrequest-cpu)" : {{CpuPerformanceFactorRequest}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-ec2fleet-baselineperformancefactorsrequest-syntax.yaml"></a>
 
-```
+```yaml
   [Cpu](#cfn-ec2-ec2fleet-baselineperformancefactorsrequest-cpu): {{
     CpuPerformanceFactorRequest}}
 ```

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-elasticloadbalancingv2-listenerrule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ElasticLoadBalancingV2::ListenerRule",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-elasticloadbalancingv2-listenerrule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ElasticLoadBalancingV2::ListenerRule
 Properties:
   [Actions](#cfn-elasticloadbalancingv2-listenerrule-actions): {{
@@ -138,7 +138,7 @@ The following example creates a rule with a `forward` action and a `host-header`
 #### YAML
 <a name="aws-resource-elasticloadbalancingv2-listenerrule--examples--Forward_action_with_a_host-header_condition--yaml"></a>
 
-```
+```yaml
 myForwardListenerRule:
    Type: 'AWS::ElasticLoadBalancingV2::ListenerRule'
    Properties:
@@ -157,7 +157,7 @@ myForwardListenerRule:
 #### JSON
 <a name="aws-resource-elasticloadbalancingv2-listenerrule--examples--Forward_action_with_a_host-header_condition--json"></a>
 
-```
+```json
 {
     "myForwardListenerRule": {
         "Type": "AWS::ElasticLoadBalancingV2::ListenerRule",
@@ -196,7 +196,7 @@ The following example creates a rule with a `fixed-response` action and a `sourc
 #### YAML
 <a name="aws-resource-elasticloadbalancingv2-listenerrule--examples--Fixed-response_action_with_a_source-ip_condition--yaml"></a>
 
-```
+```yaml
 myFixedResponseListenerRule:
    Type: 'AWS::ElasticLoadBalancingV2::ListenerRule'
    Properties:
@@ -219,7 +219,7 @@ myFixedResponseListenerRule:
 #### JSON
 <a name="aws-resource-elasticloadbalancingv2-listenerrule--examples--Fixed-response_action_with_a_source-ip_condition--json"></a>
 
-```
+```json
 {
     "myFixedResponseListenerRule": {
         "Type": "AWS::ElasticLoadBalancingV2::ListenerRule",
@@ -262,7 +262,7 @@ The following example creates a rule with a `redirect` action and an `http-heade
 #### YAML
 <a name="aws-resource-elasticloadbalancingv2-listenerrule--examples--Redirect_action_with_an_http-header_condition--yaml"></a>
 
-```
+```yaml
 myRedirectListenerRule:
    Type: 'AWS::ElasticLoadBalancingV2::ListenerRule'
    Properties:
@@ -286,7 +286,7 @@ myRedirectListenerRule:
 #### JSON
 <a name="aws-resource-elasticloadbalancingv2-listenerrule--examples--Redirect_action_with_an_http-header_condition--json"></a>
 
-```
+```json
 {
     "myRedirectListenerRule": {
         "Type": "AWS::ElasticLoadBalancingV2::ListenerRule",

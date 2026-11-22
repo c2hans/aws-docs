@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distribution-cachetagconfig-syntax.json"></a>
 
-```
+```json
 {
   "[HeaderName](#cfn-cloudfront-distribution-cachetagconfig-headername)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distribution-cachetagconfig-syntax.yaml"></a>
 
-```
+```yaml
   [HeaderName](#cfn-cloudfront-distribution-cachetagconfig-headername): {{String}}
 ```
 

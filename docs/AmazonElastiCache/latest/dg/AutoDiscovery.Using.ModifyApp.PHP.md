@@ -8,7 +8,7 @@ The program below demonstrates how to use the ElastiCache Cluster Client to conn
 
 To use the ElastiCache Cluster Client for PHP, you will first need to install it on your Amazon EC2 instance. For more information, see [Installing the ElastiCache cluster client for PHP](Appendix.PHPAutoDiscoverySetup.md)
 
-```
+```php
 <?php
 
  /**

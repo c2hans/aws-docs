@@ -47,7 +47,7 @@ Before failover to the secondary Region, make sure that all required resources a
 
 In the following example, the standby Region receives a CloudWatch metric and initiates failover. We use a custom metric that requires operator intervention to initiate failover.
 
-```
+```shell
 aws cloudwatch put-metric-data \
     --metric-name Failover \
     --namespace HealthCheck \
@@ -74,7 +74,7 @@ curl {{https://my-api.example.com}}
 
 To return to the primary Region, send a CloudWatch metric that causes the health check to pass.
 
-```
+```shell
 aws cloudwatch put-metric-data \
     --metric-name Failover \
     --namespace HealthCheck \

@@ -39,7 +39,7 @@ To use the following example command, replace the `{{user input placeholders}}` 
 
 1. Use the following command to view the metadata table configuration for your general purpose bucket (for example, `{{amzn-s3-demo-bucket}}`):
 
-   ```
+   ```bash
    aws s3api get-bucket-metadata-configuration \
    --bucket {{amzn-s3-demo-bucket}} \
    --region {{us-east-2}}
@@ -47,7 +47,7 @@ To use the following example command, replace the `{{user input placeholders}}` 
 
 1. View the output of this command to see the status of your metadata table configuration. For example:
 
-   ```
+   ```xml
    {
        "GetBucketMetadataConfigurationResult": {
            "MetadataConfigurationResult": {

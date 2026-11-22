@@ -27,7 +27,7 @@ When using the AWS CLI, AWS SDKs, and Iceberg clients, you can use a parameter o
 
 You can enable dual-stack endpoint resolution in SDKs or clients by setting the dual-stack flag using the following command:
 
-```
+```java
 S3TablesClient client = S3TablesClient.builder()
     .region(Region.US_EAST_1)
     .dualstackEnabled(true)

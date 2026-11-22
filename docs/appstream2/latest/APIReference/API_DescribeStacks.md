@@ -108,7 +108,11 @@ Required: No
                "MaximumLength": number,
                "Permission": "string"
             }
-         ]
+         ],
+         "WebAuthnRedirection": {
+            "Enabled": boolean,
+            "ProcessCompatibilityList": [ "string" ]
+         }
       }
    ]
 }

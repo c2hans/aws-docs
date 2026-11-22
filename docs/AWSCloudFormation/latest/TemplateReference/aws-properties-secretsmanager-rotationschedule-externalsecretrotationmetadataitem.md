@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-secretsmanager-rotationschedule-externalsecretrotationmetadataitem-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-secretsmanager-rotationschedule-externalsecretrotationmetadataitem-key)" : {{String}},
   "[Value](#cfn-secretsmanager-rotationschedule-externalsecretrotationmetadataitem-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-secretsmanager-rotationschedule-externalsecretrotationmetadataitem-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-secretsmanager-rotationschedule-externalsecretrotationmetadataitem-key): {{String}}
   [Value](#cfn-secretsmanager-rotationschedule-externalsecretrotationmetadataitem-value): {{String}}
 ```

@@ -16,7 +16,7 @@ deleteAttachedFile(data: Attachment): Promise<void>
 
  **Usage**
 
-```
+```typescript
 await fileClient.deleteAttachedFile({
   associatedResourceArn: sampleAssociatedResourceArn, // Get this from the response from `startAttachedFileUpload`
   fileId: sampleFileId // Get this from the response from `startAttachedFileUpload`

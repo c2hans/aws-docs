@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackagev2-originendpoint-encryptionmethod-syntax.json"></a>
 
-```
+```json
 {
   "[CmafEncryptionMethod](#cfn-mediapackagev2-originendpoint-encryptionmethod-cmafencryptionmethod)" : {{String}},
   "[IsmEncryptionMethod](#cfn-mediapackagev2-originendpoint-encryptionmethod-ismencryptionmethod)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackagev2-originendpoint-encryptionmethod-syntax.yaml"></a>
 
-```
+```yaml
   [CmafEncryptionMethod](#cfn-mediapackagev2-originendpoint-encryptionmethod-cmafencryptionmethod): {{String}}
   [IsmEncryptionMethod](#cfn-mediapackagev2-originendpoint-encryptionmethod-ismencryptionmethod): {{String}}
   [TsEncryptionMethod](#cfn-mediapackagev2-originendpoint-encryptionmethod-tsencryptionmethod): {{String}}

@@ -199,7 +199,7 @@ aws autoscaling describe-launch-configurations --launch-configuration-names {{my
 
 The following is an example response.
 
-```
+```json
 {
     "LaunchConfigurations": [
         {
@@ -246,7 +246,7 @@ aws autoscaling describe-launch-configurations --launch-configuration-names {{my
 
 The following example response describes the launch configuration.
 
-```
+```json
 {
     "LaunchConfigurations": [
         {
@@ -306,7 +306,7 @@ aws autoscaling describe-launch-configurations --launch-configuration-names {{my
 
 The following example response describes the launch configuration.
 
-```
+```json
 {
     "LaunchConfigurations": [
         {

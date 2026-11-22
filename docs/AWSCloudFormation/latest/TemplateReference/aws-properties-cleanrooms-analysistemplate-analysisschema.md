@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-analysistemplate-analysisschema-syntax.json"></a>
 
-```
+```json
 {
   "[ReferencedTables](#cfn-cleanrooms-analysistemplate-analysisschema-referencedtables)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-analysistemplate-analysisschema-syntax.yaml"></a>
 
-```
+```yaml
   [ReferencedTables](#cfn-cleanrooms-analysistemplate-analysisschema-referencedtables): {{
     - String}}
 ```

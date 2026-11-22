@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-databrew-job-entitydetectorconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AllowedStatistics](#cfn-databrew-job-entitydetectorconfiguration-allowedstatistics)" : {{AllowedStatistics}},
   "[EntityTypes](#cfn-databrew-job-entitydetectorconfiguration-entitytypes)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-databrew-job-entitydetectorconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AllowedStatistics](#cfn-databrew-job-entitydetectorconfiguration-allowedstatistics): {{
     AllowedStatistics}}
   [EntityTypes](#cfn-databrew-job-entitydetectorconfiguration-entitytypes): {{

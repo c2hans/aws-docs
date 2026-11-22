@@ -117,7 +117,7 @@ To add your website content before deploying this solution, you must package the
 
 1. Run the following command to install and package the solution’s artifacts:
 
-   ```
+   ```sh
    make package-static
    ```
 
@@ -125,13 +125,13 @@ To add your website content before deploying this solution, you must package the
 
 1. Run the following AWS CLI command to create an Amazon S3 bucket to store the solution’s artifacts. Replace {{amzn-s3-demo-bucket-for-artifacts}} with your own bucket name.
 
-   ```
+   ```sh
    aws s3 mb s3://{{amzn-s3-demo-bucket-for-artifacts}} --region us-east-1
    ```
 
 1. Run the following AWS CLI command to package the solution’s artifacts as a CloudFormation template. Replace {{amzn-s3-demo-bucket-for-artifacts}} with the name of the bucket that you created in the previous step.
 
-   ```
+   ```sh
    aws cloudformation package \
        --region us-east-1 \
        --template-file templates/main.yaml \

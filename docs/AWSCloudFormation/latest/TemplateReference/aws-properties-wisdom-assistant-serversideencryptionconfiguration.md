@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-assistant-serversideencryptionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[KmsKeyId](#cfn-wisdom-assistant-serversideencryptionconfiguration-kmskeyid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-assistant-serversideencryptionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [KmsKeyId](#cfn-wisdom-assistant-serversideencryptionconfiguration-kmskeyid): {{String}}
 ```
 

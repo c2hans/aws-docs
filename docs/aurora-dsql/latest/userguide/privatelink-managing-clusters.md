@@ -36,7 +36,7 @@ You can use the AWS Command Line Interface or AWS Software Development Kits (SDK
 
 To create an Amazon VPC interface endpoint, see [Create an Amazon VPC endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html#create-interface-endpoint-aws) in the AWS PrivateLink Guide.
 
-```
+```dsl
 aws ec2 create-vpc-endpoint \
 --region {{region}} \
 --service-name com.amazonaws.{{region}}.dsql \
@@ -55,7 +55,7 @@ If private DNS is not enabled, use the `--region` and `--endpoint-url` parameter
 
 In the following example, replace the AWS Region `us-east-1` and the DNS name of the Amazon VPC endpoint ID `vpce-1a2b3c4d-5e6f.dsql.us-east-1.vpce.amazonaws.com` with your own information.
 
-```
+```bash
 aws dsql --region {{us-east-1}} --endpoint-url https://{{vpce-1a2b3c4d-5e6f.dsql.us-east-1.vpce.amazonaws.com}} list-clusters
 ```
 
@@ -73,7 +73,7 @@ By thoroughly testing and configuring the Amazon VPC endpoint policies, you can 
 
 The following policy grants full access to all Aurora DSQL actions and resources through the specified Amazon VPC endpoint.
 
-```
+```bash,sh,zsh
 aws ec2 modify-vpc-endpoint \
     --vpc-endpoint-id vpce-xxxxxxxxxxxxxxxxx \
     --region region \
@@ -104,7 +104,7 @@ All other Aurora DSQL actions are denied.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -139,7 +139,7 @@ When creating an AWS PrivateLink endpoint for connecting to your cluster, you fi
 ------
 #### [ AWS CLI ]
 
-```
+```bash,sh,zsh
 aws dsql get-vpc-endpoint-service-name \
 --region us-east-1 \
 --identifier {{your-cluster-id }}
@@ -158,7 +158,7 @@ The service name includes an identifier, such as `dsql-fnh4` in the example. Thi
 ------
 #### [ AWS SDK for Python (Boto3) ]
 
-```
+```python
 import boto3
 
 dsql_client = boto3.client('dsql', region_name='us-east-1')
@@ -172,7 +172,7 @@ print(f"Service Name: {service_name}")
 ------
 #### [ AWS SDK for Java 2.x ]
 
-```
+```Java 2.x
 import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dsql.DsqlClient;
@@ -210,7 +210,7 @@ The connection instructions below only work for connecting to clusters when priv
 ------
 #### [ AWS CLI ]
 
-```
+```AWS CLI
 aws ec2 create-vpc-endpoint \
     --region us-east-1 \
     --service-name {{service-name-for-your-cluster}} \
@@ -261,7 +261,7 @@ aws ec2 create-vpc-endpoint \
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```python
 import boto3
 
 ec2_client = boto3.client('ec2', region_name='us-east-1')
@@ -287,7 +287,7 @@ print(f"VPC Endpoint created with ID: {vpc_endpoint_id}")
 
 Use an endpoint URL for Aurora DSQL APIs
 
-```
+```Java 2.x
 import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.ec2.Ec2Client;
@@ -359,7 +359,7 @@ Use the following format: `{{cluster-id}}.{{service-identifier}}.{{region}}.on.a
 
 **Example: Connection Using PostgreSQL**
 
-```
+```bash,sh,zsh
 # Set environment variables
 export CLUSTERID={{your-cluster-id}}
 export REGION=us-east-1
@@ -387,7 +387,7 @@ When connecting with your AWS PrivateLink endpoint's fully-qualified domain name
 
 **Example: Specifying the cluster ID connection option using PostgreSQL**
 
-```
+```bash,sh,zsh
 # Set environment variables
 export CLUSTERID={{your-cluster-id}}
 export REGION=us-east-1

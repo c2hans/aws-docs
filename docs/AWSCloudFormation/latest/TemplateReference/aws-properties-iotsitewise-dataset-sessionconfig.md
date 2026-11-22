@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotsitewise-dataset-sessionconfig-syntax.json"></a>
 
-```
+```json
 {
   "[SessionEndTime](#cfn-iotsitewise-dataset-sessionconfig-sessionendtime)" : {{String}},
   "[SessionStartTime](#cfn-iotsitewise-dataset-sessionconfig-sessionstarttime)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotsitewise-dataset-sessionconfig-syntax.yaml"></a>
 
-```
+```yaml
   [SessionEndTime](#cfn-iotsitewise-dataset-sessionconfig-sessionendtime): {{String}}
   [SessionStartTime](#cfn-iotsitewise-dataset-sessionconfig-sessionstarttime): {{String}}
 ```

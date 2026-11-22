@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-datasource-starburstparameters-syntax.json"></a>
 
-```
+```json
 {
   "[AuthenticationType](#cfn-quicksight-datasource-starburstparameters-authenticationtype)" : {{String}},
   "[Catalog](#cfn-quicksight-datasource-starburstparameters-catalog)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-datasource-starburstparameters-syntax.yaml"></a>
 
-```
+```yaml
   [AuthenticationType](#cfn-quicksight-datasource-starburstparameters-authenticationtype): {{String}}
   [Catalog](#cfn-quicksight-datasource-starburstparameters-catalog): {{String}}
   [DatabaseAccessControlRole](#cfn-quicksight-datasource-starburstparameters-databaseaccesscontrolrole): {{String}}

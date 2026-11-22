@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-vpcendpointservice-privatednsnameconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-ec2-vpcendpointservice-privatednsnameconfiguration-name)" : {{String}},
   "[State](#cfn-ec2-vpcendpointservice-privatednsnameconfiguration-state)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-vpcendpointservice-privatednsnameconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-ec2-vpcendpointservice-privatednsnameconfiguration-name): {{String}}
   [State](#cfn-ec2-vpcendpointservice-privatednsnameconfiguration-state): {{String}}
   [Type](#cfn-ec2-vpcendpointservice-privatednsnameconfiguration-type): {{String}}

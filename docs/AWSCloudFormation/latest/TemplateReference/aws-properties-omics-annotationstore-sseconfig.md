@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-omics-annotationstore-sseconfig-syntax.json"></a>
 
-```
+```json
 {
   "[KeyArn](#cfn-omics-annotationstore-sseconfig-keyarn)" : {{String}},
   "[Type](#cfn-omics-annotationstore-sseconfig-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-omics-annotationstore-sseconfig-syntax.yaml"></a>
 
-```
+```yaml
   [KeyArn](#cfn-omics-annotationstore-sseconfig-keyarn): {{String}}
   [Type](#cfn-omics-annotationstore-sseconfig-type): {{String}}
 ```

@@ -75,7 +75,7 @@ Creates an `Authorizer` for an API.
 #### POST schema
 <a name="apis-apiid-authorizers-request-body-post-example"></a>
 
-```
+```json
 {
   "name": "string",
   "authorizerType": enum,
@@ -103,7 +103,7 @@ Creates an `Authorizer` for an API.
 #### Authorizers schema
 <a name="apis-apiid-authorizers-response-body-authorizers-example"></a>
 
-```
+```json
 {
   "items": [
     {
@@ -134,7 +134,7 @@ Creates an `Authorizer` for an API.
 #### Authorizer schema
 <a name="apis-apiid-authorizers-response-body-authorizer-example"></a>
 
-```
+```json
 {
   "authorizerId": "string",
   "name": "string",
@@ -160,7 +160,7 @@ Creates an `Authorizer` for an API.
 #### BadRequestException schema
 <a name="apis-apiid-authorizers-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -169,7 +169,7 @@ Creates an `Authorizer` for an API.
 #### NotFoundException schema
 <a name="apis-apiid-authorizers-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -179,7 +179,7 @@ Creates an `Authorizer` for an API.
 #### ConflictException schema
 <a name="apis-apiid-authorizers-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -188,7 +188,7 @@ Creates an `Authorizer` for an API.
 #### LimitExceededException schema
 <a name="apis-apiid-authorizers-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

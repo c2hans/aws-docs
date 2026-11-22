@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-appflow-connector-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppFlow::Connector",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-appflow-connector-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppFlow::Connector
 Properties:
   [ConnectorLabel](#cfn-appflow-connector-connectorlabel): {{String}}

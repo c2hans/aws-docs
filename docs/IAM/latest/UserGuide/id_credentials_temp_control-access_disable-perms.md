@@ -58,7 +58,7 @@ These permissions are the same as those in the AWS managed policy [AWSDenyAll](h
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -121,7 +121,7 @@ You can use condition context key [aws:PrincipalArn](reference_policies_conditio
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -161,7 +161,7 @@ The following policy shows an example of how you can deny access to temporary se
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -202,7 +202,7 @@ The caller-specified role session name, which is part of the unique identifier f
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -241,7 +241,7 @@ When you use the `aws:PrincipalARN` context key, specify the ARN of the IAM user
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {
@@ -271,7 +271,7 @@ When you use the `aws:SourceIdentity` context key, specify the source identity v
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {

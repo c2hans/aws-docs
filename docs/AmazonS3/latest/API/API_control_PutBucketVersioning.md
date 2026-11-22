@@ -101,7 +101,7 @@ If the action is successful, the service sends back an HTTP 200 response with an
 
 This request sets the versioning state on an S3 on Outposts bucket that's named `example-outpost-bucket`.
 
-```
+```HTTP
             PUT /v20180820/bucket/example-outpost-bucket/?versioning HTTP/1.1
             Host:s3-outposts.region-code.amazonaws.com
             x-amz-account-id: example-account-id

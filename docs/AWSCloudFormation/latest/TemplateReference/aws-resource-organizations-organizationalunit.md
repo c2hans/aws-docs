@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-organizations-organizationalunit-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Organizations::OrganizationalUnit",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-organizations-organizationalunit-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Organizations::OrganizationalUnit
 Properties:
   [Name](#cfn-organizations-organizationalunit-name): {{String}}
@@ -124,7 +124,7 @@ This example illustrates how to specify an OU using `AWS::Organizations::Organiz
 #### JSON
 <a name="aws-resource-organizations-organizationalunit--examples--Specify_an_OU_under_the_root--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "AWS CloudFormation Organizations Template Example",
@@ -150,7 +150,7 @@ This example illustrates how to specify an OU using `AWS::Organizations::Organiz
 #### YAML
 <a name="aws-resource-organizations-organizationalunit--examples--Specify_an_OU_under_the_root--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: AWS CloudFormation Organizations Template Example
 Parameters:
@@ -172,7 +172,7 @@ This example illustrates how to specify a nested OU using `AWS::Organizations::O
 #### JSON
 <a name="aws-resource-organizations-organizationalunit--examples--Specify_an_OU_under_a_parent_OU--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "AWS CloudFormation Nested OU Template Example",
@@ -207,7 +207,7 @@ This example illustrates how to specify a nested OU using `AWS::Organizations::O
 #### YAML
 <a name="aws-resource-organizations-organizationalunit--examples--Specify_an_OU_under_a_parent_OU--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: AWS CloudFormation Nested OU Template Example
 Parameters:

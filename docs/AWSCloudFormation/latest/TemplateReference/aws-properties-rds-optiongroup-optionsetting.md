@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rds-optiongroup-optionsetting-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-rds-optiongroup-optionsetting-name)" : {{String}},
   "[Value](#cfn-rds-optiongroup-optionsetting-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rds-optiongroup-optionsetting-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-rds-optiongroup-optionsetting-name): {{String}}
   [Value](#cfn-rds-optiongroup-optionsetting-value): {{String}}
 ```
@@ -57,7 +57,7 @@ The following example creates an option group for the Oracle Enterprise Edition 
 #### JSON
 <a name="aws-properties-rds-optiongroup-optionsetting--examples--Enable_ingress_to_a_DB_security_group--json"></a>
 
-```
+```json
 {
   "Resources": {
     "MyOptionGroup": {
@@ -101,7 +101,7 @@ The following example creates an option group for the Oracle Enterprise Edition 
 #### YAML
 <a name="aws-properties-rds-optiongroup-optionsetting--examples--Enable_ingress_to_a_DB_security_group--yaml"></a>
 
-```
+```yaml
 Resources:
   MyOptionGroup:
     Type: AWS::RDS::OptionGroup

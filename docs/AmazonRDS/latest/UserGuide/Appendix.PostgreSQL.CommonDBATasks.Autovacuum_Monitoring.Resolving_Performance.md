@@ -77,7 +77,7 @@ This approach ensures that the adjusted memory allocation is applied to new auto
 
 For more immediate results, consider manually performing a `VACUUM FREEZE` operation with an increased `maintenance_work_mem` setting within your session:
 
-```
+```sql
 SET maintenance_work_mem TO '1GB';
 VACUUM FREEZE VERBOSE {{table_name}};
 ```
@@ -144,7 +144,7 @@ For more information about aggressive vacuum, see [When an aggressive vacuum is 
 
 You can verify if an aggressive vacuum is in progress with the following query:
 
-```
+```sql
 SELECT
     a.xact_start AS start_time,
     v.datname "database",
@@ -180,7 +180,7 @@ FROM
 
 You can determine if it's an aggressive vacuum (to prevent wraparound) by checking the query column in the output. The phrase "to prevent wraparound" indicates that it is an aggressive vacuum.
 
-```
+```sql
 query                  | autovacuum: VACUUM public.t3 (to prevent wraparound)
 ```
 

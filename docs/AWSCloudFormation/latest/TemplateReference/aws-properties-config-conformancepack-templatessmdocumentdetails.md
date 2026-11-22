@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-config-conformancepack-templatessmdocumentdetails-syntax.json"></a>
 
-```
+```json
 {
   "[DocumentName](#cfn-config-conformancepack-templatessmdocumentdetails-documentname)" : {{String}},
   "[DocumentVersion](#cfn-config-conformancepack-templatessmdocumentdetails-documentversion)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-config-conformancepack-templatessmdocumentdetails-syntax.yaml"></a>
 
-```
+```yaml
   [DocumentName](#cfn-config-conformancepack-templatessmdocumentdetails-documentname): {{String}}
   [DocumentVersion](#cfn-config-conformancepack-templatessmdocumentdetails-documentversion): {{String}}
 ```

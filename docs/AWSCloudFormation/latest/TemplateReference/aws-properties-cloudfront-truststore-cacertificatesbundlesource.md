@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-truststore-cacertificatesbundlesource-syntax.json"></a>
 
-```
+```json
 {
   "[CaCertificatesBundleS3Location](#cfn-cloudfront-truststore-cacertificatesbundlesource-cacertificatesbundles3location)" : {{CaCertificatesBundleS3Location}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-truststore-cacertificatesbundlesource-syntax.yaml"></a>
 
-```
+```yaml
   [CaCertificatesBundleS3Location](#cfn-cloudfront-truststore-cacertificatesbundlesource-cacertificatesbundles3location): {{
     CaCertificatesBundleS3Location}}
 ```

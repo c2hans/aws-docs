@@ -8,7 +8,7 @@ Create a KeyValueStore to store revoked certificate serial numbers that your Con
 
 First, prepare your revoked certificate serial numbers in JSON format:
 
-```
+```json
 {
   "data": [
     {

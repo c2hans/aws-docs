@@ -8,7 +8,7 @@ Registers an interceptor for the clear contact action, which runs when the user 
 
 **Signature**
 
-```
+```typescript
 addClearContactInterceptor(
   interceptor: Interceptor<ContactInterceptorContext>,
   options?: RegisterInterceptorOptions
@@ -23,7 +23,7 @@ addClearContactInterceptor(
 
 **Usage**
 
-```
+```typescript
 // Require a disposition code before clearing the contact
 await service.addClearContactInterceptor(async (context) => {
   const done = await collectDisposition(context.contactId);

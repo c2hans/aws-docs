@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-spotfleet-spotfleettagspecification-syntax.json"></a>
 
-```
+```json
 {
   "[ResourceType](#cfn-ec2-spotfleet-spotfleettagspecification-resourcetype)" : {{String}},
   "[Tags](#cfn-ec2-spotfleet-spotfleettagspecification-tags)" : {{[ Tag, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-spotfleet-spotfleettagspecification-syntax.yaml"></a>
 
-```
+```yaml
   [ResourceType](#cfn-ec2-spotfleet-spotfleettagspecification-resourcetype): {{String}}
   [Tags](#cfn-ec2-spotfleet-spotfleettagspecification-tags): {{
     - Tag}}

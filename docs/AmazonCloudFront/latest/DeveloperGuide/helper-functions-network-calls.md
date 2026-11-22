@@ -109,7 +109,7 @@ The HTTP status code from the origin as a number.
 A read-only property that holds the response headers as a [Headers](https://developer.mozilla.org/en-US/docs/Web/API/Headers) object. It supports the `get()`, `has()`, `getSetCookie()`, `forEach()`, `keys()`, `values()`, and `entries()` methods, and you can iterate over it.
 Header names are case insensitive in `get()` and `has()`. `get()` returns `null` when the header is not present. `getSetCookie()` returns an array of every `Set-Cookie` value.
 
-```
+```javascript
 const type = response.headers.get('content-type');
 const cookies = response.headers.getSetCookie();
 ```
@@ -167,7 +167,7 @@ This function only lets the request through if the authorization service approve
 Replace `/v1/authorize` with the path on your origin, and `auth-service` with the ID of your origin.
 The following JavaScript example sends the viewer's token to an authorization service:
 
-```
+```javascript
 import cf from 'cloudfront';
 
 async function handler(event) {
@@ -207,7 +207,7 @@ This function reads a configuration object from an Amazon S3 origin and uses it 
 Replace `/config/experiments.json` with the path of your object, and `config-bucket` with the ID of your origin.
 The following JavaScript example reads the configuration object:
 
-```
+```javascript
 import cf from 'cloudfront';
 
 async function handler(event) {
@@ -276,7 +276,7 @@ The method returns `undefined` immediately and your function continues.
 The handler is not `async`, because there is nothing to await.
 The following JavaScript example sends an event without waiting for a response:
 
-```
+```javascript
 import cf from 'cloudfront';
 
 function handler(event) {

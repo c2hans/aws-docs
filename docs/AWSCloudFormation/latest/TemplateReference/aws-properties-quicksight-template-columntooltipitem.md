@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-columntooltipitem-syntax.json"></a>
 
-```
+```json
 {
   "[Aggregation](#cfn-quicksight-template-columntooltipitem-aggregation)" : {{AggregationFunction}},
   "[Column](#cfn-quicksight-template-columntooltipitem-column)" : {{ColumnIdentifier}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-columntooltipitem-syntax.yaml"></a>
 
-```
+```yaml
   [Aggregation](#cfn-quicksight-template-columntooltipitem-aggregation): {{
     AggregationFunction}}
   [Column](#cfn-quicksight-template-columntooltipitem-column): {{

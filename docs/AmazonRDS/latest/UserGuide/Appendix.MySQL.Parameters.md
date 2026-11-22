@@ -11,6 +11,7 @@ RDS for MySQL parameters are set to the default values of the storage engine tha
 You can view the parameters available for a specific RDS for MySQL version using the RDS console or the AWS CLI. For information about viewing the parameters in a MySQL parameter group in the RDS console, see [Viewing parameter values for a DB parameter group in Amazon RDS](USER_WorkingWithParamGroups.Viewing.md).
 
 Using the AWS CLI, you can view the parameters for an RDS for MySQL version by running the [`describe-engine-default-parameters`](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-engine-default-parameters.html) command. Specify one of the following values for the `--db-parameter-group-family` option:
++ `mysql9.7`
 + `mysql8.4`
 + `mysql8.0`
 + `mysql5.7`

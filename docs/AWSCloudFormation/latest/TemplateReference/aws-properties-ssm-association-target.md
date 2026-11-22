@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssm-association-target-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-ssm-association-target-key)" : {{String}},
   "[Values](#cfn-ssm-association-target-values)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssm-association-target-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-ssm-association-target-key): {{String}}
   [Values](#cfn-ssm-association-target-values): {{
     - String}}

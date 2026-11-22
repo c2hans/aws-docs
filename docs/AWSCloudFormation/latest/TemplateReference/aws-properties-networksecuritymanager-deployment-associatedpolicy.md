@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networksecuritymanager-deployment-associatedpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[PolicyArn](#cfn-networksecuritymanager-deployment-associatedpolicy-policyarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networksecuritymanager-deployment-associatedpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [PolicyArn](#cfn-networksecuritymanager-deployment-associatedpolicy-policyarn): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-encryptionconfiguration-configurationdetails-syntax.json"></a>
 
-```
+```json
 {
   "[ConfigurationStatus](#cfn-iot-encryptionconfiguration-configurationdetails-configurationstatus)" : {{String}},
   "[ErrorCode](#cfn-iot-encryptionconfiguration-configurationdetails-errorcode)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-encryptionconfiguration-configurationdetails-syntax.yaml"></a>
 
-```
+```yaml
   [ConfigurationStatus](#cfn-iot-encryptionconfiguration-configurationdetails-configurationstatus): {{String}}
   [ErrorCode](#cfn-iot-encryptionconfiguration-configurationdetails-errorcode): {{String}}
   [ErrorMessage](#cfn-iot-encryptionconfiguration-configurationdetails-errormessage): {{String}}

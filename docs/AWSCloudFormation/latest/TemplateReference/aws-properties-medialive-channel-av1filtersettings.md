@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-av1filtersettings-syntax.json"></a>
 
-```
+```json
 {
   "[AutoFilterSettings](#cfn-medialive-channel-av1filtersettings-autofiltersettings)" : {{Json}},
   "[NoneFilterSettings](#cfn-medialive-channel-av1filtersettings-nonefiltersettings)" : {{Json}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-av1filtersettings-syntax.yaml"></a>
 
-```
+```yaml
   [AutoFilterSettings](#cfn-medialive-channel-av1filtersettings-autofiltersettings): {{Json}}
   [NoneFilterSettings](#cfn-medialive-channel-av1filtersettings-nonefiltersettings): {{Json}}
   [PerceptualFilterSettings](#cfn-medialive-channel-av1filtersettings-perceptualfiltersettings): {{

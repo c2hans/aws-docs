@@ -70,7 +70,7 @@ Use the [transform processor](https://github.com/open-telemetry/opentelemetry-co
 
 Order rules from shallowest to deepest – statements run sequentially, so more specific matches later in the list override the general ones set earlier. In the following example, the value of the span attribute `url.path` is matched and the resulting span name is set to the request method followed by the desired URL pattern.
 
-```
+```yaml
 processors:
   transform/operation_names:
     trace_statements:
@@ -106,7 +106,7 @@ You can manually set the span name for server spans in your application code usi
 
 **Java**
 
-```
+```java
 import io.opentelemetry.api.trace.Span;
 
 // Inside your request handler
@@ -115,7 +115,7 @@ Span.current().updateName("GET /api/contests/{id}/leaderboard");
 
 **Python**
 
-```
+```python
 from opentelemetry import trace
 
 # Inside your request handler
@@ -125,7 +125,7 @@ span.update_name("GET /api/contests/{id}/leaderboard")
 
 **Go**
 
-```
+```go
 import "go.opentelemetry.io/otel/trace"
 
 // Inside your request handler
@@ -135,7 +135,7 @@ span.SetName("GET /api/contests/{id}/leaderboard")
 
 **Node.js**
 
-```
+```javascript
 import { trace } from '@opentelemetry/api';
 
 // Inside your request handler

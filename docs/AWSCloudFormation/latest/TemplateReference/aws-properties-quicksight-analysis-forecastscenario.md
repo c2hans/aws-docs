@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-forecastscenario-syntax.json"></a>
 
-```
+```json
 {
   "[WhatIfPointScenario](#cfn-quicksight-analysis-forecastscenario-whatifpointscenario)" : {{WhatIfPointScenario}},
   "[WhatIfRangeScenario](#cfn-quicksight-analysis-forecastscenario-whatifrangescenario)" : {{WhatIfRangeScenario}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-forecastscenario-syntax.yaml"></a>
 
-```
+```yaml
   [WhatIfPointScenario](#cfn-quicksight-analysis-forecastscenario-whatifpointscenario): {{
     WhatIfPointScenario}}
   [WhatIfRangeScenario](#cfn-quicksight-analysis-forecastscenario-whatifrangescenario): {{

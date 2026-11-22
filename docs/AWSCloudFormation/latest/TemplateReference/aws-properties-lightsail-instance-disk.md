@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lightsail-instance-disk-syntax.json"></a>
 
-```
+```json
 {
   "[AttachedTo](#cfn-lightsail-instance-disk-attachedto)" : {{String}},
   "[AttachmentState](#cfn-lightsail-instance-disk-attachmentstate)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lightsail-instance-disk-syntax.yaml"></a>
 
-```
+```yaml
   [AttachedTo](#cfn-lightsail-instance-disk-attachedto): {{String}}
   [AttachmentState](#cfn-lightsail-instance-disk-attachmentstate): {{String}}
   [DiskName](#cfn-lightsail-instance-disk-diskname): {{String}}

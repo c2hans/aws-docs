@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-datemeasurefield-syntax.json"></a>
 
-```
+```json
 {
   "[AggregationFunction](#cfn-quicksight-template-datemeasurefield-aggregationfunction)" : {{String}},
   "[Column](#cfn-quicksight-template-datemeasurefield-column)" : {{ColumnIdentifier}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-datemeasurefield-syntax.yaml"></a>
 
-```
+```yaml
   [AggregationFunction](#cfn-quicksight-template-datemeasurefield-aggregationfunction): {{String}}
   [Column](#cfn-quicksight-template-datemeasurefield-column): {{
     ColumnIdentifier}}

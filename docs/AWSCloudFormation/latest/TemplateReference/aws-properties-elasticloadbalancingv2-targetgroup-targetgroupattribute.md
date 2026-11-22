@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancingv2-targetgroup-targetgroupattribute-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-elasticloadbalancingv2-targetgroup-targetgroupattribute-key)" : {{String}},
   "[Value](#cfn-elasticloadbalancingv2-targetgroup-targetgroupattribute-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancingv2-targetgroup-targetgroupattribute-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-elasticloadbalancingv2-targetgroup-targetgroupattribute-key): {{String}}
   [Value](#cfn-elasticloadbalancingv2-targetgroup-targetgroupattribute-value): {{String}}
 ```
@@ -100,7 +100,7 @@ The following example updates the deregistraction delay value for an Application
 #### YAML
 <a name="aws-properties-elasticloadbalancingv2-targetgroup-targetgroupattribute--examples--Update_the_deregistration_delay_value--yaml"></a>
 
-```
+```yaml
 myTargetGroup:
   Type: 'AWS::ElasticLoadBalancingV2::TargetGroup'
   Properties:
@@ -117,7 +117,7 @@ myTargetGroup:
 #### JSON
 <a name="aws-properties-elasticloadbalancingv2-targetgroup-targetgroupattribute--examples--Update_the_deregistration_delay_value--json"></a>
 
-```
+```json
 {
     "myTargetGroup": {
         "Type": "AWS::ElasticLoadBalancingV2::TargetGroup",
@@ -148,7 +148,7 @@ The following example enables client IP preservation for a Network Load Balancer
 #### YAML
 <a name="aws-properties-elasticloadbalancingv2-targetgroup-targetgroupattribute--examples--Enable_client_IP_preservation--yaml"></a>
 
-```
+```yaml
 myTargetGroup:
   Type: 'AWS::ElasticLoadBalancingV2::TargetGroup'
   Properties:
@@ -165,7 +165,7 @@ myTargetGroup:
 #### JSON
 <a name="aws-properties-elasticloadbalancingv2-targetgroup-targetgroupattribute--examples--Enable_client_IP_preservation--json"></a>
 
-```
+```json
 {
     "myTargetGroup": {
         "Type": "AWS::ElasticLoadBalancingV2::TargetGroup",

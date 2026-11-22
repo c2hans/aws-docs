@@ -183,6 +183,6 @@ To purge the entire recycle bin, use the Amazon RDS procedure `rdsadmin.rdsadmin
 
 The following example purges the entire recycle bin.
 
-```
+```sql
 EXEC rdsadmin.rdsadmin_util.purge_dba_recyclebin;
 ```

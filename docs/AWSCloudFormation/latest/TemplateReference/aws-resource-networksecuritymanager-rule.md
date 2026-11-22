@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::NetworkSecurityManager::Rule
 
-The `AWS::NetworkSecurityManager::Rule` resource specifies an AWS Network Security Manager rule. A rule defines a network security configuration to enforce, such as an AWS WAF rule group or a single web ACL setting.
+The `AWS::NetworkSecurityManager::Rule` resource specifies an AWS Network Security Manager rule. A rule defines a network security configuration to enforce, such as an AWS WAF rule group, a single web ACL setting, or a single AWS Network Firewall automated internet firewall policy setting.
 
 You reference a rule from a template or a policy, then roll the protections out to the accounts and resources selected by a scope. Rules created with this resource are always published in `ACTIVE` state; CloudFormation does not create rules in `DRAFT` state.
 
@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-networksecuritymanager-rule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::NetworkSecurityManager::Rule",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-networksecuritymanager-rule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::NetworkSecurityManager::Rule
 Properties:
   [Configuration](#cfn-networksecuritymanager-rule-configuration): {{String}}
@@ -54,6 +54,8 @@ Properties:
 
 `Configuration`  <a name="cfn-networksecuritymanager-rule-configuration"></a>
 The firewall configuration for the rule, as a JSON string. The structure depends on the values of `FirewallType` and `RuleType`. For an AWS WAF`INSPECTION` rule, provide an AWS WAF rule group. For an AWS WAF`CONFIGURATION` rule, provide a single web ACL setting, such as `DefaultAction` or `VisibilityConfig`.
+For an `IGW_FIREWALL` rule, provide a JSON object with exactly one top-level key, which names the AWS Network Firewall setting that the rule configures. For an `INSPECTION` rule, the key is one of `FirewallRuleGroupEntry`, `IpsRuleGroupEntry`, `PolicyMode`, `FirewallDefaultAction`, or `StatefulEngineOptions`, and its value uses the format of the matching member of the AWS Network Firewall `FirewallPolicyV2` structure. `FirewallRuleGroupEntry` and `IpsRuleGroupEntry` each take a single entry rather than a list. For a `CONFIGURATION` rule, the key is `LoggingConfiguration`. For example: `{"PolicyMode":"ENFORCE"}`.
+When you create or update an `IGW_FIREWALL` rule, AWS Network Security Manager validates the configuration with an AWS Network Firewall dry run that uses your credentials. The IAM principal that runs the stack operation needs the `network-firewall:CreateFirewallPolicyV2` and `network-firewall:TagResource` permissions for `INSPECTION` rules, and the AWS Network Firewall logging permissions for `CONFIGURATION` rules.
 This property is a JSON string, not a JSON object. In a template, supply the configuration as a quoted string, or generate it with the [Fn::ToJsonString](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-tojsonstring.html) intrinsic function.
 This property is required when you create a rule.
 For the schema of each setting and complete examples, see [Writing rule configurations](https://docs.aws.amazon.com/network-security-manager/latest/devguide/what-is.html) in the *AWS Network Security Manager Developer Guide*.
@@ -62,20 +64,18 @@ For the schema of each setting and complete examples, see [Writing rule configur
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `FirewallType`  <a name="cfn-networksecuritymanager-rule-firewalltype"></a>
-The type of firewall that the rule configures. `WAF` specifies an AWS WAF rule.
+The type of firewall that the rule configures. `WAF` specifies an AWS WAF rule. `IGW_FIREWALL` specifies a rule for AWS Network Firewall automated internet firewall policies.
 This property is required when you create a rule. You can't change the firewall type after you create the rule.
 *Required*: Conditional
 *Type*: String
-*Allowed values*: `WAF`
+*Allowed values*: `WAF | IGW_FIREWALL`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `RuleDescription`  <a name="cfn-networksecuritymanager-rule-ruledescription"></a>
 A description of the rule.
 *Required*: No
 *Type*: String
-*Pattern*: `[a-zA-Z0-9 _.:/=+\-@]*`
-*Minimum*: `0`
-*Maximum*: `256`
+*Pattern*: `^[a-zA-Z0-9 _.:/=+\-@]*$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `RuleName`  <a name="cfn-networksecuritymanager-rule-rulename"></a>
@@ -83,9 +83,7 @@ The name of the rule.
 You can't change the name of a rule after you create it.
 *Required*: Yes
 *Type*: String
-*Pattern*: `[a-zA-Z0-9][a-zA-Z0-9 _.:/=+\-@]*`
-*Minimum*: `1`
-*Maximum*: `128`
+*Pattern*: `^[a-zA-Z0-9][a-zA-Z0-9 _.:/=+\-@]*$`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `RuleType`  <a name="cfn-networksecuritymanager-rule-ruletype"></a>
@@ -138,7 +136,7 @@ The current status of the rule. Rules managed with CloudFormation are always pub
 *Allowed Values*: `DRAFT` \| `ACTIVE`
 
 `UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
-The time when the resource was last updated. For a snapshot, this is the time when the snapshot was created.
+The date and time when the rule was last updated, in ISO 8601 format. For example: `2026-11-19T21:42:56Z`.
 
 `Version`  <a name="Version-fn::getatt"></a>
 The version of the resource.
@@ -146,13 +144,17 @@ The version of the resource.
 ## Examples
 <a name="aws-resource-networksecuritymanager-rule--examples"></a>
 
+**Topics**
++ [Create a rule that sets the default action of a web ACL](#aws-resource-networksecuritymanager-rule--examples--Create_a_rule_that_sets_the_default_action_of_a_web_ACL)
++ [Create a rule that sets the policy mode of an internet firewall policy](#aws-resource-networksecuritymanager-rule--examples--Create_a_rule_that_sets_the_policy_mode_of_an_internet_firewall_policy)
+
 ### Create a rule that sets the default action of a web ACL
 <a name="aws-resource-networksecuritymanager-rule--examples--Create_a_rule_that_sets_the_default_action_of_a_web_ACL"></a>
 
 #### YAML
 <a name="aws-resource-networksecuritymanager-rule--examples--Create_a_rule_that_sets_the_default_action_of_a_web_ACL--yaml"></a>
 
-```
+```yaml
                 AWSTemplateFormatVersion: "2010-09-09"
                 Description: Creates a Network Security Manager rule that sets the default action of a web ACL.
                 Resources:
@@ -171,4 +173,27 @@ The version of the resource.
                   RuleArn:
                     Description: The ARN of the rule, for use in a template or policy.
                     Value: !GetAtt AllowByDefaultRule.RuleArn
+```
+
+### Create a rule that sets the policy mode of an internet firewall policy
+<a name="aws-resource-networksecuritymanager-rule--examples--Create_a_rule_that_sets_the_policy_mode_of_an_internet_firewall_policy"></a>
+
+#### YAML
+<a name="aws-resource-networksecuritymanager-rule--examples--Create_a_rule_that_sets_the_policy_mode_of_an_internet_firewall_policy--yaml"></a>
+
+```yaml
+                AWSTemplateFormatVersion: "2010-09-09"
+                Description: Creates a Network Security Manager rule for a Network Firewall automated internet firewall policy.
+                Resources:
+                  EnforceModeRule:
+                    Type: AWS::NetworkSecurityManager::Rule
+                    Properties:
+                      RuleName: igw-enforce-mode
+                      RuleDescription: Enforces the firewall rules instead of only alerting.
+                      FirewallType: IGW_FIREWALL
+                      RuleType: INSPECTION
+                      Configuration: '{"PolicyMode":"ENFORCE"}'
+                Outputs:
+                  RuleArn:
+                    Value: !GetAtt EnforceModeRule.RuleArn
 ```

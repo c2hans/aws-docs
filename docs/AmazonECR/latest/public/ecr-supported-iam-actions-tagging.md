@@ -17,7 +17,7 @@ The following policy would only allow an IAM user to create or tag a public repo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -50,7 +50,7 @@ The following policy would allow an IAM user access to all public repositories u
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

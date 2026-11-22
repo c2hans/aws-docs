@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-eventsourcemapping-scalingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[MaximumConcurrency](#cfn-lambda-eventsourcemapping-scalingconfig-maximumconcurrency)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-eventsourcemapping-scalingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [MaximumConcurrency](#cfn-lambda-eventsourcemapping-scalingconfig-maximumconcurrency): {{Integer}}
 ```
 

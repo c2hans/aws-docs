@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-agent-promptconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AdditionalModelRequestFields](#cfn-bedrock-agent-promptconfiguration-additionalmodelrequestfields)" : {{Json}},
   "[BasePromptTemplate](#cfn-bedrock-agent-promptconfiguration-baseprompttemplate)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-agent-promptconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AdditionalModelRequestFields](#cfn-bedrock-agent-promptconfiguration-additionalmodelrequestfields): {{Json}}
   [BasePromptTemplate](#cfn-bedrock-agent-promptconfiguration-baseprompttemplate): {{String}}
   [FoundationModel](#cfn-bedrock-agent-promptconfiguration-foundationmodel): {{String}}

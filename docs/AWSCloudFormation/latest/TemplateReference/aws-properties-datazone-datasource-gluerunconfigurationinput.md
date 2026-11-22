@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-datasource-gluerunconfigurationinput-syntax.json"></a>
 
-```
+```json
 {
   "[AutoImportDataQualityResult](#cfn-datazone-datasource-gluerunconfigurationinput-autoimportdataqualityresult)" : {{Boolean}},
   "[CatalogName](#cfn-datazone-datasource-gluerunconfigurationinput-catalogname)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-datasource-gluerunconfigurationinput-syntax.yaml"></a>
 
-```
+```yaml
   [AutoImportDataQualityResult](#cfn-datazone-datasource-gluerunconfigurationinput-autoimportdataqualityresult): {{Boolean}}
   [CatalogName](#cfn-datazone-datasource-gluerunconfigurationinput-catalogname): {{String}}
   [DataAccessRole](#cfn-datazone-datasource-gluerunconfigurationinput-dataaccessrole): {{String}}

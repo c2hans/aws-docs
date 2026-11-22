@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-input-srtlistenersettings-syntax.json"></a>
 
-```
+```json
 {
   "[Decryption](#cfn-medialive-input-srtlistenersettings-decryption)" : {{SrtListenerDecryption}},
   "[MinimumLatency](#cfn-medialive-input-srtlistenersettings-minimumlatency)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-input-srtlistenersettings-syntax.yaml"></a>
 
-```
+```yaml
   [Decryption](#cfn-medialive-input-srtlistenersettings-decryption): {{
     SrtListenerDecryption}}
   [MinimumLatency](#cfn-medialive-input-srtlistenersettings-minimumlatency): {{Integer}}

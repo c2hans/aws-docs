@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-lifecyclepolicy-policydetail-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-imagebuilder-lifecyclepolicy-policydetail-action)" : {{Action}},
   "[ExclusionRules](#cfn-imagebuilder-lifecyclepolicy-policydetail-exclusionrules)" : {{ExclusionRules}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-lifecyclepolicy-policydetail-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-imagebuilder-lifecyclepolicy-policydetail-action): {{
     Action}}
   [ExclusionRules](#cfn-imagebuilder-lifecyclepolicy-policydetail-exclusionrules): {{

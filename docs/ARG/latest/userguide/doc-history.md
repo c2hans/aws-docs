@@ -6,6 +6,7 @@ source_url: https://docs.aws.amazon.com/ARG/latest/userguide/doc-history.html
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Added FAQ page for supported protocols](doc-history.md) | Added a new FAQ page with answers to common questions about the AWS JSON and Smithy RPC v2 CBOR wire protocols. For more information, see [ FAQs on supported protocols](https://docs.aws.amazon.com/ARG/latest/userguide/cbor-faq.html). | November 10, 2026 |
 | [AWS Group Lifecycle Events (GLE) is no longer open to new customers](doc-history.md) | AWS Group Lifecycle Events (GLE) feature of AWS Resource Groups is no longer open to new customers. For more information, see [AWS Resource Groups Group Lifecycle Events (GLE) availability change](https://docs.aws.amazon.com/resource-groups-gle-availability-change.html). | July 30, 2026 |
 | [AWS Group Lifecycle Events (GLE) will no longer be open to new customers starting on July 30, 2026](doc-history.md) | AWS Group Lifecycle Events (GLE) feature of AWS Resource Groups will no longer be open to new customers starting July 30, 2026. If you would like to use the feature, sign up prior to July 30, 2026. For more information, see [AWS Resource Groups Group Lifecycle Events (GLE) availability change](https://docs.aws.amazon.com/resource-groups-gle-availability-change.html). | June 30, 2026 |
 | [Support for new resource types](doc-history.md) | 160 more resource types are now supported by Resource Groups and Tag Editor. | April 16, 2025 |

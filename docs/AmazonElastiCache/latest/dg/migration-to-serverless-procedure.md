@@ -59,7 +59,7 @@ Your target cache must be empty when you create the migration. If it contains an
 
 1. Enter the following AWS CLI command to prepare the migration, where `{{my-cache}}` is the name of your target cache and where `{{192.0.2.10}}` and `{{6379}}` are the private address and port of one node in your source:
 
-   ```
+   ```bash
    aws elasticache prepare-migration \
        --serverless-cache-name {{my-cache}} \
        --customer-node-endpoint-list "Address='{{192.0.2.10}}',Port={{6379}}"
@@ -92,7 +92,7 @@ A client that still connects straight to your source after cutover writes to a c
 
 1. Get the migration endpoint and point your application at it. Connect with TLS. Before you move all of your traffic, read a key that exists on your source through the migration endpoint. When the read returns the value from your source, the endpoint is routing to your source.
 
-   ```
+   ```bash
    aws elasticache describe-serverless-caches \
        --serverless-cache-name {{my-cache}} \
        --query "ServerlessCaches[0].Migration.MigrationEndpoint"
@@ -124,7 +124,7 @@ Clearing the target cannot be undone.
 
 1. Start the data sync. To have ElastiCache cut over for you, add `--auto-cutover`, and redirect your application before you run this command.
 
-   ```
+   ```bash
    aws elasticache start-migration \
        --serverless-cache-name {{my-cache}}
    ```
@@ -171,7 +171,7 @@ Manual and automatic cutover produce the same result. Choose based on how much c
 
 1. Enter the following AWS CLI command for manual cutover:
 
-   ```
+   ```bash
    aws elasticache complete-migration \
        --serverless-cache-name {{my-cache}}
    ```

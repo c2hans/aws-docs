@@ -80,7 +80,7 @@ CloudWatch Logs supports resource-based policies for destinations, which you can
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement" : [

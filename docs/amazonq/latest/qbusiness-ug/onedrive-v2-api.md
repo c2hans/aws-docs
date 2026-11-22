@@ -17,7 +17,7 @@ For an example of the API request, see [CreateDataSource](https://docs.aws.amazo
 
 The following is the Microsoft OneDrive JSON schema for OneDrive:
 
-```
+```json
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",

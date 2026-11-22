@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-smsvoice-rcsagent-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SMSVOICE::RcsAgent",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-smsvoice-rcsagent-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SMSVOICE::RcsAgent
 Properties:
   [DeletionProtectionEnabled](#cfn-smsvoice-rcsagent-deletionprotectionenabled): {{Boolean}}

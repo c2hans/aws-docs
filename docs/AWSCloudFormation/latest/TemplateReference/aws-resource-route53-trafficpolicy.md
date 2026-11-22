@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-route53-trafficpolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Route53::TrafficPolicy",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-route53-trafficpolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53::TrafficPolicy
 Properties:
   [Comment](#cfn-route53-trafficpolicy-comment): {{String}}

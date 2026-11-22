@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpoolclient-refreshtokenrotation-syntax.json"></a>
 
-```
+```json
 {
   "[Feature](#cfn-cognito-userpoolclient-refreshtokenrotation-feature)" : {{String}},
   "[RetryGracePeriodSeconds](#cfn-cognito-userpoolclient-refreshtokenrotation-retrygraceperiodseconds)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpoolclient-refreshtokenrotation-syntax.yaml"></a>
 
-```
+```yaml
   [Feature](#cfn-cognito-userpoolclient-refreshtokenrotation-feature): {{String}}
   [RetryGracePeriodSeconds](#cfn-cognito-userpoolclient-refreshtokenrotation-retrygraceperiodseconds): {{Integer}}
 ```

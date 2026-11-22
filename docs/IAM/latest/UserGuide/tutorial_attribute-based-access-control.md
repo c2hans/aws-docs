@@ -81,7 +81,7 @@ The following policy allows a user to assume any role in your account with the `
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -140,7 +140,7 @@ The following policy allows principals to create, read, edit, and delete resourc
 
 ****
 
-```
+```json
 {
  "Version":"2012-10-17",
  "Statement": [
@@ -397,7 +397,7 @@ This policy allows Saanvi to assume the engineering roles for the **Pegasus** an
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

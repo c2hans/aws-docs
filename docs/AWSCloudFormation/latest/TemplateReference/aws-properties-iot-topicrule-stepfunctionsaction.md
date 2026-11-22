@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicrule-stepfunctionsaction-syntax.json"></a>
 
-```
+```json
 {
   "[ExecutionNamePrefix](#cfn-iot-topicrule-stepfunctionsaction-executionnameprefix)" : {{String}},
   "[RoleArn](#cfn-iot-topicrule-stepfunctionsaction-rolearn)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicrule-stepfunctionsaction-syntax.yaml"></a>
 
-```
+```yaml
   [ExecutionNamePrefix](#cfn-iot-topicrule-stepfunctionsaction-executionnameprefix): {{String}}
   [RoleArn](#cfn-iot-topicrule-stepfunctionsaction-rolearn): {{String}}
   [StateMachineName](#cfn-iot-topicrule-stepfunctionsaction-statemachinename): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotwireless-wirelessgateway-lorawangateway-syntax.json"></a>
 
-```
+```json
 {
   "[GatewayEui](#cfn-iotwireless-wirelessgateway-lorawangateway-gatewayeui)" : {{String}},
   "[RfRegion](#cfn-iotwireless-wirelessgateway-lorawangateway-rfregion)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotwireless-wirelessgateway-lorawangateway-syntax.yaml"></a>
 
-```
+```yaml
   [GatewayEui](#cfn-iotwireless-wirelessgateway-lorawangateway-gatewayeui): {{String}}
   [RfRegion](#cfn-iotwireless-wirelessgateway-lorawangateway-rfregion): {{String}}
 ```

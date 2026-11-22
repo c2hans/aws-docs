@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-webfunctionrevision-serviceconfig-syntax.json"></a>
 
-```
+```json
 {
   "[EgressNetworkConnectorArn](#cfn-lambda-webfunctionrevision-serviceconfig-egressnetworkconnectorarn)" : {{String}},
   "[EnvironmentVariables](#cfn-lambda-webfunctionrevision-serviceconfig-environmentvariables)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-webfunctionrevision-serviceconfig-syntax.yaml"></a>
 
-```
+```yaml
   [EgressNetworkConnectorArn](#cfn-lambda-webfunctionrevision-serviceconfig-egressnetworkconnectorarn): {{String}}
   [EnvironmentVariables](#cfn-lambda-webfunctionrevision-serviceconfig-environmentvariables): {{
     {{Key}}: {{Value}}}}

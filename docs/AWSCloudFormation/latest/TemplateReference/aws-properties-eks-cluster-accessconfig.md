@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-cluster-accessconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AuthenticationMode](#cfn-eks-cluster-accessconfig-authenticationmode)" : {{String}},
   "[BootstrapClusterCreatorAdminPermissions](#cfn-eks-cluster-accessconfig-bootstrapclustercreatoradminpermissions)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-cluster-accessconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AuthenticationMode](#cfn-eks-cluster-accessconfig-authenticationmode): {{String}}
   [BootstrapClusterCreatorAdminPermissions](#cfn-eks-cluster-accessconfig-bootstrapclustercreatoradminpermissions): {{Boolean}}
 ```

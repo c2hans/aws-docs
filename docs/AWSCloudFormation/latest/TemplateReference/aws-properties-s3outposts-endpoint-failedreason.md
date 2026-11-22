@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3outposts-endpoint-failedreason-syntax.json"></a>
 
-```
+```json
 {
   "[ErrorCode](#cfn-s3outposts-endpoint-failedreason-errorcode)" : {{String}},
   "[Message](#cfn-s3outposts-endpoint-failedreason-message)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3outposts-endpoint-failedreason-syntax.yaml"></a>
 
-```
+```yaml
   [ErrorCode](#cfn-s3outposts-endpoint-failedreason-errorcode): {{String}}
   [Message](#cfn-s3outposts-endpoint-failedreason-message): {{String}}
 ```

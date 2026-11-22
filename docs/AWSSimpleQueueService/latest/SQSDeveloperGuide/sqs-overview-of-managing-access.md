@@ -128,7 +128,7 @@ The following is an example policy that allows a user to use all Amazon SQS acti
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [{

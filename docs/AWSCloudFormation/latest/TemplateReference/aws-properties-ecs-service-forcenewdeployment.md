@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-forcenewdeployment-syntax.json"></a>
 
-```
+```json
 {
   "[EnableForceNewDeployment](#cfn-ecs-service-forcenewdeployment-enableforcenewdeployment)" : {{Boolean}},
   "[ForceNewDeploymentNonce](#cfn-ecs-service-forcenewdeployment-forcenewdeploymentnonce)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-forcenewdeployment-syntax.yaml"></a>
 
-```
+```yaml
   [EnableForceNewDeployment](#cfn-ecs-service-forcenewdeployment-enableforcenewdeployment): {{Boolean}}
   [ForceNewDeploymentNonce](#cfn-ecs-service-forcenewdeployment-forcenewdeploymentnonce): {{String}}
 ```

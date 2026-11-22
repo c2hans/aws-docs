@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationsignals-servicelevelobjective-exclusionwindow-syntax.json"></a>
 
-```
+```json
 {
   "[Reason](#cfn-applicationsignals-servicelevelobjective-exclusionwindow-reason)" : {{String}},
   "[RecurrenceRule](#cfn-applicationsignals-servicelevelobjective-exclusionwindow-recurrencerule)" : {{RecurrenceRule}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationsignals-servicelevelobjective-exclusionwindow-syntax.yaml"></a>
 
-```
+```yaml
   [Reason](#cfn-applicationsignals-servicelevelobjective-exclusionwindow-reason): {{String}}
   [RecurrenceRule](#cfn-applicationsignals-servicelevelobjective-exclusionwindow-recurrencerule): {{
     RecurrenceRule}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-datasetnumericrangefiltercondition-syntax.json"></a>
 
-```
+```json
 {
   "[IncludeMaximum](#cfn-quicksight-dataset-datasetnumericrangefiltercondition-includemaximum)" : {{Boolean}},
   "[IncludeMinimum](#cfn-quicksight-dataset-datasetnumericrangefiltercondition-includeminimum)" : {{Boolean}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-datasetnumericrangefiltercondition-syntax.yaml"></a>
 
-```
+```yaml
   [IncludeMaximum](#cfn-quicksight-dataset-datasetnumericrangefiltercondition-includemaximum): {{Boolean}}
   [IncludeMinimum](#cfn-quicksight-dataset-datasetnumericrangefiltercondition-includeminimum): {{Boolean}}
   [RangeMaximum](#cfn-quicksight-dataset-datasetnumericrangefiltercondition-rangemaximum): {{

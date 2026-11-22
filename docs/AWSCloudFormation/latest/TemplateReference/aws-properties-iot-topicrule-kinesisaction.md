@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicrule-kinesisaction-syntax.json"></a>
 
-```
+```json
 {
   "[PartitionKey](#cfn-iot-topicrule-kinesisaction-partitionkey)" : {{String}},
   "[RoleArn](#cfn-iot-topicrule-kinesisaction-rolearn)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicrule-kinesisaction-syntax.yaml"></a>
 
-```
+```yaml
   [PartitionKey](#cfn-iot-topicrule-kinesisaction-partitionkey): {{String}}
   [RoleArn](#cfn-iot-topicrule-kinesisaction-rolearn): {{String}}
   [StreamName](#cfn-iot-topicrule-kinesisaction-streamname): {{String}}

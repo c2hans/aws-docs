@@ -19,7 +19,7 @@ You must configure permissions to allow an IAM user to tag other users. You can 
 **To allow an IAM user to add, list, or remove a tag for a specific user**
 Add the following statement to the permissions policy for the IAM user that needs to manage tags. Use your account number and replace {{<username>}} with the name of the user whose tags need to be managed. To learn how to create a policy using this example JSON policy document, see [Creating policies using the JSON editor](access_policies_create-console.md#access_policies_create-json-editor).
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [
@@ -34,7 +34,7 @@ Add the following statement to the permissions policy for the IAM user that need
 **To allow an IAM user to self-manage tags**
 Add the following statement to the permissions policy for users to allow users to manage their own tags. To learn how to create a policy using this example JSON policy document, see [Creating policies using the JSON editor](access_policies_create-console.md#access_policies_create-json-editor).
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [
@@ -54,7 +54,7 @@ The `iam:TagUser` action requires that you also include the `iam:ListUserTags` a
 
 To use this policy, replace {{<username>}} with the name of the user whose tags need to be managed. To learn how to create a policy using this example JSON policy document, see [Creating policies using the JSON editor](access_policies_create-console.md#access_policies_create-json-editor).
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [

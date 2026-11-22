@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securitylake-datalake-expiration-syntax.json"></a>
 
-```
+```json
 {
   "[Days](#cfn-securitylake-datalake-expiration-days)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securitylake-datalake-expiration-syntax.yaml"></a>
 
-```
+```yaml
   [Days](#cfn-securitylake-datalake-expiration-days): {{Integer}}
 ```
 

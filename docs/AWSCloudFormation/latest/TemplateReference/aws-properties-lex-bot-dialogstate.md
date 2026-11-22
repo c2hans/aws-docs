@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-dialogstate-syntax.json"></a>
 
-```
+```json
 {
   "[DialogAction](#cfn-lex-bot-dialogstate-dialogaction)" : {{DialogAction}},
   "[Intent](#cfn-lex-bot-dialogstate-intent)" : {{IntentOverride}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-dialogstate-syntax.yaml"></a>
 
-```
+```yaml
   [DialogAction](#cfn-lex-bot-dialogstate-dialogaction): {{
     DialogAction}}
   [Intent](#cfn-lex-bot-dialogstate-intent): {{

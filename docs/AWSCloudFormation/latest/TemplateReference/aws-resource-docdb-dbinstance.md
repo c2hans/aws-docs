@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-docdb-dbinstance-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DocDB::DBInstance",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-docdb-dbinstance-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DocDB::DBInstance
 Properties:
   [AutoMinorVersionUpgrade](#cfn-docdb-dbinstance-autominorversionupgrade): {{Boolean}}
@@ -166,7 +166,7 @@ The port number on which the database accepts connections, such as `27017`.
 #### JSON
 <a name="aws-resource-docdb-dbinstance--examples----json"></a>
 
-```
+```json
 {
    "Type" : "AWS::DocDB::DBInstance",
    "Properties" : {
@@ -184,7 +184,7 @@ The port number on which the database accepts connections, such as `27017`.
 #### YAML
 <a name="aws-resource-docdb-dbinstance--examples----yaml"></a>
 
-```
+```yaml
 Type: "AWS::DocDB::DBInstance"
 Properties:
    AutoMinorVersionUpgrade: true

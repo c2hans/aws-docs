@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-nodeproperties-syntax.json"></a>
 
-```
+```json
 {
   "[MainNode](#cfn-batch-jobdefinition-nodeproperties-mainnode)" : {{Integer}},
   "[NodeRangeProperties](#cfn-batch-jobdefinition-nodeproperties-noderangeproperties)" : {{[ NodeRangeProperty, ... ]}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-nodeproperties-syntax.yaml"></a>
 
-```
+```yaml
   [MainNode](#cfn-batch-jobdefinition-nodeproperties-mainnode): {{Integer}}
   [NodeRangeProperties](#cfn-batch-jobdefinition-nodeproperties-noderangeproperties): {{
     - NodeRangeProperty}}

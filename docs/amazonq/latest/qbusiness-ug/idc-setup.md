@@ -99,6 +99,6 @@ If you create a cross-region integration between an Amazon Q Business applicatio
 
 When you create a cross-region IAM Identity Center and Amazon Q Business integration, any Amazon Q Business indices associated with your application are billed in the Amazon Q Business region they're created in. User subscriptions for an Amazon Q Business application using a cross-region IAM Identity Center integration are billed in the region the IAM Identity Center instance is created in. For more information on pricing, see [Amazon Q Business Pricing](https://aws.amazon.com/q/business/pricing).
 
-Once you opt-in, you will see the option to create a cross-region connection during the [Amazon Q Business application creation process](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/create-application.html), as in the following image:
+After you opt in, you see the option to create a cross-region connection during the [Amazon Q Business application creation process](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/create-application.html), as in the following image:
 
-![An console screenshot of the cross-region IDC enabling option.](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/images/cross-region-idc.png)
+![Advanced IAM Identity Center settings panel with a toggle labeled Enable cross-region calls to access resources.](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/images/cross-region-idc.png)

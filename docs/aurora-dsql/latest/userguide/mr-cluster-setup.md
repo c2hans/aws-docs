@@ -8,12 +8,14 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/mr-cluster-
 
 See the [Amazon Aurora DSQL resource type reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/AWS_DSQL.html) for more on how to create, modify, and manage clusters using the `AWS::DSQL::Cluster` resource.
 
-## Creating the Initial Cluster Configuration
+You can select the two peer Regions and the witness Region from the Regions that support Aurora DSQL multi-Region clusters. The three Regions must be distinct. For the list of supported Regions, see [Multi-Region cluster availability](what-is-aurora-dsql.html#aurora-dsql-multi-region-availability).
+
+## Creating the initial cluster configuration
 <a name="mr-cluster-initial"></a>
 
 First, create an AWS CloudFormation template to define your multi-Region cluster:
 
-```
+```yaml
 ---
 Resources:
   MRCluster:
@@ -38,13 +40,13 @@ aws cloudformation create-stack --region us-east-1 \
     --template-body file://mr-cluster.yaml
 ```
 
-## Finding Cluster Identifiers
+## Finding cluster identifiers
 <a name="mr-cluster-find"></a>
 
 Retrieve the physical resource IDs for your clusters:
 
-```
-aws cloudformation describe-stack-resources -region us-east-2 \
+```sh
+aws cloudformation describe-stack-resources --region us-east-2 \
     --stack-name MRCluster \
     --query 'StackResources[].PhysicalResourceId'
 [
@@ -52,8 +54,8 @@ aws cloudformation describe-stack-resources -region us-east-2 \
 ]
 ```
 
-```
-aws cloudformation describe-stack-resources -region us-east-1 \
+```sh
+aws cloudformation describe-stack-resources --region us-east-1 \
     --stack-name MRCluster \
     --query 'StackResources[].PhysicalResourceId'
 [
@@ -61,12 +63,12 @@ aws cloudformation describe-stack-resources -region us-east-1 \
 ]
 ```
 
-## Updating the Cluster Configuration
+## Updating the cluster configuration
 <a name="mr-cluster-update"></a>
 
 Update your AWS CloudFormation template to include both cluster ARNs:
 
-```
+```yaml
 ---
 Resources:
   MRCluster:

@@ -20,7 +20,7 @@ The following examples show how to find the community version of your database f
 
 The `version` function returns the community version of your database for Aurora MySQL.
 
-```
+```SQL
 mysql> select version();
 ```
 
@@ -79,7 +79,7 @@ PostgreSQL 11.7 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 4.9.3, 64-bit
 
 And the `aurora_version` function returns the Aurora version:
 
-```
+```sql
 postgres=> select aurora_version();
 ```
 

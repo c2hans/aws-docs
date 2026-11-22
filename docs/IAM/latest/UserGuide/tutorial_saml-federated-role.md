@@ -175,7 +175,7 @@ Save the following JSON or YAML code as a separate file to use as the CloudForma
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "[AWSDocs] IAM: tutorial_saml-federated-role",
@@ -308,7 +308,7 @@ Save the following JSON or YAML code as a separate file to use as the CloudForma
 ------
 #### [ YAML ]
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: '[AWSDocs] IAM: tutorial_saml-federated-role'
 

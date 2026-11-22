@@ -8,7 +8,7 @@ Collects email security event data from Proofpoint TAP using HTTP Basic authenti
 
 Configure the Proofpoint TAP source with the following parameters:
 
-```
+```yaml
 source:
   proofpoint_tap:
     authentication:

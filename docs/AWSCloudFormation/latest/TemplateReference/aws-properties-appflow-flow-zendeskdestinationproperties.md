@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-flow-zendeskdestinationproperties-syntax.json"></a>
 
-```
+```json
 {
   "[ErrorHandlingConfig](#cfn-appflow-flow-zendeskdestinationproperties-errorhandlingconfig)" : {{ErrorHandlingConfig}},
   "[IdFieldNames](#cfn-appflow-flow-zendeskdestinationproperties-idfieldnames)" : {{[ String, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-flow-zendeskdestinationproperties-syntax.yaml"></a>
 
-```
+```yaml
   [ErrorHandlingConfig](#cfn-appflow-flow-zendeskdestinationproperties-errorhandlingconfig): {{
     ErrorHandlingConfig}}
   [IdFieldNames](#cfn-appflow-flow-zendeskdestinationproperties-idfieldnames): {{

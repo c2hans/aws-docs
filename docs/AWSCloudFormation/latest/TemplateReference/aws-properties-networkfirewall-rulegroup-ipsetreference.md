@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkfirewall-rulegroup-ipsetreference-syntax.json"></a>
 
-```
+```json
 {
   "[ReferenceArn](#cfn-networkfirewall-rulegroup-ipsetreference-referencearn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkfirewall-rulegroup-ipsetreference-syntax.yaml"></a>
 
-```
+```yaml
   [ReferenceArn](#cfn-networkfirewall-rulegroup-ipsetreference-referencearn): {{String}}
 ```
 

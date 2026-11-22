@@ -12,7 +12,7 @@ The following code examples show how to use `ListServerCertificates`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
 bool AwsDoc::IAM::listServerCertificates(
         const Aws::Client::ClientConfiguration &clientConfig) {
     const Aws::String DATE_FORMAT = "%Y-%m-%d";
@@ -109,7 +109,7 @@ For more information, see [Managing server certificates in IAM](https://docs.aws
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 List the certificates.
 
-```
+```javascript
 import { ListServerCertificatesCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -142,7 +142,7 @@ export async function* listServerCertificates() {
 **SDK for JavaScript (v2)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/iam#code-examples).
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -168,7 +168,7 @@ iam.listServerCertificates({}, function (err, data) {
 **Tools for PowerShell V4**
 **Example 1: This example retrieves the list of server certificates that have been uploaded to the current AWS account.**
 
-```
+```powershell
 Get-IAMServerCertificateList
 ```
 **Output:**
@@ -186,7 +186,7 @@ UploadDate            : 4/21/2015 11:14:16 AM
 **Tools for PowerShell V5**
 **Example 1: This example retrieves the list of server certificates that have been uploaded to the current AWS account.**
 
-```
+```powershell
 Get-IAMServerCertificateList
 ```
 **Output:**
@@ -208,7 +208,7 @@ UploadDate            : 4/21/2015 11:14:16 AM
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 List, update, and delete server certificates.
 
-```
+```ruby
 class ServerCertificateManager
   def initialize(iam_client, logger: Logger.new($stdout))
     @iam_client = iam_client

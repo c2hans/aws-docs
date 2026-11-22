@@ -1381,6 +1381,43 @@ The following search commands are supported by ElastiCache for Valkey.
 
   [Learn more](https://valkey.io/commands/ft._list/)
 
+## Large object commands
+<a name="SupportedCommandsLargeObject"></a>
+
+**Large Object Commands**
+
+The following large object commands are supported by ElastiCache for Valkey. They are available only on clusters that use the `cache.i8ge.48xlarge` node type. For more information, see [Large object module reference for distributed KV caching](large-objects.md).
++ `BLOB.INFO`
+
+  Returns the length, CRC32C checksum, and storage tier of a large object.
+
+  [Learn more](https://valkey.io/commands/blob.info/)
++ `BLOB.RDMA_GET`
+
+  Writes a large object into client memory regions with RDMA.
+
+  [Learn more](https://valkey.io/commands/blob.rdma_get/)
++ `BLOB.RDMA_HELLO`
+
+  Opens an RDMA session between the connection and the server.
+
+  [Learn more](https://valkey.io/commands/blob.rdma_hello/)
++ `BLOB.RDMA_SET`
+
+  Stores a large object, read from client memory regions with RDMA.
+
+  [Learn more](https://valkey.io/commands/blob.rdma_set/)
++ `BLOB.TCP_GET`
+
+  Returns a large object, sent inline over the connection.
+
+  [Learn more](https://valkey.io/commands/blob.tcp_get/)
++ `BLOB.TCP_SET`
+
+  Stores a large object, sent inline over the connection.
+
+  [Learn more](https://valkey.io/commands/blob.tcp_set/)
+
 ## Restricted Valkey and Redis OSS commands
 <a name="RestrictedCommandsRedis"></a>
 

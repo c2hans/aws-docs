@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-vpcconnection-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-quicksight-vpcconnection-tag-key)" : {{String}},
   "[Value](#cfn-quicksight-vpcconnection-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-vpcconnection-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-quicksight-vpcconnection-tag-key): {{String}}
   [Value](#cfn-quicksight-vpcconnection-tag-value): {{String}}
 ```

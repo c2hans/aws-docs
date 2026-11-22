@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-networkinsightsanalysis-analysisloadbalancertarget-syntax.json"></a>
 
-```
+```json
 {
   "[Address](#cfn-ec2-networkinsightsanalysis-analysisloadbalancertarget-address)" : {{String}},
   "[AvailabilityZone](#cfn-ec2-networkinsightsanalysis-analysisloadbalancertarget-availabilityzone)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-networkinsightsanalysis-analysisloadbalancertarget-syntax.yaml"></a>
 
-```
+```yaml
   [Address](#cfn-ec2-networkinsightsanalysis-analysisloadbalancertarget-address): {{String}}
   [AvailabilityZone](#cfn-ec2-networkinsightsanalysis-analysisloadbalancertarget-availabilityzone): {{String}}
   [Instance](#cfn-ec2-networkinsightsanalysis-analysisloadbalancertarget-instance): {{

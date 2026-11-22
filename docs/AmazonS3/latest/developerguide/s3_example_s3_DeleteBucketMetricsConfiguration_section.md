@@ -28,7 +28,7 @@ For more information, see [CloudWatch metrics configurations](https://docs.aws.a
 **Tools for PowerShell V4**
 **Example 1: The command removes the metrics filter with name 'testmetrics' in the given S3 bucket.**
 
-```
+```powershell
 Remove-S3BucketMetricsConfiguration -BucketName 'amzn-s3-demo-bucket' -MetricsId 'testmetrics'
 ```
 +  For API details, see [DeleteBucketMetricsConfiguration](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -36,7 +36,7 @@ Remove-S3BucketMetricsConfiguration -BucketName 'amzn-s3-demo-bucket' -MetricsId
 **Tools for PowerShell V5**
 **Example 1: The command removes the metrics filter with name 'testmetrics' in the given S3 bucket.**
 
-```
+```powershell
 Remove-S3BucketMetricsConfiguration -BucketName 'amzn-s3-demo-bucket' -MetricsId 'testmetrics'
 ```
 +  For API details, see [DeleteBucketMetricsConfiguration](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

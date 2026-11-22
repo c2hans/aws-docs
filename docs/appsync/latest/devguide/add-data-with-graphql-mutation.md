@@ -19,7 +19,7 @@ Your next step is to add data to your blank DynamoDB table using a GraphQL mutat
 **Note**
 This mutation is actually sitting in your schema as the `Mutation` type. It has the code:
 
-   ```
+   ```SDL
    type Mutation {
    	createTodo(input: CreateTodoInput!): Todo
    	updateTodo(input: UpdateTodoInput!): Todo
@@ -39,7 +39,7 @@ The attributes you see here are the different modifiable elements of the mutatio
 
 1. In the code editor in the center of the screen, you'll notice that the operation appears underneath the `createTodo` mutation:
 
-   ```
+   ```TypeScript
    mutation createTodo($createtodoinput: CreateTodoInput!) {
      createTodo(input: $createtodoinput) {
        where
@@ -53,7 +53,7 @@ The attributes you see here are the different modifiable elements of the mutatio
 **Note**
 To explain this snippet properly, we must also look at the schema code. The declaration `mutation createTodo($createtodoinput: CreateTodoInput!){}` is the mutation with one of its operations, `createTodo`. The full mutation is located in the schema:
 
-   ```
+   ```SDL
    type Mutation {
    	createTodo(input: CreateTodoInput!): Todo
    	updateTodo(input: UpdateTodoInput!): Todo
@@ -62,7 +62,7 @@ To explain this snippet properly, we must also look at the schema code. The decl
    ```
 Going back to the mutation declaration from the editor, the parameter is an object called `$createtodoinput` with a required input type of `CreateTodoInput`. Note that `CreateTodoInput` (and all inputs in the mutation) are also defined in the schema. For example, here's the boilerplate code for `CreateTodoInput`:
 
-   ```
+   ```SDL
    input CreateTodoInput {
    	name: String
    	when: String
@@ -74,7 +74,7 @@ It contains the fields we defined in our model, namely `name`, `when`, `where`, 
 Going back to the editor code, in `createTodo(input: $createtodoinput) {}`, we declare the input as `$createtodoinput`, which was also used in the mutation declaration. We do this because this allows GraphQL to validate our inputs against the provided types and ensure that they are being used with the correct inputs.
 The final part of the editor code shows the fields that will be returned in the response after an operation is performed:
 
-   ```
+   ```SDL
    {
        where
        when
@@ -86,7 +86,7 @@ The final part of the editor code shows the fields that will be returned in the 
 
    In the **Query variables** tab below this editor, there will be a generic `createtodoinput` object that may have the following data:
 
-   ```
+   ```SDL
    {
      "createtodoinput": {
        "name": "Hello, world!",
@@ -99,7 +99,7 @@ The final part of the editor code shows the fields that will be returned in the 
 **Note**
 This is where we allocate the values for the input mentioned earlier:
 
-   ```
+   ```SDL
    input CreateTodoInput {
    	name: String
    	when: String
@@ -110,7 +110,7 @@ This is where we allocate the values for the input mentioned earlier:
 
    Change the `createtodoinput` by adding information we want to put in our DynamoDB table. In this case, we wanted to create some `Todo` items as reminders:
 
-   ```
+   ```SDL
    {
      "createtodoinput": {
        "name": "Shopping List",
@@ -123,7 +123,7 @@ This is where we allocate the values for the input mentioned earlier:
 
 1. Choose **Run** at the top of the editor. Choose **createTodo** in the drop-down list. On the right-hand side of the editor, you should see the response. It may look something like this:
 
-   ```
+   ```SDL
    {
      "data": {
        "createTodo": {

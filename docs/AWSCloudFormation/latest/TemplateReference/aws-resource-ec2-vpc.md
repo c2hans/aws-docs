@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-vpc-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::VPC",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-vpc-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::VPC
 Properties:
   [CidrBlock](#cfn-ec2-vpc-cidrblock): {{String}}
@@ -226,7 +226,7 @@ The following example specifies a VPC with an IPv4 address.
 #### JSON
 <a name="aws-resource-ec2-vpc--examples--Create_a_VPC_with_an_IPv4_CIDR_block--json"></a>
 
-```
+```json
 {
    "Resources": {
        "myVPC" : {
@@ -247,7 +247,7 @@ The following example specifies a VPC with an IPv4 address.
 #### YAML
 <a name="aws-resource-ec2-vpc--examples--Create_a_VPC_with_an_IPv4_CIDR_block--yaml"></a>
 
-```
+```yaml
 Resources:
   myVPC:
     Type: AWS::EC2::VPC
@@ -268,7 +268,7 @@ The following example specifies a VPC with an IPv4 address range and an IPv6 add
 #### JSON
 <a name="aws-resource-ec2-vpc--examples--Create_a_VPC_with_an_IPv4_CIDR_block_and_an_IPv6_CIDR_block--json"></a>
 
-```
+```json
 {
    "Resources": {
        "myVPC" : {
@@ -298,7 +298,7 @@ The following example specifies a VPC with an IPv4 address range and an IPv6 add
 #### YAML
 <a name="aws-resource-ec2-vpc--examples--Create_a_VPC_with_an_IPv4_CIDR_block_and_an_IPv6_CIDR_block--yaml"></a>
 
-```
+```yaml
 Resources:
   myVPC:
     Type: AWS::EC2::VPC

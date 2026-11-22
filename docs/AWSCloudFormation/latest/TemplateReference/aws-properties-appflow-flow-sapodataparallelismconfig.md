@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-flow-sapodataparallelismconfig-syntax.json"></a>
 
-```
+```json
 {
   "[maxParallelism](#cfn-appflow-flow-sapodataparallelismconfig-maxparallelism)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-flow-sapodataparallelismconfig-syntax.yaml"></a>
 
-```
+```yaml
   [maxParallelism](#cfn-appflow-flow-sapodataparallelismconfig-maxparallelism): {{Integer}}
 ```
 

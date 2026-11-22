@@ -57,7 +57,7 @@ Before you make changes, confirm your current add-on state and record the versio
 
 1. Run the following command to check the current add-on status.
 
-   ```
+   ```bash
    aws eks describe-addon \
      --cluster-name {{cluster-name}} \
      --addon-name amazon-cloudwatch-observability
@@ -79,7 +79,7 @@ Both metric streams incur charges during this phase. We recommend keeping the du
 
 1. Run the following command to update the add-on with both streams enabled.
 
-   ```
+   ```bash
    aws eks update-addon \
      --cluster-name {{cluster-name}} \
      --addon-name amazon-cloudwatch-observability \
@@ -90,7 +90,7 @@ Both metric streams incur charges during this phase. We recommend keeping the du
 
 1. Wait for the add-on status to return to `ACTIVE`.
 
-   ```
+   ```bash
    aws eks describe-addon \
      --cluster-name {{cluster-name}} \
      --addon-name amazon-cloudwatch-observability \
@@ -123,7 +123,7 @@ After you validate that OTel metrics, alarms, and dashboards work correctly, dis
 
 1. Run the following command to disable Classic metrics publishing.
 
-   ```
+   ```bash
    aws eks update-addon \
      --cluster-name {{cluster-name}} \
      --addon-name amazon-cloudwatch-observability \
@@ -156,7 +156,7 @@ If you encounter issues after migration, you can restore the previous Classic co
 
 1. Run the following command to downgrade the add-on.
 
-   ```
+   ```bash
    aws eks update-addon \
      --cluster-name {{cluster-name}} \
      --addon-name amazon-cloudwatch-observability \
@@ -166,7 +166,7 @@ If you encounter issues after migration, you can restore the previous Classic co
 
 1. Wait for the add-on status to return to `ACTIVE`.
 
-   ```
+   ```bash
    aws eks describe-addon \
      --cluster-name {{cluster-name}} \
      --addon-name amazon-cloudwatch-observability \

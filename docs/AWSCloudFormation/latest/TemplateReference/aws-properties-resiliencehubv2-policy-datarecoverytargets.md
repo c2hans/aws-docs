@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-resiliencehubv2-policy-datarecoverytargets-syntax.json"></a>
 
-```
+```json
 {
   "[TimeBetweenBackupsInMinutes](#cfn-resiliencehubv2-policy-datarecoverytargets-timebetweenbackupsinminutes)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-resiliencehubv2-policy-datarecoverytargets-syntax.yaml"></a>
 
-```
+```yaml
   [TimeBetweenBackupsInMinutes](#cfn-resiliencehubv2-policy-datarecoverytargets-timebetweenbackupsinminutes): {{Integer}}
 ```
 

@@ -78,7 +78,7 @@ As the account administrator, imagine that you want to allow the IAM user `DevUs
 **Example identity-based policy attached to DevUser**
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -112,7 +112,7 @@ To enforce the acceptable source identity values, you can configure the followin
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -142,7 +142,7 @@ Using the credentials for the IAM user `DevUser`, the user attempts to assume th
 
 **Example AssumeRole CLI request**
 
-```
+```http
 aws sts assume-role \
 --role-arn arn:aws:iam::123456789012:role/Developer_Role \
 --role-session-name Dev-project \
@@ -165,7 +165,7 @@ The `AssumeRole` operation returns a set of temporary credentials that you can u
 
 **Example AssumeRole CLI request**
 
-```
+```http
 aws sts assume-role \
 --role-arn arn:aws:iam::123456789012:role/developer \
 --role-session-name Audit \
@@ -195,7 +195,7 @@ To pass this attribute, include the following element in your SAML assertion.
 
 **Example snippet of a SAML assertion**
 
-```
+```xml
 <Attribute Name="https://aws.amazon.com/SAML/Attributes/SourceIdentity">
 <AttributeValue>DiegoRamirez</AttributeValue>
 </Attribute>
@@ -212,7 +212,7 @@ For example, the following decoded JWT is a token that is used to call `AssumeRo
 
 **Example decoded JSON Web Token**
 
-```
+```json
 {
     "sub": "john",
     "aud": "ac_oic_client",
@@ -239,7 +239,7 @@ Imagine that you want to require your developers to set a source identity to ass
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -293,7 +293,7 @@ Alternatively, if you use an OIDC provider for federation and users are authenti
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -336,7 +336,7 @@ Imagine that you want to allow users who have assumed `CriticalRole` to assume a
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -364,7 +364,7 @@ To secure setting source identity across the account boundary, the following rol
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -393,7 +393,7 @@ The user makes the following call using role session credentials obtained from a
 
 **Example AssumeRole CLI request**
 
-```
+```http
 aws sts assume-role \
 --role-arn arn:aws:iam::{{222222222222}}:role/CriticalRole_2 \
 --role-session-name Audit \
@@ -410,7 +410,7 @@ For example, assume that a user makes an AWS STS `AssumeRole` request, and sets 
 
 **Example requestParameters section in an AWS CloudTrail log**
 
-```
+```json
 "eventVersion": "1.05",
     "userIdentity": {
         "type": "AWSAccount",
@@ -434,7 +434,7 @@ If the user uses the assumed role session to perform an action, the source ident
 
 **Example userIdentity key in an AWS CloudTrail log**
 
-```
+```json
 {
   "eventVersion": "1.08",
   "userIdentity": {

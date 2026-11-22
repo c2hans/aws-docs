@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-rule-submitautoevaluationaction-syntax.json"></a>
 
-```
+```json
 {
   "[EvaluationFormArn](#cfn-connect-rule-submitautoevaluationaction-evaluationformarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-rule-submitautoevaluationaction-syntax.yaml"></a>
 
-```
+```yaml
   [EvaluationFormArn](#cfn-connect-rule-submitautoevaluationaction-evaluationformarn): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-networkmanager-transitgatewayregistration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::NetworkManager::TransitGatewayRegistration",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-networkmanager-transitgatewayregistration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::NetworkManager::TransitGatewayRegistration
 Properties:
   [GlobalNetworkId](#cfn-networkmanager-transitgatewayregistration-globalnetworkid): {{String}}
@@ -78,7 +78,7 @@ The following example registers a transit gateway in a global network.
 #### JSON
 <a name="aws-resource-networkmanager-transitgatewayregistration--examples--Transit_Gateway_Registration--json"></a>
 
-```
+```json
 {
     "Type": "AWS::NetworkManager::TransitGatewayRegistration",
     "Properties": {
@@ -95,7 +95,7 @@ The following example registers a transit gateway in a global network.
 #### YAML
 <a name="aws-resource-networkmanager-transitgatewayregistration--examples--Transit_Gateway_Registration--yaml"></a>
 
-```
+```yaml
 Type: AWS::NetworkManager::TransitGatewayRegistration
 Properties:
   GlobalNetworkId: !Ref GlobalNetwork

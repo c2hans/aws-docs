@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-webfunctionendpoint-throttleconfig-syntax.json"></a>
 
-```
+```json
 {
   "[RateLimit](#cfn-lambda-webfunctionendpoint-throttleconfig-ratelimit)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-webfunctionendpoint-throttleconfig-syntax.yaml"></a>
 
-```
+```yaml
   [RateLimit](#cfn-lambda-webfunctionendpoint-throttleconfig-ratelimit): {{Integer}}
 ```
 

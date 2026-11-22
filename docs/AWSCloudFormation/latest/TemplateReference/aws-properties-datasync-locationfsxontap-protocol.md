@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datasync-locationfsxontap-protocol-syntax.json"></a>
 
-```
+```json
 {
   "[NFS](#cfn-datasync-locationfsxontap-protocol-nfs)" : {{NFS}},
   "[SMB](#cfn-datasync-locationfsxontap-protocol-smb)" : {{SMB}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datasync-locationfsxontap-protocol-syntax.yaml"></a>
 
-```
+```yaml
   [NFS](#cfn-datasync-locationfsxontap-protocol-nfs): {{
     NFS}}
   [SMB](#cfn-datasync-locationfsxontap-protocol-smb): {{

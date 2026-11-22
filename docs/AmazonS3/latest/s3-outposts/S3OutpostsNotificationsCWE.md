@@ -12,7 +12,7 @@ For S3 on Outposts object operations, AWS API call events sent by CloudTrail wil
 **Example**
 The following is a sample rule for the `DeleteObject` operation. To use this sample rule, replace `{{amzn-s3-demo-bucket1}}` with the name of your S3 on Outposts bucket.
 
-```
+```JSON
 {
   "source": [
     "aws.s3-outposts"

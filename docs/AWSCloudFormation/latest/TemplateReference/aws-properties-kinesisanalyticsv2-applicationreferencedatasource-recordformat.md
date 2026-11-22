@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisanalyticsv2-applicationreferencedatasource-recordformat-syntax.json"></a>
 
-```
+```json
 {
   "[MappingParameters](#cfn-kinesisanalyticsv2-applicationreferencedatasource-recordformat-mappingparameters)" : {{MappingParameters}},
   "[RecordFormatType](#cfn-kinesisanalyticsv2-applicationreferencedatasource-recordformat-recordformattype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisanalyticsv2-applicationreferencedatasource-recordformat-syntax.yaml"></a>
 
-```
+```yaml
   [MappingParameters](#cfn-kinesisanalyticsv2-applicationreferencedatasource-recordformat-mappingparameters): {{
     MappingParameters}}
   [RecordFormatType](#cfn-kinesisanalyticsv2-applicationreferencedatasource-recordformat-recordformattype): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-datasetsemanticmetadata-syntax.json"></a>
 
-```
+```json
 {
   "[CustomInstructions](#cfn-quicksight-dataset-datasetsemanticmetadata-custominstructions)" : {{[ CustomInstruction, ... ]}},
   "[Description](#cfn-quicksight-dataset-datasetsemanticmetadata-description)" : {{DataSetSemanticDescription}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-datasetsemanticmetadata-syntax.yaml"></a>
 
-```
+```yaml
   [CustomInstructions](#cfn-quicksight-dataset-datasetsemanticmetadata-custominstructions): {{
     - CustomInstruction}}
   [Description](#cfn-quicksight-dataset-datasetsemanticmetadata-description): {{

@@ -46,13 +46,13 @@ Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run
 
 1. If the instance is running, stop it by using the [stop-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/stop-instances.html) command.
 
-   ```
+   ```bash
    aws ec2 stop-instances --instance-ids {{i-1234567890abcdef0}}
    ```
 
 1. Enable EBS optimization by using the [modify-instance-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-attribute.html) command with the `--ebs-optimized` option.
 
-   ```
+   ```bash
    aws ec2 modify-instance-attribute \
        --instance-id {{i-1234567890abcdef0}} \
        --ebs-optimized
@@ -68,13 +68,13 @@ Use the [New-EC2Instance](https://docs.aws.amazon.com/powershell/latest/referenc
 
 1. If the instance is running, stop it by using the [Stop-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Stop-EC2Instance.html) cmdlet.
 
-   ```
+   ```powershell
    Stop-EC2Instance -InstanceId {{i-1234567890abcdef0}}
    ```
 
 1. Enable EBS optimization by using the [Edit-EC2InstanceAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceAttribute.html) cmdlet with the `-EbsOptimized` option.
 
-   ```
+   ```powershell
    Edit-EC2InstanceAttribute `
        -InstanceId {{i-1234567890abcdef0}} `
        -EbsOptimized $true

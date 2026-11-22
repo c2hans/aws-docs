@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-appintegrations-eventintegration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppIntegrations::EventIntegration",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-appintegrations-eventintegration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppIntegrations::EventIntegration
 Properties:
   [Description](#cfn-appintegrations-eventintegration-description): {{String}}

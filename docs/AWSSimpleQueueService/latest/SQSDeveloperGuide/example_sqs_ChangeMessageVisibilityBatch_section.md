@@ -57,7 +57,7 @@ For more information, see [Amazon SQS visibility timeout](https://docs.aws.amazo
 **Tools for PowerShell V4**
 **Example 1: This example changes the visibility timeout for 2 messages with the specified receipt handles in the specified queue. The first message's visibility timeout is changed to 10 hours (10 hours \* 60 minutes \* 60 seconds = 36000 seconds). The second message's visibility timeout is changed to 5 hours (5 hours \* 60 minutes \* 60 seconds = 18000 seconds).**
 
-```
+```powershell
 $changeVisibilityRequest1 = New-Object Amazon.SQS.Model.ChangeMessageVisibilityBatchRequestEntry
 $changeVisibilityRequest1.Id = "Request1"
 $changeVisibilityRequest1.ReceiptHandle = "AQEBd329...v6gl8Q=="
@@ -82,7 +82,7 @@ Failed    Successful
 **Tools for PowerShell V5**
 **Example 1: This example changes the visibility timeout for 2 messages with the specified receipt handles in the specified queue. The first message's visibility timeout is changed to 10 hours (10 hours \* 60 minutes \* 60 seconds = 36000 seconds). The second message's visibility timeout is changed to 5 hours (5 hours \* 60 minutes \* 60 seconds = 18000 seconds).**
 
-```
+```powershell
 $changeVisibilityRequest1 = New-Object Amazon.SQS.Model.ChangeMessageVisibilityBatchRequestEntry
 $changeVisibilityRequest1.Id = "Request1"
 $changeVisibilityRequest1.ReceiptHandle = "AQEBd329...v6gl8Q=="

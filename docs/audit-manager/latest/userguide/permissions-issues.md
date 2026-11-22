@@ -66,7 +66,7 @@ Here’s an example of such an SCP. With this SCP in place, your delegated admin
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

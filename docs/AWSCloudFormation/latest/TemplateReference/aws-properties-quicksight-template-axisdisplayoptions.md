@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-axisdisplayoptions-syntax.json"></a>
 
-```
+```json
 {
   "[AxisLineVisibility](#cfn-quicksight-template-axisdisplayoptions-axislinevisibility)" : {{String}},
   "[AxisOffset](#cfn-quicksight-template-axisdisplayoptions-axisoffset)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-axisdisplayoptions-syntax.yaml"></a>
 
-```
+```yaml
   [AxisLineVisibility](#cfn-quicksight-template-axisdisplayoptions-axislinevisibility): {{String}}
   [AxisOffset](#cfn-quicksight-template-axisdisplayoptions-axisoffset): {{String}}
   [DataOptions](#cfn-quicksight-template-axisdisplayoptions-dataoptions): {{

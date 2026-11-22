@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-forwardconfig-syntax.json"></a>
 
-```
+```json
 {
   "[TargetGroups](#cfn-elasticloadbalancingv2-listenerrule-forwardconfig-targetgroups)" : {{[ TargetGroupTuple, ... ]}},
   "[TargetGroupStickinessConfig](#cfn-elasticloadbalancingv2-listenerrule-forwardconfig-targetgroupstickinessconfig)" : {{TargetGroupStickinessConfig}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-forwardconfig-syntax.yaml"></a>
 
-```
+```yaml
   [TargetGroups](#cfn-elasticloadbalancingv2-listenerrule-forwardconfig-targetgroups): {{
     - TargetGroupTuple}}
   [TargetGroupStickinessConfig](#cfn-elasticloadbalancingv2-listenerrule-forwardconfig-targetgroupstickinessconfig): {{
@@ -61,7 +61,7 @@ The following example sets the relative weight of traffic between two traffic gr
 #### YAML
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-forwardconfig--examples----yaml"></a>
 
-```
+```yaml
 myListenerRule:
   Type: 'AWS::ElasticLoadBalancingV2::ListenerRule'
   Properties:
@@ -84,7 +84,7 @@ myListenerRule:
 #### JSON
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-forwardconfig--examples----json"></a>
 
-```
+```json
 {
     "myListenerRule": {
         "Type": "AWS::ElasticLoadBalancingV2::ListenerRule",

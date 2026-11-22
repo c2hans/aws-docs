@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-flowversion-vectorsearchrerankingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BedrockRerankingConfiguration](#cfn-bedrock-flowversion-vectorsearchrerankingconfiguration-bedrockrerankingconfiguration)" : {{VectorSearchBedrockRerankingConfiguration}},
   "[Type](#cfn-bedrock-flowversion-vectorsearchrerankingconfiguration-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-flowversion-vectorsearchrerankingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BedrockRerankingConfiguration](#cfn-bedrock-flowversion-vectorsearchrerankingconfiguration-bedrockrerankingconfiguration): {{
     VectorSearchBedrockRerankingConfiguration}}
   [Type](#cfn-bedrock-flowversion-vectorsearchrerankingconfiguration-type): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-computeoptimizer-automationrule-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-computeoptimizer-automationrule-tag-key)" : {{String}},
   "[Value](#cfn-computeoptimizer-automationrule-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-computeoptimizer-automationrule-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-computeoptimizer-automationrule-tag-key): {{String}}
   [Value](#cfn-computeoptimizer-automationrule-tag-value): {{String}}
 ```

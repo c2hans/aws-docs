@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-b2bi-partnership-x12interchangecontrolheaders-syntax.json"></a>
 
-```
+```json
 {
   "[AcknowledgmentRequestedCode](#cfn-b2bi-partnership-x12interchangecontrolheaders-acknowledgmentrequestedcode)" : {{String}},
   "[ReceiverId](#cfn-b2bi-partnership-x12interchangecontrolheaders-receiverid)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-b2bi-partnership-x12interchangecontrolheaders-syntax.yaml"></a>
 
-```
+```yaml
   [AcknowledgmentRequestedCode](#cfn-b2bi-partnership-x12interchangecontrolheaders-acknowledgmentrequestedcode): {{String}}
   [ReceiverId](#cfn-b2bi-partnership-x12interchangecontrolheaders-receiverid): {{String}}
   [ReceiverIdQualifier](#cfn-b2bi-partnership-x12interchangecontrolheaders-receiveridqualifier): {{String}}

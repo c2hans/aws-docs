@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-transfer-hostkey-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Transfer::HostKey",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-transfer-hostkey-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Transfer::HostKey
 Properties:
   [Description](#cfn-transfer-hostkey-description): {{String}}

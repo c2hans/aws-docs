@@ -201,7 +201,7 @@ For the ESM module format, enabling Application Signals through the console or b
 
 1. Add the environmental variables `OTEL_RESOURCE_ATTRIBUTES_POD_NAME`, `OTEL_RESOURCE_ATTRIBUTES_NODE_NAME`, `OTEL_RESOURCE_ATTRIBUTES_DEPLOYMENT_NAME`, `POD_NAMESPACE` and `OTEL_RESOURCE_ATTRIBUTES` to the deployment yaml file for the application. For example:
 
-   ```
+   ```yaml
    apiVersion: apps/v1
    kind: Deployment
    metadata:

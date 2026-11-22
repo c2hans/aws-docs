@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-databrew-job-recipe-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-databrew-job-recipe-name)" : {{String}},
   "[Version](#cfn-databrew-job-recipe-version)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-databrew-job-recipe-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-databrew-job-recipe-name): {{String}}
   [Version](#cfn-databrew-job-recipe-version): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisvideo-stream-streamstorageconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultStorageTier](#cfn-kinesisvideo-stream-streamstorageconfiguration-defaultstoragetier)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisvideo-stream-streamstorageconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultStorageTier](#cfn-kinesisvideo-stream-streamstorageconfiguration-defaultstoragetier): {{String}}
 ```
 

@@ -26,7 +26,7 @@ Application Auto Scaling requires permissions to create a service-linked role th
 
 For automatic role creation to succeed, users must have permission for the `iam:CreateServiceLinkedRole` action.
 
-```
+```json
 "Action": "iam:CreateServiceLinkedRole"
 ```
 
@@ -37,7 +37,7 @@ The following is an identity-based policy that grants permission to create a ser
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

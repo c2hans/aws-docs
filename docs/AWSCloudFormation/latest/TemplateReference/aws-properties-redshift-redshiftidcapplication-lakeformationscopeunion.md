@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-redshift-redshiftidcapplication-lakeformationscopeunion-syntax.json"></a>
 
-```
+```json
 {
   "[LakeFormationQuery](#cfn-redshift-redshiftidcapplication-lakeformationscopeunion-lakeformationquery)" : {{LakeFormationQuery}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-redshift-redshiftidcapplication-lakeformationscopeunion-syntax.yaml"></a>
 
-```
+```yaml
   [LakeFormationQuery](#cfn-redshift-redshiftidcapplication-lakeformationscopeunion-lakeformationquery): {{
     LakeFormationQuery}}
 ```

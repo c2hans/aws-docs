@@ -25,7 +25,7 @@ This example adds an Amazon Route 53 resource record set containing an `SPF` re
 #### JSON
 <a name="quickref-route53-example-1.json"></a>
 
-```
+```json
  1. "myDNSRecord" : {
  2.   "Type" : "AWS::Route53::RecordSet",
  3.   "Properties" :
@@ -42,7 +42,7 @@ This example adds an Amazon Route 53 resource record set containing an `SPF` re
 #### YAML
 <a name="quickref-route53-example-1.yaml"></a>
 
-```
+```yaml
 1. myDNSRecord:
 2.   Type: AWS::Route53::RecordSet
 3.   Properties:
@@ -62,7 +62,7 @@ This example adds an Amazon Route 53 resource record set for the domain name "m
 #### JSON
 <a name="quickref-route53-example-2.json"></a>
 
-```
+```json
  1. "myDNSRecord2" : {
  2.             "Type" : "AWS::Route53::RecordSet",
  3.             "Properties" : {
@@ -81,7 +81,7 @@ This example adds an Amazon Route 53 resource record set for the domain name "m
 #### YAML
 <a name="quickref-route53-example-2.yaml"></a>
 
-```
+```yaml
  1. myDNSRecord2:
  2.   Type: AWS::Route53::RecordSet
  3.   Properties:
@@ -106,7 +106,7 @@ For more information about weighted resource record sets, see [Weighted routing]
 ### JSON
 <a name="quickref-route53-example-3.json"></a>
 
-```
+```json
  1.         "myDNSOne" : {
  2.             "Type" : "AWS::Route53::RecordSetGroup",
  3.             "Properties" : {
@@ -137,7 +137,7 @@ For more information about weighted resource record sets, see [Weighted routing]
 ### YAML
 <a name="quickref-route53-example-3.yaml"></a>
 
-```
+```yaml
  1. myDNSOne:
  2.   Type: AWS::Route53::RecordSetGroup
  3.   Properties:
@@ -172,7 +172,7 @@ For more information about alias resource record sets, see [Choosing between ali
 ### JSON for version 1 load balancer
 <a name="quickref-route53-example-4.json"></a>
 
-```
+```json
  1.       "myELB" : {
  2.         "Type" : "AWS::ElasticLoadBalancing::LoadBalancer",
  3.         "Properties" : {
@@ -206,7 +206,7 @@ For more information about alias resource record sets, see [Choosing between ali
 ### YAML for version 1 load balancer
 <a name="quickref-route53-example-4.yaml"></a>
 
-```
+```yaml
  1. myELB:
  2.   Type: AWS::ElasticLoadBalancing::LoadBalancer
  3.   Properties:
@@ -232,7 +232,7 @@ For more information about alias resource record sets, see [Choosing between ali
 ### JSON for version 2 load balancer
 <a name="quickref-route53-example-4-v2.json"></a>
 
-```
+```json
  1.       "myELB" : {
  2.         "Type" : "AWS::ElasticLoadBalancing::LoadBalancer",
  3.         "Properties" : {
@@ -264,7 +264,7 @@ For more information about alias resource record sets, see [Choosing between ali
 ### YAML for version 2 load balancer
 <a name="quickref-route53-example-4-v2.yaml"></a>
 
-```
+```yaml
  1. myELB:
  2.   Type: AWS::ElasticLoadBalancingV2::LoadBalancer
  3.   Properties:
@@ -295,7 +295,7 @@ When you create alias resource record sets, you must specify `Z2FDTNDATAQYW2` fo
 ### JSON
 <a name="quickref-route53-example-5.json"></a>
 
-```
+```json
  1. {
  2.     "myDNS": {
  3.         "Type": "AWS::Route53::RecordSetGroup",
@@ -329,7 +329,7 @@ When you create alias resource record sets, you must specify `Z2FDTNDATAQYW2` fo
 ### YAML
 <a name="quickref-route53-example-5.yaml"></a>
 
-```
+```yaml
  1. myDNS:
  2.   Type: AWS::Route53::RecordSetGroup
  3.   Properties:

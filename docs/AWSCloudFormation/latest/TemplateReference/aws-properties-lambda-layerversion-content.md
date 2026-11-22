@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-layerversion-content-syntax.json"></a>
 
-```
+```json
 {
   "[S3Bucket](#cfn-lambda-layerversion-content-s3bucket)" : {{String}},
   "[S3Key](#cfn-lambda-layerversion-content-s3key)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-layerversion-content-syntax.yaml"></a>
 
-```
+```yaml
   [S3Bucket](#cfn-lambda-layerversion-content-s3bucket): {{String}}
   [S3Key](#cfn-lambda-layerversion-content-s3key): {{String}}
   [S3ObjectStorageMode](#cfn-lambda-layerversion-content-s3objectstoragemode): {{String}}
@@ -81,7 +81,7 @@ The location of a layer archive in Amazon S3.
 #### JSON
 <a name="aws-properties-lambda-layerversion-content--examples--Layer_Content--json"></a>
 
-```
+```json
         "Content": {
             "S3Bucket": "amzn-s3-demo-bucket",
             "S3Key": "layer.zip"
@@ -91,7 +91,7 @@ The location of a layer archive in Amazon S3.
 #### YAML
 <a name="aws-properties-lambda-layerversion-content--examples--Layer_Content--yaml"></a>
 
-```
+```yaml
     Content:
       S3Bucket: amzn-s3-demo-bucket
       S3Key: layer.zip

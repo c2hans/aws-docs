@@ -72,22 +72,22 @@ You cannot enter an access point alias. You must enter the ARN for the access po
 1. To add a metrics configuration, run one of the following commands:
 **Example : To filter by prefix**
 
-   ```
+   ```bash
    aws s3api put-bucket-metrics-configuration --bucket {{{{amzn-s3-demo-bucket}}}} --id {{metrics-config-id}} --metrics-configuration '{"Id":"{{metrics-config-id}}", "Filter":{"Prefix":"{{prefix1}}"}} '
    ```
 **Example : To filter by tags**
 
-   ```
+   ```bash
    aws s3api put-bucket-metrics-configuration --bucket {{{{amzn-s3-demo-bucket}}}} --id {{metrics-config-id}} --metrics-configuration '{"Id":"{{metrics-config-id}}", "Filter":{"Tag": {"Key": "{{string}}", "Value": "{{string}}"}} '
    ```
 **Example : To filter by access point**
 
-   ```
+   ```bash
    aws s3api put-bucket-metrics-configuration --bucket {{{{amzn-s3-demo-bucket}}}} --id {{metrics-config-id}} --metrics-configuration '{"Id":"{{metrics-config-id}}", "Filter":{"AccessPointArn":"arn:aws:s3:{{Region}}:{{account-id}}:accesspoint/{{access-point-name}}"}} '
    ```
 **Example : To filter by prefix, tags, and access point**
 
-   ```
+   ```bash
    aws s3api put-bucket-metrics-configuration --endpoint https://s3.{{Region}}.amazonaws.com --bucket {{{{amzn-s3-demo-bucket}}}} --id {{metrics-config-id}} --metrics-configuration '
    {
        "Id": "{{metrics-config-id}}",

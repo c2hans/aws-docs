@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-runtime-allowedworkloadconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[HostingEnvironments](#cfn-bedrockagentcore-runtime-allowedworkloadconfiguration-hostingenvironments)" : {{[ HostingEnvironment, ... ]}},
   "[WorkloadIdentities](#cfn-bedrockagentcore-runtime-allowedworkloadconfiguration-workloadidentities)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-runtime-allowedworkloadconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [HostingEnvironments](#cfn-bedrockagentcore-runtime-allowedworkloadconfiguration-hostingenvironments): {{
     - HostingEnvironment}}
   [WorkloadIdentities](#cfn-bedrockagentcore-runtime-allowedworkloadconfiguration-workloadidentities): {{

@@ -62,7 +62,7 @@ aws cloudformation describe-stacks --stack-name {{MyStack}}
 
 The following is an example response showing the last operation was a Rollback following a failed Update operation.
 
-```
+```json
 {
     "Stacks": [
         {

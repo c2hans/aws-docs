@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-configuredtable-snowflaketablereference-syntax.json"></a>
 
-```
+```json
 {
   "[AccountIdentifier](#cfn-cleanrooms-configuredtable-snowflaketablereference-accountidentifier)" : {{String}},
   "[DatabaseName](#cfn-cleanrooms-configuredtable-snowflaketablereference-databasename)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-configuredtable-snowflaketablereference-syntax.yaml"></a>
 
-```
+```yaml
   [AccountIdentifier](#cfn-cleanrooms-configuredtable-snowflaketablereference-accountidentifier): {{String}}
   [DatabaseName](#cfn-cleanrooms-configuredtable-snowflaketablereference-databasename): {{String}}
   [SchemaName](#cfn-cleanrooms-configuredtable-snowflaketablereference-schemaname): {{String}}

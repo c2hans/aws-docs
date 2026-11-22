@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-refactorspaces-route-uripathrouteinput-syntax.json"></a>
 
-```
+```json
 {
   "[ActivationState](#cfn-refactorspaces-route-uripathrouteinput-activationstate)" : {{String}},
   "[AppendSourcePath](#cfn-refactorspaces-route-uripathrouteinput-appendsourcepath)" : {{Boolean}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-refactorspaces-route-uripathrouteinput-syntax.yaml"></a>
 
-```
+```yaml
   [ActivationState](#cfn-refactorspaces-route-uripathrouteinput-activationstate): {{String}}
   [AppendSourcePath](#cfn-refactorspaces-route-uripathrouteinput-appendsourcepath): {{Boolean}}
   [IncludeChildPaths](#cfn-refactorspaces-route-uripathrouteinput-includechildpaths): {{Boolean}}

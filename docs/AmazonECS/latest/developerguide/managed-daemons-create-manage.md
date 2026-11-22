@@ -52,7 +52,7 @@ Create a JSON file with your daemon configuration and run the `create-daemon` co
 
 The following is an example JSON file:
 
-```
+```json
 {
     "clusterArn": "arn:aws:ecs:{{us-east-1}}:{{123456789012}}:cluster/{{my-daemon-cluster}}",
     "daemonName": "{{my-monitoring-daemon}}",

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackagev2-originendpoint-dashprograminformation-syntax.json"></a>
 
-```
+```json
 {
   "[Copyright](#cfn-mediapackagev2-originendpoint-dashprograminformation-copyright)" : {{String}},
   "[LanguageCode](#cfn-mediapackagev2-originendpoint-dashprograminformation-languagecode)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackagev2-originendpoint-dashprograminformation-syntax.yaml"></a>
 
-```
+```yaml
   [Copyright](#cfn-mediapackagev2-originendpoint-dashprograminformation-copyright): {{String}}
   [LanguageCode](#cfn-mediapackagev2-originendpoint-dashprograminformation-languagecode): {{String}}
   [MoreInformationUrl](#cfn-mediapackagev2-originendpoint-dashprograminformation-moreinformationurl): {{String}}

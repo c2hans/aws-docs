@@ -35,7 +35,7 @@ The following examples demonstrate CloudTrail logs of these event types:
 ## `UpdateTable`
 <a name="understanding-ddb-log-entries.update-table"></a>
 
-```
+```json
 {
     "Records": [
         {
@@ -120,7 +120,7 @@ The following examples demonstrate CloudTrail logs of these event types:
 ## `DeleteTable`
 <a name="understanding-ddb-log-entries.delete-table"></a>
 
-```
+```json
 {
     "Records": [
         {
@@ -180,7 +180,7 @@ The following examples demonstrate CloudTrail logs of these event types:
 ## `CreateCluster`
 <a name="understanding-ddb-log-entries.create-cluster"></a>
 
-```
+```json
 {
     "Records": [
         {
@@ -251,7 +251,7 @@ The following examples demonstrate CloudTrail logs of these event types:
 ## `PutItem` (Successful)
 <a name="understanding-ddb-log-entries.put-item"></a>
 
-```
+```json
 {
     "Records": [
         {
@@ -319,7 +319,7 @@ The following examples demonstrate CloudTrail logs of these event types:
 ## `UpdateItem` (Unsuccessful)
 <a name="understanding-ddb-log-entries.update-item"></a>
 
-```
+```json
 {
     "Records": [
         {
@@ -390,7 +390,7 @@ The following examples demonstrate CloudTrail logs of these event types:
 ## `TransactWriteItems` (Successful)
 <a name="understanding-ddb-log-entries.transact-write-items"></a>
 
-```
+```json
 {
     "Records": [
         {
@@ -509,7 +509,7 @@ The following examples demonstrate CloudTrail logs of these event types:
 ## `TransactWriteItems` (With `TransactionCanceledException`)
 <a name="understanding-ddb-log-entries.transact-write-items.exception"></a>
 
-```
+```json
 {
     "Records": [
         {
@@ -630,7 +630,7 @@ The following examples demonstrate CloudTrail logs of these event types:
 ## `ExecuteStatement`
 <a name="understanding-ddb-log-entries.execute-statement"></a>
 
-```
+```json
 {
     "Records": [
         {
@@ -688,7 +688,7 @@ The following examples demonstrate CloudTrail logs of these event types:
 ## `BatchExecuteStatement`
 <a name="understanding-ddb-log-entries.batch-execute-statement"></a>
 
-```
+```json
 {
     "Records": [
         {
@@ -753,7 +753,7 @@ The following examples demonstrate CloudTrail logs of these event types:
 ## `GetRecords`
 <a name="understanding-ddb-log-entries.get-records"></a>
 
-```
+```json
 {
     "Records": [
         {

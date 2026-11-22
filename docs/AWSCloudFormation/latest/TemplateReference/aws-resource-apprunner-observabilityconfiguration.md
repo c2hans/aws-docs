@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apprunner-observabilityconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppRunner::ObservabilityConfiguration",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apprunner-observabilityconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppRunner::ObservabilityConfiguration
 Properties:
   [ObservabilityConfigurationName](#cfn-apprunner-observabilityconfiguration-observabilityconfigurationname): {{String}}
@@ -113,7 +113,7 @@ This example illustrates creating an observability configuration that enables tr
 #### JSON
 <a name="aws-resource-apprunner-observabilityconfiguration--examples--Observability_configuration_to_enable_tracing--json"></a>
 
-```
+```json
 {
   "Type": "AWS::AppRunner::ObservabilityConfiguration",
   "Properties": {
@@ -128,7 +128,7 @@ This example illustrates creating an observability configuration that enables tr
 #### YAML
 <a name="aws-resource-apprunner-observabilityconfiguration--examples--Observability_configuration_to_enable_tracing--yaml"></a>
 
-```
+```yaml
 Type: AWS::AppRunner::ObservabilityConfiguration
 Properties:
   ObservabilityConfigurationName: xray-tracing

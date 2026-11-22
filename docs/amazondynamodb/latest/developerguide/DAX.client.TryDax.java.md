@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 
 # TryDax.java
 
-```
+```java
 import java.util.Map;
 
 import software.amazon.awssdk.services.dynamodb.DynamoDbAsyncClient;

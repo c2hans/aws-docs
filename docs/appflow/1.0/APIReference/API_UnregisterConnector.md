@@ -81,14 +81,14 @@ This example shows a sample request for the `UnregisterConnector` API and a samp
 #### Sample Request
 <a name="API_UnregisterConnector_Example_1_Request"></a>
 
-```
+```json
 {
   "connectorLabel": "MySampleCustomConnector",
   "forceDelete": true
 }
 ```
 
-```
+```json
 {
   "message": "Conflict executing request: Connector: MySampleCustomConnector is associated with one or more connector profiles. If you still want to *delete* it, *then* make *delete* request *with* forceDelete flag *as* true. *Some* of the associated connector profiles are: [myTestProfile1, myTestProfile2]"
 }

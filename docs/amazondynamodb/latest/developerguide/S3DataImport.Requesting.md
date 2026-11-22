@@ -30,7 +30,7 @@ You can import data from any Amazon S3 bucket you have permission to read from. 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -95,7 +95,7 @@ When starting an import on an Amazon S3 bucket source that is owned by another a
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

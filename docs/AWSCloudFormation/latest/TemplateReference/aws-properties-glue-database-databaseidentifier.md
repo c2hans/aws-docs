@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-database-databaseidentifier-syntax.json"></a>
 
-```
+```json
 {
   "[CatalogId](#cfn-glue-database-databaseidentifier-catalogid)" : {{String}},
   "[DatabaseName](#cfn-glue-database-databaseidentifier-databasename)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-database-databaseidentifier-syntax.yaml"></a>
 
-```
+```yaml
   [CatalogId](#cfn-glue-database-databaseidentifier-catalogid): {{String}}
   [DatabaseName](#cfn-glue-database-databaseidentifier-databasename): {{String}}
   [Region](#cfn-glue-database-databaseidentifier-region): {{String}}

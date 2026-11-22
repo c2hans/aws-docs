@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-association-awsresource-syntax.json"></a>
 
-```
+```json
 {
   "[ResourceArn](#cfn-devopsagent-association-awsresource-resourcearn)" : {{String}},
   "[ResourceMetadata](#cfn-devopsagent-association-awsresource-resourcemetadata)" : {{Json}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-association-awsresource-syntax.yaml"></a>
 
-```
+```yaml
   [ResourceArn](#cfn-devopsagent-association-awsresource-resourcearn): {{String}}
   [ResourceMetadata](#cfn-devopsagent-association-awsresource-resourcemetadata): {{Json}}
   [ResourceType](#cfn-devopsagent-association-awsresource-resourcetype): {{String}}

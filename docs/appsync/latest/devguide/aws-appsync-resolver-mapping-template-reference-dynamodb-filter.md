@@ -8,7 +8,7 @@ When querying objects in DynamoDB using the `Query` and `Scan` operations, you c
 
 The filter mapping section of a `Query` or `Scan` mapping document has the following structure:
 
-```
+```TypeScript
 "filter" : {
     "expression" : "filter expression"
     "expressionNames" : {
@@ -36,7 +36,7 @@ The substitutions for expression attribute *value* placeholders, in the form of 
 
 The following example is a filter section for a mapping template, where entries retrieved from DynamoDB are only returned if the title starts with the `title` argument.
 
-```
+```TypeScript
 "filter" : {
     "expression" : "begins_with(#title, :title)",
     "expressionNames" : {

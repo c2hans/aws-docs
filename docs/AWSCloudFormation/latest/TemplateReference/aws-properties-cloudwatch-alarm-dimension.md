@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-alarm-dimension-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-cloudwatch-alarm-dimension-name)" : {{String}},
   "[Value](#cfn-cloudwatch-alarm-dimension-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-alarm-dimension-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-cloudwatch-alarm-dimension-name): {{String}}
   [Value](#cfn-cloudwatch-alarm-dimension-value): {{String}}
 ```
@@ -61,7 +61,7 @@ The [Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrins
 #### JSON
 <a name="aws-properties-cloudwatch-alarm-dimension--examples--Two_alarms_with_dimension_values_supplied_by_the_Ref_function--json"></a>
 
-```
+```json
 {
     "CPUAlarmHigh": {
         "Type": "AWS::CloudWatch::Alarm",
@@ -121,7 +121,7 @@ The [Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrins
 #### YAML
 <a name="aws-properties-cloudwatch-alarm-dimension--examples--Two_alarms_with_dimension_values_supplied_by_the_Ref_function--yaml"></a>
 
-```
+```yaml
 CPUAlarmHigh:
   Type: 'AWS::CloudWatch::Alarm'
   Properties:

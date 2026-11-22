@@ -27,7 +27,7 @@ You can't delete a placement group that is a parent of a cluster placement group
 **To delete a placement group**
 Use the [delete-placement-group](https://docs.aws.amazon.com/cli/latest/reference/ec2/delete-placement-group.html) command.
 
-```
+```bash
 aws ec2 delete-placement-group --group-name {{my-cluster}}
 ```
 
@@ -37,7 +37,7 @@ aws ec2 delete-placement-group --group-name {{my-cluster}}
 **To delete a placement group**
 Use the [Remove-EC2PlacementGroup](https://docs.aws.amazon.com/powershell/latest/reference/items/Remove-EC2PlacementGroup.html) cmdlet.
 
-```
+```powershell
 Remove-EC2PlacementGroup -GroupName {{my-cluster}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskdefinition-dockervolumeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Autoprovision](#cfn-ecs-taskdefinition-dockervolumeconfiguration-autoprovision)" : {{Boolean}},
   "[Driver](#cfn-ecs-taskdefinition-dockervolumeconfiguration-driver)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskdefinition-dockervolumeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Autoprovision](#cfn-ecs-taskdefinition-dockervolumeconfiguration-autoprovision): {{Boolean}}
   [Driver](#cfn-ecs-taskdefinition-dockervolumeconfiguration-driver): {{String}}
   [DriverOpts](#cfn-ecs-taskdefinition-dockervolumeconfiguration-driveropts): {{

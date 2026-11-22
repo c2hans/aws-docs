@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codepipeline-customactiontype-settings-syntax.json"></a>
 
-```
+```json
 {
   "[EntityUrlTemplate](#cfn-codepipeline-customactiontype-settings-entityurltemplate)" : {{String}},
   "[ExecutionUrlTemplate](#cfn-codepipeline-customactiontype-settings-executionurltemplate)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codepipeline-customactiontype-settings-syntax.yaml"></a>
 
-```
+```yaml
   [EntityUrlTemplate](#cfn-codepipeline-customactiontype-settings-entityurltemplate): {{String}}
   [ExecutionUrlTemplate](#cfn-codepipeline-customactiontype-settings-executionurltemplate): {{String}}
   [RevisionUrlTemplate](#cfn-codepipeline-customactiontype-settings-revisionurltemplate): {{String}}

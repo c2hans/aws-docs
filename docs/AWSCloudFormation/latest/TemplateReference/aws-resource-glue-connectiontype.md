@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-glue-connectiontype-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Glue::ConnectionType",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-glue-connectiontype-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Glue::ConnectionType
 Properties:
   [ConnectionProperties](#cfn-glue-connectiontype-connectionproperties): {{

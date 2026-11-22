@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-observabilityadmin-s3tableintegration-encryptionconfig-syntax.json"></a>
 
-```
+```json
 {
   "[KmsKeyArn](#cfn-observabilityadmin-s3tableintegration-encryptionconfig-kmskeyarn)" : {{String}},
   "[SseAlgorithm](#cfn-observabilityadmin-s3tableintegration-encryptionconfig-ssealgorithm)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-observabilityadmin-s3tableintegration-encryptionconfig-syntax.yaml"></a>
 
-```
+```yaml
   [KmsKeyArn](#cfn-observabilityadmin-s3tableintegration-encryptionconfig-kmskeyarn): {{String}}
   [SseAlgorithm](#cfn-observabilityadmin-s3tableintegration-encryptionconfig-ssealgorithm): {{String}}
 ```

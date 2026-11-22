@@ -48,7 +48,7 @@ Use the IAM console to update your task execution role with the required permiss
 
 1.
 
-   ```
+   ```JSON
    {
        "executionRoleArn": "{{arn:aws:iam::{{aws_account_id}}:role/ecsTaskExecutionRole}}",
        "containerDefinitions": [

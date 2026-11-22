@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-customentityconfig-syntax.json"></a>
 
-```
+```json
 {
   "[CustomDataIdentifiers](#cfn-cleanroomsml-configuredmodelalgorithmassociation-customentityconfig-customdataidentifiers)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-customentityconfig-syntax.yaml"></a>
 
-```
+```yaml
   [CustomDataIdentifiers](#cfn-cleanroomsml-configuredmodelalgorithmassociation-customentityconfig-customdataidentifiers): {{
     - String}}
 ```

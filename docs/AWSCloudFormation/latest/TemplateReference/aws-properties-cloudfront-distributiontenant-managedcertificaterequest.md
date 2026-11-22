@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distributiontenant-managedcertificaterequest-syntax.json"></a>
 
-```
+```json
 {
   "[CertificateTransparencyLoggingPreference](#cfn-cloudfront-distributiontenant-managedcertificaterequest-certificatetransparencyloggingpreference)" : {{String}},
   "[PrimaryDomainName](#cfn-cloudfront-distributiontenant-managedcertificaterequest-primarydomainname)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distributiontenant-managedcertificaterequest-syntax.yaml"></a>
 
-```
+```yaml
   [CertificateTransparencyLoggingPreference](#cfn-cloudfront-distributiontenant-managedcertificaterequest-certificatetransparencyloggingpreference): {{String}}
   [PrimaryDomainName](#cfn-cloudfront-distributiontenant-managedcertificaterequest-primarydomainname): {{String}}
   [ValidationTokenHost](#cfn-cloudfront-distributiontenant-managedcertificaterequest-validationtokenhost): {{String}}

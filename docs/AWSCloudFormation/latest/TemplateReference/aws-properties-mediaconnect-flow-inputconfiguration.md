@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-flow-inputconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[InputPort](#cfn-mediaconnect-flow-inputconfiguration-inputport)" : {{Integer}},
   "[Interface](#cfn-mediaconnect-flow-inputconfiguration-interface)" : {{Interface}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-flow-inputconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [InputPort](#cfn-mediaconnect-flow-inputconfiguration-inputport): {{Integer}}
   [Interface](#cfn-mediaconnect-flow-inputconfiguration-interface): {{
     Interface}}

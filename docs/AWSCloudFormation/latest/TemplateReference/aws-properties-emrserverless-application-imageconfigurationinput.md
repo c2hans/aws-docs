@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrserverless-application-imageconfigurationinput-syntax.json"></a>
 
-```
+```json
 {
   "[ImageUri](#cfn-emrserverless-application-imageconfigurationinput-imageuri)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrserverless-application-imageconfigurationinput-syntax.yaml"></a>
 
-```
+```yaml
   [ImageUri](#cfn-emrserverless-application-imageconfigurationinput-imageuri): {{String}}
 ```
 

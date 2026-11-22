@@ -47,7 +47,7 @@ Creates a portal preview.
 #### BadRequestExceptionResponseContent schema
 <a name="portals-portalid-preview-response-body-badrequestexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -56,7 +56,7 @@ Creates a portal preview.
 #### AccessDeniedExceptionResponseContent schema
 <a name="portals-portalid-preview-response-body-accessdeniedexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -65,7 +65,7 @@ Creates a portal preview.
 #### NotFoundExceptionResponseContent schema
 <a name="portals-portalid-preview-response-body-notfoundexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -75,7 +75,7 @@ Creates a portal preview.
 #### ConflictExceptionResponseContent schema
 <a name="portals-portalid-preview-response-body-conflictexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -84,7 +84,7 @@ Creates a portal preview.
 #### LimitExceededExceptionResponseContent schema
 <a name="portals-portalid-preview-response-body-limitexceededexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisanalyticsv2-application-runconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ApplicationRestoreConfiguration](#cfn-kinesisanalyticsv2-application-runconfiguration-applicationrestoreconfiguration)" : {{ApplicationRestoreConfiguration}},
   "[FlinkRunConfiguration](#cfn-kinesisanalyticsv2-application-runconfiguration-flinkrunconfiguration)" : {{FlinkRunConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisanalyticsv2-application-runconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ApplicationRestoreConfiguration](#cfn-kinesisanalyticsv2-application-runconfiguration-applicationrestoreconfiguration): {{
     ApplicationRestoreConfiguration}}
   [FlinkRunConfiguration](#cfn-kinesisanalyticsv2-application-runconfiguration-flinkrunconfiguration): {{

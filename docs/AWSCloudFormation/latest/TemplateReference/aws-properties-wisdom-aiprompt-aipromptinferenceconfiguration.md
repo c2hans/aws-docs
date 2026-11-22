@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-aiprompt-aipromptinferenceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MaxTokensToSample](#cfn-wisdom-aiprompt-aipromptinferenceconfiguration-maxtokenstosample)" : {{Integer}},
   "[Temperature](#cfn-wisdom-aiprompt-aipromptinferenceconfiguration-temperature)" : {{Number}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-aiprompt-aipromptinferenceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MaxTokensToSample](#cfn-wisdom-aiprompt-aipromptinferenceconfiguration-maxtokenstosample): {{Integer}}
   [Temperature](#cfn-wisdom-aiprompt-aipromptinferenceconfiguration-temperature): {{Number}}
   [TopK](#cfn-wisdom-aiprompt-aipromptinferenceconfiguration-topk): {{Integer}}

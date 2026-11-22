@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-ekscontainervolumemount-syntax.json"></a>
 
-```
+```json
 {
   "[MountPath](#cfn-batch-jobdefinition-ekscontainervolumemount-mountpath)" : {{String}},
   "[Name](#cfn-batch-jobdefinition-ekscontainervolumemount-name)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-ekscontainervolumemount-syntax.yaml"></a>
 
-```
+```yaml
   [MountPath](#cfn-batch-jobdefinition-ekscontainervolumemount-mountpath): {{String}}
   [Name](#cfn-batch-jobdefinition-ekscontainervolumemount-name): {{String}}
   [ReadOnly](#cfn-batch-jobdefinition-ekscontainervolumemount-readonly): {{Boolean}}

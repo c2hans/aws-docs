@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datasync-locationhdfs-namenode-syntax.json"></a>
 
-```
+```json
 {
   "[Hostname](#cfn-datasync-locationhdfs-namenode-hostname)" : {{String}},
   "[Port](#cfn-datasync-locationhdfs-namenode-port)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datasync-locationhdfs-namenode-syntax.yaml"></a>
 
-```
+```yaml
   [Hostname](#cfn-datasync-locationhdfs-namenode-hostname): {{String}}
   [Port](#cfn-datasync-locationhdfs-namenode-port): {{Integer}}
 ```

@@ -13,7 +13,7 @@ The following examples demonstrate CloudTrail log entries for Athena notebook AP
 
 The following example shows the CloudTrail log for a notebook [StartSession](https://docs.aws.amazon.com/athena/latest/APIReference/API_StartSession.html) event.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -83,7 +83,7 @@ The following example shows the CloudTrail log for a notebook [StartSession](htt
 
 The following example shows the CloudTrail log for a notebook [TerminateSession](https://docs.aws.amazon.com/athena/latest/APIReference/API_TerminateSession.html) event.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -140,7 +140,7 @@ The following example shows the CloudTrail log for a notebook [TerminateSession]
 
 The following example shows the CloudTrail log for a notebook [ImportNotebook](https://docs.aws.amazon.com/athena/latest/APIReference/API_ImportNotebook.html) event. For security, some content is hidden.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -201,7 +201,7 @@ The following example shows the CloudTrail log for a notebook [ImportNotebook](h
 
 The following example shows the CloudTrail log for a notebook [UpdateNotebook](https://docs.aws.amazon.com/athena/latest/APIReference/API_UpdateNotebook.html) event. For security, some content is hidden.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -259,7 +259,7 @@ The following example shows the CloudTrail log for a notebook [UpdateNotebook](h
 
 The following example shows the CloudTrail log for a notebook [StartCalculationExecution](https://docs.aws.amazon.com/athena/latest/APIReference/API_StartCalculationExecution.html) event. For security, some content is hidden.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

@@ -51,7 +51,7 @@ Users with the `CloudWatchLogsFullAccess` managed policy already have both permi
 
 The following example shows a policy statement that grants both permissions:
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [
@@ -80,13 +80,13 @@ To enable Intelligent Tiering using the CloudWatch console:
 
 To enable Intelligent Tiering, use the `put-storage-tier-policy` command:
 
-```
+```bash
 aws logs put-storage-tier-policy --storage-tier INTELLIGENT_TIERING
 ```
 
 The command returns the storage tier that was set and the time it was last updated:
 
-```
+```json
 {
     "storageTier": "INTELLIGENT_TIERING",
     "lastUpdatedTime": 1751328000000
@@ -95,7 +95,7 @@ The command returns the storage tier that was set and the time it was last updat
 
 To disable Intelligent Tiering, set the storage tier back to `STANDARD`:
 
-```
+```bash
 aws logs put-storage-tier-policy --storage-tier STANDARD
 ```
 
@@ -106,13 +106,13 @@ When you set the storage tier back to `STANDARD`, all log groups in your account
 
 To view the current storage tier for your account, use the `get-storage-tier-policy` command:
 
-```
+```bash
 aws logs get-storage-tier-policy
 ```
 
 The command returns the current storage tier and the time it was last updated:
 
-```
+```json
 {
     "storageTier": "INTELLIGENT_TIERING",
     "lastUpdatedTime": 1751328000000

@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-containergroupdefinition-portconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ContainerPortRanges](#cfn-gamelift-containergroupdefinition-portconfiguration-containerportranges)" : {{[ ContainerPortRange, ... ]}}
 }
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-containergroupdefinition-portconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ContainerPortRanges](#cfn-gamelift-containergroupdefinition-portconfiguration-containerportranges): {{
     - ContainerPortRange}}
 ```

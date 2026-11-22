@@ -74,7 +74,7 @@ aws elasticache modify-cache-parameter-group ^
 ```
 Output from this command will look something like this.
 
-```
+```json
 {
     "CacheParameterGroupName": "myMem14"
 }
@@ -103,7 +103,7 @@ aws elasticache modify-cache-parameter-group ^
 ```
 Output from this command will look something like this.
 
-```
+```json
 {
     "CacheParameterGroupName": "my-redis7-on-30"
 }

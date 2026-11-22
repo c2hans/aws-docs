@@ -201,7 +201,7 @@ You can use the command line to retrieve the same data which appears in the cons
 
 There are the valid parameters you can include in each command:
 
-```
+```json
 BackupJobSummaries (list)
     Region (string),
     Account (string),
@@ -233,7 +233,7 @@ NextToken (string)
 
 This example shows a sample request where the a user has input `list-backup-job-summaries` where the request asks to return all available accounts with a state of `FAILED` over the prior 14 days:
 
-```
+```json
 GET /audit/backup-job-summaries/
     ?accountId=ANY
     &state=FAILED

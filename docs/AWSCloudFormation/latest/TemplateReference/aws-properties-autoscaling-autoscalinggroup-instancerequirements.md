@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-autoscaling-autoscalinggroup-instancerequirements-syntax.json"></a>
 
-```
+```json
 {
   "[AcceleratorCount](#cfn-autoscaling-autoscalinggroup-instancerequirements-acceleratorcount)" : {{AcceleratorCountRequest}},
   "[AcceleratorManufacturers](#cfn-autoscaling-autoscalinggroup-instancerequirements-acceleratormanufacturers)" : {{[ String, ... ]}},
@@ -64,7 +64,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-autoscaling-autoscalinggroup-instancerequirements-syntax.yaml"></a>
 
-```
+```yaml
   [AcceleratorCount](#cfn-autoscaling-autoscalinggroup-instancerequirements-acceleratorcount): {{
     AcceleratorCountRequest}}
   [AcceleratorManufacturers](#cfn-autoscaling-autoscalinggroup-instancerequirements-acceleratormanufacturers): {{

@@ -86,7 +86,7 @@ This example illustrates deleting an App Runner connection. The connection statu
 #### Sample Request
 <a name="API_DeleteConnection_Example_1_Request"></a>
 
-```
+```json
 $ aws apprunner delete-connection --cli-input-json "`cat`"
 {
   "ConnectionArn": "arn:aws:apprunner:us-east-1:123456789012:connection/my-github-connection"
@@ -96,7 +96,7 @@ $ aws apprunner delete-connection --cli-input-json "`cat`"
 #### Sample Response
 <a name="API_DeleteConnection_Example_1_Response"></a>
 
-```
+```json
 {
   "Connection": {
     "ConnectionArn": "arn:aws:apprunner:us-east-1:123456789012:connection/my-github-connection",

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-routerinput-ristrouterinputconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Port](#cfn-mediaconnect-routerinput-ristrouterinputconfiguration-port)" : {{Integer}},
   "[RecoveryLatencyMilliseconds](#cfn-mediaconnect-routerinput-ristrouterinputconfiguration-recoverylatencymilliseconds)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-routerinput-ristrouterinputconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Port](#cfn-mediaconnect-routerinput-ristrouterinputconfiguration-port): {{Integer}}
   [RecoveryLatencyMilliseconds](#cfn-mediaconnect-routerinput-ristrouterinputconfiguration-recoverylatencymilliseconds): {{Integer}}
 ```

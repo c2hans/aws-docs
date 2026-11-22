@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewaytarget-mcplambdatargetconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[LambdaArn](#cfn-bedrockagentcore-gatewaytarget-mcplambdatargetconfiguration-lambdaarn)" : {{String}},
   "[ToolSchema](#cfn-bedrockagentcore-gatewaytarget-mcplambdatargetconfiguration-toolschema)" : {{ToolSchema}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewaytarget-mcplambdatargetconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [LambdaArn](#cfn-bedrockagentcore-gatewaytarget-mcplambdatargetconfiguration-lambdaarn): {{String}}
   [ToolSchema](#cfn-bedrockagentcore-gatewaytarget-mcplambdatargetconfiguration-toolschema): {{
     ToolSchema}}

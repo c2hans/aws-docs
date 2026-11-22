@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codebuild-project-projectcache-syntax.json"></a>
 
-```
+```json
 {
   "[CacheNamespace](#cfn-codebuild-project-projectcache-cachenamespace)" : {{String}},
   "[Location](#cfn-codebuild-project-projectcache-location)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codebuild-project-projectcache-syntax.yaml"></a>
 
-```
+```yaml
   [CacheNamespace](#cfn-codebuild-project-projectcache-cachenamespace): {{String}}
   [Location](#cfn-codebuild-project-projectcache-location): {{String}}
   [Modes](#cfn-codebuild-project-projectcache-modes): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewayrule-fallbacktriggers-syntax.json"></a>
 
-```
+```json
 {
   "[Errors](#cfn-bedrockagentcore-gatewayrule-fallbacktriggers-errors)" : {{[ String, ... ]}},
   "[StatusCodes](#cfn-bedrockagentcore-gatewayrule-fallbacktriggers-statuscodes)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewayrule-fallbacktriggers-syntax.yaml"></a>
 
-```
+```yaml
   [Errors](#cfn-bedrockagentcore-gatewayrule-fallbacktriggers-errors): {{
     - String}}
   [StatusCodes](#cfn-bedrockagentcore-gatewayrule-fallbacktriggers-statuscodes): {{

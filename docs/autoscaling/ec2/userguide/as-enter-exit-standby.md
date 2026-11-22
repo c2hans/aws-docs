@@ -100,7 +100,7 @@ To temporarily remove an instance from your Auto Scaling group, use the followin
 
    Take note of the ID of the instance that you intend to remove from the group. You need this ID in the next step.
 
-   ```
+   ```json
    {
        "AutoScalingInstances": [
            {
@@ -131,7 +131,7 @@ To temporarily remove an instance from your Auto Scaling group, use the followin
 
    The following is an example response.
 
-   ```
+   ```json
    {
        "Activities": [
            {
@@ -157,7 +157,7 @@ To temporarily remove an instance from your Auto Scaling group, use the followin
 
    The following is an example response. Notice that the status of the instance is now `Standby`.
 
-   ```
+   ```json
    {
        "AutoScalingInstances": [
            {
@@ -189,7 +189,7 @@ To temporarily remove an instance from your Auto Scaling group, use the followin
 
    The following is an example response.
 
-   ```
+   ```json
    {
        "Activities": [
            {
@@ -215,7 +215,7 @@ To temporarily remove an instance from your Auto Scaling group, use the followin
 
    The following is an example response. Notice that the status of the instance is `InService`.
 
-   ```
+   ```json
    {
        "AutoScalingInstances": [
            {

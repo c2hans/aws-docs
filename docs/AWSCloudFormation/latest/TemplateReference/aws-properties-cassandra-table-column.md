@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cassandra-table-column-syntax.json"></a>
 
-```
+```json
 {
   "[ColumnName](#cfn-cassandra-table-column-columnname)" : {{String}},
   "[ColumnType](#cfn-cassandra-table-column-columntype)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cassandra-table-column-syntax.yaml"></a>
 
-```
+```yaml
   [ColumnName](#cfn-cassandra-table-column-columnname): {{String}}
   [ColumnType](#cfn-cassandra-table-column-columntype): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-messagegroup-syntax.json"></a>
 
-```
+```json
 {
   "[Message](#cfn-lex-bot-messagegroup-message)" : {{Message}},
   "[Variations](#cfn-lex-bot-messagegroup-variations)" : {{[ Message, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-messagegroup-syntax.yaml"></a>
 
-```
+```yaml
   [Message](#cfn-lex-bot-messagegroup-message): {{
     Message}}
   [Variations](#cfn-lex-bot-messagegroup-variations): {{

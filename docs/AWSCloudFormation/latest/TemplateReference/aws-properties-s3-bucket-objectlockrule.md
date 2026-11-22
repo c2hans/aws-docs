@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-objectlockrule-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultRetention](#cfn-s3-bucket-objectlockrule-defaultretention)" : {{DefaultRetention}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-objectlockrule-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultRetention](#cfn-s3-bucket-objectlockrule-defaultretention): {{
     DefaultRetention}}
 ```

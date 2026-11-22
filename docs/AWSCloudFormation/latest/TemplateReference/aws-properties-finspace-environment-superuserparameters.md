@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-finspace-environment-superuserparameters-syntax.json"></a>
 
-```
+```json
 {
   "[EmailAddress](#cfn-finspace-environment-superuserparameters-emailaddress)" : {{String}},
   "[FirstName](#cfn-finspace-environment-superuserparameters-firstname)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-finspace-environment-superuserparameters-syntax.yaml"></a>
 
-```
+```yaml
   [EmailAddress](#cfn-finspace-environment-superuserparameters-emailaddress): {{String}}
   [FirstName](#cfn-finspace-environment-superuserparameters-firstname): {{String}}
   [LastName](#cfn-finspace-environment-superuserparameters-lastname): {{String}}

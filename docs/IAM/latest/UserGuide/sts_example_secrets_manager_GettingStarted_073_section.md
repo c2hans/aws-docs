@@ -17,7 +17,7 @@ The following code example shows how to:
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [Sample developer tutorials](https://github.com/aws-samples/sample-developer-tutorials/tree/main/tuts/073-aws-secrets-manager-gs) repository.
 
-```
+```bash
 #!/bin/bash
 
 # Script to move hardcoded secrets to AWS Secrets Manager

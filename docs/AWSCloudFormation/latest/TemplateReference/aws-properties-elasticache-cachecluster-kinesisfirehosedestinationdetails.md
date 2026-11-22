@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticache-cachecluster-kinesisfirehosedestinationdetails-syntax.json"></a>
 
-```
+```json
 {
   "[DeliveryStream](#cfn-elasticache-cachecluster-kinesisfirehosedestinationdetails-deliverystream)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticache-cachecluster-kinesisfirehosedestinationdetails-syntax.yaml"></a>
 
-```
+```yaml
   [DeliveryStream](#cfn-elasticache-cachecluster-kinesisfirehosedestinationdetails-deliverystream): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-appsync-graphqlapi-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppSync::GraphQLApi",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-appsync-graphqlapi-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppSync::GraphQLApi
 Properties:
   [AdditionalAuthenticationProviders](#cfn-appsync-graphqlapi-additionalauthenticationproviders): {{
@@ -254,7 +254,7 @@ The following example creates a GraphQL API.
 #### YAML
 <a name="aws-resource-appsync-graphqlapi--examples--GraphQL_API_Creation_Example--yaml"></a>
 
-```
+```yaml
 Parameters:
   graphQlApiName:
     Type: String
@@ -283,7 +283,7 @@ Resources:
 #### JSON
 <a name="aws-resource-appsync-graphqlapi--examples--GraphQL_API_Creation_Example--json"></a>
 
-```
+```json
 {
   "Parameters": {
     "graphQlApiName": {

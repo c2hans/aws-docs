@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-resiliencehub-app-resourcemapping-syntax.json"></a>
 
-```
+```json
 {
   "[EksSourceName](#cfn-resiliencehub-app-resourcemapping-ekssourcename)" : {{String}},
   "[LogicalStackName](#cfn-resiliencehub-app-resourcemapping-logicalstackname)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-resiliencehub-app-resourcemapping-syntax.yaml"></a>
 
-```
+```yaml
   [EksSourceName](#cfn-resiliencehub-app-resourcemapping-ekssourcename): {{String}}
   [LogicalStackName](#cfn-resiliencehub-app-resourcemapping-logicalstackname): {{String}}
   [MappingType](#cfn-resiliencehub-app-resourcemapping-mappingtype): {{String}}

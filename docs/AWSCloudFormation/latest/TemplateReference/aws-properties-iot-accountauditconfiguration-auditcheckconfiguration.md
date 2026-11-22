@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-accountauditconfiguration-auditcheckconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-iot-accountauditconfiguration-auditcheckconfiguration-enabled)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-accountauditconfiguration-auditcheckconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-iot-accountauditconfiguration-auditcheckconfiguration-enabled): {{Boolean}}
 ```
 

@@ -66,7 +66,7 @@ Before launching instances with Secondary Networks, ensure you have also configu
 
 Create a Secondary Network in the same region as your VPC. This is a regional resource that provides logical isolation for your RDMA traffic.
 
-```
+```bash
 aws ec2 create-secondary-network \
   --network-type rdma \
   --ipv4-cidr-block 172.31.0.0/16 \
@@ -86,7 +86,7 @@ aws ec2 create-secondary-network \
 
 Create a Secondary Subnet in the same Availability Zone as your VPC subnet. This is an AZ-specific resource.
 
-```
+```bash
 aws ec2 create-secondary-subnet \
   --secondary-network-id sn-1234567890abcdef0 \
   --ipv4-cidr-block 172.31.24.0/24 \
@@ -101,7 +101,7 @@ aws ec2 create-secondary-subnet \
 
 Launch an instance into both your VPC subnet and Secondary Subnet. The instance will be multi-homed with connectivity to both networks.
 
-```
+```bash
 aws ec2 run-instances \
   --image-id ami-12345678 \
   --count 1 \
@@ -145,7 +145,7 @@ aws ec2 run-instances \
 
 View details about your Secondary Networks:
 
-```
+```bash
 aws ec2 describe-secondary-networks \
   --secondary-network-id sn-1234567890abcdef0
 ```
@@ -155,7 +155,7 @@ aws ec2 describe-secondary-networks \
 
 View details about your Secondary Subnets:
 
-```
+```bash
 aws ec2 describe-secondary-subnets \
   --secondary-subnet-id ss-98765421yxz
 ```
@@ -165,7 +165,7 @@ aws ec2 describe-secondary-subnets \
 
 View details about Secondary Network Interfaces attached to your instances:
 
-```
+```bash
 aws ec2 describe-secondary-interfaces \
   --filters "Name=attachment.instance-id,Values=i-1234567890abcdef0"
 ```
@@ -175,14 +175,14 @@ aws ec2 describe-secondary-interfaces \
 
 Delete a Secondary Subnet:
 
-```
+```bash
 aws ec2 delete-secondary-subnet \
   --secondary-subnet-id ss-98765421yxz
 ```
 
 Delete a Secondary Network:
 
-```
+```bash
 aws ec2 delete-secondary-network \
   --secondary-network-id sn-1234567890abcdef0
 ```

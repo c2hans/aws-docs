@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-mailmanagertrafficpolicy-ingressisinaddresslist-syntax.json"></a>
 
-```
+```json
 {
   "[AddressLists](#cfn-ses-mailmanagertrafficpolicy-ingressisinaddresslist-addresslists)" : {{[ String, ... ]}},
   "[Attribute](#cfn-ses-mailmanagertrafficpolicy-ingressisinaddresslist-attribute)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-mailmanagertrafficpolicy-ingressisinaddresslist-syntax.yaml"></a>
 
-```
+```yaml
   [AddressLists](#cfn-ses-mailmanagertrafficpolicy-ingressisinaddresslist-addresslists): {{
     - String}}
   [Attribute](#cfn-ses-mailmanagertrafficpolicy-ingressisinaddresslist-attribute): {{String}}

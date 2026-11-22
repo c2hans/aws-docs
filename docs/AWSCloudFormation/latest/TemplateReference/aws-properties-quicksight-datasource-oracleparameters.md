@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-datasource-oracleparameters-syntax.json"></a>
 
-```
+```json
 {
   "[Database](#cfn-quicksight-datasource-oracleparameters-database)" : {{String}},
   "[Host](#cfn-quicksight-datasource-oracleparameters-host)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-datasource-oracleparameters-syntax.yaml"></a>
 
-```
+```yaml
   [Database](#cfn-quicksight-datasource-oracleparameters-database): {{String}}
   [Host](#cfn-quicksight-datasource-oracleparameters-host): {{String}}
   [Port](#cfn-quicksight-datasource-oracleparameters-port): {{Number}}

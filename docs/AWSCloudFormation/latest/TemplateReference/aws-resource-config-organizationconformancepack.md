@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-config-organizationconformancepack-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Config::OrganizationConformancePack",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-config-organizationconformancepack-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Config::OrganizationConformancePack
 Properties:
   [ConformancePackInputParameters](#cfn-config-organizationconformancepack-conformancepackinputparameters): {{
@@ -151,7 +151,7 @@ The following example creates an organization conformance pack.
 #### JSON
 <a name="aws-resource-config-organizationconformancepack--examples--Organization_Conformance_Pack--json"></a>
 
-```
+```json
 {
     "Resources": {
         "OrganizationConformancePack": {
@@ -169,7 +169,7 @@ The following example creates an organization conformance pack.
 #### YAML
 <a name="aws-resource-config-organizationconformancepack--examples--Organization_Conformance_Pack--yaml"></a>
 
-```
+```yaml
 ---
 Resources:
     OrganizationConformancePack:

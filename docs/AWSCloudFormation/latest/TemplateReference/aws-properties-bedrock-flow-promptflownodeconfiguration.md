@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-flow-promptflownodeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[GuardrailConfiguration](#cfn-bedrock-flow-promptflownodeconfiguration-guardrailconfiguration)" : {{GuardrailConfiguration}},
   "[SourceConfiguration](#cfn-bedrock-flow-promptflownodeconfiguration-sourceconfiguration)" : {{PromptFlowNodeSourceConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-flow-promptflownodeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [GuardrailConfiguration](#cfn-bedrock-flow-promptflownodeconfiguration-guardrailconfiguration): {{
     GuardrailConfiguration}}
   [SourceConfiguration](#cfn-bedrock-flow-promptflownodeconfiguration-sourceconfiguration): {{

@@ -17,7 +17,7 @@ Invoking this function will halt the execution of the current handler, AWS AppSy
 + When `returnOptions` is given with `skipTo` set to "NEXT", the function execution is skipped, and the next pipeline handler is called.
 **Example**
 
-```
+```TypeScript
 import { runtime } from '@aws-appsync/utils'
 
 export function request(ctx) {

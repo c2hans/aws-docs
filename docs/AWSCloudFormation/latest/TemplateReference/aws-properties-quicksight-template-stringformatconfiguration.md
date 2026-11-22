@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-stringformatconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[NullValueFormatConfiguration](#cfn-quicksight-template-stringformatconfiguration-nullvalueformatconfiguration)" : {{NullValueFormatConfiguration}},
   "[NumericFormatConfiguration](#cfn-quicksight-template-stringformatconfiguration-numericformatconfiguration)" : {{NumericFormatConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-stringformatconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [NullValueFormatConfiguration](#cfn-quicksight-template-stringformatconfiguration-nullvalueformatconfiguration): {{
     NullValueFormatConfiguration}}
   [NumericFormatConfiguration](#cfn-quicksight-template-stringformatconfiguration-numericformatconfiguration): {{

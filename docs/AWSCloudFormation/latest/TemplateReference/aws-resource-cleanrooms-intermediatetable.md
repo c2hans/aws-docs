@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cleanrooms-intermediatetable-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CleanRooms::IntermediateTable",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cleanrooms-intermediatetable-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CleanRooms::IntermediateTable
 Properties:
   [AnalysisRules](#cfn-cleanrooms-intermediatetable-analysisrules): {{

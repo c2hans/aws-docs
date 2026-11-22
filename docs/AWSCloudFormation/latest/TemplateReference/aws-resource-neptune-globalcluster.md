@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-neptune-globalcluster-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Neptune::GlobalCluster",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-neptune-globalcluster-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Neptune::GlobalCluster
 Properties:
   [DeletionProtection](#cfn-neptune-globalcluster-deletionprotection): {{Boolean}}

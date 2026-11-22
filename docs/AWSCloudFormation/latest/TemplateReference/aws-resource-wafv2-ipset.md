@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-wafv2-ipset-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::WAFv2::IPSet",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-wafv2-ipset-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::WAFv2::IPSet
 Properties:
   [Addresses](#cfn-wafv2-ipset-addresses): {{
@@ -145,7 +145,7 @@ The following shows an example IP set specification.
 #### YAML
 <a name="aws-resource-wafv2-ipset--examples--Create_an_IP_set--yaml"></a>
 
-```
+```yaml
  SampleIPSet:
       Type: 'AWS::WAFv2::IPSet'
       Properties:
@@ -160,7 +160,7 @@ The following shows an example IP set specification.
 #### JSON
 <a name="aws-resource-wafv2-ipset--examples--Create_an_IP_set--json"></a>
 
-```
+```json
  "SampleIPSet": {
       "Type": "AWS::WAFv2::IPSet",
       "Properties": {

@@ -29,13 +29,13 @@ If audit records don't arrive in your bucket after several minutes, follow these
 
 1. **Check the delivery status.** Run the following SQL query, and confirm that `has_delivery` is `t` for the Region of the cluster. If it's `f`, set up delivery for the cluster. For instructions on setting up delivery, see [Setting up audit log delivery](audit-logging-setup.md#audit-logging-set-up-delivery).
 
-   ```
+   ```sql
    SELECT * FROM sys.audit_delivery_status();
    ```
 
 1. **Check the delivery.** Run the following AWS CLI command, and confirm that a delivery connects the delivery source of the cluster to your bucket. Replace {{region}} with the AWS Region of your cluster:
 
-   ```
+   ```bash
    aws logs describe-deliveries \
      --region {{region}}
    ```

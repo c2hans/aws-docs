@@ -65,7 +65,7 @@ You create a Capacity Reservation for immediate use.
 **To create a Capacity Reservation**
 Use the [create-capacity-reservation](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-capacity-reservation.html) command.
 
-```
+```bash
 aws ec2 create-capacity-reservation \
     --availability-zone {{az_name}} \
     --instance-type {{instance_type}} \
@@ -80,7 +80,7 @@ aws ec2 create-capacity-reservation \
 **To create a Capacity Reservation**
 Use the [Add-EC2CapacityReservation](https://docs.aws.amazon.com/powershell/latest/reference/items/Add-EC2CapacityReservation.html) cmdlet.
 
-```
+```powershell
 Add-EC2CapacityReservation `
     -AvailabilityZone {{az_name}} `
     -InstanceType {{instance_type}} `
@@ -145,7 +145,7 @@ After you request a future-dated Capacity Reservation, the request undergoes an 
 **To create a Capacity Reservation**
 Use the [create-capacity-reservation](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-capacity-reservation.html) command.
 
-```
+```bash
 aws ec2 create-capacity-reservation \
     --availability-zone {{az_name}} \
     --instance-type {{instance_type}} \
@@ -163,7 +163,7 @@ aws ec2 create-capacity-reservation \
 **To create a Capacity Reservation**
 Use the [Add-EC2CapacityReservation](https://docs.aws.amazon.com/powershell/latest/reference/items/Add-EC2CapacityReservation.html) cmdlet.
 
-```
+```powershell
 Add-EC2CapacityReservation `
     -AvailabilityZone {{az_name}} `
     -InstanceType {{instance_type}} `

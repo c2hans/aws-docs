@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dynamodb-globaltable-streamspecification-syntax.json"></a>
 
-```
+```json
 {
   "[StreamViewType](#cfn-dynamodb-globaltable-streamspecification-streamviewtype)" : {{String}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dynamodb-globaltable-streamspecification-syntax.yaml"></a>
 
-```
+```yaml
   [StreamViewType](#cfn-dynamodb-globaltable-streamspecification-streamviewtype): {{String}}
 ```
 

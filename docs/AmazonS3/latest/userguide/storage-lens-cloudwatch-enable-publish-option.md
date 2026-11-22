@@ -106,7 +106,7 @@ For more information about advanced metrics and recommendations features, see [M
 
 The following AWS CLI example enables the CloudWatch publishing option by using a S3 Storage Lens organization-level advanced metrics and recommendations configuration. To use this example, replace the `{{user input placeholders}}` with your own information.
 
-```
+```JSON
 aws s3control put-storage-lens-configuration --account-id={{555555555555}} --config-id={{your-configuration-id}} --region={{us-east-1}} --storage-lens-configuration=file://./config.json
 
 config.json
@@ -183,7 +183,7 @@ config.json
 ## Using the AWS SDK for Java
 <a name="storage-lens-cloudwatch-enable-publish-sdk"></a>
 
-```
+```JAVA
 package aws.example.s3control;
 
 import com.amazonaws.AmazonServiceException;

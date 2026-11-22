@@ -27,7 +27,7 @@ aws dynamodb query \
 ```
 The arguments for `--expression-attribute-values` are stored in the `values.json` file.
 
-```
+```json
 {
     ":fn":{"S":"Amazon DynamoDB"},
     ":sub":{"S":"DynamoDB Thread 1"},

@@ -1909,13 +1909,13 @@ To resolve this issue:
 
 1. Uninstall each unsupported component:
 
-   ```
+   ```sql
    UNINSTALL COMPONENT 'file://{{component_name}}';
    ```
 
 1. Verify removal by checking the component list:
 
-   ```
+   ```sql
    SELECT * FROM mysql.component;
    ```
 
@@ -1950,13 +1950,13 @@ To resolve this issue:
 
 1. Uninstall each unsupported plugin:
 
-   ```
+   ```sql
    UNINSTALL PLUGIN {{plugin_name}};
    ```
 
 1. Verify removal by checking the plugin list:
 
-   ```
+   ```sql
    SHOW PLUGINS;
    ```
 
@@ -2359,7 +2359,7 @@ To resolve this warning:
 
 1. After upgrade, run the following command to remove the `validate_password` plugin:
 
-   ```
+   ```sql
    UNINSTALL PLUGIN validate_password;
    ```
 

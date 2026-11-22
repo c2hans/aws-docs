@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-inspectorv2-filter-stringfilter-syntax.json"></a>
 
-```
+```json
 {
   "[Comparison](#cfn-inspectorv2-filter-stringfilter-comparison)" : {{String}},
   "[Value](#cfn-inspectorv2-filter-stringfilter-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-inspectorv2-filter-stringfilter-syntax.yaml"></a>
 
-```
+```yaml
   [Comparison](#cfn-inspectorv2-filter-stringfilter-comparison): {{String}}
   [Value](#cfn-inspectorv2-filter-stringfilter-value): {{String}}
 ```

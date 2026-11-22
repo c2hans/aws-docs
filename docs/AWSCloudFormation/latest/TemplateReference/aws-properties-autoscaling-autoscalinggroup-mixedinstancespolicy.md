@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-autoscaling-autoscalinggroup-mixedinstancespolicy-syntax.json"></a>
 
-```
+```json
 {
   "[InstancesDistribution](#cfn-autoscaling-autoscalinggroup-mixedinstancespolicy-instancesdistribution)" : {{InstancesDistribution}},
   "[LaunchTemplate](#cfn-autoscaling-autoscalinggroup-mixedinstancespolicy-launchtemplate)" : {{LaunchTemplate}}
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-autoscaling-autoscalinggroup-mixedinstancespolicy-syntax.yaml"></a>
 
-```
+```yaml
   [InstancesDistribution](#cfn-autoscaling-autoscalinggroup-mixedinstancespolicy-instancesdistribution): {{
     InstancesDistribution}}
   [LaunchTemplate](#cfn-autoscaling-autoscalinggroup-mixedinstancespolicy-launchtemplate): {{

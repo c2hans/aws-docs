@@ -47,7 +47,7 @@ The following provides information about important configuration properties requ
 
 The following is the Amazon S3 JSON schema:
 
-```
+```json
 {
   "type": "object",
   "properties": {
@@ -175,7 +175,7 @@ The following is the Amazon S3 JSON schema:
 
 The following is the Amazon S3 JSON schema example:
 
-```
+```json
 {
   "type": "S3",
   "syncMode": "FULL_CRAWL",

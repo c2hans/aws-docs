@@ -48,7 +48,7 @@ If you are using the AWS CLI or AWS API to specify a custom data identifier, you
 
 1. Refer to the following custom data identifier in a policy statement.
 
-   ```
+   ```json
    {
        "Name": "example_data_protection_policy",
        "Description": "Example data protection policy with custom data identifiers",

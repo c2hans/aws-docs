@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-testcase-voicecallentrypointparameters-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationPhoneNumber](#cfn-connect-testcase-voicecallentrypointparameters-destinationphonenumber)" : {{String}},
   "[FlowId](#cfn-connect-testcase-voicecallentrypointparameters-flowid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-testcase-voicecallentrypointparameters-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationPhoneNumber](#cfn-connect-testcase-voicecallentrypointparameters-destinationphonenumber): {{String}}
   [FlowId](#cfn-connect-testcase-voicecallentrypointparameters-flowid): {{String}}
   [SourcePhoneNumber](#cfn-connect-testcase-voicecallentrypointparameters-sourcephonenumber): {{String}}

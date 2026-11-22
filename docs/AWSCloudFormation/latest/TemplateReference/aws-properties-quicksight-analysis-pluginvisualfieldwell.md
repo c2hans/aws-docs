@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-pluginvisualfieldwell-syntax.json"></a>
 
-```
+```json
 {
   "[AxisName](#cfn-quicksight-analysis-pluginvisualfieldwell-axisname)" : {{String}},
   "[Dimensions](#cfn-quicksight-analysis-pluginvisualfieldwell-dimensions)" : {{[ DimensionField, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-pluginvisualfieldwell-syntax.yaml"></a>
 
-```
+```yaml
   [AxisName](#cfn-quicksight-analysis-pluginvisualfieldwell-axisname): {{String}}
   [Dimensions](#cfn-quicksight-analysis-pluginvisualfieldwell-dimensions): {{
     - DimensionField}}

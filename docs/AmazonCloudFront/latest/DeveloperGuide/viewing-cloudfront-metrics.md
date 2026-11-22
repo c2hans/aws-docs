@@ -93,7 +93,7 @@ You can turn on additional metrics in the CloudFront console, with CloudFormatio
 
 To turn on additional metrics with CloudFormation, use the `AWS::CloudFront::MonitoringSubscription` resource type. The following example shows the CloudFormation template syntax, in YAML format, for enabling additional metrics.
 
-```
+```yaml
 Type: AWS::CloudFront::MonitoringSubscription
 Properties:
   DistributionId: {{EDFDVBD6EXAMPLE}}

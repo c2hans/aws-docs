@@ -14,7 +14,7 @@ The AWS AppSync resolver mapping template used with the data source of type *Non
 
 The mapping template is simple and enables you to pass as much context information as possible via the `payload` field.
 
-```
+```sh
 {
    "version": string,
    "payload": any type
@@ -23,7 +23,7 @@ The mapping template is simple and enables you to pass as much context informati
 
 Here is the JSON schema representation of the request mapping template, once resolved:
 
-```
+```sh
 {
     "definitions": {},
     "$schema": "https://json-schema.org/draft-06/schema#",
@@ -50,7 +50,7 @@ Here is the JSON schema representation of the request mapping template, once res
 
 Here is an example where the field arguments are passed via the VTL context property `$context.arguments`:
 
-```
+```sh
 {
     "version": "2018-05-29",
     "payload": $util.toJson($context.arguments)
@@ -61,7 +61,7 @@ The value of the `payload` field will be forwarded to the response mapping templ
 
 This is an example representing the interpolated value of the `payload` field:
 
-```
+```sh
 {
     "id": "postId1"
 }
@@ -76,7 +76,7 @@ Common to all request mapping templates, the `version` field defines the version
 
 Example:
 
-```
+```sh
 "version": "2018-05-29"
 ```
 
@@ -94,7 +94,7 @@ Because there is no data source, the value of the `payload` field will be forwar
 
 If the shape of the `payload` field value exactly matches the shape of the GraphQL type, you can forward the response using the following response mapping template:
 
-```
+```sh
 $util.toJson($context.result)
 ```
 

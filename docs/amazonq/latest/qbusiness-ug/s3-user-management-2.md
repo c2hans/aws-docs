@@ -23,7 +23,7 @@ The system grants ALL users access to prefixes that do NOT appear in the ACL fil
 
 The JSON structure for the configuration file must be in the following format:
 
-```
+```json
 [
     {
         "keyPrefix": "s3://BUCKETNAME/prefix1/",

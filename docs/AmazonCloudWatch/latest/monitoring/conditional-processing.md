@@ -20,7 +20,7 @@ A `when` placed at the top level of the processor configuration. If the expressi
 **Example Processor-level condition — skip entire processor**
 The following `delete_entries` processor only runs when the environment is production or staging. If the condition is false, none of the keys are deleted.
 
-```
+```yaml
 processor:
   - delete_entries:
       with_keys: ["password", "api_key", "ssn"]
@@ -33,7 +33,7 @@ A `when` placed inside an individual entry in the `entries` array. Each entry is
 **Example Entry-level condition — skip individual entries**
 The following `add_entries` processor adds different keys depending on each entry's condition. The first entry only adds `severity` when the log level is ERROR. The second entry always adds `processed` because it has no condition.
 
-```
+```yaml
 processor:
   - add_entries:
       entries:
@@ -49,7 +49,7 @@ Processors that support both levels can use them together. When both are specifi
 **Example Both levels combined**
 The processor-level `when` ensures the entire processor only runs for production traffic. Within that, each entry has its own condition to control which key is added.
 
-```
+```yaml
 processor:
   - add_entries:
       when: "environment == 'prod'"
@@ -70,7 +70,7 @@ Processors that support entry-level conditions also support `when_else`. An entr
 **Example Fallback entry with when\_else**
 The first entry runs when the log level is ERROR. The second entry uses `when_else` and runs only when the first entry's `when` condition did not match (that is, the log level is anything other than ERROR).
 
-```
+```yaml
 processor:
   - add_entries:
       entries:

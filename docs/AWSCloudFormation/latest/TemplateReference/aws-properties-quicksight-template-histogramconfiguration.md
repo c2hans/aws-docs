@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-histogramconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BinOptions](#cfn-quicksight-template-histogramconfiguration-binoptions)" : {{HistogramBinOptions}},
   "[DataLabels](#cfn-quicksight-template-histogramconfiguration-datalabels)" : {{DataLabelOptions}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-histogramconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BinOptions](#cfn-quicksight-template-histogramconfiguration-binoptions): {{
     HistogramBinOptions}}
   [DataLabels](#cfn-quicksight-template-histogramconfiguration-datalabels): {{

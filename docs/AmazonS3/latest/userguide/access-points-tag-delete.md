@@ -80,7 +80,7 @@ The following CLI example shows you how to delete tags from an access point by u
 
 **Request:**
 
-```
+```bash
 aws s3control untag-resource \
 --account-id {{111122223333}} \
 --resource-arn arn:aws::s3:{{region}}:{{444455556666}}:access-point/{{{{my-access-point}}}} \
@@ -94,7 +94,7 @@ aws s3control untag-resource \
 
 **Response:**
 
-```
+```json
 {
   "ResponseMetadata": {
     "RequestId": "EXAMPLE123456789",

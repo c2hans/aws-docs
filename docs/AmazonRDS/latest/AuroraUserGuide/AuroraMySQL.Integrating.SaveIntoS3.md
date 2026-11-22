@@ -64,7 +64,7 @@ The database user that issues the `SELECT INTO OUTFILE S3` statement must have a
 
  Use the following statement for Aurora MySQL version 3 and version 8.4:
 
-```
+```sql
 GRANT AWS_SELECT_S3_ACCESS TO '{{user}}'@'{{domain-or-ip-address}}'
 ```
 
@@ -76,7 +76,7 @@ However, you must call `SET ROLE ALL` explicitly at the beginning of a stored pr
 
 Use the following statement for Aurora MySQL version 2:
 
-```
+```sql
 GRANT SELECT INTO S3 ON *.* TO '{{user}}'@'{{domain-or-ip-address}}'
 ```
 
@@ -114,7 +114,7 @@ You can use the `SELECT INTO OUTFILE S3` statement with the `MANIFEST ON` option
 
 The data files included in the manifest created by the `SELECT INTO OUTFILE S3` statement are listed in the order that they're created by the statement. For example, suppose that a `SELECT INTO OUTFILE S3` statement specified `s3-us-west-2://bucket/prefix` as the path in which to store data files and creates three data files and a manifest file. The specified Amazon S3 bucket contains a manifest file named `s3-us-west-2://bucket/prefix.manifest`, that contains the following information.
 
-```
+```json
 {
   "entries": [
     {
@@ -140,7 +140,7 @@ Compressed files aren't supported. Encrypted files are supported starting in Aur
 ### Syntax
 <a name="AuroraMySQL.Integrating.SaveIntoS3.Statement.Syntax"></a>
 
-```
+```sql
 SELECT
     [ALL | DISTINCT | DISTINCTROW ]
         [HIGH_PRIORITY]
@@ -254,7 +254,7 @@ To do so, you can use the fact that a data file is created in the specified Amaz
 
 The following statement selects all of the data in the `employees` table and saves the data into an Amazon S3 bucket that is in a different region from the Aurora MySQL DB cluster. The statement creates data files in which each field is terminated by a comma (`,`) character and each row is terminated by a newline (`\n`) character. The statement returns an error if files that match the `sample_employee_data` file prefix exist in the specified Amazon S3 bucket.
 
-```
+```sql
 SELECT * FROM employees INTO OUTFILE S3 's3-us-west-2://aurora-select-into-s3-pdx/sample_employee_data'
     FIELDS TERMINATED BY ','
     LINES TERMINATED BY '\n';
@@ -262,7 +262,7 @@ SELECT * FROM employees INTO OUTFILE S3 's3-us-west-2://aurora-select-into-s3-pd
 
 The following statement selects all of the data in the `employees` table and saves the data into an Amazon S3 bucket that is in the same region as the Aurora MySQL DB cluster. The statement creates data files in which each field is terminated by a comma (`,`) character and each row is terminated by a newline (`\n`) character, and also a manifest file. The statement returns an error if files that match the `sample_employee_data` file prefix exist in the specified Amazon S3 bucket.
 
-```
+```sql
 SELECT * FROM employees INTO OUTFILE S3 's3://aurora-select-into-s3-pdx/sample_employee_data'
     FIELDS TERMINATED BY ','
     LINES TERMINATED BY '\n'
@@ -271,7 +271,7 @@ SELECT * FROM employees INTO OUTFILE S3 's3://aurora-select-into-s3-pdx/sample_e
 
 The following statement selects all of the data in the `employees` table and saves the data into an Amazon S3 bucket that is in a different region from the Aurora DB cluster. The statement creates data files in which each field is terminated by a comma (`,`) character and each row is terminated by a newline (`\n`) character. The statement overwrites any existing files that match the `sample_employee_data` file prefix in the specified Amazon S3 bucket.
 
-```
+```sql
 SELECT * FROM employees INTO OUTFILE S3 's3-us-west-2://aurora-select-into-s3-pdx/sample_employee_data'
     FIELDS TERMINATED BY ','
     LINES TERMINATED BY '\n'
@@ -280,7 +280,7 @@ SELECT * FROM employees INTO OUTFILE S3 's3-us-west-2://aurora-select-into-s3-pd
 
 The following statement selects all of the data in the `employees` table and saves the data into an Amazon S3 bucket that is in the same region as the Aurora MySQL DB cluster. The statement creates data files in which each field is terminated by a comma (`,`) character and each row is terminated by a newline (`\n`) character, and also a manifest file. The statement overwrites any existing files that match the `sample_employee_data` file prefix in the specified Amazon S3 bucket.
 
-```
+```sql
 SELECT * FROM employees INTO OUTFILE S3 's3://aurora-select-into-s3-pdx/sample_employee_data'
     FIELDS TERMINATED BY ','
     LINES TERMINATED BY '\n'

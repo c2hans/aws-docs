@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apigateway-stage-methodsetting-syntax.json"></a>
 
-```
+```json
 {
   "[CacheDataEncrypted](#cfn-apigateway-stage-methodsetting-cachedataencrypted)" : {{Boolean}},
   "[CacheTtlInSeconds](#cfn-apigateway-stage-methodsetting-cachettlinseconds)" : {{Integer}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apigateway-stage-methodsetting-syntax.yaml"></a>
 
-```
+```yaml
   [CacheDataEncrypted](#cfn-apigateway-stage-methodsetting-cachedataencrypted): {{Boolean}}
   [CacheTtlInSeconds](#cfn-apigateway-stage-methodsetting-cachettlinseconds): {{Integer}}
   [CachingEnabled](#cfn-apigateway-stage-methodsetting-cachingenabled): {{Boolean}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-computeenvironment-managedinstancesnetworkconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[SecurityGroups](#cfn-batch-computeenvironment-managedinstancesnetworkconfiguration-securitygroups)" : {{[ String, ... ]}},
   "[Subnets](#cfn-batch-computeenvironment-managedinstancesnetworkconfiguration-subnets)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-computeenvironment-managedinstancesnetworkconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [SecurityGroups](#cfn-batch-computeenvironment-managedinstancesnetworkconfiguration-securitygroups): {{
     - String}}
   [Subnets](#cfn-batch-computeenvironment-managedinstancesnetworkconfiguration-subnets): {{

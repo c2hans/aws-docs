@@ -45,7 +45,7 @@ These example policies use `amzn-s3-demo-bucket` as the bucket name, `amzn-s3-de
 
 The following example policy grants permission to read Parquet files directly from an Amazon S3 bucket. AWS Glue Data Catalog isn't required for Parquet.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -91,7 +91,7 @@ Grants permission to read Parquet file contents. The resource ARNs are scoped to
 
 The following example policy grants permission to query Iceberg tables that are registered in AWS Glue Data Catalog.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -139,7 +139,7 @@ Amazon S3 Tables supports two access paths, and each requires a different set of
 
 The following example policy grants permission to query an Amazon S3 Tables table through an AWS Glue ARN under the `s3tablescatalog` federated catalog, such as `arn:aws:glue:us-east-1:111122223333:table/s3tablescatalog/amzn-s3-demo-table-bucket/my_namespace/orders`.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -176,7 +176,7 @@ The following example policy grants permission to query an Amazon S3 Tables tabl
 
 The following example policy grants permission to query an Amazon S3 Tables table by its table ARN, such as `arn:aws:s3tables:us-east-1:111122223333:bucket/amzn-s3-demo-table-bucket/table/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111`. This access path doesn't involve AWS Glue, and no AWS Glue permissions are required.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -229,7 +229,7 @@ For cross-account access, you can grant `s3tables:GetTableBucket` and `s3tables:
 
 If your data is encrypted with server-side encryption using AWS KMS keys (SSE-KMS), add a statement like the following to the policy for your access path. Data that is encrypted with SSE-S3 doesn't require additional permissions.
 
-```
+```json
 {
     "Sid": "KMSDecrypt",
     "Effect": "Allow",
@@ -247,7 +247,7 @@ When another account owns your data, both accounts must allow the action. In the
 
 The following example bucket policy, in the data owner's account, grants the cluster role permission to read objects from the bucket.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -266,7 +266,7 @@ The following example bucket policy, in the data owner's account, grants the clu
 
 The following example identity-based policy, attached to the cluster role in your account, grants the same permission on the same resource.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -289,7 +289,7 @@ The same requirement applies to AWS Glue resources and AWS KMS keys that are own
 
 Whichever permissions policy you use, attach it to an IAM role whose trust policy allows Amazon RDS to assume the role on behalf of your Aurora DB cluster, as in the following example. The `aws:SourceAccount` and `aws:SourceArn` condition keys restrict the role so that it can be assumed only on behalf of your own cluster.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-cluster-resourceweight-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-eks-cluster-resourceweight-name)" : {{String}},
   "[Weight](#cfn-eks-cluster-resourceweight-weight)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-cluster-resourceweight-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-eks-cluster-resourceweight-name): {{String}}
   [Weight](#cfn-eks-cluster-resourceweight-weight): {{Integer}}
 ```

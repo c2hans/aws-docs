@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-capacityprovider-memorymibrequest-syntax.json"></a>
 
-```
+```json
 {
   "[Max](#cfn-ecs-capacityprovider-memorymibrequest-max)" : {{Integer}},
   "[Min](#cfn-ecs-capacityprovider-memorymibrequest-min)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-capacityprovider-memorymibrequest-syntax.yaml"></a>
 
-```
+```yaml
   [Max](#cfn-ecs-capacityprovider-memorymibrequest-max): {{Integer}}
   [Min](#cfn-ecs-capacityprovider-memorymibrequest-min): {{Integer}}
 ```

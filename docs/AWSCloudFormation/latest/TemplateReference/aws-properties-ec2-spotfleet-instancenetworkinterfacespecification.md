@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-spotfleet-instancenetworkinterfacespecification-syntax.json"></a>
 
-```
+```json
 {
   "[AssociatePublicIpAddress](#cfn-ec2-spotfleet-instancenetworkinterfacespecification-associatepublicipaddress)" : {{Boolean}},
   "[DeleteOnTermination](#cfn-ec2-spotfleet-instancenetworkinterfacespecification-deleteontermination)" : {{Boolean}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-spotfleet-instancenetworkinterfacespecification-syntax.yaml"></a>
 
-```
+```yaml
   [AssociatePublicIpAddress](#cfn-ec2-spotfleet-instancenetworkinterfacespecification-associatepublicipaddress): {{Boolean}}
   [DeleteOnTermination](#cfn-ec2-spotfleet-instancenetworkinterfacespecification-deleteontermination): {{Boolean}}
   [Description](#cfn-ec2-spotfleet-instancenetworkinterfacespecification-description): {{String}}

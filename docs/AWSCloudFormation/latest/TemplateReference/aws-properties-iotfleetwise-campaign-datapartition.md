@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotfleetwise-campaign-datapartition-syntax.json"></a>
 
-```
+```json
 {
   "[Id](#cfn-iotfleetwise-campaign-datapartition-id)" : {{String}},
   "[StorageOptions](#cfn-iotfleetwise-campaign-datapartition-storageoptions)" : {{DataPartitionStorageOptions}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotfleetwise-campaign-datapartition-syntax.yaml"></a>
 
-```
+```yaml
   [Id](#cfn-iotfleetwise-campaign-datapartition-id): {{String}}
   [StorageOptions](#cfn-iotfleetwise-campaign-datapartition-storageoptions): {{
     DataPartitionStorageOptions}}

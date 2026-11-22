@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-domain-defaultspacesettings-syntax.json"></a>
 
-```
+```json
 {
   "[CustomFileSystemConfigs](#cfn-sagemaker-domain-defaultspacesettings-customfilesystemconfigs)" : {{[ CustomFileSystemConfig, ... ]}},
   "[CustomPosixUserConfig](#cfn-sagemaker-domain-defaultspacesettings-customposixuserconfig)" : {{CustomPosixUserConfig}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-domain-defaultspacesettings-syntax.yaml"></a>
 
-```
+```yaml
   [CustomFileSystemConfigs](#cfn-sagemaker-domain-defaultspacesettings-customfilesystemconfigs): {{
     - CustomFileSystemConfig}}
   [CustomPosixUserConfig](#cfn-sagemaker-domain-defaultspacesettings-customposixuserconfig): {{

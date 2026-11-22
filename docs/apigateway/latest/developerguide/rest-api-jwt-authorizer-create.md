@@ -83,7 +83,7 @@ The following steps show how to create a JWT authorizer by using the console.
 
 First, describe the authorizer configuration in a file. The configuration lists the trusted issuers, the audiences that you accept from each issuer, and the signing algorithms that you allow. The following example defines one issuer.
 
-```
+```json
 {
   "issuers": [
     {
@@ -97,7 +97,7 @@ First, describe the authorizer configuration in a file. The configuration lists 
 
 To require an additional claim, add an `additionalClaims` entry to the issuer. The following issuer accepts only tokens whose `department` claim equals `eng`.
 
-```
+```json
 {
   "issuer": "https://identity.example.com",
   "audiences": ["api://orders"],
@@ -114,7 +114,7 @@ To require an additional claim, add an `additionalClaims` entry to the issuer. T
 
 Next, run the [create-authorizer](https://docs.aws.amazon.com/cli/latest/reference/apigateway/create-authorizer.html) command. For the identity source, specify the request header that carries the token.
 
-```
+```shell
 aws apigateway create-authorizer \
     --rest-api-id {{api-id}} \
     --name {{authorizer-name}} \
@@ -130,7 +130,7 @@ When you create the authorizer, API Gateway reads the issuer's discovery documen
 
 In CloudFormation, the `AWS::ApiGateway::Authorizer` resource includes a `JwtConfiguration` property that mirrors the API. A method references the authorizer with `AuthorizationType: JWT`.
 
-```
+```YAML
 Parameters:
   IdpIssuer:
     Type: String
@@ -172,7 +172,7 @@ Resources:
 
 In an OpenAPI definition, a JWT authorizer uses the `x-amazon-apigateway-authorizer` extension with `type: jwt`. The scopes that you list in each operation's `security` entry become that method's authorization scopes. For more information about the extension, see [x-amazon-apigateway-authorizer object](api-gateway-swagger-extensions-authorizer.md).
 
-```
+```YAML
 components:
   securitySchemes:
     orders-jwt:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-fsx-volume-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::FSx::Volume",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-fsx-volume-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::FSx::Volume
 Properties:
   [BackupId](#cfn-fsx-volume-backupid): {{String}}
@@ -140,7 +140,7 @@ Example: `fsvol-0123456789abcdefa`
 #### JSON
 <a name="aws-resource-fsx-volume--examples--Create_an_ONTAP_volume--json"></a>
 
-```
+```json
 {
   "OntapVolumeWithAllConfigs": {
     "Type": "AWS::FSx::Volume",
@@ -174,7 +174,7 @@ Example: `fsvol-0123456789abcdefa`
 #### YAML
 <a name="aws-resource-fsx-volume--examples--Create_an_ONTAP_volume--yaml"></a>
 
-```
+```yaml
 OntapVolumeWithAllConfigs:
   Type: 'AWS::FSx::Volume'
   Properties:
@@ -202,7 +202,7 @@ This example creates a volume from an existing backup: `backup-0123abc456defghij
 #### JSON
 <a name="aws-resource-fsx-volume--examples--Create_an_ONTAP_volume_from_a_backup--json"></a>
 
-```
+```json
 {
   "OntapVolumeFromBackupWithAllConfigs": {
     "Type": "AWS::FSx::Volume",
@@ -230,7 +230,7 @@ This example creates a volume from an existing backup: `backup-0123abc456defghij
 #### YAML
 <a name="aws-resource-fsx-volume--examples--Create_an_ONTAP_volume_from_a_backup--yaml"></a>
 
-```
+```yaml
 OntapVolumeFromBackupWithAllConfigs:
   Type: "AWS::FSx::Volume"
   Properties:

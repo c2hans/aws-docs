@@ -115,7 +115,7 @@ Below is an example of driver log entry indicating a read operation failure due 
 
 If you experience insufficient network performance or latency issues, you should retrieve the device statistics and examine them. These statistics can be obtained using **ethtool** as follows.
 
-```
+```YAML
 [ec2-user ~]$ ethtool -S eth{{N}}
 NIC statistics:
 	tx_timeout: 0
@@ -397,7 +397,7 @@ The following list shows notification code details and recommended actions for s
 
   ENA Express ENI is configured with wide LLQ. This configuration is sub-optimal and could impact performance for ENA Express. We recommend that you disable wide LLQ settings when you use ENA Express ENIs as follows.
 
-  ```
+  ```bash
   sudo rmmod ena && sudo modprobe ena force_large_llq_header=0
   ```
 
@@ -408,13 +408,13 @@ The following list shows notification code details and recommended actions for s
 
   You can run the following **ethtool** commands to adjust LLQ size. To learn more about how to control, query, and enable wide-LLQ, see the [Large Low-Latency Queue (Large LLQ)](https://github.com/amzn/amzn-drivers/tree/master/kernel/linux/ena#large-low-latency-queue-large-llq) topic of the Linux kernel driver for ENA documentation in the *Amazon Drivers GitHub repository*.
 
-  ```
+  ```bash
   ethtool -g {{interface}}
   ```
 
   Set your Tx queues to the maximum depth:
 
-  ```
+  ```bash
   ethtool -G {{interface}} tx {{depth}}
   ```
 
@@ -431,12 +431,12 @@ The following list shows notification code details and recommended actions for s
 
   Find the maximum depth for your Tx queues:
 
-  ```
+  ```bash
   ethtool -g {{interface}}
   ```
 
   Set your Tx queues to the maximum depth:
 
-  ```
+  ```bash
   ethtool -G {{interface}} tx {{depth}}
   ```

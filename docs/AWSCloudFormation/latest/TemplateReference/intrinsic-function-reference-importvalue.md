@@ -26,7 +26,7 @@ After another stack imports an output value, you can't delete the stack that is 
 
 Stack A Export
 
-```
+```json
 "Outputs" : {
   "PublicSubnet" : {
     "Description" : "The subnet ID to use for public web servers",
@@ -46,7 +46,7 @@ Stack A Export
 
 Stack A Export
 
-```
+```yaml
 Outputs:
   PublicSubnet:
     Description: The subnet ID to use for public web servers
@@ -71,7 +71,7 @@ Outputs:
 
 Stack B Import
 
-```
+```json
 "Resources" : {
   "WebServerInstance" : {
     "Type" : "AWS::EC2::Instance",
@@ -95,7 +95,7 @@ Stack B Import
 
 Stack B Import
 
-```
+```yaml
 Resources:
   WebServerInstance:
     Type: AWS::EC2::Instance
@@ -119,7 +119,7 @@ Resources:
 ### JSON
 <a name="intrinsic-function-reference-importvalue-syntax.json"></a>
 
-```
+```json
 { "Fn::ImportValue" : {{sharedValueToImport}} }
 ```
 
@@ -128,27 +128,27 @@ Resources:
 
 You can use the full function name:
 
-```
+```yaml
 Fn::ImportValue: {{sharedValueToImport}}
 ```
 
 Alternatively, you can use the short form:
 
-```
+```yaml
 !ImportValue {{sharedValueToImport}}
 ```
 
 **Important**
 You can't use the short form of `!ImportValue` when it contains the short form of `!Sub`.
 
-```
+```yaml
 # do not use
 !ImportValue
   !Sub '${NetworkStack}-SubnetID'
 ```
 Instead, you must use the full function name, for example:
 
-```
+```yaml
 Fn::ImportValue:
   !Sub "${NetworkStack}-SubnetID"
 ```
@@ -170,14 +170,14 @@ The stack output value.
 ### JSON
 <a name="intrinsic-function-reference-importvalue-example.json"></a>
 
-```
+```json
 { "Fn::ImportValue" : {"Fn::Sub": "${NetworkStackNameParameter}-SubnetID" } }
 ```
 
 ### YAML
 <a name="intrinsic-function-reference-importvalue-example.yaml"></a>
 
-```
+```yaml
 Fn::ImportValue:
   !Sub "${NetworkStackName}-SecurityGroupID"
 ```

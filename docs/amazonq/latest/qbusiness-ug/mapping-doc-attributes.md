@@ -90,7 +90,7 @@ After you map document attributes directly to index fields using the API, you ca
 
 The following JSON example uses `documentAttributeConfigurations` to add a field called "Department" to the index.
 
-```
+```json
 "DocumentmetadataConfigurationUpdates": [
    {
        "Name": "Department",
@@ -127,7 +127,7 @@ Document attributes mapped to index fields during the data source configuration 
 
   You specify custom fields or attributes in the `Attributes` JSON structure. You can create up to 50 custom fields or attributes. The following example uses `Attributes` to define three custom fields or attributes and one reserved field.
 
-  ```
+  ```json
   "Attributes": {
           "brand": "Amazon Basics",
           "price": 1595,
@@ -142,7 +142,7 @@ Document attributes mapped to index fields during the data source configuration 
 
 When you use the [BatchPutDocument](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BatchPutDocument.html) API operation to add a document to your index, you can specify document attributes—both reserved and custom—as part of `Attributes`. You can add multiple fields or attributes when you call the API operation. You can create up to 50 custom fields or attributes. The following example is a custom field or attribute that adds "Department" to a document.
 
-```
+```json
 "Attributes":
     {
         "Department": "HR",

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emr-cluster-instancefleetresizingspecifications-syntax.json"></a>
 
-```
+```json
 {
   "[OnDemandResizeSpecification](#cfn-emr-cluster-instancefleetresizingspecifications-ondemandresizespecification)" : {{OnDemandResizingSpecification}},
   "[SpotResizeSpecification](#cfn-emr-cluster-instancefleetresizingspecifications-spotresizespecification)" : {{SpotResizingSpecification}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emr-cluster-instancefleetresizingspecifications-syntax.yaml"></a>
 
-```
+```yaml
   [OnDemandResizeSpecification](#cfn-emr-cluster-instancefleetresizingspecifications-ondemandresizespecification): {{
     OnDemandResizingSpecification}}
   [SpotResizeSpecification](#cfn-emr-cluster-instancefleetresizingspecifications-spotresizespecification): {{

@@ -12,7 +12,7 @@ The AWS AppConfig extension is runtime agnostic and supports all runtimes.
 **Before you begin**
 Before you enable the AWS AppConfig Agent Lambda extension, do the following:
 + Organize the configurations in your Lambda function so that you can externalize them into AWS AppConfig.
-+ Create AWS AppConfig artifacts and configuration data, including feature flags or freeform configuration data. For more information, see [Creating feature flags and free form configuration data in AWS AppConfig](creating-feature-flags-and-configuration-data.md).
++ Create AWS AppConfig artifacts and configuration data, including feature flags or freeform configuration data. For more information, see [Creating configuration data with AWS AppConfig](creating-feature-flags-and-configuration-data.md).
 + Add `appconfig:StartConfigurationSession` and `appconfig:GetLatestConfiguration` to the AWS Identity and Access Management (IAM) policy used by the Lambda function execution role. For more information, see [AWS Lambda execution role](https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html) in the *AWS Lambda Developer Guide*. For more information about AWS AppConfig permissions, see [Actions, resources, and condition keys for AWS AppConfig](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsappconfig.html) in the *Service Authorization Reference*.
 
 ## Adding the AWS AppConfig Agent Lambda extension by using a layer and an ARN

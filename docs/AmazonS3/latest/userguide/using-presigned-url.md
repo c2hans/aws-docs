@@ -67,7 +67,7 @@ To enforce specific behavior when presigned URL requests are authenticated by us
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -102,7 +102,7 @@ The IAM global condition key that you use depends on the type of endpoint. If yo
 
 The following IAM policy statement requires the principal to access AWS only from the specified network range. With this policy statement, all access must originate from that range. This includes the case of someone who's using a presigned URL for Amazon S3. To use this example, replace the {{`user input placeholders`}} with your own information.
 
-```
+```json
 {
     "Sid": "NetworkRestrictionForIAMPrincipal",
     "Effect": "Deny",

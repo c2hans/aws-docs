@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-deadline-queue-schedulingmaxpriorityoverride-syntax.json"></a>
 
-```
+```json
 {
   "[AlwaysScheduleFirst](#cfn-deadline-queue-schedulingmaxpriorityoverride-alwaysschedulefirst)" : {{Json}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-deadline-queue-schedulingmaxpriorityoverride-syntax.yaml"></a>
 
-```
+```yaml
   [AlwaysScheduleFirst](#cfn-deadline-queue-schedulingmaxpriorityoverride-alwaysschedulefirst): {{Json}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-agentregistry-registry-authorizingclaimmatchvaluetype-syntax.json"></a>
 
-```
+```json
 {
   "[ClaimMatchOperator](#cfn-agentregistry-registry-authorizingclaimmatchvaluetype-claimmatchoperator)" : {{String}},
   "[ClaimMatchValue](#cfn-agentregistry-registry-authorizingclaimmatchvaluetype-claimmatchvalue)" : {{ClaimMatchValueType}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-agentregistry-registry-authorizingclaimmatchvaluetype-syntax.yaml"></a>
 
-```
+```yaml
   [ClaimMatchOperator](#cfn-agentregistry-registry-authorizingclaimmatchvaluetype-claimmatchoperator): {{String}}
   [ClaimMatchValue](#cfn-agentregistry-registry-authorizingclaimmatchvaluetype-claimmatchvalue): {{
     ClaimMatchValueType}}

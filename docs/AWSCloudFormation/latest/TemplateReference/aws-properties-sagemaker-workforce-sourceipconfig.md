@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-workforce-sourceipconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Cidrs](#cfn-sagemaker-workforce-sourceipconfig-cidrs)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-workforce-sourceipconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Cidrs](#cfn-sagemaker-workforce-sourceipconfig-cidrs): {{
     - String}}
 ```

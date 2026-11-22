@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-userhierarchystructure-userhierarchystructure-syntax.json"></a>
 
-```
+```json
 {
   "[LevelFive](#cfn-connect-userhierarchystructure-userhierarchystructure-levelfive)" : {{LevelFive}},
   "[LevelFour](#cfn-connect-userhierarchystructure-userhierarchystructure-levelfour)" : {{LevelFour}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-userhierarchystructure-userhierarchystructure-syntax.yaml"></a>
 
-```
+```yaml
   [LevelFive](#cfn-connect-userhierarchystructure-userhierarchystructure-levelfive): {{
     LevelFive}}
   [LevelFour](#cfn-connect-userhierarchystructure-userhierarchystructure-levelfour): {{

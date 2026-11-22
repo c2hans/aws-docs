@@ -71,7 +71,7 @@ CloudFront blueprints are available only in the **US-East-1 (N. Virginia)** Regi
 
 1. Replace the template code with a function that modifies the security headers that your origin returns. For example, you could use code similar to the following:
 
-   ```
+   ```javascript
    'use strict';
    export const handler = (event, context, callback) => {
 

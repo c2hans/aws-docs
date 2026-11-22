@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eventsv2-subscriber-stepfunctionsparameters-syntax.json"></a>
 
-```
+```json
 {
   "[InvocationTimeoutSeconds](#cfn-eventsv2-subscriber-stepfunctionsparameters-invocationtimeoutseconds)" : {{String}},
   "[InvocationType](#cfn-eventsv2-subscriber-stepfunctionsparameters-invocationtype)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eventsv2-subscriber-stepfunctionsparameters-syntax.yaml"></a>
 
-```
+```yaml
   [InvocationTimeoutSeconds](#cfn-eventsv2-subscriber-stepfunctionsparameters-invocationtimeoutseconds): {{String}}
   [InvocationType](#cfn-eventsv2-subscriber-stepfunctionsparameters-invocationtype): {{String}}
   [Name](#cfn-eventsv2-subscriber-stepfunctionsparameters-name): {{String}}

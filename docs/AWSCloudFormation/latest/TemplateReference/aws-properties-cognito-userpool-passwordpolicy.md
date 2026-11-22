@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpool-passwordpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[MinimumLength](#cfn-cognito-userpool-passwordpolicy-minimumlength)" : {{Integer}},
   "[PasswordHistorySize](#cfn-cognito-userpool-passwordpolicy-passwordhistorysize)" : {{Integer}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpool-passwordpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [MinimumLength](#cfn-cognito-userpool-passwordpolicy-minimumlength): {{Integer}}
   [PasswordHistorySize](#cfn-cognito-userpool-passwordpolicy-passwordhistorysize): {{Integer}}
   [RequireLowercase](#cfn-cognito-userpool-passwordpolicy-requirelowercase): {{Boolean}}

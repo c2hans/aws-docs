@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-comprehend-entityrecognizer-entityrecognizerdocuments-syntax.json"></a>
 
-```
+```json
 {
   "[InputFormat](#cfn-comprehend-entityrecognizer-entityrecognizerdocuments-inputformat)" : {{String}},
   "[S3Uri](#cfn-comprehend-entityrecognizer-entityrecognizerdocuments-s3uri)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-comprehend-entityrecognizer-entityrecognizerdocuments-syntax.yaml"></a>
 
-```
+```yaml
   [InputFormat](#cfn-comprehend-entityrecognizer-entityrecognizerdocuments-inputformat): {{String}}
   [S3Uri](#cfn-comprehend-entityrecognizer-entityrecognizerdocuments-s3uri): {{String}}
   [TestS3Uri](#cfn-comprehend-entityrecognizer-entityrecognizerdocuments-tests3uri): {{String}}

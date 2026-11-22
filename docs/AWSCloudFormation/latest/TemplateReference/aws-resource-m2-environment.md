@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-m2-environment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::M2::Environment",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-m2-environment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::M2::Environment
 Properties:
   [Description](#cfn-m2-environment-description): {{String}}

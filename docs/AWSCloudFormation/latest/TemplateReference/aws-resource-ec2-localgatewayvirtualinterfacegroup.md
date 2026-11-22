@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-localgatewayvirtualinterfacegroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::LocalGatewayVirtualInterfaceGroup",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-localgatewayvirtualinterfacegroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::LocalGatewayVirtualInterfaceGroup
 Properties:
   [LocalBgpAsn](#cfn-ec2-localgatewayvirtualinterfacegroup-localbgpasn): {{Integer}}

@@ -22,7 +22,7 @@ Note that all access keys and tokens are examples only and cannot be used as sho
 
 1. Open a PowerShell command prompt and configure the default profile to use the access key from your current IAM user or from your federated role. If you have previously used the Tools for Windows PowerShell, then this is likely already done. Note that you can switch roles only if you are signed in as an IAM user, not the AWS account root user.
 
-   ```
+   ```powershell
    PS C:\> Set-AWSCredentials -AccessKey {{AKIAIOSFODNN7EXAMPLE}} -SecretKey {{wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY}} -StoreAs {{MyMainUserProfile}}
    PS C:\> Initialize-AWSDefaults -ProfileName {{MyMainUserProfile}} -Region {{us-east-2}}
    ```
@@ -31,13 +31,13 @@ Note that all access keys and tokens are examples only and cannot be used as sho
 
 1. To retrieve credentials for the new role, run the following command to switch to the `{{RoleName}}` role in the 123456789012 account. You get the role ARN from the account administrator who created the role. The command requires that you provide a session name as well. You can choose any text for that. The following command requests the credentials and then captures the `Credentials` property object from the returned results object and stores it in the `$Creds` variable.
 
-   ```
+   ```powershell
    PS C:\> $Creds = (Use-STSRole -RoleArn "arn:aws:iam::{{123456789012}}:role/{{RoleName}}" -RoleSessionName "{{MyRoleSessionName}}").Credentials
    ```
 
    `$Creds` is an object that now contains the `AccessKeyId`, `SecretAccessKey`, and `SessionToken` elements that you need in the following steps. The following sample commands illustrate typical values:
 
-   ```
+   ```powershell
    PS C:\> $Creds.AccessKeyId
    AKIAIOSFODNN7EXAMPLE
 
@@ -56,7 +56,7 @@ Note that all access keys and tokens are examples only and cannot be used as sho
 
 1. To use these credentials for any subsequent command, include them with the `-Credential` parameter. For example, the following command uses the credentials from the role and works only if the role is granted the `iam:ListRoles` permission and can therefore run the `Get-IAMRoles` cmdlet:
 
-   ```
+   ```powershell
            PS C:\> get-iamroles -Credential $Creds
    ```
 

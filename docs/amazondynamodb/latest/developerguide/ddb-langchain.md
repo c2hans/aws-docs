@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ddb
 
 The `DynamoDBChatMessageHistory` class, in the `langchain-community` package for Python and the `@langchain/community` package for JavaScript, persists chat messages in a DynamoDB table. The class expects an existing table whose partition key is a string attribute named `SessionId` (configurable through `primary_key_name`). Create the table with the AWS CLI:
 
-```
+```bash
 aws dynamodb create-table \
   --table-name SessionTable \
   --attribute-definitions AttributeName=SessionId,AttributeType=S \
@@ -21,11 +21,11 @@ aws dynamodb create-table \
 
 Install the packages, then read and write history keyed by a session ID:
 
-```
+```bash
 pip install langchain-community boto3
 ```
 
-```
+```python
 from langchain_community.chat_message_histories import DynamoDBChatMessageHistory
 
 history = DynamoDBChatMessageHistory(
@@ -48,13 +48,13 @@ The `DynamoDBVectorStore` class, in the `langchain-aws` package, implements the 
 
 Install the package:
 
-```
+```bash
 pip install langchain-aws boto3
 ```
 
 Provide a table name and an embedding function. The table and vector index are created on first write if they don't exist:
 
-```
+```python
 from langchain_aws.embeddings import BedrockEmbeddings
 from langchain_aws.vectorstores.dynamodb import DynamoDBVectorStore
 

@@ -46,7 +46,7 @@ To set up the custom domain name or to update its certificate, you must have per
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

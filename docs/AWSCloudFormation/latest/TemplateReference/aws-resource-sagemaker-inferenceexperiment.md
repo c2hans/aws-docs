@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sagemaker-inferenceexperiment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SageMaker::InferenceExperiment",
   "Properties" : {
@@ -46,7 +46,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sagemaker-inferenceexperiment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SageMaker::InferenceExperiment
 Properties:
   [DataStorageConfig](#cfn-sagemaker-inferenceexperiment-datastorageconfig): {{

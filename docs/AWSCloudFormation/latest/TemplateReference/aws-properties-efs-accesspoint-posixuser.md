@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-efs-accesspoint-posixuser-syntax.json"></a>
 
-```
+```json
 {
   "[Gid](#cfn-efs-accesspoint-posixuser-gid)" : {{String}},
   "[SecondaryGids](#cfn-efs-accesspoint-posixuser-secondarygids)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-efs-accesspoint-posixuser-syntax.yaml"></a>
 
-```
+```yaml
   [Gid](#cfn-efs-accesspoint-posixuser-gid): {{String}}
   [SecondaryGids](#cfn-efs-accesspoint-posixuser-secondarygids): {{
     - String}}

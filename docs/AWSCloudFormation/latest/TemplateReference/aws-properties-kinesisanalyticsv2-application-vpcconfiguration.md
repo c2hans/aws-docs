@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisanalyticsv2-application-vpcconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[SecurityGroupIds](#cfn-kinesisanalyticsv2-application-vpcconfiguration-securitygroupids)" : {{[ String, ... ]}},
   "[SubnetIds](#cfn-kinesisanalyticsv2-application-vpcconfiguration-subnetids)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisanalyticsv2-application-vpcconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [SecurityGroupIds](#cfn-kinesisanalyticsv2-application-vpcconfiguration-securitygroupids): {{
     - String}}
   [SubnetIds](#cfn-kinesisanalyticsv2-application-vpcconfiguration-subnetids): {{

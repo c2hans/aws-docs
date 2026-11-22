@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-runtimeversion-platform-syntax.json"></a>
 
-```
+```json
 {
   "[Architecture](#cfn-lambda-runtimeversion-platform-architecture)" : {{String}},
   "[Digest](#cfn-lambda-runtimeversion-platform-digest)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-runtimeversion-platform-syntax.yaml"></a>
 
-```
+```yaml
   [Architecture](#cfn-lambda-runtimeversion-platform-architecture): {{String}}
   [Digest](#cfn-lambda-runtimeversion-platform-digest): {{String}}
   [Os](#cfn-lambda-runtimeversion-platform-os): {{String}}

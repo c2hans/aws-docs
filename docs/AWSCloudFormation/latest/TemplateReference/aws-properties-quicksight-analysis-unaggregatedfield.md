@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-unaggregatedfield-syntax.json"></a>
 
-```
+```json
 {
   "[Column](#cfn-quicksight-analysis-unaggregatedfield-column)" : {{ColumnIdentifier}},
   "[FieldId](#cfn-quicksight-analysis-unaggregatedfield-fieldid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-unaggregatedfield-syntax.yaml"></a>
 
-```
+```yaml
   [Column](#cfn-quicksight-analysis-unaggregatedfield-column): {{
     ColumnIdentifier}}
   [FieldId](#cfn-quicksight-analysis-unaggregatedfield-fieldid): {{String}}

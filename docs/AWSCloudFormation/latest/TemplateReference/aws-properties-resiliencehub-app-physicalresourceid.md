@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-resiliencehub-app-physicalresourceid-syntax.json"></a>
 
-```
+```json
 {
   "[AwsAccountId](#cfn-resiliencehub-app-physicalresourceid-awsaccountid)" : {{String}},
   "[AwsRegion](#cfn-resiliencehub-app-physicalresourceid-awsregion)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-resiliencehub-app-physicalresourceid-syntax.yaml"></a>
 
-```
+```yaml
   [AwsAccountId](#cfn-resiliencehub-app-physicalresourceid-awsaccountid): {{String}}
   [AwsRegion](#cfn-resiliencehub-app-physicalresourceid-awsregion): {{String}}
   [Identifier](#cfn-resiliencehub-app-physicalresourceid-identifier): {{String}}

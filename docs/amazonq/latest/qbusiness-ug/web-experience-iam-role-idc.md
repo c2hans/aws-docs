@@ -8,11 +8,11 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 **Important**
 This page only applies to Amazon Q Business web experiences connected to IAM Identity Center-integrated Amazon Q Business applications.
++ **Latest policy update:** December 3, 2024
 
-**Policy history**
-+ **Latest policy update:** — December 3, 2024
+The following table lists and describes the changes to this policy over time.
 
-The following table list and describes the changes to this policy over time.
+**IAM Identity Center policy history**
 
 | Change | Description | Date |
 | --- | --- | --- |
@@ -52,7 +52,7 @@ To allow Amazon Q to assume this role, use the following trust policy:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-sankeydiagramchartconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DataLabels](#cfn-quicksight-analysis-sankeydiagramchartconfiguration-datalabels)" : {{DataLabelOptions}},
   "[FieldWells](#cfn-quicksight-analysis-sankeydiagramchartconfiguration-fieldwells)" : {{SankeyDiagramFieldWells}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-sankeydiagramchartconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DataLabels](#cfn-quicksight-analysis-sankeydiagramchartconfiguration-datalabels): {{
     DataLabelOptions}}
   [FieldWells](#cfn-quicksight-analysis-sankeydiagramchartconfiguration-fieldwells): {{

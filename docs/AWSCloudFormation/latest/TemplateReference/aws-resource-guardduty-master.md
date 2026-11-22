@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-guardduty-master-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::GuardDuty::Master",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-guardduty-master-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::GuardDuty::Master
 Properties:
   [DetectorId](#cfn-guardduty-master-detectorid): {{String}}
@@ -83,7 +83,7 @@ To declare a GuardDuty`Master` resource:
 #### JSON
 <a name="aws-resource-guardduty-master--examples--Declare_a_Master_Resource--json"></a>
 
-```
+```json
 "GDMaster": {
     "Type" : "AWS::GuardDuty::Master",
     "Properties" : {
@@ -97,7 +97,7 @@ To declare a GuardDuty`Master` resource:
 #### YAML
 <a name="aws-resource-guardduty-master--examples--Declare_a_Master_Resource--yaml"></a>
 
-```
+```yaml
 GDMaster:
     Type: AWS::GuardDuty::Master
     Properties:

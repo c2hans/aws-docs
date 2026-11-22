@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-mailmanagerruleset-ruleverdictexpression-syntax.json"></a>
 
-```
+```json
 {
   "[Evaluate](#cfn-ses-mailmanagerruleset-ruleverdictexpression-evaluate)" : {{RuleVerdictToEvaluate}},
   "[Operator](#cfn-ses-mailmanagerruleset-ruleverdictexpression-operator)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-mailmanagerruleset-ruleverdictexpression-syntax.yaml"></a>
 
-```
+```yaml
   [Evaluate](#cfn-ses-mailmanagerruleset-ruleverdictexpression-evaluate): {{
     RuleVerdictToEvaluate}}
   [Operator](#cfn-ses-mailmanagerruleset-ruleverdictexpression-operator): {{String}}

@@ -21,7 +21,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Glacier#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Upload an object to an Amazon S3 Glacier vault.
     /// </summary>
@@ -81,7 +81,7 @@ For more information, see [Uploading an Archive in Amazon Glacier](https://docs.
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/glacier#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.glacier.GlacierClient;
 import software.amazon.awssdk.services.glacier.model.UploadArchiveRequest;
@@ -291,7 +291,7 @@ public class UploadArchive {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/glacier#code-examples).
 Create the client.
 
-```
+```javascript
 const { GlacierClient } = require("@aws-sdk/client-glacier");
 // Set the AWS Region.
 const REGION = "REGION";
@@ -301,7 +301,7 @@ export { glacierClient };
 ```
 Upload the archive.
 
-```
+```javascript
 // Load the SDK for JavaScript
 import { UploadArchiveCommand } from "@aws-sdk/client-glacier";
 import { glacierClient } from "./libs/glacierClient.js";
@@ -330,7 +330,7 @@ run();
 **SDK for JavaScript (v2)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/glacier#code-examples).
 
-```
+```javascript
 // Load the SDK for JavaScript
 var AWS = require("aws-sdk");
 // Set the region
@@ -359,7 +359,7 @@ glacier.uploadArchive(params, function (err, data) {
 **Tools for PowerShell V4**
 **Example 1: Uploads a single file to the specified vault, returning the archive ID and computed checksum.**
 
-```
+```powershell
 Write-GLCArchive -VaultName myvault -FilePath c:\temp\blue.bin
 ```
 **Output:**
@@ -371,7 +371,7 @@ C:\temp\blue.bin            o9O9jUUs...TTX-TpIhQJw 79f3e...f4395b
 ```
 **Example 2: Uploads the contents of a folder hierarchy to the specified vault in the user's account. For each file uploaded the cmdlet emits the filename, corresponding archive ID and the computed checksum of the archive.**
 
-```
+```powershell
 Write-GLCArchive -VaultName myvault -FolderPath . -Recurse
 ```
 **Output:**
@@ -391,7 +391,7 @@ C:\temp\Folder2\file2.iso   -Ix3jlmu...iXiDh-XfOPA 7469e...3e86f1
 **Tools for PowerShell V5**
 **Example 1: Uploads a single file to the specified vault, returning the archive ID and computed checksum.**
 
-```
+```powershell
 Write-GLCArchive -VaultName myvault -FilePath c:\temp\blue.bin
 ```
 **Output:**
@@ -403,7 +403,7 @@ C:\temp\blue.bin            o9O9jUUs...TTX-TpIhQJw 79f3e...f4395b
 ```
 **Example 2: Uploads the contents of a folder hierarchy to the specified vault in the user's account. For each file uploaded the cmdlet emits the filename, corresponding archive ID and the computed checksum of the archive.**
 
-```
+```powershell
 Write-GLCArchive -VaultName myvault -FolderPath . -Recurse
 ```
 **Output:**
@@ -426,7 +426,7 @@ C:\temp\Folder2\file2.iso   -Ix3jlmu...iXiDh-XfOPA 7469e...3e86f1
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/glacier#code-examples).
 
-```
+```python
 class GlacierWrapper:
     """Encapsulates Amazon S3 Glacier API operations."""
 

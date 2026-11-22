@@ -36,7 +36,7 @@ You can associate a query log configuration to a Profile by running a AWS CLI co
 
 The following is an example output after you run the command:
 
-```
+```json
 {
     "ProfileResourceAssociation": {
         "CreationTime": 1710851226.613,

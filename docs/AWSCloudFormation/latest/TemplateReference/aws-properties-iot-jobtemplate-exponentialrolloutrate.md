@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-jobtemplate-exponentialrolloutrate-syntax.json"></a>
 
-```
+```json
 {
   "[BaseRatePerMinute](#cfn-iot-jobtemplate-exponentialrolloutrate-baserateperminute)" : {{Integer}},
   "[IncrementFactor](#cfn-iot-jobtemplate-exponentialrolloutrate-incrementfactor)" : {{Number}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-jobtemplate-exponentialrolloutrate-syntax.yaml"></a>
 
-```
+```yaml
   [BaseRatePerMinute](#cfn-iot-jobtemplate-exponentialrolloutrate-baserateperminute): {{Integer}}
   [IncrementFactor](#cfn-iot-jobtemplate-exponentialrolloutrate-incrementfactor): {{Number}}
   [RateIncreaseCriteria](#cfn-iot-jobtemplate-exponentialrolloutrate-rateincreasecriteria): {{

@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-appconfig-application-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppConfig::Application",
   "Properties" : {
@@ -44,7 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-appconfig-application-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppConfig::Application
 Properties:
   [Description](#cfn-appconfig-application-description): {{String}}
@@ -110,7 +110,7 @@ The following example creates a simple AWS AppConfig application named MyTestApp
 #### JSON
 <a name="aws-resource-appconfig-application--examples--application_example--json"></a>
 
-```
+```json
 BasicApplication": {
     "Type": "AWS::AppConfig::Application",
     "Properties": {
@@ -130,7 +130,7 @@ BasicApplication": {
 #### YAML
 <a name="aws-resource-appconfig-application--examples--application_example--yaml"></a>
 
-```
+```yaml
 BasicApplication:
     Type: AWS::AppConfig::Application
     Properties:

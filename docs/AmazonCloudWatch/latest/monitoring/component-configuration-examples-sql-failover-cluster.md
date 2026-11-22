@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/compo
 
 The following example shows a component configuration in JSON format for SQL failover cluster instance.
 
-```
+```json
 {
   "subComponents" : [ {
     "subComponentType" : "AWS::EC2::Instance",

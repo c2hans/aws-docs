@@ -28,7 +28,7 @@ The default parameter group for MariaDB version 10.6 includes MyRocks parameters
 
 To create a table that uses the MyRocks storage engine, specify `ENGINE=RocksDB` in the `CREATE TABLE` statement. The following example creates a table that uses the MyRocks storage engine.
 
-```
+```sql
 CREATE TABLE test (a INT NOT NULL, b CHAR(10)) ENGINE=RocksDB;
 ```
 

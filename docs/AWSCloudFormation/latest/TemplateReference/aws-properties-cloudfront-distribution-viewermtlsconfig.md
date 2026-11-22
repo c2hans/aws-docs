@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distribution-viewermtlsconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Mode](#cfn-cloudfront-distribution-viewermtlsconfig-mode)" : {{String}},
   "[TrustStoreConfig](#cfn-cloudfront-distribution-viewermtlsconfig-truststoreconfig)" : {{TrustStoreConfig}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distribution-viewermtlsconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Mode](#cfn-cloudfront-distribution-viewermtlsconfig-mode): {{String}}
   [TrustStoreConfig](#cfn-cloudfront-distribution-viewermtlsconfig-truststoreconfig): {{
     TrustStoreConfig}}

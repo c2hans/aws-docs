@@ -48,7 +48,7 @@ The following code examples show how to generate an authentication token, and th
 
 This code connects to a MariaDB or MySQL DB instance.
 
-```
+```go
 package main
 
 import (
@@ -99,7 +99,7 @@ func main() {
 
 This code connects to a PostgreSQL DB instance.
 
-```
+```go
 package main
 
 import (
@@ -159,7 +159,7 @@ The following code examples show how to generate an authentication token, and th
 
 This code connects to a MariaDB or MySQL DB instance.
 
-```
+```go
 package main
 
 import (
@@ -204,7 +204,7 @@ func main() {
 
 This code connects to a PostgreSQL DB instance.
 
-```
+```go
 package main
 
 import (

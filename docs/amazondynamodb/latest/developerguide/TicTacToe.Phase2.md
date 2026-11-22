@@ -73,7 +73,7 @@ After the user logs in, the application displays the following three lists of in
 
 In the code, the `index` function (in `application.py`) makes the following three calls to retrieve game status information:
 
-```
+```python
 inviteGames     = controller.getGameInvites(session["username"])
 inProgressGames = controller.getGamesWithStatus(session["username"], "IN_PROGRESS")
 finishedGames   = controller.getGamesWithStatus(session["username"], "FINISHED")
@@ -81,7 +81,7 @@ finishedGames   = controller.getGamesWithStatus(session["username"], "FINISHED")
 
 Each of these calls returns a list of items from DynamoDB that are wrapped by the `Game` objects. It is easy to extract data from these objects in the view. The index function passes these object lists to the view to render the HTML.
 
-```
+```python
 return render_template("index.html",
                        user=session["username"],
                        invites=inviteGames,
@@ -108,7 +108,7 @@ The function specifies the query as follows:
   You use the `OpponentId-StatusDate-index` index to retrieve games to which the logged-in user is invited—that is, where the logged-in user is the opponent.
 + The query limits the result to 10 items.
 
-```
+```python
 gameInvitesIndex = self.cm.getGamesTable().query(
                                             Opponent__eq=user,
                                             StatusDate__beginswith="PENDING_",
@@ -125,7 +125,7 @@ After an opponent accepts a game invitation, the game status changes to `IN_PROG
 
 Queries to find games that are either in progress or finished are the same except for the different status value. Therefore, the application defines the `getGamesWithStatus` function, which takes the status value as a parameter.
 
-```
+```python
 inProgressGames = controller.getGamesWithStatus(session["username"], "IN_PROGRESS")
 finishedGames   = controller.getGamesWithStatus(session["username"], "FINISHED")
 ```
@@ -139,7 +139,7 @@ A list of in-progress games for a given user includes both the following:
 The `getGamesWithStatus` function runs the following two queries, each time using the appropriate secondary index.
 + The function queries the `Games` table using the `HostId-StatusDate-index` index. For the index, the query specifies primary key values—both the partition key (`HostId`) and sort key (`StatusDate`) values, along with comparison operators.
 
-  ```
+  ```python
   hostGamesInProgress = self.cm.getGamesTable ().query(HostId__eq=user,
                                                  StatusDate__beginswith=status,
                                                  index="HostId-StatusDate-index",
@@ -151,7 +151,7 @@ The `getGamesWithStatus` function runs the following two queries, each time usin
   + `StatusDate__beginswith=status` specifies the `BEGINS_WITH` comparison operator.
 + The function queries the `Games` table using the `OpponentId-StatusDate-index` index.
 
-  ```
+  ```python
   oppGamesInProgress = self.cm.getGamesTable().query(Opponent__eq=user,
                                                StatusDate__beginswith=status,
                                                index="OpponentId-StatusDate-index",
@@ -159,7 +159,7 @@ The `getGamesWithStatus` function runs the following two queries, each time usin
   ```
 + The function then combines the two lists, sorts, and for the first 0 to 10 items creates a list of the `Game` objects and returns the list to the calling function (that is, the index).
 
-  ```
+  ```python
   games = self.mergeQueries(hostGamesInProgress,
                           oppGamesInProgress)
   return games
@@ -184,7 +184,7 @@ A user selection on the board generates a form `POST` request to the application
 + It adds a new attribute specific to the move.
 + It updates the `Turn` attribute value to the user whose turn is next.
 
-```
+```python
 controller.updateBoardAndTurn(item, value, session["username"])
 ```
 
@@ -223,7 +223,7 @@ For the `update_item` call, the code identifies the following:
 
 Now the function calls `update_item` to update the item.
 
-```
+```python
 self.cm.db.update_item("Games", key=key,
     attribute_updates=attributeUpdates,
     expected=expectations)
@@ -231,7 +231,7 @@ self.cm.db.update_item("Games", key=key,
 
 After the function returns, the `selectSquare` function calls redirect, as shown in the following example.
 
-```
+```python
 redirect("/game="+gameId)
 ```
 

@@ -124,7 +124,7 @@ To create a policy statement for a custom policy, complete the following steps. 
 
 1. Construct the policy statement using the following JSON format.
 
-   ```
+   ```json
    {
        "Statement": [
            {
@@ -238,7 +238,7 @@ For more information, see [Values that you specify in the policy statement for a
 
 The following example custom policy in a signed cookie specifies that a user can access the file `https://d111111abcdef8.cloudfront.net/game_download.zip` from IP addresses in the range `192.0.2.0/24` until January 1, 2023 10:00 am UTC:
 
-```
+```json
 {
     "Statement": [
         {
@@ -261,7 +261,7 @@ The following example custom policy in a signed cookie specifies that a user can
 
 With the following example custom policy, you can create signed cookies for any file in the `training` directory, as indicated by the \* wildcard character in the `Resource` parameter. Users can access the file from an IP address in the range `192.0.2.0/24` until January 1, 2013 10:00 am UTC:
 
-```
+```json
 {
     "Statement": [
         {
@@ -288,7 +288,7 @@ Each signed cookie in which you use this policy includes a base URL that identif
 
 With the following sample custom policy, you can set signed cookies for any file associated with any distribution, as indicated by the \* wildcard character in the `Resource` parameter. The user must use the IP address `192.0.2.10/32`. (The value `192.0.2.10/32` in CIDR notation refers to a single IP address, `192.0.2.10`.) The files are available only from January 1, 2013 10:00 am UTC until January 2, 2013 10:00 am UTC:
 
-```
+```json
 {
     "Statement": [
         {

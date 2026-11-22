@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-cluster-storageinfo-syntax.json"></a>
 
-```
+```json
 {
   "[EBSStorageInfo](#cfn-msk-cluster-storageinfo-ebsstorageinfo)" : {{EBSStorageInfo}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-cluster-storageinfo-syntax.yaml"></a>
 
-```
+```yaml
   [EBSStorageInfo](#cfn-msk-cluster-storageinfo-ebsstorageinfo): {{
     EBSStorageInfo}}
 ```

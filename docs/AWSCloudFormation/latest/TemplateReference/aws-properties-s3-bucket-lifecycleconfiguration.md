@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-lifecycleconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Rules](#cfn-s3-bucket-lifecycleconfiguration-rules)" : {{[ Rule, ... ]}},
   "[TransitionDefaultMinimumObjectSize](#cfn-s3-bucket-lifecycleconfiguration-transitiondefaultminimumobjectsize)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-lifecycleconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Rules](#cfn-s3-bucket-lifecycleconfiguration-rules): {{
     - Rule}}
   [TransitionDefaultMinimumObjectSize](#cfn-s3-bucket-lifecycleconfiguration-transitiondefaultminimumobjectsize): {{String}}
@@ -63,7 +63,7 @@ The following example template shows an S3 bucket with a lifecycle configuration
 #### JSON
 <a name="aws-properties-s3-bucket-lifecycleconfiguration--examples--Manage_the_lifecycle_for_S3_objects--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -104,7 +104,7 @@ The following example template shows an S3 bucket with a lifecycle configuration
 #### YAML
 <a name="aws-properties-s3-bucket-lifecycleconfiguration--examples--Manage_the_lifecycle_for_S3_objects--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   S3Bucket:

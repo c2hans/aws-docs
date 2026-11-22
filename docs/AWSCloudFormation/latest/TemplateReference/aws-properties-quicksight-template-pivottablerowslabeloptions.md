@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-pivottablerowslabeloptions-syntax.json"></a>
 
-```
+```json
 {
   "[CustomLabel](#cfn-quicksight-template-pivottablerowslabeloptions-customlabel)" : {{String}},
   "[Visibility](#cfn-quicksight-template-pivottablerowslabeloptions-visibility)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-pivottablerowslabeloptions-syntax.yaml"></a>
 
-```
+```yaml
   [CustomLabel](#cfn-quicksight-template-pivottablerowslabeloptions-customlabel): {{String}}
   [Visibility](#cfn-quicksight-template-pivottablerowslabeloptions-visibility): {{String}}
 ```

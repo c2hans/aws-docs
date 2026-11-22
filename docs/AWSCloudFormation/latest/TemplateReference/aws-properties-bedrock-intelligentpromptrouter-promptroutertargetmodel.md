@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-intelligentpromptrouter-promptroutertargetmodel-syntax.json"></a>
 
-```
+```json
 {
   "[ModelArn](#cfn-bedrock-intelligentpromptrouter-promptroutertargetmodel-modelarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-intelligentpromptrouter-promptroutertargetmodel-syntax.yaml"></a>
 
-```
+```yaml
   [ModelArn](#cfn-bedrock-intelligentpromptrouter-promptroutertargetmodel-modelarn): {{String}}
 ```
 

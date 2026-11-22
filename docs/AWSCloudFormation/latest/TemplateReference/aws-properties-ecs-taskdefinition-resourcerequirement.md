@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskdefinition-resourcerequirement-syntax.json"></a>
 
-```
+```json
 {
   "[SharingStrategy](#cfn-ecs-taskdefinition-resourcerequirement-sharingstrategy)" : {{SharingStrategy}},
   "[Type](#cfn-ecs-taskdefinition-resourcerequirement-type)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskdefinition-resourcerequirement-syntax.yaml"></a>
 
-```
+```yaml
   [SharingStrategy](#cfn-ecs-taskdefinition-resourcerequirement-sharingstrategy): {{
     SharingStrategy}}
   [Type](#cfn-ecs-taskdefinition-resourcerequirement-type): {{String}}

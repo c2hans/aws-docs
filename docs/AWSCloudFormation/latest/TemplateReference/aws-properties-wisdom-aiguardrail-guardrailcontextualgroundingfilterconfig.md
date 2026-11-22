@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-aiguardrail-guardrailcontextualgroundingfilterconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Threshold](#cfn-wisdom-aiguardrail-guardrailcontextualgroundingfilterconfig-threshold)" : {{Number}},
   "[Type](#cfn-wisdom-aiguardrail-guardrailcontextualgroundingfilterconfig-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-aiguardrail-guardrailcontextualgroundingfilterconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Threshold](#cfn-wisdom-aiguardrail-guardrailcontextualgroundingfilterconfig-threshold): {{Number}}
   [Type](#cfn-wisdom-aiguardrail-guardrailcontextualgroundingfilterconfig-type): {{String}}
 ```

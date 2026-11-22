@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-storagevirtualmachine-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-fsx-storagevirtualmachine-tag-key)" : {{String}},
   "[Value](#cfn-fsx-storagevirtualmachine-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-storagevirtualmachine-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-fsx-storagevirtualmachine-tag-key): {{String}}
   [Value](#cfn-fsx-storagevirtualmachine-tag-value): {{String}}
 ```

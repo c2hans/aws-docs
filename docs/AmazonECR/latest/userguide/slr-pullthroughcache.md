@@ -25,7 +25,7 @@ The `AWSECRPullThroughCache_ServiceRolePolicy` policy contains the following JSO
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

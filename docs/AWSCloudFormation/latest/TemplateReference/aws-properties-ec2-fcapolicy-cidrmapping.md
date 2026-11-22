@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-fcapolicy-cidrmapping-syntax.json"></a>
 
-```
+```json
 {
   "[CidrLabel](#cfn-ec2-fcapolicy-cidrmapping-cidrlabel)" : {{String}},
   "[CidrRange](#cfn-ec2-fcapolicy-cidrmapping-cidrrange)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-fcapolicy-cidrmapping-syntax.yaml"></a>
 
-```
+```yaml
   [CidrLabel](#cfn-ec2-fcapolicy-cidrmapping-cidrlabel): {{String}}
   [CidrRange](#cfn-ec2-fcapolicy-cidrmapping-cidrrange): {{String}}
 ```

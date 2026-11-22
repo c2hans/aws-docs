@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-aiguardrail-aiguardrailcontextualgroundingpolicyconfig-syntax.json"></a>
 
-```
+```json
 {
   "[FiltersConfig](#cfn-wisdom-aiguardrail-aiguardrailcontextualgroundingpolicyconfig-filtersconfig)" : {{[ GuardrailContextualGroundingFilterConfig, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-aiguardrail-aiguardrailcontextualgroundingpolicyconfig-syntax.yaml"></a>
 
-```
+```yaml
   [FiltersConfig](#cfn-wisdom-aiguardrail-aiguardrailcontextualgroundingpolicyconfig-filtersconfig): {{
     - GuardrailContextualGroundingFilterConfig}}
 ```

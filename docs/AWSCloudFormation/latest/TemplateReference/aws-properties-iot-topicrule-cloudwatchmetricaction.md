@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicrule-cloudwatchmetricaction-syntax.json"></a>
 
-```
+```json
 {
   "[MetricName](#cfn-iot-topicrule-cloudwatchmetricaction-metricname)" : {{String}},
   "[MetricNamespace](#cfn-iot-topicrule-cloudwatchmetricaction-metricnamespace)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicrule-cloudwatchmetricaction-syntax.yaml"></a>
 
-```
+```yaml
   [MetricName](#cfn-iot-topicrule-cloudwatchmetricaction-metricname): {{String}}
   [MetricNamespace](#cfn-iot-topicrule-cloudwatchmetricaction-metricnamespace): {{String}}
   [MetricTimestamp](#cfn-iot-topicrule-cloudwatchmetricaction-metrictimestamp): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dynamodb-globaltable-globalsecondaryindex-syntax.json"></a>
 
-```
+```json
 {
   "[IndexName](#cfn-dynamodb-globaltable-globalsecondaryindex-indexname)" : {{String}},
   "[KeySchema](#cfn-dynamodb-globaltable-globalsecondaryindex-keyschema)" : {{[ KeySchema, ... ]}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dynamodb-globaltable-globalsecondaryindex-syntax.yaml"></a>
 
-```
+```yaml
   [IndexName](#cfn-dynamodb-globaltable-globalsecondaryindex-indexname): {{String}}
   [KeySchema](#cfn-dynamodb-globaltable-globalsecondaryindex-keyschema): {{
     - KeySchema}}

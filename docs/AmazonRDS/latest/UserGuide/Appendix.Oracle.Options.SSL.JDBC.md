@@ -46,7 +46,7 @@ Take the following steps to trust the Amazon RDS root CA certificate.
 
 The following code example shows how to set up the SSL connection using JDBC.
 
-```
+```java
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;

@@ -12,7 +12,7 @@ For more information about Amazon EventBridge, see the [ Amazon EventBridge User
 
 The following is the Amazon EventBridge event pattern.
 
-```
+```json
 {
    "version":"0",
    "id":"12345678-1234-1234-1234-123456789012",
@@ -37,7 +37,7 @@ The following is the Amazon EventBridge event pattern.
 
 The following is an example of an event that is sent to the Capacity Reservation owner (`222222222222`) when a consumer account (`111111111111`) accepts a billing assignment request for a shared Capacity Reservation (`cr-01234567890abcdef`).
 
-```
+```json
 {
    "version":"0",
    "id":"12345678-1234-1234-1234-123456789012",

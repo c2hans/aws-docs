@@ -22,7 +22,7 @@ The following repository policy allows users within your account to push images.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -60,7 +60,7 @@ The following repository policy allows a specific account to push images.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

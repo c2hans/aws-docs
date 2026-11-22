@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-freeformlayoutelement-syntax.json"></a>
 
-```
+```json
 {
   "[BackgroundStyle](#cfn-quicksight-dashboard-freeformlayoutelement-backgroundstyle)" : {{FreeFormLayoutElementBackgroundStyle}},
   "[BorderRadius](#cfn-quicksight-dashboard-freeformlayoutelement-borderradius)" : {{String}},
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-freeformlayoutelement-syntax.yaml"></a>
 
-```
+```yaml
   [BackgroundStyle](#cfn-quicksight-dashboard-freeformlayoutelement-backgroundstyle): {{
     FreeFormLayoutElementBackgroundStyle}}
   [BorderRadius](#cfn-quicksight-dashboard-freeformlayoutelement-borderradius): {{String}}

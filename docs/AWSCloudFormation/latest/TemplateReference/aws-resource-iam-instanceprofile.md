@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iam-instanceprofile-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IAM::InstanceProfile",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iam-instanceprofile-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IAM::InstanceProfile
 Properties:
   [InstanceProfileName](#cfn-iam-instanceprofile-instanceprofilename): {{String}}
@@ -111,7 +111,7 @@ In this example, the InstanceProfile resource refers to the role by specifying i
 #### JSON
 <a name="aws-resource-iam-instanceprofile--examples--Instance_Profile--json"></a>
 
-```
+```json
 {
    "AWSTemplateFormatVersion": "2010-09-09",
    "Resources": {
@@ -131,7 +131,7 @@ In this example, the InstanceProfile resource refers to the role by specifying i
 #### YAML
 <a name="aws-resource-iam-instanceprofile--examples--Instance_Profile--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Resources:
   MyInstanceProfile:

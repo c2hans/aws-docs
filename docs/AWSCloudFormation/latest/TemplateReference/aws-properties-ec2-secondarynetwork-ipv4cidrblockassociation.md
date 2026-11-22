@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-secondarynetwork-ipv4cidrblockassociation-syntax.json"></a>
 
-```
+```json
 {
   "[AssociationId](#cfn-ec2-secondarynetwork-ipv4cidrblockassociation-associationid)" : {{String}},
   "[CidrBlock](#cfn-ec2-secondarynetwork-ipv4cidrblockassociation-cidrblock)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-secondarynetwork-ipv4cidrblockassociation-syntax.yaml"></a>
 
-```
+```yaml
   [AssociationId](#cfn-ec2-secondarynetwork-ipv4cidrblockassociation-associationid): {{String}}
   [CidrBlock](#cfn-ec2-secondarynetwork-ipv4cidrblockassociation-cidrblock): {{String}}
   [State](#cfn-ec2-secondarynetwork-ipv4cidrblockassociation-state): {{String}}

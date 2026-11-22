@@ -20,14 +20,14 @@ You can describe your EC2 Fleet configuration, the instances in your EC2 Fleet, 
 **To describe your EC2 Fleet**
 Use the [describe-fleets](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-fleets.html) command.
 
-```
+```bash
 aws ec2 describe-fleets \
     --fleet-ids {{fleet-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE}}
 ```
 
 The following is example output.
 
-```
+```json
 {
     "Fleets": [
         {
@@ -73,7 +73,7 @@ The following is example output.
 **To describe your EC2 Fleet**
 Use the [Get-EC2FleetList](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2FleetList.html) cmdlet.
 
-```
+```powershell
 Get-EC2FleetList `
     -FleetId {{fleet-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE}}
 ```
@@ -91,14 +91,14 @@ The returned list of running instances is refreshed periodically and might be ou
 **To describe the instances for the specified EC2 Fleet**
 Use the [describe-fleet-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-fleet-instances.html) command.
 
-```
+```bash
 aws ec2 describe-fleet-instances \
     --fleet-id {{fleet-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE}}
 ```
 
 The following is example output.
 
-```
+```json
 {
     "ActiveInstances": [
         {
@@ -124,7 +124,7 @@ The following is example output.
 **To describe the instances for the specified EC2 Fleet**
 Use the [Get-EC2FleetInstanceList](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2FleetInstanceList.html) cmdlet.
 
-```
+```powershell
 Get-EC2FleetInstanceList `
     -FleetId {{fleet-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE}}
 ```
@@ -142,7 +142,7 @@ For more information about the events in the event history, see [EC2 Fleet event
 **To describe the events for the specified EC2 Fleet**
 Use the [describe-fleet-history](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-fleet-history.html) command.
 
-```
+```bash
 aws ec2 describe-fleet-history \
     --fleet-id {{fleet-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE}} \
     --start-time {{2020-06-01T00:00:00Z}}
@@ -150,7 +150,7 @@ aws ec2 describe-fleet-history \
 
 The following is example output.
 
-```
+```json
 {
     "HistoryRecords": [
         {
@@ -206,7 +206,7 @@ The following is example output.
 **To describe the events for the specified EC2 Fleet**
 Use the [Get-EC2FleetHistory](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2FleetHistory.html) cmdlet.
 
-```
+```powershell
 Get-EC2FleetHistory `
     -FleetId {{fleet-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE}} `
     -UtcStartTime {{2020-06-01T00:00:00Z}}

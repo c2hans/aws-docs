@@ -15,7 +15,7 @@ For step-by-step instructions for testing the following example, see [Java code 
 
 **Example**
 
-```
+```java
 package com.amazonaws.codesamples.document;
 
 import java.util.ArrayList;

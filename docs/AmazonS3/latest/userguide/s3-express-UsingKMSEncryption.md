@@ -61,7 +61,7 @@ To require SSE-KMS of all objects in a particular directory bucket, you can use 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Id":"UploadObjectPolicy",

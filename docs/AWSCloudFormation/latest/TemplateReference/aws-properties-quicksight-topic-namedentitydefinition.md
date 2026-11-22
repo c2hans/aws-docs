@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-topic-namedentitydefinition-syntax.json"></a>
 
-```
+```json
 {
   "[FieldName](#cfn-quicksight-topic-namedentitydefinition-fieldname)" : {{String}},
   "[Metric](#cfn-quicksight-topic-namedentitydefinition-metric)" : {{NamedEntityDefinitionMetric}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-topic-namedentitydefinition-syntax.yaml"></a>
 
-```
+```yaml
   [FieldName](#cfn-quicksight-topic-namedentitydefinition-fieldname): {{String}}
   [Metric](#cfn-quicksight-topic-namedentitydefinition-metric): {{
     NamedEntityDefinitionMetric}}

@@ -16,7 +16,7 @@ This policy allows actions only on DynamoDB tables that exist with the specified
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-connect-contactflowmodulealias-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Connect::ContactFlowModuleAlias",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-connect-contactflowmodulealias-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Connect::ContactFlowModuleAlias
 Properties:
   [ContactFlowModuleId](#cfn-connect-contactflowmodulealias-contactflowmoduleid): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-licensemanager-reportgenerator-reportfrequency-syntax.json"></a>
 
-```
+```json
 {
   "[Period](#cfn-licensemanager-reportgenerator-reportfrequency-period)" : {{String}},
   "[Value](#cfn-licensemanager-reportgenerator-reportfrequency-value)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-licensemanager-reportgenerator-reportfrequency-syntax.yaml"></a>
 
-```
+```yaml
   [Period](#cfn-licensemanager-reportgenerator-reportfrequency-period): {{String}}
   [Value](#cfn-licensemanager-reportgenerator-reportfrequency-value): {{Integer}}
 ```

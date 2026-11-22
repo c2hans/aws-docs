@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-radarchartseriessettings-syntax.json"></a>
 
-```
+```json
 {
   "[AreaStyleSettings](#cfn-quicksight-template-radarchartseriessettings-areastylesettings)" : {{RadarChartAreaStyleSettings}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-radarchartseriessettings-syntax.yaml"></a>
 
-```
+```yaml
   [AreaStyleSettings](#cfn-quicksight-template-radarchartseriessettings-areastylesettings): {{
     RadarChartAreaStyleSettings}}
 ```

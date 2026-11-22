@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-s3files-accesspoint-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::S3Files::AccessPoint",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-s3files-accesspoint-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::S3Files::AccessPoint
 Properties:
   [ClientToken](#cfn-s3files-accesspoint-clienttoken): {{String}}

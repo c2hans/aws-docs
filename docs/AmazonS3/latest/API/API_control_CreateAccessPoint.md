@@ -165,7 +165,7 @@ Pattern: `^[0-9a-z\\-]{63}`
 
 This request creates an access point for S3 on Outposts bucket.
 
-```
+```HTTP
             PUT /v20180820/accesspoint/example-access-point HTTP/1.1
             Host:s3-outposts.<Region>.amazonaws.com
             x-amz-account-id: example-account-id

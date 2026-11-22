@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-docdbelastic-cluster-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-docdbelastic-cluster-tag-key)" : {{String}},
   "[Value](#cfn-docdbelastic-cluster-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-docdbelastic-cluster-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-docdbelastic-cluster-tag-key): {{String}}
   [Value](#cfn-docdbelastic-cluster-tag-value): {{String}}
 ```

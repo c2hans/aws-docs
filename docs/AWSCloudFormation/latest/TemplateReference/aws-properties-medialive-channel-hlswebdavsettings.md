@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-hlswebdavsettings-syntax.json"></a>
 
-```
+```json
 {
   "[ConnectionRetryInterval](#cfn-medialive-channel-hlswebdavsettings-connectionretryinterval)" : {{Integer}},
   "[FilecacheDuration](#cfn-medialive-channel-hlswebdavsettings-filecacheduration)" : {{Integer}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-hlswebdavsettings-syntax.yaml"></a>
 
-```
+```yaml
   [ConnectionRetryInterval](#cfn-medialive-channel-hlswebdavsettings-connectionretryinterval): {{Integer}}
   [FilecacheDuration](#cfn-medialive-channel-hlswebdavsettings-filecacheduration): {{Integer}}
   [HttpTransferMode](#cfn-medialive-channel-hlswebdavsettings-httptransfermode): {{String}}

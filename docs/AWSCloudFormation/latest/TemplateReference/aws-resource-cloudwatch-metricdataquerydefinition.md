@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudwatch-metricdataquerydefinition-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudWatch::MetricDataQueryDefinition",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudwatch-metricdataquerydefinition-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudWatch::MetricDataQueryDefinition
 Properties:
   [Expression](#cfn-cloudwatch-metricdataquerydefinition-expression): {{String}}

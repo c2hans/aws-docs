@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-datasource-datasourceconfigurationinput-syntax.json"></a>
 
-```
+```json
 {
   "[GlueRunConfiguration](#cfn-datazone-datasource-datasourceconfigurationinput-gluerunconfiguration)" : {{GlueRunConfigurationInput}},
   "[RedshiftRunConfiguration](#cfn-datazone-datasource-datasourceconfigurationinput-redshiftrunconfiguration)" : {{RedshiftRunConfigurationInput}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-datasource-datasourceconfigurationinput-syntax.yaml"></a>
 
-```
+```yaml
   [GlueRunConfiguration](#cfn-datazone-datasource-datasourceconfigurationinput-gluerunconfiguration): {{
     GlueRunConfigurationInput}}
   [RedshiftRunConfiguration](#cfn-datazone-datasource-datasourceconfigurationinput-redshiftrunconfiguration): {{

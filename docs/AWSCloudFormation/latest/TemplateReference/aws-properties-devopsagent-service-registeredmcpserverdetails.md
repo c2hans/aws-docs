@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-service-registeredmcpserverdetails-syntax.json"></a>
 
-```
+```json
 {
   "[ApiKeyHeader](#cfn-devopsagent-service-registeredmcpserverdetails-apikeyheader)" : {{String}},
   "[AuthorizationMethod](#cfn-devopsagent-service-registeredmcpserverdetails-authorizationmethod)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-service-registeredmcpserverdetails-syntax.yaml"></a>
 
-```
+```yaml
   [ApiKeyHeader](#cfn-devopsagent-service-registeredmcpserverdetails-apikeyheader): {{String}}
   [AuthorizationMethod](#cfn-devopsagent-service-registeredmcpserverdetails-authorizationmethod): {{String}}
   [Description](#cfn-devopsagent-service-registeredmcpserverdetails-description): {{String}}

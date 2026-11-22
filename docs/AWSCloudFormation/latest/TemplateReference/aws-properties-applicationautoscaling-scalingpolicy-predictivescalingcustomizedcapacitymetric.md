@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationautoscaling-scalingpolicy-predictivescalingcustomizedcapacitymetric-syntax.json"></a>
 
-```
+```json
 {
   "[MetricDataQueries](#cfn-applicationautoscaling-scalingpolicy-predictivescalingcustomizedcapacitymetric-metricdataqueries)" : {{[ PredictiveScalingMetricDataQuery, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationautoscaling-scalingpolicy-predictivescalingcustomizedcapacitymetric-syntax.yaml"></a>
 
-```
+```yaml
   [MetricDataQueries](#cfn-applicationautoscaling-scalingpolicy-predictivescalingcustomizedcapacitymetric-metricdataqueries): {{
     - PredictiveScalingMetricDataQuery}}
 ```

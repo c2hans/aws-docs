@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-athena-workgroup-managedqueryresultsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-athena-workgroup-managedqueryresultsconfiguration-enabled)" : {{Boolean}},
   "[EncryptionConfiguration](#cfn-athena-workgroup-managedqueryresultsconfiguration-encryptionconfiguration)" : {{ManagedStorageEncryptionConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-athena-workgroup-managedqueryresultsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-athena-workgroup-managedqueryresultsconfiguration-enabled): {{Boolean}}
   [EncryptionConfiguration](#cfn-athena-workgroup-managedqueryresultsconfiguration-encryptionconfiguration): {{
     ManagedStorageEncryptionConfiguration}}

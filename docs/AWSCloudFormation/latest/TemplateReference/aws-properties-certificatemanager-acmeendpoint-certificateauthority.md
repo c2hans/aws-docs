@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-certificatemanager-acmeendpoint-certificateauthority-syntax.json"></a>
 
-```
+```json
 {
   "[PublicCertificateAuthority](#cfn-certificatemanager-acmeendpoint-certificateauthority-publiccertificateauthority)" : {{PublicCertificateAuthority}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-certificatemanager-acmeendpoint-certificateauthority-syntax.yaml"></a>
 
-```
+```yaml
   [PublicCertificateAuthority](#cfn-certificatemanager-acmeendpoint-certificateauthority-publiccertificateauthority): {{
     PublicCertificateAuthority}}
 ```

@@ -47,7 +47,7 @@ Creating an IAM role of the **Amazon EC2** type allows the Amazon EC2 instance t
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[

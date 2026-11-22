@@ -15,7 +15,7 @@ To use session replay, import the `RRWebPlugin` from the `aws-rum-web` package a
 
 The following example shows how to enable session replay.
 
-```
+```javascript
 import { AwsRum, AwsRumConfig } from 'aws-rum-web';
 import { RRWebPlugin } from 'aws-rum-web';
 

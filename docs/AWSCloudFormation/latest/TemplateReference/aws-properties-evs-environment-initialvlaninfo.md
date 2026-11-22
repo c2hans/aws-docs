@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-evs-environment-initialvlaninfo-syntax.json"></a>
 
-```
+```json
 {
   "[Cidr](#cfn-evs-environment-initialvlaninfo-cidr)" : {{String}}
 }
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-evs-environment-initialvlaninfo-syntax.yaml"></a>
 
-```
+```yaml
   [Cidr](#cfn-evs-environment-initialvlaninfo-cidr): {{String}}
 ```
 

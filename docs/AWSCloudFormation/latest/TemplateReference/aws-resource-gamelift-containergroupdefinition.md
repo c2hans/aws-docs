@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-gamelift-containergroupdefinition-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::GameLift::ContainerGroupDefinition",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-gamelift-containergroupdefinition-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::GameLift::ContainerGroupDefinition
 Properties:
   [ContainerGroupType](#cfn-gamelift-containergroupdefinition-containergrouptype): {{String}}

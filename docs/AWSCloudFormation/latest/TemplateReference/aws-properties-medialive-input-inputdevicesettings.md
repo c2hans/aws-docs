@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-input-inputdevicesettings-syntax.json"></a>
 
-```
+```json
 {
   "[Id](#cfn-medialive-input-inputdevicesettings-id)" : {{String}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-input-inputdevicesettings-syntax.yaml"></a>
 
-```
+```yaml
   [Id](#cfn-medialive-input-inputdevicesettings-id): {{String}}
 ```
 

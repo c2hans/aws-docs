@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-datasource-sparkparameters-syntax.json"></a>
 
-```
+```json
 {
   "[Host](#cfn-quicksight-datasource-sparkparameters-host)" : {{String}},
   "[Port](#cfn-quicksight-datasource-sparkparameters-port)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-datasource-sparkparameters-syntax.yaml"></a>
 
-```
+```yaml
   [Host](#cfn-quicksight-datasource-sparkparameters-host): {{String}}
   [Port](#cfn-quicksight-datasource-sparkparameters-port): {{Number}}
 ```

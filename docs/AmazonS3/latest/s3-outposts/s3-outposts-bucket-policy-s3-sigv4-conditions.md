@@ -21,7 +21,7 @@ To use the following examples, replace the {{`user input placeholders`}} with yo
 The following bucket policy denies any S3 on Outposts presigned URL request on objects in `example-outpost-bucket` if the signature is more than 10 minutes old.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -44,7 +44,7 @@ The following bucket policy denies any S3 on Outposts presigned URL request on o
 The following bucket policy allows only requests that use the `Authorization` header for request authentication. Any presigned URL requests will be denied since presigned URLs use query parameters to provide request and authentication information. For more information, see [Authentication methods](https://docs.aws.amazon.com/AmazonS3/latest/API/sig-v4-authenticating-requests.html) in the *Amazon Simple Storage Service API Reference*.
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -68,7 +68,7 @@ The following bucket policy allows only requests that use the `Authorization` he
 The following bucket policy denies any uploads with unsigned payloads, such as uploads that are using presigned URLs. For more information, see [Authenticating requests ](https://docs.aws.amazon.com/AmazonS3/latest/API/sigv4-query-string-auth.html#query-string-auth-v4-signing) and [Authentication methods](https://docs.aws.amazon.com/AmazonS3/latest/API/sig-v4-authenticating-requests.html) in the *Amazon Simple Storage Service API Reference*.
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [

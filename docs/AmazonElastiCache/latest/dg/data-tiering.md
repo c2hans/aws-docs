@@ -14,6 +14,9 @@ Data tiering is designed to have minimal performance impact to application workl
 
 With the largest data tiering node size (cache.r6gd.16xlarge), you can store up to 1 petabyte in a single 500-node cluster (500 TB when using 1 read replica). Data tiering is compatible with all Valkey or Redis OSS commands and data structures supported in ElastiCache. You don't need any client-side changes to use this feature.
 
+**Note**
+The `cache.i8ge.48xlarge` node type isn't a data tiering node type. Its Non-Volatile Memory Express (NVMe) storage holds large objects for distributed KV caching. For more information, see [Distributed KV caching](distributed-kv-caching.md).
+
 **Topics**
 + [Best practices](#data-tiering-best-practices)
 + [Limitations](#data-tiering-prerequisites)
@@ -81,7 +84,7 @@ Data tiering node types always use data tiering. If you set the `--no-data-tieri
 
 For Linux, macOS, or Unix:
 
-```
+```json
 aws elasticache create-replication-group \
    --replication-group-id redis-dt-cluster \
    --replication-group-description "Redis OSS cluster with data tiering" \
@@ -96,7 +99,7 @@ aws elasticache create-replication-group \
 
 For Windows:
 
-```
+```json
 aws elasticache create-replication-group ^
    --replication-group-id redis-dt-cluster ^
    --replication-group-description "Redis OSS cluster with data tiering" ^
@@ -111,7 +114,7 @@ aws elasticache create-replication-group ^
 
 After running this operation, you will see a response similar to the following:
 
-```
+```json
 {
     "ReplicationGroup": {
         "ReplicationGroupId": "redis-dt-cluster",
@@ -186,7 +189,7 @@ Data tiering node types always use data tiering. If you set the `--no-data-tieri
 
 For Linux, macOS, or Unix:
 
-```
+```json
 aws elasticache create-replication-group \
    --replication-group-id redis-dt-cluster \
    --replication-group-description "Redis OSS cluster with data tiering" \
@@ -202,7 +205,7 @@ aws elasticache create-replication-group \
 
 For Linux, macOS, or Unix:
 
-```
+```json
 aws elasticache create-replication-group ^
    --replication-group-id redis-dt-cluster ^
    --replication-group-description "Redis OSS cluster with data tiering" ^
@@ -218,7 +221,7 @@ aws elasticache create-replication-group ^
 
 After running this operation, you will see a response similar to the following:
 
-```
+```json
 {
     "ReplicationGroup": {
         "ReplicationGroupId": "redis-dt-cluster",

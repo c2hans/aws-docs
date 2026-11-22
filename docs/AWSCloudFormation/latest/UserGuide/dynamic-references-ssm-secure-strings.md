@@ -71,7 +71,7 @@ The following example uses an `ssm-secure` dynamic reference to set the password
 ### JSON
 <a name="dynamic-references-ssm-secure-example.json"></a>
 
-```
+```json
   "MyIAMUser": {
     "Type": "AWS::IAM::User",
     "Properties": {
@@ -86,7 +86,7 @@ The following example uses an `ssm-secure` dynamic reference to set the password
 ### YAML
 <a name="dynamic-references-ssm-secure-example.yaml"></a>
 
-```
+```yaml
   MyIAMUser:
     Type: AWS::IAM::User
     Properties:

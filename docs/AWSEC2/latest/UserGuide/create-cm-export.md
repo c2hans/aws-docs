@@ -43,7 +43,7 @@ You can export your Capacity Manager data using the AWS Console, the AWS CLI, or
 **To create a data export**
 Use the following command to create a data export with the specified configuration:
 
-```
+```bash
 aws ec2 create-capacity-manager-data-export \
     --s3-bucket-name my-exports-bucket \
     --s3-bucket-prefix capacity-data-exports \
@@ -61,7 +61,7 @@ The `--tag-specifications` parameter in the command above applies resource tags 
 **To create a data export**
 Use the [New-EC2CapacityManagerDataExport](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2CapacityManagerDataExport.html) cmdlet.
 
-```
+```powershell
 New-EC2CapacityManagerDataExport `
     -S3BucketName "my-exports-bucket" `
     -S3BucketPrefix "capacity-data-exports" `

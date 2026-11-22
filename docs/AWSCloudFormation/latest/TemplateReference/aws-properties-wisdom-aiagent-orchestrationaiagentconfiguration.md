@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-aiagent-orchestrationaiagentconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ConnectInstanceArn](#cfn-wisdom-aiagent-orchestrationaiagentconfiguration-connectinstancearn)" : {{String}},
   "[InputSchemas](#cfn-wisdom-aiagent-orchestrationaiagentconfiguration-inputschemas)" : {{[ {{{Key}}: {{Value}}, ...}, ... ]}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-aiagent-orchestrationaiagentconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ConnectInstanceArn](#cfn-wisdom-aiagent-orchestrationaiagentconfiguration-connectinstancearn): {{String}}
   [InputSchemas](#cfn-wisdom-aiagent-orchestrationaiagentconfiguration-inputschemas): {{
     -

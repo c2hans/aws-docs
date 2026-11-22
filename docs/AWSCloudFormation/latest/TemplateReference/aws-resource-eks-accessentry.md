@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-eks-accessentry-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EKS::AccessEntry",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-eks-accessentry-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EKS::AccessEntry
 Properties:
   [AccessPolicies](#cfn-eks-accessentry-accesspolicies): {{
@@ -145,7 +145,7 @@ The following example creates an access entry of type `STANDARD` for an IAM role
 #### JSON
 <a name="aws-resource-eks-accessentry--examples--Create_an_access_entry--json"></a>
 
-```
+```json
 {
     "myAccessEntry": {
         "Type" : "AWS::EKS::AccessEntry",
@@ -184,7 +184,7 @@ The following example creates an access entry of type `STANDARD` for an IAM role
 #### YAML
 <a name="aws-resource-eks-accessentry--examples--Create_an_access_entry--yaml"></a>
 
-```
+```yaml
 MyAccessEntry:
     Type: 'AWS::EKS::AccessEntry'
     Properties:

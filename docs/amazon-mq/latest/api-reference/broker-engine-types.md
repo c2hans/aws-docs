@@ -58,7 +58,7 @@ Describe available engine types and versions.
 #### BrokerEngineTypeOutput schema
 <a name="broker-engine-types-response-body-brokerenginetypeoutput-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "maxResults": integer,
@@ -78,7 +78,7 @@ Describe available engine types and versions.
 #### Error schema
 <a name="broker-engine-types-response-body-error-example"></a>
 
-```
+```json
 {
   "errorAttribute": "string",
   "message": "string"

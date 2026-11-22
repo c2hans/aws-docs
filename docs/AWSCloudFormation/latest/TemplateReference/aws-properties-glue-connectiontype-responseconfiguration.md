@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-connectiontype-responseconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ErrorPath](#cfn-glue-connectiontype-responseconfiguration-errorpath)" : {{String}},
   "[ResultPath](#cfn-glue-connectiontype-responseconfiguration-resultpath)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-connectiontype-responseconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ErrorPath](#cfn-glue-connectiontype-responseconfiguration-errorpath): {{String}}
   [ResultPath](#cfn-glue-connectiontype-responseconfiguration-resultpath): {{String}}
 ```

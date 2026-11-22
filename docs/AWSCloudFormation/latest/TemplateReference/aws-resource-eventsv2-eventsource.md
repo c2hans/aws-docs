@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-eventsv2-eventsource-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EventsV2::EventSource",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-eventsv2-eventsource-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EventsV2::EventSource
 Properties:
   [Configuration](#cfn-eventsv2-eventsource-configuration): {{
@@ -140,7 +140,7 @@ The following example forwards all Amazon S3 events from the account's default e
 #### JSON
 <a name="aws-resource-eventsv2-eventsource--examples--Forward_all_events_from_an_Amazon_EventBridge_service_source--json"></a>
 
-```
+```json
 {
   "Resources": {
     "S3EventSource": {
@@ -162,7 +162,7 @@ The following example forwards all Amazon S3 events from the account's default e
 #### YAML
 <a name="aws-resource-eventsv2-eventsource--examples--Forward_all_events_from_an_Amazon_EventBridge_service_source--yaml"></a>
 
-```
+```yaml
 Resources:
   S3EventSource:
     Type: AWS::EventsV2::EventSource
@@ -182,7 +182,7 @@ The following example forwards only matching Amazon S3 events and sends undelive
 #### JSON
 <a name="aws-resource-eventsv2-eventsource--examples--Filter_forwarded_events_and_set_a_failure_destination--json"></a>
 
-```
+```json
 {
   "Resources": {
     "S3EventSource": {
@@ -208,7 +208,7 @@ The following example forwards only matching Amazon S3 events and sends undelive
 #### YAML
 <a name="aws-resource-eventsv2-eventsource--examples--Filter_forwarded_events_and_set_a_failure_destination--yaml"></a>
 
-```
+```yaml
 Resources:
   S3EventSource:
     Type: AWS::EventsV2::EventSource
@@ -231,7 +231,7 @@ The following example forwards events from a partner event source through a mana
 #### JSON
 <a name="aws-resource-eventsv2-eventsource--examples--Forward_a_partner_event_source--json"></a>
 
-```
+```json
 {
   "Resources": {
     "PartnerEventSource": {
@@ -253,7 +253,7 @@ The following example forwards events from a partner event source through a mana
 #### YAML
 <a name="aws-resource-eventsv2-eventsource--examples--Forward_a_partner_event_source--yaml"></a>
 
-```
+```yaml
 Resources:
   PartnerEventSource:
     Type: AWS::EventsV2::EventSource

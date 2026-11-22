@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-connect-predefinedattribute-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Connect::PredefinedAttribute",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-connect-predefinedattribute-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Connect::PredefinedAttribute
 Properties:
   [AttributeConfiguration](#cfn-connect-predefinedattribute-attributeconfiguration): {{

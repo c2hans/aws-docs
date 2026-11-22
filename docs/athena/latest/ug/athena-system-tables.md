@@ -55,7 +55,7 @@ aws-athena/                          # S3 Tables bucket (one per account per Reg
 
 You can query a system table using its fully qualified name, like this:
 
-```
+```sql
 SELECT * FROM "s3tablescatalog/aws-athena"."metadata"."query_executions"
 ```
 
@@ -111,14 +111,14 @@ You manage system tables using the following APIs:
 #### Enable system tables
 <a name="athena-system-tables-enabling-cli-enable"></a>
 
-```
+```bash
 aws athena create-system-table-configuration \
     --table-name ALL
 ```
 
 To use a customer managed KMS key for encryption, specify the key ARN:
 
-```
+```bash
 aws athena create-system-table-configuration \
     --table-name ALL \
     --kms-key-arn arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab
@@ -127,7 +127,7 @@ aws athena create-system-table-configuration \
 #### Check current configuration
 <a name="athena-system-tables-enabling-cli-check"></a>
 
-```
+```bash
 aws athena get-system-table-configuration \
     --table-name ALL
 ```
@@ -135,14 +135,14 @@ aws athena get-system-table-configuration \
 #### List system table statuses
 <a name="athena-system-tables-enabling-cli-list"></a>
 
-```
+```bash
 aws athena list-system-table-statuses
 ```
 
 #### Disable system tables
 <a name="athena-system-tables-enabling-cli-disable"></a>
 
-```
+```bash
 aws athena delete-system-table-configuration \
     --table-name ALL
 ```
@@ -166,7 +166,7 @@ The system table resource ARN format is `arn:{partition}:athena:{region}:{accoun
 
 The following policy allows a principal to enable, update, view, and disable system tables. When you enable system tables, Athena uses your credentials to create the `aws-athena` S3 Tables bucket and attach its bucket policy. For this reason, you need both `s3tables:CreateTableBucket` and `s3tables:PutTableBucketPolicy`. If you encrypt system tables with a customer managed key, you also need `kms:DescribeKey` on that key. Omit the `ValidateEncryptionKey` statement if you use the default Amazon S3 managed keys (SSE-S3). Omit the `TagSystemTableConfiguration` statement if you don't tag the configuration.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -223,7 +223,7 @@ To register the S3 Tables bucket with AWS Glue Data Catalog, the administrator a
 
 The following policy allows a principal to query system tables in one workgroup without granting any permission to change the configuration or the table data. The principal also needs permissions to write query results to the workgroup's query result location. If system tables are encrypted with a customer managed key, the principal needs `kms:Decrypt` and `kms:DescribeKey` on that key. Without them, the query fails with `TABLE_NOT_FOUND` rather than an access denied error. Omit the `DecryptSystemTables` statement if you use the default SSE-S3 encryption.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -304,7 +304,7 @@ The KMS key is immutable after the system table is created by the ingestion pipe
 
 If you use a customer managed key, the key policy must grant both the Amazon Athena system tables service principal (`systemtables.athena.amazonaws.com`) and the S3 Tables maintenance service principal (`maintenance.s3tables.amazonaws.com`) access to the key. Add the following statements to your key policy, replacing `<REGION>`, `<ACCOUNT>`, and `<KEY_ID>` with your values.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

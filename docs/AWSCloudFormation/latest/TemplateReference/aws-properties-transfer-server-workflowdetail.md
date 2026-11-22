@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-transfer-server-workflowdetail-syntax.json"></a>
 
-```
+```json
 {
   "[ExecutionRole](#cfn-transfer-server-workflowdetail-executionrole)" : {{String}},
   "[WorkflowId](#cfn-transfer-server-workflowdetail-workflowid)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-transfer-server-workflowdetail-syntax.yaml"></a>
 
-```
+```yaml
   [ExecutionRole](#cfn-transfer-server-workflowdetail-executionrole): {{String}}
   [WorkflowId](#cfn-transfer-server-workflowdetail-workflowid): {{String}}
 ```

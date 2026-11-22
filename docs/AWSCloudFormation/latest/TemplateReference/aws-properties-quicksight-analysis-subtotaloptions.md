@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-subtotaloptions-syntax.json"></a>
 
-```
+```json
 {
   "[CustomLabel](#cfn-quicksight-analysis-subtotaloptions-customlabel)" : {{String}},
   "[FieldLevel](#cfn-quicksight-analysis-subtotaloptions-fieldlevel)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-subtotaloptions-syntax.yaml"></a>
 
-```
+```yaml
   [CustomLabel](#cfn-quicksight-analysis-subtotaloptions-customlabel): {{String}}
   [FieldLevel](#cfn-quicksight-analysis-subtotaloptions-fieldlevel): {{String}}
   [FieldLevelOptions](#cfn-quicksight-analysis-subtotaloptions-fieldleveloptions): {{

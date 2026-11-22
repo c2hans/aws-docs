@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-receiptrule-workmailaction-syntax.json"></a>
 
-```
+```json
 {
   "[OrganizationArn](#cfn-ses-receiptrule-workmailaction-organizationarn)" : {{String}},
   "[TopicArn](#cfn-ses-receiptrule-workmailaction-topicarn)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-receiptrule-workmailaction-syntax.yaml"></a>
 
-```
+```yaml
   [OrganizationArn](#cfn-ses-receiptrule-workmailaction-organizationarn): {{String}}
   [TopicArn](#cfn-ses-receiptrule-workmailaction-topicarn): {{String}}
 ```

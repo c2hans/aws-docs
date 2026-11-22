@@ -12,7 +12,7 @@ Before you analyze the Network Load Balancer access logs, enable and configure t
 
 1. Copy and paste the following DDL statement into the Athena console. Check the [syntax ](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-access-logs.html#access-log-file-format) of the Network Load Balancer log records. Update the statement as required to include the columns and the regex corresponding to your log records.
 
-   ```
+   ```sql
    CREATE EXTERNAL TABLE IF NOT EXISTS nlb_tls_logs (
                type string,
                version string,
@@ -57,7 +57,7 @@ Before you analyze the Network Load Balancer access logs, enable and configure t
 
 To see how many times a certificate is used, use a query similar to this example:
 
-```
+```sql
 SELECT count(*) AS
          ct,
          cert_arn
@@ -67,7 +67,7 @@ GROUP BY  cert_arn;
 
 The following query shows how many users are using a TLS version earlier than 1.3:
 
-```
+```sql
 SELECT tls_protocol_version,
          COUNT(tls_protocol_version) AS
          num_connections,
@@ -79,7 +79,7 @@ GROUP BY tls_protocol_version, client_ip;
 
 Use the following query to identify connections that take a long TLS handshake time:
 
-```
+```sql
 SELECT *
 FROM "nlb_tls_logs"
 ORDER BY  tls_handshake_time_ms DESC
@@ -88,7 +88,7 @@ LIMIT 10;
 
 Use the following query to identify and count which TLS protocol versions and cipher suites have been negotiated in the past 30 days.
 
-```
+```sql
 SELECT tls_cipher_suite,
          tls_protocol_version,
          COUNT(*) AS ct

@@ -46,7 +46,7 @@ Use the following example commands and replace the {{user input placeholders}} w
 
 Example request:
 
-```
+```bash,sh,zsh
 aws s3vectors list-indexes \
   --vector-bucket-name "{{{{amzn-s3-demo-bucket}}}}" \
   --prefix "{{idx}}" \
@@ -55,7 +55,7 @@ aws s3vectors list-indexes \
 
 Example response:
 
-```
+```JSON
 {
     "nextToken": "lObb29ZkzxMGtBXs97Rkbs26xdtKemu4brsnq2jX8DCocADkILv5cRphemXS3PXXFnQBihQBmESgEeKaGA",
     "indexes": [
@@ -73,7 +73,7 @@ Example response:
 
 Example request:
 
-```
+```bash,sh,zsh
 aws s3vectors list-indexes \
   --vector-bucket-name "{{{{amzn-s3-demo-bucket}}}}" \
   --prefix "{{idx}}" \
@@ -82,7 +82,7 @@ aws s3vectors list-indexes \
 
 Example response:
 
-```
+```JSON
 {
     "indexes": [
         {
@@ -101,7 +101,7 @@ Example response:
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```python
 import boto3
 
 # Create a S3 Vectors client in the AWS Region of your choice.

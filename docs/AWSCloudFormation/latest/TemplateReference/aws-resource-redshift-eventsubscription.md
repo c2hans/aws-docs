@@ -14,7 +14,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-redshift-eventsubscription-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Redshift::EventSubscription",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-redshift-eventsubscription-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Redshift::EventSubscription
 Properties:
   [Enabled](#cfn-redshift-eventsubscription-enabled): {{Boolean}}

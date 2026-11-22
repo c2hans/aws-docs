@@ -29,7 +29,7 @@ To use BCP from Linux, you need to install the Microsoft SQL Server command-line
 
 After installation, ensure the tools are available in your PATH by running:
 
-```
+```bash
 bcp -v
 sqlcmd -?
 ```
@@ -44,7 +44,7 @@ You can use BCP to export data from your RDS for SQL Server DB instance to files
 
 The basic syntax for exporting data using BCP is:
 
-```
+```bash
 bcp {{database.schema.table}} out output_file -S server_name -U {{username}} -P {{password}} [options]
 ```
 
@@ -60,7 +60,7 @@ Where:
 
 The following example exports data from a table named `customers` in the `sales` database:
 
-```
+```bash
 bcp sales.dbo.customers out /home/user/customers.txt \
     -S mydb.cluster-abc123.us-east-1.rds.amazonaws.com \
     -U {{admin}} \
@@ -87,7 +87,7 @@ You can use BCP to import data from files on your Linux system into your RDS for
 
 The basic syntax for importing data using BCP is:
 
-```
+```bash
 bcp {{database.schema.table}} in input_file -S {{server_name}} -U {{username}} -P {{password}} [options]
 ```
 
@@ -103,7 +103,7 @@ Where:
 
 The following example imports data from a file into a table named `customers`:
 
-```
+```bash
 bcp sales.dbo.customers in /home/user/customers.txt \
     -S mydb.cluster-abc123.us-east-1.rds.amazonaws.com \
     -U {{admin}} \

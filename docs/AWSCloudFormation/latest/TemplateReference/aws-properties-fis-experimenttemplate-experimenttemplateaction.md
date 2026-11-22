@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fis-experimenttemplate-experimenttemplateaction-syntax.json"></a>
 
-```
+```json
 {
   "[ActionId](#cfn-fis-experimenttemplate-experimenttemplateaction-actionid)" : {{String}},
   "[Description](#cfn-fis-experimenttemplate-experimenttemplateaction-description)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fis-experimenttemplate-experimenttemplateaction-syntax.yaml"></a>
 
-```
+```yaml
   [ActionId](#cfn-fis-experimenttemplate-experimenttemplateaction-actionid): {{String}}
   [Description](#cfn-fis-experimenttemplate-experimenttemplateaction-description): {{String}}
   [Parameters](#cfn-fis-experimenttemplate-experimenttemplateaction-parameters): {{

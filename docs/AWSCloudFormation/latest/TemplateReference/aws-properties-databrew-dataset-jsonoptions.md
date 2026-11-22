@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-databrew-dataset-jsonoptions-syntax.json"></a>
 
-```
+```json
 {
   "[MultiLine](#cfn-databrew-dataset-jsonoptions-multiline)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-databrew-dataset-jsonoptions-syntax.yaml"></a>
 
-```
+```yaml
   [MultiLine](#cfn-databrew-dataset-jsonoptions-multiline): {{Boolean}}
 ```
 

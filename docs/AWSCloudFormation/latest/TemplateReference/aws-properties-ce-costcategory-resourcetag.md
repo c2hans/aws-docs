@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ce-costcategory-resourcetag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-ce-costcategory-resourcetag-key)" : {{String}},
   "[Value](#cfn-ce-costcategory-resourcetag-value)" : {{String}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ce-costcategory-resourcetag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-ce-costcategory-resourcetag-key): {{String}}
   [Value](#cfn-ce-costcategory-resourcetag-value): {{String}}
 ```

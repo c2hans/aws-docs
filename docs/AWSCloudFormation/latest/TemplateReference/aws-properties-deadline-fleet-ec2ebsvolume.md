@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-deadline-fleet-ec2ebsvolume-syntax.json"></a>
 
-```
+```json
 {
   "[Iops](#cfn-deadline-fleet-ec2ebsvolume-iops)" : {{Integer}},
   "[SizeGiB](#cfn-deadline-fleet-ec2ebsvolume-sizegib)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-deadline-fleet-ec2ebsvolume-syntax.yaml"></a>
 
-```
+```yaml
   [Iops](#cfn-deadline-fleet-ec2ebsvolume-iops): {{Integer}}
   [SizeGiB](#cfn-deadline-fleet-ec2ebsvolume-sizegib): {{Integer}}
   [ThroughputMiB](#cfn-deadline-fleet-ec2ebsvolume-throughputmib): {{Integer}}

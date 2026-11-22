@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-visualmessageconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-quicksight-template-visualmessageconfiguration-description)" : {{String}},
   "[DescriptionVisibility](#cfn-quicksight-template-visualmessageconfiguration-descriptionvisibility)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-visualmessageconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-quicksight-template-visualmessageconfiguration-description): {{String}}
   [DescriptionVisibility](#cfn-quicksight-template-visualmessageconfiguration-descriptionvisibility): {{String}}
   [Enabled](#cfn-quicksight-template-visualmessageconfiguration-enabled): {{Boolean}}

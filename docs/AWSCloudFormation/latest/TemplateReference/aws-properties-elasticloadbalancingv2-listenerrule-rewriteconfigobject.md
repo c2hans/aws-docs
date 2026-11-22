@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-rewriteconfigobject-syntax.json"></a>
 
-```
+```json
 {
   "[Rewrites](#cfn-elasticloadbalancingv2-listenerrule-rewriteconfigobject-rewrites)" : {{[ RewriteConfig, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-rewriteconfigobject-syntax.yaml"></a>
 
-```
+```yaml
   [Rewrites](#cfn-elasticloadbalancingv2-listenerrule-rewriteconfigobject-rewrites): {{
     - RewriteConfig}}
 ```

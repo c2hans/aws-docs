@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-route53recoverycontrol-safetyrule-ruleconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Inverted](#cfn-route53recoverycontrol-safetyrule-ruleconfig-inverted)" : {{Boolean}},
   "[Threshold](#cfn-route53recoverycontrol-safetyrule-ruleconfig-threshold)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-route53recoverycontrol-safetyrule-ruleconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Inverted](#cfn-route53recoverycontrol-safetyrule-ruleconfig-inverted): {{Boolean}}
   [Threshold](#cfn-route53recoverycontrol-safetyrule-ruleconfig-threshold): {{Integer}}
   [Type](#cfn-route53recoverycontrol-safetyrule-ruleconfig-type): {{String}}

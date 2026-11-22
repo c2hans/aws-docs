@@ -70,7 +70,7 @@ The Agentless Collector supports IPv4. It does not support IPv6.
 
 1. Open the collector’s VM console and sign in as **ec2-user** using the password **collector** as shown in the following example.
 
-   ```
+   ```bash
    username: ec2-user
    password: collector
    ```
@@ -192,7 +192,7 @@ The Agentless Collector supports IPv4. It does not support IPv6.
 
 1. Open the collector’s VM console and sign in as **ec2-user** using the password **collector** as shown in the following example.
 
-   ```
+   ```bash
    username: ec2-user
    password: collector
    ```
@@ -423,7 +423,7 @@ The following steps describe how to configure the Kerberos authentication protoc
 
 1. Open the collector’s VM console and sign in as **ec2-user** using the password **collector** as shown in the following example.
 
-   ```
+   ```bash
    username: ec2-user
    password: collector
    ```

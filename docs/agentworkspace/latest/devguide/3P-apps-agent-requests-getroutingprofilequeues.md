@@ -6,12 +6,12 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-a
 
 Returns the list of queues on the routing profile of the agent currently logged in to the Connect Customer agent workspace. Each `Queue` contains `name`, `queueARN`, and `queueId`.
 
-```
+```typescript
 async getRoutingProfileQueues(): Promise<Queue[]>
 ```
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

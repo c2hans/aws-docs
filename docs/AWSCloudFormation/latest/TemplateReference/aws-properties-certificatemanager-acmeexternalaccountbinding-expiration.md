@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-certificatemanager-acmeexternalaccountbinding-expiration-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-certificatemanager-acmeexternalaccountbinding-expiration-type)" : {{String}},
   "[Value](#cfn-certificatemanager-acmeexternalaccountbinding-expiration-value)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-certificatemanager-acmeexternalaccountbinding-expiration-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-certificatemanager-acmeexternalaccountbinding-expiration-type): {{String}}
   [Value](#cfn-certificatemanager-acmeexternalaccountbinding-expiration-value): {{Integer}}
 ```

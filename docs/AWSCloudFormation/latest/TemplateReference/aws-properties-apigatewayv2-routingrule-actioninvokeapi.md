@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apigatewayv2-routingrule-actioninvokeapi-syntax.json"></a>
 
-```
+```json
 {
   "[ApiId](#cfn-apigatewayv2-routingrule-actioninvokeapi-apiid)" : {{String}},
   "[Stage](#cfn-apigatewayv2-routingrule-actioninvokeapi-stage)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apigatewayv2-routingrule-actioninvokeapi-syntax.yaml"></a>
 
-```
+```yaml
   [ApiId](#cfn-apigatewayv2-routingrule-actioninvokeapi-apiid): {{String}}
   [Stage](#cfn-apigatewayv2-routingrule-actioninvokeapi-stage): {{String}}
   [StripBasePath](#cfn-apigatewayv2-routingrule-actioninvokeapi-stripbasepath): {{Boolean}}

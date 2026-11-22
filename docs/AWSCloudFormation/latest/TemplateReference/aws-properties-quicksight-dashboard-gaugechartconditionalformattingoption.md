@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-gaugechartconditionalformattingoption-syntax.json"></a>
 
-```
+```json
 {
   "[Arc](#cfn-quicksight-dashboard-gaugechartconditionalformattingoption-arc)" : {{GaugeChartArcConditionalFormatting}},
   "[PrimaryValue](#cfn-quicksight-dashboard-gaugechartconditionalformattingoption-primaryvalue)" : {{GaugeChartPrimaryValueConditionalFormatting}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-gaugechartconditionalformattingoption-syntax.yaml"></a>
 
-```
+```yaml
   [Arc](#cfn-quicksight-dashboard-gaugechartconditionalformattingoption-arc): {{
     GaugeChartArcConditionalFormatting}}
   [PrimaryValue](#cfn-quicksight-dashboard-gaugechartconditionalformattingoption-primaryvalue): {{

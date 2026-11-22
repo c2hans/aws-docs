@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkfirewall-firewall-vpcendpoint-syntax.json"></a>
 
-```
+```json
 {
   "[SubnetMappings](#cfn-networkfirewall-firewall-vpcendpoint-subnetmappings)" : {{[ SubnetMapping, ... ]}},
   "[VpcId](#cfn-networkfirewall-firewall-vpcendpoint-vpcid)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkfirewall-firewall-vpcendpoint-syntax.yaml"></a>
 
-```
+```yaml
   [SubnetMappings](#cfn-networkfirewall-firewall-vpcendpoint-subnetmappings): {{
     - SubnetMapping}}
   [VpcId](#cfn-networkfirewall-firewall-vpcendpoint-vpcid): {{String}}

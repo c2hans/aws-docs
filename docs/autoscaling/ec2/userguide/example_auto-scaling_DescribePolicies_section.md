@@ -178,7 +178,7 @@ For more information, see [Dynamic scaling](https://docs.aws.amazon.com/autoscal
 **Tools for PowerShell V4**
 **Example 1: This example describes all policies for the specified Auto Scaling group.**
 
-```
+```powershell
 Get-ASPolicy -AutoScalingGroupName my-asg
 ```
 **Output:**
@@ -201,12 +201,12 @@ StepAdjustments         : {}
 ```
 **Example 2: This example describes the specified policies for the specified Auto Scaling group.**
 
-```
+```powershell
 Get-ASPolicy -AutoScalingGroupName my-asg -PolicyName @("myScaleOutPolicy", "myScaleInPolicy")
 ```
 **Example 3: This example describes all policies for all your Auto Scaling groups.**
 
-```
+```powershell
 Get-ASPolicy
 ```
 +  For API details, see [DescribePolicies](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -214,7 +214,7 @@ Get-ASPolicy
 **Tools for PowerShell V5**
 **Example 1: This example describes all policies for the specified Auto Scaling group.**
 
-```
+```powershell
 Get-ASPolicy -AutoScalingGroupName my-asg
 ```
 **Output:**
@@ -237,12 +237,12 @@ StepAdjustments         : {}
 ```
 **Example 2: This example describes the specified policies for the specified Auto Scaling group.**
 
-```
+```powershell
 Get-ASPolicy -AutoScalingGroupName my-asg -PolicyName @("myScaleOutPolicy", "myScaleInPolicy")
 ```
 **Example 3: This example describes all policies for all your Auto Scaling groups.**
 
-```
+```powershell
 Get-ASPolicy
 ```
 +  For API details, see [DescribePolicies](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

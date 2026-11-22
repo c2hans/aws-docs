@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-wafregional-ratebasedrule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::WAFRegional::RateBasedRule",
   "Properties" : {
@@ -44,7 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-wafregional-ratebasedrule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::WAFRegional::RateBasedRule
 Properties:
   [MatchPredicates](#cfn-wafregional-ratebasedrule-matchpredicates): {{
@@ -119,7 +119,7 @@ The following example associates the `MyIPSetBlacklist``IPSet` object with a rat
 #### JSON
 <a name="aws-resource-wafregional-ratebasedrule--examples--Associate_an_IPSet_with_a_Rate-Based_Rule--json"></a>
 
-```
+```json
 "MyIPSetRateBasedRule" : {
   "Type": "AWS::WAFRegional::RateBasedRule",
   "Properties": {
@@ -141,7 +141,7 @@ The following example associates the `MyIPSetBlacklist``IPSet` object with a rat
 #### YAML
 <a name="aws-resource-wafregional-ratebasedrule--examples--Associate_an_IPSet_with_a_Rate-Based_Rule--yaml"></a>
 
-```
+```yaml
 MyIPSetRateBasedRule:
   Type: "AWS::WAFRegional::RateBasedRule"
   Properties:

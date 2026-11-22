@@ -16,7 +16,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Wrapper to get statistics for a specific CloudWatch metric.
     /// </summary>
@@ -230,7 +230,7 @@ For more information, see [Get statistics for a metric (GetMetricStatistics)](ht
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
     /**
      * Retrieves and displays metric statistics for the specified parameters.
      *
@@ -286,7 +286,7 @@ For more information, see [Get statistics for a metric (GetMetricStatistics)](ht
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun getAndDisplayMetricStatistics(
     nameSpaceVal: String,
     metVal: String,
@@ -334,7 +334,7 @@ suspend fun getAndDisplayMetricStatistics(
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
 
-```
+```python
 class CloudWatchWrapper:
     """Encapsulates Amazon CloudWatch functions."""
 
@@ -384,7 +384,7 @@ class CloudWatchWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cwt#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_cwt->getmetricstatistics(              " oo_result is returned for testing purposes. "
           iv_namespace   = iv_namespace

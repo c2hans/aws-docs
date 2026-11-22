@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-function-customoutputconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Output](#cfn-mediatailor-function-customoutputconfiguration-output)" : {{{{{Key}}: {{Value}}, ...}}},
   "[Runtime](#cfn-mediatailor-function-customoutputconfiguration-runtime)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-function-customoutputconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Output](#cfn-mediatailor-function-customoutputconfiguration-output): {{
     {{Key}}: {{Value}}}}
   [Runtime](#cfn-mediatailor-function-customoutputconfiguration-runtime): {{String}}

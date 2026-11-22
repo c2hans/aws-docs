@@ -13,7 +13,7 @@ This policy never allows programmatic access to the `amzn-s3-demo-bucket` bucket
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

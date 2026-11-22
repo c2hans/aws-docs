@@ -8,7 +8,7 @@ Collects log data from Okta Auth0 using OAuth2 authentication.
 
 Configure the Okta Auth0 source with the following parameters:
 
-```
+```yaml
 source:
   okta_auth0:
     domain: "<example-domain-name>"

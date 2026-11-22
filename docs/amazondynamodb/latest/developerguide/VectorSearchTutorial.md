@@ -262,7 +262,7 @@ When you store a vector in an item attribute, you wrap it in an `L` (list) type:
 
 1. **Read the results.** DynamoDB returns results sorted by similarity, with the most similar item first. Each result contains the projected `Item` attributes and a `Score`.
 
-   ```
+   ```json
    {
        "SearchResults": [
            {

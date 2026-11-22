@@ -10,13 +10,13 @@ For details on how the `options.scope` value controls an application's relations
 
  **Signature**
 
-```
+```typescript
 launchApp(arnOrName: string, options?: AppLaunchOptions): Promise<AppInfo>
 ```
 
  **Usage**
 
-```
+```typescript
 const applicationsConfig: AppConfig[] = await appControllerClient.getAppCatalog();
 const appInfo: AppInfo = await appControllerClient.launchApp(applicationsConfig[0].arn);
 ```
@@ -53,6 +53,6 @@ When the calling application instance has a scope (contact or idle), the launche
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

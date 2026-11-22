@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-loggingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationBucketName](#cfn-s3-bucket-loggingconfiguration-destinationbucketname)" : {{String}},
   "[LogFilePrefix](#cfn-s3-bucket-loggingconfiguration-logfileprefix)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-loggingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationBucketName](#cfn-s3-bucket-loggingconfiguration-destinationbucketname): {{String}}
   [LogFilePrefix](#cfn-s3-bucket-loggingconfiguration-logfileprefix): {{String}}
   [TargetObjectKeyFormat](#cfn-s3-bucket-loggingconfiguration-targetobjectkeyformat): {{
@@ -75,7 +75,7 @@ The following example template creates two S3 buckets. The `LoggingBucket` bucke
 #### JSON
 <a name="aws-properties-s3-bucket-loggingconfiguration--examples--Log_access_requests_for_a_specific_S3_bucket--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -157,7 +157,7 @@ The following example template creates two S3 buckets. The `LoggingBucket` bucke
 #### YAML
 <a name="aws-properties-s3-bucket-loggingconfiguration--examples--Log_access_requests_for_a_specific_S3_bucket--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   S3Bucket:
@@ -206,7 +206,7 @@ The following example template configures the `DOC-EXAMPLE-BUCKET` destination b
 #### JSON
 <a name="aws-properties-s3-bucket-loggingconfiguration--examples--Setting_up_logging_configurations_with_log_prefixes_based_on_event_time--json"></a>
 
-```
+```json
         "LoggingConfiguration": {
             "DestinationBucketName": "DOC-EXAMPLE-BUCKET",
             "LogFilePrefix": "logs/",
@@ -221,7 +221,7 @@ The following example template configures the `DOC-EXAMPLE-BUCKET` destination b
 #### YAML
 <a name="aws-properties-s3-bucket-loggingconfiguration--examples--Setting_up_logging_configurations_with_log_prefixes_based_on_event_time--yaml"></a>
 
-```
+```yaml
         LoggingConfiguration:
           DestinationBucketName: "DOC-EXAMPLE-BUCKET"
           LogFilePrefix: logs/
@@ -238,7 +238,7 @@ The following example template configures the `DOC-EXAMPLE-BUCKET` destination b
 #### JSON
 <a name="aws-properties-s3-bucket-loggingconfiguration--examples--Setting_up_logging_configurations_with_log_prefixes_based_on_delivery_time--json"></a>
 
-```
+```json
         "LoggingConfiguration": {
             "DestinationBucketName": "DOC-EXAMPLE-BUCKET",
             "LogFilePrefix": "logs/",
@@ -253,7 +253,7 @@ The following example template configures the `DOC-EXAMPLE-BUCKET` destination b
 #### YAML
 <a name="aws-properties-s3-bucket-loggingconfiguration--examples--Setting_up_logging_configurations_with_log_prefixes_based_on_delivery_time--yaml"></a>
 
-```
+```yaml
         LoggingConfiguration:
           DestinationBucketName: "DOC-EXAMPLE-BUCKET"
           LogFilePrefix: logs/
@@ -270,7 +270,7 @@ The following example template configures the `DOC-EXAMPLE-BUCKET` destination b
 #### JSON
 <a name="aws-properties-s3-bucket-loggingconfiguration--examples--Setting_up_logging_configurations_with_a_simple_prefix--json"></a>
 
-```
+```json
         "LoggingConfiguration": {
             "DestinationBucketName": "DOC-EXAMPLE-BUCKET",
             "LogFilePrefix": "logs/",
@@ -283,7 +283,7 @@ The following example template configures the `DOC-EXAMPLE-BUCKET` destination b
 #### YAML
 <a name="aws-properties-s3-bucket-loggingconfiguration--examples--Setting_up_logging_configurations_with_a_simple_prefix--yaml"></a>
 
-```
+```yaml
         LoggingConfiguration:
           DestinationBucketName: "DOC-EXAMPLE-BUCKET"
           LogFilePrefix: logs/

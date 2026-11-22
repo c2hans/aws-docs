@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-multimeasureattributemapping-syntax.json"></a>
 
-```
+```json
 {
   "[MeasureValue](#cfn-pipes-pipe-multimeasureattributemapping-measurevalue)" : {{String}},
   "[MeasureValueType](#cfn-pipes-pipe-multimeasureattributemapping-measurevaluetype)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-multimeasureattributemapping-syntax.yaml"></a>
 
-```
+```yaml
   [MeasureValue](#cfn-pipes-pipe-multimeasureattributemapping-measurevalue): {{String}}
   [MeasureValueType](#cfn-pipes-pipe-multimeasureattributemapping-measurevaluetype): {{String}}
   [MultiMeasureAttributeName](#cfn-pipes-pipe-multimeasureattributemapping-multimeasureattributename): {{String}}

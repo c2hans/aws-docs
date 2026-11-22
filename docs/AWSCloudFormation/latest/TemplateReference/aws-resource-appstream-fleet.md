@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-appstream-fleet-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppStream::Fleet",
   "Properties" : {
@@ -52,7 +52,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-appstream-fleet-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppStream::Fleet
 Properties:
   [AttributesToDelete](#cfn-appstream-fleet-attributestodelete): {{
@@ -168,7 +168,7 @@ The ARN of the IAM role that is applied to the fleet. To assume a role, the flee
 For more information, see [Using an IAM Role to Grant Permissions to Applications and Scripts Running on WorkSpaces Applications Streaming Instances](https://docs.aws.amazon.com/appstream2/latest/developerguide/using-iam-roles-to-grant-permissions-to-applications-scripts-streaming-instances.html) in the *Amazon WorkSpaces Applications Administration Guide*.
 *Required*: No
 *Type*: String
-*Pattern*: `^arn:aws(?:\-cn|\-iso\-b|\-iso|\-us\-gov)?:iam::[0-9]{12}:role/.+$`
+*Pattern*: `^arn:aws(?:\-cn|\-iso\-b|\-iso|\-us\-gov)?:[A-Za-z0-9][A-Za-z0-9_/.-]{0,62}:[A-Za-z0-9_/.-]{0,63}:[A-Za-z0-9_/.-]{0,63}:[A-Za-z0-9][A-Za-z0-9:_/+=,@.-]{0,1023}$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `IdleDisconnectTimeoutInSeconds`  <a name="cfn-appstream-fleet-idledisconnecttimeoutinseconds"></a>
@@ -185,7 +185,6 @@ If you enable this feature, we recommend that you specify a value that correspon
 The ARN of the public, private, or shared image to use.
 *Required*: No
 *Type*: String
-*Pattern*: `^arn:[a-z-]+:[a-z-]+:(([a-z]+-)+[0-9])?:([0-9]{12})?:.+$`
 *Maximum*: `1024`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 

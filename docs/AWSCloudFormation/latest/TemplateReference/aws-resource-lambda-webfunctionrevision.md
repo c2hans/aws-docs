@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lambda-webfunctionrevision-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lambda::WebFunctionRevision",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lambda-webfunctionrevision-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lambda::WebFunctionRevision
 Properties:
   [BuildConfig](#cfn-lambda-webfunctionrevision-buildconfig): {{
@@ -137,7 +137,7 @@ Create a revision for the web function `my-web-function` from a deployment packa
 #### JSON
 <a name="aws-resource-lambda-webfunctionrevision--examples--Web_function_revision--json"></a>
 
-```
+```json
 "MyRevision": {
     "Type": "AWS::Lambda::WebFunctionRevision",
     "Properties": {
@@ -170,7 +170,7 @@ Create a revision for the web function `my-web-function` from a deployment packa
 #### YAML
 <a name="aws-resource-lambda-webfunctionrevision--examples--Web_function_revision--yaml"></a>
 
-```
+```yaml
 MyRevision:
   Type: AWS::Lambda::WebFunctionRevision
   Properties:

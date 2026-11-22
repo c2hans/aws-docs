@@ -71,7 +71,7 @@ Enable CORS by returning correct headers
 #### ListClusterOperationsV2Response schema
 <a name="v2-clusters-clusterarn-operations-response-body-listclusteroperationsv2response-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "clusterOperationInfoList": [

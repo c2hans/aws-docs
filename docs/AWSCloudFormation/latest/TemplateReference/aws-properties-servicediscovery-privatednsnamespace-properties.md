@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-servicediscovery-privatednsnamespace-properties-syntax.json"></a>
 
-```
+```json
 {
   "[DnsProperties](#cfn-servicediscovery-privatednsnamespace-properties-dnsproperties)" : {{PrivateDnsPropertiesMutable}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-servicediscovery-privatednsnamespace-properties-syntax.yaml"></a>
 
-```
+```yaml
   [DnsProperties](#cfn-servicediscovery-privatednsnamespace-properties-dnsproperties): {{
     PrivateDnsPropertiesMutable}}
 ```

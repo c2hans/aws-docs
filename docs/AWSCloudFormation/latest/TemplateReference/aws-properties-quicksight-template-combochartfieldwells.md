@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-combochartfieldwells-syntax.json"></a>
 
-```
+```json
 {
   "[ComboChartAggregatedFieldWells](#cfn-quicksight-template-combochartfieldwells-combochartaggregatedfieldwells)" : {{ComboChartAggregatedFieldWells}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-combochartfieldwells-syntax.yaml"></a>
 
-```
+```yaml
   [ComboChartAggregatedFieldWells](#cfn-quicksight-template-combochartfieldwells-combochartaggregatedfieldwells): {{
     ComboChartAggregatedFieldWells}}
 ```

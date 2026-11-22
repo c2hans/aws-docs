@@ -18,7 +18,7 @@ If you make an update to the mount target that causes it to be replaced, instanc
 ## JSON
 <a name="quickref-efs-example-1.json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "This template creates an Amazon EFS file system and mount target and associates it with Amazon EC2 instances in an Auto Scaling group. **WARNING** This template creates Amazon EC2 instances and related resources. You will be billed for the AWS resources used if you create a stack from this template.",
@@ -508,7 +508,7 @@ If you make an update to the mount target that causes it to be replaced, instanc
 ## YAML
 <a name="quickref-efs-example-1.yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: This template creates an Amazon EFS file system and mount target and
   associates it with Amazon EC2 instances in an Auto Scaling group. **WARNING** This

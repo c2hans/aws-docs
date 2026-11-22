@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-sheetimagesource-syntax.json"></a>
 
-```
+```json
 {
   "[SheetImageStaticFileSource](#cfn-quicksight-analysis-sheetimagesource-sheetimagestaticfilesource)" : {{SheetImageStaticFileSource}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-sheetimagesource-syntax.yaml"></a>
 
-```
+```yaml
   [SheetImageStaticFileSource](#cfn-quicksight-analysis-sheetimagesource-sheetimagestaticfilesource): {{
     SheetImageStaticFileSource}}
 ```

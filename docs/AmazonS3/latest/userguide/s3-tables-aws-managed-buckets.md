@@ -27,7 +27,7 @@ To work with AWS managed table buckets, you need permissions to create AWS manag
 
 The following example policy allows you to create an AWS managed table bucket through an S3 Metadata configuration:
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -57,7 +57,7 @@ The following example policy allows you to create an AWS managed table bucket th
 
 The following example policy allows you to query tables in AWS managed table buckets:
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -90,7 +90,7 @@ You can query AWS managed tables in AWS managed table buckets using access metho
 
 The following example shows how to query AWS managed tables using standard SQL syntax:
 
-```
+```sql
 SELECT *
 FROM "s3tablescatalog/aws-s3"."b_{{{{amzn-s3-demo-source-bucket}}}}"."inventory"
 LIMIT 10;
@@ -98,7 +98,7 @@ LIMIT 10;
 
 The following example shows how to join AWS managed tables with your own tables:
 
-```
+```sql
 SELECT *
 FROM "s3tablescatalog/aws-s3"."b_{{{{amzn-s3-demo-source-bucket}}}}"."inventory" {{a}}
 JOIN "s3tablescatalog/{{amzn-s3-demo-table-bucket}}"."{{my_namespace}}"."{{my_table}}" {{b}}
@@ -111,7 +111,7 @@ LIMIT 10;
 
 The following example shows how to query your table with Spark:
 
-```
+```python
 spark.sql("""
     SELECT *
     FROM ice_catalog.inventory {{a}}
@@ -122,7 +122,7 @@ spark.sql("""
 
 The following example shows how to joining your AWS managed table with another table:
 
-```
+```sql
 SELECT *
 FROM inventory {{a}}
 JOIN my_table {{b}}

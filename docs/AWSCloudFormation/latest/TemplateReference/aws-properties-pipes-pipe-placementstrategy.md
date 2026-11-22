@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-placementstrategy-syntax.json"></a>
 
-```
+```json
 {
   "[Field](#cfn-pipes-pipe-placementstrategy-field)" : {{String}},
   "[Type](#cfn-pipes-pipe-placementstrategy-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-placementstrategy-syntax.yaml"></a>
 
-```
+```yaml
   [Field](#cfn-pipes-pipe-placementstrategy-field): {{String}}
   [Type](#cfn-pipes-pipe-placementstrategy-type): {{String}}
 ```

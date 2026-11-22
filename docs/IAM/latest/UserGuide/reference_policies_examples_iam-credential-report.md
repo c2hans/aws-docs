@@ -13,7 +13,7 @@ For more information about credential reports, see [Generate credential reports 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {

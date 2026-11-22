@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisanalyticsv2-application-parallelismconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AutoScalingEnabled](#cfn-kinesisanalyticsv2-application-parallelismconfiguration-autoscalingenabled)" : {{Boolean}},
   "[ConfigurationType](#cfn-kinesisanalyticsv2-application-parallelismconfiguration-configurationtype)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisanalyticsv2-application-parallelismconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AutoScalingEnabled](#cfn-kinesisanalyticsv2-application-parallelismconfiguration-autoscalingenabled): {{Boolean}}
   [ConfigurationType](#cfn-kinesisanalyticsv2-application-parallelismconfiguration-configurationtype): {{String}}
   [Parallelism](#cfn-kinesisanalyticsv2-application-parallelismconfiguration-parallelism): {{Integer}}

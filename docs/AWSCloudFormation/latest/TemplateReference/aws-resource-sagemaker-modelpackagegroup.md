@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sagemaker-modelpackagegroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SageMaker::ModelPackageGroup",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sagemaker-modelpackagegroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SageMaker::ModelPackageGroup
 Properties:
   [ModelPackageGroupDescription](#cfn-sagemaker-modelpackagegroup-modelpackagegroupdescription): {{String}}

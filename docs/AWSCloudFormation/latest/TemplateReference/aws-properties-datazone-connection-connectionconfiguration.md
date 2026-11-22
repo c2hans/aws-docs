@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-connection-connectionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Classification](#cfn-datazone-connection-connectionconfiguration-classification)" : {{String}},
   "[Properties](#cfn-datazone-connection-connectionconfiguration-properties)" : {{{{{Key}}: {{Value}}, ...}}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-connection-connectionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Classification](#cfn-datazone-connection-connectionconfiguration-classification): {{String}}
   [Properties](#cfn-datazone-connection-connectionconfiguration-properties): {{
     {{Key}}: {{Value}}}}

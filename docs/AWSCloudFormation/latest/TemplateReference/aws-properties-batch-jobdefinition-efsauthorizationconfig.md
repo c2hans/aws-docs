@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-efsauthorizationconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AccessPointId](#cfn-batch-jobdefinition-efsauthorizationconfig-accesspointid)" : {{String}},
   "[Iam](#cfn-batch-jobdefinition-efsauthorizationconfig-iam)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-efsauthorizationconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AccessPointId](#cfn-batch-jobdefinition-efsauthorizationconfig-accesspointid): {{String}}
   [Iam](#cfn-batch-jobdefinition-efsauthorizationconfig-iam): {{String}}
 ```

@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ses-emailidentity-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SES::EmailIdentity",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ses-emailidentity-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SES::EmailIdentity
 Properties:
   [ConfigurationSetAttributes](#cfn-ses-emailidentity-configurationsetattributes): {{

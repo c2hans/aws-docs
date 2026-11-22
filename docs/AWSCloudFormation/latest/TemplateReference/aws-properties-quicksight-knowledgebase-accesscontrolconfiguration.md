@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-knowledgebase-accesscontrolconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[IsACLEnabled](#cfn-quicksight-knowledgebase-accesscontrolconfiguration-isaclenabled)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-knowledgebase-accesscontrolconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [IsACLEnabled](#cfn-quicksight-knowledgebase-accesscontrolconfiguration-isaclenabled): {{Boolean}}
 ```
 

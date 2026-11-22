@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-codeconnections-host-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CodeConnections::Host",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-codeconnections-host-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CodeConnections::Host
 Properties:
   [Name](#cfn-codeconnections-host-name): {{String}}

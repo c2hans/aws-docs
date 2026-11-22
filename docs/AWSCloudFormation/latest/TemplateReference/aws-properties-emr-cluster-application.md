@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emr-cluster-application-syntax.json"></a>
 
-```
+```json
 {
   "[AdditionalInfo](#cfn-emr-cluster-application-additionalinfo)" : {{{{{Key}}: {{Value}}, ...}}},
   "[Args](#cfn-emr-cluster-application-args)" : {{[ String, ... ]}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emr-cluster-application-syntax.yaml"></a>
 
-```
+```yaml
   [AdditionalInfo](#cfn-emr-cluster-application-additionalinfo): {{
     {{Key}}: {{Value}}}}
   [Args](#cfn-emr-cluster-application-args): {{

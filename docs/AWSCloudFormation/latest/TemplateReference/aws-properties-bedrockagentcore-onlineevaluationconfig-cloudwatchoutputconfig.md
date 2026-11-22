@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-onlineevaluationconfig-cloudwatchoutputconfig-syntax.json"></a>
 
-```
+```json
 {
   "[LogGroupName](#cfn-bedrockagentcore-onlineevaluationconfig-cloudwatchoutputconfig-loggroupname)" : {{String}},
   "[MetricsNamespace](#cfn-bedrockagentcore-onlineevaluationconfig-cloudwatchoutputconfig-metricsnamespace)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-onlineevaluationconfig-cloudwatchoutputconfig-syntax.yaml"></a>
 
-```
+```yaml
   [LogGroupName](#cfn-bedrockagentcore-onlineevaluationconfig-cloudwatchoutputconfig-loggroupname): {{String}}
   [MetricsNamespace](#cfn-bedrockagentcore-onlineevaluationconfig-cloudwatchoutputconfig-metricsnamespace): {{String}}
   [ResultDestination](#cfn-bedrockagentcore-onlineevaluationconfig-cloudwatchoutputconfig-resultdestination): {{String}}

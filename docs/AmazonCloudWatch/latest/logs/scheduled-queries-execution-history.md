@@ -51,7 +51,7 @@ The execution history shows the status of each query run, including successful e
 **To view execution history (API)**
 + Use the `GetScheduledQueryHistory` action to retrieve execution history:
 
-  ```
+  ```json
   {
       "identifier": "DailyErrorMonitoring",
       "startTime": 1743379200,

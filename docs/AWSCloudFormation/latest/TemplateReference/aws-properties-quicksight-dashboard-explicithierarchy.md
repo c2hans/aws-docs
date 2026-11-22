@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-explicithierarchy-syntax.json"></a>
 
-```
+```json
 {
   "[Columns](#cfn-quicksight-dashboard-explicithierarchy-columns)" : {{[ ColumnIdentifier, ... ]}},
   "[DrillDownFilters](#cfn-quicksight-dashboard-explicithierarchy-drilldownfilters)" : {{[ DrillDownFilter, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-explicithierarchy-syntax.yaml"></a>
 
-```
+```yaml
   [Columns](#cfn-quicksight-dashboard-explicithierarchy-columns): {{
     - ColumnIdentifier}}
   [DrillDownFilters](#cfn-quicksight-dashboard-explicithierarchy-drilldownfilters): {{

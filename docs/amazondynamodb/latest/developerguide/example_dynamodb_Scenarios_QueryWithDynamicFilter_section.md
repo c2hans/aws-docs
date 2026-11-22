@@ -15,7 +15,7 @@ The following code examples show how to query a table with a dynamic filter expr
 **SDK for Java 2.x**
 Query a DynamoDB table with a dynamically constructed filter expression using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -66,7 +66,7 @@ import java.util.Map;
 ```
 Demonstrates how to use dynamic filter expressions with AWS SDK for Java 2.x.
 
-```
+```java
     public static void main(String[] args) {
         final String usage =
             """
@@ -150,7 +150,7 @@ Demonstrates how to use dynamic filter expressions with AWS SDK for Java 2.x.
 **SDK for JavaScript (v3)**
 Query a DynamoDB table with a dynamically constructed filter expression using AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient, QueryCommand } = require("@aws-sdk/client-dynamodb");
 
 async function queryWithDynamicFilter(
@@ -227,7 +227,7 @@ async function queryWithDynamicFilter(
 **SDK for Python (Boto3)**
 Query a DynamoDB table with a dynamically constructed filter expression using AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 from boto3.dynamodb.conditions import Attr, Key
 
@@ -304,7 +304,7 @@ def query_with_dynamic_filter(
 ```
 Demonstrates how to use dynamic filter expressions with AWS SDK for Python (Boto3).
 
-```
+```python
 def example_usage():
     """Example of how to use the query_with_dynamic_filter function."""
     # Example parameters

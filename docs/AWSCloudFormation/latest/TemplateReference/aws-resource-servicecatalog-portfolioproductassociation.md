@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-servicecatalog-portfolioproductassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ServiceCatalog::PortfolioProductAssociation",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-servicecatalog-portfolioproductassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ServiceCatalog::PortfolioProductAssociation
 Properties:
   [AcceptLanguage](#cfn-servicecatalog-portfolioproductassociation-acceptlanguage): {{String}}

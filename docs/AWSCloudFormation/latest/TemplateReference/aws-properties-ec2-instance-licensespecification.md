@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-instance-licensespecification-syntax.json"></a>
 
-```
+```json
 {
   "[LicenseConfigurationArn](#cfn-ec2-instance-licensespecification-licenseconfigurationarn)" : {{String}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-instance-licensespecification-syntax.yaml"></a>
 
-```
+```yaml
   [LicenseConfigurationArn](#cfn-ec2-instance-licensespecification-licenseconfigurationarn): {{String}}
 ```
 

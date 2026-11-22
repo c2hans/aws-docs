@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-agentregistry-registryrecord-registryrecordiamcredentialprovider-syntax.json"></a>
 
-```
+```json
 {
   "[Region](#cfn-agentregistry-registryrecord-registryrecordiamcredentialprovider-region)" : {{String}},
   "[RoleArn](#cfn-agentregistry-registryrecord-registryrecordiamcredentialprovider-rolearn)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-agentregistry-registryrecord-registryrecordiamcredentialprovider-syntax.yaml"></a>
 
-```
+```yaml
   [Region](#cfn-agentregistry-registryrecord-registryrecordiamcredentialprovider-region): {{String}}
   [RoleArn](#cfn-agentregistry-registryrecord-registryrecordiamcredentialprovider-rolearn): {{String}}
   [Service](#cfn-agentregistry-registryrecord-registryrecordiamcredentialprovider-service): {{String}}

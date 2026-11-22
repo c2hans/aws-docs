@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-exactresponsefields-syntax.json"></a>
 
-```
+```json
 {
   "[AnswerField](#cfn-lex-bot-exactresponsefields-answerfield)" : {{String}},
   "[QuestionField](#cfn-lex-bot-exactresponsefields-questionfield)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-exactresponsefields-syntax.yaml"></a>
 
-```
+```yaml
   [AnswerField](#cfn-lex-bot-exactresponsefields-answerfield): {{String}}
   [QuestionField](#cfn-lex-bot-exactresponsefields-questionfield): {{String}}
 ```

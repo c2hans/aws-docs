@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sns-topicinlinepolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SNS::TopicInlinePolicy",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sns-topicinlinepolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SNS::TopicInlinePolicy
 Properties:
   [PolicyDocument](#cfn-sns-topicinlinepolicy-policydocument): {{Json}}

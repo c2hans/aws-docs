@@ -29,7 +29,7 @@ The examples on this page assume that your telemetry contains records like the f
 
 **Log example** (`logs.default`). The `@message` field holds the same JSON as text.
 
-```
+```json
 {
   "request_id": "abc-123",
   "path": "/api/orders/1042",
@@ -44,7 +44,7 @@ The examples on this page assume that your telemetry contains records like the f
 
 **Trace example** (`traces.default`)
 
-```
+```json
 {
   "traceId": "4bf92f3577b34da6a3ce929d0e0e4736",
   "spanId": "00f067aa0ba902b7",
@@ -88,7 +88,7 @@ The following table describes the string functions.
 
 The following example counts requests for each API area, such as `orders`, in paths that start with `/api/`.
 
-```
+```sql
 SELECT lower(split_part(path, '/', 3)) AS area,
        COUNT(*) AS requests
 FROM "logs.default"
@@ -117,7 +117,7 @@ The following table describes the regular expression functions.
 
 The following example counts requests for each API route, with each number in the path replaced by `:id`.
 
-```
+```sql
 SELECT regexp_replace(path, '[0-9]+', ':id', 'g') AS route,
        COUNT(*) AS requests
 FROM "logs.default"
@@ -160,7 +160,7 @@ The following table describes the math functions.
 
 The following example returns the 20 slowest requests, with latency in seconds.
 
-```
+```sql
 SELECT request_id,
        round(CAST(latency_ms AS DOUBLE) / 1000, 2) AS latency_s
 FROM "logs.default"
@@ -184,7 +184,7 @@ The following table describes the conditional functions.
 
 The following example counts requests by outcome and user, and uses `anonymous` when a request has no user ID.
 
-```
+```sql
 SELECT CASE
          WHEN status_code >= 500 THEN 'server error'
          WHEN status_code >= 400 THEN 'client error'
@@ -229,7 +229,7 @@ The following table describes the date and time functions.
 
 The following example counts requests in 5-minute buckets over the last 3 hours.
 
-```
+```sql
 SELECT date_bin(INTERVAL '5 minutes', `@timestamp`) AS bucket,
        COUNT(*) AS requests
 FROM "logs.default"
@@ -260,7 +260,7 @@ The following table describes the aggregate functions.
 
 The following example returns the average span duration, in milliseconds, for each service.
 
-```
+```sql
 SELECT resource['attributes']['service.name'] AS service,
        avg(endTimeUnixNano - startTimeUnixNano) / 1e6 AS avg_ms
 FROM "traces.default"
@@ -287,7 +287,7 @@ The following table describes the window functions.
 
 The following example returns the three slowest requests for each path.
 
-```
+```sql
 SELECT path, request_id, latency_ms
 FROM (
   SELECT path, request_id, latency_ms,
@@ -327,7 +327,7 @@ The following table describes the array and struct functions.
 
 The following example counts requests by the number of parts in each path.
 
-```
+```sql
 SELECT cardinality(string_to_array(path, '/')) AS depth,
        COUNT(*) AS requests
 FROM "logs.default"
@@ -358,7 +358,7 @@ The following table describes the JSON functions.
 
 The following example reads values from `@message`, including a nested value.
 
-```
+```sql
 SELECT json_get_str(`@message`, 'user', 'id') AS user_id,
        json_get_int(`@message`, 'retries') AS retries
 FROM "logs.default"
@@ -382,7 +382,7 @@ The following table describes the IP address functions.
 
 The following example counts requests for each client network, with the last part of each IP address replaced by `xxx`.
 
-```
+```sql
 SELECT ipv4_anonymize_class_c(client_ip) AS network,
        COUNT(*) AS requests
 FROM "logs.default"

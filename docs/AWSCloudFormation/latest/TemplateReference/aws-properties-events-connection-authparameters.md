@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-events-connection-authparameters-syntax.json"></a>
 
-```
+```json
 {
   "[ApiKeyAuthParameters](#cfn-events-connection-authparameters-apikeyauthparameters)" : {{ApiKeyAuthParameters}},
   "[BasicAuthParameters](#cfn-events-connection-authparameters-basicauthparameters)" : {{BasicAuthParameters}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-events-connection-authparameters-syntax.yaml"></a>
 
-```
+```yaml
   [ApiKeyAuthParameters](#cfn-events-connection-authparameters-apikeyauthparameters): {{
     ApiKeyAuthParameters}}
   [BasicAuthParameters](#cfn-events-connection-authparameters-basicauthparameters): {{

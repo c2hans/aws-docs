@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-visualinteractionoptions-syntax.json"></a>
 
-```
+```json
 {
   "[ContextMenuOption](#cfn-quicksight-template-visualinteractionoptions-contextmenuoption)" : {{ContextMenuOption}},
   "[VisualMenuOption](#cfn-quicksight-template-visualinteractionoptions-visualmenuoption)" : {{VisualMenuOption}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-visualinteractionoptions-syntax.yaml"></a>
 
-```
+```yaml
   [ContextMenuOption](#cfn-quicksight-template-visualinteractionoptions-contextmenuoption): {{
     ContextMenuOption}}
   [VisualMenuOption](#cfn-quicksight-template-visualinteractionoptions-visualmenuoption): {{

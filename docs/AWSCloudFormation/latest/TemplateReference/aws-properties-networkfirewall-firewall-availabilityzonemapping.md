@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkfirewall-firewall-availabilityzonemapping-syntax.json"></a>
 
-```
+```json
 {
   "[AvailabilityZone](#cfn-networkfirewall-firewall-availabilityzonemapping-availabilityzone)" : {{String}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkfirewall-firewall-availabilityzonemapping-syntax.yaml"></a>
 
-```
+```yaml
   [AvailabilityZone](#cfn-networkfirewall-firewall-availabilityzonemapping-availabilityzone): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotfleetwise-campaign-signalinformation-syntax.json"></a>
 
-```
+```json
 {
   "[DataPartitionId](#cfn-iotfleetwise-campaign-signalinformation-datapartitionid)" : {{String}},
   "[MaxSampleCount](#cfn-iotfleetwise-campaign-signalinformation-maxsamplecount)" : {{Number}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotfleetwise-campaign-signalinformation-syntax.yaml"></a>
 
-```
+```yaml
   [DataPartitionId](#cfn-iotfleetwise-campaign-signalinformation-datapartitionid): {{String}}
   [MaxSampleCount](#cfn-iotfleetwise-campaign-signalinformation-maxsamplecount): {{Number}}
   [MinimumSamplingIntervalMs](#cfn-iotfleetwise-campaign-signalinformation-minimumsamplingintervalms): {{Number}}

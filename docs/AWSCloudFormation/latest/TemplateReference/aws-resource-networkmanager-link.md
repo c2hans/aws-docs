@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-networkmanager-link-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::NetworkManager::Link",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-networkmanager-link-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::NetworkManager::Link
 Properties:
   [Bandwidth](#cfn-networkmanager-link-bandwidth): {{
@@ -154,7 +154,7 @@ The following example creates a link in a global network.
 #### JSON
 <a name="aws-resource-networkmanager-link--examples--Link--json"></a>
 
-```
+```json
 {
     "Type": "AWS::NetworkManager::Link",
     "Properties": {
@@ -187,7 +187,7 @@ The following example creates a link in a global network.
 #### YAML
 <a name="aws-resource-networkmanager-link--examples--Link--yaml"></a>
 
-```
+```yaml
 Type: AWS::NetworkManager::Link
 Properties:
   Description: "Broadband link"

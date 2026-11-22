@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-elasticbeanstalk-configurationtemplate-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ElasticBeanstalk::ConfigurationTemplate",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-elasticbeanstalk-configurationtemplate-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ElasticBeanstalk::ConfigurationTemplate
 Properties:
   [ApplicationName](#cfn-elasticbeanstalk-configurationtemplate-applicationname): {{String}}
@@ -134,7 +134,7 @@ Constraint: This name must be unique per application.
 #### JSON
 <a name="aws-resource-elasticbeanstalk-configurationtemplate--examples----json"></a>
 
-```
+```json
 "myConfigTemplate" : {
     "Type" : "AWS::ElasticBeanstalk::ConfigurationTemplate",
     "Properties" : {
@@ -158,7 +158,7 @@ Constraint: This name must be unique per application.
 #### YAML
 <a name="aws-resource-elasticbeanstalk-configurationtemplate--examples----yaml"></a>
 
-```
+```yaml
 myConfigTemplate:
   Type: AWS::ElasticBeanstalk::ConfigurationTemplate
   Properties:

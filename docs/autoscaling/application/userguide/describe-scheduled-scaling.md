@@ -35,7 +35,7 @@ aws application-autoscaling describe-scaling-activities --service-namespace {{dy
 **Output**
 If the command succeeds, it returns output similar to the following.
 
-```
+```json
 {
     "ScalingActivities": [
         {
@@ -112,7 +112,7 @@ aws application-autoscaling describe-scheduled-actions --service-namespace {{ec2
 **Output**
 If the command succeeds, it returns output similar to the following.
 
-```
+```json
 {
     "ScheduledActions": [
         {
@@ -187,7 +187,7 @@ aws application-autoscaling describe-scheduled-actions --service-namespace {{ec2
 **Output**
 If the command succeeds, it returns output similar to the following. If you provided more than one value for `--scheduled-action-names`, the output includes all scheduled actions whose names are a match.
 
-```
+```json
 {
     "ScheduledActions": [
         {

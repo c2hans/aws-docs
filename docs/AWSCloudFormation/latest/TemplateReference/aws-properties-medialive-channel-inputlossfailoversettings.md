@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-inputlossfailoversettings-syntax.json"></a>
 
-```
+```json
 {
   "[InputLossThresholdMsec](#cfn-medialive-channel-inputlossfailoversettings-inputlossthresholdmsec)" : {{Integer}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-inputlossfailoversettings-syntax.yaml"></a>
 
-```
+```yaml
   [InputLossThresholdMsec](#cfn-medialive-channel-inputlossfailoversettings-inputlossthresholdmsec): {{Integer}}
 ```
 

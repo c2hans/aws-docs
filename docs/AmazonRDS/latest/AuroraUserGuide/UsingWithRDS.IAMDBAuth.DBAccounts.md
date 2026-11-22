@@ -18,7 +18,7 @@ The user name used for IAM authentication must match the case of the user name i
 
 With Aurora MySQL, authentication is handled by `AWSAuthenticationPlugin`—an AWS-provided plugin that works seamlessly with IAM to authenticate your users. Connect to the DB cluster as the master user or a different user who can create users and grant privileges. After connecting, issue the `CREATE USER` statement, as shown in the following example.
 
-```
+```sql
 CREATE USER 'jane_doe' IDENTIFIED WITH AWSAuthenticationPlugin AS 'RDS';
 ```
 
@@ -42,7 +42,7 @@ ALTER USER 'jane_doe'@'%' REQUIRE SSL;
 
 To use IAM authentication with Aurora PostgreSQL, connect to the DB cluster as the master user or a different user who can create users and grant privileges. After connecting, create database users and then grant them the `rds_iam` role as shown in the following example.
 
-```
+```sql
 CREATE USER db_userx;
 GRANT rds_iam TO db_userx;
 ```

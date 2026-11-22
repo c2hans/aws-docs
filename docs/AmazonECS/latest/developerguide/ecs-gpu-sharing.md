@@ -65,7 +65,7 @@ The following example task definition runs two inference containers that share o
 
 In the following example, replace {{account-id}} with your AWS account ID.
 
-```
+```json
 {
   "family": "mps-inference",
   "networkMode": "awsvpc",
@@ -166,7 +166,7 @@ You can confirm that a GPU is shared and track GPU usage with the Amazon ECS API
 
 To confirm that a GPU is shared, call the `DescribeContainerInstances` API. The response includes the `gpuDevices` field with the sharing mode, container count, and remaining memory for each GPU. The following is an example response.
 
-```
+```json
 {
   "containerInstances": [
     {
@@ -191,7 +191,7 @@ To confirm that a GPU is shared, call the `DescribeContainerInstances` API. The 
 
 To view the sharing configuration for each task, call the `DescribeTasks` API. Each container's `gpuSharingStrategy` shows its memory and compute limits, and containers that share a GPU list the same value in `gpuIds`. The following is an example response.
 
-```
+```json
 {
   "tasks": [
     {

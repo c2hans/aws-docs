@@ -43,7 +43,7 @@ aws cloudformation describe-stack-events --stack-name {{my-stack}}
 
 The following is an example response.
 
-```
+```json
 {
     "StackEvents": [
         {

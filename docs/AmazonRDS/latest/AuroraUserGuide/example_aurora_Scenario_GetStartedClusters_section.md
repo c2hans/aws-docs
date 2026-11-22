@@ -17,7 +17,7 @@ The following code examples show how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Aurora#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```csharp
 using Amazon.RDS;
 using Amazon.RDS.Model;
 using AuroraActions;
@@ -574,7 +574,7 @@ public class AuroraScenario
 ```
 Wrapper methods that are called by the scenario to manage Aurora actions.
 
-```
+```csharp
 using Amazon.RDS;
 using Amazon.RDS.Model;
 
@@ -972,7 +972,7 @@ public class AuroraWrapper
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/aurora#code-examples).
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -1852,7 +1852,7 @@ bool AwsDoc::Aurora::cleanUpResources(const Aws::String &parameterGroupName,
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/aurora#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```go
 import (
 	"aurora/actions"
 	"context"
@@ -2234,7 +2234,7 @@ func (helper ScenarioHelper) UniqueId() string {
 ```
 Define functions that are called by the scenario to manage Aurora actions.
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -2549,7 +2549,7 @@ func (clusters *DbClusters) GetOrderableInstances(ctx context.Context, engine st
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
 /**
  * Before running this Java (v2) code example, set up your development
  * environment, including your credentials.
@@ -3184,7 +3184,7 @@ public class AuroraScenario {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rds#code-examples).
 
-```
+```kotlin
 /**
 Before running this Kotlin code example, set up your development environment, including your credentials.
 
@@ -3696,7 +3696,7 @@ suspend fun describeAuroraDBEngines() {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/aurora#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```python
 class AuroraClusterScenario:
     """Runs a scenario that shows how to get started using Aurora DB clusters."""
 
@@ -3988,7 +3988,7 @@ if __name__ == "__main__":
 ```
 Define functions that are called by the scenario to manage Aurora actions.
 
-```
+```python
 class AuroraWrapper:
     """Encapsulates Aurora DB cluster actions."""
 
@@ -4443,7 +4443,7 @@ class AuroraWrapper:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/aurora#code-examples).
 A library containing the scenario-specific functions for the Aurora scenario.
 
-```
+```rust
 use phf::{phf_set, Set};
 use secrecy::SecretString;
 use std::{collections::HashMap, fmt::Display, time::Duration};
@@ -5083,7 +5083,7 @@ pub mod tests;
 ```
 Tests for the library using automocks around the RDS Client wrapper.
 
-```
+```rust
 use crate::rds::MockRdsImpl;
 
 use super::*;
@@ -6099,7 +6099,7 @@ async fn test_scenario_snapshot_invalid() {
 ```
 A binary to run the scenario from front to end, using inquirer so that the user can make some decisions.
 
-```
+```rust
 use std::fmt::Display;
 
 use anyhow::anyhow;
@@ -6375,7 +6375,7 @@ fn prompt_number_or_default(warnings: &mut Warnings, name: &str, default: u8) ->
 ```
 A wrapper around the Amazon RDS service that allows automocking for tests.
 
-```
+```rust
 use aws_sdk_rds::{
     error::SdkError,
     operation::{
@@ -6629,7 +6629,7 @@ impl RdsImpl {
 ```
 The Cargo.toml with dependencies used in this scenario.
 
-```
+```rust
 [package]
 name = "aurora-code-examples"
 authors = [

@@ -30,7 +30,7 @@ aws dynamodb tag-resource —resource-arn arn:aws:dynamodb:{{us-east-1}}:{{12345
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

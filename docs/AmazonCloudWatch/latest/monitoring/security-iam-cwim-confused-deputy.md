@@ -24,7 +24,7 @@ The following is an example of an assume role policy that shows how you can prev
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {

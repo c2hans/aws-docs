@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewaytarget-tooldefinition-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-bedrockagentcore-gatewaytarget-tooldefinition-description)" : {{String}},
   "[InputSchema](#cfn-bedrockagentcore-gatewaytarget-tooldefinition-inputschema)" : {{SchemaDefinition}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewaytarget-tooldefinition-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-bedrockagentcore-gatewaytarget-tooldefinition-description): {{String}}
   [InputSchema](#cfn-bedrockagentcore-gatewaytarget-tooldefinition-inputschema): {{
     SchemaDefinition}}

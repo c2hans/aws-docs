@@ -45,7 +45,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 The following example shows a CloudTrail log entry that demonstrates the [`CreateAssessment`](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_CreateAssessment.html) action.
 
-```
+```json
 {
       eventVersion:"1.05",
       userIdentity:{

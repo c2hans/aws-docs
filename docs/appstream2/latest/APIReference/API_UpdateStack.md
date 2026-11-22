@@ -69,7 +69,11 @@ Updates the specified fields for the specified stack.
          "MaximumLength": {{number}},
          "Permission": "{{string}}"
       }
-   ]
+   ],
+   "WebAuthnRedirection": {
+      "Enabled": {{boolean}},
+      "ProcessCompatibilityList": [ "{{string}}" ]
+   }
 }
 ```
 
@@ -99,7 +103,7 @@ Required: No
  ** [AttributesToDelete](#API_UpdateStack_RequestSyntax) **   <a name="WorkSpacesApplications-UpdateStack-request-AttributesToDelete"></a>
 The stack attributes to delete.
 Type: Array of strings
-Valid Values: `STORAGE_CONNECTORS | STORAGE_CONNECTOR_HOMEFOLDERS | STORAGE_CONNECTOR_GOOGLE_DRIVE | STORAGE_CONNECTOR_ONE_DRIVE | REDIRECT_URL | FEEDBACK_URL | THEME_NAME | USER_SETTINGS | EMBED_HOST_DOMAINS | IAM_ROLE_ARN | ACCESS_ENDPOINTS | STREAMING_EXPERIENCE_SETTINGS | CONTENT_REDIRECTION | AGENT_ACCESS_CONFIG | STORAGE_CONNECTOR_AUTHENTICATION | AGENT_ACCESS_CONFIG_KMS_KEY_ARN`
+Valid Values: `STORAGE_CONNECTORS | STORAGE_CONNECTOR_HOMEFOLDERS | STORAGE_CONNECTOR_GOOGLE_DRIVE | STORAGE_CONNECTOR_ONE_DRIVE | REDIRECT_URL | FEEDBACK_URL | THEME_NAME | USER_SETTINGS | EMBED_HOST_DOMAINS | IAM_ROLE_ARN | ACCESS_ENDPOINTS | STREAMING_EXPERIENCE_SETTINGS | CONTENT_REDIRECTION | WEB_AUTHN_REDIRECTION | AGENT_ACCESS_CONFIG | STORAGE_CONNECTOR_AUTHENTICATION | AGENT_ACCESS_CONFIG_KMS_KEY_ARN`
 Required: No
 
  ** [ContentRedirection](#API_UpdateStack_RequestSyntax) **   <a name="WorkSpacesApplications-UpdateStack-request-ContentRedirection"></a>
@@ -173,6 +177,11 @@ Type: Array of [UserSetting](API_UserSetting.md) objects
 Array Members: Minimum number of 1 item.
 Required: No
 
+ ** [WebAuthnRedirection](#API_UpdateStack_RequestSyntax) **   <a name="WorkSpacesApplications-UpdateStack-request-WebAuthnRedirection"></a>
+Configuration for WebAuthn redirection between the streaming session and the user's local device. Use ProcessCompatibilityList to specify which processes can use WebAuthn redirection on Windows fleets. To remove WebAuthn redirection, use AttributesToDelete with the WEB\_AUTHN\_REDIRECTION value.
+Type: [WebAuthnRedirection](API_WebAuthnRedirection.md) object
+Required: No
+
 ## Response Syntax
 <a name="API_UpdateStack_ResponseSyntax"></a>
 
@@ -244,7 +253,11 @@ Required: No
             "MaximumLength": number,
             "Permission": "string"
          }
-      ]
+      ],
+      "WebAuthnRedirection": {
+         "Enabled": boolean,
+         "ProcessCompatibilityList": [ "string" ]
+      }
    }
 }
 ```

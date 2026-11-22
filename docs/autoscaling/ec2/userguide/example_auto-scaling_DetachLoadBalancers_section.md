@@ -28,7 +28,7 @@ For more information, see [Attaching a load balancer to your Auto Scaling group]
 **Tools for PowerShell V4**
 **Example 1: This example detaches the specified load balancer from the specified Auto Scaling group.**
 
-```
+```powershell
 Dismount-ASLoadBalancer -LoadBalancerName my-lb -AutoScalingGroupName my-asg
 ```
 +  For API details, see [DetachLoadBalancers](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -36,7 +36,7 @@ Dismount-ASLoadBalancer -LoadBalancerName my-lb -AutoScalingGroupName my-asg
 **Tools for PowerShell V5**
 **Example 1: This example detaches the specified load balancer from the specified Auto Scaling group.**
 
-```
+```powershell
 Dismount-ASLoadBalancer -LoadBalancerName my-lb -AutoScalingGroupName my-asg
 ```
 +  For API details, see [DetachLoadBalancers](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

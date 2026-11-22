@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-events-rule-inputtransformer-syntax.json"></a>
 
-```
+```json
 {
   "[InputPathsMap](#cfn-events-rule-inputtransformer-inputpathsmap)" : {{{{{Key}}: {{Value}}, ...}}},
   "[InputTemplate](#cfn-events-rule-inputtransformer-inputtemplate)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-events-rule-inputtransformer-syntax.yaml"></a>
 
-```
+```yaml
   [InputPathsMap](#cfn-events-rule-inputtransformer-inputpathsmap): {{
     {{Key}}: {{Value}}}}
   [InputTemplate](#cfn-events-rule-inputtransformer-inputtemplate): {{String}}
@@ -88,7 +88,7 @@ The following example takes `instance` and `state` and outputs a string.
 #### JSON
 <a name="aws-properties-events-rule-inputtransformer--examples--Transform_input_into_a_string--json"></a>
 
-```
+```json
 "InputTransformer": {
     "InputPathsMap": {
        "instance": "$.detail.instance-id",
@@ -101,7 +101,7 @@ The following example takes `instance` and `state` and outputs a string.
 #### YAML
 <a name="aws-properties-events-rule-inputtransformer--examples--Transform_input_into_a_string--yaml"></a>
 
-```
+```yaml
 InputTransformer:
   InputPathsMap:
     "instance" : "$.detail.instance-id"
@@ -118,7 +118,7 @@ The following example takes `instance` and `state` and outputs JSON that include
 #### JSON
 <a name="aws-properties-events-rule-inputtransformer--examples--Transform_input_into_JSON--json"></a>
 
-```
+```json
 "InputTransformer": {
     "InputPathsMap": {
        "instance": "$.detail.instance-id",
@@ -131,7 +131,7 @@ The following example takes `instance` and `state` and outputs JSON that include
 #### YAML
 <a name="aws-properties-events-rule-inputtransformer--examples--Transform_input_into_JSON--yaml"></a>
 
-```
+```yaml
 InputTransformer:
   InputPathsMap:
     "instance" : "$.detail.instance-id"
@@ -152,7 +152,7 @@ The following example defines a variable `RootDomainName`. It then takes `instan
 #### JSON
 <a name="aws-properties-events-rule-inputtransformer--examples--Transform_input_and_substitute_a_variable--json"></a>
 
-```
+```json
 "Parameters": {
     "RootDomainName": {
         "Description": "Domain name to use",
@@ -165,7 +165,7 @@ The following example defines a variable `RootDomainName`. It then takes `instan
 #### JSON
 <a name="aws-properties-events-rule-inputtransformer--examples--Transform_input_and_substitute_a_variable--json"></a>
 
-```
+```json
 "InputTransformer": {
     "InputPathsMap": {
        "instance": "$.detail.instance-id",
@@ -182,7 +182,7 @@ The following example defines a variable `RootDomainName`. It then takes `instan
 #### YAML
 <a name="aws-properties-events-rule-inputtransformer--examples--Transform_input_and_substitute_a_variable--yaml"></a>
 
-```
+```yaml
 Parameters:
   RootDomainName:
     Description: Domain name to use
@@ -193,7 +193,7 @@ Parameters:
 #### YAML
 <a name="aws-properties-events-rule-inputtransformer--examples--Transform_input_and_substitute_a_variable--yaml"></a>
 
-```
+```yaml
 InputTransformer:
   InputPathsMap:
     "instance" : "$.detail.instance-id"

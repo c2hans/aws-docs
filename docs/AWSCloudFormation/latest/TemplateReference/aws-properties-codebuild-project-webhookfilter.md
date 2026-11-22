@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codebuild-project-webhookfilter-syntax.json"></a>
 
-```
+```json
 {
   "[ExcludeMatchedPattern](#cfn-codebuild-project-webhookfilter-excludematchedpattern)" : {{Boolean}},
   "[Pattern](#cfn-codebuild-project-webhookfilter-pattern)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codebuild-project-webhookfilter-syntax.yaml"></a>
 
-```
+```yaml
   [ExcludeMatchedPattern](#cfn-codebuild-project-webhookfilter-excludematchedpattern): {{Boolean}}
   [Pattern](#cfn-codebuild-project-webhookfilter-pattern): {{String}}
   [Type](#cfn-codebuild-project-webhookfilter-type): {{String}}

@@ -44,7 +44,7 @@ For more information on how to use this permissions model, see [Control access f
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -71,7 +71,7 @@ For API Gateway to call the integrated AWS service, you must also attach to this
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

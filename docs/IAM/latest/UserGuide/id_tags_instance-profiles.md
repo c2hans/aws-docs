@@ -21,7 +21,7 @@ You must configure permissions to allow an IAM entity (user or role) to tag inst
 **To allow an IAM entity (user or role) to add, list, or remove a tag for an instance profile**
 Add the following statement to the permissions policy for the IAM entity that needs to manage tags. Use your account number and replace {{<InstanceProfileName>}} with the name of the instance profile whose tags need to be managed. To learn how to create a policy using this example JSON policy document, see [Creating policies using the JSON editor](access_policies_create-console.md#access_policies_create-json-editor).
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [
@@ -41,7 +41,7 @@ The `iam:TagInstanceProfile` action requires that you also include the `iam:List
 
 To use this policy, replace {{<InstanceProfileName>}} with the name of the instance profile whose tags need to be managed. To learn how to create a policy using this example JSON policy document, see [Creating policies using the JSON editor](access_policies_create-console.md#access_policies_create-json-editor).
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [

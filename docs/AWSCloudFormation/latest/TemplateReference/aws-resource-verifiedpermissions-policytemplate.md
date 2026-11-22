@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-verifiedpermissions-policytemplate-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::VerifiedPermissions::PolicyTemplate",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-verifiedpermissions-policytemplate-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::VerifiedPermissions::PolicyTemplate
 Properties:
   [Description](#cfn-verifiedpermissions-policytemplate-description): {{String}}
@@ -113,7 +113,7 @@ The following example creates a policy template with the specified statement.
 #### JSON
 <a name="aws-resource-verifiedpermissions-policytemplate--examples--Creating_a_policy_template--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "AWS CloudFormation sample template for creating a policy template for Verified Permissions.",
@@ -160,7 +160,7 @@ The following example creates a policy template with the specified statement.
 #### YAML
 <a name="aws-resource-verifiedpermissions-policytemplate--examples--Creating_a_policy_template--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: >-
   Description": "AWS CloudFormation sample template for creating a policy template for Verified Permissions."

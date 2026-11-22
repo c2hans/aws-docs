@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pinpointemail-configurationseteventdestination-dimensionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultDimensionValue](#cfn-pinpointemail-configurationseteventdestination-dimensionconfiguration-defaultdimensionvalue)" : {{String}},
   "[DimensionName](#cfn-pinpointemail-configurationseteventdestination-dimensionconfiguration-dimensionname)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pinpointemail-configurationseteventdestination-dimensionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultDimensionValue](#cfn-pinpointemail-configurationseteventdestination-dimensionconfiguration-defaultdimensionvalue): {{String}}
   [DimensionName](#cfn-pinpointemail-configurationseteventdestination-dimensionconfiguration-dimensionname): {{String}}
   [DimensionValueSource](#cfn-pinpointemail-configurationseteventdestination-dimensionconfiguration-dimensionvaluesource): {{String}}

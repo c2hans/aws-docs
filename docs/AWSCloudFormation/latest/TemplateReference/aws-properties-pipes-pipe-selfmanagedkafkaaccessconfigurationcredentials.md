@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-selfmanagedkafkaaccessconfigurationcredentials-syntax.json"></a>
 
-```
+```json
 {
   "[BasicAuth](#cfn-pipes-pipe-selfmanagedkafkaaccessconfigurationcredentials-basicauth)" : {{String}},
   "[ClientCertificateTlsAuth](#cfn-pipes-pipe-selfmanagedkafkaaccessconfigurationcredentials-clientcertificatetlsauth)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-selfmanagedkafkaaccessconfigurationcredentials-syntax.yaml"></a>
 
-```
+```yaml
   [BasicAuth](#cfn-pipes-pipe-selfmanagedkafkaaccessconfigurationcredentials-basicauth): {{String}}
   [ClientCertificateTlsAuth](#cfn-pipes-pipe-selfmanagedkafkaaccessconfigurationcredentials-clientcertificatetlsauth): {{String}}
   [SaslScram256Auth](#cfn-pipes-pipe-selfmanagedkafkaaccessconfigurationcredentials-saslscram256auth): {{String}}

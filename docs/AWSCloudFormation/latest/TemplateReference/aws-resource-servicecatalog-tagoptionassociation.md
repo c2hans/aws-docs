@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-servicecatalog-tagoptionassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ServiceCatalog::TagOptionAssociation",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-servicecatalog-tagoptionassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ServiceCatalog::TagOptionAssociation
 Properties:
   [ResourceId](#cfn-servicecatalog-tagoptionassociation-resourceid): {{String}}

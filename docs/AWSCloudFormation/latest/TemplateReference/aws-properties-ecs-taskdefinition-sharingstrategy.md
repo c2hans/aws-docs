@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskdefinition-sharingstrategy-syntax.json"></a>
 
-```
+```json
 {
   "[NvidiaMps](#cfn-ecs-taskdefinition-sharingstrategy-nvidiamps)" : {{NvidiaMpsAllocation}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskdefinition-sharingstrategy-syntax.yaml"></a>
 
-```
+```yaml
   [NvidiaMps](#cfn-ecs-taskdefinition-sharingstrategy-nvidiamps): {{
     NvidiaMpsAllocation}}
 ```

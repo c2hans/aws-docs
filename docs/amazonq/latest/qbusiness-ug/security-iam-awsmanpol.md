@@ -35,7 +35,7 @@ This policy includes the following permissions.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -116,7 +116,7 @@ To grant the necessary permissions, the trust policy of the role must grant Quic
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

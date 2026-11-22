@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-amplify-branch-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Amplify::Branch",
   "Properties" : {
@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-amplify-branch-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Amplify::Branch
 Properties:
   [AppId](#cfn-amplify-branch-appid): {{String}}

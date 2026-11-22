@@ -24,7 +24,7 @@ Filters access by the backup region specified for centralization rules.
 **Example JSON policy with observabilityadmin:CentralizationBackupRegion**
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -52,7 +52,7 @@ Filters access by the destination region specified for centralization rules.
 **Example JSON policy with observabilityadmin:CentralizationDestinationRegion**
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -80,7 +80,7 @@ Filters access by the source regions specified for centralization rules.
 **Example JSON policy with observabilityadmin:CentralizationSourceRegions**
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

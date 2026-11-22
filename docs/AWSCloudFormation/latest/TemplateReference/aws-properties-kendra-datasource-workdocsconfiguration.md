@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-workdocsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CrawlComments](#cfn-kendra-datasource-workdocsconfiguration-crawlcomments)" : {{Boolean}},
   "[ExclusionPatterns](#cfn-kendra-datasource-workdocsconfiguration-exclusionpatterns)" : {{[ String, ... ]}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-workdocsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CrawlComments](#cfn-kendra-datasource-workdocsconfiguration-crawlcomments): {{Boolean}}
   [ExclusionPatterns](#cfn-kendra-datasource-workdocsconfiguration-exclusionpatterns): {{
     - String}}

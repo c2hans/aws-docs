@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-daemontaskdefinition-restartpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-ecs-daemontaskdefinition-restartpolicy-enabled)" : {{Boolean}},
   "[IgnoredExitCodes](#cfn-ecs-daemontaskdefinition-restartpolicy-ignoredexitcodes)" : {{[ Integer, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-daemontaskdefinition-restartpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-ecs-daemontaskdefinition-restartpolicy-enabled): {{Boolean}}
   [IgnoredExitCodes](#cfn-ecs-daemontaskdefinition-restartpolicy-ignoredexitcodes): {{
     - Integer}}

@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apprunner-autoscalingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppRunner::AutoScalingConfiguration",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apprunner-autoscalingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppRunner::AutoScalingConfiguration
 Properties:
   [AutoScalingConfigurationName](#cfn-apprunner-autoscalingconfiguration-autoscalingconfigurationname): {{String}}
@@ -128,7 +128,7 @@ This example illustrates setting up an automatic scaling configuration for your 
 #### JSON
 <a name="aws-resource-apprunner-autoscalingconfiguration--examples--Auto_Scaling_configuration--json"></a>
 
-```
+```json
 {
   "Type": "AWS::AppRunner::AutoScalingConfiguration",
   "Properties": {
@@ -143,7 +143,7 @@ This example illustrates setting up an automatic scaling configuration for your 
 #### YAML
 <a name="aws-resource-apprunner-autoscalingconfiguration--examples--Auto_Scaling_configuration--yaml"></a>
 
-```
+```yaml
 Type: AWS::AppRunner::AutoScalingConfiguration
 Properties:
   AutoScalingConfigurationName: "AUTO_SCALING_CONFIGURATION_NAME"

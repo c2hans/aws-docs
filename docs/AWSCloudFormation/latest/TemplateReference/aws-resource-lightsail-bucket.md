@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lightsail-bucket-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lightsail::Bucket",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lightsail-bucket-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lightsail::Bucket
 Properties:
   [AccessRules](#cfn-lightsail-bucket-accessrules): {{

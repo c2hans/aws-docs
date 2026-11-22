@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-billing-billingview-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Billing::BillingView",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-billing-billingview-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Billing::BillingView
 Properties:
   [DataFilterExpression](#cfn-billing-billingview-datafilterexpression): {{

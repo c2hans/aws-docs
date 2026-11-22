@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sso-application-signinoptions-syntax.json"></a>
 
-```
+```json
 {
   "[ApplicationUrl](#cfn-sso-application-signinoptions-applicationurl)" : {{String}},
   "[Origin](#cfn-sso-application-signinoptions-origin)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sso-application-signinoptions-syntax.yaml"></a>
 
-```
+```yaml
   [ApplicationUrl](#cfn-sso-application-signinoptions-applicationurl): {{String}}
   [Origin](#cfn-sso-application-signinoptions-origin): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-controltower-enabledbaseline-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-controltower-enabledbaseline-tag-key)" : {{String}},
   "[Value](#cfn-controltower-enabledbaseline-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-controltower-enabledbaseline-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-controltower-enabledbaseline-tag-key): {{String}}
   [Value](#cfn-controltower-enabledbaseline-tag-value): {{String}}
 ```

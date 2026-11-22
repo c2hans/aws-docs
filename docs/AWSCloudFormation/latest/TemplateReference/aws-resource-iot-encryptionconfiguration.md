@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iot-encryptionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoT::EncryptionConfiguration",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iot-encryptionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoT::EncryptionConfiguration
 Properties:
   [EncryptionType](#cfn-iot-encryptionconfiguration-encryptiontype): {{String}}
@@ -103,7 +103,7 @@ The following example creates an encryption configuration using a customer manag
 #### JSON
 <a name="aws-resource-iot-encryptionconfiguration--examples----json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -122,7 +122,7 @@ The following example creates an encryption configuration using a customer manag
 #### YAML
 <a name="aws-resource-iot-encryptionconfiguration--examples----yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   MyEncryptionConfiguration:

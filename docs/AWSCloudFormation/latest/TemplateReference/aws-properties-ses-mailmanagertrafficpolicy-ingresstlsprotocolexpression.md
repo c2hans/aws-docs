@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-mailmanagertrafficpolicy-ingresstlsprotocolexpression-syntax.json"></a>
 
-```
+```json
 {
   "[Evaluate](#cfn-ses-mailmanagertrafficpolicy-ingresstlsprotocolexpression-evaluate)" : {{IngressTlsProtocolToEvaluate}},
   "[Operator](#cfn-ses-mailmanagertrafficpolicy-ingresstlsprotocolexpression-operator)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-mailmanagertrafficpolicy-ingresstlsprotocolexpression-syntax.yaml"></a>
 
-```
+```yaml
   [Evaluate](#cfn-ses-mailmanagertrafficpolicy-ingresstlsprotocolexpression-evaluate): {{
     IngressTlsProtocolToEvaluate}}
   [Operator](#cfn-ses-mailmanagertrafficpolicy-ingresstlsprotocolexpression-operator): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-gatewayroute-gatewayroutetarget-syntax.json"></a>
 
-```
+```json
 {
   "[Port](#cfn-appmesh-gatewayroute-gatewayroutetarget-port)" : {{Integer}},
   "[VirtualService](#cfn-appmesh-gatewayroute-gatewayroutetarget-virtualservice)" : {{GatewayRouteVirtualService}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-gatewayroute-gatewayroutetarget-syntax.yaml"></a>
 
-```
+```yaml
   [Port](#cfn-appmesh-gatewayroute-gatewayroutetarget-port): {{Integer}}
   [VirtualService](#cfn-appmesh-gatewayroute-gatewayroutetarget-virtualservice): {{
     GatewayRouteVirtualService}}

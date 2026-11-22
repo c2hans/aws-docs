@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/ion-serde-using-search-
 
 The SerDe property syntax for path extractor contains a {{<path\_extractor\_expression>}}:
 
-```
+```sql
 "ion.{{<column_name>}}.path_extractor" = "{{<path_extractor_expression>}}"
 ```
 

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpool-userpooladdons-syntax.json"></a>
 
-```
+```json
 {
   "[AdvancedSecurityAdditionalFlows](#cfn-cognito-userpool-userpooladdons-advancedsecurityadditionalflows)" : {{AdvancedSecurityAdditionalFlows}},
   "[AdvancedSecurityMode](#cfn-cognito-userpool-userpooladdons-advancedsecuritymode)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpool-userpooladdons-syntax.yaml"></a>
 
-```
+```yaml
   [AdvancedSecurityAdditionalFlows](#cfn-cognito-userpool-userpooladdons-advancedsecurityadditionalflows): {{
     AdvancedSecurityAdditionalFlows}}
   [AdvancedSecurityMode](#cfn-cognito-userpool-userpooladdons-advancedsecuritymode): {{String}}

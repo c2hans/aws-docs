@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-sourceendpoint-standardsourceendpointnetworkingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Public](#cfn-mediaconnect-sourceendpoint-standardsourceendpointnetworkingconfiguration-public)" : {{PublicSourceEndpointNetworkingConfiguration}},
   "[Vpc](#cfn-mediaconnect-sourceendpoint-standardsourceendpointnetworkingconfiguration-vpc)" : {{VpcSourceEndpointNetworkingConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-sourceendpoint-standardsourceendpointnetworkingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Public](#cfn-mediaconnect-sourceendpoint-standardsourceendpointnetworkingconfiguration-public): {{
     PublicSourceEndpointNetworkingConfiguration}}
   [Vpc](#cfn-mediaconnect-sourceendpoint-standardsourceendpointnetworkingconfiguration-vpc): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-gamesessionqueue-playerlatencypolicy-syntax.json"></a>
 
-```
+```json
 {
   "[MaximumIndividualPlayerLatencyMilliseconds](#cfn-gamelift-gamesessionqueue-playerlatencypolicy-maximumindividualplayerlatencymilliseconds)" : {{Integer}},
   "[PolicyDurationSeconds](#cfn-gamelift-gamesessionqueue-playerlatencypolicy-policydurationseconds)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-gamesessionqueue-playerlatencypolicy-syntax.yaml"></a>
 
-```
+```yaml
   [MaximumIndividualPlayerLatencyMilliseconds](#cfn-gamelift-gamesessionqueue-playerlatencypolicy-maximumindividualplayerlatencymilliseconds): {{Integer}}
   [PolicyDurationSeconds](#cfn-gamelift-gamesessionqueue-playerlatencypolicy-policydurationseconds): {{Integer}}
 ```

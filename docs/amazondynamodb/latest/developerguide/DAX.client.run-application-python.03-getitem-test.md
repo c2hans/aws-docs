@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 
 The `03-getitem-test.py` program performs `GetItem` operations on `TryDaxTable`. This example is given for the Region eu-west-1.
 
-```
+```python
 import argparse
 import sys
 import time

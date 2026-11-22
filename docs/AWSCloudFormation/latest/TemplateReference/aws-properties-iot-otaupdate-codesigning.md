@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-otaupdate-codesigning-syntax.json"></a>
 
-```
+```json
 {
   "[AwsSignerJobId](#cfn-iot-otaupdate-codesigning-awssignerjobid)" : {{String}},
   "[CustomCodeSigning](#cfn-iot-otaupdate-codesigning-customcodesigning)" : {{CustomCodeSigning}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-otaupdate-codesigning-syntax.yaml"></a>
 
-```
+```yaml
   [AwsSignerJobId](#cfn-iot-otaupdate-codesigning-awssignerjobid): {{String}}
   [CustomCodeSigning](#cfn-iot-otaupdate-codesigning-customcodesigning): {{
     CustomCodeSigning}}

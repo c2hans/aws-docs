@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-vpcendpoint-dnsoptionsspecification-syntax.json"></a>
 
-```
+```json
 {
   "[DnsRecordIpType](#cfn-ec2-vpcendpoint-dnsoptionsspecification-dnsrecordiptype)" : {{String}},
   "[PrivateDnsOnlyForInboundResolverEndpoint](#cfn-ec2-vpcendpoint-dnsoptionsspecification-privatednsonlyforinboundresolverendpoint)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-vpcendpoint-dnsoptionsspecification-syntax.yaml"></a>
 
-```
+```yaml
   [DnsRecordIpType](#cfn-ec2-vpcendpoint-dnsoptionsspecification-dnsrecordiptype): {{String}}
   [PrivateDnsOnlyForInboundResolverEndpoint](#cfn-ec2-vpcendpoint-dnsoptionsspecification-privatednsonlyforinboundresolverendpoint): {{String}}
   [PrivateDnsPreference](#cfn-ec2-vpcendpoint-dnsoptionsspecification-privatednspreference): {{String}}

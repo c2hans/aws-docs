@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-redshiftserverless-namespace-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-redshiftserverless-namespace-tag-key)" : {{String}},
   "[Value](#cfn-redshiftserverless-namespace-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-redshiftserverless-namespace-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-redshiftserverless-namespace-tag-key): {{String}}
   [Value](#cfn-redshiftserverless-namespace-tag-value): {{String}}
 ```

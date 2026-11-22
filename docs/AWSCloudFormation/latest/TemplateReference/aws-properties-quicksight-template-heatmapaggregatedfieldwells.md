@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-heatmapaggregatedfieldwells-syntax.json"></a>
 
-```
+```json
 {
   "[Columns](#cfn-quicksight-template-heatmapaggregatedfieldwells-columns)" : {{[ DimensionField, ... ]}},
   "[Rows](#cfn-quicksight-template-heatmapaggregatedfieldwells-rows)" : {{[ DimensionField, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-heatmapaggregatedfieldwells-syntax.yaml"></a>
 
-```
+```yaml
   [Columns](#cfn-quicksight-template-heatmapaggregatedfieldwells-columns): {{
     - DimensionField}}
   [Rows](#cfn-quicksight-template-heatmapaggregatedfieldwells-rows): {{

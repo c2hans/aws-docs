@@ -16,7 +16,7 @@ The `DynamoDBStore` class, in the [langgraph-checkpoint-aws](https://pypi.org/pr
 
 Install the libraries using pip:
 
-```
+```bash
 pip install langgraph langgraph-checkpoint-aws langchain-aws
 ```
 
@@ -25,7 +25,7 @@ pip install langgraph langgraph-checkpoint-aws langchain-aws
 
 Configure the store with an `index` block and call `setup()`:
 
-```
+```python
 from langchain_aws import BedrockEmbeddings
 from langgraph_checkpoint_aws import DynamoDBStore
 
@@ -56,7 +56,7 @@ Four settings in the `index` block are worth understanding:
 
 Writing is an ordinary `put()`. The embedding happens for you:
 
-```
+```python
 namespace = ("memories", "acme-corp", "user-8812")
 
 store.put(namespace, "mem-1", {
@@ -78,7 +78,7 @@ store.put(namespace, "mem-3", {
 
 The customer opens a new conversation and says their connection keeps dropping after about a minute:
 
-```
+```python
 results = store.search(
     namespace,
     query="connection drops after a minute of inactivity",

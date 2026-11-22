@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-networkinsightspath-pathfilter-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationAddress](#cfn-ec2-networkinsightspath-pathfilter-destinationaddress)" : {{String}},
   "[DestinationPortRange](#cfn-ec2-networkinsightspath-pathfilter-destinationportrange)" : {{FilterPortRange}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-networkinsightspath-pathfilter-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationAddress](#cfn-ec2-networkinsightspath-pathfilter-destinationaddress): {{String}}
   [DestinationPortRange](#cfn-ec2-networkinsightspath-pathfilter-destinationportrange): {{
     FilterPortRange}}

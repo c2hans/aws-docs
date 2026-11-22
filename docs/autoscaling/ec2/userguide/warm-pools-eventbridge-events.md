@@ -37,7 +37,7 @@ Events that are delivered when an instance transitions into a wait state for sca
 
 In this example scale-out event, a new instance launches and its state changes to `Warmed:Pending:Wait` because it's added to the warm pool. For more information, see [Lifecycle state transitions for instances in a warm pool](warm-pool-instance-lifecycle.md#lifecycle-state-transitions).
 
-```
+```json
 {
   "version": "0",
   "id": "{{12345678}}-{{1234}}-{{1234}}-{{1234}}-{{123456789012}}",
@@ -64,7 +64,7 @@ In this example scale-out event, a new instance launches and its state changes t
 
 In this example scale-out event, the state of the instance changes to `Pending:Wait` because it's added to the Auto Scaling group from the warm pool. For more information, see [Lifecycle state transitions for instances in a warm pool](warm-pool-instance-lifecycle.md#lifecycle-state-transitions).
 
-```
+```json
 {
   "version": "0",
   "id": "{{12345678}}-{{1234}}-{{1234}}-{{1234}}-{{123456789012}}",
@@ -96,7 +96,7 @@ Events that are delivered when an instance transitions into a wait state for sca
 
 In this example scale-in event, the state of an instance changes to `Warmed:Pending:Wait` because it's returned to the warm pool. For more information, see [Lifecycle state transitions for instances in a warm pool](warm-pool-instance-lifecycle.md#lifecycle-state-transitions).
 
-```
+```json
 {
   "version": "0",
   "id": "{{12345678}}-{{1234}}-{{1234}}-{{1234}}-{{123456789012}}",

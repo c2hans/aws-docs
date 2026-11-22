@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-cluster-tls-syntax.json"></a>
 
-```
+```json
 {
   "[CertificateAuthorityArnList](#cfn-msk-cluster-tls-certificateauthorityarnlist)" : {{[ String, ... ]}},
   "[Enabled](#cfn-msk-cluster-tls-enabled)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-cluster-tls-syntax.yaml"></a>
 
-```
+```yaml
   [CertificateAuthorityArnList](#cfn-msk-cluster-tls-certificateauthorityarnlist): {{
     - String}}
   [Enabled](#cfn-msk-cluster-tls-enabled): {{Boolean}}

@@ -30,7 +30,7 @@ You also must add the following permissions to the IAM policy that is attached t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -64,7 +64,7 @@ After you configure Amazon Cognito to work with your identity provider, you also
 
 ****
 
-  ```
+  ```json
   {
    "Version":"2012-10-17",
    "Statement": [

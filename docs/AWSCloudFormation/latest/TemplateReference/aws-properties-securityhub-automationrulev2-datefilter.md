@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityhub-automationrulev2-datefilter-syntax.json"></a>
 
-```
+```json
 {
   "[DateRange](#cfn-securityhub-automationrulev2-datefilter-daterange)" : {{DateRange}},
   "[End](#cfn-securityhub-automationrulev2-datefilter-end)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityhub-automationrulev2-datefilter-syntax.yaml"></a>
 
-```
+```yaml
   [DateRange](#cfn-securityhub-automationrulev2-datefilter-daterange): {{
     DateRange}}
   [End](#cfn-securityhub-automationrulev2-datefilter-end): {{String}}

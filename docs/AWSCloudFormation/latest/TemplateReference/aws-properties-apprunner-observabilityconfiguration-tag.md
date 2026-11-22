@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apprunner-observabilityconfiguration-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-apprunner-observabilityconfiguration-tag-key)" : {{String}},
   "[Value](#cfn-apprunner-observabilityconfiguration-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apprunner-observabilityconfiguration-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-apprunner-observabilityconfiguration-tag-key): {{String}}
   [Value](#cfn-apprunner-observabilityconfiguration-tag-value): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-agent-agentknowledgebase-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-bedrock-agent-agentknowledgebase-description)" : {{String}},
   "[KnowledgeBaseId](#cfn-bedrock-agent-agentknowledgebase-knowledgebaseid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-agent-agentknowledgebase-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-bedrock-agent-agentknowledgebase-description): {{String}}
   [KnowledgeBaseId](#cfn-bedrock-agent-agentknowledgebase-knowledgebaseid): {{String}}
   [KnowledgeBaseState](#cfn-bedrock-agent-agentknowledgebase-knowledgebasestate): {{String}}

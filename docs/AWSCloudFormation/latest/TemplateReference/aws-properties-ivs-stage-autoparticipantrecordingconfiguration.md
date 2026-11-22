@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ivs-stage-autoparticipantrecordingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[HlsConfiguration](#cfn-ivs-stage-autoparticipantrecordingconfiguration-hlsconfiguration)" : {{HlsConfiguration}},
   "[MediaTypes](#cfn-ivs-stage-autoparticipantrecordingconfiguration-mediatypes)" : {{[ String, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ivs-stage-autoparticipantrecordingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [HlsConfiguration](#cfn-ivs-stage-autoparticipantrecordingconfiguration-hlsconfiguration): {{
     HlsConfiguration}}
   [MediaTypes](#cfn-ivs-stage-autoparticipantrecordingconfiguration-mediatypes): {{

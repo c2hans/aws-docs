@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-audiopid-syntax.json"></a>
 
-```
+```json
 {
   "[DolbyEDecode](#cfn-medialive-channel-audiopid-dolbyedecode)" : {{AudioDolbyEDecode}},
   "[Pid](#cfn-medialive-channel-audiopid-pid)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-audiopid-syntax.yaml"></a>
 
-```
+```yaml
   [DolbyEDecode](#cfn-medialive-channel-audiopid-dolbyedecode): {{
     AudioDolbyEDecode}}
   [Pid](#cfn-medialive-channel-audiopid-pid): {{Integer}}

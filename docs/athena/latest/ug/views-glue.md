@@ -23,7 +23,7 @@ The `SHOW VIEW JSON` option applies to Data Catalog views only and not to Athena
 
 The following example shows how a user of the `Definer` role creates the `orders_by_date` Data Catalog view. The example assumes that the `Definer` role has full `SELECT` permissions on the `orders` table in the `default` database.
 
-```
+```sql
 CREATE PROTECTED MULTI DIALECT VIEW orders_by_date
 SECURITY DEFINER
 AS
@@ -40,7 +40,7 @@ For syntax information, see [CREATE PROTECTED MULTI DIALECT VIEW](create-view.md
 
 After the view is created, the `Lake Formation` admin can grant `SELECT` permissions on the Data Catalog view to the `Invoker` principals. The `Invoker` principals can then query the view without having access to the underlying base tables referenced by the view. The following is an example `Invoker` query.
 
-```
+```sql
 SELECT * from orders_by_date where price > 5000
 ```
 

@@ -79,7 +79,7 @@ For AWS KMS keys, IAM Access Analyzer analyzes the key policies and grants appli
 
 When IAM Access Analyzer analyzes a KMS key it reads key metadata, such as the key policy and list of grants. If the key policy doesn't allow the IAM Access Analyzer role to read the key metadata, an Access Denied error finding is generated. For example, if the following example policy statement is the only policy applied to a key, it results in an Access denied error finding in IAM Access Analyzer.
 
-```
+```JSON
 {
     "Sid": "Allow access for Key Administrators",
     "Effect": "Allow",
@@ -93,7 +93,7 @@ When IAM Access Analyzer analyzes a KMS key it reads key metadata, such as the k
 
 Because this statement allows only the role named *Admin* from the AWS account 111122223333 to access the key, an Access Denied error finding is generated because IAM Access Analyzer isn't able to fully analyze the key. An error finding is displayed in red text in the **Findings** table. The finding looks similar to the following.
 
-```
+```JSON
 {
     "error": "ACCESS_DENIED",
     "id": "12345678-1234-abcd-dcba-111122223333",
@@ -107,7 +107,7 @@ Because this statement allows only the role named *Admin* from the AWS account 1
 
 When you create a KMS key, the permissions granted to access the key depend on how you create the key. If you receive an Access Denied error finding for a key resource, apply the following policy statement to the key resource to grant IAM Access Analyzer permission to access the key.
 
-```
+```JSON
 {
     "Sid": "Allow IAM Access Analyzer access to key metadata",
     "Effect": "Allow",

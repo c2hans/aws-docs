@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-environmentblueprintconfiguration-provisioningconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[LakeFormationConfiguration](#cfn-datazone-environmentblueprintconfiguration-provisioningconfiguration-lakeformationconfiguration)" : {{LakeFormationConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-environmentblueprintconfiguration-provisioningconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [LakeFormationConfiguration](#cfn-datazone-environmentblueprintconfiguration-provisioningconfiguration-lakeformationconfiguration): {{
     LakeFormationConfiguration}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-jwtvalidationconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AdditionalClaims](#cfn-elasticloadbalancingv2-listenerrule-jwtvalidationconfig-additionalclaims)" : {{[ JwtValidationActionAdditionalClaim, ... ]}},
   "[Issuer](#cfn-elasticloadbalancingv2-listenerrule-jwtvalidationconfig-issuer)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-jwtvalidationconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AdditionalClaims](#cfn-elasticloadbalancingv2-listenerrule-jwtvalidationconfig-additionalclaims): {{
     - JwtValidationActionAdditionalClaim}}
   [Issuer](#cfn-elasticloadbalancingv2-listenerrule-jwtvalidationconfig-issuer): {{String}}

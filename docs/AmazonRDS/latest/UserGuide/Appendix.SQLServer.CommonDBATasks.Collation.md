@@ -98,7 +98,7 @@ You can change the default collation at the database, table, or column level by 
 
 For example, the following query would change the default collation for the AccountName column to Mohawk\_100\_CI\_AS
 
-```
+```sql
 CREATE TABLE [dbo].[Account]
 	(
 	    [AccountID] [nvarchar](10) NOT NULL,

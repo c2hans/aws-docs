@@ -34,7 +34,7 @@ You can delete empty and nonempty vaults in Amazon Glacier (Amazon Glacier) usin
      ```
    + To get a list of Amazon Glacier vaults on the configured account, use the `list-vaults` command. Replace {{123456789012}} with your AWS account ID.
 
-     ```
+     ```cmd
      aws glacier list-vaults --account-id {{123456789012}}
      ```
    + To see the current configuration data for the AWS CLI, use the `aws configure list` command.

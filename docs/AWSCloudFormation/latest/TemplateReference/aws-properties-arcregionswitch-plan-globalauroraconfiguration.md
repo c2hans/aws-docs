@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-arcregionswitch-plan-globalauroraconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Behavior](#cfn-arcregionswitch-plan-globalauroraconfiguration-behavior)" : {{}},
   "[CrossAccountRole](#cfn-arcregionswitch-plan-globalauroraconfiguration-crossaccountrole)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-arcregionswitch-plan-globalauroraconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Behavior](#cfn-arcregionswitch-plan-globalauroraconfiguration-behavior): {{
     }}
   [CrossAccountRole](#cfn-arcregionswitch-plan-globalauroraconfiguration-crossaccountrole): {{String}}

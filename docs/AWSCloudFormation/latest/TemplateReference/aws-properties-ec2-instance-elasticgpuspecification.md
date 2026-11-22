@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-instance-elasticgpuspecification-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-ec2-instance-elasticgpuspecification-type)" : {{String}}
 }
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-instance-elasticgpuspecification-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-ec2-instance-elasticgpuspecification-type): {{String}}
 ```
 

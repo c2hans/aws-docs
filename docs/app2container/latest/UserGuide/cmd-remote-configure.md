@@ -43,7 +43,7 @@ The Linux `remote_hosts.json` file contains an array of Linux platform hosts, wi
 
 The following example shows a `remote_hosts.json` file for a Java application running on Linux.
 
-```
+```json
 {
         "10.10.10.10": {
                 "Fqdn": "",
@@ -70,7 +70,7 @@ The Windows `remote_hosts.json` file contains an array of Windows Server platfor
 
 The following example shows a `remote_hosts.json` file for a .NET application running on Windows Server.
 
-```
+```json
 {
         "10.10.10.10": {
                 "fqdn": "",

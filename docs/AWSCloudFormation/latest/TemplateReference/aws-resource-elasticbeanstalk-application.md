@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-elasticbeanstalk-application-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ElasticBeanstalk::Application",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-elasticbeanstalk-application-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ElasticBeanstalk::Application
 Properties:
   [ApplicationName](#cfn-elasticbeanstalk-application-applicationname): {{String}}
@@ -83,7 +83,7 @@ For more information about using the `Ref` function, see [`Ref`](https://docs.aw
 #### JSON
 <a name="aws-resource-elasticbeanstalk-application--examples----json"></a>
 
-```
+```json
 {
    "Type" : "AWS::ElasticBeanstalk::Application",
    "Properties" : {
@@ -96,7 +96,7 @@ For more information about using the `Ref` function, see [`Ref`](https://docs.aw
 #### YAML
 <a name="aws-resource-elasticbeanstalk-application--examples----yaml"></a>
 
-```
+```yaml
 Type: AWS::ElasticBeanstalk::Application
 Properties:
   ApplicationName: "SampleAWSElasticBeanstalkApplication"

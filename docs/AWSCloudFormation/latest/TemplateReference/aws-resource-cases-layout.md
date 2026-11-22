@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cases-layout-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Cases::Layout",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cases-layout-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Cases::Layout
 Properties:
   [Content](#cfn-cases-layout-content): {{

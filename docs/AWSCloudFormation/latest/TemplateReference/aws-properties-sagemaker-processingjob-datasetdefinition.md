@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-processingjob-datasetdefinition-syntax.json"></a>
 
-```
+```json
 {
   "[AthenaDatasetDefinition](#cfn-sagemaker-processingjob-datasetdefinition-athenadatasetdefinition)" : {{AthenaDatasetDefinition}},
   "[DataDistributionType](#cfn-sagemaker-processingjob-datasetdefinition-datadistributiontype)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-processingjob-datasetdefinition-syntax.yaml"></a>
 
-```
+```yaml
   [AthenaDatasetDefinition](#cfn-sagemaker-processingjob-datasetdefinition-athenadatasetdefinition): {{
     AthenaDatasetDefinition}}
   [DataDistributionType](#cfn-sagemaker-processingjob-datasetdefinition-datadistributiontype): {{String}}

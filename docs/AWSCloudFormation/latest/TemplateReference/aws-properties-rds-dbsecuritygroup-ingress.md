@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rds-dbsecuritygroup-ingress-syntax.json"></a>
 
-```
+```json
 {
   "[CIDRIP](#cfn-rds-dbsecuritygroup-ingress-cidrip)" : {{String}},
   "[EC2SecurityGroupId](#cfn-rds-dbsecuritygroup-ingress-ec2securitygroupid)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rds-dbsecuritygroup-ingress-syntax.yaml"></a>
 
-```
+```yaml
   [CIDRIP](#cfn-rds-dbsecuritygroup-ingress-cidrip): {{String}}
   [EC2SecurityGroupId](#cfn-rds-dbsecuritygroup-ingress-ec2securitygroupid): {{String}}
   [EC2SecurityGroupName](#cfn-rds-dbsecuritygroup-ingress-ec2securitygroupname): {{String}}
@@ -76,7 +76,7 @@ The following example specifies two security group ingress rules.
 #### JSON
 <a name="aws-properties-rds-dbsecuritygroup-ingress--examples--Specifying_an_ingress_rule--json"></a>
 
-```
+```json
 "DBSecurityGroupIngress":[
    {
       "EC2SecurityGroupId":"sg-b0ff1111",
@@ -92,7 +92,7 @@ The following example specifies two security group ingress rules.
 #### YAML
 <a name="aws-properties-rds-dbsecuritygroup-ingress--examples--Specifying_an_ingress_rule--yaml"></a>
 
-```
+```yaml
 DBSecurityGroupIngress:
   - EC2SecurityGroupId: sg-b0ff1111
     EC2SecurityGroupOwnerId: '111122223333'

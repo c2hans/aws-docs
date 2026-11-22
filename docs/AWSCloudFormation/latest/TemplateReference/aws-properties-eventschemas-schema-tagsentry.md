@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eventschemas-schema-tagsentry-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-eventschemas-schema-tagsentry-key)" : {{String}},
   "[Value](#cfn-eventschemas-schema-tagsentry-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eventschemas-schema-tagsentry-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-eventschemas-schema-tagsentry-key): {{String}}
   [Value](#cfn-eventschemas-schema-tagsentry-value): {{String}}
 ```

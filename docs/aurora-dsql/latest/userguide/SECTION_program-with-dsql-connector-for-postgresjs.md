@@ -49,7 +49,7 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/SECTION_pro
 ### Installation
 <a name="installation"></a>
 
-```
+```bash
 npm install @aws/aurora-dsql-postgresjs-connector
 # Postgres.js is a peer-dependency, so users must install it themselves
 npm install postgres
@@ -58,7 +58,7 @@ npm install postgres
 ### Basic Usage
 <a name="basic-usage"></a>
 
-```
+```typescript
 import { auroraDSQLPostgres } from '@aws/aurora-dsql-postgresjs-connector';
 
 const sql = auroraDSQLPostgres({
@@ -78,7 +78,7 @@ await sql.end();
 #### Using cluster ID instead of host
 <a name="using-cluster-id-instead-of-host"></a>
 
-```
+```typescript
 const sql = auroraDSQLPostgres({
   host: 'your-cluster-id',
   region: 'us-east-1',
@@ -90,7 +90,7 @@ const sql = auroraDSQLPostgres({
 ### Connection String
 <a name="connection-string"></a>
 
-```
+```typescript
 const sql = AuroraDSQLPostgres(
   'postgres://admin@your-cluster.dsql.us-east-1.on.aws'
 );
@@ -101,7 +101,7 @@ const result = await sql`SELECT current_timestamp`;
 ### Advanced Configuration
 <a name="advanced-configuration"></a>
 
-```
+```typescript
 import { fromNodeProviderChain } from '@aws-sdk/credential-providers';
 
 const sql = AuroraDSQLPostgres({

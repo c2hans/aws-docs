@@ -22,7 +22,7 @@ Use this function when you need to reference stack outputs across AWS accounts o
 ### JSON
 <a name="intrinsic-function-reference-getstackoutput-syntax.json"></a>
 
-```
+```json
 {
   "Fn::GetStackOutput": {
     "StackName": "{{stack-name}}",
@@ -38,7 +38,7 @@ Use this function when you need to reference stack outputs across AWS accounts o
 
 You can use the full function name:
 
-```
+```yaml
 Fn::GetStackOutput:
   StackName: {{stack-name}}
   OutputName: {{output-name}}
@@ -48,7 +48,7 @@ Fn::GetStackOutput:
 
 Alternatively, you can use the short form:
 
-```
+```yaml
 !GetStackOutput
   StackName: {{stack-name}}
   OutputName: {{output-name}}
@@ -59,7 +59,7 @@ Alternatively, you can use the short form:
 **Important**
 You can't use the short form of `!GetStackOutput` when it contains other short form functions such as `!Sub` or `!Ref` as parameter values. In that case, use the full function name:
 
-```
+```yaml
 # Do not use
 !GetStackOutput
   StackName: !Ref MyStackNameParam
@@ -106,7 +106,7 @@ The following example references the `VpcId` output from a stack named `Producer
 #### JSON
 <a name="intrinsic-function-reference-getstackoutput-example-same.json"></a>
 
-```
+```json
 {
   "Fn::GetStackOutput": {
     "StackName": "ProducerStack",
@@ -118,7 +118,7 @@ The following example references the `VpcId` output from a stack named `Producer
 #### YAML
 <a name="intrinsic-function-reference-getstackoutput-example-same.yaml"></a>
 
-```
+```yaml
 Fn::GetStackOutput:
   StackName: ProducerStack
   OutputName: VpcId
@@ -132,7 +132,7 @@ The following example references the `VpcId` output from `ProducerStack` deploye
 #### JSON
 <a name="intrinsic-function-reference-getstackoutput-example-cross-region.json"></a>
 
-```
+```json
 {
   "Fn::GetStackOutput": {
     "StackName": "ProducerStack",
@@ -145,7 +145,7 @@ The following example references the `VpcId` output from `ProducerStack` deploye
 #### YAML
 <a name="intrinsic-function-reference-getstackoutput-example-cross-region.yaml"></a>
 
-```
+```yaml
 Fn::GetStackOutput:
   StackName: ProducerStack
   OutputName: VpcId
@@ -160,7 +160,7 @@ The following example references the `VpcId` output from `ProducerStack` in acco
 #### JSON
 <a name="intrinsic-function-reference-getstackoutput-example-cross-account.json"></a>
 
-```
+```json
 {
   "Fn::GetStackOutput": {
     "StackName": "ProducerStack",
@@ -173,7 +173,7 @@ The following example references the `VpcId` output from `ProducerStack` in acco
 #### YAML
 <a name="intrinsic-function-reference-getstackoutput-example-cross-account.yaml"></a>
 
-```
+```yaml
 Fn::GetStackOutput:
   StackName: ProducerStack
   OutputName: VpcId
@@ -188,7 +188,7 @@ The following example references an output from a stack in a different account a
 #### JSON
 <a name="intrinsic-function-reference-getstackoutput-example-cross-account-region.json"></a>
 
-```
+```json
 {
   "Fn::GetStackOutput": {
     "StackName": "ProducerStack",
@@ -202,7 +202,7 @@ The following example references an output from a stack in a different account a
 #### YAML
 <a name="intrinsic-function-reference-getstackoutput-example-cross-account-region.yaml"></a>
 
-```
+```yaml
 Fn::GetStackOutput:
   StackName: ProducerStack
   OutputName: VpcId
@@ -215,7 +215,7 @@ Fn::GetStackOutput:
 
 When using the `RoleArn` parameter for cross-account references, the IAM role must have permission to describe stacks in the account that contains the referenced stack:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -235,7 +235,7 @@ For a more restrictive policy, scope the `Resource` to the specific stack ARN yo
 
 The role must have a trust policy that grants `AssumeRole` permissions to the consuming stack's execution role:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -272,7 +272,7 @@ See [Known limitations](#intrinsic-function-reference-getstackoutput-limitations
 
 For example, you can use `Ref` to pass a parameter value as the stack name:
 
-```
+```yaml
 Parameters:
   SourceStackName:
     Type: String

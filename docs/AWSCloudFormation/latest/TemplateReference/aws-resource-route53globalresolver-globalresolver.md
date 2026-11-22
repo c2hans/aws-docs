@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-route53globalresolver-globalresolver-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Route53GlobalResolver::GlobalResolver",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-route53globalresolver-globalresolver-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53GlobalResolver::GlobalResolver
 Properties:
   [ClientToken](#cfn-route53globalresolver-globalresolver-clienttoken): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-monitoringschedule-baselineconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ConstraintsResource](#cfn-sagemaker-monitoringschedule-baselineconfig-constraintsresource)" : {{ConstraintsResource}},
   "[StatisticsResource](#cfn-sagemaker-monitoringschedule-baselineconfig-statisticsresource)" : {{StatisticsResource}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-monitoringschedule-baselineconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ConstraintsResource](#cfn-sagemaker-monitoringschedule-baselineconfig-constraintsresource): {{
     ConstraintsResource}}
   [StatisticsResource](#cfn-sagemaker-monitoringschedule-baselineconfig-statisticsresource): {{

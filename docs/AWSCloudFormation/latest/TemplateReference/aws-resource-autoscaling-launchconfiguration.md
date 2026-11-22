@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-autoscaling-launchconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AutoScaling::LaunchConfiguration",
   "Properties" : {
@@ -52,7 +52,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-autoscaling-launchconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AutoScaling::LaunchConfiguration
 Properties:
   [AssociatePublicIpAddress](#cfn-autoscaling-launchconfiguration-associatepublicipaddress): {{Boolean}}
@@ -251,7 +251,7 @@ CloudFormation supports parameters from the AWS Systems Manager Parameter Store.
 #### JSON
 <a name="aws-resource-autoscaling-launchconfiguration--examples--Amazon_EBS-backed_AMI_and_defined_block_device_mappings--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Parameters": {
@@ -303,7 +303,7 @@ CloudFormation supports parameters from the AWS Systems Manager Parameter Store.
 #### YAML
 <a name="aws-resource-autoscaling-launchconfiguration--examples--Amazon_EBS-backed_AMI_and_defined_block_device_mappings--yaml"></a>
 
-```
+```yaml
 ---
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:
@@ -349,7 +349,7 @@ In this example, the `ImageId` property references the latest Amazon Linux AMI (
 #### JSON
 <a name="aws-resource-autoscaling-launchconfiguration--examples--Instance_store-backed_AMI_with_Spot_price_and_IAM_role--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Parameters": {
@@ -383,7 +383,7 @@ In this example, the `ImageId` property references the latest Amazon Linux AMI (
 #### YAML
 <a name="aws-resource-autoscaling-launchconfiguration--examples--Instance_store-backed_AMI_with_Spot_price_and_IAM_role--yaml"></a>
 
-```
+```yaml
 ---
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:
@@ -426,7 +426,7 @@ For more performance tips, see [Amazon EBS volume performance on Linux instances
 #### JSON
 <a name="aws-resource-autoscaling-launchconfiguration--examples--Provisioned_IOPS_EBS-optimized_volume_with_key-pair_name_and_user_data--json"></a>
 
-```
+```json
 {
   "Resources":{
     "myLaunchConfig":{
@@ -449,7 +449,7 @@ For more performance tips, see [Amazon EBS volume performance on Linux instances
 #### YAML
 <a name="aws-resource-autoscaling-launchconfiguration--examples--Provisioned_IOPS_EBS-optimized_volume_with_key-pair_name_and_user_data--yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   myLaunchConfig:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-privacybudgettemplate-parameters-syntax.json"></a>
 
-```
+```json
 {
   "[BudgetParameters](#cfn-cleanrooms-privacybudgettemplate-parameters-budgetparameters)" : {{[ BudgetParameter, ... ]}},
   "[Epsilon](#cfn-cleanrooms-privacybudgettemplate-parameters-epsilon)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-privacybudgettemplate-parameters-syntax.yaml"></a>
 
-```
+```yaml
   [BudgetParameters](#cfn-cleanrooms-privacybudgettemplate-parameters-budgetparameters): {{
     - BudgetParameter}}
   [Epsilon](#cfn-cleanrooms-privacybudgettemplate-parameters-epsilon): {{Integer}}

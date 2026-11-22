@@ -27,7 +27,7 @@ The following AWS CLI example puts a lifecycle configuration policy on an Outpos
 
 1. Save the lifecycle configuration policy to a JSON file. In this example, the file is named `lifecycle1.json`.
 
-   ```
+   ```JSON
    {
        "Rules": [
            {
@@ -69,7 +69,7 @@ The following AWS CLI example puts a lifecycle configuration policy on an Outpos
 
 The following SDK for Java example puts a lifecycle configuration on an Outposts bucket. This lifecycle configuration specifies that all objects that have the flagged prefix (`{{myprefix}}`) and tags expire after 10 days. To use this example, replace each `{{user input placeholder}}` with your own information. For more information, see [PutBucketLifecycleConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutBucketLifecycleConfiguration.html) in the *Amazon Simple Storage Service API Reference*.
 
-```
+```Java
 import com.amazonaws.services.s3control.model.*;
 
 public void putBucketLifecycleConfiguration(String bucketArn) {
@@ -127,7 +127,7 @@ aws s3control get-bucket-lifecycle-configuration --account-id {{123456789012}} -
 
 The following SDK for Java example gets a lifecycle configuration for an Outposts bucket. For more information, see [GetBucketLifecycleConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetBucketLifecycleConfiguration.html) in the *Amazon Simple Storage Service API Reference*.
 
-```
+```Java
 import com.amazonaws.services.s3control.model.*;
 
 public void getBucketLifecycleConfiguration(String bucketArn) {

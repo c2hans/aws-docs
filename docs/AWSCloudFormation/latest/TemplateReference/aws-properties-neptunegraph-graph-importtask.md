@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-neptunegraph-graph-importtask-syntax.json"></a>
 
-```
+```json
 {
   "[BlankNodeHandling](#cfn-neptunegraph-graph-importtask-blanknodehandling)" : {{String}},
   "[FailOnError](#cfn-neptunegraph-graph-importtask-failonerror)" : {{Boolean}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-neptunegraph-graph-importtask-syntax.yaml"></a>
 
-```
+```yaml
   [BlankNodeHandling](#cfn-neptunegraph-graph-importtask-blanknodehandling): {{String}}
   [FailOnError](#cfn-neptunegraph-graph-importtask-failonerror): {{Boolean}}
   [Format](#cfn-neptunegraph-graph-importtask-format): {{String}}

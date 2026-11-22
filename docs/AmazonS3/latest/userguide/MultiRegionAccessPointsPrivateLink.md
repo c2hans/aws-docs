@@ -33,7 +33,7 @@ As mentioned previously, you also must make sure that the Multi-Region Access Po
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -58,7 +58,7 @@ And of course, the individual buckets would each need a policy to support access
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
    "Statement": [

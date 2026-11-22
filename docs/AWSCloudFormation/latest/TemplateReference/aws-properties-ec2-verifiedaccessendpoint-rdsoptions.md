@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-verifiedaccessendpoint-rdsoptions-syntax.json"></a>
 
-```
+```json
 {
   "[Port](#cfn-ec2-verifiedaccessendpoint-rdsoptions-port)" : {{Integer}},
   "[Protocol](#cfn-ec2-verifiedaccessendpoint-rdsoptions-protocol)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-verifiedaccessendpoint-rdsoptions-syntax.yaml"></a>
 
-```
+```yaml
   [Port](#cfn-ec2-verifiedaccessendpoint-rdsoptions-port): {{Integer}}
   [Protocol](#cfn-ec2-verifiedaccessendpoint-rdsoptions-protocol): {{String}}
   [RdsDbClusterArn](#cfn-ec2-verifiedaccessendpoint-rdsoptions-rdsdbclusterarn): {{String}}

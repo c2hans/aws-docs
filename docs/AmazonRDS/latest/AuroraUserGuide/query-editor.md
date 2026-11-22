@@ -31,7 +31,7 @@ The following policy provides the minimum required permissions for a user to acc
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

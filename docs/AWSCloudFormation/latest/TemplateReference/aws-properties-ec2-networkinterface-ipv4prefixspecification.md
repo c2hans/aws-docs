@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-networkinterface-ipv4prefixspecification-syntax.json"></a>
 
-```
+```json
 {
   "[Ipv4Prefix](#cfn-ec2-networkinterface-ipv4prefixspecification-ipv4prefix)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-networkinterface-ipv4prefixspecification-syntax.yaml"></a>
 
-```
+```yaml
   [Ipv4Prefix](#cfn-ec2-networkinterface-ipv4prefixspecification-ipv4prefix): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-datapreplistaggregationfunction-syntax.json"></a>
 
-```
+```json
 {
   "[Distinct](#cfn-quicksight-dataset-datapreplistaggregationfunction-distinct)" : {{Boolean}},
   "[InputColumnName](#cfn-quicksight-dataset-datapreplistaggregationfunction-inputcolumnname)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-datapreplistaggregationfunction-syntax.yaml"></a>
 
-```
+```yaml
   [Distinct](#cfn-quicksight-dataset-datapreplistaggregationfunction-distinct): {{Boolean}}
   [InputColumnName](#cfn-quicksight-dataset-datapreplistaggregationfunction-inputcolumnname): {{String}}
   [Separator](#cfn-quicksight-dataset-datapreplistaggregationfunction-separator): {{String}}

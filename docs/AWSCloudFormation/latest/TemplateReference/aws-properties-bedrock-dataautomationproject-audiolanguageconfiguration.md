@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-dataautomationproject-audiolanguageconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[GenerativeOutputLanguage](#cfn-bedrock-dataautomationproject-audiolanguageconfiguration-generativeoutputlanguage)" : {{String}},
   "[IdentifyMultipleLanguages](#cfn-bedrock-dataautomationproject-audiolanguageconfiguration-identifymultiplelanguages)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-dataautomationproject-audiolanguageconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [GenerativeOutputLanguage](#cfn-bedrock-dataautomationproject-audiolanguageconfiguration-generativeoutputlanguage): {{String}}
   [IdentifyMultipleLanguages](#cfn-bedrock-dataautomationproject-audiolanguageconfiguration-identifymultiplelanguages): {{Boolean}}
   [InputLanguages](#cfn-bedrock-dataautomationproject-audiolanguageconfiguration-inputlanguages): {{

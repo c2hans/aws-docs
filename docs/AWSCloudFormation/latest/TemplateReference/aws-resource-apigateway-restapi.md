@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigateway-restapi-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGateway::RestApi",
   "Properties" : {
@@ -48,7 +48,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigateway-restapi-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGateway::RestApi
 Properties:
   [ApiKeySourceType](#cfn-apigateway-restapi-apikeysourcetype): {{String}}
@@ -236,7 +236,7 @@ The following example creates an API Gateway RestApi resource based on an OpenAP
 #### JSON
 <a name="aws-resource-apigateway-restapi--examples--Based_on_OpenAPI_specification--json"></a>
 
-```
+```json
 {
     "MyRestApi": {
         "Type": "AWS::ApiGateway::RestApi",
@@ -254,7 +254,7 @@ The following example creates an API Gateway RestApi resource based on an OpenAP
 #### YAML
 <a name="aws-resource-apigateway-restapi--examples--Based_on_OpenAPI_specification--yaml"></a>
 
-```
+```yaml
 MyRestApi:
   Type: 'AWS::ApiGateway::RestApi'
   Properties:
@@ -272,7 +272,7 @@ The following example creates an API Gateway RestApi resource with an endpoint t
 #### JSON
 <a name="aws-resource-apigateway-restapi--examples--With_endpoint_type--json"></a>
 
-```
+```json
 {
   "Parameters": {
     "apiName": {
@@ -305,7 +305,7 @@ The following example creates an API Gateway RestApi resource with an endpoint t
 #### YAML
 <a name="aws-resource-apigateway-restapi--examples--With_endpoint_type--yaml"></a>
 
-```
+```yaml
 Parameters:
   apiName:
     Type: String
@@ -329,7 +329,7 @@ The following example imports an API Gateway RestApi resource with an endpoint t
 #### JSON
 <a name="aws-resource-apigateway-restapi--examples--With_REGIONAL_endpoint_type--json"></a>
 
-```
+```json
 {
     "Resources": {
         "RestApi": {
@@ -364,7 +364,7 @@ The following example imports an API Gateway RestApi resource with an endpoint t
 #### YAML
 <a name="aws-resource-apigateway-restapi--examples--With_REGIONAL_endpoint_type--yaml"></a>
 
-```
+```yaml
 Resources :
     RestApi :
         Type : AWS::ApiGateway::RestApi
@@ -393,7 +393,7 @@ The following example creates an API Gateway RestApi resource with ApiKeySourceT
 #### JSON
 <a name="aws-resource-apigateway-restapi--examples--With_ApiKeySourceType--json"></a>
 
-```
+```json
 {
     "Parameters": {
         "apiKeySourceType": {
@@ -442,7 +442,7 @@ The following example creates an API Gateway RestApi resource with ApiKeySourceT
 #### YAML
 <a name="aws-resource-apigateway-restapi--examples--With_ApiKeySourceType--yaml"></a>
 
-```
+```yaml
 Parameters:
     apiKeySourceType:
         Type: String

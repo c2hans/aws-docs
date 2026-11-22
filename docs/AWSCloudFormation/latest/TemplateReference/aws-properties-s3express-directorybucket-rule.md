@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3express-directorybucket-rule-syntax.json"></a>
 
-```
+```json
 {
   "[AbortIncompleteMultipartUpload](#cfn-s3express-directorybucket-rule-abortincompletemultipartupload)" : {{AbortIncompleteMultipartUpload}},
   "[ExpirationInDays](#cfn-s3express-directorybucket-rule-expirationindays)" : {{Integer}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3express-directorybucket-rule-syntax.yaml"></a>
 
-```
+```yaml
   [AbortIncompleteMultipartUpload](#cfn-s3express-directorybucket-rule-abortincompletemultipartupload): {{
     AbortIncompleteMultipartUpload}}
   [ExpirationInDays](#cfn-s3express-directorybucket-rule-expirationindays): {{Integer}}
@@ -107,7 +107,7 @@ The following example template shows an S3 directory bucket with a lifecycle con
 #### JSON
 <a name="aws-properties-s3express-directorybucket-rule--examples--Manage_the_lifecycle_for_S3_objects--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -146,7 +146,7 @@ The following example template shows an S3 directory bucket with a lifecycle con
 #### YAML
 <a name="aws-properties-s3express-directorybucket-rule--examples--Manage_the_lifecycle_for_S3_objects--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   S3ExpressBucket:

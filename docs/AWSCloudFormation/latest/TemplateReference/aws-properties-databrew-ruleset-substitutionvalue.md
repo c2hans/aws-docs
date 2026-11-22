@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-databrew-ruleset-substitutionvalue-syntax.json"></a>
 
-```
+```json
 {
   "[Value](#cfn-databrew-ruleset-substitutionvalue-value)" : {{String}},
   "[ValueReference](#cfn-databrew-ruleset-substitutionvalue-valuereference)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-databrew-ruleset-substitutionvalue-syntax.yaml"></a>
 
-```
+```yaml
   [Value](#cfn-databrew-ruleset-substitutionvalue-value): {{String}}
   [ValueReference](#cfn-databrew-ruleset-substitutionvalue-valuereference): {{String}}
 ```

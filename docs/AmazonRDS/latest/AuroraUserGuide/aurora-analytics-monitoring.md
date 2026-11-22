@@ -103,7 +103,7 @@ All byte columns report raw bytes, so wrap them in `pg_size_pretty()` for readab
 
 To find queries reading from Amazon S3 instead of the cache, run the following query.
 
-```
+```SQL
 -- Optional: enable the detailed columns, such as CPU time
 SET aurora_analytics.track_detailed_metrics = true;
 
@@ -126,7 +126,7 @@ Interpret the results as follows:
 
 To attribute memory, threads, and spill to a backend, run the following query.
 
-```
+```SQL
 SELECT pid,
        pg_size_pretty(current_memory_usage) AS mem_used,
        active_threads,
@@ -140,7 +140,7 @@ Join the `pid` column to `pg_stat_activity` to see which query each backend is r
 
 To view instance-wide Amazon S3 and cache activity, run the following query.
 
-```
+```SQL
 SELECT s3_head_request_count,
        s3_get_request_count,
        pg_size_pretty(s3_cache_hit_bytes) AS cache_hit,
@@ -150,13 +150,13 @@ FROM aurora_analytics_instance_metrics();
 
 To check cache size, run the following query.
 
-```
+```SQL
 SELECT pg_size_pretty(aurora_analytics_cache_size()) AS cache_size;
 ```
 
 To find active analytical queries, run the following query.
 
-```
+```SQL
 WITH analytics_tables AS (
     SELECT c.relname
     FROM pg_foreign_table ft
@@ -195,13 +195,13 @@ Long-running analytical queries on reader instances hold an xmin snapshot open, 
 
 Set `statement_timeout` to bound how long a single query can run. Like other PostgreSQL settings, you can set it at the session, role, database, or cluster parameter group level; use the lowest level that fits. Set it per session for a single connection.
 
-```
+```SQL
 SET statement_timeout = 'XX';
 ```
 
 Or set it as a default for the analytics role.
 
-```
+```SQL
 ALTER ROLE analytics_user SET statement_timeout = 'XX';
 ```
 
@@ -256,7 +256,7 @@ Messages go to the PostgreSQL error log. Retrieve it in one of three ways:
 + **Amazon CloudWatch Logs** – Available when log export is configured for the DB cluster, which also gives you retention and querying.
 + **AWS Command Line Interface (AWS CLI)** – Run the following command:
 
-  ```
+  ```bash
   aws rds download-db-log-file-portion \
     --db-instance-identifier <instance-id> \
     --log-file-name error/postgresql.log \

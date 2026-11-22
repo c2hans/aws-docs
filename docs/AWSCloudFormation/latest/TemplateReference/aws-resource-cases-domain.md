@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cases-domain-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Cases::Domain",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cases-domain-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Cases::Domain
 Properties:
   [Name](#cfn-cases-domain-name): {{String}}

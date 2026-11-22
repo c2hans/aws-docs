@@ -80,7 +80,7 @@ For information about the errors that are common to all actions, see [Common Err
 
 Before generating a report, you must grant the EC2 Declarative Policies principal access to the Amazon S3 bucket where the report will be stored. To do this, attach the following policy to the bucket. Remember to replace *amzn-s3-demo-bucket* in the policy with your actual S3 bucket name, and *identity\_ARN* with the [IAM identity](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns) used to call the `StartDeclarativePoliciesReport` API. The statement in the `Condition` element ensures that the service can call the operation on your behalf using the credentials used to call the `StartDeclarativePoliciesReport` API.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [{

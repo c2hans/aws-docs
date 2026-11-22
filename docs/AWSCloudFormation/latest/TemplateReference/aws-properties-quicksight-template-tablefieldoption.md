@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-tablefieldoption-syntax.json"></a>
 
-```
+```json
 {
   "[CustomLabel](#cfn-quicksight-template-tablefieldoption-customlabel)" : {{String}},
   "[FieldId](#cfn-quicksight-template-tablefieldoption-fieldid)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-tablefieldoption-syntax.yaml"></a>
 
-```
+```yaml
   [CustomLabel](#cfn-quicksight-template-tablefieldoption-customlabel): {{String}}
   [FieldId](#cfn-quicksight-template-tablefieldoption-fieldid): {{String}}
   [URLStyling](#cfn-quicksight-template-tablefieldoption-urlstyling): {{

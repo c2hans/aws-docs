@@ -22,7 +22,7 @@ This policy does not allow any actions. Use this policy in combination with othe
 In the following example, the policy denies requests where the values for `aws:TagKeys` in the request do not include the prefix **key1**. The request context can have multiple values, but because of the `ForAllValues` condition set operator, all the tag key values in the request context must start with the prefix **key1**.
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -58,7 +58,7 @@ The following table shows how AWS evaluates this policy based on the condition k
 In the following example, the policy denies requests where the values for `aws:TagKeys` in the request do not include the prefix **key1** or **key2**. The request context can have multiple values, but because of the `ForAllValues` condition set operator, all the tag key values in the request context must start with the prefix **key1** or **key2**.
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -107,7 +107,7 @@ This policy does not allow any actions. Use this policy in combination with othe
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

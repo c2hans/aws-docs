@@ -21,7 +21,7 @@ The `codewhisperer` prefix is a legacy name from a service that merged with Amaz
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -157,7 +157,7 @@ For new administrators of Amazon Q Developer, use the following policy:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -331,7 +331,7 @@ For legacy Amazon CodeWhisperer profiles, the following policy will enable an IA
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -490,7 +490,7 @@ In the following example, replace {{account number}} with your AWS account numbe
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -587,7 +587,7 @@ In order to access the Amazon Q Developer console, administrators also need the 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -647,7 +647,7 @@ In order to access the Amazon Q Developer console, administrators also need the 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -675,7 +675,7 @@ In order to access the Amazon Q Developer console, administrators also need the 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

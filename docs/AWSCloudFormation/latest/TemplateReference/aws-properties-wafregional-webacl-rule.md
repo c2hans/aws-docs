@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafregional-webacl-rule-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-wafregional-webacl-rule-action)" : {{Action}},
   "[Priority](#cfn-wafregional-webacl-rule-priority)" : {{Integer}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafregional-webacl-rule-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-wafregional-webacl-rule-action): {{
     Action}}
   [Priority](#cfn-wafregional-webacl-rule-priority): {{Integer}}

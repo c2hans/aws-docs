@@ -59,7 +59,7 @@ If you use an email account that you do not check regularly, you might miss an i
 **To find instances scheduled for retirement**
 Use the following [describe-instance-status](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-status.html) command. Repeat in each Region where you have running instances.
 
-```
+```bash
 aws ec2 describe-instance-status --filters Name=event.code,Values=instance-retirement
 ```
 
@@ -69,7 +69,7 @@ aws ec2 describe-instance-status --filters Name=event.code,Values=instance-retir
 **To find instances scheduled for retirement**
 Use the [Get-EC2InstanceStatus](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceStatus.html) cmdlet. Repeat in each Region where you have running instances.
 
-```
+```powershell
 Get-EC2InstanceStatus -Filter @{Name="event.code"; Values="instance-retirement"}
 ```
 

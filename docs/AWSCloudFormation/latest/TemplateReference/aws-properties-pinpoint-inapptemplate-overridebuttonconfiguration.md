@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pinpoint-inapptemplate-overridebuttonconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ButtonAction](#cfn-pinpoint-inapptemplate-overridebuttonconfiguration-buttonaction)" : {{String}},
   "[Link](#cfn-pinpoint-inapptemplate-overridebuttonconfiguration-link)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pinpoint-inapptemplate-overridebuttonconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ButtonAction](#cfn-pinpoint-inapptemplate-overridebuttonconfiguration-buttonaction): {{String}}
   [Link](#cfn-pinpoint-inapptemplate-overridebuttonconfiguration-link): {{String}}
 ```

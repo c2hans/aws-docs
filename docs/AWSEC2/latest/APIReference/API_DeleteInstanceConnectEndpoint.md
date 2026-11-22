@@ -50,7 +50,7 @@ This example deletes the specified EC2 Instance Connect Endpoint.
 #### Sample Request
 <a name="API_DeleteInstanceConnectEndpoint_Example_1_Request"></a>
 
-```
+```https
 https://ec2.amazonaws.com/?Action=DeleteInstanceConnectEndpoint
 &InstanceConnectEndpointId=eice-0123456789example
 &AUTHPARAMS
@@ -59,7 +59,7 @@ https://ec2.amazonaws.com/?Action=DeleteInstanceConnectEndpoint
 #### Sample Response
 <a name="API_DeleteInstanceConnectEndpoint_Example_1_Response"></a>
 
-```
+```https
 <DeleteInstanceConnectEndpointResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
   <requestId>d732c12a-2f0c-49b4-b2a9-f2922e5f5635</requestId>
   <instanceConnectEndpoint>

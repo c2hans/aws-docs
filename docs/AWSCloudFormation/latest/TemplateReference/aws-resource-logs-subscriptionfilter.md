@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-logs-subscriptionfilter-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Logs::SubscriptionFilter",
   "Properties" : {
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-logs-subscriptionfilter-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Logs::SubscriptionFilter
 Properties:
   [ApplyOnTransformedLogs](#cfn-logs-subscriptionfilter-applyontransformedlogs): {{Boolean}}
@@ -147,7 +147,7 @@ The following example sends log events that are associated with the `Root` user 
 #### JSON
 <a name="aws-resource-logs-subscriptionfilter--examples--Create_a_Subscription_Filter--json"></a>
 
-```
+```json
 "SubscriptionFilter" : {
   "Type" : "AWS::Logs::SubscriptionFilter",
   "Properties" : {
@@ -164,7 +164,7 @@ The following example sends log events that are associated with the `Root` user 
 #### YAML
 <a name="aws-resource-logs-subscriptionfilter--examples--Create_a_Subscription_Filter--yaml"></a>
 
-```
+```yaml
 SubscriptionFilter:
   Type: AWS::Logs::SubscriptionFilter
   Properties:

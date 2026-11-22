@@ -56,7 +56,7 @@ For more information, see the following resources:
 
 Add the following two policy statements to the key policy of the customer managed key, replacing the example ARN with the ARN of the appropriate service-linked role that is allowed access to the key. In this example, the policy sections give the service-linked role named **AWSServiceRoleForAutoScaling** permissions to use the customer managed key.
 
-```
+```json
 {
    "Sid": "Allow service-linked role use of the customer managed key",
    "Effect": "Allow",
@@ -76,7 +76,7 @@ Add the following two policy statements to the key policy of the customer manage
 }
 ```
 
-```
+```json
 {
    "Sid": "Allow attachment of persistent resources",
    "Effect": "Allow",
@@ -106,7 +106,7 @@ There are two steps that must be completed in the following order:
 
 1. First, add the following two policy statements to the customer managed key's key policy. Replace the example ARN with the ARN of the other account, making sure to replace {{111122223333}} with the actual account ID of the AWS account that you want to create the Auto Scaling group in. This allows you to give an IAM user or role in the specified account permission to create a grant for the key using the CLI command that follows. However, this does not by itself give any users access to the key.
 
-   ```
+   ```json
    {
       "Sid": "Allow external account {{111122223333}} use of the customer managed key",
       "Effect": "Allow",
@@ -126,7 +126,7 @@ There are two steps that must be completed in the following order:
    }
    ```
 
-   ```
+   ```json
    {
       "Sid": "Allow attachment of persistent resources in external account {{111122223333}}",
       "Effect": "Allow",
@@ -163,7 +163,7 @@ There are two steps that must be completed in the following order:
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

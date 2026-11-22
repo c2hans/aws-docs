@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobqueue-jobstatetimelimitaction-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-batch-jobqueue-jobstatetimelimitaction-action)" : {{String}},
   "[MaxTimeSeconds](#cfn-batch-jobqueue-jobstatetimelimitaction-maxtimeseconds)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobqueue-jobstatetimelimitaction-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-batch-jobqueue-jobstatetimelimitaction-action): {{String}}
   [MaxTimeSeconds](#cfn-batch-jobqueue-jobstatetimelimitaction-maxtimeseconds): {{Integer}}
   [Reason](#cfn-batch-jobqueue-jobstatetimelimitaction-reason): {{String}}

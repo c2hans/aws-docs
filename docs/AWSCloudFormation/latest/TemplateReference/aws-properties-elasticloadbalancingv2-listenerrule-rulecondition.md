@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-rulecondition-syntax.json"></a>
 
-```
+```json
 {
   "[Field](#cfn-elasticloadbalancingv2-listenerrule-rulecondition-field)" : {{String}},
   "[HostHeaderConfig](#cfn-elasticloadbalancingv2-listenerrule-rulecondition-hostheaderconfig)" : {{HostHeaderConfig}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-rulecondition-syntax.yaml"></a>
 
-```
+```yaml
   [Field](#cfn-elasticloadbalancingv2-listenerrule-rulecondition-field): {{String}}
   [HostHeaderConfig](#cfn-elasticloadbalancingv2-listenerrule-rulecondition-hostheaderconfig): {{
     HostHeaderConfig}}

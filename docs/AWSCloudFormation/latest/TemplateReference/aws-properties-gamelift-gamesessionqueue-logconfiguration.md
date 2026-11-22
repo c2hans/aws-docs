@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-gamesessionqueue-logconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DeliveryDestinations](#cfn-gamelift-gamesessionqueue-logconfiguration-deliverydestinations)" : {{[ DeliveryDestination, ... ]}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-gamesessionqueue-logconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DeliveryDestinations](#cfn-gamelift-gamesessionqueue-logconfiguration-deliverydestinations): {{
     - DeliveryDestination}}
 ```

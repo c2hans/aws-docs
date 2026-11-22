@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-dataautomationproject-audiooverrideconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[LanguageConfiguration](#cfn-bedrock-dataautomationproject-audiooverrideconfiguration-languageconfiguration)" : {{AudioLanguageConfiguration}},
   "[ModalityProcessing](#cfn-bedrock-dataautomationproject-audiooverrideconfiguration-modalityprocessing)" : {{ModalityProcessingConfiguration}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-dataautomationproject-audiooverrideconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [LanguageConfiguration](#cfn-bedrock-dataautomationproject-audiooverrideconfiguration-languageconfiguration): {{
     AudioLanguageConfiguration}}
   [ModalityProcessing](#cfn-bedrock-dataautomationproject-audiooverrideconfiguration-modalityprocessing): {{

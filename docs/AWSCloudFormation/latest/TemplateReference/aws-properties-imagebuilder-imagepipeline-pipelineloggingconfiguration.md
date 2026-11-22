@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-imagepipeline-pipelineloggingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ImageLogGroupName](#cfn-imagebuilder-imagepipeline-pipelineloggingconfiguration-imageloggroupname)" : {{String}},
   "[PipelineLogGroupName](#cfn-imagebuilder-imagepipeline-pipelineloggingconfiguration-pipelineloggroupname)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-imagepipeline-pipelineloggingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ImageLogGroupName](#cfn-imagebuilder-imagepipeline-pipelineloggingconfiguration-imageloggroupname): {{String}}
   [PipelineLogGroupName](#cfn-imagebuilder-imagepipeline-pipelineloggingconfiguration-pipelineloggroupname): {{String}}
 ```

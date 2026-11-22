@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iotfleetwise-statetemplate-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoTFleetWise::StateTemplate",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iotfleetwise-statetemplate-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoTFleetWise::StateTemplate
 Properties:
   [DataExtraDimensions](#cfn-iotfleetwise-statetemplate-dataextradimensions): {{

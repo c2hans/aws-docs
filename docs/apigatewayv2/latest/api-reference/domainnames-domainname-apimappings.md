@@ -75,7 +75,7 @@ Creates an API mapping.
 #### POST schema
 <a name="domainnames-domainname-apimappings-request-body-post-example"></a>
 
-```
+```json
 {
   "apiMappingKey": "string",
   "apiId": "string",
@@ -89,7 +89,7 @@ Creates an API mapping.
 #### ApiMappings schema
 <a name="domainnames-domainname-apimappings-response-body-apimappings-example"></a>
 
-```
+```json
 {
   "items": [
     {
@@ -106,7 +106,7 @@ Creates an API mapping.
 #### ApiMapping schema
 <a name="domainnames-domainname-apimappings-response-body-apimapping-example"></a>
 
-```
+```json
 {
   "apiMappingId": "string",
   "apiMappingKey": "string",
@@ -118,7 +118,7 @@ Creates an API mapping.
 #### BadRequestException schema
 <a name="domainnames-domainname-apimappings-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -127,7 +127,7 @@ Creates an API mapping.
 #### NotFoundException schema
 <a name="domainnames-domainname-apimappings-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -137,7 +137,7 @@ Creates an API mapping.
 #### ConflictException schema
 <a name="domainnames-domainname-apimappings-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -146,7 +146,7 @@ Creates an API mapping.
 #### LimitExceededException schema
 <a name="domainnames-domainname-apimappings-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

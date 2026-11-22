@@ -20,7 +20,7 @@ If you perform an action in an AWS service that generates a bearer token for you
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

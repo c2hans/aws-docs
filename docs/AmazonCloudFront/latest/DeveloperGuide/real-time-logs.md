@@ -574,7 +574,7 @@ To use the following IAM role trust policy, replace {{111122223333}} with your A
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -605,7 +605,7 @@ To use the following policy, replace {{arn:aws:kinesis:us-east-2:123456789012:st
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -636,7 +636,7 @@ To use the following policy, replace {{arn:aws:kinesis:us-east-2:123456789012:st
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

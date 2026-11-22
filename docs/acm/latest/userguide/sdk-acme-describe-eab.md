@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-acme-describe-e
 
 The following example shows how to use the [DescribeAcmeExternalAccountBinding](https://docs.aws.amazon.com/acm/latest/APIReference/API_DescribeAcmeExternalAccountBinding.html) function.
 
-```
+```java
 package com.amazonaws.samples;
 
 import com.amazonaws.services.certificatemanager.AWSCertificateManagerClientBuilder;

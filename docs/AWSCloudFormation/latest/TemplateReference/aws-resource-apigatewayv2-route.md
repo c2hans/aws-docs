@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigatewayv2-route-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGatewayV2::Route",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigatewayv2-route-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGatewayV2::Route
 Properties:
   [ApiId](#cfn-apigatewayv2-route-apiid): {{String}}
@@ -170,7 +170,7 @@ The following example creates a `route` resource called `MyRoute` for an HTTP AP
 #### JSON
 <a name="aws-resource-apigatewayv2-route--examples--HTTP_API_route_creation_example--json"></a>
 
-```
+```json
 "MyRoute": {
     "Type": "AWS::ApiGatewayV2::Route",
         "Properties": {
@@ -196,7 +196,7 @@ The following example creates a `route` resource called `MyRoute` for an HTTP AP
 #### YAML
 <a name="aws-resource-apigatewayv2-route--examples--HTTP_API_route_creation_example--yaml"></a>
 
-```
+```yaml
 MyRoute:
   Type: AWS::ApiGatewayV2::Route
   Properties:
@@ -216,7 +216,7 @@ The following example creates a `route` resource called `MyRoute` for a WebSocke
 #### JSON
 <a name="aws-resource-apigatewayv2-route--examples--WebSocket_API_route_creation_example--json"></a>
 
-```
+```json
 {
     "MyRoute": {
         "Type": "AWS::ApiGatewayV2::Route",
@@ -248,7 +248,7 @@ The following example creates a `route` resource called `MyRoute` for a WebSocke
 #### YAML
 <a name="aws-resource-apigatewayv2-route--examples--WebSocket_API_route_creation_example--yaml"></a>
 
-```
+```yaml
 MyRoute:
   Type: 'AWS::ApiGatewayV2::Route'
   DependsOn:

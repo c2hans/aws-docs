@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-route53recoverycontrol-safetyrule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Route53RecoveryControl::SafetyRule",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-route53recoverycontrol-safetyrule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53RecoveryControl::SafetyRule
 Properties:
   [AssertionRule](#cfn-route53recoverycontrol-safetyrule-assertionrule): {{

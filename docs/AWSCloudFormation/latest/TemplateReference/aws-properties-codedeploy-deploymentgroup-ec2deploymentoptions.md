@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codedeploy-deploymentgroup-ec2deploymentoptions-syntax.json"></a>
 
-```
+```json
 {
   "[AutoScalingGroupProcessesToSuspend](#cfn-codedeploy-deploymentgroup-ec2deploymentoptions-autoscalinggroupprocessestosuspend)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codedeploy-deploymentgroup-ec2deploymentoptions-syntax.yaml"></a>
 
-```
+```yaml
   [AutoScalingGroupProcessesToSuspend](#cfn-codedeploy-deploymentgroup-ec2deploymentoptions-autoscalinggroupprocessestosuspend): {{
     - String}}
 ```

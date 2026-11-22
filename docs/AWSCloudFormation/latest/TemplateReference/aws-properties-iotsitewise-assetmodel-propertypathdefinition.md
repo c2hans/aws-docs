@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotsitewise-assetmodel-propertypathdefinition-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-iotsitewise-assetmodel-propertypathdefinition-name)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotsitewise-assetmodel-propertypathdefinition-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-iotsitewise-assetmodel-propertypathdefinition-name): {{String}}
 ```
 

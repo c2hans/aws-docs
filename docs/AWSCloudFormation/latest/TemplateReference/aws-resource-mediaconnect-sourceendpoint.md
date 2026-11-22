@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-mediaconnect-sourceendpoint-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MediaConnect::SourceEndpoint",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-mediaconnect-sourceendpoint-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MediaConnect::SourceEndpoint
 Properties:
   [Configuration](#cfn-mediaconnect-sourceendpoint-configuration): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-multiregionendpoint-details-syntax.json"></a>
 
-```
+```json
 {
   "[RouteDetails](#cfn-ses-multiregionendpoint-details-routedetails)" : {{[ RouteDetailsItems, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-multiregionendpoint-details-syntax.yaml"></a>
 
-```
+```yaml
   [RouteDetails](#cfn-ses-multiregionendpoint-details-routedetails): {{
     - RouteDetailsItems}}
 ```

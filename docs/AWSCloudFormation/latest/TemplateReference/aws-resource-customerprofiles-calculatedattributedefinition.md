@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-customerprofiles-calculatedattributedefinition-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CustomerProfiles::CalculatedAttributeDefinition",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-customerprofiles-calculatedattributedefinition-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CustomerProfiles::CalculatedAttributeDefinition
 Properties:
   [AttributeDetails](#cfn-customerprofiles-calculatedattributedefinition-attributedetails): {{

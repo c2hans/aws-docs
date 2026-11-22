@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcs-computenodegroup-nodelifecyclescript-syntax.json"></a>
 
-```
+```json
 {
   "[Arguments](#cfn-pcs-computenodegroup-nodelifecyclescript-arguments)" : {{[ String, ... ]}},
   "[ExecutionPolicy](#cfn-pcs-computenodegroup-nodelifecyclescript-executionpolicy)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcs-computenodegroup-nodelifecyclescript-syntax.yaml"></a>
 
-```
+```yaml
   [Arguments](#cfn-pcs-computenodegroup-nodelifecyclescript-arguments): {{
     - String}}
   [ExecutionPolicy](#cfn-pcs-computenodegroup-nodelifecyclescript-executionpolicy): {{String}}

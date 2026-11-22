@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-paymentcryptography-key-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::PaymentCryptography::Key",
   "Properties" : {
@@ -52,7 +52,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-paymentcryptography-key-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::PaymentCryptography::Key
 Properties:
   [DeriveKeyUsage](#cfn-paymentcryptography-key-derivekeyusage): {{String}}

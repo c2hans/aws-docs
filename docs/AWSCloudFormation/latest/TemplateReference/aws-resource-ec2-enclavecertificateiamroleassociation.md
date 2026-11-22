@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-enclavecertificateiamroleassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::EnclaveCertificateIamRoleAssociation",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-enclavecertificateiamroleassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::EnclaveCertificateIamRoleAssociation
 Properties:
   [CertificateArn](#cfn-ec2-enclavecertificateiamroleassociation-certificatearn): {{String}}
@@ -99,7 +99,7 @@ The following example associates IAM role `arn:aws:iam::123456789012:role/my-acm
 #### JSON
 <a name="aws-resource-ec2-enclavecertificateiamroleassociation--examples--Associating_an_IAM_role_with_an_ACM_certificate--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "myCertAssociation",
@@ -118,7 +118,7 @@ The following example associates IAM role `arn:aws:iam::123456789012:role/my-acm
 #### YAML
 <a name="aws-resource-ec2-enclavecertificateiamroleassociation--examples--Associating_an_IAM_role_with_an_ACM_certificate--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   myCertAssociation:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-configuredtable-analysisrulelist-syntax.json"></a>
 
-```
+```json
 {
   "[AdditionalAnalyses](#cfn-cleanrooms-configuredtable-analysisrulelist-additionalanalyses)" : {{String}},
   "[AllowedJoinOperators](#cfn-cleanrooms-configuredtable-analysisrulelist-allowedjoinoperators)" : {{[ String, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-configuredtable-analysisrulelist-syntax.yaml"></a>
 
-```
+```yaml
   [AdditionalAnalyses](#cfn-cleanrooms-configuredtable-analysisrulelist-additionalanalyses): {{String}}
   [AllowedJoinOperators](#cfn-cleanrooms-configuredtable-analysisrulelist-allowedjoinoperators): {{
     - String}}

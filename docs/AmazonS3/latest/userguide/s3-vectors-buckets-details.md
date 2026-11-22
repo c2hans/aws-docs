@@ -18,6 +18,6 @@ You can view detailed information about a vector bucket, including its propertie
 ## Using the AWS CLI
 <a name="cli-procedure"></a>
 
-```
+```bash
 aws s3vectors get-vector-bucket --vector-bucket-name {{"amzn-s3-demo-vector-bucket"}}
 ```

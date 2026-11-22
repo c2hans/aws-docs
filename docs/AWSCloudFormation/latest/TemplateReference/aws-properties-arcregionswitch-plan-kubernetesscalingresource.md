@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-arcregionswitch-plan-kubernetesscalingresource-syntax.json"></a>
 
-```
+```json
 {
   "[HpaName](#cfn-arcregionswitch-plan-kubernetesscalingresource-hpaname)" : {{String}},
   "[Name](#cfn-arcregionswitch-plan-kubernetesscalingresource-name)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-arcregionswitch-plan-kubernetesscalingresource-syntax.yaml"></a>
 
-```
+```yaml
   [HpaName](#cfn-arcregionswitch-plan-kubernetesscalingresource-hpaname): {{String}}
   [Name](#cfn-arcregionswitch-plan-kubernetesscalingresource-name): {{String}}
   [Namespace](#cfn-arcregionswitch-plan-kubernetesscalingresource-namespace): {{String}}

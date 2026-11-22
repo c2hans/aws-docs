@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-agent-inferenceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MaximumLength](#cfn-bedrock-agent-inferenceconfiguration-maximumlength)" : {{Number}},
   "[StopSequences](#cfn-bedrock-agent-inferenceconfiguration-stopsequences)" : {{[ String, ... ]}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-agent-inferenceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MaximumLength](#cfn-bedrock-agent-inferenceconfiguration-maximumlength): {{Number}}
   [StopSequences](#cfn-bedrock-agent-inferenceconfiguration-stopsequences): {{
     - String}}

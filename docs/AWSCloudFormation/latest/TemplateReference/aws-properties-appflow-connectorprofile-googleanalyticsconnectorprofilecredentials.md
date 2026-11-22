@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-connectorprofile-googleanalyticsconnectorprofilecredentials-syntax.json"></a>
 
-```
+```json
 {
   "[AccessToken](#cfn-appflow-connectorprofile-googleanalyticsconnectorprofilecredentials-accesstoken)" : {{String}},
   "[ClientId](#cfn-appflow-connectorprofile-googleanalyticsconnectorprofilecredentials-clientid)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-connectorprofile-googleanalyticsconnectorprofilecredentials-syntax.yaml"></a>
 
-```
+```yaml
   [AccessToken](#cfn-appflow-connectorprofile-googleanalyticsconnectorprofilecredentials-accesstoken): {{String}}
   [ClientId](#cfn-appflow-connectorprofile-googleanalyticsconnectorprofilecredentials-clientid): {{String}}
   [ClientSecret](#cfn-appflow-connectorprofile-googleanalyticsconnectorprofilecredentials-clientsecret): {{String}}

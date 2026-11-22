@@ -21,7 +21,7 @@ To use the database and analytics data collection module, create two customer ma
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [{
@@ -44,7 +44,7 @@ To use the database and analytics data collection module, create two customer ma
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

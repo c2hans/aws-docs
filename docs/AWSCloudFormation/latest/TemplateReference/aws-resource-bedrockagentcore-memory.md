@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-bedrockagentcore-memory-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::BedrockAgentCore::Memory",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-bedrockagentcore-memory-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::BedrockAgentCore::Memory
 Properties:
   [Description](#cfn-bedrockagentcore-memory-description): {{String}}
@@ -82,7 +82,7 @@ The number of days after which memory events will expire.
 *Required*: Yes
 *Type*: Integer
 *Minimum*: `3`
-*Maximum*: `365`
+*Maximum*: `3650`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `IndexedKeys`  <a name="cfn-bedrockagentcore-memory-indexedkeys"></a>

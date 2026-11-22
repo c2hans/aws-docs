@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-nodegroup-taint-syntax.json"></a>
 
-```
+```json
 {
   "[Effect](#cfn-eks-nodegroup-taint-effect)" : {{String}},
   "[Key](#cfn-eks-nodegroup-taint-key)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-nodegroup-taint-syntax.yaml"></a>
 
-```
+```yaml
   [Effect](#cfn-eks-nodegroup-taint-effect): {{String}}
   [Key](#cfn-eks-nodegroup-taint-key): {{String}}
   [Value](#cfn-eks-nodegroup-taint-value): {{String}}

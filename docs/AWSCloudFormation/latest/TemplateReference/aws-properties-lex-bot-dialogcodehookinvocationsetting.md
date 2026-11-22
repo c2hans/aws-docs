@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-dialogcodehookinvocationsetting-syntax.json"></a>
 
-```
+```json
 {
   "[EnableCodeHookInvocation](#cfn-lex-bot-dialogcodehookinvocationsetting-enablecodehookinvocation)" : {{Boolean}},
   "[InvocationLabel](#cfn-lex-bot-dialogcodehookinvocationsetting-invocationlabel)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-dialogcodehookinvocationsetting-syntax.yaml"></a>
 
-```
+```yaml
   [EnableCodeHookInvocation](#cfn-lex-bot-dialogcodehookinvocationsetting-enablecodehookinvocation): {{Boolean}}
   [InvocationLabel](#cfn-lex-bot-dialogcodehookinvocationsetting-invocationlabel): {{String}}
   [IsActive](#cfn-lex-bot-dialogcodehookinvocationsetting-isactive): {{Boolean}}

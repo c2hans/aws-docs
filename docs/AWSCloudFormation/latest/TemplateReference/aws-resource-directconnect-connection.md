@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-directconnect-connection-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DirectConnect::Connection",
   "Properties" : {
@@ -46,7 +46,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-directconnect-connection-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DirectConnect::Connection
 Properties:
   [Bandwidth](#cfn-directconnect-connection-bandwidth): {{String}}
@@ -160,7 +160,7 @@ This example shows a basic connection. The bandwidth of the connection is 10Gbps
 #### JSON
 <a name="aws-resource-directconnect-connection--examples--Basic_connection--json"></a>
 
-```
+```json
 {
   "Resources": {
     "myConnection": {
@@ -184,7 +184,7 @@ This example shows a basic connection. The bandwidth of the connection is 10Gbps
 #### YAML
 <a name="aws-resource-directconnect-connection--examples--Basic_connection--yaml"></a>
 
-```
+```yaml
 Resources:
   myConnection:
     Type: AWS::DirectConnect::Connection

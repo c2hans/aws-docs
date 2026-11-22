@@ -49,7 +49,7 @@ The following example trust policy is designed for a mobile app if the user sign
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -71,7 +71,7 @@ The following permissions policy allows anyone who assumes the role to perform o
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {

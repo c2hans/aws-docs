@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchserverless-index-index-syntax.json"></a>
 
-```
+```json
 {
   "[Knn](#cfn-opensearchserverless-index-index-knn)" : {{Boolean}},
   "[KnnAlgoParamEfSearch](#cfn-opensearchserverless-index-index-knnalgoparamefsearch)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchserverless-index-index-syntax.yaml"></a>
 
-```
+```yaml
   [Knn](#cfn-opensearchserverless-index-index-knn): {{Boolean}}
   [KnnAlgoParamEfSearch](#cfn-opensearchserverless-index-index-knnalgoparamefsearch): {{Integer}}
   [RefreshInterval](#cfn-opensearchserverless-index-index-refreshinterval): {{String}}

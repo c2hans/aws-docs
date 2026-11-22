@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dlm-lifecyclepolicy-deprecaterule-syntax.json"></a>
 
-```
+```json
 {
   "[Count](#cfn-dlm-lifecyclepolicy-deprecaterule-count)" : {{Integer}},
   "[Interval](#cfn-dlm-lifecyclepolicy-deprecaterule-interval)" : {{Integer}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dlm-lifecyclepolicy-deprecaterule-syntax.yaml"></a>
 
-```
+```yaml
   [Count](#cfn-dlm-lifecyclepolicy-deprecaterule-count): {{Integer}}
   [Interval](#cfn-dlm-lifecyclepolicy-deprecaterule-interval): {{Integer}}
   [IntervalUnit](#cfn-dlm-lifecyclepolicy-deprecaterule-intervalunit): {{String}}

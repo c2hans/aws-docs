@@ -116,7 +116,7 @@ This example shows a sample request and response for the `StartFlow` API.
 #### Sample Request
 <a name="API_StartFlow_Example_1_Request"></a>
 
-```
+```json
 {
   "flowName": "name"
 }
@@ -125,7 +125,7 @@ This example shows a sample request and response for the `StartFlow` API.
 #### Sample Response
 <a name="API_StartFlow_Example_1_Response"></a>
 
-```
+```json
 {
   "flowArn": "arn:aws:appflow:region:<AccountId>:flow/test_flow_ondemand_1",
   "flowStatus": "Active"

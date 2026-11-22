@@ -39,7 +39,7 @@ The following example shows a sample request and response using `AssumeRole`. Th
 
 **Example request**
 
-```
+```http
 https://sts.amazonaws.com/
 ?Version=2011-06-15
 &Action=AssumeRole
@@ -63,7 +63,7 @@ The policy value shown in the preceding example is the URL-encoded version of th
 
 ****
 
-```
+```json
 {"Version":"2012-10-17",		 	 	 "Statement":[{"Sid":"Stmt1","Effect":"Allow","Action":"s3:*","Resource":"*"}]}
 ```
 
@@ -75,7 +75,7 @@ In addition to the temporary security credentials, the response includes the Ama
 
 **Example response**
 
-```
+```xml
 <AssumeRoleResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
 <AssumeRoleResult>
 <SourceIdentity>DevUser123</SourceIdentity>
@@ -91,11 +91,11 @@ In addition to the temporary security credentials, the response includes the Ama
    wJalrXUtnFEMI/K7MDENG/bPxRfiCYzEXAMPLEKEY
   </SecretAccessKey>
   <Expiration>2019-07-15T23:28:33.359Z</Expiration>
-  <AccessKeyId>AKIAIOSFODNN7EXAMPLE</AccessKeyId>
+  <AccessKeyId>ASIAIOSFODNN7EXAMPLE</AccessKeyId>
 </Credentials>
 <AssumedRoleUser>
   <Arn>arn:aws:sts::123456789012:assumed-role/demo/John</Arn>
-  <AssumedRoleId>ARO123EXAMPLE123:John</AssumedRoleId>
+  <AssumedRoleId>AROA3XFRBF535PLBIFPI3:John</AssumedRoleId>
 </AssumedRoleUser>
 <PackedPolicySize>34</PackedPolicySize>
 <SessionTokenSize>1428</SessionTokenSize>
@@ -170,7 +170,7 @@ The following example shows a sample request and response that uses `GetFederati
 
 **Example request**
 
-```
+```http
 https://sts.amazonaws.com/
 ?Version=2011-06-15
 &Action=GetFederationToken
@@ -194,7 +194,7 @@ In addition to the temporary security credentials, the response includes the Ama
 
 **Example response**
 
-```
+```xml
 <GetFederationTokenResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
 <GetFederationTokenResult>
 <Credentials>
@@ -209,7 +209,7 @@ In addition to the temporary security credentials, the response includes the Ama
   wJalrXUtnFEMI/K7MDENG/bPxRfiCYzEXAMPLEKEY
   </SecretAccessKey>
   <Expiration>2019-04-15T23:28:33.359Z</Expiration>
-  <AccessKeyId>AKIAIOSFODNN7EXAMPLE;</AccessKeyId>
+  <AccessKeyId>ASIAIOSFODNN7EXAMPLE</AccessKeyId>
 </Credentials>
 <FederatedUser>
   <Arn>arn:aws:sts::123456789012:federated-user/Jean</Arn>
@@ -249,7 +249,7 @@ The following example shows a sample request and response using `GetSessionToken
 
 **Example request**
 
-```
+```http
 https://sts.amazonaws.com/
 ?Version=2011-06-15
 &Action=GetSessionToken
@@ -261,7 +261,7 @@ The `AUTHPARAMS` parameter in the example is a placeholder for your *signature*.
 
 **Example response**
 
-```
+```xml
 <GetSessionTokenResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
 <GetSessionTokenResult>
 <Credentials>
@@ -275,7 +275,7 @@ The `AUTHPARAMS` parameter in the example is a placeholder for your *signature*.
   wJalrXUtnFEMI/K7MDENG/bPxRfiCYzEXAMPLEKEY
   </SecretAccessKey>
   <Expiration>2011-07-11T19:55:29.611Z</Expiration>
-  <AccessKeyId>AKIAIOSFODNN7EXAMPLE</AccessKeyId>
+  <AccessKeyId>ASIAIOSFODNN7EXAMPLE</AccessKeyId>
 </Credentials>
 <SessionTokenSize>856</SessionTokenSize>
 <SessionTokenUtilization>20</SessionTokenUtilization>
@@ -290,7 +290,7 @@ Optionally, the `GetSessionToken` request can include `SerialNumber` and `TokenC
 
 The following example shows a `GetSessionToken` request that includes an MFA verification code and device serial number.
 
-```
+```http
 https://sts.amazonaws.com/
 ?Version=2011-06-15
 &Action=GetSessionToken
@@ -303,3 +303,90 @@ https://sts.amazonaws.com/
 **Note**
 The call to AWS STS can be to the global endpoint or to any of the Regional endpoints that you activate your AWS account. For more information, see the [AWS STS section of *Regions and Endpoints*](https://docs.aws.amazon.com/general/latest/gr/rande.html#sts_region).
 The `AUTHPARAMS` parameter in the example is a placeholder for your *signature*. A signature is the authentication information that you must include with AWS HTTP API requests. We recommend using the [AWS SDKs](https://aws.amazon.com/tools/) to create API requests, and one benefit of doing so is that the SDKs handle request signing for you. If you must create and sign API requests manually, see [Signing AWS Requests By Using Signature Version 4](https://docs.aws.amazon.com/general/latest/gr/sigv4_signing.html) in the *Amazon Web Services General Reference* to learn how to sign a request.
+
+## Requesting credentials with scoped down permissions on an existing session
+<a name="api_getscopedcredentials"></a>
+
+The [`GetScopedCredentials`](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetScopedCredentials.html) API operation returns a set of temporary security credentials that are scoped down from the caller's existing temporary security credentials. `GetScopedCredentials` preserves the caller's identity while narrowing the permissions, shortening the session lifetime, or both.
+
+This is useful when a workload, credential broker, or agent orchestrator needs to vend least-privilege credentials from a single broader session without provisioning additional IAM roles or configuring trust policies.
+
+**To request scoped down credentials**
+
+1. Start with existing valid temporary security credentials. Long-term IAM user credentials must call either `GetFederationToken` or `GetSessionToken` first to obtain temporary security credentials.
+
+1. Call the operation [`GetScopedCredentials`](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetScopedCredentials.html).
+
+The following example shows a sample request and response using `GetScopedCredentials`.
+
+**Example request**
+
+```http
+https://sts.us-east-1.amazonaws.com/
+?Version=2011-06-15
+&Action=GetScopedCredentials
+&Policy=%7B%22Version%22%3A%222012-10-17%22%2C%22Statement%22%3A%5B%7B%22Effect%22%3A%22Allow%22%2C%22Action%22%3A%5B%22s3%3AGetObject%22%5D%2C%22Resource%22%3A%22arn%3Aaws%3As3%3A%3A%3A%61mzn-s3-demo-bucket%2F*%22%7D%5D%7D
+&DurationSeconds=900
+&AUTHPARAMS
+```
+
+The policy value shown in the preceding example is the URL-encoded version of the following policy:
+
+**Example Scope down policy**
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": "arn:aws:s3:::amzn-s3-demo-bucket/*"
+        }
+    ]
+}
+```
+
+The `AUTHPARAMS` parameter in the example is a placeholder for your signature. A signature is the authentication information that you must include with AWS HTTP API requests. We recommend using the [AWS SDKs](https://aws.amazon.com/tools/) to create API requests, and one benefit of doing so is that the SDKs handle request signing for you. If you must create and sign API requests manually, see [Signing AWS Requests By Using Signature Version 4](https://docs.aws.amazon.com/general/latest/gr/sigv4_signing.html) in the *Amazon Web Services General Reference* to learn how to sign a request.
+
+**Example response**
+
+```xml
+<GetScopedCredentialsResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+<GetScopedCredentialsResult>
+<Credentials>
+  <SessionToken>
+   AQoEXAMPLEH4aoAH0gNCAPyJxz4BlCFFxWNE1OPTgk5TthT+FvwqnKwRcOIfrRh3c/L
+   To6UDdyJwOOvEVPvLXCrrrUtdnniCEXAMPLE/IvU1dYUg2RVAJBanLiHb4IgRmpRV3z
+   rkuWJOgQs8IZZaIv2BXIa2R4OlgkBN9bkUDNCJiBeb/AXlzBBko7b15fjrBs2+cTQtp
+   Z3CYWFXG8C5zqx37wnOE49mRl/+OtkIKGO7fAE
+  </SessionToken>
+  <SecretAccessKey>
+  wJalrXUtnFEMI/K7MDENG/bPxRfiCYzEXAMPLEKEY
+  </SecretAccessKey>
+  <Expiration>2011-07-11T19:55:29.611Z</Expiration>
+  <AccessKeyId>ASIAIOSFODNN7EXAMPLE</AccessKeyId>
+</Credentials>
+<SessionInfo>
+  <Arn>arn:aws:sts::123456789012:assumed-role/demo/John-session</Arn>
+  <ScopedSessionId>AROA3XFRBF535PLBIFPI3:John-session</ScopedSessionId>
+</SessionInfo>
+<ScopedPoliciesCount>1</ScopedPoliciesCount>
+<SessionTokenSize>960</SessionTokenSize>
+<SessionTokenUtilization>23</SessionTokenUtilization>
+</GetScopedCredentialsResult>
+<ResponseMetadata>
+<RequestId>58c5dbae-abef-11e0-8cfe-09039844ac7d</RequestId>
+</ResponseMetadata>
+</GetScopedCredentialsResponse>
+```
+
+Important notes:
+
+**Note**
+The `SessionInfo` element confirms that the identity has not changed. The ARN and principal ID are identical to the calling session.
+`GetScopedCredentials` can be called recursively. You can apply up to three scope down policy layers. Calls without a policy don't add a layer.
+`ScopedPoliciesCount` indicates how many scope down policy layers are active on this credential (increments with each recursive `GetScopedCredentials` call that includes a scope down policy).
+The resulting scoped down credentials cannot outlive the calling session. If `DurationSeconds` is not specified, the credentials inherit the calling session's remaining lifetime.

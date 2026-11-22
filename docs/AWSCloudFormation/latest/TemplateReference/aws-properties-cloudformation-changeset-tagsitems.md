@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudformation-changeset-tagsitems-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-cloudformation-changeset-tagsitems-key)" : {{String}},
   "[Value](#cfn-cloudformation-changeset-tagsitems-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudformation-changeset-tagsitems-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-cloudformation-changeset-tagsitems-key): {{String}}
   [Value](#cfn-cloudformation-changeset-tagsitems-value): {{String}}
 ```

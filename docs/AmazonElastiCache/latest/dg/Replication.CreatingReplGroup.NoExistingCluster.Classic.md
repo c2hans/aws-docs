@@ -87,7 +87,7 @@ aws elasticache create-replication-group ^
 
 Output from the this command is something like this.
 
-```
+```json
 {
     "ReplicationGroup": {
         "Status": "creating",

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigatewayv2-integration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGatewayV2::Integration",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigatewayv2-integration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGatewayV2::Integration
 Properties:
   [ApiId](#cfn-apigatewayv2-integration-apiid): {{String}}
@@ -235,7 +235,7 @@ The following example creates a Lambda integration for an HTTP API. For full exa
 #### JSON
 <a name="aws-resource-apigatewayv2-integration--examples--Integration_creation_example--json"></a>
 
-```
+```json
 {
     "Integration": {
         "Type": "AWS::ApiGatewayV2::Integration",
@@ -278,7 +278,7 @@ The following example creates a Lambda integration for an HTTP API. For full exa
 #### YAML
 <a name="aws-resource-apigatewayv2-integration--examples--Integration_creation_example--yaml"></a>
 
-```
+```yaml
 Integration:
   Type: 'AWS::ApiGatewayV2::Integration'
   Properties:
@@ -306,7 +306,7 @@ The following example creates an integration with parameter mapping. The request
 #### JSON
 <a name="aws-resource-apigatewayv2-integration--examples--Integration_with_parameter_mapping_for_an_HTTP_API--json"></a>
 
-```
+```json
 {
   "MyIntegration": {
     "Type": "AWS::ApiGatewayV2::Integration",
@@ -340,7 +340,7 @@ The following example creates an integration with parameter mapping. The request
 #### YAML
 <a name="aws-resource-apigatewayv2-integration--examples--Integration_with_parameter_mapping_for_an_HTTP_API--yaml"></a>
 
-```
+```yaml
 MyIntegration:
 Type: AWS::ApiGatewayV2::Integration
 Properties:

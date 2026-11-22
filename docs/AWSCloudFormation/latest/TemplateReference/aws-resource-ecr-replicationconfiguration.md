@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ecr-replicationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ECR::ReplicationConfiguration",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ecr-replicationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ECR::ReplicationConfiguration
 Properties:
   [ReplicationConfiguration](#cfn-ecr-replicationconfiguration-replicationconfiguration): {{
@@ -74,7 +74,7 @@ The following example specifies a replication configuration in a source Region f
 #### JSON
 <a name="aws-resource-ecr-replicationconfiguration--examples--Specify_a_replication_configuration_for_a_private_registry--json"></a>
 
-```
+```json
 "TestReplicationConfiguration": {
   "Type": "AWS::ECR::ReplicationConfiguration",
   "Properties": {
@@ -101,7 +101,7 @@ The following example specifies a replication configuration in a source Region f
 #### YAML
 <a name="aws-resource-ecr-replicationconfiguration--examples--Specify_a_replication_configuration_for_a_private_registry--yaml"></a>
 
-```
+```yaml
 Resources:
   MyReplicationConfig:
     Type: AWS::ECR::ReplicationConfiguration

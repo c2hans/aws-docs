@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-geospatiallinewidth-syntax.json"></a>
 
-```
+```json
 {
   "[LineWidth](#cfn-quicksight-analysis-geospatiallinewidth-linewidth)" : {{Number}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-geospatiallinewidth-syntax.yaml"></a>
 
-```
+```yaml
   [LineWidth](#cfn-quicksight-analysis-geospatiallinewidth-linewidth): {{Number}}
 ```
 

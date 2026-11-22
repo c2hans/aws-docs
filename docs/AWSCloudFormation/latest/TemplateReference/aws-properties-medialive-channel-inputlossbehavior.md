@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-inputlossbehavior-syntax.json"></a>
 
-```
+```json
 {
   "[BlackFrameMsec](#cfn-medialive-channel-inputlossbehavior-blackframemsec)" : {{Integer}},
   "[InputLossImageColor](#cfn-medialive-channel-inputlossbehavior-inputlossimagecolor)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-inputlossbehavior-syntax.yaml"></a>
 
-```
+```yaml
   [BlackFrameMsec](#cfn-medialive-channel-inputlossbehavior-blackframemsec): {{Integer}}
   [InputLossImageColor](#cfn-medialive-channel-inputlossbehavior-inputlossimagecolor): {{String}}
   [InputLossImageSlate](#cfn-medialive-channel-inputlossbehavior-inputlossimageslate): {{

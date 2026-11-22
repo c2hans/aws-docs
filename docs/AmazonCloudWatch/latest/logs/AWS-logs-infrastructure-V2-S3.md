@@ -16,7 +16,7 @@ To enable sending logs to Amazon S3, you must be signed in with the following pe
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -80,7 +80,7 @@ The S3 bucket where the logs are being sent must have a resource policy that inc
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "AWSLogDeliveryWrite20150319",
@@ -132,7 +132,7 @@ If you choose SSE-KMS, you must use a customer managed key. You can't use an AWS
 
 For SSE-KMS, specify the Amazon Resource Name (ARN) of the key when you enable bucket encryption. Add the following to the key policy (not to the bucket policy for your S3 bucket), so that the log delivery account can write to your S3 bucket.
 
-```
+```json
 {
     "Sid": "Allow Logs Delivery to use the key",
     "Effect": "Allow",

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-channel-partitionspec-syntax.json"></a>
 
-```
+```json
 {
   "[PartitionStrategy](#cfn-msk-channel-partitionspec-partitionstrategy)" : {{String}},
   "[SourceList](#cfn-msk-channel-partitionspec-sourcelist)" : {{[ PartitionSource, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-channel-partitionspec-syntax.yaml"></a>
 
-```
+```yaml
   [PartitionStrategy](#cfn-msk-channel-partitionspec-partitionstrategy): {{String}}
   [SourceList](#cfn-msk-channel-partitionspec-sourcelist): {{
     - PartitionSource}}

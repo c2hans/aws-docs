@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ivs-recordingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IVS::RecordingConfiguration",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ivs-recordingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IVS::RecordingConfiguration
 Properties:
   [DestinationConfiguration](#cfn-ivs-recordingconfiguration-destinationconfiguration): {{
@@ -136,7 +136,7 @@ The following examples specify an Amazon IVS Channel that records live-channel s
 #### JSON
 <a name="aws-resource-ivs-recordingconfiguration--examples--Recording_Configuration_Template_Examples--json"></a>
 
-```
+```json
 {
   "Resources": {
     "S3Bucket": {
@@ -183,7 +183,7 @@ The following examples specify an Amazon IVS Channel that records live-channel s
 #### YAML
 <a name="aws-resource-ivs-recordingconfiguration--examples--Recording_Configuration_Template_Examples--yaml"></a>
 
-```
+```yaml
 Resources:
  S3Bucket:
    Type: AWS::S3::Bucket

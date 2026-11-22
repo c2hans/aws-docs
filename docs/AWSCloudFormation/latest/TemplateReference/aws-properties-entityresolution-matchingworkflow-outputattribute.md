@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-entityresolution-matchingworkflow-outputattribute-syntax.json"></a>
 
-```
+```json
 {
   "[Hashed](#cfn-entityresolution-matchingworkflow-outputattribute-hashed)" : {{Boolean}},
   "[Name](#cfn-entityresolution-matchingworkflow-outputattribute-name)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-entityresolution-matchingworkflow-outputattribute-syntax.yaml"></a>
 
-```
+```yaml
   [Hashed](#cfn-entityresolution-matchingworkflow-outputattribute-hashed): {{Boolean}}
   [Name](#cfn-entityresolution-matchingworkflow-outputattribute-name): {{String}}
 ```

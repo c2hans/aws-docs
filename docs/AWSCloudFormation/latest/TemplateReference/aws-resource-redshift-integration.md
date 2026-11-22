@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-redshift-integration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Redshift::Integration",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-redshift-integration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Redshift::Integration
 Properties:
   [AdditionalEncryptionContext](#cfn-redshift-integration-additionalencryptioncontext): {{

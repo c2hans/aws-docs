@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-overrideaction-syntax.json"></a>
 
-```
+```json
 {
   "[Count](#cfn-wafv2-webacl-overrideaction-count)" : {{Json}},
   "[None](#cfn-wafv2-webacl-overrideaction-none)" : {{Json}}
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-overrideaction-syntax.yaml"></a>
 
-```
+```yaml
   [Count](#cfn-wafv2-webacl-overrideaction-count): {{Json}}
   [None](#cfn-wafv2-webacl-overrideaction-none): {{Json}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-elasticloadbalancingv2-listenercertificate-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ElasticLoadBalancingV2::ListenerCertificate",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-elasticloadbalancingv2-listenercertificate-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ElasticLoadBalancingV2::ListenerCertificate
 Properties:
   [Certificates](#cfn-elasticloadbalancingv2-listenercertificate-certificates): {{
@@ -63,7 +63,7 @@ The following example creates a certificate list.
 #### YAML
 <a name="aws-resource-elasticloadbalancingv2-listenercertificate--examples----yaml"></a>
 
-```
+```yaml
 myCertificateList:
   Type: 'AWS::ElasticLoadBalancingV2::ListenerCertificate'
   Properties:
@@ -77,7 +77,7 @@ myCertificateList:
 #### JSON
 <a name="aws-resource-elasticloadbalancingv2-listenercertificate--examples----json"></a>
 
-```
+```json
 {
     "myCertificateList": {
         "Type": "AWS::ElasticLoadBalancingV2::ListenerCertificate",

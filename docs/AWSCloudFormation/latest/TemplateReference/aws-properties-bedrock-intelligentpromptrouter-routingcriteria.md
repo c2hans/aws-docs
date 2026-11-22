@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-intelligentpromptrouter-routingcriteria-syntax.json"></a>
 
-```
+```json
 {
   "[ResponseQualityDifference](#cfn-bedrock-intelligentpromptrouter-routingcriteria-responsequalitydifference)" : {{Number}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-intelligentpromptrouter-routingcriteria-syntax.yaml"></a>
 
-```
+```yaml
   [ResponseQualityDifference](#cfn-bedrock-intelligentpromptrouter-routingcriteria-responsequalitydifference): {{Number}}
 ```
 

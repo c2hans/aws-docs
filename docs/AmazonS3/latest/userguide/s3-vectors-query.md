@@ -22,7 +22,7 @@ For performing similarity queries for your vector embeddings, several factors ca
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```Python
 # Query a vector index with an embedding from Amazon Titan Text Embeddings V2.
 import boto3
 import json

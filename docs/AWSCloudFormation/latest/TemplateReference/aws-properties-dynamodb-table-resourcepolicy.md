@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dynamodb-table-resourcepolicy-syntax.json"></a>
 
-```
+```json
 {
   "[PolicyDocument](#cfn-dynamodb-table-resourcepolicy-policydocument)" : {{Json}}
 }
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dynamodb-table-resourcepolicy-syntax.yaml"></a>
 
-```
+```yaml
   [PolicyDocument](#cfn-dynamodb-table-resourcepolicy-policydocument): {{Json}}
 ```
 
@@ -65,7 +65,7 @@ If you enable a stream within a CloudFormation template and also define a policy
 #### JSON
 <a name="aws-properties-dynamodb-table-resourcepolicy--examples--Attaching_a_resource-based_policy_to_a_table_and_its_stream--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {

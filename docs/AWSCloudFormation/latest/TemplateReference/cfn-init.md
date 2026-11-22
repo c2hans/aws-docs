@@ -30,7 +30,7 @@ If you use `cfn-init` to update an existing file, it creates a backup copy of th
 ## Syntax
 <a name="cfn-init-Syntax"></a>
 
-```
+```sh
 cfn-init --stack|-s {{stack.name.or.id}} \
          --resource|-r {{logical.resource.id}} \
          --region {{region}} \
@@ -82,7 +82,7 @@ To include the latest version, add `yum install -y aws-cfn-bootstrap` to the `Us
 
 `UserData` property using the `Fn::Join` intrinsic function.
 
-```
+```json
 {
     "UserData": {
         "Fn::Base64": {
@@ -116,7 +116,7 @@ To include the latest version, add `yum install -y aws-cfn-bootstrap` to the `Us
 
 `UserData` property using the `Fn::Sub` intrinsic function.
 
-```
+```yaml
 UserData:
   Fn::Base64: !Sub |
     #!/bin/bash -xe

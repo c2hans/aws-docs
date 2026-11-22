@@ -216,7 +216,7 @@ To enhance the security posture of the App2Container automation execution, it is
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement": [
@@ -331,7 +331,7 @@ To enhance the security posture of the App2Container automation execution, it is
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lightsail-distribution-cachebehavior-syntax.json"></a>
 
-```
+```json
 {
   "[Behavior](#cfn-lightsail-distribution-cachebehavior-behavior)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lightsail-distribution-cachebehavior-syntax.yaml"></a>
 
-```
+```yaml
   [Behavior](#cfn-lightsail-distribution-cachebehavior-behavior): {{String}}
 ```
 

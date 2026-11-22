@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-clientsideaction-syntax.json"></a>
 
-```
+```json
 {
   "[ExemptUriRegularExpressions](#cfn-wafv2-webacl-clientsideaction-exempturiregularexpressions)" : {{[ Regex, ... ]}},
   "[Sensitivity](#cfn-wafv2-webacl-clientsideaction-sensitivity)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-clientsideaction-syntax.yaml"></a>
 
-```
+```yaml
   [ExemptUriRegularExpressions](#cfn-wafv2-webacl-clientsideaction-exempturiregularexpressions): {{
     - Regex}}
   [Sensitivity](#cfn-wafv2-webacl-clientsideaction-sensitivity): {{String}}

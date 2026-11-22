@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-secretsmanager-rotationschedule-hostedrotationlambda-syntax.json"></a>
 
-```
+```json
 {
   "[ExcludeCharacters](#cfn-secretsmanager-rotationschedule-hostedrotationlambda-excludecharacters)" : {{String}},
   "[KmsKeyArn](#cfn-secretsmanager-rotationschedule-hostedrotationlambda-kmskeyarn)" : {{String}},
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-secretsmanager-rotationschedule-hostedrotationlambda-syntax.yaml"></a>
 
-```
+```yaml
   [ExcludeCharacters](#cfn-secretsmanager-rotationschedule-hostedrotationlambda-excludecharacters): {{String}}
   [KmsKeyArn](#cfn-secretsmanager-rotationschedule-hostedrotationlambda-kmskeyarn): {{String}}
   [MasterSecretArn](#cfn-secretsmanager-rotationschedule-hostedrotationlambda-mastersecretarn): {{String}}

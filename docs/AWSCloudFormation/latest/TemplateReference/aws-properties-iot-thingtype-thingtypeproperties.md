@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-thingtype-thingtypeproperties-syntax.json"></a>
 
-```
+```json
 {
   "[Mqtt5Configuration](#cfn-iot-thingtype-thingtypeproperties-mqtt5configuration)" : {{Mqtt5Configuration}},
   "[SearchableAttributes](#cfn-iot-thingtype-thingtypeproperties-searchableattributes)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-thingtype-thingtypeproperties-syntax.yaml"></a>
 
-```
+```yaml
   [Mqtt5Configuration](#cfn-iot-thingtype-thingtypeproperties-mqtt5configuration): {{
     Mqtt5Configuration}}
   [SearchableAttributes](#cfn-iot-thingtype-thingtypeproperties-searchableattributes): {{

@@ -230,7 +230,7 @@ This example shows a sample request and response for the `DescribeConnectorProfi
 #### Sample Request
 <a name="API_DescribeConnectorProfiles_Example_1_Request"></a>
 
-```
+```json
 {
   "connectorProfileNames": ["OldMarketoProfile","non-existing-name"],
   "connectorTypes": ["Marketo","Salesforce"]
@@ -240,7 +240,7 @@ This example shows a sample request and response for the `DescribeConnectorProfi
 #### Sample Response
 <a name="API_DescribeConnectorProfiles_Example_1_Response"></a>
 
-```
+```json
 {
   "connectorProfileDetails": [
     {
@@ -294,7 +294,7 @@ This example shows a sample request and response for the `DescribeConnectorProfi
 #### Sample Request
 <a name="API_DescribeConnectorProfiles_Example_2_Request"></a>
 
-```
+```json
 {
    "connectorProfileNames": ["OldMarketoProfile", "non-existing-name"],
    "connectorTypes": ["Marketo", "Salesforce", "CustomConnector"],
@@ -305,7 +305,7 @@ This example shows a sample request and response for the `DescribeConnectorProfi
 #### Sample Response
 <a name="API_DescribeConnectorProfiles_Example_2_Response"></a>
 
-```
+```json
 {
   "connectorProfileDetails": [
     {

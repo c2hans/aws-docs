@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpool-userattributeupdatesettings-syntax.json"></a>
 
-```
+```json
 {
   "[AttributesRequireVerificationBeforeUpdate](#cfn-cognito-userpool-userattributeupdatesettings-attributesrequireverificationbeforeupdate)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpool-userattributeupdatesettings-syntax.yaml"></a>
 
-```
+```yaml
   [AttributesRequireVerificationBeforeUpdate](#cfn-cognito-userpool-userattributeupdatesettings-attributesrequireverificationbeforeupdate): {{
     - String}}
 ```

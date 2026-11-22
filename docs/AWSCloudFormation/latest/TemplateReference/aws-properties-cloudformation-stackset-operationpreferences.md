@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudformation-stackset-operationpreferences-syntax.json"></a>
 
-```
+```json
 {
   "[ConcurrencyMode](#cfn-cloudformation-stackset-operationpreferences-concurrencymode)" : {{String}},
   "[FailureToleranceCount](#cfn-cloudformation-stackset-operationpreferences-failuretolerancecount)" : {{Integer}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudformation-stackset-operationpreferences-syntax.yaml"></a>
 
-```
+```yaml
   [ConcurrencyMode](#cfn-cloudformation-stackset-operationpreferences-concurrencymode): {{String}}
   [FailureToleranceCount](#cfn-cloudformation-stackset-operationpreferences-failuretolerancecount): {{Integer}}
   [FailureTolerancePercentage](#cfn-cloudformation-stackset-operationpreferences-failuretolerancepercentage): {{Integer}}

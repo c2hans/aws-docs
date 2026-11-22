@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-b2bi-capability-x12details-syntax.json"></a>
 
-```
+```json
 {
   "[TransactionSet](#cfn-b2bi-capability-x12details-transactionset)" : {{String}},
   "[Version](#cfn-b2bi-capability-x12details-version)" : {{String}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-b2bi-capability-x12details-syntax.yaml"></a>
 
-```
+```yaml
   [TransactionSet](#cfn-b2bi-capability-x12details-transactionset): {{String}}
   [Version](#cfn-b2bi-capability-x12details-version): {{String}}
 ```

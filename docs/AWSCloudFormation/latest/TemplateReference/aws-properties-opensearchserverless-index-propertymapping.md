@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchserverless-index-propertymapping-syntax.json"></a>
 
-```
+```json
 {
   "[Analyzer](#cfn-opensearchserverless-index-propertymapping-analyzer)" : {{String}},
   "[CompressionLevel](#cfn-opensearchserverless-index-propertymapping-compressionlevel)" : {{String}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchserverless-index-propertymapping-syntax.yaml"></a>
 
-```
+```yaml
   [Analyzer](#cfn-opensearchserverless-index-propertymapping-analyzer): {{String}}
   [CompressionLevel](#cfn-opensearchserverless-index-propertymapping-compressionlevel): {{String}}
   [DataType](#cfn-opensearchserverless-index-propertymapping-datatype): {{String}}

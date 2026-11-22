@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iotsitewise-accesspolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoTSiteWise::AccessPolicy",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iotsitewise-accesspolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoTSiteWise::AccessPolicy
 Properties:
   [AccessPolicyIdentity](#cfn-iotsitewise-accesspolicy-accesspolicyidentity): {{

@@ -100,7 +100,7 @@ This implementation of the GET action returns the following responses.
 
 If the transfer acceleration state is set to `Enabled` on a bucket, the response is as follows:
 
-```
+```xml
 <AccelerateConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
   <Status>Enabled</Status>
 </AccelerateConfiguration>
@@ -111,7 +111,7 @@ If the transfer acceleration state is set to `Enabled` on a bucket, the response
 
 If the transfer acceleration state is set to `Suspended` on a bucket, the response is as follows:
 
-```
+```xml
 <AccelerateConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
   <Status>Suspended</Status>
 </AccelerateConfiguration>
@@ -122,7 +122,7 @@ If the transfer acceleration state is set to `Suspended` on a bucket, the respon
 
 If the transfer acceleration state on a bucket has never been set to `Enabled` or `Suspended`, the response is as follows:
 
-```
+```xml
 <AccelerateConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/" />
 ```
 
@@ -131,7 +131,7 @@ If the transfer acceleration state on a bucket has never been set to `Enabled` o
 
 The following example shows a GET /?`accelerate` request to retrieve the transfer acceleration state of the bucket named `amzn-s3-demo-bucket`.
 
-```
+```HTTP
 GET /?accelerate HTTP/1.1
 Host: amzn-s3-demo-bucket.s3.<Region>.amazonaws.com
 Date: Mon, 11 Apr 2016 12:00:00 GMT
@@ -144,7 +144,7 @@ Content-Type: text/plain
 
 The following is a sample of the response body (only) that shows bucket transfer acceleration is enabled.
 
-```
+```xml
 <AccelerateConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
   <Status>Enabled</Status>
 </AccelerateConfiguration>

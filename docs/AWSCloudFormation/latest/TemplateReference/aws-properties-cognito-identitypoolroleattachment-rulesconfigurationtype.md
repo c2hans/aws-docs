@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-identitypoolroleattachment-rulesconfigurationtype-syntax.json"></a>
 
-```
+```json
 {
   "[Rules](#cfn-cognito-identitypoolroleattachment-rulesconfigurationtype-rules)" : {{[ MappingRule, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-identitypoolroleattachment-rulesconfigurationtype-syntax.yaml"></a>
 
-```
+```yaml
   [Rules](#cfn-cognito-identitypoolroleattachment-rulesconfigurationtype-rules): {{
     - MappingRule}}
 ```

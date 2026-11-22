@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-space-customimage-syntax.json"></a>
 
-```
+```json
 {
   "[AppImageConfigName](#cfn-sagemaker-space-customimage-appimageconfigname)" : {{String}},
   "[ImageName](#cfn-sagemaker-space-customimage-imagename)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-space-customimage-syntax.yaml"></a>
 
-```
+```yaml
   [AppImageConfigName](#cfn-sagemaker-space-customimage-appimageconfigname): {{String}}
   [ImageName](#cfn-sagemaker-space-customimage-imagename): {{String}}
   [ImageVersionNumber](#cfn-sagemaker-space-customimage-imageversionnumber): {{Integer}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskdefinition-device-syntax.json"></a>
 
-```
+```json
 {
   "[ContainerPath](#cfn-ecs-taskdefinition-device-containerpath)" : {{String}},
   "[HostPath](#cfn-ecs-taskdefinition-device-hostpath)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskdefinition-device-syntax.yaml"></a>
 
-```
+```yaml
   [ContainerPath](#cfn-ecs-taskdefinition-device-containerpath): {{String}}
   [HostPath](#cfn-ecs-taskdefinition-device-hostpath): {{String}}
   [Permissions](#cfn-ecs-taskdefinition-device-permissions): {{

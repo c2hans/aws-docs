@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-events-connection-parameter-syntax.json"></a>
 
-```
+```json
 {
   "[IsValueSecret](#cfn-events-connection-parameter-isvaluesecret)" : {{Boolean}},
   "[Key](#cfn-events-connection-parameter-key)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-events-connection-parameter-syntax.yaml"></a>
 
-```
+```yaml
   [IsValueSecret](#cfn-events-connection-parameter-isvaluesecret): {{Boolean}}
   [Key](#cfn-events-connection-parameter-key): {{String}}
   [Value](#cfn-events-connection-parameter-value): {{String}}

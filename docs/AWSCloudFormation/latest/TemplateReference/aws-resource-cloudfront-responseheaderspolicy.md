@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudfront-responseheaderspolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudFront::ResponseHeadersPolicy",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudfront-responseheaderspolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudFront::ResponseHeadersPolicy
 Properties:
   [ResponseHeadersPolicyConfig](#cfn-cloudfront-responseheaderspolicy-responseheaderspolicyconfig): {{
@@ -87,7 +87,7 @@ The following example creates a response headers policy.
 #### JSON
 <a name="aws-resource-cloudfront-responseheaderspolicy--examples--Create_a_response_headers_policy--json"></a>
 
-```
+```json
 {
   "Resources": {
     "MyResponseHeadersPolicy": {
@@ -210,7 +210,7 @@ The following example creates a response headers policy.
 #### YAML
 <a name="aws-resource-cloudfront-responseheaderspolicy--examples--Create_a_response_headers_policy--yaml"></a>
 
-```
+```yaml
 Resources:
   ABCDE1FGHI:
   MyWaitConditionHandle:

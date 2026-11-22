@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-datasource-redshiftparameters-syntax.json"></a>
 
-```
+```json
 {
   "[ClusterId](#cfn-quicksight-datasource-redshiftparameters-clusterid)" : {{String}},
   "[Database](#cfn-quicksight-datasource-redshiftparameters-database)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-datasource-redshiftparameters-syntax.yaml"></a>
 
-```
+```yaml
   [ClusterId](#cfn-quicksight-datasource-redshiftparameters-clusterid): {{String}}
   [Database](#cfn-quicksight-datasource-redshiftparameters-database): {{String}}
   [Host](#cfn-quicksight-datasource-redshiftparameters-host): {{String}}

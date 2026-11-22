@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-verifiedpermissions-policystorealias-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::VerifiedPermissions::PolicyStoreAlias",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-verifiedpermissions-policystorealias-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::VerifiedPermissions::PolicyStoreAlias
 Properties:
   [AliasName](#cfn-verifiedpermissions-policystorealias-aliasname): {{String}}

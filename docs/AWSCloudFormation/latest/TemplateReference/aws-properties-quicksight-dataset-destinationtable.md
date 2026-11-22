@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-destinationtable-syntax.json"></a>
 
-```
+```json
 {
   "[Alias](#cfn-quicksight-dataset-destinationtable-alias)" : {{String}},
   "[Source](#cfn-quicksight-dataset-destinationtable-source)" : {{DestinationTableSource}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-destinationtable-syntax.yaml"></a>
 
-```
+```yaml
   [Alias](#cfn-quicksight-dataset-destinationtable-alias): {{String}}
   [Source](#cfn-quicksight-dataset-destinationtable-source): {{
     DestinationTableSource}}

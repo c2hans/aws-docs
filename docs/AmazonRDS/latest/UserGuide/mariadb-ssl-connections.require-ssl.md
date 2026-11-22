@@ -13,7 +13,7 @@ You can set the `require_secure_transport` parameter value by updating the DB pa
 
 When the `require_secure_transport` parameter is set to `ON` for a DB instance, a database client can connect to it if it can establish an encrypted connection. Otherwise, an error message similar to the following is returned to the client:
 
-```
+```bash
 ERROR 1045 (28000): Access denied for user '{{USER}}'@'localhost' (using password: {{YES | NO}})
 ```
 

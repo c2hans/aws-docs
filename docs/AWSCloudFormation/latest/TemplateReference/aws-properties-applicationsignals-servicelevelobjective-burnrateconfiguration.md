@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationsignals-servicelevelobjective-burnrateconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[LookBackWindowMinutes](#cfn-applicationsignals-servicelevelobjective-burnrateconfiguration-lookbackwindowminutes)" : {{Integer}}
 }
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationsignals-servicelevelobjective-burnrateconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [LookBackWindowMinutes](#cfn-applicationsignals-servicelevelobjective-burnrateconfiguration-lookbackwindowminutes): {{Integer}}
 ```
 

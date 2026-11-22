@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkmanager-transitgatewayroutetableattachment-proposedsegmentchange-syntax.json"></a>
 
-```
+```json
 {
   "[AttachmentPolicyRuleNumber](#cfn-networkmanager-transitgatewayroutetableattachment-proposedsegmentchange-attachmentpolicyrulenumber)" : {{Integer}},
   "[SegmentName](#cfn-networkmanager-transitgatewayroutetableattachment-proposedsegmentchange-segmentname)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkmanager-transitgatewayroutetableattachment-proposedsegmentchange-syntax.yaml"></a>
 
-```
+```yaml
   [AttachmentPolicyRuleNumber](#cfn-networkmanager-transitgatewayroutetableattachment-proposedsegmentchange-attachmentpolicyrulenumber): {{Integer}}
   [SegmentName](#cfn-networkmanager-transitgatewayroutetableattachment-proposedsegmentchange-segmentname): {{String}}
   [Tags](#cfn-networkmanager-transitgatewayroutetableattachment-proposedsegmentchange-tags): {{

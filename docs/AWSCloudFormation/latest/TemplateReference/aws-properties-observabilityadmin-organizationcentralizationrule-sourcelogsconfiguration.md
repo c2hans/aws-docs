@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-observabilityadmin-organizationcentralizationrule-sourcelogsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DataSourceSelectionCriteria](#cfn-observabilityadmin-organizationcentralizationrule-sourcelogsconfiguration-datasourceselectioncriteria)" : {{String}},
   "[EncryptedLogGroupStrategy](#cfn-observabilityadmin-organizationcentralizationrule-sourcelogsconfiguration-encryptedloggroupstrategy)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-observabilityadmin-organizationcentralizationrule-sourcelogsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DataSourceSelectionCriteria](#cfn-observabilityadmin-organizationcentralizationrule-sourcelogsconfiguration-datasourceselectioncriteria): {{String}}
   [EncryptedLogGroupStrategy](#cfn-observabilityadmin-organizationcentralizationrule-sourcelogsconfiguration-encryptedloggroupstrategy): {{String}}
   [LogGroupSelectionCriteria](#cfn-observabilityadmin-organizationcentralizationrule-sourcelogsconfiguration-loggroupselectioncriteria): {{String}}

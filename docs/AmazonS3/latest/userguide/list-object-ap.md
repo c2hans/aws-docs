@@ -33,7 +33,7 @@ The following `list-objects-v2` example command shows how you can use the AWS CL
 
 The following command lists objects for AWS account {{111122223333}} using access point {{my-access-point}}.
 
-```
+```bash
 aws s3api list-objects-v2 --bucket arn:aws:s3:{{AWS Region}}:111122223333:accesspoint/{{my-access-point}}
 ```
 

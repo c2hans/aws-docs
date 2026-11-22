@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rds-optiongroup-optionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DBSecurityGroupMemberships](#cfn-rds-optiongroup-optionconfiguration-dbsecuritygroupmemberships)" : {{[ String, ... ]}},
   "[OptionName](#cfn-rds-optiongroup-optionconfiguration-optionname)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rds-optiongroup-optionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DBSecurityGroupMemberships](#cfn-rds-optiongroup-optionconfiguration-dbsecuritygroupmemberships): {{
     - String}}
   [OptionName](#cfn-rds-optiongroup-optionconfiguration-optionname): {{String}}
@@ -92,7 +92,7 @@ The following example template uses `OptionName` and `OptionVersion` parameters 
 #### JSON
 <a name="aws-properties-rds-optiongroup-optionconfiguration--examples--Specify_an_option_configuration--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "APEX has a dependency on XMLDB, so, there must be at least one XMLDB when there is an APEX",
@@ -133,7 +133,7 @@ The following example template uses `OptionName` and `OptionVersion` parameters 
 #### YAML
 <a name="aws-properties-rds-optiongroup-optionconfiguration--examples--Specify_an_option_configuration--yaml"></a>
 
-```
+```yaml
 ---
 AWSTemplateFormatVersion: 2010-09-09
 Description: "APEX has a dependency on XMLDB, so, there must be at least one XMLDB when there is an APEX"

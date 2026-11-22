@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-service-servicenowservicedetails-syntax.json"></a>
 
-```
+```json
 {
   "[AuthorizationConfig](#cfn-devopsagent-service-servicenowservicedetails-authorizationconfig)" : {{ServiceNowAuthorizationConfig}},
   "[InstanceUrl](#cfn-devopsagent-service-servicenowservicedetails-instanceurl)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-service-servicenowservicedetails-syntax.yaml"></a>
 
-```
+```yaml
   [AuthorizationConfig](#cfn-devopsagent-service-servicenowservicedetails-authorizationconfig): {{
     ServiceNowAuthorizationConfig}}
   [InstanceUrl](#cfn-devopsagent-service-servicenowservicedetails-instanceurl): {{String}}

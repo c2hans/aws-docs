@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dms-endpoint-redshiftsettings-syntax.json"></a>
 
-```
+```json
 {
   "[AcceptAnyDate](#cfn-dms-endpoint-redshiftsettings-acceptanydate)" : {{Boolean}},
   "[AfterConnectScript](#cfn-dms-endpoint-redshiftsettings-afterconnectscript)" : {{String}},
@@ -50,7 +50,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dms-endpoint-redshiftsettings-syntax.yaml"></a>
 
-```
+```yaml
   [AcceptAnyDate](#cfn-dms-endpoint-redshiftsettings-acceptanydate): {{Boolean}}
   [AfterConnectScript](#cfn-dms-endpoint-redshiftsettings-afterconnectscript): {{String}}
   [BucketFolder](#cfn-dms-endpoint-redshiftsettings-bucketfolder): {{String}}

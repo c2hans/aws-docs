@@ -72,7 +72,7 @@ This example modifies all the parameters of an EC2 Instance Connect Endpoint in 
 #### Sample Request
 <a name="API_ModifyInstanceConnectEndpoint_Example_1_Request"></a>
 
-```
+```https
 https://ec2.amazonaws.com/?Action=ModifyInstanceConnectEndpoint
 &InstanceConnectEndpointId=eice-0123456789example
 &SecurityGroupId.1=sg-0123456789example
@@ -84,7 +84,7 @@ https://ec2.amazonaws.com/?Action=ModifyInstanceConnectEndpoint
 #### Sample Response
 <a name="API_ModifyInstanceConnectEndpoint_Example_1_Response"></a>
 
-```
+```https
 <ModifyInstanceConnectEndpointResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
     <requestId>59dbff89-35bd-4eac-99ed-be587EXAMPLE</requestId>
     <return>true</return>

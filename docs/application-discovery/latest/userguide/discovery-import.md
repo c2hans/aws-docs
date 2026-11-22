@@ -117,7 +117,7 @@ Use the following procedure to edit the permissions policy for the IAM user that
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [
@@ -179,7 +179,7 @@ Use the following procedure to create the managed policies necessary to give an 
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -212,7 +212,7 @@ Use the following procedure to create the managed policies necessary to give an 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

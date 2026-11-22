@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-forecastcomputation-syntax.json"></a>
 
-```
+```json
 {
   "[ComputationId](#cfn-quicksight-analysis-forecastcomputation-computationid)" : {{String}},
   "[CustomSeasonalityValue](#cfn-quicksight-analysis-forecastcomputation-customseasonalityvalue)" : {{Number}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-forecastcomputation-syntax.yaml"></a>
 
-```
+```yaml
   [ComputationId](#cfn-quicksight-analysis-forecastcomputation-computationid): {{String}}
   [CustomSeasonalityValue](#cfn-quicksight-analysis-forecastcomputation-customseasonalityvalue): {{Number}}
   [LowerBoundary](#cfn-quicksight-analysis-forecastcomputation-lowerboundary): {{Number}}

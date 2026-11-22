@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-harness-harnesshooktarget-syntax.json"></a>
 
-```
+```json
 {
   "[EventBridge](#cfn-bedrockagentcore-harness-harnesshooktarget-eventbridge)" : {{HarnessHookEventBridgeTarget}},
   "[Lambda](#cfn-bedrockagentcore-harness-harnesshooktarget-lambda)" : {{HarnessHookLambdaTarget}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-harness-harnesshooktarget-syntax.yaml"></a>
 
-```
+```yaml
   [EventBridge](#cfn-bedrockagentcore-harness-harnesshooktarget-eventbridge): {{
     HarnessHookEventBridgeTarget}}
   [Lambda](#cfn-bedrockagentcore-harness-harnesshooktarget-lambda): {{

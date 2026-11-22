@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-dashboardsourceentity-syntax.json"></a>
 
-```
+```json
 {
   "[SourceTemplate](#cfn-quicksight-dashboard-dashboardsourceentity-sourcetemplate)" : {{DashboardSourceTemplate}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-dashboardsourceentity-syntax.yaml"></a>
 
-```
+```yaml
   [SourceTemplate](#cfn-quicksight-dashboard-dashboardsourceentity-sourcetemplate): {{
     DashboardSourceTemplate}}
 ```

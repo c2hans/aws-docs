@@ -46,7 +46,7 @@ The following provides information about important configuration properties requ
 
 The following is the Amazon S3 JSON schema with simplified configuration structure:
 
-```
+```json
 {
   "type": "object",
   "properties": {
@@ -141,7 +141,7 @@ The following is the Amazon S3 JSON schema with simplified configuration structu
 
 The following is the Amazon S3 JSON schema example with simplified configuration:
 
-```
+```json
 {
   "type": "S3V2",
   "connectionConfiguration": {

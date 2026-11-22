@@ -8,7 +8,7 @@ By default, the Use\_Kubelet feature is disabled in the FluentBit Kubernetes plu
 
 To enable Use\_Kubelet, first add the nodes and nodes/proxy permissions to the clusterRole config.
 
-```
+```yaml
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
@@ -30,7 +30,7 @@ rules:
 
 In the DaemonSet configuration, this feature needs host network access. The image version for `amazon/aws-for-fluent-bit` should 2.12.0 or later, or the fluent bit image version should be 1.7.2 or later.
 
-```
+```yaml
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:
@@ -156,7 +156,7 @@ tolerations:
 
 The Kubernetes Plugin configuration should be similar to the following:
 
-```
+```yaml
 [FILTER]
   Name                kubernetes
   Match               application.*

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-webfunctionrevision-telemetryconfig-syntax.json"></a>
 
-```
+```json
 {
   "[LoggingConfig](#cfn-lambda-webfunctionrevision-telemetryconfig-loggingconfig)" : {{LoggingConfig}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-webfunctionrevision-telemetryconfig-syntax.yaml"></a>
 
-```
+```yaml
   [LoggingConfig](#cfn-lambda-webfunctionrevision-telemetryconfig-loggingconfig): {{
     LoggingConfig}}
 ```

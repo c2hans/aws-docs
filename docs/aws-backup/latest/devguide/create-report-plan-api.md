@@ -18,7 +18,7 @@ If you encrypt your bucket using a custom KMS key, the KMS key policy must meet 
 
 For single-account, single-Region reports, use the following syntax to call [CreateReportPlan](https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_CreateReportPlan.html).
 
-```
+```JSON
 {
    "ReportPlanName": "string",
    "ReportPlanDescription": "string",
@@ -38,7 +38,7 @@ For single-account, single-Region reports, use the following syntax to call [Cre
 
 When you call [DescribeReportPlan](https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_DescribeReportPlan.html) with the unique name of a report plan, the AWS Backup API responds with the following information.
 
-```
+```JSON
 {
     "ReportPlanArn": "string",
     "ReportPlanName": "string",
@@ -60,7 +60,7 @@ When you call [DescribeReportPlan](https://docs.aws.amazon.com/aws-backup/latest
 
 For multi-account, multi-Region reports, use the following syntax to call [CreateReportPlan](https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_CreateReportPlan.html).
 
-```
+```JSON
 {
    "IdempotencyToken": "string",
    "ReportDeliveryChannel": {
@@ -86,7 +86,7 @@ For multi-account, multi-Region reports, use the following syntax to call [Creat
 
 When you call [DescribeReportPlan](https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_DescribeReportPlan.html) with the unique name of a report plan, the AWS Backup API responds with the following information for multi-account, multi-Region plans:
 
-```
+```JSON
 {
    "ReportPlan": {
       "CreationTime": number,

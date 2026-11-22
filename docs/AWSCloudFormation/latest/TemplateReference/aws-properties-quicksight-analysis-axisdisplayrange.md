@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-axisdisplayrange-syntax.json"></a>
 
-```
+```json
 {
   "[DataDriven](#cfn-quicksight-analysis-axisdisplayrange-datadriven)" : {{Json}},
   "[MinMax](#cfn-quicksight-analysis-axisdisplayrange-minmax)" : {{AxisDisplayMinMaxRange}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-axisdisplayrange-syntax.yaml"></a>
 
-```
+```yaml
   [DataDriven](#cfn-quicksight-analysis-axisdisplayrange-datadriven): {{Json}}
   [MinMax](#cfn-quicksight-analysis-axisdisplayrange-minmax): {{
     AxisDisplayMinMaxRange}}

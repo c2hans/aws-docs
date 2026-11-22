@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-knowledgebase-mongodbatlasconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CollectionName](#cfn-bedrock-knowledgebase-mongodbatlasconfiguration-collectionname)" : {{String}},
   "[CredentialsSecretArn](#cfn-bedrock-knowledgebase-mongodbatlasconfiguration-credentialssecretarn)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-knowledgebase-mongodbatlasconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CollectionName](#cfn-bedrock-knowledgebase-mongodbatlasconfiguration-collectionname): {{String}}
   [CredentialsSecretArn](#cfn-bedrock-knowledgebase-mongodbatlasconfiguration-credentialssecretarn): {{String}}
   [DatabaseName](#cfn-bedrock-knowledgebase-mongodbatlasconfiguration-databasename): {{String}}

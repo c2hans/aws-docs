@@ -8,7 +8,7 @@ You can reorder columns only for tables with data in formats that read by name, 
 
 The following example creates a new table with the columns in a different order:
 
-```
+```sql
 CREATE EXTERNAL TABLE orders_parquet_columns_reordered (
    `o_comment` string,
    `o_orderkey` int,

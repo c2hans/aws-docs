@@ -6,6 +6,12 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateSAMLPr
 
 Updates the metadata document, SAML encryption settings, and private keys for an existing SAML provider. To rotate private keys, add your new private key and then remove the old key in a separate request.
 
+You can also use this operation to set, change, or remove the trusted identity propagation context provider, and to associate or disassociate an IAM Identity Center instance with the provider. To remove a configuration rather than replace it, use the `RemoveContextProvider` and `RemoveIdentityCenterInstance` parameters. For each configuration, provide either the new value or the corresponding `Remove` flag in a single request, but not both.
+
+A single request can change either the context provider or the provider metadata, but not both. Provider metadata includes the SAML metadata document, assertion encryption mode, private keys, and IAM Identity Center association. To change both, make separate `UpdateSAMLProvider` requests. To remove the context provider, first remove the IAM Identity Center association in a separate request.
+
+To control who can configure trusted identity propagation on a SAML provider, use the [iam:EnableIdentityPropagation](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_EnableIdentityPropagation), [iam:EnableIdentityCenterAssociation](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_EnableIdentityCenterAssociation), [iam:RequestIdentityProviderIssuers](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_RequestIdentityProviderIssuers), [iam:ResourceIdentityProviderIssuers](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_ResourceIdentityProviderIssuers), [iam:RequestIdentityCenterInstanceArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_RequestIdentityCenterInstanceArn), and [iam:ResourceIdentityCenterInstanceArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_ResourceIdentityCenterInstanceArn) condition keys in IAM policies. The `Request` keys contain the values in the request. The `Resource` keys contain the values stored on the provider.
+
 ## Request Parameters
 <a name="API_UpdateSAMLProvider_RequestParameters"></a>
 
@@ -22,6 +28,28 @@ Required: No
 Specifies the encryption setting for the SAML provider.
 Type: String
 Valid Values: `Required | Allowed`
+Required: No
+
+ ** ContextProvider **
+The trusted identity propagation context provider configuration to associate with the SAML provider. This replaces the existing context provider configuration. For more information, see [ContextProvider](https://docs.aws.amazon.com/IAM/latest/APIReference/API_ContextProvider.html).
+Type: [ContextProvider](API_ContextProvider.md) object
+Required: No
+
+ ** IdentityCenterInstanceArn **
+The Amazon Resource Name (ARN) of the IAM Identity Center instance to associate with the SAML provider.
+For the format, see [InstanceMetadata](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_InstanceMetadata.html) in the *IAM Identity Center API Reference*.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 1224.
+Required: No
+
+ ** RemoveContextProvider **
+Specifies whether to remove the existing trusted identity propagation context provider configuration from the SAML provider. When set to `true`, the context provider is removed. This parameter is mutually exclusive with `ContextProvider`.
+Type: Boolean
+Required: No
+
+ ** RemoveIdentityCenterInstance **
+Specifies whether to disassociate the IAM Identity Center instance from the SAML provider. When set to `true`, the instance is disassociated. This parameter is mutually exclusive with `IdentityCenterInstanceArn`.
+Type: Boolean
 Required: No
 
  ** RemovePrivateKey **
@@ -112,6 +140,39 @@ LCBCYXNlNjQtZW5jb2RlZCBpbnRvIGEgYmlnIHN0cmluZy4=
 </UpdateSAMLProviderResult>
 <ResponseMetadata>
   <RequestId>29f47818-99f5-11e1-a4c3-27EXAMPLE804</RequestId>
+</ResponseMetadata>
+</UpdateSAMLProviderResponse>
+```
+
+### Example
+<a name="API_UpdateSAMLProvider_Example_2"></a>
+
+This example illustrates one usage of UpdateSAMLProvider.
+
+#### Sample Request
+<a name="API_UpdateSAMLProvider_Example_2_Request"></a>
+
+```
+https://iam.amazonaws.com/?Action=UpdateSAMLProvider
+&SAMLProviderArn=arn:aws:iam::123456789012:saml-provider/MyUniversity
+&ContextProvider.SubjectSourceKey=email
+&ContextProvider.SubjectTypeValue=user
+&ContextProvider.KeyDefinitionList.member.1.SourceKey=department
+&ContextProvider.KeyDefinitionList.member.1.TargetKey=department
+&Version=2010-05-08
+&AUTHPARAMS
+```
+
+#### Sample Response
+<a name="API_UpdateSAMLProvider_Example_2_Response"></a>
+
+```
+<UpdateSAMLProviderResponse xmlns="https://iam.amazonaws.com/doc/2010-05-08/">
+<UpdateSAMLProviderResult>
+  <SAMLProviderArn>arn:aws:iam::123456789012:saml-provider/MyUniversity</SAMLProviderArn>
+</UpdateSAMLProviderResult>
+<ResponseMetadata>
+  <RequestId>3b8e2a19-99f5-11e1-a4c3-27EXAMPLE804</RequestId>
 </ResponseMetadata>
 </UpdateSAMLProviderResponse>
 ```

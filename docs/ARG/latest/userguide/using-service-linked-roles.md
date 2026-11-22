@@ -72,7 +72,7 @@ The role disappears from your list of roles in the IAM console.
 **To delete the Resource Groups service-linked role**
 To delete the role, enter the following command with the parameters exactly as shown. Do not replace any of the values.
 
-```
+```bash
 $ aws iam delete-service-linked-role \
     --role-name AWSServiceRoleForResourceGroups
 {
@@ -82,7 +82,7 @@ $ aws iam delete-service-linked-role \
 
 The command returns a task ID. The actual role deletion occurs asynchronously. You can check the status of the role deletion by passing the provided task identifier to the following AWS CLI command.
 
-```
+```bash
 $ aws iam get-service-linked-role-deletion-status \
     --deletion-task-id "task/aws-service-role/resource-groups.amazonaws.com/AWSServiceRoleForResourceGroups/34e58943-e9a5-4220-9856-fc565EXAMPLE"
 {

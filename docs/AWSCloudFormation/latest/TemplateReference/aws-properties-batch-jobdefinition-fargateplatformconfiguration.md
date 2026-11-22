@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-fargateplatformconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[PlatformVersion](#cfn-batch-jobdefinition-fargateplatformconfiguration-platformversion)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-fargateplatformconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [PlatformVersion](#cfn-batch-jobdefinition-fargateplatformconfiguration-platformversion): {{String}}
 ```
 

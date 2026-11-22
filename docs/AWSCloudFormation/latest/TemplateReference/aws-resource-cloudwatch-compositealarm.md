@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudwatch-compositealarm-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudWatch::CompositeAlarm",
   "Properties" : {
@@ -47,7 +47,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudwatch-compositealarm-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudWatch::CompositeAlarm
 Properties:
   [ActionConfiguration](#cfn-cloudwatch-compositealarm-actionconfiguration): {{
@@ -208,7 +208,7 @@ This example creates composite alarms named "HighResourceUsage" and "DeploymentI
 #### JSON
 <a name="aws-resource-cloudwatch-compositealarm--examples--Composite_alarm_based_on_two_metric_alarms_and_another_composite_alarm--json"></a>
 
-```
+```json
 "Resources": {
     "HighResourceUsage": {
         "Type": "AWS::CloudWatch::CompositeAlarm",
@@ -269,7 +269,7 @@ This example creates composite alarms named "HighResourceUsage" and "DeploymentI
 #### YAML
 <a name="aws-resource-cloudwatch-compositealarm--examples--Composite_alarm_based_on_two_metric_alarms_and_another_composite_alarm--yaml"></a>
 
-```
+```yaml
 Resources:
   HighResourceUsage:
     Type: AWS::CloudWatch::CompositeAlarm

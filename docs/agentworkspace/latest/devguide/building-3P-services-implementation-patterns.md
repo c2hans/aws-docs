@@ -9,7 +9,7 @@ third-party services can implement various patterns to extend the agent workspac
 ## Launching an application on startup
 <a name="building-3P-services-launching-app-on-startup"></a>
 
-```
+```typescript
 import {
   AmazonConnectService,
   ServiceContext,
@@ -51,7 +51,7 @@ const { provider } = AmazonConnectService.init({
 ## Contact event listening with application launching functionality
 <a name="building-3P-services-contact-event-listening"></a>
 
-```
+```typescript
 import {
   AmazonConnectService,
   ServiceContext,
@@ -132,7 +132,7 @@ const { provider } = AmazonConnectService.init({
 ## Authentication popup functionality
 <a name="building-3P-services-authentication-popup"></a>
 
-```
+```typescript
 import { AmazonConnectService } from "@amazon-connect/app";
 import { AppControllerClient } from "@amazon-connect/app-controller";
 import { AmazonConnectProvider } from "@amazon-connect/core";
@@ -274,7 +274,7 @@ export async function launchApp(targetAppName: string) {
 
 This is the HTML template for the authentication popup:
 
-```
+```html
 <!DOCTYPE html>
 <html>
   <head>

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apigatewayv2-apigatewaymanagedoverrides-accesslogsettings-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationArn](#cfn-apigatewayv2-apigatewaymanagedoverrides-accesslogsettings-destinationarn)" : {{String}},
   "[Format](#cfn-apigatewayv2-apigatewaymanagedoverrides-accesslogsettings-format)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apigatewayv2-apigatewaymanagedoverrides-accesslogsettings-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationArn](#cfn-apigatewayv2-apigatewaymanagedoverrides-accesslogsettings-destinationarn): {{String}}
   [Format](#cfn-apigatewayv2-apigatewaymanagedoverrides-accesslogsettings-format): {{String}}
 ```

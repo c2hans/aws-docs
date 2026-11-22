@@ -8,7 +8,7 @@ Your account ID is a 12-digit number that uniquely identifies your account. By d
 
 Your sign-in page URL has the following format, by default.
 
-```
+```yaml
 https://{{Your_Account_ID}}.signin.aws.amazon.com/console/
 ```
 
@@ -16,7 +16,7 @@ Many people find words to be easier to remember than numbers, so creating an ali
 
 If you create an AWS account alias for your AWS account ID, your sign-in page URL looks like the following example.
 
-```
+```yaml
 https://{{Your_Account_Alias}}.signin.aws.amazon.com/console/
 ```
 

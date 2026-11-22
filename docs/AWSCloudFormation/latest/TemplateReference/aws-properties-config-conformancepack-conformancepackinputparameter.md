@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-config-conformancepack-conformancepackinputparameter-syntax.json"></a>
 
-```
+```json
 {
   "[ParameterName](#cfn-config-conformancepack-conformancepackinputparameter-parametername)" : {{String}},
   "[ParameterValue](#cfn-config-conformancepack-conformancepackinputparameter-parametervalue)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-config-conformancepack-conformancepackinputparameter-syntax.yaml"></a>
 
-```
+```yaml
   [ParameterName](#cfn-config-conformancepack-conformancepackinputparameter-parametername): {{String}}
   [ParameterValue](#cfn-config-conformancepack-conformancepackinputparameter-parametervalue): {{String}}
 ```

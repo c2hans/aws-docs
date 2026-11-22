@@ -40,7 +40,7 @@ The IP address type must match the IP type of the subnet. Additionally, the IP a
 
 The following `create-mount-target` example command shows how you can use the AWS CLI to create a mount target for S3 Files.
 
-```
+```bash
 aws s3files create-mount-target --region {{aws-region}} --file-system-id {{file-system-id}} --subnet-id {{subnet-id}}
 ```
 

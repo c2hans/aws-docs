@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-routerinput-failoverrouterinputprotocolconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Rist](#cfn-mediaconnect-routerinput-failoverrouterinputprotocolconfiguration-rist)" : {{RistRouterInputConfiguration}},
   "[RtmpPush](#cfn-mediaconnect-routerinput-failoverrouterinputprotocolconfiguration-rtmppush)" : {{RtmpPushRouterInputConfiguration}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-routerinput-failoverrouterinputprotocolconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Rist](#cfn-mediaconnect-routerinput-failoverrouterinputprotocolconfiguration-rist): {{
     RistRouterInputConfiguration}}
   [RtmpPush](#cfn-mediaconnect-routerinput-failoverrouterinputprotocolconfiguration-rtmppush): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-dataautomationproject-splitterconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[State](#cfn-bedrock-dataautomationproject-splitterconfiguration-state)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-dataautomationproject-splitterconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [State](#cfn-bedrock-dataautomationproject-splitterconfiguration-state): {{String}}
 ```
 

@@ -14,6 +14,11 @@ The version of the Internet Key Exchange (IKE) protocol being used.
 Type: String
 Required: No
 
+ ** Phase1AdditionalKeyExchangeSet.N **
+The additional key exchanges negotiated in Phase 1 IKE negotiations.
+Type: Array of [ActiveVpnTunnelAdditionalKeyExchange](API_ActiveVpnTunnelAdditionalKeyExchange.md) objects
+Required: No
+
  ** phase1DHGroup **
 The Diffie-Hellman group number being used in Phase 1 IKE negotiations.
 Type: Integer
@@ -27,6 +32,11 @@ Required: No
  ** phase1IntegrityAlgorithm **
 The integrity algorithm negotiated in Phase 1 IKE negotiations.
 Type: String
+Required: No
+
+ ** Phase2AdditionalKeyExchangeSet.N **
+The additional key exchanges negotiated in Phase 2 IKE negotiations.
+Type: Array of [ActiveVpnTunnelAdditionalKeyExchange](API_ActiveVpnTunnelAdditionalKeyExchange.md) objects
 Required: No
 
  ** phase2DHGroup **

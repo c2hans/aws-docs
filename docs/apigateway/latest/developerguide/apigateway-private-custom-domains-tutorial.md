@@ -43,7 +43,7 @@ API Gateway provisions a domain name with a `deny` all resource policy. This is 
 1. Enter the following resource policy in the code editor. Replace the VPC endpoint {{vpce-abcd1234efg}} with your own VPC endpoint ID.
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -83,7 +83,7 @@ For this example, you'll attach the following resource policy as the `policy` by
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

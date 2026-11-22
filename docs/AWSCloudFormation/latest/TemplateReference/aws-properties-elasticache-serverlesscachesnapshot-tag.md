@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticache-serverlesscachesnapshot-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-elasticache-serverlesscachesnapshot-tag-key)" : {{String}},
   "[Value](#cfn-elasticache-serverlesscachesnapshot-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticache-serverlesscachesnapshot-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-elasticache-serverlesscachesnapshot-tag-key): {{String}}
   [Value](#cfn-elasticache-serverlesscachesnapshot-tag-value): {{String}}
 ```

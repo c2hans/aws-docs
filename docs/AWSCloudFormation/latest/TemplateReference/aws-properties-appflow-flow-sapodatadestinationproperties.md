@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-flow-sapodatadestinationproperties-syntax.json"></a>
 
-```
+```json
 {
   "[ErrorHandlingConfig](#cfn-appflow-flow-sapodatadestinationproperties-errorhandlingconfig)" : {{ErrorHandlingConfig}},
   "[IdFieldNames](#cfn-appflow-flow-sapodatadestinationproperties-idfieldnames)" : {{[ String, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-flow-sapodatadestinationproperties-syntax.yaml"></a>
 
-```
+```yaml
   [ErrorHandlingConfig](#cfn-appflow-flow-sapodatadestinationproperties-errorhandlingconfig): {{
     ErrorHandlingConfig}}
   [IdFieldNames](#cfn-appflow-flow-sapodatadestinationproperties-idfieldnames): {{

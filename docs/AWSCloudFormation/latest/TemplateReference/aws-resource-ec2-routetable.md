@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-routetable-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::RouteTable",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-routetable-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::RouteTable
 Properties:
   [Tags](#cfn-ec2-routetable-tags): {{
@@ -88,7 +88,7 @@ The following example uses the VPC ID from a VPC named myVPC that was declared e
 #### JSON
 <a name="aws-resource-ec2-routetable--examples--Route_table--json"></a>
 
-```
+```json
 "myRouteTable" : {
    "Type" : "AWS::EC2::RouteTable",
    "Properties" : {
@@ -101,7 +101,7 @@ The following example uses the VPC ID from a VPC named myVPC that was declared e
 #### YAML
 <a name="aws-resource-ec2-routetable--examples--Route_table--yaml"></a>
 
-```
+```yaml
   myRouteTable:
     Type: AWS::EC2::RouteTable
     Properties:

@@ -15,7 +15,7 @@ import cf from "cloudfront";
 
 Renames certificate metadata headers to custom header names.
 
-```
+```javascript
 cf.mtls.renameClientCertHeaders({
     "CloudFront-Viewer-Cert-Pem": "X-Client-Cert",
     "CloudFront-Viewer-Cert-Serial-Number": "X-Client-Cert-Serial",
@@ -39,7 +39,7 @@ Allowed source headers:
 
 Renames PEM certificate headers and optionally reformats the certificate encoding.
 
-```
+```javascript
 cf.mtls.renamePemHeaders({
     "Client-Cert": {
         "newHeaderName": "X-Leaf-Cert",
@@ -85,7 +85,7 @@ For `Client-Cert` and `Client-Cert-Chain`:
 
 Combines `Client-Cert` and `Client-Cert-Chain` into a single header containing the full certificate chain.
 
-```
+```javascript
 cf.mtls.combinePemHeaders({
     "newHeaderName": "X-Full-Chain",
     "pemCertFormatInfo": {

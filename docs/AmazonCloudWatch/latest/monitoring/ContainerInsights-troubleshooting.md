@@ -61,7 +61,7 @@ This section might be useful if all or some pod metrics are missing after you de
 
 These errors can be caused by changes in the container runtime, such as containerd or the Docker systemd cgroup driver. You can usually solve this by updating your deployment manifest so that the containerd socket from the host is mounted into the container. See the following example:
 
-```
+```yaml
 # For full example see https://github.com/aws-samples/amazon-cloudwatch-container-insights/blob/latest/k8s-deployment-manifest-templates/deployment-mode/daemonset/container-insights-monitoring/cwagent/cwagent-daemonset.yaml
 apiVersion: apps/v1
 kind: DaemonSet
@@ -107,7 +107,7 @@ Bottlerocket is a Linux-based open source operating system that is purpose-built
 
 Bottlerocket uses a different `containerd` path on the host, so you need to change the volumes to its location. If you don't, you see an error in the logs that includes `W! No pod metric collected`. See the following example.
 
-```
+```yaml
 volumes:
   # ...
     - name: containerdsock

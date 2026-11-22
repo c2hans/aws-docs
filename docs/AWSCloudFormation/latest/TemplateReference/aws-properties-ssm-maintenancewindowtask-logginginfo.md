@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssm-maintenancewindowtask-logginginfo-syntax.json"></a>
 
-```
+```json
 {
   "[Region](#cfn-ssm-maintenancewindowtask-logginginfo-region)" : {{String}},
   "[S3Bucket](#cfn-ssm-maintenancewindowtask-logginginfo-s3bucket)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssm-maintenancewindowtask-logginginfo-syntax.yaml"></a>
 
-```
+```yaml
   [Region](#cfn-ssm-maintenancewindowtask-logginginfo-region): {{String}}
   [S3Bucket](#cfn-ssm-maintenancewindowtask-logginginfo-s3bucket): {{String}}
   [S3Prefix](#cfn-ssm-maintenancewindowtask-logginginfo-s3prefix): {{String}}

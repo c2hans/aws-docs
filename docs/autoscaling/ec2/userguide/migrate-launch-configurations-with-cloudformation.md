@@ -29,7 +29,7 @@ When migrating to launch templates, this topic saves you time by providing instr
 
   The following shows example output.
 
-  ```
+  ```json
   [
       "{stack-name}-group-1",
       "{stack-name}-group-2",
@@ -58,7 +58,7 @@ Follow the steps in this section to do the following:
 
    **Example: A simple launch configuration**
 
-   ```
+   ```yaml
    ---
    Resources:
      myLaunchConfig:
@@ -83,7 +83,7 @@ Follow the steps in this section to do the following:
 
    **Example: The launch template equivalent**
 
-   ```
+   ```yaml
    ---
    Resources:
      myLaunchTemplate:
@@ -134,7 +134,7 @@ Follow the steps in this section to do the following:
 
    **Example: Without a mixed instances policy**
 
-   ```
+   ```yaml
    ---
    Resources:
      myASG:
@@ -148,7 +148,7 @@ Follow the steps in this section to do the following:
 
    **Example: With a mixed instances policy**
 
-   ```
+   ```yaml
    ---
    Resources:
      myASG:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-detective-graph-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Detective::Graph",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-detective-graph-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Detective::Graph
 Properties:
   [AutoEnableMembers](#cfn-detective-graph-autoenablemembers): {{Boolean}}
@@ -87,7 +87,7 @@ This example shows how to declare a new `AWS:Detective:Graph` resource to create
 #### JSON
 <a name="aws-resource-detective-graph--examples--Creating_a_new_Detective_behavior_graph--json"></a>
 
-```
+```json
 "NewGraph": {
     "Type": "AWS::Detective::Graph"
     "Properties": {
@@ -108,7 +108,7 @@ This example shows how to declare a new `AWS:Detective:Graph` resource to create
 #### YAML
 <a name="aws-resource-detective-graph--examples--Creating_a_new_Detective_behavior_graph--yaml"></a>
 
-```
+```yaml
 NewGraph:
     Type: AWS::Detective::Graph
     Properties:

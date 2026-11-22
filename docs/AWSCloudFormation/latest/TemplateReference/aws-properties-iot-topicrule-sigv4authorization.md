@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicrule-sigv4authorization-syntax.json"></a>
 
-```
+```json
 {
   "[RoleArn](#cfn-iot-topicrule-sigv4authorization-rolearn)" : {{String}},
   "[ServiceName](#cfn-iot-topicrule-sigv4authorization-servicename)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicrule-sigv4authorization-syntax.yaml"></a>
 
-```
+```yaml
   [RoleArn](#cfn-iot-topicrule-sigv4authorization-rolearn): {{String}}
   [ServiceName](#cfn-iot-topicrule-sigv4authorization-servicename): {{String}}
   [SigningRegion](#cfn-iot-topicrule-sigv4authorization-signingregion): {{String}}

@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iot-softwarepackageversion-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoT::SoftwarePackageVersion",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iot-softwarepackageversion-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoT::SoftwarePackageVersion
 Properties:
   [Artifact](#cfn-iot-softwarepackageversion-artifact): {{
@@ -187,7 +187,7 @@ The following example declares a package version and the values of its attribute
 #### JSON
 <a name="aws-resource-iot-softwarepackageversion--examples----json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -212,7 +212,7 @@ The following example declares a package version and the values of its attribute
 #### YAML
 <a name="aws-resource-iot-softwarepackageversion--examples----yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   MyPackageVersion:

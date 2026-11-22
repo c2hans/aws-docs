@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-datasync-locationfsxlustre-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DataSync::LocationFSxLustre",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-datasync-locationfsxlustre-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DataSync::LocationFSxLustre
 Properties:
   [FsxFilesystemArn](#cfn-datasync-locationfsxlustre-fsxfilesystemarn): {{String}}
@@ -119,7 +119,7 @@ The following examples specify an FSx for Lustre location for DataSync, includin
 #### JSON
 <a name="aws-resource-datasync-locationfsxlustre--examples--Specify_an_Amazon_FSx_for_Lustre_location_for_DataSync--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Specifies an FSx for Lustre location for DataSync",
@@ -141,7 +141,7 @@ The following examples specify an FSx for Lustre location for DataSync, includin
 #### YAML
 <a name="aws-resource-datasync-locationfsxlustre--examples--Specify_an_Amazon_FSx_for_Lustre_location_for_DataSync--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Specifies an FSx for Lustre location for DataSync
 Resources:

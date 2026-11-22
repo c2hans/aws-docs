@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-acmpca-certificateauthority-crldistributionpointextensionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[OmitExtension](#cfn-acmpca-certificateauthority-crldistributionpointextensionconfiguration-omitextension)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-acmpca-certificateauthority-crldistributionpointextensionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [OmitExtension](#cfn-acmpca-certificateauthority-crldistributionpointextensionconfiguration-omitextension): {{Boolean}}
 ```
 

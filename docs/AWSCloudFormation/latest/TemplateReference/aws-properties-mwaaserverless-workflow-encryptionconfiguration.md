@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mwaaserverless-workflow-encryptionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[KmsKeyId](#cfn-mwaaserverless-workflow-encryptionconfiguration-kmskeyid)" : {{String}},
   "[Type](#cfn-mwaaserverless-workflow-encryptionconfiguration-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mwaaserverless-workflow-encryptionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [KmsKeyId](#cfn-mwaaserverless-workflow-encryptionconfiguration-kmskeyid): {{String}}
   [Type](#cfn-mwaaserverless-workflow-encryptionconfiguration-type): {{String}}
 ```

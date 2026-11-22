@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-identitystore-groupmembership-memberid-syntax.json"></a>
 
-```
+```json
 {
   "[UserId](#cfn-identitystore-groupmembership-memberid-userid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-identitystore-groupmembership-memberid-syntax.yaml"></a>
 
-```
+```yaml
   [UserId](#cfn-identitystore-groupmembership-memberid-userid): {{String}}
 ```
 

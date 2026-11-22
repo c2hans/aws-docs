@@ -77,7 +77,7 @@ Create an ECS Express Mode service using the same container image used by your A
 
 **Example CLI command:**
 
-```
+```bash
 aws ecs create-express-gateway-service \
     --execution-role-arn arn:aws:iam::{{123456789012}}:role/ecsTaskExecutionRole \
     --infrastructure-role-arn arn:aws:iam::{{123456789012}}:role/ecsInfrastructureRoleForExpressServices \
@@ -184,7 +184,7 @@ After verifying that the ECS Express Mode service handles production traffic cor
 
 **Delete the App Runner service:**
 
-```
+```bash
 aws apprunner delete-service --service-arn {{your-app-runner-service-arn}}
 ```
 
@@ -243,7 +243,7 @@ To replicate App Runner's automatic deployment on code push, configure GitHub Ac
 
 Create a workflow file at `.github/workflows/deploy.yml`:
 
-```
+```yaml
 name: Build and Deploy to ECS
 
 on:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ssm-cloudconnector-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SSM::CloudConnector",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ssm-cloudconnector-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SSM::CloudConnector
 Properties:
   [ConfigConnectorArn](#cfn-ssm-cloudconnector-configconnectorarn): {{String}}
@@ -143,7 +143,7 @@ The following example creates a cloud connector that connects AWS Systems Manage
 #### JSON
 <a name="aws-resource-ssm-cloudconnector--examples--Create_a_cloud_connector_to_Microsoft_Azure--json"></a>
 
-```
+```json
 {
     "Type": "AWS::SSM::CloudConnector",
     "Properties": {
@@ -180,7 +180,7 @@ The following example creates a cloud connector that connects AWS Systems Manage
 #### YAML
 <a name="aws-resource-ssm-cloudconnector--examples--Create_a_cloud_connector_to_Microsoft_Azure--yaml"></a>
 
-```
+```yaml
 Type: AWS::SSM::CloudConnector
 Properties:
   DisplayName: MyAzureCloudConnector

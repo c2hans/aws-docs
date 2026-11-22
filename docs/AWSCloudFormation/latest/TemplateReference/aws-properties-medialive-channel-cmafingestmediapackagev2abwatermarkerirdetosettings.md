@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-cmafingestmediapackagev2abwatermarkerirdetosettings-syntax.json"></a>
 
-```
+```json
 {
   "[AdditionalDestinationsAlternateDestinations](#cfn-medialive-channel-cmafingestmediapackagev2abwatermarkerirdetosettings-additionaldestinationsalternatedestinations)" : {{[ OutputLocationRef, ... ]}},
   "[AlternateDestination](#cfn-medialive-channel-cmafingestmediapackagev2abwatermarkerirdetosettings-alternatedestination)" : {{OutputLocationRef}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-cmafingestmediapackagev2abwatermarkerirdetosettings-syntax.yaml"></a>
 
-```
+```yaml
   [AdditionalDestinationsAlternateDestinations](#cfn-medialive-channel-cmafingestmediapackagev2abwatermarkerirdetosettings-additionaldestinationsalternatedestinations): {{
     - OutputLocationRef}}
   [AlternateDestination](#cfn-medialive-channel-cmafingestmediapackagev2abwatermarkerirdetosettings-alternatedestination): {{

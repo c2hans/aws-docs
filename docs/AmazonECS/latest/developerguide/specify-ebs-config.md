@@ -15,7 +15,7 @@ The following task definition shows the syntax for the `mountPoints` and `volume
 ## Linux
 <a name="linux-example"></a>
 
-```
+```JSON
 {
     "family": {{"mytaskdef"}},
     "containerDefinitions": [
@@ -59,7 +59,7 @@ The following task definition shows the syntax for the `mountPoints` and `volume
 ## Windows
 <a name="windows-example"></a>
 
-```
+```JSON
 {
     "family": {{"mytaskdef"}},
      "memory": "4096",

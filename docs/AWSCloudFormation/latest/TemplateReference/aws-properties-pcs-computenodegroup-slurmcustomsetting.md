@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcs-computenodegroup-slurmcustomsetting-syntax.json"></a>
 
-```
+```json
 {
   "[ParameterName](#cfn-pcs-computenodegroup-slurmcustomsetting-parametername)" : {{String}},
   "[ParameterValue](#cfn-pcs-computenodegroup-slurmcustomsetting-parametervalue)" : {{String}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcs-computenodegroup-slurmcustomsetting-syntax.yaml"></a>
 
-```
+```yaml
   [ParameterName](#cfn-pcs-computenodegroup-slurmcustomsetting-parametername): {{String}}
   [ParameterValue](#cfn-pcs-computenodegroup-slurmcustomsetting-parametervalue): {{String}}
 ```

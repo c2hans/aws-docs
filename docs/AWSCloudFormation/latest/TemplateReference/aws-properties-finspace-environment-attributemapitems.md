@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-finspace-environment-attributemapitems-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-finspace-environment-attributemapitems-key)" : {{String}},
   "[Value](#cfn-finspace-environment-attributemapitems-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-finspace-environment-attributemapitems-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-finspace-environment-attributemapitems-key): {{String}}
   [Value](#cfn-finspace-environment-attributemapitems-value): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-waf-rule-predicate-syntax.json"></a>
 
-```
+```json
 {
   "[DataId](#cfn-waf-rule-predicate-dataid)" : {{String}},
   "[Negated](#cfn-waf-rule-predicate-negated)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-waf-rule-predicate-syntax.yaml"></a>
 
-```
+```yaml
   [DataId](#cfn-waf-rule-predicate-dataid): {{String}}
   [Negated](#cfn-waf-rule-predicate-negated): {{Boolean}}
   [Type](#cfn-waf-rule-predicate-type): {{String}}

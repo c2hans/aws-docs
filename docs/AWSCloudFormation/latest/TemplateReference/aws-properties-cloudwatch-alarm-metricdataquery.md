@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-alarm-metricdataquery-syntax.json"></a>
 
-```
+```json
 {
   "[AccountId](#cfn-cloudwatch-alarm-metricdataquery-accountid)" : {{String}},
   "[Expression](#cfn-cloudwatch-alarm-metricdataquery-expression)" : {{String}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-alarm-metricdataquery-syntax.yaml"></a>
 
-```
+```yaml
   [AccountId](#cfn-cloudwatch-alarm-metricdataquery-accountid): {{String}}
   [Expression](#cfn-cloudwatch-alarm-metricdataquery-expression): {{String}}
   [Id](#cfn-cloudwatch-alarm-metricdataquery-id): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-arcregionswitch-plan-lambdas-syntax.json"></a>
 
-```
+```json
 {
   "[Arn](#cfn-arcregionswitch-plan-lambdas-arn)" : {{String}},
   "[CrossAccountRole](#cfn-arcregionswitch-plan-lambdas-crossaccountrole)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-arcregionswitch-plan-lambdas-syntax.yaml"></a>
 
-```
+```yaml
   [Arn](#cfn-arcregionswitch-plan-lambdas-arn): {{String}}
   [CrossAccountRole](#cfn-arcregionswitch-plan-lambdas-crossaccountrole): {{String}}
   [ExternalId](#cfn-arcregionswitch-plan-lambdas-externalid): {{String}}

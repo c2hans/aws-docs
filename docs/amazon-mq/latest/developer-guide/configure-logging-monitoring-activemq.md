@@ -58,7 +58,7 @@ The following example [IAM-based policy](https://docs.aws.amazon.com/AmazonCloud
 
 ****
 
-```
+```json
 {
                     "Version":"2012-10-17",
                     "Statement": [
@@ -95,7 +95,7 @@ The following resource-based policy grants permission for `logs:CreateLogStream`
 
 ****
 
-```
+```json
 {
                             "Version":"2012-10-17",
                             "Statement": [
@@ -113,7 +113,7 @@ The following resource-based policy grants permission for `logs:CreateLogStream`
 
 This resource-based policy *must* be configured by using the AWS CLI as shown by the following command. In the example, replace `{{us-east-1}}` with your own information.
 
-```
+```bash
 aws --region {{us-east-1}} logs put-resource-policy --policy-name AmazonMQ-logs \
                         --policy-document "{\"Version\": \"2012-10-17\", \"Statement\":[{ \"Effect\": \"Allow\", \"Principal\": { \"Service\": \"mq.amazonaws.com\" },
                         \"Action\": [\"logs:CreateLogStream\", \"logs:PutLogEvents\"], \"Resource\": \"arn:aws:logs:*:*:log-group:\/aws\/amazonmq\/*\" }]}"
@@ -139,7 +139,7 @@ Because this example uses the `/aws/amazonmq/` prefix, you need to configure the
 
 ****
 
-```
+```json
 {
                         "Version":"2012-10-17",
                         "Statement": [
@@ -173,7 +173,7 @@ Because this example uses the `/aws/amazonmq/` prefix, you need to configure the
 
 ****
 
-```
+```json
 {
                             "Version":"2012-10-17",
                             "Statement": [

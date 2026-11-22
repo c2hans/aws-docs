@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-topic-namedentitydefinitionmetric-syntax.json"></a>
 
-```
+```json
 {
   "[Aggregation](#cfn-quicksight-topic-namedentitydefinitionmetric-aggregation)" : {{String}},
   "[AggregationFunctionParameters](#cfn-quicksight-topic-namedentitydefinitionmetric-aggregationfunctionparameters)" : {{{{{Key}}: {{Value}}, ...}}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-topic-namedentitydefinitionmetric-syntax.yaml"></a>
 
-```
+```yaml
   [Aggregation](#cfn-quicksight-topic-namedentitydefinitionmetric-aggregation): {{String}}
   [AggregationFunctionParameters](#cfn-quicksight-topic-namedentitydefinitionmetric-aggregationfunctionparameters): {{
     {{Key}}: {{Value}}}}

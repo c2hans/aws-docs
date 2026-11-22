@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-virtualgateway-subjectalternativenamematchers-syntax.json"></a>
 
-```
+```json
 {
   "[Exact](#cfn-appmesh-virtualgateway-subjectalternativenamematchers-exact)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-virtualgateway-subjectalternativenamematchers-syntax.yaml"></a>
 
-```
+```yaml
   [Exact](#cfn-appmesh-virtualgateway-subjectalternativenamematchers-exact): {{
     - String}}
 ```

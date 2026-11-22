@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-managedblockchain-member-networkfabricconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Edition](#cfn-managedblockchain-member-networkfabricconfiguration-edition)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-managedblockchain-member-networkfabricconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Edition](#cfn-managedblockchain-member-networkfabricconfiguration-edition): {{String}}
 ```
 

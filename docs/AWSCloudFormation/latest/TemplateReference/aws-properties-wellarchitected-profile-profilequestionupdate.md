@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wellarchitected-profile-profilequestionupdate-syntax.json"></a>
 
-```
+```json
 {
   "[QuestionId](#cfn-wellarchitected-profile-profilequestionupdate-questionid)" : {{String}},
   "[SelectedChoiceIds](#cfn-wellarchitected-profile-profilequestionupdate-selectedchoiceids)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wellarchitected-profile-profilequestionupdate-syntax.yaml"></a>
 
-```
+```yaml
   [QuestionId](#cfn-wellarchitected-profile-profilequestionupdate-questionid): {{String}}
   [SelectedChoiceIds](#cfn-wellarchitected-profile-profilequestionupdate-selectedchoiceids): {{
     - String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-groundstation-config-dataflowendpointconfig-syntax.json"></a>
 
-```
+```json
 {
   "[DataflowEndpointName](#cfn-groundstation-config-dataflowendpointconfig-dataflowendpointname)" : {{String}},
   "[DataflowEndpointRegion](#cfn-groundstation-config-dataflowendpointconfig-dataflowendpointregion)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-groundstation-config-dataflowendpointconfig-syntax.yaml"></a>
 
-```
+```yaml
   [DataflowEndpointName](#cfn-groundstation-config-dataflowendpointconfig-dataflowendpointname): {{String}}
   [DataflowEndpointRegion](#cfn-groundstation-config-dataflowendpointconfig-dataflowendpointregion): {{String}}
 ```
@@ -57,7 +57,7 @@ The following example creates a Ground Station `DataflowEndpointConfig`
 #### JSON
 <a name="aws-properties-groundstation-config-dataflowendpointconfig--examples--Create_a_DataflowEndpointConfig--json"></a>
 
-```
+```json
 {
   "DataflowEndpointConfig": {
     "DataflowEndpointName": "Downlink Demod Decode",
@@ -69,7 +69,7 @@ The following example creates a Ground Station `DataflowEndpointConfig`
 #### YAML
 <a name="aws-properties-groundstation-config-dataflowendpointconfig--examples--Create_a_DataflowEndpointConfig--yaml"></a>
 
-```
+```yaml
 DataflowEndpointConfig:
   DataflowEndpointName: "Downlink Demod Decode"
   DataflowEndpointRegion: "us-east-2"

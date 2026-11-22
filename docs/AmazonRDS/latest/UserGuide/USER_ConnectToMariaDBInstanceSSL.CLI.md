@@ -8,7 +8,7 @@ The `mysql` client program parameters are slightly different if you are using th
 
 To find out which version you have, run the `mysql` command with the `--version` option. In the following example, the output shows that the client program is from MariaDB.
 
-```
+```bash
 $ mysql --version
 mysql  Ver 15.1 Distrib 10.5.15-MariaDB, for osx10.15 (x86_64) using readline 5.1
 ```

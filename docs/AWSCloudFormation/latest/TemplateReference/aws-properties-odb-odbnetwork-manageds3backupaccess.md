@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-odb-odbnetwork-manageds3backupaccess-syntax.json"></a>
 
-```
+```json
 {
   "[Ipv4Addresses](#cfn-odb-odbnetwork-manageds3backupaccess-ipv4addresses)" : {{[ String, ... ]}},
   "[Status](#cfn-odb-odbnetwork-manageds3backupaccess-status)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-odb-odbnetwork-manageds3backupaccess-syntax.yaml"></a>
 
-```
+```yaml
   [Ipv4Addresses](#cfn-odb-odbnetwork-manageds3backupaccess-ipv4addresses): {{
     - String}}
   [Status](#cfn-odb-odbnetwork-manageds3backupaccess-status): {{String}}

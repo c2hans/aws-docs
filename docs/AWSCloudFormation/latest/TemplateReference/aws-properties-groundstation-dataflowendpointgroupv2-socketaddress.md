@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-groundstation-dataflowendpointgroupv2-socketaddress-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-groundstation-dataflowendpointgroupv2-socketaddress-name)" : {{String}},
   "[Port](#cfn-groundstation-dataflowendpointgroupv2-socketaddress-port)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-groundstation-dataflowendpointgroupv2-socketaddress-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-groundstation-dataflowendpointgroupv2-socketaddress-name): {{String}}
   [Port](#cfn-groundstation-dataflowendpointgroupv2-socketaddress-port): {{Integer}}
 ```

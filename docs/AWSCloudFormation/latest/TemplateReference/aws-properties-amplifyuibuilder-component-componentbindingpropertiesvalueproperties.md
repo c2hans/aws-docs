@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-syntax.json"></a>
 
-```
+```json
 {
   "[Bucket](#cfn-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-bucket)" : {{String}},
   "[DefaultValue](#cfn-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-defaultvalue)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-syntax.yaml"></a>
 
-```
+```yaml
   [Bucket](#cfn-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-bucket): {{String}}
   [DefaultValue](#cfn-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-defaultvalue): {{String}}
   [Field](#cfn-amplifyuibuilder-component-componentbindingpropertiesvalueproperties-field): {{String}}

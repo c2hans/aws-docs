@@ -15,7 +15,7 @@ Amazon provides [Amazon SWF build tools](https://mvnrepository.com/artifact/com.
 
 To set up the flow framework for Maven, add the following dependency to your project's `pom.xml` file:
 
-```
+```xml
 <dependency>
     <groupId>com.amazonaws</groupId>
     <artifactId>aws-swf-build-tools</artifactId>

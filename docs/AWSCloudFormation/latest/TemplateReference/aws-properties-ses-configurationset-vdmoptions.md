@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-configurationset-vdmoptions-syntax.json"></a>
 
-```
+```json
 {
   "[DashboardOptions](#cfn-ses-configurationset-vdmoptions-dashboardoptions)" : {{DashboardOptions}},
   "[GuardianOptions](#cfn-ses-configurationset-vdmoptions-guardianoptions)" : {{GuardianOptions}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-configurationset-vdmoptions-syntax.yaml"></a>
 
-```
+```yaml
   [DashboardOptions](#cfn-ses-configurationset-vdmoptions-dashboardoptions): {{
     DashboardOptions}}
   [GuardianOptions](#cfn-ses-configurationset-vdmoptions-guardianoptions): {{

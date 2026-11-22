@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datasync-locationnfs-onpremconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AgentArns](#cfn-datasync-locationnfs-onpremconfig-agentarns)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datasync-locationnfs-onpremconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AgentArns](#cfn-datasync-locationnfs-onpremconfig-agentarns): {{
     - String}}
 ```

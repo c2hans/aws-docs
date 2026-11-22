@@ -53,7 +53,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-rulegroup-ratebasedstatement-syntax.json"></a>
 
-```
+```json
 {
   "[AggregateKeyType](#cfn-wafv2-rulegroup-ratebasedstatement-aggregatekeytype)" : {{String}},
   "[CustomKeys](#cfn-wafv2-rulegroup-ratebasedstatement-customkeys)" : {{[ RateBasedStatementCustomKey, ... ]}},
@@ -67,7 +67,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-rulegroup-ratebasedstatement-syntax.yaml"></a>
 
-```
+```yaml
   [AggregateKeyType](#cfn-wafv2-rulegroup-ratebasedstatement-aggregatekeytype): {{String}}
   [CustomKeys](#cfn-wafv2-rulegroup-ratebasedstatement-customkeys): {{
     - RateBasedStatementCustomKey}}

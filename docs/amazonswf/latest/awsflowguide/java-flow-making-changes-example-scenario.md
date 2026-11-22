@@ -49,7 +49,7 @@ The following Java code doesn't change between the examples in this scenario.
 
 `SampleBase.java`
 
-```
+```java
 package sample;
 
 import java.util.ArrayList;
@@ -128,7 +128,7 @@ public class SampleBase {
 
 `Input.java`
 
-```
+```java
 package sample;
 
 public class Input {
@@ -161,7 +161,7 @@ The following is the initial Java code of the decider. It's registered as versio
 
 `InitialDecider.java`
 
-```
+```java
 package sample.v1;
 
 import com.amazonaws.services.simpleworkflow.flow.DecisionContext;
@@ -203,7 +203,7 @@ The following modified Java code of the decider is a good example of a backwards
 
 `ModifiedDecider.java`
 
-```
+```java
 package sample.v1.modified;
 
 import com.amazonaws.services.simpleworkflow.flow.DecisionContext;
@@ -241,7 +241,7 @@ The following Java code allows you to simulate the problem of making backwards-i
 
 `RunModifiedDecider.java`
 
-```
+```java
 package sample;
 
 import com.amazonaws.services.simpleworkflow.flow.WorkflowWorker;

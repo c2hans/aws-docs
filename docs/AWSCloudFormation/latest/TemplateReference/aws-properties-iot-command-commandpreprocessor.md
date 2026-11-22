@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-command-commandpreprocessor-syntax.json"></a>
 
-```
+```json
 {
   "[AwsJsonSubstitution](#cfn-iot-command-commandpreprocessor-awsjsonsubstitution)" : {{AwsJsonSubstitutionCommandPreprocessorConfig}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-command-commandpreprocessor-syntax.yaml"></a>
 
-```
+```yaml
   [AwsJsonSubstitution](#cfn-iot-command-commandpreprocessor-awsjsonsubstitution): {{
     AwsJsonSubstitutionCommandPreprocessorConfig}}
 ```

@@ -101,7 +101,7 @@ Connection: Keep-Alive
 #### Sample Response
 <a name="API_UntagQueue_Example_1_Response"></a>
 
-```
+```json
 HTTP/1.1 200 OK
 x-amzn-RequestId: <requestId>
 Content-Length: 0
@@ -132,7 +132,7 @@ Action=UntagQueue
 #### Sample Response
 <a name="API_UntagQueue_Example_2_Response"></a>
 
-```
+```xml
 HTTP/1.1 200 OK
 <?xml version="1.0"?>
 <UntagQueueResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/">

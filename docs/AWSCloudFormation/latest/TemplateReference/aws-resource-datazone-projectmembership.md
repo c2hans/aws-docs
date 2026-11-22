@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-datazone-projectmembership-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DataZone::ProjectMembership",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-datazone-projectmembership-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DataZone::ProjectMembership
 Properties:
   [Designation](#cfn-datazone-projectmembership-designation): {{String}}

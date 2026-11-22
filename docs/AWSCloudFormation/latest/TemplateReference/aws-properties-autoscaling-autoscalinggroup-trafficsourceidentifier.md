@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-autoscaling-autoscalinggroup-trafficsourceidentifier-syntax.json"></a>
 
-```
+```json
 {
   "[Identifier](#cfn-autoscaling-autoscalinggroup-trafficsourceidentifier-identifier)" : {{String}},
   "[Type](#cfn-autoscaling-autoscalinggroup-trafficsourceidentifier-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-autoscaling-autoscalinggroup-trafficsourceidentifier-syntax.yaml"></a>
 
-```
+```yaml
   [Identifier](#cfn-autoscaling-autoscalinggroup-trafficsourceidentifier-identifier): {{String}}
   [Type](#cfn-autoscaling-autoscalinggroup-trafficsourceidentifier-type): {{String}}
 ```

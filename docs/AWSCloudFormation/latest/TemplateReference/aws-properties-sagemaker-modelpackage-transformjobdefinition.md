@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelpackage-transformjobdefinition-syntax.json"></a>
 
-```
+```json
 {
   "[BatchStrategy](#cfn-sagemaker-modelpackage-transformjobdefinition-batchstrategy)" : {{String}},
   "[Environment](#cfn-sagemaker-modelpackage-transformjobdefinition-environment)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelpackage-transformjobdefinition-syntax.yaml"></a>
 
-```
+```yaml
   [BatchStrategy](#cfn-sagemaker-modelpackage-transformjobdefinition-batchstrategy): {{String}}
   [Environment](#cfn-sagemaker-modelpackage-transformjobdefinition-environment): {{
     {{Key}}: {{Value}}}}

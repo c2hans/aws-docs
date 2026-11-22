@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-fieldlabeltype-syntax.json"></a>
 
-```
+```json
 {
   "[FieldId](#cfn-quicksight-analysis-fieldlabeltype-fieldid)" : {{String}},
   "[Visibility](#cfn-quicksight-analysis-fieldlabeltype-visibility)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-fieldlabeltype-syntax.yaml"></a>
 
-```
+```yaml
   [FieldId](#cfn-quicksight-analysis-fieldlabeltype-fieldid): {{String}}
   [Visibility](#cfn-quicksight-analysis-fieldlabeltype-visibility): {{String}}
 ```

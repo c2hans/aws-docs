@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lightsail-disksnapshot-location-syntax.json"></a>
 
-```
+```json
 {
   "[AvailabilityZone](#cfn-lightsail-disksnapshot-location-availabilityzone)" : {{String}},
   "[RegionName](#cfn-lightsail-disksnapshot-location-regionname)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lightsail-disksnapshot-location-syntax.yaml"></a>
 
-```
+```yaml
   [AvailabilityZone](#cfn-lightsail-disksnapshot-location-availabilityzone): {{String}}
   [RegionName](#cfn-lightsail-disksnapshot-location-regionname): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apigatewayv2-apigatewaymanagedoverrides-integrationoverrides-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-apigatewayv2-apigatewaymanagedoverrides-integrationoverrides-description)" : {{String}},
   "[IntegrationMethod](#cfn-apigatewayv2-apigatewaymanagedoverrides-integrationoverrides-integrationmethod)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apigatewayv2-apigatewaymanagedoverrides-integrationoverrides-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-apigatewayv2-apigatewaymanagedoverrides-integrationoverrides-description): {{String}}
   [IntegrationMethod](#cfn-apigatewayv2-apigatewaymanagedoverrides-integrationoverrides-integrationmethod): {{String}}
   [PayloadFormatVersion](#cfn-apigatewayv2-apigatewaymanagedoverrides-integrationoverrides-payloadformatversion): {{String}}

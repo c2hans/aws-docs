@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-autoscaling-lifecyclehook-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AutoScaling::LifecycleHook",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-autoscaling-lifecyclehook-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AutoScaling::LifecycleHook
 Properties:
   [AutoScalingGroupName](#cfn-autoscaling-lifecyclehook-autoscalinggroupname): {{String}}
@@ -143,7 +143,7 @@ The example bash script in the user data customizes the hostname on instances to
 #### JSON
 <a name="aws-resource-autoscaling-lifecyclehook--examples--Lifecycle_hook_for_instance_launch--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Parameters": {
@@ -222,7 +222,7 @@ The example bash script in the user data customizes the hostname on instances to
 #### YAML
 <a name="aws-resource-autoscaling-lifecyclehook--examples--Lifecycle_hook_for_instance_launch--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:
   LatestAmiId:
@@ -283,7 +283,7 @@ This snippet does not include the notification target that would need to exist o
 #### JSON
 <a name="aws-resource-autoscaling-lifecyclehook--examples--Lifecycle_hook_for_instance_termination--json"></a>
 
-```
+```json
 {
   "myTerminationLifecycleHook":{
     "Type":"AWS::AutoScaling::LifecycleHook",
@@ -303,7 +303,7 @@ This snippet does not include the notification target that would need to exist o
 #### YAML
 <a name="aws-resource-autoscaling-lifecyclehook--examples--Lifecycle_hook_for_instance_termination--yaml"></a>
 
-```
+```yaml
 ---
 myTerminationLifecycleHook:
   Type: AWS::AutoScaling::LifecycleHook
@@ -325,7 +325,7 @@ This snippet does not include the Amazon SQS queue and IAM role resources that w
 #### JSON
 <a name="aws-resource-autoscaling-lifecyclehook--examples--Lifecycle_hook_that_specifies_a_notification_target_ARN_and_role_ARN--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion":"2010-09-09",
   "Parameters":{
@@ -387,7 +387,7 @@ This snippet does not include the Amazon SQS queue and IAM role resources that w
 #### YAML
 <a name="aws-resource-autoscaling-lifecyclehook--examples--Lifecycle_hook_that_specifies_a_notification_target_ARN_and_role_ARN--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:
   Subnets:

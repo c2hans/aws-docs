@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-verifiedpermissions-identitysource-cognitouserpoolconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ClientIds](#cfn-verifiedpermissions-identitysource-cognitouserpoolconfiguration-clientids)" : {{[ String, ... ]}},
   "[GroupConfiguration](#cfn-verifiedpermissions-identitysource-cognitouserpoolconfiguration-groupconfiguration)" : {{CognitoGroupConfiguration}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-verifiedpermissions-identitysource-cognitouserpoolconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ClientIds](#cfn-verifiedpermissions-identitysource-cognitouserpoolconfiguration-clientids): {{
     - String}}
   [GroupConfiguration](#cfn-verifiedpermissions-identitysource-cognitouserpoolconfiguration-groupconfiguration): {{

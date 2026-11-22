@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcaconnectorad-template-subjectnameflagsv4-syntax.json"></a>
 
-```
+```json
 {
   "[RequireCommonName](#cfn-pcaconnectorad-template-subjectnameflagsv4-requirecommonname)" : {{Boolean}},
   "[RequireDirectoryPath](#cfn-pcaconnectorad-template-subjectnameflagsv4-requiredirectorypath)" : {{Boolean}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcaconnectorad-template-subjectnameflagsv4-syntax.yaml"></a>
 
-```
+```yaml
   [RequireCommonName](#cfn-pcaconnectorad-template-subjectnameflagsv4-requirecommonname): {{Boolean}}
   [RequireDirectoryPath](#cfn-pcaconnectorad-template-subjectnameflagsv4-requiredirectorypath): {{Boolean}}
   [RequireDnsAsCn](#cfn-pcaconnectorad-template-subjectnameflagsv4-requirednsascn): {{Boolean}}

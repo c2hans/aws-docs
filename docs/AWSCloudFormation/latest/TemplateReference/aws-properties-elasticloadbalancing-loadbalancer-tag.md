@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancing-loadbalancer-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-elasticloadbalancing-loadbalancer-tag-key)" : {{String}},
   "[Value](#cfn-elasticloadbalancing-loadbalancer-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancing-loadbalancer-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-elasticloadbalancing-loadbalancer-tag-key): {{String}}
   [Value](#cfn-elasticloadbalancing-loadbalancer-tag-value): {{String}}
 ```

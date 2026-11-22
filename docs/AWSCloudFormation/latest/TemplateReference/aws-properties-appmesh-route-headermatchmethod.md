@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-route-headermatchmethod-syntax.json"></a>
 
-```
+```json
 {
   "[Exact](#cfn-appmesh-route-headermatchmethod-exact)" : {{String}},
   "[Prefix](#cfn-appmesh-route-headermatchmethod-prefix)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-route-headermatchmethod-syntax.yaml"></a>
 
-```
+```yaml
   [Exact](#cfn-appmesh-route-headermatchmethod-exact): {{String}}
   [Prefix](#cfn-appmesh-route-headermatchmethod-prefix): {{String}}
   [Range](#cfn-appmesh-route-headermatchmethod-range): {{

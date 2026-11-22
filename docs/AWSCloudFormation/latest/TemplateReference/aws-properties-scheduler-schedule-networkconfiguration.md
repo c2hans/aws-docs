@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-scheduler-schedule-networkconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AwsvpcConfiguration](#cfn-scheduler-schedule-networkconfiguration-awsvpcconfiguration)" : {{AwsVpcConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-scheduler-schedule-networkconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AwsvpcConfiguration](#cfn-scheduler-schedule-networkconfiguration-awsvpcconfiguration): {{
     AwsVpcConfiguration}}
 ```

@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-fis-experimenttemplate-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::FIS::ExperimentTemplate",
   "Properties" : {
@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-fis-experimenttemplate-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::FIS::ExperimentTemplate
 Properties:
   [Actions](#cfn-fis-experimenttemplate-actions): {{
@@ -159,7 +159,7 @@ The following example creates an experiment template that stops and starts one i
 #### YAML
 <a name="aws-resource-fis-experimenttemplate--examples--Stop_and_start_an_instance_based_on_a_tag--yaml"></a>
 
-```
+```yaml
 Resources:
   ExperimentTemplate:
     Type: 'AWS::FIS::ExperimentTemplate'
@@ -210,7 +210,7 @@ Resources:
 #### JSON
 <a name="aws-resource-fis-experimenttemplate--examples--Stop_and_start_an_instance_based_on_a_tag--json"></a>
 
-```
+```json
 {
   "Resources": {
     "ExperimentTemplate": {

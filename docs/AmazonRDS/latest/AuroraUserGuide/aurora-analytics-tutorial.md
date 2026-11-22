@@ -37,7 +37,7 @@ Create an IAM policy that grants the extension read access to your Amazon S3 buc
 
 To create the IAM policy:
 
-```
+```bash
 aws iam create-policy \
   --policy-name AuroraAnalyticsReadAccess \
   --policy-document '{
@@ -55,7 +55,7 @@ aws iam create-policy \
 
 To create the IAM role and attach the policy:
 
-```
+```bash
 aws iam create-role \
   --role-name AuroraAnalyticsRole \
   --assume-role-policy-document '{
@@ -81,7 +81,7 @@ Create a DB cluster parameter group, then create the DB cluster and a DB instanc
 
 To create the parameter group with the feature enabled:
 
-```
+```bash
 aws rds create-db-cluster-parameter-group \
   --db-cluster-parameter-group-name my-analytics-params \
   --db-parameter-group-family aurora-postgresql17 \
@@ -94,7 +94,7 @@ aws rds modify-db-cluster-parameter-group \
 
 To create the DB cluster:
 
-```
+```bash
 aws rds create-db-cluster \
   --db-cluster-identifier my-analytics-cluster \
   --engine aurora-postgresql \
@@ -108,7 +108,7 @@ aws rds create-db-cluster \
 
 To create a DB instance:
 
-```
+```bash
 aws rds create-db-instance \
   --db-instance-identifier my-analytics-instance-1 \
   --db-cluster-identifier my-analytics-cluster \
@@ -118,7 +118,7 @@ aws rds create-db-instance \
 
 Wait for the DB instance to become available:
 
-```
+```bash
 aws rds wait db-instance-available \
   --db-instance-identifier my-analytics-instance-1
 ```
@@ -126,7 +126,7 @@ aws rds wait db-instance-available \
 ## Step 3: Attach the IAM role to the DB cluster
 <a name="aurora-analytics-tutorial-step-3"></a>
 
-```
+```bash
 aws rds add-role-to-db-cluster \
   --db-cluster-identifier my-analytics-cluster \
   --role-arn arn:aws:iam::<account-id>:role/AuroraAnalyticsRole \
@@ -138,7 +138,7 @@ aws rds add-role-to-db-cluster \
 
 If your Aurora DB cluster is in a private subnet, create an Amazon S3 gateway endpoint:
 
-```
+```bash
 aws ec2 create-vpc-endpoint \
   --vpc-id <vpc-id> \
   --service-name com.amazonaws.<region>.s3 \
@@ -150,20 +150,20 @@ aws ec2 create-vpc-endpoint \
 
 Connect to your Aurora PostgreSQL DB cluster using psql:
 
-```
+```bash
 psql --host=my-analytics-cluster.<region>.rds.amazonaws.com \
      --port=5432 --username=postgres --password
 ```
 
 Install the `aurora_analytics` extension:
 
-```
+```SQL
 CREATE EXTENSION aurora_analytics;
 ```
 
 Verify the installation:
 
-```
+```SQL
 SELECT extname, extversion FROM pg_extension WHERE extname = 'aurora_analytics';
 ```
 
@@ -177,7 +177,7 @@ Expected output:
 
 Verify the foreign server was created:
 
-```
+```SQL
 SELECT srvname FROM pg_foreign_server WHERE srvname = 'aurora_analytics_server';
 ```
 
@@ -186,7 +186,7 @@ SELECT srvname FROM pg_foreign_server WHERE srvname = 'aurora_analytics_server';
 
 Create a foreign table that points to your Parquet data in Amazon S3. Using empty parentheses () lets Aurora PostgreSQL auto-infer the schema from the Parquet metadata:
 
-```
+```SQL
 CREATE FOREIGN TABLE ft_orders ()
 SERVER aurora_analytics_server
 OPTIONS (
@@ -198,14 +198,14 @@ OPTIONS (
 
 Check the inferred schema:
 
-```
+```SQL
 \d ft_orders
 ```
 
 ## Step 7: Run your first query
 <a name="aurora-analytics-tutorial-step-7"></a>
 
-```
+```SQL
 -- Count all rows
 SELECT COUNT(*) FROM ft_orders;
 
@@ -226,7 +226,7 @@ ORDER BY total_revenue DESC;
 
 Create a local table and join it with your foreign table:
 
-```
+```SQL
 -- Create a local dimension table
 CREATE TABLE customer_segments (
     customer_id BIGINT PRIMARY KEY,
@@ -257,7 +257,7 @@ ORDER BY total_revenue DESC;
 
 Store query results from Amazon S3 as a local PostgreSQL table for fast repeated access:
 
-```
+```SQL
 CREATE TABLE monthly_revenue AS
 SELECT
     DATE_TRUNC('month', order_date) AS month,
@@ -278,7 +278,7 @@ SELECT * FROM monthly_revenue;
 
 After running queries, verify that the cache is working:
 
-```
+```SQL
 -- Check cache size (should be non-zero after queries)
 SELECT pg_size_pretty(aurora_analytics_cache_size()) AS cache_size;
 
@@ -297,14 +297,14 @@ Run the same query again and notice the improvement: the second execution reads 
 
 To avoid ongoing charges, delete the resources you created:
 
-```
+```SQL
 -- Drop the foreign table
 DROP FOREIGN TABLE ft_orders;
 DROP TABLE customer_segments;
 DROP TABLE monthly_revenue;
 ```
 
-```
+```bash
 aws rds delete-db-instance --db-instance-identifier my-analytics-instance-1 --skip-final-snapshot
 aws rds delete-db-cluster --db-cluster-identifier my-analytics-cluster --skip-final-snapshot
 aws iam detach-role-policy --role-name AuroraAnalyticsRole --policy-arn arn:aws:iam::<account-id>:policy/AuroraAnalyticsReadAccess

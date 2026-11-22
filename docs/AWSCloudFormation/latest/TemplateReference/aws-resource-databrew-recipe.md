@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-databrew-recipe-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DataBrew::Recipe",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-databrew-recipe-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DataBrew::Recipe
 Properties:
   [Description](#cfn-databrew-recipe-description): {{String}}
@@ -96,7 +96,7 @@ The following examples create new DataBrew recipes.
 #### YAML
 <a name="aws-resource-databrew-recipe--examples--Creating_recipes--yaml"></a>
 
-```
+```yaml
 Resources:
   TestDataBrewRecipe:
     Type: AWS::DataBrew::Recipe
@@ -120,7 +120,7 @@ Resources:
 #### JSON
 <a name="aws-resource-databrew-recipe--examples--Creating_recipes--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "This CloudFormation template specifies a DataBrew Recipe",

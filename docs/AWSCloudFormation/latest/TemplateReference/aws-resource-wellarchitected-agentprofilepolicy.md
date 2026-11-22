@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-wellarchitected-agentprofilepolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::WellArchitected::AgentProfilePolicy",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-wellarchitected-agentprofilepolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::WellArchitected::AgentProfilePolicy
 Properties:
   [Policy](#cfn-wellarchitected-agentprofilepolicy-policy): {{String}}

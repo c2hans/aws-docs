@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-bedrockagentcore-evaluator-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::BedrockAgentCore::Evaluator",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-bedrockagentcore-evaluator-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::BedrockAgentCore::Evaluator
 Properties:
   [Description](#cfn-bedrockagentcore-evaluator-description): {{String}}

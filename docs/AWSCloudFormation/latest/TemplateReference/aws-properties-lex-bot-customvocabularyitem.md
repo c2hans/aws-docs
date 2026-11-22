@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-customvocabularyitem-syntax.json"></a>
 
-```
+```json
 {
   "[DisplayAs](#cfn-lex-bot-customvocabularyitem-displayas)" : {{String}},
   "[Phrase](#cfn-lex-bot-customvocabularyitem-phrase)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-customvocabularyitem-syntax.yaml"></a>
 
-```
+```yaml
   [DisplayAs](#cfn-lex-bot-customvocabularyitem-displayas): {{String}}
   [Phrase](#cfn-lex-bot-customvocabularyitem-phrase): {{String}}
   [Weight](#cfn-lex-bot-customvocabularyitem-weight): {{Integer}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fms-protocolslist-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-fms-protocolslist-tag-key)" : {{String}},
   "[Value](#cfn-fms-protocolslist-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fms-protocolslist-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-fms-protocolslist-tag-key): {{String}}
   [Value](#cfn-fms-protocolslist-tag-value): {{String}}
 ```

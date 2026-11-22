@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-certificatemanager-acmedomainvalidation-tagsitems-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-certificatemanager-acmedomainvalidation-tagsitems-key)" : {{String}},
   "[Value](#cfn-certificatemanager-acmedomainvalidation-tagsitems-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-certificatemanager-acmedomainvalidation-tagsitems-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-certificatemanager-acmedomainvalidation-tagsitems-key): {{String}}
   [Value](#cfn-certificatemanager-acmedomainvalidation-tagsitems-value): {{String}}
 ```

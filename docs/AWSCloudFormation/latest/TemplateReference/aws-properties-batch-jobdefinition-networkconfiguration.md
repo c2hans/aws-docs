@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-networkconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AssignPublicIp](#cfn-batch-jobdefinition-networkconfiguration-assignpublicip)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-networkconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AssignPublicIp](#cfn-batch-jobdefinition-networkconfiguration-assignpublicip): {{String}}
 ```
 

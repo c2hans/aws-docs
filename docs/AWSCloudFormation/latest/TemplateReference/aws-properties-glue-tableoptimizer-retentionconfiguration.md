@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-tableoptimizer-retentionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[IcebergConfiguration](#cfn-glue-tableoptimizer-retentionconfiguration-icebergconfiguration)" : {{IcebergRetentionConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-tableoptimizer-retentionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [IcebergConfiguration](#cfn-glue-tableoptimizer-retentionconfiguration-icebergconfiguration): {{
     IcebergRetentionConfiguration}}
 ```

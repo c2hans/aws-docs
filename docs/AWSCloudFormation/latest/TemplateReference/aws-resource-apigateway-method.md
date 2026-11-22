@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigateway-method-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGateway::Method",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigateway-method-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGateway::Method
 Properties:
   [ApiKeyRequired](#cfn-apigateway-method-apikeyrequired): {{Boolean}}
@@ -173,7 +173,7 @@ The following example creates a mock GET method for the `MyApi` API.
 #### JSON
 <a name="aws-resource-apigateway-method--examples--Mock_Method--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -236,7 +236,7 @@ The following example creates a mock GET method for the `MyApi` API.
 #### YAML
 <a name="aws-resource-apigateway-method--examples--Mock_Method--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   Api:
@@ -281,7 +281,7 @@ Use the [AWS::Lambda::Permission](https://docs.aws.amazon.com/AWSCloudFormation/
 #### JSON
 <a name="aws-resource-apigateway-method--examples--Lambda_Proxy--json"></a>
 
-```
+```json
 {
     "ProxyResource": {
         "Type": "AWS::ApiGateway::Resource",
@@ -324,7 +324,7 @@ Use the [AWS::Lambda::Permission](https://docs.aws.amazon.com/AWSCloudFormation/
 #### YAML
 <a name="aws-resource-apigateway-method--examples--Lambda_Proxy--yaml"></a>
 
-```
+```yaml
 ProxyResource:
   Type: 'AWS::ApiGateway::Resource'
   Properties:
@@ -355,7 +355,7 @@ The following example creates a REST API, method, and request validator, and ass
 #### JSON
 <a name="aws-resource-apigateway-method--examples--Associated_Request_Validator--json"></a>
 
-```
+```json
 {
   "Parameters": {
     "contentHandling": {
@@ -461,7 +461,7 @@ The following example creates a REST API, method, and request validator, and ass
 #### YAML
 <a name="aws-resource-apigateway-method--examples--Associated_Request_Validator--yaml"></a>
 
-```
+```yaml
 Parameters:
   contentHandling:
     Type: String

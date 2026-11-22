@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-connectcampaignsv2-campaign-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ConnectCampaignsV2::Campaign",
   "Properties" : {
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-connectcampaignsv2-campaign-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ConnectCampaignsV2::Campaign
 Properties:
   [ChannelSubtypeConfig](#cfn-connectcampaignsv2-campaign-channelsubtypeconfig): {{

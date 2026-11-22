@@ -59,7 +59,7 @@ This section provides examples of how to delete an access grant by using the AWS
 
 **Example – Delete an access grant**
 
-```
+```java
 public void deleteAccessGrant() {
 DeleteAccessGrantRequest deleteRequest = DeleteAccessGrantRequest.builder()
 .accountId("{{111122223333}}")
@@ -71,7 +71,7 @@ LOGGER.info("DeleteAccessGrantResponse: " + deleteResponse);
 ```
 Response:
 
-```
+```java
 DeleteAccessGrantResponse()
 ```
 

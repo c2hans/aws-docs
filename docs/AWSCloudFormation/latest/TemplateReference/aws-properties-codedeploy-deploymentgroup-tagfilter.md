@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codedeploy-deploymentgroup-tagfilter-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-codedeploy-deploymentgroup-tagfilter-key)" : {{String}},
   "[Type](#cfn-codedeploy-deploymentgroup-tagfilter-type)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codedeploy-deploymentgroup-tagfilter-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-codedeploy-deploymentgroup-tagfilter-key): {{String}}
   [Type](#cfn-codedeploy-deploymentgroup-tagfilter-type): {{String}}
   [Value](#cfn-codedeploy-deploymentgroup-tagfilter-value): {{String}}

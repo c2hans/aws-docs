@@ -36,7 +36,7 @@ This policy does not allow users to view the **Users** page in the IAM console o
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

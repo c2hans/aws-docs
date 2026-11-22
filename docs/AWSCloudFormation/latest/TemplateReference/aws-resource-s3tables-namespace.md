@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-s3tables-namespace-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::S3Tables::Namespace",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-s3tables-namespace-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::S3Tables::Namespace
 Properties:
   [Namespace](#cfn-s3tables-namespace-namespace): {{String}}

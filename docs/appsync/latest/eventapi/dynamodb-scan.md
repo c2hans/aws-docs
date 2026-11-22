@@ -17,7 +17,7 @@ The `Scan` request scans for items across a DynamoDB table. The request specifie
 
 The `Scan` request object has the following structure:
 
-```
+```TypeScript
 type DynamoDBScanRequest = {
   operation: 'Scan';
   index?: string;
@@ -81,7 +81,7 @@ A projection that's used to specify the attributes to return from the DynamoDB o
 
 The results have the following structure:
 
-```
+```TypeScript
 {
     items = [ ... ],
     nextToken = "a pagination token",

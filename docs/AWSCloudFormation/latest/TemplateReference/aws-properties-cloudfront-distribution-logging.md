@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distribution-logging-syntax.json"></a>
 
-```
+```json
 {
   "[Bucket](#cfn-cloudfront-distribution-logging-bucket)" : {{String}},
   "[IncludeCookies](#cfn-cloudfront-distribution-logging-includecookies)" : {{Boolean}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distribution-logging-syntax.yaml"></a>
 
-```
+```yaml
   [Bucket](#cfn-cloudfront-distribution-logging-bucket): {{String}}
   [IncludeCookies](#cfn-cloudfront-distribution-logging-includecookies): {{Boolean}}
   [Prefix](#cfn-cloudfront-distribution-logging-prefix): {{String}}

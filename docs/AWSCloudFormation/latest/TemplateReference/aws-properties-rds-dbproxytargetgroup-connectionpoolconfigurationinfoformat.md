@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rds-dbproxytargetgroup-connectionpoolconfigurationinfoformat-syntax.json"></a>
 
-```
+```json
 {
   "[ConnectionBorrowTimeout](#cfn-rds-dbproxytargetgroup-connectionpoolconfigurationinfoformat-connectionborrowtimeout)" : {{Integer}},
   "[InitQuery](#cfn-rds-dbproxytargetgroup-connectionpoolconfigurationinfoformat-initquery)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rds-dbproxytargetgroup-connectionpoolconfigurationinfoformat-syntax.yaml"></a>
 
-```
+```yaml
   [ConnectionBorrowTimeout](#cfn-rds-dbproxytargetgroup-connectionpoolconfigurationinfoformat-connectionborrowtimeout): {{Integer}}
   [InitQuery](#cfn-rds-dbproxytargetgroup-connectionpoolconfigurationinfoformat-initquery): {{String}}
   [MaxConnectionsPercent](#cfn-rds-dbproxytargetgroup-connectionpoolconfigurationinfoformat-maxconnectionspercent): {{Integer}}

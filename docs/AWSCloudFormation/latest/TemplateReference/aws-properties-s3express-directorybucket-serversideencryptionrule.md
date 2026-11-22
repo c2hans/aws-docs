@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3express-directorybucket-serversideencryptionrule-syntax.json"></a>
 
-```
+```json
 {
   "[BucketKeyEnabled](#cfn-s3express-directorybucket-serversideencryptionrule-bucketkeyenabled)" : {{Boolean}},
   "[ServerSideEncryptionByDefault](#cfn-s3express-directorybucket-serversideencryptionrule-serversideencryptionbydefault)" : {{ServerSideEncryptionByDefault}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3express-directorybucket-serversideencryptionrule-syntax.yaml"></a>
 
-```
+```yaml
   [BucketKeyEnabled](#cfn-s3express-directorybucket-serversideencryptionrule-bucketkeyenabled): {{Boolean}}
   [ServerSideEncryptionByDefault](#cfn-s3express-directorybucket-serversideencryptionrule-serversideencryptionbydefault): {{
     ServerSideEncryptionByDefault}}

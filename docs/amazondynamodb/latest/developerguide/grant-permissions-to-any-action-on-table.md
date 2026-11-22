@@ -11,7 +11,7 @@ The following policy grants permissions for *all* DynamoDB actions on a table ca
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

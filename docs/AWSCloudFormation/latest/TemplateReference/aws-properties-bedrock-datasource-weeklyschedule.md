@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-datasource-weeklyschedule-syntax.json"></a>
 
-```
+```json
 {
   "[DayOfWeek](#cfn-bedrock-datasource-weeklyschedule-dayofweek)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-datasource-weeklyschedule-syntax.yaml"></a>
 
-```
+```yaml
   [DayOfWeek](#cfn-bedrock-datasource-weeklyschedule-dayofweek): {{String}}
 ```
 

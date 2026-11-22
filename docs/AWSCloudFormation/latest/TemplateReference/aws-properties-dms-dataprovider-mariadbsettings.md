@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dms-dataprovider-mariadbsettings-syntax.json"></a>
 
-```
+```json
 {
   "[CertificateArn](#cfn-dms-dataprovider-mariadbsettings-certificatearn)" : {{String}},
   "[Port](#cfn-dms-dataprovider-mariadbsettings-port)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dms-dataprovider-mariadbsettings-syntax.yaml"></a>
 
-```
+```yaml
   [CertificateArn](#cfn-dms-dataprovider-mariadbsettings-certificatearn): {{String}}
   [Port](#cfn-dms-dataprovider-mariadbsettings-port): {{Integer}}
   [ServerName](#cfn-dms-dataprovider-mariadbsettings-servername): {{String}}

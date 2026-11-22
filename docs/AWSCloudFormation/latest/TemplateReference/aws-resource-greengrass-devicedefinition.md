@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-greengrass-devicedefinition-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Greengrass::DeviceDefinition",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-greengrass-devicedefinition-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Greengrass::DeviceDefinition
 Properties:
   [InitialVersion](#cfn-greengrass-devicedefinition-initialversion): {{
@@ -66,7 +66,7 @@ The name of the device definition.
 Application-specific metadata to attach to the device definition. You can use tags in IAM policies to control access to AWS IoT Greengrass resources. You can also use tags to categorize your resources. For more information, see [Tagging Your AWS IoT Greengrass Resources](https://docs.aws.amazon.com/greengrass/v1/developerguide/tagging.html) in the * AWS IoT Greengrass Version 1 Developer Guide *.
 This `Json` property type is processed as a map of key-value pairs. It uses the following format, which is different from most `Tags` implementations in CloudFormation templates.
 
-```
+```json
 "Tags": {
     "KeyName0": "value",
     "KeyName1": "value",
@@ -122,7 +122,7 @@ For an example of a complete template, see the [`AWS::Greengrass::Group`](https:
 #### JSON
 <a name="aws-resource-greengrass-devicedefinition--examples--Device_Definition_Snippet--json"></a>
 
-```
+```json
 "TestDeviceDefinition": {
     "Type": "AWS::Greengrass::DeviceDefinition",
     "Properties": {
@@ -172,7 +172,7 @@ For an example of a complete template, see the [`AWS::Greengrass::Group`](https:
 #### YAML
 <a name="aws-resource-greengrass-devicedefinition--examples--Device_Definition_Snippet--yaml"></a>
 
-```
+```yaml
 TestDeviceDefinition:
   Type: 'AWS::Greengrass::DeviceDefinition'
   Properties:

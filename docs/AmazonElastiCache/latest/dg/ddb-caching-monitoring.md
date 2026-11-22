@@ -21,7 +21,7 @@ Cluster-level metrics include the following dimension.
 
 | Dimension | Valid values | Description |
 | --- | --- | --- |
-| `ClusterId` | Cache identifier | Identifies the cache emitting the metric. |
+| `clusterId` | Cache identifier | Identifies the cache emitting the metric. |
 
 DynamoDB caching publishes the following cluster-level metrics.
 
@@ -42,9 +42,9 @@ Table-level metrics include the following dimensions.
 
 | Dimension | Valid values | Description |
 | --- | --- | --- |
-| `ClusterId` | Cache identifier | Identifies the cache emitting the metric. |
-| `TableName` | DynamoDB table name | Identifies the DynamoDB table to which this metric applies. |
-| `Operation` | GetItem, BatchGetItem, Query, Scan, PutItem, UpdateItem, DeleteItem, BatchWriteItem, TransactGetItems, TransactWriteItems | Identifies the DynamoDB operation to which this metric applies. |
+| `clusterId` | Cache identifier | Identifies the cache emitting the metric. |
+| `table` | DynamoDB table name | Identifies the DynamoDB table to which this metric applies. |
+| `operation` | GetItem, BatchGetItem, Query, Scan, PutItem, UpdateItem, DeleteItem, BatchWriteItem, TransactGetItems, TransactWriteItems | Identifies the DynamoDB operation to which this metric applies. |
 
 DynamoDB caching publishes the following table-specific metrics.
 

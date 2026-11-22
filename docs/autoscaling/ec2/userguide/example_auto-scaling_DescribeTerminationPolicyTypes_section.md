@@ -40,7 +40,7 @@ For more information, see [Controlling which Auto Scaling instances terminate du
 **Tools for PowerShell V4**
 **Example 1: This example lists the termination policies that are supported by Auto Scaling.**
 
-```
+```powershell
 Get-ASTerminationPolicyType
 ```
 **Output:**
@@ -57,7 +57,7 @@ OldestLaunchConfiguration
 **Tools for PowerShell V5**
 **Example 1: This example lists the termination policies that are supported by Auto Scaling.**
 
-```
+```powershell
 Get-ASTerminationPolicyType
 ```
 **Output:**

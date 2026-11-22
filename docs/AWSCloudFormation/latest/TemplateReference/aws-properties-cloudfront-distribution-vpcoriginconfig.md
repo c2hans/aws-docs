@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distribution-vpcoriginconfig-syntax.json"></a>
 
-```
+```json
 {
   "[OriginKeepaliveTimeout](#cfn-cloudfront-distribution-vpcoriginconfig-originkeepalivetimeout)" : {{Integer}},
   "[OriginReadTimeout](#cfn-cloudfront-distribution-vpcoriginconfig-originreadtimeout)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distribution-vpcoriginconfig-syntax.yaml"></a>
 
-```
+```yaml
   [OriginKeepaliveTimeout](#cfn-cloudfront-distribution-vpcoriginconfig-originkeepalivetimeout): {{Integer}}
   [OriginReadTimeout](#cfn-cloudfront-distribution-vpcoriginconfig-originreadtimeout): {{Integer}}
   [OwnerAccountId](#cfn-cloudfront-distribution-vpcoriginconfig-owneraccountid): {{String}}

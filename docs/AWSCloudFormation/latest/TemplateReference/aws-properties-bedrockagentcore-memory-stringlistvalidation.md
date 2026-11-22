@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-memory-stringlistvalidation-syntax.json"></a>
 
-```
+```json
 {
   "[AllowedValues](#cfn-bedrockagentcore-memory-stringlistvalidation-allowedvalues)" : {{[ String, ... ]}},
   "[MaxItems](#cfn-bedrockagentcore-memory-stringlistvalidation-maxitems)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-memory-stringlistvalidation-syntax.yaml"></a>
 
-```
+```yaml
   [AllowedValues](#cfn-bedrockagentcore-memory-stringlistvalidation-allowedvalues): {{
     - String}}
   [MaxItems](#cfn-bedrockagentcore-memory-stringlistvalidation-maxitems): {{Integer}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-personalize-dataset-datasource-syntax.json"></a>
 
-```
+```json
 {
   "[DataLocation](#cfn-personalize-dataset-datasource-datalocation)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-personalize-dataset-datasource-syntax.yaml"></a>
 
-```
+```yaml
   [DataLocation](#cfn-personalize-dataset-datasource-datalocation): {{String}}
 ```
 

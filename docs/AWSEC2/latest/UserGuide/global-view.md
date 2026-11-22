@@ -46,7 +46,7 @@ A user must have the following permissions to use AWS Global View.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

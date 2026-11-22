@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3files-accesspoint-rootdirectory-syntax.json"></a>
 
-```
+```json
 {
   "[CreationPermissions](#cfn-s3files-accesspoint-rootdirectory-creationpermissions)" : {{CreationPermissions}},
   "[Path](#cfn-s3files-accesspoint-rootdirectory-path)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3files-accesspoint-rootdirectory-syntax.yaml"></a>
 
-```
+```yaml
   [CreationPermissions](#cfn-s3files-accesspoint-rootdirectory-creationpermissions): {{
     CreationPermissions}}
   [Path](#cfn-s3files-accesspoint-rootdirectory-path): {{String}}

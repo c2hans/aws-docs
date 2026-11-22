@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicrule-dynamodbv2action-syntax.json"></a>
 
-```
+```json
 {
   "[PutItem](#cfn-iot-topicrule-dynamodbv2action-putitem)" : {{PutItemInput}},
   "[RoleArn](#cfn-iot-topicrule-dynamodbv2action-rolearn)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicrule-dynamodbv2action-syntax.yaml"></a>
 
-```
+```yaml
   [PutItem](#cfn-iot-topicrule-dynamodbv2action-putitem): {{
     PutItemInput}}
   [RoleArn](#cfn-iot-topicrule-dynamodbv2action-rolearn): {{String}}

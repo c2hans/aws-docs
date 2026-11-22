@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-identitypool-pushsync-syntax.json"></a>
 
-```
+```json
 {
   "[ApplicationArns](#cfn-cognito-identitypool-pushsync-applicationarns)" : {{[ String, ... ]}},
   "[RoleArn](#cfn-cognito-identitypool-pushsync-rolearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-identitypool-pushsync-syntax.yaml"></a>
 
-```
+```yaml
   [ApplicationArns](#cfn-cognito-identitypool-pushsync-applicationarns): {{
     - String}}
   [RoleArn](#cfn-cognito-identitypool-pushsync-rolearn): {{String}}

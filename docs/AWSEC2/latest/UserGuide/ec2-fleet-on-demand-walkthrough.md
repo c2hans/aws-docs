@@ -33,7 +33,7 @@ Next, ABC Online creates a launch template. The launch template ID is used in th
 
 ABC Online creates a file, `config.json`, with the following configuration for its EC2 Fleet. In the following example, replace the resource identifiers with your own resource identifiers.
 
-```
+```json
 {
     "LaunchTemplateConfigs": [
         {
@@ -54,7 +54,7 @@ ABC Online creates a file, `config.json`, with the following configuration for i
 
 ABC Online creates the EC2 Fleet using the following [create-fleet](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-fleet.html) command.
 
-```
+```bash
 aws ec2 create-fleet --cli-input-json file://config.json
 ```
 

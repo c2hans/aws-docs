@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codepipeline-webhook-webhookfilterrule-syntax.json"></a>
 
-```
+```json
 {
   "[JsonPath](#cfn-codepipeline-webhook-webhookfilterrule-jsonpath)" : {{String}},
   "[MatchEquals](#cfn-codepipeline-webhook-webhookfilterrule-matchequals)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codepipeline-webhook-webhookfilterrule-syntax.yaml"></a>
 
-```
+```yaml
   [JsonPath](#cfn-codepipeline-webhook-webhookfilterrule-jsonpath): {{String}}
   [MatchEquals](#cfn-codepipeline-webhook-webhookfilterrule-matchequals): {{String}}
 ```

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-multiplexcontainersettings-syntax.json"></a>
 
-```
+```json
 {
   "[MultiplexM2tsSettings](#cfn-medialive-channel-multiplexcontainersettings-multiplexm2tssettings)" : {{MultiplexM2tsSettings}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-multiplexcontainersettings-syntax.yaml"></a>
 
-```
+```yaml
   [MultiplexM2tsSettings](#cfn-medialive-channel-multiplexcontainersettings-multiplexm2tssettings): {{
     MultiplexM2tsSettings}}
 ```

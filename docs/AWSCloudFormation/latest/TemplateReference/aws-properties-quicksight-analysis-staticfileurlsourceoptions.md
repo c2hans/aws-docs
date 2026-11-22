@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-staticfileurlsourceoptions-syntax.json"></a>
 
-```
+```json
 {
   "[Url](#cfn-quicksight-analysis-staticfileurlsourceoptions-url)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-staticfileurlsourceoptions-syntax.yaml"></a>
 
-```
+```yaml
   [Url](#cfn-quicksight-analysis-staticfileurlsourceoptions-url): {{String}}
 ```
 

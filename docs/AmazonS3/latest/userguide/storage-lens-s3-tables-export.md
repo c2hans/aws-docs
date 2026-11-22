@@ -45,7 +45,7 @@ Before running the following commands, make sure that you have an up to date CLI
 
 The following example enables S3 Tables export for an S3 Storage Lens configuration "Default metrics report" using the AWS CLI. To use this example, replace the {{user input placeholders}} with your own information.
 
-```
+```JSON
 aws s3control put-storage-lens-configuration --account-id={{555555555555}} --config-id={{your-configuration-id}} --storage-lens-configuration '{
    "Id":"{{your-configuration-id}}",
    "AccountLevel":{
@@ -79,7 +79,7 @@ aws s3control put-storage-lens-configuration --account-id={{555555555555}} --con
 
 The following example enables S3 Tables export for an S3 Storage Lens configuration "Default metrics report" using the AWS SDK for Python (Boto3). To use this example, replace the {{user input placeholders}} with your own information.
 
-```
+```python
 import boto3
 
 s3control = boto3.client('s3control')

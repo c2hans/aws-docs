@@ -16,7 +16,7 @@ You can enable [Transaction Search](CloudWatch-Transaction-Search.md) through th
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -110,7 +110,7 @@ The key must meet the following requirements:
 
 The following example JSON policy grants the `kms:DescribeKey` permission for one key. Add it to the role that enables Transaction Search:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -170,7 +170,7 @@ The key applies only to the `aws/spans` log group. To encrypt the `/aws/applicat
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

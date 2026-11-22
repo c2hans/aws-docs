@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dlm-lifecyclepolicy-encryptionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CmkArn](#cfn-dlm-lifecyclepolicy-encryptionconfiguration-cmkarn)" : {{String}},
   "[Encrypted](#cfn-dlm-lifecyclepolicy-encryptionconfiguration-encrypted)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dlm-lifecyclepolicy-encryptionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CmkArn](#cfn-dlm-lifecyclepolicy-encryptionconfiguration-cmkarn): {{String}}
   [Encrypted](#cfn-dlm-lifecyclepolicy-encryptionconfiguration-encrypted): {{Boolean}}
 ```

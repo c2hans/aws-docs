@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackage-packagingconfiguration-mssmanifest-syntax.json"></a>
 
-```
+```json
 {
   "[ManifestName](#cfn-mediapackage-packagingconfiguration-mssmanifest-manifestname)" : {{String}},
   "[StreamSelection](#cfn-mediapackage-packagingconfiguration-mssmanifest-streamselection)" : {{StreamSelection}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackage-packagingconfiguration-mssmanifest-syntax.yaml"></a>
 
-```
+```yaml
   [ManifestName](#cfn-mediapackage-packagingconfiguration-mssmanifest-manifestname): {{String}}
   [StreamSelection](#cfn-mediapackage-packagingconfiguration-mssmanifest-streamselection): {{
     StreamSelection}}

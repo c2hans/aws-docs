@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityhub-automationrulev2-booleanfilter-syntax.json"></a>
 
-```
+```json
 {
   "[Value](#cfn-securityhub-automationrulev2-booleanfilter-value)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityhub-automationrulev2-booleanfilter-syntax.yaml"></a>
 
-```
+```yaml
   [Value](#cfn-securityhub-automationrulev2-booleanfilter-value): {{Boolean}}
 ```
 

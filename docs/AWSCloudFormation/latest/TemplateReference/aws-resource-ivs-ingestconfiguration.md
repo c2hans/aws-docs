@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ivs-ingestconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IVS::IngestConfiguration",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ivs-ingestconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IVS::IngestConfiguration
 Properties:
   [IngestProtocol](#cfn-ivs-ingestconfiguration-ingestprotocol): {{String}}
@@ -139,7 +139,7 @@ The following examples specify an Amazon IVS ingest configuration.
 #### JSON
 <a name="aws-resource-ivs-ingestconfiguration--examples--Ingest_Configuration_Template_Examples--json"></a>
 
-```
+```json
 {
      "AWSTemplateFormatVersion": "2010-09-09",
      "Resources": {
@@ -207,7 +207,7 @@ The following examples specify an Amazon IVS ingest configuration.
 #### YAML
 <a name="aws-resource-ivs-ingestconfiguration--examples--Ingest_Configuration_Template_Examples--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   Stage:

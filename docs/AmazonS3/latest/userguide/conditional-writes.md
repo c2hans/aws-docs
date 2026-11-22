@@ -44,7 +44,7 @@ You can use the `If-None-Match` header with the following APIs:
 
 The following `put-object` example command attempts to perform a conditional write for an object with the key name `dir-1/my_images.tar.bz2`.
 
-```
+```bash
 aws s3api put-object --bucket {{amzn-s3-demo-bucket}} --key dir-1/my_images.tar.bz2 --body my_images.tar.bz2 --if-none-match "*"
 ```
 
@@ -57,7 +57,7 @@ For information about the AWS CLI, see [What is the AWS Command Line Interface?]
 
 The following `copy-object` example command attempts to copy an object to a destination bucket with a conditional write for an object with the key name `dir-1/my_images.tar.bz2`.
 
-```
+```bash
 aws s3api copy-object --copy-source {{amzn-s3-demo-bucket}}/key --key dir-1/my_images.tar.bz2 --bucket {{amzn-s3-demo-bucket2}} --if-none-match "*"
 ```
 
@@ -70,7 +70,7 @@ For information about the AWS CLI, see [What is the AWS Command Line Interface?]
 
 The following `complete-multipart-upload` example command attempts to complete a multipart upload with a conditional write for an object with the key name `dir-1/my_images.tar.bz2`. In this example, the file:// prefix is used to load the JSON structure from a file in the local folder named `mpustruct` which list of all the parts that have been uploaded for tnis specific multipart upload.
 
-```
+```bash
 aws s3api complete-multipart-upload --multipart-upload file://mpustruct --bucket {{amzn-s3-demo-bucket}} --key dir-1/my_images.tar.bz2 --upload-id {{upload-id}}  --if-none-match "*"
 ```
 
@@ -95,7 +95,7 @@ You can use the `If-Match` header with the following APIs:
 
 The following `put-object` example command attempts to perform a conditional write with the provided ETag value `6805f2cfc46c0f04559748bb039d69ae`.
 
-```
+```bash
 aws s3api put-object --bucket {{amzn-s3-demo-bucket}} --key dir-1/my_images.tar.bz2 --body my_images.tar.bz2 --if-match "{{6805f2cfc46c0f04559748bb039d69ae}}"
 ```
 
@@ -108,7 +108,7 @@ For information about the AWS CLI, see [What is the AWS Command Line Interface?]
 
 The following `copy-object` example command attempts to perform a conditional write with the provided ETag value `6805f2cfc46c0f04559748bb039d69ae`.
 
-```
+```bash
 aws s3api copy-object --copy-source {{amzn-s3-demo-bucket}}/key --key dir-1/my_images.tar.bz2 --bucket {{amzn-s3-demo-bucket2}} --if-match "{{6805f2cfc46c0f04559748bb039d69ae}}"
 ```
 
@@ -121,7 +121,7 @@ For information about the AWS CLI, see [What is the AWS Command Line Interface?]
 
 The following `complete-multipart-upload` example command attempts to complete a multipart upload with a conditional write using the provided ETag value `6805f2cfc46c0f04559748bb039d69ae`. In this example, the file:// prefix is used to load the JSON structure from a file in the local folder named `mpustruct` which list of all the parts that have been uploaded for tnis specific multipart upload.
 
-```
+```bash
 aws s3api complete-multipart-upload --multipart-upload file://mpustruct --bucket {{amzn-s3-demo-bucket}} --key dir-1/my_images.tar.bz2 --upload-id {{upload-id}} --if-match "{{6805f2cfc46c0f04559748bb039d69ae}}"
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-flow-task-syntax.json"></a>
 
-```
+```json
 {
   "[ConnectorOperator](#cfn-appflow-flow-task-connectoroperator)" : {{ConnectorOperator}},
   "[DestinationField](#cfn-appflow-flow-task-destinationfield)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-flow-task-syntax.yaml"></a>
 
-```
+```yaml
   [ConnectorOperator](#cfn-appflow-flow-task-connectoroperator): {{
     ConnectorOperator}}
   [DestinationField](#cfn-appflow-flow-task-destinationfield): {{String}}

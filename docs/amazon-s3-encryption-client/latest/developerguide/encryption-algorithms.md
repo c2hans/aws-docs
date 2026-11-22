@@ -68,7 +68,7 @@ By default, version 3.*x* of the Amazon S3 Encryption Client automatically buffe
 When you use the buffered decryption mode with the Amazon S3 Encryption Client for Java, the default maximum object size that can be decrypted is 64 MB. However, you can use the optional `setBufferSize` parameter to customize the maximum object size that the mode will buffer. You can use the `setBufferSize` parameter to specify any integer between 16 bytes and 64 GB as the maxiumum object size.
 The following Java example instantiates the client with a raw AES wrapping key and a maximum object size of 32 MiB.
 
-```
+```java
 S3Client s3Client = S3EncryptionClient.builderV4()
         .aesKey(aesKey)
         .setBufferSize({{32 * 1024 * 1024}}) // OPTIONAL
@@ -85,7 +85,7 @@ If you use the delayed authentication mode and are processing the plaintext data
 To enable the delayed authentication mode, specify the `enableDelayedAuthenticationMode` parameter when you instantiate the client.
 The following Java example specifies a raw AES key as the wrapping key. This client only encrypts with fully supported algorithms and decrypts using the delayed authentication mode.
 
-```
+```java
 S3Client s3Client = S3EncryptionClient.builderV4()
         .aesKey(aesKey)
         .commitmentPolicy(CommitmentPolicy.REQUIRE_ENCRYPT_ALLOW_DECRYPT)
@@ -94,7 +94,7 @@ S3Client s3Client = S3EncryptionClient.builderV4()
 ```
 The following Python example enables delayed authentication with a KMS key as the wrapping key.
 
-```
+```python
 config = S3EncryptionClientConfig(
     keyring=keyring,
     enable_delayed_authentication=True,
@@ -109,7 +109,7 @@ s3ec = S3EncryptionClient(wrapped_s3_client=s3_client, config=config)
 By default, the Amazon S3 Encryption Client uses the wrapping key you specify and one of the fully supported wrapping algorithms to encrypt and decrypt the data keys that encrypt your objects. If you need to decrypt data keys that were encrypted with a legacy wrapping algorithm, you must specify the `enableLegacyWrappingAlgorithms` parameter when you instantiate your client.
 The following example specifies a raw AES key as the wrapping key. This client only encrypts with fully supported wrapping algorithms. However, it can decrypt data keys encrypted with fully supported or legacy wrapping algorithms.
 
-```
+```java
 S3Client s3Client = S3EncryptionClient.builderV4()
         .aesKey(aesKey)
         .commitmentPolicy(CommitmentPolicy.REQUIRE_ENCRYPT_ALLOW_DECRYPT)
@@ -118,14 +118,14 @@ S3Client s3Client = S3EncryptionClient.builderV4()
 ```
 The following example creates a keyring that uses a KMS key as the wrapping key and only encrypts with fully supported wrapping algorithms. However, it can decrypt data keys encrypted with fully supported or legacy wrapping algorithms.
 
-```
+```go
 cmm, err := materials.NewCryptographicMaterialsManager(materials.NewKmsKeyring(kmsClient, {{kmsKeyArn}}, func(options *materials.KeyringOptions) {
     options.EnableLegacyWrappingAlgorithms = {{true}}
 })
 ```
 The following example creates a keyring that uses a KMS key as the wrapping key and only encrypts with fully supported wrapping algorithms. However, it can decrypt data keys encrypted with fully supported or legacy wrapping algorithms.
 
-```
+```python
 keyring = KmsKeyring(kms_client, {{kms_key_id}}, enable_legacy_wrapping_algorithms={{True}})
 ```
 
@@ -134,7 +134,7 @@ If you need to decrypt objects that were encrypted with a legacy algorithm, or y
 To enable the unauthenticated legacy mode, specify the `enableLegacyUnauthenticatedModes` parameter when you instantiate the client.
 The following example specifies an AES key as the wrapping key. This client only encrypts with fully supported algorithms. However, it can decrypt objects encrypted with fully supported or legacy algorithms.
 
-```
+```java
 S3Client s3Client = S3EncryptionClient.builderV4()
         .aesKey(aesKey)
         .commitmentPolicy(CommitmentPolicy.REQUIRE_ENCRYPT_ALLOW_DECRYPT)
@@ -143,7 +143,7 @@ S3Client s3Client = S3EncryptionClient.builderV4()
 ```
 The following example creates a cryptographic materials manager that only encrypts with fully supported wrapping algorithms. However, it can decrypt objects encrypted with fully supported or legacy algorithms.
 
-```
+```go
 client, err := NewS3EncryptionClientV3(s3Client, cmm, func(clientOptions *client.EncryptionClientOptions) {
 		clientOptions.EnableLegacyUnauthenticatedModes = {{true}}
 	})
@@ -153,7 +153,7 @@ client, err := NewS3EncryptionClientV3(s3Client, cmm, func(clientOptions *client
 ```
 The following example creates a client that only encrypts with fully supported algorithms. However, it can decrypt objects encrypted with fully supported or legacy algorithms.
 
-```
+```python
 config = S3EncryptionClientConfig(
     keyring,
     commitment_policy=CommitmentPolicy.REQUIRE_ENCRYPT_ALLOW_DECRYPT,

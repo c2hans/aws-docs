@@ -72,7 +72,7 @@ Before you can delete an S3 Access Grants instance, you must first delete all gr
 
 **Example – Delete an S3 Access Grants instance**
 
-```
+```java
 public void deleteAccessGrantsInstance() {
 DeleteAccessGrantsInstanceRequest deleteRequest = DeleteAccessGrantsInstanceRequest.builder()
 .accountId("{{111122223333}}")

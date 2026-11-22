@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-omics-workflow-sourcereference-syntax.json"></a>
 
-```
+```json
 {
   "[type](#cfn-omics-workflow-sourcereference-type)" : {{String}},
   "[value](#cfn-omics-workflow-sourcereference-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-omics-workflow-sourcereference-syntax.yaml"></a>
 
-```
+```yaml
   [type](#cfn-omics-workflow-sourcereference-type): {{String}}
   [value](#cfn-omics-workflow-sourcereference-value): {{String}}
 ```

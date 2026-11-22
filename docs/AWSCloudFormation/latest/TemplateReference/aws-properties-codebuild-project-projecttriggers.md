@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codebuild-project-projecttriggers-syntax.json"></a>
 
-```
+```json
 {
   "[BuildType](#cfn-codebuild-project-projecttriggers-buildtype)" : {{String}},
   "[FilterGroups](#cfn-codebuild-project-projecttriggers-filtergroups)" : {{[ [ , ... ], ... ]}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codebuild-project-projecttriggers-syntax.yaml"></a>
 
-```
+```yaml
   [BuildType](#cfn-codebuild-project-projecttriggers-buildtype): {{String}}
   [FilterGroups](#cfn-codebuild-project-projecttriggers-filtergroups): {{
     -

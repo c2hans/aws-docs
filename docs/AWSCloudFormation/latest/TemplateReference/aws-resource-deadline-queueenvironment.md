@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-deadline-queueenvironment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Deadline::QueueEnvironment",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-deadline-queueenvironment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Deadline::QueueEnvironment
 Properties:
   [FarmId](#cfn-deadline-queueenvironment-farmid): {{String}}

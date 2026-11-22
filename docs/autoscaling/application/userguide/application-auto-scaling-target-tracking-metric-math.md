@@ -49,7 +49,7 @@ The following diagram illustrates the architecture for this metric:
 
    Use the following example to help you get started. Replace each {{user input placeholder}} with your own information.
 
-   ```
+   ```json
    {
        "CustomizedMetricSpecification": {
            "Metrics": [
@@ -121,7 +121,7 @@ To get the exact metric name, namespace, and dimensions (if applicable) for a Cl
 
    If successful, this command returns the policy's Amazon Resource Name (ARN) and the ARNs of the two CloudWatch alarms created on your behalf.
 
-   ```
+   ```json
    {
        "PolicyARN": "arn:aws:autoscaling:us-west-2:012345678910:scalingPolicy: 8784a896-b2ba-47a1-b08c-27301cc499a1:resource/ecs/service/my-cluster/my-service:policyName/sqs-backlog-target-tracking-scaling-policy",
        "Alarms": [

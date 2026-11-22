@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpooldomain-routingtype-syntax.json"></a>
 
-```
+```json
 {
   "[Failover](#cfn-cognito-userpooldomain-routingtype-failover)" : {{FailoverType}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpooldomain-routingtype-syntax.yaml"></a>
 
-```
+```yaml
   [Failover](#cfn-cognito-userpooldomain-routingtype-failover): {{
     FailoverType}}
 ```

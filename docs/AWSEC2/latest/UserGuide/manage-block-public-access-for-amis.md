@@ -37,13 +37,13 @@ Use the [ get-image-block-public-access-state](https://docs.aws.amazon.com/cli/l
 
 **Example: For a specific Region**
 
-```
+```bash
 aws ec2 get-image-block-public-access-state --region {{us-east-1}}
 ```
 
 The `ManagedBy` field indicates the entity that configured the setting. In this example, `account` indicates that the setting was configured directly in the account. A value of `declarative-policy` would mean the setting was configured by a declarative policy. For more information, see [Declarative policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_declarative.html) in the *AWS Organizations User Guide*.
 
-```
+```json
 {
     "ImageBlockPublicAccessState": "block-new-sharing",
     "ManagedBy": "account"
@@ -52,7 +52,7 @@ The `ManagedBy` field indicates the entity that configured the setting. In this 
 
 **Example: For all Regions in your account**
 
-```
+```bash
 echo -e "Region   \t Public Access State" ; \
 echo -e "-------------- \t ----------------------" ; \
 for region in $(
@@ -72,7 +72,7 @@ done
 
 The following is example output.
 
-```
+```bash
 Region           Public Access State
 --------------   ----------------------
 ap-south-1       block-new-sharing
@@ -89,19 +89,19 @@ Use the [Get-EC2ImageBlockPublicAccessState](https://docs.aws.amazon.com/powersh
 
 **Example: For a specific Region**
 
-```
+```powershell
 Get-EC2ImageBlockPublicAccessState -Region {{us-east-1}}
 ```
 
 The following is example output.
 
-```
+```bash
 block-new-sharing
 ```
 
 **Example: For all Regions in your account**
 
-```
+```powershell
 (Get-EC2Region).RegionName | `
     ForEach-Object {
         [PSCustomObject]@{
@@ -114,7 +114,7 @@ Format-Table -AutoSize
 
 The following is example output.
 
-```
+```bash
 Region         PublicAccessState
 ------         -----------------
 ap-south-1     block-new-sharing
@@ -161,7 +161,7 @@ Use the [enable-image-block-public-access](https://docs.aws.amazon.com/cli/lates
 
 **Example: For a specific Region**
 
-```
+```bash
 aws ec2 enable-image-block-public-access \
 --region {{us-east-1}} \
 --image-block-public-access-state block-new-sharing
@@ -169,7 +169,7 @@ aws ec2 enable-image-block-public-access \
 
 The following is example output.
 
-```
+```JSON
 {
     "ImageBlockPublicAccessState": "block-new-sharing"
 }
@@ -177,7 +177,7 @@ The following is example output.
 
 **Example: For all Regions in your account**
 
-```
+```bash
 echo -e "Region   \t Public Access State" ; \
 echo -e "-------------- \t ----------------------" ; \
 for region in $(
@@ -198,7 +198,7 @@ done
 
 The following is example output.
 
-```
+```bash
 Region           Public Access State
 --------------   ----------------------
 ap-south-1       block-new-sharing
@@ -215,7 +215,7 @@ Use the [Enable-EC2ImageBlockPublicAccess](https://docs.aws.amazon.com/powershel
 
 **Example: For a specific Region**
 
-```
+```powershell
 Enable-EC2ImageBlockPublicAccess `
     -Region {{us-east-1}} `
     -ImageBlockPublicAccessState block-new-sharing
@@ -223,7 +223,7 @@ Enable-EC2ImageBlockPublicAccess `
 
 The following is example output.
 
-```
+```bash
 Value
 -----
 block-new-sharing
@@ -231,7 +231,7 @@ block-new-sharing
 
 **Example: For all Regions in your account**
 
-```
+```powershell
 (Get-EC2Region).RegionName | `
     ForEach-Object {
     [PSCustomObject]@{
@@ -247,7 +247,7 @@ Format-Table -AutoSize
 
 The following is example output.
 
-```
+```bash
 Region         PublicAccessState
 ------         -----------------
 ap-south-1     block-new-sharing
@@ -296,13 +296,13 @@ Use the [disable-image-block-public-access](https://docs.aws.amazon.com/cli/late
 
 **Example: For a specific Region**
 
-```
+```bash
 aws ec2 disable-image-block-public-access --region {{us-east-1}}
 ```
 
 The following is example output.
 
-```
+```json
 {
    "ImageBlockPublicAccessState": "unblocked"
 }
@@ -310,7 +310,7 @@ The following is example output.
 
 **Example: For all Regions in your account**
 
-```
+```bash
 echo -e "Region   \t Public Access State" ; \
 echo -e "-------------- \t ----------------------" ; \
 for region in $(
@@ -330,7 +330,7 @@ done
 
 The following is example output.
 
-```
+```bash
 Region           Public Access State
 --------------   ----------------------
 ap-south-1       unblocked
@@ -347,13 +347,13 @@ Use the [Disable-EC2ImageBlockPublicAccess](https://docs.aws.amazon.com/powershe
 
 **Example: For a specific Region**
 
-```
+```powershell
 Disable-EC2ImageBlockPublicAccess -Region {{us-east-1}}
 ```
 
 The following is example output.
 
-```
+```bash
 Value
 -----
 unblocked
@@ -361,7 +361,7 @@ unblocked
 
 **Example: For all Regions in your account**
 
-```
+```powershell
 (Get-EC2Region).RegionName | `
     ForEach-Object {
     [PSCustomObject]@{
@@ -374,7 +374,7 @@ Format-Table -AutoSize
 
 The following is example output.
 
-```
+```bash
 Region         PublicAccessState
 ------         -----------------
 ap-south-1     unblocked

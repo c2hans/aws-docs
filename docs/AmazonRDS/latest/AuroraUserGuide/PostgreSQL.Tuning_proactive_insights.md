@@ -49,7 +49,7 @@ You can find idle transactions by querying `pg_stat_activity`.
 
 In your SQL client, run the following query to list all connections in `idle in transaction` state and to order them by duration:
 
-```
+```sql
 SELECT now() - state_change as idle_in_transaction_duration, now() - xact_start as xact_duration,*
 FROM  pg_stat_activity
 WHERE state  = 'idle in transaction'
@@ -76,7 +76,7 @@ When you initiate a transaction in an interactive session with BEGIN or START TR
 
 Terminate the connection with an idle transaction using the following query:
 
-```
+```sql
 SELECT pg_terminate_backend{{(pid)}};
 ```
 

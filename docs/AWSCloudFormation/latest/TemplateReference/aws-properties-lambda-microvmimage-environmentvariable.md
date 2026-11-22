@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-microvmimage-environmentvariable-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-lambda-microvmimage-environmentvariable-key)" : {{String}},
   "[Value](#cfn-lambda-microvmimage-environmentvariable-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-microvmimage-environmentvariable-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-lambda-microvmimage-environmentvariable-key): {{String}}
   [Value](#cfn-lambda-microvmimage-environmentvariable-value): {{String}}
 ```

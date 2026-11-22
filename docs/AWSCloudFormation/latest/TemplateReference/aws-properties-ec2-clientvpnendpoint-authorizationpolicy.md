@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-clientvpnendpoint-authorizationpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-ec2-clientvpnendpoint-authorizationpolicy-description)" : {{String}},
   "[PolicyDocument](#cfn-ec2-clientvpnendpoint-authorizationpolicy-policydocument)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-clientvpnendpoint-authorizationpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-ec2-clientvpnendpoint-authorizationpolicy-description): {{String}}
   [PolicyDocument](#cfn-ec2-clientvpnendpoint-authorizationpolicy-policydocument): {{String}}
   [ShadowMode](#cfn-ec2-clientvpnendpoint-authorizationpolicy-shadowmode): {{String}}

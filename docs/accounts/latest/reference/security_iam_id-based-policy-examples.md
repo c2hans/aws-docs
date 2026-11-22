@@ -51,7 +51,7 @@ The `account:GetAccountInformation` action grants access to view most of the set
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -82,7 +82,7 @@ This example policy builds on the preceding example policy by adding each of the
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

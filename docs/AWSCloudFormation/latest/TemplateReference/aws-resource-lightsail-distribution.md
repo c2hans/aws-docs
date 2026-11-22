@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lightsail-distribution-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lightsail::Distribution",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lightsail-distribution-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lightsail::Distribution
 Properties:
   [BundleId](#cfn-lightsail-distribution-bundleid): {{String}}

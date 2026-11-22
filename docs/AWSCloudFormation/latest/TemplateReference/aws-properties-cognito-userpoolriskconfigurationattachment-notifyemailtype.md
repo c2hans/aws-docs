@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpoolriskconfigurationattachment-notifyemailtype-syntax.json"></a>
 
-```
+```json
 {
   "[HtmlBody](#cfn-cognito-userpoolriskconfigurationattachment-notifyemailtype-htmlbody)" : {{String}},
   "[Subject](#cfn-cognito-userpoolriskconfigurationattachment-notifyemailtype-subject)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpoolriskconfigurationattachment-notifyemailtype-syntax.yaml"></a>
 
-```
+```yaml
   [HtmlBody](#cfn-cognito-userpoolriskconfigurationattachment-notifyemailtype-htmlbody): {{String}}
   [Subject](#cfn-cognito-userpoolriskconfigurationattachment-notifyemailtype-subject): {{String}}
   [TextBody](#cfn-cognito-userpoolriskconfigurationattachment-notifyemailtype-textbody): {{String}}

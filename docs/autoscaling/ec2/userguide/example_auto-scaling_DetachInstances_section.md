@@ -46,7 +46,7 @@ For more information, see [Detach or attach instances from your Auto Scaling gro
 **Tools for PowerShell V4**
 **Example 1: This example detaches the specified instance from the specified Auto Scaling group and decreases the desired capacity so that Auto Scaling does not launch a replacement instance.**
 
-```
+```powershell
 Dismount-ASInstance -InstanceId i-93633f9b -AutoScalingGroupName my-asg -ShouldDecrementDesiredCapacity $true
 ```
 **Output:**
@@ -66,7 +66,7 @@ StatusMessage        :
 ```
 **Example 2: This example detaches the specified instance from the specified Auto Scaling group without decreasing the desired capacity. Auto Scaling launches a replacement instance.**
 
-```
+```powershell
 Dismount-ASInstance -InstanceId i-7bf746a2 -AutoScalingGroupName my-asg -ShouldDecrementDesiredCapacity $false
 ```
 **Output:**
@@ -88,7 +88,7 @@ StatusMessage        :
 **Tools for PowerShell V5**
 **Example 1: This example detaches the specified instance from the specified Auto Scaling group and decreases the desired capacity so that Auto Scaling does not launch a replacement instance.**
 
-```
+```powershell
 Dismount-ASInstance -InstanceId i-93633f9b -AutoScalingGroupName my-asg -ShouldDecrementDesiredCapacity $true
 ```
 **Output:**
@@ -108,7 +108,7 @@ StatusMessage        :
 ```
 **Example 2: This example detaches the specified instance from the specified Auto Scaling group without decreasing the desired capacity. Auto Scaling launches a replacement instance.**
 
-```
+```powershell
 Dismount-ASInstance -InstanceId i-7bf746a2 -AutoScalingGroupName my-asg -ShouldDecrementDesiredCapacity $false
 ```
 **Output:**

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-anchordateconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AnchorOption](#cfn-quicksight-dashboard-anchordateconfiguration-anchoroption)" : {{String}},
   "[ParameterName](#cfn-quicksight-dashboard-anchordateconfiguration-parametername)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-anchordateconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AnchorOption](#cfn-quicksight-dashboard-anchordateconfiguration-anchoroption): {{String}}
   [ParameterName](#cfn-quicksight-dashboard-anchordateconfiguration-parametername): {{String}}
 ```

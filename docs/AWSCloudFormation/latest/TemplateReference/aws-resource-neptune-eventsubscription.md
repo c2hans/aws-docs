@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-neptune-eventsubscription-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Neptune::EventSubscription",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-neptune-eventsubscription-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Neptune::EventSubscription
 Properties:
   [Enabled](#cfn-neptune-eventsubscription-enabled): {{Boolean}}

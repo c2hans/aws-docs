@@ -18,7 +18,7 @@ For you or a user in your account to create and maintain a VPC link, you or the 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

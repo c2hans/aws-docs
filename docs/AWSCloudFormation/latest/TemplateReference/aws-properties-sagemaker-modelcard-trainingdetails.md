@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelcard-trainingdetails-syntax.json"></a>
 
-```
+```json
 {
   "[ObjectiveFunction](#cfn-sagemaker-modelcard-trainingdetails-objectivefunction)" : {{ObjectiveFunction}},
   "[TrainingJobDetails](#cfn-sagemaker-modelcard-trainingdetails-trainingjobdetails)" : {{TrainingJobDetails}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelcard-trainingdetails-syntax.yaml"></a>
 
-```
+```yaml
   [ObjectiveFunction](#cfn-sagemaker-modelcard-trainingdetails-objectivefunction): {{
     ObjectiveFunction}}
   [TrainingJobDetails](#cfn-sagemaker-modelcard-trainingdetails-trainingjobdetails): {{

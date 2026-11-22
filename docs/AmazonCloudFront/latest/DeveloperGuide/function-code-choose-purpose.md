@@ -25,7 +25,7 @@ After you create and publish a function that modifies the HTTP request, make sur
 **Example**
 The following pseudocode shows the structure of a function that modifies the HTTP request.
 
-```
+```js
 function handler(event) {
     var request = event.request;
 
@@ -46,7 +46,7 @@ When you create a function that generates an HTTP response, make sure to choose 
 **Example**
 The following pseudocode shows the structure of a function that generates an HTTP response.
 
-```
+```js
 function handler(event) {
     var request = event.request;
 
@@ -68,7 +68,7 @@ When you create a function that modifies the HTTP response, make sure to choose 
 **Example**
 The following pseudocode shows the structure of a function that modifies the HTTP response.
 
-```
+```js
 function handler(event) {
     var request = event.request;
     var response = event.response;
@@ -91,7 +91,7 @@ After you create and publish a connection function, make sure to add an associat
 **Example**
 The following pseudocode shows the structure of a connection function:
 
-```
+```js
 function connectionHandler(connection) {
     // Validate certificate and connection properties here.
 

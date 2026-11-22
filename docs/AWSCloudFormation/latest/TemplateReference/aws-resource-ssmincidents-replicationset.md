@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ssmincidents-replicationset-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SSMIncidents::ReplicationSet",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ssmincidents-replicationset-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SSMIncidents::ReplicationSet
 Properties:
   [DeletionProtected](#cfn-ssmincidents-replicationset-deletionprotected): {{Boolean}}
@@ -78,7 +78,7 @@ We recommend creating a replication set and response plan using a single templat
 #### JSON
 <a name="aws-resource-ssmincidents-replicationset--examples--Create_a_replication_set--json"></a>
 
-```
+```json
 {
    "AWSTemplateFormatVersion": "2010-09-09",
    "Description": "Sample AWS CloudFormation template to create a replication set (JSON).",
@@ -109,7 +109,7 @@ We recommend creating a replication set and response plan using a single templat
 #### YAML
 <a name="aws-resource-ssmincidents-replicationset--examples--Create_a_replication_set--yaml"></a>
 
-```
+```yaml
 ---
 AWSTemplateFormatVersion: 2010-09-09
 Description: "Sample AWS CloudFormation template to create a replication set (YAML)."

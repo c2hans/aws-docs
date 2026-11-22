@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sagemaker-monitoringschedule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SageMaker::MonitoringSchedule",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sagemaker-monitoringschedule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SageMaker::MonitoringSchedule
 Properties:
   [EndpointName](#cfn-sagemaker-monitoringschedule-endpointname): {{String}}
@@ -143,7 +143,7 @@ The following example creates a monitoring schedule for a SageMaker endpoint.
 #### JSON
 <a name="aws-resource-sagemaker-monitoringschedule--examples--SageMaker_MonitoringSchedule_Example--json"></a>
 
-```
+```json
 {
    "AWSTemplateFormatVersion": "2010-09-09",
    "Description": "Basic SageMaker Hosting entities to create a monitoring schedule",
@@ -327,7 +327,7 @@ The following example creates a monitoring schedule for a SageMaker endpoint.
 #### YAML
 <a name="aws-resource-sagemaker-monitoringschedule--examples--SageMaker_MonitoringSchedule_Example--yaml"></a>
 
-```
+```yaml
 ---
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Basic SageMaker Hosting entities to create a monitoring schedule

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackage-packagingconfiguration-hlspackage-syntax.json"></a>
 
-```
+```json
 {
   "[Encryption](#cfn-mediapackage-packagingconfiguration-hlspackage-encryption)" : {{HlsEncryption}},
   "[HlsManifests](#cfn-mediapackage-packagingconfiguration-hlspackage-hlsmanifests)" : {{[ HlsManifest, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackage-packagingconfiguration-hlspackage-syntax.yaml"></a>
 
-```
+```yaml
   [Encryption](#cfn-mediapackage-packagingconfiguration-hlspackage-encryption): {{
     HlsEncryption}}
   [HlsManifests](#cfn-mediapackage-packagingconfiguration-hlspackage-hlsmanifests): {{

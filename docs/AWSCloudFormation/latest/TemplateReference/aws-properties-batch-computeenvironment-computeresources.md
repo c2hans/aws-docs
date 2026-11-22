@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-computeenvironment-computeresources-syntax.json"></a>
 
-```
+```json
 {
   "[AllocationStrategy](#cfn-batch-computeenvironment-computeresources-allocationstrategy)" : {{String}},
   "[BidPercentage](#cfn-batch-computeenvironment-computeresources-bidpercentage)" : {{Integer}},
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-computeenvironment-computeresources-syntax.yaml"></a>
 
-```
+```yaml
   [AllocationStrategy](#cfn-batch-computeenvironment-computeresources-allocationstrategy): {{String}}
   [BidPercentage](#cfn-batch-computeenvironment-computeresources-bidpercentage): {{Integer}}
   [CapacityTags](#cfn-batch-computeenvironment-computeresources-capacitytags): {{

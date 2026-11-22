@@ -30,7 +30,7 @@ Use the `addKeys` processor to add new key-value pairs to the log event.
 
 Take the following example log event:
 
-```
+```json
 {
     "outer_key": {
         "inner_key": "inner_value"
@@ -40,7 +40,7 @@ Take the following example log event:
 
 The transformer configuration is this, using `addKeys` with `parseJSON`:
 
-```
+```json
 [
     {
         "parseJSON": {}
@@ -60,7 +60,7 @@ The transformer configuration is this, using `addKeys` with `parseJSON`:
 
 The transformed log event would be the following.
 
-```
+```json
 {
   "outer_key": {
     "inner_key": "inner_value",
@@ -82,7 +82,7 @@ Use the `deleteKeys` processor to delete fields from a log event. These fields c
 
 Take the following example log event:
 
-```
+```json
 {
     "outer_key": {
         "inner_key": "inner_value"
@@ -92,7 +92,7 @@ Take the following example log event:
 
 The transformer configuration is this, using `deleteKeys` with `parseJSON`:
 
-```
+```json
 [
     {
         "parseJSON": {}
@@ -107,7 +107,7 @@ The transformer configuration is this, using `deleteKeys` with `parseJSON`:
 
 The transformed log event would be the following.
 
-```
+```json
 {
   "outer_key": {}
 }
@@ -129,7 +129,7 @@ Use the `moveKeys` processor to move a key from one field to another.
 
 Take the following example log event:
 
-```
+```json
 {
     "outer_key1": {
         "inner_key1": "inner_value1"
@@ -142,7 +142,7 @@ Take the following example log event:
 
 The transformer configuration is this, using `moveKeys` with `parseJSON`:
 
-```
+```json
 [
     {
         "parseJSON": {}
@@ -162,7 +162,7 @@ The transformer configuration is this, using `moveKeys` with `parseJSON`:
 
 The transformed log event would be the following.
 
-```
+```json
 {
   "outer_key1": {},
   "outer_key2": {
@@ -188,7 +188,7 @@ Use the `renameKeys` processor to rename keys in a log event.
 
 Take the following example log event:
 
-```
+```json
 {
     "outer_key": {
         "inner_key": "inner_value"
@@ -198,7 +198,7 @@ Take the following example log event:
 
 The transformer configuration is this, using `renameKeys` with `parseJSON`:
 
-```
+```json
 [
     {
         "parseJSON": {}
@@ -218,7 +218,7 @@ The transformer configuration is this, using `renameKeys` with `parseJSON`:
 
 The transformed log event would be the following.
 
-```
+```json
 {
   "new_key": {
     "inner_key": "inner_value"
@@ -242,7 +242,7 @@ Use the `copyValue` processor to copy values within a log event. You can also us
 
 Take the following example log event:
 
-```
+```json
 {
     "outer_key": {
         "inner_key": "inner_value"
@@ -252,7 +252,7 @@ Take the following example log event:
 
 The transformer configuration is this, using `copyValue` with `parseJSON`:
 
-```
+```json
 [
     {
         "parseJSON": {}
@@ -288,7 +288,7 @@ The transformer configuration is this, using `copyValue` with `parseJSON`:
 
 The transformed log event would be the following.
 
-```
+```json
 {
   "outer_key": {
     "inner_key": "inner_value"
@@ -319,7 +319,7 @@ The `listToMap` processor takes a list of objects that contain key fields, and c
 
 Take the following example log event:
 
-```
+```json
 {
     "outer_key": [
         {
@@ -344,7 +344,7 @@ Take the following example log event:
 
 **Transformer for use case 1:** `flatten` is `false`
 
-```
+```json
 [
     {
         "parseJSON": {}
@@ -362,7 +362,7 @@ Take the following example log event:
 
 The transformed log event would be the following.
 
-```
+```json
 {
     "outer_key": [
         {
@@ -397,7 +397,7 @@ The transformed log event would be the following.
 
 **Transformer for use case 2:** `flatten` is `true` and `flattenedElement` is `first`
 
-```
+```json
 [
     {
         "parseJSON": {}
@@ -416,7 +416,7 @@ The transformed log event would be the following.
 
 The transformed log event would be the following.
 
-```
+```json
 {
     "outer_key": [
         {
@@ -444,7 +444,7 @@ The transformed log event would be the following.
 
 **Transformer for use case 3:** `flatten` is `true` and `flattenedElement` is `last`
 
-```
+```json
 [
     {
         "parseJSON": {}
@@ -463,7 +463,7 @@ The transformed log event would be the following.
 
 The transformed log event would be the following.
 
-```
+```json
 {
     "outer_key": [
         {

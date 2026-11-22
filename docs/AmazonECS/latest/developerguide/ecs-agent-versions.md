@@ -88,6 +88,6 @@ level=info time=2019-12-12T23:43:29Z msg="Restored from checkpoint file. I am ru
 
 The following is an example log file when the JSON format is used.
 
-```
+```JSON
 {"time": "2019-11-07T22:52:02Z", "level": "info", "msg": "Starting Amazon Elastic Container Service Agent", "module": "engine.go"}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-guardduty-publishingdestination-cfndestinationproperties-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationArn](#cfn-guardduty-publishingdestination-cfndestinationproperties-destinationarn)" : {{String}},
   "[KmsKeyArn](#cfn-guardduty-publishingdestination-cfndestinationproperties-kmskeyarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-guardduty-publishingdestination-cfndestinationproperties-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationArn](#cfn-guardduty-publishingdestination-cfndestinationproperties-destinationarn): {{String}}
   [KmsKeyArn](#cfn-guardduty-publishingdestination-cfndestinationproperties-kmskeyarn): {{String}}
 ```

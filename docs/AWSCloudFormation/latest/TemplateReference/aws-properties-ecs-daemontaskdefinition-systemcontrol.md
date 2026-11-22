@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-daemontaskdefinition-systemcontrol-syntax.json"></a>
 
-```
+```json
 {
   "[Namespace](#cfn-ecs-daemontaskdefinition-systemcontrol-namespace)" : {{String}},
   "[Value](#cfn-ecs-daemontaskdefinition-systemcontrol-value)" : {{String}}
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-daemontaskdefinition-systemcontrol-syntax.yaml"></a>
 
-```
+```yaml
   [Namespace](#cfn-ecs-daemontaskdefinition-systemcontrol-namespace): {{String}}
   [Value](#cfn-ecs-daemontaskdefinition-systemcontrol-value): {{String}}
 ```

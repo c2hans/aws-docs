@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-amazonmq-broker-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AmazonMQ::Broker",
   "Properties" : {
@@ -69,7 +69,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-amazonmq-broker-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AmazonMQ::Broker
 Properties:
   [AuthenticationStrategy](#cfn-amazonmq-broker-authenticationstrategy): {{String}}
@@ -333,7 +333,7 @@ The following examples creates a basic Amazon MQ broker. The RabbitMQ example cr
 #### JSON
 <a name="aws-resource-amazonmq-broker--examples--Basic_Amazon_MQ_Broker--json"></a>
 
-```
+```json
 {
   "Description": "Create a basic Amazon MQ for ActiveMQ broker",
   "Resources": {
@@ -366,7 +366,7 @@ The following examples creates a basic Amazon MQ broker. The RabbitMQ example cr
 #### JSON
 <a name="aws-resource-amazonmq-broker--examples--Basic_Amazon_MQ_Broker--json"></a>
 
-```
+```json
 {
 "Description": "Create a basic Amazon MQ for RabbitMQ broker",
 "Resources": {
@@ -395,7 +395,7 @@ The following examples creates a basic Amazon MQ broker. The RabbitMQ example cr
 #### YAML
 <a name="aws-resource-amazonmq-broker--examples--Basic_Amazon_MQ_Broker--yaml"></a>
 
-```
+```yaml
 ---
 Description: "Create a basic Amazon MQ for ActiveMQ broker"
 Resources:
@@ -421,7 +421,7 @@ Resources:
 #### YAML
 <a name="aws-resource-amazonmq-broker--examples--Basic_Amazon_MQ_Broker--yaml"></a>
 
-```
+```yaml
 ---
 Description: "Create a basic Amazon MQ for RabbitMQ broker"
 Resources:
@@ -449,7 +449,7 @@ The following example creates a complex Amazon MQ broker. The ActiveMQ example c
 #### JSON
 <a name="aws-resource-amazonmq-broker--examples--Complex_Amazon_MQ_Broker--json"></a>
 
-```
+```json
 {
   "Description": "Create a complex, single-instance Amazon MQ for ActiveMQ broker",
   "Resources": {
@@ -508,7 +508,7 @@ The following example creates a complex Amazon MQ broker. The ActiveMQ example c
 #### JSON
 <a name="aws-resource-amazonmq-broker--examples--Complex_Amazon_MQ_Broker--json"></a>
 
-```
+```json
 {
   "Description": "Create a complex, single-instance Amazon MQ RabbitMQ broker without public accessibility",
   "Resources": {
@@ -551,7 +551,7 @@ The following example creates a complex Amazon MQ broker. The ActiveMQ example c
 #### YAML
 <a name="aws-resource-amazonmq-broker--examples--Complex_Amazon_MQ_Broker--yaml"></a>
 
-```
+```yaml
 Description: Create a complex, single-instance Amazon MQ for ActiveMQ broker
 Resources:
   ComplexBroker:
@@ -598,7 +598,7 @@ Resources:
 #### YAML
 <a name="aws-resource-amazonmq-broker--examples--Complex_Amazon_MQ_Broker--yaml"></a>
 
-```
+```yaml
 Description: Create a single-instance Amazon MQ for RabbitMQ broker without public accessibility
 Resources:
   ComplexBroker:

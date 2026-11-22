@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-connectiontype-cursorconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[LimitParameter](#cfn-glue-connectiontype-cursorconfiguration-limitparameter)" : {{ExtractedParameter}},
   "[NextPage](#cfn-glue-connectiontype-cursorconfiguration-nextpage)" : {{ExtractedParameter}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-connectiontype-cursorconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [LimitParameter](#cfn-glue-connectiontype-cursorconfiguration-limitparameter): {{
     ExtractedParameter}}
   [NextPage](#cfn-glue-connectiontype-cursorconfiguration-nextpage): {{

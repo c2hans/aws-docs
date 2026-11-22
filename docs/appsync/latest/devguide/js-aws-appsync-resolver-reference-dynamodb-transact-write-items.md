@@ -13,7 +13,7 @@ The DynamoDB `TransactWriteItems` limits apply.
 
 The `TransactWriteItems` request object has the following structure:
 
-```
+```TypeScript
 type DynamoDBTransactWriteItemsRequest = {
   operation: 'TransactWriteItems';
   transactItems: TransactItem[];
@@ -119,7 +119,7 @@ Things to remember:
 
 For the following example function request handler:
 
-```
+```TypeScript
 import { util } from '@aws-appsync/utils';
 
 export function request(ctx) {
@@ -152,7 +152,7 @@ export function request(ctx) {
 
 If the transaction succeeds, the invocation result available in `ctx.result` is as follows:
 
-```
+```TypeScript
 {
     "keys": [
        // Key of the PutItem request
@@ -170,7 +170,7 @@ If the transaction succeeds, the invocation result available in `ctx.result` is 
 
 If the transaction fails due to condition check failure of the `PutItem` request, the invocation result available in `ctx.result` is as follows:
 
-```
+```TypeScript
 {
     "keys": null,
     "cancellationReasons": [

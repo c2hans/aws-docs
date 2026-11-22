@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appstream-stack-contentredirection-syntax.json"></a>
 
-```
+```json
 {
   "[HostToClient](#cfn-appstream-stack-contentredirection-hosttoclient)" : {{UrlRedirectionConfig}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appstream-stack-contentredirection-syntax.yaml"></a>
 
-```
+```yaml
   [HostToClient](#cfn-appstream-stack-contentredirection-hosttoclient): {{
     UrlRedirectionConfig}}
 ```

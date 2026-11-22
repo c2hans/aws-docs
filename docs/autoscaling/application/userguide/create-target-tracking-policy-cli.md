@@ -39,7 +39,7 @@ aws application-autoscaling register-scalable-target --service-namespace {{ec2}}
 **Output**
 If successful, this command returns the ARN of the scalable target. The following is example output.
 
-```
+```json
 {
     "ScalableTargetARN": "arn:aws:application-autoscaling:{{region}}:{{account-id}}:scalable-target/1234abcd56ab78cd901ef1234567890ab123"
 }
@@ -69,7 +69,7 @@ To create a target tracking scaling policy, you can use the following examples t
 
    Alternatively, you can use a custom metric for scaling by creating a customized metric specification and adding values for each parameter from CloudWatch. The following is an example target tracking configuration that keeps the average utilization of the specified metric at 100.
 
-   ```
+   ```json
    $ cat ~/config.json
    {
       "TargetValue": {{100.0}},
@@ -115,7 +115,7 @@ To create a target tracking scaling policy, you can use the following examples t
 **Output**
 If successful, this command returns the ARNs and names of the two CloudWatch alarms created on your behalf. The following is example output.
 
-   ```
+   ```json
    {
        "PolicyARN": "arn:aws:autoscaling:region:account-id:scalingPolicy:policy-id:resource/ec2/spot-fleet-request/sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE:policyName/cpu50-target-tracking-scaling-policy",
        "Alarms": [
@@ -159,7 +159,7 @@ aws application-autoscaling describe-scaling-policies --service-namespace {{ec2}
 **Output**
 The following is example output.
 
-```
+```json
 [
     {
         "PolicyARN": "PolicyARN",

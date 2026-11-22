@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-knowledgebase-s3vectorsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[IndexArn](#cfn-bedrock-knowledgebase-s3vectorsconfiguration-indexarn)" : {{String}},
   "[IndexName](#cfn-bedrock-knowledgebase-s3vectorsconfiguration-indexname)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-knowledgebase-s3vectorsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [IndexArn](#cfn-bedrock-knowledgebase-s3vectorsconfiguration-indexarn): {{String}}
   [IndexName](#cfn-bedrock-knowledgebase-s3vectorsconfiguration-indexname): {{String}}
   [VectorBucketArn](#cfn-bedrock-knowledgebase-s3vectorsconfiguration-vectorbucketarn): {{String}}

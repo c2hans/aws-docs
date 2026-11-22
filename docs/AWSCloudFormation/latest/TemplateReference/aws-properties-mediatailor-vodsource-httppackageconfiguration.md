@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-vodsource-httppackageconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Path](#cfn-mediatailor-vodsource-httppackageconfiguration-path)" : {{String}},
   "[SourceGroup](#cfn-mediatailor-vodsource-httppackageconfiguration-sourcegroup)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-vodsource-httppackageconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Path](#cfn-mediatailor-vodsource-httppackageconfiguration-path): {{String}}
   [SourceGroup](#cfn-mediatailor-vodsource-httppackageconfiguration-sourcegroup): {{String}}
   [Type](#cfn-mediatailor-vodsource-httppackageconfiguration-type): {{String}}

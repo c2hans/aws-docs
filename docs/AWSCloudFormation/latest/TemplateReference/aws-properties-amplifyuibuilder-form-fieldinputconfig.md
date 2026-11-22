@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amplifyuibuilder-form-fieldinputconfig-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultChecked](#cfn-amplifyuibuilder-form-fieldinputconfig-defaultchecked)" : {{Boolean}},
   "[DefaultCountryCode](#cfn-amplifyuibuilder-form-fieldinputconfig-defaultcountrycode)" : {{String}},
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amplifyuibuilder-form-fieldinputconfig-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultChecked](#cfn-amplifyuibuilder-form-fieldinputconfig-defaultchecked): {{Boolean}}
   [DefaultCountryCode](#cfn-amplifyuibuilder-form-fieldinputconfig-defaultcountrycode): {{String}}
   [DefaultValue](#cfn-amplifyuibuilder-form-fieldinputconfig-defaultvalue): {{String}}

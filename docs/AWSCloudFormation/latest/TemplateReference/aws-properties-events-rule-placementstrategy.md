@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-events-rule-placementstrategy-syntax.json"></a>
 
-```
+```json
 {
   "[Field](#cfn-events-rule-placementstrategy-field)" : {{String}},
   "[Type](#cfn-events-rule-placementstrategy-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-events-rule-placementstrategy-syntax.yaml"></a>
 
-```
+```yaml
   [Field](#cfn-events-rule-placementstrategy-field): {{String}}
   [Type](#cfn-events-rule-placementstrategy-type): {{String}}
 ```

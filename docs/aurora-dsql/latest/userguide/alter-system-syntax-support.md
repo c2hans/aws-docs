@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/alter-syste
 ## Supported syntax
 <a name="alter-system-supported-syntax"></a>
 
-```
+```sql
 ALTER SYSTEM SET configuration_parameter { TO | = } value
 ALTER SYSTEM RESET configuration_parameter
 ALTER SYSTEM RESET ALL
@@ -35,19 +35,19 @@ ALTER SYSTEM RESET ALL
 
 Set a supported parameter at the system level:
 
-```
+```sql
 ALTER SYSTEM SET dsql.enable_batched_nestloop = on;
 ```
 
 Reset a parameter to its default value:
 
-```
+```sql
 ALTER SYSTEM RESET dsql.enable_batched_nestloop;
 ```
 
 Reset all system-level parameter changes:
 
-```
+```sql
 ALTER SYSTEM RESET ALL;
 ```
 

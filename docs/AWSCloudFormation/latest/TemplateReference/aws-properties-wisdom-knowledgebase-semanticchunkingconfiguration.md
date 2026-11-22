@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-knowledgebase-semanticchunkingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BreakpointPercentileThreshold](#cfn-wisdom-knowledgebase-semanticchunkingconfiguration-breakpointpercentilethreshold)" : {{Number}},
   "[BufferSize](#cfn-wisdom-knowledgebase-semanticchunkingconfiguration-buffersize)" : {{Number}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-knowledgebase-semanticchunkingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BreakpointPercentileThreshold](#cfn-wisdom-knowledgebase-semanticchunkingconfiguration-breakpointpercentilethreshold): {{Number}}
   [BufferSize](#cfn-wisdom-knowledgebase-semanticchunkingconfiguration-buffersize): {{Number}}
   [MaxTokens](#cfn-wisdom-knowledgebase-semanticchunkingconfiguration-maxtokens): {{Number}}

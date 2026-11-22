@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-mailmanageringresspoint-networkconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[PrivateNetworkConfiguration](#cfn-ses-mailmanageringresspoint-networkconfiguration-privatenetworkconfiguration)" : {{PrivateNetworkConfiguration}},
   "[PublicNetworkConfiguration](#cfn-ses-mailmanageringresspoint-networkconfiguration-publicnetworkconfiguration)" : {{PublicNetworkConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-mailmanageringresspoint-networkconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [PrivateNetworkConfiguration](#cfn-ses-mailmanageringresspoint-networkconfiguration-privatenetworkconfiguration): {{
     PrivateNetworkConfiguration}}
   [PublicNetworkConfiguration](#cfn-ses-mailmanageringresspoint-networkconfiguration-publicnetworkconfiguration): {{

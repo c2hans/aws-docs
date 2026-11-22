@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ivs-playbackkeypair-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-ivs-playbackkeypair-tag-key)" : {{String}},
   "[Value](#cfn-ivs-playbackkeypair-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ivs-playbackkeypair-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-ivs-playbackkeypair-tag-key): {{String}}
   [Value](#cfn-ivs-playbackkeypair-tag-value): {{String}}
 ```

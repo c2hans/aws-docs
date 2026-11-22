@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-observabilityadmin-telemetryenrichment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ObservabilityAdmin::TelemetryEnrichment",
   "Properties" : {
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-observabilityadmin-telemetryenrichment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ObservabilityAdmin::TelemetryEnrichment
 Properties:
   [Scope](#cfn-observabilityadmin-telemetryenrichment-scope): {{String}}

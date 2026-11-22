@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackagev2-originendpoint-starttag-syntax.json"></a>
 
-```
+```json
 {
   "[Precise](#cfn-mediapackagev2-originendpoint-starttag-precise)" : {{Boolean}},
   "[TimeOffset](#cfn-mediapackagev2-originendpoint-starttag-timeoffset)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackagev2-originendpoint-starttag-syntax.yaml"></a>
 
-```
+```yaml
   [Precise](#cfn-mediapackagev2-originendpoint-starttag-precise): {{Boolean}}
   [TimeOffset](#cfn-mediapackagev2-originendpoint-starttag-timeoffset): {{Number}}
 ```

@@ -57,7 +57,7 @@ For more information, see [Control access to VPC endpoints using endpoint polici
 **Example: VPC endpoint policy for CloudFormation actions**
 The following is an example of an endpoint policy for CloudFormation. When attached to an endpoint, this policy grants access to the listed CloudFormation actions for all principals on all resources. The following example denies all users the permission to create stacks through the VPC endpoint, and allows full access to all other actions on the CloudFormation service.
 
-```
+```json
 {
   "Statement": [
     {

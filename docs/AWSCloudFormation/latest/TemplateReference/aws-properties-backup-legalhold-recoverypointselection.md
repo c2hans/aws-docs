@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-backup-legalhold-recoverypointselection-syntax.json"></a>
 
-```
+```json
 {
   "[DateRange](#cfn-backup-legalhold-recoverypointselection-daterange)" : {{DateRange}},
   "[ResourceIdentifiers](#cfn-backup-legalhold-recoverypointselection-resourceidentifiers)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-backup-legalhold-recoverypointselection-syntax.yaml"></a>
 
-```
+```yaml
   [DateRange](#cfn-backup-legalhold-recoverypointselection-daterange): {{
     DateRange}}
   [ResourceIdentifiers](#cfn-backup-legalhold-recoverypointselection-resourceidentifiers): {{

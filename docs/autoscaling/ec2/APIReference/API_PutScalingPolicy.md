@@ -185,7 +185,7 @@ https://autoscaling.amazonaws.com/?Action=PutScalingPolicy
 #### Sample Response
 <a name="API_PutScalingPolicy_Example_1_Response"></a>
 
-```
+```xml
 <PutScalingPolicyResponse xmlns="https://autoscaling.amazonaws.com/doc/2011-01-01/">
   <PutScalingPolicyResult>
     <PolicyARN>arn:aws:autoscaling:us-east-1:123456789012:scalingPolicy:228f02c2-c665-4bfd-aaac-8b04080bea3c:autoScalingGroupName/my-asg:policyName/alb1000-target-tracking-scaling-policy</PolicyARN>

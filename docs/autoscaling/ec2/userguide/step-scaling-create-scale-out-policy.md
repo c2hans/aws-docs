@@ -109,7 +109,7 @@ aws autoscaling put-scaling-policy \
 
 Record the policy's Amazon Resource Name (ARN). You need it to create a CloudWatch alarm for the policy.
 
-```
+```json
 {
     "PolicyARN": "arn:aws:autoscaling:{{region}}:{{123456789012}}:scalingPolicy:{{4ee9e543-86b5-4121-b53b-aa4c23b5bbcc}}:autoScalingGroupName/{{my-asg}}:policyName/{{my-step-scale-in-policy}}
 }

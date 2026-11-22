@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-fulfillmentupdatesspecification-syntax.json"></a>
 
-```
+```json
 {
   "[Active](#cfn-lex-bot-fulfillmentupdatesspecification-active)" : {{Boolean}},
   "[StartResponse](#cfn-lex-bot-fulfillmentupdatesspecification-startresponse)" : {{FulfillmentStartResponseSpecification}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-fulfillmentupdatesspecification-syntax.yaml"></a>
 
-```
+```yaml
   [Active](#cfn-lex-bot-fulfillmentupdatesspecification-active): {{Boolean}}
   [StartResponse](#cfn-lex-bot-fulfillmentupdatesspecification-startresponse): {{
     FulfillmentStartResponseSpecification}}

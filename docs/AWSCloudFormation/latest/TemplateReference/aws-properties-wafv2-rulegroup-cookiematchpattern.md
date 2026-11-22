@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-rulegroup-cookiematchpattern-syntax.json"></a>
 
-```
+```json
 {
   "[All](#cfn-wafv2-rulegroup-cookiematchpattern-all)" : {{Json}},
   "[ExcludedCookies](#cfn-wafv2-rulegroup-cookiematchpattern-excludedcookies)" : {{[ String, ... ]}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-rulegroup-cookiematchpattern-syntax.yaml"></a>
 
-```
+```yaml
   [All](#cfn-wafv2-rulegroup-cookiematchpattern-all): {{Json}}
   [ExcludedCookies](#cfn-wafv2-rulegroup-cookiematchpattern-excludedcookies): {{
     - String}}
@@ -79,7 +79,7 @@ The following shows an example cookie match pattern specification for all cookie
 #### YAML
 <a name="aws-properties-wafv2-rulegroup-cookiematchpattern--examples--Set_a_cookie_match_pattern_for_all_paths--yaml"></a>
 
-```
+```yaml
 MatchPattern:
   All: {}
 ```
@@ -87,7 +87,7 @@ MatchPattern:
 #### JSON
 <a name="aws-properties-wafv2-rulegroup-cookiematchpattern--examples--Set_a_cookie_match_pattern_for_all_paths--json"></a>
 
-```
+```json
 "MatchPattern": {
   "All": {}
 }
@@ -101,7 +101,7 @@ The following shows an example cookie match pattern specification with included 
 #### YAML
 <a name="aws-properties-wafv2-rulegroup-cookiematchpattern--examples--Set_a_cookie_match_pattern_with_included_paths--yaml"></a>
 
-```
+```yaml
 MatchPattern:
   IncludedCookies:
       - "session-id"
@@ -111,7 +111,7 @@ MatchPattern:
 #### JSON
 <a name="aws-properties-wafv2-rulegroup-cookiematchpattern--examples--Set_a_cookie_match_pattern_with_included_paths--json"></a>
 
-```
+```json
 "MatchPattern": {
   "IncludedCookies": [
     "session-id",

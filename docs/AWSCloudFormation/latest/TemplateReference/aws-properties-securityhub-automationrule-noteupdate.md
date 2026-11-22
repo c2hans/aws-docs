@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityhub-automationrule-noteupdate-syntax.json"></a>
 
-```
+```json
 {
   "[Text](#cfn-securityhub-automationrule-noteupdate-text)" : {{String}},
   "[UpdatedBy](#cfn-securityhub-automationrule-noteupdate-updatedby)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityhub-automationrule-noteupdate-syntax.yaml"></a>
 
-```
+```yaml
   [Text](#cfn-securityhub-automationrule-noteupdate-text): {{String}}
   [UpdatedBy](#cfn-securityhub-automationrule-noteupdate-updatedby): {{String}}
 ```

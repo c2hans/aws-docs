@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-paginationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[PageNumber](#cfn-quicksight-template-paginationconfiguration-pagenumber)" : {{Number}},
   "[PageSize](#cfn-quicksight-template-paginationconfiguration-pagesize)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-paginationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [PageNumber](#cfn-quicksight-template-paginationconfiguration-pagenumber): {{
     Number}}
   [PageSize](#cfn-quicksight-template-paginationconfiguration-pagesize): {{Number}}

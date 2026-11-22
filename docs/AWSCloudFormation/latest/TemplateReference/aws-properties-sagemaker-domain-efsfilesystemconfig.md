@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-domain-efsfilesystemconfig-syntax.json"></a>
 
-```
+```json
 {
   "[FileSystemId](#cfn-sagemaker-domain-efsfilesystemconfig-filesystemid)" : {{String}},
   "[FileSystemPath](#cfn-sagemaker-domain-efsfilesystemconfig-filesystempath)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-domain-efsfilesystemconfig-syntax.yaml"></a>
 
-```
+```yaml
   [FileSystemId](#cfn-sagemaker-domain-efsfilesystemconfig-filesystemid): {{String}}
   [FileSystemPath](#cfn-sagemaker-domain-efsfilesystemconfig-filesystempath): {{String}}
 ```

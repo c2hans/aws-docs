@@ -8,7 +8,7 @@ After you create a log delivery, verify that the delivery is active and that exe
 
 To confirm a delivery is active, use the `describe-deliveries` command:
 
-```
+```bash
 aws logs describe-deliveries
 ```
 
@@ -16,7 +16,7 @@ Then send a test request and check your destination:
 
 1. Send a test request to your REST API.
 
-   ```
+   ```bash
    curl https://{{{rest-api-id}}}.execute-api.{{{region}}}.amazonaws.com/{{{stage}}}/{{{resource}}}
    ```
 
@@ -34,7 +34,7 @@ If logs are not arriving at your destination, check the following:
 + **Logging is enabled** – Confirm that `loggingLevel` is set to `ERROR` or `INFO` on the stage. If logging is `OFF`, no logs are generated regardless of delivery configuration.
 + **Delivery status** – Use the `get-delivery` CLI command to check the delivery status and confirm it is active.
 
-  ```
+  ```bash
   aws logs get-delivery --id {{{delivery-id}}}
   ```
 + **Permissions** – Verify that the resource policy on your destination allows Amazon CloudWatch Logs to write to it. For more information, see [Enable logging from AWS services](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AWS-logs-and-resource-policy.html) in the *Amazon CloudWatch Logs User Guide*.

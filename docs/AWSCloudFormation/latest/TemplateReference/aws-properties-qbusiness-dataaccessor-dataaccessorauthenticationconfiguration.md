@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-qbusiness-dataaccessor-dataaccessorauthenticationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[IdcTrustedTokenIssuerConfiguration](#cfn-qbusiness-dataaccessor-dataaccessorauthenticationconfiguration-idctrustedtokenissuerconfiguration)" : {{DataAccessorIdcTrustedTokenIssuerConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-qbusiness-dataaccessor-dataaccessorauthenticationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [IdcTrustedTokenIssuerConfiguration](#cfn-qbusiness-dataaccessor-dataaccessorauthenticationconfiguration-idctrustedtokenissuerconfiguration): {{
     DataAccessorIdcTrustedTokenIssuerConfiguration}}
 ```

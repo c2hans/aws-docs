@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-domain-sharingsettings-syntax.json"></a>
 
-```
+```json
 {
   "[NotebookOutputOption](#cfn-sagemaker-domain-sharingsettings-notebookoutputoption)" : {{String}},
   "[S3KmsKeyId](#cfn-sagemaker-domain-sharingsettings-s3kmskeyid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-domain-sharingsettings-syntax.yaml"></a>
 
-```
+```yaml
   [NotebookOutputOption](#cfn-sagemaker-domain-sharingsettings-notebookoutputoption): {{String}}
   [S3KmsKeyId](#cfn-sagemaker-domain-sharingsettings-s3kmskeyid): {{String}}
   [S3OutputPath](#cfn-sagemaker-domain-sharingsettings-s3outputpath): {{String}}

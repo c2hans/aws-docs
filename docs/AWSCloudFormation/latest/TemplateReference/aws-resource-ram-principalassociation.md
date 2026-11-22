@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ram-principalassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RAM::PrincipalAssociation",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ram-principalassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RAM::PrincipalAssociation
 Properties:
   [Principal](#cfn-ram-principalassociation-principal): {{String}}
@@ -102,7 +102,7 @@ The following example associates a principal with a resource share.
 #### YAML
 <a name="aws-resource-ram-principalassociation--examples--Associating_a_principal_with_a_resource_share--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   MyPrincipalAssociation:
@@ -115,7 +115,7 @@ Resources:
 #### JSON
 <a name="aws-resource-ram-principalassociation--examples--Associating_a_principal_with_a_resource_share--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {

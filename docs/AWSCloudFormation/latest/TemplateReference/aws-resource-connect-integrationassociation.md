@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-connect-integrationassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Connect::IntegrationAssociation",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-connect-integrationassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Connect::IntegrationAssociation
 Properties:
   [InstanceId](#cfn-connect-integrationassociation-instanceid): {{String}}
@@ -146,7 +146,7 @@ The following example specifies a Lex V1 Bot integration for an Connect Customer
 #### YAML
 <a name="aws-resource-connect-integrationassociation--examples--Specify_a_Lex_V1_Bot_integration--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Specifies a Lex V1 Bot integration for an Amazon Connect instance
 Resources:
@@ -166,7 +166,7 @@ The following example specifies a Lex V2 Bot integration for an Connect Customer
 #### YAML
 <a name="aws-resource-connect-integrationassociation--examples--Specify_a_Lex_V2_Bot_integration--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Specifies a Lex V2 Bot integration for an Amazon Connect instance
 Resources:
@@ -186,7 +186,7 @@ The following example specifies a Lambda Function for an Connect Customer instan
 #### YAML
 <a name="aws-resource-connect-integrationassociation--examples--Specify_a_Lambda_Function_integration--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Specifies a Lambda Function integration for an Amazon Connect instance
 Resources:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpool-emailconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ConfigurationSet](#cfn-cognito-userpool-emailconfiguration-configurationset)" : {{String}},
   "[EmailSendingAccount](#cfn-cognito-userpool-emailconfiguration-emailsendingaccount)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpool-emailconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ConfigurationSet](#cfn-cognito-userpool-emailconfiguration-configurationset): {{String}}
   [EmailSendingAccount](#cfn-cognito-userpool-emailconfiguration-emailsendingaccount): {{String}}
   [From](#cfn-cognito-userpool-emailconfiguration-from): {{String}}

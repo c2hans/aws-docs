@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-topic-topicsingularfilterconstant-syntax.json"></a>
 
-```
+```json
 {
   "[ConstantType](#cfn-quicksight-topic-topicsingularfilterconstant-constanttype)" : {{String}},
   "[SingularConstant](#cfn-quicksight-topic-topicsingularfilterconstant-singularconstant)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-topic-topicsingularfilterconstant-syntax.yaml"></a>
 
-```
+```yaml
   [ConstantType](#cfn-quicksight-topic-topicsingularfilterconstant-constanttype): {{String}}
   [SingularConstant](#cfn-quicksight-topic-topicsingularfilterconstant-singularconstant): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-queue-outboundcallerconfig-syntax.json"></a>
 
-```
+```json
 {
   "[OutboundCallerIdName](#cfn-connect-queue-outboundcallerconfig-outboundcalleridname)" : {{String}},
   "[OutboundCallerIdNumberArn](#cfn-connect-queue-outboundcallerconfig-outboundcalleridnumberarn)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-queue-outboundcallerconfig-syntax.yaml"></a>
 
-```
+```yaml
   [OutboundCallerIdName](#cfn-connect-queue-outboundcallerconfig-outboundcalleridname): {{String}}
   [OutboundCallerIdNumberArn](#cfn-connect-queue-outboundcallerconfig-outboundcalleridnumberarn): {{String}}
   [OutboundFlowArn](#cfn-connect-queue-outboundcallerconfig-outboundflowarn): {{String}}

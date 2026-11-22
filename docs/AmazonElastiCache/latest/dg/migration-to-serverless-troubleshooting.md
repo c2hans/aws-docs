@@ -34,7 +34,7 @@ After cutover has begun, you can no longer stop the data sync. While the migrati
 
 1. Enter the following AWS CLI command, where `{{my-cache}}` is the name of your ElastiCache Serverless cache:
 
-   ```
+   ```bash
    aws elasticache stop-migration \
        --serverless-cache-name {{my-cache}}
    ```
@@ -64,7 +64,7 @@ While the migration is `ready-to-sync`, `CompleteMigration` requires force. If y
 
 1. Enter the following AWS CLI command to force complete the migration, where `{{my-cache}}` is the name of your ElastiCache Serverless cache.
 
-   ```
+   ```bash
    aws elasticache complete-migration \
        --serverless-cache-name {{my-cache}} \
        --force

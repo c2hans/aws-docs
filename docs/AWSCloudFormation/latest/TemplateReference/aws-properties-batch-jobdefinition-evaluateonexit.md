@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-evaluateonexit-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-batch-jobdefinition-evaluateonexit-action)" : {{String}},
   "[OnExitCode](#cfn-batch-jobdefinition-evaluateonexit-onexitcode)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-evaluateonexit-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-batch-jobdefinition-evaluateonexit-action): {{String}}
   [OnExitCode](#cfn-batch-jobdefinition-evaluateonexit-onexitcode): {{String}}
   [OnReason](#cfn-batch-jobdefinition-evaluateonexit-onreason): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-input-srtcallerdecryption-syntax.json"></a>
 
-```
+```json
 {
   "[Algorithm](#cfn-medialive-input-srtcallerdecryption-algorithm)" : {{String}},
   "[PassphraseSecretArn](#cfn-medialive-input-srtcallerdecryption-passphrasesecretarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-input-srtcallerdecryption-syntax.yaml"></a>
 
-```
+```yaml
   [Algorithm](#cfn-medialive-input-srtcallerdecryption-algorithm): {{String}}
   [PassphraseSecretArn](#cfn-medialive-input-srtcallerdecryption-passphrasesecretarn): {{String}}
 ```

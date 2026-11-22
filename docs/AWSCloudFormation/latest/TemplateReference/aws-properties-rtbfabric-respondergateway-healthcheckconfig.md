@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rtbfabric-respondergateway-healthcheckconfig-syntax.json"></a>
 
-```
+```json
 {
   "[HealthyThresholdCount](#cfn-rtbfabric-respondergateway-healthcheckconfig-healthythresholdcount)" : {{Integer}},
   "[IntervalSeconds](#cfn-rtbfabric-respondergateway-healthcheckconfig-intervalseconds)" : {{Integer}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rtbfabric-respondergateway-healthcheckconfig-syntax.yaml"></a>
 
-```
+```yaml
   [HealthyThresholdCount](#cfn-rtbfabric-respondergateway-healthcheckconfig-healthythresholdcount): {{Integer}}
   [IntervalSeconds](#cfn-rtbfabric-respondergateway-healthcheckconfig-intervalseconds): {{Integer}}
   [Path](#cfn-rtbfabric-respondergateway-healthcheckconfig-path): {{String}}

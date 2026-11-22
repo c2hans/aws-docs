@@ -58,7 +58,7 @@ The following example uses metric math to divide the pending jobs metric by the 
 
 To use metric math to modify multiple metrics
 
-```
+```json
 {
     "CustomizedMetricSpecification": {
         "Metrics": [

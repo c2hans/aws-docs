@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-idmappingtable-idmappingtableinputsource-syntax.json"></a>
 
-```
+```json
 {
   "[IdNamespaceAssociationId](#cfn-cleanrooms-idmappingtable-idmappingtableinputsource-idnamespaceassociationid)" : {{String}},
   "[Type](#cfn-cleanrooms-idmappingtable-idmappingtableinputsource-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-idmappingtable-idmappingtableinputsource-syntax.yaml"></a>
 
-```
+```yaml
   [IdNamespaceAssociationId](#cfn-cleanrooms-idmappingtable-idmappingtableinputsource-idnamespaceassociationid): {{String}}
   [Type](#cfn-cleanrooms-idmappingtable-idmappingtableinputsource-type): {{String}}
 ```

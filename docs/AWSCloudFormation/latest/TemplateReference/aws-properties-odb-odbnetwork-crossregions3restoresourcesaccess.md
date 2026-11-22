@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-odb-odbnetwork-crossregions3restoresourcesaccess-syntax.json"></a>
 
-```
+```json
 {
   "[Ipv4Addresses](#cfn-odb-odbnetwork-crossregions3restoresourcesaccess-ipv4addresses)" : {{[ String, ... ]}},
   "[Region](#cfn-odb-odbnetwork-crossregions3restoresourcesaccess-region)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-odb-odbnetwork-crossregions3restoresourcesaccess-syntax.yaml"></a>
 
-```
+```yaml
   [Ipv4Addresses](#cfn-odb-odbnetwork-crossregions3restoresourcesaccess-ipv4addresses): {{
     - String}}
   [Region](#cfn-odb-odbnetwork-crossregions3restoresourcesaccess-region): {{String}}

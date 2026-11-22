@@ -23,7 +23,7 @@ Amplify evaluates the incoming request in the following order when determining t
 
 The following example demonstrates the code for a Next.js SSR page that accesses skew protection through the `X-Amplify-Dpl` header. The page renders its content based on one of its api routes. The deployment to serve to the api route is specified by using the `X-Amplify-Dpl` header, that is set to the value of `process.env.AWS_AMPLIFY_DEPLOYMENT_ID`.
 
-```
+```javascript
 import { useEffect, useState } from 'react';
 
 export default function MyPage({deploymentId}) {

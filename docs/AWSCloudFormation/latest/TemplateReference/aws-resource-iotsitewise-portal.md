@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iotsitewise-portal-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoTSiteWise::Portal",
   "Properties" : {
@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iotsitewise-portal-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoTSiteWise::Portal
 Properties:
   [Alarms](#cfn-iotsitewise-portal-alarms): {{

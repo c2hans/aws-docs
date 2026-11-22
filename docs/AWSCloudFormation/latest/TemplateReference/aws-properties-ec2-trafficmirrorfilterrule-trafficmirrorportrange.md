@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-trafficmirrorfilterrule-trafficmirrorportrange-syntax.json"></a>
 
-```
+```json
 {
   "[FromPort](#cfn-ec2-trafficmirrorfilterrule-trafficmirrorportrange-fromport)" : {{Integer}},
   "[ToPort](#cfn-ec2-trafficmirrorfilterrule-trafficmirrorportrange-toport)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-trafficmirrorfilterrule-trafficmirrorportrange-syntax.yaml"></a>
 
-```
+```yaml
   [FromPort](#cfn-ec2-trafficmirrorfilterrule-trafficmirrorportrange-fromport): {{Integer}}
   [ToPort](#cfn-ec2-trafficmirrorfilterrule-trafficmirrorportrange-toport): {{Integer}}
 ```

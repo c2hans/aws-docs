@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-securityprofile-application-syntax.json"></a>
 
-```
+```json
 {
   "[ApplicationPermissions](#cfn-connect-securityprofile-application-applicationpermissions)" : {{[ String, ... ]}},
   "[Namespace](#cfn-connect-securityprofile-application-namespace)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-securityprofile-application-syntax.yaml"></a>
 
-```
+```yaml
   [ApplicationPermissions](#cfn-connect-securityprofile-application-applicationpermissions): {{
     - String}}
   [Namespace](#cfn-connect-securityprofile-application-namespace): {{String}}

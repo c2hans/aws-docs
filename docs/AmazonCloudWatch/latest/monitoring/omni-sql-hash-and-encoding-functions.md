@@ -18,7 +18,7 @@ The following table describes the hash and encoding functions.
 
 The following example counts requests for each user. It identifies each user by a SHA-256 hash of the user ID.
 
-```
+```sql
 SELECT encode(sha256(user_id), 'hex') AS user_key, COUNT(*) AS requests
 FROM "logs.default"
 WHERE `@timestamp` BETWEEN NOW() - INTERVAL '1' HOUR AND NOW()

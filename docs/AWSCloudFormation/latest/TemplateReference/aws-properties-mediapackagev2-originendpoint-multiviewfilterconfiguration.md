@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackagev2-originendpoint-multiviewfilterconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Layout](#cfn-mediapackagev2-originendpoint-multiviewfilterconfiguration-layout)" : {{String}},
   "[Sources](#cfn-mediapackagev2-originendpoint-multiviewfilterconfiguration-sources)" : {{[ String, ... ]}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackagev2-originendpoint-multiviewfilterconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Layout](#cfn-mediapackagev2-originendpoint-multiviewfilterconfiguration-layout): {{String}}
   [Sources](#cfn-mediapackagev2-originendpoint-multiviewfilterconfiguration-sources): {{
     - String}}

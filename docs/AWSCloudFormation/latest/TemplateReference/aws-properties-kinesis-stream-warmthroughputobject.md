@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesis-stream-warmthroughputobject-syntax.json"></a>
 
-```
+```json
 {
   "[CurrentMiBps](#cfn-kinesis-stream-warmthroughputobject-currentmibps)" : {{Integer}},
   "[TargetMiBps](#cfn-kinesis-stream-warmthroughputobject-targetmibps)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesis-stream-warmthroughputobject-syntax.yaml"></a>
 
-```
+```yaml
   [CurrentMiBps](#cfn-kinesis-stream-warmthroughputobject-currentmibps): {{Integer}}
   [TargetMiBps](#cfn-kinesis-stream-warmthroughputobject-targetmibps): {{Integer}}
 ```

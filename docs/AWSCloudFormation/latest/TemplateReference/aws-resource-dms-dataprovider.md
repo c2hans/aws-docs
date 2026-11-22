@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-dms-dataprovider-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DMS::DataProvider",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-dms-dataprovider-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DMS::DataProvider
 Properties:
   [DataProviderName](#cfn-dms-dataprovider-dataprovidername): {{String}}

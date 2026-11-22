@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-observabilityadmin-organizationcentralizationrule-centralizationrulesource-syntax.json"></a>
 
-```
+```json
 {
   "[Regions](#cfn-observabilityadmin-organizationcentralizationrule-centralizationrulesource-regions)" : {{[ String, ... ]}},
   "[Scope](#cfn-observabilityadmin-organizationcentralizationrule-centralizationrulesource-scope)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-observabilityadmin-organizationcentralizationrule-centralizationrulesource-syntax.yaml"></a>
 
-```
+```yaml
   [Regions](#cfn-observabilityadmin-organizationcentralizationrule-centralizationrulesource-regions): {{
     - String}}
   [Scope](#cfn-observabilityadmin-organizationcentralizationrule-centralizationrulesource-scope): {{String}}

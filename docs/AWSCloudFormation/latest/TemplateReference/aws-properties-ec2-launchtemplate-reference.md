@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-launchtemplate-reference-syntax.json"></a>
 
-```
+```json
 {
   "[InstanceFamily](#cfn-ec2-launchtemplate-reference-instancefamily)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-launchtemplate-reference-syntax.yaml"></a>
 
-```
+```yaml
   [InstanceFamily](#cfn-ec2-launchtemplate-reference-instancefamily): {{String}}
 ```
 

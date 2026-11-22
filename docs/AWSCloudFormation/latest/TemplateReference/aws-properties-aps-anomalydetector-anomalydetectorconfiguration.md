@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-aps-anomalydetector-anomalydetectorconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[RandomCutForest](#cfn-aps-anomalydetector-anomalydetectorconfiguration-randomcutforest)" : {{RandomCutForestConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-aps-anomalydetector-anomalydetectorconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [RandomCutForest](#cfn-aps-anomalydetector-anomalydetectorconfiguration-randomcutforest): {{
     RandomCutForestConfiguration}}
 ```

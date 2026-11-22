@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-daemontaskdefinition-logdrivervolumeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Driver](#cfn-ecs-daemontaskdefinition-logdrivervolumeconfiguration-driver)" : {{String}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-daemontaskdefinition-logdrivervolumeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Driver](#cfn-ecs-daemontaskdefinition-logdrivervolumeconfiguration-driver): {{String}}
 ```
 

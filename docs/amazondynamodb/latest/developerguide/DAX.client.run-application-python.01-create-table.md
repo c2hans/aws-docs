@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 
 The `01-create-table.py` program creates a table (`TryDaxTable`). The remaining Python programs in this section depend on this table.
 
-```
+```python
 import boto3
 
 def create_dax_table(dyn_resource=None):

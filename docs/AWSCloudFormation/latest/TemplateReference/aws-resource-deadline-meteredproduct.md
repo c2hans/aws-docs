@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-deadline-meteredproduct-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Deadline::MeteredProduct",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-deadline-meteredproduct-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Deadline::MeteredProduct
 Properties:
   [LicenseEndpointId](#cfn-deadline-meteredproduct-licenseendpointid): {{String}}

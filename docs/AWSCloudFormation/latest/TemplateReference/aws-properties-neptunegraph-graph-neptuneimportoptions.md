@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-neptunegraph-graph-neptuneimportoptions-syntax.json"></a>
 
-```
+```json
 {
   "[PreserveDefaultVertexLabels](#cfn-neptunegraph-graph-neptuneimportoptions-preservedefaultvertexlabels)" : {{Boolean}},
   "[PreserveEdgeIds](#cfn-neptunegraph-graph-neptuneimportoptions-preserveedgeids)" : {{Boolean}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-neptunegraph-graph-neptuneimportoptions-syntax.yaml"></a>
 
-```
+```yaml
   [PreserveDefaultVertexLabels](#cfn-neptunegraph-graph-neptuneimportoptions-preservedefaultvertexlabels): {{Boolean}}
   [PreserveEdgeIds](#cfn-neptunegraph-graph-neptuneimportoptions-preserveedgeids): {{Boolean}}
   [S3ExportKmsKeyId](#cfn-neptunegraph-graph-neptuneimportoptions-s3exportkmskeyid): {{String}}

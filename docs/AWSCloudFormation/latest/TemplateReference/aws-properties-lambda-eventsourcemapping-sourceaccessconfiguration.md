@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-eventsourcemapping-sourceaccessconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-lambda-eventsourcemapping-sourceaccessconfiguration-type)" : {{String}},
   "[URI](#cfn-lambda-eventsourcemapping-sourceaccessconfiguration-uri)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-eventsourcemapping-sourceaccessconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-lambda-eventsourcemapping-sourceaccessconfiguration-type): {{String}}
   [URI](#cfn-lambda-eventsourcemapping-sourceaccessconfiguration-uri): {{String}}
 ```

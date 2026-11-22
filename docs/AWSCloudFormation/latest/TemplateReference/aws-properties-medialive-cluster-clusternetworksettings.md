@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-cluster-clusternetworksettings-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultRoute](#cfn-medialive-cluster-clusternetworksettings-defaultroute)" : {{String}},
   "[InterfaceMappings](#cfn-medialive-cluster-clusternetworksettings-interfacemappings)" : {{[ InterfaceMapping, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-cluster-clusternetworksettings-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultRoute](#cfn-medialive-cluster-clusternetworksettings-defaultroute): {{String}}
   [InterfaceMappings](#cfn-medialive-cluster-clusternetworksettings-interfacemappings): {{
     - InterfaceMapping}}

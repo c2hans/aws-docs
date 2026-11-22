@@ -109,7 +109,7 @@ In this step, you deploy and test your API.
 
 1. Open a new terminal and run the **wscat** command with the following parameters.
 
-   ```
+   ```shell
    wscat -c wss://{{abcdef123}}.execute-api.{{us-west-2}}.amazonaws.com/production
    ```
 
@@ -119,7 +119,7 @@ In this step, you deploy and test your API.
 
 1. Use the following command to test your API.
 
-   ```
+   ```shell
    {"action": "sendMessage", "messageType": "email"}
    ```
 
@@ -131,6 +131,6 @@ In this step, you deploy and test your API.
 
    Use the next command to send a valid request to your API.
 
-   ```
+   ```shell
    {"action": "sendMessage", "messageType": "email", "address": "mary_major@example.com"}
    ```

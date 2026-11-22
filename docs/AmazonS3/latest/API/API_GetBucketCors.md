@@ -98,7 +98,7 @@ Type: Array of [CORSRule](API_CORSRule.md) data types
 
 The following PUT request adds the `cors` subresource to a bucket (`amzn-s3-demo-bucket`).
 
-```
+```xml
 PUT /?cors HTTP/1.1
 Host: amzn-s3-demo-bucket.s3.<Region>.amazonaws.com
 x-amz-date: Tue, 21 Aug 2012 17:54:50 GMT
@@ -130,7 +130,7 @@ Content-Length: 216
 
 This is the sample response to the preceding request.
 
-```
+```HTTP
 HTTP/1.1 200 OK
 x-amz-id-2: CCshOvbOPfxzhwOADyC4qHj/Ck3F9Q0viXKw3rivZ+GcBoZSOOahvEJfPisZB7B
 x-amz-request-id: BDC4B83DF5096BBE

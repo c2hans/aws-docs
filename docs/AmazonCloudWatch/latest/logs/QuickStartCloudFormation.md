@@ -8,7 +8,7 @@ AWS CloudFormation enables you to describe and provision your AWS resources in J
 
 When you provision AWS using CloudFormation, you create templates that describe the AWS resources to use. The following example is a template snippet that creates a log group and a metric filter that counts 404 occurrences and sends this count to the log group.
 
-```
+```json
 "WebServerLogGroup": {
     "Type": "AWS::Logs::LogGroup",
     "Properties": {

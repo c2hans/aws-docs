@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-privacyconfigurationpolicies-syntax.json"></a>
 
-```
+```json
 {
   "[TrainedModelExports](#cfn-cleanroomsml-configuredmodelalgorithmassociation-privacyconfigurationpolicies-trainedmodelexports)" : {{TrainedModelExportsConfigurationPolicy}},
   "[TrainedModelInferenceJobs](#cfn-cleanroomsml-configuredmodelalgorithmassociation-privacyconfigurationpolicies-trainedmodelinferencejobs)" : {{TrainedModelInferenceJobsConfigurationPolicy}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-privacyconfigurationpolicies-syntax.yaml"></a>
 
-```
+```yaml
   [TrainedModelExports](#cfn-cleanroomsml-configuredmodelalgorithmassociation-privacyconfigurationpolicies-trainedmodelexports): {{
     TrainedModelExportsConfigurationPolicy}}
   [TrainedModelInferenceJobs](#cfn-cleanroomsml-configuredmodelalgorithmassociation-privacyconfigurationpolicies-trainedmodelinferencejobs): {{

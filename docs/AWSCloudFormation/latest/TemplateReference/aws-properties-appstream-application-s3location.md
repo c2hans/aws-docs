@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appstream-application-s3location-syntax.json"></a>
 
-```
+```json
 {
   "[S3Bucket](#cfn-appstream-application-s3location-s3bucket)" : {{String}},
   "[S3Key](#cfn-appstream-application-s3location-s3key)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appstream-application-s3location-syntax.yaml"></a>
 
-```
+```yaml
   [S3Bucket](#cfn-appstream-application-s3location-s3bucket): {{String}}
   [S3Key](#cfn-appstream-application-s3location-s3key): {{String}}
 ```

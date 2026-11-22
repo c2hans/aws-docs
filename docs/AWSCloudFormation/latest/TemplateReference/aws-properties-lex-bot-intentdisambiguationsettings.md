@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-intentdisambiguationsettings-syntax.json"></a>
 
-```
+```json
 {
   "[CustomDisambiguationMessage](#cfn-lex-bot-intentdisambiguationsettings-customdisambiguationmessage)" : {{String}},
   "[Enabled](#cfn-lex-bot-intentdisambiguationsettings-enabled)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-intentdisambiguationsettings-syntax.yaml"></a>
 
-```
+```yaml
   [CustomDisambiguationMessage](#cfn-lex-bot-intentdisambiguationsettings-customdisambiguationmessage): {{String}}
   [Enabled](#cfn-lex-bot-intentdisambiguationsettings-enabled): {{Boolean}}
   [MaxDisambiguationIntents](#cfn-lex-bot-intentdisambiguationsettings-maxdisambiguationintents): {{Integer}}

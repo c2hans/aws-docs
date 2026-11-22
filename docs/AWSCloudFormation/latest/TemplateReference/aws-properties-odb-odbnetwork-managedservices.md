@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-odb-odbnetwork-managedservices-syntax.json"></a>
 
-```
+```json
 {
   "[CrossRegionS3RestoreSourcesAccess](#cfn-odb-odbnetwork-managedservices-crossregions3restoresourcesaccess)" : {{[ CrossRegionS3RestoreSourcesAccess, ... ]}},
   "[KmsAccess](#cfn-odb-odbnetwork-managedservices-kmsaccess)" : {{KmsAccess}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-odb-odbnetwork-managedservices-syntax.yaml"></a>
 
-```
+```yaml
   [CrossRegionS3RestoreSourcesAccess](#cfn-odb-odbnetwork-managedservices-crossregions3restoresourcesaccess): {{
     - CrossRegionS3RestoreSourcesAccess}}
   [KmsAccess](#cfn-odb-odbnetwork-managedservices-kmsaccess): {{

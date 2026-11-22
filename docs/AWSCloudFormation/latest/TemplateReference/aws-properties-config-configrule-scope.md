@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-config-configrule-scope-syntax.json"></a>
 
-```
+```json
 {
   "[ComplianceResourceId](#cfn-config-configrule-scope-complianceresourceid)" : {{String}},
   "[ComplianceResourceTypes](#cfn-config-configrule-scope-complianceresourcetypes)" : {{[ String, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-config-configrule-scope-syntax.yaml"></a>
 
-```
+```yaml
   [ComplianceResourceId](#cfn-config-configrule-scope-complianceresourceid): {{String}}
   [ComplianceResourceTypes](#cfn-config-configrule-scope-complianceresourcetypes): {{
     - String}}
@@ -82,7 +82,7 @@ This example shows how to target a specific Amazon EC2 instance for evaluation u
 #### YAML
 <a name="aws-properties-config-configrule-scope--examples--Single_Resource_Specific_Scope--yaml"></a>
 
-```
+```yaml
 Scope:
   ComplianceResourceId: "i-1234567890abcdef0"
   ComplianceResourceTypes:
@@ -92,7 +92,7 @@ Scope:
 #### JSON
 <a name="aws-properties-config-configrule-scope--examples--Single_Resource_Specific_Scope--json"></a>
 
-```
+```json
 {
   "Scope": {
     "ComplianceResourceId": "i-1234567890abcdef0",

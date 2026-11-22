@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-runtime-efsaccesspointconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AccessPointArn](#cfn-bedrockagentcore-runtime-efsaccesspointconfiguration-accesspointarn)" : {{String}},
   "[MountPath](#cfn-bedrockagentcore-runtime-efsaccesspointconfiguration-mountpath)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-runtime-efsaccesspointconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AccessPointArn](#cfn-bedrockagentcore-runtime-efsaccesspointconfiguration-accesspointarn): {{String}}
   [MountPath](#cfn-bedrockagentcore-runtime-efsaccesspointconfiguration-mountpath): {{String}}
 ```

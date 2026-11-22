@@ -35,7 +35,7 @@ When a request is accepted or rejected, an Amazon EventBridge event is sent to t
 **To accept a request**
 Use the [accept-capacity-reservation-billing-ownership](https://docs.aws.amazon.com/cli/latest/reference/ec2/accept-capacity-reservation-billing-ownership.html) command. For `--capacity-reservation-id`, specify the ID of the Capacity Reservation for which to accept the request.
 
-```
+```bash
 aws ec2 accept-capacity-reservation-billing-ownership \
     --capacity-reservation-id {{cr-01234567890abcdef}}
 ```
@@ -43,7 +43,7 @@ aws ec2 accept-capacity-reservation-billing-ownership \
 **To reject a request**
 Use the [reject-capacity-reservation-billing-ownership](https://docs.aws.amazon.com/cli/latest/reference/ec2/reject-capacity-reservation-billing-ownership.html) command. For `--capacity-reservation-id`, specify the ID of the Capacity Reservation for which to reject the request.
 
-```
+```bash
 aws ec2 reject-capacity-reservation-billing-ownership \
     --capacity-reservation-id {{cr-01234567890abcdef}}
 ```
@@ -54,7 +54,7 @@ aws ec2 reject-capacity-reservation-billing-ownership \
 **To accept a request**
 Use the [Approve-EC2CapacityReservationBillingOwnership](https://docs.aws.amazon.com/powershell/latest/reference/items/Approve-EC2CapacityReservationBillingOwnership.html) cmdlet.
 
-```
+```powershell
 Approve-EC2CapacityReservationBillingOwnership `
     -CapacityReservationId {{cr-01234567890abcdef}}
 ```
@@ -62,7 +62,7 @@ Approve-EC2CapacityReservationBillingOwnership `
 **To reject a request**
 Use the [Deny-EC2CapacityReservationBillingOwnership](https://docs.aws.amazon.com/powershell/latest/reference/items/Deny-EC2CapacityReservationBillingOwnership.html) cmdlet.
 
-```
+```powershell
 Deny-EC2CapacityReservationBillingOwnership `
     -CapacityReservationId {{cr-01234567890abcdef}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-eksvolume-syntax.json"></a>
 
-```
+```json
 {
   "[EmptyDir](#cfn-batch-jobdefinition-eksvolume-emptydir)" : {{EksEmptyDir}},
   "[HostPath](#cfn-batch-jobdefinition-eksvolume-hostpath)" : {{EksHostPath}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-eksvolume-syntax.yaml"></a>
 
-```
+```yaml
   [EmptyDir](#cfn-batch-jobdefinition-eksvolume-emptydir): {{
     EksEmptyDir}}
   [HostPath](#cfn-batch-jobdefinition-eksvolume-hostpath): {{

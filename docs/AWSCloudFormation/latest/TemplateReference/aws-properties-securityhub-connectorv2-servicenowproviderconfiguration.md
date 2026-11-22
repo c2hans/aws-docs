@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityhub-connectorv2-servicenowproviderconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[InstanceName](#cfn-securityhub-connectorv2-servicenowproviderconfiguration-instancename)" : {{String}},
   "[SecretArn](#cfn-securityhub-connectorv2-servicenowproviderconfiguration-secretarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityhub-connectorv2-servicenowproviderconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [InstanceName](#cfn-securityhub-connectorv2-servicenowproviderconfiguration-instancename): {{String}}
   [SecretArn](#cfn-securityhub-connectorv2-servicenowproviderconfiguration-secretarn): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-customerprofiles-integration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CustomerProfiles::Integration",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-customerprofiles-integration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CustomerProfiles::Integration
 Properties:
   [DomainName](#cfn-customerprofiles-integration-domainname): {{String}}
@@ -156,7 +156,7 @@ The following example creates an integration if Domain existed.
 #### YAML
 <a name="aws-resource-customerprofiles-integration--examples----yaml"></a>
 
-```
+```yaml
 Type: "AWS::CustomerProfiles::Integration"
 Properties:
     DomainName: "ExampleDomain"
@@ -167,7 +167,7 @@ Properties:
 #### JSON
 <a name="aws-resource-customerprofiles-integration--examples----json"></a>
 
-```
+```json
 "Type": "AWS::CustomerProfiles::Integration",
 "Properties": {
     "DomainName": "ExampleDomain",

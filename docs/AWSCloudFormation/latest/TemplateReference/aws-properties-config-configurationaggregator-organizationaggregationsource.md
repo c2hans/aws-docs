@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-config-configurationaggregator-organizationaggregationsource-syntax.json"></a>
 
-```
+```json
 {
   "[AllAwsRegions](#cfn-config-configurationaggregator-organizationaggregationsource-allawsregions)" : {{Boolean}},
   "[AwsRegions](#cfn-config-configurationaggregator-organizationaggregationsource-awsregions)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-config-configurationaggregator-organizationaggregationsource-syntax.yaml"></a>
 
-```
+```yaml
   [AllAwsRegions](#cfn-config-configurationaggregator-organizationaggregationsource-allawsregions): {{Boolean}}
   [AwsRegions](#cfn-config-configurationaggregator-organizationaggregationsource-awsregions): {{
     - String}}

@@ -138,7 +138,7 @@ In the Amazon S3 console, do the following:
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -191,7 +191,7 @@ In the [IAM Console](https://console.aws.amazon.com/iam/), create an IAM role (*
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [
@@ -245,7 +245,7 @@ In the [IAM Console](https://console.aws.amazon.com/iam/), create an IAM role (*
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -273,7 +273,7 @@ In the [IAM Console](https://console.aws.amazon.com/iam/), create an IAM role (*
 The example bucket owned by Account A needs objects owned by other accounts. In this step, the Account B administrator uploads an object using the command line tools.
 + Using the `put-object` AWS CLI command, upload an object to `{{amzn-s3-demo-bucket1}}`.
 
-  ```
+  ```bash
   aws s3api put-object --bucket {{amzn-s3-demo-bucket1}} --key {{HappyFace.jpg}} --body {{HappyFace.jpg}} --grant-full-control id="{{canonicalUserId-ofTheBucketOwner}}" --profile {{AccountBadmin}}
   ```
 
@@ -321,7 +321,7 @@ In the preceding steps, Account A has already created a role, `examplerole`, est
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -360,7 +360,7 @@ Now Dave can access objects in the bucket owned by Account A as follows:
 
    You must update the ARN value in the command by providing the `{{AccountA-ID}}` where `examplerole` is defined.
 
-   ```
+   ```bash
    aws sts assume-role --role-arn arn:aws:iam::{{AccountA-ID}}:role/examplerole --profile AccountCDave --role-session-name test
    ```
 
@@ -378,7 +378,7 @@ Now Dave can access objects in the bucket owned by Account A as follows:
 
 1. At the command prompt, run the following AWS CLI command to access objects using the temporary credentials. For example, the command specifies the head-object API to retrieve object metadata for the `HappyFace.jpg` object.
 
-   ```
+   ```bash
    aws s3api get-object --bucket {{amzn-s3-demo-bucket1}} --key {{HappyFace.jpg}} {{SaveFileAs.jpg}} --profile TempCred
    ```
 
@@ -386,7 +386,7 @@ Now Dave can access objects in the bucket owned by Account A as follows:
 
    If you try any other action—for example, `get-object-acl`—you will get permission denied because the role isn't allowed that action.
 
-   ```
+   ```bash
    aws s3api get-object-acl --bucket {{amzn-s3-demo-bucket1}} --key {{HappyFace.jpg}} --profile TempCred
    ```
 

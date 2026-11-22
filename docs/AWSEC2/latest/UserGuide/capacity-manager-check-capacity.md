@@ -10,7 +10,7 @@ Call get-capacity-manager-supportability-scores in the Region where you turned o
 
 The following AWS CLI command checks On-Demand capacity for a list of instance types:
 
-```
+```bash
 aws ec2 get-capacity-manager-supportability-scores \
     --market-type "on-demand" \
     --capacity-amount 50 \
@@ -28,7 +28,7 @@ This command uses the following parameters:
 
 The following JSON structure shows the supportability score response.
 
-```
+```JSON
 {
     "AggregateScore": "high",
     "CapacityManagerSupportabilityScores": [
@@ -41,7 +41,7 @@ The following JSON structure shows the supportability score response.
 
 Instead of a list of instance types, you can describe the instances you need by attribute. Provide the vCPU and memory ranges your workload needs, and Amazon EC2 resolves them into matching instance types and scores each one. Provide either `--instance-types` or `--instance-requirements-with-metadata`, not both.
 
-```
+```bash
 aws ec2 get-capacity-manager-supportability-scores \
     --market-type "on-demand" \
     --capacity-amount 1000 \

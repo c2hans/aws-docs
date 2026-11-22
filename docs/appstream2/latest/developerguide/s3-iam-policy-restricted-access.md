@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/s3-iam-
 
 By default, administrators who can access the Amazon S3 buckets created by WorkSpaces Applications can view and modify content that is part of users' home folders and persistent application settings. To restrict administrator access to the S3 buckets that contain user files, we recommend applying the S3 bucket access policy based on the following template:
 
-```
+```json
 {
   "Sid": "RestrictedAccess",
   "Effect": "Deny",
@@ -33,7 +33,7 @@ This policy allows S3 bucket access only to the users specified and to the WorkS
 
 In the following example, the policy restricts access to the home folder S3 bucket for anyone other than IAM users marymajor and johnstiles. It also allows access to the WorkSpaces Applications service, in AWS Region US West (Oregon) for account ID 123456789012.
 
-```
+```json
 {
   "Sid": "RestrictedAccess",
   "Effect": "Deny",

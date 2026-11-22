@@ -70,7 +70,7 @@ Do the following steps one time for each application and each task definition. W
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -93,7 +93,7 @@ If you use your own KMS key to encrypt your secret, you must add the necessary p
 
 1. <a name="linux-gmsa-credspec-ssm"></a>Add the credential spec to an Amazon S3 bucket. Then, reference the Amazon Resource Name (ARN) of the Amazon S3 bucket in the `credentialSpecs` field of the task definition.
 
-   ```
+   ```JSON
    {
        "family": "",
        "executionRoleArn": "",
@@ -118,7 +118,7 @@ If you use your own KMS key to encrypt your secret, you must add the necessary p
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -147,7 +147,7 @@ Amazon ECS uses an Active Directory credential specification file (*CredSpec*). 
 
 The following is an example CredSpec file.
 
-```
+```JSON
 {
     "CmsPlugins": [
         "ActiveDirectory"
@@ -187,13 +187,13 @@ Run the following AWS CLI command to upload the CredSpec to Amazon S3. Replace `
 
 For PowerShell, use the following command:
 
-```
+```shell
 $ Write-S3Object -BucketName "{{amzn-s3-demo-bucket}}" -Key "ecs-domainless-gmsa-credspec" -File "gmsa-cred-spec.json"
 ```
 
 The following AWS CLI command uses backslash continuation characters that are used by `sh` and compatible shells.
 
-```
+```shell
 $ aws s3 cp gmsa-cred-spec.json \
 s3://{{amzn-s3-demo-bucket/ecs-domainless-gmsa-credspec}}
 ```

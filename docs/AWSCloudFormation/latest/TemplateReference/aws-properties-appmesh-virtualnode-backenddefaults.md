@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-virtualnode-backenddefaults-syntax.json"></a>
 
-```
+```json
 {
   "[ClientPolicy](#cfn-appmesh-virtualnode-backenddefaults-clientpolicy)" : {{ClientPolicy}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-virtualnode-backenddefaults-syntax.yaml"></a>
 
-```
+```yaml
   [ClientPolicy](#cfn-appmesh-virtualnode-backenddefaults-clientpolicy): {{
     ClientPolicy}}
 ```

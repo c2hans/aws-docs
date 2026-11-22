@@ -13,7 +13,7 @@ Connect to your Aurora PostgreSQL cluster using the RDS Console Query Editor or 
 
 Execute the extension creation command to enable `pg_columnmask` functionality:
 
-```
+```sql
 CREATE EXTENSION pg_columnmask;
 ```
 
@@ -25,7 +25,7 @@ Masking on a table is never applied for the table owner or `rds_superuser`.
 
 Verify the extension installation by checking the available masking functions:
 
-```
+```sql
 SELECT proname FROM pg_proc
     WHERE pronamespace = 'pgcolumnmask'::regnamespace AND proname LIKE 'mask_%';
     proname

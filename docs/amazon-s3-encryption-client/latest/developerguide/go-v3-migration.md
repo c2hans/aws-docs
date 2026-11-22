@@ -17,7 +17,7 @@ The following examples show the equivalent code required to specify a KMS key pr
 
 In version 1.*x*, you use the `NewKMSKeyGeneratorWith` function to construct the `cipherDataGenerator`.
 
-```
+```go
 sess := session.Must(session.NewSession())
 kmsClient := kms.New(sess)
 cmkID := "1234abcd-12ab-34cd-56ef-1234567890ab"
@@ -30,7 +30,7 @@ cipherDataGenerator := s3crypto.NewKMSKeyGenerator(kmsClient, {{kmsKeyID}})
 
 In version 2.*x*, you use the `NewKMSContextKeyGenerator` function to construct the `cipherDataGenerator`.
 
-```
+```go
 sess := session.Must(session.NewSession())
 kmsClient := kms.New(sess)
 cmkID := "1234abcd-12ab-34cd-56ef-1234567890ab"
@@ -45,7 +45,7 @@ cipherDataGenerator := s3crypto.NewKMSContextKeyGenerator(kmsClient, {{kmsKeyID}
 
 In version 3.*x*, you use the `NewKmsKeyring` function to construct your cryptographic materials manager (CMM).
 
-```
+```go
 s3Client := s3.NewFromConfig(cfg)
 kmsClient := kms.NewFromConfig(cfg)
 cmm, err := materials.NewCryptographicMaterialsManager(materials.NewKmsKeyring(kmsClient, {{kmsKeyID}}))
@@ -61,7 +61,7 @@ cmm, err := materials.NewCryptographicMaterialsManager(materials.NewKmsKeyring(k
 
 The following example demonstrates how to migrate a version 2.*x* application that uses the `NewKMSContextKeyGenerator` KMS key provider with a material description and `AESGCMContentCipherBuilderV2` content cipher to version 3.*x* of the Amazon S3 Encryption Client for Go.
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -160,7 +160,7 @@ If your client doesn't include the necessary legacy decryption mode with a value
 
 The following example enables the `enableLegacyUnauthenticatedModes` and `enableLegacyWrappingAlgorithms` flags. This client always encrypts only with fully supported algorithms. However, it can decrypt objects and data keys encrypted with fully supported or legacy algorithms.
 
-```
+```go
 cmm, err := materials.NewCryptographicMaterialsManager(materials.NewKmsKeyring(kmsClient, , func(options *materials.KeyringOptions) {
     options.EnableLegacyWrappingAlgorithms = true
 })

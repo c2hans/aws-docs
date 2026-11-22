@@ -61,7 +61,7 @@ If SAML encryption is required, the sign-in URL must include the unique identifi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

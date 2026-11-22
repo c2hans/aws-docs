@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-privateconnection-connectionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[SelfManaged](#cfn-devopsagent-privateconnection-connectionconfiguration-selfmanaged)" : {{SelfManagedMode}},
   "[ServiceManaged](#cfn-devopsagent-privateconnection-connectionconfiguration-servicemanaged)" : {{ServiceManagedMode}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-privateconnection-connectionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [SelfManaged](#cfn-devopsagent-privateconnection-connectionconfiguration-selfmanaged): {{
     SelfManagedMode}}
   [ServiceManaged](#cfn-devopsagent-privateconnection-connectionconfiguration-servicemanaged): {{

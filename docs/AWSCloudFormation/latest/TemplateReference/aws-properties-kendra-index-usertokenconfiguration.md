@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-index-usertokenconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[JsonTokenTypeConfiguration](#cfn-kendra-index-usertokenconfiguration-jsontokentypeconfiguration)" : {{JsonTokenTypeConfiguration}},
   "[JwtTokenTypeConfiguration](#cfn-kendra-index-usertokenconfiguration-jwttokentypeconfiguration)" : {{JwtTokenTypeConfiguration}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-index-usertokenconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [JsonTokenTypeConfiguration](#cfn-kendra-index-usertokenconfiguration-jsontokentypeconfiguration): {{
     JsonTokenTypeConfiguration}}
   [JwtTokenTypeConfiguration](#cfn-kendra-index-usertokenconfiguration-jwttokentypeconfiguration): {{

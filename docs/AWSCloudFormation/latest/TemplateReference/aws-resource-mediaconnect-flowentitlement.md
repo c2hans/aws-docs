@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-mediaconnect-flowentitlement-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MediaConnect::FlowEntitlement",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-mediaconnect-flowentitlement-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MediaConnect::FlowEntitlement
 Properties:
   [DataTransferSubscriberFeePercent](#cfn-mediaconnect-flowentitlement-datatransfersubscriberfeepercent): {{Integer}}

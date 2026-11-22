@@ -28,7 +28,7 @@ The `AWSServiceRoleForAppStudio` service-linked role uses the following trust po
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

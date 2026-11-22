@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-aiprompt-textfullaipromptedittemplateconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Text](#cfn-wisdom-aiprompt-textfullaipromptedittemplateconfiguration-text)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-aiprompt-textfullaipromptedittemplateconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Text](#cfn-wisdom-aiprompt-textfullaipromptedittemplateconfiguration-text): {{String}}
 ```
 

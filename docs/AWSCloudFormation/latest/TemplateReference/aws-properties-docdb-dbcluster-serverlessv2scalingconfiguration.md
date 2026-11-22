@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-docdb-dbcluster-serverlessv2scalingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MaxCapacity](#cfn-docdb-dbcluster-serverlessv2scalingconfiguration-maxcapacity)" : {{Number}},
   "[MinCapacity](#cfn-docdb-dbcluster-serverlessv2scalingconfiguration-mincapacity)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-docdb-dbcluster-serverlessv2scalingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MaxCapacity](#cfn-docdb-dbcluster-serverlessv2scalingconfiguration-maxcapacity): {{Number}}
   [MinCapacity](#cfn-docdb-dbcluster-serverlessv2scalingconfiguration-mincapacity): {{Number}}
 ```

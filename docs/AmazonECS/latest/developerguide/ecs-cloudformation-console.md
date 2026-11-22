@@ -22,7 +22,7 @@ Use the following steps to create an CloudFormation stack template for an Amazon
 
 1. In the `ecs-tutorial-template.yaml` file, paste the following template and save the changes.
 
-   ```
+   ```YAML
    AWSTemplateFormatVersion: '2010-09-09'
    Description: '[AWSDocs] ECS: load-balanced-web-application'
 

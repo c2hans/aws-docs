@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-ipamresourcediscoveryassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::IPAMResourceDiscoveryAssociation",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-ipamresourcediscoveryassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::IPAMResourceDiscoveryAssociation
 Properties:
   [IpamId](#cfn-ec2-ipamresourcediscoveryassociation-ipamid): {{String}}

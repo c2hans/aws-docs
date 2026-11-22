@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-input-inputvpcrequest-syntax.json"></a>
 
-```
+```json
 {
   "[SecurityGroupIds](#cfn-medialive-input-inputvpcrequest-securitygroupids)" : {{[ String, ... ]}},
   "[SubnetIds](#cfn-medialive-input-inputvpcrequest-subnetids)" : {{[ String, ... ]}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-input-inputvpcrequest-syntax.yaml"></a>
 
-```
+```yaml
   [SecurityGroupIds](#cfn-medialive-input-inputvpcrequest-securitygroupids): {{
     - String}}
   [SubnetIds](#cfn-medialive-input-inputvpcrequest-subnetids): {{

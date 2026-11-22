@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-otaupdate-startsigningjobparameter-syntax.json"></a>
 
-```
+```json
 {
   "[Destination](#cfn-iot-otaupdate-startsigningjobparameter-destination)" : {{Destination}},
   "[SigningProfileName](#cfn-iot-otaupdate-startsigningjobparameter-signingprofilename)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-otaupdate-startsigningjobparameter-syntax.yaml"></a>
 
-```
+```yaml
   [Destination](#cfn-iot-otaupdate-startsigningjobparameter-destination): {{
     Destination}}
   [SigningProfileName](#cfn-iot-otaupdate-startsigningjobparameter-signingprofilename): {{String}}

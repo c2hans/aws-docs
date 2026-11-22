@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-table-icebergpartitionfield-syntax.json"></a>
 
-```
+```json
 {
   "[FieldId](#cfn-glue-table-icebergpartitionfield-fieldid)" : {{Integer}},
   "[Name](#cfn-glue-table-icebergpartitionfield-name)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-table-icebergpartitionfield-syntax.yaml"></a>
 
-```
+```yaml
   [FieldId](#cfn-glue-table-icebergpartitionfield-fieldid): {{Integer}}
   [Name](#cfn-glue-table-icebergpartitionfield-name): {{String}}
   [SourceId](#cfn-glue-table-icebergpartitionfield-sourceid): {{Integer}}

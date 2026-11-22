@@ -226,7 +226,7 @@ aws autoscaling start-instance-refresh --cli-input-json file://config.json
 
 Contents of `config.json`:
 
-```
+```json
 {
     "AutoScalingGroupName": "{{my-asg}}",
     "Preferences": {
@@ -243,7 +243,7 @@ If preferences are not provided, default values are used. For more information, 
 
 Example output:
 
-```
+```json
 {
     "InstanceRefreshId": "08b91cf7-8fa6-48af-b6a6-d227f40f1b9b"
 }

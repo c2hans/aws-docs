@@ -15,7 +15,7 @@ Before you begin, see the prerequisites in [Prerequisites for working with JMS a
 
 1. Create a connection factory and call the `createConnection` method against the factory.
 
-   ```
+   ```java
    // Create a new connection factory with all defaults (credentials and region) set automatically
    SQSConnectionFactory connectionFactory = new SQSConnectionFactory(
            new ProviderConfiguration(),
@@ -44,7 +44,7 @@ If a queue doesn't exist, the client creates it. If the queue does exist, the fu
 ### To create a standard queue
 <a name="creating-queue-standard"></a>
 
-```
+```java
 // Get the wrapped client
 AmazonSQSMessagingClientWrapper client = connection.getWrappedAmazonSQSClient();
 
@@ -57,7 +57,7 @@ if (!client.queueExists("MyQueue")) {
 ### To create a FIFO queue
 <a name="creating-queue-FIFO"></a>
 
-```
+```java
 // Get the wrapped client
 AmazonSQSMessagingClientWrapper client = connection.getWrappedAmazonSQSClient();
 
@@ -79,14 +79,14 @@ For more information about the `ContentBasedDeduplication` attribute, see [Exact
 
 1. When the connection and the underlying Amazon SQS queue are ready, create a nontransacted JMS session with `AUTO_ACKNOWLEDGE` mode.
 
-   ```
+   ```java
    // Create the nontransacted session with AUTO_ACKNOWLEDGE mode
    Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
    ```
 
 1. To send a text message to the queue, create a JMS queue identity and a message producer.
 
-   ```
+   ```java
    // Create a queue identity and specify the queue name to the session
    Queue queue = session.createQueue("MyQueue");
 
@@ -97,7 +97,7 @@ For more information about the `ContentBasedDeduplication` attribute, see [Exact
 1. Create a text message and send it to the queue.
    + To send a message to a standard queue, you don't need to set any additional parameters.
 
-     ```
+     ```java
      // Create the text message
      TextMessage message = session.createTextMessage("Hello World!");
 
@@ -107,7 +107,7 @@ For more information about the `ContentBasedDeduplication` attribute, see [Exact
      ```
    + To send a message to a FIFO queue, you must set the message group ID. You can also set a message deduplication ID. For more information, see [Amazon SQS FIFO queue key terms](FIFO-key-terms.md).
 
-     ```
+     ```java
      // Create the text message
      TextMessage message = session.createTextMessage("Hello World!");
 
@@ -131,7 +131,7 @@ For more information about the `ContentBasedDeduplication` attribute, see [Exact
 
    You can call the `start` method on the connection at any time. However, the consumer doesn't begin to receive messages until you call it.
 
-   ```
+   ```java
    // Create a consumer for the 'MyQueue'
    MessageConsumer consumer = session.createConsumer(queue);
    // Start receiving incoming messages
@@ -141,7 +141,7 @@ For more information about the `ContentBasedDeduplication` attribute, see [Exact
 1. Call the `receive` method on the consumer with a timeout set to 1 second, and then print the contents of the received message.
    + After receiving a message from a standard queue, you can access the contents of the message.
 
-     ```
+     ```java
      // Receive a message from 'MyQueue' and wait up to 1 second
      Message receivedMessage = consumer.receive(1000);
 
@@ -152,7 +152,7 @@ For more information about the `ContentBasedDeduplication` attribute, see [Exact
      ```
    + After receiving a message from a FIFO queue, you can access the contents of the message and other, FIFO-specific message attributes, such as the message group ID, message deduplication ID, and sequence number. For more information, see [Amazon SQS FIFO queue key terms](FIFO-key-terms.md).
 
-     ```
+     ```java
      // Receive a message from 'MyQueue' and wait up to 1 second
      Message receivedMessage = consumer.receive(1000);
 
@@ -167,7 +167,7 @@ For more information about the `ContentBasedDeduplication` attribute, see [Exact
 
 1. Close the connection and the session.
 
-   ```
+   ```java
    // Close the connection (and the session).
    connection.close();
    ```
@@ -194,7 +194,7 @@ The following example shows how to receive the messages asynchronously through a
 
 1. Implement the `MessageListener` interface.
 
-   ```
+   ```java
    class MyListener implements MessageListener {
 
        @Override
@@ -213,7 +213,7 @@ The following example shows how to receive the messages asynchronously through a
 
 1. Instead of explicitly calling the `receive` method on the consumer, set the message listener of the consumer to an instance of the `MyListener` implementation. The main thread waits for one second.
 
-   ```
+   ```java
    // Create a consumer for the 'MyQueue'.
    MessageConsumer consumer = session.createConsumer(queue);
 
@@ -243,14 +243,14 @@ The example in [Using the Amazon SQS Java Messaging Library](getting-started.md)
 
 1. To explicitly acknowledge the messages after they're processed, you must create the session with `CLIENT_ACKNOWLEDGE` mode.
 
-   ```
+   ```java
    // Create the non-transacted session with CLIENT_ACKNOWLEDGE mode.
    Session session = connection.createSession(false, Session.CLIENT_ACKNOWLEDGE);
    ```
 
 1. When the message is received, display it and then explicitly acknowledge it.
 
-   ```
+   ```java
    // Cast the received message as TextMessage and print the text to screen. Also acknowledge the message.
    if (receivedMessage != null) {
        System.out.println("Received: " + ((TextMessage) receivedMessage).getText());
@@ -278,7 +278,7 @@ When using `CLIENT_ACKNOWLEDGE` mode, all messages received before an explicitly
 
 The Amazon SQS Java Messaging Library provides another acknowledgement mode. When using `UNORDERED_ACKNOWLEDGE` mode, all received messages must be individually and explicitly acknowledged by the client, regardless of their reception order. To do this, create a session with `UNORDERED_ACKNOWLEDGE` mode.
 
-```
+```java
 // Create the non-transacted session with UNORDERED_ACKNOWLEDGE mode.
 Session session = connection.createSession(false, SQSSession.UNORDERED_ACKNOWLEDGE);
 ```

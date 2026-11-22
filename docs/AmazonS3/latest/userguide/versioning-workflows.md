@@ -13,14 +13,14 @@ Normal Amazon S3 rates apply for every version of an object that is stored and t
 
 Each S3 bucket that you create has a *versioning* subresource associated with it. (For more information, see [General purpose buckets configuration options](UsingBucket.md#bucket-config-options-intro).) By default, your bucket is *unversioned*, and the versioning subresource stores the empty versioning configuration, as follows.
 
-```
+```xml
 <VersioningConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
 </VersioningConfiguration>
 ```
 
 To enable versioning, you can send a request to Amazon S3 with a versioning configuration that includes an `Enabled` status.
 
-```
+```xml
 <VersioningConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
   <Status>Enabled</Status>
 </VersioningConfiguration>

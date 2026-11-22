@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-arczonalshift-autoshiftobservernotificationstatus-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ARCZonalShift::AutoshiftObserverNotificationStatus",
   "Properties" : {
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-arczonalshift-autoshiftobservernotificationstatus-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ARCZonalShift::AutoshiftObserverNotificationStatus
 Properties:
   [Status](#cfn-arczonalshift-autoshiftobservernotificationstatus-status): {{String}}

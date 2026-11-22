@@ -18,7 +18,7 @@ Auto Scaling distributes launched instances across different market options base
 
 You can distribute instances between On-Demand and Spot capacity using the `OnDemandBaseCapacity` and `OnDemandPercentageAboveBaseCapacity` fields on your mixed instances policy. The following example launches the first 2 instances as On-Demand, then 25 percent of the remaining instances as On-Demand and the remaining as Spot:
 
-```
+```json
 {
     "InstancesDistribution": {
         "OnDemandBaseCapacity": {{2}},
@@ -44,7 +44,7 @@ The order of the list determines how Auto Scaling distributes launched instances
 
 The following example launches instances as On-Demand Capacity Reservation-backed first, then as Capacity Block-backed, then as interruptible Capacity Reservation-backed, and finally as On-Demand if reserved capacity is insufficient:
 
-```
+```json
 {
     "InstancesDistribution": {
         "DistributionSegments": [
@@ -111,7 +111,7 @@ Use the [create-auto-scaling-group](https://awscli.amazonaws.com/v2/documentatio
 
 The following example uses a priority order of On-Demand Capacity Reservations first, then Capacity Blocks, then interruptible Capacity Reservations, then On-Demand.
 
-```
+```bash
 aws autoscaling create-auto-scaling-group \
     --auto-scaling-group-name {{my-asg}} \
     --min-size {{0}} --max-size {{10}} --desired-capacity {{5}} \
@@ -191,7 +191,7 @@ To set the Capacity Reservation Resource Group as the target for an existing gro
 
 Use the [update-auto-scaling-group](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/update-auto-scaling-group.html) command to add distribution segments to your mixed instances policy and set the Capacity Reservation Resource Group ARN as the target.
 
-```
+```bash
 aws autoscaling update-auto-scaling-group \
     --auto-scaling-group-name {{my-asg}} \
     --mixed-instances-policy '{
@@ -247,7 +247,7 @@ To migrate back to a standard mixed instances group, use one of the following me
 
 Use the [update-auto-scaling-group](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/update-auto-scaling-group.html) command to set `OnDemandBaseCapacity` or `OnDemandPercentageAboveBaseCapacity`. Auto Scaling automatically clears distribution segments when you set the legacy fields.
 
-```
+```bash
 aws autoscaling update-auto-scaling-group \
     --auto-scaling-group-name {{my-asg}} \
     --mixed-instances-policy '{
@@ -265,7 +265,7 @@ Alternatively, you can clear distribution segments explicitly by setting `Distri
 
 If you want to switch to using a launch template on your Auto Scaling group without a mixed instances policy, use the `update-auto-scaling-group` command with a top-level launch template. Auto Scaling clears the mixed instances policy when you provide a top-level launch template.
 
-```
+```bash
 aws autoscaling update-auto-scaling-group \
     --auto-scaling-group-name {{my-asg}} \
     --launch-template LaunchTemplateName={{my-launch-template}} \

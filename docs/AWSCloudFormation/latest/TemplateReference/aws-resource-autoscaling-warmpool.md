@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-autoscaling-warmpool-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AutoScaling::WarmPool",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-autoscaling-warmpool-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AutoScaling::WarmPool
 Properties:
   [AutoScalingGroupName](#cfn-autoscaling-warmpool-autoscalinggroupname): {{String}}
@@ -111,7 +111,7 @@ The following template snippet shows an `AWS::AutoScaling::WarmPool` resource fo
 #### JSON
 <a name="aws-resource-autoscaling-warmpool--examples--Auto_Scaling_group_with_warm_pool--json"></a>
 
-```
+```json
 {
   "Resources":{
     "myWarmPool":{
@@ -131,7 +131,7 @@ The following template snippet shows an `AWS::AutoScaling::WarmPool` resource fo
 #### YAML
 <a name="aws-resource-autoscaling-warmpool--examples--Auto_Scaling_group_with_warm_pool--yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   myWarmPool:

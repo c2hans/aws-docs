@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesis-channel-deadletterqueues3configuration-syntax.json"></a>
 
-```
+```json
 {
   "[BucketARN](#cfn-kinesis-channel-deadletterqueues3configuration-bucketarn)" : {{String}},
   "[ErrorOutputPrefix](#cfn-kinesis-channel-deadletterqueues3configuration-erroroutputprefix)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesis-channel-deadletterqueues3configuration-syntax.yaml"></a>
 
-```
+```yaml
   [BucketARN](#cfn-kinesis-channel-deadletterqueues3configuration-bucketarn): {{String}}
   [ErrorOutputPrefix](#cfn-kinesis-channel-deadletterqueues3configuration-erroroutputprefix): {{String}}
   [ExpectedBucketOwner](#cfn-kinesis-channel-deadletterqueues3configuration-expectedbucketowner): {{String}}

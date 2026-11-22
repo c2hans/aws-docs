@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-fecoutputsettings-syntax.json"></a>
 
-```
+```json
 {
   "[ColumnDepth](#cfn-medialive-channel-fecoutputsettings-columndepth)" : {{Integer}},
   "[IncludeFec](#cfn-medialive-channel-fecoutputsettings-includefec)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-fecoutputsettings-syntax.yaml"></a>
 
-```
+```yaml
   [ColumnDepth](#cfn-medialive-channel-fecoutputsettings-columndepth): {{Integer}}
   [IncludeFec](#cfn-medialive-channel-fecoutputsettings-includefec): {{String}}
   [RowLength](#cfn-medialive-channel-fecoutputsettings-rowlength): {{Integer}}

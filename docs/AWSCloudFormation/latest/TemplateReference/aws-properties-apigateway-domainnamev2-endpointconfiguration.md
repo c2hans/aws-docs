@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apigateway-domainnamev2-endpointconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[IpAddressType](#cfn-apigateway-domainnamev2-endpointconfiguration-ipaddresstype)" : {{String}},
   "[Types](#cfn-apigateway-domainnamev2-endpointconfiguration-types)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apigateway-domainnamev2-endpointconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [IpAddressType](#cfn-apigateway-domainnamev2-endpointconfiguration-ipaddresstype): {{String}}
   [Types](#cfn-apigateway-domainnamev2-endpointconfiguration-types): {{
     - String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-globalaccelerator-endpointgroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::GlobalAccelerator::EndpointGroup",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-globalaccelerator-endpointgroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::GlobalAccelerator::EndpointGroup
 Properties:
   [EndpointConfigurations](#cfn-globalaccelerator-endpointgroup-endpointconfigurations): {{
@@ -171,7 +171,7 @@ These are examples to specify an endpoint group.
 #### JSON
 <a name="aws-resource-globalaccelerator-endpointgroup--examples--Add_an_endpoint_group--json"></a>
 
-```
+```json
 "Resources": {
         "EndpointGroup": {
         "Type": "AWS::GlobalAccelerator::EndpointGroup",
@@ -198,7 +198,7 @@ These are examples to specify an endpoint group.
 #### YAML
 <a name="aws-resource-globalaccelerator-endpointgroup--examples--Add_an_endpoint_group--yaml"></a>
 
-```
+```yaml
 EndpointGroup:
   Type: AWS::GlobalAccelerator::EndpointGroup
   Properties:

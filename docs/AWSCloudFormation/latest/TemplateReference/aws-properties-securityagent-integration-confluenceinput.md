@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityagent-integration-confluenceinput-syntax.json"></a>
 
-```
+```json
 {
   "[Code](#cfn-securityagent-integration-confluenceinput-code)" : {{String}},
   "[InstallationId](#cfn-securityagent-integration-confluenceinput-installationid)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityagent-integration-confluenceinput-syntax.yaml"></a>
 
-```
+```yaml
   [Code](#cfn-securityagent-integration-confluenceinput-code): {{String}}
   [InstallationId](#cfn-securityagent-integration-confluenceinput-installationid): {{String}}
   [SiteUrl](#cfn-securityagent-integration-confluenceinput-siteurl): {{String}}

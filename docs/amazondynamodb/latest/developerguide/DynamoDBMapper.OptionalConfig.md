@@ -8,7 +8,7 @@ When you create an instance of `DynamoDBMapper`, it has certain default behavior
 
 The following code snippet creates a `DynamoDBMapper` with custom settings:
 
-```
+```java
 AmazonDynamoDB client = AmazonDynamoDBClientBuilder.standard().build();
 
 DynamoDBMapperConfig mapperConfig = DynamoDBMapperConfig.builder()

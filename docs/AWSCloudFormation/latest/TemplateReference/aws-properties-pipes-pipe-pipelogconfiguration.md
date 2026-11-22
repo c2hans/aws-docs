@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-pipelogconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CloudwatchLogsLogDestination](#cfn-pipes-pipe-pipelogconfiguration-cloudwatchlogslogdestination)" : {{CloudwatchLogsLogDestination}},
   "[FirehoseLogDestination](#cfn-pipes-pipe-pipelogconfiguration-firehoselogdestination)" : {{FirehoseLogDestination}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-pipelogconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CloudwatchLogsLogDestination](#cfn-pipes-pipe-pipelogconfiguration-cloudwatchlogslogdestination): {{
     CloudwatchLogsLogDestination}}
   [FirehoseLogDestination](#cfn-pipes-pipe-pipelogconfiguration-firehoselogdestination): {{

@@ -32,6 +32,6 @@ This section explains how to use the Amazon S3 console to delete an access point
 
 The following `delete-access-point` example command shows how you can use the AWS CLI to delete an access point for S3 Files.
 
-```
+```bash
 aws s3files delete-access-point --access-point-id {{access-point-id}}
 ```

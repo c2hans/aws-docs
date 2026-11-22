@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkfirewall-firewallpolicy-statefulrulegroupreference-syntax.json"></a>
 
-```
+```json
 {
   "[DeepThreatInspection](#cfn-networkfirewall-firewallpolicy-statefulrulegroupreference-deepthreatinspection)" : {{Boolean}},
   "[Override](#cfn-networkfirewall-firewallpolicy-statefulrulegroupreference-override)" : {{StatefulRuleGroupOverride}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkfirewall-firewallpolicy-statefulrulegroupreference-syntax.yaml"></a>
 
-```
+```yaml
   [DeepThreatInspection](#cfn-networkfirewall-firewallpolicy-statefulrulegroupreference-deepthreatinspection): {{Boolean}}
   [Override](#cfn-networkfirewall-firewallpolicy-statefulrulegroupreference-override): {{
     StatefulRuleGroupOverride}}

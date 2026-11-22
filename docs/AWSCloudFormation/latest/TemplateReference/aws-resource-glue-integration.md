@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-glue-integration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Glue::Integration",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-glue-integration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Glue::Integration
 Properties:
   [AdditionalEncryptionContext](#cfn-glue-integration-additionalencryptioncontext): {{

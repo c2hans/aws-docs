@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-invoicing-invoiceunit-rule-syntax.json"></a>
 
-```
+```json
 {
   "[LinkedAccounts](#cfn-invoicing-invoiceunit-rule-linkedaccounts)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-invoicing-invoiceunit-rule-syntax.yaml"></a>
 
-```
+```yaml
   [LinkedAccounts](#cfn-invoicing-invoiceunit-rule-linkedaccounts): {{
     - String}}
 ```

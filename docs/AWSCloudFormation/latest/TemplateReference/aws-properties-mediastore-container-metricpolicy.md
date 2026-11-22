@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediastore-container-metricpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[ContainerLevelMetrics](#cfn-mediastore-container-metricpolicy-containerlevelmetrics)" : {{String}},
   "[MetricPolicyRules](#cfn-mediastore-container-metricpolicy-metricpolicyrules)" : {{[ MetricPolicyRule, ... ]}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediastore-container-metricpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [ContainerLevelMetrics](#cfn-mediastore-container-metricpolicy-containerlevelmetrics): {{String}}
   [MetricPolicyRules](#cfn-mediastore-container-metricpolicy-metricpolicyrules): {{
     - MetricPolicyRule}}

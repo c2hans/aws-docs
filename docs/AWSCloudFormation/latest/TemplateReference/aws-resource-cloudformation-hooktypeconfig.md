@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudformation-hooktypeconfig-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudFormation::HookTypeConfig",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudformation-hooktypeconfig-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudFormation::HookTypeConfig
 Properties:
   [Configuration](#cfn-cloudformation-hooktypeconfig-configuration): {{String}}
@@ -118,7 +118,7 @@ The following example demonstrates how to specify a new Hook configuration with 
 #### JSON
 <a name="aws-resource-cloudformation-hooktypeconfig--examples--Specifying_the_configuration_of_a_Hook_using_TypeName--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -136,7 +136,7 @@ The following example demonstrates how to specify a new Hook configuration with 
 #### YAML
 <a name="aws-resource-cloudformation-hooktypeconfig--examples--Specifying_the_configuration_of_a_Hook_using_TypeName--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   HookTypeConfig:
@@ -154,7 +154,7 @@ The following example demonstrates how to specify a new Hook configuration with 
 #### JSON
 <a name="aws-resource-cloudformation-hooktypeconfig--examples--Specifying_the_configuration_of_a_Hook_using_TypeArn--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -172,7 +172,7 @@ The following example demonstrates how to specify a new Hook configuration with 
 #### YAML
 <a name="aws-resource-cloudformation-hooktypeconfig--examples--Specifying_the_configuration_of_a_Hook_using_TypeArn--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   HookTypeConfig:

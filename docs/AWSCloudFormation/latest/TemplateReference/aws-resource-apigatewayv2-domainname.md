@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigatewayv2-domainname-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGatewayV2::DomainName",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigatewayv2-domainname-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGatewayV2::DomainName
 Properties:
   [DomainName](#cfn-apigatewayv2-domainname-domainname): {{String}}
@@ -126,7 +126,7 @@ The following example creates a `DomainName` resource called `MyDomainName`.
 #### JSON
 <a name="aws-resource-apigatewayv2-domainname--examples--Domain_name_creation_example--json"></a>
 
-```
+```json
 {
     "MyDomainName": {
         "Type": "AWS::ApiGatewayV2::DomainName",
@@ -147,7 +147,7 @@ The following example creates a `DomainName` resource called `MyDomainName`.
 #### YAML
 <a name="aws-resource-apigatewayv2-domainname--examples--Domain_name_creation_example--yaml"></a>
 
-```
+```yaml
 MyDomainName:
   Type: 'AWS::ApiGatewayV2::DomainName'
   Properties:
@@ -167,7 +167,7 @@ The following example creates a `DomainName` resource with the `RoutingMode` par
 #### JSON
 <a name="aws-resource-apigatewayv2-domainname--examples--Domain_name_with_routing_mode_creation_example--json"></a>
 
-```
+```json
 {
   "Resources": {
     "TestDomainName": {
@@ -191,7 +191,7 @@ The following example creates a `DomainName` resource with the `RoutingMode` par
 #### YAML
 <a name="aws-resource-apigatewayv2-domainname--examples--Domain_name_with_routing_mode_creation_example--yaml"></a>
 
-```
+```yaml
 Resources:
   TestDomainName:
     Type: AWS::ApiGatewayV2::DomainName

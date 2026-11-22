@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-columnschema-syntax.json"></a>
 
-```
+```json
 {
   "[DataType](#cfn-quicksight-template-columnschema-datatype)" : {{String}},
   "[GeographicRole](#cfn-quicksight-template-columnschema-geographicrole)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-columnschema-syntax.yaml"></a>
 
-```
+```yaml
   [DataType](#cfn-quicksight-template-columnschema-datatype): {{String}}
   [GeographicRole](#cfn-quicksight-template-columnschema-geographicrole): {{String}}
   [Name](#cfn-quicksight-template-columnschema-name): {{String}}

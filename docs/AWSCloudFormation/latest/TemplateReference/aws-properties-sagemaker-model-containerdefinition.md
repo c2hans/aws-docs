@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-model-containerdefinition-syntax.json"></a>
 
-```
+```json
 {
   "[ContainerHostname](#cfn-sagemaker-model-containerdefinition-containerhostname)" : {{String}},
   "[Environment](#cfn-sagemaker-model-containerdefinition-environment)" : {{Json}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-model-containerdefinition-syntax.yaml"></a>
 
-```
+```yaml
   [ContainerHostname](#cfn-sagemaker-model-containerdefinition-containerhostname): {{String}}
   [Environment](#cfn-sagemaker-model-containerdefinition-environment): {{Json}}
   [Image](#cfn-sagemaker-model-containerdefinition-image): {{String}}

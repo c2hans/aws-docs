@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sagemaker-clusterschedulerconfig-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SageMaker::ClusterSchedulerConfig",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sagemaker-clusterschedulerconfig-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SageMaker::ClusterSchedulerConfig
 Properties:
   [ClusterArn](#cfn-sagemaker-clusterschedulerconfig-clusterarn): {{String}}

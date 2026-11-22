@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dynamodb-table-importsourcespecification-syntax.json"></a>
 
-```
+```json
 {
   "[InputCompressionType](#cfn-dynamodb-table-importsourcespecification-inputcompressiontype)" : {{String}},
   "[InputFormat](#cfn-dynamodb-table-importsourcespecification-inputformat)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dynamodb-table-importsourcespecification-syntax.yaml"></a>
 
-```
+```yaml
   [InputCompressionType](#cfn-dynamodb-table-importsourcespecification-inputcompressiontype): {{String}}
   [InputFormat](#cfn-dynamodb-table-importsourcespecification-inputformat): {{String}}
   [InputFormatOptions](#cfn-dynamodb-table-importsourcespecification-inputformatoptions): {{

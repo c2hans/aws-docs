@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentcomputeresourcerequirements-syntax.json"></a>
 
-```
+```json
 {
   "[MaxMemoryRequiredInMb](#cfn-sagemaker-inferencecomponent-inferencecomponentcomputeresourcerequirements-maxmemoryrequiredinmb)" : {{Integer}},
   "[MinMemoryRequiredInMb](#cfn-sagemaker-inferencecomponent-inferencecomponentcomputeresourcerequirements-minmemoryrequiredinmb)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentcomputeresourcerequirements-syntax.yaml"></a>
 
-```
+```yaml
   [MaxMemoryRequiredInMb](#cfn-sagemaker-inferencecomponent-inferencecomponentcomputeresourcerequirements-maxmemoryrequiredinmb): {{Integer}}
   [MinMemoryRequiredInMb](#cfn-sagemaker-inferencecomponent-inferencecomponentcomputeresourcerequirements-minmemoryrequiredinmb): {{Integer}}
   [NumberOfAcceleratorDevicesRequired](#cfn-sagemaker-inferencecomponent-inferencecomponentcomputeresourcerequirements-numberofacceleratordevicesrequired): {{

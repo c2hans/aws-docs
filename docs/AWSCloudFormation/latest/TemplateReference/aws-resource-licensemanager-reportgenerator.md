@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-licensemanager-reportgenerator-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::LicenseManager::ReportGenerator",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-licensemanager-reportgenerator-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::LicenseManager::ReportGenerator
 Properties:
   [Description](#cfn-licensemanager-reportgenerator-description): {{String}}

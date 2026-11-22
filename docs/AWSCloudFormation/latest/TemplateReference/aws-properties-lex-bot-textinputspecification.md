@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-textinputspecification-syntax.json"></a>
 
-```
+```json
 {
   "[StartTimeoutMs](#cfn-lex-bot-textinputspecification-starttimeoutms)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-textinputspecification-syntax.yaml"></a>
 
-```
+```yaml
   [StartTimeoutMs](#cfn-lex-bot-textinputspecification-starttimeoutms): {{Integer}}
 ```
 

@@ -65,7 +65,7 @@ For more information, see [Cataloging and analyzing your data with S3 Inventory]
 **Tools for PowerShell V4**
 **Example 1: This command returns the first 100 inventory configurations of the given S3 bucket.**
 
-```
+```powershell
 Get-S3BucketInventoryConfigurationList -BucketName 'amzn-s3-demo-bucket'
 ```
 +  For API details, see [ListBucketInventoryConfigurations](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -73,7 +73,7 @@ Get-S3BucketInventoryConfigurationList -BucketName 'amzn-s3-demo-bucket'
 **Tools for PowerShell V5**
 **Example 1: This command returns the first 100 inventory configurations of the given S3 bucket.**
 
-```
+```powershell
 Get-S3BucketInventoryConfigurationList -BucketName 'amzn-s3-demo-bucket'
 ```
 +  For API details, see [ListBucketInventoryConfigurations](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

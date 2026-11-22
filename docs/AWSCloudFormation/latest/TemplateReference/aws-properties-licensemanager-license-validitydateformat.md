@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-licensemanager-license-validitydateformat-syntax.json"></a>
 
-```
+```json
 {
   "[Begin](#cfn-licensemanager-license-validitydateformat-begin)" : {{String}},
   "[End](#cfn-licensemanager-license-validitydateformat-end)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-licensemanager-license-validitydateformat-syntax.yaml"></a>
 
-```
+```yaml
   [Begin](#cfn-licensemanager-license-validitydateformat-begin): {{String}}
   [End](#cfn-licensemanager-license-validitydateformat-end): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkfirewall-firewallpolicy-ipset-syntax.json"></a>
 
-```
+```json
 {
   "[Definition](#cfn-networkfirewall-firewallpolicy-ipset-definition)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkfirewall-firewallpolicy-ipset-syntax.yaml"></a>
 
-```
+```yaml
   [Definition](#cfn-networkfirewall-firewallpolicy-ipset-definition): {{
     - String}}
 ```

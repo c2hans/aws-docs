@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-knowledgebase-audioconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[SegmentationConfiguration](#cfn-bedrock-knowledgebase-audioconfiguration-segmentationconfiguration)" : {{AudioSegmentationConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-knowledgebase-audioconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [SegmentationConfiguration](#cfn-bedrock-knowledgebase-audioconfiguration-segmentationconfiguration): {{
     AudioSegmentationConfiguration}}
 ```

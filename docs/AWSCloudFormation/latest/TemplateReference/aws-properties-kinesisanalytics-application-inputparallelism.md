@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisanalytics-application-inputparallelism-syntax.json"></a>
 
-```
+```json
 {
   "[Count](#cfn-kinesisanalytics-application-inputparallelism-count)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisanalytics-application-inputparallelism-syntax.yaml"></a>
 
-```
+```yaml
   [Count](#cfn-kinesisanalytics-application-inputparallelism-count): {{Integer}}
 ```
 

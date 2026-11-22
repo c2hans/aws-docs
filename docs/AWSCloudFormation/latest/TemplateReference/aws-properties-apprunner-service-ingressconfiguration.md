@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apprunner-service-ingressconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[IsPubliclyAccessible](#cfn-apprunner-service-ingressconfiguration-ispubliclyaccessible)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apprunner-service-ingressconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [IsPubliclyAccessible](#cfn-apprunner-service-ingressconfiguration-ispubliclyaccessible): {{Boolean}}
 ```
 

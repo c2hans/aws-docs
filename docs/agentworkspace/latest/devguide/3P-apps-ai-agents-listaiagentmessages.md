@@ -8,13 +8,13 @@ Retrieves the AI Agent message history for a contact, ordered by sequence number
 
  **Signature**
 
-```
+```typescript
 listAIAgentMessages(params: ListAIAgentMessagesParams): Promise<ListAIAgentMessagesResult>
 ```
 
  **Usage**
 
-```
+```typescript
 const result = await aiAgentsClient.listAIAgentMessages({
     contactId: "contact-123"
 });
@@ -35,6 +35,6 @@ console.log("Messages:", result.messages);
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

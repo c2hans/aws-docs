@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-kendra-datasource-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Kendra::DataSource",
   "Properties" : {
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-kendra-datasource-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Kendra::DataSource
 Properties:
   [CustomDocumentEnrichmentConfiguration](#cfn-kendra-datasource-customdocumentenrichmentconfiguration): {{

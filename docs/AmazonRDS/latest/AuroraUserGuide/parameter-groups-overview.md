@@ -71,7 +71,7 @@ Before you create a DB cluster, set any parameters that relate to the character 
 
 For some DB engines, you can change character set or collation values for an existing database using the `ALTER DATABASE` command, for example:
 
-```
+```sql
 ALTER DATABASE {{database_name}} CHARACTER SET {{character_set_name}} COLLATE {{collation}};
 ```
 

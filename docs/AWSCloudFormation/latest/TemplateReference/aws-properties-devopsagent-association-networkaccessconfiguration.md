@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-association-networkaccessconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[PrivateAccess](#cfn-devopsagent-association-networkaccessconfiguration-privateaccess)" : {{PrivateNetworkAccess}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-association-networkaccessconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [PrivateAccess](#cfn-devopsagent-association-networkaccessconfiguration-privateaccess): {{
     PrivateNetworkAccess}}
 ```

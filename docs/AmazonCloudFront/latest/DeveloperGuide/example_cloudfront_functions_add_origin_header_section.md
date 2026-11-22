@@ -12,7 +12,7 @@ The following code example shows how to add an origin header to a CloudFront Fun
 **JavaScript runtime 2.0 for CloudFront Functions**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [CloudFront Functions examples](https://github.com/aws-samples/amazon-cloudfront-functions/tree/main/add-origin-header) repository.
 
-```
+```javascript
 async function handler(event) {
     var request = event.request;
     var headers = request.headers;

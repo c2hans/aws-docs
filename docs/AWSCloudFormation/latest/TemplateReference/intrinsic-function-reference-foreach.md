@@ -18,7 +18,7 @@ Using the `Fn::ForEach` intrinsic function does not change the quotas, which app
 ### JSON
 <a name="intrinsic-function-reference-foreach-declaration.json"></a>
 
-```
+```json
 "Fn::ForEach::{{LoopLogicalName}}": [
   "{{Identifier}}",
   ["Value1","Value2"], // {{Collection}}
@@ -29,7 +29,7 @@ Using the `Fn::ForEach` intrinsic function does not change the quotas, which app
 ### YAML
 <a name="intrinsic-function-reference-foreach-declaration.yaml"></a>
 
-```
+```yaml
 'Fn::ForEach::{{LoopLogicalName}}':
     - {{Identifier}}
     - - {{Value1}} # {{Collection}}

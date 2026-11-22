@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-keygroup-keygroupconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Comment](#cfn-cloudfront-keygroup-keygroupconfig-comment)" : {{String}},
   "[Items](#cfn-cloudfront-keygroup-keygroupconfig-items)" : {{[ String, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-keygroup-keygroupconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Comment](#cfn-cloudfront-keygroup-keygroupconfig-comment): {{String}}
   [Items](#cfn-cloudfront-keygroup-keygroupconfig-items): {{
     - String}}

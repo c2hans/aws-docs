@@ -17,7 +17,7 @@ This element contains the following child elements:
 
 The following is an example successful response in XML format:
 
-```
+```xml
 <CreateQueueResponse
    xmlns=https://sqs.us-east-2.amazonaws.com/doc/2012-11-05/
    xmlns:xsi=http://www.w3.org/2001/XMLSchema-instance
@@ -46,7 +46,7 @@ The `RequestId` element contains the UUID of the request.
 
 The following is an example error response in XML format:
 
-```
+```xml
 <ErrorResponse>
    <Error>
       <Type>Sender</Type>

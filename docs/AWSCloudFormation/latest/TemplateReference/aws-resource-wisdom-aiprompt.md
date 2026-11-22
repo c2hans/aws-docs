@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-wisdom-aiprompt-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Wisdom::AIPrompt",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-wisdom-aiprompt-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Wisdom::AIPrompt
 Properties:
   [ApiFormat](#cfn-wisdom-aiprompt-apiformat): {{String}}

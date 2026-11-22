@@ -136,7 +136,7 @@ Retrieve complete details for a specific alarm mute rule.
 #### Sample Request
 <a name="API_GetAlarmMuteRule_Example_1_Request"></a>
 
-```
+```bash
 aws cloudwatch get-alarm-mute-rule \
 	--alarm-mute-rule-name "DailyMaintenanceWindow"
 ```
@@ -144,7 +144,7 @@ aws cloudwatch get-alarm-mute-rule \
 #### Sample Response
 <a name="API_GetAlarmMuteRule_Example_1_Response"></a>
 
-```
+```json
 {
     "Name": "DailyMaintenanceWindow",
     "AlarmMuteRuleArn": "arn:aws:cloudwatch:us-east-1:123456789012:alarm-mute-rule:DailyMaintenanceWindow",

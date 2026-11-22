@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ssmquicksetup-configurationmanager-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SSMQuickSetup::ConfigurationManager",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ssmquicksetup-configurationmanager-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SSMQuickSetup::ConfigurationManager
 Properties:
   [ConfigurationDefinitions](#cfn-ssmquicksetup-configurationmanager-configurationdefinitions): {{
@@ -117,7 +117,7 @@ Set up AWS Config Recording for the local account.
 #### YAML
 <a name="aws-resource-ssmquicksetup-configurationmanager--examples--Recording_-_local--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
    SSMQuickSetupTestConfigurationManager:

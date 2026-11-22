@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-comparisonformatconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[NumberDisplayFormatConfiguration](#cfn-quicksight-dashboard-comparisonformatconfiguration-numberdisplayformatconfiguration)" : {{NumberDisplayFormatConfiguration}},
   "[PercentageDisplayFormatConfiguration](#cfn-quicksight-dashboard-comparisonformatconfiguration-percentagedisplayformatconfiguration)" : {{PercentageDisplayFormatConfiguration}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-comparisonformatconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [NumberDisplayFormatConfiguration](#cfn-quicksight-dashboard-comparisonformatconfiguration-numberdisplayformatconfiguration): {{
     NumberDisplayFormatConfiguration}}
   [PercentageDisplayFormatConfiguration](#cfn-quicksight-dashboard-comparisonformatconfiguration-percentagedisplayformatconfiguration): {{

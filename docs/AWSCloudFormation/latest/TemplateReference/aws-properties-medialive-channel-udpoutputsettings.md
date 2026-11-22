@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-udpoutputsettings-syntax.json"></a>
 
-```
+```json
 {
   "[BufferMsec](#cfn-medialive-channel-udpoutputsettings-buffermsec)" : {{Integer}},
   "[ContainerSettings](#cfn-medialive-channel-udpoutputsettings-containersettings)" : {{UdpMediaConnectRouterContainerSettings}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-udpoutputsettings-syntax.yaml"></a>
 
-```
+```yaml
   [BufferMsec](#cfn-medialive-channel-udpoutputsettings-buffermsec): {{Integer}}
   [ContainerSettings](#cfn-medialive-channel-udpoutputsettings-containersettings): {{
     UdpMediaConnectRouterContainerSettings}}

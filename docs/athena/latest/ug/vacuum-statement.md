@@ -19,7 +19,7 @@ If you run a snapshot expiration operation, you can no longer time travel to exp
 
 To remove data files no longer needed for an Iceberg table, use the following syntax.
 
-```
+```sql
 VACUUM [{{database_name}}.]{{target_table}}
 ```
 + `VACUUM` expects the Iceberg data to be in an Amazon S3 folder rather than an Amazon S3 bucket. For example, if your Iceberg data is at `s3://amzn-s3-demo-bucket`/ instead of `s3://amzn-s3-demo-bucket/myicebergfolder/`, the `VACUUM` statement fails with the error message `GENERIC_INTERNAL_ERROR: Path missing in file system location: s3://amzn-s3-demo-bucket`.
@@ -28,7 +28,7 @@ VACUUM [{{database_name}}.]{{target_table}}
 
   This behavior is particular to `VACUUM`. The `CREATE` and `INSERT INTO` statements do not require backticks for table names that begin with underscores.
 
-  ```
+  ```sql
   VACUUM `_mytable`
   VACUUM my_database.`_mytable`
   ```

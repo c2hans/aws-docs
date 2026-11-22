@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-virtualnode-healthcheck-syntax.json"></a>
 
-```
+```json
 {
   "[HealthyThreshold](#cfn-appmesh-virtualnode-healthcheck-healthythreshold)" : {{Integer}},
   "[IntervalMillis](#cfn-appmesh-virtualnode-healthcheck-intervalmillis)" : {{Integer}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-virtualnode-healthcheck-syntax.yaml"></a>
 
-```
+```yaml
   [HealthyThreshold](#cfn-appmesh-virtualnode-healthcheck-healthythreshold): {{Integer}}
   [IntervalMillis](#cfn-appmesh-virtualnode-healthcheck-intervalmillis): {{Integer}}
   [Path](#cfn-appmesh-virtualnode-healthcheck-path): {{String}}

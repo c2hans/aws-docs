@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-flowmediastream-mediastreamattributes-syntax.json"></a>
 
-```
+```json
 {
   "[Fmtp](#cfn-mediaconnect-flowmediastream-mediastreamattributes-fmtp)" : {{Fmtp}},
   "[Lang](#cfn-mediaconnect-flowmediastream-mediastreamattributes-lang)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-flowmediastream-mediastreamattributes-syntax.yaml"></a>
 
-```
+```yaml
   [Fmtp](#cfn-mediaconnect-flowmediastream-mediastreamattributes-fmtp): {{
     Fmtp}}
   [Lang](#cfn-mediaconnect-flowmediastream-mediastreamattributes-lang): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-nullvalueformatconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[NullString](#cfn-quicksight-analysis-nullvalueformatconfiguration-nullstring)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-nullvalueformatconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [NullString](#cfn-quicksight-analysis-nullvalueformatconfiguration-nullstring): {{
     String}}
 ```

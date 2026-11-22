@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dms-endpoint-oraclesettings-syntax.json"></a>
 
-```
+```json
 {
   "[AccessAlternateDirectly](#cfn-dms-endpoint-oraclesettings-accessalternatedirectly)" : {{Boolean}},
   "[AdditionalArchivedLogDestId](#cfn-dms-endpoint-oraclesettings-additionalarchivedlogdestid)" : {{Integer}},
@@ -59,7 +59,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dms-endpoint-oraclesettings-syntax.yaml"></a>
 
-```
+```yaml
   [AccessAlternateDirectly](#cfn-dms-endpoint-oraclesettings-accessalternatedirectly): {{Boolean}}
   [AdditionalArchivedLogDestId](#cfn-dms-endpoint-oraclesettings-additionalarchivedlogdestid): {{Integer}}
   [AddSupplementalLogging](#cfn-dms-endpoint-oraclesettings-addsupplementallogging): {{Boolean}}

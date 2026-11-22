@@ -23,7 +23,7 @@ The `DynamoDBMapper` class does not allow you to create, update, or delete table
 
 The SDK for Java provides a set of annotation types so that you can map your classes to tables. For example, consider a `ProductCatalog` table that has `Id` as the partition key.
 
-```
+```java
 ProductCatalog(Id, ...)
 ```
 
@@ -31,7 +31,7 @@ You can map a class in your client application to the `ProductCatalog` table as 
 
 **Example**
 
-```
+```java
 package com.amazonaws.codesamples;
 
 import java.util.Set;
@@ -84,7 +84,7 @@ Your class definition can have properties that don't map to any attributes in th
 
 After you define your mapping class, you can use `DynamoDBMapper` methods to write an instance of that class to a corresponding item in the `Catalog` table. The following code example demonstrates this technique.
 
-```
+```java
 AmazonDynamoDB client = AmazonDynamoDBClientBuilder.standard().build();
 
 DynamoDBMapper mapper = new DynamoDBMapper(client);
@@ -101,7 +101,7 @@ mapper.save(item);
 
 The following code example shows how to retrieve the item and access some of its attributes.
 
-```
+```java
 CatalogItem partitionKey = new CatalogItem();
 
 partitionKey.setId(102);

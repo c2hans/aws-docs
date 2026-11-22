@@ -21,7 +21,7 @@ The following IAM policy grants permissions to launch instances with an IAM role
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

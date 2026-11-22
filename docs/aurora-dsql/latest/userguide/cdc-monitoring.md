@@ -33,7 +33,7 @@ Follow these steps when a CDC stream becomes impaired or fails. If the stream is
 
 1. **Get the stream status.** Call `GetStream` and verify the `status` field. If the status is `ACTIVE`, the stream is healthy.
 
-   ```
+   ```bash
    aws dsql get-stream \
      --cluster-identifier {{cluster-id}} \
      --stream-identifier {{stream-id}} \
@@ -42,7 +42,7 @@ Follow these steps when a CDC stream becomes impaired or fails. If the stream is
 
 1. **Read the error code.** If the status is `IMPAIRED` or `FAILED`, the response includes a `statusReason` object. The `error` field contains the error code.
 
-   ```
+   ```JSON
    {
        "status": "IMPAIRED",
        "statusReason": {

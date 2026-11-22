@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-invoicing-procurementportalpreference-einvoicedeliverypreference-syntax.json"></a>
 
-```
+```json
 {
   "[ConnectionTestingMethod](#cfn-invoicing-procurementportalpreference-einvoicedeliverypreference-connectiontestingmethod)" : {{String}},
   "[EinvoiceDeliveryActivationDate](#cfn-invoicing-procurementportalpreference-einvoicedeliverypreference-einvoicedeliveryactivationdate)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-invoicing-procurementportalpreference-einvoicedeliverypreference-syntax.yaml"></a>
 
-```
+```yaml
   [ConnectionTestingMethod](#cfn-invoicing-procurementportalpreference-einvoicedeliverypreference-connectiontestingmethod): {{String}}
   [EinvoiceDeliveryActivationDate](#cfn-invoicing-procurementportalpreference-einvoicedeliverypreference-einvoicedeliveryactivationdate): {{String}}
   [EinvoiceDeliveryAttachmentTypes](#cfn-invoicing-procurementportalpreference-einvoicedeliverypreference-einvoicedeliveryattachmenttypes): {{

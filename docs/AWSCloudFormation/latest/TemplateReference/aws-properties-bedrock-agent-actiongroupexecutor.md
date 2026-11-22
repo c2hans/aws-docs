@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-agent-actiongroupexecutor-syntax.json"></a>
 
-```
+```json
 {
   "[CustomControl](#cfn-bedrock-agent-actiongroupexecutor-customcontrol)" : {{String}},
   "[Lambda](#cfn-bedrock-agent-actiongroupexecutor-lambda)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-agent-actiongroupexecutor-syntax.yaml"></a>
 
-```
+```yaml
   [CustomControl](#cfn-bedrock-agent-actiongroupexecutor-customcontrol): {{String}}
   [Lambda](#cfn-bedrock-agent-actiongroupexecutor-lambda): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-connection-physicalconnectionrequirements-syntax.json"></a>
 
-```
+```json
 {
   "[AvailabilityZone](#cfn-glue-connection-physicalconnectionrequirements-availabilityzone)" : {{String}},
   "[SecurityGroupIdList](#cfn-glue-connection-physicalconnectionrequirements-securitygroupidlist)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-connection-physicalconnectionrequirements-syntax.yaml"></a>
 
-```
+```yaml
   [AvailabilityZone](#cfn-glue-connection-physicalconnectionrequirements-availabilityzone): {{String}}
   [SecurityGroupIdList](#cfn-glue-connection-physicalconnectionrequirements-securitygroupidlist): {{
     - String}}

@@ -21,7 +21,7 @@ When you use TTL in a global table, the region the TTL was performed in will hav
 
 The following JSON shows the relevant portion of a single streams record.
 
-```
+```json
 "Records": [
     {
         ...

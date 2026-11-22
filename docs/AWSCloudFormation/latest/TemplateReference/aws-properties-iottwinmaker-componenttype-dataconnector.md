@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iottwinmaker-componenttype-dataconnector-syntax.json"></a>
 
-```
+```json
 {
   "[IsNative](#cfn-iottwinmaker-componenttype-dataconnector-isnative)" : {{Boolean}},
   "[Lambda](#cfn-iottwinmaker-componenttype-dataconnector-lambda)" : {{LambdaFunction}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iottwinmaker-componenttype-dataconnector-syntax.yaml"></a>
 
-```
+```yaml
   [IsNative](#cfn-iottwinmaker-componenttype-dataconnector-isnative): {{Boolean}}
   [Lambda](#cfn-iottwinmaker-componenttype-dataconnector-lambda): {{
     LambdaFunction}}

@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-route53recoveryreadiness-cell-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Route53RecoveryReadiness::Cell",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-route53recoveryreadiness-cell-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53RecoveryReadiness::Cell
 Properties:
   [CellName](#cfn-route53recoveryreadiness-cell-cellname): {{String}}

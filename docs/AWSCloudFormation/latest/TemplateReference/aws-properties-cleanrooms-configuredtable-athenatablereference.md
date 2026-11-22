@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-configuredtable-athenatablereference-syntax.json"></a>
 
-```
+```json
 {
   "[CatalogName](#cfn-cleanrooms-configuredtable-athenatablereference-catalogname)" : {{String}},
   "[DatabaseName](#cfn-cleanrooms-configuredtable-athenatablereference-databasename)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-configuredtable-athenatablereference-syntax.yaml"></a>
 
-```
+```yaml
   [CatalogName](#cfn-cleanrooms-configuredtable-athenatablereference-catalogname): {{String}}
   [DatabaseName](#cfn-cleanrooms-configuredtable-athenatablereference-databasename): {{String}}
   [OutputLocation](#cfn-cleanrooms-configuredtable-athenatablereference-outputlocation): {{String}}

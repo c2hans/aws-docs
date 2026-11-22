@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-logs-transformer-processor-syntax.json"></a>
 
-```
+```json
 {
   "[AddKeys](#cfn-logs-transformer-processor-addkeys)" : {{AddKeys}},
   "[CopyValue](#cfn-logs-transformer-processor-copyvalue)" : {{CopyValue}},
@@ -47,7 +47,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-logs-transformer-processor-syntax.yaml"></a>
 
-```
+```yaml
   [AddKeys](#cfn-logs-transformer-processor-addkeys): {{
     AddKeys}}
   [CopyValue](#cfn-logs-transformer-processor-copyvalue): {{

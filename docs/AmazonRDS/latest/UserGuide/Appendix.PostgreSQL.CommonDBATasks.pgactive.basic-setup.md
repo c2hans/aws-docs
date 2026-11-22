@@ -43,7 +43,7 @@ You can use the AWS Management Console or the AWS CLI to create the required RDS
 
 1. To verify that pgactive is initialized, run the following command.
 
-   ```
+   ```sql
    postgres=>SELECT setting ~ 'pgactive'
    FROM pg_catalog.pg_settings
    WHERE name = 'shared_preload_libraries';
@@ -89,7 +89,7 @@ To initialize the `pgactive` using the AWS CLI, call the [modify-db-parameter-gr
 
 1. To verify that pgactive is initialized, run the following command.
 
-   ```
+   ```sql
    postgres=>SELECT setting ~ 'pgactive'
    FROM pg_catalog.pg_settings
    WHERE name = 'shared_preload_libraries';

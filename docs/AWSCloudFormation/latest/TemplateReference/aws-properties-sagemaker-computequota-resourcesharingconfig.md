@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-computequota-resourcesharingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AbsoluteBorrowLimits](#cfn-sagemaker-computequota-resourcesharingconfig-absoluteborrowlimits)" : {{[ ComputeQuotaResourceConfig, ... ]}},
   "[BorrowLimit](#cfn-sagemaker-computequota-resourcesharingconfig-borrowlimit)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-computequota-resourcesharingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AbsoluteBorrowLimits](#cfn-sagemaker-computequota-resourcesharingconfig-absoluteborrowlimits): {{
     - ComputeQuotaResourceConfig}}
   [BorrowLimit](#cfn-sagemaker-computequota-resourcesharingconfig-borrowlimit): {{Integer}}

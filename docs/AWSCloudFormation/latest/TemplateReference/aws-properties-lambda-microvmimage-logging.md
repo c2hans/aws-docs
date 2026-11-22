@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-microvmimage-logging-syntax.json"></a>
 
-```
+```json
 {
   "[CloudWatch](#cfn-lambda-microvmimage-logging-cloudwatch)" : {{CloudWatchLogging}},
   "[Disabled](#cfn-lambda-microvmimage-logging-disabled)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-microvmimage-logging-syntax.yaml"></a>
 
-```
+```yaml
   [CloudWatch](#cfn-lambda-microvmimage-logging-cloudwatch): {{
     CloudWatchLogging}}
   [Disabled](#cfn-lambda-microvmimage-logging-disabled): {{Boolean}}

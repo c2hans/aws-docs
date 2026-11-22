@@ -60,7 +60,7 @@ Creates a VPC link.
 #### POST schema
 <a name="vpclinks-request-body-post-example"></a>
 
-```
+```json
 {
   "name": "string",
   "subnetIds": [
@@ -80,7 +80,7 @@ Creates a VPC link.
 #### VpcLinks schema
 <a name="vpclinks-response-body-vpclinks-example"></a>
 
-```
+```json
 {
   "items": [
     {
@@ -107,7 +107,7 @@ Creates a VPC link.
 #### VpcLink schema
 <a name="vpclinks-response-body-vpclink-example"></a>
 
-```
+```json
 {
   "vpcLinkId": "string",
   "name": "string",
@@ -129,7 +129,7 @@ Creates a VPC link.
 #### BadRequestException schema
 <a name="vpclinks-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -138,7 +138,7 @@ Creates a VPC link.
 #### LimitExceededException schema
 <a name="vpclinks-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

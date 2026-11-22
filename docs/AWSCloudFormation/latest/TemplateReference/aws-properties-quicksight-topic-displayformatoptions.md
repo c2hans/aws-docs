@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-topic-displayformatoptions-syntax.json"></a>
 
-```
+```json
 {
   "[BlankCellFormat](#cfn-quicksight-topic-displayformatoptions-blankcellformat)" : {{String}},
   "[CurrencySymbol](#cfn-quicksight-topic-displayformatoptions-currencysymbol)" : {{String}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-topic-displayformatoptions-syntax.yaml"></a>
 
-```
+```yaml
   [BlankCellFormat](#cfn-quicksight-topic-displayformatoptions-blankcellformat): {{String}}
   [CurrencySymbol](#cfn-quicksight-topic-displayformatoptions-currencysymbol): {{String}}
   [DateFormat](#cfn-quicksight-topic-displayformatoptions-dateformat): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-sourcelocation-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-mediatailor-sourcelocation-tag-key)" : {{String}},
   "[Value](#cfn-mediatailor-sourcelocation-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-sourcelocation-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-mediatailor-sourcelocation-tag-key): {{String}}
   [Value](#cfn-mediatailor-sourcelocation-tag-value): {{String}}
 ```

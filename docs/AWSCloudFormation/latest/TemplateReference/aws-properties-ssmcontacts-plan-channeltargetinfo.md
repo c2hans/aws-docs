@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssmcontacts-plan-channeltargetinfo-syntax.json"></a>
 
-```
+```json
 {
   "[ChannelId](#cfn-ssmcontacts-plan-channeltargetinfo-channelid)" : {{String}},
   "[RetryIntervalInMinutes](#cfn-ssmcontacts-plan-channeltargetinfo-retryintervalinminutes)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssmcontacts-plan-channeltargetinfo-syntax.yaml"></a>
 
-```
+```yaml
   [ChannelId](#cfn-ssmcontacts-plan-channeltargetinfo-channelid): {{String}}
   [RetryIntervalInMinutes](#cfn-ssmcontacts-plan-channeltargetinfo-retryintervalinminutes): {{Integer}}
 ```

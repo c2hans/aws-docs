@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-mediaconvert-certificateassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MediaConvert::CertificateAssociation",
   "Properties" : {
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-mediaconvert-certificateassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MediaConvert::CertificateAssociation
 Properties:
   [Arn](#cfn-mediaconvert-certificateassociation-arn): {{String}}

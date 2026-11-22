@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appstream-imagebuilder-domainjoininfo-syntax.json"></a>
 
-```
+```json
 {
   "[DirectoryName](#cfn-appstream-imagebuilder-domainjoininfo-directoryname)" : {{String}},
   "[OrganizationalUnitDistinguishedName](#cfn-appstream-imagebuilder-domainjoininfo-organizationalunitdistinguishedname)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appstream-imagebuilder-domainjoininfo-syntax.yaml"></a>
 
-```
+```yaml
   [DirectoryName](#cfn-appstream-imagebuilder-domainjoininfo-directoryname): {{String}}
   [OrganizationalUnitDistinguishedName](#cfn-appstream-imagebuilder-domainjoininfo-organizationalunitdistinguishedname): {{String}}
 ```
@@ -38,11 +38,11 @@ To declare this entity in your CloudFormation template, use the following syntax
 The fully qualified name of the directory (for example, corp.example.com).
 *Required*: No
 *Type*: String
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `OrganizationalUnitDistinguishedName`  <a name="cfn-appstream-imagebuilder-domainjoininfo-organizationalunitdistinguishedname"></a>
 The distinguished name of the organizational unit for computer accounts.
 *Required*: No
 *Type*: String
 *Maximum*: `2000`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

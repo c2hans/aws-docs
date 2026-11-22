@@ -13,7 +13,7 @@ The following policy adds the permissions required by Aurora to access Amazon Cl
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

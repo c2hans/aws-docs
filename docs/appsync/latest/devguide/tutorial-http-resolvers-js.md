@@ -51,7 +51,7 @@ The AWS AppSync console creates a new GraphQL API for you using the API key auth
 
 Now that you have a GraphQL API, let’s create a GraphQL schema. In the **Schema** editor in the AWS AppSync console, use the snippet below:
 
-```
+```sh
 type Mutation {
     addUser(userInput: UserInput!): User
     deleteUser(id: ID!): User
@@ -150,7 +150,7 @@ To set up the `getUser` resolver:
 
 1. Choose the **Query** tab, and then run the following query:
 
-   ```
+   ```sh
    query GetUser{
        getUser(id:1){
            id
@@ -161,7 +161,7 @@ To set up the `getUser` resolver:
 
    This should return the following response:
 
-   ```
+   ```sh
    {
        "data": {
            "getUser": {
@@ -233,7 +233,7 @@ To set up the `addUser` resolver:
 
    If you run the `getUser` query again, it should return the following response:
 
-   ```
+   ```sh
    {
        "data": {
            "getUser": {
@@ -260,7 +260,7 @@ For example, if you want to call the [ListGraphqlApis operation](https://docs.aw
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -279,7 +279,7 @@ For example, if you want to call the [ListGraphqlApis operation](https://docs.aw
 
 Next, create the HTTP data source for AWS AppSync. In this example, you call AWS AppSync in the US West (Oregon) Region. Set up the following HTTP configuration in a file named `http.json`, which includes the signing region and service name:
 
-```
+```sh
 {
     "endpoint": "https://appsync.us-west-2.amazonaws.com/",
     "authorizationConfig": {
@@ -294,7 +294,7 @@ Next, create the HTTP data source for AWS AppSync. In this example, you call AWS
 
 Then, use the AWS CLI to create the data source with an associated role as follows:
 
-```
+```sh
 aws appsync create-data-source --api-id <API-ID> \
                                --name AWSAppSync \
                                --type HTTP \
@@ -304,7 +304,7 @@ aws appsync create-data-source --api-id <API-ID> \
 
 When you attach a resolver to the field in the schema, use the following request mapping template to call AWS AppSync:
 
-```
+```sh
 {
     "version": "2018-05-29",
     "method": "GET",

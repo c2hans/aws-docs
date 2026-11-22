@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-function-tracingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Mode](#cfn-lambda-function-tracingconfig-mode)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-function-tracingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Mode](#cfn-lambda-function-tracingconfig-mode): {{String}}
 ```
 
@@ -50,7 +50,7 @@ Enable active tracing on a function.
 #### YAML
 <a name="aws-properties-lambda-function-tracingconfig--examples--Tracing_Configuration--yaml"></a>
 
-```
+```yaml
       TracingConfig:
         Mode: Active
 ```

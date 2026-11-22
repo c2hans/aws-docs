@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-crawler-schemachangepolicy-syntax.json"></a>
 
-```
+```json
 {
   "[DeleteBehavior](#cfn-glue-crawler-schemachangepolicy-deletebehavior)" : {{String}},
   "[UpdateBehavior](#cfn-glue-crawler-schemachangepolicy-updatebehavior)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-crawler-schemachangepolicy-syntax.yaml"></a>
 
-```
+```yaml
   [DeleteBehavior](#cfn-glue-crawler-schemachangepolicy-deletebehavior): {{String}}
   [UpdateBehavior](#cfn-glue-crawler-schemachangepolicy-updatebehavior): {{String}}
 ```

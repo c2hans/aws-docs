@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rds-globalcluster-globalendpoint-syntax.json"></a>
 
-```
+```json
 {
   "[Address](#cfn-rds-globalcluster-globalendpoint-address)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rds-globalcluster-globalendpoint-syntax.yaml"></a>
 
-```
+```yaml
   [Address](#cfn-rds-globalcluster-globalendpoint-address): {{String}}
 ```
 

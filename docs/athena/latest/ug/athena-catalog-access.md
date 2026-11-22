@@ -11,7 +11,7 @@ To invoke Athena `CreateDataCatalog` you must create a role that has the followi
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

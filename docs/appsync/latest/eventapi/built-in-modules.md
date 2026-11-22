@@ -13,7 +13,7 @@ The DynamoDB module functions provide an enhanced experience when interacting wi
 
 Modules are imported using `@aws-appsync/utils/dynamodb`:
 
-```
+```TypeScript
 import * as ddb from '@aws-appsync/utils/dynamodb';
 ```
 
@@ -32,7 +32,7 @@ get<T>(payload: GetInput): DynamoDBGetItemRequest
 
 The following example fetches an item from DynamoDB in a `subscribe` handler.
 
-```
+```js
 import { get } from '@aws-appsync/utils/dynamodb';
 
 export const onSubscribe = {
@@ -67,7 +67,7 @@ query<T>(payload: QueryInput): DynamoDBQueryRequest
 
 The following example performs a query against a DynamoDB table.
 
-```
+```js
 import * as ddb from '@aws-appsync/utils/dynamodb'
 
 export const onPublish = {
@@ -104,7 +104,7 @@ scan<T>(payload: ScanInput): DynamoDBScanRequest
 
 The following example scans all items in a DynamoDB table.
 
-```
+```js
 import * as ddb from '@aws-appsync/utils/dynamodb';
 
 export const onPublish = {
@@ -134,7 +134,7 @@ put<T>(payload: PutInput): DynamoDBPutItemRequest
 
 The following example saves an event to a DynamoDB table in an `OnPublish` handler.
 
-```
+```js
 import * as ddb from '@aws-appsync/utils/dynamodb';
 
 export const onPublish = {
@@ -161,7 +161,7 @@ remove<T>(payload: RemoveInput): DynamoDBDeleteItemRequest
 
 This `OnPublish` handler deletes an item in a DynamoDB table and forwards an empty list. No event is broadcast.
 
-```
+```js
 import * as ddb from '@aws-appsync/utils/dynamodb';
 
 export const onPublish = {
@@ -188,7 +188,7 @@ update<T>(payload: UpdateInput): DynamoDBUpdateItemRequest
 
 This `OnPublish` handler increases the account received item before it is broadcast.
 
-```
+```js
 import * as ddb from '@aws-appsync/utils/dynamodb';
 
 export const onPublish = {
@@ -219,7 +219,7 @@ batchGet<T>(payload: BatchGetInput): DynamoDBBatchGetItemRequest
 
 The following example retrieves multiple items from a DynamoDB table in a single request/
 
-```
+```js
 import * as ddb from '@aws-appsync/utils/dynamodb';
 
 export const onPublish = {
@@ -262,7 +262,7 @@ batchPut<T>(payload: BatchPutInput): DynamoDBBatchPutItemRequest
 
 The following example writes multiple items to a DynamoDB table in a single request.
 
-```
+```js
 import * as ddb from '@aws-appsync/utils/dynamodb';
 
 export const onPublish = {
@@ -296,7 +296,7 @@ batchDelete(payload: BatchDeleteInput): DynamoDBBatchDeleteItemRequest
 
 The following example deletes multiple items from a DynamoDB table in a single request.
 
-```
+```js
 import * as ddb from '@aws-appsync/utils/dynamodb';
 
 export const onPublish = {
@@ -327,7 +327,7 @@ transactGet(payload: TransactGetInput): DynamoDBTransactGetItemsRequest
 
 The following example retrieves multiple items in a single atomic transaction.
 
-```
+```js
 import * as ddb from '@aws-appsync/utils/dynamodb';
 
 export const onPublish = {
@@ -365,7 +365,7 @@ transactWrite(payload: TransactWriteInput): DynamoDBTransactWriteItemsRequest
 
 The following example performs multiple write operations in a single atomic transaction.
 
-```
+```js
 import * as ddb from '@aws-appsync/utils/dynamodb';
 
 export const onPublish = {
@@ -455,7 +455,7 @@ You can use the following operators to create filters and conditions.
 
 You can combine these operators with `and`, `or`, and `not`.
 
-```
+```js
 const condition = {
   and: [
     { name: { eq: 'John Doe' }},
@@ -528,7 +528,7 @@ export function response(ctx) {
 
  **`Type GetInput<T>`**
 
-```
+```TypeScript
 GetInput<T>: {
     consistentRead?: boolean;
     key: DynamoDBKey<T>;
@@ -544,7 +544,7 @@ GetInput<T>: {
 
 **`Type PutInput<T>`**
 
-```
+```TypeScript
 PutInput<T>: {
     _version?: number;
     condition?: DynamoDBFilterObject<T> | null;
@@ -574,7 +574,7 @@ PutInput<T>: {
 
 **`Type QueryInput<T>`**
 
-```
+```TypeScript
 QueryInput<T>: ScanInput<T> & {
     query: DynamoDBKeyCondition<Required<T>>;
 }
@@ -588,7 +588,7 @@ QueryInput<T>: ScanInput<T> & {
 
   Take the `User` type below:
 
-  ```
+  ```TypeScript
   type User = {
     id: string;
     name: string;
@@ -600,7 +600,7 @@ QueryInput<T>: ScanInput<T> & {
 
   The query can only include the following fields: `id`, `name`, and `age`:
 
-  ```
+  ```TypeScript
   const query: QueryInput<User> = {
       name: { eq: 'John' },
       age: { gt: 20 },
@@ -609,7 +609,7 @@ QueryInput<T>: ScanInput<T> & {
 
 **`Type RemoveInput<T>`**
 
-```
+```TypeScript
 RemoveInput<T>: {
     _version?: number;
     condition?: DynamoDBFilterObject<T>;
@@ -628,7 +628,7 @@ RemoveInput<T>: {
 
   The following example is a `DeleteItem` expression containing a condition that allows the operation succeed only if the owner of the document matches the user making the request.
 
-  ```
+  ```TypeScript
   type Task = {
     id: string;
     title: string;
@@ -658,7 +658,7 @@ RemoveInput<T>: {
 
   If a `User` only has the hash key with a user `id`, then the key would look like this:
 
-  ```
+  ```TypeScript
   type User = {
   	id: number
   	name: string
@@ -672,7 +672,7 @@ RemoveInput<T>: {
 
   If the table user has a hash key (`id`) and sort key (`name`), then the key would look like this:
 
-  ```
+  ```TypeScript
   type User = {
   	id: number
   	name: string
@@ -692,7 +692,7 @@ RemoveInput<T>: {
 
 **`Type ScanInput<T>`**
 
-```
+```TypeScript
 ScanInput<T>: {
     consistentRead?: boolean | null;
     filter?: DynamoDBFilterObject<T> | null;
@@ -741,7 +741,7 @@ ScanInput<T>: {
 
 **`Type DynamoDBSyncInput<T>`**
 
-```
+```TypeScript
 DynamoDBSyncInput<T>: {
     basePartitionKey?: string;
     deltaIndexName?: string;
@@ -771,7 +771,7 @@ DynamoDBSyncInput<T>: {
 
 **`Type DynamoDBUpdateInput<T>`**
 
-```
+```TypeScript
 DynamoDBUpdateInput<T>: {
     _version?: number;
     condition?: DynamoDBFilterObject<T>;
@@ -804,7 +804,7 @@ DynamoDBUpdateInput<T>: {
 
 Amazon RDS module functions provide an enhanced experience when interacting with databases configured with the Amazon RDS Data API. The module is imported using `@aws-appsync/utils/rds`:
 
-```
+```TypeScript
 import * as rds from '@aws-appsync/utils/rds';
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-servicecatalog-acceptedportfolioshare-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ServiceCatalog::AcceptedPortfolioShare",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-servicecatalog-acceptedportfolioshare-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ServiceCatalog::AcceptedPortfolioShare
 Properties:
   [AcceptLanguage](#cfn-servicecatalog-acceptedportfolioshare-acceptlanguage): {{String}}

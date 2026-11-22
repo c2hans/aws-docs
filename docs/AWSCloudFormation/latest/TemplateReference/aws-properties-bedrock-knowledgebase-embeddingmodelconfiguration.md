@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-knowledgebase-embeddingmodelconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BedrockEmbeddingModelConfiguration](#cfn-bedrock-knowledgebase-embeddingmodelconfiguration-bedrockembeddingmodelconfiguration)" : {{BedrockEmbeddingModelConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-knowledgebase-embeddingmodelconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BedrockEmbeddingModelConfiguration](#cfn-bedrock-knowledgebase-embeddingmodelconfiguration-bedrockembeddingmodelconfiguration): {{
     BedrockEmbeddingModelConfiguration}}
 ```

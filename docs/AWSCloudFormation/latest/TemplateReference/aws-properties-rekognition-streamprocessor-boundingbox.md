@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rekognition-streamprocessor-boundingbox-syntax.json"></a>
 
-```
+```json
 {
   "[Height](#cfn-rekognition-streamprocessor-boundingbox-height)" : {{Number}},
   "[Left](#cfn-rekognition-streamprocessor-boundingbox-left)" : {{Number}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rekognition-streamprocessor-boundingbox-syntax.yaml"></a>
 
-```
+```yaml
   [Height](#cfn-rekognition-streamprocessor-boundingbox-height): {{Number}}
   [Left](#cfn-rekognition-streamprocessor-boundingbox-left): {{Number}}
   [Top](#cfn-rekognition-streamprocessor-boundingbox-top): {{Number}}

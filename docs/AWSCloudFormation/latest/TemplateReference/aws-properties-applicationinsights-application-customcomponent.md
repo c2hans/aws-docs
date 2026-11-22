@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationinsights-application-customcomponent-syntax.json"></a>
 
-```
+```json
 {
   "[ComponentName](#cfn-applicationinsights-application-customcomponent-componentname)" : {{String}},
   "[ResourceList](#cfn-applicationinsights-application-customcomponent-resourcelist)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationinsights-application-customcomponent-syntax.yaml"></a>
 
-```
+```yaml
   [ComponentName](#cfn-applicationinsights-application-customcomponent-componentname): {{String}}
   [ResourceList](#cfn-applicationinsights-application-customcomponent-resourcelist): {{
     - String}}

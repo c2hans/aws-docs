@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-corsrule-syntax.json"></a>
 
-```
+```json
 {
   "[AllowedHeaders](#cfn-s3-bucket-corsrule-allowedheaders)" : {{[ String, ... ]}},
   "[AllowedMethods](#cfn-s3-bucket-corsrule-allowedmethods)" : {{[ String, ... ]}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-corsrule-syntax.yaml"></a>
 
-```
+```yaml
   [AllowedHeaders](#cfn-s3-bucket-corsrule-allowedheaders): {{
     - String}}
   [AllowedMethods](#cfn-s3-bucket-corsrule-allowedmethods): {{
@@ -97,7 +97,7 @@ The following example template shows a public S3 bucket with two cross-origin re
 #### JSON
 <a name="aws-properties-s3-bucket-corsrule--examples--Enable_cross-origin_resource_sharing--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -161,7 +161,7 @@ The following example template shows a public S3 bucket with two cross-origin re
 #### YAML
 <a name="aws-properties-s3-bucket-corsrule--examples--Enable_cross-origin_resource_sharing--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   S3Bucket:

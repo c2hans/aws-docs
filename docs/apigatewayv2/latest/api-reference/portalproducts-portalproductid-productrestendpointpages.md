@@ -77,7 +77,7 @@ Creates a product REST endpoint page for a portal product.
 #### POST schema
 <a name="portalproducts-portalproductid-productrestendpointpages-request-body-post-example"></a>
 
-```
+```json
 {
   "displayContent": {
     "none": {
@@ -106,7 +106,7 @@ Creates a product REST endpoint page for a portal product.
 #### ListProductRestEndpointPagesResponseContent schema
 <a name="portalproducts-portalproductid-productrestendpointpages-response-body-listproductrestendpointpagesresponsecontent-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "items": [
@@ -138,7 +138,7 @@ Creates a product REST endpoint page for a portal product.
 #### CreateProductRestEndpointPageResponseContent schema
 <a name="portalproducts-portalproductid-productrestendpointpages-response-body-createproductrestendpointpageresponsecontent-example"></a>
 
-```
+```json
 {
   "displayContent": {
     "endpoint": "string",
@@ -168,7 +168,7 @@ Creates a product REST endpoint page for a portal product.
 #### BadRequestExceptionResponseContent schema
 <a name="portalproducts-portalproductid-productrestendpointpages-response-body-badrequestexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -177,7 +177,7 @@ Creates a product REST endpoint page for a portal product.
 #### AccessDeniedExceptionResponseContent schema
 <a name="portalproducts-portalproductid-productrestendpointpages-response-body-accessdeniedexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -186,7 +186,7 @@ Creates a product REST endpoint page for a portal product.
 #### NotFoundExceptionResponseContent schema
 <a name="portalproducts-portalproductid-productrestendpointpages-response-body-notfoundexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -196,7 +196,7 @@ Creates a product REST endpoint page for a portal product.
 #### LimitExceededExceptionResponseContent schema
 <a name="portalproducts-portalproductid-productrestendpointpages-response-body-limitexceededexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

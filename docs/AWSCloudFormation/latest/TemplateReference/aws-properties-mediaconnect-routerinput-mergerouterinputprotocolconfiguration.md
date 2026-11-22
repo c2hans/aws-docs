@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-routerinput-mergerouterinputprotocolconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Rist](#cfn-mediaconnect-routerinput-mergerouterinputprotocolconfiguration-rist)" : {{RistRouterInputConfiguration}},
   "[Rtp](#cfn-mediaconnect-routerinput-mergerouterinputprotocolconfiguration-rtp)" : {{RtpRouterInputConfiguration}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-routerinput-mergerouterinputprotocolconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Rist](#cfn-mediaconnect-routerinput-mergerouterinputprotocolconfiguration-rist): {{
     RistRouterInputConfiguration}}
   [Rtp](#cfn-mediaconnect-routerinput-mergerouterinputprotocolconfiguration-rtp): {{

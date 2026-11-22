@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kafkaconnect-connector-workerconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Revision](#cfn-kafkaconnect-connector-workerconfiguration-revision)" : {{Integer}},
   "[WorkerConfigurationArn](#cfn-kafkaconnect-connector-workerconfiguration-workerconfigurationarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kafkaconnect-connector-workerconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Revision](#cfn-kafkaconnect-connector-workerconfiguration-revision): {{Integer}}
   [WorkerConfigurationArn](#cfn-kafkaconnect-connector-workerconfiguration-workerconfigurationarn): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-cluster-podgccontrollerconfig-syntax.json"></a>
 
-```
+```json
 {
   "[TerminatedPodGcThreshold](#cfn-eks-cluster-podgccontrollerconfig-terminatedpodgcthreshold)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-cluster-podgccontrollerconfig-syntax.yaml"></a>
 
-```
+```yaml
   [TerminatedPodGcThreshold](#cfn-eks-cluster-podgccontrollerconfig-terminatedpodgcthreshold): {{Integer}}
 ```
 

@@ -41,7 +41,7 @@ For more information, see [Manage signing certificates](https://docs.aws.amazon.
 **Tools for PowerShell V4**
 **Example 1: This example retrieves details about the signing certificate that is associated with the user named `Bob`.**
 
-```
+```powershell
 Get-IAMSigningCertificate -UserName Bob
 ```
 **Output:**
@@ -73,7 +73,7 @@ UserName        : Bob
 **Tools for PowerShell V5**
 **Example 1: This example retrieves details about the signing certificate that is associated with the user named `Bob`.**
 
-```
+```powershell
 Get-IAMSigningCertificate -UserName Bob
 ```
 **Output:**

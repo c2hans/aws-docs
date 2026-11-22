@@ -51,7 +51,7 @@ When using SSE-KMS with customer managed keys, you have complete control over wh
 
 To use a customer managed KMS key with S3 Vectors, you must update your key policy to include permissions for the S3 Vectors service principal. Here's a comprehensive key policy example.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

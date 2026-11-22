@@ -17,7 +17,7 @@ For example, the following policy shows an example of the minimum required permi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -67,7 +67,7 @@ Here's how the policy is applied: When a user makes a call using Data API, the r
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

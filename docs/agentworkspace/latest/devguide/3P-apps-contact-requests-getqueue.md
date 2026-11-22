@@ -9,7 +9,7 @@ Returns the queue associated with the contact in the Connect Customer agent work
 + `queueARN`: The ARN of the queue.
 + `queueId`: Alias for `queueARN`.
 
-```
+```typescript
 async getQueue(contactId: string): Promise<Queue>
 ```
 
@@ -19,6 +19,6 @@ Requires an instance that is scoped to the contact that you pass in `contactId`,
 
  **Permissions required:**
 
-```
+```typescript
 Contact.Details.View
 ```

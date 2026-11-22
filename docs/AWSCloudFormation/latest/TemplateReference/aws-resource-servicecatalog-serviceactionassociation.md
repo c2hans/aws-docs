@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-servicecatalog-serviceactionassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ServiceCatalog::ServiceActionAssociation",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-servicecatalog-serviceactionassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ServiceCatalog::ServiceActionAssociation
 Properties:
   [ProductId](#cfn-servicecatalog-serviceactionassociation-productid): {{String}}

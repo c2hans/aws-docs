@@ -55,7 +55,7 @@ You can use the following policy to deny a user access to change an existing cus
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

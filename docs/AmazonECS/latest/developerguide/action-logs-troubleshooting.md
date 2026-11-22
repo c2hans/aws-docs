@@ -36,7 +36,7 @@ Filter for `ERROR` logs where `eventName` contains `DEPLOYMENT`. Check the `deta
 
 The following example shows a deployment failure where no rollback candidate was available:
 
-```
+```json
 {
   "resourceArn": "arn:aws:ecs:us-east-1:111122223333:cluster/my-cluster",
   "actionSourceId": "service/my-cluster/my-service",
@@ -75,7 +75,7 @@ Filter logs by the daemon ARN to find events related to your daemon. You can als
 
 The following example shows a daemon task that failed to start due to insufficient memory on the target instance:
 
-```
+```json
 {
   "timestamp": 1719500050000,
   "logLevel": "WARN",

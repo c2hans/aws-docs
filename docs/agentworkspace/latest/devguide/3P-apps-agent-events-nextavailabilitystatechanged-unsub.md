@@ -8,12 +8,12 @@ Unsubscribes the callback function from the agent next availability state change
 
  **Signature**
 
-```
+```typescript
 offNextAvailabilityStateChanged(handler: NextAvailabilityStateChangedHandler)
 ```
 
  **Usage**
 
-```
+```typescript
 agentClient.offNextAvailabilityStateChanged(handler);
 ```

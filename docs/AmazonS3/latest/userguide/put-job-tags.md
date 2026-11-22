@@ -34,7 +34,7 @@ Instead, to delete existing tags for your Batch Operations job, we recommend usi
 
 1. Run the following `put-job-tagging` command with the required parameters:
 
-   ```
+   ```bash
    aws \
        s3control put-job-tagging \
        --account-id {{123456789012}} \

@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-secretsmanager-secret-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SecretsManager::Secret",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-secretsmanager-secret-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SecretsManager::Secret
 Properties:
   [Description](#cfn-secretsmanager-secret-description): {{String}}
@@ -178,7 +178,7 @@ The following example creates a secret, constructing the secret value from a str
 #### JSON
 <a name="aws-resource-secretsmanager-secret--examples--Creating_a_secret_with_a_dynamically_generated_password--json"></a>
 
-```
+```json
 {
   "MySecretA": {
     "Type": "AWS::SecretsManager::Secret",
@@ -205,7 +205,7 @@ The following example creates a secret, constructing the secret value from a str
 #### YAML
 <a name="aws-resource-secretsmanager-secret--examples--Creating_a_secret_with_a_dynamically_generated_password--yaml"></a>
 
-```
+```yaml
 #This is a Secret resource with a randomly generated password in its SecretString JSON.
 MySecretA:
   Type: 'AWS::SecretsManager::Secret'
@@ -231,7 +231,7 @@ The following example creates a secret and provides the secret value as a litera
 #### JSON
 <a name="aws-resource-secretsmanager-secret--examples--Creating_a_secret_with_a_hardcoded_password--json"></a>
 
-```
+```json
 {
   "MySecretB": {
     "Type": "AWS::SecretsManager::Secret",
@@ -253,7 +253,7 @@ The following example creates a secret and provides the secret value as a litera
 #### YAML
 <a name="aws-resource-secretsmanager-secret--examples--Creating_a_secret_with_a_hardcoded_password--yaml"></a>
 
-```
+```yaml
   # This is another secret that has its password hardcoded into the template (NOT RECOMMENDED)
   MySecretB:
     Type: 'AWS::SecretsManager::Secret'
@@ -275,7 +275,7 @@ The following example replicates a primary secret to `us-east-1` and `us-east-2`
 #### JSON
 <a name="aws-resource-secretsmanager-secret--examples--Replicating_a_secret--json"></a>
 
-```
+```json
 {
    "MyReplicatedSecret":{
       "Type":"AWS::SecretsManager::Secret",
@@ -300,7 +300,7 @@ The following example replicates a primary secret to `us-east-1` and `us-east-2`
 #### YAML
 <a name="aws-resource-secretsmanager-secret--examples--Replicating_a_secret--yaml"></a>
 
-```
+```yaml
 #This is a Secret resource which is replicated to two other regions.
 MyReplicatedSecret:
   Type: AWS::SecretsManager::Secret

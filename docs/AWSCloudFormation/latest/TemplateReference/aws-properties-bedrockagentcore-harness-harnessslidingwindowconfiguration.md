@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-harness-harnessslidingwindowconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MessagesCount](#cfn-bedrockagentcore-harness-harnessslidingwindowconfiguration-messagescount)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-harness-harnessslidingwindowconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MessagesCount](#cfn-bedrockagentcore-harness-harnessslidingwindowconfiguration-messagescount): {{Integer}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lambda-webfunctionendpoint-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lambda::WebFunctionEndpoint",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lambda-webfunctionendpoint-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lambda::WebFunctionEndpoint
 Properties:
   [AuthType](#cfn-lambda-webfunctionendpoint-authtype): {{String}}
@@ -195,7 +195,7 @@ Create an endpoint that routes all traffic to one revision of the web function `
 #### JSON
 <a name="aws-resource-lambda-webfunctionendpoint--examples--Web_function_endpoint--json"></a>
 
-```
+```json
 "MyEndpoint": {
     "Type": "AWS::Lambda::WebFunctionEndpoint",
     "Properties": {
@@ -221,7 +221,7 @@ Create an endpoint that routes all traffic to one revision of the web function `
 #### YAML
 <a name="aws-resource-lambda-webfunctionendpoint--examples--Web_function_endpoint--yaml"></a>
 
-```
+```yaml
 MyEndpoint:
   Type: AWS::Lambda::WebFunctionEndpoint
   Properties:

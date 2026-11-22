@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-computeoptimizer-automationrule-organizationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AccountIds](#cfn-computeoptimizer-automationrule-organizationconfiguration-accountids)" : {{[ String, ... ]}},
   "[RuleApplyOrder](#cfn-computeoptimizer-automationrule-organizationconfiguration-ruleapplyorder)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-computeoptimizer-automationrule-organizationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AccountIds](#cfn-computeoptimizer-automationrule-organizationconfiguration-accountids): {{
     - String}}
   [RuleApplyOrder](#cfn-computeoptimizer-automationrule-organizationconfiguration-ruleapplyorder): {{String}}

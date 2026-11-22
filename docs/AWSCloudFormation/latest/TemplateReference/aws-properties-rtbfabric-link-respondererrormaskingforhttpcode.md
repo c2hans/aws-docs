@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rtbfabric-link-respondererrormaskingforhttpcode-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-rtbfabric-link-respondererrormaskingforhttpcode-action)" : {{String}},
   "[HttpCode](#cfn-rtbfabric-link-respondererrormaskingforhttpcode-httpcode)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rtbfabric-link-respondererrormaskingforhttpcode-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-rtbfabric-link-respondererrormaskingforhttpcode-action): {{String}}
   [HttpCode](#cfn-rtbfabric-link-respondererrormaskingforhttpcode-httpcode): {{String}}
   [LoggingTypes](#cfn-rtbfabric-link-respondererrormaskingforhttpcode-loggingtypes): {{

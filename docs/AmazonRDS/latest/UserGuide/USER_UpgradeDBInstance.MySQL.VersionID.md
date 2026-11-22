@@ -18,6 +18,12 @@ The patch is the fourth part of the version number, for example, the R2 in 8.0.3
 **YYYYMMDD**
 The date is the fifth part of the version number, for example, the 20231201 in 8.0.33.R2.20231201. An RDS date version is a security patch that includes important security fixes added to a minor version after its release. It doesn't include any fixes that might change an engine's behavior.
 
+The following table explains the naming scheme for RDS for MySQL version 9.7.
+
+| 9.7 minor version | Naming scheme |
+| --- | --- |
+| ≥ 4 | DB instances use *major.minor.patch.YYMMDD*, for example, 9.7.4.R2.20261118. |
+
 The following table explains the naming scheme for RDS for MySQL version 8.4.
 
 | 8.4 minor version | Naming scheme |

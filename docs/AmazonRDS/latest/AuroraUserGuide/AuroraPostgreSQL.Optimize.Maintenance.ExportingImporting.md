@@ -9,7 +9,7 @@ You can export your managed plans and import them into another DB instance.
 **To export managed plans**
 An authorized user can copy any subset of the `apg_plan_mgmt.plans` table to another table, and then save it using the `pg_dump` command. The following is an example.
 
-```
+```sql
 CREATE TABLE plans_copy AS SELECT *
 FROM apg_plan_mgmt.plans [ WHERE predicates ] ;
 ```
@@ -18,7 +18,7 @@ FROM apg_plan_mgmt.plans [ WHERE predicates ] ;
 % pg_dump --table apg_plan_mgmt.plans_copy -Ft mysourcedatabase > plans_copy.tar
 ```
 
-```
+```sql
 DROP TABLE apg_plan_mgmt.plans_copy;
 ```
 
@@ -36,7 +36,7 @@ DROP TABLE apg_plan_mgmt.plans_copy;
 **Note**
 In some cases, you might dump from one version of the `apg_plan_mgmt` extension and restore into a different version. In these cases, the columns in the plans table might be different. If so, name the columns explicitly instead of using SELECT \*.
 
-   ```
+   ```sql
    INSERT INTO apg_plan_mgmt.plans SELECT * FROM plans_copy
     ON CONFLICT ON CONSTRAINT plans_pkey
     DO UPDATE SET
@@ -58,7 +58,7 @@ In some cases, you might dump from one version of the `apg_plan_mgmt` extension 
 
 1. Reload the managed plans into shared memory and remove the temporary plans table.
 
-   ```
+   ```sql
    SELECT apg_plan_mgmt.reload(); -- refresh shared memory
    DROP TABLE plans_copy;
    ```

@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskset-capacityproviderstrategyitem-syntax.json"></a>
 
-```
+```json
 {
   "[Base](#cfn-ecs-taskset-capacityproviderstrategyitem-base)" : {{Integer}},
   "[CapacityProvider](#cfn-ecs-taskset-capacityproviderstrategyitem-capacityprovider)" : {{String}},
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskset-capacityproviderstrategyitem-syntax.yaml"></a>
 
-```
+```yaml
   [Base](#cfn-ecs-taskset-capacityproviderstrategyitem-base): {{Integer}}
   [CapacityProvider](#cfn-ecs-taskset-capacityproviderstrategyitem-capacityprovider): {{String}}
   [Weight](#cfn-ecs-taskset-capacityproviderstrategyitem-weight): {{Integer}}

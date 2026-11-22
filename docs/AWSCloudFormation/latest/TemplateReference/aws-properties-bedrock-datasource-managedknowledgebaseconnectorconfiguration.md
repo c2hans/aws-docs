@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-datasource-managedknowledgebaseconnectorconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ConnectorParameters](#cfn-bedrock-datasource-managedknowledgebaseconnectorconfiguration-connectorparameters)" : {{Json}},
   "[DeletionProtectionConfiguration](#cfn-bedrock-datasource-managedknowledgebaseconnectorconfiguration-deletionprotectionconfiguration)" : {{DeletionProtectionConfiguration}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-datasource-managedknowledgebaseconnectorconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ConnectorParameters](#cfn-bedrock-datasource-managedknowledgebaseconnectorconfiguration-connectorparameters): {{Json}}
   [DeletionProtectionConfiguration](#cfn-bedrock-datasource-managedknowledgebaseconnectorconfiguration-deletionprotectionconfiguration): {{
     DeletionProtectionConfiguration}}

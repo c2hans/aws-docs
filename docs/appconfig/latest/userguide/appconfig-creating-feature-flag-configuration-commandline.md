@@ -37,7 +37,7 @@ The following procedure describes how to use the AWS Command Line Interface (on 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    New-APPCConfigurationProfile `
      -Name {{CONFIGURATION_PROFILE_NAME}} `
      -ApplicationId {{APPLICATION_ID}} `
@@ -78,7 +78,7 @@ The following procedure describes how to use the AWS Command Line Interface (on 
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    New-APPCHostedConfigurationVersion `
      -ApplicationId {{APPLICATION_ID}} `
      -ConfigurationProfileId {{CONFIGURATION_PROFILE_ID}} `

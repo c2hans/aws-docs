@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-dashboardvisualpublishoptions-syntax.json"></a>
 
-```
+```json
 {
   "[ExportHiddenFieldsOption](#cfn-quicksight-dashboard-dashboardvisualpublishoptions-exporthiddenfieldsoption)" : {{ExportHiddenFieldsOption}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-dashboardvisualpublishoptions-syntax.yaml"></a>
 
-```
+```yaml
   [ExportHiddenFieldsOption](#cfn-quicksight-dashboard-dashboardvisualpublishoptions-exporthiddenfieldsoption): {{
     ExportHiddenFieldsOption}}
 ```

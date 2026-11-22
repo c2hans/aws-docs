@@ -127,7 +127,7 @@ By default, we send Fluent Bit application logs and Kubernetes metadata to Cloud
 
 To stop Fluent Bit application logs, remove the following section from the `Fluent Bit configuration` file.
 
-```
+```yaml
 [INPUT]
   Name                tail
   Tag                 application.*

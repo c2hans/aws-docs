@@ -138,7 +138,7 @@ The first stage of the pipeline is a source stage in which you specify the locat
 
 The source code is located in an S3 bucket and is identified by its file name. You specified these values as input parameter values when you created the pipeline stack. To allow using the source artifact in subsequent stages, the snippet specifies the `OutputArtifacts` property, with the name `TemplateSource`. To use this artifact in later stages, you specify `TemplateSource` as an input artifact.
 
-```
+```yaml
 - Name: S3Source
   Actions:
     - Name: TemplateSource
@@ -165,7 +165,7 @@ The `ApproveTestStack` action pauses the pipeline and sends a notification to th
 
 After you approve this action, CodePipeline moves to the `DeleteTestStack` action and deletes the test WordPress stack and its resources.
 
-```
+```yaml
 - Name: TestStage
   Actions:
     - Name: CreateStack
@@ -217,7 +217,7 @@ Similar to the previous stage, the `ApproveChangeSet` action pauses the pipeline
 
 After you approve this action, the `ExecuteChangeSet` action executes the changes set, so that AWS CloudFormation performs all of the actions described in the change set. For the initial run, AWS CloudFormation creates the WordPress production stack. On subsequent runs, AWS CloudFormation updates the stack.
 
-```
+```yaml
 - Name: ProdStage
   Actions:
     - Name: CreateChangeSet

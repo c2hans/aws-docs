@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datasync-task-manifestconfigsources3-syntax.json"></a>
 
-```
+```json
 {
   "[BucketAccessRoleArn](#cfn-datasync-task-manifestconfigsources3-bucketaccessrolearn)" : {{String}},
   "[ManifestObjectPath](#cfn-datasync-task-manifestconfigsources3-manifestobjectpath)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datasync-task-manifestconfigsources3-syntax.yaml"></a>
 
-```
+```yaml
   [BucketAccessRoleArn](#cfn-datasync-task-manifestconfigsources3-bucketaccessrolearn): {{String}}
   [ManifestObjectPath](#cfn-datasync-task-manifestconfigsources3-manifestobjectpath): {{String}}
   [ManifestObjectVersionId](#cfn-datasync-task-manifestconfigsources3-manifestobjectversionid): {{String}}

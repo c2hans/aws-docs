@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkmanager-corenetwork-corenetworkedge-syntax.json"></a>
 
-```
+```json
 {
   "[Asn](#cfn-networkmanager-corenetwork-corenetworkedge-asn)" : {{Number}},
   "[EdgeLocation](#cfn-networkmanager-corenetwork-corenetworkedge-edgelocation)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkmanager-corenetwork-corenetworkedge-syntax.yaml"></a>
 
-```
+```yaml
   [Asn](#cfn-networkmanager-corenetwork-corenetworkedge-asn): {{Number}}
   [EdgeLocation](#cfn-networkmanager-corenetwork-corenetworkedge-edgelocation): {{String}}
   [InsideCidrBlocks](#cfn-networkmanager-corenetwork-corenetworkedge-insidecidrblocks): {{

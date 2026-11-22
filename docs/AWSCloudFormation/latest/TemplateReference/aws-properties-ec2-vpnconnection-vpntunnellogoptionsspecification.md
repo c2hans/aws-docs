@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-vpnconnection-vpntunnellogoptionsspecification-syntax.json"></a>
 
-```
+```json
 {
   "[CloudwatchLogOptions](#cfn-ec2-vpnconnection-vpntunnellogoptionsspecification-cloudwatchlogoptions)" : {{CloudwatchLogOptionsSpecification}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-vpnconnection-vpntunnellogoptionsspecification-syntax.yaml"></a>
 
-```
+```yaml
   [CloudwatchLogOptions](#cfn-ec2-vpnconnection-vpntunnellogoptionsspecification-cloudwatchlogoptions): {{
     CloudwatchLogOptionsSpecification}}
 ```

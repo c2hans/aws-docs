@@ -73,7 +73,7 @@ To configure AWS Backup Vault Lock, use the API `[PutBackupVaultLockConfiguratio
 
 Here is a CLI example of a compliance mode vault lock creation:
 
-```
+```sh
 aws backup put-backup-vault-lock-configuration \
         --backup-vault-name {{my_vault_to_lock}} \
         --changeable-for-days {{3}} \
@@ -83,7 +83,7 @@ aws backup put-backup-vault-lock-configuration \
 
 Here is a CLI example of a governance mode vault lock creation:
 
-```
+```sh
 aws backup put-backup-vault-lock-configuration \
         --backup-vault-name {{my_vault_to_lock}} \
         --min-retention-days {{7}} \
@@ -127,7 +127,7 @@ You can review AWS Backup Vault Lock details on a vault anytime by calling `[Des
 
 To determine whether you applied a vault lock to a backup vault, call `DescribeBackupVault` and check the `Locked` property. If `"Locked": true`, like the following example, you have applied AWS Backup Vault Lock to your backup vault.
 
-```
+```JSON
 {
     "BackupVaultName": "my_vault_to_lock",
     "BackupVaultArn": "arn:aws:backup:us-east-1:555500000000:backup-vault:my_vault_to_lock",
@@ -150,7 +150,7 @@ The preceding output confirms the following options:
 
 If `"Locked":false`, like the following example, you have not applied a vault lock (or a previous one has been deleted).
 
-```
+```JSON
 {
     "BackupVaultName": "my_vault_to_lock",
     "BackupVaultArn": "arn:aws:backup:us-east-1:555500000000:backup-vault:my_vault_to_lock",
@@ -181,7 +181,7 @@ After the steps have all been completed successfully, a Success banner will appe
 
 To delete your vault lock during grace time using a CLI command, use `[DeleteBackupVaultLockConfiguration](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DeleteBackupVaultLockConfiguration.html)` like this CLI example:
 
-```
+```sh
 aws backup delete-backup-vault-lock-configuration \
           --backup-vault-name {{my_vault_to_lock}}
 ```

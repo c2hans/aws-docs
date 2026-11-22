@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-datetimedefaultvalues-syntax.json"></a>
 
-```
+```json
 {
   "[DynamicValue](#cfn-quicksight-analysis-datetimedefaultvalues-dynamicvalue)" : {{DynamicDefaultValue}},
   "[RollingDate](#cfn-quicksight-analysis-datetimedefaultvalues-rollingdate)" : {{RollingDateConfiguration}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-datetimedefaultvalues-syntax.yaml"></a>
 
-```
+```yaml
   [DynamicValue](#cfn-quicksight-analysis-datetimedefaultvalues-dynamicvalue): {{
     DynamicDefaultValue}}
   [RollingDate](#cfn-quicksight-analysis-datetimedefaultvalues-rollingdate): {{

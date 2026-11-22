@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-appsync-resolver-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppSync::Resolver",
   "Properties" : {
@@ -48,7 +48,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-appsync-resolver-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppSync::Resolver
 Properties:
   [ApiId](#cfn-appsync-resolver-apiid): {{String}}
@@ -233,7 +233,7 @@ The following example creates a resolver and associates it with an existing Grap
 #### YAML
 <a name="aws-resource-appsync-resolver--examples--Resolver_Creation_Example--yaml"></a>
 
-```
+```yaml
 Parameters:
   graphQlApiId:
     Type: String
@@ -268,7 +268,7 @@ Resources:
 #### JSON
 <a name="aws-resource-appsync-resolver--examples--Resolver_Creation_Example--json"></a>
 
-```
+```json
 {
   "Parameters": {
     "graphQlApiId": {

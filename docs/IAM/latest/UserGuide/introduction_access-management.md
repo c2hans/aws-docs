@@ -21,7 +21,7 @@ IAM users are identities in the AWS account. When you create an IAM user, they c
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {

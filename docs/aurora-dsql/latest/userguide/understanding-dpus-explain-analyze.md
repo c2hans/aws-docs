@@ -25,7 +25,7 @@ The following examples show how to interpret the statement-level DPU estimates i
 ### Example 1: SELECT Query
 <a name="select-query-example"></a>
 
-```
+```sql
 EXPLAIN ANALYZE VERBOSE SELECT * FROM test_table;
 ```
 
@@ -52,7 +52,7 @@ In this example, the SELECT statement performs an index-only scan, so most of th
 ### Example 2: INSERT Query
 <a name="insert-query-example"></a>
 
-```
+```sql
 EXPLAIN ANALYZE VERBOSE INSERT INTO test_table VALUES (1, 'name1'), (2, 'name2'), (3, 'name3');
 ```
 

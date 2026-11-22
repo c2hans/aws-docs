@@ -42,7 +42,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 The following example shows a CloudTrail log entry that demonstrates the `CreateFileSystem` action:
 
-```
+```JSON
 {
     "eventVersion": "1.11",
     "userIdentity": {
@@ -117,7 +117,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Create
 
 The following example shows a CloudTrail log entry for the `CreateMountTarget` action:
 
-```
+```JSON
 {
     "eventVersion": "1.11",
     "userIdentity": {

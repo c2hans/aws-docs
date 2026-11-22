@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-macie-customdataidentifier-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Macie::CustomDataIdentifier",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-macie-customdataidentifier-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Macie::CustomDataIdentifier
 Properties:
   [Description](#cfn-macie-customdataidentifier-description): {{String}}
@@ -143,7 +143,7 @@ This example creates a custom data identifier that detects six-digit character s
 #### JSON
 <a name="aws-resource-macie-customdataidentifier--examples--Creating_a_custom_data_identifier--json"></a>
 
-```
+```json
 {
     "Type": "AWS::Macie::CustomDataIdentifier",
     "DependsOn": "Session",
@@ -173,7 +173,7 @@ This example creates a custom data identifier that detects six-digit character s
 #### YAML
 <a name="aws-resource-macie-customdataidentifier--examples--Creating_a_custom_data_identifier--yaml"></a>
 
-```
+```yaml
 Type: 'AWS::Macie::CustomDataIdentifier'
 DependsOn: Session
 Properties:

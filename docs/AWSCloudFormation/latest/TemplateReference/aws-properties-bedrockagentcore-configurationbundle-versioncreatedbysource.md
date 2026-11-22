@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-configurationbundle-versioncreatedbysource-syntax.json"></a>
 
-```
+```json
 {
   "[Arn](#cfn-bedrockagentcore-configurationbundle-versioncreatedbysource-arn)" : {{String}},
   "[Name](#cfn-bedrockagentcore-configurationbundle-versioncreatedbysource-name)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-configurationbundle-versioncreatedbysource-syntax.yaml"></a>
 
-```
+```yaml
   [Arn](#cfn-bedrockagentcore-configurationbundle-versioncreatedbysource-arn): {{String}}
   [Name](#cfn-bedrockagentcore-configurationbundle-versioncreatedbysource-name): {{String}}
 ```

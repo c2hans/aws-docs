@@ -92,7 +92,7 @@ To include Local Zones when using the Amazon EC2 console, your account must have
 
 1. (Optional) To generate all of the possible parameters that can be specified for the Spot placement score configuration, use the [get-spot-placement-scores](https://docs.aws.amazon.com/cli/latest/reference/ec2/get-spot-placement-scores.html) command and the `--generate-cli-skeleton` parameter.
 
-   ```
+   ```bash
    aws ec2 get-spot-placement-scores \
        --region {{us-east-1}} \
        --generate-cli-skeleton
@@ -100,7 +100,7 @@ To include Local Zones when using the Amazon EC2 console, your account must have
 
    The following is example output.
 
-   ```
+   ```JSON
    {
        "InstanceTypes": [
            ""
@@ -215,7 +215,7 @@ To include Local Zones when using the Amazon EC2 console, your account must have
 
 1. To get the Spot placement score for the requirements that you specified in the JSON file, use the [get-spot-placement-scores](https://docs.aws.amazon.com/cli/latest/reference/ec2/get-spot-placement-scores.html) command, and specify the name and path to your JSON file by using the `--cli-input-json` parameter.
 
-   ```
+   ```bash
    aws ec2 get-spot-placement-scores \
        --region {{us-east-1}} \
        --cli-input-json file://{{file_name}}.json
@@ -223,7 +223,7 @@ To include Local Zones when using the Amazon EC2 console, your account must have
 
    Example output if `SingleAvailabilityZone` is set to `false` or omitted (if omitted, it defaults to `false`) – a scored list of Regions is returned.
 
-   ```
+   ```json
    "SpotPlacementScores": [
        {
            "Region": "us-east-1",
@@ -238,7 +238,7 @@ To include Local Zones when using the Amazon EC2 console, your account must have
 
    Example output if `SingleAvailabilityZone` is set to `true` – a scored list of Availability Zones and, when `IncludeLocalZones` is `true`, Local Zones is returned.
 
-   ```
+   ```json
    "SpotPlacementScores": [
        {
            "Region": "us-east-1",
@@ -269,7 +269,7 @@ When using the AWS CLI, you can use the following example configurations.
 
 The following example configuration specifies three different instance types and a target Spot capacity of 500 Spot Instances.
 
-```
+```JSON
 {
     "InstanceTypes": [
         "m5.4xlarge",
@@ -285,7 +285,7 @@ The following example configuration specifies three different instance types and
 
 The following example configuration specifies three different instance types and a target Spot capacity of 500,000 MiB of memory, where the number of Spot Instances to launch must provide a total of 500,000 MiB of memory.
 
-```
+```JSON
 {
     "InstanceTypes": [
         "m5.4xlarge",
@@ -302,7 +302,7 @@ The following example configuration specifies three different instance types and
 
 The following example configuration is configured for attribute-based instance type selection, and is followed by a text explanation of the example configuration.
 
-```
+```JSON
 {
     "TargetCapacity": 5000,
     "TargetCapacityUnitType": "vcpu",
@@ -341,7 +341,7 @@ The `TargetCapacityUnitType` parameter specifies the unit for the target capacit
 
 The following example configuration is configured for attribute-based instance type selection. By specifying `"SingleAvailabilityZone": true`, the response will return a list of scored Availability Zones.
 
-```
+```JSON
 {
     "TargetCapacity": 1000,
     "TargetCapacityUnitType": "vcpu",

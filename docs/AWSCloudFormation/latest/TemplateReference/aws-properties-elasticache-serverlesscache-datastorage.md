@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticache-serverlesscache-datastorage-syntax.json"></a>
 
-```
+```json
 {
   "[Maximum](#cfn-elasticache-serverlesscache-datastorage-maximum)" : {{Integer}},
   "[Minimum](#cfn-elasticache-serverlesscache-datastorage-minimum)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticache-serverlesscache-datastorage-syntax.yaml"></a>
 
-```
+```yaml
   [Maximum](#cfn-elasticache-serverlesscache-datastorage-maximum): {{Integer}}
   [Minimum](#cfn-elasticache-serverlesscache-datastorage-minimum): {{Integer}}
   [Unit](#cfn-elasticache-serverlesscache-datastorage-unit): {{String}}

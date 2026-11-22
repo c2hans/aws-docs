@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-flowversion-fieldforreranking-syntax.json"></a>
 
-```
+```json
 {
   "[FieldName](#cfn-bedrock-flowversion-fieldforreranking-fieldname)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-flowversion-fieldforreranking-syntax.yaml"></a>
 
-```
+```yaml
   [FieldName](#cfn-bedrock-flowversion-fieldforreranking-fieldname): {{String}}
 ```
 

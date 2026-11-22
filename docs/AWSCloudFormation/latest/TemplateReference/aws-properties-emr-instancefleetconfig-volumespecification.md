@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emr-instancefleetconfig-volumespecification-syntax.json"></a>
 
-```
+```json
 {
   "[Iops](#cfn-emr-instancefleetconfig-volumespecification-iops)" : {{Integer}},
   "[SizeInGB](#cfn-emr-instancefleetconfig-volumespecification-sizeingb)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emr-instancefleetconfig-volumespecification-syntax.yaml"></a>
 
-```
+```yaml
   [Iops](#cfn-emr-instancefleetconfig-volumespecification-iops): {{Integer}}
   [SizeInGB](#cfn-emr-instancefleetconfig-volumespecification-sizeingb): {{Integer}}
   [Throughput](#cfn-emr-instancefleetconfig-volumespecification-throughput): {{Integer}}

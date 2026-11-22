@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codedeploy-deploymentgroup-greenfleetprovisioningoption-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-codedeploy-deploymentgroup-greenfleetprovisioningoption-action)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codedeploy-deploymentgroup-greenfleetprovisioningoption-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-codedeploy-deploymentgroup-greenfleetprovisioningoption-action): {{String}}
 ```
 

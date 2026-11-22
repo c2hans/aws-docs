@@ -64,7 +64,7 @@ When you create your first table bucket by using the console with the **Enable i
 
 This example shows how to create a table bucket by using the AWS CLI. To use this example, replace the `{{user input placeholders}}` with your own information.
 
-```
+```bash
 aws s3tables create-table-bucket \
     --region {{us-east-2}} \
     --name {{{{amzn-s3-demo-bucket1}}}}
@@ -72,7 +72,7 @@ aws s3tables create-table-bucket \
 
 By default S3 table buckets use SSE-S3 as their default encryption setting, however, you can use the optional `--encryption-configuration` parameter to specify a different encryption type. The following examples shows how to create a bucket that uses SSE-KMS encryption. For more information on encryption settings for table buckets, see [Protecting S3 table data with encryption](s3-tables-encryption.md).
 
-```
+```bash
 aws s3tables create-table-bucket \
     --region {{us-east-2}} \
     --name {{{{amzn-s3-demo-bucket1}}}}

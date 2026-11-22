@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-freeformlayoutcanvassizeoptions-syntax.json"></a>
 
-```
+```json
 {
   "[ScreenCanvasSizeOptions](#cfn-quicksight-dashboard-freeformlayoutcanvassizeoptions-screencanvassizeoptions)" : {{FreeFormLayoutScreenCanvasSizeOptions}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-freeformlayoutcanvassizeoptions-syntax.yaml"></a>
 
-```
+```yaml
   [ScreenCanvasSizeOptions](#cfn-quicksight-dashboard-freeformlayoutcanvassizeoptions-screencanvassizeoptions): {{
     FreeFormLayoutScreenCanvasSizeOptions}}
 ```

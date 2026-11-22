@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkfirewall-firewallpolicy-flowtimeouts-syntax.json"></a>
 
-```
+```json
 {
   "[TcpIdleTimeoutSeconds](#cfn-networkfirewall-firewallpolicy-flowtimeouts-tcpidletimeoutseconds)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkfirewall-firewallpolicy-flowtimeouts-syntax.yaml"></a>
 
-```
+```yaml
   [TcpIdleTimeoutSeconds](#cfn-networkfirewall-firewallpolicy-flowtimeouts-tcpidletimeoutseconds): {{Integer}}
 ```
 

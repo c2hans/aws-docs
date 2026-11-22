@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-b2bi-partnership-x12acknowledgmentoptions-syntax.json"></a>
 
-```
+```json
 {
   "[FunctionalAcknowledgment](#cfn-b2bi-partnership-x12acknowledgmentoptions-functionalacknowledgment)" : {{String}},
   "[TechnicalAcknowledgment](#cfn-b2bi-partnership-x12acknowledgmentoptions-technicalacknowledgment)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-b2bi-partnership-x12acknowledgmentoptions-syntax.yaml"></a>
 
-```
+```yaml
   [FunctionalAcknowledgment](#cfn-b2bi-partnership-x12acknowledgmentoptions-functionalacknowledgment): {{String}}
   [TechnicalAcknowledgment](#cfn-b2bi-partnership-x12acknowledgmentoptions-technicalacknowledgment): {{String}}
 ```

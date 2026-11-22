@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-arcregionswitch-plan-executionblockconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ArcRoutingControlConfig](#cfn-arcregionswitch-plan-executionblockconfiguration-arcroutingcontrolconfig)" : {{ArcRoutingControlConfiguration}},
   "[AuroraProvisionedScalingConfig](#cfn-arcregionswitch-plan-executionblockconfiguration-auroraprovisionedscalingconfig)" : {{AuroraProvisionedScalingConfiguration}},
@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-arcregionswitch-plan-executionblockconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ArcRoutingControlConfig](#cfn-arcregionswitch-plan-executionblockconfiguration-arcroutingcontrolconfig): {{
     ArcRoutingControlConfiguration}}
   [AuroraProvisionedScalingConfig](#cfn-arcregionswitch-plan-executionblockconfiguration-auroraprovisionedscalingconfig): {{

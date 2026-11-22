@@ -22,7 +22,7 @@ The following table compares your Free Tier benefits based on your AWS account c
 **To list the instance types that are free tier eligible**
 Use the [describe-instance-types](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-types.html) command with the `free-tier-eligible` filter.
 
-```
+```bash
 aws ec2 describe-instance-types \
     --filters Name=free-tier-eligible,Values=true \
     --query "InstanceTypes[*].[InstanceType]" \
@@ -32,7 +32,7 @@ aws ec2 describe-instance-types \
 **To list the AMIs that are free tier eligible**
 Use the [describe-images](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command with the `free-tier-eligible` filter.
 
-```
+```bash
 aws ec2 describe-images \
     --filters Name=free-tier-eligible,Values=true \
     --query "Images[*].[ImageId]" \

@@ -115,7 +115,7 @@ aws elasticache modify-cache-cluster ^
 
 This operation produces output similar to the following (JSON format):
 
-```
+```json
 {
     "CacheCluster": {
         "Engine": "memcached",
@@ -186,7 +186,7 @@ aws elasticache increase-replica-count ^
 
 This operation produces output similar to the following (JSON format):
 
-```
+```json
 {
     "ReplicationGroup": {
         "ReplicationGroupId": "node-test",

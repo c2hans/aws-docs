@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codebuild-project-artifacts-syntax.json"></a>
 
-```
+```json
 {
   "[ArtifactIdentifier](#cfn-codebuild-project-artifacts-artifactidentifier)" : {{String}},
   "[EncryptionDisabled](#cfn-codebuild-project-artifacts-encryptiondisabled)" : {{Boolean}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codebuild-project-artifacts-syntax.yaml"></a>
 
-```
+```yaml
   [ArtifactIdentifier](#cfn-codebuild-project-artifacts-artifactidentifier): {{String}}
   [EncryptionDisabled](#cfn-codebuild-project-artifacts-encryptiondisabled): {{Boolean}}
   [Location](#cfn-codebuild-project-artifacts-location): {{String}}

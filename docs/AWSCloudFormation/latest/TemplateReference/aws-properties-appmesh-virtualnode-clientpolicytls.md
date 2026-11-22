@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-virtualnode-clientpolicytls-syntax.json"></a>
 
-```
+```json
 {
   "[Certificate](#cfn-appmesh-virtualnode-clientpolicytls-certificate)" : {{ClientTlsCertificate}},
   "[Enforce](#cfn-appmesh-virtualnode-clientpolicytls-enforce)" : {{Boolean}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-virtualnode-clientpolicytls-syntax.yaml"></a>
 
-```
+```yaml
   [Certificate](#cfn-appmesh-virtualnode-clientpolicytls-certificate): {{
     ClientTlsCertificate}}
   [Enforce](#cfn-appmesh-virtualnode-clientpolicytls-enforce): {{Boolean}}

@@ -127,13 +127,13 @@ There is an additional option to include cookies in standard logging. In the Clo
 
       The following is an example of configuring a delivery source for a distribution.
 
-      ```
+      ```bash
       aws logs put-delivery-source --name S3-delivery --resource-arn arn:aws:cloudfront::123456789012:distribution/d111111abcdef8 --log-type ACCESS_LOGS
       ```
 
       **Output**
 
-      ```
+      ```json
       {
        "deliverySource": {
        "name": "S3-delivery",
@@ -158,13 +158,13 @@ There is an additional option to include cookies in standard logging. In the Clo
 
       The following is an example of configuring a delivery destination to an Amazon S3 bucket.
 
-      ```
+      ```bash
       aws logs put-delivery-destination --name S3-destination --delivery-destination-configuration destinationResourceArn=arn:aws:s3:::amzn-s3-demo-bucket
       ```
 
       **Output**
 
-      ```
+      ```json
       {
           "name": "S3-destination",
           "arn": "arn:aws:logs:us-east-1:123456789012:delivery-destination:S3-destination",
@@ -192,13 +192,13 @@ If you're delivering logs cross-account, you must use the [PutDeliveryDestinatio
 
    The following is an example of creating a delivery.
 
-   ```
+   ```bash
    aws logs create-delivery --delivery-source-name cf-delivery --delivery-destination-arn arn:aws:logs:us-east-1:123456789012:delivery-destination:S3-destination
    ```
 
    **Output**
 
-   ```
+   ```json
    {
        "id": "abcNegnBoTR123",
        "arn": "arn:aws:logs:us-east-1:123456789012:delivery:abcNegnBoTR123",
@@ -273,13 +273,13 @@ For destination account, complete the following procedure.
 
 1. To create the log delivery destination, you can enter the following AWS CLI command. This example uses the `{{MyLogPrefix}}` string to create a prefix for your access logs.
 
-   ```
+   ```bash
    aws logs put-delivery-destination --name {{cloudfront-delivery-destination}} --delivery-destination-configuration "destinationResourceArn=arn:aws:s3:::{{amzn-s3-demo-bucket-cloudfront-logs}}/{{MyLogPrefix}}"
    ```
 
    **Output**
 
-   ```
+   ```json
    {
        "deliveryDestination": {
            "name": "cloudfront-delivery-destination",
@@ -301,7 +301,7 @@ If you specify an S3 bucket *without* a prefix, CloudFront will automatically ap
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -322,13 +322,13 @@ If you specify an S3 bucket *without* a prefix, CloudFront will automatically ap
 
 1. To attach the previous policy to the delivery destination, enter the following AWS CLI command.
 
-   ```
+   ```bash
    aws logs put-delivery-destination-policy --delivery-destination-name {{cloudfront-delivery-destination}} --delivery-destination-policy file://deliverypolicy.json
    ```
 
 1. Add the below statement to the destination Amazon S3 bucket policy, replacing the resource ARN and the source account ID. This policy allows the `delivery.logs.amazonaws.com` service principal to perform the `s3:PutObject` action.
 
-   ```
+   ```json
    {
        "Sid": "AWSLogsDeliveryWrite",
        "Effect": "Allow",
@@ -347,7 +347,7 @@ If you specify an S3 bucket *without* a prefix, CloudFront will automatically ap
 
 1. If you're using AWS KMS for your bucket, add the following statement to the KMS key policy to grant permissions to the `delivery.logs.amazonaws.com` service principal.
 
-   ```
+   ```json
    {
        "Sid": "Allow Logs Delivery to use the key",
        "Effect": "Allow",
@@ -378,13 +378,13 @@ After you configure the destination account, follow this procedure to create the
 
    You can enter the following AWS CLI command, replacing the name and your distribution ARN.
 
-   ```
+   ```bash
    aws logs put-delivery-source --name {{s3-cf-delivery}} --resource-arn arn:aws:cloudfront::{{111111111111}}:distribution/{{E1TR1RHV123ABC}} --log-type ACCESS_LOGS
    ```
 
    **Output**
 
-   ```
+   ```json
    {
        "deliverySource": {
            "name": "s3-cf-delivery",
@@ -406,7 +406,7 @@ After you configure the destination account, follow this procedure to create the
 
    **Output**
 
-   ```
+   ```json
    {
        "delivery": {
            "id": "OPmOpLahVzhx1234",
@@ -576,7 +576,7 @@ Verify that your log group resource policy doesn't exceed the size limit. See th
 ### Example access log sent to CloudWatch Logs
 <a name="example-access-logs-cwl"></a>
 
-```
+```json
 {
 "date": "2024-11-14",
 "time": "21:34:06",

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-medialive-channelplacementgroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MediaLive::ChannelPlacementGroup",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-medialive-channelplacementgroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MediaLive::ChannelPlacementGroup
 Properties:
   [ClusterId](#cfn-medialive-channelplacementgroup-clusterid): {{String}}

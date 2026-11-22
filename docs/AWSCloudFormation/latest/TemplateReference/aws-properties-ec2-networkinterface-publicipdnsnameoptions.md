@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-networkinterface-publicipdnsnameoptions-syntax.json"></a>
 
-```
+```json
 {
   "[DnsHostnameType](#cfn-ec2-networkinterface-publicipdnsnameoptions-dnshostnametype)" : {{String}},
   "[PublicDualStackDnsName](#cfn-ec2-networkinterface-publicipdnsnameoptions-publicdualstackdnsname)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-networkinterface-publicipdnsnameoptions-syntax.yaml"></a>
 
-```
+```yaml
   [DnsHostnameType](#cfn-ec2-networkinterface-publicipdnsnameoptions-dnshostnametype): {{String}}
   [PublicDualStackDnsName](#cfn-ec2-networkinterface-publicipdnsnameoptions-publicdualstackdnsname): {{String}}
   [PublicIpv4DnsName](#cfn-ec2-networkinterface-publicipdnsnameoptions-publicipv4dnsname): {{String}}

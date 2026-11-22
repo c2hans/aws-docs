@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pinpoint-campaign-setdimension-syntax.json"></a>
 
-```
+```json
 {
   "[DimensionType](#cfn-pinpoint-campaign-setdimension-dimensiontype)" : {{String}},
   "[Values](#cfn-pinpoint-campaign-setdimension-values)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pinpoint-campaign-setdimension-syntax.yaml"></a>
 
-```
+```yaml
   [DimensionType](#cfn-pinpoint-campaign-setdimension-dimensiontype): {{String}}
   [Values](#cfn-pinpoint-campaign-setdimension-values): {{
     - String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-scheduler-schedule-placementconstraint-syntax.json"></a>
 
-```
+```json
 {
   "[Expression](#cfn-scheduler-schedule-placementconstraint-expression)" : {{String}},
   "[Type](#cfn-scheduler-schedule-placementconstraint-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-scheduler-schedule-placementconstraint-syntax.yaml"></a>
 
-```
+```yaml
   [Expression](#cfn-scheduler-schedule-placementconstraint-expression): {{String}}
   [Type](#cfn-scheduler-schedule-placementconstraint-type): {{String}}
 ```

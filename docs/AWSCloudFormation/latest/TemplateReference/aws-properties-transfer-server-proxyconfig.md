@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-transfer-server-proxyconfig-syntax.json"></a>
 
-```
+```json
 {
   "[SftpMode](#cfn-transfer-server-proxyconfig-sftpmode)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-transfer-server-proxyconfig-syntax.yaml"></a>
 
-```
+```yaml
   [SftpMode](#cfn-transfer-server-proxyconfig-sftpmode): {{String}}
 ```
 

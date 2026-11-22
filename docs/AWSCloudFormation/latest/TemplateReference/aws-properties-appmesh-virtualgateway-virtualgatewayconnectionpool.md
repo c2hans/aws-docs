@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-virtualgateway-virtualgatewayconnectionpool-syntax.json"></a>
 
-```
+```json
 {
   "[GRPC](#cfn-appmesh-virtualgateway-virtualgatewayconnectionpool-grpc)" : {{VirtualGatewayGrpcConnectionPool}},
   "[HTTP](#cfn-appmesh-virtualgateway-virtualgatewayconnectionpool-http)" : {{VirtualGatewayHttpConnectionPool}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-virtualgateway-virtualgatewayconnectionpool-syntax.yaml"></a>
 
-```
+```yaml
   [GRPC](#cfn-appmesh-virtualgateway-virtualgatewayconnectionpool-grpc): {{
     VirtualGatewayGrpcConnectionPool}}
   [HTTP](#cfn-appmesh-virtualgateway-virtualgatewayconnectionpool-http): {{

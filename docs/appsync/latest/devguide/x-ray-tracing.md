@@ -49,7 +49,7 @@ When you enable X-Ray tracing for your GraphQL API, you can use the X-Ray trace 
 
 The following trace image corresponds to the following GraphQL query:
 
-```
+```graphql
 query getPost {
     getPost(id: "1") {
       id

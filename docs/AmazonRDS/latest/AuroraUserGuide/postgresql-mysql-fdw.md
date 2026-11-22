@@ -94,7 +94,7 @@ Suppose that you have a simple table on an Aurora PostgreSQL DB instance . Your 
 
 1. Create a foreign table linked to the MySQL table:
 
-   ```
+   ```sql
    test=> CREATE FOREIGN TABLE {{mytab}} (a int, b text) SERVER mysqldb OPTIONS (dbname 'test', table_name '');
    CREATE FOREIGN TABLE
    ```

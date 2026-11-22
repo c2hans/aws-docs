@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskdefinition-secret-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-ecs-taskdefinition-secret-name)" : {{String}},
   "[ValueFrom](#cfn-ecs-taskdefinition-secret-valuefrom)" : {{String}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskdefinition-secret-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-ecs-taskdefinition-secret-name): {{String}}
   [ValueFrom](#cfn-ecs-taskdefinition-secret-valuefrom): {{String}}
 ```

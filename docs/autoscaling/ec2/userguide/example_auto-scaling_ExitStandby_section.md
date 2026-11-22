@@ -45,7 +45,7 @@ For more information, see [Temporarily removing instances from your Auto Scaling
 **Tools for PowerShell V4**
 **Example 1: This example moves the specified instance out of standby mode.**
 
-```
+```powershell
 Exit-ASStandby -InstanceId i-93633f9b -AutoScalingGroupName my-asg
 ```
 **Output:**
@@ -68,7 +68,7 @@ StatusMessage        :
 **Tools for PowerShell V5**
 **Example 1: This example moves the specified instance out of standby mode.**
 
-```
+```powershell
 Exit-ASStandby -InstanceId i-93633f9b -AutoScalingGroupName my-asg
 ```
 **Output:**

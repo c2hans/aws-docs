@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appsync-api-openidconnectconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AuthTTL](#cfn-appsync-api-openidconnectconfig-authttl)" : {{Number}},
   "[ClientId](#cfn-appsync-api-openidconnectconfig-clientid)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appsync-api-openidconnectconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AuthTTL](#cfn-appsync-api-openidconnectconfig-authttl): {{Number}}
   [ClientId](#cfn-appsync-api-openidconnectconfig-clientid): {{String}}
   [IatTTL](#cfn-appsync-api-openidconnectconfig-iatttl): {{Number}}

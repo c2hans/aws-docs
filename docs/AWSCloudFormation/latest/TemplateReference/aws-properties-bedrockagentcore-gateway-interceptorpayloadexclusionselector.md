@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gateway-interceptorpayloadexclusionselector-syntax.json"></a>
 
-```
+```json
 {
   "[Field](#cfn-bedrockagentcore-gateway-interceptorpayloadexclusionselector-field)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gateway-interceptorpayloadexclusionselector-syntax.yaml"></a>
 
-```
+```yaml
   [Field](#cfn-bedrockagentcore-gateway-interceptorpayloadexclusionselector-field): {{String}}
 ```
 

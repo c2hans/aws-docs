@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityagent-agentspace-integratedresource-syntax.json"></a>
 
-```
+```json
 {
   "[Integration](#cfn-securityagent-agentspace-integratedresource-integration)" : {{String}},
   "[ProviderResources](#cfn-securityagent-agentspace-integratedresource-providerresources)" : {{[ ProviderResource, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityagent-agentspace-integratedresource-syntax.yaml"></a>
 
-```
+```yaml
   [Integration](#cfn-securityagent-agentspace-integratedresource-integration): {{String}}
   [ProviderResources](#cfn-securityagent-agentspace-integratedresource-providerresources): {{
     - ProviderResource}}

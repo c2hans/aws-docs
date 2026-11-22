@@ -18,7 +18,7 @@ To grant permissions to perform most AWS operations, you add the action with the
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-receiptrule-addheaderaction-syntax.json"></a>
 
-```
+```json
 {
   "[HeaderName](#cfn-ses-receiptrule-addheaderaction-headername)" : {{String}},
   "[HeaderValue](#cfn-ses-receiptrule-addheaderaction-headervalue)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-receiptrule-addheaderaction-syntax.yaml"></a>
 
-```
+```yaml
   [HeaderName](#cfn-ses-receiptrule-addheaderaction-headername): {{String}}
   [HeaderValue](#cfn-ses-receiptrule-addheaderaction-headervalue): {{String}}
 ```

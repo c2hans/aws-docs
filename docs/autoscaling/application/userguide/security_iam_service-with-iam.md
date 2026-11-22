@@ -78,19 +78,19 @@ arn:aws:application-autoscaling:{{region}}:{{account-id}}:scalable-target/{{uniq
 
 For example, you can indicate a specific scalable target in your statement using its ARN as follows. The unique ID (1234abcd56ab78cd901ef1234567890ab123) is a value assigned by Application Auto Scaling to the scalable target.
 
-```
+```json
 "Resource": "arn:aws:application-autoscaling:us-east-1:123456789012:scalable-target/1234abcd56ab78cd901ef1234567890ab123"
 ```
 
 You can specify all instances that belong to a specific account by replacing the unique identifier with a wildcard (\*) as follows.
 
-```
+```json
 "Resource": "arn:aws:application-autoscaling:us-east-1:123456789012:scalable-target/*"
 ```
 
 To specify all resources, or if a specific API action does not support ARNs, use a wildcard (\*) as the `Resource` element as follows.
 
-```
+```json
 "Resource": "*"
 ```
 

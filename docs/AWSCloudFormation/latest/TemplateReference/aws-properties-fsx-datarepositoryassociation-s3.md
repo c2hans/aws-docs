@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-datarepositoryassociation-s3-syntax.json"></a>
 
-```
+```json
 {
   "[AutoExportPolicy](#cfn-fsx-datarepositoryassociation-s3-autoexportpolicy)" : {{AutoExportPolicy}},
   "[AutoImportPolicy](#cfn-fsx-datarepositoryassociation-s3-autoimportpolicy)" : {{AutoImportPolicy}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-datarepositoryassociation-s3-syntax.yaml"></a>
 
-```
+```yaml
   [AutoExportPolicy](#cfn-fsx-datarepositoryassociation-s3-autoexportpolicy): {{
     AutoExportPolicy}}
   [AutoImportPolicy](#cfn-fsx-datarepositoryassociation-s3-autoimportpolicy): {{

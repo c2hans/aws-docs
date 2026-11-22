@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-sheetvisualscopingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Scope](#cfn-quicksight-dashboard-sheetvisualscopingconfiguration-scope)" : {{String}},
   "[SheetId](#cfn-quicksight-dashboard-sheetvisualscopingconfiguration-sheetid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-sheetvisualscopingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Scope](#cfn-quicksight-dashboard-sheetvisualscopingconfiguration-scope): {{String}}
   [SheetId](#cfn-quicksight-dashboard-sheetvisualscopingconfiguration-sheetid): {{String}}
   [VisualIds](#cfn-quicksight-dashboard-sheetvisualscopingconfiguration-visualids): {{

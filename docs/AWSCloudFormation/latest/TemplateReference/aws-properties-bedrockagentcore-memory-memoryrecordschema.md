@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-memory-memoryrecordschema-syntax.json"></a>
 
-```
+```json
 {
   "[MetadataSchema](#cfn-bedrockagentcore-memory-memoryrecordschema-metadataschema)" : {{[ MetadataSchemaEntry, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-memory-memoryrecordschema-syntax.yaml"></a>
 
-```
+```yaml
   [MetadataSchema](#cfn-bedrockagentcore-memory-memoryrecordschema-metadataschema): {{
     - MetadataSchemaEntry}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-visiblerangeoptions-syntax.json"></a>
 
-```
+```json
 {
   "[PercentRange](#cfn-quicksight-analysis-visiblerangeoptions-percentrange)" : {{PercentVisibleRange}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-visiblerangeoptions-syntax.yaml"></a>
 
-```
+```yaml
   [PercentRange](#cfn-quicksight-analysis-visiblerangeoptions-percentrange): {{
     PercentVisibleRange}}
 ```

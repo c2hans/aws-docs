@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dlm-lifecyclepolicy-retentionarchivetier-syntax.json"></a>
 
-```
+```json
 {
   "[Count](#cfn-dlm-lifecyclepolicy-retentionarchivetier-count)" : {{Integer}},
   "[Interval](#cfn-dlm-lifecyclepolicy-retentionarchivetier-interval)" : {{Integer}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dlm-lifecyclepolicy-retentionarchivetier-syntax.yaml"></a>
 
-```
+```yaml
   [Count](#cfn-dlm-lifecyclepolicy-retentionarchivetier-count): {{Integer}}
   [Interval](#cfn-dlm-lifecyclepolicy-retentionarchivetier-interval): {{Integer}}
   [IntervalUnit](#cfn-dlm-lifecyclepolicy-retentionarchivetier-intervalunit): {{String}}

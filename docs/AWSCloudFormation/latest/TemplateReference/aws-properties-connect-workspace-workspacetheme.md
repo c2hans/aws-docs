@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-workspace-workspacetheme-syntax.json"></a>
 
-```
+```json
 {
   "[Dark](#cfn-connect-workspace-workspacetheme-dark)" : {{WorkspaceThemeConfig}},
   "[Light](#cfn-connect-workspace-workspacetheme-light)" : {{WorkspaceThemeConfig}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-workspace-workspacetheme-syntax.yaml"></a>
 
-```
+```yaml
   [Dark](#cfn-connect-workspace-workspacetheme-dark): {{
     WorkspaceThemeConfig}}
   [Light](#cfn-connect-workspace-workspacetheme-light): {{

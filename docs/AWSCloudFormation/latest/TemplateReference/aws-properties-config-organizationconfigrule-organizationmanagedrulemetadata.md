@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-config-organizationconfigrule-organizationmanagedrulemetadata-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-config-organizationconfigrule-organizationmanagedrulemetadata-description)" : {{String}},
   "[InputParameters](#cfn-config-organizationconfigrule-organizationmanagedrulemetadata-inputparameters)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-config-organizationconfigrule-organizationmanagedrulemetadata-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-config-organizationconfigrule-organizationmanagedrulemetadata-description): {{String}}
   [InputParameters](#cfn-config-organizationconfigrule-organizationmanagedrulemetadata-inputparameters): {{String}}
   [MaximumExecutionFrequency](#cfn-config-organizationconfigrule-organizationmanagedrulemetadata-maximumexecutionfrequency): {{String}}

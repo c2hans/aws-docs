@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-datasource-rdsparameters-syntax.json"></a>
 
-```
+```json
 {
   "[Database](#cfn-quicksight-datasource-rdsparameters-database)" : {{String}},
   "[InstanceId](#cfn-quicksight-datasource-rdsparameters-instanceid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-datasource-rdsparameters-syntax.yaml"></a>
 
-```
+```yaml
   [Database](#cfn-quicksight-datasource-rdsparameters-database): {{String}}
   [InstanceId](#cfn-quicksight-datasource-rdsparameters-instanceid): {{String}}
 ```

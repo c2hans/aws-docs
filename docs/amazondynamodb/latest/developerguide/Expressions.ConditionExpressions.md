@@ -14,7 +14,7 @@ aws dynamodb put-item \
 
 The arguments for `--item` are stored in the `item.json` file. (For simplicity, only a few item attributes are used.)
 
-```
+```json
 {
     "Id": {"N": "456" },
     "ProductCategory": {"S": "Sporting Goods" },
@@ -73,7 +73,7 @@ aws dynamodb delete-item \
 
 The arguments for `--expression-attribute-values` are stored in the `values.json` file.
 
-```
+```json
 {
     ":cat1": {"S": "Sporting Goods"},
     ":cat2": {"S": "Gardening Supplies"},
@@ -111,7 +111,7 @@ aws dynamodb update-item \
 
 The arguments for `--expression-attribute-values` are stored in the `values.json` file.
 
-```
+```json
 {
     ":discount": { "N": "75"},
     ":limit": {"N": "500"}
@@ -169,7 +169,7 @@ aws dynamodb delete-item \
 
 The arguments for `--expression-attribute-values` are stored in the expression-attribute-values.json file.
 
-```
+```json
 {
     ":v_sub":{"S":"SS"}
 }
@@ -192,7 +192,7 @@ aws dynamodb delete-item \
 
 The arguments for `--expression-attribute-values` are stored in the expression-attribute-values.json file.
 
-```
+```json
 {
     ":v_sub":{"S":"http://"}
 }
@@ -215,7 +215,7 @@ aws dynamodb delete-item \
 
 The arguments for `--expression-attribute-values` are stored in the expression-attribute-values.json file.
 
-```
+```json
 {
     ":v_sub":{"S":"Red"}
 }
@@ -238,7 +238,7 @@ aws dynamodb delete-item \
 
 The arguments for `--expression-attribute-values` are stored in the expression-attribute-values.json file.
 
-```
+```json
 {
     ":v_sub":{"N":"64000"}
 }

@@ -8,12 +8,12 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-c
 
  **Signature**
 
-```
+```typescript
         offCleared(handler: ContactClearedHandler, contactId?: string)
 ```
 
  **Usage**
 
-```
+```typescript
  contactClient.offCleared(handler);
 ```

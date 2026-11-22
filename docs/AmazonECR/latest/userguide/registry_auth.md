@@ -25,7 +25,7 @@ With an Amazon ECR *global token*, you can authenticate to Amazon ECR registry e
 
 Before you request a global token, make sure that you have `signin:CreateBearerToken` permission and the Amazon ECR permissions required for your image or repository operations. The following IAM policy grants permission to request a global token for Amazon ECR:
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [

@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-deadline-fleet-acceleratorcapabilities-syntax.json"></a>
 
-```
+```json
 {
   "[Count](#cfn-deadline-fleet-acceleratorcapabilities-count)" : {{AcceleratorCountRange}},
   "[Selections](#cfn-deadline-fleet-acceleratorcapabilities-selections)" : {{[ AcceleratorSelection, ... ]}}
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-deadline-fleet-acceleratorcapabilities-syntax.yaml"></a>
 
-```
+```yaml
   [Count](#cfn-deadline-fleet-acceleratorcapabilities-count): {{
     AcceleratorCountRange}}
   [Selections](#cfn-deadline-fleet-acceleratorcapabilities-selections): {{

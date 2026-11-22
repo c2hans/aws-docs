@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicrule-elasticsearchaction-syntax.json"></a>
 
-```
+```json
 {
   "[Endpoint](#cfn-iot-topicrule-elasticsearchaction-endpoint)" : {{String}},
   "[Id](#cfn-iot-topicrule-elasticsearchaction-id)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicrule-elasticsearchaction-syntax.yaml"></a>
 
-```
+```yaml
   [Endpoint](#cfn-iot-topicrule-elasticsearchaction-endpoint): {{String}}
   [Id](#cfn-iot-topicrule-elasticsearchaction-id): {{String}}
   [Index](#cfn-iot-topicrule-elasticsearchaction-index): {{String}}

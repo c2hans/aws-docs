@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-responseheaderspolicy-contentsecuritypolicy-syntax.json"></a>
 
-```
+```json
 {
   "[ContentSecurityPolicy](#cfn-cloudfront-responseheaderspolicy-contentsecuritypolicy-contentsecuritypolicy)" : {{String}},
   "[Override](#cfn-cloudfront-responseheaderspolicy-contentsecuritypolicy-override)" : {{Boolean}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-responseheaderspolicy-contentsecuritypolicy-syntax.yaml"></a>
 
-```
+```yaml
   [ContentSecurityPolicy](#cfn-cloudfront-responseheaderspolicy-contentsecuritypolicy-contentsecuritypolicy): {{String}}
   [Override](#cfn-cloudfront-responseheaderspolicy-contentsecuritypolicy-override): {{Boolean}}
 ```

@@ -20,7 +20,7 @@ The entire transaction must consist of either read statements or write statement
 ## Syntax
 <a name="ql-reference.multiplestatements.transactions.syntax"></a>
 
-```
+```json
 [
    {
       "Statement":"{{ statement }}",
@@ -87,7 +87,7 @@ The following example runs multiple statements as a transaction.
 ------
 #### [ Java ]
 
-```
+```java
 public class DynamoDBPartiqlTransaction {
 
     public static void main(String[] args) {
@@ -193,7 +193,7 @@ The following example shows the different return values when DynamoDB reads item
 
 1. Save the following JSON code to a file called partiql.json.
 
-   ```
+   ```json
    [
        // Item exists and projected attribute exists
        {
@@ -218,7 +218,7 @@ The following example shows the different return values when DynamoDB reads item
 
 1. The following response is returned:
 
-   ```
+   ```json
    {
        "Responses": [
            // Item exists and projected attribute exists

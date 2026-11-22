@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-memory-namespacekeyentry-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-bedrockagentcore-memory-namespacekeyentry-key)" : {{String}},
   "[Validation](#cfn-bedrockagentcore-memory-namespacekeyentry-validation)" : {{NamespaceKeyValidation}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-memory-namespacekeyentry-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-bedrockagentcore-memory-namespacekeyentry-key): {{String}}
   [Validation](#cfn-bedrockagentcore-memory-namespacekeyentry-validation): {{
     NamespaceKeyValidation}}

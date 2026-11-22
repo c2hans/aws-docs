@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-mitigationaction-actionparams-syntax.json"></a>
 
-```
+```json
 {
   "[AddThingsToThingGroupParams](#cfn-iot-mitigationaction-actionparams-addthingstothinggroupparams)" : {{AddThingsToThingGroupParams}},
   "[EnableIoTLoggingParams](#cfn-iot-mitigationaction-actionparams-enableiotloggingparams)" : {{EnableIoTLoggingParams}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-mitigationaction-actionparams-syntax.yaml"></a>
 
-```
+```yaml
   [AddThingsToThingGroupParams](#cfn-iot-mitigationaction-actionparams-addthingstothinggroupparams): {{
     AddThingsToThingGroupParams}}
   [EnableIoTLoggingParams](#cfn-iot-mitigationaction-actionparams-enableiotloggingparams): {{

@@ -72,7 +72,7 @@ Pattern: `(?!^[0-9]+$)([a-zA-Z0-9\-_' ']+)`
 Required: No
 
  ** Status **   <a name="Route53Resolver-Type-route53resolver_FirewallDomainList-Status"></a>
-The status of the domain list.
+The status of the domain list. For the status values of an AutoAllowlist rule's managed domain list, see [FirewallDomainListMetadata](API_route53resolver_FirewallDomainListMetadata.md).
 Type: String
 Valid Values: `COMPLETE | COMPLETE_IMPORT_FAILED | IMPORTING | DELETING | UPDATING`
 Required: No

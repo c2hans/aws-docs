@@ -127,7 +127,7 @@ aws ec2 describe-images \
 
 The following is example output for an AMI with an instance type specification.
 
-```
+```json
 {
     "Images": [
         {

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisanalyticsv2-application-applicationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ApplicationCodeConfiguration](#cfn-kinesisanalyticsv2-application-applicationconfiguration-applicationcodeconfiguration)" : {{ApplicationCodeConfiguration}},
   "[ApplicationEncryptionConfiguration](#cfn-kinesisanalyticsv2-application-applicationconfiguration-applicationencryptionconfiguration)" : {{ApplicationEncryptionConfiguration}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisanalyticsv2-application-applicationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ApplicationCodeConfiguration](#cfn-kinesisanalyticsv2-application-applicationconfiguration-applicationcodeconfiguration): {{
     ApplicationCodeConfiguration}}
   [ApplicationEncryptionConfiguration](#cfn-kinesisanalyticsv2-application-applicationconfiguration-applicationencryptionconfiguration): {{

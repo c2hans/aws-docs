@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 
 The `05-scan-test.py` program performs `Scan` operations on `TryDaxTable`.
 
-```
+```python
 import argparse
 import time
 import sys

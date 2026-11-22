@@ -74,7 +74,7 @@ The source identity specified by the principal that is calling the `AssumeRoot` 
 You can use the `aws:SourceIdentity` condition key to control access based on the value of source identity. For more information about using source identity, see [Monitor and control actions taken with assumed roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_control-access_monitor.html) in the *IAM User Guide*.
 The regex used to validate this parameter is a string of characters consisting of upper- and lower-case alphanumeric characters with no spaces. You can also include underscores or any of the following characters: =,.@-
 Type: String
-Length Constraints: Minimum length of 2. Maximum length of 64.
+Length Constraints: Minimum length of 2. Maximum length of 256.
 Pattern: `[\w+=,.@-]*`
 
 ## Errors

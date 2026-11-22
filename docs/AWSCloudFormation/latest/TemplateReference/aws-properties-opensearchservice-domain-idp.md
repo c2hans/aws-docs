@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchservice-domain-idp-syntax.json"></a>
 
-```
+```json
 {
   "[EntityId](#cfn-opensearchservice-domain-idp-entityid)" : {{String}},
   "[MetadataContent](#cfn-opensearchservice-domain-idp-metadatacontent)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchservice-domain-idp-syntax.yaml"></a>
 
-```
+```yaml
   [EntityId](#cfn-opensearchservice-domain-idp-entityid): {{String}}
   [MetadataContent](#cfn-opensearchservice-domain-idp-metadatacontent): {{String}}
 ```

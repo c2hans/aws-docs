@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-insightconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Computations](#cfn-quicksight-analysis-insightconfiguration-computations)" : {{[ Computation, ... ]}},
   "[CustomNarrative](#cfn-quicksight-analysis-insightconfiguration-customnarrative)" : {{CustomNarrativeOptions}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-insightconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Computations](#cfn-quicksight-analysis-insightconfiguration-computations): {{
     - Computation}}
   [CustomNarrative](#cfn-quicksight-analysis-insightconfiguration-customnarrative): {{

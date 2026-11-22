@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dynamodb-table-ondemandthroughput-syntax.json"></a>
 
-```
+```json
 {
   "[MaxReadRequestUnits](#cfn-dynamodb-table-ondemandthroughput-maxreadrequestunits)" : {{Integer}},
   "[MaxWriteRequestUnits](#cfn-dynamodb-table-ondemandthroughput-maxwriterequestunits)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dynamodb-table-ondemandthroughput-syntax.yaml"></a>
 
-```
+```yaml
   [MaxReadRequestUnits](#cfn-dynamodb-table-ondemandthroughput-maxreadrequestunits): {{Integer}}
   [MaxWriteRequestUnits](#cfn-dynamodb-table-ondemandthroughput-maxwriterequestunits): {{Integer}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-collaboration-mlmemberabilities-syntax.json"></a>
 
-```
+```json
 {
   "[CustomMLMemberAbilities](#cfn-cleanrooms-collaboration-mlmemberabilities-custommlmemberabilities)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-collaboration-mlmemberabilities-syntax.yaml"></a>
 
-```
+```yaml
   [CustomMLMemberAbilities](#cfn-cleanrooms-collaboration-mlmemberabilities-custommlmemberabilities): {{
     - String}}
 ```

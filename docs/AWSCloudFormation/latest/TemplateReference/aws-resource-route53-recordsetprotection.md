@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-route53-recordsetprotection-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Route53::RecordSetProtection",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-route53-recordsetprotection-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53::RecordSetProtection
 Properties:
   [Comment](#cfn-route53-recordsetprotection-comment): {{String}}
@@ -118,7 +118,7 @@ The following example creates a hosted zone, an `A` record set, and a protection
 #### JSON
 <a name="aws-resource-route53-recordsetprotection--examples--Protect_a_record_set--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -161,7 +161,7 @@ The following example creates a hosted zone, an `A` record set, and a protection
 #### YAML
 <a name="aws-resource-route53-recordsetprotection--examples--Protect_a_record_set--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   MyHostedZone:

@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-kendra-querysuggestionsblocklist-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Kendra::QuerySuggestionsBlockList",
   "Properties" : {
@@ -46,7 +46,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-kendra-querysuggestionsblocklist-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Kendra::QuerySuggestionsBlockList
 Properties:
   [Description](#cfn-kendra-querysuggestionsblocklist-description): {{String}}

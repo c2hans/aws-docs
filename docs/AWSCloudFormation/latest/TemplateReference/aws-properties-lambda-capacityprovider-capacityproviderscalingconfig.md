@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-capacityprovider-capacityproviderscalingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[MaxVCpuCount](#cfn-lambda-capacityprovider-capacityproviderscalingconfig-maxvcpucount)" : {{Integer}},
   "[ScalingMode](#cfn-lambda-capacityprovider-capacityproviderscalingconfig-scalingmode)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-capacityprovider-capacityproviderscalingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [MaxVCpuCount](#cfn-lambda-capacityprovider-capacityproviderscalingconfig-maxvcpucount): {{Integer}}
   [ScalingMode](#cfn-lambda-capacityprovider-capacityproviderscalingconfig-scalingmode): {{String}}
   [ScalingPolicies](#cfn-lambda-capacityprovider-capacityproviderscalingconfig-scalingpolicies): {{

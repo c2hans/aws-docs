@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-subscriptiontarget-subscriptiontargetform-syntax.json"></a>
 
-```
+```json
 {
   "[Content](#cfn-datazone-subscriptiontarget-subscriptiontargetform-content)" : {{String}},
   "[FormName](#cfn-datazone-subscriptiontarget-subscriptiontargetform-formname)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-subscriptiontarget-subscriptiontargetform-syntax.yaml"></a>
 
-```
+```yaml
   [Content](#cfn-datazone-subscriptiontarget-subscriptiontargetform-content): {{String}}
   [FormName](#cfn-datazone-subscriptiontarget-subscriptiontargetform-formname): {{String}}
 ```

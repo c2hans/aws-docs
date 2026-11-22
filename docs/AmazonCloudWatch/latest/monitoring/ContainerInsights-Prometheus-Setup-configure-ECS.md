@@ -134,7 +134,7 @@ This example configures an embedded metric format section to be sent as a log ev
 
 The log event that is sent includes the following highlighted section:
 
-```
+```json
 {
    "CloudWatchMetrics":[
       {

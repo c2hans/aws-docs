@@ -76,7 +76,7 @@ The Data API doesn't support all data types. This error occurs when you execute 
 
 To work around this issue, cast the unsupported data type to `TEXT`. For example:
 
-```
+```sql
 SELECT custom_type::TEXT FROM my_table;
 	-- OR
 	SELECT CAST(custom_type AS TEXT) FROM my_table;

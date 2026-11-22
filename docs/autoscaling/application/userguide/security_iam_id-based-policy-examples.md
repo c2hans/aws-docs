@@ -25,7 +25,7 @@ The following identity-based policy grants permissions to all Application Auto S
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -49,7 +49,7 @@ The following identity-based policy grants permissions to all Application Auto S
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -79,7 +79,7 @@ The following identity-based policy grants permissions to all Application Auto S
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -133,7 +133,7 @@ The following identity-based policy grants permissions to all AppStream 2.0 and 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -164,7 +164,7 @@ The following identity-based policy grants permissions to all Aurora and CloudWa
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -198,7 +198,7 @@ The following identity-based policy grants permissions to all Amazon Comprehend 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -229,7 +229,7 @@ The following identity-based policy grants permissions to all DynamoDB and Cloud
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -260,7 +260,7 @@ The following identity-based policy grants permissions to all ECS and CloudWatch
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -291,7 +291,7 @@ The following identity-based policy grants permissions to all ElastiCache and Cl
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -326,7 +326,7 @@ The following identity-based policy grants permissions to all Amazon EMR and Clo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -357,7 +357,7 @@ The following identity-based policy grants permissions to all Amazon Keyspaces a
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -388,7 +388,7 @@ The following identity-based policy grants permissions to all Lambda and CloudWa
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -420,7 +420,7 @@ The following identity-based policy grants permissions to all Amazon MSK and Clo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -452,7 +452,7 @@ The following identity-based policy grants permissions to all Neptune and CloudW
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -487,7 +487,7 @@ The following identity-based policy grants permissions to all SageMaker AI and C
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -521,7 +521,7 @@ The following identity-based policy grants permissions to all Spot Fleet and Clo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -552,7 +552,7 @@ The following identity-based policy grants permission for the API Gateway API ex
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -591,7 +591,7 @@ The following identity-based policy grants permissions to configure scaling poli
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

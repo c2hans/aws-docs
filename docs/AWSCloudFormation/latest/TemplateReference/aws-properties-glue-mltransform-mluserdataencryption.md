@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-mltransform-mluserdataencryption-syntax.json"></a>
 
-```
+```json
 {
   "[KmsKeyId](#cfn-glue-mltransform-mluserdataencryption-kmskeyid)" : {{String}},
   "[MLUserDataEncryptionMode](#cfn-glue-mltransform-mluserdataencryption-mluserdataencryptionmode)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-mltransform-mluserdataencryption-syntax.yaml"></a>
 
-```
+```yaml
   [KmsKeyId](#cfn-glue-mltransform-mluserdataencryption-kmskeyid): {{String}}
   [MLUserDataEncryptionMode](#cfn-glue-mltransform-mluserdataencryption-mluserdataencryptionmode): {{String}}
 ```

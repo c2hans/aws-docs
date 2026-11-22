@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-comparisonconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ComparisonFormat](#cfn-quicksight-dashboard-comparisonconfiguration-comparisonformat)" : {{ComparisonFormatConfiguration}},
   "[ComparisonMethod](#cfn-quicksight-dashboard-comparisonconfiguration-comparisonmethod)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-comparisonconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ComparisonFormat](#cfn-quicksight-dashboard-comparisonconfiguration-comparisonformat): {{
     ComparisonFormatConfiguration}}
   [ComparisonMethod](#cfn-quicksight-dashboard-comparisonconfiguration-comparisonmethod): {{String}}

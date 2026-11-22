@@ -13,12 +13,14 @@ The following sections describe the permissions you need to:
 + Administer account access manager in your organization management account
 + Administer account access manager from a delegated administrator account
 
+For a quick start, you can attach an [AWS managed policy](aam-security-iam-awsmanpol.md) that already combines the permissions you need for specific jobs such as administering account access manager, managing user entitlements, and auditing or read-only access.
+
 ### Administering account access manager from your organization management account
 <a name="aam-security-admin-access-management"></a>
 
 To administer account access manager settings in the AWS organization management account you need the following permissions:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -123,7 +125,7 @@ To administer account access manager settings in the AWS organization management
 
 **Optional:** To constrain `account-access:CreateApplication` by tag, replace the AAMCreateApplication statement with:
 
-```
+```json
 {
   "Sid": "AAMCreateApplicationConstrainedByTag",
   "Effect": "Allow",
@@ -144,7 +146,7 @@ To administer account access manager settings in the AWS organization management
 
 **Optional:** To manage and register delegated administrators for account access manager, add:
 
-```
+```json
 {
   "Sid": "ManageDelegatedAdministrator",
   "Effect": "Allow",
@@ -163,7 +165,7 @@ To administer account access manager settings in the AWS organization management
 
 To assign IAM roles to your workforce users and groups from the AWS organization management account without administering account access manager settings you need the following permissions:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -233,7 +235,7 @@ To assign IAM roles to your workforce users and groups from the AWS organization
 
 To administer account access manager settings from a delegated administration account you need the following permissions:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -308,7 +310,7 @@ To administer account access manager settings from a delegated administration ac
 
 To assign IAM roles to workforce users and groups from a delegated administration account without administering account access manager settings you need the following permissions:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

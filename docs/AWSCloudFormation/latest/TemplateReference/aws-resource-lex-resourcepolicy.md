@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lex-resourcepolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lex::ResourcePolicy",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lex-resourcepolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lex::ResourcePolicy
 Properties:
   [Policy](#cfn-lex-resourcepolicy-policy): {{Json}}

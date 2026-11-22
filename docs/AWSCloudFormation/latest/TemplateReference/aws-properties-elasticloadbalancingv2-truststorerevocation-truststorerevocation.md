@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancingv2-truststorerevocation-truststorerevocation-syntax.json"></a>
 
-```
+```json
 {
   "[NumberOfRevokedEntries](#cfn-elasticloadbalancingv2-truststorerevocation-truststorerevocation-numberofrevokedentries)" : {{Integer}},
   "[RevocationId](#cfn-elasticloadbalancingv2-truststorerevocation-truststorerevocation-revocationid)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancingv2-truststorerevocation-truststorerevocation-syntax.yaml"></a>
 
-```
+```yaml
   [NumberOfRevokedEntries](#cfn-elasticloadbalancingv2-truststorerevocation-truststorerevocation-numberofrevokedentries): {{Integer}}
   [RevocationId](#cfn-elasticloadbalancingv2-truststorerevocation-truststorerevocation-revocationid): {{String}}
   [RevocationType](#cfn-elasticloadbalancingv2-truststorerevocation-truststorerevocation-revocationtype): {{String}}

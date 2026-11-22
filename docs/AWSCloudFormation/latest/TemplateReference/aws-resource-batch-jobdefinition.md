@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-batch-jobdefinition-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Batch::JobDefinition",
   "Properties" : {
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-batch-jobdefinition-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Batch::JobDefinition
 Properties:
   [ConsumableResourceProperties](#cfn-batch-jobdefinition-consumableresourceproperties): {{
@@ -208,7 +208,7 @@ The following example tests the `nvidia-smi` command on a GPU instance to verify
 #### JSON
 <a name="aws-resource-batch-jobdefinition--examples--Test_nvidia-smi--json"></a>
 
-```
+```json
 {
   "JobDefinition": {
     "Type": "AWS::Batch::JobDefinition",
@@ -257,7 +257,7 @@ The following example tests the `nvidia-smi` command on a GPU instance to verify
 #### YAML
 <a name="aws-resource-batch-jobdefinition--examples--Test_nvidia-smi--yaml"></a>
 
-```
+```yaml
 JobDefinition:
   Type: 'AWS::Batch::JobDefinition'
   Properties:

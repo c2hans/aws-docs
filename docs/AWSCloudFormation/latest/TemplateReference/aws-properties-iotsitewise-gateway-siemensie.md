@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotsitewise-gateway-siemensie-syntax.json"></a>
 
-```
+```json
 {
   "[IotCoreThingName](#cfn-iotsitewise-gateway-siemensie-iotcorethingname)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotsitewise-gateway-siemensie-syntax.yaml"></a>
 
-```
+```yaml
   [IotCoreThingName](#cfn-iotsitewise-gateway-siemensie-iotcorethingname): {{String}}
 ```
 

@@ -46,7 +46,7 @@ https://autoscaling.amazonaws.com/?Action=DescribeScalingProcessTypes
 #### Sample Response
 <a name="API_DescribeScalingProcessTypes_Example_1_Response"></a>
 
-```
+```xml
 <DescribeScalingProcessTypesResponse xmlns="https://autoscaling.amazonaws.com/doc/2011-01-01/">
   <DescribeScalingProcessTypesResult>
     <Processes>

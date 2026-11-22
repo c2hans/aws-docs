@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/create-a-client-to-acce
 
 The `AthenaClientFactory.java` class shows how to create and configure an Amazon Athena client.
 
-```
+```java
 package aws.example.athena;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;

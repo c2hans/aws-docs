@@ -87,7 +87,7 @@ Use the `logCustomData()` method to send custom data from your Amazon CloudFront
 
 The method accepts a single string argument. To log an object, use `JSON.stringify()` to convert it to a string first. For example:
 
-```
+```javascript
 const resp_obj = JSON.stringify(some_obj);
 cf.logCustomData(resp_obj);
 ```
@@ -108,7 +108,7 @@ cf.logCustomData(String);
 
 **Example Log a header in a viewer request function**
 
-```
+```javascript
 import cf from 'cloudfront';
 
 function handler(event) {

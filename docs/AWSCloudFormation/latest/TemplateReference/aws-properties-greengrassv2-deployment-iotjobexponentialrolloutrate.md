@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrassv2-deployment-iotjobexponentialrolloutrate-syntax.json"></a>
 
-```
+```json
 {
   "[BaseRatePerMinute](#cfn-greengrassv2-deployment-iotjobexponentialrolloutrate-baserateperminute)" : {{Integer}},
   "[IncrementFactor](#cfn-greengrassv2-deployment-iotjobexponentialrolloutrate-incrementfactor)" : {{Number}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrassv2-deployment-iotjobexponentialrolloutrate-syntax.yaml"></a>
 
-```
+```yaml
   [BaseRatePerMinute](#cfn-greengrassv2-deployment-iotjobexponentialrolloutrate-baserateperminute): {{Integer}}
   [IncrementFactor](#cfn-greengrassv2-deployment-iotjobexponentialrolloutrate-incrementfactor): {{Number}}
   [RateIncreaseCriteria](#cfn-greengrassv2-deployment-iotjobexponentialrolloutrate-rateincreasecriteria): {{

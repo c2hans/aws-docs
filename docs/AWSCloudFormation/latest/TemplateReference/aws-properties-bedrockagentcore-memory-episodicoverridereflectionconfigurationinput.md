@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-memory-episodicoverridereflectionconfigurationinput-syntax.json"></a>
 
-```
+```json
 {
   "[AppendToPrompt](#cfn-bedrockagentcore-memory-episodicoverridereflectionconfigurationinput-appendtoprompt)" : {{String}},
   "[MemoryRecordSchema](#cfn-bedrockagentcore-memory-episodicoverridereflectionconfigurationinput-memoryrecordschema)" : {{MemoryRecordSchema}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-memory-episodicoverridereflectionconfigurationinput-syntax.yaml"></a>
 
-```
+```yaml
   [AppendToPrompt](#cfn-bedrockagentcore-memory-episodicoverridereflectionconfigurationinput-appendtoprompt): {{String}}
   [MemoryRecordSchema](#cfn-bedrockagentcore-memory-episodicoverridereflectionconfigurationinput-memoryrecordschema): {{
     MemoryRecordSchema}}

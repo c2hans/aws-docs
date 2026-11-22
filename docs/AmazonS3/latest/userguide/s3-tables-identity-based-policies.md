@@ -22,7 +22,7 @@ The following topic includes examples of IAM identity-based policies. To use the
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -52,7 +52,7 @@ The following topic includes examples of IAM identity-based policies. To use the
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

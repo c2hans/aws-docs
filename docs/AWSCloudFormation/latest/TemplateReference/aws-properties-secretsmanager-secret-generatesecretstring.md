@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-secretsmanager-secret-generatesecretstring-syntax.json"></a>
 
-```
+```json
 {
   "[ExcludeCharacters](#cfn-secretsmanager-secret-generatesecretstring-excludecharacters)" : {{String}},
   "[ExcludeLowercase](#cfn-secretsmanager-secret-generatesecretstring-excludelowercase)" : {{Boolean}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-secretsmanager-secret-generatesecretstring-syntax.yaml"></a>
 
-```
+```yaml
   [ExcludeCharacters](#cfn-secretsmanager-secret-generatesecretstring-excludecharacters): {{String}}
   [ExcludeLowercase](#cfn-secretsmanager-secret-generatesecretstring-excludelowercase): {{Boolean}}
   [ExcludeNumbers](#cfn-secretsmanager-secret-generatesecretstring-excludenumbers): {{Boolean}}

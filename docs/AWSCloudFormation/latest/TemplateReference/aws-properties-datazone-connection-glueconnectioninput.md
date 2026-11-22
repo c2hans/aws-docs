@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-connection-glueconnectioninput-syntax.json"></a>
 
-```
+```json
 {
   "[AthenaProperties](#cfn-datazone-connection-glueconnectioninput-athenaproperties)" : {{{{{Key}}: {{Value}}, ...}}},
   "[AuthenticationConfiguration](#cfn-datazone-connection-glueconnectioninput-authenticationconfiguration)" : {{AuthenticationConfigurationInput}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-connection-glueconnectioninput-syntax.yaml"></a>
 
-```
+```yaml
   [AthenaProperties](#cfn-datazone-connection-glueconnectioninput-athenaproperties): {{
     {{Key}}: {{Value}}}}
   [AuthenticationConfiguration](#cfn-datazone-connection-glueconnectioninput-authenticationconfiguration): {{

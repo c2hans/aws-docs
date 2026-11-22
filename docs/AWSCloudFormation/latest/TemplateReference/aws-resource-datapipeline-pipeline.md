@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-datapipeline-pipeline-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DataPipeline::Pipeline",
   "Properties" : {
@@ -49,7 +49,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-datapipeline-pipeline-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DataPipeline::Pipeline
 Properties:
   [Activate](#cfn-datapipeline-pipeline-activate): {{Boolean}}
@@ -150,7 +150,7 @@ The following data pipeline backs up data from an Amazon DynamoDB table to an Am
 #### JSON
 <a name="aws-resource-datapipeline-pipeline--examples----json"></a>
 
-```
+```json
 "DynamoDBInputS3OutputHive": {
   "Type": "AWS::DataPipeline::Pipeline",
   "Properties": {
@@ -382,7 +382,7 @@ The following data pipeline backs up data from an Amazon DynamoDB table to an Am
 #### YAML
 <a name="aws-resource-datapipeline-pipeline--examples----yaml"></a>
 
-```
+```yaml
 DynamoDBInputS3OutputHive:
   Type: AWS::DataPipeline::Pipeline
   Properties:

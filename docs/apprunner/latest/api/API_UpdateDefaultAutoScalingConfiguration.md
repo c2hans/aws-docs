@@ -96,7 +96,7 @@ In the example, two revisions exist. Therefore, revision 2, (the latest revision
 #### Sample Request
 <a name="API_UpdateDefaultAutoScalingConfiguration_Example_1_Request"></a>
 
-```
+```json
 $ aws apprunner update-default-auto-scaling-configuration --cli-input-json "`cat`"
 {
     "AutoScalingConfigurationArn": "arn:aws:apprunner:us-east-1:123456789012:autoscalingconfiguration/high-availability"
@@ -106,7 +106,7 @@ $ aws apprunner update-default-auto-scaling-configuration --cli-input-json "`cat
 #### Sample Response
 <a name="API_UpdateDefaultAutoScalingConfiguration_Example_1_Response"></a>
 
-```
+```json
 {
     "AutoScalingConfiguration": {
         "AutoScalingConfigurationArn": "arn:aws:apprunner:us-east-1:123456789012:autoscalingconfiguration/high-availability/2/6a4d47db94434d30a42cab9a00d21d44",
@@ -134,7 +134,7 @@ In the example, several revisions exist, and revision 1 is set as the default. T
 #### Sample Request
 <a name="API_UpdateDefaultAutoScalingConfiguration_Example_2_Request"></a>
 
-```
+```json
 $ aws apprunner update-default-auto-scaling-configuration --cli-input-json "`cat`"
 {
     "AutoScalingConfigurationArn": "arn:aws:apprunner:us-east-1:123456789012:autoscalingconfiguration/high-availability/1"
@@ -144,7 +144,7 @@ $ aws apprunner update-default-auto-scaling-configuration --cli-input-json "`cat
 #### Sample Response
 <a name="API_UpdateDefaultAutoScalingConfiguration_Example_2_Response"></a>
 
-```
+```json
 {
     "AutoScalingConfiguration": {
         "AutoScalingConfigurationArn": "arn:aws:apprunner:us-east-1:123456789012:autoscalingconfiguration/high-availability/1/d2321df129c8440da8c464af7ebcd887",

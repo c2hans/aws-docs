@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amplifyuibuilder-component-mutationactionsetstateparameter-syntax.json"></a>
 
-```
+```json
 {
   "[ComponentName](#cfn-amplifyuibuilder-component-mutationactionsetstateparameter-componentname)" : {{String}},
   "[Property](#cfn-amplifyuibuilder-component-mutationactionsetstateparameter-property)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amplifyuibuilder-component-mutationactionsetstateparameter-syntax.yaml"></a>
 
-```
+```yaml
   [ComponentName](#cfn-amplifyuibuilder-component-mutationactionsetstateparameter-componentname): {{String}}
   [Property](#cfn-amplifyuibuilder-component-mutationactionsetstateparameter-property): {{String}}
   [Set](#cfn-amplifyuibuilder-component-mutationactionsetstateparameter-set): {{

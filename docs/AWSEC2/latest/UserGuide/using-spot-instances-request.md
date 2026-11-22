@@ -37,14 +37,14 @@ A Spot Instance appears in the **Instances** page in the console, along with On-
 **To find your Spot Instances**
 Use the following [describe-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html) command.
 
-```
+```bash
 aws ec2 describe-instances --filters "Name=instance-lifecycle,Values=spot"
 ```
 
 **To determine whether an instance is a Spot Instance**
 Use the following [describe-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html) command.
 
-```
+```bash
 aws ec2 describe-instances \
     --instance-ids {{i-1234567890abcdef0}} \
     --query "Reservations[*].Instances[*].InstanceLifecycle" \
@@ -59,14 +59,14 @@ If the output is `spot`, the instance is a Spot Instance. If there is no output,
 **To find your Spot Instances**
 Use the [Get-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html) cmdlet.
 
-```
+```powershell
 Get-EC2Instance -Filter @{Name="instance-lifecycle"; Values="spot"}
 ```
 
 **To determine whether an instance is a Spot Instance**
 Use the [Get-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html) cmdlet.
 
-```
+```powershell
 (Get-EC2Instance -InstanceId {{i-1234567890abcdef0}}).Instances.InstanceLifecycle
 ```
 
@@ -98,7 +98,7 @@ Use the following procedure to find the Spot Instances launched from a specific 
 **To find the Spot Instances for a request**
 Use the following [describe-spot-instance-requests](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-spot-instance-requests.html) command.
 
-```
+```bash
 aws ec2 describe-spot-instance-requests \
     --spot-instance-request-ids {{sir-0e54a519c9EXAMPLE}} \
     --query "SpotInstanceRequests[*].{ID:InstanceId}"
@@ -106,7 +106,7 @@ aws ec2 describe-spot-instance-requests \
 
 The following is example output:
 
-```
+```json
 [
     {
         "ID": "i-1234567890abcdef0"
@@ -123,7 +123,7 @@ The following is example output:
 **To find the Spot Instances for a request**
 Use the [Get-EC2SpotInstanceRequest](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2SpotInstanceRequest.html) cmdlet.
 
-```
+```powershell
 (Get-EC2SpotInstanceRequest -SpotInstanceRequestId {{sir-0e54a519c9EXAMPLE}}).InstanceId
 ```
 
@@ -164,7 +164,7 @@ We don't charge usage for a stopped Spot Instance, or data transfer fees, but we
 **To stop a Spot Instance**
 Use the [stop-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/stop-instances.html) command to manually stop your Spot Instances.
 
-```
+```bash
 aws ec2 stop-instances --instance-ids {{i-1234567890abcdef0}}
 ```
 
@@ -174,7 +174,7 @@ aws ec2 stop-instances --instance-ids {{i-1234567890abcdef0}}
 **To stop a Spot Instance**
 Use the [Stop-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Stop-EC2Instance.html) cmdlet.
 
-```
+```powershell
 Stop-EC2Instance -InstanceId {{i-1234567890abcdef0}}
 ```
 
@@ -217,7 +217,7 @@ The steps for starting a Spot Instance are similar to the steps for starting an 
 **To start a Spot Instance**
 Use the [start-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/start-instances.html) command to manually start your Spot Instances.
 
-```
+```bash
 aws ec2 start-instances --instance-ids {{i-1234567890abcdef0}}
 ```
 
@@ -227,7 +227,7 @@ aws ec2 start-instances --instance-ids {{i-1234567890abcdef0}}
 **To start a Spot Instance**
 Use the [Start-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Start-EC2Instance.html) cmdlet.
 
-```
+```powershell
 Start-EC2Instance -InstanceId {{i-1234567890abcdef0}}
 ```
 
@@ -272,7 +272,7 @@ For more information, see [Cancel a Spot Instance request](using-spot-instances-
 **To manually terminate a Spot Instance**
 Use the [terminate-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/terminate-instances.html) command to manually terminate your Spot Instances.
 
-```
+```bash
 aws ec2 terminate-instances --instance-ids {{i-1234567890abcdef0}} {{i-0598c7d356eba48d7}}
 ```
 
@@ -282,7 +282,7 @@ aws ec2 terminate-instances --instance-ids {{i-1234567890abcdef0}} {{i-0598c7d35
 **To manually terminate a Spot Instance**
 Use the [Remove-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Remove-EC2Instance.html) cmdlet.
 
-```
+```powershell
 Remove-EC2Instance -InstanceId {{i-1234567890abcdef0}}
 ```
 

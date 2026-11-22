@@ -49,7 +49,7 @@ When restoring a cross-account backup, to encrypt your restored table using the 
 
 Use `[StartRestoreJob](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_StartRestoreJob.html)`. You can specify the following metadata during any DynamoDB restore. The metadata is not case-sensitive.
 
-```
+```java
 targetTableName
 encryptionType
 kmsMasterKeyArn
@@ -58,7 +58,7 @@ aws:backup:request-id
 
 The following is an example of the `restoreMetadata` argument for a `StartRestoreJob` operation in the CLI:
 
-```
+```yaml
 aws backup start-restore-job \
 --recovery-point-arn "arn:aws:backup:us-east-1:123456789012:recovery-point:abcdef12-g3hi-4567-8cjk-012345678901" \
 --iam-role-arn "arn:aws:iam::123456789012:role/YourIamRole" \

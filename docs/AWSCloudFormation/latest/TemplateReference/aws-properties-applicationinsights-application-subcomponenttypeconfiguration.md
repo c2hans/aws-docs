@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationinsights-application-subcomponenttypeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[SubComponentConfigurationDetails](#cfn-applicationinsights-application-subcomponenttypeconfiguration-subcomponentconfigurationdetails)" : {{SubComponentConfigurationDetails}},
   "[SubComponentType](#cfn-applicationinsights-application-subcomponenttypeconfiguration-subcomponenttype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationinsights-application-subcomponenttypeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [SubComponentConfigurationDetails](#cfn-applicationinsights-application-subcomponenttypeconfiguration-subcomponentconfigurationdetails): {{
     SubComponentConfigurationDetails}}
   [SubComponentType](#cfn-applicationinsights-application-subcomponenttypeconfiguration-subcomponenttype): {{String}}

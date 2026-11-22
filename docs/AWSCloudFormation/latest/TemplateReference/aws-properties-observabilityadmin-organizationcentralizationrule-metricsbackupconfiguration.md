@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-observabilityadmin-organizationcentralizationrule-metricsbackupconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Region](#cfn-observabilityadmin-organizationcentralizationrule-metricsbackupconfiguration-region)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-observabilityadmin-organizationcentralizationrule-metricsbackupconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Region](#cfn-observabilityadmin-organizationcentralizationrule-metricsbackupconfiguration-region): {{String}}
 ```
 

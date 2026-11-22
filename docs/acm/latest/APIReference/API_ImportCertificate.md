@@ -61,7 +61,7 @@ Required: Yes
  ** [PrivateKey](#API_ImportCertificate_RequestSyntax) **   <a name="ACM-ImportCertificate-request-PrivateKey"></a>
 The private key that matches the public key in the certificate.
 Type: Base64-encoded binary data object
-Length Constraints: Minimum length of 1. Maximum length of 5120.
+Length Constraints: Minimum length of 1. Maximum length of 8192.
 Required: Yes
 
  ** [CertificateArn](#API_ImportCertificate_RequestSyntax) **   <a name="ACM-ImportCertificate-request-CertificateArn"></a>

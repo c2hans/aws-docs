@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationinsights-application-componentmonitoringsetting-syntax.json"></a>
 
-```
+```json
 {
   "[ComponentARN](#cfn-applicationinsights-application-componentmonitoringsetting-componentarn)" : {{String}},
   "[ComponentConfigurationMode](#cfn-applicationinsights-application-componentmonitoringsetting-componentconfigurationmode)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationinsights-application-componentmonitoringsetting-syntax.yaml"></a>
 
-```
+```yaml
   [ComponentARN](#cfn-applicationinsights-application-componentmonitoringsetting-componentarn): {{String}}
   [ComponentConfigurationMode](#cfn-applicationinsights-application-componentmonitoringsetting-componentconfigurationmode): {{String}}
   [ComponentName](#cfn-applicationinsights-application-componentmonitoringsetting-componentname): {{String}}

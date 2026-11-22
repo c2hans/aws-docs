@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-autoscaling-warmpool-instancereusepolicy-syntax.json"></a>
 
-```
+```json
 {
   "[ReuseOnScaleIn](#cfn-autoscaling-warmpool-instancereusepolicy-reuseonscalein)" : {{Boolean}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-autoscaling-warmpool-instancereusepolicy-syntax.yaml"></a>
 
-```
+```yaml
   [ReuseOnScaleIn](#cfn-autoscaling-warmpool-instancereusepolicy-reuseonscalein): {{Boolean}}
 ```
 

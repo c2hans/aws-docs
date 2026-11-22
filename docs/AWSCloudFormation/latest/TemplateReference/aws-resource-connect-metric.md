@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-connect-metric-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Connect::Metric",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-connect-metric-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Connect::Metric
 Properties:
   [Description](#cfn-connect-metric-description): {{String}}

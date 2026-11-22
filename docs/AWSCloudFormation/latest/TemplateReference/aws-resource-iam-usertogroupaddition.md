@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iam-usertogroupaddition-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IAM::UserToGroupAddition",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iam-usertogroupaddition-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IAM::UserToGroupAddition
 Properties:
   [GroupName](#cfn-iam-usertogroupaddition-groupname): {{String}}

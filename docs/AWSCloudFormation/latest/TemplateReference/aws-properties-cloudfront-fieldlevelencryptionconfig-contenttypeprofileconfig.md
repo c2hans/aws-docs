@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-fieldlevelencryptionconfig-contenttypeprofileconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ContentTypeProfiles](#cfn-cloudfront-fieldlevelencryptionconfig-contenttypeprofileconfig-contenttypeprofiles)" : {{[ ContentTypeProfile, ... ]}},
   "[ForwardWhenContentTypeIsUnknown](#cfn-cloudfront-fieldlevelencryptionconfig-contenttypeprofileconfig-forwardwhencontenttypeisunknown)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-fieldlevelencryptionconfig-contenttypeprofileconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ContentTypeProfiles](#cfn-cloudfront-fieldlevelencryptionconfig-contenttypeprofileconfig-contenttypeprofiles): {{
     - ContentTypeProfile}}
   [ForwardWhenContentTypeIsUnknown](#cfn-cloudfront-fieldlevelencryptionconfig-contenttypeprofileconfig-forwardwhencontenttypeisunknown): {{Boolean}}

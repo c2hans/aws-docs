@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-msksourceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AuthenticationConfiguration](#cfn-kinesisfirehose-deliverystream-msksourceconfiguration-authenticationconfiguration)" : {{AuthenticationConfiguration}},
   "[MSKClusterARN](#cfn-kinesisfirehose-deliverystream-msksourceconfiguration-mskclusterarn)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-msksourceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AuthenticationConfiguration](#cfn-kinesisfirehose-deliverystream-msksourceconfiguration-authenticationconfiguration): {{
     AuthenticationConfiguration}}
   [MSKClusterARN](#cfn-kinesisfirehose-deliverystream-msksourceconfiguration-mskclusterarn): {{String}}

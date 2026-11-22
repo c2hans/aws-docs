@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-synthetics-canary-browserconfig-syntax.json"></a>
 
-```
+```json
 {
   "[BrowserType](#cfn-synthetics-canary-browserconfig-browsertype)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-synthetics-canary-browserconfig-syntax.yaml"></a>
 
-```
+```yaml
   [BrowserType](#cfn-synthetics-canary-browserconfig-browsertype): {{String}}
 ```
 

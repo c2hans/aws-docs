@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-s3tables-tablepolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::S3Tables::TablePolicy",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-s3tables-tablepolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::S3Tables::TablePolicy
 Properties:
   [ResourcePolicy](#cfn-s3tables-tablepolicy-resourcepolicy): {{Json}}

@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-receiptrule-s3action-syntax.json"></a>
 
-```
+```json
 {
   "[BucketName](#cfn-ses-receiptrule-s3action-bucketname)" : {{String}},
   "[IamRoleArn](#cfn-ses-receiptrule-s3action-iamrolearn)" : {{String}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-receiptrule-s3action-syntax.yaml"></a>
 
-```
+```yaml
   [BucketName](#cfn-ses-receiptrule-s3action-bucketname): {{String}}
   [IamRoleArn](#cfn-ses-receiptrule-s3action-iamrolearn): {{String}}
   [KmsKeyArn](#cfn-ses-receiptrule-s3action-kmskeyarn): {{String}}
@@ -100,7 +100,7 @@ The following example creates an S3 Action in a SES RuleSet.
 #### JSON
 <a name="aws-properties-ses-receiptrule-s3action--examples--S3_Action_in_SES_RuleSet--json"></a>
 
-```
+```json
 {
     "SesRuleSet": {
         "Type": "AWS::SES::ReceiptRuleSet"
@@ -135,7 +135,7 @@ The following example creates an S3 Action in a SES RuleSet.
 #### YAML
 <a name="aws-properties-ses-receiptrule-s3action--examples--S3_Action_in_SES_RuleSet--yaml"></a>
 
-```
+```yaml
 SesRuleSet:
   Type: 'AWS::SES::ReceiptRuleSet'
 SesRule:

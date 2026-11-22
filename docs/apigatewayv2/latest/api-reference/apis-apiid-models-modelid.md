@@ -91,7 +91,7 @@ Updates a `Model`.
 #### PATCH schema
 <a name="apis-apiid-models-modelid-request-body-patch-example"></a>
 
-```
+```json
 {
   "name": "string",
   "description": "string",
@@ -106,7 +106,7 @@ Updates a `Model`.
 #### Model schema
 <a name="apis-apiid-models-modelid-response-body-model-example"></a>
 
-```
+```json
 {
   "modelId": "string",
   "name": "string",
@@ -119,7 +119,7 @@ Updates a `Model`.
 #### BadRequestException schema
 <a name="apis-apiid-models-modelid-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -128,7 +128,7 @@ Updates a `Model`.
 #### NotFoundException schema
 <a name="apis-apiid-models-modelid-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -138,7 +138,7 @@ Updates a `Model`.
 #### ConflictException schema
 <a name="apis-apiid-models-modelid-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -147,7 +147,7 @@ Updates a `Model`.
 #### LimitExceededException schema
 <a name="apis-apiid-models-modelid-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

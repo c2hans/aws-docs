@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancingv2-loadbalancer-minimumloadbalancercapacity-syntax.json"></a>
 
-```
+```json
 {
   "[CapacityUnits](#cfn-elasticloadbalancingv2-loadbalancer-minimumloadbalancercapacity-capacityunits)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancingv2-loadbalancer-minimumloadbalancercapacity-syntax.yaml"></a>
 
-```
+```yaml
   [CapacityUnits](#cfn-elasticloadbalancingv2-loadbalancer-minimumloadbalancercapacity-capacityunits): {{Integer}}
 ```
 

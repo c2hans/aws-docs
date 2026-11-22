@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-capacityprovider-targettrackingscalingpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[PredefinedMetricType](#cfn-lambda-capacityprovider-targettrackingscalingpolicy-predefinedmetrictype)" : {{String}},
   "[TargetValue](#cfn-lambda-capacityprovider-targettrackingscalingpolicy-targetvalue)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-capacityprovider-targettrackingscalingpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [PredefinedMetricType](#cfn-lambda-capacityprovider-targettrackingscalingpolicy-predefinedmetrictype): {{String}}
   [TargetValue](#cfn-lambda-capacityprovider-targettrackingscalingpolicy-targetvalue): {{Number}}
 ```

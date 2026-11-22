@@ -93,7 +93,7 @@ aws ecs put-account-setting --name containerInsights --value enhanced
 
 Example output
 
-```
+```json
 {
     "setting": {
         "name": "containerInsights",
@@ -125,7 +125,7 @@ aws ecs put-account-setting --name containerInsights --value enabled
 
 Example output
 
-```
+```json
 {
     "setting": {
         "name": "containerInsights",
@@ -167,7 +167,7 @@ The `fargateFIPSMode` account setting can only be changed using either the Amazo
 
   Example output
 
-  ```
+  ```json
   {
       "setting": {
           "name": "fargateFIPSMode",
@@ -198,7 +198,7 @@ Amazon ECS is introducing tagging authorization for resource creation. Users mus
 
   Example output
 
-  ```
+  ```json
   {
       "setting": {
           "name": "tagResourceAuthorization",
@@ -262,7 +262,7 @@ aws ecs put-account-setting-default --name fargateTaskRetirementWaitPeriod --val
 
 Example output
 
-```
+```json
 {
     "setting": {
         "name": "fargateTaskRetirementWaitPeriod",
@@ -321,7 +321,7 @@ aws ecs list-account-settings
 
 Example output
 
-```
+```json
 {
     "setting": {
         "name": "guardDutyActivate",

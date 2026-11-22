@@ -171,7 +171,7 @@ If the action is successful, the service sends back an HTTP 200 response with an
 
 The following `PUT` request and response for the bucket `examplebucket` creates a new or replaces an existing inventory configuration with the ID `report1`. The configuration is defined in the request body.
 
-```
+```xml
 PUT /?inventory&id=report1 HTTP/1.1
 Host: examplebucket.s3.<Region>.amazonaws.com
 Date: Mon, 31 Oct 2016 12:00:00 GMT
@@ -217,7 +217,7 @@ Content-Length: length
 </InventoryConfiguration>
 ```
 
-```
+```HTTP
 HTTP/1.1 200 OK
 x-amz-id-2: YgIPIfBiKa2bj0KMg95r/0zo3emzU4dzsD4rcKCHQUAdQkf3ShJTOOpXUueF6QKo
 x-amz-request-id: 236A8905248E5A01

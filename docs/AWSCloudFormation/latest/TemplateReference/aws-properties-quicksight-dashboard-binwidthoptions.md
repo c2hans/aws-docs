@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-binwidthoptions-syntax.json"></a>
 
-```
+```json
 {
   "[BinCountLimit](#cfn-quicksight-dashboard-binwidthoptions-bincountlimit)" : {{Number}},
   "[Value](#cfn-quicksight-dashboard-binwidthoptions-value)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-binwidthoptions-syntax.yaml"></a>
 
-```
+```yaml
   [BinCountLimit](#cfn-quicksight-dashboard-binwidthoptions-bincountlimit): {{Number}}
   [Value](#cfn-quicksight-dashboard-binwidthoptions-value): {{Number}}
 ```

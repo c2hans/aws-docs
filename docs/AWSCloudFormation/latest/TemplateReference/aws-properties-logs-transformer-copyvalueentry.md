@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-logs-transformer-copyvalueentry-syntax.json"></a>
 
-```
+```json
 {
   "[OverwriteIfExists](#cfn-logs-transformer-copyvalueentry-overwriteifexists)" : {{Boolean}},
   "[Source](#cfn-logs-transformer-copyvalueentry-source)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-logs-transformer-copyvalueentry-syntax.yaml"></a>
 
-```
+```yaml
   [OverwriteIfExists](#cfn-logs-transformer-copyvalueentry-overwriteifexists): {{Boolean}}
   [Source](#cfn-logs-transformer-copyvalueentry-source): {{String}}
   [Target](#cfn-logs-transformer-copyvalueentry-target): {{String}}

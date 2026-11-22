@@ -15,7 +15,7 @@ All IAM roles for canaries must include the following trust policy statement.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -41,7 +41,7 @@ Additionally, the canary's IAM role needs one of the following statements.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -108,7 +108,7 @@ Additionally, the canary's IAM role needs one of the following statements.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -190,7 +190,7 @@ Additionally, the canary's IAM role needs one of the following statements.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -270,7 +270,7 @@ If you update a non-VPC canary to start using a VPC, you'll need to update the c
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -363,7 +363,7 @@ If you configure a customer managed key for environment variable encryption at r
 
 If you use encryption in transit, add the following statement to your canary's execution role policy:
 
-```
+```json
 {
   "Effect": "Allow",
   "Action": "kms:Decrypt",

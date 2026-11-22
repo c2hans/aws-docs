@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigateway-clientcertificate-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGateway::ClientCertificate",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigateway-clientcertificate-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGateway::ClientCertificate
 Properties:
   [Description](#cfn-apigateway-clientcertificate-description): {{String}}
@@ -86,7 +86,7 @@ The following example creates a client certificate that you can use with an API 
 #### JSON
 <a name="aws-resource-apigateway-clientcertificate--examples--Create_client_certificate--json"></a>
 
-```
+```json
 {
     "TestClientCertificate": {
         "Type": "AWS::ApiGateway::ClientCertificate",
@@ -100,7 +100,7 @@ The following example creates a client certificate that you can use with an API 
 #### YAML
 <a name="aws-resource-apigateway-clientcertificate--examples--Create_client_certificate--yaml"></a>
 
-```
+```yaml
 TestClientCertificate:
   Type: 'AWS::ApiGateway::ClientCertificate'
   Properties:

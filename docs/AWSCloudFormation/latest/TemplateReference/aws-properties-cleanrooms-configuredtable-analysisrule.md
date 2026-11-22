@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-configuredtable-analysisrule-syntax.json"></a>
 
-```
+```json
 {
   "[Policy](#cfn-cleanrooms-configuredtable-analysisrule-policy)" : {{ConfiguredTableAnalysisRulePolicy}},
   "[Type](#cfn-cleanrooms-configuredtable-analysisrule-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-configuredtable-analysisrule-syntax.yaml"></a>
 
-```
+```yaml
   [Policy](#cfn-cleanrooms-configuredtable-analysisrule-policy): {{
     ConfiguredTableAnalysisRulePolicy}}
   [Type](#cfn-cleanrooms-configuredtable-analysisrule-type): {{String}}

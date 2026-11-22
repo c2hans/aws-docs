@@ -72,7 +72,7 @@ If the action is successful, the service sends back an HTTP 204 response with an
 
 The following `DELETE` request resets the default encryption for the bucket as server-side encryption with Amazon S3 managed keys (SSE-S3).
 
-```
+```HTTP
 DELETE ?/encryption HTTP/1.1
 Host: amzn-s3-demo-bucket.s3.<Region>.amazonaws.com
 Date: Wed, 06 Sep 2017 12:00:00 GMT
@@ -84,7 +84,7 @@ Authorization: signatureValue
 
 The following successful response shows Amazon S3 returning a `204 No Content` response confirming that default encryption for the bucket has been reset as server-side encryption with Amazon S3 managed keys (SSE-S3).
 
-```
+```HTTP
 HTTP/1.1 204 No Content
 x-amz-id-2: 0FmFIWsh/PpBuzZ0JFRC55ZGVmQW4SHJ7xVDqKwhEdJmf3q63RtrvH8ZuxW1Bol5
 x-amz-request-id: 0CF038E9BCF63097

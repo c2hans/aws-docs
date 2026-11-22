@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-sourceendpoint-srtlistenerstandardsourceendpointconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EncryptionPassphrase](#cfn-mediaconnect-sourceendpoint-srtlistenerstandardsourceendpointconfiguration-encryptionpassphrase)" : {{EndpointEncryptionSecretConfiguration}},
   "[MinimumLatencyMilliseconds](#cfn-mediaconnect-sourceendpoint-srtlistenerstandardsourceendpointconfiguration-minimumlatencymilliseconds)" : {{Integer}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-sourceendpoint-srtlistenerstandardsourceendpointconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EncryptionPassphrase](#cfn-mediaconnect-sourceendpoint-srtlistenerstandardsourceendpointconfiguration-encryptionpassphrase): {{
     EndpointEncryptionSecretConfiguration}}
   [MinimumLatencyMilliseconds](#cfn-mediaconnect-sourceendpoint-srtlistenerstandardsourceendpointconfiguration-minimumlatencymilliseconds): {{Integer}}

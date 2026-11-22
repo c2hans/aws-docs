@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-contributionanalysisdefault-syntax.json"></a>
 
-```
+```json
 {
   "[ContributorDimensions](#cfn-quicksight-template-contributionanalysisdefault-contributordimensions)" : {{[ ColumnIdentifier, ... ]}},
   "[MeasureFieldId](#cfn-quicksight-template-contributionanalysisdefault-measurefieldid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-contributionanalysisdefault-syntax.yaml"></a>
 
-```
+```yaml
   [ContributorDimensions](#cfn-quicksight-template-contributionanalysisdefault-contributordimensions): {{
     - ColumnIdentifier}}
   [MeasureFieldId](#cfn-quicksight-template-contributionanalysisdefault-measurefieldid): {{String}}

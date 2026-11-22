@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskdefinition-s3filesvolumeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AccessPointArn](#cfn-ecs-taskdefinition-s3filesvolumeconfiguration-accesspointarn)" : {{String}},
   "[FileSystemArn](#cfn-ecs-taskdefinition-s3filesvolumeconfiguration-filesystemarn)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskdefinition-s3filesvolumeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AccessPointArn](#cfn-ecs-taskdefinition-s3filesvolumeconfiguration-accesspointarn): {{String}}
   [FileSystemArn](#cfn-ecs-taskdefinition-s3filesvolumeconfiguration-filesystemarn): {{String}}
   [RootDirectory](#cfn-ecs-taskdefinition-s3filesvolumeconfiguration-rootdirectory): {{String}}

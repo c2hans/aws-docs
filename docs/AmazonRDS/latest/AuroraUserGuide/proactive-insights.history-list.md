@@ -60,7 +60,7 @@ Make sure also to look for long-running transactions on read replicas.
 
 1. In your SQL client, run the following query:
 
-   ```
+   ```sql
    SELECT a.trx_id,
          a.trx_state,
          a.trx_started,

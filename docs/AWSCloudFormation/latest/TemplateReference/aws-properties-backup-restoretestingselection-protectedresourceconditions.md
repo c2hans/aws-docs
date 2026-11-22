@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-backup-restoretestingselection-protectedresourceconditions-syntax.json"></a>
 
-```
+```json
 {
   "[StringEquals](#cfn-backup-restoretestingselection-protectedresourceconditions-stringequals)" : {{[ KeyValue, ... ]}},
   "[StringNotEquals](#cfn-backup-restoretestingselection-protectedresourceconditions-stringnotequals)" : {{[ KeyValue, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-backup-restoretestingselection-protectedresourceconditions-syntax.yaml"></a>
 
-```
+```yaml
   [StringEquals](#cfn-backup-restoretestingselection-protectedresourceconditions-stringequals): {{
     - KeyValue}}
   [StringNotEquals](#cfn-backup-restoretestingselection-protectedresourceconditions-stringnotequals): {{

@@ -14,7 +14,7 @@ To use EventBridge to work with Internet Monitor health events, follow the guida
 
 1. In Step 2, select **Other** for the event source, and then, under **Event pattern**, match the following source.
 
-   ```
+   ```None
    {
      "source": ["aws.internetmonitor"]
    }
@@ -31,7 +31,7 @@ You can use event patterns to filter health events by impact type. This is usefu
 
 **Receive only global health events:**
 
-```
+```JSON
 {
   "source": ["aws.internetmonitor"],
   "detail": {
@@ -42,7 +42,7 @@ You can use event patterns to filter health events by impact type. This is usefu
 
 **Receive only local health events:**
 
-```
+```JSON
 {
   "source": ["aws.internetmonitor"],
   "detail": {
@@ -53,7 +53,7 @@ You can use event patterns to filter health events by impact type. This is usefu
 
 **Receive all health events (default):**
 
-```
+```JSON
 {
   "source": ["aws.internetmonitor"]
 }

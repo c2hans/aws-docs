@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-cluster-kubecontrollermanagerconfig-syntax.json"></a>
 
-```
+```json
 {
   "[HorizontalPodAutoscalerControllerConfig](#cfn-eks-cluster-kubecontrollermanagerconfig-horizontalpodautoscalercontrollerconfig)" : {{HorizontalPodAutoscalerControllerConfig}},
   "[PodGcControllerConfig](#cfn-eks-cluster-kubecontrollermanagerconfig-podgccontrollerconfig)" : {{PodGcControllerConfig}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-cluster-kubecontrollermanagerconfig-syntax.yaml"></a>
 
-```
+```yaml
   [HorizontalPodAutoscalerControllerConfig](#cfn-eks-cluster-kubecontrollermanagerconfig-horizontalpodautoscalercontrollerconfig): {{
     HorizontalPodAutoscalerControllerConfig}}
   [PodGcControllerConfig](#cfn-eks-cluster-kubecontrollermanagerconfig-podgccontrollerconfig): {{

@@ -30,7 +30,7 @@ The `AwsVssComponents` package requires .NET Framework version `4.6` or later. W
 **AWS Tools for Windows PowerShell version**
 Ensure that your instance is running AWS Tools for Windows PowerShell version `3.3.48.0` or later. To check your version, run the following command in the PowerShell terminal on the instance.
 
-```
+```PowerShell
 C:\> Get-AWSPowerShellVersion
 ```
 If you need to update AWS Tools for Windows PowerShell on your instance, see [ Installing the AWS Tools for Windows PowerShell](https://docs.aws.amazon.com/powershell/latest/userguide/pstools-getting-set-up-windows.html) in the *AWS Tools for PowerShell User Guide*.
@@ -38,7 +38,7 @@ If you need to update AWS Tools for Windows PowerShell on your instance, see [ I
 **Windows PowerShell version**
 Ensure that your instance is running Windows PowerShell major version `3`, `4`, or `5`. To check your version, run the following command in a PowerShell terminal on the instance.
 
-```
+```PowerShell
 C:\> $PSVersionTable.PSVersion
 ```
 

@@ -26,7 +26,7 @@ This exporter does not support Amazon MSK Serverless. Use the [metrics that Amaz
 
 Save the following YAML scrape configuration as `msk-consumer.yaml`. Replace the cluster ARN. For an existing scraper, add this job to its full configuration and keep any existing jobs. Then update the scraper as described in [Update or remove the exporter](https://docs.aws.amazon.com/prometheus/latest/userguide/prom-msk-kafka-exporter.html#prom-msk-kafka-exporter-update).
 
-```
+```yaml
 global:
   scrape_interval: 30s
 scrape_configs:
@@ -44,7 +44,7 @@ Keep the job name `kafka-exporter`. The collector configures its scrape target a
 
 Run the following AWS CLI command to create the scraper. Replace the Region, account ID, cluster ARN, subnets, security group, and both filters. The example selects topics that start with `orders` and consumer groups that start with `payments`. To select all topics or all consumer groups, omit the filter. Consumer-group metrics can also include other topics that a selected consumer group consumes. To control which metrics reach CloudWatch, use `metric_relabel_configs` in your scrape configuration.
 
-```
+```bash
 aws amp create-scraper \
   --region {{us-west-2}} \
   --alias msk-consumer-metrics \
@@ -68,7 +68,7 @@ Grant the scraper's service-linked role. Do not use an account root principal or
 
 1. Get the scraper's role ARN:
 
-   ```
+   ```bash
    aws amp describe-scraper \
      --region {{us-west-2}} \
      --scraper-id {{scraper-id}} \
@@ -77,7 +77,7 @@ Grant the scraper's service-linked role. Do not use an account root principal or
 
 1. Save the following policy as `policy.json`. Replace the role ARN, Region, account ID, cluster name, and cluster ID.
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -105,7 +105,7 @@ Grant the scraper's service-linked role. Do not use an account root principal or
 
 1. Check whether the cluster already has a policy:
 
-   ```
+   ```bash
    aws kafka get-cluster-policy \
      --region {{us-west-2}} \
      --cluster-arn arn:aws:kafka:{{us-west-2}}:{{111122223333}}:cluster/{{my-cluster}}/{{cluster-id}}
@@ -115,7 +115,7 @@ Grant the scraper's service-linked role. Do not use an account root principal or
 
 1. If the cluster has no policy, add yours:
 
-   ```
+   ```bash
    aws kafka put-cluster-policy \
      --region {{us-west-2}} \
      --cluster-arn arn:aws:kafka:{{us-west-2}}:{{111122223333}}:cluster/{{my-cluster}}/{{cluster-id}} \
@@ -131,15 +131,15 @@ To grant every scraper in the account, to limit the topics and groups, or to see
 
 To confirm that the collector is delivering consumer-group metrics, choose the scraper's Region and run each of the following queries separately in CloudWatch with [Query Studio](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-PromQL-QueryStudio.html). Replace the cluster ARN.
 
-```
+```PromQL
 kafka_consumergroup_members{"@instrumentation.cloudwatch.managed-collector.scraper-type"="msk", clusterArn="arn:aws:kafka:{{us-west-2}}:{{111122223333}}:cluster/{{my-cluster}}/{{cluster-id}}"}
 ```
 
-```
+```PromQL
 kafka_consumergroup_current_offset{"@instrumentation.cloudwatch.managed-collector.scraper-type"="msk", clusterArn="arn:aws:kafka:{{us-west-2}}:{{111122223333}}:cluster/{{my-cluster}}/{{cluster-id}}"}
 ```
 
-```
+```PromQL
 kafka_consumergroup_lag{"@instrumentation.cloudwatch.managed-collector.scraper-type"="msk", clusterArn="arn:aws:kafka:{{us-west-2}}:{{111122223333}}:cluster/{{my-cluster}}/{{cluster-id}}"}
 ```
 

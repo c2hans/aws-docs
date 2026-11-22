@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-emailaddress-aliasconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EmailAddressArn](#cfn-connect-emailaddress-aliasconfiguration-emailaddressarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-emailaddress-aliasconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EmailAddressArn](#cfn-connect-emailaddress-aliasconfiguration-emailaddressarn): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fms-policy-icmptypecode-syntax.json"></a>
 
-```
+```json
 {
   "[Code](#cfn-fms-policy-icmptypecode-code)" : {{Integer}},
   "[Type](#cfn-fms-policy-icmptypecode-type)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fms-policy-icmptypecode-syntax.yaml"></a>
 
-```
+```yaml
   [Code](#cfn-fms-policy-icmptypecode-code): {{Integer}}
   [Type](#cfn-fms-policy-icmptypecode-type): {{Integer}}
 ```

@@ -32,13 +32,13 @@ In the `Action` element of your IAM policy statement, you can specify any API ac
 
 To specify multiple actions in a single statement, separate them with commas, as follows:
 
-```
+```json
 "Action": [ "cloudformation:{{action1}}", "cloudformation:{{action2}}" ]
 ```
 
 You can also specify multiple actions using wildcards. For example, you can specify all actions whose names begin with the word `Get`, as follows:
 
-```
+```json
 "Action": "cloudformation:Get*"
 ```
 
@@ -52,7 +52,7 @@ The following shows an example of a permissions policy that grants permissions t
 **Example 1: A sample policy that grants view stack permissions**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":[{
@@ -73,7 +73,7 @@ Users who create or delete stacks need additional permissions based on their sta
 **Example 2: A sample policy that grants create and view stack actions and all Amazon SQS actions**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":[{
@@ -128,7 +128,7 @@ You can specify actions for a specific stack, as shown in the following policy e
 **Example 1: A sample policy that denies the delete and update stack actions for the specified stack**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -151,7 +151,7 @@ To allow `AWS::Serverless` transforms to create a change set, include the `arn:a
 **Example 2: A sample policy that allows the create change set action for the specified transform**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

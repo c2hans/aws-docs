@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codebuild-project-projectbuildbatchconfig-syntax.json"></a>
 
-```
+```json
 {
   "[BatchReportMode](#cfn-codebuild-project-projectbuildbatchconfig-batchreportmode)" : {{String}},
   "[CombineArtifacts](#cfn-codebuild-project-projectbuildbatchconfig-combineartifacts)" : {{Boolean}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codebuild-project-projectbuildbatchconfig-syntax.yaml"></a>
 
-```
+```yaml
   [BatchReportMode](#cfn-codebuild-project-projectbuildbatchconfig-batchreportmode): {{String}}
   [CombineArtifacts](#cfn-codebuild-project-projectbuildbatchconfig-combineartifacts): {{Boolean}}
   [Restrictions](#cfn-codebuild-project-projectbuildbatchconfig-restrictions): {{

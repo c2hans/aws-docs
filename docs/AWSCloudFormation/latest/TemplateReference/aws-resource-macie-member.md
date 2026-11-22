@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-macie-member-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Macie::Member",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-macie-member-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Macie::Member
 Properties:
   [AccountId](#cfn-macie-member-accountid): {{String}}

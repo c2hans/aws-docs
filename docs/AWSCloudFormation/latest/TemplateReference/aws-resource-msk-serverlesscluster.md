@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-msk-serverlesscluster-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MSK::ServerlessCluster",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-msk-serverlesscluster-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MSK::ServerlessCluster
 Properties:
   [ClientAuthentication](#cfn-msk-serverlesscluster-clientauthentication): {{

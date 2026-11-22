@@ -28,7 +28,7 @@ Windows Sysprep and the EC2Config service perform the following actions when pre
 
 1. The system runs `BeforeSysprep.cmd`. This command creates a registry key as follows:
 
-   ```
+   ```batch
    reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections /t REG_DWORD /d 1 /f
    ```
 
@@ -36,7 +36,7 @@ Windows Sysprep and the EC2Config service perform the following actions when pre
 
 1. The EC2Config service calls Windows Sysprep by running the following command:
 
-   ```
+   ```batch
    sysprep.exe /unattend: "C:\Program Files\Amazon\Ec2ConfigService\sysprep2008.xml" /oobe /generalize /shutdown
    ```
 
@@ -162,7 +162,7 @@ When you are asked to confirm that you want to run Windows Sysprep and shut down
 
 You can manually invoke the Windows Sysprep tool from the command line using the following command:
 
-```
+```batch
 "%programfiles%\amazon\ec2configservice\"ec2config.exe -sysprep""
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspacesweb-usersettings-cookiesynchronizationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Allowlist](#cfn-workspacesweb-usersettings-cookiesynchronizationconfiguration-allowlist)" : {{[ CookieSpecification, ... ]}},
   "[Blocklist](#cfn-workspacesweb-usersettings-cookiesynchronizationconfiguration-blocklist)" : {{[ CookieSpecification, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspacesweb-usersettings-cookiesynchronizationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Allowlist](#cfn-workspacesweb-usersettings-cookiesynchronizationconfiguration-allowlist): {{
     - CookieSpecification}}
   [Blocklist](#cfn-workspacesweb-usersettings-cookiesynchronizationconfiguration-blocklist): {{

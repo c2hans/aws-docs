@@ -21,7 +21,7 @@ The `logs:PutSubscriptionFilter` permission described in this section applies to
 
    The command returns output similar to the following:
 
-   ```
+   ```json
    {
    "UserId": "{{User ID}}",
    "Account": "{{sending account id}}",
@@ -37,7 +37,7 @@ The `logs:PutSubscriptionFilter` permission described in this section applies to
 
    The following policy provides permissions to create a subscription filter on any destination resource only in a single AWS account, account `999999999999`:
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [
@@ -56,7 +56,7 @@ The `logs:PutSubscriptionFilter` permission described in this section applies to
 
    The following policy provides permissions to create a subscription filter only on a specific destination resource named `sampleDestination` in single AWS account, account `999999999999`:
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [

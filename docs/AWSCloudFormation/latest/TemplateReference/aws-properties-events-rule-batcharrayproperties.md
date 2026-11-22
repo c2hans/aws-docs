@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-events-rule-batcharrayproperties-syntax.json"></a>
 
-```
+```json
 {
   "[Size](#cfn-events-rule-batcharrayproperties-size)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-events-rule-batcharrayproperties-syntax.yaml"></a>
 
-```
+```yaml
   [Size](#cfn-events-rule-batcharrayproperties-size): {{Integer}}
 ```
 
@@ -49,7 +49,7 @@ The following example sets the `BatchArrayProperties` property to 950.
 #### JSON
 <a name="aws-properties-events-rule-batcharrayproperties--examples--Set_the_BatchArrayProperties_property--json"></a>
 
-```
+```json
 "ArrayProperties": {
   "Size": 950
 }
@@ -58,7 +58,7 @@ The following example sets the `BatchArrayProperties` property to 950.
 #### YAML
 <a name="aws-properties-events-rule-batcharrayproperties--examples--Set_the_BatchArrayProperties_property--yaml"></a>
 
-```
+```yaml
 ArrayProperties:
   Size: 950
 ```

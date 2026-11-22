@@ -22,7 +22,7 @@ The following example creates a dataframe with two columns and three rows of dat
 
 The following example imports the matplotlib library, creates a set of x and y coordinates, and then uses the use the `%matplot` magic command to create a graph of the points.
 
-```
+```python
 import matplotlib.pyplot as plt
 x=[3,4,5,6,7,8,9,10,11,12]
 y= [9,16,25,36,49,64,81,100,121,144]
@@ -39,7 +39,7 @@ plt.plot(x,y)
 
 The following example uses both the matplotlib and seaborn libraries to create a simple bar graph.
 
-```
+```py
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -59,7 +59,7 @@ sns.barplot(x, y)
 
 The following example uses the [StringIO](https://docs.python.org/3.13/library/io.html#io.StringIO), plotly, and pandas libraries on stock price data to create a graph of stock activity from February and March of 2015.
 
-```
+```py
 from io import StringIO
 csvString = """
 Date,AAPL.Open,AAPL.High,AAPL.Low,AAPL.Close,AAPL.Volume,AAPL.Adjusted,dn,mavg,up,direction

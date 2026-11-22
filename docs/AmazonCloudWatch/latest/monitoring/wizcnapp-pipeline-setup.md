@@ -8,7 +8,7 @@ Collects cloud-native application protection platform (CNAPP) data from Wiz usin
 
 Configure the Wiz CNAPP source with the following parameters:
 
-```
+```yaml
 source:
   wiz_cnapp:
     region: "<example-region>"

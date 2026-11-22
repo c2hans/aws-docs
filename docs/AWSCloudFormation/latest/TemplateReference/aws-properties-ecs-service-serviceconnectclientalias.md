@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-serviceconnectclientalias-syntax.json"></a>
 
-```
+```json
 {
   "[DnsName](#cfn-ecs-service-serviceconnectclientalias-dnsname)" : {{String}},
   "[Port](#cfn-ecs-service-serviceconnectclientalias-port)" : {{Integer}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-serviceconnectclientalias-syntax.yaml"></a>
 
-```
+```yaml
   [DnsName](#cfn-ecs-service-serviceconnectclientalias-dnsname): {{String}}
   [Port](#cfn-ecs-service-serviceconnectclientalias-port): {{Integer}}
   [TestTrafficRules](#cfn-ecs-service-serviceconnectclientalias-testtrafficrules): {{

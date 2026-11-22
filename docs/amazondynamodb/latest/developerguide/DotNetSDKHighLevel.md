@@ -13,7 +13,7 @@ The object persistence model does not provide an API to create, update, or delet
 
 The following example shows how the object persistence model works. It starts with the `ProductCatalog` table. It has `Id` as the primary key.
 
-```
+```csharp
 ProductCatalog(Id, ...)
 ```
 
@@ -21,7 +21,7 @@ Suppose that you have a `Book` class with `Title`, `ISBN`, and `Authors` propert
 
 **Example**
 
-```
+```csharp
 [DynamoDBTable("ProductCatalog")]
   public class Book
   {

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-histogramvisual-syntax.json"></a>
 
-```
+```json
 {
   "[Actions](#cfn-quicksight-analysis-histogramvisual-actions)" : {{[ VisualCustomAction, ... ]}},
   "[ChartConfiguration](#cfn-quicksight-analysis-histogramvisual-chartconfiguration)" : {{HistogramConfiguration}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-histogramvisual-syntax.yaml"></a>
 
-```
+```yaml
   [Actions](#cfn-quicksight-analysis-histogramvisual-actions): {{
     - VisualCustomAction}}
   [ChartConfiguration](#cfn-quicksight-analysis-histogramvisual-chartconfiguration): {{

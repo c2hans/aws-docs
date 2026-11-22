@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-linechartmarkerstylesettings-syntax.json"></a>
 
-```
+```json
 {
   "[MarkerColor](#cfn-quicksight-template-linechartmarkerstylesettings-markercolor)" : {{String}},
   "[MarkerShape](#cfn-quicksight-template-linechartmarkerstylesettings-markershape)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-linechartmarkerstylesettings-syntax.yaml"></a>
 
-```
+```yaml
   [MarkerColor](#cfn-quicksight-template-linechartmarkerstylesettings-markercolor): {{String}}
   [MarkerShape](#cfn-quicksight-template-linechartmarkerstylesettings-markershape): {{String}}
   [MarkerSize](#cfn-quicksight-template-linechartmarkerstylesettings-markersize): {{String}}

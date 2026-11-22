@@ -71,13 +71,13 @@ To access instance metadata properties from within a running instance, get the d
 
 **IPv4**
 
-```
+```bash
 http://169.254.169.254/latest/meta-data/
 ```
 
 **IPv6**
 
-```
+```bash
 http://[fd00:ec2::254]/latest/meta-data/
 ```
 
@@ -88,13 +88,13 @@ To retrieve dynamic data from within a running instance, use one of the followin
 
 **IPv4**
 
-```
+```bash
 http://169.254.169.254/latest/dynamic/
 ```
 
 **IPv6**
 
-```
+```bash
 http://[fd00:ec2::254]/latest/dynamic/
 ```
 
@@ -103,7 +103,7 @@ The following examples use `cURL` to retrieve the high-level instance identity c
 
 *IMDSv2*
 
-```
+```bash
 [ec2-user ~]$ TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` \
 && curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/dynamic/instance-identity/
 rsa2048
@@ -115,7 +115,7 @@ dsa2048
 
 *IMDSv1*
 
-```
+```bash
 [ec2-user ~]$ curl http://169.254.169.254/latest/dynamic/instance-identity/
 rsa2048
 pkcs7
@@ -129,11 +129,11 @@ The following examples use PowerShell to retrieve the high-level instance identi
 
 *IMDSv2*
 
-```
+```PowerShell
 PS C:\> [string]$token = Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token-ttl-seconds" = "21600"} -Method PUT -Uri http://169.254.169.254/latest/api/token
 ```
 
-```
+```PowerShell
 PS C:\> Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token" = $token} -Method GET -Uri http://169.254.169.254/latest/dynamic/instance-identity/
 document
 rsa2048
@@ -143,7 +143,7 @@ signature
 
 *IMDSv1*
 
-```
+```PowerShell
 PS C:\> Invoke-RestMethod -uri http://169.254.169.254/latest/dynamic/instance-identity/
 document
 rsa2048
@@ -160,13 +160,13 @@ To retrieve user data from an instance, use one of the following URIs. To retrie
 
 **IPv4**
 
-```
+```bash
 http://169.254.169.254/latest/user-data
 ```
 
 **IPv6**
 
-```
+```bash
 http://[fd00:ec2::254]/latest/user-data
 ```
 
@@ -177,7 +177,7 @@ The following examples use `cURL` to retrieve user data that was specified as co
 
 *IMDSv2*
 
-```
+```bash
 TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` \
 && curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/user-data
 1234,john,reboot,true | 4512,richard, | 173,,,
@@ -185,7 +185,7 @@ TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metad
 
 *IMDSv1*
 
-```
+```bash
 curl http://169.254.169.254/latest/user-data
 1234,john,reboot,true | 4512,richard, | 173,,,
 ```
@@ -195,18 +195,18 @@ The following examples use PowerShell to retrieve user data that was specified a
 
 *IMDSv2*
 
-```
+```PowerShell
 [string]$token = Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token-ttl-seconds" = "21600"} -Method PUT -Uri http://169.254.169.254/latest/api/token
 ```
 
-```
+```PowerShell
 Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token" = $token} -Method GET -Uri http://169.254.169.254/latest/user-data
 1234,john,reboot,true | 4512,richard, | 173,,,
 ```
 
 *IMDSv1*
 
-```
+```PowerShell
 Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token" = Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token-ttl-seconds" = "21600"} `
 -Method PUT -Uri http://169.254.169.254/latest/api/token} -Method GET -uri http://169.254.169.254/latest/user-data
 1234,john,reboot,true | 4512,richard, | 173,,,
@@ -217,7 +217,7 @@ The following examples use `cURL` to retrieve user data that was specified as a 
 
 *IMDSv2*
 
-```
+```bash
 TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` \
 && curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/user-data
 #!/bin/bash
@@ -228,7 +228,7 @@ chkconfig httpd on
 
 *IMDSv1*
 
-```
+```bash
 curl http://169.254.169.254/latest/user-data
 #!/bin/bash
 yum update -y
@@ -241,11 +241,11 @@ The following examples use PowerShell to retrieve user data that was specified a
 
 *IMDSv2*
 
-```
+```PowerShell
 [string]$token = Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token-ttl-seconds" = "21600"} -Method PUT -Uri http://169.254.169.254/latest/api/token
 ```
 
-```
+```PowerShell
 Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token" = $token} -Method GET -Uri http://169.254.169.254/latest/user-data
 <powershell>
 $file = $env:SystemRoot + "\Temp\" + (Get-Date).ToString("MM-dd-yy-hh-mm")
@@ -256,7 +256,7 @@ New-Item $file -ItemType file
 
 *IMDSv1*
 
-```
+```PowerShell
 Invoke-RestMethod -uri http://169.254.169.254/latest/user-data
 <powershell>
 $file = $env:SystemRoot + "\Temp\" + (Get-Date).ToString("MM-dd-yy-hh-mm")
@@ -295,7 +295,7 @@ You can query the instance metadata options for your existing instances.
 **To query the instance metadata options for an existing instance**
 Use the [describe-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html) command.
 
-```
+```bash
 aws ec2 describe-instances \
     --instance-id {{i-1234567898abcdef0}} \
     --query 'Reservations[].Instances[].MetadataOptions'
@@ -307,7 +307,7 @@ aws ec2 describe-instances \
 **To query the instance metadata options for an existing instance using the Tools for PowerShell**
 Use the [Get-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html) cmdlet.
 
-```
+```PowerShell
 (Get-EC2Instance `
     -InstanceId {{i-1234567898abcdef0}}).Instances.MetadataOptions
 ```

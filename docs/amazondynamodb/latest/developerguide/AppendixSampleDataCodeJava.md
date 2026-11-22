@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/App
 
 The following Java code example creates tables and uploads data to the tables. For step-by-step instructions to run this code using Eclipse, see [Java code examples](CodeSamples.Java.md).
 
-```
+```java
 package com.amazonaws.codesamples;
 
 import java.text.SimpleDateFormat;

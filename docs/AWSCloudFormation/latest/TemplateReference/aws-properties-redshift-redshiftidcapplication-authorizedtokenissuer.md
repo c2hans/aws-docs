@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-redshift-redshiftidcapplication-authorizedtokenissuer-syntax.json"></a>
 
-```
+```json
 {
   "[AuthorizedAudiencesList](#cfn-redshift-redshiftidcapplication-authorizedtokenissuer-authorizedaudienceslist)" : {{[ String, ... ]}},
   "[TrustedTokenIssuerArn](#cfn-redshift-redshiftidcapplication-authorizedtokenissuer-trustedtokenissuerarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-redshift-redshiftidcapplication-authorizedtokenissuer-syntax.yaml"></a>
 
-```
+```yaml
   [AuthorizedAudiencesList](#cfn-redshift-redshiftidcapplication-authorizedtokenissuer-authorizedaudienceslist): {{
     - String}}
   [TrustedTokenIssuerArn](#cfn-redshift-redshiftidcapplication-authorizedtokenissuer-trustedtokenissuerarn): {{String}}

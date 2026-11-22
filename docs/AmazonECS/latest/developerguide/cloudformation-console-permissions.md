@@ -29,7 +29,7 @@ The following policy contains the required CloudFormation permissions, and limit
 
 ****
 
-```
+```json
 {
   "Statement": [
       {
@@ -75,7 +75,7 @@ The Auto Scaling permissions are not limited.
 
 ****
 
-```
+```json
 {
   "Statement": [
       {
@@ -114,7 +114,7 @@ The following policy contains the required permissions, and limits the actions t
 
 ****
 
-```
+```json
 {
   "Statement": [
       {

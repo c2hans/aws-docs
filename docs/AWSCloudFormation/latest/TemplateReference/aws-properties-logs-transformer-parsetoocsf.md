@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-logs-transformer-parsetoocsf-syntax.json"></a>
 
-```
+```json
 {
   "[EventSource](#cfn-logs-transformer-parsetoocsf-eventsource)" : {{String}},
   "[MappingVersion](#cfn-logs-transformer-parsetoocsf-mappingversion)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-logs-transformer-parsetoocsf-syntax.yaml"></a>
 
-```
+```yaml
   [EventSource](#cfn-logs-transformer-parsetoocsf-eventsource): {{String}}
   [MappingVersion](#cfn-logs-transformer-parsetoocsf-mappingversion): {{String}}
   [OcsfVersion](#cfn-logs-transformer-parsetoocsf-ocsfversion): {{String}}

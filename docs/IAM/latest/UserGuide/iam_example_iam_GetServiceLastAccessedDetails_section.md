@@ -44,7 +44,7 @@ For more information, see [Refining permissions in AWS using last accessed infor
 **Tools for PowerShell V4**
 **Example 1: This example provides details of the service last accessed by the IAM entity(user, group, role or policy) associated in Request call. **
 
-```
+```powershell
 Request-IAMServiceLastAccessedDetail -Arn arn:aws:iam::123456789012:user/TestUser
 ```
 **Output:**
@@ -53,7 +53,7 @@ Request-IAMServiceLastAccessedDetail -Arn arn:aws:iam::123456789012:user/TestUse
 f0b7a819-eab0-929b-dc26-ca598911cb9f
 ```
 
-```
+```powershell
 Get-IAMServiceLastAccessedDetail -JobId f0b7a819-eab0-929b-dc26-ca598911cb9f
 ```
 +  For API details, see [GetServiceLastAccessedDetails](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -61,7 +61,7 @@ Get-IAMServiceLastAccessedDetail -JobId f0b7a819-eab0-929b-dc26-ca598911cb9f
 **Tools for PowerShell V5**
 **Example 1: This example provides details of the service last accessed by the IAM entity(user, group, role or policy) associated in Request call. **
 
-```
+```powershell
 Request-IAMServiceLastAccessedDetail -Arn arn:aws:iam::123456789012:user/TestUser
 ```
 **Output:**
@@ -70,7 +70,7 @@ Request-IAMServiceLastAccessedDetail -Arn arn:aws:iam::123456789012:user/TestUse
 f0b7a819-eab0-929b-dc26-ca598911cb9f
 ```
 
-```
+```powershell
 Get-IAMServiceLastAccessedDetail -JobId f0b7a819-eab0-929b-dc26-ca598911cb9f
 ```
 +  For API details, see [GetServiceLastAccessedDetails](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

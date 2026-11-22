@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotwireless-serviceprofile-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-iotwireless-serviceprofile-tag-key)" : {{String}},
   "[Value](#cfn-iotwireless-serviceprofile-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotwireless-serviceprofile-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-iotwireless-serviceprofile-tag-key): {{String}}
   [Value](#cfn-iotwireless-serviceprofile-tag-value): {{String}}
 ```

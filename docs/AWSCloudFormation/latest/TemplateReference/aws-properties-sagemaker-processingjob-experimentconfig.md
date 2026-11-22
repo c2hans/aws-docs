@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-processingjob-experimentconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ExperimentName](#cfn-sagemaker-processingjob-experimentconfig-experimentname)" : {{String}},
   "[RunName](#cfn-sagemaker-processingjob-experimentconfig-runname)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-processingjob-experimentconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ExperimentName](#cfn-sagemaker-processingjob-experimentconfig-experimentname): {{String}}
   [RunName](#cfn-sagemaker-processingjob-experimentconfig-runname): {{String}}
   [TrialComponentDisplayName](#cfn-sagemaker-processingjob-experimentconfig-trialcomponentdisplayname): {{String}}

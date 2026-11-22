@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-mailmanagerarchive-archiveretention-syntax.json"></a>
 
-```
+```json
 {
   "[RetentionPeriod](#cfn-ses-mailmanagerarchive-archiveretention-retentionperiod)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-mailmanagerarchive-archiveretention-syntax.yaml"></a>
 
-```
+```yaml
   [RetentionPeriod](#cfn-ses-mailmanagerarchive-archiveretention-retentionperiod): {{String}}
 ```
 

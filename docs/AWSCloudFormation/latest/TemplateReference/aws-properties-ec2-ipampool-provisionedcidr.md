@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-ipampool-provisionedcidr-syntax.json"></a>
 
-```
+```json
 {
   "[Cidr](#cfn-ec2-ipampool-provisionedcidr-cidr)" : {{String}}
 }
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-ipampool-provisionedcidr-syntax.yaml"></a>
 
-```
+```yaml
   [Cidr](#cfn-ec2-ipampool-provisionedcidr-cidr): {{String}}
 ```
 

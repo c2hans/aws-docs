@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/auto
 
 # Automation
 
-Partner Revenue Measurement supports automation for each implementation method. Choose the automation approach that matches your implementation method.
+AWS Revenue Measurement supports automation for each implementation method. Choose the automation approach that matches your implementation method.
 
 ## AWS Marketplace Metering
 <a name="automation-marketplace-metering"></a>

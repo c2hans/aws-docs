@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrass-subscriptiondefinitionversion-subscription-syntax.json"></a>
 
-```
+```json
 {
   "[Id](#cfn-greengrass-subscriptiondefinitionversion-subscription-id)" : {{String}},
   "[Source](#cfn-greengrass-subscriptiondefinitionversion-subscription-source)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrass-subscriptiondefinitionversion-subscription-syntax.yaml"></a>
 
-```
+```yaml
   [Id](#cfn-greengrass-subscriptiondefinitionversion-subscription-id): {{String}}
   [Source](#cfn-greengrass-subscriptiondefinitionversion-subscription-source): {{String}}
   [Subject](#cfn-greengrass-subscriptiondefinitionversion-subscription-subject): {{String}}

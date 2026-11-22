@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-networksecuritymanager-deployment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::NetworkSecurityManager::Deployment",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-networksecuritymanager-deployment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::NetworkSecurityManager::Deployment
 Properties:
   [AssociatedPolicyList](#cfn-networksecuritymanager-deployment-associatedpolicylist): {{
@@ -70,6 +70,7 @@ This property is required when you create a deployment. Network Security Manager
 `AssociatedScopeList`  <a name="cfn-networksecuritymanager-deployment-associatedscopelist"></a>
 The scope that selects the accounts and resources the deployment protects. A deployment has exactly one scope, so specify a list with a single entry that references an [AWS::NetworkSecurityManager::Scope](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-networksecuritymanager-scope.html) resource by ARN.
 This property is required when you create a deployment. Network Security Manager rejects a deployment that has no associated scope.
+The scope must be a standard scope; you can't associate a scope that has a `SpecializedScopeType`. The scope must also select only resource types that every associated policy can protect. For `IGW_FIREWALL` policies, select `AWS::EC2::VPC`.
 *Required*: Conditional
 *Type*: Array of [AssociatedScope](aws-properties-networksecuritymanager-deployment-associatedscope.md)
 *Minimum*: `1`
@@ -86,9 +87,7 @@ The configuration settings for the deployment.
 A description of the deployment.
 *Required*: No
 *Type*: String
-*Pattern*: `[a-zA-Z0-9 _.:/=+\-@]*`
-*Minimum*: `0`
-*Maximum*: `256`
+*Pattern*: `^[a-zA-Z0-9 _.:/=+\-@]*$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DeploymentName`  <a name="cfn-networksecuritymanager-deployment-deploymentname"></a>
@@ -96,9 +95,7 @@ The name of the deployment. The name must be unique within your AWS account and 
 You can't change the name of a deployment after you create it. Specifying a different name replaces the deployment, which removes the protections applied by the original deployment while the replacement is created.
 *Required*: Yes
 *Type*: String
-*Pattern*: `[a-zA-Z0-9][a-zA-Z0-9 _.:/=+\-@]*`
-*Minimum*: `1`
-*Maximum*: `128`
+*Pattern*: `^[a-zA-Z0-9][a-zA-Z0-9 _.:/=+\-@]*$`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Tags`  <a name="cfn-networksecuritymanager-deployment-tags"></a>
@@ -144,7 +141,7 @@ The current status of the deployment. Deployments that CloudFormation manages ar
 *Allowed Values*: `DRAFT` \| `ACTIVE`
 
 `UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
-The time when the resource was last updated. For a snapshot, this is the time when the snapshot was created.
+The date and time when the deployment was last updated, in ISO 8601 format. For example: `2026-11-19T21:42:56Z`.
 
 `Version`  <a name="Version-fn::getatt"></a>
 The version of the deployment. Network Security Manager assigns version `1` when the deployment is created and increments it each time the deployment is published again, including on stack updates. For example: `3`.
@@ -152,13 +149,17 @@ The version of the deployment. Network Security Manager assigns version `1` when
 ## Examples
 <a name="aws-resource-networksecuritymanager-deployment--examples"></a>
 
+**Topics**
++ [Put a policy into effect against a scope](#aws-resource-networksecuritymanager-deployment--examples--Put_a_policy_into_effect_against_a_scope)
++ [Apply an internet firewall policy to tagged VPCs](#aws-resource-networksecuritymanager-deployment--examples--Apply_an_internet_firewall_policy_to_tagged_VPCs)
+
 ### Put a policy into effect against a scope
 <a name="aws-resource-networksecuritymanager-deployment--examples--Put_a_policy_into_effect_against_a_scope"></a>
 
 #### YAML
 <a name="aws-resource-networksecuritymanager-deployment--examples--Put_a_policy_into_effect_against_a_scope--yaml"></a>
 
-```
+```yaml
                 AWSTemplateFormatVersion: "2010-09-09"
                 Description: >-
                   Puts Network Security Manager protections into effect by tying a policy to a scope.
@@ -215,4 +216,38 @@ The version of the deployment. Network Security Manager assigns version `1` when
                 Outputs:
                   DeploymentArn:
                     Value: !GetAtt BaselineDeployment.DeploymentArn
+```
+
+### Apply an internet firewall policy to tagged VPCs
+<a name="aws-resource-networksecuritymanager-deployment--examples--Apply_an_internet_firewall_policy_to_tagged_VPCs"></a>
+
+#### YAML
+<a name="aws-resource-networksecuritymanager-deployment--examples--Apply_an_internet_firewall_policy_to_tagged_VPCs--yaml"></a>
+
+```yaml
+                AWSTemplateFormatVersion: "2010-09-09"
+                Description: Applies an existing Network Firewall automated internet firewall policy to VPCs tagged for inspection.
+                Parameters:
+                  InternetFirewallPolicyArn:
+                    Type: String
+                    Description: The ARN of an AWS::NetworkSecurityManager::Policy whose FirewallType is IGW_FIREWALL.
+                Resources:
+                  InspectedVpcsScope:
+                    Type: AWS::NetworkSecurityManager::Scope
+                    Properties:
+                      ScopeName: inspected-vpcs
+                      ScopeConfiguration: '{"AccountFilter":{"IncludeAll":true},"ResourceScopes":{"AWS::EC2::VPC":{"Include":{"Expression":{"Criteria":{"Tags":{"internet-inspection":"enabled"}}}}}}}'
+
+                  InternetFirewallDeployment:
+                    Type: AWS::NetworkSecurityManager::Deployment
+                    Properties:
+                      DeploymentName: igw-baseline-deployment
+                      DeploymentDescription: Applies the internet firewall policy to VPCs tagged for inspection.
+                      AssociatedPolicyList:
+                        - PolicyArn: !Ref InternetFirewallPolicyArn
+                      AssociatedScopeList:
+                        - ScopeArn: !GetAtt InspectedVpcsScope.ScopeArn
+                Outputs:
+                  DeploymentArn:
+                    Value: !GetAtt InternetFirewallDeployment.DeploymentArn
 ```

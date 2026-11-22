@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-axisscale-syntax.json"></a>
 
-```
+```json
 {
   "[Linear](#cfn-quicksight-template-axisscale-linear)" : {{AxisLinearScale}},
   "[Logarithmic](#cfn-quicksight-template-axisscale-logarithmic)" : {{AxisLogarithmicScale}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-axisscale-syntax.yaml"></a>
 
-```
+```yaml
   [Linear](#cfn-quicksight-template-axisscale-linear): {{
     AxisLinearScale}}
   [Logarithmic](#cfn-quicksight-template-axisscale-logarithmic): {{

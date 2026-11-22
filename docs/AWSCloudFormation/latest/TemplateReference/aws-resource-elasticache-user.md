@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-elasticache-user-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ElastiCache::User",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-elasticache-user-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ElastiCache::User
 Properties:
   [AccessString](#cfn-elasticache-user-accessstring): {{

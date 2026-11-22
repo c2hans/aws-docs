@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackagev2-originendpoint-dashdvbmetricsreporting-syntax.json"></a>
 
-```
+```json
 {
   "[Probability](#cfn-mediapackagev2-originendpoint-dashdvbmetricsreporting-probability)" : {{Integer}},
   "[ReportingUrl](#cfn-mediapackagev2-originendpoint-dashdvbmetricsreporting-reportingurl)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackagev2-originendpoint-dashdvbmetricsreporting-syntax.yaml"></a>
 
-```
+```yaml
   [Probability](#cfn-mediapackagev2-originendpoint-dashdvbmetricsreporting-probability): {{Integer}}
   [ReportingUrl](#cfn-mediapackagev2-originendpoint-dashdvbmetricsreporting-reportingurl): {{String}}
 ```

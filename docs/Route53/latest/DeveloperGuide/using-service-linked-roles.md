@@ -31,7 +31,7 @@ The role permissions policy allows VPC Resolver to complete the following action
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

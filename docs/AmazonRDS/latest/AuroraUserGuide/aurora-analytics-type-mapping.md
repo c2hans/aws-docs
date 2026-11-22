@@ -68,7 +68,7 @@ You can handle these columns in two ways:
 + **Skip them** – Set `aurora_analytics.skip_unsupported_columns` to `true` so automatic schema inference skips the unsupported columns and creates the foreign table with the remaining columns. A notice is emitted for each skipped column.
 + **Define them manually** – Specify the column list explicitly and declare the struct, map, or nested-list columns as `json` (or `varchar` for a native text representation). Aurora PostgreSQL then returns the data in standard JSON format.
 
-```
+```SQL
 CREATE FOREIGN TABLE my_table (
     id integer,
     name text,

@@ -37,7 +37,7 @@ Let's say that you have enabled the following three security standards in Securi
 
 Here's an example of how that evidence might look:
 
-```
+```java
 {
     "SchemaVersion": "2018-10-08",
     "Id": "arn:aws:securityhub:us-west-2:111122223333:security-control/IAM.4/finding/09876543-p0o9-i8u7-y6t5-098765432109",
@@ -126,7 +126,7 @@ Here's an example of how that evidence might look. Note that in this example, ea
 
 **Evidence for IAM.4 (FSBP)**
 
-```
+```python
 {
   "version":"0",
   "id":"12345678-1q2w-3e4r-5t6y-123456789012",

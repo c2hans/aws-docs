@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-verifiedaccessendpoint-loadbalanceroptions-syntax.json"></a>
 
-```
+```json
 {
   "[LoadBalancerArn](#cfn-ec2-verifiedaccessendpoint-loadbalanceroptions-loadbalancerarn)" : {{String}},
   "[Port](#cfn-ec2-verifiedaccessendpoint-loadbalanceroptions-port)" : {{Integer}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-verifiedaccessendpoint-loadbalanceroptions-syntax.yaml"></a>
 
-```
+```yaml
   [LoadBalancerArn](#cfn-ec2-verifiedaccessendpoint-loadbalanceroptions-loadbalancerarn): {{String}}
   [Port](#cfn-ec2-verifiedaccessendpoint-loadbalanceroptions-port): {{Integer}}
   [PortRanges](#cfn-ec2-verifiedaccessendpoint-loadbalanceroptions-portranges): {{

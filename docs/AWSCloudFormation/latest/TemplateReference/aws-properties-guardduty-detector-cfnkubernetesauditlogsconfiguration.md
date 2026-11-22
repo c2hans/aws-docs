@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-guardduty-detector-cfnkubernetesauditlogsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Enable](#cfn-guardduty-detector-cfnkubernetesauditlogsconfiguration-enable)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-guardduty-detector-cfnkubernetesauditlogsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Enable](#cfn-guardduty-detector-cfnkubernetesauditlogsconfiguration-enable): {{Boolean}}
 ```
 

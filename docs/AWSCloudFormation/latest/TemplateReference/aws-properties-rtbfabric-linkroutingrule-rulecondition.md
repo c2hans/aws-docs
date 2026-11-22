@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rtbfabric-linkroutingrule-rulecondition-syntax.json"></a>
 
-```
+```json
 {
   "[HostHeader](#cfn-rtbfabric-linkroutingrule-rulecondition-hostheader)" : {{String}},
   "[HostHeaderWildcard](#cfn-rtbfabric-linkroutingrule-rulecondition-hostheaderwildcard)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rtbfabric-linkroutingrule-rulecondition-syntax.yaml"></a>
 
-```
+```yaml
   [HostHeader](#cfn-rtbfabric-linkroutingrule-rulecondition-hostheader): {{String}}
   [HostHeaderWildcard](#cfn-rtbfabric-linkroutingrule-rulecondition-hostheaderwildcard): {{String}}
   [PathExact](#cfn-rtbfabric-linkroutingrule-rulecondition-pathexact): {{String}}

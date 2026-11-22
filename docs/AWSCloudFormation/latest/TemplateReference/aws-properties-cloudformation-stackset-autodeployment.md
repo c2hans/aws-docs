@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudformation-stackset-autodeployment-syntax.json"></a>
 
-```
+```json
 {
   "[DependsOn](#cfn-cloudformation-stackset-autodeployment-dependson)" : {{[ String, ... ]}},
   "[Enabled](#cfn-cloudformation-stackset-autodeployment-enabled)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudformation-stackset-autodeployment-syntax.yaml"></a>
 
-```
+```yaml
   [DependsOn](#cfn-cloudformation-stackset-autodeployment-dependson): {{
     - String}}
   [Enabled](#cfn-cloudformation-stackset-autodeployment-enabled): {{Boolean}}

@@ -39,7 +39,9 @@ If you take a snapshot of the DB instance before you start point-in-time recover
    call mysql.rds_group_replication_set_recovery_channel('{{group_replication_user_password}}');
    ```
 
-1. Using the SQL client, call the [mysql.rds\_group\_replication\_start](mysql-stored-proc-active-active-clusters.md#mysql_rds_group_replication_start) stored procedure to start replication:
+1. For RDS for MySQL 9.7, first synchronize local GTIDs. For more information, see [Synchronizing local GTIDs before a DB instance joins an active-active cluster (MySQL 9.7)](mysql-active-active-clusters-sync-gtids.md).
+
+   Using the SQL client, call the [mysql.rds\_group\_replication\_start](mysql-stored-proc-active-active-clusters.md#mysql_rds_group_replication_start) stored procedure to start replication:
 
    ```
    call mysql.rds_group_replication_start(0);
@@ -74,7 +76,9 @@ For information about copying a snapshot to a different AWS Region, see [Conside
    call mysql.rds_group_replication_set_recovery_channel('{{group_replication_user_password}}');
    ```
 
-1. Using the SQL client, call the [mysql.rds\_group\_replication\_start](mysql-stored-proc-active-active-clusters.md#mysql_rds_group_replication_start) stored procedure to start replication:
+1. For RDS for MySQL 9.7, first synchronize local GTIDs. For more information, see [Synchronizing local GTIDs before a DB instance joins an active-active cluster (MySQL 9.7)](mysql-active-active-clusters-sync-gtids.md).
+
+   Using the SQL client, call the [mysql.rds\_group\_replication\_start](mysql-stored-proc-active-active-clusters.md#mysql_rds_group_replication_start) stored procedure to start replication:
 
    ```
    call mysql.rds_group_replication_start(0);

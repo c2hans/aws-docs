@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-devicefarm-networkprofile-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DeviceFarm::NetworkProfile",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-devicefarm-networkprofile-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DeviceFarm::NetworkProfile
 Properties:
   [Description](#cfn-devicefarm-networkprofile-description): {{String}}

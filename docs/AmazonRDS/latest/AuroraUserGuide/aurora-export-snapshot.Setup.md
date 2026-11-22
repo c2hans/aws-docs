@@ -117,7 +117,7 @@ You can use Amazon S3 buckets across AWS accounts. To use a cross-account bucket
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

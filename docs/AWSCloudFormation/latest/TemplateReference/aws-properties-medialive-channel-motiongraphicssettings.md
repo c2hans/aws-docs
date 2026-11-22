@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-motiongraphicssettings-syntax.json"></a>
 
-```
+```json
 {
   "[HtmlMotionGraphicsSettings](#cfn-medialive-channel-motiongraphicssettings-htmlmotiongraphicssettings)" : {{Json}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-motiongraphicssettings-syntax.yaml"></a>
 
-```
+```yaml
   [HtmlMotionGraphicsSettings](#cfn-medialive-channel-motiongraphicssettings-htmlmotiongraphicssettings): {{Json}}
 ```
 

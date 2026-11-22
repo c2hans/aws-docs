@@ -20,7 +20,7 @@ After you configure a bucket to be a Requester Pays bucket, requesters must show
 **Example – Using Requester Pays when deleting an object**
 To use the following [DeleteObjectVersion](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObject.html) API example, replace the `{{user input placeholders}}` with your own information.
 
-```
+```http
 DELETE /Key+?versionId=VersionId HTTP/1.1
 Host: Bucket.s3.amazonaws.com
 x-amz-mfa: {{MFA}}

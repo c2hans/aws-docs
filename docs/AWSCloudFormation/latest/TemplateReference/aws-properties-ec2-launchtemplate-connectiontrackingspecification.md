@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-launchtemplate-connectiontrackingspecification-syntax.json"></a>
 
-```
+```json
 {
   "[TcpEstablishedTimeout](#cfn-ec2-launchtemplate-connectiontrackingspecification-tcpestablishedtimeout)" : {{Integer}},
   "[UdpStreamTimeout](#cfn-ec2-launchtemplate-connectiontrackingspecification-udpstreamtimeout)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-launchtemplate-connectiontrackingspecification-syntax.yaml"></a>
 
-```
+```yaml
   [TcpEstablishedTimeout](#cfn-ec2-launchtemplate-connectiontrackingspecification-tcpestablishedtimeout): {{Integer}}
   [UdpStreamTimeout](#cfn-ec2-launchtemplate-connectiontrackingspecification-udpstreamtimeout): {{Integer}}
   [UdpTimeout](#cfn-ec2-launchtemplate-connectiontrackingspecification-udptimeout): {{Integer}}

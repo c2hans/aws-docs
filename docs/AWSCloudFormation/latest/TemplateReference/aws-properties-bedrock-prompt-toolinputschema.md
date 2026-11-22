@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-prompt-toolinputschema-syntax.json"></a>
 
-```
+```json
 {
   "[Json](#cfn-bedrock-prompt-toolinputschema-json)" : {{Json}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-prompt-toolinputschema-syntax.yaml"></a>
 
-```
+```yaml
   [Json](#cfn-bedrock-prompt-toolinputschema-json): {{
     Json}}
 ```

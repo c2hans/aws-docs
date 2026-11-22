@@ -42,7 +42,7 @@ Lists all exports created in an AWS account. Results are paginated and can be fi
 **Note**
 The new Export APIs don't support sending requests using `query parameters`. This is shown in the following code example.
 
-```
+```java
 import software.amazon.awssdk.services.simpledbv2.SimpleDbV2Client;
 import software.amazon.awssdk.services.simpledbv2.model.ListExportsRequest;
 import software.amazon.awssdk.services.simpledbv2.model.ListExportsResponse;

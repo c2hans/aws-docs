@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-quickresponse-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-wisdom-quickresponse-tag-key)" : {{String}},
   "[Value](#cfn-wisdom-quickresponse-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-quickresponse-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-wisdom-quickresponse-tag-key): {{String}}
   [Value](#cfn-wisdom-quickresponse-tag-value): {{String}}
 ```

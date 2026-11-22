@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rum-appmonitor-deobfuscationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[JavaScriptSourceMaps](#cfn-rum-appmonitor-deobfuscationconfiguration-javascriptsourcemaps)" : {{JavaScriptSourceMaps}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rum-appmonitor-deobfuscationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [JavaScriptSourceMaps](#cfn-rum-appmonitor-deobfuscationconfiguration-javascriptsourcemaps): {{
     JavaScriptSourceMaps}}
 ```

@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-servicecatalog-launchtemplateconstraint-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ServiceCatalog::LaunchTemplateConstraint",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-servicecatalog-launchtemplateconstraint-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ServiceCatalog::LaunchTemplateConstraint
 Properties:
   [AcceptLanguage](#cfn-servicecatalog-launchtemplateconstraint-acceptlanguage): {{String}}

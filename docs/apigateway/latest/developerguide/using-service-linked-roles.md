@@ -27,7 +27,7 @@ The role permissions policy allows API Gateway to complete the following actions
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

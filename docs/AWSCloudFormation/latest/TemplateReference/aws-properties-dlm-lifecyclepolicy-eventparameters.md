@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dlm-lifecyclepolicy-eventparameters-syntax.json"></a>
 
-```
+```json
 {
   "[DescriptionRegex](#cfn-dlm-lifecyclepolicy-eventparameters-descriptionregex)" : {{String}},
   "[EventType](#cfn-dlm-lifecyclepolicy-eventparameters-eventtype)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dlm-lifecyclepolicy-eventparameters-syntax.yaml"></a>
 
-```
+```yaml
   [DescriptionRegex](#cfn-dlm-lifecyclepolicy-eventparameters-descriptionregex): {{String}}
   [EventType](#cfn-dlm-lifecyclepolicy-eventparameters-eventtype): {{String}}
   [SnapshotOwner](#cfn-dlm-lifecyclepolicy-eventparameters-snapshotowner): {{

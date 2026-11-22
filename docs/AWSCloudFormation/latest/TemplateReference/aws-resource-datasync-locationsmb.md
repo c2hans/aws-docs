@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-datasync-locationsmb-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DataSync::LocationSMB",
   "Properties" : {
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-datasync-locationsmb-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DataSync::LocationSMB
 Properties:
   [AgentArns](#cfn-datasync-locationsmb-agentarns): {{
@@ -230,7 +230,7 @@ The following example specifies an SMB location for DataSync. In this example, t
 #### JSON
 <a name="aws-resource-datasync-locationsmb--examples--Creating_an_SMB_location--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Creates an SMB location for DataSync",
@@ -260,7 +260,7 @@ The following example specifies an SMB location for DataSync. In this example, t
 #### YAML
 <a name="aws-resource-datasync-locationsmb--examples--Creating_an_SMB_location--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Creates an SMB location for DataSync
 Resources:

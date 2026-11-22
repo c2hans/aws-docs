@@ -18,7 +18,7 @@ Ends a connection to the MySQL server.
 ### Syntax
 <a name="mysql_rds_kill-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_kill({{processID}});
 ```
 
@@ -38,7 +38,7 @@ Each connection to the MySQL server runs in a separate thread. To end a connecti
 
 The following example ends a connection with a thread ID of 4243:
 
-```
+```sql
 CALL mysql.rds_kill(4243);
 ```
 
@@ -50,7 +50,7 @@ Ends a query running against the MySQL server.
 ### Syntax
 <a name="mysql_rds_kill_query-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_kill_query({{processID}});
 ```
 

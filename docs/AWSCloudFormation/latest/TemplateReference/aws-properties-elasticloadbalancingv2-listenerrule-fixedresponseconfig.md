@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-fixedresponseconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ContentType](#cfn-elasticloadbalancingv2-listenerrule-fixedresponseconfig-contenttype)" : {{String}},
   "[MessageBody](#cfn-elasticloadbalancingv2-listenerrule-fixedresponseconfig-messagebody)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-fixedresponseconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ContentType](#cfn-elasticloadbalancingv2-listenerrule-fixedresponseconfig-contenttype): {{String}}
   [MessageBody](#cfn-elasticloadbalancingv2-listenerrule-fixedresponseconfig-messagebody): {{String}}
   [StatusCode](#cfn-elasticloadbalancingv2-listenerrule-fixedresponseconfig-statuscode): {{String}}
@@ -71,7 +71,7 @@ The following example creates a listener rule with an action that returns the sp
 #### YAML
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-fixedresponseconfig--examples----yaml"></a>
 
-```
+```yaml
 myListenerRule:
     Type: AWS::ElasticLoadBalancingV2::ListenerRule
     Properties:
@@ -92,7 +92,7 @@ myListenerRule:
 #### JSON
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-fixedresponseconfig--examples----json"></a>
 
-```
+```json
 {
     "myListenerRule": {
         "Type": "AWS::ElasticLoadBalancingV2::ListenerRule",

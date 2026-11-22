@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cognito-userpoolreplica-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Cognito::UserPoolReplica",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cognito-userpoolreplica-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Cognito::UserPoolReplica
 Properties:
   [RegionName](#cfn-cognito-userpoolreplica-regionname): {{String}}

@@ -12,7 +12,7 @@ Consider an application that reads orders information from an `orders` table tha
 
 The following example creates a table in Parquet:
 
-```
+```sql
 CREATE EXTERNAL TABLE orders_parquet (
    `orderkey` int,
    `orderstatus` string,
@@ -27,7 +27,7 @@ LOCATION 's3://amzn-s3-demo-bucket/orders_ parquet/';
 
 The following example creates the same table in CSV:
 
-```
+```sql
 CREATE EXTERNAL TABLE orders_csv (
    `orderkey` int,
    `orderstatus` string,

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-omics-workflow-definitionrepository-syntax.json"></a>
 
-```
+```json
 {
   "[connectionArn](#cfn-omics-workflow-definitionrepository-connectionarn)" : {{String}},
   "[excludeFilePatterns](#cfn-omics-workflow-definitionrepository-excludefilepatterns)" : {{[ String, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-omics-workflow-definitionrepository-syntax.yaml"></a>
 
-```
+```yaml
   [connectionArn](#cfn-omics-workflow-definitionrepository-connectionarn): {{String}}
   [excludeFilePatterns](#cfn-omics-workflow-definitionrepository-excludefilepatterns): {{
     - String}}

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apigateway-usageplan-quotasettings-syntax.json"></a>
 
-```
+```json
 {
   "[Limit](#cfn-apigateway-usageplan-quotasettings-limit)" : {{Integer}},
   "[Offset](#cfn-apigateway-usageplan-quotasettings-offset)" : {{Integer}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apigateway-usageplan-quotasettings-syntax.yaml"></a>
 
-```
+```yaml
   [Limit](#cfn-apigateway-usageplan-quotasettings-limit): {{Integer}}
   [Offset](#cfn-apigateway-usageplan-quotasettings-offset): {{Integer}}
   [Period](#cfn-apigateway-usageplan-quotasettings-period): {{String}}

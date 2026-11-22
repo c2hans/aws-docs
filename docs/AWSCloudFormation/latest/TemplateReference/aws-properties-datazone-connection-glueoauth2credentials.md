@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-connection-glueoauth2credentials-syntax.json"></a>
 
-```
+```json
 {
   "[AccessToken](#cfn-datazone-connection-glueoauth2credentials-accesstoken)" : {{String}},
   "[JwtToken](#cfn-datazone-connection-glueoauth2credentials-jwttoken)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-connection-glueoauth2credentials-syntax.yaml"></a>
 
-```
+```yaml
   [AccessToken](#cfn-datazone-connection-glueoauth2credentials-accesstoken): {{String}}
   [JwtToken](#cfn-datazone-connection-glueoauth2credentials-jwttoken): {{String}}
   [RefreshToken](#cfn-datazone-connection-glueoauth2credentials-refreshtoken): {{String}}

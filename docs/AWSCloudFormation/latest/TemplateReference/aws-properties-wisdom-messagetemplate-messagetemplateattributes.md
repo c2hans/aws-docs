@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-messagetemplate-messagetemplateattributes-syntax.json"></a>
 
-```
+```json
 {
   "[AgentAttributes](#cfn-wisdom-messagetemplate-messagetemplateattributes-agentattributes)" : {{AgentAttributes}},
   "[CustomAttributes](#cfn-wisdom-messagetemplate-messagetemplateattributes-customattributes)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-messagetemplate-messagetemplateattributes-syntax.yaml"></a>
 
-```
+```yaml
   [AgentAttributes](#cfn-wisdom-messagetemplate-messagetemplateattributes-agentattributes): {{
     AgentAttributes}}
   [CustomAttributes](#cfn-wisdom-messagetemplate-messagetemplateattributes-customattributes): {{

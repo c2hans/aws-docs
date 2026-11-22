@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lightsail-domain-domainentry-syntax.json"></a>
 
-```
+```json
 {
   "[Id](#cfn-lightsail-domain-domainentry-id)" : {{String}},
   "[IsAlias](#cfn-lightsail-domain-domainentry-isalias)" : {{Boolean}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lightsail-domain-domainentry-syntax.yaml"></a>
 
-```
+```yaml
   [Id](#cfn-lightsail-domain-domainentry-id): {{String}}
   [IsAlias](#cfn-lightsail-domain-domainentry-isalias): {{Boolean}}
   [Name](#cfn-lightsail-domain-domainentry-name): {{String}}

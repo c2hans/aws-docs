@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-launchtemplate-launchtemplatedata-syntax.json"></a>
 
-```
+```json
 {
   "[BlockDeviceMappings](#cfn-ec2-launchtemplate-launchtemplatedata-blockdevicemappings)" : {{[ BlockDeviceMapping, ... ]}},
   "[CapacityReservationSpecification](#cfn-ec2-launchtemplate-launchtemplatedata-capacityreservationspecification)" : {{CapacityReservationSpecification}},
@@ -57,7 +57,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-launchtemplate-launchtemplatedata-syntax.yaml"></a>
 
-```
+```yaml
   [BlockDeviceMappings](#cfn-ec2-launchtemplate-launchtemplatedata-blockdevicemappings): {{
     - BlockDeviceMapping}}
   [CapacityReservationSpecification](#cfn-ec2-launchtemplate-launchtemplatedata-capacityreservationspecification): {{

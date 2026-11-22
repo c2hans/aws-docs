@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-routeroutput-secretsmanagerendpointencryptionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EncryptionSecret](#cfn-mediaconnect-routeroutput-secretsmanagerendpointencryptionconfiguration-encryptionsecret)" : {{EndpointEncryptionSecretConfiguration}},
   "[EncryptionSecretType](#cfn-mediaconnect-routeroutput-secretsmanagerendpointencryptionconfiguration-encryptionsecrettype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-routeroutput-secretsmanagerendpointencryptionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EncryptionSecret](#cfn-mediaconnect-routeroutput-secretsmanagerendpointencryptionconfiguration-encryptionsecret): {{
     EndpointEncryptionSecretConfiguration}}
   [EncryptionSecretType](#cfn-mediaconnect-routeroutput-secretsmanagerendpointencryptionconfiguration-encryptionsecrettype): {{String}}

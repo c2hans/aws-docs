@@ -24,7 +24,7 @@ aws ec2 --region us-east-1 describe-aws-network-performance-metric-subscriptions
 
 The following is example output.
 
-```
+```json
 {
     "Subscriptions": [
         {
@@ -64,7 +64,7 @@ aws ec2 --region us-east-1 disable-aws-network-performance-metric-subscription -
 
 The following is example output.
 
-```
+```json
 {
     "Output": true
 }
@@ -86,7 +86,7 @@ aws ec2 --region us-east-1 enable-aws-network-performance-metric-subscription --
 
 The following is example output.
 
-```
+```json
 {
     "Output": true
 }

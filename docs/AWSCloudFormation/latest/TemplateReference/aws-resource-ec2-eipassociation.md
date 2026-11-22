@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-eipassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::EIPAssociation",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-eipassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::EIPAssociation
 Properties:
   [AllocationId](#cfn-ec2-eipassociation-allocationid): {{String}}
@@ -104,7 +104,7 @@ The following example creates an Elastic IP address and a network interface, and
 #### JSON
 <a name="aws-resource-ec2-eipassociation--examples--Associate_an_Elastic_IP_address_to_an_instance--json"></a>
 
-```
+```json
   "Resources" : {
     "myEIP" : {
         "Type" : "AWS::EC2::EIP",
@@ -136,7 +136,7 @@ The following example creates an Elastic IP address and a network interface, and
 #### YAML
 <a name="aws-resource-ec2-eipassociation--examples--Associate_an_Elastic_IP_address_to_an_instance--yaml"></a>
 
-```
+```yaml
 Resources:
   myEIP:
     Type: AWS::EC2::EIP

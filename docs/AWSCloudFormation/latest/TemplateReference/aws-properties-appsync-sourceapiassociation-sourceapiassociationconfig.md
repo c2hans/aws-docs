@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appsync-sourceapiassociation-sourceapiassociationconfig-syntax.json"></a>
 
-```
+```json
 {
   "[MergeType](#cfn-appsync-sourceapiassociation-sourceapiassociationconfig-mergetype)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appsync-sourceapiassociation-sourceapiassociationconfig-syntax.yaml"></a>
 
-```
+```yaml
   [MergeType](#cfn-appsync-sourceapiassociation-sourceapiassociationconfig-mergetype): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-routingprofile-routingprofilequeuereference-syntax.json"></a>
 
-```
+```json
 {
   "[Channel](#cfn-connect-routingprofile-routingprofilequeuereference-channel)" : {{String}},
   "[QueueArn](#cfn-connect-routingprofile-routingprofilequeuereference-queuearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-routingprofile-routingprofilequeuereference-syntax.yaml"></a>
 
-```
+```yaml
   [Channel](#cfn-connect-routingprofile-routingprofilequeuereference-channel): {{String}}
   [QueueArn](#cfn-connect-routingprofile-routingprofilequeuereference-queuearn): {{String}}
 ```

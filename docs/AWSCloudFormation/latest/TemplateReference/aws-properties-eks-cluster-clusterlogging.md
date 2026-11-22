@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-cluster-clusterlogging-syntax.json"></a>
 
-```
+```json
 {
   "[EnabledTypes](#cfn-eks-cluster-clusterlogging-enabledtypes)" : {{[ LoggingTypeConfig, ... ]}}
 }
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-cluster-clusterlogging-syntax.yaml"></a>
 
-```
+```yaml
   [EnabledTypes](#cfn-eks-cluster-clusterlogging-enabledtypes): {{
     - LoggingTypeConfig}}
 ```

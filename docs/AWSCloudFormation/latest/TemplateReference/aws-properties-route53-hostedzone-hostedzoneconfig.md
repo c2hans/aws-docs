@@ -16,17 +16,19 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-route53-hostedzone-hostedzoneconfig-syntax.json"></a>
 
-```
+```json
 {
-  "[Comment](#cfn-route53-hostedzone-hostedzoneconfig-comment)" : {{String}}
+  "[Comment](#cfn-route53-hostedzone-hostedzoneconfig-comment)" : {{String}},
+  "[HostedZoneTier](#cfn-route53-hostedzone-hostedzoneconfig-hostedzonetier)" : {{String}}
 }
 ```
 
 ### YAML
 <a name="aws-properties-route53-hostedzone-hostedzoneconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Comment](#cfn-route53-hostedzone-hostedzoneconfig-comment): {{String}}
+  [HostedZoneTier](#cfn-route53-hostedzone-hostedzoneconfig-hostedzonetier): {{String}}
 ```
 
 ## Properties
@@ -37,6 +39,13 @@ Any comments that you want to include about the hosted zone.
 *Required*: No
 *Type*: String
 *Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`HostedZoneTier`  <a name="cfn-route53-hostedzone-hostedzoneconfig-hostedzonetier"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `STANDARD | ADVANCED`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also

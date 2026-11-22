@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iot-thingprincipalattachment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoT::ThingPrincipalAttachment",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iot-thingprincipalattachment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoT::ThingPrincipalAttachment
 Properties:
   [Principal](#cfn-iot-thingprincipalattachment-principal): {{String}}
@@ -72,7 +72,7 @@ The following example attaches a principal to a thing.
 #### JSON
 <a name="aws-resource-iot-thingprincipalattachment--examples----json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Parameters": {
@@ -98,7 +98,7 @@ The following example attaches a principal to a thing.
 #### YAML
 <a name="aws-resource-iot-thingprincipalattachment--examples----yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   MyThingPrincipalAttachment:

@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-redirectconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Host](#cfn-elasticloadbalancingv2-listenerrule-redirectconfig-host)" : {{String}},
   "[Path](#cfn-elasticloadbalancingv2-listenerrule-redirectconfig-path)" : {{String}},
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-redirectconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Host](#cfn-elasticloadbalancingv2-listenerrule-redirectconfig-host): {{String}}
   [Path](#cfn-elasticloadbalancingv2-listenerrule-redirectconfig-path): {{String}}
   [Port](#cfn-elasticloadbalancingv2-listenerrule-redirectconfig-port): {{String}}
@@ -108,7 +108,7 @@ This example creates a listener rule with an action that redirects HTTPS request
 #### YAML
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-redirectconfig--examples----yaml"></a>
 
-```
+```yaml
 myRedirectListenerRule:
   Type: AWS::ElasticLoadBalancingV2::ListenerRule
   Properties:
@@ -132,7 +132,7 @@ myRedirectListenerRule:
 #### JSON
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-redirectconfig--examples----json"></a>
 
-```
+```json
 {
     "myHTTPSlistenerRule": {
         "Type": "AWS::ElasticLoadBalancingV2::ListenerRule",

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codepipeline-pipeline-gitfilepathfiltercriteria-syntax.json"></a>
 
-```
+```json
 {
   "[Excludes](#cfn-codepipeline-pipeline-gitfilepathfiltercriteria-excludes)" : {{[ String, ... ]}},
   "[Includes](#cfn-codepipeline-pipeline-gitfilepathfiltercriteria-includes)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codepipeline-pipeline-gitfilepathfiltercriteria-syntax.yaml"></a>
 
-```
+```yaml
   [Excludes](#cfn-codepipeline-pipeline-gitfilepathfiltercriteria-excludes): {{
     - String}}
   [Includes](#cfn-codepipeline-pipeline-gitfilepathfiltercriteria-includes): {{

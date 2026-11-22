@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchservice-domain-ebsoptions-syntax.json"></a>
 
-```
+```json
 {
   "[EBSEnabled](#cfn-opensearchservice-domain-ebsoptions-ebsenabled)" : {{Boolean}},
   "[Iops](#cfn-opensearchservice-domain-ebsoptions-iops)" : {{Integer}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchservice-domain-ebsoptions-syntax.yaml"></a>
 
-```
+```yaml
   [EBSEnabled](#cfn-opensearchservice-domain-ebsoptions-ebsenabled): {{Boolean}}
   [Iops](#cfn-opensearchservice-domain-ebsoptions-iops): {{Integer}}
   [Throughput](#cfn-opensearchservice-domain-ebsoptions-throughput): {{Integer}}

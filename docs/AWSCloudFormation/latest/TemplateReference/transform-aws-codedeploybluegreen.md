@@ -25,7 +25,7 @@ To declare this transform in your CloudFormation template, use the following syn
 #### JSON
 <a name="aws-codedeploybluegreen-syntax.json"></a>
 
-```
+```json
 {
   "Transform":[
     "AWS::CodeDeployBlueGreen"
@@ -39,7 +39,7 @@ To declare this transform in your CloudFormation template, use the following syn
 #### YAML
 <a name="aws-codedeploybluegreen-syntax.yaml"></a>
 
-```
+```yaml
 Transform:
   - 'AWS::CodeDeployBlueGreen'
 Resources:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-deadline-fleet-vpcconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ResourceConfigurationArns](#cfn-deadline-fleet-vpcconfiguration-resourceconfigurationarns)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-deadline-fleet-vpcconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ResourceConfigurationArns](#cfn-deadline-fleet-vpcconfiguration-resourceconfigurationarns): {{
     - String}}
 ```

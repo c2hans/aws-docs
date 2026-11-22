@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpool-invitemessagetemplate-syntax.json"></a>
 
-```
+```json
 {
   "[EmailMessage](#cfn-cognito-userpool-invitemessagetemplate-emailmessage)" : {{String}},
   "[EmailSubject](#cfn-cognito-userpool-invitemessagetemplate-emailsubject)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpool-invitemessagetemplate-syntax.yaml"></a>
 
-```
+```yaml
   [EmailMessage](#cfn-cognito-userpool-invitemessagetemplate-emailmessage): {{String}}
   [EmailSubject](#cfn-cognito-userpool-invitemessagetemplate-emailsubject): {{String}}
   [SMSMessage](#cfn-cognito-userpool-invitemessagetemplate-smsmessage): {{String}}

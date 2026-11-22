@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-b2bi-partnership-x12envelope-syntax.json"></a>
 
-```
+```json
 {
   "[Common](#cfn-b2bi-partnership-x12envelope-common)" : {{X12OutboundEdiHeaders}},
   "[WrapOptions](#cfn-b2bi-partnership-x12envelope-wrapoptions)" : {{WrapOptions}}
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-b2bi-partnership-x12envelope-syntax.yaml"></a>
 
-```
+```yaml
   [Common](#cfn-b2bi-partnership-x12envelope-common): {{
     X12OutboundEdiHeaders}}
   [WrapOptions](#cfn-b2bi-partnership-x12envelope-wrapoptions): {{

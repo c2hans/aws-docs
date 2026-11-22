@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-volumeattachment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::VolumeAttachment",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-volumeattachment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::VolumeAttachment
 Properties:
   [Device](#cfn-ec2-volumeattachment-device): {{String}}
@@ -84,7 +84,7 @@ This example attaches an EC2 EBS volume to the EC2 instance with the logical nam
 #### JSON
 <a name="aws-resource-ec2-volumeattachment--examples--Attach_an_EBS_volume_to_a_running_instance--json"></a>
 
-```
+```json
 "NewVolume" : {
    "Type" : "AWS::EC2::Volume",
    "Properties" : {
@@ -110,7 +110,7 @@ This example attaches an EC2 EBS volume to the EC2 instance with the logical nam
 #### YAML
 <a name="aws-resource-ec2-volumeattachment--examples--Attach_an_EBS_volume_to_a_running_instance--yaml"></a>
 
-```
+```yaml
 NewVolume:
   Type: AWS::EC2::Volume
   Properties:

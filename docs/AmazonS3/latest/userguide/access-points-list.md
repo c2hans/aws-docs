@@ -28,13 +28,13 @@ The following `list-access-points` example command shows how you can use the AWS
 
 The following command lists access points for AWS account {{111122223333}}.
 
-```
+```bash
 aws s3control list-access-points --account-id {{111122223333}}
 ```
 
 The following command lists access points for AWS account {{111122223333}} that are attached to bucket {{amzn-s3-demo-bucket}}.
 
-```
+```bash
 aws s3control list-access-points --account-id {{111122223333}} --bucket {{amzn-s3-demo-bucket}}
 ```
 

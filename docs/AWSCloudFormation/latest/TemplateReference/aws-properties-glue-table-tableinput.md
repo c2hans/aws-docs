@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-table-tableinput-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-glue-table-tableinput-description)" : {{String}},
   "[Name](#cfn-glue-table-tableinput-name)" : {{String}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-table-tableinput-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-glue-table-tableinput-description): {{String}}
   [Name](#cfn-glue-table-tableinput-name): {{String}}
   [Owner](#cfn-glue-table-tableinput-owner): {{String}}

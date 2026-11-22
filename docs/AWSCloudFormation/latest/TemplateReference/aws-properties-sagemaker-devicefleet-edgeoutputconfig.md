@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-devicefleet-edgeoutputconfig-syntax.json"></a>
 
-```
+```json
 {
   "[KmsKeyId](#cfn-sagemaker-devicefleet-edgeoutputconfig-kmskeyid)" : {{String}},
   "[S3OutputLocation](#cfn-sagemaker-devicefleet-edgeoutputconfig-s3outputlocation)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-devicefleet-edgeoutputconfig-syntax.yaml"></a>
 
-```
+```yaml
   [KmsKeyId](#cfn-sagemaker-devicefleet-edgeoutputconfig-kmskeyid): {{String}}
   [S3OutputLocation](#cfn-sagemaker-devicefleet-edgeoutputconfig-s3outputlocation): {{String}}
 ```

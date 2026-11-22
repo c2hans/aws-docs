@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-lifecyclepolicy-amiexclusionrules-syntax.json"></a>
 
-```
+```json
 {
   "[IsPublic](#cfn-imagebuilder-lifecyclepolicy-amiexclusionrules-ispublic)" : {{Boolean}},
   "[LastLaunched](#cfn-imagebuilder-lifecyclepolicy-amiexclusionrules-lastlaunched)" : {{LastLaunched}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-lifecyclepolicy-amiexclusionrules-syntax.yaml"></a>
 
-```
+```yaml
   [IsPublic](#cfn-imagebuilder-lifecyclepolicy-amiexclusionrules-ispublic): {{Boolean}}
   [LastLaunched](#cfn-imagebuilder-lifecyclepolicy-amiexclusionrules-lastlaunched): {{
     LastLaunched}}

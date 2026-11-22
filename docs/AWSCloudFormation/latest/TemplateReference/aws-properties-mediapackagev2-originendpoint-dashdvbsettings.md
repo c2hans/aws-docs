@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackagev2-originendpoint-dashdvbsettings-syntax.json"></a>
 
-```
+```json
 {
   "[ErrorMetrics](#cfn-mediapackagev2-originendpoint-dashdvbsettings-errormetrics)" : {{[ DashDvbMetricsReporting, ... ]}},
   "[FontDownload](#cfn-mediapackagev2-originendpoint-dashdvbsettings-fontdownload)" : {{DashDvbFontDownload}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackagev2-originendpoint-dashdvbsettings-syntax.yaml"></a>
 
-```
+```yaml
   [ErrorMetrics](#cfn-mediapackagev2-originendpoint-dashdvbsettings-errormetrics): {{
     - DashDvbMetricsReporting}}
   [FontDownload](#cfn-mediapackagev2-originendpoint-dashdvbsettings-fontdownload): {{

@@ -127,7 +127,7 @@ https://ec2.amazonaws.com/?Action=DescribeSnapshots
 #### Sample Response
 <a name="API_DescribeSnapshots_Example_1_Response"></a>
 
-```
+```xml
 <DescribeSnapshotsResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
   <requestId>12345678-1234-1234-1234-3755ba4b9fa6</requestId>
   <snapshotSet>

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-instance-attributes-syntax.json"></a>
 
-```
+```json
 {
   "[AutoMuteAgentOnHold](#cfn-connect-instance-attributes-automuteagentonhold)" : {{Boolean}},
   "[AutoResolveBestVoices](#cfn-connect-instance-attributes-autoresolvebestvoices)" : {{Boolean}},
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-instance-attributes-syntax.yaml"></a>
 
-```
+```yaml
   [AutoMuteAgentOnHold](#cfn-connect-instance-attributes-automuteagentonhold): {{Boolean}}
   [AutoResolveBestVoices](#cfn-connect-instance-attributes-autoresolvebestvoices): {{Boolean}}
   [ContactflowLogs](#cfn-connect-instance-attributes-contactflowlogs): {{Boolean}}

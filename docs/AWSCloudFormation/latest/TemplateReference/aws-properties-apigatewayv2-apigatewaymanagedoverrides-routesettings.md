@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apigatewayv2-apigatewaymanagedoverrides-routesettings-syntax.json"></a>
 
-```
+```json
 {
   "[DetailedMetricsEnabled](#cfn-apigatewayv2-apigatewaymanagedoverrides-routesettings-detailedmetricsenabled)" : {{Boolean}},
   "[ThrottlingBurstLimit](#cfn-apigatewayv2-apigatewaymanagedoverrides-routesettings-throttlingburstlimit)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apigatewayv2-apigatewaymanagedoverrides-routesettings-syntax.yaml"></a>
 
-```
+```yaml
   [DetailedMetricsEnabled](#cfn-apigatewayv2-apigatewaymanagedoverrides-routesettings-detailedmetricsenabled): {{Boolean}}
   [ThrottlingBurstLimit](#cfn-apigatewayv2-apigatewaymanagedoverrides-routesettings-throttlingburstlimit): {{Integer}}
   [ThrottlingRateLimit](#cfn-apigatewayv2-apigatewaymanagedoverrides-routesettings-throttlingratelimit): {{Number}}

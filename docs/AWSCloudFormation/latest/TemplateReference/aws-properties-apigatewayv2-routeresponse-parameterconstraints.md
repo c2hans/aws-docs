@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apigatewayv2-routeresponse-parameterconstraints-syntax.json"></a>
 
-```
+```json
 {
   "[Required](#cfn-apigatewayv2-routeresponse-parameterconstraints-required)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apigatewayv2-routeresponse-parameterconstraints-syntax.yaml"></a>
 
-```
+```yaml
   [Required](#cfn-apigatewayv2-routeresponse-parameterconstraints-required): {{Boolean}}
 ```
 

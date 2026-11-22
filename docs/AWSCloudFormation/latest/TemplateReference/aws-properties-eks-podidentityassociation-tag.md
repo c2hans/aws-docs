@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-podidentityassociation-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-eks-podidentityassociation-tag-key)" : {{String}},
   "[Value](#cfn-eks-podidentityassociation-tag-value)" : {{String}}
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-podidentityassociation-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-eks-podidentityassociation-tag-key): {{String}}
   [Value](#cfn-eks-podidentityassociation-tag-value): {{String}}
 ```

@@ -32,7 +32,7 @@ For Visual Studio Code and JetBrains IDEs, install the AWS Toolkit. The Toolkit 
 
 For another editor that supports LSP, download the file for your computer from the [latest release](https://github.com/aws-cloudformation/cloudformation-languageserver/releases/latest) on GitHub, extract it, and configure your editor to run the following command:
 
-```
+```sh
 node {{/path/to/install-location}}/cfn-lsp-server-standalone.js --stdio
 ```
 

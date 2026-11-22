@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-framecapturesettings-syntax.json"></a>
 
-```
+```json
 {
   "[CaptureInterval](#cfn-medialive-channel-framecapturesettings-captureinterval)" : {{Integer}},
   "[CaptureIntervalUnits](#cfn-medialive-channel-framecapturesettings-captureintervalunits)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-framecapturesettings-syntax.yaml"></a>
 
-```
+```yaml
   [CaptureInterval](#cfn-medialive-channel-framecapturesettings-captureinterval): {{Integer}}
   [CaptureIntervalUnits](#cfn-medialive-channel-framecapturesettings-captureintervalunits): {{String}}
   [TimecodeBurninSettings](#cfn-medialive-channel-framecapturesettings-timecodeburninsettings): {{

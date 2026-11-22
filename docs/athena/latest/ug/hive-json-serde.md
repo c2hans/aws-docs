@@ -11,7 +11,7 @@ The SerDe expects each JSON document to be on a single line of text with no line
 
 The following example DDL statement uses the Hive JSON SerDe to create a table based on sample online advertising data. In the `LOCATION` clause, replace the {{myregion}} in `s3://amzn-s3-demo-bucket.elasticmapreduce/samples/hive-ads/tables/impressions` with the region identifier where you run Athena (for example, `s3://us-west-2.elasticmapreduce/samples/hive-ads/tables/impressions`).
 
-```
+```sql
 CREATE EXTERNAL TABLE impressions (
     requestbegintime string,
     adid string,
@@ -43,7 +43,7 @@ LOCATION 's3://amzn-s3-demo-bucket.elasticmapreduce/samples/hive-ads/tables/impr
 
 To parse timestamp values from string, you can add the `WITH SERDEPROPERTIES` subfield to the `ROW FORMAT SERDE` clause and use it to specify the `timestamp.formats` parameter. In the parameter, specify a comma-separated list of one or more timestamp patterns, as in the following example:
 
-```
+```sql
 ...
 ROW FORMAT SERDE 'org.apache.hive.hcatalog.data.JsonSerDe'
 WITH SERDEPROPERTIES ("timestamp.formats"="yyyy-MM-dd'T'HH:mm:ss.SSS'Z',yyyy-MM-dd'T'HH:mm:ss")

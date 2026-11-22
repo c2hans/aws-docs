@@ -54,7 +54,7 @@ You can switch between the **Visual** and **JSON** editor options anytime. Howev
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

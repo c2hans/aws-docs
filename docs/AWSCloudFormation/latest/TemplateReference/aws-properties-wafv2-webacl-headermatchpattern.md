@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-headermatchpattern-syntax.json"></a>
 
-```
+```json
 {
   "[All](#cfn-wafv2-webacl-headermatchpattern-all)" : {{Json}},
   "[ExcludedHeaders](#cfn-wafv2-webacl-headermatchpattern-excludedheaders)" : {{[ String, ... ]}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-headermatchpattern-syntax.yaml"></a>
 
-```
+```yaml
   [All](#cfn-wafv2-webacl-headermatchpattern-all): {{Json}}
   [ExcludedHeaders](#cfn-wafv2-webacl-headermatchpattern-excludedheaders): {{
     - String}}
@@ -79,7 +79,7 @@ The following shows an example header match pattern specification for all paths.
 #### YAML
 <a name="aws-properties-wafv2-webacl-headermatchpattern--examples--Set_a_header_match_pattern_for_all_paths--yaml"></a>
 
-```
+```yaml
 MatchPattern:
   All: {}
 ```
@@ -87,7 +87,7 @@ MatchPattern:
 #### JSON
 <a name="aws-properties-wafv2-webacl-headermatchpattern--examples--Set_a_header_match_pattern_for_all_paths--json"></a>
 
-```
+```json
 "MatchPattern": {
   "All": {}
 }
@@ -101,7 +101,7 @@ The following shows an example header match pattern specification with included 
 #### YAML
 <a name="aws-properties-wafv2-webacl-headermatchpattern--examples--Set_a_header_match_pattern_with_included_paths--yaml"></a>
 
-```
+```yaml
 MatchPattern:
   IncludedHeaders:
       - "User-Agent"
@@ -111,7 +111,7 @@ MatchPattern:
 #### JSON
 <a name="aws-properties-wafv2-webacl-headermatchpattern--examples--Set_a_header_match_pattern_with_included_paths--json"></a>
 
-```
+```json
 "MatchPattern": {
   "IncludedHeaders": [
     "User-Agent",

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-imagebuilder-imagerecipe-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ImageBuilder::ImageRecipe",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-imagebuilder-imagerecipe-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ImageBuilder::ImageRecipe
 Properties:
   [AdditionalInstanceConfiguration](#cfn-imagebuilder-imagerecipe-additionalinstanceconfiguration): {{
@@ -204,7 +204,7 @@ The following example shows the template for the ImageRecipe resource in both YA
 #### YAML
 <a name="aws-resource-imagebuilder-imagerecipe--examples--Create_an_image_recipe--yaml"></a>
 
-```
+```yaml
 Resources:
   ImageRecipeAllParameters:
     Type: 'AWS::ImageBuilder::ImageRecipe'
@@ -235,7 +235,7 @@ Resources:
 #### JSON
 <a name="aws-resource-imagebuilder-imagerecipe--examples--Create_an_image_recipe--json"></a>
 
-```
+```json
 {
     "Resources": {
         "ImageRecipeAllParameters": {
@@ -294,7 +294,7 @@ The following example creates an image recipe that applies tags and watermarks t
 #### YAML
 <a name="aws-resource-imagebuilder-imagerecipe--examples--Create_an_image_recipe_with_AMI_tags_and_watermarks--yaml"></a>
 
-```
+```yaml
 Resources:
   RecipeWithExtras:
     Type: AWS::ImageBuilder::ImageRecipe
@@ -324,7 +324,7 @@ Resources:
 #### JSON
 <a name="aws-resource-imagebuilder-imagerecipe--examples--Create_an_image_recipe_with_AMI_tags_and_watermarks--json"></a>
 
-```
+```json
 {
     "Resources": {
         "RecipeWithExtras": {

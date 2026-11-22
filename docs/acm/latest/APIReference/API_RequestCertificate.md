@@ -19,6 +19,7 @@ After successful completion of the `RequestCertificate` action, there is a delay
 ```
 {
    "CertificateAuthorityArn": "{{string}}",
+   "CertificateUsage": "{{string}}",
    "DomainName": "{{string}}",
    "DomainValidationOptions": [
       {
@@ -34,6 +35,7 @@ After successful completion of the `RequestCertificate` action, there is a delay
       "Export": "{{string}}",
       "ValidationMethod": "{{string}}"
    },
+   "RootHierarchyType": "{{string}}",
    "SubjectAlternativeNames": [ "{{string}}" ],
    "Tags": [
       {
@@ -71,6 +73,15 @@ Length Constraints: Minimum length of 20. Maximum length of 2048.
 Pattern: `arn:[\w+=/,.@-]+:acm-pca:[\w+=/,.@-]*:[0-9]+:[\w+=,.@-]+(/[\w+=,.@-]+)*`
 Required: No
 
+ ** [CertificateUsage](#API_RequestCertificate_RequestSyntax) **   <a name="ACM-RequestCertificate-request-CertificateUsage"></a>
+The Extended Key Usage profile of the certificate. You can specify this parameter only when `RootHierarchyType` is `N2_AMAZON_MANAGED` or `N2_SFG2_AMAZON_MANAGED`. If you specify `CertificateUsage` with any other root hierarchy type, or without `RootHierarchyType`, the request fails with a `ValidationException`.
++  `CLIENT_AND_SERVER_AUTH` authenticates both the client and the server. Valid for both N2 root hierarchy types.
++  `CLIENT_AUTH_ONLY` authenticates only the client. Valid only for `N2_AMAZON_MANAGED`.
+Default: CLIENT\_AND\_SERVER\_AUTH
+Type: String
+Valid Values: `CLIENT_AND_SERVER_AUTH | CLIENT_AUTH_ONLY`
+Required: No
+
  ** [DomainValidationOptions](#API_RequestCertificate_RequestSyntax) **   <a name="ACM-RequestCertificate-request-DomainValidationOptions"></a>
 The domain name that you want ACM to use to send you emails so that you can validate domain ownership.
 Type: Array of [DomainValidationOption](API_DomainValidationOption.md) objects
@@ -105,9 +116,25 @@ Required: No
 
  ** [Options](#API_RequestCertificate_RequestSyntax) **   <a name="ACM-RequestCertificate-request-Options"></a>
 You can use this parameter to specify whether to export your certificate.
-Certificate transparency logging opt-out is no longer available. All public certificates are recorded in a certificate transparency log. For more information, see [Certificate Transparency Logging](https://docs.aws.amazon.com/acm/latest/userguide/acm-concepts.html#concept-transparency).
+Certificate transparency logging opt-out is no longer available. ACM records all public certificates other than Amazon N2 certificates in a certificate transparency log. For more information, see [Certificate Transparency Logging](https://docs.aws.amazon.com/acm/latest/userguide/acm-concepts.html#concept-transparency).
 You can export public ACM certificates to use with AWS services as well as outside the AWS Cloud. For more information, see [AWS Certificate Manager exportable public certificate](https://docs.aws.amazon.com/acm/latest/userguide/acm-exportable-certificates.html).
 Type: [CertificateOptions](API_CertificateOptions.md) object
+Required: No
+
+ ** [RootHierarchyType](#API_RequestCertificate_RequestSyntax) **   <a name="ACM-RequestCertificate-request-RootHierarchyType"></a>
+The root hierarchy from which ACM issues the certificate. Specify one of the following values to request an Amazon N2 certificate:
++  `N2_AMAZON_MANAGED` – An Amazon N2 certificate that chains to an Amazon N2 root. The maximum validity period, which is also the default, is 395 days.
++  `N2_SFG2_AMAZON_MANAGED` – An Amazon N2 certificate that chains to an Amazon N2 root cross-signed by Starfield G2. The maximum validity period, which is also the default, is 98 days.
+You cannot specify `RootHierarchyType` together with `CertificateAuthorityArn`.
+If you omit this parameter, ACM issues a standard public certificate. A request that specifies any value other than `N2_AMAZON_MANAGED` or `N2_SFG2_AMAZON_MANAGED` fails with a `ValidationException`.
+An Amazon N2 certificate request must specify a `ValidationMethod` of `DNS`. Amazon N2 certificates are not recorded in a certificate transparency log.
+A request for a validity period longer than the maximum fails with a `ValidationException`.
+Algorithms supported for an N2 certificate request include:
++  `RSA_2048`
++  `EC_prime256v1`
++  `EC_secp384r1`
+Type: String
+Valid Values: `N2_AMAZON_MANAGED | N2_SFG2_AMAZON_MANAGED`
 Required: No
 
  ** [SubjectAlternativeNames](#API_RequestCertificate_RequestSyntax) **   <a name="ACM-RequestCertificate-request-SubjectAlternativeNames"></a>

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-vpclattice-targetgroup-matcher-syntax.json"></a>
 
-```
+```json
 {
   "[HttpCode](#cfn-vpclattice-targetgroup-matcher-httpcode)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-vpclattice-targetgroup-matcher-syntax.yaml"></a>
 
-```
+```yaml
   [HttpCode](#cfn-vpclattice-targetgroup-matcher-httpcode): {{String}}
 ```
 

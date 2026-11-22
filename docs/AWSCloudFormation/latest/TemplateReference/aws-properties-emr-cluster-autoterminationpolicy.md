@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emr-cluster-autoterminationpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[IdleTimeout](#cfn-emr-cluster-autoterminationpolicy-idletimeout)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emr-cluster-autoterminationpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [IdleTimeout](#cfn-emr-cluster-autoterminationpolicy-idletimeout): {{Integer}}
 ```
 

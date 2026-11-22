@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-observabilityadmin-organizationtelemetryrule-telemetryrule-syntax.json"></a>
 
-```
+```json
 {
   "[AllowFieldUpdates](#cfn-observabilityadmin-organizationtelemetryrule-telemetryrule-allowfieldupdates)" : {{Boolean}},
   "[AllRegions](#cfn-observabilityadmin-organizationtelemetryrule-telemetryrule-allregions)" : {{Boolean}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-observabilityadmin-organizationtelemetryrule-telemetryrule-syntax.yaml"></a>
 
-```
+```yaml
   [AllowFieldUpdates](#cfn-observabilityadmin-organizationtelemetryrule-telemetryrule-allowfieldupdates): {{Boolean}}
   [AllRegions](#cfn-observabilityadmin-organizationtelemetryrule-telemetryrule-allregions): {{Boolean}}
   [DestinationConfiguration](#cfn-observabilityadmin-organizationtelemetryrule-telemetryrule-destinationconfiguration): {{
@@ -76,7 +76,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ResourceType`  <a name="cfn-observabilityadmin-organizationtelemetryrule-telemetryrule-resourcetype"></a>
- The type of AWS resource to configure telemetry for (for example, `AWS::EC2::VPC`, `AWS::EKS::Cluster`, `AWS::ElasticLoadBalancingV2::LoadBalancer`, or `AWS::Bedrock::KnowledgeBase`).
+ The type of AWS resource to configure telemetry for (for example, `AWS::EC2::VPC`, `AWS::EKS::Cluster`, `AWS::ElasticLoadBalancingV2::LoadBalancer`, `AWS::Bedrock::KnowledgeBase`, `AWS::BedrockAgentCore::PaymentManager`, or `AWS::XRay::TransactionSearchConfig`).
 *Required*: Yes
 *Type*: String
 *Allowed values*: `AWS::EC2::VPC | AWS::WAFv2::WebACL | AWS::CloudTrail | AWS::EKS::Cluster | AWS::ElasticLoadBalancingV2::LoadBalancer | AWS::EC2::Instance | AWS::SecurityHub::Hub | AWS::SecurityHub::HubV2 | AWS::S3::Bucket | AWS::MSK::Cluster | AWS::CloudFront::Distribution | AWS::CloudWatch::OTelEnrichment | AWS::XRay::TransactionSearchConfig`
@@ -101,7 +101,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TelemetryType`  <a name="cfn-observabilityadmin-organizationtelemetryrule-telemetryrule-telemetrytype"></a>
- The type of telemetry to collect (Logs, Metrics, or Traces).
+ The type of telemetry to collect (Logs, Metrics, Traces, or Insights).
 *Required*: Yes
 *Type*: String
 *Allowed values*: `Logs | Traces | Metrics | Insights`

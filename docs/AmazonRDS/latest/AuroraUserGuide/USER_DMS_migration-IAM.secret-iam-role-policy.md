@@ -19,7 +19,7 @@ Follow the procedures below to create your secret access policy and role which a
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -49,7 +49,7 @@ Follow the procedures below to create your secret access policy and role which a
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

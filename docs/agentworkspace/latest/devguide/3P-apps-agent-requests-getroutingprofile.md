@@ -15,12 +15,12 @@ Returns the routing profile of the agent currently logged in to the Connect Cust
 + `routingProfileARN`: The routing profile ARN.
 + `routingProfileId`: Alias for `routingProfileARN`.
 
-```
+```typescript
 async getRoutingProfile(): Promise<AgentRoutingProfile>
 ```
 
  **Permissions required:**
 
-```
+```typescript
 User.Configuration.View
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrassv2-deployment-iotjobabortconfig-syntax.json"></a>
 
-```
+```json
 {
   "[CriteriaList](#cfn-greengrassv2-deployment-iotjobabortconfig-criterialist)" : {{[ IoTJobAbortCriteria, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrassv2-deployment-iotjobabortconfig-syntax.yaml"></a>
 
-```
+```yaml
   [CriteriaList](#cfn-greengrassv2-deployment-iotjobabortconfig-criterialist): {{
     - IoTJobAbortCriteria}}
 ```

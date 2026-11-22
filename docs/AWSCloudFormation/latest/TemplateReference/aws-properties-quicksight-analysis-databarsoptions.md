@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-databarsoptions-syntax.json"></a>
 
-```
+```json
 {
   "[FieldId](#cfn-quicksight-analysis-databarsoptions-fieldid)" : {{String}},
   "[NegativeColor](#cfn-quicksight-analysis-databarsoptions-negativecolor)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-databarsoptions-syntax.yaml"></a>
 
-```
+```yaml
   [FieldId](#cfn-quicksight-analysis-databarsoptions-fieldid): {{String}}
   [NegativeColor](#cfn-quicksight-analysis-databarsoptions-negativecolor): {{String}}
   [PositiveColor](#cfn-quicksight-analysis-databarsoptions-positivecolor): {{String}}

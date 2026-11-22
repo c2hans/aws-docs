@@ -173,7 +173,7 @@ Attach a bucket policy to your bucket, as shown in the following example.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

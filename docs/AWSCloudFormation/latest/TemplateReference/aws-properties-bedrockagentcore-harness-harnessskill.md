@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-harness-harnessskill-syntax.json"></a>
 
-```
+```json
 {
   "[AwsSkills](#cfn-bedrockagentcore-harness-harnessskill-awsskills)" : {{HarnessSkillAwsSkillsSource}},
   "[Git](#cfn-bedrockagentcore-harness-harnessskill-git)" : {{HarnessSkillGitSource}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-harness-harnessskill-syntax.yaml"></a>
 
-```
+```yaml
   [AwsSkills](#cfn-bedrockagentcore-harness-harnessskill-awsskills): {{
     HarnessSkillAwsSkillsSource}}
   [Git](#cfn-bedrockagentcore-harness-harnessskill-git): {{

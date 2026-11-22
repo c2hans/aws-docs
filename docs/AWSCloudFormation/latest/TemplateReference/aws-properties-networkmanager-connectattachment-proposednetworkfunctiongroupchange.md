@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkmanager-connectattachment-proposednetworkfunctiongroupchange-syntax.json"></a>
 
-```
+```json
 {
   "[AttachmentPolicyRuleNumber](#cfn-networkmanager-connectattachment-proposednetworkfunctiongroupchange-attachmentpolicyrulenumber)" : {{Integer}},
   "[NetworkFunctionGroupName](#cfn-networkmanager-connectattachment-proposednetworkfunctiongroupchange-networkfunctiongroupname)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkmanager-connectattachment-proposednetworkfunctiongroupchange-syntax.yaml"></a>
 
-```
+```yaml
   [AttachmentPolicyRuleNumber](#cfn-networkmanager-connectattachment-proposednetworkfunctiongroupchange-attachmentpolicyrulenumber): {{Integer}}
   [NetworkFunctionGroupName](#cfn-networkmanager-connectattachment-proposednetworkfunctiongroupchange-networkfunctiongroupname): {{String}}
   [Tags](#cfn-networkmanager-connectattachment-proposednetworkfunctiongroupchange-tags): {{

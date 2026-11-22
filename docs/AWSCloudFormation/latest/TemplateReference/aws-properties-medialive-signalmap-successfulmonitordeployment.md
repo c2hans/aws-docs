@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-signalmap-successfulmonitordeployment-syntax.json"></a>
 
-```
+```json
 {
   "[DetailsUri](#cfn-medialive-signalmap-successfulmonitordeployment-detailsuri)" : {{String}},
   "[Status](#cfn-medialive-signalmap-successfulmonitordeployment-status)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-signalmap-successfulmonitordeployment-syntax.yaml"></a>
 
-```
+```yaml
   [DetailsUri](#cfn-medialive-signalmap-successfulmonitordeployment-detailsuri): {{String}}
   [Status](#cfn-medialive-signalmap-successfulmonitordeployment-status): {{String}}
 ```

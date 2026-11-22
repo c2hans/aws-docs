@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-association-githubconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Owner](#cfn-devopsagent-association-githubconfiguration-owner)" : {{String}},
   "[OwnerType](#cfn-devopsagent-association-githubconfiguration-ownertype)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-association-githubconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Owner](#cfn-devopsagent-association-githubconfiguration-owner): {{String}}
   [OwnerType](#cfn-devopsagent-association-githubconfiguration-ownertype): {{String}}
   [ReleaseManagementAssociationId](#cfn-devopsagent-association-githubconfiguration-releasemanagementassociationid): {{String}}

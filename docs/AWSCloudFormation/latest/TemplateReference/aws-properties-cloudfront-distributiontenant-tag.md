@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distributiontenant-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-cloudfront-distributiontenant-tag-key)" : {{String}},
   "[Value](#cfn-cloudfront-distributiontenant-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distributiontenant-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-cloudfront-distributiontenant-tag-key): {{String}}
   [Value](#cfn-cloudfront-distributiontenant-tag-value): {{String}}
 ```

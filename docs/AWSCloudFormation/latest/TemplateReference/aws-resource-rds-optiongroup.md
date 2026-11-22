@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-rds-optiongroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RDS::OptionGroup",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-rds-optiongroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RDS::OptionGroup
 Properties:
   [EngineName](#cfn-rds-optiongroup-enginename): {{String}}
@@ -130,7 +130,7 @@ The following example creates an option group with two option configurations (`O
 #### JSON
 <a name="aws-resource-rds-optiongroup--examples--Create_an_option_group_with_multiple_option_configurations--json"></a>
 
-```
+```json
 {
     "OracleOptionGroup": {
         "Type": "AWS::RDS::OptionGroup",
@@ -158,7 +158,7 @@ The following example creates an option group with two option configurations (`O
 #### YAML
 <a name="aws-resource-rds-optiongroup--examples--Create_an_option_group_with_multiple_option_configurations--yaml"></a>
 
-```
+```yaml
 ---
 OracleOptionGroup:
   Type: AWS::RDS::OptionGroup
@@ -184,7 +184,7 @@ The following example creates an option group that specifies two option settings
 #### JSON
 <a name="aws-resource-rds-optiongroup--examples--Create_an_option_group_with_multiple_option_settings--json"></a>
 
-```
+```json
 {
     "SQLOptionGroup": {
         "Type": "AWS::RDS::OptionGroup",
@@ -219,7 +219,7 @@ The following example creates an option group that specifies two option settings
 #### YAML
 <a name="aws-resource-rds-optiongroup--examples--Create_an_option_group_with_multiple_option_settings--yaml"></a>
 
-```
+```yaml
 ---
 SQLOptionGroup:
   Properties:
@@ -250,7 +250,7 @@ The following example creates an option group that specifies the Microsoft SQL S
 #### JSON
 <a name="aws-resource-rds-optiongroup--examples--Microsoft_SQL_Server_native_backup_and_restore_option--json"></a>
 
-```
+```json
 {
     "myOptionGroup": {
         "Type": "AWS::RDS::OptionGroup",
@@ -277,7 +277,7 @@ The following example creates an option group that specifies the Microsoft SQL S
 #### YAML
 <a name="aws-resource-rds-optiongroup--examples--Microsoft_SQL_Server_native_backup_and_restore_option--yaml"></a>
 
-```
+```yaml
 ---
 myOptionGroup:
   Type: 'AWS::RDS::OptionGroup'

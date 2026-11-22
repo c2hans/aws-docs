@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-vpclattice-resourceconfiguration-cidrresource-syntax.json"></a>
 
-```
+```json
 {
   "[CidrRanges](#cfn-vpclattice-resourceconfiguration-cidrresource-cidrranges)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-vpclattice-resourceconfiguration-cidrresource-syntax.yaml"></a>
 
-```
+```yaml
   [CidrRanges](#cfn-vpclattice-resourceconfiguration-cidrresource-cidrranges): {{
     - String}}
 ```

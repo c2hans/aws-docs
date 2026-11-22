@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iotcoredeviceadvisor-suitedefinition-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoTCoreDeviceAdvisor::SuiteDefinition",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iotcoredeviceadvisor-suitedefinition-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoTCoreDeviceAdvisor::SuiteDefinition
 Properties:
   [SuiteDefinitionConfiguration](#cfn-iotcoredeviceadvisor-suitedefinition-suitedefinitionconfiguration): {{
@@ -93,7 +93,7 @@ The following example is a template of a `SuiteDefintion`.
 #### JSON
 <a name="aws-resource-iotcoredeviceadvisor-suitedefinition--examples----json"></a>
 
-```
+```json
 {
    "Resources": {
       "TestSuiteDefinition": {
@@ -119,7 +119,7 @@ The following example is a template of a `SuiteDefintion`.
 #### YAML
 <a name="aws-resource-iotcoredeviceadvisor-suitedefinition--examples----yaml"></a>
 
-```
+```yaml
 Resources:
   TestSuiteDefinition:
     Type: 'AWS::IoTCoreDeviceAdvisor::SuiteDefinition'

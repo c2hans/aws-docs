@@ -18,7 +18,7 @@ The Lambda Insights agent is supported only on Lambda runtimes that use Amazon L
 
 To enable Lambda Insights on a Lambda function that is deployed as a container image running on an x86-64 container, add the following lines in your Dockerfile. These lines install the Lambda Insights agent as an extension in your container image.
 
-```
+```cmd
 RUN curl -O https://lambda-insights-extension.s3-ap-northeast-1.amazonaws.com/amazon_linux/lambda-insights-extension.rpm && \
     rpm -U lambda-insights-extension.rpm && \
     rm -f lambda-insights-extension.rpm
@@ -33,13 +33,13 @@ To use an older version of the Lambda Insights extension, replace the URL in the
 
 1. Enter the following command to download the public key.
 
-   ```
+   ```cmd
    shell$ wget https://lambda-insights-extension.s3-ap-northeast-1.amazonaws.com/lambda-insights-extension.gpg
    ```
 
 1. Enter the following command to import the public key into your keyring.
 
-   ```
+   ```cmd
    shell$ gpg --import lambda-insights-extension.gpg
    ```
 
@@ -53,7 +53,7 @@ To use an older version of the Lambda Insights extension, replace the URL in the
 
 1. Verify the fingerprint by entering the following command. Replace `key-value` with the value of the key from the preceding step.
 
-   ```
+   ```cmd
    shell$  gpg --fingerprint key-value
    ```
 
@@ -61,13 +61,13 @@ To use an older version of the Lambda Insights extension, replace the URL in the
 
 1. After you have verified the fingerprint, you can use it to verify the Lambda Insights agent package. Download the package signature file by entering the following command.
 
-   ```
+   ```cmd
    shell$  wget https://lambda-insights-extension.s3-ap-northeast-1.amazonaws.com/amazon_linux/lambda-insights-extension.rpm.sig
    ```
 
 1. Verify the signature by entering the following command.
 
-   ```
+   ```cmd
    shell$ gpg --verify lambda-insights-extension.rpm.sig lambda-insights-extension.rpm
    ```
 
@@ -108,7 +108,7 @@ This section includes an example of enabling Lambda Insights on a container imag
 
 1. Create a Python file named `index.py` that is similar to the following:
 
-   ```
+   ```python
    def handler(event, context):
      return {
        'message': 'Hello World!'
@@ -117,7 +117,7 @@ This section includes an example of enabling Lambda Insights on a container imag
 
 1. Put the Dockerfile and `index.py` in the same directory. Then, in that directory, run the following steps to build the Docker image and upload it to Amazon ECR.
 
-   ```
+   ```cmd
    // create an ECR repository
    aws ecr create-repository --repository-name test-repository
    // build the docker image
@@ -139,7 +139,7 @@ This section includes an example of enabling Lambda Insights on a container imag
 
 To enable Lambda Insights on a Lambda function that is deployed as a container image running on an AL2\_aarch64 container (which uses ARM64 architecture), add the following lines in your Dockerfile. These lines install the Lambda Insights agent as an extension in your container image.
 
-```
+```cmd
 RUN curl -O https://lambda-insights-extension-arm64.s3-ap-northeast-1.amazonaws.com/amazon_linux/lambda-insights-extension-arm64.rpm && \
     rpm -U lambda-insights-extension-arm64.rpm && \
     rm -f lambda-insights-extension-arm64.rpm
@@ -154,13 +154,13 @@ To use an older version of the Lambda Insights extension, replace the URL in the
 
 1. Enter the following command to download the public key.
 
-   ```
+   ```cmd
    shell$ wget https://lambda-insights-extension-arm64.s3-ap-northeast-1.amazonaws.com/lambda-insights-extension.gpg
    ```
 
 1. Enter the following command to import the public key into your keyring.
 
-   ```
+   ```cmd
    shell$ gpg --import lambda-insights-extension.gpg
    ```
 
@@ -174,7 +174,7 @@ To use an older version of the Lambda Insights extension, replace the URL in the
 
 1. Verify the fingerprint by entering the following command. Replace `key-value` with the value of the key from the preceding step.
 
-   ```
+   ```cmd
    shell$  gpg --fingerprint key-value
    ```
 
@@ -182,13 +182,13 @@ To use an older version of the Lambda Insights extension, replace the URL in the
 
 1. After you have verified the fingerprint, you can use it to verify the Lambda Insights agent package. Download the package signature file by entering the following command.
 
-   ```
+   ```cmd
    shell$  wget https://lambda-insights-extension-arm64.s3-ap-northeast-1.amazonaws.com/amazon_linux/lambda-insights-extension-arm64.rpm.sig
    ```
 
 1. Verify the signature by entering the following command.
 
-   ```
+   ```cmd
    shell$ gpg --verify lambda-insights-extension-arm64.rpm.sig lambda-insights-extension-arm64.rpm
    ```
 
@@ -228,7 +228,7 @@ This section includes an example of enabling Lambda Insights on a container imag
 
 1. Create a Python file named `index.py` that is similar to the following:
 
-   ```
+   ```python
    def handler(event, context):
      return {
        'message': 'Hello World!'
@@ -237,7 +237,7 @@ This section includes an example of enabling Lambda Insights on a container imag
 
 1. Put the Dockerfile and `index.py` in the same directory. Then, in that directory, run the following steps to build the Docker image and upload it to Amazon ECR.
 
-   ```
+   ```cmd
    // create an ECR repository
    aws ecr create-repository --repository-name test-repository
    // build the docker image

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-thingtype-propagatingattribute-syntax.json"></a>
 
-```
+```json
 {
   "[ConnectionAttribute](#cfn-iot-thingtype-propagatingattribute-connectionattribute)" : {{String}},
   "[ThingAttribute](#cfn-iot-thingtype-propagatingattribute-thingattribute)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-thingtype-propagatingattribute-syntax.yaml"></a>
 
-```
+```yaml
   [ConnectionAttribute](#cfn-iot-thingtype-propagatingattribute-connectionattribute): {{String}}
   [ThingAttribute](#cfn-iot-thingtype-propagatingattribute-thingattribute): {{String}}
   [UserPropertyKey](#cfn-iot-thingtype-propagatingattribute-userpropertykey): {{String}}

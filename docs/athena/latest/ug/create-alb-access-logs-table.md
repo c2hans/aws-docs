@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/create-alb-access-logs-
 **Note**
 The following example `CREATE TABLE` statement includes the recently added `classification`, `classification_reason`, `conn_trace_id` ('traceability ID', or TID), `transformed_host`, `transformed_uri`, `request_transform_status`, and `ip_address` columns. To create a table for Application Load Balancer access logs that do not contain these entries, remove the corresponding columns from the `CREATE TABLE` statement and modify the regular expression accordingly.
 
-   ```
+   ```sql
    CREATE EXTERNAL TABLE IF NOT EXISTS alb_access_logs (
                type string,
                time string,

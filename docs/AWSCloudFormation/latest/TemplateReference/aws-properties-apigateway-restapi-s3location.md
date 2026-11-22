@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apigateway-restapi-s3location-syntax.json"></a>
 
-```
+```json
 {
   "[Bucket](#cfn-apigateway-restapi-s3location-bucket)" : {{String}},
   "[ETag](#cfn-apigateway-restapi-s3location-etag)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apigateway-restapi-s3location-syntax.yaml"></a>
 
-```
+```yaml
   [Bucket](#cfn-apigateway-restapi-s3location-bucket): {{String}}
   [ETag](#cfn-apigateway-restapi-s3location-etag): {{String}}
   [Key](#cfn-apigateway-restapi-s3location-key): {{String}}

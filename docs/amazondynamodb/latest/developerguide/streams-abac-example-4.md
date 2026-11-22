@@ -9,7 +9,7 @@ You can specify tags on DynamoDB Streams directly in your CloudFormation templat
 ## AWS::DynamoDB::Table
 <a name="streams-abac-example-4-table"></a>
 
-```
+```yaml
 Resources:
   MyTable:
     Type: AWS::DynamoDB::Table
@@ -37,7 +37,7 @@ Resources:
 ## AWS::DynamoDB::GlobalTable
 <a name="streams-abac-example-4-global-table"></a>
 
-```
+```yaml
 Resources:
   MyGlobalTable:
     Type: AWS::DynamoDB::GlobalTable

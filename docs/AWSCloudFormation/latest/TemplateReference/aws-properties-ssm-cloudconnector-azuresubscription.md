@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssm-cloudconnector-azuresubscription-syntax.json"></a>
 
-```
+```json
 {
   "[DisplayName](#cfn-ssm-cloudconnector-azuresubscription-displayname)" : {{String}},
   "[Id](#cfn-ssm-cloudconnector-azuresubscription-id)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssm-cloudconnector-azuresubscription-syntax.yaml"></a>
 
-```
+```yaml
   [DisplayName](#cfn-ssm-cloudconnector-azuresubscription-displayname): {{String}}
   [Id](#cfn-ssm-cloudconnector-azuresubscription-id): {{String}}
 ```

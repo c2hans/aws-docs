@@ -65,7 +65,7 @@ An event represents a single request from any source and includes information ab
 
 The following example shows a CloudTrail event that demonstrates the [StartConfigurationSession](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_appconfigdata_StartConfigurationSession.html) operation.
 
-```
+```json
 {
       "eventVersion": "1.09",
       "userIdentity": {

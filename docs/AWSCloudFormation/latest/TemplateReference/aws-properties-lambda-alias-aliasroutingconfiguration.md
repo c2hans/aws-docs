@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-alias-aliasroutingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AdditionalVersionWeights](#cfn-lambda-alias-aliasroutingconfiguration-additionalversionweights)" : {{[ VersionWeight, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-alias-aliasroutingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AdditionalVersionWeights](#cfn-lambda-alias-aliasroutingconfiguration-additionalversionweights): {{
     - VersionWeight}}
 ```
@@ -50,7 +50,7 @@ An alias that routes half of incoming requests to a second version.
 #### YAML
 <a name="aws-properties-lambda-alias-aliasroutingconfiguration--examples--Routing_Configuration--yaml"></a>
 
-```
+```yaml
   alias:
     Type: AWS::Lambda::Alias
     Properties:

@@ -6,6 +6,8 @@ source_url: https://docs.aws.amazon.com/agent-registry/latest/APIReference/API_S
 
  Searches the discoverable registry records in a registry using a natural language query. Returns metadata for the matching records ordered by relevance.
 
+ Returns at most 1000 results across all pages when `searchType` is `KEYWORD`, and at most 20 results when it is `HYBRID` or `SEMANTIC`. To retrieve more records, refine the query or filters, or use `ListDiscoverableRegistryRecords` to list every record.
+
 ## Request Syntax
 <a name="API_SearchDiscoverableRegistryRecords_RequestSyntax"></a>
 
@@ -16,8 +18,10 @@ Content-type: application/json
 {
    "filters": {{JSON value}},
    "maxResults": {{number}},
+   "nextToken": "{{string}}",
    "registryIds": [ "{{string}}" ],
-   "searchQuery": "{{string}}"
+   "searchQuery": "{{string}}",
+   "searchType": "{{string}}"
 }
 ```
 
@@ -38,9 +42,15 @@ Type: JSON value
 Required: No
 
  ** [maxResults](#API_SearchDiscoverableRegistryRecords_RequestSyntax) **   <a name="agentregistry-SearchDiscoverableRegistryRecords-request-maxResults"></a>
- The maximum number of results to return. Valid values are 1 through 20. The default value is 10.
+ The maximum number of results to return in one page. Valid values are 1 through 50 when `searchType` is `KEYWORD`, and 1 through 20 when it is `HYBRID` or `SEMANTIC`. The default value is 10.
 Type: Integer
-Valid Range: Minimum value of 1. Maximum value of 20.
+Valid Range: Minimum value of 1. Maximum value of 50.
+Required: No
+
+ ** [nextToken](#API_SearchDiscoverableRegistryRecords_RequestSyntax) **   <a name="agentregistry-SearchDiscoverableRegistryRecords-request-nextToken"></a>
+ The pagination token from a previous response. Use it to retrieve the next page of results, and send the same `searchQuery`, `registryIds`, `filters`, and `searchType` that you used for the first page. If any of them differ, the request fails with a `ValidationException`. A pagination token expires 15 minutes after the service returns the first page.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 4096.
 Required: No
 
  ** [registryIds](#API_SearchDiscoverableRegistryRecords_RequestSyntax) **   <a name="agentregistry-SearchDiscoverableRegistryRecords-request-registryIds"></a>
@@ -52,10 +62,20 @@ Pattern: `(arn:aws(-[^:]+)?:agent-registry:[a-z0-9-]+:[0-9]{12}:registry/)?[a-zA
 Required: Yes
 
  ** [searchQuery](#API_SearchDiscoverableRegistryRecords_RequestSyntax) **   <a name="agentregistry-SearchDiscoverableRegistryRecords-request-searchQuery"></a>
- The natural language query to search for matching registry records.
+ The natural language query to search for matching registry records. If you specify an empty string, the operation returns the records that match the `filters`, most recently updated first, up to the result limit for the `searchType`.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: Yes
+
+ ** [searchType](#API_SearchDiscoverableRegistryRecords_RequestSyntax) **   <a name="agentregistry-SearchDiscoverableRegistryRecords-request-searchType"></a>
+ Specifies how the service ranks registry records against the search query. If you omit this parameter, the service uses `HYBRID` in AWS Regions that support semantic search and `KEYWORD` in Regions that do not. The response reports the search type that the service used. Valid values are the following:
++  `KEYWORD` – Ranks records by keyword match between the query terms and the record name, description, descriptors, and custom metadata text values. Available in every AWS Region.
++  `SEMANTIC` – Ranks records by semantic similarity to the query and returns the most similar records, up to `maxResults`, even when none of them closely matches the query.
++  `HYBRID` – Combines keyword ranking and semantic ranking.
+ `HYBRID` and `SEMANTIC` are available in a limited number of Regions. If you specify either one in a Region that does not support semantic search, the request fails with a `ValidationException` that has the reason `UnsupportedInRegion`.
+Type: String
+Valid Values: `HYBRID | SEMANTIC | KEYWORD`
+Required: No
 
 ## Response Syntax
 <a name="API_SearchDiscoverableRegistryRecords_ResponseSyntax"></a>
@@ -65,8 +85,13 @@ HTTP/1.1 200
 Content-type: application/json
 
 {
+   "nextToken": "string",
    "registryRecords": [
       {
+         "artifact": {
+            "downloadUrl": "string",
+            "sha256": "string"
+         },
          "createdAt": "string",
          "customMetadata": JSON value,
          "description": "string",
@@ -138,7 +163,8 @@ Content-type: application/json
          "status": "string",
          "updatedAt": "string"
       }
-   ]
+   ],
+   "searchType": "string"
 }
 ```
 
@@ -149,9 +175,18 @@ If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
+ ** [nextToken](#API_SearchDiscoverableRegistryRecords_ResponseSyntax) **   <a name="agentregistry-SearchDiscoverableRegistryRecords-response-nextToken"></a>
+ The pagination token to pass to a subsequent request to retrieve the next page of results. This field is absent when there are no more results, or when the search has returned the maximum number of results for its search type.
+Type: String
+
  ** [registryRecords](#API_SearchDiscoverableRegistryRecords_ResponseSyntax) **   <a name="agentregistry-SearchDiscoverableRegistryRecords-response-registryRecords"></a>
- The registry records that match the search query, ordered by relevance.
+ The registry records that match the search query, ordered by relevance. A page can contain fewer than `maxResults` records, or none, even when the response includes a `nextToken`. To retrieve every result, continue until the response has no `nextToken`.
 Type: Array of [RegistryRecordSummary](API_RegistryRecordSummary.md) objects
+
+ ** [searchType](#API_SearchDiscoverableRegistryRecords_ResponseSyntax) **   <a name="agentregistry-SearchDiscoverableRegistryRecords-response-searchType"></a>
+ Specifies the search type that the service used to rank the returned records. If you omitted `searchType` in the request, this is the default for the AWS Region: `HYBRID` where semantic search is supported, and `KEYWORD` elsewhere.
+Type: String
+Valid Values: `HYBRID | SEMANTIC | KEYWORD`
 
 ## Errors
 <a name="API_SearchDiscoverableRegistryRecords_Errors"></a>

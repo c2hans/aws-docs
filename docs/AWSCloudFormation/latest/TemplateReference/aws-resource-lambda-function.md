@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lambda-function-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lambda::Function",
   "Properties" : {
@@ -74,7 +74,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lambda-function-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lambda::Function
 Properties:
   [AcceleratorConfig](#cfn-lambda-function-acceleratorconfig): {{
@@ -136,7 +136,7 @@ Properties:
 <a name="aws-resource-lambda-function-properties"></a>
 
 `AcceleratorConfig`  <a name="cfn-lambda-function-acceleratorconfig"></a>
-This property configures the accelerator resource settings for a Lambda execution environment, including the amount of accelerator memory to allocate. It requires a capacity provider configuration.
+The accelerator resource settings for a Lambda execution environment, including the amount of accelerator memory to allocate. To use an accelerator, the function must also have a capacity provider configuration (`CapacityProviderConfig`) for Lambda Managed Instances.
 *Required*: No
 *Type*: [AcceleratorConfig](aws-properties-lambda-function-acceleratorconfig.md)
 *Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
@@ -348,7 +348,7 @@ The function's tenant isolation configuration settings. Determines whether the L
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Timeout`  <a name="cfn-lambda-function-timeout"></a>
-The amount of time (in seconds) that Lambda allows a function to run before stopping it. The default is 3 seconds, and the maximum allowed value is 900 seconds. For functions using Lambda Managed Instances, asynchronous invocations and event source mapping invocations (except Amazon MQ and Amazon DocumentDB) support a maximum allowed value of 5,400 seconds (90 minutes). For more information, see [Lambda execution environment](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-context.html).
+The amount of time (in seconds) that Lambda allows a function to run before stopping it. The default is 3 seconds, and the maximum allowed value is 1,800 seconds. For functions using Lambda Managed Instances, asynchronous invocations and event source mapping invocations (except Amazon MQ and Amazon DocumentDB) support a maximum allowed value of 5,400 seconds (90 minutes). For more information, see [Lambda execution environment](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-context.html).
 *Required*: No
 *Type*: Integer
 *Minimum*: `1`
@@ -411,7 +411,7 @@ Create a Node.js function.
 #### JSON
 <a name="aws-resource-lambda-function--examples--Function--json"></a>
 
-```
+```json
 "AMIIDLookup": {
     "Type": "AWS::Lambda::Function",
     "Properties": {
@@ -443,7 +443,7 @@ Inline Node.js function that lists Amazon S3 buckets in ` us-east-1 `. Before us
 #### YAML
 <a name="aws-resource-lambda-function--examples--Inline_Function--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Lambda function ListBucketsCommand.
 Resources:
@@ -476,7 +476,7 @@ Function connected to a VPC.
 #### YAML
 <a name="aws-resource-lambda-function--examples--VPC_Function--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: VPC function.
 Resources:

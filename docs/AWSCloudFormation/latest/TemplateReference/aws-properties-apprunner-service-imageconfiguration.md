@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apprunner-service-imageconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Port](#cfn-apprunner-service-imageconfiguration-port)" : {{String}},
   "[RuntimeEnvironmentSecrets](#cfn-apprunner-service-imageconfiguration-runtimeenvironmentsecrets)" : {{[ KeyValuePair, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apprunner-service-imageconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Port](#cfn-apprunner-service-imageconfiguration-port): {{String}}
   [RuntimeEnvironmentSecrets](#cfn-apprunner-service-imageconfiguration-runtimeenvironmentsecrets): {{
     - KeyValuePair}}

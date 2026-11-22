@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-harness-harnessagentcorememoryretrievalconfig-syntax.json"></a>
 
-```
+```json
 {
   "[RelevanceScore](#cfn-bedrockagentcore-harness-harnessagentcorememoryretrievalconfig-relevancescore)" : {{Number}},
   "[StrategyId](#cfn-bedrockagentcore-harness-harnessagentcorememoryretrievalconfig-strategyid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-harness-harnessagentcorememoryretrievalconfig-syntax.yaml"></a>
 
-```
+```yaml
   [RelevanceScore](#cfn-bedrockagentcore-harness-harnessagentcorememoryretrievalconfig-relevancescore): {{Number}}
   [StrategyId](#cfn-bedrockagentcore-harness-harnessagentcorememoryretrievalconfig-strategyid): {{String}}
   [TopK](#cfn-bedrockagentcore-harness-harnessagentcorememoryretrievalconfig-topk): {{Integer}}

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fis-experimenttemplate-experimenttemplatetarget-syntax.json"></a>
 
-```
+```json
 {
   "[Filters](#cfn-fis-experimenttemplate-experimenttemplatetarget-filters)" : {{[ ExperimentTemplateTargetFilter, ... ]}},
   "[Parameters](#cfn-fis-experimenttemplate-experimenttemplatetarget-parameters)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fis-experimenttemplate-experimenttemplatetarget-syntax.yaml"></a>
 
-```
+```yaml
   [Filters](#cfn-fis-experimenttemplate-experimenttemplatetarget-filters): {{
     - ExperimentTemplateTargetFilter}}
   [Parameters](#cfn-fis-experimenttemplate-experimenttemplatetarget-parameters): {{

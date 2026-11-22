@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-function-filesystemconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Arn](#cfn-lambda-function-filesystemconfig-arn)" : {{String}},
   "[LocalMountPath](#cfn-lambda-function-filesystemconfig-localmountpath)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-function-filesystemconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Arn](#cfn-lambda-function-filesystemconfig-arn): {{String}}
   [LocalMountPath](#cfn-lambda-function-filesystemconfig-localmountpath): {{String}}
   [S3FilesConfig](#cfn-lambda-function-filesystemconfig-s3filesconfig): {{

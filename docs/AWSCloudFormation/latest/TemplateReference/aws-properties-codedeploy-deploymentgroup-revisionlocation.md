@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codedeploy-deploymentgroup-revisionlocation-syntax.json"></a>
 
-```
+```json
 {
   "[GitHubLocation](#cfn-codedeploy-deploymentgroup-revisionlocation-githublocation)" : {{GitHubLocation}},
   "[RevisionType](#cfn-codedeploy-deploymentgroup-revisionlocation-revisiontype)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codedeploy-deploymentgroup-revisionlocation-syntax.yaml"></a>
 
-```
+```yaml
   [GitHubLocation](#cfn-codedeploy-deploymentgroup-revisionlocation-githublocation): {{
     GitHubLocation}}
   [RevisionType](#cfn-codedeploy-deploymentgroup-revisionlocation-revisiontype): {{String}}

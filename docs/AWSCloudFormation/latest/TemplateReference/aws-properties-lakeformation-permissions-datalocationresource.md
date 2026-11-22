@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lakeformation-permissions-datalocationresource-syntax.json"></a>
 
-```
+```json
 {
   "[CatalogId](#cfn-lakeformation-permissions-datalocationresource-catalogid)" : {{String}},
   "[S3Resource](#cfn-lakeformation-permissions-datalocationresource-s3resource)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lakeformation-permissions-datalocationresource-syntax.yaml"></a>
 
-```
+```yaml
   [CatalogId](#cfn-lakeformation-permissions-datalocationresource-catalogid): {{String}}
   [S3Resource](#cfn-lakeformation-permissions-datalocationresource-s3resource): {{String}}
 ```

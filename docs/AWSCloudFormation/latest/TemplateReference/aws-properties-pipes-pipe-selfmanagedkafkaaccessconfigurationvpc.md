@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-selfmanagedkafkaaccessconfigurationvpc-syntax.json"></a>
 
-```
+```json
 {
   "[SecurityGroup](#cfn-pipes-pipe-selfmanagedkafkaaccessconfigurationvpc-securitygroup)" : {{[ String, ... ]}},
   "[Subnets](#cfn-pipes-pipe-selfmanagedkafkaaccessconfigurationvpc-subnets)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-selfmanagedkafkaaccessconfigurationvpc-syntax.yaml"></a>
 
-```
+```yaml
   [SecurityGroup](#cfn-pipes-pipe-selfmanagedkafkaaccessconfigurationvpc-securitygroup): {{
     - String}}
   [Subnets](#cfn-pipes-pipe-selfmanagedkafkaaccessconfigurationvpc-subnets): {{

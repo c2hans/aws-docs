@@ -17,7 +17,7 @@ The `set_configuration` procedure has the following parameters.
 
 The following example retains 24 hours of redo logs.
 
-```
+```sql
 begin
     rdsadmin.rdsadmin_util.set_configuration(
         name  => 'archivelog retention hours',
@@ -34,7 +34,7 @@ To view how long archived redo logs are kept for your DB instance, use the Amazo
 
 The following example shows the log retention time.
 
-```
+```sql
 set serveroutput on
 EXEC rdsadmin.rdsadmin_util.show_configuration;
 ```
@@ -49,7 +49,7 @@ DESCRIPTION:ArchiveLog expiration specifies the duration in hours before archive
 
 Because the archived redo logs are retained on your DB instance, ensure that your DB instance has enough allocated storage for the retained logs. To determine how much space your DB instance has used in the last X hours, you can run the following query, replacing X with the number of hours.
 
-```
+```sql
 SELECT SUM(BLOCKS * BLOCK_SIZE) bytes
   FROM V$ARCHIVED_LOG
  WHERE FIRST_TIME >= SYSDATE-({{X}}/24) AND DEST_ID=1;

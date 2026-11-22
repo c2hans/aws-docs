@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-command-commandparametervalue-syntax.json"></a>
 
-```
+```json
 {
   "[B](#cfn-iot-command-commandparametervalue-b)" : {{Boolean}},
   "[BIN](#cfn-iot-command-commandparametervalue-bin)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-command-commandparametervalue-syntax.yaml"></a>
 
-```
+```yaml
   [B](#cfn-iot-command-commandparametervalue-b): {{Boolean}}
   [BIN](#cfn-iot-command-commandparametervalue-bin): {{String}}
   [D](#cfn-iot-command-commandparametervalue-d): {{Number}}

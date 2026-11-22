@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-internetmonitor-monitor-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::InternetMonitor::Monitor",
   "Properties" : {
@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-internetmonitor-monitor-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::InternetMonitor::Monitor
 Properties:
   [HealthEventsConfig](#cfn-internetmonitor-monitor-healtheventsconfig): {{

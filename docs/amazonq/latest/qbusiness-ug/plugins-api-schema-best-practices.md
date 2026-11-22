@@ -86,7 +86,7 @@ This section shows you an example of an API schema before and after our best pra
 
 The following is the example unoptimized API Schema:
 
-```
+```json
 openapi: 3.0.3
 info:
   # title is too long

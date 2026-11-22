@@ -82,7 +82,7 @@ The following [AWS::RDS::DBInstance](https://docs.aws.amazon.com/AWSCloudFormati
 #### JSON
 <a name="dynamic-references-secretsmanager-examples-user-name-and-password.json"></a>
 
-```
+```json
 {
     "MyRDSInstance": {
         "Type": "AWS::RDS::DBInstance",
@@ -101,7 +101,7 @@ The following [AWS::RDS::DBInstance](https://docs.aws.amazon.com/AWSCloudFormati
 #### YAML
 <a name="dynamic-references-secretsmanager-examples-user-name-and-password.yaml"></a>
 
-```
+```yaml
   MyRDSInstance:
     Type: AWS::RDS::DBInstance
     Properties:

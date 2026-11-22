@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rtbfabric-inboundexternallink-linkattributes-syntax.json"></a>
 
-```
+```json
 {
   "[CustomerProvidedId](#cfn-rtbfabric-inboundexternallink-linkattributes-customerprovidedid)" : {{String}},
   "[ResponderErrorMasking](#cfn-rtbfabric-inboundexternallink-linkattributes-respondererrormasking)" : {{[ ResponderErrorMaskingForHttpCode, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rtbfabric-inboundexternallink-linkattributes-syntax.yaml"></a>
 
-```
+```yaml
   [CustomerProvidedId](#cfn-rtbfabric-inboundexternallink-linkattributes-customerprovidedid): {{String}}
   [ResponderErrorMasking](#cfn-rtbfabric-inboundexternallink-linkattributes-respondererrormasking): {{
     - ResponderErrorMaskingForHttpCode}}

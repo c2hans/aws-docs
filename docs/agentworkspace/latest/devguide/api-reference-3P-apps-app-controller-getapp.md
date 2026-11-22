@@ -8,13 +8,13 @@ Returns the application information for the given application instance ID in the
 
  **Signature**
 
-```
+```typescript
 getApp(instanceId: string): Promise<AppInfo>
 ```
 
  **Usage**
 
-```
+```typescript
 const applicationInfo: AppInfo = await appControllerClient.getApp(appInstanceId);
 ```
 
@@ -45,6 +45,6 @@ The target instance must belong to the AppManager of the calling instance, or to
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

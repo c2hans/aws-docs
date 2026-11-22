@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspaces-workspacespool-timeoutsettings-syntax.json"></a>
 
-```
+```json
 {
   "[DisconnectTimeoutInSeconds](#cfn-workspaces-workspacespool-timeoutsettings-disconnecttimeoutinseconds)" : {{Integer}},
   "[IdleDisconnectTimeoutInSeconds](#cfn-workspaces-workspacespool-timeoutsettings-idledisconnecttimeoutinseconds)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspaces-workspacespool-timeoutsettings-syntax.yaml"></a>
 
-```
+```yaml
   [DisconnectTimeoutInSeconds](#cfn-workspaces-workspacespool-timeoutsettings-disconnecttimeoutinseconds): {{Integer}}
   [IdleDisconnectTimeoutInSeconds](#cfn-workspaces-workspacespool-timeoutsettings-idledisconnecttimeoutinseconds): {{Integer}}
   [MaxUserDurationInSeconds](#cfn-workspaces-workspacespool-timeoutsettings-maxuserdurationinseconds): {{Integer}}

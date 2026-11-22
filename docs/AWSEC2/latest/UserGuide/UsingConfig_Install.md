@@ -47,7 +47,7 @@ The updated EC2Config version information will not appear in the instance System
 **To download and install the latest version of EC2Config using PowerShell**
 To download, unzip, and install the latest version of EC2Config using PowerShell, run the following commands from a PowerShell window:
 
-```
+```powershell
 $Url = "https://s3.amazonaws.com/ec2-downloads-windows/EC2Config/EC2Install.zip"
 $DownloadZipFile = "$env:USERPROFILE\Desktop\" + $(Split-Path -Path $Url -Leaf)
 $ExtractPath = "$env:USERPROFILE\Desktop\"
@@ -64,7 +64,7 @@ Start-Process `
 **Note**
 If you receive an error when downloading the file, and you are using Windows Server 2016 or earlier, TLS 1.2 might need to be enabled for your PowerShell terminal. You can enable TLS 1.2 for the current PowerShell session with the following command and then try again:
 
-```
+```powershell
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 ```
 

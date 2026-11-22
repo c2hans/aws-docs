@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-gamelift-containerfleet-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::GameLift::ContainerFleet",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-gamelift-containerfleet-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::GameLift::ContainerFleet
 Properties:
   [BillingType](#cfn-gamelift-containerfleet-billingtype): {{String}}

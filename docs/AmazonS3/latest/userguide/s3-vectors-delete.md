@@ -11,7 +11,7 @@ You can delete specific vectors from a vector index by specifying their vector k
 
 To delete vectors, use the following example commands. Replace the {{user input placeholders}} with your own information.
 
-```
+```bash,sh,zsh
 aws s3vectors delete-vectors \
  --vector-bucket-name "{{amzn-s3-demo-vector-bucket}}" \
  --index-name "{{idx}}" \
@@ -24,7 +24,7 @@ aws s3vectors delete-vectors \
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```python
 import boto3
 
 # Create a S3 Vectors client in the AWS Region of your choice.

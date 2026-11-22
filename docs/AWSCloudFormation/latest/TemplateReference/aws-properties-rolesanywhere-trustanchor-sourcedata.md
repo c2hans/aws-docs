@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rolesanywhere-trustanchor-sourcedata-syntax.json"></a>
 
-```
+```json
 {
   "[AcmPcaArn](#cfn-rolesanywhere-trustanchor-sourcedata-acmpcaarn)" : {{String}},
   "[X509CertificateData](#cfn-rolesanywhere-trustanchor-sourcedata-x509certificatedata)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rolesanywhere-trustanchor-sourcedata-syntax.yaml"></a>
 
-```
+```yaml
   [AcmPcaArn](#cfn-rolesanywhere-trustanchor-sourcedata-acmpcaarn): {{String}}
   [X509CertificateData](#cfn-rolesanywhere-trustanchor-sourcedata-x509certificatedata): {{String}}
 ```

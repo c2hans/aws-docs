@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigateway-stage-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGateway::Stage",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigateway-stage-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGateway::Stage
 Properties:
   [AccessLogSetting](#cfn-apigateway-stage-accesslogsetting): {{
@@ -175,7 +175,7 @@ The following example creates a stage for the `TestDeployment` deployment. The s
 #### JSON
 <a name="aws-resource-apigateway-stage--examples--Create_stage--json"></a>
 
-```
+```json
 {
     "Resources": {
         "Prod": {
@@ -229,7 +229,7 @@ The following example creates a stage for the `TestDeployment` deployment. The s
 #### YAML
 <a name="aws-resource-apigateway-stage--examples--Create_stage--yaml"></a>
 
-```
+```yaml
 Resources:
   Prod:
     Type: AWS::ApiGateway::Stage

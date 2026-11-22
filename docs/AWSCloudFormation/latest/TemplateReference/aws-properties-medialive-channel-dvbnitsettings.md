@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-dvbnitsettings-syntax.json"></a>
 
-```
+```json
 {
   "[NetworkId](#cfn-medialive-channel-dvbnitsettings-networkid)" : {{Integer}},
   "[NetworkName](#cfn-medialive-channel-dvbnitsettings-networkname)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-dvbnitsettings-syntax.yaml"></a>
 
-```
+```yaml
   [NetworkId](#cfn-medialive-channel-dvbnitsettings-networkid): {{Integer}}
   [NetworkName](#cfn-medialive-channel-dvbnitsettings-networkname): {{String}}
   [RepInterval](#cfn-medialive-channel-dvbnitsettings-repinterval): {{Integer}}

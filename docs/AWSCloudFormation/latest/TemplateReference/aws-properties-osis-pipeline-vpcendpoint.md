@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-osis-pipeline-vpcendpoint-syntax.json"></a>
 
-```
+```json
 {
   "[VpcEndpointId](#cfn-osis-pipeline-vpcendpoint-vpcendpointid)" : {{String}},
   "[VpcId](#cfn-osis-pipeline-vpcendpoint-vpcid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-osis-pipeline-vpcendpoint-syntax.yaml"></a>
 
-```
+```yaml
   [VpcEndpointId](#cfn-osis-pipeline-vpcendpoint-vpcendpointid): {{String}}
   [VpcId](#cfn-osis-pipeline-vpcendpoint-vpcid): {{String}}
   [VpcOptions](#cfn-osis-pipeline-vpcendpoint-vpcoptions): {{

@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-dashboardpublishoptions-syntax.json"></a>
 
-```
+```json
 {
   "[AdHocFilteringOption](#cfn-quicksight-dashboard-dashboardpublishoptions-adhocfilteringoption)" : {{AdHocFilteringOption}},
   "[DataPointDrillUpDownOption](#cfn-quicksight-dashboard-dashboardpublishoptions-datapointdrillupdownoption)" : {{DataPointDrillUpDownOption}},
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-dashboardpublishoptions-syntax.yaml"></a>
 
-```
+```yaml
   [AdHocFilteringOption](#cfn-quicksight-dashboard-dashboardpublishoptions-adhocfilteringoption): {{
     AdHocFilteringOption}}
   [DataPointDrillUpDownOption](#cfn-quicksight-dashboard-dashboardpublishoptions-datapointdrillupdownoption): {{

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-internetmonitor-monitor-s3config-syntax.json"></a>
 
-```
+```json
 {
   "[BucketName](#cfn-internetmonitor-monitor-s3config-bucketname)" : {{String}},
   "[BucketPrefix](#cfn-internetmonitor-monitor-s3config-bucketprefix)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-internetmonitor-monitor-s3config-syntax.yaml"></a>
 
-```
+```yaml
   [BucketName](#cfn-internetmonitor-monitor-s3config-bucketname): {{String}}
   [BucketPrefix](#cfn-internetmonitor-monitor-s3config-bucketprefix): {{String}}
   [LogDeliveryStatus](#cfn-internetmonitor-monitor-s3config-logdeliverystatus): {{String}}

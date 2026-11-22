@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-topicconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Event](#cfn-s3-bucket-topicconfiguration-event)" : {{String}},
   "[Filter](#cfn-s3-bucket-topicconfiguration-filter)" : {{NotificationFilter}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-topicconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Event](#cfn-s3-bucket-topicconfiguration-event): {{String}}
   [Filter](#cfn-s3-bucket-topicconfiguration-filter): {{
     NotificationFilter}}
@@ -66,7 +66,7 @@ The following example template shows an Amazon S3 bucket with a notification con
 #### JSON
 <a name="aws-properties-s3-bucket-topicconfiguration--examples--Receive_S3_bucket_notifications_to_an_SNS_topic--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -99,7 +99,7 @@ The following example template shows an Amazon S3 bucket with a notification con
 #### YAML
 <a name="aws-properties-s3-bucket-topicconfiguration--examples--Receive_S3_bucket_notifications_to_an_SNS_topic--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   S3Bucket:

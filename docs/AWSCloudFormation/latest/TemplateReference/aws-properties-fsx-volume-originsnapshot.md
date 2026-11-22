@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-volume-originsnapshot-syntax.json"></a>
 
-```
+```json
 {
   "[CopyStrategy](#cfn-fsx-volume-originsnapshot-copystrategy)" : {{String}},
   "[SnapshotARN](#cfn-fsx-volume-originsnapshot-snapshotarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-volume-originsnapshot-syntax.yaml"></a>
 
-```
+```yaml
   [CopyStrategy](#cfn-fsx-volume-originsnapshot-copystrategy): {{String}}
   [SnapshotARN](#cfn-fsx-volume-originsnapshot-snapshotarn): {{String}}
 ```

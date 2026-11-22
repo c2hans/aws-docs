@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-route53-cidrcollection-location-syntax.json"></a>
 
-```
+```json
 {
   "[CidrList](#cfn-route53-cidrcollection-location-cidrlist)" : {{[ String, ... ]}},
   "[LocationName](#cfn-route53-cidrcollection-location-locationname)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-route53-cidrcollection-location-syntax.yaml"></a>
 
-```
+```yaml
   [CidrList](#cfn-route53-cidrcollection-location-cidrlist): {{
     - String}}
   [LocationName](#cfn-route53-cidrcollection-location-locationname): {{String}}

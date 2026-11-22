@@ -8,13 +8,13 @@ Sets the visual mode (light, dark, or auto) for the user that's currently logged
 
  **Signature**
 
-```
+```typescript
 setVisualMode(visualMode: VisualMode): Promise<void>
 ```
 
  **Usage**
 
-```
+```typescript
 await settingsClient.setVisualMode("dark");
 ```
 
@@ -26,6 +26,6 @@ await settingsClient.setVisualMode("dark");
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

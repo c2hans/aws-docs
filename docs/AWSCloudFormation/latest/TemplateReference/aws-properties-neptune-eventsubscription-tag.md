@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-neptune-eventsubscription-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-neptune-eventsubscription-tag-key)" : {{String}},
   "[Value](#cfn-neptune-eventsubscription-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-neptune-eventsubscription-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-neptune-eventsubscription-tag-key): {{String}}
   [Value](#cfn-neptune-eventsubscription-tag-value): {{String}}
 ```

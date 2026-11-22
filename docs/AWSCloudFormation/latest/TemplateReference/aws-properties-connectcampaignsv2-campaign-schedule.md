@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connectcampaignsv2-campaign-schedule-syntax.json"></a>
 
-```
+```json
 {
   "[EndTime](#cfn-connectcampaignsv2-campaign-schedule-endtime)" : {{String}},
   "[RefreshFrequency](#cfn-connectcampaignsv2-campaign-schedule-refreshfrequency)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connectcampaignsv2-campaign-schedule-syntax.yaml"></a>
 
-```
+```yaml
   [EndTime](#cfn-connectcampaignsv2-campaign-schedule-endtime): {{String}}
   [RefreshFrequency](#cfn-connectcampaignsv2-campaign-schedule-refreshfrequency): {{String}}
   [StartTime](#cfn-connectcampaignsv2-campaign-schedule-starttime): {{String}}

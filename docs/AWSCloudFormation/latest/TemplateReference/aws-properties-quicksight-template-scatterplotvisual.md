@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-scatterplotvisual-syntax.json"></a>
 
-```
+```json
 {
   "[Actions](#cfn-quicksight-template-scatterplotvisual-actions)" : {{[ VisualCustomAction, ... ]}},
   "[ChartConfiguration](#cfn-quicksight-template-scatterplotvisual-chartconfiguration)" : {{ScatterPlotConfiguration}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-scatterplotvisual-syntax.yaml"></a>
 
-```
+```yaml
   [Actions](#cfn-quicksight-template-scatterplotvisual-actions): {{
     - VisualCustomAction}}
   [ChartConfiguration](#cfn-quicksight-template-scatterplotvisual-chartconfiguration): {{

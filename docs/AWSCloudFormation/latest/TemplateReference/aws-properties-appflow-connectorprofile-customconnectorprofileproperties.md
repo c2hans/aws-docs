@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-connectorprofile-customconnectorprofileproperties-syntax.json"></a>
 
-```
+```json
 {
   "[OAuth2Properties](#cfn-appflow-connectorprofile-customconnectorprofileproperties-oauth2properties)" : {{OAuth2Properties}},
   "[ProfileProperties](#cfn-appflow-connectorprofile-customconnectorprofileproperties-profileproperties)" : {{{{{Key}}: {{Value}}, ...}}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-connectorprofile-customconnectorprofileproperties-syntax.yaml"></a>
 
-```
+```yaml
   [OAuth2Properties](#cfn-appflow-connectorprofile-customconnectorprofileproperties-oauth2properties): {{
     OAuth2Properties}}
   [ProfileProperties](#cfn-appflow-connectorprofile-customconnectorprofileproperties-profileproperties): {{

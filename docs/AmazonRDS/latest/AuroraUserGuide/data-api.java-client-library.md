@@ -40,7 +40,7 @@ You can build the library manually from the source files, but the best practice 
 
 Following, you can find some common examples of using the Data API Java client library. These examples assume that you have a table `accounts` with two columns: `accountId` and `name`. You also have the following data transfer object (DTO).
 
-```
+```java
 public class Account {
 	    int accountId;
 	    String name;
@@ -50,7 +50,7 @@ public class Account {
 
 The client library enables you to pass DTOs as input parameters. The following example shows how customer DTOs are mapped to input parameters sets.
 
-```
+```java
 var account1 = new Account(1, "John");
 	var account2 = new Account(2, "Mary");
 	client.forSql("INSERT INTO accounts(accountId, name) VALUES(:accountId, :name)")
@@ -60,7 +60,7 @@ var account1 = new Account(1, "John");
 
 In some cases, it's easier to work with simple values as input parameters. You can do so with the following syntax.
 
-```
+```java
 client.forSql("INSERT INTO accounts(accountId, name) VALUES(:accountId, :name)")
 	         .withParameter("accountId", 3)
 	         .withParameter("name", "Zhang")
@@ -69,14 +69,14 @@ client.forSql("INSERT INTO accounts(accountId, name) VALUES(:accountId, :name)")
 
 The following is another example that works with simple values as input parameters.
 
-```
+```java
 	client.forSql("INSERT INTO accounts(accountId, name) VALUES(?, ?)", 4, "Carlos")
 	         .execute();
 ```
 
 The client library provides automatic mapping to DTOs when a result is returned. The following examples show how the result is mapped to your DTOs.
 
-```
+```java
 List<Account> result = client.forSql("SELECT * FROM accounts")
 	          .execute()
 	          .mapToList(Account.class);
@@ -88,7 +88,7 @@ List<Account> result = client.forSql("SELECT * FROM accounts")
 
 In many cases, the database result set contains only a single value. In order to simplify retrieving such results, the client library offers the following API:
 
-```
+```java
 int numberOfAccounts = client.forSql("SELECT COUNT(*) FROM accounts")
 	          .execute()
 	          .singleValue(Integer.class);

@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-emailidentity-dkimsigningattributes-syntax.json"></a>
 
-```
+```json
 {
   "[DomainSigningPrivateKey](#cfn-ses-emailidentity-dkimsigningattributes-domainsigningprivatekey)" : {{String}},
   "[DomainSigningSelector](#cfn-ses-emailidentity-dkimsigningattributes-domainsigningselector)" : {{String}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-emailidentity-dkimsigningattributes-syntax.yaml"></a>
 
-```
+```yaml
   [DomainSigningPrivateKey](#cfn-ses-emailidentity-dkimsigningattributes-domainsigningprivatekey): {{String}}
   [DomainSigningSelector](#cfn-ses-emailidentity-dkimsigningattributes-domainsigningselector): {{String}}
   [NextSigningKeyLength](#cfn-ses-emailidentity-dkimsigningattributes-nextsigningkeylength): {{String}}

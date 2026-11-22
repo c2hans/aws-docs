@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-mailmanagertrafficpolicy-ingressipv6toevaluate-syntax.json"></a>
 
-```
+```json
 {
   "[Attribute](#cfn-ses-mailmanagertrafficpolicy-ingressipv6toevaluate-attribute)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-mailmanagertrafficpolicy-ingressipv6toevaluate-syntax.yaml"></a>
 
-```
+```yaml
   [Attribute](#cfn-ses-mailmanagertrafficpolicy-ingressipv6toevaluate-attribute): {{String}}
 ```
 

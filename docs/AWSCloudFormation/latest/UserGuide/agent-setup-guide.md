@@ -52,7 +52,7 @@ This installs the `aws-cloudformation` skill, other core AWS skills, agent hooks
 
 Replace `AWS_PROFILE` with your local AWS profile name.
 
-```
+```bash
 claude mcp add awslabs-aws-iac-mcp \
   -e AWS_PROFILE=default \
   -e AWS_REGION=us-east-1 \
@@ -67,7 +67,7 @@ claude mcp add awslabs-aws-iac-mcp \
 ### Install CloudFormation skill
 <a name="agent-setup-codex-skill"></a>
 
-```
+```bash
 npx skills add aws/agent-toolkit-for-aws/skills --skill aws-cloudformation --yes --global
 ```
 
@@ -76,7 +76,7 @@ npx skills add aws/agent-toolkit-for-aws/skills --skill aws-cloudformation --yes
 
 Replace `AWS_PROFILE` with your local AWS profile name.
 
-```
+```bash
 codex mcp add awslabs-aws-iac-mcp \
   --env AWS_PROFILE=default \
   --env AWS_REGION=us-east-1 \
@@ -90,7 +90,7 @@ codex mcp add awslabs-aws-iac-mcp \
 ### Install CloudFormation skill
 <a name="agent-setup-cursor-skill"></a>
 
-```
+```bash
 npx skills add aws/agent-toolkit-for-aws/skills --skill aws-cloudformation --yes --global
 ```
 
@@ -99,7 +99,7 @@ npx skills add aws/agent-toolkit-for-aws/skills --skill aws-cloudformation --yes
 
 Add the following to `.cursor/mcp.json` under `"mcpServers"`. Replace `AWS_PROFILE` with your local AWS profile name.
 
-```
+```json
 "awslabs.aws-iac-mcp": {
   "command": "uvx",
   "args": ["awslabs.aws-iac-mcp-server@latest"],
@@ -117,7 +117,7 @@ Add the following to `.cursor/mcp.json` under `"mcpServers"`. Replace `AWS_PROFI
 ### Install CloudFormation skill in Kiro CLI
 <a name="agent-setup-kiro-skill"></a>
 
-```
+```bash
 npx skills add aws/agent-toolkit-for-aws/skills --skill aws-cloudformation --yes --global
 ```
 
@@ -126,7 +126,7 @@ npx skills add aws/agent-toolkit-for-aws/skills --skill aws-cloudformation --yes
 
 Add the following to `~/.kiro/settings/mcp.json` under `"mcpServers"`. Replace `AWS_PROFILE` with your local AWS profile name.
 
-```
+```json
 "awslabs.aws-iac-mcp": {
   "command": "uvx",
   "args": ["awslabs.aws-iac-mcp-server@latest"],
@@ -151,7 +151,7 @@ Install the following Kiro power that provides specialized CloudFormation contex
 ### Install CloudFormation skill
 <a name="agent-setup-github-copilot-skill"></a>
 
-```
+```bash
 npx skills add aws/agent-toolkit-for-aws/skills --skill aws-cloudformation --yes --global
 ```
 
@@ -160,7 +160,7 @@ npx skills add aws/agent-toolkit-for-aws/skills --skill aws-cloudformation --yes
 
 Add the following to `.vscode/mcp.json` under `"mcpServers"`. Replace `AWS_PROFILE` with your local AWS profile name.
 
-```
+```json
 "awslabs.aws-iac-mcp": {
   "command": "uvx",
   "args": ["awslabs.aws-iac-mcp-server@latest"],
@@ -178,7 +178,7 @@ Add the following to `.vscode/mcp.json` under `"mcpServers"`. Replace `AWS_PROFI
 ### Install CloudFormation skill
 <a name="agent-setup-windsurf-skill"></a>
 
-```
+```bash
 npx skills add aws/agent-toolkit-for-aws/skills --skill aws-cloudformation --yes --global
 ```
 
@@ -187,7 +187,7 @@ npx skills add aws/agent-toolkit-for-aws/skills --skill aws-cloudformation --yes
 
 Add the following to `/.codeium/windsurf/mcp_config.json` under `"mcpServers"`. Replace `AWS_PROFILE` with your local AWS profile name.
 
-```
+```json
 "awslabs.aws-iac-mcp": {
   "command": "uvx",
   "args": ["awslabs.aws-iac-mcp-server@latest"],
@@ -205,7 +205,7 @@ Add the following to `/.codeium/windsurf/mcp_config.json` under `"mcpServers"`. 
 ### Install CloudFormation skill
 <a name="agent-setup-opencode-skill"></a>
 
-```
+```bash
 npx skills add aws/agent-toolkit-for-aws/skills --skill aws-cloudformation --yes --global
 ```
 
@@ -214,7 +214,7 @@ npx skills add aws/agent-toolkit-for-aws/skills --skill aws-cloudformation --yes
 
 Add the following to `/.config/opencode/opencode.jsonc` under `"mcpServers"`. Replace `AWS_PROFILE` with your local AWS profile name.
 
-```
+```json
 "awslabs.aws-iac-mcp": {
   "command": "uvx",
   "args": ["awslabs.aws-iac-mcp-server@latest"],
@@ -234,7 +234,7 @@ For any other agent that supports the open-source agent skills format and MCP Se
 ### Install CloudFormation skill
 <a name="agent-setup-other-agents-skill"></a>
 
-```
+```bash
 npx skills add aws/agent-toolkit-for-aws/skills --skill aws-cloudformation --yes --global
 ```
 
@@ -243,7 +243,7 @@ npx skills add aws/agent-toolkit-for-aws/skills --skill aws-cloudformation --yes
 
 Add the AWS IaC MCP Server to your agent's MCP client configuration file under `"mcpServers"`. Replace `AWS_PROFILE` with your local AWS profile name.
 
-```
+```json
 "awslabs.aws-iac-mcp": {
   "command": "uvx",
   "args": ["awslabs.aws-iac-mcp-server@latest"],
@@ -278,7 +278,7 @@ The MCP server requires the following AWS permissions for full functionality:
 
 **For deployment troubleshooting:**
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

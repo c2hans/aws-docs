@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-syntax.json"></a>
 
-```
+```json
 {
   "[ClientContext](#cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-clientcontext)" : {{String}},
   "[Payload](#cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-payload)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-syntax.yaml"></a>
 
-```
+```yaml
   [ClientContext](#cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-clientcontext): {{String}}
   [Payload](#cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-payload): {{String}}
   [Qualifier](#cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-qualifier): {{String}}

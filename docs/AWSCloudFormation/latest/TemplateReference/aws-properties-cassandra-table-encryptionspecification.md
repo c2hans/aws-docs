@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cassandra-table-encryptionspecification-syntax.json"></a>
 
-```
+```json
 {
   "[EncryptionType](#cfn-cassandra-table-encryptionspecification-encryptiontype)" : {{String}},
   "[KmsKeyIdentifier](#cfn-cassandra-table-encryptionspecification-kmskeyidentifier)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cassandra-table-encryptionspecification-syntax.yaml"></a>
 
-```
+```yaml
   [EncryptionType](#cfn-cassandra-table-encryptionspecification-encryptiontype): {{String}}
   [KmsKeyIdentifier](#cfn-cassandra-table-encryptionspecification-kmskeyidentifier): {{String}}
 ```

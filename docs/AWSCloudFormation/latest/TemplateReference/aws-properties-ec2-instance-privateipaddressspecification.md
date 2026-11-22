@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-instance-privateipaddressspecification-syntax.json"></a>
 
-```
+```json
 {
   "[Primary](#cfn-ec2-instance-privateipaddressspecification-primary)" : {{Boolean}},
   "[PrivateIpAddress](#cfn-ec2-instance-privateipaddressspecification-privateipaddress)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-instance-privateipaddressspecification-syntax.yaml"></a>
 
-```
+```yaml
   [Primary](#cfn-ec2-instance-privateipaddressspecification-primary): {{Boolean}}
   [PrivateIpAddress](#cfn-ec2-instance-privateipaddressspecification-privateipaddress): {{String}}
 ```

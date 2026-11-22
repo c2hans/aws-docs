@@ -22,7 +22,7 @@ For private APIs, you should use a combination of an API Gateway resource policy
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -53,7 +53,7 @@ For IAM policies to be effective, you must have enabled IAM authentication on AP
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -88,7 +88,7 @@ To grant a user permission to view a specific pet exposed by an API that is conf
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

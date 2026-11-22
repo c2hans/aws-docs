@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-config-conformancepack-source-syntax.json"></a>
 
-```
+```json
 {
   "[SourceIdentifier](#cfn-config-conformancepack-source-sourceidentifier)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-config-conformancepack-source-syntax.yaml"></a>
 
-```
+```yaml
   [SourceIdentifier](#cfn-config-conformancepack-source-sourceidentifier): {{String}}
 ```
 

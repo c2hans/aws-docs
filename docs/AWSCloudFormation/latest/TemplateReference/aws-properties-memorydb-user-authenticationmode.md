@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-memorydb-user-authenticationmode-syntax.json"></a>
 
-```
+```json
 {
   "[Passwords](#cfn-memorydb-user-authenticationmode-passwords)" : {{[ String, ... ]}},
   "[Type](#cfn-memorydb-user-authenticationmode-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-memorydb-user-authenticationmode-syntax.yaml"></a>
 
-```
+```yaml
   [Passwords](#cfn-memorydb-user-authenticationmode-passwords): {{
     - String}}
   [Type](#cfn-memorydb-user-authenticationmode-type): {{String}}

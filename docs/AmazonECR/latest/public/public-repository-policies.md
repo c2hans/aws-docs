@@ -28,7 +28,7 @@ This example shows an Amazon ECR public repository policy, which allows for a sp
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [{
@@ -55,7 +55,7 @@ This example shows an IAM policy that achieves the same goal as the preceding ex
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [{

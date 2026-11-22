@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-arcregionswitch-plan-arcroutingcontrolconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CrossAccountRole](#cfn-arcregionswitch-plan-arcroutingcontrolconfiguration-crossaccountrole)" : {{String}},
   "[ExternalId](#cfn-arcregionswitch-plan-arcroutingcontrolconfiguration-externalid)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-arcregionswitch-plan-arcroutingcontrolconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CrossAccountRole](#cfn-arcregionswitch-plan-arcroutingcontrolconfiguration-crossaccountrole): {{String}}
   [ExternalId](#cfn-arcregionswitch-plan-arcroutingcontrolconfiguration-externalid): {{String}}
   [RegionAndRoutingControls](#cfn-arcregionswitch-plan-arcroutingcontrolconfiguration-regionandroutingcontrols): {{

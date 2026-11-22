@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-softwarepackageversion-sbom-syntax.json"></a>
 
-```
+```json
 {
   "[S3Location](#cfn-iot-softwarepackageversion-sbom-s3location)" : {{S3Location}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-softwarepackageversion-sbom-syntax.yaml"></a>
 
-```
+```yaml
   [S3Location](#cfn-iot-softwarepackageversion-sbom-s3location): {{
     S3Location}}
 ```

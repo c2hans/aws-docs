@@ -99,13 +99,13 @@ To connect to your RDS for Db2 DB instance, you need its DNS name and port numbe
 
 1. Run queries and view results. The following example shows a SQL statement that selects the database you created.
 
-   ```
+   ```sql
    db2 "select current server from sysibm.dual"
    ```
 
    This command produces output similar to the following example:
 
-   ```
+   ```sql
    1
        ------------------
        TESTDB

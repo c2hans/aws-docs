@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-geospatialcolor-syntax.json"></a>
 
-```
+```json
 {
   "[Categorical](#cfn-quicksight-dashboard-geospatialcolor-categorical)" : {{GeospatialCategoricalColor}},
   "[Gradient](#cfn-quicksight-dashboard-geospatialcolor-gradient)" : {{GeospatialGradientColor}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-geospatialcolor-syntax.yaml"></a>
 
-```
+```yaml
   [Categorical](#cfn-quicksight-dashboard-geospatialcolor-categorical): {{
     GeospatialCategoricalColor}}
   [Gradient](#cfn-quicksight-dashboard-geospatialcolor-gradient): {{

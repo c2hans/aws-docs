@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-b2bi-partnership-x12functionalgroupheaders-syntax.json"></a>
 
-```
+```json
 {
   "[ApplicationReceiverCode](#cfn-b2bi-partnership-x12functionalgroupheaders-applicationreceivercode)" : {{String}},
   "[ApplicationSenderCode](#cfn-b2bi-partnership-x12functionalgroupheaders-applicationsendercode)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-b2bi-partnership-x12functionalgroupheaders-syntax.yaml"></a>
 
-```
+```yaml
   [ApplicationReceiverCode](#cfn-b2bi-partnership-x12functionalgroupheaders-applicationreceivercode): {{String}}
   [ApplicationSenderCode](#cfn-b2bi-partnership-x12functionalgroupheaders-applicationsendercode): {{String}}
   [ResponsibleAgencyCode](#cfn-b2bi-partnership-x12functionalgroupheaders-responsibleagencycode): {{String}}

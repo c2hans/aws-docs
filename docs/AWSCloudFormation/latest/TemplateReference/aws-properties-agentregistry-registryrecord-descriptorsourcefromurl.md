@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-agentregistry-registryrecord-descriptorsourcefromurl-syntax.json"></a>
 
-```
+```json
 {
   "[CredentialProviderConfigurations](#cfn-agentregistry-registryrecord-descriptorsourcefromurl-credentialproviderconfigurations)" : {{[ RegistryRecordCredentialProviderConfiguration, ... ]}},
   "[Url](#cfn-agentregistry-registryrecord-descriptorsourcefromurl-url)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-agentregistry-registryrecord-descriptorsourcefromurl-syntax.yaml"></a>
 
-```
+```yaml
   [CredentialProviderConfigurations](#cfn-agentregistry-registryrecord-descriptorsourcefromurl-credentialproviderconfigurations): {{
     - RegistryRecordCredentialProviderConfiguration}}
   [Url](#cfn-agentregistry-registryrecord-descriptorsourcefromurl-url): {{String}}

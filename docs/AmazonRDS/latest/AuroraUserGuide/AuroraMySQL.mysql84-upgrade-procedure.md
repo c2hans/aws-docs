@@ -17,7 +17,7 @@ Aurora runs upgrade prechecks automatically before the upgrade begins. These pre
 
 1. **Migrate authentication plugins.** Review all database users and migrate any users using `mysql_native_password` to `caching_sha2_password`. In Aurora MySQL version 8.4, the `mysql_native_password` plugin is still supported but deprecated. The default `authentication_policy` is `*:caching_sha2_password`, so new users are created with `caching_sha2_password` by default.
 
-   ```
+   ```sql
    -- Find users using mysql_native_password
    SELECT user, host, plugin FROM mysql.user WHERE plugin = 'mysql_native_password';
 

@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-computeenvironment-eksaccessentry-syntax.json"></a>
 
-```
+```json
 {
   "[DesiredState](#cfn-batch-computeenvironment-eksaccessentry-desiredstate)" : {{String}},
   "[Status](#cfn-batch-computeenvironment-eksaccessentry-status)" : {{String}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-computeenvironment-eksaccessentry-syntax.yaml"></a>
 
-```
+```yaml
   [DesiredState](#cfn-batch-computeenvironment-eksaccessentry-desiredstate): {{String}}
   [Status](#cfn-batch-computeenvironment-eksaccessentry-status): {{String}}
 ```

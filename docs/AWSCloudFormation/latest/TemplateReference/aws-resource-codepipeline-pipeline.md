@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-codepipeline-pipeline-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CodePipeline::Pipeline",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-codepipeline-pipeline-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CodePipeline::Pipeline
 Properties:
   [ArtifactStore](#cfn-codepipeline-pipeline-artifactstore): {{
@@ -198,7 +198,7 @@ The following example creates a pipeline with a source stage and a beta stage. F
 #### JSON
 <a name="aws-resource-codepipeline-pipeline--examples--Pipeline_with_two_stages_and_trigger_configuration--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "CodePipeline sample",
@@ -360,7 +360,7 @@ The following example creates a pipeline with a source stage and a beta stage. F
 #### YAML
 <a name="aws-resource-codepipeline-pipeline--examples--Pipeline_with_two_stages_and_trigger_configuration--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: CodePipeline sample
 Parameters:
@@ -461,7 +461,7 @@ The following example creates a pipeline with a source stage and a release stage
 #### JSON
 <a name="aws-resource-codepipeline-pipeline--examples--Pipeline_with_source_stage_and_a_stage_configured_for_automatic_rollback_on_failure--json"></a>
 
-```
+```json
 {
     "AppPipeline": {
         "Type": "AWS::CodePipeline::Pipeline",
@@ -564,7 +564,7 @@ The following example creates a pipeline with a source stage and a release stage
 #### YAML
 <a name="aws-resource-codepipeline-pipeline--examples--Pipeline_with_source_stage_and_a_stage_configured_for_automatic_rollback_on_failure--yaml"></a>
 
-```
+```yaml
 AppPipeline:
   Type: AWS::CodePipeline::Pipeline
   Properties:

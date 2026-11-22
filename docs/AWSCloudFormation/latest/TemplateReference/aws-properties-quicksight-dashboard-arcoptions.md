@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-arcoptions-syntax.json"></a>
 
-```
+```json
 {
   "[ArcThickness](#cfn-quicksight-dashboard-arcoptions-arcthickness)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-arcoptions-syntax.yaml"></a>
 
-```
+```yaml
   [ArcThickness](#cfn-quicksight-dashboard-arcoptions-arcthickness): {{String}}
 ```
 

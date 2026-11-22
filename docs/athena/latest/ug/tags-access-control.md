@@ -19,7 +19,7 @@ The following IAM policy allows you to run queries and interact with tags for th
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -79,7 +79,7 @@ Tags that are associated with a resource like a workgroup are referred to as res
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -136,7 +136,7 @@ If you want to allow an IAM role to pass in tags as part of a `CreateWorkGroup` 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -176,7 +176,7 @@ The following IAM policy allows you to interact with tags for the data catalog n
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -250,7 +250,7 @@ You can use resource tags to write policy blocks that deny specific actions on d
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -296,7 +296,7 @@ If you want to allow an IAM role to pass in tags as part of a `CreateDataCatalog
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

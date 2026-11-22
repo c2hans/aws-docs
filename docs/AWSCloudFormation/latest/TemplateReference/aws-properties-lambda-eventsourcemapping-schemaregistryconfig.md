@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-eventsourcemapping-schemaregistryconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AccessConfigs](#cfn-lambda-eventsourcemapping-schemaregistryconfig-accessconfigs)" : {{[ SchemaRegistryAccessConfig, ... ]}},
   "[EventRecordFormat](#cfn-lambda-eventsourcemapping-schemaregistryconfig-eventrecordformat)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-eventsourcemapping-schemaregistryconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AccessConfigs](#cfn-lambda-eventsourcemapping-schemaregistryconfig-accessconfigs): {{
     - SchemaRegistryAccessConfig}}
   [EventRecordFormat](#cfn-lambda-eventsourcemapping-schemaregistryconfig-eventrecordformat): {{String}}

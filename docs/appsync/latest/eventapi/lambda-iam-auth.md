@@ -18,7 +18,7 @@ The AWS Cloud Development Kit (AWS CDK) (AWS CDK) is an open-source software dev
 
 From your terminal, install CDK.
 
-```
+```bash
 npm install -g aws-cdk
 ```
 
@@ -27,26 +27,26 @@ Next, create a new folder for your application
 **Note**
 Be sure to use the exact name as AWS CDK uses the folder name to name your app.
 
-```
+```bash
 mkdir publish-from-lambda
 ```
 
 From the `publish-from-lambda` directory, init a new app:
 
-```
+```bash
 cd publish-from-lambda
 cdk init app --language typescript
 ```
 
 The AWS CDK CLI creates a AWS CDK app containing a single AWS CDK stack. You'll be using TypeScript in this project, so install `esbuild` to bundle your code:
 
-```
+```bash
 npm i -D esbuild@0
 ```
 
 Now, update the `lib/publish-from-lambda-stack.ts` file with this code:
 
-```
+```typescript
 import * as cdk from 'aws-cdk-lib'
 import * as appsync from 'aws-cdk-lib/aws-appsync'
 import { Runtime } from 'aws-cdk-lib/aws-lambda'
@@ -112,7 +112,7 @@ Next, create you'll create a Lambda function that can publish events to the prov
 
 In your `publish-from-lambda` directory, create a new file `publisher.ts` in the `lib/lambda` folder and install the library.
 
-```
+```bash
 mkdir -p lib/lambda
 touch lib/lambda/publisher.ts
 npm i -D ob-appsync-events-request @types/aws-lambda
@@ -120,7 +120,7 @@ npm i -D ob-appsync-events-request @types/aws-lambda
 
 Update `publisher.ts` with the following code.
 
-```
+```typescript
 import type { Handler } from 'aws-lambda'
 import { PublishRequest } from 'ob-appsync-events-request'
 
@@ -156,7 +156,7 @@ When triggered, the Lambda function publishes 3 messages to the channel path `/m
 
 You can deploy the stack at this point from your `publish-from-lambda` folder:
 
-```
+```bash
 npm run cdk deploy
 ```
 
@@ -175,7 +175,7 @@ Open the AWS AppSync console in the region you deployed your stack in. On the AP
 
 Back in your terminal, invoke the Lambda function with the AWS CLI, using the output `fnName`.
 
-```
+```bash
 aws lambda invoke \
   --function-name "your_function_name" \
   --output text /dev/stdout
@@ -188,6 +188,6 @@ The function handler is executed, and in your AWS AppSync Events console, you re
 
 Once you are done with this tutorial, you can clean up your resources by running the command:
 
-```
+```bash
 npm run cdk destroy
 ```

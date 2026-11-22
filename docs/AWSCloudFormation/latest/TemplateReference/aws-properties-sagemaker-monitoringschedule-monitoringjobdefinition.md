@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-monitoringschedule-monitoringjobdefinition-syntax.json"></a>
 
-```
+```json
 {
   "[BaselineConfig](#cfn-sagemaker-monitoringschedule-monitoringjobdefinition-baselineconfig)" : {{BaselineConfig}},
   "[Environment](#cfn-sagemaker-monitoringschedule-monitoringjobdefinition-environment)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-monitoringschedule-monitoringjobdefinition-syntax.yaml"></a>
 
-```
+```yaml
   [BaselineConfig](#cfn-sagemaker-monitoringschedule-monitoringjobdefinition-baselineconfig): {{
     BaselineConfig}}
   [Environment](#cfn-sagemaker-monitoringschedule-monitoringjobdefinition-environment): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrassv2-componentversion-lambdafunctionrecipesource-syntax.json"></a>
 
-```
+```json
 {
   "[ComponentDependencies](#cfn-greengrassv2-componentversion-lambdafunctionrecipesource-componentdependencies)" : {{{{{Key}}: {{Value}}, ...}}},
   "[ComponentLambdaParameters](#cfn-greengrassv2-componentversion-lambdafunctionrecipesource-componentlambdaparameters)" : {{LambdaExecutionParameters}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrassv2-componentversion-lambdafunctionrecipesource-syntax.yaml"></a>
 
-```
+```yaml
   [ComponentDependencies](#cfn-greengrassv2-componentversion-lambdafunctionrecipesource-componentdependencies): {{
     {{Key}}: {{Value}}}}
   [ComponentLambdaParameters](#cfn-greengrassv2-componentversion-lambdafunctionrecipesource-componentlambdaparameters): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-pluginvisualitemslimitconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ItemsLimit](#cfn-quicksight-template-pluginvisualitemslimitconfiguration-itemslimit)" : {{Number}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-pluginvisualitemslimitconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ItemsLimit](#cfn-quicksight-template-pluginvisualitemslimitconfiguration-itemslimit): {{Number}}
 ```
 

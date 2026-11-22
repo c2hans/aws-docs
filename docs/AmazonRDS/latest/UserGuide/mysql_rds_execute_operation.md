@@ -9,7 +9,7 @@ Executes InnoDB operations to manage buffer pool states and temporary tablespace
 ## Syntax
 <a name="mysql_rds_execute_operation-syntax"></a>
 
-```
+```sql
 CALL mysql.rds_execute_operation(operation);
 ```
 

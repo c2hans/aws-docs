@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-totaloptions-syntax.json"></a>
 
-```
+```json
 {
   "[CustomLabel](#cfn-quicksight-analysis-totaloptions-customlabel)" : {{String}},
   "[Placement](#cfn-quicksight-analysis-totaloptions-placement)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-totaloptions-syntax.yaml"></a>
 
-```
+```yaml
   [CustomLabel](#cfn-quicksight-analysis-totaloptions-customlabel): {{String}}
   [Placement](#cfn-quicksight-analysis-totaloptions-placement): {{String}}
   [ScrollStatus](#cfn-quicksight-analysis-totaloptions-scrollstatus): {{String}}

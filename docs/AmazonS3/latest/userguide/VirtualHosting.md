@@ -85,13 +85,13 @@ The URL is as follows:
 ```
 The request is as follows:
 
-```
+```http
 1. GET /example.com/homepage.html HTTP/1.1
 2. Host: s3.us-east-1.amazonaws.com
 ```
 The request with HTTP 1.0 and omitting the `Host` header is as follows:
 
-```
+```http
 1. GET /example.com/homepage.html HTTP/1.0
 ```
 
@@ -109,7 +109,7 @@ The URL is as follows:
 ```
 The request is as follows:
 
-```
+```http
 1. GET /homepage.html HTTP/1.1
 2. Host: amzn-s3-demo-bucket1.s3.eu-west-1.amazonaws.com
 ```
@@ -126,7 +126,7 @@ The URL is as follows:
 ```
 The example is as follows:
 
-```
+```http
 1. GET /homepage.html HTTP/1.1
 2. Host: www.example.com
 ```
@@ -148,7 +148,7 @@ Amazon S3 uses the hostname to determine the bucket name. So the CNAME and the b
 
 **Example**
 
-```
+```http
 1. GET / HTTP/1.1
 2. Host: www.example.com
 3. Date: {{date}}
@@ -230,7 +230,7 @@ https://amzn-s3-demo-bucket1.s3-us-west-2.amazonaws.com
 
 For some Regions, you can use the legacy global endpoint to construct requests that do not specify a Region-specific endpoint. The legacy global endpoint point is as follows:
 
-```
+```xml
 {{bucket-name}}.s3.amazonaws.com
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-arcregionswitch-plan-lambdaeventsourcemappingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-arcregionswitch-plan-lambdaeventsourcemappingconfiguration-action)" : {{String}},
   "[RegionEventSourceMappings](#cfn-arcregionswitch-plan-lambdaeventsourcemappingconfiguration-regioneventsourcemappings)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-arcregionswitch-plan-lambdaeventsourcemappingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-arcregionswitch-plan-lambdaeventsourcemappingconfiguration-action): {{String}}
   [RegionEventSourceMappings](#cfn-arcregionswitch-plan-lambdaeventsourcemappingconfiguration-regioneventsourcemappings): {{
     {{Key}}: {{Value}}}}

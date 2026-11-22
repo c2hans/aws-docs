@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iot-thing-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoT::Thing",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iot-thing-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoT::Thing
 Properties:
   [AttributePayload](#cfn-iot-thing-attributepayload): {{
@@ -101,7 +101,7 @@ The following example declares a thing and the values of its attributes.
 #### JSON
 <a name="aws-resource-iot-thing--examples----json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -150,7 +150,7 @@ The following example declares a thing and the values of its attributes.
 #### YAML
 <a name="aws-resource-iot-thing--examples----yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   MyThing:

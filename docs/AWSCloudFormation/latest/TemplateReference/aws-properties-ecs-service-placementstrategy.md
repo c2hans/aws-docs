@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-placementstrategy-syntax.json"></a>
 
-```
+```json
 {
   "[Field](#cfn-ecs-service-placementstrategy-field)" : {{String}},
   "[Type](#cfn-ecs-service-placementstrategy-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-placementstrategy-syntax.yaml"></a>
 
-```
+```yaml
   [Field](#cfn-ecs-service-placementstrategy-field): {{String}}
   [Type](#cfn-ecs-service-placementstrategy-type): {{String}}
 ```

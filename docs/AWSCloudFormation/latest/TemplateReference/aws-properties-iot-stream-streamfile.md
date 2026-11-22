@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-stream-streamfile-syntax.json"></a>
 
-```
+```json
 {
   "[FileId](#cfn-iot-stream-streamfile-fileid)" : {{Integer}},
   "[S3Location](#cfn-iot-stream-streamfile-s3location)" : {{S3Location}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-stream-streamfile-syntax.yaml"></a>
 
-```
+```yaml
   [FileId](#cfn-iot-stream-streamfile-fileid): {{Integer}}
   [S3Location](#cfn-iot-stream-streamfile-s3location): {{
     S3Location}}

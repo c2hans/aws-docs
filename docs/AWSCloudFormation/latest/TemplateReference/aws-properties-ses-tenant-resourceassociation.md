@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-tenant-resourceassociation-syntax.json"></a>
 
-```
+```json
 {
   "[ResourceArn](#cfn-ses-tenant-resourceassociation-resourcearn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-tenant-resourceassociation-syntax.yaml"></a>
 
-```
+```yaml
   [ResourceArn](#cfn-ses-tenant-resourceassociation-resourcearn): {{String}}
 ```
 

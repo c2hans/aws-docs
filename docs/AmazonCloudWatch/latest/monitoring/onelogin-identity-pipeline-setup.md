@@ -8,7 +8,7 @@ Collects event logs from OneLogin using OAuth2 authentication.
 
 Configure the OneLogin Identity source with the following parameters:
 
-```
+```yaml
 source:
   onelogin_identity:
     range: "P7D"

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-domain-datastore-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-customerprofiles-domain-datastore-enabled)" : {{Boolean}},
   "[Readiness](#cfn-customerprofiles-domain-datastore-readiness)" : {{Readiness}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-domain-datastore-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-customerprofiles-domain-datastore-enabled): {{Boolean}}
   [Readiness](#cfn-customerprofiles-domain-datastore-readiness): {{
     Readiness}}

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-synthetics-canary-visualreference-syntax.json"></a>
 
-```
+```json
 {
   "[BaseCanaryRunId](#cfn-synthetics-canary-visualreference-basecanaryrunid)" : {{String}},
   "[BaseScreenshots](#cfn-synthetics-canary-visualreference-basescreenshots)" : {{[ BaseScreenshot, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-synthetics-canary-visualreference-syntax.yaml"></a>
 
-```
+```yaml
   [BaseCanaryRunId](#cfn-synthetics-canary-visualreference-basecanaryrunid): {{String}}
   [BaseScreenshots](#cfn-synthetics-canary-visualreference-basescreenshots): {{
     - BaseScreenshot}}

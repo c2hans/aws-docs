@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-servicecatalog-portfolioprincipalassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ServiceCatalog::PortfolioPrincipalAssociation",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-servicecatalog-portfolioprincipalassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ServiceCatalog::PortfolioPrincipalAssociation
 Properties:
   [AcceptLanguage](#cfn-servicecatalog-portfolioprincipalassociation-acceptlanguage): {{String}}
@@ -103,7 +103,7 @@ The following example gives the IAM role `MyRole` in the current account access 
 #### JSON
 <a name="aws-resource-servicecatalog-portfolioprincipalassociation--examples--Example_-_Associate_an_IAM_role_with_a_portfolio--json"></a>
 
-```
+```json
 {
     "MyPrincipalAssociation": {
         "Type": "AWS::ServiceCatalog::PortfolioPrincipalAssociation",
@@ -119,7 +119,7 @@ The following example gives the IAM role `MyRole` in the current account access 
 #### YAML
 <a name="aws-resource-servicecatalog-portfolioprincipalassociation--examples--Example_-_Associate_an_IAM_role_with_a_portfolio--yaml"></a>
 
-```
+```yaml
 MyPrincipalAssociation:
   Type: AWS::ServiceCatalog::PortfolioPrincipalAssociation
   Properties:
@@ -136,7 +136,7 @@ The following example gives the IAM roles that have the default path (`/`) and w
 #### JSON
 <a name="aws-resource-servicecatalog-portfolioprincipalassociation--examples--Example_-_Associate_IAM_roles_by_name_pattern--json"></a>
 
-```
+```json
 {
     "MyPatternAssociation": {
         "Type": "AWS::ServiceCatalog::PortfolioPrincipalAssociation",
@@ -152,7 +152,7 @@ The following example gives the IAM roles that have the default path (`/`) and w
 #### YAML
 <a name="aws-resource-servicecatalog-portfolioprincipalassociation--examples--Example_-_Associate_IAM_roles_by_name_pattern--yaml"></a>
 
-```
+```yaml
 MyPatternAssociation:
   Type: AWS::ServiceCatalog::PortfolioPrincipalAssociation
   Properties:

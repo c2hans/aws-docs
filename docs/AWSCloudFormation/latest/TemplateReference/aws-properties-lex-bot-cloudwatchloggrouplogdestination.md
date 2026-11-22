@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-cloudwatchloggrouplogdestination-syntax.json"></a>
 
-```
+```json
 {
   "[CloudWatchLogGroupArn](#cfn-lex-bot-cloudwatchloggrouplogdestination-cloudwatchloggrouparn)" : {{String}},
   "[LogPrefix](#cfn-lex-bot-cloudwatchloggrouplogdestination-logprefix)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-cloudwatchloggrouplogdestination-syntax.yaml"></a>
 
-```
+```yaml
   [CloudWatchLogGroupArn](#cfn-lex-bot-cloudwatchloggrouplogdestination-cloudwatchloggrouparn): {{String}}
   [LogPrefix](#cfn-lex-bot-cloudwatchloggrouplogdestination-logprefix): {{String}}
 ```

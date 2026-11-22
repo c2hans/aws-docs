@@ -8,13 +8,13 @@ Sends a signal to the Connect Customer indicating that the agent is active and s
 
  **Signature**
 
-```
+```typescript
 sendActivity(provider: AmazonConnectProvider): void
 ```
 
  **Usage**
 
-```
+```typescript
 import { sendActivity } from '@amazon-connect/activity';
 
 const handleActivity = () => {

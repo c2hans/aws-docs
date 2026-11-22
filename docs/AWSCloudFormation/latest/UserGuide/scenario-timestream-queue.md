@@ -33,7 +33,7 @@ This example deploys a multi- AZ and publicly accessible instance using default 
 ### JSON
 <a name="scenario-timestream-influxdb-example-1.json"></a>
 
-```
+```json
 {
   "Metadata": {
     "AWS::CloudFormation::Interface": {
@@ -319,7 +319,7 @@ This example deploys a multi- AZ and publicly accessible instance using default 
 ### YAML
 <a name="scenario-timestream-influxdb-example-1.yaml"></a>
 
-```
+```yaml
 Metadata:
   AWS::CloudFormation::Interface:
     ParameterGroups:
@@ -495,7 +495,7 @@ This example template dynamically alters the network resources based on the para
 ### JSON
 <a name="scenario-timestream-influxdb-example-2.json"></a>
 
-```
+```json
 {
   "Metadata": {
     "AWS::CloudFormation::Interface": {
@@ -930,7 +930,7 @@ This example template dynamically alters the network resources based on the para
 ### YAML
 <a name="scenario-timestream-influxdb-example-2.yaml"></a>
 
-```
+```yaml
 Metadata:
   AWS::CloudFormation::Interface:
     ParameterGroups:

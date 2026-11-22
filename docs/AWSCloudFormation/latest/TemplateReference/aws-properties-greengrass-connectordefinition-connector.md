@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrass-connectordefinition-connector-syntax.json"></a>
 
-```
+```json
 {
   "[ConnectorArn](#cfn-greengrass-connectordefinition-connector-connectorarn)" : {{String}},
   "[Id](#cfn-greengrass-connectordefinition-connector-id)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrass-connectordefinition-connector-syntax.yaml"></a>
 
-```
+```yaml
   [ConnectorArn](#cfn-greengrass-connectordefinition-connector-connectorarn): {{String}}
   [Id](#cfn-greengrass-connectordefinition-connector-id): {{String}}
   [Parameters](#cfn-greengrass-connectordefinition-connector-parameters): {{Json}}

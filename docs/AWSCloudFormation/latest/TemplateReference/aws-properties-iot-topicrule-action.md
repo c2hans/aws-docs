@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicrule-action-syntax.json"></a>
 
-```
+```json
 {
   "[CloudwatchAlarm](#cfn-iot-topicrule-action-cloudwatchalarm)" : {{CloudwatchAlarmAction}},
   "[CloudwatchLogs](#cfn-iot-topicrule-action-cloudwatchlogs)" : {{CloudwatchLogsAction}},
@@ -47,7 +47,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicrule-action-syntax.yaml"></a>
 
-```
+```yaml
   [CloudwatchAlarm](#cfn-iot-topicrule-action-cloudwatchalarm): {{
     CloudwatchAlarmAction}}
   [CloudwatchLogs](#cfn-iot-topicrule-action-cloudwatchlogs): {{

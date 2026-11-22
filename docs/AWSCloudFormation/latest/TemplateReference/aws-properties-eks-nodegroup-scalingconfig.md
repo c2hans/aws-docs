@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-nodegroup-scalingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[DesiredSize](#cfn-eks-nodegroup-scalingconfig-desiredsize)" : {{Integer}},
   "[MaxSize](#cfn-eks-nodegroup-scalingconfig-maxsize)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-nodegroup-scalingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [DesiredSize](#cfn-eks-nodegroup-scalingconfig-desiredsize): {{Integer}}
   [MaxSize](#cfn-eks-nodegroup-scalingconfig-maxsize): {{Integer}}
   [MinSize](#cfn-eks-nodegroup-scalingconfig-minsize): {{Integer}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityhub-automationrule-workflowupdate-syntax.json"></a>
 
-```
+```json
 {
   "[Status](#cfn-securityhub-automationrule-workflowupdate-status)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityhub-automationrule-workflowupdate-syntax.yaml"></a>
 
-```
+```yaml
   [Status](#cfn-securityhub-automationrule-workflowupdate-status): {{String}}
 ```
 

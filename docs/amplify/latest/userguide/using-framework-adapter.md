@@ -14,7 +14,7 @@ The name of the build output directory can be anything, but the `.amplify-hostin
 
 The following is an example of the build settings for an app. The `baseDirectory` is set to `.amplify-hosting` to indicate that the build output is in the `.amplify-hosting` folder. As long as the contents of the `.amplify-hosting` folder match the Amplify Hosting deployment specification, the app will deploy successfully.
 
-```
+```yaml
 version: 1
 frontend:
   preBuild:

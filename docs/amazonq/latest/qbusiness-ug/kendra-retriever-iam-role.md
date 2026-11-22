@@ -15,7 +15,7 @@ When you use an Amazon Kendra index as a retriever, you must provide Amazon Q Bu
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -41,7 +41,7 @@ When you use an Amazon Kendra index as a retriever, you must provide Amazon Q Bu
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspaces-directory-streamingproperties-syntax.json"></a>
 
-```
+```json
 {
   "[GlobalAccelerator](#cfn-workspaces-directory-streamingproperties-globalaccelerator)" : {{GlobalAcceleratorForDirectory}},
   "[StorageConnectors](#cfn-workspaces-directory-streamingproperties-storageconnectors)" : {{[ StorageConnector, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspaces-directory-streamingproperties-syntax.yaml"></a>
 
-```
+```yaml
   [GlobalAccelerator](#cfn-workspaces-directory-streamingproperties-globalaccelerator): {{
     GlobalAcceleratorForDirectory}}
   [StorageConnectors](#cfn-workspaces-directory-streamingproperties-storageconnectors): {{

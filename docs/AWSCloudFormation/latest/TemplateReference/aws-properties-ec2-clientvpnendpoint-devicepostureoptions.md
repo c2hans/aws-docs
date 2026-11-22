@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-clientvpnendpoint-devicepostureoptions-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-ec2-clientvpnendpoint-devicepostureoptions-enabled)" : {{Boolean}},
   "[TrustProviders](#cfn-ec2-clientvpnendpoint-devicepostureoptions-trustproviders)" : {{[ DevicePostureTrustProvider, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-clientvpnendpoint-devicepostureoptions-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-ec2-clientvpnendpoint-devicepostureoptions-enabled): {{Boolean}}
   [TrustProviders](#cfn-ec2-clientvpnendpoint-devicepostureoptions-trustproviders): {{
     - DevicePostureTrustProvider}}

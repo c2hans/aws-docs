@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eventsv2-subscriber-universaltargetparameters-syntax.json"></a>
 
-```
+```json
 {
   "[Input](#cfn-eventsv2-subscriber-universaltargetparameters-input)" : {{String}},
   "[InvocationTimeoutSeconds](#cfn-eventsv2-subscriber-universaltargetparameters-invocationtimeoutseconds)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eventsv2-subscriber-universaltargetparameters-syntax.yaml"></a>
 
-```
+```yaml
   [Input](#cfn-eventsv2-subscriber-universaltargetparameters-input): {{String}}
   [InvocationTimeoutSeconds](#cfn-eventsv2-subscriber-universaltargetparameters-invocationtimeoutseconds): {{String}}
 ```

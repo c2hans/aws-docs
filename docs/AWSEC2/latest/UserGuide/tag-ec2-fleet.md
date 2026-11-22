@@ -46,7 +46,7 @@ You can't tag volumes attached to Spot Instances that are launched by a `request
 **To tag an existing EC2 Fleet request, instance, and volume**
 Use the [create-tags](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-tags.html) command to tag existing resources.
 
-```
+```bash
 aws ec2 create-tags \
     --resources {{fleet-12a34b55-67cd-8ef9-ba9b-9208dEXAMPLE}} {{i-1234567890abcdef0}} {{vol-1234567890EXAMPLE}} \
     --tags Key={{purpose}},Value={{test}}

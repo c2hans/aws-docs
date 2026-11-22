@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-gamelift-gamesessionqueue-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::GameLift::GameSessionQueue",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-gamelift-gamesessionqueue-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::GameLift::GameSessionQueue
 Properties:
   [CustomEventData](#cfn-gamelift-gamesessionqueue-customeventdata): {{String}}
@@ -170,7 +170,7 @@ The following example creates a GameLift game session queue named `MyGameSession
 #### JSON
 <a name="aws-resource-gamelift-gamesessionqueue--examples--Create_a_Game_Session_Queue--json"></a>
 
-```
+```json
 {
     "Resources": {
         "Queue": {
@@ -228,7 +228,7 @@ The following example creates a GameLift game session queue named `MyGameSession
 #### YAML
 <a name="aws-resource-gamelift-gamesessionqueue--examples--Create_a_Game_Session_Queue--yaml"></a>
 
-```
+```yaml
 Resources:
   Queue:
     Type: "AWS::GameLift::GameSessionQueue"

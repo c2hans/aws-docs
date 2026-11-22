@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-intermediatetable-intermediatetableanalysisrulecustom-syntax.json"></a>
 
-```
+```json
 {
   "[AdditionalAnalyses](#cfn-cleanrooms-intermediatetable-intermediatetableanalysisrulecustom-additionalanalyses)" : {{String}},
   "[AggregationThresholds](#cfn-cleanrooms-intermediatetable-intermediatetableanalysisrulecustom-aggregationthresholds)" : {{[ AggregationThreshold, ... ]}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-intermediatetable-intermediatetableanalysisrulecustom-syntax.yaml"></a>
 
-```
+```yaml
   [AdditionalAnalyses](#cfn-cleanrooms-intermediatetable-intermediatetableanalysisrulecustom-additionalanalyses): {{String}}
   [AggregationThresholds](#cfn-cleanrooms-intermediatetable-intermediatetableanalysisrulecustom-aggregationthresholds): {{
     - AggregationThreshold}}

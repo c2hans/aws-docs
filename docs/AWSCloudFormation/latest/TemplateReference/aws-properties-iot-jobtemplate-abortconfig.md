@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-jobtemplate-abortconfig-syntax.json"></a>
 
-```
+```json
 {
   "[CriteriaList](#cfn-iot-jobtemplate-abortconfig-criterialist)" : {{[ AbortCriteria, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-jobtemplate-abortconfig-syntax.yaml"></a>
 
-```
+```yaml
   [CriteriaList](#cfn-iot-jobtemplate-abortconfig-criterialist): {{
     - AbortCriteria}}
 ```

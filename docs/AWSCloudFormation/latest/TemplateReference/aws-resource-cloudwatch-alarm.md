@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudwatch-alarm-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudWatch::Alarm",
   "Properties" : {
@@ -58,7 +58,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudwatch-alarm-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudWatch::Alarm
 Properties:
   [ActionConfiguration](#cfn-cloudwatch-alarm-actionconfiguration): {{
@@ -342,7 +342,7 @@ This example creates an alarm that is based on an anomaly detector.
 #### JSON
 <a name="aws-resource-cloudwatch-alarm--examples--Alarm_Based_on_an_Anomaly_Detector--json"></a>
 
-```
+```json
 "Resources": {
     "LambdaInvocationsAnomalyDetector": {
        "Type": "AWS::CloudWatch::AnomalyDetector",
@@ -386,7 +386,7 @@ This example creates an alarm that is based on an anomaly detector.
 #### YAML
 <a name="aws-resource-cloudwatch-alarm--examples--Alarm_Based_on_an_Anomaly_Detector--yaml"></a>
 
-```
+```yaml
 Resources:
   LambdaInvocationsAnomalyDetector:
     Type: AWS::CloudWatch::AnomalyDetector

@@ -50,7 +50,7 @@ If you use an Internet Monitor SDK, start by verifying which endpoint your code 
 
 You can run the following code example to determine the Internet Monitor endpoint that you're using. For this example, we’re using the Internet Monitor SDK for Go in the US East (N. Virginia) Region.
 
-```
+```go
 package main
 
 import (

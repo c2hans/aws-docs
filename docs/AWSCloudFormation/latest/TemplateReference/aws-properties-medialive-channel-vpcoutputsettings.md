@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-vpcoutputsettings-syntax.json"></a>
 
-```
+```json
 {
   "[PublicAddressAllocationIds](#cfn-medialive-channel-vpcoutputsettings-publicaddressallocationids)" : {{[ String, ... ]}},
   "[SecurityGroupIds](#cfn-medialive-channel-vpcoutputsettings-securitygroupids)" : {{[ String, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-vpcoutputsettings-syntax.yaml"></a>
 
-```
+```yaml
   [PublicAddressAllocationIds](#cfn-medialive-channel-vpcoutputsettings-publicaddressallocationids): {{
     - String}}
   [SecurityGroupIds](#cfn-medialive-channel-vpcoutputsettings-securitygroupids): {{

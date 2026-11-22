@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-mediaconnectrouteroutputsettings-syntax.json"></a>
 
-```
+```json
 {
   "[ConnectedRouterInputs](#cfn-medialive-channel-mediaconnectrouteroutputsettings-connectedrouterinputs)" : {{MediaConnectRouterOutputConnectionMap}},
   "[ContainerSettings](#cfn-medialive-channel-mediaconnectrouteroutputsettings-containersettings)" : {{UdpMediaConnectRouterContainerSettings}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-mediaconnectrouteroutputsettings-syntax.yaml"></a>
 
-```
+```yaml
   [ConnectedRouterInputs](#cfn-medialive-channel-mediaconnectrouteroutputsettings-connectedrouterinputs): {{
     MediaConnectRouterOutputConnectionMap}}
   [ContainerSettings](#cfn-medialive-channel-mediaconnectrouteroutputsettings-containersettings): {{

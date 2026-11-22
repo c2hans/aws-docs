@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sns-topic-subscription-syntax.json"></a>
 
-```
+```json
 {
   "[Endpoint](#cfn-sns-topic-subscription-endpoint)" : {{String}},
   "[Protocol](#cfn-sns-topic-subscription-protocol)" : {{String}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sns-topic-subscription-syntax.yaml"></a>
 
-```
+```yaml
   [Endpoint](#cfn-sns-topic-subscription-endpoint): {{String}}
   [Protocol](#cfn-sns-topic-subscription-protocol): {{String}}
 ```

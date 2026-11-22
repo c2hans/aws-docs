@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-networkinsightsanalysis-analysissecuritygrouprule-syntax.json"></a>
 
-```
+```json
 {
   "[Cidr](#cfn-ec2-networkinsightsanalysis-analysissecuritygrouprule-cidr)" : {{String}},
   "[Direction](#cfn-ec2-networkinsightsanalysis-analysissecuritygrouprule-direction)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-networkinsightsanalysis-analysissecuritygrouprule-syntax.yaml"></a>
 
-```
+```yaml
   [Cidr](#cfn-ec2-networkinsightsanalysis-analysissecuritygrouprule-cidr): {{String}}
   [Direction](#cfn-ec2-networkinsightsanalysis-analysissecuritygrouprule-direction): {{String}}
   [PortRange](#cfn-ec2-networkinsightsanalysis-analysissecuritygrouprule-portrange): {{

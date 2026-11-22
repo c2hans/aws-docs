@@ -9,7 +9,7 @@ This operation is deprecated. Use [getContactAttribute()](3P-apps-contact-reques
 
 Returns the requested attribute of the contact as an `AttributeDetail` object, or `undefined` if the contact does not have the attribute. To get the attribute value, read the `value` property of the object. The `value` property is undefined if the attribute has no value set.
 
-```
+```typescript
 async getAttribute(
   contactId: string,
   attribute: string,
@@ -27,6 +27,6 @@ Requires an instance that is scoped to the contact that you pass in `contactId`,
 
  **Permissions required:**
 
-```
+```typescript
 Contact.Attributes.View
 ```

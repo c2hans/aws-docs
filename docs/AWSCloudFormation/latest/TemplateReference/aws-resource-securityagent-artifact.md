@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-securityagent-artifact-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SecurityAgent::Artifact",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-securityagent-artifact-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SecurityAgent::Artifact
 Properties:
   [AgentSpaceId](#cfn-securityagent-artifact-agentspaceid): {{String}}

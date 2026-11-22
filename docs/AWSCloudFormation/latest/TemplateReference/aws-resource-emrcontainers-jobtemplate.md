@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-emrcontainers-jobtemplate-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EMRContainers::JobTemplate",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-emrcontainers-jobtemplate-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EMRContainers::JobTemplate
 Properties:
   [JobTemplateData](#cfn-emrcontainers-jobtemplate-jobtemplatedata): {{

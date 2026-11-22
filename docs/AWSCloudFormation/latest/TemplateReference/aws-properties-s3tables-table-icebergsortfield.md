@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3tables-table-icebergsortfield-syntax.json"></a>
 
-```
+```json
 {
   "[Direction](#cfn-s3tables-table-icebergsortfield-direction)" : {{String}},
   "[NullOrder](#cfn-s3tables-table-icebergsortfield-nullorder)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3tables-table-icebergsortfield-syntax.yaml"></a>
 
-```
+```yaml
   [Direction](#cfn-s3tables-table-icebergsortfield-direction): {{String}}
   [NullOrder](#cfn-s3tables-table-icebergsortfield-nullorder): {{String}}
   [SourceId](#cfn-s3tables-table-icebergsortfield-sourceid): {{Integer}}

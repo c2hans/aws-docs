@@ -12,7 +12,7 @@ The following code examples show how to update a table's warm throughput setting
 **SDK for Java 2.x**
 Update warm throughput setting on an existing DynamoDB table using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
 import software.amazon.awssdk.services.dynamodb.model.GlobalSecondaryIndexUpdate;
@@ -83,7 +83,7 @@ import software.amazon.awssdk.services.dynamodb.model.WarmThroughput;
 **SDK for JavaScript (v3)**
 Update warm throughput setting on an existing DynamoDB table using AWS SDK for JavaScript.
 
-```
+```javascript
 import { DynamoDBClient, UpdateTableCommand } from "@aws-sdk/client-dynamodb";
 
 export async function updateDynamoDBTableWarmThroughput(
@@ -146,7 +146,7 @@ updateDynamoDBTableWarmThroughput(
 **SDK for Python (Boto3)**
 Update warm throughput setting on an existing DynamoDB table using AWS SDK for Python (Boto3).
 
-```
+```python
 from boto3 import client
 from botocore.exceptions import ClientError
 

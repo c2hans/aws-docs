@@ -53,7 +53,7 @@ aws autoscaling create-auto-scaling-group --cli-input-json {{file://~/config.jso
 
 The following is an example `config.json` file that shows a maximum instance lifetime of `2592000` seconds (30 days).
 
-```
+```json
 {
     "AutoScalingGroupName": "{{my-asg}}",
     "LaunchTemplate": {

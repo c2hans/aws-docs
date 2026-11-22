@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-userprofile-jupyterlabappsettings-syntax.json"></a>
 
-```
+```json
 {
   "[AppLifecycleManagement](#cfn-sagemaker-userprofile-jupyterlabappsettings-applifecyclemanagement)" : {{AppLifecycleManagement}},
   "[BuiltInLifecycleConfigArn](#cfn-sagemaker-userprofile-jupyterlabappsettings-builtinlifecycleconfigarn)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-userprofile-jupyterlabappsettings-syntax.yaml"></a>
 
-```
+```yaml
   [AppLifecycleManagement](#cfn-sagemaker-userprofile-jupyterlabappsettings-applifecyclemanagement): {{
     AppLifecycleManagement}}
   [BuiltInLifecycleConfigArn](#cfn-sagemaker-userprofile-jupyterlabappsettings-builtinlifecycleconfigarn): {{String}}

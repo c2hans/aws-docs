@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkmanager-sitetositevpnattachment-natrule-syntax.json"></a>
 
-```
+```json
 {
   "[MatchSourceCidr](#cfn-networkmanager-sitetositevpnattachment-natrule-matchsourcecidr)" : {{String}},
   "[NatCidr](#cfn-networkmanager-sitetositevpnattachment-natrule-natcidr)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkmanager-sitetositevpnattachment-natrule-syntax.yaml"></a>
 
-```
+```yaml
   [MatchSourceCidr](#cfn-networkmanager-sitetositevpnattachment-natrule-matchsourcecidr): {{String}}
   [NatCidr](#cfn-networkmanager-sitetositevpnattachment-natrule-natcidr): {{String}}
   [RuleNumber](#cfn-networkmanager-sitetositevpnattachment-natrule-rulenumber): {{Integer}}

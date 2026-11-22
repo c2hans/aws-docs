@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-opensearchserverless-securityconfig-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::OpenSearchServerless::SecurityConfig",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-opensearchserverless-securityconfig-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::OpenSearchServerless::SecurityConfig
 Properties:
   [Description](#cfn-opensearchserverless-securityconfig-description): {{String}}
@@ -131,7 +131,7 @@ The following example specifies an OpenSearch Serverless SAML provider named `my
 #### JSON
 <a name="aws-resource-opensearchserverless-securityconfig--examples--Create_a_security_configuration_that_specifies_a_YAML_provider--json"></a>
 
-```
+```json
 {
    "AWSTemplateFormatVersion":"2010-09-09",
    "Description":"OpenSearch Serverless security policy template",
@@ -168,7 +168,7 @@ The following example specifies an OpenSearch Serverless SAML provider named `my
 #### YAML
 <a name="aws-resource-opensearchserverless-securityconfig--examples--Create_a_security_configuration_that_specifies_a_YAML_provider--yaml"></a>
 
-```
+```yaml
 Description: OpenSearch Serverless security policy template
 Resources:
   TestSecurityConfig:

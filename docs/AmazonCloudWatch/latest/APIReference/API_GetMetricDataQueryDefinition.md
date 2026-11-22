@@ -113,7 +113,7 @@ The following AWS CLI command retrieves a saved definition by its ID. Replace th
 #### Sample Request
 <a name="API_GetMetricDataQueryDefinition_Example_1_Request"></a>
 
-```
+```bash
 PROMPT> aws cloudwatch get-metric-data-query-definition \
     --id a1b2c3d4-5678-90ab-cdef-EXAMPLE11111
 ```
@@ -121,7 +121,7 @@ PROMPT> aws cloudwatch get-metric-data-query-definition \
 #### Sample Response
 <a name="API_GetMetricDataQueryDefinition_Example_1_Response"></a>
 
-```
+```json
 {
     "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Arn": "arn:aws:cloudwatch:us-east-1:111122223333:metric-query-definition/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",

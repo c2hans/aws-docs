@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-gaugechartfieldwells-syntax.json"></a>
 
-```
+```json
 {
   "[TargetValues](#cfn-quicksight-dashboard-gaugechartfieldwells-targetvalues)" : {{[ MeasureField, ... ]}},
   "[Values](#cfn-quicksight-dashboard-gaugechartfieldwells-values)" : {{[ MeasureField, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-gaugechartfieldwells-syntax.yaml"></a>
 
-```
+```yaml
   [TargetValues](#cfn-quicksight-dashboard-gaugechartfieldwells-targetvalues): {{
     - MeasureField}}
   [Values](#cfn-quicksight-dashboard-gaugechartfieldwells-values): {{

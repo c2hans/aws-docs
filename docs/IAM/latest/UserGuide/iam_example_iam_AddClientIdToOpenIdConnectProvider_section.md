@@ -29,7 +29,7 @@ For more information, see [Creating OpenID Connect (OIDC) identity providers](ht
 **Tools for PowerShell V4**
 **Example 1: This command adds the client ID (or audience) `my-application-ID` to the existing OIDC provider named `server.example.com`.**
 
-```
+```powershell
 Add-IAMClientIDToOpenIDConnectProvider -ClientID "my-application-ID" -OpenIDConnectProviderARN "arn:aws:iam::123456789012:oidc-provider/server.example.com"
 ```
 +  For API details, see [AddClientIdToOpenIdConnectProvider](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -37,7 +37,7 @@ Add-IAMClientIDToOpenIDConnectProvider -ClientID "my-application-ID" -OpenIDConn
 **Tools for PowerShell V5**
 **Example 1: This command adds the client ID (or audience) `my-application-ID` to the existing OIDC provider named `server.example.com`.**
 
-```
+```powershell
 Add-IAMClientIDToOpenIDConnectProvider -ClientID "my-application-ID" -OpenIDConnectProviderARN "arn:aws:iam::123456789012:oidc-provider/server.example.com"
 ```
 +  For API details, see [AddClientIdToOpenIdConnectProvider](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-timestream-scheduledquery-errorreportconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[S3Configuration](#cfn-timestream-scheduledquery-errorreportconfiguration-s3configuration)" : {{S3Configuration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-timestream-scheduledquery-errorreportconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [S3Configuration](#cfn-timestream-scheduledquery-errorreportconfiguration-s3configuration): {{
     S3Configuration}}
 ```

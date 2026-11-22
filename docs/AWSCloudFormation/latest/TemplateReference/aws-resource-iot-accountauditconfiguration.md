@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iot-accountauditconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoT::AccountAuditConfiguration",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iot-accountauditconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoT::AccountAuditConfiguration
 Properties:
   [AccountId](#cfn-iot-accountauditconfiguration-accountid): {{String}}
@@ -94,7 +94,7 @@ When you pass the logical ID of this resource to the intrinsic `Ref` function, `
 #### JSON
 <a name="aws-resource-iot-accountauditconfiguration--examples----json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "Amazon Web Services IoT AccountAuditConfiguration Sample Template",
@@ -173,7 +173,7 @@ When you pass the logical ID of this resource to the intrinsic `Ref` function, `
 #### YAML
 <a name="aws-resource-iot-accountauditconfiguration--examples----yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Amazon Web Services IoT AccountAuditConfiguration Sample Template
 Resources:

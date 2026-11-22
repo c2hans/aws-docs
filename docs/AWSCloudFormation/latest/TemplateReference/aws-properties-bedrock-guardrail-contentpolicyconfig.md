@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-guardrail-contentpolicyconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ContentFiltersTierConfig](#cfn-bedrock-guardrail-contentpolicyconfig-contentfilterstierconfig)" : {{ContentFiltersTierConfig}},
   "[FiltersConfig](#cfn-bedrock-guardrail-contentpolicyconfig-filtersconfig)" : {{[ ContentFilterConfig, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-guardrail-contentpolicyconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ContentFiltersTierConfig](#cfn-bedrock-guardrail-contentpolicyconfig-contentfilterstierconfig): {{
     ContentFiltersTierConfig}}
   [FiltersConfig](#cfn-bedrock-guardrail-contentpolicyconfig-filtersconfig): {{

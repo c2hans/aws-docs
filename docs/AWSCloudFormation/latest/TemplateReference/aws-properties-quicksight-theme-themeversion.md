@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-theme-themeversion-syntax.json"></a>
 
-```
+```json
 {
   "[Arn](#cfn-quicksight-theme-themeversion-arn)" : {{String}},
   "[BaseThemeId](#cfn-quicksight-theme-themeversion-basethemeid)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-theme-themeversion-syntax.yaml"></a>
 
-```
+```yaml
   [Arn](#cfn-quicksight-theme-themeversion-arn): {{String}}
   [BaseThemeId](#cfn-quicksight-theme-themeversion-basethemeid): {{String}}
   [Configuration](#cfn-quicksight-theme-themeversion-configuration): {{

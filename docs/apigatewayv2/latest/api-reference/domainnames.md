@@ -64,7 +64,7 @@ Creates a domain name.
 #### POST schema
 <a name="domainnames-request-body-post-example"></a>
 
-```
+```json
 {
   "domainName": "string",
   "tags": {
@@ -98,7 +98,7 @@ Creates a domain name.
 #### DomainNames schema
 <a name="domainnames-response-body-domainnames-example"></a>
 
-```
+```json
 {
   "items": [
     {
@@ -139,7 +139,7 @@ Creates a domain name.
 #### DomainName schema
 <a name="domainnames-response-body-domainname-example"></a>
 
-```
+```json
 {
   "domainName": "string",
   "domainNameArn": "string",
@@ -175,7 +175,7 @@ Creates a domain name.
 #### BadRequestException schema
 <a name="domainnames-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -184,7 +184,7 @@ Creates a domain name.
 #### AccessDeniedException schema
 <a name="domainnames-response-body-accessdeniedexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -193,7 +193,7 @@ Creates a domain name.
 #### NotFoundException schema
 <a name="domainnames-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -203,7 +203,7 @@ Creates a domain name.
 #### ConflictException schema
 <a name="domainnames-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -212,7 +212,7 @@ Creates a domain name.
 #### LimitExceededException schema
 <a name="domainnames-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

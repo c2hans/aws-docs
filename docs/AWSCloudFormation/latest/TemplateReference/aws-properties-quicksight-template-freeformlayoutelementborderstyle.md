@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-freeformlayoutelementborderstyle-syntax.json"></a>
 
-```
+```json
 {
   "[Color](#cfn-quicksight-template-freeformlayoutelementborderstyle-color)" : {{String}},
   "[Visibility](#cfn-quicksight-template-freeformlayoutelementborderstyle-visibility)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-freeformlayoutelementborderstyle-syntax.yaml"></a>
 
-```
+```yaml
   [Color](#cfn-quicksight-template-freeformlayoutelementborderstyle-color): {{String}}
   [Visibility](#cfn-quicksight-template-freeformlayoutelementborderstyle-visibility): {{String}}
 ```

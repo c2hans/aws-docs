@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackagev2-channel-multiviewconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AvailableLayouts](#cfn-mediapackagev2-channel-multiviewconfiguration-availablelayouts)" : {{[ String, ... ]}},
   "[AvailableSources](#cfn-mediapackagev2-channel-multiviewconfiguration-availablesources)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackagev2-channel-multiviewconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AvailableLayouts](#cfn-mediapackagev2-channel-multiviewconfiguration-availablelayouts): {{
     - String}}
   [AvailableSources](#cfn-mediapackagev2-channel-multiviewconfiguration-availablesources): {{

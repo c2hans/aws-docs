@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codecommit-repository-s3-syntax.json"></a>
 
-```
+```json
 {
   "[Bucket](#cfn-codecommit-repository-s3-bucket)" : {{String}},
   "[Key](#cfn-codecommit-repository-s3-key)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codecommit-repository-s3-syntax.yaml"></a>
 
-```
+```yaml
   [Bucket](#cfn-codecommit-repository-s3-bucket): {{String}}
   [Key](#cfn-codecommit-repository-s3-key): {{String}}
   [ObjectVersion](#cfn-codecommit-repository-s3-objectversion): {{String}}

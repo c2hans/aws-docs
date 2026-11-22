@@ -137,7 +137,7 @@ The following code example returns the API caller's access grants to the S3 data
 **Example List a caller's access grants**
 Request:
 
-```
+```java
 Public void ListCallerAccessGrants() {
 	ListCallerAccessGrantsRequest listRequest = ListCallerAccessGrantsRequest.builder()
 				.withMaxResults(1000)
@@ -149,7 +149,7 @@ Public void ListCallerAccessGrants() {
 ```
 Response:
 
-```
+```java
 ListCallerAccessGrantsResponse(
 CallerAccessGrantsList=[
 	ListCallerAccessGrantsEntry(

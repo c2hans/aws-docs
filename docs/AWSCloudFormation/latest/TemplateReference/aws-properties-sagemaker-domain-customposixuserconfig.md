@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-domain-customposixuserconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Gid](#cfn-sagemaker-domain-customposixuserconfig-gid)" : {{Integer}},
   "[Uid](#cfn-sagemaker-domain-customposixuserconfig-uid)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-domain-customposixuserconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Gid](#cfn-sagemaker-domain-customposixuserconfig-gid): {{Integer}}
   [Uid](#cfn-sagemaker-domain-customposixuserconfig-uid): {{Integer}}
 ```

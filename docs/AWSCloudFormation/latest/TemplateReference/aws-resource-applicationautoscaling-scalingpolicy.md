@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-applicationautoscaling-scalingpolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApplicationAutoScaling::ScalingPolicy",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-applicationautoscaling-scalingpolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApplicationAutoScaling::ScalingPolicy
 Properties:
   [PolicyName](#cfn-applicationautoscaling-scalingpolicy-policyname): {{String}}
@@ -222,7 +222,7 @@ For more information, see [Target tracking scaling policies](https://docs.aws.am
 #### JSON
 <a name="aws-resource-applicationautoscaling-scalingpolicy--examples--Target_tracking_scaling_policy_with_a_predefined_metric--json"></a>
 
-```
+```json
 {
   "Resources":{
     "TargetTrackingScalingPolicy":{
@@ -250,7 +250,7 @@ For more information, see [Target tracking scaling policies](https://docs.aws.am
 #### YAML
 <a name="aws-resource-applicationautoscaling-scalingpolicy--examples--Target_tracking_scaling_policy_with_a_predefined_metric--yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   TargetTrackingScalingPolicy:
@@ -282,7 +282,7 @@ For more information, see [Step scaling policies](https://docs.aws.amazon.com/au
 #### JSON
 <a name="aws-resource-applicationautoscaling-scalingpolicy--examples--Step_scaling_policy--json"></a>
 
-```
+```json
 {
   "Resources":{
     "PolicyHigh":{
@@ -323,7 +323,7 @@ For more information, see [Step scaling policies](https://docs.aws.amazon.com/au
 #### YAML
 <a name="aws-resource-applicationautoscaling-scalingpolicy--examples--Step_scaling_policy--yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   PolicyHigh:

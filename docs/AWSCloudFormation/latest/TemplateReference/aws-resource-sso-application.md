@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sso-application-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SSO::Application",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sso-application-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SSO::Application
 Properties:
   [ApplicationProviderArn](#cfn-sso-application-applicationproviderarn): {{String}}
@@ -142,7 +142,7 @@ The following example creates a new custom application with an Application URL s
 #### JSON
 <a name="aws-resource-sso-application--examples--Creating_an_application_in--json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SSO::Application",
   "Properties" : {
@@ -171,7 +171,7 @@ The following example creates a new custom application with an Application URL s
 #### YAML
 <a name="aws-resource-sso-application--examples--Creating_an_application_in--yaml"></a>
 
-```
+```yaml
 Type: AWS::SSO::Application
 Properties:
   ApplicationProviderArn: arn:sso::aws:applicationProvider/example

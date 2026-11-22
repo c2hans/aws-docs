@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-finspace-environment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::FinSpace::Environment",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-finspace-environment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::FinSpace::Environment
 Properties:
   [Description](#cfn-finspace-environment-description): {{String}}
@@ -154,7 +154,7 @@ The following examples create new FinSpace environments.
 #### YAML
 <a name="aws-resource-finspace-environment--examples--Creating_environments--yaml"></a>
 
-```
+```yaml
 Resources:
   FinSpaceEnvironment:
     Type: 'AWS::FinSpace::Environment'
@@ -167,7 +167,7 @@ Resources:
 #### JSON
 <a name="aws-resource-finspace-environment--examples--Creating_environments--json"></a>
 
-```
+```json
 {
    "Resources": {
       "FinSpaceEnvironment": {

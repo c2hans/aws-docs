@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codepipeline-pipeline-encryptionkey-syntax.json"></a>
 
-```
+```json
 {
   "[Id](#cfn-codepipeline-pipeline-encryptionkey-id)" : {{String}},
   "[Type](#cfn-codepipeline-pipeline-encryptionkey-type)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codepipeline-pipeline-encryptionkey-syntax.yaml"></a>
 
-```
+```yaml
   [Id](#cfn-codepipeline-pipeline-encryptionkey-id): {{String}}
   [Type](#cfn-codepipeline-pipeline-encryptionkey-type): {{String}}
 ```

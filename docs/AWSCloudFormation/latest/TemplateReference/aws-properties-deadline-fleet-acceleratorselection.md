@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-deadline-fleet-acceleratorselection-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-deadline-fleet-acceleratorselection-name)" : {{String}},
   "[Runtime](#cfn-deadline-fleet-acceleratorselection-runtime)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-deadline-fleet-acceleratorselection-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-deadline-fleet-acceleratorselection-name): {{String}}
   [Runtime](#cfn-deadline-fleet-acceleratorselection-runtime): {{String}}
 ```

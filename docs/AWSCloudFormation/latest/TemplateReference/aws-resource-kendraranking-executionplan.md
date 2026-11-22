@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-kendraranking-executionplan-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::KendraRanking::ExecutionPlan",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-kendraranking-executionplan-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::KendraRanking::ExecutionPlan
 Properties:
   [CapacityUnits](#cfn-kendraranking-executionplan-capacityunits): {{

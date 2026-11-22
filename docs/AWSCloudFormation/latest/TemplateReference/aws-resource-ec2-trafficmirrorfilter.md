@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-trafficmirrorfilter-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::TrafficMirrorFilter",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-trafficmirrorfilter-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::TrafficMirrorFilter
 Properties:
   [Description](#cfn-ec2-trafficmirrorfilter-description): {{String}}
@@ -87,7 +87,7 @@ This is a filter that you can use when you create a traffic mirror session. This
 #### JSON
 <a name="aws-resource-ec2-trafficmirrorfilter--examples--Create_a_traffic_mirror_filter--json"></a>
 
-```
+```json
 {
   "SampleTrafficMirrorFilter": {
     "Type": "AWS::EC2::TrafficMirrorFilter",
@@ -110,7 +110,7 @@ This is a filter that you can use when you create a traffic mirror session. This
 #### YAML
 <a name="aws-resource-ec2-trafficmirrorfilter--examples--Create_a_traffic_mirror_filter--yaml"></a>
 
-```
+```yaml
 SampleTrafficMirrorFilter:
   Type: "AWS::EC2::TrafficMirrorFilter"
   Properties:

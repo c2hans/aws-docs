@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-database-datalakeprincipal-syntax.json"></a>
 
-```
+```json
 {
   "[DataLakePrincipalIdentifier](#cfn-glue-database-datalakeprincipal-datalakeprincipalidentifier)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-database-datalakeprincipal-syntax.yaml"></a>
 
-```
+```yaml
   [DataLakePrincipalIdentifier](#cfn-glue-database-datalakeprincipal-datalakeprincipalidentifier): {{String}}
 ```
 

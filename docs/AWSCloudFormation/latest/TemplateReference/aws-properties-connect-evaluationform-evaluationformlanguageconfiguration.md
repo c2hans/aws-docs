@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-evaluationform-evaluationformlanguageconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[FormLanguage](#cfn-connect-evaluationform-evaluationformlanguageconfiguration-formlanguage)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-evaluationform-evaluationformlanguageconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [FormLanguage](#cfn-connect-evaluationform-evaluationformlanguageconfiguration-formlanguage): {{String}}
 ```
 

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-vpngatewayroutepropagation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::VPNGatewayRoutePropagation",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-vpngatewayroutepropagation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::VPNGatewayRoutePropagation
 Properties:
   [RouteTableIds](#cfn-ec2-vpngatewayroutepropagation-routetableids): {{
@@ -88,7 +88,7 @@ The following example enables route propagation for the private route table name
 #### JSON
 <a name="aws-resource-ec2-vpngatewayroutepropagation--examples--VPN_gateway_route_propagation--json"></a>
 
-```
+```json
 "myVPNGatewayRouteProp" : {
    "Type" : "AWS::EC2::VPNGatewayRoutePropagation",
    "Properties" : {
@@ -101,7 +101,7 @@ The following example enables route propagation for the private route table name
 #### YAML
 <a name="aws-resource-ec2-vpngatewayroutepropagation--examples--VPN_gateway_route_propagation--yaml"></a>
 
-```
+```yaml
 myVPNGatewayRouteProp:
    Type: AWS::EC2::VPNGatewayRoutePropagation
    Properties:

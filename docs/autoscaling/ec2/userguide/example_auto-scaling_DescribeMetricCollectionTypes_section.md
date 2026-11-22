@@ -77,7 +77,7 @@ For more information, see [Auto Scaling group metrics](https://docs.aws.amazon.c
 **Tools for PowerShell V4**
 **Example 1: This example lists the metric collection types that are supported by Auto Scaling.**
 
-```
+```powershell
 (Get-ASMetricCollectionType).Metrics
 ```
 **Output:**
@@ -96,7 +96,7 @@ GroupTotalInstances
 ```
 **Example 2: This example lists the corresponding granularities.**
 
-```
+```powershell
 (Get-ASMetricCollectionType).Granularities
 ```
 **Output:**
@@ -111,7 +111,7 @@ Granularity
 **Tools for PowerShell V5**
 **Example 1: This example lists the metric collection types that are supported by Auto Scaling.**
 
-```
+```powershell
 (Get-ASMetricCollectionType).Metrics
 ```
 **Output:**
@@ -130,7 +130,7 @@ GroupTotalInstances
 ```
 **Example 2: This example lists the corresponding granularities.**
 
-```
+```powershell
 (Get-ASMetricCollectionType).Granularities
 ```
 **Output:**

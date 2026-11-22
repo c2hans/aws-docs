@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-build-storagelocation-syntax.json"></a>
 
-```
+```json
 {
   "[Bucket](#cfn-gamelift-build-storagelocation-bucket)" : {{String}},
   "[Key](#cfn-gamelift-build-storagelocation-key)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-build-storagelocation-syntax.yaml"></a>
 
-```
+```yaml
   [Bucket](#cfn-gamelift-build-storagelocation-bucket): {{String}}
   [Key](#cfn-gamelift-build-storagelocation-key): {{String}}
   [ObjectVersion](#cfn-gamelift-build-storagelocation-objectversion): {{String}}

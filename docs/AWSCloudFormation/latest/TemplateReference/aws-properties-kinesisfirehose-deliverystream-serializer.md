@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-serializer-syntax.json"></a>
 
-```
+```json
 {
   "[OrcSerDe](#cfn-kinesisfirehose-deliverystream-serializer-orcserde)" : {{OrcSerDe}},
   "[ParquetSerDe](#cfn-kinesisfirehose-deliverystream-serializer-parquetserde)" : {{ParquetSerDe}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-serializer-syntax.yaml"></a>
 
-```
+```yaml
   [OrcSerDe](#cfn-kinesisfirehose-deliverystream-serializer-orcserde): {{
     OrcSerDe}}
   [ParquetSerDe](#cfn-kinesisfirehose-deliverystream-serializer-parquetserde): {{

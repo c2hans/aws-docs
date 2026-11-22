@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskdefinition-trustedexecutionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AttestationPolicy](#cfn-ecs-taskdefinition-trustedexecutionconfiguration-attestationpolicy)" : {{String}},
   "[IsolationMode](#cfn-ecs-taskdefinition-trustedexecutionconfiguration-isolationmode)" : {{String}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskdefinition-trustedexecutionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AttestationPolicy](#cfn-ecs-taskdefinition-trustedexecutionconfiguration-attestationpolicy): {{String}}
   [IsolationMode](#cfn-ecs-taskdefinition-trustedexecutionconfiguration-isolationmode): {{String}}
 ```

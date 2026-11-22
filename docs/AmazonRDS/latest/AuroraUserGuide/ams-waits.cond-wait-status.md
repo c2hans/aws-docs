@@ -100,7 +100,7 @@ In Aurora MySQL version 2, you can identify the blocked session directly by quer
 
 In the following process list output, the connection ID `89` is waiting on a metadata lock, and it's running a `TRUNCATE TABLE` command. In a query on the `performance_schema` tables or `sys` schema views, the output shows that the blocking session is `76`.
 
-```
+```sql
 MySQL [(none)]> select @@version, @@aurora_version;
 +-----------+------------------+
 | @@version | @@aurora_version |
@@ -137,7 +137,7 @@ MySQL [(none)]> show processlist;
 
 Next, a query on the `performance_schema` tables or `sys` schema views shows that the blocking session is `76`.
 
-```
+```sql
 MySQL [(none)]> select * from sys.schema_table_lock_waits;
 +---------------+-------------+-------------------+-------------+------------------------------+-------------------+-----------------------+-------------------------------+--------------------+-----------------------------+-----------------------------+--------------------+--------------+------------------------------+--------------------+------------------------+-------------------------+------------------------------+
 | object_schema | object_name | waiting_thread_id | waiting_pid | waiting_account              | waiting_lock_type | waiting_lock_duration | waiting_query                 | waiting_query_secs | waiting_query_rows_affected | waiting_query_rows_examined | blocking_thread_id | blocking_pid | blocking_account             | blocking_lock_type | blocking_lock_duration | sql_kill_blocking_query | sql_kill_blocking_connection |

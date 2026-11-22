@@ -8,7 +8,7 @@ IAM users who use the AWS Management Console to work with AWS resources must hav
 
 After you have assigned a password to a user, the user can sign in to the AWS Management Console using the sign-in URL for your account, which looks like this:
 
-```
+```yaml
 https://{{12-digit-AWS-account-ID or alias}}.signin.aws.amazon.com/console
 ```
 
@@ -172,7 +172,7 @@ When you delete a user's password, the user can no longer sign in to the AWS Man
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": {
@@ -233,7 +233,7 @@ When you delete a user's password, the user can no longer sign in to the AWS Man
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": {

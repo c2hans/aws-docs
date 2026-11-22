@@ -8,7 +8,7 @@ If you create tables in any of the formats that Athena supports, such as Parquet
 
 The following example adds a `comment` column at the end of the `orders_parquet` table before any partition columns:
 
-```
+```sql
 ALTER TABLE orders_parquet ADD COLUMNS (comment string)
 ```
 

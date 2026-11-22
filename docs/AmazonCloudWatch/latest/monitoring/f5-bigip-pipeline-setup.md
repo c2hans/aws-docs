@@ -8,7 +8,7 @@ The F5 BIG-IP setup on AWS reads log data from Amazon S3 buckets using Amazon SQ
 
 Configure the F5 BIG-IP source using the following parameters:
 
-```
+```yaml
 source:
   s3:
     aws:

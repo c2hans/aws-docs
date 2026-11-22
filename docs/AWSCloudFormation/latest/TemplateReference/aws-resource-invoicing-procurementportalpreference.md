@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-invoicing-procurementportalpreference-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Invoicing::ProcurementPortalPreference",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-invoicing-procurementportalpreference-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Invoicing::ProcurementPortalPreference
 Properties:
   [BuyerDomain](#cfn-invoicing-procurementportalpreference-buyerdomain): {{String}}

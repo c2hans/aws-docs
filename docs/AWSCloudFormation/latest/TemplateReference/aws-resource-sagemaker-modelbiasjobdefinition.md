@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sagemaker-modelbiasjobdefinition-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SageMaker::ModelBiasJobDefinition",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sagemaker-modelbiasjobdefinition-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SageMaker::ModelBiasJobDefinition
 Properties:
   [EndpointName](#cfn-sagemaker-modelbiasjobdefinition-endpointname): {{String}}
@@ -177,7 +177,7 @@ The following example creates a Model Bias monitoring job definition.
 #### JSON
 <a name="aws-resource-sagemaker-modelbiasjobdefinition--examples--SageMaker_ModelBiasJobDefinition_Example--json"></a>
 
-```
+```json
 {
    "AWSTemplateFormatVersion": "2010-09-09",
    "Description": "Basic SageMaker Hosting entities to create a model bias job definition",
@@ -385,7 +385,7 @@ The following example creates a Model Bias monitoring job definition.
 #### YAML
 <a name="aws-resource-sagemaker-modelbiasjobdefinition--examples--SageMaker_ModelBiasJobDefinition_Example--yaml"></a>
 
-```
+```yaml
 ---
 
 AWSTemplateFormatVersion: '2010-09-09'

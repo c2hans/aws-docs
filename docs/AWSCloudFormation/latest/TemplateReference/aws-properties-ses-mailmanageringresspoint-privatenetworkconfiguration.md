@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-mailmanageringresspoint-privatenetworkconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[VpcEndpointId](#cfn-ses-mailmanageringresspoint-privatenetworkconfiguration-vpcendpointid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-mailmanageringresspoint-privatenetworkconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [VpcEndpointId](#cfn-ses-mailmanageringresspoint-privatenetworkconfiguration-vpcendpointid): {{String}}
 ```
 

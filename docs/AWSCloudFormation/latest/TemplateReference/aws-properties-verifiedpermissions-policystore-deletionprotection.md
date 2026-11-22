@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-verifiedpermissions-policystore-deletionprotection-syntax.json"></a>
 
-```
+```json
 {
   "[Mode](#cfn-verifiedpermissions-policystore-deletionprotection-mode)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-verifiedpermissions-policystore-deletionprotection-syntax.yaml"></a>
 
-```
+```yaml
   [Mode](#cfn-verifiedpermissions-policystore-deletionprotection-mode): {{String}}
 ```
 

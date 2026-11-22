@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspaces-workspacespool-applicationsettings-syntax.json"></a>
 
-```
+```json
 {
   "[SettingsGroup](#cfn-workspaces-workspacespool-applicationsettings-settingsgroup)" : {{String}},
   "[Status](#cfn-workspaces-workspacespool-applicationsettings-status)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspaces-workspacespool-applicationsettings-syntax.yaml"></a>
 
-```
+```yaml
   [SettingsGroup](#cfn-workspaces-workspacespool-applicationsettings-settingsgroup): {{String}}
   [Status](#cfn-workspaces-workspacespool-applicationsettings-status): {{String}}
 ```

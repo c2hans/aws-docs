@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-dataautomationproject-audiostandardoutputconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Extraction](#cfn-bedrock-dataautomationproject-audiostandardoutputconfiguration-extraction)" : {{AudioStandardExtraction}},
   "[GenerativeField](#cfn-bedrock-dataautomationproject-audiostandardoutputconfiguration-generativefield)" : {{AudioStandardGenerativeField}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-dataautomationproject-audiostandardoutputconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Extraction](#cfn-bedrock-dataautomationproject-audiostandardoutputconfiguration-extraction): {{
     AudioStandardExtraction}}
   [GenerativeField](#cfn-bedrock-dataautomationproject-audiostandardoutputconfiguration-generativefield): {{

@@ -8,13 +8,13 @@ Subscribes a callback function to be invoked whenever the agent's next queued av
 
  **Signature**
 
-```
+```typescript
 onNextAvailabilityStateChanged(handler: NextAvailabilityStateChangedHandler)
 ```
 
  **Usage**
 
-```
+```typescript
 const handler: NextAvailabilityStateChangedHandler = async (data: NextAgentAvailabilityStateChanged) => {
     console.log("Next availability state changed! " + data.nextState?.name);
 };
@@ -32,6 +32,6 @@ agentClient.onNextAvailabilityStateChanged(handler);
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

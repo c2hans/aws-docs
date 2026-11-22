@@ -86,7 +86,7 @@ The following are examples of temporary request redirection responses.
 #### REST API temporary redirect response
 <a name="RedirectsTemporaryRedirection-response-rest-ex1"></a>
 
-```
+```http
  1. HTTP/1.1 307 Temporary Redirect
  2. Location: http://awsexamplebucket1.s3-gztb4pa9sq.amazonaws.com/photos/puppy.jpg?rk=e2c69a31
  3. Content-Type: application/xml

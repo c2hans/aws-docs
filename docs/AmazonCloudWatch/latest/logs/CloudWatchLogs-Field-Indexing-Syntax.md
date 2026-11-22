@@ -69,7 +69,7 @@ You can index fields that are nested child fields or array fields in JSON logs.
 
 For example, you can create an index of the `accessKeyId` child field within the `userIdentity` field within this log:
 
-```
+```json
 {
     "eventVersion": "1.0",
     "userIdentity": {

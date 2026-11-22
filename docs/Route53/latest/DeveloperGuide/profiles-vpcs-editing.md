@@ -34,7 +34,7 @@ You can list the VPCs the Profile is associated to by running an AWS CLI command
 
 The following is an example output after you run the command:
 
-```
+```json
 {
     "ProfileAssociations": [
         {
@@ -59,7 +59,7 @@ You can get information about a particular VPS the Profile is associated to by r
 
 The following is an example output after you run the command:
 
-```
+```json
 {
     "ProfileAssociation": {
         "CreationTime": 1709338817.148,
@@ -113,7 +113,7 @@ To disassociate a Profile from a VPC, use the [disassociate-profile](https://doc
 
 The following is an example output after you run the command:
 
-```
+```json
 {
     "ProfileAssociation": {
         "CreationTime": 1710851336.527,

@@ -52,7 +52,7 @@ This example shows a minimal configuration file that you can use with a Ruby man
 
 **Example apprunner.yaml**
 
-```
+```yaml
 version: 1.0
 runtime: ruby31
 build:
@@ -73,7 +73,7 @@ The runtime version that's used in these examples is {{3.1.2}}. You can replace 
 
 **Example apprunner.yaml**
 
-```
+```yaml
 version: 1.0
 runtime: ruby31
 build:
@@ -105,7 +105,7 @@ These examples shows the source code for a complete Ruby application that you ca
 
 **Example server.rb**
 
-```
+```yaml
 # server.rb
 require 'sinatra'
 
@@ -116,7 +116,7 @@ end
 
 **Example config.ru**
 
-```
+```yaml
 # config.ru
 
 require './server'
@@ -126,7 +126,7 @@ run Sinatra::Application
 
 **Example Gemfile**
 
-```
+```yaml
 # Gemfile
 source 'https://rubygems.org (https://rubygems.org/)'
 
@@ -136,7 +136,7 @@ gem 'puma'
 
 **Example apprunner.yaml**
 
-```
+```yaml
 version: 1.0
 runtime: ruby31
 build:

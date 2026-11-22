@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-storagelens-storagelensgroupselectioncriteria-syntax.json"></a>
 
-```
+```json
 {
   "[Exclude](#cfn-s3-storagelens-storagelensgroupselectioncriteria-exclude)" : {{[ String, ... ]}},
   "[Include](#cfn-s3-storagelens-storagelensgroupselectioncriteria-include)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-storagelens-storagelensgroupselectioncriteria-syntax.yaml"></a>
 
-```
+```yaml
   [Exclude](#cfn-s3-storagelens-storagelensgroupselectioncriteria-exclude): {{
     - String}}
   [Include](#cfn-s3-storagelens-storagelensgroupselectioncriteria-include): {{

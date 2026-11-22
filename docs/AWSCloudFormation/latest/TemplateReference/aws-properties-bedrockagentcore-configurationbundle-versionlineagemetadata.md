@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-configurationbundle-versionlineagemetadata-syntax.json"></a>
 
-```
+```json
 {
   "[BranchName](#cfn-bedrockagentcore-configurationbundle-versionlineagemetadata-branchname)" : {{String}},
   "[CommitMessage](#cfn-bedrockagentcore-configurationbundle-versionlineagemetadata-commitmessage)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-configurationbundle-versionlineagemetadata-syntax.yaml"></a>
 
-```
+```yaml
   [BranchName](#cfn-bedrockagentcore-configurationbundle-versionlineagemetadata-branchname): {{String}}
   [CommitMessage](#cfn-bedrockagentcore-configurationbundle-versionlineagemetadata-commitmessage): {{String}}
   [CreatedBy](#cfn-bedrockagentcore-configurationbundle-versionlineagemetadata-createdby): {{

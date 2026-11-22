@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-gatewayconnectorderegistrationdelay-syntax.json"></a>
 
-```
+```json
 {
   "[TimeoutSeconds](#cfn-ecs-service-gatewayconnectorderegistrationdelay-timeoutseconds)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-gatewayconnectorderegistrationdelay-syntax.yaml"></a>
 
-```
+```yaml
   [TimeoutSeconds](#cfn-ecs-service-gatewayconnectorderegistrationdelay-timeoutseconds): {{Integer}}
 ```
 

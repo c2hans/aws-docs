@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-osis-pipeline-logpublishingoptions-syntax.json"></a>
 
-```
+```json
 {
   "[CloudWatchLogDestination](#cfn-osis-pipeline-logpublishingoptions-cloudwatchlogdestination)" : {{CloudWatchLogDestination}},
   "[IsLoggingEnabled](#cfn-osis-pipeline-logpublishingoptions-isloggingenabled)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-osis-pipeline-logpublishingoptions-syntax.yaml"></a>
 
-```
+```yaml
   [CloudWatchLogDestination](#cfn-osis-pipeline-logpublishingoptions-cloudwatchlogdestination): {{
     CloudWatchLogDestination}}
   [IsLoggingEnabled](#cfn-osis-pipeline-logpublishingoptions-isloggingenabled): {{Boolean}}

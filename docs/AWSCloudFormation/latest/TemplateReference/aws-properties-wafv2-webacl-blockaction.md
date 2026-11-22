@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-blockaction-syntax.json"></a>
 
-```
+```json
 {
   "[CustomResponse](#cfn-wafv2-webacl-blockaction-customresponse)" : {{CustomResponse}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-blockaction-syntax.yaml"></a>
 
-```
+```yaml
   [CustomResponse](#cfn-wafv2-webacl-blockaction-customresponse): {{
     CustomResponse}}
 ```
@@ -57,7 +57,7 @@ The following shows an example block action specification.
 #### YAML
 <a name="aws-properties-wafv2-webacl-blockaction--examples--Set_an_block_action--yaml"></a>
 
-```
+```yaml
 Action:
   Block: {}
 ```
@@ -65,7 +65,7 @@ Action:
 #### JSON
 <a name="aws-properties-wafv2-webacl-blockaction--examples--Set_an_block_action--json"></a>
 
-```
+```json
 "Action": {
   "Block": {}
 }
@@ -79,7 +79,7 @@ The following shows an example block action specification with a custom response
 #### YAML
 <a name="aws-properties-wafv2-webacl-blockaction--examples--Set_a_block_action_with_a_custom_response_setting--yaml"></a>
 
-```
+```yaml
 Block:
   CustomResponse:
     ResponseCode: 503
@@ -94,7 +94,7 @@ Block:
 #### JSON
 <a name="aws-properties-wafv2-webacl-blockaction--examples--Set_a_block_action_with_a_custom_response_setting--json"></a>
 
-```
+```json
 "Block": {
   "CustomResponse": {
     "ResponseCode": 503,

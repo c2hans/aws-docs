@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-visibilityconfig-syntax.json"></a>
 
-```
+```json
 {
   "[CloudWatchMetricsEnabled](#cfn-wafv2-webacl-visibilityconfig-cloudwatchmetricsenabled)" : {{Boolean}},
   "[MetricName](#cfn-wafv2-webacl-visibilityconfig-metricname)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-visibilityconfig-syntax.yaml"></a>
 
-```
+```yaml
   [CloudWatchMetricsEnabled](#cfn-wafv2-webacl-visibilityconfig-cloudwatchmetricsenabled): {{Boolean}}
   [MetricName](#cfn-wafv2-webacl-visibilityconfig-metricname): {{String}}
   [SampledRequestsEnabled](#cfn-wafv2-webacl-visibilityconfig-sampledrequestsenabled): {{Boolean}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewaytarget-privateendpoint-syntax.json"></a>
 
-```
+```json
 {
   "[ManagedVpcResource](#cfn-bedrockagentcore-gatewaytarget-privateendpoint-managedvpcresource)" : {{ManagedVpcResource}},
   "[SelfManagedLatticeResource](#cfn-bedrockagentcore-gatewaytarget-privateendpoint-selfmanagedlatticeresource)" : {{SelfManagedLatticeResource}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewaytarget-privateendpoint-syntax.yaml"></a>
 
-```
+```yaml
   [ManagedVpcResource](#cfn-bedrockagentcore-gatewaytarget-privateendpoint-managedvpcresource): {{
     ManagedVpcResource}}
   [SelfManagedLatticeResource](#cfn-bedrockagentcore-gatewaytarget-privateendpoint-selfmanagedlatticeresource): {{

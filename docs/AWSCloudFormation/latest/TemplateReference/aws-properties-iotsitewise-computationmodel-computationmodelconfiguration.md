@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotsitewise-computationmodel-computationmodelconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AnomalyDetection](#cfn-iotsitewise-computationmodel-computationmodelconfiguration-anomalydetection)" : {{AnomalyDetectionComputationModelConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotsitewise-computationmodel-computationmodelconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AnomalyDetection](#cfn-iotsitewise-computationmodel-computationmodelconfiguration-anomalydetection): {{
     AnomalyDetectionComputationModelConfiguration}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewaytarget-oauthcredentialprovider-syntax.json"></a>
 
-```
+```json
 {
   "[CustomParameters](#cfn-bedrockagentcore-gatewaytarget-oauthcredentialprovider-customparameters)" : {{{{{Key}}: {{Value}}, ...}}},
   "[DefaultReturnUrl](#cfn-bedrockagentcore-gatewaytarget-oauthcredentialprovider-defaultreturnurl)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewaytarget-oauthcredentialprovider-syntax.yaml"></a>
 
-```
+```yaml
   [CustomParameters](#cfn-bedrockagentcore-gatewaytarget-oauthcredentialprovider-customparameters): {{
     {{Key}}: {{Value}}}}
   [DefaultReturnUrl](#cfn-bedrockagentcore-gatewaytarget-oauthcredentialprovider-defaultreturnurl): {{String}}

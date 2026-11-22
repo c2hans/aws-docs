@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-budgets-budget-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Budgets::Budget",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-budgets-budget-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Budgets::Budget
 Properties:
   [Budget](#cfn-budgets-budget-budget): {{
@@ -93,7 +93,7 @@ The following example creates a budget for 100 USD amount of costs, with notific
 #### JSON
 <a name="aws-resource-budgets-budget--examples--Budget_for_100_USD_with_two_notifications--json"></a>
 
-```
+```json
 {
   "Description": "Basic Budget test",
   "Resources": {
@@ -165,7 +165,7 @@ The following example creates a budget for 100 USD amount of costs, with notific
 #### YAML
 <a name="aws-resource-budgets-budget--examples--Budget_for_100_USD_with_two_notifications--yaml"></a>
 
-```
+```yaml
 ---
 Description: "Basic Budget test"
 Resources:

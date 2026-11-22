@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-alarm-alarmpromqlcriteria-syntax.json"></a>
 
-```
+```json
 {
   "[PendingPeriod](#cfn-cloudwatch-alarm-alarmpromqlcriteria-pendingperiod)" : {{Integer}},
   "[Query](#cfn-cloudwatch-alarm-alarmpromqlcriteria-query)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-alarm-alarmpromqlcriteria-syntax.yaml"></a>
 
-```
+```yaml
   [PendingPeriod](#cfn-cloudwatch-alarm-alarmpromqlcriteria-pendingperiod): {{Integer}}
   [Query](#cfn-cloudwatch-alarm-alarmpromqlcriteria-query): {{String}}
   [RecoveryPeriod](#cfn-cloudwatch-alarm-alarmpromqlcriteria-recoveryperiod): {{Integer}}

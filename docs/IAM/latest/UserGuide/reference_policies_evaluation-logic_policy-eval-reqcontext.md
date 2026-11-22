@@ -24,7 +24,7 @@ The PARC model represents the request context based on the four JSON elements in
 
 The following shows an example of how the PARC model might represent a request context:
 
-```
+```json
 Principal: AIDA123456789EXAMPLE
 Action: s3:CreateBucket
 Resource: arn:aws:s3:::amzn-s3-demo-bucket1
@@ -86,7 +86,7 @@ To illustrate how the request context interacts with policy evaluation, let's co
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentrollingupdatepolicy-syntax.json"></a>
 
-```
+```json
 {
   "[MaximumBatchSize](#cfn-sagemaker-inferencecomponent-inferencecomponentrollingupdatepolicy-maximumbatchsize)" : {{InferenceComponentCapacitySize}},
   "[MaximumExecutionTimeoutInSeconds](#cfn-sagemaker-inferencecomponent-inferencecomponentrollingupdatepolicy-maximumexecutiontimeoutinseconds)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentrollingupdatepolicy-syntax.yaml"></a>
 
-```
+```yaml
   [MaximumBatchSize](#cfn-sagemaker-inferencecomponent-inferencecomponentrollingupdatepolicy-maximumbatchsize): {{
     InferenceComponentCapacitySize}}
   [MaximumExecutionTimeoutInSeconds](#cfn-sagemaker-inferencecomponent-inferencecomponentrollingupdatepolicy-maximumexecutiontimeoutinseconds): {{Integer}}

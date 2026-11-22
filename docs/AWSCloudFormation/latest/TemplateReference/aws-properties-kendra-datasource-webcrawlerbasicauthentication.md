@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-webcrawlerbasicauthentication-syntax.json"></a>
 
-```
+```json
 {
   "[Credentials](#cfn-kendra-datasource-webcrawlerbasicauthentication-credentials)" : {{String}},
   "[Host](#cfn-kendra-datasource-webcrawlerbasicauthentication-host)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-webcrawlerbasicauthentication-syntax.yaml"></a>
 
-```
+```yaml
   [Credentials](#cfn-kendra-datasource-webcrawlerbasicauthentication-credentials): {{String}}
   [Host](#cfn-kendra-datasource-webcrawlerbasicauthentication-host): {{String}}
   [Port](#cfn-kendra-datasource-webcrawlerbasicauthentication-port): {{Integer}}

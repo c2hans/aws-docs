@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-cluster-firehose-syntax.json"></a>
 
-```
+```json
 {
   "[DeliveryStream](#cfn-msk-cluster-firehose-deliverystream)" : {{String}},
   "[Enabled](#cfn-msk-cluster-firehose-enabled)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-cluster-firehose-syntax.yaml"></a>
 
-```
+```yaml
   [DeliveryStream](#cfn-msk-cluster-firehose-deliverystream): {{String}}
   [Enabled](#cfn-msk-cluster-firehose-enabled): {{Boolean}}
 ```

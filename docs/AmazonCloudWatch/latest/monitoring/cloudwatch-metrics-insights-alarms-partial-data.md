@@ -15,7 +15,7 @@ You can use the following methods to find whether a Metrics Insights alarm is cu
 
 Alarms also publish events to Amazon EventBridge when it goes into the partial data state, so you can create an EventBridge rule to watch for these events. In these events, the `evaluationState` field has the value `PARTIAL_DATA`. The following is an example.
 
-```
+```json
 {
     "version": "0",
     "id": "12345678-3bf9-6a09-dc46-12345EXAMPLE",

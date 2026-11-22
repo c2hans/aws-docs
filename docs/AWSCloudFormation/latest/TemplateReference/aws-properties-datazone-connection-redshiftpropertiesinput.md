@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-connection-redshiftpropertiesinput-syntax.json"></a>
 
-```
+```json
 {
   "[Credentials](#cfn-datazone-connection-redshiftpropertiesinput-credentials)" : {{RedshiftCredentials}},
   "[DatabaseName](#cfn-datazone-connection-redshiftpropertiesinput-databasename)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-connection-redshiftpropertiesinput-syntax.yaml"></a>
 
-```
+```yaml
   [Credentials](#cfn-datazone-connection-redshiftpropertiesinput-credentials): {{
     RedshiftCredentials}}
   [DatabaseName](#cfn-datazone-connection-redshiftpropertiesinput-databasename): {{String}}

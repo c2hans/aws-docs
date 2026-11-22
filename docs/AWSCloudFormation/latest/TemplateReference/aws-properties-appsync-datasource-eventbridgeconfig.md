@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appsync-datasource-eventbridgeconfig-syntax.json"></a>
 
-```
+```json
 {
   "[EventBusArn](#cfn-appsync-datasource-eventbridgeconfig-eventbusarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appsync-datasource-eventbridgeconfig-syntax.yaml"></a>
 
-```
+```yaml
   [EventBusArn](#cfn-appsync-datasource-eventbridgeconfig-eventbusarn): {{String}}
 ```
 

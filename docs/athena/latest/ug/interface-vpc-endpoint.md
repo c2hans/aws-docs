@@ -18,7 +18,7 @@ After you create an interface VPC endpoint, if you enable [private DNS](https://
 
 If you do not enable private DNS hostnames, Amazon VPC provides a DNS endpoint name that you can use in the following format:
 
-```
+```bash
 {{VPC_Endpoint_ID}}.athena.{{Region}}.vpce.amazonaws.com
 ```
 
@@ -43,7 +43,7 @@ For more information, see [Controlling access to services with VPC endpoints](ht
 The following example allows requests by organization identities to organization resources and allows requests by AWS service principals.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

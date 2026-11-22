@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-config-configrule-source-syntax.json"></a>
 
-```
+```json
 {
   "[CustomPolicyDetails](#cfn-config-configrule-source-custompolicydetails)" : {{CustomPolicyDetails}},
   "[Owner](#cfn-config-configrule-source-owner)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-config-configrule-source-syntax.yaml"></a>
 
-```
+```yaml
   [CustomPolicyDetails](#cfn-config-configrule-source-custompolicydetails): {{
     CustomPolicyDetails}}
   [Owner](#cfn-config-configrule-source-owner): {{String}}

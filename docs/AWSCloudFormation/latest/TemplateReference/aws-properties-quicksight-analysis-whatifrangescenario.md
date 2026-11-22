@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-whatifrangescenario-syntax.json"></a>
 
-```
+```json
 {
   "[EndDate](#cfn-quicksight-analysis-whatifrangescenario-enddate)" : {{String}},
   "[StartDate](#cfn-quicksight-analysis-whatifrangescenario-startdate)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-whatifrangescenario-syntax.yaml"></a>
 
-```
+```yaml
   [EndDate](#cfn-quicksight-analysis-whatifrangescenario-enddate): {{String}}
   [StartDate](#cfn-quicksight-analysis-whatifrangescenario-startdate): {{String}}
   [Value](#cfn-quicksight-analysis-whatifrangescenario-value): {{Number}}

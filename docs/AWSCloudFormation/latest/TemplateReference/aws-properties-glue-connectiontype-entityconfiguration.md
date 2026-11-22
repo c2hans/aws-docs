@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-connectiontype-entityconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Schema](#cfn-glue-connectiontype-entityconfiguration-schema)" : {{{{{Key}}: {{Value}}, ...}}},
   "[SourceConfiguration](#cfn-glue-connectiontype-entityconfiguration-sourceconfiguration)" : {{SourceConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-connectiontype-entityconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Schema](#cfn-glue-connectiontype-entityconfiguration-schema): {{
     {{Key}}: {{Value}}}}
   [SourceConfiguration](#cfn-glue-connectiontype-entityconfiguration-sourceconfiguration): {{

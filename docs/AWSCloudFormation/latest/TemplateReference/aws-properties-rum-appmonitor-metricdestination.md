@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rum-appmonitor-metricdestination-syntax.json"></a>
 
-```
+```json
 {
   "[Destination](#cfn-rum-appmonitor-metricdestination-destination)" : {{String}},
   "[DestinationArn](#cfn-rum-appmonitor-metricdestination-destinationarn)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rum-appmonitor-metricdestination-syntax.yaml"></a>
 
-```
+```yaml
   [Destination](#cfn-rum-appmonitor-metricdestination-destination): {{String}}
   [DestinationArn](#cfn-rum-appmonitor-metricdestination-destinationarn): {{String}}
   [IamRoleArn](#cfn-rum-appmonitor-metricdestination-iamrolearn): {{String}}

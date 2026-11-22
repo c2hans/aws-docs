@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-opensearchserverless-lifecyclepolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::OpenSearchServerless::LifecyclePolicy",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-opensearchserverless-lifecyclepolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::OpenSearchServerless::LifecyclePolicy
 Properties:
   [Description](#cfn-opensearchserverless-lifecyclepolicy-description): {{String}}
@@ -95,7 +95,7 @@ The following example specifies an OpenSearch Serverless lifecycle policy that s
 #### JSON
 <a name="aws-resource-opensearchserverless-lifecyclepolicy--examples--Create_a_lifecycle_policy_that_sets_a_minimum_rollover_period_for_all_indexes_in_a_collection--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "OpenSearch Serverless lifecycle policy template",
@@ -116,7 +116,7 @@ The following example specifies an OpenSearch Serverless lifecycle policy that s
 #### YAML
 <a name="aws-resource-opensearchserverless-lifecyclepolicy--examples--Create_a_lifecycle_policy_that_sets_a_minimum_rollover_period_for_all_indexes_in_a_collection--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09T00:00:00.000Z
 Description: OpenSearch Serverless lifecycle policy template
 Resources:

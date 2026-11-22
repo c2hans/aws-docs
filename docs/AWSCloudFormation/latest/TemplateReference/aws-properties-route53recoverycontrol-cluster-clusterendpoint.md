@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-route53recoverycontrol-cluster-clusterendpoint-syntax.json"></a>
 
-```
+```json
 {
   "[Endpoint](#cfn-route53recoverycontrol-cluster-clusterendpoint-endpoint)" : {{String}},
   "[Region](#cfn-route53recoverycontrol-cluster-clusterendpoint-region)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-route53recoverycontrol-cluster-clusterendpoint-syntax.yaml"></a>
 
-```
+```yaml
   [Endpoint](#cfn-route53recoverycontrol-cluster-clusterendpoint-endpoint): {{String}}
   [Region](#cfn-route53recoverycontrol-cluster-clusterendpoint-region): {{String}}
 ```

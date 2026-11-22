@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-archivecontainersettings-syntax.json"></a>
 
-```
+```json
 {
   "[M2tsSettings](#cfn-medialive-channel-archivecontainersettings-m2tssettings)" : {{M2tsSettings}},
   "[RawSettings](#cfn-medialive-channel-archivecontainersettings-rawsettings)" : {{Json}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-archivecontainersettings-syntax.yaml"></a>
 
-```
+```yaml
   [M2tsSettings](#cfn-medialive-channel-archivecontainersettings-m2tssettings): {{
     M2tsSettings}}
   [RawSettings](#cfn-medialive-channel-archivecontainersettings-rawsettings): {{Json}}

@@ -17,7 +17,7 @@ You can use this to tune a container's memory swappiness behavior. A `swappiness
 
 In the following example, the JSON syntax is provided.
 
-```
+```JSON
 "containerDefinitions": [{
         ...
         "linuxParameters": {

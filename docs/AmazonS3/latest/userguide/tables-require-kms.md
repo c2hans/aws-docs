@@ -14,7 +14,7 @@ This is an example of table bucket policy that prevents users from creating tabl
 ------
 #### [ JSON ]
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -61,7 +61,7 @@ This is an example of table bucket policy that prevents users from creating tabl
 
 This IAM identity policy requires users to use a specific AWS KMS key for encryption when creating or configuring S3 Tables resources. To use this policy, replace the {{user input placeholders}} with your own information:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -109,7 +109,7 @@ This example KMS key policy allows the key to be used by a specific user only fo
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Id": "Id",

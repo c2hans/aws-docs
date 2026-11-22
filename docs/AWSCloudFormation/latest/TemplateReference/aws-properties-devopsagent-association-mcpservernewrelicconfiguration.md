@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-association-mcpservernewrelicconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AccountId](#cfn-devopsagent-association-mcpservernewrelicconfiguration-accountid)" : {{String}},
   "[Endpoint](#cfn-devopsagent-association-mcpservernewrelicconfiguration-endpoint)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-association-mcpservernewrelicconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AccountId](#cfn-devopsagent-association-mcpservernewrelicconfiguration-accountid): {{String}}
   [Endpoint](#cfn-devopsagent-association-mcpservernewrelicconfiguration-endpoint): {{String}}
 ```

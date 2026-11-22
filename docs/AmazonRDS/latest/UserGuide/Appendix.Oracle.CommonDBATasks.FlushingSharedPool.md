@@ -8,7 +8,7 @@ To flush the shared pool, use the Amazon RDS procedure `rdsadmin.rdsadmin_util.f
 
 The following example flushes the shared pool.
 
-```
+```sql
 EXEC rdsadmin.rdsadmin_util.flush_shared_pool;
 ```
 
@@ -19,7 +19,7 @@ To flush the buffer cache, use the Amazon RDS procedure `rdsadmin.rdsadmin_util.
 
 The following example flushes the buffer cache.
 
-```
+```sql
 EXEC rdsadmin.rdsadmin_util.flush_buffer_cache;
 ```
 

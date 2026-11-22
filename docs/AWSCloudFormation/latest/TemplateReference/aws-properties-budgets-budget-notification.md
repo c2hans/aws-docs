@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-budgets-budget-notification-syntax.json"></a>
 
-```
+```json
 {
   "[ComparisonOperator](#cfn-budgets-budget-notification-comparisonoperator)" : {{String}},
   "[NotificationType](#cfn-budgets-budget-notification-notificationtype)" : {{String}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-budgets-budget-notification-syntax.yaml"></a>
 
-```
+```yaml
   [ComparisonOperator](#cfn-budgets-budget-notification-comparisonoperator): {{String}}
   [NotificationType](#cfn-budgets-budget-notification-notificationtype): {{String}}
   [Threshold](#cfn-budgets-budget-notification-threshold): {{Number}}

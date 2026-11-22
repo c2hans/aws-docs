@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-mailmanagerruleset-addheaderaction-syntax.json"></a>
 
-```
+```json
 {
   "[HeaderName](#cfn-ses-mailmanagerruleset-addheaderaction-headername)" : {{String}},
   "[HeaderValue](#cfn-ses-mailmanagerruleset-addheaderaction-headervalue)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-mailmanagerruleset-addheaderaction-syntax.yaml"></a>
 
-```
+```yaml
   [HeaderName](#cfn-ses-mailmanagerruleset-addheaderaction-headername): {{String}}
   [HeaderValue](#cfn-ses-mailmanagerruleset-addheaderaction-headervalue): {{String}}
 ```

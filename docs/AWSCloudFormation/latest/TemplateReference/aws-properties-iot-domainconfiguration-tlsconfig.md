@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-domainconfiguration-tlsconfig-syntax.json"></a>
 
-```
+```json
 {
   "[SecurityPolicy](#cfn-iot-domainconfiguration-tlsconfig-securitypolicy)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-domainconfiguration-tlsconfig-syntax.yaml"></a>
 
-```
+```yaml
   [SecurityPolicy](#cfn-iot-domainconfiguration-tlsconfig-securitypolicy): {{String}}
 ```
 

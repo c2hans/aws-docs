@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackagev2-originendpoint-sctehls-syntax.json"></a>
 
-```
+```json
 {
   "[AdMarkerHls](#cfn-mediapackagev2-originendpoint-sctehls-admarkerhls)" : {{String}},
   "[ScteInManifests](#cfn-mediapackagev2-originendpoint-sctehls-scteinmanifests)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackagev2-originendpoint-sctehls-syntax.yaml"></a>
 
-```
+```yaml
   [AdMarkerHls](#cfn-mediapackagev2-originendpoint-sctehls-admarkerhls): {{String}}
   [ScteInManifests](#cfn-mediapackagev2-originendpoint-sctehls-scteinmanifests): {{String}}
 ```

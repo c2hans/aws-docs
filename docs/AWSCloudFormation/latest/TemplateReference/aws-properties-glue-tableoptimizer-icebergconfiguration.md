@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-tableoptimizer-icebergconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Location](#cfn-glue-tableoptimizer-icebergconfiguration-location)" : {{String}},
   "[OrphanFileRetentionPeriodInDays](#cfn-glue-tableoptimizer-icebergconfiguration-orphanfileretentionperiodindays)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-tableoptimizer-icebergconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Location](#cfn-glue-tableoptimizer-icebergconfiguration-location): {{String}}
   [OrphanFileRetentionPeriodInDays](#cfn-glue-tableoptimizer-icebergconfiguration-orphanfileretentionperiodindays): {{Integer}}
 ```

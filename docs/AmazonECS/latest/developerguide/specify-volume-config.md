@@ -8,7 +8,7 @@ Before your containers can use data volumes, you must specify the volume and mou
 
 The following task definition JSON shows the syntax for the `volumes` and `mountPoints` objects for a container.
 
-```
+```JSON
 {
     "containerDefinitions": [
         {

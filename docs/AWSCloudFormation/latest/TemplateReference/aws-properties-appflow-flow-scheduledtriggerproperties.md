@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-flow-scheduledtriggerproperties-syntax.json"></a>
 
-```
+```json
 {
   "[DataPullMode](#cfn-appflow-flow-scheduledtriggerproperties-datapullmode)" : {{String}},
   "[FirstExecutionFrom](#cfn-appflow-flow-scheduledtriggerproperties-firstexecutionfrom)" : {{Number}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-flow-scheduledtriggerproperties-syntax.yaml"></a>
 
-```
+```yaml
   [DataPullMode](#cfn-appflow-flow-scheduledtriggerproperties-datapullmode): {{String}}
   [FirstExecutionFrom](#cfn-appflow-flow-scheduledtriggerproperties-firstexecutionfrom): {{Number}}
   [FlowErrorDeactivationThreshold](#cfn-appflow-flow-scheduledtriggerproperties-flowerrordeactivationthreshold): {{Integer}}

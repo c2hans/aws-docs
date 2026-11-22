@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-rds-dbparametergroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RDS::DBParameterGroup",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-rds-dbparametergroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RDS::DBParameterGroup
 Properties:
   [DBParameterGroupName](#cfn-rds-dbparametergroup-dbparametergroupname): {{String}}
@@ -153,7 +153,7 @@ The following example creates a parameter group for a MySQL DB instance and sets
 #### JSON
 <a name="aws-resource-rds-dbparametergroup--examples--Create_a_parameter_group_for_a_MySQL_DB_instance--json"></a>
 
-```
+```json
 "RDSDBParameterGroup": {
         "Type": "AWS::RDS::DBParameterGroup",
         "Properties": {
@@ -171,7 +171,7 @@ The following example creates a parameter group for a MySQL DB instance and sets
 #### YAML
 <a name="aws-resource-rds-dbparametergroup--examples--Create_a_parameter_group_for_a_MySQL_DB_instance--yaml"></a>
 
-```
+```yaml
 RDSDBParameterGroup:
   Type: 'AWS::RDS::DBParameterGroup'
   Properties:

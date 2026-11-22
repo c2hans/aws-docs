@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dsql-cluster-encryptiondetails-syntax.json"></a>
 
-```
+```json
 {
   "[EncryptionStatus](#cfn-dsql-cluster-encryptiondetails-encryptionstatus)" : {{String}},
   "[EncryptionType](#cfn-dsql-cluster-encryptiondetails-encryptiontype)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dsql-cluster-encryptiondetails-syntax.yaml"></a>
 
-```
+```yaml
   [EncryptionStatus](#cfn-dsql-cluster-encryptiondetails-encryptionstatus): {{String}}
   [EncryptionType](#cfn-dsql-cluster-encryptiondetails-encryptiontype): {{String}}
   [KmsKeyArn](#cfn-dsql-cluster-encryptiondetails-kmskeyarn): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchservice-domain-windowstarttime-syntax.json"></a>
 
-```
+```json
 {
   "[Hours](#cfn-opensearchservice-domain-windowstarttime-hours)" : {{Integer}},
   "[Minutes](#cfn-opensearchservice-domain-windowstarttime-minutes)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchservice-domain-windowstarttime-syntax.yaml"></a>
 
-```
+```yaml
   [Hours](#cfn-opensearchservice-domain-windowstarttime-hours): {{Integer}}
   [Minutes](#cfn-opensearchservice-domain-windowstarttime-minutes): {{Integer}}
 ```

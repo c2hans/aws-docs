@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lambda-runtimealias-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lambda::RuntimeAlias",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lambda-runtimealias-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lambda::RuntimeAlias
 Properties:
   [Description](#cfn-lambda-runtimealias-description): {{String}}
@@ -135,7 +135,7 @@ Create a runtime alias named `stable` that points to version `v1` of the runtime
 #### JSON
 <a name="aws-resource-lambda-runtimealias--examples--Runtime_alias--json"></a>
 
-```
+```json
 "MyRuntimeAlias": {
     "Type": "AWS::Lambda::RuntimeAlias",
     "Properties": {
@@ -152,7 +152,7 @@ Create a runtime alias named `stable` that points to version `v1` of the runtime
 #### YAML
 <a name="aws-resource-lambda-runtimealias--examples--Runtime_alias--yaml"></a>
 
-```
+```yaml
 MyRuntimeAlias:
   Type: AWS::Lambda::RuntimeAlias
   Properties:

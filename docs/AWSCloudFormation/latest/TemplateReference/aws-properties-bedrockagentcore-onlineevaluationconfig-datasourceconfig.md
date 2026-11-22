@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-onlineevaluationconfig-datasourceconfig-syntax.json"></a>
 
-```
+```json
 {
   "[CloudWatchLogs](#cfn-bedrockagentcore-onlineevaluationconfig-datasourceconfig-cloudwatchlogs)" : {{CloudWatchLogsInputConfig}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-onlineevaluationconfig-datasourceconfig-syntax.yaml"></a>
 
-```
+```yaml
   [CloudWatchLogs](#cfn-bedrockagentcore-onlineevaluationconfig-datasourceconfig-cloudwatchlogs): {{
     CloudWatchLogsInputConfig}}
 ```

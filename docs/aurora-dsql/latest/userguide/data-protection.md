@@ -57,6 +57,10 @@ You get access to Aurora DSQL through the network by using AWS-published API ope
 
 When you create a multi-Region cluster, a witness Region helps enable automated failure recovery by participating in synchronous replication of encrypted transactions. If a peered cluster becomes unavailable, the witness Region remains available to validate and process database writes, ensuring no loss of availability.
 
+Each active peer Region makes a complete copy of your database data available to read and write via Aurora DSQL managed endpoints and the PostgreSQL wire protocol. Witness Regions store encrypted transaction log, do not store encryption keys, have no managed endpoints, and do not make data accessible to users.
+
+Choose Region locations that meet your data residency, data sovereignty, and regulatory requirements. You are responsible for confirming that your chosen Region combination satisfies your legal and compliance obligations. For the Regions that you can select, see [Multi-Region cluster availability for Aurora DSQL](what-is-aurora-dsql.md#aurora-dsql-multi-region-availability).
+
 Witness Regions protect and secure your data through these design features:
 + The witness Region receives and stores only encrypted transaction logs. It never hosts, stores or transmits your encryption keys.
 + The witness Region focuses soley on write transaction logging and quorum functions. It can't read your data by design.

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pinpoint-segment-location-syntax.json"></a>
 
-```
+```json
 {
   "[Country](#cfn-pinpoint-segment-location-country)" : {{SetDimension}},
   "[GPSPoint](#cfn-pinpoint-segment-location-gpspoint)" : {{GPSPoint}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pinpoint-segment-location-syntax.yaml"></a>
 
-```
+```yaml
   [Country](#cfn-pinpoint-segment-location-country): {{
     SetDimension}}
   [GPSPoint](#cfn-pinpoint-segment-location-gpspoint): {{

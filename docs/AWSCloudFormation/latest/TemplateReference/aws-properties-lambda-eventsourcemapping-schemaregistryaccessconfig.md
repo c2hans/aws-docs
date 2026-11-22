@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-eventsourcemapping-schemaregistryaccessconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-lambda-eventsourcemapping-schemaregistryaccessconfig-type)" : {{String}},
   "[URI](#cfn-lambda-eventsourcemapping-schemaregistryaccessconfig-uri)" : {{String}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-eventsourcemapping-schemaregistryaccessconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-lambda-eventsourcemapping-schemaregistryaccessconfig-type): {{String}}
   [URI](#cfn-lambda-eventsourcemapping-schemaregistryaccessconfig-uri): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-connectorprofile-zendeskconnectorprofilecredentials-syntax.json"></a>
 
-```
+```json
 {
   "[AccessToken](#cfn-appflow-connectorprofile-zendeskconnectorprofilecredentials-accesstoken)" : {{String}},
   "[ClientId](#cfn-appflow-connectorprofile-zendeskconnectorprofilecredentials-clientid)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-connectorprofile-zendeskconnectorprofilecredentials-syntax.yaml"></a>
 
-```
+```yaml
   [AccessToken](#cfn-appflow-connectorprofile-zendeskconnectorprofilecredentials-accesstoken): {{String}}
   [ClientId](#cfn-appflow-connectorprofile-zendeskconnectorprofilecredentials-clientid): {{String}}
   [ClientSecret](#cfn-appflow-connectorprofile-zendeskconnectorprofilecredentials-clientsecret): {{String}}

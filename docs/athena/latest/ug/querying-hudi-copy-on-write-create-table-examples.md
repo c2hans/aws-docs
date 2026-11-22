@@ -11,7 +11,7 @@ If you have Hudi tables already created in AWS Glue, you can query them directly
 
 The following example creates a nonpartitioned CoW table in Athena.
 
-```
+```sql
 CREATE EXTERNAL TABLE `non_partition_cow`(
   `_hoodie_commit_time` string,
   `_hoodie_commit_seqno` string,
@@ -38,7 +38,7 @@ LOCATION
 
 The following example creates a partitioned CoW table in Athena.
 
-```
+```sql
 CREATE EXTERNAL TABLE `partition_cow`(
   `_hoodie_commit_time` string,
   `_hoodie_commit_seqno` string,
@@ -63,7 +63,7 @@ LOCATION
 
 The following `ALTER TABLE ADD PARTITION` example adds two partitions to the example `partition_cow` table.
 
-```
+```sql
 ALTER TABLE partition_cow ADD
   PARTITION (event_type = 'one') LOCATION 's3://amzn-s3-demo-bucket/{{folder}}/partition_cow/one/'
   PARTITION (event_type = 'two') LOCATION 's3://amzn-s3-demo-bucket/{{folder}}/partition_cow/two/'

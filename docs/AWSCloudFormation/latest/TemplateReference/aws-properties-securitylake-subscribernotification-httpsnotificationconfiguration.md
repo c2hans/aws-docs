@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securitylake-subscribernotification-httpsnotificationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AuthorizationApiKeyName](#cfn-securitylake-subscribernotification-httpsnotificationconfiguration-authorizationapikeyname)" : {{String}},
   "[AuthorizationApiKeyValue](#cfn-securitylake-subscribernotification-httpsnotificationconfiguration-authorizationapikeyvalue)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securitylake-subscribernotification-httpsnotificationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AuthorizationApiKeyName](#cfn-securitylake-subscribernotification-httpsnotificationconfiguration-authorizationapikeyname): {{String}}
   [AuthorizationApiKeyValue](#cfn-securitylake-subscribernotification-httpsnotificationconfiguration-authorizationapikeyvalue): {{String}}
   [Endpoint](#cfn-securitylake-subscribernotification-httpsnotificationconfiguration-endpoint): {{String}}

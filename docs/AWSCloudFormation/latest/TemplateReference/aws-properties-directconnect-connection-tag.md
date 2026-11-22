@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-directconnect-connection-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-directconnect-connection-tag-key)" : {{String}},
   "[Value](#cfn-directconnect-connection-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-directconnect-connection-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-directconnect-connection-tag-key): {{String}}
   [Value](#cfn-directconnect-connection-tag-value): {{String}}
 ```

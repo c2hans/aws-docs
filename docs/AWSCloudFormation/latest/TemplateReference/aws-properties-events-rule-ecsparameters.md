@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-events-rule-ecsparameters-syntax.json"></a>
 
-```
+```json
 {
   "[CapacityProviderStrategy](#cfn-events-rule-ecsparameters-capacityproviderstrategy)" : {{[ CapacityProviderStrategyItem, ... ]}},
   "[EnableECSManagedTags](#cfn-events-rule-ecsparameters-enableecsmanagedtags)" : {{Boolean}},
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-events-rule-ecsparameters-syntax.yaml"></a>
 
-```
+```yaml
   [CapacityProviderStrategy](#cfn-events-rule-ecsparameters-capacityproviderstrategy): {{
     - CapacityProviderStrategyItem}}
   [EnableECSManagedTags](#cfn-events-rule-ecsparameters-enableecsmanagedtags): {{Boolean}}
@@ -170,7 +170,7 @@ The following example defines the ECS parameters.
 #### JSON
 <a name="aws-properties-events-rule-ecsparameters--examples--ECS_example--json"></a>
 
-```
+```json
 {
   "LaunchType": "FARGATE",
   "NetworkConfiguration": {
@@ -223,7 +223,7 @@ The following example defines the ECS parameters.
 #### YAML
 <a name="aws-properties-events-rule-ecsparameters--examples--ECS_example--yaml"></a>
 
-```
+```yaml
 LaunchType: "FARGATE"
 NetworkConfiguration:
   AwsVpcConfiguration:

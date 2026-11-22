@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amplifyuibuilder-component-componentproperty-syntax.json"></a>
 
-```
+```json
 {
   "[BindingProperties](#cfn-amplifyuibuilder-component-componentproperty-bindingproperties)" : {{ComponentPropertyBindingProperties}},
   "[Bindings](#cfn-amplifyuibuilder-component-componentproperty-bindings)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amplifyuibuilder-component-componentproperty-syntax.yaml"></a>
 
-```
+```yaml
   [BindingProperties](#cfn-amplifyuibuilder-component-componentproperty-bindingproperties): {{
     ComponentPropertyBindingProperties}}
   [Bindings](#cfn-amplifyuibuilder-component-componentproperty-bindings): {{

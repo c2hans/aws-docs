@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-transposedtableoption-syntax.json"></a>
 
-```
+```json
 {
   "[ColumnIndex](#cfn-quicksight-dashboard-transposedtableoption-columnindex)" : {{Number}},
   "[ColumnType](#cfn-quicksight-dashboard-transposedtableoption-columntype)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-transposedtableoption-syntax.yaml"></a>
 
-```
+```yaml
   [ColumnIndex](#cfn-quicksight-dashboard-transposedtableoption-columnindex): {{Number}}
   [ColumnType](#cfn-quicksight-dashboard-transposedtableoption-columntype): {{String}}
   [ColumnWidth](#cfn-quicksight-dashboard-transposedtableoption-columnwidth): {{String}}

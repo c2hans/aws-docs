@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kafkaconnect-connector-kafkaclusterclientauthentication-syntax.json"></a>
 
-```
+```json
 {
   "[AuthenticationType](#cfn-kafkaconnect-connector-kafkaclusterclientauthentication-authenticationtype)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kafkaconnect-connector-kafkaclusterclientauthentication-syntax.yaml"></a>
 
-```
+```yaml
   [AuthenticationType](#cfn-kafkaconnect-connector-kafkaclusterclientauthentication-authenticationtype): {{String}}
 ```
 

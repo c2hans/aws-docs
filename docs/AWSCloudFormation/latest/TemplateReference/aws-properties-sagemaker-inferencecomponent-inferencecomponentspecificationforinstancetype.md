@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentspecificationforinstancetype-syntax.json"></a>
 
-```
+```json
 {
   "[ComputeResourceRequirements](#cfn-sagemaker-inferencecomponent-inferencecomponentspecificationforinstancetype-computeresourcerequirements)" : {{InferenceComponentComputeResourceRequirements}},
   "[Container](#cfn-sagemaker-inferencecomponent-inferencecomponentspecificationforinstancetype-container)" : {{InferenceComponentContainerSpecificationForInstanceType}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentspecificationforinstancetype-syntax.yaml"></a>
 
-```
+```yaml
   [ComputeResourceRequirements](#cfn-sagemaker-inferencecomponent-inferencecomponentspecificationforinstancetype-computeresourcerequirements): {{
     InferenceComponentComputeResourceRequirements}}
   [Container](#cfn-sagemaker-inferencecomponent-inferencecomponentspecificationforinstancetype-container): {{

@@ -19,7 +19,7 @@ The update enables all accounts that are part of the organization with ID `o-123
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

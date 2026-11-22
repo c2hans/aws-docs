@@ -13,7 +13,7 @@ For example, imagine you have a group named `HRPayroll`. Members of `HRPayroll` 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {

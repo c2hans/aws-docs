@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-servicediscovery-service-dnsrecord-syntax.json"></a>
 
-```
+```json
 {
   "[TTL](#cfn-servicediscovery-service-dnsrecord-ttl)" : {{Number}},
   "[Type](#cfn-servicediscovery-service-dnsrecord-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-servicediscovery-service-dnsrecord-syntax.yaml"></a>
 
-```
+```yaml
   [TTL](#cfn-servicediscovery-service-dnsrecord-ttl): {{Number}}
   [Type](#cfn-servicediscovery-service-dnsrecord-type): {{String}}
 ```

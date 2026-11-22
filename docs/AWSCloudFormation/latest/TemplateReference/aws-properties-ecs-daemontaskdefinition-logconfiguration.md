@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-daemontaskdefinition-logconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[LogDriver](#cfn-ecs-daemontaskdefinition-logconfiguration-logdriver)" : {{String}},
   "[Options](#cfn-ecs-daemontaskdefinition-logconfiguration-options)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-daemontaskdefinition-logconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [LogDriver](#cfn-ecs-daemontaskdefinition-logconfiguration-logdriver): {{String}}
   [Options](#cfn-ecs-daemontaskdefinition-logconfiguration-options): {{
     {{Key}}: {{Value}}}}

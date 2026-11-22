@@ -14,7 +14,7 @@ This section describes how to create HTML forms. For a working example of browse
 
 The form and policy must be UTF-8 encoded. You can apply UTF-8 encoding to the form by specifying `charset=UTF-8` in the `content` attribute. The following is an example of UTF-8 encoding in the HTML heading.
 
-```
+```xml
 1. <html>
 2.   <head>
 3.     ...
@@ -26,7 +26,7 @@ The form and policy must be UTF-8 encoded. You can apply UTF-8 encoding to the f
 
 Following is an example of UTF-8 encoding in a request header.
 
-```
+```http
 1. Content-Type: text/html; charset=UTF-8
 ```
 
@@ -46,7 +46,7 @@ The key name is specified in a form field.
 
 This is a form declaration for the bucket `examplebucket`.
 
-```
+```xml
 1. <form action="http://examplebucket.s3.amazonaws.com/" method="post"
 2.
 3. enctype="multipart/form-data">

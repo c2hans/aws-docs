@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewayratelimit-limitentry-syntax.json"></a>
 
-```
+```json
 {
   "[Connections](#cfn-bedrockagentcore-gatewayratelimit-limitentry-connections)" : {{[ RateConfig, ... ]}},
   "[Dimensions](#cfn-bedrockagentcore-gatewayratelimit-limitentry-dimensions)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewayratelimit-limitentry-syntax.yaml"></a>
 
-```
+```yaml
   [Connections](#cfn-bedrockagentcore-gatewayratelimit-limitentry-connections): {{
     - RateConfig}}
   [Dimensions](#cfn-bedrockagentcore-gatewayratelimit-limitentry-dimensions): {{

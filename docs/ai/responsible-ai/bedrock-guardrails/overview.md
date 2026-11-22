@@ -103,6 +103,8 @@ Customers should still define effectiveness criteria for their own use case, tes
 
 ## Further information
 <a name="further-info"></a>
+
+For more information, see the following resources:
 + For service documentation, see [Amazon Bedrock Guardrails](https://aws.amazon.com/bedrock/guardrails/), [Amazon Bedrock Guardrails User Guide](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html), [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/), [Amazon Bedrock Security Compliance](https://aws.amazon.com/bedrock/security-compliance/), [Amazon Bedrock Studio](https://docs.aws.amazon.com/bedrock/latest/studio-ug/what-is-bedrock-studio.html), and [Amazon Bedrock Prompt Management](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management.html?icmpid=docs_bedrock_help_panel_prompt_management).
 + For details on privacy and other legal considerations, see the following AWS policies: [Acceptable Use](https://aws.amazon.com/aup/), [Responsible AI](https://aws.amazon.com/ai/responsible-ai/policy/), [Legal](https://aws.amazon.com/legal/), [Compliance](https://aws.amazon.com/compliance/), and [Privacy](https://aws.amazon.com/privacy/).
 + For help optimizing workflows, see [Generative AI Innovation Center](https://aws.amazon.com/ai/generative-ai/innovation-center/), [AWS Customer Support](https://aws.amazon.com/contact-us/), [AWS Professional Services](https://aws.amazon.com/professional-services/), [Ground Truth Plus](https://aws.amazon.com/sagemaker/groundtruth/), and [Amazon Augmented AI](https://aws.amazon.com/augmented-ai/).

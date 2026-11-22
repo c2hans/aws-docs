@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-memory-numbervalidation-syntax.json"></a>
 
-```
+```json
 {
   "[MaxValue](#cfn-bedrockagentcore-memory-numbervalidation-maxvalue)" : {{Number}},
   "[MinValue](#cfn-bedrockagentcore-memory-numbervalidation-minvalue)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-memory-numbervalidation-syntax.yaml"></a>
 
-```
+```yaml
   [MaxValue](#cfn-bedrockagentcore-memory-numbervalidation-maxvalue): {{Number}}
   [MinValue](#cfn-bedrockagentcore-memory-numbervalidation-minvalue): {{Number}}
 ```

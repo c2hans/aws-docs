@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-bodysectionrepeatdimensionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DynamicCategoryDimensionConfiguration](#cfn-quicksight-template-bodysectionrepeatdimensionconfiguration-dynamiccategorydimensionconfiguration)" : {{BodySectionDynamicCategoryDimensionConfiguration}},
   "[DynamicNumericDimensionConfiguration](#cfn-quicksight-template-bodysectionrepeatdimensionconfiguration-dynamicnumericdimensionconfiguration)" : {{BodySectionDynamicNumericDimensionConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-bodysectionrepeatdimensionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DynamicCategoryDimensionConfiguration](#cfn-quicksight-template-bodysectionrepeatdimensionconfiguration-dynamiccategorydimensionconfiguration): {{
     BodySectionDynamicCategoryDimensionConfiguration}}
   [DynamicNumericDimensionConfiguration](#cfn-quicksight-template-bodysectionrepeatdimensionconfiguration-dynamicnumericdimensionconfiguration): {{

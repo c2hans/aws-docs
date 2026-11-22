@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-linksharingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Permissions](#cfn-quicksight-dashboard-linksharingconfiguration-permissions)" : {{[ ResourcePermission, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-linksharingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Permissions](#cfn-quicksight-dashboard-linksharingconfiguration-permissions): {{
     - ResourcePermission}}
 ```

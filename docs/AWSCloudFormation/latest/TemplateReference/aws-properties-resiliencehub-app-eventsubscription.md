@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-resiliencehub-app-eventsubscription-syntax.json"></a>
 
-```
+```json
 {
   "[EventType](#cfn-resiliencehub-app-eventsubscription-eventtype)" : {{String}},
   "[Name](#cfn-resiliencehub-app-eventsubscription-name)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-resiliencehub-app-eventsubscription-syntax.yaml"></a>
 
-```
+```yaml
   [EventType](#cfn-resiliencehub-app-eventsubscription-eventtype): {{String}}
   [Name](#cfn-resiliencehub-app-eventsubscription-name): {{String}}
   [SnsTopicArn](#cfn-resiliencehub-app-eventsubscription-snstopicarn): {{String}}

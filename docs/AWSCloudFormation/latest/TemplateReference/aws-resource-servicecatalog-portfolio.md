@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-servicecatalog-portfolio-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ServiceCatalog::Portfolio",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-servicecatalog-portfolio-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ServiceCatalog::Portfolio
 Properties:
   [AcceptLanguage](#cfn-servicecatalog-portfolio-acceptlanguage): {{String}}

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-featuregroup-throughputconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ProvisionedReadCapacityUnits](#cfn-sagemaker-featuregroup-throughputconfig-provisionedreadcapacityunits)" : {{Integer}},
   "[ProvisionedWriteCapacityUnits](#cfn-sagemaker-featuregroup-throughputconfig-provisionedwritecapacityunits)" : {{Integer}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-featuregroup-throughputconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ProvisionedReadCapacityUnits](#cfn-sagemaker-featuregroup-throughputconfig-provisionedreadcapacityunits): {{Integer}}
   [ProvisionedWriteCapacityUnits](#cfn-sagemaker-featuregroup-throughputconfig-provisionedwritecapacityunits): {{Integer}}
   [ThroughputMode](#cfn-sagemaker-featuregroup-throughputconfig-throughputmode): {{String}}

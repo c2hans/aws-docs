@@ -45,7 +45,7 @@ If you modify any parameters, make sure to reboot the DB cluster to apply the ch
 
 If you don't see one or more tables reflected in Amazon Redshift, you can run the following command to resynchronize them:
 
-```
+```sql
 ALTER DATABASE {{dbname}} INTEGRATION REFRESH TABLES {{table1}}, {{table2}};
 ```
 

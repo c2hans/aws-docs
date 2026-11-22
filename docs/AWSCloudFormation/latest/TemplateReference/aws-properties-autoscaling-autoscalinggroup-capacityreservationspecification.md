@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-autoscaling-autoscalinggroup-capacityreservationspecification-syntax.json"></a>
 
-```
+```json
 {
   "[CapacityReservationPreference](#cfn-autoscaling-autoscalinggroup-capacityreservationspecification-capacityreservationpreference)" : {{String}},
   "[CapacityReservationTarget](#cfn-autoscaling-autoscalinggroup-capacityreservationspecification-capacityreservationtarget)" : {{CapacityReservationTarget}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-autoscaling-autoscalinggroup-capacityreservationspecification-syntax.yaml"></a>
 
-```
+```yaml
   [CapacityReservationPreference](#cfn-autoscaling-autoscalinggroup-capacityreservationspecification-capacityreservationpreference): {{String}}
   [CapacityReservationTarget](#cfn-autoscaling-autoscalinggroup-capacityreservationspecification-capacityreservationtarget): {{
     CapacityReservationTarget}}

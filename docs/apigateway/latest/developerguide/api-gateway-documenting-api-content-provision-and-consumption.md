@@ -13,7 +13,7 @@ If you have a dedicated documentation team to write and edit your API documentat
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

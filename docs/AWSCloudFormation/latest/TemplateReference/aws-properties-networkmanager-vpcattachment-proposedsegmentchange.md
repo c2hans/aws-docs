@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkmanager-vpcattachment-proposedsegmentchange-syntax.json"></a>
 
-```
+```json
 {
   "[AttachmentPolicyRuleNumber](#cfn-networkmanager-vpcattachment-proposedsegmentchange-attachmentpolicyrulenumber)" : {{Integer}},
   "[SegmentName](#cfn-networkmanager-vpcattachment-proposedsegmentchange-segmentname)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkmanager-vpcattachment-proposedsegmentchange-syntax.yaml"></a>
 
-```
+```yaml
   [AttachmentPolicyRuleNumber](#cfn-networkmanager-vpcattachment-proposedsegmentchange-attachmentpolicyrulenumber): {{Integer}}
   [SegmentName](#cfn-networkmanager-vpcattachment-proposedsegmentchange-segmentname): {{String}}
   [Tags](#cfn-networkmanager-vpcattachment-proposedsegmentchange-tags): {{

@@ -15,7 +15,7 @@ The following code examples show how to query a table using a Global Secondary I
 **SDK for Java 2.x**
 Query a DynamoDB table using its primary key and a Global Secondary Index (GSI) with AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -115,7 +115,7 @@ import java.util.Map;
 ```
 Compare querying a table directly versus querying a GSI with AWS SDK for Java 2.x.
 
-```
+```java
     public static void main(String[] args) {
         final String usage =
             """
@@ -194,7 +194,7 @@ Compare querying a table directly versus querying a GSI with AWS SDK for Java 2.
 **SDK for JavaScript (v3)**
 Query a DynamoDB table using the primary key with AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient, QueryCommand } = require("@aws-sdk/client-dynamodb");
 
 /**
@@ -234,7 +234,7 @@ async function queryTable(
 ```
 Query a DynamoDB Global Secondary Index (GSI) with AWS SDK for JavaScript.
 
-```
+```javascript
 /**
  * Queries a DynamoDB Global Secondary Index (GSI)
  *
@@ -281,7 +281,7 @@ async function queryGSI(
 **SDK for Python (Boto3)**
 Query a DynamoDB table using its primary key and a Global Secondary Index (GSI) with AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 from boto3.dynamodb.conditions import Key
 

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-audiowatermarksettings-syntax.json"></a>
 
-```
+```json
 {
   "[NielsenWatermarksSettings](#cfn-medialive-channel-audiowatermarksettings-nielsenwatermarkssettings)" : {{NielsenWatermarksSettings}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-audiowatermarksettings-syntax.yaml"></a>
 
-```
+```yaml
   [NielsenWatermarksSettings](#cfn-medialive-channel-audiowatermarksettings-nielsenwatermarkssettings): {{
     NielsenWatermarksSettings}}
 ```

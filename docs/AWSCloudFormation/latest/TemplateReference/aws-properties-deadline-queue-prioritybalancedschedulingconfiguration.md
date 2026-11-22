@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-deadline-queue-prioritybalancedschedulingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[RenderingTaskBuffer](#cfn-deadline-queue-prioritybalancedschedulingconfiguration-renderingtaskbuffer)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-deadline-queue-prioritybalancedschedulingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [RenderingTaskBuffer](#cfn-deadline-queue-prioritybalancedschedulingconfiguration-renderingtaskbuffer): {{Integer}}
 ```
 

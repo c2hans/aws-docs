@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-supportauthz-supportpermit-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SupportAuthZ::SupportPermit",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-supportauthz-supportpermit-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SupportAuthZ::SupportPermit
 Properties:
   [Description](#cfn-supportauthz-supportpermit-description): {{String}}
@@ -152,7 +152,7 @@ The following example creates a support permit that allows two Amazon EC2 read a
 #### JSON
 <a name="aws-resource-supportauthz-supportpermit--examples--Grant_time-bounded_access_to_specific_actions_on_specific_resources--json"></a>
 
-```
+```json
 {
   "Resources": {
     "ExampleSupportPermit": {
@@ -178,7 +178,7 @@ The following example creates a support permit that allows two Amazon EC2 read a
 #### YAML
 <a name="aws-resource-supportauthz-supportpermit--examples--Grant_time-bounded_access_to_specific_actions_on_specific_resources--yaml"></a>
 
-```
+```yaml
 Resources:
   ExampleSupportPermit:
     Type: AWS::SupportAuthZ::SupportPermit
@@ -208,7 +208,7 @@ The following example creates a support permit that grants all supported actions
 #### JSON
 <a name="aws-resource-supportauthz-supportpermit--examples--Grant_all_actions_on_all_resources_in_the_Region_within_a_time_window--json"></a>
 
-```
+```json
 {
   "Resources": {
     "BroadSupportPermit": {
@@ -236,7 +236,7 @@ The following example creates a support permit that grants all supported actions
 #### YAML
 <a name="aws-resource-supportauthz-supportpermit--examples--Grant_all_actions_on_all_resources_in_the_Region_within_a_time_window--yaml"></a>
 
-```
+```yaml
 Resources:
   BroadSupportPermit:
     Type: AWS::SupportAuthZ::SupportPermit

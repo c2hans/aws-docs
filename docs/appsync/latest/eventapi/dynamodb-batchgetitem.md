@@ -15,7 +15,7 @@ The DynamoDB `BatchGetItem` limits apply and **no condition expression** can be 
 
 The `BatchGetItem` request object has the following structure:
 
-```
+```TypeScript
 type DynamoDBBatchGetItemRequest = {
   operation: 'BatchGetItem';
   tables: {
@@ -56,7 +56,7 @@ Things to remember:
 
 Response structure
 
-```
+```TypeScript
 type Response = {
   data: {
     [tableName: string]: {[key: string]: any}[]

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-datasource-contextenrichmentconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BedrockFoundationModelConfiguration](#cfn-bedrock-datasource-contextenrichmentconfiguration-bedrockfoundationmodelconfiguration)" : {{BedrockFoundationModelContextEnrichmentConfiguration}},
   "[Type](#cfn-bedrock-datasource-contextenrichmentconfiguration-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-datasource-contextenrichmentconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BedrockFoundationModelConfiguration](#cfn-bedrock-datasource-contextenrichmentconfiguration-bedrockfoundationmodelconfiguration): {{
     BedrockFoundationModelContextEnrichmentConfiguration}}
   [Type](#cfn-bedrock-datasource-contextenrichmentconfiguration-type): {{String}}

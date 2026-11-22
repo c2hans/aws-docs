@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-botmember-syntax.json"></a>
 
-```
+```json
 {
   "[BotMemberAliasId](#cfn-lex-bot-botmember-botmemberaliasid)" : {{String}},
   "[BotMemberAliasName](#cfn-lex-bot-botmember-botmemberaliasname)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-botmember-syntax.yaml"></a>
 
-```
+```yaml
   [BotMemberAliasId](#cfn-lex-bot-botmember-botmemberaliasid): {{String}}
   [BotMemberAliasName](#cfn-lex-bot-botmember-botmemberaliasname): {{String}}
   [BotMemberId](#cfn-lex-bot-botmember-botmemberid): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotsitewise-assetmodel-assetmodelcompositemodel-syntax.json"></a>
 
-```
+```json
 {
   "[ComposedAssetModelId](#cfn-iotsitewise-assetmodel-assetmodelcompositemodel-composedassetmodelid)" : {{String}},
   "[CompositeModelProperties](#cfn-iotsitewise-assetmodel-assetmodelcompositemodel-compositemodelproperties)" : {{[ AssetModelProperty, ... ]}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotsitewise-assetmodel-assetmodelcompositemodel-syntax.yaml"></a>
 
-```
+```yaml
   [ComposedAssetModelId](#cfn-iotsitewise-assetmodel-assetmodelcompositemodel-composedassetmodelid): {{String}}
   [CompositeModelProperties](#cfn-iotsitewise-assetmodel-assetmodelcompositemodel-compositemodelproperties): {{
     - AssetModelProperty}}
@@ -135,7 +135,7 @@ Replace `TestAlarmModel` with the name of your alarm model.
 #### YAML
 <a name="aws-properties-iotsitewise-assetmodel-assetmodelcompositemodel--examples--Create_an_alarm_model--yaml"></a>
 
-```
+```yaml
 Resources: AssetModelWithAlarmCompositeModel: Type:
                 AWS::IoTSiteWise::AssetModel Properties: AssetModelName:
                 AssetModelWithValidAlarmCompositeModel AssetModelDescription:
@@ -158,7 +158,7 @@ You can modify the following example to create a `component-model-based` composi
 #### YAML
 <a name="aws-properties-iotsitewise-assetmodel-assetmodelcompositemodel--examples--Create_a_component-model-based_composite_model--yaml"></a>
 
-```
+```yaml
 Resources: MainAssetModel: Type: AWS::IoTSiteWise::AssetModel
                 Properties: AssetModelExternalId: AssetModelName: AssetModelWithCustomComposites
                 AssetModelDescription: Asset model with custom composite models

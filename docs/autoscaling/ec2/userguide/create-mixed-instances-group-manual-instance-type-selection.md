@@ -127,7 +127,7 @@ aws autoscaling create-auto-scaling-group --cli-input-json {{file://~/config.jso
 
 The `config.json` file contains the following content.
 
-```
+```json
 {
     "AutoScalingGroupName": "{{my-asg}}",
     "MixedInstancesPolicy": {
@@ -187,7 +187,7 @@ aws autoscaling create-auto-scaling-group --cli-input-yaml {{file://~/config.yam
 
 The `config.yaml` file contains the following content.
 
-```
+```YAML
 ---
 AutoScalingGroupName: {{my-asg}}
 MixedInstancesPolicy:
@@ -234,7 +234,7 @@ aws autoscaling create-auto-scaling-group --cli-input-json {{file://~/config.jso
 
 The `config.json` file contains the following content.
 
-```
+```json
 {
     "AutoScalingGroupName": "{{my-asg}}",
     "MixedInstancesPolicy": {
@@ -294,7 +294,7 @@ aws autoscaling create-auto-scaling-group --cli-input-yaml {{file://~/config.yam
 
 The `config.yaml` file contains the following content.
 
-```
+```YAML
 ---
 AutoScalingGroupName: {{my-asg}}
 MixedInstancesPolicy:
@@ -341,7 +341,7 @@ aws autoscaling create-auto-scaling-group --cli-input-json {{file://~/config.jso
 
 The `config.json` file contains the following content.
 
-```
+```json
 {
     "AutoScalingGroupName": "{{my-asg}}",
     "MixedInstancesPolicy": {
@@ -401,7 +401,7 @@ aws autoscaling create-auto-scaling-group --cli-input-yaml {{file://~/config.yam
 
 The `config.yaml` file contains the following content.
 
-```
+```YAML
 ---
 AutoScalingGroupName: {{my-asg}}
 MixedInstancesPolicy:
@@ -448,7 +448,7 @@ aws autoscaling create-auto-scaling-group --cli-input-json {{file://~/config.jso
 
 The `config.json` file contains the following content.
 
-```
+```json
 {
     "AutoScalingGroupName": "{{my-asg}}",
     "MixedInstancesPolicy": {
@@ -507,7 +507,7 @@ aws autoscaling create-auto-scaling-group --cli-input-yaml {{file://~/config.yam
 
 The `config.yaml` file contains the following content.
 
-```
+```YAML
 ---
 AutoScalingGroupName: {{my-asg}}
 MixedInstancesPolicy:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewaytarget-selfmanagedlatticeresource-syntax.json"></a>
 
-```
+```json
 {
   "[ResourceConfigurationIdentifier](#cfn-bedrockagentcore-gatewaytarget-selfmanagedlatticeresource-resourceconfigurationidentifier)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewaytarget-selfmanagedlatticeresource-syntax.yaml"></a>
 
-```
+```yaml
   [ResourceConfigurationIdentifier](#cfn-bedrockagentcore-gatewaytarget-selfmanagedlatticeresource-resourceconfigurationidentifier): {{String}}
 ```
 

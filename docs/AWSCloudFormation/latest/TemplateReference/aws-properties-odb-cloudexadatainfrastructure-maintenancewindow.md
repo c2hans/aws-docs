@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-odb-cloudexadatainfrastructure-maintenancewindow-syntax.json"></a>
 
-```
+```json
 {
   "[CustomActionTimeoutInMins](#cfn-odb-cloudexadatainfrastructure-maintenancewindow-customactiontimeoutinmins)" : {{Integer}},
   "[DaysOfWeek](#cfn-odb-cloudexadatainfrastructure-maintenancewindow-daysofweek)" : {{[ String, ... ]}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-odb-cloudexadatainfrastructure-maintenancewindow-syntax.yaml"></a>
 
-```
+```yaml
   [CustomActionTimeoutInMins](#cfn-odb-cloudexadatainfrastructure-maintenancewindow-customactiontimeoutinmins): {{Integer}}
   [DaysOfWeek](#cfn-odb-cloudexadatainfrastructure-maintenancewindow-daysofweek): {{
     - String}}

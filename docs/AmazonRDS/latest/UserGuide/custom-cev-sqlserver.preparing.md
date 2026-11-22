@@ -55,7 +55,7 @@ If you're building a CEV using SQL Server Developer edition, you might need to o
 
 1. Grant the SQL Server sysadmin (SA) server role privilege to `NT AUTHORITY\SYSTEM`:
 
-   ```
+   ```sql
    1. USE [master]
    2. GO
    3. EXEC master..sp_addsrvrolemember @loginame = N'NT AUTHORITY\SYSTEM' , @rolename = N'sysadmin'

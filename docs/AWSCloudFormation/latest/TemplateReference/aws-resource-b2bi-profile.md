@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-b2bi-profile-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::B2BI::Profile",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-b2bi-profile-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::B2BI::Profile
 Properties:
   [BusinessName](#cfn-b2bi-profile-businessname): {{String}}

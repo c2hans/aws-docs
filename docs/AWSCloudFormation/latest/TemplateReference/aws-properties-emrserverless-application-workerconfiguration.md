@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrserverless-application-workerconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Cpu](#cfn-emrserverless-application-workerconfiguration-cpu)" : {{String}},
   "[Disk](#cfn-emrserverless-application-workerconfiguration-disk)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrserverless-application-workerconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Cpu](#cfn-emrserverless-application-workerconfiguration-cpu): {{String}}
   [Disk](#cfn-emrserverless-application-workerconfiguration-disk): {{String}}
   [DiskType](#cfn-emrserverless-application-workerconfiguration-disktype): {{String}}

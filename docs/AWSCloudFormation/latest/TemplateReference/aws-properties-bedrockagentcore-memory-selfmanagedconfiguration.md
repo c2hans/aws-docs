@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-memory-selfmanagedconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[HistoricalContextWindowSize](#cfn-bedrockagentcore-memory-selfmanagedconfiguration-historicalcontextwindowsize)" : {{Integer}},
   "[InvocationConfiguration](#cfn-bedrockagentcore-memory-selfmanagedconfiguration-invocationconfiguration)" : {{InvocationConfigurationInput}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-memory-selfmanagedconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [HistoricalContextWindowSize](#cfn-bedrockagentcore-memory-selfmanagedconfiguration-historicalcontextwindowsize): {{Integer}}
   [InvocationConfiguration](#cfn-bedrockagentcore-memory-selfmanagedconfiguration-invocationconfiguration): {{
     InvocationConfigurationInput}}

@@ -9,9 +9,24 @@ The set of agent skills additional-data fields that can be individually updated.
 ## Contents
 <a name="API_UpdatedAgentSkillsAdditionalDataFields_Contents"></a>
 
+ ** repositoryProvider **   <a name="agentregistrycontrol-Type-UpdatedAgentSkillsAdditionalDataFields-repositoryProvider"></a>
+The patch for the repository provider field.
+Type: [UpdatedAgentSkillsRepositoryProvider](API_UpdatedAgentSkillsRepositoryProvider.md) object
+Required: No
+
  ** skillMd **   <a name="agentregistrycontrol-Type-UpdatedAgentSkillsAdditionalDataFields-skillMd"></a>
 The patch for the agent skills markdown descriptor field.
 Type: [UpdatedAgentSkillsMdDescriptor](API_UpdatedAgentSkillsMdDescriptor.md) object
+Required: No
+
+ ** skillPackage **   <a name="agentregistrycontrol-Type-UpdatedAgentSkillsAdditionalDataFields-skillPackage"></a>
+The patch for the skill package source field.
+Type: [UpdatedAgentSkillsPackageDescriptor](API_UpdatedAgentSkillsPackageDescriptor.md) object
+Required: No
+
+ ** sourceConfiguration **   <a name="agentregistrycontrol-Type-UpdatedAgentSkillsAdditionalDataFields-sourceConfiguration"></a>
+The patch for the source configuration field.
+Type: [UpdatedAgentSkillsSourceConfiguration](API_UpdatedAgentSkillsSourceConfiguration.md) object
 Required: No
 
 ## See Also

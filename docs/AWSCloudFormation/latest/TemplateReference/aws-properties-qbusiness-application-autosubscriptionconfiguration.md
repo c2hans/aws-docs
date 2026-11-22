@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-qbusiness-application-autosubscriptionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AutoSubscribe](#cfn-qbusiness-application-autosubscriptionconfiguration-autosubscribe)" : {{String}},
   "[DefaultSubscriptionType](#cfn-qbusiness-application-autosubscriptionconfiguration-defaultsubscriptiontype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-qbusiness-application-autosubscriptionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AutoSubscribe](#cfn-qbusiness-application-autosubscriptionconfiguration-autosubscribe): {{String}}
   [DefaultSubscriptionType](#cfn-qbusiness-application-autosubscriptionconfiguration-defaultsubscriptiontype): {{String}}
 ```

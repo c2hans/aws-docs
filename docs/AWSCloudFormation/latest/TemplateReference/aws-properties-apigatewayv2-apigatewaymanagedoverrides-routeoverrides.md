@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apigatewayv2-apigatewaymanagedoverrides-routeoverrides-syntax.json"></a>
 
-```
+```json
 {
   "[AuthorizationScopes](#cfn-apigatewayv2-apigatewaymanagedoverrides-routeoverrides-authorizationscopes)" : {{[ String, ... ]}},
   "[AuthorizationType](#cfn-apigatewayv2-apigatewaymanagedoverrides-routeoverrides-authorizationtype)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apigatewayv2-apigatewaymanagedoverrides-routeoverrides-syntax.yaml"></a>
 
-```
+```yaml
   [AuthorizationScopes](#cfn-apigatewayv2-apigatewaymanagedoverrides-routeoverrides-authorizationscopes): {{
     - String}}
   [AuthorizationType](#cfn-apigatewayv2-apigatewaymanagedoverrides-routeoverrides-authorizationtype): {{String}}

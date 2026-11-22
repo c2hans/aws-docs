@@ -14,7 +14,7 @@ For step-by-step instructions to run the following example, see [Java code examp
 
 **Example**
 
-```
+```java
 public class DynamoDBMapperExample {
 
     static AmazonDynamoDB client;

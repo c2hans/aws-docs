@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-kinesisanalyticsv2-snapshot-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::KinesisAnalyticsV2::Snapshot",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-kinesisanalyticsv2-snapshot-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::KinesisAnalyticsV2::Snapshot
 Properties:
   [ApplicationName](#cfn-kinesisanalyticsv2-snapshot-applicationname): {{String}}

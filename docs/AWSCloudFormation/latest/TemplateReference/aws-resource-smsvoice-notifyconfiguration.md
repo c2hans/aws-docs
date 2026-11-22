@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-smsvoice-notifyconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SMSVOICE::NotifyConfiguration",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-smsvoice-notifyconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SMSVOICE::NotifyConfiguration
 Properties:
   [DefaultTemplateId](#cfn-smsvoice-notifyconfiguration-defaulttemplateid): {{String}}

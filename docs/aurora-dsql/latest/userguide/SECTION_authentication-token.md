@@ -52,7 +52,7 @@ Before you can generate an authentication token using AWS CloudShell, make sure 
 **Note**
 If you're not connecting as `admin`, use `generate-db-connect-auth-token` instead.
 
-   ```
+   ```bash,sh,zsh
    aws dsql generate-db-connect-admin-auth-token \
      --expires-in 3600 \
      --region {{us-east-1}} \
@@ -63,7 +63,7 @@ If you're not connecting as `admin`, use `generate-db-connect-auth-token` instea
 
 1. Use the following command to use `psql` to start a connection to your cluster.
 
-   ```
+   ```bash,sh,zsh
    PGSSLMODE=require \
    psql --dbname postgres \
      --username admin \
@@ -72,13 +72,13 @@ If you're not connecting as `admin`, use `generate-db-connect-auth-token` instea
 
 1. You should see a prompt to provide a password. Copy the token that you generated, and make sure you don't include any additional spaces or characters. Paste it into the following prompt from `psql`.
 
-   ```
+   ```bash,sh,zsh
    Password for user admin:
    ```
 
 1. Press **Enter**. You should see a PostgreSQL prompt.
 
-   ```
+   ```bash,sh,zsh
    postgres=>
    ```
 
@@ -105,7 +105,7 @@ The following examples set the expiration time for the token to expire in 3600 s
 ------
 #### [ Linux and macOS ]
 
-```
+```bash,sh,zsh
 aws dsql generate-db-connect-admin-auth-token \
   --region {{region}} \
   --expires-in 3600 \
@@ -115,7 +115,7 @@ aws dsql generate-db-connect-admin-auth-token \
 ------
 #### [ Windows ]
 
-```
+```bash,sh,zsh
 aws dsql generate-db-connect-admin-auth-token ^
   --region={{region}} ^
   --expires-in=3600 ^
@@ -141,7 +141,7 @@ You can generate the token in the following ways:
 + If you are connecting with the `admin` role, use `generate_db_connect_admin_auth_token`.
 + If you are connecting with a custom database role, use `generate_connect_auth_token`.
 
-```
+```python
 import boto3
 
 def generate_token(your_cluster_endpoint, region):
@@ -159,7 +159,7 @@ You can generate the token in the following ways:
 + If you are connecting with the `admin` role, use `GenerateDBConnectAdminAuthToken`.
 + If you are connecting with a custom database role, use `GenerateDBConnectAuthToken`.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/dsql/DSQLClient.h>
 #include <iostream>
@@ -205,7 +205,7 @@ You can generate the token in the following ways:
 + If you are connecting with the `admin` role, use `getDbConnectAdminAuthToken`.
 + If you are connecting with a custom database role, use `getDbConnectAuthToken`.
 
-```
+```javascript
 import { DsqlSigner } from "@aws-sdk/dsql-signer";
 
 async function generateToken(yourClusterEndpoint, region) {
@@ -235,7 +235,7 @@ You can generate the token in the following ways:
 + If you are connecting with the `admin` role, use `generateDbConnectAdminAuthToken`.
 + If you are connecting with a custom database role, use `generateDbConnectAuthToken`.
 
-```
+```java
 import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
 import software.amazon.awssdk.services.dsql.DsqlUtilities;
 import software.amazon.awssdk.regions.Region;
@@ -269,7 +269,7 @@ You can generate the token in the following ways:
 + If you are connecting with the `admin` role, use `db_connect_admin_auth_token`.
 + If you are connecting with a custom database role, use `db_connect_auth_token`.
 
-```
+```rust
 use aws_config::{BehaviorVersion, Region};
 use aws_sdk_dsql::auth_token::{AuthTokenGenerator, Config};
 
@@ -300,7 +300,7 @@ You can generate the token in the following ways:
 + If you are connecting with the `admin` role, use `generate_db_connect_admin_auth_token`.
 + If you are connecting with a custom database role, use `generate_db_connect_auth_token`.
 
-```
+```ruby
 require 'aws-sdk-dsql'
 
 def generate_token(your_cluster_endpoint, region)
@@ -328,7 +328,7 @@ You can generate the token in the following ways:
 + If you are connecting with the `admin` role, use `generateDbConnectAdminAuthToken`.
 + If you are connecting with a custom database role, use `generateDbConnectAuthToken`.
 
-```
+```php
 <?php
 require 'vendor/autoload.php';
 
@@ -362,7 +362,7 @@ You can generate the token in the following ways:
 
 The following example uses the `DSQLAuthTokenGenerator` utility class to generate the authentication token for a user with the `admin` role. Replace {{insert-dsql-cluster-endpoint}} with your cluster endpoint.
 
-```
+```csharp
 using Amazon;
 using Amazon.DSQL.Util;
 
@@ -384,7 +384,7 @@ The AWS SDK for Go v2 provides a built-in method for generating authentication t
 + If you are connecting with the `admin` role, use `auth.GenerateDBConnectAdminAuthToken`.
 + If you are connecting with a custom database role, use `auth.GenerateDbConnectAuthToken`.
 
-```
+```go
 package main
 
 import (

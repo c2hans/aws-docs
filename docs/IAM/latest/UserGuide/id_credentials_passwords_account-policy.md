@@ -43,7 +43,7 @@ The following policy allows full access to view and edit the account password po
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

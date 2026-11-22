@@ -102,7 +102,7 @@ For information about the Aurora serverless version requirements, see [Requireme
 
 To verify whether an existing cluster has the capacity settings specified, check the output of the `describe-db-clusters` command for the `ServerlessV2ScalingConfiguration` attribute. That attribute looks similar to the following.
 
-```
+```json
 "ServerlessV2ScalingConfiguration": {
     "MinCapacity": 1.5,
     "MaxCapacity": 24.0
@@ -126,7 +126,7 @@ For information about the Aurora serverless version requirements, see [Requireme
 
 To check if an existing cluster has the capacity settings specified, check the output of the `DescribeDBClusters` operation for the `ServerlessV2ScalingConfiguration` attribute. That attribute looks similar to the following.
 
-```
+```json
 "ServerlessV2ScalingConfiguration": {
     "MinCapacity": 1.5,
     "MaxCapacity": 24.0

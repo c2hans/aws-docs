@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iot-custommetric-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoT::CustomMetric",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iot-custommetric-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoT::CustomMetric
 Properties:
   [DisplayName](#cfn-iot-custommetric-displayname): {{String}}
@@ -105,7 +105,7 @@ The Amazon Resource Number (ARN) of the custom metric; for example, `arn:aws-par
 #### JSON
 <a name="aws-resource-iot-custommetric--examples----json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "Amazon Web Services IoT CustomMetric Sample Template",
@@ -125,7 +125,7 @@ The Amazon Resource Number (ARN) of the custom metric; for example, `arn:aws-par
 #### YAML
 <a name="aws-resource-iot-custommetric--examples----yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Amazon Web Services IoT CustomMetric Sample Template
 Resources:

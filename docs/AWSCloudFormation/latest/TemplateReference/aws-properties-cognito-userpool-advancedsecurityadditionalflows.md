@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpool-advancedsecurityadditionalflows-syntax.json"></a>
 
-```
+```json
 {
   "[CustomAuthMode](#cfn-cognito-userpool-advancedsecurityadditionalflows-customauthmode)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpool-advancedsecurityadditionalflows-syntax.yaml"></a>
 
-```
+```yaml
   [CustomAuthMode](#cfn-cognito-userpool-advancedsecurityadditionalflows-customauthmode): {{String}}
 ```
 

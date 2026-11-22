@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-slotvalueselectionsetting-syntax.json"></a>
 
-```
+```json
 {
   "[AdvancedRecognitionSetting](#cfn-lex-bot-slotvalueselectionsetting-advancedrecognitionsetting)" : {{AdvancedRecognitionSetting}},
   "[RegexFilter](#cfn-lex-bot-slotvalueselectionsetting-regexfilter)" : {{SlotValueRegexFilter}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-slotvalueselectionsetting-syntax.yaml"></a>
 
-```
+```yaml
   [AdvancedRecognitionSetting](#cfn-lex-bot-slotvalueselectionsetting-advancedrecognitionsetting): {{
     AdvancedRecognitionSetting}}
   [RegexFilter](#cfn-lex-bot-slotvalueselectionsetting-regexfilter): {{

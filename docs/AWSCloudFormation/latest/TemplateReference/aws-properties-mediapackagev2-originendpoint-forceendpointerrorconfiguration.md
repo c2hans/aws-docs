@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackagev2-originendpoint-forceendpointerrorconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EndpointErrorConditions](#cfn-mediapackagev2-originendpoint-forceendpointerrorconfiguration-endpointerrorconditions)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackagev2-originendpoint-forceendpointerrorconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EndpointErrorConditions](#cfn-mediapackagev2-originendpoint-forceendpointerrorconfiguration-endpointerrorconditions): {{
     - String}}
 ```

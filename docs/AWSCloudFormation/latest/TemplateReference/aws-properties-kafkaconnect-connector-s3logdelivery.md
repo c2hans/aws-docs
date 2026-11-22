@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kafkaconnect-connector-s3logdelivery-syntax.json"></a>
 
-```
+```json
 {
   "[Bucket](#cfn-kafkaconnect-connector-s3logdelivery-bucket)" : {{String}},
   "[Enabled](#cfn-kafkaconnect-connector-s3logdelivery-enabled)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kafkaconnect-connector-s3logdelivery-syntax.yaml"></a>
 
-```
+```yaml
   [Bucket](#cfn-kafkaconnect-connector-s3logdelivery-bucket): {{String}}
   [Enabled](#cfn-kafkaconnect-connector-s3logdelivery-enabled): {{Boolean}}
   [Prefix](#cfn-kafkaconnect-connector-s3logdelivery-prefix): {{String}}

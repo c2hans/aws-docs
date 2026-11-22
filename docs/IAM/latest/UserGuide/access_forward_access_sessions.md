@@ -37,7 +37,7 @@ In the following IAM policy example, Amazon S3 GetObject and Athena requests are
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

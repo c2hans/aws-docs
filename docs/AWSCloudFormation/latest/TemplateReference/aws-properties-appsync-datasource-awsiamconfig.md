@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appsync-datasource-awsiamconfig-syntax.json"></a>
 
-```
+```json
 {
   "[SigningRegion](#cfn-appsync-datasource-awsiamconfig-signingregion)" : {{String}},
   "[SigningServiceName](#cfn-appsync-datasource-awsiamconfig-signingservicename)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appsync-datasource-awsiamconfig-syntax.yaml"></a>
 
-```
+```yaml
   [SigningRegion](#cfn-appsync-datasource-awsiamconfig-signingregion): {{String}}
   [SigningServiceName](#cfn-appsync-datasource-awsiamconfig-signingservicename): {{String}}
 ```

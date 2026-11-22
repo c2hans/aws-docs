@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-image-imagetestsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ImageTestsEnabled](#cfn-imagebuilder-image-imagetestsconfiguration-imagetestsenabled)" : {{Boolean}},
   "[TimeoutMinutes](#cfn-imagebuilder-image-imagetestsconfiguration-timeoutminutes)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-image-imagetestsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ImageTestsEnabled](#cfn-imagebuilder-image-imagetestsconfiguration-imagetestsenabled): {{Boolean}}
   [TimeoutMinutes](#cfn-imagebuilder-image-imagetestsconfiguration-timeoutminutes): {{Integer}}
 ```

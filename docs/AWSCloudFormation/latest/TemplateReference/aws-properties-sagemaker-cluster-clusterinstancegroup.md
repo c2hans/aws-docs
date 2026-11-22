@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-cluster-clusterinstancegroup-syntax.json"></a>
 
-```
+```json
 {
   "[AutoPatchConfig](#cfn-sagemaker-cluster-clusterinstancegroup-autopatchconfig)" : {{AutoPatchConfig}},
   "[CapacityRequirements](#cfn-sagemaker-cluster-clusterinstancegroup-capacityrequirements)" : {{ClusterCapacityRequirements}},
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-cluster-clusterinstancegroup-syntax.yaml"></a>
 
-```
+```yaml
   [AutoPatchConfig](#cfn-sagemaker-cluster-clusterinstancegroup-autopatchconfig): {{
     AutoPatchConfig}}
   [CapacityRequirements](#cfn-sagemaker-cluster-clusterinstancegroup-capacityrequirements): {{

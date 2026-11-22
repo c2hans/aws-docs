@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-osis-pipelineendpoint-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::OSIS::PipelineEndpoint",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-osis-pipelineendpoint-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::OSIS::PipelineEndpoint
 Properties:
   [PipelineArn](#cfn-osis-pipelineendpoint-pipelinearn): {{String}}

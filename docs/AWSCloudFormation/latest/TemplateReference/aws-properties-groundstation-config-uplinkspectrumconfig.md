@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-groundstation-config-uplinkspectrumconfig-syntax.json"></a>
 
-```
+```json
 {
   "[CenterFrequency](#cfn-groundstation-config-uplinkspectrumconfig-centerfrequency)" : {{Frequency}},
   "[Polarization](#cfn-groundstation-config-uplinkspectrumconfig-polarization)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-groundstation-config-uplinkspectrumconfig-syntax.yaml"></a>
 
-```
+```yaml
   [CenterFrequency](#cfn-groundstation-config-uplinkspectrumconfig-centerfrequency): {{
     Frequency}}
   [Polarization](#cfn-groundstation-config-uplinkspectrumconfig-polarization): {{String}}
@@ -59,7 +59,7 @@ The following example creates a Ground Station `SpectrumConfig` for an uplink co
 #### JSON
 <a name="aws-properties-groundstation-config-uplinkspectrumconfig--examples--Create_an_uplink_SpectrumConfig--json"></a>
 
-```
+```json
 {
   "SpectrumConfig": {
 
@@ -75,7 +75,7 @@ The following example creates a Ground Station `SpectrumConfig` for an uplink co
 #### YAML
 <a name="aws-properties-groundstation-config-uplinkspectrumconfig--examples--Create_an_uplink_SpectrumConfig--yaml"></a>
 
-```
+```yaml
 SpectrumConfig:
   CenterFrequency:
     Value: 2100

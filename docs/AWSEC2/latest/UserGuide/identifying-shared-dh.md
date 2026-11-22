@@ -27,7 +27,7 @@ Owners and consumers can identify shared Dedicated Hosts using one of the follow
 **To identify a shared Dedicated Host**
 Use the [ describe-hosts](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-hosts.html) command. The command returns the Dedicated Hosts that you own and Dedicated Hosts that are shared with you. The value of `Owner` is the account ID of the owner of the Dedicated Host. The `Instances` list describes the instances running on the host.
 
-```
+```bash
 aws ec2 describe-hosts --filter "Name=state,Values=available"
 ```
 
@@ -37,7 +37,7 @@ aws ec2 describe-hosts --filter "Name=state,Values=available"
 **To identify a shared Dedicated Host**
 Use the [Get-EC2host](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Host.html) cmdlet. The cmdlet returns the Dedicated Hosts that you own and Dedicated Hosts that are shared with you. The value of `Owner` in the response is the account ID of the owner of the Dedicated Host. The `Instances` list describes the instances running on the host.
 
-```
+```powershell
 Get-EC2Host -Filter @{Name="state"; Values="available"}
 ```
 

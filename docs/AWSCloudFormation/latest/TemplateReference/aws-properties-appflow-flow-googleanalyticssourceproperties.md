@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-flow-googleanalyticssourceproperties-syntax.json"></a>
 
-```
+```json
 {
   "[Object](#cfn-appflow-flow-googleanalyticssourceproperties-object)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-flow-googleanalyticssourceproperties-syntax.yaml"></a>
 
-```
+```yaml
   [Object](#cfn-appflow-flow-googleanalyticssourceproperties-object): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-opensearchservice-domain-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::OpenSearchService::Domain",
   "Properties" : {
@@ -53,7 +53,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-opensearchservice-domain-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::OpenSearchService::Domain
 Properties:
   [AcceptedWarnings](#cfn-opensearchservice-domain-acceptedwarnings): {{
@@ -385,7 +385,7 @@ The following example creates an OpenSearch Service domain running OpenSearch 1.
 #### JSON
 <a name="aws-resource-opensearchservice-domain--examples--Create_an_OpenSearch_Service_domain_that_contains_two_data_nodes_and_three_master_nodes--json"></a>
 
-```
+```json
 "OpenSearchServiceDomain": {
    "Type":"AWS::OpenSearchService::Domain",
    "Properties": {
@@ -443,7 +443,7 @@ The following example creates an OpenSearch Service domain running OpenSearch 1.
 #### YAML
 <a name="aws-resource-opensearchservice-domain--examples--Create_an_OpenSearch_Service_domain_that_contains_two_data_nodes_and_three_master_nodes--yaml"></a>
 
-```
+```yaml
 OpenSearchServiceDomain:
   Type: AWS::OpenSearchService::Domain
   Properties:
@@ -493,7 +493,7 @@ The following example creates a domain with VPC options.
 #### JSON
 <a name="aws-resource-opensearchservice-domain--examples--Create_a_domain_with_VPC_options--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "OpenSearchServiceDomain resource",
@@ -658,7 +658,7 @@ The following example creates a domain with VPC options.
 #### YAML
 <a name="aws-resource-opensearchservice-domain--examples--Create_a_domain_with_VPC_options--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: OpenSearchServiceDomain resource
 Parameters:
@@ -768,7 +768,7 @@ The following example creates a domain with fine-grained access control.
 #### JSON
 <a name="aws-resource-opensearchservice-domain--examples--Create_a_domain_with_fine-grained_access_control--json"></a>
 
-```
+```json
 {
   "OpenSearchServiceDomain": {
     "Type": "AWS::OpenSearchService::Domain",
@@ -814,7 +814,7 @@ The following example creates a domain with fine-grained access control.
 #### YAML
 <a name="aws-resource-opensearchservice-domain--examples--Create_a_domain_with_fine-grained_access_control--yaml"></a>
 
-```
+```yaml
 OpenSearchServiceDomain:
   Type: 'AWS::OpenSearchService::Domain'
   Properties:

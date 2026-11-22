@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpool-verificationmessagetemplate-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultEmailOption](#cfn-cognito-userpool-verificationmessagetemplate-defaultemailoption)" : {{String}},
   "[EmailMessage](#cfn-cognito-userpool-verificationmessagetemplate-emailmessage)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpool-verificationmessagetemplate-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultEmailOption](#cfn-cognito-userpool-verificationmessagetemplate-defaultemailoption): {{String}}
   [EmailMessage](#cfn-cognito-userpool-verificationmessagetemplate-emailmessage): {{String}}
   [EmailMessageByLink](#cfn-cognito-userpool-verificationmessagetemplate-emailmessagebylink): {{String}}

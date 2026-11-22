@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-groundstation-config-antennadownlinkconfig-syntax.json"></a>
 
-```
+```json
 {
   "[SpectrumConfig](#cfn-groundstation-config-antennadownlinkconfig-spectrumconfig)" : {{SpectrumConfig}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-groundstation-config-antennadownlinkconfig-syntax.yaml"></a>
 
-```
+```yaml
   [SpectrumConfig](#cfn-groundstation-config-antennadownlinkconfig-spectrumconfig): {{
     SpectrumConfig}}
 ```
@@ -50,7 +50,7 @@ The following example creates a Ground Station `AntennaDownlinkConfig`
 #### JSON
 <a name="aws-properties-groundstation-config-antennadownlinkconfig--examples--Create_an_AntennaDownlinkConfig--json"></a>
 
-```
+```json
 {
   "AntennaDownlinkConfig": {
     "SpectrumConfig": {
@@ -71,7 +71,7 @@ The following example creates a Ground Station `AntennaDownlinkConfig`
 #### YAML
 <a name="aws-properties-groundstation-config-antennadownlinkconfig--examples--Create_an_AntennaDownlinkConfig--yaml"></a>
 
-```
+```yaml
 AntennaDownlinkConfig:
   SpectrumConfig:
     CenterFrequency:

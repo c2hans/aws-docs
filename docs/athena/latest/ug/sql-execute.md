@@ -18,7 +18,7 @@ EXECUTE statement_name [ USING parameter1[, parameter2, ... ] ]
 
 The following example prepares and executes a query with no parameters.
 
-```
+```sql
 PREPARE my_select1 FROM
 SELECT name FROM nation
 EXECUTE my_select1
@@ -26,7 +26,7 @@ EXECUTE my_select1
 
 The following example prepares and executes a query with a single parameter.
 
-```
+```sql
 PREPARE my_select2 FROM
 SELECT * FROM "my_database"."my_table" WHERE year = ?
 EXECUTE my_select2 USING 2012
@@ -34,13 +34,13 @@ EXECUTE my_select2 USING 2012
 
 This is equivalent to:
 
-```
+```sql
 SELECT * FROM "my_database"."my_table" WHERE year = 2012
 ```
 
 The following example prepares and executes a query with two parameters.
 
-```
+```sql
 PREPARE my_select3 FROM
 SELECT order FROM orders WHERE productid = ? and quantity < ?
 EXECUTE my_select3 USING 346078, 12

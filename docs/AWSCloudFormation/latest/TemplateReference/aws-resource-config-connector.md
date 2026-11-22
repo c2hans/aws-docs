@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-config-connector-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Config::Connector",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-config-connector-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Config::Connector
 Properties:
   [ConnectorConfiguration](#cfn-config-connector-connectorconfiguration): {{
@@ -95,7 +95,7 @@ The following example creates a connector to Microsoft Azure using tenant and cl
 #### JSON
 <a name="aws-resource-config-connector--examples--Azure_Connector--JSON"></a>
 
-```
+```JSON
 {
     "Type": "AWS::Config::Connector",
     "Properties": {
@@ -118,7 +118,7 @@ The following example creates a connector to Microsoft Azure using tenant and cl
 #### YAML
 <a name="aws-resource-config-connector--examples--Azure_Connector--YAML"></a>
 
-```
+```YAML
 Type: AWS::Config::Connector
 Properties:
   ConnectorConfiguration:
@@ -138,7 +138,7 @@ The following example creates a connector to a Google Cloud organization using a
 #### JSON
 <a name="aws-resource-config-connector--examples--Google_Cloud_Organization_Connector--JSON"></a>
 
-```
+```JSON
 {
     "Type": "AWS::Config::Connector",
     "Properties": {
@@ -162,7 +162,7 @@ The following example creates a connector to a Google Cloud organization using a
 #### YAML
 <a name="aws-resource-config-connector--examples--Google_Cloud_Organization_Connector--YAML"></a>
 
-```
+```YAML
 Type: AWS::Config::Connector
 Properties:
   ConnectorConfiguration:
@@ -183,7 +183,7 @@ The following example creates a connector to a single Google Cloud project that 
 #### JSON
 <a name="aws-resource-config-connector--examples--Google_Cloud_Project_Connector--JSON"></a>
 
-```
+```JSON
 {
     "Type": "AWS::Config::Connector",
     "Properties": {
@@ -200,7 +200,7 @@ The following example creates a connector to a single Google Cloud project that 
 #### YAML
 <a name="aws-resource-config-connector--examples--Google_Cloud_Project_Connector--YAML"></a>
 
-```
+```YAML
 Type: AWS::Config::Connector
 Properties:
   ConnectorConfiguration:

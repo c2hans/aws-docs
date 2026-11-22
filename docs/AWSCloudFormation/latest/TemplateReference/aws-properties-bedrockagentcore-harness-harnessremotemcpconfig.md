@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-harness-harnessremotemcpconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Headers](#cfn-bedrockagentcore-harness-harnessremotemcpconfig-headers)" : {{{{{Key}}: {{Value}}, ...}}},
   "[OutboundAuth](#cfn-bedrockagentcore-harness-harnessremotemcpconfig-outboundauth)" : {{HarnessRemoteMcpOutboundAuth}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-harness-harnessremotemcpconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Headers](#cfn-bedrockagentcore-harness-harnessremotemcpconfig-headers): {{
     {{Key}}: {{Value}}}}
   [OutboundAuth](#cfn-bedrockagentcore-harness-harnessremotemcpconfig-outboundauth): {{

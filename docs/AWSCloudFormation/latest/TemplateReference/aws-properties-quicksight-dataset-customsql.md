@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-customsql-syntax.json"></a>
 
-```
+```json
 {
   "[Columns](#cfn-quicksight-dataset-customsql-columns)" : {{[ InputColumn, ... ]}},
   "[DataSourceArn](#cfn-quicksight-dataset-customsql-datasourcearn)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-customsql-syntax.yaml"></a>
 
-```
+```yaml
   [Columns](#cfn-quicksight-dataset-customsql-columns): {{
     - InputColumn}}
   [DataSourceArn](#cfn-quicksight-dataset-customsql-datasourcearn): {{String}}

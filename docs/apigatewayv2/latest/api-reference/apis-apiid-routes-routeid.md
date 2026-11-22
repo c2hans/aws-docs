@@ -91,7 +91,7 @@ Updates a `Route`.
 #### PATCH schema
 <a name="apis-apiid-routes-routeid-request-body-patch-example"></a>
 
-```
+```json
 {
   "routeKey": "string",
   "authorizationType": enum,
@@ -117,7 +117,7 @@ Updates a `Route`.
 #### Route schema
 <a name="apis-apiid-routes-routeid-response-body-route-example"></a>
 
-```
+```json
 {
   "routeId": "string",
   "routeKey": "string",
@@ -142,7 +142,7 @@ Updates a `Route`.
 #### BadRequestException schema
 <a name="apis-apiid-routes-routeid-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -151,7 +151,7 @@ Updates a `Route`.
 #### NotFoundException schema
 <a name="apis-apiid-routes-routeid-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -161,7 +161,7 @@ Updates a `Route`.
 #### ConflictException schema
 <a name="apis-apiid-routes-routeid-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -170,7 +170,7 @@ Updates a `Route`.
 #### LimitExceededException schema
 <a name="apis-apiid-routes-routeid-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

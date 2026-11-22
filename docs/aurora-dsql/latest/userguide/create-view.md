@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/create-view
 ## Supported syntax
 <a name="create-view-supported-syntax"></a>
 
-```
+```sql
 CREATE [ OR REPLACE ] [ RECURSIVE ] VIEW name [ ( column_name [, ...] ) ]
     [ WITH ( view_option_name [= view_option_value] [, ... ] ) ]
     AS query
@@ -95,7 +95,7 @@ The user performing the insert, update, or delete on the view must have the corr
 
 To create a view consisting of all comedy films.
 
-```
+```sql
 CREATE VIEW comedies AS
     SELECT *
     FROM films
@@ -104,7 +104,7 @@ CREATE VIEW comedies AS
 
 Create a view with `LOCAL CHECK OPTION`.
 
-```
+```sql
 CREATE VIEW pg_comedies AS
     SELECT *
     FROM comedies
@@ -114,7 +114,7 @@ CREATE VIEW pg_comedies AS
 
 Create a recursive view.
 
-```
+```sql
 CREATE RECURSIVE VIEW public.nums_1_100 (n) AS
     VALUES (1)
 UNION ALL

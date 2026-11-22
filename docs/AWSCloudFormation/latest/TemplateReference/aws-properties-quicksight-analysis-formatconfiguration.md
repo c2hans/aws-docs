@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-formatconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DateTimeFormatConfiguration](#cfn-quicksight-analysis-formatconfiguration-datetimeformatconfiguration)" : {{DateTimeFormatConfiguration}},
   "[NumberFormatConfiguration](#cfn-quicksight-analysis-formatconfiguration-numberformatconfiguration)" : {{NumberFormatConfiguration}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-formatconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DateTimeFormatConfiguration](#cfn-quicksight-analysis-formatconfiguration-datetimeformatconfiguration): {{
     DateTimeFormatConfiguration}}
   [NumberFormatConfiguration](#cfn-quicksight-analysis-formatconfiguration-numberformatconfiguration): {{

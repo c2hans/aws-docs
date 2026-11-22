@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicrule-assetpropertytimestamp-syntax.json"></a>
 
-```
+```json
 {
   "[OffsetInNanos](#cfn-iot-topicrule-assetpropertytimestamp-offsetinnanos)" : {{String}},
   "[TimeInSeconds](#cfn-iot-topicrule-assetpropertytimestamp-timeinseconds)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicrule-assetpropertytimestamp-syntax.yaml"></a>
 
-```
+```yaml
   [OffsetInNanos](#cfn-iot-topicrule-assetpropertytimestamp-offsetinnanos): {{String}}
   [TimeInSeconds](#cfn-iot-topicrule-assetpropertytimestamp-timeinseconds): {{String}}
 ```

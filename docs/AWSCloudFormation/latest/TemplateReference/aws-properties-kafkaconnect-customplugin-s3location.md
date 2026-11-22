@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kafkaconnect-customplugin-s3location-syntax.json"></a>
 
-```
+```json
 {
   "[BucketArn](#cfn-kafkaconnect-customplugin-s3location-bucketarn)" : {{String}},
   "[FileKey](#cfn-kafkaconnect-customplugin-s3location-filekey)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kafkaconnect-customplugin-s3location-syntax.yaml"></a>
 
-```
+```yaml
   [BucketArn](#cfn-kafkaconnect-customplugin-s3location-bucketarn): {{String}}
   [FileKey](#cfn-kafkaconnect-customplugin-s3location-filekey): {{String}}
   [ObjectVersion](#cfn-kafkaconnect-customplugin-s3location-objectversion): {{String}}

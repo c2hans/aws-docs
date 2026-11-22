@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-customactionnavigationoperation-syntax.json"></a>
 
-```
+```json
 {
   "[LocalNavigationConfiguration](#cfn-quicksight-analysis-customactionnavigationoperation-localnavigationconfiguration)" : {{LocalNavigationConfiguration}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-customactionnavigationoperation-syntax.yaml"></a>
 
-```
+```yaml
   [LocalNavigationConfiguration](#cfn-quicksight-analysis-customactionnavigationoperation-localnavigationconfiguration): {{
     LocalNavigationConfiguration}}
 ```

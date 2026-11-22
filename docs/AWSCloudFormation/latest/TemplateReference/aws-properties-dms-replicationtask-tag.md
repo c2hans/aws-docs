@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dms-replicationtask-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-dms-replicationtask-tag-key)" : {{String}},
   "[Value](#cfn-dms-replicationtask-tag-value)" : {{String}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dms-replicationtask-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-dms-replicationtask-tag-key): {{String}}
   [Value](#cfn-dms-replicationtask-tag-value): {{String}}
 ```

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-projectmembership-member-syntax.json"></a>
 
-```
+```json
 {
   "[GroupIdentifier](#cfn-datazone-projectmembership-member-groupidentifier)" : {{String}},
   "[UserIdentifier](#cfn-datazone-projectmembership-member-useridentifier)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-projectmembership-member-syntax.yaml"></a>
 
-```
+```yaml
   [GroupIdentifier](#cfn-datazone-projectmembership-member-groupidentifier): {{String}}
   [UserIdentifier](#cfn-datazone-projectmembership-member-useridentifier): {{String}}
 ```

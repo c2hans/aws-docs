@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-cluster-encryptionintransit-syntax.json"></a>
 
-```
+```json
 {
   "[ClientBroker](#cfn-msk-cluster-encryptionintransit-clientbroker)" : {{String}},
   "[InCluster](#cfn-msk-cluster-encryptionintransit-incluster)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-cluster-encryptionintransit-syntax.yaml"></a>
 
-```
+```yaml
   [ClientBroker](#cfn-msk-cluster-encryptionintransit-clientbroker): {{String}}
   [InCluster](#cfn-msk-cluster-encryptionintransit-incluster): {{Boolean}}
 ```

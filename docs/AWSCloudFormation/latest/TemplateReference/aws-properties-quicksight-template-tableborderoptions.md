@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-tableborderoptions-syntax.json"></a>
 
-```
+```json
 {
   "[Color](#cfn-quicksight-template-tableborderoptions-color)" : {{String}},
   "[Style](#cfn-quicksight-template-tableborderoptions-style)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-tableborderoptions-syntax.yaml"></a>
 
-```
+```yaml
   [Color](#cfn-quicksight-template-tableborderoptions-color): {{String}}
   [Style](#cfn-quicksight-template-tableborderoptions-style): {{String}}
   [Thickness](#cfn-quicksight-template-tableborderoptions-thickness): {{Number}}

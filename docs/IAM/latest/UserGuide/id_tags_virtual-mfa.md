@@ -19,7 +19,7 @@ You must configure permissions to allow an IAM entity (user or role) to tag virt
 **To allow an IAM entity (user or role) to add, list, or remove a tag for a virtual MFA device**
 Add the following statement to the permissions policy for the IAM entity that needs to manage tags. Use your account number and replace {{<MFATokenID>}} with the name of the virtual MFA device whose tags need to be managed. To learn how to create a policy using this example JSON policy document, see [Creating policies using the JSON editor](access_policies_create-console.md#access_policies_create-json-editor).
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [
@@ -39,7 +39,7 @@ The `iam:TagMFADevice` action requires that you also include the `iam:ListMFADev
 
 To use this policy, replace {{<MFATokenID>}} with the name of the virtual MFA device whose tags need to be managed. To learn how to create a policy using this example JSON policy document, see [Creating policies using the JSON editor](access_policies_create-console.md#access_policies_create-json-editor).
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [

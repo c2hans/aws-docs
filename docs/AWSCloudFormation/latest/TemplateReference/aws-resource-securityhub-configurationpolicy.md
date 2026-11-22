@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-securityhub-configurationpolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SecurityHub::ConfigurationPolicy",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-securityhub-configurationpolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SecurityHub::ConfigurationPolicy
 Properties:
   [ConfigurationPolicy](#cfn-securityhub-configurationpolicy-configurationpolicy): {{
@@ -120,7 +120,7 @@ The following example creates a configuration policy with the specified settings
 #### JSON
 <a name="aws-resource-securityhub-configurationpolicy--examples--Creating_a_central_configuration_policy--json"></a>
 
-```
+```json
 {
 	"Description": "Example template to create a SecurityHub configuration policy",
 	"Resources": {
@@ -172,7 +172,7 @@ The following example creates a configuration policy with the specified settings
 #### YAML
 <a name="aws-resource-securityhub-configurationpolicy--examples--Creating_a_central_configuration_policy--yaml"></a>
 
-```
+```yaml
 Description: Example template to create a Security Hub configuration policy
 Resources:
   SecurityHubConfigurationPolicy:

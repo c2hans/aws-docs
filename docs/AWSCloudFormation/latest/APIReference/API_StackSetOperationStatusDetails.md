@@ -15,6 +15,23 @@ Type: Integer
 Valid Range: Minimum value of 0.
 Required: No
 
+ ** Stages **
+The detailed progress information for the individual stages of the StackSet operation: the role provisioning stage and the stack instances deployment stage.
+Type: [Stages](API_Stages.md) object
+Required: No
+
+ ** TotalAccountsCount **
+The total number of accounts targeted by this StackSet operation. Self-managed operations and service-managed operations that do not provision roles also report this value when it is known. AWS CloudFormation populates this value after it resolves the target accounts. Until then, this field is not present.
+Type: Integer
+Valid Range: Minimum value of 0.
+Required: No
+
+ ** TotalStackInstancesCount **
+The total number of stack instances targeted by this StackSet operation. AWS CloudFormation populates this value after it resolves the target stack instances. Until then, this field is not present.
+Type: Integer
+Valid Range: Minimum value of 0.
+Required: No
+
 ## See Also
 <a name="API_StackSetOperationStatusDetails_SeeAlso"></a>
 

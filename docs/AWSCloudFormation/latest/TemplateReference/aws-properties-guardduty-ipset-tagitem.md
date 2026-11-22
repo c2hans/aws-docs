@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-guardduty-ipset-tagitem-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-guardduty-ipset-tagitem-key)" : {{String}},
   "[Value](#cfn-guardduty-ipset-tagitem-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-guardduty-ipset-tagitem-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-guardduty-ipset-tagitem-key): {{String}}
   [Value](#cfn-guardduty-ipset-tagitem-value): {{String}}
 ```

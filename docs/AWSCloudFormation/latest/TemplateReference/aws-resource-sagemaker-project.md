@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sagemaker-project-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SageMaker::Project",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sagemaker-project-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SageMaker::Project
 Properties:
   [ProjectDescription](#cfn-sagemaker-project-projectdescription): {{String}}
@@ -139,7 +139,7 @@ The following example creates a SageMaker Project.
 #### JSON
 <a name="aws-resource-sagemaker-project--examples--SageMaker_Project_Example--json"></a>
 
-```
+```json
 {
    "Description": "AWS SageMaker Project basic template",
    "Resources": {
@@ -161,7 +161,7 @@ The following example creates a SageMaker Project.
 #### YAML
 <a name="aws-resource-sagemaker-project--examples--SageMaker_Project_Example--yaml"></a>
 
-```
+```yaml
 ---
 Description: AWS SageMaker Project basic template
 

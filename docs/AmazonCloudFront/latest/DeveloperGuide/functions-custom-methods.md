@@ -13,7 +13,7 @@ To use this module in the function code, make sure that you have [associated a k
 
 Next, include the following statements in the first lines of the function code:
 
-```
+```javascript
 import cf from 'cloudfront';
 const kvsHandle = cf.kvs();
 ```

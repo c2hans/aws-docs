@@ -47,14 +47,14 @@ For the following steps, use an account that has `rds_superuser` privileges.
 
 1. Install the `pg_transport` extension as follows:
 
-   ```
+   ```sql
    postgres=> CREATE EXTENSION pg_transport;
    CREATE EXTENSION
    ```
 
 1. Connect to your RDS for PostgreSQL destination DB instance. Remove any extraneous extensions, and then install the `pg_transport` extension.
 
-   ```
+   ```sql
    postgres=> CREATE EXTENSION pg_transport;
    CREATE EXTENSION
    ```

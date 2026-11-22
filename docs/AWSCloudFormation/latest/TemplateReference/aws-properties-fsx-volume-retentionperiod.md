@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-volume-retentionperiod-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-fsx-volume-retentionperiod-type)" : {{String}},
   "[Value](#cfn-fsx-volume-retentionperiod-value)" : {{Integer}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-volume-retentionperiod-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-fsx-volume-retentionperiod-type): {{String}}
   [Value](#cfn-fsx-volume-retentionperiod-value): {{Integer}}
 ```

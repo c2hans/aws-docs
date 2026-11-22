@@ -89,7 +89,7 @@ You can use the AWS CLI to have an agent manage AWS resources on your behalf.
 
 After you install the AWS CLI, use the following command to sign in programmatically:
 
-```
+```bash
 aws login
 ```
 
@@ -97,7 +97,7 @@ This automatically rotates your credentials every 15 minutes, keeping your sessi
 
 Use the following command to verify your credentials are working:
 
-```
+```bash
 aws sts get-caller-identity
 ```
 

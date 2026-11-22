@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchservice-domain-nodeoption-syntax.json"></a>
 
-```
+```json
 {
   "[NodeConfig](#cfn-opensearchservice-domain-nodeoption-nodeconfig)" : {{NodeConfig}},
   "[NodeType](#cfn-opensearchservice-domain-nodeoption-nodetype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchservice-domain-nodeoption-syntax.yaml"></a>
 
-```
+```yaml
   [NodeConfig](#cfn-opensearchservice-domain-nodeoption-nodeconfig): {{
     NodeConfig}}
   [NodeType](#cfn-opensearchservice-domain-nodeoption-nodetype): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-emailidentity-dkimattributes-syntax.json"></a>
 
-```
+```json
 {
   "[SigningEnabled](#cfn-ses-emailidentity-dkimattributes-signingenabled)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-emailidentity-dkimattributes-syntax.yaml"></a>
 
-```
+```yaml
   [SigningEnabled](#cfn-ses-emailidentity-dkimattributes-signingenabled): {{Boolean}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-receiptrule-snsaction-syntax.json"></a>
 
-```
+```json
 {
   "[Encoding](#cfn-ses-receiptrule-snsaction-encoding)" : {{String}},
   "[TopicArn](#cfn-ses-receiptrule-snsaction-topicarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-receiptrule-snsaction-syntax.yaml"></a>
 
-```
+```yaml
   [Encoding](#cfn-ses-receiptrule-snsaction-encoding): {{String}}
   [TopicArn](#cfn-ses-receiptrule-snsaction-topicarn): {{String}}
 ```

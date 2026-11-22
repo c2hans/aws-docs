@@ -54,7 +54,7 @@ This example policy enables console access and allows connection creation and ma
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -86,7 +86,7 @@ This example policy enables creating an App Runner service but denies using a co
 
 ****
 
-```
+```json
   { "Version":"2012-10-17",
   "Statement":
      [ { "Sid": "AllowCreateAppRunnerServiceWithNonProdConnections",
@@ -111,7 +111,7 @@ This example policy enables updating an App Runner service named `preprod` only 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -142,7 +142,7 @@ You can use conditions in your identity-based policy to control access to App Ru
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

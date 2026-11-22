@@ -61,7 +61,7 @@ To install the AWS CLI, see [Installing the AWS CLI](https://docs.aws.amazon.com
 
 The following CLI example shows you how to add tags to a vector index by using the AWS CLI. To use the command replace the {{user input placeholders}} with your own information.
 
-```
+```bash
 aws s3vectors tag-resource \
 --resource-arn arn:aws:s3vectors:us-east-1:{{012345678900}}:bucket/{{acc-bucket}}/index/{{accounts-index}} \
 --tags {{Stage}}={{Prod}},{{CostCenter}}={{Marketing}}

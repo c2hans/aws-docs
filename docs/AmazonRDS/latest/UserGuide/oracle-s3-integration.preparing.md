@@ -260,7 +260,7 @@ For convenience, the **Edit bucket policy** page displays the **Bucket ARN **(Am
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

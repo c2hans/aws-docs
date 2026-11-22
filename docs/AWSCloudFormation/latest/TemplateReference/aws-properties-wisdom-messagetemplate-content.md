@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-messagetemplate-content-syntax.json"></a>
 
-```
+```json
 {
   "[EmailMessageTemplateContent](#cfn-wisdom-messagetemplate-content-emailmessagetemplatecontent)" : {{EmailMessageTemplateContent}},
   "[SmsMessageTemplateContent](#cfn-wisdom-messagetemplate-content-smsmessagetemplatecontent)" : {{SmsMessageTemplateContent}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-messagetemplate-content-syntax.yaml"></a>
 
-```
+```yaml
   [EmailMessageTemplateContent](#cfn-wisdom-messagetemplate-content-emailmessagetemplatecontent): {{
     EmailMessageTemplateContent}}
   [SmsMessageTemplateContent](#cfn-wisdom-messagetemplate-content-smsmessagetemplatecontent): {{

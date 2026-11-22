@@ -75,7 +75,7 @@ Creates an `Integration`.
 #### POST schema
 <a name="apis-apiid-integrations-request-body-post-example"></a>
 
-```
+```json
 {
   "description": "string",
   "integrationType": enum,
@@ -108,7 +108,7 @@ Creates an `Integration`.
 #### Integrations schema
 <a name="apis-apiid-integrations-response-body-integrations-example"></a>
 
-```
+```json
 {
   "items": [
     {
@@ -146,7 +146,7 @@ Creates an `Integration`.
 #### Integration schema
 <a name="apis-apiid-integrations-response-body-integration-example"></a>
 
-```
+```json
 {
   "integrationId": "string",
   "description": "string",
@@ -179,7 +179,7 @@ Creates an `Integration`.
 #### BadRequestException schema
 <a name="apis-apiid-integrations-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -188,7 +188,7 @@ Creates an `Integration`.
 #### NotFoundException schema
 <a name="apis-apiid-integrations-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -198,7 +198,7 @@ Creates an `Integration`.
 #### ConflictException schema
 <a name="apis-apiid-integrations-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -207,7 +207,7 @@ Creates an `Integration`.
 #### LimitExceededException schema
 <a name="apis-apiid-integrations-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

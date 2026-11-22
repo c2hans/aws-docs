@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-sessionattribute-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-lex-bot-sessionattribute-key)" : {{String}},
   "[Value](#cfn-lex-bot-sessionattribute-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-sessionattribute-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-lex-bot-sessionattribute-key): {{String}}
   [Value](#cfn-lex-bot-sessionattribute-value): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotsitewise-gateway-gatewaycapabilitysummary-syntax.json"></a>
 
-```
+```json
 {
   "[CapabilityConfiguration](#cfn-iotsitewise-gateway-gatewaycapabilitysummary-capabilityconfiguration)" : {{String}},
   "[CapabilityNamespace](#cfn-iotsitewise-gateway-gatewaycapabilitysummary-capabilitynamespace)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotsitewise-gateway-gatewaycapabilitysummary-syntax.yaml"></a>
 
-```
+```yaml
   [CapabilityConfiguration](#cfn-iotsitewise-gateway-gatewaycapabilitysummary-capabilityconfiguration): {{String}}
   [CapabilityNamespace](#cfn-iotsitewise-gateway-gatewaycapabilitysummary-capabilitynamespace): {{String}}
 ```

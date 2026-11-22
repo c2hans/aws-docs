@@ -20,7 +20,7 @@ The following examples show CloudTrail log entries that demonstrate the project 
 
 The following example show what might appear in the CloudTrail log following a successful `DeleteProject` action.
 
-```
+```json
 {
   "eventVersion": "1.05",
   "userIdentity": {
@@ -69,7 +69,7 @@ The following example show what might appear in the CloudTrail log following a s
 
 The following example shows what might appear in the CloudTrail log following a failed `DeleteProject` action due to an error occurring. In this case, the error is an authorization error, where the user does not have permission to delete the specified project.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {
@@ -114,7 +114,7 @@ The following example shows what might appear in the CloudTrail log following a 
 
 The following example shows what might appear in the CloudTrail log following a failed `DeleteProject` action due to an error occurring. In this case, the error is a conflict exception, where sensors are still present when Amazon Monitron attempts to delete a project.
 
-```
+```json
 {
   "eventVersion": "1.05",
   "userIdentity": {

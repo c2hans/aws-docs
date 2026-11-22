@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-shield-protection-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Shield::Protection",
   "Properties" : {
@@ -50,7 +50,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-shield-protection-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Shield::Protection
 Properties:
   [ApplicationLayerAutomaticResponseConfiguration](#cfn-shield-protection-applicationlayerautomaticresponseconfiguration): {{
@@ -149,7 +149,7 @@ The following shows an example protection configuration for an Amazon EC2 Elasti
 #### YAML
 <a name="aws-resource-shield-protection--examples--Create_a_network_layer_protection--yaml"></a>
 
-```
+```yaml
 Resources:
   EIP:
     Type: AWS::EC2::EIP
@@ -163,7 +163,7 @@ Resources:
 #### JSON
 <a name="aws-resource-shield-protection--examples--Create_a_network_layer_protection--json"></a>
 
-```
+```json
 {
     "Resources": {
         "EIP": {
@@ -190,7 +190,7 @@ The following shows an example layer 7 protection configuration for an applicati
 #### YAML
 <a name="aws-resource-shield-protection--examples--Create_an_application_layer_protection--yaml"></a>
 
-```
+```yaml
 Resources:
   # Create L7 Protection
   Protection:
@@ -211,7 +211,7 @@ Resources:
 #### JSON
 <a name="aws-resource-shield-protection--examples--Create_an_application_layer_protection--json"></a>
 
-```
+```json
 {
     "Resources": {
         "Protection": {

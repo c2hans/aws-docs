@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-connectiontype-betweenconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[HighBoundKey](#cfn-glue-connectiontype-betweenconfiguration-highboundkey)" : {{String}},
   "[LowBoundKey](#cfn-glue-connectiontype-betweenconfiguration-lowboundkey)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-connectiontype-betweenconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [HighBoundKey](#cfn-glue-connectiontype-betweenconfiguration-highboundkey): {{String}}
   [LowBoundKey](#cfn-glue-connectiontype-betweenconfiguration-lowboundkey): {{String}}
   [Template](#cfn-glue-connectiontype-betweenconfiguration-template): {{String}}

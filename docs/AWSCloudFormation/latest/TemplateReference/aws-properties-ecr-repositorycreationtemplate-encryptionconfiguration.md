@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecr-repositorycreationtemplate-encryptionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EncryptionType](#cfn-ecr-repositorycreationtemplate-encryptionconfiguration-encryptiontype)" : {{String}},
   "[KmsKey](#cfn-ecr-repositorycreationtemplate-encryptionconfiguration-kmskey)" : {{String}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecr-repositorycreationtemplate-encryptionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EncryptionType](#cfn-ecr-repositorycreationtemplate-encryptionconfiguration-encryptiontype): {{String}}
   [KmsKey](#cfn-ecr-repositorycreationtemplate-encryptionconfiguration-kmskey): {{String}}
 ```

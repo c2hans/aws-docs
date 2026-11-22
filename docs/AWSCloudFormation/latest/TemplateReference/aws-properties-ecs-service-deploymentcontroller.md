@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-deploymentcontroller-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-ecs-service-deploymentcontroller-type)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-deploymentcontroller-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-ecs-service-deploymentcontroller-type): {{String}}
 ```
 

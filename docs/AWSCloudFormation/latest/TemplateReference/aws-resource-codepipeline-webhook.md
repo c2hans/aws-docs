@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-codepipeline-webhook-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CodePipeline::Webhook",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-codepipeline-webhook-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CodePipeline::Webhook
 Properties:
   [Authentication](#cfn-codepipeline-webhook-authentication): {{String}}
@@ -176,7 +176,7 @@ When passing secret parameters, do not enter the value directly into the templat
 #### JSON
 <a name="aws-resource-codepipeline-webhook--examples--Webhook_Resource_Configuration--json"></a>
 
-```
+```json
 {
     "Webhook": {
         "Type": "AWS::CodePipeline::Webhook",
@@ -211,7 +211,7 @@ When passing secret parameters, do not enter the value directly into the templat
 #### YAML
 <a name="aws-resource-codepipeline-webhook--examples--Webhook_Resource_Configuration--yaml"></a>
 
-```
+```yaml
 Webhook:
   Type: AWS::CodePipeline::Webhook
   Properties:

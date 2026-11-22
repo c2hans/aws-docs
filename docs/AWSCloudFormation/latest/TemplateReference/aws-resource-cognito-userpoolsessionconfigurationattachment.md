@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cognito-userpoolsessionconfigurationattachment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Cognito::UserPoolSessionConfigurationAttachment",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cognito-userpoolsessionconfigurationattachment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Cognito::UserPoolSessionConfigurationAttachment
 Properties:
   [TokenSession](#cfn-cognito-userpoolsessionconfigurationattachment-tokensession): {{

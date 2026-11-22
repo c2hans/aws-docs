@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-osis-pipeline-vpcoptions-syntax.json"></a>
 
-```
+```json
 {
   "[SecurityGroupIds](#cfn-osis-pipeline-vpcoptions-securitygroupids)" : {{[ String, ... ]}},
   "[SubnetIds](#cfn-osis-pipeline-vpcoptions-subnetids)" : {{[ String, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-osis-pipeline-vpcoptions-syntax.yaml"></a>
 
-```
+```yaml
   [SecurityGroupIds](#cfn-osis-pipeline-vpcoptions-securitygroupids): {{
     - String}}
   [SubnetIds](#cfn-osis-pipeline-vpcoptions-subnetids): {{

@@ -402,6 +402,13 @@ The weekly time range during which system maintenance can occur, in Universal Co
 Type: String
 Required: No
 
+ ** PrimaryEndpoint **
+Specifies the connection endpoint for the DB instance that currently has the primary role.
+This endpoint points to the new primary DB instance after a switchover, so you don't have to connect to a different DNS name.
+A read replica reports the same primary endpoint as the DB instance it replicates from. When you promote a read replica, it reports its own primary endpoint.
+Type: [PrimaryEndpoint](API_PrimaryEndpoint.md) object
+Required: No
+
  ** ProcessorFeatures.ProcessorFeature.N **
 The number of CPU cores and the number of threads per core for the DB instance class of the DB instance.
 Type: Array of [ProcessorFeature](API_ProcessorFeature.md) objects
@@ -528,6 +535,11 @@ This data type represents the order in which the instances are upgraded.
 + [last] - Usually reserved for production environments.
 Type: String
 Valid Values: `first | second | last`
+Required: No
+
+ ** VPCNetworkingEnabled **
+Indicates whether the DB instance uses VPC networking. For a DB instance in an Aurora PostgreSQL DB cluster without VPC networking, the value is `false`.
+Type: Boolean
 Required: No
 
  ** VpcSecurityGroups.VpcSecurityGroupMembership.N **

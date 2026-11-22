@@ -20,7 +20,7 @@ Reason why drift was ignored for the attribute, can have 3 possible values:
 +  `MANAGED_BY_AWS` – Property is managed by an AWS service and is expected to be dynamically modified.
 +  `SENSITIVE_PROPERTY` – Property has a sensitive value, such as an AWS Secrets Manager value.
 Type: String
-Valid Values: `MANAGED_BY_AWS | WRITE_ONLY_PROPERTY`
+Valid Values: `MANAGED_BY_AWS | WRITE_ONLY_PROPERTY | SENSITIVE_PROPERTY`
 Required: No
 
 ## See Also

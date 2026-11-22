@@ -42,7 +42,7 @@ To grant maintenance access on SSE-KMS encrypted tables, you can use the followi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -83,7 +83,7 @@ You can grant KMS key access through an IAM policy attached to your role or thro
 
 Attach this inline policy to the IAM role you use for querying to allow KMS key access. Replace the KMS key ARN with your own.
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -105,7 +105,7 @@ Attach this inline policy to the IAM role you use for querying to allow KMS key 
 
 Alternatively, attach this statement to your KMS key policy to allow the specified IAM role to use the key. Replace the role ARN with the IAM role you use for querying.
 
-```
+```json
 {
     "Sid": "Allow use of the key",
     "Effect": "Allow",
@@ -131,7 +131,7 @@ If you have opted in to AWS Lake Formation for access control on your S3 Tables 
 
 The following KMS key policy example grants the Lake Formation service role permission to use a specific KMS key in your account for encryption operations. Replace the placeholder values with your own.
 
-```
+```json
 {
   "Sid": "AllowTableRoleAccess",
   "Effect": "Allow",
@@ -156,7 +156,7 @@ To allow Amazon S3 to update SSE-KMS encrypted metadata tables, and perform main
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

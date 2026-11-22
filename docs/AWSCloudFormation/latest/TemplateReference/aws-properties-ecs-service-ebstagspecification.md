@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-ebstagspecification-syntax.json"></a>
 
-```
+```json
 {
   "[PropagateTags](#cfn-ecs-service-ebstagspecification-propagatetags)" : {{String}},
   "[ResourceType](#cfn-ecs-service-ebstagspecification-resourcetype)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-ebstagspecification-syntax.yaml"></a>
 
-```
+```yaml
   [PropagateTags](#cfn-ecs-service-ebstagspecification-propagatetags): {{String}}
   [ResourceType](#cfn-ecs-service-ebstagspecification-resourcetype): {{String}}
   [Tags](#cfn-ecs-service-ebstagspecification-tags): {{

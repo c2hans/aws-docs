@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-glue-userdefinedfunction-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Glue::UserDefinedFunction",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-glue-userdefinedfunction-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Glue::UserDefinedFunction
 Properties:
   [ClassName](#cfn-glue-userdefinedfunction-classname): {{String}}

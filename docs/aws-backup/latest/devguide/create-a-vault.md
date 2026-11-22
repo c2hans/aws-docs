@@ -23,7 +23,7 @@ You must have the following permissions to create a backup vault using AWS Backu
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -94,7 +94,7 @@ You can now edit a backup rule in one of your backup plans to store backups crea
 
 The following AWS Command Line Interface command creates a backup vault:
 
-```
+```sh
 aws backup create-backup-vault --backup-vault-name {{test-vault}}
 ```
 

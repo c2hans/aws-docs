@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-vpcpeeringconnection-vpcpeeringconnectionoptions-syntax.json"></a>
 
-```
+```json
 {
   "[AllowDnsResolutionFromRemoteVpc](#cfn-ec2-vpcpeeringconnection-vpcpeeringconnectionoptions-allowdnsresolutionfromremotevpc)" : {{Boolean}},
   "[AllowMultipathResilience](#cfn-ec2-vpcpeeringconnection-vpcpeeringconnectionoptions-allowmultipathresilience)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-vpcpeeringconnection-vpcpeeringconnectionoptions-syntax.yaml"></a>
 
-```
+```yaml
   [AllowDnsResolutionFromRemoteVpc](#cfn-ec2-vpcpeeringconnection-vpcpeeringconnectionoptions-allowdnsresolutionfromremotevpc): {{Boolean}}
   [AllowMultipathResilience](#cfn-ec2-vpcpeeringconnection-vpcpeeringconnectionoptions-allowmultipathresilience): {{Boolean}}
   [MultipathResilienceMode](#cfn-ec2-vpcpeeringconnection-vpcpeeringconnectionoptions-multipathresiliencemode): {{String}}

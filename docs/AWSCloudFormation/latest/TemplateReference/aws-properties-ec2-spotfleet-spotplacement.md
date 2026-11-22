@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-spotfleet-spotplacement-syntax.json"></a>
 
-```
+```json
 {
   "[AvailabilityZone](#cfn-ec2-spotfleet-spotplacement-availabilityzone)" : {{String}},
   "[AvailabilityZoneId](#cfn-ec2-spotfleet-spotplacement-availabilityzoneid)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-spotfleet-spotplacement-syntax.yaml"></a>
 
-```
+```yaml
   [AvailabilityZone](#cfn-ec2-spotfleet-spotplacement-availabilityzone): {{String}}
   [AvailabilityZoneId](#cfn-ec2-spotfleet-spotplacement-availabilityzoneid): {{String}}
   [GroupName](#cfn-ec2-spotfleet-spotplacement-groupname): {{String}}

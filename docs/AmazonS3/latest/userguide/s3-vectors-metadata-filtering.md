@@ -61,78 +61,78 @@ Typical filtered queries are well within 100 constraints. For guidance on writin
 
 **Simple equality**
 
-```
+```json
 {"genre": "documentary"}
 ```
 This filter matches vectors where the genre metadata key equals "documentary". When you don't specify an operator, S3 Vectors automatically uses the $eq operator.
 
 **Explicit equality**
 
-```
+```json
 // Example: Exact match
 {"genre": {"$eq": "documentary"}}
 ```
 
-```
+```json
 // Example: Not equal to
 {"genre": {"$ne": "drama"}}
 ```
 
 **Numeric comparison**
 
-```
+```json
 {"year": {"$gt": 2019}}
 ```
 
-```
+```json
 {"year": {"$gte": 2020}}
 ```
 
-```
+```json
 {"year": {"$lt": 2020}}
 ```
 
-```
+```json
 {"year": {"$lte": 2020}}
 ```
 
 **Prefix match**
 
-```
+```json
 {"s3_path": {"$startsWith": "/marketing/"}}
 ```
 This filter matches vectors whose s3\_path metadata begins with "/marketing/". Useful for hierarchical paths and URL prefixes.
 
 **Array operations**
 
-```
+```json
 {"genre": {"$in": ["comedy", "documentary"]}}
 ```
 
-```
+```json
 {"genre": {"$nin": ["comedy", "documentary"]}}
 ```
 
 **Existence check**
 
-```
+```json
 {"genre": {"$exists": true}}
 ```
 The `$exists` filter matches vectors that have a "genre" metadata key, regardless of the value that's stored for that metadata key.
 
 **Logical operations**
 
-```
+```json
 {"$and": [{"genre": {"$eq": "drama"}}, {"year": {"$gte": 2020}}]}
 ```
 
-```
+```json
 {"$or": [{"genre": {"$eq": "drama"}}, {"year": {"$gte": 2020}}]}
 ```
 
 **Price range (Multiple conditions on the same field)**
 
-```
+```json
 {"price": {"$gte": 10, "$lte": 50}}
 ```
 

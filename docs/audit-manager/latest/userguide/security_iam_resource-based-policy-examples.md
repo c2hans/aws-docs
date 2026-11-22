@@ -24,7 +24,7 @@ Replace the {{placeholder text}} with your own information, as follows:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -76,7 +76,7 @@ If your S3 bucket has the default encryption set to `SSE-KMS`, grant access to C
 
 ****
 
-```
+```json
 {
  "Version":"2012-10-17",
     "Statement": [

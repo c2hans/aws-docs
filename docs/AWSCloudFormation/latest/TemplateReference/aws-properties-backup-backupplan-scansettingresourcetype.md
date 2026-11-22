@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-backup-backupplan-scansettingresourcetype-syntax.json"></a>
 
-```
+```json
 {
   "[MalwareScanner](#cfn-backup-backupplan-scansettingresourcetype-malwarescanner)" : {{String}},
   "[ResourceTypes](#cfn-backup-backupplan-scansettingresourcetype-resourcetypes)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-backup-backupplan-scansettingresourcetype-syntax.yaml"></a>
 
-```
+```yaml
   [MalwareScanner](#cfn-backup-backupplan-scansettingresourcetype-malwarescanner): {{String}}
   [ResourceTypes](#cfn-backup-backupplan-scansettingresourcetype-resourcetypes): {{
     - String}}

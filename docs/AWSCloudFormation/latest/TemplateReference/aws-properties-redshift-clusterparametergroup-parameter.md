@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-redshift-clusterparametergroup-parameter-syntax.json"></a>
 
-```
+```json
 {
   "[ParameterName](#cfn-redshift-clusterparametergroup-parameter-parametername)" : {{String}},
   "[ParameterValue](#cfn-redshift-clusterparametergroup-parameter-parametervalue)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-redshift-clusterparametergroup-parameter-syntax.yaml"></a>
 
-```
+```yaml
   [ParameterName](#cfn-redshift-clusterparametergroup-parameter-parametername): {{String}}
   [ParameterValue](#cfn-redshift-clusterparametergroup-parameter-parametervalue): {{String}}
 ```

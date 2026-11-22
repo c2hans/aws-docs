@@ -72,7 +72,7 @@ The following procedure describes how to use the AWS CLI (on Linux or Windows) o
 ------
 #### [ PowerShell ]
 
-   ```
+   ```powershell
    New-APPCApplication `
      -Name {{Name_for_the_application}} `
      -Description {{Description_of_the_application}} `

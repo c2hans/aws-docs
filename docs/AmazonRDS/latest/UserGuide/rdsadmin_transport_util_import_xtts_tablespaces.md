@@ -9,7 +9,7 @@ Use the procedure `rdsadmin.rdsadmin_transport_util.import_xtts_tablespaces` to 
 ## Syntax
 <a name="rdsadmin_transport_util_import_xtts_tablespaces-syntax"></a>
 
-```
+```sql
 FUNCTION import_xtts_tablespaces(
     p_tablespace_list IN CLOB,
     p_directory_name  IN VARCHAR2,

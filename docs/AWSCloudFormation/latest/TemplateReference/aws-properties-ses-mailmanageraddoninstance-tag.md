@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-mailmanageraddoninstance-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-ses-mailmanageraddoninstance-tag-key)" : {{String}},
   "[Value](#cfn-ses-mailmanageraddoninstance-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-mailmanageraddoninstance-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-ses-mailmanageraddoninstance-tag-key): {{String}}
   [Value](#cfn-ses-mailmanageraddoninstance-tag-value): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-athena-namedquery-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Athena::NamedQuery",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-athena-namedquery-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Athena::NamedQuery
 Properties:
   [Database](#cfn-athena-namedquery-database): {{String}}
@@ -120,7 +120,7 @@ The following example creates a named query.
 #### JSON
 <a name="aws-resource-athena-namedquery--examples--Create_a_named_query--json"></a>
 
-```
+```json
 {
     "Resources": {
         "AthenaNamedQuery": {
@@ -139,7 +139,7 @@ The following example creates a named query.
 #### YAML
 <a name="aws-resource-athena-namedquery--examples--Create_a_named_query--yaml"></a>
 
-```
+```yaml
 Resources:
   AthenaNamedQuery:
     Type: AWS::Athena::NamedQuery

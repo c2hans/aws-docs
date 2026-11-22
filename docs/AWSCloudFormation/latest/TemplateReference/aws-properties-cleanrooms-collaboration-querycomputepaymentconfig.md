@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-collaboration-querycomputepaymentconfig-syntax.json"></a>
 
-```
+```json
 {
   "[IsResponsible](#cfn-cleanrooms-collaboration-querycomputepaymentconfig-isresponsible)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-collaboration-querycomputepaymentconfig-syntax.yaml"></a>
 
-```
+```yaml
   [IsResponsible](#cfn-cleanrooms-collaboration-querycomputepaymentconfig-isresponsible): {{Boolean}}
 ```
 

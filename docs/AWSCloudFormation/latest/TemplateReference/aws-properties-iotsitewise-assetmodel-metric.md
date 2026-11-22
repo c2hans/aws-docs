@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotsitewise-assetmodel-metric-syntax.json"></a>
 
-```
+```json
 {
   "[Expression](#cfn-iotsitewise-assetmodel-metric-expression)" : {{String}},
   "[Variables](#cfn-iotsitewise-assetmodel-metric-variables)" : {{[ ExpressionVariable, ... ]}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotsitewise-assetmodel-metric-syntax.yaml"></a>
 
-```
+```yaml
   [Expression](#cfn-iotsitewise-assetmodel-metric-expression): {{String}}
   [Variables](#cfn-iotsitewise-assetmodel-metric-variables): {{
     - ExpressionVariable}}

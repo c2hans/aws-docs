@@ -28,7 +28,7 @@ For more information, see [Tagging IAM resources](https://docs.aws.amazon.com/IA
 **Tools for PowerShell V4**
 **Example 1: This example removes the tag from the role named "MyRoleName" with tag key as "abac". To remove multiple tags, provide a comma separted tag keys list.**
 
-```
+```powershell
 Remove-IAMRoleTag -RoleName MyRoleName -TagKey "abac","xyzw"
 ```
 +  For API details, see [UntagRole](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -36,7 +36,7 @@ Remove-IAMRoleTag -RoleName MyRoleName -TagKey "abac","xyzw"
 **Tools for PowerShell V5**
 **Example 1: This example removes the tag from the role named "MyRoleName" with tag key as "abac". To remove multiple tags, provide a comma separted tag keys list.**
 
-```
+```powershell
 Remove-IAMRoleTag -RoleName MyRoleName -TagKey "abac","xyzw"
 ```
 +  For API details, see [UntagRole](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

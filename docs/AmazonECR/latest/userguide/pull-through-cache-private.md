@@ -28,7 +28,7 @@ The following example shows a permissions policy that grants an IAM role permiss
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -64,7 +64,7 @@ The following example shows a trust policy that identifies Amazon ECR pull throu
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -89,7 +89,7 @@ The upstream Amazon ECR registry owner must also add a registry policy or a repo
 **Note**
 The following resource policy is required only for **cross-account** ECR to ECR pull through cache configurations. For **same-account, cross-region** pull through cache, you only need the IAM role policy and trust policy shown in the previous sections. The root account principal permission is not required when the upstream and downstream registries are in the same AWS account.
 
-```
+```JSON
 {
     "Effect": "Allow",
     "Principal": {

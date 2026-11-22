@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudformation-hookversion-loggingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[LogGroupName](#cfn-cloudformation-hookversion-loggingconfig-loggroupname)" : {{String}},
   "[LogRoleArn](#cfn-cloudformation-hookversion-loggingconfig-logrolearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudformation-hookversion-loggingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [LogGroupName](#cfn-cloudformation-hookversion-loggingconfig-loggroupname): {{String}}
   [LogRoleArn](#cfn-cloudformation-hookversion-loggingconfig-logrolearn): {{String}}
 ```

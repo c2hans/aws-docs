@@ -57,7 +57,7 @@ Amazon RDS creates the BYOM engine version automatically and launches your insta
 
 Use the [create-db-instance](https://docs.aws.amazon.com/cli/latest/reference/rds/create-db-instance.html) command with `--license-model bring-your-own-media`.
 
-```
+```bash
 aws rds create-db-instance \
     --engine sqlserver-ee \
     --engine-version 17.00.5005.3.v1 \
@@ -76,7 +76,7 @@ This example uses `--manage-master-user-password` to store the master user passw
 
 To set your own password instead, replace `--manage-master-user-password` with the following:
 
-```
+```bash
 --master-user-password {{password}}
 ```
 
@@ -85,7 +85,7 @@ To set your own password instead, replace `--manage-master-user-password` with t
 
 Use the [New-RDSDBInstance](https://docs.aws.amazon.com/powershell/latest/reference/items/New-RDSDBInstance.html) cmdlet with `-LicenseModel bring-your-own-media`.
 
-```
+```powershell
 New-RDSDBInstance `
     -Engine sqlserver-ee `
     -EngineVersion 17.00.5005.3.v1 `
@@ -104,7 +104,7 @@ This example uses `-ManageMasterUserPassword $true` to store the master user pas
 
 To set your own password instead, replace `-ManageMasterUserPassword $true` with the following:
 
-```
+```powershell
 -MasterUserPassword {{password}}
 ```
 
@@ -132,7 +132,7 @@ Confirm that **License model** shows **Bring Your Own Media** and **Engine versi
 
 Use the [describe-db-instances](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-instances.html) command.
 
-```
+```bash
 aws rds describe-db-instances \
     --db-instance-identifier {{my-byom-instance}} \
     --region {{us-west-2}}
@@ -155,7 +155,7 @@ The output looks like the following.
 
 Use the [Get-RDSDBInstance](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-RDSDBInstance.html) cmdlet.
 
-```
+```powershell
 Get-RDSDBInstance `
     -DBInstanceIdentifier {{my-byom-instance}} `
     -Region {{us-west-2}}

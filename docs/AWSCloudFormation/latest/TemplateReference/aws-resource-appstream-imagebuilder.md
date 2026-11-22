@@ -18,11 +18,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-appstream-imagebuilder-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppStream::ImageBuilder",
   "Properties" : {
       "[AccessEndpoints](#cfn-appstream-imagebuilder-accessendpoints)" : {{[ AccessEndpoint, ... ]}},
+      "[AgentAccessConfig](#cfn-appstream-imagebuilder-agentaccessconfig)" : {{AgentAccessConfig}},
       "[AppstreamAgentVersion](#cfn-appstream-imagebuilder-appstreamagentversion)" : {{String}},
       "[Description](#cfn-appstream-imagebuilder-description)" : {{String}},
       "[DisableIMDSV1](#cfn-appstream-imagebuilder-disableimdsv1)" : {{Boolean}},
@@ -46,11 +47,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-appstream-imagebuilder-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppStream::ImageBuilder
 Properties:
   [AccessEndpoints](#cfn-appstream-imagebuilder-accessendpoints): {{
     - AccessEndpoint}}
+  [AgentAccessConfig](#cfn-appstream-imagebuilder-agentaccessconfig): {{
+    AgentAccessConfig}}
   [AppstreamAgentVersion](#cfn-appstream-imagebuilder-appstreamagentversion): {{String}}
   [Description](#cfn-appstream-imagebuilder-description): {{String}}
   [DisableIMDSV1](#cfn-appstream-imagebuilder-disableimdsv1): {{Boolean}}
@@ -84,6 +87,12 @@ The list of virtual private cloud (VPC) interface endpoint objects. Administrato
 *Type*: Array of [AccessEndpoint](aws-properties-appstream-imagebuilder-accessendpoint.md)
 *Minimum*: `1`
 *Maximum*: `4`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`AgentAccessConfig`  <a name="cfn-appstream-imagebuilder-agentaccessconfig"></a>
+The agent access configuration of the image builder, if agent access is enabled.
+*Required*: No
+*Type*: [AgentAccessConfig](aws-properties-appstream-imagebuilder-agentaccessconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `AppstreamAgentVersion`  <a name="cfn-appstream-imagebuilder-appstreamagentversion"></a>
@@ -92,7 +101,7 @@ The version of the WorkSpaces Applications agent to use for this image builder. 
 *Type*: String
 *Minimum*: `1`
 *Maximum*: `100`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Description`  <a name="cfn-appstream-imagebuilder-description"></a>
 The description to display.
@@ -105,7 +114,7 @@ The description to display.
 Indicates whether Instance Metadata Service Version 1 (IMDSv1) is disabled for the image builder.
 *Required*: No
 *Type*: Boolean
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `DisplayName`  <a name="cfn-appstream-imagebuilder-displayname"></a>
 The image builder name to display.
@@ -118,13 +127,13 @@ The image builder name to display.
 The name of the directory and organizational unit (OU) to use to join the image builder to a Microsoft Active Directory domain.
 *Required*: No
 *Type*: [DomainJoinInfo](aws-properties-appstream-imagebuilder-domainjoininfo.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `EnableDefaultInternetAccess`  <a name="cfn-appstream-imagebuilder-enabledefaultinternetaccess"></a>
 Enables or disables default internet access for the image builder.
 *Required*: No
 *Type*: Boolean
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `IamRoleArn`  <a name="cfn-appstream-imagebuilder-iamrolearn"></a>
 The ARN of the IAM role that is applied to the image builder. To assume a role, the image builder calls the AWS Security Token Service`AssumeRole` API operation and passes the ARN of the role to use. The operation creates a new session with temporary credentials. WorkSpaces Applications retrieves the temporary credentials and creates the **appstream\_machine\_role** credential profile on the instance.
@@ -132,21 +141,21 @@ For more information, see [Using an IAM Role to Grant Permissions to Application
 *Required*: No
 *Type*: String
 *Pattern*: `^arn:aws(?:\-cn|\-iso\-b|\-iso|\-us\-gov)?:[A-Za-z0-9][A-Za-z0-9_/.-]{0,62}:[A-Za-z0-9_/.-]{0,63}:[A-Za-z0-9_/.-]{0,63}:[A-Za-z0-9][A-Za-z0-9:_/+=,@.\\-]{0,1023}$`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ImageArn`  <a name="cfn-appstream-imagebuilder-imagearn"></a>
 The ARN of the public, private, or shared image to use.
 *Required*: No
 *Type*: String
 *Pattern*: `^arn:aws(?:\-cn|\-iso\-b|\-iso|\-us\-gov)?:[A-Za-z0-9][A-Za-z0-9_/.-]{0,62}:[A-Za-z0-9_/.-]{0,63}:[A-Za-z0-9_/.-]{0,63}:[A-Za-z0-9][A-Za-z0-9:_/+=,@.\\-]{0,1023}$`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ImageName`  <a name="cfn-appstream-imagebuilder-imagename"></a>
 The name of the image used to create the image builder.
 *Required*: No
 *Type*: String
 *Minimum*: `1`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `InstanceType`  <a name="cfn-appstream-imagebuilder-instancetype"></a>
 The instance type to use when launching the image builder. The following instance types are available:
@@ -203,7 +212,7 @@ The instance type to use when launching the image builder. The following instanc
 *Required*: Yes
 *Type*: String
 *Minimum*: `1`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Name`  <a name="cfn-appstream-imagebuilder-name"></a>
 A unique name for the image builder.
@@ -216,7 +225,7 @@ A unique name for the image builder.
 The current configuration of the root volume for the image builder, including the storage size in GB.
 *Required*: No
 *Type*: [VolumeConfig](aws-properties-appstream-imagebuilder-volumeconfig.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `SoftwaresToInstall`  <a name="cfn-appstream-imagebuilder-softwarestoinstall"></a>
 The list of license included applications to install on the image builder during creation.
@@ -247,7 +256,7 @@ Possible values include the following:
 + Microsoft\_Project\_2024\_Standard\_64Bit
 *Required*: No
 *Type*: Array of String
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `SoftwaresToUninstall`  <a name="cfn-appstream-imagebuilder-softwarestouninstall"></a>
 The list of license included applications to uninstall from the image builder during creation.
@@ -278,7 +287,7 @@ Possible values include the following:
 + Microsoft\_Project\_2024\_Standard\_64Bit
 *Required*: No
 *Type*: Array of String
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Tags`  <a name="cfn-appstream-imagebuilder-tags"></a>
 An array of key-value pairs.
@@ -290,7 +299,7 @@ An array of key-value pairs.
 The VPC configuration for the image builder. You can specify only one subnet.
 *Required*: No
 *Type*: [VpcConfig](aws-properties-appstream-imagebuilder-vpcconfig.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
 <a name="aws-resource-appstream-imagebuilder-return-values"></a>

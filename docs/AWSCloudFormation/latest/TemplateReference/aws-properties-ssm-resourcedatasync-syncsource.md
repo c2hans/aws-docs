@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssm-resourcedatasync-syncsource-syntax.json"></a>
 
-```
+```json
 {
   "[AwsOrganizationsSource](#cfn-ssm-resourcedatasync-syncsource-awsorganizationssource)" : {{AwsOrganizationsSource}},
   "[IncludeFutureRegions](#cfn-ssm-resourcedatasync-syncsource-includefutureregions)" : {{Boolean}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssm-resourcedatasync-syncsource-syntax.yaml"></a>
 
-```
+```yaml
   [AwsOrganizationsSource](#cfn-ssm-resourcedatasync-syncsource-awsorganizationssource): {{
     AwsOrganizationsSource}}
   [IncludeFutureRegions](#cfn-ssm-resourcedatasync-syncsource-includefutureregions): {{Boolean}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-user-phonenumberconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Channel](#cfn-connect-user-phonenumberconfig-channel)" : {{String}},
   "[PhoneNumber](#cfn-connect-user-phonenumberconfig-phonenumber)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-user-phonenumberconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Channel](#cfn-connect-user-phonenumberconfig-channel): {{String}}
   [PhoneNumber](#cfn-connect-user-phonenumberconfig-phonenumber): {{String}}
   [PhoneType](#cfn-connect-user-phonenumberconfig-phonetype): {{String}}

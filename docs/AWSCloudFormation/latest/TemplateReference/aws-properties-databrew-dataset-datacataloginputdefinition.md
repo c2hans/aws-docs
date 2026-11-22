@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-databrew-dataset-datacataloginputdefinition-syntax.json"></a>
 
-```
+```json
 {
   "[CatalogId](#cfn-databrew-dataset-datacataloginputdefinition-catalogid)" : {{String}},
   "[DatabaseName](#cfn-databrew-dataset-datacataloginputdefinition-databasename)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-databrew-dataset-datacataloginputdefinition-syntax.yaml"></a>
 
-```
+```yaml
   [CatalogId](#cfn-databrew-dataset-datacataloginputdefinition-catalogid): {{String}}
   [DatabaseName](#cfn-databrew-dataset-datacataloginputdefinition-databasename): {{String}}
   [TableName](#cfn-databrew-dataset-datacataloginputdefinition-tablename): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpoolresourceserver-resourceserverscopetype-syntax.json"></a>
 
-```
+```json
 {
   "[ScopeDescription](#cfn-cognito-userpoolresourceserver-resourceserverscopetype-scopedescription)" : {{String}},
   "[ScopeName](#cfn-cognito-userpoolresourceserver-resourceserverscopetype-scopename)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpoolresourceserver-resourceserverscopetype-syntax.yaml"></a>
 
-```
+```yaml
   [ScopeDescription](#cfn-cognito-userpoolresourceserver-resourceserverscopetype-scopedescription): {{String}}
   [ScopeName](#cfn-cognito-userpoolresourceserver-resourceserverscopetype-scopename): {{String}}
 ```

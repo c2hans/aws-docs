@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-datasync-locationobjectstorage-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DataSync::LocationObjectStorage",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-datasync-locationobjectstorage-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DataSync::LocationObjectStorage
 Properties:
   [AccessKey](#cfn-datasync-locationobjectstorage-accesskey): {{String}}
@@ -219,7 +219,7 @@ The following example specifies an object storage location for DataSync. In this
 #### JSON
 <a name="aws-resource-datasync-locationobjectstorage--examples--Create_an_object_storage_location_for_DataSync--json"></a>
 
-```
+```json
 {
 "AWSTemplateFormatVersion": "2010-09-09",
 "Description": "Specifies an object storage location for DataSync",
@@ -243,7 +243,7 @@ The following example specifies an object storage location for DataSync. In this
 #### YAML
 <a name="aws-resource-datasync-locationobjectstorage--examples--Create_an_object_storage_location_for_DataSync--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Specifies an object storage location for DataSync
 Resources:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dynamodb-globaltable-vectorindex-syntax.json"></a>
 
-```
+```json
 {
   "[Dimensions](#cfn-dynamodb-globaltable-vectorindex-dimensions)" : {{Integer}},
   "[DistanceFunction](#cfn-dynamodb-globaltable-vectorindex-distancefunction)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dynamodb-globaltable-vectorindex-syntax.yaml"></a>
 
-```
+```yaml
   [Dimensions](#cfn-dynamodb-globaltable-vectorindex-dimensions): {{Integer}}
   [DistanceFunction](#cfn-dynamodb-globaltable-vectorindex-distancefunction): {{String}}
   [IndexName](#cfn-dynamodb-globaltable-vectorindex-indexname): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-devicefarm-devicepool-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DeviceFarm::DevicePool",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-devicefarm-devicepool-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DeviceFarm::DevicePool
 Properties:
   [Description](#cfn-devicefarm-devicepool-description): {{String}}

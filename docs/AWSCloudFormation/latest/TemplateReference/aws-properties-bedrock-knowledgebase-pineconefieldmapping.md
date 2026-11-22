@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-knowledgebase-pineconefieldmapping-syntax.json"></a>
 
-```
+```json
 {
   "[MetadataField](#cfn-bedrock-knowledgebase-pineconefieldmapping-metadatafield)" : {{String}},
   "[TextField](#cfn-bedrock-knowledgebase-pineconefieldmapping-textfield)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-knowledgebase-pineconefieldmapping-syntax.yaml"></a>
 
-```
+```yaml
   [MetadataField](#cfn-bedrock-knowledgebase-pineconefieldmapping-metadatafield): {{String}}
   [TextField](#cfn-bedrock-knowledgebase-pineconefieldmapping-textfield): {{String}}
 ```

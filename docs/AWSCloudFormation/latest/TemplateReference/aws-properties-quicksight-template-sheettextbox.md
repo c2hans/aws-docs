@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-sheettextbox-syntax.json"></a>
 
-```
+```json
 {
   "[Content](#cfn-quicksight-template-sheettextbox-content)" : {{String}},
   "[SheetTextBoxId](#cfn-quicksight-template-sheettextbox-sheettextboxid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-sheettextbox-syntax.yaml"></a>
 
-```
+```yaml
   [Content](#cfn-quicksight-template-sheettextbox-content): {{String}}
   [SheetTextBoxId](#cfn-quicksight-template-sheettextbox-sheettextboxid): {{String}}
 ```

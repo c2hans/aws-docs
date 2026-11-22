@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-dataautomationproject-blueprintitem-syntax.json"></a>
 
-```
+```json
 {
   "[BlueprintArn](#cfn-bedrock-dataautomationproject-blueprintitem-blueprintarn)" : {{String}},
   "[BlueprintStage](#cfn-bedrock-dataautomationproject-blueprintitem-blueprintstage)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-dataautomationproject-blueprintitem-syntax.yaml"></a>
 
-```
+```yaml
   [BlueprintArn](#cfn-bedrock-dataautomationproject-blueprintitem-blueprintarn): {{String}}
   [BlueprintStage](#cfn-bedrock-dataautomationproject-blueprintitem-blueprintstage): {{String}}
   [BlueprintVersion](#cfn-bedrock-dataautomationproject-blueprintitem-blueprintversion): {{String}}

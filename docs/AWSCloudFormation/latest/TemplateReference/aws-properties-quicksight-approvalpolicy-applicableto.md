@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-approvalpolicy-applicableto-syntax.json"></a>
 
-```
+```json
 {
   "[GroupArns](#cfn-quicksight-approvalpolicy-applicableto-grouparns)" : {{[ String, ... ]}},
   "[Type](#cfn-quicksight-approvalpolicy-applicableto-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-approvalpolicy-applicableto-syntax.yaml"></a>
 
-```
+```yaml
   [GroupArns](#cfn-quicksight-approvalpolicy-applicableto-grouparns): {{
     - String}}
   [Type](#cfn-quicksight-approvalpolicy-applicableto-type): {{String}}

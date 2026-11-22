@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-refactorspaces-route-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-refactorspaces-route-tag-key)" : {{String}},
   "[Value](#cfn-refactorspaces-route-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-refactorspaces-route-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-refactorspaces-route-tag-key): {{String}}
   [Value](#cfn-refactorspaces-route-tag-value): {{String}}
 ```

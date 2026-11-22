@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-numericaxisoptions-syntax.json"></a>
 
-```
+```json
 {
   "[Range](#cfn-quicksight-analysis-numericaxisoptions-range)" : {{AxisDisplayRange}},
   "[Scale](#cfn-quicksight-analysis-numericaxisoptions-scale)" : {{AxisScale}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-numericaxisoptions-syntax.yaml"></a>
 
-```
+```yaml
   [Range](#cfn-quicksight-analysis-numericaxisoptions-range): {{
     AxisDisplayRange}}
   [Scale](#cfn-quicksight-analysis-numericaxisoptions-scale): {{

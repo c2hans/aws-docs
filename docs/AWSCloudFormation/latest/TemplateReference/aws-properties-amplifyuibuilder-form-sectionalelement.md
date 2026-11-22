@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amplifyuibuilder-form-sectionalelement-syntax.json"></a>
 
-```
+```json
 {
   "[Excluded](#cfn-amplifyuibuilder-form-sectionalelement-excluded)" : {{Boolean}},
   "[Level](#cfn-amplifyuibuilder-form-sectionalelement-level)" : {{Number}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amplifyuibuilder-form-sectionalelement-syntax.yaml"></a>
 
-```
+```yaml
   [Excluded](#cfn-amplifyuibuilder-form-sectionalelement-excluded): {{Boolean}}
   [Level](#cfn-amplifyuibuilder-form-sectionalelement-level): {{Number}}
   [Orientation](#cfn-amplifyuibuilder-form-sectionalelement-orientation): {{String}}

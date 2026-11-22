@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-embeddedcaptionpositionsettings-syntax.json"></a>
 
-```
+```json
 {
   "[YPositionLine](#cfn-medialive-channel-embeddedcaptionpositionsettings-ypositionline)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-embeddedcaptionpositionsettings-syntax.yaml"></a>
 
-```
+```yaml
   [YPositionLine](#cfn-medialive-channel-embeddedcaptionpositionsettings-ypositionline): {{Integer}}
 ```
 

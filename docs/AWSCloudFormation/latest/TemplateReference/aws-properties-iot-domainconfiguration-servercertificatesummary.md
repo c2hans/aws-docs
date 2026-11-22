@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-domainconfiguration-servercertificatesummary-syntax.json"></a>
 
-```
+```json
 {
   "[ServerCertificateArn](#cfn-iot-domainconfiguration-servercertificatesummary-servercertificatearn)" : {{String}},
   "[ServerCertificateStatus](#cfn-iot-domainconfiguration-servercertificatesummary-servercertificatestatus)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-domainconfiguration-servercertificatesummary-syntax.yaml"></a>
 
-```
+```yaml
   [ServerCertificateArn](#cfn-iot-domainconfiguration-servercertificatesummary-servercertificatearn): {{String}}
   [ServerCertificateStatus](#cfn-iot-domainconfiguration-servercertificatesummary-servercertificatestatus): {{String}}
   [ServerCertificateStatusDetail](#cfn-iot-domainconfiguration-servercertificatesummary-servercertificatestatusdetail): {{String}}

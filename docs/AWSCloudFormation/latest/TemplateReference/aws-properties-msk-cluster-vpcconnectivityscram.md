@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-cluster-vpcconnectivityscram-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-msk-cluster-vpcconnectivityscram-enabled)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-cluster-vpcconnectivityscram-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-msk-cluster-vpcconnectivityscram-enabled): {{Boolean}}
 ```
 

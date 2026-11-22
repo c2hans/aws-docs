@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-resourceretentionpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[SkipDeregisterOnUpdate](#cfn-batch-jobdefinition-resourceretentionpolicy-skipderegisteronupdate)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-resourceretentionpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [SkipDeregisterOnUpdate](#cfn-batch-jobdefinition-resourceretentionpolicy-skipderegisteronupdate): {{Boolean}}
 ```
 

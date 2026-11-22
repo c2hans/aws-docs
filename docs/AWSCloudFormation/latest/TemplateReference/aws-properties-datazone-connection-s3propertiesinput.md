@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-connection-s3propertiesinput-syntax.json"></a>
 
-```
+```json
 {
   "[RegisterS3AccessGrantLocation](#cfn-datazone-connection-s3propertiesinput-registers3accessgrantlocation)" : {{Boolean}},
   "[S3AccessGrantLocationId](#cfn-datazone-connection-s3propertiesinput-s3accessgrantlocationid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-connection-s3propertiesinput-syntax.yaml"></a>
 
-```
+```yaml
   [RegisterS3AccessGrantLocation](#cfn-datazone-connection-s3propertiesinput-registers3accessgrantlocation): {{Boolean}}
   [S3AccessGrantLocationId](#cfn-datazone-connection-s3propertiesinput-s3accessgrantlocationid): {{String}}
   [S3Uri](#cfn-datazone-connection-s3propertiesinput-s3uri): {{String}}

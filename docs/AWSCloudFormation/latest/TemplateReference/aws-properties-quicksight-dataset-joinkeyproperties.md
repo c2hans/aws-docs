@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-joinkeyproperties-syntax.json"></a>
 
-```
+```json
 {
   "[UniqueKey](#cfn-quicksight-dataset-joinkeyproperties-uniquekey)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-joinkeyproperties-syntax.yaml"></a>
 
-```
+```yaml
   [UniqueKey](#cfn-quicksight-dataset-joinkeyproperties-uniquekey): {{Boolean}}
 ```
 

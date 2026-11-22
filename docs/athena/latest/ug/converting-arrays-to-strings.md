@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/converting-arrays-to-st
 
 To convert an array into a single string, use the `array_join` function. The following standalone example creates a table called `dataset` that contains an aliased array called `words`. The query uses `array_join` to join the array elements in `words`, separate them with spaces, and return the resulting string in an aliased column called `welcome_msg`.
 
-```
+```sql
 WITH
 dataset AS (
   SELECT ARRAY ['hello', 'amazon', 'athena'] AS words

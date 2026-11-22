@@ -164,7 +164,7 @@ The following steps illustrate how to create a user and associate it with Secret
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -189,7 +189,7 @@ The following steps illustrate how to create a user and associate it with Secret
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [

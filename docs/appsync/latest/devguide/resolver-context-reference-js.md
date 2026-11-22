@@ -11,7 +11,7 @@ AWS AppSync defines a set of variables and functions for working with request an
 
 The `context` argument of a request and response handler is an object that holds all of the contextual information for your resolver invocation. It has the following structure:
 
-```
+```json
 type Context = {
   arguments: any;
   args: any;
@@ -68,7 +68,7 @@ delete ctx.stash.key
 A container for the results of this resolver. This field is available only to response handlers.
 For example, if you're resolving the `author` field of the following query:
 
-```
+```graphql
 query {
     getPost(id: 1234) {
         postId
@@ -83,7 +83,7 @@ query {
 ```
 Then the full `context` variable is available when a response handler is evaluated:
 
-```
+```json
 {
   "arguments" : {
     id: "1234"
@@ -139,7 +139,7 @@ The `identity` contains the `resolverContext` key, containing the same `resolver
 ** `AWS_IAM` authorization**
 The `identity` has the following form:
 
-```
+```json
 type AppSyncIdentityIAM = {
   accountId: string;
   cognitoIdentityPoolId: string;
@@ -155,7 +155,7 @@ type AppSyncIdentityIAM = {
 ** `AMAZON_COGNITO_USER_POOLS` authorization**
 The `identity` has the following form:
 
-```
+```json
 type AppSyncIdentityCognito = {
   sourceIp: string[];
   username: string;
@@ -218,13 +218,13 @@ AWS AppSync supports passing custom headers from clients and accessing them in y
 
 Suppose you set a header of `custom` with a value of `nadia` like the following:
 
-```
+```sh
 curl -XPOST -H "Content-Type:application/graphql" -H "custom:nadia" -H "x-api-key:<API-KEY-VALUE>" -d '{"query":"mutation { createEvent(name: \"demo\", when: \"Next Friday!\", where: \"Here!\") {id name when where description}}"}' https://<ENDPOINT>/graphql
 ```
 
 This could then be accessed with `ctx.request.headers.custom`. For example, it might be in the following code for DynamoDB:
 
-```
+```json
 "custom": util.dynamodb.toDynamoDB(ctx.request.headers.custom)
 ```
 
@@ -232,7 +232,7 @@ This could then be accessed with `ctx.request.headers.custom`. For example, it m
 
 You can also pass multiple headers in a single request and access these in the resolver handler. For example, if the `custom` header is set with two values:
 
-```
+```sh
 curl -XPOST -H "Content-Type:application/graphql" -H "custom:bailey" -H "custom:nadia" -H "x-api-key:<API-KEY-VALUE>" -d '{"query":"mutation { createEvent(name: \"demo\", when: \"Next Friday!\", where: \"Here!\") {id name when where description}}"}' https://<ENDPOINT>/graphql
 ```
 
@@ -253,7 +253,7 @@ When using the default GraphQL endpoint domain name, the value is `null`.
 
 The `info` section contains information about the GraphQL request. This section has the following form:
 
-```
+```json
 type Info = {
   fieldName: string;
   parentTypeName: string;
@@ -285,7 +285,7 @@ A string representation of the selection set, formatted as GraphQL schema defini
 
 For example, if you are resolving the `getPost` field of the following query:
 
-```
+```graphql
 query {
   getPost(id: $postId) {
     postId
@@ -317,7 +317,7 @@ fragment postFrag on Post {
 
 Then the full `ctx.info` variable that is available when processing a handler might be:
 
-```
+```json
 {
   "fieldName": "getPost",
   "parentTypeName": "Query",
@@ -346,7 +346,7 @@ Then the full `ctx.info` variable that is available when processing a handler mi
 
 `selectionSetList` exposes only fields that belong to the current type. If the current type is an interface or union, only selected fields that belong to the interface are exposed. For example, given the following schema:
 
-```
+```graphql
 type Query {
     node(id: ID!): Node
 }
@@ -370,7 +370,7 @@ type Blog implements Node {
 
 And the following query:
 
-```
+```graphql
 query {
     node(id: "post1") {
         id
@@ -387,7 +387,7 @@ query {
 
 When calling `ctx.info.selectionSetList` at the `Query.node` field resolution, only `id` is exposed:
 
-```
+```json
 "selectionSetList": [
     "id"
 ]

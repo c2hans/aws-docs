@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudtrail-dashboard-refreshschedule-syntax.json"></a>
 
-```
+```json
 {
   "[Frequency](#cfn-cloudtrail-dashboard-refreshschedule-frequency)" : {{Frequency}},
   "[Status](#cfn-cloudtrail-dashboard-refreshschedule-status)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudtrail-dashboard-refreshschedule-syntax.yaml"></a>
 
-```
+```yaml
   [Frequency](#cfn-cloudtrail-dashboard-refreshschedule-frequency): {{
     Frequency}}
   [Status](#cfn-cloudtrail-dashboard-refreshschedule-status): {{String}}

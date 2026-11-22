@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rekognition-streamprocessor-datasharingpreference-syntax.json"></a>
 
-```
+```json
 {
   "[OptIn](#cfn-rekognition-streamprocessor-datasharingpreference-optin)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rekognition-streamprocessor-datasharingpreference-syntax.yaml"></a>
 
-```
+```yaml
   [OptIn](#cfn-rekognition-streamprocessor-datasharingpreference-optin): {{Boolean}}
 ```
 

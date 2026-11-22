@@ -129,7 +129,7 @@ In the request, you specify the encryption configuration in the request body. Th
 
 This example illustrates one usage of PutBucketEncryption.
 
-```
+```xml
 <ServerSideEncryptionConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
       <Rule>
         <ApplyServerSideEncryptionByDefault>
@@ -144,7 +144,7 @@ This example illustrates one usage of PutBucketEncryption.
 
 This example illustrates one usage of PutBucketEncryption.
 
-```
+```xml
 <ServerSideEncryptionConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
       <Rule>
         <ApplyServerSideEncryptionByDefault>
@@ -160,7 +160,7 @@ This example illustrates one usage of PutBucketEncryption.
 
 The following is an example of a PUT /? encryption request that specifies to use SSE-KMS encryption.
 
-```
+```HTTP
 PUT /?encryption HTTP/1.1
 Host: examplebucket.<Region>s3.amazonaws.com
 Date: Wed, 06 Sep 2017 12:00:00 GMT
@@ -185,7 +185,7 @@ The following is an example of a request to prevent writing new objects to the b
 **Note**
 To allow the use of SSE-C encryption in your write requests to a bucket, pass the value `NONE` instead of `SSE-C`.
 
-```
+```xml
 <ServerSideEncryptionConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
       <Rule>
         <BlockedEncryptionTypes>

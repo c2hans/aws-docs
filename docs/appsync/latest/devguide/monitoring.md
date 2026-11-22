@@ -57,7 +57,7 @@ In the [IAM console](https://console.aws.amazon.com/iam), create a new policy wi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -83,7 +83,7 @@ Next, create a new role with the name **AWSAppSyncPushToCloudWatchLogsRole**, an
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -514,7 +514,7 @@ By default, if logging has been enabled, AWS AppSync will send up to 1 MB of log
 +  **statusCode:** HTTP status code response.
 +  **latency:** End-to-end latency of the request, in nanoseconds, as an integer.
 
-```
+```json
 {
      "logType": "RequestSummary",
      "requestId": "dbe87af3-c114-4b32-ae79-8af11f3f96f1",
@@ -541,7 +541,7 @@ By default, if logging has been enabled, AWS AppSync will send up to 1 MB of log
   +  **startOffset:** The start offset for validation, in nanoseconds, relative to the invocation, as an integer.
   +  **duration:** The time spent performing validation, in nanoseconds, as an integer.
 
-```
+```json
 {
     "duration": 217406145,
     "logType": "ExecutionSummary",
@@ -573,7 +573,7 @@ By default, if logging has been enabled, AWS AppSync will send up to 1 MB of log
 +  **path:** A list of path segments, starting at the root of the response and ending with the field being resolved.
 +  **resolverArn:** The ARN of the resolver used for field resolution. Might not be present on nested fields.
 
-```
+```json
 {
     "duration": 216820346,
     "logType": "Tracing",
@@ -597,7 +597,7 @@ The following are examples of queries you can run to get actionable insights int
 
 The following query returns the top 10 GraphQL requests with maximum tokens consumed:
 
-```
+```default
 filter @message like "Tokens Consumed"
 | parse @message "* Tokens Consumed: *" as requestId, tokens
 | sort tokens desc
@@ -607,7 +607,7 @@ filter @message like "Tokens Consumed"
 
 The following query returns the top 10 resolvers with maximum latency:
 
-```
+```default
   fields resolverArn, duration
 | filter logType = "Tracing"
 | limit 10
@@ -616,7 +616,7 @@ The following query returns the top 10 resolvers with maximum latency:
 
 The following query returns the most frequently invoked resolvers:
 
-```
+```default
   fields ispresent(resolverArn) as isRes
 | stats count() as invocationCount by resolverArn
 | filter isRes and logType = "Tracing"
@@ -626,7 +626,7 @@ The following query returns the most frequently invoked resolvers:
 
 The following query returns resolvers with the most errors in mapping templates:
 
-```
+```default
   fields ispresent(resolverArn) as isRes
 | stats count() as errorCount by resolverArn, logType
 | filter isRes and (logType = "RequestMapping" or logType = "ResponseMapping") and fieldInError
@@ -636,7 +636,7 @@ The following query returns resolvers with the most errors in mapping templates:
 
 The following query returns resolver latency statistics:
 
-```
+```default
   fields ispresent(resolverArn) as isRes
 | stats min(duration), max(duration), avg(duration) as avg_dur by resolverArn
 | filter isRes and logType = "Tracing"
@@ -646,7 +646,7 @@ The following query returns resolver latency statistics:
 
 The following query returns field latency statistics:
 
-```
+```default
   stats min(duration), max(duration), avg(duration) as avg_dur
   by concat(parentType, '/', fieldName) as fieldKey
 | filter logType = "Tracing"

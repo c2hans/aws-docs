@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelbiasjobdefinition-networkconfig-syntax.json"></a>
 
-```
+```json
 {
   "[EnableInterContainerTrafficEncryption](#cfn-sagemaker-modelbiasjobdefinition-networkconfig-enableintercontainertrafficencryption)" : {{Boolean}},
   "[EnableNetworkIsolation](#cfn-sagemaker-modelbiasjobdefinition-networkconfig-enablenetworkisolation)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelbiasjobdefinition-networkconfig-syntax.yaml"></a>
 
-```
+```yaml
   [EnableInterContainerTrafficEncryption](#cfn-sagemaker-modelbiasjobdefinition-networkconfig-enableintercontainertrafficencryption): {{Boolean}}
   [EnableNetworkIsolation](#cfn-sagemaker-modelbiasjobdefinition-networkconfig-enablenetworkisolation): {{Boolean}}
   [VpcConfig](#cfn-sagemaker-modelbiasjobdefinition-networkconfig-vpcconfig): {{

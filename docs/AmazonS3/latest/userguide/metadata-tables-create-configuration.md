@@ -177,7 +177,7 @@ To use the following example commands, replace the `{{user input placeholders}}`
 
    To encrypt your metadata tables with server-side encryption using AWS Key Management Service (AWS KMS) keys (SSE-KMS), set `SseAlgorithm` to `aws:kms`. You must also set `KmsKeyArn` to the ARN of a customer managed KMS key in the same Region where your general purpose bucket is located.
 
-   ```
+   ```json
    {
      "JournalTableConfiguration": {
         "RecordExpiration": {
@@ -207,7 +207,7 @@ To use the following example commands, replace the `{{user input placeholders}}`
 
 1. Use the following command to apply the metadata table configuration to your general purpose bucket (for example, `{{amzn-s3-demo-bucket}}`):
 
-   ```
+   ```bash
    aws s3api create-bucket-metadata-configuration \
    --bucket {{amzn-s3-demo-bucket}} \
    --metadata-configuration file://./{{metadata-config}}.json \
@@ -216,7 +216,7 @@ To use the following example commands, replace the `{{user input placeholders}}`
 
 1. To verify that the configuration was created, use the following command:
 
-   ```
+   ```bash
    aws s3api get-bucket-metadata-configuration \
    --bucket {{amzn-s3-demo-bucket}} \
    --region {{us-east-2}}

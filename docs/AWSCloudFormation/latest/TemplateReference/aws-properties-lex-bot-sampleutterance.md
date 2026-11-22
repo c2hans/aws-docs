@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-sampleutterance-syntax.json"></a>
 
-```
+```json
 {
   "[Utterance](#cfn-lex-bot-sampleutterance-utterance)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-sampleutterance-syntax.yaml"></a>
 
-```
+```yaml
   [Utterance](#cfn-lex-bot-sampleutterance-utterance): {{String}}
 ```
 

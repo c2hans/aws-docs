@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-pluginvisual-syntax.json"></a>
 
-```
+```json
 {
   "[ChartConfiguration](#cfn-quicksight-dashboard-pluginvisual-chartconfiguration)" : {{PluginVisualConfiguration}},
   "[PluginArn](#cfn-quicksight-dashboard-pluginvisual-pluginarn)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-pluginvisual-syntax.yaml"></a>
 
-```
+```yaml
   [ChartConfiguration](#cfn-quicksight-dashboard-pluginvisual-chartconfiguration): {{
     PluginVisualConfiguration}}
   [PluginArn](#cfn-quicksight-dashboard-pluginvisual-pluginarn): {{String}}

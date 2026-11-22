@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-launchtemplate-placement-syntax.json"></a>
 
-```
+```json
 {
   "[Affinity](#cfn-ec2-launchtemplate-placement-affinity)" : {{String}},
   "[AvailabilityZone](#cfn-ec2-launchtemplate-placement-availabilityzone)" : {{String}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-launchtemplate-placement-syntax.yaml"></a>
 
-```
+```yaml
   [Affinity](#cfn-ec2-launchtemplate-placement-affinity): {{String}}
   [AvailabilityZone](#cfn-ec2-launchtemplate-placement-availabilityzone): {{String}}
   [GroupId](#cfn-ec2-launchtemplate-placement-groupid): {{String}}

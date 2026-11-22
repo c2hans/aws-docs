@@ -18,7 +18,7 @@ You can attach the identity-based policy to the IAM role or IAM user that you ar
 
    The command returns output similar to the following:
 
-   ```
+   ```json
    {
    "UserId": "{{User ID}}",
    "Account": "{{sending account id}}",
@@ -39,7 +39,7 @@ You can attach the identity-based policy to the IAM role or IAM user that you ar
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -65,7 +65,7 @@ You can attach the identity-based policy to the IAM role or IAM user that you ar
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

@@ -66,7 +66,7 @@ If the action is successful, the service sends back an HTTP 204 response with an
 
 This example illustrates one usage of `DeleteBucketCors`.
 
-```
+```HTTP
 DELETE /?cors HTTP/1.1
 Host: amzn-s3-demo-bucket.s3.<Region>.amazonaws.com
 Date: Tue, 13 Dec 2011 19:14:42 GMT

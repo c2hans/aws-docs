@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-trialcomponent-trialcomponentartifact-syntax.json"></a>
 
-```
+```json
 {
   "[MediaType](#cfn-sagemaker-trialcomponent-trialcomponentartifact-mediatype)" : {{String}},
   "[Value](#cfn-sagemaker-trialcomponent-trialcomponentartifact-value)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-trialcomponent-trialcomponentartifact-syntax.yaml"></a>
 
-```
+```yaml
   [MediaType](#cfn-sagemaker-trialcomponent-trialcomponentartifact-mediatype): {{String}}
   [Value](#cfn-sagemaker-trialcomponent-trialcomponentartifact-value): {{String}}
 ```

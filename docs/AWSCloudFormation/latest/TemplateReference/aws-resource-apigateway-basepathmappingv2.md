@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigateway-basepathmappingv2-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGateway::BasePathMappingV2",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigateway-basepathmappingv2-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGateway::BasePathMappingV2
 Properties:
   [BasePath](#cfn-apigateway-basepathmappingv2-basepath): {{String}}
@@ -78,7 +78,7 @@ The following example creates a `BasePathMappingV2` resource called `MyBasePathM
 #### JSON
 <a name="aws-resource-apigateway-basepathmappingv2--examples--Base_path_mapping_creation_example--json"></a>
 
-```
+```json
 {
     "MyBasePathMappingV2": {
         "Type": "AWS::ApiGateway::BasePathMappingV2",
@@ -103,7 +103,7 @@ The following example creates a `BasePathMappingV2` resource called `MyBasePathM
 #### YAML
 <a name="aws-resource-apigateway-basepathmappingv2--examples--Base_path_mapping_creation_example--yaml"></a>
 
-```
+```yaml
 MyBasePathMappingV2:
   Type: AWS::ApiGateway::BasePathMappingV2
   DependsOn:

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-stepfunctions-activity-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::StepFunctions::Activity",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-stepfunctions-activity-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::StepFunctions::Activity
 Properties:
   [EncryptionConfiguration](#cfn-stepfunctions-activity-encryptionconfiguration): {{
@@ -130,7 +130,7 @@ Note that Activity configuration is immutable, and resource names must be unique
 #### YAML
 <a name="aws-resource-stepfunctions-activity--examples--Create_an_activity--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: An example template for a new Activity.
 Resources:
@@ -152,7 +152,7 @@ Resources:
 #### JSON
 <a name="aws-resource-stepfunctions-activity--examples--Create_an_activity--json"></a>
 
-```
+```json
 {
 "AWSTemplateFormatVersion" : "2010-09-09",
 "Description" : "An example template for a Step Functions activity.",
@@ -186,7 +186,7 @@ Resources:
 #### YAML
 <a name="aws-resource-stepfunctions-activity--examples--Create_an_activity_with_a_customer_managed_key--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: An example template for an Activity with customer managed key encryption.
 Resources:

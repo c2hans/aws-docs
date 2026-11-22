@@ -13,7 +13,7 @@ See the prerequisites in [Prerequisites for working with JMS and Amazon SQS](pre
 
 The following Java SDK v 1.x code example sets the default queue name, the region, and the credentials to be used with the other Java examples.
 
-```
+```java
 /*
  * Copyright 2010-2024 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  *
@@ -129,7 +129,7 @@ public class ExampleConfiguration {
 
 The following Java code example creates a text message producer.
 
-```
+```java
 /*
  * Copyright 2010-2024 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  *
@@ -209,7 +209,7 @@ public class TextMessageSender {
 
 The following Java code example creates a synchronous message consumer.
 
-```
+```java
 /*
  * Copyright 2010-2024 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  *
@@ -286,7 +286,7 @@ private static void receiveMessages( Session session, MessageConsumer consumer )
 
 The following Java code example creates an asynchronous message consumer.
 
-```
+```java
 /*
  * Copyright 2010-2024 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  *
@@ -378,7 +378,7 @@ public class AsyncMessageReceiver {
 
 The following Java code example creates a synchronous consumer with client acknowledge mode.
 
-```
+```java
 /*
  * Copyright 2010-2024 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  *
@@ -512,7 +512,7 @@ public class SyncMessageReceiverClientAcknowledge {
 
 The following Java code example creates a synchronous consumer with unordered acknowledge mode.
 
-```
+```java
 /*
  * Copyright 2010-2024 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  *
@@ -646,7 +646,7 @@ public class SyncMessageReceiverUnorderedAcknowledge {
 
 The following XML code example is a bean configuration file for [SpringExample.java](#example-spring).
 
-```
+```xml
 <!--
     Copyright 2010-2024 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 
@@ -706,7 +706,7 @@ The following XML code example is a bean configuration file for [SpringExample.j
 
 The following Java code example uses the bean configuration file to initialize your objects.
 
-```
+```java
 /*
  * Copyright 2010-2024 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  *
@@ -801,7 +801,7 @@ public class SpringExample {
 
 The following Java code example checks if an Amazon SQS queue exists and then creates one if it doesn't. It also includes example logging code.
 
-```
+```java
 /*
  * Copyright 2010-2024 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  *

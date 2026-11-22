@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dynamodb-table-s3bucketsource-syntax.json"></a>
 
-```
+```json
 {
   "[S3Bucket](#cfn-dynamodb-table-s3bucketsource-s3bucket)" : {{String}},
   "[S3BucketOwner](#cfn-dynamodb-table-s3bucketsource-s3bucketowner)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dynamodb-table-s3bucketsource-syntax.yaml"></a>
 
-```
+```yaml
   [S3Bucket](#cfn-dynamodb-table-s3bucketsource-s3bucket): {{String}}
   [S3BucketOwner](#cfn-dynamodb-table-s3bucketsource-s3bucketowner): {{String}}
   [S3KeyPrefix](#cfn-dynamodb-table-s3bucketsource-s3keyprefix): {{String}}

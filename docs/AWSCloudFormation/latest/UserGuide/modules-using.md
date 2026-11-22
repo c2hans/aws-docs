@@ -20,6 +20,6 @@ CloudFormation keeps track of which resources in a stack were created from modul
 
 Modules are distinguishable from resources in a template because they adhere to the following four-part naming convention, as opposed to the typical three-part convention used by resources:
 
-```
+```text
 {{organization}}::{{service}}::{{use-case}}::MODULE
 ```

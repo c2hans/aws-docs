@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-inspectorv2-codesecurityscanconfiguration-scopesettings-syntax.json"></a>
 
-```
+```json
 {
   "[projectSelectionScope](#cfn-inspectorv2-codesecurityscanconfiguration-scopesettings-projectselectionscope)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-inspectorv2-codesecurityscanconfiguration-scopesettings-syntax.yaml"></a>
 
-```
+```yaml
   [projectSelectionScope](#cfn-inspectorv2-codesecurityscanconfiguration-scopesettings-projectselectionscope): {{String}}
 ```
 

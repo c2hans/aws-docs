@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emr-cluster-instancefleetconfig-syntax.json"></a>
 
-```
+```json
 {
   "[InstanceTypeConfigs](#cfn-emr-cluster-instancefleetconfig-instancetypeconfigs)" : {{[ InstanceTypeConfig, ... ]}},
   "[LaunchSpecifications](#cfn-emr-cluster-instancefleetconfig-launchspecifications)" : {{InstanceFleetProvisioningSpecifications}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emr-cluster-instancefleetconfig-syntax.yaml"></a>
 
-```
+```yaml
   [InstanceTypeConfigs](#cfn-emr-cluster-instancefleetconfig-instancetypeconfigs): {{
     - InstanceTypeConfig}}
   [LaunchSpecifications](#cfn-emr-cluster-instancefleetconfig-launchspecifications): {{

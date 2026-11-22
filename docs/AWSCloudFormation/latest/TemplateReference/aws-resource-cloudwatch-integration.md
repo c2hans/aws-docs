@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudwatch-integration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudWatch::Integration",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudwatch-integration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudWatch::Integration
 Properties:
   [Credential](#cfn-cloudwatch-integration-credential): {{

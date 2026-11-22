@@ -40,7 +40,7 @@ For more information about VPC tenancy options, see [Create a VPC](https://docs.
 **To set the tenancy option for an instance during launch**
 Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command and include `Tenancy` with the `--placement` option.
 
-```
+```bash
 --placement Tenancy=dedicated
 ```
 
@@ -50,7 +50,7 @@ Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run
 **To set the tenancy option for an instance during launch**
 Use the [New-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Instance.html) cmdlet with the `-Placement_Tenancy` parameter.
 
-```
+```powershell
 -Placement_Tenancy dedicated
 ```
 

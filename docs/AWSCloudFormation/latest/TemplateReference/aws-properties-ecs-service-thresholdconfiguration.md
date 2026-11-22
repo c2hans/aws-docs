@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-thresholdconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-ecs-service-thresholdconfiguration-type)" : {{String}},
   "[Value](#cfn-ecs-service-thresholdconfiguration-value)" : {{Integer}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-thresholdconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-ecs-service-thresholdconfiguration-type): {{String}}
   [Value](#cfn-ecs-service-thresholdconfiguration-value): {{Integer}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigateway-resource-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGateway::Resource",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigateway-resource-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGateway::Resource
 Properties:
   [ParentId](#cfn-apigateway-resource-parentid): {{String}}
@@ -93,7 +93,7 @@ The following example creates a `stack` resource for the `MyApi` API.
 #### JSON
 <a name="aws-resource-apigateway-resource--examples--Create_resource--json"></a>
 
-```
+```json
 {
     "Stack": {
         "Type": "AWS::ApiGateway::Resource",
@@ -116,7 +116,7 @@ The following example creates a `stack` resource for the `MyApi` API.
 #### YAML
 <a name="aws-resource-apigateway-resource--examples--Create_resource--yaml"></a>
 
-```
+```yaml
 Stack:
   Type: 'AWS::ApiGateway::Resource'
   Properties:

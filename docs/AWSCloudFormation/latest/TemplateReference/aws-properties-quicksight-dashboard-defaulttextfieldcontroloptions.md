@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-defaulttextfieldcontroloptions-syntax.json"></a>
 
-```
+```json
 {
   "[DisplayOptions](#cfn-quicksight-dashboard-defaulttextfieldcontroloptions-displayoptions)" : {{TextFieldControlDisplayOptions}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-defaulttextfieldcontroloptions-syntax.yaml"></a>
 
-```
+```yaml
   [DisplayOptions](#cfn-quicksight-dashboard-defaulttextfieldcontroloptions-displayoptions): {{
     TextFieldControlDisplayOptions}}
 ```

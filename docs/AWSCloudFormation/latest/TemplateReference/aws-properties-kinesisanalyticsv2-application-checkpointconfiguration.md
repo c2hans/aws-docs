@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisanalyticsv2-application-checkpointconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CheckpointingEnabled](#cfn-kinesisanalyticsv2-application-checkpointconfiguration-checkpointingenabled)" : {{Boolean}},
   "[CheckpointInterval](#cfn-kinesisanalyticsv2-application-checkpointconfiguration-checkpointinterval)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisanalyticsv2-application-checkpointconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CheckpointingEnabled](#cfn-kinesisanalyticsv2-application-checkpointconfiguration-checkpointingenabled): {{Boolean}}
   [CheckpointInterval](#cfn-kinesisanalyticsv2-application-checkpointconfiguration-checkpointinterval): {{Integer}}
   [ConfigurationType](#cfn-kinesisanalyticsv2-application-checkpointconfiguration-configurationtype): {{String}}

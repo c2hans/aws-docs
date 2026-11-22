@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-donutoptions-syntax.json"></a>
 
-```
+```json
 {
   "[ArcOptions](#cfn-quicksight-template-donutoptions-arcoptions)" : {{ArcOptions}},
   "[DonutCenterOptions](#cfn-quicksight-template-donutoptions-donutcenteroptions)" : {{DonutCenterOptions}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-donutoptions-syntax.yaml"></a>
 
-```
+```yaml
   [ArcOptions](#cfn-quicksight-template-donutoptions-arcoptions): {{
     ArcOptions}}
   [DonutCenterOptions](#cfn-quicksight-template-donutoptions-donutcenteroptions): {{

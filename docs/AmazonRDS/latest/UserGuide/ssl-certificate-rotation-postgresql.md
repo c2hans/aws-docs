@@ -26,7 +26,7 @@ Check the DB instance configuration for the value of the `rds.force_ssl` paramet
 
 If you are using RDS PostgreSQL version 9.5 or later major version and `rds.force_ssl` is not set to `1` (on), query the `pg_stat_ssl` view to check connections using SSL. For example, the following query returns only SSL connections and information about the clients using SSL.
 
-```
+```sql
 SELECT datname, usename, ssl, client_addr
   FROM pg_stat_ssl INNER JOIN pg_stat_activity ON pg_stat_ssl.pid = pg_stat_activity.pid
   WHERE ssl is true and usename<>'rdsadmin';

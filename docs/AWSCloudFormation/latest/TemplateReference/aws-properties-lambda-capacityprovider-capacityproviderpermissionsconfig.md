@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-capacityprovider-capacityproviderpermissionsconfig-syntax.json"></a>
 
-```
+```json
 {
   "[CapacityProviderOperatorRoleArn](#cfn-lambda-capacityprovider-capacityproviderpermissionsconfig-capacityprovideroperatorrolearn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-capacityprovider-capacityproviderpermissionsconfig-syntax.yaml"></a>
 
-```
+```yaml
   [CapacityProviderOperatorRoleArn](#cfn-lambda-capacityprovider-capacityproviderpermissionsconfig-capacityprovideroperatorrolearn): {{String}}
 ```
 

@@ -31,7 +31,7 @@ Files with the following file extensions are supported for download when SQL Ser
 
 The following example shows the stored procedure to download files from S3.
 
-```
+```SQL
 exec msdb.dbo.rds_download_from_s3
 	    @s3_arn_of_file='arn:aws:s3:::{{amzn-s3-demo-bucket}}/{{bulk_data.csv}}',
 	    @rds_file_path='D:\S3\{{seed_data\data.csv}}',
@@ -53,7 +53,7 @@ To upload files from an RDS for SQL Server DB instance to an S3 bucket, use the 
 
 The following example uploads the file named `data.csv` from the specified location in `D:\S3\seed_data\` to a file `new_data.csv` in the S3 bucket specified by the ARN.
 
-```
+```sql
 exec msdb.dbo.rds_upload_to_s3
 		@rds_file_path='D:\S3\{{seed_data\data.csv}}',
 		@s3_arn_of_file='arn:aws:s3:::{{amzn-s3-demo-bucket}}/{{new_data.csv}}',

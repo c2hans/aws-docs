@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-servicecatalog-serviceaction-definitionparameter-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-servicecatalog-serviceaction-definitionparameter-key)" : {{String}},
   "[Value](#cfn-servicecatalog-serviceaction-definitionparameter-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-servicecatalog-serviceaction-definitionparameter-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-servicecatalog-serviceaction-definitionparameter-key): {{String}}
   [Value](#cfn-servicecatalog-serviceaction-definitionparameter-value): {{String}}
 ```

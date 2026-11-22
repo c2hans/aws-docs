@@ -34,7 +34,7 @@ aws dsql get-cluster-policy --identifier {{your_cluster_id}}
 ------
 #### [ Python ]
 
-```
+```python
 import boto3
 import json
 
@@ -52,7 +52,7 @@ print(json.dumps(policy, indent=2))
 ------
 #### [ Java ]
 
-```
+```java
 import software.amazon.awssdk.services.dsql.DsqlClient;
 import software.amazon.awssdk.services.dsql.model.GetClusterPolicyRequest;
 import software.amazon.awssdk.services.dsql.model.GetClusterPolicyResponse;

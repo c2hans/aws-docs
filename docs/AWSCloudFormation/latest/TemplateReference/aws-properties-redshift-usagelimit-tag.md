@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-redshift-usagelimit-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-redshift-usagelimit-tag-key)" : {{String}},
   "[Value](#cfn-redshift-usagelimit-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-redshift-usagelimit-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-redshift-usagelimit-tag-key): {{String}}
   [Value](#cfn-redshift-usagelimit-tag-value): {{String}}
 ```

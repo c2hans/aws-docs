@@ -27,7 +27,7 @@ aws s3control get-bucket --account-id {{{{123456789012}}}} --bucket "arn:aws:s3-
 
 The following S3 on Outposts example gets a bucket by using the SDK for Java. For more information, see [GetBucket](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetBucket.html) in the *Amazon Simple Storage Service API Reference*.
 
-```
+```Java
 import com.amazonaws.services.s3control.model.*;
 
 public void getBucket(String bucketArn) {

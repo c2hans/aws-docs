@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 
 The `01-CreateTable.cs` program creates a table (`TryDaxTable`). The remaining .NET programs in this section depend on this table.
 
-```
+```dotnet
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;

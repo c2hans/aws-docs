@@ -13,7 +13,7 @@ The following example limits the user to only viewing information about ` name-o
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -45,7 +45,7 @@ You can also create a policy that uses a \*** as a wildcard in canary names that
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

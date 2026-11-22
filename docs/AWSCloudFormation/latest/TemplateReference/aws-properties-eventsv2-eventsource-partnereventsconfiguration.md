@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eventsv2-eventsource-partnereventsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[OnFailureConfiguration](#cfn-eventsv2-eventsource-partnereventsconfiguration-onfailureconfiguration)" : {{OnFailureConfiguration}},
   "[PartnerBusKmsKeyIdentifier](#cfn-eventsv2-eventsource-partnereventsconfiguration-partnerbuskmskeyidentifier)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eventsv2-eventsource-partnereventsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [OnFailureConfiguration](#cfn-eventsv2-eventsource-partnereventsconfiguration-onfailureconfiguration): {{
     OnFailureConfiguration}}
   [PartnerBusKmsKeyIdentifier](#cfn-eventsv2-eventsource-partnereventsconfiguration-partnerbuskmskeyidentifier): {{String}}

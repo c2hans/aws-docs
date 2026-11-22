@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-quicksight-topicv2-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::QuickSight::TopicV2",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-quicksight-topicv2-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::QuickSight::TopicV2
 Properties:
   [AwsAccountId](#cfn-quicksight-topicv2-awsaccountid): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecr-registryscanningconfiguration-scanningrule-syntax.json"></a>
 
-```
+```json
 {
   "[RepositoryFilters](#cfn-ecr-registryscanningconfiguration-scanningrule-repositoryfilters)" : {{[ RepositoryFilter, ... ]}},
   "[ScanFrequency](#cfn-ecr-registryscanningconfiguration-scanningrule-scanfrequency)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecr-registryscanningconfiguration-scanningrule-syntax.yaml"></a>
 
-```
+```yaml
   [RepositoryFilters](#cfn-ecr-registryscanningconfiguration-scanningrule-repositoryfilters): {{
     - RepositoryFilter}}
   [ScanFrequency](#cfn-ecr-registryscanningconfiguration-scanningrule-scanfrequency): {{String}}

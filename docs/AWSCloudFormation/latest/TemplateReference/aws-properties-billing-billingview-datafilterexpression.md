@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-billing-billingview-datafilterexpression-syntax.json"></a>
 
-```
+```json
 {
   "[Dimensions](#cfn-billing-billingview-datafilterexpression-dimensions)" : {{Dimensions}},
   "[Tags](#cfn-billing-billingview-datafilterexpression-tags)" : {{Tags}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-billing-billingview-datafilterexpression-syntax.yaml"></a>
 
-```
+```yaml
   [Dimensions](#cfn-billing-billingview-datafilterexpression-dimensions): {{
     Dimensions}}
   [Tags](#cfn-billing-billingview-datafilterexpression-tags): {{

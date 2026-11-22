@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-datetimevaluewhenunsetconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CustomValue](#cfn-quicksight-analysis-datetimevaluewhenunsetconfiguration-customvalue)" : {{String}},
   "[ValueWhenUnsetOption](#cfn-quicksight-analysis-datetimevaluewhenunsetconfiguration-valuewhenunsetoption)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-datetimevaluewhenunsetconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CustomValue](#cfn-quicksight-analysis-datetimevaluewhenunsetconfiguration-customvalue): {{String}}
   [ValueWhenUnsetOption](#cfn-quicksight-analysis-datetimevaluewhenunsetconfiguration-valuewhenunsetoption): {{String}}
 ```

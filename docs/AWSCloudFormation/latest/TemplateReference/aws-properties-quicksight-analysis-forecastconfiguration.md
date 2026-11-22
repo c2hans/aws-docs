@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-forecastconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ForecastProperties](#cfn-quicksight-analysis-forecastconfiguration-forecastproperties)" : {{TimeBasedForecastProperties}},
   "[Scenario](#cfn-quicksight-analysis-forecastconfiguration-scenario)" : {{ForecastScenario}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-forecastconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ForecastProperties](#cfn-quicksight-analysis-forecastconfiguration-forecastproperties): {{
     TimeBasedForecastProperties}}
   [Scenario](#cfn-quicksight-analysis-forecastconfiguration-scenario): {{

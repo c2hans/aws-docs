@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-routerinput-standardrouterinputconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[NetworkInterfaceArn](#cfn-mediaconnect-routerinput-standardrouterinputconfiguration-networkinterfacearn)" : {{String}},
   "[Protocol](#cfn-mediaconnect-routerinput-standardrouterinputconfiguration-protocol)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-routerinput-standardrouterinputconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [NetworkInterfaceArn](#cfn-mediaconnect-routerinput-standardrouterinputconfiguration-networkinterfacearn): {{String}}
   [Protocol](#cfn-mediaconnect-routerinput-standardrouterinputconfiguration-protocol): {{String}}
   [ProtocolConfiguration](#cfn-mediaconnect-routerinput-standardrouterinputconfiguration-protocolconfiguration): {{

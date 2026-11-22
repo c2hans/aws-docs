@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-groundstation-dataflowendpointgroup-dataflowendpoint-syntax.json"></a>
 
-```
+```json
 {
   "[Address](#cfn-groundstation-dataflowendpointgroup-dataflowendpoint-address)" : {{SocketAddress}},
   "[Mtu](#cfn-groundstation-dataflowendpointgroup-dataflowendpoint-mtu)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-groundstation-dataflowendpointgroup-dataflowendpoint-syntax.yaml"></a>
 
-```
+```yaml
   [Address](#cfn-groundstation-dataflowendpointgroup-dataflowendpoint-address): {{
     SocketAddress}}
   [Mtu](#cfn-groundstation-dataflowendpointgroup-dataflowendpoint-mtu): {{Integer}}
@@ -70,7 +70,7 @@ The following example creates a Ground Station `DataflowEndpoint`
 #### JSON
 <a name="aws-properties-groundstation-dataflowendpointgroup-dataflowendpoint--examples--Create_a_DataflowEndpoint--json"></a>
 
-```
+```json
 {
   "Endpoint": {
     "Name": "myEndpoint",
@@ -85,7 +85,7 @@ The following example creates a Ground Station `DataflowEndpoint`
 #### YAML
 <a name="aws-properties-groundstation-dataflowendpointgroup-dataflowendpoint--examples--Create_a_DataflowEndpoint--yaml"></a>
 
-```
+```yaml
 Endpoint:
   Name: myEndpoint
   Address:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelcard-modeloverview-syntax.json"></a>
 
-```
+```json
 {
   "[AlgorithmType](#cfn-sagemaker-modelcard-modeloverview-algorithmtype)" : {{String}},
   "[InferenceEnvironment](#cfn-sagemaker-modelcard-modeloverview-inferenceenvironment)" : {{InferenceEnvironment}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelcard-modeloverview-syntax.yaml"></a>
 
-```
+```yaml
   [AlgorithmType](#cfn-sagemaker-modelcard-modeloverview-algorithmtype): {{String}}
   [InferenceEnvironment](#cfn-sagemaker-modelcard-modeloverview-inferenceenvironment): {{
     InferenceEnvironment}}

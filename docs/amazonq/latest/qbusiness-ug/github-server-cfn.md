@@ -72,7 +72,7 @@ The following is the GitHub (Server) JSON schema and examples for the configurat
 
 The following is the GitHub (Server) JSON schema for the configuration property for CloudFormation
 
-```
+```json
 {
   "type": "object",
   "properties": {
@@ -630,7 +630,7 @@ The following is the GitHub (Server) JSON schema for the configuration property 
 
 The following is the GitHub (Server) JSON schema example for the configuration property for CloudFormation
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "CloudFormation GITHUB Data Source Template",
@@ -717,7 +717,7 @@ The following is the GitHub (Server) YAML schema and examples for the configurat
 
 The following is the GitHub (Server) YAML schema for the configuration property for CloudFormation.
 
-```
+```yaml
 type: object
 properties:
   type:
@@ -1127,7 +1127,7 @@ required:
 
 The following is the GitHub (Server) YAML example for the Configuration property for CloudFormation:
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Description: CloudFormation GITHUB Data Source Template
 Resources:

@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securitylake-datalake-lifecycleconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Expiration](#cfn-securitylake-datalake-lifecycleconfiguration-expiration)" : {{Expiration}},
   "[Transitions](#cfn-securitylake-datalake-lifecycleconfiguration-transitions)" : {{[ Transitions, ... ]}}
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securitylake-datalake-lifecycleconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Expiration](#cfn-securitylake-datalake-lifecycleconfiguration-expiration): {{
     Expiration}}
   [Transitions](#cfn-securitylake-datalake-lifecycleconfiguration-transitions): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-cluster-clusterconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ExecuteCommandConfiguration](#cfn-ecs-cluster-clusterconfiguration-executecommandconfiguration)" : {{ExecuteCommandConfiguration}},
   "[ManagedStorageConfiguration](#cfn-ecs-cluster-clusterconfiguration-managedstorageconfiguration)" : {{ManagedStorageConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-cluster-clusterconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ExecuteCommandConfiguration](#cfn-ecs-cluster-clusterconfiguration-executecommandconfiguration): {{
     ExecuteCommandConfiguration}}
   [ManagedStorageConfiguration](#cfn-ecs-cluster-clusterconfiguration-managedstorageconfiguration): {{

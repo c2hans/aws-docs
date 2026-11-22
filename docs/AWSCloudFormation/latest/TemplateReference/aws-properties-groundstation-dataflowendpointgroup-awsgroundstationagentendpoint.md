@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-groundstation-dataflowendpointgroup-awsgroundstationagentendpoint-syntax.json"></a>
 
-```
+```json
 {
   "[AgentStatus](#cfn-groundstation-dataflowendpointgroup-awsgroundstationagentendpoint-agentstatus)" : {{String}},
   "[AuditResults](#cfn-groundstation-dataflowendpointgroup-awsgroundstationagentendpoint-auditresults)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-groundstation-dataflowendpointgroup-awsgroundstationagentendpoint-syntax.yaml"></a>
 
-```
+```yaml
   [AgentStatus](#cfn-groundstation-dataflowendpointgroup-awsgroundstationagentendpoint-agentstatus): {{String}}
   [AuditResults](#cfn-groundstation-dataflowendpointgroup-awsgroundstationagentendpoint-auditresults): {{String}}
   [EgressAddress](#cfn-groundstation-dataflowendpointgroup-awsgroundstationagentendpoint-egressaddress): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-qbusiness-application-quicksightconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ClientNamespace](#cfn-qbusiness-application-quicksightconfiguration-clientnamespace)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-qbusiness-application-quicksightconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ClientNamespace](#cfn-qbusiness-application-quicksightconfiguration-clientnamespace): {{String}}
 ```
 

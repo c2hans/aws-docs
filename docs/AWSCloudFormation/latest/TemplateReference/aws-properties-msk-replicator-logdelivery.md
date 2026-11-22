@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-replicator-logdelivery-syntax.json"></a>
 
-```
+```json
 {
   "[ReplicatorLogDelivery](#cfn-msk-replicator-logdelivery-replicatorlogdelivery)" : {{ReplicatorLogDelivery}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-replicator-logdelivery-syntax.yaml"></a>
 
-```
+```yaml
   [ReplicatorLogDelivery](#cfn-msk-replicator-logdelivery-replicatorlogdelivery): {{
     ReplicatorLogDelivery}}
 ```

@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-rds-deployment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RDS::Deployment",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-rds-deployment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RDS::Deployment
 Properties:
   [BlueGreenDeploymentName](#cfn-rds-deployment-bluegreendeploymentname): {{String}}

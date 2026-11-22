@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-metricstream-metricstreamstatisticsmetric-syntax.json"></a>
 
-```
+```json
 {
   "[MetricName](#cfn-cloudwatch-metricstream-metricstreamstatisticsmetric-metricname)" : {{String}},
   "[Namespace](#cfn-cloudwatch-metricstream-metricstreamstatisticsmetric-namespace)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-metricstream-metricstreamstatisticsmetric-syntax.yaml"></a>
 
-```
+```yaml
   [MetricName](#cfn-cloudwatch-metricstream-metricstreamstatisticsmetric-metricname): {{String}}
   [Namespace](#cfn-cloudwatch-metricstream-metricstreamstatisticsmetric-namespace): {{String}}
 ```

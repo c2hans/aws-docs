@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-monitoringschedule-monitoringappspecification-syntax.json"></a>
 
-```
+```json
 {
   "[ContainerArguments](#cfn-sagemaker-monitoringschedule-monitoringappspecification-containerarguments)" : {{[ String, ... ]}},
   "[ContainerEntrypoint](#cfn-sagemaker-monitoringschedule-monitoringappspecification-containerentrypoint)" : {{[ String, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-monitoringschedule-monitoringappspecification-syntax.yaml"></a>
 
-```
+```yaml
   [ContainerArguments](#cfn-sagemaker-monitoringschedule-monitoringappspecification-containerarguments): {{
     - String}}
   [ContainerEntrypoint](#cfn-sagemaker-monitoringschedule-monitoringappspecification-containerentrypoint): {{

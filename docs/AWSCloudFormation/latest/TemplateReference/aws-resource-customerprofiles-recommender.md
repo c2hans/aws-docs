@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-customerprofiles-recommender-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CustomerProfiles::Recommender",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-customerprofiles-recommender-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CustomerProfiles::Recommender
 Properties:
   [Description](#cfn-customerprofiles-recommender-description): {{String}}

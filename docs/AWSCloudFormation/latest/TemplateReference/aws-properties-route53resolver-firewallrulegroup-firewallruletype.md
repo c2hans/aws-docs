@@ -8,7 +8,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 The rule-type configuration for a DNS Firewall rule. `FirewallRuleType` is a tagged union — exactly one member must be set per rule, and the member determines what the rule matches against. This shape is mutually exclusive with the top-level `FirewallDomainListId` and `DnsThreatProtection` fields on CreateFirewallRule and UpdateFirewallRule.
 
-Call ListFirewallRuleTypes to discover which rule-type variants and which values within each variant are available in your account and Region. It doesn't return the `AutoAllowlist` variant.
+Call ListFirewallRuleTypes to discover which rule-type variants and which values within each variant are available in your account and Region.
 
 ## Syntax
 <a name="aws-properties-route53resolver-firewallrulegroup-firewallruletype-syntax"></a>
@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-route53resolver-firewallrulegroup-firewallruletype-syntax.json"></a>
 
-```
+```json
 {
   "[FirewallAdvancedContentCategory](#cfn-route53resolver-firewallrulegroup-firewallruletype-firewalladvancedcontentcategory)" : {{FirewallAdvancedContentCategoryConfig}},
   "[FirewallAdvancedThreatCategory](#cfn-route53resolver-firewallrulegroup-firewallruletype-firewalladvancedthreatcategory)" : {{FirewallAdvancedThreatCategoryConfig}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-route53resolver-firewallrulegroup-firewallruletype-syntax.yaml"></a>
 
-```
+```yaml
   [FirewallAdvancedContentCategory](#cfn-route53resolver-firewallrulegroup-firewallruletype-firewalladvancedcontentcategory): {{
     FirewallAdvancedContentCategoryConfig}}
   [FirewallAdvancedThreatCategory](#cfn-route53resolver-firewallrulegroup-firewallruletype-firewalladvancedthreatcategory): {{

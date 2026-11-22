@@ -18,7 +18,7 @@ The following code examples show how to:
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/AutoScaling#code-examples).
 
-```
+```csharp
 global using Amazon.AutoScaling;
 global using Amazon.AutoScaling.Model;
 global using Amazon.CloudWatch;
@@ -361,7 +361,7 @@ public class UIWrapper
 ```
 Define functions that are called by the scenario to manage launch templates and metrics. These functions wrap Auto Scaling, Amazon EC2, and CloudWatch actions.
 
-```
+```csharp
 namespace AutoScalingActions;
 
 using Amazon.AutoScaling;
@@ -907,7 +907,7 @@ public class CloudWatchWrapper
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/autoscaling#code-examples).
 
-```
+```cpp
 //! Routine which demonstrates using an Auto Scaling group
 //! to manage Amazon EC2 instances.
 /*!
@@ -1571,7 +1571,7 @@ bool AwsDoc::AutoScaling::describeGroup(const Aws::String &groupName,
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/autoscale#code-examples).
 
-```
+```java
 /**
  * Before running this SDK for Java (v2) code example, set up your development
  * environment, including your credentials.
@@ -2057,7 +2057,7 @@ public class AutoScalingScenario {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/autoscale#code-examples).
 
-```
+```kotlin
 suspend fun main(args: Array<String>) {
     val usage = """
     Usage:
@@ -2373,7 +2373,7 @@ suspend fun deleteSpecificAutoScalingGroup(groupName: String) {
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/auto-scaling#code-examples).
 
-```
+```php
 namespace AutoScaling;
 
 use Aws\AutoScaling\AutoScalingClient;
@@ -2638,7 +2638,7 @@ class GettingStartedWithAutoScaling implements RunnableExample
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/auto-scaling#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```python
 def run_scenario(as_wrapper: AutoScalingWrapper, svc_helper: ServiceHelper) -> None:
     """
     Runs the scenario demonstrating the management of Auto Scaling groups and instances.
@@ -2854,7 +2854,7 @@ if __name__ == "__main__":
 ```
 Define functions that are called by the scenario to manage launch templates and metrics. These functions wrap Amazon EC2 and CloudWatch actions.
 
-```
+```python
 class ServiceHelper:
     """Encapsulates Amazon EC2 and CloudWatch actions for the example."""
 
@@ -3107,7 +3107,7 @@ def wait_for_instances(instance_ids: list, as_wrapper: AutoScalingWrapper) -> li
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/auto-scaling#code-examples).
 
-```
+```rust
 [package]
 name = "autoscaling-code-examples"
 version = "0.1.0"

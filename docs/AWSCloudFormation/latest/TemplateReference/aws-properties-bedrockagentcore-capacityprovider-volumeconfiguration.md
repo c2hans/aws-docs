@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-capacityprovider-volumeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EbsConfiguration](#cfn-bedrockagentcore-capacityprovider-volumeconfiguration-ebsconfiguration)" : {{EbsVolumeConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-capacityprovider-volumeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EbsConfiguration](#cfn-bedrockagentcore-capacityprovider-volumeconfiguration-ebsconfiguration): {{
     EbsVolumeConfiguration}}
 ```

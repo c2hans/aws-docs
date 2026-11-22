@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-licensemanager-licenseassetgroup-licenseassetgroupconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[UsageDimension](#cfn-licensemanager-licenseassetgroup-licenseassetgroupconfiguration-usagedimension)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-licensemanager-licenseassetgroup-licenseassetgroupconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [UsageDimension](#cfn-licensemanager-licenseassetgroup-licenseassetgroupconfiguration-usagedimension): {{String}}
 ```
 

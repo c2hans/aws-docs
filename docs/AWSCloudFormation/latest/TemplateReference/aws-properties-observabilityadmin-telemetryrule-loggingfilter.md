@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-observabilityadmin-telemetryrule-loggingfilter-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultBehavior](#cfn-observabilityadmin-telemetryrule-loggingfilter-defaultbehavior)" : {{String}},
   "[Filters](#cfn-observabilityadmin-telemetryrule-loggingfilter-filters)" : {{[ Filter, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-observabilityadmin-telemetryrule-loggingfilter-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultBehavior](#cfn-observabilityadmin-telemetryrule-loggingfilter-defaultbehavior): {{String}}
   [Filters](#cfn-observabilityadmin-telemetryrule-loggingfilter-filters): {{
     - Filter}}

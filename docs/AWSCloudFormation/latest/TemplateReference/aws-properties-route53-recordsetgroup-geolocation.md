@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-route53-recordsetgroup-geolocation-syntax.json"></a>
 
-```
+```json
 {
   "[ContinentCode](#cfn-route53-recordsetgroup-geolocation-continentcode)" : {{String}},
   "[CountryCode](#cfn-route53-recordsetgroup-geolocation-countrycode)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-route53-recordsetgroup-geolocation-syntax.yaml"></a>
 
-```
+```yaml
   [ContinentCode](#cfn-route53-recordsetgroup-geolocation-continentcode): {{String}}
   [CountryCode](#cfn-route53-recordsetgroup-geolocation-countrycode): {{String}}
   [SubdivisionCode](#cfn-route53-recordsetgroup-geolocation-subdivisioncode): {{String}}

@@ -18,7 +18,7 @@ The serialization library name for the Lazy Simple SerDe is `org.apache.hadoop.h
 
 To ignore headers in your data when you define a table, you can use the `skip.header.line.count` table property, as in the following example.
 
-```
+```sql
 TBLPROPERTIES ("skip.header.line.count"="1")
 ```
 
@@ -34,7 +34,7 @@ Replace {{myregion}} in `s3://athena-examples-{{myregion}}/path/to/data/` with t
 
 Use the `CREATE TABLE` statement to create an Athena table from the underlying data in CSV stored in Amazon S3.
 
-```
+```sql
 CREATE EXTERNAL TABLE flight_delays_csv (
     yr INT,
     quarter INT,
@@ -156,13 +156,13 @@ CREATE EXTERNAL TABLE flight_delays_csv (
 
 Run `MSCK REPAIR TABLE` to refresh partition metadata each time a new partition is added to this table:
 
-```
+```sql
 MSCK REPAIR TABLE flight_delays_csv;
 ```
 
 Query the top 10 routes delayed by more than 1 hour:
 
-```
+```sql
 SELECT origin, dest, count(*) as delays
 FROM flight_delays_csv
 WHERE depdelayminutes > 60
@@ -179,7 +179,7 @@ The flight table data comes from [Flights](http://www.transtats.bts.gov/DL_Selec
 
 To create an Athena table from TSV data stored in Amazon S3, use `ROW FORMAT DELIMITED` and specify the `\t` as the tab field delimiter, `\n` as the line separator, and `\` as the escape character. The following excerpt shows this syntax. No sample TSV flight data is available in the `athena-examples` location, but as with the CSV table, you would run `MSCK REPAIR TABLE` to refresh partition metadata each time a new partition is added.
 
-```
+```sql
 ...
 ROW FORMAT DELIMITED
 FIELDS TERMINATED BY '\t'

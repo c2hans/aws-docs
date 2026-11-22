@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-neptune-dbcluster-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Neptune::DBCluster",
   "Properties" : {
@@ -62,7 +62,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-neptune-dbcluster-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Neptune::DBCluster
 Properties:
   [AssociatedRoles](#cfn-neptune-dbcluster-associatedroles): {{

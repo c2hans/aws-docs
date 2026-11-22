@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-backup-legalhold-daterange-syntax.json"></a>
 
-```
+```json
 {
   "[FromDate](#cfn-backup-legalhold-daterange-fromdate)" : {{String}},
   "[ToDate](#cfn-backup-legalhold-daterange-todate)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-backup-legalhold-daterange-syntax.yaml"></a>
 
-```
+```yaml
   [FromDate](#cfn-backup-legalhold-daterange-fromdate): {{String}}
   [ToDate](#cfn-backup-legalhold-daterange-todate): {{String}}
 ```

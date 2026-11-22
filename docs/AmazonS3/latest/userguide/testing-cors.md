@@ -16,7 +16,7 @@ For guidance on configuring and troubleshooting CORS rules, see [How do I config
 ------
 #### [ JSON ]
 
-```
+```JSON
 [
     {
         "AllowedHeaders": [

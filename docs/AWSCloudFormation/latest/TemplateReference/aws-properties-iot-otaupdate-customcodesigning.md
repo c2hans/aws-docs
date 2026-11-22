@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-otaupdate-customcodesigning-syntax.json"></a>
 
-```
+```json
 {
   "[CertificateChain](#cfn-iot-otaupdate-customcodesigning-certificatechain)" : {{CodeSigningCertificateChain}},
   "[HashAlgorithm](#cfn-iot-otaupdate-customcodesigning-hashalgorithm)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-otaupdate-customcodesigning-syntax.yaml"></a>
 
-```
+```yaml
   [CertificateChain](#cfn-iot-otaupdate-customcodesigning-certificatechain): {{
     CodeSigningCertificateChain}}
   [HashAlgorithm](#cfn-iot-otaupdate-customcodesigning-hashalgorithm): {{String}}

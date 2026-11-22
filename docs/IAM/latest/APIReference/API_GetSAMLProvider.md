@@ -31,14 +31,37 @@ Specifies the encryption setting for the SAML provider.
 Type: String
 Valid Values: `Required | Allowed`
 
+ ** ContextProvider **
+The trusted identity propagation context provider configuration associated with the SAML provider. For more information, see [ContextProvider](https://docs.aws.amazon.com/IAM/latest/APIReference/API_ContextProvider.html).
+This element is returned only when a trusted identity propagation context provider is configured for the SAML provider.
+Type: [ContextProvider](API_ContextProvider.md) object
+
  ** CreateDate **
 The date and time when the SAML provider was created.
 Type: Timestamp
+
+ ** IdentityCenterInstanceArn **
+The Amazon Resource Name (ARN) of the IAM Identity Center instance associated with the SAML provider.
+For the format, see [InstanceMetadata](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_InstanceMetadata.html) in the *IAM Identity Center API Reference*.
+This element is returned only when an IAM Identity Center instance is associated with the SAML provider.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 1224.
+
+ ** IdentityStoreArn **
+The Amazon Resource Name (ARN) of the identity store that is resolved from the associated IAM Identity Center instance.
+For the format, see [InstanceMetadata](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_InstanceMetadata.html) in the *IAM Identity Center API Reference*.
+This element is returned only when an IAM Identity Center instance is associated with the SAML provider.
+Type: String
+Length Constraints: Minimum length of 20. Maximum length of 2048.
 
  **PrivateKeyList.member.N**
 The private key metadata for the SAML provider.
 Type: Array of [SAMLPrivateKey](API_SAMLPrivateKey.md) objects
 Array Members: Maximum number of 2 items.
+
+ **SAMLKeyHashes.member.N**
+The key hashes associated with the SAML provider, grouped by identity provider issuer. For more information, see [SAMLKeyHashEntry](https://docs.aws.amazon.com/IAM/latest/APIReference/API_SAMLKeyHashEntry.html).
+Type: Array of [SAMLKeyHashEntry](API_SAMLKeyHashEntry.md) objects
 
  ** SAMLMetadataDocument **
 The XML metadata document that includes information about an identity provider.
@@ -115,6 +138,26 @@ https://iam.amazonaws.com/?Action=GetSAMLProvider
         <Timestamp>2024-07-03T18:03:44Z</Timestamp>
     </member>
   </PrivateKeyList>
+  <ContextProvider>
+    <SubjectSourceKey>email</SubjectSourceKey>
+    <SubjectTypeValue>user</SubjectTypeValue>
+    <KeyDefinitionList>
+      <member>
+        <SourceKey>department</SourceKey>
+        <TargetKey>department</TargetKey>
+      </member>
+    </KeyDefinitionList>
+  </ContextProvider>
+  <SAMLKeyHashes>
+    <member>
+      <IssuerURL>https://idp.example.com/saml</IssuerURL>
+      <KeyHashes>
+        <member>a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8EXAMPLE</member>
+      </KeyHashes>
+    </member>
+  </SAMLKeyHashes>
+  <IdentityCenterInstanceArn>arn:aws:sso:::instance/ssoins-1234567890abcdef</IdentityCenterInstanceArn>
+  <IdentityStoreArn>arn:aws:identitystore::123456789012:identitystore/d-1234567890</IdentityStoreArn>
 </GetSAMLProviderResult>
 <ResponseMetadata>
   <RequestId>29f47818-99f5-11e1-a4c3-27EXAMPLE804</RequestId>

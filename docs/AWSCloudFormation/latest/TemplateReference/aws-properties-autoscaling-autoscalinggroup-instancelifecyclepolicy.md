@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-autoscaling-autoscalinggroup-instancelifecyclepolicy-syntax.json"></a>
 
-```
+```json
 {
   "[RetentionTriggers](#cfn-autoscaling-autoscalinggroup-instancelifecyclepolicy-retentiontriggers)" : {{RetentionTriggers}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-autoscaling-autoscalinggroup-instancelifecyclepolicy-syntax.yaml"></a>
 
-```
+```yaml
   [RetentionTriggers](#cfn-autoscaling-autoscalinggroup-instancelifecyclepolicy-retentiontriggers): {{
     RetentionTriggers}}
 ```

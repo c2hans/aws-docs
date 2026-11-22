@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigatewayv2-routeresponse-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGatewayV2::RouteResponse",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigatewayv2-routeresponse-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGatewayV2::RouteResponse
 Properties:
   [ApiId](#cfn-apigatewayv2-routeresponse-apiid): {{String}}
@@ -118,7 +118,7 @@ The following example creates a `RouteResponse` resource for a WebSocket API cal
 #### JSON
 <a name="aws-resource-apigatewayv2-routeresponse--examples--Route_response_creation_example--json"></a>
 
-```
+```json
 {
     "MyRouteResponse": {
         "Type": "AWS::ApiGatewayV2::RouteResponse",
@@ -138,7 +138,7 @@ The following example creates a `RouteResponse` resource for a WebSocket API cal
 #### YAML
 <a name="aws-resource-apigatewayv2-routeresponse--examples--Route_response_creation_example--yaml"></a>
 
-```
+```yaml
 MyRouteResponse:
   Type: 'AWS::ApiGatewayV2::RouteResponse'
   Properties:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-computeoptimizer-automationrule-resourcetagscriteriacondition-syntax.json"></a>
 
-```
+```json
 {
   "[Comparison](#cfn-computeoptimizer-automationrule-resourcetagscriteriacondition-comparison)" : {{String}},
   "[Key](#cfn-computeoptimizer-automationrule-resourcetagscriteriacondition-key)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-computeoptimizer-automationrule-resourcetagscriteriacondition-syntax.yaml"></a>
 
-```
+```yaml
   [Comparison](#cfn-computeoptimizer-automationrule-resourcetagscriteriacondition-comparison): {{String}}
   [Key](#cfn-computeoptimizer-automationrule-resourcetagscriteriacondition-key): {{String}}
   [Values](#cfn-computeoptimizer-automationrule-resourcetagscriteriacondition-values): {{

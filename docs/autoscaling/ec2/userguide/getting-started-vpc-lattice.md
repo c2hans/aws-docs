@@ -19,7 +19,7 @@ Before you attach a VPC Lattice target group to your Auto Scaling group, you mus
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

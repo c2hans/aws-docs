@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-collaboration-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-cleanrooms-collaboration-tag-key)" : {{String}},
   "[Value](#cfn-cleanrooms-collaboration-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-collaboration-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-cleanrooms-collaboration-tag-key): {{String}}
   [Value](#cfn-cleanrooms-collaboration-tag-value): {{String}}
 ```

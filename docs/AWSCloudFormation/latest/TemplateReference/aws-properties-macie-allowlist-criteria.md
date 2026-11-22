@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-macie-allowlist-criteria-syntax.json"></a>
 
-```
+```json
 {
   "[Regex](#cfn-macie-allowlist-criteria-regex)" : {{String}},
   "[S3WordsList](#cfn-macie-allowlist-criteria-s3wordslist)" : {{S3WordsList}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-macie-allowlist-criteria-syntax.yaml"></a>
 
-```
+```yaml
   [Regex](#cfn-macie-allowlist-criteria-regex): {{String}}
   [S3WordsList](#cfn-macie-allowlist-criteria-s3wordslist): {{
     S3WordsList}}

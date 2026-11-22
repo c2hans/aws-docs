@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrserverless-application-schedulerconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MaxConcurrentRuns](#cfn-emrserverless-application-schedulerconfiguration-maxconcurrentruns)" : {{Integer}},
   "[QueueTimeoutMinutes](#cfn-emrserverless-application-schedulerconfiguration-queuetimeoutminutes)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrserverless-application-schedulerconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MaxConcurrentRuns](#cfn-emrserverless-application-schedulerconfiguration-maxconcurrentruns): {{Integer}}
   [QueueTimeoutMinutes](#cfn-emrserverless-application-schedulerconfiguration-queuetimeoutminutes): {{Integer}}
 ```

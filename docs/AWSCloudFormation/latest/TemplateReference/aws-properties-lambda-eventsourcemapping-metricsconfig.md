@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-eventsourcemapping-metricsconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Metrics](#cfn-lambda-eventsourcemapping-metricsconfig-metrics)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-eventsourcemapping-metricsconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Metrics](#cfn-lambda-eventsourcemapping-metricsconfig-metrics): {{
     - String}}
 ```

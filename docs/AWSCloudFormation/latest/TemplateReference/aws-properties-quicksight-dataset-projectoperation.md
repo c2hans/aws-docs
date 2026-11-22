@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-projectoperation-syntax.json"></a>
 
-```
+```json
 {
   "[Alias](#cfn-quicksight-dataset-projectoperation-alias)" : {{String}},
   "[ProjectedColumns](#cfn-quicksight-dataset-projectoperation-projectedcolumns)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-projectoperation-syntax.yaml"></a>
 
-```
+```yaml
   [Alias](#cfn-quicksight-dataset-projectoperation-alias): {{String}}
   [ProjectedColumns](#cfn-quicksight-dataset-projectoperation-projectedcolumns): {{
     - String}}

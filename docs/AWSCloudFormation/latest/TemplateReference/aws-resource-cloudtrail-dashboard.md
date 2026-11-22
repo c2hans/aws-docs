@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudtrail-dashboard-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudTrail::Dashboard",
   "Properties" : {
@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudtrail-dashboard-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudTrail::Dashboard
 Properties:
   [Name](#cfn-cloudtrail-dashboard-name): {{String}}
@@ -130,7 +130,7 @@ The following example creates a custom dashboard named `AccountActivityDashboard
 #### JSON
 <a name="aws-resource-cloudtrail-dashboard--examples--Example:_Create_a_custom_dashboard--json"></a>
 
-```
+```json
 {
     "Resources": {
         "Dashboard": {
@@ -215,7 +215,7 @@ The following example creates a custom dashboard named `AccountActivityDashboard
 #### YAML
 <a name="aws-resource-cloudtrail-dashboard--examples--Example:_Create_a_custom_dashboard--yaml"></a>
 
-```
+```yaml
 Resources:
   Dashboard:
     Type: 'AWS::CloudTrail::Dashboard'

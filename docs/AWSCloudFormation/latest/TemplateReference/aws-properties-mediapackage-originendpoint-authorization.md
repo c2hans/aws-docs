@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackage-originendpoint-authorization-syntax.json"></a>
 
-```
+```json
 {
   "[CdnIdentifierSecret](#cfn-mediapackage-originendpoint-authorization-cdnidentifiersecret)" : {{String}},
   "[SecretsRoleArn](#cfn-mediapackage-originendpoint-authorization-secretsrolearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackage-originendpoint-authorization-syntax.yaml"></a>
 
-```
+```yaml
   [CdnIdentifierSecret](#cfn-mediapackage-originendpoint-authorization-cdnidentifiersecret): {{String}}
   [SecretsRoleArn](#cfn-mediapackage-originendpoint-authorization-secretsrolearn): {{String}}
 ```

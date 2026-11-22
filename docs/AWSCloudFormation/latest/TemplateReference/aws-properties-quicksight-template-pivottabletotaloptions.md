@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-pivottabletotaloptions-syntax.json"></a>
 
-```
+```json
 {
   "[ColumnSubtotalOptions](#cfn-quicksight-template-pivottabletotaloptions-columnsubtotaloptions)" : {{SubtotalOptions}},
   "[ColumnTotalOptions](#cfn-quicksight-template-pivottabletotaloptions-columntotaloptions)" : {{PivotTotalOptions}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-pivottabletotaloptions-syntax.yaml"></a>
 
-```
+```yaml
   [ColumnSubtotalOptions](#cfn-quicksight-template-pivottabletotaloptions-columnsubtotaloptions): {{
     SubtotalOptions}}
   [ColumnTotalOptions](#cfn-quicksight-template-pivottabletotaloptions-columntotaloptions): {{

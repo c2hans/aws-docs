@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudtrail-dashboard-frequency-syntax.json"></a>
 
-```
+```json
 {
   "[Unit](#cfn-cloudtrail-dashboard-frequency-unit)" : {{String}},
   "[Value](#cfn-cloudtrail-dashboard-frequency-value)" : {{Integer}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudtrail-dashboard-frequency-syntax.yaml"></a>
 
-```
+```yaml
   [Unit](#cfn-cloudtrail-dashboard-frequency-unit): {{String}}
   [Value](#cfn-cloudtrail-dashboard-frequency-value): {{Integer}}
 ```

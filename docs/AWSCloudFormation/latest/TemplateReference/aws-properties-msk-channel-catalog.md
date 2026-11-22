@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-channel-catalog-syntax.json"></a>
 
-```
+```json
 {
   "[CatalogArn](#cfn-msk-channel-catalog-catalogarn)" : {{String}},
   "[WarehouseLocation](#cfn-msk-channel-catalog-warehouselocation)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-channel-catalog-syntax.yaml"></a>
 
-```
+```yaml
   [CatalogArn](#cfn-msk-channel-catalog-catalogarn): {{String}}
   [WarehouseLocation](#cfn-msk-channel-catalog-warehouselocation): {{String}}
 ```

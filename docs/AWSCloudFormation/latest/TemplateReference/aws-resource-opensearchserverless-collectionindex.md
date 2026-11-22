@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-opensearchserverless-collectionindex-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::OpenSearchServerless::CollectionIndex",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-opensearchserverless-collectionindex-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::OpenSearchServerless::CollectionIndex
 Properties:
   [Id](#cfn-opensearchserverless-collectionindex-id): {{String}}

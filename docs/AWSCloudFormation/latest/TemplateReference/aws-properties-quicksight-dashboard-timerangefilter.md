@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-timerangefilter-syntax.json"></a>
 
-```
+```json
 {
   "[Column](#cfn-quicksight-dashboard-timerangefilter-column)" : {{ColumnIdentifier}},
   "[DefaultFilterControlConfiguration](#cfn-quicksight-dashboard-timerangefilter-defaultfiltercontrolconfiguration)" : {{DefaultFilterControlConfiguration}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-timerangefilter-syntax.yaml"></a>
 
-```
+```yaml
   [Column](#cfn-quicksight-dashboard-timerangefilter-column): {{
     ColumnIdentifier}}
   [DefaultFilterControlConfiguration](#cfn-quicksight-dashboard-timerangefilter-defaultfiltercontrolconfiguration): {{

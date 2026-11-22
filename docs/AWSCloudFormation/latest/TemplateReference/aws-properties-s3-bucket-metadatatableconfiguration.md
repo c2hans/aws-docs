@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-metadatatableconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[S3TablesDestination](#cfn-s3-bucket-metadatatableconfiguration-s3tablesdestination)" : {{S3TablesDestination}}
 }
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-metadatatableconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [S3TablesDestination](#cfn-s3-bucket-metadatatableconfiguration-s3tablesdestination): {{
     S3TablesDestination}}
 ```
@@ -54,7 +54,7 @@ The following example creates an S3 Metadata configuration for the specified gen
 #### JSON
 <a name="aws-properties-s3-bucket-metadatatableconfiguration--examples--Create_metadata_table_configuration--json"></a>
 
-```
+```json
 {
   "Resources": {
     "S3TableBucket": {
@@ -89,7 +89,7 @@ The following example creates an S3 Metadata configuration for the specified gen
 #### YAML
 <a name="aws-properties-s3-bucket-metadatatableconfiguration--examples--Create_metadata_table_configuration--yaml"></a>
 
-```
+```yaml
 Resources:
   S3TableBucket:
     Type: AWS::S3Tables::TableBucket

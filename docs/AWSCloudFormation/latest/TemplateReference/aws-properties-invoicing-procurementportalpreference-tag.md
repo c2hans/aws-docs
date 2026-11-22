@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-invoicing-procurementportalpreference-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-invoicing-procurementportalpreference-tag-key)" : {{String}},
   "[Value](#cfn-invoicing-procurementportalpreference-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-invoicing-procurementportalpreference-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-invoicing-procurementportalpreference-tag-key): {{String}}
   [Value](#cfn-invoicing-procurementportalpreference-tag-value): {{String}}
 ```

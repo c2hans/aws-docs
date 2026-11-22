@@ -43,7 +43,7 @@ To set up server access log delivery to CloudWatch Logs using the AWS Command Li
 
 1. **Create a delivery source.** This registers your Amazon S3 bucket as a log source with CloudWatch Logs.
 
-   ```
+   ```bash
    aws logs put-delivery-source \
      --name {{my-sal-source}} \
      --resource-arn arn:aws:s3:::{{my-bucket}} \
@@ -52,7 +52,7 @@ To set up server access log delivery to CloudWatch Logs using the AWS Command Li
 
 1. **Create a delivery destination.** This specifies the CloudWatch Logs log group where logs will be delivered.
 
-   ```
+   ```bash
    aws logs put-delivery-destination \
      --name {{my-sal-destination}} \
      --delivery-destination-configuration '{"destinationResourceArn": "arn:aws:logs:{{us-east-1}}:{{123456789012}}:log-group:{{my-sal-logs}}"}'
@@ -60,7 +60,7 @@ To set up server access log delivery to CloudWatch Logs using the AWS Command Li
 
 1. **Create a delivery.** This links the source to the destination and starts log delivery.
 
-   ```
+   ```bash
    aws logs create-delivery \
      --delivery-source-name {{my-sal-source}} \
      --delivery-destination-arn arn:aws:logs:{{us-east-1}}:{{123456789012}}:delivery-destination:{{my-sal-destination}}
@@ -96,7 +96,7 @@ After you save, the **Server access log delivery to CloudWatch Logs** section di
 
 You can use AWS CloudFormation to automate the setup of server access log delivery to CloudWatch Logs. The following template creates the required resources: an IAM role, a CloudWatch Logs log group, a delivery source, a delivery destination, and a delivery.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: S3 Access Logs delivery to CloudWatch Logs
 
@@ -145,7 +145,7 @@ There is no additional charge for storage or table maintenance in the S3 Tables 
 
 1. **Create the S3 Tables integration** (once per account per Region).
 
-   ```
+   ```bash
    aws observabilityadmin create-s3-table-integration \
      --role-arn arn:aws:iam::{{123456789012}}:role/{{CWLogsS3TableIntegrationRole}} \
      --encryption '{"SseAlgorithm": "AES256"}'
@@ -153,7 +153,7 @@ There is no additional charge for storage or table maintenance in the S3 Tables 
 
    The IAM role must trust the `logs.amazonaws.com` service principal and grant the `logs:integrateWithS3Table` permission. The following is an example trust policy:
 
-   ```
+   ```json
    		 	 	 {
      "Version": "2012-10-17",
      "Statement": [
@@ -178,7 +178,7 @@ There is no additional charge for storage or table maintenance in the S3 Tables 
 
    The role also needs the following permission policy:
 
-   ```
+   ```json
    		 	 	 {
      "Version": "2012-10-17",
      "Statement": [
@@ -198,7 +198,7 @@ There is no additional charge for storage or table maintenance in the S3 Tables 
 
 1. **Associate your delivery source to the integration.**
 
-   ```
+   ```bash
    aws logs associate-source-to-s3-table-integration \
      --integration-arn {{integration-arn}} \
      --data-source '{"name":"amazon_s3","type":"server_access"}'
@@ -227,7 +227,7 @@ You can encrypt server access logs delivered to CloudWatch Logs by configuring A
 
 If you enable the S3 Tables integration with a AWS KMS-encrypted log group, you must grant additional permissions in your AWS KMS key policy to the following service principals:
 
-```
+```json
 		 	 	 {
   "Version": "2012-10-17",
   "Statement": [
@@ -278,13 +278,13 @@ The `systemtables.cloudwatch.amazonaws.com` principal is used by CloudWatch Logs
 To stop delivering server access logs to CloudWatch Logs, you can delete the delivery or the delivery source:
 + **Delete the delivery** – stops log delivery but keeps the delivery source configuration intact. You can create a new delivery later without reconfiguring the source.
 
-  ```
+  ```bash
   aws logs delete-delivery \
     --id {{delivery-id}}
   ```
 + **Delete the delivery source** – removes the source configuration entirely. Use this if you no longer want the bucket associated with CloudWatch Logs delivery.
 
-  ```
+  ```bash
   aws logs delete-delivery-source \
     --name {{delivery-source-name}}
   ```

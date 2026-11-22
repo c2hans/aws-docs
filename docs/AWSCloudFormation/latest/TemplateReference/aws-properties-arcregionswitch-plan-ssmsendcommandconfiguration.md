@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-arcregionswitch-plan-ssmsendcommandconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[RegionDocuments](#cfn-arcregionswitch-plan-ssmsendcommandconfiguration-regiondocuments)" : {{{{{Key}}: {{Value}}, ...}}},
   "[RetryIntervalMinutes](#cfn-arcregionswitch-plan-ssmsendcommandconfiguration-retryintervalminutes)" : {{Number}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-arcregionswitch-plan-ssmsendcommandconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [RegionDocuments](#cfn-arcregionswitch-plan-ssmsendcommandconfiguration-regiondocuments): {{
     {{Key}}: {{Value}}}}
   [RetryIntervalMinutes](#cfn-arcregionswitch-plan-ssmsendcommandconfiguration-retryintervalminutes): {{Number}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-transitgatewaymulticastdomain-options-syntax.json"></a>
 
-```
+```json
 {
   "[AutoAcceptSharedAssociations](#cfn-ec2-transitgatewaymulticastdomain-options-autoacceptsharedassociations)" : {{String}},
   "[Igmpv2Support](#cfn-ec2-transitgatewaymulticastdomain-options-igmpv2support)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-transitgatewaymulticastdomain-options-syntax.yaml"></a>
 
-```
+```yaml
   [AutoAcceptSharedAssociations](#cfn-ec2-transitgatewaymulticastdomain-options-autoacceptsharedassociations): {{String}}
   [Igmpv2Support](#cfn-ec2-transitgatewaymulticastdomain-options-igmpv2support): {{String}}
   [StaticSourcesSupport](#cfn-ec2-transitgatewaymulticastdomain-options-staticsourcessupport): {{String}}

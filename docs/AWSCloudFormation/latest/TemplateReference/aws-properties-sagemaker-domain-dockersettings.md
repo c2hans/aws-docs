@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-domain-dockersettings-syntax.json"></a>
 
-```
+```json
 {
   "[EnableDockerAccess](#cfn-sagemaker-domain-dockersettings-enabledockeraccess)" : {{String}},
   "[VpcOnlyTrustedAccounts](#cfn-sagemaker-domain-dockersettings-vpconlytrustedaccounts)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-domain-dockersettings-syntax.yaml"></a>
 
-```
+```yaml
   [EnableDockerAccess](#cfn-sagemaker-domain-dockersettings-enabledockeraccess): {{String}}
   [VpcOnlyTrustedAccounts](#cfn-sagemaker-domain-dockersettings-vpconlytrustedaccounts): {{
     - String}}

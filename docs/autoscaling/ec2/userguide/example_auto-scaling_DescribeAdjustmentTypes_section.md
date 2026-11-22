@@ -42,7 +42,7 @@ For more information, see [Scaling adjustment types](https://docs.aws.amazon.com
 **Tools for PowerShell V4**
 **Example 1: This example describes the adjustment types that are supported by Auto Scaling.**
 
-```
+```powershell
 Get-ASAdjustmentType
 ```
 **Output:**
@@ -59,7 +59,7 @@ PercentChangeInCapacity
 **Tools for PowerShell V5**
 **Example 1: This example describes the adjustment types that are supported by Auto Scaling.**
 
-```
+```powershell
 Get-ASAdjustmentType
 ```
 **Output:**

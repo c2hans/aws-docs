@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-finspace-environment-federationparameters-syntax.json"></a>
 
-```
+```json
 {
   "[ApplicationCallBackURL](#cfn-finspace-environment-federationparameters-applicationcallbackurl)" : {{String}},
   "[AttributeMap](#cfn-finspace-environment-federationparameters-attributemap)" : {{[ AttributeMapItems, ... ]}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-finspace-environment-federationparameters-syntax.yaml"></a>
 
-```
+```yaml
   [ApplicationCallBackURL](#cfn-finspace-environment-federationparameters-applicationcallbackurl): {{String}}
   [AttributeMap](#cfn-finspace-environment-federationparameters-attributemap): {{
     - AttributeMapItems}}

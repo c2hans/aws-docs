@@ -33,7 +33,7 @@ Alternatively, you can provide read-only access to a subset of resources. To do 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [{
@@ -64,7 +64,7 @@ The following policy allows users to view instances in the Amazon EC2 console, a
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [{
@@ -107,7 +107,7 @@ To complete a launch successfully, users must be given permission to use the `ec
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -160,7 +160,7 @@ The first statement grants users permission to view the options in the launch in
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [{
@@ -230,7 +230,7 @@ The first statement grants users the permission to view Systems Manager paramete
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [{
@@ -267,7 +267,7 @@ In the first statement, the `ec2:DescribeTags` action allows users to view tags 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [{
@@ -337,7 +337,7 @@ The following policy grants users permission to use the **Create Security Group*
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [{
@@ -388,7 +388,7 @@ The following policy allows users to view, allocate, and associate Elastic IP ad
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -420,7 +420,7 @@ This policy allows users to view all the Reserved Instances, as well as On-Deman
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-s3accesspointattachment-ontapunixfilesystemuser-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-fsx-s3accesspointattachment-ontapunixfilesystemuser-name)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-s3accesspointattachment-ontapunixfilesystemuser-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-fsx-s3accesspointattachment-ontapunixfilesystemuser-name): {{String}}
 ```
 

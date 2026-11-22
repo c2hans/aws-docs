@@ -16,7 +16,7 @@ Another way to use Amazon ECS with CloudFormation is through the AWS CLI. You ca
 
 To create a stack using the AWS CLI saved in a file called `ecs-tutorial-template.yaml`, run the following command.
 
-```
+```YAML
 cat << 'EOF' > ecs-tutorial-template.yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: '[AWSDocs] ECS: load-balanced-web-application'

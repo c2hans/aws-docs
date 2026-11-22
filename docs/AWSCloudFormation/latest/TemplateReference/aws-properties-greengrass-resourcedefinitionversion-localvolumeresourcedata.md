@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrass-resourcedefinitionversion-localvolumeresourcedata-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationPath](#cfn-greengrass-resourcedefinitionversion-localvolumeresourcedata-destinationpath)" : {{String}},
   "[GroupOwnerSetting](#cfn-greengrass-resourcedefinitionversion-localvolumeresourcedata-groupownersetting)" : {{GroupOwnerSetting}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrass-resourcedefinitionversion-localvolumeresourcedata-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationPath](#cfn-greengrass-resourcedefinitionversion-localvolumeresourcedata-destinationpath): {{String}}
   [GroupOwnerSetting](#cfn-greengrass-resourcedefinitionversion-localvolumeresourcedata-groupownersetting): {{
     GroupOwnerSetting}}

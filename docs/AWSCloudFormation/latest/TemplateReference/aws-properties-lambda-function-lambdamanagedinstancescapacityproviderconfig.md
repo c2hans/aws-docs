@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-function-lambdamanagedinstancescapacityproviderconfig-syntax.json"></a>
 
-```
+```json
 {
   "[CapacityProviderArn](#cfn-lambda-function-lambdamanagedinstancescapacityproviderconfig-capacityproviderarn)" : {{String}},
   "[ExecutionEnvironmentMemoryGiBPerVCpu](#cfn-lambda-function-lambdamanagedinstancescapacityproviderconfig-executionenvironmentmemorygibpervcpu)" : {{Number}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-function-lambdamanagedinstancescapacityproviderconfig-syntax.yaml"></a>
 
-```
+```yaml
   [CapacityProviderArn](#cfn-lambda-function-lambdamanagedinstancescapacityproviderconfig-capacityproviderarn): {{String}}
   [ExecutionEnvironmentMemoryGiBPerVCpu](#cfn-lambda-function-lambdamanagedinstancescapacityproviderconfig-executionenvironmentmemorygibpervcpu): {{Number}}
   [PerExecutionEnvironmentMaxConcurrency](#cfn-lambda-function-lambdamanagedinstancescapacityproviderconfig-perexecutionenvironmentmaxconcurrency): {{Integer}}

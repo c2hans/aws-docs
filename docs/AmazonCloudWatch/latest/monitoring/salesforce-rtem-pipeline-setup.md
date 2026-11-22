@@ -8,7 +8,7 @@ Collects real-time events from Salesforce using OAuth2 authentication.
 
 Configure the Salesforce RTEM source with the following parameters:
 
-```
+```yaml
 source:
   salesforce_rtem:
     instance_url: "<<your-instance-url>>"

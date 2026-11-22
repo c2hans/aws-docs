@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspaces-workspace-workspaceproperties-syntax.json"></a>
 
-```
+```json
 {
   "[ComputeTypeName](#cfn-workspaces-workspace-workspaceproperties-computetypename)" : {{String}},
   "[RootVolumeSizeGib](#cfn-workspaces-workspace-workspaceproperties-rootvolumesizegib)" : {{Integer}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspaces-workspace-workspaceproperties-syntax.yaml"></a>
 
-```
+```yaml
   [ComputeTypeName](#cfn-workspaces-workspace-workspaceproperties-computetypename): {{String}}
   [RootVolumeSizeGib](#cfn-workspaces-workspace-workspaceproperties-rootvolumesizegib): {{Integer}}
   [RunningMode](#cfn-workspaces-workspace-workspaceproperties-runningmode): {{String}}

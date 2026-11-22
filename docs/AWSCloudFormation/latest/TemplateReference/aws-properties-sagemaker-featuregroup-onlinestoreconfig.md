@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-featuregroup-onlinestoreconfig-syntax.json"></a>
 
-```
+```json
 {
   "[EnableOnlineStore](#cfn-sagemaker-featuregroup-onlinestoreconfig-enableonlinestore)" : {{Boolean}},
   "[SecurityConfig](#cfn-sagemaker-featuregroup-onlinestoreconfig-securityconfig)" : {{OnlineStoreSecurityConfig}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-featuregroup-onlinestoreconfig-syntax.yaml"></a>
 
-```
+```yaml
   [EnableOnlineStore](#cfn-sagemaker-featuregroup-onlinestoreconfig-enableonlinestore): {{Boolean}}
   [SecurityConfig](#cfn-sagemaker-featuregroup-onlinestoreconfig-securityconfig): {{
     OnlineStoreSecurityConfig}}

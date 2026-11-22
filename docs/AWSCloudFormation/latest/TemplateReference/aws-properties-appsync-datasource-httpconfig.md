@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appsync-datasource-httpconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AuthorizationConfig](#cfn-appsync-datasource-httpconfig-authorizationconfig)" : {{AuthorizationConfig}},
   "[Endpoint](#cfn-appsync-datasource-httpconfig-endpoint)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appsync-datasource-httpconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AuthorizationConfig](#cfn-appsync-datasource-httpconfig-authorizationconfig): {{
     AuthorizationConfig}}
   [Endpoint](#cfn-appsync-datasource-httpconfig-endpoint): {{String}}

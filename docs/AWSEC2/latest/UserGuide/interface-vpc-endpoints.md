@@ -42,7 +42,7 @@ The following example shows a VPC endpoint policy that denies permission to crea
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

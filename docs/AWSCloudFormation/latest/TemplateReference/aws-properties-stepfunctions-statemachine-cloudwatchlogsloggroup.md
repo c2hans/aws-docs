@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-stepfunctions-statemachine-cloudwatchlogsloggroup-syntax.json"></a>
 
-```
+```json
 {
   "[LogGroupArn](#cfn-stepfunctions-statemachine-cloudwatchlogsloggroup-loggrouparn)" : {{String}}
 }
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-stepfunctions-statemachine-cloudwatchlogsloggroup-syntax.yaml"></a>
 
-```
+```yaml
   [LogGroupArn](#cfn-stepfunctions-statemachine-cloudwatchlogsloggroup-loggrouparn): {{String}}
 ```
 

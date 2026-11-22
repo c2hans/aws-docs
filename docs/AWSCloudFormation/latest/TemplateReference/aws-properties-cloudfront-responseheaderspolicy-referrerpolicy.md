@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-responseheaderspolicy-referrerpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[Override](#cfn-cloudfront-responseheaderspolicy-referrerpolicy-override)" : {{Boolean}},
   "[ReferrerPolicy](#cfn-cloudfront-responseheaderspolicy-referrerpolicy-referrerpolicy)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-responseheaderspolicy-referrerpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [Override](#cfn-cloudfront-responseheaderspolicy-referrerpolicy-override): {{Boolean}}
   [ReferrerPolicy](#cfn-cloudfront-responseheaderspolicy-referrerpolicy-referrerpolicy): {{String}}
 ```

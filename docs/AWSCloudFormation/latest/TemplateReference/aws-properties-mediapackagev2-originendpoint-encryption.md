@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackagev2-originendpoint-encryption-syntax.json"></a>
 
-```
+```json
 {
   "[CmafExcludeSegmentDrmMetadata](#cfn-mediapackagev2-originendpoint-encryption-cmafexcludesegmentdrmmetadata)" : {{Boolean}},
   "[ConstantInitializationVector](#cfn-mediapackagev2-originendpoint-encryption-constantinitializationvector)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackagev2-originendpoint-encryption-syntax.yaml"></a>
 
-```
+```yaml
   [CmafExcludeSegmentDrmMetadata](#cfn-mediapackagev2-originendpoint-encryption-cmafexcludesegmentdrmmetadata): {{Boolean}}
   [ConstantInitializationVector](#cfn-mediapackagev2-originendpoint-encryption-constantinitializationvector): {{String}}
   [EncryptionMethod](#cfn-mediapackagev2-originendpoint-encryption-encryptionmethod): {{

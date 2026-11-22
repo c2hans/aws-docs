@@ -20,18 +20,18 @@ To enable block change tracking for a DB instance, use the Amazon RDS procedure 
 
 To determine whether block change tracking is enabled for your DB instance, run the following query.
 
-```
+```sql
 SELECT STATUS, FILENAME FROM V$BLOCK_CHANGE_TRACKING;
 ```
 
 The following example enables block change tracking for a DB instance.
 
-```
+```sql
 EXEC rdsadmin.rdsadmin_rman_util.enable_block_change_tracking;
 ```
 
 The following example disables block change tracking for a DB instance.
 
-```
+```sql
 EXEC rdsadmin.rdsadmin_rman_util.disable_block_change_tracking;
 ```

@@ -13,7 +13,7 @@ To use this policy, attach the policy to a Lambda [service role](id_roles_create
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

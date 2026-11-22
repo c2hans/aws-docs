@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-configuredtable-analysisrulecustom-syntax.json"></a>
 
-```
+```json
 {
   "[AdditionalAnalyses](#cfn-cleanrooms-configuredtable-analysisrulecustom-additionalanalyses)" : {{String}},
   "[AggregationThresholds](#cfn-cleanrooms-configuredtable-analysisrulecustom-aggregationthresholds)" : {{[ AggregationThreshold, ... ]}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-configuredtable-analysisrulecustom-syntax.yaml"></a>
 
-```
+```yaml
   [AdditionalAnalyses](#cfn-cleanrooms-configuredtable-analysisrulecustom-additionalanalyses): {{String}}
   [AggregationThresholds](#cfn-cleanrooms-configuredtable-analysisrulecustom-aggregationthresholds): {{
     - AggregationThreshold}}

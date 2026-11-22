@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-fargateprofile-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-eks-fargateprofile-tag-key)" : {{String}},
   "[Value](#cfn-eks-fargateprofile-tag-value)" : {{String}}
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-fargateprofile-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-eks-fargateprofile-tag-key): {{String}}
   [Value](#cfn-eks-fargateprofile-tag-value): {{String}}
 ```
@@ -68,7 +68,7 @@ The optional part of a key-value pair that make up a tag. A `value` acts as a de
 #### JSON
 <a name="aws-properties-eks-fargateprofile-tag--examples----json"></a>
 
-```
+```json
 "Tags" : [
    {
       "Key" : "keyname1",
@@ -84,7 +84,7 @@ The optional part of a key-value pair that make up a tag. A `value` acts as a de
 #### YAML
 <a name="aws-properties-eks-fargateprofile-tag--examples----yaml"></a>
 
-```
+```yaml
 Tags:
   - Key: "keyname1"
     Value: "value1"

@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-instance-ebs-syntax.json"></a>
 
-```
+```json
 {
   "[DeleteOnTermination](#cfn-ec2-instance-ebs-deleteontermination)" : {{Boolean}},
   "[Encrypted](#cfn-ec2-instance-ebs-encrypted)" : {{Boolean}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-instance-ebs-syntax.yaml"></a>
 
-```
+```yaml
   [DeleteOnTermination](#cfn-ec2-instance-ebs-deleteontermination): {{Boolean}}
   [Encrypted](#cfn-ec2-instance-ebs-encrypted): {{Boolean}}
   [Iops](#cfn-ec2-instance-ebs-iops): {{Integer}}
@@ -127,7 +127,7 @@ This example creates a 50GB io1 EBS volume from a snapshot, and configures it to
 #### JSON
 <a name="aws-properties-ec2-instance-ebs--examples--Create_an_EBS_volume_from_a_snapshot--json"></a>
 
-```
+```json
 {
     "DeviceName": "/dev/sdc",
     "Ebs": {
@@ -143,7 +143,7 @@ This example creates a 50GB io1 EBS volume from a snapshot, and configures it to
 #### YAML
 <a name="aws-properties-ec2-instance-ebs--examples--Create_an_EBS_volume_from_a_snapshot--yaml"></a>
 
-```
+```yaml
 BlockDeviceMappings:
   - DeviceName: /dev/sdc
     Ebs:

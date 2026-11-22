@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/creat
 
 **Basic system metrics configuration**
 
-```
+```json
 {
   "agent": {
     "metrics_collection_interval": 60,
@@ -36,7 +36,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/creat
 
 **Web server monitoring configuration **
 
-```
+```json
 {
   "agent": {
     "metrics_collection_interval": 60,
@@ -81,7 +81,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/creat
 
 **Database server configuration **
 
-```
+```json
 {
   "agent": {
     "metrics_collection_interval": 30,

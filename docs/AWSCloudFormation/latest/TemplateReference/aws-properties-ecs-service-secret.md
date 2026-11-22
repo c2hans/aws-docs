@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-secret-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-ecs-service-secret-name)" : {{String}},
   "[ValueFrom](#cfn-ecs-service-secret-valuefrom)" : {{String}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-secret-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-ecs-service-secret-name): {{String}}
   [ValueFrom](#cfn-ecs-service-secret-valuefrom): {{String}}
 ```
@@ -63,7 +63,7 @@ The following example specifies a secret for the service.
 #### JSON
 <a name="aws-properties-ecs-service-secret--examples--Specifying_a_secret_in_a_service--json"></a>
 
-```
+```json
   {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -93,7 +93,7 @@ The following example specifies a secret for the service.
 #### YAML
 <a name="aws-properties-ecs-service-secret--examples--Specifying_a_secret_in_a_service--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   ECSTaskDefinition:

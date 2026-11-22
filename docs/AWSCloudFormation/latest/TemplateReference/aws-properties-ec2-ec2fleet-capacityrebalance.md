@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-ec2fleet-capacityrebalance-syntax.json"></a>
 
-```
+```json
 {
   "[ReplacementStrategy](#cfn-ec2-ec2fleet-capacityrebalance-replacementstrategy)" : {{String}},
   "[TerminationDelay](#cfn-ec2-ec2fleet-capacityrebalance-terminationdelay)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-ec2fleet-capacityrebalance-syntax.yaml"></a>
 
-```
+```yaml
   [ReplacementStrategy](#cfn-ec2-ec2fleet-capacityrebalance-replacementstrategy): {{String}}
   [TerminationDelay](#cfn-ec2-ec2fleet-capacityrebalance-terminationdelay): {{Integer}}
 ```

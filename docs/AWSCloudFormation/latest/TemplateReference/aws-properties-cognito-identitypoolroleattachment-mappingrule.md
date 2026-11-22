@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-identitypoolroleattachment-mappingrule-syntax.json"></a>
 
-```
+```json
 {
   "[Claim](#cfn-cognito-identitypoolroleattachment-mappingrule-claim)" : {{String}},
   "[MatchType](#cfn-cognito-identitypoolroleattachment-mappingrule-matchtype)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-identitypoolroleattachment-mappingrule-syntax.yaml"></a>
 
-```
+```yaml
   [Claim](#cfn-cognito-identitypoolroleattachment-mappingrule-claim): {{String}}
   [MatchType](#cfn-cognito-identitypoolroleattachment-mappingrule-matchtype): {{String}}
   [RoleARN](#cfn-cognito-identitypoolroleattachment-mappingrule-rolearn): {{String}}

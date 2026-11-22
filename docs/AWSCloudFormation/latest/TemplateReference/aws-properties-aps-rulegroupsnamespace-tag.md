@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-aps-rulegroupsnamespace-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-aps-rulegroupsnamespace-tag-key)" : {{String}},
   "[Value](#cfn-aps-rulegroupsnamespace-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-aps-rulegroupsnamespace-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-aps-rulegroupsnamespace-tag-key): {{String}}
   [Value](#cfn-aps-rulegroupsnamespace-tag-value): {{String}}
 ```

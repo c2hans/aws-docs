@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-appmesh-route-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppMesh::Route",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-appmesh-route-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppMesh::Route
 Properties:
   [MeshName](#cfn-appmesh-route-meshname): {{String}}
@@ -155,7 +155,7 @@ This example creates a route with two weighted targets.
 #### JSON
 <a name="aws-resource-appmesh-route--examples--Create_a_Route--json"></a>
 
-```
+```json
 {
    "Description": "Basic Test Route",
    "Resources": {
@@ -250,7 +250,7 @@ This example creates a route with two weighted targets.
 #### YAML
 <a name="aws-resource-appmesh-route--examples--Create_a_Route--yaml"></a>
 
-```
+```yaml
 Description: "Basic Test Route"
 Resources:
   BasicRoute:

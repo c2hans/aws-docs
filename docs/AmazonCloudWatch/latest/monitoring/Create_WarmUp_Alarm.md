@@ -16,7 +16,7 @@ The following examples create and manage alarms with warm-up periods.
 **Example Create a metric alarm with a 30-minute warm-up period**
 This alarm uses default early-termination behavior: it ends warm-up and begins to evaluate as soon as enough data fills the evaluation window.
 
-```
+```bash
 aws cloudwatch put-metric-alarm \
   --alarm-name MyServiceStartupAlarm \
   --metric-name CPUUtilization \
@@ -33,7 +33,7 @@ aws cloudwatch put-metric-alarm \
 **Example Wait the entire warm-up period before evaluating**
 Set `OnlyStartEvaluatingAfterWarmUpPeriodEnds` to `true` to prevent evaluation until the full warm-up duration elapses. The alarm waits the full 60 minutes before it evaluates, even if data arrives sooner.
 
-```
+```bash
 aws cloudwatch put-metric-alarm \
   --alarm-name MyServiceStartupAlarm \
   --metric-name CPUUtilization \
@@ -50,7 +50,7 @@ aws cloudwatch put-metric-alarm \
 **Example Change the warm-up period while the alarm is warming up**
 You can update the warm-up configuration while the alarm is still in its warm-up period. This example sets the warm-up duration to 45 minutes.
 
-```
+```bash
 aws cloudwatch put-metric-alarm \
   --alarm-name MyServiceStartupAlarm \
   --metric-name CPUUtilization \
@@ -70,7 +70,7 @@ After the warm-up period ends, you can update the warm-up configuration. However
 
 Use the [DescribeAlarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_DescribeAlarms.html) API to retrieve an alarm's warm-up configuration.
 
-```
+```bash
 aws cloudwatch describe-alarms \
   --alarm-names MyServiceStartupAlarm
 ```

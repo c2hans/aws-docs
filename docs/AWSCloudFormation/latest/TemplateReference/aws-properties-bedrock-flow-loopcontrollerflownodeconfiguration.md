@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-flow-loopcontrollerflownodeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ContinueCondition](#cfn-bedrock-flow-loopcontrollerflownodeconfiguration-continuecondition)" : {{FlowCondition}},
   "[MaxIterations](#cfn-bedrock-flow-loopcontrollerflownodeconfiguration-maxiterations)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-flow-loopcontrollerflownodeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ContinueCondition](#cfn-bedrock-flow-loopcontrollerflownodeconfiguration-continuecondition): {{
     FlowCondition}}
   [MaxIterations](#cfn-bedrock-flow-loopcontrollerflownodeconfiguration-maxiterations): {{Number}}

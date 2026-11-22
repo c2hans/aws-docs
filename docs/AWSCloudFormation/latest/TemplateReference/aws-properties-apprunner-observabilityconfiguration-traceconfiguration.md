@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apprunner-observabilityconfiguration-traceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Vendor](#cfn-apprunner-observabilityconfiguration-traceconfiguration-vendor)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apprunner-observabilityconfiguration-traceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Vendor](#cfn-apprunner-observabilityconfiguration-traceconfiguration-vendor): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-mailmanagerruleset-s3action-syntax.json"></a>
 
-```
+```json
 {
   "[ActionFailurePolicy](#cfn-ses-mailmanagerruleset-s3action-actionfailurepolicy)" : {{String}},
   "[RoleArn](#cfn-ses-mailmanagerruleset-s3action-rolearn)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-mailmanagerruleset-s3action-syntax.yaml"></a>
 
-```
+```yaml
   [ActionFailurePolicy](#cfn-ses-mailmanagerruleset-s3action-actionfailurepolicy): {{String}}
   [RoleArn](#cfn-ses-mailmanagerruleset-s3action-rolearn): {{String}}
   [S3Bucket](#cfn-ses-mailmanagerruleset-s3action-s3bucket): {{String}}

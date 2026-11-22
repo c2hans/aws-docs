@@ -128,6 +128,7 @@ Type: [Credentials](API_Credentials.md) object
 
  ** Issuer **
 The value of the `Issuer` element of the SAML assertion.
+This is not the trusted identity propagation issuer (`aws:OriginIdentity/Issuer`). When the session carries trusted identity propagation context, that value is returned in `TrustedIdentityPropagationContext`.
 Type: String
 
  ** NameQualifier **
@@ -161,17 +162,26 @@ The value in the `SourceIdentity` attribute in the SAML assertion. The source id
 You can require users to set a source identity value when they assume a role. You do this by using the `sts:SourceIdentity` condition key in a role trust policy. That way, actions that are taken with the role are associated with that user. After the source identity is set, the value cannot be changed. It is present in the request for all actions that are taken by the role and persists across [chained role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html#id_roles_terms-and-concepts) sessions. You can configure your SAML identity provider to use an attribute associated with your users, like user name or email, as the source identity when calling `AssumeRoleWithSAML`. You do this by adding an attribute to the SAML assertion. For more information about using source identity, see [Monitor and control actions taken with assumed roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_control-access_monitor.html) in the *IAM User Guide*.
 The regex used to validate this parameter is a string of characters consisting of upper- and lower-case alphanumeric characters with no spaces. You can also include underscores or any of the following characters: =,.@-
 Type: String
-Length Constraints: Minimum length of 2. Maximum length of 64.
+Length Constraints: Minimum length of 2. Maximum length of 256.
 Pattern: `[\w+=,.@-]*`
 
  ** Subject **
 The value of the `NameID` element in the `Subject` element of the SAML assertion.
+This is not the trusted identity propagation subject (`aws:OriginIdentity/Subject`). When the session carries trusted identity propagation context, that value is returned in `TrustedIdentityPropagationContext`.
 Type: String
 
  ** SubjectType **
  The format of the name ID, as defined by the `Format` attribute in the `NameID` element of the SAML assertion. Typical examples of the format are `transient` or `persistent`.
  If the format includes the prefix `urn:oasis:names:tc:SAML:2.0:nameid-format`, that prefix is removed. For example, `urn:oasis:names:tc:SAML:2.0:nameid-format:transient` is returned as `transient`. If the format includes any other prefix, the format is returned with no modifications.
+This is not the trusted identity propagation subject type (`aws:OriginIdentity/SubjectType`). When the session carries trusted identity propagation context, that value is returned in `TrustedIdentityPropagationContext`.
 Type: String
+
+ ** TrustedIdentityPropagationContext **
+The trusted identity propagation context that AWS STS set in the session from the SAML assertion, through the context provider attached to the SAML identity provider. It is present only when AWS STS set such context in the session. It contains the `aws:OriginIdentity/Subject`, `aws:OriginIdentity/SubjectType`, `aws:OriginIdentity/Issuer` and `aws:OriginIdentity/FederatedProviderArn` keys and the `aws:TransactionContext/IdentityProvider/*` keys that AWS STS set in the session. Other keys in the session, such as `aws:IdentityCenterInstanceArn` and `aws:IdentityStoreArn` for an identity provider with an Identity Center instance attached, are not returned.
+Its `OriginIdentity` members share the names `Subject`, `SubjectType` and `Issuer` with members of this response but carry the trusted identity propagation values, which differ from the SAML assertion values.
+It is not returned when the SAML assertion is encrypted, even though the session carries the context.
+This element contains information about the end user. Do not log it.
+Type: [TrustedIdentityPropagationContext](API_TrustedIdentityPropagationContext.md) object
 
 ## Errors
 <a name="API_AssumeRoleWithSAML_Errors"></a>

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-overridedatasetparameteroperation-syntax.json"></a>
 
-```
+```json
 {
   "[NewDefaultValues](#cfn-quicksight-dataset-overridedatasetparameteroperation-newdefaultvalues)" : {{NewDefaultValues}},
   "[NewParameterName](#cfn-quicksight-dataset-overridedatasetparameteroperation-newparametername)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-overridedatasetparameteroperation-syntax.yaml"></a>
 
-```
+```yaml
   [NewDefaultValues](#cfn-quicksight-dataset-overridedatasetparameteroperation-newdefaultvalues): {{
     NewDefaultValues}}
   [NewParameterName](#cfn-quicksight-dataset-overridedatasetparameteroperation-newparametername): {{String}}

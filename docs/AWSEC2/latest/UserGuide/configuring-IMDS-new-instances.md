@@ -73,7 +73,7 @@ Before setting the account default to IMDSv2, ensure that your instances do not 
 **To set IMDSv2 as the default for the account for the specified Region**
 Use the [modify-instance-metadata-defaults](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-metadata-defaults.html) command and specify the Region in which to modify the IMDS account level settings. Include `--http-tokens` set to `required` and `--http-put-response-hop-limit` set to `2` if your instances will host containers. Otherwise, specify `-1` to indicate no preference. When `-1` (no preference) is specified, at launch, the value defaults to `2` if the AMI has the setting `ImdsSupport: v2.0`; otherwise it defaults to `1`.
 
-```
+```bash
 aws ec2 modify-instance-metadata-defaults \
     --region {{us-east-1}} \
     --http-tokens required \
@@ -82,7 +82,7 @@ aws ec2 modify-instance-metadata-defaults \
 
 The following is example output.
 
-```
+```json
 {
     "Return": true
 }
@@ -91,13 +91,13 @@ The following is example output.
 **To view the default account settings for the instance metadata options for the specified Region**
 Use the [get-instance-metadata-defaults](https://docs.aws.amazon.com/cli/latest/reference/ec2/get-instance-metadata-defaults.html) command and specify the Region.
 
-```
+```bash
 aws ec2 get-instance-metadata-defaults --region {{us-east-1}}
 ```
 
 The following is example output.
 
-```
+```json
 {
     "AccountLevel": {
         "HttpTokens": "required",
@@ -112,7 +112,7 @@ The `ManagedBy` field indicates the entity that configured the settings. In this
 **To set IMDSv2 as the default for the account for all Regions**
 Use the [modify-instance-metadata-defaults](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-metadata-defaults.html) command to modify the IMDS account level settings for all Regions. Include `--http-tokens` set to `required` and `--http-put-response-hop-limit` set to `2` if your instances will host containers. Otherwise, specify `-1` to indicate no preference. When `-1` (no preference) is specified, at launch, the value defaults to `2` if the AMI has the setting `ImdsSupport: v2.0`; otherwise it defaults to `1`.
 
-```
+```bash
 echo -e "Region          \t Modified" ; \
 echo -e "--------------  \t ---------" ; \
 for region in $(
@@ -134,7 +134,7 @@ done
 
 The following is example output.
 
-```
+```bash
 Region                   Modified
 --------------           ---------
 ap-south-1               True
@@ -146,7 +146,7 @@ eu-west-3                True
 **To view the default account settings for the instance metadata options for all Regions**
 Use the [get-instance-metadata-defaults](https://docs.aws.amazon.com/cli/latest/reference/ec2/get-instance-metadata-defaults.html) command.
 
-```
+```bash
 echo -e "Region   \t Level          Hops    HttpTokens" ; \
 echo -e "-------------- \t ------------   ----    ----------" ; \
 for region in $(
@@ -166,7 +166,7 @@ done
 
 The following is example output.
 
-```
+```bash
 Region           Level          Hops    HttpTokens
 --------------   ------------   ----    ----------
 ap-south-1       ACCOUNTLEVEL   2       required
@@ -181,7 +181,7 @@ eu-west-3        ACCOUNTLEVEL   2       required
 **To set IMDSv2 as the default for the account for the specified Region**
 Use the [Edit-EC2InstanceMetadataDefault](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceMetadataDefault.html) cmdlet and specify the Region in which to modify the IMDS account level settings. Include `-HttpToken` set to `required` and `-HttpPutResponseHopLimit` set to `2` if your instances will host containers. Otherwise, specify `-1` to indicate no preference. When `-1` (no preference) is specified, at launch, the value defaults to `2` if the AMI has the setting `ImdsSupport: v2.0`; otherwise it defaults to `1`.
 
-```
+```powershell
 Edit-EC2InstanceMetadataDefault `
     -Region {{us-east-1}} `
     -HttpToken required `
@@ -190,14 +190,14 @@ Edit-EC2InstanceMetadataDefault `
 
 The following is example output.
 
-```
+```bash
 True
 ```
 
 **To view the default account settings for the instance metadata options for the specified Region**
 Use the [Get-EC2InstanceMetadataDefault](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceMetadataDefault.html) cmdlet and specify the Region.
 
-```
+```powershell
 Get-EC2InstanceMetadataDefault -Region {{us-east-1}} | Format-List
 ```
 
@@ -213,7 +213,7 @@ InstanceMetadataTags    :
 **To set IMDSv2 as the default for the account for all Regions**
 Use the [Edit-EC2InstanceMetadataDefault](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceMetadataDefault.html) cmdlet to modify the IMDS account level settings for all Regions. Include `-HttpToken` set to `required` and `-HttpPutResponseHopLimit` set to `2` if your instances will host containers. Otherwise, specify `-1` to indicate no preference. When `-1` (no preference) is specified, at launch, the value defaults to `2` if the AMI has the setting `ImdsSupport: v2.0`; otherwise it defaults to `1`.
 
-```
+```powershell
 (Get-EC2Region).RegionName | `
     ForEach-Object {
     [PSCustomObject]@{
@@ -229,7 +229,7 @@ Format-Table Region, Modified -AutoSize
 
 Expected output
 
-```
+```bash
 Region         Modified
 ------         --------
 ap-south-1         True
@@ -241,7 +241,7 @@ eu-west-3          True
 **To view the default account settings for the instance metadata options for all Regions**
 Use the [Get-EC2InstanceMetadataDefault](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceMetadataDefault.html) cmdlet.
 
-```
+```powershell
 (Get-EC2Region).RegionName | `
     ForEach-Object {
     [PSCustomObject]@{
@@ -255,7 +255,7 @@ Format-Table -AutoSize
 
 Example output
 
-```
+```bash
 Region         HttpPutResponseHopLimit HttpTokens
 ------         ----------------------- ----------
 ap-south-1                           2 required
@@ -306,7 +306,7 @@ This setting does not change the IMDS version of existing instances, but blocks 
 **To enforce IMDSv2 for the account in the specified Region**
  Use the [modify-instance-metadata-defaults](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-metadata-defaults.html) command and specify the Region in which to enforce IMDSv2.
 
-```
+```bash
 aws ec2 modify-instance-metadata-defaults \
     --region {{us-east-1}} \
     --http-tokens required \
@@ -315,7 +315,7 @@ aws ec2 modify-instance-metadata-defaults \
 
 The following is example output.
 
-```
+```JSON
 {
 "Return": true
 }
@@ -324,13 +324,13 @@ The following is example output.
 **To view the IMDSv2 enforcement setting for the account in a specific Region**
 Use the [get-instance-metadata-defaults](https://docs.aws.amazon.com/cli/latest/reference/ec2/get-instance-metadata-defaults.html) command and specify the Region.
 
-```
+```bash
 aws ec2 get-instance-metadata-defaults --region {{us-east-1}}
 ```
 
 The following is example output.
 
-```
+```JSON
 {
     "AccountLevel": {
         "HttpTokens": "required",
@@ -345,7 +345,7 @@ The `ManagedBy` field indicates the entity that configured the settings. In this
 **To enforce IMDSv2 for the account for all Regions**
 Use the [modify-instance-metadata-defaults](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-metadata-defaults.html) command to enforce IMDSv2 in all Regions.
 
-```
+```bash
 echo -e "Region          \t Modified" ; \
 echo -e "--------------  \t ---------" ; \
 for region in $(
@@ -366,7 +366,7 @@ done
 
 The following is example output.
 
-```
+```bash
 Region                   Modified
 --------------           ---------
 ap-south-1               True
@@ -378,7 +378,7 @@ eu-west-3                True
 **To view the IMDSv2 enforcement settings for the account in all Regions**
 Use the [get-instance-metadata-defaults](https://docs.aws.amazon.com/cli/latest/reference/ec2/get-instance-metadata-defaults.html) command.
 
-```
+```bash
 echo -e "Region   \t Level           HttpTokensEnforced" ; \
 echo -e "-------------- \t ------------   ----------------" ; \
 for region in $(
@@ -399,7 +399,7 @@ done
 
 The following is example output.
 
-```
+```bash
 Region           Level          HttpTokensEnforced
 --------------   ------------   ------------------
 ap-south-1       ACCOUNTLEVEL   enabled
@@ -414,7 +414,7 @@ eu-west-3        ACCOUNTLEVEL   enabled
 **To enforce IMDSv2 for the account in the specified Region**
 Use the [Edit-EC2InstanceMetadataDefault](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceMetadataDefault.html) cmdlet and specify the Region in which to enforce IMDSv2.
 
-```
+```powershell
 Edit-EC2InstanceMetadataDefault `
     -Region {{us-east-1}} `
     -HttpToken required `
@@ -423,7 +423,7 @@ Edit-EC2InstanceMetadataDefault `
 
 The following is example output.
 
-```
+```bash
 @{
     Return = $true
 }
@@ -432,13 +432,13 @@ The following is example output.
 **To view the IMDSv2 enforcement setting for the account in a specific Region**
 Use the Get-EC2InstanceMetadataDefault command and specify the Region.
 
-```
+```powershell
 Get-EC2InstanceMetadataDefault -Region {{us-east-1}}
 ```
 
 The following is example output.
 
-```
+```bash
 @{
     AccountLevel = @{
         HttpTokens = "required"
@@ -453,7 +453,7 @@ The `ManagedBy` field indicates the entity that configured the settings. In this
 **To enforce IMDSv2 for the account for all Regions**
 Use the [modify-instance-metadata-defaults](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-metadata-defaults.html) command to enforce IMDSv2 in all Regions.
 
-```
+```powershell
 echo -e "Region          \t Modified" ; \
 echo -e "--------------  \t ---------" ; \
 for region in $(
@@ -474,7 +474,7 @@ done
 
 The following is example output.
 
-```
+```bash
 Region                   Modified
 --------------           ---------
 ap-south-1               True
@@ -486,7 +486,7 @@ eu-west-3                True
 **To set IMDSv2 as the default for the account for all Regions**
 Use the [Edit-EC2InstanceMetadataDefault](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceMetadataDefault.html) cmdlet to modify the IMDS account level settings for all Regions. Include `-HttpToken` set to `required` and `-HttpPutResponseHopLimit` set to `2` if your instances will host containers. Otherwise, specify `-1` to indicate no preference. When `-1` (no preference) is specified, at launch, the value defaults to `2` if the AMI has the setting `ImdsSupport: v2.0`; otherwise it defaults to `1`.
 
-```
+```powershell
 (Get-EC2Region).RegionName | `
     ForEach-Object {
     [PSCustomObject]@{
@@ -502,7 +502,7 @@ Format-Table Region, Modified -AutoSize
 
 Expected output
 
-```
+```bash
 Region         Modified
 ------         --------
 ap-south-1         True
@@ -514,7 +514,7 @@ eu-west-3          True
 **To view the default account settings for the instance metadata options for all Regions**
 Use the [Get-EC2InstanceMetadataDefault](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceMetadataDefault.html) cmdlet.
 
-```
+```powershell
 (Get-EC2Region).RegionName | `
     ForEach-Object {
     [PSCustomObject]@{
@@ -528,7 +528,7 @@ Format-Table -AutoSize
 
 Example output
 
-```
+```bash
 Region         HttpPutResponseHopLimit HttpTokens
 ------         ----------------------- ----------
 ap-south-1                           2 required
@@ -569,7 +569,7 @@ The following [run-instances](https://docs.aws.amazon.com/cli/latest/reference/e
 
 In a container environment, when IMDSv2 is required, we recommend setting the hop limit to `2` with `HttpPutResponseHopLimit=2`.
 
-```
+```bash
 aws ec2 run-instances \
     --image-id {{ami-0abcdef1234567890}} \
     --instance-type {{c6i.large}} \
@@ -583,7 +583,7 @@ aws ec2 run-instances \
 **To require the use of IMDSv2 on a new instance**
 The following [New-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Instance.html) cmdlet example launches a `c6i.large` instance with `MetadataOptions_HttpEndpoint` set to `enabled` and the `MetadataOptions_HttpTokens` parameter to `required`. When you specify a value for `HttpTokens`, you must also set `HttpEndpoint` to `enabled`. Because the secure token header is set to `required` for metadata retrieval requests, this requires the instance to use IMDSv2 when requesting instance metadata.
 
-```
+```powershell
 New-EC2Instance `
     -ImageId {{ami-0abcdef1234567890}} `
     -InstanceType {{c6i.large}} `
@@ -616,7 +616,7 @@ Use one of the following methods to configure a new AMI for IMDSv2.
 
 The following [register-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/register-image.html) example registers an AMI using the specified snapshot of an EBS root volume as device `/dev/xvda`. Specify `v2.0` for the `imds-support` parameter so that instances launched from this AMI will require that IMDSv2 is used when requesting instance metadata.
 
-```
+```bash
 aws ec2 register-image \
     --name {{my-image}} \
     --root-device-name /dev/xvda \
@@ -630,7 +630,7 @@ aws ec2 register-image \
 
 The following [Register-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2Image.html) cmdlet example registers an AMI using the specified snapshot of an EBS root volume as device `/dev/xvda`. Specify `v2.0` for the `ImdsSupport` parameter so that instances launched from this AMI will require that IMDSv2 is used when requesting instance metadata.
 
-```
+```powershell
 Register-EC2Image `
     -Name '{{my-image}}' `
     -RootDeviceName /dev/xvda `
@@ -658,7 +658,7 @@ Use one of the following methods to configure an existing AMI for IMDSv2.
 
 The following [modify-image-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-image-attribute.html) example modifies an existing AMI for IMDSv2 only. Specify `v2.0` for the `imds-support` parameter so that instances launched from this AMI will require that IMDSv2 is used when requesting instance metadata.
 
-```
+```bash
 aws ec2 modify-image-attribute \
     --image-id {{ami-0abcdef1234567890}} \
     --imds-support v2.0
@@ -669,7 +669,7 @@ aws ec2 modify-image-attribute \
 
 The following [Edit-EC2ImageAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2ImageAttribute.html) cmdlet example modifies an existing AMI for IMDSv2 only. Specify `v2.0` for the `imds-support` parameter so that instances launched from this AMI will require that IMDSv2 is used when requesting instance metadata.
 
-```
+```powershell
 Edit-EC2ImageAttribute `
     -ImageId {{ami-0abcdef1234567890}} `
     -ImdsSupport 'v2.0'
@@ -720,7 +720,7 @@ For more information, see [Advanced details](ec2-instance-launch-parameters.md#l
 **To enable the IMDS IPv6 endpoint at instance launch**
 The following [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) example launches a `c6i.large` instance with the IPv6 endpoint enabled for the IMDS. To enable the IPv6 endpoint, for the `--metadata-options` parameter, specify `HttpProtocolIpv6=enabled`. When you specify a value for `HttpProtocolIpv6`, you must also set `HttpEndpoint` to `enabled`.
 
-```
+```bash
 aws ec2 run-instances \
     --image-id {{ami-0abcdef1234567890}} \
     --instance-type {{c6i.large}} \
@@ -734,7 +734,7 @@ aws ec2 run-instances \
 **To enable the IMDS IPv6 endpoint at instance launch**
 The following [New-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Instance.html) cmdlet example launches a `c6i.large` instance with the IPv6 endpoint enabled for the IMDS. To enable the IPv6 endpoint, specify `MetadataOptions_HttpProtocolIpv6` as `enabled`. When you specify a value for `MetadataOptions_HttpProtocolIpv6`, you must also set `MetadataOptions_HttpEndpoint` to `enabled`.
 
-```
+```powershell
 New-EC2Instance `
     -ImageId {{ami-0abcdef1234567890}} `
     -InstanceType {{c6i.large}} `
@@ -770,7 +770,7 @@ For more information, see [Advanced details](ec2-instance-launch-parameters.md#l
 **To turn off access to instance metadata at launch at launch**
 Launch the instance with `--metadata-options` set to `HttpEndpoint=disabled`.
 
-```
+```bash
 aws ec2 run-instances \
     --image-id {{ami-0abcdef1234567890}} \
     --instance-type {{c6i.large}} \
@@ -784,7 +784,7 @@ aws ec2 run-instances \
 **To turn off access to instance metadata at launch at launch**
 The following [New-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Instance.html) cmdlet example launches an instance with `MetadataOptions_HttpEndpoint` set to `disabled`.
 
-```
+```powershell
 New-EC2Instance `
     -ImageId {{ami-0abcdef1234567890}} `
     -InstanceType {{c6i.large}} `

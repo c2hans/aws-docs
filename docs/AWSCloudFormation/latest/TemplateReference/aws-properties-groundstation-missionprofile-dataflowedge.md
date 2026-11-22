@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-groundstation-missionprofile-dataflowedge-syntax.json"></a>
 
-```
+```json
 {
   "[Destination](#cfn-groundstation-missionprofile-dataflowedge-destination)" : {{String}},
   "[Source](#cfn-groundstation-missionprofile-dataflowedge-source)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-groundstation-missionprofile-dataflowedge-syntax.yaml"></a>
 
-```
+```yaml
   [Destination](#cfn-groundstation-missionprofile-dataflowedge-destination): {{String}}
   [Source](#cfn-groundstation-missionprofile-dataflowedge-source): {{String}}
 ```
@@ -65,7 +65,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 #### JSON
 <a name="aws-properties-groundstation-missionprofile-dataflowedge--examples--Downlink_Dataflow_Edge--json"></a>
 
-```
+```json
 "DataflowEdges": [
   {
     "Source": "arn:aws:groundstation:us-east-2:012345678910:config/antenna-downlink/11111111-1111-1111-1111-111111111111",
@@ -77,7 +77,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 #### YAML
 <a name="aws-properties-groundstation-missionprofile-dataflowedge--examples--Downlink_Dataflow_Edge--yaml"></a>
 
-```
+```yaml
 DataflowEdges:
   - Source: arn:aws:groundstation:us-east-2:012345678910:config/antenna-downlink/11111111-1111-1111-1111-111111111111
     Destination: arn:aws:groundstation:us-east-2:012345678910:config/dataflow-endpoint/22222222-2222-2222-2222-222222222222
@@ -95,7 +95,7 @@ DataflowEdges:
 #### JSON
 <a name="aws-properties-groundstation-missionprofile-dataflowedge--examples--Uplink_Dataflow_Edge--json"></a>
 
-```
+```json
 "DataflowEdges": [
   [
     "arn:aws:groundstation:us-east-2:012345678910:config/dataflow-endpoint/33333333-3333-3333-3333-333333333333",
@@ -107,7 +107,7 @@ DataflowEdges:
 #### YAML
 <a name="aws-properties-groundstation-missionprofile-dataflowedge--examples--Uplink_Dataflow_Edge--yaml"></a>
 
-```
+```yaml
 DataflowEdges:
   - - arn:aws:groundstation:us-east-2:012345678910:config/dataflow-endpoint/33333333-3333-3333-3333-333333333333
     - arn:aws:groundstation:us-east-2:012345678910:config/antenna-uplink/44444444-4444-4444-4444-444444444444

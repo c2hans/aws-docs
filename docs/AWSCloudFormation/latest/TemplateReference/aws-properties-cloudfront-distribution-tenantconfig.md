@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distribution-tenantconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ParameterDefinitions](#cfn-cloudfront-distribution-tenantconfig-parameterdefinitions)" : {{[ ParameterDefinition, ... ]}}
 }
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distribution-tenantconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ParameterDefinitions](#cfn-cloudfront-distribution-tenantconfig-parameterdefinitions): {{
     - ParameterDefinition}}
 ```

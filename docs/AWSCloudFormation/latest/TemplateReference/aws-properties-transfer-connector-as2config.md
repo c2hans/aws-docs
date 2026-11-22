@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-transfer-connector-as2config-syntax.json"></a>
 
-```
+```json
 {
   "[AsyncMdnConfig](#cfn-transfer-connector-as2config-asyncmdnconfig)" : {{ConnectorAsyncMdnConfig}},
   "[BasicAuthSecretId](#cfn-transfer-connector-as2config-basicauthsecretid)" : {{String}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-transfer-connector-as2config-syntax.yaml"></a>
 
-```
+```yaml
   [AsyncMdnConfig](#cfn-transfer-connector-as2config-asyncmdnconfig): {{
     ConnectorAsyncMdnConfig}}
   [BasicAuthSecretId](#cfn-transfer-connector-as2config-basicauthsecretid): {{String}}

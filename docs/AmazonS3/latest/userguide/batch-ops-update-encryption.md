@@ -30,7 +30,7 @@ For more information about `UpdateObjectEncryption`, see [Updating server-side e
 
 To perform the `UpdateObjectEncryption` operation, add the following AWS Identity and Access Management (IAM) policy to your IAM principal (user, role, or group). To use this policy, replace {{`{{amzn-s3-demo-bucket}}`}} with the name of the bucket that contains the objects that you want to update encryption for. Replace `{{amzn-s3-demo-manifest-bucket}}` with the name of the bucket that contains your manifest, and replace `{{amzn-s3-demo-completion-report-bucket}}` with the name of the bucket where you want to store your completion report.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

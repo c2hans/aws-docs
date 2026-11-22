@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-wisdom-assistantassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Wisdom::AssistantAssociation",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-wisdom-assistantassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Wisdom::AssistantAssociation
 Properties:
   [AssistantId](#cfn-wisdom-assistantassociation-assistantid): {{String}}

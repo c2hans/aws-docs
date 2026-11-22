@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-acmpca-certificate-extendedkeyusage-syntax.json"></a>
 
-```
+```json
 {
   "[ExtendedKeyUsageObjectIdentifier](#cfn-acmpca-certificate-extendedkeyusage-extendedkeyusageobjectidentifier)" : {{String}},
   "[ExtendedKeyUsageType](#cfn-acmpca-certificate-extendedkeyusage-extendedkeyusagetype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-acmpca-certificate-extendedkeyusage-syntax.yaml"></a>
 
-```
+```yaml
   [ExtendedKeyUsageObjectIdentifier](#cfn-acmpca-certificate-extendedkeyusage-extendedkeyusageobjectidentifier): {{String}}
   [ExtendedKeyUsageType](#cfn-acmpca-certificate-extendedkeyusage-extendedkeyusagetype): {{String}}
 ```

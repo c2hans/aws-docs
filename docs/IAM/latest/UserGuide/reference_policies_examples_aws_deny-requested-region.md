@@ -16,7 +16,7 @@ This policy does not allow any actions. Use this policy in combination with othe
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

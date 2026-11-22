@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-assistantassociation-associationdata-syntax.json"></a>
 
-```
+```json
 {
   "[ExternalBedrockKnowledgeBaseConfig](#cfn-wisdom-assistantassociation-associationdata-externalbedrockknowledgebaseconfig)" : {{ExternalBedrockKnowledgeBaseConfig}},
   "[KnowledgeBaseId](#cfn-wisdom-assistantassociation-associationdata-knowledgebaseid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-assistantassociation-associationdata-syntax.yaml"></a>
 
-```
+```yaml
   [ExternalBedrockKnowledgeBaseConfig](#cfn-wisdom-assistantassociation-associationdata-externalbedrockknowledgebaseconfig): {{
     ExternalBedrockKnowledgeBaseConfig}}
   [KnowledgeBaseId](#cfn-wisdom-assistantassociation-associationdata-knowledgebaseid): {{String}}

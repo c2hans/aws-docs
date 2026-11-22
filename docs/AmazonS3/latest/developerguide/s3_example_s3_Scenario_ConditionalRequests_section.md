@@ -13,7 +13,7 @@ The following code examples show how to add preconditions to Amazon S3 requests.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3/scenarios/S3ConditionalRequestsScenario#code-examples).
 Run an interactive scenario demonstrating Amazon S3 conditional request features.
 
-```
+```csharp
 using Amazon.S3;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -358,7 +358,7 @@ public static class S3ConditionalRequestsScenario
 ```
 A wrapper class for S3 functions.
 
-```
+```csharp
 using System.Net;
 using Amazon.S3;
 using Amazon.S3.Model;
@@ -735,7 +735,7 @@ public class S3ActionsWrapper
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3/scenarios/conditional-requests#code-examples).
 Entrypoint for the workflow (index.js). This orchestrates all of the steps. Visit GitHub to see the implementation details for Scenario, ScenarioInput, ScenarioOutput, and ScenarioAction.
 
-```
+```javascript
 import * as Scenarios from "@aws-doc-sdk-examples/lib/scenario/index.js";
 import {
   exitOnFalse,
@@ -818,7 +818,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
 ```
 Output welcome messages to the console (welcome.steps.js).
 
-```
+```javascript
 /**
  * @typedef {import("@aws-doc-sdk-examples/lib/scenario/index.js")} Scenarios
  */
@@ -856,7 +856,7 @@ export { welcome, welcomeContinue };
 ```
 Deploy buckets and objects (setup.steps.js).
 
-```
+```javascript
 import {
   ChecksumAlgorithm,
   CreateBucketCommand,
@@ -1004,7 +1004,7 @@ export {
 ```
 Get, copy, and put objects using S3 conditional requests (repl.steps.js).
 
-```
+```javascript
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { dirname } from "node:path";
@@ -1444,7 +1444,7 @@ export { replInput, choices };
 ```
 Destroy all created resources (clean.steps.js).
 
-```
+```javascript
 import {
   DeleteObjectCommand,
   DeleteBucketCommand,
@@ -1525,7 +1525,7 @@ export { confirmCleanup, cleanupAction };
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/scenarios/conditional_requests#code-examples).
 Run an interactive scenario demonstrating Amazon S3 conditional requests.
 
-```
+```python
 """
 Purpose
 
@@ -1811,7 +1811,7 @@ if __name__ == "__main__":
 ```
 A wrapper class that defines the conditional request operations.
 
-```
+```python
 import boto3
 import logging
 

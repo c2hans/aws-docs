@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-timestream-scheduledquery-multimeasuremappings-syntax.json"></a>
 
-```
+```json
 {
   "[MultiMeasureAttributeMappings](#cfn-timestream-scheduledquery-multimeasuremappings-multimeasureattributemappings)" : {{[ MultiMeasureAttributeMapping, ... ]}},
   "[TargetMultiMeasureName](#cfn-timestream-scheduledquery-multimeasuremappings-targetmultimeasurename)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-timestream-scheduledquery-multimeasuremappings-syntax.yaml"></a>
 
-```
+```yaml
   [MultiMeasureAttributeMappings](#cfn-timestream-scheduledquery-multimeasuremappings-multimeasureattributemappings): {{
     - MultiMeasureAttributeMapping}}
   [TargetMultiMeasureName](#cfn-timestream-scheduledquery-multimeasuremappings-targetmultimeasurename): {{String}}

@@ -125,7 +125,7 @@ You can apply the AWS SCT extension pack using the extension pack wizard or when
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

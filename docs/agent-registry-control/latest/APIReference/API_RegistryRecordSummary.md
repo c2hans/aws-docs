@@ -58,7 +58,7 @@ Required: Yes
  ** status **   <a name="agentregistrycontrol-Type-RegistryRecordSummary-status"></a>
 The lifecycle status of the registry record.
 Type: String
-Valid Values: `DRAFT | PENDING_APPROVAL | APPROVED | REJECTED | DEPRECATED | CREATING | UPDATING | CREATE_FAILED | UPDATE_FAILED`
+Valid Values: `DRAFT | PENDING_APPROVAL | APPROVED | REJECTED | DEPRECATED | CREATING | UPDATING | CREATE_FAILED | UPDATE_FAILED | CREATE_PENDING_AUTH | UPDATE_PENDING_AUTH`
 Required: Yes
 
  ** updatedAt **   <a name="agentregistrycontrol-Type-RegistryRecordSummary-updatedAt"></a>

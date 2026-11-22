@@ -16,7 +16,7 @@ The `OPTIMIZE {{table}} REWRITE DATA` compaction action rewrites data files into
 
 The following example merges delete files into data files and produces files near the targeted file size where the value of `category` is `c1`.
 
-```
+```sql
 OPTIMIZE iceberg_table REWRITE DATA USING BIN_PACK
   WHERE category = 'c1'
 ```
@@ -31,7 +31,7 @@ OPTIMIZE iceberg_table REWRITE DATA USING BIN_PACK
 
 The following example uses a table property to configure the table `iceberg_table` to retain the last three days of data, then uses `VACUUM` to expire the old snapshots and remove the orphan files from the table.
 
-```
+```sql
 ALTER TABLE iceberg_table SET TBLPROPERTIES (
   'vacuum_max_snapshot_age_seconds'='259200'
 )

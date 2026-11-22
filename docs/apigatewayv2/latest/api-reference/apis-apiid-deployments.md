@@ -75,7 +75,7 @@ Creates a `Deployment` for an API.
 #### POST schema
 <a name="apis-apiid-deployments-request-body-post-example"></a>
 
-```
+```json
 {
   "description": "string",
   "stageName": "string"
@@ -88,7 +88,7 @@ Creates a `Deployment` for an API.
 #### Deployments schema
 <a name="apis-apiid-deployments-response-body-deployments-example"></a>
 
-```
+```json
 {
   "items": [
     {
@@ -107,7 +107,7 @@ Creates a `Deployment` for an API.
 #### Deployment schema
 <a name="apis-apiid-deployments-response-body-deployment-example"></a>
 
-```
+```json
 {
   "deploymentId": "string",
   "description": "string",
@@ -121,7 +121,7 @@ Creates a `Deployment` for an API.
 #### BadRequestException schema
 <a name="apis-apiid-deployments-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -130,7 +130,7 @@ Creates a `Deployment` for an API.
 #### NotFoundException schema
 <a name="apis-apiid-deployments-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -140,7 +140,7 @@ Creates a `Deployment` for an API.
 #### ConflictException schema
 <a name="apis-apiid-deployments-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -149,7 +149,7 @@ Creates a `Deployment` for an API.
 #### LimitExceededException schema
 <a name="apis-apiid-deployments-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

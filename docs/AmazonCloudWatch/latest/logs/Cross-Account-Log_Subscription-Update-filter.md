@@ -44,7 +44,7 @@ aws logs describe-subscription-filters
 
 1. Create the IAM role that uses this policy. Take note of the `Arn` value of the `Arn` value that is returned by the command, you will need it later in this procedure. In this example, we use `CWLtoSubscriptionFilterRole` for the name of the role we're creating.
 
-   ```
+   ```cmd
    aws iam create-role
        \ --role-name CWLtoSubscriptionFilterRole
        \ --assume-role-policy-document file://~/TrustPolicyForCWL.json

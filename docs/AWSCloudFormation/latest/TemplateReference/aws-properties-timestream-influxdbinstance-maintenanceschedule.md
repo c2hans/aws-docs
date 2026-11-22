@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-timestream-influxdbinstance-maintenanceschedule-syntax.json"></a>
 
-```
+```json
 {
   "[PreferredMaintenanceWindow](#cfn-timestream-influxdbinstance-maintenanceschedule-preferredmaintenancewindow)" : {{String}},
   "[Timezone](#cfn-timestream-influxdbinstance-maintenanceschedule-timezone)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-timestream-influxdbinstance-maintenanceschedule-syntax.yaml"></a>
 
-```
+```yaml
   [PreferredMaintenanceWindow](#cfn-timestream-influxdbinstance-maintenanceschedule-preferredmaintenancewindow): {{String}}
   [Timezone](#cfn-timestream-influxdbinstance-maintenanceschedule-timezone): {{String}}
 ```

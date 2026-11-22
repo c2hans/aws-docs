@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-odb-cloudautonomousvmcluster-maintenancewindow-syntax.json"></a>
 
-```
+```json
 {
   "[DaysOfWeek](#cfn-odb-cloudautonomousvmcluster-maintenancewindow-daysofweek)" : {{[ String, ... ]}},
   "[HoursOfDay](#cfn-odb-cloudautonomousvmcluster-maintenancewindow-hoursofday)" : {{[ Integer, ... ]}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-odb-cloudautonomousvmcluster-maintenancewindow-syntax.yaml"></a>
 
-```
+```yaml
   [DaysOfWeek](#cfn-odb-cloudautonomousvmcluster-maintenancewindow-daysofweek): {{
     - String}}
   [HoursOfDay](#cfn-odb-cloudautonomousvmcluster-maintenancewindow-hoursofday): {{

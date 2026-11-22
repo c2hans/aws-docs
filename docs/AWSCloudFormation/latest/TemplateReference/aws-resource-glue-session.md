@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-glue-session-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Glue::Session",
   "Properties" : {
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-glue-session-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Glue::Session
 Properties:
   [Command](#cfn-glue-session-command): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-memory-customconfigurationinput-syntax.json"></a>
 
-```
+```json
 {
   "[EpisodicOverride](#cfn-bedrockagentcore-memory-customconfigurationinput-episodicoverride)" : {{EpisodicOverride}},
   "[SelfManagedConfiguration](#cfn-bedrockagentcore-memory-customconfigurationinput-selfmanagedconfiguration)" : {{SelfManagedConfiguration}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-memory-customconfigurationinput-syntax.yaml"></a>
 
-```
+```yaml
   [EpisodicOverride](#cfn-bedrockagentcore-memory-customconfigurationinput-episodicoverride): {{
     EpisodicOverride}}
   [SelfManagedConfiguration](#cfn-bedrockagentcore-memory-customconfigurationinput-selfmanagedconfiguration): {{

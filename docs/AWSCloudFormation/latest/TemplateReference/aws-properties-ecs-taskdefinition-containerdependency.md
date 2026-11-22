@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskdefinition-containerdependency-syntax.json"></a>
 
-```
+```json
 {
   "[Condition](#cfn-ecs-taskdefinition-containerdependency-condition)" : {{String}},
   "[ContainerName](#cfn-ecs-taskdefinition-containerdependency-containername)" : {{String}}
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskdefinition-containerdependency-syntax.yaml"></a>
 
-```
+```yaml
   [Condition](#cfn-ecs-taskdefinition-containerdependency-condition): {{String}}
   [ContainerName](#cfn-ecs-taskdefinition-containerdependency-containername): {{String}}
 ```

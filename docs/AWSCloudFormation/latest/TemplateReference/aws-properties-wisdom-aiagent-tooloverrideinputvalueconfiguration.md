@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-aiagent-tooloverrideinputvalueconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Constant](#cfn-wisdom-aiagent-tooloverrideinputvalueconfiguration-constant)" : {{ToolOverrideConstantInputValue}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-aiagent-tooloverrideinputvalueconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Constant](#cfn-wisdom-aiagent-tooloverrideinputvalueconfiguration-constant): {{
     ToolOverrideConstantInputValue}}
 ```

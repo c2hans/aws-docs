@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ecs-expressgatewayservice-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ECS::ExpressGatewayService",
   "Properties" : {
@@ -44,7 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ecs-expressgatewayservice-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ECS::ExpressGatewayService
 Properties:
   [Cluster](#cfn-ecs-expressgatewayservice-cluster): {{String}}

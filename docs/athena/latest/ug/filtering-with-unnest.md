@@ -8,7 +8,7 @@ To filter an array that includes a nested structure by one of its child elements
 
 For example, this query finds host names of sites in the dataset.
 
-```
+```sql
 WITH dataset AS (
   SELECT ARRAY[
     CAST(

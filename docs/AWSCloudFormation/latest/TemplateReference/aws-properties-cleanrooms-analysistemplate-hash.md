@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-analysistemplate-hash-syntax.json"></a>
 
-```
+```json
 {
   "[Sha256](#cfn-cleanrooms-analysistemplate-hash-sha256)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-analysistemplate-hash-syntax.yaml"></a>
 
-```
+```yaml
   [Sha256](#cfn-cleanrooms-analysistemplate-hash-sha256): {{String}}
 ```
 

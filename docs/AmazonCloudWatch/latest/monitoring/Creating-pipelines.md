@@ -57,14 +57,14 @@ Use the following procedure to create a metrics pipeline in the CloudWatch conso
 
 Use the `create-telemetry-pipeline` command to create a metrics pipeline from the AWS CLI.
 
-```
+```bash
 aws observabilityadmin create-telemetry-pipeline \
     --pipeline-configuration-body file://config.yaml
 ```
 
 The following example shows a YAML configuration file that defines a metrics pipeline with a source, processor, and sink.
 
-```
+```yaml
 pipeline:
   source:
     cloudwatch_metrics:

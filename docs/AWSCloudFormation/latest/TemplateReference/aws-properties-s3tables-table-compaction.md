@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3tables-table-compaction-syntax.json"></a>
 
-```
+```json
 {
   "[Status](#cfn-s3tables-table-compaction-status)" : {{String}},
   "[TargetFileSizeMB](#cfn-s3tables-table-compaction-targetfilesizemb)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3tables-table-compaction-syntax.yaml"></a>
 
-```
+```yaml
   [Status](#cfn-s3tables-table-compaction-status): {{String}}
   [TargetFileSizeMB](#cfn-s3tables-table-compaction-targetfilesizemb): {{Integer}}
 ```

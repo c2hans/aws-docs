@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-wordcloudaggregatedfieldwells-syntax.json"></a>
 
-```
+```json
 {
   "[GroupBy](#cfn-quicksight-template-wordcloudaggregatedfieldwells-groupby)" : {{[ DimensionField, ... ]}},
   "[Size](#cfn-quicksight-template-wordcloudaggregatedfieldwells-size)" : {{[ MeasureField, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-wordcloudaggregatedfieldwells-syntax.yaml"></a>
 
-```
+```yaml
   [GroupBy](#cfn-quicksight-template-wordcloudaggregatedfieldwells-groupby): {{
     - DimensionField}}
   [Size](#cfn-quicksight-template-wordcloudaggregatedfieldwells-size): {{

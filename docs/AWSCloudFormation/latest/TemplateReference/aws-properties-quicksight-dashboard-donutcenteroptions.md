@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-donutcenteroptions-syntax.json"></a>
 
-```
+```json
 {
   "[LabelVisibility](#cfn-quicksight-dashboard-donutcenteroptions-labelvisibility)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-donutcenteroptions-syntax.yaml"></a>
 
-```
+```yaml
   [LabelVisibility](#cfn-quicksight-dashboard-donutcenteroptions-labelvisibility): {{String}}
 ```
 

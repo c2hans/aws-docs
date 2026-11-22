@@ -16,7 +16,7 @@ The following steps are guidelines, with several variations to the process. For 
 
    Run the following query to get the PID of the autovacuum session.
 
-   ```
+   ```sql
    SELECT datname, usename, pid, current_timestamp - xact_start
    AS xact_runtime, query
    FROM pg_stat_activity WHERE upper(query) LIKE '%VACUUM%' ORDER BY
@@ -25,7 +25,7 @@ The following steps are guidelines, with several variations to the process. For 
 
 1. In session two, calculate the amount of memory that you need for this operation. In this example, we determine that we can afford to use up to 2 GB of memory for this operation, so we set [`maintenance_work_mem`](https://www.postgresql.org/docs/current/static/runtime-config-resource.html#GUC-MAINTENANCE-WORK-MEM) for the current session to 2 GB.
 
-   ```
+   ```sql
    SET maintenance_work_mem='2 GB';
    SET
    ```
@@ -60,7 +60,7 @@ The following steps are guidelines, with several variations to the process. For 
 
 1. In session one, if autovacuum was blocking the vacuum session, `pg_stat_activity` shows that waiting is `T` for your vacuum session. In this case, end the autovacuum process as follows.
 
-   ```
+   ```sql
    SELECT pg_terminate_backend('the_pid');
    ```
 **Note**

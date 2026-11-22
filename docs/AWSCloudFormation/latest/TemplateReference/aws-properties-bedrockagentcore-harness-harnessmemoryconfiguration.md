@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-harness-harnessmemoryconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AgentCoreMemoryConfiguration](#cfn-bedrockagentcore-harness-harnessmemoryconfiguration-agentcorememoryconfiguration)" : {{HarnessAgentCoreMemoryConfiguration}},
   "[Disabled](#cfn-bedrockagentcore-harness-harnessmemoryconfiguration-disabled)" : {{Json}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-harness-harnessmemoryconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AgentCoreMemoryConfiguration](#cfn-bedrockagentcore-harness-harnessmemoryconfiguration-agentcorememoryconfiguration): {{
     HarnessAgentCoreMemoryConfiguration}}
   [Disabled](#cfn-bedrockagentcore-harness-harnessmemoryconfiguration-disabled): {{Json}}

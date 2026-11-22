@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-vpcgatewayattachment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::VPCGatewayAttachment",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-vpcgatewayattachment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::VPCGatewayAttachment
 Properties:
   [InternetGatewayId](#cfn-ec2-vpcgatewayattachment-internetgatewayid): {{String}}
@@ -82,7 +82,7 @@ To attach both an Internet gateway and a VPN gateway to a VPC, you must specify 
 #### JSON
 <a name="aws-resource-ec2-vpcgatewayattachment--examples--VPN_gateway_attachment--json"></a>
 
-```
+```json
 "AttachGateway" : {
    "Type" : "AWS::EC2::VPCGatewayAttachment",
    "Properties" : {
@@ -103,7 +103,7 @@ To attach both an Internet gateway and a VPN gateway to a VPC, you must specify 
 #### YAML
 <a name="aws-resource-ec2-vpcgatewayattachment--examples--VPN_gateway_attachment--yaml"></a>
 
-```
+```yaml
 AttachGateway:
   Type: AWS::EC2::VPCGatewayAttachment
   Properties:

@@ -13,7 +13,7 @@ For more information, see our [JavaScript resolver function reference for OpenSe
 
 To get started with this tutorial, you need an existing OpenSearch Service domain. If you don’t have one, you can use the following sample. Note that it can take up to 15 minutes for an OpenSearch Service domain to be created before you can move on to integrating it with an AWS AppSync data source.
 
-```
+```sh
 aws cloudformation create-stack --stack-name AppSyncOpenSearch \
 --template-url https://s3.us-west-2.amazonaws.com/awsappsync/resources/elasticsearch/ESResolverCFTemplate.yaml \
 --parameters ParameterKey=OSDomainName,ParameterValue=ddtestdomain ParameterKey=Tier,ParameterValue=development \
@@ -36,7 +36,7 @@ You’ll also need to set up a trust relationship with AWS AppSync for that role
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -60,7 +60,7 @@ Additionally, the OpenSearch Service domain has its own **Access Policy** that y
 
 Now that the data source is connected to your OpenSearch Service domain, you can connect it to your GraphQL schema with a resolver as shown in the following example:
 
-```
+```sh
  type Query {
    getPost(id: ID!): Post
    allPosts: [Post]
@@ -85,7 +85,7 @@ Note that there is a user-defined `Post` type with a field of `id`. In the follo
 
 From the **Schema** editor in the AWS AppSync console, modify the preceding `Posts` schema to include a `searchPosts` query:
 
-```
+```sh
 type Query {
   getPost(id: ID!): Post
   allPosts: [Post]
@@ -95,7 +95,7 @@ type Query {
 
 Save the schema. In the **Resolvers** pane, find `searchPosts` and choose **Attach**. Choose your OpenSearch Service data source and save the resolver. Update your resolver's code using the snippet below:
 
-```
+```sh
 import { util } from '@aws-appsync/utils'
 
 /**
@@ -131,7 +131,7 @@ This assumes that the preceding schema has documents that have been indexed in O
 
 The preceding resolver request handler performs a simple query for all records. Suppose you want to search by a specific author. Furthermore, suppose you want that author to be an argument defined in your GraphQL query. In the **Schema** editor of the AWS AppSync console, add an `allPostsByAuthor` query:
 
-```
+```sh
 type Query {
   getPost(id: ID!): Post
   allPosts: [Post]
@@ -142,7 +142,7 @@ type Query {
 
 In the **Resolvers** pane, find `allPostsByAuthor` and choose **Attach**. Choose the OpenSearch Service data source and use the following code:
 
-```
+```sh
 import { util } from '@aws-appsync/utils'
 
 /**
@@ -186,7 +186,7 @@ You may want to add data to your OpenSearch Service domain as the result of a Gr
 
 Return to the **Schema** page in the AWS AppSync console and select **Attach** for the `addPost()` mutation. Select the OpenSearch Service data source again and use the following code:
 
-```
+```sh
 import { util } from '@aws-appsync/utils'
 
 /**
@@ -222,7 +222,7 @@ Like before, this is an example of how your data might be structured. If you hav
 
 Finally, if you want to use the `getPost(id:ID)` query in your schema to return an individual document, find this query in the **Schema** editor of the AWS AppSync console and choose **Attach**. Select the OpenSearch Service data source again and use the following code:
 
-```
+```sh
 import { util } from '@aws-appsync/utils'
 
 /**
@@ -255,7 +255,7 @@ export function response(ctx) {
 
 You should now be able to perform GraphQL operations against your OpenSearch Service domain. Navigate to the **Queries** tab of the AWS AppSync console and add a new record:
 
-```
+```sh
 mutation AddPost {
     addPost (
         id:"12345"
@@ -271,7 +271,7 @@ mutation AddPost {
 
 You’ll see the result of the mutation on the right. Similarly, you can now run a `searchPosts` query against your OpenSearch Service domain:
 
-```
+```sh
 query search {
     searchPosts {
         id

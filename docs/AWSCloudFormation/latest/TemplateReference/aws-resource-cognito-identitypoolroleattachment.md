@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cognito-identitypoolroleattachment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Cognito::IdentityPoolRoleAttachment",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cognito-identitypoolroleattachment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Cognito::IdentityPoolRoleAttachment
 Properties:
   [IdentityPoolId](#cfn-cognito-identitypoolroleattachment-identitypoolid): {{String}}
@@ -97,7 +97,7 @@ The following example sets roles for an identity pool. It sets â€œauthenticatedâ
 #### JSON
 <a name="aws-resource-cognito-identitypoolroleattachment--examples--Setting_the_roles_for_an_identity_pool--json"></a>
 
-```
+```json
 {
    "IdentityPoolRoleAttachment":{
       "Type":"AWS::Cognito::IdentityPoolRoleAttachment",
@@ -171,7 +171,7 @@ The following example sets roles for an identity pool. It sets â€œauthenticatedâ
 #### YAML
 <a name="aws-resource-cognito-identitypoolroleattachment--examples--Setting_the_roles_for_an_identity_pool--yaml"></a>
 
-```
+```yaml
 IdentityPoolRoleAttachment:
   Type: AWS::Cognito::IdentityPoolRoleAttachment
   Properties:

@@ -90,7 +90,7 @@ Not all instance types support enabling reboot migration. You can view the insta
 **To view the instance types that support enabling reboot migration**
 Use the [describe-instance-types](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-types.html) command with the `reboot-migration-support` filter.
 
-```
+```bash
 aws ec2 describe-instance-types \
     --filters Name=reboot-migration-support,Values=supported \
     --query "InstanceTypes[*].[InstanceType]" \
@@ -99,7 +99,7 @@ aws ec2 describe-instance-types \
 **To view the instance types that support enabling reboot migration**
 Use the [Get-EC2InstanceType](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceType.html) cmdlet with the `reboot-migration-support` filter.
 
-```
+```powershell
 Get-EC2InstanceType `
     -Filter @{Name="reboot-migration-support";Values="true"} | `
     Select InstanceType | Sort-Object InstanceType
@@ -135,7 +135,7 @@ You can disable or enable reboot migration on a running or stopped instance.
 **To disable reboot migration**
 Use the [modify-instance-maintenance-options](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-maintenance-options.html) command and set the `--reboot-migration` parameter to `disabled`.
 
-```
+```bash
 aws ec2 modify-instance-maintenance-options \
     --instance-id {{i-0abcdef1234567890}} \
     --reboot-migration disabled
@@ -144,7 +144,7 @@ aws ec2 modify-instance-maintenance-options \
 **To enable reboot migration**
 Use the [modify-instance-maintenance-options](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-maintenance-options.html) command and set the `--reboot-migration` parameter to `default`.
 
-```
+```bash
 aws ec2 modify-instance-maintenance-options \
     --instance-id {{i-0abcdef1234567890}} \
     --reboot-migration default
@@ -156,7 +156,7 @@ aws ec2 modify-instance-maintenance-options \
 **To disable reboot migration**
 Use the [Edit-EC2InstanceMaintenanceOption](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceMaintenanceOption.html) cmdlet.
 
-```
+```powershell
 Edit-EC2InstanceMaintenanceOption `
     -InstanceId  `
     -RebootMigration Disabled
@@ -165,7 +165,7 @@ Edit-EC2InstanceMaintenanceOption `
 **To enable reboot migration**
 Use the [Edit-EC2InstanceMaintenanceOption](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceMaintenanceOption.html) cmdlet.
 
-```
+```powershell
 Edit-EC2InstanceMaintenanceOption `
     -InstanceId {{i-1234567890abcdef0}} `
     -RebootMigration Enabled

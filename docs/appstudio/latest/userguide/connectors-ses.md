@@ -48,7 +48,7 @@ The following policies apply to all Amazon SES resources using the wildcard (`*`
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -96,7 +96,7 @@ Now, create an IAM role that uses the policy you previously created. App Studio 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

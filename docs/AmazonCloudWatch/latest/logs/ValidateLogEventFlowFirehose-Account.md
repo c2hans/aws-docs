@@ -12,7 +12,7 @@ aws s3api list-objects --bucket 'amzn-s3-demo-bucket'
 
 The output of that command will be similar to the following:
 
-```
+```json
 {
     "Contents": [
         {

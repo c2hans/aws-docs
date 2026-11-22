@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-observabilityadmin-telemetryrule-vpcflowlogparameters-syntax.json"></a>
 
-```
+```json
 {
   "[LogFormat](#cfn-observabilityadmin-telemetryrule-vpcflowlogparameters-logformat)" : {{String}},
   "[MaxAggregationInterval](#cfn-observabilityadmin-telemetryrule-vpcflowlogparameters-maxaggregationinterval)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-observabilityadmin-telemetryrule-vpcflowlogparameters-syntax.yaml"></a>
 
-```
+```yaml
   [LogFormat](#cfn-observabilityadmin-telemetryrule-vpcflowlogparameters-logformat): {{String}}
   [MaxAggregationInterval](#cfn-observabilityadmin-telemetryrule-vpcflowlogparameters-maxaggregationinterval): {{Integer}}
   [TrafficType](#cfn-observabilityadmin-telemetryrule-vpcflowlogparameters-traffictype): {{String}}

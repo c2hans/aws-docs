@@ -30,7 +30,7 @@ If you're using an Auto Scaling group (for example, in an Elastic Beanstalk envi
 **To delete your public key on Amazon EC2**
 Use the [delete-key-pair](https://docs.aws.amazon.com/cli/latest/reference/ec2/delete-key-pair.html) command.
 
-```
+```bash
 aws ec2 delete-key-pair --key-name {{my-key-pair}}
 ```
 
@@ -40,7 +40,7 @@ aws ec2 delete-key-pair --key-name {{my-key-pair}}
 **To delete your public key on Amazon EC2**
 Use the [Remove-EC2KeyPair](https://docs.aws.amazon.com/powershell/latest/reference/items/Remove-EC2KeyPair.html) cmdlet.
 
-```
+```powershell
 Remove-EC2KeyPair -KeyName {{my-key-pair}}
 ```
 

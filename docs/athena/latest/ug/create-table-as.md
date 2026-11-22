@@ -19,7 +19,7 @@ For additional information about `CREATE TABLE AS` that is beyond the scope of t
 ## Synopsis
 <a name="synopsis"></a>
 
-```
+```sql
 CREATE TABLE table_name
 [ WITH ( property_name = expression [, ...] ) ]
 AS query
@@ -51,7 +51,7 @@ Each CTAS table in Athena has a list of optional CTAS table properties that you 
 Optional. The default is `HIVE`. Specifies the table type of the resulting table
 Example:
 
-```
+```sql
 WITH (table_type ='ICEBERG')
 ```
  `external_location = [location]`
@@ -78,14 +78,14 @@ s3://amzn-s3-demo-bucket/{{Unsaved-or-query-name}}/{{year}}/{{month}}/{{date}}/t
 Optional. Indicates if the table is an external table. The default is true. For Iceberg tables, this must be set to false.
 Example:
 
-```
+```sql
 WITH (is_external = false)
 ```
  `location = [location]`
 Required for Iceberg tables. Specifies the root location for the Iceberg table to be created from the query results.
 Example:
 
-```
+```sql
 WITH (location ='s3://amzn-s3-demo-bucket/tables/{{iceberg_table}}/')
 ```
  `field_delimiter = [delimiter]`
@@ -94,7 +94,7 @@ Optional and specific to text-based data storage formats. The single-character f
 The storage format for the CTAS query results, such as `ORC`, `PARQUET`, `AVRO`, `JSON`, `ION`, or `TEXTFILE`. For Iceberg tables, the allowed formats are `ORC`, `PARQUET`, and `AVRO`. If omitted, `PARQUET` is used by default. The name of this parameter, `format`, must be listed in lowercase, or your CTAS query will fail.
 Example:
 
-```
+```sql
 WITH (format = 'PARQUET')
 ```
  `bucketed_by = ARRAY[ column_name[,…], bucket_count = [int] ]`
@@ -104,7 +104,7 @@ An array list of buckets to bucket data. If omitted, Athena does not bucket your
 This property does not apply to Iceberg tables. For Iceberg tables, use partitioning with bucket transform.
 The number of buckets for bucketing your data. If omitted, Athena does not bucket your data. Example:
 
-```
+```sql
 CREATE TABLE bucketed_table WITH (
   bucketed_by = ARRAY[{{column_name}}],
   bucket_count = 30, format = 'PARQUET',
@@ -137,7 +137,7 @@ Optional. Specifies the partitioning of the Iceberg table to be created. Iceberg
 
 Example:
 
-```
+```sql
  WITH (partitioning = ARRAY['month(order_date)',
                             'bucket(account_number, 10)',
                             'country']))
@@ -146,28 +146,28 @@ Example:
 Optional. Data optimization specific configuration. Files smaller than the specified value are included for optimization. The default is 0.75 times the value of `write_target_data_file_size_bytes`. This property applies only to Iceberg tables. For more information, see [Optimize Iceberg tables](querying-iceberg-data-optimization.md).
 Example:
 
-```
+```sql
 WITH (optimize_rewrite_min_data_file_size_bytes = 402653184)
 ```
  `optimize_rewrite_max_data_file_size_bytes = [long]`
 Optional. Data optimization specific configuration. Files larger than the specified value are included for optimization. The default is 1.8 times the value of `write_target_data_file_size_bytes`. This property applies only to Iceberg tables. For more information, see [Optimize Iceberg tables](querying-iceberg-data-optimization.md).
 Example:
 
-```
+```sql
 WITH (optimize_rewrite_max_data_file_size_bytes = 966367641)
 ```
  `optimize_rewrite_data_file_threshold = [int]`
 Optional. Data optimization specific configuration. If there are fewer data files that require optimization than the given threshold, the files are not rewritten. This allows the accumulation of more data files to produce files closer to the target size and skip unnecessary computation for cost savings. The default is 5. This property applies only to Iceberg tables. For more information, see [Optimize Iceberg tables](querying-iceberg-data-optimization.md).
 Example:
 
-```
+```sql
 WITH (optimize_rewrite_data_file_threshold = 5)
 ```
  `optimize_rewrite_delete_file_threshold = [int]`
 Optional. Data optimization specific configuration. If there are fewer delete files associated with a data file than the threshold, the data file is not rewritten. This allows the accumulation of more delete files for each data file for cost savings. The default is 2. This property applies only to Iceberg tables. For more information, see [Optimize Iceberg tables](querying-iceberg-data-optimization.md).
 Example:
 
-```
+```sql
 WITH (optimize_rewrite_delete_file_threshold = 2)
 ```
  `vacuum_min_snapshots_to_keep = [int]`
@@ -175,7 +175,7 @@ Optional. Vacuum specific configuration. The minimum number of most recent snaps
 The `vacuum_min_snapshots_to_keep` property requires Athena engine version 3.
 Example:
 
-```
+```sql
 WITH (vacuum_min_snapshots_to_keep = 1)
 ```
  `vacuum_max_snapshot_age_seconds = [long]`
@@ -183,7 +183,7 @@ Optional. Vacuum specific configuration. A period in seconds that represents the
 The `vacuum_max_snapshot_age_seconds` property requires Athena engine version 3.
 Example:
 
-```
+```sql
 WITH (vacuum_max_snapshot_age_seconds = 432000)
 ```
  `write_compression = [compression_format]`

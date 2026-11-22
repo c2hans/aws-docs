@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-supportapp-slackchannelconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SupportApp::SlackChannelConfiguration",
   "Properties" : {
@@ -44,7 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-supportapp-slackchannelconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SupportApp::SlackChannelConfiguration
 Properties:
   [ChannelId](#cfn-supportapp-slackchannelconfiguration-channelid): {{String}}
@@ -134,7 +134,7 @@ Use this template to create a Slack channel configuration and IAM role for your 
 #### JSON
 <a name="aws-resource-supportapp-slackchannelconfiguration--examples--Example--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Example stack to create a Slack channel configuration",
@@ -183,7 +183,7 @@ Use this template to create a Slack channel configuration and IAM role for your 
 #### YAML
 <a name="aws-resource-supportapp-slackchannelconfiguration--examples--Example--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Example stack to create a Slack channel configuration
 Resources:

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codestar-githubrepository-code-syntax.json"></a>
 
-```
+```json
 {
   "[S3](#cfn-codestar-githubrepository-code-s3)" : {{S3}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codestar-githubrepository-code-syntax.yaml"></a>
 
-```
+```yaml
   [S3](#cfn-codestar-githubrepository-code-s3): {{
     S3}}
 ```

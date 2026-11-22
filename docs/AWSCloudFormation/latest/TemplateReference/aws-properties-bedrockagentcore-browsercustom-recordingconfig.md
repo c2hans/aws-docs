@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-browsercustom-recordingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-bedrockagentcore-browsercustom-recordingconfig-enabled)" : {{Boolean}},
   "[S3Location](#cfn-bedrockagentcore-browsercustom-recordingconfig-s3location)" : {{S3Location}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-browsercustom-recordingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-bedrockagentcore-browsercustom-recordingconfig-enabled): {{Boolean}}
   [S3Location](#cfn-bedrockagentcore-browsercustom-recordingconfig-s3location): {{
     S3Location}}

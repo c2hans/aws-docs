@@ -114,7 +114,7 @@ As an alternative to using the `AmazonRDSDirectoryServiceAccess` managed policy,
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -142,7 +142,7 @@ The role must also have the following IAM role policy:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

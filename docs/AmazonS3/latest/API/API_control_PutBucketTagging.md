@@ -102,7 +102,7 @@ If the action is successful, the service sends back an HTTP 200 response with an
 
 The following request adds a tag set to the existing `example-outpost-bucket` bucket.
 
-```
+```HTTP
 PUT v20180820/bucket/example-outpost-bucket/tagging HTTP/1.1
 Host: s3-outposts.<Region>.amazonaws.com
 Content-Length: 1660

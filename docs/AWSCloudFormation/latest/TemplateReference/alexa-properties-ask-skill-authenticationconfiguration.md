@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="alexa-properties-ask-skill-authenticationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ClientId](#cfn-ask-skill-authenticationconfiguration-clientid)" : {{String}},
   "[ClientSecret](#cfn-ask-skill-authenticationconfiguration-clientsecret)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="alexa-properties-ask-skill-authenticationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ClientId](#cfn-ask-skill-authenticationconfiguration-clientid): {{String}}
   [ClientSecret](#cfn-ask-skill-authenticationconfiguration-clientsecret): {{String}}
   [RefreshToken](#cfn-ask-skill-authenticationconfiguration-refreshtoken): {{String}}

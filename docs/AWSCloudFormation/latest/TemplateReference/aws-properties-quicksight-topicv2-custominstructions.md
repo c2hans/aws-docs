@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-topicv2-custominstructions-syntax.json"></a>
 
-```
+```json
 {
   "[CustomInstructionsString](#cfn-quicksight-topicv2-custominstructions-custominstructionsstring)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-topicv2-custominstructions-syntax.yaml"></a>
 
-```
+```yaml
   [CustomInstructionsString](#cfn-quicksight-topicv2-custominstructions-custominstructionsstring): {{
     String}}
 ```

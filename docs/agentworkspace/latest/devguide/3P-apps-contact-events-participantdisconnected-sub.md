@@ -8,13 +8,13 @@ Subscribes to participant disconnected events. This event fires when a participa
 
  **Signature**
 
-```
+```typescript
 onParticipantDisconnected(handler: ParticipantDisconnectedHandler, contactId?: string): void
 ```
 
  **Usage**
 
-```
+```typescript
 const handleParticipantDisconnected = (event) => {
     console.log(`Participant disconnected: ${event.participant.participantId}`);
 };
@@ -39,6 +39,6 @@ The handler receives a ParticipantDisconnected event with:
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

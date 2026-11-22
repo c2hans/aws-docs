@@ -19,7 +19,7 @@ With Aurora MySQL version 2 and 3, you can replicate between Aurora MySQL and an
 **Warning**
  When you replicate between Aurora MySQL and MySQL, make sure that you use only InnoDB tables. If you have MyISAM tables that you want to replicate, you can convert them to InnoDB before setting up replication with the following command.
 
-```
+```sql
 alter table <schema>.<table_name> engine=innodb, algorithm=copy;
 ```
 

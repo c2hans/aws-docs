@@ -108,7 +108,7 @@ The following are some use cases that can benefit from Optimized Reads with temp
 
 You can monitor your queries that use Optimized Reads-enabled tiered cache with the EXPLAIN command as shown in the following example:
 
-```
+```sql
 Postgres=> EXPLAIN (ANALYZE, BUFFERS) SELECT c FROM sbtest15 WHERE id=100000000
 
 QUERY PLAN

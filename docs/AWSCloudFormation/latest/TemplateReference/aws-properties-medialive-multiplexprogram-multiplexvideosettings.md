@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-multiplexprogram-multiplexvideosettings-syntax.json"></a>
 
-```
+```json
 {
   "[ConstantBitrate](#cfn-medialive-multiplexprogram-multiplexvideosettings-constantbitrate)" : {{Integer}},
   "[StatmuxSettings](#cfn-medialive-multiplexprogram-multiplexvideosettings-statmuxsettings)" : {{MultiplexStatmuxVideoSettings}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-multiplexprogram-multiplexvideosettings-syntax.yaml"></a>
 
-```
+```yaml
   [ConstantBitrate](#cfn-medialive-multiplexprogram-multiplexvideosettings-constantbitrate): {{Integer}}
   [StatmuxSettings](#cfn-medialive-multiplexprogram-multiplexvideosettings-statmuxsettings): {{
     MultiplexStatmuxVideoSettings}}

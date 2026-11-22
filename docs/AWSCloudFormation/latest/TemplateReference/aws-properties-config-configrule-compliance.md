@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-config-configrule-compliance-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-config-configrule-compliance-type)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-config-configrule-compliance-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-config-configrule-compliance-type): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-virtualrouter-virtualrouterspec-syntax.json"></a>
 
-```
+```json
 {
   "[Listeners](#cfn-appmesh-virtualrouter-virtualrouterspec-listeners)" : {{[ VirtualRouterListener, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-virtualrouter-virtualrouterspec-syntax.yaml"></a>
 
-```
+```yaml
   [Listeners](#cfn-appmesh-virtualrouter-virtualrouterspec-listeners): {{
     - VirtualRouterListener}}
 ```

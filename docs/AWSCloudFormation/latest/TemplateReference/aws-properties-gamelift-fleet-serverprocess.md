@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-fleet-serverprocess-syntax.json"></a>
 
-```
+```json
 {
   "[ConcurrentExecutions](#cfn-gamelift-fleet-serverprocess-concurrentexecutions)" : {{Integer}},
   "[LaunchPath](#cfn-gamelift-fleet-serverprocess-launchpath)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-fleet-serverprocess-syntax.yaml"></a>
 
-```
+```yaml
   [ConcurrentExecutions](#cfn-gamelift-fleet-serverprocess-concurrentexecutions): {{Integer}}
   [LaunchPath](#cfn-gamelift-fleet-serverprocess-launchpath): {{String}}
   [Parameters](#cfn-gamelift-fleet-serverprocess-parameters): {{String}}

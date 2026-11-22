@@ -41,7 +41,7 @@ The examples in this section show how to import text files for use in calculatio
 
 The following example shows how to write a file to a local temporary directory, add it to a notebook, and test it.
 
-```
+```python
 import os
 from pyspark import SparkFiles
 tempdir = '/tmp/'
@@ -89,7 +89,7 @@ The following example shows how to import a file from Amazon S3 into a notebook 
 
 1. Use the following code to import the file to your notebook and test the file.
 
-   ```
+   ```py
    from pyspark import SparkFiles
    sc.addFile('s3://amzn-s3-demo-bucket/test.txt')
 
@@ -133,14 +133,14 @@ The following example shows how to add Python files from Amazon S3 to your noteb
 
 1. Using your own Amazon S3 location, create the file `s3://amzn-s3-demo-bucket/file1.py` with the following contents:
 
-   ```
+   ```py
    def xyz(input):
        return 'xyz  - udf ' + str(input);
    ```
 
 1. In the same S3 location, create the file `s3://amzn-s3-demo-bucket/file2.py` with the following contents:
 
-   ```
+   ```py
    from file1 import xyz
    def uvw(input):
        return 'uvw -> ' + xyz(input);
@@ -148,7 +148,7 @@ The following example shows how to add Python files from Amazon S3 to your noteb
 
 1. In your Athena for Spark notebook, run the following commands.
 
-   ```
+   ```py
    sc.addPyFile('s3://amzn-s3-demo-bucket/file1.py')
    sc.addPyFile('s3://amzn-s3-demo-bucket/file2.py')
 
@@ -193,7 +193,7 @@ The `.zip` files that you import to Athena Spark may include only Python package
 
 1. In the `moduletest` directory, create a file named `hello.py` with the following contents:
 
-   ```
+   ```py
    def hi(input):
        return 'hi ' + str(input);
    ```
@@ -217,7 +217,7 @@ The `.zip` files that you import to Athena Spark may include only Python package
 
 1. Use the following code to import the Python`.zip` file into your notebook.
 
-   ```
+   ```py
    sc.addPyFile('s3://amzn-s3-demo-bucket/moduletest.zip')
 
    from moduletest.hello import hi
@@ -250,7 +250,7 @@ The `.zip` files that you import to Athena Spark may include only Python package
 
 The following code examples show how to add and import two different versions of a Python library from a location in Amazon S3 as two separate modules. The code adds each the library file from S3, imports it, and then prints the library version to verify the import.
 
-```
+```py
 sc.addPyFile('s3://amzn-s3-demo-bucket/python-third-party-libs-test/simplejson_v3_15.zip')
 sc.addPyFile('s3://amzn-s3-demo-bucket/python-third-party-libs-test/simplejson_v3_17_6.zip')
 
@@ -264,7 +264,7 @@ print(simplejson_v3_15.__version__)
 3.15.0
 ```
 
-```
+```py
 import simplejson_v3_17_6
 print(simplejson_v3_17_6.__version__)
 ```
@@ -387,7 +387,7 @@ This example uses the `pip` command to download a Python .zip file of the [bpabe
 
    1. Import the library and run a test command.
 
-      ```
+      ```py
       >>> import piglatin
       >>> piglatin.translate('hello')
       ```
@@ -400,7 +400,7 @@ This example uses the `pip` command to download a Python .zip file of the [bpabe
 
 1. Use commands like the following to add the `.zip` file from Amazon S3, import it into your notebook in Athena, and test it.
 
-   ```
+   ```py
    sc.addPyFile('s3://amzn-s3-demo-bucket/library.zip')
 
    import piglatin
@@ -531,7 +531,7 @@ wcwidth
 
    1. Import the library and run a test.
 
-      ```
+      ```py
       >>> from md2gemini import md2gemini
       >>> print(md2gemini('[abc](https://abc.def)'))
       ```
@@ -544,7 +544,7 @@ wcwidth
 
 1. Use the following commands to add the `.zip` file from Amazon S3, import it into your notebook in Athena, and perform a non UDF test.
 
-   ```
+   ```py
    # (non udf test)
    sc.addPyFile('s3://amzn-s3-demo-bucket/md2gemini.zip')
    from md2gemini import md2gemini
@@ -561,7 +561,7 @@ wcwidth
 
 1. Use the following commands to perform a UDF test.
 
-   ```
+   ```py
    # (udf test)
 
    from pyspark.sql.functions import udf

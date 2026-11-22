@@ -29,7 +29,7 @@ However, one disadvantage of using the `bridge` network mode is that it's diffic
 
 To configure `bridge` mode for communication over IPv6, you must update Docker daemon settings. Update `/etc/docker/daemon.json` with the following:
 
-```
+```json
 {
   "ipv6": true,
   "fixed-cidr-v6": "2001:db8:1::/64",

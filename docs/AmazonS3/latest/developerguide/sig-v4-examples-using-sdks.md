@@ -54,7 +54,7 @@ The examples use a virtual-hosted style request to access the bucket. To avoid p
 
 1. Change the directory to `bin/`, and then run `RunAllSamples`.
 
-   ```
+   ```java
    java com.amazonaws.services.s3.sample.RunAllSamples
    ```
 

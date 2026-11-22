@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-location-map-mapconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CustomLayers](#cfn-location-map-mapconfiguration-customlayers)" : {{[ String, ... ]}},
   "[PoliticalView](#cfn-location-map-mapconfiguration-politicalview)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-location-map-mapconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CustomLayers](#cfn-location-map-mapconfiguration-customlayers): {{
     - String}}
   [PoliticalView](#cfn-location-map-mapconfiguration-politicalview): {{String}}

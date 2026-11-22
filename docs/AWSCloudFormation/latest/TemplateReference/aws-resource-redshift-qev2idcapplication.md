@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-redshift-qev2idcapplication-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Redshift::QEV2IdcApplication",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-redshift-qev2idcapplication-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Redshift::QEV2IdcApplication
 Properties:
   [IdcDisplayName](#cfn-redshift-qev2idcapplication-idcdisplayname): {{String}}

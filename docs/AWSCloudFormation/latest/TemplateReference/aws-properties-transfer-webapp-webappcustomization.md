@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-transfer-webapp-webappcustomization-syntax.json"></a>
 
-```
+```json
 {
   "[FaviconFile](#cfn-transfer-webapp-webappcustomization-faviconfile)" : {{String}},
   "[LogoFile](#cfn-transfer-webapp-webappcustomization-logofile)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-transfer-webapp-webappcustomization-syntax.yaml"></a>
 
-```
+```yaml
   [FaviconFile](#cfn-transfer-webapp-webappcustomization-faviconfile): {{String}}
   [LogoFile](#cfn-transfer-webapp-webappcustomization-logofile): {{String}}
   [Title](#cfn-transfer-webapp-webappcustomization-title): {{String}}

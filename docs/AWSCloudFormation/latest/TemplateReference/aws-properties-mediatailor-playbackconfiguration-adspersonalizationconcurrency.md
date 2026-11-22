@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-playbackconfiguration-adspersonalizationconcurrency-syntax.json"></a>
 
-```
+```json
 {
   "[EnableVodVastParallelization](#cfn-mediatailor-playbackconfiguration-adspersonalizationconcurrency-enablevodvastparallelization)" : {{Boolean}},
   "[MaxConcurrentAdsRequests](#cfn-mediatailor-playbackconfiguration-adspersonalizationconcurrency-maxconcurrentadsrequests)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-playbackconfiguration-adspersonalizationconcurrency-syntax.yaml"></a>
 
-```
+```yaml
   [EnableVodVastParallelization](#cfn-mediatailor-playbackconfiguration-adspersonalizationconcurrency-enablevodvastparallelization): {{Boolean}}
   [MaxConcurrentAdsRequests](#cfn-mediatailor-playbackconfiguration-adspersonalizationconcurrency-maxconcurrentadsrequests): {{Integer}}
 ```

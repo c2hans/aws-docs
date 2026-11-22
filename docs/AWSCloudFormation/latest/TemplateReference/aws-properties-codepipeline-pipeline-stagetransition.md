@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codepipeline-pipeline-stagetransition-syntax.json"></a>
 
-```
+```json
 {
   "[Reason](#cfn-codepipeline-pipeline-stagetransition-reason)" : {{String}},
   "[StageName](#cfn-codepipeline-pipeline-stagetransition-stagename)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codepipeline-pipeline-stagetransition-syntax.yaml"></a>
 
-```
+```yaml
   [Reason](#cfn-codepipeline-pipeline-stagetransition-reason): {{String}}
   [StageName](#cfn-codepipeline-pipeline-stagetransition-stagename): {{String}}
 ```

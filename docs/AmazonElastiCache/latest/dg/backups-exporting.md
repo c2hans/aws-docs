@@ -60,7 +60,7 @@ Add the following bucket policy to your Amazon S3 bucket. Replace `{{amzn-s3-dem
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -112,7 +112,7 @@ To call the export operation, you must have permissions to call `elasticache:Cop
 
 The following IAM policy shows the minimum permissions that you need. Replace `{{amzn-s3-demo-bucket}}` with the name of your target Amazon S3 bucket.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

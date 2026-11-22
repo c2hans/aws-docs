@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrassv2-deployment-deploymentcomponentupdatepolicy-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-greengrassv2-deployment-deploymentcomponentupdatepolicy-action)" : {{String}},
   "[TimeoutInSeconds](#cfn-greengrassv2-deployment-deploymentcomponentupdatepolicy-timeoutinseconds)" : {{Integer}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrassv2-deployment-deploymentcomponentupdatepolicy-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-greengrassv2-deployment-deploymentcomponentupdatepolicy-action): {{String}}
   [TimeoutInSeconds](#cfn-greengrassv2-deployment-deploymentcomponentupdatepolicy-timeoutinseconds): {{Integer}}
 ```

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigateway-account-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGateway::Account",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigateway-account-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGateway::Account
 Properties:
   [CloudWatchRoleArn](#cfn-apigateway-account-cloudwatchrolearn): {{String}}
@@ -79,7 +79,7 @@ The following example creates an IAM role that API Gateway can assume to push lo
 #### JSON
 <a name="aws-resource-apigateway-account--examples--Associate_account_with_IAM_role--json"></a>
 
-```
+```json
 {
     "CloudWatchRole": {
         "Type": "AWS::IAM::Role",
@@ -121,7 +121,7 @@ The following example creates an IAM role that API Gateway can assume to push lo
 #### YAML
 <a name="aws-resource-apigateway-account--examples--Associate_account_with_IAM_role--yaml"></a>
 
-```
+```yaml
 CloudWatchRole:
   Type: 'AWS::IAM::Role'
   Properties:

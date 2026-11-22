@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityhub-automationrulev2-compositefilter-syntax.json"></a>
 
-```
+```json
 {
   "[BooleanFilters](#cfn-securityhub-automationrulev2-compositefilter-booleanfilters)" : {{[ OcsfBooleanFilter, ... ]}},
   "[DateFilters](#cfn-securityhub-automationrulev2-compositefilter-datefilters)" : {{[ OcsfDateFilter, ... ]}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityhub-automationrulev2-compositefilter-syntax.yaml"></a>
 
-```
+```yaml
   [BooleanFilters](#cfn-securityhub-automationrulev2-compositefilter-booleanfilters): {{
     - OcsfBooleanFilter}}
   [DateFilters](#cfn-securityhub-automationrulev2-compositefilter-datefilters): {{

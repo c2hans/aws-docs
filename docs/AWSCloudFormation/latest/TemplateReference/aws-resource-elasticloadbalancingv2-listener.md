@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-elasticloadbalancingv2-listener-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ElasticLoadBalancingV2::Listener",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-elasticloadbalancingv2-listener-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ElasticLoadBalancingV2::Listener
 Properties:
   [AlpnPolicy](#cfn-elasticloadbalancingv2-listener-alpnpolicy): {{
@@ -172,7 +172,7 @@ The following example creates an HTTP listener with a default action that redire
 #### YAML
 <a name="aws-resource-elasticloadbalancingv2-listener--examples--Create_an_HTTP_listener--yaml"></a>
 
-```
+```yaml
 myHTTPlistener:
   Type: 'AWS::ElasticLoadBalancingV2::Listener'
   Properties:
@@ -193,7 +193,7 @@ myHTTPlistener:
 #### JSON
 <a name="aws-resource-elasticloadbalancingv2-listener--examples--Create_an_HTTP_listener--json"></a>
 
-```
+```json
 {
     "myHTTPlistener": {
         "Type": "AWS::ElasticLoadBalancingV2::Listener",
@@ -229,7 +229,7 @@ The following example creates an HTTPS listener with a default action that forwa
 #### YAML
 <a name="aws-resource-elasticloadbalancingv2-listener--examples--Create_an_HTTPS_listener--yaml"></a>
 
-```
+```yaml
 myHTTPSListener:
   Type: 'AWS::ElasticLoadBalancingV2::Listener'
   Properties:
@@ -247,7 +247,7 @@ myHTTPSListener:
 #### JSON
 <a name="aws-resource-elasticloadbalancingv2-listener--examples--Create_an_HTTPS_listener--json"></a>
 
-```
+```json
 {
     "myHTTPSListener": {
         "Type": "AWS::ElasticLoadBalancingV2::Listener",
@@ -284,7 +284,7 @@ The following example creates a TCP listener with a default action that forwards
 #### YAML
 <a name="aws-resource-elasticloadbalancingv2-listener--examples--Create_a_TCP_listener--yaml"></a>
 
-```
+```yaml
 myTCPListener:
   Type: 'AWS::ElasticLoadBalancingV2::Listener'
   Properties:
@@ -299,7 +299,7 @@ myTCPListener:
 #### JSON
 <a name="aws-resource-elasticloadbalancingv2-listener--examples--Create_a_TCP_listener--json"></a>
 
-```
+```json
 {
     "myTCPListener": {
         "Type": "AWS::ElasticLoadBalancingV2::Listener",
@@ -330,7 +330,7 @@ The following example creates a TLS listener with a default action that forwards
 #### YAML
 <a name="aws-resource-elasticloadbalancingv2-listener--examples--Create_a_TLS_listener--yaml"></a>
 
-```
+```yaml
 myTLSListener:
   Type: 'AWS::ElasticLoadBalancingV2::Listener'
   Properties:
@@ -348,7 +348,7 @@ myTLSListener:
 #### JSON
 <a name="aws-resource-elasticloadbalancingv2-listener--examples--Create_a_TLS_listener--json"></a>
 
-```
+```json
 {
     "myTLSListener": {
         "Type": "AWS::ElasticLoadBalancingV2::Listener",
@@ -385,7 +385,7 @@ The following example creates a UDP listener with a default action that forwards
 #### YAML
 <a name="aws-resource-elasticloadbalancingv2-listener--examples--Create_a_UDP_listener--yaml"></a>
 
-```
+```yaml
 myUDPListener:
   Type: 'AWS::ElasticLoadBalancingV2::Listener'
   Properties:
@@ -400,7 +400,7 @@ myUDPListener:
 #### JSON
 <a name="aws-resource-elasticloadbalancingv2-listener--examples--Create_a_UDP_listener--json"></a>
 
-```
+```json
 {
     "myUDPListener": {
         "Type": "AWS::ElasticLoadBalancingV2::Listener",
@@ -431,7 +431,7 @@ The following example creates a QUIC listener with a default action that forward
 #### YAML
 <a name="aws-resource-elasticloadbalancingv2-listener--examples--Create_a_QUIC_listener--yaml"></a>
 
-```
+```yaml
 myQUICListener:
   Type: 'AWS::ElasticLoadBalancingV2::Listener'
   Properties:
@@ -446,7 +446,7 @@ myQUICListener:
 #### JSON
 <a name="aws-resource-elasticloadbalancingv2-listener--examples--Create_a_QUIC_listener--json"></a>
 
-```
+```json
 {
     "myUDPListener": {
         "Type": "AWS::ElasticLoadBalancingV2::Listener",

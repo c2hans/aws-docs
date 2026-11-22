@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-pipetargetsqsqueueparameters-syntax.json"></a>
 
-```
+```json
 {
   "[MessageDeduplicationId](#cfn-pipes-pipe-pipetargetsqsqueueparameters-messagededuplicationid)" : {{String}},
   "[MessageGroupId](#cfn-pipes-pipe-pipetargetsqsqueueparameters-messagegroupid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-pipetargetsqsqueueparameters-syntax.yaml"></a>
 
-```
+```yaml
   [MessageDeduplicationId](#cfn-pipes-pipe-pipetargetsqsqueueparameters-messagededuplicationid): {{String}}
   [MessageGroupId](#cfn-pipes-pipe-pipetargetsqsqueueparameters-messagegroupid): {{String}}
 ```

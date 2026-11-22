@@ -19,7 +19,7 @@ Replace {{myregion}} in `s3://athena-examples-{{myregion}}/path/to/data/` with t
 
 The following example creates a table for the flight delays data in ORC. The table includes partitions:
 
-```
+```sql
 DROP TABLE flight_delays_orc;
 CREATE EXTERNAL TABLE flight_delays_orc (
     yr INT,
@@ -140,13 +140,13 @@ tblproperties ("orc.compress"="ZLIB");
 
 Run the `MSCK REPAIR TABLE` statement on the table to refresh partition metadata:
 
-```
+```sql
 MSCK REPAIR TABLE flight_delays_orc;
 ```
 
 Use this query to obtain the top 10 routes delayed by more than 1 hour:
 
-```
+```sql
 SELECT origin, dest, count(*) as delays
 FROM flight_delays_orc
 WHERE depdelayminutes > 60

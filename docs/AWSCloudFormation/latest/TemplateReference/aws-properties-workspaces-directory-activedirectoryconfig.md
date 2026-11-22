@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspaces-directory-activedirectoryconfig-syntax.json"></a>
 
-```
+```json
 {
   "[DomainName](#cfn-workspaces-directory-activedirectoryconfig-domainname)" : {{String}},
   "[ServiceAccountSecretArn](#cfn-workspaces-directory-activedirectoryconfig-serviceaccountsecretarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspaces-directory-activedirectoryconfig-syntax.yaml"></a>
 
-```
+```yaml
   [DomainName](#cfn-workspaces-directory-activedirectoryconfig-domainname): {{String}}
   [ServiceAccountSecretArn](#cfn-workspaces-directory-activedirectoryconfig-serviceaccountsecretarn): {{String}}
 ```

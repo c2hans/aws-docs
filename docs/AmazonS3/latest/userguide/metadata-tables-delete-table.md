@@ -30,7 +30,7 @@ To use the following example commands, replace the `{{user input placeholders}}`
 
 1. Use the following command to delete the metadata table from your AWS managed table bucket:
 
-   ```
+   ```bash
    aws s3tables delete-table \
    --table-bucket-arn arn:aws:s3tables:{{us-east-2}}:{{111122223333}}:bucket/aws-s3 \
    --namespace b_{{general-purpose-bucket-name}} \
@@ -40,7 +40,7 @@ To use the following example commands, replace the `{{user input placeholders}}`
 
 1. To verify that the table was deleted, use the following command:
 
-   ```
+   ```bash
    aws s3tables get-table \
    --table-bucket-arn arn:aws:s3tables:{{us-east-2}}:{{111122223333}}:bucket/aws-s3 \
    --namespace b_{{general-purpose-bucket-name}} \

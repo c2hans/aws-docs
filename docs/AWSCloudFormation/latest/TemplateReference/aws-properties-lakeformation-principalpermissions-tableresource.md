@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lakeformation-principalpermissions-tableresource-syntax.json"></a>
 
-```
+```json
 {
   "[CatalogId](#cfn-lakeformation-principalpermissions-tableresource-catalogid)" : {{String}},
   "[DatabaseName](#cfn-lakeformation-principalpermissions-tableresource-databasename)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lakeformation-principalpermissions-tableresource-syntax.yaml"></a>
 
-```
+```yaml
   [CatalogId](#cfn-lakeformation-principalpermissions-tableresource-catalogid): {{String}}
   [DatabaseName](#cfn-lakeformation-principalpermissions-tableresource-databasename): {{String}}
   [Name](#cfn-lakeformation-principalpermissions-tableresource-name): {{String}}

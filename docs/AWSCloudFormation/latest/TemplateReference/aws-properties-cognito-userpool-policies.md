@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpool-policies-syntax.json"></a>
 
-```
+```json
 {
   "[PasswordPolicy](#cfn-cognito-userpool-policies-passwordpolicy)" : {{PasswordPolicy}},
   "[SignInPolicy](#cfn-cognito-userpool-policies-signinpolicy)" : {{SignInPolicy}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpool-policies-syntax.yaml"></a>
 
-```
+```yaml
   [PasswordPolicy](#cfn-cognito-userpool-policies-passwordpolicy): {{
     PasswordPolicy}}
   [SignInPolicy](#cfn-cognito-userpool-policies-signinpolicy): {{

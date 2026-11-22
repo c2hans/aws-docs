@@ -17,7 +17,7 @@ aws dynamodb scan \
 
 The arguments for `--expression-attribute-values` are stored in the `values.json` file.
 
-```
+```json
 {
     ":c": { "S": "Black" },
     ":p": { "N": "500" }

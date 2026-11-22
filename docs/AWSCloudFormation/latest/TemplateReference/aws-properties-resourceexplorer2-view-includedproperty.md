@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-resourceexplorer2-view-includedproperty-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-resourceexplorer2-view-includedproperty-name)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-resourceexplorer2-view-includedproperty-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-resourceexplorer2-view-includedproperty-name): {{String}}
 ```
 

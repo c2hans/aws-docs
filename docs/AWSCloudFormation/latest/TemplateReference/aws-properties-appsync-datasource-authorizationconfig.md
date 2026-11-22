@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appsync-datasource-authorizationconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AuthorizationType](#cfn-appsync-datasource-authorizationconfig-authorizationtype)" : {{String}},
   "[AwsIamConfig](#cfn-appsync-datasource-authorizationconfig-awsiamconfig)" : {{AwsIamConfig}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appsync-datasource-authorizationconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AuthorizationType](#cfn-appsync-datasource-authorizationconfig-authorizationtype): {{String}}
   [AwsIamConfig](#cfn-appsync-datasource-authorizationconfig-awsiamconfig): {{
     AwsIamConfig}}

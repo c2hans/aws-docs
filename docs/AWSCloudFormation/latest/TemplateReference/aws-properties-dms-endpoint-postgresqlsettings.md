@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dms-endpoint-postgresqlsettings-syntax.json"></a>
 
-```
+```json
 {
   "[AfterConnectScript](#cfn-dms-endpoint-postgresqlsettings-afterconnectscript)" : {{String}},
   "[BabelfishDatabaseName](#cfn-dms-endpoint-postgresqlsettings-babelfishdatabasename)" : {{String}},
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dms-endpoint-postgresqlsettings-syntax.yaml"></a>
 
-```
+```yaml
   [AfterConnectScript](#cfn-dms-endpoint-postgresqlsettings-afterconnectscript): {{String}}
   [BabelfishDatabaseName](#cfn-dms-endpoint-postgresqlsettings-babelfishdatabasename): {{String}}
   [CaptureDdls](#cfn-dms-endpoint-postgresqlsettings-captureddls): {{Boolean}}

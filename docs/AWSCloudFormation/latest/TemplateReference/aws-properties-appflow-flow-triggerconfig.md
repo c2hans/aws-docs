@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-flow-triggerconfig-syntax.json"></a>
 
-```
+```json
 {
   "[TriggerProperties](#cfn-appflow-flow-triggerconfig-triggerproperties)" : {{ScheduledTriggerProperties}},
   "[TriggerType](#cfn-appflow-flow-triggerconfig-triggertype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-flow-triggerconfig-syntax.yaml"></a>
 
-```
+```yaml
   [TriggerProperties](#cfn-appflow-flow-triggerconfig-triggerproperties): {{
     ScheduledTriggerProperties}}
   [TriggerType](#cfn-appflow-flow-triggerconfig-triggertype): {{String}}

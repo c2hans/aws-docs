@@ -18,7 +18,7 @@ To enable Athena to read this data, you could create a straightforward `CREATE E
 
 Do not use this example just yet as it has an important limitation that will be explained shortly.
 
-```
+```sql
 CREATE EXTERNAL TABLE IF NOT EXISTS cloudfront_logs (
   `Date` DATE,
   Time STRING,
@@ -79,7 +79,7 @@ Now you are ready to create the table in the Athena query editor. The `CREATE TA
 **Note**
 The regex used in the following example is designed to work with the publicly available sample CloudFront log data in the `athena-examples` Amazon S3 location and is illustrative only. For more up-to-date regexes that query both standard and real-time CloudFront log files, see [Query Amazon CloudFront logs](cloudfront-logs.md).
 
-   ```
+   ```sql
    CREATE EXTERNAL TABLE IF NOT EXISTS cloudfront_logs (
      `Date` DATE,
      Time STRING,

@@ -39,7 +39,7 @@ You can use `WriteGetObjectResponse` to respond with the HTTP status code 403 (F
 ------
 #### [ Java ]
 
-```
+```java
 package com.amazon.s3.objectlambda;
 
 import com.amazonaws.services.lambda.runtime.Context;
@@ -97,7 +97,7 @@ public class Example1 {
 ------
 #### [ Python ]
 
-```
+```python
 import boto3
 import requests
 
@@ -136,7 +136,7 @@ def handler(event, context):
 ------
 #### [ Node.js ]
 
-```
+```javascript
 const { S3 } = require('aws-sdk');
 const axios = require('axios').default;
 
@@ -189,7 +189,7 @@ When performing an image transformation, you might find that you need all the by
 ------
 #### [ Java ]
 
-```
+```java
 package com.amazon.s3.objectlambda;
 
 import com.amazonaws.services.lambda.runtime.Context;
@@ -244,7 +244,7 @@ public class Example2V2 {
 ------
 #### [ Python ]
 
-```
+```python
 import boto3
 import requests
 import io
@@ -284,7 +284,7 @@ def handler(event, context):
 ------
 #### [ Node.js ]
 
-```
+```javascript
 const { S3 } = require('aws-sdk');
 const axios = require('axios').default;
 const sharp = require('sharp');
@@ -327,7 +327,7 @@ When you're compressing objects, compressed data is produced incrementally. Cons
 ------
 #### [ Java ]
 
-```
+```java
 package com.amazon.s3.objectlambda;
 
 import com.amazonaws.services.lambda.runtime.events.S3ObjectLambdaEvent;
@@ -373,7 +373,7 @@ public class Example3 {
 ------
 #### [ Python ]
 
-```
+```python
 import boto3
 import requests
 import zlib
@@ -443,7 +443,7 @@ def handler(event, context):
 ------
 #### [ Node.js ]
 
-```
+```javascript
 const { S3 } = require('aws-sdk');
 const axios = require('axios').default;
 const zlib = require('zlib');
@@ -509,7 +509,7 @@ For the request syntax URI parameters, see [`HeadObject`](https://docs.aws.amazo
 
 The following example shows a Lambda JSON input payload for `HeadObject`.
 
-```
+```json
 {
   "xAmzRequestId": "{{requestId}}",
   "**headObjectContext**": {
@@ -556,7 +556,7 @@ Your Lambda function should return a JSON object that contains the headers and v
 
 The following example shows the structure of the Lambda response JSON for `HeadObject`.
 
-```
+```json
 {
     "statusCode": <number>; // Required
     "errorCode": <string>;
@@ -604,7 +604,7 @@ The following example shows how to use the presigned URL to populate your respon
 ------
 #### [ Python ]
 
-```
+```python
 import requests
 
 def lambda_handler(event, context):
@@ -656,7 +656,7 @@ We recommend that you use the newer version, [ListObjectsV2](https://docs.aws.am
 
 The following example shows the Lambda JSON input payload for `ListObjects`.
 
-```
+```json
 {
     "xAmzRequestId": "{{requestId}}",
      "**listObjectsContext**": {
@@ -708,7 +708,7 @@ The following example demonstrates how to use the presigned URL to call Amazon S
 ------
 #### [ Python ]
 
-```
+```python
 import requests
 import xmltodict
 
@@ -777,7 +777,7 @@ def sanitize_response_dict(response_dict: dict):
 
 The following example shows the structure of the Lambda response JSON for `ListObjects`.
 
-```
+```json
 {
   "statusCode": <number>; // Required
   "errorCode": <string>;
@@ -830,7 +830,7 @@ For the request syntax URI parameters, see [`ListObjectsV2`](https://docs.aws.am
 
 The following example shows the Lambda JSON input payload for `ListObjectsV2`.
 
-```
+```json
 {
     "xAmzRequestId": "{{requestId}}",
      "**listObjectsV2Context**": {
@@ -882,7 +882,7 @@ The following example demonstrates how to use the presigned URL to call Amazon S
 ------
 #### [ Python ]
 
-```
+```python
 import requests
 import xmltodict
 
@@ -951,7 +951,7 @@ def sanitize_response_dict(response_dict: dict):
 
 The following example shows the structure of the Lambda response JSON for `ListObjectsV2`.
 
-```
+```json
 {
     "statusCode": <number>; // Required
     "errorCode": <string>;

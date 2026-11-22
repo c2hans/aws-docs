@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicrule-firehoseaction-syntax.json"></a>
 
-```
+```json
 {
   "[BatchMode](#cfn-iot-topicrule-firehoseaction-batchmode)" : {{Boolean}},
   "[DeliveryStreamName](#cfn-iot-topicrule-firehoseaction-deliverystreamname)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicrule-firehoseaction-syntax.yaml"></a>
 
-```
+```yaml
   [BatchMode](#cfn-iot-topicrule-firehoseaction-batchmode): {{Boolean}}
   [DeliveryStreamName](#cfn-iot-topicrule-firehoseaction-deliverystreamname): {{String}}
   [RoleArn](#cfn-iot-topicrule-firehoseaction-rolearn): {{String}}

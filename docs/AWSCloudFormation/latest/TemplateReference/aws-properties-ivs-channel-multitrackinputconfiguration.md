@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ivs-channel-multitrackinputconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-ivs-channel-multitrackinputconfiguration-enabled)" : {{Boolean}},
   "[MaximumResolution](#cfn-ivs-channel-multitrackinputconfiguration-maximumresolution)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ivs-channel-multitrackinputconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-ivs-channel-multitrackinputconfiguration-enabled): {{Boolean}}
   [MaximumResolution](#cfn-ivs-channel-multitrackinputconfiguration-maximumresolution): {{String}}
   [Policy](#cfn-ivs-channel-multitrackinputconfiguration-policy): {{String}}

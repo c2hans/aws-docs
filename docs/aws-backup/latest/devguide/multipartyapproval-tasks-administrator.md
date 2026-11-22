@@ -23,19 +23,19 @@ Follow these steps to return a list of available policies by using `mpa list-pol
 
 1. List Policies:
 
-   ```
+   ```json
    aws mpa list-policies --region us-east-1
    ```
 
 1. List all policy versions:
 
-   ```
+   ```json
    aws mpa list-policy-versions --policy-arn arn:aws:mpa:::aws:policy/backup.amazonaws.com/CreateRestoreAccessVault --region us-east-1
    ```
 
 1. Get details on a policy:
 
-   ```
+   ```json
    aws mpa get-policy-version --policy-version-arn arn:aws:mpa:::aws:policy/backup.amazonaws.com/CreateRestoreAccessVault/1 --region us-east-1
    ```
 
@@ -49,7 +49,7 @@ Expand below to see the policy that will created then attached to your approval 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -121,13 +121,13 @@ To share a Multi-party approval team using AWS RAM through the CLI, use the foll
 
 First, identify the ARN of the approval team you want to share:
 
-```
+```json
 aws mpa list-approval-teams --region {{us-east-1}}
 ```
 
 Create a resource share using the create-resource-share command:
 
-```
+```json
 aws ram create-resource-share \
 --name "MPA-Team-Share" \
 --resource-arns "arn:aws:mpa:{{us-east-1}}:{{ACCOUNT_ID}}:approval-team/{{TEAM_ID}}" \
@@ -138,7 +138,7 @@ aws ram create-resource-share \
 
 To share with an organization instead of specific accounts:
 
-```
+```json
 aws ram create-resource-share \
 --name "MPA-Team-Share" \
 --resource-arns "arn:aws:mpa:{{us-east-1}}:{{ACCOUNT_ID}}:approval-team/{{TEAM_ID}}" \
@@ -149,7 +149,7 @@ aws ram create-resource-share \
 
 Check the status of your resource share:
 
-```
+```json
 aws ram get-resource-shares \
 --resource-owner SELF \
 --region {{us-east-1}}
@@ -157,13 +157,13 @@ aws ram get-resource-shares \
 
 The recipient account(s) will need to accept the resource share invitation:
 
-```
+```json
 aws ram get-resource-share-invitations --region {{us-east-1}}
 ```
 
 Run in recipient account to accept an invitation:
 
-```
+```json
 aws ram accept-resource-share-invitation \
 --resource-share-invitation-arn "arn:aws:ram:{{REGION}}:{{ACCOUNT_ID}}:resource-share-invitation/{{INVITATION_ID}}" \
 --region {{us-east-1}}

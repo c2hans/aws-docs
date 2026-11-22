@@ -34,7 +34,7 @@ The following `put-object-acl` example command shows how you can use the AWS CLI
 
 The following command applies an ACL to an existing object `puppy.jpg` through an access point owned by AWS account {{111122223333}}.
 
-```
+```bash
 aws s3api put-object-acl --bucket arn:aws:s3:{{AWS Region}}:111122223333:accesspoint/{{my-access-point}} --key puppy.jpg --acl private
 ```
 

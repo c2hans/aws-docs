@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-webfunctionendpoint-regionalendpoint-syntax.json"></a>
 
-```
+```json
 {
   "[AuthType](#cfn-lambda-webfunctionendpoint-regionalendpoint-authtype)" : {{String}},
   "[DomainName](#cfn-lambda-webfunctionendpoint-regionalendpoint-domainname)" : {{String}},
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-webfunctionendpoint-regionalendpoint-syntax.yaml"></a>
 
-```
+```yaml
   [AuthType](#cfn-lambda-webfunctionendpoint-regionalendpoint-authtype): {{String}}
   [DomainName](#cfn-lambda-webfunctionendpoint-regionalendpoint-domainname): {{String}}
   [RevisionWeights](#cfn-lambda-webfunctionendpoint-regionalendpoint-revisionweights): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-guardduty-filter-tagitem-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-guardduty-filter-tagitem-key)" : {{String}},
   "[Value](#cfn-guardduty-filter-tagitem-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-guardduty-filter-tagitem-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-guardduty-filter-tagitem-key): {{String}}
   [Value](#cfn-guardduty-filter-tagitem-value): {{String}}
 ```

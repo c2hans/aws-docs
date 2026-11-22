@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecr-repository-imagescanningconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ScanOnPush](#cfn-ecr-repository-imagescanningconfiguration-scanonpush)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecr-repository-imagescanningconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ScanOnPush](#cfn-ecr-repository-imagescanningconfiguration-scanonpush): {{Boolean}}
 ```
 

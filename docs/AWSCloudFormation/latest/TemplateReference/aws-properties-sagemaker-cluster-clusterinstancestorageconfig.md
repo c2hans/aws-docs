@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-cluster-clusterinstancestorageconfig-syntax.json"></a>
 
-```
+```json
 {
   "[EbsVolumeConfig](#cfn-sagemaker-cluster-clusterinstancestorageconfig-ebsvolumeconfig)" : {{ClusterEbsVolumeConfig}},
   "[FsxLustreConfig](#cfn-sagemaker-cluster-clusterinstancestorageconfig-fsxlustreconfig)" : {{ClusterFsxLustreConfig}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-cluster-clusterinstancestorageconfig-syntax.yaml"></a>
 
-```
+```yaml
   [EbsVolumeConfig](#cfn-sagemaker-cluster-clusterinstancestorageconfig-ebsvolumeconfig): {{
     ClusterEbsVolumeConfig}}
   [FsxLustreConfig](#cfn-sagemaker-cluster-clusterinstancestorageconfig-fsxlustreconfig): {{

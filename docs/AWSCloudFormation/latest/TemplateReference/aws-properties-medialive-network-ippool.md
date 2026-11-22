@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-network-ippool-syntax.json"></a>
 
-```
+```json
 {
   "[Cidr](#cfn-medialive-network-ippool-cidr)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-network-ippool-syntax.yaml"></a>
 
-```
+```yaml
   [Cidr](#cfn-medialive-network-ippool-cidr): {{String}}
 ```
 

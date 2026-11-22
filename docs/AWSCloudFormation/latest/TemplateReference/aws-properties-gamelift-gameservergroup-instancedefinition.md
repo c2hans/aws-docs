@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-gameservergroup-instancedefinition-syntax.json"></a>
 
-```
+```json
 {
   "[InstanceType](#cfn-gamelift-gameservergroup-instancedefinition-instancetype)" : {{String}},
   "[WeightedCapacity](#cfn-gamelift-gameservergroup-instancedefinition-weightedcapacity)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-gameservergroup-instancedefinition-syntax.yaml"></a>
 
-```
+```yaml
   [InstanceType](#cfn-gamelift-gameservergroup-instancedefinition-instancetype): {{String}}
   [WeightedCapacity](#cfn-gamelift-gameservergroup-instancedefinition-weightedcapacity): {{String}}
 ```

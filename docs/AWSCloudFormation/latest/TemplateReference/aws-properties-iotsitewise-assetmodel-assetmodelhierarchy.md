@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotsitewise-assetmodel-assetmodelhierarchy-syntax.json"></a>
 
-```
+```json
 {
   "[ChildAssetModelId](#cfn-iotsitewise-assetmodel-assetmodelhierarchy-childassetmodelid)" : {{String}},
   "[ExternalId](#cfn-iotsitewise-assetmodel-assetmodelhierarchy-externalid)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotsitewise-assetmodel-assetmodelhierarchy-syntax.yaml"></a>
 
-```
+```yaml
   [ChildAssetModelId](#cfn-iotsitewise-assetmodel-assetmodelhierarchy-childassetmodelid): {{String}}
   [ExternalId](#cfn-iotsitewise-assetmodel-assetmodelhierarchy-externalid): {{String}}
   [Id](#cfn-iotsitewise-assetmodel-assetmodelhierarchy-id): {{String}}

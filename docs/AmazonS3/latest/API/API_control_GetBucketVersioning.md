@@ -91,7 +91,7 @@ Valid Values: `Enabled | Suspended`
 
 This request returns the versioning state for an S3 on Outposts bucket that's named `example-outpost-bucket`.
 
-```
+```HTTP
             GET /v20180820/bucket/example-outpost-bucket/?versioning HTTP/1.1
             Host:s3-outposts.region-code.amazonaws.com
             x-amz-account-id: example-account-id

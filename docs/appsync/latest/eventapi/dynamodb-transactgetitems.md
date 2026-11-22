@@ -15,7 +15,7 @@ The DynamoDB `TransactGetItems` limits apply and **no condition expression** can
 
 The `TransactGetItems` request object has the following structure:
 
-```
+```TypeScript
 type DynamoDBTransactGetItemsRequest = {
   operation: 'TransactGetItems';
   transactItems: { table: string; key: { [key: string]: any }; projection?: { expression: string; expressionNames?: { [key: string]: string }; }[];
@@ -49,7 +49,7 @@ Things to remember:
 
 Response structure (in `ctx.result`)
 
-```
+```TypeScript
 type Response = {
   items?: ({[key: string]: any} | null)[];
   cancellationReasons?: {

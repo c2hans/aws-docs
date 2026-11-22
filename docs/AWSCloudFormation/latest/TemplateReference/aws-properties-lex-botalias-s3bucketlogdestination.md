@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-botalias-s3bucketlogdestination-syntax.json"></a>
 
-```
+```json
 {
   "[KmsKeyArn](#cfn-lex-botalias-s3bucketlogdestination-kmskeyarn)" : {{String}},
   "[LogPrefix](#cfn-lex-botalias-s3bucketlogdestination-logprefix)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-botalias-s3bucketlogdestination-syntax.yaml"></a>
 
-```
+```yaml
   [KmsKeyArn](#cfn-lex-botalias-s3bucketlogdestination-kmskeyarn): {{String}}
   [LogPrefix](#cfn-lex-botalias-s3bucketlogdestination-logprefix): {{String}}
   [S3BucketArn](#cfn-lex-botalias-s3bucketlogdestination-s3bucketarn): {{String}}

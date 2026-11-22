@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-processingjob-s3input-syntax.json"></a>
 
-```
+```json
 {
   "[LocalPath](#cfn-sagemaker-processingjob-s3input-localpath)" : {{String}},
   "[S3CompressionType](#cfn-sagemaker-processingjob-s3input-s3compressiontype)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-processingjob-s3input-syntax.yaml"></a>
 
-```
+```yaml
   [LocalPath](#cfn-sagemaker-processingjob-s3input-localpath): {{String}}
   [S3CompressionType](#cfn-sagemaker-processingjob-s3input-s3compressiontype): {{String}}
   [S3DataDistributionType](#cfn-sagemaker-processingjob-s3input-s3datadistributiontype): {{String}}

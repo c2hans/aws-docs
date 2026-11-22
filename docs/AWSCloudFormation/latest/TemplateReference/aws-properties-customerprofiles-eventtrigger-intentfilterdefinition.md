@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-eventtrigger-intentfilterdefinition-syntax.json"></a>
 
-```
+```json
 {
   "[Groups](#cfn-customerprofiles-eventtrigger-intentfilterdefinition-groups)" : {{[ IntentFilterGroup, ... ]}},
   "[LogicalOperator](#cfn-customerprofiles-eventtrigger-intentfilterdefinition-logicaloperator)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-eventtrigger-intentfilterdefinition-syntax.yaml"></a>
 
-```
+```yaml
   [Groups](#cfn-customerprofiles-eventtrigger-intentfilterdefinition-groups): {{
     - IntentFilterGroup}}
   [LogicalOperator](#cfn-customerprofiles-eventtrigger-intentfilterdefinition-logicaloperator): {{String}}

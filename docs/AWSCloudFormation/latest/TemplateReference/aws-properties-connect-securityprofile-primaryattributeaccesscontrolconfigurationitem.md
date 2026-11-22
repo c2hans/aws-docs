@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-securityprofile-primaryattributeaccesscontrolconfigurationitem-syntax.json"></a>
 
-```
+```json
 {
   "[PrimaryAttributeValues](#cfn-connect-securityprofile-primaryattributeaccesscontrolconfigurationitem-primaryattributevalues)" : {{[ PrimaryAttributeValue, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-securityprofile-primaryattributeaccesscontrolconfigurationitem-syntax.yaml"></a>
 
-```
+```yaml
   [PrimaryAttributeValues](#cfn-connect-securityprofile-primaryattributeaccesscontrolconfigurationitem-primaryattributevalues): {{
     - PrimaryAttributeValue}}
 ```

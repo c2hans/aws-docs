@@ -108,7 +108,7 @@ Source IP rules for App Runner private services that are associated with WAF web
 1. Create an AWS WAF web ACL for your service with your preferred set of rule actions to `Allow` or `Block` the web requests to your service. For more information about AWS WAF APIs, see [CreateWebACL](https://docs.aws.amazon.com/waf/latest/APIReference/API_CreateWebACL.html) in the *AWS WAF API Reference Guide*.
 **Example Create a web ACL - Request**
 
-   ```
+   ```sh
    aws wafv2
    create-web-acl
    --region <region>
@@ -125,7 +125,7 @@ When you create a web ACL, a small amount of time passes before the web ACL full
 If you refresh the browser or navigate away from the App Runner console before the web ACL is fully propagated, the association fails to occur. However, you can navigate within the App Runner console.
 **Example Associating a web ACL - Request**
 
-   ```
+   ```sh
    aws wafv2 associate-web-acl
    --resource-arn <apprunner_service_arn>
    --web-acl-arn <web_acl_arn>
@@ -135,7 +135,7 @@ If you refresh the browser or navigate away from the App Runner console before t
 1. Verify that the web ACL is associated with your App Runner service using the `get-web-acl-for-resource` AWS WAF public API. For more information about AWS WAF APIs, see [GetWebACLForResource](https://docs.aws.amazon.com/waf/latest/APIReference/API_GetWebACLForResource.html) in the *AWS WAF API Reference Guide*.
 **Example Verify web ACL for resource - Request**
 
-   ```
+   ```sh
    aws wafv2 get-web-acl-for-resource
    --resource-arn <apprunner_service_arn>
    --region <region>
@@ -153,7 +153,7 @@ You can't delete an AWS WAF web ACL if it's associated with an App Runner servic
 1. Disassociate the web ACL from your App Runner service by using the `disassociate-web-acl` AWS WAF public API. For more information about AWS WAF APIs, see [DisassociateWebACL](https://docs.aws.amazon.com/waf/latest/APIReference/API_DisassociateWebACL.html) in the *AWS WAF API Reference Guide*.
 **Example Disassociating a web ACL - Request**
 
-   ```
+   ```sh
    aws wafv2 disassociate-web-acl
    --resource-arn <apprunner_service_arn>
    --region <region>
@@ -162,7 +162,7 @@ You can't delete an AWS WAF web ACL if it's associated with an App Runner servic
 1. Verify that the web ACL is disassociated from your App Runner service using the `get-web-acl-for-resource` AWS WAF public API.
 **Example Verify that the web ACL is disassociated - Request**
 
-   ```
+   ```sh
    aws wafv2 get-web-acl-for-resource
    --resource-arn <apprunner_service_arn>
    --region <region>
@@ -173,7 +173,7 @@ You can't delete an AWS WAF web ACL if it's associated with an App Runner servic
 1. Delete the disassociated web ACL using the `delete-web-acl` AWS WAF public API. For more information about AWS WAF APIs, see [DeleteWebACL](https://docs.aws.amazon.com/waf/latest/APIReference/API_DeleteWebACL.html) in the *AWS WAF API Reference Guide*.
 **Example Delete a web ACL - Request**
 
-   ```
+   ```sh
    aws wafv2 delete-web-acl
    --name <web_acl_name>
    --scope {{REGIONAL}}
@@ -185,7 +185,7 @@ You can't delete an AWS WAF web ACL if it's associated with an App Runner servic
 1. Verify that the web ACL is deleted using the `list-web-acl` AWS WAF public API. For more information about AWS WAF APIs, see [ListWebACLs](https://docs.aws.amazon.com/waf/latest/APIReference/API_ListWebACLs.html) in the *AWS WAF API Reference Guide*.
 **Example Verify that the web ACL is deleted - Request**
 
-   ```
+   ```sh
    aws wafv2 list-web-acls
    --scope {{REGIONAL}}
    --region <region>
@@ -202,7 +202,7 @@ A web ACL can be associated with multiple App Runner services and other resource
 
 **Example List App Runner services associated with a web ACL - Request**
 
-```
+```sh
 aws wafv2 list-resources-for-web-acl
 --web-acl-arn <WEB_ACL_ARN>
 --resource-type {{APP_RUNNER_SERVICE}}
@@ -212,7 +212,7 @@ aws wafv2 list-resources-for-web-acl
 **Example List App Runner services associated with a web ACL - Response**
 The following example illustrates the response when there are no App Runner services that are associated with a web ACL.
 
-```
+```json
 {
   "ResourceArns": []
 }
@@ -221,7 +221,7 @@ The following example illustrates the response when there are no App Runner serv
 **Example List App Runner services associated with a web ACL - Response**
 The following example illustrates the response when there are App Runner services that are associated with a web ACL.
 
-```
+```json
 {
   "ResourceArns": [
     "arn:aws:apprunner:<region>:<aws_account_id>:service/<service_name>/<service_id>"

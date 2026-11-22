@@ -12,7 +12,7 @@ Common causes for this issue are:
 
 To identify LSN gaps in your database, run this query:
 
-```
+```sql
 SELECT * FROM msdb.dbo.rds_fn_list_tlog_backup_metadata({{database_name}})
 ORDER BY backup_file_time_utc desc;
 ```

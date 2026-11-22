@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-table-column-syntax.json"></a>
 
-```
+```json
 {
   "[Comment](#cfn-glue-table-column-comment)" : {{String}},
   "[Name](#cfn-glue-table-column-name)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-table-column-syntax.yaml"></a>
 
-```
+```yaml
   [Comment](#cfn-glue-table-column-comment): {{String}}
   [Name](#cfn-glue-table-column-name): {{String}}
   [Type](#cfn-glue-table-column-type): {{String}}

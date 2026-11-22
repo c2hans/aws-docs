@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-domainconfiguration-authorizerconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AllowAuthorizerOverride](#cfn-iot-domainconfiguration-authorizerconfig-allowauthorizeroverride)" : {{Boolean}},
   "[DefaultAuthorizerName](#cfn-iot-domainconfiguration-authorizerconfig-defaultauthorizername)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-domainconfiguration-authorizerconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AllowAuthorizerOverride](#cfn-iot-domainconfiguration-authorizerconfig-allowauthorizeroverride): {{Boolean}}
   [DefaultAuthorizerName](#cfn-iot-domainconfiguration-authorizerconfig-defaultauthorizername): {{String}}
 ```

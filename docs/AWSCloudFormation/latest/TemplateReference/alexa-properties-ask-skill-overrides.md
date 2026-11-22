@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="alexa-properties-ask-skill-overrides-syntax.json"></a>
 
-```
+```json
 {
   "[Manifest](#cfn-ask-skill-overrides-manifest)" : {{Json}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="alexa-properties-ask-skill-overrides-syntax.yaml"></a>
 
-```
+```yaml
   [Manifest](#cfn-ask-skill-overrides-manifest): {{Json}}
 ```
 
@@ -49,7 +49,7 @@ Overrides to apply to the skill manifest inside of the skill package. The skill 
 #### JSON
 <a name="alexa-properties-ask-skill-overrides--examples--Alexa_Skill_Overrides_Resource_Configuration--json"></a>
 
-```
+```json
 "Manifest": {
   "publishingInformation": {
     "locales": {
@@ -65,7 +65,7 @@ Overrides to apply to the skill manifest inside of the skill package. The skill 
 #### YAML
 <a name="alexa-properties-ask-skill-overrides--examples--Alexa_Skill_Overrides_Resource_Configuration--yaml"></a>
 
-```
+```yaml
 Manifest:
   publishingInformation:
     locales:

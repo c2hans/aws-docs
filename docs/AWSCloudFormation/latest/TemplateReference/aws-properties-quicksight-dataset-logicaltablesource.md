@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-logicaltablesource-syntax.json"></a>
 
-```
+```json
 {
   "[DataSetArn](#cfn-quicksight-dataset-logicaltablesource-datasetarn)" : {{String}},
   "[JoinInstruction](#cfn-quicksight-dataset-logicaltablesource-joininstruction)" : {{JoinInstruction}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-logicaltablesource-syntax.yaml"></a>
 
-```
+```yaml
   [DataSetArn](#cfn-quicksight-dataset-logicaltablesource-datasetarn): {{String}}
   [JoinInstruction](#cfn-quicksight-dataset-logicaltablesource-joininstruction): {{
     JoinInstruction}}

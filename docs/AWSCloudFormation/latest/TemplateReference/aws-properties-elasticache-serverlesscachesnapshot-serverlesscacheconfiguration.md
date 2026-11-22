@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticache-serverlesscachesnapshot-serverlesscacheconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Engine](#cfn-elasticache-serverlesscachesnapshot-serverlesscacheconfiguration-engine)" : {{String}},
   "[MajorEngineVersion](#cfn-elasticache-serverlesscachesnapshot-serverlesscacheconfiguration-majorengineversion)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticache-serverlesscachesnapshot-serverlesscacheconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Engine](#cfn-elasticache-serverlesscachesnapshot-serverlesscacheconfiguration-engine): {{String}}
   [MajorEngineVersion](#cfn-elasticache-serverlesscachesnapshot-serverlesscacheconfiguration-majorengineversion): {{String}}
   [ServerlessCacheName](#cfn-elasticache-serverlesscachesnapshot-serverlesscacheconfiguration-serverlesscachename): {{String}}

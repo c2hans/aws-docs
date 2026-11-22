@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-logs-transformer-trimstring-syntax.json"></a>
 
-```
+```json
 {
   "[WithKeys](#cfn-logs-transformer-trimstring-withkeys)" : {{[ String, ... ]}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-logs-transformer-trimstring-syntax.yaml"></a>
 
-```
+```yaml
   [WithKeys](#cfn-logs-transformer-trimstring-withkeys): {{
     - String}}
 ```

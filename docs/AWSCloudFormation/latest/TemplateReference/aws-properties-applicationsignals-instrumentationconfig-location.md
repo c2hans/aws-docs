@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationsignals-instrumentationconfig-location-syntax.json"></a>
 
-```
+```json
 {
   "[CodeLocation](#cfn-applicationsignals-instrumentationconfig-location-codelocation)" : {{CodeLocation}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationsignals-instrumentationconfig-location-syntax.yaml"></a>
 
-```
+```yaml
   [CodeLocation](#cfn-applicationsignals-instrumentationconfig-location-codelocation): {{
     CodeLocation}}
 ```

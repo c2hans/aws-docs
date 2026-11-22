@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-wafv2-regexpatternset-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::WAFv2::RegexPatternSet",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-wafv2-regexpatternset-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::WAFv2::RegexPatternSet
 Properties:
   [Description](#cfn-wafv2-regexpatternset-description): {{String}}
@@ -125,7 +125,7 @@ The following shows an example regex pattern set specification.
 #### YAML
 <a name="aws-resource-wafv2-regexpatternset--examples--Create_a_regex_pattern_set--yaml"></a>
 
-```
+```yaml
  ExampleRegexPatternSet:
     Type: AWS::WAFv2::RegexPatternSet
     Properties:
@@ -140,7 +140,7 @@ The following shows an example regex pattern set specification.
 #### JSON
 <a name="aws-resource-wafv2-regexpatternset--examples--Create_a_regex_pattern_set--json"></a>
 
-```
+```json
  "ExampleRegexPatternSet": {
       "Type": "AWS::WAFv2::RegexPatternSet",
       "Properties": {

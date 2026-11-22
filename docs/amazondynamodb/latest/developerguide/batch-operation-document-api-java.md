@@ -28,7 +28,7 @@ For step-by-step instructions for testing the following sample, see [Java code e
 
 **Example**
 
-```
+```java
 package com.amazonaws.codesamples.document;
 
 import java.io.IOException;
@@ -116,7 +116,7 @@ For step-by-step instructions to run the following example, see [Java code examp
 
 **Example**
 
-```
+```java
 package com.amazonaws.codesamples.document;
 
 import java.io.IOException;

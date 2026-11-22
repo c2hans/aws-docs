@@ -14,7 +14,7 @@ If an IAM user with this policy is not MFA-authenticated, this policy denies acc
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

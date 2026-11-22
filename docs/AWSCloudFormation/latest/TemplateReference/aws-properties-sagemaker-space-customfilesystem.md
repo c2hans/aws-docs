@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-space-customfilesystem-syntax.json"></a>
 
-```
+```json
 {
   "[EFSFileSystem](#cfn-sagemaker-space-customfilesystem-efsfilesystem)" : {{EFSFileSystem}},
   "[FSxLustreFileSystem](#cfn-sagemaker-space-customfilesystem-fsxlustrefilesystem)" : {{FSxLustreFileSystem}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-space-customfilesystem-syntax.yaml"></a>
 
-```
+```yaml
   [EFSFileSystem](#cfn-sagemaker-space-customfilesystem-efsfilesystem): {{
     EFSFileSystem}}
   [FSxLustreFileSystem](#cfn-sagemaker-space-customfilesystem-fsxlustrefilesystem): {{

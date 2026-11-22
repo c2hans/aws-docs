@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-flow-rerankingmetadataselectivemodeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[FieldsToExclude](#cfn-bedrock-flow-rerankingmetadataselectivemodeconfiguration-fieldstoexclude)" : {{[ FieldForReranking, ... ]}},
   "[FieldsToInclude](#cfn-bedrock-flow-rerankingmetadataselectivemodeconfiguration-fieldstoinclude)" : {{[ FieldForReranking, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-flow-rerankingmetadataselectivemodeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [FieldsToExclude](#cfn-bedrock-flow-rerankingmetadataselectivemodeconfiguration-fieldstoexclude): {{
     - FieldForReranking}}
   [FieldsToInclude](#cfn-bedrock-flow-rerankingmetadataselectivemodeconfiguration-fieldstoinclude): {{

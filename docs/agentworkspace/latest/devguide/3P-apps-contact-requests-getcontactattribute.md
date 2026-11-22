@@ -8,7 +8,7 @@ Returns the value of the requested attribute of the contact as a string. If the 
 
  **Signature**
 
-```
+```typescript
 async getContactAttribute(
   contactId: string,
   attribute: ContactAttributeKey,
@@ -19,7 +19,7 @@ type ContactAttributeKey = string;
 
  **Usage**
 
-```
+```typescript
 const accountId = await contactClient.getContactAttribute(contactId, "accountId");
 ```
 
@@ -36,6 +36,6 @@ Requires an instance that is scoped to the contact that you pass in `contactId`,
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

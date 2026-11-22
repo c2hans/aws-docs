@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-percentagedisplayformatconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DecimalPlacesConfiguration](#cfn-quicksight-dashboard-percentagedisplayformatconfiguration-decimalplacesconfiguration)" : {{DecimalPlacesConfiguration}},
   "[NegativeValueConfiguration](#cfn-quicksight-dashboard-percentagedisplayformatconfiguration-negativevalueconfiguration)" : {{NegativeValueConfiguration}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-percentagedisplayformatconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DecimalPlacesConfiguration](#cfn-quicksight-dashboard-percentagedisplayformatconfiguration-decimalplacesconfiguration): {{
     DecimalPlacesConfiguration}}
   [NegativeValueConfiguration](#cfn-quicksight-dashboard-percentagedisplayformatconfiguration-negativevalueconfiguration): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datapipeline-pipeline-pipelineobject-syntax.json"></a>
 
-```
+```json
 {
   "[Fields](#cfn-datapipeline-pipeline-pipelineobject-fields)" : {{[ Field, ... ]}},
   "[Id](#cfn-datapipeline-pipeline-pipelineobject-id)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datapipeline-pipeline-pipelineobject-syntax.yaml"></a>
 
-```
+```yaml
   [Fields](#cfn-datapipeline-pipeline-pipelineobject-fields): {{
     - Field}}
   [Id](#cfn-datapipeline-pipeline-pipelineobject-id): {{String}}

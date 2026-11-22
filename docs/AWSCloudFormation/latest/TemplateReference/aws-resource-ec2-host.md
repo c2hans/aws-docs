@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-host-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::Host",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-host-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::Host
 Properties:
   [AssetId](#cfn-ec2-host-assetid): {{String}}
@@ -147,7 +147,7 @@ The following example allocates a dedicated host for `c3.large` instances in the
 #### JSON
 <a name="aws-resource-ec2-host--examples--Allocate_a_Dedicated_Host--json"></a>
 
-```
+```json
 "Host" : {
   "Type" : "AWS::EC2::Host",
   "Properties" : {
@@ -161,7 +161,7 @@ The following example allocates a dedicated host for `c3.large` instances in the
 #### YAML
 <a name="aws-resource-ec2-host--examples--Allocate_a_Dedicated_Host--yaml"></a>
 
-```
+```yaml
 Host:
   Type: AWS::EC2::Host
   Properties:

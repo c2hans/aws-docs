@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotwireless-fuotatask-lorawan-syntax.json"></a>
 
-```
+```json
 {
   "[RfRegion](#cfn-iotwireless-fuotatask-lorawan-rfregion)" : {{String}},
   "[StartTime](#cfn-iotwireless-fuotatask-lorawan-starttime)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotwireless-fuotatask-lorawan-syntax.yaml"></a>
 
-```
+```yaml
   [RfRegion](#cfn-iotwireless-fuotatask-lorawan-rfregion): {{String}}
   [StartTime](#cfn-iotwireless-fuotatask-lorawan-starttime): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssmincidents-responseplan-notificationtargetitem-syntax.json"></a>
 
-```
+```json
 {
   "[SnsTopicArn](#cfn-ssmincidents-responseplan-notificationtargetitem-snstopicarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssmincidents-responseplan-notificationtargetitem-syntax.yaml"></a>
 
-```
+```yaml
   [SnsTopicArn](#cfn-ssmincidents-responseplan-notificationtargetitem-snstopicarn): {{String}}
 ```
 

@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-autoscaling-launchconfiguration-blockdevicemapping-syntax.json"></a>
 
-```
+```json
 {
   "[DeviceName](#cfn-autoscaling-launchconfiguration-blockdevicemapping-devicename)" : {{String}},
   "[Ebs](#cfn-autoscaling-launchconfiguration-blockdevicemapping-ebs)" : {{BlockDevice}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-autoscaling-launchconfiguration-blockdevicemapping-syntax.yaml"></a>
 
-```
+```yaml
   [DeviceName](#cfn-autoscaling-launchconfiguration-blockdevicemapping-devicename): {{String}}
   [Ebs](#cfn-autoscaling-launchconfiguration-blockdevicemapping-ebs): {{
     BlockDevice}}

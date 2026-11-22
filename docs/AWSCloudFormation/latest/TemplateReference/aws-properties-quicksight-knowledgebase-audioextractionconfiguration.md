@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-knowledgebase-audioextractionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AudioExtractionStatus](#cfn-quicksight-knowledgebase-audioextractionconfiguration-audioextractionstatus)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-knowledgebase-audioextractionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AudioExtractionStatus](#cfn-quicksight-knowledgebase-audioextractionconfiguration-audioextractionstatus): {{String}}
 ```
 

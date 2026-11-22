@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cognito-userpoolresourceserver-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Cognito::UserPoolResourceServer",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cognito-userpoolresourceserver-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Cognito::UserPoolResourceServer
 Properties:
   [Identifier](#cfn-cognito-userpoolresourceserver-identifier): {{String}}
@@ -107,7 +107,7 @@ The following example creates a resource server "Name" with the identifier "Iden
 #### JSON
 <a name="aws-resource-cognito-userpoolresourceserver--examples--Creating_a_new_resource_server_for_a_user_pool--json"></a>
 
-```
+```json
 {
   "UserPoolResourceServer": {
     "Type": "AWS::Cognito::UserPoolResourceServer",
@@ -132,7 +132,7 @@ The following example creates a resource server "Name" with the identifier "Iden
 #### YAML
 <a name="aws-resource-cognito-userpoolresourceserver--examples--Creating_a_new_resource_server_for_a_user_pool--yaml"></a>
 
-```
+```yaml
 UserPoolResourceServer:
   Type: AWS::Cognito::UserPoolResourceServer
   Properties:

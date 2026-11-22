@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigatewayv2-api-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGatewayV2::Api",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigatewayv2-api-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGatewayV2::Api
 Properties:
   [ApiKeySelectionExpression](#cfn-apigatewayv2-api-apikeyselectionexpression): {{String}}
@@ -228,7 +228,7 @@ The following example creates a WebSocket `Api` resource called `MyApi`.
 #### JSON
 <a name="aws-resource-apigatewayv2-api--examples--API_creation_example--json"></a>
 
-```
+```json
 {
     "MyApi": {
       "Type": "AWS::ApiGatewayV2::Api",
@@ -245,7 +245,7 @@ The following example creates a WebSocket `Api` resource called `MyApi`.
 #### YAML
 <a name="aws-resource-apigatewayv2-api--examples--API_creation_example--yaml"></a>
 
-```
+```yaml
 MyApi:
   Type: 'AWS::ApiGatewayV2::Api'
   Properties:
@@ -266,7 +266,7 @@ To invoke a Lambda integration, API Gateway must have the required permissions. 
 #### JSON
 <a name="aws-resource-apigatewayv2-api--examples--Quick_create_HTTP_API--json"></a>
 
-```
+```json
 "HttpApi": {
     "Type": "AWS::ApiGatewayV2::Api",
     "Properties": {
@@ -281,7 +281,7 @@ To invoke a Lambda integration, API Gateway must have the required permissions. 
 #### YAML
 <a name="aws-resource-apigatewayv2-api--examples--Quick_create_HTTP_API--yaml"></a>
 
-```
+```yaml
 HttpApi:
   Type: AWS::ApiGatewayV2::Api
   Properties:

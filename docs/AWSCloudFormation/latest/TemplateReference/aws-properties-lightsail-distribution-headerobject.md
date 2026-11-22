@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lightsail-distribution-headerobject-syntax.json"></a>
 
-```
+```json
 {
   "[HeadersAllowList](#cfn-lightsail-distribution-headerobject-headersallowlist)" : {{[ String, ... ]}},
   "[Option](#cfn-lightsail-distribution-headerobject-option)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lightsail-distribution-headerobject-syntax.yaml"></a>
 
-```
+```yaml
   [HeadersAllowList](#cfn-lightsail-distribution-headerobject-headersallowlist): {{
     - String}}
   [Option](#cfn-lightsail-distribution-headerobject-option): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-prompt-prompttemplateconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Chat](#cfn-bedrock-prompt-prompttemplateconfiguration-chat)" : {{ChatPromptTemplateConfiguration}},
   "[Text](#cfn-bedrock-prompt-prompttemplateconfiguration-text)" : {{TextPromptTemplateConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-prompt-prompttemplateconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Chat](#cfn-bedrock-prompt-prompttemplateconfiguration-chat): {{
     ChatPromptTemplateConfiguration}}
   [Text](#cfn-bedrock-prompt-prompttemplateconfiguration-text): {{

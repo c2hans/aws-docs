@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-datasource-mariadbparameters-syntax.json"></a>
 
-```
+```json
 {
   "[Database](#cfn-quicksight-datasource-mariadbparameters-database)" : {{String}},
   "[Host](#cfn-quicksight-datasource-mariadbparameters-host)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-datasource-mariadbparameters-syntax.yaml"></a>
 
-```
+```yaml
   [Database](#cfn-quicksight-datasource-mariadbparameters-database): {{String}}
   [Host](#cfn-quicksight-datasource-mariadbparameters-host): {{String}}
   [Port](#cfn-quicksight-datasource-mariadbparameters-port): {{Number}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-model-multimodelconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ModelCacheSetting](#cfn-sagemaker-model-multimodelconfig-modelcachesetting)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-model-multimodelconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ModelCacheSetting](#cfn-sagemaker-model-multimodelconfig-modelcachesetting): {{String}}
 ```
 

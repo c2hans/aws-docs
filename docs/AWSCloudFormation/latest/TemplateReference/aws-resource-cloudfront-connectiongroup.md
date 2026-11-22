@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudfront-connectiongroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudFront::ConnectionGroup",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudfront-connectiongroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudFront::ConnectionGroup
 Properties:
   [AnycastIpListId](#cfn-cloudfront-connectiongroup-anycastiplistid): {{String}}

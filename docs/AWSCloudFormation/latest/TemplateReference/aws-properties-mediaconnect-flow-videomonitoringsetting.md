@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-flow-videomonitoringsetting-syntax.json"></a>
 
-```
+```json
 {
   "[BlackFrames](#cfn-mediaconnect-flow-videomonitoringsetting-blackframes)" : {{BlackFrames}},
   "[FrozenFrames](#cfn-mediaconnect-flow-videomonitoringsetting-frozenframes)" : {{FrozenFrames}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-flow-videomonitoringsetting-syntax.yaml"></a>
 
-```
+```yaml
   [BlackFrames](#cfn-mediaconnect-flow-videomonitoringsetting-blackframes): {{
     BlackFrames}}
   [FrozenFrames](#cfn-mediaconnect-flow-videomonitoringsetting-frozenframes): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-transfer-connector-connectorasyncmdnconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ServerIds](#cfn-transfer-connector-connectorasyncmdnconfig-serverids)" : {{[ String, ... ]}},
   "[Url](#cfn-transfer-connector-connectorasyncmdnconfig-url)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-transfer-connector-connectorasyncmdnconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ServerIds](#cfn-transfer-connector-connectorasyncmdnconfig-serverids): {{
     - String}}
   [Url](#cfn-transfer-connector-connectorasyncmdnconfig-url): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-glue-partition-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Glue::Partition",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-glue-partition-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Glue::Partition
 Properties:
   [CatalogId](#cfn-glue-partition-catalogid): {{String}}

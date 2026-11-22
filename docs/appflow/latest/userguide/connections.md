@@ -50,7 +50,7 @@ You can manage your connections in Amazon AppFlow by running commands with the A
 
   The `sap-odata-connector-profile-config.json` file contains the following configuration details:
 
-  ```
+  ```json
   {
     "connectorProfileProperties":
     {
@@ -94,7 +94,7 @@ You can manage your connections in Amazon AppFlow by running commands with the A
 
   The command response is a JSON body with details for each of your connections. The following example response shows the details for an SAP OData connection:
 
-  ```
+  ```json
   {
       "connectorProfileDetails": [
           {

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-trigger-notificationproperty-syntax.json"></a>
 
-```
+```json
 {
   "[NotifyDelayAfter](#cfn-glue-trigger-notificationproperty-notifydelayafter)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-trigger-notificationproperty-syntax.yaml"></a>
 
-```
+```yaml
   [NotifyDelayAfter](#cfn-glue-trigger-notificationproperty-notifydelayafter): {{Integer}}
 ```
 

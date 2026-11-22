@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iotwireless-serviceprofile-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoTWireless::ServiceProfile",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iotwireless-serviceprofile-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoTWireless::ServiceProfile
 Properties:
   [LoRaWAN](#cfn-iotwireless-serviceprofile-lorawan): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-sharepointconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CrawlAttachments](#cfn-kendra-datasource-sharepointconfiguration-crawlattachments)" : {{Boolean}},
   "[DisableLocalGroups](#cfn-kendra-datasource-sharepointconfiguration-disablelocalgroups)" : {{Boolean}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-sharepointconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CrawlAttachments](#cfn-kendra-datasource-sharepointconfiguration-crawlattachments): {{Boolean}}
   [DisableLocalGroups](#cfn-kendra-datasource-sharepointconfiguration-disablelocalgroups): {{Boolean}}
   [DocumentTitleFieldName](#cfn-kendra-datasource-sharepointconfiguration-documenttitlefieldname): {{String}}

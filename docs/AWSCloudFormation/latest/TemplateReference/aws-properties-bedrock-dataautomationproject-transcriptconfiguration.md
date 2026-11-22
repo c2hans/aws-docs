@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-dataautomationproject-transcriptconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ChannelLabeling](#cfn-bedrock-dataautomationproject-transcriptconfiguration-channellabeling)" : {{ChannelLabelingConfiguration}},
   "[SpeakerLabeling](#cfn-bedrock-dataautomationproject-transcriptconfiguration-speakerlabeling)" : {{SpeakerLabelingConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-dataautomationproject-transcriptconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ChannelLabeling](#cfn-bedrock-dataautomationproject-transcriptconfiguration-channellabeling): {{
     ChannelLabelingConfiguration}}
   [SpeakerLabeling](#cfn-bedrock-dataautomationproject-transcriptconfiguration-speakerlabeling): {{

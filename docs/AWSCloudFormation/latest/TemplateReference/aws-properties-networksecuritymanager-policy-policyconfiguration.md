@@ -16,8 +16,9 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networksecuritymanager-policy-policyconfiguration-syntax.json"></a>
 
-```
+```json
 {
+  "[IgwFirewallConfig](#cfn-networksecuritymanager-policy-policyconfiguration-igwfirewallconfig)" : {{IgwFirewallConfig}},
   "[RemediationEnabled](#cfn-networksecuritymanager-policy-policyconfiguration-remediationenabled)" : {{Boolean}},
   "[ResourcesCleanUp](#cfn-networksecuritymanager-policy-policyconfiguration-resourcescleanup)" : {{Boolean}},
   "[WafConfig](#cfn-networksecuritymanager-policy-policyconfiguration-wafconfig)" : {{WafConfig}}
@@ -27,7 +28,9 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networksecuritymanager-policy-policyconfiguration-syntax.yaml"></a>
 
-```
+```yaml
+  [IgwFirewallConfig](#cfn-networksecuritymanager-policy-policyconfiguration-igwfirewallconfig): {{
+    IgwFirewallConfig}}
   [RemediationEnabled](#cfn-networksecuritymanager-policy-policyconfiguration-remediationenabled): {{Boolean}}
   [ResourcesCleanUp](#cfn-networksecuritymanager-policy-policyconfiguration-resourcescleanup): {{Boolean}}
   [WafConfig](#cfn-networksecuritymanager-policy-policyconfiguration-wafconfig): {{
@@ -36,6 +39,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ## Properties
 <a name="aws-properties-networksecuritymanager-policy-policyconfiguration-properties"></a>
+
+`IgwFirewallConfig`  <a name="cfn-networksecuritymanager-policy-policyconfiguration-igwfirewallconfig"></a>
+Settings specific to AWS Network Firewall automated internet firewall policies.
+This property is required when `FirewallType` is `IGW_FIREWALL`. Don't specify it for any other firewall type.
+*Required*: Conditional
+*Type*: [IgwFirewallConfig](aws-properties-networksecuritymanager-policy-igwfirewallconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `RemediationEnabled`  <a name="cfn-networksecuritymanager-policy-policyconfiguration-remediationenabled"></a>
 Specifies whether AWS Network Security Manager automatically remediates noncompliant resources. Default: `false`.
@@ -51,7 +61,7 @@ Specifies whether AWS Network Security Manager automatically removes the resourc
 
 `WafConfig`  <a name="cfn-networksecuritymanager-policy-policyconfiguration-wafconfig"></a>
 AWS WAF-specific policy settings.
-This property is required when `FirewallType` is `WAF`. Don't specify it when `FirewallType` is `SHIELD_ADVANCED`; Network Security Manager rejects a Shield Advanced policy that includes it.
+This property is required when `FirewallType` is `WAF`. Don't specify it for any other firewall type; Network Security Manager rejects a `SHIELD_ADVANCED` or `IGW_FIREWALL` policy that includes it.
 *Required*: Conditional
 *Type*: [WafConfig](aws-properties-networksecuritymanager-policy-wafconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rds-dbinstance-additionalstoragevolume-syntax.json"></a>
 
-```
+```json
 {
   "[AllocatedStorage](#cfn-rds-dbinstance-additionalstoragevolume-allocatedstorage)" : {{String}},
   "[Iops](#cfn-rds-dbinstance-additionalstoragevolume-iops)" : {{Integer}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rds-dbinstance-additionalstoragevolume-syntax.yaml"></a>
 
-```
+```yaml
   [AllocatedStorage](#cfn-rds-dbinstance-additionalstoragevolume-allocatedstorage): {{String}}
   [Iops](#cfn-rds-dbinstance-additionalstoragevolume-iops): {{Integer}}
   [MaxAllocatedStorage](#cfn-rds-dbinstance-additionalstoragevolume-maxallocatedstorage): {{Integer}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codebuild-project-gitsubmodulesconfig-syntax.json"></a>
 
-```
+```json
 {
   "[FetchSubmodules](#cfn-codebuild-project-gitsubmodulesconfig-fetchsubmodules)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codebuild-project-gitsubmodulesconfig-syntax.yaml"></a>
 
-```
+```yaml
   [FetchSubmodules](#cfn-codebuild-project-gitsubmodulesconfig-fetchsubmodules): {{Boolean}}
 ```
 

@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-route53globalresolver-hostedzoneassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Route53GlobalResolver::HostedZoneAssociation",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-route53globalresolver-hostedzoneassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53GlobalResolver::HostedZoneAssociation
 Properties:
   [HostedZoneId](#cfn-route53globalresolver-hostedzoneassociation-hostedzoneid): {{String}}

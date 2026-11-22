@@ -16,17 +16,19 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-vpnconnection-vpntunneloptionsspecification-syntax.json"></a>
 
-```
+```json
 {
   "[DPDTimeoutAction](#cfn-ec2-vpnconnection-vpntunneloptionsspecification-dpdtimeoutaction)" : {{String}},
   "[DPDTimeoutSeconds](#cfn-ec2-vpnconnection-vpntunneloptionsspecification-dpdtimeoutseconds)" : {{Integer}},
   "[EnableTunnelLifecycleControl](#cfn-ec2-vpnconnection-vpntunneloptionsspecification-enabletunnellifecyclecontrol)" : {{Boolean}},
   "[IKEVersions](#cfn-ec2-vpnconnection-vpntunneloptionsspecification-ikeversions)" : {{[ IKEVersionsRequestListValue, ... ]}},
   "[LogOptions](#cfn-ec2-vpnconnection-vpntunneloptionsspecification-logoptions)" : {{VpnTunnelLogOptionsSpecification}},
+  "[Phase1AdditionalKeyExchanges](#cfn-ec2-vpnconnection-vpntunneloptionsspecification-phase1additionalkeyexchanges)" : {{[ , ... ]}},
   "[Phase1DHGroupNumbers](#cfn-ec2-vpnconnection-vpntunneloptionsspecification-phase1dhgroupnumbers)" : {{[ Phase1DHGroupNumbersRequestListValue, ... ]}},
   "[Phase1EncryptionAlgorithms](#cfn-ec2-vpnconnection-vpntunneloptionsspecification-phase1encryptionalgorithms)" : {{[ Phase1EncryptionAlgorithmsRequestListValue, ... ]}},
   "[Phase1IntegrityAlgorithms](#cfn-ec2-vpnconnection-vpntunneloptionsspecification-phase1integrityalgorithms)" : {{[ Phase1IntegrityAlgorithmsRequestListValue, ... ]}},
   "[Phase1LifetimeSeconds](#cfn-ec2-vpnconnection-vpntunneloptionsspecification-phase1lifetimeseconds)" : {{Integer}},
+  "[Phase2AdditionalKeyExchanges](#cfn-ec2-vpnconnection-vpntunneloptionsspecification-phase2additionalkeyexchanges)" : {{[ , ... ]}},
   "[Phase2DHGroupNumbers](#cfn-ec2-vpnconnection-vpntunneloptionsspecification-phase2dhgroupnumbers)" : {{[ Phase2DHGroupNumbersRequestListValue, ... ]}},
   "[Phase2EncryptionAlgorithms](#cfn-ec2-vpnconnection-vpntunneloptionsspecification-phase2encryptionalgorithms)" : {{[ Phase2EncryptionAlgorithmsRequestListValue, ... ]}},
   "[Phase2IntegrityAlgorithms](#cfn-ec2-vpnconnection-vpntunneloptionsspecification-phase2integrityalgorithms)" : {{[ Phase2IntegrityAlgorithmsRequestListValue, ... ]}},
@@ -44,7 +46,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-vpnconnection-vpntunneloptionsspecification-syntax.yaml"></a>
 
-```
+```yaml
   [DPDTimeoutAction](#cfn-ec2-vpnconnection-vpntunneloptionsspecification-dpdtimeoutaction): {{String}}
   [DPDTimeoutSeconds](#cfn-ec2-vpnconnection-vpntunneloptionsspecification-dpdtimeoutseconds): {{Integer}}
   [EnableTunnelLifecycleControl](#cfn-ec2-vpnconnection-vpntunneloptionsspecification-enabletunnellifecyclecontrol): {{Boolean}}
@@ -52,6 +54,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     - IKEVersionsRequestListValue}}
   [LogOptions](#cfn-ec2-vpnconnection-vpntunneloptionsspecification-logoptions): {{
     VpnTunnelLogOptionsSpecification}}
+  [Phase1AdditionalKeyExchanges](#cfn-ec2-vpnconnection-vpntunneloptionsspecification-phase1additionalkeyexchanges): {{
+    - }}
   [Phase1DHGroupNumbers](#cfn-ec2-vpnconnection-vpntunneloptionsspecification-phase1dhgroupnumbers): {{
     - Phase1DHGroupNumbersRequestListValue}}
   [Phase1EncryptionAlgorithms](#cfn-ec2-vpnconnection-vpntunneloptionsspecification-phase1encryptionalgorithms): {{
@@ -59,6 +63,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   [Phase1IntegrityAlgorithms](#cfn-ec2-vpnconnection-vpntunneloptionsspecification-phase1integrityalgorithms): {{
     - Phase1IntegrityAlgorithmsRequestListValue}}
   [Phase1LifetimeSeconds](#cfn-ec2-vpnconnection-vpntunneloptionsspecification-phase1lifetimeseconds): {{Integer}}
+  [Phase2AdditionalKeyExchanges](#cfn-ec2-vpnconnection-vpntunneloptionsspecification-phase2additionalkeyexchanges): {{
+    - }}
   [Phase2DHGroupNumbers](#cfn-ec2-vpnconnection-vpntunneloptionsspecification-phase2dhgroupnumbers): {{
     - Phase2DHGroupNumbersRequestListValue}}
   [Phase2EncryptionAlgorithms](#cfn-ec2-vpnconnection-vpntunneloptionsspecification-phase2encryptionalgorithms): {{
@@ -115,9 +121,16 @@ Options for logging VPN tunnel activity.
 *Type*: [VpnTunnelLogOptionsSpecification](aws-properties-ec2-vpnconnection-vpntunnellogoptionsspecification.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`Phase1AdditionalKeyExchanges`  <a name="cfn-ec2-vpnconnection-vpntunneloptionsspecification-phase1additionalkeyexchanges"></a>
+One or more additional key exchange rounds that are permitted for the VPN tunnel for phase 1 IKE negotiations. Additional key exchanges occur after the initial Diffie-Hellman exchange. Each round must have a unique round number.
+Additional key exchanges are supported only with IKEv2. You can't specify a `required` round if `IKEVersions` contains only `ikev1`.
+*Required*: No
+*Type*: Array
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `Phase1DHGroupNumbers`  <a name="cfn-ec2-vpnconnection-vpntunneloptionsspecification-phase1dhgroupnumbers"></a>
 One or more Diffie-Hellman group numbers that are permitted for the VPN tunnel for phase 1 IKE negotiations.
-Valid values: `2` \| `14` \| `15` \| `16` \| `17` \| `18` \| `19` \| `20` \| `21` \| `22` \| `23` \| `24`
+Valid values: `2` \| `14` \| `15` \| `16` \| `17` \| `18` \| `19` \| `20` \| `21` \| `22` \| `23` \| `24` \| `35`
 *Required*: No
 *Type*: Array of [Phase1DHGroupNumbersRequestListValue](aws-properties-ec2-vpnconnection-phase1dhgroupnumbersrequestlistvalue.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -146,9 +159,16 @@ Default: `28800`
 *Maximum*: `28800`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`Phase2AdditionalKeyExchanges`  <a name="cfn-ec2-vpnconnection-vpntunneloptionsspecification-phase2additionalkeyexchanges"></a>
+One or more additional key exchange rounds that are permitted for the VPN tunnel for phase 2 IKE negotiations. Additional key exchanges occur after the initial Diffie-Hellman exchange. Each round must have a unique round number.
+Additional key exchanges are supported only with IKEv2. You can't specify a `required` round if `IKEVersions` contains only `ikev1`.
+*Required*: No
+*Type*: Array
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `Phase2DHGroupNumbers`  <a name="cfn-ec2-vpnconnection-vpntunneloptionsspecification-phase2dhgroupnumbers"></a>
 One or more Diffie-Hellman group numbers that are permitted for the VPN tunnel for phase 2 IKE negotiations.
-Valid values: `2` \| `5` \| `14` \| `15` \| `16` \| `17` \| `18` \| `19` \| `20` \| `21` \| `22` \| `23` \| `24`
+Valid values: `2` \| `5` \| `14` \| `15` \| `16` \| `17` \| `18` \| `19` \| `20` \| `21` \| `22` \| `23` \| `24` \| `35` \| `36` \| `37`
 *Required*: No
 *Type*: Array of [Phase2DHGroupNumbersRequestListValue](aws-properties-ec2-vpnconnection-phase2dhgroupnumbersrequestlistvalue.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

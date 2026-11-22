@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distribution-cookies-syntax.json"></a>
 
-```
+```json
 {
   "[Forward](#cfn-cloudfront-distribution-cookies-forward)" : {{String}},
   "[WhitelistedNames](#cfn-cloudfront-distribution-cookies-whitelistednames)" : {{[ String, ... ]}}
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distribution-cookies-syntax.yaml"></a>
 
-```
+```yaml
   [Forward](#cfn-cloudfront-distribution-cookies-forward): {{String}}
   [WhitelistedNames](#cfn-cloudfront-distribution-cookies-whitelistednames): {{
     - String}}

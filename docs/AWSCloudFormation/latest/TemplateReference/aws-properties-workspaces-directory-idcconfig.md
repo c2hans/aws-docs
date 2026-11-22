@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspaces-directory-idcconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ApplicationArn](#cfn-workspaces-directory-idcconfig-applicationarn)" : {{String}},
   "[InstanceArn](#cfn-workspaces-directory-idcconfig-instancearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspaces-directory-idcconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ApplicationArn](#cfn-workspaces-directory-idcconfig-applicationarn): {{String}}
   [InstanceArn](#cfn-workspaces-directory-idcconfig-instancearn): {{String}}
 ```

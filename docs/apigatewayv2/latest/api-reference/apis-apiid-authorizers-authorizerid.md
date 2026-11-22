@@ -91,7 +91,7 @@ Updates an `Authorizer`.
 #### PATCH schema
 <a name="apis-apiid-authorizers-authorizerid-request-body-patch-example"></a>
 
-```
+```json
 {
   "name": "string",
   "authorizerType": enum,
@@ -119,7 +119,7 @@ Updates an `Authorizer`.
 #### Authorizer schema
 <a name="apis-apiid-authorizers-authorizerid-response-body-authorizer-example"></a>
 
-```
+```json
 {
   "authorizerId": "string",
   "name": "string",
@@ -145,7 +145,7 @@ Updates an `Authorizer`.
 #### BadRequestException schema
 <a name="apis-apiid-authorizers-authorizerid-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -154,7 +154,7 @@ Updates an `Authorizer`.
 #### NotFoundException schema
 <a name="apis-apiid-authorizers-authorizerid-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -164,7 +164,7 @@ Updates an `Authorizer`.
 #### ConflictException schema
 <a name="apis-apiid-authorizers-authorizerid-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -173,7 +173,7 @@ Updates an `Authorizer`.
 #### LimitExceededException schema
 <a name="apis-apiid-authorizers-authorizerid-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

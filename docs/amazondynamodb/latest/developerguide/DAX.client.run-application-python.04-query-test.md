@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 
 The `04-query-test.py` program performs `Query` operations on `TryDaxTable`.
 
-```
+```python
 import argparse
 import time
 import sys

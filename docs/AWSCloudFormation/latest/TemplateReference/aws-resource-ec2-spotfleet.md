@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-spotfleet-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::SpotFleet",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-spotfleet-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::SpotFleet
 Properties:
   [SpotFleetRequestConfigData](#cfn-ec2-spotfleet-spotfleetrequestconfigdata): {{
@@ -103,7 +103,7 @@ The following example specifies a Spot Fleet with a target capacity of 2 instanc
 #### JSON
 <a name="aws-resource-ec2-spotfleet--examples--Create_a_Spot_Fleet_using_a_launch_template--json"></a>
 
-```
+```json
 {
     "Resources": {
         "mySpotFleet": {
@@ -160,7 +160,7 @@ The following example specifies a Spot Fleet with a target capacity of 2 instanc
 #### YAML
 <a name="aws-resource-ec2-spotfleet--examples--Create_a_Spot_Fleet_using_a_launch_template--yaml"></a>
 
-```
+```yaml
 Resources:
    mySpotFleet:
      Type: 'AWS::EC2::SpotFleet'
@@ -195,7 +195,7 @@ The following example specifies a Spot Fleet with two launch specifications. The
 #### JSON
 <a name="aws-resource-ec2-spotfleet--examples--Create_a_Spot_Fleet_using_a_launch_specification--json"></a>
 
-```
+```json
 "SpotFleet": {
   "Type": "AWS::EC2::SpotFleet",
   "Properties": {
@@ -234,7 +234,7 @@ The following example specifies a Spot Fleet with two launch specifications. The
 #### YAML
 <a name="aws-resource-ec2-spotfleet--examples--Create_a_Spot_Fleet_using_a_launch_specification--yaml"></a>
 
-```
+```yaml
 SpotFleet:
   Type: AWS::EC2::SpotFleet
   Properties:

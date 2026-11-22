@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-events-rule-appsyncparameters-syntax.json"></a>
 
-```
+```json
 {
   "[GraphQLOperation](#cfn-events-rule-appsyncparameters-graphqloperation)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-events-rule-appsyncparameters-syntax.yaml"></a>
 
-```
+```yaml
   [GraphQLOperation](#cfn-events-rule-appsyncparameters-graphqloperation): {{String}}
 ```
 

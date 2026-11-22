@@ -18,7 +18,7 @@ To drop the tempfiles, use the Amazon RDS procedure `rdsadmin.rdsadmin_util. dro
 
 Assume that a temporary tablespace named {{temp01}} resides in the instance store on your read replica. Drop all tempfiles in this tablespace by running the following command.
 
-```
+```sql
 EXEC rdsadmin.rdsadmin_util.drop_replica_tempfiles(p_tablespace_name => '{{temp01}}');
 ```
 

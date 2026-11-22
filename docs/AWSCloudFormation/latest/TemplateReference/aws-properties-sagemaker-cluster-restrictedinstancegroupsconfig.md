@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-cluster-restrictedinstancegroupsconfig-syntax.json"></a>
 
-```
+```json
 {
   "[SharedEnvironmentConfig](#cfn-sagemaker-cluster-restrictedinstancegroupsconfig-sharedenvironmentconfig)" : {{SharedEnvironmentConfig}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-cluster-restrictedinstancegroupsconfig-syntax.yaml"></a>
 
-```
+```yaml
   [SharedEnvironmentConfig](#cfn-sagemaker-cluster-restrictedinstancegroupsconfig-sharedenvironmentconfig): {{
     SharedEnvironmentConfig}}
 ```

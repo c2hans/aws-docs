@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sagemaker-pipeline-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SageMaker::Pipeline",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sagemaker-pipeline-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SageMaker::Pipeline
 Properties:
   [ParallelismConfiguration](#cfn-sagemaker-pipeline-parallelismconfiguration): {{
@@ -128,7 +128,7 @@ The following example creates a Pipeline with an associated lifecycle configurat
 #### JSON
 <a name="aws-resource-sagemaker-pipeline--examples--SageMaker_Pipeline_Example--json"></a>
 
-```
+```json
 # Pipeline definition given as a JSON string { "Resources": {
             "MyPipeline": { "Type": "AWS::SageMaker::Pipeline", "Properties": { "PipelineName":
             "<pipeline-name>" "PipelineDisplayName": "<pipeline-display-name>",
@@ -141,7 +141,7 @@ The following example creates a Pipeline with an associated lifecycle configurat
 #### JSON
 <a name="aws-resource-sagemaker-pipeline--examples--SageMaker_Pipeline_Example--json"></a>
 
-```
+```json
 # Pipeline definition given as an S3 string { "Resources": {
             "MyPipeline": { "Type": "AWS::SageMaker::Pipeline", "Properties": { "PipelineName":
             "<pipeline-name>", "PipelineDisplayName": "<pipeline-display-name>",
@@ -154,7 +154,7 @@ The following example creates a Pipeline with an associated lifecycle configurat
 #### YAML
 <a name="aws-resource-sagemaker-pipeline--examples--SageMaker_Pipeline_Example--yaml"></a>
 
-```
+```yaml
 # Pipeline definition given as a JSON string Resources:
             MyPipeline: Type: AWS::SageMaker::Pipeline Properties: PipelineName:
             "<pipeline-name>" PipelineDisplayName: "<pipeline-display-name>"
@@ -167,7 +167,7 @@ The following example creates a Pipeline with an associated lifecycle configurat
 #### YAML
 <a name="aws-resource-sagemaker-pipeline--examples--SageMaker_Pipeline_Example--yaml"></a>
 
-```
+```yaml
 # Pipeline definition given as an S3 location Resources:
             MyPipeline: Type: AWS::SageMaker::Pipeline Properties: PipelineName:
             "<pipeline-name>" PipelineDisplayName:"<pipeline-display-name>"

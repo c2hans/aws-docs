@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-routerinput-routercontentqualityanalysisconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ContentLevel](#cfn-mediaconnect-routerinput-routercontentqualityanalysisconfiguration-contentlevel)" : {{ContentQualityAnalysisFeatureConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-routerinput-routercontentqualityanalysisconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ContentLevel](#cfn-mediaconnect-routerinput-routercontentqualityanalysisconfiguration-contentlevel): {{
     ContentQualityAnalysisFeatureConfiguration}}
 ```

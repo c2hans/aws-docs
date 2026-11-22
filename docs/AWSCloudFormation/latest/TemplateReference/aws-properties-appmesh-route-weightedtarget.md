@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-route-weightedtarget-syntax.json"></a>
 
-```
+```json
 {
   "[Port](#cfn-appmesh-route-weightedtarget-port)" : {{Integer}},
   "[VirtualNode](#cfn-appmesh-route-weightedtarget-virtualnode)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-route-weightedtarget-syntax.yaml"></a>
 
-```
+```yaml
   [Port](#cfn-appmesh-route-weightedtarget-port): {{Integer}}
   [VirtualNode](#cfn-appmesh-route-weightedtarget-virtualnode): {{String}}
   [Weight](#cfn-appmesh-route-weightedtarget-weight): {{Integer}}

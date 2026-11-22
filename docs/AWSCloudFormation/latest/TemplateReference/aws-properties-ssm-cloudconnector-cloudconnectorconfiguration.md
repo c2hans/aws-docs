@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssm-cloudconnector-cloudconnectorconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AzureConfiguration](#cfn-ssm-cloudconnector-cloudconnectorconfiguration-azureconfiguration)" : {{AzureConfiguration}},
   "[GcpConfiguration](#cfn-ssm-cloudconnector-cloudconnectorconfiguration-gcpconfiguration)" : {{GcpConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssm-cloudconnector-cloudconnectorconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AzureConfiguration](#cfn-ssm-cloudconnector-cloudconnectorconfiguration-azureconfiguration): {{
     AzureConfiguration}}
   [GcpConfiguration](#cfn-ssm-cloudconnector-cloudconnectorconfiguration-gcpconfiguration): {{

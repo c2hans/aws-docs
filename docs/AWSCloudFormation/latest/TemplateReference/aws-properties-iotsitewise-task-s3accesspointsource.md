@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotsitewise-task-s3accesspointsource-syntax.json"></a>
 
-```
+```json
 {
   "[AccessPointArn](#cfn-iotsitewise-task-s3accesspointsource-accesspointarn)" : {{String}},
   "[Prefix](#cfn-iotsitewise-task-s3accesspointsource-prefix)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotsitewise-task-s3accesspointsource-syntax.yaml"></a>
 
-```
+```yaml
   [AccessPointArn](#cfn-iotsitewise-task-s3accesspointsource-accesspointarn): {{String}}
   [Prefix](#cfn-iotsitewise-task-s3accesspointsource-prefix): {{String}}
 ```

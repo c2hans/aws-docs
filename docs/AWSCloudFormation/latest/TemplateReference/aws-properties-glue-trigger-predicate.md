@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-trigger-predicate-syntax.json"></a>
 
-```
+```json
 {
   "[Conditions](#cfn-glue-trigger-predicate-conditions)" : {{[ Condition, ... ]}},
   "[Logical](#cfn-glue-trigger-predicate-logical)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-trigger-predicate-syntax.yaml"></a>
 
-```
+```yaml
   [Conditions](#cfn-glue-trigger-predicate-conditions): {{
     - Condition}}
   [Logical](#cfn-glue-trigger-predicate-logical): {{String}}

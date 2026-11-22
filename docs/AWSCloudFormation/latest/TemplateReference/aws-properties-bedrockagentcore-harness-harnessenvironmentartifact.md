@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-harness-harnessenvironmentartifact-syntax.json"></a>
 
-```
+```json
 {
   "[ContainerConfiguration](#cfn-bedrockagentcore-harness-harnessenvironmentartifact-containerconfiguration)" : {{ContainerConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-harness-harnessenvironmentartifact-syntax.yaml"></a>
 
-```
+```yaml
   [ContainerConfiguration](#cfn-bedrockagentcore-harness-harnessenvironmentartifact-containerconfiguration): {{
     ContainerConfiguration}}
 ```

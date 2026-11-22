@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-capacityprovider-managedscaling-syntax.json"></a>
 
-```
+```json
 {
   "[InstanceWarmupPeriod](#cfn-ecs-capacityprovider-managedscaling-instancewarmupperiod)" : {{Integer}},
   "[MaximumScalingStepSize](#cfn-ecs-capacityprovider-managedscaling-maximumscalingstepsize)" : {{Integer}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-capacityprovider-managedscaling-syntax.yaml"></a>
 
-```
+```yaml
   [InstanceWarmupPeriod](#cfn-ecs-capacityprovider-managedscaling-instancewarmupperiod): {{Integer}}
   [MaximumScalingStepSize](#cfn-ecs-capacityprovider-managedscaling-maximumscalingstepsize): {{Integer}}
   [MinimumScalingStepSize](#cfn-ecs-capacityprovider-managedscaling-minimumscalingstepsize): {{Integer}}

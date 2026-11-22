@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-sankeydiagramfieldwells-syntax.json"></a>
 
-```
+```json
 {
   "[SankeyDiagramAggregatedFieldWells](#cfn-quicksight-analysis-sankeydiagramfieldwells-sankeydiagramaggregatedfieldwells)" : {{SankeyDiagramAggregatedFieldWells}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-sankeydiagramfieldwells-syntax.yaml"></a>
 
-```
+```yaml
   [SankeyDiagramAggregatedFieldWells](#cfn-quicksight-analysis-sankeydiagramfieldwells-sankeydiagramaggregatedfieldwells): {{
     SankeyDiagramAggregatedFieldWells}}
 ```

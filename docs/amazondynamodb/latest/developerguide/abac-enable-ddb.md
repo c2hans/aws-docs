@@ -34,7 +34,7 @@ You need the `dynamodb:UpdateAbacStatus` permission to enable ABAC for your acco
 
 The following IAM policy grants the permission to enable ABAC and view its status for an account in the current Region.
 
-```
+```json
 {
 "Version": "2012-10-17", 		 	 	 &TCX5-2025-waiver;
     "Statement": [

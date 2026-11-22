@@ -46,7 +46,7 @@ Deletes a route request parameter. Supported only for WebSocket APIs.
 #### NotFoundException schema
 <a name="apis-apiid-routes-routeid-requestparameters-requestparameterkey-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -56,7 +56,7 @@ Deletes a route request parameter. Supported only for WebSocket APIs.
 #### LimitExceededException schema
 <a name="apis-apiid-routes-routeid-requestparameters-requestparameterkey-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

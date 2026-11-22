@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-daemontaskdefinition-device-syntax.json"></a>
 
-```
+```json
 {
   "[ContainerPath](#cfn-ecs-daemontaskdefinition-device-containerpath)" : {{String}},
   "[HostPath](#cfn-ecs-daemontaskdefinition-device-hostpath)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-daemontaskdefinition-device-syntax.yaml"></a>
 
-```
+```yaml
   [ContainerPath](#cfn-ecs-daemontaskdefinition-device-containerpath): {{String}}
   [HostPath](#cfn-ecs-daemontaskdefinition-device-hostpath): {{String}}
   [Permissions](#cfn-ecs-daemontaskdefinition-device-permissions): {{

@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sagemaker-processingjob-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SageMaker::ProcessingJob",
   "Properties" : {
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sagemaker-processingjob-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SageMaker::ProcessingJob
 Properties:
   [AppSpecification](#cfn-sagemaker-processingjob-appspecification): {{

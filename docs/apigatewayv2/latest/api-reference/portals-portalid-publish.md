@@ -71,7 +71,7 @@ Deletes the publication of a portal portal.
 #### POST schema
 <a name="portals-portalid-publish-request-body-post-example"></a>
 
-```
+```json
 {
   "description": "string"
 }
@@ -83,7 +83,7 @@ Deletes the publication of a portal portal.
 #### BadRequestExceptionResponseContent schema
 <a name="portals-portalid-publish-response-body-badrequestexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -92,7 +92,7 @@ Deletes the publication of a portal portal.
 #### AccessDeniedExceptionResponseContent schema
 <a name="portals-portalid-publish-response-body-accessdeniedexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -101,7 +101,7 @@ Deletes the publication of a portal portal.
 #### NotFoundExceptionResponseContent schema
 <a name="portals-portalid-publish-response-body-notfoundexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -111,7 +111,7 @@ Deletes the publication of a portal portal.
 #### ConflictExceptionResponseContent schema
 <a name="portals-portalid-publish-response-body-conflictexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -120,7 +120,7 @@ Deletes the publication of a portal portal.
 #### LimitExceededExceptionResponseContent schema
 <a name="portals-portalid-publish-response-body-limitexceededexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

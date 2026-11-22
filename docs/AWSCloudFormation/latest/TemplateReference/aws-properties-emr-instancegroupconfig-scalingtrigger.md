@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emr-instancegroupconfig-scalingtrigger-syntax.json"></a>
 
-```
+```json
 {
   "[CloudWatchAlarmDefinition](#cfn-emr-instancegroupconfig-scalingtrigger-cloudwatchalarmdefinition)" : {{CloudWatchAlarmDefinition}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emr-instancegroupconfig-scalingtrigger-syntax.yaml"></a>
 
-```
+```yaml
   [CloudWatchAlarmDefinition](#cfn-emr-instancegroupconfig-scalingtrigger-cloudwatchalarmdefinition): {{
     CloudWatchAlarmDefinition}}
 ```

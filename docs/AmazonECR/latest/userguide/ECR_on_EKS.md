@@ -19,7 +19,7 @@ If you have Amazon EKS workloads hosted on managed nodes, self-managed nodes, or
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

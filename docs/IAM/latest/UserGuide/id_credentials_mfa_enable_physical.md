@@ -37,7 +37,7 @@ To manage a hardware TOTP token for your own IAM user while protecting sensitive
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 
 The `03-getitem-test.js` program performs `GetItem` operations on `TryDaxTable`.
 
-```
+```javascript
 const AmazonDaxClient = require("amazon-dax-client");
 var AWS = require("aws-sdk");
 

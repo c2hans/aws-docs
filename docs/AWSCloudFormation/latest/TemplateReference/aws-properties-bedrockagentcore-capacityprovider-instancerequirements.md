@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-capacityprovider-instancerequirements-syntax.json"></a>
 
-```
+```json
 {
   "[AllowedInstanceTypes](#cfn-bedrockagentcore-capacityprovider-instancerequirements-allowedinstancetypes)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-capacityprovider-instancerequirements-syntax.yaml"></a>
 
-```
+```yaml
   [AllowedInstanceTypes](#cfn-bedrockagentcore-capacityprovider-instancerequirements-allowedinstancetypes): {{
     - String}}
 ```

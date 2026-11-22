@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-oauth2credentialprovider-privateendpoint-syntax.json"></a>
 
-```
+```json
 {
   "[ManagedVpcResource](#cfn-bedrockagentcore-oauth2credentialprovider-privateendpoint-managedvpcresource)" : {{ManagedVpcResource}},
   "[SelfManagedLatticeResource](#cfn-bedrockagentcore-oauth2credentialprovider-privateendpoint-selfmanagedlatticeresource)" : {{SelfManagedLatticeResource}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-oauth2credentialprovider-privateendpoint-syntax.yaml"></a>
 
-```
+```yaml
   [ManagedVpcResource](#cfn-bedrockagentcore-oauth2credentialprovider-privateendpoint-managedvpcresource): {{
     ManagedVpcResource}}
   [SelfManagedLatticeResource](#cfn-bedrockagentcore-oauth2credentialprovider-privateendpoint-selfmanagedlatticeresource): {{

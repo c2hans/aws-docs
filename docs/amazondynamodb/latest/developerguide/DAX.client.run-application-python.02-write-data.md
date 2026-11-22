@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 
 The `02-write-data.py` program writes test data to `TryDaxTable`.
 
-```
+```python
 import boto3
 
 def write_data_to_dax_table(key_count, item_size, dyn_resource=None):

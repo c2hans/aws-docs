@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspaces-directory-storageconnector-syntax.json"></a>
 
-```
+```json
 {
   "[ConnectorType](#cfn-workspaces-directory-storageconnector-connectortype)" : {{String}},
   "[Status](#cfn-workspaces-directory-storageconnector-status)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspaces-directory-storageconnector-syntax.yaml"></a>
 
-```
+```yaml
   [ConnectorType](#cfn-workspaces-directory-storageconnector-connectortype): {{String}}
   [Status](#cfn-workspaces-directory-storageconnector-status): {{String}}
 ```

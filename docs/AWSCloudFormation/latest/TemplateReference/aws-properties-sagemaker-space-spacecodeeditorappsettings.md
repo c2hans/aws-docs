@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-space-spacecodeeditorappsettings-syntax.json"></a>
 
-```
+```json
 {
   "[AppLifecycleManagement](#cfn-sagemaker-space-spacecodeeditorappsettings-applifecyclemanagement)" : {{SpaceAppLifecycleManagement}},
   "[DefaultResourceSpec](#cfn-sagemaker-space-spacecodeeditorappsettings-defaultresourcespec)" : {{ResourceSpec}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-space-spacecodeeditorappsettings-syntax.yaml"></a>
 
-```
+```yaml
   [AppLifecycleManagement](#cfn-sagemaker-space-spacecodeeditorappsettings-applifecyclemanagement): {{
     SpaceAppLifecycleManagement}}
   [DefaultResourceSpec](#cfn-sagemaker-space-spacecodeeditorappsettings-defaultresourcespec): {{

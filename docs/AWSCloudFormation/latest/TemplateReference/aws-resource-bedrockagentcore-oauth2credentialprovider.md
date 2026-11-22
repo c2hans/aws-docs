@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-bedrockagentcore-oauth2credentialprovider-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::BedrockAgentCore::OAuth2CredentialProvider",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-bedrockagentcore-oauth2credentialprovider-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::BedrockAgentCore::OAuth2CredentialProvider
 Properties:
   [CredentialProviderVendor](#cfn-bedrockagentcore-oauth2credentialprovider-credentialprovidervendor): {{String}}

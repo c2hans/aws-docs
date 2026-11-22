@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrserverless-application-initialcapacityconfigkeyvaluepair-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-emrserverless-application-initialcapacityconfigkeyvaluepair-key)" : {{String}},
   "[Value](#cfn-emrserverless-application-initialcapacityconfigkeyvaluepair-value)" : {{InitialCapacityConfig}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrserverless-application-initialcapacityconfigkeyvaluepair-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-emrserverless-application-initialcapacityconfigkeyvaluepair-key): {{String}}
   [Value](#cfn-emrserverless-application-initialcapacityconfigkeyvaluepair-value): {{
     InitialCapacityConfig}}

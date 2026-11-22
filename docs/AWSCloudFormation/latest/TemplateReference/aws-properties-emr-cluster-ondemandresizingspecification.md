@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emr-cluster-ondemandresizingspecification-syntax.json"></a>
 
-```
+```json
 {
   "[AllocationStrategy](#cfn-emr-cluster-ondemandresizingspecification-allocationstrategy)" : {{String}},
   "[CapacityReservationOptions](#cfn-emr-cluster-ondemandresizingspecification-capacityreservationoptions)" : {{OnDemandCapacityReservationOptions}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emr-cluster-ondemandresizingspecification-syntax.yaml"></a>
 
-```
+```yaml
   [AllocationStrategy](#cfn-emr-cluster-ondemandresizingspecification-allocationstrategy): {{String}}
   [CapacityReservationOptions](#cfn-emr-cluster-ondemandresizingspecification-capacityreservationoptions): {{
     OnDemandCapacityReservationOptions}}

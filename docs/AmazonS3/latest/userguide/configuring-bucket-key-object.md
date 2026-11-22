@@ -43,7 +43,7 @@ You can use the following example to configure an S3 Bucket Key at the object le
 ------
 #### [ Java ]
 
-```
+```Java
 AmazonS3 s3client = AmazonS3ClientBuilder.standard()
     .withRegion(Regions.DEFAULT_REGION)
     .build();
@@ -65,6 +65,6 @@ s3client.putObject(putObjectRequest);
 
 You can use the following AWS CLI example to configure an S3 Bucket Key at the object level as part of a `PutObject` request.
 
-```
+```bash
 aws s3api put-object --bucket {{amzn-s3-demo-bucket}} --key {{object key name}} --server-side-encryption aws:kms --bucket-key-enabled --body {{filepath}}
 ```

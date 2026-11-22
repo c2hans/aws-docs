@@ -55,7 +55,7 @@ This example shows a minimal configuration file that you can use with a Corretto
 
 **Example apprunner.yaml**
 
-```
+```yaml
 version: 1.0
 runtime: corretto11
 build:
@@ -76,7 +76,7 @@ The runtime version that's used in these examples is {{11.0.13.08.1}}. You can r
 
 **Example apprunner.yaml**
 
-```
+```yaml
 version: 1.0
 runtime: corretto11
 build:
@@ -111,7 +111,7 @@ This example shows the source code for a complete Java application that you can 
 
 **Example src/main/java/com/HelloWorld/HelloWorld.java**
 
-```
+```java
 package com.HelloWorld;
 
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -130,7 +130,7 @@ public class HelloWorld {
 
 **Example src/main/java/com/HelloWorld/Main.java**
 
-```
+```java
 package com.HelloWorld;
 
 import org.springframework.boot.SpringApplication;
@@ -148,7 +148,7 @@ public class Main {
 
 **Example apprunner.yaml**
 
-```
+```yaml
 version: 1.0
 runtime: corretto11
 build:
@@ -163,7 +163,7 @@ run:
 
 **Example pom.xml**
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

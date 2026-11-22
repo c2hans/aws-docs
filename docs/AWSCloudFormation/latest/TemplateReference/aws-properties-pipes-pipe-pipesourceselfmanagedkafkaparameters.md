@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-pipesourceselfmanagedkafkaparameters-syntax.json"></a>
 
-```
+```json
 {
   "[AdditionalBootstrapServers](#cfn-pipes-pipe-pipesourceselfmanagedkafkaparameters-additionalbootstrapservers)" : {{[ String, ... ]}},
   "[BatchSize](#cfn-pipes-pipe-pipesourceselfmanagedkafkaparameters-batchsize)" : {{Integer}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-pipesourceselfmanagedkafkaparameters-syntax.yaml"></a>
 
-```
+```yaml
   [AdditionalBootstrapServers](#cfn-pipes-pipe-pipesourceselfmanagedkafkaparameters-additionalbootstrapservers): {{
     - String}}
   [BatchSize](#cfn-pipes-pipe-pipesourceselfmanagedkafkaparameters-batchsize): {{Integer}}

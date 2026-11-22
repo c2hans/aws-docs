@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-topic-topicdaterangefilter-syntax.json"></a>
 
-```
+```json
 {
   "[Constant](#cfn-quicksight-topic-topicdaterangefilter-constant)" : {{TopicRangeFilterConstant}},
   "[Inclusive](#cfn-quicksight-topic-topicdaterangefilter-inclusive)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-topic-topicdaterangefilter-syntax.yaml"></a>
 
-```
+```yaml
   [Constant](#cfn-quicksight-topic-topicdaterangefilter-constant): {{
     TopicRangeFilterConstant}}
   [Inclusive](#cfn-quicksight-topic-topicdaterangefilter-inclusive): {{Boolean}}

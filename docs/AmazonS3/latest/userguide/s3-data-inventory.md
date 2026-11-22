@@ -42,7 +42,7 @@ After you determine where you want to store your data, you can decide whether to
 
 Use the following AWS CLI command:
 
-```
+```bash
    aws s3api list-buckets /
     --max-items 100 /
     --page-size 100
@@ -63,7 +63,7 @@ After you list your buckets, you can validate your buckets settings for function
 ### To list bucket configurations
 <a name="s3-buckets-how"></a>
 
-```
+```bash
 aws s3api get-bucket-versioning --bucket {{{{amzn-s3-demo-bucket1}}}}
 aws s3api get-bucket-encryption --bucket {{{{amzn-s3-demo-bucket1}}}}
 aws s3api get-bucket-logging --bucket {{{{amzn-s3-demo-bucket1}}}}
@@ -84,7 +84,7 @@ Understanding your object characteristics helps plan for equivalent storage capa
 ### To list objects and their properties
 <a name="s3-objects-how"></a>
 
-```
+```bash
 aws s3api list-objects-v2 --bucket {{{{amzn-s3-demo-bucket1}}}} /
     --query 'Contents[].{Key: Key, Size: Size, LastModified: LastModified}'
 ```
@@ -138,7 +138,7 @@ Understanding your access management and security settings help you plan for equ
 
 After you list your buckets, you can validate your buckets security and access settings for functionally equivalent storage systems by reviewing the various bucket configuration settings.
 
-```
+```bash,sh,zsh
 aws s3api get-public-access-block --bucket {{amzn-s3-demo-bucket1}}
 aws s3api get-bucket-acl --bucket {{amzn-s3-demo-bucket1}}
 aws s3api get-bucket-encryption --bucket {{amzn-s3-demo-bucket1}}
@@ -159,7 +159,7 @@ You can transfer data from Amazon S3 using several methods:
 
 To download an entire bucket:
 
-```
+```bash
 aws s3 sync s3://{{{{amzn-s3-demo-bucket1}}}} /local/path
 ```
 
@@ -167,7 +167,7 @@ For more information, see [sync](https://docs.aws.amazon.com/cli/latest/referenc
 
 To download specific objects:
 
-```
+```bash
 aws s3 cp s3://{{{{amzn-s3-demo-bucket1}}}}/path/to/object /local/path
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-advancedrecognitionsetting-syntax.json"></a>
 
-```
+```json
 {
   "[AudioRecognitionStrategy](#cfn-lex-bot-advancedrecognitionsetting-audiorecognitionstrategy)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-advancedrecognitionsetting-syntax.yaml"></a>
 
-```
+```yaml
   [AudioRecognitionStrategy](#cfn-lex-bot-advancedrecognitionsetting-audiorecognitionstrategy): {{String}}
 ```
 

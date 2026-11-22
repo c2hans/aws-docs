@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudtrail-eventdatastore-contextkeyselector-syntax.json"></a>
 
-```
+```json
 {
   "[Equals](#cfn-cloudtrail-eventdatastore-contextkeyselector-equals)" : {{[ String, ... ]}},
   "[Type](#cfn-cloudtrail-eventdatastore-contextkeyselector-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudtrail-eventdatastore-contextkeyselector-syntax.yaml"></a>
 
-```
+```yaml
   [Equals](#cfn-cloudtrail-eventdatastore-contextkeyselector-equals): {{
     - String}}
   [Type](#cfn-cloudtrail-eventdatastore-contextkeyselector-type): {{String}}

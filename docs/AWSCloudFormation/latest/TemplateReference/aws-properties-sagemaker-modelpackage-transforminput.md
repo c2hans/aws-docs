@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelpackage-transforminput-syntax.json"></a>
 
-```
+```json
 {
   "[CompressionType](#cfn-sagemaker-modelpackage-transforminput-compressiontype)" : {{String}},
   "[ContentType](#cfn-sagemaker-modelpackage-transforminput-contenttype)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelpackage-transforminput-syntax.yaml"></a>
 
-```
+```yaml
   [CompressionType](#cfn-sagemaker-modelpackage-transforminput-compressiontype): {{String}}
   [ContentType](#cfn-sagemaker-modelpackage-transforminput-contenttype): {{String}}
   [DataSource](#cfn-sagemaker-modelpackage-transforminput-datasource): {{

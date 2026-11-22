@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ssm-defaulthostmanagementconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SSM::DefaultHostManagementConfiguration",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ssm-defaulthostmanagementconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SSM::DefaultHostManagementConfiguration
 Properties:
   [CustomerManagedRoleArn](#cfn-ssm-defaulthostmanagementconfiguration-customermanagedrolearn): {{String}}
@@ -113,7 +113,7 @@ The following example turns on Default Host Management Configuration and lets Sy
 #### JSON
 <a name="aws-resource-ssm-defaulthostmanagementconfiguration--examples--Use_a_service-managed_role_for_Default_Host_Management_Configuration--json"></a>
 
-```
+```json
 {
     "Type": "AWS::SSM::DefaultHostManagementConfiguration",
     "Properties": {
@@ -125,7 +125,7 @@ The following example turns on Default Host Management Configuration and lets Sy
 #### YAML
 <a name="aws-resource-ssm-defaulthostmanagementconfiguration--examples--Use_a_service-managed_role_for_Default_Host_Management_Configuration--yaml"></a>
 
-```
+```yaml
 Type: AWS::SSM::DefaultHostManagementConfiguration
 Properties:
   PermissionModel: SERVICE_MANAGED
@@ -139,7 +139,7 @@ The following example turns on Default Host Management Configuration using an IA
 #### JSON
 <a name="aws-resource-ssm-defaulthostmanagementconfiguration--examples--Use_your_own_role_for_Default_Host_Management_Configuration--json"></a>
 
-```
+```json
 {
     "Type": "AWS::SSM::DefaultHostManagementConfiguration",
     "Properties": {
@@ -152,7 +152,7 @@ The following example turns on Default Host Management Configuration using an IA
 #### YAML
 <a name="aws-resource-ssm-defaulthostmanagementconfiguration--examples--Use_your_own_role_for_Default_Host_Management_Configuration--yaml"></a>
 
-```
+```yaml
 Type: AWS::SSM::DefaultHostManagementConfiguration
 Properties:
   PermissionModel: SELF_MANAGED

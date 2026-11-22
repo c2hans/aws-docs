@@ -29,7 +29,7 @@ In this example, you set up an order from a customer whose `customerId` is `09e8
 
 First, define an action to verify that a customer with `customerId` equal to `09e8e9c8-ec48` exists in the customer table.
 
-```
+```java
 final String CUSTOMER_TABLE_NAME = "Customers";
 final String CUSTOMER_PARTITION_KEY = "CustomerId";
 final String customerId = "09e8e9c8-ec48";
@@ -47,7 +47,7 @@ ConditionCheck checkCustomerValid = new ConditionCheck()
 
 Next, define an action to update the product status to `SOLD` if the condition that the product status is currently set to `IN_STOCK` is `true`. Setting the `ReturnValuesOnConditionCheckFailure` parameter returns the item if the item's product status attribute was not equal to `IN_STOCK`.
 
-```
+```java
 final String PRODUCT_TABLE_NAME = "ProductCatalog";
 final String PRODUCT_PARTITION_KEY = "ProductId";
 HashMap<String, AttributeValue> productItemKey = new HashMap<>();
@@ -71,7 +71,7 @@ Update markItemSold = new Update()
 
 Lastly, create the order as long as an order with that `OrderId` does not already exist.
 
-```
+```java
 final String ORDER_PARTITION_KEY = "OrderId";
 final String ORDER_TABLE_NAME = "Orders";
 
@@ -94,7 +94,7 @@ Put createOrder = new Put()
 
 The following example illustrates how to run the actions defined previously as a single all-or-nothing operation.
 
-```
+```java
     Collection<TransactWriteItem> actions = Arrays.asList(
         new TransactWriteItem().withConditionCheck(checkCustomerValid),
         new TransactWriteItem().withUpdate(markItemSold),
@@ -123,7 +123,7 @@ The following example illustrates how to run the actions defined previously as a
 
 The following example shows how to read the completed order transactionally across the `Orders` and `ProductCatalog` tables.
 
-```
+```java
 HashMap<String, AttributeValue> productItemKey = new HashMap<>();
 productItemKey.put(PRODUCT_PARTITION_KEY, new AttributeValue(productKey));
 

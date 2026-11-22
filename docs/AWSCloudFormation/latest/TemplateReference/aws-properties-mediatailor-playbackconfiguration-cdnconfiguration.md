@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-playbackconfiguration-cdnconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AdSegmentUrlPrefix](#cfn-mediatailor-playbackconfiguration-cdnconfiguration-adsegmenturlprefix)" : {{String}},
   "[ContentSegmentUrlPrefix](#cfn-mediatailor-playbackconfiguration-cdnconfiguration-contentsegmenturlprefix)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-playbackconfiguration-cdnconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AdSegmentUrlPrefix](#cfn-mediatailor-playbackconfiguration-cdnconfiguration-adsegmenturlprefix): {{String}}
   [ContentSegmentUrlPrefix](#cfn-mediatailor-playbackconfiguration-cdnconfiguration-contentsegmenturlprefix): {{String}}
 ```

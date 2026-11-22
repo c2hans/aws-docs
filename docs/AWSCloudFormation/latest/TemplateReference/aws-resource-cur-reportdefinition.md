@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cur-reportdefinition-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CUR::ReportDefinition",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cur-reportdefinition-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CUR::ReportDefinition
 Properties:
   [AdditionalArtifacts](#cfn-cur-reportdefinition-additionalartifacts): {{

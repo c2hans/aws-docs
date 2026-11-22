@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-flow-lexflownodeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BotAliasArn](#cfn-bedrock-flow-lexflownodeconfiguration-botaliasarn)" : {{String}},
   "[LocaleId](#cfn-bedrock-flow-lexflownodeconfiguration-localeid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-flow-lexflownodeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BotAliasArn](#cfn-bedrock-flow-lexflownodeconfiguration-botaliasarn): {{String}}
   [LocaleId](#cfn-bedrock-flow-lexflownodeconfiguration-localeid): {{String}}
 ```

@@ -59,7 +59,7 @@ The following is the Microsoft Teams JSON schema and examples for the configurat
 
 The following is the Microsoft Teams JSON schema for the configuration property for CloudFormation
 
-```
+```json
 {
   "type": "object",
   "properties": {
@@ -670,7 +670,7 @@ The following is the Microsoft Teams JSON schema for the configuration property 
 
 The following is the Microsoft Teams JSON schema example for the configuration property for CloudFormation
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "CloudFormation MSTEAMS Data Source Template",
@@ -833,7 +833,7 @@ The following is the Microsoft Teams YAML schema and examples for the configurat
 
 The following is the Microsoft Teams YAML schema for the configuration property for CloudFormation.
 
-```
+```yaml
 type: object
 properties:
   type:
@@ -1276,7 +1276,7 @@ properties:
 
 The following is the Microsoft Teams YAML example for the Configuration property for CloudFormation:
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Description: CloudFormation MSTEAMS Data Source Template
 Resources:

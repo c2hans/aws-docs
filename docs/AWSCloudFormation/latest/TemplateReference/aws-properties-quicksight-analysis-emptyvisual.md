@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-emptyvisual-syntax.json"></a>
 
-```
+```json
 {
   "[Actions](#cfn-quicksight-analysis-emptyvisual-actions)" : {{[ VisualCustomAction, ... ]}},
   "[DataSetIdentifier](#cfn-quicksight-analysis-emptyvisual-datasetidentifier)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-emptyvisual-syntax.yaml"></a>
 
-```
+```yaml
   [Actions](#cfn-quicksight-analysis-emptyvisual-actions): {{
     - VisualCustomAction}}
   [DataSetIdentifier](#cfn-quicksight-analysis-emptyvisual-datasetidentifier): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-prefixlist-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::PrefixList",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-prefixlist-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::PrefixList
 Properties:
   [AddressFamily](#cfn-ec2-prefixlist-addressfamily): {{String}}
@@ -128,7 +128,7 @@ The following example creates an IPv4 prefix list with a maximum of 10 entries, 
 #### JSON
 <a name="aws-resource-ec2-prefixlist--examples--Create_a_prefix_list--json"></a>
 
-```
+```json
 {
     "Resources": {
         "NewPrefixList": {
@@ -162,7 +162,7 @@ The following example creates an IPv4 prefix list with a maximum of 10 entries, 
 #### YAML
 <a name="aws-resource-ec2-prefixlist--examples--Create_a_prefix_list--yaml"></a>
 
-```
+```yaml
 Resources:
   NewPrefixList:
     Type: AWS::EC2::PrefixList

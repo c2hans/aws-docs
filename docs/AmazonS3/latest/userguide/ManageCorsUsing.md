@@ -66,7 +66,7 @@ The following example CORS configuration has three rules, which are specified as
 ------
 #### [ JSON ]
 
-```
+```JSON
 [
     {
         "AllowedHeaders": [
@@ -112,7 +112,7 @@ The following example CORS configuration has three rules, which are specified as
 ------
 #### [ XML ]
 
-```
+```XML
 <CORSConfiguration>
  <CORSRule>
    <AllowedOrigin>http://www.example1.com</AllowedOrigin>
@@ -146,7 +146,7 @@ The CORS configuration also allows optional configuration parameters, as shown i
 ------
 #### [ JSON ]
 
-```
+```JSON
 [
     {
         "AllowedHeaders": [
@@ -173,7 +173,7 @@ The CORS configuration also allows optional configuration parameters, as shown i
 ------
 #### [ XML ]
 
-```
+```XML
 <CORSConfiguration>
  <CORSRule>
    <AllowedOrigin>http://www.example.com</AllowedOrigin>

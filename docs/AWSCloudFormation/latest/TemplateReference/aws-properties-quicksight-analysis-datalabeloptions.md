@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-datalabeloptions-syntax.json"></a>
 
-```
+```json
 {
   "[CategoryLabelVisibility](#cfn-quicksight-analysis-datalabeloptions-categorylabelvisibility)" : {{String}},
   "[DataLabelTypes](#cfn-quicksight-analysis-datalabeloptions-datalabeltypes)" : {{[ DataLabelType, ... ]}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-datalabeloptions-syntax.yaml"></a>
 
-```
+```yaml
   [CategoryLabelVisibility](#cfn-quicksight-analysis-datalabeloptions-categorylabelvisibility): {{String}}
   [DataLabelTypes](#cfn-quicksight-analysis-datalabeloptions-datalabeltypes): {{
     - DataLabelType}}

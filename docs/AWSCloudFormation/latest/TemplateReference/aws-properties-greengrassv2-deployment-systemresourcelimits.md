@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrassv2-deployment-systemresourcelimits-syntax.json"></a>
 
-```
+```json
 {
   "[Cpus](#cfn-greengrassv2-deployment-systemresourcelimits-cpus)" : {{Number}},
   "[Memory](#cfn-greengrassv2-deployment-systemresourcelimits-memory)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrassv2-deployment-systemresourcelimits-syntax.yaml"></a>
 
-```
+```yaml
   [Cpus](#cfn-greengrassv2-deployment-systemresourcelimits-cpus): {{Number}}
   [Memory](#cfn-greengrassv2-deployment-systemresourcelimits-memory): {{Integer}}
 ```

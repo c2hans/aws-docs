@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apptest-testcase-mainframeactionproperties-syntax.json"></a>
 
-```
+```json
 {
   "[DmsTaskArn](#cfn-apptest-testcase-mainframeactionproperties-dmstaskarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apptest-testcase-mainframeactionproperties-syntax.yaml"></a>
 
-```
+```yaml
   [DmsTaskArn](#cfn-apptest-testcase-mainframeactionproperties-dmstaskarn): {{String}}
 ```
 

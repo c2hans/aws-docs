@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-inputattachment-syntax.json"></a>
 
-```
+```json
 {
   "[AutomaticInputFailoverSettings](#cfn-medialive-channel-inputattachment-automaticinputfailoversettings)" : {{AutomaticInputFailoverSettings}},
   "[InputAttachmentName](#cfn-medialive-channel-inputattachment-inputattachmentname)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-inputattachment-syntax.yaml"></a>
 
-```
+```yaml
   [AutomaticInputFailoverSettings](#cfn-medialive-channel-inputattachment-automaticinputfailoversettings): {{
     AutomaticInputFailoverSettings}}
   [InputAttachmentName](#cfn-medialive-channel-inputattachment-inputattachmentname): {{String}}

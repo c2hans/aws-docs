@@ -45,7 +45,7 @@ In addition to local MCP servers that run as processes, Amazon Q Developer CLI s
 
 Remote MCP servers are configured in your agent configuration file using the `type` and `url` fields:
 
-```
+```json
 {
   "mcpServers": {
     "find-a-domain": {

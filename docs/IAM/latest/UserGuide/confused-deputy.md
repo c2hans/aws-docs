@@ -48,7 +48,7 @@ Example Corp gives the external ID value of 12345 to you. You must then add a `C
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {
@@ -119,7 +119,7 @@ The following example policy grants the service principal `cloudtrail.amazonaws.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -160,7 +160,7 @@ This example bucket policy grants the service principal `appstream.amazonaws.com
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -199,7 +199,7 @@ This policy applies the control only on requests by service principals (`"Bool":
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

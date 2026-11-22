@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-fieldfolder-syntax.json"></a>
 
-```
+```json
 {
   "[Columns](#cfn-quicksight-dataset-fieldfolder-columns)" : {{[ String, ... ]}},
   "[Description](#cfn-quicksight-dataset-fieldfolder-description)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-fieldfolder-syntax.yaml"></a>
 
-```
+```yaml
   [Columns](#cfn-quicksight-dataset-fieldfolder-columns): {{
     - String}}
   [Description](#cfn-quicksight-dataset-fieldfolder-description): {{String}}

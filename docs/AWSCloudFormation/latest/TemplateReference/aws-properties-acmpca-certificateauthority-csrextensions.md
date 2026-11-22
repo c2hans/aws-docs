@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-acmpca-certificateauthority-csrextensions-syntax.json"></a>
 
-```
+```json
 {
   "[KeyUsage](#cfn-acmpca-certificateauthority-csrextensions-keyusage)" : {{KeyUsage}},
   "[SubjectInformationAccess](#cfn-acmpca-certificateauthority-csrextensions-subjectinformationaccess)" : {{[ AccessDescription, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-acmpca-certificateauthority-csrextensions-syntax.yaml"></a>
 
-```
+```yaml
   [KeyUsage](#cfn-acmpca-certificateauthority-csrextensions-keyusage): {{
     KeyUsage}}
   [SubjectInformationAccess](#cfn-acmpca-certificateauthority-csrextensions-subjectinformationaccess): {{

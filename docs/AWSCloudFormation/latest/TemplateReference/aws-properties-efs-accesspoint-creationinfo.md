@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-efs-accesspoint-creationinfo-syntax.json"></a>
 
-```
+```json
 {
   "[OwnerGid](#cfn-efs-accesspoint-creationinfo-ownergid)" : {{String}},
   "[OwnerUid](#cfn-efs-accesspoint-creationinfo-owneruid)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-efs-accesspoint-creationinfo-syntax.yaml"></a>
 
-```
+```yaml
   [OwnerGid](#cfn-efs-accesspoint-creationinfo-ownergid): {{String}}
   [OwnerUid](#cfn-efs-accesspoint-creationinfo-owneruid): {{String}}
   [Permissions](#cfn-efs-accesspoint-creationinfo-permissions): {{String}}

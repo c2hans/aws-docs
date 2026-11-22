@@ -51,7 +51,7 @@ If you delete this service-linked role, the preceding actions will re-create it 
 **Example Permissions policy for the S3 Storage Lens service-linked role**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

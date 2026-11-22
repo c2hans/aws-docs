@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-b2bi-transformer-x12codelistvalidationrule-syntax.json"></a>
 
-```
+```json
 {
   "[CodesToAdd](#cfn-b2bi-transformer-x12codelistvalidationrule-codestoadd)" : {{[ String, ... ]}},
   "[CodesToRemove](#cfn-b2bi-transformer-x12codelistvalidationrule-codestoremove)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-b2bi-transformer-x12codelistvalidationrule-syntax.yaml"></a>
 
-```
+```yaml
   [CodesToAdd](#cfn-b2bi-transformer-x12codelistvalidationrule-codestoadd): {{
     - String}}
   [CodesToRemove](#cfn-b2bi-transformer-x12codelistvalidationrule-codestoremove): {{

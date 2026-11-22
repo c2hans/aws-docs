@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kafkaconnect-connector-autoscaling-syntax.json"></a>
 
-```
+```json
 {
   "[MaxAutoscalingTaskCount](#cfn-kafkaconnect-connector-autoscaling-maxautoscalingtaskcount)" : {{Integer}},
   "[MaxWorkerCount](#cfn-kafkaconnect-connector-autoscaling-maxworkercount)" : {{Integer}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kafkaconnect-connector-autoscaling-syntax.yaml"></a>
 
-```
+```yaml
   [MaxAutoscalingTaskCount](#cfn-kafkaconnect-connector-autoscaling-maxautoscalingtaskcount): {{Integer}}
   [MaxWorkerCount](#cfn-kafkaconnect-connector-autoscaling-maxworkercount): {{Integer}}
   [McuCount](#cfn-kafkaconnect-connector-autoscaling-mcucount): {{Integer}}

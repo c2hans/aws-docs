@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-internetmonitor-monitor-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-internetmonitor-monitor-tag-key)" : {{String}},
   "[Value](#cfn-internetmonitor-monitor-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-internetmonitor-monitor-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-internetmonitor-monitor-tag-key): {{String}}
   [Value](#cfn-internetmonitor-monitor-tag-value): {{String}}
 ```

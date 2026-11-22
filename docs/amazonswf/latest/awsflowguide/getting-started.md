@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/awsflowguide/getting-st
 
 This section introduces the AWS Flow Framework by walking you through a series of simple example applications that introduce the basic programming model and API. The example applications are based on the standard Hello World application that is used to introduce C and related programming languages. Here is a typical Java implementation of Hello World:
 
-```
+```java
 public class HelloWorld {
    public static void main(String[] args) {
       System.out.println("Hello World!");

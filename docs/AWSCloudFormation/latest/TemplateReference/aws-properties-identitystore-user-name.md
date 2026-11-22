@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-identitystore-user-name-syntax.json"></a>
 
-```
+```json
 {
   "[FamilyName](#cfn-identitystore-user-name-familyname)" : {{String}},
   "[Formatted](#cfn-identitystore-user-name-formatted)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-identitystore-user-name-syntax.yaml"></a>
 
-```
+```yaml
   [FamilyName](#cfn-identitystore-user-name-familyname): {{String}}
   [Formatted](#cfn-identitystore-user-name-formatted): {{String}}
   [GivenName](#cfn-identitystore-user-name-givenname): {{String}}

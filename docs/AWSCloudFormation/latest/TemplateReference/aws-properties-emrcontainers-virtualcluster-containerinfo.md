@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrcontainers-virtualcluster-containerinfo-syntax.json"></a>
 
-```
+```json
 {
   "[EksInfo](#cfn-emrcontainers-virtualcluster-containerinfo-eksinfo)" : {{EksInfo}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrcontainers-virtualcluster-containerinfo-syntax.yaml"></a>
 
-```
+```yaml
   [EksInfo](#cfn-emrcontainers-virtualcluster-containerinfo-eksinfo): {{
     EksInfo}}
 ```

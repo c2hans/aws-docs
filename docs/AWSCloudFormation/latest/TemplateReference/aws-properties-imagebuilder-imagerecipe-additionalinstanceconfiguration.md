@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-imagerecipe-additionalinstanceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[SystemsManagerAgent](#cfn-imagebuilder-imagerecipe-additionalinstanceconfiguration-systemsmanageragent)" : {{SystemsManagerAgent}},
   "[UserDataOverride](#cfn-imagebuilder-imagerecipe-additionalinstanceconfiguration-userdataoverride)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-imagerecipe-additionalinstanceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [SystemsManagerAgent](#cfn-imagebuilder-imagerecipe-additionalinstanceconfiguration-systemsmanageragent): {{
     SystemsManagerAgent}}
   [UserDataOverride](#cfn-imagebuilder-imagerecipe-additionalinstanceconfiguration-userdataoverride): {{String}}

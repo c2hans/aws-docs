@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-codecommit-repository-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CodeCommit::Repository",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-codecommit-repository-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CodeCommit::Repository
 Properties:
   [Code](#cfn-codecommit-repository-code): {{
@@ -151,7 +151,7 @@ The following example creates a CodeCommit repository named *MyDemoRepo*. The ne
 #### JSON
 <a name="aws-resource-codecommit-repository--examples--Example--json"></a>
 
-```
+```json
 {
     "MyRepo": {
         "Type": "AWS::CodeCommit::Repository",
@@ -174,7 +174,7 @@ The following example creates a CodeCommit repository named *MyDemoRepo*. The ne
 #### YAML
 <a name="aws-resource-codecommit-repository--examples--Example--yaml"></a>
 
-```
+```yaml
 MyRepo:
   Type: AWS::CodeCommit::Repository
   Properties:
@@ -196,7 +196,7 @@ The following example creates a CodeCommit repository with a trigger for all eve
 #### JSON
 <a name="aws-resource-codecommit-repository--examples--Example--json"></a>
 
-```
+```json
 {
     "MyRepo": {
         "Type": "AWS: : CodeCommit: : Repository",
@@ -226,7 +226,7 @@ The following example creates a CodeCommit repository with a trigger for all eve
 #### YAML
 <a name="aws-resource-codecommit-repository--examples--Example--yaml"></a>
 
-```
+```yaml
 MyRepo:
   Type: AWS::CodeCommit::Repository
   Properties:

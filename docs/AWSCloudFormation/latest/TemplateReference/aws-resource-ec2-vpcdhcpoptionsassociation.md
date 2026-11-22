@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-vpcdhcpoptionsassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::VPCDHCPOptionsAssociation",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-vpcdhcpoptionsassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::VPCDHCPOptionsAssociation
 Properties:
   [DhcpOptionsId](#cfn-ec2-vpcdhcpoptionsassociation-dhcpoptionsid): {{String}}
@@ -74,7 +74,7 @@ The following example uses the `Ref` intrinsic function to associate the myDHCPO
 #### JSON
 <a name="aws-resource-ec2-vpcdhcpoptionsassociation--examples--VPC_DHCP_options_association--json"></a>
 
-```
+```json
 "myVPCDHCPOptionsAssociation" : {
      "Type" : "AWS::EC2::VPCDHCPOptionsAssociation",
       "Properties" : {
@@ -87,7 +87,7 @@ The following example uses the `Ref` intrinsic function to associate the myDHCPO
 #### YAML
 <a name="aws-resource-ec2-vpcdhcpoptionsassociation--examples--VPC_DHCP_options_association--yaml"></a>
 
-```
+```yaml
 myVPCDHCPOptionsAssociation:
   Type: AWS::EC2::VPCDHCPOptionsAssociation
   Properties:

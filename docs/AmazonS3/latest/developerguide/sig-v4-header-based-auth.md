@@ -41,7 +41,7 @@ This section provides an overview of creating a canonical request.
 
 The following is the canonical request format that Amazon S3 uses to calculate a signature. For signatures to match, you must create a canonical request in this format:
 
-```
+```xml
 {{<HTTPMethod>}}\n
 {{<CanonicalURI>}}\n
 {{<CanonicalQueryString>}}\n
@@ -55,7 +55,7 @@ Where:
 + {{HTTPMethod}} is one of the HTTP methods, for example GET, PUT, HEAD, and DELETE.
 + {{CanonicalURI}} is the URI-encoded version of the absolute path component of the URI—everything starting with the "/" that follows the domain name and up to the end of the string or to the question mark character ('?') if you have query string parameters. The URI in the following example, `/examplebucket/myphoto.jpg`, is the absolute path and you don't encode the "/" in the absolute path:
 
-  ```
+  ```java
   http://s3.amazonaws.com/examplebucket/myphoto.jpg
   ```
 
@@ -63,7 +63,7 @@ Where:
 You do not normalize URI paths for requests to Amazon S3. For example, you may have a bucket with an object named "my-object//example//photo.user". Normalizing the path changes the object name in the request to "my-object/example/photo.user". This is an incorrect path for that object.
 + {{CanonicalQueryString}} specifies the URI-encoded query string parameters. You URI-encode name and values individually. You must also sort the parameters in the canonical query string alphabetically by key name. The sorting occurs after encoding. The query string in the following URI example is `prefix=somePrefix&marker=someMarker&max-keys=20`:
 
-  ```
+  ```java
   http://s3.amazonaws.com/examplebucket?prefix=somePrefix&marker=someMarker&max-keys=20
   ```
 
@@ -77,7 +77,7 @@ You do not normalize URI paths for requests to Amazon S3. For example, you may h
 
   When a request targets a subresource, the corresponding query parameter value will be an empty string (""). For example, the following URI identifies the `ACL` subresource on the `examplebucket` bucket:
 
-  ```
+  ```java
   http://s3.amazonaws.com/examplebucket?acl
   ```
 
@@ -90,7 +90,7 @@ You do not normalize URI paths for requests to Amazon S3. For example, you may h
   If the URI does not include a '?', there is no query string in the request, and you set the canonical query string to an empty string (""). You will still need to include the "\\n".
 + {{CanonicalHeaders}} is a list of request headers with their values. Individual header name and value pairs are separated by the newline character ("\\n"). Header names must be in lowercase. You must sort the header names alphabetically to construct the string, as shown in the following example:
 
-  ```
+  ```xml
   Lowercase({{<HeaderName1>}})+":"+Trim({{<value>}})+"\n"
   Lowercase({{<HeaderName2>}})+":"+Trim({{<value>}})+"\n"
   ...
@@ -111,21 +111,21 @@ If you do not want S3 to check against the hash of the request, you can use the 
   The following are example `CanonicalHeaders` strings. The header names are in lowercase and sorted.
 **Example 1**
 
-  ```
+  ```java
   host:s3.amazonaws.com
   x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
   x-amz-date:20130708T220855Z
   ```
 **Example 2**
 
-  ```
+  ```java
   host:s3.amazonaws.com
   x-amz-content-sha256:UNSIGNED-PAYLOAD
   x-amz-date:20130708T220855Z
   ```
 **Example 3**
 
-  ```
+  ```java
   host:s3.amazonaws.com
   x-amz-date:20130708T220855Z
   ```
@@ -146,7 +146,7 @@ Signing the `x-amz-content-sha256` header is optional because S3 will use its va
   ```
 + {{HashedPayload}} is the hexadecimal value of the SHA256 hash of the request payload.
 
-  ```
+  ```xml
   Hex(SHA256Hash({{<payload>}})
   ```
 
@@ -171,7 +171,7 @@ This section provides an overview of creating a string to sign. For step-by-step
 
 The string to sign is a concatenation of the following strings:
 
-```
+```xml
 "AWS4-HMAC-SHA256" + "\n" +
 timeStampISO8601Format + "\n" +
 {{<Scope>}} + "\n" +
@@ -182,7 +182,7 @@ The constant string `AWS4-HMAC-SHA256` specifies the hash algorithm that you are
 
 `Scope` binds the resulting signature to a specific date, an AWS Region, and a service. Thus, your resulting signature will work only in the specific Region and for a specific service. The signature is valid for seven days after the specified date.
 
-```
+```xml
 date.Format({{<YYYYMMDD>}}) + "/" + {{<region>}} + "/" + {{<service>}} + "/aws4_request"
 ```
 
@@ -202,7 +202,7 @@ date.Format({{<YYYYMMDD>}}) + "/" + {{<region>}} + "/" + {{<service>}} + "/aws4_
 
  In AWS Signature Version 4, instead of using your AWS access keys to sign a request, you first create a signing key that is scoped to a specific Region and service.  For more information about signing keys, see [Introduction to Signing Requests](sig-v4-authenticating-requests.md#signing-request-intro).
 
-```
+```xml
 DateKey              = HMAC-SHA256("AWS4"+"{{<SecretAccessKey>}}", "{{<YYYYMMDD>}}")
 DateRegionKey        = HMAC-SHA256({{<DateKey>}}, "{{<aws-region>}}")
 DateRegionServiceKey = HMAC-SHA256({{<DateRegionKey>}}, "{{<aws-service>}}")
@@ -246,7 +246,7 @@ You can use the examples in this section as a reference to check signature calcu
 + The bucket is assumed to be in the US East (N. Virginia) Region. The credential `Scope` and the `Signing Key` calculations use `us-east-1` as the Region specifier. For information about other Regions, see [Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region) in the *AWS General Reference*.
 + You can use either path-style or virtual hosted–style requests. The following examples show how to sign a virtual hosted–style request, for example:
 
-  ```
+  ```java
   https://examplebucket.s3.amazonaws.com/photos/photo1.jpg
   ```
 
@@ -257,7 +257,7 @@ You can use the examples in this section as a reference to check signature calcu
 
 The following example gets the first 10 bytes of an object (test.txt) from `examplebucket`. For more information about the API action, see [GetObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html).
 
-```
+```http
 GET /test.txt HTTP/1.1
 Host: examplebucket.s3.amazonaws.com
 Authorization: {{SignatureToBeCalculated}}
@@ -276,7 +276,7 @@ Because this GET request does not provide any body content, the `x-amz-content-s
 
 **CanonicalRequest**
 
-      ```
+      ```java
       GET
       /test.txt
 
@@ -306,7 +306,7 @@ Because this GET request does not provide any body content, the `x-amz-content-s
 
 **SigningKey**
 
-   ```
+   ```xml
    signing key = HMAC-SHA256(HMAC-SHA256(HMAC-SHA256(HMAC-SHA256("AWS4" + "{{<YourSecretAccessKey>}}","20130524"),"us-east-1"),"s3"),"aws4_request")
    ```
 
@@ -338,7 +338,7 @@ This example PUT request creates an object (`test$file.text`) in `examplebucket`
 
 For information about the API action, see [PutObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html).
 
-```
+```xml
 PUT test$file.text HTTP/1.1
 Host: examplebucket.s3.amazonaws.com
 Date: Fri, 24 May 2013 00:00:00 GMT
@@ -360,7 +360,7 @@ The following steps show signature calculations.
 
 **CanonicalRequest**
 
-      ```
+      ```java
       PUT
       /test%24file.text
 
@@ -391,7 +391,7 @@ The following steps show signature calculations.
 
 **SigningKey**
 
-   ```
+   ```xml
    signing key = HMAC-SHA256(HMAC-SHA256(HMAC-SHA256(HMAC-SHA256("AWS4" + "{{<YourSecretAccessKey>}}","20130524"),"us-east-1"),"s3"),"aws4_request")
    ```
 
@@ -418,7 +418,7 @@ The following steps show signature calculations.
 
 The following GET request retrieves the lifecycle configuration of `examplebucket`. For information about the API action, see [GetBucketLifecycleConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketLifecycleConfiguration.html).
 
-```
+```java
 GET ?lifecycle HTTP/1.1
 Host: examplebucket.s3.amazonaws.com
 Authorization: {{SignatureToBeCalculated}}
@@ -436,7 +436,7 @@ Because the request does not provide any body content, the `x-amz-content-sha256
 
 **CanonicalRequest**
 
-      ```
+      ```java
       GET
       /
       lifecycle=
@@ -465,7 +465,7 @@ Because the request does not provide any body content, the `x-amz-content-sha256
 
 **SigningKey**
 
-   ```
+   ```xml
    signing key = HMAC-SHA256(HMAC-SHA256(HMAC-SHA256(HMAC-SHA256("AWS4" + "{{<YourSecretAccessKey>}}","20130524"),"us-east-1"),"s3"),"aws4_request")
    ```
 
@@ -492,7 +492,7 @@ Because the request does not provide any body content, the `x-amz-content-sha256
 
 The following example retrieves a list of objects from `examplebucket` bucket. For information about the API action, see [ListObjects](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjects.html).
 
-```
+```java
 GET ?max-keys=2&prefix=J HTTP/1.1
 Host: examplebucket.s3.amazonaws.com
 Authorization: {{SignatureToBeCalculated}}
@@ -510,7 +510,7 @@ Because the request does not provide a body, the value of `x-amz-content-sha256`
 
 **CanonicalRequest**
 
-      ```
+      ```java
       GET
       /
       max-keys=2&prefix=J
@@ -539,7 +539,7 @@ Because the request does not provide a body, the value of `x-amz-content-sha256`
 
 **SigningKey**
 
-   ```
+   ```xml
    signing key = HMAC-SHA256(HMAC-SHA256(HMAC-SHA256(HMAC-SHA256("AWS4" + "{{<YourSecretAccessKey>}}","20130524"),"us-east-1"),"s3"),"aws4_request")
    ```
 

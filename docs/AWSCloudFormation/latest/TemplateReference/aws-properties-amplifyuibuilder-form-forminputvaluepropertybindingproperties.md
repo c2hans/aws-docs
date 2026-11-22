@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amplifyuibuilder-form-forminputvaluepropertybindingproperties-syntax.json"></a>
 
-```
+```json
 {
   "[Field](#cfn-amplifyuibuilder-form-forminputvaluepropertybindingproperties-field)" : {{String}},
   "[Property](#cfn-amplifyuibuilder-form-forminputvaluepropertybindingproperties-property)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amplifyuibuilder-form-forminputvaluepropertybindingproperties-syntax.yaml"></a>
 
-```
+```yaml
   [Field](#cfn-amplifyuibuilder-form-forminputvaluepropertybindingproperties-field): {{String}}
   [Property](#cfn-amplifyuibuilder-form-forminputvaluepropertybindingproperties-property): {{String}}
 ```

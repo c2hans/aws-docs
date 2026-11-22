@@ -154,7 +154,7 @@ This example shows a sample response for the `GetAssessmentFramework` API operat
 #### Sample Response
 <a name="API_GetAssessmentFramework_Example_1_Response"></a>
 
-```
+```json
 {
     "framework": {
         "arn": "arn:aws:auditmanager:us-east-1:111122223333:assessmentFramework/a1b2c3d4-5678-90ab-cdef-example11111",

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datasync-locationfsxontap-smb-syntax.json"></a>
 
-```
+```json
 {
   "[CmkSecretConfig](#cfn-datasync-locationfsxontap-smb-cmksecretconfig)" : {{CmkSecretConfig}},
   "[CustomSecretConfig](#cfn-datasync-locationfsxontap-smb-customsecretconfig)" : {{CustomSecretConfig}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datasync-locationfsxontap-smb-syntax.yaml"></a>
 
-```
+```yaml
   [CmkSecretConfig](#cfn-datasync-locationfsxontap-smb-cmksecretconfig): {{
     CmkSecretConfig}}
   [CustomSecretConfig](#cfn-datasync-locationfsxontap-smb-customsecretconfig): {{

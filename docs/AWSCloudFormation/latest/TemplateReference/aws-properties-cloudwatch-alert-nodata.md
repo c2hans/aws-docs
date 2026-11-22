@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-alert-nodata-syntax.json"></a>
 
-```
+```json
 {
   "[TreatAs](#cfn-cloudwatch-alert-nodata-treatas)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-alert-nodata-syntax.yaml"></a>
 
-```
+```yaml
   [TreatAs](#cfn-cloudwatch-alert-nodata-treatas): {{String}}
 ```
 

@@ -12,7 +12,7 @@ The Fleet is configured to prioritize the `m5.12xlarge` capacity and gets priori
 
 The Fleet reserves the capacity for `Windows` instances and the reservation automatically expires on `October 31, 2021` at `23:59:59` UTC.
 
-```
+```bash
 aws ec2 create-capacity-reservation-fleet \
     --total-target-capacity 480 \
     --allocation-strategy prioritized \
@@ -24,7 +24,7 @@ aws ec2 create-capacity-reservation-fleet \
 
 The following is the contents of `instanceTypeSpecification.json`.
 
-```
+```json
 [
     {
         "InstanceType": "m5.4xlarge",

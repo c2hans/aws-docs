@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-capacityprovider-instancerequirements-syntax.json"></a>
 
-```
+```json
 {
   "[AllowedInstanceTypes](#cfn-lambda-capacityprovider-instancerequirements-allowedinstancetypes)" : {{[ String, ... ]}},
   "[Architectures](#cfn-lambda-capacityprovider-instancerequirements-architectures)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-capacityprovider-instancerequirements-syntax.yaml"></a>
 
-```
+```yaml
   [AllowedInstanceTypes](#cfn-lambda-capacityprovider-instancerequirements-allowedinstancetypes): {{
     - String}}
   [Architectures](#cfn-lambda-capacityprovider-instancerequirements-architectures): {{
@@ -74,7 +74,7 @@ Configure instance types and architecture.
 #### YAML
 <a name="aws-properties-lambda-capacityprovider-instancerequirements--examples--Instance_requirement_configuration--yaml"></a>
 
-```
+```yaml
 
 InstanceRequirements:
     AllowedInstanceTypes:

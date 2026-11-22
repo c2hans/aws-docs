@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-personalize-metricattribution-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Personalize::MetricAttribution",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-personalize-metricattribution-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Personalize::MetricAttribution
 Properties:
   [DatasetGroupArn](#cfn-personalize-metricattribution-datasetgrouparn): {{String}}

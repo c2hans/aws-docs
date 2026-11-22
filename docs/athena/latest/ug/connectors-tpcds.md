@@ -119,7 +119,7 @@ For TPC-DS queries that are compatible with this generated schema and data, see 
 
 The following `SELECT` query example queries the `tpcds` catalog for customer demographics in specific counties.
 
-```
+```sql
 SELECT
   cd_gender,
   cd_marital_status,

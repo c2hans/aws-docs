@@ -33,7 +33,7 @@ You can use the [S3 condition key](https://docs.aws.amazon.com/service-authoriza
 
 **Example bucket policy enforcing TLS 1.3 using the `S3:TlsVersion` condition key**
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -60,7 +60,7 @@ You can use the `aws:SecureTransport` [global condition key](https://docs.aws.am
 
 **Example bucket policy enforcing HTTPS using the `aws:SecureTransport` global condition key**
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

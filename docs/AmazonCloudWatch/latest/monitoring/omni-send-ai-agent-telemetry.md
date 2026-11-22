@@ -47,14 +47,14 @@ On startup, the distribution registers the global tracer provider. OpenTelemetry
 ------
 #### [ Python ]
 
-```
+```bash
 pip install "aws-opentelemetry-distro>=0.20.0"
 ```
 
 ------
 #### [ Node.js ]
 
-```
+```bash
 npm install @aws/aws-distro-opentelemetry-node-autoinstrumentation@">=0.13.0"
 ```
 
@@ -73,7 +73,7 @@ Install the packages shown, and add any **startup code** to a module that your e
 ------
 #### [ Python ]
 
-```
+```bash
 pip install "aws-opentelemetry-distro>=0.20.0" openinference-instrumentation-langchain
 ```
 + No startup code is needed. Invoke the graph after startup, not at import time.
@@ -81,13 +81,13 @@ pip install "aws-opentelemetry-distro>=0.20.0" openinference-instrumentation-lan
 ------
 #### [ Node.js ]
 
-```
+```bash
 npm install @aws/aws-distro-opentelemetry-node-autoinstrumentation@">=0.13.0" @opentelemetry/api @arizeai/openinference-instrumentation-langchain @langchain/core@">=1.0.0" @langchain/openai langchain zod
 ```
 
 **agent.ts**
 
-```
+```typescript
 import { trace } from "@opentelemetry/api";
 import { LangChainInstrumentation } from "@arizeai/openinference-instrumentation-langchain";
 import * as CallbackManager from "@langchain/core/callbacks/manager";
@@ -131,13 +131,13 @@ console.log(result.messages.at(-1)?.content);
 ------
 #### [ Python ]
 
-```
+```bash
 pip install "aws-opentelemetry-distro>=0.20.0" openinference-instrumentation-strands-agents
 ```
 
 **tracing.py**
 
-```
+```python
 from opentelemetry import trace
 from strands.telemetry import StrandsTelemetry
 from openinference.instrumentation.strands_agents import StrandsAgentsToOpenInferenceProcessor
@@ -161,7 +161,7 @@ Use the OpenTelemetry distribution; Strands' built-in OpenTelemetry tracing need
 
 CrewAI is Python only.
 
-```
+```bash
 pip install "aws-opentelemetry-distro>=0.20.0" openinference-instrumentation-crewai "crewai[bedrock]>=1.10.1" "setuptools<81"
 ```
 + No startup code is needed.
@@ -174,7 +174,7 @@ pip install "aws-opentelemetry-distro>=0.20.0" openinference-instrumentation-cre
 ------
 #### [ Python ]
 
-```
+```bash
 pip install "aws-opentelemetry-distro>=0.20.0" openinference-instrumentation-openai-agents
 ```
 + No startup code is needed.
@@ -183,13 +183,13 @@ pip install "aws-opentelemetry-distro>=0.20.0" openinference-instrumentation-ope
 ------
 #### [ Node.js ]
 
-```
+```bash
 npm install @aws/aws-distro-opentelemetry-node-autoinstrumentation@">=0.13.0" @arizeai/openinference-instrumentation-openai-agents
 ```
 
 **agent.ts**
 
-```
+```typescript
 import * as agents from "@openai/agents";
 import { trace } from "@opentelemetry/api";
 import { OpenAIAgentsInstrumentation } from "@arizeai/openinference-instrumentation-openai-agents";
@@ -216,7 +216,7 @@ console.log(result.finalOutput);
 
 The Vercel AI SDK is Node.js only. Use the OpenTelemetry distribution:
 
-```
+```bash
 npm install @aws/aws-distro-opentelemetry-node-autoinstrumentation@">=0.13.0" ai @ai-sdk/amazon-bedrock
 ```
 
@@ -233,7 +233,7 @@ The distribution must load before your application. AgentCore starter toolkit im
 ------
 #### [ Python ]
 
-```
+```bash
 AGENT_OBSERVABILITY_ENABLED=true \
 AWS_GENAI_CONTENT_EXTRACTION_OPT_OUT=true \
 OTEL_PYTHON_DISTRO=aws_distro \
@@ -257,7 +257,7 @@ Determine the module format from the compiled application, not the TypeScript so
 
 For CommonJS:
 
-```
+```bash
 AGENT_OBSERVABILITY_ENABLED=true \
 OTEL_RESOURCE_ATTRIBUTES="service.name=<agent-name>,deployment.environment.name=<stage>,aws.log.group.names=<your-custom-log-group>" \
 OTEL_EXPORTER_OTLP_TRACES_HEADERS="x-aws-log-group=<your-custom-log-group>,x-aws-log-stream=<your-custom-log-stream>" \
@@ -271,7 +271,7 @@ node /path/to/your/agent.js
 
 For ESM:
 
-```
+```bash
 AGENT_OBSERVABILITY_ENABLED=true \
 OTEL_RESOURCE_ATTRIBUTES="service.name=<agent-name>,deployment.environment.name=<stage>,aws.log.group.names=<your-custom-log-group>" \
 OTEL_EXPORTER_OTLP_TRACES_HEADERS="x-aws-log-group=<your-custom-log-group>,x-aws-log-stream=<your-custom-log-stream>" \
@@ -298,7 +298,7 @@ We recommend leaving `OTEL_TRACES_SAMPLER` unset. By default, the distribution t
 
 You can record fewer traces to match your traffic and telemetry requirements, at the cost of incomplete or inaccurate agent metrics. Set the sampler on the service where requests start. For example, if requests start at your hosted agent, you can configure ratio-based sampling:
 
-```
+```bash
 export OTEL_TRACES_SAMPLER=parentbased_traceidratio
 export OTEL_TRACES_SAMPLER_ARG=0.9
 ```
@@ -314,7 +314,7 @@ On Amazon Bedrock AgentCore, the runtime exports your agent's spans to CloudWatc
 
 Set these environment variables on the AgentCore runtime:
 
-```
+```bash
 AWS_GENAI_CONTENT_EXTRACTION_OPT_OUT=true
 ```
 + `AWS_GENAI_CONTENT_EXTRACTION_OPT_OUT=true` keeps prompt and response text in the spans, which **Agent traces** and evaluators read. For production redaction and who can read kept content, see [Protect sensitive data](omni-data-protection.md).
@@ -322,7 +322,7 @@ AWS_GENAI_CONTENT_EXTRACTION_OPT_OUT=true
 
 With the AgentCore starter toolkit:
 
-```
+```bash
 agentcore deploy \
   --env AWS_GENAI_CONTENT_EXTRACTION_OPT_OUT=true
 ```
@@ -334,7 +334,7 @@ With infrastructure as code, this is the environment block for the runtime resou
 ------
 #### [ CDK TypeScript ]
 
-```
+```typescript
 environmentVariables: {
   AWS_GENAI_CONTENT_EXTRACTION_OPT_OUT: "true",
 }
@@ -343,7 +343,7 @@ environmentVariables: {
 ------
 #### [ CDK Python ]
 
-```
+```python
 environment_variables={
     "AWS_GENAI_CONTENT_EXTRACTION_OPT_OUT": "true",
 }
@@ -361,7 +361,7 @@ environment_variables = {
 ------
 #### [ CloudFormation ]
 
-```
+```yaml
 EnvironmentVariables:
   AWS_GENAI_CONTENT_EXTRACTION_OPT_OUT: "true"
 ```
@@ -372,7 +372,7 @@ EnvironmentVariables:
 
 AgentCore delivers spans through the account's trace destination, which is the setting Transaction Search turns on. If Transaction Search is not enabled, set the destination:
 
-```
+```bash
 aws xray update-trace-segment-destination --destination CloudWatchLogs --region <region>
 ```
 + The change takes effect after about 10 minutes.
@@ -391,7 +391,7 @@ We recommend the latest OpenTelemetry distribution Lambda layer. For the latest 
 ------
 #### [ Python ]
 
-```
+```bash
 AGENT_OBSERVABILITY_ENABLED=true
 AWS_GENAI_CONTENT_EXTRACTION_OPT_OUT=true
 OTEL_PYTHON_DISTRO=aws_distro
@@ -410,7 +410,7 @@ The Python Lambda layer enables a limited set of instrumentations by default to 
 ------
 #### [ Node.js ]
 
-```
+```bash
 AGENT_OBSERVABILITY_ENABLED=true
 OTEL_AWS_APPLICATION_SIGNALS_ENABLED=false
 OTEL_EXPORTER_OTLP_TRACES_HEADERS=x-aws-log-group=<your-custom-log-group>,x-aws-log-stream=<your-custom-log-stream>
@@ -454,7 +454,7 @@ Put the variables in the agent's systemd unit (`Environment=` lines) or start sc
 ------
 #### [ Python ]
 
-```
+```bash
 AGENT_OBSERVABILITY_ENABLED=true
 AWS_GENAI_CONTENT_EXTRACTION_OPT_OUT=true
 OTEL_PYTHON_DISTRO=aws_distro
@@ -470,7 +470,7 @@ OTEL_METRICS_EXPORTER=none
 ------
 #### [ Node.js ]
 
-```
+```bash
 AGENT_OBSERVABILITY_ENABLED=true
 OTEL_RESOURCE_ATTRIBUTES=service.name=<agent-name>,deployment.environment.name=<stage>,aws.log.group.names=<your-custom-log-group>
 OTEL_EXPORTER_OTLP_TRACES_HEADERS=x-aws-log-group=<your-custom-log-group>,x-aws-log-stream=<your-custom-log-stream>
@@ -504,7 +504,7 @@ Put the variables in the `environment` block of the agent's container definition
 ------
 #### [ Python ]
 
-```
+```bash
 AGENT_OBSERVABILITY_ENABLED=true
 AWS_GENAI_CONTENT_EXTRACTION_OPT_OUT=true
 OTEL_PYTHON_DISTRO=aws_distro
@@ -520,7 +520,7 @@ OTEL_METRICS_EXPORTER=none
 ------
 #### [ Node.js ]
 
-```
+```bash
 AGENT_OBSERVABILITY_ENABLED=true
 OTEL_RESOURCE_ATTRIBUTES=service.name=<agent-name>,deployment.environment.name=<stage>,aws.log.group.names=<your-custom-log-group>
 OTEL_EXPORTER_OTLP_TRACES_HEADERS=x-aws-log-group=<your-custom-log-group>,x-aws-log-stream=<your-custom-log-stream>
@@ -554,7 +554,7 @@ Put the variables in the `env` block of the agent's container in the pod spec, a
 ------
 #### [ Python ]
 
-```
+```bash
 AGENT_OBSERVABILITY_ENABLED=true
 AWS_GENAI_CONTENT_EXTRACTION_OPT_OUT=true
 OTEL_PYTHON_DISTRO=aws_distro
@@ -570,7 +570,7 @@ OTEL_METRICS_EXPORTER=none
 ------
 #### [ Node.js ]
 
-```
+```bash
 AGENT_OBSERVABILITY_ENABLED=true
 OTEL_RESOURCE_ATTRIBUTES=service.name=<agent-name>,deployment.environment.name=<stage>,aws.log.group.names=<your-custom-log-group>
 OTEL_EXPORTER_OTLP_TRACES_HEADERS=x-aws-log-group=<your-custom-log-group>,x-aws-log-stream=<your-custom-log-stream>

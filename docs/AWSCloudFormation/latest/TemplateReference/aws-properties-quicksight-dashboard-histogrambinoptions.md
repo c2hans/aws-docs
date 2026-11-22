@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-histogrambinoptions-syntax.json"></a>
 
-```
+```json
 {
   "[BinCount](#cfn-quicksight-dashboard-histogrambinoptions-bincount)" : {{BinCountOptions}},
   "[BinWidth](#cfn-quicksight-dashboard-histogrambinoptions-binwidth)" : {{BinWidthOptions}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-histogrambinoptions-syntax.yaml"></a>
 
-```
+```yaml
   [BinCount](#cfn-quicksight-dashboard-histogrambinoptions-bincount): {{
     BinCountOptions}}
   [BinWidth](#cfn-quicksight-dashboard-histogrambinoptions-binwidth): {{

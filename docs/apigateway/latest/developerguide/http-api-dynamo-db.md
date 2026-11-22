@@ -355,21 +355,21 @@ To make sure that your API is working, you use [curl](https://curl.se).
 **To create or update an item**
 + Use the following command to create or update an item. The command includes a request body with the item's ID, price, and name.
 
-  ```
+  ```shell
   curl -X "PUT" -H "Content-Type: application/json" -d "{\"id\": \"123\", \"price\": 12345, \"name\": \"myitem\"}" https://{{abcdef123}}.execute-api.{{us-west-2}}.amazonaws.com/items
   ```
 
 **To get all items**
 + Use the following command to list all items.
 
-  ```
+  ```shell
   curl https://{{abcdef123}}.execute-api.{{us-west-2}}.amazonaws.com/items
   ```
 
 **To get an item**
 + Use the following command to get an item by its ID.
 
-  ```
+  ```shell
   curl https://{{abcdef123}}.execute-api.{{us-west-2}}.amazonaws.com/items/{{123}}
   ```
 
@@ -377,13 +377,13 @@ To make sure that your API is working, you use [curl](https://curl.se).
 
 1. Use the following command to delete an item.
 
-   ```
+   ```shell
    curl -X "DELETE" https://{{abcdef123}}.execute-api.{{us-west-2}}.amazonaws.com/items/{{123}}
    ```
 
 1. Get all items to verify that the item was deleted.
 
-   ```
+   ```shell
    curl https://{{abcdef123}}.execute-api.{{us-west-2}}.amazonaws.com/items
    ```
 

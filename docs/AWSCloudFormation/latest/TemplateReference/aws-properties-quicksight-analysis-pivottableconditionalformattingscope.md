@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-pivottableconditionalformattingscope-syntax.json"></a>
 
-```
+```json
 {
   "[Role](#cfn-quicksight-analysis-pivottableconditionalformattingscope-role)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-pivottableconditionalformattingscope-syntax.yaml"></a>
 
-```
+```yaml
   [Role](#cfn-quicksight-analysis-pivottableconditionalformattingscope-role): {{String}}
 ```
 

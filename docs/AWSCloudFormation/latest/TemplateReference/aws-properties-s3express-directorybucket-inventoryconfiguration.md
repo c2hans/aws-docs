@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3express-directorybucket-inventoryconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Destination](#cfn-s3express-directorybucket-inventoryconfiguration-destination)" : {{Destination}},
   "[Enabled](#cfn-s3express-directorybucket-inventoryconfiguration-enabled)" : {{Boolean}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3express-directorybucket-inventoryconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Destination](#cfn-s3express-directorybucket-inventoryconfiguration-destination): {{
     Destination}}
   [Enabled](#cfn-s3express-directorybucket-inventoryconfiguration-enabled): {{Boolean}}

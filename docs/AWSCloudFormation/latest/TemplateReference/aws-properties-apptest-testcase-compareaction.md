@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apptest-testcase-compareaction-syntax.json"></a>
 
-```
+```json
 {
   "[Input](#cfn-apptest-testcase-compareaction-input)" : {{Input}},
   "[Output](#cfn-apptest-testcase-compareaction-output)" : {{Output}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apptest-testcase-compareaction-syntax.yaml"></a>
 
-```
+```yaml
   [Input](#cfn-apptest-testcase-compareaction-input): {{
     Input}}
   [Output](#cfn-apptest-testcase-compareaction-output): {{

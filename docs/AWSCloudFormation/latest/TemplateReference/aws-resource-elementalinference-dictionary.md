@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-elementalinference-dictionary-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ElementalInference::Dictionary",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-elementalinference-dictionary-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ElementalInference::Dictionary
 Properties:
   [Entries](#cfn-elementalinference-dictionary-entries): {{String}}

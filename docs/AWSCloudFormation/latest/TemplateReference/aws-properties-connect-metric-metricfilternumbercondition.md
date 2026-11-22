@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-metric-metricfilternumbercondition-syntax.json"></a>
 
-```
+```json
 {
   "[Comparison](#cfn-connect-metric-metricfilternumbercondition-comparison)" : {{String}},
   "[Values](#cfn-connect-metric-metricfilternumbercondition-values)" : {{[ Number, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-metric-metricfilternumbercondition-syntax.yaml"></a>
 
-```
+```yaml
   [Comparison](#cfn-connect-metric-metricfilternumbercondition-comparison): {{String}}
   [Values](#cfn-connect-metric-metricfilternumbercondition-values): {{
     - Number}}

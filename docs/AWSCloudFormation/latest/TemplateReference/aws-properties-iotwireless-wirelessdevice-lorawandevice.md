@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotwireless-wirelessdevice-lorawandevice-syntax.json"></a>
 
-```
+```json
 {
   "[AbpV10x](#cfn-iotwireless-wirelessdevice-lorawandevice-abpv10x)" : {{AbpV10x}},
   "[AbpV11](#cfn-iotwireless-wirelessdevice-lorawandevice-abpv11)" : {{AbpV11}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotwireless-wirelessdevice-lorawandevice-syntax.yaml"></a>
 
-```
+```yaml
   [AbpV10x](#cfn-iotwireless-wirelessdevice-lorawandevice-abpv10x): {{
     AbpV10x}}
   [AbpV11](#cfn-iotwireless-wirelessdevice-lorawandevice-abpv11): {{

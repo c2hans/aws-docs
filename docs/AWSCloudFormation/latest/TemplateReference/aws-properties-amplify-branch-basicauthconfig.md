@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amplify-branch-basicauthconfig-syntax.json"></a>
 
-```
+```json
 {
   "[EnableBasicAuth](#cfn-amplify-branch-basicauthconfig-enablebasicauth)" : {{Boolean}},
   "[Password](#cfn-amplify-branch-basicauthconfig-password)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amplify-branch-basicauthconfig-syntax.yaml"></a>
 
-```
+```yaml
   [EnableBasicAuth](#cfn-amplify-branch-basicauthconfig-enablebasicauth): {{Boolean}}
   [Password](#cfn-amplify-branch-basicauthconfig-password): {{String}}
   [Username](#cfn-amplify-branch-basicauthconfig-username): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cleanrooms-configuredtable-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CleanRooms::ConfiguredTable",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cleanrooms-configuredtable-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CleanRooms::ConfiguredTable
 Properties:
   [AllowedColumns](#cfn-cleanrooms-configuredtable-allowedcolumns): {{
@@ -158,7 +158,7 @@ The following is an example of a configured table with a list analysis rule appl
 #### JSON
 <a name="aws-resource-cleanrooms-configuredtable--examples--A_configured_table_using_a_list_analysis_rule--json"></a>
 
-```
+```json
 "ListConfiguredTable": {
   {
     "Type" : "AWS::CleanRooms::ConfiguredTable",
@@ -196,7 +196,7 @@ The following is an example of a configured table with a list analysis rule appl
 #### YAML
 <a name="aws-resource-cleanrooms-configuredtable--examples--A_configured_table_using_a_list_analysis_rule--yaml"></a>
 
-```
+```yaml
 ListConfiguredTable:
   Type: AWS::CleanRooms::ConfiguredTable
   Properties:

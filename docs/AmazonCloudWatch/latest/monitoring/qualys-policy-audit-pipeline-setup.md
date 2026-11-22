@@ -8,7 +8,7 @@ Collects compliance posture findings from Qualys Policy Audit by using the PCRS 
 
 Configure the Qualys Policy Audit pipeline with the following YAML:
 
-```
+```yaml
 extension:
   aws:
     secrets:

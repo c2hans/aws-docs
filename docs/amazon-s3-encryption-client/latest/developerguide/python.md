@@ -20,7 +20,7 @@ Before you install the Amazon S3 Encryption Client for Python, be sure you have 
 The Amazon S3 Encryption Client for Python requires Python 3.10 or later, but we recommend that you use the latest version.
 You can view your current version of Python by running the following command.
 
-```
+```python
 python3 --version
 ```
 
@@ -32,6 +32,6 @@ The Amazon S3 Encryption Client for Python requires the [Boto3](https://boto3.am
 
 To install the Amazon S3 Encryption Client for Python and its dependencies, run the following pip command.
 
-```
+```python
 pip install amazon-s3-encryption-client-python
 ```

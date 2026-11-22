@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-unpivotoperation-syntax.json"></a>
 
-```
+```json
 {
   "[Alias](#cfn-quicksight-dataset-unpivotoperation-alias)" : {{String}},
   "[ColumnsToUnpivot](#cfn-quicksight-dataset-unpivotoperation-columnstounpivot)" : {{[ ColumnToUnpivot, ... ]}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-unpivotoperation-syntax.yaml"></a>
 
-```
+```yaml
   [Alias](#cfn-quicksight-dataset-unpivotoperation-alias): {{String}}
   [ColumnsToUnpivot](#cfn-quicksight-dataset-unpivotoperation-columnstounpivot): {{
     - ColumnToUnpivot}}

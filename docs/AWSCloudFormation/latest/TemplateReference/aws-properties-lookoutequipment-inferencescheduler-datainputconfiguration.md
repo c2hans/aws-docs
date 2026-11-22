@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lookoutequipment-inferencescheduler-datainputconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[InferenceInputNameConfiguration](#cfn-lookoutequipment-inferencescheduler-datainputconfiguration-inferenceinputnameconfiguration)" : {{InputNameConfiguration}},
   "[InputTimeZoneOffset](#cfn-lookoutequipment-inferencescheduler-datainputconfiguration-inputtimezoneoffset)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lookoutequipment-inferencescheduler-datainputconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [InferenceInputNameConfiguration](#cfn-lookoutequipment-inferencescheduler-datainputconfiguration-inferenceinputnameconfiguration): {{
     InputNameConfiguration}}
   [InputTimeZoneOffset](#cfn-lookoutequipment-inferencescheduler-datainputconfiguration-inputtimezoneoffset): {{String}}

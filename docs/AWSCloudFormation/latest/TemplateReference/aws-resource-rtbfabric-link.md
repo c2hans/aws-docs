@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-rtbfabric-link-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RTBFabric::Link",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-rtbfabric-link-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RTBFabric::Link
 Properties:
   [GatewayId](#cfn-rtbfabric-link-gatewayid): {{String}}

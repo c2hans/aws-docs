@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-tmpfs-syntax.json"></a>
 
-```
+```json
 {
   "[ContainerPath](#cfn-batch-jobdefinition-tmpfs-containerpath)" : {{String}},
   "[MountOptions](#cfn-batch-jobdefinition-tmpfs-mountoptions)" : {{[ String, ... ]}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-tmpfs-syntax.yaml"></a>
 
-```
+```yaml
   [ContainerPath](#cfn-batch-jobdefinition-tmpfs-containerpath): {{String}}
   [MountOptions](#cfn-batch-jobdefinition-tmpfs-mountoptions): {{
     - String}}

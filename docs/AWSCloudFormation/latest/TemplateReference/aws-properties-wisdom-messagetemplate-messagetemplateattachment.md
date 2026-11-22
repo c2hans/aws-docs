@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-messagetemplate-messagetemplateattachment-syntax.json"></a>
 
-```
+```json
 {
   "[AttachmentId](#cfn-wisdom-messagetemplate-messagetemplateattachment-attachmentid)" : {{String}},
   "[AttachmentName](#cfn-wisdom-messagetemplate-messagetemplateattachment-attachmentname)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-messagetemplate-messagetemplateattachment-syntax.yaml"></a>
 
-```
+```yaml
   [AttachmentId](#cfn-wisdom-messagetemplate-messagetemplateattachment-attachmentid): {{String}}
   [AttachmentName](#cfn-wisdom-messagetemplate-messagetemplateattachment-attachmentname): {{String}}
   [S3PresignedUrl](#cfn-wisdom-messagetemplate-messagetemplateattachment-s3presignedurl): {{String}}

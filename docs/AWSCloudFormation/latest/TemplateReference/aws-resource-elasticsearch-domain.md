@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-elasticsearch-domain-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Elasticsearch::Domain",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-elasticsearch-domain-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Elasticsearch::Domain
 Properties:
   [AccessPolicies](#cfn-elasticsearch-domain-accesspolicies): {{Json}}
@@ -268,7 +268,7 @@ The following example creates an OpenSearch Service domain running Elasticsearch
 #### JSON
 <a name="aws-resource-elasticsearch-domain--examples--Create_an_OpenSearch_Service_domain_that_contains_two_data_nodes_and_three_master_nodes--json"></a>
 
-```
+```json
 "ElasticsearchDomain": {
    "Type":"AWS::Elasticsearch::Domain",
    "Properties": {
@@ -325,7 +325,7 @@ The following example creates an OpenSearch Service domain running Elasticsearch
 #### YAML
 <a name="aws-resource-elasticsearch-domain--examples--Create_an_OpenSearch_Service_domain_that_contains_two_data_nodes_and_three_master_nodes--yaml"></a>
 
-```
+```yaml
 ElasticsearchDomain:
   Type: AWS::Elasticsearch::Domain
   Properties:
@@ -374,7 +374,7 @@ The following example creates a domain with VPC options.
 #### JSON
 <a name="aws-resource-elasticsearch-domain--examples--Create_a_domain_with_VPC_options--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "ElasticsearchDomain resource",
@@ -538,7 +538,7 @@ The following example creates a domain with VPC options.
 #### YAML
 <a name="aws-resource-elasticsearch-domain--examples--Create_a_domain_with_VPC_options--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: ElasticsearchDomain resource
 Parameters:

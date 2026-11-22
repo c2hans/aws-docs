@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelexplainabilityjobdefinition-monitoringoutput-syntax.json"></a>
 
-```
+```json
 {
   "[S3Output](#cfn-sagemaker-modelexplainabilityjobdefinition-monitoringoutput-s3output)" : {{S3Output}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelexplainabilityjobdefinition-monitoringoutput-syntax.yaml"></a>
 
-```
+```yaml
   [S3Output](#cfn-sagemaker-modelexplainabilityjobdefinition-monitoringoutput-s3output): {{
     S3Output}}
 ```

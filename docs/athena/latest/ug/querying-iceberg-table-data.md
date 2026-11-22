@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg-table-
 
 To query an Iceberg dataset, use a standard `SELECT` statement like the following. Queries follow the Apache Iceberg [format v2 spec](https://iceberg.apache.org/spec/#format-versioning) and perform merge-on-read of both position and equality deletes.
 
-```
+```sql
 SELECT * FROM [{{db_name}}.]{{table_name}} [WHERE {{predicate}}]
 ```
 
@@ -21,11 +21,11 @@ To create and query Athena views on Iceberg tables, use `CREATE VIEW` views as d
 
 Example:
 
-```
+```sql
 CREATE VIEW view1 AS SELECT * FROM {{iceberg_table}}
 ```
 
-```
+```sql
 SELECT * FROM view1
 ```
 
@@ -47,37 +47,37 @@ In a `SELECT` query, you can use the following properties after {{table\_name}}t
 
 The following statement lists the files for an Iceberg table.
 
-```
+```sql
 SELECT * FROM "{{dbname}}"."{{tablename}}$files"
 ```
 
 The following statement lists the manifests for an Iceberg table.
 
-```
+```sql
 SELECT * FROM "{{dbname}}"."{{tablename}}$manifests"
 ```
 
 The following statement shows the history for an Iceberg table.
 
-```
+```sql
 SELECT * FROM "{{dbname}}"."{{tablename}}$history"
 ```
 
 The following example shows the partitions for an Iceberg table.
 
-```
+```sql
 SELECT * FROM "{{dbname}}"."{{tablename}}$partitions"
 ```
 
 The following example lists the snapshots for an Iceberg table.
 
-```
+```sql
 SELECT * FROM "{{dbname}}"."{{tablename}}$snapshots"
 ```
 
 The following example shows the references for an Iceberg table.
 
-```
+```sql
 SELECT * FROM "{{dbname}}"."{{tablename}}$refs"
 ```
 

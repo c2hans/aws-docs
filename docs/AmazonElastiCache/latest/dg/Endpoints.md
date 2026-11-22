@@ -203,7 +203,7 @@ aws elasticache describe-cache-clusters ^
 ```
 Output from the above operation should look something like this (JSON format).
 
-```
+```json
 {
    "CacheClusters": [
    {
@@ -291,7 +291,7 @@ aws elasticache describe-cache-clusters ^
 ```
 Output from the above operation should look something like this (JSON format).
 
-```
+```json
 {
     "CacheClusters": [
         {
@@ -365,7 +365,7 @@ aws elasticache describe-replication-groups ^
 
 Output from this operation should look something like this (JSON format).
 
-```
+```json
 {
    "ReplicationGroups": [
      {

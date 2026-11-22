@@ -15,7 +15,7 @@ The `Query` request object lets you tell the AWS AppSync DynamoDB resolver to ma
 
 The `Query` request object has the following structure:
 
-```
+```TypeScript
 type DynamoDBQueryRequest = {
   operation: 'Query';
   query: {
@@ -99,7 +99,7 @@ For more information about JavaScript resolvers, see [JavaScript resolvers overv
 
 The results have the following structure:
 
-```
+```TypeScript
 {
     items = [ ... ],
     nextToken = "a pagination token",
@@ -125,7 +125,7 @@ The following example is a function request handler for a GraphQL query `getPost
 
 In this example, a global secondary index on a table is queried to return all posts owned by the specified ID.
 
-```
+```TypeScript
 import { util } from '@aws-appsync/utils';
 
 export function request(ctx) {

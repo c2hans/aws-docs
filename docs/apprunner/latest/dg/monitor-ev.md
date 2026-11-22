@@ -118,7 +118,7 @@ The following examples demonstrate event patterns that you can use in EventBridg
 
 A service status change event has `detail-type` set to `AppRunner Service Status Change`. It has the following detail fields and values:
 
-```
+```json
 "serviceId": "{{your service ID}}",
 "serviceName": "{{your service name}}",
 "message": "Service status is set to {{CurrentStatus}}.",
@@ -132,7 +132,7 @@ A service status change event has `detail-type` set to `AppRunner Service Status
 
 An operation status change event has `detail-type` set to `AppRunner Service Operation Status Change`. It has the following detail fields and values:
 
-```
+```json
 "operationStatus": "{{see following table}}",
 "serviceName": "{{your service name}}",
 "serviceId": "{{your service ID}}",

@@ -37,7 +37,7 @@ Replace all {{user input}} with your own information.
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -108,7 +108,7 @@ To use an ECS infrastructure IAM role, you must grant your user permission to pa
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

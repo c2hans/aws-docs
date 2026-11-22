@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dynamodb-table-timetolivespecification-syntax.json"></a>
 
-```
+```json
 {
   "[AttributeName](#cfn-dynamodb-table-timetolivespecification-attributename)" : {{String}},
   "[Enabled](#cfn-dynamodb-table-timetolivespecification-enabled)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dynamodb-table-timetolivespecification-syntax.yaml"></a>
 
-```
+```yaml
   [AttributeName](#cfn-dynamodb-table-timetolivespecification-attributename): {{String}}
   [Enabled](#cfn-dynamodb-table-timetolivespecification-enabled): {{Boolean}}
 ```

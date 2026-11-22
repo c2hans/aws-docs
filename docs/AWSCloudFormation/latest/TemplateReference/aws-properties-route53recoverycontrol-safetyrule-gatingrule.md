@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-route53recoverycontrol-safetyrule-gatingrule-syntax.json"></a>
 
-```
+```json
 {
   "[GatingControls](#cfn-route53recoverycontrol-safetyrule-gatingrule-gatingcontrols)" : {{[ String, ... ]}},
   "[TargetControls](#cfn-route53recoverycontrol-safetyrule-gatingrule-targetcontrols)" : {{[ String, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-route53recoverycontrol-safetyrule-gatingrule-syntax.yaml"></a>
 
-```
+```yaml
   [GatingControls](#cfn-route53recoverycontrol-safetyrule-gatingrule-gatingcontrols): {{
     - String}}
   [TargetControls](#cfn-route53recoverycontrol-safetyrule-gatingrule-targetcontrols): {{

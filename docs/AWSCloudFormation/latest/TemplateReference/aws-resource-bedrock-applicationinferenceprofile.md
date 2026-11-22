@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-bedrock-applicationinferenceprofile-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Bedrock::ApplicationInferenceProfile",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-bedrock-applicationinferenceprofile-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Bedrock::ApplicationInferenceProfile
 Properties:
   [Description](#cfn-bedrock-applicationinferenceprofile-description): {{String}}
@@ -138,7 +138,7 @@ The following example creates an inference profile for the Anthropic Claude 3.5 
 #### YAML
 <a name="aws-resource-bedrock-applicationinferenceprofile--examples--Create_an_inference_profile--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Example Application Inference Profile
 Resources:
@@ -154,7 +154,7 @@ Resources:
 #### JSON
 <a name="aws-resource-bedrock-applicationinferenceprofile--examples--Create_an_inference_profile--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Example Application Inference Profile",

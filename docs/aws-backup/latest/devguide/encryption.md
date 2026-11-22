@@ -74,7 +74,7 @@ If Deny policies are necessary, you will need to allowlist the required roles fo
 
 These elements can look like:
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

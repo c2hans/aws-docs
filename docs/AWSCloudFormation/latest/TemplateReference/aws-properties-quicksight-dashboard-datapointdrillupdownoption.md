@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-datapointdrillupdownoption-syntax.json"></a>
 
-```
+```json
 {
   "[AvailabilityStatus](#cfn-quicksight-dashboard-datapointdrillupdownoption-availabilitystatus)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-datapointdrillupdownoption-syntax.yaml"></a>
 
-```
+```yaml
   [AvailabilityStatus](#cfn-quicksight-dashboard-datapointdrillupdownoption-availabilitystatus): {{String}}
 ```
 

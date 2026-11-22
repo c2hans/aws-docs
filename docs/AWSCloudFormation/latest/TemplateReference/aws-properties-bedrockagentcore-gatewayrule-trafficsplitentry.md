@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewayrule-trafficsplitentry-syntax.json"></a>
 
-```
+```json
 {
   "[ConfigurationBundle](#cfn-bedrockagentcore-gatewayrule-trafficsplitentry-configurationbundle)" : {{ConfigurationBundleReference}},
   "[Description](#cfn-bedrockagentcore-gatewayrule-trafficsplitentry-description)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewayrule-trafficsplitentry-syntax.yaml"></a>
 
-```
+```yaml
   [ConfigurationBundle](#cfn-bedrockagentcore-gatewayrule-trafficsplitentry-configurationbundle): {{
     ConfigurationBundleReference}}
   [Description](#cfn-bedrockagentcore-gatewayrule-trafficsplitentry-description): {{String}}

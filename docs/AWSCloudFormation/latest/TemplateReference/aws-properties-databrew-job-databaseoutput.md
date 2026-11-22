@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-databrew-job-databaseoutput-syntax.json"></a>
 
-```
+```json
 {
   "[DatabaseOptions](#cfn-databrew-job-databaseoutput-databaseoptions)" : {{DatabaseTableOutputOptions}},
   "[DatabaseOutputMode](#cfn-databrew-job-databaseoutput-databaseoutputmode)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-databrew-job-databaseoutput-syntax.yaml"></a>
 
-```
+```yaml
   [DatabaseOptions](#cfn-databrew-job-databaseoutput-databaseoptions): {{
     DatabaseTableOutputOptions}}
   [DatabaseOutputMode](#cfn-databrew-job-databaseoutput-databaseoutputmode): {{String}}

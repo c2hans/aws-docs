@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-virtualgateway-virtualgatewayspec-syntax.json"></a>
 
-```
+```json
 {
   "[BackendDefaults](#cfn-appmesh-virtualgateway-virtualgatewayspec-backenddefaults)" : {{VirtualGatewayBackendDefaults}},
   "[Listeners](#cfn-appmesh-virtualgateway-virtualgatewayspec-listeners)" : {{[ VirtualGatewayListener, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-virtualgateway-virtualgatewayspec-syntax.yaml"></a>
 
-```
+```yaml
   [BackendDefaults](#cfn-appmesh-virtualgateway-virtualgatewayspec-backenddefaults): {{
     VirtualGatewayBackendDefaults}}
   [Listeners](#cfn-appmesh-virtualgateway-virtualgatewayspec-listeners): {{

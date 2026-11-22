@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-userprofile-rstudioserverproappsettings-syntax.json"></a>
 
-```
+```json
 {
   "[AccessStatus](#cfn-sagemaker-userprofile-rstudioserverproappsettings-accessstatus)" : {{String}},
   "[UserGroup](#cfn-sagemaker-userprofile-rstudioserverproappsettings-usergroup)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-userprofile-rstudioserverproappsettings-syntax.yaml"></a>
 
-```
+```yaml
   [AccessStatus](#cfn-sagemaker-userprofile-rstudioserverproappsettings-accessstatus): {{String}}
   [UserGroup](#cfn-sagemaker-userprofile-rstudioserverproappsettings-usergroup): {{String}}
 ```

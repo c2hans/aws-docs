@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-obfuscationsetting-syntax.json"></a>
 
-```
+```json
 {
   "[ObfuscationSettingType](#cfn-lex-bot-obfuscationsetting-obfuscationsettingtype)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-obfuscationsetting-syntax.yaml"></a>
 
-```
+```yaml
   [ObfuscationSettingType](#cfn-lex-bot-obfuscationsetting-obfuscationsettingtype): {{String}}
 ```
 

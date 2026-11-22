@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-analysistemplate-errormessageconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-cleanrooms-analysistemplate-errormessageconfiguration-type)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-analysistemplate-errormessageconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-cleanrooms-analysistemplate-errormessageconfiguration-type): {{String}}
 ```
 

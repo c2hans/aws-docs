@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-pipetargetredshiftdataparameters-syntax.json"></a>
 
-```
+```json
 {
   "[Database](#cfn-pipes-pipe-pipetargetredshiftdataparameters-database)" : {{String}},
   "[DbUser](#cfn-pipes-pipe-pipetargetredshiftdataparameters-dbuser)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-pipetargetredshiftdataparameters-syntax.yaml"></a>
 
-```
+```yaml
   [Database](#cfn-pipes-pipe-pipetargetredshiftdataparameters-database): {{String}}
   [DbUser](#cfn-pipes-pipe-pipetargetredshiftdataparameters-dbuser): {{String}}
   [SecretManagerArn](#cfn-pipes-pipe-pipetargetredshiftdataparameters-secretmanagerarn): {{String}}

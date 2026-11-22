@@ -96,7 +96,7 @@ The roles that you create in IAM define what SAML federated principals from your
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [{
@@ -121,7 +121,7 @@ The roles that you create in IAM define what SAML federated principals from your
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -197,7 +197,7 @@ The following example shows a permission policy that uses the preceding keys to 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {
@@ -223,7 +223,7 @@ The following example shows a permission policy that uses the preceding keys to 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-waf-webacl-activatedrule-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-waf-webacl-activatedrule-action)" : {{WafAction}},
   "[Priority](#cfn-waf-webacl-activatedrule-priority)" : {{Integer}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-waf-webacl-activatedrule-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-waf-webacl-activatedrule-action): {{
     WafAction}}
   [Priority](#cfn-waf-webacl-activatedrule-priority): {{Integer}}

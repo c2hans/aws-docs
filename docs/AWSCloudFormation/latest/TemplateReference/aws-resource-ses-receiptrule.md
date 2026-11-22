@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ses-receiptrule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SES::ReceiptRule",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ses-receiptrule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SES::ReceiptRule
 Properties:
   [After](#cfn-ses-receiptrule-after): {{String}}
@@ -90,7 +90,7 @@ Specifies a receipt rule for incoming email.
 #### JSON
 <a name="aws-resource-ses-receiptrule--examples----json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "AWS SES ReceiptRule Sample Template",
@@ -168,7 +168,7 @@ Specifies a receipt rule for incoming email.
 #### YAML
 <a name="aws-resource-ses-receiptrule--examples----yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: AWS SES ReceiptRule Sample Template
 Parameters:

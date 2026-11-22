@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3tables-tablebucket-replicationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Role](#cfn-s3tables-tablebucket-replicationconfiguration-role)" : {{String}},
   "[Rules](#cfn-s3tables-tablebucket-replicationconfiguration-rules)" : {{[ ReplicationRule, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3tables-tablebucket-replicationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Role](#cfn-s3tables-tablebucket-replicationconfiguration-role): {{String}}
   [Rules](#cfn-s3tables-tablebucket-replicationconfiguration-rules): {{
     - ReplicationRule}}

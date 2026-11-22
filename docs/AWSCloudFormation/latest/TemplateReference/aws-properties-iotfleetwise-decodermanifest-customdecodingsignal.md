@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotfleetwise-decodermanifest-customdecodingsignal-syntax.json"></a>
 
-```
+```json
 {
   "[Id](#cfn-iotfleetwise-decodermanifest-customdecodingsignal-id)" : {{String}}
 }
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotfleetwise-decodermanifest-customdecodingsignal-syntax.yaml"></a>
 
-```
+```yaml
   [Id](#cfn-iotfleetwise-decodermanifest-customdecodingsignal-id): {{String}}
 ```
 

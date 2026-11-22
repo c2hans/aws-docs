@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssmincidents-replicationset-replicationregion-syntax.json"></a>
 
-```
+```json
 {
   "[RegionConfiguration](#cfn-ssmincidents-replicationset-replicationregion-regionconfiguration)" : {{RegionConfiguration}},
   "[RegionName](#cfn-ssmincidents-replicationset-replicationregion-regionname)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssmincidents-replicationset-replicationregion-syntax.yaml"></a>
 
-```
+```yaml
   [RegionConfiguration](#cfn-ssmincidents-replicationset-replicationregion-regionconfiguration): {{
     RegionConfiguration}}
   [RegionName](#cfn-ssmincidents-replicationset-replicationregion-regionname): {{String}}

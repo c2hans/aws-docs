@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchservice-domain-encryptionatrestoptions-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-opensearchservice-domain-encryptionatrestoptions-enabled)" : {{Boolean}},
   "[EncryptionMode](#cfn-opensearchservice-domain-encryptionatrestoptions-encryptionmode)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchservice-domain-encryptionatrestoptions-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-opensearchservice-domain-encryptionatrestoptions-enabled): {{Boolean}}
   [EncryptionMode](#cfn-opensearchservice-domain-encryptionatrestoptions-encryptionmode): {{String}}
   [KmsKeyId](#cfn-opensearchservice-domain-encryptionatrestoptions-kmskeyid): {{String}}

@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-evs-environment-vcfhostnames-syntax.json"></a>
 
-```
+```json
 {
   "[CloudBuilder](#cfn-evs-environment-vcfhostnames-cloudbuilder)" : {{String}},
   "[Nsx](#cfn-evs-environment-vcfhostnames-nsx)" : {{String}},
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-evs-environment-vcfhostnames-syntax.yaml"></a>
 
-```
+```yaml
   [CloudBuilder](#cfn-evs-environment-vcfhostnames-cloudbuilder): {{String}}
   [Nsx](#cfn-evs-environment-vcfhostnames-nsx): {{String}}
   [NsxEdge1](#cfn-evs-environment-vcfhostnames-nsxedge1): {{String}}

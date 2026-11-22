@@ -146,7 +146,7 @@ The following procedure describes how to scale up a single-node Valkey or Redis 
 
    Output from the above command looks something like this (JSON format).
 
-   ```
+   ```json
    {
    	    "ScaleUpModifications": [
    	        "cache.m5.2xlarge",
@@ -202,7 +202,7 @@ The following procedure describes how to scale up a single-node Valkey or Redis 
 
    Output from the above command looks something like this (JSON format).
 
-   ```
+   ```json
    {
    	    "CacheCluster": {
    	        "Engine": "redis",
@@ -380,7 +380,7 @@ The following procedure describes how to scale down a single-node Valkey or Redi
 
    Output from the above command looks something like this (JSON format).
 
-   ```
+   ```json
    {
    	    "ScaleUpModifications": [
    	        "cache.m5.2xlarge",
@@ -436,7 +436,7 @@ The following procedure describes how to scale down a single-node Valkey or Redi
 
    Output from the above command looks something like this (JSON format).
 
-   ```
+   ```json
    {
    	    "CacheCluster": {
    	        "Engine": "redis",

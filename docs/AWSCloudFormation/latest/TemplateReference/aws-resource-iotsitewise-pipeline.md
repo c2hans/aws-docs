@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iotsitewise-pipeline-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoTSiteWise::Pipeline",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iotsitewise-pipeline-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoTSiteWise::Pipeline
 Properties:
   [Computations](#cfn-iotsitewise-pipeline-computations): {{

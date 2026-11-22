@@ -57,7 +57,7 @@ The following example configuration files illustrate a use for this feature. The
 
 **infrastructure.json**
 
-```
+```json
 {
   "metrics": {
     "metrics_collected": {
@@ -98,7 +98,7 @@ The following example configuration files illustrate a use for this feature. The
 
 **app.json**
 
-```
+```json
 {
     "logs": {
         "logs_collected": {

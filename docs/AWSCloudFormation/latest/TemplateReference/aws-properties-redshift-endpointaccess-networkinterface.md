@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-redshift-endpointaccess-networkinterface-syntax.json"></a>
 
-```
+```json
 {
   "[AvailabilityZone](#cfn-redshift-endpointaccess-networkinterface-availabilityzone)" : {{String}},
   "[NetworkInterfaceId](#cfn-redshift-endpointaccess-networkinterface-networkinterfaceid)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-redshift-endpointaccess-networkinterface-syntax.yaml"></a>
 
-```
+```yaml
   [AvailabilityZone](#cfn-redshift-endpointaccess-networkinterface-availabilityzone): {{String}}
   [NetworkInterfaceId](#cfn-redshift-endpointaccess-networkinterface-networkinterfaceid): {{String}}
   [PrivateIpAddress](#cfn-redshift-endpointaccess-networkinterface-privateipaddress): {{String}}

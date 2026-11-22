@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-accountaccess-application-identitycenter-syntax.json"></a>
 
-```
+```json
 {
   "[ApplicationArn](#cfn-accountaccess-application-identitycenter-applicationarn)" : {{String}},
   "[InstanceArn](#cfn-accountaccess-application-identitycenter-instancearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-accountaccess-application-identitycenter-syntax.yaml"></a>
 
-```
+```yaml
   [ApplicationArn](#cfn-accountaccess-application-identitycenter-applicationarn): {{String}}
   [InstanceArn](#cfn-accountaccess-application-identitycenter-instancearn): {{String}}
 ```

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-r
 When you create IP-based alias records, you specify the following values.
 
 **Note**
-Although creating IP-based alias records in a private hosted zone is allowed, it's not supported.
+You can create IP-based alias records only in public hosted zones.
 
 For more information, see [Choosing between alias and non-alias records](resource-record-sets-choosing-alias-non-alias.md).
 
@@ -25,9 +25,6 @@ For more information, see [Choosing between alias and non-alias records](resourc
 <a name="rrsets-values-ipbased-alias-routing-policy"></a>
 
 Choose **IP-based**.
-
-**Note**
-Although creating IP-based alias records in a private hosted zone is allowed, it's not supported.
 
 ## Record name
 <a name="rrsets-values-ipbased-alias-name"></a>

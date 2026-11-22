@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationsignals-instrumentationconfig-capturelimitsconfig-syntax.json"></a>
 
-```
+```json
 {
   "[MaxCollectionDepth](#cfn-applicationsignals-instrumentationconfig-capturelimitsconfig-maxcollectiondepth)" : {{Integer}},
   "[MaxCollectionWidth](#cfn-applicationsignals-instrumentationconfig-capturelimitsconfig-maxcollectionwidth)" : {{Integer}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationsignals-instrumentationconfig-capturelimitsconfig-syntax.yaml"></a>
 
-```
+```yaml
   [MaxCollectionDepth](#cfn-applicationsignals-instrumentationconfig-capturelimitsconfig-maxcollectiondepth): {{Integer}}
   [MaxCollectionWidth](#cfn-applicationsignals-instrumentationconfig-capturelimitsconfig-maxcollectionwidth): {{Integer}}
   [MaxFieldsPerObject](#cfn-applicationsignals-instrumentationconfig-capturelimitsconfig-maxfieldsperobject): {{Integer}}

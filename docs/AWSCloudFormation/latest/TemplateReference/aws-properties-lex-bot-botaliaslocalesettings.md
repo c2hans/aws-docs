@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-botaliaslocalesettings-syntax.json"></a>
 
-```
+```json
 {
   "[CodeHookSpecification](#cfn-lex-bot-botaliaslocalesettings-codehookspecification)" : {{CodeHookSpecification}},
   "[Enabled](#cfn-lex-bot-botaliaslocalesettings-enabled)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-botaliaslocalesettings-syntax.yaml"></a>
 
-```
+```yaml
   [CodeHookSpecification](#cfn-lex-bot-botaliaslocalesettings-codehookspecification): {{
     CodeHookSpecification}}
   [Enabled](#cfn-lex-bot-botaliaslocalesettings-enabled): {{Boolean}}

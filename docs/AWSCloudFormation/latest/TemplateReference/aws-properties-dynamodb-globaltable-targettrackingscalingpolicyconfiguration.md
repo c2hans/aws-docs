@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dynamodb-globaltable-targettrackingscalingpolicyconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DisableScaleIn](#cfn-dynamodb-globaltable-targettrackingscalingpolicyconfiguration-disablescalein)" : {{Boolean}},
   "[ScaleInCooldown](#cfn-dynamodb-globaltable-targettrackingscalingpolicyconfiguration-scaleincooldown)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dynamodb-globaltable-targettrackingscalingpolicyconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DisableScaleIn](#cfn-dynamodb-globaltable-targettrackingscalingpolicyconfiguration-disablescalein): {{Boolean}}
   [ScaleInCooldown](#cfn-dynamodb-globaltable-targettrackingscalingpolicyconfiguration-scaleincooldown): {{Integer}}
   [ScaleOutCooldown](#cfn-dynamodb-globaltable-targettrackingscalingpolicyconfiguration-scaleoutcooldown): {{Integer}}

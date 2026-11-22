@@ -65,7 +65,7 @@ Create an EC2 Fleet that targets multiple Capacity Reservation types in your Cap
 
 Create a file named `config.json` with the following content. In the following example, replace the resource identifiers with your own resource identifiers.
 
-```
+```JSON
 {
     "LaunchTemplateConfigs": [
         {

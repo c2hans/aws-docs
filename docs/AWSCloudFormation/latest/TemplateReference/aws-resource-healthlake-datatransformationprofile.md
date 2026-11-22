@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-healthlake-datatransformationprofile-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::HealthLake::DataTransformationProfile",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-healthlake-datatransformationprofile-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::HealthLake::DataTransformationProfile
 Properties:
   [KmsKeyId](#cfn-healthlake-datatransformationprofile-kmskeyid): {{String}}

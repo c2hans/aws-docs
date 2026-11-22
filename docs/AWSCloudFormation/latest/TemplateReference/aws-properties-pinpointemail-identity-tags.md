@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pinpointemail-identity-tags-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-pinpointemail-identity-tags-key)" : {{String}},
   "[Value](#cfn-pinpointemail-identity-tags-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pinpointemail-identity-tags-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-pinpointemail-identity-tags-key): {{String}}
   [Value](#cfn-pinpointemail-identity-tags-value): {{String}}
 ```

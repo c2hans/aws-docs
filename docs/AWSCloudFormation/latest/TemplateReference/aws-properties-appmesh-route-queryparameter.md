@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-route-queryparameter-syntax.json"></a>
 
-```
+```json
 {
   "[Match](#cfn-appmesh-route-queryparameter-match)" : {{HttpQueryParameterMatch}},
   "[Name](#cfn-appmesh-route-queryparameter-name)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-route-queryparameter-syntax.yaml"></a>
 
-```
+```yaml
   [Match](#cfn-appmesh-route-queryparameter-match): {{
     HttpQueryParameterMatch}}
   [Name](#cfn-appmesh-route-queryparameter-name): {{String}}

@@ -20,7 +20,7 @@ If the issue persists, use the following troubleshooting procedures to identify 
 
 A `CreateService` or `UpdateService` request that includes a gateway connector fails when no gateways are associated with the service's cluster. Amazon ECS reports `gatewayConnectors were specified but no gateways are associated with cluster` and rejects the request rather than deploying a service it cannot give a URL. Check the cluster's gateway associations to verify that at least one gateway is associated with the service's cluster.
 
-```
+```bash
 aws ecs list-gateway-cluster-associations \
     --cluster my-cluster
 ```
@@ -43,7 +43,7 @@ A gateway that does not meet these conditions is excluded. If at least one compa
 
 1. **Retrieve the service's configured subnets.** Use `list-service-deployments` to identify the relevant service revision ARN.
 
-   ```
+   ```bash
    aws ecs list-service-deployments \
        --cluster my-cluster \
        --service my-service \
@@ -52,7 +52,7 @@ A gateway that does not meet these conditions is excluded. If at least one compa
 
    Then use `describe-service-revisions` to retrieve its configured subnets.
 
-   ```
+   ```bash
    aws ecs describe-service-revisions \
        --service-revision-arns <service-revision-arn> \
        --query 'serviceRevisions[0].networkConfiguration.awsvpcConfiguration.subnets'
@@ -60,14 +60,14 @@ A gateway that does not meet these conditions is excluded. If at least one compa
 
 1. **Retrieve the gateway's configured subnets.** Use `describe-gateway` to view the gateway's networking configuration.
 
-   ```
+   ```bash
    aws ecs describe-gateway \
        --gateway my-gateway
    ```
 
 1. **Compare the VPCs and Availability Zones.** Use `describe-subnets` to retrieve the VPC ID and Availability Zone for the service and gateway subnets.
 
-   ```
+   ```bash
    aws ec2 describe-subnets \
        --subnet-ids <subnet-ids> \
        --query 'Subnets[].{SubnetId:SubnetId,VpcId:VpcId,AvailabilityZone:AvailabilityZone}'
@@ -87,7 +87,7 @@ For greater flexibility when connecting ECS services, configure gateways with su
 
 A gateway connector's `portName` must match the name of a port mapping in the service's task definition. It is the name of the port, not the numeric container port. When no container in the task definition has a port mapping with that name, Amazon ECS reports `InvalidConfiguration: "portName not found in task definition portMappings"`. To inspect the named port mappings, run:
 
-```
+```bash
 aws ecs describe-task-definition \
     --task-definition my-task-definition:1 \
     --query 'taskDefinition.containerDefinitions[].portMappings[].name'
@@ -109,7 +109,7 @@ A service connection can have a gateway route in `CREATE_FAILED` or `UPDATE_FAIL
 
 1. Find the failed gateway routes.
 
-   ```
+   ```bash
    aws ecs list-gateway-routes \
        --gateway my-gateway \
        --status CREATE_FAILED UPDATE_FAILED
@@ -117,7 +117,7 @@ A service connection can have a gateway route in `CREATE_FAILED` or `UPDATE_FAIL
 
 1. Identify the service that each failed route belongs to, and the resources the gateway created for it.
 
-   ```
+   ```bash
    aws ecs describe-gateway-route \
        --gateway-route-arn arn:aws:ecs:us-west-2:123456789012:gateway-route/my-gateway/a1b2c3d4/9f8e7d6c
    ```
@@ -148,14 +148,14 @@ A cluster can associate with at most 5 gateways. When it reaches that limit, Ama
 
 When a gateway's existing load balancers cannot accept another service connection, Amazon ECS provisions another load balancer until it reaches the gateway's `maxAlbCount` setting, which defaults to 10. A load balancer can serve up to 25 ECS services. When every load balancer is full and the gateway is at `maxAlbCount`, a new service's deployment fails. Check the `currentAlbCount` against `maxAlbCount` and inspect the managed resources:
 
-```
+```bash
 aws ecs describe-gateway --gateway my-gateway
 aws ecs describe-gateway-resources --gateway my-gateway
 ```
 
 If `maxAlbCount` is the limiting factor, increase it within the supported limit. For example:
 
-```
+```bash
 aws ecs update-gateway \
     --gateway my-gateway \
     --configuration '{"hostSharedAlb":{"maxAlbCount":25}}'
@@ -192,13 +192,13 @@ Gateway operations involve two different identities: the IAM principal that make
 
 Amazon ECS could reach the role but could not assume it. Verify that the IAM role exists and that its trust policy permits `ecs.amazonaws.com` to call `sts:AssumeRole`.
 
-```
+```bash
 aws iam get-role --role-name ecsInfrastructureRoleForGateways
 ```
 
 The role's trust policy must match the following.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -221,7 +221,7 @@ If the role was just created or modified, allow time for the IAM change to propa
 
 A gateway route or a gateway update reports an access denied error for an Elastic Load Balancing, Amazon EC2, or AWS Certificate Manager operation when the infrastructure role is missing a permission. Verify that the role has the permissions required by the gateway configuration. For the `hostSharedAlb` gateway type, check the attached AWS managed policy.
 
-```
+```bash
 aws iam list-attached-role-policies --role-name ecsInfrastructureRoleForGateways
 ```
 
@@ -237,7 +237,7 @@ When requests to a gateway-generated HTTPS hostname time out or fail, check the 
 
 1. **Check the gateway route status.** Find the route for the service and confirm that it is `ACTIVE`. A route in `CREATE_IN_PROGRESS` has not finished provisioning, and a route in a `*_FAILED` state has a provisioning failure. Inspect the route failure before troubleshooting the application:
 
-   ```
+   ```bash
    aws ecs list-gateway-routes --cluster my-cluster --service my-service
    ```
 
@@ -245,7 +245,7 @@ When requests to a gateway-generated HTTPS hostname time out or fail, check the 
 
 1. **Check target health.** Get the target group ARN from the service's gateway connection, which `describe-service-revisions` returns, then inspect its registered targets.
 
-   ```
+   ```bash
    aws elbv2 describe-target-health \
        --target-group-arn arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-service/0123456789abcdef
    ```
@@ -263,7 +263,7 @@ When requests to a gateway-generated HTTPS hostname time out or fail, check the 
 
 `DescribeGateway` reports `UPDATE_FAILED` after a gateway configuration update that Amazon ECS could not apply to every load balancer. Amazon ECS applies an update to each managed load balancer in turn and makes a best effort to update them all rather than stopping at the first failure, so some load balancers might accept the change while others fail. Do not assume the update was rolled back across the gateway. Retrieve the status and the failure information.
 
-```
+```bash
 aws ecs describe-gateway --gateway my-gateway
 ```
 
@@ -282,7 +282,7 @@ A gateway cluster association remains in `DISASSOCIATING` until all gateway rout
 
 To identify the services that are still connected, use the following command:
 
-```
+```bash
 aws ecs list-gateway-routes --gateway my-gateway --cluster my-cluster
 ```
 
@@ -293,7 +293,7 @@ Coordinate with the application teams to update or redeploy the affected service
 
 A gateway cannot be deleted while deletion protection is enabled or while it has cluster associations in the `ACTIVE` or `DISASSOCIATING` state. Check the gateway's cluster associations and ensure that all remaining gateway routes are removed so disassociation can complete. After all associations are removed, make sure that deletion protection is disabled, and then retry deleting the gateway. For the complete procedure, see [Delete a gateway](gateway-managing.md#gateway-delete).
 
-```
+```bash
 aws ecs update-gateway --gateway my-gateway --no-deletion-protection
 aws ecs delete-gateway --gateway my-gateway
 ```

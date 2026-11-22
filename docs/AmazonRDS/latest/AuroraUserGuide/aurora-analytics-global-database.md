@@ -39,7 +39,7 @@ The IAM role association does not replicate between the primary and secondary DB
 
 1. Associate the role with that Region's DB cluster:
 
-   ```
+   ```bash
    aws rds add-role-to-db-cluster \
      --db-cluster-identifier <cluster-in-this-region> \
      --role-arn arn:aws:iam::<account-id>:role/AuroraAnalyticsRole \
@@ -71,7 +71,7 @@ For the AWS Glue and AWS STS interface endpoints, enable Private DNS and allow i
 
 Connect to the writer DB instance in the primary DB cluster and install the extension in each database where you intend to create foreign tables:
 
-```
+```SQL
 CREATE EXTENSION aurora_analytics;
 ```
 
@@ -82,7 +82,7 @@ The extension replicates to each secondary DB cluster automatically.
 
 On the writer DB instance in the primary DB cluster, create foreign tables pointing to your data:
 
-```
+```SQL
 -- Parquet via S3 URI
 CREATE FOREIGN TABLE ft_orders ()
 SERVER aurora_analytics_server
@@ -103,7 +103,7 @@ Aurora replicates the DDL to each secondary DB cluster, where the foreign tables
 
 Connect to a secondary DB cluster and confirm replication and read access:
 
-```
+```SQL
 SELECT extname, extversion FROM pg_extension WHERE extname = 'aurora_analytics';
 SELECT count(*) FROM ft_orders;
 ```
@@ -152,7 +152,7 @@ To resume operations after a switchover, do the following:
 
 1. If using a Region-local copy, run the prepared `ALTER` statements on the new primary DB cluster to update the foreign table locations:
 
-   ```
+   ```SQL
    ALTER FOREIGN TABLE ft_orders OPTIONS (SET location 's3://dr-region-bucket/orders/', SET region 'us-west-2');
    ALTER FOREIGN TABLE ft_transactions OPTIONS (SET location 'arn:aws:glue:us-west-2:111122223333:table/mydb/transactions');
    ```

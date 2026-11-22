@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-deadline-limit-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Deadline::Limit",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-deadline-limit-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Deadline::Limit
 Properties:
   [AmountRequirementName](#cfn-deadline-limit-amountrequirementname): {{String}}

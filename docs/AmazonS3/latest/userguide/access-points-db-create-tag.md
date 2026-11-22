@@ -83,7 +83,7 @@ When you create an access point for directory buckets you must provide configura
 
 **Request:**
 
-```
+```bash
 aws s3control create-access-point \
 --account-id {{111122223333}} \
 --name {{{{my-access-point}}}} \

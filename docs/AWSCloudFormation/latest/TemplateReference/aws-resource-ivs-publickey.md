@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ivs-publickey-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IVS::PublicKey",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ivs-publickey-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IVS::PublicKey
 Properties:
   [Name](#cfn-ivs-publickey-name): {{String}}
@@ -106,7 +106,7 @@ The following examples specify an Amazon IVS public key.
 #### JSON
 <a name="aws-resource-ivs-publickey--examples--PublicKey_Template_Examples--json"></a>
 
-```
+```json
 {
      "AWSTemplateFormatVersion": "2010-09-09",
      "Resources": {
@@ -130,7 +130,7 @@ The following examples specify an Amazon IVS public key.
 #### YAML
 <a name="aws-resource-ivs-publickey--examples--PublicKey_Template_Examples--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   PublicKey:

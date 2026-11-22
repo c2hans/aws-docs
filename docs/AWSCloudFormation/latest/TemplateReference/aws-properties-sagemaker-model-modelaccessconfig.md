@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-model-modelaccessconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AcceptEula](#cfn-sagemaker-model-modelaccessconfig-accepteula)" : {{Boolean}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-model-modelaccessconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AcceptEula](#cfn-sagemaker-model-modelaccessconfig-accepteula): {{Boolean}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networksecuritymanager-policy-wafconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ConflictResolution](#cfn-networksecuritymanager-policy-wafconfig-conflictresolution)" : {{String}},
   "[ExistingCustomerWebACLResolution](#cfn-networksecuritymanager-policy-wafconfig-existingcustomerwebaclresolution)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networksecuritymanager-policy-wafconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ConflictResolution](#cfn-networksecuritymanager-policy-wafconfig-conflictresolution): {{String}}
   [ExistingCustomerWebACLResolution](#cfn-networksecuritymanager-policy-wafconfig-existingcustomerwebaclresolution): {{String}}
 ```
@@ -38,7 +38,6 @@ To declare this entity in your CloudFormation template, use the following syntax
 How Network Security Manager combines this policy's settings with the settings of other policies that apply to the same resource.
 `MERGE_WHERE_APPLICABLE` combines the rule groups of every applicable policy into one configuration. Settings that can hold only a single value, such as the default action, are taken from the highest-priority policy. `MERGE_WHERE_APPLICABLE` is currently the only supported value.
 This property is required when `FirewallType` is `WAF`.
-*Allowed Values*: `MERGE_WHERE_APPLICABLE`
 *Required*: Conditional
 *Type*: String
 *Allowed values*: `MERGE_WHERE_APPLICABLE`
@@ -59,7 +58,6 @@ Network Security Manager doesn't record which web ACL it displaced and doesn't r
 Network Security Manager leaves the resource and your web ACL unchanged, and doesn't create a managed web ACL for the resource. The policy's rule groups are not applied, so the resource isn't protected by this policy.
 The resource is reported as out of sync for as long as this value is in effect, with an issue that names this setting as the reason and suggests changing it to `RETROFIT` or `OVERRIDE_ASSOCIATION`.
 This property is required when `FirewallType` is `WAF`.
-*Allowed Values*: `RETROFIT` \| `OVERRIDE_ASSOCIATION` \| `NO_REMEDIATION`
 *Required*: Conditional
 *Type*: String
 *Allowed values*: `RETROFIT | OVERRIDE_ASSOCIATION | NO_REMEDIATION`

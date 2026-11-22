@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-mitigationaction-replacedefaultpolicyversionparams-syntax.json"></a>
 
-```
+```json
 {
   "[TemplateName](#cfn-iot-mitigationaction-replacedefaultpolicyversionparams-templatename)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-mitigationaction-replacedefaultpolicyversionparams-syntax.yaml"></a>
 
-```
+```yaml
   [TemplateName](#cfn-iot-mitigationaction-replacedefaultpolicyversionparams-templatename): {{String}}
 ```
 

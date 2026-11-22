@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-channel-channelstateinfo-syntax.json"></a>
 
-```
+```json
 {
   "[Code](#cfn-msk-channel-channelstateinfo-code)" : {{String}},
   "[Message](#cfn-msk-channel-channelstateinfo-message)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-channel-channelstateinfo-syntax.yaml"></a>
 
-```
+```yaml
   [Code](#cfn-msk-channel-channelstateinfo-code): {{String}}
   [Message](#cfn-msk-channel-channelstateinfo-message): {{String}}
 ```

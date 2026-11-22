@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-trialcomponent-trialcomponentparametervalue-syntax.json"></a>
 
-```
+```json
 {
   "[NumberValue](#cfn-sagemaker-trialcomponent-trialcomponentparametervalue-numbervalue)" : {{Number}},
   "[StringValue](#cfn-sagemaker-trialcomponent-trialcomponentparametervalue-stringvalue)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-trialcomponent-trialcomponentparametervalue-syntax.yaml"></a>
 
-```
+```yaml
   [NumberValue](#cfn-sagemaker-trialcomponent-trialcomponentparametervalue-numbervalue): {{
     Number}}
   [StringValue](#cfn-sagemaker-trialcomponent-trialcomponentparametervalue-stringvalue): {{

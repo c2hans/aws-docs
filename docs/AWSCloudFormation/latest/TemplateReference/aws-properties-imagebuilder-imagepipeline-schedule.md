@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-imagepipeline-schedule-syntax.json"></a>
 
-```
+```json
 {
   "[AutoDisablePolicy](#cfn-imagebuilder-imagepipeline-schedule-autodisablepolicy)" : {{AutoDisablePolicy}},
   "[PipelineExecutionStartCondition](#cfn-imagebuilder-imagepipeline-schedule-pipelineexecutionstartcondition)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-imagepipeline-schedule-syntax.yaml"></a>
 
-```
+```yaml
   [AutoDisablePolicy](#cfn-imagebuilder-imagepipeline-schedule-autodisablepolicy): {{
     AutoDisablePolicy}}
   [PipelineExecutionStartCondition](#cfn-imagebuilder-imagepipeline-schedule-pipelineexecutionstartcondition): {{String}}

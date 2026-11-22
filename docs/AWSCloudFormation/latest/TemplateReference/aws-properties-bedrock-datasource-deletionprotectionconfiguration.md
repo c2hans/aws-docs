@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-datasource-deletionprotectionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DeletionProtectionStatus](#cfn-bedrock-datasource-deletionprotectionconfiguration-deletionprotectionstatus)" : {{String}},
   "[DeletionProtectionThreshold](#cfn-bedrock-datasource-deletionprotectionconfiguration-deletionprotectionthreshold)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-datasource-deletionprotectionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DeletionProtectionStatus](#cfn-bedrock-datasource-deletionprotectionconfiguration-deletionprotectionstatus): {{String}}
   [DeletionProtectionThreshold](#cfn-bedrock-datasource-deletionprotectionconfiguration-deletionprotectionthreshold): {{Integer}}
 ```

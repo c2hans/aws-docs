@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-config-configurationaggregator-accountaggregationsource-syntax.json"></a>
 
-```
+```json
 {
   "[AccountIds](#cfn-config-configurationaggregator-accountaggregationsource-accountids)" : {{[ String, ... ]}},
   "[AllAwsRegions](#cfn-config-configurationaggregator-accountaggregationsource-allawsregions)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-config-configurationaggregator-accountaggregationsource-syntax.yaml"></a>
 
-```
+```yaml
   [AccountIds](#cfn-config-configurationaggregator-accountaggregationsource-accountids): {{
     - String}}
   [AllAwsRegions](#cfn-config-configurationaggregator-accountaggregationsource-allawsregions): {{Boolean}}

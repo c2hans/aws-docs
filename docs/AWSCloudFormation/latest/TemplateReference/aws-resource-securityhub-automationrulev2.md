@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-securityhub-automationrulev2-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SecurityHub::AutomationRuleV2",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-securityhub-automationrulev2-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SecurityHub::AutomationRuleV2
 Properties:
   [Actions](#cfn-securityhub-automationrulev2-actions): {{

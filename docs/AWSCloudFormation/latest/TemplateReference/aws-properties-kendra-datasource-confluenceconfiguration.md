@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-confluenceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AttachmentConfiguration](#cfn-kendra-datasource-confluenceconfiguration-attachmentconfiguration)" : {{ConfluenceAttachmentConfiguration}},
   "[BlogConfiguration](#cfn-kendra-datasource-confluenceconfiguration-blogconfiguration)" : {{ConfluenceBlogConfiguration}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-confluenceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AttachmentConfiguration](#cfn-kendra-datasource-confluenceconfiguration-attachmentconfiguration): {{
     ConfluenceAttachmentConfiguration}}
   [BlogConfiguration](#cfn-kendra-datasource-confluenceconfiguration-blogconfiguration): {{

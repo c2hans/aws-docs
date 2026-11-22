@@ -28,7 +28,7 @@ When you create an ACME endpoint, you configure the following settings. For ACME
 By default, an ACME account contains no identifying information. The contact field is an email address that a client can supply during account registration to associate the account with an identity. Setting `Contact` to `REQUIRED` lets a PKI administrator enforce that the endpoint only accepts account registrations that include contact information, and rejects registrations that omit it. Registered contact information is purely informational and is used by the PKI administrator to manage ACME accounts.
 
 `CertificateAuthority`
-`PublicCertificateAuthority`: Opts the endpoint in to issuing publicly trusted (web PKI) certificates from Amazon Trust Services. You do not specify a particular CA; this field declares that the endpoint is associated with public certificate issuance.
+`PublicCertificateAuthority`: Opts the endpoint in to issuing publicly trusted (WebPKI) certificates from Amazon Trust Services. You do not specify a particular CA; this field declares that the endpoint is associated with public certificate issuance.
 
 `AllowedKeyAlgorithms`
 `RSA_2048`, `EC_prime256v1`, `EC_secp384r1`: Adds an enforcement layer to the endpoint. If a certificate request contains an embedded public key whose algorithm does not match one of the allowed algorithms, the endpoint rejects the request. When you don't set `AllowedKeyAlgorithms`, the endpoint applies no key algorithm enforcement.
@@ -90,7 +90,7 @@ After the endpoint status changes to `ACTIVE`, retrieve the endpoint's directory
 
 Run the following command to create an ACME endpoint:
 
-```
+```bash
 aws acm create-acme-endpoint \
     --authorization-behavior PRE_APPROVED \
     --contact REQUIRED \
@@ -103,7 +103,7 @@ aws acm create-acme-endpoint \
 
 The response includes the `AcmeEndpointArn`:
 
-```
+```json
 {
     "AcmeEndpointArn": "arn:aws:acm:{{region}}:{{111122223333}}:acme-endpoint/{{00000000-0000-0000-0000-000000000000}}"
 }
@@ -111,14 +111,14 @@ The response includes the `AcmeEndpointArn`:
 
 To retrieve the endpoint URL and configuration, run the following command:
 
-```
+```bash
 aws acm describe-acme-endpoint \
     --acme-endpoint-arn arn:aws:acm:{{region}}:{{111122223333}}:acme-endpoint/{{00000000-0000-0000-0000-000000000000}}
 ```
 
 The following shows an example response. The `EndpointUrl` is the ACME directory URL that you provide to your ACME clients.
 
-```
+```json
 {
     "AcmeEndpoint": {
         "AcmeEndpointArn": "arn:aws:acm:{{region}}:{{111122223333}}:acme-endpoint/{{00000000-0000-0000-0000-000000000000}}",

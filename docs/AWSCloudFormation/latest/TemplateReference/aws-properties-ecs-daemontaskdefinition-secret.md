@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-daemontaskdefinition-secret-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-ecs-daemontaskdefinition-secret-name)" : {{String}},
   "[ValueFrom](#cfn-ecs-daemontaskdefinition-secret-valuefrom)" : {{String}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-daemontaskdefinition-secret-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-ecs-daemontaskdefinition-secret-name): {{String}}
   [ValueFrom](#cfn-ecs-daemontaskdefinition-secret-valuefrom): {{String}}
 ```

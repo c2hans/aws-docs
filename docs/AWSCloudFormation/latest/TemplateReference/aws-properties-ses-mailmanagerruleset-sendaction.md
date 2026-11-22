@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-mailmanagerruleset-sendaction-syntax.json"></a>
 
-```
+```json
 {
   "[ActionFailurePolicy](#cfn-ses-mailmanagerruleset-sendaction-actionfailurepolicy)" : {{String}},
   "[RoleArn](#cfn-ses-mailmanagerruleset-sendaction-rolearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-mailmanagerruleset-sendaction-syntax.yaml"></a>
 
-```
+```yaml
   [ActionFailurePolicy](#cfn-ses-mailmanagerruleset-sendaction-actionfailurepolicy): {{String}}
   [RoleArn](#cfn-ses-mailmanagerruleset-sendaction-rolearn): {{String}}
 ```

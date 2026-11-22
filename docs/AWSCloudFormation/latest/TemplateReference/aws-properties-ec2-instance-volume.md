@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-instance-volume-syntax.json"></a>
 
-```
+```json
 {
   "[Device](#cfn-ec2-instance-volume-device)" : {{String}},
   "[VolumeId](#cfn-ec2-instance-volume-volumeid)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-instance-volume-syntax.yaml"></a>
 
-```
+```yaml
   [Device](#cfn-ec2-instance-volume-device): {{String}}
   [VolumeId](#cfn-ec2-instance-volume-volumeid): {{String}}
 ```

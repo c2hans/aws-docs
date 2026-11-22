@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-verifiedpermissions-policy-entityidentifier-syntax.json"></a>
 
-```
+```json
 {
   "[EntityId](#cfn-verifiedpermissions-policy-entityidentifier-entityid)" : {{String}},
   "[EntityType](#cfn-verifiedpermissions-policy-entityidentifier-entitytype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-verifiedpermissions-policy-entityidentifier-syntax.yaml"></a>
 
-```
+```yaml
   [EntityId](#cfn-verifiedpermissions-policy-entityidentifier-entityid): {{String}}
   [EntityType](#cfn-verifiedpermissions-policy-entityidentifier-entitytype): {{String}}
 ```

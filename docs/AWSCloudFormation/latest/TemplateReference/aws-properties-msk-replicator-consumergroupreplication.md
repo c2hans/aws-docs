@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-replicator-consumergroupreplication-syntax.json"></a>
 
-```
+```json
 {
   "[ConsumerGroupOffsetSyncMode](#cfn-msk-replicator-consumergroupreplication-consumergroupoffsetsyncmode)" : {{String}},
   "[ConsumerGroupsToExclude](#cfn-msk-replicator-consumergroupreplication-consumergroupstoexclude)" : {{[ String, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-replicator-consumergroupreplication-syntax.yaml"></a>
 
-```
+```yaml
   [ConsumerGroupOffsetSyncMode](#cfn-msk-replicator-consumergroupreplication-consumergroupoffsetsyncmode): {{String}}
   [ConsumerGroupsToExclude](#cfn-msk-replicator-consumergroupreplication-consumergroupstoexclude): {{
     - String}}

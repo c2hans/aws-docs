@@ -23,7 +23,7 @@ curl "http://localhost:2772/applications/MyApp/environments/MyEnv/configurations
 
 If `user123` is assigned to treatment `t1`, the agent returns a response like the following:
 
-```
+```json
 {
   "_variant": "__t1__",
   "enabled": true

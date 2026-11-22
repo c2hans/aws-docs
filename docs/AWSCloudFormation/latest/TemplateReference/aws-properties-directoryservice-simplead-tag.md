@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-directoryservice-simplead-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-directoryservice-simplead-tag-key)" : {{String}},
   "[Value](#cfn-directoryservice-simplead-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-directoryservice-simplead-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-directoryservice-simplead-tag-key): {{String}}
   [Value](#cfn-directoryservice-simplead-tag-value): {{String}}
 ```

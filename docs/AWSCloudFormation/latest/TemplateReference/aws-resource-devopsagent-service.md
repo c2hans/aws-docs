@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-devopsagent-service-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DevOpsAgent::Service",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-devopsagent-service-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DevOpsAgent::Service
 Properties:
   [ExchangeUrlPrivateConnectionName](#cfn-devopsagent-service-exchangeurlprivateconnectionname): {{String}}

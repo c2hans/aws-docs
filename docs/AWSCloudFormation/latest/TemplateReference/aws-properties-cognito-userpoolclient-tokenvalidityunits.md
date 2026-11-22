@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpoolclient-tokenvalidityunits-syntax.json"></a>
 
-```
+```json
 {
   "[AccessToken](#cfn-cognito-userpoolclient-tokenvalidityunits-accesstoken)" : {{String}},
   "[IdToken](#cfn-cognito-userpoolclient-tokenvalidityunits-idtoken)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpoolclient-tokenvalidityunits-syntax.yaml"></a>
 
-```
+```yaml
   [AccessToken](#cfn-cognito-userpoolclient-tokenvalidityunits-accesstoken): {{String}}
   [IdToken](#cfn-cognito-userpoolclient-tokenvalidityunits-idtoken): {{String}}
   [RefreshToken](#cfn-cognito-userpoolclient-tokenvalidityunits-refreshtoken): {{String}}

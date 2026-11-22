@@ -39,13 +39,13 @@ If you launch an instance that supports **NVMe instance store volumes** using an
 **To add instance store volumes to an AMI**
 Use the [create-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-image.html) command with the `--block-device-mappings` option to specify a block device mapping for an EBS-backed AMI. Use the [register-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/register-image.html) command with the `--block-device-mappings` option to specify a block device mapping for an iAmazon S3-backed AMI.
 
-```
+```bash
 --block-device-mappings file://mapping.json
 ```
 
 The following block device mapping adds two instance store volumes.
 
-```
+```json
 [
     {
         "DeviceName": "/dev/sdc",
@@ -64,13 +64,13 @@ The following block device mapping adds two instance store volumes.
 **To add instance store volumes to an AMI**
 Use the [New-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Image.html) cmdlet with the `-BlockDeviceMapping` parameter to specify a block device mapping for an EBS-backed AMI. Use the [Register-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2Image.html) cmdlet with the `-BlockDeviceMapping` parameter to specify a block device mapping for an Amazon S3-backed AMI.
 
-```
+```powershell
 -BlockDeviceMapping $bdm
 ```
 
 The following block device mapping adds two instance store volumes.
 
-```
+```powershell
 $bdm = @()
 
 $sdc = New-Object -TypeName Amazon.EC2.Model.BlockDeviceMapping

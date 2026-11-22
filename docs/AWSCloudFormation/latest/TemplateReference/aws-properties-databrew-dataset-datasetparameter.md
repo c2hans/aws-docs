@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-databrew-dataset-datasetparameter-syntax.json"></a>
 
-```
+```json
 {
   "[CreateColumn](#cfn-databrew-dataset-datasetparameter-createcolumn)" : {{Boolean}},
   "[DatetimeOptions](#cfn-databrew-dataset-datasetparameter-datetimeoptions)" : {{DatetimeOptions}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-databrew-dataset-datasetparameter-syntax.yaml"></a>
 
-```
+```yaml
   [CreateColumn](#cfn-databrew-dataset-datasetparameter-createcolumn): {{Boolean}}
   [DatetimeOptions](#cfn-databrew-dataset-datasetparameter-datetimeoptions): {{
     DatetimeOptions}}

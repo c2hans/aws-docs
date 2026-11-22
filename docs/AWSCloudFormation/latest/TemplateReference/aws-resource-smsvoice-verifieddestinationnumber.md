@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-smsvoice-verifieddestinationnumber-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SMSVOICE::VerifiedDestinationNumber",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-smsvoice-verifieddestinationnumber-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SMSVOICE::VerifiedDestinationNumber
 Properties:
   [DestinationPhoneNumber](#cfn-smsvoice-verifieddestinationnumber-destinationphonenumber): {{String}}

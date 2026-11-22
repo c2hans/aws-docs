@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-autoscaling-autoscalinggroup-notificationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[NotificationTypes](#cfn-autoscaling-autoscalinggroup-notificationconfiguration-notificationtypes)" : {{[ String, ... ]}},
   "[TopicARN](#cfn-autoscaling-autoscalinggroup-notificationconfiguration-topicarn)" : {{[ String, ... ]}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-autoscaling-autoscalinggroup-notificationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [NotificationTypes](#cfn-autoscaling-autoscalinggroup-notificationconfiguration-notificationtypes): {{
     - String}}
   [TopicARN](#cfn-autoscaling-autoscalinggroup-notificationconfiguration-topicarn): {{

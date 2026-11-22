@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-knowledgebase-renderingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[TemplateUri](#cfn-wisdom-knowledgebase-renderingconfiguration-templateuri)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-knowledgebase-renderingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [TemplateUri](#cfn-wisdom-knowledgebase-renderingconfiguration-templateuri): {{String}}
 ```
 

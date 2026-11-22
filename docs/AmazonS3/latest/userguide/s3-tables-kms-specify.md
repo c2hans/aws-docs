@@ -24,7 +24,7 @@ You can specify SSE-KMS as the default encryption type when you create a new tab
 
 To use the following example AWS CLI command, replace the {{user input placeholders}} with your own information.
 
-```
+```bash
 aws s3tables put-table-bucket-encryption \
     --table-bucket-arn arn:aws:s3tables:{{us-east-1}}:{{111122223333}}:bucket/{{amzn-s3-demo-table-bucket}}; \
     --encryption-configuration '{
@@ -55,7 +55,7 @@ The following permissions are required to create encrypted tables
 
 The following AWS CLI example creates a new table with a basic schema, and encrypts it with a customer managed AWS KMS key. To use the command, replace the {{user input placeholders}} with your own information.
 
-```
+```bash
 aws s3tables create-table \
   --table-bucket-arn "arn:aws:s3tables:{{Region}}:{{ownerAccountId}}:bucket/{{amzn-s3-demo-table-bucket}}" \
   --namespace "mydataset" \

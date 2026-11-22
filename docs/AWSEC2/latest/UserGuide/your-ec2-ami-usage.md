@@ -80,7 +80,7 @@ Use the [create-image-usage-report](https://docs.aws.amazon.com/cli/latest/refer
 
  To report on specific accounts, use the `--account-ids` parameter to specify the ID of each account to report on.
 
-```
+```bash
 aws ec2 create-image-usage-report \
     --image-id {{ami-0abcdef1234567890}} \
     --account-ids {{111122223333 444455556666 123456789012}} \
@@ -91,7 +91,7 @@ aws ec2 create-image-usage-report \
 **To create an AMI usage report of all accounts**
 To report on all accounts using the specified AMI, use the same command but omit the `--account-ids` parameter.
 
-```
+```bash
 aws ec2 create-image-usage-report \
     --image-id {{ami-0abcdef1234567890}} \
     --resource-types ResourceType=ec2:Instance \
@@ -100,7 +100,7 @@ aws ec2 create-image-usage-report \
 
 The following is example output.
 
-```
+```JSON
 {
     "ReportId": "amiur-00b877d192f6b02d0"
 }
@@ -109,13 +109,13 @@ The following is example output.
 **To monitor the report creation status**
 Use the [describe-image-usage-reports](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-image-usage-reports.html) command and specify the report ID.
 
-```
+```bash
 aws ec2 describe-image-usage-reports --report-ids {{amiur-00b877d192f6b02d0}}
 ```
 
 The following is example output. The initial value of the `State` field is `pending`. To be able to view the report entries, the state must be `available`.
 
-```
+```JSON
 {
     "ImageUsageReports": [
         {
@@ -142,7 +142,7 @@ Use the [New-EC2ImageUsageReport](https://docs.aws.amazon.com/powershell/latest/
 
  To report on specific accounts, use the `-AccountId` parameter to specify the ID of each account to report on.
 
-```
+```powershell
 New-EC2ImageUsageReport `
     -ImageId {{ami-0abcdef1234567890}} `
     -AccountId {{111122223333 444455556666 123456789012}} `
@@ -155,7 +155,7 @@ New-EC2ImageUsageReport `
 **To create an AMI usage report of all accounts**
 To report on all accounts using the specified AMI, use the same command but omit the `-AccountId` parameter.
 
-```
+```powershell
 New-EC2ImageUsageReport `
     -ImageId {{ami-0abcdef1234567890}} `
     -ResourceType @(
@@ -166,7 +166,7 @@ New-EC2ImageUsageReport `
 
 The following is example output.
 
-```
+```powershell
 ReportId
 --------
 amiur-00b877d192f6b02d0
@@ -175,13 +175,13 @@ amiur-00b877d192f6b02d0
 **To monitor the report creation status**
 Use the [Get-EC2ImageUsageReport](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2ImageUsageReport.html) command and specify the report ID.
 
-```
+```PowerShell
 Get-EC2ImageUsageReport -ReportId {{amiur-00b877d192f6b02d0}}
 ```
 
 The following is example output. The initial value of the `State` field is `pending`. To be able to view the report entries, the state must be `available`.
 
-```
+```powershell
 ImageUsageReports
 -----------------
 {@{ImageId=ami-0e9ae3dc21c2b3a64; ReportId=amiur-abcae3dc21c2b3999; ResourceTypes=System.Object[]; State=pending; CreationTime=2025-09-29; ExpirationTime=2025-10-28}}
@@ -226,13 +226,13 @@ When you generate an AMI usage report, it might not contain the most recent acti
 **To list all the AMI usage reports for the specified AMI**
 Use the [describe-image-usage-reports](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-image-usage-reports.html) command and specify the ID of the AMI to get a list of its reports.
 
-```
+```bash
 aws ec2 describe-image-usage-reports --image-ids {{ami-0abcdef1234567890}}
 ```
 
 The following is example output. Each report ID is listed along with the resource types that were scanned and the report creation and expiration dates. You can use this information to identify the reports whose entries you want to view.
 
-```
+```JSON
 {
   "ImageUsageReports": [
     {
@@ -272,13 +272,13 @@ The following is example output. Each report ID is listed along with the resourc
 **To view the contents of an AMI usage report for the specified AMI**
 Use the [describe-image-usage-report-entries](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-image-usage-report-entries.html) command and specify the ID of the AMI. The response returns all the reports for the specified AMI, showing the accounts that have used the AMI and their resource counts.
 
-```
+```bash
 aws ec2 describe-image-usage-report-entries --image-ids {{ami-0abcdef1234567890}}
 ```
 
 The following is example output.
 
-```
+```JSON
 {
   "ImageUsageReportEntries": [
     {
@@ -313,13 +313,13 @@ The following is example output.
 **To view the contents of an AMI usage report for the specified report**
 Use the [describe-image-usage-report-entries](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-image-usage-report-entries.html) command and specify the ID of the report. The response returns all the entries for the specified report, showing the accounts that have used the AMI and their resource counts.
 
-```
+```bash
 aws ec2 describe-image-usage-report-entries --report-ids {{amiur-11111111111111111}}
 ```
 
 The following is example output.
 
-```
+```JSON
 {
   "ImageUsageReportEntries": [
     {
@@ -357,13 +357,13 @@ The following is example output.
 **To list all the AMI usage reports for the specified AMI**
 Use the [Get-EC2ImageUsageReport](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2ImageUsageReport.html) cmdlet and specify the ID of the AMI to get a list of its reports.
 
-```
+```powershell
 Get-EC2ImageUsageReport -ImageId {{ami-0abcdef1234567890}}
 ```
 
 The following is example output. Each report ID is listed along with the resource types that were scanned and the report creation and expiration dates. You can use this information to identify the reports whose entries you want to view.
 
-```
+```JSON
 @{
     ImageUsageReports = @(
         @{
@@ -410,13 +410,13 @@ The following is example output. Each report ID is listed along with the resourc
 **To view the contents of an AMI usage report for the specified AMI**
 Use the [Get-EC2ImageUsageReportEntry](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2ImageUsageReportEntry.html) cmdlet and specify the ID of the AMI. The response returns all the reports for the specified AMI, showing the accounts that have used the AMI and their resource counts.
 
-```
+```powershell
 Get-EC2ImageUsageReportEntry -ImageId {{ami-0abcdef1234567890}}
 ```
 
 The following is example output.
 
-```
+```JSON
 ImageUsageReportEntries : {@{
     ImageId = "ami-0abcdef1234567890"
     ResourceType = "ec2:Instance"
@@ -438,13 +438,13 @@ NextToken : opaque
 **To view the contents of an AMI usage report for the specified report**
 Use the [Get-EC2ImageUsageReportEntry](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2ImageUsageReportEntry.html) cmdlet and specify the ID of the report. The response returns all the entries for the specified report, showing the accounts that have used the AMI and their resource counts.
 
-```
+```PowerShell
 Get-EC2ImageUsageReportEntry -ReportId {{amiur-11111111111111111}}
 ```
 
 The following is example output.
 
-```
+```powershell
 ImageUsageReportEntries : {@{
     ImageId = "ami-0abcdef1234567890"
     ResourceType = "ec2:Instance"
@@ -498,7 +498,7 @@ Amazon EC2 automatically deletes a report 30 days after it was created. You can 
 **To delete an AMI usage report**
 Use the [delete-image-usage-report](https://docs.aws.amazon.com/cli/latest/reference/ec2/delete-image-usage-report.html) command and specify the ID of the report.
 
-```
+```bash
 aws ec2 delete-image-usage-report --report-id {{amiur-0123456789abcdefg}}
 ```
 
@@ -508,7 +508,7 @@ aws ec2 delete-image-usage-report --report-id {{amiur-0123456789abcdefg}}
 **To delete an AMI usage report**
 Use the [Remove-EC2ImageUsageReport](https://docs.aws.amazon.com/powershell/latest/reference/items/Remove-EC2ImageUsageReport.html) cmdlet and specify the ID of the report.
 
-```
+```powershell
 Remove-EC2ImageUsageReport -ReportId {{amiur-0123456789abcdefg}}
 ```
 

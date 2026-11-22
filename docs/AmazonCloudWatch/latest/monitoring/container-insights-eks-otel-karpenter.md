@@ -31,7 +31,7 @@ To disable Karpenter metrics collection, set `otelContainerInsights.solutions.ka
 
 The following Helm values show the default configuration.
 
-```
+```yaml
 otelContainerInsights:
   solutions:
     enabled: true
@@ -41,7 +41,7 @@ otelContainerInsights:
 
 To disable Karpenter metrics using the Amazon EKS add-on, run the following AWS CLI command. Replace {{cluster-name}} with the name of your Amazon EKS cluster.
 
-```
+```bash
 aws eks update-addon \
   --cluster-name {{cluster-name}} \
   --addon-name amazon-cloudwatch-observability \
@@ -51,7 +51,7 @@ aws eks update-addon \
 
 To disable Karpenter metrics using the Helm chart, run the following command.
 
-```
+```bash
 helm upgrade amazon-cloudwatch-observability \
   aws-observability/amazon-cloudwatch-observability \
   -n amazon-cloudwatch \

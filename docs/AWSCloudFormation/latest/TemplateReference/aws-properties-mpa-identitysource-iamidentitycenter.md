@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mpa-identitysource-iamidentitycenter-syntax.json"></a>
 
-```
+```json
 {
   "[ApprovalPortalUrl](#cfn-mpa-identitysource-iamidentitycenter-approvalportalurl)" : {{String}},
   "[InstanceArn](#cfn-mpa-identitysource-iamidentitycenter-instancearn)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mpa-identitysource-iamidentitycenter-syntax.yaml"></a>
 
-```
+```yaml
   [ApprovalPortalUrl](#cfn-mpa-identitysource-iamidentitycenter-approvalportalurl): {{String}}
   [InstanceArn](#cfn-mpa-identitysource-iamidentitycenter-instancearn): {{String}}
   [Region](#cfn-mpa-identitysource-iamidentitycenter-region): {{String}}

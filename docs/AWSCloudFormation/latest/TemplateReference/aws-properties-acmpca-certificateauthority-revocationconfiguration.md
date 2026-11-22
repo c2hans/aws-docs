@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-acmpca-certificateauthority-revocationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CrlConfiguration](#cfn-acmpca-certificateauthority-revocationconfiguration-crlconfiguration)" : {{CrlConfiguration}},
   "[OcspConfiguration](#cfn-acmpca-certificateauthority-revocationconfiguration-ocspconfiguration)" : {{OcspConfiguration}}
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-acmpca-certificateauthority-revocationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CrlConfiguration](#cfn-acmpca-certificateauthority-revocationconfiguration-crlconfiguration): {{
     CrlConfiguration}}
   [OcspConfiguration](#cfn-acmpca-certificateauthority-revocationconfiguration-ocspconfiguration): {{

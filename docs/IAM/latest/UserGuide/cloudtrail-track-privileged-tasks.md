@@ -15,7 +15,7 @@ The global endpoint is not supported for `sts:AssumeRoot`. CloudTrail records `C
 
    In the following example, the CloudTrail event for AssumeRoot is logged in the `eventName` field.
 
-   ```
+   ```json
    {
        "eventVersion": "1.08",
        "userIdentity": {
@@ -67,7 +67,7 @@ The global endpoint is not supported for `sts:AssumeRoot`. CloudTrail records `C
 
    In the following example, the `targetPrincipal` is 222222222222 and the `accessKeyId` is ASIAIOSFODNN7EXAMPLE.
 
-   ```
+   ```json
    "eventTime": "2024-10-25T20:52:11Z",
        "eventSource": "sts.amazonaws.com",
        "eventName": "AssumeRoot",
@@ -92,7 +92,7 @@ The global endpoint is not supported for `sts:AssumeRoot`. CloudTrail records `C
 
    In the following example, the management account or delegated administrator deleted the resource-based policy for an Amazon S3 bucket.
 
-   ```
+   ```json
    {
        "eventVersion": "1.10",
        "userIdentity": {

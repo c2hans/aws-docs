@@ -13,7 +13,7 @@ The following scenarios demonstrate how to mix and match data sources in your sc
 
 The following schema has a type of `Post` with three `Query` and `Mutation` operations each:
 
-```
+```SDL
 type Post {
     id: ID!
     author: String!
@@ -60,7 +60,7 @@ In this example, you would have a total of six resolvers with each needing a dat
 
 You may need to return results from a third-party database that's not directly supported by AWS AppSync data sources. You may also have to perform complex modifications on the data before it's returned to the API client(s). This could be caused by the improper formatting of the data types, such as timestamp differences on clients, or the handling of backwards compatibility issues. In this case, connecting AWS Lambda functions as a data source to your AWS AppSync API is the appropriate solution. For illustrative purposes, in the following example, an AWS Lambda function manipulates data fetched from a third-party data store:
 
-```
+```javascript
 export const handler = (event, context, callback) => {
     // fetch data
     const result = fetcher()
@@ -132,7 +132,7 @@ Because the data is written directly to DynamoDB, you can still perform efficien
 **Note**
 This Python code is an example and isn't meant to be used in production code.
 
-```
+```javascript
 import boto3
 import requests
 from requests_aws4auth import AWS4Auth

@@ -30,7 +30,7 @@ An Amazon Redshift *database* is a group of Redshift *schemas* that contains a g
 
 Example query
 
-```
+```sql
 SELECT * FROM
 {{Athena_Redshift_connector_data_source}}.{{Redshift_schema_name}}.{{Redshift_table_name}}
 ```
@@ -49,7 +49,7 @@ An Cloudera Hive *server* or *cluster* is a group of Cloudera Hive *databases* t
 
 Example query
 
-```
+```sql
 SELECT * FROM
 {{Athena_Cloudera_Hive_connector_data_source}}.{{Cloudera_Hive_database_name}}.{{Cloudera_Hive_table_name}}
 ```
@@ -68,7 +68,7 @@ An Impala *server* or *cluster* is a group of Impala *databases* that contains a
 
 Example query
 
-```
+```sql
 SELECT * FROM
 {{Athena_Impala_connector_data_source}}.{{Impala_database_name}}.{{Impala_table_name}}
 ```
@@ -87,7 +87,7 @@ A MySQL *server* is a group of MySQL *databases* that contains a group of MySQL 
 
 Example query
 
-```
+```sql
 SELECT * FROM
 {{Athena_MySQL_connector_data source}}.{{MySQL_database_name}}.{{MySQL_table_name}}
 ```
@@ -106,7 +106,7 @@ An Oracle *server* (or *database*) is a group of Oracle *schemas* that contains 
 
 Example query
 
-```
+```sql
 SELECT * FROM
 {{Athena_Oracle_connector_data_source}}.{{Oracle_schema_name}}.{{Oracle_table_name}}
 ```
@@ -125,7 +125,7 @@ A Postgres *server* (or *cluster*) is a group of Postgres *databases*. A Postgre
 
 Example query
 
-```
+```sql
 SELECT * FROM
 {{Athena_Postgres_connector_data_source}}.{{Postgres_schema_name}}.{{Postgres_table_name}}
 ```

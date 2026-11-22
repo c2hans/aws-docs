@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-receiptrule-lambdaaction-syntax.json"></a>
 
-```
+```json
 {
   "[FunctionArn](#cfn-ses-receiptrule-lambdaaction-functionarn)" : {{String}},
   "[InvocationType](#cfn-ses-receiptrule-lambdaaction-invocationtype)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-receiptrule-lambdaaction-syntax.yaml"></a>
 
-```
+```yaml
   [FunctionArn](#cfn-ses-receiptrule-lambdaaction-functionarn): {{String}}
   [InvocationType](#cfn-ses-receiptrule-lambdaaction-invocationtype): {{String}}
   [TopicArn](#cfn-ses-receiptrule-lambdaaction-topicarn): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codebuild-reportgroup-s3reportexportconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Bucket](#cfn-codebuild-reportgroup-s3reportexportconfig-bucket)" : {{String}},
   "[BucketOwner](#cfn-codebuild-reportgroup-s3reportexportconfig-bucketowner)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codebuild-reportgroup-s3reportexportconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Bucket](#cfn-codebuild-reportgroup-s3reportexportconfig-bucket): {{String}}
   [BucketOwner](#cfn-codebuild-reportgroup-s3reportexportconfig-bucketowner): {{String}}
   [EncryptionDisabled](#cfn-codebuild-reportgroup-s3reportexportconfig-encryptiondisabled): {{Boolean}}

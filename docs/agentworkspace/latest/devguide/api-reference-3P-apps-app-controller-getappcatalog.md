@@ -8,13 +8,13 @@ Returns all the applications that are available in the Connect Customer agent wo
 
  **Signature**
 
-```
+```typescript
 getAppCatalog(): Promise<AppConfig[]>
 ```
 
  **Usage**
 
-```
+```typescript
 const applications: AppConfig[] = await appControllerClient.getAppCatalog();
 ```
 
@@ -34,6 +34,6 @@ const applications: AppConfig[] = await appControllerClient.getAppCatalog();
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

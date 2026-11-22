@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-networkmanager-customergatewayassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::NetworkManager::CustomerGatewayAssociation",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-networkmanager-customergatewayassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::NetworkManager::CustomerGatewayAssociation
 Properties:
   [CustomerGatewayArn](#cfn-networkmanager-customergatewayassociation-customergatewayarn): {{String}}
@@ -102,7 +102,7 @@ The following example template creates a global network, device, customer gatewa
 #### JSON
 <a name="aws-resource-networkmanager-customergatewayassociation--examples--Customer_Gateway_Association--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Create a global network and customer gateway association",
@@ -187,7 +187,7 @@ The following example template creates a global network, device, customer gatewa
 #### YAML
 <a name="aws-resource-networkmanager-customergatewayassociation--examples--Customer_Gateway_Association--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: 'Create a global network and customer gateway association'
 Resources:

@@ -152,7 +152,7 @@ aws s3control put-storage-lens-configuration --account-id={{111122223333}} --con
 **Example – Update a Amazon S3 Storage Lens configuration with advanced metrics and recommendations**
 The following examples shows you how to update the default S3 Storage Lens configuration with advanced metrics and recommendations in SDK for Java:
 
-```
+```Java
 package aws.example.s3control;
 
 import com.amazonaws.AmazonServiceException;

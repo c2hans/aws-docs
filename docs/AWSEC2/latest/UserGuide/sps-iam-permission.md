@@ -13,7 +13,7 @@ The following is an example IAM policy that grants permission to use the `ec2:Ge
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -17,6 +17,8 @@ When you create the SAML provider resource, you upload a SAML metadata document 
 
  For more information, see [Enabling SAML 2.0 federated users to access the AWS Management Console](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_enable-console-saml.html) and [About SAML 2.0-based federation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_saml.html) in the *IAM User Guide*.
 
+To control who can configure trusted identity propagation on a SAML provider, use the [iam:EnableIdentityPropagation](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_EnableIdentityPropagation), [iam:EnableIdentityCenterAssociation](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_EnableIdentityCenterAssociation), [iam:RequestIdentityProviderIssuers](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_RequestIdentityProviderIssuers), [iam:ResourceIdentityProviderIssuers](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_ResourceIdentityProviderIssuers), [iam:RequestIdentityCenterInstanceArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_RequestIdentityCenterInstanceArn), and [iam:ResourceIdentityCenterInstanceArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_ResourceIdentityCenterInstanceArn) condition keys in IAM policies. The `Request` keys contain the values in the request. The `Resource` keys contain the values stored on the provider.
+
 ## Syntax
 <a name="aws-resource-iam-samlprovider-syntax"></a>
 
@@ -25,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iam-samlprovider-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IAM::SAMLProvider",
   "Properties" : {
@@ -43,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iam-samlprovider-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IAM::SAMLProvider
 Properties:
   [AddPrivateKey](#cfn-iam-samlprovider-addprivatekey): {{String}}

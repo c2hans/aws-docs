@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrass-functiondefinition-runas-syntax.json"></a>
 
-```
+```json
 {
   "[Gid](#cfn-greengrass-functiondefinition-runas-gid)" : {{Integer}},
   "[Uid](#cfn-greengrass-functiondefinition-runas-uid)" : {{Integer}}
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrass-functiondefinition-runas-syntax.yaml"></a>
 
-```
+```yaml
   [Gid](#cfn-greengrass-functiondefinition-runas-gid): {{Integer}}
   [Uid](#cfn-greengrass-functiondefinition-runas-uid): {{Integer}}
 ```

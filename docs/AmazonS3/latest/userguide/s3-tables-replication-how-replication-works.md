@@ -99,3 +99,4 @@ The following considerations apply to replicated tables:
 + Tables with tags or branches are not supported.
 + Replication is not supported for Amazon S3 Metadata tables or other AWS-generated system tables.
 + All table snapshots, including compacted snapshots, are replicated from the source table. As a result, compaction is not supported on replica tables.
++ Replica tables are read-only. To write to a replica table, you can disassociate it from replication. For more information, see [Disassociating a replica table from replication](s3-tables-replication-disassociate.md).

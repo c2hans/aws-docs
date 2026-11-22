@@ -46,7 +46,7 @@ Deletes the `RouteSettings` for a stage.
 #### NotFoundException schema
 <a name="apis-apiid-stages-stagename-routesettings-routekey-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -56,7 +56,7 @@ Deletes the `RouteSettings` for a stage.
 #### LimitExceededException schema
 <a name="apis-apiid-stages-stagename-routesettings-routekey-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

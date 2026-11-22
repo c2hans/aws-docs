@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-redshift-clustersecuritygroupingress-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Redshift::ClusterSecurityGroupIngress",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-redshift-clustersecuritygroupingress-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Redshift::ClusterSecurityGroupIngress
 Properties:
   [CIDRIP](#cfn-redshift-clustersecuritygroupingress-cidrip): {{String}}
@@ -106,7 +106,7 @@ The following snippet describes a ingress rules for an Amazon Redshift cluster s
 #### JSON
 <a name="aws-resource-redshift-clustersecuritygroupingress--examples--Ingress_Rules--json"></a>
 
-```
+```json
 "myClusterSecurityGroupIngressIP" : {
   "Type": "AWS::Redshift::ClusterSecurityGroupIngress",
   "Properties": {
@@ -119,7 +119,7 @@ The following snippet describes a ingress rules for an Amazon Redshift cluster s
 #### YAML
 <a name="aws-resource-redshift-clustersecuritygroupingress--examples--Ingress_Rules--yaml"></a>
 
-```
+```yaml
 myClusterSecurityGroupIngressIP:
   Type: "AWS::Redshift::ClusterSecurityGroupIngress"
   Properties:

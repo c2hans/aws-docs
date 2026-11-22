@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-greengrass-devicedefinitionversion-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Greengrass::DeviceDefinitionVersion",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-greengrass-devicedefinitionversion-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Greengrass::DeviceDefinitionVersion
 Properties:
   [DeviceDefinitionId](#cfn-greengrass-devicedefinitionversion-devicedefinitionid): {{String}}
@@ -82,7 +82,7 @@ For an example of a complete template, see the [`AWS::Greengrass::Group`](https:
 #### JSON
 <a name="aws-resource-greengrass-devicedefinitionversion--examples--Device_Definition_Version_Snippet--json"></a>
 
-```
+```json
 "TestDeviceDefinition": {
     "Type": "AWS::Greengrass::DeviceDefinition",
     "Properties": {
@@ -141,7 +141,7 @@ For an example of a complete template, see the [`AWS::Greengrass::Group`](https:
 #### YAML
 <a name="aws-resource-greengrass-devicedefinitionversion--examples--Device_Definition_Version_Snippet--yaml"></a>
 
-```
+```yaml
 TestDeviceDefinition:
   Type: 'AWS::Greengrass::DeviceDefinition'
   Properties:

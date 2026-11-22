@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fms-policy-securityservicepolicydata-syntax.json"></a>
 
-```
+```json
 {
   "[ManagedServiceData](#cfn-fms-policy-securityservicepolicydata-managedservicedata)" : {{String}},
   "[PolicyOption](#cfn-fms-policy-securityservicepolicydata-policyoption)" : {{PolicyOption}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fms-policy-securityservicepolicydata-syntax.yaml"></a>
 
-```
+```yaml
   [ManagedServiceData](#cfn-fms-policy-securityservicepolicydata-managedservicedata): {{String}}
   [PolicyOption](#cfn-fms-policy-securityservicepolicydata-policyoption): {{
     PolicyOption}}
@@ -154,7 +154,7 @@ The following shows an example SecurityServicePolicyData specification in an WAF
 #### JSON
 <a name="aws-properties-fms-policy-securityservicepolicydata--examples--Define_the_SecurityServicePolicyData_for--json"></a>
 
-```
+```json
 "ManagedServiceData": {
     "Fn::Sub": "{\"type\":\"WAFV2\",\"preProcessRuleGroups\":[{\"ruleGroupType\":\"RuleGroup,\"ruleGroupArn\":\"${RuleGroup.Arn}\", \"overrideAction\":{\"type\":\"NONE\"}}],\"postProcessRuleGroups\":[],\"defaultAction\":{\"type\":\"BLOCK\"}}" }
 ```
@@ -162,7 +162,7 @@ The following shows an example SecurityServicePolicyData specification in an WAF
 #### YAML
 <a name="aws-properties-fms-policy-securityservicepolicydata--examples--Define_the_SecurityServicePolicyData_for--yaml"></a>
 
-```
+```yaml
 ManagedServiceData: !Sub '{"type":"WAFV2",
                  "preProcessRuleGroups":[{
                  "ruleGroupType":"RuleGroup",
@@ -180,7 +180,7 @@ The following shows an example SecurityServicePolicyData specification for an AW
 #### JSON
 <a name="aws-properties-fms-policy-securityservicepolicydata--examples--Define_the_SecurityServicePolicyData_for_Classic--json"></a>
 
-```
+```json
 "ManagedServiceData": "{\"type\": \"WAF\", \"ruleGroups\": [{\"id\":
               \"12345678-1bcd-9012-efga-0987654321ab\", \"overrideAction\" : {\"type\": \"COUNT\"}}],
               \"defaultAction\": {\"type\": \"BLOCK\"}}
@@ -194,7 +194,7 @@ The following shows an example SecurityServicePolicyData specification for a com
 #### JSON
 <a name="aws-properties-fms-policy-securityservicepolicydata--examples--Define_the_SecurityServicePolicyData_for_SECURITY_GROUPS_COMMON--json"></a>
 
-```
+```json
 "SecurityServicePolicyData":{"Type":"SECURITY_GROUPS_COMMON","ManagedServiceData":"{\"type\":\"SECURITY_GROUPS_COMMON\",\"revertManualSecurityGroupChanges\":false,
   \"exclusiveResourceSecurityGroupManagement\":false,\"securityGroups\":[{\"id\":\"
               sg-000e55995d61a06bd\"}]}"},"RemediationEnabled":false,"ResourceType":"AWS::EC2::NetworkInterface"}
@@ -208,7 +208,7 @@ The following shows an example SecurityServicePolicyData specification for a con
 #### JSON
 <a name="aws-properties-fms-policy-securityservicepolicydata--examples--Define_the_SecurityServicePolicyData_for_SECURITY_GROUPS_CONTENT_AUDIT--json"></a>
 
-```
+```json
 "SecurityServicePolicyData":{"Type":"SECURITY_GROUPS_CONTENT_AUDIT","ManagedServiceData":"{\"type\":\"SECURITY_GROUPS_CONTENT_AUDIT\",\"securityGroups\":[{\"id\":\"
               sg-000e55995d61a06bd
               \"}],\"securityGroupAction\":{\"type\":\"ALLOW\"}}"},"RemediationEnabled":false,"ResourceType":"AWS::EC2::NetworkInterface"}
@@ -222,7 +222,7 @@ The following shows an example SecurityServicePolicyData specification for a usa
 #### JSON
 <a name="aws-properties-fms-policy-securityservicepolicydata--examples--Define_the_SecurityServicePolicyData_for_SECURITY_GROUPS_USAGE_AUDIT--json"></a>
 
-```
+```json
 "SecurityServicePolicyData":{"Type":"SECURITY_GROUPS_USAGE_AUDIT","ManagedServiceData":"{\"type\":\"SECURITY_GROUPS_USAGE_AUDIT\",\"deleteUnusedSecurityGroups\":true,
   \"coalesceRedundantSecurityGroups\":true}"},"RemediationEnabled":false,"Resou
               rceType":"AWS::EC2::SecurityGroup"}

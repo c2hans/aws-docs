@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloud9-environmentec2-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-cloud9-environmentec2-tag-key)" : {{String}},
   "[Value](#cfn-cloud9-environmentec2-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloud9-environmentec2-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-cloud9-environmentec2-tag-key): {{String}}
   [Value](#cfn-cloud9-environmentec2-tag-value): {{String}}
 ```

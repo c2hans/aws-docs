@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-entityresolution-schemamapping-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EntityResolution::SchemaMapping",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-entityresolution-schemamapping-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EntityResolution::SchemaMapping
 Properties:
   [Description](#cfn-entityresolution-schemamapping-description): {{String}}

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-distributionconfiguration-distribution-syntax.json"></a>
 
-```
+```json
 {
   "[AmiDistributionConfiguration](#cfn-imagebuilder-distributionconfiguration-distribution-amidistributionconfiguration)" : {{AmiDistributionConfiguration}},
   "[ContainerDistributionConfiguration](#cfn-imagebuilder-distributionconfiguration-distribution-containerdistributionconfiguration)" : {{ContainerDistributionConfiguration}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-distributionconfiguration-distribution-syntax.yaml"></a>
 
-```
+```yaml
   [AmiDistributionConfiguration](#cfn-imagebuilder-distributionconfiguration-distribution-amidistributionconfiguration): {{
     AmiDistributionConfiguration}}
   [ContainerDistributionConfiguration](#cfn-imagebuilder-distributionconfiguration-distribution-containerdistributionconfiguration): {{
@@ -121,7 +121,7 @@ To make an AMI public, set the launch permission authorized accounts to `all`. S
 #### YAML
 <a name="aws-properties-imagebuilder-distributionconfiguration-distribution--examples--Example_1:_AmiDistributionConfiguration_with_launch_permissions--yaml"></a>
 
-```
+```yaml
 Distributions:
   - Region: 'us-west-2'
     AmiDistributionConfiguration:
@@ -145,7 +145,7 @@ Distributions:
 #### JSON
 <a name="aws-properties-imagebuilder-distributionconfiguration-distribution--examples--Example_1:_AmiDistributionConfiguration_with_launch_permissions--json"></a>
 
-```
+```json
 {
     "Distributions": [{
         "Region": "us-west-2",
@@ -184,7 +184,7 @@ The following example shows the template for the AmiDistributionConfiguration pr
 #### YAML
 <a name="aws-properties-imagebuilder-distributionconfiguration-distribution--examples--Example_2:_Create_a_distribution_configuration_resource_for_a_copied_AMI--yaml"></a>
 
-```
+```yaml
 Distributions:
   - Region: 'us-west-2'
     AmiDistributionConfiguration:
@@ -200,7 +200,7 @@ Distributions:
 #### JSON
 <a name="aws-properties-imagebuilder-distributionconfiguration-distribution--examples--Example_2:_Create_a_distribution_configuration_resource_for_a_copied_AMI--json"></a>
 
-```
+```json
 {
     "Distributions": [{
         "Region": "us-west-2",
@@ -224,7 +224,7 @@ The following example shows the template for the ContainerDistributionConfigurat
 #### YAML
 <a name="aws-properties-imagebuilder-distributionconfiguration-distribution--examples--Example_3:_ContainerDistributionConfiguration--yaml"></a>
 
-```
+```yaml
 Distributions:
   - Region: 'us-west-2'
     ContainerDistributionConfiguration:
@@ -240,7 +240,7 @@ Distributions:
 #### JSON
 <a name="aws-properties-imagebuilder-distributionconfiguration-distribution--examples--Example_3:_ContainerDistributionConfiguration--json"></a>
 
-```
+```json
 {
     "Distributions": [{
         "Region": "us-west-2",

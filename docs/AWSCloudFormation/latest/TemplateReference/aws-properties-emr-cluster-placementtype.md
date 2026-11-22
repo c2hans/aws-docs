@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emr-cluster-placementtype-syntax.json"></a>
 
-```
+```json
 {
   "[AvailabilityZone](#cfn-emr-cluster-placementtype-availabilityzone)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emr-cluster-placementtype-syntax.yaml"></a>
 
-```
+```yaml
   [AvailabilityZone](#cfn-emr-cluster-placementtype-availabilityzone): {{String}}
 ```
 

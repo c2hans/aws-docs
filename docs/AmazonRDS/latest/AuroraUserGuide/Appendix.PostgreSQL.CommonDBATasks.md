@@ -13,7 +13,7 @@ In some cases, rather than installing an extension, you might add a specific *mo
 
 An extension that provides access to external data is more specifically known as a *foreign data wrapper* (FDW). As one example, the `oracle_fdw` extension allows your Aurora PostgreSQL DB cluster to work with Oracle databases.
 
-You can also specify precisely which extensions can be installed on your Aurora PostgreSQL DB instance, by listing them in the `rds.allowed_extensions` parameter. For more information, see [Restricting installation of PostgreSQL extensions](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_PostgreSQL.html#PostgreSQL.Concepts.General.FeatureSupport.Extensions.Restriction.html).
+You can also specify precisely which extensions can be installed on your Aurora PostgreSQL DB instance, by listing them in the `rds.allowed_extensions` parameter. For more information, see [Restricting installation of PostgreSQL extensions](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PostgreSQL.Concepts.General.FeatureSupport.Extensions.html#PostgreSQL.Concepts.General.FeatureSupport.Extensions.Restriction).
 
 Following, you can find information about setting up and using some of the extensions, modules, and FDWs available for Aurora PostgreSQL. For simplicity's sake, these are all referred to as "extensions." You can find listings of extensions that you can use with the currently available Aurora PostgreSQL versions, see [Extension versions for Amazon Aurora PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLReleaseNotes/AuroraPostgreSQL.Extensions.html) in the *Release Notes for Aurora PostgreSQL*.
 + [Managing large objects with the lo module](PostgreSQL_large_objects_lo_extension.md)

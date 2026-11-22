@@ -77,7 +77,7 @@ This policy can also be attached to a role. In that case, the policy affects onl
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {

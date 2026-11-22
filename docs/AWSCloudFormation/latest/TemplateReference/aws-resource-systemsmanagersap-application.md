@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-systemsmanagersap-application-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SystemsManagerSAP::Application",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-systemsmanagersap-application-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SystemsManagerSAP::Application
 Properties:
   [ApplicationId](#cfn-systemsmanagersap-application-applicationid): {{String}}

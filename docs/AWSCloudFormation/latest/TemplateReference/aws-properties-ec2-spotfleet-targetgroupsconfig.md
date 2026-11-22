@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-spotfleet-targetgroupsconfig-syntax.json"></a>
 
-```
+```json
 {
   "[TargetGroups](#cfn-ec2-spotfleet-targetgroupsconfig-targetgroups)" : {{[ TargetGroup, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-spotfleet-targetgroupsconfig-syntax.yaml"></a>
 
-```
+```yaml
   [TargetGroups](#cfn-ec2-spotfleet-targetgroupsconfig-targetgroups): {{
     - TargetGroup}}
 ```

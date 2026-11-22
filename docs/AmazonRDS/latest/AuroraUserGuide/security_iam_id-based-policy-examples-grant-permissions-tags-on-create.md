@@ -17,7 +17,7 @@ For example, the following policy allows users to create DB instances and apply 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -59,7 +59,7 @@ The following policy allows users to create DB clusters and apply any tags durin
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [

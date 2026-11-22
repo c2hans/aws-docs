@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-validationstrategy-syntax.json"></a>
 
-```
+```json
 {
   "[Mode](#cfn-quicksight-dashboard-validationstrategy-mode)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-validationstrategy-syntax.yaml"></a>
 
-```
+```yaml
   [Mode](#cfn-quicksight-dashboard-validationstrategy-mode): {{String}}
 ```
 

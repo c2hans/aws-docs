@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-emailidentity-configurationsetattributes-syntax.json"></a>
 
-```
+```json
 {
   "[ConfigurationSetName](#cfn-ses-emailidentity-configurationsetattributes-configurationsetname)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-emailidentity-configurationsetattributes-syntax.yaml"></a>
 
-```
+```yaml
   [ConfigurationSetName](#cfn-ses-emailidentity-configurationsetattributes-configurationsetname): {{String}}
 ```
 

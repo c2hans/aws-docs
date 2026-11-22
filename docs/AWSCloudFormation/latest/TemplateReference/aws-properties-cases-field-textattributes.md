@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cases-field-textattributes-syntax.json"></a>
 
-```
+```json
 {
   "[IsMultiline](#cfn-cases-field-textattributes-ismultiline)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cases-field-textattributes-syntax.yaml"></a>
 
-```
+```yaml
   [IsMultiline](#cfn-cases-field-textattributes-ismultiline): {{Boolean}}
 ```
 

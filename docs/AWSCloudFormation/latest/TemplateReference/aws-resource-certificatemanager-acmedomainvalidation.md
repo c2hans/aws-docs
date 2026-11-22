@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-certificatemanager-acmedomainvalidation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CertificateManager::AcmeDomainValidation",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-certificatemanager-acmedomainvalidation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CertificateManager::AcmeDomainValidation
 Properties:
   [AcmeEndpointArn](#cfn-certificatemanager-acmedomainvalidation-acmeendpointarn): {{String}}

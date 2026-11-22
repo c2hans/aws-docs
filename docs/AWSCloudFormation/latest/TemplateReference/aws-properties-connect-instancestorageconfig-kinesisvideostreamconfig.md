@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-instancestorageconfig-kinesisvideostreamconfig-syntax.json"></a>
 
-```
+```json
 {
   "[EncryptionConfig](#cfn-connect-instancestorageconfig-kinesisvideostreamconfig-encryptionconfig)" : {{EncryptionConfig}},
   "[Prefix](#cfn-connect-instancestorageconfig-kinesisvideostreamconfig-prefix)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-instancestorageconfig-kinesisvideostreamconfig-syntax.yaml"></a>
 
-```
+```yaml
   [EncryptionConfig](#cfn-connect-instancestorageconfig-kinesisvideostreamconfig-encryptionconfig): {{
     EncryptionConfig}}
   [Prefix](#cfn-connect-instancestorageconfig-kinesisvideostreamconfig-prefix): {{String}}

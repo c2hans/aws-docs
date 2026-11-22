@@ -12,7 +12,7 @@ The following code examples show how to use `DeleteAnomalyDetector`.
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Delete a single metric anomaly detector.
     /// </summary>
@@ -54,7 +54,7 @@ For more information, see [Deleting an anomaly detection model](https://docs.aws
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
     /**
      * Deletes an Anomaly Detector.
      *
@@ -103,7 +103,7 @@ For more information, see [Deleting an anomaly detection model](https://docs.aws
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun deleteAnomalyDetector(
     namespaceVal: String,
     metricNameVal: String,

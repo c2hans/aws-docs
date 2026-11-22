@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-accountauditconfiguration-auditcheckconfigurations-syntax.json"></a>
 
-```
+```json
 {
   "[AuthenticatedCognitoRoleOverlyPermissiveCheck](#cfn-iot-accountauditconfiguration-auditcheckconfigurations-authenticatedcognitoroleoverlypermissivecheck)" : {{AuditCheckConfiguration}},
   "[CaCertificateExpiringCheck](#cfn-iot-accountauditconfiguration-auditcheckconfigurations-cacertificateexpiringcheck)" : {{AuditCheckConfiguration}},
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-accountauditconfiguration-auditcheckconfigurations-syntax.yaml"></a>
 
-```
+```yaml
   [AuthenticatedCognitoRoleOverlyPermissiveCheck](#cfn-iot-accountauditconfiguration-auditcheckconfigurations-authenticatedcognitoroleoverlypermissivecheck): {{
     AuditCheckConfiguration}}
   [CaCertificateExpiringCheck](#cfn-iot-accountauditconfiguration-auditcheckconfigurations-cacertificateexpiringcheck): {{

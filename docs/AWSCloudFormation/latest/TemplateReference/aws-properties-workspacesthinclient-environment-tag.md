@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspacesthinclient-environment-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-workspacesthinclient-environment-tag-key)" : {{String}},
   "[Value](#cfn-workspacesthinclient-environment-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspacesthinclient-environment-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-workspacesthinclient-environment-tag-key): {{String}}
   [Value](#cfn-workspacesthinclient-environment-tag-value): {{String}}
 ```

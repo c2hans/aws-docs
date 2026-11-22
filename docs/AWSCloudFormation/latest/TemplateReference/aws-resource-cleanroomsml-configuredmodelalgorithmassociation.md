@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cleanroomsml-configuredmodelalgorithmassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CleanRoomsML::ConfiguredModelAlgorithmAssociation",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cleanroomsml-configuredmodelalgorithmassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CleanRoomsML::ConfiguredModelAlgorithmAssociation
 Properties:
   [ConfiguredModelAlgorithmArn](#cfn-cleanroomsml-configuredmodelalgorithmassociation-configuredmodelalgorithmarn): {{String}}
@@ -147,7 +147,7 @@ The following example creates a configured model algorithm association with priv
 #### JSON
 <a name="aws-resource-cleanroomsml-configuredmodelalgorithmassociation--examples--Create_a_configured_model_algorithm_association--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -195,7 +195,7 @@ The following example creates a configured model algorithm association with priv
 #### YAML
 <a name="aws-resource-cleanroomsml-configuredmodelalgorithmassociation--examples--Create_a_configured_model_algorithm_association--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   MyConfiguredModelAlgorithmAssociation:

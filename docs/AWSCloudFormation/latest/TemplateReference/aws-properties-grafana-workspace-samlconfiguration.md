@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-grafana-workspace-samlconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AllowedOrganizations](#cfn-grafana-workspace-samlconfiguration-allowedorganizations)" : {{[ String, ... ]}},
   "[AssertionAttributes](#cfn-grafana-workspace-samlconfiguration-assertionattributes)" : {{AssertionAttributes}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-grafana-workspace-samlconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AllowedOrganizations](#cfn-grafana-workspace-samlconfiguration-allowedorganizations): {{
     - String}}
   [AssertionAttributes](#cfn-grafana-workspace-samlconfiguration-assertionattributes): {{

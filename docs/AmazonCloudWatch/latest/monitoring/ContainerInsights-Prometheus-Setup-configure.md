@@ -146,7 +146,7 @@ This example configures an embedded metric format section to be sent as a log ev
 
 The log event that is sent includes the following highlighted section:
 
-```
+```json
 {
    "CloudWatchMetrics":[
       {
@@ -306,7 +306,7 @@ The Kubernetes API Server exposes gauge, counter, histogram, and summary metrics
 
 After you have done this, you should see a new log stream named ** kubernetes-apiservers ** in the **/aws/containerinsights/{{cluster\_name}}/prometheus** log group. This log stream should include log events with an embedded metric format definition like the following:
 
-```
+```json
 {
    "CloudWatchMetrics":[
       {

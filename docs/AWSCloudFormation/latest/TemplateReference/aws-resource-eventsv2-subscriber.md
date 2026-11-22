@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-eventsv2-subscriber-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EventsV2::Subscriber",
   "Properties" : {
@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-eventsv2-subscriber-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EventsV2::Subscriber
 Properties:
   [BatchConfiguration](#cfn-eventsv2-subscriber-batchconfiguration): {{
@@ -235,7 +235,7 @@ The following example delivers events to an Amazon SQS queue by using an IAM rol
 #### JSON
 <a name="aws-resource-eventsv2-subscriber--examples--Create_a_minimal_subscriber--json"></a>
 
-```
+```json
 {
   "Resources": {
     "OrdersSubscriber": {
@@ -256,7 +256,7 @@ The following example delivers events to an Amazon SQS queue by using an IAM rol
 #### YAML
 <a name="aws-resource-eventsv2-subscriber--examples--Create_a_minimal_subscriber--yaml"></a>
 
-```
+```yaml
 Resources:
   OrdersSubscriber:
     Type: AWS::EventsV2::Subscriber
@@ -276,7 +276,7 @@ The following example delivers matching events to a Lambda function. It batches 
 #### JSON
 <a name="aws-resource-eventsv2-subscriber--examples--Create_a_filtered_subscriber_with_batching_and_retries--json"></a>
 
-```
+```json
 {
   "Resources": {
     "OrdersSubscriber": {
@@ -322,7 +322,7 @@ The following example delivers matching events to a Lambda function. It batches 
 #### YAML
 <a name="aws-resource-eventsv2-subscriber--examples--Create_a_filtered_subscriber_with_batching_and_retries--yaml"></a>
 
-```
+```yaml
 Resources:
   OrdersSubscriber:
     Type: AWS::EventsV2::Subscriber

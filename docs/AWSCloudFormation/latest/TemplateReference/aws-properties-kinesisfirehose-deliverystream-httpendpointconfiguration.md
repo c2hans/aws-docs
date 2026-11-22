@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-httpendpointconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AccessKey](#cfn-kinesisfirehose-deliverystream-httpendpointconfiguration-accesskey)" : {{String}},
   "[Name](#cfn-kinesisfirehose-deliverystream-httpendpointconfiguration-name)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-httpendpointconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AccessKey](#cfn-kinesisfirehose-deliverystream-httpendpointconfiguration-accesskey): {{String}}
   [Name](#cfn-kinesisfirehose-deliverystream-httpendpointconfiguration-name): {{String}}
   [Url](#cfn-kinesisfirehose-deliverystream-httpendpointconfiguration-url): {{String}}

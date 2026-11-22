@@ -40,7 +40,7 @@ In Athena for Spark, requester pays buckets are enabled per session, not per wor
 
 ****
 
-   ```
+   ```json
    { "Version":"2012-10-17",		 	 	  "Statement": [ { "Sid": "Statement1", "Effect": "Allow",
        "Principal": { "AWS": "arn:aws:iam::{{111122223333}}:root" },
        "Action": "s3:*", "Resource": [
@@ -73,7 +73,7 @@ Next, you create an IAM policy to allow access to the bucket. Then you attach th
 
 ****
 
-   ```
+   ```json
    { "Version":"2012-10-17",		 	 	  "Statement": [ { "Action": [ "s3:*" ], "Effect": "Allow",
        "Resource": [
            "arn:aws:s3:::{{111122223333}}-{{us-east-1}}-{{amzn-s3-demo-bucket}}",
@@ -110,7 +110,7 @@ After you have configured the Amazon S3 bucket and associated permissions for re
 
 1. In the JSON text editor, enter the following:
 
-   ```
+   ```json
    {
      "spark.hadoop.fs.s3.useRequesterPaysHeader":"true"
    }

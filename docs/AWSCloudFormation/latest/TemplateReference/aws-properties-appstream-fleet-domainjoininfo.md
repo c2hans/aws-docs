@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appstream-fleet-domainjoininfo-syntax.json"></a>
 
-```
+```json
 {
   "[DirectoryName](#cfn-appstream-fleet-domainjoininfo-directoryname)" : {{String}},
   "[OrganizationalUnitDistinguishedName](#cfn-appstream-fleet-domainjoininfo-organizationalunitdistinguishedname)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appstream-fleet-domainjoininfo-syntax.yaml"></a>
 
-```
+```yaml
   [DirectoryName](#cfn-appstream-fleet-domainjoininfo-directoryname): {{String}}
   [OrganizationalUnitDistinguishedName](#cfn-appstream-fleet-domainjoininfo-organizationalunitdistinguishedname): {{String}}
 ```

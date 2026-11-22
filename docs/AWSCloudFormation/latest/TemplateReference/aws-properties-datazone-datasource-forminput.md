@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-datasource-forminput-syntax.json"></a>
 
-```
+```json
 {
   "[Content](#cfn-datazone-datasource-forminput-content)" : {{String}},
   "[FormName](#cfn-datazone-datasource-forminput-formname)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-datasource-forminput-syntax.yaml"></a>
 
-```
+```yaml
   [Content](#cfn-datazone-datasource-forminput-content): {{String}}
   [FormName](#cfn-datazone-datasource-forminput-formname): {{String}}
   [TypeIdentifier](#cfn-datazone-datasource-forminput-typeidentifier): {{String}}

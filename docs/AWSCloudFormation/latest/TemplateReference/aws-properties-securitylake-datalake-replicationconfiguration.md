@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securitylake-datalake-replicationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Regions](#cfn-securitylake-datalake-replicationconfiguration-regions)" : {{[ String, ... ]}},
   "[RoleArn](#cfn-securitylake-datalake-replicationconfiguration-rolearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securitylake-datalake-replicationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Regions](#cfn-securitylake-datalake-replicationconfiguration-regions): {{
     - String}}
   [RoleArn](#cfn-securitylake-datalake-replicationconfiguration-rolearn): {{String}}

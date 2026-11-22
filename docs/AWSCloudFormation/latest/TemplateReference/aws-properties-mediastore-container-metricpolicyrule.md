@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediastore-container-metricpolicyrule-syntax.json"></a>
 
-```
+```json
 {
   "[ObjectGroup](#cfn-mediastore-container-metricpolicyrule-objectgroup)" : {{String}},
   "[ObjectGroupName](#cfn-mediastore-container-metricpolicyrule-objectgroupname)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediastore-container-metricpolicyrule-syntax.yaml"></a>
 
-```
+```yaml
   [ObjectGroup](#cfn-mediastore-container-metricpolicyrule-objectgroup): {{String}}
   [ObjectGroupName](#cfn-mediastore-container-metricpolicyrule-objectgroupname): {{String}}
 ```

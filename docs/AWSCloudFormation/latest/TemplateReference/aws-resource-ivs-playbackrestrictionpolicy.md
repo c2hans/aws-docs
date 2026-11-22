@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ivs-playbackrestrictionpolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IVS::PlaybackRestrictionPolicy",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ivs-playbackrestrictionpolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IVS::PlaybackRestrictionPolicy
 Properties:
   [AllowedCountries](#cfn-ivs-playbackrestrictionpolicy-allowedcountries): {{
@@ -121,7 +121,7 @@ The following examples specify an Amazon IVS playback restriction policy.
 #### JSON
 <a name="aws-resource-ivs-playbackrestrictionpolicy--examples--PlaybackRestrictionPolicy_Template_Examples--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -147,7 +147,7 @@ The following examples specify an Amazon IVS playback restriction policy.
 #### YAML
 <a name="aws-resource-ivs-playbackrestrictionpolicy--examples--PlaybackRestrictionPolicy_Template_Examples--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   PlaybackRestrictionPolicy:

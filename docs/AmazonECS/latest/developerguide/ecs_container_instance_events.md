@@ -34,7 +34,7 @@ The container instance detail contains an object for the container agent version
 **Example Container instance state change event**
 Container instance state change events are delivered in the following format. The `detail` section resembles the [ContainerInstance](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ContainerInstance.html) object that is returned from a [DescribeContainerInstances](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DescribeContainerInstances.html) API operation in the *Amazon Elastic Container Service API Reference*. For more information about EventBridge parameters, see [AWS service event metadata](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-events-structure.html) in the *Amazon EventBridge User Guide*.
 
-```
+```json
 {
   "version": "0",
   "id": "8952ba83-7be2-4ab5-9c32-6687532d15a2",

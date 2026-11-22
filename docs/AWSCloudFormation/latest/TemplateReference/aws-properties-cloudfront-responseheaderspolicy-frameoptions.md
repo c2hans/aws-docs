@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-responseheaderspolicy-frameoptions-syntax.json"></a>
 
-```
+```json
 {
   "[FrameOption](#cfn-cloudfront-responseheaderspolicy-frameoptions-frameoption)" : {{String}},
   "[Override](#cfn-cloudfront-responseheaderspolicy-frameoptions-override)" : {{Boolean}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-responseheaderspolicy-frameoptions-syntax.yaml"></a>
 
-```
+```yaml
   [FrameOption](#cfn-cloudfront-responseheaderspolicy-frameoptions-frameoption): {{String}}
   [Override](#cfn-cloudfront-responseheaderspolicy-frameoptions-override): {{Boolean}}
 ```

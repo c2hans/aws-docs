@@ -192,7 +192,7 @@ Now, create the `GetStartedLambdaIntegration` Lambda function.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -226,7 +226,7 @@ The other policy document applies to invoking another AWS service that is not us
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

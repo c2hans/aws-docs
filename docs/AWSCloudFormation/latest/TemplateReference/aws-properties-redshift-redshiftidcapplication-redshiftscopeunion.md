@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-redshift-redshiftidcapplication-redshiftscopeunion-syntax.json"></a>
 
-```
+```json
 {
   "[Connect](#cfn-redshift-redshiftidcapplication-redshiftscopeunion-connect)" : {{Connect}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-redshift-redshiftidcapplication-redshiftscopeunion-syntax.yaml"></a>
 
-```
+```yaml
   [Connect](#cfn-redshift-redshiftidcapplication-redshiftscopeunion-connect): {{
     Connect}}
 ```

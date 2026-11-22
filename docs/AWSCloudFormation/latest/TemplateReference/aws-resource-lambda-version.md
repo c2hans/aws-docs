@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lambda-version-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lambda::Version",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lambda-version-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lambda::Version
 Properties:
   [CodeSha256](#cfn-lambda-version-codesha256): {{String}}
@@ -134,7 +134,7 @@ Publish a version with provisioned concurrency.
 #### YAML
 <a name="aws-resource-lambda-version--examples--Function_Version--yaml"></a>
 
-```
+```yaml
 Resources:
   function:
     Type: AWS::Lambda::Function

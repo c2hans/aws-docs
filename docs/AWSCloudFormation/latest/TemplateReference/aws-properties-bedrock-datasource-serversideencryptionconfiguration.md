@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-datasource-serversideencryptionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[KmsKeyArn](#cfn-bedrock-datasource-serversideencryptionconfiguration-kmskeyarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-datasource-serversideencryptionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [KmsKeyArn](#cfn-bedrock-datasource-serversideencryptionconfiguration-kmskeyarn): {{String}}
 ```
 

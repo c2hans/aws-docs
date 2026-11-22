@@ -48,7 +48,7 @@ Use the [Remove-RGResource](https://docs.aws.amazon.com/powershell/latest/refere
 
 The following example removes two Capacity Reservations from the specified group.
 
-```
+```powershell
 Remove-RGResource `
     -Group {{MyCRGroup}} `
     -ResourceArn `

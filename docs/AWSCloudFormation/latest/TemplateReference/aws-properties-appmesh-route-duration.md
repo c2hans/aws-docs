@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-route-duration-syntax.json"></a>
 
-```
+```json
 {
   "[Unit](#cfn-appmesh-route-duration-unit)" : {{String}},
   "[Value](#cfn-appmesh-route-duration-value)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-route-duration-syntax.yaml"></a>
 
-```
+```yaml
   [Unit](#cfn-appmesh-route-duration-unit): {{String}}
   [Value](#cfn-appmesh-route-duration-value): {{Integer}}
 ```

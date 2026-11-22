@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-connectiontype-validationendpointconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[RequestMethod](#cfn-glue-connectiontype-validationendpointconfiguration-requestmethod)" : {{String}},
   "[RequestPath](#cfn-glue-connectiontype-validationendpointconfiguration-requestpath)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-connectiontype-validationendpointconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [RequestMethod](#cfn-glue-connectiontype-validationendpointconfiguration-requestmethod): {{String}}
   [RequestPath](#cfn-glue-connectiontype-validationendpointconfiguration-requestpath): {{String}}
 ```

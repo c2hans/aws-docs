@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-memory-tokenbasedtriggerinput-syntax.json"></a>
 
-```
+```json
 {
   "[TokenCount](#cfn-bedrockagentcore-memory-tokenbasedtriggerinput-tokencount)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-memory-tokenbasedtriggerinput-syntax.yaml"></a>
 
-```
+```yaml
   [TokenCount](#cfn-bedrockagentcore-memory-tokenbasedtriggerinput-tokencount): {{Integer}}
 ```
 

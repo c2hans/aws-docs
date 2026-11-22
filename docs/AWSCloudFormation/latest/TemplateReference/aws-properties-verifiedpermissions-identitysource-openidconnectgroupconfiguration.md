@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-verifiedpermissions-identitysource-openidconnectgroupconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[GroupClaim](#cfn-verifiedpermissions-identitysource-openidconnectgroupconfiguration-groupclaim)" : {{String}},
   "[GroupEntityType](#cfn-verifiedpermissions-identitysource-openidconnectgroupconfiguration-groupentitytype)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-verifiedpermissions-identitysource-openidconnectgroupconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [GroupClaim](#cfn-verifiedpermissions-identitysource-openidconnectgroupconfiguration-groupclaim): {{String}}
   [GroupEntityType](#cfn-verifiedpermissions-identitysource-openidconnectgroupconfiguration-groupentitytype): {{String}}
 ```

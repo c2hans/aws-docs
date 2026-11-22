@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3vectors-vectorbucket-encryptionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[KmsKeyArn](#cfn-s3vectors-vectorbucket-encryptionconfiguration-kmskeyarn)" : {{String}},
   "[SseType](#cfn-s3vectors-vectorbucket-encryptionconfiguration-ssetype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3vectors-vectorbucket-encryptionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [KmsKeyArn](#cfn-s3vectors-vectorbucket-encryptionconfiguration-kmskeyarn): {{String}}
   [SseType](#cfn-s3vectors-vectorbucket-encryptionconfiguration-ssetype): {{String}}
 ```

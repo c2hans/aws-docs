@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-gradientstop-syntax.json"></a>
 
-```
+```json
 {
   "[Color](#cfn-quicksight-template-gradientstop-color)" : {{String}},
   "[DataValue](#cfn-quicksight-template-gradientstop-datavalue)" : {{Number}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-gradientstop-syntax.yaml"></a>
 
-```
+```yaml
   [Color](#cfn-quicksight-template-gradientstop-color): {{String}}
   [DataValue](#cfn-quicksight-template-gradientstop-datavalue): {{Number}}
   [GradientOffset](#cfn-quicksight-template-gradientstop-gradientoffset): {{Number}}

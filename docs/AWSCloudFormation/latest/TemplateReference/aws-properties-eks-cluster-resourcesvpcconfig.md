@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-cluster-resourcesvpcconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ControlPlaneEgressMode](#cfn-eks-cluster-resourcesvpcconfig-controlplaneegressmode)" : {{String}},
   "[EndpointPrivateAccess](#cfn-eks-cluster-resourcesvpcconfig-endpointprivateaccess)" : {{Boolean}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-cluster-resourcesvpcconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ControlPlaneEgressMode](#cfn-eks-cluster-resourcesvpcconfig-controlplaneegressmode): {{String}}
   [EndpointPrivateAccess](#cfn-eks-cluster-resourcesvpcconfig-endpointprivateaccess): {{Boolean}}
   [EndpointPublicAccess](#cfn-eks-cluster-resourcesvpcconfig-endpointpublicaccess): {{Boolean}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-guardduty-detector-cfnscanec2instancewithfindingsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EbsVolumes](#cfn-guardduty-detector-cfnscanec2instancewithfindingsconfiguration-ebsvolumes)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-guardduty-detector-cfnscanec2instancewithfindingsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EbsVolumes](#cfn-guardduty-detector-cfnscanec2instancewithfindingsconfiguration-ebsvolumes): {{Boolean}}
 ```
 

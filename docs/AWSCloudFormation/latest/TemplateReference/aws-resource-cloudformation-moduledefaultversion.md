@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudformation-moduledefaultversion-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudFormation::ModuleDefaultVersion",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudformation-moduledefaultversion-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudFormation::ModuleDefaultVersion
 Properties:
   [Arn](#cfn-cloudformation-moduledefaultversion-arn): {{String}}
@@ -99,7 +99,7 @@ The following example registers two versions of a module, and then sets the seco
 #### JSON
 <a name="aws-resource-cloudformation-moduledefaultversion--examples--Specifying_the_default_module_version--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -133,7 +133,7 @@ The following example registers two versions of a module, and then sets the seco
 #### YAML
 <a name="aws-resource-cloudformation-moduledefaultversion--examples--Specifying_the_default_module_version--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   ModuleVersion1:

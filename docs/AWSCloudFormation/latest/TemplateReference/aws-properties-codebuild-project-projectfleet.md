@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codebuild-project-projectfleet-syntax.json"></a>
 
-```
+```json
 {
   "[FleetArn](#cfn-codebuild-project-projectfleet-fleetarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codebuild-project-projectfleet-syntax.yaml"></a>
 
-```
+```yaml
   [FleetArn](#cfn-codebuild-project-projectfleet-fleetarn): {{String}}
 ```
 

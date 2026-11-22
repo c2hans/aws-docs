@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-grafana-workspace-assertionattributes-syntax.json"></a>
 
-```
+```json
 {
   "[Email](#cfn-grafana-workspace-assertionattributes-email)" : {{String}},
   "[Groups](#cfn-grafana-workspace-assertionattributes-groups)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-grafana-workspace-assertionattributes-syntax.yaml"></a>
 
-```
+```yaml
   [Email](#cfn-grafana-workspace-assertionattributes-email): {{String}}
   [Groups](#cfn-grafana-workspace-assertionattributes-groups): {{String}}
   [Login](#cfn-grafana-workspace-assertionattributes-login): {{String}}

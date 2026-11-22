@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-parameterdeclaration-syntax.json"></a>
 
-```
+```json
 {
   "[DateTimeParameterDeclaration](#cfn-quicksight-dashboard-parameterdeclaration-datetimeparameterdeclaration)" : {{DateTimeParameterDeclaration}},
   "[DecimalParameterDeclaration](#cfn-quicksight-dashboard-parameterdeclaration-decimalparameterdeclaration)" : {{DecimalParameterDeclaration}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-parameterdeclaration-syntax.yaml"></a>
 
-```
+```yaml
   [DateTimeParameterDeclaration](#cfn-quicksight-dashboard-parameterdeclaration-datetimeparameterdeclaration): {{
     DateTimeParameterDeclaration}}
   [DecimalParameterDeclaration](#cfn-quicksight-dashboard-parameterdeclaration-decimalparameterdeclaration): {{

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrass-devicedefinition-device-syntax.json"></a>
 
-```
+```json
 {
   "[CertificateArn](#cfn-greengrass-devicedefinition-device-certificatearn)" : {{String}},
   "[Id](#cfn-greengrass-devicedefinition-device-id)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrass-devicedefinition-device-syntax.yaml"></a>
 
-```
+```yaml
   [CertificateArn](#cfn-greengrass-devicedefinition-device-certificatearn): {{String}}
   [Id](#cfn-greengrass-devicedefinition-device-id): {{String}}
   [SyncShadow](#cfn-greengrass-devicedefinition-device-syncshadow): {{Boolean}}

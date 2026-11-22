@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codedeploy-deploymentgroup-targetgrouppairinfo-syntax.json"></a>
 
-```
+```json
 {
   "[ProdTrafficRoute](#cfn-codedeploy-deploymentgroup-targetgrouppairinfo-prodtrafficroute)" : {{TrafficRoute}},
   "[TargetGroups](#cfn-codedeploy-deploymentgroup-targetgrouppairinfo-targetgroups)" : {{[ TargetGroupInfo, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codedeploy-deploymentgroup-targetgrouppairinfo-syntax.yaml"></a>
 
-```
+```yaml
   [ProdTrafficRoute](#cfn-codedeploy-deploymentgroup-targetgrouppairinfo-prodtrafficroute): {{
     TrafficRoute}}
   [TargetGroups](#cfn-codedeploy-deploymentgroup-targetgrouppairinfo-targetgroups): {{

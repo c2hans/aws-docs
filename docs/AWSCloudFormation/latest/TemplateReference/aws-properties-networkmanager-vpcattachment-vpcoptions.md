@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkmanager-vpcattachment-vpcoptions-syntax.json"></a>
 
-```
+```json
 {
   "[ApplianceModeSupport](#cfn-networkmanager-vpcattachment-vpcoptions-appliancemodesupport)" : {{Boolean}},
   "[DnsSupport](#cfn-networkmanager-vpcattachment-vpcoptions-dnssupport)" : {{Boolean}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkmanager-vpcattachment-vpcoptions-syntax.yaml"></a>
 
-```
+```yaml
   [ApplianceModeSupport](#cfn-networkmanager-vpcattachment-vpcoptions-appliancemodesupport): {{Boolean}}
   [DnsSupport](#cfn-networkmanager-vpcattachment-vpcoptions-dnssupport): {{Boolean}}
   [Ipv6Support](#cfn-networkmanager-vpcattachment-vpcoptions-ipv6support): {{Boolean}}

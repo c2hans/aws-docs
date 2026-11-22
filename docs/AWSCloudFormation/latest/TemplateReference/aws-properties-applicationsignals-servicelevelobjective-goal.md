@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationsignals-servicelevelobjective-goal-syntax.json"></a>
 
-```
+```json
 {
   "[AttainmentGoal](#cfn-applicationsignals-servicelevelobjective-goal-attainmentgoal)" : {{Number}},
   "[Interval](#cfn-applicationsignals-servicelevelobjective-goal-interval)" : {{Interval}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationsignals-servicelevelobjective-goal-syntax.yaml"></a>
 
-```
+```yaml
   [AttainmentGoal](#cfn-applicationsignals-servicelevelobjective-goal-attainmentgoal): {{Number}}
   [Interval](#cfn-applicationsignals-servicelevelobjective-goal-interval): {{
     Interval}}

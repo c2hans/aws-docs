@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dms-endpoint-neptunesettings-syntax.json"></a>
 
-```
+```json
 {
   "[ErrorRetryDuration](#cfn-dms-endpoint-neptunesettings-errorretryduration)" : {{Integer}},
   "[IamAuthEnabled](#cfn-dms-endpoint-neptunesettings-iamauthenabled)" : {{Boolean}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dms-endpoint-neptunesettings-syntax.yaml"></a>
 
-```
+```yaml
   [ErrorRetryDuration](#cfn-dms-endpoint-neptunesettings-errorretryduration): {{Integer}}
   [IamAuthEnabled](#cfn-dms-endpoint-neptunesettings-iamauthenabled): {{Boolean}}
   [MaxFileSize](#cfn-dms-endpoint-neptunesettings-maxfilesize): {{Integer}}

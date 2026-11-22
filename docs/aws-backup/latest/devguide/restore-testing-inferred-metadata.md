@@ -35,26 +35,26 @@ Because `RestoreMetadataOverrides` is a map of string key-value pairs, override 
 
 For example, to specify a single security group:
 
-```
+```json
 "vpcSecurityGroupIds": "[\"sg-012d52c68c6e88f00\"]"
 ```
 
 To specify multiple security groups:
 
-```
+```json
 "vpcSecurityGroupIds": "[\"sg-012d52c68c6e88f00\",\"sg-abcdef01234567890\"]"
 ```
 
 In AWS CloudFormation templates, you can use the `!Sub` intrinsic function to reference resource attributes within the JSON-array string:
 
-```
+```yaml
 RestoreMetadataOverrides:
   vpcSecurityGroupIds: !Sub '["${DBSecurityGroup.GroupId}"]'
 ```
 
 For multiple values in CloudFormation:
 
-```
+```yaml
 RestoreMetadataOverrides:
   vpcSecurityGroupIds: !Sub '["${DBSecurityGroup.GroupId}","${AnotherSecurityGroup.GroupId}"]'
 ```

@@ -58,7 +58,7 @@ Required: Yes
  ** status **   <a name="agentregistry-Type-DiscoverableRegistryRecordSummary-status"></a>
  The lifecycle status of the registry record. A record is `DRAFT` before it is submitted, `PENDING_APPROVAL` while awaiting curator review, and `APPROVED` once it is approved and discoverable. `REJECTED` and `DEPRECATED` records are not discoverable. The `CREATING`, `UPDATING`, `CREATE_FAILED`, and `UPDATE_FAILED` values reflect the state of an in-progress or failed asynchronous change.
 Type: String
-Valid Values: `DRAFT | PENDING_APPROVAL | APPROVED | REJECTED | DEPRECATED | CREATING | UPDATING | CREATE_FAILED | UPDATE_FAILED`
+Valid Values: `DRAFT | PENDING_APPROVAL | APPROVED | REJECTED | DEPRECATED | CREATING | UPDATING | CREATE_FAILED | UPDATE_FAILED | CREATE_PENDING_AUTH | UPDATE_PENDING_AUTH`
 Required: Yes
 
  ** updatedAt **   <a name="agentregistry-Type-DiscoverableRegistryRecordSummary-updatedAt"></a>

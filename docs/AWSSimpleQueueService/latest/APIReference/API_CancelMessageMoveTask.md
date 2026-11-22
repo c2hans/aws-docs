@@ -91,7 +91,7 @@ The following example query cancels an existing running message move task. The s
 #### Sample Request
 <a name="API_CancelMessageMoveTask_Example_1_Request"></a>
 
-```
+```xml
 POST / HTTP/1.1
 Host: sqs.us-east-1.amazonaws.com
 X-Amz-Date: <Date>
@@ -106,7 +106,7 @@ Action=CancelMessageMoveTask
 #### Sample Response
 <a name="API_CancelMessageMoveTask_Example_1_Response"></a>
 
-```
+```xml
 HTTP/1.1 200 OK
 <?xml version="1.0"?>
 <CancelMessageMoveTaskResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/">

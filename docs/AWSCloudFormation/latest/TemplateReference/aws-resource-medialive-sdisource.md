@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-medialive-sdisource-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MediaLive::SdiSource",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-medialive-sdisource-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MediaLive::SdiSource
 Properties:
   [Mode](#cfn-medialive-sdisource-mode): {{String}}

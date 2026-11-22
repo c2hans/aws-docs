@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobqueue-computeenvironmentorder-syntax.json"></a>
 
-```
+```json
 {
   "[ComputeEnvironment](#cfn-batch-jobqueue-computeenvironmentorder-computeenvironment)" : {{String}},
   "[Order](#cfn-batch-jobqueue-computeenvironmentorder-order)" : {{Integer}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobqueue-computeenvironmentorder-syntax.yaml"></a>
 
-```
+```yaml
   [ComputeEnvironment](#cfn-batch-jobqueue-computeenvironmentorder-computeenvironment): {{String}}
   [Order](#cfn-batch-jobqueue-computeenvironmentorder-order): {{Integer}}
 ```

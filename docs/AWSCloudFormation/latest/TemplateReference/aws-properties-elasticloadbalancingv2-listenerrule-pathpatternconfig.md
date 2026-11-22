@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-pathpatternconfig-syntax.json"></a>
 
-```
+```json
 {
   "[RegexValues](#cfn-elasticloadbalancingv2-listenerrule-pathpatternconfig-regexvalues)" : {{[ String, ... ]}},
   "[Values](#cfn-elasticloadbalancingv2-listenerrule-pathpatternconfig-values)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-pathpatternconfig-syntax.yaml"></a>
 
-```
+```yaml
   [RegexValues](#cfn-elasticloadbalancingv2-listenerrule-pathpatternconfig-regexvalues): {{
     - String}}
   [Values](#cfn-elasticloadbalancingv2-listenerrule-pathpatternconfig-values): {{

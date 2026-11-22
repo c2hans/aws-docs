@@ -8,12 +8,12 @@ Unsubscribes the callback function from the contact missed event.
 
  **Signature**
 
-```
+```typescript
 offMissed(handler: ContactMissedHandler, contactId?: string)
 ```
 
  **Usage**
 
-```
+```typescript
 contactClient.offMissed(handler);
 ```

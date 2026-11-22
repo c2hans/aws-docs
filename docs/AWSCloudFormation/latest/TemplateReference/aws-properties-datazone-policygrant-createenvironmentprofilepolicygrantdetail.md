@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-policygrant-createenvironmentprofilepolicygrantdetail-syntax.json"></a>
 
-```
+```json
 {
   "[DomainUnitId](#cfn-datazone-policygrant-createenvironmentprofilepolicygrantdetail-domainunitid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-policygrant-createenvironmentprofilepolicygrantdetail-syntax.yaml"></a>
 
-```
+```yaml
   [DomainUnitId](#cfn-datazone-policygrant-createenvironmentprofilepolicygrantdetail-domainunitid): {{String}}
 ```
 

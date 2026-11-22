@@ -39,7 +39,7 @@ Be aware of the following considerations when using the `AWS::CloudFormation::Au
 ### JSON
 <a name="aws-resource-cloudformation-authentication-syntax.json"></a>
 
-```
+```json
 {
   "AWS::CloudFormation::Authentication" {
     "{{String}}" : {
@@ -59,7 +59,7 @@ Be aware of the following considerations when using the `AWS::CloudFormation::Au
 ### YAML
 <a name="aws-resource-cloudformation-authentication-syntax.yaml"></a>
 
-```
+```yaml
 AWS::CloudFormation::Authentication
 {{String}}:
   accessKeyId: {{String}}
@@ -136,7 +136,7 @@ This template snippet shows how to get a file from a private S3 bucket within an
 #### JSON
 <a name="aws-resource-cloudformation-authentication-example1.json"></a>
 
-```
+```json
 "WebServer": {
    "Type": "AWS::EC2::Instance",
    "DependsOn" : "BucketPolicy",
@@ -181,7 +181,7 @@ This template snippet shows how to get a file from a private S3 bucket within an
 #### YAML
 <a name="aws-resource-cloudformation-authentication-example1.yaml"></a>
 
-```
+```yaml
 WebServer:
   Type: AWS::EC2::Instance
   DependsOn: BucketPolicy
@@ -224,7 +224,7 @@ The following example template snippet includes both *basic* and *S3* authentica
 #### JSON
 <a name="aws-resource-cloudformation-authentication-example2.json"></a>
 
-```
+```json
 "AWS::CloudFormation::Authentication" : {
    "testBasic" : {
       "type" : "basic",
@@ -244,7 +244,7 @@ The following example template snippet includes both *basic* and *S3* authentica
 #### YAML
 <a name="aws-resource-cloudformation-authentication-example2.yaml"></a>
 
-```
+```yaml
 AWS::CloudFormation::Authentication:
   testBasic:
     type: basic
@@ -271,7 +271,7 @@ The following example shows how to use IAM roles:
 #### JSON
 <a name="aws-resource-cloudformation-authentication-example3.json"></a>
 
-```
+```json
 "AWS::CloudFormation::Authentication": {
     "rolebased" : {
         "type": "S3",
@@ -284,7 +284,7 @@ The following example shows how to use IAM roles:
 #### YAML
 <a name="aws-resource-cloudformation-authentication-example3.yaml"></a>
 
-```
+```yaml
 AWS::CloudFormation::Authentication:
   rolebased:
     type: S3

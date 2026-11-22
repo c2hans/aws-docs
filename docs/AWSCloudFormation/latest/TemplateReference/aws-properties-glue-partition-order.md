@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-partition-order-syntax.json"></a>
 
-```
+```json
 {
   "[Column](#cfn-glue-partition-order-column)" : {{String}},
   "[SortOrder](#cfn-glue-partition-order-sortorder)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-partition-order-syntax.yaml"></a>
 
-```
+```yaml
   [Column](#cfn-glue-partition-order-column): {{String}}
   [SortOrder](#cfn-glue-partition-order-sortorder): {{Integer}}
 ```

@@ -49,14 +49,14 @@ The system generates OS-specific requirements, such as a computer name and an SI
 + **TimeZone**: The time zone is set to Coordinate Universal Time (UTC) by default.
 + **Synchronous command with order 1**: The system runs the following command, which enables the administrator account and specifies the password requirement:
 
-  ```
+  ```sh
   net user Administrator /ACTIVE:YES /LOGONPASSWORDCHG:NO /EXPIRES:NEVER /PASSWORDREQ:YES
   ```
 + **Synchronous command with order 2**: The system scrambles the administrator password. This security measure is designed to prevent the instance from being accessible after Windows Sysprep completes if you did not configure the `setAdminAccount` task.
 
   The system runs the following command from your local launch agent directory (`C:\Program Files\Amazon\EC2Launch\`).
 
-  ```
+  ```sh
   EC2Launch.exe internal randomize-password --username Administrator
   ```
 + To enable remote desktop connections, the system sets the Terminal Server `fDenyTSConnections` registry key to false.
@@ -124,6 +124,6 @@ When you are asked to confirm that you want to run Windows Sysprep and shut down
 
 You can manually invoke the Windows Sysprep tool from the command line using the following command:
 
-```
+```batch
 "%programfiles%\amazon\ec2launch\ec2launch.exe" sysprep --shutdown=true
 ```

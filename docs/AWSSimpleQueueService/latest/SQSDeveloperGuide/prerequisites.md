@@ -22,7 +22,7 @@ The [SDK for Java](https://aws.amazon.com/sdkforjava/) and Amazon SQS Extended C
 The Amazon SQS Java Messaging Library includes support for [Maven](http://maven.apache.org/) and the [Spring Framework](http://projects.spring.io/spring-framework/).
 For code samples that use Maven, the Spring Framework, and the Amazon SQS Java Messaging Library, see [Working Java examples for using JMS with Amazon SQS standard queues](sqs-jms-code-examples.md).
 
-  ```
+  ```xml
   <dependency>
     <groupId>com.amazonaws</groupId>
     <artifactId>amazon-sqs-java-messaging-lib</artifactId>

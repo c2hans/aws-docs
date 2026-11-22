@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-flowversion-flowcondition-syntax.json"></a>
 
-```
+```json
 {
   "[Expression](#cfn-bedrock-flowversion-flowcondition-expression)" : {{String}},
   "[Name](#cfn-bedrock-flowversion-flowcondition-name)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-flowversion-flowcondition-syntax.yaml"></a>
 
-```
+```yaml
   [Expression](#cfn-bedrock-flowversion-flowcondition-expression): {{String}}
   [Name](#cfn-bedrock-flowversion-flowcondition-name): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-identitypool-cognitostreams-syntax.json"></a>
 
-```
+```json
 {
   "[RoleArn](#cfn-cognito-identitypool-cognitostreams-rolearn)" : {{String}},
   "[StreamingStatus](#cfn-cognito-identitypool-cognitostreams-streamingstatus)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-identitypool-cognitostreams-syntax.yaml"></a>
 
-```
+```yaml
   [RoleArn](#cfn-cognito-identitypool-cognitostreams-rolearn): {{String}}
   [StreamingStatus](#cfn-cognito-identitypool-cognitostreams-streamingstatus): {{String}}
   [StreamName](#cfn-cognito-identitypool-cognitostreams-streamname): {{String}}

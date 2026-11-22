@@ -51,7 +51,7 @@ For more information, see [Working with log groups and log streams](https://docs
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch-logs#code-examples).
 Searches for log streams within a specified log group that match a given prefix.
 
-```
+```java
 /**
  * Before running this Java V2 code example, set up your development
  * environment, including your credentials.
@@ -131,7 +131,7 @@ public class CloudWatchLogsSearch {
 ```
 Prints metadata about the most recent log stream in a specified log group.
 
-```
+```java
 /**
  * Before running this Java V2 code example, set up your development
  * environment, including your credentials.

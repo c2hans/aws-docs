@@ -52,7 +52,7 @@ Be sure to perform these updates on a new DB instance restored from a snapshot o
 
 You can use the following SQL script on your existing MySQL DB instance to list the tables in your database that are MyISAM tables or compressed tables.
 
-```
+```sql
 -- This script examines a MySQL database for conditions that block
 -- migrating the database into Amazon Aurora.
 -- It needs to be run from an account that has read permission for the

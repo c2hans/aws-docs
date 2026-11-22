@@ -79,7 +79,7 @@ Perform this step only if you need to create a new placement group. To use an ex
 **To create a placement group**
 Use the [create-placement-group](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-placement-group.html) command.
 
-```
+```bash
 aws ec2 create-placement-group \
     --group-name {{MyPG}} \
     --strategy {{strategy}}
@@ -93,7 +93,7 @@ Make a note of the placement group ARN returned in the output, because you'll ne
 **To create a placement group**
 Use the [New-EC2PlacementGroup](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2PlacementGroup.html) cmdlet.
 
-```
+```powershell
 New-EC2PlacementGroup `
     -GroupName {{my-placement-group}} `
     -Strategy {{strategy}}
@@ -140,7 +140,7 @@ For more information, see [Create a Capacity Reservation](capacity-reservations-
 **To create a Capacity Reservation**
 Use the [create-capacity-reservation](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-capacity-reservation.html) command. For `--placement-group-arn`, specify the ARN of the placement group in which to create the Capacity Reservation.
 
-```
+```bash
 aws ec2 create-capacity-reservation \
     --instance-type {{instance_type}} \
     --instance-platform {{platform}} \
@@ -155,7 +155,7 @@ aws ec2 create-capacity-reservation \
 **To create a Capacity Reservation**
 Use the [Add-EC2CapacityReservation](https://docs.aws.amazon.com/powershell/latest/reference/items/Add-EC2CapacityReservation.html) cmdlet. For `-PlacementGroupArn`, specify the ARN of the placement group in which to create the Capacity Reservation.
 
-```
+```powershell
 Add-EC2CapacityReservation `
     -InstanceType {{instance_type}} `
     -InstancePlatform {{platform}} `
@@ -203,7 +203,7 @@ When you launch instances by specifying only a Capacity Reservation or only a Ca
 **To launch instances into an existing Capacity Reservation**
 Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command. If you need to target a specific Capacity Reservation or a Capacity Reservation group, specify the `--capacity-reservation-specification` parameter. For `--placement`, specify the `GroupName` parameter and then specify the name of the placement group that you created in the previous steps.
 
-```
+```bash
 aws ec2 run-instances \
     --image-id {{ami-0abcdef1234567890}} \
     --count {{quantity}} \
@@ -220,7 +220,7 @@ aws ec2 run-instances \
 **To launch instances into an existing Capacity Reservation**
 Use the [New-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Instance.html) cmdlet. For `-Placement`, specify the `GroupName` parameter and then specify the name of the placement group that you created in the previous steps.
 
-```
+```powershell
 New-EC2Instance `
     -ImageId {{ami-0abcdef1234567890}} `
     -InstanceType {{instance_type}} `

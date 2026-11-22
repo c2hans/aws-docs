@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rolesanywhere-profile-attributemapping-syntax.json"></a>
 
-```
+```json
 {
   "[CertificateField](#cfn-rolesanywhere-profile-attributemapping-certificatefield)" : {{String}},
   "[MappingRules](#cfn-rolesanywhere-profile-attributemapping-mappingrules)" : {{[ MappingRule, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rolesanywhere-profile-attributemapping-syntax.yaml"></a>
 
-```
+```yaml
   [CertificateField](#cfn-rolesanywhere-profile-attributemapping-certificatefield): {{String}}
   [MappingRules](#cfn-rolesanywhere-profile-attributemapping-mappingrules): {{
     - MappingRule}}

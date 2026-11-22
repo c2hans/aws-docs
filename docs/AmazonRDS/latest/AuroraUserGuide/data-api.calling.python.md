@@ -22,7 +22,7 @@ You can run a `SELECT` statement and fetch the results with a Python application
 
 The following example runs a SQL query.
 
-```
+```python
 import boto3
 
 	rdsData = boto3.client('rds-data')
@@ -93,7 +93,7 @@ If a call isn't part of a transaction because it doesn't include the `transactio
 
 The following example runs an insert SQL statement and uses parameters.
 
-```
+```python
 import boto3
 
 	cluster_arn = '{{arn:aws:rds:us-east-1:123456789012:cluster:mydbcluster}}'
@@ -125,7 +125,7 @@ If you don't specify a transaction ID, changes that result from the call are com
 
 The following example runs a SQL transaction that inserts a row in a table.
 
-```
+```python
 import boto3
 
 	rdsData = boto3.client('rds-data')

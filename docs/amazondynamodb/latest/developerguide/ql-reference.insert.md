@@ -45,6 +45,6 @@ If the DynamoDB table already has an item with the same primary key as the prima
 ## Examples
 <a name="ql-reference.insert.examples"></a>
 
-```
+```sql
 INSERT INTO "Music" value {'Artist' : 'Acme Band','SongTitle' : 'PartiQL Rocks'}
 ```

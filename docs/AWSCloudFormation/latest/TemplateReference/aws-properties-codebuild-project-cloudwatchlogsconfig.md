@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codebuild-project-cloudwatchlogsconfig-syntax.json"></a>
 
-```
+```json
 {
   "[GroupName](#cfn-codebuild-project-cloudwatchlogsconfig-groupname)" : {{String}},
   "[Status](#cfn-codebuild-project-cloudwatchlogsconfig-status)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codebuild-project-cloudwatchlogsconfig-syntax.yaml"></a>
 
-```
+```yaml
   [GroupName](#cfn-codebuild-project-cloudwatchlogsconfig-groupname): {{String}}
   [Status](#cfn-codebuild-project-cloudwatchlogsconfig-status): {{String}}
   [StreamName](#cfn-codebuild-project-cloudwatchlogsconfig-streamname): {{String}}

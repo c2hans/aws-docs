@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigateway-domainnamev2-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGateway::DomainNameV2",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigateway-domainnamev2-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGateway::DomainNameV2
 Properties:
   [CertificateArn](#cfn-apigateway-domainnamev2-certificatearn): {{String}}
@@ -141,7 +141,7 @@ The following example creates a `DomainNameV2` resource named `MyDomainName`.
 #### JSON
 <a name="aws-resource-apigateway-domainnamev2--examples--Private_custom_domain_name_example--json"></a>
 
-```
+```json
 {
     "MyDomainName": {
         "Type": "AWS::ApiGateway::DomainNameV2",
@@ -163,7 +163,7 @@ The following example creates a `DomainNameV2` resource named `MyDomainName`.
 #### YAML
 <a name="aws-resource-apigateway-domainnamev2--examples--Private_custom_domain_name_example--yaml"></a>
 
-```
+```yaml
 MyDomainName:
   Type: AWS::ApiGateway::DomainNameV2
   Properties:
@@ -197,7 +197,7 @@ The following example creates a `DomainNameV2` resource named `MyDomainName` wit
 #### JSON
 <a name="aws-resource-apigateway-domainnamev2--examples--Private_custom_domain_name_example_with_routing_mode--json"></a>
 
-```
+```json
 {
   "MyDomainName": {
     "Type": "AWS::ApiGateway::DomainNameV2",
@@ -220,7 +220,7 @@ The following example creates a `DomainNameV2` resource named `MyDomainName` wit
 #### YAML
 <a name="aws-resource-apigateway-domainnamev2--examples--Private_custom_domain_name_example_with_routing_mode--yaml"></a>
 
-```
+```yaml
 MyDomainName:
     Type: AWS::ApiGateway::DomainNameV2
     Properties:

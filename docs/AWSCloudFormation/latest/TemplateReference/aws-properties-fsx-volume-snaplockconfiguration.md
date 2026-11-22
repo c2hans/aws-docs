@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-volume-snaplockconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AuditLogVolume](#cfn-fsx-volume-snaplockconfiguration-auditlogvolume)" : {{String}},
   "[AutocommitPeriod](#cfn-fsx-volume-snaplockconfiguration-autocommitperiod)" : {{AutocommitPeriod}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-volume-snaplockconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AuditLogVolume](#cfn-fsx-volume-snaplockconfiguration-auditlogvolume): {{String}}
   [AutocommitPeriod](#cfn-fsx-volume-snaplockconfiguration-autocommitperiod): {{
     AutocommitPeriod}}

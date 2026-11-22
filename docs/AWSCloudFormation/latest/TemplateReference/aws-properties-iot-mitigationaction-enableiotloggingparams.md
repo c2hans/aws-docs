@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-mitigationaction-enableiotloggingparams-syntax.json"></a>
 
-```
+```json
 {
   "[LogLevel](#cfn-iot-mitigationaction-enableiotloggingparams-loglevel)" : {{String}},
   "[RoleArnForLogging](#cfn-iot-mitigationaction-enableiotloggingparams-rolearnforlogging)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-mitigationaction-enableiotloggingparams-syntax.yaml"></a>
 
-```
+```yaml
   [LogLevel](#cfn-iot-mitigationaction-enableiotloggingparams-loglevel): {{String}}
   [RoleArnForLogging](#cfn-iot-mitigationaction-enableiotloggingparams-rolearnforlogging): {{String}}
 ```

@@ -69,7 +69,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 The following example shows a CloudTrail log entry that demonstrates the `StartBackupJob`, `StartRestoreJob`, and `DeleteRecoveryPoint` actions and also the `BackupJobCompleted` event.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {
@@ -233,7 +233,7 @@ With AWS Backup, you can manage your backups across all AWS accounts inside your
 
 The following example shows a CloudTrail log entry that demonstrates the `CreateOrganizationalBackupPlan` action.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {
@@ -270,7 +270,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Create
 
 The following example shows a CloudTrail log entry that demonstrates the `DeleteOrganizationalBackupPlan` action.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {
@@ -306,7 +306,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Delete
 
 The following example shows a CloudTrail log entry that demonstrates the event `InvalidOrganizationBackupPlan`, which is sent when AWS Backup receives an invalid backup plan from Organizations.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

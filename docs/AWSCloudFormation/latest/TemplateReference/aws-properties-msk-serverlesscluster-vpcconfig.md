@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-serverlesscluster-vpcconfig-syntax.json"></a>
 
-```
+```json
 {
   "[SecurityGroups](#cfn-msk-serverlesscluster-vpcconfig-securitygroups)" : {{[ String, ... ]}},
   "[SubnetIds](#cfn-msk-serverlesscluster-vpcconfig-subnetids)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-serverlesscluster-vpcconfig-syntax.yaml"></a>
 
-```
+```yaml
   [SecurityGroups](#cfn-msk-serverlesscluster-vpcconfig-securitygroups): {{
     - String}}
   [SubnetIds](#cfn-msk-serverlesscluster-vpcconfig-subnetids): {{

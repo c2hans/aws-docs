@@ -32,7 +32,7 @@ The following procedures show how you delete or remove a data accessor using the
 ## Using the AWS CLI;
 <a name="data-accessors-removing-access-cli"></a>
 
-```
+```bash
 aws qbusiness delete-data-accessor \
 --application-id ${qbusiness_application_id} \
 --data-accessors-id ${qbusiness_data_accessor_id}

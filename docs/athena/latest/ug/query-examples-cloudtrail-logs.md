@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/query-examples-cloudtra
 
 The following example shows a portion of a query that returns all anonymous (unsigned) requests from the table created for CloudTrail event logs. This query selects those requests where `useridentity.accountid` is anonymous, and `useridentity.arn` is not specified:
 
-```
+```sql
 SELECT *
 FROM {{cloudtrail_logs}}
 WHERE
@@ -26,7 +26,7 @@ Because the `userIdentity` and `resources` fields are nested data types, queryin
 
 The `userIdentity` object consists of nested `STRUCT` types. These can be queried using a dot to separate the fields, as in the following example:
 
-```
+```sql
 SELECT
     eventsource,
     eventname,
@@ -42,7 +42,7 @@ The `resources` field is an array of `STRUCT` objects. For these arrays, use `CR
 
 The following example returns all rows where the resource ARN ends in `example/datafile.txt`. For readability, the [replace](https://prestodb.io/docs/current/functions/string.html#replace) function removes the initial `arn:aws:s3:::` substring from the ARN.
 
-```
+```sql
 SELECT
     awsregion,
     replace(unnested.resources_entry.ARN,'arn:aws:s3:::') as s3_resource,
@@ -57,7 +57,7 @@ ORDER BY eventtime
 
 The following example queries for `DeleteBucket` events. The query extracts the name of the bucket and the account ID to which the bucket belongs from the `resources` object.
 
-```
+```sql
 SELECT
     awsregion,
     replace(unnested.resources_entry.ARN,'arn:aws:s3:::') as deleted_bucket,
@@ -87,7 +87,7 @@ Consider the following when exploring CloudTrail log data:
 + Start by looking at which users called which API operations and from which source IP addresses.
 + Use the following basic SQL query as your template. Paste the query to the Athena console and run it.
 
-  ```
+  ```sql
   SELECT
    useridentity.arn,
    eventname,

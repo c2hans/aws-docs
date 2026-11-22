@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-medialive-multiplexprogram-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MediaLive::Multiplexprogram",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-medialive-multiplexprogram-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MediaLive::Multiplexprogram
 Properties:
   [MultiplexId](#cfn-medialive-multiplexprogram-multiplexid): {{String}}

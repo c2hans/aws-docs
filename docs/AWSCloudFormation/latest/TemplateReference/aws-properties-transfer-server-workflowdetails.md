@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-transfer-server-workflowdetails-syntax.json"></a>
 
-```
+```json
 {
   "[OnPartialUpload](#cfn-transfer-server-workflowdetails-onpartialupload)" : {{[ WorkflowDetail, ... ]}},
   "[OnUpload](#cfn-transfer-server-workflowdetails-onupload)" : {{[ WorkflowDetail, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-transfer-server-workflowdetails-syntax.yaml"></a>
 
-```
+```yaml
   [OnPartialUpload](#cfn-transfer-server-workflowdetails-onpartialupload): {{
     - WorkflowDetail}}
   [OnUpload](#cfn-transfer-server-workflowdetails-onupload): {{

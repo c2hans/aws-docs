@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityhub-insight-awssecurityfindingfilters-syntax.json"></a>
 
-```
+```json
 {
   "[AwsAccountId](#cfn-securityhub-insight-awssecurityfindingfilters-awsaccountid)" : {{[ StringFilter, ... ]}},
   "[AwsAccountName](#cfn-securityhub-insight-awssecurityfindingfilters-awsaccountname)" : {{[ StringFilter, ... ]}},
@@ -130,7 +130,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityhub-insight-awssecurityfindingfilters-syntax.yaml"></a>
 
-```
+```yaml
   [AwsAccountId](#cfn-securityhub-insight-awssecurityfindingfilters-awsaccountid): {{
     - StringFilter}}
   [AwsAccountName](#cfn-securityhub-insight-awssecurityfindingfilters-awsaccountname): {{

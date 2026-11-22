@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-securityprofile-metricsexportconfig-syntax.json"></a>
 
-```
+```json
 {
   "[MqttTopic](#cfn-iot-securityprofile-metricsexportconfig-mqtttopic)" : {{String}},
   "[RoleArn](#cfn-iot-securityprofile-metricsexportconfig-rolearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-securityprofile-metricsexportconfig-syntax.yaml"></a>
 
-```
+```yaml
   [MqttTopic](#cfn-iot-securityprofile-metricsexportconfig-mqtttopic): {{String}}
   [RoleArn](#cfn-iot-securityprofile-metricsexportconfig-rolearn): {{String}}
 ```

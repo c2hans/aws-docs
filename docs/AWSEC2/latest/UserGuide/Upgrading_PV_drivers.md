@@ -74,7 +74,7 @@ Instead of creating the AMI from the Amazon EC2 console, you can use Systems Man
 
 1. After you are connected, run the following PowerShell command:
 
-   ```
+   ```powershell
    Get-ItemProperty HKLM:\SOFTWARE\Amazon\PVDriver
    ```
 
@@ -116,14 +116,14 @@ Instead of creating the AMI from the Amazon EC2 console, you can use Systems Man
    + **Browser** – [Download](https://s3.amazonaws.com/ec2-windows-drivers-downloads/AWSPV/Latest/AWSPVDriver.zip) the latest driver package to the instance and extract the zip archive.
    + **PowerShell** – Run the following commands:
 
-     ```
+     ```powershell
      Invoke-WebRequest https://s3.amazonaws.com/ec2-windows-drivers-downloads/AWSPV/Latest/AWSPVDriver.zip -outfile $env:USERPROFILE\pv_driver.zip
      Expand-Archive $env:userprofile\pv_driver.zip -DestinationPath $env:userprofile\pv_drivers
      ```
 
      If you receive an error when downloading the file, and you are using Windows Server 2016 or earlier, TLS 1.2 might need to be enabled for your PowerShell terminal. You can enable TLS 1.2 for the current PowerShell session with the following command and then try again:
 
-     ```
+     ```powershell
      [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
      ```
 
@@ -131,7 +131,7 @@ Instead of creating the AMI from the Amazon EC2 console, you can use Systems Man
 
 After running the MSI, the instance automatically reboots and then upgrades the driver. The instance will not be available for up to 15 minutes. After the upgrade is complete and the instance passes both health checks in the Amazon EC2 console, you can verify that the new driver was installed by connecting to the instance using Remote Desktop and then running the following PowerShell command:
 
-```
+```powershell
 Get-ItemProperty HKLM:\SOFTWARE\Amazon\PVDriver
 ```
 
@@ -154,13 +154,13 @@ Use the following procedure on a domain controller to perform either an in-place
 **Warning**
 Before running this command, confirm that you know the DSRM password. You'll need this information so that you can log in to your instance after the upgrade is complete and the instance automatically reboots.
 
-   ```
+   ```batch
    bcdedit /set {default} safeboot dsrepair
    ```
 
    PowerShell:
 
-   ```
+   ```powershell
    PS C:\> bcdedit /set "{default}" safeboot dsrepair
    ```
 
@@ -170,7 +170,7 @@ After you run this command do not manually reboot the system. The system will be
 
 1. Run the following command to add **DisableDCCheck** to the registry:
 
-   ```
+   ```batch
    reg add HKLM\SOFTWARE\Wow6432Node\Amazon\AWSPVDriverSetup /v DisableDCCheck /t REG_SZ /d true
    ```
 
@@ -186,7 +186,7 @@ After you run this command do not manually reboot the system. The system will be
 
 1. Run the following command to remove the DSRM boot configuration:
 
-   ```
+   ```batch
    bcdedit /deletevalue safeboot
    ```
 
@@ -196,7 +196,7 @@ After you run this command do not manually reboot the system. The system will be
 
 1. Run the following command to delete **DisableDCCheck** from the registry:
 
-   ```
+   ```batch
    reg delete HKLM\SOFTWARE\Wow6432Node\Amazon\AWSPVDriverSetup /v DisableDCCheck
    ```
 
@@ -210,7 +210,7 @@ Before you start upgrading your Red Hat drivers to Citrix PV drivers, make sure 
 + Install the latest version of the EC2Config service. For more information, see [Install the latest version of EC2Config](UsingConfig_Install.md).
 + Verify that you have Windows PowerShell 3.0 installed. To verify the version that you have installed, run the following command in a PowerShell window:
 
-  ```
+  ```powershell
   PS C:\> $PSVersionTable.PSVersion
   ```
 

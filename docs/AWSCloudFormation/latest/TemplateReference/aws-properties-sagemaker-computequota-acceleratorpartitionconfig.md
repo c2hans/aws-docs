@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-computequota-acceleratorpartitionconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Count](#cfn-sagemaker-computequota-acceleratorpartitionconfig-count)" : {{Integer}},
   "[Type](#cfn-sagemaker-computequota-acceleratorpartitionconfig-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-computequota-acceleratorpartitionconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Count](#cfn-sagemaker-computequota-acceleratorpartitionconfig-count): {{Integer}}
   [Type](#cfn-sagemaker-computequota-acceleratorpartitionconfig-type): {{String}}
 ```

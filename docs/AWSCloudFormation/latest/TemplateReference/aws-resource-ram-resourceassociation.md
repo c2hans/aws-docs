@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ram-resourceassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RAM::ResourceAssociation",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ram-resourceassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RAM::ResourceAssociation
 Properties:
   [ResourceArn](#cfn-ram-resourceassociation-resourcearn): {{String}}
@@ -97,7 +97,7 @@ The following example associates a resource with a resource share.
 #### YAML
 <a name="aws-resource-ram-resourceassociation--examples--Associating_a_resource_with_a_resource_share--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   MyResourceAssociation:
@@ -110,7 +110,7 @@ Resources:
 #### JSON
 <a name="aws-resource-ram-resourceassociation--examples--Associating_a_resource_with_a_resource_share--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {

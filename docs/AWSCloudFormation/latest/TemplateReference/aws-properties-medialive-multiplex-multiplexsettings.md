@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-multiplex-multiplexsettings-syntax.json"></a>
 
-```
+```json
 {
   "[MaximumVideoBufferDelayMilliseconds](#cfn-medialive-multiplex-multiplexsettings-maximumvideobufferdelaymilliseconds)" : {{Integer}},
   "[TransportStreamBitrate](#cfn-medialive-multiplex-multiplexsettings-transportstreambitrate)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-multiplex-multiplexsettings-syntax.yaml"></a>
 
-```
+```yaml
   [MaximumVideoBufferDelayMilliseconds](#cfn-medialive-multiplex-multiplexsettings-maximumvideobufferdelaymilliseconds): {{Integer}}
   [TransportStreamBitrate](#cfn-medialive-multiplex-multiplexsettings-transportstreambitrate): {{Integer}}
   [TransportStreamId](#cfn-medialive-multiplex-multiplexsettings-transportstreamid): {{Integer}}

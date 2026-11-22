@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-kinesisanalyticsv2-applicationreferencedatasource-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-kinesisanalyticsv2-applicationreferencedatasource-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource
 Properties:
   [ApplicationName](#cfn-kinesisanalyticsv2-applicationreferencedatasource-applicationname): {{String}}
@@ -69,7 +69,7 @@ For a SQL-based Kinesis Data Analytics application, describes the reference data
 #### JSON
 <a name="aws-resource-kinesisanalyticsv2-applicationreferencedatasource--examples--Create_an_ApplicationReferenceDataSource_resource--json"></a>
 
-```
+```json
 {
     "ApplicationReferenceDataSource": {
         "Type": "AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource",
@@ -114,7 +114,7 @@ For a SQL-based Kinesis Data Analytics application, describes the reference data
 #### YAML
 <a name="aws-resource-kinesisanalyticsv2-applicationreferencedatasource--examples--Create_an_ApplicationReferenceDataSource_resource--yaml"></a>
 
-```
+```yaml
 ApplicationReferenceDataSource:
   Type: AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource
   Properties:

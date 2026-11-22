@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-evs-environment-serviceaccesssecuritygroups-syntax.json"></a>
 
-```
+```json
 {
   "[SecurityGroups](#cfn-evs-environment-serviceaccesssecuritygroups-securitygroups)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-evs-environment-serviceaccesssecuritygroups-syntax.yaml"></a>
 
-```
+```yaml
   [SecurityGroups](#cfn-evs-environment-serviceaccesssecuritygroups-securitygroups): {{
     - String}}
 ```

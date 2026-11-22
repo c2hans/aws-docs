@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-acmpca-certificateauthority-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ACMPCA::CertificateAuthority",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-acmpca-certificateauthority-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ACMPCA::CertificateAuthority
 Properties:
   [CsrExtensions](#cfn-acmpca-certificateauthority-csrextensions): {{
@@ -159,7 +159,7 @@ The following example of a CloudFormation template sets up a CA hierarchy and pe
 #### JSON
 <a name="aws-resource-acmpca-certificateauthority--examples--Declaring_a_private_CA_Hierarchy--json"></a>
 
-```
+```json
 {
    "AWSTemplateFormatVersion":"2010-09-09",
    "Description":"Cloudformation template to setup CA.",
@@ -479,7 +479,7 @@ The following example of a CloudFormation template sets up a CA hierarchy and pe
 #### YAML
 <a name="aws-resource-acmpca-certificateauthority--examples--Declaring_a_private_CA_Hierarchy--yaml"></a>
 
-```
+```yaml
 ---
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Cloudformation template to setup CA.

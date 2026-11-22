@@ -66,7 +66,7 @@ After you launch a Mac instance, you'll need to wait until the instance is ready
 
 You can use a small shell script, like the one below, to poll the describe-instance-status API to know when the instance is ready to be connected to. In the following command, replace the example instance ID with your own.
 
-```
+```bash
 for i in $(seq 1 200); do aws ec2 describe-instance-status --instance-ids={{i-1234567890abcdef0}} \
     --query='InstanceStatuses[0].InstanceStatus.Status'; sleep 5; done;
 ```
@@ -96,7 +96,7 @@ For more information, see [https://github.com/aws/ec2-macos-init](https://github
 
 Amazon EC2 System Monitor for macOS provides CPU utilization metrics to Amazon CloudWatch. It sends these metrics to CloudWatch over a custom serial device in 1-minute periods. You can enable or disable this agent as follows. It is enabled by default.
 
-```
+```bash
 sudo setup-ec2monitoring [enable | disable]
 ```
 

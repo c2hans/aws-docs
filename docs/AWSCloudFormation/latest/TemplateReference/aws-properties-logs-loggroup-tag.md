@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-logs-loggroup-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-logs-loggroup-tag-key)" : {{String}},
   "[Value](#cfn-logs-loggroup-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-logs-loggroup-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-logs-loggroup-tag-key): {{String}}
   [Value](#cfn-logs-loggroup-tag-value): {{String}}
 ```

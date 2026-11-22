@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-responseheaderspolicy-responseheaderspolicyconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Comment](#cfn-cloudfront-responseheaderspolicy-responseheaderspolicyconfig-comment)" : {{String}},
   "[CorsConfig](#cfn-cloudfront-responseheaderspolicy-responseheaderspolicyconfig-corsconfig)" : {{CorsConfig}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-responseheaderspolicy-responseheaderspolicyconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Comment](#cfn-cloudfront-responseheaderspolicy-responseheaderspolicyconfig-comment): {{String}}
   [CorsConfig](#cfn-cloudfront-responseheaderspolicy-responseheaderspolicyconfig-corsconfig): {{
     CorsConfig}}

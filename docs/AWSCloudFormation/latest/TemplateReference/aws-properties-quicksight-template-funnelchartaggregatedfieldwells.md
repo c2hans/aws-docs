@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-funnelchartaggregatedfieldwells-syntax.json"></a>
 
-```
+```json
 {
   "[Category](#cfn-quicksight-template-funnelchartaggregatedfieldwells-category)" : {{[ DimensionField, ... ]}},
   "[Values](#cfn-quicksight-template-funnelchartaggregatedfieldwells-values)" : {{[ MeasureField, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-funnelchartaggregatedfieldwells-syntax.yaml"></a>
 
-```
+```yaml
   [Category](#cfn-quicksight-template-funnelchartaggregatedfieldwells-category): {{
     - DimensionField}}
   [Values](#cfn-quicksight-template-funnelchartaggregatedfieldwells-values): {{

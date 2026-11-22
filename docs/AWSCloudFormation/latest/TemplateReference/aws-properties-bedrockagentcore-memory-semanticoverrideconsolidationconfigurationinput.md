@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-memory-semanticoverrideconsolidationconfigurationinput-syntax.json"></a>
 
-```
+```json
 {
   "[AppendToPrompt](#cfn-bedrockagentcore-memory-semanticoverrideconsolidationconfigurationinput-appendtoprompt)" : {{String}},
   "[ModelId](#cfn-bedrockagentcore-memory-semanticoverrideconsolidationconfigurationinput-modelid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-memory-semanticoverrideconsolidationconfigurationinput-syntax.yaml"></a>
 
-```
+```yaml
   [AppendToPrompt](#cfn-bedrockagentcore-memory-semanticoverrideconsolidationconfigurationinput-appendtoprompt): {{String}}
   [ModelId](#cfn-bedrockagentcore-memory-semanticoverrideconsolidationconfigurationinput-modelid): {{String}}
 ```

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpooldomain-failovertype-syntax.json"></a>
 
-```
+```json
 {
   "[PrimaryRoute53HealthCheckId](#cfn-cognito-userpooldomain-failovertype-primaryroute53healthcheckid)" : {{String}},
   "[SecondaryRegion](#cfn-cognito-userpooldomain-failovertype-secondaryregion)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpooldomain-failovertype-syntax.yaml"></a>
 
-```
+```yaml
   [PrimaryRoute53HealthCheckId](#cfn-cognito-userpooldomain-failovertype-primaryroute53healthcheckid): {{String}}
   [SecondaryRegion](#cfn-cognito-userpooldomain-failovertype-secondaryregion): {{String}}
 ```

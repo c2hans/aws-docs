@@ -8,7 +8,7 @@ When parallel query is turned on, Aurora MySQL determines whether to use it at r
 
 You can turn on and turn off parallel query dynamically at both the global and session level for a DB instance by using the **aurora\_parallel\_query** option. You can change the `aurora_parallel_query` setting in your DB cluster group to turn parallel query on or off by default.
 
-```
+```sql
 mysql> select @@aurora_parallel_query;
 +------------------------+
 | @@aurora_parallel_query|

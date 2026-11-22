@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-m2-environment-highavailabilityconfig-syntax.json"></a>
 
-```
+```json
 {
   "[DesiredCapacity](#cfn-m2-environment-highavailabilityconfig-desiredcapacity)" : {{Integer}}
 }
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-m2-environment-highavailabilityconfig-syntax.yaml"></a>
 
-```
+```yaml
   [DesiredCapacity](#cfn-m2-environment-highavailabilityconfig-desiredcapacity): {{Integer}}
 ```
 

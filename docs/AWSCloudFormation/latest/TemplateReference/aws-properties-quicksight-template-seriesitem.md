@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-seriesitem-syntax.json"></a>
 
-```
+```json
 {
   "[DataFieldSeriesItem](#cfn-quicksight-template-seriesitem-datafieldseriesitem)" : {{DataFieldSeriesItem}},
   "[FieldSeriesItem](#cfn-quicksight-template-seriesitem-fieldseriesitem)" : {{FieldSeriesItem}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-seriesitem-syntax.yaml"></a>
 
-```
+```yaml
   [DataFieldSeriesItem](#cfn-quicksight-template-seriesitem-datafieldseriesitem): {{
     DataFieldSeriesItem}}
   [FieldSeriesItem](#cfn-quicksight-template-seriesitem-fieldseriesitem): {{

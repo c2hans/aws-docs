@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-logs-querydefinition-queryparameter-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultValue](#cfn-logs-querydefinition-queryparameter-defaultvalue)" : {{String}},
   "[Description](#cfn-logs-querydefinition-queryparameter-description)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-logs-querydefinition-queryparameter-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultValue](#cfn-logs-querydefinition-queryparameter-defaultvalue): {{String}}
   [Description](#cfn-logs-querydefinition-queryparameter-description): {{String}}
   [Name](#cfn-logs-querydefinition-queryparameter-name): {{String}}

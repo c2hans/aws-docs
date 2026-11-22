@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-qbusiness-index-indexcapacityconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Units](#cfn-qbusiness-index-indexcapacityconfiguration-units)" : {{Number}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-qbusiness-index-indexcapacityconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Units](#cfn-qbusiness-index-indexcapacityconfiguration-units): {{Number}}
 ```
 

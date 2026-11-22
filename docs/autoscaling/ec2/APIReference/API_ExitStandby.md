@@ -71,7 +71,7 @@ https://autoscaling.amazonaws.com/?Action=ExitStandby
 #### Sample Response
 <a name="API_ExitStandby_Example_1_Response"></a>
 
-```
+```xml
 <ExitStandbyResponse xmlns="https://autoscaling.amazonaws.com/doc/2011-01-01/">
   <ExitStandbyResult>
     <Activities>

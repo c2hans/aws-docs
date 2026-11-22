@@ -50,7 +50,7 @@ In the following example, ForAllValues is used with aws:TagKeys to allow users t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -106,7 +106,7 @@ In the following example, ForAnyValue is used with aws:TagKeys to allow users to
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

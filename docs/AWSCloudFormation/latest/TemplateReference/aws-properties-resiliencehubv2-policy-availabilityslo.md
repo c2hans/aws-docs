@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-resiliencehubv2-policy-availabilityslo-syntax.json"></a>
 
-```
+```json
 {
   "[Target](#cfn-resiliencehubv2-policy-availabilityslo-target)" : {{Number}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-resiliencehubv2-policy-availabilityslo-syntax.yaml"></a>
 
-```
+```yaml
   [Target](#cfn-resiliencehubv2-policy-availabilityslo-target): {{Number}}
 ```
 

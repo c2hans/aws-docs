@@ -40,7 +40,7 @@ Consider the following when modifying an EC2 Fleet:
 **To modify the total target capacity of an EC2 Fleet**
 Use the [modify-fleet](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-fleet.html) command.
 
-```
+```bash
 aws ec2 modify-fleet \
     --fleet-id {{fleet-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE}} \
     --target-capacity-specification TotalTargetCapacity={{20}}
@@ -48,7 +48,7 @@ aws ec2 modify-fleet \
 
 If you are decreasing the target capacity but want to keep the fleet at its current size, you can modify the previous example as follows.
 
-```
+```bash
 aws ec2 modify-fleet \
     --fleet-id {{fleet-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE}} \
     --target-capacity-specification TotalTargetCapacity={{10}} \
@@ -61,7 +61,7 @@ aws ec2 modify-fleet \
 **To modify the total target capacity of an EC2 Fleet**
 Use the [Edit-EC2Fleet](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2Fleet.html) cmdlet.
 
-```
+```powershell
 Edit-EC2Fleet `
     -FleetId "{{fleet-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE}}" `
     -TargetCapacitySpecification_TotalTargetCapacity {{20}}
@@ -69,7 +69,7 @@ Edit-EC2Fleet `
 
 If you are decreasing the target capacity but want to keep the fleet at its current size, you can modify the previous example as follows.
 
-```
+```powershell
 Edit-EC2Fleet `
     -FleetId "{{fleet-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE}}" `
     -TargetCapacitySpecification_TotalTargetCapacity {{20}} `

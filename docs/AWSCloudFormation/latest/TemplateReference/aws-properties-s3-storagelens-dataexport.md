@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-storagelens-dataexport-syntax.json"></a>
 
-```
+```json
 {
   "[CloudWatchMetrics](#cfn-s3-storagelens-dataexport-cloudwatchmetrics)" : {{CloudWatchMetrics}},
   "[S3BucketDestination](#cfn-s3-storagelens-dataexport-s3bucketdestination)" : {{S3BucketDestination}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-storagelens-dataexport-syntax.yaml"></a>
 
-```
+```yaml
   [CloudWatchMetrics](#cfn-s3-storagelens-dataexport-cloudwatchmetrics): {{
     CloudWatchMetrics}}
   [S3BucketDestination](#cfn-s3-storagelens-dataexport-s3bucketdestination): {{

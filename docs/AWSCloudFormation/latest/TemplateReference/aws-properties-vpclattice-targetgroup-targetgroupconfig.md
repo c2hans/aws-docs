@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-vpclattice-targetgroup-targetgroupconfig-syntax.json"></a>
 
-```
+```json
 {
   "[HealthCheck](#cfn-vpclattice-targetgroup-targetgroupconfig-healthcheck)" : {{HealthCheckConfig}},
   "[IpAddressType](#cfn-vpclattice-targetgroup-targetgroupconfig-ipaddresstype)" : {{String}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-vpclattice-targetgroup-targetgroupconfig-syntax.yaml"></a>
 
-```
+```yaml
   [HealthCheck](#cfn-vpclattice-targetgroup-targetgroupconfig-healthcheck): {{
     HealthCheckConfig}}
   [IpAddressType](#cfn-vpclattice-targetgroup-targetgroupconfig-ipaddresstype): {{String}}

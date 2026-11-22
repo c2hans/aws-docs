@@ -24,7 +24,7 @@ Both AWS Identity and Access Management (IAM) roles must have the permissions to
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -82,7 +82,7 @@ Both AWS Identity and Access Management (IAM) roles must have the permissions to
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -129,7 +129,7 @@ Both AWS Identity and Access Management (IAM) roles must have the permissions to
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -187,7 +187,7 @@ Both AWS Identity and Access Management (IAM) roles must have the permissions to
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -234,7 +234,7 @@ We recommend that you include `aws:sourceAccount` and `aws:sourceArn` in the tru
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

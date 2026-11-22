@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-routeserverpeer-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::RouteServerPeer",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-routeserverpeer-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::RouteServerPeer
 Properties:
   [BgpOptions](#cfn-ec2-routeserverpeer-bgpoptions): {{

@@ -118,13 +118,13 @@ Replace the highlighted variables with actual values for your gateway. Acceptabl
 
 IPv4:
 
-```
+```sh
 curl "http://{{gateway_ip_address}}/?activationRegion={{region_code}}&gatewayType=BACKUP_VM&endpointType=DUALSTACK&ipVersion=ipv4&no_redirect"
 ```
 
 IPv6:
 
-```
+```sh
 curl "http://{{gateway_ip_address}}/?activationRegion={{region_code}}&gatewayType=BACKUP_VM&endpointType=DUALSTACK&ipVersion=ipv6&no_redirect"
 ```
 
@@ -157,7 +157,7 @@ Use the AWS CLI to create the gateway after obtaining an activation key:
 
 1. Create gateway using AWS CLI, for more information, see [CreateGateway](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_CreateGateway.html) in the *Backup gateway API Reference*.
 
-   ```
+   ```sh
    aws backup-gateway create-gateway \
                        --region {{region_code}} \
                        --activation-key {{activation_key}} \
@@ -242,12 +242,12 @@ Bandwidth rate-limit intervals cannot overlap. The start time of an interval mus
 
 The [`GetBandwidthRateLimitSchedule`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_GetBandwidthRateLimitSchedule.html) action can be used to view the bandwidth throttle schedule for a specified gateway. If there is no schedule set, the schedule will be an empty list of intervals. Here is an example using the AWS CLI to fetch the bandwidth schedule of a gateway:
 
-```
+```json
 aws backup-gateway get-bandwidth-rate-limit-schedule --gateway-arn "arn:aws:backup-gateway:{{region}}:{{account-id}}:gateway/bgw-{{gw id}}"
 ```
 
 To edit a gateway’s bandwidth throttle schedule, you can use the [`PutBandwidthRateLimitSchedule`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_PutBandwidthRateLimitSchedule.html) action. Note that you can only update a gateway’s schedule as a whole, rather than modifying, adding, or removing individual intervals. Calling this action will overwrite the gateway’s previous bandwidth throttle schedule.
 
-```
+```json
 aws backup-gateway put-bandwidth-rate-limit-schedule --gateway-arn "arn:aws:backup-gateway:{{region}}:{{account-id}}:gateway/{{gw-id}}" --bandwidth-rate-limit-intervals ...
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-glue-dataqualityruleset-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Glue::DataQualityRuleset",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-glue-dataqualityruleset-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Glue::DataQualityRuleset
 Properties:
   [ClientToken](#cfn-glue-dataqualityruleset-clienttoken): {{String}}

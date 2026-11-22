@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-prefetchschedule-prefetchretrieval-syntax.json"></a>
 
-```
+```json
 {
   "[DynamicVariables](#cfn-mediatailor-prefetchschedule-prefetchretrieval-dynamicvariables)" : {{{{{Key}}: {{Value}}, ...}}},
   "[EndTime](#cfn-mediatailor-prefetchschedule-prefetchretrieval-endtime)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-prefetchschedule-prefetchretrieval-syntax.yaml"></a>
 
-```
+```yaml
   [DynamicVariables](#cfn-mediatailor-prefetchschedule-prefetchretrieval-dynamicvariables): {{
     {{Key}}: {{Value}}}}
   [EndTime](#cfn-mediatailor-prefetchschedule-prefetchretrieval-endtime): {{String}}

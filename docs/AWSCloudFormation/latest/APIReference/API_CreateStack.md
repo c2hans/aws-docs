@@ -70,6 +70,12 @@ Default: `false`
 Type: Boolean
 Required: No
 
+ ** DisableValidation **
+ Set to `true` to disable pre-deployment validations in changeset or stack operations.
+ Default: `false`
+Type: Boolean
+Required: No
+
  ** EnableTerminationProtection **
 Whether to enable termination protection on the specified stack. If a user attempts to delete a stack with termination protection enabled, the operation fails and the stack remains unchanged. For more information, see [Protect CloudFormation stacks from being deleted](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-protect-stacks.html) in the * AWS CloudFormation User Guide*. Termination protection is deactivated on stacks by default.
 For [nested stacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-nested-stacks.html), termination protection is set on the root stack and can't be changed directly on the nested stack.

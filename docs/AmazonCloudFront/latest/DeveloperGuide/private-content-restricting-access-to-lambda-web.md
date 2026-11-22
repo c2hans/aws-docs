@@ -33,7 +33,7 @@ Attach a resource-based policy to the Lambda Web Function that allows the CloudF
 
 **Example Resource-based policy for CloudFront OAC**
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -152,7 +152,7 @@ Specify the following values in the `OriginAccessControlConfig`:
 
 **Example CloudFormation template**
 
-```
+```yaml
 Type: AWS::CloudFront::OriginAccessControl
 Properties:
   OriginAccessControlConfig:

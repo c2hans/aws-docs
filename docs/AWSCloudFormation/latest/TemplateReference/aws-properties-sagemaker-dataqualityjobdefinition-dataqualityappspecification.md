@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-dataqualityjobdefinition-dataqualityappspecification-syntax.json"></a>
 
-```
+```json
 {
   "[ContainerArguments](#cfn-sagemaker-dataqualityjobdefinition-dataqualityappspecification-containerarguments)" : {{[ String, ... ]}},
   "[ContainerEntrypoint](#cfn-sagemaker-dataqualityjobdefinition-dataqualityappspecification-containerentrypoint)" : {{[ String, ... ]}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-dataqualityjobdefinition-dataqualityappspecification-syntax.yaml"></a>
 
-```
+```yaml
   [ContainerArguments](#cfn-sagemaker-dataqualityjobdefinition-dataqualityappspecification-containerarguments): {{
     - String}}
   [ContainerEntrypoint](#cfn-sagemaker-dataqualityjobdefinition-dataqualityappspecification-containerentrypoint): {{

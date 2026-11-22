@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-calculatedmeasurefield-syntax.json"></a>
 
-```
+```json
 {
   "[Expression](#cfn-quicksight-dashboard-calculatedmeasurefield-expression)" : {{String}},
   "[FieldId](#cfn-quicksight-dashboard-calculatedmeasurefield-fieldid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-calculatedmeasurefield-syntax.yaml"></a>
 
-```
+```yaml
   [Expression](#cfn-quicksight-dashboard-calculatedmeasurefield-expression): {{String}}
   [FieldId](#cfn-quicksight-dashboard-calculatedmeasurefield-fieldid): {{String}}
 ```

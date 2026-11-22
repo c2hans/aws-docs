@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-serversideencryptionrule-syntax.json"></a>
 
-```
+```json
 {
   "[BlockedEncryptionTypes](#cfn-s3-bucket-serversideencryptionrule-blockedencryptiontypes)" : {{BlockedEncryptionTypes}},
   "[BucketKeyEnabled](#cfn-s3-bucket-serversideencryptionrule-bucketkeyenabled)" : {{Boolean}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-serversideencryptionrule-syntax.yaml"></a>
 
-```
+```yaml
   [BlockedEncryptionTypes](#cfn-s3-bucket-serversideencryptionrule-blockedencryptiontypes): {{
     BlockedEncryptionTypes}}
   [BucketKeyEnabled](#cfn-s3-bucket-serversideencryptionrule-bucketkeyenabled): {{Boolean}}
@@ -77,7 +77,7 @@ The following example creates a bucket with server-side bucket encryption config
 #### JSON
 <a name="aws-properties-s3-bucket-serversideencryptionrule--examples--Create_a_bucket_with_default_encryption--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "S3 bucket with default encryption",
@@ -108,7 +108,7 @@ The following example creates a bucket with server-side bucket encryption config
 #### YAML
 <a name="aws-properties-s3-bucket-serversideencryptionrule--examples--Create_a_bucket_with_default_encryption--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: S3 bucket with default encryption
 Resources:
@@ -132,7 +132,7 @@ The following example creates a bucket that specifies default encryption using A
 #### JSON
 <a name="aws-properties-s3-bucket-serversideencryptionrule--examples--Create_a_bucket_using_KMS_server-side_encryption_with_an_S3_Bucket_Key--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "S3 bucket with default encryption using SSE-KMS with an S3 Bucket Key",
@@ -164,7 +164,7 @@ The following example creates a bucket that specifies default encryption using A
 #### YAML
 <a name="aws-properties-s3-bucket-serversideencryptionrule--examples--Create_a_bucket_using_KMS_server-side_encryption_with_an_S3_Bucket_Key--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: S3 bucket with default encryption using SSE-KMS with an S3 Bucket Key
 Resources:

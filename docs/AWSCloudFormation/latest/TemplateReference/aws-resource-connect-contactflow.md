@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-connect-contactflow-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Connect::ContactFlow",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-connect-contactflow-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Connect::ContactFlow
 Properties:
   [Content](#cfn-connect-contactflow-content): {{String}}
@@ -142,7 +142,7 @@ The following example specifies a flow resource for an Connect Customer instance
 #### YAML
 <a name="aws-resource-connect-contactflow--examples--Specify_a_flow_resource--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Specifies a flow for an Connect Customer instance
 Resources:

@@ -19,7 +19,7 @@ To register your ElastiCache for Valkey and Redis OSS cluster, use the [register
  In the following example, you register an ElastiCache cluster named `myscalablecluster`. The registration indicates that the cluster should be dynamically scaled to have from one to ten shards.
 For Linux, macOS, or Unix:
 
-```
+```json
 aws application-autoscaling register-scalable-target \
     --service-namespace elasticache \
     --resource-id replication-group/myscalablecluster \
@@ -29,7 +29,7 @@ aws application-autoscaling register-scalable-target \
 ```
 For Windows:
 
-```
+```json
 aws application-autoscaling register-scalable-target ^
     --service-namespace elasticache ^
     --resource-id replication-group/myscalablecluster ^

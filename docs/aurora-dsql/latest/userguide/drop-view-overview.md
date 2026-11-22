@@ -9,7 +9,7 @@ The `DROP VIEW` statement removes an existing view. Aurora DSQL supports the ful
 ## Supported syntax
 <a name="drop-view-supported-syntax"></a>
 
-```
+```sql
 DROP VIEW [ IF EXISTS ] name [, ...] [ CASCADE | RESTRICT ]
 ```
 
@@ -36,7 +36,7 @@ Refuse to drop the view if any objects depend on it. This is the default.
 ## Examples
 <a name="drop-view-examples"></a>
 
-```
+```sql
 DROP VIEW kinds;
 ```
 

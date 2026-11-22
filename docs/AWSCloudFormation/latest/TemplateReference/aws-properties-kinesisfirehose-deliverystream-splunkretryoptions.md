@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-splunkretryoptions-syntax.json"></a>
 
-```
+```json
 {
   "[DurationInSeconds](#cfn-kinesisfirehose-deliverystream-splunkretryoptions-durationinseconds)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-splunkretryoptions-syntax.yaml"></a>
 
-```
+```yaml
   [DurationInSeconds](#cfn-kinesisfirehose-deliverystream-splunkretryoptions-durationinseconds): {{Integer}}
 ```
 

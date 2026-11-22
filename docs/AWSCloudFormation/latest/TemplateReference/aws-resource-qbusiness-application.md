@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-qbusiness-application-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::QBusiness::Application",
   "Properties" : {
@@ -49,7 +49,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-qbusiness-application-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::QBusiness::Application
 Properties:
   [AttachmentsConfiguration](#cfn-qbusiness-application-attachmentsconfiguration): {{

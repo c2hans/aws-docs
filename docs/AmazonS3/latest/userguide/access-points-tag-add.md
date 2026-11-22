@@ -81,7 +81,7 @@ The following CLI example shows you how to add tags to an access point by using 
 
 **Request:**
 
-```
+```bash
 aws s3control tag-resource \
 --account-id {{111122223333}} \
 --resource-arn arn:aws::s3:{{region}}:{{111122223333}}:accesspoint/{{{{my-access-point}}}}/* \
@@ -90,7 +90,7 @@ aws s3control tag-resource \
 
 **Response:**
 
-```
+```json
 {
   "ResponseMetadata": {
       "RequestId": "EXAMPLE123456789",

@@ -261,7 +261,7 @@ Follow these steps to update the ENA driver:
 
 1. If the installer doesn’t automatically reboot your instance, run the **Restart-Computer** PowerShell cmdlet.
 
-   ```
+   ```ps
    PS C:\> Restart-Computer
    ```
 
@@ -349,7 +349,7 @@ We recommend that you configure RSS to exclude CPU 0 for the ENA adapter on larg
 
 Use the **Set-NetAdapterRss** command to configure RSS for your ENA adapter, as shown in the following example.
 
-```
+```PowerShell
 Set-NetAdapterRss -name (Get-NetAdapter | Where-Object {$_.InterfaceDescription -like "*Elastic*"}).Name -Baseprocessorgroup 0 -BaseProcessorNumber 1
 ```
 

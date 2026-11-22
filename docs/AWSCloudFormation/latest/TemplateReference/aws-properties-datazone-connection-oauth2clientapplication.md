@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-connection-oauth2clientapplication-syntax.json"></a>
 
-```
+```json
 {
   "[AWSManagedClientApplicationReference](#cfn-datazone-connection-oauth2clientapplication-awsmanagedclientapplicationreference)" : {{String}},
   "[UserManagedClientApplicationClientId](#cfn-datazone-connection-oauth2clientapplication-usermanagedclientapplicationclientid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-connection-oauth2clientapplication-syntax.yaml"></a>
 
-```
+```yaml
   [AWSManagedClientApplicationReference](#cfn-datazone-connection-oauth2clientapplication-awsmanagedclientapplicationreference): {{String}}
   [UserManagedClientApplicationClientId](#cfn-datazone-connection-oauth2clientapplication-usermanagedclientapplicationclientid): {{String}}
 ```

@@ -16,7 +16,7 @@ For example, the following policy defines the permission for the spill location 
 
 ****
 
-```
+```json
 { "Version":"2012-10-17",		 	 	  "Statement": [ { "Effect": "Allow", "Action": [
     "s3:GetBucketLocation", "s3:GetObject", "s3:ListBucket", "s3:PutObject" ], "Resource": [
         "arn:aws:s3:::{{amzn-s3-demo-bucket}}/spill" ] } ] }
@@ -43,7 +43,7 @@ For API access to catalog registration and metadata operations, you can use the 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -102,7 +102,7 @@ Imagine the following scenario:
 
 To grant account `444455556666` access to the Lambda function `external-hms-service-new`, account `111122223333` uses the following AWS CLI `add-permission` command. The command has been formatted for readability.
 
-```
+```shell
 $ aws --profile perf-test lambda add-permission
       --function-name external-hms-service-new
       --region us-east-1
@@ -120,7 +120,7 @@ $ aws --profile perf-test lambda add-permission
 
 To check the Lambda permission, use the `get-policy` command, as in the following example. The command has been formatted for readability.
 
-```
+```shell
 $ aws --profile perf-test lambda get-policy
       --function-name arn:aws:lambda:us-east-1:111122223333:function:external-hms-service-new
       --region us-east-1
@@ -158,7 +158,7 @@ For example, add the following policy to the Amazon S3 bucket policy in the acco
 
 ****
 
-```
+```json
 { "Version":"2012-10-17",		 	 	  "Statement": [ { "Sid": "Stmt1234567890123", "Effect":
     "Allow", "Principal": { "AWS":
         "arn:aws:iam::{{444455556666}}:user/{{perf1-test}}"

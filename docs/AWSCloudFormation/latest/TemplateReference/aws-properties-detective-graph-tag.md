@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-detective-graph-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-detective-graph-tag-key)" : {{String}},
   "[Value](#cfn-detective-graph-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-detective-graph-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-detective-graph-tag-key): {{String}}
   [Value](#cfn-detective-graph-tag-value): {{String}}
 ```

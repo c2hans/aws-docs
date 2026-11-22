@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-infrastructureconfiguration-s3logs-syntax.json"></a>
 
-```
+```json
 {
   "[S3BucketName](#cfn-imagebuilder-infrastructureconfiguration-s3logs-s3bucketname)" : {{String}},
   "[S3KeyPrefix](#cfn-imagebuilder-infrastructureconfiguration-s3logs-s3keyprefix)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-infrastructureconfiguration-s3logs-syntax.yaml"></a>
 
-```
+```yaml
   [S3BucketName](#cfn-imagebuilder-infrastructureconfiguration-s3logs-s3bucketname): {{String}}
   [S3KeyPrefix](#cfn-imagebuilder-infrastructureconfiguration-s3logs-s3keyprefix): {{String}}
 ```

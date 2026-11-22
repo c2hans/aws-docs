@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-firelensconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Options](#cfn-batch-jobdefinition-firelensconfiguration-options)" : {{{{{Key}}: {{Value}}, ...}}},
   "[Type](#cfn-batch-jobdefinition-firelensconfiguration-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-firelensconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Options](#cfn-batch-jobdefinition-firelensconfiguration-options): {{
     {{Key}}: {{Value}}}}
   [Type](#cfn-batch-jobdefinition-firelensconfiguration-type): {{String}}

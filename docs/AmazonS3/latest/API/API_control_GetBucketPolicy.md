@@ -91,7 +91,7 @@ Type: String
 
 The following request gets the policy of the specified Outposts bucket `example-outpost-bucket`.
 
-```
+```HTTP
            GET /v20180820/bucket/example-outpost-bucket/policy HTTP/1.1
            Host: s3-outposts.<Region>.amazonaws.com
            Date: Wed, 28 Oct 2009 22:32:00 GMT

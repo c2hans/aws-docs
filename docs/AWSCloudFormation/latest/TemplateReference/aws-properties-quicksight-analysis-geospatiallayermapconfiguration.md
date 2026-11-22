@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-geospatiallayermapconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Interactions](#cfn-quicksight-analysis-geospatiallayermapconfiguration-interactions)" : {{VisualInteractionOptions}},
   "[Legend](#cfn-quicksight-analysis-geospatiallayermapconfiguration-legend)" : {{LegendOptions}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-geospatiallayermapconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Interactions](#cfn-quicksight-analysis-geospatiallayermapconfiguration-interactions): {{
     VisualInteractionOptions}}
   [Legend](#cfn-quicksight-analysis-geospatiallayermapconfiguration-legend): {{

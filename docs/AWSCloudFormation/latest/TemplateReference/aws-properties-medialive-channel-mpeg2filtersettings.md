@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-mpeg2filtersettings-syntax.json"></a>
 
-```
+```json
 {
   "[TemporalFilterSettings](#cfn-medialive-channel-mpeg2filtersettings-temporalfiltersettings)" : {{TemporalFilterSettings}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-mpeg2filtersettings-syntax.yaml"></a>
 
-```
+```yaml
   [TemporalFilterSettings](#cfn-medialive-channel-mpeg2filtersettings-temporalfiltersettings): {{
     TemporalFilterSettings}}
 ```

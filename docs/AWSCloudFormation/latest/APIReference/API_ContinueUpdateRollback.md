@@ -10,6 +10,8 @@ A stack enters the `UPDATE_ROLLBACK_FAILED` state when CloudFormation can't roll
 
 For more information, see [Continue rolling back an update](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-continueupdaterollback.html) in the * AWS CloudFormation User Guide*. For information for troubleshooting a failed update rollback, see [Update rollback failed](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/troubleshooting.html#troubleshooting-errors-update-rollback-failed).
 
+ `ForceRollback` and `ResourcesToSkip` are mutually exclusive. For details, see the `ForceRollback` parameter.
+
 ## Request Parameters
 <a name="API_ContinueUpdateRollback_RequestParameters"></a>
 
@@ -20,6 +22,14 @@ A unique identifier for this `ContinueUpdateRollback` request. Specify this toke
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `[a-zA-Z0-9][-a-zA-Z0-9]*`
+Required: No
+
+ ** ForceRollback **
+Specifies whether CloudFormation forces the rollback to continue by skipping resources currently in the `UPDATE_FAILED` state. Use this instead of listing each resource individually in `ResourcesToSkip`. Only resources that entered the `UPDATE_FAILED` state because a rollback failed are skipped. If you don't specify a value, the default is `false` and CloudFormation doesn't skip any resources.
+ `ForceRollback` and `ResourcesToSkip` are mutually exclusive. Specifying both in the same request returns a validation error.
+We recommend that you [troubleshoot](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/troubleshooting.html#troubleshooting-errors-update-rollback-failed) resources before skipping them. CloudFormation sets the status of the skipped resources to `UPDATE_COMPLETE` and continues to roll back the stack, including resources in nested stacks. After the rollback completes, the skipped resources no longer match the resources in the stack template. Before performing another stack update, you must update the stack or resources to be consistent with each other. If you don't, subsequent stack updates might fail, and the stack will become unrecoverable.
+Drift detection reports skipped resources as `NOT_CHECKED`. For guidance, see [Continue rolling back an update](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-continueupdaterollback.html) in the * AWS CloudFormation User Guide*.
+Type: Boolean
 Required: No
 
  **ResourcesToSkip.member.N**

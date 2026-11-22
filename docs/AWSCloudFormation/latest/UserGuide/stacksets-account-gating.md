@@ -25,7 +25,7 @@ The following requirements must be met for account gating:
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

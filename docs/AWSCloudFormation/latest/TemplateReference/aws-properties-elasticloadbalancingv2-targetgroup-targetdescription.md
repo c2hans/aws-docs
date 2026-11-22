@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancingv2-targetgroup-targetdescription-syntax.json"></a>
 
-```
+```json
 {
   "[AvailabilityZone](#cfn-elasticloadbalancingv2-targetgroup-targetdescription-availabilityzone)" : {{String}},
   "[Id](#cfn-elasticloadbalancingv2-targetgroup-targetdescription-id)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancingv2-targetgroup-targetdescription-syntax.yaml"></a>
 
-```
+```yaml
   [AvailabilityZone](#cfn-elasticloadbalancingv2-targetgroup-targetdescription-availabilityzone): {{String}}
   [Id](#cfn-elasticloadbalancingv2-targetgroup-targetdescription-id): {{String}}
   [Port](#cfn-elasticloadbalancingv2-targetgroup-targetdescription-port): {{Integer}}

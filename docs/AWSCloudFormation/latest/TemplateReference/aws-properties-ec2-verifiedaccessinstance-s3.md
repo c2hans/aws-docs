@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-verifiedaccessinstance-s3-syntax.json"></a>
 
-```
+```json
 {
   "[BucketName](#cfn-ec2-verifiedaccessinstance-s3-bucketname)" : {{String}},
   "[BucketOwner](#cfn-ec2-verifiedaccessinstance-s3-bucketowner)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-verifiedaccessinstance-s3-syntax.yaml"></a>
 
-```
+```yaml
   [BucketName](#cfn-ec2-verifiedaccessinstance-s3-bucketname): {{String}}
   [BucketOwner](#cfn-ec2-verifiedaccessinstance-s3-bucketowner): {{String}}
   [Enabled](#cfn-ec2-verifiedaccessinstance-s3-enabled): {{Boolean}}

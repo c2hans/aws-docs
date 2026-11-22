@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-function-httprequestcacheconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-mediatailor-function-httprequestcacheconfiguration-key)" : {{String}},
   "[TtlMaximumSeconds](#cfn-mediatailor-function-httprequestcacheconfiguration-ttlmaximumseconds)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-function-httprequestcacheconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-mediatailor-function-httprequestcacheconfiguration-key): {{String}}
   [TtlMaximumSeconds](#cfn-mediatailor-function-httprequestcacheconfiguration-ttlmaximumseconds): {{Integer}}
   [TtlMinimumSeconds](#cfn-mediatailor-function-httprequestcacheconfiguration-ttlminimumseconds): {{Integer}}

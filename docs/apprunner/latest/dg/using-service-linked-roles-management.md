@@ -39,7 +39,7 @@ The permissions policies of the AWSServiceRoleForAppRunner service-linked role c
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

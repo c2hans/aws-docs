@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelpackage-bias-syntax.json"></a>
 
-```
+```json
 {
   "[PostTrainingReport](#cfn-sagemaker-modelpackage-bias-posttrainingreport)" : {{MetricsSource}},
   "[PreTrainingReport](#cfn-sagemaker-modelpackage-bias-pretrainingreport)" : {{MetricsSource}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelpackage-bias-syntax.yaml"></a>
 
-```
+```yaml
   [PostTrainingReport](#cfn-sagemaker-modelpackage-bias-posttrainingreport): {{
     MetricsSource}}
   [PreTrainingReport](#cfn-sagemaker-modelpackage-bias-pretrainingreport): {{

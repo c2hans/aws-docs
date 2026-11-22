@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-topic-topiccategoryfilter-syntax.json"></a>
 
-```
+```json
 {
   "[CategoryFilterFunction](#cfn-quicksight-topic-topiccategoryfilter-categoryfilterfunction)" : {{String}},
   "[CategoryFilterType](#cfn-quicksight-topic-topiccategoryfilter-categoryfiltertype)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-topic-topiccategoryfilter-syntax.yaml"></a>
 
-```
+```yaml
   [CategoryFilterFunction](#cfn-quicksight-topic-topiccategoryfilter-categoryfilterfunction): {{String}}
   [CategoryFilterType](#cfn-quicksight-topic-topiccategoryfilter-categoryfiltertype): {{String}}
   [Constant](#cfn-quicksight-topic-topiccategoryfilter-constant): {{

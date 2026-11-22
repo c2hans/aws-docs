@@ -77,7 +77,7 @@ aws dsql create-cluster --policy '{
 ------
 #### [ Python ]
 
-```
+```python
 import boto3
 import json
 
@@ -106,7 +106,7 @@ print(f"Cluster created: {response['identifier']}")
 ------
 #### [ Java ]
 
-```
+```java
 import software.amazon.awssdk.services.dsql.DsqlClient;
 import software.amazon.awssdk.services.dsql.model.CreateClusterRequest;
 import software.amazon.awssdk.services.dsql.model.CreateClusterResponse;

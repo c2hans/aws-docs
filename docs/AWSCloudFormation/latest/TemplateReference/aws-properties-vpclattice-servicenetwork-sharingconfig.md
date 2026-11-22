@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-vpclattice-servicenetwork-sharingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[enabled](#cfn-vpclattice-servicenetwork-sharingconfig-enabled)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-vpclattice-servicenetwork-sharingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [enabled](#cfn-vpclattice-servicenetwork-sharingconfig-enabled): {{Boolean}}
 ```
 

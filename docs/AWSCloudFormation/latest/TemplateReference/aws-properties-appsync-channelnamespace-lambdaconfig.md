@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appsync-channelnamespace-lambdaconfig-syntax.json"></a>
 
-```
+```json
 {
   "[InvokeType](#cfn-appsync-channelnamespace-lambdaconfig-invoketype)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appsync-channelnamespace-lambdaconfig-syntax.yaml"></a>
 
-```
+```yaml
   [InvokeType](#cfn-appsync-channelnamespace-lambdaconfig-invoketype): {{String}}
 ```
 

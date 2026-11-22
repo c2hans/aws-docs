@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchservice-domain-zoneawarenessconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AvailabilityZoneCount](#cfn-opensearchservice-domain-zoneawarenessconfig-availabilityzonecount)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchservice-domain-zoneawarenessconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AvailabilityZoneCount](#cfn-opensearchservice-domain-zoneawarenessconfig-availabilityzonecount): {{Integer}}
 ```
 

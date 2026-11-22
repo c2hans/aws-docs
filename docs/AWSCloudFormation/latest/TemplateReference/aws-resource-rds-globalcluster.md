@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-rds-globalcluster-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RDS::GlobalCluster",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-rds-globalcluster-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RDS::GlobalCluster
 Properties:
   [DeletionProtection](#cfn-rds-globalcluster-deletionprotection): {{Boolean}}
@@ -160,7 +160,7 @@ The following example creates a global database cluster with an Aurora MySQL DB 
 #### JSON
 <a name="aws-resource-rds-globalcluster--examples--Creating_a_Global_Database_cluster_for_Aurora_MySQL--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Parameters": {
@@ -232,7 +232,7 @@ The following example creates a global database cluster with an Aurora MySQL DB 
 #### YAML
 <a name="aws-resource-rds-globalcluster--examples--Creating_a_Global_Database_cluster_for_Aurora_MySQL--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:
   GlobalClusterIdentifier:
@@ -286,7 +286,7 @@ The following example creates a global database cluster with an Aurora PostgreSQ
 #### JSON
 <a name="aws-resource-rds-globalcluster--examples--Creating_a_Global_Database_cluster_for_Aurora_PostgreSQL--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Parameters": {
@@ -358,7 +358,7 @@ The following example creates a global database cluster with an Aurora PostgreSQ
 #### YAML
 <a name="aws-resource-rds-globalcluster--examples--Creating_a_Global_Database_cluster_for_Aurora_PostgreSQL--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:
   GlobalClusterIdentifier:
@@ -414,7 +414,7 @@ Specify the `GlobalClusterIdentifier` of a global database cluster with the prim
 #### JSON
 <a name="aws-resource-rds-globalcluster--examples--Adding_a_Region_to_an_Aurora_database_cluster--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Parameters": {
@@ -454,7 +454,7 @@ Specify the `GlobalClusterIdentifier` of a global database cluster with the prim
 #### YAML
 <a name="aws-resource-rds-globalcluster--examples--Adding_a_Region_to_an_Aurora_database_cluster--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:
   GlobalClusterIdentifier:
@@ -488,7 +488,7 @@ The example includes the template that was used to create the DB cluster. After 
 #### JSON
 <a name="aws-resource-rds-globalcluster--examples--Adding_a_DB_cluster_to_a_Global_Database_cluster--json"></a>
 
-```
+```json
 The following template was used to create DB cluster that you want to add to the global database cluster.
 {
     "AWSTemplateFormatVersion": "2010-09-09",
@@ -614,7 +614,7 @@ The following template adds the DB cluster created by the previous template to a
 #### YAML
 <a name="aws-resource-rds-globalcluster--examples--Adding_a_DB_cluster_to_a_Global_Database_cluster--yaml"></a>
 
-```
+```yaml
 The following template created the DB cluster that you want to add to the global database cluster.
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:

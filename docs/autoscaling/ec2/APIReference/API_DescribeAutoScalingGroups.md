@@ -102,7 +102,7 @@ https://autoscaling.amazonaws.com/?Action=DescribeAutoScalingGroups
 #### Sample Response
 <a name="API_DescribeAutoScalingGroups_Example_1_Response"></a>
 
-```
+```xml
 <DescribeAutoScalingGroupsResponse xmlns="https://autoscaling.amazonaws.com/doc/2011-01-01/">
   <DescribeAutoScalingGroupsResult>
     <AutoScalingGroups>

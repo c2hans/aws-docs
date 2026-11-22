@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-algorithm-channelspecification-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-sagemaker-algorithm-channelspecification-description)" : {{String}},
   "[IsRequired](#cfn-sagemaker-algorithm-channelspecification-isrequired)" : {{Boolean}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-algorithm-channelspecification-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-sagemaker-algorithm-channelspecification-description): {{String}}
   [IsRequired](#cfn-sagemaker-algorithm-channelspecification-isrequired): {{Boolean}}
   [Name](#cfn-sagemaker-algorithm-channelspecification-name): {{String}}

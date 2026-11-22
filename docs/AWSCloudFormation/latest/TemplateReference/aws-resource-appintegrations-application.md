@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-appintegrations-application-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppIntegrations::Application",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-appintegrations-application-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppIntegrations::Application
 Properties:
   [ApplicationConfig](#cfn-appintegrations-application-applicationconfig): {{

@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-requestbodyassociatedresourcetypeconfig-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultSizeInspectionLimit](#cfn-wafv2-webacl-requestbodyassociatedresourcetypeconfig-defaultsizeinspectionlimit)" : {{String}}
 }
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-requestbodyassociatedresourcetypeconfig-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultSizeInspectionLimit](#cfn-wafv2-webacl-requestbodyassociatedresourcetypeconfig-defaultsizeinspectionlimit): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-thesaurus-s3path-syntax.json"></a>
 
-```
+```json
 {
   "[Bucket](#cfn-kendra-thesaurus-s3path-bucket)" : {{String}},
   "[Key](#cfn-kendra-thesaurus-s3path-key)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-thesaurus-s3path-syntax.yaml"></a>
 
-```
+```yaml
   [Bucket](#cfn-kendra-thesaurus-s3path-bucket): {{String}}
   [Key](#cfn-kendra-thesaurus-s3path-key): {{String}}
 ```

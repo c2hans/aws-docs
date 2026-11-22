@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-cluster-instancerequirements-syntax.json"></a>
 
-```
+```json
 {
   "[InstanceTypes](#cfn-sagemaker-cluster-instancerequirements-instancetypes)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-cluster-instancerequirements-syntax.yaml"></a>
 
-```
+```yaml
   [InstanceTypes](#cfn-sagemaker-cluster-instancerequirements-instancetypes): {{
     - String}}
 ```

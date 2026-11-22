@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cassandra-table-warmthroughput-syntax.json"></a>
 
-```
+```json
 {
   "[ReadUnitsPerSecond](#cfn-cassandra-table-warmthroughput-readunitspersecond)" : {{Integer}},
   "[WriteUnitsPerSecond](#cfn-cassandra-table-warmthroughput-writeunitspersecond)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cassandra-table-warmthroughput-syntax.yaml"></a>
 
-```
+```yaml
   [ReadUnitsPerSecond](#cfn-cassandra-table-warmthroughput-readunitspersecond): {{Integer}}
   [WriteUnitsPerSecond](#cfn-cassandra-table-warmthroughput-writeunitspersecond): {{Integer}}
 ```

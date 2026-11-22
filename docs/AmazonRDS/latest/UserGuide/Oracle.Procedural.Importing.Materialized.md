@@ -14,7 +14,7 @@ Before you can migrate using materialized views, make sure that you meet the fol
 
 1. Create a user account on both source and RDS for Oracle target instances that can authenticate with the same password. The following example creates a user named `dblink_user`.
 
-   ```
+   ```sql
    CREATE USER dblink_user IDENTIFIED BY {{my-password}}
      DEFAULT TABLESPACE users
      TEMPORARY TABLESPACE temp;
@@ -30,7 +30,7 @@ Specify a password other than the prompt shown here as a security best practice.
 
 1. Create a database link from the RDS for Oracle target instance to the source instance using your newly created user.
 
-   ```
+   ```sql
    CREATE DATABASE LINK remote_site
      CONNECT TO dblink_user IDENTIFIED BY {{my-password}}
      USING '(description=(address=(protocol=tcp) (host={{my-host}})
@@ -41,13 +41,13 @@ Specify a password other than the prompt shown here as a security best practice.
 
 1. Test the link:
 
-   ```
+   ```sql
    SELECT * FROM V$INSTANCE@remote_site;
    ```
 
 1. Create a sample table with primary key and materialized view log on the source instance.
 
-   ```
+   ```sql
    CREATE TABLE customer_0 TABLESPACE users
      AS (SELECT ROWNUM id, o.*
          FROM   ALL_OBJECTS o, ALL_OBJECTS x
@@ -60,7 +60,7 @@ Specify a password other than the prompt shown here as a security best practice.
 
 1. On the target RDS for Oracle DB instance, create a materialized view.
 
-   ```
+   ```sql
    CREATE MATERIALIZED VIEW customer_0
      BUILD IMMEDIATE REFRESH FAST
      AS (SELECT *
@@ -69,13 +69,13 @@ Specify a password other than the prompt shown here as a security best practice.
 
 1. On the target RDS for Oracle DB instance, refresh the materialized view.
 
-   ```
+   ```sql
    EXEC DBMS_MVIEW.REFRESH('CUSTOMER_0', 'f');
    ```
 
 1. Drop the materialized view and include the `PRESERVE TABLE` clause to retain the materialized view container table and its contents.
 
-   ```
+   ```sql
    DROP MATERIALIZED VIEW customer_0 PRESERVE TABLE;
    ```
 

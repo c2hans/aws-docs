@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-connectedaccountchainconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Chain](#cfn-wafv2-webacl-connectedaccountchainconfig-chain)" : {{String}},
   "[Prices](#cfn-wafv2-webacl-connectedaccountchainconfig-prices)" : {{[ ConnectedAccountPrice, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-connectedaccountchainconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Chain](#cfn-wafv2-webacl-connectedaccountchainconfig-chain): {{String}}
   [Prices](#cfn-wafv2-webacl-connectedaccountchainconfig-prices): {{
     - ConnectedAccountPrice}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BucketARN](#cfn-kinesisfirehose-deliverystream-s3destinationconfiguration-bucketarn)" : {{String}},
   "[BufferingHints](#cfn-kinesisfirehose-deliverystream-s3destinationconfiguration-bufferinghints)" : {{BufferingHints}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BucketARN](#cfn-kinesisfirehose-deliverystream-s3destinationconfiguration-bucketarn): {{String}}
   [BufferingHints](#cfn-kinesisfirehose-deliverystream-s3destinationconfiguration-bufferinghints): {{
     BufferingHints}}

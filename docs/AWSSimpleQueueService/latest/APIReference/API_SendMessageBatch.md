@@ -202,7 +202,7 @@ The following example `SendMessageBatch` request sends two messages to the queue
 #### Sample Request
 <a name="API_SendMessageBatch_Example_1_Request"></a>
 
-```
+```json
 POST / HTTP/1.1
 Host: sqs.us-east-1.amazonaws.com
 X-Amz-Target: AmazonSQS.SendMessageBatch
@@ -236,7 +236,7 @@ Connection: Keep-Alive
 #### Sample Response
 <a name="API_SendMessageBatch_Example_1_Response"></a>
 
-```
+```json
 HTTP/1.1 200 OK
 x-amzn-RequestId: <requestId>
 Content-Length: <PayloadSizeBytes>
@@ -268,7 +268,7 @@ Content-Type: application/x-amz-json-1.0
 #### Sample Request
 <a name="API_SendMessageBatch_Example_2_Request"></a>
 
-```
+```xml
 POST /177715257436/MyQueue/ HTTP/1.1
 Host: sqs.us-east-1.amazonaws.com
 X-Amz-Date: <Date>
@@ -290,7 +290,7 @@ Action=SendMessageBatch
 #### Sample Response
 <a name="API_SendMessageBatch_Example_2_Response"></a>
 
-```
+```xml
 HTTP/1.1 200 OK
 <?xml version="1.0"?>
 <SendMessageBatchResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/">
@@ -326,7 +326,7 @@ If you don't set a value for the `DelaySeconds` parameter, the message might sti
 #### Sample Request
 <a name="API_SendMessageBatch_Example_3_Request"></a>
 
-```
+```xml
 POST / HTTP/1.1
 Host: sqs.us-east-1.amazonaws.com
 X-Amz-Target: AmazonSQS.SendMessageBatch
@@ -364,7 +364,7 @@ Connection: Keep-Alive
 #### Sample Request
 <a name="API_SendMessageBatch_Example_4_Request"></a>
 
-```
+```xml
 POST /177715257436/MyQueue/ HTTP/1.1
 Host: sqs.us-east-1.amazonaws.com
 X-Amz-Date: <Date>

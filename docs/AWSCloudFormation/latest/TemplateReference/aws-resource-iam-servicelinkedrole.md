@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iam-servicelinkedrole-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IAM::ServiceLinkedRole",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iam-servicelinkedrole-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IAM::ServiceLinkedRole
 Properties:
   [AWSServiceName](#cfn-iam-servicelinkedrole-awsservicename): {{String}}
@@ -106,7 +106,7 @@ The following example creates a service-linked role that can be assumed by the A
 #### JSON
 <a name="aws-resource-iam-servicelinkedrole--examples--Service-Linked_Role_for_Auto_Scaling--json"></a>
 
-```
+```json
 {
     "Description": "SLR resource create test - Auto Scaling",
     "Resources": {
@@ -132,7 +132,7 @@ The following example creates a service-linked role that can be assumed by the A
 #### YAML
 <a name="aws-resource-iam-servicelinkedrole--examples--Service-Linked_Role_for_Auto_Scaling--yaml"></a>
 
-```
+```yaml
 Description: SLR resource create test - Auto Scaling
 Resources:
   BasicSLR:

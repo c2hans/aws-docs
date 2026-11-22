@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-storagelens-advanceddataprotectionmetrics-syntax.json"></a>
 
-```
+```json
 {
   "[IsEnabled](#cfn-s3-storagelens-advanceddataprotectionmetrics-isenabled)" : {{Boolean}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-storagelens-advanceddataprotectionmetrics-syntax.yaml"></a>
 
-```
+```yaml
   [IsEnabled](#cfn-s3-storagelens-advanceddataprotectionmetrics-isenabled): {{Boolean}}
 ```
 

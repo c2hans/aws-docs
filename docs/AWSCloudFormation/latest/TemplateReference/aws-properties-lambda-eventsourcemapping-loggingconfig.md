@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-eventsourcemapping-loggingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[SystemLogLevel](#cfn-lambda-eventsourcemapping-loggingconfig-systemloglevel)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-eventsourcemapping-loggingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [SystemLogLevel](#cfn-lambda-eventsourcemapping-loggingconfig-systemloglevel): {{String}}
 ```
 

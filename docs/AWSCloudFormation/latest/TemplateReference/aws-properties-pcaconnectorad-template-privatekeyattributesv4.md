@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcaconnectorad-template-privatekeyattributesv4-syntax.json"></a>
 
-```
+```json
 {
   "[Algorithm](#cfn-pcaconnectorad-template-privatekeyattributesv4-algorithm)" : {{String}},
   "[CryptoProviders](#cfn-pcaconnectorad-template-privatekeyattributesv4-cryptoproviders)" : {{[ String, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcaconnectorad-template-privatekeyattributesv4-syntax.yaml"></a>
 
-```
+```yaml
   [Algorithm](#cfn-pcaconnectorad-template-privatekeyattributesv4-algorithm): {{String}}
   [CryptoProviders](#cfn-pcaconnectorad-template-privatekeyattributesv4-cryptoproviders): {{
     - String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-table-viewdefinition-syntax.json"></a>
 
-```
+```json
 {
   "[Definer](#cfn-glue-table-viewdefinition-definer)" : {{String}},
   "[IsProtected](#cfn-glue-table-viewdefinition-isprotected)" : {{Boolean}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-table-viewdefinition-syntax.yaml"></a>
 
-```
+```yaml
   [Definer](#cfn-glue-table-viewdefinition-definer): {{String}}
   [IsProtected](#cfn-glue-table-viewdefinition-isprotected): {{Boolean}}
   [Representations](#cfn-glue-table-viewdefinition-representations): {{

@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-securitygroupingress-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::SecurityGroupIngress",
   "Properties" : {
@@ -47,7 +47,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-securitygroupingress-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::SecurityGroupIngress
 Properties:
   [CidrIp](#cfn-ec2-securitygroupingress-cidrip): {{String}}
@@ -164,7 +164,7 @@ In some cases, you might have an originating (source) security group to which yo
 #### JSON
 <a name="aws-resource-ec2-securitygroupingress--examples--VPC_security_groups_with_egress_and_ingress_rules--json"></a>
 
-```
+```json
 {
     "Resources": {
         "SourceSG": {
@@ -228,7 +228,7 @@ In some cases, you might have an originating (source) security group to which yo
 #### YAML
 <a name="aws-resource-ec2-securitygroupingress--examples--VPC_security_groups_with_egress_and_ingress_rules--yaml"></a>
 
-```
+```yaml
 Resources:
   SourceSG:
     Type: AWS::EC2::SecurityGroup
@@ -278,7 +278,7 @@ The following example allows one-way traffic from an originating (source) securi
 #### JSON
 <a name="aws-resource-ec2-securitygroupingress--examples--Allow_traffic_from_a_security_group_in_a_peered_VPC--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -312,7 +312,7 @@ The following example allows one-way traffic from an originating (source) securi
 #### YAML
 <a name="aws-resource-ec2-securitygroupingress--examples--Allow_traffic_from_a_security_group_in_a_peered_VPC--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   TargetSG:

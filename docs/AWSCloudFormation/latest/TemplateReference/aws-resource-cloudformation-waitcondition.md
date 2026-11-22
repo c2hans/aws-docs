@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudformation-waitcondition-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudFormation::WaitCondition",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudformation-waitcondition-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudFormation::WaitCondition
 Properties:
   [Count](#cfn-cloudformation-waitcondition-count): {{Integer}}
@@ -101,7 +101,7 @@ Returns a unique identifier for the resource.
 #### JSON
 <a name="aws-resource-cloudformation-waitcondition--examples--WaitCondition_that_has_a_timeout_of_300_seconds--json"></a>
 
-```
+```json
 {
     "WaitHandle": {
         "Type": "AWS::CloudFormation::WaitConditionHandle"
@@ -122,7 +122,7 @@ Returns a unique identifier for the resource.
 #### YAML
 <a name="aws-resource-cloudformation-waitcondition--examples--WaitCondition_that_has_a_timeout_of_300_seconds--yaml"></a>
 
-```
+```yaml
 WaitHandle:
   Type: AWS::CloudFormation::WaitConditionHandle
 WaitCondition:

@@ -16,7 +16,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/data-ap
 
  The timeout interval is especially important for the Java 2 SDK. In that SDK, the API call timeout and the HTTP socket timeout are both 30 seconds by default. Here is an example of setting those timeouts to a higher value:
 
-```
+```java
 public RdsDataClient createRdsDataClient() {
 	    return RdsDataClient.builder()
 	        .region(Region.US_EAST_1) // Change this to your desired Region
@@ -40,7 +40,7 @@ public RdsDataClient createRdsDataClient() {
 
  Here is an equivalent example using the asynchronous data client:
 
-```
+```java
 public static RdsDataAsyncClient createRdsDataAsyncClient() {
 	    return RdsDataAsyncClient.builder()
 	        .region(Region.US_EAST_1) // Change this to your desired Region

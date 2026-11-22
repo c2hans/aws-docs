@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-botalias-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-lex-botalias-tag-key)" : {{String}},
   "[Value](#cfn-lex-botalias-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-botalias-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-lex-botalias-tag-key): {{String}}
   [Value](#cfn-lex-botalias-tag-value): {{String}}
 ```

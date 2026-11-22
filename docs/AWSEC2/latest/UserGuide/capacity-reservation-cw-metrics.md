@@ -64,6 +64,6 @@ Metrics are grouped first by the service namespace, and then by the supported di
 **To view Capacity Reservation metrics using the AWS CLI**
 Use the following [list-metrics](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/list-metrics.html) command:
 
-```
+```bash
 aws cloudwatch list-metrics --namespace "AWS/EC2CapacityReservations"
 ```

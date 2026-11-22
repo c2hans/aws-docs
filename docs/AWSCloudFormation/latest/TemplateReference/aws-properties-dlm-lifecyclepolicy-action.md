@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dlm-lifecyclepolicy-action-syntax.json"></a>
 
-```
+```json
 {
   "[CrossRegionCopy](#cfn-dlm-lifecyclepolicy-action-crossregioncopy)" : {{[ CrossRegionCopyAction, ... ]}},
   "[Name](#cfn-dlm-lifecyclepolicy-action-name)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dlm-lifecyclepolicy-action-syntax.yaml"></a>
 
-```
+```yaml
   [CrossRegionCopy](#cfn-dlm-lifecyclepolicy-action-crossregioncopy): {{
     - CrossRegionCopyAction}}
   [Name](#cfn-dlm-lifecyclepolicy-action-name): {{String}}

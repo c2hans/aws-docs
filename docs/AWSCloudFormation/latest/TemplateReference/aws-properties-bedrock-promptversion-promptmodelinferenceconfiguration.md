@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-promptversion-promptmodelinferenceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MaxTokens](#cfn-bedrock-promptversion-promptmodelinferenceconfiguration-maxtokens)" : {{Number}},
   "[StopSequences](#cfn-bedrock-promptversion-promptmodelinferenceconfiguration-stopsequences)" : {{[ String, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-promptversion-promptmodelinferenceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MaxTokens](#cfn-bedrock-promptversion-promptmodelinferenceconfiguration-maxtokens): {{Number}}
   [StopSequences](#cfn-bedrock-promptversion-promptmodelinferenceconfiguration-stopsequences): {{
     - String}}

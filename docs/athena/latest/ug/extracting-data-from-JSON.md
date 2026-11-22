@@ -27,7 +27,7 @@ To extract the `name` and `projects` properties from the JSON string, use the `j
 **Note**
  `JSONPath` performs a simple tree traversal. It uses the `$` sign to denote the root of the JSON document, followed by a period and an element nested directly under the root, such as `$.name`.
 
-```
+```sql
 WITH dataset AS (
   SELECT '{"name": "Susan Smith",
            "org": "engineering",
@@ -56,7 +56,7 @@ To extract the scalar value from the JSON string, use the `json_extract_scalar({
 **Note**
 Do not use the `json_extract_scalar` function on arrays, maps, or structs.
 
-```
+```sql
 WITH dataset AS (
   SELECT '{"name": "Susan Smith",
            "org": "engineering",
@@ -81,7 +81,7 @@ This query returns:
 
 To obtain the first element of the `projects` property in the example array, use the `json_array_get` function and specify the index position.
 
-```
+```sql
 WITH dataset AS (
   SELECT '{"name": "Bob Smith",
            "org": "engineering",
@@ -104,7 +104,7 @@ It returns the value at the specified index position in the JSON-encoded array.
 
 To return an Athena string type, use the `[]` operator inside a `JSONPath` expression, then Use the `json_extract_scalar` function. For more information about `[]`, see [Access array elements](accessing-array-elements.md).
 
-```
+```sql
 WITH dataset AS (
    SELECT '{"name": "Bob Smith",
              "org": "engineering",

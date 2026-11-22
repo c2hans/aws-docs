@@ -47,7 +47,7 @@ aws s3vectors list-vector-buckets
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```python
 import boto3
 
 # Create a S3 Vectors client in the AWS Region of your choice.

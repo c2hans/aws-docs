@@ -17,7 +17,7 @@ Use POLLING mode when you want your agent to perform other work while waiting fo
 
 The following example shows how to use POLLING mode:
 
-```
+```python
 # Pass the header when creating the MCP connection
 headers = {
     "x-amzn-agentaccess-streaming-session-url": streaming_url,  # non-domain-joined fleets

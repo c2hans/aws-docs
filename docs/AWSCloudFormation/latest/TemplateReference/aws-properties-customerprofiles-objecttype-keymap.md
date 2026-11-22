@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-objecttype-keymap-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-customerprofiles-objecttype-keymap-name)" : {{String}},
   "[ObjectTypeKeyList](#cfn-customerprofiles-objecttype-keymap-objecttypekeylist)" : {{[ ObjectTypeKey, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-objecttype-keymap-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-customerprofiles-objecttype-keymap-name): {{String}}
   [ObjectTypeKeyList](#cfn-customerprofiles-objecttype-keymap-objecttypekeylist): {{
     - ObjectTypeKey}}

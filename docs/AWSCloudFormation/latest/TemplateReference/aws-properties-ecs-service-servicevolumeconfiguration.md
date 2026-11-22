@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-servicevolumeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ManagedEBSVolume](#cfn-ecs-service-servicevolumeconfiguration-managedebsvolume)" : {{ServiceManagedEBSVolumeConfiguration}},
   "[Name](#cfn-ecs-service-servicevolumeconfiguration-name)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-servicevolumeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ManagedEBSVolume](#cfn-ecs-service-servicevolumeconfiguration-managedebsvolume): {{
     ServiceManagedEBSVolumeConfiguration}}
   [Name](#cfn-ecs-service-servicevolumeconfiguration-name): {{String}}

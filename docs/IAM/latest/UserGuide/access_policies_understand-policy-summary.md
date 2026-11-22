@@ -96,7 +96,7 @@ The **SummaryAllElements** policy is not intended for you to use to define permi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

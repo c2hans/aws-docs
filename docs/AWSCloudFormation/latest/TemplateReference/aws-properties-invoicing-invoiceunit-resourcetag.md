@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-invoicing-invoiceunit-resourcetag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-invoicing-invoiceunit-resourcetag-key)" : {{String}},
   "[Value](#cfn-invoicing-invoiceunit-resourcetag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-invoicing-invoiceunit-resourcetag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-invoicing-invoiceunit-resourcetag-key): {{String}}
   [Value](#cfn-invoicing-invoiceunit-resourcetag-value): {{String}}
 ```

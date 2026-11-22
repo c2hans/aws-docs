@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicrule-cloudwatchalarmaction-syntax.json"></a>
 
-```
+```json
 {
   "[AlarmName](#cfn-iot-topicrule-cloudwatchalarmaction-alarmname)" : {{String}},
   "[RoleArn](#cfn-iot-topicrule-cloudwatchalarmaction-rolearn)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicrule-cloudwatchalarmaction-syntax.yaml"></a>
 
-```
+```yaml
   [AlarmName](#cfn-iot-topicrule-cloudwatchalarmaction-alarmname): {{String}}
   [RoleArn](#cfn-iot-topicrule-cloudwatchalarmaction-rolearn): {{String}}
   [StateReason](#cfn-iot-topicrule-cloudwatchalarmaction-statereason): {{String}}

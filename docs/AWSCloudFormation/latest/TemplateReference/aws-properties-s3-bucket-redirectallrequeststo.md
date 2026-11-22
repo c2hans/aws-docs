@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-redirectallrequeststo-syntax.json"></a>
 
-```
+```json
 {
   "[HostName](#cfn-s3-bucket-redirectallrequeststo-hostname)" : {{String}},
   "[Protocol](#cfn-s3-bucket-redirectallrequeststo-protocol)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-redirectallrequeststo-syntax.yaml"></a>
 
-```
+```yaml
   [HostName](#cfn-s3-bucket-redirectallrequeststo-hostname): {{String}}
   [Protocol](#cfn-s3-bucket-redirectallrequeststo-protocol): {{String}}
 ```

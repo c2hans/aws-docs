@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-stepfunctions-statemachine-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::StepFunctions::StateMachine",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-stepfunctions-statemachine-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::StepFunctions::StateMachine
 Properties:
   [Definition](#cfn-stepfunctions-statemachine-definition): {{Json}}
@@ -204,7 +204,7 @@ The following examples create a Step Functions state machine.
 #### JSON
 <a name="aws-resource-stepfunctions-statemachine--examples--Using_a_Single-Line_Property--json"></a>
 
-```
+```json
 {
    "AWSTemplateFormatVersion":"2010-09-09",
    "Description":"An example template for a Step Functions state machine.",
@@ -230,7 +230,7 @@ The following examples create a Step Functions state machine.
 #### JSON
 <a name="aws-resource-stepfunctions-statemachine--examples--Using_the_Fn::Join_Intrinsic_Function--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion" : "2010-09-09",
     "Description" : "An example template for a Step Functions state machine.",
@@ -280,7 +280,7 @@ The following examples create a Step Functions state machine.
 #### YAML
 <a name="aws-resource-stepfunctions-statemachine--examples--Including_Tags--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: An example template for a Step Functions state machine.
 Resources:
@@ -317,7 +317,7 @@ In this example template, `HelloFunction:` is defined for the `DefinitionSubstit
 #### YAML
 <a name="aws-resource-stepfunctions-statemachine--examples--Using_DefinitionSubstitutions--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Description: An example template for a Step Functions state machine.
 Resources:
@@ -341,7 +341,7 @@ Resources:
 #### JSON
 <a name="aws-resource-stepfunctions-statemachine--examples--hello_world.json--json"></a>
 
-```
+```json
 {
   "StartAt": "HelloWorld",
   "States": {

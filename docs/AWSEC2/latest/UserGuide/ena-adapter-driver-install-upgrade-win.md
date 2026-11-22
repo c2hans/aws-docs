@@ -51,20 +51,20 @@ This section covers how to download and install ENA driver packages on your inst
 
 1. Use the **invoke-webrequest** cmdlet to download the latest driver package:
 
-   ```
+   ```ps
    PS C:\> invoke-webrequest https://ec2-windows-drivers-downloads.s3.amazonaws.com/ENA/Latest/AwsEnaNetworkDriver.zip -outfile {{$env:USERPROFILE\AwsEnaNetworkDriver.zip}}
    ```
 **Note**
 If you receive an error when downloading the file, and you are using Windows Server 2016 or earlier, TLS 1.2 might need to be enabled for your PowerShell terminal. You can enable TLS 1.2 for the current PowerShell session with the following command and then try again:
 
-   ```
+   ```powershell
    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
    ```
 Alternatively, you can download the latest driver package from a browser window on your instance.
 
 1. Use the **expand-archive** cmdlet to extract the zip archive that you downloaded to your instance:
 
-   ```
+   ```ps
    PS C:\> expand-archive {{$env:userprofile\AwsEnaNetworkDriver.zip}} -DestinationPath {{$env:userprofile\AwsEnaNetworkDriver}}
    ```
 
@@ -83,7 +83,7 @@ The install steps are the same whether you've downloaded the latest driver or a 
 
 1. If the installer doesn’t automatically reboot your instance, run the **Restart-Computer** PowerShell cmdlet.
 
-   ```
+   ```ps
    PS C:\> Restart-Computer
    ```
 

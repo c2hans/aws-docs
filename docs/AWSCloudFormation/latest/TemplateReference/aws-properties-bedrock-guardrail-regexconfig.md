@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-guardrail-regexconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-bedrock-guardrail-regexconfig-action)" : {{String}},
   "[Description](#cfn-bedrock-guardrail-regexconfig-description)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-guardrail-regexconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-bedrock-guardrail-regexconfig-action): {{String}}
   [Description](#cfn-bedrock-guardrail-regexconfig-description): {{String}}
   [InputAction](#cfn-bedrock-guardrail-regexconfig-inputaction): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-cluster-clusteraccountingdatabase-syntax.json"></a>
 
-```
+```json
 {
   "[Endpoint](#cfn-sagemaker-cluster-clusteraccountingdatabase-endpoint)" : {{String}},
   "[Name](#cfn-sagemaker-cluster-clusteraccountingdatabase-name)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-cluster-clusteraccountingdatabase-syntax.yaml"></a>
 
-```
+```yaml
   [Endpoint](#cfn-sagemaker-cluster-clusteraccountingdatabase-endpoint): {{String}}
   [Name](#cfn-sagemaker-cluster-clusteraccountingdatabase-name): {{String}}
   [Port](#cfn-sagemaker-cluster-clusteraccountingdatabase-port): {{Integer}}

@@ -35,7 +35,7 @@ DynamoDB also creates an empty file named `_started` in the same directory as th
 
 The `manifest-summary.json` file contains summary information about the export job. This allows you to know which data files in the shared data folder are associated with this export. Its format is as follows:
 
-```
+```json
 {
    "version": "2020-06-30",
    "exportArn": "arn:aws:dynamodb:us-east-1:123456789012:table/ProductCatalog/export/01234567890123-a1b2c3d4",
@@ -66,7 +66,7 @@ If the export request included a filter, the summary manifest also includes the 
 
 The `manifest-files.json` file contains information about the files that contain your exported table data. The file is in [JSON lines](https://jsonlines.org/) format, so newlines are used as item delimiters. In the following example, the details of one data file from a files manifest are formatted on multiple lines for the sake of readability.
 
-```
+```json
 {
 "itemCount": 8,
    "md5Checksum": "sQMSpEILNgoQmarvDFonGQ==",
@@ -106,7 +106,7 @@ When creating custom parsers for DynamoDB JSON export data, the format is [JSON 
 
 In the following example, a single item from a DynamoDB JSON export has been formatted on multiple lines for the sake of readability.
 
-```
+```json
 {
     "Item":{
         "Authors":{
@@ -164,7 +164,7 @@ The following table lists the mapping of DynamoDB data types to ion data types:
 
 Items in an Ion export are delimited by newlines. Each line begins with an Ion version marker, followed by an item in Ion format. In the following example, an item from an Ion export has been formatted on multiple lines for the sake of readability.
 
-```
+```json
 $ion_1_0 {
     Item:{
         Authors:$dynamodb_SS::["Author1","Author2"],
@@ -207,7 +207,7 @@ DynamoDB also creates an empty file named `_started` in the same directory as th
 
 The `manifest-summary.json` file contains summary information about the export job. This allows you to know which data files in the shared data folder are associated with this export. Its format is as follows:
 
-```
+```json
 {
  "version": "2023-08-01",
  "exportArn": "arn:aws:dynamodb:us-east-1:599882009758:table/export-test/export/01695097218000-d6299cbd",
@@ -235,7 +235,7 @@ The `manifest-summary.json` file contains summary information about the export j
 
 The `manifest-files.json` file contains information about the files that contain your exported table data. The file is in [JSON lines](https://jsonlines.org/) format, so newlines are used as item delimiters. In the following example, the details of one data file from a files manifest are formatted on multiple lines for the sake of readability.
 
-```
+```json
 {
 "itemCount": 8,
    "md5Checksum": "sQMSpEILNgoQmarvDFonGQ==",
@@ -292,7 +292,7 @@ You can infer whether an item in your incremental export output was an `insert`,
 
 A table export in DynamoDB JSON format consists of a metadata timestamp that indicates the write time of the item, followed by the keys of the item and the values. The following shows an example DynamoDB JSON output using export view type as **New and Old images**.
 
-```
+```json
 // Ex 1: Insert
 //   An insert means the item did not exist before the incremental export window
 //   and was added during the incremental export window
@@ -416,7 +416,7 @@ The following table lists the mapping of DynamoDB data types to ion data types:
 
 Items in an Ion export are delimited by newlines. Each line begins with an Ion version marker, followed by an item in Ion format. In the following example, an item from an Ion export has been formatted on multiple lines for the sake of readability.
 
-```
+```json
 $ion_1_0 {
     Record:{
         Keys:{

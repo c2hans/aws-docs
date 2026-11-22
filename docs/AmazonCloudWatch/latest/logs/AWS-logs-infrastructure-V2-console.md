@@ -11,7 +11,7 @@ In addition to the permissions listed in the previous sections, if you are setti
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

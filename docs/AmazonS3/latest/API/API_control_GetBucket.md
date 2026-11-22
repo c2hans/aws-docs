@@ -94,7 +94,7 @@ Type: Boolean
 
 This example illustrates one usage of GetBucket.
 
-```
+```HTTP
 GET /v20180820/bucket/example-outpost-bucket/ HTTP/1.1
 Host: s3-outposts.<Region>.amazonaws.com
             x-amz-account-id: example-account-id

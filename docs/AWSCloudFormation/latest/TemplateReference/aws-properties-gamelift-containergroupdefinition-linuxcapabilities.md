@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-containergroupdefinition-linuxcapabilities-syntax.json"></a>
 
-```
+```json
 {
   "[Include](#cfn-gamelift-containergroupdefinition-linuxcapabilities-include)" : {{[ String, ... ]}}
 }
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-containergroupdefinition-linuxcapabilities-syntax.yaml"></a>
 
-```
+```yaml
   [Include](#cfn-gamelift-containergroupdefinition-linuxcapabilities-include): {{
     - String}}
 ```

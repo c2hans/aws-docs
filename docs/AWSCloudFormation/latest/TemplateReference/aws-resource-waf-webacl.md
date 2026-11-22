@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-waf-webacl-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::WAF::WebACL",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-waf-webacl-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::WAF::WebACL
 Properties:
   [DefaultAction](#cfn-waf-webacl-defaultaction): {{
@@ -107,7 +107,7 @@ The following example defines a web ACL that allows, by default, any web request
 #### JSON
 <a name="aws-resource-waf-webacl--examples--Create_a_Web_ACL--json"></a>
 
-```
+```json
 "MyWebACL": {
   "Type": "AWS::WAF::WebACL",
   "Properties": {
@@ -146,7 +146,7 @@ The following example defines a web ACL that allows, by default, any web request
 #### YAML
 <a name="aws-resource-waf-webacl--examples--Create_a_Web_ACL--yaml"></a>
 
-```
+```yaml
 MyWebACL:
   Type: "AWS::WAF::WebACL"
   Properties:
@@ -183,7 +183,7 @@ The follow example associates the `MyWebACL` web ACL with a Amazon CloudFront di
 #### JSON
 <a name="aws-resource-waf-webacl--examples--Associate_a_Web_ACL_with_a_Distribution--json"></a>
 
-```
+```json
 "myDistribution": {
   "Type": "AWS::CloudFront::Distribution",
   "Properties": {
@@ -236,7 +236,7 @@ The follow example associates the `MyWebACL` web ACL with a Amazon CloudFront di
 #### YAML
 <a name="aws-resource-waf-webacl--examples--Associate_a_Web_ACL_with_a_Distribution--yaml"></a>
 
-```
+```yaml
 myDistribution:
   Type: "AWS::CloudFront::Distribution"
   Properties:

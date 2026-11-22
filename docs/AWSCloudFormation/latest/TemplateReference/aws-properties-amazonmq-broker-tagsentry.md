@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amazonmq-broker-tagsentry-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-amazonmq-broker-tagsentry-key)" : {{String}},
   "[Value](#cfn-amazonmq-broker-tagsentry-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amazonmq-broker-tagsentry-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-amazonmq-broker-tagsentry-key): {{String}}
   [Value](#cfn-amazonmq-broker-tagsentry-value): {{String}}
 ```

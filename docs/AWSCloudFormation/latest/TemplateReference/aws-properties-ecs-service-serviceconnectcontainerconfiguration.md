@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-serviceconnectcontainerconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[LogLevel](#cfn-ecs-service-serviceconnectcontainerconfiguration-loglevel)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-serviceconnectcontainerconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [LogLevel](#cfn-ecs-service-serviceconnectcontainerconfiguration-loglevel): {{String}}
 ```
 

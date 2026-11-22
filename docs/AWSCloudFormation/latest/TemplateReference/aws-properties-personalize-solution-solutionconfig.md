@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-personalize-solution-solutionconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AlgorithmHyperParameters](#cfn-personalize-solution-solutionconfig-algorithmhyperparameters)" : {{{{{Key}}: {{Value}}, ...}}},
   "[AutoMLConfig](#cfn-personalize-solution-solutionconfig-automlconfig)" : {{AutoMLConfig}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-personalize-solution-solutionconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AlgorithmHyperParameters](#cfn-personalize-solution-solutionconfig-algorithmhyperparameters): {{
     {{Key}}: {{Value}}}}
   [AutoMLConfig](#cfn-personalize-solution-solutionconfig-automlconfig): {{

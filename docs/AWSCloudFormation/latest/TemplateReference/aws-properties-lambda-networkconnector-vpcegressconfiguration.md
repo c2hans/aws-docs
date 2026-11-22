@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-networkconnector-vpcegressconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AssociatedComputeResourceTypes](#cfn-lambda-networkconnector-vpcegressconfiguration-associatedcomputeresourcetypes)" : {{[ String, ... ]}},
   "[ElasticIpConfiguration](#cfn-lambda-networkconnector-vpcegressconfiguration-elasticipconfiguration)" : {{ElasticIpConfiguration}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-networkconnector-vpcegressconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AssociatedComputeResourceTypes](#cfn-lambda-networkconnector-vpcegressconfiguration-associatedcomputeresourcetypes): {{
     - String}}
   [ElasticIpConfiguration](#cfn-lambda-networkconnector-vpcegressconfiguration-elasticipconfiguration): {{
@@ -56,7 +56,7 @@ The types of Lambda compute resources that can use this connector:
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ElasticIpConfiguration`  <a name="cfn-lambda-networkconnector-vpcegressconfiguration-elasticipconfiguration"></a>
-Property description not available.
+Specifies whether Lambda assigns an Elastic IP address to each of the connector's elastic network interfaces (ENIs). If you don't specify this property, no Elastic IP address is assigned.
 *Required*: No
 *Type*: [ElasticIpConfiguration](aws-properties-lambda-networkconnector-elasticipconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

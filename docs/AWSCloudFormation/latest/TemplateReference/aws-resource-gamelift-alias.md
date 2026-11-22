@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-gamelift-alias-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::GameLift::Alias",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-gamelift-alias-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::GameLift::Alias
 Properties:
   [Description](#cfn-gamelift-alias-description): {{String}}
@@ -113,7 +113,7 @@ The following example creates a simple alias for a fleet. The template uses `!Re
 #### JSON
 <a name="aws-resource-gamelift-alias--examples--Create_a_Simple_Alias--json"></a>
 
-```
+```json
 {
     "Resources": {
         "AliasResource": {
@@ -136,7 +136,7 @@ The following example creates a simple alias for a fleet. The template uses `!Re
 #### YAML
 <a name="aws-resource-gamelift-alias--examples--Create_a_Simple_Alias--yaml"></a>
 
-```
+```yaml
 Resources:
   AliasResource:
     Properties:
@@ -156,7 +156,7 @@ The following example creates a terminal alias with a generic terminal message.
 #### JSON
 <a name="aws-resource-gamelift-alias--examples--Create_terminal_alias--json"></a>
 
-```
+```json
 {
     "Resources": {
         "AliasResource": {
@@ -177,7 +177,7 @@ The following example creates a terminal alias with a generic terminal message.
 #### YAML
 <a name="aws-resource-gamelift-alias--examples--Create_terminal_alias--yaml"></a>
 
-```
+```yaml
 Resources:
   AliasResource:
     Type: AWS::GameLift::Alias

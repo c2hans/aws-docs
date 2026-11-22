@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigateway-documentationversion-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGateway::DocumentationVersion",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigateway-documentationversion-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGateway::DocumentationVersion
 Properties:
   [Description](#cfn-apigateway-documentationversion-description): {{String}}
@@ -72,7 +72,7 @@ The following example associates a documentation version with an API stage.
 #### JSON
 <a name="aws-resource-apigateway-documentationversion--examples--Associate_documentation_version_with_stage--json"></a>
 
-```
+```json
 {
     "Parameters": {
         "apiName": {
@@ -189,7 +189,7 @@ The following example associates a documentation version with an API stage.
 #### YAML
 <a name="aws-resource-apigateway-documentationversion--examples--Associate_documentation_version_with_stage--yaml"></a>
 
-```
+```yaml
 Parameters:
   apiName:
     Type: String

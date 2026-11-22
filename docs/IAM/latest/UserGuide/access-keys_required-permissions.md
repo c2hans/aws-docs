@@ -14,7 +14,7 @@ To create access keys for your own IAM user, you must have the permissions from 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -42,7 +42,7 @@ To update access keys for your own IAM user, you must have the permissions from 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-eksmetadata-syntax.json"></a>
 
-```
+```json
 {
   "[Annotations](#cfn-batch-jobdefinition-eksmetadata-annotations)" : {{{{{Key}}: {{Value}}, ...}}},
   "[Labels](#cfn-batch-jobdefinition-eksmetadata-labels)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-eksmetadata-syntax.yaml"></a>
 
-```
+```yaml
   [Annotations](#cfn-batch-jobdefinition-eksmetadata-annotations): {{
     {{Key}}: {{Value}}}}
   [Labels](#cfn-batch-jobdefinition-eksmetadata-labels): {{

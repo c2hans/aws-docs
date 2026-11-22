@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrass-functiondefinitionversion-resourceaccesspolicy-syntax.json"></a>
 
-```
+```json
 {
   "[Permission](#cfn-greengrass-functiondefinitionversion-resourceaccesspolicy-permission)" : {{String}},
   "[ResourceId](#cfn-greengrass-functiondefinitionversion-resourceaccesspolicy-resourceid)" : {{String}}
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrass-functiondefinitionversion-resourceaccesspolicy-syntax.yaml"></a>
 
-```
+```yaml
   [Permission](#cfn-greengrass-functiondefinitionversion-resourceaccesspolicy-permission): {{String}}
   [ResourceId](#cfn-greengrass-functiondefinitionversion-resourceaccesspolicy-resourceid): {{String}}
 ```

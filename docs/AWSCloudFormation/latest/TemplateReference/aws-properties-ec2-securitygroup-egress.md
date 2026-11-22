@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-securitygroup-egress-syntax.json"></a>
 
-```
+```json
 {
   "[CidrIp](#cfn-ec2-securitygroup-egress-cidrip)" : {{String}},
   "[CidrIpv6](#cfn-ec2-securitygroup-egress-cidripv6)" : {{String}},
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-securitygroup-egress-syntax.yaml"></a>
 
-```
+```yaml
   [CidrIp](#cfn-ec2-securitygroup-egress-cidrip): {{String}}
   [CidrIpv6](#cfn-ec2-securitygroup-egress-cidripv6): {{String}}
   [Description](#cfn-ec2-securitygroup-egress-description): {{String}}

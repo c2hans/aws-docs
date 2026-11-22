@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-connection-authorizationcodeproperties-syntax.json"></a>
 
-```
+```json
 {
   "[AuthorizationCode](#cfn-glue-connection-authorizationcodeproperties-authorizationcode)" : {{String}},
   "[RedirectUri](#cfn-glue-connection-authorizationcodeproperties-redirecturi)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-connection-authorizationcodeproperties-syntax.yaml"></a>
 
-```
+```yaml
   [AuthorizationCode](#cfn-glue-connection-authorizationcodeproperties-authorizationcode): {{String}}
   [RedirectUri](#cfn-glue-connection-authorizationcodeproperties-redirecturi): {{String}}
 ```

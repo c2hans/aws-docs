@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-streamingdistribution-trustedsigners-syntax.json"></a>
 
-```
+```json
 {
   "[AwsAccountNumbers](#cfn-cloudfront-streamingdistribution-trustedsigners-awsaccountnumbers)" : {{[ String, ... ]}},
   "[Enabled](#cfn-cloudfront-streamingdistribution-trustedsigners-enabled)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-streamingdistribution-trustedsigners-syntax.yaml"></a>
 
-```
+```yaml
   [AwsAccountNumbers](#cfn-cloudfront-streamingdistribution-trustedsigners-awsaccountnumbers): {{
     - String}}
   [Enabled](#cfn-cloudfront-streamingdistribution-trustedsigners-enabled): {{Boolean}}

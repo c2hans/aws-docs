@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-configuredtable-aggregationconstraint-syntax.json"></a>
 
-```
+```json
 {
   "[ColumnName](#cfn-cleanrooms-configuredtable-aggregationconstraint-columnname)" : {{String}},
   "[Minimum](#cfn-cleanrooms-configuredtable-aggregationconstraint-minimum)" : {{Number}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-configuredtable-aggregationconstraint-syntax.yaml"></a>
 
-```
+```yaml
   [ColumnName](#cfn-cleanrooms-configuredtable-aggregationconstraint-columnname): {{String}}
   [Minimum](#cfn-cleanrooms-configuredtable-aggregationconstraint-minimum): {{Number}}
   [Type](#cfn-cleanrooms-configuredtable-aggregationconstraint-type): {{String}}

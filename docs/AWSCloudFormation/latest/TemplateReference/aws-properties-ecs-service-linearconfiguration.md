@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-linearconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[StepBakeTimeInMinutes](#cfn-ecs-service-linearconfiguration-stepbaketimeinminutes)" : {{Integer}},
   "[StepPercent](#cfn-ecs-service-linearconfiguration-steppercent)" : {{Number}}
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-linearconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [StepBakeTimeInMinutes](#cfn-ecs-service-linearconfiguration-stepbaketimeinminutes): {{Integer}}
   [StepPercent](#cfn-ecs-service-linearconfiguration-steppercent): {{Number}}
 ```

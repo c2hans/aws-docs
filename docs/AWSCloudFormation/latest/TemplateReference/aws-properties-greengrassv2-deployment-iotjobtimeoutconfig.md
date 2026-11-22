@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrassv2-deployment-iotjobtimeoutconfig-syntax.json"></a>
 
-```
+```json
 {
   "[InProgressTimeoutInMinutes](#cfn-greengrassv2-deployment-iotjobtimeoutconfig-inprogresstimeoutinminutes)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrassv2-deployment-iotjobtimeoutconfig-syntax.yaml"></a>
 
-```
+```yaml
   [InProgressTimeoutInMinutes](#cfn-greengrassv2-deployment-iotjobtimeoutconfig-inprogresstimeoutinminutes): {{Integer}}
 ```
 

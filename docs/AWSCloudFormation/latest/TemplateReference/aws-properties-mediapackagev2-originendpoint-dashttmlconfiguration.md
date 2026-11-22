@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackagev2-originendpoint-dashttmlconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[TtmlProfile](#cfn-mediapackagev2-originendpoint-dashttmlconfiguration-ttmlprofile)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackagev2-originendpoint-dashttmlconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [TtmlProfile](#cfn-mediapackagev2-originendpoint-dashttmlconfiguration-ttmlprofile): {{String}}
 ```
 

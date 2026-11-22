@@ -9,7 +9,7 @@ Use the `rdsadmin.rdsadmin_transport_util.list_xtts_orphan_files` procedure to d
 ## Syntax
 <a name="rdsadmin_transport_util_cleanup_incomplete_xtts_import-syntax"></a>
 
-```
+```sql
 PROCEDURE cleanup_incomplete_xtts_import(
     p_directory_name IN VARCHAR2);
 ```
@@ -26,7 +26,7 @@ PROCEDURE cleanup_incomplete_xtts_import(
 
 The following example deletes the orphaned data files in {{DATA\_PUMP\_DIR}}.
 
-```
+```sql
 BEGIN
   rdsadmin.rdsadmin_transport_util.cleanup_incomplete_xtts_import('{{DATA_PUMP_DIR}}');
 END;

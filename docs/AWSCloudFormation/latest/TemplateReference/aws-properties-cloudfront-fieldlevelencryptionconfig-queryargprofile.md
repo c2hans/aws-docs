@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-fieldlevelencryptionconfig-queryargprofile-syntax.json"></a>
 
-```
+```json
 {
   "[ProfileId](#cfn-cloudfront-fieldlevelencryptionconfig-queryargprofile-profileid)" : {{String}},
   "[QueryArg](#cfn-cloudfront-fieldlevelencryptionconfig-queryargprofile-queryarg)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-fieldlevelencryptionconfig-queryargprofile-syntax.yaml"></a>
 
-```
+```yaml
   [ProfileId](#cfn-cloudfront-fieldlevelencryptionconfig-queryargprofile-profileid): {{String}}
   [QueryArg](#cfn-cloudfront-fieldlevelencryptionconfig-queryargprofile-queryarg): {{String}}
 ```

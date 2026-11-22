@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-topic-dataaggregation-syntax.json"></a>
 
-```
+```json
 {
   "[DatasetRowDateGranularity](#cfn-quicksight-topic-dataaggregation-datasetrowdategranularity)" : {{String}},
   "[DefaultDateColumnName](#cfn-quicksight-topic-dataaggregation-defaultdatecolumnname)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-topic-dataaggregation-syntax.yaml"></a>
 
-```
+```yaml
   [DatasetRowDateGranularity](#cfn-quicksight-topic-dataaggregation-datasetrowdategranularity): {{String}}
   [DefaultDateColumnName](#cfn-quicksight-topic-dataaggregation-defaultdatecolumnname): {{String}}
 ```

@@ -18,7 +18,7 @@ For example, say that you've used the `dynamodb:ResourceTag` condition key in an
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -47,7 +47,7 @@ To fix this issue, replace the `dynamodb:ResourceTag` condition key with `aws:Re
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

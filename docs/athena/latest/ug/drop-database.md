@@ -9,7 +9,7 @@ Removes the named database from the catalog. If the database contains tables, yo
 ## Synopsis
 <a name="synopsis"></a>
 
-```
+```sql
 DROP {DATABASE | SCHEMA} [IF EXISTS] database_name [RESTRICT | CASCADE]
 ```
 
@@ -25,11 +25,11 @@ Determines how tables within `database_name` are regarded during the `DROP` oper
 ## Examples
 <a name="examples"></a>
 
-```
+```sql
 DROP DATABASE clickstreams;
 ```
 
-```
+```sql
 DROP SCHEMA IF EXISTS clickstreams CASCADE;
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-sourceendpoint-publicsourceendpointnetworkingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[SourceAllowRules](#cfn-mediaconnect-sourceendpoint-publicsourceendpointnetworkingconfiguration-sourceallowrules)" : {{[ PublicSourceEndpointNetworkingConfigurationAllowRule, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-sourceendpoint-publicsourceendpointnetworkingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [SourceAllowRules](#cfn-mediaconnect-sourceendpoint-publicsourceendpointnetworkingconfiguration-sourceallowrules): {{
     - PublicSourceEndpointNetworkingConfigurationAllowRule}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-capability-capabilityconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Ack](#cfn-eks-capability-capabilityconfiguration-ack)" : {{Ack}},
   "[ArgoCd](#cfn-eks-capability-capabilityconfiguration-argocd)" : {{ArgoCd}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-capability-capabilityconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Ack](#cfn-eks-capability-capabilityconfiguration-ack): {{
     Ack}}
   [ArgoCd](#cfn-eks-capability-capabilityconfiguration-argocd): {{

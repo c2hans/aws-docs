@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-eventsv2-eventbus-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EventsV2::EventBus",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-eventsv2-eventbus-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EventsV2::EventBus
 Properties:
   [Description](#cfn-eventsv2-eventbus-description): {{String}}
@@ -134,7 +134,7 @@ The following example creates an event bus with only the required `Name` propert
 #### JSON
 <a name="aws-resource-eventsv2-eventbus--examples--Create_a_minimal_event_bus--json"></a>
 
-```
+```json
 {
   "Resources": {
     "OrdersEventBus": {
@@ -150,7 +150,7 @@ The following example creates an event bus with only the required `Name` propert
 #### YAML
 <a name="aws-resource-eventsv2-eventbus--examples--Create_a_minimal_event_bus--yaml"></a>
 
-```
+```yaml
 Resources:
   OrdersEventBus:
     Type: AWS::EventsV2::EventBus
@@ -166,7 +166,7 @@ The following example creates an event bus that retains events for 90 days, encr
 #### JSON
 <a name="aws-resource-eventsv2-eventbus--examples--Create_a_fully_configured_event_bus--json"></a>
 
-```
+```json
 {
   "Resources": {
     "OrdersEventBus": {
@@ -193,7 +193,7 @@ The following example creates an event bus that retains events for 90 days, encr
 #### YAML
 <a name="aws-resource-eventsv2-eventbus--examples--Create_a_fully_configured_event_bus--yaml"></a>
 
-```
+```yaml
 Resources:
   OrdersEventBus:
     Type: AWS::EventsV2::EventBus

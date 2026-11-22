@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudformation-guardhook-stackfilters-syntax.json"></a>
 
-```
+```json
 {
   "[FilteringCriteria](#cfn-cloudformation-guardhook-stackfilters-filteringcriteria)" : {{String}},
   "[StackNames](#cfn-cloudformation-guardhook-stackfilters-stacknames)" : {{StackNames}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudformation-guardhook-stackfilters-syntax.yaml"></a>
 
-```
+```yaml
   [FilteringCriteria](#cfn-cloudformation-guardhook-stackfilters-filteringcriteria): {{String}}
   [StackNames](#cfn-cloudformation-guardhook-stackfilters-stacknames): {{
     StackNames}}

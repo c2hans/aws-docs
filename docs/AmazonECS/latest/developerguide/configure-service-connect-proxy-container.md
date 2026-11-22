@@ -20,7 +20,7 @@ Revert your log level back to `info` once troubleshooting is complete to avoid e
 
 The following example sets the proxy log level to `debug`.
 
-```
+```json
 {
     "serviceConnectConfiguration": {
         "enabled": true,

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackagev2-originendpoint-dashutctiming-syntax.json"></a>
 
-```
+```json
 {
   "[TimingMode](#cfn-mediapackagev2-originendpoint-dashutctiming-timingmode)" : {{String}},
   "[TimingSource](#cfn-mediapackagev2-originendpoint-dashutctiming-timingsource)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackagev2-originendpoint-dashutctiming-syntax.yaml"></a>
 
-```
+```yaml
   [TimingMode](#cfn-mediapackagev2-originendpoint-dashutctiming-timingmode): {{String}}
   [TimingSource](#cfn-mediapackagev2-originendpoint-dashutctiming-timingsource): {{String}}
 ```

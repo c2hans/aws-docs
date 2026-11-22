@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackage-asset-egressendpoint-syntax.json"></a>
 
-```
+```json
 {
   "[PackagingConfigurationId](#cfn-mediapackage-asset-egressendpoint-packagingconfigurationid)" : {{String}},
   "[Url](#cfn-mediapackage-asset-egressendpoint-url)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackage-asset-egressendpoint-syntax.yaml"></a>
 
-```
+```yaml
   [PackagingConfigurationId](#cfn-mediapackage-asset-egressendpoint-packagingconfigurationid): {{String}}
   [Url](#cfn-mediapackage-asset-egressendpoint-url): {{String}}
 ```

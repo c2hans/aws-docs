@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-function-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-cloudfront-function-tag-key)" : {{String}},
   "[Value](#cfn-cloudfront-function-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-function-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-cloudfront-function-tag-key): {{String}}
   [Value](#cfn-cloudfront-function-tag-value): {{String}}
 ```

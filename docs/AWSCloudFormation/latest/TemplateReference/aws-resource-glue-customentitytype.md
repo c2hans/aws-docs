@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-glue-customentitytype-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Glue::CustomEntityType",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-glue-customentitytype-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Glue::CustomEntityType
 Properties:
   [ContextWords](#cfn-glue-customentitytype-contextwords): {{

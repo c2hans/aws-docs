@@ -94,7 +94,7 @@ Create a virtual node named `serviceB`, since one of the virtual nodes represent
 
 1. Create a file named `create-virtual-node-serviceb.json` with the following contents:
 
-   ```
+   ```json
    {
        "meshName": "apps",
        "spec": {
@@ -157,7 +157,7 @@ Create the following resources:
 
    1. Create a file named `create-virtual-router.json` with the following contents:
 
-      ```
+      ```json
       {
           "meshName": "apps",
           "spec": {
@@ -184,7 +184,7 @@ Create the following resources:
 
    1. Create a file named `create-route.json` with the following contents:
 
-      ```
+      ```json
       {
           "meshName" : "apps",
           "routeName" : "serviceB",
@@ -315,7 +315,7 @@ To complete the scenario, you need to:
 
    1. Create a file named `create-virtual-node-servicebv2.json` with the following contents:
 
-      ```
+      ```json
       {
           "meshName": "apps",
           "spec": {
@@ -347,7 +347,7 @@ To complete the scenario, you need to:
 
    1. Create a file named `create-virtual-node-servicea.json` with the following contents:
 
-      ```
+      ```json
       {
          "meshName" : "apps",
          "spec" : {
@@ -386,7 +386,7 @@ To complete the scenario, you need to:
 
    1. Create a file named `update-virtual-service.json` with the following contents:
 
-      ```
+      ```json
       {
          "meshName" : "apps",
          "spec" : {
@@ -410,7 +410,7 @@ To complete the scenario, you need to:
 
    1. Create a file named `update-route.json` with the following contents:
 
-      ```
+      ```json
       {
          "meshName" : "apps",
          "routeName" : "serviceB",
@@ -447,7 +447,7 @@ To complete the scenario, you need to:
 
    1. Create a file named `create-virtual-servicea.json` with the following contents:
 
-      ```
+      ```json
       {
          "meshName" : "apps",
          "spec" : {
@@ -493,7 +493,7 @@ After creating your mesh, you need to complete the following tasks:
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement": [
@@ -525,7 +525,7 @@ After creating your mesh, you need to complete the following tasks:
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -621,7 +621,7 @@ Only version v1.9.0.0-prod or later is supported for use with App Mesh.
 
 1. Select `Show more` below. Create a file named `envoy-networking.sh` on your instance with the following contents. Replace {{8000}} with the port that your application code uses for incoming traffic. You can change the value for `APPMESH_IGNORE_UID`, but the value must be the same as the value that you specified in the previous step; for example `1337`. You can add additional addresses to `APPMESH_EGRESS_IGNORED_IP` if necessary. Do not modify any other lines.
 
-   ```
+   ```bash
    #!/bin/bash -e
 
    #

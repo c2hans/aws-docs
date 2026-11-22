@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-autoscalingplans-scalingplan-scalinginstruction-syntax.json"></a>
 
-```
+```json
 {
   "[CustomizedLoadMetricSpecification](#cfn-autoscalingplans-scalingplan-scalinginstruction-customizedloadmetricspecification)" : {{CustomizedLoadMetricSpecification}},
   "[DisableDynamicScaling](#cfn-autoscalingplans-scalingplan-scalinginstruction-disabledynamicscaling)" : {{Boolean}},
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-autoscalingplans-scalingplan-scalinginstruction-syntax.yaml"></a>
 
-```
+```yaml
   [CustomizedLoadMetricSpecification](#cfn-autoscalingplans-scalingplan-scalinginstruction-customizedloadmetricspecification): {{
     CustomizedLoadMetricSpecification}}
   [DisableDynamicScaling](#cfn-autoscalingplans-scalingplan-scalinginstruction-disabledynamicscaling): {{Boolean}}

@@ -62,7 +62,7 @@ The following CLI example shows you how to delete tags from a table bucket by us
 
 **Request:**
 
-```
+```bash
 aws --region {{us-west-2}} \
 s3tables untag-resource \
 --resource-arn arn:aws::s3tables:{{us-west-2}}:{{111122223333}}:bucket/{{amzn-s3-demo-table-bucket}} \

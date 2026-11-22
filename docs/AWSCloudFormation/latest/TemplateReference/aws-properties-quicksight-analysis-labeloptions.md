@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-labeloptions-syntax.json"></a>
 
-```
+```json
 {
   "[CustomLabel](#cfn-quicksight-analysis-labeloptions-customlabel)" : {{String}},
   "[FontConfiguration](#cfn-quicksight-analysis-labeloptions-fontconfiguration)" : {{FontConfiguration}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-labeloptions-syntax.yaml"></a>
 
-```
+```yaml
   [CustomLabel](#cfn-quicksight-analysis-labeloptions-customlabel): {{String}}
   [FontConfiguration](#cfn-quicksight-analysis-labeloptions-fontconfiguration): {{
     FontConfiguration}}

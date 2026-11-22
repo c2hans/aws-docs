@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-accessgrant-accessgrantprincipalattribute-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-cloudwatch-accessgrant-accessgrantprincipalattribute-key)" : {{String}},
   "[Value](#cfn-cloudwatch-accessgrant-accessgrantprincipalattribute-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-accessgrant-accessgrantprincipalattribute-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-cloudwatch-accessgrant-accessgrantprincipalattribute-key): {{String}}
   [Value](#cfn-cloudwatch-accessgrant-accessgrantprincipalattribute-value): {{String}}
 ```

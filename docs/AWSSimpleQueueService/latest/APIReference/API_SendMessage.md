@@ -229,7 +229,7 @@ The following example `SendMessage` request sends a message containing `This is 
 #### Sample Request
 <a name="API_SendMessage_Example_1_Request"></a>
 
-```
+```json
 POST / HTTP/1.1
 Host: sqs.us-east-1.amazonaws.com
 X-Amz-Target: AmazonSQS.SendMessage
@@ -257,7 +257,7 @@ Connection: Keep-Alive
 #### Sample Response
 <a name="API_SendMessage_Example_1_Response"></a>
 
-```
+```json
 HTTP/1.1 200 OK
 x-amzn-RequestId: <requestId>
 Content-Length: <PayloadSizeBytes>
@@ -278,7 +278,7 @@ Content-Type: application/x-amz-json-1.0
 #### Sample Request
 <a name="API_SendMessage_Example_2_Request"></a>
 
-```
+```xml
 POST /177715257436/MyQueue/ HTTP/1.1
 Host: sqs.us-east-1.amazonaws.com
 X-Amz-Date: <Date>
@@ -299,7 +299,7 @@ Action=SendMessage
 #### Sample Response
 <a name="API_SendMessage_Example_2_Response"></a>
 
-```
+```xml
 HTTP/1.1 200 OK
 <?xml version="1.0"?>
 <SendMessageResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/">
@@ -327,7 +327,7 @@ Queue URLs and names are case-sensitive.
 #### Sample Request
 <a name="API_SendMessage_Example_3_Request"></a>
 
-```
+```xml
 POST / HTTP/1.1
 Host: sqs.us-east-1.amazonaws.com
 X-Amz-Target: AmazonSQS.SendMessage
@@ -351,7 +351,7 @@ Connection: Keep-Alive
 #### Sample Request
 <a name="API_SendMessage_Example_4_Request"></a>
 
-```
+```xml
 POST /177715257436/MyQueue/ HTTP/1.1
 Host: sqs.us-east-1.amazonaws.com
 X-Amz-Date: <Date>

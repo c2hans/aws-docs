@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-dataautomationlibrary-entitytypeinfo-syntax.json"></a>
 
-```
+```json
 {
   "[EntityMetadata](#cfn-bedrock-dataautomationlibrary-entitytypeinfo-entitymetadata)" : {{String}},
   "[EntityType](#cfn-bedrock-dataautomationlibrary-entitytypeinfo-entitytype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-dataautomationlibrary-entitytypeinfo-syntax.yaml"></a>
 
-```
+```yaml
   [EntityMetadata](#cfn-bedrock-dataautomationlibrary-entitytypeinfo-entitymetadata): {{String}}
   [EntityType](#cfn-bedrock-dataautomationlibrary-entitytypeinfo-entitytype): {{String}}
 ```

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lambda-eventinvokeconfig-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lambda::EventInvokeConfig",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lambda-eventinvokeconfig-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lambda::EventInvokeConfig
 Properties:
   [DestinationConfig](#cfn-lambda-eventinvokeconfig-destinationconfig): {{
@@ -117,7 +117,7 @@ Error handling and destination configuration for a version of a function. Node.j
 #### YAML
 <a name="aws-resource-lambda-eventinvokeconfig--examples--Asynchronous_Invocation_Configuration--yaml"></a>
 
-```
+```yaml
 Resources:
   function:
     Type: AWS::Lambda::Function

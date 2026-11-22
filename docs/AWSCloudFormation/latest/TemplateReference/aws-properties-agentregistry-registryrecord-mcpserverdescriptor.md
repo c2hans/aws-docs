@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-agentregistry-registryrecord-mcpserverdescriptor-syntax.json"></a>
 
-```
+```json
 {
   "[AdditionalData](#cfn-agentregistry-registryrecord-mcpserverdescriptor-additionaldata)" : {{McpServerAdditionalData}},
   "[Data](#cfn-agentregistry-registryrecord-mcpserverdescriptor-data)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-agentregistry-registryrecord-mcpserverdescriptor-syntax.yaml"></a>
 
-```
+```yaml
   [AdditionalData](#cfn-agentregistry-registryrecord-mcpserverdescriptor-additionaldata): {{
     McpServerAdditionalData}}
   [Data](#cfn-agentregistry-registryrecord-mcpserverdescriptor-data): {{String}}

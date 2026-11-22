@@ -11,7 +11,7 @@ Updates rows in an Apache Iceberg table. `UPDATE` is transactional and is suppor
 
 To update the rows in an Iceberg table, use the following syntax.
 
-```
+```sql
 UPDATE [{{db_name}}.]{{table_name}} SET xx=yy[,...] [WHERE {{predicate}}]
 ```
 

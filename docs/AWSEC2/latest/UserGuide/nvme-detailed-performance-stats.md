@@ -59,25 +59,25 @@ For more information about configuring the CloudWatch agent, see [ Collect Amazo
 
 1. Amazon Linux 2023 AMIs released after September 15, 2025 include the latest version of the `nvme-cli` tool. If you are using an older Amazon Linux AMI, update the `nvme-cli` tool.
 
-   ```
+   ```bash
    sudo yum install nvme-cli
    ```
 
 1. Run the following command and specify the device name for the volume.
 
-   ```
+   ```bash
    sudo nvme amzn stats /dev/{{nvme0n1}}
    ```
 
 The statistics also provide detailed latency histograms broken down by I/O size. To view statistics broken down by I/O size, include the `--details` option. For example:
 
-```
+```bash
 sudo nvme amzn stats --details /dev/{{nvme0n1}}
 ```
 
 You can get more information about how to use the tool by specifying the `--help` option. For example:
 
-```
+```bash
 sudo nvme amzn stats --help
 ```
 
@@ -99,13 +99,13 @@ sudo nvme amzn stats --help
 
 1. Run the following command as Administrator and specify the disk number for the volume.
 
-   ```
+   ```bash
    .\nvme_amzn.exe stats {{disk_number}}
    ```
 
 The statistics also provide detailed latency histograms broken down by I/O size. To view statistics broken down by I/O size, include the `--details` option. For example:
 
-```
+```bash
 .\nvme_amzn.exe stats --details {{disk_number}}
 ```
 

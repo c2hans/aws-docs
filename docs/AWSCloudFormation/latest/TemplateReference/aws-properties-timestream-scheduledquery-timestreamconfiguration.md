@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-timestream-scheduledquery-timestreamconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DatabaseName](#cfn-timestream-scheduledquery-timestreamconfiguration-databasename)" : {{String}},
   "[DimensionMappings](#cfn-timestream-scheduledquery-timestreamconfiguration-dimensionmappings)" : {{[ DimensionMapping, ... ]}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-timestream-scheduledquery-timestreamconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DatabaseName](#cfn-timestream-scheduledquery-timestreamconfiguration-databasename): {{String}}
   [DimensionMappings](#cfn-timestream-scheduledquery-timestreamconfiguration-dimensionmappings): {{
     - DimensionMapping}}

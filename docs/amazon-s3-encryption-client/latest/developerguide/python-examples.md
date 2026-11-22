@@ -29,7 +29,7 @@ To use a KMS key as your wrapping key, you need [kms:GenerateDataKey](https://do
 
 The following example instantiates the Amazon S3 Encryption Client with the default configuration. By default, the Amazon S3 Encryption Client for Python encrypts using the AES-GCM with key commitment algorithm suite and the `REQUIRE_ENCRYPT_REQUIRE_DECRYPT` commitment policy.
 
-```
+```python
 import boto3
 from s3_encryption import S3EncryptionClient, S3EncryptionClientConfig
 from s3_encryption.materials.kms_keyring import KmsKeyring
@@ -53,7 +53,7 @@ The following example shows you how to use the Amazon S3 Encryption Client for P
 
 1. Create a [keyring](concepts.md#keyring) with a KMS key as your wrapping key when you [instantiate your client](#python-instantiate-client).
 
-   ```
+   ```python
    import boto3
    from s3_encryption import S3EncryptionClient, S3EncryptionClientConfig
    from s3_encryption.materials.kms_keyring import KmsKeyring
@@ -74,7 +74,7 @@ The following example shows you how to use the Amazon S3 Encryption Client for P
 
    1. The Amazon S3 Encryption Client uploads the encrypted data key and the encrypted object to Amazon S3 as part of the `PutObject` call.
 
-   ```
+   ```python
    plaintext = "Hello, S3 Encryption Client!"
 
    s3ec.put_object(
@@ -91,7 +91,7 @@ The following example shows you how to use the Amazon S3 Encryption Client for P
 
    1. The Amazon S3 Encryption Client uses the plaintext data key to decrypt the object, discards the plaintext data key, and returns the plaintext object as part of the `GetObject` call.
 
-   ```
+   ```python
    response = s3ec.get_object(
        Bucket={{bucket}},
        Key={{object_key}},
@@ -103,7 +103,7 @@ The following example shows you how to use the Amazon S3 Encryption Client for P
 
 1. Optional: verify that the decrypted object matches the original plaintext object that you uploaded.
 
-   ```
+   ```python
    assert decrypted_plaintext == plaintext
    ```
 
@@ -119,7 +119,7 @@ Both methods automatically split large objects into parts, encrypt each part, an
 
 Use `upload_file` to encrypt and upload a file from the local file system. You can optionally specify a `multipart_threshold` to control when multipart upload is used, and a `multipart_chunksize` to control the size of each part.
 
-```
+```python
 import boto3
 from s3_encryption import S3EncryptionClient, S3EncryptionClientConfig
 from s3_encryption.materials.kms_keyring import KmsKeyring
@@ -146,7 +146,7 @@ s3ec.upload_file(
 
 Use `upload_fileobj` to encrypt and upload a file-like object (any object with a `read()` method) to Amazon S3 via multipart upload. The caller retains ownership of the file object — it will not be closed by this method.
 
-```
+```python
 import io
 import boto3
 from s3_encryption import S3EncryptionClient, S3EncryptionClientConfig
@@ -184,7 +184,7 @@ The following walkthrough explains how to use streaming decryption with delayed 
 
 1. Enable delayed authentication by specifying the `enable_delayed_authentication` parameter when you configure your client.
 
-   ```
+   ```python
    import boto3
    from s3_encryption import S3EncryptionClient, S3EncryptionClientConfig
    from s3_encryption.materials.kms_keyring import KmsKeyring
@@ -203,13 +203,13 @@ The following walkthrough explains how to use streaming decryption with delayed 
 
 1. Encrypt and upload your object by calling `upload_file`. This method automatically performs a multipart upload for large files.
 
-   ```
+   ```python
    s3ec.upload_file({{filename}}, {{bucket}}, {{object_key}})
    ```
 
 1. Stream the decrypted object back in chunks. With delayed authentication, plaintext is released incrementally without buffering the entire object in memory.
 
-   ```
+   ```python
    from s3_encryption.exceptions import S3EncryptionClientSecurityError
 
    response = s3ec.get_object(Bucket={{bucket}}, Key={{object_key}})
@@ -233,6 +233,6 @@ The following walkthrough explains how to use streaming decryption with delayed 
 
 1. Optional: verify that the decrypted content matches the original data.
 
-   ```
+   ```python
    assert plaintext == {{large_data}}
    ```

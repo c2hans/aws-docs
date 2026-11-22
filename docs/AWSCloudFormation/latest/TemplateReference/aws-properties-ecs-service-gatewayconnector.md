@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-gatewayconnector-syntax.json"></a>
 
-```
+```json
 {
   "[DeregistrationDelay](#cfn-ecs-service-gatewayconnector-deregistrationdelay)" : {{GatewayConnectorDeregistrationDelay}},
   "[Filters](#cfn-ecs-service-gatewayconnector-filters)" : {{GatewayConnectorFilters}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-gatewayconnector-syntax.yaml"></a>
 
-```
+```yaml
   [DeregistrationDelay](#cfn-ecs-service-gatewayconnector-deregistrationdelay): {{
     GatewayConnectorDeregistrationDelay}}
   [Filters](#cfn-ecs-service-gatewayconnector-filters): {{

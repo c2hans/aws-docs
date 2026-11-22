@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-environment-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-batch-jobdefinition-environment-name)" : {{String}},
   "[Value](#cfn-batch-jobdefinition-environment-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-environment-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-batch-jobdefinition-environment-name): {{String}}
   [Value](#cfn-batch-jobdefinition-environment-value): {{String}}
 ```

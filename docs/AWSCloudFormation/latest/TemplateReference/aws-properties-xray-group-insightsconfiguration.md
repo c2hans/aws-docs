@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-xray-group-insightsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[InsightsEnabled](#cfn-xray-group-insightsconfiguration-insightsenabled)" : {{Boolean}},
   "[NotificationsEnabled](#cfn-xray-group-insightsconfiguration-notificationsenabled)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-xray-group-insightsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [InsightsEnabled](#cfn-xray-group-insightsconfiguration-insightsenabled): {{Boolean}}
   [NotificationsEnabled](#cfn-xray-group-insightsconfiguration-notificationsenabled): {{Boolean}}
 ```

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpoolclient-analyticsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ApplicationArn](#cfn-cognito-userpoolclient-analyticsconfiguration-applicationarn)" : {{String}},
   "[ApplicationId](#cfn-cognito-userpoolclient-analyticsconfiguration-applicationid)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpoolclient-analyticsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ApplicationArn](#cfn-cognito-userpoolclient-analyticsconfiguration-applicationarn): {{String}}
   [ApplicationId](#cfn-cognito-userpoolclient-analyticsconfiguration-applicationid): {{String}}
   [ExternalId](#cfn-cognito-userpoolclient-analyticsconfiguration-externalid): {{String}}

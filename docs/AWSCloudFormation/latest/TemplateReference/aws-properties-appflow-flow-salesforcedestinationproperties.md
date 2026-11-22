@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-flow-salesforcedestinationproperties-syntax.json"></a>
 
-```
+```json
 {
   "[DataTransferApi](#cfn-appflow-flow-salesforcedestinationproperties-datatransferapi)" : {{String}},
   "[ErrorHandlingConfig](#cfn-appflow-flow-salesforcedestinationproperties-errorhandlingconfig)" : {{ErrorHandlingConfig}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-flow-salesforcedestinationproperties-syntax.yaml"></a>
 
-```
+```yaml
   [DataTransferApi](#cfn-appflow-flow-salesforcedestinationproperties-datatransferapi): {{String}}
   [ErrorHandlingConfig](#cfn-appflow-flow-salesforcedestinationproperties-errorhandlingconfig): {{
     ErrorHandlingConfig}}

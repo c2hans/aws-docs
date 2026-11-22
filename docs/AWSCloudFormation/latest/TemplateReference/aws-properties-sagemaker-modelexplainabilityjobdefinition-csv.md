@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelexplainabilityjobdefinition-csv-syntax.json"></a>
 
-```
+```json
 {
   "[Header](#cfn-sagemaker-modelexplainabilityjobdefinition-csv-header)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelexplainabilityjobdefinition-csv-syntax.yaml"></a>
 
-```
+```yaml
   [Header](#cfn-sagemaker-modelexplainabilityjobdefinition-csv-header): {{Boolean}}
 ```
 

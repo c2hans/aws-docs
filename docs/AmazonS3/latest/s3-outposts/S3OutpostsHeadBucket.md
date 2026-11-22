@@ -33,7 +33,7 @@ aws s3api head-bucket --bucket arn:aws:s3-outposts:{{region}}:{{123456789012}}:o
 
 The following S3 on Outposts example shows how to determine if a bucket exists and if you have permission to access it. To use this example, specify the access point ARN for the Outpost. For more information, see [HeadBucket](https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadBucket.html) in the *Amazon Simple Storage Service API Reference*.
 
-```
+```Java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.SdkClientException;
 import com.amazonaws.services.s3.AmazonS3;

@@ -52,7 +52,7 @@ Replace all {{user input}} with your own values.
 1. Create a file called `instance-role-trust-policy.json` with the following contents.
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -81,7 +81,7 @@ Replace all {{user input}} with your own values.
 
    Example response
 
-   ```
+   ```JSON
    {
        "InstanceProfile": {
            "InstanceProfileId": "AIPAJTLBPJLEGREXAMPLE",
@@ -130,7 +130,7 @@ The Amazon ECS container instance role that you use with your container instance
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -164,7 +164,7 @@ The container instance role that you use with your container instances must have
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -267,7 +267,7 @@ After you create the policy, attach the policy to the container instance role. F
 1. Create a file called `instance-cw-logs.json` with the following content.
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

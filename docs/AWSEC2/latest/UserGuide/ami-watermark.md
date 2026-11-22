@@ -80,7 +80,7 @@ You can attach a watermark to an AMI by using the console, the AWS CLI, or Power
 **To attach a watermark to an AMI**
 Use the [attach-image-watermark](https://docs.aws.amazon.com/cli/latest/reference/ec2/attach-image-watermark.html) command.
 
-```
+```bash
 aws ec2 attach-image-watermark \
     --image-id {{ami-1111111111EXAMPLE}} \
     --image-watermark-name "{{prod-baseline}}"
@@ -88,7 +88,7 @@ aws ec2 attach-image-watermark \
 
 The following is example output.
 
-```
+```json
 {
     "WatermarkKey": "123456789012:prod-baseline"
 }
@@ -100,7 +100,7 @@ The following is example output.
 **To attach a watermark to an AMI**
 Use the [Add-EC2ImageWatermark](https://docs.aws.amazon.com/powershell/latest/reference/items/Add-EC2ImageWatermark.html) cmdlet.
 
-```
+```powershell
 Add-EC2ImageWatermark `
     -ImageId {{ami-1111111111EXAMPLE}} `
     -ImageWatermarkName "{{prod-baseline}}"
@@ -136,7 +136,7 @@ You can detach a watermark from an AMI by using the console, the AWS CLI, or Pow
 **To detach a watermark from an AMI**
 Use the [detach-image-watermark](https://docs.aws.amazon.com/cli/latest/reference/ec2/detach-image-watermark.html) command.
 
-```
+```bash
 aws ec2 detach-image-watermark \
     --image-id {{ami-1111111111EXAMPLE}} \
     --image-watermark-key "{{111122223333:prod-baseline}}"
@@ -148,7 +148,7 @@ aws ec2 detach-image-watermark \
 **To detach a watermark from an AMI**
 Use the [Remove-EC2ImageWatermark](https://docs.aws.amazon.com/powershell/latest/reference/items/Remove-EC2ImageWatermark.html) cmdlet.
 
-```
+```powershell
 Remove-EC2ImageWatermark `
     -ImageId {{ami-1111111111EXAMPLE}} `
     -ImageWatermarkKey "{{111122223333:prod-baseline}}"
@@ -183,7 +183,7 @@ You can view watermarks for an AMI by using the console, the AWS CLI, or PowerSh
 **To view watermarks for an AMI**
 Use the [describe-images](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command.
 
-```
+```bash
 aws ec2 describe-images \
     --image-ids {{ami-046863d776a820ccd}} \
     --region {{us-east-1}}
@@ -191,7 +191,7 @@ aws ec2 describe-images \
 
 The response includes the `ImageWatermarks` array for each AMI.
 
-```
+```json
 {
     "Images": [
         {
@@ -226,7 +226,7 @@ The response includes the `ImageWatermarks` array for each AMI.
 **To view watermarks for an AMI**
 Use the [Get-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Image.html) cmdlet.
 
-```
+```powershell
 (Get-EC2Image -ImageId {{ami-046863d776a820ccd}}).ImageWatermarks
 ```
 
@@ -254,7 +254,7 @@ You can filter AMIs by watermark by using the console, the AWS CLI, or PowerShel
 **To filter AMIs by watermark**
 Use the [describe-images](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command with the `image-watermark-key` filter.
 
-```
+```bash
 aws ec2 describe-images \
     --filters "Name=image-watermark-key,Values={{111122223333:prod-baseline}}"
 ```
@@ -267,7 +267,7 @@ This returns all AMIs you have access to that carry the specified watermark, inc
 **To filter AMIs by watermark**
 Use the [Get-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Image.html) cmdlet with the `-Filter` parameter.
 
-```
+```powershell
 Get-EC2Image `
     -Filter @{Name="image-watermark-key"; Values="{{111122223333:prod-baseline}}"}
 ```

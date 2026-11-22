@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-scatterplotconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DataLabels](#cfn-quicksight-analysis-scatterplotconfiguration-datalabels)" : {{DataLabelOptions}},
   "[FieldWells](#cfn-quicksight-analysis-scatterplotconfiguration-fieldwells)" : {{ScatterPlotFieldWells}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-scatterplotconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DataLabels](#cfn-quicksight-analysis-scatterplotconfiguration-datalabels): {{
     DataLabelOptions}}
   [FieldWells](#cfn-quicksight-analysis-scatterplotconfiguration-fieldwells): {{

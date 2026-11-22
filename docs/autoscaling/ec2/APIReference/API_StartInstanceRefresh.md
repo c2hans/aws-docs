@@ -106,7 +106,7 @@ https://autoscaling.amazonaws.com/?Action=StartInstanceRefresh
 #### Sample Response
 <a name="API_StartInstanceRefresh_Example_1_Response"></a>
 
-```
+```xml
 <StartInstanceRefreshResponse xmlns="https://autoscaling.amazonaws.com/doc/2011-01-01/">
   <StartInstanceRefreshResult>
     <InstanceRefreshId>ccfd3c2f-edb3-470d-af32-52cc57d201ca</InstanceRefreshId>

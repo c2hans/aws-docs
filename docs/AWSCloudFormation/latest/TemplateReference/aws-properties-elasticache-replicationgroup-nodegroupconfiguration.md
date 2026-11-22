@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticache-replicationgroup-nodegroupconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[NodeGroupId](#cfn-elasticache-replicationgroup-nodegroupconfiguration-nodegroupid)" : {{String}},
   "[PrimaryAvailabilityZone](#cfn-elasticache-replicationgroup-nodegroupconfiguration-primaryavailabilityzone)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticache-replicationgroup-nodegroupconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [NodeGroupId](#cfn-elasticache-replicationgroup-nodegroupconfiguration-nodegroupid): {{String}}
   [PrimaryAvailabilityZone](#cfn-elasticache-replicationgroup-nodegroupconfiguration-primaryavailabilityzone): {{String}}
   [ReplicaAvailabilityZones](#cfn-elasticache-replicationgroup-nodegroupconfiguration-replicaavailabilityzones): {{

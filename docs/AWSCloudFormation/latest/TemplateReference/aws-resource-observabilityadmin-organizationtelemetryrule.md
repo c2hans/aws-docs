@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-observabilityadmin-organizationtelemetryrule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ObservabilityAdmin::OrganizationTelemetryRule",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-observabilityadmin-organizationtelemetryrule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ObservabilityAdmin::OrganizationTelemetryRule
 Properties:
   [Rule](#cfn-observabilityadmin-organizationtelemetryrule-rule): {{
@@ -59,7 +59,7 @@ The name of the organization centralization rule.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Tags`  <a name="cfn-observabilityadmin-organizationtelemetryrule-tags"></a>
- Lists all tags attached to the specified resource. Supports telemetry rule resources and telemetry pipeline resources.
+ Lists all tags attached to the specified resource. Supports telemetry rule resources, telemetry pipeline resources, and third-party telemetry enrichment resources.
 *Required*: No
 *Type*: Array of [Tag](aws-properties-observabilityadmin-organizationtelemetryrule-tag.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

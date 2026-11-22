@@ -108,7 +108,7 @@ The following example query requests grant a ` SendMessage ` permission to the p
 #### Sample Request
 <a name="API_AddPermission_Example_1_Request"></a>
 
-```
+```json
 POST / HTTP/1.1
 Host: sqs.us-east-1.amazonaws.com
 X-Amz-Target: AmazonSQS.AddPermission
@@ -128,7 +128,7 @@ Connection: Keep-Alive
 #### Sample Response
 <a name="API_AddPermission_Example_1_Response"></a>
 
-```
+```json
 HTTP/1.1 200 OK
 x-amzn-RequestId: <requestId>
 Content-Length: 0
@@ -144,7 +144,7 @@ Content-Type: application/x-amz-json-1.0
 #### Sample Request
 <a name="API_AddPermission_Example_2_Request"></a>
 
-```
+```xml
 POST /177715257436/MyQueue HTTP/1.1
 Host: sqs.us-east-1.amazonaws.com
 X-Amz-Date: <Date>
@@ -163,7 +163,7 @@ Action=AddPermission
 #### Sample Response
 <a name="API_AddPermission_Example_2_Response"></a>
 
-```
+```xml
 HTTP/1.1 200 OK
 <?xml version="1.0"?>
 <AddPermissionResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/">

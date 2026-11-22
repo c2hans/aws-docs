@@ -23,19 +23,19 @@ For the limitations of local validation and steps to take before deployment, see
 
 Install `cfn-lint` from the Python Package Index (PyPI):
 
-```
+```sh
 python3 -m pip install cfn-lint
 ```
 
 On macOS, you can instead install it with Homebrew:
 
-```
+```sh
 brew install cfn-lint
 ```
 
 To confirm the installation, print the installed version:
 
-```
+```sh
 cfn-lint --version
 ```
 
@@ -46,14 +46,14 @@ For a Docker image and other installation methods, see the [installation instruc
 
 Pass one or more template paths to the command:
 
-```
+```sh
 cfn-lint template.yaml
 cfn-lint template-one.yaml template-two.json
 ```
 
 You can also use wildcards to check every template in a directory. Use `**` to include subdirectories:
 
-```
+```sh
 cfn-lint templates/*.yaml
 cfn-lint templates/**/*.yaml
 ```
@@ -63,27 +63,27 @@ In `bash`, run `shopt -s globstar` before you use `**` so that it matches subdir
 
 To read a template from standard input, pass `-` as the template path:
 
-```
+```sh
 cat template.yaml | cfn-lint -
 ```
 
 By default, `cfn-lint` checks templates against the schemas for `us-east-1`. To check templates for other AWS Regions, use the `--regions` option. Because this option accepts multiple values, add `--` before the template path or use `-t` to identify the template:
 
-```
+```sh
 cfn-lint --regions us-east-1 us-west-2 -- template.yaml
 cfn-lint --regions us-east-1 us-west-2 -t template.yaml
 ```
 
 Some checks depend on parameter values. To check a template with specific values, pass them with `--parameters` or provide a parameter file with `--parameter-files`:
 
-```
+```sh
 cfn-lint --parameters InstanceType=t3.micro Environment=prod -- template.yaml
 cfn-lint --parameter-files params.json -- template.yaml
 ```
 
 To list every rule that `cfn-lint` can apply, run the following command:
 
-```
+```sh
 cfn-lint --list-rules
 ```
 
@@ -94,7 +94,7 @@ For each finding, `cfn-lint` prints the rule ID, a message, and the file, line, 
 
 To change the output format, use `--format` with `quiet`, `parseable`, `json`, `junit`, `pretty`, or `sarif`:
 
-```
+```sh
 cfn-lint --format json template.yaml
 ```
 
@@ -110,13 +110,13 @@ You can configure `cfn-lint` with command-line options, a configuration file, or
 
 To skip rules, use `--ignore-checks` with one or more rule IDs or rule ID prefixes. To run rules that are off by default, use `--include-checks`. To run a rule even when it matches an ignore setting, use `--mandatory-checks`.
 
-```
+```sh
 cfn-lint --ignore-checks {{RULE_ID}} -- template.yaml
 ```
 
 Some rules accept settings. Use `--configure-rule` with the format `{{RULE_ID}}:{{key}}={{value}}`:
 
-```
+```sh
 cfn-lint --configure-rule {{RULE_ID}}:{{key}}={{value}} -- template.yaml
 ```
 
@@ -125,7 +125,7 @@ cfn-lint --configure-rule {{RULE_ID}}:{{key}}={{value}} -- template.yaml
 
 To keep settings with your templates, create a `.cfnlintrc`, `.cfnlintrc.yaml`, or `.cfnlintrc.yml` file in the directory where you run `cfn-lint`. You can also create a `~/.cfnlintrc` file in your home directory for settings that apply everywhere. The following example selects the templates to check, skips one template, sets the Regions, and skips a rule:
 
-```
+```yaml
 templates:
   - templates/**/*.yaml
 ignore_templates:
@@ -144,7 +144,7 @@ When the configuration file selects templates, you can run `cfn-lint` without ar
 
 To configure `cfn-lint` for one template, add a `cfn-lint` key to the top-level `Metadata` section:
 
-```
+```yaml
 Metadata:
   cfn-lint:
     config:
@@ -157,7 +157,7 @@ Metadata:
 
 To skip a rule for a single resource, add the same key to that resource's `Metadata` attribute. The following example skips a rule for one instance only:
 
-```
+```yaml
 Resources:
   MyInstance:
     Type: AWS::EC2::Instance
@@ -176,19 +176,19 @@ Resources:
 
 You can add your own checks without writing Python. A custom rules file contains one rule per line in the following format:
 
-```
+```text
 {{ResourceType}} {{Property}} {{Operator}} {{Value}} [{{ErrorLevel}}] [{{Message}}]
 ```
 
 For example, the following rule in `custom_rules.txt` reports a warning when a template uses an expensive instance type:
 
-```
+```text
 AWS::EC2::Instance InstanceType NOT_EQUALS "m4.16xlarge" WARN "This is an expensive instance type, don't use it"
 ```
 
 Pass the file with `--custom-rules` (or `-z`), or add a `custom_rules` setting to your configuration file:
 
-```
+```sh
 cfn-lint --custom-rules custom_rules.txt -- template.yaml
 ```
 
@@ -201,7 +201,7 @@ You can run `cfn-lint` in the following places:
 + **In your editor** – The CloudFormation Language Server uses `cfn-lint` to show problems while you type. For setup, see [CloudFormation Language Server](ide-extension.md). Plugins are also available for other editors, including Vim, Emacs, and Sublime Text.
 + **Before a Git commit** – Add `cfn-lint` to your `.pre-commit-config.yaml` file so that it runs on changed templates before each commit. Replace the `rev` value with the version that you want to use.
 
-  ```
+  ```yaml
   repos:
     - repo: https://github.com/aws-cloudformation/cfn-lint
       rev: v1.56.0
@@ -212,7 +212,7 @@ You can run `cfn-lint` in the following places:
 + **In an automated build** – Run `cfn-lint` as a build step and use the exit code to fail the build. A GitHub Action for `cfn-lint` is also available.
 + **In your own Python code** – Import `cfnlint.api` and call `lint` or `lint_all` to check a template string and process the results in your application.
 
-  ```
+  ```python
   from cfnlint.api import lint, ManualArgs
 
   with open("template.yaml") as f:

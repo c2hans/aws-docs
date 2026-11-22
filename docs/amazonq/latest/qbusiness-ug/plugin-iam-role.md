@@ -24,7 +24,7 @@ The following is the service access IAM role required:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -51,7 +51,7 @@ The following is the service access IAM role required:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

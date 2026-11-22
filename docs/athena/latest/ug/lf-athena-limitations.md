@@ -60,7 +60,7 @@ Open Table Format (OTF) tables such as Apache Iceberg that have the following ch
 
 To query non-OTF tables that are encrypted with a `CSE_KMS` key), add the following block to the policy of the AWS KMS key that you use for CSE encryption. {{<KMS\_KEY\_ARN>}} is the ARN of the AWS KMS key that encrypts the data. {{<IAM-ROLE-ARN>}} is the ARN of the IAM role that registers the Amazon S3 location in Lake Formation.
 
-```
+```json
 {
     "Sid": "Allow use of the key",
     "Effect": "Allow",

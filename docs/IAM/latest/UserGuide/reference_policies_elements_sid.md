@@ -11,7 +11,7 @@ You can provide a `Sid` (statement ID) as an optional identifier for the policy 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-rule-eventbridgeaction-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-connect-rule-eventbridgeaction-name)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-rule-eventbridgeaction-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-connect-rule-eventbridgeaction-name): {{String}}
 ```
 

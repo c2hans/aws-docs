@@ -11,7 +11,7 @@ This example uses AWS SDK for Java 2.x. For the legacy SDK for Java 1.x version,
 
 To modify your program, replace the DynamoDB client with a DAX client.
 
-```
+```java
 Region region = Region.US_EAST_1;
 
 // Create an asynchronous DynamoDB client
@@ -31,7 +31,7 @@ DynamoDbAsyncClient client = ClusterDaxAsyncClient.builder()
 
 You can also use the high-level library that is part of the AWS SDK for Java 2.x, replacing the DynamoDB client with a DAX client.
 
-```
+```java
 Region region = Region.US_EAST_1;
 DynamoDbAsyncClient dax = ClusterDaxAsyncClient.builder()
         .overrideConfiguration(Configuration.builder()

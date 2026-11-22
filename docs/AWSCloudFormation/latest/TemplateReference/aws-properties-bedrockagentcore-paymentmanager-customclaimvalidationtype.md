@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-paymentmanager-customclaimvalidationtype-syntax.json"></a>
 
-```
+```json
 {
   "[AuthorizingClaimMatchValue](#cfn-bedrockagentcore-paymentmanager-customclaimvalidationtype-authorizingclaimmatchvalue)" : {{AuthorizingClaimMatchValueType}},
   "[InboundTokenClaimName](#cfn-bedrockagentcore-paymentmanager-customclaimvalidationtype-inboundtokenclaimname)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-paymentmanager-customclaimvalidationtype-syntax.yaml"></a>
 
-```
+```yaml
   [AuthorizingClaimMatchValue](#cfn-bedrockagentcore-paymentmanager-customclaimvalidationtype-authorizingclaimmatchvalue): {{
     AuthorizingClaimMatchValueType}}
   [InboundTokenClaimName](#cfn-bedrockagentcore-paymentmanager-customclaimvalidationtype-inboundtokenclaimname): {{String}}

@@ -10,13 +10,13 @@ When a new version of the SDK is released:
 
 1. Update the SDK packages:
 
-   ```
+   ```bash
    npm update @amazon-connect/core @amazon-connect/contact @amazon-connect/email
    ```
 
 1. Rebuild the bundle:
 
-   ```
+   ```bash
    npm run build
    ```
 

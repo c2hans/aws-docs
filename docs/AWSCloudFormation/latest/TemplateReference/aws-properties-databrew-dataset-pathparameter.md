@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-databrew-dataset-pathparameter-syntax.json"></a>
 
-```
+```json
 {
   "[DatasetParameter](#cfn-databrew-dataset-pathparameter-datasetparameter)" : {{DatasetParameter}},
   "[PathParameterName](#cfn-databrew-dataset-pathparameter-pathparametername)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-databrew-dataset-pathparameter-syntax.yaml"></a>
 
-```
+```yaml
   [DatasetParameter](#cfn-databrew-dataset-pathparameter-datasetparameter): {{
     DatasetParameter}}
   [PathParameterName](#cfn-databrew-dataset-pathparameter-pathparametername): {{String}}

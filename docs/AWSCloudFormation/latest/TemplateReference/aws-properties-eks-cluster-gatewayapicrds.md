@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-cluster-gatewayapicrds-syntax.json"></a>
 
-```
+```json
 {
   "[Managed](#cfn-eks-cluster-gatewayapicrds-managed)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-cluster-gatewayapicrds-syntax.yaml"></a>
 
-```
+```yaml
   [Managed](#cfn-eks-cluster-gatewayapicrds-managed): {{Boolean}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-s3accesspointattachment-s3accesspoint-syntax.json"></a>
 
-```
+```json
 {
   "[Alias](#cfn-fsx-s3accesspointattachment-s3accesspoint-alias)" : {{String}},
   "[Policy](#cfn-fsx-s3accesspointattachment-s3accesspoint-policy)" : {{Json}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-s3accesspointattachment-s3accesspoint-syntax.yaml"></a>
 
-```
+```yaml
   [Alias](#cfn-fsx-s3accesspointattachment-s3accesspoint-alias): {{String}}
   [Policy](#cfn-fsx-s3accesspointattachment-s3accesspoint-policy): {{Json}}
   [ResourceARN](#cfn-fsx-s3accesspointattachment-s3accesspoint-resourcearn): {{String}}

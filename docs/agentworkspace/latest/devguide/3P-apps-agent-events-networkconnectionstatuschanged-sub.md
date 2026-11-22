@@ -8,13 +8,13 @@ Subscribes a callback function to be invoked whenever the agent's network connec
 
  **Signature**
 
-```
+```typescript
 onNetworkConnectionStatusChanged(handler: NetworkConnectionStatusChangedHandler)
 ```
 
  **Usage**
 
-```
+```typescript
 const handler: NetworkConnectionStatusChangedHandler = async (data: NetworkConnectionStatusChanged) => {
     console.log("Network connection status changed! " + data.status);
 };
@@ -30,6 +30,6 @@ agentClient.onNetworkConnectionStatusChanged(handler);
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

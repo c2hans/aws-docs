@@ -37,7 +37,7 @@ aws ecs describe-container-instances \
 
 The following is an example of the health status object in the output.
 
-```
+```JSON
 "healthStatus": {
 	"overallStatus": "OK",
 	"details": [{

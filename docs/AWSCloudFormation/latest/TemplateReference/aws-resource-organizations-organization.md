@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-organizations-organization-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Organizations::Organization",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-organizations-organization-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Organizations::Organization
 Properties:
   [FeatureSet](#cfn-organizations-organization-featureset): {{String}}
@@ -110,7 +110,7 @@ This example illustrates how to specify the organization feature set as `ALL` in
 #### JSON
 <a name="aws-resource-organizations-organization--examples--Organization_FeatureSet_specified_as_ALL--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "AWS CloudFormation Organizations Template Example",
@@ -129,7 +129,7 @@ This example illustrates how to specify the organization feature set as `ALL` in
 #### YAML
 <a name="aws-resource-organizations-organization--examples--Organization_FeatureSet_specified_as_ALL--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: AWS CloudFormation Organizations Template Example
 Resources:
@@ -148,7 +148,7 @@ This example illustrates how to specify the organization feature set as `CONSOLI
 #### JSON
 <a name="aws-resource-organizations-organization--examples--Organization_FeatureSet_specified_as_CONSOLIDATED_BILLING--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "AWS CloudFormation Organizations Template Example",
@@ -167,7 +167,7 @@ This example illustrates how to specify the organization feature set as `CONSOLI
 #### YAML
 <a name="aws-resource-organizations-organization--examples--Organization_FeatureSet_specified_as_CONSOLIDATED_BILLING--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: AWS CloudFormation Organizations Template Example
 Resources:

@@ -13,7 +13,7 @@ If you use the CloudWatch console to create a metric stream, you can have CloudW
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -36,7 +36,7 @@ If you use the CloudWatch console to create a metric stream, you can have CloudW
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

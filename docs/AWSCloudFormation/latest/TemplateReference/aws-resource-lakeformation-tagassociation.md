@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lakeformation-tagassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::LakeFormation::TagAssociation",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lakeformation-tagassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::LakeFormation::TagAssociation
 Properties:
   [LFTags](#cfn-lakeformation-tagassociation-lftags): {{
@@ -109,7 +109,7 @@ The following example demonstrates how to create an LF-tag on a database.
 #### JSON
 <a name="aws-resource-lakeformation-tagassociation--examples--Examples_for_creating_an_LF-tag_for_a_database--json"></a>
 
-```
+```json
 {
     "SampleTagOnDatabase": {
         "Type": "AWS::LakeFormation::TagAssociation",
@@ -135,7 +135,7 @@ The following example demonstrates how to create an LF-tag on a database.
 #### YAML
 <a name="aws-resource-lakeformation-tagassociation--examples--Examples_for_creating_an_LF-tag_for_a_database--yaml"></a>
 
-```
+```yaml
 SampleTagOnDatabase:
     Type: AWS::LakeFormation::TagAssociation
     Properties:
@@ -158,7 +158,7 @@ The following example demonstrates how to create an LF-tag on a table.
 #### JSON
 <a name="aws-resource-lakeformation-tagassociation--examples--Examples_for_creating_and_LF-tag_for_a_table--json"></a>
 
-```
+```json
 {
     "SampleTagOnTable": {
         "Type": "AWS::LakeFormation::TagAssociation",
@@ -185,7 +185,7 @@ The following example demonstrates how to create an LF-tag on a table.
 #### YAML
 <a name="aws-resource-lakeformation-tagassociation--examples--Examples_for_creating_and_LF-tag_for_a_table--yaml"></a>
 
-```
+```yaml
 SampleTagOnTable:
     Type: AWS::LakeFormation::TagAssociation
     Properties:
@@ -209,7 +209,7 @@ The following example demonstrates how to create LF-tags on columns.
 #### JSON
 <a name="aws-resource-lakeformation-tagassociation--examples--Examples_for_creating_an_LF-tag_for_columns--json"></a>
 
-```
+```json
 {
     "SampleTagOnColumn": {
         "Type": "AWS::LakeFormation::TagAssociation",
@@ -237,7 +237,7 @@ The following example demonstrates how to create LF-tags on columns.
 #### YAML
 <a name="aws-resource-lakeformation-tagassociation--examples--Examples_for_creating_an_LF-tag_for_columns--yaml"></a>
 
-```
+```yaml
 TestTagAssociation:
     Type: AWS::LakeFormation::TagAssociation
     Properties:

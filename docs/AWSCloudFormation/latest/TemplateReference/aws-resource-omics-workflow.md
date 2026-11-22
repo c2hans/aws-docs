@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-omics-workflow-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Omics::Workflow",
   "Properties" : {
@@ -52,7 +52,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-omics-workflow-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Omics::Workflow
 Properties:
   [Accelerators](#cfn-omics-workflow-accelerators): {{String}}

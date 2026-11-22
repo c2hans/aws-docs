@@ -82,7 +82,7 @@ The following sample policy allows a user to create, view, and delete data prote
 
 ****
 
-```
+```json
 
     {
     "Version":"2012-10-17",

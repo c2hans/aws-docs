@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-acmpca-certificateauthority-ocspconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-acmpca-certificateauthority-ocspconfiguration-enabled)" : {{Boolean}},
   "[OcspCustomCname](#cfn-acmpca-certificateauthority-ocspconfiguration-ocspcustomcname)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-acmpca-certificateauthority-ocspconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-acmpca-certificateauthority-ocspconfiguration-enabled): {{Boolean}}
   [OcspCustomCname](#cfn-acmpca-certificateauthority-ocspconfiguration-ocspcustomcname): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-stillwaitingresponsespecification-syntax.json"></a>
 
-```
+```json
 {
   "[AllowInterrupt](#cfn-lex-bot-stillwaitingresponsespecification-allowinterrupt)" : {{Boolean}},
   "[FrequencyInSeconds](#cfn-lex-bot-stillwaitingresponsespecification-frequencyinseconds)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-stillwaitingresponsespecification-syntax.yaml"></a>
 
-```
+```yaml
   [AllowInterrupt](#cfn-lex-bot-stillwaitingresponsespecification-allowinterrupt): {{Boolean}}
   [FrequencyInSeconds](#cfn-lex-bot-stillwaitingresponsespecification-frequencyinseconds): {{Integer}}
   [MessageGroupsList](#cfn-lex-bot-stillwaitingresponsespecification-messagegroupslist): {{

@@ -55,7 +55,7 @@ The root node MAY contain any other members that are not included in the above r
 The `_aws` member can be used to represent metadata about the payload that informs downstream services how they should process the LogEvent. The value MUST be an object and MUST contain the following members:
 + **CloudWatchMetrics**— An array of [MetricDirective object](#CloudWatch_Embedded_Metric_Format_Specification_structure_metricdirective) used to instruct CloudWatch to extract metrics from the root node of the LogEvent.
 
-  ```
+  ```JSON
   {
     "_aws": {
       "CloudWatchMetrics": [ ... ]
@@ -64,7 +64,7 @@ The `_aws` member can be used to represent metadata about the payload that infor
   ```
 + **Timestamp**— A number representing the time stamp used for metrics extracted from the event. Values MUST be expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. The time stamp MUST be no more than 14 days in the past and no more than 2 hours in the future. CloudWatch does not publish metrics that have a time stamp outside this range.
 
-  ```
+  ```JSON
   {
     "_aws": {
       "Timestamp": 1559748430481
@@ -96,7 +96,7 @@ The target member MUST have a string value. This value MUST contain 1 to 1024 pr
 
 If a DimensionSet or a dimension it references doesn't meet these requirements, CloudWatch doesn't publish the metrics for that DimensionSet. The other DimensionSets in the MetricDirective are not affected.
 
-```
+```JSON
 {
  "_aws": {
    "CloudWatchMetrics": [
@@ -128,7 +128,7 @@ A MetricDefinition object MAY contain the following members:
 **Note**
 If you plan to create alarms on metrics created using embedded metric format, see [Setting alarms on metrics created with the embedded metric format](CloudWatch_Embedded_Metric_Format_Alarms.md) for recommendations.
 
-```
+```JSON
 {
   "_aws": {
     "CloudWatchMetrics": [

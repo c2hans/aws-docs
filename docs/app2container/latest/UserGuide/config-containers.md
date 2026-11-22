@@ -53,7 +53,7 @@ The following examples show an `analysis.json` file for an application running o
 
 This example shows an `analysis.json` file for a Java application running on Linux.
 
-```
+```json
 {
 	"a2CTemplateVersion": "",
        "createdTime": "",
@@ -202,7 +202,7 @@ This example shows an `analysis.json` file for a Java application running on Lin
 
 This example shows an `analysis.json` file for an ASP.NET generic application running on Linux.
 
-```
+```json
 {
 	"a2CTemplateVersion": "1.0",
        "createdTime": "2021-11-24 18:49:1224",
@@ -305,7 +305,7 @@ This example shows an `analysis.json` file for an ASP.NET generic application ru
 
 This example shows an `analysis.json` file for an ASP.NET single file application running on Linux.
 
-```
+```json
 {
 	"a2CTemplateVersion": "1.0",
        "createdTime": "2021-11-29 07:08:2929",
@@ -434,7 +434,7 @@ The following examples show an `analysis.json` file for a .NET application runni
 
 The following example shows an `analysis.json` file for a simple .NET application running on Windows.
 
-```
+```json
 {
   "a2CTemplateVersion": "3.1",
   "createdTime": "",
@@ -515,7 +515,7 @@ In this scenario, each application or service has its own `analysis.json` file, 
 **Root application**
 The following example shows the `analysis.json` file for the root application.
 
-  ```
+  ```json
    {
     "a2CTemplateVersion": "1.0",
     "createdTime": "2021-06-25-05:18:24",
@@ -579,7 +579,7 @@ The following example shows the `analysis.json` file for the root application.
 **Windows service**
 The following example shows the `analysis.json` file for the Windows service that is included in the application container.
 
-  ```
+  ```json
   {
     "a2CTemplateVersion": "1.0",
     "createdTime": "2021-07-09-04:16:58",
@@ -641,7 +641,7 @@ In this scenario, each application or service has its own `analysis.json` file, 
 **Root application**
 The following example shows the `analysis.json` file for the root application.
 
-  ```
+  ```json
    {
     "a2CTemplateVersion": "1.0",
     "createdTime": "2021-06-25-05:18:24",
@@ -704,7 +704,7 @@ The following example shows the `analysis.json` file for the root application.
 **Windows service**
 The following example shows the `analysis.json` file for the Windows service that runs in a separate container.
 
-  ```
+  ```json
   {
     "a2CTemplateVersion": "1.0",
     "createdTime": "2021-07-09-04:16:58",

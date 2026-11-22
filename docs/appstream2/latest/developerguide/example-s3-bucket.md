@@ -16,7 +16,7 @@ WorkSpaces Applications currently doesn't support confused deputy prevention for
 
 In the following example, the bucket policy only allows WorkSpaces Applications Elastic fleet resources in the owner's account to access `ELASTIC-FLEET-EXAMPLE-BUCKET`.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -60,7 +60,7 @@ If you don’t know the full ARN of a resource, or you want to specify multiple 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -101,7 +101,7 @@ You can use the `aws:SourceArn` and `aws:SourceAccount` conditions to limit the 
 **Note**
 If you don’t know the full ARN of a resources, or if you want to specify multiple resources, use the `aws:SourceArn` global context condition key with wildcards (\*) for the unknown portions of the ARN.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

@@ -14,7 +14,7 @@ The following image shows this error in the Athena console notebook editor.
 
 The same error can occur when you use the AWS CLI to run a calculation that has a large code block, as in the following example.
 
-```
+```shell
 aws athena start-calculation-execution \
     --session-id "{{{SESSION_ID}}}" \
     --description "{{{SESSION_DESCRIPTION}}}" \
@@ -37,7 +37,7 @@ The following examples assume that you have already uploaded the file that has y
 
 The following example code reads the `large_sql_query.sql` file from an Amazon S3 bucket and then runs the large query that the file contains.
 
-```
+```py
 s3 = boto3.resource('s3')
 def read_s3_content({{bucket_name}}, {{key}}):
     response = s3.Object({{bucket_name}}, {{key}}).get()
@@ -53,7 +53,7 @@ df = spark.sql(sql)
 
 The following code example reads the `large_py_spark.py` file from Amazon S3 and then runs the large code block that is in the file.
 
-```
+```py
 s3 = boto3.resource('s3')
 
 def read_s3_content({{bucket_name}}, {{key}}):

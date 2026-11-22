@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelcard-evaluationdetail-syntax.json"></a>
 
-```
+```json
 {
   "[Datasets](#cfn-sagemaker-modelcard-evaluationdetail-datasets)" : {{[ String, ... ]}},
   "[EvaluationJobArn](#cfn-sagemaker-modelcard-evaluationdetail-evaluationjobarn)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelcard-evaluationdetail-syntax.yaml"></a>
 
-```
+```yaml
   [Datasets](#cfn-sagemaker-modelcard-evaluationdetail-datasets): {{
     - String}}
   [EvaluationJobArn](#cfn-sagemaker-modelcard-evaluationdetail-evaluationjobarn): {{String}}

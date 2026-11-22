@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-kpisparklineoptions-syntax.json"></a>
 
-```
+```json
 {
   "[Color](#cfn-quicksight-dashboard-kpisparklineoptions-color)" : {{String}},
   "[TooltipVisibility](#cfn-quicksight-dashboard-kpisparklineoptions-tooltipvisibility)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-kpisparklineoptions-syntax.yaml"></a>
 
-```
+```yaml
   [Color](#cfn-quicksight-dashboard-kpisparklineoptions-color): {{String}}
   [TooltipVisibility](#cfn-quicksight-dashboard-kpisparklineoptions-tooltipvisibility): {{String}}
   [Type](#cfn-quicksight-dashboard-kpisparklineoptions-type): {{String}}

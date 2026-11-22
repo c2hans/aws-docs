@@ -46,7 +46,7 @@ For more information, see [Viewing the contents and details of a private reposit
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ecr#code-examples).
 
-```
+```java
     /**
      * Retrieves the repository URI for the specified repository name.
      *
@@ -98,7 +98,7 @@ For more information, see [Viewing the contents and details of a private reposit
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ecr#code-examples).
 
-```
+```kotlin
     /**
      * Retrieves the repository URI for the specified repository name.
      *
@@ -131,7 +131,7 @@ For more information, see [Viewing the contents and details of a private reposit
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecr#code-examples).
 
-```
+```python
 class ECRWrapper:
     def __init__(self, ecr_client: client):
         self.ecr_client = ecr_client
@@ -173,7 +173,7 @@ class ECRWrapper:
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ecr#code-examples).
 
-```
+```rust
 async fn show_repos(client: &aws_sdk_ecr::Client) -> Result<(), aws_sdk_ecr::Error> {
     let rsp = client.describe_repositories().send().await?;
 
@@ -197,7 +197,7 @@ async fn show_repos(client: &aws_sdk_ecr::Client) -> Result<(), aws_sdk_ecr::Err
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ecr#code-examples).
 
-```
+```sap-abap
     TRY.
         " it_repository_names = VALUE #( ( NEW /aws1/cl_ecrrepositorynamels00( iv_value = 'my-repository' ) ) )
         oo_result = lo_ecr->describerepositories(

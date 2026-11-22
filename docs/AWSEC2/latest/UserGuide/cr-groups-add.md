@@ -66,7 +66,7 @@ Use the [Add-RGResource](https://docs.aws.amazon.com/powershell/latest/reference
 
 The following example adds two Capacity Reservations to the specified group.
 
-```
+```powershell
 Add-RGResource `
     -Group {{MyCRGroup}} `
     -ResourceArn `

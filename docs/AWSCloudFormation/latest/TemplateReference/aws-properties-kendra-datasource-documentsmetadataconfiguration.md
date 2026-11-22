@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-documentsmetadataconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[S3Prefix](#cfn-kendra-datasource-documentsmetadataconfiguration-s3prefix)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-documentsmetadataconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [S3Prefix](#cfn-kendra-datasource-documentsmetadataconfiguration-s3prefix): {{String}}
 ```
 

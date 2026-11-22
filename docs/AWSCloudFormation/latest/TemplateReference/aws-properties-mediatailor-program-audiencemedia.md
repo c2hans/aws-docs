@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-program-audiencemedia-syntax.json"></a>
 
-```
+```json
 {
   "[AlternateMedia](#cfn-mediatailor-program-audiencemedia-alternatemedia)" : {{[ AlternateMedia, ... ]}},
   "[Audience](#cfn-mediatailor-program-audiencemedia-audience)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-program-audiencemedia-syntax.yaml"></a>
 
-```
+```yaml
   [AlternateMedia](#cfn-mediatailor-program-audiencemedia-alternatemedia): {{
     - AlternateMedia}}
   [Audience](#cfn-mediatailor-program-audiencemedia-audience): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-metadataconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AnnotationTableConfiguration](#cfn-s3-bucket-metadataconfiguration-annotationtableconfiguration)" : {{AnnotationTableConfiguration}},
   "[Destination](#cfn-s3-bucket-metadataconfiguration-destination)" : {{MetadataDestination}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-metadataconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AnnotationTableConfiguration](#cfn-s3-bucket-metadataconfiguration-annotationtableconfiguration): {{
     AnnotationTableConfiguration}}
   [Destination](#cfn-s3-bucket-metadataconfiguration-destination): {{
@@ -77,7 +77,7 @@ The following example creates an S3 Metadata configuration for the specified gen
 #### JSON
 <a name="aws-properties-s3-bucket-metadataconfiguration--examples--Create_a_metadata_configuration--json"></a>
 
-```
+```json
 {
   "Resources": {
     "S3MetadataKMSKey": {
@@ -169,7 +169,7 @@ The following example creates an S3 Metadata configuration for the specified gen
 #### YAML
 <a name="aws-properties-s3-bucket-metadataconfiguration--examples--Create_a_metadata_configuration--yaml"></a>
 
-```
+```yaml
 Resources:
   S3MetadataKMSKey:
     Type: 'AWS::KMS::Key'

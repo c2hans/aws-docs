@@ -25,7 +25,7 @@ To add a policy for using AWS Resource Groups and Tag Editor to a user, do the f
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

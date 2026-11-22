@@ -48,7 +48,7 @@ You cannot undo disassociation or reattach the same table to the global table it
 
 Disassociation uses the `Disassociate` action in the `ReplicaUpdates` array of `UpdateTable`. You need both `dynamodb:UpdateTable` and `dynamodb:DisassociateTableReplica` on the local replica's table ARN. `dynamodb:DisassociateTableReplica` is an IAM permission, not a separate API operation. Changing disassociation protection requires `dynamodb:UpdateTable`, and checking protection and monitoring completion require `dynamodb:DescribeTable`. The following identity policy grants these permissions for one table. Replace the Region, account ID, and table name with your values.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -72,7 +72,7 @@ The following procedure disassociates the `Music` replica in `us-west-2`. Use cr
 
 1. Disable disassociation protection on the local replica.
 
-   ```
+   ```bash
    aws dynamodb update-table \
        --table-name {{Music}} \
        --region {{us-west-2}} \
@@ -81,7 +81,7 @@ The following procedure disassociates the `Music` replica in `us-west-2`. Use cr
 
 1. Check the local table. Repeat this command until the table is `ACTIVE` and `DisassociationProtectionEnabled` is `false`. Do not proceed if the protection field is absent or `true`.
 
-   ```
+   ```bash
    aws dynamodb describe-table \
        --table-name {{Music}} \
        --region {{us-west-2}} \
@@ -90,7 +90,7 @@ The following procedure disassociates the `Music` replica in `us-west-2`. Use cr
 
 1. Submit a separate request with one `Disassociate` action. Specify the local Region and explicitly set `DisassociationMode` to `WAIT_FOR_REPLICATION`.
 
-   ```
+   ```bash
    aws dynamodb update-table \
        --table-name {{Music}} \
        --region {{us-west-2}} \
@@ -101,7 +101,7 @@ The following procedure disassociates the `Music` replica in `us-west-2`. Use cr
 
 1. Monitor the local table with `DescribeTable`.
 
-   ```
+   ```bash
    aws dynamodb describe-table \
        --table-name {{Music}} \
        --region {{us-west-2}} \
@@ -147,7 +147,7 @@ This template sets `DisassociationProtectionEnabled` to `false` on the `us-east-
 ------
 #### [ YAML ]
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   GlobalTable:
@@ -175,7 +175,7 @@ Resources:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -229,7 +229,7 @@ This template sets `TableType` to `Regional`, keeps only `us-east-1` in `Replica
 ------
 #### [ YAML ]
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   GlobalTable:
@@ -254,7 +254,7 @@ Resources:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -306,7 +306,7 @@ This template sets `DisassociationProtectionEnabled` to `false` on the `us-east-
 ------
 #### [ YAML ]
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   ReplicaTable:
@@ -324,7 +324,7 @@ Resources:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -357,7 +357,7 @@ This template sets `TableType` to `Regional`, removes `GlobalTableSourceArn` and
 ------
 #### [ YAML ]
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   ReplicaTable:
@@ -382,7 +382,7 @@ Resources:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {

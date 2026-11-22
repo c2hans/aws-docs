@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackage-channel-ingestendpoint-syntax.json"></a>
 
-```
+```json
 {
   "[Id](#cfn-mediapackage-channel-ingestendpoint-id)" : {{String}},
   "[Password](#cfn-mediapackage-channel-ingestendpoint-password)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackage-channel-ingestendpoint-syntax.yaml"></a>
 
-```
+```yaml
   [Id](#cfn-mediapackage-channel-ingestendpoint-id): {{String}}
   [Password](#cfn-mediapackage-channel-ingestendpoint-password): {{String}}
   [Url](#cfn-mediapackage-channel-ingestendpoint-url): {{String}}

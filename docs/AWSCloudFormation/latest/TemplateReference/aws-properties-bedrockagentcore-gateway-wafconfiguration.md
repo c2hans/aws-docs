@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gateway-wafconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[FailureMode](#cfn-bedrockagentcore-gateway-wafconfiguration-failuremode)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gateway-wafconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [FailureMode](#cfn-bedrockagentcore-gateway-wafconfiguration-failuremode): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-arcregionswitch-plan-route53resourcerecordset-syntax.json"></a>
 
-```
+```json
 {
   "[RecordSetIdentifier](#cfn-arcregionswitch-plan-route53resourcerecordset-recordsetidentifier)" : {{String}},
   "[Region](#cfn-arcregionswitch-plan-route53resourcerecordset-region)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-arcregionswitch-plan-route53resourcerecordset-syntax.yaml"></a>
 
-```
+```yaml
   [RecordSetIdentifier](#cfn-arcregionswitch-plan-route53resourcerecordset-recordsetidentifier): {{String}}
   [Region](#cfn-arcregionswitch-plan-route53resourcerecordset-region): {{String}}
 ```

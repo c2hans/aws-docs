@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-inspectorv2-connector-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-inspectorv2-connector-tag-key)" : {{String}},
   "[Value](#cfn-inspectorv2-connector-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-inspectorv2-connector-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-inspectorv2-connector-tag-key): {{String}}
   [Value](#cfn-inspectorv2-connector-tag-value): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rum-appmonitor-resourcepolicy-syntax.json"></a>
 
-```
+```json
 {
   "[PolicyDocument](#cfn-rum-appmonitor-resourcepolicy-policydocument)" : {{String}},
   "[PolicyRevisionId](#cfn-rum-appmonitor-resourcepolicy-policyrevisionid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rum-appmonitor-resourcepolicy-syntax.yaml"></a>
 
-```
+```yaml
   [PolicyDocument](#cfn-rum-appmonitor-resourcepolicy-policydocument): {{String}}
   [PolicyRevisionId](#cfn-rum-appmonitor-resourcepolicy-policyrevisionid): {{String}}
 ```

@@ -28,7 +28,7 @@ For more information, see [Detach or attach instances from your Auto Scaling gro
 **Tools for PowerShell V4**
 **Example 1: This example attaches the specified instance to the specified Auto Scaling group. Auto Scaling automatically increases the desired capacity of the Auto Scaling group.**
 
-```
+```powershell
 Mount-ASInstance -InstanceId i-93633f9b -AutoScalingGroupName my-asg
 ```
 +  For API details, see [AttachInstances](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -36,7 +36,7 @@ Mount-ASInstance -InstanceId i-93633f9b -AutoScalingGroupName my-asg
 **Tools for PowerShell V5**
 **Example 1: This example attaches the specified instance to the specified Auto Scaling group. Auto Scaling automatically increases the desired capacity of the Auto Scaling group.**
 
-```
+```powershell
 Mount-ASInstance -InstanceId i-93633f9b -AutoScalingGroupName my-asg
 ```
 +  For API details, see [AttachInstances](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

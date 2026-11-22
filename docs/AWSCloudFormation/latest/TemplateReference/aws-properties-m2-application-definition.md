@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-m2-application-definition-syntax.json"></a>
 
-```
+```json
 {
   "[Content](#cfn-m2-application-definition-content)" : {{String}},
   "[S3Location](#cfn-m2-application-definition-s3location)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-m2-application-definition-syntax.yaml"></a>
 
-```
+```yaml
   [Content](#cfn-m2-application-definition-content): {{String}}
   [S3Location](#cfn-m2-application-definition-s3location): {{String}}
 ```

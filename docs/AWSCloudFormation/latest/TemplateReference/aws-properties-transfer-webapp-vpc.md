@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-transfer-webapp-vpc-syntax.json"></a>
 
-```
+```json
 {
   "[IpAddressType](#cfn-transfer-webapp-vpc-ipaddresstype)" : {{String}},
   "[SecurityGroupIds](#cfn-transfer-webapp-vpc-securitygroupids)" : {{[ String, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-transfer-webapp-vpc-syntax.yaml"></a>
 
-```
+```yaml
   [IpAddressType](#cfn-transfer-webapp-vpc-ipaddresstype): {{String}}
   [SecurityGroupIds](#cfn-transfer-webapp-vpc-securitygroupids): {{
     - String}}

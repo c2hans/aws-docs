@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-custompermissions-capabilities-syntax.json"></a>
 
-```
+```json
 {
   "[AccessAppsNativeDataStore](#cfn-quicksight-custompermissions-capabilities-accessappsnativedatastore)" : {{String}},
   "[Action](#cfn-quicksight-custompermissions-capabilities-action)" : {{String}},
@@ -479,7 +479,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-custompermissions-capabilities-syntax.yaml"></a>
 
-```
+```yaml
   [AccessAppsNativeDataStore](#cfn-quicksight-custompermissions-capabilities-accessappsnativedatastore): {{String}}
   [Action](#cfn-quicksight-custompermissions-capabilities-action): {{String}}
   [AddOrRunAnomalyDetectionForAnalyses](#cfn-quicksight-custompermissions-capabilities-addorrunanomalydetectionforanalyses): {{String}}

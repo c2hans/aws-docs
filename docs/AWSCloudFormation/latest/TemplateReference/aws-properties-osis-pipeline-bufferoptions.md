@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-osis-pipeline-bufferoptions-syntax.json"></a>
 
-```
+```json
 {
   "[PersistentBufferEnabled](#cfn-osis-pipeline-bufferoptions-persistentbufferenabled)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-osis-pipeline-bufferoptions-syntax.yaml"></a>
 
-```
+```yaml
   [PersistentBufferEnabled](#cfn-osis-pipeline-bufferoptions-persistentbufferenabled): {{Boolean}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelqualityjobdefinition-modelqualitybaselineconfig-syntax.json"></a>
 
-```
+```json
 {
   "[BaseliningJobName](#cfn-sagemaker-modelqualityjobdefinition-modelqualitybaselineconfig-baseliningjobname)" : {{String}},
   "[ConstraintsResource](#cfn-sagemaker-modelqualityjobdefinition-modelqualitybaselineconfig-constraintsresource)" : {{ConstraintsResource}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelqualityjobdefinition-modelqualitybaselineconfig-syntax.yaml"></a>
 
-```
+```yaml
   [BaseliningJobName](#cfn-sagemaker-modelqualityjobdefinition-modelqualitybaselineconfig-baseliningjobname): {{String}}
   [ConstraintsResource](#cfn-sagemaker-modelqualityjobdefinition-modelqualitybaselineconfig-constraintsresource): {{
     ConstraintsResource}}

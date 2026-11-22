@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-b2bi-transformer-x12elementlengthvalidationrule-syntax.json"></a>
 
-```
+```json
 {
   "[ElementId](#cfn-b2bi-transformer-x12elementlengthvalidationrule-elementid)" : {{String}},
   "[MaxLength](#cfn-b2bi-transformer-x12elementlengthvalidationrule-maxlength)" : {{Number}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-b2bi-transformer-x12elementlengthvalidationrule-syntax.yaml"></a>
 
-```
+```yaml
   [ElementId](#cfn-b2bi-transformer-x12elementlengthvalidationrule-elementid): {{String}}
   [MaxLength](#cfn-b2bi-transformer-x12elementlengthvalidationrule-maxlength): {{Number}}
   [MinLength](#cfn-b2bi-transformer-x12elementlengthvalidationrule-minlength): {{Number}}

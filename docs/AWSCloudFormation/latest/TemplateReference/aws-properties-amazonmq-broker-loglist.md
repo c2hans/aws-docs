@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amazonmq-broker-loglist-syntax.json"></a>
 
-```
+```json
 {
   "[Audit](#cfn-amazonmq-broker-loglist-audit)" : {{Boolean}},
   "[General](#cfn-amazonmq-broker-loglist-general)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amazonmq-broker-loglist-syntax.yaml"></a>
 
-```
+```yaml
   [Audit](#cfn-amazonmq-broker-loglist-audit): {{Boolean}}
   [General](#cfn-amazonmq-broker-loglist-general): {{Boolean}}
 ```

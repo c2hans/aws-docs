@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amplifyuibuilder-form-valuemappings-syntax.json"></a>
 
-```
+```json
 {
   "[BindingProperties](#cfn-amplifyuibuilder-form-valuemappings-bindingproperties)" : {{{{{Key}}: {{Value}}, ...}}},
   "[Values](#cfn-amplifyuibuilder-form-valuemappings-values)" : {{[ ValueMapping, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amplifyuibuilder-form-valuemappings-syntax.yaml"></a>
 
-```
+```yaml
   [BindingProperties](#cfn-amplifyuibuilder-form-valuemappings-bindingproperties): {{
     {{Key}}: {{Value}}}}
   [Values](#cfn-amplifyuibuilder-form-valuemappings-values): {{

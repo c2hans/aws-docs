@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-memory-userpreferenceoverrideextractionconfigurationinput-syntax.json"></a>
 
-```
+```json
 {
   "[AppendToPrompt](#cfn-bedrockagentcore-memory-userpreferenceoverrideextractionconfigurationinput-appendtoprompt)" : {{String}},
   "[ModelId](#cfn-bedrockagentcore-memory-userpreferenceoverrideextractionconfigurationinput-modelid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-memory-userpreferenceoverrideextractionconfigurationinput-syntax.yaml"></a>
 
-```
+```yaml
   [AppendToPrompt](#cfn-bedrockagentcore-memory-userpreferenceoverrideextractionconfigurationinput-appendtoprompt): {{String}}
   [ModelId](#cfn-bedrockagentcore-memory-userpreferenceoverrideextractionconfigurationinput-modelid): {{String}}
 ```

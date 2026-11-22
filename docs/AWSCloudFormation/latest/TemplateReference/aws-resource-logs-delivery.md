@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-logs-delivery-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Logs::Delivery",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-logs-delivery-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Logs::Delivery
 Properties:
   [DeliveryDestinationArn](#cfn-logs-delivery-deliverydestinationarn): {{String}}

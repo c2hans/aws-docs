@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-input-inputsdplocation-syntax.json"></a>
 
-```
+```json
 {
   "[MediaIndex](#cfn-medialive-input-inputsdplocation-mediaindex)" : {{Integer}},
   "[SdpUrl](#cfn-medialive-input-inputsdplocation-sdpurl)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-input-inputsdplocation-syntax.yaml"></a>
 
-```
+```yaml
   [MediaIndex](#cfn-medialive-input-inputsdplocation-mediaindex): {{Integer}}
   [SdpUrl](#cfn-medialive-input-inputsdplocation-sdpurl): {{String}}
 ```

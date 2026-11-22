@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-featuregroup-s3storageconfig-syntax.json"></a>
 
-```
+```json
 {
   "[KmsKeyId](#cfn-sagemaker-featuregroup-s3storageconfig-kmskeyid)" : {{String}},
   "[S3Uri](#cfn-sagemaker-featuregroup-s3storageconfig-s3uri)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-featuregroup-s3storageconfig-syntax.yaml"></a>
 
-```
+```yaml
   [KmsKeyId](#cfn-sagemaker-featuregroup-s3storageconfig-kmskeyid): {{String}}
   [S3Uri](#cfn-sagemaker-featuregroup-s3storageconfig-s3uri): {{String}}
 ```

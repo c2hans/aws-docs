@@ -36,7 +36,7 @@ You can list resources associated to a Profile by running an AWS CLI command lik
 
 The following is an example output after you run the command:
 
-```
+```json
 {
     "ProfileResourceAssociations": [
         {
@@ -62,7 +62,7 @@ You can update the priority of a DNS Firewall rule group associated to a Profile
 
 The following is an example output after you run the command:
 
-```
+```json
 {
     "ProfileResourceAssociation": {
         "CreationTime": 1710851216.613,

@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-versioningconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Status](#cfn-s3-bucket-versioningconfiguration-status)" : {{String}}
 }
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-versioningconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Status](#cfn-s3-bucket-versioningconfiguration-status): {{String}}
 ```
 
@@ -55,7 +55,7 @@ The following example enables versioning and two replication rules. The rules co
 #### JSON
 <a name="aws-properties-s3-bucket-versioningconfiguration--examples--Enable_versioning_and_replicate_objects--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -95,7 +95,7 @@ The following example enables versioning and two replication rules. The rules co
 #### YAML
 <a name="aws-properties-s3-bucket-versioningconfiguration--examples--Enable_versioning_and_replicate_objects--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   S3Bucket:

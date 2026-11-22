@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iot-job-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoT::Job",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iot-job-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoT::Job
 Properties:
   [AbortConfig](#cfn-iot-job-abortconfig): {{

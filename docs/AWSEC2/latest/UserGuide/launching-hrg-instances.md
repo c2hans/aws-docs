@@ -54,7 +54,7 @@ When you launch an instance into a host resource group that has a Dedicated Host
 **To launch an instance into a host resource group**
 Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command. In the `--placement` option, omit the tenancy and specify the ARN of the host resource group.
 
-```
+```bash
 --placement HostResourceGroupArn=arn:aws:resource-groups:{{us-east-2}}:{{123456789012}}:group/{{my-resource-group}}
 ```
 
@@ -64,7 +64,7 @@ Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run
 **To launch an instance into a host resource group**
 Use the [New-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Instance.html) cmdlet. In the `-Placement` parameter, omit the tenancy and specify the ARN of the host resource group.
 
-```
+```powershell
 -Placement_HostResourceGroupArn arn:aws:resource-groups:{{us-east-2}}:{{123456789012}}:group/{{my-resource-group}}
 ```
 

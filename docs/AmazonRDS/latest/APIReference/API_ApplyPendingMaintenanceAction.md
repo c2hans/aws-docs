@@ -18,6 +18,7 @@ Valid Values:
 +  `db-upgrade`
 +  `hardware-maintenance`
 +  `os-upgrade`
++  `serverless-platform-version-update`
 +  `system-update`
 For more information about these actions, see [Maintenance actions for Amazon Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_UpgradeDBInstance.Maintenance.html#maintenance-actions-aurora) or [Maintenance actions for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.Maintenance.html#maintenance-actions-rds).
 Type: String

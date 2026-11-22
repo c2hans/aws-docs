@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-servicediscovery-service-healthcheckcustomconfig-syntax.json"></a>
 
-```
+```json
 {
   "[FailureThreshold](#cfn-servicediscovery-service-healthcheckcustomconfig-failurethreshold)" : {{Number}}
 }
@@ -50,7 +50,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-servicediscovery-service-healthcheckcustomconfig-syntax.yaml"></a>
 
-```
+```yaml
   [FailureThreshold](#cfn-servicediscovery-service-healthcheckcustomconfig-failurethreshold): {{Number}}
 ```
 

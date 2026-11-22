@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-backup-reportplan-reportsetting-syntax.json"></a>
 
-```
+```json
 {
   "[Accounts](#cfn-backup-reportplan-reportsetting-accounts)" : {{[ String, ... ]}},
   "[FrameworkArns](#cfn-backup-reportplan-reportsetting-frameworkarns)" : {{[ String, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-backup-reportplan-reportsetting-syntax.yaml"></a>
 
-```
+```yaml
   [Accounts](#cfn-backup-reportplan-reportsetting-accounts): {{
     - String}}
   [FrameworkArns](#cfn-backup-reportplan-reportsetting-frameworkarns): {{

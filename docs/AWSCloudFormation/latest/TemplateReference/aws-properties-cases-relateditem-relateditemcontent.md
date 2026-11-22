@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cases-relateditem-relateditemcontent-syntax.json"></a>
 
-```
+```json
 {
   "[Comment](#cfn-cases-relateditem-relateditemcontent-comment)" : {{CommentContent}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cases-relateditem-relateditemcontent-syntax.yaml"></a>
 
-```
+```yaml
   [Comment](#cfn-cases-relateditem-relateditemcontent-comment): {{
     CommentContent}}
 ```

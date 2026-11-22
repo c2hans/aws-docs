@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dlm-lifecyclepolicy-fastrestorerule-syntax.json"></a>
 
-```
+```json
 {
   "[AvailabilityZoneIds](#cfn-dlm-lifecyclepolicy-fastrestorerule-availabilityzoneids)" : {{[ String, ... ]}},
   "[AvailabilityZones](#cfn-dlm-lifecyclepolicy-fastrestorerule-availabilityzones)" : {{[ String, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dlm-lifecyclepolicy-fastrestorerule-syntax.yaml"></a>
 
-```
+```yaml
   [AvailabilityZoneIds](#cfn-dlm-lifecyclepolicy-fastrestorerule-availabilityzoneids): {{
     - String}}
   [AvailabilityZones](#cfn-dlm-lifecyclepolicy-fastrestorerule-availabilityzones): {{

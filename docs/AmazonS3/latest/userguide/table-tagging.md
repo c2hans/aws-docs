@@ -85,7 +85,7 @@ If you have an IAM or S3 Tables resource-based policy that restricts IAM users a
 
 In this table policy, the specified IAM principals (users and roles) can perform the `GetTable` action only if the value of the table's `project` tag matches the value of the principal's `project` tag.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -112,7 +112,7 @@ In this table policy, the specified IAM principals (users and roles) can perform
 
 In this IAM policy, users or roles with this policy can only create S3 tables if they tag the table with the tag key `project` and tag value `Trinity` in the table creation request. They can also add or modify tags on existing S3 tables as long as the `TagResource` request includes the tag key-value pair `project:Trinity`. This policy does not grant read, write, or delete permissions on the tables or its objects.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -141,7 +141,7 @@ In this IAM policy, users or roles with this policy can only create S3 tables if
 
 In this IAM policy, IAM principals (users or roles) can modify tags on a table only if the value of the table's `project` tag matches the value of the principal's `project` tag. Only the four tags `project`, `environment`, `owner`, and `cost-center` specified in the `aws:TagKeys` condition keys are permitted for these tables. This helps enforce tag governance, prevents unauthorized tag modifications, and keeps the tagging schema consistent across your tables.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -176,7 +176,7 @@ In this IAM policy, IAM principals (users or roles) can modify tags on a table o
 
 In this IAM policy, the condition statement allows access to the table bucket's data only if the table bucket has the tag key `Environment` and tag value `Production`. The `s3tables:TableBucketTag/<tag-key>` differs from the `aws:ResourceTag/<tag-key>` condition key because, in addition to controlling access to table buckets depending on their tags, it allows you to control access to tables based on the tags on their parent table bucket.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

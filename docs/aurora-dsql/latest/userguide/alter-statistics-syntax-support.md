@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/alter-stati
 ## Supported syntax
 <a name="alter-statistics-supported-syntax"></a>
 
-```
+```sql
 ALTER STATISTICS name OWNER TO { new_owner | CURRENT_ROLE | CURRENT_USER | SESSION_USER }
 ALTER STATISTICS name RENAME TO new_name
 ALTER STATISTICS name SET SCHEMA new_schema

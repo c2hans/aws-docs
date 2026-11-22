@@ -38,7 +38,7 @@ This is the most common scenario, and it means your requested capacity is being 
 
 The following JSON structure shows a constrained instance type and Availability Zone combination alongside a healthy fallback combination.
 
-```
+```JSON
 {
     "MetricDataResults": [
         {

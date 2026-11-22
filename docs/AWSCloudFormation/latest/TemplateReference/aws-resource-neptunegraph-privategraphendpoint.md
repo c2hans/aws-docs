@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-neptunegraph-privategraphendpoint-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::NeptuneGraph::PrivateGraphEndpoint",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-neptunegraph-privategraphendpoint-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::NeptuneGraph::PrivateGraphEndpoint
 Properties:
   [GraphIdentifier](#cfn-neptunegraph-privategraphendpoint-graphidentifier): {{String}}

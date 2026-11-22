@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-s3location-syntax.json"></a>
 
-```
+```json
 {
   "[S3Bucket](#cfn-lex-bot-s3location-s3bucket)" : {{String}},
   "[S3ObjectKey](#cfn-lex-bot-s3location-s3objectkey)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-s3location-syntax.yaml"></a>
 
-```
+```yaml
   [S3Bucket](#cfn-lex-bot-s3location-s3bucket): {{String}}
   [S3ObjectKey](#cfn-lex-bot-s3location-s3objectkey): {{String}}
   [S3ObjectVersion](#cfn-lex-bot-s3location-s3objectversion): {{String}}

@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-computeenvironment-launchtemplatespecification-syntax.json"></a>
 
-```
+```json
 {
   "[LaunchTemplateId](#cfn-batch-computeenvironment-launchtemplatespecification-launchtemplateid)" : {{String}},
   "[LaunchTemplateName](#cfn-batch-computeenvironment-launchtemplatespecification-launchtemplatename)" : {{String}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-computeenvironment-launchtemplatespecification-syntax.yaml"></a>
 
-```
+```yaml
   [LaunchTemplateId](#cfn-batch-computeenvironment-launchtemplatespecification-launchtemplateid): {{String}}
   [LaunchTemplateName](#cfn-batch-computeenvironment-launchtemplatespecification-launchtemplatename): {{String}}
   [Overrides](#cfn-batch-computeenvironment-launchtemplatespecification-overrides): {{

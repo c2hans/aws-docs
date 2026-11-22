@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lambda-microvmimage-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lambda::MicrovmImage",
   "Properties" : {
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lambda-microvmimage-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lambda::MicrovmImage
 Properties:
   [AdditionalOsCapabilities](#cfn-lambda-microvmimage-additionaloscapabilities): {{

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssm-patchbaseline-rulegroup-syntax.json"></a>
 
-```
+```json
 {
   "[PatchRules](#cfn-ssm-patchbaseline-rulegroup-patchrules)" : {{[ Rule, ... ]}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssm-patchbaseline-rulegroup-syntax.yaml"></a>
 
-```
+```yaml
   [PatchRules](#cfn-ssm-patchbaseline-rulegroup-patchrules): {{
     - Rule}}
 ```

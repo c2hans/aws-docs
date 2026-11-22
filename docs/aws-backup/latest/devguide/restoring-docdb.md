@@ -57,7 +57,7 @@ If role manager is enabled in your account, AWS Backup selects the default servi
 
 First, restore your cluster. Use `[StartRestoreJob](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_StartRestoreJob.html)`. You can specify the following metadata during Amazon DocumentDB restores:
 
-```
+```json
 availabilityZones
 backtrackWindow
 copyTagsToSnapshot // Boolean
@@ -80,13 +80,13 @@ vpcSecurityGroupIds // string
  Then, attach your restored Amazon DocumentDB cluster to an Amazon RDS instance using `create-db-instance`.
 + For Linux, macOS, or Unix:
 
-  ```
+  ```sh
   aws docdb create-db-instance --db-instance-identifier {{sample-instance}} /
                     --db-cluster-identifier {{sample-cluster}} --engine docdb --db-instance-class {{db.r5.large}}
   ```
 + For Windows:
 
-  ```
+  ```sh
   aws docdb create-db-instance --db-instance-identifier {{sample-instance}} ^
                     --db-cluster-identifier {{sample-cluster}} --engine docdb --db-instance-class {{db.r5.large}}
   ```

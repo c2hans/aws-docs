@@ -48,7 +48,7 @@ The following procedure walks you through how you can revoke an ACM public or pr
 ## Revoke a certificate (AWS CLI)
 <a name="revoke-certificate-cli"></a>
 
-Use the [`revoke-certificate`](https://docs.aws.amazon.com/cli/latest/reference/acm-pca/revoke-certificate.html) AWS CLI command or [`RevokeCertificate`](https://docs.aws.amazon.com/acm/latest/APIReference/API_RevokeCertificate.html) API action to revoke an ACM public or private certificate. You can retrieve the certificate's ARN by calling the [`list-certificates`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/acm/list-certificates.html) command.
+Use the [`revoke-certificate`](https://docs.aws.amazon.com/cli/latest/reference/acm-pca/revoke-certificate.html) AWS CLI command or [`RevokeCertificate`](https://docs.aws.amazon.com/acm/latest/APIReference/API_RevokeCertificate.html) API action to revoke an ACM public or private certificate. You can retrieve the certificate's ARN by calling the [`list-certificates`](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/acm/list-certificates.html) command. For an Amazon N2 certificate, include the `--root-hierarchy-types` option, because `list-certificates` does not return Amazon N2 certificates by default.
 
 ```
 $ aws acm revoke-certificate \

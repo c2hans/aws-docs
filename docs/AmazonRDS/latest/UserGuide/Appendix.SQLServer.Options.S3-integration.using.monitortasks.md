@@ -8,13 +8,13 @@ To track the status of your S3 integration task, call the `rds_fn_task_status` f
 
 To see a list of all tasks, set the first parameter to `NULL` and the second parameter to `0`, as shown in the following example.
 
-```
+```SQL
 SELECT * FROM msdb.dbo.rds_fn_task_status(NULL,{{0}});
 ```
 
 To get a specific task, set the first parameter to `NULL` and the second parameter to the task ID, as shown in the following example.
 
-```
+```SQL
 SELECT * FROM msdb.dbo.rds_fn_task_status(NULL,{{42}});
 ```
 

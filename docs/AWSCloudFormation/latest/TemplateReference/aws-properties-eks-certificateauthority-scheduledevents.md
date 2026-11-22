@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-certificateauthority-scheduledevents-syntax.json"></a>
 
-```
+```json
 {
   "[FinalAutoActivation](#cfn-eks-certificateauthority-scheduledevents-finalautoactivation)" : {{String}},
   "[FirstAutoActivation](#cfn-eks-certificateauthority-scheduledevents-firstautoactivation)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-certificateauthority-scheduledevents-syntax.yaml"></a>
 
-```
+```yaml
   [FinalAutoActivation](#cfn-eks-certificateauthority-scheduledevents-finalautoactivation): {{String}}
   [FirstAutoActivation](#cfn-eks-certificateauthority-scheduledevents-firstautoactivation): {{String}}
 ```

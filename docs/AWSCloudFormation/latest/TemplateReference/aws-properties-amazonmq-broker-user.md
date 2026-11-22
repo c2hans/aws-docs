@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amazonmq-broker-user-syntax.json"></a>
 
-```
+```json
 {
   "[ConsoleAccess](#cfn-amazonmq-broker-user-consoleaccess)" : {{Boolean}},
   "[Groups](#cfn-amazonmq-broker-user-groups)" : {{[ String, ... ]}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amazonmq-broker-user-syntax.yaml"></a>
 
-```
+```yaml
   [ConsoleAccess](#cfn-amazonmq-broker-user-consoleaccess): {{Boolean}}
   [Groups](#cfn-amazonmq-broker-user-groups): {{
     - String}}

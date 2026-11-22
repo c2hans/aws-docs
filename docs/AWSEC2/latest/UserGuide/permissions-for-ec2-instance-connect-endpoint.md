@@ -68,7 +68,7 @@ This example evaluates if the connection to the instance is established on —po
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -124,7 +124,7 @@ This example evaluates if the connection to the instance is established on port 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -171,7 +171,7 @@ The following example IAM policy allows an IAM principal to connect to an instan
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

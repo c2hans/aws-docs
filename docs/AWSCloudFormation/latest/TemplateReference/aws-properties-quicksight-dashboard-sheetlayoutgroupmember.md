@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-sheetlayoutgroupmember-syntax.json"></a>
 
-```
+```json
 {
   "[Id](#cfn-quicksight-dashboard-sheetlayoutgroupmember-id)" : {{String}},
   "[Type](#cfn-quicksight-dashboard-sheetlayoutgroupmember-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-sheetlayoutgroupmember-syntax.yaml"></a>
 
-```
+```yaml
   [Id](#cfn-quicksight-dashboard-sheetlayoutgroupmember-id): {{String}}
   [Type](#cfn-quicksight-dashboard-sheetlayoutgroupmember-type): {{String}}
 ```

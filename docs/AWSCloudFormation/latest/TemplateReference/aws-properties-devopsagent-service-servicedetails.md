@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-service-servicedetails-syntax.json"></a>
 
-```
+```json
 {
   "[AzureIdentity](#cfn-devopsagent-service-servicedetails-azureidentity)" : {{AzureIdentityServiceDetails}},
   "[Dynatrace](#cfn-devopsagent-service-servicedetails-dynatrace)" : {{DynatraceServiceDetails}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-service-servicedetails-syntax.yaml"></a>
 
-```
+```yaml
   [AzureIdentity](#cfn-devopsagent-service-servicedetails-azureidentity): {{
     AzureIdentityServiceDetails}}
   [Dynatrace](#cfn-devopsagent-service-servicedetails-dynatrace): {{

@@ -144,7 +144,7 @@ This example shows sample requests and responses for the `DescribeFlowExecutionR
 #### Sample Request
 <a name="API_DescribeFlowExecutionRecords_Example_1_Request"></a>
 
-```
+```json
 {
   "flowName": "name",
   "maxResults": 1
@@ -154,7 +154,7 @@ This example shows sample requests and responses for the `DescribeFlowExecutionR
 #### Sample Response
 <a name="API_DescribeFlowExecutionRecords_Example_1_Response"></a>
 
-```
+```json
 {
   "flowExecutionList": [
     {
@@ -195,7 +195,7 @@ This example shows sample requests and responses for the `DescribeFlowExecutionR
 #### Sample Request
 <a name="API_DescribeFlowExecutionRecords_Example_1_Request"></a>
 
-```
+```json
 {
   "flowName": "test-new-create",
   "maxResults": 1,
@@ -206,7 +206,7 @@ This example shows sample requests and responses for the `DescribeFlowExecutionR
 #### Sample Response
 <a name="API_DescribeFlowExecutionRecords_Example_1_Response"></a>
 
-```
+```json
 {
   "flowExecutionList": [
     {
@@ -242,7 +242,7 @@ This example shows sample requests and responses for the `DescribeFlowExecutionR
 #### Sample Request
 <a name="API_DescribeFlowExecutionRecords_Example_1_Request"></a>
 
-```
+```json
 {
   "flowName": "name",
   "maxResults": 1,
@@ -253,7 +253,7 @@ This example shows sample requests and responses for the `DescribeFlowExecutionR
 #### Sample Response
 <a name="API_DescribeFlowExecutionRecords_Example_1_Response"></a>
 
-```
+```json
 {
   "flowExecutionList": [
     {

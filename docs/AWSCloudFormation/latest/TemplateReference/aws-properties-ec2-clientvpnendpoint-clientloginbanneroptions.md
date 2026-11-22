@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-clientvpnendpoint-clientloginbanneroptions-syntax.json"></a>
 
-```
+```json
 {
   "[BannerText](#cfn-ec2-clientvpnendpoint-clientloginbanneroptions-bannertext)" : {{String}},
   "[Enabled](#cfn-ec2-clientvpnendpoint-clientloginbanneroptions-enabled)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-clientvpnendpoint-clientloginbanneroptions-syntax.yaml"></a>
 
-```
+```yaml
   [BannerText](#cfn-ec2-clientvpnendpoint-clientloginbanneroptions-bannertext): {{String}}
   [Enabled](#cfn-ec2-clientvpnendpoint-clientloginbanneroptions-enabled): {{Boolean}}
 ```

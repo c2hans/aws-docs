@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/agent-registry/latest/APIReference/API_B
 
 # BatchGetDiscoverableRegistryRecord
 
- Retrieves multiple discoverable registry records by ID from a single registry. Records that cannot be retrieved are reported individually in the `errors` list rather than failing the entire request.
+ Retrieves multiple discoverable registry records by ID from a single registry. Records that cannot be retrieved are reported individually in the `errors` list rather than failing the entire request. For each skill record that has a skill package, the operation also returns `artifact`. It contains a short-lived download URL and a SHA-256 checksum for the package of the record's latest approved revision. If the registry can't create a download URL for a package, the whole request fails.
 
 ## Request Syntax
 <a name="API_BatchGetDiscoverableRegistryRecord_RequestSyntax"></a>
@@ -57,6 +57,10 @@ Content-type: application/json
    ],
    "registryRecords": [
       {
+         "artifact": {
+            "downloadUrl": "string",
+            "sha256": "string"
+         },
          "createdAt": "string",
          "customMetadata": JSON value,
          "description": "string",

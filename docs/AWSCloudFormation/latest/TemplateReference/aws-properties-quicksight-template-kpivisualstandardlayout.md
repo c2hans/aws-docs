@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-kpivisualstandardlayout-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-quicksight-template-kpivisualstandardlayout-type)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-kpivisualstandardlayout-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-quicksight-template-kpivisualstandardlayout-type): {{String}}
 ```
 

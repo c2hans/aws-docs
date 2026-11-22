@@ -16,7 +16,7 @@ To enable sending traces to AWS X-Ray, you must be signed in with the following 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -80,7 +80,7 @@ The destination account where the traces are being sent must have a resource pol
 AWS creates one resource policy per resource type. The policy uses wildcard patterns scoped to the account boundary, covering all resources of the same Amazon Bedrock AgentCore resource type in the account. For example, if a *Amazon Bedrock AgentCore Memory* resource is enabled for trace delivery, the policy covers all memory resources in that account — including any memory resources created in the future.
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -112,7 +112,7 @@ AWS creates one resource policy per resource type. The policy uses wildcard patt
 For other services that support trace delivery, AWS creates a resource policy scoped to the specific source resource.
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

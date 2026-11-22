@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-verifiedpermissions-identitysource-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::VerifiedPermissions::IdentitySource",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-verifiedpermissions-identitysource-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::VerifiedPermissions::IdentitySource
 Properties:
   [Configuration](#cfn-verifiedpermissions-identitysource-configuration): {{
@@ -117,7 +117,7 @@ The following example creates an identity source in the specified policy store t
 #### JSON
 <a name="aws-resource-verifiedpermissions-identitysource--examples--Creating_an_identity_source_for_a_user_pool--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "AWS CloudFormation sample template for creating an identity source for Verified Permissions.",
@@ -174,7 +174,7 @@ The following example creates an identity source in the specified policy store t
 #### YAML
 <a name="aws-resource-verifiedpermissions-identitysource--examples--Creating_an_identity_source_for_a_user_pool--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: >-
   Description": "AWS CloudFormation sample template for creating an identity source for Verified Permissions

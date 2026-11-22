@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-schemaevolutionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-kinesisfirehose-deliverystream-schemaevolutionconfiguration-enabled)" : {{Boolean}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-schemaevolutionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-kinesisfirehose-deliverystream-schemaevolutionconfiguration-enabled): {{Boolean}}
 ```
 

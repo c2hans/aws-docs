@@ -8,13 +8,13 @@ Subscribes a callback function to-be-invoked whenever a user LanguageChanged eve
 
  **Signature**
 
-```
+```typescript
 onLanguageChanged(handler: UserLanguageChangedHandler)
 ```
 
  **Usage**
 
-```
+```typescript
 const handler: UserLanguageChangedHandler = async (data: UserLanguageChanged) => {
     console.log("User LanguageChange occurred! " + data);
 };
@@ -32,6 +32,6 @@ settingsClient.onLanguageChanged(handler);
 
  **Permissions required:**
 
-```
+```typescript
 User.Configuration.View
 ```

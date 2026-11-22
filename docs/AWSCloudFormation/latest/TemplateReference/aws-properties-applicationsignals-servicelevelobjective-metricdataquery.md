@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationsignals-servicelevelobjective-metricdataquery-syntax.json"></a>
 
-```
+```json
 {
   "[AccountId](#cfn-applicationsignals-servicelevelobjective-metricdataquery-accountid)" : {{String}},
   "[Expression](#cfn-applicationsignals-servicelevelobjective-metricdataquery-expression)" : {{String}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationsignals-servicelevelobjective-metricdataquery-syntax.yaml"></a>
 
-```
+```yaml
   [AccountId](#cfn-applicationsignals-servicelevelobjective-metricdataquery-accountid): {{String}}
   [Expression](#cfn-applicationsignals-servicelevelobjective-metricdataquery-expression): {{String}}
   [Id](#cfn-applicationsignals-servicelevelobjective-metricdataquery-id): {{String}}

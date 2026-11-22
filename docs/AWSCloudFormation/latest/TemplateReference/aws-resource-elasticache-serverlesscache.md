@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-elasticache-serverlesscache-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ElastiCache::ServerlessCache",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-elasticache-serverlesscache-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ElastiCache::ServerlessCache
 Properties:
   [CacheUsageLimits](#cfn-elasticache-serverlesscache-cacheusagelimits): {{

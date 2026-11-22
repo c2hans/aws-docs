@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-scatterplotcategoricallyaggregatedfieldwells-syntax.json"></a>
 
-```
+```json
 {
   "[Category](#cfn-quicksight-dashboard-scatterplotcategoricallyaggregatedfieldwells-category)" : {{[ DimensionField, ... ]}},
   "[Label](#cfn-quicksight-dashboard-scatterplotcategoricallyaggregatedfieldwells-label)" : {{[ DimensionField, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-scatterplotcategoricallyaggregatedfieldwells-syntax.yaml"></a>
 
-```
+```yaml
   [Category](#cfn-quicksight-dashboard-scatterplotcategoricallyaggregatedfieldwells-category): {{
     - DimensionField}}
   [Label](#cfn-quicksight-dashboard-scatterplotcategoricallyaggregatedfieldwells-label): {{

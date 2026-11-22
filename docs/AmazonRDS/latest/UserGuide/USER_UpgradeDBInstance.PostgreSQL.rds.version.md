@@ -14,7 +14,7 @@ CREATE EXTENSION rds_tools;
 
 Starting with the release of PostgreSQL version 15.2-R2, you can find out the RDS version number of your RDS for PostgreSQL database with the following SQL query:
 
-```
+```sql
 postgres=> SELECT rds_tools.rds_version();
 ```
 

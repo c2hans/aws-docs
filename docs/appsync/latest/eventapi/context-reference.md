@@ -11,7 +11,7 @@ AWS AppSync defines a set of variables and functions for working with handlers. 
 
 The `context` argument of a request and response handler is an object that holds all of the contextual information for your handler invocation. It has the following structure:
 
-```
+```json
 type Context = {
   identity?: Identity;
   result?: any;
@@ -78,7 +78,7 @@ The `identity` contains the `handlerContext` key, containing the same `handlerCo
 ** `AWS_IAM` authorization**
 The `identity` has the following form:
 
-```
+```json
 type AppSyncIdentityIAM = {
   accountId: string;
   cognitoIdentityPoolId: string;
@@ -94,7 +94,7 @@ type AppSyncIdentityIAM = {
 ** `AMAZON_COGNITO_USER_POOLS` authorization**
 The `identity` has the following form:
 
-```
+```json
 type AppSyncIdentityCognito = {
   sourceIp: string[];
   username: string;
@@ -160,7 +160,7 @@ AWS AppSync supports passing custom headers from clients and accessing them in y
 
 If you set a header of `animal` with a value of `duck` as in the following example:
 
-```
+```sh
 curl --location "https://YOUR_EVENT_API_ENDPOINT/event" \
 --header 'Content-Type: application/json' \
 --header "x-api-key:ABC123" \
@@ -172,7 +172,7 @@ Then, this could then be accessed with `ctx.request.headers.animal`.
 
 You can also pass multiple headers in a single request and access these in the handler. For example, if the `custom` header is set with two values as follows:
 
-```
+```json
 curl --location "https://YOUR_EVENT_API_ENDPOINT/event" \
 --header 'Content-Type: application/json' \
 --header "x-api-key:ABC123" \
@@ -195,7 +195,7 @@ AWS AppSync supports configuring a custom domain that you can use to access your
 
 The `info` section contains information about the request made to your channel namespace. This section has the following form:
 
-```
+```json
 type EventsInfo = {
   info: {
     channel: {

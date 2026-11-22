@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-datasync-agent-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DataSync::Agent",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-datasync-agent-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DataSync::Agent
 Properties:
   [ActivationKey](#cfn-datasync-agent-activationkey): {{String}}
@@ -143,7 +143,7 @@ The following example specifies a DataSync agent named `MyAgent`. The agent acti
 #### JSON
 <a name="aws-resource-datasync-agent--examples--DataSync_Agent--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "Specifies a DataSync agent",
@@ -163,7 +163,7 @@ The following example specifies a DataSync agent named `MyAgent`. The agent acti
 #### YAML
 <a name="aws-resource-datasync-agent--examples--DataSync_Agent--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Specifies a DataSync agent
 Resources:

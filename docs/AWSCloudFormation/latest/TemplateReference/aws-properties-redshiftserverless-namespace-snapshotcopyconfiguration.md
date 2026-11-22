@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-redshiftserverless-namespace-snapshotcopyconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationKmsKeyId](#cfn-redshiftserverless-namespace-snapshotcopyconfiguration-destinationkmskeyid)" : {{String}},
   "[DestinationRegion](#cfn-redshiftserverless-namespace-snapshotcopyconfiguration-destinationregion)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-redshiftserverless-namespace-snapshotcopyconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationKmsKeyId](#cfn-redshiftserverless-namespace-snapshotcopyconfiguration-destinationkmskeyid): {{String}}
   [DestinationRegion](#cfn-redshiftserverless-namespace-snapshotcopyconfiguration-destinationregion): {{String}}
   [SnapshotRetentionPeriod](#cfn-redshiftserverless-namespace-snapshotcopyconfiguration-snapshotretentionperiod): {{Integer}}

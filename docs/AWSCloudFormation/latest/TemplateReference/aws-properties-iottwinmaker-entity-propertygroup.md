@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iottwinmaker-entity-propertygroup-syntax.json"></a>
 
-```
+```json
 {
   "[GroupType](#cfn-iottwinmaker-entity-propertygroup-grouptype)" : {{String}},
   "[PropertyNames](#cfn-iottwinmaker-entity-propertygroup-propertynames)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iottwinmaker-entity-propertygroup-syntax.yaml"></a>
 
-```
+```yaml
   [GroupType](#cfn-iottwinmaker-entity-propertygroup-grouptype): {{String}}
   [PropertyNames](#cfn-iottwinmaker-entity-propertygroup-propertynames): {{
     - String}}

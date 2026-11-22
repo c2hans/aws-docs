@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-memorydb-multiregioncluster-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MemoryDB::MultiRegionCluster",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-memorydb-multiregioncluster-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MemoryDB::MultiRegionCluster
 Properties:
   [Description](#cfn-memorydb-multiregioncluster-description): {{String}}

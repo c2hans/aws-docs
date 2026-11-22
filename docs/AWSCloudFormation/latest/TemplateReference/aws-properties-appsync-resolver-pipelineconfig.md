@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appsync-resolver-pipelineconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Functions](#cfn-appsync-resolver-pipelineconfig-functions)" : {{[ String, ... ]}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appsync-resolver-pipelineconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Functions](#cfn-appsync-resolver-pipelineconfig-functions): {{
     - String}}
 ```

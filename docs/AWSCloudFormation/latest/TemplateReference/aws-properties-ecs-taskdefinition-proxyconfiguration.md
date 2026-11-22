@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskdefinition-proxyconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ContainerName](#cfn-ecs-taskdefinition-proxyconfiguration-containername)" : {{String}},
   "[ProxyConfigurationProperties](#cfn-ecs-taskdefinition-proxyconfiguration-proxyconfigurationproperties)" : {{[ KeyValuePair, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskdefinition-proxyconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ContainerName](#cfn-ecs-taskdefinition-proxyconfiguration-containername): {{String}}
   [ProxyConfigurationProperties](#cfn-ecs-taskdefinition-proxyconfiguration-proxyconfigurationproperties): {{
     - KeyValuePair}}

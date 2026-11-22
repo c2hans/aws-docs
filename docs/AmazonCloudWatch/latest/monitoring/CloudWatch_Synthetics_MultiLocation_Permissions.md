@@ -18,7 +18,7 @@ You can use condition keys in IAM policies to control which Regions can be used 
 **Example: Allow replication only to specific Regions**
 The following policy allows creating and updating canaries with replicas only in United States and Canada Regions.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -45,7 +45,7 @@ The following policy allows creating and updating canaries with replicas only in
 **Example: Deny replication to specific Regions**
 The following policy denies creating or updating canaries with replicas in `eu-west-1` or `ap-southeast-1`.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

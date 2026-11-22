@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-ecsenvironmentfile-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-pipes-pipe-ecsenvironmentfile-type)" : {{String}},
   "[Value](#cfn-pipes-pipe-ecsenvironmentfile-value)" : {{String}}
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-ecsenvironmentfile-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-pipes-pipe-ecsenvironmentfile-type): {{String}}
   [Value](#cfn-pipes-pipe-ecsenvironmentfile-value): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gameliftstreams-streamgroup-defaultapplication-syntax.json"></a>
 
-```
+```json
 {
   "[Arn](#cfn-gameliftstreams-streamgroup-defaultapplication-arn)" : {{String}},
   "[Id](#cfn-gameliftstreams-streamgroup-defaultapplication-id)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gameliftstreams-streamgroup-defaultapplication-syntax.yaml"></a>
 
-```
+```yaml
   [Arn](#cfn-gameliftstreams-streamgroup-defaultapplication-arn): {{String}}
   [Id](#cfn-gameliftstreams-streamgroup-defaultapplication-id): {{String}}
 ```

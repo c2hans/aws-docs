@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-certificatemanager-acmedomainvalidation-domainscope-syntax.json"></a>
 
-```
+```json
 {
   "[ExactDomain](#cfn-certificatemanager-acmedomainvalidation-domainscope-exactdomain)" : {{String}},
   "[Subdomains](#cfn-certificatemanager-acmedomainvalidation-domainscope-subdomains)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-certificatemanager-acmedomainvalidation-domainscope-syntax.yaml"></a>
 
-```
+```yaml
   [ExactDomain](#cfn-certificatemanager-acmedomainvalidation-domainscope-exactdomain): {{String}}
   [Subdomains](#cfn-certificatemanager-acmedomainvalidation-domainscope-subdomains): {{String}}
   [Wildcards](#cfn-certificatemanager-acmedomainvalidation-domainscope-wildcards): {{String}}

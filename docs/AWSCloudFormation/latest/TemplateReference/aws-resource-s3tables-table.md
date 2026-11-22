@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-s3tables-table-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::S3Tables::Table",
   "Properties" : {
@@ -48,7 +48,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-s3tables-table-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::S3Tables::Table
 Properties:
   [Compaction](#cfn-s3tables-table-compaction): {{

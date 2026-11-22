@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lightsail-distribution-cachesettings-syntax.json"></a>
 
-```
+```json
 {
   "[AllowedHTTPMethods](#cfn-lightsail-distribution-cachesettings-allowedhttpmethods)" : {{String}},
   "[CachedHTTPMethods](#cfn-lightsail-distribution-cachesettings-cachedhttpmethods)" : {{String}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lightsail-distribution-cachesettings-syntax.yaml"></a>
 
-```
+```yaml
   [AllowedHTTPMethods](#cfn-lightsail-distribution-cachesettings-allowedhttpmethods): {{String}}
   [CachedHTTPMethods](#cfn-lightsail-distribution-cachesettings-cachedhttpmethods): {{String}}
   [DefaultTTL](#cfn-lightsail-distribution-cachesettings-defaultttl): {{Integer}}

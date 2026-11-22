@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-dashboardversiondefinition-syntax.json"></a>
 
-```
+```json
 {
   "[AnalysisDefaults](#cfn-quicksight-dashboard-dashboardversiondefinition-analysisdefaults)" : {{AnalysisDefaults}},
   "[CalculatedFields](#cfn-quicksight-dashboard-dashboardversiondefinition-calculatedfields)" : {{[ CalculatedField, ... ]}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-dashboardversiondefinition-syntax.yaml"></a>
 
-```
+```yaml
   [AnalysisDefaults](#cfn-quicksight-dashboard-dashboardversiondefinition-analysisdefaults): {{
     AnalysisDefaults}}
   [CalculatedFields](#cfn-quicksight-dashboard-dashboardversiondefinition-calculatedfields): {{

@@ -33,6 +33,8 @@ You can enable backup replication for a new or existing DB instance:
 1. Choose the **Replicated backup retention period**.
 
 1. If you've enabled encryption on the source DB instance, choose the **AWS KMS key** for encrypting the backups or enter a key ARN.
+**Note**
+If the source DB instance is encrypted, Amazon RDS requires access to AWS KMS keys in both the source and destination AWS Region. Amazon RDS uses these keys to replicate backups. For more information, see [AWS KMS key issues](AutomatedXREGBackups.Troubleshooting.md#AutomatedXREGBackups.Troubleshooting.KMSKey).
 
 1. Choose **Save**.
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-timeequalityfilter-syntax.json"></a>
 
-```
+```json
 {
   "[Column](#cfn-quicksight-dashboard-timeequalityfilter-column)" : {{ColumnIdentifier}},
   "[DefaultFilterControlConfiguration](#cfn-quicksight-dashboard-timeequalityfilter-defaultfiltercontrolconfiguration)" : {{DefaultFilterControlConfiguration}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-timeequalityfilter-syntax.yaml"></a>
 
-```
+```yaml
   [Column](#cfn-quicksight-dashboard-timeequalityfilter-column): {{
     ColumnIdentifier}}
   [DefaultFilterControlConfiguration](#cfn-quicksight-dashboard-timeequalityfilter-defaultfiltercontrolconfiguration): {{

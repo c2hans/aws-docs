@@ -71,7 +71,7 @@ If the action is successful, the service sends back an HTTP 200 response with an
 
 This example illustrates one usage of DeleteBucketLifecycleConfiguration.
 
-```
+```HTTP
                   DELETE /v20180820/bucket/example-outpost-bucket/lifecycleconfiguration HTTP/1.1
                   Host: s3-outposts.<Region>.amazonaws.com
                   x-amz-outpost-id: op-01ac5d28a6a232904

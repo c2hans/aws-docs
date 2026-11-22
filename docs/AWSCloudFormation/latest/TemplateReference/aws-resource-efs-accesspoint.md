@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-efs-accesspoint-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EFS::AccessPoint",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-efs-accesspoint-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EFS::AccessPoint
 Properties:
   [AccessPointTags](#cfn-efs-accesspoint-accesspointtags): {{
@@ -127,7 +127,7 @@ The following example declares an access point that is associated with an EFS fi
 #### JSON
 <a name="aws-resource-efs-accesspoint--examples--Declare_an_Access_Point_for_an_EFS_File_System--json"></a>
 
-```
+```json
 "AccessPointResource": {
             "Type": "AWS::EFS::AccessPoint",
             "Properties": {
@@ -158,7 +158,7 @@ The following example declares an access point that is associated with an EFS fi
 #### YAML
 <a name="aws-resource-efs-accesspoint--examples--Declare_an_Access_Point_for_an_EFS_File_System--yaml"></a>
 
-```
+```yaml
 AccessPointResource:
     Type: 'AWS::EFS::AccessPoint'
     Properties:

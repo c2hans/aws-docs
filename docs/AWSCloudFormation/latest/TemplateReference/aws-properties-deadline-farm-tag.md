@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-deadline-farm-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-deadline-farm-tag-key)" : {{String}},
   "[Value](#cfn-deadline-farm-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-deadline-farm-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-deadline-farm-tag-key): {{String}}
   [Value](#cfn-deadline-farm-tag-value): {{String}}
 ```

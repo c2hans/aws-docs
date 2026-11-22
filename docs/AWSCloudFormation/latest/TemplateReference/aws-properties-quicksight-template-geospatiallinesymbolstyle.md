@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-geospatiallinesymbolstyle-syntax.json"></a>
 
-```
+```json
 {
   "[FillColor](#cfn-quicksight-template-geospatiallinesymbolstyle-fillcolor)" : {{GeospatialColor}},
   "[LineWidth](#cfn-quicksight-template-geospatiallinesymbolstyle-linewidth)" : {{GeospatialLineWidth}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-geospatiallinesymbolstyle-syntax.yaml"></a>
 
-```
+```yaml
   [FillColor](#cfn-quicksight-template-geospatiallinesymbolstyle-fillcolor): {{
     GeospatialColor}}
   [LineWidth](#cfn-quicksight-template-geospatiallinesymbolstyle-linewidth): {{

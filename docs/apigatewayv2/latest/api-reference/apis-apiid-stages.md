@@ -75,7 +75,7 @@ Creates a `Stage` for an API.
 #### POST schema
 <a name="apis-apiid-stages-request-body-post-example"></a>
 
-```
+```json
 {
   "stageName": "string",
   "description": "string",
@@ -108,7 +108,7 @@ Creates a `Stage` for an API.
 #### Stages schema
 <a name="apis-apiid-stages-response-body-stages-example"></a>
 
-```
+```json
 {
   "items": [
     {
@@ -147,7 +147,7 @@ Creates a `Stage` for an API.
 #### Stage schema
 <a name="apis-apiid-stages-response-body-stage-example"></a>
 
-```
+```json
 {
   "stageName": "string",
   "description": "string",
@@ -181,7 +181,7 @@ Creates a `Stage` for an API.
 #### BadRequestException schema
 <a name="apis-apiid-stages-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -190,7 +190,7 @@ Creates a `Stage` for an API.
 #### NotFoundException schema
 <a name="apis-apiid-stages-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -200,7 +200,7 @@ Creates a `Stage` for an API.
 #### ConflictException schema
 <a name="apis-apiid-stages-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -209,7 +209,7 @@ Creates a `Stage` for an API.
 #### LimitExceededException schema
 <a name="apis-apiid-stages-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

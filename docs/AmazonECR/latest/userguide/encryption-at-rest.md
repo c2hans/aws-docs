@@ -64,7 +64,7 @@ The following example IAM policy can be added as an inline policy to a user to e
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "ecr-kms-permissions",
@@ -97,7 +97,7 @@ The following example key policy gives the AWS account (root user) that owns the
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "ecr-key-policy",
@@ -129,7 +129,7 @@ The following example IAM policy can be added as an inline policy to a user to e
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "ecr-kms-permissions",
@@ -160,7 +160,7 @@ When using the Amazon ECR console to create a repository, you can grant permissi
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {

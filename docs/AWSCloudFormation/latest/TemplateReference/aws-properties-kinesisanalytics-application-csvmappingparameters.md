@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisanalytics-application-csvmappingparameters-syntax.json"></a>
 
-```
+```json
 {
   "[RecordColumnDelimiter](#cfn-kinesisanalytics-application-csvmappingparameters-recordcolumndelimiter)" : {{String}},
   "[RecordRowDelimiter](#cfn-kinesisanalytics-application-csvmappingparameters-recordrowdelimiter)" : {{String}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisanalytics-application-csvmappingparameters-syntax.yaml"></a>
 
-```
+```yaml
   [RecordColumnDelimiter](#cfn-kinesisanalytics-application-csvmappingparameters-recordcolumndelimiter): {{String}}
   [RecordRowDelimiter](#cfn-kinesisanalytics-application-csvmappingparameters-recordrowdelimiter): {{String}}
 ```

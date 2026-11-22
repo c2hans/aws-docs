@@ -29,13 +29,12 @@ Use real-time access logs when you need:
 For more information, see [Use real-time access logs](real-time-logs.md).
 
 **Connection logs**
-Connection logs provide detailed information about the connection between the server and the client for mTLS enabled distributions. Connection logs provide visibility into client certificate information, reasons for mTLS authentication failures and whether a connection was permitted or refused.
+Connection logs provide detailed information about the TLS connection between the server and the client. CloudFront generates them only for connections to mTLS enabled distributions, and for HTTPS connections to distribution tenants on the Anycast static IP addresses of their connection group. For mTLS enabled distributions, Connection logs also provide visibility into client certificate information, reasons for mTLS authentication failures and whether a connection was permitted or refused.
 Like access logs (standard logs), connection logs are delivered to the delivery destination that you specify.
- To enable connection logs, you must first [enable mTLS ](mtls-authentication.md) for your distribution.
 Use connection logs when you need:
 + Reasons for successful or unsuccessful connections during the TLS handshake
 + Visibility into the client certificate information
-For more information, see [Observability using connection logs](connection-logs.md).
+For more information, see [Connection logs](connection-logs.md).
 
 ## Logging edge functions
 <a name="logging-edge-functions"></a>
@@ -57,5 +56,6 @@ For more information about logging, see the following topics:
 + [Logging service activity](#logging-service-activity)
 + [Access logs (standard logs)](AccessLogs.md)
 + [Use real-time access logs](real-time-logs.md)
++ [Connection logs](connection-logs.md)
 + [Edge function logs](edge-functions-logs.md)
 + [Logging Amazon CloudFront API calls using AWS CloudTrail](logging_using_cloudtrail.md)

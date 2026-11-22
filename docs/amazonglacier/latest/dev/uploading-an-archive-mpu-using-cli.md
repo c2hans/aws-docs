@@ -37,7 +37,7 @@ For more information about Amazon Glacier multipart uploads, see [Uploading Larg
      ```
    + To get a list of Amazon Glacier vaults on the configured account, use the `list-vaults` command. Replace {{123456789012}} with your AWS account ID.
 
-     ```
+     ```cmd
      aws glacier list-vaults --account-id {{123456789012}}
      ```
    + To see the current configuration data for the AWS CLI, use the `aws configure list` command.
@@ -165,7 +165,7 @@ The final command's `--range` parameter value is smaller because the final part 
 
 1. Run `checksum.py` to calculate the SHA256 tree hash. The following hash may not match your output.
 
-   ```
+   ```bash
    $ python3 checksum.py
    $ 3d760edb291bfc9d90d35809243de092aea4c47b308290ad12d084f69988ae0c
    ```

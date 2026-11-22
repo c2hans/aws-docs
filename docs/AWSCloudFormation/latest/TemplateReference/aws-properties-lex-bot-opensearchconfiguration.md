@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-opensearchconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DomainEndpoint](#cfn-lex-bot-opensearchconfiguration-domainendpoint)" : {{String}},
   "[ExactResponse](#cfn-lex-bot-opensearchconfiguration-exactresponse)" : {{Boolean}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-opensearchconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DomainEndpoint](#cfn-lex-bot-opensearchconfiguration-domainendpoint): {{String}}
   [ExactResponse](#cfn-lex-bot-opensearchconfiguration-exactresponse): {{Boolean}}
   [ExactResponseFields](#cfn-lex-bot-opensearchconfiguration-exactresponsefields): {{

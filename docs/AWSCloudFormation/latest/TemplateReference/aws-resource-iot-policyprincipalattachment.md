@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iot-policyprincipalattachment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoT::PolicyPrincipalAttachment",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iot-policyprincipalattachment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoT::PolicyPrincipalAttachment
 Properties:
   [PolicyName](#cfn-iot-policyprincipalattachment-policyname): {{String}}
@@ -64,7 +64,7 @@ The following example attaches a policy to a principal.
 #### JSON
 <a name="aws-resource-iot-policyprincipalattachment--examples----json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -89,7 +89,7 @@ The following example attaches a policy to a principal.
 #### YAML
 <a name="aws-resource-iot-policyprincipalattachment--examples----yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   MyPolicyPrincipalAttachment:

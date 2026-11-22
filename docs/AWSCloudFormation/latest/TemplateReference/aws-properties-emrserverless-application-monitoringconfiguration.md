@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrserverless-application-monitoringconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CloudWatchLoggingConfiguration](#cfn-emrserverless-application-monitoringconfiguration-cloudwatchloggingconfiguration)" : {{CloudWatchLoggingConfiguration}},
   "[ManagedPersistenceMonitoringConfiguration](#cfn-emrserverless-application-monitoringconfiguration-managedpersistencemonitoringconfiguration)" : {{ManagedPersistenceMonitoringConfiguration}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrserverless-application-monitoringconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CloudWatchLoggingConfiguration](#cfn-emrserverless-application-monitoringconfiguration-cloudwatchloggingconfiguration): {{
     CloudWatchLoggingConfiguration}}
   [ManagedPersistenceMonitoringConfiguration](#cfn-emrserverless-application-monitoringconfiguration-managedpersistencemonitoringconfiguration): {{

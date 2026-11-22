@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewaytarget-inferencetargetconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Connector](#cfn-bedrockagentcore-gatewaytarget-inferencetargetconfiguration-connector)" : {{InferenceConnectorTargetConfiguration}},
   "[Provider](#cfn-bedrockagentcore-gatewaytarget-inferencetargetconfiguration-provider)" : {{InferenceProviderTargetConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewaytarget-inferencetargetconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Connector](#cfn-bedrockagentcore-gatewaytarget-inferencetargetconfiguration-connector): {{
     InferenceConnectorTargetConfiguration}}
   [Provider](#cfn-bedrockagentcore-gatewaytarget-inferencetargetconfiguration-provider): {{

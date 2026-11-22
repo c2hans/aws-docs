@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-instanceconnectendpoint-instanceconnectendpointdnsnames-syntax.json"></a>
 
-```
+```json
 {
   "[DnsName](#cfn-ec2-instanceconnectendpoint-instanceconnectendpointdnsnames-dnsname)" : {{String}},
   "[FipsDnsName](#cfn-ec2-instanceconnectendpoint-instanceconnectendpointdnsnames-fipsdnsname)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-instanceconnectendpoint-instanceconnectendpointdnsnames-syntax.yaml"></a>
 
-```
+```yaml
   [DnsName](#cfn-ec2-instanceconnectendpoint-instanceconnectendpointdnsnames-dnsname): {{String}}
   [FipsDnsName](#cfn-ec2-instanceconnectendpoint-instanceconnectendpointdnsnames-fipsdnsname): {{String}}
 ```

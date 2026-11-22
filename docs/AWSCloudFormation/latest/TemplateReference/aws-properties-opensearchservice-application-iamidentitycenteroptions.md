@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchservice-application-iamidentitycenteroptions-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-opensearchservice-application-iamidentitycenteroptions-enabled)" : {{Boolean}},
   "[IamIdentityCenterInstanceArn](#cfn-opensearchservice-application-iamidentitycenteroptions-iamidentitycenterinstancearn)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchservice-application-iamidentitycenteroptions-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-opensearchservice-application-iamidentitycenteroptions-enabled): {{Boolean}}
   [IamIdentityCenterInstanceArn](#cfn-opensearchservice-application-iamidentitycenteroptions-iamidentitycenterinstancearn): {{String}}
   [IamRoleForIdentityCenterApplicationArn](#cfn-opensearchservice-application-iamidentitycenteroptions-iamroleforidentitycenterapplicationarn): {{String}}

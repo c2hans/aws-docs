@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-synthetics-group-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Synthetics::Group",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-synthetics-group-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Synthetics::Group
 Properties:
   [Name](#cfn-synthetics-group-name): {{String}}

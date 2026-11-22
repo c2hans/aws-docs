@@ -15,7 +15,7 @@ To learn more about passing a service role to a service, see [Grant a user permi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

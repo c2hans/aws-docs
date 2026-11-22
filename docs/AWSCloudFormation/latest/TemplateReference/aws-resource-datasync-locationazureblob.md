@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-datasync-locationazureblob-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DataSync::LocationAzureBlob",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-datasync-locationazureblob-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DataSync::LocationAzureBlob
 Properties:
   [AgentArns](#cfn-datasync-locationazureblob-agentarns): {{

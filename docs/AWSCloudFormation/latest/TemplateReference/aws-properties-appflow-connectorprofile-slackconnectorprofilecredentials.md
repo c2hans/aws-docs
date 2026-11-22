@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-connectorprofile-slackconnectorprofilecredentials-syntax.json"></a>
 
-```
+```json
 {
   "[AccessToken](#cfn-appflow-connectorprofile-slackconnectorprofilecredentials-accesstoken)" : {{String}},
   "[ClientId](#cfn-appflow-connectorprofile-slackconnectorprofilecredentials-clientid)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-connectorprofile-slackconnectorprofilecredentials-syntax.yaml"></a>
 
-```
+```yaml
   [AccessToken](#cfn-appflow-connectorprofile-slackconnectorprofilecredentials-accesstoken): {{String}}
   [ClientId](#cfn-appflow-connectorprofile-slackconnectorprofilecredentials-clientid): {{String}}
   [ClientSecret](#cfn-appflow-connectorprofile-slackconnectorprofilecredentials-clientsecret): {{String}}

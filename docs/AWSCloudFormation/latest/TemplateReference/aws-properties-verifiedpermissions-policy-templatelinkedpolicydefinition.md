@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-verifiedpermissions-policy-templatelinkedpolicydefinition-syntax.json"></a>
 
-```
+```json
 {
   "[PolicyTemplateId](#cfn-verifiedpermissions-policy-templatelinkedpolicydefinition-policytemplateid)" : {{String}},
   "[Principal](#cfn-verifiedpermissions-policy-templatelinkedpolicydefinition-principal)" : {{EntityIdentifier}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-verifiedpermissions-policy-templatelinkedpolicydefinition-syntax.yaml"></a>
 
-```
+```yaml
   [PolicyTemplateId](#cfn-verifiedpermissions-policy-templatelinkedpolicydefinition-policytemplateid): {{String}}
   [Principal](#cfn-verifiedpermissions-policy-templatelinkedpolicydefinition-principal): {{
     EntityIdentifier}}

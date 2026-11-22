@@ -31,7 +31,7 @@ The following example shows a policy that can be attached to a role. The policy 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -63,7 +63,7 @@ The S3 bucket policy in account A might look like the following policy. In this 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {
@@ -92,7 +92,7 @@ To implement this policy account B uses IAM to attach it to the appropriate user
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {
@@ -120,7 +120,7 @@ The following example queue policy gives account B permission to perform the `Se
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {
@@ -148,7 +148,7 @@ Account B's policy for delegating access to a group in account B might look like
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {
@@ -177,7 +177,7 @@ Account A's bucket policy might look like the following policy. In this example,
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {

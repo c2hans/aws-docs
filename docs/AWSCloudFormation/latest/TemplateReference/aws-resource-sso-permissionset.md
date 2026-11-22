@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sso-permissionset-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SSO::PermissionSet",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sso-permissionset-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SSO::PermissionSet
 Properties:
   [CustomerManagedPolicyReferences](#cfn-sso-permissionset-customermanagedpolicyreferences): {{
@@ -181,7 +181,7 @@ The following example creates a custom permission set, `PermissionSet`, with a m
 #### JSON
 <a name="aws-resource-sso-permissionset--examples--Creating_a_new_custom_permission_set_for--json"></a>
 
-```
+```json
 {
   "PermissionSet": {
     "Type": "AWS::SSO::PermissionSet",
@@ -208,7 +208,7 @@ The following example creates a custom permission set, `PermissionSet`, with a m
 #### YAML
 <a name="aws-resource-sso-permissionset--examples--Creating_a_new_custom_permission_set_for--yaml"></a>
 
-```
+```yaml
 PermissionSet:
   Type: AWS::SSO::PermissionSet
     Properties:
@@ -232,7 +232,7 @@ The following example creates a custom permission set, `PermissionSetWithCmpPb`,
 #### JSON
 <a name="aws-resource-sso-permissionset--examples--Creating_a_new_custom_permission_set_for_with_a_customer_managed_policy_as_a_permissions_boundary--json"></a>
 
-```
+```json
 {
   "PermissionSetWithCustomerManagedPolicyReferenceForPermissionsBoundary": {
     "Type": "AWS::SSO::PermissionSet",
@@ -270,7 +270,7 @@ The following example creates a custom permission set, `PermissionSetWithCmpPb`,
 #### YAML
 <a name="aws-resource-sso-permissionset--examples--Creating_a_new_custom_permission_set_for_with_a_customer_managed_policy_as_a_permissions_boundary--yaml"></a>
 
-```
+```yaml
 PermissionSetWithCustomerManagedPolicyReferenceForPermissionsBoundary:
   Type: AWS::SSO::PermissionSet
    Properties:
@@ -300,7 +300,7 @@ The following example creates a custom permission set, `PermissionSetWithAmpPb`,
 #### JSON
 <a name="aws-resource-sso-permissionset--examples--Creating_a_new_custom_permission_set_for_with_an_managed_policy_as_a_permissions_boundary--json"></a>
 
-```
+```json
 {
   "PermissionSetWithAWSManagedPolicyForPermissionsBoundary": {
     "Type": "AWS::SSO::PermissionSet",
@@ -337,7 +337,7 @@ The following example creates a custom permission set, `PermissionSetWithAmpPb`,
 #### YAML
 <a name="aws-resource-sso-permissionset--examples--Creating_a_new_custom_permission_set_for_with_an_managed_policy_as_a_permissions_boundary--yaml"></a>
 
-```
+```yaml
 PermissionSetWithAwsManagedPolicyForPermissionsBoundary:
   Type: AWS::SSO::PermissionSet
     Properties:

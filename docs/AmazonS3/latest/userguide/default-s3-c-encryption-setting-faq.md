@@ -30,7 +30,7 @@ Yes. Most modern use cases in Amazon S3 no longer use SSE-C because it lacks the
 
  **Example**
 
-```
+```bash
 aws s3api create-bucket \
 bucket amzn-s3-demo-bucket \
 region us-east-1 \

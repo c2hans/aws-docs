@@ -59,7 +59,7 @@ Viewer mTLS cannot be configured in the process of creating a new distribution i
 
 The following example shows how to create a distribution configuration file (distribution-config.json) that includes mTLS settings:
 
-```
+```json
 {
   "CallerReference": "cli-example-1",
   "Origins": {

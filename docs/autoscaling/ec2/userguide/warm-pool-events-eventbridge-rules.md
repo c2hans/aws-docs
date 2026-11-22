@@ -36,7 +36,7 @@ For more information about creating and working with warm pools, see [Decrease l
 
    1. For **Event pattern**, choose **Custom pattern (JSON editor)**, and paste the following pattern into the **Event pattern** box, replacing the text in *{{italics}}* with the name of your Auto Scaling group.
 
-      ```
+      ```JSON
       {
         "source": [ "aws.autoscaling" ],
         "detail-type": [ "EC2 Instance-launch Lifecycle Action" ],

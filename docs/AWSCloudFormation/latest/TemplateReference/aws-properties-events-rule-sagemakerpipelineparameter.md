@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-events-rule-sagemakerpipelineparameter-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-events-rule-sagemakerpipelineparameter-name)" : {{String}},
   "[Value](#cfn-events-rule-sagemakerpipelineparameter-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-events-rule-sagemakerpipelineparameter-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-events-rule-sagemakerpipelineparameter-name): {{String}}
   [Value](#cfn-events-rule-sagemakerpipelineparameter-value): {{String}}
 ```

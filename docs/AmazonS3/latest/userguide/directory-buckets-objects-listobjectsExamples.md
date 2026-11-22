@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buck
 
 The following `list-objects-v2` example command shows how you can use the AWS CLI to list objects from Amazon S3. This command lists objects from the directory bucket `{{bucket-base-name}}--{{zone-id}}--x-s3`. To run this command, replace the `{{user input placeholders}}` with your own information.
 
-```
+```bash
 aws s3api list-objects-v2 --bucket {{bucket-base-name}}--{{zone-id}}--x-s3
 ```
 

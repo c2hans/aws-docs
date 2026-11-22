@@ -23,7 +23,7 @@ You can view all available default parameter groups for RDS for PostgreSQL DB in
 
 Rather than viewing in the AWS Management Console, you can also list parameters contained in DB cluster parameter groups and DB parameter groups by using the AWS CLI or the Amazon RDS API. For example, to list parameters in a DB cluster parameter group you use the [describe-db-cluster-parameters](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-cluster-parameters.html) AWS CLI command as follows:
 
-```
+```cmd
 aws rds describe-db-cluster-parameters --db-cluster-parameter-group-name default.aurora-postgresql12
 ```
 

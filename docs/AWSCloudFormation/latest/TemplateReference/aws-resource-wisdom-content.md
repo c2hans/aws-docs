@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-wisdom-content-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Wisdom::Content",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-wisdom-content-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Wisdom::Content
 Properties:
   [KnowledgeBaseId](#cfn-wisdom-content-knowledgebaseid): {{String}}

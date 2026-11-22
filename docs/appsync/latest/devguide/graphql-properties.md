@@ -11,7 +11,7 @@ GraphQL consists of several design principles to maintain simplicity and robustn
 
 GraphQL is declarative, which means the user will describe (shape) the data by only declaring the fields they want to query. The response will only return the data for these properties. For example, here's an operation that retrieves a `Book` object in a DynamoDB table with the ISBN 13 `id` value of {{9780199536061}}:
 
-```
+```SDL
 {
   getBook(id: "{{9780199536061}}") {
     name
@@ -23,7 +23,7 @@ GraphQL is declarative, which means the user will describe (shape) the data by o
 
 The response will return the fields in the payload (`name`, `year`, and `author`) and nothing else:
 
-```
+```SDL
 {
   "data": {
     "getBook": {
@@ -42,7 +42,7 @@ Because of this design principle, GraphQL eliminates the perennial issues of ove
 
 GraphQL is flexible in that the data requested can be shaped by the user to fit the needs of the application. Requested data always follows the types and syntax of the properties defined in your GraphQL API. For instance, the following snippet shows the `getBook` operation with a new field scope called `quotes` that returns all stored quote strings and pages linked to the `Book` {{9780199536061}}:
 
-```
+```SDL
 {
   getBook(id: "{{9780199536061}}") {
     name
@@ -58,7 +58,7 @@ GraphQL is flexible in that the data requested can be shaped by the user to fit 
 
 Running this query returns the following result:
 
-```
+```SDL
 {
   "data": {
     "getBook": {
@@ -91,7 +91,7 @@ As you can see, the `quotes` fields linked to the requested book was returned as
 
 GraphQL is self-documenting, or introspective. It supports several built-in operations that allow users to view the underlying types and fields within the schema. For example, here's a `Foo` type with a `date` and `description` field:
 
-```
+```SDL
 type Foo {
 	date: String
 	description: String
@@ -100,7 +100,7 @@ type Foo {
 
 We could use the `_type` operation to find the typing metadata underneath the schema:
 
-```
+```SDL
 {
   __type(name: "Foo") {
     name                   # returns the name of the type
@@ -116,7 +116,7 @@ We could use the `_type` operation to find the typing metadata underneath the sc
 
 This will return a response:
 
-```
+```SDL
 {
   "__type": {
     "name": "Foo",                     # The type name
@@ -141,7 +141,7 @@ This feature can be used to find out what types and fields a particular GraphQL 
 
 GraphQL supports strong typing through its types and fields system. When you define something in your schema, it must have a type that can be validated before runtime. It must also follow GraphQL's syntax specification. This concept is no different from programming in other languages. For example, here's the `Foo` type from earlier:
 
-```
+```SDL
 type Foo {
 	date: String
 	description: String

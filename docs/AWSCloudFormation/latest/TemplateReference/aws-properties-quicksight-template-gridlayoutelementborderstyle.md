@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-gridlayoutelementborderstyle-syntax.json"></a>
 
-```
+```json
 {
   "[Color](#cfn-quicksight-template-gridlayoutelementborderstyle-color)" : {{String}},
   "[Visibility](#cfn-quicksight-template-gridlayoutelementborderstyle-visibility)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-gridlayoutelementborderstyle-syntax.yaml"></a>
 
-```
+```yaml
   [Color](#cfn-quicksight-template-gridlayoutelementborderstyle-color): {{String}}
   [Visibility](#cfn-quicksight-template-gridlayoutelementborderstyle-visibility): {{String}}
   [Width](#cfn-quicksight-template-gridlayoutelementborderstyle-width): {{String}}

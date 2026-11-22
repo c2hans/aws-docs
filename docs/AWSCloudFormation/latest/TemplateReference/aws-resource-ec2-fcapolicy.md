@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-fcapolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::FcaPolicy",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-fcapolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::FcaPolicy
 Properties:
   [Description](#cfn-ec2-fcapolicy-description): {{String}}
@@ -147,7 +147,7 @@ The following example creates a Flex Cost Allocation policy that allocates NAT g
 #### YAML
 <a name="aws-resource-ec2-fcapolicy--examples--Create_an_FCA_policy_for_a_NAT_gateway--yaml"></a>
 
-```
+```yaml
 MyFcaPolicy:
   Type: AWS::EC2::FcaPolicy
   Properties:
@@ -168,7 +168,7 @@ MyFcaPolicy:
 #### JSON
 <a name="aws-resource-ec2-fcapolicy--examples--Create_an_FCA_policy_for_a_NAT_gateway--json"></a>
 
-```
+```json
 {
     "MyFcaPolicy": {
         "Type": "AWS::EC2::FcaPolicy",

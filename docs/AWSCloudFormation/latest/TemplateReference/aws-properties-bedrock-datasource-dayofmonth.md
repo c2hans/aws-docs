@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-datasource-dayofmonth-syntax.json"></a>
 
-```
+```json
 {
   "[DayNumber](#cfn-bedrock-datasource-dayofmonth-daynumber)" : {{Integer}},
   "[LastDayOfMonth](#cfn-bedrock-datasource-dayofmonth-lastdayofmonth)" : {{Json}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-datasource-dayofmonth-syntax.yaml"></a>
 
-```
+```yaml
   [DayNumber](#cfn-bedrock-datasource-dayofmonth-daynumber): {{Integer}}
   [LastDayOfMonth](#cfn-bedrock-datasource-dayofmonth-lastdayofmonth): {{Json}}
 ```

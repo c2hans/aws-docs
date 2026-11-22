@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancing-loadbalancer-connectionsettings-syntax.json"></a>
 
-```
+```json
 {
   "[IdleTimeout](#cfn-elasticloadbalancing-loadbalancer-connectionsettings-idletimeout)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancing-loadbalancer-connectionsettings-syntax.yaml"></a>
 
-```
+```yaml
   [IdleTimeout](#cfn-elasticloadbalancing-loadbalancer-connectionsettings-idletimeout): {{Integer}}
 ```
 

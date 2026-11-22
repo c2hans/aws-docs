@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-guardduty-threatintelset-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::GuardDuty::ThreatIntelSet",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-guardduty-threatintelset-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::GuardDuty::ThreatIntelSet
 Properties:
   [Activate](#cfn-guardduty-threatintelset-activate): {{Boolean}}
@@ -140,7 +140,7 @@ The following example shows how to declare a GuardDuty`ThreatIntelSet` resource:
 #### JSON
 <a name="aws-resource-guardduty-threatintelset--examples--Declare_a_ThreatIntelSet_Resource--json"></a>
 
-```
+```json
 "mythreatintelset": {
     "Type": "AWS::GuardDuty::ThreatIntelSet",
     "Properties": {
@@ -157,7 +157,7 @@ The following example shows how to declare a GuardDuty`ThreatIntelSet` resource:
 #### YAML
 <a name="aws-resource-guardduty-threatintelset--examples--Declare_a_ThreatIntelSet_Resource--yaml"></a>
 
-```
+```yaml
 mythreatintelset:
     Type: AWS::GuardDuty::ThreatIntelSet
     Properties:

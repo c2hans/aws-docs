@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-s3-storagelens-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::S3::StorageLens",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-s3-storagelens-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::S3::StorageLens
 Properties:
   [StorageLensConfiguration](#cfn-s3-storagelens-storagelensconfiguration): {{
@@ -84,7 +84,7 @@ The following examples create an advanced S3 Storage Lens configuration that ena
 #### JSON
 <a name="aws-resource-s3-storagelens--examples--Creating_an_advanced_S3_Storage_Lens_configuration--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "StorageLens Advanced Configuration Example",
@@ -180,7 +180,7 @@ The following examples create an advanced S3 Storage Lens configuration that ena
 #### YAML
 <a name="aws-resource-s3-storagelens--examples--Creating_an_advanced_S3_Storage_Lens_configuration--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: StorageLens Advanced Configuration Example
 Resources:

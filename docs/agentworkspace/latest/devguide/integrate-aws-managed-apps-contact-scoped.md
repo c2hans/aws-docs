@@ -45,7 +45,7 @@ To control the scope under which an application runs, provide a `scope` object i
 
 Provide the `contact` type and the ID of the contact to which the application is bound:
 
-```
+```typescript
 import { AppLaunchOptions, IFrameAppHost } from "@amazon-connect/app-manager";
 
 const launchOptions: AppLaunchOptions = {
@@ -67,7 +67,7 @@ const appIframe = document.createElement("iframe");
 
 Provide the `idle` type to launch an application that is not bound to the lifecycle of any contact:
 
-```
+```typescript
 import { AppLaunchOptions, IFrameAppHost } from "@amazon-connect/app-manager";
 
 const launchOptions: AppLaunchOptions = {
@@ -90,14 +90,14 @@ const appIframe = document.createElement("iframe");
 
 AppManager binds applications registered with the **Per contact** scope to the active contact when no `scope` value is provided at launch. Therefore, when an agent handles multiple contacts simultaneously, you must keep the active contact accurate so that the correct contact context is used when launching applications without an explicit `contactId` in the `scope` option. Use `setActiveContact` to update the active contact in AppManager:
 
-```
+```typescript
 // Update AppManager with the currently active contact
 await appManager.setActiveContact(contactId);
 ```
 
 To keep AppManager automatically in sync with the contact the agent is currently viewing, subscribe to the `connect.core.onViewContact` event and call `setActiveContact` when the active contact changes:
 
-```
+```typescript
 // Listen for contact selection events from the CCP
 connect.core.onViewContact((event) => {
     const contactId = event.contactId;

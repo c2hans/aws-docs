@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-qbusiness-plugin-s3-syntax.json"></a>
 
-```
+```json
 {
   "[Bucket](#cfn-qbusiness-plugin-s3-bucket)" : {{String}},
   "[Key](#cfn-qbusiness-plugin-s3-key)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-qbusiness-plugin-s3-syntax.yaml"></a>
 
-```
+```yaml
   [Bucket](#cfn-qbusiness-plugin-s3-bucket): {{String}}
   [Key](#cfn-qbusiness-plugin-s3-key): {{String}}
 ```

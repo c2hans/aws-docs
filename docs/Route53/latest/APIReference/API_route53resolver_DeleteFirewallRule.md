@@ -8,6 +8,8 @@ Deletes the specified firewall rule. Identify the rule using either `FirewallDom
 
  `DeleteFirewallRule` is the only operation that succeeds against a rule whose `Status` is `CREATION_FAILED`.
 
+To delete an AutoAllowlist rule, identify it by `FirewallThreatProtectionId`. Deleting an AutoAllowlist rule also deletes its managed domain list and the domains that you allowed.
+
 ## Request Syntax
 <a name="API_route53resolver_DeleteFirewallRule_RequestSyntax"></a>
 
@@ -40,7 +42,7 @@ Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: Yes
 
  ** [FirewallThreatProtectionId](#API_route53resolver_DeleteFirewallRule_RequestSyntax) **   <a name="Route53Resolver-route53resolver_DeleteFirewallRule-request-FirewallThreatProtectionId"></a>
- The ID that is created for a DNS Firewall Advanced rule.
+ The ID that is created for a DNS Firewall Advanced rule. For an AutoAllowlist rule, use this ID to delete the rule.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: No

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rtbfabric-inboundexternallink-linkapplicationlogsampling-syntax.json"></a>
 
-```
+```json
 {
   "[ErrorLog](#cfn-rtbfabric-inboundexternallink-linkapplicationlogsampling-errorlog)" : {{Number}},
   "[FilterLog](#cfn-rtbfabric-inboundexternallink-linkapplicationlogsampling-filterlog)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rtbfabric-inboundexternallink-linkapplicationlogsampling-syntax.yaml"></a>
 
-```
+```yaml
   [ErrorLog](#cfn-rtbfabric-inboundexternallink-linkapplicationlogsampling-errorlog): {{Number}}
   [FilterLog](#cfn-rtbfabric-inboundexternallink-linkapplicationlogsampling-filterlog): {{Number}}
 ```

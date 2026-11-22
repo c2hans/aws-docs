@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connectcampaignsv2-campaign-telephonyoutboundconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AnswerMachineDetectionConfig](#cfn-connectcampaignsv2-campaign-telephonyoutboundconfig-answermachinedetectionconfig)" : {{AnswerMachineDetectionConfig}},
   "[ConnectContactFlowId](#cfn-connectcampaignsv2-campaign-telephonyoutboundconfig-connectcontactflowid)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connectcampaignsv2-campaign-telephonyoutboundconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AnswerMachineDetectionConfig](#cfn-connectcampaignsv2-campaign-telephonyoutboundconfig-answermachinedetectionconfig): {{
     AnswerMachineDetectionConfig}}
   [ConnectContactFlowId](#cfn-connectcampaignsv2-campaign-telephonyoutboundconfig-connectcontactflowid): {{String}}

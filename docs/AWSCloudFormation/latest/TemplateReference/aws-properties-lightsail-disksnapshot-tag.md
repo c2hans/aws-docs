@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lightsail-disksnapshot-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-lightsail-disksnapshot-tag-key)" : {{String}},
   "[Value](#cfn-lightsail-disksnapshot-tag-value)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lightsail-disksnapshot-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-lightsail-disksnapshot-tag-key): {{String}}
   [Value](#cfn-lightsail-disksnapshot-tag-value): {{String}}
 ```

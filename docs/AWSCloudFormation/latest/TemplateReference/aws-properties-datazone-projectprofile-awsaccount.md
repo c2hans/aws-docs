@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-projectprofile-awsaccount-syntax.json"></a>
 
-```
+```json
 {
   "[AwsAccountId](#cfn-datazone-projectprofile-awsaccount-awsaccountid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-projectprofile-awsaccount-syntax.yaml"></a>
 
-```
+```yaml
   [AwsAccountId](#cfn-datazone-projectprofile-awsaccount-awsaccountid): {{String}}
 ```
 

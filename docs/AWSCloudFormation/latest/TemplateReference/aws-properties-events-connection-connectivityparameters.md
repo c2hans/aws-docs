@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-events-connection-connectivityparameters-syntax.json"></a>
 
-```
+```json
 {
   "[ResourceParameters](#cfn-events-connection-connectivityparameters-resourceparameters)" : {{ResourceParameters}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-events-connection-connectivityparameters-syntax.yaml"></a>
 
-```
+```yaml
   [ResourceParameters](#cfn-events-connection-connectivityparameters-resourceparameters): {{
     ResourceParameters}}
 ```

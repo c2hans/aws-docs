@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cognito-userpoolclient-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Cognito::UserPoolClient",
   "Properties" : {
@@ -53,7 +53,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cognito-userpoolclient-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Cognito::UserPoolClient
 Properties:
   [AccessTokenValidity](#cfn-cognito-userpoolclient-accesstokenvalidity): {{Integer}}
@@ -338,7 +338,7 @@ The following example creates an app client with analytics, custom scopes, OAuth
 #### JSON
 <a name="aws-resource-cognito-userpoolclient--examples--Creating_a_new_app_client_for_a_user_pool--json"></a>
 
-```
+```json
 {
     "UserPoolClient": {
         "Properties": {
@@ -415,7 +415,7 @@ The following example creates an app client with analytics, custom scopes, OAuth
 #### YAML
 <a name="aws-resource-cognito-userpoolclient--examples--Creating_a_new_app_client_for_a_user_pool--yaml"></a>
 
-```
+```yaml
 UserPoolClient:
     Type: AWS::Cognito::UserPoolClient
     Properties:

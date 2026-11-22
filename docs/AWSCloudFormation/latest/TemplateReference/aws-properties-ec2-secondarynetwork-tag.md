@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-secondarynetwork-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-ec2-secondarynetwork-tag-key)" : {{String}},
   "[Value](#cfn-ec2-secondarynetwork-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-secondarynetwork-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-ec2-secondarynetwork-tag-key): {{String}}
   [Value](#cfn-ec2-secondarynetwork-tag-value): {{String}}
 ```

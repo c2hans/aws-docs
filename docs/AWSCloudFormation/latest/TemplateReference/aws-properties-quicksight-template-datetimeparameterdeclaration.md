@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-datetimeparameterdeclaration-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultValues](#cfn-quicksight-template-datetimeparameterdeclaration-defaultvalues)" : {{DateTimeDefaultValues}},
   "[MappedDataSetParameters](#cfn-quicksight-template-datetimeparameterdeclaration-mappeddatasetparameters)" : {{[ MappedDataSetParameter, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-datetimeparameterdeclaration-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultValues](#cfn-quicksight-template-datetimeparameterdeclaration-defaultvalues): {{
     DateTimeDefaultValues}}
   [MappedDataSetParameters](#cfn-quicksight-template-datetimeparameterdeclaration-mappeddatasetparameters): {{

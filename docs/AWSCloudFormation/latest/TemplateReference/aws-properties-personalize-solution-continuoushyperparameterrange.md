@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-personalize-solution-continuoushyperparameterrange-syntax.json"></a>
 
-```
+```json
 {
   "[MaxValue](#cfn-personalize-solution-continuoushyperparameterrange-maxvalue)" : {{Number}},
   "[MinValue](#cfn-personalize-solution-continuoushyperparameterrange-minvalue)" : {{Number}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-personalize-solution-continuoushyperparameterrange-syntax.yaml"></a>
 
-```
+```yaml
   [MaxValue](#cfn-personalize-solution-continuoushyperparameterrange-maxvalue): {{Number}}
   [MinValue](#cfn-personalize-solution-continuoushyperparameterrange-minvalue): {{Number}}
   [Name](#cfn-personalize-solution-continuoushyperparameterrange-name): {{String}}

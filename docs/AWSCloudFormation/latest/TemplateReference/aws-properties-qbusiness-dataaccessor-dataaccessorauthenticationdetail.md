@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-qbusiness-dataaccessor-dataaccessorauthenticationdetail-syntax.json"></a>
 
-```
+```json
 {
   "[AuthenticationConfiguration](#cfn-qbusiness-dataaccessor-dataaccessorauthenticationdetail-authenticationconfiguration)" : {{DataAccessorAuthenticationConfiguration}},
   "[AuthenticationType](#cfn-qbusiness-dataaccessor-dataaccessorauthenticationdetail-authenticationtype)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-qbusiness-dataaccessor-dataaccessorauthenticationdetail-syntax.yaml"></a>
 
-```
+```yaml
   [AuthenticationConfiguration](#cfn-qbusiness-dataaccessor-dataaccessorauthenticationdetail-authenticationconfiguration): {{
     DataAccessorAuthenticationConfiguration}}
   [AuthenticationType](#cfn-qbusiness-dataaccessor-dataaccessorauthenticationdetail-authenticationtype): {{String}}

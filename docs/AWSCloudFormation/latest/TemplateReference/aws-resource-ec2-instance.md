@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-instance-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::Instance",
   "Properties" : {
@@ -70,7 +70,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-instance-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::Instance
 Properties:
   [AdditionalInfo](#cfn-ec2-instance-additionalinfo): {{String}}
@@ -471,7 +471,7 @@ The following example creates an EC2 instance with a block device mapping with a
 #### JSON
 <a name="aws-resource-ec2-instance--examples--EC2_instance_with_an_EBS_block_device_mapping--json"></a>
 
-```
+```json
 "MyEC2Instance" : {
    "Type" : "AWS::EC2::Instance",
    "Properties" : {
@@ -499,7 +499,7 @@ The following example creates an EC2 instance with a block device mapping with a
 #### YAML
 <a name="aws-resource-ec2-instance--examples--EC2_instance_with_an_EBS_block_device_mapping--yaml"></a>
 
-```
+```yaml
   MyEC2Instance:
     Type: AWS::EC2::Instance
     Properties:
@@ -524,7 +524,7 @@ The following example creates an EC2 instance with user data. The user data must
 #### JSON
 <a name="aws-resource-ec2-instance--examples--EC2_instance_with_user_data--json"></a>
 
-```
+```json
 {
     "Resources": {
         "myInstance": {
@@ -550,7 +550,7 @@ The following example creates an EC2 instance with user data. The user data must
 #### YAML
 <a name="aws-resource-ec2-instance--examples--EC2_instance_with_user_data--yaml"></a>
 
-```
+```yaml
 Resources:
    myInstance:
      Type: 'AWS::EC2::Instance'
@@ -576,7 +576,7 @@ You can use the parameters contained in a launch template to launch an instance.
 #### JSON
 <a name="aws-resource-ec2-instance--examples--Launch_an_instance_from_a_launch_template--json"></a>
 
-```
+```json
 {
     "Resources": {
         "myInstance": {
@@ -628,7 +628,7 @@ You can use the parameters contained in a launch template to launch an instance.
 #### YAML
 <a name="aws-resource-ec2-instance--examples--Launch_an_instance_from_a_launch_template--yaml"></a>
 
-```
+```yaml
 Resources:
    myInstance:
      Type: 'AWS::EC2::Instance'
@@ -661,7 +661,7 @@ You can associate a public IP address with a network interface only if it is the
 #### JSON
 <a name="aws-resource-ec2-instance--examples--Automatically_assign_a_public_IP_address--json"></a>
 
-```
+```json
 "Ec2Instance" : {
   "Type" : "AWS::EC2::Instance",
   "Properties" : {
@@ -680,7 +680,7 @@ You can associate a public IP address with a network interface only if it is the
 #### YAML
 <a name="aws-resource-ec2-instance--examples--Automatically_assign_a_public_IP_address--yaml"></a>
 
-```
+```yaml
 Ec2Instance:
   Type: AWS::EC2::Instance
   Properties:

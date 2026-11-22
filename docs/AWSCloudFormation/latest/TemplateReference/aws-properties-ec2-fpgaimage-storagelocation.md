@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-fpgaimage-storagelocation-syntax.json"></a>
 
-```
+```json
 {
   "[Bucket](#cfn-ec2-fpgaimage-storagelocation-bucket)" : {{String}},
   "[Key](#cfn-ec2-fpgaimage-storagelocation-key)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-fpgaimage-storagelocation-syntax.yaml"></a>
 
-```
+```yaml
   [Bucket](#cfn-ec2-fpgaimage-storagelocation-bucket): {{String}}
   [Key](#cfn-ec2-fpgaimage-storagelocation-key): {{String}}
 ```

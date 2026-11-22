@@ -35,7 +35,7 @@ The ARN values are static values and are not an indicator of what protocol was u
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

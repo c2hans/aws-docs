@@ -31,7 +31,7 @@ If you include sensitive information—such as passwords—in this file, restric
 
 To create a configuration file, use the following format :
 
-```
+```json
 {
   "Parameters" : {
     "{{NameOfTemplateParameter}}" : "{{ValueOfParameter}}",
@@ -51,7 +51,7 @@ To create a configuration file, use the following format :
 
 The following example specifies `TestEC2Key` for the `KeyName` parameter, adds a `Department` tag whose value is `Marketing`, and adds a stack policy that allows all update actions except for an update that deletes a resource.
 
-```
+```json
 {
   "Parameters" : {
     "KeyName" : "TestEC2Key"

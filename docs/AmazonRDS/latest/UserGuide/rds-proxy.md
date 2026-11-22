@@ -67,6 +67,8 @@ Feature availability and support varies across specific versions of each databas
 
   Starting in RDS for MariaDB version 12.3, the database engine enforces this protection. Attempts to `CREATE`, `DROP`, `RENAME`, `GRANT`, `REVOKE`, or `SET PASSWORD` for `rdsproxyadmin` return an error. For details, see [MariaDB security on Amazon RDS](MariaDB.Concepts.UsersAndPrivileges.md).
 
+  Starting in RDS for MySQL version 9.7, the database engine enforces this protection. Attempts to `CREATE`, `DROP`, `RENAME`, `ALTER`, or `SET PASSWORD` for `rdsproxyadmin`, or to `GRANT` or `REVOKE` privileges for it, return an error. For details, see [MySQL 9.7 support on Amazon RDS](MySQL.Concepts.FeatureSupport.md#MySQL.Concepts.FeatureSupport.9-7).
+
 For additional limitations for each DB engine, see the following sections:
 + [Additional limitations for RDS for MariaDB](#rds-proxy.limitations-mdb)
 + [Additional limitations for RDS for Microsoft SQL Server](#rds-proxy.limitations-ms)

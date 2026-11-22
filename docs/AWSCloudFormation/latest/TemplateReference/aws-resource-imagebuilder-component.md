@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-imagebuilder-component-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ImageBuilder::Component",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-imagebuilder-component-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ImageBuilder::Component
 Properties:
   [ChangeDescription](#cfn-imagebuilder-component-changedescription): {{String}}
@@ -198,7 +198,7 @@ The following example shows the template for the Component resource in both JSON
 #### JSON
 <a name="aws-resource-imagebuilder-component--examples--Create_a_component_using_Data--json"></a>
 
-```
+```json
 {
 	"Resources": {
 		"ComponentAllParameters": {
@@ -225,7 +225,7 @@ The following example shows the template for the Component resource in both JSON
 #### YAML
 <a name="aws-resource-imagebuilder-component--examples--Create_a_component_using_Data--yaml"></a>
 
-```
+```yaml
 Resources:
   ComponentAllParameters:
     Type: 'AWS::ImageBuilder::Component'
@@ -279,7 +279,7 @@ The following example shows the template for the Component resource in both YAML
 #### YAML
 <a name="aws-resource-imagebuilder-component--examples--Create_a_component_using_a_Uri--yaml"></a>
 
-```
+```yaml
 Resources:
   ComponentAllParameters:
     Type: 'AWS::ImageBuilder::Component'
@@ -303,7 +303,7 @@ Resources:
 #### JSON
 <a name="aws-resource-imagebuilder-component--examples--Create_a_component_using_a_Uri--json"></a>
 
-```
+```json
 {
     "Resources": {
         "ComponentAllParameters": {

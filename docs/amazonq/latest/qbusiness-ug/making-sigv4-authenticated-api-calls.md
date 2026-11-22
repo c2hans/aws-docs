@@ -150,7 +150,7 @@ The following section outlines the steps to set up the Amazon Q Business control
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [{
@@ -183,7 +183,7 @@ The following section outlines the steps to set up the Amazon Q Business control
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -278,7 +278,7 @@ Use the Java or JavaScript SDK to create the plugin and make calls to Amazon Q B
 
 If both `ssoOidcClient` and `stsClient`, and `applicationRoleArn` are provided, the former is prioritized.
 
-```
+```java
 // Option-1: Build and pass OIDC and STS clients
 SsoOidcClient oidcClient = SsoOidcClient.builder()
     .region(Region.US_EAST_1)

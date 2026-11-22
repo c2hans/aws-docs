@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sagemaker-userprofile-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SageMaker::UserProfile",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sagemaker-userprofile-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SageMaker::UserProfile
 Properties:
   [DomainId](#cfn-sagemaker-userprofile-domainid): {{String}}

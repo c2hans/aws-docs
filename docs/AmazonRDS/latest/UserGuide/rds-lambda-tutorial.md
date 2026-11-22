@@ -145,7 +145,7 @@ The function also uses PyMySQL to add records to this table. The function adds r
 
 The code creates the connection to your database outside of the handler function. Creating the connection in the initialization code allows the connection to be re-used by subsequent invocations of your function and improves performance. In a production application, you can also use [provisioned concurrency](https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html) to initialize a requested number of database connections. These connections are available as soon as your function is invoked.
 
-```
+```python
 import sys
 import logging
 import pymysql
@@ -289,7 +289,7 @@ You can now use the Lambda console to test your function. You create a test even
 
 1. Copy the following code into **Event JSON** and choose **Save**.
 
-   ```
+   ```json
    {
      "Records": [
        {

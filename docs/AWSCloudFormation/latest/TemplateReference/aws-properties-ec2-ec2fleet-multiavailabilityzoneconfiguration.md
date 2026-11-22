@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-ec2fleet-multiavailabilityzoneconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ConfigurationType](#cfn-ec2-ec2fleet-multiavailabilityzoneconfiguration-configurationtype)" : {{String}},
   "[StandbyAvailabilityZones](#cfn-ec2-ec2fleet-multiavailabilityzoneconfiguration-standbyavailabilityzones)" : {{[ StandbyAvailabilityZone, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-ec2fleet-multiavailabilityzoneconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ConfigurationType](#cfn-ec2-ec2fleet-multiavailabilityzoneconfiguration-configurationtype): {{String}}
   [StandbyAvailabilityZones](#cfn-ec2-ec2fleet-multiavailabilityzoneconfiguration-standbyavailabilityzones): {{
     - StandbyAvailabilityZone}}

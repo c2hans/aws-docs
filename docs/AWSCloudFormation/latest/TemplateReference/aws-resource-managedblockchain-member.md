@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-managedblockchain-member-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ManagedBlockchain::Member",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-managedblockchain-member-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ManagedBlockchain::Member
 Properties:
   [InvitationId](#cfn-managedblockchain-member-invitationid): {{String}}
@@ -117,7 +117,7 @@ When you create the first member in a Managed Blockchain network, you also speci
 #### YAML
 <a name="aws-resource-managedblockchain-member--examples--Create_a_new_Managed_Blockchain_network_for_Hyperledger_Fabric_and_the_first_member--yaml"></a>
 
-```
+```yaml
 Description: "Basic initial member template"
 Parameters:
   MemberName:
@@ -170,7 +170,7 @@ Resources:
 #### JSON
 <a name="aws-resource-managedblockchain-member--examples--Create_a_new_Managed_Blockchain_network_for_Hyperledger_Fabric_and_the_first_member--json"></a>
 
-```
+```json
 {
   "Description": "Basic initial member template",
   "Parameters": {
@@ -249,7 +249,7 @@ Resources:
 #### YAML
 <a name="aws-resource-managedblockchain-member--examples--Create_an_additional_member_in_an_existing_Hyperledger_Fabric_network--yaml"></a>
 
-```
+```yaml
 Description: "Basic additional member template"
 Parameters:
   MemberName:
@@ -282,7 +282,7 @@ Resources:
 #### JSON
 <a name="aws-resource-managedblockchain-member--examples--Create_an_additional_member_in_an_existing_Hyperledger_Fabric_network--json"></a>
 
-```
+```json
 {
            "Description": "Basic additional member template",
   "Parameters": {

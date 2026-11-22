@@ -63,14 +63,14 @@ The following is the example to create a service with the dual stack as IP addre
 
 **Example Request to create a service with dual stack support**
 
-```
+```sh
 aws apprunner create-service \
  --cli-input-json file://input.json
 ```
 
 **Example Contents of `input.json`**
 
-```
+```json
 {
   "ServiceName": "example-service",
   "SourceConfiguration": {
@@ -90,7 +90,7 @@ aws apprunner create-service \
 
 **Example Response**
 
-```
+```json
 {
   "Service": {
     "ServiceName": "example-service",

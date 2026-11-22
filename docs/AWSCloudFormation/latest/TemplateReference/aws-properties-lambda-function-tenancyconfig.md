@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-function-tenancyconfig-syntax.json"></a>
 
-```
+```json
 {
   "[TenantIsolationMode](#cfn-lambda-function-tenancyconfig-tenantisolationmode)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-function-tenancyconfig-syntax.yaml"></a>
 
-```
+```yaml
   [TenantIsolationMode](#cfn-lambda-function-tenancyconfig-tenantisolationmode): {{String}}
 ```
 

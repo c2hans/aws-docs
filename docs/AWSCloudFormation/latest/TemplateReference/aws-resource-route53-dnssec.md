@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-route53-dnssec-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Route53::DNSSEC",
   "Properties" : {
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-route53-dnssec-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53::DNSSEC
 Properties:
   [HostedZoneId](#cfn-route53-dnssec-hostedzoneid): {{String}}

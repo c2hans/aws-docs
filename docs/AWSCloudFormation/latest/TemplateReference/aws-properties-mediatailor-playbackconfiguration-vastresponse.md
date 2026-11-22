@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-playbackconfiguration-vastresponse-syntax.json"></a>
 
-```
+```json
 {
   "[AdSequencingMode](#cfn-mediatailor-playbackconfiguration-vastresponse-adsequencingmode)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-playbackconfiguration-vastresponse-syntax.yaml"></a>
 
-```
+```yaml
   [AdSequencingMode](#cfn-mediatailor-playbackconfiguration-vastresponse-adsequencingmode): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotfleetwise-decodermanifest-obdinterface-syntax.json"></a>
 
-```
+```json
 {
   "[DtcRequestIntervalSeconds](#cfn-iotfleetwise-decodermanifest-obdinterface-dtcrequestintervalseconds)" : {{String}},
   "[HasTransmissionEcu](#cfn-iotfleetwise-decodermanifest-obdinterface-hastransmissionecu)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotfleetwise-decodermanifest-obdinterface-syntax.yaml"></a>
 
-```
+```yaml
   [DtcRequestIntervalSeconds](#cfn-iotfleetwise-decodermanifest-obdinterface-dtcrequestintervalseconds): {{String}}
   [HasTransmissionEcu](#cfn-iotfleetwise-decodermanifest-obdinterface-hastransmissionecu): {{String}}
   [Name](#cfn-iotfleetwise-decodermanifest-obdinterface-name): {{String}}

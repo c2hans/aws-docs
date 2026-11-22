@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-quicksight-flow-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::QuickSight::Flow",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-quicksight-flow-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::QuickSight::Flow
 Properties:
   [AwsAccountId](#cfn-quicksight-flow-awsaccountid): {{String}}

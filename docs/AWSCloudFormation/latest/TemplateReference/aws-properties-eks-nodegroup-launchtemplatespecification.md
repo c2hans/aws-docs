@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-nodegroup-launchtemplatespecification-syntax.json"></a>
 
-```
+```json
 {
   "[Id](#cfn-eks-nodegroup-launchtemplatespecification-id)" : {{String}},
   "[Name](#cfn-eks-nodegroup-launchtemplatespecification-name)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-nodegroup-launchtemplatespecification-syntax.yaml"></a>
 
-```
+```yaml
   [Id](#cfn-eks-nodegroup-launchtemplatespecification-id): {{String}}
   [Name](#cfn-eks-nodegroup-launchtemplatespecification-name): {{String}}
   [Version](#cfn-eks-nodegroup-launchtemplatespecification-version): {{String}}

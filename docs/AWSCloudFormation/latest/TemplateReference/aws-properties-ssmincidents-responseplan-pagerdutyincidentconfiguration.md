@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssmincidents-responseplan-pagerdutyincidentconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ServiceId](#cfn-ssmincidents-responseplan-pagerdutyincidentconfiguration-serviceid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssmincidents-responseplan-pagerdutyincidentconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ServiceId](#cfn-ssmincidents-responseplan-pagerdutyincidentconfiguration-serviceid): {{String}}
 ```
 

@@ -94,7 +94,7 @@ All pre-fetched messages are removed from the queue.
 
 The following example desmonstrate setting a pre-fetch value of `10` for a single consumer using the RabbitMQ Java client library.
 
-```
+```java
 ConnectionFactory factory = new ConnectionFactory();
 
 Connection connection = factory.newConnection();

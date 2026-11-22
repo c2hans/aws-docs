@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iam-role-policy-syntax.json"></a>
 
-```
+```json
 {
   "[PolicyDocument](#cfn-iam-role-policy-policydocument)" : {{Json}},
   "[PolicyName](#cfn-iam-role-policy-policyname)" : {{String}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iam-role-policy-syntax.yaml"></a>
 
-```
+```yaml
   [PolicyDocument](#cfn-iam-role-policy-policydocument): {{Json}}
   [PolicyName](#cfn-iam-role-policy-policyname): {{String}}
 ```
@@ -64,7 +64,7 @@ This example shows how the policy document is declared.
 #### JSON
 <a name="aws-properties-iam-role-policy--examples--Role_Policy--json"></a>
 
-```
+```json
 {
     "PolicyName": "root",
     "PolicyDocument": {
@@ -87,7 +87,7 @@ This example shows how the policy document is declared.
 #### YAML
 <a name="aws-properties-iam-role-policy--examples--Role_Policy--yaml"></a>
 
-```
+```yaml
 PolicyName: root
 PolicyDocument:
    Version: 2012-10-17

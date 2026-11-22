@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-groundstation-config-telemetrysinkdata-syntax.json"></a>
 
-```
+```json
 {
   "[KinesisDataStreamData](#cfn-groundstation-config-telemetrysinkdata-kinesisdatastreamdata)" : {{KinesisDataStreamData}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-groundstation-config-telemetrysinkdata-syntax.yaml"></a>
 
-```
+```yaml
   [KinesisDataStreamData](#cfn-groundstation-config-telemetrysinkdata-kinesisdatastreamdata): {{
     KinesisDataStreamData}}
 ```
@@ -50,7 +50,7 @@ The following example creates `TelemetrySinkData` configured for Amazon Kinesis 
 #### JSON
 <a name="aws-properties-groundstation-config-telemetrysinkdata--examples--Create_TelemetrySinkData_for_Kinesis--json"></a>
 
-```
+```json
 {
   "TelemetrySinkData": {
     "KinesisDataStreamData": {
@@ -64,7 +64,7 @@ The following example creates `TelemetrySinkData` configured for Amazon Kinesis 
 #### YAML
 <a name="aws-properties-groundstation-config-telemetrysinkdata--examples--Create_TelemetrySinkData_for_Kinesis--yaml"></a>
 
-```
+```yaml
 TelemetrySinkData:
   KinesisDataStreamData:
     KinesisDataStreamArn: arn:aws:kinesis:us-east-2:123456789012:stream/my-telemetry-stream

@@ -394,7 +394,7 @@ This example shows a sample request for the `CreateConnectorProfile` API (withou
 #### Sample Request
 <a name="API_CreateConnectorProfile_Example_1_Request"></a>
 
-```
+```json
 {
   "connectorProfileName": "Connector_Profile_Name_Value",
   "kmsArn": null,
@@ -431,7 +431,7 @@ This example shows a sample request for the `CreateConnectorProfile` API (withou
 #### Sample Response
 <a name="API_CreateConnectorProfile_Example_1_Response"></a>
 
-```
+```json
 {
   "connectorProfileArn": "arn:aws:appflow:region:<AccountId>:connectorprofile/Connector_Profile_Name"
 }
@@ -445,7 +445,7 @@ This example shows a sample request for the `CreateConnectorProfile` API (withou
 #### Sample Request
 <a name="API_CreateConnectorProfile_Example_2_Request"></a>
 
-```
+```json
 {
   "connectorProfileName": "Connector_Profile_Name_Value",
   "kmsArn": null,
@@ -476,7 +476,7 @@ This example shows a sample request for the `CreateConnectorProfile` API (withou
 #### Sample Response
 <a name="API_CreateConnectorProfile_Example_2_Response"></a>
 
-```
+```json
 {
   "connectorProfileArn": "arn:aws:appflow:region:<AccountId>:connectorprofile/Connector_Profile_Name"
 }
@@ -490,7 +490,7 @@ These examples show a request with OAuth and a sample response.
 #### Sample Request
 <a name="API_CreateConnectorProfile_Example_3_Request"></a>
 
-```
+```json
 {
   "connectorProfileName": "connector-profile-name_value",
   "kmsArn": null,
@@ -517,7 +517,7 @@ These examples show a request with OAuth and a sample response.
 #### Sample Response
 <a name="API_CreateConnectorProfile_Example_3_Response"></a>
 
-```
+```json
 {
   "connectorProfileArn": "arn:aws:appflow:region:<AccountId>:connectorprofile/connector-profile-name"
 }
@@ -531,7 +531,7 @@ This example shows a sample request and response for the `CreateConnectorProfile
 #### Sample Request
 <a name="API_CreateConnectorProfile_Example_4_Request"></a>
 
-```
+```json
 {
   "connectorProfileName": "connector-profile-name",
   "connectorType": "Zendesk",
@@ -560,7 +560,7 @@ This example shows a sample request and response for the `CreateConnectorProfile
 #### Sample Response
 <a name="API_CreateConnectorProfile_Example_4_Response"></a>
 
-```
+```json
 {
   "connectorProfileArn": "arn:aws:appflow:region:<AccountId>:connectorprofile/connector-profile-name"
 }
@@ -574,7 +574,7 @@ This example shows a sample request and response for the `CreateConnectorProfile
 #### Sample Request
 <a name="API_CreateConnectorProfile_Example_5_Request"></a>
 
-```
+```json
 {
   "connectorProfileName": "connector-profile-name",
   "connectorType": "Googleanalytics",
@@ -599,7 +599,7 @@ This example shows a sample request and response for the `CreateConnectorProfile
 }
 ```
 
-```
+```json
 {
   "connectorProfileArn": "arn:aws:appflow:region:<AccountId>:connectorprofile/connector-profile-name"
 }
@@ -613,7 +613,7 @@ This example shows a sample request and response for the `CreateConnectorProfile
 #### Sample Request
 <a name="API_CreateConnectorProfile_Example_6_Request"></a>
 
-```
+```json
 {
   "connectorProfileName": "Connector-profile-new",
   "connectorType": "Marketo",
@@ -642,7 +642,7 @@ This example shows a sample request and response for the `CreateConnectorProfile
 #### Sample Response
 <a name="API_CreateConnectorProfile_Example_6_Response"></a>
 
-```
+```json
 {
   "connectorProfileArn": "arn:aws:appflow:region:<AccountId>:connectorprofile/Connector-profile-new"
 }

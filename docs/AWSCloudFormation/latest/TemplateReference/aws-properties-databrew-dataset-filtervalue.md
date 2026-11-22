@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-databrew-dataset-filtervalue-syntax.json"></a>
 
-```
+```json
 {
   "[Value](#cfn-databrew-dataset-filtervalue-value)" : {{String}},
   "[ValueReference](#cfn-databrew-dataset-filtervalue-valuereference)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-databrew-dataset-filtervalue-syntax.yaml"></a>
 
-```
+```yaml
   [Value](#cfn-databrew-dataset-filtervalue-value): {{String}}
   [ValueReference](#cfn-databrew-dataset-filtervalue-valuereference): {{String}}
 ```

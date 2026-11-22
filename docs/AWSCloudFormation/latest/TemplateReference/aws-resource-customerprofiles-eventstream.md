@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-customerprofiles-eventstream-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CustomerProfiles::EventStream",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-customerprofiles-eventstream-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CustomerProfiles::EventStream
 Properties:
   [DomainName](#cfn-customerprofiles-eventstream-domainname): {{String}}

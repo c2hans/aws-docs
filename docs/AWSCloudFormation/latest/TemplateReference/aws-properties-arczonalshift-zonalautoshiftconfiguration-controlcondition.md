@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-arczonalshift-zonalautoshiftconfiguration-controlcondition-syntax.json"></a>
 
-```
+```json
 {
   "[AlarmIdentifier](#cfn-arczonalshift-zonalautoshiftconfiguration-controlcondition-alarmidentifier)" : {{String}},
   "[Type](#cfn-arczonalshift-zonalautoshiftconfiguration-controlcondition-type)" : {{String}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-arczonalshift-zonalautoshiftconfiguration-controlcondition-syntax.yaml"></a>
 
-```
+```yaml
   [AlarmIdentifier](#cfn-arczonalshift-zonalautoshiftconfiguration-controlcondition-alarmidentifier): {{String}}
   [Type](#cfn-arczonalshift-zonalautoshiftconfiguration-controlcondition-type): {{String}}
 ```

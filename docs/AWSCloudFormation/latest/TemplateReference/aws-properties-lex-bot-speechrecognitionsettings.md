@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-speechrecognitionsettings-syntax.json"></a>
 
-```
+```json
 {
   "[SpeechModelConfig](#cfn-lex-bot-speechrecognitionsettings-speechmodelconfig)" : {{SpeechModelConfig}},
   "[SpeechModelPreference](#cfn-lex-bot-speechrecognitionsettings-speechmodelpreference)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-speechrecognitionsettings-syntax.yaml"></a>
 
-```
+```yaml
   [SpeechModelConfig](#cfn-lex-bot-speechrecognitionsettings-speechmodelconfig): {{
     SpeechModelConfig}}
   [SpeechModelPreference](#cfn-lex-bot-speechrecognitionsettings-speechmodelpreference): {{String}}

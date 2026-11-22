@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrserverless-application-maximumallowedresources-syntax.json"></a>
 
-```
+```json
 {
   "[Cpu](#cfn-emrserverless-application-maximumallowedresources-cpu)" : {{String}},
   "[Disk](#cfn-emrserverless-application-maximumallowedresources-disk)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrserverless-application-maximumallowedresources-syntax.yaml"></a>
 
-```
+```yaml
   [Cpu](#cfn-emrserverless-application-maximumallowedresources-cpu): {{String}}
   [Disk](#cfn-emrserverless-application-maximumallowedresources-disk): {{String}}
   [Memory](#cfn-emrserverless-application-maximumallowedresources-memory): {{String}}

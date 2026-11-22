@@ -14,7 +14,7 @@ The *app* package provides core application features like logging, error handlin
 
 Install the app package from NPM by installing ** @amazon-connect/app**.
 
-```
+```userinput
 % npm install --save @amazon-connect/app
 ```
 

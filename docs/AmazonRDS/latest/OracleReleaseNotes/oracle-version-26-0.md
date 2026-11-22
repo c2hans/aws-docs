@@ -39,7 +39,7 @@ To determine which RUs and MRPs are applied to Amazon RDS for Oracle Database 26
 **Note**
 The descriptions of DSTv47 patches 40063528 and 40063583 contain an ampersand (`&`). As a result, querying `dbms_qopatch.get_opatch_lsinventory` as XML fails with `ORA-31011`, `ORA-19213`, and `LPX-00242`. To view the patch inventory, use `getclobval()`:
 
-```
+```sql
 SET LONG 2000000 LONGCHUNKSIZE 2000000 PAGESIZE 0
 SELECT xmltransform(dbms_qopatch.get_opatch_lsinventory, dbms_qopatch.get_opatch_xslt).getclobval() FROM dual;
 ```
@@ -2886,7 +2886,7 @@ Bugs fixed:
 **Note**
 The descriptions of DSTv46 patches 39938301 and 39938324 contain an ampersand (`&`). As a result, querying `dbms_qopatch.get_opatch_lsinventory` as XML fails with `ORA-31011`, `ORA-19213`, and `LPX-00242`. To view the patch inventory, use `getclobval()`:
 
-```
+```sql
 SET LONG 2000000 LONGCHUNKSIZE 2000000 PAGESIZE 0
 SELECT xmltransform(dbms_qopatch.get_opatch_lsinventory, dbms_qopatch.get_opatch_xslt).getclobval() FROM dual;
 ```
@@ -5248,7 +5248,7 @@ Bugs fixed:
 **Note**
 The descriptions of DSTv46 patches 39938301 and 39938324 contain an ampersand (`&`). As a result, querying `dbms_qopatch.get_opatch_lsinventory` as XML fails with `ORA-31011`, `ORA-19213`, and `LPX-00242`. To view the patch inventory, use `getclobval()`:
 
-```
+```sql
 SET LONG 2000000 LONGCHUNKSIZE 2000000 PAGESIZE 0
 SELECT xmltransform(dbms_qopatch.get_opatch_lsinventory, dbms_qopatch.get_opatch_xslt).getclobval() FROM dual;
 ```

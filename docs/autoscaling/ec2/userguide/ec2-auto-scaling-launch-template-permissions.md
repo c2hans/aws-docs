@@ -19,7 +19,7 @@ IAM identities (users or roles) with this policy have permission to create or up
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -89,7 +89,7 @@ The following example allows users to create and update Auto Scaling groups only
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -133,7 +133,7 @@ The following example specifies that users can't call the `ec2:RunInstances` act
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -179,7 +179,7 @@ The following example policy shows how you can use conditions in your identity-b
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

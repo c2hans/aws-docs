@@ -13,7 +13,7 @@ The `GetItem` request lets you tell the AWS AppSync DynamoDB function to make a 
 
 The `GetItem` request has the following structure:
 
-```
+```TypeScript
 type DynamoDBGetItem = {
   operation: 'GetItem';
   key: { [key: string]: any };
@@ -47,7 +47,7 @@ For more information about DynamoDB type conversion, see [Type system (response 
 ## Examples
 <a name="js-example"></a>
 
-```
+```TypeScript
 export const onPublish = {
   request: (ctx) => ({
     operation : "GetItem",

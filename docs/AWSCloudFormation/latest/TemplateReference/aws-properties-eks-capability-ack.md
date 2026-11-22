@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-capability-ack-syntax.json"></a>
 
-```
+```json
 {
   "[DisabledServices](#cfn-eks-capability-ack-disabledservices)" : {{[ String, ... ]}},
   "[EnableCrossNamespace](#cfn-eks-capability-ack-enablecrossnamespace)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-capability-ack-syntax.yaml"></a>
 
-```
+```yaml
   [DisabledServices](#cfn-eks-capability-ack-disabledservices): {{
     - String}}
   [EnableCrossNamespace](#cfn-eks-capability-ack-enablecrossnamespace): {{Boolean}}

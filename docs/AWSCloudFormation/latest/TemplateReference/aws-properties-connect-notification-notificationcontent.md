@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-notification-notificationcontent-syntax.json"></a>
 
-```
+```json
 {
   "[DeDE](#cfn-connect-notification-notificationcontent-dede)" : {{String}},
   "[EnUS](#cfn-connect-notification-notificationcontent-enus)" : {{String}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-notification-notificationcontent-syntax.yaml"></a>
 
-```
+```yaml
   [DeDE](#cfn-connect-notification-notificationcontent-dede): {{String}}
   [EnUS](#cfn-connect-notification-notificationcontent-enus): {{String}}
   [EsES](#cfn-connect-notification-notificationcontent-eses): {{String}}

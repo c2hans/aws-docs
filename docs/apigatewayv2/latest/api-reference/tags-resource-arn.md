@@ -98,7 +98,7 @@ Deletes a `Tag`.
 #### POST schema
 <a name="tags-resource-arn-request-body-post-example"></a>
 
-```
+```json
 {
   "tags": {
   }
@@ -111,7 +111,7 @@ Deletes a `Tag`.
 #### Tags schema
 <a name="tags-resource-arn-response-body-tags-example"></a>
 
-```
+```json
 {
 }
 ```
@@ -119,7 +119,7 @@ Deletes a `Tag`.
 #### BadRequestException schema
 <a name="tags-resource-arn-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -128,7 +128,7 @@ Deletes a `Tag`.
 #### NotFoundException schema
 <a name="tags-resource-arn-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -138,7 +138,7 @@ Deletes a `Tag`.
 #### ConflictException schema
 <a name="tags-resource-arn-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -147,7 +147,7 @@ Deletes a `Tag`.
 #### LimitExceededException schema
 <a name="tags-resource-arn-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

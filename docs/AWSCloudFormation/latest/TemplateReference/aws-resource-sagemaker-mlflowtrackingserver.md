@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sagemaker-mlflowtrackingserver-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SageMaker::MlflowTrackingServer",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sagemaker-mlflowtrackingserver-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SageMaker::MlflowTrackingServer
 Properties:
   [ArtifactStoreUri](#cfn-sagemaker-mlflowtrackingserver-artifactstoreuri): {{String}}

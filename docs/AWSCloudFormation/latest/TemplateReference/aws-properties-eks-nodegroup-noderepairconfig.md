@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-nodegroup-noderepairconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-eks-nodegroup-noderepairconfig-enabled)" : {{Boolean}},
   "[MaxParallelNodesRepairedCount](#cfn-eks-nodegroup-noderepairconfig-maxparallelnodesrepairedcount)" : {{Integer}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-nodegroup-noderepairconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-eks-nodegroup-noderepairconfig-enabled): {{Boolean}}
   [MaxParallelNodesRepairedCount](#cfn-eks-nodegroup-noderepairconfig-maxparallelnodesrepairedcount): {{Integer}}
   [MaxParallelNodesRepairedPercentage](#cfn-eks-nodegroup-noderepairconfig-maxparallelnodesrepairedpercentage): {{Integer}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-glue-crawler-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Glue::Crawler",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-glue-crawler-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Glue::Crawler
 Properties:
   [Classifiers](#cfn-glue-crawler-classifiers): {{
@@ -190,7 +190,7 @@ The following example creates a crawler for an Amazon S3 target.
 #### JSON
 <a name="aws-resource-glue-crawler--examples--Create_a_crawler--json"></a>
 
-```
+```json
 {
     "Description": "AWS Glue crawler test",
     "Resources": {
@@ -325,7 +325,7 @@ The following example creates a crawler for an Amazon S3 target.
 #### YAML
 <a name="aws-resource-glue-crawler--examples--Create_a_crawler--yaml"></a>
 
-```
+```yaml
 Resources:
   MyRole:
     Type: AWS::IAM::Role
@@ -414,7 +414,7 @@ The following example specifies a configuration that controls a crawler's behavi
 #### JSON
 <a name="aws-resource-glue-crawler--examples--Crawler_Configuration--json"></a>
 
-```
+```json
 {
     "Type": "AWS::Glue::Crawler",
     "Properties": {
@@ -435,7 +435,7 @@ The following example specifies a configuration that controls a crawler's behavi
 #### YAML
 <a name="aws-resource-glue-crawler--examples--Crawler_Configuration--yaml"></a>
 
-```
+```yaml
 Type: AWS::Glue::Crawler
 Properties:
   Role: role1

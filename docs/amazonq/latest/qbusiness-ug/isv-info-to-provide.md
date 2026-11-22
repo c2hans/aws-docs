@@ -27,7 +27,7 @@ The `tenantID` is a unique identifier for your application tenant. Each applicat
   + **ISV IAM role**
 ****
 
-    ```
+    ```json
     {
         "Version":"2012-10-17",
         "Statement": [
@@ -48,7 +48,7 @@ The `tenantID` is a unique identifier for your application tenant. Each applicat
   + **ISV IAM role trust policy**
 ****
 
-    ```
+    ```json
     {
         "Version":"2012-10-17",
         "Statement": [
@@ -97,7 +97,7 @@ The ISVs must create the following AWS Identity and Access Management (IAM) role
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -124,7 +124,7 @@ The ISVs must create the following AWS Identity and Access Management (IAM) role
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

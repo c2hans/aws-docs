@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emr-instancegroupconfig-ebsblockdeviceconfig-syntax.json"></a>
 
-```
+```json
 {
   "[VolumeSpecification](#cfn-emr-instancegroupconfig-ebsblockdeviceconfig-volumespecification)" : {{VolumeSpecification}},
   "[VolumesPerInstance](#cfn-emr-instancegroupconfig-ebsblockdeviceconfig-volumesperinstance)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emr-instancegroupconfig-ebsblockdeviceconfig-syntax.yaml"></a>
 
-```
+```yaml
   [VolumeSpecification](#cfn-emr-instancegroupconfig-ebsblockdeviceconfig-volumespecification): {{
     VolumeSpecification}}
   [VolumesPerInstance](#cfn-emr-instancegroupconfig-ebsblockdeviceconfig-volumesperinstance): {{Integer}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-slotdefaultvaluespecification-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultValueList](#cfn-lex-bot-slotdefaultvaluespecification-defaultvaluelist)" : {{[ SlotDefaultValue, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-slotdefaultvaluespecification-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultValueList](#cfn-lex-bot-slotdefaultvaluespecification-defaultvaluelist): {{
     - SlotDefaultValue}}
 ```

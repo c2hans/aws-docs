@@ -78,7 +78,7 @@ Returns a list of all ActiveMQ users.
 #### ListUsersOutput schema
 <a name="brokers-broker-id-users-response-body-listusersoutput-example"></a>
 
-```
+```json
 {
   "brokerId": "string",
   "nextToken": "string",
@@ -95,7 +95,7 @@ Returns a list of all ActiveMQ users.
 #### Error schema
 <a name="brokers-broker-id-users-response-body-error-example"></a>
 
-```
+```json
 {
   "errorAttribute": "string",
   "message": "string"

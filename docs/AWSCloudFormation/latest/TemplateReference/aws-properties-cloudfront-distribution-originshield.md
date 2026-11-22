@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distribution-originshield-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-cloudfront-distribution-originshield-enabled)" : {{Boolean}},
   "[OriginShieldRegion](#cfn-cloudfront-distribution-originshield-originshieldregion)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distribution-originshield-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-cloudfront-distribution-originshield-enabled): {{Boolean}}
   [OriginShieldRegion](#cfn-cloudfront-distribution-originshield-originshieldregion): {{String}}
 ```

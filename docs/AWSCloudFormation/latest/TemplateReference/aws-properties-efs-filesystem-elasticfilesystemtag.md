@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-efs-filesystem-elasticfilesystemtag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-efs-filesystem-elasticfilesystemtag-key)" : {{String}},
   "[Value](#cfn-efs-filesystem-elasticfilesystemtag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-efs-filesystem-elasticfilesystemtag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-efs-filesystem-elasticfilesystemtag-key): {{String}}
   [Value](#cfn-efs-filesystem-elasticfilesystemtag-value): {{String}}
 ```

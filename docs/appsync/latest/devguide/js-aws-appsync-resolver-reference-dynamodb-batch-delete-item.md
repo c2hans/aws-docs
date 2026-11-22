@@ -12,7 +12,7 @@ The DynamoDB `BatchWriteItem` limits apply and **no condition expression** can b
 
 The `BatchDeleteItem` request object has the following structure:
 
-```
+```TypeScript
 type DynamoDBBatchDeleteItemRequest = {
   operation: 'BatchDeleteItem';
   tables: {
@@ -45,7 +45,7 @@ Things to remember:
 
 For the following example function request handler:
 
-```
+```TypeScript
 import { util } from '@aws-appsync/utils';
 
 export function request(ctx) {
@@ -62,7 +62,7 @@ export function request(ctx) {
 
 The invocation result available in `ctx.result` is as follows:
 
-```
+```TypeScript
 {
    "data": {
      "authors": [null],

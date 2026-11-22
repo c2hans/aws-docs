@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationautoscaling-scalabletarget-scheduledaction-syntax.json"></a>
 
-```
+```json
 {
   "[EndTime](#cfn-applicationautoscaling-scalabletarget-scheduledaction-endtime)" : {{String}},
   "[ScalableTargetAction](#cfn-applicationautoscaling-scalabletarget-scheduledaction-scalabletargetaction)" : {{ScalableTargetAction}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationautoscaling-scalabletarget-scheduledaction-syntax.yaml"></a>
 
-```
+```yaml
   [EndTime](#cfn-applicationautoscaling-scalabletarget-scheduledaction-endtime): {{String}}
   [ScalableTargetAction](#cfn-applicationautoscaling-scalabletarget-scheduledaction-scalabletargetaction): {{
     ScalableTargetAction}}

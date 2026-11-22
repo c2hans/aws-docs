@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-flow-eventbridgedestinationproperties-syntax.json"></a>
 
-```
+```json
 {
   "[ErrorHandlingConfig](#cfn-appflow-flow-eventbridgedestinationproperties-errorhandlingconfig)" : {{ErrorHandlingConfig}},
   "[Object](#cfn-appflow-flow-eventbridgedestinationproperties-object)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-flow-eventbridgedestinationproperties-syntax.yaml"></a>
 
-```
+```yaml
   [ErrorHandlingConfig](#cfn-appflow-flow-eventbridgedestinationproperties-errorhandlingconfig): {{
     ErrorHandlingConfig}}
   [Object](#cfn-appflow-flow-eventbridgedestinationproperties-object): {{String}}

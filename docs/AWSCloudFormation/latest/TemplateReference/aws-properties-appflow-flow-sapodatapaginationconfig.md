@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-flow-sapodatapaginationconfig-syntax.json"></a>
 
-```
+```json
 {
   "[maxPageSize](#cfn-appflow-flow-sapodatapaginationconfig-maxpagesize)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-flow-sapodatapaginationconfig-syntax.yaml"></a>
 
-```
+```yaml
   [maxPageSize](#cfn-appflow-flow-sapodatapaginationconfig-maxpagesize): {{Integer}}
 ```
 

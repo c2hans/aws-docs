@@ -8,7 +8,7 @@ The Amazon ECS console simplifies creating the AWS Distro for OpenTelemetry side
 
 If you're not using the Amazon ECS console, you can add the AWS Distro for OpenTelemetry sidecar container to your task definition. The following task definition snippet shows the container definition for adding the AWS Distro for OpenTelemetry sidecar for AWS X-Ray integration.
 
-```
+```JSON
 {
 	"family": "otel-using-xray",
 	"taskRoleArn": "arn:aws:iam::111122223333:role/{{AmazonECS_OpenTelemetryXrayRole}}",

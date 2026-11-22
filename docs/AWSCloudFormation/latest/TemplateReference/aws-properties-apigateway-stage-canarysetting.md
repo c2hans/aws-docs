@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apigateway-stage-canarysetting-syntax.json"></a>
 
-```
+```json
 {
   "[DeploymentId](#cfn-apigateway-stage-canarysetting-deploymentid)" : {{String}},
   "[PercentTraffic](#cfn-apigateway-stage-canarysetting-percenttraffic)" : {{Number}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apigateway-stage-canarysetting-syntax.yaml"></a>
 
-```
+```yaml
   [DeploymentId](#cfn-apigateway-stage-canarysetting-deploymentid): {{String}}
   [PercentTraffic](#cfn-apigateway-stage-canarysetting-percenttraffic): {{Number}}
   [StageVariableOverrides](#cfn-apigateway-stage-canarysetting-stagevariableoverrides): {{

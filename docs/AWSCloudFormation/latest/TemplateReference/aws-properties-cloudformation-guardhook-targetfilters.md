@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudformation-guardhook-targetfilters-syntax.json"></a>
 
-```
+```json
 {
   "[TargetFiltersItems](#cfn-cloudformation-guardhook-targetfilters-targetfiltersitems)" : {{TargetFiltersItems}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudformation-guardhook-targetfilters-syntax.yaml"></a>
 
-```
+```yaml
   [TargetFiltersItems](#cfn-cloudformation-guardhook-targetfilters-targetfiltersitems): {{
     TargetFiltersItems}}
 ```

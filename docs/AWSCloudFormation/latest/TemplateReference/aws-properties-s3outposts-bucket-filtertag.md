@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3outposts-bucket-filtertag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-s3outposts-bucket-filtertag-key)" : {{String}},
   "[Value](#cfn-s3outposts-bucket-filtertag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3outposts-bucket-filtertag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-s3outposts-bucket-filtertag-key): {{String}}
   [Value](#cfn-s3outposts-bucket-filtertag-value): {{String}}
 ```

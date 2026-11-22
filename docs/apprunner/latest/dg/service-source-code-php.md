@@ -111,7 +111,7 @@ The following example is a minimal configuration file that you can use with a PH
 
 **Example apprunner.yaml**
 
-```
+```yaml
 version: 1.0
 runtime: php81
 build:
@@ -132,7 +132,7 @@ The runtime version that's used in these examples is {{8.1.10}}. You can replace
 
 **Example apprunner.yaml**
 
-```
+```yaml
 version: 1.0
 runtime: php81
 build:
@@ -204,7 +204,7 @@ stderr_logfile_maxbytes=0
 
 **Example apprunner.yaml**
 
-```
+```yaml
 version: 1.0
 runtime: php81
 build:
@@ -221,7 +221,7 @@ run:
 
 **Example index.php**
 
-```
+```html
 <html>
 <head> <title>First PHP App</title> </head>
 <body>
@@ -250,7 +250,7 @@ run:
 
 **Example startup.sh**
 
-```
+```sh
 #!/bin/bash
 
 set -o monitor
@@ -272,7 +272,7 @@ If you don't save the `startup.sh` file as an executable, enter `chmod +x startu
 
 **Example apprunner.yaml**
 
-```
+```yaml
 version: 1.0
 runtime: php81
 build:
@@ -288,7 +288,7 @@ run:
 
 **Example index.php**
 
-```
+```html
 <html>
 <head> <title>First PHP App</title> </head>
 <body>
@@ -342,7 +342,7 @@ stderr_logfile_maxbytes=0
 
 **Example apprunner.yaml**
 
-```
+```yaml
 version: 1.0
 runtime: php81
 build:
@@ -359,7 +359,7 @@ run:
 
 **Example index.php**
 
-```
+```html
 <html>
 <head> <title>First PHP App</title> </head>
 <body>
@@ -388,7 +388,7 @@ run:
 
 **Example startup.sh**
 
-```
+```sh
 #!/bin/bash
 
 set -o monitor
@@ -410,7 +410,7 @@ If you don't save the `startup.sh` file as an executable, enter `chmod +x startu
 
 **Example apprunner.yaml**
 
-```
+```yaml
 version: 1.0
 runtime: php81
 build:
@@ -426,7 +426,7 @@ run:
 
 **Example index.php**
 
-```
+```html
 <html>
 <head> <title>First PHP App</title> </head>
 <body>

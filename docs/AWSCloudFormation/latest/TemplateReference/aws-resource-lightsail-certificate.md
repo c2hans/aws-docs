@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lightsail-certificate-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lightsail::Certificate",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lightsail-certificate-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lightsail::Certificate
 Properties:
   [CertificateName](#cfn-lightsail-certificate-certificatename): {{String}}

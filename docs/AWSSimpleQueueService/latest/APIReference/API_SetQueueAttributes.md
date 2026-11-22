@@ -138,7 +138,7 @@ The following example query request sets a policy that gives all users ` Receive
 #### Sample Request
 <a name="API_SetQueueAttributes_Example_1_Request"></a>
 
-```
+```json
 POST / HTTP/1.1
 Host: sqs.us-east-1.amazonaws.com
 X-Amz-Target: AmazonSQS.SetQueueAtrributes
@@ -157,7 +157,7 @@ Connection: Keep-Alive {
 #### Sample Response
 <a name="API_SetQueueAttributes_Example_1_Response"></a>
 
-```
+```json
 HTTP/1.1 200 OK
 x-amzn-RequestId: <requestId>
 Content-Length: <PayloadSizeBytes>
@@ -173,7 +173,7 @@ Content-Type: application/x-amz-json-1.0
 #### Sample Request
 <a name="API_SetQueueAttributes_Example_2_Request"></a>
 
-```
+```xml
 POST /177715257436/MyQueue/ HTTP/1.1
 Host: sqs.us-east-1.amazonaws.com
 X-Amz-Date: <Date>
@@ -189,7 +189,7 @@ Action=SetQueueAttributes
 #### Sample Response
 <a name="API_SetQueueAttributes_Example_2_Response"></a>
 
-```
+```xml
 HTTP/1.1 200 OK
 <?xml version="1.0"?>
 <SetQueueAttributesResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/">
@@ -219,7 +219,7 @@ For FIFO queues, there can be a maximum of 120,000 in flight messages (received 
 #### Sample Request
 <a name="API_SetQueueAttributes_Example_3_Request"></a>
 
-```
+```json
 POST / HTTP/1.1
 Host: sqs.us-east-1.amazonaws.com
 X-Amz-Target: AmazonSQS.SetQueueAtrributes
@@ -238,7 +238,7 @@ Connection: Keep-Alive {
 #### Sample Response
 <a name="API_SetQueueAttributes_Example_3_Response"></a>
 
-```
+```json
 HTTP/1.1 200 OK
 x-amzn-RequestId: <requestId>
 Content-Length: <PayloadSizeBytes>
@@ -254,7 +254,7 @@ Content-Type: application/x-amz-json-1.0
 #### Sample Request
 <a name="API_SetQueueAttributes_Example_4_Request"></a>
 
-```
+```xml
 POST /177715257436/MyQueue/ HTTP/1.1
 Host: sqs.us-east-1.amazonaws.com
 X-Amz-Date: <Date>
@@ -270,7 +270,7 @@ Action=SetQueueAttributes
 #### Sample Response
 <a name="API_SetQueueAttributes_Example_4_Response"></a>
 
-```
+```xml
 HTTP/1.1 200 OK
 <?xml version="1.0"?>
 <SetQueueAttributesResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/">
@@ -293,7 +293,7 @@ Queue URLs and names are case-sensitive.
 #### Sample Request
 <a name="API_SetQueueAttributes_Example_5_Request"></a>
 
-```
+```json
 POST / HTTP/1.1
 Host: sqs.us-east-1.amazonaws.com
 X-Amz-Target: AmazonSQS.SetQueueAtrributes
@@ -312,7 +312,7 @@ Connection: Keep-Alive {
 #### Sample Response
 <a name="API_SetQueueAttributes_Example_5_Response"></a>
 
-```
+```json
 HTTP/1.1 200 OK
 x-amzn-RequestId: <requestId>
 Content-Length: <PayloadSizeBytes>
@@ -328,7 +328,7 @@ Content-Type: application/x-amz-json-1.0
 #### Sample Request
 <a name="API_SetQueueAttributes_Example_6_Request"></a>
 
-```
+```xml
 POST /177715257436/MyQueue/ HTTP/1.1
 Host: sqs.us-east-1.amazonaws.com
 X-Amz-Date: <Date>
@@ -344,7 +344,7 @@ Action=SetQueueAttributes
 #### Sample Response
 <a name="API_SetQueueAttributes_Example_6_Response"></a>
 
-```
+```xml
 HTTP/1.1 200 OK
 <?xml version="1.0"?>
 <SetQueueAttributesResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/">
@@ -364,7 +364,7 @@ The following example enables long polling by calling the `SetQueueAttributes` a
 #### Sample Request
 <a name="API_SetQueueAttributes_Example_7_Request"></a>
 
-```
+```json
 POST / HTTP/1.1
 Host: sqs.us-east-1.amazonaws.com
 X-Amz-Target: AmazonSQS.SetQueueAtrributes
@@ -383,7 +383,7 @@ Connection: Keep-Alive {
 #### Sample Response
 <a name="API_SetQueueAttributes_Example_7_Response"></a>
 
-```
+```json
 HTTP/1.1 200 OK
 x-amzn-RequestId: <requestId>
 Content-Length: <PayloadSizeBytes>
@@ -399,7 +399,7 @@ Content-Type: application/x-amz-json-1.0
 #### Sample Request
 <a name="API_SetQueueAttributes_Example_8_Request"></a>
 
-```
+```xml
 POST /177715257436/MyQueue/ HTTP/1.1
 Host: sqs.us-east-1.amazonaws.com
 X-Amz-Date: <Date>
@@ -415,7 +415,7 @@ Action=SetQueueAttributes
 #### Sample Response
 <a name="API_SetQueueAttributes_Example_8_Response"></a>
 
-```
+```xml
 HTTP/1.1 200 OK
 <?xml version="1.0"?>
 <SetQueueAttributesResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/">
@@ -435,7 +435,7 @@ The following example changes an existing queue into a delay queue by calling th
 #### Sample Request
 <a name="API_SetQueueAttributes_Example_9_Request"></a>
 
-```
+```json
 POST / HTTP/1.1
 Host: sqs.us-east-1.amazonaws.com
 X-Amz-Target: AmazonSQS.SetQueueAtrributes
@@ -454,7 +454,7 @@ Connection: Keep-Alive {
 #### Sample Response
 <a name="API_SetQueueAttributes_Example_9_Response"></a>
 
-```
+```json
 HTTP/1.1 200 OK
 x-amzn-RequestId: <requestId>
 Content-Length: <PayloadSizeBytes>
@@ -470,7 +470,7 @@ Content-Type: application/x-amz-json-1.0
 #### Sample Request
 <a name="API_SetQueueAttributes_Example_10_Request"></a>
 
-```
+```xml
 POST /177715257436/MyQueue/ HTTP/1.1
 Host: sqs.us-east-1.amazonaws.com
 X-Amz-Date: <Date>
@@ -486,7 +486,7 @@ Action=SetQueueAttributes
 #### Sample Response
 <a name="API_SetQueueAttributes_Example_10_Response"></a>
 
-```
+```xml
 HTTP/1.1 200 OK
 <?xml version="1.0"?>
 <SetQueueAttributesResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/">

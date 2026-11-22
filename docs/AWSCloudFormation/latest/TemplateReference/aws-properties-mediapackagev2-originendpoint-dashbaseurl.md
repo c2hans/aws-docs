@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackagev2-originendpoint-dashbaseurl-syntax.json"></a>
 
-```
+```json
 {
   "[DvbPriority](#cfn-mediapackagev2-originendpoint-dashbaseurl-dvbpriority)" : {{Integer}},
   "[DvbWeight](#cfn-mediapackagev2-originendpoint-dashbaseurl-dvbweight)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackagev2-originendpoint-dashbaseurl-syntax.yaml"></a>
 
-```
+```yaml
   [DvbPriority](#cfn-mediapackagev2-originendpoint-dashbaseurl-dvbpriority): {{Integer}}
   [DvbWeight](#cfn-mediapackagev2-originendpoint-dashbaseurl-dvbweight): {{Integer}}
   [ServiceLocation](#cfn-mediapackagev2-originendpoint-dashbaseurl-servicelocation): {{String}}

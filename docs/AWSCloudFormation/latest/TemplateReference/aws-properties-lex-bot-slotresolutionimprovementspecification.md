@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-slotresolutionimprovementspecification-syntax.json"></a>
 
-```
+```json
 {
   "[BedrockModelSpecification](#cfn-lex-bot-slotresolutionimprovementspecification-bedrockmodelspecification)" : {{BedrockModelSpecification}},
   "[Enabled](#cfn-lex-bot-slotresolutionimprovementspecification-enabled)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-slotresolutionimprovementspecification-syntax.yaml"></a>
 
-```
+```yaml
   [BedrockModelSpecification](#cfn-lex-bot-slotresolutionimprovementspecification-bedrockmodelspecification): {{
     BedrockModelSpecification}}
   [Enabled](#cfn-lex-bot-slotresolutionimprovementspecification-enabled): {{Boolean}}

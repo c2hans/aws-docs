@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-events-connection-clientparameters-syntax.json"></a>
 
-```
+```json
 {
   "[ClientID](#cfn-events-connection-clientparameters-clientid)" : {{String}},
   "[ClientSecret](#cfn-events-connection-clientparameters-clientsecret)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-events-connection-clientparameters-syntax.yaml"></a>
 
-```
+```yaml
   [ClientID](#cfn-events-connection-clientparameters-clientid): {{String}}
   [ClientSecret](#cfn-events-connection-clientparameters-clientsecret): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-knowledgebase-opensearchmanagedclusterconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DomainArn](#cfn-bedrock-knowledgebase-opensearchmanagedclusterconfiguration-domainarn)" : {{String}},
   "[DomainEndpoint](#cfn-bedrock-knowledgebase-opensearchmanagedclusterconfiguration-domainendpoint)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-knowledgebase-opensearchmanagedclusterconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DomainArn](#cfn-bedrock-knowledgebase-opensearchmanagedclusterconfiguration-domainarn): {{String}}
   [DomainEndpoint](#cfn-bedrock-knowledgebase-opensearchmanagedclusterconfiguration-domainendpoint): {{String}}
   [FieldMapping](#cfn-bedrock-knowledgebase-opensearchmanagedclusterconfiguration-fieldmapping): {{

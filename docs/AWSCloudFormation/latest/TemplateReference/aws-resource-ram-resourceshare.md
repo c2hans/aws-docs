@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ram-resourceshare-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RAM::ResourceShare",
   "Properties" : {
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ram-resourceshare-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RAM::ResourceShare
 Properties:
   [AllowExternalPrincipals](#cfn-ram-resourceshare-allowexternalprincipals): {{Boolean}}
@@ -174,7 +174,7 @@ The following example creates a resource share. It uses separate association res
 #### YAML
 <a name="aws-resource-ram-resourceshare--examples--Creating_a_resource_share_with_association_resources--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Description: Resource share with separate association resources
 Resources:
@@ -209,7 +209,7 @@ Resources:
 #### JSON
 <a name="aws-resource-ram-resourceshare--examples--Creating_a_resource_share_with_association_resources--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "Resource share with separate association resources",
@@ -266,7 +266,7 @@ The following example demonstrates how to create a resource share.
 #### YAML
 <a name="aws-resource-ram-resourceshare--examples--Creating_a_resource_share--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   myresourceshare:
@@ -287,7 +287,7 @@ Resources:
 #### JSON
 <a name="aws-resource-ram-resourceshare--examples--Creating_a_resource_share--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09T00:00:00.000Z",
   "Resources": {

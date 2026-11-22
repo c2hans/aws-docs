@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-personalize-eventtracker-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Personalize::EventTracker",
   "Properties" : {
@@ -49,7 +49,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-personalize-eventtracker-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Personalize::EventTracker
 Properties:
   [DatasetGroupArn](#cfn-personalize-eventtracker-datasetgrouparn): {{String}}

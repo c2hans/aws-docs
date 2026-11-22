@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudfront-cloudfrontoriginaccessidentity-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudFront::CloudFrontOriginAccessIdentity",
   "Properties" : {
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudfront-cloudfrontoriginaccessidentity-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudFront::CloudFrontOriginAccessIdentity
 Properties:
   [CloudFrontOriginAccessIdentityConfig](#cfn-cloudfront-cloudfrontoriginaccessidentity-cloudfrontoriginaccessidentityconfig): {{
@@ -79,7 +79,7 @@ The Amazon S3 canonical user ID for the origin access identity, used when giving
 #### JSON
 <a name="aws-resource-cloudfront-cloudfrontoriginaccessidentity--examples--Specify_the_comment_for_an_origin_access_identity--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -98,7 +98,7 @@ The Amazon S3 canonical user ID for the origin access identity, used when giving
 #### YAML
 <a name="aws-resource-cloudfront-cloudfrontoriginaccessidentity--examples--Specify_the_comment_for_an_origin_access_identity--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   cloudfrontoriginaccessidentity:

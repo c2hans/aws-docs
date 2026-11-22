@@ -59,7 +59,7 @@ Because we will probably reuse the **validateEmail** function in other resolvers
 
 Update your resolver code by replacing your request and response functions:
 
-```
+```velocity
 export function request(ctx) {
     ctx.stash.email = ctx.args.input.email
     return {};
@@ -79,7 +79,7 @@ From the pipeline resolver page, in the **Functions** section, click on **Add fu
 
 Make sure you have created a data source of the **NONE** type. Choose this data source in the **Data source name** list. For the **function name**, enter in `validateEmail`. In the **function code** area, overwrite everything with this snippet:
 
-```
+```velocity
 import { util } from '@aws-appsync/utils';
 
 export function request(ctx) {
@@ -102,7 +102,7 @@ export function response(ctx) {
 
 Review your inputs, then choose **Create**. We just created our **validateEmail** function. Repeat these steps to create the **saveUser** function with the following code (For the sake of simplicity, we use a **NONE** data source and pretend the user has been saved in the system after the function executes.):
 
-```
+```velocity
 import { util } from '@aws-appsync/utils';
 
 export function request(ctx) {
@@ -127,7 +127,7 @@ Our functions should have been added automatically to the pipeline resolver we j
 
 In the AWS AppSync console, go to the **Queries** page. In the explorer, ensure that you're using your mutation. If you aren't, choose `Mutation` in the drop-down list, then choose `+`. Enter the following query:
 
-```
+```graphql
 mutation {
   signUp(input: {email: "nadia@myvaliddomain.com", username: "nadia"}) {
     id
@@ -138,7 +138,7 @@ mutation {
 
 This should return something like:
 
-```
+```graphql
 {
   "data": {
     "signUp": {

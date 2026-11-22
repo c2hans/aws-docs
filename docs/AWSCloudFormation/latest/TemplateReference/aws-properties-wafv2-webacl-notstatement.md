@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-notstatement-syntax.json"></a>
 
-```
+```json
 {
   "[Statement](#cfn-wafv2-webacl-notstatement-statement)" : {{Statement}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-notstatement-syntax.yaml"></a>
 
-```
+```yaml
   [Statement](#cfn-wafv2-webacl-notstatement-statement): {{
     Statement}}
 ```

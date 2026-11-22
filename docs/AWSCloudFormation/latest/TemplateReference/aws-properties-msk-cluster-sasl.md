@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-cluster-sasl-syntax.json"></a>
 
-```
+```json
 {
   "[Iam](#cfn-msk-cluster-sasl-iam)" : {{Iam}},
   "[Scram](#cfn-msk-cluster-sasl-scram)" : {{Scram}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-cluster-sasl-syntax.yaml"></a>
 
-```
+```yaml
   [Iam](#cfn-msk-cluster-sasl-iam): {{
     Iam}}
   [Scram](#cfn-msk-cluster-sasl-scram): {{

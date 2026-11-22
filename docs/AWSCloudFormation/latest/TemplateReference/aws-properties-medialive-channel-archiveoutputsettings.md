@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-archiveoutputsettings-syntax.json"></a>
 
-```
+```json
 {
   "[ContainerSettings](#cfn-medialive-channel-archiveoutputsettings-containersettings)" : {{ArchiveContainerSettings}},
   "[Extension](#cfn-medialive-channel-archiveoutputsettings-extension)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-archiveoutputsettings-syntax.yaml"></a>
 
-```
+```yaml
   [ContainerSettings](#cfn-medialive-channel-archiveoutputsettings-containersettings): {{
     ArchiveContainerSettings}}
   [Extension](#cfn-medialive-channel-archiveoutputsettings-extension): {{String}}

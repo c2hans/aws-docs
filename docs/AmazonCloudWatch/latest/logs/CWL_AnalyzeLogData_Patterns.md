@@ -18,7 +18,7 @@ Consider the following sample of three log events.
 
 In the previous sample, all three log events follow one pattern:
 
-```
+```sql
 <Time-1> [INFO] Calling DynamoDB to store for resource id <ID-2>
 ```
 

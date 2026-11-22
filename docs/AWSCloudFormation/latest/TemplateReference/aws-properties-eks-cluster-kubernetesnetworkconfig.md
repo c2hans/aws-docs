@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-cluster-kubernetesnetworkconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ElasticLoadBalancing](#cfn-eks-cluster-kubernetesnetworkconfig-elasticloadbalancing)" : {{ElasticLoadBalancing}},
   "[IpFamily](#cfn-eks-cluster-kubernetesnetworkconfig-ipfamily)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-cluster-kubernetesnetworkconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ElasticLoadBalancing](#cfn-eks-cluster-kubernetesnetworkconfig-elasticloadbalancing): {{
     ElasticLoadBalancing}}
   [IpFamily](#cfn-eks-cluster-kubernetesnetworkconfig-ipfamily): {{String}}

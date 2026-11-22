@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-events-archive-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Events::Archive",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-events-archive-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Events::Archive
 Properties:
   [ArchiveName](#cfn-events-archive-archivename): {{String}}
@@ -135,7 +135,7 @@ The following example creates an archive for all EC2 events sent from the defaul
 #### JSON
 <a name="aws-resource-events-archive--examples--Create_an_archive--json"></a>
 
-```
+```json
 {
   "SampleArchive":
     "Type" : "AWS::Events::Archive",
@@ -156,7 +156,7 @@ The following example creates an archive for all EC2 events sent from the defaul
 #### YAML
 <a name="aws-resource-events-archive--examples--Create_an_archive--yaml"></a>
 
-```
+```yaml
 SampleArchive:
   Type: 'AWS::Events::Archive'
   Properties:

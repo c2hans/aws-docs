@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-agentregistry-registryrecord-agentskillsadditionaldata-syntax.json"></a>
 
-```
+```json
 {
   "[SkillMd](#cfn-agentregistry-registryrecord-agentskillsadditionaldata-skillmd)" : {{AgentSkillsMdDescriptor}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-agentregistry-registryrecord-agentskillsadditionaldata-syntax.yaml"></a>
 
-```
+```yaml
   [SkillMd](#cfn-agentregistry-registryrecord-agentskillsadditionaldata-skillmd): {{
     AgentSkillsMdDescriptor}}
 ```

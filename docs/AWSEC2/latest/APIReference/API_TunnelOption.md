@@ -39,6 +39,11 @@ The external IP address of the VPN tunnel.
 Type: String
 Required: No
 
+ ** Phase1AdditionalKeyExchangeSet.N **
+The permitted additional key exchange rounds for the VPN tunnel for phase 1 IKE negotiations.
+Type: Array of [VpnAdditionalKeyExchange](API_VpnAdditionalKeyExchange.md) objects
+Required: No
+
  ** Phase1DHGroupNumberSet.N **
 The permitted Diffie-Hellman group numbers for the VPN tunnel for phase 1 IKE negotiations.
 Type: Array of [Phase1DHGroupNumbersListValue](API_Phase1DHGroupNumbersListValue.md) objects
@@ -57,6 +62,11 @@ Required: No
  ** phase1LifetimeSeconds **
 The lifetime for phase 1 of the IKE negotiation, in seconds.
 Type: Integer
+Required: No
+
+ ** Phase2AdditionalKeyExchangeSet.N **
+The permitted additional key exchange rounds for the VPN tunnel for phase 2 IKE negotiations.
+Type: Array of [VpnAdditionalKeyExchange](API_VpnAdditionalKeyExchange.md) objects
 Required: No
 
  ** Phase2DHGroupNumberSet.N **

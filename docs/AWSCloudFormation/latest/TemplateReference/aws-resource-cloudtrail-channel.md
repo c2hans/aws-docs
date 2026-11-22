@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudtrail-channel-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudTrail::Channel",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudtrail-channel-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudTrail::Channel
 Properties:
   [Destinations](#cfn-cloudtrail-channel-destinations): {{
@@ -110,7 +110,7 @@ The following example creates a channel for a CloudTrail Lake integration with a
 #### JSON
 <a name="aws-resource-cloudtrail-channel--examples--Example--json"></a>
 
-```
+```json
 {
     "Parameters": {
     	"Name" : String,
@@ -165,7 +165,7 @@ The following example creates a channel for a CloudTrail Lake integration with a
 #### YAML
 <a name="aws-resource-cloudtrail-channel--examples--Example--yaml"></a>
 
-```
+```yaml
 Parameters:
   Name:
     Type: String

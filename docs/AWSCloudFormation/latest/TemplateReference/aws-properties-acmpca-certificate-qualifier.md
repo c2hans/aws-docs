@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-acmpca-certificate-qualifier-syntax.json"></a>
 
-```
+```json
 {
   "[CpsUri](#cfn-acmpca-certificate-qualifier-cpsuri)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-acmpca-certificate-qualifier-syntax.yaml"></a>
 
-```
+```yaml
   [CpsUri](#cfn-acmpca-certificate-qualifier-cpsuri): {{String}}
 ```
 

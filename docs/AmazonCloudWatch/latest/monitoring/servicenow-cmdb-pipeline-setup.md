@@ -8,7 +8,7 @@ Collects configuration management database (CMDB) data from ServiceNow using OAu
 
 Configure the ServiceNow CMDB source with the following parameters:
 
-```
+```yaml
 source:
   servicenow_cmdb:
     instance_url: "<example-instance-url>"

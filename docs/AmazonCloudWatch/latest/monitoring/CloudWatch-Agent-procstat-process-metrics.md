@@ -70,7 +70,7 @@ The following example `procstat` section monitors the processes that create the 
 
 The following example `procstat` section monitors all processes with names that match the strings `agent` or `plugin`. The same metrics are collected from each process.
 
-```
+```json
 {
     "metrics": {
         "metrics_collected": {
@@ -102,7 +102,7 @@ The following example `procstat` section monitors all processes with names that 
 
 The following example `procstat` section monitors all processes with command lines that match the strings `config` or `-c`. The same metrics are collected from each process.
 
-```
+```json
 {
     "metrics": {
         "metrics_collected": {
@@ -141,7 +141,7 @@ In Windows Server, the procstat matching behavior differs from Linux. Keep the f
 
 The following configuration snippet shows how to monitor the IIS worker processes on Windows Server:
 
-```
+```json
 {
   "metrics": {
     "metrics_collected": {

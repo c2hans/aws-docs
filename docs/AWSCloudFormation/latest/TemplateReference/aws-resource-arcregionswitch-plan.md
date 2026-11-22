@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-arcregionswitch-plan-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ARCRegionSwitch::Plan",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-arcregionswitch-plan-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ARCRegionSwitch::Plan
 Properties:
   [AssociatedAlarms](#cfn-arcregionswitch-plan-associatedalarms): {{

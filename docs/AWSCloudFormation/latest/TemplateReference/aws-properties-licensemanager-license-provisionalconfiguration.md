@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-licensemanager-license-provisionalconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MaxTimeToLiveInMinutes](#cfn-licensemanager-license-provisionalconfiguration-maxtimetoliveinminutes)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-licensemanager-license-provisionalconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MaxTimeToLiveInMinutes](#cfn-licensemanager-license-provisionalconfiguration-maxtimetoliveinminutes): {{Integer}}
 ```
 

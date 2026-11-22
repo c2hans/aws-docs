@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-eventbridgeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EventBridgeEnabled](#cfn-s3-bucket-eventbridgeconfiguration-eventbridgeenabled)" : {{Boolean}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-eventbridgeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EventBridgeEnabled](#cfn-s3-bucket-eventbridgeconfiguration-eventbridgeenabled): {{Boolean}}
 ```
 
@@ -51,7 +51,7 @@ The following example template shows an Amazon S3 bucket with a notification con
 #### JSON
 <a name="aws-properties-s3-bucket-eventbridgeconfiguration--examples--Enable_EventBridgeConfiguration--json"></a>
 
-```
+```json
 {
 "Resources": {
   "S3Bucket": {
@@ -71,7 +71,7 @@ The following example template shows an Amazon S3 bucket with a notification con
 #### YAML
 <a name="aws-properties-s3-bucket-eventbridgeconfiguration--examples--Enable_EventBridgeConfiguration--yaml"></a>
 
-```
+```yaml
 Resources:
   S3Bucket:
     Type: 'AWS::S3::Bucket'

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-usageprofile-configurationobject-syntax.json"></a>
 
-```
+```json
 {
   "[AllowedValues](#cfn-glue-usageprofile-configurationobject-allowedvalues)" : {{[ String, ... ]}},
   "[DefaultValue](#cfn-glue-usageprofile-configurationobject-defaultvalue)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-usageprofile-configurationobject-syntax.yaml"></a>
 
-```
+```yaml
   [AllowedValues](#cfn-glue-usageprofile-configurationobject-allowedvalues): {{
     - String}}
   [DefaultValue](#cfn-glue-usageprofile-configurationobject-defaultvalue): {{String}}

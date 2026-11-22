@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspaces-directory-defaultworkspacecreationproperties-syntax.json"></a>
 
-```
+```json
 {
   "[CustomSecurityGroupId](#cfn-workspaces-directory-defaultworkspacecreationproperties-customsecuritygroupid)" : {{String}},
   "[DefaultOu](#cfn-workspaces-directory-defaultworkspacecreationproperties-defaultou)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspaces-directory-defaultworkspacecreationproperties-syntax.yaml"></a>
 
-```
+```yaml
   [CustomSecurityGroupId](#cfn-workspaces-directory-defaultworkspacecreationproperties-customsecuritygroupid): {{String}}
   [DefaultOu](#cfn-workspaces-directory-defaultworkspacecreationproperties-defaultou): {{String}}
   [EnableInternetAccess](#cfn-workspaces-directory-defaultworkspacecreationproperties-enableinternetaccess): {{Boolean}}

@@ -34,7 +34,7 @@ Now that you have your GraphQL API, you can set up a basic schema that allows th
 
 1. We will create a schema that defines a `Post` type and an operation `addPost` to add and get `Post` objects. In the **Schema** pane, replace the contents with the following code:
 
-   ```
+   ```TypeScript
    schema {
        query: Query
        mutation: Mutation
@@ -110,7 +110,7 @@ Now that AWS AppSync is aware of the Amazon DynamoDB table, you can link it to i
 
 1. In your code editor, replace the code with this snippet:
 
-   ```
+   ```TypeScript
    import { util } from '@aws-appsync/utils'
    import * as ddb from '@aws-appsync/utils/dynamodb'
 
@@ -132,7 +132,7 @@ In this code, you use the DynamoDB module utils that allow you to easily create 
 
 AWS AppSync comes with a utility for automatic ID generation called `util.autoId()`, which is used to generate an ID for your new post. If you do not specify an ID, the utility will automatically generate it for you.
 
-```
+```TypeScript
 const key = { id: ctx.args.id ?? util.autoId() }
 ```
 
@@ -149,7 +149,7 @@ Now that the resolver has been configured, AWS AppSync can translate an incoming
 
 1. In the **Queries** pane, add the following mutation:
 
-   ```
+   ```TypeScript
    mutation addPost {
      addPost(
        id: 123,
@@ -172,7 +172,7 @@ Now that the resolver has been configured, AWS AppSync can translate an incoming
 
 1. Choose **Run** (the orange play button), then choose `addPost`. The results of the newly created post should appear in the **Results** pane to the right of the **Queries** pane. It should look similar to the following:
 
-   ```
+   ```TypeScript
    {
      "data": {
        "addPost": {
@@ -195,7 +195,7 @@ The following explanation shows what occurred:
 
 1. AWS AppSync executes the request handler of the resolver. The `ddb.put` function creates a `PutItem` request that looks like this:
 
-   ```
+   ```TypeScript
    {
      operation: 'PutItem',
      key: { id: { S: '123' } },
@@ -215,7 +215,7 @@ The following explanation shows what occurred:
 
 1. AWS AppSync took the results of the `PutItem` request and converted them back to GraphQL types.
 
-   ```
+   ```TypeScript
    {
        "id" : "123",
        "author": "AUTHORNAME",
@@ -247,7 +247,7 @@ Now that you’re able to add data to the Amazon DynamoDB table, you need to set
 
 1. In the code editor, replace the code with this snippet:
 
-   ```
+   ```TypeScript
    import * as ddb from '@aws-appsync/utils/dynamodb'
 
    export function request(ctx) {
@@ -273,7 +273,7 @@ Now that the resolver has been set up, AWS AppSync knows how to translate an inc
 
 1. In the **Queries** pane, add the following code, and use the id that you copied after creating your post:
 
-   ```
+   ```TypeScript
    query getPost {
      getPost(id: "123") {
        id
@@ -292,7 +292,7 @@ Now that the resolver has been set up, AWS AppSync knows how to translate an inc
 
 1. The post retrieved from Amazon DynamoDB should appear in the **Results** pane to the right of the **Queries** pane. It should look similar to the following:
 
-   ```
+   ```TypeScript
    {
      "data": {
        "getPost": {
@@ -311,7 +311,7 @@ Now that the resolver has been set up, AWS AppSync knows how to translate an inc
 
 Alternatively, take the following example:
 
-```
+```TypeScript
 query getPost {
   getPost(id: "123") {
     id
@@ -323,7 +323,7 @@ query getPost {
 
 If your `getPost` query only needs the `id`, `author`, and `title`, you can change your request function to use projection expressions to specify only the attributes that you want from your DynamoDB table to avoid unnecessary data transfer from DynamoDB to AWS AppSync. For example, the request function may look like the snippet below:
 
-```
+```TypeScript
 import * as ddb from '@aws-appsync/utils/dynamodb'
 
 export function request(ctx) {
@@ -338,7 +338,7 @@ export const response = (ctx) => ctx.result
 
 You can also use a [selectionSetList](https://docs.aws.amazon.com/appsync/latest/devguide/resolver-context-reference-js.html#aws-appsync-resolver-context-reference-info-js) with `getPost` to represent the `expression`:
 
-```
+```TypeScript
 import * as ddb from '@aws-appsync/utils/dynamodb'
 
 export function request(ctx) {
@@ -360,7 +360,7 @@ So far, you can create and retrieve `Post` objects in Amazon DynamoDB. Next, you
 
 1. In the **Schema** pane, modify the `Mutation` type to add a new `updatePost` mutation as follows:
 
-   ```
+   ```TypeScript
    type Mutation {
        updatePost(
            id: ID!,
@@ -385,7 +385,7 @@ So far, you can create and retrieve `Post` objects in Amazon DynamoDB. Next, you
 
 1. In the **Resolvers** pane on the right, find the newly created `updatePost` field on the `Mutation` type, then choose **Attach**. Create your new resolver using the snippet below:
 
-   ```
+   ```TypeScript
    import { util } from '@aws-appsync/utils';
    import * as ddb from '@aws-appsync/utils/dynamodb';
 
@@ -436,7 +436,7 @@ Let’s try updating the `Post` object with the new resolver.
 
 1. In the **Queries** pane, add the following mutation. You’ll also need to update the `id` argument to the value you noted down earlier:
 
-   ```
+   ```TypeScript
    mutation updatePost {
      updatePost(
        id:123
@@ -460,7 +460,7 @@ Let’s try updating the `Post` object with the new resolver.
 
 1. The updated post in Amazon DynamoDB should appear in the **Results** pane to the right of the **Queries** pane. It should look similar to the following:
 
-   ```
+   ```TypeScript
    {
      "data": {
        "updatePost": {
@@ -479,7 +479,7 @@ Let’s try updating the `Post` object with the new resolver.
 
 In this request, you asked AWS AppSync and Amazon DynamoDB to update the `title` and `content` fields only. All of the other fields were left alone (other than incrementing the `version` field). You set the `title` attribute to a new value and removed the `content` attribute from the post. The `author`, `url`, `ups`, and `downs` fields were left untouched. Try executing the mutation request again while leaving the request exactly as is. You should see a response similar to the following:
 
-```
+```TypeScript
 {
   "data": {
     "updatePost": null
@@ -524,7 +524,7 @@ The `Post` type contains `ups` and `downs` fields to enable the recording of upv
 
 1. In the **Schema** pane, modify the `Mutation` type and add the `DIRECTION` enum to add new vote mutations:
 
-   ```
+   ```TypeScript
    type Mutation {
        vote(id: ID!, direction: DIRECTION!): Post
        updatePost(
@@ -554,7 +554,7 @@ The `Post` type contains `ups` and `downs` fields to enable the recording of upv
 
 1. In the **Resolvers** pane on the right, find the newly created `vote` field on the `Mutation` type, and then choose **Attach**. Create a new resolver by creating and replacing the code with the following snippet:
 
-   ```
+   ```TypeScript
    import * as ddb from '@aws-appsync/utils/dynamodb';
 
    export function request(ctx) {
@@ -584,7 +584,7 @@ Now that the new resolvers have been set up, AWS AppSync knows how to translate 
 
 1. In the **Queries** pane, add the following mutation. You’ll also need to update the `id` argument to the value you noted down earlier:
 
-   ```
+   ```TypeScript
    mutation votePost {
      vote(id:123, direction: UP) {
        id
@@ -603,7 +603,7 @@ Now that the new resolvers have been set up, AWS AppSync knows how to translate 
 
 1. The updated post in Amazon DynamoDB should appear in the **Results** pane to the right of the **Queries** pane. It should look similar to the following:
 
-   ```
+   ```TypeScript
    {
      "data": {
        "vote": {
@@ -624,7 +624,7 @@ Now that the new resolvers have been set up, AWS AppSync knows how to translate 
 
 1. Change the query to call it with a different `DIRECTION`.
 
-   ```
+   ```TypeScript
    mutation votePost {
      vote(id:123, direction: DOWN) {
        id
@@ -654,7 +654,7 @@ Next, you'll want to create a mutation to delete a post. You’ll do this using 
 
 1. In the **Schema** pane, modify the `Mutation` type to add a new `deletePost` mutation:
 
-   ```
+   ```TypeScript
    type Mutation {
        deletePost(id: ID!, expectedVersion: Int): Post
        vote(id: ID!, direction: DIRECTION!): Post
@@ -680,7 +680,7 @@ Next, you'll want to create a mutation to delete a post. You’ll do this using 
 
 1. In the **Resolvers** pane on the right, find the newly created `delete` field in the `Mutation` type, then choose **Attach**. Create a new resolver using the following code:
 
-   ```
+   ```TypeScript
    import { util } from '@aws-appsync/utils'
 
    import { util } from '@aws-appsync/utils';
@@ -724,7 +724,7 @@ Now that the resolver has been set up, AWS AppSync knows how to translate an inc
 
 1. In the **Queries** pane, add the following mutation. You’ll also need to update the `id` argument to the value you noted down earlier:
 
-   ```
+   ```TypeScript
    mutation deletePost {
      deletePost(id:123) {
        id
@@ -743,7 +743,7 @@ Now that the resolver has been set up, AWS AppSync knows how to translate an inc
 
 1. The post is deleted from Amazon DynamoDB. Note that AWS AppSync returns the value of the item that was deleted from Amazon DynamoDB, which should appear in the **Results** pane to the right of the **Queries** pane. It should look similar to the following:
 
-   ```
+   ```TypeScript
    {
      "data": {
        "deletePost": {
@@ -764,7 +764,7 @@ Now that the resolver has been set up, AWS AppSync knows how to translate an inc
 
 1. The call still succeeds, but no value is returned:
 
-   ```
+   ```TypeScript
    {
      "data": {
        "deletePost": null
@@ -776,7 +776,7 @@ Now that the resolver has been set up, AWS AppSync knows how to translate an inc
 
 1. In the **Queries** pane, add the following mutation:
 
-   ```
+   ```TypeScript
    mutation addPost {
      addPost(
        id:123
@@ -801,7 +801,7 @@ Now that the resolver has been set up, AWS AppSync knows how to translate an inc
 
 1. The results of the newly created post should appear in the **Results** pane to the right of the **Queries** pane. Record the `id` of the newly created object because you'll need it in just a moment. It should look similar to the following:
 
-   ```
+   ```TypeScript
    {
      "data": {
        "addPost": {
@@ -820,7 +820,7 @@ Now that the resolver has been set up, AWS AppSync knows how to translate an inc
 
 1. Now, let’s try to delete that post with an illegal value for **expectedVersion**. In the **Queries** pane, add the following mutation. You’ll also need to update the `id` argument to the value you noted down earlier:
 
-   ```
+   ```TypeScript
    mutation deletePost {
      deletePost(
        id:123
@@ -840,7 +840,7 @@ Now that the resolver has been set up, AWS AppSync knows how to translate an inc
 
 1. Choose **Run** (the orange play button), then choose `deletePost`. The following result is returned:
 
-   ```
+   ```TypeScript
    {
      "data": {
        "deletePost": null
@@ -868,7 +868,7 @@ Now that the resolver has been set up, AWS AppSync knows how to translate an inc
 
 1. The request failed because the condition expression evaluates to `false`. The value for `version` of the post in Amazon DynamoDB doesn't match the `expectedValue` specified in the arguments. The current value of the object is returned in the `data` field in the `errors` section of the GraphQL response. Retry the request, but correct the `expectedVersion`:
 
-   ```
+   ```TypeScript
    mutation deletePost {
      deletePost(
        id:123
@@ -890,7 +890,7 @@ Now that the resolver has been set up, AWS AppSync knows how to translate an inc
 
    This time the request succeeds, and the value that was deleted from Amazon DynamoDB is returned:
 
-   ```
+   ```TypeScript
    {
      "data": {
        "deletePost": {
@@ -909,7 +909,7 @@ Now that the resolver has been set up, AWS AppSync knows how to translate an inc
 
 1. Choose **Run** again. The call still succeeds, but this time no value is returned because the post was already deleted in Amazon DynamoDB.
 
-   ```
+   ```TypeScript
    { "data": { "deletePost": null } }
    ```
 
@@ -924,7 +924,7 @@ So far, the API is only useful if you know the `id` of each post you want to loo
 
 1. In the **Schema** pane, modify the `Query` type to add a new `allPost` query as follows:
 
-   ```
+   ```TypeScript
    type Query {
        allPost(limit: Int, nextToken: String): PaginatedPosts!
        getPost(id: ID): Post
@@ -933,7 +933,7 @@ So far, the API is only useful if you know the `id` of each post you want to loo
 
 1. Add a new `PaginationPosts` type:
 
-   ```
+   ```TypeScript
    type PaginatedPosts {
        posts: [Post!]!
        nextToken: String
@@ -944,7 +944,7 @@ So far, the API is only useful if you know the `id` of each post you want to loo
 
 1. In the **Resolvers** pane on the right, find the newly created `allPost` field in the `Query` type, then choose **Attach**. Create a new resolver with the following code:
 
-   ```
+   ```TypeScript
    import * as ddb from '@aws-appsync/utils/dynamodb';
 
    export function request(ctx) {
@@ -977,7 +977,7 @@ Now that the resolver has been set up, AWS AppSync knows how to translate an inc
 
 1. In the **Queries** pane, add the following mutation:
 
-   ```
+   ```TypeScript
    mutation addPost {
      post1: addPost(id:1 author: "AUTHORNAME" title: "A series of posts, Volume 1" content: "Some content" url: "https://aws.amazon.com/appsync/" ) { title }
      post2: addPost(id:2 author: "AUTHORNAME" title: "A series of posts, Volume 2" content: "Some content" url: "https://aws.amazon.com/appsync/" ) { title }
@@ -995,7 +995,7 @@ Now that the resolver has been set up, AWS AppSync knows how to translate an inc
 
 1. Now, let’s scan the table, returning five results at a time. In the **Queries** pane, add the following query:
 
-   ```
+   ```TypeScript
    query allPost {
      allPost(limit: 5) {
        posts {
@@ -1011,7 +1011,7 @@ Now that the resolver has been set up, AWS AppSync knows how to translate an inc
 
    The first five posts should appear in the **Results** pane to the right of the **Queries** pane. It should look similar to the following:
 
-   ```
+   ```TypeScript
    {
      "data": {
        "allPost": {
@@ -1045,7 +1045,7 @@ Now that the resolver has been set up, AWS AppSync knows how to translate an inc
 
 1. You received five results and a `nextToken` that you can use to get the next set of results. Update the `allPost` query to include the `nextToken` from the previous set of results:
 
-   ```
+   ```TypeScript
    query allPost {
      allPost(
        limit: 5
@@ -1064,7 +1064,7 @@ Now that the resolver has been set up, AWS AppSync knows how to translate an inc
 
    The remaining four posts should appear in the **Results** pane to the right of the **Queries** pane. There is no `nextToken` in this set of results because you’ve paged through all nine posts with none remaining. It should look similar to the following:
 
-   ```
+   ```TypeScript
    {
      "data": {
        "allPost": {
@@ -1103,7 +1103,7 @@ In addition to scanning Amazon DynamoDB for all posts, you can also query Amazon
 
 1. In the **Schema** pane, modify the `Query` type to add a new `allPostsByAuthor` query as follows:
 
-   ```
+   ```TypeScript
    type Query {
        allPostsByAuthor(author: String!, limit: Int, nextToken: String): PaginatedPosts!
        allPost(limit: Int, nextToken: String): PaginatedPosts!
@@ -1117,7 +1117,7 @@ In addition to scanning Amazon DynamoDB for all posts, you can also query Amazon
 
 1. In the **Resolvers** pane on the right, find the newly created `allPostsByAuthor` field on the `Query` type, and then choose **Attach**. Create a resolver using the snippet below:
 
-   ```
+   ```TypeScript
    import * as ddb from '@aws-appsync/utils/dynamodb';
 
    export function request(ctx) {
@@ -1157,7 +1157,7 @@ Before this, however, let’s populate the table with some more posts, because e
 
 1. In the **Queries** pane, add the following mutation:
 
-   ```
+   ```TypeScript
    mutation addPost {
      post1: addPost(id:10 author: "Nadia" title: "The cutest dog in the world" content: "So cute. So very, very cute." url: "https://aws.amazon.com/appsync/" ) { author, title }
      post2: addPost(id:11 author: "Nadia" title: "Did you know...?" content: "AppSync works offline?" url: "https://aws.amazon.com/appsync/" ) { author, title }
@@ -1169,7 +1169,7 @@ Before this, however, let’s populate the table with some more posts, because e
 
 1. Now, let’s query the table, returning all posts authored by `Nadia`. In the **Queries** pane, add the following query:
 
-   ```
+   ```TypeScript
    query allPostsByAuthor {
      allPostsByAuthor(author: "Nadia") {
        posts {
@@ -1183,7 +1183,7 @@ Before this, however, let’s populate the table with some more posts, because e
 
 1. Choose **Run** (the orange play button), then choose `allPostsByAuthor`. All posts authored by `Nadia` should appear in the **Results** pane to the right of the **Queries** pane. It should look similar to the following:
 
-   ```
+   ```TypeScript
    {
      "data": {
        "allPostsByAuthor": {
@@ -1207,7 +1207,7 @@ Before this, however, let’s populate the table with some more posts, because e
 
 1. In the **Queries** pane, add the following query:
 
-   ```
+   ```TypeScript
    query allPostsByAuthor {
      allPostsByAuthor(
        author: "AUTHORNAME"
@@ -1224,7 +1224,7 @@ Before this, however, let’s populate the table with some more posts, because e
 
 1. Choose **Run** (the orange play button), then choose `allPostsByAuthor`. All posts authored by `AUTHORNAME` should appear in the **Results** pane to the right of the **Queries** pane. It should look similar to the following:
 
-   ```
+   ```TypeScript
    {
      "data": {
        "allPostsByAuthor": {
@@ -1258,7 +1258,7 @@ Before this, however, let’s populate the table with some more posts, because e
 
 1. Update the `nextToken` argument with the value returned from the previous query as follows:
 
-   ```
+   ```TypeScript
    query allPostsByAuthor {
      allPostsByAuthor(
        author: "AUTHORNAME"
@@ -1276,7 +1276,7 @@ Before this, however, let’s populate the table with some more posts, because e
 
 1. Choose **Run** (the orange play button), then choose `allPostsByAuthor`. The remaining posts authored by `AUTHORNAME` should appear in the **Results** pane to the right of the **Queries** pane. It should look similar to the following:
 
-   ```
+   ```TypeScript
    {
      "data": {
        "allPostsByAuthor": {
@@ -1315,7 +1315,7 @@ Up to this point, the `Post` type has been a flat key/value object. You can also
 
 1. In the **Schema** pane, modify the `Post` type to add a new `tags` field as follows:
 
-   ```
+   ```TypeScript
    type Post {
      id: ID!
      author: String
@@ -1331,7 +1331,7 @@ Up to this point, the `Post` type has been a flat key/value object. You can also
 
 1. In the **Schema** pane, modify the `Query` type to add a new `allPostsByTag` query as follows:
 
-   ```
+   ```TypeScript
    type Query {
      allPostsByTag(tag: String!, limit: Int, nextToken: String): PaginatedPosts!
      allPostsByAuthor(author: String!, limit: Int, nextToken: String): PaginatedPosts!
@@ -1342,7 +1342,7 @@ Up to this point, the `Post` type has been a flat key/value object. You can also
 
 1. In the **Schema** pane, modify the `Mutation` type to add new `addTag` and `removeTag` mutations as follows:
 
-   ```
+   ```TypeScript
    type Mutation {
      addTag(id: ID!, tag: String!): Post
      removeTag(id: ID!, tag: String!): Post
@@ -1370,7 +1370,7 @@ Up to this point, the `Post` type has been a flat key/value object. You can also
 
 1. In the **Resolvers** pane on the right, find the newly created `allPostsByTag` field on the `Query` type, and then choose **Attach**. Create your resolver using the snippet below:
 
-   ```
+   ```TypeScript
    import * as ddb from '@aws-appsync/utils/dynamodb';
 
    export function request(ctx) {
@@ -1390,7 +1390,7 @@ Up to this point, the `Post` type has been a flat key/value object. You can also
 **Note**
 Though the DynamoDB utils currently don't support set operations, you can still interact with sets by building the request yourself.
 
-   ```
+   ```TypeScript
    import { util } from '@aws-appsync/utils'
 
    export function request(ctx) {
@@ -1415,7 +1415,7 @@ Though the DynamoDB utils currently don't support set operations, you can still 
 
 1. Repeat this one more time for the `Mutation` field `removeTag` using the snippet below:
 
-   ```
+   ```TypeScript
    import { util } from '@aws-appsync/utils';
 
    export function request(ctx) {
@@ -1449,7 +1449,7 @@ Now that you’ve set up the resolvers, AWS AppSync knows how to translate incom
 
 1. In the **Queries** pane, add the following query:
 
-   ```
+   ```TypeScript
    query allPostsByAuthor {
      allPostsByAuthor(
        author: "Nadia"
@@ -1467,7 +1467,7 @@ Now that you’ve set up the resolvers, AWS AppSync knows how to translate incom
 
 1. All of Nadia’s posts should appear in the **Results** pane to the right of the **Queries** pane. It should look similar to the following:
 
-   ```
+   ```TypeScript
    {
      "data": {
        "allPostsByAuthor": {
@@ -1491,7 +1491,7 @@ Now that you’ve set up the resolvers, AWS AppSync knows how to translate incom
 
 1. In the **Queries** pane, add the following mutation. You’ll also need to update the `id` argument to the value you noted down earlier.
 
-   ```
+   ```TypeScript
    mutation addTag {
      addTag(id:10 tag: "dog") {
        id
@@ -1503,7 +1503,7 @@ Now that you’ve set up the resolvers, AWS AppSync knows how to translate incom
 
 1. Choose **Run** (the orange play button), then choose `addTag`. The post is updated with the new tag:
 
-   ```
+   ```TypeScript
    {
      "data": {
        "addTag": {
@@ -1519,7 +1519,7 @@ Now that you’ve set up the resolvers, AWS AppSync knows how to translate incom
 
 1. You can add more tags. Update the mutation to change the `tag` argument to `puppy`:
 
-   ```
+   ```TypeScript
    mutation addTag {
      addTag(id:10 tag: "puppy") {
        id
@@ -1531,7 +1531,7 @@ Now that you’ve set up the resolvers, AWS AppSync knows how to translate incom
 
 1. Choose **Run** (the orange play button), then choose `addTag`. The post is updated with the new tag:
 
-   ```
+   ```TypeScript
    {
      "data": {
        "addTag": {
@@ -1548,7 +1548,7 @@ Now that you’ve set up the resolvers, AWS AppSync knows how to translate incom
 
 1. You can also delete tags. In the **Queries** pane, add the following mutation. You’ll also need to update the `id` argument to the value you noted down earlier:
 
-   ```
+   ```TypeScript
    mutation removeTag {
      removeTag(id:10 tag: "puppy") {
        id
@@ -1560,7 +1560,7 @@ Now that you’ve set up the resolvers, AWS AppSync knows how to translate incom
 
 1. Choose **Run** (the orange play button), then choose `removeTag`. The post is updated and the `puppy` tag is deleted.
 
-   ```
+   ```TypeScript
    {
      "data": {
        "addTag": {
@@ -1576,7 +1576,7 @@ Now that you’ve set up the resolvers, AWS AppSync knows how to translate incom
 
 1. You can also search for all posts that have a tag. In the **Queries** pane, add the following query:
 
-   ```
+   ```TypeScript
    query allPostsByTag {
      allPostsByTag(tag: "dog") {
        posts {
@@ -1591,7 +1591,7 @@ Now that you’ve set up the resolvers, AWS AppSync knows how to translate incom
 
 1. Choose **Run** (the orange play button), then choose `allPostsByTag`. All posts that have the `dog` tag are returned as follows:
 
-   ```
+   ```TypeScript
    {
      "data": {
        "allPostsByTag": {

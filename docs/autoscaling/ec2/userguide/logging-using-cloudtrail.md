@@ -34,7 +34,7 @@ An event represents a single request from any source and includes information ab
 
 The following example shows a CloudTrail event that demonstrates the `CreateLaunchConfiguration` operation.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {

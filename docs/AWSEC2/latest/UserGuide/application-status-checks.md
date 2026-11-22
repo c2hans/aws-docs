@@ -150,7 +150,7 @@ Use the AWS CLI to create an application status check.
 
 To use AWS managed network paths, omit the `--health-check-paths` parameter and let AWS select source and destination subnets and security groups.
 
-```
+```bash
 aws ec2 create-application-status-check \
         --protocol https \
         --port 443 \
@@ -160,7 +160,7 @@ aws ec2 create-application-status-check \
 
 To use customer-managed network paths, include the `--health-check-paths` parameter. Each health check path contains a source (subnet and security group for the health check ENI) and one or more destinations (subnet and security group for the target instances).
 
-```
+```bash
 aws ec2 create-application-status-check \
         --protocol https \
         --port 443 \
@@ -194,7 +194,7 @@ Associate the check with the instances you want to monitor, either by instance I
 
 By instance ID:
 
-```
+```bash
 aws ec2 associate-application-status-check \
         --application-status-check-id asc-1234567890abcdef0 \
         --instance-ids i-0123456789abcdef0
@@ -202,7 +202,7 @@ aws ec2 associate-application-status-check \
 
 By tag:
 
-```
+```bash
 aws ec2 associate-application-status-check \
         --application-status-check-id asc-1234567890abcdef0 \
         --target-tag-associations Key=Environment,Value=production
@@ -210,7 +210,7 @@ aws ec2 associate-application-status-check \
 
 To associate with all instances in an Auto Scaling group, use the `aws:autoscaling:groupName` system tag:
 
-```
+```bash
 aws ec2 associate-application-status-check \
         --application-status-check-id asc-1234567890abcdef0 \
         --target-tag-associations Key=aws:autoscaling:groupName,Value={{my-asg}}
@@ -237,7 +237,7 @@ View the per-instance application health status.
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws ec2 describe-application-status \
         --instance-ids i-0123456789abcdef0
 ```
@@ -246,7 +246,7 @@ The response includes the overall application status and, for each associated ch
 
 Example response:
 
-```
+```JSON
 {
         "ApplicationStatuses": [
             {
@@ -357,7 +357,7 @@ Use suppression for bounded maintenance windows where you know the duration. Sup
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws ec2 enable-application-status-check-suppression \
         --instance-ids i-0123456789abcdef0 \
         --duration-seconds 3600
@@ -367,7 +367,7 @@ The response returns, for each instance, when suppression started and when it wi
 
 To resume checks before the suppression window expires:
 
-```
+```bash
 aws ec2 disable-application-status-check-suppression \
         --instance-ids i-0123456789abcdef0
 ```
@@ -388,7 +388,7 @@ For more information, see [Aggregation](#asc-aggregation).
 
 Use disassociation for longer-lived or indefinite removal.
 
-```
+```bash
 aws ec2 disassociate-application-status-check \
         --application-status-check-id asc-1234567890abcdef0 \
         --instance-ids i-0123456789abcdef0
@@ -418,7 +418,7 @@ You can validate a new application status check in production before it starts c
 
 1. Create the check with the aggregation setting set to `excluded`.
 
-   ```
+   ```bash
    aws ec2 create-application-status-check \
            --protocol https \
            --port 443 \
@@ -433,14 +433,14 @@ You can validate a new application status check in production before it starts c
 
 1. Use [describe-application-status](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-application-status.html) to verify the check is reporting the expected status and HTTP response code.
 
-   ```
+   ```bash
    aws ec2 describe-application-status \
            --instance-ids i-0123456789abcdef0
    ```
 
 1. If the check reports as expected, update the aggregation setting to `included` to make the check contribute to the overall status for the instance and drive Amazon EC2 Auto Scaling actions.
 
-   ```
+   ```bash
    aws ec2 modify-application-status-check \
            --application-status-check-id asc-1234567890abcdef0 \
            --aggregation included
@@ -458,7 +458,7 @@ For Availability Zone redundancy, you can run health checks from more than one A
 
 The following example creates a check with two health check paths whose sources are in different Availability Zones, both reaching the same destination instances.
 
-```
+```bash
 aws ec2 create-application-status-check \
         --protocol https \
         --port 443 \

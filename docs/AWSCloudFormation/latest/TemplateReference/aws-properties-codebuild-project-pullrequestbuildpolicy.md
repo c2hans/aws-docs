@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codebuild-project-pullrequestbuildpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[ApproverRoles](#cfn-codebuild-project-pullrequestbuildpolicy-approverroles)" : {{[ String, ... ]}},
   "[RequiresCommentApproval](#cfn-codebuild-project-pullrequestbuildpolicy-requirescommentapproval)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codebuild-project-pullrequestbuildpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [ApproverRoles](#cfn-codebuild-project-pullrequestbuildpolicy-approverroles): {{
     - String}}
   [RequiresCommentApproval](#cfn-codebuild-project-pullrequestbuildpolicy-requirescommentapproval): {{String}}

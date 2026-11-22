@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-channel-topicconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[RecordConverter](#cfn-msk-channel-topicconfiguration-recordconverter)" : {{RecordConverter}},
   "[RecordSchema](#cfn-msk-channel-topicconfiguration-recordschema)" : {{RecordSchema}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-channel-topicconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [RecordConverter](#cfn-msk-channel-topicconfiguration-recordconverter): {{
     RecordConverter}}
   [RecordSchema](#cfn-msk-channel-topicconfiguration-recordschema): {{

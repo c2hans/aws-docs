@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iot-domainconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoT::DomainConfiguration",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iot-domainconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoT::DomainConfiguration
 Properties:
   [ApplicationProtocol](#cfn-iot-domainconfiguration-applicationprotocol): {{String}}

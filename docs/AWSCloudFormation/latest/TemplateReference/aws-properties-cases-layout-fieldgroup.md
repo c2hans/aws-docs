@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cases-layout-fieldgroup-syntax.json"></a>
 
-```
+```json
 {
   "[Fields](#cfn-cases-layout-fieldgroup-fields)" : {{[ FieldItem, ... ]}},
   "[Name](#cfn-cases-layout-fieldgroup-name)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cases-layout-fieldgroup-syntax.yaml"></a>
 
-```
+```yaml
   [Fields](#cfn-cases-layout-fieldgroup-fields): {{
     - FieldItem}}
   [Name](#cfn-cases-layout-fieldgroup-name): {{String}}

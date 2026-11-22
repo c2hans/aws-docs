@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-connectorprofile-redshiftconnectorprofileproperties-syntax.json"></a>
 
-```
+```json
 {
   "[BucketName](#cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-bucketname)" : {{String}},
   "[BucketPrefix](#cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-bucketprefix)" : {{String}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-connectorprofile-redshiftconnectorprofileproperties-syntax.yaml"></a>
 
-```
+```yaml
   [BucketName](#cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-bucketname): {{String}}
   [BucketPrefix](#cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-bucketprefix): {{String}}
   [ClusterIdentifier](#cfn-appflow-connectorprofile-redshiftconnectorprofileproperties-clusteridentifier): {{String}}

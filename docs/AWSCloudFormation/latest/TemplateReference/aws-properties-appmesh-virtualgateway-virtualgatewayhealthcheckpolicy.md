@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-virtualgateway-virtualgatewayhealthcheckpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[HealthyThreshold](#cfn-appmesh-virtualgateway-virtualgatewayhealthcheckpolicy-healthythreshold)" : {{Integer}},
   "[IntervalMillis](#cfn-appmesh-virtualgateway-virtualgatewayhealthcheckpolicy-intervalmillis)" : {{Integer}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-virtualgateway-virtualgatewayhealthcheckpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [HealthyThreshold](#cfn-appmesh-virtualgateway-virtualgatewayhealthcheckpolicy-healthythreshold): {{Integer}}
   [IntervalMillis](#cfn-appmesh-virtualgateway-virtualgatewayhealthcheckpolicy-intervalmillis): {{Integer}}
   [Path](#cfn-appmesh-virtualgateway-virtualgatewayhealthcheckpolicy-path): {{String}}

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-loggingconfiguration-loggingfilter-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultBehavior](#cfn-wafv2-loggingconfiguration-loggingfilter-defaultbehavior)" : {{String}},
   "[Filters](#cfn-wafv2-loggingconfiguration-loggingfilter-filters)" : {{[ Filter, ... ]}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-loggingconfiguration-loggingfilter-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultBehavior](#cfn-wafv2-loggingconfiguration-loggingfilter-defaultbehavior): {{String}}
   [Filters](#cfn-wafv2-loggingconfiguration-loggingfilter-filters): {{
     - Filter}}

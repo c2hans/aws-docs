@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-function-s3filesconfig-syntax.json"></a>
 
-```
+```json
 {
   "[DirectS3Read](#cfn-lambda-function-s3filesconfig-directs3read)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-function-s3filesconfig-syntax.yaml"></a>
 
-```
+```yaml
   [DirectS3Read](#cfn-lambda-function-s3filesconfig-directs3read): {{String}}
 ```
 

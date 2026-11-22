@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-cluster-clusterfsxopenzfsconfig-syntax.json"></a>
 
-```
+```json
 {
   "[DnsName](#cfn-sagemaker-cluster-clusterfsxopenzfsconfig-dnsname)" : {{String}},
   "[MountPath](#cfn-sagemaker-cluster-clusterfsxopenzfsconfig-mountpath)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-cluster-clusterfsxopenzfsconfig-syntax.yaml"></a>
 
-```
+```yaml
   [DnsName](#cfn-sagemaker-cluster-clusterfsxopenzfsconfig-dnsname): {{String}}
   [MountPath](#cfn-sagemaker-cluster-clusterfsxopenzfsconfig-mountpath): {{String}}
 ```

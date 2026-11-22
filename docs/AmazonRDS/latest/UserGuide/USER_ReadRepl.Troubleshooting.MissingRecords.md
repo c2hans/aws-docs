@@ -57,7 +57,7 @@ The `end_log_pos` value indicates the end position of the failing event. In the 
 
 Use the `mysqlbinlog` utility to download and examine the relevant binary log. Use the endpoint for the primary instance.
 
-```
+```bash
 $ mysqlbinlog --read-from-remote-server \
 --host=<rds-endpoint> \
 --port=3306 \
@@ -96,7 +96,7 @@ Can't find record in 'users', Error_code: 1032; handler error HA_ERR_KEY_NOT_FOU
 
 To verify that the row is missing, check if the specific row exists on the replica:
 
-```
+```sql
 SELECT 1 FROM test_replication.users WHERE id=1;
 Empty set (0.00 sec)
 ```

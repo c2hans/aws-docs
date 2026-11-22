@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cognito-userpoolusertogroupattachment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Cognito::UserPoolUserToGroupAttachment",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cognito-userpoolusertogroupattachment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Cognito::UserPoolUserToGroupAttachment
 Properties:
   [GroupName](#cfn-cognito-userpoolusertogroupattachment-groupname): {{String}}
@@ -94,7 +94,7 @@ The following template adds the users "testuser1" and "testuser2" to the user gr
 #### JSON
 <a name="aws-resource-cognito-userpoolusertogroupattachment--examples--Adding_users_to_a_group--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Add a user to a group in an Amazon Cognito user pool\n",
@@ -122,7 +122,7 @@ The following template adds the users "testuser1" and "testuser2" to the user gr
 #### YAML
 <a name="aws-resource-cognito-userpoolusertogroupattachment--examples--Adding_users_to_a_group--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 
 Description: |

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-events-connection-oauthparameters-syntax.json"></a>
 
-```
+```json
 {
   "[AuthorizationEndpoint](#cfn-events-connection-oauthparameters-authorizationendpoint)" : {{String}},
   "[ClientParameters](#cfn-events-connection-oauthparameters-clientparameters)" : {{ClientParameters}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-events-connection-oauthparameters-syntax.yaml"></a>
 
-```
+```yaml
   [AuthorizationEndpoint](#cfn-events-connection-oauthparameters-authorizationendpoint): {{String}}
   [ClientParameters](#cfn-events-connection-oauthparameters-clientparameters): {{
     ClientParameters}}

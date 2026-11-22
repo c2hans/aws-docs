@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-daemontaskdefinition-daemoncontainerdefinition-syntax.json"></a>
 
-```
+```json
 {
   "[Command](#cfn-ecs-daemontaskdefinition-daemoncontainerdefinition-command)" : {{[ String, ... ]}},
   "[Cpu](#cfn-ecs-daemontaskdefinition-daemoncontainerdefinition-cpu)" : {{Integer}},
@@ -53,7 +53,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-daemontaskdefinition-daemoncontainerdefinition-syntax.yaml"></a>
 
-```
+```yaml
   [Command](#cfn-ecs-daemontaskdefinition-daemoncontainerdefinition-command): {{
     - String}}
   [Cpu](#cfn-ecs-daemontaskdefinition-daemoncontainerdefinition-cpu): {{Integer}}

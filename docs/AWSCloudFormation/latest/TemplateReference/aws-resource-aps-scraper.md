@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-aps-scraper-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::APS::Scraper",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-aps-scraper-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::APS::Scraper
 Properties:
   [Alias](#cfn-aps-scraper-alias): {{String}}
@@ -150,7 +150,7 @@ The following example creates a scraper, showing how to pass in configuration. Y
 #### YAML
 <a name="aws-resource-aps-scraper--examples--Amazon_Managed_Service_for_Prometheus_scraper_example--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09 Resources: Scraper: Type:
                 AWS::APS::Scraper UpdateReplacePolicy: Retain DeletionPolicy: Delete Properties:
                 Alias: "Scraper-Test" Source: EksConfiguration: ClusterArn:
@@ -184,7 +184,7 @@ AWSTemplateFormatVersion: 2010-09-09 Resources: Scraper: Type:
 #### JSON
 <a name="aws-resource-aps-scraper--examples--Amazon_Managed_Service_for_Prometheus_scraper_example--json"></a>
 
-```
+```json
 { "CreateInputs": { "Alias": "Scraper-Test",
                 "ScrapeConfiguration": { "ConfigurationBlob": "global:\n scrape_interval: 30s\n #
                 external_labels:\n # clusterArn: {cluster-arn}\nscrape_configs:\n # pod metrics\n -

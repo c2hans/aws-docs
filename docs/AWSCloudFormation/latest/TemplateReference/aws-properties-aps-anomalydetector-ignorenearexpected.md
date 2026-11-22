@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-aps-anomalydetector-ignorenearexpected-syntax.json"></a>
 
-```
+```json
 {
   "[Amount](#cfn-aps-anomalydetector-ignorenearexpected-amount)" : {{Number}},
   "[Ratio](#cfn-aps-anomalydetector-ignorenearexpected-ratio)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-aps-anomalydetector-ignorenearexpected-syntax.yaml"></a>
 
-```
+```yaml
   [Amount](#cfn-aps-anomalydetector-ignorenearexpected-amount): {{Number}}
   [Ratio](#cfn-aps-anomalydetector-ignorenearexpected-ratio): {{Number}}
 ```

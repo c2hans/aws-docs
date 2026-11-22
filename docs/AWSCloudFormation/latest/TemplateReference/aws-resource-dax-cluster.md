@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-dax-cluster-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DAX::Cluster",
   "Properties" : {
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-dax-cluster-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DAX::Cluster
 Properties:
   [AvailabilityZones](#cfn-dax-cluster-availabilityzones): {{
@@ -255,7 +255,7 @@ The following example creates a DAX cluster.
 #### JSON
 <a name="aws-resource-dax-cluster--examples--Create_Cluster--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "Create a DAX cluster",
@@ -330,7 +330,7 @@ The following example creates a DAX cluster.
 #### YAML
 <a name="aws-resource-dax-cluster--examples--Create_Cluster--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Description: "Create a DAX cluster"
 Resources:

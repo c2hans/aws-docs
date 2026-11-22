@@ -62,7 +62,7 @@ The following is the Jira JSON schema and examples for the configuration propert
 
 The following is the Jira JSON schema for the configuration property for CloudFormation
 
-```
+```json
 {
   "type": "object",
   "properties": {
@@ -388,7 +388,7 @@ The following is the Jira JSON schema for the configuration property for CloudFo
 
 The following is the Jira JSON schema example for the configuration property for CloudFormation
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "CloudFormation JIRA Data Source Template",
@@ -496,7 +496,7 @@ The following is the Jira YAML schema and examples for the configuration propert
 
 The following is the Jira YAML schema for the configuration property for CloudFormation.
 
-```
+```yaml
 type: object
 properties:
   type:
@@ -743,7 +743,7 @@ required:
 
 The following is the Jira YAML example for the Configuration property for CloudFormation:
 
-```
+```yaml
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "CloudFormation JIRA Data Source Template",

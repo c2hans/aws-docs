@@ -17,7 +17,7 @@ When Amazon EC2 is going to interrupt your Spot Instance, it emits an event two 
 
 The following is an example of the event for Spot Instance interruption. The possible values for `instance-action` are `hibernate`, `stop`, or `terminate`.
 
-```
+```json
 {
     "version": "0",
     "id": "{{12345678-1234-1234-1234-123456789012}}",
@@ -47,7 +47,7 @@ If your Spot Instance is marked to be stopped or terminated by Amazon EC2, the `
 ------
 #### [ Linux ]
 
-```
+```bash
 TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` \
     && curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/spot/instance-action
 ```
@@ -55,7 +55,7 @@ TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metad
 ------
 #### [ Windows ]
 
-```
+```powershell
 [string]$token = Invoke-RestMethod `
     -Headers @{"X-aws-ec2-metadata-token-ttl-seconds" = "21600"} `
     -Method PUT -Uri http://169.254.169.254/latest/meta-data/spot/instance-action
@@ -65,13 +65,13 @@ TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metad
 
  The following example output indicates the time at which this instance will be stopped.
 
-```
+```json
 {"action": "stop", "time": "2017-09-18T08:22:00Z"}
 ```
 
 The following example output indicates the time at which this instance will be terminated.
 
-```
+```json
 {"action": "terminate", "time": "2017-09-18T08:22:00Z"}
 ```
 
@@ -90,7 +90,7 @@ If your Spot Instance is marked for termination by Amazon EC2 (either due to a S
 ------
 #### [ Linux ]
 
-```
+```bash
 TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"`
 if curl -H "X-aws-ec2-metadata-token: $TOKEN" -s http://169.254.169.254/latest/meta-data/spot/termination-time | grep -q .*T.*Z; then echo termination_scheduled; fi
 ```
@@ -98,7 +98,7 @@ if curl -H "X-aws-ec2-metadata-token: $TOKEN" -s http://169.254.169.254/latest/m
 ------
 #### [ Windows ]
 
-```
+```powershell
 [string]$token = Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token-ttl-seconds" = "21600"} -Method PUT -Uri http://169.254.169.254/latest/meta-data/spot/termination-time
 ```
 
@@ -106,7 +106,7 @@ if curl -H "X-aws-ec2-metadata-token: $TOKEN" -s http://169.254.169.254/latest/m
 
 The following is example output.
 
-```
+```bash
 2015-01-05T18:02:00Z
 ```
 

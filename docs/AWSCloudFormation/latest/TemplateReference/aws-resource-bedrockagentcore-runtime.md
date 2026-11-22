@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-bedrockagentcore-runtime-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::BedrockAgentCore::Runtime",
   "Properties" : {
@@ -33,11 +33,13 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[Description](#cfn-bedrockagentcore-runtime-description)" : {{String}},
       "[EnvironmentVariables](#cfn-bedrockagentcore-runtime-environmentvariables)" : {{{{{Key}}: {{Value}}, ...}}},
       "[FilesystemConfigurations](#cfn-bedrockagentcore-runtime-filesystemconfigurations)" : {{[ FilesystemConfiguration, ... ]}},
+      "[HooksConfiguration](#cfn-bedrockagentcore-runtime-hooksconfiguration)" : {{RuntimeHooksConfiguration}},
       "[LifecycleConfiguration](#cfn-bedrockagentcore-runtime-lifecycleconfiguration)" : {{LifecycleConfiguration}},
       "[NetworkConfiguration](#cfn-bedrockagentcore-runtime-networkconfiguration)" : {{NetworkConfiguration}},
       "[PlatformVersion](#cfn-bedrockagentcore-runtime-platformversion)" : {{String}},
       "[ProtocolConfiguration](#cfn-bedrockagentcore-runtime-protocolconfiguration)" : {{String}},
       "[RequestHeaderConfiguration](#cfn-bedrockagentcore-runtime-requestheaderconfiguration)" : {{RequestHeaderConfiguration}},
+      "[ResourceConfigurations](#cfn-bedrockagentcore-runtime-resourceconfigurations)" : {{[ ResourceConfiguration, ... ]}},
       "[RoleArn](#cfn-bedrockagentcore-runtime-rolearn)" : {{String}},
       "[Tags](#cfn-bedrockagentcore-runtime-tags)" : {{{{{Key}}: {{Value}}, ...}}}
     }
@@ -47,7 +49,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-bedrockagentcore-runtime-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::BedrockAgentCore::Runtime
 Properties:
   [AgentRuntimeArtifact](#cfn-bedrockagentcore-runtime-agentruntimeartifact): {{
@@ -62,6 +64,8 @@ Properties:
     {{Key}}: {{Value}}}}
   [FilesystemConfigurations](#cfn-bedrockagentcore-runtime-filesystemconfigurations): {{
     - FilesystemConfiguration}}
+  [HooksConfiguration](#cfn-bedrockagentcore-runtime-hooksconfiguration): {{
+    RuntimeHooksConfiguration}}
   [LifecycleConfiguration](#cfn-bedrockagentcore-runtime-lifecycleconfiguration): {{
     LifecycleConfiguration}}
   [NetworkConfiguration](#cfn-bedrockagentcore-runtime-networkconfiguration): {{
@@ -70,6 +74,8 @@ Properties:
   [ProtocolConfiguration](#cfn-bedrockagentcore-runtime-protocolconfiguration): {{String}}
   [RequestHeaderConfiguration](#cfn-bedrockagentcore-runtime-requestheaderconfiguration): {{
     RequestHeaderConfiguration}}
+  [ResourceConfigurations](#cfn-bedrockagentcore-runtime-resourceconfigurations): {{
+    - ResourceConfiguration}}
   [RoleArn](#cfn-bedrockagentcore-runtime-rolearn): {{String}}
   [Tags](#cfn-bedrockagentcore-runtime-tags): {{
     {{Key}}: {{Value}}}}
@@ -127,6 +133,12 @@ The filesystem configurations for the runtime environment.
 *Maximum*: `5`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`HooksConfiguration`  <a name="cfn-bedrockagentcore-runtime-hooksconfiguration"></a>
+Property description not available.
+*Required*: No
+*Type*: [RuntimeHooksConfiguration](aws-properties-bedrockagentcore-runtime-runtimehooksconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `LifecycleConfiguration`  <a name="cfn-bedrockagentcore-runtime-lifecycleconfiguration"></a>
 The lifecycle configuration for the AgentCore Runtime.
 *Required*: No
@@ -159,6 +171,14 @@ The protocol configuration for an agent runtime. This structure defines how the 
 Configuration for HTTP request headers that will be passed through to the runtime.
 *Required*: No
 *Type*: [RequestHeaderConfiguration](aws-properties-bedrockagentcore-runtime-requestheaderconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ResourceConfigurations`  <a name="cfn-bedrockagentcore-runtime-resourceconfigurations"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [ResourceConfiguration](aws-properties-bedrockagentcore-runtime-resourceconfiguration.md)
+*Minimum*: `0`
+*Maximum*: `1`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `RoleArn`  <a name="cfn-bedrockagentcore-runtime-rolearn"></a>

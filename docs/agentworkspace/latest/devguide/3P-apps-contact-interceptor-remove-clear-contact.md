@@ -8,7 +8,7 @@ Unregisters an interceptor that you registered with `addClearContactInterceptor`
 
 **Signature**
 
-```
+```typescript
 removeClearContactInterceptor(
   interceptor: Interceptor<ContactInterceptorContext>,
   contactId?: string
@@ -17,7 +17,7 @@ removeClearContactInterceptor(
 
 **Usage**
 
-```
+```typescript
 await service.removeClearContactInterceptor(myInterceptor);
 ```
 

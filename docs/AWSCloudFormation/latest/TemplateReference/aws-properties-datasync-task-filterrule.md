@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datasync-task-filterrule-syntax.json"></a>
 
-```
+```json
 {
   "[FilterType](#cfn-datasync-task-filterrule-filtertype)" : {{String}},
   "[Value](#cfn-datasync-task-filterrule-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datasync-task-filterrule-syntax.yaml"></a>
 
-```
+```yaml
   [FilterType](#cfn-datasync-task-filterrule-filtertype): {{String}}
   [Value](#cfn-datasync-task-filterrule-value): {{String}}
 ```

@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cognito-managedloginbranding-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Cognito::ManagedLoginBranding",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cognito-managedloginbranding-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Cognito::ManagedLoginBranding
 Properties:
   [Assets](#cfn-cognito-managedloginbranding-assets): {{
@@ -135,7 +135,7 @@ The following example creates a branding style for the requested app client.
 #### JSON
 <a name="aws-resource-cognito-managedloginbranding--examples--Creating_a_new_branding_style_for_an_app_client--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Provision a managed login branding style to a user pool app client\n",
@@ -616,7 +616,7 @@ The following example creates a branding style for the requested app client.
 #### YAML
 <a name="aws-resource-cognito-managedloginbranding--examples--Creating_a_new_branding_style_for_an_app_client--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 
 Description: |

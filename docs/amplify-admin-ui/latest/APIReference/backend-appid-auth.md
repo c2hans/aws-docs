@@ -63,7 +63,7 @@ Enables CORS by returning the correct headers.
 #### POST schema
 <a name="backend-appid-auth-request-body-post-example"></a>
 
-```
+```json
 {
   "resourceConfig": {
     "userPoolConfigs": {
@@ -137,7 +137,7 @@ Enables CORS by returning the correct headers.
 #### BackendAuthRespObj schema
 <a name="backend-appid-auth-response-body-backendauthrespobj-example"></a>
 
-```
+```json
 {
   "jobId": "string",
   "appId": "string",
@@ -151,7 +151,7 @@ Enables CORS by returning the correct headers.
 #### BadRequestException schema
 <a name="backend-appid-auth-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -160,7 +160,7 @@ Enables CORS by returning the correct headers.
 #### NotFoundException schema
 <a name="backend-appid-auth-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -170,7 +170,7 @@ Enables CORS by returning the correct headers.
 #### LimitExceededException schema
 <a name="backend-appid-auth-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"
@@ -180,7 +180,7 @@ Enables CORS by returning the correct headers.
 #### InternalServiceException schema
 <a name="backend-appid-auth-response-body-internalserviceexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

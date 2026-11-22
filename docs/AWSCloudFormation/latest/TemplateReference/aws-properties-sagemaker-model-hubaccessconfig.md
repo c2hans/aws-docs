@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-model-hubaccessconfig-syntax.json"></a>
 
-```
+```json
 {
   "[HubContentArn](#cfn-sagemaker-model-hubaccessconfig-hubcontentarn)" : {{String}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-model-hubaccessconfig-syntax.yaml"></a>
 
-```
+```yaml
   [HubContentArn](#cfn-sagemaker-model-hubaccessconfig-hubcontentarn): {{String}}
 ```
 

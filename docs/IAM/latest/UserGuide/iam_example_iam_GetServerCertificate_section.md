@@ -12,7 +12,7 @@ The following code examples show how to use `GetServerCertificate`.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/iam#code-examples).
 
-```
+```cpp
 bool AwsDoc::IAM::getServerCertificate(const Aws::String &certificateName,
                                        const Aws::Client::ClientConfiguration &clientConfig) {
     Aws::IAM::IAMClient iam(clientConfig);
@@ -86,7 +86,7 @@ For more information, see [Managing server certificates in IAM](https://docs.aws
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 Get a server certificate.
 
-```
+```javascript
 import { GetServerCertificateCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -112,7 +112,7 @@ export const getServerCertificate = async (certName) => {
 **SDK for JavaScript (v2)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/iam#code-examples).
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -141,7 +141,7 @@ iam.getServerCertificate(
 **Tools for PowerShell V4**
 **Example 1: This example retrieves details about the server certificate named `MyServerCertificate`. You can find the certificate details in the `CertificateBody` and `ServerCertificateMetadata` properties.**
 
-```
+```powershell
 $result = Get-IAMServerCertificate -ServerCertificateName MyServerCertificate
 $result | format-list
 ```
@@ -168,7 +168,7 @@ CertificateChain          :
 ServerCertificateMetadata : Amazon.IdentityManagement.Model.ServerCertificateMetadata
 ```
 
-```
+```powershell
 $result.ServerCertificateMetadata
 ```
 **Output:**
@@ -186,7 +186,7 @@ UploadDate            : 4/21/2015 11:14:16 AM
 **Tools for PowerShell V5**
 **Example 1: This example retrieves details about the server certificate named `MyServerCertificate`. You can find the certificate details in the `CertificateBody` and `ServerCertificateMetadata` properties.**
 
-```
+```powershell
 $result = Get-IAMServerCertificate -ServerCertificateName MyServerCertificate
 $result | format-list
 ```
@@ -213,7 +213,7 @@ CertificateChain          :
 ServerCertificateMetadata : Amazon.IdentityManagement.Model.ServerCertificateMetadata
 ```
 
-```
+```powershell
 $result.ServerCertificateMetadata
 ```
 **Output:**

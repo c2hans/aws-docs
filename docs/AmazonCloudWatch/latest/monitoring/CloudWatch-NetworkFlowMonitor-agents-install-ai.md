@@ -19,7 +19,7 @@ A skill is a curated package of instructions and reference materials that helps 
 
 Use the AWS CLI to install the skill for your agent. For more information about the install command, see [Using the AWS CLI](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html) in the *AWS Agent Toolkit User Guide*.
 
-```
+```bash
 aws agent-toolkit add-skill --skill-name aws-network-monitoring
 ```
 

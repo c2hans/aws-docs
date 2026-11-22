@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackage-originendpoint-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-mediapackage-originendpoint-tag-key)" : {{String}},
   "[Value](#cfn-mediapackage-originendpoint-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackage-originendpoint-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-mediapackage-originendpoint-tag-key): {{String}}
   [Value](#cfn-mediapackage-originendpoint-tag-value): {{String}}
 ```

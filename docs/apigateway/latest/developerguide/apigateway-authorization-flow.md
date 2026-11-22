@@ -27,7 +27,7 @@ The following is an example of such a resource policy.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -62,7 +62,7 @@ The following example resource policy allows calls only from the VPC endpoint wh
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -103,7 +103,7 @@ The following is an example of a cross-account resource policy. Assuming the IAM
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -140,7 +140,7 @@ The following is an example of a resource policy that allows calls only from spe
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

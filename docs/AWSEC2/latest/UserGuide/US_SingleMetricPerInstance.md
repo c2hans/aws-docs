@@ -29,7 +29,7 @@ You can use the AWS Management Console or the AWS CLI to get statistics for a sp
 **To get the CPU utilization for a specific instance (AWS CLI)**
 Use the following [get-metric-statistics](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/get-metric-statistics.html) command to get the **CPUUtilization** metric for the specified instance, using the specified period and time interval:
 
-```
+```bash
 aws cloudwatch get-metric-statistics --namespace AWS/EC2 --metric-name CPUUtilization  --period 3600 \
 --statistics Maximum --dimensions Name=InstanceId,Value={{i-1234567890abcdef0}} \
 --start-time {{2022-10-18T23:18:00}} --end-time {{2022-10-19T23:18:00}}
@@ -37,7 +37,7 @@ aws cloudwatch get-metric-statistics --namespace AWS/EC2 --metric-name CPUUtiliz
 
 The following is example output. Each value represents the maximum CPU utilization percentage for a single EC2 instance.
 
-```
+```json
 {
     "Datapoints": [
         {

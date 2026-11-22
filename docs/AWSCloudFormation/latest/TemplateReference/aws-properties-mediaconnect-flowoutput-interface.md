@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-flowoutput-interface-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-mediaconnect-flowoutput-interface-name)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-flowoutput-interface-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-mediaconnect-flowoutput-interface-name): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cognito-userpoolidentityprovider-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Cognito::UserPoolIdentityProvider",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cognito-userpoolidentityprovider-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Cognito::UserPoolIdentityProvider
 Properties:
   [AttributeMapping](#cfn-cognito-userpoolidentityprovider-attributemapping): {{
@@ -151,7 +151,7 @@ The following example creates a Login with Amazon identity provider in the refer
 #### JSON
 <a name="aws-resource-cognito-userpoolidentityprovider--examples--Creating_a_new_Login_with_Amazon_identity_provider--json"></a>
 
-```
+```json
 {
   "UserPoolIdentityProvider": {
     "Type": "AWS::Cognito::UserPoolIdentityProvider",
@@ -177,7 +177,7 @@ The following example creates a Login with Amazon identity provider in the refer
 #### YAML
 <a name="aws-resource-cognito-userpoolidentityprovider--examples--Creating_a_new_Login_with_Amazon_identity_provider--yaml"></a>
 
-```
+```yaml
 UserPoolIdentityProvider:
   Type: AWS::Cognito::UserPoolIdentityProvider
   Properties:
@@ -200,7 +200,7 @@ The following example creates a Google identity provider in the referenced user 
 #### JSON
 <a name="aws-resource-cognito-userpoolidentityprovider--examples--Creating_a_new_Google_identity_provider--json"></a>
 
-```
+```json
 {
   "UserPoolIdentityProvider": {
     "Type": "AWS::Cognito::UserPoolIdentityProvider",
@@ -226,7 +226,7 @@ The following example creates a Google identity provider in the referenced user 
 #### YAML
 <a name="aws-resource-cognito-userpoolidentityprovider--examples--Creating_a_new_Google_identity_provider--yaml"></a>
 
-```
+```yaml
 UserPoolIdentityProvider:
   Type: AWS::Cognito::UserPoolIdentityProvider
   Properties:
@@ -249,7 +249,7 @@ The following example creates a Facebook identity provider in the referenced use
 #### JSON
 <a name="aws-resource-cognito-userpoolidentityprovider--examples--Creating_a_new_Facebook_identity_provider--json"></a>
 
-```
+```json
 {
   "UserPoolIdentityProvider": {
     "Type": "AWS::Cognito::UserPoolIdentityProvider",
@@ -275,7 +275,7 @@ The following example creates a Facebook identity provider in the referenced use
 #### YAML
 <a name="aws-resource-cognito-userpoolidentityprovider--examples--Creating_a_new_Facebook_identity_provider--yaml"></a>
 
-```
+```yaml
 UserPoolIdentityProvider:
   Type: AWS::Cognito::UserPoolIdentityProvider
   Properties:
@@ -298,7 +298,7 @@ The following example creates a Sign in with Apple identity provider in the refe
 #### JSON
 <a name="aws-resource-cognito-userpoolidentityprovider--examples--Creating_a_new_Sign_in_with_Apple_identity_provider--json"></a>
 
-```
+```json
 {
   "UserPoolIdentityProvider": {
     "Type": "AWS::Cognito::UserPoolIdentityProvider",
@@ -326,7 +326,7 @@ The following example creates a Sign in with Apple identity provider in the refe
 #### YAML
 <a name="aws-resource-cognito-userpoolidentityprovider--examples--Creating_a_new_Sign_in_with_Apple_identity_provider--yaml"></a>
 
-```
+```yaml
 UserPoolIdentityProvider:
   Type: AWS::Cognito::UserPoolIdentityProvider
   Properties:
@@ -351,7 +351,7 @@ The following example creates the OIDC identity provider "YourOIDCProviderName" 
 #### JSON
 <a name="aws-resource-cognito-userpoolidentityprovider--examples--Creating_a_new_OIDC_identity_provider--json"></a>
 
-```
+```json
 {
   "UserPoolIdentityProvider": {
     "Type": "AWS::Cognito::UserPoolIdentityProvider",
@@ -382,7 +382,7 @@ The following example creates the OIDC identity provider "YourOIDCProviderName" 
 #### YAML
 <a name="aws-resource-cognito-userpoolidentityprovider--examples--Creating_a_new_OIDC_identity_provider--yaml"></a>
 
-```
+```yaml
 UserPoolIdentityProvider:
   Type: AWS::Cognito::UserPoolIdentityProvider
   Properties:
@@ -409,7 +409,7 @@ The following example creates a SAML identity provider "YourProviderName" in the
 #### JSON
 <a name="aws-resource-cognito-userpoolidentityprovider--examples--Creating_a_new_SAML_identity_provider--json"></a>
 
-```
+```json
 {
    "UserPoolIdentityProvider": {
       "Type": "AWS::Cognito::UserPoolIdentityProvider",
@@ -434,7 +434,7 @@ The following example creates a SAML identity provider "YourProviderName" in the
 #### YAML
 <a name="aws-resource-cognito-userpoolidentityprovider--examples--Creating_a_new_SAML_identity_provider--yaml"></a>
 
-```
+```yaml
 UserPoolIdentityProvider:
   Type: AWS::Cognito::UserPoolIdentityProvider
   Properties:

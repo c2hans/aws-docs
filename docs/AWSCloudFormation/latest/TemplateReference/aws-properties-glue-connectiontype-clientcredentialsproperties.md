@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-connectiontype-clientcredentialsproperties-syntax.json"></a>
 
-```
+```json
 {
   "[ClientId](#cfn-glue-connectiontype-clientcredentialsproperties-clientid)" : {{SecretConnectorProperty}},
   "[ClientSecret](#cfn-glue-connectiontype-clientcredentialsproperties-clientsecret)" : {{SecretConnectorProperty}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-connectiontype-clientcredentialsproperties-syntax.yaml"></a>
 
-```
+```yaml
   [ClientId](#cfn-glue-connectiontype-clientcredentialsproperties-clientid): {{
     SecretConnectorProperty}}
   [ClientSecret](#cfn-glue-connectiontype-clientcredentialsproperties-clientsecret): {{

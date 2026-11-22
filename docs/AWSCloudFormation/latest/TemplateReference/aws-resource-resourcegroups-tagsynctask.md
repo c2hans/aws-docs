@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-resourcegroups-tagsynctask-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ResourceGroups::TagSyncTask",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-resourcegroups-tagsynctask-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ResourceGroups::TagSyncTask
 Properties:
   [Group](#cfn-resourcegroups-tagsynctask-group): {{String}}

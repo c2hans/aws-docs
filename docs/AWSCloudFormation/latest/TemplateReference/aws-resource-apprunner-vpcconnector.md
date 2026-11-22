@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apprunner-vpcconnector-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppRunner::VpcConnector",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apprunner-vpcconnector-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppRunner::VpcConnector
 Properties:
   [SecurityGroups](#cfn-apprunner-vpcconnector-securitygroups): {{
@@ -117,7 +117,7 @@ This example illustrates creating a VPC connector with two subnets and two secur
 #### JSON
 <a name="aws-resource-apprunner-vpcconnector--examples--VPC_connector--json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppRunner::VpcConnector",
   "Properties" : {
@@ -131,7 +131,7 @@ This example illustrates creating a VPC connector with two subnets and two secur
 #### YAML
 <a name="aws-resource-apprunner-vpcconnector--examples--VPC_connector--yaml"></a>
 
-```
+```yaml
 Type: AWS::AppRunner::VpcConnector
 Properties:
   VpcConnectorName: my-vpc-connector

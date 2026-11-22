@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-kinesis-stream-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Kinesis::Stream",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-kinesis-stream-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Kinesis::Stream
 Properties:
   [DesiredShardLevelMetrics](#cfn-kinesis-stream-desiredshardlevelmetrics): {{
@@ -168,7 +168,7 @@ The following example creates a `Stream` resource that uses three shards, sets a
 #### JSON
 <a name="aws-resource-kinesis-stream--examples--Create_a_Stream--json"></a>
 
-```
+```json
 "MyStream": {
     "Type": "AWS::Kinesis::Stream",
     "Properties": {
@@ -189,7 +189,7 @@ The following example creates a `Stream` resource that uses three shards, sets a
 #### YAML
 <a name="aws-resource-kinesis-stream--examples--Create_a_Stream--yaml"></a>
 
-```
+```yaml
 MyStream:
     Type: AWS::Kinesis::Stream
     Properties:

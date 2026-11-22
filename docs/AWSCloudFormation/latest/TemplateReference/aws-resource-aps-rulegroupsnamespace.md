@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-aps-rulegroupsnamespace-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::APS::RuleGroupsNamespace",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-aps-rulegroupsnamespace-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::APS::RuleGroupsNamespace
 Properties:
   [Data](#cfn-aps-rulegroupsnamespace-data): {{String}}

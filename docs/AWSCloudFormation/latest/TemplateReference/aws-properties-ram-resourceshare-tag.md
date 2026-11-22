@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ram-resourceshare-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-ram-resourceshare-tag-key)" : {{String}},
   "[Value](#cfn-ram-resourceshare-tag-value)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ram-resourceshare-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-ram-resourceshare-tag-key): {{String}}
   [Value](#cfn-ram-resourceshare-tag-value): {{String}}
 ```

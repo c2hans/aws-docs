@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-videopositionrectangle-syntax.json"></a>
 
-```
+```json
 {
   "[Height](#cfn-medialive-channel-videopositionrectangle-height)" : {{Integer}},
   "[Width](#cfn-medialive-channel-videopositionrectangle-width)" : {{Integer}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-videopositionrectangle-syntax.yaml"></a>
 
-```
+```yaml
   [Height](#cfn-medialive-channel-videopositionrectangle-height): {{Integer}}
   [Width](#cfn-medialive-channel-videopositionrectangle-width): {{Integer}}
   [X](#cfn-medialive-channel-videopositionrectangle-x): {{Integer}}

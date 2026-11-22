@@ -10,7 +10,7 @@ Program the `CreateConnectorProfile` API to create a connector profile associate
 
 Create Salesforce connection:
 
-```
+```http
 POST /create-connector-profile HTTP/1.1
 Content-type: application/json
 
@@ -44,7 +44,7 @@ The following examples creates a new Amazon AppFlow connection to ServiceNow. No
 
 Create ServiceNow connection
 
-```
+```http
 POST /create-connector-profile HTTP/1.1
 Content-type: application/json
 
@@ -73,7 +73,7 @@ The following implements a flow from Salesforce to S3 using a previously created
 
 Create Salesforce to S3 flow
 
-```
+```http
 POST /create-flow HTTP/1.1
 Content-type: application/json
 
@@ -116,7 +116,7 @@ The following starts the flow `MySalesforceToS3Flow` which was created in the pr
 
 Start a flow:
 
-```
+```http
 POST /start-flow HTTP/1.1
 Content-type: application/json
 

@@ -15,7 +15,7 @@ The DynamoDB `BatchWriteItem` limits apply and **no condition expression** can b
 
 The `BatchDeleteItem` request object has the following structure:
 
-```
+```TypeScript
 type DynamoDBBatchDeleteItemRequest = {
   operation: 'BatchDeleteItem';
   tables: {
@@ -45,7 +45,7 @@ Things to remember:
 
 Response structure (in `ctx.result)`
 
-```
+```TypeScript
 type Response = {
   data: {
     [tableName: string]: {[key: string]: any}[]

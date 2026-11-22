@@ -120,7 +120,7 @@ Decide how the initial credentials are provided and configure the EC2 user data 
 
 **`cloud-config` YAML**
 
-     ```
+     ```yaml
      Content-Type: text/cloud-config
      package_reboot_if_required: true
      packages:
@@ -155,7 +155,7 @@ Decide how the initial credentials are provided and configure the EC2 user data 
 
      If you're more comfortable with bash scripts and have multiple variables to write to `/etc/ecs/ecs.config`, use the following `heredoc` format. This format writes everything between the lines beginning with **cat** and `EOF` to the configuration file.
 
-     ```
+     ```bash
      #!/usr/bin/env bash
      set -euxo pipefail
 
@@ -193,7 +193,7 @@ Do the following steps once for each application and each task definition. We re
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -227,7 +227,7 @@ If you use your own KMS key to encrypt your secret, you must add the necessary p
 
      Add the credential spec to an Amazon S3 bucket. Then, reference the Amazon Resource Name (ARN) of the Amazon S3 bucket in the `credentialSpecs` field of the task definition.
 
-     ```
+     ```JSON
      {
          "family": "",
          "executionRoleArn": "",
@@ -252,7 +252,7 @@ If you use your own KMS key to encrypt your secret, you must add the necessary p
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Statement": [
@@ -279,7 +279,7 @@ If you use your own KMS key to encrypt your secret, you must add the necessary p
 
      Add the credential spec to an SSM Parameter Store parameter. Then, reference the Amazon Resource Name (ARN) of the SSM Parameter Store parameter in the `credentialSpecs` field of the task definition.
 
-     ```
+     ```JSON
      {
          "family": "",
          "executionRoleArn": "",
@@ -304,7 +304,7 @@ If you use your own KMS key to encrypt your secret, you must add the necessary p
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Statement": [
@@ -328,7 +328,7 @@ Amazon ECS uses an Active Directory credential specification file (*CredSpec*). 
 
 The following is an example CredSpec file.
 
-```
+```JSON
 {
     "CmsPlugins": [
         "ActiveDirectory"

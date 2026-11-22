@@ -22,7 +22,7 @@ Delta Lake support in Athena has the following considerations and limitations:
 
   For example, suppose you issue the following command:
 
-  ```
+  ```sql
   ALTER TABLE {{table_name}} SET TBLPROPERTIES ('read_restored_glacier_objects' = 'false')
   ```
 

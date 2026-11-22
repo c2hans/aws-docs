@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-batch-jobqueue-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Batch::JobQueue",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-batch-jobqueue-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Batch::JobQueue
 Properties:
   [ComputeEnvironmentOrder](#cfn-batch-jobqueue-computeenvironmentorder): {{
@@ -154,7 +154,7 @@ The following example defines a job queue called `HighPriority` that has two com
 #### JSON
 <a name="aws-resource-batch-jobqueue--examples--Job_queue_with_two_compute_environments--json"></a>
 
-```
+```json
 {
   "JobQueue": {
     "Type": "AWS::Batch::JobQueue",
@@ -180,7 +180,7 @@ The following example defines a job queue called `HighPriority` that has two com
 #### YAML
 <a name="aws-resource-batch-jobqueue--examples--Job_queue_with_two_compute_environments--yaml"></a>
 
-```
+```yaml
 JobQueue:
   Type: 'AWS::Batch::JobQueue'
   Properties:

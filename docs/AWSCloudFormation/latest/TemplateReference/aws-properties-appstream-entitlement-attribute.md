@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appstream-entitlement-attribute-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-appstream-entitlement-attribute-name)" : {{String}},
   "[Value](#cfn-appstream-entitlement-attribute-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appstream-entitlement-attribute-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-appstream-entitlement-attribute-name): {{String}}
   [Value](#cfn-appstream-entitlement-attribute-value): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-networkmanager-connectpeer-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::NetworkManager::ConnectPeer",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-networkmanager-connectpeer-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::NetworkManager::ConnectPeer
 Properties:
   [BgpOptions](#cfn-networkmanager-connectpeer-bgpoptions): {{

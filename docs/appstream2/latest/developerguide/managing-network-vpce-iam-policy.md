@@ -11,7 +11,7 @@ When you enable Application Settings Persistence or Home folders on a stack, Wor
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-resiliencehub-app-permissionmodel-syntax.json"></a>
 
-```
+```json
 {
   "[CrossAccountRoleArns](#cfn-resiliencehub-app-permissionmodel-crossaccountrolearns)" : {{[ String, ... ]}},
   "[InvokerRoleName](#cfn-resiliencehub-app-permissionmodel-invokerrolename)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-resiliencehub-app-permissionmodel-syntax.yaml"></a>
 
-```
+```yaml
   [CrossAccountRoleArns](#cfn-resiliencehub-app-permissionmodel-crossaccountrolearns): {{
     - String}}
   [InvokerRoleName](#cfn-resiliencehub-app-permissionmodel-invokerrolename): {{String}}

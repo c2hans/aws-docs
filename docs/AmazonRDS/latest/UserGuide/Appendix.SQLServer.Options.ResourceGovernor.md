@@ -101,7 +101,7 @@ RDS for SQL Server replicates resource governor to secondary instance in a Multi
 
 Use the following query to check the `last_sync_time` of the replication:
 
-```
+```sql
 SELECT * from msdb.dbo.rds_fn_server_object_last_sync_time();
 ```
 

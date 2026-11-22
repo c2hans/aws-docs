@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-vdmattributes-dashboardattributes-syntax.json"></a>
 
-```
+```json
 {
   "[EngagementMetrics](#cfn-ses-vdmattributes-dashboardattributes-engagementmetrics)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-vdmattributes-dashboardattributes-syntax.yaml"></a>
 
-```
+```yaml
   [EngagementMetrics](#cfn-ses-vdmattributes-dashboardattributes-engagementmetrics): {{String}}
 ```
 

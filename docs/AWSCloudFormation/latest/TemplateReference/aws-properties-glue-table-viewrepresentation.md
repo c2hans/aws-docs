@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-table-viewrepresentation-syntax.json"></a>
 
-```
+```json
 {
   "[Dialect](#cfn-glue-table-viewrepresentation-dialect)" : {{String}},
   "[DialectVersion](#cfn-glue-table-viewrepresentation-dialectversion)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-table-viewrepresentation-syntax.yaml"></a>
 
-```
+```yaml
   [Dialect](#cfn-glue-table-viewrepresentation-dialect): {{String}}
   [DialectVersion](#cfn-glue-table-viewrepresentation-dialectversion): {{String}}
   [ValidationConnection](#cfn-glue-table-viewrepresentation-validationconnection): {{String}}

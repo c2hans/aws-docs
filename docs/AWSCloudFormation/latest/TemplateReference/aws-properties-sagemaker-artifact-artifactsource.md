@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-artifact-artifactsource-syntax.json"></a>
 
-```
+```json
 {
   "[SourceTypes](#cfn-sagemaker-artifact-artifactsource-sourcetypes)" : {{[ ArtifactSourceType, ... ]}},
   "[SourceUri](#cfn-sagemaker-artifact-artifactsource-sourceuri)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-artifact-artifactsource-syntax.yaml"></a>
 
-```
+```yaml
   [SourceTypes](#cfn-sagemaker-artifact-artifactsource-sourcetypes): {{
     - ArtifactSourceType}}
   [SourceUri](#cfn-sagemaker-artifact-artifactsource-sourceuri): {{String}}

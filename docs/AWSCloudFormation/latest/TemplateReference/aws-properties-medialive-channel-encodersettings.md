@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-encodersettings-syntax.json"></a>
 
-```
+```json
 {
   "[AudioDescriptions](#cfn-medialive-channel-encodersettings-audiodescriptions)" : {{[ AudioDescription, ... ]}},
   "[AvailBlanking](#cfn-medialive-channel-encodersettings-availblanking)" : {{AvailBlanking}},
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-encodersettings-syntax.yaml"></a>
 
-```
+```yaml
   [AudioDescriptions](#cfn-medialive-channel-encodersettings-audiodescriptions): {{
     - AudioDescription}}
   [AvailBlanking](#cfn-medialive-channel-encodersettings-availblanking): {{

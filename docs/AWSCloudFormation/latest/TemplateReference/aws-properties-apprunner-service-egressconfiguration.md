@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apprunner-service-egressconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EgressType](#cfn-apprunner-service-egressconfiguration-egresstype)" : {{String}},
   "[VpcConnectorArn](#cfn-apprunner-service-egressconfiguration-vpcconnectorarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apprunner-service-egressconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EgressType](#cfn-apprunner-service-egressconfiguration-egresstype): {{String}}
   [VpcConnectorArn](#cfn-apprunner-service-egressconfiguration-vpcconnectorarn): {{String}}
 ```

@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-model-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-sagemaker-model-tag-key)" : {{String}},
   "[Value](#cfn-sagemaker-model-tag-value)" : {{String}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-model-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-sagemaker-model-tag-key): {{String}}
   [Value](#cfn-sagemaker-model-tag-value): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appstream-stack-streamingexperiencesettings-syntax.json"></a>
 
-```
+```json
 {
   "[PreferredProtocol](#cfn-appstream-stack-streamingexperiencesettings-preferredprotocol)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appstream-stack-streamingexperiencesettings-syntax.yaml"></a>
 
-```
+```yaml
   [PreferredProtocol](#cfn-appstream-stack-streamingexperiencesettings-preferredprotocol): {{String}}
 ```
 

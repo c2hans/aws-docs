@@ -43,7 +43,7 @@ For security reasons, some property values are redacted in the logs and replaced
 ### Example CloudTrail log entry for the `CreateService` App Runner action
 <a name="understanding-apprunner-entries.example"></a>
 
-```
+```json
 {
   "eventVersion": "1.08",
   "userIdentity": {

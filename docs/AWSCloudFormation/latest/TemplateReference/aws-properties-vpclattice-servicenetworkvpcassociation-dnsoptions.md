@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-vpclattice-servicenetworkvpcassociation-dnsoptions-syntax.json"></a>
 
-```
+```json
 {
   "[PrivateDnsPreference](#cfn-vpclattice-servicenetworkvpcassociation-dnsoptions-privatednspreference)" : {{String}},
   "[PrivateDnsSpecifiedDomains](#cfn-vpclattice-servicenetworkvpcassociation-dnsoptions-privatednsspecifieddomains)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-vpclattice-servicenetworkvpcassociation-dnsoptions-syntax.yaml"></a>
 
-```
+```yaml
   [PrivateDnsPreference](#cfn-vpclattice-servicenetworkvpcassociation-dnsoptions-privatednspreference): {{String}}
   [PrivateDnsSpecifiedDomains](#cfn-vpclattice-servicenetworkvpcassociation-dnsoptions-privatednsspecifieddomains): {{
     - String}}

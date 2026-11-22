@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcaconnectorad-template-privatekeyflagsv2-syntax.json"></a>
 
-```
+```json
 {
   "[ClientVersion](#cfn-pcaconnectorad-template-privatekeyflagsv2-clientversion)" : {{String}},
   "[ExportableKey](#cfn-pcaconnectorad-template-privatekeyflagsv2-exportablekey)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcaconnectorad-template-privatekeyflagsv2-syntax.yaml"></a>
 
-```
+```yaml
   [ClientVersion](#cfn-pcaconnectorad-template-privatekeyflagsv2-clientversion): {{String}}
   [ExportableKey](#cfn-pcaconnectorad-template-privatekeyflagsv2-exportablekey): {{Boolean}}
   [StrongKeyProtectionRequired](#cfn-pcaconnectorad-template-privatekeyflagsv2-strongkeyprotectionrequired): {{Boolean}}

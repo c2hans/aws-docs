@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SQS#code-examples).
 Create an Amazon SQS queue and send a message to it.
 
-```
+```csharp
     using System;
     using System.Collections.Generic;
     using System.Threading.Tasks;
@@ -119,7 +119,7 @@ Create an Amazon SQS queue and send a message to it.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/sqs#code-examples).
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -210,7 +210,7 @@ Two examples of the `SendMessage` operation follow:
 + Send a message with a body and message attributes
 Send a message with a body and a delay.
 
-```
+```java
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sqs.SqsClient;
@@ -281,7 +281,7 @@ public class SendMessages {
 ```
 Send a message with a body and message attributes.
 
-```
+```java
     /**
      * <p>This method demonstrates how to add message attributes to a message.
      * Each attribute must specify a name, value, and data type. You use a Java Map to supply the attributes. The map's
@@ -340,7 +340,7 @@ Send a message with a body and message attributes.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sqs#code-examples).
 Send a message to an Amazon SQS queue.
 
-```
+```javascript
 import { SendMessageCommand, SQSClient } from "@aws-sdk/client-sqs";
 
 const client = new SQSClient({});
@@ -380,7 +380,7 @@ export const main = async (sqsQueueUrl = SQS_QUEUE_URL) => {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/sqs#code-examples).
 Send a message to an Amazon SQS queue.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -430,7 +430,7 @@ sqs.sendMessage(params, function (err, data) {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/sqs#code-examples).
 
-```
+```kotlin
 suspend fun sendMessages(
     queueUrlVal: String,
     message: String,
@@ -485,7 +485,7 @@ suspend fun sendBatchMessages(queueUrlVal: String?) {
 **Tools for PowerShell V4**
 **Example 1: This example sends a message with the specified attributes and message body to the specified queue with message delivery delayed for 10 seconds.**
 
-```
+```powershell
 $cityAttributeValue = New-Object Amazon.SQS.Model.MessageAttributeValue
 $cityAttributeValue.DataType = "String"
 $cityAttributeValue.StringValue = "AnyCity"
@@ -512,7 +512,7 @@ MD5OfMessageAttributes              MD5OfMessageBody                    MessageI
 **Tools for PowerShell V5**
 **Example 1: This example sends a message with the specified attributes and message body to the specified queue with message delivery delayed for 10 seconds.**
 
-```
+```powershell
 $cityAttributeValue = New-Object Amazon.SQS.Model.MessageAttributeValue
 $cityAttributeValue.DataType = "String"
 $cityAttributeValue.StringValue = "AnyCity"
@@ -542,7 +542,7 @@ MD5OfMessageAttributes              MD5OfMessageBody                    MessageI
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sqs#code-examples).
 
-```
+```python
 def send_message(queue, message_body, message_attributes=None):
     """
     Send a message to an Amazon SQS queue.
@@ -574,7 +574,7 @@ def send_message(queue, message_body, message_attributes=None):
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/sqs#code-examples).
 
-```
+```ruby
 require 'aws-sdk-sqs'
 require 'aws-sdk-sts'
 
@@ -634,7 +634,7 @@ run_me if $PROGRAM_NAME == __FILE__
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/sqs#code-examples).
 
-```
+```rust
 async fn send(client: &Client, queue_url: &String, message: &SQSMessage) -> Result<(), Error> {
     println!("Sending message to queue with URL: {}", queue_url);
 
@@ -660,7 +660,7 @@ async fn send(client: &Client, queue_url: &String, message: &SQSMessage) -> Resu
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sqs#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_sqs->sendmessage(              " oo_result is returned for testing purposes. "
            iv_queueurl = iv_queue_url

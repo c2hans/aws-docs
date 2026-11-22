@@ -9,7 +9,7 @@ This migration guide will help you transition your existing DAX Node.js applicat
 ## V2 Node.js DAX usage
 <a name="DAX.client.run-application-nodejs-3-migrating-V2-usage"></a>
 
-```
+```javascript
 const AmazonDaxClient = require('amazon-dax-client');
 const AWS = require('aws-sdk');
 
@@ -52,7 +52,7 @@ client.get(params, function (err, data) {
 
 For Using DAX Node.js V3 Node version 18 or above is the preferred version. To move to Node 18, use the following:
 
-```
+```javascript
 import { DaxDocument } from '@amazon-dax-sdk/lib-dax';
 import { DynamoDBDocument } from '@aws-sdk/lib-dynamodb';
 import { DynamoDBClient } from '@aws-sdk/client-dynamodb';

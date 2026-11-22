@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-domain-conflictresolution-syntax.json"></a>
 
-```
+```json
 {
   "[ConflictResolvingModel](#cfn-customerprofiles-domain-conflictresolution-conflictresolvingmodel)" : {{String}},
   "[SourceName](#cfn-customerprofiles-domain-conflictresolution-sourcename)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-domain-conflictresolution-syntax.yaml"></a>
 
-```
+```yaml
   [ConflictResolvingModel](#cfn-customerprofiles-domain-conflictresolution-conflictresolvingmodel): {{String}}
   [SourceName](#cfn-customerprofiles-domain-conflictresolution-sourcename): {{String}}
 ```

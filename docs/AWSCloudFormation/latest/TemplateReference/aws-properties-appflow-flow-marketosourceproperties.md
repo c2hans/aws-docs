@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-flow-marketosourceproperties-syntax.json"></a>
 
-```
+```json
 {
   "[Object](#cfn-appflow-flow-marketosourceproperties-object)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-flow-marketosourceproperties-syntax.yaml"></a>
 
-```
+```yaml
   [Object](#cfn-appflow-flow-marketosourceproperties-object): {{String}}
 ```
 

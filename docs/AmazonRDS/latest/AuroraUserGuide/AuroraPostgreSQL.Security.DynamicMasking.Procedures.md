@@ -11,7 +11,7 @@ You can manage masking policies using procedures provided by the `pg_columnmask`
 
 The following command creates a table that is used in subsequent sections:
 
-```
+```sql
 CREATE TABLE public.customers (
     id SERIAL PRIMARY KEY,
     name TEXT,
@@ -28,7 +28,7 @@ The following procedure creates a new masking policy for a user table:
 
 **Syntax**
 
-```
+```sql
 create_masking_policy(
     policy_name,
     table_name,
@@ -58,7 +58,7 @@ None
 
 **Example of creating a masking policy that masks the email column for the `test_user` role:**
 
-```
+```sql
 CALL pgcolumnmask.create_masking_policy(
     'customer_mask',
     'public.customers',
@@ -77,7 +77,7 @@ This procedure modifies an existing masking policy. `ALTER_MASKING_POLICY` can m
 
 **Syntax**
 
-```
+```sql
 alter_masking_policy(
     policy_name,
     table_name,
@@ -107,7 +107,7 @@ None
 
 **Example of adding the analyst role to an existing masking policy without changing other policy attributes.**
 
-```
+```sql
 CALL pgcolumnmask.alter_masking_policy(
     'customer_mask',
     'public.customers',
@@ -133,7 +133,7 @@ This procedure removes an existing masking policy.
 
 **Syntax**
 
-```
+```sql
 drop_masking_policy(
         policy_name,
         table_name)
@@ -152,7 +152,7 @@ None
 
 **Example of dropping the masking policy customer\_mask**
 
-```
+```sql
 -- Drop a masking policy
 CALL pgcolumnmask.drop_masking_policy(
     'customer_mask',
@@ -167,7 +167,7 @@ This procedure renames an existing masking policy.
 
 **Syntax**
 
-```
+```sql
 rename_masking_policy(
     policy_name,
     table_name,
@@ -206,7 +206,7 @@ Mixed-case or reserved-word identifiers require double-quote escaping in policy 
 **Example – quoted and unquoted identifiers**
 Lowercase identifiers (no quoting needed):
 
-```
+```sql
 CALL pgcolumnmask.create_masking_policy(
     'ssn_policy',
     'public.employees',
@@ -217,7 +217,7 @@ CALL pgcolumnmask.create_masking_policy(
 ```
 The same policy with mixed-case identifiers (quoting required):
 
-```
+```sql
 CALL pgcolumnmask.create_masking_policy(
     '"SSN_Policy"',
     '"Public"."Employees"',
@@ -228,7 +228,7 @@ CALL pgcolumnmask.create_masking_policy(
 ```
 Both policies in `pgcolumnmask.ddm_policies`:
 
-```
+```sql
 SELECT schemaname, tablename, policyname, roles, weight
     FROM pgcolumnmask.ddm_policies
     ORDER BY tablename, weight;

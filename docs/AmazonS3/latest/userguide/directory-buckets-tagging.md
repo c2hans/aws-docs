@@ -46,7 +46,7 @@ See the following example ABAC policies for Amazon S3 directory buckets.
 
 In this IAM policy, users or roles with this policy can only create S3 directory buckets if they tag the bucket with the tag key `project` and tag value `Trinity` in the bucket creation request. They can also add or modify tags on existing S3 directory buckets as long as the `TagResource` request includes the tag key-value pair `project:Trinity`. This policy does not grant read, write, or delete permissions on the buckets or its objects.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -75,7 +75,7 @@ In this IAM policy, users or roles with this policy can only create S3 directory
 
 In this bucket policy, IAM principals (users and roles) can perform operations using the `CreateSession` action on the bucket only if the value of the bucket's `project` tag matches the value of the principal's `project` tag.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -102,7 +102,7 @@ In this bucket policy, IAM principals (users and roles) can perform operations u
 
 In this IAM policy, IAM principals (users or roles) can modify tags on a bucket only if the value of the bucket's `project` tag matches the value of the principal's `project` tag. Only the four tags `project`, `environment`, `owner`, and `cost-center` specified in the `aws:TagKeys` condition keys are permitted for these directory buckets. This helps enforce tag governance, prevents unauthorized tag modifications, and keeps the tagging schema consistent across your buckets.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -136,7 +136,7 @@ In this IAM policy, IAM principals (users or roles) can modify tags on a bucket 
 
 In this IAM policy, the condition statement allows access to the bucket's data only if the bucket has the tag key `Environment` and tag value `Production`.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

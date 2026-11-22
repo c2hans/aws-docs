@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-s3outposts-accesspoint-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::S3Outposts::AccessPoint",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-s3outposts-accesspoint-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::S3Outposts::AccessPoint
 Properties:
   [Bucket](#cfn-s3outposts-accesspoint-bucket): {{String}}
@@ -110,7 +110,7 @@ To create an access point, you must already have an S3 on Outposts bucket ARN. T
 #### JSON
 <a name="aws-resource-s3outposts-accesspoint--examples--Creating_an_access_point_with_an_access_point_policy_for_your_Amazon_S3_on_Outposts_using_CloudFormation--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Bucket, no tags, no lifecycle configuration with access point",
@@ -168,7 +168,7 @@ To create an access point, you must already have an S3 on Outposts bucket ARN. T
 #### YAML
 <a name="aws-resource-s3outposts-accesspoint--examples--Creating_an_access_point_with_an_access_point_policy_for_your_Amazon_S3_on_Outposts_using_CloudFormation--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Bucket, no tags, no lifecycle configuration with access point
 Resources:

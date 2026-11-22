@@ -74,7 +74,7 @@ If the action is successful, the service sends back an HTTP 200 response with an
 
 This example illustrates one usage of DeleteBucketPolicy.
 
-```
+```HTTP
             DELETE v20180820/bucket/example-outpost-bucket/policy  HTTP/1.1
             Host: s3-outposts.<Region>.amazonaws.com
             x-amz-account-id: example-account-id

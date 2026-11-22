@@ -50,7 +50,7 @@ To view the Profiles that are associated to a VPC and the priority of each assoc
 
 The following is an example output after you run the command:
 
-```
+```json
 {
     "ProfileAssociations": [
         {
@@ -87,7 +87,7 @@ To update the priority of a Profile association with a VPC, use the [update-prof
 
 The following is an example output after you run the command:
 
-```
+```json
 {
     "ProfileAssociation": {
         "CreationTime": 1709338817.148,

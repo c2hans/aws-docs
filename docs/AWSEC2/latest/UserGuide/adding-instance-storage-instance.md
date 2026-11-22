@@ -40,13 +40,13 @@ For instance types with NVMe instance store volumes, all of the supported instan
 **To specify a block device mapping in an instance launch request**
 Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command with the `--block-device-mappings` option.
 
-```
+```bash
 --block-device-mappings file://mapping.json
 ```
 
 The following block device mapping adds two instance store volumes.
 
-```
+```json
 [
     {
         "DeviceName": "/dev/sdc",
@@ -65,13 +65,13 @@ The following block device mapping adds two instance store volumes.
 **To specify a block device mapping in an instance launch request**
 Use the [New-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Instance.html) cmdlet with the `-BlockDeviceMapping` option.
 
-```
+```powershell
 -BlockDeviceMapping $bdm
 ```
 
 The following block device mapping adds two instance store volumes.
 
-```
+```powershell
 $bdm = @()
 
 $sdc = New-Object -TypeName Amazon.EC2.Model.BlockDeviceMapping

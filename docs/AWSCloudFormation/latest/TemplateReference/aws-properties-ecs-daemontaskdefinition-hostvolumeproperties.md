@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-daemontaskdefinition-hostvolumeproperties-syntax.json"></a>
 
-```
+```json
 {
   "[SourcePath](#cfn-ecs-daemontaskdefinition-hostvolumeproperties-sourcepath)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-daemontaskdefinition-hostvolumeproperties-syntax.yaml"></a>
 
-```
+```yaml
   [SourcePath](#cfn-ecs-daemontaskdefinition-hostvolumeproperties-sourcepath): {{String}}
 ```
 

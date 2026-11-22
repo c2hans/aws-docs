@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-verifiedaccessinstance-kinesisdatafirehose-syntax.json"></a>
 
-```
+```json
 {
   "[DeliveryStream](#cfn-ec2-verifiedaccessinstance-kinesisdatafirehose-deliverystream)" : {{String}},
   "[Enabled](#cfn-ec2-verifiedaccessinstance-kinesisdatafirehose-enabled)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-verifiedaccessinstance-kinesisdatafirehose-syntax.yaml"></a>
 
-```
+```yaml
   [DeliveryStream](#cfn-ec2-verifiedaccessinstance-kinesisdatafirehose-deliverystream): {{String}}
   [Enabled](#cfn-ec2-verifiedaccessinstance-kinesisdatafirehose-enabled): {{Boolean}}
 ```

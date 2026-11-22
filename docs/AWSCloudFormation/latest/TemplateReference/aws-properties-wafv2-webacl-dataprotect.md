@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-dataprotect-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-wafv2-webacl-dataprotect-action)" : {{String}},
   "[ExcludeRateBasedDetails](#cfn-wafv2-webacl-dataprotect-excluderatebaseddetails)" : {{Boolean}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-dataprotect-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-wafv2-webacl-dataprotect-action): {{String}}
   [ExcludeRateBasedDetails](#cfn-wafv2-webacl-dataprotect-excluderatebaseddetails): {{Boolean}}
   [ExcludeRuleMatchDetails](#cfn-wafv2-webacl-dataprotect-excluderulematchdetails): {{Boolean}}

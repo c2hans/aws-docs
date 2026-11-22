@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cleanrooms-idnamespaceassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CleanRooms::IdNamespaceAssociation",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cleanrooms-idnamespaceassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CleanRooms::IdNamespaceAssociation
 Properties:
   [Description](#cfn-cleanrooms-idnamespaceassociation-description): {{String}}

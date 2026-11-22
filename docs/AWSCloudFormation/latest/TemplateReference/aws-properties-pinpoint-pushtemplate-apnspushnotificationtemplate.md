@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pinpoint-pushtemplate-apnspushnotificationtemplate-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-pinpoint-pushtemplate-apnspushnotificationtemplate-action)" : {{String}},
   "[Body](#cfn-pinpoint-pushtemplate-apnspushnotificationtemplate-body)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pinpoint-pushtemplate-apnspushnotificationtemplate-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-pinpoint-pushtemplate-apnspushnotificationtemplate-action): {{String}}
   [Body](#cfn-pinpoint-pushtemplate-apnspushnotificationtemplate-body): {{String}}
   [MediaUrl](#cfn-pinpoint-pushtemplate-apnspushnotificationtemplate-mediaurl): {{String}}

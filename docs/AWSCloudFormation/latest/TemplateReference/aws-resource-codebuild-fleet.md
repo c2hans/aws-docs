@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-codebuild-fleet-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CodeBuild::Fleet",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-codebuild-fleet-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CodeBuild::Fleet
 Properties:
   [BaseCapacity](#cfn-codebuild-fleet-basecapacity): {{Integer}}

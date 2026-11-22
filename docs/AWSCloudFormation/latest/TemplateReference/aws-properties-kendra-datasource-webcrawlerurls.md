@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-webcrawlerurls-syntax.json"></a>
 
-```
+```json
 {
   "[SeedUrlConfiguration](#cfn-kendra-datasource-webcrawlerurls-seedurlconfiguration)" : {{WebCrawlerSeedUrlConfiguration}},
   "[SiteMapsConfiguration](#cfn-kendra-datasource-webcrawlerurls-sitemapsconfiguration)" : {{WebCrawlerSiteMapsConfiguration}}
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-webcrawlerurls-syntax.yaml"></a>
 
-```
+```yaml
   [SeedUrlConfiguration](#cfn-kendra-datasource-webcrawlerurls-seedurlconfiguration): {{
     WebCrawlerSeedUrlConfiguration}}
   [SiteMapsConfiguration](#cfn-kendra-datasource-webcrawlerurls-sitemapsconfiguration): {{

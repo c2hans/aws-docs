@@ -27,14 +27,14 @@ When using `MSCK REPAIR TABLE`, keep in mind the following points:
 ## Synopsis
 <a name="synopsis"></a>
 
-```
+```sql
 MSCK REPAIR TABLE table_name
 ```
 
 ## Examples
 <a name="examples"></a>
 
-```
+```sql
 MSCK REPAIR TABLE orders;
 ```
 
@@ -67,7 +67,7 @@ Review the IAM policies attached to the role that you're using to run `MSCK REPA
 
 If one or more object keys in the Amazon S3 path are in camel case instead of lower case, `MSCK REPAIR TABLE` might not add the partitions to the AWS Glue Data Catalog. For example, if your Amazon S3 path includes the object key name `userId`, the following partitions might not be added to the AWS Glue Data Catalog:
 
-```
+```sql
 s3://amzn-s3-demo-bucket/path/userId=1/
 
 s3://amzn-s3-demo-bucket/path/userId=2/
@@ -78,7 +78,7 @@ s3://amzn-s3-demo-bucket/path/userId=3/
 To resolve this issue, do one of the following:
 + Use lower case instead of camel case when you create your Amazon S3 object keys:
 
-  ```
+  ```sql
   s3://amzn-s3-demo-bucket/path/userid=1/
 
   s3://amzn-s3-demo-bucket/path/userid=2/
@@ -87,7 +87,7 @@ To resolve this issue, do one of the following:
   ```
 + Use [ALTER TABLE ADD PARTITION](alter-table-add-partition.md) to redefine the location, as in the following example:
 
-  ```
+  ```sql
   ALTER TABLE table_name ADD [IF NOT EXISTS]
   PARTITION (userId=1)
   LOCATION 's3://amzn-s3-demo-bucket/path/userId=1/'

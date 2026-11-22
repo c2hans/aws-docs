@@ -36,14 +36,14 @@ After the API is deployed, you are presented with a couple of extra steps to gen
 
 1. Start by creating a boilerplate React app using [NPM](https://www.npmjs.com/get-npm) on your local machine:
 
-   ```
+   ```TypeScript
    $ npx create-react-app mypubsub-app
    $ cd mypubsub-app
    ```
 **Note**
 This example uses the [Amplify libraries](https://docs.amplify.aws/lib/) to connect clients to the backend API. However there’s no need to create an Amplify CLI project locally. While React is the client of choice in this example, Amplify libraries also support iOS, Android, and Flutter clients, providing the same capabilities in these different runtimes. The supported Amplify clients provide simple abstractions to interact with AWS AppSync GraphQL API backends with few lines of code including built-in WebSocket capabilities fully compatible with the [AWS AppSync real-time WebSocket protocol](https://docs.aws.amazon.com/appsync/latest/devguide/real-time-websocket-client.html):
 
-   ```
+   ```TypeScript
    $ npm install @aws-amplify/api
    ```
 
@@ -55,7 +55,7 @@ This example uses the [Amplify libraries](https://docs.amplify.aws/lib/) to conn
 
 1. Use the following command to start the application locally:
 
-   ```
+   ```TypeScript
    $ npm start
    ```
 
@@ -63,7 +63,7 @@ This example uses the [Amplify libraries](https://docs.amplify.aws/lib/) to conn
 
 1.  In one of the browser windows, enter the following JSON blob in the text box then click **Submit**:
 
-   ```
+   ```TypeScript
    {
      "robot":"r2d2",
      "planet": "tatooine"
@@ -76,7 +76,7 @@ Both browser instances are subscribed to the {{robots}} channel and receive the 
 
 All necessary GraphQL API code, including the schema, resolvers, and operations are automatically generated to enable a generic pub/sub use case. On the backend, data is published to AWS AppSync’s real-time endpoint with a GraphQL mutation such as the following:
 
-```
+```TypeScript
 mutation PublishData {
     publish(data: "{\"msg\": \"hello world!\"}", name: "channel") {
         data
@@ -87,7 +87,7 @@ mutation PublishData {
 
 Subscribers access the published data sent to the specific temporary channel with a related GraphQL subscription:
 
-```
+```TypeScript
 subscription SubscribeToData {
     subscribe(name:"channel") {
         name

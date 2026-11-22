@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityhub-standard-standardscontrol-syntax.json"></a>
 
-```
+```json
 {
   "[Reason](#cfn-securityhub-standard-standardscontrol-reason)" : {{String}},
   "[StandardsControlArn](#cfn-securityhub-standard-standardscontrol-standardscontrolarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityhub-standard-standardscontrol-syntax.yaml"></a>
 
-```
+```yaml
   [Reason](#cfn-securityhub-standard-standardscontrol-reason): {{String}}
   [StandardsControlArn](#cfn-securityhub-standard-standardscontrol-standardscontrolarn): {{String}}
 ```

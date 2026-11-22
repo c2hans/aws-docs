@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-multiplexprogram-multiplexprogrampacketidentifiersmap-syntax.json"></a>
 
-```
+```json
 {
   "[AudioPids](#cfn-medialive-multiplexprogram-multiplexprogrampacketidentifiersmap-audiopids)" : {{[ Integer, ... ]}},
   "[DvbSubPids](#cfn-medialive-multiplexprogram-multiplexprogrampacketidentifiersmap-dvbsubpids)" : {{[ Integer, ... ]}},
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-multiplexprogram-multiplexprogrampacketidentifiersmap-syntax.yaml"></a>
 
-```
+```yaml
   [AudioPids](#cfn-medialive-multiplexprogram-multiplexprogrampacketidentifiersmap-audiopids): {{
     - Integer}}
   [DvbSubPids](#cfn-medialive-multiplexprogram-multiplexprogrampacketidentifiersmap-dvbsubpids): {{

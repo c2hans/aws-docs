@@ -53,7 +53,7 @@ Replace all {{user input}} with your own information.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -156,7 +156,7 @@ Replace all {{user input}} with your own information.
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

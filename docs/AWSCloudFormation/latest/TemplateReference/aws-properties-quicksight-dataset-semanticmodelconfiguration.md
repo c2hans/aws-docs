@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-semanticmodelconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[SemanticMetadata](#cfn-quicksight-dataset-semanticmodelconfiguration-semanticmetadata)" : {{[ DataSetSemanticMetadata, ... ]}},
   "[TableMap](#cfn-quicksight-dataset-semanticmodelconfiguration-tablemap)" : {{{{{Key}}: {{Value}}, ...}}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-semanticmodelconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [SemanticMetadata](#cfn-quicksight-dataset-semanticmodelconfiguration-semanticmetadata): {{
     - DataSetSemanticMetadata}}
   [TableMap](#cfn-quicksight-dataset-semanticmodelconfiguration-tablemap): {{

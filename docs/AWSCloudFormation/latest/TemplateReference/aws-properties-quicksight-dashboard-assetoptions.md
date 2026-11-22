@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-assetoptions-syntax.json"></a>
 
-```
+```json
 {
   "[CustomActionDefaults](#cfn-quicksight-dashboard-assetoptions-customactiondefaults)" : {{VisualCustomActionDefaults}},
   "[ExcludedDataSetArns](#cfn-quicksight-dashboard-assetoptions-excludeddatasetarns)" : {{[ String, ... ]}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-assetoptions-syntax.yaml"></a>
 
-```
+```yaml
   [CustomActionDefaults](#cfn-quicksight-dashboard-assetoptions-customactiondefaults): {{
     VisualCustomActionDefaults}}
   [ExcludedDataSetArns](#cfn-quicksight-dashboard-assetoptions-excludeddatasetarns): {{

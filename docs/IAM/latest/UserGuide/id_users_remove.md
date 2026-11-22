@@ -111,7 +111,7 @@ The following policy does not include a time limit. You must remove the policy t
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -133,7 +133,7 @@ The following policy includes a condition that starts the policy on December 24,
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

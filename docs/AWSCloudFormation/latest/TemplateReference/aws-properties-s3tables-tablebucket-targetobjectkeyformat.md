@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3tables-tablebucket-targetobjectkeyformat-syntax.json"></a>
 
-```
+```json
 {
   "[PartitionedPrefix](#cfn-s3tables-tablebucket-targetobjectkeyformat-partitionedprefix)" : {{PartitionedPrefix}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3tables-tablebucket-targetobjectkeyformat-syntax.yaml"></a>
 
-```
+```yaml
   [PartitionedPrefix](#cfn-s3tables-tablebucket-targetobjectkeyformat-partitionedprefix): {{
     PartitionedPrefix}}
 ```

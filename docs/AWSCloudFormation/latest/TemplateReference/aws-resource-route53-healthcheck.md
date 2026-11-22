@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-route53-healthcheck-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Route53::HealthCheck",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-route53-healthcheck-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53::HealthCheck
 Properties:
   [HealthCheckConfig](#cfn-route53-healthcheck-healthcheckconfig): {{
@@ -104,7 +104,7 @@ The following example creates an Amazon Route 53 health check that sends HTTP re
 #### JSON
 <a name="aws-resource-route53-healthcheck--examples--Create_health_check--json"></a>
 
-```
+```json
 {
    "myHealthCheck": {
       "Type": "AWS::Route53::HealthCheck",
@@ -136,7 +136,7 @@ The following example creates an Amazon Route 53 health check that sends HTTP re
 #### YAML
 <a name="aws-resource-route53-healthcheck--examples--Create_health_check--yaml"></a>
 
-```
+```yaml
 myHealthCheck:
   Type: 'AWS::Route53::HealthCheck'
   Properties:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-querystringkeyvalue-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-elasticloadbalancingv2-listenerrule-querystringkeyvalue-key)" : {{String}},
   "[Value](#cfn-elasticloadbalancingv2-listenerrule-querystringkeyvalue-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-querystringkeyvalue-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-elasticloadbalancingv2-listenerrule-querystringkeyvalue-key): {{String}}
   [Value](#cfn-elasticloadbalancingv2-listenerrule-querystringkeyvalue-value): {{String}}
 ```

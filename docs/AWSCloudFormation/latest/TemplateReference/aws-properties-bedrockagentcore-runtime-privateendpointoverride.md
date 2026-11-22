@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-runtime-privateendpointoverride-syntax.json"></a>
 
-```
+```json
 {
   "[Domain](#cfn-bedrockagentcore-runtime-privateendpointoverride-domain)" : {{String}},
   "[PrivateEndpoint](#cfn-bedrockagentcore-runtime-privateendpointoverride-privateendpoint)" : {{PrivateEndpoint}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-runtime-privateendpointoverride-syntax.yaml"></a>
 
-```
+```yaml
   [Domain](#cfn-bedrockagentcore-runtime-privateendpointoverride-domain): {{String}}
   [PrivateEndpoint](#cfn-bedrockagentcore-runtime-privateendpointoverride-privateendpoint): {{
     PrivateEndpoint}}

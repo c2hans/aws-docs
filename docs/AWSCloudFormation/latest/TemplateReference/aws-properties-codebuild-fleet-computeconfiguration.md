@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codebuild-fleet-computeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[disk](#cfn-codebuild-fleet-computeconfiguration-disk)" : {{Integer}},
   "[instanceType](#cfn-codebuild-fleet-computeconfiguration-instancetype)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codebuild-fleet-computeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [disk](#cfn-codebuild-fleet-computeconfiguration-disk): {{Integer}}
   [instanceType](#cfn-codebuild-fleet-computeconfiguration-instancetype): {{String}}
   [machineType](#cfn-codebuild-fleet-computeconfiguration-machinetype): {{String}}

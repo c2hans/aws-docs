@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-auditmanager-assessment-scope-syntax.json"></a>
 
-```
+```json
 {
   "[AwsAccounts](#cfn-auditmanager-assessment-scope-awsaccounts)" : {{[ AWSAccount, ... ]}},
   "[AwsServices](#cfn-auditmanager-assessment-scope-awsservices)" : {{[ AWSService, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-auditmanager-assessment-scope-syntax.yaml"></a>
 
-```
+```yaml
   [AwsAccounts](#cfn-auditmanager-assessment-scope-awsaccounts): {{
     - AWSAccount}}
   [AwsServices](#cfn-auditmanager-assessment-scope-awsservices): {{

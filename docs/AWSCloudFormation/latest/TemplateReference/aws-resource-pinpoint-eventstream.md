@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-pinpoint-eventstream-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Pinpoint::EventStream",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-pinpoint-eventstream-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Pinpoint::EventStream
 Properties:
   [ApplicationId](#cfn-pinpoint-eventstream-applicationid): {{String}}

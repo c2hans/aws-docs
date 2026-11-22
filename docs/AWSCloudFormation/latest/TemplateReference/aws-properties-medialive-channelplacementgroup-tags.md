@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channelplacementgroup-tags-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-medialive-channelplacementgroup-tags-key)" : {{String}},
   "[Value](#cfn-medialive-channelplacementgroup-tags-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channelplacementgroup-tags-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-medialive-channelplacementgroup-tags-key): {{String}}
   [Value](#cfn-medialive-channelplacementgroup-tags-value): {{String}}
 ```

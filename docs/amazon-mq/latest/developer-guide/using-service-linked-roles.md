@@ -54,7 +54,7 @@ Amazon MQ uses the permission policy [`AmazonMQServiceRolePolicy`](https://conso
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

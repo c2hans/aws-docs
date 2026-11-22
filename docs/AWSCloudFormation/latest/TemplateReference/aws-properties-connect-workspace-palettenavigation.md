@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-workspace-palettenavigation-syntax.json"></a>
 
-```
+```json
 {
   "[Background](#cfn-connect-workspace-palettenavigation-background)" : {{String}},
   "[InvertActionsColors](#cfn-connect-workspace-palettenavigation-invertactionscolors)" : {{Boolean}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-workspace-palettenavigation-syntax.yaml"></a>
 
-```
+```yaml
   [Background](#cfn-connect-workspace-palettenavigation-background): {{String}}
   [InvertActionsColors](#cfn-connect-workspace-palettenavigation-invertactionscolors): {{Boolean}}
   [Text](#cfn-connect-workspace-palettenavigation-text): {{String}}

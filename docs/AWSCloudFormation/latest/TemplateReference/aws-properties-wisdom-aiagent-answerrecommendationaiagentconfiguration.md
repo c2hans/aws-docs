@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-aiagent-answerrecommendationaiagentconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AnswerGenerationAIGuardrailId](#cfn-wisdom-aiagent-answerrecommendationaiagentconfiguration-answergenerationaiguardrailid)" : {{String}},
   "[AnswerGenerationAIPromptId](#cfn-wisdom-aiagent-answerrecommendationaiagentconfiguration-answergenerationaipromptid)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-aiagent-answerrecommendationaiagentconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AnswerGenerationAIGuardrailId](#cfn-wisdom-aiagent-answerrecommendationaiagentconfiguration-answergenerationaiguardrailid): {{String}}
   [AnswerGenerationAIPromptId](#cfn-wisdom-aiagent-answerrecommendationaiagentconfiguration-answergenerationaipromptid): {{String}}
   [AssociationConfigurations](#cfn-wisdom-aiagent-answerrecommendationaiagentconfiguration-associationconfigurations): {{

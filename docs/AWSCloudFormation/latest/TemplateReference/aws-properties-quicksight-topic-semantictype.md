@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-topic-semantictype-syntax.json"></a>
 
-```
+```json
 {
   "[FalseyCellValue](#cfn-quicksight-topic-semantictype-falseycellvalue)" : {{String}},
   "[FalseyCellValueSynonyms](#cfn-quicksight-topic-semantictype-falseycellvaluesynonyms)" : {{[ String, ... ]}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-topic-semantictype-syntax.yaml"></a>
 
-```
+```yaml
   [FalseyCellValue](#cfn-quicksight-topic-semantictype-falseycellvalue): {{String}}
   [FalseyCellValueSynonyms](#cfn-quicksight-topic-semantictype-falseycellvaluesynonyms): {{
     - String}}

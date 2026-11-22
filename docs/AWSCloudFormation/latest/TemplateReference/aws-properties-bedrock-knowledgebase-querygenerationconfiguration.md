@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-knowledgebase-querygenerationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ExecutionTimeoutSeconds](#cfn-bedrock-knowledgebase-querygenerationconfiguration-executiontimeoutseconds)" : {{Integer}},
   "[GenerationContext](#cfn-bedrock-knowledgebase-querygenerationconfiguration-generationcontext)" : {{QueryGenerationContext}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-knowledgebase-querygenerationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ExecutionTimeoutSeconds](#cfn-bedrock-knowledgebase-querygenerationconfiguration-executiontimeoutseconds): {{Integer}}
   [GenerationContext](#cfn-bedrock-knowledgebase-querygenerationconfiguration-generationcontext): {{
     QueryGenerationContext}}

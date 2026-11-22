@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-gatewayconnectorfilters-syntax.json"></a>
 
-```
+```json
 {
   "[AccessTypes](#cfn-ecs-service-gatewayconnectorfilters-accesstypes)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-gatewayconnectorfilters-syntax.yaml"></a>
 
-```
+```yaml
   [AccessTypes](#cfn-ecs-service-gatewayconnectorfilters-accesstypes): {{
     - String}}
 ```

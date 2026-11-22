@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelcard-businessdetails-syntax.json"></a>
 
-```
+```json
 {
   "[BusinessProblem](#cfn-sagemaker-modelcard-businessdetails-businessproblem)" : {{String}},
   "[BusinessStakeholders](#cfn-sagemaker-modelcard-businessdetails-businessstakeholders)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelcard-businessdetails-syntax.yaml"></a>
 
-```
+```yaml
   [BusinessProblem](#cfn-sagemaker-modelcard-businessdetails-businessproblem): {{String}}
   [BusinessStakeholders](#cfn-sagemaker-modelcard-businessdetails-businessstakeholders): {{String}}
   [LineOfBusiness](#cfn-sagemaker-modelcard-businessdetails-lineofbusiness): {{String}}

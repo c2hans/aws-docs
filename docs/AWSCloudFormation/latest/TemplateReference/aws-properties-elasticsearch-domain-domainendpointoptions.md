@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticsearch-domain-domainendpointoptions-syntax.json"></a>
 
-```
+```json
 {
   "[CustomEndpoint](#cfn-elasticsearch-domain-domainendpointoptions-customendpoint)" : {{String}},
   "[CustomEndpointCertificateArn](#cfn-elasticsearch-domain-domainendpointoptions-customendpointcertificatearn)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticsearch-domain-domainendpointoptions-syntax.yaml"></a>
 
-```
+```yaml
   [CustomEndpoint](#cfn-elasticsearch-domain-domainendpointoptions-customendpoint): {{String}}
   [CustomEndpointCertificateArn](#cfn-elasticsearch-domain-domainendpointoptions-customendpointcertificatearn): {{String}}
   [CustomEndpointEnabled](#cfn-elasticsearch-domain-domainendpointoptions-customendpointenabled): {{Boolean}}

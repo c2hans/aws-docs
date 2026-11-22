@@ -13,7 +13,7 @@ To learn how to set the account password requirements policy for your account, s
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {

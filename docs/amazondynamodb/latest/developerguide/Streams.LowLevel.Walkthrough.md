@@ -25,7 +25,7 @@ This section contains a Java program that shows DynamoDB Streams in action. The 
 
 When you run the program, you will see output similar to the following.
 
-```
+```java
 Testing Streams Demo
 Creating an Amazon DynamoDB table TestTableForStreams with a simple primary key: Id
 Waiting for TestTableForStreams to be created...
@@ -52,7 +52,7 @@ Demo complete
 
 **Example**
 
-```
+```java
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

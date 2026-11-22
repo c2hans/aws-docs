@@ -79,7 +79,7 @@ With OAuth, you can connect directly to AWS MCP Server without installing or run
 
 1. Grant OAuth permissions to your IAM role or user by attaching the managed policy:
 
-   ```
+   ```bash
    aws iam attach-role-policy \
      --role-name MyRole \
      --policy-arn arn:aws:iam::aws:policy/AWSMCPSignInOAuthAccessPolicy
@@ -91,7 +91,7 @@ The following clients fully support OAuth with the default endpoint URL:
 
 Claude Code CLI
 
-```
+```bash
 claude mcp add aws-mcp https://aws-mcp.us-east-1.api.aws/mcp --transport http
 ```
 
@@ -100,7 +100,7 @@ Add the URL `https://aws-mcp.us-east-1.api.aws/mcp` in your web client MCP setti
 
 Kiro CLI (2.11 or later)
 
-```
+```bash
 kiro-cli mcp add --name aws-mcp --url https://aws-mcp.us-east-1.api.aws/mcp
 ```
 
@@ -109,7 +109,7 @@ Add as a remote MCP server with URL: `https://aws-mcp.us-east-1.api.aws/mcp`
 
 Devin CLI
 
-```
+```bash
 devin mcp add -s user aws-mcp https://aws-mcp.us-east-1.api.aws/mcp
 ```
 
@@ -127,7 +127,7 @@ Add as a remote MCP server with URL: `https://aws-mcp.us-east-1.api.aws/mcp?oaut
 Visual Studio Code
 Add the server to `.vscode/mcp.json` in your workspace, or run *MCP: Open User Configuration* from the Command Palette to configure it for every workspace. Visual Studio Code uses a `servers` top-level key rather than `mcpServers`:
 
-```
+```json
 {
   "servers": {
     "aws-mcp": {
@@ -140,20 +140,20 @@ Add the server to `.vscode/mcp.json` in your workspace, or run *MCP: Open User C
 
 Gemini CLI
 
-```
+```bash
 gemini mcp add aws-mcp https://aws-mcp.us-east-1.api.aws/mcp?oauth=initialize --transport http
 ```
 
 Codex CLI and Codex Desktop
 
-```
+```bash
 codex mcp add aws-mcp --url https://aws-mcp.us-east-1.api.aws/mcp?oauth=initialize
 ```
 
 GitHub Copilot CLI
 Add the server to `~/.copilot/mcp-config.json` to configure it for all projects, or to `.github/mcp.json` (or `.mcp.json` at your repository root) to configure it for a single project:
 
-```
+```json
 {
   "mcpServers": {
     "aws-mcp": {
@@ -186,7 +186,7 @@ Use the [MCP Proxy for AWS](https://github.com/aws/mcp-proxy-for-aws) to authent
 
 1. Sign in and configure credentials:
 
-   ```
+   ```bash
    aws login
    ```
 
@@ -194,13 +194,13 @@ Use the [MCP Proxy for AWS](https://github.com/aws/mcp-proxy-for-aws) to authent
 
 1. Verify your credentials:
 
-   ```
+   ```bash
    aws sts get-caller-identity
    ```
 
 1. Install uv (if not already installed):
 
-   ```
+   ```bash
    # macOS and Linux
    curl -LsSf https://astral.sh/uv/install.sh | sh
 
@@ -216,7 +216,7 @@ The endpoint Region determines which MCP server you connect to, while the `AWS_R
 
 Kiro CLI or Kiro IDE
 
-```
+```json
 {
   "mcpServers": {
     "aws-mcp": {
@@ -235,7 +235,7 @@ Kiro CLI or Kiro IDE
 
 Cursor IDE, Claude Desktop, or Devin Desktop
 
-```
+```json
 {
   "mcpServers": {
     "aws-mcp": {
@@ -253,7 +253,7 @@ Cursor IDE, Claude Desktop, or Devin Desktop
 Visual Studio Code
 Add the following to `.vscode/mcp.json` in your workspace. Visual Studio Code uses a `servers` top-level key rather than the `mcpServers` key that most other clients use:
 
-```
+```json
 {
   "servers": {
     "aws-mcp": {
@@ -271,26 +271,26 @@ You can also run *MCP: Add Server* from the Command Palette and choose the `stdi
 
 Claude Code CLI
 
-```
+```bash
 claude mcp add-json aws-mcp '{"type":"stdio","command":"uvx","args":["mcp-proxy-for-aws-cli@latest","https://aws-mcp.us-east-1.api.aws/mcp","--metadata","AWS_REGION=us-west-2"],"env":{}}'
 ```
 
 Codex CLI
 
-```
+```bash
 codex mcp add aws-mcp uvx mcp-proxy-for-aws-cli@latest https://aws-mcp.us-east-1.api.aws/mcp --metadata AWS_REGION=us-west-2
 ```
 
 Devin CLI
 
-```
+```bash
 devin mcp add -s user aws-mcp -- uvx mcp-proxy-for-aws-cli@latest https://aws-mcp.us-east-1.api.aws/mcp --metadata AWS_REGION=us-west-2
 ```
 
 GitHub Copilot CLI
 Add the following to `~/.copilot/mcp-config.json`. Copilot CLI uses the `mcpServers` key, and identifies a locally run server with `"type": "local"`:
 
-```
+```json
 {
   "mcpServers": {
     "aws-mcp": {

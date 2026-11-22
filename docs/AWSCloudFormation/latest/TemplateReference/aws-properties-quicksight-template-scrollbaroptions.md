@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-scrollbaroptions-syntax.json"></a>
 
-```
+```json
 {
   "[Visibility](#cfn-quicksight-template-scrollbaroptions-visibility)" : {{String}},
   "[VisibleRange](#cfn-quicksight-template-scrollbaroptions-visiblerange)" : {{VisibleRangeOptions}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-scrollbaroptions-syntax.yaml"></a>
 
-```
+```yaml
   [Visibility](#cfn-quicksight-template-scrollbaroptions-visibility): {{String}}
   [VisibleRange](#cfn-quicksight-template-scrollbaroptions-visiblerange): {{
     VisibleRangeOptions}}

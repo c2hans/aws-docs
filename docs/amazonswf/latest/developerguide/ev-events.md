@@ -66,7 +66,7 @@ In each case, the `detail` section in the event data provides the same informati
 ### Execution started
 <a name="ev-events-execution-started"></a>
 
-```
+```json
 {
   "version": "0",
   "id": "444444444444",
@@ -126,7 +126,7 @@ In each case, the `detail` section in the event data provides the same informati
 ### Execution completed
 <a name="ev-events-execution-completed"></a>
 
-```
+```json
 {
   "version": "0",
   "id": "1111-2222-3333",
@@ -186,7 +186,7 @@ In each case, the `detail` section in the event data provides the same informati
 ### Execution failed
 <a name="ev-events-execution-failed"></a>
 
-```
+```json
 {
   "version": "0",
   "id": "1111-2222-3333",
@@ -246,7 +246,7 @@ In each case, the `detail` section in the event data provides the same informati
 ### Execution timed out
 <a name="ev-events-execution-timed-out"></a>
 
-```
+```json
 {
   "version": "0",
   "id": "1111-2222-3333",
@@ -306,7 +306,7 @@ In each case, the `detail` section in the event data provides the same informati
 ### Execution terminated
 <a name="ev-events-execution-aborted"></a>
 
-```
+```json
 {
   "version": "0",
   "id": "1111-2222-3333",

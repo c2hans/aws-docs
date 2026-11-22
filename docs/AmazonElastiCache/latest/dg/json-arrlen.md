@@ -8,7 +8,7 @@ Gets the length of the array values at the path.
 
 Syntax
 
-```
+```json
 JSON.ARRLEN <key> [path]
 ```
 + key (required) – A Valkey or Redis OSS key of JSON document type.

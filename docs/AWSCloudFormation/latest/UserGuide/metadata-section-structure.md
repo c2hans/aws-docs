@@ -27,7 +27,7 @@ To declare custom metadata in your CloudFormation template, use the following sy
 ### JSON
 <a name="metadata-section-structure-syntax.json"></a>
 
-```
+```json
 "Metadata" : {
   "{{Instances}}" : {"{{Description}}" : "{{Information about the instances}}"},
   "{{Databases}}" : {"{{Description}}" : "{{Information about the databases}}"}
@@ -37,7 +37,7 @@ To declare custom metadata in your CloudFormation template, use the following sy
 ### YAML
 <a name="metadata-section-structure-syntax.yaml"></a>
 
-```
+```yaml
 Metadata:
   {{Instances}}:
     {{Description}}: "{{Information about the instances}}"

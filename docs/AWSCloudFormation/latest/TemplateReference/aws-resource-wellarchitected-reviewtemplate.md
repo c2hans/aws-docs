@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-wellarchitected-reviewtemplate-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::WellArchitected::ReviewTemplate",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-wellarchitected-reviewtemplate-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::WellArchitected::ReviewTemplate
 Properties:
   [Description](#cfn-wellarchitected-reviewtemplate-description): {{String}}

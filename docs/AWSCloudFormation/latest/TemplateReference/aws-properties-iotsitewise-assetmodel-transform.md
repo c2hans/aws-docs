@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotsitewise-assetmodel-transform-syntax.json"></a>
 
-```
+```json
 {
   "[Expression](#cfn-iotsitewise-assetmodel-transform-expression)" : {{String}},
   "[Variables](#cfn-iotsitewise-assetmodel-transform-variables)" : {{[ ExpressionVariable, ... ]}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotsitewise-assetmodel-transform-syntax.yaml"></a>
 
-```
+```yaml
   [Expression](#cfn-iotsitewise-assetmodel-transform-expression): {{String}}
   [Variables](#cfn-iotsitewise-assetmodel-transform-variables): {{
     - ExpressionVariable}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-userprofile-emrsettings-syntax.json"></a>
 
-```
+```json
 {
   "[AssumableRoleArns](#cfn-sagemaker-userprofile-emrsettings-assumablerolearns)" : {{[ String, ... ]}},
   "[ExecutionRoleArns](#cfn-sagemaker-userprofile-emrsettings-executionrolearns)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-userprofile-emrsettings-syntax.yaml"></a>
 
-```
+```yaml
   [AssumableRoleArns](#cfn-sagemaker-userprofile-emrsettings-assumablerolearns): {{
     - String}}
   [ExecutionRoleArns](#cfn-sagemaker-userprofile-emrsettings-executionrolearns): {{

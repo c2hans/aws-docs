@@ -58,7 +58,7 @@ Rules define how to inspect web requests and what to do when a web request match
 **Example web ACL rule to limit request body size**
 The following is an example of a rule that limits the body size of requests. This would be entered into the **Rule JSON editor** when creating a web ACL in the AWS WAF Console.
 
-```
+```json
 {
     "Name": "BodySizeRule",
     "Priority": 1,
@@ -98,7 +98,7 @@ After you create a new web ACL in the AWS WAF Console, it can take a few minutes
 **Example web ACL rule to limit requests from a single IP address**
 The following is an example of a rule that throttles an AppSync API to 100 requests from a single IP address. This would be entered into the **Rule JSON editor** when creating a web ACL with a rate-based rule in the AWS WAF Console.
 
-```
+```json
 {
   "Name": "Throttle",
   "Priority": 0,
@@ -127,7 +127,7 @@ aws waf associate-web-acl --web-acl-id {{waf-web-acl-arn}} --resource-arn {{apps
 **Example web ACL rule to prevent GraphQL \_\_schema introspection queries to an API**
 The following is an example of a rule that prevents GraphQL \_\_schema introspection queries to an API. Any HTTP body that includes the string "\_\_schema" will be blocked. This would be entered into the **Rule JSON editor** when creating a web ACL in the AWS WAF Console.
 
-```
+```json
 {
   "Name": "BodyRule",
   "Priority": 5,

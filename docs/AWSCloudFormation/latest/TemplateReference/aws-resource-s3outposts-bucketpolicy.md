@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-s3outposts-bucketpolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::S3Outposts::BucketPolicy",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-s3outposts-bucketpolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::S3Outposts::BucketPolicy
 Properties:
   [Bucket](#cfn-s3outposts-bucketpolicy-bucket): {{String}}
@@ -87,7 +87,7 @@ To add a bucket policy to a bucket, you must create your Outposts bucket before 
 #### JSON
 <a name="aws-resource-s3outposts-bucketpolicy--examples--Create_an_Amazon_S3_on_Outposts_bucket_with_a_bucket_policy--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Bucket with no tags + Bucket Policy",
@@ -154,7 +154,7 @@ To add a bucket policy to a bucket, you must create your Outposts bucket before 
 #### YAML
 <a name="aws-resource-s3outposts-bucketpolicy--examples--Create_an_Amazon_S3_on_Outposts_bucket_with_a_bucket_policy--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Bucket with no tags + Bucket Policy
 Resources:

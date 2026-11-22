@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspacesweb-browsersettings-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-workspacesweb-browsersettings-tag-key)" : {{String}},
   "[Value](#cfn-workspacesweb-browsersettings-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspacesweb-browsersettings-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-workspacesweb-browsersettings-tag-key): {{String}}
   [Value](#cfn-workspacesweb-browsersettings-tag-value): {{String}}
 ```

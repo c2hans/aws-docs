@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-appimageconfig-filesystemconfig-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultGid](#cfn-sagemaker-appimageconfig-filesystemconfig-defaultgid)" : {{Integer}},
   "[DefaultUid](#cfn-sagemaker-appimageconfig-filesystemconfig-defaultuid)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-appimageconfig-filesystemconfig-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultGid](#cfn-sagemaker-appimageconfig-filesystemconfig-defaultgid): {{Integer}}
   [DefaultUid](#cfn-sagemaker-appimageconfig-filesystemconfig-defaultuid): {{Integer}}
   [MountPath](#cfn-sagemaker-appimageconfig-filesystemconfig-mountpath): {{String}}

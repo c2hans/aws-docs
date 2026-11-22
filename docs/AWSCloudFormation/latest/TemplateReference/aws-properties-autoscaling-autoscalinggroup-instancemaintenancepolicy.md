@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-autoscaling-autoscalinggroup-instancemaintenancepolicy-syntax.json"></a>
 
-```
+```json
 {
   "[MaxHealthyPercentage](#cfn-autoscaling-autoscalinggroup-instancemaintenancepolicy-maxhealthypercentage)" : {{Integer}},
   "[MinHealthyPercentage](#cfn-autoscaling-autoscalinggroup-instancemaintenancepolicy-minhealthypercentage)" : {{Integer}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-autoscaling-autoscalinggroup-instancemaintenancepolicy-syntax.yaml"></a>
 
-```
+```yaml
   [MaxHealthyPercentage](#cfn-autoscaling-autoscalinggroup-instancemaintenancepolicy-maxhealthypercentage): {{Integer}}
   [MinHealthyPercentage](#cfn-autoscaling-autoscalinggroup-instancemaintenancepolicy-minhealthypercentage): {{Integer}}
 ```

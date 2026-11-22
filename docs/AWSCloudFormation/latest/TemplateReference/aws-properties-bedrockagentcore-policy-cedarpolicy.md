@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-policy-cedarpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[Statement](#cfn-bedrockagentcore-policy-cedarpolicy-statement)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-policy-cedarpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [Statement](#cfn-bedrockagentcore-policy-cedarpolicy-statement): {{String}}
 ```
 

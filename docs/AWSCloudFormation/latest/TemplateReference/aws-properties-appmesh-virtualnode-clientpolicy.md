@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-virtualnode-clientpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[TLS](#cfn-appmesh-virtualnode-clientpolicy-tls)" : {{ClientPolicyTls}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-virtualnode-clientpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [TLS](#cfn-appmesh-virtualnode-clientpolicy-tls): {{
     ClientPolicyTls}}
 ```

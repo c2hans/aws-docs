@@ -63,7 +63,7 @@ Creates a new portal product.
 #### POST schema
 <a name="portalproducts-request-body-post-example"></a>
 
-```
+```json
 {
   "displayName": "string",
   "description": "string",
@@ -78,7 +78,7 @@ Creates a new portal product.
 #### ListPortalProductsResponseContent schema
 <a name="portalproducts-response-body-listportalproductsresponsecontent-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "items": [
@@ -98,7 +98,7 @@ Creates a new portal product.
 #### CreatePortalProductResponseContent schema
 <a name="portalproducts-response-body-createportalproductresponsecontent-example"></a>
 
-```
+```json
 {
   "displayName": "string",
   "displayOrder": {
@@ -127,7 +127,7 @@ Creates a new portal product.
 #### BadRequestExceptionResponseContent schema
 <a name="portalproducts-response-body-badrequestexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -136,7 +136,7 @@ Creates a new portal product.
 #### AccessDeniedExceptionResponseContent schema
 <a name="portalproducts-response-body-accessdeniedexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -145,7 +145,7 @@ Creates a new portal product.
 #### LimitExceededExceptionResponseContent schema
 <a name="portalproducts-response-body-limitexceededexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

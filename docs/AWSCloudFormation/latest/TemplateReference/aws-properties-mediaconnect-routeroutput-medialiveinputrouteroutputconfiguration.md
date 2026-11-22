@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-routeroutput-medialiveinputrouteroutputconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationTransitEncryption](#cfn-mediaconnect-routeroutput-medialiveinputrouteroutputconfiguration-destinationtransitencryption)" : {{MediaLiveTransitEncryption}},
   "[MediaLiveInputArn](#cfn-mediaconnect-routeroutput-medialiveinputrouteroutputconfiguration-medialiveinputarn)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-routeroutput-medialiveinputrouteroutputconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationTransitEncryption](#cfn-mediaconnect-routeroutput-medialiveinputrouteroutputconfiguration-destinationtransitencryption): {{
     MediaLiveTransitEncryption}}
   [MediaLiveInputArn](#cfn-mediaconnect-routeroutput-medialiveinputrouteroutputconfiguration-medialiveinputarn): {{String}}

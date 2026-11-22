@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iam-grouppolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IAM::GroupPolicy",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iam-grouppolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IAM::GroupPolicy
 Properties:
   [GroupName](#cfn-iam-grouppolicy-groupname): {{String}}
@@ -104,7 +104,7 @@ This example shows an inline policy document in `AWS::IAM::GroupPolicy`. The pol
 #### JSON
 <a name="aws-resource-iam-grouppolicy--examples--Group_embedded_inline_policy_document--json"></a>
 
-```
+```json
 {
     "Type": "AWS::IAM::GroupPolicy",
     "Properties": {
@@ -131,7 +131,7 @@ This example shows an inline policy document in `AWS::IAM::GroupPolicy`. The pol
 #### YAML
 <a name="aws-resource-iam-grouppolicy--examples--Group_embedded_inline_policy_document--yaml"></a>
 
-```
+```yaml
 Type: 'AWS::IAM::GroupPolicy'
 Properties:
   PolicyName: CFNUsers
@@ -155,7 +155,7 @@ This example shows an inline policy document in `AWS::IAM::GroupPolicy`. The exa
 #### JSON
 <a name="aws-resource-iam-grouppolicy--examples--Group_embedded_inline_policy_document_with_Ref_function--json"></a>
 
-```
+```json
 {
     "Type": "AWS::IAM::GroupPolicy",
     "Properties": {
@@ -184,7 +184,7 @@ This example shows an inline policy document in `AWS::IAM::GroupPolicy`. The exa
 #### YAML
 <a name="aws-resource-iam-grouppolicy--examples--Group_embedded_inline_policy_document_with_Ref_function--yaml"></a>
 
-```
+```yaml
 Type: 'AWS::IAM::GroupPolicy'
 Properties:
   PolicyName: CFNUsers

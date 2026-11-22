@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotfleetwise-vehicle-statetemplateupdatestrategy-syntax.json"></a>
 
-```
+```json
 {
   "[OnChange](#cfn-iotfleetwise-vehicle-statetemplateupdatestrategy-onchange)" : {{Json}},
   "[Periodic](#cfn-iotfleetwise-vehicle-statetemplateupdatestrategy-periodic)" : {{PeriodicStateTemplateUpdateStrategy}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotfleetwise-vehicle-statetemplateupdatestrategy-syntax.yaml"></a>
 
-```
+```yaml
   [OnChange](#cfn-iotfleetwise-vehicle-statetemplateupdatestrategy-onchange): {{Json}}
   [Periodic](#cfn-iotfleetwise-vehicle-statetemplateupdatestrategy-periodic): {{
     PeriodicStateTemplateUpdateStrategy}}

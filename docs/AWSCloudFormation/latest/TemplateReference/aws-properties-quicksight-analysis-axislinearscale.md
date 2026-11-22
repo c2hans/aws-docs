@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-axislinearscale-syntax.json"></a>
 
-```
+```json
 {
   "[StepCount](#cfn-quicksight-analysis-axislinearscale-stepcount)" : {{Number}},
   "[StepSize](#cfn-quicksight-analysis-axislinearscale-stepsize)" : {{Number}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-axislinearscale-syntax.yaml"></a>
 
-```
+```yaml
   [StepCount](#cfn-quicksight-analysis-axislinearscale-stepcount): {{Number}}
   [StepSize](#cfn-quicksight-analysis-axislinearscale-stepsize): {{Number}}
 ```

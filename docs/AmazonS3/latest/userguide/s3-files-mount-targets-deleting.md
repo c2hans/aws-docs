@@ -34,6 +34,6 @@ Use the Amazon S3 console to delete a mount target for S3 Files.
 
 The following `delete-mount-target` command deletes a mount target for S3 Files using the AWS CLI.
 
-```
+```bash
 aws s3files delete-mount-target --region {{aws-region}} --mount-target-id {{mount-target-id}}
 ```

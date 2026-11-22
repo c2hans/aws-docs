@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ecr-registrypolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ECR::RegistryPolicy",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ecr-registrypolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ECR::RegistryPolicy
 Properties:
   [PolicyText](#cfn-ecr-registrypolicy-policytext): {{Json}}
@@ -72,7 +72,7 @@ The following example specifies a private registry policy in `us-west-2` that gr
 #### JSON
 <a name="aws-resource-ecr-registrypolicy--examples--Specify_a_registry_policy_for_a_private_registry--json"></a>
 
-```
+```json
 "TestRegistryPolicy": {
    "Type": "AWS::ECR::RegistryPolicy",
    "Properties": {
@@ -100,7 +100,7 @@ The following example specifies a private registry policy in `us-west-2` that gr
 #### YAML
 <a name="aws-resource-ecr-registrypolicy--examples--Specify_a_registry_policy_for_a_private_registry--yaml"></a>
 
-```
+```yaml
 Resources:
   TestRegistryPolicy:
     Type: 'AWS::ECR::RegistryPolicy'

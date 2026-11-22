@@ -114,7 +114,7 @@ Deletes the specified configuration.
 #### PUT schema
 <a name="configurations-configuration-id-request-body-put-example"></a>
 
-```
+```json
 {
   "data": "string",
   "description": "string"
@@ -127,7 +127,7 @@ Deletes the specified configuration.
 #### Configuration schema
 <a name="configurations-configuration-id-response-body-configuration-example"></a>
 
-```
+```json
 {
   "engineVersion": "string",
   "created": "string",
@@ -150,7 +150,7 @@ Deletes the specified configuration.
 #### UpdateConfigurationOutput schema
 <a name="configurations-configuration-id-response-body-updateconfigurationoutput-example"></a>
 
-```
+```json
 {
   "created": "string",
   "warnings": [
@@ -174,7 +174,7 @@ Deletes the specified configuration.
 #### DeleteConfigurationOutput schema
 <a name="configurations-configuration-id-response-body-deleteconfigurationoutput-example"></a>
 
-```
+```json
 {
   "configurationId": "string"
 }
@@ -183,7 +183,7 @@ Deletes the specified configuration.
 #### Error schema
 <a name="configurations-configuration-id-response-body-error-example"></a>
 
-```
+```json
 {
   "errorAttribute": "string",
   "message": "string"

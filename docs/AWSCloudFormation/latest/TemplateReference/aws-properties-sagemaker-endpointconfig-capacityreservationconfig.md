@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-endpointconfig-capacityreservationconfig-syntax.json"></a>
 
-```
+```json
 {
   "[CapacityReservationPreference](#cfn-sagemaker-endpointconfig-capacityreservationconfig-capacityreservationpreference)" : {{String}},
   "[MlReservationArn](#cfn-sagemaker-endpointconfig-capacityreservationconfig-mlreservationarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-endpointconfig-capacityreservationconfig-syntax.yaml"></a>
 
-```
+```yaml
   [CapacityReservationPreference](#cfn-sagemaker-endpointconfig-capacityreservationconfig-capacityreservationpreference): {{String}}
   [MlReservationArn](#cfn-sagemaker-endpointconfig-capacityreservationconfig-mlreservationarn): {{String}}
 ```

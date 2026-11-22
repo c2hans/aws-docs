@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-redshift-endpointaccess-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Redshift::EndpointAccess",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-redshift-endpointaccess-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Redshift::EndpointAccess
 Properties:
   [ClusterIdentifier](#cfn-redshift-endpointaccess-clusteridentifier): {{String}}

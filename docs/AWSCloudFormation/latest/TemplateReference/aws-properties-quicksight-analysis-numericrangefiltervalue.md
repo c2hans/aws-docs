@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-numericrangefiltervalue-syntax.json"></a>
 
-```
+```json
 {
   "[Parameter](#cfn-quicksight-analysis-numericrangefiltervalue-parameter)" : {{String}},
   "[StaticValue](#cfn-quicksight-analysis-numericrangefiltervalue-staticvalue)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-numericrangefiltervalue-syntax.yaml"></a>
 
-```
+```yaml
   [Parameter](#cfn-quicksight-analysis-numericrangefiltervalue-parameter): {{String}}
   [StaticValue](#cfn-quicksight-analysis-numericrangefiltervalue-staticvalue): {{Number}}
 ```

@@ -17,7 +17,7 @@ The following policy limits the user to creating alarms that can only send Amazo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

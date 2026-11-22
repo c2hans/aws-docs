@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iottwinmaker-componenttype-function-syntax.json"></a>
 
-```
+```json
 {
   "[ImplementedBy](#cfn-iottwinmaker-componenttype-function-implementedby)" : {{DataConnector}},
   "[RequiredProperties](#cfn-iottwinmaker-componenttype-function-requiredproperties)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iottwinmaker-componenttype-function-syntax.yaml"></a>
 
-```
+```yaml
   [ImplementedBy](#cfn-iottwinmaker-componenttype-function-implementedby): {{
     DataConnector}}
   [RequiredProperties](#cfn-iottwinmaker-componenttype-function-requiredproperties): {{

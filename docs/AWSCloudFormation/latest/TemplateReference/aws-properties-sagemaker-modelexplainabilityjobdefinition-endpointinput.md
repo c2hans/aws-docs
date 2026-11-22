@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelexplainabilityjobdefinition-endpointinput-syntax.json"></a>
 
-```
+```json
 {
   "[EndpointName](#cfn-sagemaker-modelexplainabilityjobdefinition-endpointinput-endpointname)" : {{String}},
   "[FeaturesAttribute](#cfn-sagemaker-modelexplainabilityjobdefinition-endpointinput-featuresattribute)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelexplainabilityjobdefinition-endpointinput-syntax.yaml"></a>
 
-```
+```yaml
   [EndpointName](#cfn-sagemaker-modelexplainabilityjobdefinition-endpointinput-endpointname): {{String}}
   [FeaturesAttribute](#cfn-sagemaker-modelexplainabilityjobdefinition-endpointinput-featuresattribute): {{String}}
   [InferenceAttribute](#cfn-sagemaker-modelexplainabilityjobdefinition-endpointinput-inferenceattribute): {{String}}

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-failovercondition-syntax.json"></a>
 
-```
+```json
 {
   "[FailoverConditionSettings](#cfn-medialive-channel-failovercondition-failoverconditionsettings)" : {{FailoverConditionSettings}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-failovercondition-syntax.yaml"></a>
 
-```
+```yaml
   [FailoverConditionSettings](#cfn-medialive-channel-failovercondition-failoverconditionsettings): {{
     FailoverConditionSettings}}
 ```

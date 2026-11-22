@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-route53resolver-resolverqueryloggingconfig-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Route53Resolver::ResolverQueryLoggingConfig",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-route53resolver-resolverqueryloggingconfig-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53Resolver::ResolverQueryLoggingConfig
 Properties:
   [DestinationArn](#cfn-route53resolver-resolverqueryloggingconfig-destinationarn): {{String}}

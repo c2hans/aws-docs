@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-cluster-prometheus-syntax.json"></a>
 
-```
+```json
 {
   "[JmxExporter](#cfn-msk-cluster-prometheus-jmxexporter)" : {{JmxExporter}},
   "[NodeExporter](#cfn-msk-cluster-prometheus-nodeexporter)" : {{NodeExporter}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-cluster-prometheus-syntax.yaml"></a>
 
-```
+```yaml
   [JmxExporter](#cfn-msk-cluster-prometheus-jmxexporter): {{
     JmxExporter}}
   [NodeExporter](#cfn-msk-cluster-prometheus-nodeexporter): {{

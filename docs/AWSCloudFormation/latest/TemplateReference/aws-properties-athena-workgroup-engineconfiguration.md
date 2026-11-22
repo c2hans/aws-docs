@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-athena-workgroup-engineconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AdditionalConfigs](#cfn-athena-workgroup-engineconfiguration-additionalconfigs)" : {{{{{Key}}: {{Value}}, ...}}},
   "[Classifications](#cfn-athena-workgroup-engineconfiguration-classifications)" : {{[ Classification, ... ]}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-athena-workgroup-engineconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AdditionalConfigs](#cfn-athena-workgroup-engineconfiguration-additionalconfigs): {{
     {{Key}}: {{Value}}}}
   [Classifications](#cfn-athena-workgroup-engineconfiguration-classifications): {{

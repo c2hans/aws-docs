@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-transitgatewaypeeringattachment-transitgatewaypeeringattachmentoptions-syntax.json"></a>
 
-```
+```json
 {
   "[AllowMultipathResilience](#cfn-ec2-transitgatewaypeeringattachment-transitgatewaypeeringattachmentoptions-allowmultipathresilience)" : {{Boolean}},
   "[MultipathResilienceMode](#cfn-ec2-transitgatewaypeeringattachment-transitgatewaypeeringattachmentoptions-multipathresiliencemode)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-transitgatewaypeeringattachment-transitgatewaypeeringattachmentoptions-syntax.yaml"></a>
 
-```
+```yaml
   [AllowMultipathResilience](#cfn-ec2-transitgatewaypeeringattachment-transitgatewaypeeringattachmentoptions-allowmultipathresilience): {{Boolean}}
   [MultipathResilienceMode](#cfn-ec2-transitgatewaypeeringattachment-transitgatewaypeeringattachmentoptions-multipathresiliencemode): {{String}}
 ```

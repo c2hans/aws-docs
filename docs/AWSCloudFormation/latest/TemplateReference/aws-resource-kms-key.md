@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-kms-key-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::KMS::Key",
   "Properties" : {
@@ -59,7 +59,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-kms-key-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::KMS::Key
 Properties:
   [BypassPolicyLockoutSafetyCheck](#cfn-kms-key-bypasspolicylockoutsafetycheck): {{Boolean}}
@@ -283,7 +283,7 @@ The following example creates a symmetric encryption KMS key. The key policy for
 #### JSON
 <a name="aws-resource-kms-key--examples--Create_a_symmetric_encryption_KMS_key--json"></a>
 
-```
+```json
 "myKey": {
         "Type": "AWS::KMS::Key",
         "Properties": {
@@ -350,7 +350,7 @@ The following example creates a symmetric encryption KMS key. The key policy for
 #### YAML
 <a name="aws-resource-kms-key--examples--Create_a_symmetric_encryption_KMS_key--yaml"></a>
 
-```
+```yaml
 myKey:
   Type: 'AWS::KMS::Key'
   Properties:
@@ -410,7 +410,7 @@ Tagging or untagging a KMS key can allow or deny permission to the KMS key. For 
 #### JSON
 <a name="aws-resource-kms-key--examples--Create_a_symmetric_encryption_KMS_key_with_a_resource_tag--json"></a>
 
-```
+```json
 "myKeyWithTag": {
         "Type": "AWS::KMS::Key",
         "Properties": {
@@ -465,7 +465,7 @@ Tagging or untagging a KMS key can allow or deny permission to the KMS key. For 
 #### YAML
 <a name="aws-resource-kms-key--examples--Create_a_symmetric_encryption_KMS_key_with_a_resource_tag--yaml"></a>
 
-```
+```yaml
 myKeyWithTag:
   Type: 'AWS::KMS::Key'
   Properties:
@@ -501,7 +501,7 @@ The following example creates an RSA asymmetric KMS key for signing and verifica
 #### JSON
 <a name="aws-resource-kms-key--examples--Create_an_asymmetric_KMS_key--json"></a>
 
-```
+```json
 "RSASigningKey": {
         "Type": "AWS::KMS::Key",
         "Properties": {
@@ -565,7 +565,7 @@ The following example creates an RSA asymmetric KMS key for signing and verifica
 #### YAML
 <a name="aws-resource-kms-key--examples--Create_an_asymmetric_KMS_key--yaml"></a>
 
-```
+```yaml
 RSASigningKey:
   Type: 'AWS::KMS::Key'
   Properties:
@@ -619,7 +619,7 @@ The following example creates an HMAC KMS key. For an HMAC KMS key, you must spe
 #### JSON
 <a name="aws-resource-kms-key--examples--Create_an_HMAC_KMS_key--json"></a>
 
-```
+```json
 {
     "HMACExampleKey": {
         "Type": "AWS::KMS::Key",
@@ -685,7 +685,7 @@ The following example creates an HMAC KMS key. For an HMAC KMS key, you must spe
 #### YAML
 <a name="aws-resource-kms-key--examples--Create_an_HMAC_KMS_key--yaml"></a>
 
-```
+```yaml
 HMACExampleKey:
   Type: 'AWS::KMS::Key'
   Properties:
@@ -743,7 +743,7 @@ To replicate this primary key into a different AWS Region, use the [AWS::KMS::Re
 #### JSON
 <a name="aws-resource-kms-key--examples--Create_a_multi-Region_primary_key--json"></a>
 
-```
+```json
 "myPrimaryKey": {
         "Type": "AWS::KMS::Key",
         "Properties": {
@@ -812,7 +812,7 @@ To replicate this primary key into a different AWS Region, use the [AWS::KMS::Re
 #### YAML
 <a name="aws-resource-kms-key--examples--Create_a_multi-Region_primary_key--yaml"></a>
 
-```
+```yaml
 myPrimaryKey:
   Type: 'AWS::KMS::Key'
   Properties:

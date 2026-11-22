@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancingv2-listener-listenerattribute-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-elasticloadbalancingv2-listener-listenerattribute-key)" : {{String}},
   "[Value](#cfn-elasticloadbalancingv2-listener-listenerattribute-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancingv2-listener-listenerattribute-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-elasticloadbalancingv2-listener-listenerattribute-key): {{String}}
   [Value](#cfn-elasticloadbalancingv2-listener-listenerattribute-value): {{String}}
 ```
@@ -83,7 +83,7 @@ The following example defines a TCP listener, specifying the `tcp.idle_timeout.s
 #### YAML
 <a name="aws-properties-elasticloadbalancingv2-listener-listenerattribute--examples----yaml"></a>
 
-```
+```yaml
 myTCPListener:
     Type: AWS::ElasticLoadBalancingV2::Listener
     Properties:
@@ -101,7 +101,7 @@ myTCPListener:
 #### JSON
 <a name="aws-properties-elasticloadbalancingv2-listener-listenerattribute--examples----json"></a>
 
-```
+```json
 {
     "myTCPListener": {
         "Type": "AWS::ElasticLoadBalancingV2::Listener",

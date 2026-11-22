@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-billingconductor-billinggroup-computationpreference-syntax.json"></a>
 
-```
+```json
 {
   "[PricingPlanArn](#cfn-billingconductor-billinggroup-computationpreference-pricingplanarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-billingconductor-billinggroup-computationpreference-syntax.yaml"></a>
 
-```
+```yaml
   [PricingPlanArn](#cfn-billingconductor-billinggroup-computationpreference-pricingplanarn): {{String}}
 ```
 

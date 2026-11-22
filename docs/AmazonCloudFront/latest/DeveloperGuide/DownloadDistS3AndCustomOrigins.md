@@ -104,7 +104,7 @@ If you're using Amazon S3 Object Lambda as an origin for your distribution, you 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -151,7 +151,7 @@ If you're using Amazon S3 Object Lambda as an origin for your distribution, you 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Id": "default",
@@ -203,7 +203,7 @@ If you're using Amazon S3 Object Lambda as an origin for your distribution, you 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -298,7 +298,7 @@ If you're using Amazon S3 Object Lambda as an origin for your distribution, you 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Id": "default",
@@ -346,7 +346,7 @@ If you're using Amazon S3 Object Lambda as an origin for your distribution, you 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

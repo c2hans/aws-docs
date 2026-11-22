@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codedeploy-deploymentgroup-alarmconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Alarms](#cfn-codedeploy-deploymentgroup-alarmconfiguration-alarms)" : {{[ Alarm, ... ]}},
   "[Enabled](#cfn-codedeploy-deploymentgroup-alarmconfiguration-enabled)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codedeploy-deploymentgroup-alarmconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Alarms](#cfn-codedeploy-deploymentgroup-alarmconfiguration-alarms): {{
     - Alarm}}
   [Enabled](#cfn-codedeploy-deploymentgroup-alarmconfiguration-enabled): {{Boolean}}

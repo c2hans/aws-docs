@@ -74,7 +74,7 @@ To use Regional endpoint API operations (bucket-level or control plane operation
 
 ****
 
-   ```
+   ```json
    {
         "Version":"2012-10-17",
         "Statement": [

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ecs-cluster-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ECS::Cluster",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ecs-cluster-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ECS::Cluster
 Properties:
   [CapacityProviders](#cfn-ecs-cluster-capacityproviders): {{
@@ -156,7 +156,7 @@ The following example creates a cluster named `MyFargateCluster` with the `FARGA
 #### JSON
 <a name="aws-resource-ecs-cluster--examples--Create_a_cluster_with_Fargate_capacity_providers_and_a_default_capacity_provider_strategy--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -189,7 +189,7 @@ The following example creates a cluster named `MyFargateCluster` with the `FARGA
 #### YAML
 <a name="aws-resource-ecs-cluster--examples--Create_a_cluster_with_Fargate_capacity_providers_and_a_default_capacity_provider_strategy--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   ECSCluster:
@@ -217,7 +217,7 @@ The following example creates a cluster named `MyCluster` with a capacity provid
 #### JSON
 <a name="aws-resource-ecs-cluster--examples--Create_a_cluster_with_the_Amazon_Linux_2023_ECS-Optimized-AMI--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "EC2 ECS cluster that starts out empty, with no EC2 instances yet. An ECS capacity provider automatically launches more EC2 instances as required on the fly when you request ECS to launch services or standalone tasks.",
@@ -493,7 +493,7 @@ The following example creates a cluster named `MyCluster` with a capacity provid
 #### YAML
 <a name="aws-resource-ecs-cluster--examples--Create_a_cluster_with_the_Amazon_Linux_2023_ECS-Optimized-AMI--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: EC2 ECS cluster that starts out empty, with no EC2 instances yet.
   An ECS capacity provider automatically launches more EC2 instances as required
@@ -711,7 +711,7 @@ The following example creates an empty cluster named `MyCluster` that has CloudW
 #### JSON
 <a name="aws-resource-ecs-cluster--examples--Create_an_empty_cluster_with_CloudWatch_Container_Insights_enabled_and_defined_tags--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -740,7 +740,7 @@ The following example creates an empty cluster named `MyCluster` that has CloudW
 #### YAML
 <a name="aws-resource-ecs-cluster--examples--Create_an_empty_cluster_with_CloudWatch_Container_Insights_enabled_and_defined_tags--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   ECSCluster:

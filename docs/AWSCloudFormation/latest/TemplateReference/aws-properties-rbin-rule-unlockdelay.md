@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rbin-rule-unlockdelay-syntax.json"></a>
 
-```
+```json
 {
   "[UnlockDelayUnit](#cfn-rbin-rule-unlockdelay-unlockdelayunit)" : {{String}},
   "[UnlockDelayValue](#cfn-rbin-rule-unlockdelay-unlockdelayvalue)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rbin-rule-unlockdelay-syntax.yaml"></a>
 
-```
+```yaml
   [UnlockDelayUnit](#cfn-rbin-rule-unlockdelay-unlockdelayunit): {{String}}
   [UnlockDelayValue](#cfn-rbin-rule-unlockdelay-unlockdelayvalue): {{Integer}}
 ```

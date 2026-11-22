@@ -50,7 +50,7 @@ The following example lists directory buckets by using the AWS SDK for Java 2.x.
 **Example**
 The following example lists directory buckets by using the AWS SDK for Python (Boto3).
 
-```
+```Python
 import logging
 import boto3
 from botocore.exceptions import ClientError
@@ -83,7 +83,7 @@ if __name__ == '__main__':
 **Example**
 The following example lists directory buckets by using the AWS SDK for .NET.
 
-```
+```.NET
 var listDirectoryBuckets = await amazonS3Client.ListDirectoryBucketsAsync(new ListDirectoryBucketsRequest
 {
   MaxDirectoryBuckets = 10
@@ -96,7 +96,7 @@ var listDirectoryBuckets = await amazonS3Client.ListDirectoryBucketsAsync(new Li
 **Example**
 The following example lists directory buckets by using the AWS SDK for PHP.
 
-```
+```PHP
 require 'vendor/autoload.php';
 
 $s3Client = new S3Client([
@@ -111,7 +111,7 @@ $result = $s3Client->listDirectoryBuckets();
 **Example**
 The following example lists directory buckets by using the AWS SDK for Ruby.
 
-```
+```Ruby
 s3 = Aws::S3::Client.new(region:'{{us-west-1}}')
 s3.list_directory_buckets
 ```
@@ -123,7 +123,7 @@ s3.list_directory_buckets
 
 The following `list-directory-buckets` example command shows how you can use the AWS CLI to list your directory buckets in the {{us-east-1}} region. To run this command, replace the `{{user input placeholders}}` with your own information.
 
-```
+```bash
 aws s3api list-directory-buckets --region {{us-east-1}}
 ```
 

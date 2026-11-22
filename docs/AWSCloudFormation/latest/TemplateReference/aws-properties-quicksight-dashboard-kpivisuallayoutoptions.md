@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-kpivisuallayoutoptions-syntax.json"></a>
 
-```
+```json
 {
   "[StandardLayout](#cfn-quicksight-dashboard-kpivisuallayoutoptions-standardlayout)" : {{KPIVisualStandardLayout}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-kpivisuallayoutoptions-syntax.yaml"></a>
 
-```
+```yaml
   [StandardLayout](#cfn-quicksight-dashboard-kpivisuallayoutoptions-standardlayout): {{
     KPIVisualStandardLayout}}
 ```

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-dhcpoptions-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::DHCPOptions",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-dhcpoptions-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::DHCPOptions
 Properties:
   [DomainName](#cfn-ec2-dhcpoptions-domainname): {{String}}
@@ -131,7 +131,7 @@ The following example creates a DHCP options set.
 #### YAML
 <a name="aws-resource-ec2-dhcpoptions--examples--Create_a_DHCP_options_set--yaml"></a>
 
-```
+```yaml
 myDhcpOptions:
     Type: AWS::EC2::DHCPOptions
     Properties:
@@ -151,7 +151,7 @@ myDhcpOptions:
 #### JSON
 <a name="aws-resource-ec2-dhcpoptions--examples--Create_a_DHCP_options_set--json"></a>
 
-```
+```json
 {
     "myDhcpOptions" : {
         "Type" : "AWS::EC2::DHCPOptions",

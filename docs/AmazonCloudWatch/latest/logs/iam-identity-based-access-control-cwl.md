@@ -21,7 +21,7 @@ The following is an example of a permissions policy:
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -215,7 +215,7 @@ The following policy allows a user to access all CloudWatch Logs actions.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -242,7 +242,7 @@ AWS provides a **CloudWatchLogsReadOnlyAccess** policy that enables read-only ac
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -280,7 +280,7 @@ When writing IAM policies, the ARN format you use must match the resource type t
 ##### Example 3a: Allow access to log-group-level actions on a specific log group
 <a name="w2aac69c15c15c27c19c13b9"></a>
 
-```
+```JSON
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -303,7 +303,7 @@ These actions authorize on the `log-group` resource type. The standard ARN forma
 ##### Example 3b: Allow access to log-stream-level actions on a specific log group
 <a name="w2aac69c15c15c27c19c13c11"></a>
 
-```
+```JSON
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -325,7 +325,7 @@ These actions authorize on the `log-stream` resource type. The `:*` suffix is re
 ##### Example 3c: Combined policy for both log-group and log-stream actions
 <a name="w2aac69c15c15c27c19c13c13"></a>
 
-```
+```JSON
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -366,7 +366,7 @@ When you tag log groups, you can then grant an IAM policy to a user to allow acc
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -395,7 +395,7 @@ The **StopQuery** and **StopLiveTail** API operations don't interact with AWS re
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":

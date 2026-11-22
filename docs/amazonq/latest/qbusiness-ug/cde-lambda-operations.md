@@ -89,7 +89,7 @@ Both AWS Identity and Access Management (IAM) roles must have the permissions to
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -147,7 +147,7 @@ Both AWS Identity and Access Management (IAM) roles must have the permissions to
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -194,7 +194,7 @@ Both AWS Identity and Access Management (IAM) roles must have the permissions to
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -252,7 +252,7 @@ Both AWS Identity and Access Management (IAM) roles must have the permissions to
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -310,7 +310,7 @@ Both AWS Identity and Access Management (IAM) roles must have the permissions to
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -357,7 +357,7 @@ We recommend that you include `aws:sourceAccount` and `aws:sourceArn` in the tru
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -478,7 +478,7 @@ aws qbusiness create-data-source \
 
 **To configure a Lambda function for advanced data manipulation on the raw, original data**
 
-```
+```python
 import boto3
 from botocore.exceptions import ClientError
 import pprint
@@ -581,7 +581,7 @@ print("Program ends.")
 
 **To configure a Lambda function for advanced data manipulation on the raw, original data**
 
-```
+```java
 package com.amazonaws.qbusiness;
 
 import java.util.concurrent.TimeUnit;
@@ -716,7 +716,7 @@ public class CreateDataSourceWithCustomizationsExample {
 
 Lambda functions for advanced data manipulation interact with Amazon Q Business data contracts. The contracts are the mandatory request and response structures of your Lambda functions. If your Lambda functions don't follow these structures, then Amazon Q Business produces an error. Your Lambda function for `PreExtractionHookConfiguration` should use the following request structure:
 
-```
+```json
 {
     "version": <str>,
     "dataBlobStringEncodedInBase64": <str>, //In the case of a data blob
@@ -728,7 +728,7 @@ Lambda functions for advanced data manipulation interact with Amazon Q Business 
 
 The `metadata` structure, which includes the `DocumentAttribute` structure, is as follows:
 
-```
+```json
 {
     "attributes": [<DocumentAttribute<]
 }
@@ -773,7 +773,7 @@ Your Lambda function for `PostExtractionHookConfiguration` should expect the fol
 
 Your Lambda function for `PostExtractionHookConfiguration` must adhere to the following response structure:
 
-```
+```json
 PostExtractionHookConfiguration Lambda Response
 {
     "version": <str>,
@@ -784,7 +784,7 @@ PostExtractionHookConfiguration Lambda Response
 
 Amazon Q Business uploads your structured document to the specified Amazon S3 bucket. The structured document follows this format:
 
-```
+```json
 QBusiness document
 
 {
@@ -808,7 +808,7 @@ The following Python code is an example of a Lambda function that applies advanc
 
 The following code example shows the case of the body content residing in an Amazon S3 bucket
 
-```
+```python
 import json
 import boto3
 
@@ -845,7 +845,7 @@ def lambda_handler(event, context):
 
 The following Python code is an example of a Lambda function that applies advanced manipulation of the metadata fields `_authors`, `_document_title`, and the body content on the structured or parsed documents.
 
-```
+```python
 import json
 import boto3
 import time
@@ -883,7 +883,7 @@ def lambda_handler(event, context):
 
 **Example 3: Body content residing in a data blob**
 
-```
+```python
 import json
 import boto3
 import base64

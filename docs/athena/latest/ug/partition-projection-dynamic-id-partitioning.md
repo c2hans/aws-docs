@@ -26,7 +26,7 @@ This data set is difficult to manage using traditional metastores. It is difficu
 
 The following `CREATE TABLE` example creates a table for the device event data set just described. The table uses the injected projection type.
 
-```
+```sql
 CREATE EXTERNAL TABLE device_events (
   event_time TIMESTAMP,
   data STRING,
@@ -45,7 +45,7 @@ TBLPROPERTIES (
 
 The following example query looks up the number of events received from three specific devices over the course of 12 hours.
 
-```
+```sql
 SELECT device_id, COUNT(*) AS events
 FROM device_events
 WHERE device_id IN (

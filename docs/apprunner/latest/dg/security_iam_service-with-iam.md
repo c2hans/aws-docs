@@ -169,7 +169,7 @@ When you create your access role, be sure to add a trust policy that declares th
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -205,7 +205,7 @@ When you create your instance role, be sure to add a trust policy that declares 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

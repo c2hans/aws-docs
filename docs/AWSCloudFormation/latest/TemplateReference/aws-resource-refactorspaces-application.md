@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-refactorspaces-application-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RefactorSpaces::Application",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-refactorspaces-application-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RefactorSpaces::Application
 Properties:
   [ApiGatewayProxy](#cfn-refactorspaces-application-apigatewayproxy): {{

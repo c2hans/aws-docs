@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-job-timeoutconfig-syntax.json"></a>
 
-```
+```json
 {
   "[InProgressTimeoutInMinutes](#cfn-iot-job-timeoutconfig-inprogresstimeoutinminutes)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-job-timeoutconfig-syntax.yaml"></a>
 
-```
+```yaml
   [InProgressTimeoutInMinutes](#cfn-iot-job-timeoutconfig-inprogresstimeoutinminutes): {{Integer}}
 ```
 

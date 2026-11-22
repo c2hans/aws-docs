@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-archivegroupsettings-syntax.json"></a>
 
-```
+```json
 {
   "[ArchiveCdnSettings](#cfn-medialive-channel-archivegroupsettings-archivecdnsettings)" : {{ArchiveCdnSettings}},
   "[Destination](#cfn-medialive-channel-archivegroupsettings-destination)" : {{OutputLocationRef}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-archivegroupsettings-syntax.yaml"></a>
 
-```
+```yaml
   [ArchiveCdnSettings](#cfn-medialive-channel-archivegroupsettings-archivecdnsettings): {{
     ArchiveCdnSettings}}
   [Destination](#cfn-medialive-channel-archivegroupsettings-destination): {{

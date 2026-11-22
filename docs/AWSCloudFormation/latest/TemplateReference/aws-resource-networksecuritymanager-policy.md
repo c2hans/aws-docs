@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::NetworkSecurityManager::Policy
 
-The `AWS::NetworkSecurityManager::Policy` resource specifies an AWS Network Security Manager policy. A policy combines templates and rules with enforcement settings for a single firewall type, such as AWS WAF or AWS Shield Advanced.
+The `AWS::NetworkSecurityManager::Policy` resource specifies an AWS Network Security Manager policy. A policy combines templates and rules with enforcement settings for a single firewall type: AWS WAF, AWS Shield Advanced, or the AWS Network Firewall automated internet firewall.
 
 A policy does not protect anything on its own. It takes effect when you associate it with an `AWS::NetworkSecurityManager::Deployment` resource, which supplies the accounts and resources that the policy applies to.
 
@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-networksecuritymanager-policy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::NetworkSecurityManager::Policy",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-networksecuritymanager-policy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::NetworkSecurityManager::Policy
 Properties:
   [AssociatedTemplateAndRuleList](#cfn-networksecuritymanager-policy-associatedtemplateandrulelist): {{
@@ -59,7 +59,7 @@ Properties:
 
 `AssociatedTemplateAndRuleList`  <a name="cfn-networksecuritymanager-policy-associatedtemplateandrulelist"></a>
 The templates and rules to associate with the policy. Each entry in the list must specify exactly one of `TemplateArn` or `RuleArn`. An entry that sets both, or neither, causes the stack operation to fail.
-For AWS WAF policies, specify 1 to 100 templates or rules, of which at most 2 can be templates. For AWS Shield Advanced policies, omit this property or specify an empty list.
+For AWS WAF and `IGW_FIREWALL` policies, specify 1 to 100 templates or rules, of which at most 2 can be templates. Every template and rule must use the same firewall type as the policy. For AWS Shield Advanced policies, omit this property or specify an empty list.
 *Required*: No
 *Type*: Array of [AssociatedTemplateAndRule](aws-properties-networksecuritymanager-policy-associatedtemplateandrule.md)
 *Minimum*: `0`
@@ -67,12 +67,11 @@ For AWS WAF policies, specify 1 to 100 templates or rules, of which at most 2 ca
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `FirewallType`  <a name="cfn-networksecuritymanager-policy-firewalltype"></a>
-The type of firewall that the policy configures. Specify `WAF` for an AWS WAF policy, or `SHIELD_ADVANCED` for an AWS Shield Advanced policy.
+The type of firewall that the policy configures. Specify `WAF` for an AWS WAF policy, `SHIELD_ADVANCED` for an AWS Shield Advanced policy, or `IGW_FIREWALL` for an AWS Network Firewall automated internet firewall policy.
 You can't change the firewall type of a policy after you create it. To use a different firewall type, you must replace the policy.
-*Allowed Values*: `WAF` \| `SHIELD_ADVANCED`
 *Required*: Yes
 *Type*: String
-*Allowed values*: `WAF | SHIELD_ADVANCED`
+*Allowed values*: `WAF | SHIELD_ADVANCED | IGW_FIREWALL`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `PolicyConfiguration`  <a name="cfn-networksecuritymanager-policy-policyconfiguration"></a>
@@ -102,6 +101,7 @@ You can't change the name of a policy after you create it. To use a different na
 `Priority`  <a name="cfn-networksecuritymanager-policy-priority"></a>
 The priority of the policy. A lower number indicates a higher priority. When more than one policy applies to the same resource, Network Security Manager uses the settings of the highest-priority policy to resolve conflicts.
 Each priority can be used by only one policy in an AWS account and AWS Region. Creating a policy with a priority that is already in use fails.
+For `IGW_FIREWALL` policies, only the highest-priority policy that applies to a resource takes effect. Settings from lower-priority policies aren't merged in.
 *Required*: Yes
 *Type*: Integer
 *Minimum*: `1`
@@ -148,7 +148,7 @@ The current status of the policy. Policies that CloudFormation manages are alway
 *Allowed Values*: `DRAFT` \| `ACTIVE`
 
 `UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
-The time when the resource was last updated. For a snapshot, this is the time when the snapshot was created.
+The date and time when the policy was last updated, in ISO 8601 format. For example: `2026-11-19T21:42:56Z`.
 
 `Version`  <a name="Version-fn::getatt"></a>
 The version of the policy. Network Security Manager increments this value each time the policy is published. For example: `3`.
@@ -156,13 +156,17 @@ The version of the policy. Network Security Manager increments this value each t
 ## Examples
 <a name="aws-resource-networksecuritymanager-policy--examples"></a>
 
+**Topics**
++ [Apply a template with automatic remediation](#aws-resource-networksecuritymanager-policy--examples--Apply_a_template_with_automatic_remediation)
++ [Create an internet firewall policy with a subnet connectivity override](#aws-resource-networksecuritymanager-policy--examples--Create_an_internet_firewall_policy_with_a_subnet_connectivity_override)
+
 ### Apply a template with automatic remediation
 <a name="aws-resource-networksecuritymanager-policy--examples--Apply_a_template_with_automatic_remediation"></a>
 
 #### YAML
 <a name="aws-resource-networksecuritymanager-policy--examples--Apply_a_template_with_automatic_remediation--yaml"></a>
 
-```
+```yaml
                 AWSTemplateFormatVersion: "2010-09-09"
                 Description: Combines a Network Security Manager template with enforcement settings.
                 Resources:
@@ -200,4 +204,60 @@ The version of the policy. Network Security Manager increments this value each t
                 Outputs:
                   PolicyArn:
                     Value: !GetAtt BaselinePolicy.PolicyArn
+```
+
+### Create an internet firewall policy with a subnet connectivity override
+<a name="aws-resource-networksecuritymanager-policy--examples--Create_an_internet_firewall_policy_with_a_subnet_connectivity_override"></a>
+
+#### YAML
+<a name="aws-resource-networksecuritymanager-policy--examples--Create_an_internet_firewall_policy_with_a_subnet_connectivity_override--yaml"></a>
+
+```yaml
+                AWSTemplateFormatVersion: "2010-09-09"
+                Description: Creates a Network Firewall automated internet firewall policy that excludes isolated subnets.
+                Resources:
+                  EnforceModeRule:
+                    Type: AWS::NetworkSecurityManager::Rule
+                    Properties:
+                      RuleName: igw-enforce-mode
+                      FirewallType: IGW_FIREWALL
+                      RuleType: INSPECTION
+                      Configuration: '{"PolicyMode":"ENFORCE"}'
+
+                  InternetFirewallTemplate:
+                    Type: AWS::NetworkSecurityManager::Template
+                    Properties:
+                      TemplateName: igw-baseline
+                      FirewallType: IGW_FIREWALL
+                      AssociatedRuleList:
+                        - RuleArn: !GetAtt EnforceModeRule.RuleArn
+
+                  IsolatedSubnetsScope:
+                    Type: AWS::NetworkSecurityManager::Scope
+                    Properties:
+                      ScopeName: isolated-subnets
+                      SpecializedScopeType: IGW_FIREWALL_SUBNET_CONNECTIVITY_OVERRIDE
+                      ScopeConfiguration: '{"ResourceScopes":{"AWS::EC2::Subnet":{"Include":{"Expression":{"Criteria":{"Tags":{"network-zone":"isolated"}}}}}}}'
+
+                  InternetFirewallPolicy:
+                    Type: AWS::NetworkSecurityManager::Policy
+                    Properties:
+                      PolicyName: igw-baseline-policy
+                      PolicyDescription: Inspects internet traffic and excludes isolated subnets.
+                      FirewallType: IGW_FIREWALL
+                      Priority: 200
+                      AssociatedTemplateAndRuleList:
+                        - TemplateArn: !GetAtt InternetFirewallTemplate.TemplateArn
+                      PolicyConfiguration:
+                        RemediationEnabled: true
+                        ResourcesCleanUp: true
+                        IgwFirewallConfig:
+                          DefaultSubnetConnectivity: flexible
+                          SubnetConnectivityOverrides:
+                            - ConnectivityType: exclude
+                              Scopes:
+                                - !GetAtt IsolatedSubnetsScope.ScopeArn
+                Outputs:
+                  PolicyArn:
+                    Value: !GetAtt InternetFirewallPolicy.PolicyArn
 ```

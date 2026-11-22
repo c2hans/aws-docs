@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationsignals-servicelevelobjective-compositesliconfig-syntax.json"></a>
 
-```
+```json
 {
   "[CompositeSliComponents](#cfn-applicationsignals-servicelevelobjective-compositesliconfig-compositeslicomponents)" : {{[ CompositeSliComponent, ... ]}},
   "[SelectionConfig](#cfn-applicationsignals-servicelevelobjective-compositesliconfig-selectionconfig)" : {{SelectionConfig}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationsignals-servicelevelobjective-compositesliconfig-syntax.yaml"></a>
 
-```
+```yaml
   [CompositeSliComponents](#cfn-applicationsignals-servicelevelobjective-compositesliconfig-compositeslicomponents): {{
     - CompositeSliComponent}}
   [SelectionConfig](#cfn-applicationsignals-servicelevelobjective-compositesliconfig-selectionconfig): {{

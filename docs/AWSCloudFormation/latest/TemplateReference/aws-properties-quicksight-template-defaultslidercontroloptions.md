@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-defaultslidercontroloptions-syntax.json"></a>
 
-```
+```json
 {
   "[DisplayOptions](#cfn-quicksight-template-defaultslidercontroloptions-displayoptions)" : {{SliderControlDisplayOptions}},
   "[MaximumValue](#cfn-quicksight-template-defaultslidercontroloptions-maximumvalue)" : {{Number}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-defaultslidercontroloptions-syntax.yaml"></a>
 
-```
+```yaml
   [DisplayOptions](#cfn-quicksight-template-defaultslidercontroloptions-displayoptions): {{
     SliderControlDisplayOptions}}
   [MaximumValue](#cfn-quicksight-template-defaultslidercontroloptions-maximumvalue): {{Number}}

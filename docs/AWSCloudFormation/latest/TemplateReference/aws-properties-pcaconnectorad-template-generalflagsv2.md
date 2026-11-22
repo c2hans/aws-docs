@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcaconnectorad-template-generalflagsv2-syntax.json"></a>
 
-```
+```json
 {
   "[AutoEnrollment](#cfn-pcaconnectorad-template-generalflagsv2-autoenrollment)" : {{Boolean}},
   "[MachineType](#cfn-pcaconnectorad-template-generalflagsv2-machinetype)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcaconnectorad-template-generalflagsv2-syntax.yaml"></a>
 
-```
+```yaml
   [AutoEnrollment](#cfn-pcaconnectorad-template-generalflagsv2-autoenrollment): {{Boolean}}
   [MachineType](#cfn-pcaconnectorad-template-generalflagsv2-machinetype): {{Boolean}}
 ```

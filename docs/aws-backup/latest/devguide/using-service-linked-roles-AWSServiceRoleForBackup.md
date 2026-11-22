@@ -58,7 +58,7 @@ If the AWS Backup service is using the role when you try to delete the resources
 
 1. To delete your default vault, use the following command in the AWS CLI:
 
-   ```
+   ```sh
    aws backup delete-backup-vault --backup-vault-name Default --region {{us-east-1}}
    ```
 

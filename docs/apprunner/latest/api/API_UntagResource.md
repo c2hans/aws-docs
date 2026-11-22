@@ -78,7 +78,7 @@ This example illustrates how to remove two tags from an App Runner service.
 #### Sample Request
 <a name="API_UntagResource_Example_1_Request"></a>
 
-```
+```json
 $ aws apprunner untag-resource --cli-input-json "`cat`"
 {
   "ResourceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
@@ -92,7 +92,7 @@ $ aws apprunner untag-resource --cli-input-json "`cat`"
 #### Sample Response
 <a name="API_UntagResource_Example_1_Response"></a>
 
-```
+```json
 {
 }
 ```

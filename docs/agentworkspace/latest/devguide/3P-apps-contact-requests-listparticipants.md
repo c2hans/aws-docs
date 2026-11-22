@@ -8,13 +8,13 @@ Retrieves all participants associated with a specific contact.
 
  **Signature**
 
-```
+```typescript
 listParticipants(contactId: string): Promise<ParticipantData[]>
 ```
 
  **Usage**
 
-```
+```typescript
 const participants = await contactClient.listParticipants("contact-123");
 participants.forEach((p) => {
     console.log(`Participant ${p.participantId}: ${p.type.value}`);
@@ -45,6 +45,6 @@ Requires an instance that is scoped to the contact that you pass in `contactId`,
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

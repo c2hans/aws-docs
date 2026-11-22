@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-placementconstraint-syntax.json"></a>
 
-```
+```json
 {
   "[Expression](#cfn-ecs-service-placementconstraint-expression)" : {{String}},
   "[Type](#cfn-ecs-service-placementconstraint-type)" : {{String}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-placementconstraint-syntax.yaml"></a>
 
-```
+```yaml
   [Expression](#cfn-ecs-service-placementconstraint-expression): {{String}}
   [Type](#cfn-ecs-service-placementconstraint-type): {{String}}
 ```

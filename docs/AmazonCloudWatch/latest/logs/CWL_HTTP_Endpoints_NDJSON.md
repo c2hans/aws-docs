@@ -105,7 +105,7 @@ If all lines are invalid, returns `HTTP 400` with `"All events were invalid"`.
 ## Example request
 <a name="CWL_NDJSON_Example"></a>
 
-```
+```bash
 curl -X POST "https://logs.<region>.amazonaws.com/ingest/bulk?logGroup=MyLogGroup&logStream=MyStream" \
   -H "Authorization: Bearer ACWL<token>" \
   -H "Content-Type: application/x-ndjson" \
@@ -126,7 +126,7 @@ HTTP 200 OK
 
 **Partial success (some events rejected):**
 
-```
+```JSON
 {
   "partialSuccess": {
     "rejectedLogRecords": 5,

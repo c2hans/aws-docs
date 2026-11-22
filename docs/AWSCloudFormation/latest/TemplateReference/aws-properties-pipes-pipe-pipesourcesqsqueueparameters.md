@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-pipesourcesqsqueueparameters-syntax.json"></a>
 
-```
+```json
 {
   "[BatchSize](#cfn-pipes-pipe-pipesourcesqsqueueparameters-batchsize)" : {{Integer}},
   "[MaximumBatchingWindowInSeconds](#cfn-pipes-pipe-pipesourcesqsqueueparameters-maximumbatchingwindowinseconds)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-pipesourcesqsqueueparameters-syntax.yaml"></a>
 
-```
+```yaml
   [BatchSize](#cfn-pipes-pipe-pipesourcesqsqueueparameters-batchsize): {{Integer}}
   [MaximumBatchingWindowInSeconds](#cfn-pipes-pipe-pipesourcesqsqueueparameters-maximumbatchingwindowinseconds): {{Integer}}
 ```

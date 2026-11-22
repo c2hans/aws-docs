@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-b2bi-transformer-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::B2BI::Transformer",
   "Properties" : {
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-b2bi-transformer-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::B2BI::Transformer
 Properties:
   [InputConversion](#cfn-b2bi-transformer-inputconversion): {{

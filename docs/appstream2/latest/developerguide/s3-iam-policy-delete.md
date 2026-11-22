@@ -13,7 +13,7 @@ WorkSpaces Applications adds an Amazon S3 bucket policy to the buckets that it c
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -37,7 +37,7 @@ WorkSpaces Applications adds an Amazon S3 bucket policy to the buckets that it c
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

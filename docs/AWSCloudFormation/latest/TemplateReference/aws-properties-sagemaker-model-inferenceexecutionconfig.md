@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-model-inferenceexecutionconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Mode](#cfn-sagemaker-model-inferenceexecutionconfig-mode)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-model-inferenceexecutionconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Mode](#cfn-sagemaker-model-inferenceexecutionconfig-mode): {{String}}
 ```
 

@@ -109,7 +109,7 @@ If JMX was enabled with password authentication or SSL for remote access, you ca
 
 The following is an example of the `jmx` section of the CloudWatch agent configuration file.
 
-```
+```json
 {
   "metrics": {
     "metrics_collected": {

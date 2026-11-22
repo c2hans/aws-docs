@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-verifiedpermissions-policy-staticpolicydefinition-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-verifiedpermissions-policy-staticpolicydefinition-description)" : {{String}},
   "[Statement](#cfn-verifiedpermissions-policy-staticpolicydefinition-statement)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-verifiedpermissions-policy-staticpolicydefinition-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-verifiedpermissions-policy-staticpolicydefinition-description): {{String}}
   [Statement](#cfn-verifiedpermissions-policy-staticpolicydefinition-statement): {{String}}
 ```

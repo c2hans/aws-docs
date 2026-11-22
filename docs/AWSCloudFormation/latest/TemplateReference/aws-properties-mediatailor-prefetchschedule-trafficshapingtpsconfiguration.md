@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-prefetchschedule-trafficshapingtpsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[PeakConcurrentUsers](#cfn-mediatailor-prefetchschedule-trafficshapingtpsconfiguration-peakconcurrentusers)" : {{Integer}},
   "[PeakTps](#cfn-mediatailor-prefetchschedule-trafficshapingtpsconfiguration-peaktps)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-prefetchschedule-trafficshapingtpsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [PeakConcurrentUsers](#cfn-mediatailor-prefetchschedule-trafficshapingtpsconfiguration-peakconcurrentusers): {{Integer}}
   [PeakTps](#cfn-mediatailor-prefetchschedule-trafficshapingtpsconfiguration-peaktps): {{Integer}}
 ```

@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-launchtemplate-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::LaunchTemplate",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-launchtemplate-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::LaunchTemplate
 Properties:
   [LaunchTemplateData](#cfn-ec2-launchtemplate-launchtemplatedata): {{
@@ -131,7 +131,7 @@ To see another example that uses an IAM role, user data, and tags for the instan
 #### JSON
 <a name="aws-resource-ec2-launchtemplate--examples--Launch_template_with_an_IAM_instance_profile--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion":"2010-09-09",
   "Resources":{
@@ -168,7 +168,7 @@ To see another example that uses an IAM role, user data, and tags for the instan
 #### YAML
 <a name="aws-resource-ec2-launchtemplate--examples--Launch_template_with_an_IAM_instance_profile--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   MyIamInstanceProfile:
@@ -205,7 +205,7 @@ The launch template also provisions T2 instances in unlimited mode by specifying
 #### JSON
 <a name="aws-resource-ec2-launchtemplate--examples--Launch_template_with_a_block_device_mapping--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources":{
@@ -241,7 +241,7 @@ The launch template also provisions T2 instances in unlimited mode by specifying
 #### YAML
 <a name="aws-resource-ec2-launchtemplate--examples--Launch_template_with_a_block_device_mapping--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   myLaunchTemplate:
@@ -276,7 +276,7 @@ The following example creates a launch template with instance metadata options. 
 #### JSON
 <a name="aws-resource-ec2-launchtemplate--examples--Launch_template_with_instance_metadata_options--json"></a>
 
-```
+```json
 {
     "Resources": {
         "myLaunchTemplate": {
@@ -312,7 +312,7 @@ The following example creates a launch template with instance metadata options. 
 #### YAML
 <a name="aws-resource-ec2-launchtemplate--examples--Launch_template_with_instance_metadata_options--yaml"></a>
 
-```
+```yaml
 Resources:
    myLaunchTemplate:
      Type: 'AWS::EC2::LaunchTemplate'
@@ -343,7 +343,7 @@ For more information about creating launch templates for Amazon EC2 Auto Scaling
 #### JSON
 <a name="aws-resource-ec2-launchtemplate--examples--Launch_template_with_public_IP_addresses_for--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion":"2010-09-09",
   "Resources":{
@@ -381,7 +381,7 @@ For more information about creating launch templates for Amazon EC2 Auto Scaling
 #### YAML
 <a name="aws-resource-ec2-launchtemplate--examples--Launch_template_with_public_IP_addresses_for--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   myLaunchTemplate:

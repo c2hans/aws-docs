@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-flow-aggregationconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AggregationType](#cfn-appflow-flow-aggregationconfig-aggregationtype)" : {{String}},
   "[TargetFileSize](#cfn-appflow-flow-aggregationconfig-targetfilesize)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-flow-aggregationconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AggregationType](#cfn-appflow-flow-aggregationconfig-aggregationtype): {{String}}
   [TargetFileSize](#cfn-appflow-flow-aggregationconfig-targetfilesize): {{Integer}}
 ```

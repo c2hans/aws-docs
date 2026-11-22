@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssmcontacts-rotation-recurrencesettings-syntax.json"></a>
 
-```
+```json
 {
   "[DailySettings](#cfn-ssmcontacts-rotation-recurrencesettings-dailysettings)" : {{[ String, ... ]}},
   "[MonthlySettings](#cfn-ssmcontacts-rotation-recurrencesettings-monthlysettings)" : {{[ MonthlySetting, ... ]}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssmcontacts-rotation-recurrencesettings-syntax.yaml"></a>
 
-```
+```yaml
   [DailySettings](#cfn-ssmcontacts-rotation-recurrencesettings-dailysettings): {{
     - String}}
   [MonthlySettings](#cfn-ssmcontacts-rotation-recurrencesettings-monthlysettings): {{

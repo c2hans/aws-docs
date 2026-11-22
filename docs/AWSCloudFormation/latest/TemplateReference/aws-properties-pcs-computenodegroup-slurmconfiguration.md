@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcs-computenodegroup-slurmconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[GresCustomSettings](#cfn-pcs-computenodegroup-slurmconfiguration-grescustomsettings)" : {{[ {{{Key}}: {{Value}}, ...}, ... ]}},
   "[ScaleDownIdleTimeInSeconds](#cfn-pcs-computenodegroup-slurmconfiguration-scaledownidletimeinseconds)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcs-computenodegroup-slurmconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [GresCustomSettings](#cfn-pcs-computenodegroup-slurmconfiguration-grescustomsettings): {{
     -
     {{Key}}: {{Value}}}}

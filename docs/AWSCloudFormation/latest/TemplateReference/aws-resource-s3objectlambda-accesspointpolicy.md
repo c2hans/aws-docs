@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-s3objectlambda-accesspointpolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::S3ObjectLambda::AccessPointPolicy",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-s3objectlambda-accesspointpolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::S3ObjectLambda::AccessPointPolicy
 Properties:
   [ObjectLambdaAccessPoint](#cfn-s3objectlambda-accesspointpolicy-objectlambdaaccesspoint): {{String}}

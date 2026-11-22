@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-orcserde-syntax.json"></a>
 
-```
+```json
 {
   "[BlockSizeBytes](#cfn-kinesisfirehose-deliverystream-orcserde-blocksizebytes)" : {{Integer}},
   "[BloomFilterColumns](#cfn-kinesisfirehose-deliverystream-orcserde-bloomfiltercolumns)" : {{[ String, ... ]}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-orcserde-syntax.yaml"></a>
 
-```
+```yaml
   [BlockSizeBytes](#cfn-kinesisfirehose-deliverystream-orcserde-blocksizebytes): {{Integer}}
   [BloomFilterColumns](#cfn-kinesisfirehose-deliverystream-orcserde-bloomfiltercolumns): {{
     - String}}

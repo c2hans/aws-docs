@@ -9,7 +9,7 @@ The examples in this section show how to list the databases in metadata by schem
 **Example – Listing databases**
 The following example query lists the databases from the `information_schema.schemata` table.
 
-```
+```sql
 SELECT schema_name
 FROM   information_schema.schemata
 LIMIT  10;
@@ -27,7 +27,7 @@ The following table shows sample results.
 **Example – Searching a specified database**
 In the following example query, `rdspostgresql` is a sample database.
 
-```
+```sql
 SELECT schema_name
 FROM   information_schema.schemata
 WHERE  schema_name = 'rdspostgresql'

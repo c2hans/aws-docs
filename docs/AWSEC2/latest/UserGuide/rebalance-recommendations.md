@@ -48,7 +48,7 @@ When the rebalance recommendation signal is emitted for a Spot Instance, the eve
 
 The following is an example event for the rebalance recommendation signal.
 
-```
+```json
 {
     "version": "0",
     "id": "{{12345678-1234-1234-1234-123456789012}}",
@@ -105,7 +105,7 @@ Before creating the EventBridge rule, you must create the Amazon SNS topic for t
 
    1. For **Event pattern**, for this example you’ll specify the following event pattern to match the `EC2 Instance Rebalance Recommendation` event, and then choose **Save**.
 
-      ```
+      ```JSON
       {
        "source": ["aws.ec2"],
        "detail-type": ["EC2 Instance Rebalance Recommendation"]
@@ -173,7 +173,7 @@ Run the following command from your Linux instance.
 
 **IMDSv2**
 
-```
+```bash
 TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` \
     && curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/events/recommendations/rebalance
 ```
@@ -181,13 +181,13 @@ TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metad
 **Windows**
 Run the following cmdlet from your Windows instance
 
-```
+```powershell
 [string]$token = Invoke-RestMethod `
     -Headers @{"X-aws-ec2-metadata-token-ttl-seconds" = "21600"} `
     -Method PUT -Uri http://169.254.169.254/latest/api/token
 ```
 
-```
+```powershell
 Invoke-RestMethod `
     -Headers @{"X-aws-ec2-metadata-token" = $token} `
     -Method GET -Uri http://169.254.169.254/latest/meta-data/events/recommendations/rebalance
@@ -199,14 +199,14 @@ Invoke-RestMethod `
 **Linux**
 Run the following command from your Linux instance.
 
-```
+```bash
 curl http://169.254.169.254/latest/meta-data/events/recommendations/rebalance
 ```
 
 **Windows**
 Run the following cmdlet from your Windows instance.
 
-```
+```powershell
 Invoke-RestMethod -Uri http://169.254.169.254/latest/meta-data/events/recommendations/rebalance
 ```
 
@@ -214,7 +214,7 @@ Invoke-RestMethod -Uri http://169.254.169.254/latest/meta-data/events/recommenda
 
 The following is example output, which indicates the time, in UTC, that the rebalance recommendation signal was emitted for the Spot Instance.
 
-```
+```JSON
 {"noticeTime": "2020-10-27T08:22:00Z"}
 ```
 

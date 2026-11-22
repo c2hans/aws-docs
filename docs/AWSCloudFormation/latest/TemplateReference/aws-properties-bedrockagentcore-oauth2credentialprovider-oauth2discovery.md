@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-oauth2credentialprovider-oauth2discovery-syntax.json"></a>
 
-```
+```json
 {
   "[AuthorizationServerMetadata](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2discovery-authorizationservermetadata)" : {{Oauth2AuthorizationServerMetadata}},
   "[DiscoveryUrl](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2discovery-discoveryurl)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-oauth2credentialprovider-oauth2discovery-syntax.yaml"></a>
 
-```
+```yaml
   [AuthorizationServerMetadata](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2discovery-authorizationservermetadata): {{
     Oauth2AuthorizationServerMetadata}}
   [DiscoveryUrl](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2discovery-discoveryurl): {{String}}

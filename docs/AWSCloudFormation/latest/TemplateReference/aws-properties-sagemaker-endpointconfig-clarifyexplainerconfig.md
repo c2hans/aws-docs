@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-endpointconfig-clarifyexplainerconfig-syntax.json"></a>
 
-```
+```json
 {
   "[EnableExplanations](#cfn-sagemaker-endpointconfig-clarifyexplainerconfig-enableexplanations)" : {{String}},
   "[InferenceConfig](#cfn-sagemaker-endpointconfig-clarifyexplainerconfig-inferenceconfig)" : {{ClarifyInferenceConfig}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-endpointconfig-clarifyexplainerconfig-syntax.yaml"></a>
 
-```
+```yaml
   [EnableExplanations](#cfn-sagemaker-endpointconfig-clarifyexplainerconfig-enableexplanations): {{String}}
   [InferenceConfig](#cfn-sagemaker-endpointconfig-clarifyexplainerconfig-inferenceconfig): {{
     ClarifyInferenceConfig}}

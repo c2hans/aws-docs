@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sagemaker-dataqualityjobdefinition-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SageMaker::DataQualityJobDefinition",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sagemaker-dataqualityjobdefinition-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SageMaker::DataQualityJobDefinition
 Properties:
   [DataQualityAppSpecification](#cfn-sagemaker-dataqualityjobdefinition-dataqualityappspecification): {{
@@ -177,7 +177,7 @@ The following example creates a Data Quality monitoring job defintion.
 #### JSON
 <a name="aws-resource-sagemaker-dataqualityjobdefinition--examples--SageMaker_DataQualityJobDefinition_Example--json"></a>
 
-```
+```json
 {
    "AWSTemplateFormatVersion": "2010-09-09",
    "Description": "Basic SageMaker Hosting entities to create a data quality job definition",
@@ -411,7 +411,7 @@ The following example creates a Data Quality monitoring job defintion.
 #### YAML
 <a name="aws-resource-sagemaker-dataqualityjobdefinition--examples--SageMaker_DataQualityJobDefinition_Example--yaml"></a>
 
-```
+```yaml
 ---
 
 AWSTemplateFormatVersion: '2010-09-09'

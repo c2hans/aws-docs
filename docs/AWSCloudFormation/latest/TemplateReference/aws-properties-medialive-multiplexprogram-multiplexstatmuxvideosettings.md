@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-multiplexprogram-multiplexstatmuxvideosettings-syntax.json"></a>
 
-```
+```json
 {
   "[MaximumBitrate](#cfn-medialive-multiplexprogram-multiplexstatmuxvideosettings-maximumbitrate)" : {{Integer}},
   "[MinimumBitrate](#cfn-medialive-multiplexprogram-multiplexstatmuxvideosettings-minimumbitrate)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-multiplexprogram-multiplexstatmuxvideosettings-syntax.yaml"></a>
 
-```
+```yaml
   [MaximumBitrate](#cfn-medialive-multiplexprogram-multiplexstatmuxvideosettings-maximumbitrate): {{Integer}}
   [MinimumBitrate](#cfn-medialive-multiplexprogram-multiplexstatmuxvideosettings-minimumbitrate): {{Integer}}
   [Priority](#cfn-medialive-multiplexprogram-multiplexstatmuxvideosettings-priority): {{Integer}}

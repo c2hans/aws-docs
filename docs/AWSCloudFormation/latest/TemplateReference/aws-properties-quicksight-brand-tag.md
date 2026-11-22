@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-brand-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-quicksight-brand-tag-key)" : {{String}},
   "[Value](#cfn-quicksight-brand-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-brand-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-quicksight-brand-tag-key): {{String}}
   [Value](#cfn-quicksight-brand-tag-value): {{String}}
 ```

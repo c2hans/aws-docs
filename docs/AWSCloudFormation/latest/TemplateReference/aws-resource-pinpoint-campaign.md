@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-pinpoint-campaign-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Pinpoint::Campaign",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-pinpoint-campaign-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Pinpoint::Campaign
 Properties:
   [AdditionalTreatments](#cfn-pinpoint-campaign-additionaltreatments): {{

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-bedrockagentcore-dataset-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::BedrockAgentCore::Dataset",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-bedrockagentcore-dataset-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::BedrockAgentCore::Dataset
 Properties:
   [DatasetName](#cfn-bedrockagentcore-dataset-datasetname): {{String}}

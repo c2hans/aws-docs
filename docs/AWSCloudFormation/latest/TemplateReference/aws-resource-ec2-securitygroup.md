@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-securitygroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::SecurityGroup",
   "Properties" : {
@@ -44,7 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-securitygroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::SecurityGroup
 Properties:
   [GroupDescription](#cfn-ec2-securitygroup-groupdescription): {{String}}
@@ -143,7 +143,7 @@ The following example specifies a security group with an ingress and egress rule
 #### JSON
 <a name="aws-resource-ec2-securitygroup--examples--Define_basic_ingress_and_egress_rules--json"></a>
 
-```
+```json
 "InstanceSecurityGroup" : {
     "Type" : "AWS::EC2::SecurityGroup",
     "Properties" : {
@@ -168,7 +168,7 @@ The following example specifies a security group with an ingress and egress rule
 #### YAML
 <a name="aws-resource-ec2-securitygroup--examples--Define_basic_ingress_and_egress_rules--yaml"></a>
 
-```
+```yaml
 InstanceSecurityGroup:
   Type: AWS::EC2::SecurityGroup
   Properties:
@@ -194,7 +194,7 @@ When you specify a VPC security group, Amazon EC2 creates a default egress rule 
 #### JSON
 <a name="aws-resource-ec2-securitygroup--examples--Remove_the_default_rule--json"></a>
 
-```
+```json
 "sgwithoutegress": {
     "Type": "AWS::EC2::SecurityGroup",
     "Properties": {
@@ -211,7 +211,7 @@ When you specify a VPC security group, Amazon EC2 creates a default egress rule 
 #### YAML
 <a name="aws-resource-ec2-securitygroup--examples--Remove_the_default_rule--yaml"></a>
 
-```
+```yaml
 sgwithoutegress:
   Type: AWS::EC2::SecurityGroup
   Properties:
@@ -230,7 +230,7 @@ To allow ping requests, add the ICMP protocol type and specify 8 (echo request) 
 #### JSON
 <a name="aws-resource-ec2-securitygroup--examples--Allow_ping_requests--json"></a>
 
-```
+```json
 "SGPing" : {
     "Type" : "AWS::EC2::SecurityGroup",
     "DependsOn": "VPC",
@@ -257,7 +257,7 @@ To allow ping requests, add the ICMP protocol type and specify 8 (echo request) 
 #### YAML
 <a name="aws-resource-ec2-securitygroup--examples--Allow_ping_requests--yaml"></a>
 
-```
+```yaml
 SGPing:
   Type: AWS::EC2::SecurityGroup
   DependsOn: VPC

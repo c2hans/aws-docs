@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-ec2fleet-ipv6addressrequest-syntax.json"></a>
 
-```
+```json
 {
   "[Ipv6Address](#cfn-ec2-ec2fleet-ipv6addressrequest-ipv6address)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-ec2fleet-ipv6addressrequest-syntax.yaml"></a>
 
-```
+```yaml
   [Ipv6Address](#cfn-ec2-ec2fleet-ipv6addressrequest-ipv6address): {{String}}
 ```
 

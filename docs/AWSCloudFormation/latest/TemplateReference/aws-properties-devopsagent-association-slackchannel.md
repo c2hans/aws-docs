@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-association-slackchannel-syntax.json"></a>
 
-```
+```json
 {
   "[ChannelId](#cfn-devopsagent-association-slackchannel-channelid)" : {{String}},
   "[ChannelName](#cfn-devopsagent-association-slackchannel-channelname)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-association-slackchannel-syntax.yaml"></a>
 
-```
+```yaml
   [ChannelId](#cfn-devopsagent-association-slackchannel-channelid): {{String}}
   [ChannelName](#cfn-devopsagent-association-slackchannel-channelname): {{String}}
 ```

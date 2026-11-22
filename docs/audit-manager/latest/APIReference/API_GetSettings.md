@@ -110,7 +110,7 @@ This response returns the following evidence finder settings:
 #### Sample Response
 <a name="API_GetSettings_Example_1_Response"></a>
 
-```
+```json
 {
     "settings": {
         "evidenceFinderEnablement": {
@@ -132,7 +132,7 @@ This response returns your current data retention preferences. In this case, `de
 #### Sample Response
 <a name="API_GetSettings_Example_2_Response"></a>
 
-```
+```json
 {
     "settings": {
         "deregistrationPolicy": {
@@ -152,7 +152,7 @@ If an SNS topic is in use, the response returns the ARN for that topic.
 #### Sample Response
 <a name="API_GetSettings_Example_3_Response"></a>
 
-```
+```json
 {
     "settings": {
         "snsTopic": "arn:aws:sns:us-east-1:111122223333:my-assessment-topic"
@@ -170,7 +170,7 @@ If one or more default audit owners were specified, the response returns the ARN
 #### Sample Response
 <a name="API_GetSettings_Example_4_Response"></a>
 
-```
+```json
 {
     "settings": {
         "defaultProcessOwners": [

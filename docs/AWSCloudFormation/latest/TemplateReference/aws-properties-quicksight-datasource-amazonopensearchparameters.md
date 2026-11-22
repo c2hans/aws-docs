@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-datasource-amazonopensearchparameters-syntax.json"></a>
 
-```
+```json
 {
   "[Domain](#cfn-quicksight-datasource-amazonopensearchparameters-domain)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-datasource-amazonopensearchparameters-syntax.yaml"></a>
 
-```
+```yaml
   [Domain](#cfn-quicksight-datasource-amazonopensearchparameters-domain): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connectcampaignsv2-campaign-restrictedperiod-syntax.json"></a>
 
-```
+```json
 {
   "[EndDate](#cfn-connectcampaignsv2-campaign-restrictedperiod-enddate)" : {{String}},
   "[Name](#cfn-connectcampaignsv2-campaign-restrictedperiod-name)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connectcampaignsv2-campaign-restrictedperiod-syntax.yaml"></a>
 
-```
+```yaml
   [EndDate](#cfn-connectcampaignsv2-campaign-restrictedperiod-enddate): {{String}}
   [Name](#cfn-connectcampaignsv2-campaign-restrictedperiod-name): {{String}}
   [StartDate](#cfn-connectcampaignsv2-campaign-restrictedperiod-startdate): {{String}}

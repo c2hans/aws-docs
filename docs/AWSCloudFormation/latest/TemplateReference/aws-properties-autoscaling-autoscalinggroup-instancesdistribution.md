@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-autoscaling-autoscalinggroup-instancesdistribution-syntax.json"></a>
 
-```
+```json
 {
   "[DistributionSegments](#cfn-autoscaling-autoscalinggroup-instancesdistribution-distributionsegments)" : {{[ DistributionSegment, ... ]}},
   "[OnDemandAllocationStrategy](#cfn-autoscaling-autoscalinggroup-instancesdistribution-ondemandallocationstrategy)" : {{String}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-autoscaling-autoscalinggroup-instancesdistribution-syntax.yaml"></a>
 
-```
+```yaml
   [DistributionSegments](#cfn-autoscaling-autoscalinggroup-instancesdistribution-distributionsegments): {{
     - DistributionSegment}}
   [OnDemandAllocationStrategy](#cfn-autoscaling-autoscalinggroup-instancesdistribution-ondemandallocationstrategy): {{String}}

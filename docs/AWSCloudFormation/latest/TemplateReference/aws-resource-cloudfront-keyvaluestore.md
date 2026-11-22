@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudfront-keyvaluestore-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudFront::KeyValueStore",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudfront-keyvaluestore-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudFront::KeyValueStore
 Properties:
   [Comment](#cfn-cloudfront-keyvaluestore-comment): {{String}}
@@ -101,7 +101,7 @@ The following example creates a key value store named DemoKeyValueStore and a Cl
 #### JSON
 <a name="aws-resource-cloudfront-keyvaluestore--examples--Key_value_store--json"></a>
 
-```
+```json
 {
     "Resources": {
         "KeyValueStore": {
@@ -130,7 +130,7 @@ The following example creates a key value store named DemoKeyValueStore and a Cl
 #### YAML
 <a name="aws-resource-cloudfront-keyvaluestore--examples--Key_value_store--yaml"></a>
 
-```
+```yaml
 Resources:
   KeyValueStore:
     Type: 'AWS::CloudFront::KeyValueStore'

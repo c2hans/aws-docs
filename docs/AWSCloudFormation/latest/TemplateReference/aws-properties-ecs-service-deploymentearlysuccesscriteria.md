@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-deploymentearlysuccesscriteria-syntax.json"></a>
 
-```
+```json
 {
   "[Enable](#cfn-ecs-service-deploymentearlysuccesscriteria-enable)" : {{Boolean}},
   "[HealthyPercent](#cfn-ecs-service-deploymentearlysuccesscriteria-healthypercent)" : {{Integer}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-deploymentearlysuccesscriteria-syntax.yaml"></a>
 
-```
+```yaml
   [Enable](#cfn-ecs-service-deploymentearlysuccesscriteria-enable): {{Boolean}}
   [HealthyPercent](#cfn-ecs-service-deploymentearlysuccesscriteria-healthypercent): {{Integer}}
   [SourceServiceRevisionCleanup](#cfn-ecs-service-deploymentearlysuccesscriteria-sourceservicerevisioncleanup): {{String}}

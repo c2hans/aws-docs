@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-paymentcryptography-key-keyattributes-syntax.json"></a>
 
-```
+```json
 {
   "[KeyAlgorithm](#cfn-paymentcryptography-key-keyattributes-keyalgorithm)" : {{String}},
   "[KeyClass](#cfn-paymentcryptography-key-keyattributes-keyclass)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-paymentcryptography-key-keyattributes-syntax.yaml"></a>
 
-```
+```yaml
   [KeyAlgorithm](#cfn-paymentcryptography-key-keyattributes-keyalgorithm): {{String}}
   [KeyClass](#cfn-paymentcryptography-key-keyattributes-keyclass): {{String}}
   [KeyModesOfUse](#cfn-paymentcryptography-key-keyattributes-keymodesofuse): {{

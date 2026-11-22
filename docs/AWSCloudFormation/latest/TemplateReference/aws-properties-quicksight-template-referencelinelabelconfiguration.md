@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-referencelinelabelconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CustomLabelConfiguration](#cfn-quicksight-template-referencelinelabelconfiguration-customlabelconfiguration)" : {{ReferenceLineCustomLabelConfiguration}},
   "[FontColor](#cfn-quicksight-template-referencelinelabelconfiguration-fontcolor)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-referencelinelabelconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CustomLabelConfiguration](#cfn-quicksight-template-referencelinelabelconfiguration-customlabelconfiguration): {{
     ReferenceLineCustomLabelConfiguration}}
   [FontColor](#cfn-quicksight-template-referencelinelabelconfiguration-fontcolor): {{String}}

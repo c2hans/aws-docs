@@ -14,7 +14,7 @@ The `Version` policy element specifies the language syntax rules that are to be 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lightsail-database-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-lightsail-database-tag-key)" : {{String}},
   "[Value](#cfn-lightsail-database-tag-value)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lightsail-database-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-lightsail-database-tag-key): {{String}}
   [Value](#cfn-lightsail-database-tag-value): {{String}}
 ```

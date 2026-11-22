@@ -18,7 +18,7 @@ In the signing command, note that `sha1` can be replaced with `sha256` in the `o
 
 The following Perl source code can be used to create a signed URL for CloudFront. Comments in the code include information about the command line switches and the features of the tool.
 
-```
+```perl
 #!/usr/bin/perl -w
 
 # Copyright 2008 Amazon Technologies, Inc.  Licensed under the Apache License, Version 2.0 (the "License");

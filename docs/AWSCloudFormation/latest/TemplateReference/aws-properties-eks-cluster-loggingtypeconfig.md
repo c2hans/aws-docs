@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-cluster-loggingtypeconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-eks-cluster-loggingtypeconfig-type)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-cluster-loggingtypeconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-eks-cluster-loggingtypeconfig-type): {{String}}
 ```
 

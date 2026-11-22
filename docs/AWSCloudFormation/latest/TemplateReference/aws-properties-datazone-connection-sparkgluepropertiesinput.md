@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-connection-sparkgluepropertiesinput-syntax.json"></a>
 
-```
+```json
 {
   "[AdditionalArgs](#cfn-datazone-connection-sparkgluepropertiesinput-additionalargs)" : {{SparkGlueArgs}},
   "[GlueConnectionName](#cfn-datazone-connection-sparkgluepropertiesinput-glueconnectionname)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-connection-sparkgluepropertiesinput-syntax.yaml"></a>
 
-```
+```yaml
   [AdditionalArgs](#cfn-datazone-connection-sparkgluepropertiesinput-additionalargs): {{
     SparkGlueArgs}}
   [GlueConnectionName](#cfn-datazone-connection-sparkgluepropertiesinput-glueconnectionname): {{String}}

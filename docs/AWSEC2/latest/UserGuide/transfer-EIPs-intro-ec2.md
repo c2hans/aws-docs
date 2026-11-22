@@ -66,7 +66,7 @@ These steps must be completed by the source account.
 
 Use the [enable-address-transfer](https://docs.aws.amazon.com/cli/latest/reference/ec2/enable-address-transfer.html) command.
 
-```
+```bash
 aws ec2 enable-address-transfer \
     --allocation-id {{eipalloc-09ad461b0d03f6aaf}} \
     --transfer-account-id {{123456789012}}
@@ -78,7 +78,7 @@ aws ec2 enable-address-transfer \
 **To enable Elastic IP address transfer**
 Use the [Enable-EC2AddressTransfer](https://docs.aws.amazon.com/powershell/latest/reference/items/Enable-EC2AddressTransfer.html) cmdlet.
 
-```
+```powershell
 Enable-EC2AddressTransfer `
     -AllocationId {{eipalloc-09ad461b0d03f6aaf}} `
     -TransferAccountId {{123456789012}}
@@ -130,7 +130,7 @@ These steps must be completed by the transfer account.
 
 Use the [accept-address-transfer](https://docs.aws.amazon.com/cli/latest/reference/ec2/accept-address-transfer.html) command.
 
-```
+```bash
 aws ec2 accept-address-transfer --address {{100.21.184.216}}
 ```
 
@@ -140,7 +140,7 @@ aws ec2 accept-address-transfer --address {{100.21.184.216}}
 **To accept an Elastic IP address transfer**
 Use the [Approve-EC2AddressTransfer](https://docs.aws.amazon.com/powershell/latest/reference/items/Approve-EC2AddressTransfer.html) cmdlet.
 
-```
+```powershell
 Approve-EC2AddressTransfer -Address {{100.21.184.216}}
 ```
 
@@ -179,7 +179,7 @@ These steps must be completed by the source account that enabled the transfer.
 
 Use the [disable-address-transfer](https://docs.aws.amazon.com/cli/latest/reference/ec2/disable-address-transfer.html) command.
 
-```
+```bash
 aws ec2 disable-address-transfer --allocation-id {{eipalloc-09ad461b0d03f6aaf}}
 ```
 
@@ -189,7 +189,7 @@ aws ec2 disable-address-transfer --allocation-id {{eipalloc-09ad461b0d03f6aaf}}
 **To disable Elastic IP address transfer**
 Use the [Disable-EC2AddressTransfer](https://docs.aws.amazon.com/powershell/latest/reference/items/Disable-EC2AddressTransfer.html) cmdlet.
 
-```
+```powershell
 Disable-EC2AddressTransfer -AllocationId {{eipalloc-09ad461b0d03f6aaf}}
 ```
 

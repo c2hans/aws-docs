@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityagent-targetdomain-dnsverification-syntax.json"></a>
 
-```
+```json
 {
   "[DnsRecordName](#cfn-securityagent-targetdomain-dnsverification-dnsrecordname)" : {{String}},
   "[DnsRecordType](#cfn-securityagent-targetdomain-dnsverification-dnsrecordtype)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityagent-targetdomain-dnsverification-syntax.yaml"></a>
 
-```
+```yaml
   [DnsRecordName](#cfn-securityagent-targetdomain-dnsverification-dnsrecordname): {{String}}
   [DnsRecordType](#cfn-securityagent-targetdomain-dnsverification-dnsrecordtype): {{String}}
   [Token](#cfn-securityagent-targetdomain-dnsverification-token): {{String}}

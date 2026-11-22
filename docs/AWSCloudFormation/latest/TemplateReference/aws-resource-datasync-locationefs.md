@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-datasync-locationefs-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DataSync::LocationEFS",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-datasync-locationefs-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DataSync::LocationEFS
 Properties:
   [AccessPointArn](#cfn-datasync-locationefs-accesspointarn): {{String}}
@@ -150,7 +150,7 @@ The following example creates a DataSync location for an Amazon EFS file system.
 #### JSON
 <a name="aws-resource-datasync-locationefs--examples--Creating_an_Amazon_EFS_location--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Specifies a DataSync location for an Amazon EFS file system.",
@@ -175,7 +175,7 @@ The following example creates a DataSync location for an Amazon EFS file system.
 #### YAML
 <a name="aws-resource-datasync-locationefs--examples--Creating_an_Amazon_EFS_location--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Specifies a DataSync location for an Amazon EFS file system.
 Resources:
@@ -198,7 +198,7 @@ The following example creates a DataSync location for an Amazon EFS file system 
 #### JSON
 <a name="aws-resource-datasync-locationefs--examples--Creating_an_Amazon_EFS_location_with_a_higher_level_of_security--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Specifies a DataSync location for an Amazon EFS file system configured for restricted access.",
@@ -225,7 +225,7 @@ The following example creates a DataSync location for an Amazon EFS file system 
 #### YAML
 <a name="aws-resource-datasync-locationefs--examples--Creating_an_Amazon_EFS_location_with_a_higher_level_of_security--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Specifies a DataSync location for an Amazon EFS file system configured for restricted access.
 Resources:

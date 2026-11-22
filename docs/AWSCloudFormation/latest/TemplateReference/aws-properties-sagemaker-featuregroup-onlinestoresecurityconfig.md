@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-featuregroup-onlinestoresecurityconfig-syntax.json"></a>
 
-```
+```json
 {
   "[KmsKeyId](#cfn-sagemaker-featuregroup-onlinestoresecurityconfig-kmskeyid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-featuregroup-onlinestoresecurityconfig-syntax.yaml"></a>
 
-```
+```yaml
   [KmsKeyId](#cfn-sagemaker-featuregroup-onlinestoresecurityconfig-kmskeyid): {{String}}
 ```
 

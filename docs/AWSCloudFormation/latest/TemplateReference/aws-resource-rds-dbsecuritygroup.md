@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-rds-dbsecuritygroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RDS::DBSecurityGroup",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-rds-dbsecuritygroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RDS::DBSecurityGroup
 Properties:
   [DBSecurityGroupIngress](#cfn-rds-dbsecuritygroup-dbsecuritygroupingress): {{
@@ -102,7 +102,7 @@ The following example creates a single VPC security group, referred to by `EC2Se
 #### JSON
 <a name="aws-resource-rds-dbsecuritygroup--examples--Creating_a_single_VPC_security_group--json"></a>
 
-```
+```json
 {
     "Resources": {
         "DBinstance": {
@@ -144,7 +144,7 @@ The following example creates a single VPC security group, referred to by `EC2Se
 #### YAML
 <a name="aws-resource-rds-dbsecuritygroup--examples--Creating_a_single_VPC_security_group--yaml"></a>
 
-```
+```yaml
 Resources:
   DBinstance:
     Type: AWS::RDS::DBInstance
@@ -179,7 +179,7 @@ The following example creates or updates multiple VPC security groups.
 #### JSON
 <a name="aws-resource-rds-dbsecuritygroup--examples--Multiple_VPC_security_groups--json"></a>
 
-```
+```json
 "DBSecurityGroup": {
    "Type": "AWS::RDS::DBSecurityGroup",
    "Properties": {
@@ -195,7 +195,7 @@ The following example creates or updates multiple VPC security groups.
 #### YAML
 <a name="aws-resource-rds-dbsecuritygroup--examples--Multiple_VPC_security_groups--yaml"></a>
 
-```
+```yaml
 DBSecurityGroup:
   Type: AWS::RDS::DBSecurityGroup
   Properties:

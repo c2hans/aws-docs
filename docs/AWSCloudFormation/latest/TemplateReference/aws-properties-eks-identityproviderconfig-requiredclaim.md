@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-identityproviderconfig-requiredclaim-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-eks-identityproviderconfig-requiredclaim-key)" : {{String}},
   "[Value](#cfn-eks-identityproviderconfig-requiredclaim-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-identityproviderconfig-requiredclaim-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-eks-identityproviderconfig-requiredclaim-key): {{String}}
   [Value](#cfn-eks-identityproviderconfig-requiredclaim-value): {{String}}
 ```

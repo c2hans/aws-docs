@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sns-topic-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SNS::Topic",
   "Properties" : {
@@ -44,7 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sns-topic-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SNS::Topic
 Properties:
   [ArchivePolicy](#cfn-sns-topic-archivepolicy): {{Json}}
@@ -205,7 +205,7 @@ Returns the name of an Amazon SNS topic.
 #### JSON
 <a name="aws-resource-sns-topic--examples--An_Amazon_SNS_topic_with_two_Amazon_SQS_queue_subscriptions--json"></a>
 
-```
+```json
 {
   "MySNSTopic": {
     "Type": "AWS::SNS::Topic",
@@ -254,7 +254,7 @@ Returns the name of an Amazon SNS topic.
 #### YAML
 <a name="aws-resource-sns-topic--examples--An_Amazon_SNS_topic_with_two_Amazon_SQS_queue_subscriptions--yaml"></a>
 
-```
+```yaml
 MySNSTopic:
   Type: AWS::SNS::Topic
   Properties:

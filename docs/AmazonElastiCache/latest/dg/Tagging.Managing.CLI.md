@@ -55,7 +55,7 @@ aws elasticache list-tags-for-resource ^
 
 Output from this operation will look something like the following, a list of all the tags on the resource.
 
-```
+```json
 {
    "TagList": [
       {
@@ -72,7 +72,7 @@ Output from this operation will look something like the following, a list of all
 
 If there are no tags on the resource, the output will be an empty TagList.
 
-```
+```json
 {
    "TagList": []
 }
@@ -129,7 +129,7 @@ aws elasticache add-tags-to-resource ^
 
 Output from this operation will look something like the following, a list of all the tags on the resource following the operation.
 
-```
+```json
 {
    "TagList": [
       {
@@ -202,7 +202,7 @@ aws elasticache remove-tags-from-resource ^
 
 Output from this operation will look something like the following, a list of all the tags on the resource following the operation.
 
-```
+```json
 {
    "TagList": []
 }

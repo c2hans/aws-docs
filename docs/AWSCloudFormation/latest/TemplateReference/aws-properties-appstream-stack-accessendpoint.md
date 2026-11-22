@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appstream-stack-accessendpoint-syntax.json"></a>
 
-```
+```json
 {
   "[EndpointType](#cfn-appstream-stack-accessendpoint-endpointtype)" : {{String}},
   "[VpceId](#cfn-appstream-stack-accessendpoint-vpceid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appstream-stack-accessendpoint-syntax.yaml"></a>
 
-```
+```yaml
   [EndpointType](#cfn-appstream-stack-accessendpoint-endpointtype): {{String}}
   [VpceId](#cfn-appstream-stack-accessendpoint-vpceid): {{String}}
 ```

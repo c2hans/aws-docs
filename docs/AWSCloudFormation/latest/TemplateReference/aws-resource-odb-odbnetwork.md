@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-odb-odbnetwork-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ODB::OdbNetwork",
   "Properties" : {
@@ -44,7 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-odb-odbnetwork-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ODB::OdbNetwork
 Properties:
   [AvailabilityZone](#cfn-odb-odbnetwork-availabilityzone): {{String}}

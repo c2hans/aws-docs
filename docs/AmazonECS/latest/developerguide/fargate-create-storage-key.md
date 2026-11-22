@@ -96,7 +96,7 @@ To create a customer managed key (CMK) to encrypt ephemeral storage for Fargate 
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -126,7 +126,7 @@ To create a customer managed key (CMK) to encrypt ephemeral storage for Fargate 
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": {

@@ -16,7 +16,7 @@ The SerDe expects each JSON document to be on a single line of text with no line
 + Generate your JSON-encoded data in case-insensitive columns.
 + Provide an option to ignore malformed records, as in this example.
 
-  ```
+  ```sql
   CREATE EXTERNAL TABLE json_table (
     column_a string,
     column_b int

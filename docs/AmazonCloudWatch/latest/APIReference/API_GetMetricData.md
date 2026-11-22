@@ -192,7 +192,7 @@ The following example requests a Metrics Insights query for aggregated `CPUUtili
 #### Sample Request
 <a name="API_GetMetricData_Example_1_Request"></a>
 
-```
+```json
 {
     "StartTime": 1637061900,
     "EndTime": 1637074500,
@@ -232,7 +232,7 @@ The following example requests a Metrics Insights query for aggregated `CPUUtili
 #### Sample Response
 <a name="API_GetMetricData_Example_1_Response"></a>
 
-```
+```json
 {
     "Messages": [],
     "MetricDataResults": [
@@ -278,7 +278,7 @@ The following example includes a Metrics Insights query for that is given the ID
 #### Sample Request
 <a name="API_GetMetricData_Example_2_Request"></a>
 
-```
+```json
 {
     "StartTime": 1518867432,
     "EndTime": 1518868032,
@@ -306,7 +306,7 @@ The following example requests three separate metrics across two namespaces. The
 #### Sample Request
 <a name="API_GetMetricData_Example_3_Request"></a>
 
-```
+```json
 {
   "StartTime": 1518867432,
   "EndTime": 1518868232,
@@ -375,7 +375,7 @@ The following example requests three separate metrics across two namespaces. The
 #### Sample Response
 <a name="API_GetMetricData_Example_3_Response"></a>
 
-```
+```json
 {
   "MetricDataResults": [
     {
@@ -435,7 +435,7 @@ The following example retrieves the `NetworkOut` metric for two Auto Scaling gro
 #### Sample Request
 <a name="API_GetMetricData_Example_4_Request"></a>
 
-```
+```json
 {
   "StartTime": 1518867432,
   "EndTime": 1518868232,
@@ -490,7 +490,7 @@ The following example retrieves the `NetworkOut` metric for two Auto Scaling gro
 #### Sample Response
 <a name="API_GetMetricData_Example_4_Response"></a>
 
-```
+```json
 {
   "MetricDataResults": [
     {
@@ -528,7 +528,7 @@ In the following example, two levels of metric math expressions are used, with t
 #### Sample Request
 <a name="API_GetMetricData_Example_5_Request"></a>
 
-```
+```json
 {
   "StartTime": 1518867432,
   "EndTime": 1518868232,
@@ -607,7 +607,7 @@ In the following example, two levels of metric math expressions are used, with t
 #### Sample Response
 <a name="API_GetMetricData_Example_5_Response"></a>
 
-```
+```json
 {
   "MetricDataResults": [
     {
@@ -664,7 +664,7 @@ In the following example, custom metrics are searched and assigned IDs that cont
 #### Sample Request
 <a name="API_GetMetricData_Example_6_Request"></a>
 
-```
+```json
 {
   "StartTime": 1518867432,
   "EndTime": 1518868432,
@@ -768,7 +768,7 @@ In the following example, custom metrics are searched and assigned IDs that cont
 #### Sample Response
 <a name="API_GetMetricData_Example_6_Response"></a>
 
-```
+```json
 {
   "MetricDataResults": [
     {

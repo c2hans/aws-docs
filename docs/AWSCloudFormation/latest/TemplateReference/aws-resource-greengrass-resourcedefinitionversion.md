@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-greengrass-resourcedefinitionversion-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Greengrass::ResourceDefinitionVersion",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-greengrass-resourcedefinitionversion-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Greengrass::ResourceDefinitionVersion
 Properties:
   [ResourceDefinitionId](#cfn-greengrass-resourcedefinitionversion-resourcedefinitionid): {{String}}
@@ -82,7 +82,7 @@ For an example of a complete template, see the [`AWS::Greengrass::Group`](https:
 #### JSON
 <a name="aws-resource-greengrass-resourcedefinitionversion--examples--Resource_Definition_Version_Snippet--json"></a>
 
-```
+```json
 "TestResourceDefinition": {
     "Type": "AWS::Greengrass::ResourceDefinition",
     "Properties": {
@@ -192,7 +192,7 @@ For an example of a complete template, see the [`AWS::Greengrass::Group`](https:
 #### YAML
 <a name="aws-resource-greengrass-resourcedefinitionversion--examples--Resource_Definition_Version_Snippet--yaml"></a>
 
-```
+```yaml
 TestResourceDefinition:
   Type: 'AWS::Greengrass::ResourceDefinition'
   Properties:

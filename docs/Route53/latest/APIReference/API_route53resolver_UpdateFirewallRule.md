@@ -136,7 +136,7 @@ The rule type configuration for the firewall rule. This is a tagged union — se
 +  `FirewallAdvancedThreatCategory` — match an AWS-managed advanced threat category (for example, `PHISHING`).
 +  `DnsThreatProtection` — match a built-in DNS Firewall Advanced threat detector (`DGA`, `DNS_TUNNELING`, or `DICTIONARY_DGA`).
 +  `PartnerThreatProtection` — match a third-party threat feed delivered through AWS Marketplace. The selected partner must be an active subscription on the calling account.
-To enumerate the values supported in your account, call [ListFirewallRuleTypes](API_route53resolver_ListFirewallRuleTypes.md). It doesn't return `AutoAllowlist`.
+To enumerate the values supported in your account, call [ListFirewallRuleTypes](API_route53resolver_ListFirewallRuleTypes.md).
 You can't specify `FirewallRuleType` when you update an AutoAllowlist rule, even with its current values. `InitialDataTimeframeHours` and `ImportFromFirewallDomainListId` can't be changed. To change them, delete the rule and create a new one. Deleting an AutoAllowlist rule also deletes its managed domain list and the domains that you allowed.
 Type: [FirewallRuleType](API_route53resolver_FirewallRuleType.md) object
 Required: No

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-codeartifact-repository-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CodeArtifact::Repository",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-codeartifact-repository-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CodeArtifact::Repository
 Properties:
   [Description](#cfn-codeartifact-repository-description): {{String}}
@@ -160,7 +160,7 @@ The following example creates a CodeArtifact domain named *my-domain* and a Code
 #### YAML
 <a name="aws-resource-codeartifact-repository--examples--Create_a_domain_and_repository--yaml"></a>
 
-```
+```yaml
 Resources:
   MyCodeArtifactDomain:
     Type: 'AWS::CodeArtifact::Domain'
@@ -176,7 +176,7 @@ Resources:
 #### JSON
 <a name="aws-resource-codeartifact-repository--examples--Create_a_domain_and_repository--json"></a>
 
-```
+```json
 {
   "Resources": {
     "MyCodeArtifactDomain": {
@@ -209,7 +209,7 @@ The following example creates a CodeArtifact domain named *my-domain* to store r
 #### YAML
 <a name="aws-resource-codeartifact-repository--examples--Create_a_repository_with_an_upstream_repository_and_external_connection--yaml"></a>
 
-```
+```yaml
 Resources:
   MyCodeArtifactDomain:
     Type: 'AWS::CodeArtifact::Domain'
@@ -234,7 +234,7 @@ Resources:
 #### JSON
 <a name="aws-resource-codeartifact-repository--examples--Create_a_repository_with_an_upstream_repository_and_external_connection--json"></a>
 
-```
+```json
 {
   "Resources": {
     "MyCodeArtifactDomain": {
@@ -290,7 +290,7 @@ The following example creates a CodeArtifact domain named *my-domain* and a Code
 #### YAML
 <a name="aws-resource-codeartifact-repository--examples--Create_a_domain_and_repository_with_tags--yaml"></a>
 
-```
+```yaml
 Resources:
   MyCodeArtifactDomain:
     Type: 'AWS::CodeArtifact::Domain'
@@ -311,7 +311,7 @@ Resources:
 #### JSON
 <a name="aws-resource-codeartifact-repository--examples--Create_a_domain_and_repository_with_tags--json"></a>
 
-```
+```json
 {
   "Resources": {
     "MyCodeArtifactDomain": {

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicrule-snsaction-syntax.json"></a>
 
-```
+```json
 {
   "[MessageFormat](#cfn-iot-topicrule-snsaction-messageformat)" : {{String}},
   "[RoleArn](#cfn-iot-topicrule-snsaction-rolearn)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicrule-snsaction-syntax.yaml"></a>
 
-```
+```yaml
   [MessageFormat](#cfn-iot-topicrule-snsaction-messageformat): {{String}}
   [RoleArn](#cfn-iot-topicrule-snsaction-rolearn): {{String}}
   [TargetArn](#cfn-iot-topicrule-snsaction-targetarn): {{String}}

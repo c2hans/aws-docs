@@ -99,7 +99,7 @@ You can use IAM condition keys to enforce RDS management of the master user pass
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

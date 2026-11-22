@@ -39,7 +39,7 @@ To use AWS services and resources with App Studio, administrators must create an
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

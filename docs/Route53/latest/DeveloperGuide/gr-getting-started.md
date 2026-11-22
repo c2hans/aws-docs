@@ -89,7 +89,7 @@ Test that your Route 53 Global Resolver configuration is working correctly.
 
 1. From a client machine within your configured CIDR range, test DNS resolution using the anycast IP addresses provided by your global resolver:
 
-   ```
+   ```bash
    nslookup example.com <anycast-ip-address>
    ```
 

@@ -208,7 +208,7 @@ For more information on ElastiCache resources you can tag, see [Resources you ca
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -237,7 +237,7 @@ For more information on ElastiCache resources you can tag, see [Resources you ca
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -273,7 +273,7 @@ For more information on ElastiCache resources you can tag, see [Resources you ca
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -305,7 +305,7 @@ For more information on ElastiCache resources you can tag, see [Resources you ca
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -334,7 +334,7 @@ For more information on ElastiCache resources you can tag, see [Resources you ca
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -364,7 +364,7 @@ For more information on ElastiCache resources you can tag, see [Resources you ca
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

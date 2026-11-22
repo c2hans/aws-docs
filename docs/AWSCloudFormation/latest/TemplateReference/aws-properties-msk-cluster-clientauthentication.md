@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-cluster-clientauthentication-syntax.json"></a>
 
-```
+```json
 {
   "[Sasl](#cfn-msk-cluster-clientauthentication-sasl)" : {{Sasl}},
   "[Tls](#cfn-msk-cluster-clientauthentication-tls)" : {{Tls}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-cluster-clientauthentication-syntax.yaml"></a>
 
-```
+```yaml
   [Sasl](#cfn-msk-cluster-clientauthentication-sasl): {{
     Sasl}}
   [Tls](#cfn-msk-cluster-clientauthentication-tls): {{

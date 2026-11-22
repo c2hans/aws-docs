@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-playbackconfiguration-manifestprocessingrules-syntax.json"></a>
 
-```
+```json
 {
   "[AdMarkerPassthrough](#cfn-mediatailor-playbackconfiguration-manifestprocessingrules-admarkerpassthrough)" : {{AdMarkerPassthrough}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-playbackconfiguration-manifestprocessingrules-syntax.yaml"></a>
 
-```
+```yaml
   [AdMarkerPassthrough](#cfn-mediatailor-playbackconfiguration-manifestprocessingrules-admarkerpassthrough): {{
     AdMarkerPassthrough}}
 ```

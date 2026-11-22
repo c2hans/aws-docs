@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-quicksight-brand-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::QuickSight::Brand",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-quicksight-brand-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::QuickSight::Brand
 Properties:
   [BrandDefinition](#cfn-quicksight-brand-branddefinition): {{

@@ -67,7 +67,7 @@ The following example shows a CloudTrail log entry for a [`CreateBroker`](https:
 **Note**
 Because CloudTrail log files aren't an ordered stack trace of public APIs, they don't list information in any specific order.
 
-```
+```json
 {
     "eventVersion": "1.06",
     "userIdentity": {

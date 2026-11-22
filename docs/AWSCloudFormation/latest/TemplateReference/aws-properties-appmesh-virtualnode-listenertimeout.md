@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-virtualnode-listenertimeout-syntax.json"></a>
 
-```
+```json
 {
   "[GRPC](#cfn-appmesh-virtualnode-listenertimeout-grpc)" : {{GrpcTimeout}},
   "[HTTP](#cfn-appmesh-virtualnode-listenertimeout-http)" : {{HttpTimeout}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-virtualnode-listenertimeout-syntax.yaml"></a>
 
-```
+```yaml
   [GRPC](#cfn-appmesh-virtualnode-listenertimeout-grpc): {{
     GrpcTimeout}}
   [HTTP](#cfn-appmesh-virtualnode-listenertimeout-http): {{

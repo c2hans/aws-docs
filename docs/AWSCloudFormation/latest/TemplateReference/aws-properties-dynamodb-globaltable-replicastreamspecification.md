@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dynamodb-globaltable-replicastreamspecification-syntax.json"></a>
 
-```
+```json
 {
   "[ResourcePolicy](#cfn-dynamodb-globaltable-replicastreamspecification-resourcepolicy)" : {{ResourcePolicy}},
   "[Tags](#cfn-dynamodb-globaltable-replicastreamspecification-tags)" : {{[ Tag, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dynamodb-globaltable-replicastreamspecification-syntax.yaml"></a>
 
-```
+```yaml
   [ResourcePolicy](#cfn-dynamodb-globaltable-replicastreamspecification-resourcepolicy): {{
     ResourcePolicy}}
   [Tags](#cfn-dynamodb-globaltable-replicastreamspecification-tags): {{

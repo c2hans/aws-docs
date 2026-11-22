@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticache-replicationgroup-destinationdetails-syntax.json"></a>
 
-```
+```json
 {
   "[CloudWatchLogsDetails](#cfn-elasticache-replicationgroup-destinationdetails-cloudwatchlogsdetails)" : {{CloudWatchLogsDestinationDetails}},
   "[KinesisFirehoseDetails](#cfn-elasticache-replicationgroup-destinationdetails-kinesisfirehosedetails)" : {{KinesisFirehoseDestinationDetails}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticache-replicationgroup-destinationdetails-syntax.yaml"></a>
 
-```
+```yaml
   [CloudWatchLogsDetails](#cfn-elasticache-replicationgroup-destinationdetails-cloudwatchlogsdetails): {{
     CloudWatchLogsDestinationDetails}}
   [KinesisFirehoseDetails](#cfn-elasticache-replicationgroup-destinationdetails-kinesisfirehosedetails): {{

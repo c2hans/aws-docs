@@ -48,7 +48,7 @@ The following examples also work with a bucket that isn't versioning-enabled, or
 
 For instructions on creating and testing a working sample, see [Getting Started](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/getting-started.html) in the AWS SDK for Java Developer Guide.
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.SdkClientException;
 import com.amazonaws.auth.profile.ProfileCredentialsProvider;
@@ -114,7 +114,7 @@ public class ListKeysVersioningEnabledBucket {
 
 For information about setting up and running the code examples, see [Getting Started with the AWS SDK for .NET](https://docs.aws.amazon.com/sdk-for-net/latest/developer-guide/net-dg-setup.html) in the *AWS SDK for .NET Developer Guide*.
 
-```
+```cs
 using Amazon;
 using Amazon.S3;
 using Amazon.S3.Model;
@@ -195,7 +195,7 @@ To list all the versions of all the objects in a bucket, you use the `versions` 
 Amazon S3 returns object versions in the order in which they were stored, with the most recently stored returned first.
 In a `GET Bucket` request, include the `versions` subresource.
 
-```
+```http
 1. GET /?versions HTTP/1.1
 2. Host: {{bucketName}}.s3.amazonaws.com
 3. Date: Wed, 28 Oct 2009 22:32:00 +0000
@@ -214,7 +214,7 @@ In a `GET Bucket` request, include the `versions` subresource.
 **Example — Retrieving objects using a prefix**
 The following example retrieves objects whose key is or begins with `myObject`.
 
-```
+```http
 1. GET /?versions&prefix=myObject HTTP/1.1
 2. Host: bucket.s3.amazonaws.com
 3. Date: Wed, 28 Oct 2009 22:32:00 GMT
@@ -232,7 +232,7 @@ The following are additional responses that satisfy the original `GET` request:
 
 **Example — Retrieving objects starting with a specified key and version ID**
 
-```
+```http
 1. GET /?versions&key-marker=myObject&version-id-marker=298459348571 HTTP/1.1
 2. Host: bucket.s3.amazonaws.com
 3. Date: Wed, 28 Oct 2009 22:32:00 GMT

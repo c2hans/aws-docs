@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-jsonbody-syntax.json"></a>
 
-```
+```json
 {
   "[InvalidFallbackBehavior](#cfn-wafv2-webacl-jsonbody-invalidfallbackbehavior)" : {{String}},
   "[MatchPattern](#cfn-wafv2-webacl-jsonbody-matchpattern)" : {{JsonMatchPattern}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-jsonbody-syntax.yaml"></a>
 
-```
+```yaml
   [InvalidFallbackBehavior](#cfn-wafv2-webacl-jsonbody-invalidfallbackbehavior): {{String}}
   [MatchPattern](#cfn-wafv2-webacl-jsonbody-matchpattern): {{
     JsonMatchPattern}}
@@ -101,7 +101,7 @@ The following shows an example JSON body field to match specification.
 #### YAML
 <a name="aws-properties-wafv2-webacl-jsonbody--examples--Set_the_JSON_body_specification--yaml"></a>
 
-```
+```yaml
 FieldToMatch:
   JsonBody:
     MatchPattern:
@@ -116,7 +116,7 @@ FieldToMatch:
 #### JSON
 <a name="aws-properties-wafv2-webacl-jsonbody--examples--Set_the_JSON_body_specification--json"></a>
 
-```
+```json
 "FieldToMatch": {
   "JsonBody": {
     "MatchPattern": {

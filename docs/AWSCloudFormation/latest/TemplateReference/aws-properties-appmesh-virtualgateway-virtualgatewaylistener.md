@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-virtualgateway-virtualgatewaylistener-syntax.json"></a>
 
-```
+```json
 {
   "[ConnectionPool](#cfn-appmesh-virtualgateway-virtualgatewaylistener-connectionpool)" : {{VirtualGatewayConnectionPool}},
   "[HealthCheck](#cfn-appmesh-virtualgateway-virtualgatewaylistener-healthcheck)" : {{VirtualGatewayHealthCheckPolicy}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-virtualgateway-virtualgatewaylistener-syntax.yaml"></a>
 
-```
+```yaml
   [ConnectionPool](#cfn-appmesh-virtualgateway-virtualgatewaylistener-connectionpool): {{
     VirtualGatewayConnectionPool}}
   [HealthCheck](#cfn-appmesh-virtualgateway-virtualgatewaylistener-healthcheck): {{

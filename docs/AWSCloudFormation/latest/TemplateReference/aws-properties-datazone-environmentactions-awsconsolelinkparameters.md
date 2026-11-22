@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-environmentactions-awsconsolelinkparameters-syntax.json"></a>
 
-```
+```json
 {
   "[Uri](#cfn-datazone-environmentactions-awsconsolelinkparameters-uri)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-environmentactions-awsconsolelinkparameters-syntax.yaml"></a>
 
-```
+```yaml
   [Uri](#cfn-datazone-environmentactions-awsconsolelinkparameters-uri): {{String}}
 ```
 

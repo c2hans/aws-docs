@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dms-dataprovider-ibmdb2zossettings-syntax.json"></a>
 
-```
+```json
 {
   "[CertificateArn](#cfn-dms-dataprovider-ibmdb2zossettings-certificatearn)" : {{String}},
   "[DatabaseName](#cfn-dms-dataprovider-ibmdb2zossettings-databasename)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dms-dataprovider-ibmdb2zossettings-syntax.yaml"></a>
 
-```
+```yaml
   [CertificateArn](#cfn-dms-dataprovider-ibmdb2zossettings-certificatearn): {{String}}
   [DatabaseName](#cfn-dms-dataprovider-ibmdb2zossettings-databasename): {{String}}
   [Port](#cfn-dms-dataprovider-ibmdb2zossettings-port): {{Integer}}

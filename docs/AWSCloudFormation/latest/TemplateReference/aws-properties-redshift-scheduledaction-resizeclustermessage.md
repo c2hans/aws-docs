@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-redshift-scheduledaction-resizeclustermessage-syntax.json"></a>
 
-```
+```json
 {
   "[Classic](#cfn-redshift-scheduledaction-resizeclustermessage-classic)" : {{Boolean}},
   "[ClusterIdentifier](#cfn-redshift-scheduledaction-resizeclustermessage-clusteridentifier)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-redshift-scheduledaction-resizeclustermessage-syntax.yaml"></a>
 
-```
+```yaml
   [Classic](#cfn-redshift-scheduledaction-resizeclustermessage-classic): {{Boolean}}
   [ClusterIdentifier](#cfn-redshift-scheduledaction-resizeclustermessage-clusteridentifier): {{String}}
   [ClusterType](#cfn-redshift-scheduledaction-resizeclustermessage-clustertype): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-audioanddtmfinputspecification-syntax.json"></a>
 
-```
+```json
 {
   "[AudioSpecification](#cfn-lex-bot-audioanddtmfinputspecification-audiospecification)" : {{AudioSpecification}},
   "[DTMFSpecification](#cfn-lex-bot-audioanddtmfinputspecification-dtmfspecification)" : {{DTMFSpecification}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-audioanddtmfinputspecification-syntax.yaml"></a>
 
-```
+```yaml
   [AudioSpecification](#cfn-lex-bot-audioanddtmfinputspecification-audiospecification): {{
     AudioSpecification}}
   [DTMFSpecification](#cfn-lex-bot-audioanddtmfinputspecification-dtmfspecification): {{

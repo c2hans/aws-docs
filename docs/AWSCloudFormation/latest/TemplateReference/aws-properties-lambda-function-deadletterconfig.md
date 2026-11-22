@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-function-deadletterconfig-syntax.json"></a>
 
-```
+```json
 {
   "[TargetArn](#cfn-lambda-function-deadletterconfig-targetarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-function-deadletterconfig-syntax.yaml"></a>
 
-```
+```yaml
   [TargetArn](#cfn-lambda-function-deadletterconfig-targetarn): {{String}}
 ```
 
@@ -50,7 +50,7 @@ Add a dead-letter queue to a function.
 #### YAML
 <a name="aws-properties-lambda-function-deadletterconfig--examples--Dead-letter_Queue--yaml"></a>
 
-```
+```yaml
       DeadLetterConfig:
         TargetArn: arn:aws:sqs:us-east-2:123456789012:dlq
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-rule-taskaction-syntax.json"></a>
 
-```
+```json
 {
   "[ContactFlowArn](#cfn-connect-rule-taskaction-contactflowarn)" : {{String}},
   "[Description](#cfn-connect-rule-taskaction-description)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-rule-taskaction-syntax.yaml"></a>
 
-```
+```yaml
   [ContactFlowArn](#cfn-connect-rule-taskaction-contactflowarn): {{String}}
   [Description](#cfn-connect-rule-taskaction-description): {{String}}
   [Name](#cfn-connect-rule-taskaction-name): {{String}}

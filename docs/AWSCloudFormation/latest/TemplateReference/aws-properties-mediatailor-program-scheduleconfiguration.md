@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-program-scheduleconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ClipRange](#cfn-mediatailor-program-scheduleconfiguration-cliprange)" : {{ClipRange}},
   "[Transition](#cfn-mediatailor-program-scheduleconfiguration-transition)" : {{Transition}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-program-scheduleconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ClipRange](#cfn-mediatailor-program-scheduleconfiguration-cliprange): {{
     ClipRange}}
   [Transition](#cfn-mediatailor-program-scheduleconfiguration-transition): {{

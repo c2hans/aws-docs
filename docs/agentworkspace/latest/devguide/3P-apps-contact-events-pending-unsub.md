@@ -8,12 +8,12 @@ Unsubscribes the callback function from Pending event in the Connect Customer ag
 
  **Signature**
 
-```
+```typescript
 offPending(handler: ContactPendingHandler, contactId?: string)
 ```
 
  **Usage**
 
-```
+```typescript
 contactClient.offPending(handler);
 ```

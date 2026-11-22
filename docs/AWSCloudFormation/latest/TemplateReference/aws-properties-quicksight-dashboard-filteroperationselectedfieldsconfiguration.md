@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-filteroperationselectedfieldsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[SelectedColumns](#cfn-quicksight-dashboard-filteroperationselectedfieldsconfiguration-selectedcolumns)" : {{[ ColumnIdentifier, ... ]}},
   "[SelectedFieldOptions](#cfn-quicksight-dashboard-filteroperationselectedfieldsconfiguration-selectedfieldoptions)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-filteroperationselectedfieldsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [SelectedColumns](#cfn-quicksight-dashboard-filteroperationselectedfieldsconfiguration-selectedcolumns): {{
     - ColumnIdentifier}}
   [SelectedFieldOptions](#cfn-quicksight-dashboard-filteroperationselectedfieldsconfiguration-selectedfieldoptions): {{String}}

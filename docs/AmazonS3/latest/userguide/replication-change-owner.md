@@ -42,7 +42,7 @@ To specify the owner override option, add the following to each `Destination` el
 + The `AccessControlTranslation` element, which tells Amazon S3 to change replica ownership
 + The `Account` element, which specifies the AWS account of the destination bucket owner
 
-```
+```xml
 <ReplicationConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
     ...
     <Destination>
@@ -58,7 +58,7 @@ To specify the owner override option, add the following to each `Destination` el
 
 The following example replication configuration tells Amazon S3 to replicate objects that have the {{`Tax`}} key prefix to the `{{amzn-s3-demo-destination-bucket}}` destination bucket and change ownership of the replicas. To use this example, replace the `{{user input placeholders}}` with your own information.
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <ReplicationConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
    <Role>arn:aws:iam::{{account-id}}:role/{{role-name}}</Role>
@@ -188,7 +188,7 @@ The profiles that you use for this procedure must have the necessary permissions
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -234,7 +234,7 @@ The profiles that you use for this procedure must have the necessary permissions
 
 ****
 
-         ```
+         ```json
          {
             "Version":"2012-10-17",
             "Statement":[
@@ -271,7 +271,7 @@ The profiles that you use for this procedure must have the necessary permissions
 
 ****
 
-         ```
+         ```json
          {
             "Version":"2012-10-17",
             "Statement":[
@@ -326,7 +326,7 @@ The profiles that you use for this procedure must have the necessary permissions
 
    1. The AWS CLI requires specifying the replication configuration as JSON. Save the following JSON in a file named `{{replication}}.json` in the current directory on your local computer. In the configuration, the `AccessControlTranslation` specifies the change in replica ownership from the source bucket owner to the destination bucket owner.
 
-      ```
+      ```json
       {
          "Role":"{{IAM-role-ARN}}",
          "Rules":[

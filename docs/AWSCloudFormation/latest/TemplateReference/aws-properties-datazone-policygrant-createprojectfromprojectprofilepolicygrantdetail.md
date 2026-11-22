@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-policygrant-createprojectfromprojectprofilepolicygrantdetail-syntax.json"></a>
 
-```
+```json
 {
   "[IncludeChildDomainUnits](#cfn-datazone-policygrant-createprojectfromprojectprofilepolicygrantdetail-includechilddomainunits)" : {{Boolean}},
   "[ProjectProfiles](#cfn-datazone-policygrant-createprojectfromprojectprofilepolicygrantdetail-projectprofiles)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-policygrant-createprojectfromprojectprofilepolicygrantdetail-syntax.yaml"></a>
 
-```
+```yaml
   [IncludeChildDomainUnits](#cfn-datazone-policygrant-createprojectfromprojectprofilepolicygrantdetail-includechilddomainunits): {{Boolean}}
   [ProjectProfiles](#cfn-datazone-policygrant-createprojectfromprojectprofilepolicygrantdetail-projectprofiles): {{
     - String}}

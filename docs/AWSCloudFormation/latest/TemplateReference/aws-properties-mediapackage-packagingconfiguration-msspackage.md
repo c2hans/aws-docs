@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackage-packagingconfiguration-msspackage-syntax.json"></a>
 
-```
+```json
 {
   "[Encryption](#cfn-mediapackage-packagingconfiguration-msspackage-encryption)" : {{MssEncryption}},
   "[MssManifests](#cfn-mediapackage-packagingconfiguration-msspackage-mssmanifests)" : {{[ MssManifest, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackage-packagingconfiguration-msspackage-syntax.yaml"></a>
 
-```
+```yaml
   [Encryption](#cfn-mediapackage-packagingconfiguration-msspackage-encryption): {{
     MssEncryption}}
   [MssManifests](#cfn-mediapackage-packagingconfiguration-msspackage-mssmanifests): {{

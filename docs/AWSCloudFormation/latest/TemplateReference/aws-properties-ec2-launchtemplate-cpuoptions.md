@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-launchtemplate-cpuoptions-syntax.json"></a>
 
-```
+```json
 {
   "[AmdSevSnp](#cfn-ec2-launchtemplate-cpuoptions-amdsevsnp)" : {{String}},
   "[CoreCount](#cfn-ec2-launchtemplate-cpuoptions-corecount)" : {{Integer}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-launchtemplate-cpuoptions-syntax.yaml"></a>
 
-```
+```yaml
   [AmdSevSnp](#cfn-ec2-launchtemplate-cpuoptions-amdsevsnp): {{String}}
   [CoreCount](#cfn-ec2-launchtemplate-cpuoptions-corecount): {{Integer}}
   [NestedVirtualization](#cfn-ec2-launchtemplate-cpuoptions-nestedvirtualization): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskset-networkconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AwsVpcConfiguration](#cfn-ecs-taskset-networkconfiguration-awsvpcconfiguration)" : {{AwsVpcConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskset-networkconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AwsVpcConfiguration](#cfn-ecs-taskset-networkconfiguration-awsvpcconfiguration): {{
     AwsVpcConfiguration}}
 ```

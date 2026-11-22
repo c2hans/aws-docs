@@ -16,7 +16,7 @@ Amazon EC2 also enables developers to offer support for software (or derived AMI
 **To associate a product code with your AMI**
 Use the [modify-image-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-image-attribute.html) command.
 
-```
+```bash
 aws ec2 modify-image-attribute \
     --image-id {{ami-0abcdef1234567890}} \
     --product-codes "{{cdef1234abc567def8EXAMPLE}}"
@@ -28,7 +28,7 @@ aws ec2 modify-image-attribute \
 **To associate a product code with your AMI**
 Use the [Edit-EC2ImageAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2ImageAttribute.html) cmdlet.
 
-```
+```powershell
 Edit-EC2ImageAttribute `
     -ImageId {{ami-0abcdef1234567890}} `
     -ProductCode "{{cdef1234abc567def8EXAMPLE}}"

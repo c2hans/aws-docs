@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amazonmq-broker-maintenancewindow-syntax.json"></a>
 
-```
+```json
 {
   "[DayOfWeek](#cfn-amazonmq-broker-maintenancewindow-dayofweek)" : {{String}},
   "[TimeOfDay](#cfn-amazonmq-broker-maintenancewindow-timeofday)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amazonmq-broker-maintenancewindow-syntax.yaml"></a>
 
-```
+```yaml
   [DayOfWeek](#cfn-amazonmq-broker-maintenancewindow-dayofweek): {{String}}
   [TimeOfDay](#cfn-amazonmq-broker-maintenancewindow-timeofday): {{String}}
   [TimeZone](#cfn-amazonmq-broker-maintenancewindow-timezone): {{String}}

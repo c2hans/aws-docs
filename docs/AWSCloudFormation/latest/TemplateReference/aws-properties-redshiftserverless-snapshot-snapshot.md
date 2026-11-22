@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-redshiftserverless-snapshot-snapshot-syntax.json"></a>
 
-```
+```json
 {
   "[AdminUsername](#cfn-redshiftserverless-snapshot-snapshot-adminusername)" : {{String}},
   "[KmsKeyId](#cfn-redshiftserverless-snapshot-snapshot-kmskeyid)" : {{String}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-redshiftserverless-snapshot-snapshot-syntax.yaml"></a>
 
-```
+```yaml
   [AdminUsername](#cfn-redshiftserverless-snapshot-snapshot-adminusername): {{String}}
   [KmsKeyId](#cfn-redshiftserverless-snapshot-snapshot-kmskeyid): {{String}}
   [NamespaceArn](#cfn-redshiftserverless-snapshot-snapshot-namespacearn): {{String}}

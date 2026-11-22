@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codeconnections-host-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-codeconnections-host-tag-key)" : {{String}},
   "[Value](#cfn-codeconnections-host-tag-value)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codeconnections-host-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-codeconnections-host-tag-key): {{String}}
   [Value](#cfn-codeconnections-host-tag-value): {{String}}
 ```

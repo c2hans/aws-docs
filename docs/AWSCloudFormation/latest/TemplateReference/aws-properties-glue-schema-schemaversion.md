@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-schema-schemaversion-syntax.json"></a>
 
-```
+```json
 {
   "[IsLatest](#cfn-glue-schema-schemaversion-islatest)" : {{Boolean}},
   "[VersionNumber](#cfn-glue-schema-schemaversion-versionnumber)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-schema-schemaversion-syntax.yaml"></a>
 
-```
+```yaml
   [IsLatest](#cfn-glue-schema-schemaversion-islatest): {{Boolean}}
   [VersionNumber](#cfn-glue-schema-schemaversion-versionnumber): {{Integer}}
 ```

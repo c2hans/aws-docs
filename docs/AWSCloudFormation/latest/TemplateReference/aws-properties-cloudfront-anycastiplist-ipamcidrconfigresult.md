@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-anycastiplist-ipamcidrconfigresult-syntax.json"></a>
 
-```
+```json
 {
   "[AnycastIp](#cfn-cloudfront-anycastiplist-ipamcidrconfigresult-anycastip)" : {{String}},
   "[Cidr](#cfn-cloudfront-anycastiplist-ipamcidrconfigresult-cidr)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-anycastiplist-ipamcidrconfigresult-syntax.yaml"></a>
 
-```
+```yaml
   [AnycastIp](#cfn-cloudfront-anycastiplist-ipamcidrconfigresult-anycastip): {{String}}
   [Cidr](#cfn-cloudfront-anycastiplist-ipamcidrconfigresult-cidr): {{String}}
   [IpamPoolArn](#cfn-cloudfront-anycastiplist-ipamcidrconfigresult-ipampoolarn): {{String}}

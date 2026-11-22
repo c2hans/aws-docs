@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-events-rule-capacityproviderstrategyitem-syntax.json"></a>
 
-```
+```json
 {
   "[Base](#cfn-events-rule-capacityproviderstrategyitem-base)" : {{Integer}},
   "[CapacityProvider](#cfn-events-rule-capacityproviderstrategyitem-capacityprovider)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-events-rule-capacityproviderstrategyitem-syntax.yaml"></a>
 
-```
+```yaml
   [Base](#cfn-events-rule-capacityproviderstrategyitem-base): {{Integer}}
   [CapacityProvider](#cfn-events-rule-capacityproviderstrategyitem-capacityprovider): {{String}}
   [Weight](#cfn-events-rule-capacityproviderstrategyitem-weight): {{Integer}}
@@ -71,7 +71,7 @@ The following example sets the `CapacityProviderStrategyItem` property to run a 
 #### JSON
 <a name="aws-properties-events-rule-capacityproviderstrategyitem--examples--Set_the_CapacityProviderStrategyItem_property--json"></a>
 
-```
+```json
 "CapacityProviderStrategy": {
   "Base": 10,
   "CapacityProvider": "CapacityProvider1",
@@ -82,7 +82,7 @@ The following example sets the `CapacityProviderStrategyItem` property to run a 
 #### YAML
 <a name="aws-properties-events-rule-capacityproviderstrategyitem--examples--Set_the_CapacityProviderStrategyItem_property--yaml"></a>
 
-```
+```yaml
 CapacityProviderStrategy
   Base: 10
   CapacityProvider: CapacityProvider1

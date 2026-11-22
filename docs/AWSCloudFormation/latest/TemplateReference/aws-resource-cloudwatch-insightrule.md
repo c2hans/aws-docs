@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudwatch-insightrule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudWatch::InsightRule",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudwatch-insightrule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudWatch::InsightRule
 Properties:
   [ApplyOnTransformedLogs](#cfn-cloudwatch-insightrule-applyontransformedlogs): {{Boolean}}

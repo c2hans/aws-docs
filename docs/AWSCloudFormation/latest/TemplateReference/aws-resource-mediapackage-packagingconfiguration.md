@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-mediapackage-packagingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MediaPackage::PackagingConfiguration",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-mediapackage-packagingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MediaPackage::PackagingConfiguration
 Properties:
   [CmafPackage](#cfn-mediapackage-packagingconfiguration-cmafpackage): {{

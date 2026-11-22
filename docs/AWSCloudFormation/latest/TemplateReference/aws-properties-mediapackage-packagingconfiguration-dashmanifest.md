@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackage-packagingconfiguration-dashmanifest-syntax.json"></a>
 
-```
+```json
 {
   "[ManifestLayout](#cfn-mediapackage-packagingconfiguration-dashmanifest-manifestlayout)" : {{String}},
   "[ManifestName](#cfn-mediapackage-packagingconfiguration-dashmanifest-manifestname)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackage-packagingconfiguration-dashmanifest-syntax.yaml"></a>
 
-```
+```yaml
   [ManifestLayout](#cfn-mediapackage-packagingconfiguration-dashmanifest-manifestlayout): {{String}}
   [ManifestName](#cfn-mediapackage-packagingconfiguration-dashmanifest-manifestname): {{String}}
   [MinBufferTimeSeconds](#cfn-mediapackage-packagingconfiguration-dashmanifest-minbuffertimeseconds): {{Integer}}

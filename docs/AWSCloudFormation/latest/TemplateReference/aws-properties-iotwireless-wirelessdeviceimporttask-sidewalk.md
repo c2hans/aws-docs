@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotwireless-wirelessdeviceimporttask-sidewalk-syntax.json"></a>
 
-```
+```json
 {
   "[DeviceCreationFile](#cfn-iotwireless-wirelessdeviceimporttask-sidewalk-devicecreationfile)" : {{String}},
   "[DeviceCreationFileList](#cfn-iotwireless-wirelessdeviceimporttask-sidewalk-devicecreationfilelist)" : {{[ String, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotwireless-wirelessdeviceimporttask-sidewalk-syntax.yaml"></a>
 
-```
+```yaml
   [DeviceCreationFile](#cfn-iotwireless-wirelessdeviceimporttask-sidewalk-devicecreationfile): {{String}}
   [DeviceCreationFileList](#cfn-iotwireless-wirelessdeviceimporttask-sidewalk-devicecreationfilelist): {{
     - String}}

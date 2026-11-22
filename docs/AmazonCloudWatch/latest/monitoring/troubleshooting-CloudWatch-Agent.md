@@ -91,7 +91,7 @@ You can query the CloudWatch agent to find whether it's running or stopped. You 
 
 If the agent is running, the output resembles the following.
 
-```
+```json
 {
        "status": "running",
        "starttime": "2017-12-12T18:41:18",

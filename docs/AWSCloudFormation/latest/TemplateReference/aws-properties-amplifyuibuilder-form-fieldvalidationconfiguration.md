@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amplifyuibuilder-form-fieldvalidationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[NumValues](#cfn-amplifyuibuilder-form-fieldvalidationconfiguration-numvalues)" : {{[ Number, ... ]}},
   "[StrValues](#cfn-amplifyuibuilder-form-fieldvalidationconfiguration-strvalues)" : {{[ String, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amplifyuibuilder-form-fieldvalidationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [NumValues](#cfn-amplifyuibuilder-form-fieldvalidationconfiguration-numvalues): {{
     - Number}}
   [StrValues](#cfn-amplifyuibuilder-form-fieldvalidationconfiguration-strvalues): {{

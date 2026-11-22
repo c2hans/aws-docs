@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-onlineevaluationconfig-clusteringconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Frequencies](#cfn-bedrockagentcore-onlineevaluationconfig-clusteringconfig-frequencies)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-onlineevaluationconfig-clusteringconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Frequencies](#cfn-bedrockagentcore-onlineevaluationconfig-clusteringconfig-frequencies): {{
     - String}}
 ```

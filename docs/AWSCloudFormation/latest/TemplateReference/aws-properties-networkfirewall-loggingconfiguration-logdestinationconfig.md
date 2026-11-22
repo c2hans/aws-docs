@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkfirewall-loggingconfiguration-logdestinationconfig-syntax.json"></a>
 
-```
+```json
 {
   "[LogDestination](#cfn-networkfirewall-loggingconfiguration-logdestinationconfig-logdestination)" : {{{{{Key}}: {{Value}}, ...}}},
   "[LogDestinationType](#cfn-networkfirewall-loggingconfiguration-logdestinationconfig-logdestinationtype)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkfirewall-loggingconfiguration-logdestinationconfig-syntax.yaml"></a>
 
-```
+```yaml
   [LogDestination](#cfn-networkfirewall-loggingconfiguration-logdestinationconfig-logdestination): {{
     {{Key}}: {{Value}}}}
   [LogDestinationType](#cfn-networkfirewall-loggingconfiguration-logdestinationconfig-logdestinationtype): {{String}}

@@ -52,7 +52,8 @@ Aurora DSQL supports the following PostgreSQL DDL commands.
 | `ALTER` | `SEQUENCE` | For information about the supported syntax of the `ALTER SEQUENCE` command, see [`ALTER SEQUENCE`](alter-sequence-syntax-support.md). |
 | `DROP` | `SEQUENCE` | For information about the supported syntax of the `DROP SEQUENCE` command, see [`DROP SEQUENCE`](drop-sequence-syntax-support.md). |
 | `CREATE` | `ROLE`, `WITH` |  |
-| `CREATE` | `FUNCTION` | `LANGUAGE SQL` |
+| `CREATE` | `FUNCTION` | `LANGUAGE SQL`, `LANGUAGE plpgsql`. For more information about PL/pgSQL, see [PL/pgSQL in Aurora DSQL](working-with-plpgsql.md). |
+| `CREATE` | `PROCEDURE` | `LANGUAGE plpgsql`. For more information about PL/pgSQL, see [PL/pgSQL in Aurora DSQL](working-with-plpgsql.md). |
 | `CREATE` | `DOMAIN` |  |
 | `CREATE` | `SCHEMA` | You can nest `CREATE SEQUENCE` and `GRANT` statements in the `CREATE SCHEMA` command. |
 | `ALTER` | `USER`, `ROLE`, `GROUP` | `RENAME TO` |
@@ -101,3 +102,5 @@ Aurora DSQL supports the following PostgreSQL TCL commands.
 Aurora DSQL supports the following PostgreSQL utility commands:
 + `EXPLAIN`
 + `ANALYZE` (relation name only)
++ `CALL` (invokes a procedure)
++ `DO` (runs an anonymous PL/pgSQL code block)

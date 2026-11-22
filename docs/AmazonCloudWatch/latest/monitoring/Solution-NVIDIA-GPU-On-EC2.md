@@ -92,7 +92,7 @@ The metrics collected by the agent are defined in the agent configuration. The s
 
 Use the following CloudWatch agent configuration on EC2 instances with NVIDIA GPUs. Configuration will be stored as a parameter in SSM's Parameter Store, as detailed later in [Step 2: Store the recommended CloudWatch agent configuration file in Systems Manager Parameter Store](#Solution-NVIDIA-GPU-Agent-Step2).
 
-```
+```json
 {
     "metrics": {
         "namespace": "CWAgent",

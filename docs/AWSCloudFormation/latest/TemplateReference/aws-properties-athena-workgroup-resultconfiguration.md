@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-athena-workgroup-resultconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AclConfiguration](#cfn-athena-workgroup-resultconfiguration-aclconfiguration)" : {{AclConfiguration}},
   "[EncryptionConfiguration](#cfn-athena-workgroup-resultconfiguration-encryptionconfiguration)" : {{EncryptionConfiguration}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-athena-workgroup-resultconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AclConfiguration](#cfn-athena-workgroup-resultconfiguration-aclconfiguration): {{
     AclConfiguration}}
   [EncryptionConfiguration](#cfn-athena-workgroup-resultconfiguration-encryptionconfiguration): {{

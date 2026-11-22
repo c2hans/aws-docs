@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-scatterplotfieldwells-syntax.json"></a>
 
-```
+```json
 {
   "[ScatterPlotCategoricallyAggregatedFieldWells](#cfn-quicksight-dashboard-scatterplotfieldwells-scatterplotcategoricallyaggregatedfieldwells)" : {{ScatterPlotCategoricallyAggregatedFieldWells}},
   "[ScatterPlotUnaggregatedFieldWells](#cfn-quicksight-dashboard-scatterplotfieldwells-scatterplotunaggregatedfieldwells)" : {{ScatterPlotUnaggregatedFieldWells}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-scatterplotfieldwells-syntax.yaml"></a>
 
-```
+```yaml
   [ScatterPlotCategoricallyAggregatedFieldWells](#cfn-quicksight-dashboard-scatterplotfieldwells-scatterplotcategoricallyaggregatedfieldwells): {{
     ScatterPlotCategoricallyAggregatedFieldWells}}
   [ScatterPlotUnaggregatedFieldWells](#cfn-quicksight-dashboard-scatterplotfieldwells-scatterplotunaggregatedfieldwells): {{

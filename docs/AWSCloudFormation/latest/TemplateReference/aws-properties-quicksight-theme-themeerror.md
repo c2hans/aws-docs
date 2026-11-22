@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-theme-themeerror-syntax.json"></a>
 
-```
+```json
 {
   "[Message](#cfn-quicksight-theme-themeerror-message)" : {{String}},
   "[Type](#cfn-quicksight-theme-themeerror-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-theme-themeerror-syntax.yaml"></a>
 
-```
+```yaml
   [Message](#cfn-quicksight-theme-themeerror-message): {{String}}
   [Type](#cfn-quicksight-theme-themeerror-type): {{String}}
 ```

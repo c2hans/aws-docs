@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-topic-comparativeorder-syntax.json"></a>
 
-```
+```json
 {
   "[SpecifedOrder](#cfn-quicksight-topic-comparativeorder-specifedorder)" : {{[ String, ... ]}},
   "[TreatUndefinedSpecifiedValues](#cfn-quicksight-topic-comparativeorder-treatundefinedspecifiedvalues)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-topic-comparativeorder-syntax.yaml"></a>
 
-```
+```yaml
   [SpecifedOrder](#cfn-quicksight-topic-comparativeorder-specifedorder): {{
     - String}}
   [TreatUndefinedSpecifiedValues](#cfn-quicksight-topic-comparativeorder-treatundefinedspecifiedvalues): {{String}}

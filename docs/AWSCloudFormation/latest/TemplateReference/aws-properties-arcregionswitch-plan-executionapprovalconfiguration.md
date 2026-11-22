@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-arcregionswitch-plan-executionapprovalconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ApprovalRole](#cfn-arcregionswitch-plan-executionapprovalconfiguration-approvalrole)" : {{String}},
   "[TimeoutMinutes](#cfn-arcregionswitch-plan-executionapprovalconfiguration-timeoutminutes)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-arcregionswitch-plan-executionapprovalconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ApprovalRole](#cfn-arcregionswitch-plan-executionapprovalconfiguration-approvalrole): {{String}}
   [TimeoutMinutes](#cfn-arcregionswitch-plan-executionapprovalconfiguration-timeoutminutes): {{Number}}
 ```

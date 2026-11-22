@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-guardrail-contentfilterconfig-syntax.json"></a>
 
-```
+```json
 {
   "[InputAction](#cfn-bedrock-guardrail-contentfilterconfig-inputaction)" : {{String}},
   "[InputEnabled](#cfn-bedrock-guardrail-contentfilterconfig-inputenabled)" : {{Boolean}},
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-guardrail-contentfilterconfig-syntax.yaml"></a>
 
-```
+```yaml
   [InputAction](#cfn-bedrock-guardrail-contentfilterconfig-inputaction): {{String}}
   [InputEnabled](#cfn-bedrock-guardrail-contentfilterconfig-inputenabled): {{Boolean}}
   [InputModalities](#cfn-bedrock-guardrail-contentfilterconfig-inputmodalities): {{

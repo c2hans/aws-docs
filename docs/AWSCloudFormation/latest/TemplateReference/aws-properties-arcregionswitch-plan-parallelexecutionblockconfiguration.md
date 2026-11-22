@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-arcregionswitch-plan-parallelexecutionblockconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Steps](#cfn-arcregionswitch-plan-parallelexecutionblockconfiguration-steps)" : {{[ Step, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-arcregionswitch-plan-parallelexecutionblockconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Steps](#cfn-arcregionswitch-plan-parallelexecutionblockconfiguration-steps): {{
     - Step}}
 ```

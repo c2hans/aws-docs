@@ -26,7 +26,7 @@ Notification configurations that use `Filter` cannot define filtering rules with
 
 The following notification configuration contains a queue configuration identifying an Amazon SQS queue for Amazon S3 to publish events to of the `s3:ObjectCreated:Put` type. The events are published whenever an object that has a prefix of `images/` and a `jpg` suffix is PUT to a bucket.
 
-```
+```xml
 <NotificationConfiguration>
   <QueueConfiguration>
       <Id>1</Id>
@@ -50,7 +50,7 @@ The following notification configuration contains a queue configuration identify
 
 The following notification configuration has multiple non-overlapping prefixes. The configuration defines that notifications for PUT requests in the `images/` folder go to queue-A, while notifications for PUT requests in the `logs/` folder go to queue-B.
 
-```
+```xml
 <NotificationConfiguration>
   <QueueConfiguration>
      <Id>1</Id>
@@ -83,7 +83,7 @@ The following notification configuration has multiple non-overlapping prefixes. 
 
 The following notification configuration has multiple non-overlapping suffixes. The configuration defines that all `.jpg` images newly added to the bucket are processed by Lambda cloud-function-A, and all newly added `.png` images are processed by cloud-function-B. The `.png` and `.jpg` suffixes aren't overlapping even though they have the same last letter. If a given string can end with both suffixes, the two suffixes are considered overlapping. A string can't end with both `.png` and `.jpg`, so the suffixes in the example configuration aren't overlapping suffixes.
 
-```
+```xml
 <NotificationConfiguration>
   <CloudFunctionConfiguration>
      <Id>1</Id>
@@ -116,7 +116,7 @@ The following notification configuration has multiple non-overlapping suffixes. 
 
 Your notification configurations that use `Filter` can't define filtering rules with overlapping prefixes for the same event types. They can only do so, if the overlapping prefixes that are used with suffixes that don't overlap. The following example configuration shows how objects created with a common prefix but non-overlapping suffixes can be delivered to different destinations.
 
-```
+```xml
 <NotificationConfiguration>
   <CloudFunctionConfiguration>
      <Id>1</Id>
@@ -166,7 +166,7 @@ You get an error if you try to save a notification configuration that has invali
 
 Any existing notification configuration rule is assumed to have a default prefix and suffix that match any other prefix and suffix, respectively. The following notification configuration isn't valid because it has overlapping prefixes. Specifically, the root prefix overlaps with any other prefix. The same thing is true if you use a suffix instead of a prefix in this example. The root suffix overlaps with any other suffix.
 
-```
+```xml
 <NotificationConfiguration>
      <TopicConfiguration>
          <Topic>arn:aws:sns:us-west-2:444455556666:sns-notification-one</Topic>
@@ -189,7 +189,7 @@ Any existing notification configuration rule is assumed to have a default prefix
 
 The following notification configuration isn't valid because it has overlapping suffixes. If a given string can end with both suffixes, the two suffixes are considered overlapping. A string can end with `jpg` and `pg`. So, the suffixes overlap. The same is true for prefixes. If a given string can begin with both prefixes, the two prefixes are considered overlapping.
 
-```
+```xml
  <NotificationConfiguration>
      <TopicConfiguration>
          <Topic>arn:aws:sns:us-west-2:444455556666:sns-topic-one</Topic>
@@ -220,7 +220,7 @@ The following notification configuration isn't valid because it has overlapping 
 
 The following notification configuration isn't valid because it has overlapping prefixes and suffixes.
 
-```
+```xml
 <NotificationConfiguration>
      <TopicConfiguration>
          <Topic>arn:aws:sns:us-west-2:444455556666:sns-topic-one</Topic>

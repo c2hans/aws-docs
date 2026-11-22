@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-dataautomationlibrary-encryptionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[KmsEncryptionContext](#cfn-bedrock-dataautomationlibrary-encryptionconfiguration-kmsencryptioncontext)" : {{{{{Key}}: {{Value}}, ...}}},
   "[KmsKeyId](#cfn-bedrock-dataautomationlibrary-encryptionconfiguration-kmskeyid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-dataautomationlibrary-encryptionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [KmsEncryptionContext](#cfn-bedrock-dataautomationlibrary-encryptionconfiguration-kmsencryptioncontext): {{
     {{Key}}: {{Value}}}}
   [KmsKeyId](#cfn-bedrock-dataautomationlibrary-encryptionconfiguration-kmskeyid): {{String}}

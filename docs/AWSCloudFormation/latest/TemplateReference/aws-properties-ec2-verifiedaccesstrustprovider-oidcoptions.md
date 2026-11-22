@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-verifiedaccesstrustprovider-oidcoptions-syntax.json"></a>
 
-```
+```json
 {
   "[AuthorizationEndpoint](#cfn-ec2-verifiedaccesstrustprovider-oidcoptions-authorizationendpoint)" : {{String}},
   "[ClientId](#cfn-ec2-verifiedaccesstrustprovider-oidcoptions-clientid)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-verifiedaccesstrustprovider-oidcoptions-syntax.yaml"></a>
 
-```
+```yaml
   [AuthorizationEndpoint](#cfn-ec2-verifiedaccesstrustprovider-oidcoptions-authorizationendpoint): {{String}}
   [ClientId](#cfn-ec2-verifiedaccesstrustprovider-oidcoptions-clientid): {{String}}
   [ClientSecret](#cfn-ec2-verifiedaccesstrustprovider-oidcoptions-clientsecret): {{String}}

@@ -49,7 +49,7 @@ Amazon Quick's BYOI feature to connect your existing Q Business Index supports t
 
 Use the AWS CLI to export your current Q Business configurations for planning purposes. Run the following commands to catalog your data sources:
 
-```
+```bash
 # List all data sources in your Q Business application
 aws qbusiness list-data-sources \
   --application-id <your-application-id> \
@@ -175,7 +175,7 @@ Organizations using IAM Federation, native identities, or AWS Managed Microsoft 
 
 The following example script demonstrates how to export user-to-data-source mappings from Q Business and generate corresponding Quick knowledge base permission assignments:
 
-```
+```python
 import boto3
 import json
 

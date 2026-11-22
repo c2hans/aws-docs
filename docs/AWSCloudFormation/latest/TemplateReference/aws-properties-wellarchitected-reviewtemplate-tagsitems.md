@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wellarchitected-reviewtemplate-tagsitems-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-wellarchitected-reviewtemplate-tagsitems-key)" : {{String}},
   "[Value](#cfn-wellarchitected-reviewtemplate-tagsitems-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wellarchitected-reviewtemplate-tagsitems-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-wellarchitected-reviewtemplate-tagsitems-key): {{String}}
   [Value](#cfn-wellarchitected-reviewtemplate-tagsitems-value): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cassandra-table-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Cassandra::Table",
   "Properties" : {
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cassandra-table-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Cassandra::Table
 Properties:
   [AutoScalingSpecifications](#cfn-cassandra-table-autoscalingspecifications): {{
@@ -227,7 +227,7 @@ The following example creates a new table. The table has the name `my_table`, an
 #### JSON
 <a name="aws-resource-cassandra-table--examples--Create_a_table_with_minimal_options--JSON"></a>
 
-```
+```JSON
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -251,7 +251,7 @@ The following example creates a new table. The table has the name `my_table`, an
 #### YAML
 <a name="aws-resource-cassandra-table--examples--Create_a_table_with_minimal_options--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   myNewTable:
@@ -272,7 +272,7 @@ The following example creates a new table with the name `my_table` where the col
 #### JSON
 <a name="aws-resource-cassandra-table--examples--Create_a_table_with_frozen_collections--JSON"></a>
 
-```
+```JSON
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -334,7 +334,7 @@ The following example creates a new table with the name `my_table` where the col
 #### YAML
 <a name="aws-resource-cassandra-table--examples--Create_a_table_with_frozen_collections--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   myTable:
@@ -374,7 +374,7 @@ The following example creates a new table with the name `my_table`. The columns 
 #### JSON
 <a name="aws-resource-cassandra-table--examples--Create_a_table_with_static_columns--JSON"></a>
 
-```
+```JSON
 {
    "AWSTemplateFormatVersion":"2010-09-09",
    "Resources":{
@@ -465,7 +465,7 @@ The following example creates a new table with the name `my_table`. The columns 
 #### YAML
 <a name="aws-resource-cassandra-table--examples--Create_a_table_with_static_columns--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   myNewTable:
@@ -523,7 +523,7 @@ The following example creates a new table. The table has the name `my_table`, an
 #### JSON
 <a name="aws-resource-cassandra-table--examples--Create_a_table_with_a_stream--JSON"></a>
 
-```
+```JSON
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -551,7 +551,7 @@ The following example creates a new table. The table has the name `my_table`, an
 #### YAML
 <a name="aws-resource-cassandra-table--examples--Create_a_table_with_a_stream--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   myNewTable:
@@ -575,7 +575,7 @@ The following example creates a new table. The table has the name `my_table`, an
 #### JSON
 <a name="aws-resource-cassandra-table--examples--Create_a_table_with_a_stream_and_tags--JSON"></a>
 
-```
+```JSON
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -612,7 +612,7 @@ The following example creates a new table. The table has the name `my_table`, an
 #### YAML
 <a name="aws-resource-cassandra-table--examples--Create_a_table_with_a_stream_and_tags--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   myNewTable:
@@ -641,7 +641,7 @@ The following example creates a table `my_table` with client-side timestamps, pr
 #### JSON
 <a name="aws-resource-cassandra-table--examples--Create_a_table_with_client-side_timestamps_and_other_options--JSON"></a>
 
-```
+```JSON
 {
    "AWSTemplateFormatVersion":"2010-09-09",
    "Resources":{
@@ -724,7 +724,7 @@ The following example creates a table `my_table` with client-side timestamps, pr
 #### YAML
 <a name="aws-resource-cassandra-table--examples--Create_a_table_with_client-side_timestamps_and_other_options--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   myNewTable:
@@ -778,7 +778,7 @@ The following example creates a table `my_table` with provisioned read and write
 #### JSON
 <a name="aws-resource-cassandra-table--examples--Create_a_single_Region_table_in_provisioned_capacity_mode_with_auto_scaling--JSON"></a>
 
-```
+```JSON
 {
   "AWSTemplateFormatVersion" : "2010-09-09",
   "Resources" : {
@@ -835,7 +835,7 @@ The following example creates a table `my_table` with provisioned read and write
 #### YAML
 <a name="aws-resource-cassandra-table--examples--Create_a_single_Region_table_in_provisioned_capacity_mode_with_auto_scaling--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   myNewTable:
@@ -882,7 +882,7 @@ The following example creates a table `my_table` with provisioned read and write
 #### JSON
 <a name="aws-resource-cassandra-table--examples--Create_a_multi-Region_table_in_provisioned_capacity_mode_with_auto_scaling--JSON"></a>
 
-```
+```JSON
 {
   "AWSTemplateFormatVersion" : "2010-09-09",
   "Resources" : {
@@ -968,7 +968,7 @@ The following example creates a table `my_table` with provisioned read and write
 #### YAML
 <a name="aws-resource-cassandra-table--examples--Create_a_multi-Region_table_in_provisioned_capacity_mode_with_auto_scaling--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   myNewTable:
@@ -1036,7 +1036,7 @@ The following example creates a table `my_table` with customer managed encryptio
 #### JSON
 <a name="aws-resource-cassandra-table--examples--Create_a_table_with_customer_managed_keys_and_other_options--JSON"></a>
 
-```
+```JSON
 {
    "AWSTemplateFormatVersion":"2010-09-09",
    "Resources":{
@@ -1122,7 +1122,7 @@ The following example creates a table `my_table` with customer managed encryptio
 #### YAML
 <a name="aws-resource-cassandra-table--examples--Create_a_table_with_customer_managed_keys_and_other_options--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   myNewTable:
@@ -1178,7 +1178,7 @@ The following example shows how to add five new columns to the existing table `m
 #### JSON
 <a name="aws-resource-cassandra-table--examples--Add_new_columns_to_an_existing_table--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -1212,7 +1212,7 @@ The following example shows how to add five new columns to the existing table `m
 #### JSON
 <a name="aws-resource-cassandra-table--examples--Add_new_columns_to_an_existing_table--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -1266,7 +1266,7 @@ The following example shows how to add five new columns to the existing table `m
 #### YAML
 <a name="aws-resource-cassandra-table--examples--Add_new_columns_to_an_existing_table--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   myTable:
@@ -1287,7 +1287,7 @@ Resources:
 #### YAML
 <a name="aws-resource-cassandra-table--examples--Add_new_columns_to_an_existing_table--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   myTable:

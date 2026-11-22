@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-emrcontainers-virtualcluster-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EMRContainers::VirtualCluster",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-emrcontainers-virtualcluster-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EMRContainers::VirtualCluster
 Properties:
   [ContainerProvider](#cfn-emrcontainers-virtualcluster-containerprovider): {{
@@ -119,7 +119,7 @@ The ID of the virtual cluster, such as `ab4rp1abcs8xz47n3x0example`.
 #### JSON
 <a name="aws-resource-emrcontainers-virtualcluster--examples--Specifies_a_virtual_cluster--json"></a>
 
-```
+```json
 {
    "Resources": {
       "TestVirtualCluster": {
@@ -155,7 +155,7 @@ The ID of the virtual cluster, such as `ab4rp1abcs8xz47n3x0example`.
 #### YAML
 <a name="aws-resource-emrcontainers-virtualcluster--examples--Specifies_a_virtual_cluster--yaml"></a>
 
-```
+```yaml
 Resources:
   TestVirtualCluster:
     Type: 'AWS::EMRContainers::VirtualCluster'

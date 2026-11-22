@@ -30,7 +30,7 @@ The following example table bucket policy allows the IAM `data steward` to delet
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -60,7 +60,7 @@ The following an example table bucket policy allows Jane, a user from AWS accoun
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -96,7 +96,7 @@ The following example table policy that allows the IAM role `data steward` to de
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "DeleteTable",

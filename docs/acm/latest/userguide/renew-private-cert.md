@@ -33,7 +33,7 @@ The following procedure provides an example solution for automating export of yo
 
 ****
 
-      ```
+      ```json
       {
          "Version":"2012-10-17",
          "Statement":[
@@ -54,7 +54,7 @@ The following procedure provides an example solution for automating export of yo
 
    Configure the rule by adding the following event pattern.
 
-   ```
+   ```json
    {
       "source":[
          "aws.health"

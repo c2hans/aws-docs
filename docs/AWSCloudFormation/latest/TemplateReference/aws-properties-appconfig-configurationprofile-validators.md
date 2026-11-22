@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appconfig-configurationprofile-validators-syntax.json"></a>
 
-```
+```json
 {
   "[Content](#cfn-appconfig-configurationprofile-validators-content)" : {{String}},
   "[Type](#cfn-appconfig-configurationprofile-validators-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appconfig-configurationprofile-validators-syntax.yaml"></a>
 
-```
+```yaml
   [Content](#cfn-appconfig-configurationprofile-validators-content): {{String}}
   [Type](#cfn-appconfig-configurationprofile-validators-type): {{String}}
 ```

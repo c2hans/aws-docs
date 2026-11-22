@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-retrievalinstruction-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-bedrock-retrievalinstruction-tag-key)" : {{String}},
   "[Value](#cfn-bedrock-retrievalinstruction-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-retrievalinstruction-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-bedrock-retrievalinstruction-tag-key): {{String}}
   [Value](#cfn-bedrock-retrievalinstruction-tag-value): {{String}}
 ```

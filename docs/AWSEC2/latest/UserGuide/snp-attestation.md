@@ -33,13 +33,13 @@ In this step, you install and build the `snpguest` utility, which you use to gen
 
 1. Verify the prerequisites are installed.
 
-   ```
+   ```sh
    $ perl --version; cargo --version; git --version
    ```
 
 1. Run the following commands to build the `snpguest` utility from the [snpguest repository](https://github.com/virtee/snpguest).
 
-   ```
+   ```sh
    $ git clone https://github.com/virtee/snpguest.git
    $ cd snpguest
    $ cargo build -r
@@ -51,7 +51,7 @@ In this step, you install and build the `snpguest` utility, which you use to gen
 
 Generate a request for the attestation report. The `snpguest` utility requests the attestation report from the AMD Secure Processor through the host, and writes it to a binary file. The following example creates a random request nonce and stores the report in `report.bin`.
 
-```
+```sh
 $ ./snpguest report {{report.bin}} {{request-file.txt}} --random
 ```
 
@@ -62,19 +62,19 @@ The attestation report is signed by the VCEK, which is unique to the AMD chip on
 
 1. Fetch the VCEK certificate from the AMD Key Distribution Service (KDS). The certificate is identified by the chip ID and TCB version from the attestation report.
 
-   ```
+   ```sh
    $ ./snpguest fetch vcek pem ./ ./report.bin --processor-model milan
    ```
 
 1. Fetch the AMD root certificates (AMD Root Key (ARK) and AMD SEV Key (ASK)) that form the chain of trust.
 
-   ```
+   ```sh
    $ ./snpguest fetch ca PEM ./ milan --endorser vcek
    ```
 
 1. Verify the certificate chain.
 
-   ```
+   ```sh
    $ ./snpguest verify certs ./
    ```
 
@@ -88,14 +88,14 @@ The attestation report is signed by the VCEK, which is unique to the AMD chip on
 
 **Optional:** For additional transparency, you can independently verify the chain by downloading the certificates directly from AMD and using `openssl`.
 
-```
+```sh
 $ curl --proto '=https' --tlsv1.2 -sSf https://kdsintf.amd.com/vcek/v1/Milan/cert_chain -o ./cert_chain.pem
 $ openssl verify --CAfile ./cert_chain.pem vcek.pem
 ```
 
 The following is example output.
 
-```
+```bash
 vcek.pem: OK
 ```
 
@@ -104,7 +104,7 @@ vcek.pem: OK
 
 Verify that the attestation report was signed by the VCEK certificate. This confirms that the report was generated on genuine AMD hardware and has not been tampered with.
 
-```
+```sh
 $ ./snpguest verify attestation ./ report.bin
 ```
 
@@ -134,7 +134,7 @@ In this step, you install and build the `snpguest` utility, which you use to gen
 
 1. Run the following commands to build the `snpguest` utility from the [snpguest repository](https://github.com/virtee/snpguest).
 
-   ```
+   ```sh
    $ git clone https://github.com/virtee/snpguest.git
    $ cd snpguest
    $ cargo build -r
@@ -146,13 +146,13 @@ In this step, you install and build the `snpguest` utility, which you use to gen
 
 Generate a request for the attestation report. The `snpguest` utility requests the attestation report from the host, and writes it to a binary file. The following example creates a random request nonce and stores the report in `report.bin`.
 
-```
+```sh
 $ ./snpguest report {{report.bin}} {{request-file.txt}} --random
 ```
 
 Request the certificates from host memory, and store them as PEM files.
 
-```
+```sh
 $ ./snpguest certificates PEM {{./}}
 ```
 
@@ -163,19 +163,19 @@ The attestation report is signed by the VLEK, which is issued by AMD for AWS. Yo
 
 1. Download the VLEK root of trust certificates from the official AMD Key Distribution Service to the current directory.
 
-   ```
+   ```sh
    $ sudo curl --proto '=https' --tlsv1.2 -sSf https://kdsintf.amd.com/vlek/v1/Milan/cert_chain -o ./cert_chain.pem
    ```
 
 1. Use `openssl` to validate that the VLEK certificate is signed by the AMD root of trust certificates.
 
-   ```
+   ```sh
    $ sudo openssl verify --CAfile ./cert_chain.pem vlek.pem
    ```
 
    The following is example output.
 
-   ```
+   ```bash
    vlek.pem: OK
    ```
 
@@ -184,7 +184,7 @@ The attestation report is signed by the VLEK, which is issued by AMD for AWS. Yo
 
 Verify that the attestation report was signed by the VLEK certificate. This confirms that the report was generated on genuine AMD hardware and has not been tampered with.
 
-```
+```sh
 $ ./snpguest verify attestation ./ report.bin
 ```
 

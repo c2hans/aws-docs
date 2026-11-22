@@ -8,13 +8,13 @@ Sends a message to the AI Agent. Returns a handle containing the assigned `input
 
  **Signature**
 
-```
+```typescript
 sendAIAgentMessage(params: SendAIAgentMessageParams): Promise<SendAIAgentMessageResult>
 ```
 
  **Usage**
 
-```
+```typescript
 const handle = await aiAgentsClient.sendAIAgentMessage({
     contactId: "contact-123",
     text: "How do I reset my password?",
@@ -49,6 +49,6 @@ The `text` field has a maximum length of 512 characters. The `metadata` object s
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

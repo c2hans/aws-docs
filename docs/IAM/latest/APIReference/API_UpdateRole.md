@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateRole.h
 
 # UpdateRole
 
-Updates the description or maximum session duration setting of a role.
+Updates the description, maximum session duration, or maximum sign-in session duration of a role. You cannot change the maximum sign-in session duration of a service-linked role.
 
 ## Request Parameters
 <a name="API_UpdateRole_RequestParameters"></a>
@@ -26,6 +26,22 @@ Type: Integer
 Valid Range: Minimum value of 3600. Maximum value of 43200.
 Required: No
 
+ ** MaxSigninSessionDuration **
+The maximum duration (in seconds) of an AWS Sign-In session for users who sign in with the specified role. This setting can have a value from 1 hour (3600 seconds) to 90 days (7776000 seconds), inclusive, and replaces any value currently configured for the role. This setting is independent of `MaxSessionDuration`.
+If you omit both this parameter and `ResetMaxSigninSessionDuration`, the current setting is unchanged. You cannot specify this parameter and set `ResetMaxSigninSessionDuration` to `true` in the same request.
+Changes to this setting apply to new sign-in sessions. Sessions that are already established are not affected.
+You cannot set this value on a service-linked role.
+Type: Integer
+Valid Range: Minimum value of 3600. Maximum value of 7776000.
+Required: No
+
+ ** ResetMaxSigninSessionDuration **
+Specifies whether to clear the role's maximum sign-in session duration. Set this value to `true` to return the setting to its unset state, so that the existing sign-in session behavior applies. When the setting is unset, the role's `MaxSigninSessionDuration` is omitted from responses.
+If you set this value to `false` or omit it, the current setting is not cleared. You cannot set this value to `true` and specify `MaxSigninSessionDuration` in the same request. Clearing a setting that is already unset has no effect.
+You cannot reset this value on a service-linked role.
+Type: Boolean
+Required: No
+
  ** RoleName **
 The name of the role that you want to modify.
 Type: String
@@ -37,6 +53,10 @@ Required: Yes
 <a name="API_UpdateRole_Errors"></a>
 
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** InvalidInput **
+The request was rejected because an invalid or out-of-range value was supplied for an input parameter.
+HTTP Status Code: 400
 
  ** NoSuchEntity **
 The request was rejected because it referenced a resource entity that does not exist. The error message describes the resource.

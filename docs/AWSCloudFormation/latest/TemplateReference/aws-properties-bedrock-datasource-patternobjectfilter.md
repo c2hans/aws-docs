@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-datasource-patternobjectfilter-syntax.json"></a>
 
-```
+```json
 {
   "[ExclusionFilters](#cfn-bedrock-datasource-patternobjectfilter-exclusionfilters)" : {{[ String, ... ]}},
   "[InclusionFilters](#cfn-bedrock-datasource-patternobjectfilter-inclusionfilters)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-datasource-patternobjectfilter-syntax.yaml"></a>
 
-```
+```yaml
   [ExclusionFilters](#cfn-bedrock-datasource-patternobjectfilter-exclusionfilters): {{
     - String}}
   [InclusionFilters](#cfn-bedrock-datasource-patternobjectfilter-inclusionfilters): {{

@@ -10,7 +10,7 @@ An RDS patch version includes important bug fixes added to a minor version after
 
 You can find out the RDS version number of your RDS for MySQL database with the following SQL query:
 
-```
+```sql
 mysql> select mysql.rds_version();
 ```
 

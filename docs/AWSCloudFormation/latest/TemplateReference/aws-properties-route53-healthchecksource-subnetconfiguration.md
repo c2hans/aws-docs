@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-route53-healthchecksource-subnetconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AvailabilityZoneId](#cfn-route53-healthchecksource-subnetconfiguration-availabilityzoneid)" : {{String}},
   "[SecurityGroupIdList](#cfn-route53-healthchecksource-subnetconfiguration-securitygroupidlist)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-route53-healthchecksource-subnetconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AvailabilityZoneId](#cfn-route53-healthchecksource-subnetconfiguration-availabilityzoneid): {{String}}
   [SecurityGroupIdList](#cfn-route53-healthchecksource-subnetconfiguration-securitygroupidlist): {{
     - String}}

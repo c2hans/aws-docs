@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-gatewayconnectorhealthcheckmatcher-syntax.json"></a>
 
-```
+```json
 {
   "[GrpcCode](#cfn-ecs-service-gatewayconnectorhealthcheckmatcher-grpccode)" : {{String}},
   "[HttpCode](#cfn-ecs-service-gatewayconnectorhealthcheckmatcher-httpcode)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-gatewayconnectorhealthcheckmatcher-syntax.yaml"></a>
 
-```
+```yaml
   [GrpcCode](#cfn-ecs-service-gatewayconnectorhealthcheckmatcher-grpccode): {{String}}
   [HttpCode](#cfn-ecs-service-gatewayconnectorhealthcheckmatcher-httpcode): {{String}}
 ```

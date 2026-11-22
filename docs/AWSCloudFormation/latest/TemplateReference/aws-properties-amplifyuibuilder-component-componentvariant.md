@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amplifyuibuilder-component-componentvariant-syntax.json"></a>
 
-```
+```json
 {
   "[Overrides](#cfn-amplifyuibuilder-component-componentvariant-overrides)" : {{{{{Key}}: {{Value}}, ...}}},
   "[VariantValues](#cfn-amplifyuibuilder-component-componentvariant-variantvalues)" : {{{{{Key}}: {{Value}}, ...}}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amplifyuibuilder-component-componentvariant-syntax.yaml"></a>
 
-```
+```yaml
   [Overrides](#cfn-amplifyuibuilder-component-componentvariant-overrides): {{
     {{Key}}: {{Value}}}}
   [VariantValues](#cfn-amplifyuibuilder-component-componentvariant-variantvalues): {{

@@ -53,7 +53,7 @@ You can use the CloudWatch console to subscribe a log group to OpenSearch Servic
 
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Statement": [

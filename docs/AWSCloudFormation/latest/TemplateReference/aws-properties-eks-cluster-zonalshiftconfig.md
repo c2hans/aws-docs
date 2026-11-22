@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-cluster-zonalshiftconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-eks-cluster-zonalshiftconfig-enabled)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-cluster-zonalshiftconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-eks-cluster-zonalshiftconfig-enabled): {{Boolean}}
 ```
 

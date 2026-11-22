@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrcontainers-securityconfiguration-securenamespaceinfo-syntax.json"></a>
 
-```
+```json
 {
   "[ClusterId](#cfn-emrcontainers-securityconfiguration-securenamespaceinfo-clusterid)" : {{String}},
   "[Namespace](#cfn-emrcontainers-securityconfiguration-securenamespaceinfo-namespace)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrcontainers-securityconfiguration-securenamespaceinfo-syntax.yaml"></a>
 
-```
+```yaml
   [ClusterId](#cfn-emrcontainers-securityconfiguration-securenamespaceinfo-clusterid): {{String}}
   [Namespace](#cfn-emrcontainers-securityconfiguration-securenamespaceinfo-namespace): {{String}}
 ```

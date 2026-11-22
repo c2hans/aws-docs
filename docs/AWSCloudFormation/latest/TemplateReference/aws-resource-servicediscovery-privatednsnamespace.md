@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-servicediscovery-privatednsnamespace-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ServiceDiscovery::PrivateDnsNamespace",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-servicediscovery-privatednsnamespace-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ServiceDiscovery::PrivateDnsNamespace
 Properties:
   [Description](#cfn-servicediscovery-privatednsnamespace-description): {{String}}
@@ -123,7 +123,7 @@ The following example creates a private DNS namespace named `private-example.com
 #### JSON
 <a name="aws-resource-servicediscovery-privatednsnamespace--examples--Create_a_private_DNS_namespace--json"></a>
 
-```
+```json
 {
     "Resources": {
         "PrivateDnsNamespace": {
@@ -148,7 +148,7 @@ The following example creates a private DNS namespace named `private-example.com
 #### YAML
 <a name="aws-resource-servicediscovery-privatednsnamespace--examples--Create_a_private_DNS_namespace--yaml"></a>
 
-```
+```yaml
 Resources:
   PrivateDnsNamespace:
     Type: AWS::ServiceDiscovery::PrivateDnsNamespace

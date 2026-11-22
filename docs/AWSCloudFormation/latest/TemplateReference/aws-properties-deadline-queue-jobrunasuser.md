@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-deadline-queue-jobrunasuser-syntax.json"></a>
 
-```
+```json
 {
   "[Posix](#cfn-deadline-queue-jobrunasuser-posix)" : {{PosixUser}},
   "[RunAs](#cfn-deadline-queue-jobrunasuser-runas)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-deadline-queue-jobrunasuser-syntax.yaml"></a>
 
-```
+```yaml
   [Posix](#cfn-deadline-queue-jobrunasuser-posix): {{
     PosixUser}}
   [RunAs](#cfn-deadline-queue-jobrunasuser-runas): {{String}}

@@ -14,7 +14,7 @@ The 'sub' value used in the object key is not the user's sub value in the User P
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

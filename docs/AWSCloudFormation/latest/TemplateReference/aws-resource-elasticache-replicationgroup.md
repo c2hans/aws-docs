@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-elasticache-replicationgroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ElastiCache::ReplicationGroup",
   "Properties" : {
@@ -72,7 +72,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-elasticache-replicationgroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ElastiCache::ReplicationGroup
 Properties:
   [AtRestEncryptionEnabled](#cfn-elasticache-replicationgroup-atrestencryptionenabled): {{Boolean}}
@@ -461,8 +461,9 @@ A list of tags to be added to this resource. Tags are comma-separated key,value 
 
 `TransitEncryptionEnabled`  <a name="cfn-elasticache-replicationgroup-transitencryptionenabled"></a>
 A flag that enables in-transit encryption when set to `true`.
-This parameter is only available when creating a replication group in an Amazon VPC using Valkey version `7.2` and above, Redis OSS version `3.2.6`, or Redis OSS version `4.x` and above, and the cluster is being created in an Amazon VPC.
+This parameter is available for replication groups in an Amazon VPC using Valkey version `7.2` and above, Redis OSS version `3.2.6`, or Redis OSS version `4.x` and above.
 If you enable in-transit encryption, you must also specify a value for `CacheSubnetGroup`.
+To enable in-transit encryption on an existing replication group, you must also set `TransitEncryptionMode` to `preferred` in the same request. For details about the migration process, see [TransitEncryptionMode](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-transitencryptionmode).
 TransitEncryptionEnabled is required when creating a new valkey replication group.
 Default: `false`
 For HIPAA compliance, you must specify `TransitEncryptionEnabled` as `true`, an `AuthToken`, and a `CacheSubnetGroup`.
@@ -556,18 +557,19 @@ The following example declares a replication group with two nodes and automatic 
 #### JSON
 <a name="aws-resource-elasticache-replicationgroup--examples--Declare_a_Replication_Group_with_Two_Nodes--json"></a>
 
-```
+```json
 {
     "myReplicationGroup": {
         "Type": "AWS::ElastiCache::ReplicationGroup",
         "Properties": {
             "ReplicationGroupDescription": "my description",
             "NumCacheClusters": "2",
-            "Engine": "redis",
-            "CacheNodeType": "cache.m3.medium",
+            "Engine": "valkey",
+            "CacheNodeType": "cache.m7g.large",
             "AutomaticFailoverEnabled": "true",
             "CacheSubnetGroupName": "subnetgroup",
-            "EngineVersion": "2.8.6",
+            "TransitEncryptionEnabled": "true",
+            "EngineVersion": "9.0",
             "PreferredMaintenanceWindow": "wed:09:25-wed:22:30",
             "SnapshotRetentionLimit": "4",
             "SnapshotWindow": "03:30-05:30"
@@ -579,17 +581,18 @@ The following example declares a replication group with two nodes and automatic 
 #### YAML
 <a name="aws-resource-elasticache-replicationgroup--examples--Declare_a_Replication_Group_with_Two_Nodes--yaml"></a>
 
-```
+```yaml
 myReplicationGroup:
   Type: 'AWS::ElastiCache::ReplicationGroup'
   Properties:
     ReplicationGroupDescription: my description
     NumCacheClusters: '2'
-    Engine: redis
-    CacheNodeType: cache.m3.medium
+    Engine: valkey
+    CacheNodeType: cache.m7g.large
     AutomaticFailoverEnabled: 'true'
     CacheSubnetGroupName: subnetgroup
-    EngineVersion: 2.8.6
+    TransitEncryptionEnabled: 'true'
+    EngineVersion: '9.0'
     PreferredMaintenanceWindow: 'wed:09:25-wed:22:30'
     SnapshotRetentionLimit: '4'
     SnapshotWindow: '03:30-05:30'
@@ -603,18 +606,19 @@ The following example declares a replication group with two nodes groups (shards
 #### JSON
 <a name="aws-resource-elasticache-replicationgroup--examples--Declare_a_Replication_Group_with_Two_Node_Groups--json"></a>
 
-```
+```json
 {
     "BasicReplicationGroup": {
         "Type": "AWS::ElastiCache::ReplicationGroup",
         "Properties": {
             "AutomaticFailoverEnabled": true,
-            "CacheNodeType": "cache.r3.large",
+            "CacheNodeType": "cache.r7g.large",
+            "CacheParameterGroupName": "default.valkey9.cluster.on",
             "CacheSubnetGroupName": {
                 "Ref": "CacheSubnetGroup"
             },
-            "Engine": "redis",
-            "EngineVersion": "3.2",
+            "Engine": "valkey",
+            "EngineVersion": "9.0",
             "NumNodeGroups": "2",
             "ReplicasPerNodeGroup": "3",
             "Port": 6379,
@@ -626,7 +630,8 @@ The following example declares a replication group with two nodes groups (shards
                 }
             ],
             "SnapshotRetentionLimit": 5,
-            "SnapshotWindow": "10:00-12:00"
+            "SnapshotWindow": "10:00-12:00",
+            "TransitEncryptionEnabled": true
         }
     }
 }
@@ -635,15 +640,16 @@ The following example declares a replication group with two nodes groups (shards
 #### YAML
 <a name="aws-resource-elasticache-replicationgroup--examples--Declare_a_Replication_Group_with_Two_Node_Groups--yaml"></a>
 
-```
+```yaml
 BasicReplicationGroup:
   Type: 'AWS::ElastiCache::ReplicationGroup'
   Properties:
     AutomaticFailoverEnabled: true
-    CacheNodeType: cache.r3.large
+    CacheNodeType: cache.r7g.large
+    CacheParameterGroupName: default.valkey9.cluster.on
     CacheSubnetGroupName: !Ref CacheSubnetGroup
-    Engine: redis
-    EngineVersion: '3.2'
+    Engine: valkey
+    EngineVersion: '9.0'
     NumNodeGroups: '2'
     ReplicasPerNodeGroup: '3'
     Port: 6379
@@ -653,6 +659,7 @@ BasicReplicationGroup:
       - !Ref ReplicationGroupSG
     SnapshotRetentionLimit: 5
     SnapshotWindow: '10:00-12:00'
+    TransitEncryptionEnabled: true
 ```
 
 ## See also

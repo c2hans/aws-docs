@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-securitylake-awslogsource-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SecurityLake::AwsLogSource",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-securitylake-awslogsource-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SecurityLake::AwsLogSource
 Properties:
   [Accounts](#cfn-securitylake-awslogsource-accounts): {{
@@ -95,7 +95,7 @@ After deploying Security Lake, use this example to add AWS log sources.
 #### JSON
 <a name="aws-resource-securitylake-awslogsource--examples--Add_log_sources--json"></a>
 
-```
+```json
 {
 "AWSTemplateFormatVersion": "2010-09-09",
 "Description": "Security Lake Already Deployed",
@@ -183,7 +183,7 @@ After deploying Security Lake, use this example to add AWS log sources.
 #### YAML
 <a name="aws-resource-securitylake-awslogsource--examples--Add_log_sources--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Security Lake Already Deployed
 Resources:

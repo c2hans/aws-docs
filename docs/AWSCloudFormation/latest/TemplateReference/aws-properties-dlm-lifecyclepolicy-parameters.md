@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dlm-lifecyclepolicy-parameters-syntax.json"></a>
 
-```
+```json
 {
   "[ExcludeBootVolume](#cfn-dlm-lifecyclepolicy-parameters-excludebootvolume)" : {{Boolean}},
   "[ExcludeDataVolumeTags](#cfn-dlm-lifecyclepolicy-parameters-excludedatavolumetags)" : {{[ Tag, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dlm-lifecyclepolicy-parameters-syntax.yaml"></a>
 
-```
+```yaml
   [ExcludeBootVolume](#cfn-dlm-lifecyclepolicy-parameters-excludebootvolume): {{Boolean}}
   [ExcludeDataVolumeTags](#cfn-dlm-lifecyclepolicy-parameters-excludedatavolumetags): {{
     - Tag}}

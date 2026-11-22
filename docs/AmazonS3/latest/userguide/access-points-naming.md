@@ -54,7 +54,7 @@ When adopting access points, you can use access point alias names without requir
 
 When you create an access point, Amazon S3 automatically generates an access point alias name, as shown in the following example. To run this command, replace the `{{user input placeholders}}` with your own information.
 
-```
+```bash
 aws s3control create-access-point --bucket {{amzn-s3-demo-bucket1}} --name {{my-access-point}} --account-id {{111122223333}}
 {
     "AccessPointArn": "arn:aws:s3:{{region}}:{{111122223333}}:accesspoint/{{my-access-point}}",
@@ -66,7 +66,7 @@ You can use this access point alias name instead of an Amazon S3 bucket name in 
 
 The following AWS CLI example for the `get-object` command uses the bucket's access point alias to return information about the specified object. To run this command, replace the `{{user input placeholders}}` with your own information.
 
-```
+```xml
 aws s3api get-object --bucket {{my-access-point}}-{{aqfqprnstn7aefdfbarligizwgyfouse1a}}-s3alias --key {{dir/my_data.rtf}} {{my_data.rtf}}
 
 {

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-scheduler-schedule-capacityproviderstrategyitem-syntax.json"></a>
 
-```
+```json
 {
   "[Base](#cfn-scheduler-schedule-capacityproviderstrategyitem-base)" : {{Number}},
   "[CapacityProvider](#cfn-scheduler-schedule-capacityproviderstrategyitem-capacityprovider)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-scheduler-schedule-capacityproviderstrategyitem-syntax.yaml"></a>
 
-```
+```yaml
   [Base](#cfn-scheduler-schedule-capacityproviderstrategyitem-base): {{Number}}
   [CapacityProvider](#cfn-scheduler-schedule-capacityproviderstrategyitem-capacityprovider): {{String}}
   [Weight](#cfn-scheduler-schedule-capacityproviderstrategyitem-weight): {{Number}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-quicksight-dataset-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::QuickSight::DataSet",
   "Properties" : {
@@ -46,7 +46,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-quicksight-dataset-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::QuickSight::DataSet
 Properties:
   [AwsAccountId](#cfn-quicksight-dataset-awsaccountid): {{String}}

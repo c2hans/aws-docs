@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/compo
 
 The following example shows a component configuration in JSON format for Java.
 
-```
+```json
 {
   "alarmMetrics": [ {
     "alarmMetricName": "java_lang_threading_threadcount",

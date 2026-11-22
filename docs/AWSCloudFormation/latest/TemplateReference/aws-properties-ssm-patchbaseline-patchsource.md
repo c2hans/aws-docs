@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssm-patchbaseline-patchsource-syntax.json"></a>
 
-```
+```json
 {
   "[Configuration](#cfn-ssm-patchbaseline-patchsource-configuration)" : {{String}},
   "[Name](#cfn-ssm-patchbaseline-patchsource-name)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssm-patchbaseline-patchsource-syntax.yaml"></a>
 
-```
+```yaml
   [Configuration](#cfn-ssm-patchbaseline-patchsource-configuration): {{String}}
   [Name](#cfn-ssm-patchbaseline-patchsource-name): {{String}}
   [Products](#cfn-ssm-patchbaseline-patchsource-products): {{

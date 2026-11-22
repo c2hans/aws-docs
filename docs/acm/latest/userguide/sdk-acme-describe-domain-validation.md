@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-acme-describe-d
 
 The following example shows how to use the [DescribeAcmeDomainValidation](https://docs.aws.amazon.com/acm/latest/APIReference/API_DescribeAcmeDomainValidation.html) function.
 
-```
+```java
 package com.amazonaws.samples;
 
 import com.amazonaws.services.certificatemanager.AWSCertificateManagerClientBuilder;

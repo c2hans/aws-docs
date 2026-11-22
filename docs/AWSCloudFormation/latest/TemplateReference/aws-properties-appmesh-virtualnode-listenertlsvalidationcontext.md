@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-virtualnode-listenertlsvalidationcontext-syntax.json"></a>
 
-```
+```json
 {
   "[SubjectAlternativeNames](#cfn-appmesh-virtualnode-listenertlsvalidationcontext-subjectalternativenames)" : {{SubjectAlternativeNames}},
   "[Trust](#cfn-appmesh-virtualnode-listenertlsvalidationcontext-trust)" : {{ListenerTlsValidationContextTrust}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-virtualnode-listenertlsvalidationcontext-syntax.yaml"></a>
 
-```
+```yaml
   [SubjectAlternativeNames](#cfn-appmesh-virtualnode-listenertlsvalidationcontext-subjectalternativenames): {{
     SubjectAlternativeNames}}
   [Trust](#cfn-appmesh-virtualnode-listenertlsvalidationcontext-trust): {{

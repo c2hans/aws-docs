@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-ekspodproperties-syntax.json"></a>
 
-```
+```json
 {
   "[Containers](#cfn-batch-jobdefinition-ekspodproperties-containers)" : {{[ EksContainer, ... ]}},
   "[DnsPolicy](#cfn-batch-jobdefinition-ekspodproperties-dnspolicy)" : {{String}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-ekspodproperties-syntax.yaml"></a>
 
-```
+```yaml
   [Containers](#cfn-batch-jobdefinition-ekspodproperties-containers): {{
     - EksContainer}}
   [DnsPolicy](#cfn-batch-jobdefinition-ekspodproperties-dnspolicy): {{String}}

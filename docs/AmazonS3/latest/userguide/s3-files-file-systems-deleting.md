@@ -25,6 +25,6 @@ This section explains how to use the Amazon S3 console to delete a file system f
 
 The following `delete-file-system` example command shows how you can use the AWS CLI to delete a file system for S3 Files.
 
-```
+```bash
 aws s3files delete-file-system --file-system-id {{file-system-id}}
 ```

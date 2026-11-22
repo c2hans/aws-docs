@@ -45,7 +45,7 @@ Sometimes queries with window functions can be rewritten without window function
 
 For example, suppose you have a dataset with updates from a sensor. The sensor periodically reports its battery status and includes some metadata like location. If you want to know the last battery status for each sensor and its location, you can use this query:
 
-```
+```sql
 SELECT sensor_id,
        arbitrary(location) AS location,
        max_by(battery_status, updated_at) AS battery_status
@@ -70,7 +70,7 @@ Sometimes queries include columns in the `GROUP BY` clause to work around the fa
 
 To avoid having to add a redundant columns to the `GROUP BY` clause, you can use the [arbitrary](https://trino.io/docs/current/functions/aggregate.html#arbitrary) function, as in the following example.
 
-```
+```sql
 SELECT country_id,
        arbitrary(country_name) AS country_name,
        COUNT(*) AS city_count

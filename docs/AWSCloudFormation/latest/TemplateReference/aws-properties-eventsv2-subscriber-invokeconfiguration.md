@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eventsv2-subscriber-invokeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EventBusV2Parameters](#cfn-eventsv2-subscriber-invokeconfiguration-eventbusv2parameters)" : {{EventBusV2Parameters}},
   "[HttpParameters](#cfn-eventsv2-subscriber-invokeconfiguration-httpparameters)" : {{HttpParameters}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eventsv2-subscriber-invokeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EventBusV2Parameters](#cfn-eventsv2-subscriber-invokeconfiguration-eventbusv2parameters): {{
     EventBusV2Parameters}}
   [HttpParameters](#cfn-eventsv2-subscriber-invokeconfiguration-httpparameters): {{

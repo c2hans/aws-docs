@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-personalize-campaign-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-personalize-campaign-tag-key)" : {{String}},
   "[Value](#cfn-personalize-campaign-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-personalize-campaign-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-personalize-campaign-tag-key): {{String}}
   [Value](#cfn-personalize-campaign-tag-value): {{String}}
 ```

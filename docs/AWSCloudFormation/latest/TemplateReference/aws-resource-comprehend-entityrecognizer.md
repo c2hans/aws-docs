@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-comprehend-entityrecognizer-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Comprehend::EntityRecognizer",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-comprehend-entityrecognizer-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Comprehend::EntityRecognizer
 Properties:
   [DataAccessRoleArn](#cfn-comprehend-entityrecognizer-dataaccessrolearn): {{String}}

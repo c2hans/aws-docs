@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-function-runtimeconfig-syntax.json"></a>
 
-```
+```json
 {
   "[RuntimeAlias](#cfn-lambda-function-runtimeconfig-runtimealias)" : {{String}},
   "[RuntimeArn](#cfn-lambda-function-runtimeconfig-runtimearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-function-runtimeconfig-syntax.yaml"></a>
 
-```
+```yaml
   [RuntimeAlias](#cfn-lambda-function-runtimeconfig-runtimealias): {{String}}
   [RuntimeArn](#cfn-lambda-function-runtimeconfig-runtimearn): {{String}}
 ```

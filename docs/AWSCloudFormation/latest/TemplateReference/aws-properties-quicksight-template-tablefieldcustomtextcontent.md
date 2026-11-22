@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-tablefieldcustomtextcontent-syntax.json"></a>
 
-```
+```json
 {
   "[FontConfiguration](#cfn-quicksight-template-tablefieldcustomtextcontent-fontconfiguration)" : {{FontConfiguration}},
   "[Value](#cfn-quicksight-template-tablefieldcustomtextcontent-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-tablefieldcustomtextcontent-syntax.yaml"></a>
 
-```
+```yaml
   [FontConfiguration](#cfn-quicksight-template-tablefieldcustomtextcontent-fontconfiguration): {{
     FontConfiguration}}
   [Value](#cfn-quicksight-template-tablefieldcustomtextcontent-value): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewaytarget-certificateconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[S3](#cfn-bedrockagentcore-gatewaytarget-certificateconfiguration-s3)" : {{S3CertificateConfiguration}},
   "[SecretsManager](#cfn-bedrockagentcore-gatewaytarget-certificateconfiguration-secretsmanager)" : {{SecretsManagerCertificateConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewaytarget-certificateconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [S3](#cfn-bedrockagentcore-gatewaytarget-certificateconfiguration-s3): {{
     S3CertificateConfiguration}}
   [SecretsManager](#cfn-bedrockagentcore-gatewaytarget-certificateconfiguration-secretsmanager): {{

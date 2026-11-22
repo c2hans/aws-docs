@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-config-configurationrecorder-recordingmode-syntax.json"></a>
 
-```
+```json
 {
   "[RecordingFrequency](#cfn-config-configurationrecorder-recordingmode-recordingfrequency)" : {{String}},
   "[RecordingModeOverrides](#cfn-config-configurationrecorder-recordingmode-recordingmodeoverrides)" : {{[ RecordingModeOverride, ... ]}}
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-config-configurationrecorder-recordingmode-syntax.yaml"></a>
 
-```
+```yaml
   [RecordingFrequency](#cfn-config-configurationrecorder-recordingmode-recordingfrequency): {{String}}
   [RecordingModeOverrides](#cfn-config-configurationrecorder-recordingmode-recordingmodeoverrides): {{
     - RecordingModeOverride}}

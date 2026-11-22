@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-managedloginbranding-assettype-syntax.json"></a>
 
-```
+```json
 {
   "[Bytes](#cfn-cognito-managedloginbranding-assettype-bytes)" : {{String}},
   "[Category](#cfn-cognito-managedloginbranding-assettype-category)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-managedloginbranding-assettype-syntax.yaml"></a>
 
-```
+```yaml
   [Bytes](#cfn-cognito-managedloginbranding-assettype-bytes): {{String}}
   [Category](#cfn-cognito-managedloginbranding-assettype-category): {{String}}
   [ColorMode](#cfn-cognito-managedloginbranding-assettype-colormode): {{String}}

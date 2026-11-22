@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-verifiedpermissions-policystore-schemadefinition-syntax.json"></a>
 
-```
+```json
 {
   "[CedarJson](#cfn-verifiedpermissions-policystore-schemadefinition-cedarjson)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-verifiedpermissions-policystore-schemadefinition-syntax.yaml"></a>
 
-```
+```yaml
   [CedarJson](#cfn-verifiedpermissions-policystore-schemadefinition-cedarjson): {{String}}
 ```
 

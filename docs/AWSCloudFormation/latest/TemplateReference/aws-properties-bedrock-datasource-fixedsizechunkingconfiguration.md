@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-datasource-fixedsizechunkingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MaxTokens](#cfn-bedrock-datasource-fixedsizechunkingconfiguration-maxtokens)" : {{Integer}},
   "[OverlapPercentage](#cfn-bedrock-datasource-fixedsizechunkingconfiguration-overlappercentage)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-datasource-fixedsizechunkingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MaxTokens](#cfn-bedrock-datasource-fixedsizechunkingconfiguration-maxtokens): {{Integer}}
   [OverlapPercentage](#cfn-bedrock-datasource-fixedsizechunkingconfiguration-overlappercentage): {{Integer}}
 ```

@@ -63,7 +63,7 @@ The following provides information about important configuration properties requ
 
 The following is the GitHub (Server) JSON schema:
 
-```
+```json
 {
   "type": "object",
   "properties": {
@@ -621,7 +621,7 @@ The following is the GitHub (Server) JSON schema:
 
 The following is the GitHub (Server) JSON schema example:
 
-```
+```json
 {
   "type": "GITHUB",
   "syncMode": "FULL_CRAWL",

@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-s3outposts-bucket-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::S3Outposts::Bucket",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-s3outposts-bucket-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::S3Outposts::Bucket
 Properties:
   [BucketName](#cfn-s3outposts-bucket-bucketname): {{String}}
@@ -125,7 +125,7 @@ The following example creates an S3 on Outposts bucket without tags or lifecycle
 #### JSON
 <a name="aws-resource-s3outposts-bucket--examples--Create_an_S3_on_Outposts_bucket--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Bucket, no tags, no lifecycle configuration",
@@ -163,7 +163,7 @@ The following example creates an S3 on Outposts bucket without tags or lifecycle
 #### YAML
 <a name="aws-resource-s3outposts-bucket--examples--Create_an_S3_on_Outposts_bucket--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Bucket, no tags, no lifecycle configuration
 Resources:
@@ -194,7 +194,7 @@ The following example creates an S3 on Outposts bucket with tags and no lifecycl
 #### JSON
 <a name="aws-resource-s3outposts-bucket--examples--Creates_an_S3_on_Outposts_bucket_with_tags--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Bucket, tags, no lifecycle configuration",
@@ -242,7 +242,7 @@ The following example creates an S3 on Outposts bucket with tags and no lifecycl
 #### YAML
 <a name="aws-resource-s3outposts-bucket--examples--Creates_an_S3_on_Outposts_bucket_with_tags--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Bucket, tags, no lifecycle configuration
 Resources:
@@ -281,7 +281,7 @@ All lifecycle rules must have values for either `ExpirationInDays`, `ExpirationD
 #### JSON
 <a name="aws-resource-s3outposts-bucket--examples--Creates_an_S3_on_Outposts_bucket_with_tags_and_lifecycle_configuration--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Bucket, tags, lifecycle configuration",
@@ -375,7 +375,7 @@ All lifecycle rules must have values for either `ExpirationInDays`, `ExpirationD
 #### YAML
 <a name="aws-resource-s3outposts-bucket--examples--Creates_an_S3_on_Outposts_bucket_with_tags_and_lifecycle_configuration--yaml"></a>
 
-```
+```yaml
 ---
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Bucket, tags, lifecycle configuration

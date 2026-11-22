@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationsignals-servicelevelobjective-compositeslicomponent-syntax.json"></a>
 
-```
+```json
 {
   "[OperationName](#cfn-applicationsignals-servicelevelobjective-compositeslicomponent-operationname)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationsignals-servicelevelobjective-compositeslicomponent-syntax.yaml"></a>
 
-```
+```yaml
   [OperationName](#cfn-applicationsignals-servicelevelobjective-compositeslicomponent-operationname): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-comprehend-documentclassifier-augmentedmanifestslistitem-syntax.json"></a>
 
-```
+```json
 {
   "[AttributeNames](#cfn-comprehend-documentclassifier-augmentedmanifestslistitem-attributenames)" : {{[ String, ... ]}},
   "[S3Uri](#cfn-comprehend-documentclassifier-augmentedmanifestslistitem-s3uri)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-comprehend-documentclassifier-augmentedmanifestslistitem-syntax.yaml"></a>
 
-```
+```yaml
   [AttributeNames](#cfn-comprehend-documentclassifier-augmentedmanifestslistitem-attributenames): {{
     - String}}
   [S3Uri](#cfn-comprehend-documentclassifier-augmentedmanifestslistitem-s3uri): {{String}}

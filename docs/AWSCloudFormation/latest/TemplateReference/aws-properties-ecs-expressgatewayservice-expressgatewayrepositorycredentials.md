@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-expressgatewayservice-expressgatewayrepositorycredentials-syntax.json"></a>
 
-```
+```json
 {
   "[CredentialsParameter](#cfn-ecs-expressgatewayservice-expressgatewayrepositorycredentials-credentialsparameter)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-expressgatewayservice-expressgatewayrepositorycredentials-syntax.yaml"></a>
 
-```
+```yaml
   [CredentialsParameter](#cfn-ecs-expressgatewayservice-expressgatewayrepositorycredentials-credentialsparameter): {{String}}
 ```
 

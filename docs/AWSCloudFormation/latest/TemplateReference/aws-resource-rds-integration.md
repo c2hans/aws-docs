@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-rds-integration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RDS::Integration",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-rds-integration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RDS::Integration
 Properties:
   [AdditionalEncryptionContext](#cfn-rds-integration-additionalencryptioncontext): {{
@@ -161,7 +161,7 @@ The following example creates an Amazon Aurora MySQL DB cluster, Redshift provis
 #### JSON
 <a name="aws-resource-rds-integration--examples--Create_an_Aurora_zero-ETL_integration_using_an_owned_KMS_key--json"></a>
 
-```
+```json
 {
     "Parameters": {
         "Username": {
@@ -355,7 +355,7 @@ The following example creates an Amazon Aurora MySQL DB cluster, Redshift provis
 #### YAML
 <a name="aws-resource-rds-integration--examples--Create_an_Aurora_zero-ETL_integration_using_an_owned_KMS_key--yaml"></a>
 
-```
+```yaml
 Parameters:
   Username:
     Description: Username for Aurora MySQL database access
@@ -471,7 +471,7 @@ The following example creates an Amazon Aurora MySQL DB cluster, Redshift provis
 #### JSON
 <a name="aws-resource-rds-integration--examples--Create_an_Aurora_zero-ETL_integration_using_a_customer_managed_KMS_key--json"></a>
 
-```
+```json
 {
     "Parameters": {
         "Username": {
@@ -720,7 +720,7 @@ The following example creates an Amazon Aurora MySQL DB cluster, Redshift provis
 #### YAML
 <a name="aws-resource-rds-integration--examples--Create_an_Aurora_zero-ETL_integration_using_a_customer_managed_KMS_key--yaml"></a>
 
-```
+```yaml
 Parameters:
   Username:
     Description: Username for Aurora MySQL database access
@@ -859,7 +859,7 @@ The following example creates an Amazon RDS MySQL DB instance, Redshift provisio
 #### JSON
 <a name="aws-resource-rds-integration--examples--Create_an_RDS_zero-ETL_integration_using_an_owned_KMS_key--json"></a>
 
-```
+```json
 {
     "Parameters": {
         "Username": {
@@ -1058,7 +1058,7 @@ The following example creates an Amazon RDS MySQL DB instance, Redshift provisio
 #### YAML
 <a name="aws-resource-rds-integration--examples--Create_an_RDS_zero-ETL_integration_using_an_owned_KMS_key--yaml"></a>
 
-```
+```yaml
 Parameters:
   Username:
     Description: Username for MySQL database access
@@ -1192,7 +1192,7 @@ The following example creates an Amazon RDS MySQL DB instance, Redshift provisio
 #### JSON
 <a name="aws-resource-rds-integration--examples--Create_an_RDS_zero-ETL_integration_using_a_customer_managed_KMS_key--json"></a>
 
-```
+```json
 {
     "Parameters": {
         "Username": {
@@ -1445,7 +1445,7 @@ The following example creates an Amazon RDS MySQL DB instance, Redshift provisio
 #### YAML
 <a name="aws-resource-rds-integration--examples--Create_an_RDS_zero-ETL_integration_using_a_customer_managed_KMS_key--yaml"></a>
 
-```
+```yaml
 Parameters:
   Username:
     Description: Username for MySQL database access

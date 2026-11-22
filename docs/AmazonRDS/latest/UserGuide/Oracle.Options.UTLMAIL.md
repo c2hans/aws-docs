@@ -69,7 +69,7 @@ You configure the SMTP server by setting the SMTP\_OUT\_SERVER parameter to a va
 
 You can set the default SMTP\_OUT\_SERVER for a DB instance by using a [DB parameter group](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithParamGroups.html). You can set the SMTP\_OUT\_SERVER parameter for a session by running the following code on your database on your DB instance.
 
-```
+```sql
 1. ALTER SESSION SET smtp_out_server = {{mailserver.domain.com:25}};
 ```
 

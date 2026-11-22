@@ -26,7 +26,7 @@ For more information about adapter setup, see [Using the DynamoDB Streams Kinesi
 
 The following Java example shows how to configure the starting timestamp:
 
-```
+```java
 // Create the initial position with the desired timestamp
 InitialPositionInStreamExtended initialPosition =
     InitialPositionInStreamExtended.newInitialPositionAtTimestamp(

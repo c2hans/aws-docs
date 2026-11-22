@@ -104,7 +104,7 @@ The following example query starts a message move task on a dead-letter queue `M
 #### Sample Request
 <a name="API_StartMessageMoveTask_Example_1_Request"></a>
 
-```
+```xml
 POST /  HTTP/1.1
 Host: sqs.us-east-1.amazonaws.com
 X-Amz-Date: <Date>
@@ -120,7 +120,7 @@ Action=StartMessageMoveTask
 #### Sample Response
 <a name="API_StartMessageMoveTask_Example_1_Response"></a>
 
-```
+```xml
 HTTP/1.1 200 OK
 <?xml version="1.0"?>
 <StartMessageMoveTaskResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/">

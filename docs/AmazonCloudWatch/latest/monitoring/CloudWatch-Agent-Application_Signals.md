@@ -47,7 +47,7 @@ When there are multiple rules with different actions, they apply in the followin
 
 The following is an example of a full CloudWatch agent configuration file that applies custom rules.
 
-```
+```json
 {
   "logs": {
     "metrics_collected": {
@@ -119,7 +119,7 @@ For the previous example configuration file, the `rules` are processed as follow
 
 The following is a complete example of a CloudWatch configuration file that manages cardinality in Application Signals by changing the metric limit to 100, enabling the logging of dropped metrics, and setting the rotation interval to two hours.
 
-```
+```json
 {
     "logs": {
         "metrics_collected": {

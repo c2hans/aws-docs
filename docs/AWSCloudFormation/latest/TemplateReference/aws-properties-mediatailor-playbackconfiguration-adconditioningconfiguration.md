@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-playbackconfiguration-adconditioningconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[StreamingMediaFileConditioning](#cfn-mediatailor-playbackconfiguration-adconditioningconfiguration-streamingmediafileconditioning)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-playbackconfiguration-adconditioningconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [StreamingMediaFileConditioning](#cfn-mediatailor-playbackconfiguration-adconditioningconfiguration-streamingmediafileconditioning): {{String}}
 ```
 

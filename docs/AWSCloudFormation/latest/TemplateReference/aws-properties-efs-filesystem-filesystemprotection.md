@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-efs-filesystem-filesystemprotection-syntax.json"></a>
 
-```
+```json
 {
   "[ReplicationOverwriteProtection](#cfn-efs-filesystem-filesystemprotection-replicationoverwriteprotection)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-efs-filesystem-filesystemprotection-syntax.yaml"></a>
 
-```
+```yaml
   [ReplicationOverwriteProtection](#cfn-efs-filesystem-filesystemprotection-replicationoverwriteprotection): {{String}}
 ```
 

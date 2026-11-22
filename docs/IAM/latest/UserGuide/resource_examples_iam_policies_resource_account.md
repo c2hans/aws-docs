@@ -13,7 +13,7 @@ You can create a policy with an exception to allow for AWS managed IAM policies.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

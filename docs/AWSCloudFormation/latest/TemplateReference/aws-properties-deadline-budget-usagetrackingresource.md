@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-deadline-budget-usagetrackingresource-syntax.json"></a>
 
-```
+```json
 {
   "[QueueId](#cfn-deadline-budget-usagetrackingresource-queueid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-deadline-budget-usagetrackingresource-syntax.yaml"></a>
 
-```
+```yaml
   [QueueId](#cfn-deadline-budget-usagetrackingresource-queueid): {{String}}
 ```
 

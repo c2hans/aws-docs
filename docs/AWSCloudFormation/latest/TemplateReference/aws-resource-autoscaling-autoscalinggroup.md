@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-autoscaling-autoscalinggroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AutoScaling::AutoScalingGroup",
   "Properties" : {
@@ -70,7 +70,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-autoscaling-autoscalinggroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AutoScaling::AutoScalingGroup
 Properties:
   [AutoScalingGroupName](#cfn-autoscaling-autoscalinggroup-autoscalinggroupname): {{String}}
@@ -437,7 +437,7 @@ This example references [parameters](https://docs.aws.amazon.com/AWSCloudFormati
 #### JSON
 <a name="aws-resource-autoscaling-autoscalinggroup--examples--An_Auto_Scaling_group_and_a_launch_template_with_a_parameters_section--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Parameters": {
@@ -491,7 +491,7 @@ This example references [parameters](https://docs.aws.amazon.com/AWSCloudFormati
 #### YAML
 <a name="aws-resource-autoscaling-autoscalinggroup--examples--An_Auto_Scaling_group_and_a_launch_template_with_a_parameters_section--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Parameters:
   LatestAmiId:
@@ -542,7 +542,7 @@ You also specify values for the `MaxSize`, `MinSize`, and `VPCZoneIdentifier` pr
 #### JSON
 <a name="aws-resource-autoscaling-autoscalinggroup--examples--Auto_Scaling_group_with_CloudWatch_monitoring_enabled_and_custom_tags--json"></a>
 
-```
+```json
 {
     "Resources": {
         "myASG": {
@@ -589,7 +589,7 @@ You also specify values for the `MaxSize`, `MinSize`, and `VPCZoneIdentifier` pr
 #### YAML
 <a name="aws-resource-autoscaling-autoscalinggroup--examples--Auto_Scaling_group_with_CloudWatch_monitoring_enabled_and_custom_tags--yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   myASG:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-topicreference-syntax.json"></a>
 
-```
+```json
 {
   "[TopicArn](#cfn-quicksight-template-topicreference-topicarn)" : {{String}},
   "[TopicPlaceholder](#cfn-quicksight-template-topicreference-topicplaceholder)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-topicreference-syntax.yaml"></a>
 
-```
+```yaml
   [TopicArn](#cfn-quicksight-template-topicreference-topicarn): {{String}}
   [TopicPlaceholder](#cfn-quicksight-template-topicreference-topicplaceholder): {{String}}
 ```

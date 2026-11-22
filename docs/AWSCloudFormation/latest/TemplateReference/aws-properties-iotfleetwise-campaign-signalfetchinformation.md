@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotfleetwise-campaign-signalfetchinformation-syntax.json"></a>
 
-```
+```json
 {
   "[Actions](#cfn-iotfleetwise-campaign-signalfetchinformation-actions)" : {{[ String, ... ]}},
   "[ConditionLanguageVersion](#cfn-iotfleetwise-campaign-signalfetchinformation-conditionlanguageversion)" : {{Number}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotfleetwise-campaign-signalfetchinformation-syntax.yaml"></a>
 
-```
+```yaml
   [Actions](#cfn-iotfleetwise-campaign-signalfetchinformation-actions): {{
     - String}}
   [ConditionLanguageVersion](#cfn-iotfleetwise-campaign-signalfetchinformation-conditionlanguageversion): {{Number}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-webfunction-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-lambda-webfunction-tag-key)" : {{String}},
   "[Value](#cfn-lambda-webfunction-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-webfunction-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-lambda-webfunction-tag-key): {{String}}
   [Value](#cfn-lambda-webfunction-tag-value): {{String}}
 ```

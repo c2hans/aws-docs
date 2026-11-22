@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-virtualnode-awscloudmapinstanceattribute-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-appmesh-virtualnode-awscloudmapinstanceattribute-key)" : {{String}},
   "[Value](#cfn-appmesh-virtualnode-awscloudmapinstanceattribute-value)" : {{String}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-virtualnode-awscloudmapinstanceattribute-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-appmesh-virtualnode-awscloudmapinstanceattribute-key): {{String}}
   [Value](#cfn-appmesh-virtualnode-awscloudmapinstanceattribute-value): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sso-permissionset-customermanagedpolicyreference-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-sso-permissionset-customermanagedpolicyreference-name)" : {{String}},
   "[Path](#cfn-sso-permissionset-customermanagedpolicyreference-path)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sso-permissionset-customermanagedpolicyreference-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-sso-permissionset-customermanagedpolicyreference-name): {{String}}
   [Path](#cfn-sso-permissionset-customermanagedpolicyreference-path): {{String}}
 ```

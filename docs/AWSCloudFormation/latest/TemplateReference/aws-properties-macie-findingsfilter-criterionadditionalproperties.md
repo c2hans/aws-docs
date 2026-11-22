@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-macie-findingsfilter-criterionadditionalproperties-syntax.json"></a>
 
-```
+```json
 {
   "[eq](#cfn-macie-findingsfilter-criterionadditionalproperties-eq)" : {{[ String, ... ]}},
   "[gt](#cfn-macie-findingsfilter-criterionadditionalproperties-gt)" : {{Integer}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-macie-findingsfilter-criterionadditionalproperties-syntax.yaml"></a>
 
-```
+```yaml
   [eq](#cfn-macie-findingsfilter-criterionadditionalproperties-eq): {{
     - String}}
   [gt](#cfn-macie-findingsfilter-criterionadditionalproperties-gt): {{Integer}}

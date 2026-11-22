@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-projectprofile-resourcetagparameter-syntax.json"></a>
 
-```
+```json
 {
   "[IsValueEditable](#cfn-datazone-projectprofile-resourcetagparameter-isvalueeditable)" : {{Boolean}},
   "[Key](#cfn-datazone-projectprofile-resourcetagparameter-key)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-projectprofile-resourcetagparameter-syntax.yaml"></a>
 
-```
+```yaml
   [IsValueEditable](#cfn-datazone-projectprofile-resourcetagparameter-isvalueeditable): {{Boolean}}
   [Key](#cfn-datazone-projectprofile-resourcetagparameter-key): {{String}}
   [Value](#cfn-datazone-projectprofile-resourcetagparameter-value): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-whatifpointscenario-syntax.json"></a>
 
-```
+```json
 {
   "[Date](#cfn-quicksight-analysis-whatifpointscenario-date)" : {{String}},
   "[Value](#cfn-quicksight-analysis-whatifpointscenario-value)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-whatifpointscenario-syntax.yaml"></a>
 
-```
+```yaml
   [Date](#cfn-quicksight-analysis-whatifpointscenario-date): {{String}}
   [Value](#cfn-quicksight-analysis-whatifpointscenario-value): {{Number}}
 ```

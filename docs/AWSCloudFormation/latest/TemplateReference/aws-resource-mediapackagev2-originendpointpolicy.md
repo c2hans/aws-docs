@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-mediapackagev2-originendpointpolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MediaPackageV2::OriginEndpointPolicy",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-mediapackagev2-originendpointpolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MediaPackageV2::OriginEndpointPolicy
 Properties:
   [CdnAuthConfiguration](#cfn-mediapackagev2-originendpointpolicy-cdnauthconfiguration): {{

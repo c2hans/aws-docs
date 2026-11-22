@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-scte20sourcesettings-syntax.json"></a>
 
-```
+```json
 {
   "[Convert608To708](#cfn-medialive-channel-scte20sourcesettings-convert608to708)" : {{String}},
   "[Source608ChannelNumber](#cfn-medialive-channel-scte20sourcesettings-source608channelnumber)" : {{Integer}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-scte20sourcesettings-syntax.yaml"></a>
 
-```
+```yaml
   [Convert608To708](#cfn-medialive-channel-scte20sourcesettings-convert608to708): {{String}}
   [Source608ChannelNumber](#cfn-medialive-channel-scte20sourcesettings-source608channelnumber): {{Integer}}
 ```

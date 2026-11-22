@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dlm-lifecyclepolicy-crossregioncopyaction-syntax.json"></a>
 
-```
+```json
 {
   "[EncryptionConfiguration](#cfn-dlm-lifecyclepolicy-crossregioncopyaction-encryptionconfiguration)" : {{EncryptionConfiguration}},
   "[RetainRule](#cfn-dlm-lifecyclepolicy-crossregioncopyaction-retainrule)" : {{CrossRegionCopyRetainRule}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dlm-lifecyclepolicy-crossregioncopyaction-syntax.yaml"></a>
 
-```
+```yaml
   [EncryptionConfiguration](#cfn-dlm-lifecyclepolicy-crossregioncopyaction-encryptionconfiguration): {{
     EncryptionConfiguration}}
   [RetainRule](#cfn-dlm-lifecyclepolicy-crossregioncopyaction-retainrule): {{

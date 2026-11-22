@@ -56,7 +56,7 @@ Imagine that a data analyst for this e-commerce application learns that shipping
 
 **Example**
 
-```
+```sql
 SELECT
      t2.product_name AS product,
      t2.product_category AS category,
@@ -97,7 +97,7 @@ The following example creates a view called `customers` on data stored in a fede
 
 **Example**
 
-```
+```sql
 CREATE VIEW customers AS
 SELECT *
 FROM my_federated_source.default.table
@@ -107,7 +107,7 @@ The following example query shows a query that references the `customers` view i
 
 **Example**
 
-```
+```sql
 SELECT id, SUM(order_amount)
 FROM customers
 GROUP by 1
@@ -119,7 +119,7 @@ The following example creates a view called `order_summary` that combines data f
 
 **Example**
 
-```
+```sql
 CREATE VIEW default.order_summary AS
 SELECT *
 FROM {{federated_source_name}}.{{federated_source_database}}."person" p

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-flow-salesforcesourceproperties-syntax.json"></a>
 
-```
+```json
 {
   "[DataTransferApi](#cfn-appflow-flow-salesforcesourceproperties-datatransferapi)" : {{String}},
   "[EnableDynamicFieldUpdate](#cfn-appflow-flow-salesforcesourceproperties-enabledynamicfieldupdate)" : {{Boolean}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-flow-salesforcesourceproperties-syntax.yaml"></a>
 
-```
+```yaml
   [DataTransferApi](#cfn-appflow-flow-salesforcesourceproperties-datatransferapi): {{String}}
   [EnableDynamicFieldUpdate](#cfn-appflow-flow-salesforcesourceproperties-enabledynamicfieldupdate): {{Boolean}}
   [IncludeDeletedRecords](#cfn-appflow-flow-salesforcesourceproperties-includedeletedrecords): {{Boolean}}

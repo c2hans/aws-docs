@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssmincidents-responseplan-pagerdutyconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-ssmincidents-responseplan-pagerdutyconfiguration-name)" : {{String}},
   "[PagerDutyIncidentConfiguration](#cfn-ssmincidents-responseplan-pagerdutyconfiguration-pagerdutyincidentconfiguration)" : {{PagerDutyIncidentConfiguration}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssmincidents-responseplan-pagerdutyconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-ssmincidents-responseplan-pagerdutyconfiguration-name): {{String}}
   [PagerDutyIncidentConfiguration](#cfn-ssmincidents-responseplan-pagerdutyconfiguration-pagerdutyincidentconfiguration): {{
     PagerDutyIncidentConfiguration}}

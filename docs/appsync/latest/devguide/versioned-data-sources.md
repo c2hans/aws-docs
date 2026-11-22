@@ -50,7 +50,7 @@ The IAM role configured for use with the *Base* table must also contain permissi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

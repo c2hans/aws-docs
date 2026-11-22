@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ce-anomalysubscription-resourcetag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-ce-anomalysubscription-resourcetag-key)" : {{String}},
   "[Value](#cfn-ce-anomalysubscription-resourcetag-value)" : {{String}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ce-anomalysubscription-resourcetag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-ce-anomalysubscription-resourcetag-key): {{String}}
   [Value](#cfn-ce-anomalysubscription-resourcetag-value): {{String}}
 ```

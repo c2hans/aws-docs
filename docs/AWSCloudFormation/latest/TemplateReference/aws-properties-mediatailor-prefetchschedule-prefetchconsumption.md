@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-prefetchschedule-prefetchconsumption-syntax.json"></a>
 
-```
+```json
 {
   "[AvailMatchingCriteria](#cfn-mediatailor-prefetchschedule-prefetchconsumption-availmatchingcriteria)" : {{[ AvailMatchingCriteria, ... ]}},
   "[EndTime](#cfn-mediatailor-prefetchschedule-prefetchconsumption-endtime)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-prefetchschedule-prefetchconsumption-syntax.yaml"></a>
 
-```
+```yaml
   [AvailMatchingCriteria](#cfn-mediatailor-prefetchschedule-prefetchconsumption-availmatchingcriteria): {{
     - AvailMatchingCriteria}}
   [EndTime](#cfn-mediatailor-prefetchschedule-prefetchconsumption-endtime): {{String}}

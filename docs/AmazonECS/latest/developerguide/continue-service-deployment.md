@@ -40,7 +40,7 @@ You can continue a deployment that has a pause hook in `AWAITING_ACTION` status.
 
 1. Get the `hookId` by calling `describe-service-deployments`:
 
-   ```
+   ```bash
    aws ecs describe-service-deployments \
        --service-deployment-arn arn:aws:ecs:us-west-2:123456789012:service-deployment/my-cluster/my-service/EZe5RNVLH6PPzHXINuP28
    ```
@@ -49,7 +49,7 @@ You can continue a deployment that has a pause hook in `AWAITING_ACTION` status.
 
    To continue the deployment:
 
-   ```
+   ```bash
    aws ecs continue-service-deployment \
        --hook-id ecs-pause-e7tK9G_WRJqNF_EOMjztDXfKenlJuEUVjsNStf4WLKw \
        --action CONTINUE
@@ -57,7 +57,7 @@ You can continue a deployment that has a pause hook in `AWAITING_ACTION` status.
 
    To roll back the deployment:
 
-   ```
+   ```bash
    aws ecs continue-service-deployment \
        --hook-id ecs-pause-e7tK9G_WRJqNF_EOMjztDXfKenlJuEUVjsNStf4WLKw \
        --action ROLLBACK
@@ -65,7 +65,7 @@ You can continue a deployment that has a pause hook in `AWAITING_ACTION` status.
 
    The response includes the service deployment ARN:
 
-   ```
+   ```json
    {
        "serviceDeploymentArn": "arn:aws:ecs:us-west-2:123456789012:service-deployment/my-cluster/my-service/EZe5RNVLH6PPzHXINuP28"
    }

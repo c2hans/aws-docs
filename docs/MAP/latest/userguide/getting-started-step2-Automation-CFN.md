@@ -12,7 +12,7 @@ You can use the Resource Tags property to apply tags to resources, which can hel
 
 Replace `mig12345` with the tag value needed for your migrated resource followed by your MAP term agreement number in following example:
 
-```
+```json
 {
     "Key" : "map-migrated",
     "Value" : "{{mig12345}}"

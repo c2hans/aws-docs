@@ -58,7 +58,7 @@ When creating a [single instance broker](https://docs.aws.amazon.com/amazon-mq/l
 ------
 #### [ mq\_grant ]
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -129,7 +129,7 @@ When creating a [single instance broker](https://docs.aws.amazon.com/amazon-mq/l
 
  You will see one event for EBS grant creation.
 
-```
+```json
                                     {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -187,7 +187,7 @@ When creating a [cluster deployment](https://docs.aws.amazon.com/amazon-mq/lates
 ------
 #### [ mq\_grant ]
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -258,7 +258,7 @@ When creating a [cluster deployment](https://docs.aws.amazon.com/amazon-mq/lates
 ------
 #### [ mq\_rabbit\_grant ]
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -324,7 +324,7 @@ When creating a [cluster deployment](https://docs.aws.amazon.com/amazon-mq/lates
 
  You will see three events for EBS grant creation.
 
-```
+```json
                                       {
     "eventVersion": "1.08",
     "userIdentity": {

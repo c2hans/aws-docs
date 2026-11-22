@@ -34,6 +34,6 @@ This section explains how to use the Amazon S3 console to add or remove security
 
 The following `update-mount-target` example command shows how you can use the AWS CLI to add or remove security groups for a mount target in S3 Files.
 
-```
+```bash
 aws s3files update-mount-target --region {{aws-region}} --mount-target-id {{mount-target-id}} --security-groups {{security-group-ids-separated-by-space}}
 ```

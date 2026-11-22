@@ -15,7 +15,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Route53#code-examples).
 
-```
+```csharp
     /// <summary>
     /// List operations for the account that are submitted after a specified date.
     /// </summary>
@@ -98,7 +98,7 @@ For more information, see [Viewing the status of a domain registration](https://
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/route53#code-examples).
 
-```
+```java
     public static void listOperations(Route53DomainsClient route53DomainsClient) {
         try {
             Date currentDate = new Date();
@@ -132,7 +132,7 @@ For more information, see [Viewing the status of a domain registration](https://
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/route53#code-examples).
 
-```
+```kotlin
 suspend fun listOperations() {
     val currentDate = Date()
     var localDateTime = currentDate.toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime()

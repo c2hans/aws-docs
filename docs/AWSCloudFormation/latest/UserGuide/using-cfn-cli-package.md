@@ -32,7 +32,7 @@ The following template specifies the local artifact for a Lambda function's sour
 
 **Original template**
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Transform": "AWS::Serverless-2016-10-31",
@@ -63,7 +63,7 @@ The command generates a new template at the path specified by `--output-template
 
 **Resulting template**
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Transform": "AWS::Serverless-2016-10-31",

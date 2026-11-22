@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-onlineevaluationconfig-evaluatorreference-syntax.json"></a>
 
-```
+```json
 {
   "[EvaluatorId](#cfn-bedrockagentcore-onlineevaluationconfig-evaluatorreference-evaluatorid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-onlineevaluationconfig-evaluatorreference-syntax.yaml"></a>
 
-```
+```yaml
   [EvaluatorId](#cfn-bedrockagentcore-onlineevaluationconfig-evaluatorreference-evaluatorid): {{String}}
 ```
 

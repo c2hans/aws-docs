@@ -31,7 +31,7 @@ To collect Amazon OpenSearch Service metrics with a managed collector, you creat
 
 Within minutes, metrics begin flowing to your CloudWatch dataset. To confirm that your metrics arrive, run an ad-hoc query in CloudWatch using [Query Studio](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-PromQL-QueryStudio.html). For example, the following query returns the cluster health status for your domain:
 
-```
+```bash
 opensearch_cluster_health_status
 ```
 

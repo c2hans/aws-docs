@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cassandra-table-autoscalingspecification-syntax.json"></a>
 
-```
+```json
 {
   "[ReadCapacityAutoScaling](#cfn-cassandra-table-autoscalingspecification-readcapacityautoscaling)" : {{AutoScalingSetting}},
   "[WriteCapacityAutoScaling](#cfn-cassandra-table-autoscalingspecification-writecapacityautoscaling)" : {{AutoScalingSetting}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cassandra-table-autoscalingspecification-syntax.yaml"></a>
 
-```
+```yaml
   [ReadCapacityAutoScaling](#cfn-cassandra-table-autoscalingspecification-readcapacityautoscaling): {{
     AutoScalingSetting}}
   [WriteCapacityAutoScaling](#cfn-cassandra-table-autoscalingspecification-writecapacityautoscaling): {{

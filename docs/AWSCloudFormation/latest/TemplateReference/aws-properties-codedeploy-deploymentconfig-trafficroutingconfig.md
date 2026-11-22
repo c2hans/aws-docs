@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codedeploy-deploymentconfig-trafficroutingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[TimeBasedCanary](#cfn-codedeploy-deploymentconfig-trafficroutingconfig-timebasedcanary)" : {{TimeBasedCanary}},
   "[TimeBasedLinear](#cfn-codedeploy-deploymentconfig-trafficroutingconfig-timebasedlinear)" : {{TimeBasedLinear}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codedeploy-deploymentconfig-trafficroutingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [TimeBasedCanary](#cfn-codedeploy-deploymentconfig-trafficroutingconfig-timebasedcanary): {{
     TimeBasedCanary}}
   [TimeBasedLinear](#cfn-codedeploy-deploymentconfig-trafficroutingconfig-timebasedlinear): {{

@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafregional-ipset-ipsetdescriptor-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-wafregional-ipset-ipsetdescriptor-type)" : {{String}},
   "[Value](#cfn-wafregional-ipset-ipsetdescriptor-value)" : {{String}}
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafregional-ipset-ipsetdescriptor-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-wafregional-ipset-ipsetdescriptor-type): {{String}}
   [Value](#cfn-wafregional-ipset-ipsetdescriptor-value): {{String}}
 ```

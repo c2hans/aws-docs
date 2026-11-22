@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-autoscaling-autoscalinggroup-memorymibrequest-syntax.json"></a>
 
-```
+```json
 {
   "[Max](#cfn-autoscaling-autoscalinggroup-memorymibrequest-max)" : {{Integer}},
   "[Min](#cfn-autoscaling-autoscalinggroup-memorymibrequest-min)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-autoscaling-autoscalinggroup-memorymibrequest-syntax.yaml"></a>
 
-```
+```yaml
   [Max](#cfn-autoscaling-autoscalinggroup-memorymibrequest-max): {{Integer}}
   [Min](#cfn-autoscaling-autoscalinggroup-memorymibrequest-min): {{Integer}}
 ```

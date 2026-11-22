@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-sheetimagetooltipconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[TooltipText](#cfn-quicksight-dashboard-sheetimagetooltipconfiguration-tooltiptext)" : {{SheetImageTooltipText}},
   "[Visibility](#cfn-quicksight-dashboard-sheetimagetooltipconfiguration-visibility)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-sheetimagetooltipconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [TooltipText](#cfn-quicksight-dashboard-sheetimagetooltipconfiguration-tooltiptext): {{
     SheetImageTooltipText}}
   [Visibility](#cfn-quicksight-dashboard-sheetimagetooltipconfiguration-visibility): {{String}}

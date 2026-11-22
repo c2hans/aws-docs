@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-cluster-clustercapacityrequirements-syntax.json"></a>
 
-```
+```json
 {
   "[OnDemand](#cfn-sagemaker-cluster-clustercapacityrequirements-ondemand)" : {{Json}},
   "[Spot](#cfn-sagemaker-cluster-clustercapacityrequirements-spot)" : {{Json}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-cluster-clustercapacityrequirements-syntax.yaml"></a>
 
-```
+```yaml
   [OnDemand](#cfn-sagemaker-cluster-clustercapacityrequirements-ondemand): {{Json}}
   [Spot](#cfn-sagemaker-cluster-clustercapacityrequirements-spot): {{Json}}
 ```

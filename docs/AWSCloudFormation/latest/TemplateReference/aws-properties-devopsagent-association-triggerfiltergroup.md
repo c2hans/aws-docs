@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-association-triggerfiltergroup-syntax.json"></a>
 
-```
+```json
 {
   "[Events](#cfn-devopsagent-association-triggerfiltergroup-events)" : {{[ String, ... ]}},
   "[TargetBranches](#cfn-devopsagent-association-triggerfiltergroup-targetbranches)" : {{PatternFilter}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-association-triggerfiltergroup-syntax.yaml"></a>
 
-```
+```yaml
   [Events](#cfn-devopsagent-association-triggerfiltergroup-events): {{
     - String}}
   [TargetBranches](#cfn-devopsagent-association-triggerfiltergroup-targetbranches): {{

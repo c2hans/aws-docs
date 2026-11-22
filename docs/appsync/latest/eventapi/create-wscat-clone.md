@@ -82,7 +82,7 @@ You can download the latest version of NodeJs [here](https://nodejs.org/en) or u
 
    Create a new file: `src/signer.ts` with the following code
 
-   ```
+   ```JavaScript
    import { Sha256 } from '@aws-crypto/sha256-js'
    import { fromNodeProviderChain } from '@aws-sdk/credential-providers'
    import { HttpRequest } from '@smithy/protocol-http'
@@ -208,7 +208,7 @@ You can download the latest version of NodeJs [here](https://nodejs.org/en) or u
 
    1. Create the file `src/eventscat.ts` with the following code for your program.
 
-      ```
+      ```JavaScript
       import chalk from 'chalk'
       import { program } from 'commander'
       import EventEmitter from 'node:events'
@@ -346,7 +346,7 @@ You can download the latest version of NodeJs [here](https://nodejs.org/en) or u
 
    1. Specify the scripts property in `package.json` file.
 
-      ```
+      ```json
       ...
           "scripts": {
           "build": "esbuild --platform=node --target=node20 --bundle --outfile=bin/eventscat.js src/eventscat.ts"

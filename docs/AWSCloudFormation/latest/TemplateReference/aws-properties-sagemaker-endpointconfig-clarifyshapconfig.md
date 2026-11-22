@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-endpointconfig-clarifyshapconfig-syntax.json"></a>
 
-```
+```json
 {
   "[NumberOfSamples](#cfn-sagemaker-endpointconfig-clarifyshapconfig-numberofsamples)" : {{Integer}},
   "[Seed](#cfn-sagemaker-endpointconfig-clarifyshapconfig-seed)" : {{Integer}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-endpointconfig-clarifyshapconfig-syntax.yaml"></a>
 
-```
+```yaml
   [NumberOfSamples](#cfn-sagemaker-endpointconfig-clarifyshapconfig-numberofsamples): {{Integer}}
   [Seed](#cfn-sagemaker-endpointconfig-clarifyshapconfig-seed): {{Integer}}
   [ShapBaselineConfig](#cfn-sagemaker-endpointconfig-clarifyshapconfig-shapbaselineconfig): {{

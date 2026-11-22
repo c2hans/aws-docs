@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-directconnect-transitvirtualinterface-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DirectConnect::TransitVirtualInterface",
   "Properties" : {
@@ -48,7 +48,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-directconnect-transitvirtualinterface-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DirectConnect::TransitVirtualInterface
 Properties:
   [AllocateTransitVirtualInterfaceRoleArn](#cfn-directconnect-transitvirtualinterface-allocatetransitvirtualinterfacerolearn): {{String}}
@@ -180,7 +180,7 @@ This example shows a basic transit virtual interface setup using a pre-existing 
 #### JSON
 <a name="aws-resource-directconnect-transitvirtualinterface--examples--Create_a_transit_virtual_interface_using_resources_in_the_same_account--json"></a>
 
-```
+```json
 {
   "Resources": {
     "myTransitVirtualInterface": {
@@ -218,7 +218,7 @@ This example shows a basic transit virtual interface setup using a pre-existing 
 #### YAML
 <a name="aws-resource-directconnect-transitvirtualinterface--examples--Create_a_transit_virtual_interface_using_resources_in_the_same_account--yaml"></a>
 
-```
+```yaml
 Resources:
   myTransitVirtualInterface:
     Type: AWS::DirectConnect::TransitVirtualInterface

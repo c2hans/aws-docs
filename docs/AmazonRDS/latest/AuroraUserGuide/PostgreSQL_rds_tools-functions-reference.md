@@ -10,7 +10,7 @@ This section describes the `rds_tools` functions available on Aurora PostgreSQL.
 
 To create the extension, run the following command.
 
-```
+```sql
 postgres=> CREATE EXTENSION rds_tools;
 CREATE EXTENSION
 ```

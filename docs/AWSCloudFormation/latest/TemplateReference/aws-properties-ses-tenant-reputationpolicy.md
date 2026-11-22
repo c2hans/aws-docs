@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-tenant-reputationpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[ReputationEntityPolicy](#cfn-ses-tenant-reputationpolicy-reputationentitypolicy)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-tenant-reputationpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [ReputationEntityPolicy](#cfn-ses-tenant-reputationpolicy-reputationentitypolicy): {{String}}
 ```
 

@@ -86,7 +86,7 @@ You can create a capacity provider for Amazon ECS Managed Instances using the AW
 
    The following `capacity-provider-definition.json` can be used to specify basic instance requirements, instance storage size, and enable tag propagation:
 
-   ```
+   ```json
    {
        "name": "my-managed-instances-provider",
        "cluster": "my-cluster",

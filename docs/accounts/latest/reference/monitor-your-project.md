@@ -28,7 +28,7 @@ To find the `onBehalfOf` parameter and connect it to a team member, you'll need 
 
 1. In the event record, you'll see the following content:
 
-   ```
+   ```JSON
    "onBehalfOf": {
                "userId": "00000-e00f-000-000-0000000",
                "identityStoreArn": "arn:aws:identitystore::111122223333:identitystore/000000-0000-0000-0000-60000007"
@@ -58,7 +58,7 @@ To connect the `onBehalfOf` parameter to a team member using the AWS CLI:
 
    The output will look like the following:
 
-   ```
+   ```JSON
    {
        "Instances": [
            {
@@ -91,7 +91,7 @@ To connect the `onBehalfOf` parameter to a team member using the AWS CLI:
 
    The output will look like the following:
 
-   ```
+   ```JSON
    {
        "IdentityStoreId": "d-000000",
        "UserId": "00000-e00f-000-000-0000000",

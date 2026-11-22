@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lightsail-instancesnapshot-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lightsail::InstanceSnapshot",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lightsail-instancesnapshot-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lightsail::InstanceSnapshot
 Properties:
   [InstanceName](#cfn-lightsail-instancesnapshot-instancename): {{String}}

@@ -55,7 +55,7 @@ To delete tags from a directory bucket using the Amazon S3 console:
 
 This example shows you how to delete tags from a directory bucket by using the AWS SDK for Java 2.x. To use the command replace the {{user input placeholders}} with your own information.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.s3control.S3ControlClient;
 import software.amazon.awssdk.services.s3control.model.UntagResourceRequest;
@@ -95,7 +95,7 @@ The following CLI example shows you how to delete tags from a directory bucket b
 
 **Request:**
 
-```
+```bash
 aws s3control untag-resource \
 --account-id {{111122223333}} \
 --resource-arn arn:aws::s3express:{{us-east-1}}:{{444455556666}}:bucket/prefix--{{use1-az4}}--x-s3 \
@@ -104,7 +104,7 @@ aws s3control untag-resource \
 
 **Response:**
 
-```
+```json
 {
   "ResponseMetadata": {
     "RequestId": "EXAMPLE123456789",

@@ -42,7 +42,7 @@ When using non-US-ASCII characters in your metadata values, the provided Unicode
 
 The following is an example.
 
-```
+```http
 PUT /Key HTTP/1.1
 Host: {{amzn-s3-demo-bucket}}.s3.amazonaws.com
 x-amz-meta-nonascii: ÄMÄZÕÑ S3

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-aiagent-knowledgebaseassociationconfigurationdata-syntax.json"></a>
 
-```
+```json
 {
   "[ContentTagFilter](#cfn-wisdom-aiagent-knowledgebaseassociationconfigurationdata-contenttagfilter)" : {{TagFilter}},
   "[MaxResults](#cfn-wisdom-aiagent-knowledgebaseassociationconfigurationdata-maxresults)" : {{Number}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-aiagent-knowledgebaseassociationconfigurationdata-syntax.yaml"></a>
 
-```
+```yaml
   [ContentTagFilter](#cfn-wisdom-aiagent-knowledgebaseassociationconfigurationdata-contenttagfilter): {{
     TagFilter}}
   [MaxResults](#cfn-wisdom-aiagent-knowledgebaseassociationconfigurationdata-maxresults): {{Number}}

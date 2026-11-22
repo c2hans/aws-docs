@@ -8,7 +8,7 @@ Below are the detail fields for Resource Sync Status Change events.
 
 The `source` and `detail-type` fields are included because they contain specific values for events.
 
-```
+```json
 {
   . . .,
   "detail-type": "Git Sync Resource Sync Status Change",
@@ -60,7 +60,7 @@ The sync status previous to the current status.
 **Example: Resource Sync Status Change event**  <a name="event-detail-resource-sync-status-change.example"></a>
 The following is an example resource sync status change event. The event details that AWS CodeConnections has successfully synchronized the resource.
 
-```
+```json
 {
   "version": "0",
   "id": "1b5d8feb-agbv-4cf7-a9f1-bf3703467718",

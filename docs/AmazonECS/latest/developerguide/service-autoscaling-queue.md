@@ -68,7 +68,7 @@ The following steps show how to create a target tracking scaling policy that use
 
 1. Register your Amazon ECS service as a scalable target by using the [register-scalable-target](https://docs.aws.amazon.com/cli/latest/reference/application-autoscaling/register-scalable-target.html) command. The scalable dimension is `ecs:service:DesiredCount`.
 
-   ```
+   ```bash
    aws application-autoscaling register-scalable-target \
        --service-namespace ecs \
        --scalable-dimension ecs:service:DesiredCount \
@@ -79,7 +79,7 @@ The following steps show how to create a target tracking scaling policy that use
 
 1. Store the metric math expression in a customized metric specification in a JSON file named `config.json`. Replace the queue name, cluster name, and service name with your own values, and set `TargetValue` to the acceptable backlog per task that you calculated.
 
-   ```
+   ```json
    {
        "CustomizedMetricSpecification": {
            "Metrics": [
@@ -128,7 +128,7 @@ The following steps show how to create a target tracking scaling policy that use
 
 1. Create the target tracking scaling policy by using the [put-scaling-policy](https://docs.aws.amazon.com/cli/latest/reference/application-autoscaling/put-scaling-policy.html) command with the JSON file as input. Application Auto Scaling creates and manages the two CloudWatch alarms (one for scale-out and one for scale-in) that invoke the policy.
 
-   ```
+   ```bash
    aws application-autoscaling put-scaling-policy \
        --policy-name sqs-backlog-target-tracking-policy \
        --service-namespace ecs \

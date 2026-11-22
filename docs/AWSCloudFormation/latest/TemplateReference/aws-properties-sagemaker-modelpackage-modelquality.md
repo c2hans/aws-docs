@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelpackage-modelquality-syntax.json"></a>
 
-```
+```json
 {
   "[Constraints](#cfn-sagemaker-modelpackage-modelquality-constraints)" : {{MetricsSource}},
   "[Statistics](#cfn-sagemaker-modelpackage-modelquality-statistics)" : {{MetricsSource}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelpackage-modelquality-syntax.yaml"></a>
 
-```
+```yaml
   [Constraints](#cfn-sagemaker-modelpackage-modelquality-constraints): {{
     MetricsSource}}
   [Statistics](#cfn-sagemaker-modelpackage-modelquality-statistics): {{

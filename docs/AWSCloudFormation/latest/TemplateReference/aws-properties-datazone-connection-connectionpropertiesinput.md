@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-connection-connectionpropertiesinput-syntax.json"></a>
 
-```
+```json
 {
   "[AmazonQProperties](#cfn-datazone-connection-connectionpropertiesinput-amazonqproperties)" : {{AmazonQPropertiesInput}},
   "[AthenaProperties](#cfn-datazone-connection-connectionpropertiesinput-athenaproperties)" : {{AthenaPropertiesInput}},
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-connection-connectionpropertiesinput-syntax.yaml"></a>
 
-```
+```yaml
   [AmazonQProperties](#cfn-datazone-connection-connectionpropertiesinput-amazonqproperties): {{
     AmazonQPropertiesInput}}
   [AthenaProperties](#cfn-datazone-connection-connectionpropertiesinput-athenaproperties): {{

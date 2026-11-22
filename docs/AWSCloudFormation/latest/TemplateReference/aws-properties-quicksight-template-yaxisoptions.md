@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-yaxisoptions-syntax.json"></a>
 
-```
+```json
 {
   "[YAxis](#cfn-quicksight-template-yaxisoptions-yaxis)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-yaxisoptions-syntax.yaml"></a>
 
-```
+```yaml
   [YAxis](#cfn-quicksight-template-yaxisoptions-yaxis): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-authenticatecognitoconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AuthenticationRequestExtraParams](#cfn-elasticloadbalancingv2-listenerrule-authenticatecognitoconfig-authenticationrequestextraparams)" : {{{{{Key}}: {{Value}}, ...}}},
   "[OnUnauthenticatedRequest](#cfn-elasticloadbalancingv2-listenerrule-authenticatecognitoconfig-onunauthenticatedrequest)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-authenticatecognitoconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AuthenticationRequestExtraParams](#cfn-elasticloadbalancingv2-listenerrule-authenticatecognitoconfig-authenticationrequestextraparams): {{
     {{Key}}: {{Value}}}}
   [OnUnauthenticatedRequest](#cfn-elasticloadbalancingv2-listenerrule-authenticatecognitoconfig-onunauthenticatedrequest): {{String}}

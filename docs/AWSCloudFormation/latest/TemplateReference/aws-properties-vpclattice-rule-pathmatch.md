@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-vpclattice-rule-pathmatch-syntax.json"></a>
 
-```
+```json
 {
   "[CaseSensitive](#cfn-vpclattice-rule-pathmatch-casesensitive)" : {{Boolean}},
   "[Match](#cfn-vpclattice-rule-pathmatch-match)" : {{PathMatchType}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-vpclattice-rule-pathmatch-syntax.yaml"></a>
 
-```
+```yaml
   [CaseSensitive](#cfn-vpclattice-rule-pathmatch-casesensitive): {{Boolean}}
   [Match](#cfn-vpclattice-rule-pathmatch-match): {{
     PathMatchType}}

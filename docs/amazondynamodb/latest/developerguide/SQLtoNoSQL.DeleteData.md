@@ -15,14 +15,14 @@ In SQL, the `DELETE` statement removes one or more rows from a table. Amazon Dyn
 
 In SQL, you use the `DELETE` statement to delete one or more rows. The `WHERE` clause determines the rows that you want to modify. The following is an example.
 
-```
+```sql
 DELETE FROM Music
 WHERE Artist = 'The Acme Band' AND SongTitle = 'Look Out, World';
 ```
 
 You can modify the `WHERE` clause to delete multiple rows. For example, you could delete all of the songs by a particular artist, as shown in the following example.
 
-```
+```sql
 DELETE FROM Music WHERE Artist = 'The Acme Band'
 ```
 
@@ -69,14 +69,14 @@ With PartiQL, you use the `Delete` statement through the `ExecuteStatement` oper
 
 The primary key for this table consists of *Artist* and *SongTitle*. You must specify values for these attributes.
 
-```
+```sql
 DELETE FROM Music
 WHERE Artist = 'Acme Band' AND SongTitle = 'PartiQL Rocks'
 ```
 
 You can also specify additional conditions for the operation. The following `DELETE` operation only deletes the item if it has more than 11 *Awards*.
 
-```
+```sql
 DELETE FROM Music
 WHERE Artist = 'Acme Band' AND SongTitle = 'PartiQL Rocks' AND Awards > 11
 ```

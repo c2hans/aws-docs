@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-linechartvisual-syntax.json"></a>
 
-```
+```json
 {
   "[Actions](#cfn-quicksight-template-linechartvisual-actions)" : {{[ VisualCustomAction, ... ]}},
   "[ChartConfiguration](#cfn-quicksight-template-linechartvisual-chartconfiguration)" : {{LineChartConfiguration}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-linechartvisual-syntax.yaml"></a>
 
-```
+```yaml
   [Actions](#cfn-quicksight-template-linechartvisual-actions): {{
     - VisualCustomAction}}
   [ChartConfiguration](#cfn-quicksight-template-linechartvisual-chartconfiguration): {{

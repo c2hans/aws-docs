@@ -131,7 +131,7 @@ Include the appropriate actions to grant the access your DB instance requires:
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -209,7 +209,7 @@ Include the appropriate actions to grant the access your DB instance requires:
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -278,7 +278,7 @@ Include the appropriate actions to grant the access your DB instance requires:
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

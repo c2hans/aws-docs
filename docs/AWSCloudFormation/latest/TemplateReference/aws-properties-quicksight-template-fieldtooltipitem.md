@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-fieldtooltipitem-syntax.json"></a>
 
-```
+```json
 {
   "[FieldId](#cfn-quicksight-template-fieldtooltipitem-fieldid)" : {{String}},
   "[Label](#cfn-quicksight-template-fieldtooltipitem-label)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-fieldtooltipitem-syntax.yaml"></a>
 
-```
+```yaml
   [FieldId](#cfn-quicksight-template-fieldtooltipitem-fieldid): {{String}}
   [Label](#cfn-quicksight-template-fieldtooltipitem-label): {{String}}
   [TooltipTarget](#cfn-quicksight-template-fieldtooltipitem-tooltiptarget): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-knowledgebase-hierarchicalchunkinglevelconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MaxTokens](#cfn-wisdom-knowledgebase-hierarchicalchunkinglevelconfiguration-maxtokens)" : {{Number}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-knowledgebase-hierarchicalchunkinglevelconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MaxTokens](#cfn-wisdom-knowledgebase-hierarchicalchunkinglevelconfiguration-maxtokens): {{Number}}
 ```
 

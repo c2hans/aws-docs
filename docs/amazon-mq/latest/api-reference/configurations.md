@@ -77,7 +77,7 @@ Creates a new configuration for the specified configuration name. Amazon MQ uses
 #### POST schema
 <a name="configurations-request-body-post-example"></a>
 
-```
+```json
 {
   "engineVersion": "string",
   "authenticationStrategy": enum,
@@ -94,7 +94,7 @@ Creates a new configuration for the specified configuration name. Amazon MQ uses
 #### ListConfigurationsOutput schema
 <a name="configurations-response-body-listconfigurationsoutput-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "maxResults": integer,
@@ -123,7 +123,7 @@ Creates a new configuration for the specified configuration name. Amazon MQ uses
 #### CreateConfigurationOutput schema
 <a name="configurations-response-body-createconfigurationoutput-example"></a>
 
-```
+```json
 {
   "created": "string",
   "authenticationStrategy": enum,
@@ -141,7 +141,7 @@ Creates a new configuration for the specified configuration name. Amazon MQ uses
 #### Error schema
 <a name="configurations-response-body-error-example"></a>
 
-```
+```json
 {
   "errorAttribute": "string",
   "message": "string"

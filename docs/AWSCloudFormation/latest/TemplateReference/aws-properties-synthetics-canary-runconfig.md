@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-synthetics-canary-runconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ActiveTracing](#cfn-synthetics-canary-runconfig-activetracing)" : {{Boolean}},
   "[EnvironmentVariables](#cfn-synthetics-canary-runconfig-environmentvariables)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-synthetics-canary-runconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ActiveTracing](#cfn-synthetics-canary-runconfig-activetracing): {{Boolean}}
   [EnvironmentVariables](#cfn-synthetics-canary-runconfig-environmentvariables): {{
     {{Key}}: {{Value}}}}

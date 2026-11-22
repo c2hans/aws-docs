@@ -10,10 +10,10 @@ source_url: https://docs.aws.amazon.com/agent-registry/latest/APIReference/API_D
 <a name="API_DescriptorSourceFromUrl_Contents"></a>
 
  ** url **   <a name="agentregistry-Type-DescriptorSourceFromUrl-url"></a>
- The URL from which the descriptor content is retrieved.
+ The URL from which the descriptor content is retrieved. For an agent skill that synchronizes its SKILL.md from GitHub, this is the GitHub folder URL. The data plane doesn't return Amazon S3 (`s3://`) source URLs.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
-Pattern: `https://.*`
+Pattern: `(https|s3)://.*`
 Required: Yes
 
 ## See Also

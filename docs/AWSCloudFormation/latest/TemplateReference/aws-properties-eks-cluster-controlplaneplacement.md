@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-cluster-controlplaneplacement-syntax.json"></a>
 
-```
+```json
 {
   "[GroupName](#cfn-eks-cluster-controlplaneplacement-groupname)" : {{String}},
   "[SpreadLevel](#cfn-eks-cluster-controlplaneplacement-spreadlevel)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-cluster-controlplaneplacement-syntax.yaml"></a>
 
-```
+```yaml
   [GroupName](#cfn-eks-cluster-controlplaneplacement-groupname): {{String}}
   [SpreadLevel](#cfn-eks-cluster-controlplaneplacement-spreadlevel): {{String}}
 ```

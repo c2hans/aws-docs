@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ses-mailmanagerrelay-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SES::MailManagerRelay",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ses-mailmanagerrelay-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SES::MailManagerRelay
 Properties:
   [Authentication](#cfn-ses-mailmanagerrelay-authentication): {{

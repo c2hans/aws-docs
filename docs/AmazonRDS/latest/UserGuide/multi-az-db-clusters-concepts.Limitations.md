@@ -18,6 +18,7 @@ The following limitations apply to Multi-AZ DB clusters.
   + Stopping and starting the Multi-AZ DB cluster
   + Copying a snapshot of a Multi-AZ DB cluster
   + Encrypting an unencrypted Multi-AZ DB cluster
++ Multi-AZ DB clusters don't support RDS for MySQL 9.7.
 + RDS for MySQL Multi-AZ DB clusters support only the following system stored procedures:
   + `mysql.rds_rotate_general_log`
   + `mysql.rds_rotate_slow_log`

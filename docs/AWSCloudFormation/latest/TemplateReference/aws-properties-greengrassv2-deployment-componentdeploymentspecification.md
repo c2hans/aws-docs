@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrassv2-deployment-componentdeploymentspecification-syntax.json"></a>
 
-```
+```json
 {
   "[ComponentVersion](#cfn-greengrassv2-deployment-componentdeploymentspecification-componentversion)" : {{String}},
   "[ConfigurationUpdate](#cfn-greengrassv2-deployment-componentdeploymentspecification-configurationupdate)" : {{ComponentConfigurationUpdate}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrassv2-deployment-componentdeploymentspecification-syntax.yaml"></a>
 
-```
+```yaml
   [ComponentVersion](#cfn-greengrassv2-deployment-componentdeploymentspecification-componentversion): {{String}}
   [ConfigurationUpdate](#cfn-greengrassv2-deployment-componentdeploymentspecification-configurationupdate): {{
     ComponentConfigurationUpdate}}

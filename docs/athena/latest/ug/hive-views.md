@@ -8,7 +8,7 @@ You can use Athena to query existing views in your external Apache Hive metastor
 
 For example, suppose you have a Hive view like the following that uses a syntax not supported in Athena like `LATERAL VIEW explode()`:
 
-```
+```sql
 CREATE VIEW team_view AS
 SELECT team, score
 FROM matches
@@ -17,7 +17,7 @@ LATERAL VIEW explode(scores) m AS score
 
 Athena translates the Hive view query string into a statement like the following that Athena can run:
 
-```
+```sql
 SELECT team, score
 FROM matches
 CROSS JOIN UNNEST(scores) AS m (score)
@@ -108,7 +108,7 @@ The following miscellaneous functions for Hive views require special handling.
 
   In the `(pos, val)` output, Athena treats the `pos` column as `BIGINT`. Because of this, you may need to cast the `pos` column to `BIGINT` to avoid a stale view. The following example illustrates this technique.
 
-  ```
+  ```sql
   SELECT CAST(c AS BIGINT) AS c_bigint, d
   FROM table LATERAL VIEW POSEXPLODE({{<argument>}}) t AS c, d
   ```

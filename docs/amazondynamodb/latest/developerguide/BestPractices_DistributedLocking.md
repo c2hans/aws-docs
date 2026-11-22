@@ -45,7 +45,7 @@ If your application acquires locks on multiple resources, you must acquire them 
 
 The following example shows how to use the DynamoDB Lock Client to acquire and release a lock:
 
-```
+```java
 import java.io.IOException;
 import java.util.Optional;
 import java.util.concurrent.TimeUnit;

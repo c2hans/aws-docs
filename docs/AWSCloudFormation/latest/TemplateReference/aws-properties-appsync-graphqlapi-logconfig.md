@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appsync-graphqlapi-logconfig-syntax.json"></a>
 
-```
+```json
 {
   "[CloudWatchLogsRoleArn](#cfn-appsync-graphqlapi-logconfig-cloudwatchlogsrolearn)" : {{String}},
   "[ExcludeVerboseContent](#cfn-appsync-graphqlapi-logconfig-excludeverbosecontent)" : {{Boolean}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appsync-graphqlapi-logconfig-syntax.yaml"></a>
 
-```
+```yaml
   [CloudWatchLogsRoleArn](#cfn-appsync-graphqlapi-logconfig-cloudwatchlogsrolearn): {{String}}
   [ExcludeVerboseContent](#cfn-appsync-graphqlapi-logconfig-excludeverbosecontent): {{Boolean}}
   [FieldLogLevel](#cfn-appsync-graphqlapi-logconfig-fieldloglevel): {{String}}

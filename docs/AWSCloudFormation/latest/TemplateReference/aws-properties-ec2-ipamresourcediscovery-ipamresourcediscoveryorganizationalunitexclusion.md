@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-ipamresourcediscovery-ipamresourcediscoveryorganizationalunitexclusion-syntax.json"></a>
 
-```
+```json
 {
   "[OrganizationsEntityPath](#cfn-ec2-ipamresourcediscovery-ipamresourcediscoveryorganizationalunitexclusion-organizationsentitypath)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-ipamresourcediscovery-ipamresourcediscoveryorganizationalunitexclusion-syntax.yaml"></a>
 
-```
+```yaml
   [OrganizationsEntityPath](#cfn-ec2-ipamresourcediscovery-ipamresourcediscoveryorganizationalunitexclusion-organizationsentitypath): {{String}}
 ```
 

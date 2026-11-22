@@ -116,7 +116,7 @@ An example IAM policy that denies the `GetSecretValue` action to all secrets wit
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -153,7 +153,7 @@ The following is an example AWS KMS policy. Replace the {{user input}} values wi
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

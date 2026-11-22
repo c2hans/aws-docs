@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distribution-functionassociation-syntax.json"></a>
 
-```
+```json
 {
   "[EventType](#cfn-cloudfront-distribution-functionassociation-eventtype)" : {{String}},
   "[FunctionARN](#cfn-cloudfront-distribution-functionassociation-functionarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distribution-functionassociation-syntax.yaml"></a>
 
-```
+```yaml
   [EventType](#cfn-cloudfront-distribution-functionassociation-eventtype): {{String}}
   [FunctionARN](#cfn-cloudfront-distribution-functionassociation-functionarn): {{String}}
 ```

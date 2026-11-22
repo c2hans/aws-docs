@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datasync-locationobjectstorage-objectstoragefederatedidentityconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AwsIamRole](#cfn-datasync-locationobjectstorage-objectstoragefederatedidentityconfig-awsiamrole)" : {{String}},
   "[ExternalIdentity](#cfn-datasync-locationobjectstorage-objectstoragefederatedidentityconfig-externalidentity)" : {{ObjectStorageExternalIdentityConfig}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datasync-locationobjectstorage-objectstoragefederatedidentityconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AwsIamRole](#cfn-datasync-locationobjectstorage-objectstoragefederatedidentityconfig-awsiamrole): {{String}}
   [ExternalIdentity](#cfn-datasync-locationobjectstorage-objectstoragefederatedidentityconfig-externalidentity): {{
     ObjectStorageExternalIdentityConfig}}

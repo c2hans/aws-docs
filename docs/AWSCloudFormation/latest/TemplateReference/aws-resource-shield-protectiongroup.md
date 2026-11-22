@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-shield-protectiongroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Shield::ProtectionGroup",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-shield-protectiongroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Shield::ProtectionGroup
 Properties:
   [Aggregation](#cfn-shield-protectiongroup-aggregation): {{String}}
@@ -137,7 +137,7 @@ The following shows an example protection group configuration for all protected 
 #### YAML
 <a name="aws-resource-shield-protectiongroup--examples--Create_a_protection_group_for_all_protected_resources--yaml"></a>
 
-```
+```yaml
 Resources:
   ProtectionGroup:
     Type: AWS::Shield::ProtectionGroup
@@ -150,7 +150,7 @@ Resources:
 #### JSON
 <a name="aws-resource-shield-protectiongroup--examples--Create_a_protection_group_for_all_protected_resources--json"></a>
 
-```
+```json
 {
     "Resources": {
         "ProtectionGroup": {
@@ -173,7 +173,7 @@ The following shows an example protection group configuration for all Elastic IP
 #### YAML
 <a name="aws-resource-shield-protectiongroup--examples--Create_a_protection_group_for_protected_Elastic_IP_address_resources--yaml"></a>
 
-```
+```yaml
 Resources:
   ProtectionGroup:
     Type: AWS::Shield::ProtectionGroup
@@ -187,7 +187,7 @@ Resources:
 #### JSON
 <a name="aws-resource-shield-protectiongroup--examples--Create_a_protection_group_for_protected_Elastic_IP_address_resources--json"></a>
 
-```
+```json
 {
     "Resources": {
         "ProtectionGroup": {

@@ -6,6 +6,8 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-po
 
 With geoproximity routing, Amazon Route 53 routes traffic to your resources based on the location of your users and your resources. It sends traffic to the closest available resource. You can also choose to send more or less traffic to a given resource by setting a value called a *bias*. A bias expands or shrinks the geographic region from which traffic goes to a resource.
 
+You can use geoproximity routing for records in both public and private hosted zones. For private hosted zones, see [Geoproximity routing in private hosted zones](routing-policy-geoproximity-phz.md).
+
 You create geoproximity rules for your resources and specify one of the following values for each rule:
 + If you're using AWS resources, specify the AWS Region or Local Zone Group that you created the resource in.
 + If you're using non-AWS resources, specify the latitude and longitude of the resource.

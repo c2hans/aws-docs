@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrassv2-deployment-componentrunwith-syntax.json"></a>
 
-```
+```json
 {
   "[PosixUser](#cfn-greengrassv2-deployment-componentrunwith-posixuser)" : {{String}},
   "[SystemResourceLimits](#cfn-greengrassv2-deployment-componentrunwith-systemresourcelimits)" : {{SystemResourceLimits}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrassv2-deployment-componentrunwith-syntax.yaml"></a>
 
-```
+```yaml
   [PosixUser](#cfn-greengrassv2-deployment-componentrunwith-posixuser): {{String}}
   [SystemResourceLimits](#cfn-greengrassv2-deployment-componentrunwith-systemresourcelimits): {{
     SystemResourceLimits}}

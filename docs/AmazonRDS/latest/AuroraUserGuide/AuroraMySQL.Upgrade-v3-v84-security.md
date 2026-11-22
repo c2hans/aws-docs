@@ -55,7 +55,7 @@ To change the default authentication plugin for all new users, update the value 
 
 To create a user with a different authentication plugin than the default, specify it explicitly in the `CREATE USER` statement:
 
-```
+```sql
 CREATE USER '{{username}}'@'{{host}}' IDENTIFIED WITH {{authentication-plugin}} BY '{{password}}';
 ```
 

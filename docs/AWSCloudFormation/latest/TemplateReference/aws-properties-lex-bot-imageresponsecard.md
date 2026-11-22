@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-imageresponsecard-syntax.json"></a>
 
-```
+```json
 {
   "[Buttons](#cfn-lex-bot-imageresponsecard-buttons)" : {{[ Button, ... ]}},
   "[ImageUrl](#cfn-lex-bot-imageresponsecard-imageurl)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-imageresponsecard-syntax.yaml"></a>
 
-```
+```yaml
   [Buttons](#cfn-lex-bot-imageresponsecard-buttons): {{
     - Button}}
   [ImageUrl](#cfn-lex-bot-imageresponsecard-imageurl): {{String}}

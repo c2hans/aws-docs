@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-model-imageconfig-syntax.json"></a>
 
-```
+```json
 {
   "[RepositoryAccessMode](#cfn-sagemaker-model-imageconfig-repositoryaccessmode)" : {{String}},
   "[RepositoryAuthConfig](#cfn-sagemaker-model-imageconfig-repositoryauthconfig)" : {{RepositoryAuthConfig}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-model-imageconfig-syntax.yaml"></a>
 
-```
+```yaml
   [RepositoryAccessMode](#cfn-sagemaker-model-imageconfig-repositoryaccessmode): {{String}}
   [RepositoryAuthConfig](#cfn-sagemaker-model-imageconfig-repositoryauthconfig): {{
     RepositoryAuthConfig}}

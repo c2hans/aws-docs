@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-treemapconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ColorLabelOptions](#cfn-quicksight-template-treemapconfiguration-colorlabeloptions)" : {{ChartAxisLabelOptions}},
   "[ColorScale](#cfn-quicksight-template-treemapconfiguration-colorscale)" : {{ColorScale}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-treemapconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ColorLabelOptions](#cfn-quicksight-template-treemapconfiguration-colorlabeloptions): {{
     ChartAxisLabelOptions}}
   [ColorScale](#cfn-quicksight-template-treemapconfiguration-colorscale): {{

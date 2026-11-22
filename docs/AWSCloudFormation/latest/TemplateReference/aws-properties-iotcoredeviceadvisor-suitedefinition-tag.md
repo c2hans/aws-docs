@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotcoredeviceadvisor-suitedefinition-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-iotcoredeviceadvisor-suitedefinition-tag-key)" : {{String}},
   "[Value](#cfn-iotcoredeviceadvisor-suitedefinition-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotcoredeviceadvisor-suitedefinition-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-iotcoredeviceadvisor-suitedefinition-tag-key): {{String}}
   [Value](#cfn-iotcoredeviceadvisor-suitedefinition-tag-value): {{String}}
 ```

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-servicemanagedebsvolumeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Encrypted](#cfn-ecs-service-servicemanagedebsvolumeconfiguration-encrypted)" : {{Boolean}},
   "[FilesystemType](#cfn-ecs-service-servicemanagedebsvolumeconfiguration-filesystemtype)" : {{String}},
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-servicemanagedebsvolumeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Encrypted](#cfn-ecs-service-servicemanagedebsvolumeconfiguration-encrypted): {{Boolean}}
   [FilesystemType](#cfn-ecs-service-servicemanagedebsvolumeconfiguration-filesystemtype): {{String}}
   [Iops](#cfn-ecs-service-servicemanagedebsvolumeconfiguration-iops): {{Integer}}

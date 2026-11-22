@@ -29,7 +29,7 @@ This technique for retrieving all dimensions across an AWS namespace does not wo
 **To get average CPU utilization across your instances (AWS CLI)**
 Use the [get-metric-statistics](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/get-metric-statistics.html) command as follows to get the average of the **CPUUtilization** metric across your instances.
 
-```
+```bash
 aws cloudwatch get-metric-statistics \
     --namespace AWS/EC2 \
     --metric-name CPUUtilization \
@@ -40,7 +40,7 @@ aws cloudwatch get-metric-statistics \
 
 The following is example output:
 
-```
+```json
 {
     "Datapoints": [
         {

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-config-organizationconfigrule-organizationcustomrulemetadata-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-config-organizationconfigrule-organizationcustomrulemetadata-description)" : {{String}},
   "[InputParameters](#cfn-config-organizationconfigrule-organizationcustomrulemetadata-inputparameters)" : {{String}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-config-organizationconfigrule-organizationcustomrulemetadata-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-config-organizationconfigrule-organizationcustomrulemetadata-description): {{String}}
   [InputParameters](#cfn-config-organizationconfigrule-organizationcustomrulemetadata-inputparameters): {{String}}
   [LambdaFunctionArn](#cfn-config-organizationconfigrule-organizationcustomrulemetadata-lambdafunctionarn): {{String}}

@@ -21,7 +21,7 @@ The temporary credentials are valid for the specified duration, from 900 seconds
 
 You can use the temporary credentials created by `GetFederationToken` in any AWS service with the following exceptions:
 + You cannot call any IAM operations using the AWS CLI or the AWS API. This limitation does not apply to console sessions.
-+ You cannot call any AWS STS operations except `GetCallerIdentity`.
++ You cannot call any AWS STS operations except `GetCallerIdentity`, `GetScopedCredentials`, or `GetDelegatedAccessToken`.
 
 You can use temporary credentials for single sign-on (SSO) to the console.
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticbeanstalk-applicationversion-sourcebundle-syntax.json"></a>
 
-```
+```json
 {
   "[S3Bucket](#cfn-elasticbeanstalk-applicationversion-sourcebundle-s3bucket)" : {{String}},
   "[S3Key](#cfn-elasticbeanstalk-applicationversion-sourcebundle-s3key)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticbeanstalk-applicationversion-sourcebundle-syntax.yaml"></a>
 
-```
+```yaml
   [S3Bucket](#cfn-elasticbeanstalk-applicationversion-sourcebundle-s3bucket): {{String}}
   [S3Key](#cfn-elasticbeanstalk-applicationversion-sourcebundle-s3key): {{String}}
 ```

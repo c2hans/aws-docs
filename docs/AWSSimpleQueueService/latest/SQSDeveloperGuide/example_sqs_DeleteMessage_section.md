@@ -16,7 +16,7 @@ Action examples are code excerpts from larger programs and must be run in contex
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SQS#code-examples).
 Receive a message from an Amazon SQS queue and then delete the message.
 
-```
+```csharp
         public static async Task Main()
         {
             // If the AWS Region you want to use is different from
@@ -97,7 +97,7 @@ Receive a message from an Amazon SQS queue and then delete the message.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/sqs#code-examples).
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -156,7 +156,7 @@ For more information, see [Receiving and deleting a message in Amazon SQS](https
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/sqs#code-examples).
 
-```
+```java
         try {
             for (Message message : messages) {
                 DeleteMessageRequest deleteMessageRequest = DeleteMessageRequest.builder()
@@ -179,7 +179,7 @@ For more information, see [Receiving and deleting a message in Amazon SQS](https
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sqs#code-examples).
 Receive and delete Amazon SQS messages.
 
-```
+```javascript
 import {
   ReceiveMessageCommand,
   DeleteMessageCommand,
@@ -236,7 +236,7 @@ export const main = async (queueUrl = SQS_QUEUE_URL) => {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/sqs#code-examples).
 Receive and delete Amazon SQS messages.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -283,7 +283,7 @@ sqs.receiveMessage(params, function (err, data) {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/sqs#code-examples).
 
-```
+```kotlin
 suspend fun deleteMessages(queueUrlVal: String) {
     println("Delete Messages from $queueUrlVal")
 
@@ -318,7 +318,7 @@ suspend fun deleteQueue(queueUrlVal: String) {
 **Tools for PowerShell V4**
 **Example 1: This example deletes the message with the specified receipt handle from the specified queue.**
 
-```
+```powershell
 Remove-SQSMessage -QueueUrl https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyQueue -ReceiptHandle AQEBd329...v6gl8Q==
 ```
 +  For API details, see [DeleteMessage](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -326,7 +326,7 @@ Remove-SQSMessage -QueueUrl https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyQ
 **Tools for PowerShell V5**
 **Example 1: This example deletes the message with the specified receipt handle from the specified queue.**
 
-```
+```powershell
 Remove-SQSMessage -QueueUrl https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyQueue -ReceiptHandle AQEBd329...v6gl8Q==
 ```
 +  For API details, see [DeleteMessage](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -337,7 +337,7 @@ Remove-SQSMessage -QueueUrl https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyQ
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sqs#code-examples).
 
-```
+```python
 def delete_message(message):
     """
     Delete a message from a queue. Clients must delete messages after they
@@ -362,7 +362,7 @@ def delete_message(message):
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sqs#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_sqs->deletemessage(
            iv_queueurl = iv_queue_url

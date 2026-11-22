@@ -8,13 +8,13 @@ Subscribes a callback function to be invoked whenever the agent's session is abo
 
  **Signature**
 
-```
+```typescript
 onExpirationWarning(handler: ExpirationWarningHandler);
 ```
 
  **Usage**
 
-```
+```typescript
 const handler: ExpirationWarningHandler = (data: SessionExpirationInformation) => {
     console.log("Agent's session expiring at:", data);
 }

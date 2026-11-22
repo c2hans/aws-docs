@@ -123,7 +123,7 @@ HTTP Status Code: 400
 
 The following example request illustrates renaming the *srcfilename.txt* object in a directory bucket.
 
-```
+```HTTP
 PUT /dstfilename.txt HTTP/1.1
 Host: amzn-s3-demo-bucket--zone-id--x-s3.s3express.amazonaws.com
 If-Match: 9b2cf535f27731c974343645a3985328
@@ -135,7 +135,7 @@ x-amz-rename-source: /srcfilename.txt
 
 The following example request illustrates renaming the *srcfilename.txt* object to *dstfilename.txt* if an object named *dstfilename.txt* doesn't already exist in the directory bucket.
 
-```
+```HTTP
 PUT /dstfilename.txt HTTP/1.1
 Host: amzn-s3-demo-bucket--zone-id--x-s3.s3express.amazonaws.com
 If-None-Match: *
@@ -147,7 +147,7 @@ x-amz-rename-source: /srcfilename.txt
 
 The following example request illustrates renaming the *srcfilename.txt* object only if the destination exists and has the ETag: *9b2cf535f27731c974343645a3985328*.
 
-```
+```HTTP
 PUT /dstfilename.txt HTTP/1.1
 Host: amzn-s3-demo-bucket--zone-id--x-s3.s3express.amazonaws.com
 If-Match: 9b2cf535f27731c974343645a3985328

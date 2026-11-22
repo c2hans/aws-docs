@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-efs-accesspoint-accesspointtag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-efs-accesspoint-accesspointtag-key)" : {{String}},
   "[Value](#cfn-efs-accesspoint-accesspointtag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-efs-accesspoint-accesspointtag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-efs-accesspoint-accesspointtag-key): {{String}}
   [Value](#cfn-efs-accesspoint-accesspointtag-value): {{String}}
 ```

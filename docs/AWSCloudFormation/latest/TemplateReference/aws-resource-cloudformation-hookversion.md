@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudformation-hookversion-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudFormation::HookVersion",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudformation-hookversion-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudFormation::HookVersion
 Properties:
   [ExecutionRoleArn](#cfn-cloudformation-hookversion-executionrolearn): {{String}}
@@ -140,7 +140,7 @@ The following example demonstrates how to specify a new Hook version.
 #### JSON
 <a name="aws-resource-cloudformation-hookversion--examples--Specifying_a_Hook_version--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -158,7 +158,7 @@ The following example demonstrates how to specify a new Hook version.
 #### YAML
 <a name="aws-resource-cloudformation-hookversion--examples--Specifying_a_Hook_version--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   HookVersion:
@@ -176,7 +176,7 @@ The following example demonstrates how to specify a new Hook version and use the
 #### JSON
 <a name="aws-resource-cloudformation-hookversion--examples--Specifying_the_default_Hook_version--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -202,7 +202,7 @@ The following example demonstrates how to specify a new Hook version and use the
 #### YAML
 <a name="aws-resource-cloudformation-hookversion--examples--Specifying_the_default_Hook_version--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   HookVersion:

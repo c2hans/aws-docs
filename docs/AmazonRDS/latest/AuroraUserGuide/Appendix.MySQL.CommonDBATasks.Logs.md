@@ -10,7 +10,7 @@ Both the general log and the slow query logs are disabled by default. In order t
 
 Log tables keep growing until the respective logging activities are turned off by resetting the appropriate parameter to `0`. A large amount of data often accumulates over time, which can use up a considerable percentage of your allocated storage space. Amazon Aurora doesn't allow you to truncate the log tables, but you can move their contents. Rotating a table saves its contents to a backup table and then creates a new empty log table. You can manually rotate the log tables with the following command line procedures, where the command prompt is indicated by `PROMPT>`:
 
-```
+```sql
 PROMPT> CALL mysql.rds_rotate_slow_log;
 PROMPT> CALL mysql.rds_rotate_general_log;
 ```

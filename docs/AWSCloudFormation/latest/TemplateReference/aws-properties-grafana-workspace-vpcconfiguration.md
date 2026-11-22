@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-grafana-workspace-vpcconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[SecurityGroupIds](#cfn-grafana-workspace-vpcconfiguration-securitygroupids)" : {{[ String, ... ]}},
   "[SubnetIds](#cfn-grafana-workspace-vpcconfiguration-subnetids)" : {{[ String, ... ]}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-grafana-workspace-vpcconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [SecurityGroupIds](#cfn-grafana-workspace-vpcconfiguration-securitygroupids): {{
     - String}}
   [SubnetIds](#cfn-grafana-workspace-vpcconfiguration-subnetids): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-dataautomationproject-documentextractiongranularity-syntax.json"></a>
 
-```
+```json
 {
   "[Types](#cfn-bedrock-dataautomationproject-documentextractiongranularity-types)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-dataautomationproject-documentextractiongranularity-syntax.yaml"></a>
 
-```
+```yaml
   [Types](#cfn-bedrock-dataautomationproject-documentextractiongranularity-types): {{
     - String}}
 ```

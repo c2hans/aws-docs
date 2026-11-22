@@ -8,7 +8,7 @@ The AWS Cloud Development Kit (AWS CDK) (AWS CDK) is an open-source software dev
 
 Replace `mig12345` with the tag value needed for your migrated resource followed by your MAP term agreement number in following example:
 
-```
+```typescript
 import { Tags } from 'aws-cdk-lib';
 
 Tags.of(myConstruct).add('map-migrated', '{{mig12345}}');

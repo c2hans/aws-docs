@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackagev2-originendpoint-spekekeyprovider-syntax.json"></a>
 
-```
+```json
 {
   "[CertificateArn](#cfn-mediapackagev2-originendpoint-spekekeyprovider-certificatearn)" : {{String}},
   "[ContentKeyPeriodConfiguration](#cfn-mediapackagev2-originendpoint-spekekeyprovider-contentkeyperiodconfiguration)" : {{ContentKeyPeriodConfiguration}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackagev2-originendpoint-spekekeyprovider-syntax.yaml"></a>
 
-```
+```yaml
   [CertificateArn](#cfn-mediapackagev2-originendpoint-spekekeyprovider-certificatearn): {{String}}
   [ContentKeyPeriodConfiguration](#cfn-mediapackagev2-originendpoint-spekekeyprovider-contentkeyperiodconfiguration): {{
     ContentKeyPeriodConfiguration}}

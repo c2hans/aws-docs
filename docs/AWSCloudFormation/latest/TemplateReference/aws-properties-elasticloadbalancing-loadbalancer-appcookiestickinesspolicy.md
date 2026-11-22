@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancing-loadbalancer-appcookiestickinesspolicy-syntax.json"></a>
 
-```
+```json
 {
   "[CookieName](#cfn-elasticloadbalancing-loadbalancer-appcookiestickinesspolicy-cookiename)" : {{String}},
   "[PolicyName](#cfn-elasticloadbalancing-loadbalancer-appcookiestickinesspolicy-policyname)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancing-loadbalancer-appcookiestickinesspolicy-syntax.yaml"></a>
 
-```
+```yaml
   [CookieName](#cfn-elasticloadbalancing-loadbalancer-appcookiestickinesspolicy-cookiename): {{String}}
   [PolicyName](#cfn-elasticloadbalancing-loadbalancer-appcookiestickinesspolicy-policyname): {{String}}
 ```

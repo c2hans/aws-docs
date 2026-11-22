@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewaytarget-iamcredentialprovider-syntax.json"></a>
 
-```
+```json
 {
   "[Region](#cfn-bedrockagentcore-gatewaytarget-iamcredentialprovider-region)" : {{String}},
   "[Service](#cfn-bedrockagentcore-gatewaytarget-iamcredentialprovider-service)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewaytarget-iamcredentialprovider-syntax.yaml"></a>
 
-```
+```yaml
   [Region](#cfn-bedrockagentcore-gatewaytarget-iamcredentialprovider-region): {{String}}
   [Service](#cfn-bedrockagentcore-gatewaytarget-iamcredentialprovider-service): {{String}}
 ```

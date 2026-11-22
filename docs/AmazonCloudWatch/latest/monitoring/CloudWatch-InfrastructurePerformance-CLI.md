@@ -19,7 +19,7 @@ aws ec2 --region us-east-1 get-aws-network-performance-data --start-time 2022-10
 
 The following is example output.
 
-```
+```json
 {
     "DataResponses": [
         {

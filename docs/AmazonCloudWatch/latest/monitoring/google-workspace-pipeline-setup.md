@@ -9,7 +9,7 @@ Collects audit logs from Google Workspace using OAuth 2.0 service account authen
 ## YAML configuration
 <a name="google-workspace-yaml-configuration"></a>
 
-```
+```yaml
 extension:
   aws:
     secrets:

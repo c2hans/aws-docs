@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-sheetelementrenderingrule-syntax.json"></a>
 
-```
+```json
 {
   "[ConfigurationOverrides](#cfn-quicksight-template-sheetelementrenderingrule-configurationoverrides)" : {{SheetElementConfigurationOverrides}},
   "[Expression](#cfn-quicksight-template-sheetelementrenderingrule-expression)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-sheetelementrenderingrule-syntax.yaml"></a>
 
-```
+```yaml
   [ConfigurationOverrides](#cfn-quicksight-template-sheetelementrenderingrule-configurationoverrides): {{
     SheetElementConfigurationOverrides}}
   [Expression](#cfn-quicksight-template-sheetelementrenderingrule-expression): {{String}}

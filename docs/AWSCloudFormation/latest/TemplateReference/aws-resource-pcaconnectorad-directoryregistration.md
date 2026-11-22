@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-pcaconnectorad-directoryregistration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::PCAConnectorAD::DirectoryRegistration",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-pcaconnectorad-directoryregistration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::PCAConnectorAD::DirectoryRegistration
 Properties:
   [DirectoryId](#cfn-pcaconnectorad-directoryregistration-directoryid): {{String}}

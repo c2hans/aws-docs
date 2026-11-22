@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-route53-recordset-aliastarget-syntax.json"></a>
 
-```
+```json
 {
   "[DNSName](#cfn-route53-recordset-aliastarget-dnsname)" : {{String}},
   "[EvaluateTargetHealth](#cfn-route53-recordset-aliastarget-evaluatetargethealth)" : {{Boolean}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-route53-recordset-aliastarget-syntax.yaml"></a>
 
-```
+```yaml
   [DNSName](#cfn-route53-recordset-aliastarget-dnsname): {{String}}
   [EvaluateTargetHealth](#cfn-route53-recordset-aliastarget-evaluatetargethealth): {{Boolean}}
   [HostedZoneId](#cfn-route53-recordset-aliastarget-hostedzoneid): {{String}}

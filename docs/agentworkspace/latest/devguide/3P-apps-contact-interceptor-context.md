@@ -8,7 +8,7 @@ Defines the invocation context that the contact interceptor methods receive.
 
 **Signature**
 
-```
+```typescript
 type ContactInterceptorContext = {
   contactId?: string;
 }

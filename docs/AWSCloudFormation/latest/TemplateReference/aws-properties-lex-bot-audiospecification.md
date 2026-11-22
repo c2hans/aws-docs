@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-audiospecification-syntax.json"></a>
 
-```
+```json
 {
   "[EndTimeoutMs](#cfn-lex-bot-audiospecification-endtimeoutms)" : {{Integer}},
   "[MaxLengthMs](#cfn-lex-bot-audiospecification-maxlengthms)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-audiospecification-syntax.yaml"></a>
 
-```
+```yaml
   [EndTimeoutMs](#cfn-lex-bot-audiospecification-endtimeoutms): {{Integer}}
   [MaxLengthMs](#cfn-lex-bot-audiospecification-maxlengthms): {{Integer}}
 ```

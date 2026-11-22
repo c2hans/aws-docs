@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-videoselectorcolorspacesettings-syntax.json"></a>
 
-```
+```json
 {
   "[Hdr10Settings](#cfn-medialive-channel-videoselectorcolorspacesettings-hdr10settings)" : {{Hdr10Settings}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-videoselectorcolorspacesettings-syntax.yaml"></a>
 
-```
+```yaml
   [Hdr10Settings](#cfn-medialive-channel-videoselectorcolorspacesettings-hdr10settings): {{
     Hdr10Settings}}
 ```

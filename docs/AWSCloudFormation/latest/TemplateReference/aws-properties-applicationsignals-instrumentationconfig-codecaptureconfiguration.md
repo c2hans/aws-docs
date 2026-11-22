@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationsignals-instrumentationconfig-codecaptureconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CaptureArguments](#cfn-applicationsignals-instrumentationconfig-codecaptureconfiguration-capturearguments)" : {{[ String, ... ]}},
   "[CaptureLimits](#cfn-applicationsignals-instrumentationconfig-codecaptureconfiguration-capturelimits)" : {{CaptureLimitsConfig}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationsignals-instrumentationconfig-codecaptureconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CaptureArguments](#cfn-applicationsignals-instrumentationconfig-codecaptureconfiguration-capturearguments): {{
     - String}}
   [CaptureLimits](#cfn-applicationsignals-instrumentationconfig-codecaptureconfiguration-capturelimits): {{

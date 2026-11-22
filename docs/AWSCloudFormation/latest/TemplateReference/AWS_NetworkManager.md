@@ -8,6 +8,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 **Resource types**
 + [AWS::NetworkManager::ConnectAttachment](aws-resource-networkmanager-connectattachment.md)
++ [AWS::NetworkManager::Connection](aws-resource-networkmanager-connection.md)
 + [AWS::NetworkManager::ConnectPeer](aws-resource-networkmanager-connectpeer.md)
 + [AWS::NetworkManager::ContextStore](aws-resource-networkmanager-contextstore.md)
 + [AWS::NetworkManager::ContextStoreAssociation](aws-resource-networkmanager-contextstoreassociation.md)

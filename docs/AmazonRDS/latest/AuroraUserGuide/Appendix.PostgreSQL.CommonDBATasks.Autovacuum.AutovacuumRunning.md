@@ -8,7 +8,7 @@ If you need to manually vacuum a table, make sure to determine if autovacuum is 
 
 Use the following query to determine if autovacuum is running, how long it has been running, and if it is waiting on another session.
 
-```
+```sql
 SELECT datname, usename, pid, state, wait_event, current_timestamp - xact_start AS xact_runtime, query
 FROM pg_stat_activity
 WHERE upper(query) LIKE '%VACUUM%'

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appsync-channelnamespace-handlerconfigs-syntax.json"></a>
 
-```
+```json
 {
   "[OnPublish](#cfn-appsync-channelnamespace-handlerconfigs-onpublish)" : {{HandlerConfig}},
   "[OnSubscribe](#cfn-appsync-channelnamespace-handlerconfigs-onsubscribe)" : {{HandlerConfig}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appsync-channelnamespace-handlerconfigs-syntax.yaml"></a>
 
-```
+```yaml
   [OnPublish](#cfn-appsync-channelnamespace-handlerconfigs-onpublish): {{
     HandlerConfig}}
   [OnSubscribe](#cfn-appsync-channelnamespace-handlerconfigs-onsubscribe): {{

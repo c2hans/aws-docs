@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-kinesisanalytics-application-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::KinesisAnalytics::Application",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-kinesisanalytics-application-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::KinesisAnalytics::Application
 Properties:
   [ApplicationCode](#cfn-kinesisanalytics-application-applicationcode): {{String}}
@@ -97,7 +97,7 @@ The following example demonstrates how to create and configure a Kinesis Data An
 #### YAML
 <a name="aws-resource-kinesisanalytics-application--examples--Creating_an_Amazon_Kinesis_Data_Analytics_Application--yaml"></a>
 
-```
+```yaml
 ---
 Description: "Sample KinesisAnalytics via CloudFormation"
 Resources:

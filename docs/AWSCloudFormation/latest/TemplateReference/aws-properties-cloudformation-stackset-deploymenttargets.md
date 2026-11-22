@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudformation-stackset-deploymenttargets-syntax.json"></a>
 
-```
+```json
 {
   "[AccountFilterType](#cfn-cloudformation-stackset-deploymenttargets-accountfiltertype)" : {{String}},
   "[Accounts](#cfn-cloudformation-stackset-deploymenttargets-accounts)" : {{[ String, ... ]}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudformation-stackset-deploymenttargets-syntax.yaml"></a>
 
-```
+```yaml
   [AccountFilterType](#cfn-cloudformation-stackset-deploymenttargets-accountfiltertype): {{String}}
   [Accounts](#cfn-cloudformation-stackset-deploymenttargets-accounts): {{
     - String}}

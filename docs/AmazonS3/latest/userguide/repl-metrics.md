@@ -32,7 +32,7 @@ This topic provides instructions for enabling S3 Replication metrics in your rep
 
 To enable replication metrics by using the AWS Command Line Interface (AWS CLI), you must add a replication configuration to the source bucket with `Metrics` enabled. In this example configuration, objects under the prefix `{{Tax}}` are replicated to the destination bucket `{{amzn-s3-demo-bucket}}`, and metrics are generated for those objects.
 
-```
+```json
 {
     "Rules": [
         {

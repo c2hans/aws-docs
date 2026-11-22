@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicruledestination-vpcdestinationproperties-syntax.json"></a>
 
-```
+```json
 {
   "[RoleArn](#cfn-iot-topicruledestination-vpcdestinationproperties-rolearn)" : {{String}},
   "[SecurityGroups](#cfn-iot-topicruledestination-vpcdestinationproperties-securitygroups)" : {{[ String, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicruledestination-vpcdestinationproperties-syntax.yaml"></a>
 
-```
+```yaml
   [RoleArn](#cfn-iot-topicruledestination-vpcdestinationproperties-rolearn): {{String}}
   [SecurityGroups](#cfn-iot-topicruledestination-vpcdestinationproperties-securitygroups): {{
     - String}}

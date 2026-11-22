@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelcard-metricdataitems-syntax.json"></a>
 
-```
+```json
 {
   "[MetricDataItems](#cfn-sagemaker-modelcard-metricdataitems-metricdataitems)" : {{SimpleMetric}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelcard-metricdataitems-syntax.yaml"></a>
 
-```
+```yaml
   [MetricDataItems](#cfn-sagemaker-modelcard-metricdataitems-metricdataitems): {{
     SimpleMetric}}
 ```

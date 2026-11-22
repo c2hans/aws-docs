@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-scte35spliceinserttimesignalapossettings-syntax.json"></a>
 
-```
+```json
 {
   "[AdAvailOffset](#cfn-medialive-channel-scte35spliceinserttimesignalapossettings-adavailoffset)" : {{Integer}},
   "[NoRegionalBlackoutFlag](#cfn-medialive-channel-scte35spliceinserttimesignalapossettings-noregionalblackoutflag)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-scte35spliceinserttimesignalapossettings-syntax.yaml"></a>
 
-```
+```yaml
   [AdAvailOffset](#cfn-medialive-channel-scte35spliceinserttimesignalapossettings-adavailoffset): {{Integer}}
   [NoRegionalBlackoutFlag](#cfn-medialive-channel-scte35spliceinserttimesignalapossettings-noregionalblackoutflag): {{String}}
   [WebDeliveryAllowedFlag](#cfn-medialive-channel-scte35spliceinserttimesignalapossettings-webdeliveryallowedflag): {{String}}

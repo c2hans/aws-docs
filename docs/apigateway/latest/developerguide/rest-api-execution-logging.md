@@ -64,7 +64,7 @@ You don't need to redeploy the API when you update stage settings.
 
 Use the `MethodSettings` property on the stage resource to enable execution logging.
 
-```
+```YAML
   TestStage:
     Type: AWS::ApiGateway::Stage
     Properties:

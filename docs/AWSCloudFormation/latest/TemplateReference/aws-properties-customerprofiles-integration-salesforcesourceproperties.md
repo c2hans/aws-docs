@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-integration-salesforcesourceproperties-syntax.json"></a>
 
-```
+```json
 {
   "[EnableDynamicFieldUpdate](#cfn-customerprofiles-integration-salesforcesourceproperties-enabledynamicfieldupdate)" : {{Boolean}},
   "[IncludeDeletedRecords](#cfn-customerprofiles-integration-salesforcesourceproperties-includedeletedrecords)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-integration-salesforcesourceproperties-syntax.yaml"></a>
 
-```
+```yaml
   [EnableDynamicFieldUpdate](#cfn-customerprofiles-integration-salesforcesourceproperties-enabledynamicfieldupdate): {{Boolean}}
   [IncludeDeletedRecords](#cfn-customerprofiles-integration-salesforcesourceproperties-includedeletedrecords): {{Boolean}}
   [Object](#cfn-customerprofiles-integration-salesforcesourceproperties-object): {{String}}

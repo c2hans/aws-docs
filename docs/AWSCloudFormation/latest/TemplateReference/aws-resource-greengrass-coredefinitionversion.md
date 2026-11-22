@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-greengrass-coredefinitionversion-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Greengrass::CoreDefinitionVersion",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-greengrass-coredefinitionversion-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Greengrass::CoreDefinitionVersion
 Properties:
   [CoreDefinitionId](#cfn-greengrass-coredefinitionversion-coredefinitionid): {{String}}
@@ -84,7 +84,7 @@ For another template example, see the [`AWS::Greengrass::Group`](https://docs.aw
 #### JSON
 <a name="aws-resource-greengrass-coredefinitionversion--examples--Create_a_Core_Definition_Version--json"></a>
 
-```
+```json
 {
     "Description": "Create CoreDefinition and associated CoreDefinitionVersion",
     "Parameters": {
@@ -155,7 +155,7 @@ For another template example, see the [`AWS::Greengrass::Group`](https://docs.aw
 #### YAML
 <a name="aws-resource-greengrass-coredefinitionversion--examples--Create_a_Core_Definition_Version--yaml"></a>
 
-```
+```yaml
 Description: Create CoreDefinition and associated CoreDefinitionVersion
 Parameters:
   CoreDefinitionName:

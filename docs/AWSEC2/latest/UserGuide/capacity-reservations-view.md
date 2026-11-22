@@ -27,13 +27,13 @@ Use the [describe-capacity-reservations](https://docs.aws.amazon.com/cli/latest/
 
 For example, the following command describes all Capacity Reservations.
 
-```
+```bash
 aws ec2 describe-capacity-reservations
 ```
 
 The following is example output.
 
-```
+```json
 {
     "CapacityReservations": [
         {
@@ -79,7 +79,7 @@ The following is example output.
 **To describe a Capacity Reservation**
 Use the [Get-EC2CapacityReservation](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2CapacityReservation.html) cmdlet.
 
-```
+```powershell
 Get-EC2CapacityReservation `
     -CapacityReservationId {{cr-1234abcd56EXAMPLE}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-featuregroup-ttlduration-syntax.json"></a>
 
-```
+```json
 {
   "[Unit](#cfn-sagemaker-featuregroup-ttlduration-unit)" : {{String}},
   "[Value](#cfn-sagemaker-featuregroup-ttlduration-value)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-featuregroup-ttlduration-syntax.yaml"></a>
 
-```
+```yaml
   [Unit](#cfn-sagemaker-featuregroup-ttlduration-unit): {{String}}
   [Value](#cfn-sagemaker-featuregroup-ttlduration-value): {{Integer}}
 ```

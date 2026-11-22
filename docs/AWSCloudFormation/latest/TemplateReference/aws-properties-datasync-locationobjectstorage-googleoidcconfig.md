@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datasync-locationobjectstorage-googleoidcconfig-syntax.json"></a>
 
-```
+```json
 {
   "[IdentityPoolName](#cfn-datasync-locationobjectstorage-googleoidcconfig-identitypoolname)" : {{String}},
   "[IdentityProviderName](#cfn-datasync-locationobjectstorage-googleoidcconfig-identityprovidername)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datasync-locationobjectstorage-googleoidcconfig-syntax.yaml"></a>
 
-```
+```yaml
   [IdentityPoolName](#cfn-datasync-locationobjectstorage-googleoidcconfig-identitypoolname): {{String}}
   [IdentityProviderName](#cfn-datasync-locationobjectstorage-googleoidcconfig-identityprovidername): {{String}}
   [ProjectName](#cfn-datasync-locationobjectstorage-googleoidcconfig-projectname): {{String}}

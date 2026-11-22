@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pinpoint-inapptemplate-defaultbuttonconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BackgroundColor](#cfn-pinpoint-inapptemplate-defaultbuttonconfiguration-backgroundcolor)" : {{String}},
   "[BorderRadius](#cfn-pinpoint-inapptemplate-defaultbuttonconfiguration-borderradius)" : {{Integer}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pinpoint-inapptemplate-defaultbuttonconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BackgroundColor](#cfn-pinpoint-inapptemplate-defaultbuttonconfiguration-backgroundcolor): {{String}}
   [BorderRadius](#cfn-pinpoint-inapptemplate-defaultbuttonconfiguration-borderradius): {{Integer}}
   [ButtonAction](#cfn-pinpoint-inapptemplate-defaultbuttonconfiguration-buttonaction): {{String}}

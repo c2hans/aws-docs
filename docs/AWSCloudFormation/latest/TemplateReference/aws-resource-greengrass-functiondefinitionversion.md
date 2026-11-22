@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-greengrass-functiondefinitionversion-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Greengrass::FunctionDefinitionVersion",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-greengrass-functiondefinitionversion-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Greengrass::FunctionDefinitionVersion
 Properties:
   [DefaultConfig](#cfn-greengrass-functiondefinitionversion-defaultconfig): {{
@@ -91,7 +91,7 @@ For an example of a complete template, see the [`AWS::Greengrass::Group`](https:
 #### JSON
 <a name="aws-resource-greengrass-functiondefinitionversion--examples--Function_Definition_Version_Snippet--json"></a>
 
-```
+```json
 "TestFunctionDefinition": {
     "Type": "AWS::Greengrass::FunctionDefinition",
     "Properties": {
@@ -157,7 +157,7 @@ For an example of a complete template, see the [`AWS::Greengrass::Group`](https:
 #### YAML
 <a name="aws-resource-greengrass-functiondefinitionversion--examples--Function_Definition_Version_Snippet--yaml"></a>
 
-```
+```yaml
 TestFunctionDefinition:
   Type: 'AWS::Greengrass::FunctionDefinition'
   Properties:

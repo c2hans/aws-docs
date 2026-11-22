@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-containergroupdefinition-containerenvironment-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-gamelift-containergroupdefinition-containerenvironment-name)" : {{String}},
   "[Value](#cfn-gamelift-containergroupdefinition-containerenvironment-value)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-containergroupdefinition-containerenvironment-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-gamelift-containergroupdefinition-containerenvironment-name): {{String}}
   [Value](#cfn-gamelift-containergroupdefinition-containerenvironment-value): {{String}}
 ```

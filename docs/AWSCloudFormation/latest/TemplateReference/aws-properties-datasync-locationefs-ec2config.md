@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datasync-locationefs-ec2config-syntax.json"></a>
 
-```
+```json
 {
   "[SecurityGroupArns](#cfn-datasync-locationefs-ec2config-securitygrouparns)" : {{[ String, ... ]}},
   "[SubnetArn](#cfn-datasync-locationefs-ec2config-subnetarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datasync-locationefs-ec2config-syntax.yaml"></a>
 
-```
+```yaml
   [SecurityGroupArns](#cfn-datasync-locationefs-ec2config-securitygrouparns): {{
     - String}}
   [SubnetArn](#cfn-datasync-locationefs-ec2config-subnetarn): {{String}}

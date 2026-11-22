@@ -12,7 +12,7 @@ For an example of creating a database, creating a table, and running a `SELECT` 
 ## Synopsis
 <a name="synopsis"></a>
 
-```
+```sql
 CREATE {DATABASE|SCHEMA} [IF NOT EXISTS] database_name
   [COMMENT 'database_comment']
   [LOCATION 'S3_loc']
@@ -39,11 +39,11 @@ Allows you to specify custom metadata properties for the database definition.
 ## Examples
 <a name="examples"></a>
 
-```
+```sql
 CREATE DATABASE clickstreams;
 ```
 
-```
+```sql
 CREATE DATABASE IF NOT EXISTS clickstreams
   COMMENT 'Site Foo clickstream data aggregates'
   LOCATION 's3://amzn-s3-demo-bucket/clickstreams/'
@@ -61,7 +61,7 @@ aws glue get-database --name {{<your-database-name>}}
 
 In JSON output, the result looks like the following:
 
-```
+```json
 {
     "Database": {
         "Name": "{{<your-database-name>}}",

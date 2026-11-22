@@ -77,7 +77,7 @@ aws autoscaling describe-auto-scaling-groups --auto-scaling-group-name {{my-asg}
 
 The following is example output, which provides details about the group and instances launched.
 
-```
+```json
 {
     "AutoScalingGroups": [
         {
@@ -161,7 +161,7 @@ aws autoscaling terminate-instance-in-auto-scaling-group \
 
 The following is example output, which provides details about the scaling activity.
 
-```
+```json
 {
     "Activities": [
         {
@@ -189,7 +189,7 @@ aws autoscaling terminate-instance-in-auto-scaling-group \
 
 The following is example output.
 
-```
+```json
 {
     "Activities": [
         {

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-connect-rule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Connect::Rule",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-connect-rule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Connect::Rule
 Properties:
   [Actions](#cfn-connect-rule-actions): {{
@@ -147,7 +147,7 @@ The following example specifies a rule resource for an Connect Customer instance
 #### JSON
 <a name="aws-resource-connect-rule--examples--Specify_a_rule_resource--json"></a>
 
-```
+```json
 {
     "Name": "ExampleRule",
     "InstanceArn": "arn:aws:connect:region-name:aws-account-id:instance/instance-arn",

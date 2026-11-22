@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-monitoringschedule-scheduleconfig-syntax.json"></a>
 
-```
+```json
 {
   "[DataAnalysisEndTime](#cfn-sagemaker-monitoringschedule-scheduleconfig-dataanalysisendtime)" : {{String}},
   "[DataAnalysisStartTime](#cfn-sagemaker-monitoringschedule-scheduleconfig-dataanalysisstarttime)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-monitoringschedule-scheduleconfig-syntax.yaml"></a>
 
-```
+```yaml
   [DataAnalysisEndTime](#cfn-sagemaker-monitoringschedule-scheduleconfig-dataanalysisendtime): {{String}}
   [DataAnalysisStartTime](#cfn-sagemaker-monitoringschedule-scheduleconfig-dataanalysisstarttime): {{String}}
   [ScheduleExpression](#cfn-sagemaker-monitoringschedule-scheduleconfig-scheduleexpression): {{String}}

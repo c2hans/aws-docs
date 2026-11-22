@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-aps-workspace-loggingfilter-syntax.json"></a>
 
-```
+```json
 {
   "[QspThreshold](#cfn-aps-workspace-loggingfilter-qspthreshold)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-aps-workspace-loggingfilter-syntax.yaml"></a>
 
-```
+```yaml
   [QspThreshold](#cfn-aps-workspace-loggingfilter-qspthreshold): {{Integer}}
 ```
 

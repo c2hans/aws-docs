@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackagev2-originendpoint-dashavailabilitystarttimeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[FixedAvailabilityStartTime](#cfn-mediapackagev2-originendpoint-dashavailabilitystarttimeconfiguration-fixedavailabilitystarttime)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackagev2-originendpoint-dashavailabilitystarttimeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [FixedAvailabilityStartTime](#cfn-mediapackagev2-originendpoint-dashavailabilitystarttimeconfiguration-fixedavailabilitystarttime): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityagent-integration-githubinput-syntax.json"></a>
 
-```
+```json
 {
   "[Code](#cfn-securityagent-integration-githubinput-code)" : {{String}},
   "[InstallationId](#cfn-securityagent-integration-githubinput-installationid)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityagent-integration-githubinput-syntax.yaml"></a>
 
-```
+```yaml
   [Code](#cfn-securityagent-integration-githubinput-code): {{String}}
   [InstallationId](#cfn-securityagent-integration-githubinput-installationid): {{String}}
   [OrganizationName](#cfn-securityagent-integration-githubinput-organizationname): {{String}}

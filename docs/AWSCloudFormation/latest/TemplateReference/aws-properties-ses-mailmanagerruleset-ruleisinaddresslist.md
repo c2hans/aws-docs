@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-mailmanagerruleset-ruleisinaddresslist-syntax.json"></a>
 
-```
+```json
 {
   "[AddressLists](#cfn-ses-mailmanagerruleset-ruleisinaddresslist-addresslists)" : {{[ String, ... ]}},
   "[Attribute](#cfn-ses-mailmanagerruleset-ruleisinaddresslist-attribute)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-mailmanagerruleset-ruleisinaddresslist-syntax.yaml"></a>
 
-```
+```yaml
   [AddressLists](#cfn-ses-mailmanagerruleset-ruleisinaddresslist-addresslists): {{
     - String}}
   [Attribute](#cfn-ses-mailmanagerruleset-ruleisinaddresslist-attribute): {{String}}

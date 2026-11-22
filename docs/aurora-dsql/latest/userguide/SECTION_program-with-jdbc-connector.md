@@ -70,7 +70,7 @@ To use the Aurora DSQL Connector for JDBC in your Java application, follow these
 
 1. Add the following dependencies to your Maven project:
 
-   ```
+   ```xml
    <dependencies>
        <!-- Aurora DSQL Connector for JDBC -->
        <dependency>
@@ -83,13 +83,13 @@ To use the Aurora DSQL Connector for JDBC in your Java application, follow these
 
    For Gradle projects, add this dependency:
 
-   ```
+   ```kotlin
    implementation("software.amazon.dsql:aurora-dsql-jdbc-connector:1.0.0")
    ```
 
 1. Create a basic connection to your Aurora DSQL cluster using the AWS DSQL PostgreSQL connector format:
 
-   ```
+   ```java
    import java.sql.Connection;
    import java.sql.DriverManager;
    import java.sql.ResultSet;
@@ -152,7 +152,7 @@ Enable logging for troubleshooting any issue you might experience while using th
 
 The connector uses the built-in logging system (java.util.logging) of Java. You can configure logging levels by creating a `logging.properties` file:
 
-```
+```properties
 # Set root logger level to INFO for clean output
 .level = INFO
 

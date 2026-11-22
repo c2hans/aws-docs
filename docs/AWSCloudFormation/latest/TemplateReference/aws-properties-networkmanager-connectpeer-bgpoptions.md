@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkmanager-connectpeer-bgpoptions-syntax.json"></a>
 
-```
+```json
 {
   "[PeerAsn](#cfn-networkmanager-connectpeer-bgpoptions-peerasn)" : {{Number}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkmanager-connectpeer-bgpoptions-syntax.yaml"></a>
 
-```
+```yaml
   [PeerAsn](#cfn-networkmanager-connectpeer-bgpoptions-peerasn): {{Number}}
 ```
 

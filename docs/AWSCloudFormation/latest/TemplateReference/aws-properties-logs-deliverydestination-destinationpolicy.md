@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-logs-deliverydestination-destinationpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[DeliveryDestinationName](#cfn-logs-deliverydestination-destinationpolicy-deliverydestinationname)" : {{String}},
   "[DeliveryDestinationPolicy](#cfn-logs-deliverydestination-destinationpolicy-deliverydestinationpolicy)" : {{Json}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-logs-deliverydestination-destinationpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [DeliveryDestinationName](#cfn-logs-deliverydestination-destinationpolicy-deliverydestinationname): {{String}}
   [DeliveryDestinationPolicy](#cfn-logs-deliverydestination-destinationpolicy-deliverydestinationpolicy): {{Json}}
 ```

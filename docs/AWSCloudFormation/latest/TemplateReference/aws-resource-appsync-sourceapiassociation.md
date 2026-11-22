@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-appsync-sourceapiassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppSync::SourceApiAssociation",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-appsync-sourceapiassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppSync::SourceApiAssociation
 Properties:
   [Description](#cfn-appsync-sourceapiassociation-description): {{String}}

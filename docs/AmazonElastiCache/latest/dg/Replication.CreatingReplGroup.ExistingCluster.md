@@ -100,7 +100,7 @@ aws elasticache create-cache-cluster ^
 
 Output from this command will look something like this.
 
-```
+```json
 {
     "ReplicationGroup": {
         "Status": "creating",

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-aiagent-tooloutputconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[OutputVariableNameOverride](#cfn-wisdom-aiagent-tooloutputconfiguration-outputvariablenameoverride)" : {{String}},
   "[SessionDataNamespace](#cfn-wisdom-aiagent-tooloutputconfiguration-sessiondatanamespace)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-aiagent-tooloutputconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [OutputVariableNameOverride](#cfn-wisdom-aiagent-tooloutputconfiguration-outputvariablenameoverride): {{String}}
   [SessionDataNamespace](#cfn-wisdom-aiagent-tooloutputconfiguration-sessiondatanamespace): {{String}}
 ```

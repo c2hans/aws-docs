@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-aps-scraper-scrapercomponent-syntax.json"></a>
 
-```
+```json
 {
   "[Config](#cfn-aps-scraper-scrapercomponent-config)" : {{ComponentConfig}},
   "[Type](#cfn-aps-scraper-scrapercomponent-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-aps-scraper-scrapercomponent-syntax.yaml"></a>
 
-```
+```yaml
   [Config](#cfn-aps-scraper-scrapercomponent-config): {{
     ComponentConfig}}
   [Type](#cfn-aps-scraper-scrapercomponent-type): {{String}}

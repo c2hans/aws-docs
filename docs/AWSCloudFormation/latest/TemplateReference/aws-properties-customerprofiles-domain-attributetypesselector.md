@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-domain-attributetypesselector-syntax.json"></a>
 
-```
+```json
 {
   "[Address](#cfn-customerprofiles-domain-attributetypesselector-address)" : {{[ String, ... ]}},
   "[AttributeMatchingModel](#cfn-customerprofiles-domain-attributetypesselector-attributematchingmodel)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-domain-attributetypesselector-syntax.yaml"></a>
 
-```
+```yaml
   [Address](#cfn-customerprofiles-domain-attributetypesselector-address): {{
     - String}}
   [AttributeMatchingModel](#cfn-customerprofiles-domain-attributetypesselector-attributematchingmodel): {{String}}

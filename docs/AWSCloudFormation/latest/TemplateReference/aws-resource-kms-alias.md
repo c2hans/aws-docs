@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-kms-alias-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::KMS::Alias",
   "Properties" : {
@@ -44,7 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-kms-alias-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::KMS::Alias
 Properties:
   [AliasName](#cfn-kms-alias-aliasname): {{String}}
@@ -101,7 +101,7 @@ The following examples create the `alias/exampleAlias` alias for a KMS key. The 
 #### JSON
 <a name="aws-resource-kms-alias--examples--Create_an_alias--json"></a>
 
-```
+```json
 {
     "myAlias": {
         "Type": "AWS::KMS::Alias",
@@ -118,7 +118,7 @@ The following examples create the `alias/exampleAlias` alias for a KMS key. The 
 #### YAML
 <a name="aws-resource-kms-alias--examples--Create_an_alias--yaml"></a>
 
-```
+```yaml
 myAlias:
   Type: 'AWS::KMS::Alias'
   Properties:

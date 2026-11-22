@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appstream-stack-urlredirectionconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AllowedUrls](#cfn-appstream-stack-urlredirectionconfig-allowedurls)" : {{[ String, ... ]}},
   "[DeniedUrls](#cfn-appstream-stack-urlredirectionconfig-deniedurls)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appstream-stack-urlredirectionconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AllowedUrls](#cfn-appstream-stack-urlredirectionconfig-allowedurls): {{
     - String}}
   [DeniedUrls](#cfn-appstream-stack-urlredirectionconfig-deniedurls): {{

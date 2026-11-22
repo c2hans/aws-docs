@@ -42,7 +42,7 @@ If the snapshots that make up the AMI are encrypted, or if your account is enabl
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -87,7 +87,7 @@ To store an AMI in an S3 bucket, start by creating a store image task. The time 
 **To create the store image task**
 Use the [create-store-image-task](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-store-image-task.html) command.
 
-```
+```bash
 aws ec2 create-store-image-task \
     --image-id {{ami-0abcdef1234567890}} \
     --bucket {{amzn-s3-demo-bucket}}
@@ -95,7 +95,7 @@ aws ec2 create-store-image-task \
 
 The following is example output.
 
-```
+```json
 {
   "ObjectKey": "ami-0abcdef1234567890.bin"
 }
@@ -104,7 +104,7 @@ The following is example output.
 **To describe the progress of the store image task**
 Use the [describe-store-image-tasks](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-store-image-tasks.html) command.
 
-```
+```bash
 aws ec2 describe-store-image-tasks \
     --image-ids{{ ami-0abcdef1234567890}} \
     --query StoreImageTaskResults[].StoreTaskState \
@@ -113,7 +113,7 @@ aws ec2 describe-store-image-tasks \
 
 The following is example output.
 
-```
+```bash
 InProgress
 ```
 
@@ -123,7 +123,7 @@ InProgress
 **To create the store image task**
 Use the [New-EC2StoreImageTask](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2StoreImageTask.html) cmdlet.
 
-```
+```powershell
 New-EC2StoreImageTask `
     -ImageId {{ami-0abcdef1234567890}} `
     -Bucket {{amzn-s3-demo-bucket}}
@@ -138,13 +138,13 @@ ObjectKey         : ami-0abcdef1234567890.bin
 **To describe the progress of the store image task**
 Use the [Get-EC2StoreImageTask](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2StoreImageTask.html) cmdlet.
 
-```
+```powershell
 (Get-EC2StoreImageTask -ImageId {{ami-0abcdef1234567890}}).StoreTaskState
 ```
 
 The following is example output.
 
-```
+```bash
 InProgress
 ```
 
@@ -161,7 +161,7 @@ You must specify a name for the restored AMI. The name must be unique for AMIs i
 **To create a restore image task**
 Use the [create-restore-image-task](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-restore-image-task.html) command.
 
-```
+```bash
 aws ec2 create-restore-image-task \
     --object-key {{ami-0abcdef1234567890}}.bin \
     --bucket {{amzn-s3-demo-bucket}} \
@@ -170,7 +170,7 @@ aws ec2 create-restore-image-task \
 
 The following is example output.
 
-```
+```json
 {
    "ImageId": "ami-1234567890abcdef0"
 }
@@ -182,7 +182,7 @@ The following is example output.
 **To create a restore image task**
 Use the [New-EC2RestoreImageTask](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2RestoreImageTask.html) cmdlet.
 
-```
+```powershell
 New-EC2RestoreImageTask `
     -ObjectKey {{ami-0abcdef1234567890}}.bin `
     -Bucket {{amzn-s3-demo-bucket}} `

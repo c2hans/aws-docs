@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotfleetwise-campaign-conditionbasedcollectionscheme-syntax.json"></a>
 
-```
+```json
 {
   "[ConditionLanguageVersion](#cfn-iotfleetwise-campaign-conditionbasedcollectionscheme-conditionlanguageversion)" : {{Integer}},
   "[Expression](#cfn-iotfleetwise-campaign-conditionbasedcollectionscheme-expression)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotfleetwise-campaign-conditionbasedcollectionscheme-syntax.yaml"></a>
 
-```
+```yaml
   [ConditionLanguageVersion](#cfn-iotfleetwise-campaign-conditionbasedcollectionscheme-conditionlanguageversion): {{Integer}}
   [Expression](#cfn-iotfleetwise-campaign-conditionbasedcollectionscheme-expression): {{String}}
   [MinimumTriggerIntervalMs](#cfn-iotfleetwise-campaign-conditionbasedcollectionscheme-minimumtriggerintervalms): {{Number}}

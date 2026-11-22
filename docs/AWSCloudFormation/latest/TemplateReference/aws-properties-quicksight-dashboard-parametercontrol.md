@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-parametercontrol-syntax.json"></a>
 
-```
+```json
 {
   "[DateTimePicker](#cfn-quicksight-dashboard-parametercontrol-datetimepicker)" : {{ParameterDateTimePickerControl}},
   "[Dropdown](#cfn-quicksight-dashboard-parametercontrol-dropdown)" : {{ParameterDropDownControl}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-parametercontrol-syntax.yaml"></a>
 
-```
+```yaml
   [DateTimePicker](#cfn-quicksight-dashboard-parametercontrol-datetimepicker): {{
     ParameterDateTimePickerControl}}
   [Dropdown](#cfn-quicksight-dashboard-parametercontrol-dropdown): {{

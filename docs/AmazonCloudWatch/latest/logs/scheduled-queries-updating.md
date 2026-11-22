@@ -45,7 +45,7 @@ You can update any aspect of a scheduled query, including the query string, sche
 
 1. Use the `UpdateScheduledQuery` action to modify scheduled query configuration:
 
-   ```
+   ```json
    {
        "identifier": "arn:aws:logs:us-east-1:111122223333:scheduled-query:5e0c0228-1c29-4d26-904f-59f1f1ba3c8f",
        "queryString": "fields @timestamp, @message | filter @message like /WARNING|ERROR/ | stats count() by bin(5m)",
@@ -56,7 +56,7 @@ You can update any aspect of a scheduled query, including the query string, sche
 
 1. To update multiple configuration parameters at once:
 
-   ```
+   ```json
    {
        "identifier": "arn:aws:logs:us-east-1:111122223333:scheduled-query:5e0c0228-1c29-4d26-904f-59f1f1ba3c8f",
        "queryString": "fields @timestamp, @message, @level | filter @level = 'ERROR'",

@@ -8,7 +8,7 @@ To specify a restart policy for a container in a task definition, within the con
 
 The following is a task definition using the Linux containers on Fargate that sets up a web server. The container definition includes the `restartPolicy` object, with `enabled` set to true to enable a restart policy for the container. The container must run for 180 seconds before it can be restarted and will not be restarted if it exits with the exit code `0`, which indicates success.
 
-```
+```json
 {
   "containerDefinitions": [
     {

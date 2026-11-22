@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-containerfleet-logconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[LogDestination](#cfn-gamelift-containerfleet-logconfiguration-logdestination)" : {{String}},
   "[LogGroupArn](#cfn-gamelift-containerfleet-logconfiguration-loggrouparn)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-containerfleet-logconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [LogDestination](#cfn-gamelift-containerfleet-logconfiguration-logdestination): {{String}}
   [LogGroupArn](#cfn-gamelift-containerfleet-logconfiguration-loggrouparn): {{String}}
   [S3BucketName](#cfn-gamelift-containerfleet-logconfiguration-s3bucketname): {{String}}

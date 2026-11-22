@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-singleaxisoptions-syntax.json"></a>
 
-```
+```json
 {
   "[YAxisOptions](#cfn-quicksight-analysis-singleaxisoptions-yaxisoptions)" : {{YAxisOptions}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-singleaxisoptions-syntax.yaml"></a>
 
-```
+```yaml
   [YAxisOptions](#cfn-quicksight-analysis-singleaxisoptions-yaxisoptions): {{
     YAxisOptions}}
 ```

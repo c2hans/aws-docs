@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-buildtimesettings-syntax.json"></a>
 
-```
+```json
 {
   "[DescriptiveBotBuilderSpecification](#cfn-lex-bot-buildtimesettings-descriptivebotbuilderspecification)" : {{DescriptiveBotBuilderSpecification}},
   "[SampleUtteranceGenerationSpecification](#cfn-lex-bot-buildtimesettings-sampleutterancegenerationspecification)" : {{SampleUtteranceGenerationSpecification}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-buildtimesettings-syntax.yaml"></a>
 
-```
+```yaml
   [DescriptiveBotBuilderSpecification](#cfn-lex-bot-buildtimesettings-descriptivebotbuilderspecification): {{
     DescriptiveBotBuilderSpecification}}
   [SampleUtteranceGenerationSpecification](#cfn-lex-bot-buildtimesettings-sampleutterancegenerationspecification): {{

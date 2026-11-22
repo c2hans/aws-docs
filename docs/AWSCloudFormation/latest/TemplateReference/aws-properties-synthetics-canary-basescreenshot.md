@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-synthetics-canary-basescreenshot-syntax.json"></a>
 
-```
+```json
 {
   "[IgnoreCoordinates](#cfn-synthetics-canary-basescreenshot-ignorecoordinates)" : {{[ String, ... ]}},
   "[ScreenshotName](#cfn-synthetics-canary-basescreenshot-screenshotname)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-synthetics-canary-basescreenshot-syntax.yaml"></a>
 
-```
+```yaml
   [IgnoreCoordinates](#cfn-synthetics-canary-basescreenshot-ignorecoordinates): {{
     - String}}
   [ScreenshotName](#cfn-synthetics-canary-basescreenshot-screenshotname): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-datasource-oauthparameters-syntax.json"></a>
 
-```
+```json
 {
   "[IdentityProviderResourceUri](#cfn-quicksight-datasource-oauthparameters-identityproviderresourceuri)" : {{String}},
   "[IdentityProviderVpcConnectionProperties](#cfn-quicksight-datasource-oauthparameters-identityprovidervpcconnectionproperties)" : {{VpcConnectionProperties}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-datasource-oauthparameters-syntax.yaml"></a>
 
-```
+```yaml
   [IdentityProviderResourceUri](#cfn-quicksight-datasource-oauthparameters-identityproviderresourceuri): {{String}}
   [IdentityProviderVpcConnectionProperties](#cfn-quicksight-datasource-oauthparameters-identityprovidervpcconnectionproperties): {{
     VpcConnectionProperties}}

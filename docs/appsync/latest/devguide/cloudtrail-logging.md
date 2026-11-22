@@ -86,7 +86,7 @@ The `requestID` isn't an authoritative unique ID for logs emitted from AWS AppSy
 
 The following example CloudTrail log entry demonstrates the `CreateApiKey` operation.
 
-```
+```default
 {
   "Records": [{
     "eventVersion": "1.05",
@@ -125,7 +125,7 @@ The following example CloudTrail log entry demonstrates the `CreateApiKey` opera
 
 The following example CloudTrail log entry demonstrates the `ListApiKeys` operation.
 
-```
+```default
 {
   "Records": [{
     "eventVersion": "1.05",
@@ -170,7 +170,7 @@ The following example CloudTrail log entry demonstrates the `ListApiKeys` operat
 
 The following example CloudTrail log entry demonstrates the `DeleteApiKey` operation.
 
-```
+```default
 {
   "Records": [{
     "eventVersion": "1.05",

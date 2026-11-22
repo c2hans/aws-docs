@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-wisdom-aiagent-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Wisdom::AIAgent",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-wisdom-aiagent-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Wisdom::AIAgent
 Properties:
   [AssistantId](#cfn-wisdom-aiagent-assistantid): {{String}}

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-backupgateway-hypervisor-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::BackupGateway::Hypervisor",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-backupgateway-hypervisor-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::BackupGateway::Hypervisor
 Properties:
   [Host](#cfn-backupgateway-hypervisor-host): {{String}}

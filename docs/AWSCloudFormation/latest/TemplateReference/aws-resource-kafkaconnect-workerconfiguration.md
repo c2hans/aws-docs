@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-kafkaconnect-workerconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::KafkaConnect::WorkerConfiguration",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-kafkaconnect-workerconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::KafkaConnect::WorkerConfiguration
 Properties:
   [Description](#cfn-kafkaconnect-workerconfiguration-description): {{String}}

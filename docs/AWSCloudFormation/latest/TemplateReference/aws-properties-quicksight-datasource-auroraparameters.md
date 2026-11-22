@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-datasource-auroraparameters-syntax.json"></a>
 
-```
+```json
 {
   "[Database](#cfn-quicksight-datasource-auroraparameters-database)" : {{String}},
   "[Host](#cfn-quicksight-datasource-auroraparameters-host)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-datasource-auroraparameters-syntax.yaml"></a>
 
-```
+```yaml
   [Database](#cfn-quicksight-datasource-auroraparameters-database): {{String}}
   [Host](#cfn-quicksight-datasource-auroraparameters-host): {{String}}
   [Port](#cfn-quicksight-datasource-auroraparameters-port): {{Number}}

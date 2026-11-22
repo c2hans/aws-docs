@@ -148,7 +148,7 @@ Deletes an ActiveMQ user.
 #### POST schema
 <a name="brokers-broker-id-users-username-request-body-post-example"></a>
 
-```
+```json
 {
   "password": "string",
   "replicationUser": boolean,
@@ -162,7 +162,7 @@ Deletes an ActiveMQ user.
 #### PUT schema
 <a name="brokers-broker-id-users-username-request-body-put-example"></a>
 
-```
+```json
 {
   "password": "string",
   "replicationUser": boolean,
@@ -179,7 +179,7 @@ Deletes an ActiveMQ user.
 #### DescribeUserOutput schema
 <a name="brokers-broker-id-users-username-response-body-describeuseroutput-example"></a>
 
-```
+```json
 {
   "brokerId": "string",
   "replicationUser": boolean,
@@ -201,7 +201,7 @@ Deletes an ActiveMQ user.
 #### Error schema
 <a name="brokers-broker-id-users-username-response-body-error-example"></a>
 
-```
+```json
 {
   "errorAttribute": "string",
   "message": "string"

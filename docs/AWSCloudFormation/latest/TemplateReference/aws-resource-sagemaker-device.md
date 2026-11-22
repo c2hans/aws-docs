@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sagemaker-device-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SageMaker::Device",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sagemaker-device-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SageMaker::Device
 Properties:
   [Device](#cfn-sagemaker-device-device): {{

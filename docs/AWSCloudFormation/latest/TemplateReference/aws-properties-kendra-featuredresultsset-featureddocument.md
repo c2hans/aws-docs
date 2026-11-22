@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-featuredresultsset-featureddocument-syntax.json"></a>
 
-```
+```json
 {
   "[Id](#cfn-kendra-featuredresultsset-featureddocument-id)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-featuredresultsset-featureddocument-syntax.yaml"></a>
 
-```
+```yaml
   [Id](#cfn-kendra-featuredresultsset-featureddocument-id): {{String}}
 ```
 

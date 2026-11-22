@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-anomalydetector-metricstat-syntax.json"></a>
 
-```
+```json
 {
   "[Metric](#cfn-cloudwatch-anomalydetector-metricstat-metric)" : {{Metric}},
   "[Period](#cfn-cloudwatch-anomalydetector-metricstat-period)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-anomalydetector-metricstat-syntax.yaml"></a>
 
-```
+```yaml
   [Metric](#cfn-cloudwatch-anomalydetector-metricstat-metric): {{
     Metric}}
   [Period](#cfn-cloudwatch-anomalydetector-metricstat-period): {{Integer}}

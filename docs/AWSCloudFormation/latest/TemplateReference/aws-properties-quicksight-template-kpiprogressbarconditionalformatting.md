@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-kpiprogressbarconditionalformatting-syntax.json"></a>
 
-```
+```json
 {
   "[ForegroundColor](#cfn-quicksight-template-kpiprogressbarconditionalformatting-foregroundcolor)" : {{ConditionalFormattingColor}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-kpiprogressbarconditionalformatting-syntax.yaml"></a>
 
-```
+```yaml
   [ForegroundColor](#cfn-quicksight-template-kpiprogressbarconditionalformatting-foregroundcolor): {{
     ConditionalFormattingColor}}
 ```

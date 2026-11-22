@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-logs-resourcepolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Logs::ResourcePolicy",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-logs-resourcepolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Logs::ResourcePolicy
 Properties:
   [PolicyDocument](#cfn-logs-resourcepolicy-policydocument): {{Json}}
@@ -78,7 +78,7 @@ The following example creates a resource policy that allows Route 53 to write l
 #### JSON
 <a name="aws-resource-logs-resourcepolicy--examples--Resource_policy_example--json"></a>
 
-```
+```json
 {
   "Type": "AWS::Logs::ResourcePolicy",
   "Properties": {
@@ -91,7 +91,7 @@ The following example creates a resource policy that allows Route 53 to write l
 #### YAML
 <a name="aws-resource-logs-resourcepolicy--examples--Resource_policy_example--yaml"></a>
 
-```
+```yaml
   Type: AWS::Logs::ResourcePolicy
   Properties:
     PolicyName: "MyResourcePolicy"

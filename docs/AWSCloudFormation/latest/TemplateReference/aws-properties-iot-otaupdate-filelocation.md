@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-otaupdate-filelocation-syntax.json"></a>
 
-```
+```json
 {
   "[S3Location](#cfn-iot-otaupdate-filelocation-s3location)" : {{S3Location}},
   "[Stream](#cfn-iot-otaupdate-filelocation-stream)" : {{Stream}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-otaupdate-filelocation-syntax.yaml"></a>
 
-```
+```yaml
   [S3Location](#cfn-iot-otaupdate-filelocation-s3location): {{
     S3Location}}
   [Stream](#cfn-iot-otaupdate-filelocation-stream): {{

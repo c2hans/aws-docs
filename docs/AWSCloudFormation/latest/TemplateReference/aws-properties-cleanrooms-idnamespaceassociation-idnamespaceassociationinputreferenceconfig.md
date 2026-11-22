@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-idnamespaceassociation-idnamespaceassociationinputreferenceconfig-syntax.json"></a>
 
-```
+```json
 {
   "[InputReferenceArn](#cfn-cleanrooms-idnamespaceassociation-idnamespaceassociationinputreferenceconfig-inputreferencearn)" : {{String}},
   "[ManageResourcePolicies](#cfn-cleanrooms-idnamespaceassociation-idnamespaceassociationinputreferenceconfig-manageresourcepolicies)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-idnamespaceassociation-idnamespaceassociationinputreferenceconfig-syntax.yaml"></a>
 
-```
+```yaml
   [InputReferenceArn](#cfn-cleanrooms-idnamespaceassociation-idnamespaceassociationinputreferenceconfig-inputreferencearn): {{String}}
   [ManageResourcePolicies](#cfn-cleanrooms-idnamespaceassociation-idnamespaceassociationinputreferenceconfig-manageresourcepolicies): {{Boolean}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-slotvalueregexfilter-syntax.json"></a>
 
-```
+```json
 {
   "[Pattern](#cfn-lex-bot-slotvalueregexfilter-pattern)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-slotvalueregexfilter-syntax.yaml"></a>
 
-```
+```yaml
   [Pattern](#cfn-lex-bot-slotvalueregexfilter-pattern): {{String}}
 ```
 

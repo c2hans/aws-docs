@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-acmpca-certificate-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ACMPCA::Certificate",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-acmpca-certificate-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ACMPCA::Certificate
 Properties:
   [ApiPassthrough](#cfn-acmpca-certificate-apipassthrough): {{

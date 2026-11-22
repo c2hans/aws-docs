@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-forecast-dataset-schema-syntax.json"></a>
 
-```
+```json
 {
   "[Attributes](#cfn-forecast-dataset-schema-attributes)" : {{[ AttributesItems, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-forecast-dataset-schema-syntax.yaml"></a>
 
-```
+```yaml
   [Attributes](#cfn-forecast-dataset-schema-attributes): {{
     - AttributesItems}}
 ```

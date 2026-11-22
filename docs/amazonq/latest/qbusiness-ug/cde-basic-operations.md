@@ -138,7 +138,7 @@ aws qbusiness create-data-source \
 
 **To configure basic data manipulation to remove customer identification numbers**
 
-```
+```python
 import boto3
 from botocore.exceptions import ClientError
 import pprint
@@ -241,7 +241,7 @@ print("Program ends.")
 
 **To configure basic data manipulation to remove customer identification numbers**
 
-```
+```java
 package com.amazonaws.qbusiness;
 
 import java.util.concurrent.TimeUnit;

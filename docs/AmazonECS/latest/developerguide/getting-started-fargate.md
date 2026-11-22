@@ -69,7 +69,7 @@ A task definition is like a blueprint for your application. Each time you launch
 
 1. Copy and paste the following example task definition into the box and then choose **Save**.
 
-   ```
+   ```JSON
    {
        "family": "sample-fargate",
        "networkMode": "awsvpc",

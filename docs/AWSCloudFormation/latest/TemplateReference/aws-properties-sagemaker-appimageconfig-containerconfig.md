@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-appimageconfig-containerconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ContainerArguments](#cfn-sagemaker-appimageconfig-containerconfig-containerarguments)" : {{[ String, ... ]}},
   "[ContainerEntrypoint](#cfn-sagemaker-appimageconfig-containerconfig-containerentrypoint)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-appimageconfig-containerconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ContainerArguments](#cfn-sagemaker-appimageconfig-containerconfig-containerarguments): {{
     - String}}
   [ContainerEntrypoint](#cfn-sagemaker-appimageconfig-containerconfig-containerentrypoint): {{

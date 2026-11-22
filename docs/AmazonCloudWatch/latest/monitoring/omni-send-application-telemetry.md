@@ -42,7 +42,7 @@ The instance role needs `CloudWatchAgentServerPolicy`, which covers metrics, log
 ------
 #### [ Install the agent ]
 
-```
+```bash
 # 1. Connect (SSH, or Session Manager — no key or open port needed)
 aws ssm start-session --target {{instance-id}}
 
@@ -66,7 +66,7 @@ A manual install does not scale. New or auto-replaced instances launch without a
 ------
 #### [ CDK TypeScript ]
 
-```
+```typescript
 import { Role, ServicePrincipal, ManagedPolicy, InstanceProfile } from 'aws-cdk-lib/aws-iam';
 import { CfnAssociation } from 'aws-cdk-lib/aws-ssm';
 
@@ -125,7 +125,7 @@ resource "aws_instance" "app" {
 ------
 #### [ CloudFormation ]
 
-```
+```yaml
 Resources:
   OmniEC2TelemetryRole:
     Type: AWS::IAM::Role
@@ -170,7 +170,7 @@ The application container must depend on the agent container with condition `STA
 ------
 #### [ Setup script ]
 
-```
+```bash
 curl -fsSL https://raw.githubusercontent.com/aws/amazon-cloudwatch-agent/main/scripts/aws/setup.sh | \
   CWAGENT_PLATFORM=aws_ecs \
   CWAGENT_AWS_REGION=<region> \
@@ -183,7 +183,7 @@ curl -fsSL https://raw.githubusercontent.com/aws/amazon-cloudwatch-agent/main/sc
 ------
 #### [ CDK TypeScript ]
 
-```
+```typescript
 const agent = taskDef.addContainer('cwagent', {
   image: ecs.ContainerImage.fromRegistry('public.ecr.aws/cloudwatch-agent/cloudwatch-agent:latest'),
   environment: { CW_CONFIG_CONTENT: JSON.stringify({ opentelemetry: { collect: { otlp: {} } } }) },
@@ -196,7 +196,7 @@ taskDef.taskRole.addManagedPolicy(ManagedPolicy.fromAwsManagedPolicyName('CloudW
 ------
 #### [ CDK Python ]
 
-```
+```python
 agent = task_def.add_container("cwagent",
     image=ecs.ContainerImage.from_registry("public.ecr.aws/cloudwatch-agent/cloudwatch-agent:latest"),
     environment={"CW_CONFIG_CONTENT": json.dumps({"opentelemetry": {"collect": {"otlp": {}}}})},
@@ -224,7 +224,7 @@ container_definitions = jsonencode([
 ------
 #### [ CloudFormation ]
 
-```
+```yaml
 ContainerDefinitions:
   - Name: cwagent
     Image: public.ecr.aws/cloudwatch-agent/cloudwatch-agent:latest
@@ -244,7 +244,7 @@ For the agent configuration reference, see [Amazon CloudWatch agent](https://doc
 
 On Amazon EKS, you install the CloudWatch Observability add-on with OTLP enabled and give its agent credentials, then continue to Step 2. The add-on runs the agent as a DaemonSet and exposes a `cloudwatch-agent` Service in the `amazon-cloudwatch` namespace; your pods send OTLP to that Service over cluster DNS, not to `localhost`. The add-on is installed with the AWS CLI regardless of how you deploy your application, so there is one installation path here.
 
-```
+```bash
 curl -fsSL https://raw.githubusercontent.com/aws/amazon-cloudwatch-agent/main/scripts/aws/setup.sh | \
   CWAGENT_PLATFORM=aws_eks \
   CWAGENT_K8S_CLUSTER_NAME=<my-cluster> \
@@ -257,7 +257,7 @@ curl -fsSL https://raw.githubusercontent.com/aws/amazon-cloudwatch-agent/main/sc
 Three settings must be right or telemetry never arrives, with no error in the agent log:
 + The OTLP receiver must be bound to `0.0.0.0`, not the default `localhost`, or it refuses cross-pod traffic. If application OTLP is refused after the script runs, apply the override and restart the DaemonSet:
 
-```
+```bash
 aws eks update-addon --cluster-name <my-cluster> --addon-name amazon-cloudwatch-observability \
   --configuration-values '{"agent":{"config":{"opentelemetry":{"collect":{"otlp":{"grpc_endpoint":"0.0.0.0:4317","http_endpoint":"0.0.0.0:4318"}}}}}}'
 kubectl -n amazon-cloudwatch rollout restart daemonset/cloudwatch-agent
@@ -311,7 +311,7 @@ On Amazon EC2, set these in the application's service unit or start script, for 
 ------
 #### [ Python, Java, .NET, Go ]
 
-```
+```bash
 OTEL_SERVICE_NAME=<checkout-api>
 OTEL_RESOURCE_ATTRIBUTES=service.namespace=<checkout>
 OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:4318
@@ -323,7 +323,7 @@ OTEL_LOGS_EXPORTER=otlp
 ------
 #### [ Node.js ]
 
-```
+```bash
 OTEL_SERVICE_NAME=<checkout-api>
 OTEL_RESOURCE_ATTRIBUTES=service.namespace=<checkout>
 OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:4317
@@ -342,7 +342,7 @@ On Amazon ECS, set these in the application container's `environment` block:
 ------
 #### [ Python, Java, .NET, Go ]
 
-```
+```bash
 OTEL_SERVICE_NAME=<checkout-api>
 OTEL_RESOURCE_ATTRIBUTES=service.namespace=<checkout>
 OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:4318
@@ -354,7 +354,7 @@ OTEL_LOGS_EXPORTER=otlp
 ------
 #### [ Node.js ]
 
-```
+```bash
 OTEL_SERVICE_NAME=<checkout-api>
 OTEL_RESOURCE_ATTRIBUTES=service.namespace=<checkout>
 OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:4317
@@ -373,7 +373,7 @@ On Amazon EKS, set these in the container's `env` block in the pod spec:
 ------
 #### [ Python, Java, .NET, Go ]
 
-```
+```bash
 OTEL_SERVICE_NAME=<checkout-api>
 OTEL_RESOURCE_ATTRIBUTES=service.namespace=<checkout>
 OTEL_EXPORTER_OTLP_ENDPOINT=http://cloudwatch-agent.amazon-cloudwatch.svc.cluster.local:4318
@@ -385,7 +385,7 @@ OTEL_LOGS_EXPORTER=otlp
 ------
 #### [ Node.js ]
 
-```
+```bash
 OTEL_SERVICE_NAME=<checkout-api>
 OTEL_RESOURCE_ATTRIBUTES=service.namespace=<checkout>
 OTEL_EXPORTER_OTLP_ENDPOINT=http://cloudwatch-agent.amazon-cloudwatch.svc.cluster.local:4317
@@ -404,7 +404,7 @@ On an Azure VM, set these in the application's service unit or start script:
 ------
 #### [ Python, Java, .NET, Go ]
 
-```
+```bash
 OTEL_SERVICE_NAME=<checkout-api>
 OTEL_RESOURCE_ATTRIBUTES=service.namespace=<checkout>
 OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:4318
@@ -416,7 +416,7 @@ OTEL_LOGS_EXPORTER=otlp
 ------
 #### [ Node.js ]
 
-```
+```bash
 OTEL_SERVICE_NAME=<checkout-api>
 OTEL_RESOURCE_ATTRIBUTES=service.namespace=<checkout>
 OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:4317
@@ -435,7 +435,7 @@ On Azure Kubernetes Service, set these in the container's `env` block in the pod
 ------
 #### [ Python, Java, .NET, Go ]
 
-```
+```bash
 OTEL_SERVICE_NAME=<checkout-api>
 OTEL_RESOURCE_ATTRIBUTES=service.namespace=<checkout>
 OTEL_EXPORTER_OTLP_ENDPOINT=http://cloudwatch-agent.amazon-cloudwatch.svc.cluster.local:4318
@@ -447,7 +447,7 @@ OTEL_LOGS_EXPORTER=otlp
 ------
 #### [ Node.js ]
 
-```
+```bash
 OTEL_SERVICE_NAME=<checkout-api>
 OTEL_RESOURCE_ATTRIBUTES=service.namespace=<checkout>
 OTEL_EXPORTER_OTLP_ENDPOINT=http://cloudwatch-agent.amazon-cloudwatch.svc.cluster.local:4317
@@ -466,7 +466,7 @@ On a Google Compute Engine instance, set these in the application's service unit
 ------
 #### [ Python, Java, .NET, Go ]
 
-```
+```bash
 OTEL_SERVICE_NAME=<checkout-api>
 OTEL_RESOURCE_ATTRIBUTES=service.namespace=<checkout>
 OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:4318
@@ -478,7 +478,7 @@ OTEL_LOGS_EXPORTER=otlp
 ------
 #### [ Node.js ]
 
-```
+```bash
 OTEL_SERVICE_NAME=<checkout-api>
 OTEL_RESOURCE_ATTRIBUTES=service.namespace=<checkout>
 OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:4317
@@ -497,7 +497,7 @@ On Google Kubernetes Engine, set these in the container's `env` block in the pod
 ------
 #### [ Python, Java, .NET, Go ]
 
-```
+```bash
 OTEL_SERVICE_NAME=<checkout-api>
 OTEL_RESOURCE_ATTRIBUTES=service.namespace=<checkout>
 OTEL_EXPORTER_OTLP_ENDPOINT=http://cloudwatch-agent.amazon-cloudwatch.svc.cluster.local:4318
@@ -509,7 +509,7 @@ OTEL_LOGS_EXPORTER=otlp
 ------
 #### [ Node.js ]
 
-```
+```bash
 OTEL_SERVICE_NAME=<checkout-api>
 OTEL_RESOURCE_ATTRIBUTES=service.namespace=<checkout>
 OTEL_EXPORTER_OTLP_ENDPOINT=http://cloudwatch-agent.amazon-cloudwatch.svc.cluster.local:4317
@@ -586,7 +586,7 @@ Choose your language. The choice applies to every code sample in this step and i
 ------
 #### [ Python ]
 
-```
+```bash
 pip install opentelemetry-distro opentelemetry-exporter-otlp
 opentelemetry-bootstrap -a install
 ```
@@ -596,7 +596,7 @@ opentelemetry-bootstrap -a install
 ------
 #### [ Node.js ]
 
-```
+```bash
 npm install @opentelemetry/sdk-node @opentelemetry/auto-instrumentations-node \
   @opentelemetry/exporter-trace-otlp-grpc @opentelemetry/api @opentelemetry/api-logs
 ```
@@ -604,7 +604,7 @@ npm install @opentelemetry/sdk-node @opentelemetry/auto-instrumentations-node \
 ------
 #### [ Java ]
 
-```
+```bash
 curl -L -o opentelemetry-javaagent.jar \
   https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent.jar
 ```
@@ -613,7 +613,7 @@ curl -L -o opentelemetry-javaagent.jar \
 ------
 #### [ .NET ]
 
-```
+```bash
 # Console application
 dotnet add package OpenTelemetry
 dotnet add package OpenTelemetry.Exporter.OpenTelemetryProtocol
@@ -628,7 +628,7 @@ dotnet add package OpenTelemetry.Instrumentation.Http
 ------
 #### [ Go ]
 
-```
+```bash
 go get go.opentelemetry.io/otel \
   go.opentelemetry.io/otel/sdk \
   go.opentelemetry.io/otel/sdk/metric \
@@ -666,7 +666,7 @@ Run your application under the auto-instrumentation agent for its language. Fram
 ------
 #### [ Python ]
 
-```
+```bash
 opentelemetry-instrument python <app.py>
 # FastAPI
 opentelemetry-instrument uvicorn <app:app> --host 0.0.0.0 --port 8000
@@ -678,28 +678,28 @@ opentelemetry-instrument uvicorn <app:app> --host 0.0.0.0 --port 8000
 ------
 #### [ Node.js ]
 
-```
+```bash
 node --require @opentelemetry/auto-instrumentations-node/register <app.js>
 ```
 
 ------
 #### [ Java ]
 
-```
+```bash
 java -javaagent:./opentelemetry-javaagent.jar -jar <app.jar>
 ```
 
 ------
 #### [ .NET ]
 
-```
+```bash
 # ASP.NET Core or gRPC: install and enable the profiler
 curl -sSfL https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/latest/download/otel-dotnet-auto-install.sh -o install.sh && sh install.sh
 . $HOME/.otel-dotnet-auto/instrument.sh
 dotnet <MyService.dll>
 ```
 
-```
+```csharp
 // Console application: bootstrap once at startup
 using var tracerProvider = Sdk.CreateTracerProviderBuilder().AddSource("checkout").AddOtlpExporter().Build();
 using var meterProvider  = Sdk.CreateMeterProviderBuilder().AddMeter("checkout").AddOtlpExporter().Build();
@@ -710,7 +710,7 @@ using var meterProvider  = Sdk.CreateMeterProviderBuilder().AddMeter("checkout")
 
 The following Go code example initializes the SDK once at startup. Save it in your application as `otel.go`.
 
-```
+```go
 package main
 
 import (
@@ -791,7 +791,7 @@ Set business attributes on the active span, mark your entry span as a server spa
 ------
 #### [ Python ]
 
-```
+```python
 from opentelemetry import trace, metrics
 from opentelemetry.trace import SpanKind
 
@@ -813,7 +813,7 @@ def place_order(cart):
 ------
 #### [ Node.js ]
 
-```
+```typescript
 const { trace, metrics } = require('@opentelemetry/api');
 const { logs } = require('@opentelemetry/api-logs');
 const orders = metrics.getMeter('checkout').createCounter('orders.placed');
@@ -835,7 +835,7 @@ function placeOrder(cart) {
 ------
 #### [ Java ]
 
-```
+```java
 static final LongCounter ORDERS =
     GlobalOpenTelemetry.getMeter("checkout").counterBuilder("orders.placed").build();
 
@@ -855,7 +855,7 @@ public void placeOrder(List<Item> cart) {
 ------
 #### [ .NET ]
 
-```
+```csharp
 static readonly Meter Meter = new("checkout");
 static readonly Counter<long> Orders = Meter.CreateCounter<long>("orders.placed");
 
@@ -872,7 +872,7 @@ Orders.Add(1);
 ------
 #### [ Go ]
 
-```
+```go
 import (
     "context"
     "log/slog"

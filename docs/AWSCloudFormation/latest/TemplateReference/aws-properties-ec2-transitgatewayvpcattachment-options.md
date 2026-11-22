@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-transitgatewayvpcattachment-options-syntax.json"></a>
 
-```
+```json
 {
   "[ApplianceModeSupport](#cfn-ec2-transitgatewayvpcattachment-options-appliancemodesupport)" : {{String}},
   "[DnsSupport](#cfn-ec2-transitgatewayvpcattachment-options-dnssupport)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-transitgatewayvpcattachment-options-syntax.yaml"></a>
 
-```
+```yaml
   [ApplianceModeSupport](#cfn-ec2-transitgatewayvpcattachment-options-appliancemodesupport): {{String}}
   [DnsSupport](#cfn-ec2-transitgatewayvpcattachment-options-dnssupport): {{String}}
   [Ipv6Support](#cfn-ec2-transitgatewayvpcattachment-options-ipv6support): {{String}}

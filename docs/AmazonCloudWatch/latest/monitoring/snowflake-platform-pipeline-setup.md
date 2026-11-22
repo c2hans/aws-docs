@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/snowf
 
 In the following example, replace {{secret-arn}}, {{secret-region}}, {{account-identifier}}, {{role-name}}, and {{log-group-name}} with your own values. The following YAML pipeline configuration collects audit data from Snowflake `ACCOUNT_USAGE` views, maps it to OCSF, and sends it to a CloudWatch Logs log group:
 
-```
+```yaml
 extension:
   aws:
     secrets:

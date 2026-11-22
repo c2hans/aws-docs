@@ -12,7 +12,7 @@ To use EC2Launch with IMDSv2, the version must be 1.3.2002730 or later.
 
 You can use the following Windows PowerShell command to verify the installed version of EC2Launch.
 
-```
+```powershell
 Test-ModuleManifest -Path "C:\ProgramData\Amazon\EC2-Windows\Launch\Module\Ec2Launch.psd1" | Select Version
 ```
 
@@ -92,13 +92,13 @@ When telemetry is enabled, it appears in the Amazon EC2 console output as follow
 **Disable telemetry on an instance**
 To disable telemetry by setting a system environment variable, run the following command as an administrator:
 
-```
+```batch
 setx /M EC2LAUNCH_TELEMETRY 0
 ```
 
 To disable telemetry during installation, run `install.ps1` as follows:
 
-```
+```PowerShell
 . .\install.ps1 -EnableTelemetry:$false
 ```
 

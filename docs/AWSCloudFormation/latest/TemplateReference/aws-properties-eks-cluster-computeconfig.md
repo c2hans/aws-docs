@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-cluster-computeconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-eks-cluster-computeconfig-enabled)" : {{Boolean}},
   "[NodePools](#cfn-eks-cluster-computeconfig-nodepools)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-cluster-computeconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-eks-cluster-computeconfig-enabled): {{Boolean}}
   [NodePools](#cfn-eks-cluster-computeconfig-nodepools): {{
     - String}}

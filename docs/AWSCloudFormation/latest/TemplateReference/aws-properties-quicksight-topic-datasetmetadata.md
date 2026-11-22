@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-topic-datasetmetadata-syntax.json"></a>
 
-```
+```json
 {
   "[CalculatedFields](#cfn-quicksight-topic-datasetmetadata-calculatedfields)" : {{[ TopicCalculatedField, ... ]}},
   "[Columns](#cfn-quicksight-topic-datasetmetadata-columns)" : {{[ TopicColumn, ... ]}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-topic-datasetmetadata-syntax.yaml"></a>
 
-```
+```yaml
   [CalculatedFields](#cfn-quicksight-topic-datasetmetadata-calculatedfields): {{
     - TopicCalculatedField}}
   [Columns](#cfn-quicksight-topic-datasetmetadata-columns): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-sankeydiagramsortconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationItemsLimit](#cfn-quicksight-template-sankeydiagramsortconfiguration-destinationitemslimit)" : {{ItemsLimitConfiguration}},
   "[SourceItemsLimit](#cfn-quicksight-template-sankeydiagramsortconfiguration-sourceitemslimit)" : {{ItemsLimitConfiguration}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-sankeydiagramsortconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationItemsLimit](#cfn-quicksight-template-sankeydiagramsortconfiguration-destinationitemslimit): {{
     ItemsLimitConfiguration}}
   [SourceItemsLimit](#cfn-quicksight-template-sankeydiagramsortconfiguration-sourceitemslimit): {{

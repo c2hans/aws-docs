@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-networkaclentry-icmp-syntax.json"></a>
 
-```
+```json
 {
   "[Code](#cfn-ec2-networkaclentry-icmp-code)" : {{Integer}},
   "[Type](#cfn-ec2-networkaclentry-icmp-type)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-networkaclentry-icmp-syntax.yaml"></a>
 
-```
+```yaml
   [Code](#cfn-ec2-networkaclentry-icmp-code): {{Integer}}
   [Type](#cfn-ec2-networkaclentry-icmp-type): {{Integer}}
 ```

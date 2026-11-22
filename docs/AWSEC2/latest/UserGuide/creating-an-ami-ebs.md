@@ -142,7 +142,7 @@ All snapshots of the instance’s volumes must be in the same location. Verify t
 **To create an AMI**
 Use the [create-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-image.html) command.
 
-```
+```bash
 aws ec2 create-image \
     --instance-id {{i-1234567890abcdef0}} \
     --name "{{my-web-server}}" \
@@ -156,7 +156,7 @@ aws ec2 create-image \
 **To create an AMI**
 Use the [New-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Image.html) cmdlet.
 
-```
+```powershell
 New-EC2Image `
     -InstanceId {{i-1234567890abcdef0}} `
     -Name {{"my-web-server"}} `
@@ -219,7 +219,7 @@ In most cases, AMIs for Windows, Red Hat, SUSE, and SQL Server require correct l
 **To create an AMI from a snapshot using the AWS CLI**
 Use the [register-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/register-image.html) command.
 
-```
+```bash
 aws ec2 register-image \
     --name {{my-image}} \
     --root-device-name {{/dev/xvda}} \
@@ -232,7 +232,7 @@ aws ec2 register-image \
 **To create an AMI from a snapshot using PowerShell**
 Use the [Register-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2Image.html) cmdlet.
 
-```
+```powershell
 $block = @{SnapshotId={{snap-0db2cf683925d191f}}}
 Register-EC2Image `
     -Name {{my-image}} `

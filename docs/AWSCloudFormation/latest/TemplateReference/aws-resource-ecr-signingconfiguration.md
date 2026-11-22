@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ecr-signingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ECR::SigningConfiguration",
   "Properties" : {
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ecr-signingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ECR::SigningConfiguration
 Properties:
   [Rules](#cfn-ecr-signingconfiguration-rules): {{

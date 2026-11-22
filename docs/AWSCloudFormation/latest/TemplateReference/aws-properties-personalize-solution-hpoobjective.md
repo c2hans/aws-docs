@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-personalize-solution-hpoobjective-syntax.json"></a>
 
-```
+```json
 {
   "[MetricName](#cfn-personalize-solution-hpoobjective-metricname)" : {{String}},
   "[MetricRegex](#cfn-personalize-solution-hpoobjective-metricregex)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-personalize-solution-hpoobjective-syntax.yaml"></a>
 
-```
+```yaml
   [MetricName](#cfn-personalize-solution-hpoobjective-metricname): {{String}}
   [MetricRegex](#cfn-personalize-solution-hpoobjective-metricregex): {{String}}
   [Type](#cfn-personalize-solution-hpoobjective-type): {{String}}

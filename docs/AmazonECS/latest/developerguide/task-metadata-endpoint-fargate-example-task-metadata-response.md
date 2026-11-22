@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-met
 
 The following JSON response is for a single-container task.
 
-```
+```json
 {
   "Cluster": "default",
   "TaskARN": "arn:aws:ecs:us-east-2:{{012345678910}}:task/9781c248-0edd-4cdb-9a93-f63cb662a5d3",

@@ -37,7 +37,7 @@ To run the driver, you can use a custom application or a third-party SQL client.
 
 Use the JDBC interface to interact with the JDBC driver from a program. The following code shows a sample custom Java application.
 
-```
+```java
 public static void main(String args[]) throws SQLException {
     Properties connectionParameters = new Properties();
     connectionParameters.setProperty("Workgroup", "primary");

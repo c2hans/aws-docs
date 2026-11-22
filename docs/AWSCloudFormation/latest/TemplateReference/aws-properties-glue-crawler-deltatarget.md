@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-crawler-deltatarget-syntax.json"></a>
 
-```
+```json
 {
   "[ConnectionName](#cfn-glue-crawler-deltatarget-connectionname)" : {{String}},
   "[CreateNativeDeltaTable](#cfn-glue-crawler-deltatarget-createnativedeltatable)" : {{Boolean}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-crawler-deltatarget-syntax.yaml"></a>
 
-```
+```yaml
   [ConnectionName](#cfn-glue-crawler-deltatarget-connectionname): {{String}}
   [CreateNativeDeltaTable](#cfn-glue-crawler-deltatarget-createnativedeltatable): {{Boolean}}
   [DeltaTables](#cfn-glue-crawler-deltatarget-deltatables): {{

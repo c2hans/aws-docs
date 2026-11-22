@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emr-instancegroupconfig-scalingconstraints-syntax.json"></a>
 
-```
+```json
 {
   "[MaxCapacity](#cfn-emr-instancegroupconfig-scalingconstraints-maxcapacity)" : {{Integer}},
   "[MinCapacity](#cfn-emr-instancegroupconfig-scalingconstraints-mincapacity)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emr-instancegroupconfig-scalingconstraints-syntax.yaml"></a>
 
-```
+```yaml
   [MaxCapacity](#cfn-emr-instancegroupconfig-scalingconstraints-maxcapacity): {{Integer}}
   [MinCapacity](#cfn-emr-instancegroupconfig-scalingconstraints-mincapacity): {{Integer}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gateway-sessionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[SessionTimeoutInSeconds](#cfn-bedrockagentcore-gateway-sessionconfiguration-sessiontimeoutinseconds)" : {{Number}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gateway-sessionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [SessionTimeoutInSeconds](#cfn-bedrockagentcore-gateway-sessionconfiguration-sessiontimeoutinseconds): {{Number}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-decimalvaluewhenunsetconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CustomValue](#cfn-quicksight-analysis-decimalvaluewhenunsetconfiguration-customvalue)" : {{Number}},
   "[ValueWhenUnsetOption](#cfn-quicksight-analysis-decimalvaluewhenunsetconfiguration-valuewhenunsetoption)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-decimalvaluewhenunsetconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CustomValue](#cfn-quicksight-analysis-decimalvaluewhenunsetconfiguration-customvalue): {{Number}}
   [ValueWhenUnsetOption](#cfn-quicksight-analysis-decimalvaluewhenunsetconfiguration-valuewhenunsetoption): {{String}}
 ```

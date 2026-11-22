@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-datasync-locationnfs-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DataSync::LocationNFS",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-datasync-locationnfs-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DataSync::LocationNFS
 Properties:
   [MountOptions](#cfn-datasync-locationnfs-mountoptions): {{
@@ -124,7 +124,7 @@ The following example specifies an NFS location for DataSync, using a source and
 #### JSON
 <a name="aws-resource-datasync-locationnfs--examples--Create_an_NFS_location_for_DataSync--json"></a>
 
-```
+```json
 {
     "Resources": {
         "LocationNFS": {
@@ -149,7 +149,7 @@ The following example specifies an NFS location for DataSync, using a source and
 #### YAML
 <a name="aws-resource-datasync-locationnfs--examples--Create_an_NFS_location_for_DataSync--yaml"></a>
 
-```
+```yaml
 Resources:
   LocationNFS:
     Type: 'AWS::DataSync::LocationNFS'

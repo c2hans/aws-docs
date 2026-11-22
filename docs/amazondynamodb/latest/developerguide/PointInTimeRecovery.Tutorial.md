@@ -67,7 +67,7 @@ aws dynamodb update-continuous-backups \
 
    Continuous backups (automatically enabled on table creation) and point-in-time recovery are enabled.
 
-   ```
+   ```json
    {
        "ContinuousBackupsDescription": {
            "PointInTimeRecoveryDescription": {

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-cluster-openmonitoring-syntax.json"></a>
 
-```
+```json
 {
   "[Prometheus](#cfn-msk-cluster-openmonitoring-prometheus)" : {{Prometheus}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-cluster-openmonitoring-syntax.yaml"></a>
 
-```
+```yaml
   [Prometheus](#cfn-msk-cluster-openmonitoring-prometheus): {{
     Prometheus}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ivschat-loggingconfiguration-destinationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CloudWatchLogs](#cfn-ivschat-loggingconfiguration-destinationconfiguration-cloudwatchlogs)" : {{CloudWatchLogsDestinationConfiguration}},
   "[Firehose](#cfn-ivschat-loggingconfiguration-destinationconfiguration-firehose)" : {{FirehoseDestinationConfiguration}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ivschat-loggingconfiguration-destinationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CloudWatchLogs](#cfn-ivschat-loggingconfiguration-destinationconfiguration-cloudwatchlogs): {{
     CloudWatchLogsDestinationConfiguration}}
   [Firehose](#cfn-ivschat-loggingconfiguration-destinationconfiguration-firehose): {{

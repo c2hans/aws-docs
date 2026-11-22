@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-verifiedaccesstrustprovider-deviceoptions-syntax.json"></a>
 
-```
+```json
 {
   "[PublicSigningKeyUrl](#cfn-ec2-verifiedaccesstrustprovider-deviceoptions-publicsigningkeyurl)" : {{String}},
   "[TenantId](#cfn-ec2-verifiedaccesstrustprovider-deviceoptions-tenantid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-verifiedaccesstrustprovider-deviceoptions-syntax.yaml"></a>
 
-```
+```yaml
   [PublicSigningKeyUrl](#cfn-ec2-verifiedaccesstrustprovider-deviceoptions-publicsigningkeyurl): {{String}}
   [TenantId](#cfn-ec2-verifiedaccesstrustprovider-deviceoptions-tenantid): {{String}}
 ```

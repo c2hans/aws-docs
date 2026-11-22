@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-processingjob-processingoutputsobject-syntax.json"></a>
 
-```
+```json
 {
   "[AppManaged](#cfn-sagemaker-processingjob-processingoutputsobject-appmanaged)" : {{Boolean}},
   "[FeatureStoreOutput](#cfn-sagemaker-processingjob-processingoutputsobject-featurestoreoutput)" : {{FeatureStoreOutput}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-processingjob-processingoutputsobject-syntax.yaml"></a>
 
-```
+```yaml
   [AppManaged](#cfn-sagemaker-processingjob-processingoutputsobject-appmanaged): {{Boolean}}
   [FeatureStoreOutput](#cfn-sagemaker-processingjob-processingoutputsobject-featurestoreoutput): {{
     FeatureStoreOutput}}

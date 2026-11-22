@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-endpointconfig-managedinstancescaling-syntax.json"></a>
 
-```
+```json
 {
   "[MaxInstanceCount](#cfn-sagemaker-endpointconfig-managedinstancescaling-maxinstancecount)" : {{Integer}},
   "[MinInstanceCount](#cfn-sagemaker-endpointconfig-managedinstancescaling-mininstancecount)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-endpointconfig-managedinstancescaling-syntax.yaml"></a>
 
-```
+```yaml
   [MaxInstanceCount](#cfn-sagemaker-endpointconfig-managedinstancescaling-maxinstancecount): {{Integer}}
   [MinInstanceCount](#cfn-sagemaker-endpointconfig-managedinstancescaling-mininstancecount): {{Integer}}
   [ScaleInPolicy](#cfn-sagemaker-endpointconfig-managedinstancescaling-scaleinpolicy): {{

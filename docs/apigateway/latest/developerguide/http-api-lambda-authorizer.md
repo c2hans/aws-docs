@@ -143,7 +143,7 @@ If you choose the `1.0` format version, Lambda authorizers must return an IAM po
 **Example**
 ****
 
-```
+```json
 {
   "principalId": "abcdef",
   "policyDocument": {
@@ -184,7 +184,7 @@ If you choose the `2.0` format version, you can return a Boolean value or an IAM
 
 ****
 
-```
+```json
 {
   "principalId": "abcdef",
   "policyDocument": {
@@ -248,7 +248,7 @@ export const handler = async(event) => {
 ------
 #### [ Simple response - Python ]
 
-```
+```python
 import json
 
 def lambda_handler(event, context):
@@ -338,7 +338,7 @@ export const handler = async(event) => {
 ------
 #### [ IAM policy - Python ]
 
-```
+```python
 import json
 
 def lambda_handler(event, context):

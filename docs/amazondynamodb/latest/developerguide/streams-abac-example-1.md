@@ -11,7 +11,7 @@ Using the `aws:ResourceTag/tag-key` condition key, you can compare the tag key-v
 
 1. Create a table with a stream enabled and add a tag.
 
-   ```
+   ```bash
    aws dynamodb create-table \
      --table-name myMusicTable \
      --attribute-definitions AttributeName=id,AttributeType=S \
@@ -23,7 +23,7 @@ Using the `aws:ResourceTag/tag-key` condition key, you can compare the tag key-v
 
 1. Add a tag to the stream. First, get the stream ARN from the table description.
 
-   ```
+   ```bash
    STREAM_ARN=$(aws dynamodb describe-table \
      --table-name myMusicTable \
      --query "Table.LatestStreamArn" \
@@ -38,7 +38,7 @@ Using the `aws:ResourceTag/tag-key` condition key, you can compare the tag key-v
 
 1. Create an [inline policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#inline-policies) and add it to a role, as shown in the following example.
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -65,7 +65,7 @@ Using the `aws:ResourceTag/tag-key` condition key, you can compare the tag key-v
 
 1. Use the `describe-stream` AWS CLI command on the stream.
 
-   ```
+   ```bash
    aws dynamodb describe-stream \
      --stream-arn $STREAM_ARN \
      --region us-east-1

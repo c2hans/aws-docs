@@ -48,7 +48,7 @@ Copy the Endpoint Address shown in the output. You'll need this address when you
 
 1. Create an IAM trust policy document, as shown below, for your role that allows the Lambda service to assume the new role. Save the policy to a file named *trust-policy.json*.
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [{
@@ -61,7 +61,7 @@ Copy the Endpoint Address shown in the output. You'll need this address when you
 
 1. Create an IAM policy document, as shown below. Save the policy to a file named *policy.json*.
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [

@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-dataprotectionconfig-syntax.json"></a>
 
-```
+```json
 {
   "[DataProtections](#cfn-wafv2-webacl-dataprotectionconfig-dataprotections)" : {{[ DataProtect, ... ]}}
 }
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-dataprotectionconfig-syntax.yaml"></a>
 
-```
+```yaml
   [DataProtections](#cfn-wafv2-webacl-dataprotectionconfig-dataprotections): {{
     - DataProtect}}
 ```

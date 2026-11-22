@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-xray-group-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::XRay::Group",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-xray-group-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::XRay::Group
 Properties:
   [FilterExpression](#cfn-xray-group-filterexpression): {{String}}
@@ -107,7 +107,7 @@ This example creates a new group called MyGroup.
 #### JSON
 <a name="aws-resource-xray-group--examples--Create_group--json"></a>
 
-```
+```json
 {
    "AWSTemplateFormatVersion": "2010-09-09",
    "Resources": {
@@ -129,7 +129,7 @@ This example creates a new group called MyGroup.
 #### YAML
 <a name="aws-resource-xray-group--examples--Create_group--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
    MyGroupResource:

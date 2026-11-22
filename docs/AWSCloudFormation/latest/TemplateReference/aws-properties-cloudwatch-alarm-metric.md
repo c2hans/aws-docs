@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-alarm-metric-syntax.json"></a>
 
-```
+```json
 {
   "[Dimensions](#cfn-cloudwatch-alarm-metric-dimensions)" : {{[ Dimension, ... ]}},
   "[MetricName](#cfn-cloudwatch-alarm-metric-metricname)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-alarm-metric-syntax.yaml"></a>
 
-```
+```yaml
   [Dimensions](#cfn-cloudwatch-alarm-metric-dimensions): {{
     - Dimension}}
   [MetricName](#cfn-cloudwatch-alarm-metric-metricname): {{String}}

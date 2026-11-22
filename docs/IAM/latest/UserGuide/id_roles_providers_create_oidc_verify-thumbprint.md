@@ -41,7 +41,7 @@ You use a web browser and the OpenSSL command line tool to obtain the certificat
 
 1. <a name="thumbstep3"></a>In the displayed document, use your web browser **Find** feature to locate the text `"jwks_uri"`. Immediately following the text `"jwks_uri"`, there is a colon (:) followed by a URL. Copy the fully qualified domain name of the URL. Do not include `https://` or any path that comes after the top-level domain.
 
-   ```
+   ```json
    {
     "issuer": "https://accounts.example.com",
     "authorization_endpoint": "https://accounts.example.com/o/oauth2/v2/auth",
@@ -57,7 +57,7 @@ If your discovery and JWKS endpoints use different hosts, note the fully qualifi
 
 1. <a name="thumbstep4"></a>Use the OpenSSL command line tool to run the following command. Replace {{keys.example.com}} with the domain name you obtained in [Step 3](#thumbstep3).
 
-   ```
+   ```bash
    openssl s_client -servername {{keys.example.com}} -showcerts -connect {{keys.example.com}}:443
    ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cassandra-type-field-syntax.json"></a>
 
-```
+```json
 {
   "[FieldName](#cfn-cassandra-type-field-fieldname)" : {{String}},
   "[FieldType](#cfn-cassandra-type-field-fieldtype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cassandra-type-field-syntax.yaml"></a>
 
-```
+```yaml
   [FieldName](#cfn-cassandra-type-field-fieldname): {{String}}
   [FieldType](#cfn-cassandra-type-field-fieldtype): {{String}}
 ```

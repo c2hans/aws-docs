@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-customfilterconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CategoryValue](#cfn-quicksight-analysis-customfilterconfiguration-categoryvalue)" : {{String}},
   "[MatchOperator](#cfn-quicksight-analysis-customfilterconfiguration-matchoperator)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-customfilterconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CategoryValue](#cfn-quicksight-analysis-customfilterconfiguration-categoryvalue): {{String}}
   [MatchOperator](#cfn-quicksight-analysis-customfilterconfiguration-matchoperator): {{String}}
   [NullOption](#cfn-quicksight-analysis-customfilterconfiguration-nulloption): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-ipamexternalresourceverificationtoken-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::IpamExternalResourceVerificationToken",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-ipamexternalresourceverificationtoken-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::IpamExternalResourceVerificationToken
 Properties:
   [IpamId](#cfn-ec2-ipamexternalresourceverificationtoken-ipamid): {{String}}

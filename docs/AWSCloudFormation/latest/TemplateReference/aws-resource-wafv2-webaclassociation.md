@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-wafv2-webaclassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::WAFv2::WebACLAssociation",
   "Properties" : {
@@ -48,7 +48,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-wafv2-webaclassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::WAFv2::WebACLAssociation
 Properties:
   [ResourceArn](#cfn-wafv2-webaclassociation-resourcearn): {{String}}
@@ -103,7 +103,7 @@ The following shows an example web ACL association specification.
 #### YAML
 <a name="aws-resource-wafv2-webaclassociation--examples--Create_a_web_ACL_association--yaml"></a>
 
-```
+```yaml
   SampleWebACLAssociation:
     Type: 'AWS::WAFv2::WebACLAssociation'
     Properties:
@@ -114,7 +114,7 @@ The following shows an example web ACL association specification.
 #### JSON
 <a name="aws-resource-wafv2-webaclassociation--examples--Create_a_web_ACL_association--json"></a>
 
-```
+```json
   "SampleWebACLAssociation": {
     "Type": "AWS::WAFv2::WebACLAssociation",
     "Properties": {

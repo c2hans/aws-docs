@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-rulegroup-headerorder-syntax.json"></a>
 
-```
+```json
 {
   "[OversizeHandling](#cfn-wafv2-rulegroup-headerorder-oversizehandling)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-rulegroup-headerorder-syntax.yaml"></a>
 
-```
+```yaml
   [OversizeHandling](#cfn-wafv2-rulegroup-headerorder-oversizehandling): {{String}}
 ```
 

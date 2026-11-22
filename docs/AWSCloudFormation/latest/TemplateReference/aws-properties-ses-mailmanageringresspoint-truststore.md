@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-mailmanageringresspoint-truststore-syntax.json"></a>
 
-```
+```json
 {
   "[CAContent](#cfn-ses-mailmanageringresspoint-truststore-cacontent)" : {{String}},
   "[CrlContent](#cfn-ses-mailmanageringresspoint-truststore-crlcontent)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-mailmanageringresspoint-truststore-syntax.yaml"></a>
 
-```
+```yaml
   [CAContent](#cfn-ses-mailmanageringresspoint-truststore-cacontent): {{String}}
   [CrlContent](#cfn-ses-mailmanageringresspoint-truststore-crlcontent): {{String}}
   [KmsKeyArn](#cfn-ses-mailmanageringresspoint-truststore-kmskeyarn): {{String}}

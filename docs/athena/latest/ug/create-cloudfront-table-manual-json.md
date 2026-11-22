@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/create-cloudfront-table
 
    This query uses OpenX JSON SerDe with the following SerDe properties to read JSON fields correctly in Athena.
 
-   ```
+   ```sql
    CREATE EXTERNAL TABLE `cf_logs_manual_partition_json`(
      `date` string ,
      `time` string ,
@@ -64,7 +64,7 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/create-cloudfront-table
 
 The following query adds up the number of bytes served by CloudFront for January 15, 2025.
 
-```
+```sql
 SELECT sum(cast("sc-bytes" as BIGINT)) as sc
 FROM cf_logs_manual_partition_json
 WHERE "date"='2025-01-15'

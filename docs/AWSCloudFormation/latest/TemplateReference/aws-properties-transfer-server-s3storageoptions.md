@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-transfer-server-s3storageoptions-syntax.json"></a>
 
-```
+```json
 {
   "[DirectoryListingOptimization](#cfn-transfer-server-s3storageoptions-directorylistingoptimization)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-transfer-server-s3storageoptions-syntax.yaml"></a>
 
-```
+```yaml
   [DirectoryListingOptimization](#cfn-transfer-server-s3storageoptions-directorylistingoptimization): {{String}}
 ```
 

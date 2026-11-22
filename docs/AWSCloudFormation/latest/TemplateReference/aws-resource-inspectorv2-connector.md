@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-inspectorv2-connector-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::InspectorV2::Connector",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-inspectorv2-connector-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::InspectorV2::Connector
 Properties:
   [Description](#cfn-inspectorv2-connector-description): {{String}}
@@ -68,7 +68,7 @@ The name of the connector.
 The cloud provider for the connector.
 *Required*: Yes
 *Type*: String
-*Allowed values*: `AZURE`
+*Allowed values*: `AZURE | GCP`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ProviderConfiguration`  <a name="cfn-inspectorv2-connector-providerconfiguration"></a>
@@ -127,4 +127,22 @@ Property description not available.
 Property description not available.
 
 `ProviderConfiguration.Azure.ScopeConfiguration.VmScanning.StateReason`  <a name="ProviderConfiguration.Azure.ScopeConfiguration.VmScanning.StateReason-fn::getatt"></a>
+Property description not available.
+
+`ProviderConfiguration.Gcp.ScopeConfiguration.ContainerImageScanning.State`  <a name="ProviderConfiguration.Gcp.ScopeConfiguration.ContainerImageScanning.State-fn::getatt"></a>
+Property description not available.
+
+`ProviderConfiguration.Gcp.ScopeConfiguration.ContainerImageScanning.StateReason`  <a name="ProviderConfiguration.Gcp.ScopeConfiguration.ContainerImageScanning.StateReason-fn::getatt"></a>
+Property description not available.
+
+`ProviderConfiguration.Gcp.ScopeConfiguration.ServerlessScanning.State`  <a name="ProviderConfiguration.Gcp.ScopeConfiguration.ServerlessScanning.State-fn::getatt"></a>
+Property description not available.
+
+`ProviderConfiguration.Gcp.ScopeConfiguration.ServerlessScanning.StateReason`  <a name="ProviderConfiguration.Gcp.ScopeConfiguration.ServerlessScanning.StateReason-fn::getatt"></a>
+Property description not available.
+
+`ProviderConfiguration.Gcp.ScopeConfiguration.VmScanning.State`  <a name="ProviderConfiguration.Gcp.ScopeConfiguration.VmScanning.State-fn::getatt"></a>
+Property description not available.
+
+`ProviderConfiguration.Gcp.ScopeConfiguration.VmScanning.StateReason`  <a name="ProviderConfiguration.Gcp.ScopeConfiguration.VmScanning.StateReason-fn::getatt"></a>
 Property description not available.

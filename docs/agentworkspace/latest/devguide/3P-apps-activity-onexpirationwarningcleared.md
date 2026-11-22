@@ -8,13 +8,13 @@ Subscribes a callback function to be invoked when the agent has acknowledged the
 
  **Signature**
 
-```
+```typescript
 onExpirationWarningCleared(handler: ExpirationWarningClearedHandler);
 ```
 
  **Usage**
 
-```
+```typescript
 const handler: ExpirationWarningClearedHandler = () => {
     console.log("My session was extended after I was warned!");
 }

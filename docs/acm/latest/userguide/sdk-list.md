@@ -6,7 +6,10 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-list.html
 
 The following example shows how to use the [ListCertificates](https://docs.aws.amazon.com/acm/latest/APIReference/API_ListCertificates.html) function.
 
-```
+**Note**
+By default, `ListCertificates` does not return Amazon N2 certificates. To include them, set `RootHierarchyTypes` on the request. For more information, see [Listing and finding](acm-amazon-n2-characteristics.md#amazon-n2-listing).
+
+```java
 package com.amazonaws.samples;
 
 import com.amazonaws.services.certificatemanager.AWSCertificateManagerClientBuilder;

@@ -15,7 +15,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Aurora#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Create a new cluster and database.
     /// </summary>
@@ -59,7 +59,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/aurora#code-examples).
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -97,7 +97,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/aurora#code-examples).
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -144,7 +144,7 @@ func (clusters *DbClusters) CreateDbCluster(ctx context.Context, clusterName str
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
 
-```
+```java
     public static String createDBCluster(RdsClient rdsClient, String dbParameterGroupFamily, String dbName,
             String dbClusterIdentifier, String userName, String password) {
         try {
@@ -175,7 +175,7 @@ func (clusters *DbClusters) CreateDbCluster(ctx context.Context, clusterName str
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rds#code-examples).
 
-```
+```kotlin
 suspend fun createDBCluster(
     dbParameterGroupFamilyVal: String?,
     dbName: String?,
@@ -207,7 +207,7 @@ suspend fun createDBCluster(
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/aurora#code-examples).
 
-```
+```python
 class AuroraWrapper:
     """Encapsulates Aurora DB cluster actions."""
 
@@ -280,7 +280,7 @@ class AuroraWrapper:
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/aurora#code-examples).
 
-```
+```rust
     // Get a list of allowed engine versions. rds.DescribeDbEngineVersions(Engine='aurora-mysql', DBParameterGroupFamily=<the family used to create your parameter group in step 2>)
     // Create an Aurora DB cluster database cluster that contains a MySql database and uses the parameter group you created.
     // Wait for DB cluster to be ready. Call rds.DescribeDBClusters and check for Status == 'available'.

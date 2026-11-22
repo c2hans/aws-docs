@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-placementconstraint-syntax.json"></a>
 
-```
+```json
 {
   "[Expression](#cfn-pipes-pipe-placementconstraint-expression)" : {{String}},
   "[Type](#cfn-pipes-pipe-placementconstraint-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-placementconstraint-syntax.yaml"></a>
 
-```
+```yaml
   [Expression](#cfn-pipes-pipe-placementconstraint-expression): {{String}}
   [Type](#cfn-pipes-pipe-placementconstraint-type): {{String}}
 ```

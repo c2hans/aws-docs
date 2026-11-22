@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-noderangeproperty-syntax.json"></a>
 
-```
+```json
 {
   "[ConsumableResourceProperties](#cfn-batch-jobdefinition-noderangeproperty-consumableresourceproperties)" : {{ConsumableResourceProperties}},
   "[Container](#cfn-batch-jobdefinition-noderangeproperty-container)" : {{MultiNodeContainerProperties}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-noderangeproperty-syntax.yaml"></a>
 
-```
+```yaml
   [ConsumableResourceProperties](#cfn-batch-jobdefinition-noderangeproperty-consumableresourceproperties): {{
     ConsumableResourceProperties}}
   [Container](#cfn-batch-jobdefinition-noderangeproperty-container): {{

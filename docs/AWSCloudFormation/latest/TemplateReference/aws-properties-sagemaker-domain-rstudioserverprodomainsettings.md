@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-domain-rstudioserverprodomainsettings-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultResourceSpec](#cfn-sagemaker-domain-rstudioserverprodomainsettings-defaultresourcespec)" : {{ResourceSpec}},
   "[DomainExecutionRoleArn](#cfn-sagemaker-domain-rstudioserverprodomainsettings-domainexecutionrolearn)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-domain-rstudioserverprodomainsettings-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultResourceSpec](#cfn-sagemaker-domain-rstudioserverprodomainsettings-defaultresourcespec): {{
     ResourceSpec}}
   [DomainExecutionRoleArn](#cfn-sagemaker-domain-rstudioserverprodomainsettings-domainexecutionrolearn): {{String}}

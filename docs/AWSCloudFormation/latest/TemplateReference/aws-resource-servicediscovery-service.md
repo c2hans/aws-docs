@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-servicediscovery-service-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ServiceDiscovery::Service",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-servicediscovery-service-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ServiceDiscovery::Service
 Properties:
   [Description](#cfn-servicediscovery-service-description): {{String}}
@@ -166,7 +166,7 @@ The following example creates a service based on a public DNS namespace. The ser
 #### JSON
 <a name="aws-resource-servicediscovery-service--examples--Create_a_service--json"></a>
 
-```
+```json
 {
   "Resources": {
     "Service": {
@@ -202,7 +202,7 @@ The following example creates a service based on a public DNS namespace. The ser
 #### YAML
 <a name="aws-resource-servicediscovery-service--examples--Create_a_service--yaml"></a>
 
-```
+```yaml
 Resources:
   Service:
     Type: AWS::ServiceDiscovery::Service
@@ -231,7 +231,7 @@ This example specifies the port that the client application should use to commun
 #### JSON
 <a name="aws-resource-servicediscovery-service--examples--Specify_attributes_at_the_service_level--json"></a>
 
-```
+```json
 {
   "Resources": {
     "Service": {
@@ -271,7 +271,7 @@ This example specifies the port that the client application should use to commun
 #### YAML
 <a name="aws-resource-servicediscovery-service--examples--Specify_attributes_at_the_service_level--yaml"></a>
 
-```
+```yaml
 Resources:
   Service:
     Type: AWS::ServiceDiscovery::Service

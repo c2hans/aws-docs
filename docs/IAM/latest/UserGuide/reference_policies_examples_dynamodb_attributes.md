@@ -13,7 +13,7 @@ The `dynamodb:Select` requirement prevents the API action from returning any att
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

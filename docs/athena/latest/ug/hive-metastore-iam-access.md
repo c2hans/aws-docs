@@ -12,7 +12,7 @@ The permission policy examples in this topic demonstrate required allowed action
 The following policy is attached to IAM principals in addition to the [AWS managed policy: AmazonAthenaFullAccess](security-iam-awsmanpol.md#amazonathenafullaccess-managed-policy), which grants full access to Athena actions.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -58,7 +58,7 @@ The following policy is attached to IAM principals in addition to the [AWS manag
 The following policy is attached to IAM principals in addition to the [AWS managed policy: AmazonAthenaFullAccess](security-iam-awsmanpol.md#amazonathenafullaccess-managed-policy), which grants full access to Athena actions.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

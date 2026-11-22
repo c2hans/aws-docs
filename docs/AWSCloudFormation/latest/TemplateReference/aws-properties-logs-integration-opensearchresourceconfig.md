@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-logs-integration-opensearchresourceconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ApplicationARN](#cfn-logs-integration-opensearchresourceconfig-applicationarn)" : {{String}},
   "[DashboardViewerPrincipals](#cfn-logs-integration-opensearchresourceconfig-dashboardviewerprincipals)" : {{[ String, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-logs-integration-opensearchresourceconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ApplicationARN](#cfn-logs-integration-opensearchresourceconfig-applicationarn): {{String}}
   [DashboardViewerPrincipals](#cfn-logs-integration-opensearchresourceconfig-dashboardviewerprincipals): {{
     - String}}

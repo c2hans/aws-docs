@@ -50,7 +50,7 @@ You must configure permissions to allow an IAM entity (such as a user, group, or
 
  Add the following policy statement to the permissions for that IAM entity.
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [

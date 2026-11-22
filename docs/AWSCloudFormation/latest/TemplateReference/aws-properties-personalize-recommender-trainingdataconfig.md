@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-personalize-recommender-trainingdataconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ExcludedDatasetColumns](#cfn-personalize-recommender-trainingdataconfig-excludeddatasetcolumns)" : {{{{{Key}}: {{Value}}, ...}}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-personalize-recommender-trainingdataconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ExcludedDatasetColumns](#cfn-personalize-recommender-trainingdataconfig-excludeddatasetcolumns): {{
     {{Key}}: {{Value}}}}
 ```

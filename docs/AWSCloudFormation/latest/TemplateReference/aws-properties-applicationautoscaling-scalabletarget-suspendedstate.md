@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationautoscaling-scalabletarget-suspendedstate-syntax.json"></a>
 
-```
+```json
 {
   "[DynamicScalingInSuspended](#cfn-applicationautoscaling-scalabletarget-suspendedstate-dynamicscalinginsuspended)" : {{Boolean}},
   "[DynamicScalingOutSuspended](#cfn-applicationautoscaling-scalabletarget-suspendedstate-dynamicscalingoutsuspended)" : {{Boolean}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationautoscaling-scalabletarget-suspendedstate-syntax.yaml"></a>
 
-```
+```yaml
   [DynamicScalingInSuspended](#cfn-applicationautoscaling-scalabletarget-suspendedstate-dynamicscalinginsuspended): {{Boolean}}
   [DynamicScalingOutSuspended](#cfn-applicationautoscaling-scalabletarget-suspendedstate-dynamicscalingoutsuspended): {{Boolean}}
   [ScheduledScalingSuspended](#cfn-applicationautoscaling-scalabletarget-suspendedstate-scheduledscalingsuspended): {{Boolean}}

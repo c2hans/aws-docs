@@ -18,7 +18,7 @@ log.roll.ms = 604800000
 
 Now run the following Python 3.6 script in the folder where you saved `config-file.txt`. This script uses the properties specified in `config-file.txt` to create a configuration named `SalesClusterConfiguration`. This configuration can work with Apache Kafka versions 1.1.1 and 2.1.0.
 
-```
+```PYTHON
 import boto3
 
 client = boto3.client('kafka')
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-msk-configuration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MSK::Configuration",
   "Properties" : {
@@ -61,7 +61,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-msk-configuration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MSK::Configuration
 Properties:
   [Description](#cfn-msk-configuration-description): {{String}}

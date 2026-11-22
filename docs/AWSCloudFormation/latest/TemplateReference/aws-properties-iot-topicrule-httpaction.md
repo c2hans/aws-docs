@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicrule-httpaction-syntax.json"></a>
 
-```
+```json
 {
   "[Auth](#cfn-iot-topicrule-httpaction-auth)" : {{HttpAuthorization}},
   "[BatchConfig](#cfn-iot-topicrule-httpaction-batchconfig)" : {{BatchConfig}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicrule-httpaction-syntax.yaml"></a>
 
-```
+```yaml
   [Auth](#cfn-iot-topicrule-httpaction-auth): {{
     HttpAuthorization}}
   [BatchConfig](#cfn-iot-topicrule-httpaction-batchconfig): {{

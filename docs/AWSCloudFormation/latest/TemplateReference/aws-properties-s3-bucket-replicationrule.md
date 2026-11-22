@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-replicationrule-syntax.json"></a>
 
-```
+```json
 {
   "[DeleteMarkerReplication](#cfn-s3-bucket-replicationrule-deletemarkerreplication)" : {{DeleteMarkerReplication}},
   "[Destination](#cfn-s3-bucket-replicationrule-destination)" : {{ReplicationDestination}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-replicationrule-syntax.yaml"></a>
 
-```
+```yaml
   [DeleteMarkerReplication](#cfn-s3-bucket-replicationrule-deletemarkerreplication): {{
     DeleteMarkerReplication}}
   [Destination](#cfn-s3-bucket-replicationrule-destination): {{
@@ -121,7 +121,7 @@ The following example creates an S3 bucket and grants it permission to write to 
 #### JSON
 <a name="aws-properties-s3-bucket-replicationrule--examples--Associate_a_replication_configuration_IAM_role_with_an_S3_bucket--json"></a>
 
-```
+```json
 {
     "Resources": {
         "RecordServiceS3Bucket": {
@@ -288,7 +288,7 @@ The following example creates an S3 bucket and grants it permission to write to 
 #### YAML
 <a name="aws-properties-s3-bucket-replicationrule--examples--Associate_a_replication_configuration_IAM_role_with_an_S3_bucket--yaml"></a>
 
-```
+```yaml
 Resources:
   RecordServiceS3Bucket:
     Type: 'AWS::S3::Bucket'
@@ -376,7 +376,7 @@ The following example enables versioning and two replication rules. The rules co
 #### JSON
 <a name="aws-properties-s3-bucket-replicationrule--examples--Enable_versioning_and_replicate_objects--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -416,7 +416,7 @@ The following example enables versioning and two replication rules. The rules co
 #### YAML
 <a name="aws-properties-s3-bucket-replicationrule--examples--Enable_versioning_and_replicate_objects--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   S3Bucket:

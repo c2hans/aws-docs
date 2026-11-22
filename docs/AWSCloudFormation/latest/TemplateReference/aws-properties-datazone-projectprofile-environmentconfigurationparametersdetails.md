@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-projectprofile-environmentconfigurationparametersdetails-syntax.json"></a>
 
-```
+```json
 {
   "[ParameterOverrides](#cfn-datazone-projectprofile-environmentconfigurationparametersdetails-parameteroverrides)" : {{[ EnvironmentConfigurationParameter, ... ]}},
   "[ResolvedParameters](#cfn-datazone-projectprofile-environmentconfigurationparametersdetails-resolvedparameters)" : {{[ EnvironmentConfigurationParameter, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-projectprofile-environmentconfigurationparametersdetails-syntax.yaml"></a>
 
-```
+```yaml
   [ParameterOverrides](#cfn-datazone-projectprofile-environmentconfigurationparametersdetails-parameteroverrides): {{
     - EnvironmentConfigurationParameter}}
   [ResolvedParameters](#cfn-datazone-projectprofile-environmentconfigurationparametersdetails-resolvedparameters): {{

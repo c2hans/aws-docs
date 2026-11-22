@@ -40,7 +40,7 @@ This topic includes information on best practices and options for using or migra
 
 To determine which DB instance in an Aurora MySQL DB cluster a connection is connected to, check the `innodb_read_only` global variable, as shown in the following example.
 
-```
+```sql
 SHOW GLOBAL VARIABLES LIKE 'innodb_read_only';
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-personalize-solution-hpoconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AlgorithmHyperParameterRanges](#cfn-personalize-solution-hpoconfig-algorithmhyperparameterranges)" : {{AlgorithmHyperParameterRanges}},
   "[HpoObjective](#cfn-personalize-solution-hpoconfig-hpoobjective)" : {{HpoObjective}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-personalize-solution-hpoconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AlgorithmHyperParameterRanges](#cfn-personalize-solution-hpoconfig-algorithmhyperparameterranges): {{
     AlgorithmHyperParameterRanges}}
   [HpoObjective](#cfn-personalize-solution-hpoconfig-hpoobjective): {{

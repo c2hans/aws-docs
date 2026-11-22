@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-softwarepackageversion-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-iot-softwarepackageversion-tag-key)" : {{String}},
   "[Value](#cfn-iot-softwarepackageversion-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-softwarepackageversion-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-iot-softwarepackageversion-tag-key): {{String}}
   [Value](#cfn-iot-softwarepackageversion-tag-value): {{String}}
 ```

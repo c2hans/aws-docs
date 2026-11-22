@@ -32,7 +32,7 @@ You might encounter situations where you have to add or remove membership of som
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

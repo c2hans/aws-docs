@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-connection-oauth2credentials-syntax.json"></a>
 
-```
+```json
 {
   "[AccessToken](#cfn-glue-connection-oauth2credentials-accesstoken)" : {{String}},
   "[JwtToken](#cfn-glue-connection-oauth2credentials-jwttoken)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-connection-oauth2credentials-syntax.yaml"></a>
 
-```
+```yaml
   [AccessToken](#cfn-glue-connection-oauth2credentials-accesstoken): {{String}}
   [JwtToken](#cfn-glue-connection-oauth2credentials-jwttoken): {{String}}
   [RefreshToken](#cfn-glue-connection-oauth2credentials-refreshtoken): {{String}}

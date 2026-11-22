@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-gamelift-location-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::GameLift::Location",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-gamelift-location-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::GameLift::Location
 Properties:
   [LocationName](#cfn-gamelift-location-locationname): {{String}}

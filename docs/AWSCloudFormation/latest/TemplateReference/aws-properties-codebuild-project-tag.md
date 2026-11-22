@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codebuild-project-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-codebuild-project-tag-key)" : {{String}},
   "[Value](#cfn-codebuild-project-tag-value)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codebuild-project-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-codebuild-project-tag-key): {{String}}
   [Value](#cfn-codebuild-project-tag-value): {{String}}
 ```

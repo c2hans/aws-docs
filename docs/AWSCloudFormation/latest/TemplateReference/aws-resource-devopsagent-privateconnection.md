@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-devopsagent-privateconnection-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DevOpsAgent::PrivateConnection",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-devopsagent-privateconnection-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DevOpsAgent::PrivateConnection
 Properties:
   [Certificate](#cfn-devopsagent-privateconnection-certificate): {{String}}

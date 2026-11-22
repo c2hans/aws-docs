@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-cluster-vpcconnectivitysasl-syntax.json"></a>
 
-```
+```json
 {
   "[Iam](#cfn-msk-cluster-vpcconnectivitysasl-iam)" : {{VpcConnectivityIam}},
   "[Scram](#cfn-msk-cluster-vpcconnectivitysasl-scram)" : {{VpcConnectivityScram}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-cluster-vpcconnectivitysasl-syntax.yaml"></a>
 
-```
+```yaml
   [Iam](#cfn-msk-cluster-vpcconnectivitysasl-iam): {{
     VpcConnectivityIam}}
   [Scram](#cfn-msk-cluster-vpcconnectivitysasl-scram): {{

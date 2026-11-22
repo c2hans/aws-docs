@@ -8,7 +8,7 @@ Registers an interceptor for the outbound dialer action, which runs when the use
 
 **Signature**
 
-```
+```typescript
 addOpenOutboundDialerInterceptor(
   interceptor: Interceptor<ContactInterceptorContext>,
   options?: RegisterInterceptorOptions
@@ -23,7 +23,7 @@ addOpenOutboundDialerInterceptor(
 
 **Usage**
 
-```
+```typescript
 // Block the outbound dialer from opening
 await service.addOpenOutboundDialerInterceptor(async (context) => {
   return { continue: false };

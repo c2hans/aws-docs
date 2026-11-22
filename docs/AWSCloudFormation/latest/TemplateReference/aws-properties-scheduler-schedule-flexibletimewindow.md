@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-scheduler-schedule-flexibletimewindow-syntax.json"></a>
 
-```
+```json
 {
   "[MaximumWindowInMinutes](#cfn-scheduler-schedule-flexibletimewindow-maximumwindowinminutes)" : {{Number}},
   "[Mode](#cfn-scheduler-schedule-flexibletimewindow-mode)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-scheduler-schedule-flexibletimewindow-syntax.yaml"></a>
 
-```
+```yaml
   [MaximumWindowInMinutes](#cfn-scheduler-schedule-flexibletimewindow-maximumwindowinminutes): {{Number}}
   [Mode](#cfn-scheduler-schedule-flexibletimewindow-mode): {{String}}
 ```

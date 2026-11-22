@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-rule-sendinappnotificationaction-syntax.json"></a>
 
-```
+```json
 {
   "[Content](#cfn-connect-rule-sendinappnotificationaction-content)" : {{NotificationContent}},
   "[Exclusion](#cfn-connect-rule-sendinappnotificationaction-exclusion)" : {{InAppNotificationRecipientType}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-rule-sendinappnotificationaction-syntax.yaml"></a>
 
-```
+```yaml
   [Content](#cfn-connect-rule-sendinappnotificationaction-content): {{
     NotificationContent}}
   [Exclusion](#cfn-connect-rule-sendinappnotificationaction-exclusion): {{

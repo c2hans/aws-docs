@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amazonmq-broker-ldapservermetadata-syntax.json"></a>
 
-```
+```json
 {
   "[Hosts](#cfn-amazonmq-broker-ldapservermetadata-hosts)" : {{[ String, ... ]}},
   "[RoleBase](#cfn-amazonmq-broker-ldapservermetadata-rolebase)" : {{String}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amazonmq-broker-ldapservermetadata-syntax.yaml"></a>
 
-```
+```yaml
   [Hosts](#cfn-amazonmq-broker-ldapservermetadata-hosts): {{
     - String}}
   [RoleBase](#cfn-amazonmq-broker-ldapservermetadata-rolebase): {{String}}

@@ -94,7 +94,7 @@ Updates an `IntegrationResponses`.
 #### PATCH schema
 <a name="apis-apiid-integrations-integrationid-integrationresponses-integrationresponseid-request-body-patch-example"></a>
 
-```
+```json
 {
   "integrationResponseKey": "string",
   "responseParameters": {
@@ -112,7 +112,7 @@ Updates an `IntegrationResponses`.
 #### IntegrationResponse schema
 <a name="apis-apiid-integrations-integrationid-integrationresponses-integrationresponseid-response-body-integrationresponse-example"></a>
 
-```
+```json
 {
   "integrationResponseId": "string",
   "integrationResponseKey": "string",
@@ -128,7 +128,7 @@ Updates an `IntegrationResponses`.
 #### BadRequestException schema
 <a name="apis-apiid-integrations-integrationid-integrationresponses-integrationresponseid-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -137,7 +137,7 @@ Updates an `IntegrationResponses`.
 #### NotFoundException schema
 <a name="apis-apiid-integrations-integrationid-integrationresponses-integrationresponseid-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -147,7 +147,7 @@ Updates an `IntegrationResponses`.
 #### ConflictException schema
 <a name="apis-apiid-integrations-integrationid-integrationresponses-integrationresponseid-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -156,7 +156,7 @@ Updates an `IntegrationResponses`.
 #### LimitExceededException schema
 <a name="apis-apiid-integrations-integrationid-integrationresponses-integrationresponseid-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

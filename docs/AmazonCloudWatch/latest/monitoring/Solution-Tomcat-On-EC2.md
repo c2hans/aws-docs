@@ -121,7 +121,7 @@ Replace {{AppName}} with a meaningful name that represents the Tomcat applicatio
 
 The EC2 metrics shown in this configuration (configuration shown outside the JMX block) only work for Linux and macOS instances. If you are using Windows instances, you can choose to omit these metrics in the configuration. For information about metrics collected on Windows instances, see [Metrics collected by the CloudWatch agent on Windows Server instances](metrics-collected-by-CloudWatch-agent.md#windows-metrics-enabled-by-CloudWatch-agent).
 
-```
+```json
 {
   "metrics": {
     "namespace": "CWAgent",

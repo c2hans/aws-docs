@@ -60,7 +60,7 @@ Before you perform a major version upgrade, Oracle recommends that you gather op
 
 To gather optimizer statistics, connect to the DB instance as the master user, and run the `DBMS_STATS.GATHER_DICTIONARY_STATS` procedure, as in the following example.
 
-```
+```sql
 EXEC DBMS_STATS.GATHER_DICTIONARY_STATS;
 ```
 

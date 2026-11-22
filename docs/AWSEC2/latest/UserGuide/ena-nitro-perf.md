@@ -154,13 +154,13 @@ The following list contains actions that you can take to tune your PPS performan
 
   **Enable fragment proxy mode**
 
-  ```
+  ```sh
   sudo insmod ena.ko enable_frag_bypass=1
   ```
 
   **Disable fragment proxy mode**
 
-  ```
+  ```sh
   sudo insmod ena.ko enable_frag_bypass=0
   ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-monitoringschedule-endpointinput-syntax.json"></a>
 
-```
+```json
 {
   "[EndpointName](#cfn-sagemaker-monitoringschedule-endpointinput-endpointname)" : {{String}},
   "[ExcludeFeaturesAttribute](#cfn-sagemaker-monitoringschedule-endpointinput-excludefeaturesattribute)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-monitoringschedule-endpointinput-syntax.yaml"></a>
 
-```
+```yaml
   [EndpointName](#cfn-sagemaker-monitoringschedule-endpointinput-endpointname): {{String}}
   [ExcludeFeaturesAttribute](#cfn-sagemaker-monitoringschedule-endpointinput-excludefeaturesattribute): {{String}}
   [LocalPath](#cfn-sagemaker-monitoringschedule-endpointinput-localpath): {{String}}

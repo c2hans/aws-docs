@@ -46,7 +46,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-refactorspaces-route-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RefactorSpaces::Route",
   "Properties" : {
@@ -64,7 +64,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-refactorspaces-route-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RefactorSpaces::Route
 Properties:
   [ApplicationIdentifier](#cfn-refactorspaces-route-applicationidentifier): {{String}}

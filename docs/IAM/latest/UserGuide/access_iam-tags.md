@@ -34,7 +34,7 @@ This example shows how you might create an identity-based policy that allows any
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -64,7 +64,7 @@ This example shows how you might create an identity-based policy that allows rem
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

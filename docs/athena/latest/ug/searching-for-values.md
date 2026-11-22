@@ -8,7 +8,7 @@ To determine if a specific value exists inside a JSON-encoded array, use the `js
 
 The following query lists the names of the users who are participating in "project2".
 
-```
+```sql
 WITH dataset AS (
   SELECT * FROM (VALUES
     (JSON '{"name": "Bob Smith", "org": "legal", "projects": ["project1"]}'),
@@ -43,7 +43,7 @@ The following query example lists the names of users who have completed projects
 **Note**
 When using `CAST` to `MAP` you can specify the key element as `VARCHAR` (native String in Presto), but leave the value as JSON, because the values in the `MAP` are of different types: String for the first key-value pair, and Boolean for the second.
 
-```
+```sql
 WITH dataset AS (
   SELECT * FROM (VALUES
     (JSON '{"name": "Bob Smith",

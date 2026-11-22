@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-s3-accessgrantslocation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::S3::AccessGrantsLocation",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-s3-accessgrantslocation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::S3::AccessGrantsLocation
 Properties:
   [IamRoleArn](#cfn-s3-accessgrantslocation-iamrolearn): {{String}}

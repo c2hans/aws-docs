@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-playbackconfiguration-dashconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ManifestEndpointPrefix](#cfn-mediatailor-playbackconfiguration-dashconfiguration-manifestendpointprefix)" : {{String}},
   "[MpdLocation](#cfn-mediatailor-playbackconfiguration-dashconfiguration-mpdlocation)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-playbackconfiguration-dashconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ManifestEndpointPrefix](#cfn-mediatailor-playbackconfiguration-dashconfiguration-manifestendpointprefix): {{String}}
   [MpdLocation](#cfn-mediatailor-playbackconfiguration-dashconfiguration-mpdlocation): {{String}}
   [OriginManifestType](#cfn-mediatailor-playbackconfiguration-dashconfiguration-originmanifesttype): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-route53resolver-firewallrulegroup-firewalladvancedcontentcategoryconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Category](#cfn-route53resolver-firewallrulegroup-firewalladvancedcontentcategoryconfig-category)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-route53resolver-firewallrulegroup-firewalladvancedcontentcategoryconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Category](#cfn-route53resolver-firewallrulegroup-firewalladvancedcontentcategoryconfig-category): {{String}}
 ```
 

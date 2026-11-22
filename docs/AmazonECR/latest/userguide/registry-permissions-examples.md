@@ -23,7 +23,7 @@ Note the following:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":[
@@ -57,7 +57,7 @@ The following registry permissions policy has two statements. Each statement all
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":[
@@ -105,7 +105,7 @@ The following registry permissions policy allows all IAM principals (users and r
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement":[

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-stepfunctions-statemachine-encryptionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[KmsDataKeyReusePeriodSeconds](#cfn-stepfunctions-statemachine-encryptionconfiguration-kmsdatakeyreuseperiodseconds)" : {{Integer}},
   "[KmsKeyId](#cfn-stepfunctions-statemachine-encryptionconfiguration-kmskeyid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-stepfunctions-statemachine-encryptionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [KmsDataKeyReusePeriodSeconds](#cfn-stepfunctions-statemachine-encryptionconfiguration-kmsdatakeyreuseperiodseconds): {{Integer}}
   [KmsKeyId](#cfn-stepfunctions-statemachine-encryptionconfiguration-kmskeyid): {{String}}
   [Type](#cfn-stepfunctions-statemachine-encryptionconfiguration-type): {{String}}

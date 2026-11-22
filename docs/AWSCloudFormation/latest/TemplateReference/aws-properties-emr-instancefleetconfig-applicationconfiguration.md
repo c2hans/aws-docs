@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emr-instancefleetconfig-applicationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Classification](#cfn-emr-instancefleetconfig-applicationconfiguration-classification)" : {{String}},
   "[ConfigurationProperties](#cfn-emr-instancefleetconfig-applicationconfiguration-configurationproperties)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emr-instancefleetconfig-applicationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Classification](#cfn-emr-instancefleetconfig-applicationconfiguration-classification): {{String}}
   [ConfigurationProperties](#cfn-emr-instancefleetconfig-applicationconfiguration-configurationproperties): {{
     {{Key}}: {{Value}}}}

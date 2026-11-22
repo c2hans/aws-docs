@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amplifyuibuilder-form-fieldposition-syntax.json"></a>
 
-```
+```json
 {
   "[Below](#cfn-amplifyuibuilder-form-fieldposition-below)" : {{String}},
   "[Fixed](#cfn-amplifyuibuilder-form-fieldposition-fixed)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amplifyuibuilder-form-fieldposition-syntax.yaml"></a>
 
-```
+```yaml
   [Below](#cfn-amplifyuibuilder-form-fieldposition-below): {{String}}
   [Fixed](#cfn-amplifyuibuilder-form-fieldposition-fixed): {{String}}
   [RightOf](#cfn-amplifyuibuilder-form-fieldposition-rightof): {{String}}

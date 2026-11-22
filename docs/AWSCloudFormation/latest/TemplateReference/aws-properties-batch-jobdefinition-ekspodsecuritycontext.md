@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-ekspodsecuritycontext-syntax.json"></a>
 
-```
+```json
 {
   "[FsGroup](#cfn-batch-jobdefinition-ekspodsecuritycontext-fsgroup)" : {{Integer}},
   "[RunAsGroup](#cfn-batch-jobdefinition-ekspodsecuritycontext-runasgroup)" : {{Integer}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-ekspodsecuritycontext-syntax.yaml"></a>
 
-```
+```yaml
   [FsGroup](#cfn-batch-jobdefinition-ekspodsecuritycontext-fsgroup): {{Integer}}
   [RunAsGroup](#cfn-batch-jobdefinition-ekspodsecuritycontext-runasgroup): {{Integer}}
   [RunAsNonRoot](#cfn-batch-jobdefinition-ekspodsecuritycontext-runasnonroot): {{Boolean}}

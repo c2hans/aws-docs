@@ -49,13 +49,13 @@ You can assign secondary IP addresses to the network interface for an instance a
 **To assign a secondary IP address at launch**
 Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command with the `--secondary-private-ip-addresses` option.
 
-```
+```bash
 --secondary-private-ip-addresses {{10.251.50.12}}
 ```
 
 To let Amazon EC2 choose the IP address, use the `--secondary-private-ip-address-count` option instead. The following example assigns one secondary IP address.
 
-```
+```bash
 --secondary-private-ip-address-count 1
 ```
 
@@ -64,7 +64,7 @@ Alternatively, you can create a network interface. For more information, see [Cr
 **To assign a secondary IP address after launch**
 Use the [assign-private-ip-addresses](https://docs.aws.amazon.com/cli/latest/reference/ec2/assign-private-ip-addresses.html) command with the `--private-ip-addresses` option.
 
-```
+```bash
 aws ec2 assign-private-ip-addresses \
     --network-interface-ids {{eni-1234567890abcdef0}} \
     --private-ip-addresses {{10.251.50.12}}
@@ -72,7 +72,7 @@ aws ec2 assign-private-ip-addresses \
 
 To let Amazon EC2 choose the IPv4 address, use the `--secondary-private-ip-address-count` parameter instead. The following example assigns one IPv4 address.
 
-```
+```bash
 aws ec2 assign-private-ip-addresses \
     --network-interface-ids {{eni-1234567890abcdef0}} \
     --secondary-private-ip-address-count 1
@@ -87,7 +87,7 @@ You must create a network interface. For more information, see [Create a network
 **To assign a secondary IP address after launch**
 Use the [Register-EC2PrivateIpAddress](https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2PrivateIpAddress.html) cmdlet with the `-PrivateIpAddress` parameter.
 
-```
+```powershell
 Register-EC2PrivateIpAddress `
     -NetworkInterfaceId {{eni-1234567890abcdef0}} `
     -PrivateIpAddress {{10.251.50.12}}
@@ -95,7 +95,7 @@ Register-EC2PrivateIpAddress `
 
 To let Amazon EC2 choose the IPv4 addresses, use the `-SecondaryPrivateIpAddressCount` parameter instead. The following example assigns one IPv4 address.
 
-```
+```powershell
 Register-EC2PrivateIpAddress `
     -NetworkInterfaceId {{eni-1234567890abcdef0}} `
     -SecondaryPrivateIpAddressCount 1
@@ -141,7 +141,7 @@ If you no longer require a secondary IP address, you can unassign it from the in
 **To unassign a secondary private IP address**
 Use the [unassign-private-ip-addresses](https://docs.aws.amazon.com/cli/latest/reference/ec2/unassign-private-ip-addresses.html) command.
 
-```
+```bash
 aws ec2 unassign-private-ip-addresses \
     --network-interface {{eni-1234567890abcdef0}}\
     --private-ip-addresses {{10.251.50.12}}
@@ -153,7 +153,7 @@ aws ec2 unassign-private-ip-addresses \
 **To unassign a secondary private IP address**
 Use the [Unregister-EC2PrivateIpAddress](https://docs.aws.amazon.com/powershell/latest/reference/items/Unregister-EC2PrivateIpAddress.html) cmdlet.
 
-```
+```powershell
 Unregister-EC2PrivateIpAddress `
     -NetworkInterface {{eni-1234567890abcdef0}} `
     -PrivateIpAddress {{10.251.50.12}}

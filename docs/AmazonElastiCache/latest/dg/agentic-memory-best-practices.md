@@ -21,7 +21,7 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/agentic-memo
 + **Scope memories by user ID** – Always include a `user_id` parameter when storing and searching memories to prevent information leaking between users.
 + **Use TAG filters for efficient isolation** – When querying the vector index, use TAG filters (for example, `@user_id:{user_123}`) to pre-filter results by user before performing KNN search. This runs as a single atomic operation, providing both isolation and performance.
 
-  ```
+  ```python
   # Example: TAG-filtered vector search for user isolation
   results = client.execute_command(
       "FT.SEARCH", "agent_memory",

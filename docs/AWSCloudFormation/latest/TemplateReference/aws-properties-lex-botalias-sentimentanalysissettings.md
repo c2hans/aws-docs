@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-botalias-sentimentanalysissettings-syntax.json"></a>
 
-```
+```json
 {
   "[DetectSentiment](#cfn-lex-botalias-sentimentanalysissettings-detectsentiment)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-botalias-sentimentanalysissettings-syntax.yaml"></a>
 
-```
+```yaml
   [DetectSentiment](#cfn-lex-botalias-sentimentanalysissettings-detectsentiment): {{Boolean}}
 ```
 

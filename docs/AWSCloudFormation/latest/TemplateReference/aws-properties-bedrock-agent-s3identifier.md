@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-agent-s3identifier-syntax.json"></a>
 
-```
+```json
 {
   "[S3BucketName](#cfn-bedrock-agent-s3identifier-s3bucketname)" : {{String}},
   "[S3ObjectKey](#cfn-bedrock-agent-s3identifier-s3objectkey)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-agent-s3identifier-syntax.yaml"></a>
 
-```
+```yaml
   [S3BucketName](#cfn-bedrock-agent-s3identifier-s3bucketname): {{String}}
   [S3ObjectKey](#cfn-bedrock-agent-s3identifier-s3objectkey): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-budgets-budget-notificationwithsubscribers-syntax.json"></a>
 
-```
+```json
 {
   "[Notification](#cfn-budgets-budget-notificationwithsubscribers-notification)" : {{Notification}},
   "[Subscribers](#cfn-budgets-budget-notificationwithsubscribers-subscribers)" : {{[ Subscriber, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-budgets-budget-notificationwithsubscribers-syntax.yaml"></a>
 
-```
+```yaml
   [Notification](#cfn-budgets-budget-notificationwithsubscribers-notification): {{
     Notification}}
   [Subscribers](#cfn-budgets-budget-notificationwithsubscribers-subscribers): {{

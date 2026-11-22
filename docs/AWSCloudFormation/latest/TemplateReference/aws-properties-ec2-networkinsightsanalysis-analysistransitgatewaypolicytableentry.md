@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-networkinsightsanalysis-analysistransitgatewaypolicytableentry-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationCidr](#cfn-ec2-networkinsightsanalysis-analysistransitgatewaypolicytableentry-destinationcidr)" : {{String}},
   "[DestinationPortRange](#cfn-ec2-networkinsightsanalysis-analysistransitgatewaypolicytableentry-destinationportrange)" : {{PortRange}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-networkinsightsanalysis-analysistransitgatewaypolicytableentry-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationCidr](#cfn-ec2-networkinsightsanalysis-analysistransitgatewaypolicytableentry-destinationcidr): {{String}}
   [DestinationPortRange](#cfn-ec2-networkinsightsanalysis-analysistransitgatewaypolicytableentry-destinationportrange): {{
     PortRange}}

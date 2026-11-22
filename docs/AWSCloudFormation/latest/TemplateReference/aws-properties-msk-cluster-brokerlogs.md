@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-cluster-brokerlogs-syntax.json"></a>
 
-```
+```json
 {
   "[CloudWatchLogs](#cfn-msk-cluster-brokerlogs-cloudwatchlogs)" : {{CloudWatchLogs}},
   "[Firehose](#cfn-msk-cluster-brokerlogs-firehose)" : {{Firehose}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-cluster-brokerlogs-syntax.yaml"></a>
 
-```
+```yaml
   [CloudWatchLogs](#cfn-msk-cluster-brokerlogs-cloudwatchlogs): {{
     CloudWatchLogs}}
   [Firehose](#cfn-msk-cluster-brokerlogs-firehose): {{

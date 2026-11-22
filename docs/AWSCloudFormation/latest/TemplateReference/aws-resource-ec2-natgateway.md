@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-natgateway-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::NatGateway",
   "Properties" : {
@@ -46,7 +46,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-natgateway-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::NatGateway
 Properties:
   [AllocationId](#cfn-ec2-natgateway-allocationid): {{String}}
@@ -202,7 +202,7 @@ The following example creates a public NAT gateway and a route that sends all in
 #### JSON
 <a name="aws-resource-ec2-natgateway--examples--NAT_gateway--json"></a>
 
-```
+```json
 "NATGateway" : {
    "Type" : "AWS::EC2::NatGateway",
    "Properties" : {
@@ -236,7 +236,7 @@ The following example creates a public NAT gateway and a route that sends all in
 #### YAML
 <a name="aws-resource-ec2-natgateway--examples--NAT_gateway--yaml"></a>
 
-```
+```yaml
 NATGateway:
    Type: AWS::EC2::NatGateway
    Properties:

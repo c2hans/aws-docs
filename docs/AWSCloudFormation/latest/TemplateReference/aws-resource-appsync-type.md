@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-appsync-type-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppSync::Type",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-appsync-type-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppSync::Type
 Properties:
   [ApiId](#cfn-appsync-type-apiid): {{String}}

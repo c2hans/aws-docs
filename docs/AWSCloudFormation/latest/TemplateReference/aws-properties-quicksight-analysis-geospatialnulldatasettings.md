@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-geospatialnulldatasettings-syntax.json"></a>
 
-```
+```json
 {
   "[SymbolStyle](#cfn-quicksight-analysis-geospatialnulldatasettings-symbolstyle)" : {{GeospatialNullSymbolStyle}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-geospatialnulldatasettings-syntax.yaml"></a>
 
-```
+```yaml
   [SymbolStyle](#cfn-quicksight-analysis-geospatialnulldatasettings-symbolstyle): {{
     GeospatialNullSymbolStyle}}
 ```

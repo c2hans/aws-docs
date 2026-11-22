@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-tablerowconditionalformatting-syntax.json"></a>
 
-```
+```json
 {
   "[BackgroundColor](#cfn-quicksight-analysis-tablerowconditionalformatting-backgroundcolor)" : {{ConditionalFormattingColor}},
   "[TextColor](#cfn-quicksight-analysis-tablerowconditionalformatting-textcolor)" : {{ConditionalFormattingColor}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-tablerowconditionalformatting-syntax.yaml"></a>
 
-```
+```yaml
   [BackgroundColor](#cfn-quicksight-analysis-tablerowconditionalformatting-backgroundcolor): {{
     ConditionalFormattingColor}}
   [TextColor](#cfn-quicksight-analysis-tablerowconditionalformatting-textcolor): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-knowledgebase-querygenerationcolumn-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-bedrock-knowledgebase-querygenerationcolumn-description)" : {{String}},
   "[Inclusion](#cfn-bedrock-knowledgebase-querygenerationcolumn-inclusion)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-knowledgebase-querygenerationcolumn-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-bedrock-knowledgebase-querygenerationcolumn-description): {{String}}
   [Inclusion](#cfn-bedrock-knowledgebase-querygenerationcolumn-inclusion): {{String}}
   [Name](#cfn-bedrock-knowledgebase-querygenerationcolumn-name): {{String}}

@@ -13,7 +13,7 @@ The following code example shows how to use `CreateMultipartUpload`.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/s3/src/main/java/com/example/s3/directorybucket#code-examples).
 Create a multipart upload in a directory bucket.
 
-```
+```java
 import com.example.s3.util.S3DirectoryBucketUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

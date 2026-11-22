@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-routingprofile-routingprofilequeueconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Delay](#cfn-connect-routingprofile-routingprofilequeueconfig-delay)" : {{Integer}},
   "[Priority](#cfn-connect-routingprofile-routingprofilequeueconfig-priority)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-routingprofile-routingprofilequeueconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Delay](#cfn-connect-routingprofile-routingprofilequeueconfig-delay): {{Integer}}
   [Priority](#cfn-connect-routingprofile-routingprofilequeueconfig-priority): {{Integer}}
   [QueueReference](#cfn-connect-routingprofile-routingprofilequeueconfig-queuereference): {{

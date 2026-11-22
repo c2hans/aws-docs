@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-oam-sink-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Oam::Sink",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-oam-sink-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Oam::Sink
 Properties:
   [Name](#cfn-oam-sink-name): {{String}}
@@ -112,7 +112,7 @@ This example creates a sink that allows all accounts in a specified organization
 #### JSON
 <a name="aws-resource-oam-sink--examples--Sample_sink_to_connect_that_permits_links_to_all_accounts_in_an_organization--json"></a>
 
-```
+```json
 "Name": "SampleSink",
 "Policy": {
    "Version": "2012-10-17",
@@ -137,7 +137,7 @@ This example creates a sink that allows all accounts in a specified organization
 #### YAML
 <a name="aws-resource-oam-sink--examples--Sample_sink_to_connect_that_permits_links_to_all_accounts_in_an_organization--yaml"></a>
 
-```
+```yaml
 Name: "SampleSink"
 Policy:
   Version: '2012-10-17		 	 	 '
@@ -165,7 +165,7 @@ This example creates a sink that allows the account with the ID `111111111111` t
 #### JSON
 <a name="aws-resource-oam-sink--examples--Sample_sink_that_permits_a_link_to_an_individual_account--json"></a>
 
-```
+```json
 "Name": "SampleSink",
 "Policy": {
    "Version": "2012-10-17",
@@ -192,7 +192,7 @@ This example creates a sink that allows the account with the ID `111111111111` t
 #### YAML
 <a name="aws-resource-oam-sink--examples--Sample_sink_that_permits_a_link_to_an_individual_account--yaml"></a>
 
-```
+```yaml
 Name: "SampleSink"
 Policy:
   Version: '2012-10-17		 	 	 '
@@ -219,7 +219,7 @@ This example creates a sink that allows the account with the ID `111111111111` t
 #### JSON
 <a name="aws-resource-oam-sink--examples--Sample_sink_for_applications_support--json"></a>
 
-```
+```json
 "Name": "SampleSink",
  "Policy": {
     "Version": "2012-10-17",
@@ -247,7 +247,7 @@ This example creates a sink that allows the account with the ID `111111111111` t
 #### YAML
 <a name="aws-resource-oam-sink--examples--Sample_sink_for_applications_support--yaml"></a>
 
-```
+```yaml
 Name: "SampleSink"
  Policy:
    Version: '2012-10-17		 	 	 '

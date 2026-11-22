@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-colorcorrectionsettings-syntax.json"></a>
 
-```
+```json
 {
   "[GlobalColorCorrections](#cfn-medialive-channel-colorcorrectionsettings-globalcolorcorrections)" : {{[ ColorCorrection, ... ]}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-colorcorrectionsettings-syntax.yaml"></a>
 
-```
+```yaml
   [GlobalColorCorrections](#cfn-medialive-channel-colorcorrectionsettings-globalcolorcorrections): {{
     - ColorCorrection}}
 ```

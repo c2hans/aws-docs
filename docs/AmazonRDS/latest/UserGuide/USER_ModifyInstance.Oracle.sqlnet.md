@@ -81,7 +81,7 @@ aws rds download-db-log-file-portion ^
 
 After you connect to the Oracle DB instance in a SQL client, the following query lists the sqlnet.ora parameters.
 
-```
+```sql
 1. SELECT * FROM TABLE
 2.    (rdsadmin.rds_file_util.read_text_file(
 3.         p_directory => 'BDUMP',

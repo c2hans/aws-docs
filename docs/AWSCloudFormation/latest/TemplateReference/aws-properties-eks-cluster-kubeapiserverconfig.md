@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-cluster-kubeapiserverconfig-syntax.json"></a>
 
-```
+```json
 {
   "[EventTtl](#cfn-eks-cluster-kubeapiserverconfig-eventttl)" : {{String}},
   "[ServiceNodePortRange](#cfn-eks-cluster-kubeapiserverconfig-servicenodeportrange)" : {{ServiceNodePortRange}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-cluster-kubeapiserverconfig-syntax.yaml"></a>
 
-```
+```yaml
   [EventTtl](#cfn-eks-cluster-kubeapiserverconfig-eventttl): {{String}}
   [ServiceNodePortRange](#cfn-eks-cluster-kubeapiserverconfig-servicenodeportrange): {{
     ServiceNodePortRange}}

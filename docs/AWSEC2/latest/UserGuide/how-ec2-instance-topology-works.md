@@ -46,7 +46,7 @@ In the following example output, `i-1111111111example` and `i-2222222222example`
 **Note**
 The response contains 3 or more network nodes. For information about the number of network nodes in the response for each supported instance type, see [Instance types](ec2-instance-topology-prerequisites.md#inst-net-topology-prereqs-instance-types).
 
-```
+```JSON
 {
     "Instances": [
         {
@@ -121,7 +121,7 @@ In the following example output, `cr-1111111111example` is located on `nn-222222
 **Note**
 The response contains 1, 2, or 3 network nodes depending on the type of Capacity Reservation.
 
-```
+```JSON
 {
     "CapacityReservations": [
         {

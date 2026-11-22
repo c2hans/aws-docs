@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-logs-scheduledquery-tagsitems-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-logs-scheduledquery-tagsitems-key)" : {{String}},
   "[Value](#cfn-logs-scheduledquery-tagsitems-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-logs-scheduledquery-tagsitems-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-logs-scheduledquery-tagsitems-key): {{String}}
   [Value](#cfn-logs-scheduledquery-tagsitems-value): {{String}}
 ```

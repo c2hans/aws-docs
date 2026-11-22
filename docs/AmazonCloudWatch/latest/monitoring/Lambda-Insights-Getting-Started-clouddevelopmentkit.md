@@ -10,7 +10,7 @@ The commands in this section are in TypeScript.
 
 First, update the function permissions.
 
-```
+```typescript
 executionRole.addManagedPolicy(
  ManagedPolicy.fromAwsManagedPolicyName('CloudWatchLambdaInsightsExecutionRolePolicy')
 );
@@ -18,7 +18,7 @@ executionRole.addManagedPolicy(
 
 Next, install the extension on the Lambda function. Replace the ARN value for the `layerArn` parameter with the ARN matching your Region and the extension version that you want to use. For more information, see [Available versions of the Lambda Insights extension](Lambda-Insights-extension-versions.md).
 
-```
+```typescript
 import lambda = require('@aws-cdk/aws-lambda');
 const layerArn = 'arn:aws:lambda:us-west-1:580247275435:layer:LambdaInsightsExtension:14';
 const layer = lambda.LayerVersion.fromLayerVersionArn(this, 'LayerFromArn', layerArn);
@@ -26,7 +26,7 @@ const layer = lambda.LayerVersion.fromLayerVersionArn(this, 'LayerFromArn', laye
 
 If necessary, enable the virtual private cloud (VPC) endpoint for CloudWatch Logs. This step is necessary only for functions running in a private subnet with no internet access, and if you have not already configured a CloudWatch Logs VPC endpoint.
 
-```
+```typescript
 const cloudWatchLogsEndpoint = vpc.addInterfaceEndpoint('cwl-gateway', {
   service: InterfaceVpcEndpointAwsService.CLOUDWATCH_LOGS,
 });

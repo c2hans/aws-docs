@@ -91,7 +91,7 @@ Updates an `Integration`.
 #### PATCH schema
 <a name="apis-apiid-integrations-integrationid-request-body-patch-example"></a>
 
-```
+```json
 {
   "description": "string",
   "integrationType": enum,
@@ -124,7 +124,7 @@ Updates an `Integration`.
 #### Integration schema
 <a name="apis-apiid-integrations-integrationid-response-body-integration-example"></a>
 
-```
+```json
 {
   "integrationId": "string",
   "description": "string",
@@ -157,7 +157,7 @@ Updates an `Integration`.
 #### BadRequestException schema
 <a name="apis-apiid-integrations-integrationid-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -166,7 +166,7 @@ Updates an `Integration`.
 #### NotFoundException schema
 <a name="apis-apiid-integrations-integrationid-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -176,7 +176,7 @@ Updates an `Integration`.
 #### ConflictException schema
 <a name="apis-apiid-integrations-integrationid-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -185,7 +185,7 @@ Updates an `Integration`.
 #### LimitExceededException schema
 <a name="apis-apiid-integrations-integrationid-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

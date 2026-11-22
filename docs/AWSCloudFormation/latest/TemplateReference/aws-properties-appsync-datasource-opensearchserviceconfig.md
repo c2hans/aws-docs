@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appsync-datasource-opensearchserviceconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AwsRegion](#cfn-appsync-datasource-opensearchserviceconfig-awsregion)" : {{String}},
   "[Endpoint](#cfn-appsync-datasource-opensearchserviceconfig-endpoint)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appsync-datasource-opensearchserviceconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AwsRegion](#cfn-appsync-datasource-opensearchserviceconfig-awsregion): {{String}}
   [Endpoint](#cfn-appsync-datasource-opensearchserviceconfig-endpoint): {{String}}
 ```

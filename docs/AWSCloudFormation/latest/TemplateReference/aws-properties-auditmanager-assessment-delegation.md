@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-auditmanager-assessment-delegation-syntax.json"></a>
 
-```
+```json
 {
   "[AssessmentId](#cfn-auditmanager-assessment-delegation-assessmentid)" : {{String}},
   "[AssessmentName](#cfn-auditmanager-assessment-delegation-assessmentname)" : {{String}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-auditmanager-assessment-delegation-syntax.yaml"></a>
 
-```
+```yaml
   [AssessmentId](#cfn-auditmanager-assessment-delegation-assessmentid): {{String}}
   [AssessmentName](#cfn-auditmanager-assessment-delegation-assessmentname): {{String}}
   [Comment](#cfn-auditmanager-assessment-delegation-comment): {{String}}

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-inputchannellevel-syntax.json"></a>
 
-```
+```json
 {
   "[Gain](#cfn-medialive-channel-inputchannellevel-gain)" : {{Integer}},
   "[InputChannel](#cfn-medialive-channel-inputchannellevel-inputchannel)" : {{Integer}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-inputchannellevel-syntax.yaml"></a>
 
-```
+```yaml
   [Gain](#cfn-medialive-channel-inputchannellevel-gain): {{Integer}}
   [InputChannel](#cfn-medialive-channel-inputchannellevel-inputchannel): {{Integer}}
 ```

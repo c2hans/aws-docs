@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sagemaker-aiworkloadconfig-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SageMaker::AIWorkloadConfig",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sagemaker-aiworkloadconfig-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SageMaker::AIWorkloadConfig
 Properties:
   [AIWorkloadConfigName](#cfn-sagemaker-aiworkloadconfig-aiworkloadconfigname): {{String}}

@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-personalize-solution-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Personalize::Solution",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-personalize-solution-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Personalize::Solution
 Properties:
   [DatasetGroupArn](#cfn-personalize-solution-datasetgrouparn): {{String}}
@@ -151,7 +151,7 @@ The following example creates an Amazon Personalize solution with the User-Perso
 #### JSON
 <a name="aws-resource-personalize-solution--examples--Creating_a_solution--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -173,7 +173,7 @@ The following example creates an Amazon Personalize solution with the User-Perso
 #### YAML
 <a name="aws-resource-personalize-solution--examples--Creating_a_solution--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   MySolution:

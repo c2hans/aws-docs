@@ -77,7 +77,7 @@ Creates a new product page for a portal product.
 #### POST schema
 <a name="portalproducts-portalproductid-productpages-request-body-post-example"></a>
 
-```
+```json
 {
   "displayContent": {
     "title": "string",
@@ -92,7 +92,7 @@ Creates a new product page for a portal product.
 #### ListProductPagesResponseContent schema
 <a name="portalproducts-portalproductid-productpages-response-body-listproductpagesresponsecontent-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "items": [
@@ -109,7 +109,7 @@ Creates a new product page for a portal product.
 #### CreateProductPageResponseContent schema
 <a name="portalproducts-portalproductid-productpages-response-body-createproductpageresponsecontent-example"></a>
 
-```
+```json
 {
   "displayContent": {
     "title": "string",
@@ -124,7 +124,7 @@ Creates a new product page for a portal product.
 #### BadRequestExceptionResponseContent schema
 <a name="portalproducts-portalproductid-productpages-response-body-badrequestexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -133,7 +133,7 @@ Creates a new product page for a portal product.
 #### AccessDeniedExceptionResponseContent schema
 <a name="portalproducts-portalproductid-productpages-response-body-accessdeniedexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -142,7 +142,7 @@ Creates a new product page for a portal product.
 #### NotFoundExceptionResponseContent schema
 <a name="portalproducts-portalproductid-productpages-response-body-notfoundexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -152,7 +152,7 @@ Creates a new product page for a portal product.
 #### LimitExceededExceptionResponseContent schema
 <a name="portalproducts-portalproductid-productpages-response-body-limitexceededexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

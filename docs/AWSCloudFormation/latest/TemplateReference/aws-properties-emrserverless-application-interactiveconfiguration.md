@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrserverless-application-interactiveconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[LivyEndpointEnabled](#cfn-emrserverless-application-interactiveconfiguration-livyendpointenabled)" : {{Boolean}},
   "[SessionEnabled](#cfn-emrserverless-application-interactiveconfiguration-sessionenabled)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrserverless-application-interactiveconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [LivyEndpointEnabled](#cfn-emrserverless-application-interactiveconfiguration-livyendpointenabled): {{Boolean}}
   [SessionEnabled](#cfn-emrserverless-application-interactiveconfiguration-sessionenabled): {{Boolean}}
   [StudioEnabled](#cfn-emrserverless-application-interactiveconfiguration-studioenabled): {{Boolean}}

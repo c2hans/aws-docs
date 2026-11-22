@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-accesspoint-vpcconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[VpcId](#cfn-s3-accesspoint-vpcconfiguration-vpcid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-accesspoint-vpcconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [VpcId](#cfn-s3-accesspoint-vpcconfiguration-vpcid): {{String}}
 ```
 
@@ -51,7 +51,7 @@ The following example creates an Amazon S3 access point restricted to a virtual 
 #### JSON
 <a name="aws-properties-s3-accesspoint-vpcconfiguration--examples--Create_an_S3_Access_Point_restricted_to_a_VPC--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -148,7 +148,7 @@ The following example creates an Amazon S3 access point restricted to a virtual 
 #### YAML
 <a name="aws-properties-s3-accesspoint-vpcconfiguration--examples--Create_an_S3_Access_Point_restricted_to_a_VPC--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   S3Bucket:

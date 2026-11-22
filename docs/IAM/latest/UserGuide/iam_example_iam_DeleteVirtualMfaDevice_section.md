@@ -27,12 +27,12 @@ For more information, see [Deactivating MFA devices](https://docs.aws.amazon.com
 **Tools for PowerShell V4**
 **Example 1: This example deletes the IAM virtual MFA device whose ARN is `arn:aws:iam::123456789012:mfa/bob`.**
 
-```
+```powershell
 Remove-IAMVirtualMFADevice -SerialNumber arn:aws:iam::123456789012:mfa/bob
 ```
 **Example 2: This example checks to see whether the IAM user Theresa has an MFA device assigned. If one is found, the device is disabled for the IAM user. If the device is virtual, then it is also deleted.**
 
-```
+```powershell
 $mfa = Get-IAMMFADevice -UserName Theresa
 if ($mfa) {
     Disable-IAMMFADevice -SerialNumber $mfa.SerialNumber -UserName $name
@@ -44,12 +44,12 @@ if ($mfa) {
 **Tools for PowerShell V5**
 **Example 1: This example deletes the IAM virtual MFA device whose ARN is `arn:aws:iam::123456789012:mfa/bob`.**
 
-```
+```powershell
 Remove-IAMVirtualMFADevice -SerialNumber arn:aws:iam::123456789012:mfa/bob
 ```
 **Example 2: This example checks to see whether the IAM user Theresa has an MFA device assigned. If one is found, the device is disabled for the IAM user. If the device is virtual, then it is also deleted.**
 
-```
+```powershell
 $mfa = Get-IAMMFADevice -UserName Theresa
 if ($mfa) {
     Disable-IAMMFADevice -SerialNumber $mfa.SerialNumber -UserName $name

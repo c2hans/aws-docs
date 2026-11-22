@@ -62,7 +62,7 @@ You can provide your own stack deployment file, or have Git sync create one for 
 
 The following is an example of a Git sync stack deployment file:
 
-```
+```yaml
 template-file-path: fargate-srvc/my-stack-template.yaml
 
 parameters:

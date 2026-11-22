@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-domain-domainstats-syntax.json"></a>
 
-```
+```json
 {
   "[MeteringProfileCount](#cfn-customerprofiles-domain-domainstats-meteringprofilecount)" : {{Number}},
   "[ObjectCount](#cfn-customerprofiles-domain-domainstats-objectcount)" : {{Number}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-domain-domainstats-syntax.yaml"></a>
 
-```
+```yaml
   [MeteringProfileCount](#cfn-customerprofiles-domain-domainstats-meteringprofilecount): {{Number}}
   [ObjectCount](#cfn-customerprofiles-domain-domainstats-objectcount): {{Number}}
   [ProfileCount](#cfn-customerprofiles-domain-domainstats-profilecount): {{Number}}

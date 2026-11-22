@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-fsx-s3accesspointattachment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::FSx::S3AccessPointAttachment",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-fsx-s3accesspointattachment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::FSx::S3AccessPointAttachment
 Properties:
   [Name](#cfn-fsx-s3accesspointattachment-name): {{String}}

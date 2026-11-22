@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-forecast-dataset-encryptionconfig-syntax.json"></a>
 
-```
+```json
 {
   "[KmsKeyArn](#cfn-forecast-dataset-encryptionconfig-kmskeyarn)" : {{String}},
   "[RoleArn](#cfn-forecast-dataset-encryptionconfig-rolearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-forecast-dataset-encryptionconfig-syntax.yaml"></a>
 
-```
+```yaml
   [KmsKeyArn](#cfn-forecast-dataset-encryptionconfig-kmskeyarn): {{String}}
   [RoleArn](#cfn-forecast-dataset-encryptionconfig-rolearn): {{String}}
 ```

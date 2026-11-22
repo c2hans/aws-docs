@@ -47,7 +47,7 @@ This occurs because CloudTrail logs the tool name without the namespace prefix u
 
 The following example shows a CloudTrail log entry that demonstrates the `CallReadWriteTool` action.
 
-```
+```json
 {
   "eventVersion": "1.08",
   "eventCategory": "Data",

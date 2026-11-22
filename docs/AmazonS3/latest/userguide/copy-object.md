@@ -116,7 +116,7 @@ The following C\# example uses the high-level SDK for .NET to copy objects that 
 
 This example makes a copy of an object that is a maximum of 5 GB. For information about setting up and running the code examples, see [Getting Started with the AWS SDK for .NET](https://docs.aws.amazon.com/sdk-for-net/latest/developer-guide/net-dg-setup.html) in the *AWS SDK for .NET Developer Guide*.
 
-```
+```csharp
 using Amazon;
 using Amazon.S3;
 using Amazon.S3.Model;
@@ -184,7 +184,7 @@ The following PHP example illustrates the use of the `copyObject()` method to co
 | 1 | Create an instance of an Amazon S3 client by using the `Aws\S3\S3Client` class constructor. |
 | 2 | To make multiple copies of an object, you run a batch of calls to the Amazon S3 client [getCommand()](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.AwsClientInterface.html#_getCommand) method, which is inherited from the [Aws\\CommandInterface](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CommandInterface.html) class. You provide the `CopyObject` command as the first argument and an array containing the source bucket, source key name, target bucket, and target key name as the second argument.  |
 
-```
+```PHP
  require 'vendor/autoload.php';
 
 use Aws\CommandPool;
@@ -235,7 +235,7 @@ try {
 ------
 #### [ Python ]
 
-```
+```python
 class ObjectWrapper:
     """Encapsulates S3 object actions."""
 
@@ -248,7 +248,7 @@ class ObjectWrapper:
         self.key = self.object.key
 ```
 
-```
+```python
     def copy(self, dest_object):
         """
         Copies the object to another bucket.
@@ -293,7 +293,7 @@ The following tasks guide you through using the Ruby classes to copy an object i
 
 The following Ruby code example demonstrates the preceding tasks by using the `#copy_object` method to copy an object from one bucket to another.
 
-```
+```ruby
 require 'aws-sdk-s3'
 
 # Wraps Amazon S3 object actions.
@@ -347,7 +347,7 @@ This example describes how to copy an object by using the Amazon S3 REST API. Fo
 
 This example copies the `flotsam` object from the `{{amzn-s3-demo-bucket1}}` bucket to the `jetsam` object of the `{{amzn-s3-demo-bucket2}}` bucket, preserving its metadata.
 
-```
+```http
 1. PUT /jetsam HTTP/1.1
 2. Host: {{amzn-s3-demo-bucket2}}.s3.amazonaws.com
 3. x-amz-copy-source: /{{amzn-s3-demo-bucket1}}/flotsam
@@ -369,7 +369,7 @@ The signature was generated from the following information.
 
 Amazon S3 returns the following response that specifies the ETag of the object and when it was last modified.
 
-```
+```http
  1. HTTP/1.1 200 OK
  2. x-amz-id-2: Vyaxt7qEbzv34BnSu5hctyyNSlHTYZFMWK4FtzO+iX8JQNyaLdTshL0KxatbaOZt
  3. x-amz-request-id: 6B13C3C5B34AF333

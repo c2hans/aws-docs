@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-datasource-credentialpair-syntax.json"></a>
 
-```
+```json
 {
   "[AlternateDataSourceParameters](#cfn-quicksight-datasource-credentialpair-alternatedatasourceparameters)" : {{[ DataSourceParameters, ... ]}},
   "[Password](#cfn-quicksight-datasource-credentialpair-password)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-datasource-credentialpair-syntax.yaml"></a>
 
-```
+```yaml
   [AlternateDataSourceParameters](#cfn-quicksight-datasource-credentialpair-alternatedatasourceparameters): {{
     - DataSourceParameters}}
   [Password](#cfn-quicksight-datasource-credentialpair-password): {{String}}

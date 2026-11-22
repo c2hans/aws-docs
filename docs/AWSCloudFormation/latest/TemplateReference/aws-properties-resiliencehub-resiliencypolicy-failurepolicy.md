@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-resiliencehub-resiliencypolicy-failurepolicy-syntax.json"></a>
 
-```
+```json
 {
   "[RpoInSecs](#cfn-resiliencehub-resiliencypolicy-failurepolicy-rpoinsecs)" : {{Integer}},
   "[RtoInSecs](#cfn-resiliencehub-resiliencypolicy-failurepolicy-rtoinsecs)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-resiliencehub-resiliencypolicy-failurepolicy-syntax.yaml"></a>
 
-```
+```yaml
   [RpoInSecs](#cfn-resiliencehub-resiliencypolicy-failurepolicy-rpoinsecs): {{Integer}}
   [RtoInSecs](#cfn-resiliencehub-resiliencypolicy-failurepolicy-rtoinsecs): {{Integer}}
 ```

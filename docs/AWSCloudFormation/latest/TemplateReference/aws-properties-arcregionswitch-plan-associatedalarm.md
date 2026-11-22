@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-arcregionswitch-plan-associatedalarm-syntax.json"></a>
 
-```
+```json
 {
   "[AlarmType](#cfn-arcregionswitch-plan-associatedalarm-alarmtype)" : {{String}},
   "[CrossAccountRole](#cfn-arcregionswitch-plan-associatedalarm-crossaccountrole)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-arcregionswitch-plan-associatedalarm-syntax.yaml"></a>
 
-```
+```yaml
   [AlarmType](#cfn-arcregionswitch-plan-associatedalarm-alarmtype): {{String}}
   [CrossAccountRole](#cfn-arcregionswitch-plan-associatedalarm-crossaccountrole): {{String}}
   [ExternalId](#cfn-arcregionswitch-plan-associatedalarm-externalid): {{String}}

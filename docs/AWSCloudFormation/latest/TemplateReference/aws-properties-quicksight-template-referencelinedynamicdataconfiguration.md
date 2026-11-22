@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-referencelinedynamicdataconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Calculation](#cfn-quicksight-template-referencelinedynamicdataconfiguration-calculation)" : {{NumericalAggregationFunction}},
   "[Column](#cfn-quicksight-template-referencelinedynamicdataconfiguration-column)" : {{ColumnIdentifier}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-referencelinedynamicdataconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Calculation](#cfn-quicksight-template-referencelinedynamicdataconfiguration-calculation): {{
     NumericalAggregationFunction}}
   [Column](#cfn-quicksight-template-referencelinedynamicdataconfiguration-column): {{

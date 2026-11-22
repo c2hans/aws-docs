@@ -92,37 +92,37 @@ Use the following commands to gather information about your Container Insights d
 
 To check agent pod status, run the following command.
 
-```
+```bash
 kubectl get pods -n amazon-cloudwatch
 ```
 
 To view agent pod logs, run the following command.
 
-```
+```bash
 kubectl logs -n amazon-cloudwatch -l app.kubernetes.io/name=cloudwatch-agent --tail=50
 ```
 
 To check the agent DaemonSet status, run the following command.
 
-```
+```bash
 kubectl get daemonset -n amazon-cloudwatch
 ```
 
 To verify the IAM role on a service account, run the following command.
 
-```
+```bash
 kubectl get serviceaccount -n amazon-cloudwatch -o yaml
 ```
 
 To check the cluster add-on status, run the following command. Replace {{cluster-name}} with the name of your Amazon EKS cluster.
 
-```
+```bash
 aws eks describe-addon --cluster-name {{cluster-name}} --addon-name amazon-cloudwatch-observability
 ```
 
 To list Container Insights log groups, run the following command. Replace {{cluster-name}} with the name of your Amazon EKS cluster.
 
-```
+```bash
 aws logs describe-log-groups --log-group-name-prefix "/aws/containerinsights/{{cluster-name}}"
 ```
 

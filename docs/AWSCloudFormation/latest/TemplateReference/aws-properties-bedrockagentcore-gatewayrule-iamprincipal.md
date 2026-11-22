@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewayrule-iamprincipal-syntax.json"></a>
 
-```
+```json
 {
   "[Arn](#cfn-bedrockagentcore-gatewayrule-iamprincipal-arn)" : {{String}},
   "[Operator](#cfn-bedrockagentcore-gatewayrule-iamprincipal-operator)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewayrule-iamprincipal-syntax.yaml"></a>
 
-```
+```yaml
   [Arn](#cfn-bedrockagentcore-gatewayrule-iamprincipal-arn): {{String}}
   [Operator](#cfn-bedrockagentcore-gatewayrule-iamprincipal-operator): {{String}}
 ```

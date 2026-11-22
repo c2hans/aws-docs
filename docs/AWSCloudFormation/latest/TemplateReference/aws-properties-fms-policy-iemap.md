@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fms-policy-iemap-syntax.json"></a>
 
-```
+```json
 {
   "[ACCOUNT](#cfn-fms-policy-iemap-account)" : {{[ String, ... ]}},
   "[ORGUNIT](#cfn-fms-policy-iemap-orgunit)" : {{[ String, ... ]}}
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fms-policy-iemap-syntax.yaml"></a>
 
-```
+```yaml
   [ACCOUNT](#cfn-fms-policy-iemap-account): {{
     - String}}
   [ORGUNIT](#cfn-fms-policy-iemap-orgunit): {{

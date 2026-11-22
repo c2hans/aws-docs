@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-distributionconfiguration-ssmparameterconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AmiAccountId](#cfn-imagebuilder-distributionconfiguration-ssmparameterconfiguration-amiaccountid)" : {{String}},
   "[DataType](#cfn-imagebuilder-distributionconfiguration-ssmparameterconfiguration-datatype)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-distributionconfiguration-ssmparameterconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AmiAccountId](#cfn-imagebuilder-distributionconfiguration-ssmparameterconfiguration-amiaccountid): {{String}}
   [DataType](#cfn-imagebuilder-distributionconfiguration-ssmparameterconfiguration-datatype): {{String}}
   [ParameterName](#cfn-imagebuilder-distributionconfiguration-ssmparameterconfiguration-parametername): {{String}}

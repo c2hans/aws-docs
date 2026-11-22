@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicrule-dynamodbaction-syntax.json"></a>
 
-```
+```json
 {
   "[HashKeyField](#cfn-iot-topicrule-dynamodbaction-hashkeyfield)" : {{String}},
   "[HashKeyType](#cfn-iot-topicrule-dynamodbaction-hashkeytype)" : {{String}},
@@ -47,7 +47,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicrule-dynamodbaction-syntax.yaml"></a>
 
-```
+```yaml
   [HashKeyField](#cfn-iot-topicrule-dynamodbaction-hashkeyfield): {{String}}
   [HashKeyType](#cfn-iot-topicrule-dynamodbaction-hashkeytype): {{String}}
   [HashKeyValue](#cfn-iot-topicrule-dynamodbaction-hashkeyvalue): {{String}}

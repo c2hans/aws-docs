@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-quicksight-dashboard-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::QuickSight::Dashboard",
   "Properties" : {
@@ -44,7 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-quicksight-dashboard-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::QuickSight::Dashboard
 Properties:
   [AwsAccountId](#cfn-quicksight-dashboard-awsaccountid): {{String}}

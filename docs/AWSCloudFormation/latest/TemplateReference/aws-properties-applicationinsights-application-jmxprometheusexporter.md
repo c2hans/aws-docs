@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationinsights-application-jmxprometheusexporter-syntax.json"></a>
 
-```
+```json
 {
   "[HostPort](#cfn-applicationinsights-application-jmxprometheusexporter-hostport)" : {{String}},
   "[JMXURL](#cfn-applicationinsights-application-jmxprometheusexporter-jmxurl)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationinsights-application-jmxprometheusexporter-syntax.yaml"></a>
 
-```
+```yaml
   [HostPort](#cfn-applicationinsights-application-jmxprometheusexporter-hostport): {{String}}
   [JMXURL](#cfn-applicationinsights-application-jmxprometheusexporter-jmxurl): {{String}}
   [PrometheusPort](#cfn-applicationinsights-application-jmxprometheusexporter-prometheusport): {{String}}

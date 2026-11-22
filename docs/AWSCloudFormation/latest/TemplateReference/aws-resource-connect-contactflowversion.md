@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-connect-contactflowversion-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Connect::ContactFlowVersion",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-connect-contactflowversion-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Connect::ContactFlowVersion
 Properties:
   [ContactFlowId](#cfn-connect-contactflowversion-contactflowid): {{String}}

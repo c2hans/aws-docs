@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-agentalias-agentaliasroutingconfigurationlistitem-syntax.json"></a>
 
-```
+```json
 {
   "[AgentVersion](#cfn-bedrock-agentalias-agentaliasroutingconfigurationlistitem-agentversion)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-agentalias-agentaliasroutingconfigurationlistitem-syntax.yaml"></a>
 
-```
+```yaml
   [AgentVersion](#cfn-bedrock-agentalias-agentaliasroutingconfigurationlistitem-agentversion): {{String}}
 ```
 

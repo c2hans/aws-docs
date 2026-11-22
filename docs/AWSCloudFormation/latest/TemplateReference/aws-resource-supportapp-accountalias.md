@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-supportapp-accountalias-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SupportApp::AccountAlias",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-supportapp-accountalias-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SupportApp::AccountAlias
 Properties:
   [AccountAlias](#cfn-supportapp-accountalias-accountalias): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackage-packagingconfiguration-hlsmanifest-syntax.json"></a>
 
-```
+```json
 {
   "[AdMarkers](#cfn-mediapackage-packagingconfiguration-hlsmanifest-admarkers)" : {{String}},
   "[IncludeIframeOnlyStream](#cfn-mediapackage-packagingconfiguration-hlsmanifest-includeiframeonlystream)" : {{Boolean}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackage-packagingconfiguration-hlsmanifest-syntax.yaml"></a>
 
-```
+```yaml
   [AdMarkers](#cfn-mediapackage-packagingconfiguration-hlsmanifest-admarkers): {{String}}
   [IncludeIframeOnlyStream](#cfn-mediapackage-packagingconfiguration-hlsmanifest-includeiframeonlystream): {{Boolean}}
   [ManifestName](#cfn-mediapackage-packagingconfiguration-hlsmanifest-manifestname): {{String}}

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-layoutconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[FreeFormLayout](#cfn-quicksight-dashboard-layoutconfiguration-freeformlayout)" : {{FreeFormLayoutConfiguration}},
   "[GridLayout](#cfn-quicksight-dashboard-layoutconfiguration-gridlayout)" : {{GridLayoutConfiguration}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-layoutconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [FreeFormLayout](#cfn-quicksight-dashboard-layoutconfiguration-freeformlayout): {{
     FreeFormLayoutConfiguration}}
   [GridLayout](#cfn-quicksight-dashboard-layoutconfiguration-gridlayout): {{

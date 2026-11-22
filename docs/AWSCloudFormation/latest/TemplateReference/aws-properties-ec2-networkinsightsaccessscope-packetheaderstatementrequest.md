@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-networkinsightsaccessscope-packetheaderstatementrequest-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationAddresses](#cfn-ec2-networkinsightsaccessscope-packetheaderstatementrequest-destinationaddresses)" : {{[ String, ... ]}},
   "[DestinationPorts](#cfn-ec2-networkinsightsaccessscope-packetheaderstatementrequest-destinationports)" : {{[ String, ... ]}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-networkinsightsaccessscope-packetheaderstatementrequest-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationAddresses](#cfn-ec2-networkinsightsaccessscope-packetheaderstatementrequest-destinationaddresses): {{
     - String}}
   [DestinationPorts](#cfn-ec2-networkinsightsaccessscope-packetheaderstatementrequest-destinationports): {{

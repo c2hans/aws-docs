@@ -39,7 +39,7 @@ Policies that use unsupported condition keys will result in an implicit deny, bl
 
 The following policy allows syslog traffic only to a specific log group:
 
-```
+```bash
 aws ec2 modify-vpc-endpoint \
   --vpc-endpoint-id $VPCE_ID \
   --policy-document '{
@@ -61,7 +61,7 @@ aws ec2 modify-vpc-endpoint \
 
 The following policy blocks all syslog traffic through the endpoint. This is useful for temporarily stopping ingestion without deleting the endpoint:
 
-```
+```bash
 aws ec2 modify-vpc-endpoint \
   --vpc-endpoint-id $VPCE_ID \
   --policy-document '{
@@ -83,7 +83,7 @@ aws ec2 modify-vpc-endpoint \
 
 To restore the default allow-all policy:
 
-```
+```bash
 aws ec2 modify-vpc-endpoint \
   --vpc-endpoint-id $VPCE_ID \
   --reset-policy \

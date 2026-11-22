@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-databrew-job-s3location-syntax.json"></a>
 
-```
+```json
 {
   "[Bucket](#cfn-databrew-job-s3location-bucket)" : {{String}},
   "[BucketOwner](#cfn-databrew-job-s3location-bucketowner)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-databrew-job-s3location-syntax.yaml"></a>
 
-```
+```yaml
   [Bucket](#cfn-databrew-job-s3location-bucket): {{String}}
   [BucketOwner](#cfn-databrew-job-s3location-bucketowner): {{String}}
   [Key](#cfn-databrew-job-s3location-key): {{String}}

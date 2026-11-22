@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-conditionalformattingcolor-syntax.json"></a>
 
-```
+```json
 {
   "[Gradient](#cfn-quicksight-analysis-conditionalformattingcolor-gradient)" : {{ConditionalFormattingGradientColor}},
   "[Solid](#cfn-quicksight-analysis-conditionalformattingcolor-solid)" : {{ConditionalFormattingSolidColor}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-conditionalformattingcolor-syntax.yaml"></a>
 
-```
+```yaml
   [Gradient](#cfn-quicksight-analysis-conditionalformattingcolor-gradient): {{
     ConditionalFormattingGradientColor}}
   [Solid](#cfn-quicksight-analysis-conditionalformattingcolor-solid): {{

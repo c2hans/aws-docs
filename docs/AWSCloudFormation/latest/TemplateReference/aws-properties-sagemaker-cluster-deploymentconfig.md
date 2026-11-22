@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-cluster-deploymentconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AutoRollbackConfiguration](#cfn-sagemaker-cluster-deploymentconfig-autorollbackconfiguration)" : {{[ AlarmDetails, ... ]}},
   "[RollingUpdatePolicy](#cfn-sagemaker-cluster-deploymentconfig-rollingupdatepolicy)" : {{RollingUpdatePolicy}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-cluster-deploymentconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AutoRollbackConfiguration](#cfn-sagemaker-cluster-deploymentconfig-autorollbackconfiguration): {{
     - AlarmDetails}}
   [RollingUpdatePolicy](#cfn-sagemaker-cluster-deploymentconfig-rollingupdatepolicy): {{

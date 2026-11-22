@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-networkinsightspath-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-ec2-networkinsightspath-tag-key)" : {{String}},
   "[Value](#cfn-ec2-networkinsightspath-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-networkinsightspath-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-ec2-networkinsightspath-tag-key): {{String}}
   [Value](#cfn-ec2-networkinsightspath-tag-value): {{String}}
 ```
@@ -57,7 +57,7 @@ This example specifies two tags for the path.
 #### JSON
 <a name="aws-properties-ec2-networkinsightspath-tag--examples----json"></a>
 
-```
+```json
 "Tags" : [
    {
       "Key" : "key1",
@@ -73,7 +73,7 @@ This example specifies two tags for the path.
 #### YAML
 <a name="aws-properties-ec2-networkinsightspath-tag--examples----yaml"></a>
 
-```
+```yaml
 Tags:
   - Key: "key1"
     Value: "value1"

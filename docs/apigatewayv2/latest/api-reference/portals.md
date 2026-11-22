@@ -62,7 +62,7 @@ Creates a portal.
 #### POST schema
 <a name="portals-request-body-post-example"></a>
 
-```
+```json
 {
   "authorization": {
     "cognitoConfig": {
@@ -112,7 +112,7 @@ Creates a portal.
 #### ListPortalsResponseContent schema
 <a name="portals-response-body-listportalsresponsecontent-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "items": [
@@ -179,7 +179,7 @@ Creates a portal.
 #### CreatePortalResponseContent schema
 <a name="portals-response-body-createportalresponsecontent-example"></a>
 
-```
+```json
 {
   "statusException": {
     "exception": "string",
@@ -233,7 +233,7 @@ Creates a portal.
 #### BadRequestExceptionResponseContent schema
 <a name="portals-response-body-badrequestexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -242,7 +242,7 @@ Creates a portal.
 #### AccessDeniedExceptionResponseContent schema
 <a name="portals-response-body-accessdeniedexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -251,7 +251,7 @@ Creates a portal.
 #### LimitExceededExceptionResponseContent schema
 <a name="portals-response-body-limitexceededexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sagemaker-humantaskui-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SageMaker::HumanTaskUi",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sagemaker-humantaskui-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SageMaker::HumanTaskUi
 Properties:
   [HumanTaskUiName](#cfn-sagemaker-humantaskui-humantaskuiname): {{String}}

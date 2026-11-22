@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-image-scanresultcondition-syntax.json"></a>
 
-```
+```json
 {
   "[FixAvailable](#cfn-imagebuilder-image-scanresultcondition-fixavailable)" : {{Boolean}},
   "[MaximumSeverityLabel](#cfn-imagebuilder-image-scanresultcondition-maximumseveritylabel)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-image-scanresultcondition-syntax.yaml"></a>
 
-```
+```yaml
   [FixAvailable](#cfn-imagebuilder-image-scanresultcondition-fixavailable): {{Boolean}}
   [MaximumSeverityLabel](#cfn-imagebuilder-image-scanresultcondition-maximumseveritylabel): {{String}}
 ```

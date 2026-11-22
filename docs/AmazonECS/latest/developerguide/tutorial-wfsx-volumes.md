@@ -239,7 +239,7 @@ Before you can run Windows containers in your Amazon ECS cluster, you must regis
 
 1. In the JSON editor box, replace the values for your task execution role and the details about your FSx file system and then choose **Save**.
 
-   ```
+   ```JSON
    {
        "containerDefinitions": [
            {

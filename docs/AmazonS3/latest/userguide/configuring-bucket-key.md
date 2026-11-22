@@ -102,7 +102,7 @@ The following example enables default bucket encryption with SSE-KMS and an S3 B
 ------
 #### [ Java ]
 
-```
+```Java
 AmazonS3 s3client = AmazonS3ClientBuilder.standard()
     .withRegion(Regions.DEFAULT_REGION)
     .build();
@@ -129,7 +129,7 @@ s3client.setBucketEncryption(setBucketEncryptionRequest);
 
 The following example enables default bucket encryption with SSE-KMS and an S3 Bucket Key by using the AWS CLI. Replace the `{{user input placeholders}}` with your own information.
 
-```
+```bash
 aws s3api put-bucket-encryption --bucket {{amzn-s3-demo-bucket}} --server-side-encryption-configuration '{
         "Rules": [
             {

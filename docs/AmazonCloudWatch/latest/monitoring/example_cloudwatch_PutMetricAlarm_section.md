@@ -20,7 +20,7 @@ Action examples are code excerpts from larger programs and must be run in contex
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 Create an alarm that evaluates a PromQL query against OpenTelemetry metrics.
 
-```
+```csharp
     /// <summary>
     /// Create an alarm that evaluates a PromQL query.
     ///
@@ -73,7 +73,7 @@ Create an alarm that evaluates a PromQL query against OpenTelemetry metrics.
 ```
 Create an alarm that evaluates a single CloudWatch metric.
 
-```
+```csharp
     /// <summary>
     /// Add a metric alarm to send an email when the metric passes a threshold.
     /// </summary>
@@ -142,7 +142,7 @@ Create an alarm that evaluates a single CloudWatch metric.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/cloudwatch#code-examples).
 Include the required files for a PromQL alarm.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/monitoring/CloudWatchClient.h>
 #include <aws/monitoring/model/AlarmPromQLCriteria.h>
@@ -152,7 +152,7 @@ Include the required files for a PromQL alarm.
 ```
 Create an alarm that evaluates a PromQL query against OpenTelemetry metrics.
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -186,7 +186,7 @@ Create an alarm that evaluates a PromQL query against OpenTelemetry metrics.
 ```
 Include the required files for a metric alarm.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/monitoring/CloudWatchClient.h>
 #include <aws/monitoring/model/PutMetricAlarmRequest.h>
@@ -194,7 +194,7 @@ Include the required files for a metric alarm.
 ```
 Create the alarm to watch the metric.
 
-```
+```cpp
         Aws::CloudWatch::CloudWatchClient cw;
         Aws::CloudWatch::Model::PutMetricAlarmRequest request;
         request.SetAlarmName(alarm_name);
@@ -282,7 +282,7 @@ For more information, see [Using Amazon CloudWatch alarms](https://docs.aws.amaz
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 Create an alarm that evaluates a PromQL query against OpenTelemetry metrics.
 
-```
+```java
     /**
      * Creates an alarm that evaluates a PromQL query.
      *
@@ -342,7 +342,7 @@ Create an alarm that evaluates a PromQL query against OpenTelemetry metrics.
 ```
 Create an alarm that evaluates a single CloudWatch metric.
 
-```
+```java
     /**
      * Creates an alarm based on the configuration provided in a JSON file.
      *
@@ -408,7 +408,7 @@ Create an alarm that evaluates a single CloudWatch metric.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch#code-examples).
 Create an alarm that evaluates a PromQL query against OpenTelemetry metrics.
 
-```
+```javascript
 import { PutMetricAlarmCommand } from "@aws-sdk/client-cloudwatch";
 import { client } from "../libs/client.js";
 
@@ -455,7 +455,7 @@ export default run();
 ```
 Create an alarm that evaluates a single CloudWatch metric.
 
-```
+```javascript
 import { PutMetricAlarmCommand } from "@aws-sdk/client-cloudwatch";
 import { client } from "../libs/client.js";
 
@@ -492,7 +492,7 @@ export default run();
 ```
 Create the client in a separate module and export it.
 
-```
+```javascript
 import { CloudWatchClient } from "@aws-sdk/client-cloudwatch";
 
 export const client = new CloudWatchClient({});
@@ -503,7 +503,7 @@ export const client = new CloudWatchClient({});
 **SDK for JavaScript (v2)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/cloudwatch#code-examples).
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -550,7 +550,7 @@ cw.putMetricAlarm(params, function (err, data) {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 Create an alarm that evaluates a PromQL query against OpenTelemetry metrics.
 
-```
+```kotlin
 suspend fun putPromQlMetricAlarm(
     alarmNameVal: String,
     queryVal: String,
@@ -590,7 +590,7 @@ suspend fun putPromQlMetricAlarm(
 ```
 Create an alarm that evaluates a single CloudWatch metric.
 
-```
+```kotlin
 suspend fun putMetricAlarm(
     alarmNameVal: String,
     instanceIdVal: String,
@@ -632,7 +632,7 @@ suspend fun putMetricAlarm(
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch#code-examples).
 Create an alarm that evaluates a PromQL query against OpenTelemetry metrics.
 
-```
+```python
 class CloudWatchOTelWrapper:
     """Encapsulates the OpenTelemetry-oriented Amazon CloudWatch operations."""
 
@@ -719,7 +719,7 @@ class CloudWatchOTelWrapper:
 ```
 Create an alarm that evaluates a single CloudWatch metric.
 
-```
+```python
 class CloudWatchWrapper:
     """Encapsulates Amazon CloudWatch functions."""
 
@@ -793,7 +793,7 @@ class CloudWatchWrapper:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/cloudwatch#code-examples).
 Create an alarm that evaluates a PromQL query against OpenTelemetry metrics.
 
-```
+```ruby
 # Creates or updates an alarm that evaluates a PromQL query.
 #
 # A PromQL alarm differs from a classic metric alarm in a few ways. The query can match
@@ -849,7 +849,7 @@ end
 ```
 Create an alarm that evaluates a single CloudWatch metric.
 
-```
+```ruby
 # Creates or updates an alarm in Amazon CloudWatch.
 #
 # @param cloudwatch_client [Aws::CloudWatch::Client]
@@ -940,7 +940,7 @@ end
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cwt#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_cwt->putmetricalarm(
           iv_alarmname                 = iv_alarm_name

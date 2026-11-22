@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-computeenvironment-updatepolicy-syntax.json"></a>
 
-```
+```json
 {
   "[JobExecutionTimeoutMinutes](#cfn-batch-computeenvironment-updatepolicy-jobexecutiontimeoutminutes)" : {{Integer}},
   "[TerminateJobsOnUpdate](#cfn-batch-computeenvironment-updatepolicy-terminatejobsonupdate)" : {{Boolean}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-computeenvironment-updatepolicy-syntax.yaml"></a>
 
-```
+```yaml
   [JobExecutionTimeoutMinutes](#cfn-batch-computeenvironment-updatepolicy-jobexecutiontimeoutminutes): {{Integer}}
   [TerminateJobsOnUpdate](#cfn-batch-computeenvironment-updatepolicy-terminatejobsonupdate): {{Boolean}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcs-cluster-accounting-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultPurgeTimeInDays](#cfn-pcs-cluster-accounting-defaultpurgetimeindays)" : {{Integer}},
   "[Mode](#cfn-pcs-cluster-accounting-mode)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcs-cluster-accounting-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultPurgeTimeInDays](#cfn-pcs-cluster-accounting-defaultpurgetimeindays): {{Integer}}
   [Mode](#cfn-pcs-cluster-accounting-mode): {{String}}
 ```

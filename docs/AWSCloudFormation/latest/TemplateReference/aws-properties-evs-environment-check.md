@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-evs-environment-check-syntax.json"></a>
 
-```
+```json
 {
   "[ImpairedSince](#cfn-evs-environment-check-impairedsince)" : {{String}},
   "[Result](#cfn-evs-environment-check-result)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-evs-environment-check-syntax.yaml"></a>
 
-```
+```yaml
   [ImpairedSince](#cfn-evs-environment-check-impairedsince): {{String}}
   [Result](#cfn-evs-environment-check-result): {{String}}
   [Type](#cfn-evs-environment-check-type): {{String}}

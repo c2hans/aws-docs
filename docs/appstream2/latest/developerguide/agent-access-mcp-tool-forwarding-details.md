@@ -32,7 +32,7 @@ The configuration file is JSON with a single top-level `mcpServers` object. Each
 
 The following example is for a Windows instance:
 
-```
+```json
 {
     "mcpServers": {
         "filesystem": {
@@ -86,7 +86,7 @@ The {{server-name}} is the key from your configuration file. For example, a `get
 
 The IAM action for calling forwarded tools is `CallForwardedTool`. To limit access to specific stacks, use the `StackArn` condition key:
 
-```
+```json
 {
   "Effect": "Allow",
   "Action": ["agentaccess-mcp:InvokeMcp", "agentaccess-mcp:CallForwardedTool"],
@@ -101,7 +101,7 @@ The IAM action for calling forwarded tools is `CallForwardedTool`. To limit acce
 
 Image builder sessions use the `ImageBuilderArn` condition key instead of `StackArn`. To allow access only to specific image builders, use the `ImageBuilderArn` condition key:
 
-```
+```json
 {
   "Effect": "Allow",
   "Action": ["agentaccess-mcp:InvokeMcp", "agentaccess-mcp:CallForwardedTool"],

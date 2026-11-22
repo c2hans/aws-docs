@@ -163,7 +163,7 @@ The following Athena DynamoDB connector operators support predicate pushdown:
 
 For enhanced querying capabilities, combine the pushdown types, as in the following example:
 
-```
+```sql
 SELECT *
 FROM my_table
 WHERE col_a > 10 and col_b < 10
@@ -179,7 +179,7 @@ The DynamoDB connector supports [passthrough queries](federated-query-passthroug
 
 To use passthrough queries with DynamoDB, use the following syntax:
 
-```
+```sql
 SELECT * FROM TABLE(
         system.query(
             query => '{{query_string}}'
@@ -188,7 +188,7 @@ SELECT * FROM TABLE(
 
 The following DynamoDB passthrough query example uses PartiQL to return a list of Fire TV Stick devices that have a `DateWatched` property later than 12/24/22.
 
-```
+```sql
 SELECT * FROM TABLE(
         system.query(
            query => 'SELECT Devices

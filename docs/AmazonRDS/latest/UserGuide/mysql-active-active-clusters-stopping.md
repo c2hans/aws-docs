@@ -17,3 +17,9 @@ You can stop Group Replication on a DB instance in an active-active cluster. Whe
    ```
    call mysql.rds_group_replication_stop();
    ```
+
+To restart Group Replication so that the DB instance rejoins the active-active cluster, call the [mysql.rds\_group\_replication\_start](mysql-stored-proc-active-active-clusters.md#mysql_rds_group_replication_start) stored procedure on the DB instance. For RDS for MySQL 9.7, first synchronize local GTIDs. For more information, see [Synchronizing local GTIDs before a DB instance joins an active-active cluster (MySQL 9.7)](mysql-active-active-clusters-sync-gtids.md).
+
+```
+call mysql.rds_group_replication_start(0);
+```

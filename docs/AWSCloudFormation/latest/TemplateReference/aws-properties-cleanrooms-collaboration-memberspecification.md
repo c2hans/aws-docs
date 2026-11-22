@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-collaboration-memberspecification-syntax.json"></a>
 
-```
+```json
 {
   "[AccountId](#cfn-cleanrooms-collaboration-memberspecification-accountid)" : {{String}},
   "[DisplayName](#cfn-cleanrooms-collaboration-memberspecification-displayname)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-collaboration-memberspecification-syntax.yaml"></a>
 
-```
+```yaml
   [AccountId](#cfn-cleanrooms-collaboration-memberspecification-accountid): {{String}}
   [DisplayName](#cfn-cleanrooms-collaboration-memberspecification-displayname): {{String}}
   [MemberAbilities](#cfn-cleanrooms-collaboration-memberspecification-memberabilities): {{

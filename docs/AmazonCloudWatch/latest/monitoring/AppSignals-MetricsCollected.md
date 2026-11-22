@@ -179,7 +179,7 @@ env:
 
 To disable runtime metrics in Amazon EKS applications at the cluster level, apply the configuration to the advanced configuration of your Amazon CloudWatch Observability EKS add-on.
 
-```
+```json
 {
   "agent": {
     "config": {

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apigateway-usageplan-apistage-syntax.json"></a>
 
-```
+```json
 {
   "[ApiId](#cfn-apigateway-usageplan-apistage-apiid)" : {{String}},
   "[Stage](#cfn-apigateway-usageplan-apistage-stage)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apigateway-usageplan-apistage-syntax.yaml"></a>
 
-```
+```yaml
   [ApiId](#cfn-apigateway-usageplan-apistage-apiid): {{String}}
   [Stage](#cfn-apigateway-usageplan-apistage-stage): {{String}}
   [Throttle](#cfn-apigateway-usageplan-apistage-throttle): {{

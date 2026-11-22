@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-codedeploy-deploymentgroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CodeDeploy::DeploymentGroup",
   "Properties" : {
@@ -51,7 +51,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-codedeploy-deploymentgroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CodeDeploy::DeploymentGroup
 Properties:
   [AlarmConfiguration](#cfn-codedeploy-deploymentgroup-alarmconfiguration): {{
@@ -271,7 +271,7 @@ The following example creates a deployment group that is associated with Auto Sc
 #### JSON
 <a name="aws-resource-codedeploy-deploymentgroup--examples--Revision_in_GitHub--json"></a>
 
-```
+```json
 "DeploymentGroup" : {
     "Type" : "AWS::CodeDeploy::DeploymentGroup",
     "Properties" : {
@@ -301,7 +301,7 @@ The following example creates a deployment group that is associated with Auto Sc
 #### YAML
 <a name="aws-resource-codedeploy-deploymentgroup--examples--Revision_in_GitHub--yaml"></a>
 
-```
+```yaml
 DeploymentGroup:
   Type: AWS::CodeDeploy::DeploymentGroup
   Properties:
@@ -331,7 +331,7 @@ The following example creates a deployment group that uses instance tags to asso
 #### JSON
 <a name="aws-resource-codedeploy-deploymentgroup--examples--Associate_Instances--json"></a>
 
-```
+```json
 "DeploymentGroup": {
     "Type": "AWS::CodeDeploy::DeploymentGroup",
     "Properties": {
@@ -384,7 +384,7 @@ The following example creates a deployment group that uses instance tags to asso
 #### YAML
 <a name="aws-resource-codedeploy-deploymentgroup--examples--Associate_Instances--yaml"></a>
 
-```
+```yaml
 DeploymentGroup:
   Type: AWS::CodeDeploy::DeploymentGroup
   Properties:
@@ -424,7 +424,7 @@ The following example creates deployment group with a `BLUE_GREEN` deployment ty
 #### JSON
 <a name="aws-resource-codedeploy-deploymentgroup--examples--Deployment_Style--json"></a>
 
-```
+```json
 "CodeDeployDeploymentGroup": {
     "Type": "AWS::CodeDeploy::DeploymentGroup",
     "Properties": {
@@ -449,7 +449,7 @@ The following example creates deployment group with a `BLUE_GREEN` deployment ty
 #### YAML
 <a name="aws-resource-codedeploy-deploymentgroup--examples--Deployment_Style--yaml"></a>
 
-```
+```yaml
 CodeDeployDeploymentGroup:
   Type: 'AWS::CodeDeploy::DeploymentGroup'
   Properties:
@@ -471,7 +471,7 @@ The following example configures a billing alarm and a notification trigger for 
 #### JSON
 <a name="aws-resource-codedeploy-deploymentgroup--examples--Alarm_and_Trigger--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Parameters": {
@@ -603,7 +603,7 @@ The following example configures automatic rollback for the deployment group.
 #### YAML
 <a name="aws-resource-codedeploy-deploymentgroup--examples--Automatic_Rollback_Configuration--yaml"></a>
 
-```
+```yaml
 Parameters:
   EC2TagKey0:
     Type: String
@@ -676,7 +676,7 @@ Resources:
 #### JSON
 <a name="aws-resource-codedeploy-deploymentgroup--examples--Automatic_Rollback_Configuration--json"></a>
 
-```
+```json
 {
   "Parameters": {
     "EC2TagKey0": {
@@ -804,7 +804,7 @@ The following example configures an Elastic Load Balancing load balancer for the
 #### YAML
 <a name="aws-resource-codedeploy-deploymentgroup--examples--Load_Balancer--yaml"></a>
 
-```
+```yaml
 Parameters:
   EC2TagKey0:
     Type: String
@@ -896,7 +896,7 @@ Outputs:
 #### JSON
 <a name="aws-resource-codedeploy-deploymentgroup--examples--Load_Balancer--json"></a>
 
-```
+```json
 {
   "Parameters": {
     "EC2TagKey0": {
@@ -1049,7 +1049,7 @@ The following example specifies the target group to use in a deployment. Instanc
 #### YAML
 <a name="aws-resource-codedeploy-deploymentgroup--examples--Target_Group_Info--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   AppDeploymentGroup:
@@ -1067,7 +1067,7 @@ Resources:
 #### JSON
 <a name="aws-resource-codedeploy-deploymentgroup--examples--Target_Group_Info--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {

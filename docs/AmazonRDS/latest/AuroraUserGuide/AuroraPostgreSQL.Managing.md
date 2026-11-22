@@ -61,6 +61,10 @@ If your applications frequently open and close connections, or keep a large numb
 
 Aurora PostgreSQL stores tables and indexes in the Aurora storage subsystem. Aurora PostgreSQL uses separate temporary storage for non-persistent temporary files. This includes files that are used for such purposes as sorting large data sets during query processing or for index build operations. For more information, see the article [How can I troubleshoot local storage issues in Aurora PostgreSQL-Compatible instances?](https://repost.aws/knowledge-center/postgresql-aurora-storage-issue).
 
+Operations that rebuild indexes can also use temporary storage. For example, `VACUUM FULL` and the `pg_repack` extension write a new copy of the table to the Aurora storage subsystem and then rebuild every index on the table. Each index build sorts the index data. If the sort doesn't fit in `maintenance_work_mem`, the sort writes temporary files to local storage. The sort also writes temporary files if PostgreSQL builds the index with parallel workers.
+
+Before you run these operations on a large table, use the `FreeLocalStorage` metric to check that the DB instance has enough free local storage for the index builds.
+
 These local storage volumes are backed by Amazon Elastic Block Store and can be extended by using a larger DB instance class. For more information about storage, see [Amazon Aurora storage](Aurora.Overview.StorageReliability.md). You can also increase your local storage for temporary objects by using an NVMe enabled instance type and Aurora Optimized Reads-enabled temporary objects. For more information, see [Improving query performance for Aurora PostgreSQL with Aurora Optimized Reads](AuroraPostgreSQL.optimized.reads.md).
 
 **Note**

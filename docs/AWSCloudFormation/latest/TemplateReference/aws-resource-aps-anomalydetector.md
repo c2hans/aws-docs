@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-aps-anomalydetector-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::APS::AnomalyDetector",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-aps-anomalydetector-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::APS::AnomalyDetector
 Properties:
   [Alias](#cfn-aps-anomalydetector-alias): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcs-queue-computenodegroupconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ComputeNodeGroupId](#cfn-pcs-queue-computenodegroupconfiguration-computenodegroupid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcs-queue-computenodegroupconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ComputeNodeGroupId](#cfn-pcs-queue-computenodegroupconfiguration-computenodegroupid): {{String}}
 ```
 

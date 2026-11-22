@@ -24,7 +24,7 @@ You can use the AWS Management Console to create a role that can be used by Amaz
 
 ****
 
-   ```
+   ```json
    {
    "Version":"2012-10-17",
    "Statement": [

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-hub-s3storageconfig-syntax.json"></a>
 
-```
+```json
 {
   "[S3OutputPath](#cfn-sagemaker-hub-s3storageconfig-s3outputpath)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-hub-s3storageconfig-syntax.yaml"></a>
 
-```
+```yaml
   [S3OutputPath](#cfn-sagemaker-hub-s3storageconfig-s3outputpath): {{String}}
 ```
 

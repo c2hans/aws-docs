@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-action-metadataproperties-syntax.json"></a>
 
-```
+```json
 {
   "[CommitId](#cfn-sagemaker-action-metadataproperties-commitid)" : {{String}},
   "[GeneratedBy](#cfn-sagemaker-action-metadataproperties-generatedby)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-action-metadataproperties-syntax.yaml"></a>
 
-```
+```yaml
   [CommitId](#cfn-sagemaker-action-metadataproperties-commitid): {{String}}
   [GeneratedBy](#cfn-sagemaker-action-metadataproperties-generatedby): {{String}}
   [ProjectId](#cfn-sagemaker-action-metadataproperties-projectid): {{String}}

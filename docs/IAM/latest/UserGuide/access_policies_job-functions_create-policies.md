@@ -103,7 +103,7 @@ This example shows the steps required to configure Jorge, an IAM user, as a [Net
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -150,7 +150,7 @@ You can switch between the **Visual** and **JSON** editor options any time. Howe
 
 1. Change the "Service" line to read as follows, replacing the entry for `ec2.amazonaws.com`:
 
-   ```
+   ```json
            "Service": "vpc-flow-logs.amazonaws.com"
    ```
 

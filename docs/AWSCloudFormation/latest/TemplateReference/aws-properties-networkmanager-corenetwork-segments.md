@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkmanager-corenetwork-segments-syntax.json"></a>
 
-```
+```json
 {
   "[SendTo](#cfn-networkmanager-corenetwork-segments-sendto)" : {{[ String, ... ]}},
   "[SendVia](#cfn-networkmanager-corenetwork-segments-sendvia)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkmanager-corenetwork-segments-syntax.yaml"></a>
 
-```
+```yaml
   [SendTo](#cfn-networkmanager-corenetwork-segments-sendto): {{
     - String}}
   [SendVia](#cfn-networkmanager-corenetwork-segments-sendvia): {{

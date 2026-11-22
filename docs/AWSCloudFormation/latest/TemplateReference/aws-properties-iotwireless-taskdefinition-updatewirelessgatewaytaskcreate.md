@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotwireless-taskdefinition-updatewirelessgatewaytaskcreate-syntax.json"></a>
 
-```
+```json
 {
   "[LoRaWAN](#cfn-iotwireless-taskdefinition-updatewirelessgatewaytaskcreate-lorawan)" : {{LoRaWANUpdateGatewayTaskCreate}},
   "[UpdateDataRole](#cfn-iotwireless-taskdefinition-updatewirelessgatewaytaskcreate-updatedatarole)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotwireless-taskdefinition-updatewirelessgatewaytaskcreate-syntax.yaml"></a>
 
-```
+```yaml
   [LoRaWAN](#cfn-iotwireless-taskdefinition-updatewirelessgatewaytaskcreate-lorawan): {{
     LoRaWANUpdateGatewayTaskCreate}}
   [UpdateDataRole](#cfn-iotwireless-taskdefinition-updatewirelessgatewaytaskcreate-updatedatarole): {{String}}

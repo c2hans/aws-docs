@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-sourceendpoint-publicsourceendpointnetworkingconfigurationallowrule-syntax.json"></a>
 
-```
+```json
 {
   "[Cidr](#cfn-mediaconnect-sourceendpoint-publicsourceendpointnetworkingconfigurationallowrule-cidr)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-sourceendpoint-publicsourceendpointnetworkingconfigurationallowrule-syntax.yaml"></a>
 
-```
+```yaml
   [Cidr](#cfn-mediaconnect-sourceendpoint-publicsourceendpointnetworkingconfigurationallowrule-cidr): {{String}}
 ```
 

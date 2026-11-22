@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-knowledgebase-mongodbatlasfieldmapping-syntax.json"></a>
 
-```
+```json
 {
   "[MetadataField](#cfn-bedrock-knowledgebase-mongodbatlasfieldmapping-metadatafield)" : {{String}},
   "[TextField](#cfn-bedrock-knowledgebase-mongodbatlasfieldmapping-textfield)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-knowledgebase-mongodbatlasfieldmapping-syntax.yaml"></a>
 
-```
+```yaml
   [MetadataField](#cfn-bedrock-knowledgebase-mongodbatlasfieldmapping-metadatafield): {{String}}
   [TextField](#cfn-bedrock-knowledgebase-mongodbatlasfieldmapping-textfield): {{String}}
   [VectorField](#cfn-bedrock-knowledgebase-mongodbatlasfieldmapping-vectorfield): {{String}}

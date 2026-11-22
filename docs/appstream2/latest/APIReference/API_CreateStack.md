@@ -70,7 +70,11 @@ Creates a stack to start streaming applications to users. A stack consists of an
          "MaximumLength": {{number}},
          "Permission": "{{string}}"
       }
-   ]
+   ],
+   "WebAuthnRedirection": {
+      "Enabled": {{boolean}},
+      "ProcessCompatibilityList": [ "{{string}}" ]
+   }
 }
 ```
 
@@ -176,6 +180,11 @@ Type: Array of [UserSetting](API_UserSetting.md) objects
 Array Members: Minimum number of 1 item.
 Required: No
 
+ ** [WebAuthnRedirection](#API_CreateStack_RequestSyntax) **   <a name="WorkSpacesApplications-CreateStack-request-WebAuthnRedirection"></a>
+Configuration for WebAuthn redirection between the streaming session and the user's local device. Use ProcessCompatibilityList to specify which processes can use WebAuthn redirection on Windows fleets.
+Type: [WebAuthnRedirection](API_WebAuthnRedirection.md) object
+Required: No
+
 ## Response Syntax
 <a name="API_CreateStack_ResponseSyntax"></a>
 
@@ -247,7 +256,11 @@ Required: No
             "MaximumLength": number,
             "Permission": "string"
          }
-      ]
+      ],
+      "WebAuthnRedirection": {
+         "Enabled": boolean,
+         "ProcessCompatibilityList": [ "string" ]
+      }
    }
 }
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-processingjob-processingoutputconfig-syntax.json"></a>
 
-```
+```json
 {
   "[KmsKeyId](#cfn-sagemaker-processingjob-processingoutputconfig-kmskeyid)" : {{String}},
   "[Outputs](#cfn-sagemaker-processingjob-processingoutputconfig-outputs)" : {{[ ProcessingOutputsObject, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-processingjob-processingoutputconfig-syntax.yaml"></a>
 
-```
+```yaml
   [KmsKeyId](#cfn-sagemaker-processingjob-processingoutputconfig-kmskeyid): {{String}}
   [Outputs](#cfn-sagemaker-processingjob-processingoutputconfig-outputs): {{
     - ProcessingOutputsObject}}

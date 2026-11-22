@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datasync-locationazureblob-azureblobsasconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AzureBlobSasToken](#cfn-datasync-locationazureblob-azureblobsasconfiguration-azureblobsastoken)" : {{String}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datasync-locationazureblob-azureblobsasconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AzureBlobSasToken](#cfn-datasync-locationazureblob-azureblobsasconfiguration-azureblobsastoken): {{String}}
 ```
 

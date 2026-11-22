@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-harness-harnessagentcoregatewayconfig-syntax.json"></a>
 
-```
+```json
 {
   "[GatewayArn](#cfn-bedrockagentcore-harness-harnessagentcoregatewayconfig-gatewayarn)" : {{String}},
   "[OutboundAuth](#cfn-bedrockagentcore-harness-harnessagentcoregatewayconfig-outboundauth)" : {{HarnessGatewayOutboundAuth}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-harness-harnessagentcoregatewayconfig-syntax.yaml"></a>
 
-```
+```yaml
   [GatewayArn](#cfn-bedrockagentcore-harness-harnessagentcoregatewayconfig-gatewayarn): {{String}}
   [OutboundAuth](#cfn-bedrockagentcore-harness-harnessagentcoregatewayconfig-outboundauth): {{
     HarnessGatewayOutboundAuth}}

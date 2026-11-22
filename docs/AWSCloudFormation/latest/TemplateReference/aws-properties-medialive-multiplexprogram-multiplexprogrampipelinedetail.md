@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-multiplexprogram-multiplexprogrampipelinedetail-syntax.json"></a>
 
-```
+```json
 {
   "[ActiveChannelPipeline](#cfn-medialive-multiplexprogram-multiplexprogrampipelinedetail-activechannelpipeline)" : {{String}},
   "[PipelineId](#cfn-medialive-multiplexprogram-multiplexprogrampipelinedetail-pipelineid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-multiplexprogram-multiplexprogrampipelinedetail-syntax.yaml"></a>
 
-```
+```yaml
   [ActiveChannelPipeline](#cfn-medialive-multiplexprogram-multiplexprogrampipelinedetail-activechannelpipeline): {{String}}
   [PipelineId](#cfn-medialive-multiplexprogram-multiplexprogrampipelinedetail-pipelineid): {{String}}
 ```

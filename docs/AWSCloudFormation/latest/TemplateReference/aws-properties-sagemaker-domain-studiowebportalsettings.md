@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-domain-studiowebportalsettings-syntax.json"></a>
 
-```
+```json
 {
   "[HiddenAppTypes](#cfn-sagemaker-domain-studiowebportalsettings-hiddenapptypes)" : {{[ String, ... ]}},
   "[HiddenInstanceTypes](#cfn-sagemaker-domain-studiowebportalsettings-hiddeninstancetypes)" : {{[ String, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-domain-studiowebportalsettings-syntax.yaml"></a>
 
-```
+```yaml
   [HiddenAppTypes](#cfn-sagemaker-domain-studiowebportalsettings-hiddenapptypes): {{
     - String}}
   [HiddenInstanceTypes](#cfn-sagemaker-domain-studiowebportalsettings-hiddeninstancetypes): {{

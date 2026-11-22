@@ -59,7 +59,7 @@ IAM policies that filter IP addresses use [IP Address Condition Operators](https
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -103,12 +103,12 @@ If you are using use Linux/Unix or Mac OS X, you can test whether you can access
 
 **Example**
 
-```
+```java
 curl -v  http://s3.dualstack.us-west-2.amazonaws.com/
 ```
 You get back information similar to the following example. If you are connected over IPv6 the connected IP address will be an IPv6 address.
 
-```
+```java
 * About to connect() to s3-us-west-2.amazonaws.com port 80 (#0)
 *   Trying {{IPv6 address}}... connected
 * Connected to s3.dualstack.us-west-2.amazonaws.com ({{IPv6 address}}) port 80 (#0)
@@ -119,6 +119,6 @@ You get back information similar to the following example. If you are connected 
 
 If you are using Microsoft 7 or 10, you can test whether you can access a dual-stack endpoint over IPv6 or IPv4 by using the `ping` command as shown in the following example.
 
-```
+```java
 ping ipv6.s3.dualstack.us-west-2.amazonaws.com
 ```

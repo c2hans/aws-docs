@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-networkfirewall-rulegroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::NetworkFirewall::RuleGroup",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-networkfirewall-rulegroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::NetworkFirewall::RuleGroup
 Properties:
   [Capacity](#cfn-networkfirewall-rulegroup-capacity): {{Integer}}
@@ -153,7 +153,7 @@ The following shows example stateful rule group specifications.
 #### JSON
 <a name="aws-resource-networkfirewall-rulegroup--examples--Create_a_stateful_rule_group--json"></a>
 
-```
+```json
 "SampleStatefulRulegroup": {
     "Type": "AWS::NetworkFirewall::RuleGroup",
     "Properties": {
@@ -179,7 +179,7 @@ The following shows example stateful rule group specifications.
 #### YAML
 <a name="aws-resource-networkfirewall-rulegroup--examples--Create_a_stateful_rule_group--yaml"></a>
 
-```
+```yaml
 SampleStatefulRulegroup:
   Type: 'AWS::NetworkFirewall::RuleGroup'
   Properties:
@@ -205,7 +205,7 @@ The following shows example stateless rule group specifications.
 #### JSON
 <a name="aws-resource-networkfirewall-rulegroup--examples--Create_a_stateless_rule_group--json"></a>
 
-```
+```json
 "SampleStatelessRulegroup": {
     "Type": "AWS::NetworkFirewall::RuleGroup",
     "Properties": {
@@ -273,7 +273,7 @@ The following shows example stateless rule group specifications.
 #### YAML
 <a name="aws-resource-networkfirewall-rulegroup--examples--Create_a_stateless_rule_group--yaml"></a>
 
-```
+```yaml
 SampleStatelessRulegroup:
               Type: 'AWS::NetworkFirewall::RuleGroup'
               Properties:

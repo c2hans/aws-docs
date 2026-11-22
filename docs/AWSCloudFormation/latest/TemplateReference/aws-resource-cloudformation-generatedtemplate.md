@@ -16,11 +16,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudformation-generatedtemplate-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudFormation::GeneratedTemplate",
   "Properties" : {
       "[GeneratedTemplateName](#cfn-cloudformation-generatedtemplate-generatedtemplatename)" : {{String}},
+      "[StackId](#cfn-cloudformation-generatedtemplate-stackid)" : {{String}},
       "[TemplateConfiguration](#cfn-cloudformation-generatedtemplate-templateconfiguration)" : {{TemplateConfiguration}}
     }
 }
@@ -29,10 +30,11 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudformation-generatedtemplate-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudFormation::GeneratedTemplate
 Properties:
   [GeneratedTemplateName](#cfn-cloudformation-generatedtemplate-generatedtemplatename): {{String}}
+  [StackId](#cfn-cloudformation-generatedtemplate-stackid): {{String}}
   [TemplateConfiguration](#cfn-cloudformation-generatedtemplate-templateconfiguration): {{
     TemplateConfiguration}}
 ```
@@ -47,6 +49,13 @@ Property description not available.
 *Minimum*: `1`
 *Maximum*: `128`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`StackId`  <a name="cfn-cloudformation-generatedtemplate-stackid"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws[a-zA-Z-]*:cloudformation:[a-z0-9-]+:[0-9]{12}:stack/[a-zA-Z][-a-zA-Z0-9]*/[-a-zA-Z0-9]+$`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `TemplateConfiguration`  <a name="cfn-cloudformation-generatedtemplate-templateconfiguration"></a>
 The configuration details of a generated template.

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-elasticache-parametergroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ElastiCache::ParameterGroup",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-elasticache-parametergroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ElastiCache::ParameterGroup
 Properties:
   [CacheParameterGroupFamily](#cfn-elasticache-parametergroup-cacheparametergroupfamily): {{String}}
@@ -107,7 +107,7 @@ A user-specified name for the cache parameter group. This value is stored as a l
 #### JSON
 <a name="aws-resource-elasticache-parametergroup--examples----json"></a>
 
-```
+```json
 {
     "MyParameterGroup": {
         "Type": "AWS::ElastiCache::ParameterGroup",
@@ -126,7 +126,7 @@ A user-specified name for the cache parameter group. This value is stored as a l
 #### YAML
 <a name="aws-resource-elasticache-parametergroup--examples----yaml"></a>
 
-```
+```yaml
 MyParameterGroup:
   Type: 'AWS::ElastiCache::ParameterGroup'
   Properties:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ecr-registryscanningconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ECR::RegistryScanningConfiguration",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ecr-registryscanningconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ECR::RegistryScanningConfiguration
 Properties:
   [Rules](#cfn-ecr-registryscanningconfiguration-rules): {{

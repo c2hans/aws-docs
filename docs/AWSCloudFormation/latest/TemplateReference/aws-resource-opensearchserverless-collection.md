@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-opensearchserverless-collection-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::OpenSearchServerless::Collection",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-opensearchserverless-collection-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::OpenSearchServerless::Collection
 Properties:
   [CollectionGroupName](#cfn-opensearchserverless-collection-collectiongroupname): {{String}}
@@ -178,7 +178,7 @@ This example uses public network access, which isn't recommended for production 
 #### JSON
 <a name="aws-resource-opensearchserverless-collection--examples--Create_a_collection--json"></a>
 
-```
+```json
 {
    "Description":"OpenSearch Serverless collection template",
    "Resources":{
@@ -206,7 +206,7 @@ This example uses public network access, which isn't recommended for production 
 #### YAML
 <a name="aws-resource-opensearchserverless-collection--examples--Create_a_collection--yaml"></a>
 
-```
+```yaml
 Description: OpenSearch Serverless collection template
 Resources:
   TestCollection:

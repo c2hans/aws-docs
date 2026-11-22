@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-observabilityadmin-telemetrypipelines-telemetrypipeline-syntax.json"></a>
 
-```
+```json
 {
   "[Arn](#cfn-observabilityadmin-telemetrypipelines-telemetrypipeline-arn)" : {{String}},
   "[Configuration](#cfn-observabilityadmin-telemetrypipelines-telemetrypipeline-configuration)" : {{TelemetryPipelineConfiguration}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-observabilityadmin-telemetrypipelines-telemetrypipeline-syntax.yaml"></a>
 
-```
+```yaml
   [Arn](#cfn-observabilityadmin-telemetrypipelines-telemetrypipeline-arn): {{String}}
   [Configuration](#cfn-observabilityadmin-telemetrypipelines-telemetrypipeline-configuration): {{
     TelemetryPipelineConfiguration}}

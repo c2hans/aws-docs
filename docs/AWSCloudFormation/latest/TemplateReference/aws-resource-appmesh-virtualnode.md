@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-appmesh-virtualnode-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppMesh::VirtualNode",
   "Properties" : {
@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-appmesh-virtualnode-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppMesh::VirtualNode
 Properties:
   [MeshName](#cfn-appmesh-virtualnode-meshname): {{String}}
@@ -149,7 +149,7 @@ This example creates a virtual node with two backends and a listener with a heal
 #### JSON
 <a name="aws-resource-appmesh-virtualnode--examples--Create_a_Virtual_Node--json"></a>
 
-```
+```json
 {
    "Description": "Basic Test Virtual Node",
    "Resources": {
@@ -258,7 +258,7 @@ This example creates a virtual node with two backends and a listener with a heal
 #### YAML
 <a name="aws-resource-appmesh-virtualnode--examples--Create_a_Virtual_Node--yaml"></a>
 
-```
+```yaml
 Description: "Basic Test Virtual Node"
 Resources:
   BasicVirtualNode:

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-multiplexoutputsettings-syntax.json"></a>
 
-```
+```json
 {
   "[ContainerSettings](#cfn-medialive-channel-multiplexoutputsettings-containersettings)" : {{MultiplexContainerSettings}},
   "[Destination](#cfn-medialive-channel-multiplexoutputsettings-destination)" : {{OutputLocationRef}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-multiplexoutputsettings-syntax.yaml"></a>
 
-```
+```yaml
   [ContainerSettings](#cfn-medialive-channel-multiplexoutputsettings-containersettings): {{
     MultiplexContainerSettings}}
   [Destination](#cfn-medialive-channel-multiplexoutputsettings-destination): {{

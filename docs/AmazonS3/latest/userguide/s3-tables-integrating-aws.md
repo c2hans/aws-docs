@@ -57,7 +57,7 @@ The following steps show how to use the AWS CLI to integrate table buckets. To u
 
 1. Create a table bucket.
 
-   ```
+   ```bash
    aws s3tables create-table-bucket \
    --region {{us-east-1}} \
    --name {{amzn-s3-demo-table-bucket}}
@@ -65,7 +65,7 @@ The following steps show how to use the AWS CLI to integrate table buckets. To u
 
 1. Create a file called `catalog.json` that contains the following catalog:
 
-   ```
+   ```json
    {
       "Name": "s3tablescatalog",
       "CatalogInput": {
@@ -96,7 +96,7 @@ The following steps show how to use the AWS CLI to integrate table buckets. To u
 
    Create the `s3tablescatalog` catalog by using the following command. Creating this catalog populates the AWS Glue Data Catalog with objects corresponding to table buckets, namespaces, and tables.
 
-   ```
+   ```bash
    aws glue create-catalog \
    --region {{us-east-1}} \
    --cli-input-json file://{{catalog.json}}
@@ -104,7 +104,7 @@ The following steps show how to use the AWS CLI to integrate table buckets. To u
 
 1. Verify that the `s3tablescatalog` catalog was added in AWS Glue by using the following command:
 
-   ```
+   ```bash
    aws glue get-catalog --catalog-id s3tablescatalog
    ```
 

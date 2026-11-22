@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-bridgesource-multicastsourcesettings-syntax.json"></a>
 
-```
+```json
 {
   "[MulticastSourceIp](#cfn-mediaconnect-bridgesource-multicastsourcesettings-multicastsourceip)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-bridgesource-multicastsourcesettings-syntax.yaml"></a>
 
-```
+```yaml
   [MulticastSourceIp](#cfn-mediaconnect-bridgesource-multicastsourcesettings-multicastsourceip): {{String}}
 ```
 

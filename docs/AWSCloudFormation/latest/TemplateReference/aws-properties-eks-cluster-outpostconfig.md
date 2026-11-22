@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-cluster-outpostconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ControlPlaneInstanceType](#cfn-eks-cluster-outpostconfig-controlplaneinstancetype)" : {{String}},
   "[ControlPlanePlacement](#cfn-eks-cluster-outpostconfig-controlplaneplacement)" : {{ControlPlanePlacement}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-cluster-outpostconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ControlPlaneInstanceType](#cfn-eks-cluster-outpostconfig-controlplaneinstancetype): {{String}}
   [ControlPlanePlacement](#cfn-eks-cluster-outpostconfig-controlplaneplacement): {{
     ControlPlanePlacement}}

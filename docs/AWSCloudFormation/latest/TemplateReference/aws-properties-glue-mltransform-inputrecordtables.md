@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-mltransform-inputrecordtables-syntax.json"></a>
 
-```
+```json
 {
   "[GlueTables](#cfn-glue-mltransform-inputrecordtables-gluetables)" : {{[ GlueTables, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-mltransform-inputrecordtables-syntax.yaml"></a>
 
-```
+```yaml
   [GlueTables](#cfn-glue-mltransform-inputrecordtables-gluetables): {{
     - GlueTables}}
 ```

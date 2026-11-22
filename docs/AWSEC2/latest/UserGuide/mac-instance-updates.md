@@ -29,11 +29,11 @@ Due to an update in the network driver configuration, ENA driver version 1.0.2 i
 
 1. Update Homebrew and download the ENA application into the `Applications` file using the following command.
 
-   ```
+   ```bash
    [ec2-user ~]$ brew update
    ```
 
-   ```
+   ```bash
    [ec2-user ~]$ brew install amazon-ena-ethernet-dext
    ```
 
@@ -49,7 +49,7 @@ Due to an update in the network driver configuration, ENA driver version 1.0.2 i
 
    1. To confirm the driver was activated correctly, run the following command in the Terminal window. The output of the command shows that the old driver is in the terminating state and the new driver is in the activated state.
 
-      ```
+      ```bash
       systemextensionsctl list;
       ```
 
@@ -81,19 +81,19 @@ The password and secure token are set the first time you connect to an Apple sil
 
 1. Set the password for the `ec2-user` user.
 
-   ```
+   ```bash
    $ sudo /usr/bin/dscl . -passwd /Users/ec2-user
    ```
 
 1. Enable the secure token for the `ec2-user` user. For `-oldPassword`, specify the same password from the previous step. For `-newPassword`, specify a different password. The following command assumes that you have your old and new passwords saved in `.txt` files.
 
-   ```
+   ```bash
    $ sysadminctl -oldPassword `cat old_password.txt` -newPassword `cat new_password.txt`
    ```
 
 1. Verify that the secure token is enabled.
 
-   ```
+   ```bash
    $ sysadminctl -secureTokenStatus ec2-user
    ```
 
@@ -109,7 +109,7 @@ To delegate ownership, you must create a volume ownership delegation task.
      + **Username** — If you did not change the default administrative user, specify `ec2-user`. Otherwise, specify the username for your administrative user.
      + **Password** — Specify the password that you set for root volume admin user in Step 1 above.
 
-   ```
+   ```bash
    aws ec2 create-delegate-mac-volume-ownership-task \
    --instance-id {{i-1234567890abcdef0}} \
    --mac-credentials file://mac-credentials.json
@@ -117,7 +117,7 @@ To delegate ownership, you must create a volume ownership delegation task.
 
    The following is the contents of the `mac-credentials.json` file referenced in the preceding examples.
 
-   ```
+   ```json
    {
      "internalDiskPassword":"internal-disk-admin_password",
      "rootVolumeUsername":"root-volume-admin_username",
@@ -127,7 +127,7 @@ To delegate ownership, you must create a volume ownership delegation task.
 
 1. Wait for the volume ownership delegation task to complete and for the instance to return to a healthy state. Use the [ describe-mac-modification-tasks](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-mac-modification-tasks.html) command. For `--mac-modification-task-id`, specify the ID of the volume ownership delegation task from the previous step.
 
-   ```
+   ```bash
    aws ec2 describe-mac-modification-tasks \
    --mac-modification-task-id {{task-id}}
    ```
@@ -149,20 +149,20 @@ With this procedure on macOS Big Sur, you can only perform minor updates such as
 
 1. From your local computer, in the Terminal, connect to your Apple silicon Mac instance using SSH with the following command. For more information, see [Connect to your instance using SSH](connect-to-mac-instance.md#mac-instance-ssh).
 
-   ```
+   ```bash
    ssh -i {{/path/key-pair-name}}.pem ec2-user@{{instance-public-dns-name}}
    ```
 
 1. Install and start macOS Screen Sharing using the following command.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo launchctl enable system/com.apple.screensharing
    sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.screensharing.plist
    ```
 
 1. Set a password for `ec2-user` with the following command. Remember the password as you will use it later.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo /usr/bin/dscl . -passwd /Users/ec2-user
    ```
 
@@ -170,7 +170,7 @@ With this procedure on macOS Big Sur, you can only perform minor updates such as
 
 1. From your local computer, in the Terminal, reconnect to your instance with an SSH tunnel to the VNC port using the following command.
 
-   ```
+   ```bash
    ssh -i {{/path/key-pair-name}}.pem -L 5900:localhost:5900 ec2-user@{{instance-public-dns-name}}
    ```
 **Note**
@@ -194,7 +194,7 @@ Do not exit this SSH session until the following VNC connection and GUI steps ar
 **Troubleshooting tip**
 If you need to mount the internal disk, run the following command in the Terminal.
 
-   ```
+   ```bash
    APFSVolumeName="InternalDisk" ; SSDContainer=$(diskutil list | grep "Physical Store disk0" -B 3 | grep "/dev/disk" | awk {'print $1'} ) ; diskutil apfs addVolume $SSDContainer APFS $APFSVolumeName
    ```
 
@@ -208,7 +208,7 @@ Use the following procedure to delegate ownership to the administrative user. Wh
 
 1. From your local computer, in the Terminal, connect to your Apple silicon Mac instance using the following command.
 
-   ```
+   ```bash
    ssh -i {{/path/key-pair-name}}.pem aws-managed-user@{{instance-public-dns-name}}
    ```
 
@@ -216,13 +216,13 @@ Use the following procedure to delegate ownership to the administrative user. Wh
 
    1. Clear out the known hosts using the following command. Then, repeat the previous step.
 
-      ```
+      ```bash
       rm ~/.ssh/known_hosts
       ```
 
    1. Add the following to the SSH command in the previous step.
 
-      ```
+      ```bash
       -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
       ```
 
@@ -230,7 +230,7 @@ Use the following procedure to delegate ownership to the administrative user. Wh
 
    1.
 
-      ```
+      ```bash
       [aws-managed-user ~]$ sudo /usr/bin/dscl . -passwd /Users/aws-managed-user {{password}}
       ```
 
@@ -238,13 +238,13 @@ Use the following procedure to delegate ownership to the administrative user. Wh
 **Troubleshooting tip**
 If you get the error `passwd: DS error: eDSAuthFailed`, use the following command.
 
-      ```
+      ```bash
       [aws-managed-user ~]$ sudo passwd aws-managed-user
       ```
 
 1. Install and start macOS Screen Sharing using the following command.
 
-   ```
+   ```bash
    [aws-managed-user ~]$ sudo launchctl enable system/com.apple.screensharing
    sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.screensharing.plist
    ```
@@ -253,7 +253,7 @@ If you get the error `passwd: DS error: eDSAuthFailed`, use the following comman
 
 1. From your local computer, in the Terminal, reconnect to your instance with an SSH tunnel to the VNC port using the following command.
 
-   ```
+   ```bash
    ssh -i {{/path/key-pair-name}}.pem -L 5900:localhost:5900 aws-managed-user@{{instance-public-dns-name}}
    ```
 
@@ -293,7 +293,7 @@ If you have multiple bootable Amazon EBS volumes attached to your Apple silicon 
 **Troubleshooting tip**
 If you get the warning `WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!`, run the following command and reconnect to your instance using SSH.
 
-   ```
+   ```bash
    rm ~/.ssh/known_hosts
    ```
 
@@ -310,19 +310,19 @@ On x86 Mac instances, you can install operating system updates from Apple using 
 
 1. List the packages with available updates using the following command.
 
-   ```
+   ```bash
    [ec2-user ~]$ softwareupdate --list
    ```
 
 1. Install all updates or only specific updates. To install specific updates, use the following command.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo softwareupdate --install {{label}}
    ```
 
    To install all updates instead, use the following command.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo softwareupdate --install --all --restart
    ```
 
@@ -334,24 +334,24 @@ You can use Homebrew to install updates to packages in the EC2 macOS AMIs, so th
 
 1. Update Homebrew using the following command.
 
-   ```
+   ```bash
    [ec2-user ~]$ brew update
    ```
 
 1. List the packages with available updates using the following command.
 
-   ```
+   ```bash
    [ec2-user ~]$ brew outdated
    ```
 
 1. Install all updates or only specific updates. To install specific updates, use the following command.
 
-   ```
+   ```bash
    [ec2-user ~]$ brew upgrade {{package name}}
    ```
 
    To install all updates instead, use the following command.
 
-   ```
+   ```bash
    [ec2-user ~]$ brew upgrade
    ```

@@ -36,13 +36,13 @@ The following example uses CloudShell to create an IAM group, add an IAM user to
 
 1. To create an IAM group, enter the following command in the CloudShell command line. In this example we named the group *east\_coast*:
 
-   ```
+   ```bash
    aws iam create-group --group-name east_coast
    ```
 
    If the call is successful, the command line displays a response from the service similar to the following output:
 
-   ```
+   ```json
            {
               "Group": {
                   "Path": "/",
@@ -56,19 +56,19 @@ The following example uses CloudShell to create an IAM group, add an IAM user to
 
 1. To add a user to the group that you created, use the following command, specifying the group name and username. In this example we named the group *east\_coast* and the user *john*:
 
-   ```
+   ```bash
    aws iam add-user-to-group --group-name east_coast --user-name john
    ```
 
 1. To verify that the user is in the group, use the following command, specifying the group name. In this example we continue using the group *east\_coast* :
 
-   ```
+   ```bash
    aws iam get-group --group-name east_coast
    ```
 
    If the call is successful, the command line displays a response from the service similar to the following output:
 
-   ```
+   ```json
           {
             "Users": [
               {

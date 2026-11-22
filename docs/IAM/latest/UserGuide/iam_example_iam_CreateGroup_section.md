@@ -39,7 +39,7 @@ For more information, see [Creating IAM user groups](https://docs.aws.amazon.com
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 
-```
+```javascript
 import { CreateGroupCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -64,7 +64,7 @@ export const createGroup = async (groupName) => {
 **Tools for PowerShell V4**
 **Example 1: This example creates a new IAM group named `Developers`.**
 
-```
+```powershell
 New-IAMGroup -GroupName Developers
 ```
 **Output:**
@@ -81,7 +81,7 @@ Path       : /
 **Tools for PowerShell V5**
 **Example 1: This example creates a new IAM group named `Developers`.**
 
-```
+```powershell
 New-IAMGroup -GroupName Developers
 ```
 **Output:**

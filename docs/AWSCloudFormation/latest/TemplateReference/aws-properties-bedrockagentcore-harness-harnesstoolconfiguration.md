@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-harness-harnesstoolconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AgentCoreBrowser](#cfn-bedrockagentcore-harness-harnesstoolconfiguration-agentcorebrowser)" : {{HarnessAgentCoreBrowserConfig}},
   "[AgentCoreCodeInterpreter](#cfn-bedrockagentcore-harness-harnesstoolconfiguration-agentcorecodeinterpreter)" : {{HarnessAgentCoreCodeInterpreterConfig}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-harness-harnesstoolconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AgentCoreBrowser](#cfn-bedrockagentcore-harness-harnesstoolconfiguration-agentcorebrowser): {{
     HarnessAgentCoreBrowserConfig}}
   [AgentCoreCodeInterpreter](#cfn-bedrockagentcore-harness-harnesstoolconfiguration-agentcorecodeinterpreter): {{

@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-stepfunctions-statemachine-loggingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Destinations](#cfn-stepfunctions-statemachine-loggingconfiguration-destinations)" : {{[ LogDestination, ... ]}},
   "[IncludeExecutionData](#cfn-stepfunctions-statemachine-loggingconfiguration-includeexecutiondata)" : {{Boolean}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-stepfunctions-statemachine-loggingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Destinations](#cfn-stepfunctions-statemachine-loggingconfiguration-destinations): {{
     - LogDestination}}
   [IncludeExecutionData](#cfn-stepfunctions-statemachine-loggingconfiguration-includeexecutiondata): {{Boolean}}

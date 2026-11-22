@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emr-step-keyvalue-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-emr-step-keyvalue-key)" : {{String}},
   "[Value](#cfn-emr-step-keyvalue-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emr-step-keyvalue-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-emr-step-keyvalue-key): {{String}}
   [Value](#cfn-emr-step-keyvalue-value): {{String}}
 ```

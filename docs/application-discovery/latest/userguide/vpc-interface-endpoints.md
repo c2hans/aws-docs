@@ -65,7 +65,7 @@ The following is an example of a custom endpoint policy. When you attach this po
 ------
 #### [ Example policy for Application Discovery Service ]
 
-```
+```json
 {
    "Statement": [
       {
@@ -85,7 +85,7 @@ The following is an example of a custom endpoint policy. When you attach this po
 ------
 #### [ Example policy for the Agentless Collector and AWS Application Discovery Agent ]
 
-```
+```json
 {
    "Statement": [
       {

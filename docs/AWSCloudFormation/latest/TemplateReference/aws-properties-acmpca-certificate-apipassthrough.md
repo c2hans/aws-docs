@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-acmpca-certificate-apipassthrough-syntax.json"></a>
 
-```
+```json
 {
   "[Extensions](#cfn-acmpca-certificate-apipassthrough-extensions)" : {{Extensions}},
   "[Subject](#cfn-acmpca-certificate-apipassthrough-subject)" : {{Subject}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-acmpca-certificate-apipassthrough-syntax.yaml"></a>
 
-```
+```yaml
   [Extensions](#cfn-acmpca-certificate-apipassthrough-extensions): {{
     Extensions}}
   [Subject](#cfn-acmpca-certificate-apipassthrough-subject): {{

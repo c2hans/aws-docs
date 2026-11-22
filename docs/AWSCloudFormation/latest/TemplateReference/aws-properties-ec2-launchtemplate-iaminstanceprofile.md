@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-launchtemplate-iaminstanceprofile-syntax.json"></a>
 
-```
+```json
 {
   "[Arn](#cfn-ec2-launchtemplate-iaminstanceprofile-arn)" : {{String}},
   "[Name](#cfn-ec2-launchtemplate-iaminstanceprofile-name)" : {{String}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-launchtemplate-iaminstanceprofile-syntax.yaml"></a>
 
-```
+```yaml
   [Arn](#cfn-ec2-launchtemplate-iaminstanceprofile-arn): {{String}}
   [Name](#cfn-ec2-launchtemplate-iaminstanceprofile-name): {{String}}
 ```

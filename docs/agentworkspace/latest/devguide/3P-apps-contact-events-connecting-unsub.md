@@ -8,12 +8,12 @@ Unsubscribes the callback function from Connecting event in the Connect Customer
 
  **Signature**
 
-```
+```typescript
 offConnecting(handler: ContactConnectingHandler, contactId?: string)
 ```
 
  **Usage**
 
-```
+```typescript
 contactClient.offConnecting(handler);
 ```

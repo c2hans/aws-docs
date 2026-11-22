@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigateway-gatewayresponse-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGateway::GatewayResponse",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigateway-gatewayresponse-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGateway::GatewayResponse
 Properties:
   [ResponseParameters](#cfn-apigateway-gatewayresponse-responseparameters): {{
@@ -111,7 +111,7 @@ The following example returns a 404 status code for resource not found instead o
 #### JSON
 <a name="aws-resource-apigateway-gatewayresponse--examples--404_Response--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -142,7 +142,7 @@ The following example returns a 404 status code for resource not found instead o
 #### YAML
 <a name="aws-resource-apigateway-gatewayresponse--examples--404_Response--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   RestApi:
@@ -168,7 +168,7 @@ The following example creates a response for an API based on the supplied parame
 #### JSON
 <a name="aws-resource-apigateway-gatewayresponse--examples--Parameterized_Response--json"></a>
 
-```
+```json
 {
     "Parameters": {
         "apiName": {
@@ -225,7 +225,7 @@ The following example creates a response for an API based on the supplied parame
 #### YAML
 <a name="aws-resource-apigateway-gatewayresponse--examples--Parameterized_Response--yaml"></a>
 
-```
+```yaml
 Parameters:
     apiName :
         Type : String

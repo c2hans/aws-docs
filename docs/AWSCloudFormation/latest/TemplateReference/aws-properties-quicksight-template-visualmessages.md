@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-visualmessages-syntax.json"></a>
 
-```
+```json
 {
   "[NoDataMessage](#cfn-quicksight-template-visualmessages-nodatamessage)" : {{VisualMessageConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-visualmessages-syntax.yaml"></a>
 
-```
+```yaml
   [NoDataMessage](#cfn-quicksight-template-visualmessages-nodatamessage): {{
     VisualMessageConfiguration}}
 ```

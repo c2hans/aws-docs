@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-inspectorv2-cisscanconfiguration-cistargets-syntax.json"></a>
 
-```
+```json
 {
   "[AccountIds](#cfn-inspectorv2-cisscanconfiguration-cistargets-accountids)" : {{[ String, ... ]}},
   "[TargetResourceTags](#cfn-inspectorv2-cisscanconfiguration-cistargets-targetresourcetags)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-inspectorv2-cisscanconfiguration-cistargets-syntax.yaml"></a>
 
-```
+```yaml
   [AccountIds](#cfn-inspectorv2-cisscanconfiguration-cistargets-accountids): {{
     - String}}
   [TargetResourceTags](#cfn-inspectorv2-cisscanconfiguration-cistargets-targetresourcetags): {{

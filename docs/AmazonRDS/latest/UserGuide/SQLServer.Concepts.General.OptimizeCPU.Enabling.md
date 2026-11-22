@@ -88,7 +88,7 @@ The Optimize CPU settings are the [ProcessorFeature](https://docs.aws.amazon.com
 
 1. Use the following syntax:
 
-   ```
+   ```bash
    aws rds create-db-instance \
        --db-instance-identifier {{my-rds-instance}} \
        --engine sqlserver-ee \
@@ -107,7 +107,7 @@ The Optimize CPU settings are the [ProcessorFeature](https://docs.aws.amazon.com
 **Example of viewing valid processor features for a DB instance class**
 Use the [describe-orderable-db-instance-options](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-orderable-db-instance-options.html) command to show the default and allowed values.
 
-```
+```bash
 aws rds describe-orderable-db-instance-options \
     --engine sqlserver-ee \
     --db-instance-class db.r8i.8xlarge \
@@ -121,7 +121,7 @@ In addition, you can run the following commands for DB instance class processor 
 **Example of setting the number of CPU cores for a DB instance**
 The following example uses the [modify-db-instance](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html) command to modify {{my-rds-instance}} by setting the number of CPU cores to 12 and threadsPerCore to 1. Apply the changes immediately by using `--apply-immediately`. If you want to apply the changes during the next scheduled maintenance window, omit the `--apply-immediately` option.
 
-```
+```bash
 aws rds modify-db-instance \
     --db-instance-identifier {{my-rds-instance}} \
     --processor-features "Name=coreCount,Value={{12}}" "Name=threadsPerCore,Value=1" \
@@ -131,7 +131,7 @@ aws rds modify-db-instance \
 **Example of returning to default processor features for a DB instance**
 The following example uses the [modify-db-instance](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html) command to modify {{my-rds-instance}} by returning it to the default processor features.
 
-```
+```bash
 aws rds modify-db-instance \
     --db-instance-identifier {{my-rds-instance}} \
     --use-default-processor-features \
@@ -147,7 +147,7 @@ aws rds modify-db-instance \
 
 1. Use the following syntax:
 
-   ```
+   ```powershell
    New-RDSDBInstance `
        -DBInstanceIdentifier {{my-rds-instance}} `
        -Engine sqlserver-ee `
@@ -166,7 +166,7 @@ aws rds modify-db-instance \
 **Example of viewing valid processor features for a DB instance class**
 Use the [Get-RDSOrderableDBInstanceOption](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-RDSOrderableDBInstanceOption.html) cmdlet to show the default and allowed values.
 
-```
+```powershell
 Get-RDSOrderableDBInstanceOption `
     -Engine sqlserver-ee `
     -DBInstanceClass db.r8i.8xlarge |
@@ -180,7 +180,7 @@ In addition, you can run the following cmdlets for DB instance class processor i
 **Example of setting the number of CPU cores for a DB instance**
 The following example uses AWS Tools for PowerShell and the [Edit-RDSDBInstance](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-RDSDBInstance.html) cmdlet to modify {{my-rds-instance}} by setting the number of CPU cores to 12 and threadsPerCore to 1. If you want to apply the changes during the next scheduled maintenance window, omit the `-ApplyImmediately` parameter.
 
-```
+```powershell
 Edit-RDSDBInstance `
     -DBInstanceIdentifier {{my-rds-instance}} `
     -ProcessorFeature @{Name='coreCount';Value='{{12}}'},@{Name='threadsPerCore';Value='1'} `
@@ -190,7 +190,7 @@ Edit-RDSDBInstance `
 **Example of returning to default processor features for a DB instance**
 The following example uses AWS Tools for PowerShell and the [Edit-RDSDBInstance](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-RDSDBInstance.html) cmdlet to modify {{my-rds-instance}} by returning it to the default processor features.
 
-```
+```powershell
 Edit-RDSDBInstance `
     -DBInstanceIdentifier {{my-rds-instance}} `
     -UseDefaultProcessorFeature $true `

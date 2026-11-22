@@ -24,7 +24,7 @@ curl --location '{{https://<confluence_host-url>/wiki/rest/api/user/current}}'
 
 If your data source is connected as expected, the JSON response should resemble the following:
 
-```
+```json
 {
     "type": "known",
     "accountId": "{{accountId}}",
@@ -68,7 +68,7 @@ curl --location '{{https://<confluence_server_host_url>/rest/api/user/current}}'
 
 If your data source is connected as expected, the JSON response should resemble the following:
 
-```
+```json
 {
     "type": "known",
     "accountId": "{{accountId}}",

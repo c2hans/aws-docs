@@ -320,7 +320,7 @@ If your CTAS query fails, you might have to delete your table using the [S3 Tabl
 
 **Example**
 
-```
+```sql
 CREATE TABLE "s3tablescatalog/{{amzn-s3-demo-bucket}}"."{{namespace}}"."{{s3-table-name}}"
 WITH (
     format = 'PARQUET'

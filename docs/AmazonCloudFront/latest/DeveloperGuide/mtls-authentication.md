@@ -36,4 +36,4 @@ Mutual TLS authentication with CloudFront addresses several critical security sc
 + [Certificate revocation](certificate-revocation.md)
 + [Helper methods for mutual TLS](mtls-helper-methods-link.md)
 + [Additional validation modes](mtls-validation-modes.md)
-+ [Observability using connection logs](connection-logs.md)
++ [Connection logs for mutual TLS](mtls-connection-logs-link.md)

@@ -104,7 +104,7 @@ Repeat the same process for the **friends** table, the name of the DynamoDB tabl
 
 Now that the data sources are connected to your DynamoDB tables, let’s create a GraphQL schema. From the schema editor in the AWS AppSync console, make sure your schema matches the following schema:
 
-```
+```sh
 schema {
     query: Query
     mutation: Mutation
@@ -151,7 +151,7 @@ Now that you have a valid GraphQL schema and two data sources, you can attach re
 
 From the schema editor in the AWS AppSync console, on the right side choose **Attach Resolver** for `createPicture(input: CreatePictureInput!): Picture!`. Choose the DynamoDB*PicturesDynamoDBTable* data source. In the **request mapping template** section, add the following template:
 
-```
+```velocity
 #set($id = $util.autoId())
 
 {
@@ -170,7 +170,7 @@ From the schema editor in the AWS AppSync console, on the right side choose **At
 
 In the **response mapping template** section, add the following template:
 
-```
+```velocity
 #if($ctx.error)
     $util.error($ctx.error.message, $ctx.error.type)
 #end
@@ -184,7 +184,7 @@ The create picture functionality is done. You are saving a picture in the **Pict
 
 From the schema editor in the AWS AppSync console, on the right side choose **Attach Resolver** for `createFriendship(id: ID!, target: ID!): Boolean`. Choose the DynamoDB**FriendsDynamoDBTable** data source. In the **request mapping template** section, add the following template:
 
-```
+```velocity
 #set($userToFriendFriendship = { "userId" : "$ctx.args.id", "friendId": "$ctx.args.target" })
 #set($friendToUserFriendship = { "userId" : "$ctx.args.target", "friendId": "$ctx.args.id" })
 #set($friendsItems = [$util.dynamodb.toMapValues($userToFriendFriendship), $util.dynamodb.toMapValues($friendToUserFriendship)])
@@ -207,7 +207,7 @@ Effectively, you’re storing two items for each friendship as the relationship 
 
 In the **response mapping template** section, add the following template:
 
-```
+```velocity
 #if($ctx.error)
     $util.error($ctx.error.message, $ctx.error.type)
 #end
@@ -246,7 +246,7 @@ Let’s first create the functions.
 
 1. Inside the request mapping template text area, paste the following template:
 
-   ```
+   ```velocity
    #set($ownerId = $ctx.prev.result.owner)
    #set($callerId = $ctx.prev.result.callerId)
 
@@ -269,7 +269,7 @@ Let’s first create the functions.
 
 1. Inside the response mapping template text area, paste the following template:
 
-   ```
+   ```velocity
    #if($ctx.error)
        $util.error("Unable to retrieve friend mapping message: ${ctx.error.message}", $ctx.error.type)
    #end
@@ -299,7 +299,7 @@ Result: You’ve created the **isFriend** function.
 
 1. Inside the request mapping template text area, paste the following template:
 
-   ```
+   ```velocity
    {
        "version" : "2018-05-29",
 
@@ -321,7 +321,7 @@ Result: You’ve created the **isFriend** function.
 
 1. Inside the response mapping template text area, paste the following template:
 
-   ```
+   ```velocity
    #if($ctx.error)
        $util.error($ctx.error.message, $ctx.error.type)
    #end
@@ -335,14 +335,14 @@ Result: You’ve created the **getPicturesByOwner** function. Now that the funct
 
 From the schema editor in the AWS AppSync console, on the right side choose **Attach Resolver** for `Query.getPicturesByOwner(id: ID!): [Picture]`. On the following page, choose the **Convert to pipeline resolver** link that appears underneath the data source drop-down list. Use the following for the before mapping template:
 
-```
+```velocity
 #set($result = { "owner": $ctx.args.id, "callerId": $ctx.identity.username })
 $util.toJson($result)
 ```
 
 In the **after mapping template** section, use the following:
 
-```
+```velocity
 #foreach($picture in $ctx.result.items)
     ## prepend "src://" to picture.src property
     #set($picture['src'] = "src://${picture['src']}")
@@ -440,7 +440,7 @@ Let’s add a friendship entry. Execute the following mutations in the console.
 
 Note: You must still be logged in as the admin user (the default admin user is **nadia**).
 
-```
+```velocity
 mutation {
   createFriendship(id: "nadia", target: "shaggy")
 }
@@ -448,7 +448,7 @@ mutation {
 
 The response should look like:
 
-```
+```velocity
 {
   "data": {
     "createFriendship": true
@@ -475,7 +475,7 @@ query {
 
 Since **nadia** and **shaggy** are friends, the query should return the corresponding picture.
 
-```
+```json
 {
   "data": {
     "getPicturesByOwner": [
@@ -503,7 +503,7 @@ query {
 
 If you enable logging on your API (in the **Settings** pane), set the debug level to **ALL**, and run the same query again, it returns logs for the field execution. By looking at the logs, you can determine whether the **isFriend** function returned early at the **Request Mapping Template** stage:
 
-```
+```json
 {
   "errors": [],
   "mappingTemplateType": "Request Mapping",
@@ -548,7 +548,7 @@ query {
 
 You get the following unauthorized error:
 
-```
+```json
 {
   "data": {
     "getPicturesByOwner": null

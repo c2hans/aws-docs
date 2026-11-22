@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-route53-recordsetgroup-cidrroutingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[CollectionId](#cfn-route53-recordsetgroup-cidrroutingconfig-collectionid)" : {{String}},
   "[LocationName](#cfn-route53-recordsetgroup-cidrroutingconfig-locationname)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-route53-recordsetgroup-cidrroutingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [CollectionId](#cfn-route53-recordsetgroup-cidrroutingconfig-collectionid): {{String}}
   [LocationName](#cfn-route53-recordsetgroup-cidrroutingconfig-locationname): {{String}}
 ```

@@ -16,7 +16,7 @@ For guidance on how best to use sequences based on workload patterns, see [Worki
 ## Supported syntax
 <a name="create-sequence-supported-syntax"></a>
 
-```
+```sql
 CREATE SEQUENCE [ IF NOT EXISTS ] name CACHE cache
     [ AS data_type ]
     [ INCREMENT [ BY ] increment ]
@@ -40,7 +40,7 @@ After a sequence is created, you use the functions `nextval`, `currval`, and `se
 
 Although you cannot update a sequence directly, you can use a query like:
 
-```
+```sql
 SELECT * FROM name;
 ```
 
@@ -100,13 +100,13 @@ Another consideration is that a `setval` executed on such a sequence will not be
 
 Create an ascending sequence called `serial`, starting at 101:
 
-```
+```sql
 CREATE SEQUENCE serial CACHE 65536 START 101;
 ```
 
 Select the next number from this sequence:
 
-```
+```sql
 SELECT nextval('serial');
 
  nextval
@@ -116,7 +116,7 @@ SELECT nextval('serial');
 
 Select the next number from this sequence:
 
-```
+```sql
 SELECT nextval('serial');
 
  nextval
@@ -126,13 +126,13 @@ SELECT nextval('serial');
 
 Use this sequence in an `INSERT` command:
 
-```
+```sql
 INSERT INTO distributors VALUES (nextval('serial'), 'nothing');
 ```
 
 Reset the sequence to a specific value using `setval`:
 
-```
+```sql
 SELECT setval('serial', 200);
 SELECT nextval('serial');
 

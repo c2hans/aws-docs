@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-kinesis-streamconsumer-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Kinesis::StreamConsumer",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-kinesis-streamconsumer-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Kinesis::StreamConsumer
 Properties:
   [ConsumerName](#cfn-kinesis-streamconsumer-consumername): {{String}}
@@ -116,7 +116,7 @@ The ARN of the data stream with which the consumer is registered.
 #### JSON
 <a name="aws-resource-kinesis-streamconsumer--examples--Register_a_Consumer_with_a_Kinesis_Data_Stream--json"></a>
 
-```
+```json
 {
     "Parameters": {
         "TestStreamARN": {
@@ -138,7 +138,7 @@ The ARN of the data stream with which the consumer is registered.
 #### YAML
 <a name="aws-resource-kinesis-streamconsumer--examples--Register_a_Consumer_with_a_Kinesis_Data_Stream--yaml"></a>
 
-```
+```yaml
     Parameters:
         TestStreamARN:
             Type: String

@@ -46,7 +46,7 @@ To ensure that users and roles can still use the ACM console, also attach the AC
 
 This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -91,7 +91,7 @@ The following policy allows a user to list all of the ACM certificates in the us
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -119,7 +119,7 @@ The following policy denies a user from requesting ACM exportable public certifi
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -154,7 +154,7 @@ The following policy allows a user to retrieve a specific ACM certificate.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -177,7 +177,7 @@ The following policy allows a user to import a certificate.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -200,7 +200,7 @@ The following policy allows a user to delete a specific ACM certificate.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrcontainers-jobtemplate-templateparameterconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultValue](#cfn-emrcontainers-jobtemplate-templateparameterconfiguration-defaultvalue)" : {{String}},
   "[Type](#cfn-emrcontainers-jobtemplate-templateparameterconfiguration-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrcontainers-jobtemplate-templateparameterconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultValue](#cfn-emrcontainers-jobtemplate-templateparameterconfiguration-defaultvalue): {{String}}
   [Type](#cfn-emrcontainers-jobtemplate-templateparameterconfiguration-type): {{String}}
 ```

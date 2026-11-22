@@ -9,7 +9,7 @@ The `USING EXTERNAL FUNCTION` clause specifies a UDF or multiple UDFs that can b
 ## Synopsis
 <a name="udf-synopsis"></a>
 
-```
+```sql
 USING EXTERNAL FUNCTION {{UDF_name}}({{variable1}} {{data_type}}[, {{variable2}} {{data_type}}][,...])
 RETURNS {{data_type}}
 LAMBDA '{{lambda_function_name_or_ARN}}'

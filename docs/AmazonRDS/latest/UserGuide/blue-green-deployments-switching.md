@@ -140,7 +140,7 @@ For PostgreSQL blue/green deployments that use logical replication, check the `O
 
 In addition, you can run the following SQL query in the blue environment:
 
-```
+```sql
 SELECT slot_name,
        confirmed_flush_lsn as flushed,
        pg_current_wal_lsn(),

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-dms-eventsubscription-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DMS::EventSubscription",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-dms-eventsubscription-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DMS::EventSubscription
 Properties:
   [Enabled](#cfn-dms-eventsubscription-enabled): {{Boolean}}
@@ -120,7 +120,7 @@ The following snippet creates an event subscription for an existing replication 
 #### JSON
 <a name="aws-resource-dms-eventsubscription--examples----json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -147,7 +147,7 @@ The following snippet creates an event subscription for an existing replication 
 #### YAML
 <a name="aws-resource-dms-eventsubscription--examples----yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   myEventSubscription:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-channel-slatesource-syntax.json"></a>
 
-```
+```json
 {
   "[SourceLocationName](#cfn-mediatailor-channel-slatesource-sourcelocationname)" : {{String}},
   "[VodSourceName](#cfn-mediatailor-channel-slatesource-vodsourcename)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-channel-slatesource-syntax.yaml"></a>
 
-```
+```yaml
   [SourceLocationName](#cfn-mediatailor-channel-slatesource-sourcelocationname): {{String}}
   [VodSourceName](#cfn-mediatailor-channel-slatesource-vodsourcename): {{String}}
 ```

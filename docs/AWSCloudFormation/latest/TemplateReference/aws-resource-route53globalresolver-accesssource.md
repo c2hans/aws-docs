@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-route53globalresolver-accesssource-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Route53GlobalResolver::AccessSource",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-route53globalresolver-accesssource-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53GlobalResolver::AccessSource
 Properties:
   [Cidr](#cfn-route53globalresolver-accesssource-cidr): {{String}}

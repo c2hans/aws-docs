@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lambda-url-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lambda::Url",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lambda-url-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lambda::Url
 Properties:
   [AuthType](#cfn-lambda-url-authtype): {{String}}

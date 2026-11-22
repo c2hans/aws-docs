@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-distributionconfiguration-fastlaunchlaunchtemplatespecification-syntax.json"></a>
 
-```
+```json
 {
   "[LaunchTemplateId](#cfn-imagebuilder-distributionconfiguration-fastlaunchlaunchtemplatespecification-launchtemplateid)" : {{String}},
   "[LaunchTemplateName](#cfn-imagebuilder-distributionconfiguration-fastlaunchlaunchtemplatespecification-launchtemplatename)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-distributionconfiguration-fastlaunchlaunchtemplatespecification-syntax.yaml"></a>
 
-```
+```yaml
   [LaunchTemplateId](#cfn-imagebuilder-distributionconfiguration-fastlaunchlaunchtemplatespecification-launchtemplateid): {{String}}
   [LaunchTemplateName](#cfn-imagebuilder-distributionconfiguration-fastlaunchlaunchtemplatespecification-launchtemplatename): {{String}}
   [LaunchTemplateVersion](#cfn-imagebuilder-distributionconfiguration-fastlaunchlaunchtemplatespecification-launchtemplateversion): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-gateway-hostsharedalbconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AccessLogs](#cfn-ecs-gateway-hostsharedalbconfiguration-accesslogs)" : {{GatewayElbAccessLogConfiguration}},
   "[CurrentAlbCount](#cfn-ecs-gateway-hostsharedalbconfiguration-currentalbcount)" : {{Integer}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-gateway-hostsharedalbconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AccessLogs](#cfn-ecs-gateway-hostsharedalbconfiguration-accesslogs): {{
     GatewayElbAccessLogConfiguration}}
   [CurrentAlbCount](#cfn-ecs-gateway-hostsharedalbconfiguration-currentalbcount): {{Integer}}

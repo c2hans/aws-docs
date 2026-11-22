@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-systemsmanagersap-application-credential-syntax.json"></a>
 
-```
+```json
 {
   "[CredentialType](#cfn-systemsmanagersap-application-credential-credentialtype)" : {{String}},
   "[DatabaseName](#cfn-systemsmanagersap-application-credential-databasename)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-systemsmanagersap-application-credential-syntax.yaml"></a>
 
-```
+```yaml
   [CredentialType](#cfn-systemsmanagersap-application-credential-credentialtype): {{String}}
   [DatabaseName](#cfn-systemsmanagersap-application-credential-databasename): {{String}}
   [SecretId](#cfn-systemsmanagersap-application-credential-secretid): {{String}}

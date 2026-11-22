@@ -11,7 +11,7 @@ In the example, when CloudFormation creates the `AllSecurityGroups` custom resou
 ## JSON
 <a name="quickref-lambda-example-1.json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Parameters": {
@@ -180,7 +180,7 @@ In the example, when CloudFormation creates the `AllSecurityGroups` custom resou
 ## YAML
 <a name="quickref-lambda-example-1.yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Parameters:
   ExistingSecurityGroups:

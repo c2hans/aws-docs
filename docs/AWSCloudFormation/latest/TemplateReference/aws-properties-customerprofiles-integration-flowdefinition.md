@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-integration-flowdefinition-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-customerprofiles-integration-flowdefinition-description)" : {{String}},
   "[FlowName](#cfn-customerprofiles-integration-flowdefinition-flowname)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-integration-flowdefinition-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-customerprofiles-integration-flowdefinition-description): {{String}}
   [FlowName](#cfn-customerprofiles-integration-flowdefinition-flowname): {{String}}
   [KmsArn](#cfn-customerprofiles-integration-flowdefinition-kmsarn): {{String}}

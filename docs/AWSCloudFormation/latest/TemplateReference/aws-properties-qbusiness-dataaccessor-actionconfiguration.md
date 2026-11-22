@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-qbusiness-dataaccessor-actionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-qbusiness-dataaccessor-actionconfiguration-action)" : {{String}},
   "[FilterConfiguration](#cfn-qbusiness-dataaccessor-actionconfiguration-filterconfiguration)" : {{ActionFilterConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-qbusiness-dataaccessor-actionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-qbusiness-dataaccessor-actionconfiguration-action): {{String}}
   [FilterConfiguration](#cfn-qbusiness-dataaccessor-actionconfiguration-filterconfiguration): {{
     ActionFilterConfiguration}}

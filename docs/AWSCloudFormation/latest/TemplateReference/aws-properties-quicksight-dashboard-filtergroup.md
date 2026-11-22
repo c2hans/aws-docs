@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-filtergroup-syntax.json"></a>
 
-```
+```json
 {
   "[CrossDataset](#cfn-quicksight-dashboard-filtergroup-crossdataset)" : {{String}},
   "[FilterGroupId](#cfn-quicksight-dashboard-filtergroup-filtergroupid)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-filtergroup-syntax.yaml"></a>
 
-```
+```yaml
   [CrossDataset](#cfn-quicksight-dashboard-filtergroup-crossdataset): {{String}}
   [FilterGroupId](#cfn-quicksight-dashboard-filtergroup-filtergroupid): {{String}}
   [Filters](#cfn-quicksight-dashboard-filtergroup-filters): {{

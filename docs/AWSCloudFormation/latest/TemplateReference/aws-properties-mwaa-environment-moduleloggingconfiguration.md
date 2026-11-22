@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mwaa-environment-moduleloggingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CloudWatchLogGroupArn](#cfn-mwaa-environment-moduleloggingconfiguration-cloudwatchloggrouparn)" : {{String}},
   "[Enabled](#cfn-mwaa-environment-moduleloggingconfiguration-enabled)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mwaa-environment-moduleloggingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CloudWatchLogGroupArn](#cfn-mwaa-environment-moduleloggingconfiguration-cloudwatchloggrouparn): {{String}}
   [Enabled](#cfn-mwaa-environment-moduleloggingconfiguration-enabled): {{Boolean}}
   [LogLevel](#cfn-mwaa-environment-moduleloggingconfiguration-loglevel): {{String}}

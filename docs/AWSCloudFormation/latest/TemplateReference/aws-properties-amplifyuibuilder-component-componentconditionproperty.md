@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amplifyuibuilder-component-componentconditionproperty-syntax.json"></a>
 
-```
+```json
 {
   "[Else](#cfn-amplifyuibuilder-component-componentconditionproperty-else)" : {{ComponentProperty}},
   "[Field](#cfn-amplifyuibuilder-component-componentconditionproperty-field)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amplifyuibuilder-component-componentconditionproperty-syntax.yaml"></a>
 
-```
+```yaml
   [Else](#cfn-amplifyuibuilder-component-componentconditionproperty-else): {{
     ComponentProperty}}
   [Field](#cfn-amplifyuibuilder-component-componentconditionproperty-field): {{String}}

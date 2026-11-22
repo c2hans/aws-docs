@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appintegrations-dataintegration-fileconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Filters](#cfn-appintegrations-dataintegration-fileconfiguration-filters)" : {{{{{Key}}: {{Value}}, ...}}},
   "[Folders](#cfn-appintegrations-dataintegration-fileconfiguration-folders)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appintegrations-dataintegration-fileconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Filters](#cfn-appintegrations-dataintegration-fileconfiguration-filters): {{
     {{Key}}: {{Value}}}}
   [Folders](#cfn-appintegrations-dataintegration-fileconfiguration-folders): {{

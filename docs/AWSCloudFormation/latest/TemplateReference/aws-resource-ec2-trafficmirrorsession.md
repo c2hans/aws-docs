@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-trafficmirrorsession-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::TrafficMirrorSession",
   "Properties" : {
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-trafficmirrorsession-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::TrafficMirrorSession
 Properties:
   [Description](#cfn-ec2-trafficmirrorsession-description): {{String}}
@@ -138,7 +138,7 @@ This is a traffic mirror session that mirrors the first 100 bytes in each packet
 #### JSON
 <a name="aws-resource-ec2-trafficmirrorsession--examples--Create_a_traffic_mirror_session--json"></a>
 
-```
+```json
 {
   "SampleTrafficMirrorSession": {
     "Type": "AWS::EC2::TrafficMirrorSession",
@@ -164,7 +164,7 @@ This is a traffic mirror session that mirrors the first 100 bytes in each packet
 #### YAML
 <a name="aws-resource-ec2-trafficmirrorsession--examples--Create_a_traffic_mirror_session--yaml"></a>
 
-```
+```yaml
 SampleTrafficMirrorSession:
   Type: "AWS::EC2::TrafficMirrorSession"
   Properties:

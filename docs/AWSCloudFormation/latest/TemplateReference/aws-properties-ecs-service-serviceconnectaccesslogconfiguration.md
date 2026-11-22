@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-serviceconnectaccesslogconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Format](#cfn-ecs-service-serviceconnectaccesslogconfiguration-format)" : {{String}},
   "[IncludeQueryParameters](#cfn-ecs-service-serviceconnectaccesslogconfiguration-includequeryparameters)" : {{String}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-serviceconnectaccesslogconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Format](#cfn-ecs-service-serviceconnectaccesslogconfiguration-format): {{String}}
   [IncludeQueryParameters](#cfn-ecs-service-serviceconnectaccesslogconfiguration-includequeryparameters): {{String}}
 ```

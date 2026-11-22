@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-amazonmq-configurationassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AmazonMQ::ConfigurationAssociation",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-amazonmq-configurationassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AmazonMQ::ConfigurationAssociation
 Properties:
   [Broker](#cfn-amazonmq-configurationassociation-broker): {{String}}
@@ -78,7 +78,7 @@ The following example creates an Amazon MQ for ActiveMQ ConfigurationAssociation
 #### JSON
 <a name="aws-resource-amazonmq-configurationassociation--examples--ConfigurationAssociation--json"></a>
 
-```
+```json
 "ConfigurationAssociation1": {
 		"Type": "AWS::AmazonMQ::ConfigurationAssociation",
 		"Properties": {
@@ -103,7 +103,7 @@ The following example creates an Amazon MQ for ActiveMQ ConfigurationAssociation
 #### YAML
 <a name="aws-resource-amazonmq-configurationassociation--examples--ConfigurationAssociation--yaml"></a>
 
-```
+```yaml
  ConfigurationAssociation1:
     Type: AWS::AmazonMQ::ConfigurationAssociation
     Properties:

@@ -10,19 +10,19 @@ To create a table for organization wide CloudTrail log files in Athena, follow t
 
 1. In the `CREATE TABLE` statement, modify the `LOCATION` clause to include the organization ID, as in the following example:
 
-   ```
+   ```sql
    LOCATION 's3://amzn-s3-demo-bucket/AWSLogs/{{organization_id}}/'
    ```
 
 1. In the `PARTITIONED BY` clause, add an entry for the account ID as a string, as in the following example:
 
-   ```
+   ```sql
    PARTITIONED BY (account string, region string, year string, month string, day string)
    ```
 
    The following example shows the combined result:
 
-   ```
+   ```sql
    ...
 
    PARTITIONED BY (account string, region string, year string, month string, day string)
@@ -34,7 +34,7 @@ To create a table for organization wide CloudTrail log files in Athena, follow t
 
 1. In the `ALTER TABLE` statement `ADD PARTITION` clause, include the account ID, as in the following example:
 
-   ```
+   ```sql
    ALTER TABLE table_name ADD
    PARTITION (account='{{111122223333}}',
    region='us-east-1',
@@ -45,13 +45,13 @@ To create a table for organization wide CloudTrail log files in Athena, follow t
 
 1. In the `ALTER TABLE` statement `LOCATION` clause, include the organization ID, the account ID, and the partition that you want to add, as in the following example:
 
-   ```
+   ```sql
    LOCATION 's3://amzn-s3-demo-bucket/AWSLogs/{{organization_id}}/{{Account_ID}}/CloudTrail/us-east-1/2022/08/08/'
    ```
 
    The following example `ALTER TABLE` statement shows the combined result:
 
-   ```
+   ```sql
    ALTER TABLE table_name ADD
    PARTITION (account='{{111122223333}}',
    region='us-east-1',

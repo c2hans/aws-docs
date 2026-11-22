@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-referencelinevaluelabelconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[FormatConfiguration](#cfn-quicksight-analysis-referencelinevaluelabelconfiguration-formatconfiguration)" : {{NumericFormatConfiguration}},
   "[RelativePosition](#cfn-quicksight-analysis-referencelinevaluelabelconfiguration-relativeposition)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-referencelinevaluelabelconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [FormatConfiguration](#cfn-quicksight-analysis-referencelinevaluelabelconfiguration-formatconfiguration): {{
     NumericFormatConfiguration}}
   [RelativePosition](#cfn-quicksight-analysis-referencelinevaluelabelconfiguration-relativeposition): {{String}}

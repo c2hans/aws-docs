@@ -11,7 +11,7 @@ The AWS AppSync integration for Amazon OpenSearch Service enables you to store a
 
 Most OpenSearch Service request objects have a common structure where just a few pieces change. The following example runs a search against an OpenSearch Service domain, where documents are of type `post` and are indexed under `id`. The search parameters are defined in the `body` section, with many of the common query clauses being defined in the `query` field. This example will search for documents containing `"Nadia"`, or `"Bailey"`, or both, in the `author` field of a document:
 
-```
+```sh
 export const onPublish = {
   request(ctx) {
     return {
@@ -47,7 +47,7 @@ Most applications are looking for the `_source` field from an OpenSearch Service
 
  **List of Results**
 
-```
+```sh
 export const onPublish = {
   response(ctx) {
     const entries = [];
@@ -60,7 +60,7 @@ export const onPublish = {
 
  **Individual Item**
 
-```
+```sh
 export const onPublish = {
   response(ctx) {
     const result =  ctx.result['_source']
@@ -76,7 +76,7 @@ This applies only to the Request handler.
 
 HTTP method or verb (GET, POST, PUT, HEAD or DELETE) that AWS AppSync sends to the OpenSearch Service domain. Both the key and the value must be a string.
 
-```
+```sh
 "operation" : "PUT"
 ```
 
@@ -88,7 +88,7 @@ This applies only to the Request handler.
 
 The search path for an OpenSearch Service request from AWS AppSync. This forms a URL for the operation’s HTTP verb. Both the key and the value must be strings.
 
-```
+```sh
 "path" : "/indexname/type"
 
 "path" : "/indexname/type/_search"
@@ -96,7 +96,7 @@ The search path for an OpenSearch Service request from AWS AppSync. This forms a
 
 When the request handler is evaluated, this path is sent as part of the HTTP request, including the OpenSearch Service domain. For example, the previous example might translate to:
 
-```
+```sh
 GET https://opensearch-domain-name.REGION.es.amazonaws.com/indexname/type/_search
 ```
 
@@ -111,7 +111,7 @@ Used to specify what action your search performs, most commonly by setting the *
 
   The header information, as key-value pairs. Both the key and the value must be strings. For example:
 
-  ```
+  ```sh
   "headers" : {
       "Content-Type" : "application/json"
   }
@@ -123,7 +123,7 @@ AWS AppSync currently supports only JSON as a `Content-Type`.
 
   Key-value pairs that specify common options, such as code formatting for JSON responses. Both the key and the value must be a string. For example, if you want to get pretty-formatted JSON, you would use:
 
-  ```
+  ```sh
   "queryString" : {
       "pretty" : "true"
   }
@@ -136,7 +136,7 @@ AWS AppSync currently supports only JSON as a `Content-Type`.
 
 Return all documents with a city matching “seattle”:
 
-```
+```sh
 export const onSubscribe = {
   request(ctx) {
     return {
@@ -156,7 +156,7 @@ export const onSubscribe = {
 
 Return all documents matching “washington” as the city or the state:
 
-```
+```sh
 export const onSubscribe = {
   request(ctx) {
     return {

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lambda-alias-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lambda::Alias",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lambda-alias-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lambda::Alias
 Properties:
   [Description](#cfn-lambda-alias-description): {{String}}
@@ -142,7 +142,7 @@ A Node.js function with a version and alias.
 #### YAML
 <a name="aws-resource-lambda-alias--examples--Alias--yaml"></a>
 
-```
+```yaml
 Resources:
   function:
     Type: AWS::Lambda::Function
@@ -183,7 +183,7 @@ An alias that routes requests to two versions.
 #### YAML
 <a name="aws-resource-lambda-alias--examples--Weighted_Alias--yaml"></a>
 
-```
+```yaml
 Resources:
   function:
     Type: AWS::Lambda::Function

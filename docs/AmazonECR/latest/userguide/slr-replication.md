@@ -19,7 +19,7 @@ The following `ECRReplicationServiceRolePolicy` role permissions policy allows A
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

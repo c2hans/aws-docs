@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-groundstation-config-demodulationconfig-syntax.json"></a>
 
-```
+```json
 {
   "[UnvalidatedJSON](#cfn-groundstation-config-demodulationconfig-unvalidatedjson)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-groundstation-config-demodulationconfig-syntax.yaml"></a>
 
-```
+```yaml
   [UnvalidatedJSON](#cfn-groundstation-config-demodulationconfig-unvalidatedjson): {{String}}
 ```
 
@@ -50,7 +50,7 @@ The following example creates a Ground Station `DemodulationConfig`
 #### JSON
 <a name="aws-properties-groundstation-config-demodulationconfig--examples--Create_a_DemodulationConfig--json"></a>
 
-```
+```json
 {
   "DemodulationConfig": {
     "UnvalidatedJSON": "{ \"type\":\"QPSK\", \"qpsk\":{ \"carrierFrequencyRecovery\":{ \"centerFrequency\":{ \"value\":7812, \"units\":\"MHz\" }, \"range\":{ \"value\":250, \"units\":\"kHz\" } }, \"symbolTimingRecovery\":{ \"symbolRate\":{ \"value\":15, \"units\":\"Msps\" }, \"range\":{ \"value\":0.75, \"units\":\"ksps\" }, \"matchedFilter\":{ \"type\":\"ROOT_RAISED_COSINE\", \"rolloffFactor\":0.5 } } } }"
@@ -61,7 +61,7 @@ The following example creates a Ground Station `DemodulationConfig`
 #### YAML
 <a name="aws-properties-groundstation-config-demodulationconfig--examples--Create_a_DemodulationConfig--yaml"></a>
 
-```
+```yaml
 DemodulationConfig:
   UnvalidatedJSON: '{
     "type":"QPSK",

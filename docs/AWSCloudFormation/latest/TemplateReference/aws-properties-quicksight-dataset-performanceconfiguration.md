@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-performanceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[UniqueKeys](#cfn-quicksight-dataset-performanceconfiguration-uniquekeys)" : {{[ UniqueKey, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-performanceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [UniqueKeys](#cfn-quicksight-dataset-performanceconfiguration-uniquekeys): {{
     - UniqueKey}}
 ```

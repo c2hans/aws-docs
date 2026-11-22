@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-agent-guardrailconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[GuardrailIdentifier](#cfn-bedrock-agent-guardrailconfiguration-guardrailidentifier)" : {{String}},
   "[GuardrailVersion](#cfn-bedrock-agent-guardrailconfiguration-guardrailversion)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-agent-guardrailconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [GuardrailIdentifier](#cfn-bedrock-agent-guardrailconfiguration-guardrailidentifier): {{String}}
   [GuardrailVersion](#cfn-bedrock-agent-guardrailconfiguration-guardrailversion): {{String}}
 ```

@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-cachepolicy-cachepolicyconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Comment](#cfn-cloudfront-cachepolicy-cachepolicyconfig-comment)" : {{String}},
   "[DefaultTTL](#cfn-cloudfront-cachepolicy-cachepolicyconfig-defaultttl)" : {{Number}},
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-cachepolicy-cachepolicyconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Comment](#cfn-cloudfront-cachepolicy-cachepolicyconfig-comment): {{String}}
   [DefaultTTL](#cfn-cloudfront-cachepolicy-cachepolicyconfig-defaultttl): {{Number}}
   [MaxTTL](#cfn-cloudfront-cachepolicy-cachepolicyconfig-maxttl): {{Number}}

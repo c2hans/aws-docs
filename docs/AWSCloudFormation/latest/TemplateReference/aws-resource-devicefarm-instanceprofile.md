@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-devicefarm-instanceprofile-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DeviceFarm::InstanceProfile",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-devicefarm-instanceprofile-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DeviceFarm::InstanceProfile
 Properties:
   [Description](#cfn-devicefarm-instanceprofile-description): {{String}}

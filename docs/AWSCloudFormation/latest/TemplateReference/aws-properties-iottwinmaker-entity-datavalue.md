@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iottwinmaker-entity-datavalue-syntax.json"></a>
 
-```
+```json
 {
   "[BooleanValue](#cfn-iottwinmaker-entity-datavalue-booleanvalue)" : {{Boolean}},
   "[DoubleValue](#cfn-iottwinmaker-entity-datavalue-doublevalue)" : {{Number}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iottwinmaker-entity-datavalue-syntax.yaml"></a>
 
-```
+```yaml
   [BooleanValue](#cfn-iottwinmaker-entity-datavalue-booleanvalue): {{
     Boolean}}
   [DoubleValue](#cfn-iottwinmaker-entity-datavalue-doublevalue): {{Number}}

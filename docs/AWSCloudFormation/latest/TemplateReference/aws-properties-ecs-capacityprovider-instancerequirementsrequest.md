@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-capacityprovider-instancerequirementsrequest-syntax.json"></a>
 
-```
+```json
 {
   "[AcceleratorCount](#cfn-ecs-capacityprovider-instancerequirementsrequest-acceleratorcount)" : {{AcceleratorCountRequest}},
   "[AcceleratorManufacturers](#cfn-ecs-capacityprovider-instancerequirementsrequest-acceleratormanufacturers)" : {{[ String, ... ]}},
@@ -48,7 +48,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-capacityprovider-instancerequirementsrequest-syntax.yaml"></a>
 
-```
+```yaml
   [AcceleratorCount](#cfn-ecs-capacityprovider-instancerequirementsrequest-acceleratorcount): {{
     AcceleratorCountRequest}}
   [AcceleratorManufacturers](#cfn-ecs-capacityprovider-instancerequirementsrequest-acceleratormanufacturers): {{

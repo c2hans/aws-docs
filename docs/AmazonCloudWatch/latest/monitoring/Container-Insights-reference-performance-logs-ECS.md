@@ -12,7 +12,7 @@ You can query these logs using queries such as `{ $.Type = "Container" }` to vie
 
 **Type: Container**
 
-```
+```JSON
 {
 	"Version":"0",
 	"Type":"Container",
@@ -47,7 +47,7 @@ You can query these logs using queries such as `{ $.Type = "Container" }` to vie
 
 Even though the units for `StorageReadBytes` and `StorageWriteBytes` are in Bytes/Second, the values represent the cumulative number of bytes read from and written to storage, respectively.
 
-```
+```JSON
 {
     "Version": "0",
     "Type": "Task",
@@ -142,7 +142,7 @@ Even though the units for `StorageReadBytes` and `StorageWriteBytes` are in Byte
 
 **Type: Service**
 
-```
+```JSON
 {
     "Version": "0",
     "Type": "Service",
@@ -192,7 +192,7 @@ Even though the units for `StorageReadBytes` and `StorageWriteBytes` are in Byte
 
 **Type: Volume**
 
-```
+```JSON
 {
     "Version": "0",
     "Type": "Volume",
@@ -238,7 +238,7 @@ Even though the units for `StorageReadBytes` and `StorageWriteBytes` are in Byte
 
 **Type: Cluster**
 
-```
+```JSON
 {
     "Version": "0",
     "Type": "Cluster",

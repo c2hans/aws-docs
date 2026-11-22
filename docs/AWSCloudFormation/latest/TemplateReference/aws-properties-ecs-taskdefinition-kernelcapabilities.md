@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskdefinition-kernelcapabilities-syntax.json"></a>
 
-```
+```json
 {
   "[Add](#cfn-ecs-taskdefinition-kernelcapabilities-add)" : {{[ String, ... ]}},
   "[Drop](#cfn-ecs-taskdefinition-kernelcapabilities-drop)" : {{[ String, ... ]}}
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskdefinition-kernelcapabilities-syntax.yaml"></a>
 
-```
+```yaml
   [Add](#cfn-ecs-taskdefinition-kernelcapabilities-add): {{
     - String}}
   [Drop](#cfn-ecs-taskdefinition-kernelcapabilities-drop): {{

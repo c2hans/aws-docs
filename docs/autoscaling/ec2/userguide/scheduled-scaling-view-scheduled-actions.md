@@ -30,7 +30,7 @@ aws autoscaling describe-scheduled-actions --auto-scaling-group-name {{my-asg}}
 
 If successful, this command returns output similar to the following.
 
-```
+```json
 {
   "ScheduledUpdateGroupActions": [
     {

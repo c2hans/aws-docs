@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-workspacesweb-portal-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::WorkSpacesWeb::Portal",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-workspacesweb-portal-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::WorkSpacesWeb::Portal
 Properties:
   [AdditionalEncryptionContext](#cfn-workspacesweb-portal-additionalencryptioncontext): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-subnetroutetableassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::SubnetRouteTableAssociation",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-subnetroutetableassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::SubnetRouteTableAssociation
 Properties:
   [RouteTableId](#cfn-ec2-subnetroutetableassociation-routetableid): {{String}}
@@ -86,7 +86,7 @@ The following example associates a subnet with a route table.
 #### JSON
 <a name="aws-resource-ec2-subnetroutetableassociation--examples--Subnet_route_table_association--json"></a>
 
-```
+```json
 "mySubnetRouteTableAssociation" : {
    "Type" : "AWS::EC2::SubnetRouteTableAssociation",
    "Properties" : {
@@ -99,7 +99,7 @@ The following example associates a subnet with a route table.
 #### YAML
 <a name="aws-resource-ec2-subnetroutetableassociation--examples--Subnet_route_table_association--yaml"></a>
 
-```
+```yaml
   mySubnetRouteTableAssociation:
     Type: AWS::EC2::SubnetRouteTableAssociation
     Properties:

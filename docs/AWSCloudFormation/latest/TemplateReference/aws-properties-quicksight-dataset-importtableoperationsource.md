@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-importtableoperationsource-syntax.json"></a>
 
-```
+```json
 {
   "[ColumnIdMappings](#cfn-quicksight-dataset-importtableoperationsource-columnidmappings)" : {{[ DataSetColumnIdMapping, ... ]}},
   "[SourceTableId](#cfn-quicksight-dataset-importtableoperationsource-sourcetableid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-importtableoperationsource-syntax.yaml"></a>
 
-```
+```yaml
   [ColumnIdMappings](#cfn-quicksight-dataset-importtableoperationsource-columnidmappings): {{
     - DataSetColumnIdMapping}}
   [SourceTableId](#cfn-quicksight-dataset-importtableoperationsource-sourcetableid): {{String}}

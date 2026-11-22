@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fms-policy-resourcetag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-fms-policy-resourcetag-key)" : {{String}},
   "[Value](#cfn-fms-policy-resourcetag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fms-policy-resourcetag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-fms-policy-resourcetag-key): {{String}}
   [Value](#cfn-fms-policy-resourcetag-value): {{String}}
 ```

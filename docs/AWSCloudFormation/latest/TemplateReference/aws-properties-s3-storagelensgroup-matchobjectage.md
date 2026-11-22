@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-storagelensgroup-matchobjectage-syntax.json"></a>
 
-```
+```json
 {
   "[DaysGreaterThan](#cfn-s3-storagelensgroup-matchobjectage-daysgreaterthan)" : {{Integer}},
   "[DaysLessThan](#cfn-s3-storagelensgroup-matchobjectage-dayslessthan)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-storagelensgroup-matchobjectage-syntax.yaml"></a>
 
-```
+```yaml
   [DaysGreaterThan](#cfn-s3-storagelensgroup-matchobjectage-daysgreaterthan): {{Integer}}
   [DaysLessThan](#cfn-s3-storagelensgroup-matchobjectage-dayslessthan): {{Integer}}
 ```

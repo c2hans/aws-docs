@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-connectionfunction-connectionfunctionconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Comment](#cfn-cloudfront-connectionfunction-connectionfunctionconfig-comment)" : {{String}},
   "[KeyValueStoreAssociations](#cfn-cloudfront-connectionfunction-connectionfunctionconfig-keyvaluestoreassociations)" : {{[ KeyValueStoreAssociation, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-connectionfunction-connectionfunctionconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Comment](#cfn-cloudfront-connectionfunction-connectionfunctionconfig-comment): {{String}}
   [KeyValueStoreAssociations](#cfn-cloudfront-connectionfunction-connectionfunctionconfig-keyvaluestoreassociations): {{
     - KeyValueStoreAssociation}}

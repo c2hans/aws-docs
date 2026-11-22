@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-browsercustom-certificatelocation-syntax.json"></a>
 
-```
+```json
 {
   "[SecretArn](#cfn-bedrockagentcore-browsercustom-certificatelocation-secretarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-browsercustom-certificatelocation-syntax.yaml"></a>
 
-```
+```yaml
   [SecretArn](#cfn-bedrockagentcore-browsercustom-certificatelocation-secretarn): {{String}}
 ```
 

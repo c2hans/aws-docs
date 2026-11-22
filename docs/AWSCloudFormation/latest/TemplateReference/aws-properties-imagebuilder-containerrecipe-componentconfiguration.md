@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-containerrecipe-componentconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ComponentArn](#cfn-imagebuilder-containerrecipe-componentconfiguration-componentarn)" : {{String}},
   "[Parameters](#cfn-imagebuilder-containerrecipe-componentconfiguration-parameters)" : {{[ ComponentParameter, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-containerrecipe-componentconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ComponentArn](#cfn-imagebuilder-containerrecipe-componentconfiguration-componentarn): {{String}}
   [Parameters](#cfn-imagebuilder-containerrecipe-componentconfiguration-parameters): {{
     - ComponentParameter}}

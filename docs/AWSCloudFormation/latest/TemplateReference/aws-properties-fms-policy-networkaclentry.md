@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fms-policy-networkaclentry-syntax.json"></a>
 
-```
+```json
 {
   "[CidrBlock](#cfn-fms-policy-networkaclentry-cidrblock)" : {{String}},
   "[Egress](#cfn-fms-policy-networkaclentry-egress)" : {{Boolean}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fms-policy-networkaclentry-syntax.yaml"></a>
 
-```
+```yaml
   [CidrBlock](#cfn-fms-policy-networkaclentry-cidrblock): {{String}}
   [Egress](#cfn-fms-policy-networkaclentry-egress): {{Boolean}}
   [IcmpTypeCode](#cfn-fms-policy-networkaclentry-icmptypecode): {{

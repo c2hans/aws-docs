@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-audiohlsrenditionselection-syntax.json"></a>
 
-```
+```json
 {
   "[GroupId](#cfn-medialive-channel-audiohlsrenditionselection-groupid)" : {{String}},
   "[Name](#cfn-medialive-channel-audiohlsrenditionselection-name)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-audiohlsrenditionselection-syntax.yaml"></a>
 
-```
+```yaml
   [GroupId](#cfn-medialive-channel-audiohlsrenditionselection-groupid): {{String}}
   [Name](#cfn-medialive-channel-audiohlsrenditionselection-name): {{String}}
 ```

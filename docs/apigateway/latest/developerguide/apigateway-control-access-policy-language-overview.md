@@ -35,7 +35,7 @@ The following example resource policy shows the previous common policy elements.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

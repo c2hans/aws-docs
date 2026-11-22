@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-evs-environment-initialvlans-syntax.json"></a>
 
-```
+```json
 {
   "[EdgeVTep](#cfn-evs-environment-initialvlans-edgevtep)" : {{InitialVlanInfo}},
   "[ExpansionVlan1](#cfn-evs-environment-initialvlans-expansionvlan1)" : {{InitialVlanInfo}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-evs-environment-initialvlans-syntax.yaml"></a>
 
-```
+```yaml
   [EdgeVTep](#cfn-evs-environment-initialvlans-edgevtep): {{
     InitialVlanInfo}}
   [ExpansionVlan1](#cfn-evs-environment-initialvlans-expansionvlan1): {{

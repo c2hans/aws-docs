@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rtbfabric-respondergateway-autoscalinggroupsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AutoScalingGroupNameList](#cfn-rtbfabric-respondergateway-autoscalinggroupsconfiguration-autoscalinggroupnamelist)" : {{[ String, ... ]}},
   "[HealthCheckConfig](#cfn-rtbfabric-respondergateway-autoscalinggroupsconfiguration-healthcheckconfig)" : {{HealthCheckConfig}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rtbfabric-respondergateway-autoscalinggroupsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AutoScalingGroupNameList](#cfn-rtbfabric-respondergateway-autoscalinggroupsconfiguration-autoscalinggroupnamelist): {{
     - String}}
   [HealthCheckConfig](#cfn-rtbfabric-respondergateway-autoscalinggroupsconfiguration-healthcheckconfig): {{

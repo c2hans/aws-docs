@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-fargateprofile-label-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-eks-fargateprofile-label-key)" : {{String}},
   "[Value](#cfn-eks-fargateprofile-label-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-fargateprofile-label-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-eks-fargateprofile-label-key): {{String}}
   [Value](#cfn-eks-fargateprofile-label-value): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchservice-domain-jwtoptions-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-opensearchservice-domain-jwtoptions-enabled)" : {{Boolean}},
   "[PublicKey](#cfn-opensearchservice-domain-jwtoptions-publickey)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchservice-domain-jwtoptions-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-opensearchservice-domain-jwtoptions-enabled): {{Boolean}}
   [PublicKey](#cfn-opensearchservice-domain-jwtoptions-publickey): {{String}}
   [RolesKey](#cfn-opensearchservice-domain-jwtoptions-roleskey): {{String}}

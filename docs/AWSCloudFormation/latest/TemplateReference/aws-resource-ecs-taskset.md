@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ecs-taskset-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ECS::TaskSet",
   "Properties" : {
@@ -44,7 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ecs-taskset-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ECS::TaskSet
 Properties:
   [CapacityProviderStrategy](#cfn-ecs-taskset-capacityproviderstrategy): {{
@@ -188,7 +188,7 @@ This template defines a task definition, a cluster, a service, and a task set. T
 #### JSON
 <a name="aws-resource-ecs-taskset--examples--Create_an_task_set--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -293,7 +293,7 @@ This template defines a task definition, a cluster, a service, and a task set. T
 #### YAML
 <a name="aws-resource-ecs-taskset--examples--Create_an_task_set--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   ECSCluster:

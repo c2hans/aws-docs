@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationinsights-application-haclusterprometheusexporter-syntax.json"></a>
 
-```
+```json
 {
   "[PrometheusPort](#cfn-applicationinsights-application-haclusterprometheusexporter-prometheusport)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationinsights-application-haclusterprometheusexporter-syntax.yaml"></a>
 
-```
+```yaml
   [PrometheusPort](#cfn-applicationinsights-application-haclusterprometheusexporter-prometheusport): {{String}}
 ```
 

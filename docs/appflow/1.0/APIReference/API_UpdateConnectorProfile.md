@@ -371,7 +371,7 @@ This example shows a sample request and response for the `UpdateConnectorProfile
 #### Sample Request
 <a name="API_UpdateConnectorProfile_Example_1_Request"></a>
 
-```
+```json
 {
   "connectorProfileName": "Connector_Profile_Name_value",
   "kmsArn": null,
@@ -407,7 +407,7 @@ This example shows a sample request and response for the `UpdateConnectorProfile
 #### Sample Response
 <a name="API_UpdateConnectorProfile_Example_1_Response"></a>
 
-```
+```json
 {
   "connectorProfileArn": "arn:aws:appflow:region:<AccountId>:connectorprofile/Connector_Profile_Name"
 }

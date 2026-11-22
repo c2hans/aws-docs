@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-knowledgebase-neptuneanalyticsfieldmapping-syntax.json"></a>
 
-```
+```json
 {
   "[MetadataField](#cfn-bedrock-knowledgebase-neptuneanalyticsfieldmapping-metadatafield)" : {{String}},
   "[TextField](#cfn-bedrock-knowledgebase-neptuneanalyticsfieldmapping-textfield)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-knowledgebase-neptuneanalyticsfieldmapping-syntax.yaml"></a>
 
-```
+```yaml
   [MetadataField](#cfn-bedrock-knowledgebase-neptuneanalyticsfieldmapping-metadatafield): {{String}}
   [TextField](#cfn-bedrock-knowledgebase-neptuneanalyticsfieldmapping-textfield): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-thing-attributepayload-syntax.json"></a>
 
-```
+```json
 {
   "[Attributes](#cfn-iot-thing-attributepayload-attributes)" : {{{{{Key}}: {{Value}}, ...}}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-thing-attributepayload-syntax.yaml"></a>
 
-```
+```yaml
   [Attributes](#cfn-iot-thing-attributepayload-attributes): {{
     {{Key}}: {{Value}}}}
 ```
@@ -52,7 +52,7 @@ The following example declares an attribute payload with three attributes.
 #### JSON
 <a name="aws-properties-iot-thing-attributepayload--examples----json"></a>
 
-```
+```json
  { "AttributePayload":{ "Attributes":{ "myAttributeA":{
             "Ref":"MyAttributeValueA" }, "myAttributeB":{ "Ref":"MyAttributeValueB" },
             "myAttributeC":{ "Ref":"MyAttributeValueC" } } } }
@@ -61,7 +61,7 @@ The following example declares an attribute payload with three attributes.
 #### YAML
 <a name="aws-properties-iot-thing-attributepayload--examples----yaml"></a>
 
-```
+```yaml
  AttributePayload: Attributes: myAttributeA: Ref:
             MyAttributeValueA myAttributeB: Ref: MyAttributeValueB myAttributeC: Ref:
             MyAttributeValueC

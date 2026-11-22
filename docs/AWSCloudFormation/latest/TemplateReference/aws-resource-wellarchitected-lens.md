@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-wellarchitected-lens-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::WellArchitected::Lens",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-wellarchitected-lens-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::WellArchitected::Lens
 Properties:
   [JSONString](#cfn-wellarchitected-lens-jsonstring): {{

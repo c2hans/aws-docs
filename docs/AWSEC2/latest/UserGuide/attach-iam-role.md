@@ -64,7 +64,7 @@ You can attach an IAM role to an instance that is running or stopped. If the ins
 **To attach an IAM role to an instance**
 Use the [associate-iam-instance-profile](https://docs.aws.amazon.com/cli/latest/reference/ec2/associate-iam-instance-profile.html) command to attach the IAM role to the instance. When you specify the instance profile, you can use either the Amazon Resource Name (ARN) of the instance profile, or you can use its name.
 
-```
+```bash
 aws ec2 associate-iam-instance-profile \
     --instance-id {{i-1234567890abcdef0}} \
     --iam-instance-profile Name="{{TestRole-1}}"
@@ -76,7 +76,7 @@ aws ec2 associate-iam-instance-profile \
 **To attach an IAM role to an instance**
 Use the [Register-EC2IamInstanceProfile](https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2IamInstanceProfile.html) cmdlet.
 
-```
+```powershell
 Register-EC2IamInstanceProfile `
     -InstanceId {{i-1234567890abcdef0}} `
     -IamInstanceProfile_Name {{TestRole-1}}
@@ -110,7 +110,7 @@ To replace the IAM role on an instance that already has an attached IAM role, th
 
 1. If required, use the [describe-iam-instance-profile-associations](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-iam-instance-profile-associations.html) command to get the association ID.
 
-   ```
+   ```bash
    aws ec2 describe-iam-instance-profile-associations \
        --filters Name=instance-id,Values={{i-1234567890abcdef0}} \
        --query IamInstanceProfileAssociations.AssociationId
@@ -118,7 +118,7 @@ To replace the IAM role on an instance that already has an attached IAM role, th
 
 1. Use the [replace-iam-instance-profile-association](https://docs.aws.amazon.com/cli/latest/reference/ec2/replace-iam-instance-profile-association.html) command. Specify the association ID for the existing instance profile and the ARN or name of the new instance profile.
 
-   ```
+   ```bash
    aws ec2 replace-iam-instance-profile-association \
        --association-id {{iip-assoc-0044d817db6c0a4ba}} \
        --iam-instance-profile Name="{{TestRole-2}}"
@@ -131,13 +131,13 @@ To replace the IAM role on an instance that already has an attached IAM role, th
 
 1. If required, use the [Get-EC2IamInstanceProfileAssociation](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2IamInstanceProfileAssociation.html) cmdlet to get the association ID.
 
-   ```
+   ```powershell
    (Get-EC2IamInstanceProfileAssociation -Filter @{Name="instance-id"; Values="{{i-0636508011d8e966a}}"}).AssociationId
    ```
 
 1. Use the [Set-EC2IamInstanceProfileAssociation](https://docs.aws.amazon.com/powershell/latest/reference/items/Set-EC2IamInstanceProfileAssociation.html) cmdlet. Specify the association ID for the existing instance profile and the ARN or name of the new instance profile.
 
-   ```
+   ```powershell
    Set-EC2IamInstanceProfileAssociation `
        -AssociationId {{iip-assoc-0044d817db6c0a4ba}} `
        -IamInstanceProfile_Name {{TestRole-2}}
@@ -173,7 +173,7 @@ You can detach an IAM role from an instance that is running or stopped.
 
 1. If required, use [describe-iam-instance-profile-associations](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-iam-instance-profile-associations.html) to get the association ID for the IAM instance profile to detach.
 
-   ```
+   ```bash
    aws ec2 describe-iam-instance-profile-associations \
        --filters Name=instance-id,Values={{i-1234567890abcdef0}} \
        --query IamInstanceProfileAssociations.AssociationId
@@ -181,7 +181,7 @@ You can detach an IAM role from an instance that is running or stopped.
 
 1. Use the [disassociate-iam-instance-profile](https://docs.aws.amazon.com/cli/latest/reference/ec2/disassociate-iam-instance-profile.html) command.
 
-   ```
+   ```bash
    aws ec2 disassociate-iam-instance-profile --association-id {{iip-assoc-0044d817db6c0a4ba}}
    ```
 
@@ -192,13 +192,13 @@ You can detach an IAM role from an instance that is running or stopped.
 
 1. If required, use [Get-EC2IamInstanceProfileAssociation](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2IamInstanceProfileAssociation.html) to get the association ID for the IAM instance profile to detach.
 
-   ```
+   ```powershell
    (Get-EC2IamInstanceProfileAssociation -Filter @{Name="instance-id"; Values="i-0636508011d8e966a"}).AssociationId
    ```
 
 1. Use the [Unregister-EC2IamInstanceProfile](https://docs.aws.amazon.com/powershell/latest/reference/items/Unregister-EC2IamInstanceProfile.html) cmdlet.
 
-   ```
+   ```powershell
    Unregister-EC2IamInstanceProfile -AssociationId {{iip-assoc-0044d817db6c0a4ba}}
    ```
 

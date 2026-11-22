@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-location-apikey-androidapp-syntax.json"></a>
 
-```
+```json
 {
   "[CertificateFingerprint](#cfn-location-apikey-androidapp-certificatefingerprint)" : {{String}},
   "[Package](#cfn-location-apikey-androidapp-package)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-location-apikey-androidapp-syntax.yaml"></a>
 
-```
+```yaml
   [CertificateFingerprint](#cfn-location-apikey-androidapp-certificatefingerprint): {{String}}
   [Package](#cfn-location-apikey-androidapp-package): {{String}}
 ```

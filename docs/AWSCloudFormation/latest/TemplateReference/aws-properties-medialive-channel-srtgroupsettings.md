@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-srtgroupsettings-syntax.json"></a>
 
-```
+```json
 {
   "[InputLossAction](#cfn-medialive-channel-srtgroupsettings-inputlossaction)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-srtgroupsettings-syntax.yaml"></a>
 
-```
+```yaml
   [InputLossAction](#cfn-medialive-channel-srtgroupsettings-inputlossaction): {{String}}
 ```
 

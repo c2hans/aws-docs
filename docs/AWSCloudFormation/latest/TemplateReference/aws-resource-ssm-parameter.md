@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ssm-parameter-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SSM::Parameter",
   "Properties" : {
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ssm-parameter-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SSM::Parameter
 Properties:
   [AllowedPattern](#cfn-ssm-parameter-allowedpattern): {{String}}
@@ -177,7 +177,7 @@ The following example creates a Systems Manager parameter named command with a `
 #### JSON
 <a name="aws-resource-ssm-parameter--examples--Create_a_String-type_parameter--json"></a>
 
-```
+```json
 {
     "Resources": {
         "BasicParameter": {
@@ -200,7 +200,7 @@ The following example creates a Systems Manager parameter named command with a `
 #### YAML
 <a name="aws-resource-ssm-parameter--examples--Create_a_String-type_parameter--yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   BasicParameter:
@@ -223,7 +223,7 @@ The following example creates a Systems Manager parameter named commands with a 
 #### JSON
 <a name="aws-resource-ssm-parameter--examples--Create_a_StringList-type_parameter--json"></a>
 
-```
+```json
 {
     "Resources": {
         "BasicParameter": {
@@ -243,7 +243,7 @@ The following example creates a Systems Manager parameter named commands with a 
 #### YAML
 <a name="aws-resource-ssm-parameter--examples--Create_a_StringList-type_parameter--yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   BasicParameter:
@@ -264,7 +264,7 @@ The following example creates a Systems Manager advanced tier parameter named 'c
 #### JSON
 <a name="aws-resource-ssm-parameter--examples--Create_an_advanced_tier_parameter_and_assign_a_policy--json"></a>
 
-```
+```json
 {
     "Resources": {
         "BasicParameter": {
@@ -289,7 +289,7 @@ The following example creates a Systems Manager advanced tier parameter named 'c
 #### YAML
 <a name="aws-resource-ssm-parameter--examples--Create_an_advanced_tier_parameter_and_assign_a_policy--yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   BasicParameter:

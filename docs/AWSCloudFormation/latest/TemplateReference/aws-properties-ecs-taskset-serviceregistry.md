@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskset-serviceregistry-syntax.json"></a>
 
-```
+```json
 {
   "[ContainerName](#cfn-ecs-taskset-serviceregistry-containername)" : {{String}},
   "[ContainerPort](#cfn-ecs-taskset-serviceregistry-containerport)" : {{Integer}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskset-serviceregistry-syntax.yaml"></a>
 
-```
+```yaml
   [ContainerName](#cfn-ecs-taskset-serviceregistry-containername): {{String}}
   [ContainerPort](#cfn-ecs-taskset-serviceregistry-containerport): {{Integer}}
   [Port](#cfn-ecs-taskset-serviceregistry-port): {{Integer}}

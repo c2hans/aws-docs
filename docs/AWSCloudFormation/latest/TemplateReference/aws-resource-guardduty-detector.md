@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-guardduty-detector-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::GuardDuty::Detector",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-guardduty-detector-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::GuardDuty::Detector
 Properties:
   [DataSources](#cfn-guardduty-detector-datasources): {{
@@ -117,7 +117,7 @@ The following example shows how to declare a GuardDuty`Detector` resource:
 #### JSON
 <a name="aws-resource-guardduty-detector--examples--Declare_a_Detector_Resource--json"></a>
 
-```
+```json
 "mydetector": {
     "Type" : "AWS::GuardDuty::Detector",
     "Properties" : {
@@ -130,7 +130,7 @@ The following example shows how to declare a GuardDuty`Detector` resource:
 #### YAML
 <a name="aws-resource-guardduty-detector--examples--Declare_a_Detector_Resource--yaml"></a>
 
-```
+```yaml
 mydetector:
     Type: AWS::GuardDuty::Detector
     Properties:

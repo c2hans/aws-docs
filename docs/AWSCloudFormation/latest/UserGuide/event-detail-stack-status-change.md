@@ -8,7 +8,7 @@ Below are the detail fields for Stack Status Change events.
 
 The `source` and `detail-type` fields are included because they contain specific values for events.
 
-```
+```json
 {
   . . .,
   "detail-type":"CloudFormation Stack Status Change",
@@ -49,7 +49,7 @@ An access token used to call the API. All events that are initiated by a given s
 **Example: Stack Status event**  <a name="event-detail-stack-status-change.example"></a>
 The following is an example stack status event, where CloudFormation has successfully created the requested stack, `teststack`.
 
-```
+```json
 {
     "version":"0",
     "id":"6a7e8feb-b491-4cf7-a9f1-bf3703467718",

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dms-replicationconfig-computeconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AvailabilityZone](#cfn-dms-replicationconfig-computeconfig-availabilityzone)" : {{String}},
   "[DnsNameServers](#cfn-dms-replicationconfig-computeconfig-dnsnameservers)" : {{String}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dms-replicationconfig-computeconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AvailabilityZone](#cfn-dms-replicationconfig-computeconfig-availabilityzone): {{String}}
   [DnsNameServers](#cfn-dms-replicationconfig-computeconfig-dnsnameservers): {{String}}
   [KmsKeyId](#cfn-dms-replicationconfig-computeconfig-kmskeyid): {{String}}

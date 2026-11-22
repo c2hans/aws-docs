@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-otaupdate-codesigningsignature-syntax.json"></a>
 
-```
+```json
 {
   "[InlineDocument](#cfn-iot-otaupdate-codesigningsignature-inlinedocument)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-otaupdate-codesigningsignature-syntax.yaml"></a>
 
-```
+```yaml
   [InlineDocument](#cfn-iot-otaupdate-codesigningsignature-inlinedocument): {{String}}
 ```
 

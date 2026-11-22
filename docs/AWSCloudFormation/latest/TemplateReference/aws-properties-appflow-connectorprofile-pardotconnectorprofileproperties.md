@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-connectorprofile-pardotconnectorprofileproperties-syntax.json"></a>
 
-```
+```json
 {
   "[BusinessUnitId](#cfn-appflow-connectorprofile-pardotconnectorprofileproperties-businessunitid)" : {{String}},
   "[InstanceUrl](#cfn-appflow-connectorprofile-pardotconnectorprofileproperties-instanceurl)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-connectorprofile-pardotconnectorprofileproperties-syntax.yaml"></a>
 
-```
+```yaml
   [BusinessUnitId](#cfn-appflow-connectorprofile-pardotconnectorprofileproperties-businessunitid): {{String}}
   [InstanceUrl](#cfn-appflow-connectorprofile-pardotconnectorprofileproperties-instanceurl): {{String}}
   [IsSandboxEnvironment](#cfn-appflow-connectorprofile-pardotconnectorprofileproperties-issandboxenvironment): {{Boolean}}

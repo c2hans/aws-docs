@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-observabilityadmin-telemetryrule-elbloadbalancerloggingparameters-syntax.json"></a>
 
-```
+```json
 {
   "[FieldDelimiter](#cfn-observabilityadmin-telemetryrule-elbloadbalancerloggingparameters-fielddelimiter)" : {{String}},
   "[OutputFormat](#cfn-observabilityadmin-telemetryrule-elbloadbalancerloggingparameters-outputformat)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-observabilityadmin-telemetryrule-elbloadbalancerloggingparameters-syntax.yaml"></a>
 
-```
+```yaml
   [FieldDelimiter](#cfn-observabilityadmin-telemetryrule-elbloadbalancerloggingparameters-fielddelimiter): {{String}}
   [OutputFormat](#cfn-observabilityadmin-telemetryrule-elbloadbalancerloggingparameters-outputformat): {{String}}
 ```

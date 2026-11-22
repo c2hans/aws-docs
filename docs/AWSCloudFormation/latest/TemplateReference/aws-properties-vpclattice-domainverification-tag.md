@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-vpclattice-domainverification-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-vpclattice-domainverification-tag-key)" : {{String}},
   "[Value](#cfn-vpclattice-domainverification-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-vpclattice-domainverification-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-vpclattice-domainverification-tag-key): {{String}}
   [Value](#cfn-vpclattice-domainverification-tag-value): {{String}}
 ```

@@ -54,7 +54,7 @@ Use the following settings in the *apprunner.yaml* for the managed Python 3.11 r
 + Set the `runtime` key in the Top section to `python311`
 **Example**
 
-  ```
+  ```yaml
   runtime: python311
   ```
 + Use the `pip3` instead of `pip` to install dependencies.
@@ -62,7 +62,7 @@ Use the following settings in the *apprunner.yaml* for the managed Python 3.11 r
 + Run the `pip3` installer as a `pre-run`command. Python installs dependencies outside of the `/app` directory. Since App Runner runs the revised App Runner build for Python 3.11, anything installed outside of the `/app` directory through commands in the Build section of the `apprunner.yaml` file will be lost. For more information, see [The revised App Runner build](service-source-code.md#service-source-code.build-detail.v2).
 **Example**
 
-  ```
+  ```yaml
   run:
     runtime-version: {{3.11}}
     pre-run:
@@ -91,7 +91,7 @@ Python 3.11 uses the `pip3` and `python3` commands. For more information, see th
 
 **Example apprunner.yaml**
 
-```
+```yaml
 version: 1.0
 runtime: python3
 build:
@@ -114,7 +114,7 @@ Python 3.11 uses the `pip3` and `python3` commands. For more information, see th
 
 **Example apprunner.yaml**
 
-```
+```yaml
 version: 1.0
 runtime: python3
 build:
@@ -161,7 +161,7 @@ The runtime version that's used in these examples is {{3.11}}. You can replace i
 
 **Example apprunner.yaml**
 
-```
+```yaml
 version: 1.0
 runtime: python311
 build:
@@ -213,7 +213,7 @@ pyramid==2.0
 
 **Example server.py**
 
-```
+```python
 from wsgiref.simple_server import make_server
 from pyramid.config import Configurator
 from pyramid.response import Response
@@ -238,7 +238,7 @@ if __name__ == '__main__':
 
 **Example apprunner.yaml**
 
-```
+```yaml
 version: 1.0
 runtime: python3
 build:

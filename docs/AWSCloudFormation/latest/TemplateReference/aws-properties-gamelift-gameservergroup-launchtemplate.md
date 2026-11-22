@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-gameservergroup-launchtemplate-syntax.json"></a>
 
-```
+```json
 {
   "[LaunchTemplateId](#cfn-gamelift-gameservergroup-launchtemplate-launchtemplateid)" : {{String}},
   "[LaunchTemplateName](#cfn-gamelift-gameservergroup-launchtemplate-launchtemplatename)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-gameservergroup-launchtemplate-syntax.yaml"></a>
 
-```
+```yaml
   [LaunchTemplateId](#cfn-gamelift-gameservergroup-launchtemplate-launchtemplateid): {{String}}
   [LaunchTemplateName](#cfn-gamelift-gameservergroup-launchtemplate-launchtemplatename): {{String}}
   [Version](#cfn-gamelift-gameservergroup-launchtemplate-version): {{String}}

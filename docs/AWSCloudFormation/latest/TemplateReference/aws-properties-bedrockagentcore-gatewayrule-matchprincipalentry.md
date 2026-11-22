@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewayrule-matchprincipalentry-syntax.json"></a>
 
-```
+```json
 {
   "[IamPrincipal](#cfn-bedrockagentcore-gatewayrule-matchprincipalentry-iamprincipal)" : {{IamPrincipal}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewayrule-matchprincipalentry-syntax.yaml"></a>
 
-```
+```yaml
   [IamPrincipal](#cfn-bedrockagentcore-gatewayrule-matchprincipalentry-iamprincipal): {{
     IamPrincipal}}
 ```

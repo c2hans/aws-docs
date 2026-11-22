@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-routerinput-medialivechannelrouterinputconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MediaLiveChannelArn](#cfn-mediaconnect-routerinput-medialivechannelrouterinputconfiguration-medialivechannelarn)" : {{String}},
   "[MediaLiveChannelOutputName](#cfn-mediaconnect-routerinput-medialivechannelrouterinputconfiguration-medialivechanneloutputname)" : {{String}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-routerinput-medialivechannelrouterinputconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MediaLiveChannelArn](#cfn-mediaconnect-routerinput-medialivechannelrouterinputconfiguration-medialivechannelarn): {{String}}
   [MediaLiveChannelOutputName](#cfn-mediaconnect-routerinput-medialivechannelrouterinputconfiguration-medialivechanneloutputname): {{String}}
   [MediaLivePipelineId](#cfn-mediaconnect-routerinput-medialivechannelrouterinputconfiguration-medialivepipelineid): {{String}}

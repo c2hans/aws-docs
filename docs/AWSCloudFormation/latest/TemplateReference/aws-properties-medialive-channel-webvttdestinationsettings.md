@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-webvttdestinationsettings-syntax.json"></a>
 
-```
+```json
 {
   "[Position](#cfn-medialive-channel-webvttdestinationsettings-position)" : {{TextCaptionPositionSettings}},
   "[StyleControl](#cfn-medialive-channel-webvttdestinationsettings-stylecontrol)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-webvttdestinationsettings-syntax.yaml"></a>
 
-```
+```yaml
   [Position](#cfn-medialive-channel-webvttdestinationsettings-position): {{
     TextCaptionPositionSettings}}
   [StyleControl](#cfn-medialive-channel-webvttdestinationsettings-stylecontrol): {{String}}

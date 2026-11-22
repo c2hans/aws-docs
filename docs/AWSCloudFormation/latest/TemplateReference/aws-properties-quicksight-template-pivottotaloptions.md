@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-pivottotaloptions-syntax.json"></a>
 
-```
+```json
 {
   "[CustomLabel](#cfn-quicksight-template-pivottotaloptions-customlabel)" : {{String}},
   "[MetricHeaderCellStyle](#cfn-quicksight-template-pivottotaloptions-metricheadercellstyle)" : {{TableCellStyle}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-pivottotaloptions-syntax.yaml"></a>
 
-```
+```yaml
   [CustomLabel](#cfn-quicksight-template-pivottotaloptions-customlabel): {{String}}
   [MetricHeaderCellStyle](#cfn-quicksight-template-pivottotaloptions-metricheadercellstyle): {{
     TableCellStyle}}

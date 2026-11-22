@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-launchtemplate-instancerequirements-syntax.json"></a>
 
-```
+```json
 {
   "[AcceleratorCount](#cfn-ec2-launchtemplate-instancerequirements-acceleratorcount)" : {{AcceleratorCount}},
   "[AcceleratorManufacturers](#cfn-ec2-launchtemplate-instancerequirements-acceleratormanufacturers)" : {{[ String, ... ]}},
@@ -63,7 +63,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-launchtemplate-instancerequirements-syntax.yaml"></a>
 
-```
+```yaml
   [AcceleratorCount](#cfn-ec2-launchtemplate-instancerequirements-acceleratorcount): {{
     AcceleratorCount}}
   [AcceleratorManufacturers](#cfn-ec2-launchtemplate-instancerequirements-acceleratormanufacturers): {{

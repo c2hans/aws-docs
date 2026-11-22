@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-macie-session-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Macie::Session",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-macie-session-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Macie::Session
 Properties:
   [FindingPublishingFrequency](#cfn-macie-session-findingpublishingfrequency): {{String}}
@@ -100,7 +100,7 @@ This example enables Amazon Macie for an account. It also configures Macie to pu
 #### JSON
 <a name="aws-resource-macie-session--examples--Creating_a_session--json"></a>
 
-```
+```json
 {
     "Type": "AWS::Macie::Session",
     "Properties": {
@@ -113,7 +113,7 @@ This example enables Amazon Macie for an account. It also configures Macie to pu
 #### YAML
 <a name="aws-resource-macie-session--examples--Creating_a_session--yaml"></a>
 
-```
+```yaml
 Type: 'AWS::Macie::Session'
 Properties:
   FindingPublishingFrequency: ONE_HOUR

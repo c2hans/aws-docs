@@ -28,12 +28,12 @@ The introductory examples (see [Walkthroughs that use policies to manage access 
 1. Verify the setup by entering the following command at the command prompt. Both these commands don't provide credentials explicitly, so the credentials of the default profile are used.
    + Try the `help` command.
 
-     ```
+     ```bash
      aws help
      ```
    + To get a list of buckets on the configured account, use the `aws s3 ls` command.
 
-     ```
+     ```bash
      aws s3 ls
      ```
 
@@ -53,7 +53,7 @@ region = us-east-1
 
 To run a command using these user credentials, you add the `--profile` parameter specifying the profile name. The following AWS CLI command retrieves a listing of objects in {{`examplebucket`}} and specifies the `AccountBadmin` profile.
 
-```
+```bash
 aws s3 ls s3://{{examplebucket}} --profile AccountBadmin
 ```
 

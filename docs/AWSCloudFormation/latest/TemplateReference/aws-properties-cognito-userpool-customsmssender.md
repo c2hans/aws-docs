@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpool-customsmssender-syntax.json"></a>
 
-```
+```json
 {
   "[LambdaArn](#cfn-cognito-userpool-customsmssender-lambdaarn)" : {{String}},
   "[LambdaVersion](#cfn-cognito-userpool-customsmssender-lambdaversion)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpool-customsmssender-syntax.yaml"></a>
 
-```
+```yaml
   [LambdaArn](#cfn-cognito-userpool-customsmssender-lambdaarn): {{String}}
   [LambdaVersion](#cfn-cognito-userpool-customsmssender-lambdaversion): {{String}}
 ```

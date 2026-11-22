@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-medialive-cloudwatchalarmtemplategroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MediaLive::CloudWatchAlarmTemplateGroup",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-medialive-cloudwatchalarmtemplategroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MediaLive::CloudWatchAlarmTemplateGroup
 Properties:
   [Description](#cfn-medialive-cloudwatchalarmtemplategroup-description): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-cluster-configurationinfo-syntax.json"></a>
 
-```
+```json
 {
   "[Arn](#cfn-msk-cluster-configurationinfo-arn)" : {{String}},
   "[Revision](#cfn-msk-cluster-configurationinfo-revision)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-cluster-configurationinfo-syntax.yaml"></a>
 
-```
+```yaml
   [Arn](#cfn-msk-cluster-configurationinfo-arn): {{String}}
   [Revision](#cfn-msk-cluster-configurationinfo-revision): {{Integer}}
 ```

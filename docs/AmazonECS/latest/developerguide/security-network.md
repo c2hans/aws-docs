@@ -53,7 +53,7 @@ Amazon ECR and Amazon ECS both support endpoint policies. These policies allow y
 
 The following policy allows all AWS principals in your account to perform all actions against only your Amazon ECR repositories:
 
-```
+```JSON
 {
   "Statement": [
     {

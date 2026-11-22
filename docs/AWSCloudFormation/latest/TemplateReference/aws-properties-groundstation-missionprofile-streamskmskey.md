@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-groundstation-missionprofile-streamskmskey-syntax.json"></a>
 
-```
+```json
 {
   "[KmsAliasArn](#cfn-groundstation-missionprofile-streamskmskey-kmsaliasarn)" : {{String}},
   "[KmsAliasName](#cfn-groundstation-missionprofile-streamskmskey-kmsaliasname)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-groundstation-missionprofile-streamskmskey-syntax.yaml"></a>
 
-```
+```yaml
   [KmsAliasArn](#cfn-groundstation-missionprofile-streamskmskey-kmsaliasarn): {{String}}
   [KmsAliasName](#cfn-groundstation-missionprofile-streamskmskey-kmsaliasname): {{String}}
   [KmsKeyArn](#cfn-groundstation-missionprofile-streamskmskey-kmskeyarn): {{String}}

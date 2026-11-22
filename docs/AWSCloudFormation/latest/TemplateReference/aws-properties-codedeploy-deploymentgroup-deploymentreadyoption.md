@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codedeploy-deploymentgroup-deploymentreadyoption-syntax.json"></a>
 
-```
+```json
 {
   "[ActionOnTimeout](#cfn-codedeploy-deploymentgroup-deploymentreadyoption-actionontimeout)" : {{String}},
   "[WaitTimeInMinutes](#cfn-codedeploy-deploymentgroup-deploymentreadyoption-waittimeinminutes)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codedeploy-deploymentgroup-deploymentreadyoption-syntax.yaml"></a>
 
-```
+```yaml
   [ActionOnTimeout](#cfn-codedeploy-deploymentgroup-deploymentreadyoption-actionontimeout): {{String}}
   [WaitTimeInMinutes](#cfn-codedeploy-deploymentgroup-deploymentreadyoption-waittimeinminutes): {{Integer}}
 ```

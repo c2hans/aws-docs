@@ -36,7 +36,7 @@ The grant covers three things:
 
 If you author grants through the API instead of the console, use your own integration ARN and channel names:
 
-```
+```json
 {
   "name": "slack-agent-integration",
   "permission": "CUSTOM",
@@ -58,7 +58,7 @@ If you author grants through the API instead of the console, use your own integr
 
 Pair it with a viewer grant:
 
-```
+```json
 { "name": "slack-agent-viewer", "permission": "READ" }
 ```
 

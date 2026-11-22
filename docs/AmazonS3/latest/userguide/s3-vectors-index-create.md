@@ -21,7 +21,7 @@ When inserting vector data into your vector index, you must provide the vector d
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```Python
 # Populate a vector index with embeddings from Amazon Titan Text Embeddings V2.
 import boto3
 import json

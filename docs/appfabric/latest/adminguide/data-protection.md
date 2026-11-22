@@ -73,7 +73,7 @@ When you create an app bundle, AppFabric creates a grant on your behalf by sendi
 
 Following is an example of a grant.
 
-```
+```json
 {
   "KeyId": "arn:aws:kms:us-east-1:111122223333:key/ff000af-00eb-00ce-0e00-ea000fb0fba0SAMPLE",
   "GrantId": "0ab0ac0d0b000f00ea00cc0a0e00fc00bce000c000f0000000c0bc0a0000aaafSAMPLE",
@@ -104,7 +104,7 @@ When you use AWS KMS customer managed keys with AppFabric, you can use AWS Cloud
 
 Following is an example of an CloudTrail event logged when AppFabric uses `CreateGrant` for your customer managed key.
 
-```
+```json
 {
     "eventVersion": "1.08",
     "userIdentity": {

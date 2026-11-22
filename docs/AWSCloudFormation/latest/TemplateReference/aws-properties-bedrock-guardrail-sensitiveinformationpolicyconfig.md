@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-guardrail-sensitiveinformationpolicyconfig-syntax.json"></a>
 
-```
+```json
 {
   "[PiiEntitiesConfig](#cfn-bedrock-guardrail-sensitiveinformationpolicyconfig-piientitiesconfig)" : {{[ PiiEntityConfig, ... ]}},
   "[RegexesConfig](#cfn-bedrock-guardrail-sensitiveinformationpolicyconfig-regexesconfig)" : {{[ RegexConfig, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-guardrail-sensitiveinformationpolicyconfig-syntax.yaml"></a>
 
-```
+```yaml
   [PiiEntitiesConfig](#cfn-bedrock-guardrail-sensitiveinformationpolicyconfig-piientitiesconfig): {{
     - PiiEntityConfig}}
   [RegexesConfig](#cfn-bedrock-guardrail-sensitiveinformationpolicyconfig-regexesconfig): {{

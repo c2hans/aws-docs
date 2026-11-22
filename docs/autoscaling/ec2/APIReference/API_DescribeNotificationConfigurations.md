@@ -87,7 +87,7 @@ https://autoscaling.amazonaws.com/?Version=2011-01-01&Action=DescribeNotificatio
 #### Sample Response
 <a name="API_DescribeNotificationConfigurations_Example_1_Response"></a>
 
-```
+```xml
 <DescribeNotificationConfigurationsResponse xmlns="https://autoscaling.amazonaws.com/doc/2011-01-01/">
   <DescribeNotificationConfigurationsResult>
     <NotificationConfigurations>

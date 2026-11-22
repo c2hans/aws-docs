@@ -30,7 +30,7 @@ To create a private integration with an Application Load Balancer or Network Loa
 
 The following [create-integration](https://docs.aws.amazon.com/cli/latest/reference/apigatewayv2/create-integration.html) command creates a private integration that connects to a load balancer by using a VPC link:
 
-```
+```shell
 aws apigatewayv2 create-integration --api-id {{api-id}} --integration-type HTTP_PROXY \
     --integration-method GET --connection-type VPC_LINK \
     --connection-id {{VPC-link-ID}} \
@@ -52,7 +52,7 @@ To create a private integration with AWS Cloud Map, create an HTTP proxy integra
 
 The following [create-integration](https://docs.aws.amazon.com/cli/latest/reference/apigatewayv2/create-integration.html) command creates a private integration that uses AWS Cloud Map service discovery to identify resources:
 
-```
+```shell
 aws apigatewayv2 create-integration --api-id {{api-id}} --integration-type HTTP_PROXY  \
     --integration-method GET --connection-type VPC_LINK \
     --connection-id {{VPC-link-ID}} \

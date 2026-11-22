@@ -86,7 +86,7 @@ The security group includes the following rules.
 
 If you choose to automatically attach user data scripts, the launch instance wizard adds the following user data to the instance. This script installs the necessary packages, mounts the file system, and updates your instance settings so that the file system will automatically re-mount whenever the instance restarts.
 
-```
+```YAML
 #cloud-config
 package_update: true
 package_upgrade: true

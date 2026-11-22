@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-logs-transformer-grok-syntax.json"></a>
 
-```
+```json
 {
   "[Match](#cfn-logs-transformer-grok-match)" : {{String}},
   "[Source](#cfn-logs-transformer-grok-source)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-logs-transformer-grok-syntax.yaml"></a>
 
-```
+```yaml
   [Match](#cfn-logs-transformer-grok-match): {{String}}
   [Source](#cfn-logs-transformer-grok-source): {{String}}
 ```

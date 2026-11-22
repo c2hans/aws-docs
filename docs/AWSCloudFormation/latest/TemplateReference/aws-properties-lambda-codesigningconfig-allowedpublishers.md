@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-codesigningconfig-allowedpublishers-syntax.json"></a>
 
-```
+```json
 {
   "[SigningProfileVersionArns](#cfn-lambda-codesigningconfig-allowedpublishers-signingprofileversionarns)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-codesigningconfig-allowedpublishers-syntax.yaml"></a>
 
-```
+```yaml
   [SigningProfileVersionArns](#cfn-lambda-codesigningconfig-allowedpublishers-signingprofileversionarns): {{
     - String}}
 ```

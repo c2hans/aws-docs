@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-efs-filesystem-replicationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Destinations](#cfn-efs-filesystem-replicationconfiguration-destinations)" : {{[ ReplicationDestination, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-efs-filesystem-replicationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Destinations](#cfn-efs-filesystem-replicationconfiguration-destinations): {{
     - ReplicationDestination}}
 ```

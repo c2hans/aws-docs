@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-mailmanagerruleset-rule-syntax.json"></a>
 
-```
+```json
 {
   "[Actions](#cfn-ses-mailmanagerruleset-rule-actions)" : {{[ RuleAction, ... ]}},
   "[Conditions](#cfn-ses-mailmanagerruleset-rule-conditions)" : {{[ RuleCondition, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-mailmanagerruleset-rule-syntax.yaml"></a>
 
-```
+```yaml
   [Actions](#cfn-ses-mailmanagerruleset-rule-actions): {{
     - RuleAction}}
   [Conditions](#cfn-ses-mailmanagerruleset-rule-conditions): {{

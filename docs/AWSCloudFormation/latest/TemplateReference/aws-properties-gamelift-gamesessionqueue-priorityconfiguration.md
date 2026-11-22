@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-gamesessionqueue-priorityconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[LocationOrder](#cfn-gamelift-gamesessionqueue-priorityconfiguration-locationorder)" : {{[ String, ... ]}},
   "[PriorityOrder](#cfn-gamelift-gamesessionqueue-priorityconfiguration-priorityorder)" : {{[ String, ... ]}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-gamesessionqueue-priorityconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [LocationOrder](#cfn-gamelift-gamesessionqueue-priorityconfiguration-locationorder): {{
     - String}}
   [PriorityOrder](#cfn-gamelift-gamesessionqueue-priorityconfiguration-priorityorder): {{

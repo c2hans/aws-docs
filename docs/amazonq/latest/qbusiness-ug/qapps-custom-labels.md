@@ -20,7 +20,7 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 
 Before your web experience users can use custom labels, the web experience IAM role for your application environment must have permission to perform the `qapps:ListCategories` action. We recommend updating the `QAppsResourceAgnosticPermissions` statement of the IAM policy attached to this role to include the action as follows:
 
-```
+```json
 {
 "Sid": "QAppsResourceAgnosticPermissions",
 "Effect": "Allow",

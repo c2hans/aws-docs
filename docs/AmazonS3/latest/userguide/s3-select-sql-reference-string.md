@@ -27,7 +27,7 @@ Amazon S3 Select supports the following string functions.
 ### Syntax
 <a name="s3-select-sql-reference-char-length-syntax"></a>
 
-```
+```sql
 CHAR_LENGTH ( {{string}} )
 ```
 
@@ -40,7 +40,7 @@ The target string that the function operates on.
 ### Examples
 <a name="s3-select-sql-reference-char-length-examples"></a>
 
-```
+```sql
 CHAR_LENGTH('')          -- 0
 CHAR_LENGTH('abcdefg')   -- 7
 ```
@@ -53,7 +53,7 @@ Given a string, `LOWER` converts all uppercase characters to lowercase character
 ### Syntax
 <a name="s3-select-sql-reference-lower-syntax"></a>
 
-```
+```sql
 LOWER ( {{string}} )
 ```
 
@@ -66,7 +66,7 @@ The target string that the function operates on.
 ### Examples
 <a name="s3-select-sql-reference-lower-examples"></a>
 
-```
+```sql
 LOWER('AbCdEfG!@#$') -- 'abcdefg!@#$'
 ```
 
@@ -85,7 +85,7 @@ The first character of the input string has an index position of 1.
 ### Syntax
 <a name="s3-select-sql-reference-substring-syntax"></a>
 
-```
+```sql
 SUBSTRING( {{string}} FROM {{start}} [ FOR {{length}} ] )
 ```
 
@@ -104,7 +104,7 @@ The length of the substring to return. If not present, proceed to the end of the
 ### Examples
 <a name="s3-select-sql-reference-substring-examples"></a>
 
-```
+```sql
 SUBSTRING("123456789", 0)      -- "123456789"
 SUBSTRING("123456789", 1)      -- "123456789"
 SUBSTRING("123456789", 2)      -- "23456789"
@@ -121,7 +121,7 @@ Trims leading or trailing characters from a string. The default character to rem
 ### Syntax
 <a name="s3-select-sql-reference-trim-syntax"></a>
 
-```
+```sql
 TRIM ( [[LEADING | TRAILING | BOTH {{remove_chars}}] FROM] {{string}} )
 ```
 
@@ -140,7 +140,7 @@ The set of characters to remove. `{{remove_chars}}` can be a string with a lengt
 ### Examples
 <a name="s3-select-sql-reference-trim-examples"></a>
 
-```
+```sql
 TRIM('       foobar         ')               -- 'foobar'
 TRIM('      \tfoobar\t         ')            -- '\tfoobar\t'
 TRIM(LEADING FROM '       foobar         ')  -- 'foobar         '
@@ -157,7 +157,7 @@ Given a string, `UPPER` converts all lowercase characters to uppercase character
 ### Syntax
 <a name="s3-select-sql-reference-upper-syntax"></a>
 
-```
+```sql
 UPPER ( {{string}} )
 ```
 
@@ -170,6 +170,6 @@ The target string that the function operates on.
 ### Examples
 <a name="s3-select-sql-reference-upper-examples"></a>
 
-```
+```sql
 UPPER('AbCdEfG!@#$') -- 'ABCDEFG!@#$'
 ```

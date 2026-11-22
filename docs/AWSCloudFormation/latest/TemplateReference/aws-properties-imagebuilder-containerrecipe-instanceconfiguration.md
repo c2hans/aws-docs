@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-containerrecipe-instanceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BlockDeviceMappings](#cfn-imagebuilder-containerrecipe-instanceconfiguration-blockdevicemappings)" : {{[ InstanceBlockDeviceMapping, ... ]}},
   "[Image](#cfn-imagebuilder-containerrecipe-instanceconfiguration-image)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-containerrecipe-instanceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BlockDeviceMappings](#cfn-imagebuilder-containerrecipe-instanceconfiguration-blockdevicemappings): {{
     - InstanceBlockDeviceMapping}}
   [Image](#cfn-imagebuilder-containerrecipe-instanceconfiguration-image): {{String}}

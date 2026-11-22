@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distribution-legacys3origin-syntax.json"></a>
 
-```
+```json
 {
   "[DNSName](#cfn-cloudfront-distribution-legacys3origin-dnsname)" : {{String}},
   "[OriginAccessIdentity](#cfn-cloudfront-distribution-legacys3origin-originaccessidentity)" : {{String}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distribution-legacys3origin-syntax.yaml"></a>
 
-```
+```yaml
   [DNSName](#cfn-cloudfront-distribution-legacys3origin-dnsname): {{String}}
   [OriginAccessIdentity](#cfn-cloudfront-distribution-legacys3origin-originaccessidentity): {{String}}
 ```

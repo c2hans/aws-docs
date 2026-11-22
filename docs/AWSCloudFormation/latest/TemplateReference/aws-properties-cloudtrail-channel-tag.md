@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudtrail-channel-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-cloudtrail-channel-tag-key)" : {{String}},
   "[Value](#cfn-cloudtrail-channel-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudtrail-channel-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-cloudtrail-channel-tag-key): {{String}}
   [Value](#cfn-cloudtrail-channel-tag-value): {{String}}
 ```

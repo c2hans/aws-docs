@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-containerfleet-deploymentdetails-syntax.json"></a>
 
-```
+```json
 {
   "[LatestDeploymentId](#cfn-gamelift-containerfleet-deploymentdetails-latestdeploymentid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-containerfleet-deploymentdetails-syntax.yaml"></a>
 
-```
+```yaml
   [LatestDeploymentId](#cfn-gamelift-containerfleet-deploymentdetails-latestdeploymentid): {{String}}
 ```
 

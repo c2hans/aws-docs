@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-mailmanagertrafficpolicy-ingressbooleanexpression-syntax.json"></a>
 
-```
+```json
 {
   "[Evaluate](#cfn-ses-mailmanagertrafficpolicy-ingressbooleanexpression-evaluate)" : {{IngressBooleanToEvaluate}},
   "[Operator](#cfn-ses-mailmanagertrafficpolicy-ingressbooleanexpression-operator)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-mailmanagertrafficpolicy-ingressbooleanexpression-syntax.yaml"></a>
 
-```
+```yaml
   [Evaluate](#cfn-ses-mailmanagertrafficpolicy-ingressbooleanexpression-evaluate): {{
     IngressBooleanToEvaluate}}
   [Operator](#cfn-ses-mailmanagertrafficpolicy-ingressbooleanexpression-operator): {{String}}

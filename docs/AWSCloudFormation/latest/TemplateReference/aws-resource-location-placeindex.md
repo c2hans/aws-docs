@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-location-placeindex-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Location::PlaceIndex",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-location-placeindex-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Location::PlaceIndex
 Properties:
   [DataSource](#cfn-location-placeindex-datasource): {{String}}

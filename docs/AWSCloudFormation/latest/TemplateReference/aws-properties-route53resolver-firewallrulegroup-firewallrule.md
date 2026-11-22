@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-route53resolver-firewallrulegroup-firewallrule-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-route53resolver-firewallrulegroup-firewallrule-action)" : {{String}},
   "[BlockOverrideDnsType](#cfn-route53resolver-firewallrulegroup-firewallrule-blockoverridednstype)" : {{String}},
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-route53resolver-firewallrulegroup-firewallrule-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-route53resolver-firewallrulegroup-firewallrule-action): {{String}}
   [BlockOverrideDnsType](#cfn-route53resolver-firewallrulegroup-firewallrule-blockoverridednstype): {{String}}
   [BlockOverrideDomain](#cfn-route53resolver-firewallrulegroup-firewallrule-blockoverridedomain): {{String}}
@@ -151,7 +151,7 @@ The rule type configuration for the firewall rule. This is a tagged union — ex
 + `DnsThreatProtection` — a built-in DNS Firewall Advanced threat detector (`DGA`, `DNS_TUNNELING`, or `DICTIONARY_DGA`).
 + `PartnerThreatProtection` — a third-party threat feed delivered through AWS Marketplace.
 + `AutoAllowlist` — an AutoAllowlist rule, which allows the domains on its managed domain list. See AutoAllowlistConfig.
-To enumerate the values supported in your account, call ListFirewallRuleTypes. It doesn't return `AutoAllowlist`.
+To enumerate the values supported in your account, call ListFirewallRuleTypes.
 *Required*: No
 *Type*: [FirewallRuleType](aws-properties-route53resolver-firewallrulegroup-firewallruletype.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

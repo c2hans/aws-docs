@@ -59,7 +59,7 @@ aws s3control put-storage-lens-configuration --account-id={{111122223333}} --con
 
 The following example shows the contents of the `config.json` file:
 
-```
+```json
 {
   "Id": "{{SampleS3StorageLensConfiguration}}",
   "AccountLevel": {
@@ -81,7 +81,7 @@ The following example shows the contents of the `config.json` file:
 
 To use the default range (minimum depth 1 and maximum depth 3), omit `SelectionCriteria`, as shown in the following example:
 
-```
+```json
 {
   "Id": "{{SampleS3StorageLensConfiguration}}",
   "AccountLevel": {
@@ -102,7 +102,7 @@ To use the default range (minimum depth 1 and maximum depth 3), omit `SelectionC
 
 The following AWS SDK for Java 2.x example enables AWS Billing and Cost Management publishing for an S3 Storage Lens configuration. The `CostAndUsageReportsPublish` configuration enables the feature, and the S3 Storage Lens configuration's `PrefixDelimiter` must be `/`. To use this example, replace the `{{user input placeholders}}` with your own information.
 
-```
+```JAVA
 package aws.example.s3control;
 
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rds-dbinstance-certificatedetails-syntax.json"></a>
 
-```
+```json
 {
   "[CAIdentifier](#cfn-rds-dbinstance-certificatedetails-caidentifier)" : {{String}},
   "[ValidTill](#cfn-rds-dbinstance-certificatedetails-validtill)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rds-dbinstance-certificatedetails-syntax.yaml"></a>
 
-```
+```yaml
   [CAIdentifier](#cfn-rds-dbinstance-certificatedetails-caidentifier): {{String}}
   [ValidTill](#cfn-rds-dbinstance-certificatedetails-validtill): {{String}}
 ```

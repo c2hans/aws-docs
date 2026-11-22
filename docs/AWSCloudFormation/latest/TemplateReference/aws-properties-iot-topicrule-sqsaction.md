@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicrule-sqsaction-syntax.json"></a>
 
-```
+```json
 {
   "[QueueUrl](#cfn-iot-topicrule-sqsaction-queueurl)" : {{String}},
   "[RoleArn](#cfn-iot-topicrule-sqsaction-rolearn)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicrule-sqsaction-syntax.yaml"></a>
 
-```
+```yaml
   [QueueUrl](#cfn-iot-topicrule-sqsaction-queueurl): {{String}}
   [RoleArn](#cfn-iot-topicrule-sqsaction-rolearn): {{String}}
   [UseBase64](#cfn-iot-topicrule-sqsaction-usebase64): {{Boolean}}

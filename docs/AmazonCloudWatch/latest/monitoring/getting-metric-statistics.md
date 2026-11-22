@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/getti
 ## Usage
 <a name="getting-metric-statistics-usage"></a>
 
-```
+```bash
 aws cloudwatch get-metric-statistics \
   --namespace "AWS/EC2" \
   --metric-name "CPUUtilization" \

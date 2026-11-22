@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-captiondescription-syntax.json"></a>
 
-```
+```json
 {
   "[Accessibility](#cfn-medialive-channel-captiondescription-accessibility)" : {{String}},
   "[CaptionDashRoles](#cfn-medialive-channel-captiondescription-captiondashroles)" : {{[ String, ... ]}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-captiondescription-syntax.yaml"></a>
 
-```
+```yaml
   [Accessibility](#cfn-medialive-channel-captiondescription-accessibility): {{String}}
   [CaptionDashRoles](#cfn-medialive-channel-captiondescription-captiondashroles): {{
     - String}}

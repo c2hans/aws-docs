@@ -19,7 +19,7 @@ The following example user data PowerShell script configures the Amazon ECS cont
 To use this script when you launch a container instance, follow the steps in [Launching an Amazon ECS Windows container instance](launch_window-container_instance.md). Just copy and paste the PowerShell script that follows into the **User data** field (be sure to substitute the red example values with your own proxy and cluster information).
 The `-EnableTaskIAMRole` option is required to enable IAM roles for tasks. For more information, see [Amazon EC2 Windows instance additional configuration](task-iam-roles.md#windows_task_IAM_roles).
 
-```
+```poweshell
 <powershell>
 Import-Module ECSTools
 

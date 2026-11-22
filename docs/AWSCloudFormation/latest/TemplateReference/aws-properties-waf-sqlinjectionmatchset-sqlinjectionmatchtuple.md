@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-waf-sqlinjectionmatchset-sqlinjectionmatchtuple-syntax.json"></a>
 
-```
+```json
 {
   "[FieldToMatch](#cfn-waf-sqlinjectionmatchset-sqlinjectionmatchtuple-fieldtomatch)" : {{FieldToMatch}},
   "[TextTransformation](#cfn-waf-sqlinjectionmatchset-sqlinjectionmatchtuple-texttransformation)" : {{String}}
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-waf-sqlinjectionmatchset-sqlinjectionmatchtuple-syntax.yaml"></a>
 
-```
+```yaml
   [FieldToMatch](#cfn-waf-sqlinjectionmatchset-sqlinjectionmatchtuple-fieldtomatch): {{
     FieldToMatch}}
   [TextTransformation](#cfn-waf-sqlinjectionmatchset-sqlinjectionmatchtuple-texttransformation): {{String}}

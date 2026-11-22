@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-route-matchrange-syntax.json"></a>
 
-```
+```json
 {
   "[End](#cfn-appmesh-route-matchrange-end)" : {{Integer}},
   "[Start](#cfn-appmesh-route-matchrange-start)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-route-matchrange-syntax.yaml"></a>
 
-```
+```yaml
   [End](#cfn-appmesh-route-matchrange-end): {{Integer}}
   [Start](#cfn-appmesh-route-matchrange-start): {{Integer}}
 ```

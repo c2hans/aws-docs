@@ -23,7 +23,7 @@ When the index is corrupted and autovacuum is attempting to run on the table, yo
 
    Run the following query to get the PID of the autovacuum session.
 
-   ```
+   ```sql
    SELECT datname, usename, pid, current_timestamp - xact_start
    AS xact_runtime, query
    FROM pg_stat_activity WHERE upper(query) like '%VACUUM%' ORDER BY
@@ -42,7 +42,7 @@ When the index is corrupted and autovacuum is attempting to run on the table, yo
 
 1. In session one, if autovacuum was blocking the process, you see in `pg_stat_activity` that waiting is "T" for your vacuum session. In this case, you end the autovacuum process.
 
-   ```
+   ```sql
    SELECT pg_terminate_backend('the_pid');
    ```
 

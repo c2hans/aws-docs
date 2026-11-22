@@ -127,7 +127,7 @@ CloudTrail logging for Query generator console events is also supported. Query g
 
 The following example shows a CloudTrail log entry that demonstrates the **GenerateQuery** action in CloudWatch Logs Insights.
 
-```
+```json
 {
     "eventVersion": "1.09",
     "userIdentity": {

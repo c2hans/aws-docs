@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-catalog-syncconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AssetsSyncConfiguration](#cfn-glue-catalog-syncconfiguration-assetssyncconfiguration)" : {{AssetsSyncConfiguration}},
   "[LineageSyncConfiguration](#cfn-glue-catalog-syncconfiguration-lineagesyncconfiguration)" : {{LineageSyncConfiguration}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-catalog-syncconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AssetsSyncConfiguration](#cfn-glue-catalog-syncconfiguration-assetssyncconfiguration): {{
     AssetsSyncConfiguration}}
   [LineageSyncConfiguration](#cfn-glue-catalog-syncconfiguration-lineagesyncconfiguration): {{

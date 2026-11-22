@@ -145,7 +145,7 @@ In Lambda proxy integration, API Gateway maps the entire client request to the i
 ------
 #### [ Input from the $connect route ]
 
-```
+```json
 {
     headers: {
       Host: 'abcd123.execute-api.us-east-1.amazonaws.com',
@@ -189,7 +189,7 @@ In Lambda proxy integration, API Gateway maps the entire client request to the i
 ------
 #### [ Input from the $disconnect route ]
 
-```
+```json
 {
     headers: {
       Host: 'abcd1234.execute-api.us-east-1.amazonaws.com',

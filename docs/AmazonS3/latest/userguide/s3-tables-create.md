@@ -84,13 +84,13 @@ If your table creation was successful, the name of your new table appears in the
 
 This example shows how to create a table with a schema by using the AWS CLI and specifying table metadata with JSON. To use this example, replace the `{{user input placeholders}}` with your own information.
 
-```
+```bash
 aws s3tables create-table --cli-input-json file://{{mytabledefinition.json}}
 ```
 
 For the `mytabledefinition.json` file, use the following example table definition. To create a partitioned table, include a `partitionSpec` in the table metadata. Each partition field references a column in your schema by its `sourceId` and applies a transform (such as `identity`, `bucket`, `truncate`, `year`, `month`, `day`, or `hour`) to produce the partition value. Because partition fields reference schema columns by ID, you must assign an explicit `id` to each field in your schema. The following example assigns IDs to the schema fields and partitions the table by the `registration_date` column using the `day` transform. To use this example, replace the `{{user input placeholders}}` with your own information.
 
-```
+```json
 {
     "tableBucketARN": "arn:aws:s3tables:{{us-east-1}}:{{111122223333}}:bucket/{{amzn-s3-demo-table-bucket}}",
     "namespace": "{{your_namespace}}",

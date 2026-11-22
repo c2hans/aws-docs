@@ -27,7 +27,7 @@ When a request is cancelled or revoked, Amazon EventBridge events are sent to th
 **To cancel or revoke a request**
 Use the [disassociate-capacity-reservation-billing-owner](https://docs.aws.amazon.com/cli/latest/reference/ec2/disassociate-capacity-reservation-billing-owner.html) command. For `--unused-reservation-billing-owner-id`, specify the ID of the AWS account to which the request was sent.
 
-```
+```bash
 aws ec2 disassociate-capacity-reservation-billing-owner \
     --capacity-reservation-id {{cr-01234567890abcdef}} \
     --unused-reservation-billing-owner-id {{123456789012}}
@@ -39,7 +39,7 @@ aws ec2 disassociate-capacity-reservation-billing-owner \
 **To cancel or revoke a request**
 Use the [Unregister-EC2CapacityReservationBillingOwner](https://docs.aws.amazon.com/powershell/latest/reference/items/Unregister-EC2CapacityReservationBillingOwner.html) cmdlet. For `-UnusedReservationBillingOwnerId`, specify the ID of the AWS account to which the request was sent.
 
-```
+```powershell
 Unregister-EC2CapacityReservationBillingOwner `
     -CapacityReservationId {{cr-01234567890abcdef}} `
     -UnusedReservationBillingOwnerId {{123456789012}}

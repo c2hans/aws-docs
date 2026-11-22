@@ -87,7 +87,7 @@ For examples of listing the version of objects using AWS SDKs for .NET and Rust,
 **Example — Retrieving a versioned object**
 The following request retrieves version `L4kqtJlcpXroDTDmpUMLUo` of `my-image.jpg`.
 
-```
+```http
 1. GET /my-image.jpg?versionId=L4kqtJlcpXroDTDmpUMLUo HTTP/1.1
 2. Host: bucket.s3.amazonaws.com
 3. Date: Wed, 28 Oct 2009 22:32:00 GMT

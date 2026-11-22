@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-connection-awslocation-syntax.json"></a>
 
-```
+```json
 {
   "[AccessRole](#cfn-datazone-connection-awslocation-accessrole)" : {{String}},
   "[AwsAccountId](#cfn-datazone-connection-awslocation-awsaccountid)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-connection-awslocation-syntax.yaml"></a>
 
-```
+```yaml
   [AccessRole](#cfn-datazone-connection-awslocation-accessrole): {{String}}
   [AwsAccountId](#cfn-datazone-connection-awslocation-awsaccountid): {{String}}
   [AwsRegion](#cfn-datazone-connection-awslocation-awsregion): {{String}}

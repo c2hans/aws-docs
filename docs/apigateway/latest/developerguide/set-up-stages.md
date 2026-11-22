@@ -76,7 +76,7 @@ The IAM role must also contain the following trust relationship statement:
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

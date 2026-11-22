@@ -99,7 +99,7 @@ https://autoscaling.amazonaws.com/?Action=TerminateInstanceInAutoScalingGroup
 #### Sample Response
 <a name="API_TerminateInstanceInAutoScalingGroup_Example_1_Response"></a>
 
-```
+```xml
 <TerminateInstanceInAutoScalingGroupResponse xmlns="https://autoscaling.amazonaws.com/doc/2011-01-01/">
   <TerminateInstanceInAutoScalingGroupResult>
     <Activity>

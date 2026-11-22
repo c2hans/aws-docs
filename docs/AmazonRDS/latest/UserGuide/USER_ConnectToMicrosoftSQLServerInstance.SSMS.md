@@ -54,7 +54,7 @@ Change the colon between the endpoint and port number to a comma.
 
    1. Enter the following SQL query.
 
-      ```
+      ```sql
       select @@VERSION
       ```
 

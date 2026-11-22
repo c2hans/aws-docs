@@ -34,7 +34,7 @@ This procedure is supported for the following Amazon RDS for Oracle DB engine ve
 
 The following example performs a tablespace backup using the specified values for the parameters.
 
-```
+```sql
 BEGIN
     rdsadmin.rdsadmin_rman_util.backup_tablespace(
         p_owner               => '{{SYS}}',

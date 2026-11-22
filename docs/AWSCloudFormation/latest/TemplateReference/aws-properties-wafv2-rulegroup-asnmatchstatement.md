@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-rulegroup-asnmatchstatement-syntax.json"></a>
 
-```
+```json
 {
   "[AsnList](#cfn-wafv2-rulegroup-asnmatchstatement-asnlist)" : {{[ Integer, ... ]}},
   "[ForwardedIPConfig](#cfn-wafv2-rulegroup-asnmatchstatement-forwardedipconfig)" : {{ForwardedIPConfiguration}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-rulegroup-asnmatchstatement-syntax.yaml"></a>
 
-```
+```yaml
   [AsnList](#cfn-wafv2-rulegroup-asnmatchstatement-asnlist): {{
     - Integer}}
   [ForwardedIPConfig](#cfn-wafv2-rulegroup-asnmatchstatement-forwardedipconfig): {{

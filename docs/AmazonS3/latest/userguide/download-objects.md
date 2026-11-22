@@ -60,7 +60,7 @@ If you use the Amazon S3 console to download an object whose key name ends with 
 
 The following `get-object` example command shows how you can use the AWS CLI to download an object from Amazon S3. This command gets the object `{{folder/my_image}}` from the bucket `{{amzn-s3-demo-bucket1}}`. You must include an `outfile`, which is a file name for the downloaded object, such as `{{my_downloaded_image.jpg}}`.
 
-```
+```bash
 aws s3api get-object --bucket {{{{amzn-s3-demo-bucket1}}}} --key {{folder/my_image}} {{my_downloaded_image.jpg}}
 ```
 
@@ -99,7 +99,7 @@ With AWS CloudShell, your home directory has storage up to 1GB per AWS Region. T
 
 1. Run the following command to sync objects in your bucket to CloudShell. The following command syncs objects from the bucket named `{{amzn-s3-demo-bucket1}}` and creates a folder named `{{temp}}` in CloudShell. CloudShell syncs your objects to this folder. To use this command, replace the `{{user input placeholders}}` with your own information.
 
-   ```
+   ```bash
    aws s3 sync s3://{{amzn-s3-demo-bucket1}} ./{{temp}}
    ```
 **Note**
@@ -129,13 +129,13 @@ To perform pattern matching to either exclude or include particular objects, you
 
 The following example shows how you can use the AWS CLI to download all of the files or objects under the specified directory or prefix. This command copies all objects from the bucket `{{amzn-s3-demo-bucket1}}` to your current directory. To use this example command, use your bucket name in place of `{{amzn-s3-demo-bucket1}}`.
 
-```
+```bash
 aws s3 cp s3://{{amzn-s3-demo-bucket1}} . --recursive
 ```
 
 The following command downloads all of the objects under the prefix `{{logs}}` in the bucket `{{amzn-s3-demo-bucket1}}` to your current directory. It also uses the `--exclude` and `--include` parameters to copy only objects with the suffix `{{.log}}`. To use this example command, replace the `{{user input placeholders}}` with your own information.
 
-```
+```bash
 aws s3 cp s3://{{amzn-s3-demo-bucket1}}/{{logs}}/ . --recursive --exclude "{{*}}" --include "{{*.log}}"
 ```
 
@@ -158,7 +158,7 @@ You can download part of an object by using the AWS CLI or REST API. To do so, y
 
 The following example command performs a `GET` request for a range of bytes in the object named `{{folder/my_data}}` in the bucket named `{{amzn-s3-demo-bucket1}}`. In the request, the byte range must be prefixed with `bytes=`. The partial object is downloaded to the output file named `{{my_data_range}}`. To use this example command, replace the `{{user input placeholders}}` with your own information.
 
-```
+```bash
 aws s3api get-object --bucket {{amzn-s3-demo-bucket1}} --key {{folder/my_data}} --range bytes={{0-500}} {{my_data_range}}
 ```
 

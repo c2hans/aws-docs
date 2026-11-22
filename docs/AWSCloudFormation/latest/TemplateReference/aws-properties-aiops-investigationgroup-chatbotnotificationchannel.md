@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-aiops-investigationgroup-chatbotnotificationchannel-syntax.json"></a>
 
-```
+```json
 {
   "[ChatConfigurationArns](#cfn-aiops-investigationgroup-chatbotnotificationchannel-chatconfigurationarns)" : {{[ String, ... ]}},
   "[SNSTopicArn](#cfn-aiops-investigationgroup-chatbotnotificationchannel-snstopicarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-aiops-investigationgroup-chatbotnotificationchannel-syntax.yaml"></a>
 
-```
+```yaml
   [ChatConfigurationArns](#cfn-aiops-investigationgroup-chatbotnotificationchannel-chatconfigurationarns): {{
     - String}}
   [SNSTopicArn](#cfn-aiops-investigationgroup-chatbotnotificationchannel-snstopicarn): {{String}}

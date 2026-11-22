@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-filledmapconditionalformatting-syntax.json"></a>
 
-```
+```json
 {
   "[ConditionalFormattingOptions](#cfn-quicksight-template-filledmapconditionalformatting-conditionalformattingoptions)" : {{[ FilledMapConditionalFormattingOption, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-filledmapconditionalformatting-syntax.yaml"></a>
 
-```
+```yaml
   [ConditionalFormattingOptions](#cfn-quicksight-template-filledmapconditionalformatting-conditionalformattingoptions): {{
     - FilledMapConditionalFormattingOption}}
 ```

@@ -108,7 +108,7 @@ Deletes a broker. Note: This API is asynchronous.
 #### PUT schema
 <a name="brokers-broker-id-request-body-put-example"></a>
 
-```
+```json
 {
   "dataReplicationMode": enum,
   "engineVersion": "string",
@@ -164,7 +164,7 @@ Deletes a broker. Note: This API is asynchronous.
 #### DescribeBrokerOutput schema
 <a name="brokers-broker-id-response-body-describebrokeroutput-example"></a>
 
-```
+```json
 {
   "pendingEngineVersion": "string",
   "pendingAuthenticationStrategy": enum,
@@ -311,7 +311,7 @@ Deletes a broker. Note: This API is asynchronous.
 #### UpdateBrokerOutput schema
 <a name="brokers-broker-id-response-body-updatebrokeroutput-example"></a>
 
-```
+```json
 {
   "engineVersion": "string",
   "brokerId": "string",
@@ -379,7 +379,7 @@ Deletes a broker. Note: This API is asynchronous.
 #### DeleteBrokerOutput schema
 <a name="brokers-broker-id-response-body-deletebrokeroutput-example"></a>
 
-```
+```json
 {
   "brokerId": "string"
 }
@@ -388,7 +388,7 @@ Deletes a broker. Note: This API is asynchronous.
 #### Error schema
 <a name="brokers-broker-id-response-body-error-example"></a>
 
-```
+```json
 {
   "errorAttribute": "string",
   "message": "string"

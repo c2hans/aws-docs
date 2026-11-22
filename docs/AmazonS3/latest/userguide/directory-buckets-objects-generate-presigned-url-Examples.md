@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buck
 
 The following example command shows how you can use the AWS CLI to generate a presigned URL for an object from Amazon S3. This command generates a presigned URL for an object `{{KEY_NAME}}` from the directory bucket `{{bucket-base-name}}--{{zone-id}}--x-s3`. To run this command, replace the `{{user input placeholders}}` with your own information.
 
-```
+```bash
 aws s3 presign s3://{{bucket-base-name}}--{{zone-id}}--x-s3/{{KEY_NAME}} --expires-in 7200
 ```
 

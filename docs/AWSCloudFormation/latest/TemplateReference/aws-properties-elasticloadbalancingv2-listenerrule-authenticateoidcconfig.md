@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AuthenticationRequestExtraParams](#cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-authenticationrequestextraparams)" : {{{{{Key}}: {{Value}}, ...}}},
   "[AuthorizationEndpoint](#cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-authorizationendpoint)" : {{String}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AuthenticationRequestExtraParams](#cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-authenticationrequestextraparams): {{
     {{Key}}: {{Value}}}}
   [AuthorizationEndpoint](#cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-authorizationendpoint): {{String}}

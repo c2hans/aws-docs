@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-ipamprefixlistresolvertarget-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::IPAMPrefixListResolverTarget",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-ipamprefixlistresolvertarget-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::IPAMPrefixListResolverTarget
 Properties:
   [DesiredVersion](#cfn-ec2-ipamprefixlistresolvertarget-desiredversion): {{Integer}}

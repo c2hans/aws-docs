@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-wordcloudoptions-syntax.json"></a>
 
-```
+```json
 {
   "[CloudLayout](#cfn-quicksight-dashboard-wordcloudoptions-cloudlayout)" : {{String}},
   "[MaximumStringLength](#cfn-quicksight-dashboard-wordcloudoptions-maximumstringlength)" : {{Number}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-wordcloudoptions-syntax.yaml"></a>
 
-```
+```yaml
   [CloudLayout](#cfn-quicksight-dashboard-wordcloudoptions-cloudlayout): {{String}}
   [MaximumStringLength](#cfn-quicksight-dashboard-wordcloudoptions-maximumstringlength): {{Number}}
   [WordCasing](#cfn-quicksight-dashboard-wordcloudoptions-wordcasing): {{String}}

@@ -49,7 +49,7 @@ Multi-AZ clusters use only DB cluster parameter groups. Individual instance para
 
    The following SQL commands grant the necessary roles to enable IAM authentication for replication connections:
 
-   ```
+   ```sql
    -- Grant IAM authentication role
    GRANT rds_iam TO replication_user_name;
 

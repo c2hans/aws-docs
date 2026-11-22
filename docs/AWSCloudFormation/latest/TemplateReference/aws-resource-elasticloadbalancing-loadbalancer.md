@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-elasticloadbalancing-loadbalancer-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ElasticLoadBalancing::LoadBalancer",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-elasticloadbalancing-loadbalancer-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ElasticLoadBalancing::LoadBalancer
 Properties:
   [AccessLoggingPolicy](#cfn-elasticloadbalancing-loadbalancer-accessloggingpolicy): {{
@@ -238,7 +238,7 @@ The following example specifies a Classic Load Balancer with a secure listener i
 #### JSON
 <a name="aws-resource-elasticloadbalancing-loadbalancer--examples--Classic_Load_Balancer_in_a_default_VPC--json"></a>
 
-```
+```json
 "MyLoadBalancer" : {
     "Type": "AWS::ElasticLoadBalancing::LoadBalancer",
     "Properties": {
@@ -274,7 +274,7 @@ The following example specifies a Classic Load Balancer with a secure listener i
 #### YAML
 <a name="aws-resource-elasticloadbalancing-loadbalancer--examples--Classic_Load_Balancer_in_a_default_VPC--yaml"></a>
 
-```
+```yaml
 MyLoadBalancer:
     Type: AWS::ElasticLoadBalancing::LoadBalancer
     Properties:
@@ -311,7 +311,7 @@ The following example specifies a Classic Load Balancer with an HTTP listener an
 #### JSON
 <a name="aws-resource-elasticloadbalancing-loadbalancer--examples--Classic_Load_Balancer_in_a_nondefault_VPC--json"></a>
 
-```
+```json
 {
     "Resources": {
         "myLoadBalancer": {
@@ -408,7 +408,7 @@ The following example specifies a Classic Load Balancer with an HTTP listener an
 #### YAML
 <a name="aws-resource-elasticloadbalancing-loadbalancer--examples--Classic_Load_Balancer_in_a_nondefault_VPC--yaml"></a>
 
-```
+```yaml
 Resources:
   myLoadBalancer:
     Type: AWS::ElasticLoadBalancing::LoadBalancer

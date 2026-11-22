@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-columnconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ChangeDetectingColumns](#cfn-kendra-datasource-columnconfiguration-changedetectingcolumns)" : {{[ String, ... ]}},
   "[DocumentDataColumnName](#cfn-kendra-datasource-columnconfiguration-documentdatacolumnname)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-columnconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ChangeDetectingColumns](#cfn-kendra-datasource-columnconfiguration-changedetectingcolumns): {{
     - String}}
   [DocumentDataColumnName](#cfn-kendra-datasource-columnconfiguration-documentdatacolumnname): {{String}}

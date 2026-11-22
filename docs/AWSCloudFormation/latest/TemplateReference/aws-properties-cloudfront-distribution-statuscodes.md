@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distribution-statuscodes-syntax.json"></a>
 
-```
+```json
 {
   "[Items](#cfn-cloudfront-distribution-statuscodes-items)" : {{[ Integer, ... ]}},
   "[Quantity](#cfn-cloudfront-distribution-statuscodes-quantity)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distribution-statuscodes-syntax.yaml"></a>
 
-```
+```yaml
   [Items](#cfn-cloudfront-distribution-statuscodes-items): {{
     - Integer}}
   [Quantity](#cfn-cloudfront-distribution-statuscodes-quantity): {{Integer}}

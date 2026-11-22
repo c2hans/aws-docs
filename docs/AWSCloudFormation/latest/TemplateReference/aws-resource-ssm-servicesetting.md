@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ssm-servicesetting-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SSM::ServiceSetting",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ssm-servicesetting-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SSM::ServiceSetting
 Properties:
   [SettingId](#cfn-ssm-servicesetting-settingid): {{String}}

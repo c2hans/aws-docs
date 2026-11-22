@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-outputgroupsettings-syntax.json"></a>
 
-```
+```json
 {
   "[ArchiveGroupSettings](#cfn-medialive-channel-outputgroupsettings-archivegroupsettings)" : {{ArchiveGroupSettings}},
   "[CmafIngestGroupSettings](#cfn-medialive-channel-outputgroupsettings-cmafingestgroupsettings)" : {{CmafIngestGroupSettings}},
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-outputgroupsettings-syntax.yaml"></a>
 
-```
+```yaml
   [ArchiveGroupSettings](#cfn-medialive-channel-outputgroupsettings-archivegroupsettings): {{
     ArchiveGroupSettings}}
   [CmafIngestGroupSettings](#cfn-medialive-channel-outputgroupsettings-cmafingestgroupsettings): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datasync-task-verified-syntax.json"></a>
 
-```
+```json
 {
   "[ReportLevel](#cfn-datasync-task-verified-reportlevel)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datasync-task-verified-syntax.yaml"></a>
 
-```
+```yaml
   [ReportLevel](#cfn-datasync-task-verified-reportlevel): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-flow-prefixconfig-syntax.json"></a>
 
-```
+```json
 {
   "[PathPrefixHierarchy](#cfn-appflow-flow-prefixconfig-pathprefixhierarchy)" : {{[ String, ... ]}},
   "[PrefixFormat](#cfn-appflow-flow-prefixconfig-prefixformat)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-flow-prefixconfig-syntax.yaml"></a>
 
-```
+```yaml
   [PathPrefixHierarchy](#cfn-appflow-flow-prefixconfig-pathprefixhierarchy): {{
     - String}}
   [PrefixFormat](#cfn-appflow-flow-prefixconfig-prefixformat): {{String}}

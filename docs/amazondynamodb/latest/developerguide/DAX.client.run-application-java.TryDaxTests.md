@@ -14,7 +14,7 @@ You can modify the program in several ways:
  To run this program, you can set up Maven to use the client for the DAX SDK for Java and the AWS SDK for Java as dependencies. For more information, see [Using the client as an Apache Maven dependency](DAX.client.java-sdk-v1.md#DAXClient.Maven).
 Or, you can download and include both the DAX Java client and the AWS SDK for Java in your classpath. See [Java and DAX](DAX.client.run-application-java.md) for an example of setting your `CLASSPATH` variable.
 
-```
+```java
 import java.util.Iterator;
 
 import com.amazonaws.services.dynamodbv2.document.DynamoDB;

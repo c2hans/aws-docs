@@ -12,7 +12,7 @@ To create an Amazon S3 bucket, see [Creating an S3 bucket](https://docs.aws.amaz
 
 The following policy must be applied to your S3 bucket to allow Capacity Manager to deliver data exports:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

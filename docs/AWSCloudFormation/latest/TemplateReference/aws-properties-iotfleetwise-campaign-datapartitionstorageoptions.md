@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotfleetwise-campaign-datapartitionstorageoptions-syntax.json"></a>
 
-```
+```json
 {
   "[MaximumSize](#cfn-iotfleetwise-campaign-datapartitionstorageoptions-maximumsize)" : {{StorageMaximumSize}},
   "[MinimumTimeToLive](#cfn-iotfleetwise-campaign-datapartitionstorageoptions-minimumtimetolive)" : {{StorageMinimumTimeToLive}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotfleetwise-campaign-datapartitionstorageoptions-syntax.yaml"></a>
 
-```
+```yaml
   [MaximumSize](#cfn-iotfleetwise-campaign-datapartitionstorageoptions-maximumsize): {{
     StorageMaximumSize}}
   [MinimumTimeToLive](#cfn-iotfleetwise-campaign-datapartitionstorageoptions-minimumtimetolive): {{

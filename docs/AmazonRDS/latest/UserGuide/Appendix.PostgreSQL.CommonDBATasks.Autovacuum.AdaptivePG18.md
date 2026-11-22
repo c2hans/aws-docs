@@ -33,7 +33,7 @@ When Amazon RDS modifies `autovacuum_max_workers` or any other autovacuum parame
 
 To view the current in-memory autovacuum settings, connect to your DB instance and run the following command:
 
-```
+```sql
 SHOW autovacuum_max_workers;
 ```
 

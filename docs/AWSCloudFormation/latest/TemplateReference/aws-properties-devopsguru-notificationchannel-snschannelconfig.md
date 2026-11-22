@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsguru-notificationchannel-snschannelconfig-syntax.json"></a>
 
-```
+```json
 {
   "[TopicArn](#cfn-devopsguru-notificationchannel-snschannelconfig-topicarn)" : {{String}}
 }
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsguru-notificationchannel-snschannelconfig-syntax.yaml"></a>
 
-```
+```yaml
   [TopicArn](#cfn-devopsguru-notificationchannel-snschannelconfig-topicarn): {{String}}
 ```
 

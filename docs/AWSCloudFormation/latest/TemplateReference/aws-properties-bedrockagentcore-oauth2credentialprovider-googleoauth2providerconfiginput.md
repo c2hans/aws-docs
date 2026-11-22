@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-oauth2credentialprovider-googleoauth2providerconfiginput-syntax.json"></a>
 
-```
+```json
 {
   "[ClientId](#cfn-bedrockagentcore-oauth2credentialprovider-googleoauth2providerconfiginput-clientid)" : {{String}},
   "[ClientSecret](#cfn-bedrockagentcore-oauth2credentialprovider-googleoauth2providerconfiginput-clientsecret)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-oauth2credentialprovider-googleoauth2providerconfiginput-syntax.yaml"></a>
 
-```
+```yaml
   [ClientId](#cfn-bedrockagentcore-oauth2credentialprovider-googleoauth2providerconfiginput-clientid): {{String}}
   [ClientSecret](#cfn-bedrockagentcore-oauth2credentialprovider-googleoauth2providerconfiginput-clientsecret): {{String}}
   [ClientSecretConfig](#cfn-bedrockagentcore-oauth2credentialprovider-googleoauth2providerconfiginput-clientsecretconfig): {{

@@ -52,7 +52,7 @@ The **Scheduled queries** page provides an overview of all your scheduled querie
 **To list scheduled queries (API)**
 + Use the `ListScheduledQueries` action to retrieve all scheduled queries:
 
-  ```
+  ```json
   {
       "maxResults": 10
   }

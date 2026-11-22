@@ -17,7 +17,7 @@ We provide the following sample CloudFormation templates for your reference:
 
 The following template turns on resource tracking as described in [Turning on resource tracking](https://docs.aws.amazon.com/aws-backup/latest/devguide/turning-on-resource-tracking.html).
 
-```
+```yml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Enable AWS Config
 
@@ -257,7 +257,7 @@ Resources:
 
 The following template creates a framework with the default controls described in [AWS Backup Audit Manager controls and remediation](https://docs.aws.amazon.com/aws-backup/latest/devguide/controls-and-remediation.html).
 
-```
+```yml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   TestFramework:
@@ -308,7 +308,7 @@ Outputs:
 
 The control `BACKUP_RECOVERY_POINT_MANUAL_DELETION_DISABLED` allows you to exempt up to five IAM roles that can still manually delete recovery points. The following template deploys this control and also exempts two IAM roles.
 
-```
+```yml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   TestFramework:
@@ -330,7 +330,7 @@ Outputs:
 
 The following template creates a report plan.
 
-```
+```yml
 Description: "Basic AWS::Backup::ReportPlan template"
 
 Parameters:

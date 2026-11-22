@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityhub-connector-healthissue-syntax.json"></a>
 
-```
+```json
 {
   "[Code](#cfn-securityhub-connector-healthissue-code)" : {{String}},
   "[Message](#cfn-securityhub-connector-healthissue-message)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityhub-connector-healthissue-syntax.yaml"></a>
 
-```
+```yaml
   [Code](#cfn-securityhub-connector-healthissue-code): {{String}}
   [Message](#cfn-securityhub-connector-healthissue-message): {{String}}
 ```

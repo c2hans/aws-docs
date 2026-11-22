@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-connection-hyperpodpropertiesinput-syntax.json"></a>
 
-```
+```json
 {
   "[ClusterName](#cfn-datazone-connection-hyperpodpropertiesinput-clustername)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-connection-hyperpodpropertiesinput-syntax.yaml"></a>
 
-```
+```yaml
   [ClusterName](#cfn-datazone-connection-hyperpodpropertiesinput-clustername): {{String}}
 ```
 

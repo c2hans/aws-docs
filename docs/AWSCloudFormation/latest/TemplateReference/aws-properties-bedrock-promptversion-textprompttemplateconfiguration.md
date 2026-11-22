@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-promptversion-textprompttemplateconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CachePoint](#cfn-bedrock-promptversion-textprompttemplateconfiguration-cachepoint)" : {{CachePointBlock}},
   "[InputVariables](#cfn-bedrock-promptversion-textprompttemplateconfiguration-inputvariables)" : {{[ PromptInputVariable, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-promptversion-textprompttemplateconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CachePoint](#cfn-bedrock-promptversion-textprompttemplateconfiguration-cachepoint): {{
     CachePointBlock}}
   [InputVariables](#cfn-bedrock-promptversion-textprompttemplateconfiguration-inputvariables): {{

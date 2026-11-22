@@ -71,7 +71,7 @@ To create a vector index in a vector bucket, use the following example commands 
 
 **Example 1: Creating a vector index with non-filterable metadata keys**
 
-```
+```bash
 aws s3vectors create-index \
   --vector-bucket-name "{{amzn-s3-demo-vector-bucket}}" \
   --index-name "{{idx}}" \
@@ -83,7 +83,7 @@ aws s3vectors create-index \
 
 **Example 2: Creating a vector index without non-filterable metadata keys**
 
-```
+```bash
 aws s3vectors create-index \
   --vector-bucket-name "{{amzn-s3-demo-vector-bucket}}" \
   --index-name "{{idx2}}" \
@@ -154,7 +154,7 @@ The response will include all metadata associated with the vector, regardless of
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```python
 import boto3
 
 # Create a S3 Vectors client in the AWS Region of your choice.

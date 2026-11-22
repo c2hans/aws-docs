@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-evaluationform-evaluationreviewnotificationrecipient-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-connect-evaluationform-evaluationreviewnotificationrecipient-type)" : {{String}},
   "[Value](#cfn-connect-evaluationform-evaluationreviewnotificationrecipient-value)" : {{EvaluationReviewNotificationRecipientValue}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-evaluationform-evaluationreviewnotificationrecipient-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-connect-evaluationform-evaluationreviewnotificationrecipient-type): {{String}}
   [Value](#cfn-connect-evaluationform-evaluationreviewnotificationrecipient-value): {{
     EvaluationReviewNotificationRecipientValue}}

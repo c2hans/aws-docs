@@ -62,7 +62,7 @@ The following is the Google Drive JSON schema and examples for the configuration
 
 The following is the Google Drive JSON schema for the configuration property for CloudFormation
 
-```
+```json
 {
   "type": "object",
   "properties": {
@@ -355,7 +355,7 @@ The following is the Google Drive JSON schema for the configuration property for
 
 The following is the Google Drive JSON schema example for the configuration property for CloudFormation
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "CloudFormation GOOGLEDRIVE Data Source Template",
@@ -446,7 +446,7 @@ The following is the Google Drive YAML schema and examples for the configuration
 
 The following is the Google Drive YAML schema for the configuration property for CloudFormation.
 
-```
+```YAML
 type: object
 properties:
   type:
@@ -660,7 +660,7 @@ required:
 
 The following is the Google Drive YAML example for the Configuration property for CloudFormation:
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Description: CloudFormation GOOGLEDRIVE Data Source Template
 Resources:

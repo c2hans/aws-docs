@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-containerfleet-targetconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[TargetValue](#cfn-gamelift-containerfleet-targetconfiguration-targetvalue)" : {{Number}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-containerfleet-targetconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [TargetValue](#cfn-gamelift-containerfleet-targetconfiguration-targetvalue): {{Number}}
 ```
 

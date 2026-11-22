@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datasync-locationfsxontap-customsecretconfig-syntax.json"></a>
 
-```
+```json
 {
   "[SecretAccessRoleArn](#cfn-datasync-locationfsxontap-customsecretconfig-secretaccessrolearn)" : {{String}},
   "[SecretArn](#cfn-datasync-locationfsxontap-customsecretconfig-secretarn)" : {{String}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datasync-locationfsxontap-customsecretconfig-syntax.yaml"></a>
 
-```
+```yaml
   [SecretAccessRoleArn](#cfn-datasync-locationfsxontap-customsecretconfig-secretaccessrolearn): {{String}}
   [SecretArn](#cfn-datasync-locationfsxontap-customsecretconfig-secretarn): {{String}}
 ```

@@ -89,7 +89,7 @@ To share a DB snapshot, use the `aws rds modify-db-snapshot-attribute` command. 
 The following example enables AWS account identifier `123456789012` to restore the DB snapshot named `db7-snapshot`.
 For Linux, macOS, or Unix:
 
-```
+```json
 aws rds modify-db-snapshot-attribute \
 --db-snapshot-identifier db7-snapshot \
 --attribute-name restore \
@@ -97,7 +97,7 @@ aws rds modify-db-snapshot-attribute \
 ```
 For Windows:
 
-```
+```json
 aws rds modify-db-snapshot-attribute ^
 --db-snapshot-identifier db7-snapshot ^
 --attribute-name restore ^
@@ -108,7 +108,7 @@ aws rds modify-db-snapshot-attribute ^
 The following example enables two AWS account identifiers, `111122223333` and `444455556666`, to restore the DB snapshot named `manual-snapshot1`.
 For Linux, macOS, or Unix:
 
-```
+```json
 aws rds modify-db-snapshot-attribute \
 --db-snapshot-identifier manual-snapshot1 \
 --attribute-name restore \
@@ -116,7 +116,7 @@ aws rds modify-db-snapshot-attribute \
 ```
 For Windows:
 
-```
+```json
 aws rds modify-db-snapshot-attribute ^
 --db-snapshot-identifier manual-snapshot1 ^
 --attribute-name restore ^

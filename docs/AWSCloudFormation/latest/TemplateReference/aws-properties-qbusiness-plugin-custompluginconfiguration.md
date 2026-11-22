@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-qbusiness-plugin-custompluginconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ApiSchema](#cfn-qbusiness-plugin-custompluginconfiguration-apischema)" : {{APISchema}},
   "[ApiSchemaType](#cfn-qbusiness-plugin-custompluginconfiguration-apischematype)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-qbusiness-plugin-custompluginconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ApiSchema](#cfn-qbusiness-plugin-custompluginconfiguration-apischema): {{
     APISchema}}
   [ApiSchemaType](#cfn-qbusiness-plugin-custompluginconfiguration-apischematype): {{String}}

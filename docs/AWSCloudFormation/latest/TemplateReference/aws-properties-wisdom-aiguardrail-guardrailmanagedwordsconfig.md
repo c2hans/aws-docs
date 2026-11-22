@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-aiguardrail-guardrailmanagedwordsconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-wisdom-aiguardrail-guardrailmanagedwordsconfig-type)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-aiguardrail-guardrailmanagedwordsconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-wisdom-aiguardrail-guardrailmanagedwordsconfig-type): {{String}}
 ```
 

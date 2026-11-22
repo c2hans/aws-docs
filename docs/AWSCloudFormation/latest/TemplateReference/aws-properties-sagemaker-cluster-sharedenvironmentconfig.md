@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-cluster-sharedenvironmentconfig-syntax.json"></a>
 
-```
+```json
 {
   "[FSxLustreConfig](#cfn-sagemaker-cluster-sharedenvironmentconfig-fsxlustreconfig)" : {{FSxLustreConfig}},
   "[FSxLustreDeletionPolicy](#cfn-sagemaker-cluster-sharedenvironmentconfig-fsxlustredeletionpolicy)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-cluster-sharedenvironmentconfig-syntax.yaml"></a>
 
-```
+```yaml
   [FSxLustreConfig](#cfn-sagemaker-cluster-sharedenvironmentconfig-fsxlustreconfig): {{
     FSxLustreConfig}}
   [FSxLustreDeletionPolicy](#cfn-sagemaker-cluster-sharedenvironmentconfig-fsxlustredeletionpolicy): {{String}}

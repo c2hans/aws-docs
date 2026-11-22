@@ -81,7 +81,7 @@ https://autoscaling.amazonaws.com/?Action=DetachInstances
 #### Sample Response
 <a name="API_DetachInstances_Example_1_Response"></a>
 
-```
+```xml
 <DetachInstancesResponse xmlns="https://autoscaling.amazonaws.com/doc/2011-01-01/">
   <DetachInstancesResult>
     <Activities>

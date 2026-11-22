@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-amplifyuibuilder-theme-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AmplifyUIBuilder::Theme",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-amplifyuibuilder-theme-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AmplifyUIBuilder::Theme
 Properties:
   [AppId](#cfn-amplifyuibuilder-theme-appid): {{String}}

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigateway-usageplan-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGateway::UsagePlan",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigateway-usageplan-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGateway::UsagePlan
 Properties:
   [ApiStages](#cfn-apigateway-usageplan-apistages): {{
@@ -123,7 +123,7 @@ The following examples create a usage plan for the Prod API stage, with a quota 
 #### JSON
 <a name="aws-resource-apigateway-usageplan--examples--Create_usage_plan--json"></a>
 
-```
+```json
 {
     "usagePlan": {
         "Type": "AWS::ApiGateway::UsagePlan",
@@ -156,7 +156,7 @@ The following examples create a usage plan for the Prod API stage, with a quota 
 #### YAML
 <a name="aws-resource-apigateway-usageplan--examples--Create_usage_plan--yaml"></a>
 
-```
+```yaml
 usagePlan:
   Type: 'AWS::ApiGateway::UsagePlan'
   Properties:

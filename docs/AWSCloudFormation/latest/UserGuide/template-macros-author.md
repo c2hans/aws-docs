@@ -11,7 +11,7 @@ When you create a macro definition, the macro definition makes the underlying La
 
 When CloudFormation invokes a macro's Lambda function, it sends a request in JSON format with the following structure:
 
-```
+```json
 {
     "region" : "{{us-east-1}}",
     "accountId" : "{{$ACCOUNT_ID}}",
@@ -53,7 +53,7 @@ When CloudFormation invokes a macro's Lambda function, it sends a request in JSO
 
 CloudFormation expects the Lambda function to return a response in the following JSON format:
 
-```
+```json
 {
     "requestId" : "{{$REQUEST_ID}}",
     "status" : "{{$STATUS}}",
@@ -111,7 +111,7 @@ Macros referenced in an `Fn::Transform` function can process the contents of any
 
 For example, in the template sample below, `AWS::Include` can process the `MyBucket` properties, based on the location of the `Fn::Transform` function that contains it. `MyMacro` can process the contents of the entire template because of its inclusion in the `Transform` section.
 
-```
+```yaml
 # Start of processable content for MyMacro
 AWSTemplateFormatVersion: 2010-09-09
  Transform: [MyMacro]
@@ -148,7 +148,7 @@ Transforms such as `AWS::Include` and `AWS::Transform` are treated the same as a
 
 For example, in the template sample below, CloudFormation evaluates the `PolicyAdder` macro first, because it's the most deeply-nested macro in the template. CloudFormation then evaluates `MyMacro` before evaluating `AWS::Serverless` because it's listed before `AWS::Serverless` in the `Transform` section.
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
  Transform: [MyMacro, AWS::Serverless]
  Resources:

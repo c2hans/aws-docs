@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-responsespecification-syntax.json"></a>
 
-```
+```json
 {
   "[AllowInterrupt](#cfn-lex-bot-responsespecification-allowinterrupt)" : {{Boolean}},
   "[MessageGroupsList](#cfn-lex-bot-responsespecification-messagegroupslist)" : {{[ MessageGroup, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-responsespecification-syntax.yaml"></a>
 
-```
+```yaml
   [AllowInterrupt](#cfn-lex-bot-responsespecification-allowinterrupt): {{Boolean}}
   [MessageGroupsList](#cfn-lex-bot-responsespecification-messagegroupslist): {{
     - MessageGroup}}

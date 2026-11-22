@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appsync-api-lambdaauthorizerconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AuthorizerResultTtlInSeconds](#cfn-appsync-api-lambdaauthorizerconfig-authorizerresultttlinseconds)" : {{Integer}},
   "[AuthorizerUri](#cfn-appsync-api-lambdaauthorizerconfig-authorizeruri)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appsync-api-lambdaauthorizerconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AuthorizerResultTtlInSeconds](#cfn-appsync-api-lambdaauthorizerconfig-authorizerresultttlinseconds): {{Integer}}
   [AuthorizerUri](#cfn-appsync-api-lambdaauthorizerconfig-authorizeruri): {{String}}
   [IdentityValidationExpression](#cfn-appsync-api-lambdaauthorizerconfig-identityvalidationexpression): {{String}}

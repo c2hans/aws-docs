@@ -26,7 +26,7 @@ Using the function `INSIGHT_RULE_METRIC`, you can set alarms on metrics that Con
 
 **Example rule: "RejectedConnectionsRule"**
 
-```
+```json
 {
     "Schema": {
         "Name": "CloudWatchLogRule",
@@ -66,7 +66,7 @@ Using the function `INSIGHT_RULE_METRIC`, you can set alarms on metrics that Con
 
 **Example rule: "TotalConnectionsRule"**
 
-```
+```json
 {
     "Schema": {
         "Name": "CloudWatchLogRule",

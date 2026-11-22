@@ -9,7 +9,7 @@ WorkSpaces Applications assumes a service role using a variety of resource ARNs,
 **Example `aws:SourceAccount` Conditional:**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -34,7 +34,7 @@ WorkSpaces Applications assumes a service role using a variety of resource ARNs,
 **Example `aws:SourceArn` Conditional:**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

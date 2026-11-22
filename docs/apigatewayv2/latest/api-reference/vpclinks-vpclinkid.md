@@ -87,7 +87,7 @@ Updates a VPC link.
 #### PATCH schema
 <a name="vpclinks-vpclinkid-request-body-patch-example"></a>
 
-```
+```json
 {
   "name": "string"
 }
@@ -99,7 +99,7 @@ Updates a VPC link.
 #### VpcLink schema
 <a name="vpclinks-vpclinkid-response-body-vpclink-example"></a>
 
-```
+```json
 {
   "vpcLinkId": "string",
   "name": "string",
@@ -121,7 +121,7 @@ Updates a VPC link.
 #### BadRequestException schema
 <a name="vpclinks-vpclinkid-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -130,7 +130,7 @@ Updates a VPC link.
 #### NotFoundException schema
 <a name="vpclinks-vpclinkid-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -140,7 +140,7 @@ Updates a VPC link.
 #### LimitExceededException schema
 <a name="vpclinks-vpclinkid-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

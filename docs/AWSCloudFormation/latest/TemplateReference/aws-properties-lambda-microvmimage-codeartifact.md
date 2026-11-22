@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-microvmimage-codeartifact-syntax.json"></a>
 
-```
+```json
 {
   "[Uri](#cfn-lambda-microvmimage-codeartifact-uri)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-microvmimage-codeartifact-syntax.yaml"></a>
 
-```
+```yaml
   [Uri](#cfn-lambda-microvmimage-codeartifact-uri): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-redshiftserverless-workgroup-vpcendpoint-syntax.json"></a>
 
-```
+```json
 {
   "[NetworkInterfaces](#cfn-redshiftserverless-workgroup-vpcendpoint-networkinterfaces)" : {{[ NetworkInterface, ... ]}},
   "[VpcEndpointId](#cfn-redshiftserverless-workgroup-vpcendpoint-vpcendpointid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-redshiftserverless-workgroup-vpcendpoint-syntax.yaml"></a>
 
-```
+```yaml
   [NetworkInterfaces](#cfn-redshiftserverless-workgroup-vpcendpoint-networkinterfaces): {{
     - NetworkInterface}}
   [VpcEndpointId](#cfn-redshiftserverless-workgroup-vpcendpoint-vpcendpointid): {{String}}

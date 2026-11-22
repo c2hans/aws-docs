@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-autoscaling-scheduledaction-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AutoScaling::ScheduledAction",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-autoscaling-scheduledaction-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AutoScaling::ScheduledAction
 Properties:
   [AutoScalingGroupName](#cfn-autoscaling-scheduledaction-autoscalinggroupname): {{String}}
@@ -151,7 +151,7 @@ The following template snippet includes two scheduled actions that scale the num
 #### JSON
 <a name="aws-resource-autoscaling-scheduledaction--examples--Scheduled_actions_that_run_on_a_recurring_schedule--json"></a>
 
-```
+```json
 {
   "Resources":{
     "ScheduledActionOut":{
@@ -183,7 +183,7 @@ The following template snippet includes two scheduled actions that scale the num
 #### YAML
 <a name="aws-resource-autoscaling-scheduledaction--examples--Scheduled_actions_that_run_on_a_recurring_schedule--yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   ScheduledActionOut:
@@ -210,7 +210,7 @@ The following template snippet includes a one-time scheduled action. At the date
 #### JSON
 <a name="aws-resource-autoscaling-scheduledaction--examples--Scheduled_scaling_action_that_occurs_only_once--json"></a>
 
-```
+```json
 {
   "Resources":{
     "OneTimeScheduledAction":{
@@ -230,7 +230,7 @@ The following template snippet includes a one-time scheduled action. At the date
 #### YAML
 <a name="aws-resource-autoscaling-scheduledaction--examples--Scheduled_scaling_action_that_occurs_only_once--yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   OneTimeScheduledAction:

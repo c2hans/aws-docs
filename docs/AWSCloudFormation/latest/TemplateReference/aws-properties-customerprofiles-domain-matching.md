@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-domain-matching-syntax.json"></a>
 
-```
+```json
 {
   "[AutoMerging](#cfn-customerprofiles-domain-matching-automerging)" : {{AutoMerging}},
   "[Enabled](#cfn-customerprofiles-domain-matching-enabled)" : {{Boolean}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-domain-matching-syntax.yaml"></a>
 
-```
+```yaml
   [AutoMerging](#cfn-customerprofiles-domain-matching-automerging): {{
     AutoMerging}}
   [Enabled](#cfn-customerprofiles-domain-matching-enabled): {{Boolean}}

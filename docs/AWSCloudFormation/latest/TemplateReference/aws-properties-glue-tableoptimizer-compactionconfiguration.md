@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-tableoptimizer-compactionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[IcebergConfiguration](#cfn-glue-tableoptimizer-compactionconfiguration-icebergconfiguration)" : {{IcebergCompactionConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-tableoptimizer-compactionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [IcebergConfiguration](#cfn-glue-tableoptimizer-compactionconfiguration-icebergconfiguration): {{
     IcebergCompactionConfiguration}}
 ```

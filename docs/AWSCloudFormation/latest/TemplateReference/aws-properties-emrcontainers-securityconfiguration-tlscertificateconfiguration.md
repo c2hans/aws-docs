@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrcontainers-securityconfiguration-tlscertificateconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CertificateProviderType](#cfn-emrcontainers-securityconfiguration-tlscertificateconfiguration-certificateprovidertype)" : {{String}},
   "[PrivateKeySecretArn](#cfn-emrcontainers-securityconfiguration-tlscertificateconfiguration-privatekeysecretarn)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrcontainers-securityconfiguration-tlscertificateconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CertificateProviderType](#cfn-emrcontainers-securityconfiguration-tlscertificateconfiguration-certificateprovidertype): {{String}}
   [PrivateKeySecretArn](#cfn-emrcontainers-securityconfiguration-tlscertificateconfiguration-privatekeysecretarn): {{String}}
   [PublicKeySecretArn](#cfn-emrcontainers-securityconfiguration-tlscertificateconfiguration-publickeysecretarn): {{String}}

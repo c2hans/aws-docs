@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-attributeaggregationfunction-syntax.json"></a>
 
-```
+```json
 {
   "[SimpleAttributeAggregation](#cfn-quicksight-template-attributeaggregationfunction-simpleattributeaggregation)" : {{String}},
   "[ValueForMultipleValues](#cfn-quicksight-template-attributeaggregationfunction-valueformultiplevalues)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-attributeaggregationfunction-syntax.yaml"></a>
 
-```
+```yaml
   [SimpleAttributeAggregation](#cfn-quicksight-template-attributeaggregationfunction-simpleattributeaggregation): {{String}}
   [ValueForMultipleValues](#cfn-quicksight-template-attributeaggregationfunction-valueformultiplevalues): {{String}}
 ```

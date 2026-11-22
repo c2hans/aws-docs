@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-function-snapstartresponse-syntax.json"></a>
 
-```
+```json
 {
   "[ApplyOn](#cfn-lambda-function-snapstartresponse-applyon)" : {{String}},
   "[OptimizationStatus](#cfn-lambda-function-snapstartresponse-optimizationstatus)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-function-snapstartresponse-syntax.yaml"></a>
 
-```
+```yaml
   [ApplyOn](#cfn-lambda-function-snapstartresponse-applyon): {{String}}
   [OptimizationStatus](#cfn-lambda-function-snapstartresponse-optimizationstatus): {{String}}
 ```

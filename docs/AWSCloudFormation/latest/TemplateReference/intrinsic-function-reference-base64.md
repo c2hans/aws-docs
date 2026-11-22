@@ -14,7 +14,7 @@ The intrinsic function `Fn::Base64` returns the Base64 representation of the inp
 ### JSON
 <a name="intrinsic-function-reference-base64-syntax.json"></a>
 
-```
+```json
 { "Fn::Base64" : {{valueToEncode}} }
 ```
 
@@ -23,26 +23,26 @@ The intrinsic function `Fn::Base64` returns the Base64 representation of the inp
 
 Syntax for the full function name:
 
-```
+```yaml
 Fn::Base64: {{valueToEncode}}
 ```
 
 Syntax for the short form:
 
-```
+```yaml
 !Base64 {{valueToEncode}}
 ```
 
 **Note**
 If you use the short form and immediately include another function in the `valueToEncode` parameter, use the full function name for at least one of the functions. For example, the following syntax isn't valid:
 
-```
+```yaml
 !Base64 !Sub {{string}}
 !Base64 !Ref {{logical_ID}}
 ```
 Instead, use the full function name for at least one of the functions, as shown in the following examples:
 
-```
+```yaml
 !Base64
   "Fn::Sub": {{string}}
 
@@ -67,14 +67,14 @@ The original string, in Base64 representation.
 ### JSON
 <a name="intrinsic-function-reference-base64-example.json"></a>
 
-```
+```json
 { "Fn::Base64" : "AWS CloudFormation" }
 ```
 
 ### YAML
 <a name="intrinsic-function-reference-base64-example.yaml"></a>
 
-```
+```yaml
 Fn::Base64: AWS CloudFormation
 ```
 

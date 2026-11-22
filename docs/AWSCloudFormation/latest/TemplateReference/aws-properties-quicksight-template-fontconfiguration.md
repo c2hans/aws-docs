@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-fontconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[FontColor](#cfn-quicksight-template-fontconfiguration-fontcolor)" : {{String}},
   "[FontDecoration](#cfn-quicksight-template-fontconfiguration-fontdecoration)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-fontconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [FontColor](#cfn-quicksight-template-fontconfiguration-fontcolor): {{String}}
   [FontDecoration](#cfn-quicksight-template-fontconfiguration-fontdecoration): {{String}}
   [FontFamily](#cfn-quicksight-template-fontconfiguration-fontfamily): {{String}}

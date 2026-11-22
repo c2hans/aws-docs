@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lightsail-container-portinfo-syntax.json"></a>
 
-```
+```json
 {
   "[Port](#cfn-lightsail-container-portinfo-port)" : {{String}},
   "[Protocol](#cfn-lightsail-container-portinfo-protocol)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lightsail-container-portinfo-syntax.yaml"></a>
 
-```
+```yaml
   [Port](#cfn-lightsail-container-portinfo-port): {{String}}
   [Protocol](#cfn-lightsail-container-portinfo-protocol): {{String}}
 ```

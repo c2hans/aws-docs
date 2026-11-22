@@ -13,7 +13,7 @@ This section presents examples of typical use cases for bucket policies. These s
 **Note**
 WorkSpaces Applications doesn't support confused deputy prevention for application icons, so the statement that grants access to the application icon object can't include a condition. For more information, see [Example: WorkSpaces Applications Application Amazon S3 bucket policy cross-service confused deputy prevention](example-s3-bucket.md).
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -53,7 +53,7 @@ The bucket policy example defines specific objects in the S3 bucket that WorkSpa
 
 If you are using an WorkSpaces Applications app block, then WorkSpaces Applications requires additional permissions to upload the application package to your appropriate Amazon S3 bucket. For more information about WorkSpaces Applications app blocks, see [WorkSpaces Applications App Blocks](appstream-app-blocks.md).
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

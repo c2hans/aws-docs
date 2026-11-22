@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devicefarm-devicepool-rule-syntax.json"></a>
 
-```
+```json
 {
   "[Attribute](#cfn-devicefarm-devicepool-rule-attribute)" : {{String}},
   "[Operator](#cfn-devicefarm-devicepool-rule-operator)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devicefarm-devicepool-rule-syntax.yaml"></a>
 
-```
+```yaml
   [Attribute](#cfn-devicefarm-devicepool-rule-attribute): {{String}}
   [Operator](#cfn-devicefarm-devicepool-rule-operator): {{String}}
   [Value](#cfn-devicefarm-devicepool-rule-value): {{String}}

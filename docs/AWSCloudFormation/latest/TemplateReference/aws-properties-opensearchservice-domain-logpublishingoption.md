@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchservice-domain-logpublishingoption-syntax.json"></a>
 
-```
+```json
 {
   "[CloudWatchLogsLogGroupArn](#cfn-opensearchservice-domain-logpublishingoption-cloudwatchlogsloggrouparn)" : {{String}},
   "[Enabled](#cfn-opensearchservice-domain-logpublishingoption-enabled)" : {{Boolean}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchservice-domain-logpublishingoption-syntax.yaml"></a>
 
-```
+```yaml
   [CloudWatchLogsLogGroupArn](#cfn-opensearchservice-domain-logpublishingoption-cloudwatchlogsloggrouparn): {{String}}
   [Enabled](#cfn-opensearchservice-domain-logpublishingoption-enabled): {{Boolean}}
 ```

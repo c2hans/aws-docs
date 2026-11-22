@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-mltransform-findmatchesparameters-syntax.json"></a>
 
-```
+```json
 {
   "[AccuracyCostTradeoff](#cfn-glue-mltransform-findmatchesparameters-accuracycosttradeoff)" : {{Number}},
   "[EnforceProvidedLabels](#cfn-glue-mltransform-findmatchesparameters-enforceprovidedlabels)" : {{Boolean}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-mltransform-findmatchesparameters-syntax.yaml"></a>
 
-```
+```yaml
   [AccuracyCostTradeoff](#cfn-glue-mltransform-findmatchesparameters-accuracycosttradeoff): {{Number}}
   [EnforceProvidedLabels](#cfn-glue-mltransform-findmatchesparameters-enforceprovidedlabels): {{Boolean}}
   [PrecisionRecallTradeoff](#cfn-glue-mltransform-findmatchesparameters-precisionrecalltradeoff): {{Number}}

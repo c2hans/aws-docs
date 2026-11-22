@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ssm-patchbaseline-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SSM::PatchBaseline",
   "Properties" : {
@@ -44,7 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ssm-patchbaseline-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SSM::PatchBaseline
 Properties:
   [ApprovalRules](#cfn-ssm-patchbaseline-approvalrules): {{
@@ -227,7 +227,7 @@ The following example creates a Systems Manager patch baseline that approves pat
 ####
 <a name="aws-resource-ssm-patchbaseline--examples--Create_a_patch_baseline--language_owl_wvr_qlb"></a>
 
-```
+```language_owl_wvr_qlb
 {
     "Resources": {
         "myPatchBaseline": {
@@ -321,7 +321,7 @@ The following example creates a Systems Manager patch baseline that approves pat
 #### YAML
 <a name="aws-resource-ssm-patchbaseline--examples--Create_a_patch_baseline--yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   myPatchBaseline:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-configurationset-guardianoptions-syntax.json"></a>
 
-```
+```json
 {
   "[OptimizedSharedDelivery](#cfn-ses-configurationset-guardianoptions-optimizedshareddelivery)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-configurationset-guardianoptions-syntax.yaml"></a>
 
-```
+```yaml
   [OptimizedSharedDelivery](#cfn-ses-configurationset-guardianoptions-optimizedshareddelivery): {{String}}
 ```
 

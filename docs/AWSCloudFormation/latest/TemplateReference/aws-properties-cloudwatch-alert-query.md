@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-alert-query-syntax.json"></a>
 
-```
+```json
 {
   "[Expression](#cfn-cloudwatch-alert-query-expression)" : {{String}},
   "[Language](#cfn-cloudwatch-alert-query-language)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-alert-query-syntax.yaml"></a>
 
-```
+```yaml
   [Expression](#cfn-cloudwatch-alert-query-expression): {{String}}
   [Language](#cfn-cloudwatch-alert-query-language): {{String}}
 ```

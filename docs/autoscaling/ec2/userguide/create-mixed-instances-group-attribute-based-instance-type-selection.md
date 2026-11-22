@@ -106,7 +106,7 @@ If you enable performance protection by specifying a supported instance family, 
 **Example: Set a CPU performance baseline**
 In the following example, the instance requirement is to launch with instance types that have CPU cores that are as performant as the `c6i` instance family. This will filter out instance types with less performant CPU processors, even if they meet your other specified instance requirements such as the number of vCPUs. For example, if your specified instance attributes include 4 vCPUs and 16 GB of memory, an instance type with these attributes but with lower CPU performance than `c6i` will be excluded from selection.
 
-```
+```JSON
 "BaselinePerformanceFactors": {
         "Cpu": {
             "References": [
@@ -223,7 +223,7 @@ aws autoscaling create-auto-scaling-group --cli-input-json {{file://~/config.jso
 
 The following is an example `config.json` file.
 
-```
+```json
 {
     "AutoScalingGroupName": "{{my-asg}}",
     "DesiredCapacityType": "units",
@@ -267,7 +267,7 @@ aws autoscaling create-auto-scaling-group --cli-input-yaml {{file://~/config.yam
 
 The following is an example `config.yaml` file.
 
-```
+```YAML
 ---
 AutoScalingGroupName: {{my-asg}}
 DesiredCapacityType: units

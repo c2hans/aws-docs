@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-flowlog-tagfieldspecification-syntax.json"></a>
 
-```
+```json
 {
   "[ResourceType](#cfn-ec2-flowlog-tagfieldspecification-resourcetype)" : {{String}},
   "[TagKeys](#cfn-ec2-flowlog-tagfieldspecification-tagkeys)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-flowlog-tagfieldspecification-syntax.yaml"></a>
 
-```
+```yaml
   [ResourceType](#cfn-ec2-flowlog-tagfieldspecification-resourcetype): {{String}}
   [TagKeys](#cfn-ec2-flowlog-tagfieldspecification-tagkeys): {{
     - String}}

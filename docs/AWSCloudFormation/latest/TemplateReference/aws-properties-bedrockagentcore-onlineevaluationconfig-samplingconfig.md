@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-onlineevaluationconfig-samplingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[SamplingPercentage](#cfn-bedrockagentcore-onlineevaluationconfig-samplingconfig-samplingpercentage)" : {{Number}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-onlineevaluationconfig-samplingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [SamplingPercentage](#cfn-bedrockagentcore-onlineevaluationconfig-samplingconfig-samplingpercentage): {{Number}}
 ```
 

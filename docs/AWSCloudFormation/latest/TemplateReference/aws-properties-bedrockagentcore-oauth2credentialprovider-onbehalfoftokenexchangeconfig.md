@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-oauth2credentialprovider-onbehalfoftokenexchangeconfig-syntax.json"></a>
 
-```
+```json
 {
   "[GrantType](#cfn-bedrockagentcore-oauth2credentialprovider-onbehalfoftokenexchangeconfig-granttype)" : {{String}},
   "[TokenExchangeGrantTypeConfig](#cfn-bedrockagentcore-oauth2credentialprovider-onbehalfoftokenexchangeconfig-tokenexchangegranttypeconfig)" : {{TokenExchangeGrantTypeConfig}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-oauth2credentialprovider-onbehalfoftokenexchangeconfig-syntax.yaml"></a>
 
-```
+```yaml
   [GrantType](#cfn-bedrockagentcore-oauth2credentialprovider-onbehalfoftokenexchangeconfig-granttype): {{String}}
   [TokenExchangeGrantTypeConfig](#cfn-bedrockagentcore-oauth2credentialprovider-onbehalfoftokenexchangeconfig-tokenexchangegranttypeconfig): {{
     TokenExchangeGrantTypeConfig}}

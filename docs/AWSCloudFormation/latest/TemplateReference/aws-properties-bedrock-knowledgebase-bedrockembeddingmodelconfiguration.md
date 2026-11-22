@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-knowledgebase-bedrockembeddingmodelconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Audio](#cfn-bedrock-knowledgebase-bedrockembeddingmodelconfiguration-audio)" : {{[ AudioConfiguration, ... ]}},
   "[Dimensions](#cfn-bedrock-knowledgebase-bedrockembeddingmodelconfiguration-dimensions)" : {{Integer}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-knowledgebase-bedrockembeddingmodelconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Audio](#cfn-bedrock-knowledgebase-bedrockembeddingmodelconfiguration-audio): {{
     - AudioConfiguration}}
   [Dimensions](#cfn-bedrock-knowledgebase-bedrockembeddingmodelconfiguration-dimensions): {{Integer}}

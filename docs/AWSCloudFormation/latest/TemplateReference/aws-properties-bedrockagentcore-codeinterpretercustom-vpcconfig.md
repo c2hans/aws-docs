@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-codeinterpretercustom-vpcconfig-syntax.json"></a>
 
-```
+```json
 {
   "[SecurityGroups](#cfn-bedrockagentcore-codeinterpretercustom-vpcconfig-securitygroups)" : {{[ String, ... ]}},
   "[Subnets](#cfn-bedrockagentcore-codeinterpretercustom-vpcconfig-subnets)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-codeinterpretercustom-vpcconfig-syntax.yaml"></a>
 
-```
+```yaml
   [SecurityGroups](#cfn-bedrockagentcore-codeinterpretercustom-vpcconfig-securitygroups): {{
     - String}}
   [Subnets](#cfn-bedrockagentcore-codeinterpretercustom-vpcconfig-subnets): {{

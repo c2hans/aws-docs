@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-job-schedulingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[EndBehavior](#cfn-iot-job-schedulingconfig-endbehavior)" : {{String}},
   "[EndTime](#cfn-iot-job-schedulingconfig-endtime)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-job-schedulingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [EndBehavior](#cfn-iot-job-schedulingconfig-endbehavior): {{String}}
   [EndTime](#cfn-iot-job-schedulingconfig-endtime): {{String}}
   [MaintenanceWindows](#cfn-iot-job-schedulingconfig-maintenancewindows): {{

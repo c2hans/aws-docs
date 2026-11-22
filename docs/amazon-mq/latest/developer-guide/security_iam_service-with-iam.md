@@ -129,7 +129,7 @@ Amazon MQ supports policies based on tags. For instance, you could deny access t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

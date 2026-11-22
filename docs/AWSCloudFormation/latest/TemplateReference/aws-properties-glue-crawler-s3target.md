@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-crawler-s3target-syntax.json"></a>
 
-```
+```json
 {
   "[ConnectionName](#cfn-glue-crawler-s3target-connectionname)" : {{String}},
   "[DlqEventQueueArn](#cfn-glue-crawler-s3target-dlqeventqueuearn)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-crawler-s3target-syntax.yaml"></a>
 
-```
+```yaml
   [ConnectionName](#cfn-glue-crawler-s3target-connectionname): {{String}}
   [DlqEventQueueArn](#cfn-glue-crawler-s3target-dlqeventqueuearn): {{String}}
   [EventQueueArn](#cfn-glue-crawler-s3target-eventqueuearn): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-vpclattice-servicenetworkresourceassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::VpcLattice::ServiceNetworkResourceAssociation",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-vpclattice-servicenetworkresourceassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::VpcLattice::ServiceNetworkResourceAssociation
 Properties:
   [PrivateDnsEnabled](#cfn-vpclattice-servicenetworkresourceassociation-privatednsenabled): {{Boolean}}

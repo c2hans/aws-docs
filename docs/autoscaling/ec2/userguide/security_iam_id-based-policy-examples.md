@@ -15,7 +15,7 @@ The following shows an example of a permissions policy.
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [{
@@ -65,7 +65,7 @@ The following policy grants permissions to create and update all Auto Scaling gr
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [{
@@ -90,7 +90,7 @@ Alternatively, if you are not using tags to control access to Auto Scaling group
 
 An Auto Scaling group has the following ARN.
 
-```
+```json
 "Resource": "arn:aws:autoscaling:{{region}}:{{account-id}}:autoScalingGroup:*:autoScalingGroupName/{{my-asg}}"
 ```
 
@@ -108,7 +108,7 @@ The following policy requires the requester to specify a tag with the key `envir
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [{
@@ -134,7 +134,7 @@ The following policy specifies that the requester can only tag Auto Scaling grou
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [{
@@ -164,7 +164,7 @@ The following policy requires the requester to specify at least one tag in the r
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [{
@@ -196,7 +196,7 @@ The following policy allows deletion of an Auto Scaling group only if the group 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [{
@@ -219,7 +219,7 @@ The following policy uses the `autoscaling:ForceDelete` condition key to control
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -246,7 +246,7 @@ The following policy gives users permissions to use the `DeleteAutoScalingGroup`
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -263,7 +263,7 @@ The following policy gives users permissions to use the `DeleteAutoScalingGroup`
 
 You can also specify multiple ARNs by enclosing them in a list. Including the UUID ensures that access is granted to the specific Auto Scaling group. The UUID for a new group is different than the UUID for a deleted group with the same name.
 
-```
+```json
 "Resource": [
     "arn:aws:autoscaling:{{region}}:{{account-id}}:autoScalingGroup:{{uuid}}:autoScalingGroupName/{{devteam-1}}",
     "arn:aws:autoscaling:{{region}}:{{account-id}}:autoScalingGroup:{{uuid}}:autoScalingGroupName/{{devteam-2}}",
@@ -281,7 +281,7 @@ The following policy grants permissions to use the `DeletePolicy` action to dele
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [{
@@ -312,7 +312,7 @@ The following policy grants permission to start, roll back, and cancel an instan
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [{
@@ -350,7 +350,7 @@ Amazon EC2 Auto Scaling requires permissions to create a service-linked role the
 
 For automatic role creation to succeed, users must have permissions for the `iam:CreateServiceLinkedRole` action.
 
-```
+```json
 "Action": "iam:CreateServiceLinkedRole"
 ```
 
@@ -361,7 +361,7 @@ The following shows an example of a permissions policy that allows a user to cre
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [{

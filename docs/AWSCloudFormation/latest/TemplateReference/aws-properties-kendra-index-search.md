@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-index-search-syntax.json"></a>
 
-```
+```json
 {
   "[Displayable](#cfn-kendra-index-search-displayable)" : {{Boolean}},
   "[Facetable](#cfn-kendra-index-search-facetable)" : {{Boolean}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-index-search-syntax.yaml"></a>
 
-```
+```yaml
   [Displayable](#cfn-kendra-index-search-displayable): {{Boolean}}
   [Facetable](#cfn-kendra-index-search-facetable): {{Boolean}}
   [Searchable](#cfn-kendra-index-search-searchable): {{Boolean}}

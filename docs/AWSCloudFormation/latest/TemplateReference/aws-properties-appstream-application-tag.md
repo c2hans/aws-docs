@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appstream-application-tag-syntax.json"></a>
 
-```
+```json
 {
   "[TagItems](#cfn-appstream-application-tag-tagitems)" : {{TagItems}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appstream-application-tag-syntax.yaml"></a>
 
-```
+```yaml
   [TagItems](#cfn-appstream-application-tag-tagitems): {{
     TagItems}}
 ```

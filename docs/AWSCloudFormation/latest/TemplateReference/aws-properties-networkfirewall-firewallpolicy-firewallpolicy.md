@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkfirewall-firewallpolicy-firewallpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[EnableTLSSessionHolding](#cfn-networkfirewall-firewallpolicy-firewallpolicy-enabletlssessionholding)" : {{Boolean}},
   "[PolicyVariables](#cfn-networkfirewall-firewallpolicy-firewallpolicy-policyvariables)" : {{PolicyVariables}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkfirewall-firewallpolicy-firewallpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [EnableTLSSessionHolding](#cfn-networkfirewall-firewallpolicy-firewallpolicy-enabletlssessionholding): {{Boolean}}
   [PolicyVariables](#cfn-networkfirewall-firewallpolicy-firewallpolicy-policyvariables): {{
     PolicyVariables}}

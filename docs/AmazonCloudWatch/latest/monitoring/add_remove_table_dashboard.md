@@ -13,7 +13,7 @@ Each data table widget can have the following properties. The information about 
 **Summary**
 Summary columns are a new property introduced with the data table widget. These columns are a specific subset of summaries of your current table. For example, the **Sum** summary is a sum of all displayed datapoints in its row. The summary columns are not the same as CloudWatch statistics. Represented in source as:
 
-```
+```json
  "table": {
         "summaryColumns": [
             "MIN",
@@ -27,7 +27,7 @@ Summary columns are a new property introduced with the data table widget. These 
 **Thresholds**
 Use this to apply thresholds to your table. When a data point falls within a threshold, its cell is highlighted with the threshold color. Represented in source as:
 
-```
+```json
 "annotations": {
     "horizontal": [
         {
@@ -42,7 +42,7 @@ Use this to apply thresholds to your table. When a data point falls within a thr
 Unit in label column
 To display what unit is associated with the metric, you can enable this option to display the unit in the label column beside the label. Represented in source as:
 
-```
+```json
 "yAxis": {
     "left": {
         "showUnits": true | false
@@ -53,7 +53,7 @@ To display what unit is associated with the metric, you can enable this option t
 **Invert rows and columns**
 This transforms the table so that the datapoints swap from columns to rows, and the metrics become columns. Represented in source as:
 
-```
+```json
  "table": {
     "layout": "vertical" | "horizontal"
 }
@@ -62,7 +62,7 @@ This transforms the table so that the datapoints swap from columns to rows, and 
 **Sticky summary columns**
 This makes the summary columns sticky, so that they remain in view while you scroll. The label is already sticky. Represented in source as:
 
-```
+```json
 "table": {
     "stickySummary": true | false
 }
@@ -71,7 +71,7 @@ This makes the summary columns sticky, so that they remain in view while you scr
 **Display only summary columns**
 This prevents the columns of datapoints from being displayed, so that only the label and summary columns are displayed. Represented in source as:
 
-```
+```json
  "table": {
     "showTimeSeriesData": false | true
 }
@@ -80,13 +80,13 @@ This prevents the columns of datapoints from being displayed, so that only the l
 **Live data**
 Displays the most recent data point, even if it is not yet fully aggregated. Represented in source as:
 
-```
+```json
 "liveData": true | false
 ```
 
 **Number widget format**
 Displays as many digits as can fit in the cell, before rounding and converting. Represented in source as:
 
-```
+```json
 "singleValueFullPrecision": true | false
 ```

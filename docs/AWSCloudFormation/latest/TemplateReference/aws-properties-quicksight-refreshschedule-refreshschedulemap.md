@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-refreshschedule-refreshschedulemap-syntax.json"></a>
 
-```
+```json
 {
   "[RefreshType](#cfn-quicksight-refreshschedule-refreshschedulemap-refreshtype)" : {{String}},
   "[ScheduleFrequency](#cfn-quicksight-refreshschedule-refreshschedulemap-schedulefrequency)" : {{ScheduleFrequency}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-refreshschedule-refreshschedulemap-syntax.yaml"></a>
 
-```
+```yaml
   [RefreshType](#cfn-quicksight-refreshschedule-refreshschedulemap-refreshtype): {{String}}
   [ScheduleFrequency](#cfn-quicksight-refreshschedule-refreshschedulemap-schedulefrequency): {{
     ScheduleFrequency}}

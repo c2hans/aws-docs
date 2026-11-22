@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-workteam-memberdefinition-syntax.json"></a>
 
-```
+```json
 {
   "[CognitoMemberDefinition](#cfn-sagemaker-workteam-memberdefinition-cognitomemberdefinition)" : {{CognitoMemberDefinition}},
   "[OidcMemberDefinition](#cfn-sagemaker-workteam-memberdefinition-oidcmemberdefinition)" : {{OidcMemberDefinition}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-workteam-memberdefinition-syntax.yaml"></a>
 
-```
+```yaml
   [CognitoMemberDefinition](#cfn-sagemaker-workteam-memberdefinition-cognitomemberdefinition): {{
     CognitoMemberDefinition}}
   [OidcMemberDefinition](#cfn-sagemaker-workteam-memberdefinition-oidcmemberdefinition): {{

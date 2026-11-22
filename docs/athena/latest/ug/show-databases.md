@@ -11,7 +11,7 @@ The programmatic equivalent of `SHOW DATABASES` is the [ListDatabases](https://d
 ## Synopsis
 <a name="synopsis"></a>
 
-```
+```sql
 SHOW {DATABASES | SCHEMAS} [LIKE '{{regular_expression}}']
 ```
 
@@ -24,10 +24,10 @@ Filters the list of databases to those that match the `{{regular_expression}}` t
 ## Examples
 <a name="examples"></a>
 
-```
+```sql
 SHOW SCHEMAS;
 ```
 
-```
+```sql
 SHOW DATABASES LIKE '.*analytics';
 ```

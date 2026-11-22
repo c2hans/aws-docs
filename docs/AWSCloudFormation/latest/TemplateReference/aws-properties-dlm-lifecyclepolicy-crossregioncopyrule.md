@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dlm-lifecyclepolicy-crossregioncopyrule-syntax.json"></a>
 
-```
+```json
 {
   "[CmkArn](#cfn-dlm-lifecyclepolicy-crossregioncopyrule-cmkarn)" : {{String}},
   "[CopyTags](#cfn-dlm-lifecyclepolicy-crossregioncopyrule-copytags)" : {{Boolean}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dlm-lifecyclepolicy-crossregioncopyrule-syntax.yaml"></a>
 
-```
+```yaml
   [CmkArn](#cfn-dlm-lifecyclepolicy-crossregioncopyrule-cmkarn): {{String}}
   [CopyTags](#cfn-dlm-lifecyclepolicy-crossregioncopyrule-copytags): {{Boolean}}
   [DeprecateRule](#cfn-dlm-lifecyclepolicy-crossregioncopyrule-deprecaterule): {{

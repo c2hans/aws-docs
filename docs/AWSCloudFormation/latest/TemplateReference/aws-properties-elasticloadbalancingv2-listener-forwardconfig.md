@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancingv2-listener-forwardconfig-syntax.json"></a>
 
-```
+```json
 {
   "[TargetGroups](#cfn-elasticloadbalancingv2-listener-forwardconfig-targetgroups)" : {{[ TargetGroupTuple, ... ]}},
   "[TargetGroupStickinessConfig](#cfn-elasticloadbalancingv2-listener-forwardconfig-targetgroupstickinessconfig)" : {{TargetGroupStickinessConfig}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancingv2-listener-forwardconfig-syntax.yaml"></a>
 
-```
+```yaml
   [TargetGroups](#cfn-elasticloadbalancingv2-listener-forwardconfig-targetgroups): {{
     - TargetGroupTuple}}
   [TargetGroupStickinessConfig](#cfn-elasticloadbalancingv2-listener-forwardconfig-targetgroupstickinessconfig): {{
@@ -61,7 +61,7 @@ The following example defines a listener with a default action that forwards tra
 #### YAML
 <a name="aws-properties-elasticloadbalancingv2-listener-forwardconfig--examples----yaml"></a>
 
-```
+```yaml
 myTCPListener:
   Type: 'AWS::ElasticLoadBalancingV2::Listener'
   Properties:
@@ -76,7 +76,7 @@ myTCPListener:
 #### JSON
 <a name="aws-properties-elasticloadbalancingv2-listener-forwardconfig--examples----json"></a>
 
-```
+```json
 {
     "myTCPListener": {
         "Type": "AWS::ElasticLoadBalancingV2::Listener",

@@ -10,10 +10,10 @@ URL-based descriptor source configuration, with credential provider configuratio
 <a name="API_DescriptorSourceFromUrl_Contents"></a>
 
  ** url **   <a name="agentregistrycontrol-Type-DescriptorSourceFromUrl-url"></a>
-The URL from which the descriptor content is retrieved.
+The URL from which the descriptor content is retrieved. For an agent skill source, specify an `s3://` URL of an object in a bucket in the same AWS Region as the registry. For a GitHub skill source, specify a GitHub folder URL in the form `https://host/owner/repo/tree/branch-or-tag/path`. Other descriptor sources use `https://` URLs.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
-Pattern: `https://.*`
+Pattern: `(https|s3)://.*`
 Required: Yes
 
  ** credentialProviderConfigurations **   <a name="agentregistrycontrol-Type-DescriptorSourceFromUrl-credentialProviderConfigurations"></a>

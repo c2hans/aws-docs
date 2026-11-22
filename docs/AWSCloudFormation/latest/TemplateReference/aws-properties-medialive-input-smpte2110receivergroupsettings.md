@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-input-smpte2110receivergroupsettings-syntax.json"></a>
 
-```
+```json
 {
   "[Smpte2110ReceiverGroups](#cfn-medialive-input-smpte2110receivergroupsettings-smpte2110receivergroups)" : {{[ Smpte2110ReceiverGroup, ... ]}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-input-smpte2110receivergroupsettings-syntax.yaml"></a>
 
-```
+```yaml
   [Smpte2110ReceiverGroups](#cfn-medialive-input-smpte2110receivergroupsettings-smpte2110receivergroups): {{
     - Smpte2110ReceiverGroup}}
 ```

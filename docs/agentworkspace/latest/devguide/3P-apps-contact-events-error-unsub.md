@@ -8,12 +8,12 @@ Unsubscribes the callback function from Error event in the Connect Customer agen
 
  **Signature**
 
-```
+```typescript
 offError(handler: ContactErrorHandler, contactId?: string)
 ```
 
  **Usage**
 
-```
+```typescript
 contactClient.offError(handler);
 ```

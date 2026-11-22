@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-image-imagescanningconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EcrConfiguration](#cfn-imagebuilder-image-imagescanningconfiguration-ecrconfiguration)" : {{EcrConfiguration}},
   "[ImageScanningEnabled](#cfn-imagebuilder-image-imagescanningconfiguration-imagescanningenabled)" : {{Boolean}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-image-imagescanningconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EcrConfiguration](#cfn-imagebuilder-image-imagescanningconfiguration-ecrconfiguration): {{
     EcrConfiguration}}
   [ImageScanningEnabled](#cfn-imagebuilder-image-imagescanningconfiguration-imagescanningenabled): {{Boolean}}

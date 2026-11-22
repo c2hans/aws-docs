@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-instancestorageconfig-kinesisstreamconfig-syntax.json"></a>
 
-```
+```json
 {
   "[StreamArn](#cfn-connect-instancestorageconfig-kinesisstreamconfig-streamarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-instancestorageconfig-kinesisstreamconfig-syntax.yaml"></a>
 
-```
+```yaml
   [StreamArn](#cfn-connect-instancestorageconfig-kinesisstreamconfig-streamarn): {{String}}
 ```
 

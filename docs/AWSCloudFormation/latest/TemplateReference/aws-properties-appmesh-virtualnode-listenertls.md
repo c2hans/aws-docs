@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-virtualnode-listenertls-syntax.json"></a>
 
-```
+```json
 {
   "[Certificate](#cfn-appmesh-virtualnode-listenertls-certificate)" : {{ListenerTlsCertificate}},
   "[Mode](#cfn-appmesh-virtualnode-listenertls-mode)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-virtualnode-listenertls-syntax.yaml"></a>
 
-```
+```yaml
   [Certificate](#cfn-appmesh-virtualnode-listenertls-certificate): {{
     ListenerTlsCertificate}}
   [Mode](#cfn-appmesh-virtualnode-listenertls-mode): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sagemaker-notebookinstance-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SageMaker::NotebookInstance",
   "Properties" : {
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sagemaker-notebookinstance-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SageMaker::NotebookInstance
 Properties:
   [AdditionalCodeRepositories](#cfn-sagemaker-notebookinstance-additionalcoderepositories): {{
@@ -234,7 +234,7 @@ The following example creates a notebook instance.
 #### JSON
 <a name="aws-resource-sagemaker-notebookinstance--examples--SageMaker_Notebook_Instance_Example--json"></a>
 
-```
+```json
 {
     "Description": "Create Basic Notebook",
     "Resources": {
@@ -291,7 +291,7 @@ The following example creates a notebook instance.
 #### YAML
 <a name="aws-resource-sagemaker-notebookinstance--examples--SageMaker_Notebook_Instance_Example--yaml"></a>
 
-```
+```yaml
 Description: "Create basic notebook instance"
 Resources:
   BasicNotebookInstance:

@@ -10,13 +10,13 @@ To ensure that you don't accidentally lose access to your instance, we recommend
 
 1. Identify and disable any unauthorized public SSH keys. The only key in the file should be the key you used to launch the AMI. The following command locates `authorized_keys` files:
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo find / -name "authorized_keys" -print -exec cat {} \;
    ```
 
 1. Disable password-based authentication for the root user. Open the `sshd_config` file and edit the `PermitRootLogin` line as follows:
 
-   ```
+   ```bash
    PermitRootLogin without-password
    ```
 
@@ -34,7 +34,7 @@ To ensure that you don't accidentally lose access to your instance, we recommend
 
 1. To prevent preconfigured remote logging, you should delete the existing configuration file and restart the `rsyslog` service. For example:
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo rm /etc/rsyslog.conf
    [ec2-user ~]$ sudo service rsyslog restart
    ```

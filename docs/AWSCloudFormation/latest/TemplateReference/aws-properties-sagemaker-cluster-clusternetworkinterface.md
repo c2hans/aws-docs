@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-cluster-clusternetworkinterface-syntax.json"></a>
 
-```
+```json
 {
   "[InterfaceType](#cfn-sagemaker-cluster-clusternetworkinterface-interfacetype)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-cluster-clusternetworkinterface-syntax.yaml"></a>
 
-```
+```yaml
   [InterfaceType](#cfn-sagemaker-cluster-clusternetworkinterface-interfacetype): {{String}}
 ```
 

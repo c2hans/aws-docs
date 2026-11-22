@@ -13,7 +13,7 @@ To help you distinguish between actions taken by your own IAM principals and tho
 
 The following example shows a CloudTrail event for an action performed by a product provider using temporary delegated access:
 
-```
+```json
 {
     "eventVersion": "1.09",
     "userIdentity": {

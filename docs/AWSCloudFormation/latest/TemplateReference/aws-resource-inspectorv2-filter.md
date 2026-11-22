@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-inspectorv2-filter-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::InspectorV2::Filter",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-inspectorv2-filter-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::InspectorV2::Filter
 Properties:
   [Description](#cfn-inspectorv2-filter-description): {{String}}

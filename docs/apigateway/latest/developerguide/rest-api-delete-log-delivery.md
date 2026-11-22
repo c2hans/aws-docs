@@ -15,7 +15,7 @@ To delete a delivery, you delete the delivery and then optionally delete the del
 
 **Delete the delivery**
 
-   ```
+   ```bash
    aws logs delete-delivery --id {{{delivery-id}}}
    ```
 
@@ -23,7 +23,7 @@ To delete a delivery, you delete the delivery and then optionally delete the del
 
 **(Optional) Delete the delivery source**
 
-   ```
+   ```bash
    aws logs delete-delivery-source --name {{my-apigw-source}}
    ```
 
@@ -31,7 +31,7 @@ To delete a delivery, you delete the delivery and then optionally delete the del
 
 **(Optional) Delete the delivery destination**
 
-   ```
+   ```bash
    aws logs delete-delivery-destination --name {{my-log-destination}}
    ```
 

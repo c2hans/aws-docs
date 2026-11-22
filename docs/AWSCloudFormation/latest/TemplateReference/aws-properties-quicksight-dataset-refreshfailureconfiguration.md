@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-refreshfailureconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EmailAlert](#cfn-quicksight-dataset-refreshfailureconfiguration-emailalert)" : {{RefreshFailureEmailAlert}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-refreshfailureconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EmailAlert](#cfn-quicksight-dataset-refreshfailureconfiguration-emailalert): {{
     RefreshFailureEmailAlert}}
 ```

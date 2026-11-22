@@ -27,7 +27,7 @@ Consider the following when using FireLens for Amazon ECS:
 If you use dependency condition parameters in container definitions with a FireLens configuration, ensure that each container has a `START` or `HEALTHY` condition requirement.
 + By default, FireLens adds the cluster and task definition name and the Amazon Resource Name (ARN) of the cluster as metadata keys to your stdout/stderr container logs. The following is an example of the metadata format.
 
-  ```
+  ```json
   "ecs_cluster": "{{cluster-name}}",
   "ecs_task_arn": "arn:aws:ecs:{{region}}:{{111122223333}}:task/{{cluster-name}}/{{f2ad7dba413f45ddb4EXAMPLE}}",
   "ecs_task_definition": "task-def-name:revision",
@@ -35,7 +35,7 @@ If you use dependency condition parameters in container definitions with a FireL
 
   If you do not want the metadata in your logs, set `enable-ecs-log-metadata` to `false` in the `firelensConfiguration` section of the task definition.
 
-  ```
+  ```json
   "firelensConfiguration":{
      "type":"fluentbit",
      "options":{

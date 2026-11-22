@@ -31,7 +31,7 @@ If you are using an OIDC IdP from Google, Facebook, or Amazon Cognito, don't cre
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": {
@@ -93,7 +93,7 @@ The values for the principal in the trust policy for the role are specific to an
 
 ****
 
-   ```
+   ```json
    {
          "Version":"2012-10-17",
          "Statement": [{
@@ -115,7 +115,7 @@ The values for the principal in the trust policy for the role are specific to an
 
 ****
 
-   ```
+   ```json
    {
          "Version":"2012-10-17",
          "Statement": [{
@@ -137,7 +137,7 @@ The values for the principal in the trust policy for the role are specific to an
 
 ****
 
-   ```
+   ```json
    {
          "Version":"2012-10-17",
          "Statement": [{
@@ -159,7 +159,7 @@ The values for the principal in the trust policy for the role are specific to an
 
 ****
 
-   ```
+   ```json
    {
          "Version":"2012-10-17",
          "Statement": [{
@@ -266,7 +266,7 @@ The following example trust policy limits access to the defined GitHub organizat
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -291,7 +291,7 @@ The following example trust policy limits access to the defined GitHub organizat
 
 The following example condition limits access to the defined GitHub organization and repository, but grants access to any branch within the repository.
 
-```
+```json
 "Condition": {
   "StringEquals": {
           "token.actions.githubusercontent.com:aud": "sts.amazonaws.com"
@@ -304,7 +304,7 @@ The following example condition limits access to the defined GitHub organization
 
 The following example condition limits access to any repository or branch within the defined GitHub organization. We recommend that you limit the condition key `token.actions.githubusercontent.com:sub` to a specific value that limits access to GitHub Actions from within your GitHub organization.
 
-```
+```json
 "Condition": {
   "StringEquals": {
           "token.actions.githubusercontent.com:aud": "sts.amazonaws.com"

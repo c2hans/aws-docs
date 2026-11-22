@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appconfig-extension-parameter-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-appconfig-extension-parameter-description)" : {{String}},
   "[Dynamic](#cfn-appconfig-extension-parameter-dynamic)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appconfig-extension-parameter-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-appconfig-extension-parameter-description): {{String}}
   [Dynamic](#cfn-appconfig-extension-parameter-dynamic): {{Boolean}}
   [Required](#cfn-appconfig-extension-parameter-required): {{Boolean}}

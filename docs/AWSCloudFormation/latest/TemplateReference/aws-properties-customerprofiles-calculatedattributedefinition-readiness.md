@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-calculatedattributedefinition-readiness-syntax.json"></a>
 
-```
+```json
 {
   "[Message](#cfn-customerprofiles-calculatedattributedefinition-readiness-message)" : {{String}},
   "[ProgressPercentage](#cfn-customerprofiles-calculatedattributedefinition-readiness-progresspercentage)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-calculatedattributedefinition-readiness-syntax.yaml"></a>
 
-```
+```yaml
   [Message](#cfn-customerprofiles-calculatedattributedefinition-readiness-message): {{String}}
   [ProgressPercentage](#cfn-customerprofiles-calculatedattributedefinition-readiness-progresspercentage): {{Integer}}
 ```

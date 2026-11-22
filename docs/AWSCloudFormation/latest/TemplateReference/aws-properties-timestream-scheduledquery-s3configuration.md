@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-timestream-scheduledquery-s3configuration-syntax.json"></a>
 
-```
+```json
 {
   "[BucketName](#cfn-timestream-scheduledquery-s3configuration-bucketname)" : {{String}},
   "[EncryptionOption](#cfn-timestream-scheduledquery-s3configuration-encryptionoption)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-timestream-scheduledquery-s3configuration-syntax.yaml"></a>
 
-```
+```yaml
   [BucketName](#cfn-timestream-scheduledquery-s3configuration-bucketname): {{String}}
   [EncryptionOption](#cfn-timestream-scheduledquery-s3configuration-encryptionoption): {{String}}
   [ObjectKeyPrefix](#cfn-timestream-scheduledquery-s3configuration-objectkeyprefix): {{String}}

@@ -100,7 +100,7 @@ aws autoscaling put-lifecycle-hook --lifecycle-hook-name {{my-termination-hook}}
 
 The topic receives a test notification with the following key-value pair.
 
-```
+```json
 "Event": "autoscaling:TEST_NOTIFICATION"
 ```
 

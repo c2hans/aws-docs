@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskdefinition-systemcontrol-syntax.json"></a>
 
-```
+```json
 {
   "[Namespace](#cfn-ecs-taskdefinition-systemcontrol-namespace)" : {{String}},
   "[Value](#cfn-ecs-taskdefinition-systemcontrol-value)" : {{String}}
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskdefinition-systemcontrol-syntax.yaml"></a>
 
-```
+```yaml
   [Namespace](#cfn-ecs-taskdefinition-systemcontrol-namespace): {{String}}
   [Value](#cfn-ecs-taskdefinition-systemcontrol-value): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-processorparameter-syntax.json"></a>
 
-```
+```json
 {
   "[ParameterName](#cfn-kinesisfirehose-deliverystream-processorparameter-parametername)" : {{String}},
   "[ParameterValue](#cfn-kinesisfirehose-deliverystream-processorparameter-parametervalue)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-processorparameter-syntax.yaml"></a>
 
-```
+```yaml
   [ParameterName](#cfn-kinesisfirehose-deliverystream-processorparameter-parametername): {{String}}
   [ParameterValue](#cfn-kinesisfirehose-deliverystream-processorparameter-parametervalue): {{String}}
 ```

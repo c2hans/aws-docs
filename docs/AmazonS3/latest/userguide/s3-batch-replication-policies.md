@@ -31,7 +31,7 @@ Your IAM role for Batch Replication needs different permissions, depending on wh
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement": [
@@ -87,7 +87,7 @@ Your IAM role for Batch Replication needs different permissions, depending on wh
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement": [
@@ -150,7 +150,7 @@ Your IAM role for Batch Replication needs different permissions, depending on wh
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement":[

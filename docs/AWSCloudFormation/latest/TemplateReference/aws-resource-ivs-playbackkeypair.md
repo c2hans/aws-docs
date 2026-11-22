@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ivs-playbackkeypair-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IVS::PlaybackKeyPair",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ivs-playbackkeypair-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IVS::PlaybackKeyPair
 Properties:
   [Name](#cfn-ivs-playbackkeypair-name): {{String}}
@@ -106,7 +106,7 @@ The following examples specify an Amazon IVS playback key pair.
 #### JSON
 <a name="aws-resource-ivs-playbackkeypair--examples--Playback_Key_Pair_Template_Examples--json"></a>
 
-```
+```json
  {
      "AWSTemplateFormatVersion": "2010-09-09",
      "Resources": {
@@ -143,7 +143,7 @@ The following examples specify an Amazon IVS playback key pair.
 #### YAML
 <a name="aws-resource-ivs-playbackkeypair--examples--Playback_Key_Pair_Template_Examples--yaml"></a>
 
-```
+```yaml
  AWSTemplateFormatVersion: 2010-09-09
  Resources:
   PlaybackKeyPair:

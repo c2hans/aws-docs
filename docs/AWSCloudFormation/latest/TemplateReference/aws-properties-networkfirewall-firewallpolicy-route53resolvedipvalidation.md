@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkfirewall-firewallpolicy-route53resolvedipvalidation-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-networkfirewall-firewallpolicy-route53resolvedipvalidation-action)" : {{String}},
   "[BypassDestinationValidationIPRanges](#cfn-networkfirewall-firewallpolicy-route53resolvedipvalidation-bypassdestinationvalidationipranges)" : {{[ Address, ... ]}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkfirewall-firewallpolicy-route53resolvedipvalidation-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-networkfirewall-firewallpolicy-route53resolvedipvalidation-action): {{String}}
   [BypassDestinationValidationIPRanges](#cfn-networkfirewall-firewallpolicy-route53resolvedipvalidation-bypassdestinationvalidationipranges): {{
     - Address}}

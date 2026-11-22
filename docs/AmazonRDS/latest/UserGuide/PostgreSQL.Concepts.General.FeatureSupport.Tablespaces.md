@@ -10,7 +10,7 @@ To create and use tablespaces with your RDS for PostgreSQL DB instance requires 
 
 If you specify a file name when you create a tablespace, the path prefix is `/rdsdbdata/db/base/tablespace`. The following example places tablespace files in `/rdsdbdata/db/base/tablespace/data`. This example assumes that a `dbadmin` user (role) exists and that it's been granted the `rds_superuser` role needed to work with tablespaces.
 
-```
+```sql
 postgres=> CREATE TABLESPACE act_data
   OWNER dbadmin
   LOCATION '/data';

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-odb-odbnetwork-kmsaccess-syntax.json"></a>
 
-```
+```json
 {
   "[DomainName](#cfn-odb-odbnetwork-kmsaccess-domainname)" : {{String}},
   "[Ipv4Addresses](#cfn-odb-odbnetwork-kmsaccess-ipv4addresses)" : {{[ String, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-odb-odbnetwork-kmsaccess-syntax.yaml"></a>
 
-```
+```yaml
   [DomainName](#cfn-odb-odbnetwork-kmsaccess-domainname): {{String}}
   [Ipv4Addresses](#cfn-odb-odbnetwork-kmsaccess-ipv4addresses): {{
     - String}}

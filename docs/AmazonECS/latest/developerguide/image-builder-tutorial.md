@@ -36,7 +36,7 @@ When using an Amazon ECS-optimized AMI as a parent image, you must clean up the 
 
 To clean up the image for future use, create a component that runs the following commands to stop the ecs-init package and Docker processes:
 
-```
+```bash
 sudo systemctl stop ecs
 sudo systemctl stop docker
 ```
@@ -45,7 +45,7 @@ Remove all the log files from the current instance to prevent preserving them wh
 
 To clean up the Amazon ECS specific data, run the following commands:
 
-```
+```bash
 sudo rm -rf /var/log/ecs/*
 sudo rm /var/lib/ecs/data/agent.db
 ```
@@ -71,7 +71,7 @@ You can replace `major`, `minor` and `patch` to specific values or you can use V
 
 The script accepts two optional arguments: `owner` and `platform`, with default values of “Amazon”, and “Windows” respectively. The valid values for the owner argument are: `Self`, `Shared`, `Amazon`, and `ThirdParty`. The valid values for the platform argument are `Windows` and `Linux`. For example, if you run the script with the `owner` argument set to `Amazon` and the `platform` set to `Linux`, the script generates a list of images published by Amazon including Amazon ECS-Optimized images.
 
-```
+```json
 import boto3
 import argparse
 
@@ -142,7 +142,7 @@ if __name__ == "__main__":
 
 An Image Builder image recipe is a blueprint that specifies the parent image and components required to achieve the intended configuration of the output image. You use the `AWS::ImageBuilder::ImageRecipe` resource. Set the `ParentImage` value to the image ARN. Use the versionless ARN of your desired image to ensure your pipeline always uses the most recent version of the image. For example, `arn:aws:imagebuilder:us-east-1:aws:image/amazon-linux-2023-ecs-optimized-x86/x.x.x`. The following `AWS::ImageBuilder::ImageRecipe` resource definition uses an Amazon managed image ARN:
 
-```
+```yaml
 ECSRecipe:
     Type: AWS::ImageBuilder::ImageRecipe
     Properties:
@@ -161,7 +161,7 @@ You can automate the creation of new images in your pipeline by setting the `Sch
 + Set `PipelineExecutionStartCondition` to `EXPRESSION_MATCH_AND_DEPENDENCY_UPDATES_AVAILABLE`. The build initiates only if dependent resources like the parent image or components, which use the wildcard ‘x’ in their semantic versions, are updated. This ensures the build incorporates the latest updates of those resources.
 + Set ScheduleExpression to the cron expression `(0 10 * * ? *)`.
 
-```
+```yaml
 ECSPipeline:
     Type: AWS::ImageBuilder::ImagePipeline
     Properties:

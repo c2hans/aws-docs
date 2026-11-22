@@ -42,7 +42,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Create
 **Note**
 Only the input parameter key names are logged. Parameter values aren't logged.
 
-```
+```json
 {
   "eventVersion": "1.01",
   "userIdentity": {
@@ -88,7 +88,7 @@ Only the input parameter key names are logged. Parameter values aren't logged.
 
 The following example shows that Alice called the `UpdateStack` operation on the `my-test-stack` stack:
 
-```
+```json
 {
   "eventVersion": "1.01",
   "userIdentity": {
@@ -127,7 +127,7 @@ The following example shows that Alice called the `UpdateStack` operation on the
 
 The following example shows that Alice called the `ListStacks` operation.
 
-```
+```json
 {
   "eventVersion": "1.01",
   "userIdentity": {
@@ -153,7 +153,7 @@ The following example shows that Alice called the `ListStacks` operation.
 
 The following example shows that Alice called the `DescribeStacks` operation on the `my-test-stack` stack.
 
-```
+```json
 {
   "eventVersion": "1.01",
   "userIdentity": {
@@ -181,7 +181,7 @@ The following example shows that Alice called the `DescribeStacks` operation on 
 
 The following example shows that Alice called the `DeleteStack` operation on the `my-test-stack` stack.
 
-```
+```json
 {
   "eventVersion": "1.01",
   "userIdentity": {

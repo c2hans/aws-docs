@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-quickconnect-quickconnectconfig-syntax.json"></a>
 
-```
+```json
 {
   "[FlowConfig](#cfn-connect-quickconnect-quickconnectconfig-flowconfig)" : {{FlowQuickConnectConfig}},
   "[PhoneConfig](#cfn-connect-quickconnect-quickconnectconfig-phoneconfig)" : {{PhoneNumberQuickConnectConfig}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-quickconnect-quickconnectconfig-syntax.yaml"></a>
 
-```
+```yaml
   [FlowConfig](#cfn-connect-quickconnect-quickconnectconfig-flowconfig): {{
     FlowQuickConnectConfig}}
   [PhoneConfig](#cfn-connect-quickconnect-quickconnectconfig-phoneconfig): {{

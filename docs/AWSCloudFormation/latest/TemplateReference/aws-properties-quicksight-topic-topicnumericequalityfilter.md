@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-topic-topicnumericequalityfilter-syntax.json"></a>
 
-```
+```json
 {
   "[Aggregation](#cfn-quicksight-topic-topicnumericequalityfilter-aggregation)" : {{String}},
   "[Constant](#cfn-quicksight-topic-topicnumericequalityfilter-constant)" : {{TopicSingularFilterConstant}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-topic-topicnumericequalityfilter-syntax.yaml"></a>
 
-```
+```yaml
   [Aggregation](#cfn-quicksight-topic-topicnumericequalityfilter-aggregation): {{String}}
   [Constant](#cfn-quicksight-topic-topicnumericequalityfilter-constant): {{
     TopicSingularFilterConstant}}

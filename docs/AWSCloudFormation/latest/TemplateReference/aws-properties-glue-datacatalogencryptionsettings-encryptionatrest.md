@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-datacatalogencryptionsettings-encryptionatrest-syntax.json"></a>
 
-```
+```json
 {
   "[CatalogEncryptionMode](#cfn-glue-datacatalogencryptionsettings-encryptionatrest-catalogencryptionmode)" : {{String}},
   "[CatalogEncryptionServiceRole](#cfn-glue-datacatalogencryptionsettings-encryptionatrest-catalogencryptionservicerole)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-datacatalogencryptionsettings-encryptionatrest-syntax.yaml"></a>
 
-```
+```yaml
   [CatalogEncryptionMode](#cfn-glue-datacatalogencryptionsettings-encryptionatrest-catalogencryptionmode): {{String}}
   [CatalogEncryptionServiceRole](#cfn-glue-datacatalogencryptionsettings-encryptionatrest-catalogencryptionservicerole): {{String}}
   [SseAwsKmsKeyId](#cfn-glue-datacatalogencryptionsettings-encryptionatrest-sseawskmskeyid): {{String}}

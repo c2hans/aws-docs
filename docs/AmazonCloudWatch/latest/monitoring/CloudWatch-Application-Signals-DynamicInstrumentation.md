@@ -100,7 +100,7 @@ Key parameters when creating a configuration:
 
 The following example creates a breakpoint on a Java method:
 
-```
+```bash
 aws application-signals create-instrumentation-configuration \
     --instrumentation-type BREAKPOINT \
     --service "my-service" \

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dms-endpoint-sybasesettings-syntax.json"></a>
 
-```
+```json
 {
   "[SecretsManagerAccessRoleArn](#cfn-dms-endpoint-sybasesettings-secretsmanageraccessrolearn)" : {{String}},
   "[SecretsManagerSecretId](#cfn-dms-endpoint-sybasesettings-secretsmanagersecretid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dms-endpoint-sybasesettings-syntax.yaml"></a>
 
-```
+```yaml
   [SecretsManagerAccessRoleArn](#cfn-dms-endpoint-sybasesettings-secretsmanageraccessrolearn): {{String}}
   [SecretsManagerSecretId](#cfn-dms-endpoint-sybasesettings-secretsmanagersecretid): {{String}}
 ```

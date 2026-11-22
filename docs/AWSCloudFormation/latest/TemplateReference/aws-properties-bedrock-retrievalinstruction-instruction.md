@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-retrievalinstruction-instruction-syntax.json"></a>
 
-```
+```json
 {
   "[AnswerFormat](#cfn-bedrock-retrievalinstruction-instruction-answerformat)" : {{String}},
   "[AnswerPolicy](#cfn-bedrock-retrievalinstruction-instruction-answerpolicy)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-retrievalinstruction-instruction-syntax.yaml"></a>
 
-```
+```yaml
   [AnswerFormat](#cfn-bedrock-retrievalinstruction-instruction-answerformat): {{String}}
   [AnswerPolicy](#cfn-bedrock-retrievalinstruction-instruction-answerpolicy): {{String}}
   [Persona](#cfn-bedrock-retrievalinstruction-instruction-persona): {{String}}

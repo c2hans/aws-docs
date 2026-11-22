@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-globalaccelerator-endpointgroup-portoverride-syntax.json"></a>
 
-```
+```json
 {
   "[EndpointPort](#cfn-globalaccelerator-endpointgroup-portoverride-endpointport)" : {{Integer}},
   "[ListenerPort](#cfn-globalaccelerator-endpointgroup-portoverride-listenerport)" : {{Integer}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-globalaccelerator-endpointgroup-portoverride-syntax.yaml"></a>
 
-```
+```yaml
   [EndpointPort](#cfn-globalaccelerator-endpointgroup-portoverride-endpointport): {{Integer}}
   [ListenerPort](#cfn-globalaccelerator-endpointgroup-portoverride-listenerport): {{Integer}}
 ```

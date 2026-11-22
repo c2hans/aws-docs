@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codebuild-fleet-targettrackingscalingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MetricType](#cfn-codebuild-fleet-targettrackingscalingconfiguration-metrictype)" : {{String}},
   "[TargetValue](#cfn-codebuild-fleet-targettrackingscalingconfiguration-targetvalue)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codebuild-fleet-targettrackingscalingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MetricType](#cfn-codebuild-fleet-targettrackingscalingconfiguration-metrictype): {{String}}
   [TargetValue](#cfn-codebuild-fleet-targettrackingscalingconfiguration-targetvalue): {{Number}}
 ```

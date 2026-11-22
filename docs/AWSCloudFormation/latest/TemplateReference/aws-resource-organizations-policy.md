@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-organizations-policy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Organizations::Policy",
   "Properties" : {
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-organizations-policy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Organizations::Policy
 Properties:
   [Content](#cfn-organizations-policy-content): {{Json}}
@@ -169,7 +169,7 @@ This example illustrates how to specify the organization policy content as a JSO
 #### JSON
 <a name="aws-resource-organizations-policy--examples--Organization_Policy_Content_Specified_as_a_JSON_Object--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "AWS CloudFormation Organizations Template Example",
@@ -202,7 +202,7 @@ This example illustrates how to specify the organization policy content as a JSO
 #### YAML
 <a name="aws-resource-organizations-policy--examples--Organization_Policy_Content_Specified_as_a_JSON_Object--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: AWS CloudFormation Organizations Template Example
 Resources:
@@ -230,7 +230,7 @@ This example illustrates how to specify the organization policy content as a JSO
 #### JSON
 <a name="aws-resource-organizations-policy--examples--Organization_Policy_Content_Specified_as_a_JSON_String--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "AWS CloudFormation Organizations Template Example",
@@ -251,7 +251,7 @@ This example illustrates how to specify the organization policy content as a JSO
 #### YAML
 <a name="aws-resource-organizations-policy--examples--Organization_Policy_Content_Specified_as_a_JSON_String--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: AWS CloudFormation Organizations Template Example
 Resources:
@@ -268,7 +268,7 @@ Resources:
 #### YAML
 <a name="aws-resource-organizations-policy--examples--Organization_Policy_Content_Specified_as_a_JSON_String--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: AWS CloudFormation Organizations Template Example
 Resources:

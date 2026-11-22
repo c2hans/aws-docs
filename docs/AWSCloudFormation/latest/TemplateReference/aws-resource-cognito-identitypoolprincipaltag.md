@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cognito-identitypoolprincipaltag-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Cognito::IdentityPoolPrincipalTag",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cognito-identitypoolprincipaltag-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Cognito::IdentityPoolPrincipalTag
 Properties:
   [IdentityPoolId](#cfn-cognito-identitypoolprincipaltag-identitypoolid): {{String}}
@@ -86,7 +86,7 @@ The following example maps the claim `aud` to principal tag `app_id` and the cla
 #### YAML
 <a name="aws-resource-cognito-identitypoolprincipaltag--examples--Creating_a_new_principal_tag_attribute_map_for_an_identity_pool--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Cognito Principal Tags Example
 Resources:

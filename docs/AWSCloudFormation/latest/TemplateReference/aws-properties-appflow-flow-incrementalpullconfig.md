@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-flow-incrementalpullconfig-syntax.json"></a>
 
-```
+```json
 {
   "[DatetimeTypeFieldName](#cfn-appflow-flow-incrementalpullconfig-datetimetypefieldname)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-flow-incrementalpullconfig-syntax.yaml"></a>
 
-```
+```yaml
   [DatetimeTypeFieldName](#cfn-appflow-flow-incrementalpullconfig-datetimetypefieldname): {{String}}
 ```
 

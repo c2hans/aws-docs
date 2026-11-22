@@ -162,7 +162,7 @@ Amazon EMR provides a managed Hadoop framework that makes it easy to process vas
 
 Use the following Python code to read S3 Storage Lens data with Spark:
 
-```
+```python
 from pyspark.sql import SparkSession
 
 spark = SparkSession.builder \

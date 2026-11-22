@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-eventtrigger-intent-syntax.json"></a>
 
-```
+```json
 {
   "[IntentDomain](#cfn-customerprofiles-eventtrigger-intent-intentdomain)" : {{String}},
   "[Type](#cfn-customerprofiles-eventtrigger-intent-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-eventtrigger-intent-syntax.yaml"></a>
 
-```
+```yaml
   [IntentDomain](#cfn-customerprofiles-eventtrigger-intent-intentdomain): {{String}}
   [Type](#cfn-customerprofiles-eventtrigger-intent-type): {{String}}
 ```

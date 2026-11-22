@@ -9,7 +9,7 @@ Lists the Athena or Data Catalog views in a list of `STRING` type values. Each v
 ## Synopsis
 <a name="synopsis"></a>
 
-```
+```sql
 SHOW VIEWS [IN {{database_name}}] [LIKE '{{regular_expression}}']
 ```
 
@@ -25,11 +25,11 @@ Filters the list of views to those that match the `regular_expression` you speci
 ## Examples
 <a name="examples"></a>
 
-```
+```sql
 SHOW VIEWS
 ```
 
-```
+```sql
 SHOW VIEWS IN marketing_analytics LIKE 'orders*'
 ```
 

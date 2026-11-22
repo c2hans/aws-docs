@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-waf-ipset-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::WAF::IPSet",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-waf-ipset-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::WAF::IPSet
 Properties:
   [IPSetDescriptors](#cfn-waf-ipset-ipsetdescriptors): {{
@@ -91,7 +91,7 @@ The following example defines a set of IP addresses for a web access control lis
 #### JSON
 <a name="aws-resource-waf-ipset--examples--Define_IP_Addresses--json"></a>
 
-```
+```json
 "MyIPSetDenylist": {
   "Type": "AWS::WAF::IPSet",
   "Properties": {
@@ -113,7 +113,7 @@ The following example defines a set of IP addresses for a web access control lis
 #### YAML
 <a name="aws-resource-waf-ipset--examples--Define_IP_Addresses--yaml"></a>
 
-```
+```yaml
 MyIPSetDenylist:
   Type: "AWS::WAF::IPSet"
   Properties:
@@ -135,7 +135,7 @@ The following example associates the `MyIPSetDenylist` IP Set with a web ACL rul
 #### JSON
 <a name="aws-resource-waf-ipset--examples--Associate_an_IPSet_with_a_Web_ACL_Rule--json"></a>
 
-```
+```json
 "MyIPSetRule" : {
   "Type": "AWS::WAF::Rule",
   "Properties": {
@@ -155,7 +155,7 @@ The following example associates the `MyIPSetDenylist` IP Set with a web ACL rul
 #### YAML
 <a name="aws-resource-waf-ipset--examples--Associate_an_IPSet_with_a_Web_ACL_Rule--yaml"></a>
 
-```
+```yaml
 MyIPSetRule:
   Type: "AWS::WAF::Rule"
   Properties:
@@ -177,7 +177,7 @@ The following example associates the `MyIPSetRule` rule with a web ACL. The web 
 #### JSON
 <a name="aws-resource-waf-ipset--examples--Create_a_Web_ACL--json"></a>
 
-```
+```json
 "MyWebACL": {
   "Type": "AWS::WAF::WebACL",
   "Properties": {
@@ -202,7 +202,7 @@ The following example associates the `MyIPSetRule` rule with a web ACL. The web 
 #### YAML
 <a name="aws-resource-waf-ipset--examples--Create_a_Web_ACL--yaml"></a>
 
-```
+```yaml
 MyWebACL:
   Type: "AWS::WAF::WebACL"
   Properties:

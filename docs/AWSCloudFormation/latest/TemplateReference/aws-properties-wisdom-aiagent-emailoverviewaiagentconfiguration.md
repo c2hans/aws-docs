@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-aiagent-emailoverviewaiagentconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EmailOverviewAIPromptId](#cfn-wisdom-aiagent-emailoverviewaiagentconfiguration-emailoverviewaipromptid)" : {{String}},
   "[Locale](#cfn-wisdom-aiagent-emailoverviewaiagentconfiguration-locale)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-aiagent-emailoverviewaiagentconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EmailOverviewAIPromptId](#cfn-wisdom-aiagent-emailoverviewaiagentconfiguration-emailoverviewaipromptid): {{String}}
   [Locale](#cfn-wisdom-aiagent-emailoverviewaiagentconfiguration-locale): {{String}}
 ```

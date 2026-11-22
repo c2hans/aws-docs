@@ -26,13 +26,13 @@ The `dbms_redact_upd_full_rdct_val` procedure has the following parameters.
 
 The following example changes the default redacted value to \* for the `CHAR` data type:
 
-```
+```sql
 EXEC rdsadmin.rdsadmin_util.dbms_redact_upd_full_rdct_val(p_char_val => '*');
 ```
 
 The following example changes the default redacted values for `NUMBER`, `DATE`, and `CHAR` data types:
 
-```
+```sql
 BEGIN
 rdsadmin.rdsadmin_util.dbms_redact_upd_full_rdct_val(
     p_number_val=>1,

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-audiodescription-syntax.json"></a>
 
-```
+```json
 {
   "[AudioDashRoles](#cfn-medialive-channel-audiodescription-audiodashroles)" : {{[ String, ... ]}},
   "[AudioNormalizationSettings](#cfn-medialive-channel-audiodescription-audionormalizationsettings)" : {{AudioNormalizationSettings}},
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-audiodescription-syntax.yaml"></a>
 
-```
+```yaml
   [AudioDashRoles](#cfn-medialive-channel-audiodescription-audiodashroles): {{
     - String}}
   [AudioNormalizationSettings](#cfn-medialive-channel-audiodescription-audionormalizationsettings): {{

@@ -32,7 +32,7 @@ Aurora DSQL considers batched nested-loop joins when the inner side of the join 
 
 If another plan shape is cheaper, such as a hash join or merge join, Aurora DSQL chooses that plan instead. To compare plan shapes during tuning, you can disable batched nested-loop joins for the current session:
 
-```
+```sql
 SET dsql.enable_batched_nestloop = off;
 ```
 
@@ -41,7 +41,7 @@ SET dsql.enable_batched_nestloop = off;
 
 The following query uses the sample `transaction` and `account` tables from [Reading Aurora DSQL EXPLAIN plans](reading-dsql-explain-plans.md):
 
-```
+```sql
 EXPLAIN
 SELECT t.account_id, a.balance
 FROM transaction t

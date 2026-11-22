@@ -72,7 +72,7 @@ For information about using other AWS SDKs, see the [AWS Developer Center](https
 
 The following Python code example permanently deletes a versioned object by deleting all of its versions.
 
-```
+```python
 def permanently_delete_object(bucket, object_key):
     """
     Permanently deletes a versioned object by deleting all of its versions.
@@ -101,7 +101,7 @@ def permanently_delete_object(bucket, object_key):
 **Example — Deleting a specific version**
 The following example deletes version `UIORUnfnd89493jJFJ` of `photo.gif`.
 
-```
+```http
 1. DELETE /photo.gif?versionId=UIORUnfnd89493jJFJ HTTP/1.1
 2. Host: bucket.s3.amazonaws.com
 3. Date: Wed, 12 Oct 2009 17:50:00 GMT

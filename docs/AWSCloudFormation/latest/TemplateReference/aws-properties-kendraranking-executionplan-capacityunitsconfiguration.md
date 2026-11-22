@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendraranking-executionplan-capacityunitsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[RescoreCapacityUnits](#cfn-kendraranking-executionplan-capacityunitsconfiguration-rescorecapacityunits)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendraranking-executionplan-capacityunitsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [RescoreCapacityUnits](#cfn-kendraranking-executionplan-capacityunitsconfiguration-rescorecapacityunits): {{Integer}}
 ```
 

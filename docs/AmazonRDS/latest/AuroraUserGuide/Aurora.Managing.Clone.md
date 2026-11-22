@@ -205,7 +205,7 @@ aws rds restore-db-cluster-to-point-in-time ^
 
  This example also includes the `--serverless-v2-scaling-configuration` option when creating the clone cluster. That way, you can add Aurora serverless instances to the clone even if the original cluster didn't use Aurora serverless.
 
-```
+```bash
 $ aws rds restore-db-cluster-to-point-in-time \
   --source-db-cluster-identifier tpch100g \
   --db-cluster-identifier tpch100g-clone \

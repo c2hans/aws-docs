@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspacesweb-dataprotectionsettings-redactionplaceholder-syntax.json"></a>
 
-```
+```json
 {
   "[RedactionPlaceHolderText](#cfn-workspacesweb-dataprotectionsettings-redactionplaceholder-redactionplaceholdertext)" : {{String}},
   "[RedactionPlaceHolderType](#cfn-workspacesweb-dataprotectionsettings-redactionplaceholder-redactionplaceholdertype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspacesweb-dataprotectionsettings-redactionplaceholder-syntax.yaml"></a>
 
-```
+```yaml
   [RedactionPlaceHolderText](#cfn-workspacesweb-dataprotectionsettings-redactionplaceholder-redactionplaceholdertext): {{String}}
   [RedactionPlaceHolderType](#cfn-workspacesweb-dataprotectionsettings-redactionplaceholder-redactionplaceholdertype): {{String}}
 ```

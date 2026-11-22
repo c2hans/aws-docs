@@ -220,7 +220,7 @@ This example shows a sample response for the `GetAssessment` API operation.
 #### Sample Response
 <a name="API_GetAssessment_Example_1_Response"></a>
 
-```
+```json
 {
     "assessment": {
         "arn": "arn:aws:auditmanager:us-east-1:111122223333:assessment/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",

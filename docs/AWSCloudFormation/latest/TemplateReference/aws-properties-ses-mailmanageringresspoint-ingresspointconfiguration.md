@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-mailmanageringresspoint-ingresspointconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[SecretArn](#cfn-ses-mailmanageringresspoint-ingresspointconfiguration-secretarn)" : {{String}},
   "[SmtpPassword](#cfn-ses-mailmanageringresspoint-ingresspointconfiguration-smtppassword)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-mailmanageringresspoint-ingresspointconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [SecretArn](#cfn-ses-mailmanageringresspoint-ingresspointconfiguration-secretarn): {{String}}
   [SmtpPassword](#cfn-ses-mailmanageringresspoint-ingresspointconfiguration-smtppassword): {{String}}
   [TlsAuthConfiguration](#cfn-ses-mailmanageringresspoint-ingresspointconfiguration-tlsauthconfiguration): {{

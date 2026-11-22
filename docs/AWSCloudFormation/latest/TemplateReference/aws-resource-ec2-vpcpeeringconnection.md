@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-vpcpeeringconnection-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::VPCPeeringConnection",
   "Properties" : {
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-vpcpeeringconnection-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::VPCPeeringConnection
 Properties:
   [AssumeRoleRegion](#cfn-ec2-vpcpeeringconnection-assumeroleregion): {{String}}
@@ -156,7 +156,7 @@ This example shows how to peer two VPCs in the same account. It uses an existing
 #### JSON
 <a name="aws-resource-ec2-vpcpeeringconnection--examples--Peer_VPCs_in_the_same_account--json"></a>
 
-```
+```json
 "Resources": {
     "myVpc": {
         "Type": "AWS::EC2::VPC",
@@ -193,7 +193,7 @@ This example shows how to peer two VPCs in the same account. It uses an existing
 #### YAML
 <a name="aws-resource-ec2-vpcpeeringconnection--examples--Peer_VPCs_in_the_same_account--yaml"></a>
 
-```
+```yaml
 Resources:
   myVpc:
     Type: AWS::EC2::VPC

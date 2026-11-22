@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-recommenderfilter-tagsitems-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-customerprofiles-recommenderfilter-tagsitems-key)" : {{String}},
   "[Value](#cfn-customerprofiles-recommenderfilter-tagsitems-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-recommenderfilter-tagsitems-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-customerprofiles-recommenderfilter-tagsitems-key): {{String}}
   [Value](#cfn-customerprofiles-recommenderfilter-tagsitems-value): {{String}}
 ```

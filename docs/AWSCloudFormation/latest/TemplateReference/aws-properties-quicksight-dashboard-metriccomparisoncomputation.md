@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-metriccomparisoncomputation-syntax.json"></a>
 
-```
+```json
 {
   "[ComputationId](#cfn-quicksight-dashboard-metriccomparisoncomputation-computationid)" : {{String}},
   "[FromValue](#cfn-quicksight-dashboard-metriccomparisoncomputation-fromvalue)" : {{MeasureField}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-metriccomparisoncomputation-syntax.yaml"></a>
 
-```
+```yaml
   [ComputationId](#cfn-quicksight-dashboard-metriccomparisoncomputation-computationid): {{String}}
   [FromValue](#cfn-quicksight-dashboard-metriccomparisoncomputation-fromvalue): {{
     MeasureField}}

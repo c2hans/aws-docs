@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/list-named-queries.html
 
 The `ListNamedQueryExample` shows how to obtain a list of named query IDs.
 
-```
+```java
 package aws.example.athena;
 
 import software.amazon.awssdk.regions.Region;

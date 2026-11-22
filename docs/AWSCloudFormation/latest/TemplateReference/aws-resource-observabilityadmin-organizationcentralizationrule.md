@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-observabilityadmin-organizationcentralizationrule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ObservabilityAdmin::OrganizationCentralizationRule",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-observabilityadmin-organizationcentralizationrule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ObservabilityAdmin::OrganizationCentralizationRule
 Properties:
   [Rule](#cfn-observabilityadmin-organizationcentralizationrule-rule): {{

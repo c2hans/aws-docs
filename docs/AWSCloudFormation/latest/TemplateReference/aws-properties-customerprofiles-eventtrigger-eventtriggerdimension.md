@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-eventtrigger-eventtriggerdimension-syntax.json"></a>
 
-```
+```json
 {
   "[ObjectAttributes](#cfn-customerprofiles-eventtrigger-eventtriggerdimension-objectattributes)" : {{[ ObjectAttribute, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-eventtrigger-eventtriggerdimension-syntax.yaml"></a>
 
-```
+```yaml
   [ObjectAttributes](#cfn-customerprofiles-eventtrigger-eventtriggerdimension-objectattributes): {{
     - ObjectAttribute}}
 ```

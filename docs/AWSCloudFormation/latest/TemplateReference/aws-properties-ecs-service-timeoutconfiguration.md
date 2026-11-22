@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-timeoutconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[IdleTimeoutSeconds](#cfn-ecs-service-timeoutconfiguration-idletimeoutseconds)" : {{Integer}},
   "[PerRequestTimeoutSeconds](#cfn-ecs-service-timeoutconfiguration-perrequesttimeoutseconds)" : {{Integer}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-timeoutconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [IdleTimeoutSeconds](#cfn-ecs-service-timeoutconfiguration-idletimeoutseconds): {{Integer}}
   [PerRequestTimeoutSeconds](#cfn-ecs-service-timeoutconfiguration-perrequesttimeoutseconds): {{Integer}}
 ```

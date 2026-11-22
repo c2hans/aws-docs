@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emr-cluster-volumespecification-syntax.json"></a>
 
-```
+```json
 {
   "[Iops](#cfn-emr-cluster-volumespecification-iops)" : {{Integer}},
   "[SizeInGB](#cfn-emr-cluster-volumespecification-sizeingb)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emr-cluster-volumespecification-syntax.yaml"></a>
 
-```
+```yaml
   [Iops](#cfn-emr-cluster-volumespecification-iops): {{Integer}}
   [SizeInGB](#cfn-emr-cluster-volumespecification-sizeingb): {{Integer}}
   [Throughput](#cfn-emr-cluster-volumespecification-throughput): {{Integer}}

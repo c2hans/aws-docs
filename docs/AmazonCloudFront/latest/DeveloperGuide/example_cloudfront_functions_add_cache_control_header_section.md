@@ -12,7 +12,7 @@ The following code example shows how to add a cache control header to a CloudFro
 **JavaScript runtime 2.0 for CloudFront Functions**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [CloudFront Functions examples](https://github.com/aws-samples/amazon-cloudfront-functions/tree/main/add-cache-control-header) repository.
 
-```
+```javascript
 async function handler(event) {
     var response = event.response;
     var headers = response.headers;

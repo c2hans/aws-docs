@@ -37,7 +37,7 @@ If you change the routing mode to `ROUTING_RULE_ONLY` or `API_MAPPING_ONLY`, any
 
 The following [update-domain-name](https://docs.aws.amazon.com/cli/latest/reference/apigatewayv2/update-domain-name.html) command updates a domain name to use the routing mode `ROUTING_RULE_THEN_API_MAPPING`:
 
-```
+```shell
 aws apigatewayv2 update-domain-name \
   --domain-name 'api.example.com' \
   --routing-mode "ROUTING_RULE_THEN_API_MAPPING"
@@ -70,7 +70,7 @@ The output will look like the following:
 
 The following [update-domain-name](https://docs.aws.amazon.com/cli/latest/reference/apigateway/update-domain-name.html) command updates a private custom domain name to use the routing mode `ROUTING_RULE_THEN_BASE_PATH_MAPPING`:
 
-```
+```shell
 aws apigateway update-domain-name \
   --domain-name 'private.example.com' \
   --patch-operations "op='replace',path='/routingMode',value='ROUTING_RULE_THEN_BASE_PATH_MAPPING'"

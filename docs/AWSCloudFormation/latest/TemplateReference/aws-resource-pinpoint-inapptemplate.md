@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-pinpoint-inapptemplate-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Pinpoint::InAppTemplate",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-pinpoint-inapptemplate-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Pinpoint::InAppTemplate
 Properties:
   [Content](#cfn-pinpoint-inapptemplate-content): {{

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-endpoint-capacitysize-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-sagemaker-endpoint-capacitysize-type)" : {{String}},
   "[Value](#cfn-sagemaker-endpoint-capacitysize-value)" : {{Integer}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-endpoint-capacitysize-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-sagemaker-endpoint-capacitysize-type): {{String}}
   [Value](#cfn-sagemaker-endpoint-capacitysize-value): {{Integer}}
 ```

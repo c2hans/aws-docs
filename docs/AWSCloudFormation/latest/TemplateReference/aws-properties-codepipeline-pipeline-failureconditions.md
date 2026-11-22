@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codepipeline-pipeline-failureconditions-syntax.json"></a>
 
-```
+```json
 {
   "[Conditions](#cfn-codepipeline-pipeline-failureconditions-conditions)" : {{[ Condition, ... ]}},
   "[Result](#cfn-codepipeline-pipeline-failureconditions-result)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codepipeline-pipeline-failureconditions-syntax.yaml"></a>
 
-```
+```yaml
   [Conditions](#cfn-codepipeline-pipeline-failureconditions-conditions): {{
     - Condition}}
   [Result](#cfn-codepipeline-pipeline-failureconditions-result): {{String}}

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-mssmoothoutputsettings-syntax.json"></a>
 
-```
+```json
 {
   "[H265PackagingType](#cfn-medialive-channel-mssmoothoutputsettings-h265packagingtype)" : {{String}},
   "[NameModifier](#cfn-medialive-channel-mssmoothoutputsettings-namemodifier)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-mssmoothoutputsettings-syntax.yaml"></a>
 
-```
+```yaml
   [H265PackagingType](#cfn-medialive-channel-mssmoothoutputsettings-h265packagingtype): {{String}}
   [NameModifier](#cfn-medialive-channel-mssmoothoutputsettings-namemodifier): {{String}}
 ```

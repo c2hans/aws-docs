@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amplifyuibuilder-form-fileuploaderfieldconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AcceptedFileTypes](#cfn-amplifyuibuilder-form-fileuploaderfieldconfig-acceptedfiletypes)" : {{[ String, ... ]}},
   "[AccessLevel](#cfn-amplifyuibuilder-form-fileuploaderfieldconfig-accesslevel)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amplifyuibuilder-form-fileuploaderfieldconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AcceptedFileTypes](#cfn-amplifyuibuilder-form-fileuploaderfieldconfig-acceptedfiletypes): {{
     - String}}
   [AccessLevel](#cfn-amplifyuibuilder-form-fileuploaderfieldconfig-accesslevel): {{String}}

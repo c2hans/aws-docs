@@ -8,13 +8,13 @@ Subscribes a callback function to be invoked when an attempt to extend the agent
 
  **Signature**
 
-```
+```typescript
 onSessionExtensionError(handler: SessionExtensionErrorHandler);
 ```
 
  **Usage**
 
-```
+```typescript
 const handler: SessionExtensionErrorHandler = (details: SessionExtensionErrorData) => {
     console.log("Failed to extend my session!", details);
 }

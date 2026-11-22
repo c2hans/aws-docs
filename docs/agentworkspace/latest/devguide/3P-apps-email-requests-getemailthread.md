@@ -37,7 +37,7 @@ getEmailThread(getEmailThreadParams: GetEmailThreadParams): Promise<{ contacts: 
 
  **Usage**
 
-```
+```typescript
 const inboundEmailData = await emailClient.getEmailData({
    contactId: sampleContactId, // The inbound email contact you've accepted (or is still connecting)
    activeContactId: sampleContactId, // The email contact you're actively working; in this example, its the same as the accepted inbound email

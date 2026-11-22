@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sagemaker-mlflowapp-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SageMaker::MlflowApp",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sagemaker-mlflowapp-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SageMaker::MlflowApp
 Properties:
   [ArtifactStoreUri](#cfn-sagemaker-mlflowapp-artifactstoreuri): {{String}}

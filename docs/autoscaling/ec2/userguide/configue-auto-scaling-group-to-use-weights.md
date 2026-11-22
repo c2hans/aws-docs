@@ -21,7 +21,7 @@ aws autoscaling create-auto-scaling-group --cli-input-json {{file://~/config.jso
 
 The `config.json` file contains the following content.
 
-```
+```json
 {
     "AutoScalingGroupName": "{{my-asg}}",
     "MixedInstancesPolicy": {
@@ -66,7 +66,7 @@ aws autoscaling update-auto-scaling-group --cli-input-json {{file://~/config.jso
 
 The `config.json` file contains the following content.
 
-```
+```json
 {
     "AutoScalingGroupName": "{{my-existing-asg}}",
     "MixedInstancesPolicy": {

@@ -35,7 +35,7 @@ Apache Iceberg V3 requires Amazon EMR release 7.12 or later. The variant data ty
 
 1. Create a cluster with the following configuration. To use this example, replace the `{{user input placeholders}}` with your own information.
 
-   ```
+   ```bash
    aws emr create-cluster --release-label emr-7.12.0 \
    --applications Name=Spark \
    --configurations file://configurations.json \
@@ -52,7 +52,7 @@ Apache Iceberg V3 requires Amazon EMR release 7.12 or later. The variant data ty
 
    `configurations.json`:
 
-   ```
+   ```json
    [{
    "Classification":"iceberg-defaults",
    "Properties":{"iceberg.enabled":"true"}
@@ -92,7 +92,7 @@ The following prerequisites are required to query tables with Spark on Amazon EM
 **Note**
 Apache Iceberg V3 requires Amazon EMR release 7.12 or later. The variant data type requires Amazon EMR release 8.0 or later. The geometry, geography, unknown, and nanosecond-precision timestamp data types require Amazon EMR release 8.1 or later.
 
-   ```
+   ```bash
    aws emr create-cluster --release-label emr-7.12.0 \
    --applications Name=Spark \
    --configurations file://configurations.json \
@@ -109,7 +109,7 @@ Apache Iceberg V3 requires Amazon EMR release 7.12 or later. The variant data ty
 
    `configurations.json`:
 
-   ```
+   ```json
    [{
    "Classification":"iceberg-defaults",
    "Properties":{"iceberg.enabled":"true"}

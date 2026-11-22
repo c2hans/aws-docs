@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-greengrassv2-componentversion-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::GreengrassV2::ComponentVersion",
   "Properties" : {
@@ -44,7 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-greengrassv2-componentversion-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::GreengrassV2::ComponentVersion
 Properties:
   [InlineRecipe](#cfn-greengrassv2-componentversion-inlinerecipe): {{String}}
@@ -75,7 +75,7 @@ You must specify either `InlineRecipe` or `LambdaFunction`.
 Application-specific metadata to attach to the component version. You can use tags in IAM policies to control access to AWS IoT Greengrass resources. You can also use tags to categorize your resources. For more information, see [Tag your AWS IoT Greengrass Version 2 resources](https://docs.aws.amazon.com/greengrass/v2/developerguide/tag-resources.html) in the *AWS IoT Greengrass V2 Developer Guide*.
 This `Json` property type is processed as a map of key-value pairs. It uses the following format, which is different from most `Tags` implementations in CloudFormation templates.
 
-```
+```json
 "Tags": {
     "KeyName0": "value",
     "KeyName1": "value",

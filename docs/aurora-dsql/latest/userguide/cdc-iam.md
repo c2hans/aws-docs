@@ -16,7 +16,7 @@ The CDC service role is separate from any resource-based policy on your Aurora D
 
 The IAM principal that calls the CDC stream API operations needs permissions for the relevant `dsql` actions and `iam:PassRole`. The `CreateStream` operation requires `iam:PassRole` because it passes the service role ARN to Aurora DSQL. The following is an example policy:
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -71,7 +71,7 @@ The service role is the IAM role that Aurora DSQL assumes to write CDC records t
 
 The trust policy must allow the Aurora DSQL service principal to assume the role. To protect against [confused deputy](https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html) attacks, use the `aws:SourceAccount` and `aws:SourceArn` condition keys.
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -106,7 +106,7 @@ To learn more about confused deputy prevention, see [Cross-service confused depu
 
 The permissions policy grants the service role access to write records to your Kinesis data stream. The following policy includes both Kinesis write permissions and AWS KMS permissions. The `KMSAccess` statement is only required if your Kinesis data stream uses an AWS KMS customer managed key, but you can include it preemptively so that adding a customer managed key later doesn't break your CDC stream.
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [

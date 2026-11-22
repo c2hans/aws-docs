@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotsitewise-assetmodel-attribute-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultValue](#cfn-iotsitewise-assetmodel-attribute-defaultvalue)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotsitewise-assetmodel-attribute-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultValue](#cfn-iotsitewise-assetmodel-attribute-defaultvalue): {{String}}
 ```
 

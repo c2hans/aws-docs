@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-guardrail-automatedreasoningpolicyconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ConfidenceThreshold](#cfn-bedrock-guardrail-automatedreasoningpolicyconfig-confidencethreshold)" : {{Number}},
   "[Policies](#cfn-bedrock-guardrail-automatedreasoningpolicyconfig-policies)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-guardrail-automatedreasoningpolicyconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ConfidenceThreshold](#cfn-bedrock-guardrail-automatedreasoningpolicyconfig-confidencethreshold): {{Number}}
   [Policies](#cfn-bedrock-guardrail-automatedreasoningpolicyconfig-policies): {{
     - String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-continuousdeploymentpolicy-trafficconfig-syntax.json"></a>
 
-```
+```json
 {
   "[SingleHeaderConfig](#cfn-cloudfront-continuousdeploymentpolicy-trafficconfig-singleheaderconfig)" : {{SingleHeaderConfig}},
   "[SingleWeightConfig](#cfn-cloudfront-continuousdeploymentpolicy-trafficconfig-singleweightconfig)" : {{SingleWeightConfig}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-continuousdeploymentpolicy-trafficconfig-syntax.yaml"></a>
 
-```
+```yaml
   [SingleHeaderConfig](#cfn-cloudfront-continuousdeploymentpolicy-trafficconfig-singleheaderconfig): {{
     SingleHeaderConfig}}
   [SingleWeightConfig](#cfn-cloudfront-continuousdeploymentpolicy-trafficconfig-singleweightconfig): {{

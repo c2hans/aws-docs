@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-missingdataconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[TreatmentOption](#cfn-quicksight-template-missingdataconfiguration-treatmentoption)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-missingdataconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [TreatmentOption](#cfn-quicksight-template-missingdataconfiguration-treatmentoption): {{String}}
 ```
 

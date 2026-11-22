@@ -37,6 +37,7 @@ Cross-Region read replicas with RDS for MariaDB are available in all Regions for
 <a name="Concepts.RDS_Fea_Regions_DB-eng.Feature.CrossRegionReadReplicas.my"></a>
 
 Cross-Region read replicas with RDS for MySQL are available in all Regions for the following versions:
++ RDS for MySQL 9.7 (All available versions)
 + RDS for MySQL 8.4 (All available versions)
 + RDS for MySQL 8.0 (All available versions)
 + RDS for MySQL 5.7 (All available versions)

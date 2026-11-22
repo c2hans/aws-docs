@@ -20,7 +20,7 @@ You must create an AMI with NitroTPM configured by using the [RegisterImage](htt
 
    The following is an example [register-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/register-image.html) command. For `--tpm-support`, specify `v2.0`. For `--boot-mode`, specify `uefi`.
 
-   ```
+   ```bash
    aws ec2 register-image \
        --name {{my-image}} \
        --boot-mode uefi \
@@ -32,7 +32,7 @@ You must create an AMI with NitroTPM configured by using the [RegisterImage](htt
 
    The following is an example for the [Register-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2Image.html) cmdlet.
 
-   ```
+   ```powershell
    $block = @{SnapshotId={{snap-0abcdef1234567890}}}
    Register-EC2Image `
        -Name {{my-image}} `

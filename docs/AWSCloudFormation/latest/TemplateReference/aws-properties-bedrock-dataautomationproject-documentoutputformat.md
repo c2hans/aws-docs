@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-dataautomationproject-documentoutputformat-syntax.json"></a>
 
-```
+```json
 {
   "[AdditionalFileFormat](#cfn-bedrock-dataautomationproject-documentoutputformat-additionalfileformat)" : {{DocumentOutputAdditionalFileFormat}},
   "[TextFormat](#cfn-bedrock-dataautomationproject-documentoutputformat-textformat)" : {{DocumentOutputTextFormat}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-dataautomationproject-documentoutputformat-syntax.yaml"></a>
 
-```
+```yaml
   [AdditionalFileFormat](#cfn-bedrock-dataautomationproject-documentoutputformat-additionalfileformat): {{
     DocumentOutputAdditionalFileFormat}}
   [TextFormat](#cfn-bedrock-dataautomationproject-documentoutputformat-textformat): {{

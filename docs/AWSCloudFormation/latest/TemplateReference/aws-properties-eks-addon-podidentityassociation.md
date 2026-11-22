@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-addon-podidentityassociation-syntax.json"></a>
 
-```
+```json
 {
   "[RoleArn](#cfn-eks-addon-podidentityassociation-rolearn)" : {{String}},
   "[ServiceAccount](#cfn-eks-addon-podidentityassociation-serviceaccount)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-addon-podidentityassociation-syntax.yaml"></a>
 
-```
+```yaml
   [RoleArn](#cfn-eks-addon-podidentityassociation-rolearn): {{String}}
   [ServiceAccount](#cfn-eks-addon-podidentityassociation-serviceaccount): {{String}}
 ```

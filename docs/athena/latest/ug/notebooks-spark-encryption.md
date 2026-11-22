@@ -64,7 +64,7 @@ You can use the AWS CLI to enable encryption when you launch a session by specif
 
 1. Use a command like the following to create an engine configuration JSON object that specifies Spark encryption properties.
 
-   ```
+   ```JSON
    ENGINE_CONFIGURATION_JSON=$(
      cat <<EOF
    {
@@ -83,7 +83,7 @@ You can use the AWS CLI to enable encryption when you launch a session by specif
 
 1. In the AWS CLI, use the `athena start-session` command and pass in the JSON object that you created to the `--engine-configuration` argument, as in the following example:
 
-   ```
+   ```shell
    aws athena start-session \
       --region "{{region}}" \
       --work-group "{{your-work-group}}" \
@@ -92,7 +92,7 @@ You can use the AWS CLI to enable encryption when you launch a session by specif
 
 For Apache Spark version 3.5 sessions, you enable encryption by specifying the same encryption properties in the `Classifications` element of the engine configuration instead of in the `SparkProperties` element. The encryption behavior is identical to earlier versions: Athena encrypts data in transit between Spark nodes and data at rest stored locally by Spark, using AES 256-bit encryption with the `HmacSHA384` algorithm. Use a command like the following, in which the classification `Name` must be `spark-defaults`.
 
-```
+```shell
 aws athena start-session \
    --region "{{region}}" \
    --work-group "{{your-work-group}}" \
@@ -110,7 +110,7 @@ aws athena start-session \
 
 You can also enable Spark encryption when you create a work group. Specify the same encryption properties in the `Classifications` element of the `EngineConfiguration` in the work group configuration, as in the following example. Sessions that you later start in this work group inherit the encryption configuration.
 
-```
+```shell
 aws athena create-work-group \
    --region "{{region}}" \
    --name "{{your-work-group}}" \

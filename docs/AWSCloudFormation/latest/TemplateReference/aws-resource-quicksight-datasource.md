@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-quicksight-datasource-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::QuickSight::DataSource",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-quicksight-datasource-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::QuickSight::DataSource
 Properties:
   [AlternateDataSourceParameters](#cfn-quicksight-datasource-alternatedatasourceparameters): {{

@@ -115,7 +115,7 @@ https://autoscaling.amazonaws.com/?Action=DescribeScalingActivities
 #### Sample Response
 <a name="API_DescribeScalingActivities_Example_1_Response"></a>
 
-```
+```xml
 <DescribeScalingActivitiesResponse xmlns="https://ec2.amazonaws.com/doc/2011-01-01/">
   <DescribeScalingActivitiesResult>
     <Activities>

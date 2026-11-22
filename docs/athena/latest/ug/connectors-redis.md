@@ -101,7 +101,7 @@ The Redis connector supports [passthrough queries](federated-query-passthrough.m
 
 To create passthrough queries with Redis, use the following syntax:
 
-```
+```sql
 SELECT * FROM TABLE(
         system.script(
             script => 'return redis.[call|pcall]({{query_script}})',
@@ -112,7 +112,7 @@ SELECT * FROM TABLE(
 
 The following example runs a Lua script to get the value at key `l:a`.
 
-```
+```sql
 SELECT * FROM TABLE(
         system.script(
             script => 'return redis.call("GET", KEYS[1])',

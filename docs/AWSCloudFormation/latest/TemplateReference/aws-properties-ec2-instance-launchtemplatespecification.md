@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-instance-launchtemplatespecification-syntax.json"></a>
 
-```
+```json
 {
   "[LaunchTemplateId](#cfn-ec2-instance-launchtemplatespecification-launchtemplateid)" : {{String}},
   "[LaunchTemplateName](#cfn-ec2-instance-launchtemplatespecification-launchtemplatename)" : {{String}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-instance-launchtemplatespecification-syntax.yaml"></a>
 
-```
+```yaml
   [LaunchTemplateId](#cfn-ec2-instance-launchtemplatespecification-launchtemplateid): {{String}}
   [LaunchTemplateName](#cfn-ec2-instance-launchtemplatespecification-launchtemplatename): {{String}}
   [Version](#cfn-ec2-instance-launchtemplatespecification-version): {{String}}
@@ -74,7 +74,7 @@ This example creates a launch template and uses it to launch a new instance.
 #### YAML
 <a name="aws-properties-ec2-instance-launchtemplatespecification--examples--Launch_an_instance_using_a_launch_template--yaml"></a>
 
-```
+```yaml
 Resources:
   myInstance:
     Type: 'AWS::EC2::Instance'

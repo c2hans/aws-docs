@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cases-caserule-booleancondition-syntax.json"></a>
 
-```
+```json
 {
   "[EqualTo](#cfn-cases-caserule-booleancondition-equalto)" : {{BooleanOperands}},
   "[NotEqualTo](#cfn-cases-caserule-booleancondition-notequalto)" : {{BooleanOperands}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cases-caserule-booleancondition-syntax.yaml"></a>
 
-```
+```yaml
   [EqualTo](#cfn-cases-caserule-booleancondition-equalto): {{
     BooleanOperands}}
   [NotEqualTo](#cfn-cases-caserule-booleancondition-notequalto): {{

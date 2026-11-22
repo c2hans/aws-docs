@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codebuild-fleet-proxyconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultBehavior](#cfn-codebuild-fleet-proxyconfiguration-defaultbehavior)" : {{String}},
   "[OrderedProxyRules](#cfn-codebuild-fleet-proxyconfiguration-orderedproxyrules)" : {{[ FleetProxyRule, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codebuild-fleet-proxyconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultBehavior](#cfn-codebuild-fleet-proxyconfiguration-defaultbehavior): {{String}}
   [OrderedProxyRules](#cfn-codebuild-fleet-proxyconfiguration-orderedproxyrules): {{
     - FleetProxyRule}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-connection-gluepropertiesinput-syntax.json"></a>
 
-```
+```json
 {
   "[GlueConnectionInput](#cfn-datazone-connection-gluepropertiesinput-glueconnectioninput)" : {{GlueConnectionInput}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-connection-gluepropertiesinput-syntax.yaml"></a>
 
-```
+```yaml
   [GlueConnectionInput](#cfn-datazone-connection-gluepropertiesinput-glueconnectioninput): {{
     GlueConnectionInput}}
 ```

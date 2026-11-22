@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 
 The `03-GetItem-Test.cs` program performs `GetItem` operations on `TryDaxTable`.
 
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;

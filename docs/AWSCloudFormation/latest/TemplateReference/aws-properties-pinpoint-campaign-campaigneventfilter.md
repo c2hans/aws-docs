@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pinpoint-campaign-campaigneventfilter-syntax.json"></a>
 
-```
+```json
 {
   "[Dimensions](#cfn-pinpoint-campaign-campaigneventfilter-dimensions)" : {{EventDimensions}},
   "[FilterType](#cfn-pinpoint-campaign-campaigneventfilter-filtertype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pinpoint-campaign-campaigneventfilter-syntax.yaml"></a>
 
-```
+```yaml
   [Dimensions](#cfn-pinpoint-campaign-campaigneventfilter-dimensions): {{
     EventDimensions}}
   [FilterType](#cfn-pinpoint-campaign-campaigneventfilter-filtertype): {{String}}

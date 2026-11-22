@@ -12,7 +12,7 @@ Use the steps outlined below to add tags to all imported servers in CMF.
 
 1. Use the following script to add tags to all imported servers in CMF:
 
-   ```
+   ```python
    # Version: 09APR2021.01
 
    from __future__ import print_function

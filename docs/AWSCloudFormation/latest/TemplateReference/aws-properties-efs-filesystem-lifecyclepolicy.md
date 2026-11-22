@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-efs-filesystem-lifecyclepolicy-syntax.json"></a>
 
-```
+```json
 {
   "[TransitionToArchive](#cfn-efs-filesystem-lifecyclepolicy-transitiontoarchive)" : {{String}},
   "[TransitionToIA](#cfn-efs-filesystem-lifecyclepolicy-transitiontoia)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-efs-filesystem-lifecyclepolicy-syntax.yaml"></a>
 
-```
+```yaml
   [TransitionToArchive](#cfn-efs-filesystem-lifecyclepolicy-transitiontoarchive): {{String}}
   [TransitionToIA](#cfn-efs-filesystem-lifecyclepolicy-transitiontoia): {{String}}
   [TransitionToPrimaryStorageClass](#cfn-efs-filesystem-lifecyclepolicy-transitiontoprimarystorageclass): {{String}}

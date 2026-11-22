@@ -9,7 +9,7 @@ The `ALTER VIEW` statement allows changing various properties of an existing vie
 ## Supported syntax
 <a name="alter-view-supported-syntax"></a>
 
-```
+```sql
 ALTER VIEW [ IF EXISTS ] name ALTER [ COLUMN ] column_name SET DEFAULT expression
 ALTER VIEW [ IF EXISTS ] name ALTER [ COLUMN ] column_name DROP DEFAULT
 ALTER VIEW [ IF EXISTS ] name OWNER TO { new_owner | CURRENT_ROLE | CURRENT_USER | SESSION_USER }
@@ -63,13 +63,13 @@ Resets a view option to its default value.
 
 Renaming the view `foo` to `bar`:
 
-```
+```sql
 ALTER VIEW foo RENAME TO bar;
 ```
 
 Attaching a default column value to an updatable view:
 
-```
+```sql
 CREATE TABLE base_table (id int, ts timestamptz);
 CREATE VIEW a_view AS SELECT * FROM base_table;
 ALTER VIEW a_view ALTER COLUMN ts SET DEFAULT now();

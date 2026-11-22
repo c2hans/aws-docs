@@ -82,7 +82,7 @@ https://autoscaling.amazonaws.com/?Action=DescribeLaunchConfigurations
 #### Sample Response
 <a name="API_DescribeLaunchConfigurations_Example_1_Response"></a>
 
-```
+```xml
 <DescribeLaunchConfigurationsResponse xmlns="https://autoscaling.amazonaws.com/doc/2011-01-01/">
   <DescribeLaunchConfigurationsResult>
     <LaunchConfigurations>

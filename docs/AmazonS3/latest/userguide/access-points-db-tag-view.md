@@ -50,7 +50,7 @@ This section provides an example of how to view tags applied to an access point 
 
 This example shows you how to view tags applied to an access point for directory buckets by using the AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.s3control.S3ControlClient;
 import software.amazon.awssdk.services.s3control.model.ListTagsForResourceRequest;
@@ -88,7 +88,7 @@ The following CLI example shows you how to view tags applied to an access point 
 
 **Request:**
 
-```
+```bash
 aws s3control list-tags-for-resource \
 --account-id {{111122223333}} \
 --resource-arn arn:aws::s3express:{{region}}:{{444455556666}}:bucket/prefix--{{use1-az4}}--x-s3 \
@@ -96,7 +96,7 @@ aws s3control list-tags-for-resource \
 
 **Response - tags present:**
 
-```
+```json
 {
   "Tags": [
       {
@@ -117,7 +117,7 @@ aws s3control list-tags-for-resource \
 
 **Response - no tags present:**
 
-```
+```json
 {
   "Tags": []
 }

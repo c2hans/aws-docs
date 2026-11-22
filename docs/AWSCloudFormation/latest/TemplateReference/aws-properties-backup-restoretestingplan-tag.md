@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-backup-restoretestingplan-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-backup-restoretestingplan-tag-key)" : {{String}},
   "[Value](#cfn-backup-restoretestingplan-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-backup-restoretestingplan-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-backup-restoretestingplan-tag-key): {{String}}
   [Value](#cfn-backup-restoretestingplan-tag-value): {{String}}
 ```

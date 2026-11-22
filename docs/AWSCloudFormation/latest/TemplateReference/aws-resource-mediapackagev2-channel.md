@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-mediapackagev2-channel-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MediaPackageV2::Channel",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-mediapackagev2-channel-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MediaPackageV2::Channel
 Properties:
   [ChannelGroupName](#cfn-mediapackagev2-channel-channelgroupname): {{String}}

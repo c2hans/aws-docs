@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-rds-customdbengineversion-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RDS::CustomDBEngineVersion",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-rds-customdbengineversion-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RDS::CustomDBEngineVersion
 Properties:
   [DatabaseInstallationFiles](#cfn-rds-customdbengineversion-databaseinstallationfiles): {{
@@ -211,7 +211,7 @@ The following example specifies a custom DB engine version.
 #### JSON
 <a name="aws-resource-rds-customdbengineversion--examples--Authentication_details--json"></a>
 
-```
+```json
 "RDSCustomDBEngineVersion":{
    "Type":"AWS::RDS::CustomDBEngineVersion",
    "Properties":{
@@ -229,7 +229,7 @@ The following example specifies a custom DB engine version.
 #### YAML
 <a name="aws-resource-rds-customdbengineversion--examples--Authentication_details--yaml"></a>
 
-```
+```yaml
 CustomDBEngineVersion:
   Type: AWS::RDS::CustomDBEngineVersion
   Properties:

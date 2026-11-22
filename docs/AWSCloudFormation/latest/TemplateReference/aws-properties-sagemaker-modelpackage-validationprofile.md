@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelpackage-validationprofile-syntax.json"></a>
 
-```
+```json
 {
   "[ProfileName](#cfn-sagemaker-modelpackage-validationprofile-profilename)" : {{String}},
   "[TransformJobDefinition](#cfn-sagemaker-modelpackage-validationprofile-transformjobdefinition)" : {{TransformJobDefinition}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelpackage-validationprofile-syntax.yaml"></a>
 
-```
+```yaml
   [ProfileName](#cfn-sagemaker-modelpackage-validationprofile-profilename): {{String}}
   [TransformJobDefinition](#cfn-sagemaker-modelpackage-validationprofile-transformjobdefinition): {{
     TransformJobDefinition}}

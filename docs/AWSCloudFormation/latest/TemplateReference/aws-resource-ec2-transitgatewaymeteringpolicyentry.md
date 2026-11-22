@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-transitgatewaymeteringpolicyentry-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::TransitGatewayMeteringPolicyEntry",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-transitgatewaymeteringpolicyentry-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::TransitGatewayMeteringPolicyEntry
 Properties:
   [DestinationCidrBlock](#cfn-ec2-transitgatewaymeteringpolicyentry-destinationcidrblock): {{String}}

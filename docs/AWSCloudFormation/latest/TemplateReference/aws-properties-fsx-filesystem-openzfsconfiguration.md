@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-filesystem-openzfsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AutomaticBackupRetentionDays](#cfn-fsx-filesystem-openzfsconfiguration-automaticbackupretentiondays)" : {{Integer}},
   "[CopyTagsToBackups](#cfn-fsx-filesystem-openzfsconfiguration-copytagstobackups)" : {{Boolean}},
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-filesystem-openzfsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AutomaticBackupRetentionDays](#cfn-fsx-filesystem-openzfsconfiguration-automaticbackupretentiondays): {{Integer}}
   [CopyTagsToBackups](#cfn-fsx-filesystem-openzfsconfiguration-copytagstobackups): {{Boolean}}
   [CopyTagsToVolumes](#cfn-fsx-filesystem-openzfsconfiguration-copytagstovolumes): {{Boolean}}

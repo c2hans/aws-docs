@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpoolregionalconfigurationattachment-pretokengenerationconfig-syntax.json"></a>
 
-```
+```json
 {
   "[LambdaArn](#cfn-cognito-userpoolregionalconfigurationattachment-pretokengenerationconfig-lambdaarn)" : {{String}},
   "[LambdaVersion](#cfn-cognito-userpoolregionalconfigurationattachment-pretokengenerationconfig-lambdaversion)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpoolregionalconfigurationattachment-pretokengenerationconfig-syntax.yaml"></a>
 
-```
+```yaml
   [LambdaArn](#cfn-cognito-userpoolregionalconfigurationattachment-pretokengenerationconfig-lambdaarn): {{String}}
   [LambdaVersion](#cfn-cognito-userpoolregionalconfigurationattachment-pretokengenerationconfig-lambdaversion): {{String}}
 ```

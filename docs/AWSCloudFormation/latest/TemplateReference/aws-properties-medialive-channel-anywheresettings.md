@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-anywheresettings-syntax.json"></a>
 
-```
+```json
 {
   "[ChannelPlacementGroupId](#cfn-medialive-channel-anywheresettings-channelplacementgroupid)" : {{String}},
   "[ClusterId](#cfn-medialive-channel-anywheresettings-clusterid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-anywheresettings-syntax.yaml"></a>
 
-```
+```yaml
   [ChannelPlacementGroupId](#cfn-medialive-channel-anywheresettings-channelplacementgroupid): {{String}}
   [ClusterId](#cfn-medialive-channel-anywheresettings-clusterid): {{String}}
 ```

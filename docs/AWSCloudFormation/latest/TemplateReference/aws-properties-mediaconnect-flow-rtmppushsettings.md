@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-flow-rtmppushsettings-syntax.json"></a>
 
-```
+```json
 {
   "[NamingConfiguration](#cfn-mediaconnect-flow-rtmppushsettings-namingconfiguration)" : {{RtmpPushNamingConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-flow-rtmppushsettings-syntax.yaml"></a>
 
-```
+```yaml
   [NamingConfiguration](#cfn-mediaconnect-flow-rtmppushsettings-namingconfiguration): {{
     RtmpPushNamingConfiguration}}
 ```

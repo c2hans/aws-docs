@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-responseinspectionheader-syntax.json"></a>
 
-```
+```json
 {
   "[FailureValues](#cfn-wafv2-webacl-responseinspectionheader-failurevalues)" : {{[ String, ... ]}},
   "[Name](#cfn-wafv2-webacl-responseinspectionheader-name)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-responseinspectionheader-syntax.yaml"></a>
 
-```
+```yaml
   [FailureValues](#cfn-wafv2-webacl-responseinspectionheader-failurevalues): {{
     - String}}
   [Name](#cfn-wafv2-webacl-responseinspectionheader-name): {{String}}

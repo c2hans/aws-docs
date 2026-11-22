@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/create-tabl
 ## Supported syntax
 <a name="create-table-supported-syntax"></a>
 
-```
+```sql
 CREATE TABLE [ IF NOT EXISTS ] table_name ( [
   { column_name data_type [ STORAGE { PLAIN | EXTERNAL | EXTENDED | MAIN | DEFAULT } ] [ column_constraint [ ... ] ]
     | table_constraint
@@ -164,7 +164,7 @@ In Aurora DSQL, the `DEFERRABLE` option applies to foreign key constraints only.
 
 Assume you have a table storing products:
 
-```
+```sql
 CREATE TABLE products (
     product_no integer PRIMARY KEY,
     name text,
@@ -174,7 +174,7 @@ CREATE TABLE products (
 
 Now you want a table storing orders of those products. You want to ensure that the orders table contains references to products that actually exist. Define a foreign key constraint in the orders table that references the products table:
 
-```
+```sql
 CREATE TABLE orders (
     order_id integer PRIMARY KEY,
     product_no integer REFERENCES products (product_no),
@@ -188,7 +188,7 @@ In this situation, the orders table is the *referencing* table and the products 
 
 You can shorten the above command to:
 
-```
+```sql
 CREATE TABLE orders (
     order_id integer PRIMARY KEY,
     product_no integer REFERENCES products,
@@ -200,7 +200,7 @@ If you omit the column list, Aurora DSQL uses the primary key of the referenced 
 
 You can assign your own name for a foreign key constraint in the usual way:
 
-```
+```sql
 CREATE TABLE orders (
     order_id integer PRIMARY KEY,
     product_no integer CONSTRAINT fk_product REFERENCES products,
@@ -210,7 +210,7 @@ CREATE TABLE orders (
 
 A foreign key can also constrain and reference a group of columns. It then needs to be written in table constraint form:
 
-```
+```sql
 CREATE TABLE inventory (
     warehouse_id integer,
     product_no integer,
@@ -230,7 +230,7 @@ The number and types of the constrained columns need to be compatible with the n
 
 A table can have more than one foreign key constraint. This is used to implement many-to-many relationships between tables:
 
-```
+```sql
 CREATE TABLE order_items (
     product_no integer REFERENCES products,
     order_id integer REFERENCES orders,
@@ -241,7 +241,7 @@ CREATE TABLE order_items (
 
 A foreign key constraint can reference the same table it belongs to. This is called a *self-referential* foreign key. For example, if you want rows of a table to represent nodes of a tree structure, you could write:
 
-```
+```sql
 CREATE TABLE tree (
     node_id integer PRIMARY KEY,
     parent_id integer REFERENCES tree,
@@ -253,7 +253,7 @@ A top-level node would have NULL `parent_id`, while non-NULL `parent_id` entries
 
 You can specify referential actions to control what happens when a referenced row is deleted or updated. The following example uses `ON DELETE RESTRICT` to prevent deletion of a product that is still referenced by an order:
 
-```
+```sql
 CREATE TABLE orders (
     order_id integer PRIMARY KEY,
     product_no integer REFERENCES products ON DELETE RESTRICT,
@@ -265,7 +265,7 @@ With `RESTRICT`, attempting to delete a product that has orders referencing it p
 
 To create a foreign key that can be deferred to the end of a transaction, use the `DEFERRABLE` option. This is useful when you need to insert rows in both tables within the same transaction regardless of order:
 
-```
+```sql
 CREATE TABLE orders (
     order_id integer PRIMARY KEY,
     product_no integer REFERENCES products DEFERRABLE INITIALLY DEFERRED,
@@ -277,7 +277,7 @@ With `DEFERRABLE INITIALLY DEFERRED`, the constraint isn't checked until commit 
 
 To use `MATCH FULL` with a composite foreign key, which requires that all referencing columns are null together or all non-null together:
 
-```
+```sql
 CREATE TABLE shipments (
     shipment_id integer PRIMARY KEY,
     warehouse_id integer,

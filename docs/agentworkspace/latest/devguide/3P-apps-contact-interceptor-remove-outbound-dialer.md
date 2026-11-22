@@ -8,7 +8,7 @@ Unregisters an interceptor that you registered with `addOpenOutboundDialerInterc
 
 **Signature**
 
-```
+```typescript
 removeOpenOutboundDialerInterceptor(
   interceptor: Interceptor<ContactInterceptorContext>,
   contactId?: string
@@ -17,7 +17,7 @@ removeOpenOutboundDialerInterceptor(
 
 **Usage**
 
-```
+```typescript
 await service.removeOpenOutboundDialerInterceptor(myInterceptor);
 ```
 

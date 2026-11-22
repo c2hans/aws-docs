@@ -45,7 +45,7 @@ To configure an external source with delayed replication, use the [mysql.rds\_se
 
 **Example (default channel):**
 
-```
+```sql
 CALL mysql.rds_set_external_source_with_delay(
   '{{source-host.example.com}}',
   3306,
@@ -59,7 +59,7 @@ CALL mysql.rds_set_external_source_with_delay(
 
 **Example (specific channel):**
 
-```
+```sql
 CALL mysql.rds_set_external_source_with_delay_for_channel(
   '{{source-host.example.com}}',
   3306,
@@ -124,13 +124,13 @@ To modify delayed replication for an existing read replica, run the [mysql.rds\_
 
 **Example (default channel):**
 
-```
+```sql
 CALL mysql.rds_set_source_delay(3600);
 ```
 
 **Example (specific channel):**
 
-```
+```sql
 CALL mysql.rds_set_source_delay_for_channel(3600, '{{channel_1}}');
 ```
 
@@ -152,7 +152,7 @@ After stopping replication to the read replica, you can start replication and th
 
 **Example:**
 
-```
+```sql
 CALL mysql.rds_start_replication_until(
   'mysql-bin-changelog.000777',
   120);

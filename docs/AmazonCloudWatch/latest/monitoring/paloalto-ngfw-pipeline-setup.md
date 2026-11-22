@@ -8,7 +8,7 @@ Collects log data from Palo Alto Next-Generation Firewall using basic authentica
 
 Configure the Palo Alto NGFW source with the following parameters:
 
-```
+```yaml
 source:
   paloaltonetworks_nextgenerationfirewall:
     hostname: "<example-host-name>"

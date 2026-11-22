@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-connection-mlflowpropertiesinput-syntax.json"></a>
 
-```
+```json
 {
   "[TrackingServerArn](#cfn-datazone-connection-mlflowpropertiesinput-trackingserverarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-connection-mlflowpropertiesinput-syntax.yaml"></a>
 
-```
+```yaml
   [TrackingServerArn](#cfn-datazone-connection-mlflowpropertiesinput-trackingserverarn): {{String}}
 ```
 

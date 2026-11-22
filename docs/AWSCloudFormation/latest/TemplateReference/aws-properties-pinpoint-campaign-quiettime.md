@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pinpoint-campaign-quiettime-syntax.json"></a>
 
-```
+```json
 {
   "[End](#cfn-pinpoint-campaign-quiettime-end)" : {{String}},
   "[Start](#cfn-pinpoint-campaign-quiettime-start)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pinpoint-campaign-quiettime-syntax.yaml"></a>
 
-```
+```yaml
   [End](#cfn-pinpoint-campaign-quiettime-end): {{String}}
   [Start](#cfn-pinpoint-campaign-quiettime-start): {{String}}
 ```

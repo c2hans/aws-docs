@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-monitoringschedule-clusterconfig-syntax.json"></a>
 
-```
+```json
 {
   "[InstanceCount](#cfn-sagemaker-monitoringschedule-clusterconfig-instancecount)" : {{Integer}},
   "[InstanceType](#cfn-sagemaker-monitoringschedule-clusterconfig-instancetype)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-monitoringschedule-clusterconfig-syntax.yaml"></a>
 
-```
+```yaml
   [InstanceCount](#cfn-sagemaker-monitoringschedule-clusterconfig-instancecount): {{Integer}}
   [InstanceType](#cfn-sagemaker-monitoringschedule-clusterconfig-instancetype): {{String}}
   [VolumeKmsKeyId](#cfn-sagemaker-monitoringschedule-clusterconfig-volumekmskeyid): {{String}}

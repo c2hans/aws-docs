@@ -46,7 +46,7 @@ You can enable stop protection for an instance when launching the instance.
 **To enable stop protection for an instance at launch**
 Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command to launch the instance. Add the following parameter.
 
-```
+```bash
 --disable-api-stop
 ```
 
@@ -56,7 +56,7 @@ Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run
 **To enable stop protection for an instance at launch**
 Use the [New-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Instance.html) cmdlet to launch the instance. Add the following parameter.
 
-```
+```powershell
 -DisableApiStop $true
 ```
 
@@ -86,7 +86,7 @@ You can enable stop protection for an instance while the instance is running or 
 **To enable stop protection for an instance**
 Use the [modify-instance-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-attribute.html) command.
 
-```
+```bash
 aws ec2 modify-instance-attribute \
     --instance-id {{i-1234567890abcdef0}} \
     --disable-api-stop
@@ -98,7 +98,7 @@ aws ec2 modify-instance-attribute \
 **To enable stop protection for an instance**
 Use the [Edit-EC2InstanceAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceAttribute.html) cmdlet.
 
-```
+```powershell
 Edit-EC2InstanceAttribute `
     -InstanceId {{i-1234567890abcdef0}} `
     -DisableApiStop $true
@@ -130,7 +130,7 @@ You can disable stop protection for a running or stopped instance using one of t
 **To disable stop protection for a running or stopped instance**
 Use the [modify-instance-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-attribute.html) command.
 
-```
+```bash
 aws ec2 modify-instance-attribute \
     --instance-id {{i-1234567890abcdef0}} \
     --no-disable-api-stop
@@ -142,7 +142,7 @@ aws ec2 modify-instance-attribute \
 **To disable stop protection for an instance**
 Use the [Edit-EC2InstanceAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceAttribute.html) cmdlet.
 
-```
+```powershell
 Edit-EC2InstanceAttribute `
     -InstanceId {{i-1234567890abcdef0}} `
     -DisableApiStop $false

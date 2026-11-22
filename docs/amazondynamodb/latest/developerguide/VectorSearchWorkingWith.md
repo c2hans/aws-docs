@@ -142,7 +142,7 @@ You write items with vector data using the standard DynamoDB write APIs (`PutIte
 
 Because a vector contains many values, save the item to a file such as `item.json`, then pass the file to the AWS CLI.
 
-```
+```json
 {
     "ProductId": { "S": "prod-123" },
     "Category": { "S": "Electronics" },
@@ -196,7 +196,7 @@ The following example searches for the 10 most similar items in the `ProductEmbe
 
 Save the query vector to a file such as `query-vector.json`, as a plain JSON array of number values.
 
-```
+```json
 [
     { "N": "0.1234" },
     { "N": "-0.5678" },
@@ -217,7 +217,7 @@ aws dynamodb search-vectors \
 
 The response includes a `SearchResults` array. Each element contains the matching `Item` and a `Score` that indicates how similar the item is to the query vector.
 
-```
+```json
 {
     "SearchResults": [
         {

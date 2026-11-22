@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-certificatemanager-account-expiryeventsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DaysBeforeExpiry](#cfn-certificatemanager-account-expiryeventsconfiguration-daysbeforeexpiry)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-certificatemanager-account-expiryeventsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DaysBeforeExpiry](#cfn-certificatemanager-account-expiryeventsconfiguration-daysbeforeexpiry): {{Integer}}
 ```
 

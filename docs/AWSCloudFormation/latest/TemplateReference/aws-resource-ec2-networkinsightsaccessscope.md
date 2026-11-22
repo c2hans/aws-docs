@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-networkinsightsaccessscope-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::NetworkInsightsAccessScope",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-networkinsightsaccessscope-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::NetworkInsightsAccessScope
 Properties:
   [ExcludePaths](#cfn-ec2-networkinsightsaccessscope-excludepaths): {{

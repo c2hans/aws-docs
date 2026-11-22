@@ -24,7 +24,7 @@ You can configure proxy settings for the EC2Config service by specifying the `pr
 
     **For EC2Config versions 3.17 or earlier**
 
-   ```
+   ```bash
    <configSections>
       <section name="aws" type="Amazon.AWSSection, AWSSDK"/>
    </configSections>
@@ -32,7 +32,7 @@ You can configure proxy settings for the EC2Config service by specifying the `pr
 
     **For EC2Config versions 3.18 or later**
 
-   ```
+   ```bash
    <configSections>
         <section name="aws" type="Amazon.AWSSection, AWSSDK.Core"/>
    </configSections>
@@ -40,7 +40,7 @@ You can configure proxy settings for the EC2Config service by specifying the `pr
 
 1. Add the following `aws` element to the `Ec2Config.exe.config` file.
 
-   ```
+   ```bash
    <aws>
       <proxy
         host="{{string value}}"
@@ -65,7 +65,7 @@ You can specify proxy settings in a `system.net` element in the `Ec2Config.exe.c
 
    For example, the following configuration routes all traffic to use the proxy that is currently configured for Internet Explorer, with the exception of the metadata and licensing traffic, which will bypass the proxy.
 
-   ```
+   ```bash
    <defaultProxy>
        <proxy usesystemdefault="true" />
        <bypasslist>

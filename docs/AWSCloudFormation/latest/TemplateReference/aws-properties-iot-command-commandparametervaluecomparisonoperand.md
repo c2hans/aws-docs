@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-command-commandparametervaluecomparisonoperand-syntax.json"></a>
 
-```
+```json
 {
   "[Number](#cfn-iot-command-commandparametervaluecomparisonoperand-number)" : {{String}},
   "[NumberRange](#cfn-iot-command-commandparametervaluecomparisonoperand-numberrange)" : {{CommandParameterValueNumberRange}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-command-commandparametervaluecomparisonoperand-syntax.yaml"></a>
 
-```
+```yaml
   [Number](#cfn-iot-command-commandparametervaluecomparisonoperand-number): {{String}}
   [NumberRange](#cfn-iot-command-commandparametervaluecomparisonoperand-numberrange): {{
     CommandParameterValueNumberRange}}

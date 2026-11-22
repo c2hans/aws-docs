@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codepipeline-pipeline-outputartifact-syntax.json"></a>
 
-```
+```json
 {
   "[Files](#cfn-codepipeline-pipeline-outputartifact-files)" : {{[ String, ... ]}},
   "[Name](#cfn-codepipeline-pipeline-outputartifact-name)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codepipeline-pipeline-outputartifact-syntax.yaml"></a>
 
-```
+```yaml
   [Files](#cfn-codepipeline-pipeline-outputartifact-files): {{
     - String}}
   [Name](#cfn-codepipeline-pipeline-outputartifact-name): {{String}}

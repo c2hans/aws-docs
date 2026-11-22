@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mwaa-environment-loggingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DagProcessingLogs](#cfn-mwaa-environment-loggingconfiguration-dagprocessinglogs)" : {{ModuleLoggingConfiguration}},
   "[SchedulerLogs](#cfn-mwaa-environment-loggingconfiguration-schedulerlogs)" : {{ModuleLoggingConfiguration}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mwaa-environment-loggingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DagProcessingLogs](#cfn-mwaa-environment-loggingconfiguration-dagprocessinglogs): {{
     ModuleLoggingConfiguration}}
   [SchedulerLogs](#cfn-mwaa-environment-loggingconfiguration-schedulerlogs): {{

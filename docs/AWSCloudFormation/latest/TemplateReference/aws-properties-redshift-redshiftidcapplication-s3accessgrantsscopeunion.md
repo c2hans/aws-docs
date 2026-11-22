@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-redshift-redshiftidcapplication-s3accessgrantsscopeunion-syntax.json"></a>
 
-```
+```json
 {
   "[ReadWriteAccess](#cfn-redshift-redshiftidcapplication-s3accessgrantsscopeunion-readwriteaccess)" : {{ReadWriteAccess}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-redshift-redshiftidcapplication-s3accessgrantsscopeunion-syntax.yaml"></a>
 
-```
+```yaml
   [ReadWriteAccess](#cfn-redshift-redshiftidcapplication-s3accessgrantsscopeunion-readwriteaccess): {{
     ReadWriteAccess}}
 ```

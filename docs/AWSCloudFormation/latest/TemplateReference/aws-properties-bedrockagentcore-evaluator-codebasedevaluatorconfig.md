@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-evaluator-codebasedevaluatorconfig-syntax.json"></a>
 
-```
+```json
 {
   "[LambdaConfig](#cfn-bedrockagentcore-evaluator-codebasedevaluatorconfig-lambdaconfig)" : {{LambdaEvaluatorConfig}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-evaluator-codebasedevaluatorconfig-syntax.yaml"></a>
 
-```
+```yaml
   [LambdaConfig](#cfn-bedrockagentcore-evaluator-codebasedevaluatorconfig-lambdaconfig): {{
     LambdaEvaluatorConfig}}
 ```

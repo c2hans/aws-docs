@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-vpclattice-resourceconfiguration-resourceconfigurationdefinition-syntax.json"></a>
 
-```
+```json
 {
   "[ArnResource](#cfn-vpclattice-resourceconfiguration-resourceconfigurationdefinition-arnresource)" : {{String}},
   "[CidrResource](#cfn-vpclattice-resourceconfiguration-resourceconfigurationdefinition-cidrresource)" : {{CidrResource}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-vpclattice-resourceconfiguration-resourceconfigurationdefinition-syntax.yaml"></a>
 
-```
+```yaml
   [ArnResource](#cfn-vpclattice-resourceconfiguration-resourceconfigurationdefinition-arnresource): {{String}}
   [CidrResource](#cfn-vpclattice-resourceconfiguration-resourceconfigurationdefinition-cidrresource): {{
     CidrResource}}

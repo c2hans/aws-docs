@@ -54,7 +54,7 @@ You can update your account name using the root user, an IAM user, or an IAM rol
 You can use one of the following operations:
 + AWS CLI: [put-account-name](https://docs.aws.amazon.com/cli/latest/reference/account/put-account-name.html)
 
-  ```
+  ```bash
   $ C:\> aws account put-account-name \
           --account-name "{{New-Account-Name}}"
   ```
@@ -106,7 +106,7 @@ To update the account name for a member account, your IAM user or IAM role must 
 You can use one of the following operations:
 + AWS CLI: [put-account-name](https://docs.aws.amazon.com/cli/latest/reference/account/put-account-name.html)
 
-  ```
+  ```bash
   $ C:\> aws account put-account-name \
           --account-id {{111111111111}} \
           --account-name "{{New-Account-Name}}"

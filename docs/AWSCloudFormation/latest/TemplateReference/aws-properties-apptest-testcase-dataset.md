@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apptest-testcase-dataset-syntax.json"></a>
 
-```
+```json
 {
   "[Ccsid](#cfn-apptest-testcase-dataset-ccsid)" : {{String}},
   "[Format](#cfn-apptest-testcase-dataset-format)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apptest-testcase-dataset-syntax.yaml"></a>
 
-```
+```yaml
   [Ccsid](#cfn-apptest-testcase-dataset-ccsid): {{String}}
   [Format](#cfn-apptest-testcase-dataset-format): {{String}}
   [Length](#cfn-apptest-testcase-dataset-length): {{Number}}

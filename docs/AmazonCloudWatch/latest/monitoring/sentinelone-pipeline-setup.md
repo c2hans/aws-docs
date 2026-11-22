@@ -8,7 +8,7 @@ The SentinelOne setup on AWS reads log data from Amazon S3 buckets using Amazon 
 
 Configure the SentinelOne source using the following parameters:
 
-```
+```yaml
 source:
   s3:
     aws:

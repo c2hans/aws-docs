@@ -35,7 +35,7 @@ When changing the KMS key for encrypting your Amazon SQS messages, be aware that
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
          "Statement": [{
@@ -83,7 +83,7 @@ Add the following statement to the IAM policy of the producer. Remember to use t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -118,7 +118,7 @@ When the data key reuse period expires, the consumer's next call to `ReceiveMess
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -154,7 +154,7 @@ In this KMS key policy, a specific resource from *service* that is owned by acco
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

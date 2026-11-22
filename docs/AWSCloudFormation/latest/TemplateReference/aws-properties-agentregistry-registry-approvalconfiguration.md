@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-agentregistry-registry-approvalconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AutoApprovalRules](#cfn-agentregistry-registry-approvalconfiguration-autoapprovalrules)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-agentregistry-registry-approvalconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AutoApprovalRules](#cfn-agentregistry-registry-approvalconfiguration-autoapprovalrules): {{
     - String}}
 ```

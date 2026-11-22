@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-computeoptimizer-automationrule-doublecriteriacondition-syntax.json"></a>
 
-```
+```json
 {
   "[Comparison](#cfn-computeoptimizer-automationrule-doublecriteriacondition-comparison)" : {{String}},
   "[Values](#cfn-computeoptimizer-automationrule-doublecriteriacondition-values)" : {{[ Number, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-computeoptimizer-automationrule-doublecriteriacondition-syntax.yaml"></a>
 
-```
+```yaml
   [Comparison](#cfn-computeoptimizer-automationrule-doublecriteriacondition-comparison): {{String}}
   [Values](#cfn-computeoptimizer-automationrule-doublecriteriacondition-values): {{
     - Number}}

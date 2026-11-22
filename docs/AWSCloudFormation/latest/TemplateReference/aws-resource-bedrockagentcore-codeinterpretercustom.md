@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-bedrockagentcore-codeinterpretercustom-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::BedrockAgentCore::CodeInterpreterCustom",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-bedrockagentcore-codeinterpretercustom-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::BedrockAgentCore::CodeInterpreterCustom
 Properties:
   [Certificates](#cfn-bedrockagentcore-codeinterpretercustom-certificates): {{

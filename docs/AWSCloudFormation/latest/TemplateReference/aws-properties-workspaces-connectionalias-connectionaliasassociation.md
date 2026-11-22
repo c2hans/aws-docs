@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspaces-connectionalias-connectionaliasassociation-syntax.json"></a>
 
-```
+```json
 {
   "[AssociatedAccountId](#cfn-workspaces-connectionalias-connectionaliasassociation-associatedaccountid)" : {{String}},
   "[AssociationStatus](#cfn-workspaces-connectionalias-connectionaliasassociation-associationstatus)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspaces-connectionalias-connectionaliasassociation-syntax.yaml"></a>
 
-```
+```yaml
   [AssociatedAccountId](#cfn-workspaces-connectionalias-connectionaliasassociation-associatedaccountid): {{String}}
   [AssociationStatus](#cfn-workspaces-connectionalias-connectionaliasassociation-associationstatus): {{String}}
   [ConnectionIdentifier](#cfn-workspaces-connectionalias-connectionaliasassociation-connectionidentifier): {{String}}

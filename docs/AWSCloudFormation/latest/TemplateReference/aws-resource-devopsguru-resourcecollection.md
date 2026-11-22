@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-devopsguru-resourcecollection-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DevOpsGuru::ResourceCollection",
   "Properties" : {
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-devopsguru-resourcecollection-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DevOpsGuru::ResourceCollection
 Properties:
   [ResourceCollectionFilter](#cfn-devopsguru-resourcecollection-resourcecollectionfilter): {{
@@ -77,7 +77,7 @@ The type of AWS resource collections to return. The one valid value is `CLOUD_FO
 #### JSON
 <a name="aws-resource-devopsguru-resourcecollection--examples--Create_a_resource_collection_using_two_CloudFormation_stacks--json"></a>
 
-```
+```json
 {
   "Resources": {
     "MyResourceCollection": {
@@ -100,7 +100,7 @@ The type of AWS resource collections to return. The one valid value is `CLOUD_FO
 #### YAML
 <a name="aws-resource-devopsguru-resourcecollection--examples--Create_a_resource_collection_using_two_CloudFormation_stacks--yaml"></a>
 
-```
+```yaml
 Resources:
   MyResourceCollection:
     Type: AWS::DevOpsGuru::ResourceCollection
@@ -118,7 +118,7 @@ Resources:
 #### JSON
 <a name="aws-resource-devopsguru-resourcecollection--examples--Create_a_resource_collection_with_all_CloudFormation_stacks_in_your_account--json"></a>
 
-```
+```json
 {
   "Resources": {
     "MyResourceCollection": {
@@ -140,7 +140,7 @@ Resources:
 #### YAML
 <a name="aws-resource-devopsguru-resourcecollection--examples--Create_a_resource_collection_with_all_CloudFormation_stacks_in_your_account--yaml"></a>
 
-```
+```yaml
 Resources:
   MyResourceCollection:
     Type: AWS::DevOpsGuru::ResourceCollection
@@ -157,7 +157,7 @@ Resources:
 #### JSON
 <a name="aws-resource-devopsguru-resourcecollection--examples--Monitor_DevOps_Guru_resources_using_tags--json"></a>
 
-```
+```json
 {
 "DevOpsGuruResourceCollection": {
   "Type": "AWS::DevOpsGuru::ResourceCollection",
@@ -180,7 +180,7 @@ Resources:
 #### YAML
 <a name="aws-resource-devopsguru-resourcecollection--examples--Monitor_DevOps_Guru_resources_using_tags--yaml"></a>
 
-```
+```yaml
 DevOpsGuruResourceCollection:
     Type: AWS::DevOpsGuru::ResourceCollection
     Condition: DevOpsGuruEnable
@@ -196,7 +196,7 @@ DevOpsGuruResourceCollection:
 #### JSON
 <a name="aws-resource-devopsguru-resourcecollection--examples--Monitor_DevOps_Guru_resources_using_tags--json"></a>
 
-```
+```json
 {
  "DevOpsGuruResourceCollection": {
     "Type": "AWS::DevOpsGuru::ResourceCollection",
@@ -220,7 +220,7 @@ DevOpsGuruResourceCollection:
 #### YAML
 <a name="aws-resource-devopsguru-resourcecollection--examples--Monitor_DevOps_Guru_resources_using_tags--yaml"></a>
 
-```
+```yaml
 DevOpsGuruResourceCollection:
     Type: AWS::DevOpsGuru::ResourceCollection
     Condition: DevOpsGuruEnable

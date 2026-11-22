@@ -68,7 +68,7 @@ aws ecs update-service --cluster $ECS_CLUSTER_NAME \
 
 The ECS task definition of the CloudWatch agent enables the logs by default in the section below. The logs are sent to CloudWatch Logs in the log group **/ecs/ecs-cwagent-prometheus**.
 
-```
+```yaml
 LogConfiguration:
   LogDriver: awslogs
     Options:

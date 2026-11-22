@@ -277,7 +277,7 @@ The `temptable_max_mmap` parameter in Aurora MySQL controls the maximum amount o
 
 1. Make sure that the Performance Schema is enabled. You can verify this by running the following SQL command:
 
-   ```
+   ```sql
    SELECT @@performance_schema;
    ```
 
@@ -285,7 +285,7 @@ The `temptable_max_mmap` parameter in Aurora MySQL controls the maximum amount o
 
 1. Confirm that the temporary table memory instrumentation is enabled. You can verify this by running the following SQL command:
 
-   ```
+   ```sql
    SELECT name, enabled FROM performance_schema.setup_instruments WHERE name LIKE '%memory%temptable%';
    ```
 

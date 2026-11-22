@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancingv2-listenercertificate-certificate-syntax.json"></a>
 
-```
+```json
 {
   "[CertificateArn](#cfn-elasticloadbalancingv2-listenercertificate-certificate-certificatearn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancingv2-listenercertificate-certificate-syntax.yaml"></a>
 
-```
+```yaml
   [CertificateArn](#cfn-elasticloadbalancingv2-listenercertificate-certificate-certificatearn): {{String}}
 ```
 

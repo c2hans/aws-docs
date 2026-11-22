@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-aiagent-tagcondition-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-wisdom-aiagent-tagcondition-key)" : {{String}},
   "[Value](#cfn-wisdom-aiagent-tagcondition-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-aiagent-tagcondition-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-wisdom-aiagent-tagcondition-key): {{String}}
   [Value](#cfn-wisdom-aiagent-tagcondition-value): {{String}}
 ```

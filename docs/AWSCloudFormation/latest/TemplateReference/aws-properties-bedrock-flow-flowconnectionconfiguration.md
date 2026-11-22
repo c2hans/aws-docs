@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-flow-flowconnectionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Conditional](#cfn-bedrock-flow-flowconnectionconfiguration-conditional)" : {{FlowConditionalConnectionConfiguration}},
   "[Data](#cfn-bedrock-flow-flowconnectionconfiguration-data)" : {{FlowDataConnectionConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-flow-flowconnectionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Conditional](#cfn-bedrock-flow-flowconnectionconfiguration-conditional): {{
     FlowConditionalConnectionConfiguration}}
   [Data](#cfn-bedrock-flow-flowconnectionconfiguration-data): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cassandra-table-billingmode-syntax.json"></a>
 
-```
+```json
 {
   "[Mode](#cfn-cassandra-table-billingmode-mode)" : {{String}},
   "[ProvisionedThroughput](#cfn-cassandra-table-billingmode-provisionedthroughput)" : {{ProvisionedThroughput}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cassandra-table-billingmode-syntax.yaml"></a>
 
-```
+```yaml
   [Mode](#cfn-cassandra-table-billingmode-mode): {{String}}
   [ProvisionedThroughput](#cfn-cassandra-table-billingmode-provisionedthroughput): {{
     ProvisionedThroughput}}

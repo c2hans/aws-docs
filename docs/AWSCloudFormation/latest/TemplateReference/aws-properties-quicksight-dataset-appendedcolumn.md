@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-appendedcolumn-syntax.json"></a>
 
-```
+```json
 {
   "[ColumnName](#cfn-quicksight-dataset-appendedcolumn-columnname)" : {{String}},
   "[NewColumnId](#cfn-quicksight-dataset-appendedcolumn-newcolumnid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-appendedcolumn-syntax.yaml"></a>
 
-```
+```yaml
   [ColumnName](#cfn-quicksight-dataset-appendedcolumn-columnname): {{String}}
   [NewColumnId](#cfn-quicksight-dataset-appendedcolumn-newcolumnid): {{String}}
 ```

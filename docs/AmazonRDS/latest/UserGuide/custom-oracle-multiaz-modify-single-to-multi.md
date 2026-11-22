@@ -50,7 +50,7 @@ If you choose to configure the prerequisites manually, perform the following tas
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -80,7 +80,7 @@ If you choose to configure the prerequisites manually, perform the following tas
 
 Update the **Instance profile** with permission to access Amazon SQS. Replace the `AWS partition`, `Region`, and `accountId` with your own values.
 
-```
+```json
 {
     "Sid": "13",
     "Effect": "Allow",

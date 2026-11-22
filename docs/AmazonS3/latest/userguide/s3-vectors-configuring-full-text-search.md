@@ -47,7 +47,7 @@ The following examples create a vector index named `documents` in the `amzn-s3-d
 
 **Example: Create an index with searchable fields**
 
-```
+```bash
 aws s3vectors create-index \
     --vector-bucket-name "{{amzn-s3-demo-vector-bucket}}" \
     --index-name "{{documents}}" \
@@ -69,7 +69,7 @@ aws s3vectors create-index \
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```python
 import boto3
 
 client = boto3.client("s3vectors")
@@ -108,7 +108,7 @@ Once configured, you can't change an existing full-text search configuration for
 
 **Example: Enable full-text search on existing fields**
 
-```
+```bash
 aws s3vectors update-metadata-configuration \
     --vector-bucket-name "{{amzn-s3-demo-vector-bucket}}" \
     --index-name "{{documents}}" \
@@ -126,7 +126,7 @@ aws s3vectors update-metadata-configuration \
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```python
 client.update_metadata_configuration(
     vectorBucketName="amzn-s3-demo-vector-bucket",
     indexName="documents",
@@ -153,7 +153,7 @@ When S3 Vectors is indexing existing data for full-text search, the field's stat
 
 **Example: Read full-text configuration and status**
 
-```
+```bash
 aws s3vectors get-index \
     --vector-bucket-name "{{amzn-s3-demo-vector-bucket}}" \
     --index-name "{{documents}}"
@@ -165,7 +165,7 @@ aws s3vectors get-index \
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```python
 response = client.get_index(
     vectorBucketName="amzn-s3-demo-vector-bucket",
     indexName="documents",
@@ -194,7 +194,7 @@ If you no longer need full-text search capability for a field, call `UpdateMetad
 
 **Example: Remove a searchable field**
 
-```
+```bash
 aws s3vectors update-metadata-configuration \
     --vector-bucket-name "{{amzn-s3-demo-vector-bucket}}" \
     --index-name "{{documents}}" \
@@ -207,7 +207,7 @@ aws s3vectors update-metadata-configuration \
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```python
 client.update_metadata_configuration(
     vectorBucketName="amzn-s3-demo-vector-bucket",
     indexName="documents",

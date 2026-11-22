@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-job-retrycriteria-syntax.json"></a>
 
-```
+```json
 {
   "[FailureType](#cfn-iot-job-retrycriteria-failuretype)" : {{String}},
   "[NumberOfRetries](#cfn-iot-job-retrycriteria-numberofretries)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-job-retrycriteria-syntax.yaml"></a>
 
-```
+```yaml
   [FailureType](#cfn-iot-job-retrycriteria-failuretype): {{String}}
   [NumberOfRetries](#cfn-iot-job-retrycriteria-numberofretries): {{Integer}}
 ```

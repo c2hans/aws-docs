@@ -108,7 +108,7 @@ This example illustrates how to list all App Runner connections in the AWS accou
 #### Sample Request
 <a name="API_ListConnections_Example_1_Request"></a>
 
-```
+```json
 $ aws apprunner list-connections --cli-input-json "`cat`"
 {
 }
@@ -117,7 +117,7 @@ $ aws apprunner list-connections --cli-input-json "`cat`"
 #### Sample Response
 <a name="API_ListConnections_Example_1_Response"></a>
 
-```
+```json
 {
   "ConnectionSummaryList": [
     {
@@ -146,7 +146,7 @@ This example illustrates how to list a connection by its name.
 #### Sample Request
 <a name="API_ListConnections_Example_2_Request"></a>
 
-```
+```json
 $ aws apprunner list-connections --cli-input-json "`cat`"
 {
   "ConnectionName": "my-github-org-connection"
@@ -156,7 +156,7 @@ $ aws apprunner list-connections --cli-input-json "`cat`"
 #### Sample Response
 <a name="API_ListConnections_Example_2_Response"></a>
 
-```
+```json
 {
   "ConnectionSummaryList": [
     {

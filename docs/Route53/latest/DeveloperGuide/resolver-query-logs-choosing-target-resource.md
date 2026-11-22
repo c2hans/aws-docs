@@ -20,7 +20,7 @@ If you choose Server-Side Encryption with AWS KMS Keys (SSE-KMS), you must updat
 If the S3 bucket is in an account that you own, the required permissions are automatically added to your bucket policy. If you want to send logs to an S3 bucket in an account that you don't own, the owner of the S3 bucket must add permissions for your account in their bucket policy. For example:
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "CrossAccountAccess",

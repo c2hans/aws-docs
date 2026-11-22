@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-deadline-queue-schedulingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[PriorityBalanced](#cfn-deadline-queue-schedulingconfiguration-prioritybalanced)" : {{PriorityBalancedSchedulingConfiguration}},
   "[PriorityFifo](#cfn-deadline-queue-schedulingconfiguration-priorityfifo)" : {{Json}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-deadline-queue-schedulingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [PriorityBalanced](#cfn-deadline-queue-schedulingconfiguration-prioritybalanced): {{
     PriorityBalancedSchedulingConfiguration}}
   [PriorityFifo](#cfn-deadline-queue-schedulingconfiguration-priorityfifo): {{Json}}

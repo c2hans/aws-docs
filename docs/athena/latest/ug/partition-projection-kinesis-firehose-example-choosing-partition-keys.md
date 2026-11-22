@@ -10,7 +10,7 @@ However, splitting dates into year, month, and day means that the `date` partiti
 
 With that in mind, the following `CREATE TABLE` example separates the date from the hour. Because `date` is a reserved word in SQL, the example uses `day` as the name for the partition key that represents the date.
 
-```
+```sql
 CREATE EXTERNAL TABLE my_ingested_data2 (
  ...
 )
@@ -38,7 +38,7 @@ In the example `CREATE TABLE` statement, the hour is a separate partition key, c
 
 A query for the `my_ingested_data2` table might look like this:
 
-```
+```sql
 SELECT *
 FROM my_ingested_data2
 WHERE day = '2021/11/09'

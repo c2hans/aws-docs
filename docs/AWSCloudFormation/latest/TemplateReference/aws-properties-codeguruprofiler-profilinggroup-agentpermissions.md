@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codeguruprofiler-profilinggroup-agentpermissions-syntax.json"></a>
 
-```
+```json
 {
   "[Principals](#cfn-codeguruprofiler-profilinggroup-agentpermissions-principals)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codeguruprofiler-profilinggroup-agentpermissions-syntax.yaml"></a>
 
-```
+```yaml
   [Principals](#cfn-codeguruprofiler-profilinggroup-agentpermissions-principals): {{
     - String}}
 ```

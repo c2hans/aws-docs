@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apigatewayv2-portalproduct-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-apigatewayv2-portalproduct-tag-key)" : {{String}},
   "[Value](#cfn-apigatewayv2-portalproduct-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apigatewayv2-portalproduct-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-apigatewayv2-portalproduct-tag-key): {{String}}
   [Value](#cfn-apigatewayv2-portalproduct-tag-value): {{String}}
 ```

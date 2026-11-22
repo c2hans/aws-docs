@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-filesystem-lustreconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AutoImportPolicy](#cfn-fsx-filesystem-lustreconfiguration-autoimportpolicy)" : {{String}},
   "[AutomaticBackupRetentionDays](#cfn-fsx-filesystem-lustreconfiguration-automaticbackupretentiondays)" : {{Integer}},
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-filesystem-lustreconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AutoImportPolicy](#cfn-fsx-filesystem-lustreconfiguration-autoimportpolicy): {{String}}
   [AutomaticBackupRetentionDays](#cfn-fsx-filesystem-lustreconfiguration-automaticbackupretentiondays): {{Integer}}
   [CopyTagsToBackups](#cfn-fsx-filesystem-lustreconfiguration-copytagstobackups): {{Boolean}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iot-topicruledestination-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoT::TopicRuleDestination",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iot-topicruledestination-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoT::TopicRuleDestination
 Properties:
   [HttpUrlProperties](#cfn-iot-topicruledestination-httpurlproperties): {{

@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codepipeline-pipeline-pipelinetriggerdeclaration-syntax.json"></a>
 
-```
+```json
 {
   "[GitConfiguration](#cfn-codepipeline-pipeline-pipelinetriggerdeclaration-gitconfiguration)" : {{GitConfiguration}},
   "[ProviderType](#cfn-codepipeline-pipeline-pipelinetriggerdeclaration-providertype)" : {{String}}
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codepipeline-pipeline-pipelinetriggerdeclaration-syntax.yaml"></a>
 
-```
+```yaml
   [GitConfiguration](#cfn-codepipeline-pipeline-pipelinetriggerdeclaration-gitconfiguration): {{
     GitConfiguration}}
   [ProviderType](#cfn-codepipeline-pipeline-pipelinetriggerdeclaration-providertype): {{String}}

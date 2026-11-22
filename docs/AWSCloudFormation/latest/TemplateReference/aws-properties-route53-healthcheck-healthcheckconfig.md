@@ -16,13 +16,15 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-route53-healthcheck-healthcheckconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AlarmIdentifier](#cfn-route53-healthcheck-healthcheckconfig-alarmidentifier)" : {{AlarmIdentifier}},
   "[ChildHealthChecks](#cfn-route53-healthcheck-healthcheckconfig-childhealthchecks)" : {{[ String, ... ]}},
   "[EnableSNI](#cfn-route53-healthcheck-healthcheckconfig-enablesni)" : {{Boolean}},
+  "[EndpointType](#cfn-route53-healthcheck-healthcheckconfig-endpointtype)" : {{String}},
   "[FailureThreshold](#cfn-route53-healthcheck-healthcheckconfig-failurethreshold)" : {{Integer}},
   "[FullyQualifiedDomainName](#cfn-route53-healthcheck-healthcheckconfig-fullyqualifieddomainname)" : {{String}},
+  "[HealthCheckSourceId](#cfn-route53-healthcheck-healthcheckconfig-healthchecksourceid)" : {{String}},
   "[HealthThreshold](#cfn-route53-healthcheck-healthcheckconfig-healththreshold)" : {{Integer}},
   "[InsufficientDataHealthStatus](#cfn-route53-healthcheck-healthcheckconfig-insufficientdatahealthstatus)" : {{String}},
   "[Inverted](#cfn-route53-healthcheck-healthcheckconfig-inverted)" : {{Boolean}},
@@ -41,14 +43,16 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-route53-healthcheck-healthcheckconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AlarmIdentifier](#cfn-route53-healthcheck-healthcheckconfig-alarmidentifier): {{
     AlarmIdentifier}}
   [ChildHealthChecks](#cfn-route53-healthcheck-healthcheckconfig-childhealthchecks): {{
     - String}}
   [EnableSNI](#cfn-route53-healthcheck-healthcheckconfig-enablesni): {{Boolean}}
+  [EndpointType](#cfn-route53-healthcheck-healthcheckconfig-endpointtype): {{String}}
   [FailureThreshold](#cfn-route53-healthcheck-healthcheckconfig-failurethreshold): {{Integer}}
   [FullyQualifiedDomainName](#cfn-route53-healthcheck-healthcheckconfig-fullyqualifieddomainname): {{String}}
+  [HealthCheckSourceId](#cfn-route53-healthcheck-healthcheckconfig-healthchecksourceid): {{String}}
   [HealthThreshold](#cfn-route53-healthcheck-healthcheckconfig-healththreshold): {{Integer}}
   [InsufficientDataHealthStatus](#cfn-route53-healthcheck-healthcheckconfig-insufficientdatahealthstatus): {{String}}
   [Inverted](#cfn-route53-healthcheck-healthcheckconfig-inverted): {{Boolean}}
@@ -89,6 +93,13 @@ The SSL/TLS certificate on your endpoint includes a domain name in the `Common N
 *Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`EndpointType`  <a name="cfn-route53-healthcheck-healthcheckconfig-endpointtype"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `PUBLIC | PRIVATE`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
 `FailureThreshold`  <a name="cfn-route53-healthcheck-healthcheckconfig-failurethreshold"></a>
 The number of consecutive health checks that an endpoint must pass or fail for Amazon Route 53 to change the current status of the endpoint from unhealthy to healthy or vice versa. For more information, see [How Amazon Route 53 Determines Whether an Endpoint Is Healthy](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover-determining-health-of-endpoints.html) in the *Amazon Route 53 Developer Guide*.
 `FailureThreshold` is not supported when you specify a value for `Type` of `RECOVERY_CONTROL`.
@@ -117,6 +128,14 @@ In addition, if the value that you specify for `Type` is `HTTP`, `HTTPS`, `HTTP_
 *Required*: No
 *Type*: String
 *Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`HealthCheckSourceId`  <a name="cfn-route53-healthcheck-healthcheckconfig-healthchecksourceid"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `HealthThreshold`  <a name="cfn-route53-healthcheck-healthcheckconfig-healththreshold"></a>

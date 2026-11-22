@@ -35,7 +35,7 @@ Use the following instructions to enable prompt logging.
 
 ****
 
-    ```
+    ```json
     {
         "Version":"2012-10-17",
         "Statement": [
@@ -68,7 +68,7 @@ Use the following instructions to enable prompt logging.
 
     If you're configuring SSE-KMS on the bucket, add the following policy on the KMS key:
 
-    ```
+    ```json
     {
         "Effect": "Allow",
         "Principal": {

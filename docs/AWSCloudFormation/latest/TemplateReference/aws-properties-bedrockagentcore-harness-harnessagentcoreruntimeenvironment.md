@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-harness-harnessagentcoreruntimeenvironment-syntax.json"></a>
 
-```
+```json
 {
   "[AgentRuntimeArn](#cfn-bedrockagentcore-harness-harnessagentcoreruntimeenvironment-agentruntimearn)" : {{String}},
   "[AgentRuntimeId](#cfn-bedrockagentcore-harness-harnessagentcoreruntimeenvironment-agentruntimeid)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-harness-harnessagentcoreruntimeenvironment-syntax.yaml"></a>
 
-```
+```yaml
   [AgentRuntimeArn](#cfn-bedrockagentcore-harness-harnessagentcoreruntimeenvironment-agentruntimearn): {{String}}
   [AgentRuntimeId](#cfn-bedrockagentcore-harness-harnessagentcoreruntimeenvironment-agentruntimeid): {{String}}
   [AgentRuntimeName](#cfn-bedrockagentcore-harness-harnessagentcoreruntimeenvironment-agentruntimename): {{String}}

@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-codebuild-project-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CodeBuild::Project",
   "Properties" : {
@@ -55,7 +55,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-codebuild-project-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CodeBuild::Project
 Properties:
   [Artifacts](#cfn-codebuild-project-artifacts): {{
@@ -324,7 +324,7 @@ The following example creates an AWS CodeBuild project.
 #### JSON
 <a name="aws-resource-codebuild-project--examples--Create_a_project--json"></a>
 
-```
+```json
 {
   "Project": {
     "Type": "AWS::CodeBuild::Project",
@@ -370,7 +370,7 @@ The following example creates an AWS CodeBuild project.
 #### YAML
 <a name="aws-resource-codebuild-project--examples--Create_a_project--yaml"></a>
 
-```
+```yaml
 Project:
   Type: AWS::CodeBuild::Project
   Properties:
@@ -410,7 +410,7 @@ Project:
 #### YAML
 <a name="aws-resource-codebuild-project--examples--Create_a_project_with_two_filter_groups.--yaml"></a>
 
-```
+```yaml
 CodeBuildProject:
   Type: AWS::CodeBuild::Project
   Properties:
@@ -448,7 +448,7 @@ CodeBuildProject:
 #### JSON
 <a name="aws-resource-codebuild-project--examples--Create_a_project_with_two_filter_groups.--json"></a>
 
-```
+```json
 {
     "CodeBuildProject": {
         "Type": "AWS::CodeBuild::Project",
@@ -516,7 +516,7 @@ The following example creates a project that caches build dependencies in Amazon
 #### YAML
 <a name="aws-resource-codebuild-project--examples--Create_a_project_using_Amazon_S3_and_Amazon_VPC--yaml"></a>
 
-```
+```yaml
 Resources:
   CodeBuildProject:
     Type: AWS::CodeBuild::Project
@@ -601,7 +601,7 @@ Resources:
 #### JSON
 <a name="aws-resource-codebuild-project--examples--Create_a_project_using_Amazon_S3_and_Amazon_VPC--json"></a>
 
-```
+```json
 {
   "Resources": {
     "CodeBuildProject": {

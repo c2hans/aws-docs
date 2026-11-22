@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-inspectorv2-filter-packagefilter-syntax.json"></a>
 
-```
+```json
 {
   "[Architecture](#cfn-inspectorv2-filter-packagefilter-architecture)" : {{StringFilter}},
   "[Epoch](#cfn-inspectorv2-filter-packagefilter-epoch)" : {{NumberFilter}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-inspectorv2-filter-packagefilter-syntax.yaml"></a>
 
-```
+```yaml
   [Architecture](#cfn-inspectorv2-filter-packagefilter-architecture): {{
     StringFilter}}
   [Epoch](#cfn-inspectorv2-filter-packagefilter-epoch): {{

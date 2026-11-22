@@ -23,7 +23,7 @@ If you receive an `AccessDenied` error when AWS MCP Server calls a downstream AW
 
 If you previously used Deny statements with `aws-mcp:InvokeMcp`, `aws-mcp:CallReadOnlyTool`, or `aws-mcp:CallReadWriteTool` to block access to AWS MCP Server, these actions no longer have any effect. Update your policies to use the condition context keys instead:
 
-```
+```json
 {
     "Effect": "Deny",
     "Action": "*",

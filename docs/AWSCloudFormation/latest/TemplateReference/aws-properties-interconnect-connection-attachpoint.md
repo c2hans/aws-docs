@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-interconnect-connection-attachpoint-syntax.json"></a>
 
-```
+```json
 {
   "[Arn](#cfn-interconnect-connection-attachpoint-arn)" : {{String}},
   "[DirectConnectGateway](#cfn-interconnect-connection-attachpoint-directconnectgateway)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-interconnect-connection-attachpoint-syntax.yaml"></a>
 
-```
+```yaml
   [Arn](#cfn-interconnect-connection-attachpoint-arn): {{String}}
   [DirectConnectGateway](#cfn-interconnect-connection-attachpoint-directconnectgateway): {{String}}
 ```

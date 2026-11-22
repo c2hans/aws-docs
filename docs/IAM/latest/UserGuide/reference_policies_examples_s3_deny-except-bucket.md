@@ -16,7 +16,7 @@ If this policy is used in combination with other policies (such as the [AmazonS3
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

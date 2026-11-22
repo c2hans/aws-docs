@@ -20,7 +20,7 @@ Changing an index to `ENHANCED` takes effect in place, with no re-ingestion, no 
 
 1. Review the information in the confirmation dialog, select the acknowledgement, and then choose **Enable**.
 
-```
+```bash
 aws s3vectors update-index-mode --vector-bucket-name "amzn-s3-demo-vector-bucket" --index-name "idx" --index-mode "ENHANCED"
 ```
 
@@ -51,7 +51,7 @@ To move a vector bucket and its indexes to `ENHANCED`, complete the following st
 
 1. Call [UpdateIndexMode](https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_UpdateIndexMode.html) with `indexMode` set to `ENHANCED` on each of those indexes.
 
-```
+```bash
 aws s3vectors put-vector-bucket-default-index-mode --vector-bucket-name "amzn-s3-demo-vector-bucket" --default-index-mode "ENHANCED"
 ```
 
@@ -60,7 +60,7 @@ aws s3vectors put-vector-bucket-default-index-mode --vector-bucket-name "amzn-s3
 
 Changing an index to `ENHANCED` is reversible if your vector bucket was created before September 30, 2026. You can change the index back to `CLASSIC` with the AWS CLI, the AWS SDKs, or the Amazon S3 REST API. You cannot do this from the Amazon S3 console.
 
-```
+```bash
 aws s3vectors update-index-mode --vector-bucket-name "amzn-s3-demo-vector-bucket" --index-name "idx" --index-mode "CLASSIC"
 ```
 

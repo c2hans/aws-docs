@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-events-eventbuspolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Events::EventBusPolicy",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-events-eventbuspolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Events::EventBusPolicy
 Properties:
   [EventBusName](#cfn-events-eventbuspolicy-eventbusname): {{String}}
@@ -101,7 +101,7 @@ The following example grants permission to one AWS account with an account ID of
 #### JSON
 <a name="aws-resource-events-eventbuspolicy--examples--Grant_Permission_to_One_Account--json"></a>
 
-```
+```json
 "SampleEventBusPolicy": {
     "Type": "AWS::Events::EventBusPolicy",
     "Properties": {
@@ -119,7 +119,7 @@ The following example grants permission to one AWS account with an account ID of
 #### YAML
 <a name="aws-resource-events-eventbuspolicy--examples--Grant_Permission_to_One_Account--yaml"></a>
 
-```
+```yaml
 SampleEventBusPolicy:
     Type: AWS::Events::EventBusPolicy
     Properties:
@@ -140,7 +140,7 @@ The following example grants permission to all AWS accounts in the organization 
 #### JSON
 <a name="aws-resource-events-eventbuspolicy--examples--Grant_Permission_to_an_Organization--json"></a>
 
-```
+```json
 "SampleEventBusPolicy": {
     "Type": "AWS::Events::EventBusPolicy",
     "Properties": {
@@ -161,7 +161,7 @@ The following example grants permission to all AWS accounts in the organization 
 #### YAML
 <a name="aws-resource-events-eventbuspolicy--examples--Grant_Permission_to_an_Organization--yaml"></a>
 
-```
+```yaml
 SampleEventBusPolicy:
     Type: AWS::Events::EventBusPolicy
     Properties:
@@ -184,7 +184,7 @@ The following example demonstrates a deny policy statement using multiple princi
 #### JSON
 <a name="aws-resource-events-eventbuspolicy--examples--Deny_policy_using_multiple_principals_and_actions--json"></a>
 
-```
+```json
 "SampleDenyEventBusPolicy": {
     "Type": "AWS::Events::EventBusPolicy",
     "Properties": {
@@ -206,7 +206,7 @@ The following example demonstrates a deny policy statement using multiple princi
 #### YAML
 <a name="aws-resource-events-eventbuspolicy--examples--Deny_policy_using_multiple_principals_and_actions--yaml"></a>
 
-```
+```yaml
 SampleDenyEventBusPolicy:
     Type: AWS::Events::EventBusPolicy
     Properties:
@@ -231,7 +231,7 @@ The following example grants permission to all AWS accounts in the organization 
 #### JSON
 <a name="aws-resource-events-eventbuspolicy--examples--Grant_Permission_to_an_Organization_using_a_custom_event_bus--json"></a>
 
-```
+```json
 "SampleCustomEventBus": {
     "Type": "AWS::Events::EventBus",
     "Properties": {
@@ -266,7 +266,7 @@ The following example grants permission to all AWS accounts in the organization 
 #### YAML
 <a name="aws-resource-events-eventbuspolicy--examples--Grant_Permission_to_an_Organization_using_a_custom_event_bus--yaml"></a>
 
-```
+```yaml
 SampleCustomEventBus:
     Type: AWS::Events::EventBus
     Properties:

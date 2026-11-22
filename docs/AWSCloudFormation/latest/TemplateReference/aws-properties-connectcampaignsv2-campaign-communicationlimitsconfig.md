@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connectcampaignsv2-campaign-communicationlimitsconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AllChannelsSubtypes](#cfn-connectcampaignsv2-campaign-communicationlimitsconfig-allchannelssubtypes)" : {{CommunicationLimits}},
   "[InstanceLimitsHandling](#cfn-connectcampaignsv2-campaign-communicationlimitsconfig-instancelimitshandling)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connectcampaignsv2-campaign-communicationlimitsconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AllChannelsSubtypes](#cfn-connectcampaignsv2-campaign-communicationlimitsconfig-allchannelssubtypes): {{
     CommunicationLimits}}
   [InstanceLimitsHandling](#cfn-connectcampaignsv2-campaign-communicationlimitsconfig-instancelimitshandling): {{String}}

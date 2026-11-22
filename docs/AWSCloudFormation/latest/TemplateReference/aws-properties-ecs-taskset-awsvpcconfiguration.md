@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskset-awsvpcconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AssignPublicIp](#cfn-ecs-taskset-awsvpcconfiguration-assignpublicip)" : {{String}},
   "[SecurityGroups](#cfn-ecs-taskset-awsvpcconfiguration-securitygroups)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskset-awsvpcconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AssignPublicIp](#cfn-ecs-taskset-awsvpcconfiguration-assignpublicip): {{String}}
   [SecurityGroups](#cfn-ecs-taskset-awsvpcconfiguration-securitygroups): {{
     - String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-workloadidentity-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-bedrockagentcore-workloadidentity-tag-key)" : {{String}},
   "[Value](#cfn-bedrockagentcore-workloadidentity-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-workloadidentity-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-bedrockagentcore-workloadidentity-tag-key): {{String}}
   [Value](#cfn-bedrockagentcore-workloadidentity-tag-value): {{String}}
 ```

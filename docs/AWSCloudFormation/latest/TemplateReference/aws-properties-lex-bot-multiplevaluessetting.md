@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-multiplevaluessetting-syntax.json"></a>
 
-```
+```json
 {
   "[AllowMultipleValues](#cfn-lex-bot-multiplevaluessetting-allowmultiplevalues)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-multiplevaluessetting-syntax.yaml"></a>
 
-```
+```yaml
   [AllowMultipleValues](#cfn-lex-bot-multiplevaluessetting-allowmultiplevalues): {{Boolean}}
 ```
 

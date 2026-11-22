@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-applicationinferenceprofile-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-bedrock-applicationinferenceprofile-tag-key)" : {{String}},
   "[Value](#cfn-bedrock-applicationinferenceprofile-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-applicationinferenceprofile-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-bedrock-applicationinferenceprofile-tag-key): {{String}}
   [Value](#cfn-bedrock-applicationinferenceprofile-tag-value): {{String}}
 ```

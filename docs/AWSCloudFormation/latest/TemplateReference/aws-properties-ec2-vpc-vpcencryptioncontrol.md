@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-vpc-vpcencryptioncontrol-syntax.json"></a>
 
-```
+```json
 {
   "[EgressOnlyInternetGatewayExclusion](#cfn-ec2-vpc-vpcencryptioncontrol-egressonlyinternetgatewayexclusion)" : {{String}},
   "[ElasticFileSystemExclusion](#cfn-ec2-vpc-vpcencryptioncontrol-elasticfilesystemexclusion)" : {{String}},
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-vpc-vpcencryptioncontrol-syntax.yaml"></a>
 
-```
+```yaml
   [EgressOnlyInternetGatewayExclusion](#cfn-ec2-vpc-vpcencryptioncontrol-egressonlyinternetgatewayexclusion): {{String}}
   [ElasticFileSystemExclusion](#cfn-ec2-vpc-vpcencryptioncontrol-elasticfilesystemexclusion): {{String}}
   [InternetGatewayExclusion](#cfn-ec2-vpc-vpcencryptioncontrol-internetgatewayexclusion): {{String}}

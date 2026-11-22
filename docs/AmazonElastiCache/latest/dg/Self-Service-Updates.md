@@ -21,6 +21,9 @@ You control when to apply an update before an auto-update starts. There are thre
 + **engine-update**: Includes patches or minor engine version updates related to performance or stability optimizations for your current engine version.
 + **engine-major-version-update**: Includes a major version or engine type change, typically due to your current engine version reaching its end of life. We recommend that you carefully review the version compatibility notes from the [Engine versions and upgrading in ElastiCache](engine-versions.md) before applying such updates.
 
+**Note**
+On distributed KV caching clusters (`cache.i8ge.48xlarge`), a service update or engine upgrade removes all stored objects. Apply updates in a maintenance window, and expect the cache to be empty after the update. For more information, see [Requirements and limits for distributed KV caching](distributed-kv-caching-limits.md).
+
 The following sections explore these options in detail.
 
 ### Applying the service updates

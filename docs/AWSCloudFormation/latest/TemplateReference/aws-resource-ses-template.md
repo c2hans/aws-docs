@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ses-template-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SES::Template",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ses-template-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SES::Template
 Properties:
   [Tags](#cfn-ses-template-tags): {{
@@ -80,7 +80,7 @@ Specifies an email template, which is used when sending templated email messages
 #### JSON
 <a name="aws-resource-ses-template--examples----json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "AWS SES Template Sample Template",
@@ -125,7 +125,7 @@ Specifies an email template, which is used when sending templated email messages
 #### YAML
 <a name="aws-resource-ses-template--examples----yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: AWS SES Template Sample Template
 Parameters:

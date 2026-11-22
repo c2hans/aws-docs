@@ -18,7 +18,7 @@ Athena currently offers one type of event, Athena Query State Change, but may ad
 
 The following is the basic pattern for an Amazon Athena event.
 
-```
+```json
 {
     "source":[
         "aws.athena"
@@ -39,7 +39,7 @@ The following is the basic pattern for an Amazon Athena event.
 
 The following example shows an Athena Query State Change event with the `currentState` value of `SUCCEEDED`.
 
-```
+```json
 {
     "version":"0",
     "id":"abcdef00-1234-5678-9abc-def012345678",
@@ -65,7 +65,7 @@ The following example shows an Athena Query State Change event with the `current
 
 The following example shows an Athena Query State Change event with the `currentState` value of `FAILED`. The `athenaError` block appears only when `currentState` is `FAILED`. For information about the values for `errorCategory` and `errorType`, see [Athena error catalog](error-reference.md).
 
-```
+```json
 {
     "version":"0",
     "id":"abcdef00-1234-5678-9abc-def012345678",
@@ -119,7 +119,7 @@ The following example publishes events to an Amazon SNS topic to which you have 
 
 1. Create the target for your Amazon SNS topic. Give the EventBridge events Service Principal `events.amazonaws.com` permission to publish to your Amazon SNS topic, as in the following example.
 
-   ```
+   ```json
    {
        "Effect":"Allow",
        "Principal":{

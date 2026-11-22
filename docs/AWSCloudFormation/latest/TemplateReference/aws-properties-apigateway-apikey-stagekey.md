@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apigateway-apikey-stagekey-syntax.json"></a>
 
-```
+```json
 {
   "[RestApiId](#cfn-apigateway-apikey-stagekey-restapiid)" : {{String}},
   "[StageName](#cfn-apigateway-apikey-stagekey-stagename)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apigateway-apikey-stagekey-syntax.yaml"></a>
 
-```
+```yaml
   [RestApiId](#cfn-apigateway-apikey-stagekey-restapiid): {{String}}
   [StageName](#cfn-apigateway-apikey-stagekey-stagename): {{String}}
 ```

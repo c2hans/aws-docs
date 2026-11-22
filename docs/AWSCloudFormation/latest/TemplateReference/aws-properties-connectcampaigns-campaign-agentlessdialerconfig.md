@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connectcampaigns-campaign-agentlessdialerconfig-syntax.json"></a>
 
-```
+```json
 {
   "[DialingCapacity](#cfn-connectcampaigns-campaign-agentlessdialerconfig-dialingcapacity)" : {{Number}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connectcampaigns-campaign-agentlessdialerconfig-syntax.yaml"></a>
 
-```
+```yaml
   [DialingCapacity](#cfn-connectcampaigns-campaign-agentlessdialerconfig-dialingcapacity): {{Number}}
 ```
 

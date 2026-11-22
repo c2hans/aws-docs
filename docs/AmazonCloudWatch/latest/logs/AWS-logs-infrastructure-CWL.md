@@ -30,7 +30,7 @@ The log group where the logs are being sent must have a resource policy that inc
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -75,7 +75,7 @@ The log group's resource policy limit is 51,200 bytes. Once this limit is reache
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

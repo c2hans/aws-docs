@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-observabilityadmin-organizationcentralizationrule-destinationlogsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BackupConfiguration](#cfn-observabilityadmin-organizationcentralizationrule-destinationlogsconfiguration-backupconfiguration)" : {{LogsBackupConfiguration}},
   "[LogGroupNameConfiguration](#cfn-observabilityadmin-organizationcentralizationrule-destinationlogsconfiguration-loggroupnameconfiguration)" : {{LogGroupNameConfiguration}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-observabilityadmin-organizationcentralizationrule-destinationlogsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BackupConfiguration](#cfn-observabilityadmin-organizationcentralizationrule-destinationlogsconfiguration-backupconfiguration): {{
     LogsBackupConfiguration}}
   [LogGroupNameConfiguration](#cfn-observabilityadmin-organizationcentralizationrule-destinationlogsconfiguration-loggroupnameconfiguration): {{

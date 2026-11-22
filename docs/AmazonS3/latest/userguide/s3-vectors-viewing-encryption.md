@@ -11,14 +11,14 @@ After creating your vector bucket, you can verify the encryption configuration u
 
 Use the `get-vector-bucket` command to retrieve detailed bucket information, including encryption configuration. To use this example, replace the {{user input placeholders}} with your own information.
 
-```
+```bash
 aws s3vectors get-vector-bucket \
   --vector-bucket-name {{amzn-s3-demo-vector-bucket}}
 ```
 
 Use the `get-index` command to retrieve detailed vector index information, including encryption configuration. To use this example, replace the {{user input placeholders}} with your own information.
 
-```
+```bash
 aws s3vectors get-index \
   --vector-bucket-name {{amzn-s3-demo-vector-bucket}}
   --index-name {{amzn-s3-demo-vector-index}}

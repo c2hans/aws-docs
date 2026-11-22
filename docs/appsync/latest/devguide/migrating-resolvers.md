@@ -8,7 +8,7 @@ AWS AppSync allows you to write your business logic for your resolvers and funct
 
 For example, take the following VTL mapping template to get an Amazon DynamoDB item:
 
-```
+```TypeScript
 {
     "operation": "GetItem",
     "key": {
@@ -19,7 +19,7 @@ For example, take the following VTL mapping template to get an Amazon DynamoDB i
 
 The utility `$util.dynamodb.toDynamoDBJson` returns a JSON-encoded string. If `$ctx.args.id` is set to `<id>`, the template evaluates to a valid JSON-encoded string:
 
-```
+```TypeScript
 {
     "operation": "GetItem",
     "key": {
@@ -30,7 +30,7 @@ The utility `$util.dynamodb.toDynamoDBJson` returns a JSON-encoded string. If `$
 
 When working with JavaScript, you do not need to print out raw JSON-encoded strings within your code, and using a utility like `toDynamoDBJson` is not needed. An equivalent example of the mapping template above is:
 
-```
+```TypeScript
 import { util } from '@aws-appsync/utils';
 export function request(ctx) {
   return {
@@ -42,7 +42,7 @@ export function request(ctx) {
 
 An alternative is to use `util.dynamodb.toMapValues`, which is the recommended approach to handle an object of values:
 
-```
+```TypeScript
 import { util } from '@aws-appsync/utils';
 export function request(ctx) {
   return {
@@ -54,7 +54,7 @@ export function request(ctx) {
 
 This evaluates to:
 
-```
+```TypeScript
 {
   "operation": "GetItem",
   "key": {
@@ -78,7 +78,7 @@ export function request(ctx) {
 
 As another example, take the following mapping template to put an item in an Amazon DynamoDB data source:
 
-```
+```TypeScript
 {
     "operation" : "PutItem",
     "key" : {
@@ -90,7 +90,7 @@ As another example, take the following mapping template to put an item in an Ama
 
 When evaluated, this mapping template string must produce a valid JSON-encoded string. When using JavaScript, your code returns the request object directly:
 
-```
+```TypeScript
 import { util } from '@aws-appsync/utils';
 export function request(ctx) {
   const { id = util.autoId(), ...values } = ctx.args;
@@ -104,7 +104,7 @@ export function request(ctx) {
 
 which evaluates to:
 
-```
+```TypeScript
 {
   "operation": "PutItem",
   "key": {

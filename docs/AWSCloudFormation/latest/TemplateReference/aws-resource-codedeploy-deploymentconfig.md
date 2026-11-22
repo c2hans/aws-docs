@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-codedeploy-deploymentconfig-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CodeDeploy::DeploymentConfig",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-codedeploy-deploymentconfig-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CodeDeploy::DeploymentConfig
 Properties:
   [ComputePlatform](#cfn-codedeploy-deploymentconfig-computeplatform): {{String}}
@@ -111,7 +111,7 @@ The following example requires at least 75% of the fleet to be healthy. For exam
 #### JSON
 <a name="aws-resource-codedeploy-deploymentconfig--examples--Specifying_minimum_healthy_hosts--json"></a>
 
-```
+```json
 "TwentyFivePercentAtATime" : {
     "Type" : "AWS::CodeDeploy::DeploymentConfig",
     "Properties" : {
@@ -126,7 +126,7 @@ The following example requires at least 75% of the fleet to be healthy. For exam
 #### YAML
 <a name="aws-resource-codedeploy-deploymentconfig--examples--Specifying_minimum_healthy_hosts--yaml"></a>
 
-```
+```yaml
 TwentyFivePercentAtATime:
   Type: AWS::CodeDeploy::DeploymentConfig
   Properties:

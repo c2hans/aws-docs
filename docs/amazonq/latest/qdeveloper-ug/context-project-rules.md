@@ -46,7 +46,7 @@ You can create project rules either directly in the file system or through the A
 
 1. Add a detailed prompt to the file. For example:
 
-   ```
+   ```markdown
    All Amazon S3 buckets must have encryption enabled, enforce SSL, and block public access.
    All Amazon DynamoDB Streams tables must have encryption enabled.
    All Amazon SNS topics must have encryption enabled and enforce SSL.

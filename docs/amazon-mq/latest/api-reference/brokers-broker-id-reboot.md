@@ -64,7 +64,7 @@ Reboots a broker. Note: This API is asynchronous.
 #### Error schema
 <a name="brokers-broker-id-reboot-response-body-error-example"></a>
 
-```
+```json
 {
   "errorAttribute": "string",
   "message": "string"

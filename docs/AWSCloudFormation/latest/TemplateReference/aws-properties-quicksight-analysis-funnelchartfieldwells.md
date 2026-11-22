@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-funnelchartfieldwells-syntax.json"></a>
 
-```
+```json
 {
   "[FunnelChartAggregatedFieldWells](#cfn-quicksight-analysis-funnelchartfieldwells-funnelchartaggregatedfieldwells)" : {{FunnelChartAggregatedFieldWells}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-funnelchartfieldwells-syntax.yaml"></a>
 
-```
+```yaml
   [FunnelChartAggregatedFieldWells](#cfn-quicksight-analysis-funnelchartfieldwells-funnelchartaggregatedfieldwells): {{
     FunnelChartAggregatedFieldWells}}
 ```

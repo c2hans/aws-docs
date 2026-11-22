@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 
 The `04-query-test.js` program performs `Query` operations on `TryDaxTable`.
 
-```
+```javascript
 const AmazonDaxClient = require("amazon-dax-client");
 var AWS = require("aws-sdk");
 

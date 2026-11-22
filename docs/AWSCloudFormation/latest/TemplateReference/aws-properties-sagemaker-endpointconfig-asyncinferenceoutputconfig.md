@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-endpointconfig-asyncinferenceoutputconfig-syntax.json"></a>
 
-```
+```json
 {
   "[KmsKeyId](#cfn-sagemaker-endpointconfig-asyncinferenceoutputconfig-kmskeyid)" : {{String}},
   "[NotificationConfig](#cfn-sagemaker-endpointconfig-asyncinferenceoutputconfig-notificationconfig)" : {{AsyncInferenceNotificationConfig}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-endpointconfig-asyncinferenceoutputconfig-syntax.yaml"></a>
 
-```
+```yaml
   [KmsKeyId](#cfn-sagemaker-endpointconfig-asyncinferenceoutputconfig-kmskeyid): {{String}}
   [NotificationConfig](#cfn-sagemaker-endpointconfig-asyncinferenceoutputconfig-notificationconfig): {{
     AsyncInferenceNotificationConfig}}

@@ -104,7 +104,7 @@ The following example demonstrates how to specify an encryption context in your 
 
 1. Specify a KMS key as your wrapping key by instantiating your client with the `kmsKeyId` builder parameter.
 
-   ```
+   ```java
    // v4
 
    class v4KMSKeyExample {
@@ -118,7 +118,7 @@ The following example demonstrates how to specify an encryption context in your 
 
 1. Use the `overrideConfiguration` builder parameter to specify the encryption context within your `PutObject` request.
 
-   ```
+   ```java
    // v4
 
    class v4EncryptExample {
@@ -134,7 +134,7 @@ The following example demonstrates how to specify an encryption context in your 
 
 1. Include the same encryption context in your `GetObject` request.
 
-   ```
+   ```java
    // v4
 
    class v4DecryptExample {

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emr-step-hadoopjarstepconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Args](#cfn-emr-step-hadoopjarstepconfig-args)" : {{[ String, ... ]}},
   "[Jar](#cfn-emr-step-hadoopjarstepconfig-jar)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emr-step-hadoopjarstepconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Args](#cfn-emr-step-hadoopjarstepconfig-args): {{
     - String}}
   [Jar](#cfn-emr-step-hadoopjarstepconfig-jar): {{String}}

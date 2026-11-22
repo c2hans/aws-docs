@@ -124,7 +124,7 @@ In Account A, add a file system policy that grants the Account B role permission
 
 1. Add a policy that grants the Account B role permission to mount. The following example policy grants `s3files:ClientMount` and `s3files:ClientWrite` to the EC2 instance role in Account B:
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [
@@ -185,7 +185,7 @@ Attach an IAM role to the EC2 instance in Account B. The role must include the f
 + **The `AmazonS3FilesClientFullAccess` managed policy (or equivalent)** — This policy grants the EC2 instance permission to connect to and interact with S3 Files file systems.
 + **An inline policy granting S3 object access to the cross-account bucket** — This policy grants the EC2 instance permission to read objects directly from the S3 bucket in Account A.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

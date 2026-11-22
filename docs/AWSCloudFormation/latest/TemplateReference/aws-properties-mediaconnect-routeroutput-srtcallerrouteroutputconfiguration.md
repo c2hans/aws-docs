@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-routeroutput-srtcallerrouteroutputconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationAddress](#cfn-mediaconnect-routeroutput-srtcallerrouteroutputconfiguration-destinationaddress)" : {{String}},
   "[DestinationPort](#cfn-mediaconnect-routeroutput-srtcallerrouteroutputconfiguration-destinationport)" : {{Integer}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-routeroutput-srtcallerrouteroutputconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationAddress](#cfn-mediaconnect-routeroutput-srtcallerrouteroutputconfiguration-destinationaddress): {{String}}
   [DestinationPort](#cfn-mediaconnect-routeroutput-srtcallerrouteroutputconfiguration-destinationport): {{Integer}}
   [EncryptionConfiguration](#cfn-mediaconnect-routeroutput-srtcallerrouteroutputconfiguration-encryptionconfiguration): {{

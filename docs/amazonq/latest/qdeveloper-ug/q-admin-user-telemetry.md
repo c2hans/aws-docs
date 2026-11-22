@@ -35,7 +35,7 @@ Create an Amazon S3 bucket to hold the user activity report CSV file. The bucket
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [
@@ -68,7 +68,7 @@ Create an Amazon S3 bucket to hold the user activity report CSV file. The bucket
 
   If you're configuring SSE-KMS on the bucket, add the below policy on the KMS key:
 
-  ```
+  ```json
   {
       "Effect": "Allow",
       "Principal": {

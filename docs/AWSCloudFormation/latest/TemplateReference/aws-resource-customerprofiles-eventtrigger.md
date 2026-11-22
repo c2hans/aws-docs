@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-customerprofiles-eventtrigger-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CustomerProfiles::EventTrigger",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-customerprofiles-eventtrigger-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CustomerProfiles::EventTrigger
 Properties:
   [Description](#cfn-customerprofiles-eventtrigger-description): {{String}}

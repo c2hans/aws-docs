@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-synthetics-canary-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-synthetics-canary-tag-key)" : {{String}},
   "[Value](#cfn-synthetics-canary-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-synthetics-canary-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-synthetics-canary-tag-key): {{String}}
   [Value](#cfn-synthetics-canary-tag-value): {{String}}
 ```

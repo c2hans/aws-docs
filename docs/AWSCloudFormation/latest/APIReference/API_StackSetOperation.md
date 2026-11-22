@@ -57,6 +57,12 @@ The preferences for how CloudFormation performs this StackSet operation.
 Type: [StackSetOperationPreferences](API_StackSetOperationPreferences.md) object
 Required: No
 
+ ** RegionalStatusDetails **  RegionalStatusDetails.entry.N.key (key)  RegionalStatusDetails.entry.N.value (value)
+The progress detail for each Region of the operation, keyed by Region. Each entry reports the stack instances deployment progress for that Region. This field is returned only by [DescribeStackSetOperation](API_DescribeStackSetOperation.md). It is not included in the [ListStackSetOperations](API_ListStackSetOperations.md) summary.
+Type: String to [RegionalStatusDetail](API_RegionalStatusDetail.md) object map
+Key Pattern: `^[a-zA-Z0-9-]{1,128}$`
+Required: No
+
  ** RetainStacks **
 For StackSet operations of action type `DELETE`, specifies whether to remove the stack instances from the specified StackSet, but doesn't delete the stacks. You can't re-associate a retained stack, or add an existing, saved stack to a new StackSet.
 Type: Boolean

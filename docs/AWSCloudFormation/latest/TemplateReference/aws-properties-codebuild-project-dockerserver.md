@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codebuild-project-dockerserver-syntax.json"></a>
 
-```
+```json
 {
   "[ComputeType](#cfn-codebuild-project-dockerserver-computetype)" : {{String}},
   "[SecurityGroupIds](#cfn-codebuild-project-dockerserver-securitygroupids)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codebuild-project-dockerserver-syntax.yaml"></a>
 
-```
+```yaml
   [ComputeType](#cfn-codebuild-project-dockerserver-computetype): {{String}}
   [SecurityGroupIds](#cfn-codebuild-project-dockerserver-securitygroupids): {{
     - String}}

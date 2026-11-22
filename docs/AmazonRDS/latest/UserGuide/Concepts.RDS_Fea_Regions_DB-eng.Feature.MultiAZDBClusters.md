@@ -21,6 +21,9 @@ Multi-AZ DB clusters aren't available with the following engines:
 
 The following Regions and engine versions are available for Multi-AZ DB clusters with RDS for MySQL.
 
+**Note**
+Multi-AZ DB clusters aren't available for RDS for MySQL 9.7.
+
 | Region | RDS for MySQL 8.4 | RDS for MySQL 8.0 |
 | --- | --- | --- |
 | US East (N. Virginia) | All available versions | All available versions |

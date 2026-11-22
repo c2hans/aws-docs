@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-accessprofile-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-cloudwatch-accessprofile-tag-key)" : {{String}},
   "[Value](#cfn-cloudwatch-accessprofile-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-accessprofile-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-cloudwatch-accessprofile-tag-key): {{String}}
   [Value](#cfn-cloudwatch-accessprofile-tag-value): {{String}}
 ```

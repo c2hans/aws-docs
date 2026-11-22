@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-channel-s3logdestination-syntax.json"></a>
 
-```
+```json
 {
   "[Bucket](#cfn-msk-channel-s3logdestination-bucket)" : {{String}},
   "[Enabled](#cfn-msk-channel-s3logdestination-enabled)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-channel-s3logdestination-syntax.yaml"></a>
 
-```
+```yaml
   [Bucket](#cfn-msk-channel-s3logdestination-bucket): {{String}}
   [Enabled](#cfn-msk-channel-s3logdestination-enabled): {{Boolean}}
   [Prefix](#cfn-msk-channel-s3logdestination-prefix): {{String}}

@@ -78,7 +78,7 @@ Follow this procedure to run the Amazon DynamoDB Accelerator (DAX) SDK for Go sa
 
      The cluster endpoint is shown in the output, as in the following example.
 
-     ```
+     ```json
      {
          "Address": "my-cluster.l6fzcv.dax-clusters.us-east-1.amazonaws.com",
          "Port": 8111,

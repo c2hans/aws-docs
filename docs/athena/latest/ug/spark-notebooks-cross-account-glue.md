@@ -26,7 +26,7 @@ In AWS Glue, the owner creates a policy that provides the consumer's roles acces
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -76,7 +76,7 @@ In the consumer account, create a policy to allow access to the owner's AWS Glue
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -129,7 +129,7 @@ In Athena Spark, in the requester account, using the role specified, create a se
 
 When you edit the session properties, add the following:
 
-```
+```json
 {
     "spark.hadoop.aws.glue.catalog.separator": "/"
 }
@@ -137,7 +137,7 @@ When you edit the session properties, add the following:
 
 When you run a query in a cell, use syntax like that in the following example. Note that in the `FROM` clause, the catalog ID and separator are required before the database name.
 
-```
+```json
 df = spark.sql('SELECT requestip, uri, method, status FROM `{{999999999999}}/mydatabase`.cloudfront_logs LIMIT 5')
 df.show()
 ```
@@ -147,7 +147,7 @@ df.show()
 
 When you edit the session properties, enter the following property. Replace {{999999999999}} with the owner account ID.
 
-```
+```json
 {
     "spark.hadoop.hive.metastore.glue.catalogid": "{{999999999999}}"
 }
@@ -155,7 +155,7 @@ When you edit the session properties, enter the following property. Replace {{99
 
 When you run a query in a cell, use syntax like the following. Note that in the `FROM` clause, the catalog ID and separator are not required before the database name.
 
-```
+```py
 df = spark.sql('SELECT * FROM mydatabase.cloudfront_logs LIMIT 10')
 df.show()
 ```

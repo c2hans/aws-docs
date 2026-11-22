@@ -169,7 +169,7 @@ The following example uses the `aws:SourceArn` and `aws:SourceAccount` global co
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

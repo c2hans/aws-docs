@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-paymentcryptography-key-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-paymentcryptography-key-tag-key)" : {{String}},
   "[Value](#cfn-paymentcryptography-key-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-paymentcryptography-key-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-paymentcryptography-key-tag-key): {{String}}
   [Value](#cfn-paymentcryptography-key-tag-value): {{String}}
 ```

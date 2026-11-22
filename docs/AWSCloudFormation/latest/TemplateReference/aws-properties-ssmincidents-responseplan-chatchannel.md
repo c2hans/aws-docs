@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssmincidents-responseplan-chatchannel-syntax.json"></a>
 
-```
+```json
 {
   "[ChatbotSns](#cfn-ssmincidents-responseplan-chatchannel-chatbotsns)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssmincidents-responseplan-chatchannel-syntax.yaml"></a>
 
-```
+```yaml
   [ChatbotSns](#cfn-ssmincidents-responseplan-chatchannel-chatbotsns): {{
     - String}}
 ```

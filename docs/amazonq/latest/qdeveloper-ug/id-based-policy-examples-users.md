@@ -21,7 +21,7 @@ The following example policy grants permission to use Amazon Q with an Amazon Q 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -57,7 +57,7 @@ The following example policy grants users permissions to access features encrypt
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -98,7 +98,7 @@ The following example policy grants permissions to chat with Amazon Q in the con
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -134,7 +134,7 @@ The `codewhisperer` prefix is a legacy name from a service that merged with Amaz
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -170,7 +170,7 @@ The following example policy grants permissions to transform code with the [Amaz
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -200,7 +200,7 @@ The following example policy grants permissions to diagnose console errors with 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -233,7 +233,7 @@ The following example policy grants permissions to generate code from recorded C
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -259,7 +259,7 @@ The following example policy grants permission to chat with Amazon Q about resou
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -302,7 +302,7 @@ The following example policy grants permission to chat with Amazon Q, and allows
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -336,7 +336,7 @@ The following example policy grants permission to chat with Amazon Q about your 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -450,7 +450,7 @@ The following example policy grants permission to chat with Amazon Q, and allows
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -495,7 +495,7 @@ The following example policy grants permission to chat with Amazon Q, and allows
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -552,7 +552,7 @@ The following example policy grants permission to chat with Amazon Q, and allows
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -593,7 +593,7 @@ The following example policy prevents Amazon Q from performing actions on your b
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -624,7 +624,7 @@ The following example policy grants permission to chat with any plugin from a gi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -677,7 +677,7 @@ When you deny access to Amazon Q Developer, the AWS assistant icon and chat pane
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -700,7 +700,7 @@ When you deny access to Amazon Q Developer, the AWS assistant icon and chat pane
 
 This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

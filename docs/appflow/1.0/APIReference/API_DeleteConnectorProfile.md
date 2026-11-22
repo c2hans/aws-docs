@@ -81,7 +81,7 @@ This example shows a sample request and response for the `CreateConnectorProfile
 #### Sample Request
 <a name="API_DeleteConnectorProfile_Example_1_Request"></a>
 
-```
+```json
 {
   "connectorProfileName": "testMarketoProfile",
   "forceDelete": "true"
@@ -91,14 +91,14 @@ This example shows a sample request and response for the `CreateConnectorProfile
 #### Sample Response
 <a name="API_DeleteConnectorProfile_Example_1_Response"></a>
 
-```
+```json
 {
   "deleted": true,
   "flowNames": null
 }
 ```
 
-```
+```json
 {
   "message": "Conflict executing request: Connector profile: testMarketoProfile is associated with one or more flows. If you still want to *delete* it, *then* make *delete* request *with* forceDelete flag *as* true. *Some* of the associated flows are: [myTestFlow1]"
 }

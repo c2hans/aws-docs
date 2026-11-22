@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-configurationseteventdestination-snsdestination-syntax.json"></a>
 
-```
+```json
 {
   "[TopicARN](#cfn-ses-configurationseteventdestination-snsdestination-topicarn)" : {{String}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-configurationseteventdestination-snsdestination-syntax.yaml"></a>
 
-```
+```yaml
   [TopicARN](#cfn-ses-configurationseteventdestination-snsdestination-topicarn): {{String}}
 ```
 

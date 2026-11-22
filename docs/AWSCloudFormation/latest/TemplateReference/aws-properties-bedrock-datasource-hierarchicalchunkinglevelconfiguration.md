@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-datasource-hierarchicalchunkinglevelconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MaxTokens](#cfn-bedrock-datasource-hierarchicalchunkinglevelconfiguration-maxtokens)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-datasource-hierarchicalchunkinglevelconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MaxTokens](#cfn-bedrock-datasource-hierarchicalchunkinglevelconfiguration-maxtokens): {{Integer}}
 ```
 

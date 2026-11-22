@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rtbfabric-respondergateway-managedendpointconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AutoScalingGroupsConfiguration](#cfn-rtbfabric-respondergateway-managedendpointconfiguration-autoscalinggroupsconfiguration)" : {{AutoScalingGroupsConfiguration}},
   "[EksEndpointsConfiguration](#cfn-rtbfabric-respondergateway-managedendpointconfiguration-eksendpointsconfiguration)" : {{EksEndpointsConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rtbfabric-respondergateway-managedendpointconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AutoScalingGroupsConfiguration](#cfn-rtbfabric-respondergateway-managedendpointconfiguration-autoscalinggroupsconfiguration): {{
     AutoScalingGroupsConfiguration}}
   [EksEndpointsConfiguration](#cfn-rtbfabric-respondergateway-managedendpointconfiguration-eksendpointsconfiguration): {{

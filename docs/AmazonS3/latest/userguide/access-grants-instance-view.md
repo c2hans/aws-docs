@@ -62,7 +62,7 @@ To use the following examples, replace the `{{user input placeholders}}` with yo
 
 **Example – Get an S3 Access Grants instance**
 
-```
+```java
 public void getAccessGrantsInstance() {
 GetAccessGrantsInstanceRequest getRequest = GetAccessGrantsInstanceRequest.builder()
 .accountId("{{111122223333}}")
@@ -73,7 +73,7 @@ LOGGER.info("GetAccessGrantsInstanceResponse: " + getResponse);
 ```
 Response:
 
-```
+```java
 GetAccessGrantsInstanceResponse(
 AccessGrantsInstanceArn=arn:aws:s3:{{us-east-2}}: {{111122223333}}:access-grants/default,
 CreatedAt={{2023-06-07T01:46:20.507Z}})

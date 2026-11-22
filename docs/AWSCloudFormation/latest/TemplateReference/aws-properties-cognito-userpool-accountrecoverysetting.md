@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpool-accountrecoverysetting-syntax.json"></a>
 
-```
+```json
 {
   "[RecoveryMechanisms](#cfn-cognito-userpool-accountrecoverysetting-recoverymechanisms)" : {{[ RecoveryOption, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpool-accountrecoverysetting-syntax.yaml"></a>
 
-```
+```yaml
   [RecoveryMechanisms](#cfn-cognito-userpool-accountrecoverysetting-recoverymechanisms): {{
     - RecoveryOption}}
 ```

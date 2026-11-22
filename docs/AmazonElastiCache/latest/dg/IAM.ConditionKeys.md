@@ -24,7 +24,7 @@ If you do not add both Principals for ElastiCache, the intended “Allow” or �
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -65,7 +65,7 @@ The following shows an example of this permissions policy when using Valkey or R
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -111,7 +111,7 @@ The following shows an example of this permissions policy when using Memcached.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -163,7 +163,7 @@ This section shows example policies for implementing fine-grained access control
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -209,7 +209,7 @@ This section shows example policies for implementing fine-grained access control
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -252,7 +252,7 @@ This section shows example policies for implementing fine-grained access control
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -300,7 +300,7 @@ This section shows example policies for implementing fine-grained access control
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -345,7 +345,7 @@ This section shows example policies for implementing fine-grained access control
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -387,7 +387,7 @@ This section shows example policies for implementing fine-grained access control
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -432,7 +432,7 @@ This section shows example policies for implementing fine-grained access control
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -477,7 +477,7 @@ This section shows example policies for implementing fine-grained access control
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -519,7 +519,7 @@ This section shows example policies for implementing fine-grained access control
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -564,7 +564,7 @@ This section shows example policies for implementing fine-grained access control
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -609,7 +609,7 @@ This section shows example policies for implementing fine-grained access control
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -653,7 +653,7 @@ This section shows example policies for implementing fine-grained access control
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -697,7 +697,7 @@ This section shows example policies for implementing fine-grained access control
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -730,7 +730,7 @@ This section shows example policies for implementing fine-grained access control
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -772,7 +772,7 @@ This section shows example policies for implementing fine-grained access control
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -816,7 +816,7 @@ This section shows example policies for implementing fine-grained access control
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -858,7 +858,7 @@ This section shows example policies for implementing fine-grained access control
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -904,7 +904,7 @@ This section shows example policies for implementing fine-grained access control
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -952,7 +952,7 @@ This section shows example policies for implementing fine-grained access control
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -995,7 +995,7 @@ This section shows example policies for implementing fine-grained access control
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -1041,7 +1041,7 @@ This section shows example policies for implementing fine-grained access control
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -1084,7 +1084,7 @@ This section shows example policies for implementing fine-grained access control
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -1144,7 +1144,7 @@ This section shows example policies for implementing fine-grained access control
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -1192,7 +1192,7 @@ This section shows example policies for implementing fine-grained access control
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -1234,7 +1234,7 @@ This section shows example policies for implementing fine-grained access control
 
 1. **elasticache:ConnectionType**: Deny creating serverless caches with a public connection type. Using the provided condition, administrators can prevent users from creating caches with public endpoints.
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [

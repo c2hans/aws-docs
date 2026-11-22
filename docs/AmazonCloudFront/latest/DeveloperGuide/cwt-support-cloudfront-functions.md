@@ -111,7 +111,7 @@ When the `validateToken()` method returns a successfully validated token, the re
 
 This example demonstrates CWT token validation, where the `kid` is read from the `x-cwt-kid` request header. The `kid` is then passed into CloudFront Functions KeyValueStore to fetch the secret key used to validate the token.
 
-```
+```javascript
 import cf from 'cloudfront'
 
 const CwtClaims = {
@@ -194,7 +194,7 @@ Returns a JavaScript Buffer containing the encoded token.
 
 **Example : Generate a token**
 
-```
+```javascript
 import cf from 'cloudfront';
 
 const CwtClaims = {
@@ -325,7 +325,7 @@ async function handler(event) {
 
 **Example : Refresh token based on some logic**
 
-```
+```javascript
 import cf from 'cloudfront'
 
 const CwtClaims = {

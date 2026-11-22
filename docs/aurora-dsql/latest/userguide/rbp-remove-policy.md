@@ -41,7 +41,7 @@ aws dsql delete-cluster-policy --identifier {{your_cluster_id}}
 ------
 #### [ Python ]
 
-```
+```python
 import boto3
 
 client = boto3.client('dsql')
@@ -56,7 +56,7 @@ print("Policy deleted successfully")
 ------
 #### [ Java ]
 
-```
+```java
 import software.amazon.awssdk.services.dsql.DsqlClient;
 import software.amazon.awssdk.services.dsql.model.DeleteClusterPolicyRequest;
 

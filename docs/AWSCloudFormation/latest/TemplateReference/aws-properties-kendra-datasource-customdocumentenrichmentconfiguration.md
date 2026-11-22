@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-customdocumentenrichmentconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[InlineConfigurations](#cfn-kendra-datasource-customdocumentenrichmentconfiguration-inlineconfigurations)" : {{[ InlineCustomDocumentEnrichmentConfiguration, ... ]}},
   "[PostExtractionHookConfiguration](#cfn-kendra-datasource-customdocumentenrichmentconfiguration-postextractionhookconfiguration)" : {{HookConfiguration}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-customdocumentenrichmentconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [InlineConfigurations](#cfn-kendra-datasource-customdocumentenrichmentconfiguration-inlineconfigurations): {{
     - InlineCustomDocumentEnrichmentConfiguration}}
   [PostExtractionHookConfiguration](#cfn-kendra-datasource-customdocumentenrichmentconfiguration-postextractionhookconfiguration): {{

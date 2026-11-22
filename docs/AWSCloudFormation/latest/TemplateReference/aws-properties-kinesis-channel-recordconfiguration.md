@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesis-channel-recordconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[GSRSchemaARN](#cfn-kinesis-channel-recordconfiguration-gsrschemaarn)" : {{String}},
   "[RecordFormatType](#cfn-kinesis-channel-recordconfiguration-recordformattype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesis-channel-recordconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [GSRSchemaARN](#cfn-kinesis-channel-recordconfiguration-gsrschemaarn): {{String}}
   [RecordFormatType](#cfn-kinesis-channel-recordconfiguration-recordformattype): {{String}}
 ```

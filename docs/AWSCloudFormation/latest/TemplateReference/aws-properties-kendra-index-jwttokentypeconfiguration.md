@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-index-jwttokentypeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ClaimRegex](#cfn-kendra-index-jwttokentypeconfiguration-claimregex)" : {{String}},
   "[GroupAttributeField](#cfn-kendra-index-jwttokentypeconfiguration-groupattributefield)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-index-jwttokentypeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ClaimRegex](#cfn-kendra-index-jwttokentypeconfiguration-claimregex): {{String}}
   [GroupAttributeField](#cfn-kendra-index-jwttokentypeconfiguration-groupattributefield): {{String}}
   [Issuer](#cfn-kendra-index-jwttokentypeconfiguration-issuer): {{String}}

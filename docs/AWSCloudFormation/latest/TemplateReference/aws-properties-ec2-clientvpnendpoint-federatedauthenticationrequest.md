@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-clientvpnendpoint-federatedauthenticationrequest-syntax.json"></a>
 
-```
+```json
 {
   "[SAMLProviderArn](#cfn-ec2-clientvpnendpoint-federatedauthenticationrequest-samlproviderarn)" : {{String}},
   "[SelfServiceSAMLProviderArn](#cfn-ec2-clientvpnendpoint-federatedauthenticationrequest-selfservicesamlproviderarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-clientvpnendpoint-federatedauthenticationrequest-syntax.yaml"></a>
 
-```
+```yaml
   [SAMLProviderArn](#cfn-ec2-clientvpnendpoint-federatedauthenticationrequest-samlproviderarn): {{String}}
   [SelfServiceSAMLProviderArn](#cfn-ec2-clientvpnendpoint-federatedauthenticationrequest-selfservicesamlproviderarn): {{String}}
 ```

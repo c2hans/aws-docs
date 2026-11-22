@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_
 
 The `Statement` element is the main element for a policy. This element is required. The `Statement` element can contain a single statement or an array of individual statements. Each individual statement block must be enclosed in curly braces { }. For multiple statements, the array must be enclosed in square brackets [ ].
 
-```
+```json
 "Statement": [{...},{...},{...}]
 ```
 
@@ -17,7 +17,7 @@ The following example shows a policy that contains an array of three statements 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

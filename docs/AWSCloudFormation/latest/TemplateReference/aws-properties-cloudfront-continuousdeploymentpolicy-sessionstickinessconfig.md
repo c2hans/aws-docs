@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-continuousdeploymentpolicy-sessionstickinessconfig-syntax.json"></a>
 
-```
+```json
 {
   "[IdleTTL](#cfn-cloudfront-continuousdeploymentpolicy-sessionstickinessconfig-idlettl)" : {{Integer}},
   "[MaximumTTL](#cfn-cloudfront-continuousdeploymentpolicy-sessionstickinessconfig-maximumttl)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-continuousdeploymentpolicy-sessionstickinessconfig-syntax.yaml"></a>
 
-```
+```yaml
   [IdleTTL](#cfn-cloudfront-continuousdeploymentpolicy-sessionstickinessconfig-idlettl): {{Integer}}
   [MaximumTTL](#cfn-cloudfront-continuousdeploymentpolicy-sessionstickinessconfig-maximumttl): {{Integer}}
 ```

@@ -25,7 +25,7 @@ The following example demonstrates the structure of the `Outputs` section.
 
 Use braces to enclose all output declarations. Delimit multiple outputs with commas.
 
-```
+```json
 "Outputs" : {
   "{{OutputLogicalID}}" : {
     "Description" : "{{Information about the value}}",
@@ -40,7 +40,7 @@ Use braces to enclose all output declarations. Delimit multiple outputs with com
 ### YAML
 <a name="outputs-section-structure-syntax.yaml"></a>
 
-```
+```yaml
 Outputs:
   {{OutputLogicalID}}:
     Description: {{Information about the value}}
@@ -89,7 +89,7 @@ In the following example, the output named `BackupLoadBalancerDNSName` returns t
 #### JSON
 <a name="outputs-section-structure-example.json"></a>
 
-```
+```json
 "Outputs" : {
   "BackupLoadBalancerDNSName" : {
     "Description": "The DNSName of the backup load balancer",
@@ -106,7 +106,7 @@ In the following example, the output named `BackupLoadBalancerDNSName` returns t
 #### YAML
 <a name="outputs-section-structure-example.yaml"></a>
 
-```
+```yaml
 Outputs:
   BackupLoadBalancerDNSName:
     Description: The DNSName of the backup load balancer
@@ -125,7 +125,7 @@ In the following examples, the output named `StackVPC` returns the ID of a VPC, 
 #### JSON
 <a name="outputs-section-structure-cross-stack-example.json"></a>
 
-```
+```json
 "Outputs" : {
   "StackVPC" : {
     "Description" : "The ID of the VPC",
@@ -140,7 +140,7 @@ In the following examples, the output named `StackVPC` returns the ID of a VPC, 
 #### YAML
 <a name="outputs-section-structure-cross-stack-example.yaml"></a>
 
-```
+```yaml
 Outputs:
   StackVPC:
     Description: The ID of the VPC
@@ -161,7 +161,7 @@ The following examples use the `Fn::Join` function to customize the export name 
 #### JSON
 <a name="outputs-section-structure-join-export-name-example.json"></a>
 
-```
+```json
 "Outputs" : {
   "StackVPC" : {
     "Description" : "The ID of the VPC",
@@ -176,7 +176,7 @@ The following examples use the `Fn::Join` function to customize the export name 
 #### YAML
 <a name="outputs-section-structure-join-export-name-example.yaml"></a>
 
-```
+```yaml
 Outputs:
   StackVPC:
     Description: The ID of the VPC
@@ -199,7 +199,7 @@ http://mywptests-elasticl-1gb51l6sl8y5v-206169572.{{aws-region}}.elb.amazonaws.c
 #### JSON
 <a name="outputs-section-structure-examples-join-export-url.json"></a>
 
-```
+```json
 {
     "Outputs": {
         "InstallURL": {
@@ -227,7 +227,7 @@ http://mywptests-elasticl-1gb51l6sl8y5v-206169572.{{aws-region}}.elb.amazonaws.c
 #### YAML
 <a name="outputs-section-structure-examples-join-export-url.yaml"></a>
 
-```
+```yaml
 Outputs:
   InstallURL:
     Value: !Join

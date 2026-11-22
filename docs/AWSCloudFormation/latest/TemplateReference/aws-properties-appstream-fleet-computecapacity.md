@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appstream-fleet-computecapacity-syntax.json"></a>
 
-```
+```json
 {
   "[DesiredInstances](#cfn-appstream-fleet-computecapacity-desiredinstances)" : {{Integer}},
   "[DesiredSessions](#cfn-appstream-fleet-computecapacity-desiredsessions)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appstream-fleet-computecapacity-syntax.yaml"></a>
 
-```
+```yaml
   [DesiredInstances](#cfn-appstream-fleet-computecapacity-desiredinstances): {{Integer}}
   [DesiredSessions](#cfn-appstream-fleet-computecapacity-desiredsessions): {{Integer}}
 ```

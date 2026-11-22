@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-memorydb-parametergroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MemoryDB::ParameterGroup",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-memorydb-parametergroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MemoryDB::ParameterGroup
 Properties:
   [Description](#cfn-memorydb-parametergroup-description): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-appimageconfig-customimagecontainerenvironmentvariable-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-sagemaker-appimageconfig-customimagecontainerenvironmentvariable-key)" : {{String}},
   "[Value](#cfn-sagemaker-appimageconfig-customimagecontainerenvironmentvariable-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-appimageconfig-customimagecontainerenvironmentvariable-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-sagemaker-appimageconfig-customimagecontainerenvironmentvariable-key): {{String}}
   [Value](#cfn-sagemaker-appimageconfig-customimagecontainerenvironmentvariable-value): {{String}}
 ```

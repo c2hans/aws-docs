@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-inputlocation-syntax.json"></a>
 
-```
+```json
 {
   "[PasswordParam](#cfn-medialive-channel-inputlocation-passwordparam)" : {{String}},
   "[Uri](#cfn-medialive-channel-inputlocation-uri)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-inputlocation-syntax.yaml"></a>
 
-```
+```yaml
   [PasswordParam](#cfn-medialive-channel-inputlocation-passwordparam): {{String}}
   [Uri](#cfn-medialive-channel-inputlocation-uri): {{String}}
   [Username](#cfn-medialive-channel-inputlocation-username): {{String}}

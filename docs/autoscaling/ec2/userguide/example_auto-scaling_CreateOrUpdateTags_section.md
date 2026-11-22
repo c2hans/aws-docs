@@ -27,12 +27,12 @@ For more information, see [Tagging Auto Scaling groups and instances](https://do
 **Tools for PowerShell V4**
 **Example 1: This example adds a single tag to the specified Auto Scaling group. The tag key is 'myTag' and the tag value is 'myTagValue'. Auto Scaling propagates this tag to the subsequent EC2 instances launched by the Auto Scaling group. The syntax used by this example requires PowerShell version 3 or later.**
 
-```
+```powershell
 Set-ASTag -Tag @( @{ResourceType="auto-scaling-group"; ResourceId="my-asg"; Key="myTag"; Value="myTagValue"; PropagateAtLaunch=$true} )
 ```
 **Example 2: With PowerShell version 2, you must use New-Object to create the tag for the Tag parameter.**
 
-```
+```powershell
 $tag = New-Object Amazon.AutoScaling.Model.Tag
 $tag.ResourceType = "auto-scaling-group"
 $tag.ResourceId = "my-asg"
@@ -46,12 +46,12 @@ Set-ASTag -Tag $tag
 **Tools for PowerShell V5**
 **Example 1: This example adds a single tag to the specified Auto Scaling group. The tag key is 'myTag' and the tag value is 'myTagValue'. Auto Scaling propagates this tag to the subsequent EC2 instances launched by the Auto Scaling group. The syntax used by this example requires PowerShell version 3 or later.**
 
-```
+```powershell
 Set-ASTag -Tag @( @{ResourceType="auto-scaling-group"; ResourceId="my-asg"; Key="myTag"; Value="myTagValue"; PropagateAtLaunch=$true} )
 ```
 **Example 2: With PowerShell version 2, you must use New-Object to create the tag for the Tag parameter.**
 
-```
+```powershell
 $tag = New-Object Amazon.AutoScaling.Model.Tag
 $tag.ResourceType = "auto-scaling-group"
 $tag.ResourceId = "my-asg"

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-scheduler-schedule-ecsparameters-syntax.json"></a>
 
-```
+```json
 {
   "[CapacityProviderStrategy](#cfn-scheduler-schedule-ecsparameters-capacityproviderstrategy)" : {{[ CapacityProviderStrategyItem, ... ]}},
   "[EnableECSManagedTags](#cfn-scheduler-schedule-ecsparameters-enableecsmanagedtags)" : {{Boolean}},
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-scheduler-schedule-ecsparameters-syntax.yaml"></a>
 
-```
+```yaml
   [CapacityProviderStrategy](#cfn-scheduler-schedule-ecsparameters-capacityproviderstrategy): {{
     - CapacityProviderStrategyItem}}
   [EnableECSManagedTags](#cfn-scheduler-schedule-ecsparameters-enableecsmanagedtags): {{Boolean}}

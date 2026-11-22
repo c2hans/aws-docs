@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-networkfirewall-loggingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::NetworkFirewall::LoggingConfiguration",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-networkfirewall-loggingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::NetworkFirewall::LoggingConfiguration
 Properties:
   [EnableMonitoringDashboard](#cfn-networkfirewall-loggingconfiguration-enablemonitoringdashboard): {{Boolean}}
@@ -110,7 +110,7 @@ The following shows example logging configuration specifications for alert logs 
 #### JSON
 <a name="aws-resource-networkfirewall-loggingconfiguration--examples--Create_a_logging_configuration_for_and_Kinesis_Data_Firehose--json"></a>
 
-```
+```json
 "SampleLoggingConfiguration": {
     "Type": "AWS::NetworkFirewall::LoggingConfiguration",
     "Properties": {
@@ -142,7 +142,7 @@ The following shows example logging configuration specifications for alert logs 
 #### YAML
 <a name="aws-resource-networkfirewall-loggingconfiguration--examples--Create_a_logging_configuration_for_and_Kinesis_Data_Firehose--yaml"></a>
 
-```
+```yaml
 SampleLoggingConfiguration:
   Type: 'AWS::NetworkFirewall::LoggingConfiguration'
   Properties:
@@ -167,7 +167,7 @@ The following shows example logging configuration specifications for flow logs t
 #### JSON
 <a name="aws-resource-networkfirewall-loggingconfiguration--examples--Create_a_logging_configuration_for_Amazon_S3--json"></a>
 
-```
+```json
 "SampleLoggingConfiguration": {
     "Type": "AWS::NetworkFirewall::LoggingConfiguration",
     "Properties": {
@@ -193,7 +193,7 @@ The following shows example logging configuration specifications for flow logs t
 #### YAML
 <a name="aws-resource-networkfirewall-loggingconfiguration--examples--Create_a_logging_configuration_for_Amazon_S3--yaml"></a>
 
-```
+```yaml
 SampleLoggingConfiguration:
   Type: 'AWS::NetworkFirewall::LoggingConfiguration'
   Properties:

@@ -34,7 +34,7 @@ aws application-autoscaling put-scaling-policy --cli-input-json file://scale-out
 
 The contents of the file `scale-out-utilization.json` are as follows:
 
-```
+```json
 {
     "PolicyName": "{{policyname}}",
     "ServiceNamespace": "appstream",
@@ -90,7 +90,7 @@ aws application-autoscaling put-scaling-policy --cli-input-json file://scale-out
 
 The contents of the file `scale-out-capacity.json` are as follows:
 
-```
+```json
 {
     "PolicyName": "{{policyname}}",
     "ServiceNamespace": "appstream",
@@ -112,7 +112,7 @@ The contents of the file `scale-out-capacity.json` are as follows:
 
 If the command is successful, the output is similar to the following, although some details are unique to your account and Region. In this example, the policy identifier is `f4495f21-0650-470c-88e6-0f393adb64fc`.
 
-```
+```json
 {"PolicyARN": "arn:aws:autoscaling:us-west-2:123456789012:scalingPolicy:f4495f21-0650-470c-88e6-0f393adb64fc:resource/appstream/fleet/SampleFleetName:policyName/scale-out-insufficient-capacity-policy"}
 ```
 
@@ -146,7 +146,7 @@ aws application-autoscaling put-scaling-policy --cli-input-json file://scale-in-
 
 The contents of the file `scale-in-capacity.json` are as follows:
 
-```
+```json
 {
     "PolicyName": "{{policyname}}",
     "ServiceNamespace": "appstream",
@@ -168,7 +168,7 @@ The contents of the file `scale-in-capacity.json` are as follows:
 
 If the command is successful, the output is similar to the following, although some details are unique to your account and Region. In this example, the policy identifier is `12ab3c4d-56789-0ef1-2345-6ghi7jk8lm90`.
 
-```
+```json
 {"PolicyARN": "arn:aws:autoscaling:us-west-2:123456789012:scalingPolicy:12ab3c4d-56789-0ef1-2345-6ghi7jk8lm90:resource/appstream/fleet/SampleFleetName:policyName/scale-in-utilization-policy"}
 ```
 
@@ -273,7 +273,7 @@ aws application-autoscaling put-scaling-policy --cli-input-json file://config.js
 
 The contents of the file `config.json` are as follows:
 
-```
+```json
 {
   "PolicyName":"target-tracking-scaling-policy",
   "ServiceNamespace":"appstream",

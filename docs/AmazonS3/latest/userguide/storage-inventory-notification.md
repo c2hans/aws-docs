@@ -10,7 +10,7 @@ Amazon S3 can publish events to an Amazon Simple Notification Service (Amazon SN
 
 The following notification configuration defines that all `manifest.checksum` files newly added to the destination bucket are processed by the AWS Lambda `cloud-function-list-write`.
 
-```
+```xml
 <NotificationConfiguration>
   <QueueConfiguration>
       <Id>1</Id>

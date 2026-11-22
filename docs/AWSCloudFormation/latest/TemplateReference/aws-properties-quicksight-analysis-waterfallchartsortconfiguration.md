@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-waterfallchartsortconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BreakdownItemsLimit](#cfn-quicksight-analysis-waterfallchartsortconfiguration-breakdownitemslimit)" : {{ItemsLimitConfiguration}},
   "[CategorySort](#cfn-quicksight-analysis-waterfallchartsortconfiguration-categorysort)" : {{[ FieldSortOptions, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-waterfallchartsortconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BreakdownItemsLimit](#cfn-quicksight-analysis-waterfallchartsortconfiguration-breakdownitemslimit): {{
     ItemsLimitConfiguration}}
   [CategorySort](#cfn-quicksight-analysis-waterfallchartsortconfiguration-categorysort): {{

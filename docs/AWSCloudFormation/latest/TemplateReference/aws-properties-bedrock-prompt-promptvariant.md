@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-prompt-promptvariant-syntax.json"></a>
 
-```
+```json
 {
   "[AdditionalModelRequestFields](#cfn-bedrock-prompt-promptvariant-additionalmodelrequestfields)" : {{Json}},
   "[GenAiResource](#cfn-bedrock-prompt-promptvariant-genairesource)" : {{PromptGenAiResource}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-prompt-promptvariant-syntax.yaml"></a>
 
-```
+```yaml
   [AdditionalModelRequestFields](#cfn-bedrock-prompt-promptvariant-additionalmodelrequestfields): {{Json}}
   [GenAiResource](#cfn-bedrock-prompt-promptvariant-genairesource): {{
     PromptGenAiResource}}

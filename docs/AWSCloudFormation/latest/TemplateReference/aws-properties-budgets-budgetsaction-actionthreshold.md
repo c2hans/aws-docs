@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-budgets-budgetsaction-actionthreshold-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-budgets-budgetsaction-actionthreshold-type)" : {{String}},
   "[Value](#cfn-budgets-budgetsaction-actionthreshold-value)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-budgets-budgetsaction-actionthreshold-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-budgets-budgetsaction-actionthreshold-type): {{String}}
   [Value](#cfn-budgets-budgetsaction-actionthreshold-value): {{Number}}
 ```

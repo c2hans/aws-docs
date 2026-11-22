@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-channel-hlsplaylistsettings-syntax.json"></a>
 
-```
+```json
 {
   "[AdMarkupType](#cfn-mediatailor-channel-hlsplaylistsettings-admarkuptype)" : {{[ String, ... ]}},
   "[ManifestWindowSeconds](#cfn-mediatailor-channel-hlsplaylistsettings-manifestwindowseconds)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-channel-hlsplaylistsettings-syntax.yaml"></a>
 
-```
+```yaml
   [AdMarkupType](#cfn-mediatailor-channel-hlsplaylistsettings-admarkuptype): {{
     - String}}
   [ManifestWindowSeconds](#cfn-mediatailor-channel-hlsplaylistsettings-manifestwindowseconds): {{Number}}

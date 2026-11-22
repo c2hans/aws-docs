@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-securityconfiguration-jobbookmarksencryption-syntax.json"></a>
 
-```
+```json
 {
   "[JobBookmarksEncryptionMode](#cfn-glue-securityconfiguration-jobbookmarksencryption-jobbookmarksencryptionmode)" : {{String}},
   "[KmsKeyArn](#cfn-glue-securityconfiguration-jobbookmarksencryption-kmskeyarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-securityconfiguration-jobbookmarksencryption-syntax.yaml"></a>
 
-```
+```yaml
   [JobBookmarksEncryptionMode](#cfn-glue-securityconfiguration-jobbookmarksencryption-jobbookmarksencryptionmode): {{String}}
   [KmsKeyArn](#cfn-glue-securityconfiguration-jobbookmarksencryption-kmskeyarn): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rtbfabric-link-nobidmoduleparameters-syntax.json"></a>
 
-```
+```json
 {
   "[PassThroughPercentage](#cfn-rtbfabric-link-nobidmoduleparameters-passthroughpercentage)" : {{Number}},
   "[Reason](#cfn-rtbfabric-link-nobidmoduleparameters-reason)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rtbfabric-link-nobidmoduleparameters-syntax.yaml"></a>
 
-```
+```yaml
   [PassThroughPercentage](#cfn-rtbfabric-link-nobidmoduleparameters-passthroughpercentage): {{Number}}
   [Reason](#cfn-rtbfabric-link-nobidmoduleparameters-reason): {{String}}
   [ReasonCode](#cfn-rtbfabric-link-nobidmoduleparameters-reasoncode): {{Integer}}

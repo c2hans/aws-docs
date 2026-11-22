@@ -64,7 +64,7 @@ Enable CORS by returning correct headers
 #### DescribeClusterOperationV2Response schema
 <a name="v2-operations-clusteroperationarn-response-body-describeclusteroperationv2response-example"></a>
 
-```
+```json
 {
   "clusterOperationInfo": {
     "clusterType": enum,
@@ -306,6 +306,10 @@ Enable CORS by returning correct headers
         "zookeeperAccess": {
           "enabled": boolean
         }
+      },
+      "brokerTypeUpgradeInfo": {
+        "topicReassignmentMode": enum,
+        "topicReassignmentOperationArn": "string"
       }
     },
     "operationState": "string",
@@ -366,6 +370,16 @@ Broker Logs details for cluster.
 | cloudWatchLogs | [CloudWatchLogs](#v2-operations-clusteroperationarn-model-cloudwatchlogs) | False | CloudWatch Log destination details. |
 | firehose | [Firehose](#v2-operations-clusteroperationarn-model-firehose) | False |  |
 | s3 | [S3](#v2-operations-clusteroperationarn-model-s3) | False | S3 Log destination details. |
+
+### BrokerTypeUpgradeInfo
+<a name="v2-operations-clusteroperationarn-model-brokertypeupgradeinfo"></a>
+
+How the topics of a cluster are being moved onto its Express brokers during an in-place upgrade from Standard brokers to Express brokers. Amazon MSK records this on the `UPDATE_BROKER_TYPE` operation that initiated the upgrade.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| topicReassignmentMode | [TopicReassignmentMode](#v2-operations-clusteroperationarn-model-topicreassignmentmode) | False | Whether Amazon MSK reassigned the topics for you. `AUTO` means Amazon MSK started a reassignment of every topic onto the Express brokers as soon as they joined the cluster. `MANUAL`, the default, means you reassign topics yourself with the topic reassignment operations of the 1.0 API.<br />This value echoes the `topicReassignment` parameter of the `UpdateBrokerType` request that initiated the upgrade. |
+| topicReassignmentOperationArn | string<br />MaxLength: 2048 | False | The reassignment that Amazon MSK started for this upgrade. It appears once that reassignment has started, and it is always absent under `MANUAL`, because then Amazon MSK starts none. Poll its progress with the `DescribeTopicReassignment` operation of the 1.0 API. |
 
 ### ClientAuthentication
 <a name="v2-operations-clusteroperationarn-model-clientauthentication"></a>
@@ -440,6 +454,7 @@ Returns information about a provisioned cluster operation.
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
+| brokerTypeUpgradeInfo | [BrokerTypeUpgradeInfo](#v2-operations-clusteroperationarn-model-brokertypeupgradeinfo) | False | The topic reassignment details of the `UPDATE_BROKER_TYPE` operation that initiated an in-place upgrade from Standard brokers to Express brokers. This field is present only on that operation; the operations that complete or roll back an upgrade, and every operation of any other type, omit it. |
 | operationSteps | Array of type [ClusterOperationStep](#v2-operations-clusteroperationarn-model-clusteroperationstep) | False | Steps completed during the operation. |
 | sourceClusterInfo | [MutableClusterInfo](#v2-operations-clusteroperationarn-model-mutableclusterinfo) | False | Information about cluster attributes before a cluster is updated. |
 | targetClusterInfo | [MutableClusterInfo](#v2-operations-clusteroperationarn-model-mutableclusterinfo) | False | Information about cluster attributes after a cluster is updated. |
@@ -589,7 +604,7 @@ Information about cluster attributes that can be updated using update APIs.
 | connectivityInfo | [ConnectivityInfo](#v2-operations-clusteroperationarn-model-connectivityinfo) | False | Defines the connectivity configuration of the cluster. |
 | encryptionInfo | [EncryptionInfo](#v2-operations-clusteroperationarn-model-encryptioninfo) | False | Encryption details. |
 | enhancedMonitoring | [EnhancedMonitoring](#v2-operations-clusteroperationarn-model-enhancedmonitoring) | False | This knob controls level of metrics pushed customer's CloudWatch account. |
-| instanceType | string | False | The instance type. |
+| instanceType | string | False | The instance type.<br />While a cluster is in mixed mode during an in-place upgrade from Standard brokers to Express brokers, this is the composite value of both broker types (for example, `kafka.m7g.large-express.m7g.large`). A cluster that is not mid-upgrade reports a single instance type. |
 | kafkaVersion | string | False | The Kafka version. |
 | loggingInfo | [LoggingInfo](#v2-operations-clusteroperationarn-model-logginginfo) | False | LoggingInfo details. |
 | numberOfBrokerNodes | integer | False | The number of Kafka broker nodes of the Cluster. |
@@ -707,6 +722,17 @@ The details of client authentication using TLS.
 | --- |--- |--- |--- |
 | certificateAuthorityArnList | Array of type string | False | List of ACM CertificateAuthority ARNs. |
 | enabled | boolean | False | Whether TLS authentication is turned on. |
+
+### TopicReassignmentMode
+<a name="v2-operations-clusteroperationarn-model-topicreassignmentmode"></a>
+
+When you initiate the upgrade, you choose how topics move from Standard brokers to Express brokers. In both modes, Amazon MSK manages the topic reassignment and keeps your applications available. The only difference is who decides which topics move and when.
+
+`AUTO` - Amazon MSK moves all your topics to Express brokers. Your Standard brokers stay in the cluster after migration so that you can validate your applications before you complete the upgrade. You can stop the topic reassignment at any time with `StopTopicReassignment`; topics that have already moved stay on Express brokers. In the AWS CLI, set `--topic-reassignment` to `AUTO`.
+
+`MANUAL` - You choose which topics move and when, and Amazon MSK manages each reassignment. You can move topics individually or in batches, validate each batch before you continue, and stop and resume at any point. To stop an in-flight reassignment, use `StopTopicReassignment`. In the AWS CLI, set `--topic-reassignment` to `MANUAL`.
++ `AUTO`
++ `MANUAL`
 
 ### Unauthenticated
 <a name="v2-operations-clusteroperationarn-model-unauthenticated"></a>

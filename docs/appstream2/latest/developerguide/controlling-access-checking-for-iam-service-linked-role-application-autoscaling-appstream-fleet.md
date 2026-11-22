@@ -30,7 +30,7 @@ The `AWSServiceRoleForApplicationAutoScaling_AppStreamFleet` trust relationship 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lightsail-instance-port-syntax.json"></a>
 
-```
+```json
 {
   "[AccessDirection](#cfn-lightsail-instance-port-accessdirection)" : {{String}},
   "[AccessFrom](#cfn-lightsail-instance-port-accessfrom)" : {{String}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lightsail-instance-port-syntax.yaml"></a>
 
-```
+```yaml
   [AccessDirection](#cfn-lightsail-instance-port-accessdirection): {{String}}
   [AccessFrom](#cfn-lightsail-instance-port-accessfrom): {{String}}
   [AccessType](#cfn-lightsail-instance-port-accesstype): {{String}}

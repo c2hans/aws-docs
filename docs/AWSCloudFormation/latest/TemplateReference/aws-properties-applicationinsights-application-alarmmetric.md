@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationinsights-application-alarmmetric-syntax.json"></a>
 
-```
+```json
 {
   "[AlarmMetricName](#cfn-applicationinsights-application-alarmmetric-alarmmetricname)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationinsights-application-alarmmetric-syntax.yaml"></a>
 
-```
+```yaml
   [AlarmMetricName](#cfn-applicationinsights-application-alarmmetric-alarmmetricname): {{String}}
 ```
 

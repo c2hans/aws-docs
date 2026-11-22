@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eventschemas-discoverer-tagsentry-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-eventschemas-discoverer-tagsentry-key)" : {{String}},
   "[Value](#cfn-eventschemas-discoverer-tagsentry-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eventschemas-discoverer-tagsentry-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-eventschemas-discoverer-tagsentry-key): {{String}}
   [Value](#cfn-eventschemas-discoverer-tagsentry-value): {{String}}
 ```

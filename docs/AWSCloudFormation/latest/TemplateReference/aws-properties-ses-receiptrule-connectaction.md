@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-receiptrule-connectaction-syntax.json"></a>
 
-```
+```json
 {
   "[IAMRoleARN](#cfn-ses-receiptrule-connectaction-iamrolearn)" : {{String}},
   "[InstanceARN](#cfn-ses-receiptrule-connectaction-instancearn)" : {{String}}
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-receiptrule-connectaction-syntax.yaml"></a>
 
-```
+```yaml
   [IAMRoleARN](#cfn-ses-receiptrule-connectaction-iamrolearn): {{String}}
   [InstanceARN](#cfn-ses-receiptrule-connectaction-instancearn): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-connectiontype-jwtbearerproperties-syntax.json"></a>
 
-```
+```json
 {
   "[ContentType](#cfn-glue-connectiontype-jwtbearerproperties-contenttype)" : {{String}},
   "[JwtToken](#cfn-glue-connectiontype-jwtbearerproperties-jwttoken)" : {{SecretConnectorProperty}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-connectiontype-jwtbearerproperties-syntax.yaml"></a>
 
-```
+```yaml
   [ContentType](#cfn-glue-connectiontype-jwtbearerproperties-contenttype): {{String}}
   [JwtToken](#cfn-glue-connectiontype-jwtbearerproperties-jwttoken): {{
     SecretConnectorProperty}}

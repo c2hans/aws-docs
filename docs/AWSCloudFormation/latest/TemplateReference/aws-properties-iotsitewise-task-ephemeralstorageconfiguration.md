@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotsitewise-task-ephemeralstorageconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[StorageClass](#cfn-iotsitewise-task-ephemeralstorageconfiguration-storageclass)" : {{String}},
   "[StorageSizeInGiB](#cfn-iotsitewise-task-ephemeralstorageconfiguration-storagesizeingib)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotsitewise-task-ephemeralstorageconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [StorageClass](#cfn-iotsitewise-task-ephemeralstorageconfiguration-storageclass): {{String}}
   [StorageSizeInGiB](#cfn-iotsitewise-task-ephemeralstorageconfiguration-storagesizeingib): {{Integer}}
 ```

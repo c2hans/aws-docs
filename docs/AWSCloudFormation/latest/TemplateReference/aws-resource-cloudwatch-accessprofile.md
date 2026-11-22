@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudwatch-accessprofile-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudWatch::AccessProfile",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudwatch-accessprofile-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudWatch::AccessProfile
 Properties:
   [Description](#cfn-cloudwatch-accessprofile-description): {{String}}

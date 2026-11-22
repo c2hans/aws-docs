@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-backup-logicallyairgappedbackupvault-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Backup::LogicallyAirGappedBackupVault",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-backup-logicallyairgappedbackupvault-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Backup::LogicallyAirGappedBackupVault
 Properties:
   [AccessPolicy](#cfn-backup-logicallyairgappedbackupvault-accesspolicy): {{Json}}

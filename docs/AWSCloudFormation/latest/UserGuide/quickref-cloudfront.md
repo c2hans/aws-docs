@@ -21,7 +21,7 @@ The following example template shows an Amazon CloudFront [Distribution](https:/
 ### JSON
 <a name="quickref-cloudfront-example-1.json"></a>
 
-```
+```json
  1. {
  2.     "AWSTemplateFormatVersion" : "2010-09-09",
  3.     "Resources" : {
@@ -73,7 +73,7 @@ The following example template shows an Amazon CloudFront [Distribution](https:/
 ### YAML
 <a name="quickref-cloudfront-example-1.yaml"></a>
 
-```
+```yaml
  1. AWSTemplateFormatVersion: '2010-09-09'
  2. Resources:
  3.   myDistribution:
@@ -132,7 +132,7 @@ The following example template shows an Amazon CloudFront [Distribution](https:/
 ### JSON
 <a name="quickref-cloudfront-example-2.json"></a>
 
-```
+```json
  1. {
  2.     "AWSTemplateFormatVersion" : "2010-09-09",
  3.     "Resources" : {
@@ -198,7 +198,7 @@ The following example template shows an Amazon CloudFront [Distribution](https:/
 ### YAML
 <a name="quickref-cloudfront-example-2.yaml"></a>
 
-```
+```yaml
  1. AWSTemplateFormatVersion: '2010-09-09'
  2. Resources:
  3.   myDistribution:
@@ -257,7 +257,7 @@ The following example template shows how to declare a CloudFront [Distribution](
 ### JSON
 <a name="quickref-cloudfront-example-3.json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion" : "2010-09-09",
     "Resources" : {
@@ -345,7 +345,7 @@ The following example template shows how to declare a CloudFront [Distribution](
 ### YAML
 <a name="quickref-cloudfront-example-3.yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   myDistribution:
@@ -442,7 +442,7 @@ The following example creates a CloudFront distribution that fronts a specified 
 ### JSON
 <a name="quickref-cloudfront-example-lambda-origin.json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Parameters": {
@@ -497,7 +497,7 @@ The following example creates a CloudFront distribution that fronts a specified 
 ### YAML
 <a name="quickref-cloudfront-example-lambda-origin.yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:
   LambdaEndpoint:

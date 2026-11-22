@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-quicksight-knowledgebase-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::QuickSight::KnowledgeBase",
   "Properties" : {
@@ -44,7 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-quicksight-knowledgebase-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::QuickSight::KnowledgeBase
 Properties:
   [AccessControlConfiguration](#cfn-quicksight-knowledgebase-accesscontrolconfiguration): {{

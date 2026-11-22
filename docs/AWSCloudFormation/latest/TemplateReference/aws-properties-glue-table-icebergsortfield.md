@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-table-icebergsortfield-syntax.json"></a>
 
-```
+```json
 {
   "[Direction](#cfn-glue-table-icebergsortfield-direction)" : {{String}},
   "[NullOrder](#cfn-glue-table-icebergsortfield-nullorder)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-table-icebergsortfield-syntax.yaml"></a>
 
-```
+```yaml
   [Direction](#cfn-glue-table-icebergsortfield-direction): {{String}}
   [NullOrder](#cfn-glue-table-icebergsortfield-nullorder): {{String}}
   [SourceId](#cfn-glue-table-icebergsortfield-sourceid): {{Integer}}

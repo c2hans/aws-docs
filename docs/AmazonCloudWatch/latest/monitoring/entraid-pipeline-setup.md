@@ -8,7 +8,7 @@ Collects log data from Microsoft Entra ID (formerly Azure Active Directory) usin
 
 Configure the Microsoft Entra ID source with the following parameters:
 
-```
+```yaml
 source:
   microsoft_entraid:
     tenant_id: "<example-tenant-ID>"

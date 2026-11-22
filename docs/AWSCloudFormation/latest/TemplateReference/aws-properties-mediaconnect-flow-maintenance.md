@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-flow-maintenance-syntax.json"></a>
 
-```
+```json
 {
   "[MaintenanceDay](#cfn-mediaconnect-flow-maintenance-maintenanceday)" : {{String}},
   "[MaintenanceStartHour](#cfn-mediaconnect-flow-maintenance-maintenancestarthour)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-flow-maintenance-syntax.yaml"></a>
 
-```
+```yaml
   [MaintenanceDay](#cfn-mediaconnect-flow-maintenance-maintenanceday): {{String}}
   [MaintenanceStartHour](#cfn-mediaconnect-flow-maintenance-maintenancestarthour): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-capacityprovider-permissionsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CapacityProviderOperatorRoleArn](#cfn-bedrockagentcore-capacityprovider-permissionsconfiguration-capacityprovideroperatorrolearn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-capacityprovider-permissionsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CapacityProviderOperatorRoleArn](#cfn-bedrockagentcore-capacityprovider-permissionsconfiguration-capacityprovideroperatorrolearn): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-accessanalyzer-analyzer-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AccessAnalyzer::Analyzer",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-accessanalyzer-analyzer-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AccessAnalyzer::Analyzer
 Properties:
   [AnalyzerConfiguration](#cfn-accessanalyzer-analyzer-analyzerconfiguration): {{
@@ -116,7 +116,7 @@ The following example shows how to declare a IAM Access Analyzer `Analyzer` reso
 #### JSON
 <a name="aws-resource-accessanalyzer-analyzer--examples--Declare_an_Analyzer_Resource--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -165,7 +165,7 @@ The following example shows how to declare a IAM Access Analyzer `Analyzer` reso
 #### YAML
 <a name="aws-resource-accessanalyzer-analyzer--examples--Declare_an_Analyzer_Resource--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   Analyzer:

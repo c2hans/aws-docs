@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-opensearchserverless-collectiongroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::OpenSearchServerless::CollectionGroup",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-opensearchserverless-collectiongroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::OpenSearchServerless::CollectionGroup
 Properties:
   [CapacityLimits](#cfn-opensearchserverless-collectiongroup-capacitylimits): {{

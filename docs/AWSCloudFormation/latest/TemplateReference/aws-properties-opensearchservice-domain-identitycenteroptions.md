@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchservice-domain-identitycenteroptions-syntax.json"></a>
 
-```
+```json
 {
   "[EnabledAPIAccess](#cfn-opensearchservice-domain-identitycenteroptions-enabledapiaccess)" : {{Boolean}},
   "[IdentityCenterApplicationARN](#cfn-opensearchservice-domain-identitycenteroptions-identitycenterapplicationarn)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchservice-domain-identitycenteroptions-syntax.yaml"></a>
 
-```
+```yaml
   [EnabledAPIAccess](#cfn-opensearchservice-domain-identitycenteroptions-enabledapiaccess): {{Boolean}}
   [IdentityCenterApplicationARN](#cfn-opensearchservice-domain-identitycenteroptions-identitycenterapplicationarn): {{String}}
   [IdentityCenterInstanceARN](#cfn-opensearchservice-domain-identitycenteroptions-identitycenterinstancearn): {{String}}

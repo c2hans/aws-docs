@@ -68,13 +68,13 @@ You can use file paths when storing and restoring AMIs, in the following way:
 **Example: Bucket name with appended file path**
 When you store the AMI, specify the file path after the bucket name.
 
-```
+```bash
 {{amzn-s3-demo-bucket/path1/path2}}
 ```
 
 The following is the resulting object key.
 
-```
+```bash
 {{path1/path2/ami-0abcdef1234567890}}.bin
 ```
 

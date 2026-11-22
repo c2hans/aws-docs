@@ -101,7 +101,7 @@ This example illustrates how to delete a VPC Ingress Connection.
 #### Sample Request
 <a name="API_DeleteVpcIngressConnection_Example_1_Request"></a>
 
-```
+```json
 $ aws apprunner delete-vpc-ingress-connection --cli-input-json "`cat`"
 {
     "VpcIngressConnectionArn": "arn:aws:apprunner:us-east-1:123456789012:vpcingressconnection/my-ingress-connection-name/3f2eb10e2c494674952026f646844e3d"
@@ -111,7 +111,7 @@ $ aws apprunner delete-vpc-ingress-connection --cli-input-json "`cat`"
 #### Sample Response
 <a name="API_DeleteVpcIngressConnection_Example_1_Response"></a>
 
-```
+```json
 {
     "AccountId": "123456789012",
     "CreatedAt": "2022-09-18T23:36:45.374Z",

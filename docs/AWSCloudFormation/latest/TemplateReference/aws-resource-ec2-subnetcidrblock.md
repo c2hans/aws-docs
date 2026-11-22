@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-subnetcidrblock-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::SubnetCidrBlock",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-subnetcidrblock-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::SubnetCidrBlock
 Properties:
   [Ipv6CidrBlock](#cfn-ec2-subnetcidrblock-ipv6cidrblock): {{String}}

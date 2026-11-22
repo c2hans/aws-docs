@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-logging-eventconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EventType](#cfn-iot-logging-eventconfiguration-eventtype)" : {{String}},
   "[LogDestination](#cfn-iot-logging-eventconfiguration-logdestination)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-logging-eventconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EventType](#cfn-iot-logging-eventconfiguration-eventtype): {{String}}
   [LogDestination](#cfn-iot-logging-eventconfiguration-logdestination): {{String}}
   [LogLevel](#cfn-iot-logging-eventconfiguration-loglevel): {{String}}

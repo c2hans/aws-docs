@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticsearch-domain-elasticsearchclusterconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ColdStorageOptions](#cfn-elasticsearch-domain-elasticsearchclusterconfig-coldstorageoptions)" : {{ColdStorageOptions}},
   "[DedicatedMasterCount](#cfn-elasticsearch-domain-elasticsearchclusterconfig-dedicatedmastercount)" : {{Integer}},
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticsearch-domain-elasticsearchclusterconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ColdStorageOptions](#cfn-elasticsearch-domain-elasticsearchclusterconfig-coldstorageoptions): {{
     ColdStorageOptions}}
   [DedicatedMasterCount](#cfn-elasticsearch-domain-elasticsearchclusterconfig-dedicatedmastercount): {{Integer}}

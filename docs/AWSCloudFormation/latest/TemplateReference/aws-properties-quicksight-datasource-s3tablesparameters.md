@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-datasource-s3tablesparameters-syntax.json"></a>
 
-```
+```json
 {
   "[TableBucketArn](#cfn-quicksight-datasource-s3tablesparameters-tablebucketarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-datasource-s3tablesparameters-syntax.yaml"></a>
 
-```
+```yaml
   [TableBucketArn](#cfn-quicksight-datasource-s3tablesparameters-tablebucketarn): {{String}}
 ```
 

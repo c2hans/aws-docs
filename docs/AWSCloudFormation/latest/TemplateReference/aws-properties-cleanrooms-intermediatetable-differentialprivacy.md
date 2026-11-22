@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-intermediatetable-differentialprivacy-syntax.json"></a>
 
-```
+```json
 {
   "[Columns](#cfn-cleanrooms-intermediatetable-differentialprivacy-columns)" : {{[ DifferentialPrivacyColumn, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-intermediatetable-differentialprivacy-syntax.yaml"></a>
 
-```
+```yaml
   [Columns](#cfn-cleanrooms-intermediatetable-differentialprivacy-columns): {{
     - DifferentialPrivacyColumn}}
 ```

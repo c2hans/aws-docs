@@ -14,7 +14,7 @@ Filters out unwanted log entries based on conditional expressions. Use this proc
 **Configuration**
 Configure the drop\_events processor with the following parameters:
 
-```
+```yaml
 processor:
   - drop_events:
       when: "log.level == 'DEBUG' or log.level == 'TRACE'"
@@ -29,7 +29,7 @@ Behavior when the `when` expression evaluation fails. Allowed values: `"skip"` (
 **Example Drop low-severity log entries**
 The following configuration drops all DEBUG and TRACE log entries, keeping only higher-severity events:
 
-```
+```yaml
 processor:
   - drop_events:
       when: "log.level in {'DEBUG', 'TRACE'}"

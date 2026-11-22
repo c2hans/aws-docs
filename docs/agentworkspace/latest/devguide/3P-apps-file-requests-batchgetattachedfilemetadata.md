@@ -48,7 +48,7 @@ batchGetAttachedFileMetadata({ relatedAttachments, activeContactId }: { relatedA
 
  **Usage**
 
-```
+```typescript
 const relatedAttachments: RelatedAttachments = {
   fileIds: [sampleFileId1, sampleFileId2],
   associatedResourceArn: sampleAssociatedResourceArn,

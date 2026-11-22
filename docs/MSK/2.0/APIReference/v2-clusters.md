@@ -84,7 +84,7 @@ Enable CORS by returning correct headers
 #### POST schema
 <a name="v2-clusters-request-body-post-example"></a>
 
-```
+```json
 {
   "provisioned": {
     "encryptionInfo": {
@@ -227,7 +227,7 @@ Enable CORS by returning correct headers
 #### ListClustersV2Response schema
 <a name="v2-clusters-response-body-listclustersv2response-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "clusterInfoList": [
@@ -386,7 +386,7 @@ Enable CORS by returning correct headers
 #### CreateClusterV2Response schema
 <a name="v2-clusters-response-body-createclusterv2response-example"></a>
 
-```
+```json
 {
   "clusterType": enum,
   "clusterArn": "string",

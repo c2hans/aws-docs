@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-imagebuilder-infrastructureconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ImageBuilder::InfrastructureConfiguration",
   "Properties" : {
@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-imagebuilder-infrastructureconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ImageBuilder::InfrastructureConfiguration
 Properties:
   [Description](#cfn-imagebuilder-infrastructureconfiguration-description): {{String}}
@@ -228,7 +228,7 @@ The following example shows the template for the InfrastructureConfiguration res
 #### JSON
 <a name="aws-resource-imagebuilder-infrastructureconfiguration--examples--Create_an_infrastructure_configuration--json"></a>
 
-```
+```json
 {
 	"Resources": {
 		"InfrastructureConfigurationAll": {
@@ -270,7 +270,7 @@ The following example shows the template for the InfrastructureConfiguration res
 #### YAML
 <a name="aws-resource-imagebuilder-infrastructureconfiguration--examples--Create_an_infrastructure_configuration--yaml"></a>
 
-```
+```yaml
 Resources:
   InfrastructureConfigurationAll:
     Type: 'AWS::ImageBuilder::InfrastructureConfiguration'
@@ -305,7 +305,7 @@ The following example creates an infrastructure configuration that uses dedicate
 #### YAML
 <a name="aws-resource-imagebuilder-infrastructureconfiguration--examples--Create_an_infrastructure_configuration_with_placement_and_metadata_options--yaml"></a>
 
-```
+```yaml
 Resources:
   InfraConfigAdvanced:
     Type: AWS::ImageBuilder::InfrastructureConfiguration
@@ -337,7 +337,7 @@ Resources:
 #### JSON
 <a name="aws-resource-imagebuilder-infrastructureconfiguration--examples--Create_an_infrastructure_configuration_with_placement_and_metadata_options--json"></a>
 
-```
+```json
 {
     "Resources": {
         "InfraConfigAdvanced": {

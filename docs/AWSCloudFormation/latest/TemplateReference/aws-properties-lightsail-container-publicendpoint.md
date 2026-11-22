@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lightsail-container-publicendpoint-syntax.json"></a>
 
-```
+```json
 {
   "[ContainerName](#cfn-lightsail-container-publicendpoint-containername)" : {{String}},
   "[ContainerPort](#cfn-lightsail-container-publicendpoint-containerport)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lightsail-container-publicendpoint-syntax.yaml"></a>
 
-```
+```yaml
   [ContainerName](#cfn-lightsail-container-publicendpoint-containername): {{String}}
   [ContainerPort](#cfn-lightsail-container-publicendpoint-containerport): {{Integer}}
   [HealthCheckConfig](#cfn-lightsail-container-publicendpoint-healthcheckconfig): {{

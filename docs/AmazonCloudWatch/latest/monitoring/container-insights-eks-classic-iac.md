@@ -30,7 +30,7 @@ Use a CloudFormation template to deploy the CloudWatch Observability add-on with
 
 The following template creates the resources that you need to enable Enhanced Container Insights (Classic) on your Amazon EKS cluster.
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Deploy Enhanced Container Insights (Classic) on an EKS cluster
 
@@ -91,7 +91,7 @@ Use the AWS CLI to create the CloudFormation stack from the template.
 
 1. Run the following command. Replace {{cluster-name}} with the name of your Amazon EKS cluster.
 
-   ```
+   ```bash
    aws cloudformation create-stack \
      --stack-name classic-container-insights \
      --template-body file://classic-container-insights.yaml \
@@ -101,14 +101,14 @@ Use the AWS CLI to create the CloudFormation stack from the template.
 
 1. Wait for the stack creation to complete.
 
-   ```
+   ```bash
    aws cloudformation wait stack-create-complete \
      --stack-name classic-container-insights
    ```
 
 1. Verify that the stack status is `CREATE_COMPLETE`.
 
-   ```
+   ```bash
    aws cloudformation describe-stacks \
      --stack-name classic-container-insights \
      --query "Stacks[0].StackStatus" \
@@ -132,7 +132,7 @@ Create an IAM role for the CloudWatch agent before you install the Helm chart.
 
 1. Run the following command to create the role with a trust policy for EKS Pod Identity.
 
-   ```
+   ```bash
    aws iam create-role \
      --role-name EKS-CloudWatch-Agent-Role \
      --assume-role-policy-document '{
@@ -147,7 +147,7 @@ Create an IAM role for the CloudWatch agent before you install the Helm chart.
 
 1. Attach the `CloudWatchAgentServerPolicy` managed policy to the role.
 
-   ```
+   ```bash
    aws iam attach-role-policy \
      --role-name EKS-CloudWatch-Agent-Role \
      --policy-arn arn:aws:iam::aws:policy/CloudWatchAgentServerPolicy
@@ -155,7 +155,7 @@ Create an IAM role for the CloudWatch agent before you install the Helm chart.
 
 1. Create the Pod Identity association. Replace {{cluster-name}} with the name of your Amazon EKS cluster and {{account-id}} with your AWS account ID.
 
-   ```
+   ```bash
    aws eks create-pod-identity-association \
      --cluster-name {{cluster-name}} \
      --namespace amazon-cloudwatch \
@@ -172,7 +172,7 @@ Install the CloudWatch Observability Helm chart with a Classic version (prior to
 
 1. Run the following command. Replace {{cluster-name}} with the name of your Amazon EKS cluster and {{region}} with your AWS Region.
 
-   ```
+   ```bash
    helm install amazon-cloudwatch-observability \
      oci://public.ecr.aws/cloudwatch-agent/amazon-cloudwatch-observability-helm-chart \
      --namespace amazon-cloudwatch \
@@ -184,7 +184,7 @@ Install the CloudWatch Observability Helm chart with a Classic version (prior to
 
 1. Verify that the Helm release deployed successfully.
 
-   ```
+   ```bash
    helm list -n amazon-cloudwatch
    ```
 
@@ -199,7 +199,7 @@ After the CloudFormation stack creation or Helm installation completes, verify t
 
 1. Confirm that the CloudWatch agent pods are running.
 
-   ```
+   ```bash
    kubectl get pods -n amazon-cloudwatch -l app.kubernetes.io/name=cloudwatch-agent
    ```
 

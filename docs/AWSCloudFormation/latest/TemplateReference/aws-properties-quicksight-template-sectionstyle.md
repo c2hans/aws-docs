@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-sectionstyle-syntax.json"></a>
 
-```
+```json
 {
   "[Height](#cfn-quicksight-template-sectionstyle-height)" : {{String}},
   "[Padding](#cfn-quicksight-template-sectionstyle-padding)" : {{Spacing}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-sectionstyle-syntax.yaml"></a>
 
-```
+```yaml
   [Height](#cfn-quicksight-template-sectionstyle-height): {{String}}
   [Padding](#cfn-quicksight-template-sectionstyle-padding): {{
     Spacing}}

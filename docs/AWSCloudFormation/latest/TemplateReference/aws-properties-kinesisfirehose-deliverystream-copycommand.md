@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-copycommand-syntax.json"></a>
 
-```
+```json
 {
   "[CopyOptions](#cfn-kinesisfirehose-deliverystream-copycommand-copyoptions)" : {{String}},
   "[DataTableColumns](#cfn-kinesisfirehose-deliverystream-copycommand-datatablecolumns)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-copycommand-syntax.yaml"></a>
 
-```
+```yaml
   [CopyOptions](#cfn-kinesisfirehose-deliverystream-copycommand-copyoptions): {{String}}
   [DataTableColumns](#cfn-kinesisfirehose-deliverystream-copycommand-datatablecolumns): {{String}}
   [DataTableName](#cfn-kinesisfirehose-deliverystream-copycommand-datatablename): {{String}}

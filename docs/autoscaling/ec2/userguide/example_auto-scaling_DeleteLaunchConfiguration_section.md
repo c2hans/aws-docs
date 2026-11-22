@@ -27,7 +27,7 @@ For more information, see [Deleting your Auto Scaling infrastructure](https://do
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified launch configuration if it is not attached to an Auto Scaling group. You are prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASLaunchConfiguration -LaunchConfigurationName my-lc
 ```
 **Output:**
@@ -40,7 +40,7 @@ Performing operation "Remove-ASLaunchConfiguration (DeleteLaunchConfiguration)" 
 ```
 **Example 2: If you specify the Force parameter, you are not prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASLaunchConfiguration -LaunchConfigurationName my-lc -Force
 ```
 +  For API details, see [DeleteLaunchConfiguration](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -48,7 +48,7 @@ Remove-ASLaunchConfiguration -LaunchConfigurationName my-lc -Force
 **Tools for PowerShell V5**
 **Example 1: This example deletes the specified launch configuration if it is not attached to an Auto Scaling group. You are prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASLaunchConfiguration -LaunchConfigurationName my-lc
 ```
 **Output:**
@@ -61,7 +61,7 @@ Performing operation "Remove-ASLaunchConfiguration (DeleteLaunchConfiguration)" 
 ```
 **Example 2: If you specify the Force parameter, you are not prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASLaunchConfiguration -LaunchConfigurationName my-lc -Force
 ```
 +  For API details, see [DeleteLaunchConfiguration](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

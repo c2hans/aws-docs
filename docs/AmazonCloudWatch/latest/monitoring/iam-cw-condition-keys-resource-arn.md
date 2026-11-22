@@ -18,7 +18,7 @@ For example, to allow a principal to manage detailed monitoring for only one res
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -50,7 +50,7 @@ The following policy uses `StringLike` with wildcards to allow the principal to 
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

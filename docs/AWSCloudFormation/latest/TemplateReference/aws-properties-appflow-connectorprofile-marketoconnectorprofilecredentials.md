@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-connectorprofile-marketoconnectorprofilecredentials-syntax.json"></a>
 
-```
+```json
 {
   "[AccessToken](#cfn-appflow-connectorprofile-marketoconnectorprofilecredentials-accesstoken)" : {{String}},
   "[ClientId](#cfn-appflow-connectorprofile-marketoconnectorprofilecredentials-clientid)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-connectorprofile-marketoconnectorprofilecredentials-syntax.yaml"></a>
 
-```
+```yaml
   [AccessToken](#cfn-appflow-connectorprofile-marketoconnectorprofilecredentials-accesstoken): {{String}}
   [ClientId](#cfn-appflow-connectorprofile-marketoconnectorprofilecredentials-clientid): {{String}}
   [ClientSecret](#cfn-appflow-connectorprofile-marketoconnectorprofilecredentials-clientsecret): {{String}}

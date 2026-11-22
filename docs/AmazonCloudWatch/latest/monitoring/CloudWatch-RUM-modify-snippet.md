@@ -22,13 +22,13 @@ By default, the web client records page views when the page first loads and when
 
 **Embedded script example:**
 
-```
+```javascript
 cwr('recordPageView', { pageId: 'entityPageId' });
 ```
 
 **JavaScript module example:**
 
-```
+```javascript
 awsRum.recordPageView({ pageId: 'entityPageId' });
 ```
 
@@ -41,7 +41,7 @@ By default, these client-side traces are not connected to downstream server-side
 
 The following code block shows an example of adding client-side traces. Some configuration options are omitted from this sample for readibility.
 
-```
+```javascript
 <script>
     (function(n,i,v,r,s,c,u,x,z){...})(
         'cwr',

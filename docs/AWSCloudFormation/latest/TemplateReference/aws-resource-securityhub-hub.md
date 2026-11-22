@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-securityhub-hub-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SecurityHub::Hub",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-securityhub-hub-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SecurityHub::Hub
 Properties:
   [AutoEnableControls](#cfn-securityhub-hub-autoenablecontrols): {{Boolean}}
@@ -127,7 +127,7 @@ In this example, the default standards are automatically enabled, and consolidat
 #### JSON
 <a name="aws-resource-securityhub-hub--examples--Creating_a_Hub_resource_that_enables_default_standards_and_turns_on_consolidated_control_findings--json"></a>
 
-```
+```json
 {
     "Description": "Example template to create a Hub resource",
     "Resources": {
@@ -156,7 +156,7 @@ In this example, the default standards are automatically enabled, and consolidat
 #### YAML
 <a name="aws-resource-securityhub-hub--examples--Creating_a_Hub_resource_that_enables_default_standards_and_turns_on_consolidated_control_findings--yaml"></a>
 
-```
+```yaml
 Description: Example template to create a Hub resource
 Resources:
   ExampleHubWithTags:
@@ -181,7 +181,7 @@ In this example, the default standards are disabled, and consolidated control fi
 #### JSON
 <a name="aws-resource-securityhub-hub--examples--Creating_a_Hub_resource_that_disables_default_standards_and_turns_off_consolidated_control_findings--json"></a>
 
-```
+```json
 {
     "Description": "Example template to create a Hub resource",
     "Resources": {
@@ -210,7 +210,7 @@ In this example, the default standards are disabled, and consolidated control fi
 #### YAML
 <a name="aws-resource-securityhub-hub--examples--Creating_a_Hub_resource_that_disables_default_standards_and_turns_off_consolidated_control_findings--yaml"></a>
 
-```
+```yaml
 Description: Example template to create a Hub resource
 Resources:
   ExampleHubWithTags:

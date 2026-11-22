@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/filtering-with-dot.html
 
 In the following example, select the `accountId` field from the `userIdentity` column of a AWS CloudTrail logs table by using the dot `.` notation. For more information, see [Querying AWS CloudTrail Logs](cloudtrail-logs.md).
 
-```
+```sql
 SELECT
   CAST(useridentity.accountid AS bigint) as newid
 FROM cloudtrail_logs
@@ -27,7 +27,7 @@ This query returns:
 
 To query an array of values, issue this query:
 
-```
+```sql
 WITH dataset AS (
   SELECT ARRAY[
     CAST(ROW('Bob', 38) AS ROW(name VARCHAR, age INTEGER)),

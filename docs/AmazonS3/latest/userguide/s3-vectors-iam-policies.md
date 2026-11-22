@@ -16,7 +16,7 @@ When designing identity-based policies for S3 Vectors, consider the different ty
 
 This policy provides full administrative access to S3 Vectors resources, suitable for platform administrators or DevOps teams:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -52,7 +52,7 @@ This policy provides full administrative access to S3 Vectors resources, suitabl
 
 This policy is designed for applications that need to perform specific operations on designated vector indexes:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

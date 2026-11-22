@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-brand-brandelementstyle-syntax.json"></a>
 
-```
+```json
 {
   "[NavbarStyle](#cfn-quicksight-brand-brandelementstyle-navbarstyle)" : {{NavbarStyle}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-brand-brandelementstyle-syntax.yaml"></a>
 
-```
+```yaml
   [NavbarStyle](#cfn-quicksight-brand-brandelementstyle-navbarstyle): {{
     NavbarStyle}}
 ```

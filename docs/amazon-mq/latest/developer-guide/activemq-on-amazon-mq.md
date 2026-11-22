@@ -48,7 +48,7 @@ Without the necessary IAM permissions, your function will not be able to success
 **Note**
  In the example, `testQueue` is the name of the queue.
 
-   ```
+   ```json
    {
      "eventSource": "aws:amq",
      "eventSourceArn": "arn:aws:mq:us-west-2:112556298976:broker:test:b-9bcfa592-423a-4942-879d-eb284b418fc8",

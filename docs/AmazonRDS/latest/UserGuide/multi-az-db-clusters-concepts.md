@@ -113,7 +113,7 @@ When you are using RDS for MySQL Multi-AZ DB clusters, flow control is turned on
 
 To view the current delay injected by flow control, show the parameter `Rpl_semi_sync_master_flow_control_current_delay` by running the following query.
 
-```
+```sql
 SHOW GLOBAL STATUS like '%flow_control%';
 ```
 

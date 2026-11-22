@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-integration-marketosourceproperties-syntax.json"></a>
 
-```
+```json
 {
   "[Object](#cfn-customerprofiles-integration-marketosourceproperties-object)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-integration-marketosourceproperties-syntax.yaml"></a>
 
-```
+```yaml
   [Object](#cfn-customerprofiles-integration-marketosourceproperties-object): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-topicv2-datasetrelation-syntax.json"></a>
 
-```
+```json
 {
   "[Left](#cfn-quicksight-topicv2-datasetrelation-left)" : {{DataSetRelationEndpoint}},
   "[Right](#cfn-quicksight-topicv2-datasetrelation-right)" : {{DataSetRelationEndpoint}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-topicv2-datasetrelation-syntax.yaml"></a>
 
-```
+```yaml
   [Left](#cfn-quicksight-topicv2-datasetrelation-left): {{
     DataSetRelationEndpoint}}
   [Right](#cfn-quicksight-topicv2-datasetrelation-right): {{

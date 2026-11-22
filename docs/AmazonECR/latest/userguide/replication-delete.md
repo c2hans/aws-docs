@@ -22,7 +22,7 @@ Amazon ECR doesn't replicate image deletions or image tag removals by default. Y
 
 To enable replication of deletes with the AWS CLI, update your replication configuration with the `deleteReplication` parameter set on the rule. For more information, see [Configuring private image replication in Amazon ECR](registry-settings-configure.md). In the following example, replace {{us-west-2}} with your destination Region and replace the registry ID with your destination AWS account ID.
 
-```
+```JSON
 {
     "rules": [
         {

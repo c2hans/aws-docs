@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-datasource-transformationfunction-syntax.json"></a>
 
-```
+```json
 {
   "[TransformationLambdaConfiguration](#cfn-bedrock-datasource-transformationfunction-transformationlambdaconfiguration)" : {{TransformationLambdaConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-datasource-transformationfunction-syntax.yaml"></a>
 
-```
+```yaml
   [TransformationLambdaConfiguration](#cfn-bedrock-datasource-transformationfunction-transformationlambdaconfiguration): {{
     TransformationLambdaConfiguration}}
 ```

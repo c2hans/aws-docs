@@ -59,7 +59,7 @@ The following provides information about important configuration properties requ
 
 The following is the Slack JSON schema:
 
-```
+```json
 {
   "type": "object",
   "properties": {
@@ -290,7 +290,7 @@ The following is the Slack JSON schema:
 
 The following is the Slack JSON schema example:
 
-```
+```json
 {
   "type": "SLACK",
   "syncMode": "FULL_CRAWL",

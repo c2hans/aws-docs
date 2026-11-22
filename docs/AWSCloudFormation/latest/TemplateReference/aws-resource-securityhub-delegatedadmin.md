@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-securityhub-delegatedadmin-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SecurityHub::DelegatedAdmin",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-securityhub-delegatedadmin-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SecurityHub::DelegatedAdmin
 Properties:
   [AdminAccountId](#cfn-securityhub-delegatedadmin-adminaccountid): {{String}}
@@ -87,7 +87,7 @@ The following example designates the specified AWS account as the delegated Secu
 #### JSON
 <a name="aws-resource-securityhub-delegatedadmin--examples--Designating_the_delegated_administrator--json"></a>
 
-```
+```json
 {
 	"Description": "Example template to create the delegated Security Hub administrator",
 	"Resources": {
@@ -104,7 +104,7 @@ The following example designates the specified AWS account as the delegated Secu
 #### YAML
 <a name="aws-resource-securityhub-delegatedadmin--examples--Designating_the_delegated_administrator--yaml"></a>
 
-```
+```yaml
 Description: Example template to create the delegated Security Hub administrator
 Resources:
   SecurityHubDelegatedAdmin:

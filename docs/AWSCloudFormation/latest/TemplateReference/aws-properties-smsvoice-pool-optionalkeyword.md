@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-smsvoice-pool-optionalkeyword-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-smsvoice-pool-optionalkeyword-action)" : {{String}},
   "[Keyword](#cfn-smsvoice-pool-optionalkeyword-keyword)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-smsvoice-pool-optionalkeyword-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-smsvoice-pool-optionalkeyword-action): {{String}}
   [Keyword](#cfn-smsvoice-pool-optionalkeyword-keyword): {{String}}
   [Message](#cfn-smsvoice-pool-optionalkeyword-message): {{String}}

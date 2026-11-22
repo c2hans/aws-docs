@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotcoredeviceadvisor-suitedefinition-suitedefinitionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DevicePermissionRoleArn](#cfn-iotcoredeviceadvisor-suitedefinition-suitedefinitionconfiguration-devicepermissionrolearn)" : {{String}},
   "[Devices](#cfn-iotcoredeviceadvisor-suitedefinition-suitedefinitionconfiguration-devices)" : {{[ DeviceUnderTest, ... ]}},
@@ -54,7 +54,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotcoredeviceadvisor-suitedefinition-suitedefinitionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DevicePermissionRoleArn](#cfn-iotcoredeviceadvisor-suitedefinition-suitedefinitionconfiguration-devicepermissionrolearn): {{String}}
   [Devices](#cfn-iotcoredeviceadvisor-suitedefinition-suitedefinitionconfiguration-devices): {{
     - DeviceUnderTest}}

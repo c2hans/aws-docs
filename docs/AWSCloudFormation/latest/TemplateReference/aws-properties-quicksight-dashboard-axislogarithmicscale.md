@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-axislogarithmicscale-syntax.json"></a>
 
-```
+```json
 {
   "[Base](#cfn-quicksight-dashboard-axislogarithmicscale-base)" : {{Number}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-axislogarithmicscale-syntax.yaml"></a>
 
-```
+```yaml
   [Base](#cfn-quicksight-dashboard-axislogarithmicscale-base): {{Number}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpool-eumssmsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CallerArn](#cfn-cognito-userpool-eumssmsconfiguration-callerarn)" : {{String}},
   "[ConfigurationSetName](#cfn-cognito-userpool-eumssmsconfiguration-configurationsetname)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpool-eumssmsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CallerArn](#cfn-cognito-userpool-eumssmsconfiguration-callerarn): {{String}}
   [ConfigurationSetName](#cfn-cognito-userpool-eumssmsconfiguration-configurationsetname): {{String}}
   [ExternalId](#cfn-cognito-userpool-eumssmsconfiguration-externalid): {{String}}

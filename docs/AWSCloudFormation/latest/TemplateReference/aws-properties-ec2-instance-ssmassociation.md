@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-instance-ssmassociation-syntax.json"></a>
 
-```
+```json
 {
   "[AssociationParameters](#cfn-ec2-instance-ssmassociation-associationparameters)" : {{[ AssociationParameter, ... ]}},
   "[DocumentName](#cfn-ec2-instance-ssmassociation-documentname)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-instance-ssmassociation-syntax.yaml"></a>
 
-```
+```yaml
   [AssociationParameters](#cfn-ec2-instance-ssmassociation-associationparameters): {{
     - AssociationParameter}}
   [DocumentName](#cfn-ec2-instance-ssmassociation-documentname): {{String}}

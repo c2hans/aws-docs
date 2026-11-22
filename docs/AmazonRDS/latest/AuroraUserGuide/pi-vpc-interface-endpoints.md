@@ -48,7 +48,7 @@ For more information, see [Control access to services using endpoint policies](h
 **Example: VPC endpoint policy for Performance Insights actions**
 The following is an example of a custom endpoint policy. When you attach this policy to your interface endpoint, it grants access to the listed Performance Insights actions for all principals on all resources.
 
-```
+```json
 {
    "Statement":[
       {
@@ -68,7 +68,7 @@ The following is an example of a custom endpoint policy. When you attach this po
 **Example: VPC endpoint policy that denies all access from a specified AWS account**
 The following VPC endpoint policy denies AWS account `123456789012` all access to resources using the endpoint. The policy allows all actions from other accounts.
 
-```
+```json
 {
   "Statement": [
     {

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-aiworkloadconfig-aiworkloadinputdataconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ChannelName](#cfn-sagemaker-aiworkloadconfig-aiworkloadinputdataconfig-channelname)" : {{String}},
   "[DataSource](#cfn-sagemaker-aiworkloadconfig-aiworkloadinputdataconfig-datasource)" : {{AIWorkloadDataSource}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-aiworkloadconfig-aiworkloadinputdataconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ChannelName](#cfn-sagemaker-aiworkloadconfig-aiworkloadinputdataconfig-channelname): {{String}}
   [DataSource](#cfn-sagemaker-aiworkloadconfig-aiworkloadinputdataconfig-datasource): {{
     AIWorkloadDataSource}}

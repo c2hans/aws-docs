@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-eventschemas-schema-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EventSchemas::Schema",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-eventschemas-schema-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EventSchemas::Schema
 Properties:
   [Content](#cfn-eventschemas-schema-content): {{String}}
@@ -135,7 +135,7 @@ The date the schema version was created.
 #### YAML
 <a name="aws-resource-eventschemas-schema--examples----yaml"></a>
 
-```
+```yaml
 Resources:
   ExecutionStatusChangeSchema:
     Type: AWS::EventSchemas::Schema

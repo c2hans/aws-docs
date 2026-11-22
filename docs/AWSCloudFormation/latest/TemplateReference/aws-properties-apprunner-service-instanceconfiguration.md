@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apprunner-service-instanceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Cpu](#cfn-apprunner-service-instanceconfiguration-cpu)" : {{String}},
   "[InstanceRoleArn](#cfn-apprunner-service-instanceconfiguration-instancerolearn)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apprunner-service-instanceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Cpu](#cfn-apprunner-service-instanceconfiguration-cpu): {{String}}
   [InstanceRoleArn](#cfn-apprunner-service-instanceconfiguration-instancerolearn): {{String}}
   [Memory](#cfn-apprunner-service-instanceconfiguration-memory): {{String}}

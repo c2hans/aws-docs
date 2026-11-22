@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-endpointconfig-prefixawareroutingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ConcurrencyThreshold](#cfn-sagemaker-endpointconfig-prefixawareroutingconfig-concurrencythreshold)" : {{Integer}},
   "[PrefixLength](#cfn-sagemaker-endpointconfig-prefixawareroutingconfig-prefixlength)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-endpointconfig-prefixawareroutingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ConcurrencyThreshold](#cfn-sagemaker-endpointconfig-prefixawareroutingconfig-concurrencythreshold): {{Integer}}
   [PrefixLength](#cfn-sagemaker-endpointconfig-prefixawareroutingconfig-prefixlength): {{Integer}}
 ```

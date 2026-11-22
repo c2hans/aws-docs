@@ -14,7 +14,7 @@ Completion reports are always encrypted with Amazon S3 managed keys (SSE-S3).
 **Example — Top-level manifest result file**
 The top-level `manifest.json` file contains the locations of each succeeded report and (if the job had any failures) the location of failed reports, as shown in the following example.
 
-```
+```json
 {
     "Format": "Report_CSV_20180820",
     "ReportCreationDate": "2019-04-05T17:48:39.725Z",

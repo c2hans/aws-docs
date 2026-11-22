@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-harness-harnessgeminimodelconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AdditionalParams](#cfn-bedrockagentcore-harness-harnessgeminimodelconfig-additionalparams)" : {{Json}},
   "[ApiKeyArn](#cfn-bedrockagentcore-harness-harnessgeminimodelconfig-apikeyarn)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-harness-harnessgeminimodelconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AdditionalParams](#cfn-bedrockagentcore-harness-harnessgeminimodelconfig-additionalparams): {{Json}}
   [ApiKeyArn](#cfn-bedrockagentcore-harness-harnessgeminimodelconfig-apikeyarn): {{String}}
   [MaxTokens](#cfn-bedrockagentcore-harness-harnessgeminimodelconfig-maxtokens): {{Integer}}

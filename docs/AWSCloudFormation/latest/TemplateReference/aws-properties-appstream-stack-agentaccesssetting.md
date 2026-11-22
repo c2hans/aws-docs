@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appstream-stack-agentaccesssetting-syntax.json"></a>
 
-```
+```json
 {
   "[AgentAction](#cfn-appstream-stack-agentaccesssetting-agentaction)" : {{String}},
   "[Permission](#cfn-appstream-stack-agentaccesssetting-permission)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appstream-stack-agentaccesssetting-syntax.yaml"></a>
 
-```
+```yaml
   [AgentAction](#cfn-appstream-stack-agentaccesssetting-agentaction): {{String}}
   [Permission](#cfn-appstream-stack-agentaccesssetting-permission): {{String}}
 ```

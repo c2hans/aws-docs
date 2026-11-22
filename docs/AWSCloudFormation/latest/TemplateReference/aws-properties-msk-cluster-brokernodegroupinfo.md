@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-cluster-brokernodegroupinfo-syntax.json"></a>
 
-```
+```json
 {
   "[BrokerAZDistribution](#cfn-msk-cluster-brokernodegroupinfo-brokerazdistribution)" : {{String}},
   "[ClientSubnets](#cfn-msk-cluster-brokernodegroupinfo-clientsubnets)" : {{[ String, ... ]}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-cluster-brokernodegroupinfo-syntax.yaml"></a>
 
-```
+```yaml
   [BrokerAZDistribution](#cfn-msk-cluster-brokernodegroupinfo-brokerazdistribution): {{String}}
   [ClientSubnets](#cfn-msk-cluster-brokernodegroupinfo-clientsubnets): {{
     - String}}

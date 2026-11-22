@@ -33,7 +33,7 @@ To alarm on specific paths, configure additional alarms in CloudWatch after you 
 
 To get notified when any network path in a monitor reaches an impact level, create an alarm on a CloudWatch Metrics Insights query. The following query returns the highest `ImpactScore` across all paths in a monitor:
 
-```
+```sql
 SELECT MAX(ImpactScore)
 FROM SCHEMA("AWS/NetworkFlowMonitor", LocalLocation, MonitorId, RemoteLocation)
 WHERE MonitorId = '{{monitor-id}}'

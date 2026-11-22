@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssmincidents-responseplan-dynamicssmparameter-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-ssmincidents-responseplan-dynamicssmparameter-key)" : {{String}},
   "[Value](#cfn-ssmincidents-responseplan-dynamicssmparameter-value)" : {{DynamicSsmParameterValue}}
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssmincidents-responseplan-dynamicssmparameter-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-ssmincidents-responseplan-dynamicssmparameter-key): {{String}}
   [Value](#cfn-ssmincidents-responseplan-dynamicssmparameter-value): {{
     DynamicSsmParameterValue}}

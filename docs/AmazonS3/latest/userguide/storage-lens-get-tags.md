@@ -22,7 +22,7 @@ aws s3control get-storage-lens-configuration-tagging --account-id={{222222222222
 **Example – Get tags for an S3 Storage Lens dashboard configuration**
 The following example shows you how to retrieve tags for an S3 Storage Lens dashboard configuration in SDK for Java. To use this example, replace the `{{user input placeholders}}` with your own information.
 
-```
+```Java
 package aws.example.s3control;
 
 import com.amazonaws.AmazonServiceException;

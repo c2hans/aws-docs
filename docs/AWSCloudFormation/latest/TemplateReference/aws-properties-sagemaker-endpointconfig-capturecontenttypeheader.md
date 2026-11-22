@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-endpointconfig-capturecontenttypeheader-syntax.json"></a>
 
-```
+```json
 {
   "[CsvContentTypes](#cfn-sagemaker-endpointconfig-capturecontenttypeheader-csvcontenttypes)" : {{[ String, ... ]}},
   "[JsonContentTypes](#cfn-sagemaker-endpointconfig-capturecontenttypeheader-jsoncontenttypes)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-endpointconfig-capturecontenttypeheader-syntax.yaml"></a>
 
-```
+```yaml
   [CsvContentTypes](#cfn-sagemaker-endpointconfig-capturecontenttypeheader-csvcontenttypes): {{
     - String}}
   [JsonContentTypes](#cfn-sagemaker-endpointconfig-capturecontenttypeheader-jsoncontenttypes): {{

@@ -8,7 +8,7 @@ The AWS Cloud Development Kit (AWS CDK) (AWS CDK) is an open-source software dev
 
 Replace `migra-abcdefg123456` with the tag value needed for your migrated resource followed by your PRM ID in the following example:
 
-```
+```typescript
 import { Tags } from 'aws-cdk-lib';
 
 Tags.of(myConstruct).add('aws-apn-id', '{{migra-abcdefg123456}}');

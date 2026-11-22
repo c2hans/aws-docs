@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-instance-privatednsnameoptions-syntax.json"></a>
 
-```
+```json
 {
   "[EnableResourceNameDnsAAAARecord](#cfn-ec2-instance-privatednsnameoptions-enableresourcenamednsaaaarecord)" : {{Boolean}},
   "[EnableResourceNameDnsARecord](#cfn-ec2-instance-privatednsnameoptions-enableresourcenamednsarecord)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-instance-privatednsnameoptions-syntax.yaml"></a>
 
-```
+```yaml
   [EnableResourceNameDnsAAAARecord](#cfn-ec2-instance-privatednsnameoptions-enableresourcenamednsaaaarecord): {{Boolean}}
   [EnableResourceNameDnsARecord](#cfn-ec2-instance-privatednsnameoptions-enableresourcenamednsarecord): {{Boolean}}
   [HostnameType](#cfn-ec2-instance-privatednsnameoptions-hostnametype): {{String}}

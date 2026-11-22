@@ -47,7 +47,7 @@ You can register a delegated administrator using the Amazon EC2 console, the AWS
 **To register a delegated administrator**
 Run the following command:
 
-```
+```bash
 aws organizations register-delegated-administrator \
     --account-id {{123456789012}} \
     --service-principal ec2.capacitymanager.amazonaws.com
@@ -59,7 +59,7 @@ aws organizations register-delegated-administrator \
 **To register a delegated administrator**
 Use the [Register-ORGDelegatedAdministrator](https://docs.aws.amazon.com/powershell/latest/reference/items/Register-ORGDelegatedAdministrator.html) cmdlet.
 
-```
+```powershell
 Register-ORGDelegatedAdministrator `
     -AccountId "{{123456789012}}" `
     -ServicePrincipal "ec2.capacitymanager.amazonaws.com"
@@ -95,7 +95,7 @@ You can remove a delegated administrator using the Amazon EC2 console, the AWS C
 **To remove a delegated administrator**
 Run the following command:
 
-```
+```bash
 aws organizations deregister-delegated-administrator \
     --account-id {{123456789012}} \
     --service-principal ec2.capacitymanager.amazonaws.com
@@ -107,7 +107,7 @@ aws organizations deregister-delegated-administrator \
 **To remove a delegated administrator**
 Use the [Unregister-ORGDelegatedAdministrator](https://docs.aws.amazon.com/powershell/latest/reference/items/Unregister-ORGDelegatedAdministrator.html) cmdlet.
 
-```
+```powershell
 Unregister-ORGDelegatedAdministrator `
     -AccountId "{{123456789012}}" `
     -ServicePrincipal "ec2.capacitymanager.amazonaws.com"

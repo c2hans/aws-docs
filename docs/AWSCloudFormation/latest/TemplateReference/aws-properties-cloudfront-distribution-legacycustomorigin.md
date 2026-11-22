@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distribution-legacycustomorigin-syntax.json"></a>
 
-```
+```json
 {
   "[DNSName](#cfn-cloudfront-distribution-legacycustomorigin-dnsname)" : {{String}},
   "[HTTPPort](#cfn-cloudfront-distribution-legacycustomorigin-httpport)" : {{Integer}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distribution-legacycustomorigin-syntax.yaml"></a>
 
-```
+```yaml
   [DNSName](#cfn-cloudfront-distribution-legacycustomorigin-dnsname): {{String}}
   [HTTPPort](#cfn-cloudfront-distribution-legacycustomorigin-httpport): {{Integer}}
   [HTTPSPort](#cfn-cloudfront-distribution-legacycustomorigin-httpsport): {{Integer}}

@@ -10,5 +10,6 @@ The following table describes the documentation for this release of ServiceName.
 
 | Change | Description | Date |
 | --- | --- | --- |
+| In-place upgrade to Express brokers | Added brokerTypeUpgradeInfo to the provisioned cluster operation that DescribeClusterOperationV2 returns. | November 18, 2026 |
 | Amazon MSK DescribeClusterOperationV2 and ListClusterOperationsV2 | This is the release of the Amazon MSK API Reference 2.0 to support DescribeClusterOperationV2 and ListClusterOperationsV2. | July 27, 2023 |
 | ListClusterOperationsV2 and DescribeClusterOperationV2 | Updates for release of the remove broker feature. | May 16, 2024 |

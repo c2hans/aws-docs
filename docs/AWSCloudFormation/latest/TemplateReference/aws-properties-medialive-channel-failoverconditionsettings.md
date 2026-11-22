@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-failoverconditionsettings-syntax.json"></a>
 
-```
+```json
 {
   "[AudioSilenceSettings](#cfn-medialive-channel-failoverconditionsettings-audiosilencesettings)" : {{AudioSilenceFailoverSettings}},
   "[InputLossSettings](#cfn-medialive-channel-failoverconditionsettings-inputlosssettings)" : {{InputLossFailoverSettings}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-failoverconditionsettings-syntax.yaml"></a>
 
-```
+```yaml
   [AudioSilenceSettings](#cfn-medialive-channel-failoverconditionsettings-audiosilencesettings): {{
     AudioSilenceFailoverSettings}}
   [InputLossSettings](#cfn-medialive-channel-failoverconditionsettings-inputlosssettings): {{

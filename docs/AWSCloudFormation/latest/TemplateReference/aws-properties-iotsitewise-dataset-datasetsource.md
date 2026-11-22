@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotsitewise-dataset-datasetsource-syntax.json"></a>
 
-```
+```json
 {
   "[SourceDetail](#cfn-iotsitewise-dataset-datasetsource-sourcedetail)" : {{SourceDetail}},
   "[SourceFormat](#cfn-iotsitewise-dataset-datasetsource-sourceformat)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotsitewise-dataset-datasetsource-syntax.yaml"></a>
 
-```
+```yaml
   [SourceDetail](#cfn-iotsitewise-dataset-datasetsource-sourcedetail): {{
     SourceDetail}}
   [SourceFormat](#cfn-iotsitewise-dataset-datasetsource-sourceformat): {{String}}

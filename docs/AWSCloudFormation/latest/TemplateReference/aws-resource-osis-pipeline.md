@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-osis-pipeline-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::OSIS::Pipeline",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-osis-pipeline-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::OSIS::Pipeline
 Properties:
   [BufferOptions](#cfn-osis-pipeline-bufferoptions): {{
@@ -180,7 +180,7 @@ The following example creates an OpenSearch Ingestion pipeline running version 2
 #### JSON
 <a name="aws-resource-osis-pipeline--examples--Create_an_OpenSearch_Ingestion_pipeline--json"></a>
 
-```
+```json
 {
    "Parameters": {
       "PipelineConfigurationBody": {
@@ -234,7 +234,7 @@ The following example creates an OpenSearch Ingestion pipeline running version 2
 #### YAML
 <a name="aws-resource-osis-pipeline--examples--Create_an_OpenSearch_Ingestion_pipeline--yaml"></a>
 
-```
+```yaml
 Parameters:
   PipelineConfigurationBody:
     Type: String

@@ -170,7 +170,7 @@ Consider the following example S3 Lifecycle configuration.
 
 **Example**
 
-```
+```xml
 <LifecycleConfiguration>
     <Rule>
         <ID>ExampleRule</ID>
@@ -189,7 +189,7 @@ Consider the following example S3 Lifecycle configuration.
 </LifecycleConfiguration>
 ```
 
-```
+```json
 {
     "Rules": [
         {
@@ -216,7 +216,7 @@ Consider the following example S3 Lifecycle configuration.
 
 **Example**
 
-```
+```xml
 <LifecycleConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
     <Rule>
         <ID>id-1</ID>
@@ -241,7 +241,7 @@ Consider the following example S3 Lifecycle configuration.
 </LifecycleConfiguration>
 ```
 
-```
+```json
 {
     "Rules": [
         {
@@ -295,7 +295,7 @@ The output of `get-bucket-lifecycle-configuration` includes `TransitionDefaultMi
 
 1. To delete the S3 Lifecycle configuration, use the `delete-bucket-lifecycle` AWS CLI command as follows:
 
-   ```
+   ```bash
    aws s3api delete-bucket-lifecycle \
    --bucket {{amzn-s3-demo-bucket}}
    ```
@@ -337,7 +337,7 @@ The following example shows how to use the AWS SDK for .NET to add, update, and 
 
 For information about setting up and running the code examples, see [Getting Started with the AWS SDK for .NET](https://docs.aws.amazon.com/sdk-for-net/v3/developer-guide/net-dg-config.html) in the *AWS SDK for .NET Developer Guide*.
 
-```
+```cs
 using Amazon;
 using Amazon.S3;
 using Amazon.S3.Model;

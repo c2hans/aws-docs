@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-virtualnode-servicediscovery-syntax.json"></a>
 
-```
+```json
 {
   "[AWSCloudMap](#cfn-appmesh-virtualnode-servicediscovery-awscloudmap)" : {{AwsCloudMapServiceDiscovery}},
   "[DNS](#cfn-appmesh-virtualnode-servicediscovery-dns)" : {{DnsServiceDiscovery}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-virtualnode-servicediscovery-syntax.yaml"></a>
 
-```
+```yaml
   [AWSCloudMap](#cfn-appmesh-virtualnode-servicediscovery-awscloudmap): {{
     AwsCloudMapServiceDiscovery}}
   [DNS](#cfn-appmesh-virtualnode-servicediscovery-dns): {{

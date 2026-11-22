@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-webfunctionrevision-runtimeconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Runtime](#cfn-lambda-webfunctionrevision-runtimeconfig-runtime)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-webfunctionrevision-runtimeconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Runtime](#cfn-lambda-webfunctionrevision-runtimeconfig-runtime): {{String}}
 ```
 

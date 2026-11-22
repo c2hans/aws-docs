@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codedeploy-deploymentconfig-minimumhealthyhostsperzone-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-codedeploy-deploymentconfig-minimumhealthyhostsperzone-type)" : {{String}},
   "[Value](#cfn-codedeploy-deploymentconfig-minimumhealthyhostsperzone-value)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codedeploy-deploymentconfig-minimumhealthyhostsperzone-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-codedeploy-deploymentconfig-minimumhealthyhostsperzone-type): {{String}}
   [Value](#cfn-codedeploy-deploymentconfig-minimumhealthyhostsperzone-value): {{Integer}}
 ```

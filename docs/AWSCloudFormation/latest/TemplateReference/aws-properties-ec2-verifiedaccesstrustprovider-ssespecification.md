@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-verifiedaccesstrustprovider-ssespecification-syntax.json"></a>
 
-```
+```json
 {
   "[CustomerManagedKeyEnabled](#cfn-ec2-verifiedaccesstrustprovider-ssespecification-customermanagedkeyenabled)" : {{Boolean}},
   "[KmsKeyArn](#cfn-ec2-verifiedaccesstrustprovider-ssespecification-kmskeyarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-verifiedaccesstrustprovider-ssespecification-syntax.yaml"></a>
 
-```
+```yaml
   [CustomerManagedKeyEnabled](#cfn-ec2-verifiedaccesstrustprovider-ssespecification-customermanagedkeyenabled): {{Boolean}}
   [KmsKeyArn](#cfn-ec2-verifiedaccesstrustprovider-ssespecification-kmskeyarn): {{String}}
 ```

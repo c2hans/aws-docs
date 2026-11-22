@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-mediaconvert-jobtemplate-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MediaConvert::JobTemplate",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-mediaconvert-jobtemplate-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MediaConvert::JobTemplate
 Properties:
   [AccelerationSettings](#cfn-mediaconvert-jobtemplate-accelerationsettings): {{
@@ -201,7 +201,7 @@ For more information about creating a job template model in JSON or YAML for the
 #### JSON
 <a name="aws-resource-mediaconvert-jobtemplate--examples--Job_Template_Model_for_SettingsJson--json"></a>
 
-```
+```json
 {
     "AdAvailOffset": 0,
     "OutputGroups": [
@@ -251,7 +251,7 @@ For more information about creating a job template model in JSON or YAML for the
 #### YAML
 <a name="aws-resource-mediaconvert-jobtemplate--examples--Job_Template_Model_for_SettingsJson--yaml"></a>
 
-```
+```yaml
 ---
 AdAvailOffset: 0
 OutputGroups:

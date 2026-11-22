@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityhub-connectorv2-azureproviderconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AWSConfigConnectorArn](#cfn-securityhub-connectorv2-azureproviderconfiguration-awsconfigconnectorarn)" : {{String}},
   "[AzureRegions](#cfn-securityhub-connectorv2-azureproviderconfiguration-azureregions)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityhub-connectorv2-azureproviderconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AWSConfigConnectorArn](#cfn-securityhub-connectorv2-azureproviderconfiguration-awsconfigconnectorarn): {{String}}
   [AzureRegions](#cfn-securityhub-connectorv2-azureproviderconfiguration-azureregions): {{
     - String}}

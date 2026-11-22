@@ -41,7 +41,7 @@ The following C\# code example demonstrates the preceding steps. The code create
 
 Because `Precipitation` is not a key attribute for the table, it is not required. However, `WeatherData` items without `Precipitation` do not appear in `PrecipIndex`.
 
-```
+```csharp
 client = new AmazonDynamoDBClient();
 string tableName = "WeatherData";
 
@@ -128,7 +128,7 @@ The following C\# code example demonstrates the preceding steps.
 
 **Example**
 
-```
+```csharp
 client = new AmazonDynamoDBClient();
 string tableName = "WeatherData";
 
@@ -176,7 +176,7 @@ The following C\# code example demonstrates the preceding steps.
 
 **Example**
 
-```
+```csharp
 client = new AmazonDynamoDBClient();
 
 QueryRequest queryRequest = new QueryRequest

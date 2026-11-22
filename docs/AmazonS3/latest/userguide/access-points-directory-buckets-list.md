@@ -28,7 +28,7 @@ The following `list-access-points-for-directory-buckets` example command shows h
 
 The following command lists access points for AWS account {{111122223333}} that are attached to bucket {{{{amzn-s3-demo-bucket}}--{{zone-id}}--x-s3}}.
 
-```
+```bash,sh,zsh
 aws s3control list-access-points-for-directory-buckets --account-id {{111122223333}} --directory-bucket {{{{amzn-s3-demo-bucket}}--{{zone-id}}--x-s3}}
 ```
 
@@ -39,7 +39,7 @@ For more information and examples, see [list-access-points-for-directory-buckets
 
 The following example shows how you can use the REST API to list your access points.
 
-```
+```http
 GET /v20180820/directoryaccesspoint?directoryBucket={{{{amzn-s3-demo-bucket}}--{{zone-id}}--x-s3}}
 &maxResults={{maxResults}} HTTP/1.1
 Host: s3express-control.{{region}}.amazonaws.com
@@ -48,7 +48,7 @@ x-amz-account-id: {{111122223333}}
 
 **Example of `ListAccessPointsForDirectoryBuckets` response**
 
-```
+```http
 HTTP/1.1 200
 <?xml version="1.0" encoding="UTF-8"?>
 <ListDirectoryAccessPointsResult>

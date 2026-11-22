@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrcontainers-endpoint-configurationoverrides-syntax.json"></a>
 
-```
+```json
 {
   "[ApplicationConfiguration](#cfn-emrcontainers-endpoint-configurationoverrides-applicationconfiguration)" : {{[ EMREKSConfiguration, ... ]}},
   "[MonitoringConfiguration](#cfn-emrcontainers-endpoint-configurationoverrides-monitoringconfiguration)" : {{MonitoringConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrcontainers-endpoint-configurationoverrides-syntax.yaml"></a>
 
-```
+```yaml
   [ApplicationConfiguration](#cfn-emrcontainers-endpoint-configurationoverrides-applicationconfiguration): {{
     - EMREKSConfiguration}}
   [MonitoringConfiguration](#cfn-emrcontainers-endpoint-configurationoverrides-monitoringconfiguration): {{

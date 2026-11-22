@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-sectionlayoutconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[FreeFormLayout](#cfn-quicksight-analysis-sectionlayoutconfiguration-freeformlayout)" : {{FreeFormSectionLayoutConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-sectionlayoutconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [FreeFormLayout](#cfn-quicksight-analysis-sectionlayoutconfiguration-freeformlayout): {{
     FreeFormSectionLayoutConfiguration}}
 ```

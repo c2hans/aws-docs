@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-channel-recordschema-syntax.json"></a>
 
-```
+```json
 {
   "[GsrArn](#cfn-msk-channel-recordschema-gsrarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-channel-recordschema-syntax.yaml"></a>
 
-```
+```yaml
   [GsrArn](#cfn-msk-channel-recordschema-gsrarn): {{String}}
 ```
 

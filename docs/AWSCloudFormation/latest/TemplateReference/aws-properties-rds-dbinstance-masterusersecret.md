@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rds-dbinstance-masterusersecret-syntax.json"></a>
 
-```
+```json
 {
   "[KmsKeyId](#cfn-rds-dbinstance-masterusersecret-kmskeyid)" : {{String}},
   "[SecretArn](#cfn-rds-dbinstance-masterusersecret-secretarn)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rds-dbinstance-masterusersecret-syntax.yaml"></a>
 
-```
+```yaml
   [KmsKeyId](#cfn-rds-dbinstance-masterusersecret-kmskeyid): {{String}}
   [SecretArn](#cfn-rds-dbinstance-masterusersecret-secretarn): {{String}}
 ```

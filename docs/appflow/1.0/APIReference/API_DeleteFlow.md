@@ -81,7 +81,7 @@ This example shows an active scheduled flow with `forceDelete` false. The result
 #### Sample Request
 <a name="API_DeleteFlow_Example_1_Request"></a>
 
-```
+```json
 {
   "flowName": "flowName_value"
 }
@@ -90,7 +90,7 @@ This example shows an active scheduled flow with `forceDelete` false. The result
 #### Sample Response
 <a name="API_DeleteFlow_Example_1_Response"></a>
 
-```
+```json
 {
   "message": "Conflict executing request: Flow is in active state, please set forceDelete to true or deactivate the flow: flowName_value"
 }
@@ -104,7 +104,7 @@ This example shows an active scheduled flow with `forceDelete` true. The result 
 #### Sample Request
 <a name="API_DeleteFlow_Example_2_Request"></a>
 
-```
+```json
 {
   "flowName": "flowName_value",
   "forceDelete": true
@@ -114,7 +114,7 @@ This example shows an active scheduled flow with `forceDelete` true. The result 
 #### Sample Response
 <a name="API_DeleteFlow_Example_2_Response"></a>
 
-```
+```json
 {}
 ```
 

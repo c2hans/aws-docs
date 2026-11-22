@@ -20,7 +20,7 @@ The following examples show the equivalent code required to specify a KMS key as
 
 In Amazon S3 Encryption Client version 1.*x*, you instantiate an `EncryptionMaterialsProvider` with your wrapping key, and then specify that materials provider when instantiating the `v1Client` object.
 
-```
+```java
 // v1
 
 class v1KMSKeyExample {
@@ -39,7 +39,7 @@ class v1KMSKeyExample {
 
 In Amazon S3 Encryption Client version 2.*x*, you instantiate an `EncryptionMaterialsProvider` with your wrapping key, and then specify that materials provider when instantiating the `v2Client` object.
 
-```
+```java
 // v2
 
 class v2KMSKeyExample {
@@ -58,7 +58,7 @@ class v2KMSKeyExample {
 
 In Amazon S3 Encryption Client version 3.*x*, the `v3Client` constructor requires only a parameter that identifies the wrapping key. For a KMS key, use the `kmsKeyId` parameter. The value of the `kmsKeyId` parameter can be any valid KMS key identifier. For details, see [Key identifiers](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-id) in the *AWS Key Management Service Developer Guide*. 3.*x* clients use the default algorithm suite (ALG\_AES\_256\_GCM\_IV12\_TAG16\_NO\_KDF) which does not support key commitment and is maintained for backward compatibility. Content encrypted with this algorithm can be read by any 2.*x*, 3.*x*, or 4.*x* client.
 
-```
+```java
 // v3
 
 class v3KMSKeyExample {
@@ -73,7 +73,7 @@ class v3KMSKeyExample {
 
 If you're using Amazon S3 Encryption Client version 3.*x* and planning to migrate to 4.*x*, use the latest 3.*x* version (3.6.0 or greater) with the following configuration:
 
-```
+```java
 // 3.x (Latest 3.x version - 3.6.0 or greater for 4.x migration)
 
 class v3TransitionalKMSKeyExample {
@@ -119,7 +119,7 @@ If your `v3Client` doesn't include the necessary settings, and it encounters an 
 
 For example, this code builds a `v3Client` object with a user-provided raw AES wrapping key. This client always encrypts only with fully supported algorithms. However, it can decrypt objects and data keys encrypted with fully supported or legacy algorithms.
 
-```
+```java
 // v3
 
 class v3EnableLegacyDecryptionModesExample {

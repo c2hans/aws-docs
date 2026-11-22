@@ -90,7 +90,7 @@ This example illustrates how to delete an App Runner VPC connector.
 #### Sample Request
 <a name="API_DeleteVpcConnector_Example_1_Request"></a>
 
-```
+```json
 $ aws apprunner delete-vpc-connector --cli-input-json "`cat`"
 {
   "VpcConnectorArn": "arn:aws:apprunner:us-east-1:123456789012:vpcconnector/my-vpc-connector/1/3f2eb10e2c494674952026f646844e3d"
@@ -100,7 +100,7 @@ $ aws apprunner delete-vpc-connector --cli-input-json "`cat`"
 #### Sample Response
 <a name="API_DeleteVpcConnector_Example_1_Response"></a>
 
-```
+```json
 {
   "VpcConnector": {
     "VpcConnectorArn": "arn:aws:apprunner:us-east-1:123456789012:vpcconnector/my-vpc-connector/1/3f2eb10e2c494674952026f646844e3d",

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudtrail-channel-destination-syntax.json"></a>
 
-```
+```json
 {
   "[Location](#cfn-cloudtrail-channel-destination-location)" : {{String}},
   "[Type](#cfn-cloudtrail-channel-destination-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudtrail-channel-destination-syntax.yaml"></a>
 
-```
+```yaml
   [Location](#cfn-cloudtrail-channel-destination-location): {{String}}
   [Type](#cfn-cloudtrail-channel-destination-type): {{String}}
 ```

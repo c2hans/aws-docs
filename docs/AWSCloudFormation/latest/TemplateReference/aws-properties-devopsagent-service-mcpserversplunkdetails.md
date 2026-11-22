@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-service-mcpserversplunkdetails-syntax.json"></a>
 
-```
+```json
 {
   "[AuthorizationConfig](#cfn-devopsagent-service-mcpserversplunkdetails-authorizationconfig)" : {{MCPServerSplunkAuthorizationConfig}},
   "[Description](#cfn-devopsagent-service-mcpserversplunkdetails-description)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-service-mcpserversplunkdetails-syntax.yaml"></a>
 
-```
+```yaml
   [AuthorizationConfig](#cfn-devopsagent-service-mcpserversplunkdetails-authorizationconfig): {{
     MCPServerSplunkAuthorizationConfig}}
   [Description](#cfn-devopsagent-service-mcpserversplunkdetails-description): {{String}}

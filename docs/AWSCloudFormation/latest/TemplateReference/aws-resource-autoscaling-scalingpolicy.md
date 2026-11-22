@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-autoscaling-scalingpolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AutoScaling::ScalingPolicy",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-autoscaling-scalingpolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AutoScaling::ScalingPolicy
 Properties:
   [AdjustmentType](#cfn-autoscaling-scalingpolicy-adjustmenttype): {{String}}
@@ -203,7 +203,7 @@ The following template snippet shows a predictive scaling policy configuration t
 #### JSON
 <a name="aws-resource-autoscaling-scalingpolicy--examples--Predictive_scaling_policy--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion":"2010-09-09",
   "Resources":{
@@ -234,7 +234,7 @@ The following template snippet shows a predictive scaling policy configuration t
 #### YAML
 <a name="aws-resource-autoscaling-scalingpolicy--examples--Predictive_scaling_policy--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   myPredictiveScalingPolicy:
@@ -264,7 +264,7 @@ To create a scaling policy for the `ALBRequestCountPerTarget` metric and the loa
 #### JSON
 <a name="aws-resource-autoscaling-scalingpolicy--examples--Target_tracking_scaling_policy--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion":"2010-09-09",
   "Parameters":{
@@ -417,7 +417,7 @@ To create a scaling policy for the `ALBRequestCountPerTarget` metric and the loa
 #### YAML
 <a name="aws-resource-autoscaling-scalingpolicy--examples--Target_tracking_scaling_policy--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:
   AmiId:
@@ -519,7 +519,7 @@ When the associated alarm is triggered, the policy increases the capacity of the
 #### JSON
 <a name="aws-resource-autoscaling-scalingpolicy--examples--Step_scaling_policy--json"></a>
 
-```
+```json
 {
   "Resources":{
     "ASGScalingPolicyHigh":{
@@ -557,7 +557,7 @@ When the associated alarm is triggered, the policy increases the capacity of the
 #### YAML
 <a name="aws-resource-autoscaling-scalingpolicy--examples--Step_scaling_policy--yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   ASGScalingPolicyHigh:
@@ -587,7 +587,7 @@ The following example creates a scaling policy with the `SimpleScaling` policy t
 #### JSON
 <a name="aws-resource-autoscaling-scalingpolicy--examples--Simple_scaling_policy--json"></a>
 
-```
+```json
 {
   "Resources":{
     "ASGScalingPolicyHigh":{
@@ -608,7 +608,7 @@ The following example creates a scaling policy with the `SimpleScaling` policy t
 #### YAML
 <a name="aws-resource-autoscaling-scalingpolicy--examples--Simple_scaling_policy--yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   ASGScalingPolicyHigh:

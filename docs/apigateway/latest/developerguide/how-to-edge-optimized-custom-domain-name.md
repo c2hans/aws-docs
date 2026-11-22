@@ -19,7 +19,7 @@ The following are considerations for your edge-optimized custom domain name:
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

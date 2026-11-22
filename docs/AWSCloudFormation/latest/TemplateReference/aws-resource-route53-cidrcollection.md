@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-route53-cidrcollection-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Route53::CidrCollection",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-route53-cidrcollection-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53::CidrCollection
 Properties:
   [Locations](#cfn-route53-cidrcollection-locations): {{
@@ -90,7 +90,7 @@ The following example creates CIDR collection with two locations that each conta
 #### JSON
 <a name="aws-resource-route53-cidrcollection--examples--Create_a_CIDR_collection--json"></a>
 
-```
+```json
 {
   "MyCidrCollection":{
     "Type":"AWS::Route53::CidrCollection",
@@ -120,7 +120,7 @@ The following example creates CIDR collection with two locations that each conta
 #### YAML
 <a name="aws-resource-route53-cidrcollection--examples--Create_a_CIDR_collection--yaml"></a>
 
-```
+```yaml
 MyCidrCollection:
   Type: AWS::Route53::CidrCollection
   Properties:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-timestream-influxdbcluster-membermodecount-syntax.json"></a>
 
-```
+```json
 {
   "[Count](#cfn-timestream-influxdbcluster-membermodecount-count)" : {{Integer}},
   "[Mode](#cfn-timestream-influxdbcluster-membermodecount-mode)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-timestream-influxdbcluster-membermodecount-syntax.yaml"></a>
 
-```
+```yaml
   [Count](#cfn-timestream-influxdbcluster-membermodecount-count): {{Integer}}
   [Mode](#cfn-timestream-influxdbcluster-membermodecount-mode): {{String}}
 ```

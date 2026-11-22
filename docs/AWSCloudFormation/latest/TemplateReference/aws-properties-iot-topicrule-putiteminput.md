@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicrule-putiteminput-syntax.json"></a>
 
-```
+```json
 {
   "[TableName](#cfn-iot-topicrule-putiteminput-tablename)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicrule-putiteminput-syntax.yaml"></a>
 
-```
+```yaml
   [TableName](#cfn-iot-topicrule-putiteminput-tablename): {{String}}
 ```
 

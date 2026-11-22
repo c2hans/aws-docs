@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-route53resolver-firewallconfig-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Route53Resolver::FirewallConfig",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-route53resolver-firewallconfig-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53Resolver::FirewallConfig
 Properties:
   [FirewallFailOpen](#cfn-route53resolver-firewallconfig-firewallfailopen): {{String}}

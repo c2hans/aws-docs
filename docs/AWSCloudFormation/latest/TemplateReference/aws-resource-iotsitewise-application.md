@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iotsitewise-application-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoTSiteWise::Application",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iotsitewise-application-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoTSiteWise::Application
 Properties:
   [Description](#cfn-iotsitewise-application-description): {{String}}
@@ -151,7 +151,7 @@ Provide the name of an existing workspace that doesn't already contain an applic
 #### YAML
 <a name="aws-resource-iotsitewise-application--examples--Specify_an_application_with_IAM_Identity_Center--yaml"></a>
 
-```
+```yaml
 Parameters:
   WorkspaceName:
     Type: String

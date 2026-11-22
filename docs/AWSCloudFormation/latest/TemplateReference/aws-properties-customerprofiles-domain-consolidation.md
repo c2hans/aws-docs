@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-domain-consolidation-syntax.json"></a>
 
-```
+```json
 {
   "[MatchingAttributesList](#cfn-customerprofiles-domain-consolidation-matchingattributeslist)" : {{[ [ , ... ], ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-domain-consolidation-syntax.yaml"></a>
 
-```
+```yaml
   [MatchingAttributesList](#cfn-customerprofiles-domain-consolidation-matchingattributeslist): {{
     -
     - }}

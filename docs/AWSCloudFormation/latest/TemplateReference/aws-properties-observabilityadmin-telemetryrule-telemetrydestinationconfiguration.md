@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CloudtrailParameters](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-cloudtrailparameters)" : {{CloudtrailParameters}},
   "[DestinationPattern](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-destinationpattern)" : {{String}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CloudtrailParameters](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-cloudtrailparameters): {{
     CloudtrailParameters}}
   [DestinationPattern](#cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-destinationpattern): {{String}}
@@ -91,7 +91,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `LogDeliveryParameters`  <a name="cfn-observabilityadmin-telemetryrule-telemetrydestinationconfiguration-logdeliveryparameters"></a>
-The configuration parameters for log delivery when the resource type supports configurable log types, such as Amazon Bedrock Knowledge Bases or Elastic Load Balancing Application Load Balancers.
+The configuration parameters for log delivery when the resource type supports configurable log types, such as Amazon Bedrock Knowledge Bases, Amazon Bedrock AgentCore payment managers, or Elastic Load Balancing Application Load Balancers.
 *Required*: No
 *Type*: [LogDeliveryParameters](aws-properties-observabilityadmin-telemetryrule-logdeliveryparameters.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

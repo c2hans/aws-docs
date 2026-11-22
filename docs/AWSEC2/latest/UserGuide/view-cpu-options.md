@@ -23,7 +23,7 @@ You can view the CPU options for an existing instance by describing the instance
 **To view the CPU options for an instance**
 Use the [describe-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html) command.
 
-```
+```bash
 aws ec2 describe-instances \
     --instance-ids {{i-1234567890abcdef0}} \
     --query Reservations[].Instances[].CpuOptions
@@ -31,7 +31,7 @@ aws ec2 describe-instances \
 
 The following is example output. The `CoreCount` field indicates the number of cores for the instance. The `ThreadsPerCore` field indicates the number of threads per core.
 
-```
+```json
 [
     {
         "CoreCount": 24,
@@ -46,14 +46,14 @@ The following is example output. The `CoreCount` field indicates the number of c
 **To view the CPU options for an instance**
 Use the [Get-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html) cmdlet.
 
-```
+```powershell
 (Get-EC2Instance `
     -InstanceId '{{i-1234567890abcdef0}}').Instances.CpuOptions
 ```
 
 The following is example output.
 
-```
+```bash
 AmdSevSnp CoreCount ThreadsPerCore
 --------- --------- --------------
           24        2

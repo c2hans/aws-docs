@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-dataqualityjobdefinition-datasetformat-syntax.json"></a>
 
-```
+```json
 {
   "[Csv](#cfn-sagemaker-dataqualityjobdefinition-datasetformat-csv)" : {{Csv}},
   "[Json](#cfn-sagemaker-dataqualityjobdefinition-datasetformat-json)" : {{Json}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-dataqualityjobdefinition-datasetformat-syntax.yaml"></a>
 
-```
+```yaml
   [Csv](#cfn-sagemaker-dataqualityjobdefinition-datasetformat-csv): {{
     Csv}}
   [Json](#cfn-sagemaker-dataqualityjobdefinition-datasetformat-json): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sqs-queuepolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SQS::QueuePolicy",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sqs-queuepolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SQS::QueuePolicy
 Properties:
   [PolicyDocument](#cfn-sqs-queuepolicy-policydocument): {{Json}}
@@ -75,7 +75,7 @@ The following sample is a queue policy that allows AWS account 111122223333 to s
 #### JSON
 <a name="aws-resource-sqs-queuepolicy--examples--Amazon_SQS_Queue_Policy--json"></a>
 
-```
+```json
 
 "SampleSQSPolicy" : {
   "Type" : "AWS::SQS::QueuePolicy",
@@ -99,7 +99,7 @@ The following sample is a queue policy that allows AWS account 111122223333 to s
 #### YAML
 <a name="aws-resource-sqs-queuepolicy--examples--Amazon_SQS_Queue_Policy--yaml"></a>
 
-```
+```yaml
 
 SampleSQSPolicy:
   Type: AWS::SQS::QueuePolicy

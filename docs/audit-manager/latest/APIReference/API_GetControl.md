@@ -128,7 +128,7 @@ This example shows a sample response for the `GetControl` API operation. This ex
 #### Sample Response
 <a name="API_GetControl_Example_1_Response"></a>
 
-```
+```json
 {
     "control": {
         "arn": "arn:aws:auditmanager:us-east-1:111122223333:control/a1b2c3d4-5678-90ab-cdef-example11111",

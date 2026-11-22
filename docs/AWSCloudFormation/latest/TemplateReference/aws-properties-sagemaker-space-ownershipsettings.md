@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-space-ownershipsettings-syntax.json"></a>
 
-```
+```json
 {
   "[OwnerUserProfileName](#cfn-sagemaker-space-ownershipsettings-owneruserprofilename)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-space-ownershipsettings-syntax.yaml"></a>
 
-```
+```yaml
   [OwnerUserProfileName](#cfn-sagemaker-space-ownershipsettings-owneruserprofilename): {{String}}
 ```
 

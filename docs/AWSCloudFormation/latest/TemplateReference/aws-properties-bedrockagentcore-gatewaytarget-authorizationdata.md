@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewaytarget-authorizationdata-syntax.json"></a>
 
-```
+```json
 {
   "[Oauth2](#cfn-bedrockagentcore-gatewaytarget-authorizationdata-oauth2)" : {{OAuth2AuthorizationData}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewaytarget-authorizationdata-syntax.yaml"></a>
 
-```
+```yaml
   [Oauth2](#cfn-bedrockagentcore-gatewaytarget-authorizationdata-oauth2): {{
     OAuth2AuthorizationData}}
 ```

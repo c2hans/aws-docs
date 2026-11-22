@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-observabilityadmin-telemetryrule-regionstatus-syntax.json"></a>
 
-```
+```json
 {
   "[Region](#cfn-observabilityadmin-telemetryrule-regionstatus-region)" : {{String}},
   "[RuleArn](#cfn-observabilityadmin-telemetryrule-regionstatus-rulearn)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-observabilityadmin-telemetryrule-regionstatus-syntax.yaml"></a>
 
-```
+```yaml
   [Region](#cfn-observabilityadmin-telemetryrule-regionstatus-region): {{String}}
   [RuleArn](#cfn-observabilityadmin-telemetryrule-regionstatus-rulearn): {{String}}
   [Status](#cfn-observabilityadmin-telemetryrule-regionstatus-status): {{String}}

@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesis-stream-streamencryption-syntax.json"></a>
 
-```
+```json
 {
   "[EncryptionType](#cfn-kinesis-stream-streamencryption-encryptiontype)" : {{String}},
   "[KeyId](#cfn-kinesis-stream-streamencryption-keyid)" : {{String}}
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesis-stream-streamencryption-syntax.yaml"></a>
 
-```
+```yaml
   [EncryptionType](#cfn-kinesis-stream-streamencryption-encryptiontype): {{String}}
   [KeyId](#cfn-kinesis-stream-streamencryption-keyid): {{String}}
 ```

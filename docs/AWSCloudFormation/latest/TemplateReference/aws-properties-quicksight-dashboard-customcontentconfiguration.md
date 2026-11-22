@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-customcontentconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ContentType](#cfn-quicksight-dashboard-customcontentconfiguration-contenttype)" : {{String}},
   "[ContentUrl](#cfn-quicksight-dashboard-customcontentconfiguration-contenturl)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-customcontentconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ContentType](#cfn-quicksight-dashboard-customcontentconfiguration-contenttype): {{String}}
   [ContentUrl](#cfn-quicksight-dashboard-customcontentconfiguration-contenturl): {{String}}
   [ImageScaling](#cfn-quicksight-dashboard-customcontentconfiguration-imagescaling): {{String}}

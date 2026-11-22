@@ -130,7 +130,7 @@ The following is an example bucket policy. You express the bucket policy by usin
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -163,7 +163,7 @@ The following is an example of an identity-based policy. The example policy allo
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -214,7 +214,7 @@ The majority of modern use cases in Amazon S3 do not require the use of ACLs.
 
 The following is an example bucket ACL. The grant in the ACL shows a bucket owner that has full control permission.
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 	<AccessControlPolicy xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
 		<Owner>

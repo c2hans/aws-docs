@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-canaryconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CanaryBakeTimeInMinutes](#cfn-ecs-service-canaryconfiguration-canarybaketimeinminutes)" : {{Integer}},
   "[CanaryPercent](#cfn-ecs-service-canaryconfiguration-canarypercent)" : {{Number}}
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-canaryconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CanaryBakeTimeInMinutes](#cfn-ecs-service-canaryconfiguration-canarybaketimeinminutes): {{Integer}}
   [CanaryPercent](#cfn-ecs-service-canaryconfiguration-canarypercent): {{Number}}
 ```

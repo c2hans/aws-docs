@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigateway-documentationpart-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGateway::DocumentationPart",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigateway-documentationpart-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGateway::DocumentationPart
 Properties:
   [Location](#cfn-apigateway-documentationpart-location): {{
@@ -90,7 +90,7 @@ The following example associates a documentation part for an API entity with a d
 #### JSON
 <a name="aws-resource-apigateway-documentationpart--examples--Associate_documentation_part_with_documentation_version--json"></a>
 
-```
+```json
 {
     "Parameters": {
         "apiName": {
@@ -156,7 +156,7 @@ The following example associates a documentation part for an API entity with a d
 #### YAML
 <a name="aws-resource-apigateway-documentationpart--examples--Associate_documentation_part_with_documentation_version--yaml"></a>
 
-```
+```yaml
 Parameters:
   apiName:
     Type: String

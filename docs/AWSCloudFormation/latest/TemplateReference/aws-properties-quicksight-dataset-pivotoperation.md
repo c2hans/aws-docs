@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-pivotoperation-syntax.json"></a>
 
-```
+```json
 {
   "[Alias](#cfn-quicksight-dataset-pivotoperation-alias)" : {{String}},
   "[GroupByColumnNames](#cfn-quicksight-dataset-pivotoperation-groupbycolumnnames)" : {{[ String, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-pivotoperation-syntax.yaml"></a>
 
-```
+```yaml
   [Alias](#cfn-quicksight-dataset-pivotoperation-alias): {{String}}
   [GroupByColumnNames](#cfn-quicksight-dataset-pivotoperation-groupbycolumnnames): {{
     - String}}

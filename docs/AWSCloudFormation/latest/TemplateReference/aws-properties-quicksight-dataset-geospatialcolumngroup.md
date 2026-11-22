@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-geospatialcolumngroup-syntax.json"></a>
 
-```
+```json
 {
   "[Columns](#cfn-quicksight-dataset-geospatialcolumngroup-columns)" : {{[ String, ... ]}},
   "[CountryCode](#cfn-quicksight-dataset-geospatialcolumngroup-countrycode)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-geospatialcolumngroup-syntax.yaml"></a>
 
-```
+```yaml
   [Columns](#cfn-quicksight-dataset-geospatialcolumngroup-columns): {{
     - String}}
   [CountryCode](#cfn-quicksight-dataset-geospatialcolumngroup-countrycode): {{String}}

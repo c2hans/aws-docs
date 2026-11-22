@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-function-functionscalingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[MaxExecutionEnvironments](#cfn-lambda-function-functionscalingconfig-maxexecutionenvironments)" : {{Integer}},
   "[MinExecutionEnvironments](#cfn-lambda-function-functionscalingconfig-minexecutionenvironments)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-function-functionscalingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [MaxExecutionEnvironments](#cfn-lambda-function-functionscalingconfig-maxexecutionenvironments): {{Integer}}
   [MinExecutionEnvironments](#cfn-lambda-function-functionscalingconfig-minexecutionenvironments): {{Integer}}
 ```

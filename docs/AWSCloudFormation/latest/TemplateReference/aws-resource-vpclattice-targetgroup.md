@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-vpclattice-targetgroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::VpcLattice::TargetGroup",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-vpclattice-targetgroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::VpcLattice::TargetGroup
 Properties:
   [Config](#cfn-vpclattice-targetgroup-config): {{

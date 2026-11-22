@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-playbackconfiguration-adsinteractionlog-syntax.json"></a>
 
-```
+```json
 {
   "[ExcludeEventTypes](#cfn-mediatailor-playbackconfiguration-adsinteractionlog-excludeeventtypes)" : {{[ String, ... ]}},
   "[PublishOptInEventTypes](#cfn-mediatailor-playbackconfiguration-adsinteractionlog-publishoptineventtypes)" : {{[ String, ... ]}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-playbackconfiguration-adsinteractionlog-syntax.yaml"></a>
 
-```
+```yaml
   [ExcludeEventTypes](#cfn-mediatailor-playbackconfiguration-adsinteractionlog-excludeeventtypes): {{
     - String}}
   [PublishOptInEventTypes](#cfn-mediatailor-playbackconfiguration-adsinteractionlog-publishoptineventtypes): {{

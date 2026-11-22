@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cases-caserule-hiddencaserule-syntax.json"></a>
 
-```
+```json
 {
   "[Conditions](#cfn-cases-caserule-hiddencaserule-conditions)" : {{[ BooleanCondition, ... ]}},
   "[DefaultValue](#cfn-cases-caserule-hiddencaserule-defaultvalue)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cases-caserule-hiddencaserule-syntax.yaml"></a>
 
-```
+```yaml
   [Conditions](#cfn-cases-caserule-hiddencaserule-conditions): {{
     - BooleanCondition}}
   [DefaultValue](#cfn-cases-caserule-hiddencaserule-defaultvalue): {{Boolean}}

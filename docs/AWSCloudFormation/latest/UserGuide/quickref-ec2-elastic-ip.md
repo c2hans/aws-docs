@@ -21,7 +21,7 @@ For more information about Elastic IP addresses, see [Elastic IP address](https:
 ### JSON
 <a name="quickref-ec2-example-3.json"></a>
 
-```
+```json
 1. "ElasticIP": {
 2.     "Type": "AWS::EC2::EIP",
 3.     "Properties": {
@@ -35,7 +35,7 @@ For more information about Elastic IP addresses, see [Elastic IP address](https:
 ### YAML
 <a name="quickref-ec2-example-3.yaml"></a>
 
-```
+```yaml
 1. ElasticIP:
 2.   Type: AWS::EC2::EIP
 3.   Properties:
@@ -50,7 +50,7 @@ The following snippet associates an existing Amazon EC2 Elastic IP address to an
 ### JSON
 <a name="quickref-ec2-example-4.json"></a>
 
-```
+```json
 1. "IPAssoc": {
 2.   "Type": "AWS::EC2::EIPAssociation",
 3.   "Properties": {
@@ -65,7 +65,7 @@ The following snippet associates an existing Amazon EC2 Elastic IP address to an
 ### YAML
 <a name="quickref-ec2-example-4.yaml"></a>
 
-```
+```yaml
 1. IPAssoc:
 2.   Type: AWS::EC2::EIPAssociation
 3.   Properties:
@@ -81,7 +81,7 @@ The following snippet associates an existing Elastic IP address to an Amazon EC2
 ### JSON
 <a name="quickref-ec2-example-5.json"></a>
 
-```
+```json
 1. "IPAssoc": {
 2.     "Type": "AWS::EC2::EIPAssociation",
 3.     "Properties": {
@@ -96,7 +96,7 @@ The following snippet associates an existing Elastic IP address to an Amazon EC2
 ### YAML
 <a name="quickref-ec2-example-5.yaml"></a>
 
-```
+```yaml
 1. IPAssoc:
 2.   Type: AWS::EC2::EIPAssociation
 3.   Properties:

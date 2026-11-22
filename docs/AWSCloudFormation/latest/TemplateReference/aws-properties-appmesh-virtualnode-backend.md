@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-virtualnode-backend-syntax.json"></a>
 
-```
+```json
 {
   "[VirtualService](#cfn-appmesh-virtualnode-backend-virtualservice)" : {{VirtualServiceBackend}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-virtualnode-backend-syntax.yaml"></a>
 
-```
+```yaml
   [VirtualService](#cfn-appmesh-virtualnode-backend-virtualservice): {{
     VirtualServiceBackend}}
 ```

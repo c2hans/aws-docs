@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudfront-streamingdistribution-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudFront::StreamingDistribution",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudfront-streamingdistribution-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudFront::StreamingDistribution
 Properties:
   [StreamingDistributionConfig](#cfn-cloudfront-streamingdistribution-streamingdistributionconfig): {{

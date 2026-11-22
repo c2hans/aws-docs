@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appsync-graphqlapi-enhancedmetricsconfig-syntax.json"></a>
 
-```
+```json
 {
   "[DataSourceLevelMetricsBehavior](#cfn-appsync-graphqlapi-enhancedmetricsconfig-datasourcelevelmetricsbehavior)" : {{String}},
   "[OperationLevelMetricsConfig](#cfn-appsync-graphqlapi-enhancedmetricsconfig-operationlevelmetricsconfig)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appsync-graphqlapi-enhancedmetricsconfig-syntax.yaml"></a>
 
-```
+```yaml
   [DataSourceLevelMetricsBehavior](#cfn-appsync-graphqlapi-enhancedmetricsconfig-datasourcelevelmetricsbehavior): {{String}}
   [OperationLevelMetricsConfig](#cfn-appsync-graphqlapi-enhancedmetricsconfig-operationlevelmetricsconfig): {{String}}
   [ResolverLevelMetricsBehavior](#cfn-appsync-graphqlapi-enhancedmetricsconfig-resolverlevelmetricsbehavior): {{String}}

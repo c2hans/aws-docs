@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-project-projectmembershipassignment-syntax.json"></a>
 
-```
+```json
 {
   "[Designation](#cfn-datazone-project-projectmembershipassignment-designation)" : {{String}},
   "[Member](#cfn-datazone-project-projectmembershipassignment-member)" : {{Member}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-project-projectmembershipassignment-syntax.yaml"></a>
 
-```
+```yaml
   [Designation](#cfn-datazone-project-projectmembershipassignment-designation): {{String}}
   [Member](#cfn-datazone-project-projectmembershipassignment-member): {{
     Member}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-streamingdistribution-logging-syntax.json"></a>
 
-```
+```json
 {
   "[Bucket](#cfn-cloudfront-streamingdistribution-logging-bucket)" : {{String}},
   "[Enabled](#cfn-cloudfront-streamingdistribution-logging-enabled)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-streamingdistribution-logging-syntax.yaml"></a>
 
-```
+```yaml
   [Bucket](#cfn-cloudfront-streamingdistribution-logging-bucket): {{String}}
   [Enabled](#cfn-cloudfront-streamingdistribution-logging-enabled): {{Boolean}}
   [Prefix](#cfn-cloudfront-streamingdistribution-logging-prefix): {{String}}

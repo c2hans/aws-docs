@@ -76,7 +76,7 @@ The following is the Web Crawler JSON schema and examples for the configuration 
 
 The following is the Web Crawler JSON schema for the configuration property for CloudFormation
 
-```
+```json
 {
   "type": "object",
   "properties": {
@@ -392,7 +392,7 @@ The following is the Web Crawler JSON schema for the configuration property for 
 
 The following is the Web Crawler JSON schema example for the configuration property for CloudFormation
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "CloudFormation Web Crawler Data Source Template",
@@ -473,7 +473,7 @@ The following is the Web Crawler YAML schema and examples for the configuration 
 
 The following is the Web Crawler YAML schema for the configuration property for CloudFormation.
 
-```
+```YAML
 type: object
 properties:
   type:
@@ -707,7 +707,7 @@ required:
 
 The following is the Web Crawler YAML example for the Configuration property for CloudFormation:
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: CloudFormation Web Crawler Data Source Template
 Resources:

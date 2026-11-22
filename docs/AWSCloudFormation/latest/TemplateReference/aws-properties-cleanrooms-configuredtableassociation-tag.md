@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-configuredtableassociation-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-cleanrooms-configuredtableassociation-tag-key)" : {{String}},
   "[Value](#cfn-cleanrooms-configuredtableassociation-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-configuredtableassociation-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-cleanrooms-configuredtableassociation-tag-key): {{String}}
   [Value](#cfn-cleanrooms-configuredtableassociation-tag-value): {{String}}
 ```

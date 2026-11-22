@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-datasource-sslproperties-syntax.json"></a>
 
-```
+```json
 {
   "[DisableSsl](#cfn-quicksight-datasource-sslproperties-disablessl)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-datasource-sslproperties-syntax.yaml"></a>
 
-```
+```yaml
   [DisableSsl](#cfn-quicksight-datasource-sslproperties-disablessl): {{Boolean}}
 ```
 

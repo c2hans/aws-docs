@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskdefinition-taskdefinitionplacementconstraint-syntax.json"></a>
 
-```
+```json
 {
   "[Expression](#cfn-ecs-taskdefinition-taskdefinitionplacementconstraint-expression)" : {{String}},
   "[Type](#cfn-ecs-taskdefinition-taskdefinitionplacementconstraint-type)" : {{String}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskdefinition-taskdefinitionplacementconstraint-syntax.yaml"></a>
 
-```
+```yaml
   [Expression](#cfn-ecs-taskdefinition-taskdefinitionplacementconstraint-expression): {{String}}
   [Type](#cfn-ecs-taskdefinition-taskdefinitionplacementconstraint-type): {{String}}
 ```

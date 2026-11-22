@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-icebergdestinationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AppendOnly](#cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-appendonly)" : {{Boolean}},
   "[BufferingHints](#cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-bufferinghints)" : {{BufferingHints}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-icebergdestinationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AppendOnly](#cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-appendonly): {{Boolean}}
   [BufferingHints](#cfn-kinesisfirehose-deliverystream-icebergdestinationconfiguration-bufferinghints): {{
     BufferingHints}}

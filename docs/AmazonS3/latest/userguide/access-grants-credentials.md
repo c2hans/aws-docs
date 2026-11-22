@@ -100,7 +100,7 @@ The following code example returns the temporary credentials that the grantee us
 **Example Get temporary credentials**
 Request:
 
-```
+```java
 public void getDataAccess() {
 GetDataAccessRequest getDataAccessRequest = GetDataAccessRequest.builder()
 .accountId("{{111122223333}}")
@@ -114,7 +114,7 @@ LOGGER.info("GetDataAccessResponse: " + getDataAccessResponse);
 ```
 Response:
 
-```
+```java
 GetDataAccessResponse(
 Credentials=Credentials(
 AccessKeyId="{{Example-access-key-id}}",

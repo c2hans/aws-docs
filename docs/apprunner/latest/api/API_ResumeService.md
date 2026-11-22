@@ -185,7 +185,7 @@ This example illustrates how to resume an App Runner service.
 #### Sample Request
 <a name="API_ResumeService_Example_1_Request"></a>
 
-```
+```json
 $ aws apprunner resume-service --cli-input-json "`cat`"
 {
   "ServiceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa"
@@ -195,7 +195,7 @@ $ aws apprunner resume-service --cli-input-json "`cat`"
 #### Sample Response
 <a name="API_ResumeService_Example_1_Response"></a>
 
-```
+```json
 {
   "OperationId": "17fe9f55-7e91-4097-b243-fcabbb69a4cf",
   "Service": {

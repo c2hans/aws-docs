@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codedeploy-deploymentgroup-triggerconfig-syntax.json"></a>
 
-```
+```json
 {
   "[TriggerEvents](#cfn-codedeploy-deploymentgroup-triggerconfig-triggerevents)" : {{[ String, ... ]}},
   "[TriggerName](#cfn-codedeploy-deploymentgroup-triggerconfig-triggername)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codedeploy-deploymentgroup-triggerconfig-syntax.yaml"></a>
 
-```
+```yaml
   [TriggerEvents](#cfn-codedeploy-deploymentgroup-triggerconfig-triggerevents): {{
     - String}}
   [TriggerName](#cfn-codedeploy-deploymentgroup-triggerconfig-triggername): {{String}}

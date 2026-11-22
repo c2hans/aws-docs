@@ -10,7 +10,7 @@ Set JSON values for multiple keys. The operation is atomic. Either all values ar
 
 **Syntax**
 
-```
+```json
 JSON.MSET key path json [ key path json ... ]
 ```
 + If the path calls for an object member:
@@ -34,7 +34,7 @@ JSON.MSET key path json [ key path json ... ]
 
 Enhanced path syntax:
 
-```
+```json
 127.0.0.1:6379> JSON.MSET k1 . '[1,2,3,4,5]' k2 . '{"a":{"a":1, "b":2, "c":3}}' k3 . '{"a": [1,2,3,4,5]}'
 OK
 127.0.0.1:6379> JSON.GET k1
@@ -51,7 +51,7 @@ OK
 
 Restricted path syntax:
 
-```
+```json
 127.0.0.1:6379> JSON.MSET k1 . '{"name": "John","address": {"street": "123 Main St","city": "Springfield"},"phones": ["555-1234","555-5678"]}'
 OK
 127.0.0.1:6379> JSON.MSET k1 .address.street '"21 2nd Street"' k1 .address.city '"New York"'

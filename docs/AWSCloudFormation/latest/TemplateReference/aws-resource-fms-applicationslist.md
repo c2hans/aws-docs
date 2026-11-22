@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-fms-applicationslist-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::FMS::ApplicationsList",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-fms-applicationslist-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::FMS::ApplicationsList
 Properties:
   [AppsList](#cfn-fms-applicationslist-appslist): {{

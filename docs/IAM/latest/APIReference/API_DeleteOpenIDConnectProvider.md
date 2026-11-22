@@ -4,11 +4,9 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteOpenID
 
 # DeleteOpenIDConnectProvider
 
-Deletes an OpenID Connect identity provider (IdP) resource object in IAM.
+Deletes an OpenID Connect identity provider (IdP) resource object in IAM. Deleting the provider also deletes its trusted identity propagation context provider and removes any IAM Identity Center instance association.
 
 Deleting an IAM OIDC provider resource does not update any roles that reference the provider as a principal in their trust policies. Any attempt to assume a role that references a deleted provider fails.
-
-This operation is idempotent; it does not fail or return an error if you call the operation for a provider that does not exist.
 
 ## Request Parameters
 <a name="API_DeleteOpenIDConnectProvider_RequestParameters"></a>
@@ -25,6 +23,10 @@ Required: Yes
 <a name="API_DeleteOpenIDConnectProvider_Errors"></a>
 
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** ConcurrentModification **
+The request was rejected because multiple requests to change this object were submitted simultaneously. Wait a few minutes and submit your request again.
+HTTP Status Code: 409
 
  ** InvalidInput **
 The request was rejected because an invalid or out-of-range value was supplied for an input parameter.

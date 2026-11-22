@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-verifiedaccessendpoint-cidroptions-syntax.json"></a>
 
-```
+```json
 {
   "[Cidr](#cfn-ec2-verifiedaccessendpoint-cidroptions-cidr)" : {{String}},
   "[PortRanges](#cfn-ec2-verifiedaccessendpoint-cidroptions-portranges)" : {{[ PortRange, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-verifiedaccessendpoint-cidroptions-syntax.yaml"></a>
 
-```
+```yaml
   [Cidr](#cfn-ec2-verifiedaccessendpoint-cidroptions-cidr): {{String}}
   [PortRanges](#cfn-ec2-verifiedaccessendpoint-cidroptions-portranges): {{
     - PortRange}}

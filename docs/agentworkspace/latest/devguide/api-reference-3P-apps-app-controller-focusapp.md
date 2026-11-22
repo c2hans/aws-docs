@@ -8,13 +8,13 @@ Brings the application into focus in the Connect Customer agent workspace for th
 
  **Signature**
 
-```
+```typescript
 focusApp(instanceId: string): Promise<AppFocusResult>
 ```
 
  **Usage**
 
-```
+```typescript
 const applicationFocusResult: AppFocusResult = await appControllerClient.focusApp(appInstanceId);
 ```
 
@@ -37,6 +37,6 @@ The target instance must belong to the AppManager of the calling instance, or to
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

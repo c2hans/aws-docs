@@ -12,7 +12,7 @@ The following code examples show how to use `ListBuckets`.
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3#code-examples).
 
-```
+```csharp
 namespace ListBucketsExample
 {
     using System;
@@ -72,7 +72,7 @@ namespace ListBucketsExample
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 
-```
+```cpp
 bool AwsDoc::S3::listBuckets(const Aws::S3::S3ClientConfiguration &clientConfig) {
     Aws::S3::S3Client client(clientConfig);
 
@@ -123,7 +123,7 @@ For more information, see [General purpose buckets overview](https://docs.aws.am
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/s3#code-examples).
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -181,7 +181,7 @@ func (basics BucketBasics) ListBuckets(ctx context.Context) ([]types.Bucket, err
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/s3#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.s3.S3Client;
 import software.amazon.awssdk.services.s3.paginators.ListBucketsIterable;
@@ -224,7 +224,7 @@ public class ListBuckets {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 List the buckets.
 
-```
+```javascript
 import {
   paginateListBuckets,
   S3Client,
@@ -279,12 +279,12 @@ export const main = async () => {
 **Tools for PowerShell V4**
 **Example 1: This command returns all S3 buckets.**
 
-```
+```powershell
 Get-S3Bucket
 ```
 **Example 2: This command returns bucket named "test-files"**
 
-```
+```powershell
 Get-S3Bucket -BucketName amzn-s3-demo-bucket
 ```
 +  For API details, see [ListBuckets](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -292,12 +292,12 @@ Get-S3Bucket -BucketName amzn-s3-demo-bucket
 **Tools for PowerShell V5**
 **Example 1: This command returns all S3 buckets.**
 
-```
+```powershell
 Get-S3Bucket
 ```
 **Example 2: This command returns bucket named "amzn-s3-demo-bucket".**
 
-```
+```powershell
 Get-S3Bucket -BucketName amzn-s3-demo-bucket
 ```
 +  For API details, see [ListBuckets](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -308,7 +308,7 @@ Get-S3Bucket -BucketName amzn-s3-demo-bucket
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics#code-examples).
 
-```
+```python
 class BucketWrapper:
     """Encapsulates S3 bucket actions."""
 
@@ -347,7 +347,7 @@ class BucketWrapper:
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/s3#code-examples).
 
-```
+```ruby
 require 'aws-sdk-s3'
 
 # Wraps Amazon S3 resource actions.
@@ -392,7 +392,7 @@ run_demo if $PROGRAM_NAME == __FILE__
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/s3#code-examples).
 
-```
+```rust
 async fn show_buckets(
     strict: bool,
     client: &Client,
@@ -444,7 +444,7 @@ async fn show_buckets(
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_s3->listbuckets(         " oo_result is returned for testing purposes. "
         ).
@@ -462,7 +462,7 @@ async fn show_buckets(
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/s3#code-examples).
 
-```
+```swift
 import AWSS3
 
     /// Return an array containing information about every available bucket.

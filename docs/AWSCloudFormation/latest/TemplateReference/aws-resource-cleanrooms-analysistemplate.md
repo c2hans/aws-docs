@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cleanrooms-analysistemplate-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CleanRooms::AnalysisTemplate",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cleanrooms-analysistemplate-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CleanRooms::AnalysisTemplate
 Properties:
   [AnalysisParameters](#cfn-cleanrooms-analysistemplate-analysisparameters): {{
@@ -193,7 +193,7 @@ The following example creates an analysis template.
 #### JSON
 <a name="aws-resource-cleanrooms-analysistemplate--examples--Create_an_analysis_template--json"></a>
 
-```
+```json
 {
     "ExampleAnalysisTemplate": {
         "Type": "AWS::CleanRooms::AnalysisTemplate",
@@ -230,7 +230,7 @@ The following example creates an analysis template.
 #### YAML
 <a name="aws-resource-cleanrooms-analysistemplate--examples--Create_an_analysis_template--yaml"></a>
 
-```
+```yaml
 ExampleAnalysisTemplate:
     Type: 'AWS::CleanRooms::AnalysisTemplate'
     Properties:

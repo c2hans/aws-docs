@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-flowversion-metadataconfigurationforreranking-syntax.json"></a>
 
-```
+```json
 {
   "[SelectionMode](#cfn-bedrock-flowversion-metadataconfigurationforreranking-selectionmode)" : {{String}},
   "[SelectiveModeConfiguration](#cfn-bedrock-flowversion-metadataconfigurationforreranking-selectivemodeconfiguration)" : {{RerankingMetadataSelectiveModeConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-flowversion-metadataconfigurationforreranking-syntax.yaml"></a>
 
-```
+```yaml
   [SelectionMode](#cfn-bedrock-flowversion-metadataconfigurationforreranking-selectionmode): {{String}}
   [SelectiveModeConfiguration](#cfn-bedrock-flowversion-metadataconfigurationforreranking-selectivemodeconfiguration): {{
     RerankingMetadataSelectiveModeConfiguration}}

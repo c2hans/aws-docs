@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-networkinsightsaccessscope-resourcestatementrequest-syntax.json"></a>
 
-```
+```json
 {
   "[Resources](#cfn-ec2-networkinsightsaccessscope-resourcestatementrequest-resources)" : {{[ String, ... ]}},
   "[ResourceTypes](#cfn-ec2-networkinsightsaccessscope-resourcestatementrequest-resourcetypes)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-networkinsightsaccessscope-resourcestatementrequest-syntax.yaml"></a>
 
-```
+```yaml
   [Resources](#cfn-ec2-networkinsightsaccessscope-resourcestatementrequest-resources): {{
     - String}}
   [ResourceTypes](#cfn-ec2-networkinsightsaccessscope-resourcestatementrequest-resourcetypes): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-gateway-gatewaynetwork-syntax.json"></a>
 
-```
+```json
 {
   "[CidrBlock](#cfn-mediaconnect-gateway-gatewaynetwork-cidrblock)" : {{String}},
   "[Name](#cfn-mediaconnect-gateway-gatewaynetwork-name)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-gateway-gatewaynetwork-syntax.yaml"></a>
 
-```
+```yaml
   [CidrBlock](#cfn-mediaconnect-gateway-gatewaynetwork-cidrblock): {{String}}
   [Name](#cfn-mediaconnect-gateway-gatewaynetwork-name): {{String}}
 ```

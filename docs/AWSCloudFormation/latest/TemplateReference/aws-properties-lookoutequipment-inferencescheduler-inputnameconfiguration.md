@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lookoutequipment-inferencescheduler-inputnameconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ComponentTimestampDelimiter](#cfn-lookoutequipment-inferencescheduler-inputnameconfiguration-componenttimestampdelimiter)" : {{String}},
   "[TimestampFormat](#cfn-lookoutequipment-inferencescheduler-inputnameconfiguration-timestampformat)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lookoutequipment-inferencescheduler-inputnameconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ComponentTimestampDelimiter](#cfn-lookoutequipment-inferencescheduler-inputnameconfiguration-componenttimestampdelimiter): {{String}}
   [TimestampFormat](#cfn-lookoutequipment-inferencescheduler-inputnameconfiguration-timestampformat): {{String}}
 ```

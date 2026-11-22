@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-deadline-fleet-servicemanagedec2instancemarketoptions-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-deadline-fleet-servicemanagedec2instancemarketoptions-type)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-deadline-fleet-servicemanagedec2instancemarketoptions-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-deadline-fleet-servicemanagedec2instancemarketoptions-type): {{String}}
 ```
 

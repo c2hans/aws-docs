@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-rowlevelpermissiontagconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Status](#cfn-quicksight-dataset-rowlevelpermissiontagconfiguration-status)" : {{String}},
   "[TagRuleConfigurations](#cfn-quicksight-dataset-rowlevelpermissiontagconfiguration-tagruleconfigurations)" : {{[ [ , ... ], ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-rowlevelpermissiontagconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Status](#cfn-quicksight-dataset-rowlevelpermissiontagconfiguration-status): {{String}}
   [TagRuleConfigurations](#cfn-quicksight-dataset-rowlevelpermissiontagconfiguration-tagruleconfigurations): {{
     -

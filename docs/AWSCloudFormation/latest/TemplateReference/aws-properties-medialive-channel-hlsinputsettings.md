@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-hlsinputsettings-syntax.json"></a>
 
-```
+```json
 {
   "[Bandwidth](#cfn-medialive-channel-hlsinputsettings-bandwidth)" : {{Integer}},
   "[BufferSegments](#cfn-medialive-channel-hlsinputsettings-buffersegments)" : {{Integer}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-hlsinputsettings-syntax.yaml"></a>
 
-```
+```yaml
   [Bandwidth](#cfn-medialive-channel-hlsinputsettings-bandwidth): {{Integer}}
   [BufferSegments](#cfn-medialive-channel-hlsinputsettings-buffersegments): {{Integer}}
   [Retries](#cfn-medialive-channel-hlsinputsettings-retries): {{Integer}}

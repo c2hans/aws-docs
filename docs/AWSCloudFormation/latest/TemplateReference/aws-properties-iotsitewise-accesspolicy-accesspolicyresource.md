@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotsitewise-accesspolicy-accesspolicyresource-syntax.json"></a>
 
-```
+```json
 {
   "[Portal](#cfn-iotsitewise-accesspolicy-accesspolicyresource-portal)" : {{Portal}},
   "[Project](#cfn-iotsitewise-accesspolicy-accesspolicyresource-project)" : {{Project}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotsitewise-accesspolicy-accesspolicyresource-syntax.yaml"></a>
 
-```
+```yaml
   [Portal](#cfn-iotsitewise-accesspolicy-accesspolicyresource-portal): {{
     Portal}}
   [Project](#cfn-iotsitewise-accesspolicy-accesspolicyresource-project): {{

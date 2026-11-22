@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-table-opentableformatinput-syntax.json"></a>
 
-```
+```json
 {
   "[IcebergInput](#cfn-glue-table-opentableformatinput-iceberginput)" : {{IcebergInput}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-table-opentableformatinput-syntax.yaml"></a>
 
-```
+```yaml
   [IcebergInput](#cfn-glue-table-opentableformatinput-iceberginput): {{
     IcebergInput}}
 ```

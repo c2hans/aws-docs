@@ -103,7 +103,7 @@ In the example, two revisions exist before this action. Therefore, revision `2` 
 #### Sample Request
 <a name="API_DeleteAutoScalingConfiguration_Example_1_Request"></a>
 
-```
+```json
 $ aws apprunner delete-auto-scaling-configuration --cli-input-json "`cat`"
 {
   "AutoScalingConfigurationArn": "arn:aws:apprunner:us-east-1:123456789012:autoscalingconfiguration/high-availability"
@@ -113,7 +113,7 @@ $ aws apprunner delete-auto-scaling-configuration --cli-input-json "`cat`"
 #### Sample Response
 <a name="API_DeleteAutoScalingConfiguration_Example_1_Response"></a>
 
-```
+```json
 {
   "AutoScalingConfiguration": {
     "AutoScalingConfigurationArn": "arn:aws:apprunner:us-east-1:123456789012:autoscalingconfiguration/high-availability/2/e76562f50d78042e819fead0f59672e6",
@@ -140,7 +140,7 @@ In the example, several revisions exist before this action. The action deletes r
 #### Sample Request
 <a name="API_DeleteAutoScalingConfiguration_Example_2_Request"></a>
 
-```
+```json
 $ aws apprunner delete-auto-scaling-configuration --cli-input-json "`cat`"
 {
   "AutoScalingConfigurationArn": "arn:aws:apprunner:us-east-1:123456789012:autoscalingconfiguration/high-availability/1"
@@ -150,7 +150,7 @@ $ aws apprunner delete-auto-scaling-configuration --cli-input-json "`cat`"
 #### Sample Response
 <a name="API_DeleteAutoScalingConfiguration_Example_2_Response"></a>
 
-```
+```json
 {
   "AutoScalingConfiguration": {
     "AutoScalingConfigurationArn": "arn:aws:apprunner:us-east-1:123456789012:autoscalingconfiguration/high-availability/1/2f50e7656d7819fead0f59672e68042e",
@@ -179,7 +179,7 @@ The response does not include all of the fields listed in the *Response Syntax*.
 #### Sample Request
 <a name="API_DeleteAutoScalingConfiguration_Example_3_Request"></a>
 
-```
+```json
 $ aws apprunner delete-auto-scaling-configuration --cli-input-json "`cat`"
 {
     "AutoScalingConfigurationArn": "arn:aws:apprunner:us-east-1:123456789012:autoscalingconfiguration/high-availability",
@@ -190,7 +190,7 @@ $ aws apprunner delete-auto-scaling-configuration --cli-input-json "`cat`"
 #### Sample Response
 <a name="API_DeleteAutoScalingConfiguration_Example_3_Response"></a>
 
-```
+```json
 {
     "AutoScalingConfiguration": {
         "AutoScalingConfigurationArn": "arn:aws:apprunner:us-east-1:123456789012:autoscalingconfiguration/high-availability",

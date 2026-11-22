@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ivs-stage-participantrecordinghlsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[TargetSegmentDurationSeconds](#cfn-ivs-stage-participantrecordinghlsconfiguration-targetsegmentdurationseconds)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ivs-stage-participantrecordinghlsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [TargetSegmentDurationSeconds](#cfn-ivs-stage-participantrecordinghlsconfiguration-targetsegmentdurationseconds): {{Integer}}
 ```
 

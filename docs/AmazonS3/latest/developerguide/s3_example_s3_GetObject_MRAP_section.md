@@ -13,7 +13,7 @@ The following code example shows how to get an object from a Multi-Region Access
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/s3#code-examples).
 Configure the S3 client to use the Asymmetric Sigv4 (Sigv4a) signing algorithm.
 
-```
+```kotlin
         suspend fun createS3Client(): S3Client {
             // Configure your S3Client to use the Asymmetric SigV4 (SigV4a) signing algorithm.
             val sigV4aScheme = SigV4AsymmetricAuthScheme(DefaultAwsSigner)
@@ -25,7 +25,7 @@ Configure the S3 client to use the Asymmetric Sigv4 (Sigv4a) signing algorithm.
 ```
 Use the Multi-Region Access Point ARN instead of a bucket name to retrieve the object.
 
-```
+```kotlin
     suspend fun getObjectFromMrap(
         s3: S3Client,
         mrapArn: String,

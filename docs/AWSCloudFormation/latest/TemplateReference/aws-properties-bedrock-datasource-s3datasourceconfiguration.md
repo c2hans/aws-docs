@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-datasource-s3datasourceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BucketArn](#cfn-bedrock-datasource-s3datasourceconfiguration-bucketarn)" : {{String}},
   "[BucketOwnerAccountId](#cfn-bedrock-datasource-s3datasourceconfiguration-bucketowneraccountid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-datasource-s3datasourceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BucketArn](#cfn-bedrock-datasource-s3datasourceconfiguration-bucketarn): {{String}}
   [BucketOwnerAccountId](#cfn-bedrock-datasource-s3datasourceconfiguration-bucketowneraccountid): {{String}}
   [InclusionPrefixes](#cfn-bedrock-datasource-s3datasourceconfiguration-inclusionprefixes): {{

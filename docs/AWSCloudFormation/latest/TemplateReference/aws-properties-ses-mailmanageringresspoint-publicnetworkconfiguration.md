@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-mailmanageringresspoint-publicnetworkconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[IpType](#cfn-ses-mailmanageringresspoint-publicnetworkconfiguration-iptype)" : {{}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-mailmanageringresspoint-publicnetworkconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [IpType](#cfn-ses-mailmanageringresspoint-publicnetworkconfiguration-iptype): {{
     }}
 ```

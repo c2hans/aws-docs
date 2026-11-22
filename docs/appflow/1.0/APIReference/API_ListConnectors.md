@@ -111,7 +111,7 @@ This example shows a sample request for the `ListConnector` API and a sample res
 #### Sample Request
 <a name="API_ListConnectors_Example_1_Request"></a>
 
-```
+```json
 {
   "maxResults": 1,
   "nextToken": "nextToken_value"
@@ -121,7 +121,7 @@ This example shows a sample request for the `ListConnector` API and a sample res
 #### Sample Response
 <a name="API_ListConnectors_Example_1_Response"></a>
 
-```
+```json
 {
   "connectors":
   [

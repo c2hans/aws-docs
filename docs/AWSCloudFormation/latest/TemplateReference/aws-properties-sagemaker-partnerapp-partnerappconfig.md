@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-partnerapp-partnerappconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AdminUsers](#cfn-sagemaker-partnerapp-partnerappconfig-adminusers)" : {{[ String, ... ]}},
   "[Arguments](#cfn-sagemaker-partnerapp-partnerappconfig-arguments)" : {{{{{Key}}: {{Value}}, ...}}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-partnerapp-partnerappconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AdminUsers](#cfn-sagemaker-partnerapp-partnerappconfig-adminusers): {{
     - String}}
   [Arguments](#cfn-sagemaker-partnerapp-partnerappconfig-arguments): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcaconnectorad-template-applicationpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[PolicyObjectIdentifier](#cfn-pcaconnectorad-template-applicationpolicy-policyobjectidentifier)" : {{String}},
   "[PolicyType](#cfn-pcaconnectorad-template-applicationpolicy-policytype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcaconnectorad-template-applicationpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [PolicyObjectIdentifier](#cfn-pcaconnectorad-template-applicationpolicy-policyobjectidentifier): {{String}}
   [PolicyType](#cfn-pcaconnectorad-template-applicationpolicy-policytype): {{String}}
 ```

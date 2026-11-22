@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-transfer-webapp-webappunits-syntax.json"></a>
 
-```
+```json
 {
   "[Provisioned](#cfn-transfer-webapp-webappunits-provisioned)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-transfer-webapp-webappunits-syntax.yaml"></a>
 
-```
+```yaml
   [Provisioned](#cfn-transfer-webapp-webappunits-provisioned): {{Integer}}
 ```
 

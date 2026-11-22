@@ -29,7 +29,7 @@ aws application-autoscaling describe-scaling-policies --service-namespace {{ecs}
 **Output**
 The following is example output.
 
-```
+```json
 [
     {
         "PolicyARN": "PolicyARN",

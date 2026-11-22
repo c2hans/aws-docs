@@ -72,14 +72,14 @@ If object replicas don't appear in the destination Amazon S3 on Outposts bucket 
 
   Source bucket:
 
-  ```
+  ```json
   1. "s3-outposts:GetObjectVersionForReplication",
   2. "s3-outposts:GetObjectVersionTagging"
   ```
 
   Destination buckets:
 
-  ```
+  ```json
   1. "s3-outposts:ReplicateObject",
   2. "s3-outposts:ReplicateDelete",
   3. "s3-outposts:ReplicateTags"

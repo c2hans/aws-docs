@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-accessgrant-rowscope-syntax.json"></a>
 
-```
+```json
 {
   "[Field](#cfn-cloudwatch-accessgrant-rowscope-field)" : {{String}},
   "[Operator](#cfn-cloudwatch-accessgrant-rowscope-operator)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-accessgrant-rowscope-syntax.yaml"></a>
 
-```
+```yaml
   [Field](#cfn-cloudwatch-accessgrant-rowscope-field): {{String}}
   [Operator](#cfn-cloudwatch-accessgrant-rowscope-operator): {{String}}
   [Values](#cfn-cloudwatch-accessgrant-rowscope-values): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-decimaldatasetparameterdefaultvalues-syntax.json"></a>
 
-```
+```json
 {
   "[StaticValues](#cfn-quicksight-dataset-decimaldatasetparameterdefaultvalues-staticvalues)" : {{[ Number, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-decimaldatasetparameterdefaultvalues-syntax.yaml"></a>
 
-```
+```yaml
   [StaticValues](#cfn-quicksight-dataset-decimaldatasetparameterdefaultvalues-staticvalues): {{
     - Number}}
 ```

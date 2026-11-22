@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-gateway-gatewayelbnetworkconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[InboundSecurityGroup](#cfn-ecs-gateway-gatewayelbnetworkconfiguration-inboundsecuritygroup)" : {{String}},
   "[IpAddressType](#cfn-ecs-gateway-gatewayelbnetworkconfiguration-ipaddresstype)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-gateway-gatewayelbnetworkconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [InboundSecurityGroup](#cfn-ecs-gateway-gatewayelbnetworkconfiguration-inboundsecuritygroup): {{String}}
   [IpAddressType](#cfn-ecs-gateway-gatewayelbnetworkconfiguration-ipaddresstype): {{String}}
   [Subnets](#cfn-ecs-gateway-gatewayelbnetworkconfiguration-subnets): {{

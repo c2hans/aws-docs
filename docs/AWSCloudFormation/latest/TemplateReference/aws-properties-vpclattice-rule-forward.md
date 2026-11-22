@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-vpclattice-rule-forward-syntax.json"></a>
 
-```
+```json
 {
   "[TargetGroups](#cfn-vpclattice-rule-forward-targetgroups)" : {{[ WeightedTargetGroup, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-vpclattice-rule-forward-syntax.yaml"></a>
 
-```
+```yaml
   [TargetGroups](#cfn-vpclattice-rule-forward-targetgroups): {{
     - WeightedTargetGroup}}
 ```

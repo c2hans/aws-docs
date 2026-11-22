@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-regexpatternsetreferencestatement-syntax.json"></a>
 
-```
+```json
 {
   "[Arn](#cfn-wafv2-webacl-regexpatternsetreferencestatement-arn)" : {{String}},
   "[FieldToMatch](#cfn-wafv2-webacl-regexpatternsetreferencestatement-fieldtomatch)" : {{FieldToMatch}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-regexpatternsetreferencestatement-syntax.yaml"></a>
 
-```
+```yaml
   [Arn](#cfn-wafv2-webacl-regexpatternsetreferencestatement-arn): {{String}}
   [FieldToMatch](#cfn-wafv2-webacl-regexpatternsetreferencestatement-fieldtomatch): {{
     FieldToMatch}}

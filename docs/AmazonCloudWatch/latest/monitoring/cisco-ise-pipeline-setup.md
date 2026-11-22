@@ -8,7 +8,7 @@ The Cisco ISE setup on AWS reads log data from Amazon S3 buckets using Amazon SQ
 
 Configure the Cisco ISE source with the following parameters:
 
-```
+```yaml
 source:
   s3:
     aws:

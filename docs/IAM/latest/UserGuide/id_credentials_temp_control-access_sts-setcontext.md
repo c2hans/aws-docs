@@ -18,7 +18,7 @@ The following example identity-based policy grants the `sts:SetContext` permissi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/converting-native-data-
 
 To convert Athena data types to JSON, use `CAST`.
 
-```
+```sql
 WITH dataset AS (
   SELECT
     CAST('HELLO ATHENA' AS JSON) AS hello_msg,

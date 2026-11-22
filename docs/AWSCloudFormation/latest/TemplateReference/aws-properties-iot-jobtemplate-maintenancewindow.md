@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-jobtemplate-maintenancewindow-syntax.json"></a>
 
-```
+```json
 {
   "[DurationInMinutes](#cfn-iot-jobtemplate-maintenancewindow-durationinminutes)" : {{Integer}},
   "[StartTime](#cfn-iot-jobtemplate-maintenancewindow-starttime)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-jobtemplate-maintenancewindow-syntax.yaml"></a>
 
-```
+```yaml
   [DurationInMinutes](#cfn-iot-jobtemplate-maintenancewindow-durationinminutes): {{Integer}}
   [StartTime](#cfn-iot-jobtemplate-maintenancewindow-starttime): {{String}}
 ```

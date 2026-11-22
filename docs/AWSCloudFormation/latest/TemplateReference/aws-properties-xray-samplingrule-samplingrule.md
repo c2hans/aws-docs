@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-xray-samplingrule-samplingrule-syntax.json"></a>
 
-```
+```json
 {
   "[Attributes](#cfn-xray-samplingrule-samplingrule-attributes)" : {{{{{Key}}: {{Value}}, ...}}},
   "[FixedRate](#cfn-xray-samplingrule-samplingrule-fixedrate)" : {{Number}},
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-xray-samplingrule-samplingrule-syntax.yaml"></a>
 
-```
+```yaml
   [Attributes](#cfn-xray-samplingrule-samplingrule-attributes): {{
     {{Key}}: {{Value}}}}
   [FixedRate](#cfn-xray-samplingrule-samplingrule-fixedrate): {{Number}}

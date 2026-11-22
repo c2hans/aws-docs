@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-messagetemplate-groupingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Criteria](#cfn-wisdom-messagetemplate-groupingconfiguration-criteria)" : {{String}},
   "[Values](#cfn-wisdom-messagetemplate-groupingconfiguration-values)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-messagetemplate-groupingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Criteria](#cfn-wisdom-messagetemplate-groupingconfiguration-criteria): {{String}}
   [Values](#cfn-wisdom-messagetemplate-groupingconfiguration-values): {{
     - String}}

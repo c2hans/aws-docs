@@ -37,7 +37,7 @@ The following AWS CLI example puts a policy on an Outposts bucket.
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Id":"testBucketPolicy",
@@ -73,7 +73,7 @@ The following AWS CLI example puts a policy on an Outposts bucket.
 
 The following SDK for Java example puts a policy on an Outposts bucket.
 
-```
+```Java
 import com.amazonaws.services.s3control.model.*;
 
 public void putBucketPolicy(String bucketArn) {

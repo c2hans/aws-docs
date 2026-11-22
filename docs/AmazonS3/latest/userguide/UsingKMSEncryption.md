@@ -119,7 +119,7 @@ To require server-side encryption of all objects in a particular Amazon S3 bucke
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Id":"PutObjectPolicy",

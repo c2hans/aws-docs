@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-categorydrilldownfilter-syntax.json"></a>
 
-```
+```json
 {
   "[CategoryValues](#cfn-quicksight-template-categorydrilldownfilter-categoryvalues)" : {{[ String, ... ]}},
   "[Column](#cfn-quicksight-template-categorydrilldownfilter-column)" : {{ColumnIdentifier}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-categorydrilldownfilter-syntax.yaml"></a>
 
-```
+```yaml
   [CategoryValues](#cfn-quicksight-template-categorydrilldownfilter-categoryvalues): {{
     - String}}
   [Column](#cfn-quicksight-template-categorydrilldownfilter-column): {{

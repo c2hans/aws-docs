@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-volume-syntax.json"></a>
 
-```
+```json
 {
   "[EfsVolumeConfiguration](#cfn-batch-jobdefinition-volume-efsvolumeconfiguration)" : {{EFSVolumeConfiguration}},
   "[Host](#cfn-batch-jobdefinition-volume-host)" : {{Host}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-volume-syntax.yaml"></a>
 
-```
+```yaml
   [EfsVolumeConfiguration](#cfn-batch-jobdefinition-volume-efsvolumeconfiguration): {{
     EFSVolumeConfiguration}}
   [Host](#cfn-batch-jobdefinition-volume-host): {{

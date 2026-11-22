@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-autoscaling-autoscalinggroup-availabilityzoneimpairmentpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[ImpairedZoneHealthCheckBehavior](#cfn-autoscaling-autoscalinggroup-availabilityzoneimpairmentpolicy-impairedzonehealthcheckbehavior)" : {{String}},
   "[ZonalShiftEnabled](#cfn-autoscaling-autoscalinggroup-availabilityzoneimpairmentpolicy-zonalshiftenabled)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-autoscaling-autoscalinggroup-availabilityzoneimpairmentpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [ImpairedZoneHealthCheckBehavior](#cfn-autoscaling-autoscalinggroup-availabilityzoneimpairmentpolicy-impairedzonehealthcheckbehavior): {{String}}
   [ZonalShiftEnabled](#cfn-autoscaling-autoscalinggroup-availabilityzoneimpairmentpolicy-zonalshiftenabled): {{Boolean}}
 ```

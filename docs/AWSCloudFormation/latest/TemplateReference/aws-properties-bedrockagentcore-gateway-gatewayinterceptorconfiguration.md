@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gateway-gatewayinterceptorconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[InputConfiguration](#cfn-bedrockagentcore-gateway-gatewayinterceptorconfiguration-inputconfiguration)" : {{InterceptorInputConfiguration}},
   "[InterceptionPoints](#cfn-bedrockagentcore-gateway-gatewayinterceptorconfiguration-interceptionpoints)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gateway-gatewayinterceptorconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [InputConfiguration](#cfn-bedrockagentcore-gateway-gatewayinterceptorconfiguration-inputconfiguration): {{
     InterceptorInputConfiguration}}
   [InterceptionPoints](#cfn-bedrockagentcore-gateway-gatewayinterceptorconfiguration-interceptionpoints): {{

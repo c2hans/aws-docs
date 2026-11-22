@@ -18,7 +18,7 @@ In this example, we use the following template, named `templateToImport.json`.
 ------
 #### [ Example JSON ]
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Import test",
@@ -76,7 +76,7 @@ In this example, we use the following template, named `templateToImport.json`.
 ------
 #### [ Example YAML ]
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Import test
 Resources:
@@ -151,7 +151,7 @@ To resolve drift through an import operation, without interrupting services, spe
 ------
 #### [ Example JSON ]
 
-```
+```json
     "GamesTable": {
         "Type": "AWS::DynamoDB::Table",
         "DeletionPolicy": "Retain",
@@ -162,7 +162,7 @@ To resolve drift through an import operation, without interrupting services, spe
 ------
 #### [ Example YAML ]
 
-```
+```yaml
   GamesTable:
     Type: AWS::DynamoDB::Table
     DeletionPolicy: Retain
@@ -198,7 +198,7 @@ Wait until CloudFormation completes the stack update operation. After the stack 
 ------
 #### [ Example JSON ]
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Import test",
@@ -233,7 +233,7 @@ Wait until CloudFormation completes the stack update operation. After the stack 
 ------
 #### [ Example YAML ]
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Import test
 Resources:
@@ -290,7 +290,7 @@ Wait until CloudFormation completes the stack update operation. After the stack 
 ------
 #### [ Example JSON ]
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Import test",
@@ -349,7 +349,7 @@ Wait until CloudFormation completes the stack update operation. After the stack 
 ------
 #### [ Example YAML ]
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Import test
 Resources:

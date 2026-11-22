@@ -17,7 +17,7 @@ The following categories of activity are monitored and put in the activity strea
 **Important**
 The full SQL text of each statement is visible in the activity stream audit log, including any sensitive data. However, database user passwords are redacted if Aurora can determine them from the context, such as in the following SQL statement.
 
-  ```
+  ```sql
   ALTER ROLE role-name WITH password
   ```
 + **Connection information** – Activity monitored includes session and network information, the server process ID, and exit codes.

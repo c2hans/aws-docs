@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-routerinput-rtmppushrouterinputconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[NamingConfiguration](#cfn-mediaconnect-routerinput-rtmppushrouterinputconfiguration-namingconfiguration)" : {{RtmpPushNamingConfiguration}},
   "[NamingType](#cfn-mediaconnect-routerinput-rtmppushrouterinputconfiguration-namingtype)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-routerinput-rtmppushrouterinputconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [NamingConfiguration](#cfn-mediaconnect-routerinput-rtmppushrouterinputconfiguration-namingconfiguration): {{
     RtmpPushNamingConfiguration}}
   [NamingType](#cfn-mediaconnect-routerinput-rtmppushrouterinputconfiguration-namingtype): {{String}}

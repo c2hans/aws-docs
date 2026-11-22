@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-ec2fleet-reservedcapacityfallbackoptionsrequest-syntax.json"></a>
 
-```
+```json
 {
   "[MarketTypes](#cfn-ec2-ec2fleet-reservedcapacityfallbackoptionsrequest-markettypes)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-ec2fleet-reservedcapacityfallbackoptionsrequest-syntax.yaml"></a>
 
-```
+```yaml
   [MarketTypes](#cfn-ec2-ec2fleet-reservedcapacityfallbackoptionsrequest-markettypes): {{
     - String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-bridgesource-bridgeflowsource-syntax.json"></a>
 
-```
+```json
 {
   "[FlowArn](#cfn-mediaconnect-bridgesource-bridgeflowsource-flowarn)" : {{String}},
   "[FlowVpcInterfaceAttachment](#cfn-mediaconnect-bridgesource-bridgeflowsource-flowvpcinterfaceattachment)" : {{VpcInterfaceAttachment}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-bridgesource-bridgeflowsource-syntax.yaml"></a>
 
-```
+```yaml
   [FlowArn](#cfn-mediaconnect-bridgesource-bridgeflowsource-flowarn): {{String}}
   [FlowVpcInterfaceAttachment](#cfn-mediaconnect-bridgesource-bridgeflowsource-flowvpcinterfaceattachment): {{
     VpcInterfaceAttachment}}

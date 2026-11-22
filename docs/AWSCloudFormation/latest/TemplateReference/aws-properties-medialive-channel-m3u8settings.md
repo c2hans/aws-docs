@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-m3u8settings-syntax.json"></a>
 
-```
+```json
 {
   "[AudioFramesPerPes](#cfn-medialive-channel-m3u8settings-audioframesperpes)" : {{Integer}},
   "[AudioPids](#cfn-medialive-channel-m3u8settings-audiopids)" : {{String}},
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-m3u8settings-syntax.yaml"></a>
 
-```
+```yaml
   [AudioFramesPerPes](#cfn-medialive-channel-m3u8settings-audioframesperpes): {{Integer}}
   [AudioPids](#cfn-medialive-channel-m3u8settings-audiopids): {{String}}
   [EcmPid](#cfn-medialive-channel-m3u8settings-ecmpid): {{String}}

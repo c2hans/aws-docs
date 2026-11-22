@@ -17,7 +17,7 @@ To configure the table of lifecycle events and create rules for a cluster, you m
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

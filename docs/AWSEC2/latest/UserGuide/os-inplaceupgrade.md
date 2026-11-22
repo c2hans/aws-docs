@@ -79,7 +79,7 @@ Do not initialize the disk because doing so will delete the existing data.
 
    1. If you are upgrading to Windows Server 2016 or later, run the following:
 
-      ```
+      ```batch
       .\setup.exe /auto upgrade /dynamicupdate disable
       ```
 **Note**
@@ -87,7 +87,7 @@ Running the setup.exe with the `/dynamicupdate` option set to disabled prevents 
 
       If you are upgrading to an earlier version of Windows Server, run the following:
 
-      ```
+      ```batch
       Sources\setup.exe
       ```
 

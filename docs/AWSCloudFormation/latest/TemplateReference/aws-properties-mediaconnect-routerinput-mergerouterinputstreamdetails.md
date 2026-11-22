@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-routerinput-mergerouterinputstreamdetails-syntax.json"></a>
 
-```
+```json
 {
   "[SourceIndexOneStreamDetails](#cfn-mediaconnect-routerinput-mergerouterinputstreamdetails-sourceindexonestreamdetails)" : {{MergeRouterInputIndexedStreamDetails}},
   "[SourceIndexZeroStreamDetails](#cfn-mediaconnect-routerinput-mergerouterinputstreamdetails-sourceindexzerostreamdetails)" : {{MergeRouterInputIndexedStreamDetails}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-routerinput-mergerouterinputstreamdetails-syntax.yaml"></a>
 
-```
+```yaml
   [SourceIndexOneStreamDetails](#cfn-mediaconnect-routerinput-mergerouterinputstreamdetails-sourceindexonestreamdetails): {{
     MergeRouterInputIndexedStreamDetails}}
   [SourceIndexZeroStreamDetails](#cfn-mediaconnect-routerinput-mergerouterinputstreamdetails-sourceindexzerostreamdetails): {{

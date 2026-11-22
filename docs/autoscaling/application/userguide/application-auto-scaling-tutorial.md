@@ -60,7 +60,7 @@ Start by registering your resource as a scalable target with Application Auto Sc
 
   If successful, this command returns the ARN of the scalable target.
 
-  ```
+  ```json
   {
       "ScalableTargetARN": "arn:aws:application-autoscaling:{{region}}:{{account-id}}:scalable-target/1234abcd56ab78cd901ef1234567890ab123"
   }
@@ -115,7 +115,7 @@ You can use the [put-scheduled-action](https://docs.aws.amazon.com/cli/latest/re
 
    The following is example output.
 
-   ```
+   ```json
    [
        {
            "ScheduledActionName": "my-first-scheduled-action",
@@ -172,7 +172,7 @@ You can use the [put-scheduled-action](https://docs.aws.amazon.com/cli/latest/re
 
    The following is example output.
 
-   ```
+   ```json
    [
        {
            "ScheduledActionName": "my-first-scheduled-action",
@@ -252,7 +252,7 @@ You can add multiple scaling policies, but make sure you do not add conflicting 
 
    The following is example output.
 
-   ```
+   ```json
    [
        {
            "PolicyARN": "{{arn}}",

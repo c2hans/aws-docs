@@ -79,13 +79,13 @@ Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run
 
 Add the `--block-device-mappings` option:
 
-```
+```bash
 --block-device-mappings file://mapping.json
 ```
 
 In `mapping.json`, specify the device name, for example `/dev/sda1` or `/dev/xvda`, and for `DeleteOnTermination`, specify `false`.
 
-```
+```json
 [
   {
     "DeviceName": "{{device_name}}",
@@ -104,13 +104,13 @@ Use the [New-EC2Instance](https://docs.aws.amazon.com/powershell/latest/referenc
 
 Add the `-BlockDeviceMapping` option:
 
-```
+```bash
 -BlockDeviceMapping $bdm
 ```
 
 In `bdm`, specify the device name, for example `/dev/sda1` or `/dev/xvda`, and for `DeleteOnTermination`, specify `false`.
 
-```
+```powershell
 $ebd = New-Object -TypeName Amazon.EC2.Model.EbsBlockDevice
 $ebd.DeleteOnTermination = false
 $bdm = New-Object -TypeName Amazon.EC2.Model.BlockDeviceMapping
@@ -131,7 +131,7 @@ You can change the EBS root volume of a running instance to persist. You can als
 **To change the root volume to persist**
 Use the [modify-instance-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-attribute.html) command.
 
-```
+```bash
 aws ec2 modify-instance-attribute \
     --instance-id {{i-1234567890abcdef0}}  \
     --block-device-mappings file://mapping.json
@@ -139,7 +139,7 @@ aws ec2 modify-instance-attribute \
 
 In `mapping.json`, specify the device name, for example `/dev/sda1` or `/dev/xvda`, and for `--DeleteOnTermination`, specify `false`.
 
-```
+```json
 [
   {
     "DeviceName": "{{device_name}}",
@@ -158,13 +158,13 @@ Use the [Edit-EC2InstanceAttribute](https://docs.aws.amazon.com/powershell/lates
 
 Add the `-BlockDeviceMapping` option:
 
-```
+```bash
 -BlockDeviceMapping $bdm
 ```
 
 In `bdm`, specify the device name, for example `/dev/sda1` or `/dev/xvda`, and for `DeleteOnTermination`, specify `false`.
 
-```
+```powershell
 $ebd = New-Object -TypeName Amazon.EC2.Model.EbsBlockDevice
 $ebd.DeleteOnTermination = false
 $bdm = New-Object -TypeName Amazon.EC2.Model.BlockDeviceMapping

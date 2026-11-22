@@ -78,7 +78,7 @@ aws elasticache describe-replication-groups ^
 ```
 Output from this command looks something like this. The shard (node group) ids are {{highlighted}} here to make finding them easier.
 
-```
+```json
 {
     "ReplicationGroups": [
         {

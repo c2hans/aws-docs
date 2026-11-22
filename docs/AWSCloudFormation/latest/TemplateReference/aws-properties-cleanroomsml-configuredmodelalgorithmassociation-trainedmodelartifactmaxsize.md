@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-trainedmodelartifactmaxsize-syntax.json"></a>
 
-```
+```json
 {
   "[Unit](#cfn-cleanroomsml-configuredmodelalgorithmassociation-trainedmodelartifactmaxsize-unit)" : {{String}},
   "[Value](#cfn-cleanroomsml-configuredmodelalgorithmassociation-trainedmodelartifactmaxsize-value)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-trainedmodelartifactmaxsize-syntax.yaml"></a>
 
-```
+```yaml
   [Unit](#cfn-cleanroomsml-configuredmodelalgorithmassociation-trainedmodelartifactmaxsize-unit): {{String}}
   [Value](#cfn-cleanroomsml-configuredmodelalgorithmassociation-trainedmodelartifactmaxsize-value): {{Number}}
 ```

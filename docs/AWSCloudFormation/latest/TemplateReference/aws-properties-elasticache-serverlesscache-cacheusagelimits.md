@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticache-serverlesscache-cacheusagelimits-syntax.json"></a>
 
-```
+```json
 {
   "[DataStorage](#cfn-elasticache-serverlesscache-cacheusagelimits-datastorage)" : {{DataStorage}},
   "[ECPUPerSecond](#cfn-elasticache-serverlesscache-cacheusagelimits-ecpupersecond)" : {{ECPUPerSecond}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticache-serverlesscache-cacheusagelimits-syntax.yaml"></a>
 
-```
+```yaml
   [DataStorage](#cfn-elasticache-serverlesscache-cacheusagelimits-datastorage): {{
     DataStorage}}
   [ECPUPerSecond](#cfn-elasticache-serverlesscache-cacheusagelimits-ecpupersecond): {{

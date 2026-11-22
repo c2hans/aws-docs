@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssm-cloudconnector-gcpproject-syntax.json"></a>
 
-```
+```json
 {
   "[ProjectDisplayName](#cfn-ssm-cloudconnector-gcpproject-projectdisplayname)" : {{String}},
   "[ProjectId](#cfn-ssm-cloudconnector-gcpproject-projectid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssm-cloudconnector-gcpproject-syntax.yaml"></a>
 
-```
+```yaml
   [ProjectDisplayName](#cfn-ssm-cloudconnector-gcpproject-projectdisplayname): {{String}}
   [ProjectId](#cfn-ssm-cloudconnector-gcpproject-projectid): {{String}}
 ```

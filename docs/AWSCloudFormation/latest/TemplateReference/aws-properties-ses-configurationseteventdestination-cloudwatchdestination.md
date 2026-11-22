@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-configurationseteventdestination-cloudwatchdestination-syntax.json"></a>
 
-```
+```json
 {
   "[DimensionConfigurations](#cfn-ses-configurationseteventdestination-cloudwatchdestination-dimensionconfigurations)" : {{[ DimensionConfiguration, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-configurationseteventdestination-cloudwatchdestination-syntax.yaml"></a>
 
-```
+```yaml
   [DimensionConfigurations](#cfn-ses-configurationseteventdestination-cloudwatchdestination-dimensionconfigurations): {{
     - DimensionConfiguration}}
 ```

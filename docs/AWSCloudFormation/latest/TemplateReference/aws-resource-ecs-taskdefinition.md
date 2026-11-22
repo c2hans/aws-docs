@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ecs-taskdefinition-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ECS::TaskDefinition",
   "Properties" : {
@@ -49,7 +49,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ecs-taskdefinition-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ECS::TaskDefinition
 Properties:
   [ContainerDefinitions](#cfn-ecs-taskdefinition-containerdefinitions): {{
@@ -283,7 +283,7 @@ The following example defines an Amazon ECS task definition, which includes two 
 #### JSON
 <a name="aws-resource-ecs-taskdefinition--examples--Create_a_task_definition_with_2_containers--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -346,7 +346,7 @@ The following example defines an Amazon ECS task definition, which includes two 
 #### YAML
 <a name="aws-resource-ecs-taskdefinition--examples--Create_a_task_definition_with_2_containers--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Resources:
   taskdefinition:
@@ -397,7 +397,7 @@ The following is an example task definition using a Linux container that sets up
 #### JSON
 <a name="aws-resource-ecs-taskdefinition--examples--Create_a_task_definition_that_can_be_used_for_both_the_Fargate_and_the_EC2_launch_types--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "Create a task definition for a web server.",
@@ -450,7 +450,7 @@ The following is an example task definition using a Linux container that sets up
 #### YAML
 <a name="aws-resource-ecs-taskdefinition--examples--Create_a_task_definition_that_can_be_used_for_both_the_Fargate_and_the_EC2_launch_types--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Create a task definition for a web server.
 Resources:
@@ -499,7 +499,7 @@ The following example defines an Amazon ECS task definition that uses an Amazon 
 #### JSON
 <a name="aws-resource-ecs-taskdefinition--examples--Create_an_task_definition_with_an_volume--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Create a task definition for a web server.",
@@ -565,7 +565,7 @@ The following example defines an Amazon ECS task definition that uses an Amazon 
 #### YAML
 <a name="aws-resource-ecs-taskdefinition--examples--Create_an_task_definition_with_an_volume--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Create a task definition for a web server.
 Resources:

@@ -193,7 +193,7 @@ For more information, see [Scheduled scaling](https://docs.aws.amazon.com/autosc
 **Tools for PowerShell V4**
 **Example 1: This example describes the scheduled scaling actions for the specified Auto Scaling group.**
 
-```
+```powershell
 Get-ASScheduledAction -AutoScalingGroupName my-asg
 ```
 **Output:**
@@ -213,22 +213,22 @@ Time                 : 11/30/2015 8:00:00 AM
 ```
 **Example 2: This example describes the specified scheduled scaling actions.**
 
-```
+```powershell
 Get-ASScheduledAction -ScheduledActionName @("myScheduledScaleOut", "myScheduledScaleIn")
 ```
 **Example 3: This example describes the scheduled scaling actions that start by the specified time.**
 
-```
+```powershell
 Get-ASScheduledAction -StartTime "2015-12-01T08:00:00Z"
 ```
 **Example 4: This example describes the scheduled scaling actions that end by the specified time.**
 
-```
+```powershell
 Get-ASScheduledAction -EndTime "2015-12-30T08:00:00Z"
 ```
 **Example 5: This example describes the scheduled scaling actions for all your Auto Scaling groups.**
 
-```
+```powershell
 Get-ASScheduledAction
 ```
 +  For API details, see [DescribeScheduledActions](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -236,7 +236,7 @@ Get-ASScheduledAction
 **Tools for PowerShell V5**
 **Example 1: This example describes the scheduled scaling actions for the specified Auto Scaling group.**
 
-```
+```powershell
 Get-ASScheduledAction -AutoScalingGroupName my-asg
 ```
 **Output:**
@@ -256,22 +256,22 @@ Time                 : 11/30/2015 8:00:00 AM
 ```
 **Example 2: This example describes the specified scheduled scaling actions.**
 
-```
+```powershell
 Get-ASScheduledAction -ScheduledActionName @("myScheduledScaleOut", "myScheduledScaleIn")
 ```
 **Example 3: This example describes the scheduled scaling actions that start by the specified time.**
 
-```
+```powershell
 Get-ASScheduledAction -StartTime "2015-12-01T08:00:00Z"
 ```
 **Example 4: This example describes the scheduled scaling actions that end by the specified time.**
 
-```
+```powershell
 Get-ASScheduledAction -EndTime "2015-12-30T08:00:00Z"
 ```
 **Example 5: This example describes the scheduled scaling actions for all your Auto Scaling groups.**
 
-```
+```powershell
 Get-ASScheduledAction
 ```
 +  For API details, see [DescribeScheduledActions](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

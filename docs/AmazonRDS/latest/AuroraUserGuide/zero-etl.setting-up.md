@@ -118,7 +118,7 @@ Within the script, optionally modify the names of the source, target, and parame
 ------
 #### [ Aurora MySQL ]
 
-```
+```python
 import boto3
 import time
 
@@ -326,7 +326,7 @@ if __name__ == "__main__":
 ------
 #### [ Aurora PostgreSQL ]
 
-```
+```python
 import boto3
 import time
 
@@ -548,7 +548,7 @@ The target creation role must be a Lake Formation administrator and requires the
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -597,7 +597,7 @@ The target creation role must have the following trust relationship.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -631,7 +631,7 @@ The Glue data transfer role is required for MySQL catalog operations and must ha
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -661,7 +661,7 @@ The Glue data transfer role must have the following trust relationship.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

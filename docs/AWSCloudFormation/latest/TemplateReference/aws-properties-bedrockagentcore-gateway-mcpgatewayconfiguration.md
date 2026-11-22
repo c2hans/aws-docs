@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gateway-mcpgatewayconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DisableMcpListToolsPagination](#cfn-bedrockagentcore-gateway-mcpgatewayconfiguration-disablemcplisttoolspagination)" : {{Boolean}},
   "[Instructions](#cfn-bedrockagentcore-gateway-mcpgatewayconfiguration-instructions)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gateway-mcpgatewayconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DisableMcpListToolsPagination](#cfn-bedrockagentcore-gateway-mcpgatewayconfiguration-disablemcplisttoolspagination): {{Boolean}}
   [Instructions](#cfn-bedrockagentcore-gateway-mcpgatewayconfiguration-instructions): {{String}}
   [SearchType](#cfn-bedrockagentcore-gateway-mcpgatewayconfiguration-searchtype): {{String}}

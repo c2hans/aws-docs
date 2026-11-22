@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-servicediscovery-publicdnsnamespace-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ServiceDiscovery::PublicDnsNamespace",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-servicediscovery-publicdnsnamespace-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ServiceDiscovery::PublicDnsNamespace
 Properties:
   [Description](#cfn-servicediscovery-publicdnsnamespace-description): {{String}}
@@ -118,7 +118,7 @@ The following example creates a public DNS namespace named `example.com`.
 #### JSON
 <a name="aws-resource-servicediscovery-publicdnsnamespace--examples--Create_a_public_DNS_namespace--json"></a>
 
-```
+```json
 {
     "Resources": {
         "PublicDnsNamespace": {
@@ -142,7 +142,7 @@ The following example creates a public DNS namespace named `example.com`.
 #### YAML
 <a name="aws-resource-servicediscovery-publicdnsnamespace--examples--Create_a_public_DNS_namespace--yaml"></a>
 
-```
+```yaml
 Resources:
   PublicDnsNamespace:
     Type: AWS::ServiceDiscovery::PublicDnsNamespace

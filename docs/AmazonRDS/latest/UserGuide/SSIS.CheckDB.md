@@ -14,7 +14,7 @@ The `rds_dbcc_checkdb` procedure has the following parameter.
 
 The following example checks the integrity of the SSISDB database.
 
-```
+```sql
 EXEC msdb.dbo.rds_dbcc_checkdb @database_name = N'SSISDB';
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-knowledgebase-redshiftqueryengineawsdatacatalogstorageconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[TableNames](#cfn-bedrock-knowledgebase-redshiftqueryengineawsdatacatalogstorageconfiguration-tablenames)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-knowledgebase-redshiftqueryengineawsdatacatalogstorageconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [TableNames](#cfn-bedrock-knowledgebase-redshiftqueryengineawsdatacatalogstorageconfiguration-tablenames): {{
     - String}}
 ```

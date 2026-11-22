@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityagent-securityrequirementpack-securityrequirement-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-securityagent-securityrequirementpack-securityrequirement-description)" : {{String}},
   "[Domain](#cfn-securityagent-securityrequirementpack-securityrequirement-domain)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityagent-securityrequirementpack-securityrequirement-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-securityagent-securityrequirementpack-securityrequirement-description): {{String}}
   [Domain](#cfn-securityagent-securityrequirementpack-securityrequirement-domain): {{String}}
   [Evaluation](#cfn-securityagent-securityrequirementpack-securityrequirement-evaluation): {{String}}

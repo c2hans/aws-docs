@@ -41,7 +41,7 @@ The following examples delete a directory bucket by using the AWS SDK for Java 2
 
 **Example**
 
-```
+```JavaV2
 public static void deleteBucket(S3Client s3Client, String bucketName) {
 
     try {
@@ -63,7 +63,7 @@ public static void deleteBucket(S3Client s3Client, String bucketName) {
 
 **Example**
 
-```
+```Python
 import logging
 import boto3
 from botocore.exceptions import ClientError
@@ -97,7 +97,7 @@ if __name__ == '__main__':
 
 This example shows how to delete a directory bucket by using the AWS CLI. To use the command replace the {{user input placeholders}} with your own information.
 
-```
+```bash
 aws s3api delete-bucket --bucket {{bucket-base-name}}--{{zone-id}}--x-s3 --region {{us-west-2}}
 ```
 

@@ -56,7 +56,7 @@ The following is the Amazon S3 JSON schema and examples for the configuration pr
 
 The following is the Amazon S3 JSON schema for the configuration property for CloudFormation.
 
-```
+```json
 {
   "type": "object",
   "properties": {
@@ -184,7 +184,7 @@ The following is the Amazon S3 JSON schema for the configuration property for Cl
 
 The following is the Amazon S3 JSON example for the Configuration property for CloudFormation.
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "CloudFormation Amazon S3 Data Source Template",
@@ -245,7 +245,7 @@ The following is the Amazon S3 YAML schema and examples for the configuration pr
 
 The following is the Amazon S3 YAML schema for the configuration property for CloudFormation.
 
-```
+```yaml
 type: object
 properties:
   type:
@@ -338,7 +338,7 @@ required:
 
 The following is the Amazon S3 YAML example for the Configuration property for CloudFormation:
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Description: "CloudFormation Amazon S3 Data Source Template"
 Resources:

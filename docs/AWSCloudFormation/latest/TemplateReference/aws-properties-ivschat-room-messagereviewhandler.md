@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ivschat-room-messagereviewhandler-syntax.json"></a>
 
-```
+```json
 {
   "[FallbackResult](#cfn-ivschat-room-messagereviewhandler-fallbackresult)" : {{String}},
   "[Uri](#cfn-ivschat-room-messagereviewhandler-uri)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ivschat-room-messagereviewhandler-syntax.yaml"></a>
 
-```
+```yaml
   [FallbackResult](#cfn-ivschat-room-messagereviewhandler-fallbackresult): {{String}}
   [Uri](#cfn-ivschat-room-messagereviewhandler-uri): {{String}}
 ```
@@ -62,7 +62,7 @@ The following examples specify an Amazon IVS Chat Room with message review.
 #### JSON
 <a name="aws-properties-ivschat-room-messagereviewhandler--examples--Room_Message_Review_Handler_Template_Examples--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -137,7 +137,7 @@ The following examples specify an Amazon IVS Chat Room with message review.
 #### YAML
 <a name="aws-properties-ivschat-room-messagereviewhandler--examples--Room_Message_Review_Handler_Template_Examples--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   MessageReviewHandlerRole:

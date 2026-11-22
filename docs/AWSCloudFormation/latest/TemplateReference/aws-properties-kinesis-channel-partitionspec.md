@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesis-channel-partitionspec-syntax.json"></a>
 
-```
+```json
 {
   "[PartitionFields](#cfn-kinesis-channel-partitionspec-partitionfields)" : {{[ PartitionField, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesis-channel-partitionspec-syntax.yaml"></a>
 
-```
+```yaml
   [PartitionFields](#cfn-kinesis-channel-partitionspec-partitionfields): {{
     - PartitionField}}
 ```

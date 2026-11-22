@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-eks-nodegroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EKS::Nodegroup",
   "Properties" : {
@@ -56,7 +56,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-eks-nodegroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EKS::Nodegroup
 Properties:
   [AmiType](#cfn-eks-nodegroup-amitype): {{String}}
@@ -269,7 +269,7 @@ The following example creates an Amazon EKS managed node group named `standard` 
 #### JSON
 <a name="aws-resource-eks-nodegroup--examples--Create_a_managed_node_group--json"></a>
 
-```
+```json
 {
     "Resources": {
         "EKSNodegroup": {
@@ -299,7 +299,7 @@ The following example creates an Amazon EKS managed node group named `standard` 
 #### YAML
 <a name="aws-resource-eks-nodegroup--examples--Create_a_managed_node_group--yaml"></a>
 
-```
+```yaml
 Resources:
   EKSNodegroup:
     Type: 'AWS::EKS::Nodegroup'

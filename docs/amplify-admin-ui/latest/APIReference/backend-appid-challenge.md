@@ -63,7 +63,7 @@ Enables CORS by returning the correct headers.
 #### CreateTokenRespObj schema
 <a name="backend-appid-challenge-response-body-createtokenrespobj-example"></a>
 
-```
+```json
 {
   "appId": "string",
   "sessionId": "string",
@@ -75,7 +75,7 @@ Enables CORS by returning the correct headers.
 #### BadRequestException schema
 <a name="backend-appid-challenge-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -84,7 +84,7 @@ Enables CORS by returning the correct headers.
 #### NotFoundException schema
 <a name="backend-appid-challenge-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -94,7 +94,7 @@ Enables CORS by returning the correct headers.
 #### LimitExceededException schema
 <a name="backend-appid-challenge-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"
@@ -104,7 +104,7 @@ Enables CORS by returning the correct headers.
 #### InternalServiceException schema
 <a name="backend-appid-challenge-response-body-internalserviceexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

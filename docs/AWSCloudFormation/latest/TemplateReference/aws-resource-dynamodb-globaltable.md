@@ -70,7 +70,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-dynamodb-globaltable-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DynamoDB::GlobalTable",
   "Properties" : {
@@ -101,7 +101,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-dynamodb-globaltable-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DynamoDB::GlobalTable
 Properties:
   [AttributeDefinitions](#cfn-dynamodb-globaltable-attributedefinitions): {{

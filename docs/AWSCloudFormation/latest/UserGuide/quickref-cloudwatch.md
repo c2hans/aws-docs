@@ -21,7 +21,7 @@ In the following sample, Amazon CloudWatch sends an email notification when char
 ### JSON
 <a name="quickref-cloudwatch-example-1.json"></a>
 
-```
+```json
 "SpendingAlarm": {
   "Type": "AWS::CloudWatch::Alarm",
   "Properties": {
@@ -53,7 +53,7 @@ In the following sample, Amazon CloudWatch sends an email notification when char
 ### YAML
 <a name="quickref-cloudwatch-example-1.yaml"></a>
 
-```
+```yaml
 SpendingAlarm:
   Type: AWS::CloudWatch::Alarm
   Properties:
@@ -87,7 +87,7 @@ The following sample snippet creates an alarm that sends a notification when the
 ### JSON
 <a name="quickref-cloudwatch-example-2.json"></a>
 
-```
+```json
  1. "CPUAlarm" : {
  2.   "Type" : "AWS::CloudWatch::Alarm",
  3.   "Properties" : {
@@ -111,7 +111,7 @@ The following sample snippet creates an alarm that sends a notification when the
 ### YAML
 <a name="quickref-cloudwatch-example-2.yaml"></a>
 
-```
+```yaml
  1. CPUAlarm:
  2.   Type: AWS::CloudWatch::Alarm
  3.   Properties:
@@ -138,7 +138,7 @@ The following CloudWatch alarm recovers an EC2 instance when it has status check
 ### JSON
 <a name="quickref-cloudwatch-example-3.json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Parameters" : {
@@ -170,7 +170,7 @@ The following CloudWatch alarm recovers an EC2 instance when it has status check
 ### YAML
 <a name="quickref-cloudwatch-example-3.yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Parameters:
   RecoveryInstance:
@@ -203,7 +203,7 @@ The following example creates a simple CloudWatch dashboard with one metric widg
 ### JSON
 <a name="quickref-cloudwatch-sample-dashboard-basic.json"></a>
 
-```
+```json
 {
     "BasicDashboard": {
         "Type": "AWS::CloudWatch::Dashboard",
@@ -218,7 +218,7 @@ The following example creates a simple CloudWatch dashboard with one metric widg
 ### YAML
 <a name="quickref-cloudwatch-sample-dashboard-basic.yaml"></a>
 
-```
+```yaml
 BasicDashboard:
   Type: AWS::CloudWatch::Dashboard
   Properties:
@@ -234,7 +234,7 @@ The following example creates a dashboard with two metric widgets that appear si
 ### JSON
 <a name="quickref-cloudwatch-sample-dashboard-sidebyside.json"></a>
 
-```
+```json
 {
     "DashboardSideBySide": {
         "Type": "AWS::CloudWatch::Dashboard",
@@ -249,7 +249,7 @@ The following example creates a dashboard with two metric widgets that appear si
 ### YAML
 <a name="quickref-cloudwatch-sample-dashboard-sidebysidequickref-cloudwatch-sample-dashboard-sidebyside.yaml"></a>
 
-```
+```yaml
 DashboardSideBySide:
   Type: AWS::CloudWatch::Dashboard
   Properties:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-radarchartaggregatedfieldwells-syntax.json"></a>
 
-```
+```json
 {
   "[Category](#cfn-quicksight-template-radarchartaggregatedfieldwells-category)" : {{[ DimensionField, ... ]}},
   "[Color](#cfn-quicksight-template-radarchartaggregatedfieldwells-color)" : {{[ DimensionField, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-radarchartaggregatedfieldwells-syntax.yaml"></a>
 
-```
+```yaml
   [Category](#cfn-quicksight-template-radarchartaggregatedfieldwells-category): {{
     - DimensionField}}
   [Color](#cfn-quicksight-template-radarchartaggregatedfieldwells-color): {{

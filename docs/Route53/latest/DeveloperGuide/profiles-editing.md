@@ -30,7 +30,7 @@ You can list the Profiles by running a AWS CLI command like the following:
 
 The following is an example output after you run the command:
 
-```
+```json
 {
     "ProfileSummaries": [
         {
@@ -49,7 +49,7 @@ You can get information about a particular VPS the Profile is associated to by r
 
 The following is an example output after you run the command:
 
-```
+```json
 {
     "ProfileAssociation": {
         "CreationTime": 1709338817.148,
@@ -102,7 +102,7 @@ You can delete a Profile by running an AWS CLI command like the following and us
 
 The following is an example output after you run the command:
 
-```
+```json
 {
     "Profile": {
         "Arn": "arn:aws:route53profiles:us-east-1:123456789012:profile/rp-6ffe47d5example",

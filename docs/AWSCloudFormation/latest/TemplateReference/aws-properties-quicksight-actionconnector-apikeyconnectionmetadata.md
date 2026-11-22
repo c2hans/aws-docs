@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-actionconnector-apikeyconnectionmetadata-syntax.json"></a>
 
-```
+```json
 {
   "[ApiKey](#cfn-quicksight-actionconnector-apikeyconnectionmetadata-apikey)" : {{String}},
   "[BaseEndpoint](#cfn-quicksight-actionconnector-apikeyconnectionmetadata-baseendpoint)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-actionconnector-apikeyconnectionmetadata-syntax.yaml"></a>
 
-```
+```yaml
   [ApiKey](#cfn-quicksight-actionconnector-apikeyconnectionmetadata-apikey): {{String}}
   [BaseEndpoint](#cfn-quicksight-actionconnector-apikeyconnectionmetadata-baseendpoint): {{String}}
   [Email](#cfn-quicksight-actionconnector-apikeyconnectionmetadata-email): {{String}}

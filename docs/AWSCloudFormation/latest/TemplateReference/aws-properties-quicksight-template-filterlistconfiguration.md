@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-filterlistconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CategoryValues](#cfn-quicksight-template-filterlistconfiguration-categoryvalues)" : {{[ String, ... ]}},
   "[MatchOperator](#cfn-quicksight-template-filterlistconfiguration-matchoperator)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-filterlistconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CategoryValues](#cfn-quicksight-template-filterlistconfiguration-categoryvalues): {{
     - String}}
   [MatchOperator](#cfn-quicksight-template-filterlistconfiguration-matchoperator): {{String}}

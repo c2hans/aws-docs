@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-expressgatewayservice-ingresspathsummary-syntax.json"></a>
 
-```
+```json
 {
   "[AccessType](#cfn-ecs-expressgatewayservice-ingresspathsummary-accesstype)" : {{String}},
   "[Endpoint](#cfn-ecs-expressgatewayservice-ingresspathsummary-endpoint)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-expressgatewayservice-ingresspathsummary-syntax.yaml"></a>
 
-```
+```yaml
   [AccessType](#cfn-ecs-expressgatewayservice-ingresspathsummary-accesstype): {{String}}
   [Endpoint](#cfn-ecs-expressgatewayservice-ingresspathsummary-endpoint): {{String}}
 ```

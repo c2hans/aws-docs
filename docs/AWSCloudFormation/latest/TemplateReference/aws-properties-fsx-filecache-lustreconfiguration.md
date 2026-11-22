@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-filecache-lustreconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DeploymentType](#cfn-fsx-filecache-lustreconfiguration-deploymenttype)" : {{String}},
   "[LogConfiguration](#cfn-fsx-filecache-lustreconfiguration-logconfiguration)" : {{LogConfiguration}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-filecache-lustreconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DeploymentType](#cfn-fsx-filecache-lustreconfiguration-deploymenttype): {{String}}
   [LogConfiguration](#cfn-fsx-filecache-lustreconfiguration-logconfiguration): {{
     LogConfiguration}}

@@ -21,7 +21,7 @@ The updateRequestOrigin() function supports limited modifications when working w
 #### Example: Switching between origin mTLS origins with the same certificate
 <a name="example-switching-mtls-origins"></a>
 
-```
+```javascript
 import cf from 'cloudfront';
 
 function handler(event) {
@@ -44,7 +44,7 @@ function handler(event) {
 #### Example: Conditionally disabling origin mTLS
 <a name="example-disabling-mtls"></a>
 
-```
+```javascript
 import cf from 'cloudfront';
 
 function handler(event) {
@@ -70,7 +70,7 @@ The `selectRequestOriginById()` function supports selecting origins that have mu
 #### Example: Selecting a mutual TLS (origin) enabled origin by ID
 <a name="example-select-mtls-origin-by-id"></a>
 
-```
+```javascript
 import cf from 'cloudfront';
 
 function handler(event) {
@@ -93,7 +93,7 @@ The `createRequestOriginGroup()` function supports creating origin groups that i
 #### Example: Creating an origin group with mutual TLS (origin) enabled origins
 <a name="example-create-mtls-origin-group"></a>
 
-```
+```javascript
 import cf from 'cloudfront';
 
 function handler(event) {

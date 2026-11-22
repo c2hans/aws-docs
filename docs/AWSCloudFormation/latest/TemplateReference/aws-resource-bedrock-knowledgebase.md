@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-bedrock-knowledgebase-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Bedrock::KnowledgeBase",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-bedrock-knowledgebase-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Bedrock::KnowledgeBase
 Properties:
   [Description](#cfn-bedrock-knowledgebase-description): {{String}}
@@ -169,7 +169,7 @@ The following example creates a knowledge base in a vector index within an Amazo
 #### YAML
 <a name="aws-resource-bedrock-knowledgebase--examples--Create_a_knowledge_base_in_an_Amazon_OpenSearch_Serverless_vector_collection.--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Description: A sample template for Knowledge base with Amazon Opensearch Serverless vector database.
 Parameters:
@@ -221,7 +221,7 @@ Resources:
 #### JSON
 <a name="aws-resource-bedrock-knowledgebase--examples--Create_a_knowledge_base_in_an_Amazon_OpenSearch_Serverless_vector_collection.--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Parameters": {
@@ -308,7 +308,7 @@ The following example creates a knowledge base in a vector index within an Amazo
 #### YAML
 <a name="aws-resource-bedrock-knowledgebase--examples--Create_a_knowledge_base_in_an_Amazon_Aurora_database_cluster.--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Description: A sample template for Knowledge base with RDS vector database.
 Parameters:
@@ -363,7 +363,7 @@ Resources:
 #### JSON
 <a name="aws-resource-bedrock-knowledgebase--examples--Create_a_knowledge_base_in_an_Amazon_Aurora_database_cluster.--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Parameters": {
@@ -457,7 +457,7 @@ The following example creates a knowledge base in a Pinecone index.
 #### YAML
 <a name="aws-resource-bedrock-knowledgebase--examples--Create_a_knowledge_base_in_a_Pinecone_index.--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Description: A sample template for Knowledge base with Pinecone vector database.
 Parameters:
@@ -509,7 +509,7 @@ Resources:
 #### JSON
 <a name="aws-resource-bedrock-knowledgebase--examples--Create_a_knowledge_base_in_a_Pinecone_index.--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Parameters": {

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-audiopidselection-syntax.json"></a>
 
-```
+```json
 {
   "[Pid](#cfn-medialive-channel-audiopidselection-pid)" : {{Integer}},
   "[Pids](#cfn-medialive-channel-audiopidselection-pids)" : {{[ AudioPid, ... ]}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-audiopidselection-syntax.yaml"></a>
 
-```
+```yaml
   [Pid](#cfn-medialive-channel-audiopidselection-pid): {{Integer}}
   [Pids](#cfn-medialive-channel-audiopidselection-pids): {{
     - AudioPid}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-transfer-server-sftpportwithoptions-syntax.json"></a>
 
-```
+```json
 {
   "[CommunicationMode](#cfn-transfer-server-sftpportwithoptions-communicationmode)" : {{String}},
   "[SftpPort](#cfn-transfer-server-sftpportwithoptions-sftpport)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-transfer-server-sftpportwithoptions-syntax.yaml"></a>
 
-```
+```yaml
   [CommunicationMode](#cfn-transfer-server-sftpportwithoptions-communicationmode): {{String}}
   [SftpPort](#cfn-transfer-server-sftpportwithoptions-sftpport): {{Integer}}
 ```

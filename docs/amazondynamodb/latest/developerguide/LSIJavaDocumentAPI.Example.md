@@ -18,7 +18,7 @@ For step-by-step instructions for testing the following sample, see [Java code e
 
 **Example**
 
-```
+```java
 package com.example.dynamodb;
 
 import software.amazon.awssdk.core.waiters.WaiterResponse;

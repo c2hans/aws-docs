@@ -11,7 +11,7 @@ Using the `aws:TagKeys` condition key, you can deny tagging a stream unless a re
 
 1. Add a customer managed policy to a role which has DynamoDB access, as shown in the following example.
 
-   ```
+   ```json
    {
      "Version": "2012-10-17",
      "Statement": [
@@ -36,7 +36,7 @@ Using the `aws:TagKeys` condition key, you can deny tagging a stream unless a re
 
 1. Assume the role and attempt to tag a stream with a tag key that is not `CostCenter`.
 
-   ```
+   ```bash
    aws dynamodb tag-resource \
      --resource-arn arn:aws:dynamodb:us-east-1:123456789012:table/myMusicTable/stream/2024-01-01T00:00:00.000 \
      --tags Key=Department,Value=Engineering

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-capacityprovider-memorygibpervcpurequest-syntax.json"></a>
 
-```
+```json
 {
   "[Max](#cfn-ecs-capacityprovider-memorygibpervcpurequest-max)" : {{Number}},
   "[Min](#cfn-ecs-capacityprovider-memorygibpervcpurequest-min)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-capacityprovider-memorygibpervcpurequest-syntax.yaml"></a>
 
-```
+```yaml
   [Max](#cfn-ecs-capacityprovider-memorygibpervcpurequest-max): {{Number}}
   [Min](#cfn-ecs-capacityprovider-memorygibpervcpurequest-min): {{Number}}
 ```

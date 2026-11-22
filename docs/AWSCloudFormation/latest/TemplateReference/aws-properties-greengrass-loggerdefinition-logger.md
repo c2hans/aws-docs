@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrass-loggerdefinition-logger-syntax.json"></a>
 
-```
+```json
 {
   "[Component](#cfn-greengrass-loggerdefinition-logger-component)" : {{String}},
   "[Id](#cfn-greengrass-loggerdefinition-logger-id)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrass-loggerdefinition-logger-syntax.yaml"></a>
 
-```
+```yaml
   [Component](#cfn-greengrass-loggerdefinition-logger-component): {{String}}
   [Id](#cfn-greengrass-loggerdefinition-logger-id): {{String}}
   [Level](#cfn-greengrass-loggerdefinition-logger-level): {{String}}

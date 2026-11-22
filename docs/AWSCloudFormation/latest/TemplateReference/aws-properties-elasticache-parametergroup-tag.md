@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticache-parametergroup-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-elasticache-parametergroup-tag-key)" : {{String}},
   "[Value](#cfn-elasticache-parametergroup-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticache-parametergroup-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-elasticache-parametergroup-tag-key): {{String}}
   [Value](#cfn-elasticache-parametergroup-tag-value): {{String}}
 ```

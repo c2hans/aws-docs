@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-quicksight-actionconnector-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::QuickSight::ActionConnector",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-quicksight-actionconnector-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::QuickSight::ActionConnector
 Properties:
   [ActionConnectorId](#cfn-quicksight-actionconnector-actionconnectorid): {{String}}

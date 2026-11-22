@@ -101,7 +101,7 @@ Updates a product page of a portal product.
 #### PATCH schema
 <a name="portalproducts-portalproductid-productpages-productpageid-request-body-patch-example"></a>
 
-```
+```json
 {
   "displayContent": {
     "title": "string",
@@ -116,7 +116,7 @@ Updates a product page of a portal product.
 #### GetProductPageResponseContent schema
 <a name="portalproducts-portalproductid-productpages-productpageid-response-body-getproductpageresponsecontent-example"></a>
 
-```
+```json
 {
   "displayContent": {
     "title": "string",
@@ -131,7 +131,7 @@ Updates a product page of a portal product.
 #### UpdateProductPageResponseContent schema
 <a name="portalproducts-portalproductid-productpages-productpageid-response-body-updateproductpageresponsecontent-example"></a>
 
-```
+```json
 {
   "displayContent": {
     "title": "string",
@@ -146,7 +146,7 @@ Updates a product page of a portal product.
 #### BadRequestExceptionResponseContent schema
 <a name="portalproducts-portalproductid-productpages-productpageid-response-body-badrequestexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -155,7 +155,7 @@ Updates a product page of a portal product.
 #### AccessDeniedExceptionResponseContent schema
 <a name="portalproducts-portalproductid-productpages-productpageid-response-body-accessdeniedexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -164,7 +164,7 @@ Updates a product page of a portal product.
 #### NotFoundExceptionResponseContent schema
 <a name="portalproducts-portalproductid-productpages-productpageid-response-body-notfoundexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -174,7 +174,7 @@ Updates a product page of a portal product.
 #### LimitExceededExceptionResponseContent schema
 <a name="portalproducts-portalproductid-productpages-productpageid-response-body-limitexceededexceptionresponsecontent-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

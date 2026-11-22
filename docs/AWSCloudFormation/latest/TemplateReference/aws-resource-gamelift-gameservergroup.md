@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-gamelift-gameservergroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::GameLift::GameServerGroup",
   "Properties" : {
@@ -53,7 +53,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-gamelift-gameservergroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::GameLift::GameServerGroup
 Properties:
   [AutoScalingPolicy](#cfn-gamelift-gameservergroup-autoscalingpolicy): {{

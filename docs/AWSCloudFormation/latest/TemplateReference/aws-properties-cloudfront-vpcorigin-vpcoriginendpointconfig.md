@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-vpcorigin-vpcoriginendpointconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Arn](#cfn-cloudfront-vpcorigin-vpcoriginendpointconfig-arn)" : {{String}},
   "[HTTPPort](#cfn-cloudfront-vpcorigin-vpcoriginendpointconfig-httpport)" : {{Integer}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-vpcorigin-vpcoriginendpointconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Arn](#cfn-cloudfront-vpcorigin-vpcoriginendpointconfig-arn): {{String}}
   [HTTPPort](#cfn-cloudfront-vpcorigin-vpcoriginendpointconfig-httpport): {{Integer}}
   [HTTPSPort](#cfn-cloudfront-vpcorigin-vpcoriginendpointconfig-httpsport): {{Integer}}

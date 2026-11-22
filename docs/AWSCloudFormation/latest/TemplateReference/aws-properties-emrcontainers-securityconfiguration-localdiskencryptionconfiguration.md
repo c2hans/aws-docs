@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrcontainers-securityconfiguration-localdiskencryptionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AwsKmsKeyId](#cfn-emrcontainers-securityconfiguration-localdiskencryptionconfiguration-awskmskeyid)" : {{String}},
   "[EncryptionKeyProviderType](#cfn-emrcontainers-securityconfiguration-localdiskencryptionconfiguration-encryptionkeyprovidertype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrcontainers-securityconfiguration-localdiskencryptionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AwsKmsKeyId](#cfn-emrcontainers-securityconfiguration-localdiskencryptionconfiguration-awskmskeyid): {{String}}
   [EncryptionKeyProviderType](#cfn-emrcontainers-securityconfiguration-localdiskencryptionconfiguration-encryptionkeyprovidertype): {{String}}
 ```

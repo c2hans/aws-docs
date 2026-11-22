@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-dms-replicationinstance-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DMS::ReplicationInstance",
   "Properties" : {
@@ -44,7 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-dms-replicationinstance-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DMS::ReplicationInstance
 Properties:
   [AllocatedStorage](#cfn-dms-replicationinstance-allocatedstorage): {{Integer}}
@@ -227,7 +227,7 @@ One or more public IP addresses for the replication instance.
 #### JSON
 <a name="aws-resource-dms-replicationinstance--examples----json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -244,7 +244,7 @@ One or more public IP addresses for the replication instance.
 #### YAML
 <a name="aws-resource-dms-replicationinstance--examples----yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   BasicReplicationInstance:

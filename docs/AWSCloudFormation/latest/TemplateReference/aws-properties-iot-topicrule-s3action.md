@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicrule-s3action-syntax.json"></a>
 
-```
+```json
 {
   "[BucketName](#cfn-iot-topicrule-s3action-bucketname)" : {{String}},
   "[CannedAcl](#cfn-iot-topicrule-s3action-cannedacl)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicrule-s3action-syntax.yaml"></a>
 
-```
+```yaml
   [BucketName](#cfn-iot-topicrule-s3action-bucketname): {{String}}
   [CannedAcl](#cfn-iot-topicrule-s3action-cannedacl): {{String}}
   [Key](#cfn-iot-topicrule-s3action-key): {{String}}

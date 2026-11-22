@@ -19,7 +19,7 @@ Use the [modify-capacity-reservation-fleet](https://docs.aws.amazon.com/cli/late
 
 **Example 1: Modify total target capacity**
 
-```
+```bash
 aws ec2 modify-capacity-reservation-fleet \
     --capacity-reservation-fleet-id {{crf-01234567890abcedf}} \
     --total-target-capacity {{160}}
@@ -27,7 +27,7 @@ aws ec2 modify-capacity-reservation-fleet \
 
 **Example 2: Modify end date**
 
-```
+```bash
 aws ec2 modify-capacity-reservation-fleet \
     --capacity-reservation-fleet-id {{crf-01234567890abcedf}} \
     --end-date {{2021-07-04T23:59:59.000Z}}
@@ -35,7 +35,7 @@ aws ec2 modify-capacity-reservation-fleet \
 
 **Example 3: Remove end date**
 
-```
+```bash
 aws ec2 modify-capacity-reservation-fleet \
     --capacity-reservation-fleet-id {{crf-01234567890abcedf}} \
     --remove-end-date
@@ -49,7 +49,7 @@ Use the [Edit-EC2CapacityReservationFleet](https://docs.aws.amazon.com/powershel
 
 **Example 1: Modify total target capacity**
 
-```
+```powershell
 Edit-EC2CapacityReservationFleet `
     -CapacityReservationFleetId {{crf-01234567890abcedf}} `
     -TotalTargetCapacity {{160}}
@@ -57,7 +57,7 @@ Edit-EC2CapacityReservationFleet `
 
 **Example 2: Modify end date**
 
-```
+```powershell
 Edit-EC2CapacityReservationFleet `
     -CapacityReservationFleetId {{crf-01234567890abcedf}} `
     -EndDate {{2021-07-04T23:59:59.000Z}}
@@ -65,7 +65,7 @@ Edit-EC2CapacityReservationFleet `
 
 **Example 3: Remove end date**
 
-```
+```powershell
 Edit-EC2CapacityReservationFleet `
     -CapacityReservationFleetId {{crf-01234567890abcedf}} `
     -RemoveEndDate

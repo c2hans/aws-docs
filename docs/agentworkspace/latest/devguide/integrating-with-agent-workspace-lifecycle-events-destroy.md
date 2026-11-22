@@ -8,6 +8,6 @@ The destroy event in the Connect Customer agent workspace will trigger the ` onD
 
 Your application can ask the agent workspace to close it by calling `sendCloseAppRequest(message?)` on the provider. The optional `message` describes the reason and is logged by the agent workspace. The agent workspace then destroys the instance and sends the destroy event, so your `onDestroy` callback runs.
 
-```
+```typescript
 provider.sendCloseAppRequest("The agent finished the task");
 ```

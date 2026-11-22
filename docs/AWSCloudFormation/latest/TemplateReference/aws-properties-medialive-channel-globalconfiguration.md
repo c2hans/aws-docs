@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-globalconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[InitialAudioGain](#cfn-medialive-channel-globalconfiguration-initialaudiogain)" : {{Integer}},
   "[InputEndAction](#cfn-medialive-channel-globalconfiguration-inputendaction)" : {{String}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-globalconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [InitialAudioGain](#cfn-medialive-channel-globalconfiguration-initialaudiogain): {{Integer}}
   [InputEndAction](#cfn-medialive-channel-globalconfiguration-inputendaction): {{String}}
   [InputLossBehavior](#cfn-medialive-channel-globalconfiguration-inputlossbehavior): {{

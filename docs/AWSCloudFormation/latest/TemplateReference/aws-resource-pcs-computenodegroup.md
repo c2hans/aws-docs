@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-pcs-computenodegroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::PCS::ComputeNodeGroup",
   "Properties" : {
@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-pcs-computenodegroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::PCS::ComputeNodeGroup
 Properties:
   [AmiId](#cfn-pcs-computenodegroup-amiid): {{String}}

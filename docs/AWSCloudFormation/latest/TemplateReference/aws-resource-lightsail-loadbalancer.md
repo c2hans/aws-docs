@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lightsail-loadbalancer-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lightsail::LoadBalancer",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lightsail-loadbalancer-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lightsail::LoadBalancer
 Properties:
   [AttachedInstances](#cfn-lightsail-loadbalancer-attachedinstances): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-ekscontainerresourcerequirements-syntax.json"></a>
 
-```
+```json
 {
   "[Limits](#cfn-batch-jobdefinition-ekscontainerresourcerequirements-limits)" : {{{{{Key}}: {{Value}}, ...}}},
   "[Requests](#cfn-batch-jobdefinition-ekscontainerresourcerequirements-requests)" : {{{{{Key}}: {{Value}}, ...}}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-ekscontainerresourcerequirements-syntax.yaml"></a>
 
-```
+```yaml
   [Limits](#cfn-batch-jobdefinition-ekscontainerresourcerequirements-limits): {{
     {{Key}}: {{Value}}}}
   [Requests](#cfn-batch-jobdefinition-ekscontainerresourcerequirements-requests): {{

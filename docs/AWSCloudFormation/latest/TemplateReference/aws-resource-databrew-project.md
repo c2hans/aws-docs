@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-databrew-project-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DataBrew::Project",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-databrew-project-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DataBrew::Project
 Properties:
   [DatasetName](#cfn-databrew-project-datasetname): {{String}}
@@ -116,7 +116,7 @@ The following examples create new DataBrew projects.
 #### YAML
 <a name="aws-resource-databrew-project--examples--Creating_projects--yaml"></a>
 
-```
+```yaml
 Resources:
   TestDataBrewProject:
     Type: AWS::DataBrew::Project
@@ -133,7 +133,7 @@ Resources:
 #### JSON
 <a name="aws-resource-databrew-project--examples--Creating_projects--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "This CloudFormation template specifies a DataBrew Project",

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rtbfabric-link-action-syntax.json"></a>
 
-```
+```json
 {
   "[HeaderTag](#cfn-rtbfabric-link-action-headertag)" : {{HeaderTagAction}},
   "[NoBid](#cfn-rtbfabric-link-action-nobid)" : {{NoBidAction}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rtbfabric-link-action-syntax.yaml"></a>
 
-```
+```yaml
   [HeaderTag](#cfn-rtbfabric-link-action-headertag): {{
     HeaderTagAction}}
   [NoBid](#cfn-rtbfabric-link-action-nobid): {{

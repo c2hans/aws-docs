@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distribution-origingroup-syntax.json"></a>
 
-```
+```json
 {
   "[FailoverCriteria](#cfn-cloudfront-distribution-origingroup-failovercriteria)" : {{OriginGroupFailoverCriteria}},
   "[Id](#cfn-cloudfront-distribution-origingroup-id)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distribution-origingroup-syntax.yaml"></a>
 
-```
+```yaml
   [FailoverCriteria](#cfn-cloudfront-distribution-origingroup-failovercriteria): {{
     OriginGroupFailoverCriteria}}
   [Id](#cfn-cloudfront-distribution-origingroup-id): {{String}}

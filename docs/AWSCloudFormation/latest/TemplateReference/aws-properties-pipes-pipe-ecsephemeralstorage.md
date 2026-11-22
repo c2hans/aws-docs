@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-ecsephemeralstorage-syntax.json"></a>
 
-```
+```json
 {
   "[SizeInGiB](#cfn-pipes-pipe-ecsephemeralstorage-sizeingib)" : {{Integer}}
 }
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-ecsephemeralstorage-syntax.yaml"></a>
 
-```
+```yaml
   [SizeInGiB](#cfn-pipes-pipe-ecsephemeralstorage-sizeingib): {{Integer}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-accessgrant-grantee-syntax.json"></a>
 
-```
+```json
 {
   "[GranteeIdentifier](#cfn-s3-accessgrant-grantee-granteeidentifier)" : {{String}},
   "[GranteeType](#cfn-s3-accessgrant-grantee-granteetype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-accessgrant-grantee-syntax.yaml"></a>
 
-```
+```yaml
   [GranteeIdentifier](#cfn-s3-accessgrant-grantee-granteeidentifier): {{String}}
   [GranteeType](#cfn-s3-accessgrant-grantee-granteetype): {{String}}
 ```

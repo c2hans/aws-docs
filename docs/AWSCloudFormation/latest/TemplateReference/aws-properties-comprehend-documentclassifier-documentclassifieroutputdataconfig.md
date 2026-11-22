@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-comprehend-documentclassifier-documentclassifieroutputdataconfig-syntax.json"></a>
 
-```
+```json
 {
   "[KmsKeyId](#cfn-comprehend-documentclassifier-documentclassifieroutputdataconfig-kmskeyid)" : {{String}},
   "[S3Uri](#cfn-comprehend-documentclassifier-documentclassifieroutputdataconfig-s3uri)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-comprehend-documentclassifier-documentclassifieroutputdataconfig-syntax.yaml"></a>
 
-```
+```yaml
   [KmsKeyId](#cfn-comprehend-documentclassifier-documentclassifieroutputdataconfig-kmskeyid): {{String}}
   [S3Uri](#cfn-comprehend-documentclassifier-documentclassifieroutputdataconfig-s3uri): {{String}}
 ```

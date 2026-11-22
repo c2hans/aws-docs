@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-connect-notification-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Connect::Notification",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-connect-notification-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Connect::Notification
 Properties:
   [Content](#cfn-connect-notification-content): {{

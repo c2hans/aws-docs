@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-capacityprovider-capacityprovidertelemetryconfig-syntax.json"></a>
 
-```
+```json
 {
   "[LoggingConfig](#cfn-lambda-capacityprovider-capacityprovidertelemetryconfig-loggingconfig)" : {{CapacityProviderLoggingConfig}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-capacityprovider-capacityprovidertelemetryconfig-syntax.yaml"></a>
 
-```
+```yaml
   [LoggingConfig](#cfn-lambda-capacityprovider-capacityprovidertelemetryconfig-loggingconfig): {{
     CapacityProviderLoggingConfig}}
 ```

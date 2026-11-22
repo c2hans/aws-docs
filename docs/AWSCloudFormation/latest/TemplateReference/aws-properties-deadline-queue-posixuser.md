@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-deadline-queue-posixuser-syntax.json"></a>
 
-```
+```json
 {
   "[Group](#cfn-deadline-queue-posixuser-group)" : {{String}},
   "[User](#cfn-deadline-queue-posixuser-user)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-deadline-queue-posixuser-syntax.yaml"></a>
 
-```
+```yaml
   [Group](#cfn-deadline-queue-posixuser-group): {{String}}
   [User](#cfn-deadline-queue-posixuser-user): {{String}}
 ```

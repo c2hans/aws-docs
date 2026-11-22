@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkmanager-connectpeer-connectpeerconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BgpConfigurations](#cfn-networkmanager-connectpeer-connectpeerconfiguration-bgpconfigurations)" : {{[ ConnectPeerBgpConfiguration, ... ]}},
   "[CoreNetworkAddress](#cfn-networkmanager-connectpeer-connectpeerconfiguration-corenetworkaddress)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkmanager-connectpeer-connectpeerconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BgpConfigurations](#cfn-networkmanager-connectpeer-connectpeerconfiguration-bgpconfigurations): {{
     - ConnectPeerBgpConfiguration}}
   [CoreNetworkAddress](#cfn-networkmanager-connectpeer-connectpeerconfiguration-corenetworkaddress): {{String}}

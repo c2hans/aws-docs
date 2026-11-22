@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-datasource-semanticchunkingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BreakpointPercentileThreshold](#cfn-bedrock-datasource-semanticchunkingconfiguration-breakpointpercentilethreshold)" : {{Integer}},
   "[BufferSize](#cfn-bedrock-datasource-semanticchunkingconfiguration-buffersize)" : {{Integer}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-datasource-semanticchunkingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BreakpointPercentileThreshold](#cfn-bedrock-datasource-semanticchunkingconfiguration-breakpointpercentilethreshold): {{Integer}}
   [BufferSize](#cfn-bedrock-datasource-semanticchunkingconfiguration-buffersize): {{Integer}}
   [MaxTokens](#cfn-bedrock-datasource-semanticchunkingconfiguration-maxtokens): {{Integer}}

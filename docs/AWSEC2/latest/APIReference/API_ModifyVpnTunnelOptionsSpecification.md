@@ -39,9 +39,15 @@ Options for logging VPN tunnel activity.
 Type: [VpnTunnelLogOptionsSpecification](API_VpnTunnelLogOptionsSpecification.md) object
 Required: No
 
+ ** Phase1AdditionalKeyExchange.N **
+One or more additional key exchange rounds that are permitted for the VPN tunnel for phase 1 IKE negotiations. Additional key exchanges occur after the initial Diffie-Hellman exchange. Each round must have a unique round number.
+Additional key exchanges are supported only with IKEv2. You can't specify a `required` round if `IKEVersions` contains only `ikev1`.
+Type: Array of [VpnAdditionalKeyExchangeRequest](API_VpnAdditionalKeyExchangeRequest.md) objects
+Required: No
+
  ** Phase1DHGroupNumber.N **
 One or more Diffie-Hellman group numbers that are permitted for the VPN tunnel for phase 1 IKE negotiations.
-Valid values: `2` \| `14` \| `15` \| `16` \| `17` \| `18` \| `19` \| `20` \| `21` \| `22` \| `23` \| `24`
+Valid values: `2` \| `14` \| `15` \| `16` \| `17` \| `18` \| `19` \| `20` \| `21` \| `22` \| `23` \| `24` \| `35`
 Type: Array of [Phase1DHGroupNumbersRequestListValue](API_Phase1DHGroupNumbersRequestListValue.md) objects
 Required: No
 
@@ -64,9 +70,15 @@ Default: `28800`
 Type: Integer
 Required: No
 
+ ** Phase2AdditionalKeyExchange.N **
+One or more additional key exchange rounds that are permitted for the VPN tunnel for phase 2 IKE negotiations. Additional key exchanges occur after the initial Diffie-Hellman exchange. Each round must have a unique round number.
+Additional key exchanges are supported only with IKEv2. You can't specify a `required` round if `IKEVersions` contains only `ikev1`.
+Type: Array of [VpnAdditionalKeyExchangeRequest](API_VpnAdditionalKeyExchangeRequest.md) objects
+Required: No
+
  ** Phase2DHGroupNumber.N **
 One or more Diffie-Hellman group numbers that are permitted for the VPN tunnel for phase 2 IKE negotiations.
-Valid values: `2` \| `5` \| `14` \| `15` \| `16` \| `17` \| `18` \| `19` \| `20` \| `21` \| `22` \| `23` \| `24`
+Valid values: `2` \| `5` \| `14` \| `15` \| `16` \| `17` \| `18` \| `19` \| `20` \| `21` \| `22` \| `23` \| `24` \| `35` \| `36` \| `37`
 Type: Array of [Phase2DHGroupNumbersRequestListValue](API_Phase2DHGroupNumbersRequestListValue.md) objects
 Required: No
 

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iam-role-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IAM::Role",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iam-role-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IAM::Role
 Properties:
   [AssumeRolePolicyDocument](#cfn-iam-role-assumerolepolicydocument): {{Json}}
@@ -183,7 +183,7 @@ This example shows an embedded policy in the `AWS::IAM::Role`. The policy is spe
 ####
 <a name="aws-resource-iam-role--examples--Role_with_Embedded_Policy_and_Instance_Profiles--language_sc3_fgs_qjb"></a>
 
-```
+```language_sc3_fgs_qjb
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -242,7 +242,7 @@ This example shows an embedded policy in the `AWS::IAM::Role`. The policy is spe
 #### YAML
 <a name="aws-resource-iam-role--examples--Role_with_Embedded_Policy_and_Instance_Profiles--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Resources:
   RootRole:
@@ -282,7 +282,7 @@ In this example, the Policy and InstanceProfile resources are specified external
 #### JSON
 <a name="aws-resource-iam-role--examples--Role_with_External_Policy_and_Instance_Profiles--json"></a>
 
-```
+```json
 {
    "AWSTemplateFormatVersion": "2010-09-09",
    "Resources": {
@@ -335,7 +335,7 @@ In this example, the Policy and InstanceProfile resources are specified external
 #### YAML
 <a name="aws-resource-iam-role--examples--Role_with_External_Policy_and_Instance_Profiles--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Resources:
   RootRole:

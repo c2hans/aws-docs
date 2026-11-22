@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-quicksight-analysis-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::QuickSight::Analysis",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-quicksight-analysis-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::QuickSight::Analysis
 Properties:
   [AnalysisId](#cfn-quicksight-analysis-analysisid): {{String}}

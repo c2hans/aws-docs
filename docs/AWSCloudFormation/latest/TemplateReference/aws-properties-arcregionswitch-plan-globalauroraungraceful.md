@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-arcregionswitch-plan-globalauroraungraceful-syntax.json"></a>
 
-```
+```json
 {
   "[Ungraceful](#cfn-arcregionswitch-plan-globalauroraungraceful-ungraceful)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-arcregionswitch-plan-globalauroraungraceful-syntax.yaml"></a>
 
-```
+```yaml
   [Ungraceful](#cfn-arcregionswitch-plan-globalauroraungraceful-ungraceful): {{String}}
 ```
 

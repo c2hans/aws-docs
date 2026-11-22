@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-qbusiness-index-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-qbusiness-index-tag-key)" : {{String}},
   "[Value](#cfn-qbusiness-index-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-qbusiness-index-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-qbusiness-index-tag-key): {{String}}
   [Value](#cfn-qbusiness-index-tag-value): {{String}}
 ```

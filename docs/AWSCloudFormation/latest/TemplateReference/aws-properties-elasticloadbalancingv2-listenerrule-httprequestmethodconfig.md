@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-httprequestmethodconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Values](#cfn-elasticloadbalancingv2-listenerrule-httprequestmethodconfig-values)" : {{[ String, ... ]}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-httprequestmethodconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Values](#cfn-elasticloadbalancingv2-listenerrule-httprequestmethodconfig-values): {{
     - String}}
 ```

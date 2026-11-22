@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-pipetargetkinesisstreamparameters-syntax.json"></a>
 
-```
+```json
 {
   "[PartitionKey](#cfn-pipes-pipe-pipetargetkinesisstreamparameters-partitionkey)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-pipetargetkinesisstreamparameters-syntax.yaml"></a>
 
-```
+```yaml
   [PartitionKey](#cfn-pipes-pipe-pipetargetkinesisstreamparameters-partitionkey): {{String}}
 ```
 

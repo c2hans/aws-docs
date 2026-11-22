@@ -14,7 +14,7 @@ To create an Athena table that finds the partitions automatically at query time,
 
 The following `CREATE TABLE` example uses the default Firehose configuration.
 
-```
+```sql
 CREATE EXTERNAL TABLE my_ingested_data (
  ...
 )

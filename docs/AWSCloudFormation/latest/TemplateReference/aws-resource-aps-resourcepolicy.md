@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-aps-resourcepolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::APS::ResourcePolicy",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-aps-resourcepolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::APS::ResourcePolicy
 Properties:
   [PolicyDocument](#cfn-aps-resourcepolicy-policydocument): {{String}}

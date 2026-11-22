@@ -53,7 +53,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudformation-stack-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudFormation::Stack",
   "Properties" : {
@@ -79,7 +79,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudformation-stack-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudFormation::Stack
 Properties:
   [Capabilities](#cfn-cloudformation-stack-capabilities): {{
@@ -312,7 +312,7 @@ The sample template EC2ChooseAMI.template contains the following Parameters sect
 #### JSON
 <a name="aws-resource-cloudformation-stack--examples--Specify_stack_parameters--json"></a>
 
-```
+```json
 {
     "Parameters": {
         "InstanceType": {
@@ -336,7 +336,7 @@ The sample template EC2ChooseAMI.template contains the following Parameters sect
 #### YAML
 <a name="aws-resource-cloudformation-stack--examples--Specify_stack_parameters--yaml"></a>
 
-```
+```yaml
 Parameters:
   InstanceType:
     Type: String
@@ -359,7 +359,7 @@ You could use the following template to embed a stack (`myStackWithParams`) usin
 #### JSON
 <a name="aws-resource-cloudformation-stack--examples--Nested_stack--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion" : "2010-09-09",
   "Resources" : {
@@ -380,7 +380,7 @@ You could use the following template to embed a stack (`myStackWithParams`) usin
 #### YAML
 <a name="aws-resource-cloudformation-stack--examples--Nested_stack--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   myStackWithParams:

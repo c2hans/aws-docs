@@ -116,7 +116,7 @@ This example illustrates how to list all operations that occurred on an App Runn
 #### Sample Request
 <a name="API_ListOperations_Example_1_Request"></a>
 
-```
+```json
 $ aws apprunner list-operations --cli-input-json "`cat`"
 {
   "ServiceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa"
@@ -126,7 +126,7 @@ $ aws apprunner list-operations --cli-input-json "`cat`"
 #### Sample Response
 <a name="API_ListOperations_Example_1_Response"></a>
 
-```
+```json
 {
   "OperationSummaryList": [
     {

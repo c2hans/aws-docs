@@ -67,7 +67,7 @@ Resources:
 
 To update the Lambda Insights Extension version by using CloudFormation, update the extension layer in the `Layers` property within the function's CloudFormation resource, as in the following example. For information about the latest release version of the Lambda Insights extension layer, see [Available versions of the Lambda Insights extension](Lambda-Insights-extension-versions.md).
 
-```
+```yaml
 Resources:
   {{MyFunction}}:
     Type: AWS::Lambda::Function

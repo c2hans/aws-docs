@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-eks-addon-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EKS::Addon",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-eks-addon-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EKS::Addon
 Properties:
   [AddonName](#cfn-eks-addon-addonname): {{String}}

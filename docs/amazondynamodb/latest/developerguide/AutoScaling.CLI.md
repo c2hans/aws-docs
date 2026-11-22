@@ -127,7 +127,7 @@ For `TestTable`, you set `TargetValue` to 50 percent. Application Auto Scaling a
 
 1. Create a file named `scaling-policy.json` with the following contents.
 
-   ```
+   ```json
    {
        "PredefinedMetricSpecification": {
            "PredefinedMetricType": "DynamoDBWriteCapacityUtilization"
@@ -170,7 +170,7 @@ Now you can test your scaling policy by writing data to `TestTable`. To do this,
 
 1. Create a file named `bulk-load-test-table.py` with the following contents.
 
-   ```
+   ```python
    import boto3
    dynamodb = boto3.resource('dynamodb')
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-configurationset-validationoptions-syntax.json"></a>
 
-```
+```json
 {
   "[ConditionThreshold](#cfn-ses-configurationset-validationoptions-conditionthreshold)" : {{ConditionThreshold}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-configurationset-validationoptions-syntax.yaml"></a>
 
-```
+```yaml
   [ConditionThreshold](#cfn-ses-configurationset-validationoptions-conditionthreshold): {{
     ConditionThreshold}}
 ```

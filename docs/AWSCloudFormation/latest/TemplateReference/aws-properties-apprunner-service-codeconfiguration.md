@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apprunner-service-codeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CodeConfigurationValues](#cfn-apprunner-service-codeconfiguration-codeconfigurationvalues)" : {{CodeConfigurationValues}},
   "[ConfigurationSource](#cfn-apprunner-service-codeconfiguration-configurationsource)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apprunner-service-codeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CodeConfigurationValues](#cfn-apprunner-service-codeconfiguration-codeconfigurationvalues): {{
     CodeConfigurationValues}}
   [ConfigurationSource](#cfn-apprunner-service-codeconfiguration-configurationsource): {{String}}

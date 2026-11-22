@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-processingjob-processingresources-syntax.json"></a>
 
-```
+```json
 {
   "[ClusterConfig](#cfn-sagemaker-processingjob-processingresources-clusterconfig)" : {{ClusterConfig}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-processingjob-processingresources-syntax.yaml"></a>
 
-```
+```yaml
   [ClusterConfig](#cfn-sagemaker-processingjob-processingresources-clusterconfig): {{
     ClusterConfig}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-datasource-redshiftiamparameters-syntax.json"></a>
 
-```
+```json
 {
   "[AutoCreateDatabaseUser](#cfn-quicksight-datasource-redshiftiamparameters-autocreatedatabaseuser)" : {{Boolean}},
   "[DatabaseGroups](#cfn-quicksight-datasource-redshiftiamparameters-databasegroups)" : {{[ String, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-datasource-redshiftiamparameters-syntax.yaml"></a>
 
-```
+```yaml
   [AutoCreateDatabaseUser](#cfn-quicksight-datasource-redshiftiamparameters-autocreatedatabaseuser): {{Boolean}}
   [DatabaseGroups](#cfn-quicksight-datasource-redshiftiamparameters-databasegroups): {{
     - String}}

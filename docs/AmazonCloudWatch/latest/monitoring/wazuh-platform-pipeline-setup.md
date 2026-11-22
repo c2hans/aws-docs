@@ -8,7 +8,7 @@ Collects audit logs from Wazuh Platform using Basic authentication.
 
 Configure the Wazuh Platform source with the following parameters:
 
-```
+```yaml
 source:
   wazuh_platform:
     host: "https://<wazuh-indexer-host>:9200"

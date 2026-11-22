@@ -25,13 +25,13 @@ You can view configuration histories in any of the following ways:
 
 For example, to get a list of all of your Dedicated Hosts from AWS Config, run a CLI command such as the following.
 
-```
+```bash
 aws configservice list-discovered-resources --resource-type AWS::EC2::Host
 ```
 
 To obtain the configuration history of a Dedicated Host from AWS Config, run a CLI command such as the following.
 
-```
+```bash
 aws configservice get-resource-config-history \
     --resource-type AWS::EC2::Instance \
     --resource-id {{i-1234567890abcdef0}}

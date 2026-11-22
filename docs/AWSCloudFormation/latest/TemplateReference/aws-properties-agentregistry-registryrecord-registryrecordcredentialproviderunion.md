@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-agentregistry-registryrecord-registryrecordcredentialproviderunion-syntax.json"></a>
 
-```
+```json
 {
   "[IamCredentialProvider](#cfn-agentregistry-registryrecord-registryrecordcredentialproviderunion-iamcredentialprovider)" : {{RegistryRecordIamCredentialProvider}},
   "[OauthCredentialProvider](#cfn-agentregistry-registryrecord-registryrecordcredentialproviderunion-oauthcredentialprovider)" : {{RegistryRecordOAuthCredentialProvider}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-agentregistry-registryrecord-registryrecordcredentialproviderunion-syntax.yaml"></a>
 
-```
+```yaml
   [IamCredentialProvider](#cfn-agentregistry-registryrecord-registryrecordcredentialproviderunion-iamcredentialprovider): {{
     RegistryRecordIamCredentialProvider}}
   [OauthCredentialProvider](#cfn-agentregistry-registryrecord-registryrecordcredentialproviderunion-oauthcredentialprovider): {{

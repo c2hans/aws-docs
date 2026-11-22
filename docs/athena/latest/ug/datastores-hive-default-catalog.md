@@ -13,13 +13,13 @@ When you run DML and DDL queries on external Hive metastores, you can simplify y
 
 1. You can put the data source name before the database using the syntax `[[{{data_source_name}}].{{database_name}}].{{table_name}}`, as in the following example.
 
-   ```
+   ```sql
    select * from  "hms-catalog-1".hms_tpch.customer limit 10;
    ```
 
 1. When the data source that you want to use is already selected in the query editor, you can omit the name from the query, as in the following example.
 
-   ```
+   ```sql
    select * from hms_tpch.customer limit 10:
    ```
 ![A DML query using a default data source.](https://docs.aws.amazon.com/athena/latest/ug/images/datastores-hive-default-catalog-2.png)
@@ -28,7 +28,7 @@ When you run DML and DDL queries on external Hive metastores, you can simplify y
 
    For example, suppose `AwsDataCatalog` is selected as the default data source in the query editor. The `FROM` statement in the following query excerpt fully qualifies the first two data source names but omits the name for the third data source because it is in the AWS Glue data catalog.
 
-   ```
+   ```sql
    ...
    FROM ehms01.hms_tpch.customer,
             "hms-catalog-1".hms_tpch.orders,
@@ -41,7 +41,7 @@ When you run DML and DDL queries on external Hive metastores, you can simplify y
 
 The following Athena DDL statements support catalog name prefixes. Catalog name prefixes in other DDL statements cause syntax errors.
 
-```
+```sql
 SHOW TABLES [IN [catalog_name.]database_name] ['regular_expression']
 
 SHOW TBLPROPERTIES [[catalog_name.]database_name.]table_name [('property_name')]

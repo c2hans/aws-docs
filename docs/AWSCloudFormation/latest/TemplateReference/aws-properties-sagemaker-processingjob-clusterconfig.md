@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-processingjob-clusterconfig-syntax.json"></a>
 
-```
+```json
 {
   "[InstanceCount](#cfn-sagemaker-processingjob-clusterconfig-instancecount)" : {{Integer}},
   "[InstanceType](#cfn-sagemaker-processingjob-clusterconfig-instancetype)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-processingjob-clusterconfig-syntax.yaml"></a>
 
-```
+```yaml
   [InstanceCount](#cfn-sagemaker-processingjob-clusterconfig-instancecount): {{Integer}}
   [InstanceType](#cfn-sagemaker-processingjob-clusterconfig-instancetype): {{String}}
   [VolumeKmsKeyId](#cfn-sagemaker-processingjob-clusterconfig-volumekmskeyid): {{String}}

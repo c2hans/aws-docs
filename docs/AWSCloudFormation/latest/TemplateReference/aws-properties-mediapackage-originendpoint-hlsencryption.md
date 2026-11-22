@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackage-originendpoint-hlsencryption-syntax.json"></a>
 
-```
+```json
 {
   "[ConstantInitializationVector](#cfn-mediapackage-originendpoint-hlsencryption-constantinitializationvector)" : {{String}},
   "[EncryptionMethod](#cfn-mediapackage-originendpoint-hlsencryption-encryptionmethod)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackage-originendpoint-hlsencryption-syntax.yaml"></a>
 
-```
+```yaml
   [ConstantInitializationVector](#cfn-mediapackage-originendpoint-hlsencryption-constantinitializationvector): {{String}}
   [EncryptionMethod](#cfn-mediapackage-originendpoint-hlsencryption-encryptionmethod): {{String}}
   [KeyRotationIntervalSeconds](#cfn-mediapackage-originendpoint-hlsencryption-keyrotationintervalseconds): {{Integer}}

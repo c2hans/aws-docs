@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationinsights-application-componentconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ConfigurationDetails](#cfn-applicationinsights-application-componentconfiguration-configurationdetails)" : {{ConfigurationDetails}},
   "[SubComponentTypeConfigurations](#cfn-applicationinsights-application-componentconfiguration-subcomponenttypeconfigurations)" : {{[ SubComponentTypeConfiguration, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationinsights-application-componentconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ConfigurationDetails](#cfn-applicationinsights-application-componentconfiguration-configurationdetails): {{
     ConfigurationDetails}}
   [SubComponentTypeConfigurations](#cfn-applicationinsights-application-componentconfiguration-subcomponenttypeconfigurations): {{

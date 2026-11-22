@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewayrule-matchmodels-syntax.json"></a>
 
-```
+```json
 {
   "[AnyOf](#cfn-bedrockagentcore-gatewayrule-matchmodels-anyof)" : {{[ MatchModelEntry, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewayrule-matchmodels-syntax.yaml"></a>
 
-```
+```yaml
   [AnyOf](#cfn-bedrockagentcore-gatewayrule-matchmodels-anyof): {{
     - MatchModelEntry}}
 ```

@@ -8,13 +8,13 @@ Returns the AWS Region and the origin (URL scheme, host, and port) of the Connec
 
  **Signature**
 
-```
+```typescript
 getInstanceDetails(contactId: string): Promise<InstanceDetails>
 ```
 
  **Usage**
 
-```
+```typescript
 const { region, origin }: InstanceDetails = await contactClient.getInstanceDetails(contactId);
 ```
 
@@ -37,6 +37,6 @@ Requires an instance that is scoped to the contact that you pass in `contactId`,
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

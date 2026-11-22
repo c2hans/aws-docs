@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-networkinterface-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::NetworkInterface",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-networkinterface-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::NetworkInterface
 Properties:
   [ConnectionTrackingSpecification](#cfn-ec2-networkinterface-connectiontrackingspecification): {{
@@ -246,7 +246,7 @@ This example creates a standalone elastic network interface (ENI). To learn how 
 #### JSON
 <a name="aws-resource-ec2-networkinterface--examples--Basic_network_interface--json"></a>
 
-```
+```json
 "myENI" : {
    "Type" : "AWS::EC2::NetworkInterface",
    "Properties" : {
@@ -263,7 +263,7 @@ This example creates a standalone elastic network interface (ENI). To learn how 
 #### YAML
 <a name="aws-resource-ec2-networkinterface--examples--Basic_network_interface--yaml"></a>
 
-```
+```yaml
    myENI:
       Type: AWS::EC2::NetworkInterface
       Properties:
@@ -286,7 +286,7 @@ This example attaches a network interface to an EC2 instance. You can use the Ne
 #### JSON
 <a name="aws-resource-ec2-networkinterface--examples--Attach_a_network_interface_to_an_EC2_instance_at_launch--json"></a>
 
-```
+```json
 "Ec2Instance" : {
    "Type" : "AWS::EC2::Instance",
    "Properties" : {
@@ -305,7 +305,7 @@ This example attaches a network interface to an EC2 instance. You can use the Ne
 #### YAML
 <a name="aws-resource-ec2-networkinterface--examples--Attach_a_network_interface_to_an_EC2_instance_at_launch--yaml"></a>
 
-```
+```yaml
 Ec2Instance:
    Type: AWS::EC2::Instance
    Properties:

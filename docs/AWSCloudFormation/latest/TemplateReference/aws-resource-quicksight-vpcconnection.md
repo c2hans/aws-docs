@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-quicksight-vpcconnection-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::QuickSight::VPCConnection",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-quicksight-vpcconnection-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::QuickSight::VPCConnection
 Properties:
   [AvailabilityStatus](#cfn-quicksight-vpcconnection-availabilitystatus): {{String}}

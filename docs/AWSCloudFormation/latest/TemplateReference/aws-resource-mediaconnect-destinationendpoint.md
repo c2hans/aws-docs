@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-mediaconnect-destinationendpoint-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MediaConnect::DestinationEndpoint",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-mediaconnect-destinationendpoint-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MediaConnect::DestinationEndpoint
 Properties:
   [Configuration](#cfn-mediaconnect-destinationendpoint-configuration): {{

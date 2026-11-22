@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-smsvoice-configurationset-cloudwatchlogsdestination-syntax.json"></a>
 
-```
+```json
 {
   "[IamRoleArn](#cfn-smsvoice-configurationset-cloudwatchlogsdestination-iamrolearn)" : {{String}},
   "[LogGroupArn](#cfn-smsvoice-configurationset-cloudwatchlogsdestination-loggrouparn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-smsvoice-configurationset-cloudwatchlogsdestination-syntax.yaml"></a>
 
-```
+```yaml
   [IamRoleArn](#cfn-smsvoice-configurationset-cloudwatchlogsdestination-iamrolearn): {{String}}
   [LogGroupArn](#cfn-smsvoice-configurationset-cloudwatchlogsdestination-loggrouparn): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-transfer-profile-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Transfer::Profile",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-transfer-profile-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Transfer::Profile
 Properties:
   [As2Id](#cfn-transfer-profile-as2id): {{String}}

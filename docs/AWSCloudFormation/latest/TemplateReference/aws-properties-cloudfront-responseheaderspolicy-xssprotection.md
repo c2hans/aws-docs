@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-responseheaderspolicy-xssprotection-syntax.json"></a>
 
-```
+```json
 {
   "[ModeBlock](#cfn-cloudfront-responseheaderspolicy-xssprotection-modeblock)" : {{Boolean}},
   "[Override](#cfn-cloudfront-responseheaderspolicy-xssprotection-override)" : {{Boolean}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-responseheaderspolicy-xssprotection-syntax.yaml"></a>
 
-```
+```yaml
   [ModeBlock](#cfn-cloudfront-responseheaderspolicy-xssprotection-modeblock): {{Boolean}}
   [Override](#cfn-cloudfront-responseheaderspolicy-xssprotection-override): {{Boolean}}
   [Protection](#cfn-cloudfront-responseheaderspolicy-xssprotection-protection): {{Boolean}}

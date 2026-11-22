@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-bodysectiondynamicnumericdimensionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Column](#cfn-quicksight-analysis-bodysectiondynamicnumericdimensionconfiguration-column)" : {{ColumnIdentifier}},
   "[Limit](#cfn-quicksight-analysis-bodysectiondynamicnumericdimensionconfiguration-limit)" : {{Number}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-bodysectiondynamicnumericdimensionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Column](#cfn-quicksight-analysis-bodysectiondynamicnumericdimensionconfiguration-column): {{
     ColumnIdentifier}}
   [Limit](#cfn-quicksight-analysis-bodysectiondynamicnumericdimensionconfiguration-limit): {{Number}}

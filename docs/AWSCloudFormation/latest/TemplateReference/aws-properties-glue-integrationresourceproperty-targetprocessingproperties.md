@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-integrationresourceproperty-targetprocessingproperties-syntax.json"></a>
 
-```
+```json
 {
   "[ConnectionName](#cfn-glue-integrationresourceproperty-targetprocessingproperties-connectionname)" : {{String}},
   "[EventBusArn](#cfn-glue-integrationresourceproperty-targetprocessingproperties-eventbusarn)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-integrationresourceproperty-targetprocessingproperties-syntax.yaml"></a>
 
-```
+```yaml
   [ConnectionName](#cfn-glue-integrationresourceproperty-targetprocessingproperties-connectionname): {{String}}
   [EventBusArn](#cfn-glue-integrationresourceproperty-targetprocessingproperties-eventbusarn): {{String}}
   [KmsArn](#cfn-glue-integrationresourceproperty-targetprocessingproperties-kmsarn): {{String}}

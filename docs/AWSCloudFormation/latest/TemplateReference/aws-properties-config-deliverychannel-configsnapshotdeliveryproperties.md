@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-config-deliverychannel-configsnapshotdeliveryproperties-syntax.json"></a>
 
-```
+```json
 {
   "[DeliveryFrequency](#cfn-config-deliverychannel-configsnapshotdeliveryproperties-deliveryfrequency)" : {{String}}
 }
@@ -46,7 +46,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-config-deliverychannel-configsnapshotdeliveryproperties-syntax.yaml"></a>
 
-```
+```yaml
   [DeliveryFrequency](#cfn-config-deliverychannel-configsnapshotdeliveryproperties-deliveryfrequency): {{String}}
 ```
 

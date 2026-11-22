@@ -34,7 +34,7 @@ getAttachedFileUrl({ attachment, activeContactId }: { attachment: Attachment; ac
 
  **Usage**
 
-```
+```typescript
 const downloadableAttachment = await fileClient.getAttachedFileUrl({
   attachment: {
     associatedResourceArn: sampleAssociatedResourceArn,

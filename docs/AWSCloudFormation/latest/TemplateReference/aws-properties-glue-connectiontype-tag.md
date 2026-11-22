@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-connectiontype-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-glue-connectiontype-tag-key)" : {{String}},
   "[Value](#cfn-glue-connectiontype-tag-value)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-connectiontype-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-glue-connectiontype-tag-key): {{String}}
   [Value](#cfn-glue-connectiontype-tag-value): {{String}}
 ```

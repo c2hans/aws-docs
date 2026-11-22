@@ -9,7 +9,7 @@ The following example shows how to use the [ExportCertificate](https://docs.aws.
 **Note**
 If you want to export public certificates issued through ACM, see [ACM exportable public certificates](https://docs.aws.amazon.com/acm/latest/userguide/acm-exportable-certificates.html).
 
-```
+```java
 package com.amazonaws.samples;
 
 import com.amazonaws.AmazonClientException;

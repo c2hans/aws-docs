@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-spotfleet-spotmaintenancestrategies-syntax.json"></a>
 
-```
+```json
 {
   "[CapacityRebalance](#cfn-ec2-spotfleet-spotmaintenancestrategies-capacityrebalance)" : {{SpotCapacityRebalance}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-spotfleet-spotmaintenancestrategies-syntax.yaml"></a>
 
-```
+```yaml
   [CapacityRebalance](#cfn-ec2-spotfleet-spotmaintenancestrategies-capacityrebalance): {{
     SpotCapacityRebalance}}
 ```

@@ -24,7 +24,7 @@ The following are the basic DynamoDB components:
 
 The following diagram shows a table named *People* with some example items and attributes.
 
-```
+```json
 People
 
 {
@@ -67,7 +67,7 @@ Note the following about the *People* table:
 
 The following is another example table named *Music* that you could use to keep track of your music collection.
 
-```
+```json
 Music
 
 {

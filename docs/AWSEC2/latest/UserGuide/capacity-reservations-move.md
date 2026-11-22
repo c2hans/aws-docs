@@ -69,7 +69,7 @@ You can move capacity from a source Capacity Reservation to a destination Capaci
 **To move capacity**
 Use the [move-capacity-reservation-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/move-capacity-reservation-instances.html) command. The following example moves 10 instances from the specified source Capacity Reservation to the specified destination Capacity Reservation.
 
-```
+```bash
 aws ec2 move-capacity-reservation-instances \
     --source-capacity-reservation-id {{cr-1234567890abcdef0}} \
     --destination-capacity-reservation-id {{cr-021345abcdef56789}} \
@@ -82,7 +82,7 @@ aws ec2 move-capacity-reservation-instances \
 **To move capacity**
 Use the [Move-EC2CapacityReservationInstance](https://docs.aws.amazon.com/powershell/latest/reference/items/Move-EC2CapacityReservationInstance.html) cmdlet. The following example moves 10 instances from the specified source Capacity Reservation to the specified destination Capacity Reservation.
 
-```
+```powershell
 Move-EC2CapacityReservationInstance `
     -SourceCapacityReservationId {{cr-1234567890abcdef0}} `
     -DestinationCapacityReservationId {{cr-021345abcdef56789}} `

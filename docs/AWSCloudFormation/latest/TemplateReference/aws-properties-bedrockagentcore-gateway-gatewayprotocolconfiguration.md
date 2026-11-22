@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gateway-gatewayprotocolconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Mcp](#cfn-bedrockagentcore-gateway-gatewayprotocolconfiguration-mcp)" : {{MCPGatewayConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gateway-gatewayprotocolconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Mcp](#cfn-bedrockagentcore-gateway-gatewayprotocolconfiguration-mcp): {{
     MCPGatewayConfiguration}}
 ```

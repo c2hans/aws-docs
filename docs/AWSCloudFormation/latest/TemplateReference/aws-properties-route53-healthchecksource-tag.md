@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-route53-healthchecksource-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-route53-healthchecksource-tag-key)" : {{String}},
   "[Value](#cfn-route53-healthchecksource-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-route53-healthchecksource-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-route53-healthchecksource-tag-key): {{String}}
   [Value](#cfn-route53-healthchecksource-tag-value): {{String}}
 ```

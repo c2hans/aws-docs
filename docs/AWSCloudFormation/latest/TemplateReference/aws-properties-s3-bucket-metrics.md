@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-metrics-syntax.json"></a>
 
-```
+```json
 {
   "[EventThreshold](#cfn-s3-bucket-metrics-eventthreshold)" : {{ReplicationTimeValue}},
   "[Status](#cfn-s3-bucket-metrics-status)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-metrics-syntax.yaml"></a>
 
-```
+```yaml
   [EventThreshold](#cfn-s3-bucket-metrics-eventthreshold): {{
     ReplicationTimeValue}}
   [Status](#cfn-s3-bucket-metrics-status): {{String}}

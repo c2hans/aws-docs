@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-outputdestination-syntax.json"></a>
 
-```
+```json
 {
   "[Id](#cfn-medialive-channel-outputdestination-id)" : {{String}},
   "[LogicalInterfaceNames](#cfn-medialive-channel-outputdestination-logicalinterfacenames)" : {{[ String, ... ]}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-outputdestination-syntax.yaml"></a>
 
-```
+```yaml
   [Id](#cfn-medialive-channel-outputdestination-id): {{String}}
   [LogicalInterfaceNames](#cfn-medialive-channel-outputdestination-logicalinterfacenames): {{
     - String}}

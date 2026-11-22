@@ -66,7 +66,7 @@ Enable CORS by returning correct headers
 #### DescribeClusterV2Response schema
 <a name="v2-clusters-clusterarn-response-body-describeclusterv2response-example"></a>
 
-```
+```json
 {
   "clusterInfo": {
     "clusterType": enum,

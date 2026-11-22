@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrass-resourcedefinitionversion-s3machinelearningmodelresourcedata-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationPath](#cfn-greengrass-resourcedefinitionversion-s3machinelearningmodelresourcedata-destinationpath)" : {{String}},
   "[OwnerSetting](#cfn-greengrass-resourcedefinitionversion-s3machinelearningmodelresourcedata-ownersetting)" : {{ResourceDownloadOwnerSetting}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrass-resourcedefinitionversion-s3machinelearningmodelresourcedata-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationPath](#cfn-greengrass-resourcedefinitionversion-s3machinelearningmodelresourcedata-destinationpath): {{String}}
   [OwnerSetting](#cfn-greengrass-resourcedefinitionversion-s3machinelearningmodelresourcedata-ownersetting): {{
     ResourceDownloadOwnerSetting}}

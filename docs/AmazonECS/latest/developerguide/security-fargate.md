@@ -17,7 +17,7 @@ For more information, see [Storage options for Amazon ECS tasks](https://docs.aw
 
 The following command will launch a task on Fargate platform version 1.4. Because this task is launched as part of the cluster, it uses the 20 GiB of ephemeral storage that's automatically encrypted.
 
-```
+```bash
 aws ecs run-task --cluster clustername \
   --task-definition {{taskdefinition}}:{{version}} \
   --count 1

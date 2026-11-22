@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-appmesh-virtualgateway-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppMesh::VirtualGateway",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-appmesh-virtualgateway-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppMesh::VirtualGateway
 Properties:
   [MeshName](#cfn-appmesh-virtualgateway-meshname): {{String}}

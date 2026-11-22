@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-cluster-serviceconnectdefaults-syntax.json"></a>
 
-```
+```json
 {
   "[Namespace](#cfn-ecs-cluster-serviceconnectdefaults-namespace)" : {{String}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-cluster-serviceconnectdefaults-syntax.yaml"></a>
 
-```
+```yaml
   [Namespace](#cfn-ecs-cluster-serviceconnectdefaults-namespace): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-onedriveusers-syntax.json"></a>
 
-```
+```json
 {
   "[OneDriveUserList](#cfn-kendra-datasource-onedriveusers-onedriveuserlist)" : {{[ String, ... ]}},
   "[OneDriveUserS3Path](#cfn-kendra-datasource-onedriveusers-onedriveusers3path)" : {{S3Path}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-onedriveusers-syntax.yaml"></a>
 
-```
+```yaml
   [OneDriveUserList](#cfn-kendra-datasource-onedriveusers-onedriveuserlist): {{
     - String}}
   [OneDriveUserS3Path](#cfn-kendra-datasource-onedriveusers-onedriveusers3path): {{

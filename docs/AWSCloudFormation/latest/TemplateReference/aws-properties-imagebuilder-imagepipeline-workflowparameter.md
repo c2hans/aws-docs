@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-imagepipeline-workflowparameter-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-imagebuilder-imagepipeline-workflowparameter-name)" : {{String}},
   "[Value](#cfn-imagebuilder-imagepipeline-workflowparameter-value)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-imagepipeline-workflowparameter-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-imagebuilder-imagepipeline-workflowparameter-name): {{String}}
   [Value](#cfn-imagebuilder-imagepipeline-workflowparameter-value): {{
     - String}}

@@ -51,7 +51,7 @@ The `eventName` element identifies the action that occurred. (In CloudTrail logs
 + Update information for a registered domain
 + Create a Route 53 VPC Resolver outbound endpoint
 
-```
+```json
 {
     "Records": [
         {

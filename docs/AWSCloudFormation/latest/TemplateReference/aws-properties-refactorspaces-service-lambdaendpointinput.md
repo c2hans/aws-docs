@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-refactorspaces-service-lambdaendpointinput-syntax.json"></a>
 
-```
+```json
 {
   "[Arn](#cfn-refactorspaces-service-lambdaendpointinput-arn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-refactorspaces-service-lambdaendpointinput-syntax.yaml"></a>
 
-```
+```yaml
   [Arn](#cfn-refactorspaces-service-lambdaendpointinput-arn): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssm-maintenancewindow-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-ssm-maintenancewindow-tag-key)" : {{String}},
   "[Value](#cfn-ssm-maintenancewindow-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssm-maintenancewindow-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-ssm-maintenancewindow-tag-key): {{String}}
   [Value](#cfn-ssm-maintenancewindow-tag-value): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-observabilityadmin-telemetrypipelines-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ObservabilityAdmin::TelemetryPipelines",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-observabilityadmin-telemetrypipelines-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ObservabilityAdmin::TelemetryPipelines
 Properties:
   [Configuration](#cfn-observabilityadmin-telemetrypipelines-configuration): {{
@@ -102,7 +102,7 @@ The following is an example of a `Body` property value for the `Configuration` o
 #### JSON
 <a name="aws-resource-observabilityadmin-telemetrypipelines--examples--Using_CloudWatch_as_a_pipeline_source--json"></a>
 
-```
+```json
 {
   "Type": "AWS::ObservabilityAdmin::TelemetryPipelines",
   "Properties": {
@@ -116,7 +116,7 @@ The following is an example of a `Body` property value for the `Configuration` o
 #### YAML
 <a name="aws-resource-observabilityadmin-telemetrypipelines--examples--Using_CloudWatch_as_a_pipeline_source--yaml"></a>
 
-```
+```yaml
 Type: AWS::ObservabilityAdmin::TelemetryPipelines
 Properties:
   Configuration:
@@ -144,7 +144,7 @@ The following is an example of a `Body` property value for the `Configuration` o
 #### JSON
 <a name="aws-resource-observabilityadmin-telemetrypipelines--examples--Using_Amazon_S3_as_a_pipeline_source--json"></a>
 
-```
+```json
 {
   "Type": "AWS::ObservabilityAdmin::TelemetryPipelines",
   "Properties": {
@@ -158,7 +158,7 @@ The following is an example of a `Body` property value for the `Configuration` o
 #### YAML
 <a name="aws-resource-observabilityadmin-telemetrypipelines--examples--Using_Amazon_S3_as_a_pipeline_source--yaml"></a>
 
-```
+```yaml
 Type: AWS::ObservabilityAdmin::TelemetryPipelines
 Properties:
   Configuration:

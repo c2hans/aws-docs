@@ -32,7 +32,7 @@ This code connects to an Aurora MySQL DB cluster. Modify the values of the follo
 **Note**
 You cannot use a custom Route 53 DNS record instead of the DB cluster endpoint to generate the authentication token.
 
-```
+```net
 using System;
 using System.Data;
 using MySql.Data;
@@ -86,7 +86,7 @@ Modify the values of the following variables as needed:
 **Note**
 You cannot use a custom Route 53 DNS record instead of the DB cluster endpoint to generate the authentication token.
 
-```
+```net
 using System;
 using Npgsql;
 using Amazon.RDS.Util;

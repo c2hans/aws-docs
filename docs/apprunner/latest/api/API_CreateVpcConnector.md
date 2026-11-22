@@ -118,7 +118,7 @@ This example illustrates how to create a VPC connector.
 #### Sample Request
 <a name="API_CreateVpcConnector_Example_1_Request"></a>
 
-```
+```json
 $ aws apprunner create-vpc-connector --cli-input-json "`cat`"
 {
   "VpcConnectorName": "my-vpc-connector",
@@ -130,7 +130,7 @@ $ aws apprunner create-vpc-connector --cli-input-json "`cat`"
 #### Sample Response
 <a name="API_CreateVpcConnector_Example_1_Response"></a>
 
-```
+```json
 {
   "VpcConnector": {
     "VpcConnectorArn": "arn:aws:apprunner:us-east-1:123456789012:vpcconnector/my-vpc-connector/1/3f2eb10e2c494674952026f646844e3d",

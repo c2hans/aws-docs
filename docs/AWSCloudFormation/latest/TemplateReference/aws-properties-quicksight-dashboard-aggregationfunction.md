@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-aggregationfunction-syntax.json"></a>
 
-```
+```json
 {
   "[AttributeAggregationFunction](#cfn-quicksight-dashboard-aggregationfunction-attributeaggregationfunction)" : {{AttributeAggregationFunction}},
   "[CategoricalAggregationFunction](#cfn-quicksight-dashboard-aggregationfunction-categoricalaggregationfunction)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-aggregationfunction-syntax.yaml"></a>
 
-```
+```yaml
   [AttributeAggregationFunction](#cfn-quicksight-dashboard-aggregationfunction-attributeaggregationfunction): {{
     AttributeAggregationFunction}}
   [CategoricalAggregationFunction](#cfn-quicksight-dashboard-aggregationfunction-categoricalaggregationfunction): {{String}}

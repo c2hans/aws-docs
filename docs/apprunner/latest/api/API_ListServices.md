@@ -102,7 +102,7 @@ This example illustrates how to list all App Runner services in the AWS account.
 #### Sample Request
 <a name="API_ListServices_Example_1_Request"></a>
 
-```
+```json
 $ aws apprunner list-services --cli-input-json "`cat`"
 {
   "MaxResults": 2
@@ -112,7 +112,7 @@ $ aws apprunner list-services --cli-input-json "`cat`"
 #### Sample Response
 <a name="API_ListServices_Example_1_Response"></a>
 
-```
+```json
 {
   "NextToken": "eyJDdXN0b21lckFjY291bnRJZCI6IjI3MDIwNTQwMjg0NSIsIlNlcnZpY2VTdGF0dXNDb2RlIjoiUFJPVklTSU9OSU5HIiwiSGFzaEtleSI6IjI3MDIwNTQwMjg0NSNhYjhmOTRjZmUyOWE0NjBmYjg3NjBhZmQyZWU4NzU1NSJ9",
   "ServiceSummaryList": [

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-datazone-environmentblueprintconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DataZone::EnvironmentBlueprintConfiguration",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-datazone-environmentblueprintconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DataZone::EnvironmentBlueprintConfiguration
 Properties:
   [DomainIdentifier](#cfn-datazone-environmentblueprintconfiguration-domainidentifier): {{String}}

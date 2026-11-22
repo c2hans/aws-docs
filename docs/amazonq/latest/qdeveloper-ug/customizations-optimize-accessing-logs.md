@@ -15,7 +15,7 @@ To learn more about the permissions required to delivery logs to multiple resour
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

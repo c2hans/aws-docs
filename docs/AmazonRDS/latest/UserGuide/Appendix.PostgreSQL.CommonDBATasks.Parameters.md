@@ -10,7 +10,7 @@ You can also create your own custom DB parameter group. You need to do this if y
 
 You can track the settings on your RDS for PostgreSQL DB instance in several different ways. You can use the AWS Management Console, the AWS CLI, or the Amazon RDS API. You can also query the values from the PostgreSQL `pg_settings` table of your instance, as shown following.
 
-```
+```sql
 SELECT name, setting, boot_val, reset_val, unit
  FROM pg_settings
  ORDER BY name;

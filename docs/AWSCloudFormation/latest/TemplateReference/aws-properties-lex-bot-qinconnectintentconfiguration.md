@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-qinconnectintentconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[QInConnectAssistantConfiguration](#cfn-lex-bot-qinconnectintentconfiguration-qinconnectassistantconfiguration)" : {{QInConnectAssistantConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-qinconnectintentconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [QInConnectAssistantConfiguration](#cfn-lex-bot-qinconnectintentconfiguration-qinconnectassistantconfiguration): {{
     QInConnectAssistantConfiguration}}
 ```

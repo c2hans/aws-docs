@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-audiocodecsettings-syntax.json"></a>
 
-```
+```json
 {
   "[AacSettings](#cfn-medialive-channel-audiocodecsettings-aacsettings)" : {{AacSettings}},
   "[Ac3Settings](#cfn-medialive-channel-audiocodecsettings-ac3settings)" : {{Ac3Settings}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-audiocodecsettings-syntax.yaml"></a>
 
-```
+```yaml
   [AacSettings](#cfn-medialive-channel-audiocodecsettings-aacsettings): {{
     AacSettings}}
   [Ac3Settings](#cfn-medialive-channel-audiocodecsettings-ac3settings): {{

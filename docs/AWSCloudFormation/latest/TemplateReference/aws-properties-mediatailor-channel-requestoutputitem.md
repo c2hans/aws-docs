@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-channel-requestoutputitem-syntax.json"></a>
 
-```
+```json
 {
   "[DashPlaylistSettings](#cfn-mediatailor-channel-requestoutputitem-dashplaylistsettings)" : {{DashPlaylistSettings}},
   "[HlsPlaylistSettings](#cfn-mediatailor-channel-requestoutputitem-hlsplaylistsettings)" : {{HlsPlaylistSettings}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-channel-requestoutputitem-syntax.yaml"></a>
 
-```
+```yaml
   [DashPlaylistSettings](#cfn-mediatailor-channel-requestoutputitem-dashplaylistsettings): {{
     DashPlaylistSettings}}
   [HlsPlaylistSettings](#cfn-mediatailor-channel-requestoutputitem-hlsplaylistsettings): {{

@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-ulimit-syntax.json"></a>
 
-```
+```json
 {
   "[HardLimit](#cfn-batch-jobdefinition-ulimit-hardlimit)" : {{Integer}},
   "[Name](#cfn-batch-jobdefinition-ulimit-name)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-ulimit-syntax.yaml"></a>
 
-```
+```yaml
   [HardLimit](#cfn-batch-jobdefinition-ulimit-hardlimit): {{Integer}}
   [Name](#cfn-batch-jobdefinition-ulimit-name): {{String}}
   [SoftLimit](#cfn-batch-jobdefinition-ulimit-softlimit): {{Integer}}

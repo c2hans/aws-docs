@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityagent-agentspace-gitlabrepositoryresource-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-securityagent-agentspace-gitlabrepositoryresource-name)" : {{String}},
   "[Namespace](#cfn-securityagent-agentspace-gitlabrepositoryresource-namespace)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityagent-agentspace-gitlabrepositoryresource-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-securityagent-agentspace-gitlabrepositoryresource-name): {{String}}
   [Namespace](#cfn-securityagent-agentspace-gitlabrepositoryresource-namespace): {{String}}
 ```

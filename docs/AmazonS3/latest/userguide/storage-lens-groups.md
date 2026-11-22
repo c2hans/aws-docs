@@ -63,7 +63,7 @@ To create and manage S3 Storage Lens groups, you must have the following IAM per
 
 Here's an example of how to configure your IAM policy in the account that creates the Storage Lens group. To use this policy, replace `{{us-east-1}}` with the home Region that your Storage Lens group is located in. Replace `{{111122223333}}` with your AWS account ID, and replace `{{example-storage-lens-group}}` with the name of your Storage Lens group. To apply these permissions to all Storage Lens groups, replace `{{example-storage-lens-group}}` with an `{{*}}`.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -127,7 +127,7 @@ You can use the following filters in an S3 Storage Lens group:
 
 You can [Creating a Storage Lens group](storage-lens-groups-create.md) that includes up to 10 object tag filters. The following example includes two object tag key-value pairs as filters for a Storage Lens group that's named `{{Marketing-Department}}`. To use this example, replace `{{Marketing-Department}}` with the name of your group, and replace `{{object-tag-key-1}}`, `{{object-tag-value-1}}`, and so on with the object tag key-value pairs that you want to filter on.
 
-```
+```json
 {
     "Name": "{{Marketing-Department}}",
     "Filter": {
@@ -152,7 +152,7 @@ To include multiple filter conditions in your Storage Lens group, you can use lo
 
 To use this example, replace the `{{user input placeholders}}` with the values that you want to filter on.
 
-```
+```json
 {
     "Name": "{{Marketing-Department}}",
     "Filter": {

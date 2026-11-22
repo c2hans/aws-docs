@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-logs-scheduledquery-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Logs::ScheduledQuery",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-logs-scheduledquery-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Logs::ScheduledQuery
 Properties:
   [Description](#cfn-logs-scheduledquery-description): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-connect-datatableattribute-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Connect::DataTableAttribute",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-connect-datatableattribute-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Connect::DataTableAttribute
 Properties:
   [DataTableArn](#cfn-connect-datatableattribute-datatablearn): {{String}}

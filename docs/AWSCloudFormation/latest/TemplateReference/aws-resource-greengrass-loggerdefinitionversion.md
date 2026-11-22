@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-greengrass-loggerdefinitionversion-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Greengrass::LoggerDefinitionVersion",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-greengrass-loggerdefinitionversion-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Greengrass::LoggerDefinitionVersion
 Properties:
   [LoggerDefinitionId](#cfn-greengrass-loggerdefinitionversion-loggerdefinitionid): {{String}}
@@ -82,7 +82,7 @@ For an example of a complete template, see the [`AWS::Greengrass::Group`](https:
 #### JSON
 <a name="aws-resource-greengrass-loggerdefinitionversion--examples--Logger_Definition_Version_Snippet--json"></a>
 
-```
+```json
 "TestLoggerDefinition": {
     "Type": "AWS::Greengrass::LoggerDefinition",
     "Properties": {
@@ -111,7 +111,7 @@ For an example of a complete template, see the [`AWS::Greengrass::Group`](https:
 #### YAML
 <a name="aws-resource-greengrass-loggerdefinitionversion--examples--Logger_Definition_Version_Snippet--yaml"></a>
 
-```
+```yaml
 TestLoggerDefinition:
   Type: 'AWS::Greengrass::LoggerDefinition'
   Properties:

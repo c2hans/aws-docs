@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobqueue-serviceenvironmentorder-syntax.json"></a>
 
-```
+```json
 {
   "[Order](#cfn-batch-jobqueue-serviceenvironmentorder-order)" : {{Integer}},
   "[ServiceEnvironment](#cfn-batch-jobqueue-serviceenvironmentorder-serviceenvironment)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobqueue-serviceenvironmentorder-syntax.yaml"></a>
 
-```
+```yaml
   [Order](#cfn-batch-jobqueue-serviceenvironmentorder-order): {{Integer}}
   [ServiceEnvironment](#cfn-batch-jobqueue-serviceenvironmentorder-serviceenvironment): {{String}}
 ```

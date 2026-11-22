@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-flow-frozenframes-syntax.json"></a>
 
-```
+```json
 {
   "[State](#cfn-mediaconnect-flow-frozenframes-state)" : {{String}},
   "[ThresholdSeconds](#cfn-mediaconnect-flow-frozenframes-thresholdseconds)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-flow-frozenframes-syntax.yaml"></a>
 
-```
+```yaml
   [State](#cfn-mediaconnect-flow-frozenframes-state): {{String}}
   [ThresholdSeconds](#cfn-mediaconnect-flow-frozenframes-thresholdseconds): {{Integer}}
 ```

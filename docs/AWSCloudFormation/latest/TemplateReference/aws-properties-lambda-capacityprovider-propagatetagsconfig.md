@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-capacityprovider-propagatetagsconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ExplicitTags](#cfn-lambda-capacityprovider-propagatetagsconfig-explicittags)" : {{[ Tag, ... ]}},
   "[Mode](#cfn-lambda-capacityprovider-propagatetagsconfig-mode)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-capacityprovider-propagatetagsconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ExplicitTags](#cfn-lambda-capacityprovider-propagatetagsconfig-explicittags): {{
     - Tag}}
   [Mode](#cfn-lambda-capacityprovider-propagatetagsconfig-mode): {{String}}

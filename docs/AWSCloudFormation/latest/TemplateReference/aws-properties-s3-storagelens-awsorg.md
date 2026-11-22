@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-storagelens-awsorg-syntax.json"></a>
 
-```
+```json
 {
   "[Arn](#cfn-s3-storagelens-awsorg-arn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-storagelens-awsorg-syntax.yaml"></a>
 
-```
+```yaml
   [Arn](#cfn-s3-storagelens-awsorg-arn): {{String}}
 ```
 

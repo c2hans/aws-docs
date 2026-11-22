@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationinsights-application-windowsevent-syntax.json"></a>
 
-```
+```json
 {
   "[EventLevels](#cfn-applicationinsights-application-windowsevent-eventlevels)" : {{[ String, ... ]}},
   "[EventName](#cfn-applicationinsights-application-windowsevent-eventname)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationinsights-application-windowsevent-syntax.yaml"></a>
 
-```
+```yaml
   [EventLevels](#cfn-applicationinsights-application-windowsevent-eventlevels): {{
     - String}}
   [EventName](#cfn-applicationinsights-application-windowsevent-eventname): {{String}}

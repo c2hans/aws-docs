@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-command-commandparametervaluenumberrange-syntax.json"></a>
 
-```
+```json
 {
   "[Max](#cfn-iot-command-commandparametervaluenumberrange-max)" : {{String}},
   "[Min](#cfn-iot-command-commandparametervaluenumberrange-min)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-command-commandparametervaluenumberrange-syntax.yaml"></a>
 
-```
+```yaml
   [Max](#cfn-iot-command-commandparametervaluenumberrange-max): {{String}}
   [Min](#cfn-iot-command-commandparametervaluenumberrange-min): {{String}}
 ```

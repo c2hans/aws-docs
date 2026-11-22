@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewayrule-staticoverride-syntax.json"></a>
 
-```
+```json
 {
   "[BundleArn](#cfn-bedrockagentcore-gatewayrule-staticoverride-bundlearn)" : {{String}},
   "[BundleVersion](#cfn-bedrockagentcore-gatewayrule-staticoverride-bundleversion)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewayrule-staticoverride-syntax.yaml"></a>
 
-```
+```yaml
   [BundleArn](#cfn-bedrockagentcore-gatewayrule-staticoverride-bundlearn): {{String}}
   [BundleVersion](#cfn-bedrockagentcore-gatewayrule-staticoverride-bundleversion): {{String}}
 ```

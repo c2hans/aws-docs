@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-slottype-syntax.json"></a>
 
-```
+```json
 {
   "[CompositeSlotTypeSetting](#cfn-lex-bot-slottype-compositeslottypesetting)" : {{CompositeSlotTypeSetting}},
   "[Description](#cfn-lex-bot-slottype-description)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-slottype-syntax.yaml"></a>
 
-```
+```yaml
   [CompositeSlotTypeSetting](#cfn-lex-bot-slottype-compositeslottypesetting): {{
     CompositeSlotTypeSetting}}
   [Description](#cfn-lex-bot-slottype-description): {{String}}

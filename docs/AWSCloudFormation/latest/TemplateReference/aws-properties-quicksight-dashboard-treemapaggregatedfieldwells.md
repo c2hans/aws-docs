@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-treemapaggregatedfieldwells-syntax.json"></a>
 
-```
+```json
 {
   "[Colors](#cfn-quicksight-dashboard-treemapaggregatedfieldwells-colors)" : {{[ MeasureField, ... ]}},
   "[Groups](#cfn-quicksight-dashboard-treemapaggregatedfieldwells-groups)" : {{[ DimensionField, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-treemapaggregatedfieldwells-syntax.yaml"></a>
 
-```
+```yaml
   [Colors](#cfn-quicksight-dashboard-treemapaggregatedfieldwells-colors): {{
     - MeasureField}}
   [Groups](#cfn-quicksight-dashboard-treemapaggregatedfieldwells-groups): {{

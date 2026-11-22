@@ -39,7 +39,7 @@ Both synchronous and asynchronous APIs for flexibility in different application 
 
 Install the checkpoint package from PyPI:
 
-```
+```bash
 pip install langgraph-checkpoint-aws
 ```
 
@@ -48,7 +48,7 @@ pip install langgraph-checkpoint-aws
 
 The following example demonstrates how to configure DynamoDB as a checkpoint store for a LangGraph agent:
 
-```
+```python
 from langgraph.graph import StateGraph
 from langgraph_checkpoint_aws import DynamoDBSaver
 from typing import TypedDict
@@ -85,7 +85,7 @@ The `thread_id` in the configuration acts as the partition key in DynamoDB, allo
 
 For production deployments, you can enable Time to Live, compression, and Amazon S3 offloading. You can also use the `endpoint_url` parameter to point to a local DynamoDB instance for testing:
 
-```
+```python
 import boto3
 from botocore.config import Config
 from langgraph_checkpoint_aws import DynamoDBSaver
@@ -123,7 +123,7 @@ local_checkpointer = DynamoDBSaver(
 
 The checkpoint saver requires a DynamoDB table with a composite primary key. You can create the table using the following AWS CloudFormation template:
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: 'DynamoDB table for LangGraph checkpoint storage'
 
@@ -161,7 +161,7 @@ Resources:
 
 Deploy the template with the AWS CLI:
 
-```
+```bash
 aws cloudformation deploy \
   --template-file template.yaml \
   --stack-name langgraph-checkpoint \
@@ -173,7 +173,7 @@ aws cloudformation deploy \
 
 The following IAM policy provides the minimum permissions required for the DynamoDB checkpoint saver. Replace {{111122223333}} with your AWS account ID and update the Region to match your environment.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -194,7 +194,7 @@ The following IAM policy provides the minimum permissions required for the Dynam
 
 If you enable Amazon S3 offloading, add the following statement to the policy:
 
-```
+```json
 {
   "Effect": "Allow",
   "Action": [
@@ -220,7 +220,7 @@ If you enable Amazon S3 offloading, add the following statement to the policy:
 
 For asynchronous applications, use the async methods provided by the checkpoint saver:
 
-```
+```python
 import asyncio
 from langgraph.graph import StateGraph
 from langgraph_checkpoint_aws import DynamoDBSaver

@@ -26,9 +26,9 @@ For more information about certificate rotation, see [Rotating your SSL/TLS cert
 ## Determining whether any applications are connecting to your MySQL DB instance using SSL
 <a name="ssl-certificate-rotation-mysql.determining-server"></a>
 
-If you are using Amazon RDS for MySQL version 5.7, 8.0, or 8.4 and the Performance Schema is enabled, run the following query to check if connections are using SSL/TLS. For information about enabling the Performance Schema, see [ Performance Schema quick start](https://dev.mysql.com/doc/refman/8.0/en/performance-schema-quick-start.html) in the MySQL documentation.
+If you are using Amazon RDS for MySQL version 5.7, 8.0, 8.4, or 9.7 and the Performance Schema is enabled, run the following query to check if connections are using SSL/TLS. For information about enabling the Performance Schema, see [ Performance Schema quick start](https://dev.mysql.com/doc/refman/8.0/en/performance-schema-quick-start.html) in the MySQL documentation.
 
-```
+```sql
 mysql> SELECT id, user, host, connection_type
        FROM performance_schema.threads pst
        INNER JOIN information_schema.processlist isp
@@ -37,7 +37,7 @@ mysql> SELECT id, user, host, connection_type
 
 In this sample output, you can see both your own session (`admin`) and an application logged in as `webapp1` are using SSL.
 
-```
+```sql
 +----+-----------------+------------------+-----------------+
 | id | user            | host             | connection_type |
 +----+-----------------+------------------+-----------------+
@@ -60,7 +60,7 @@ The following example with MySQL Connector/J 8.0 shows one way to check an appli
 
 When using the MySQL Connector/J 8.0, an SSL connection requires verification against the DB server certificate if your connection properties have `sslMode` set to `VERIFY_CA` or `VERIFY_IDENTITY`, as in the following example.
 
-```
+```jdbc
 Properties properties = new Properties();
 properties.setProperty("sslMode", "VERIFY_IDENTITY");
 properties.put("user", DB_USER);
@@ -114,7 +114,7 @@ Specify a password other than the prompt shown here as a security best practice.
 
 The following code example shows how to set up the SSL connection that validates the server certificate using JDBC.
 
-```
+```java
 public class MySQLSSLTest {
 
         private static final String DB_USER = "{{username}}";

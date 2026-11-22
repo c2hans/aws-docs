@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-timebasedforecastproperties-syntax.json"></a>
 
-```
+```json
 {
   "[LowerBoundary](#cfn-quicksight-template-timebasedforecastproperties-lowerboundary)" : {{Number}},
   "[PeriodsBackward](#cfn-quicksight-template-timebasedforecastproperties-periodsbackward)" : {{Number}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-timebasedforecastproperties-syntax.yaml"></a>
 
-```
+```yaml
   [LowerBoundary](#cfn-quicksight-template-timebasedforecastproperties-lowerboundary): {{Number}}
   [PeriodsBackward](#cfn-quicksight-template-timebasedforecastproperties-periodsbackward): {{Number}}
   [PeriodsForward](#cfn-quicksight-template-timebasedforecastproperties-periodsforward): {{Number}}

@@ -66,7 +66,7 @@ If it appears that your instance is stuck terminating, you can force your instan
 **To force terminate an instance**
 Use the [terminate-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/terminate-instances.html) command with the `--force` option.
 
-```
+```bash
 aws ec2 terminate-instances \
     --instance-ids {{i-1234567890abcdef0}} \
     --force
@@ -74,7 +74,7 @@ aws ec2 terminate-instances \
 
 To bypass the graceful OS shutdown during force terminate, include the `--skip-os-shutdown` option.
 
-```
+```bash
 aws ec2 terminate-instances \
     --instance-ids {{i-1234567890abcdef0}} \
     --force \
@@ -87,7 +87,7 @@ aws ec2 terminate-instances \
 **To force terminate an instance**
 Use the [Remove-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Remove-EC2Instance.html) cmdlet and set `-Enforce` to `true`.
 
-```
+```powershell
 Remove-EC2Instance `
     -InstanceId {{i-1234567890abcdef0}} `
     -Enforce $true
@@ -95,7 +95,7 @@ Remove-EC2Instance `
 
 To bypass the graceful OS shutdown during force terminate, include `-SkipOsShutdown $true`.
 
-```
+```powershell
 Remove-EC2Instance `
     -InstanceId {{i-1234567890abcdef0}} `
     -Enforce $true `

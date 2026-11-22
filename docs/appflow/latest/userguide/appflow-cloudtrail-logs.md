@@ -36,7 +36,7 @@ A trail is a configuration that enables delivery of events as log files to an S3
 
 The following is an example of a CloudTrail log entry generated when you view the details of a flow using the Amazon AppFlow console. Amazon AppFlow does not log the response elements, as they could contain sensitive data.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {

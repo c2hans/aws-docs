@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/burstable-perfor
 The steps for launching, monitoring, and modifying burstable performance instances (T instances) are similar. The key difference is the default credit specification when they launch.
 
 Each T instance family comes with the following *default credit specification*:
-+ T8i, T4g, T3a, and T3 instances launch as `unlimited`
++ T9g, T8i, T4g, T3a, and T3 instances launch as `unlimited`
 + T3 instances on a Dedicated Host can only launch as `standard`
 + T2 instances launch as `standard`
 
@@ -45,7 +45,7 @@ The following procedures describe how to use the EC2 console or the AWS CLI. For
 **To set the credit specification of an instance at launch**
 Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command with the `--credit-specification` option.
 
-```
+```bash
 --credit-specification CpuCredits=unlimited
 ```
 
@@ -55,7 +55,7 @@ Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run
 **To set the credit specification of an instance at launch**
 Use the [New-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Instance.html) cmdlet with the `-CreditSpecification_CpuCredit` parameter.
 
-```
+```powershell
 -CreditSpecification_CpuCredit unlimited
 ```
 
@@ -90,7 +90,7 @@ You must use a *launch template* for launching instances as `unlimited` in an Au
 **To create a launch template that sets the credit specification**
 Use the [create-launch-template](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-launch-template.html) command.
 
-```
+```bash
 aws ec2 create-launch-template \
     --launch-template-name {{my-launch-template}} \
     --version-description {{FirstVersion}} \
@@ -103,7 +103,7 @@ aws ec2 create-launch-template \
 **To create a launch template that sets the credit specification**
 Use the [New-EC2LaunchTemplate](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2LaunchTemplate.html) cmdlet. Define the credit specification for the launch template data as follows.
 
-```
+```powershell
 $creditSpec = New-Object Amazon.EC2.Model.CreditSpecificationRequest
 $creditSpec.CpuCredits = "unlimited"
 $launchTemplateData = New-Object Amazon.EC2.Model.RequestLaunchTemplateData
@@ -194,7 +194,7 @@ Note that in `unlimited` mode, an instance can spend surplus credits, which migh
 **To get the credit specification of an instance**
 Use the [describe-instance-credit-specifications](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-credit-specifications.html) command. If you do not specify an instance ID, all instances with the credit specification of `unlimited` are returned. The output would also include instances that were previously configured with the `unlimited` credit specification. For example, if you resize a T3 instance to an M4 instance, while it is configured as `unlimited`, Amazon EC2 returns the M4 instance.
 
-```
+```bash
 aws ec2 describe-instance-credit-specifications \
     --instance-id {{i-1234567890abcdef0}} \
     --query InstanceCreditSpecifications[].CpuCredits \
@@ -203,14 +203,14 @@ aws ec2 describe-instance-credit-specifications \
 
 The following is example output.
 
-```
+```bash
 unlimited
 ```
 
 **To set the credit specification of an instance**
 Use the [modify-instance-credit-specification](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-instance-credit-specification.html) command.
 
-```
+```bash
 aws ec2 modify-instance-credit-specification \
     --region {{us-east-1}} \
     --instance-credit-specification "InstanceId={{i-1234567890abcdef0}},CpuCredits={{unlimited}}"
@@ -222,21 +222,21 @@ aws ec2 modify-instance-credit-specification \
 **To get the credit specification of an instance**
 Use the [Get-EC2CreditSpecification](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2CreditSpecification.html) cmdlet.
 
-```
+```powershell
 (Get-EC2CreditSpecification `
     -InstanceId {{i-1234567890abcdef0}}).CpuCredits
 ```
 
 The following is example output.
 
-```
+```bash
 unlimited
 ```
 
 **To set the credit specification of an instance**
 Use the [Edit-EC2InstanceCreditSpecification](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2InstanceCreditSpecification.html) cmdlet.
 
-```
+```powershell
 Edit-EC2InstanceCreditSpecification `
     -Region {{us-east-1}} `
     -InstanceCreditSpecification @({InstanceId="{{i-1234567890abcdef0}}" CpuCredits="unlimited"})
@@ -277,7 +277,7 @@ The default credit specification for an instance family can be modified only onc
 **To get the default credit specification**
 Use the [get-default-credit-specification](https://docs.aws.amazon.com/cli/latest/reference/ec2/get-default-credit-specification.html) command.
 
-```
+```bash
 aws ec2 get-default-credit-specification \
     --region {{us-east-1}} \
     --instance-family {{t2}} \
@@ -287,14 +287,14 @@ aws ec2 get-default-credit-specification \
 
 The following is example output.
 
-```
+```bash
 standard
 ```
 
 **To set the default credit specification**
 Use the [modify-default-credit-specification](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-default-credit-specification.html) command. The following example sets the value to `unlimited`.
 
-```
+```bash
 aws ec2 modify-default-credit-specification \
     --region {{us-east-1}} \
     --instance-family {{t2}} \
@@ -307,7 +307,7 @@ aws ec2 modify-default-credit-specification \
 **To get the default credit specification**
 Use the [Get-EC2DefaultCreditSpecification](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2DefaultCreditSpecification.html) cmdlet.
 
-```
+```powershell
 (Get-EC2DefaultCreditSpecification `
     -Region {{us-east-1}} `
     -InstanceFamily {{t2}}).CpuCredits
@@ -315,14 +315,14 @@ Use the [Get-EC2DefaultCreditSpecification](https://docs.aws.amazon.com/powershe
 
 The following is example output.
 
-```
+```bash
 standard
 ```
 
 **To set the default credit specification**
 Use the [Edit-EC2DefaultCreditSpecification](https://docs.aws.amazon.com/powershell/latest/reference/items/Edit-EC2DefaultCreditSpecification.html) cmdlet. The following example sets the value to `unlimited`.
 
-```
+```powershell
 Edit-EC2DefaultCreditSpecification `
     -Region {{us-east-1}} `
     -InstanceFamily {{t2}} `

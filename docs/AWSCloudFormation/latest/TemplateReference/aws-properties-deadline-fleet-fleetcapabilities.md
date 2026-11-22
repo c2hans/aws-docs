@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-deadline-fleet-fleetcapabilities-syntax.json"></a>
 
-```
+```json
 {
   "[Amounts](#cfn-deadline-fleet-fleetcapabilities-amounts)" : {{[ FleetAmountCapability, ... ]}},
   "[Attributes](#cfn-deadline-fleet-fleetcapabilities-attributes)" : {{[ FleetAttributeCapability, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-deadline-fleet-fleetcapabilities-syntax.yaml"></a>
 
-```
+```yaml
   [Amounts](#cfn-deadline-fleet-fleetcapabilities-amounts): {{
     - FleetAmountCapability}}
   [Attributes](#cfn-deadline-fleet-fleetcapabilities-attributes): {{

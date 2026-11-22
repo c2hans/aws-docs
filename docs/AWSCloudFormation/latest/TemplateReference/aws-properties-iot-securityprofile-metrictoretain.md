@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-securityprofile-metrictoretain-syntax.json"></a>
 
-```
+```json
 {
   "[ExportMetric](#cfn-iot-securityprofile-metrictoretain-exportmetric)" : {{Boolean}},
   "[Metric](#cfn-iot-securityprofile-metrictoretain-metric)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-securityprofile-metrictoretain-syntax.yaml"></a>
 
-```
+```yaml
   [ExportMetric](#cfn-iot-securityprofile-metrictoretain-exportmetric): {{Boolean}}
   [Metric](#cfn-iot-securityprofile-metrictoretain-metric): {{String}}
   [MetricDimension](#cfn-iot-securityprofile-metrictoretain-metricdimension): {{

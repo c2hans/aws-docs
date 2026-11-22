@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apigateway-method-methodresponse-syntax.json"></a>
 
-```
+```json
 {
   "[ResponseModels](#cfn-apigateway-method-methodresponse-responsemodels)" : {{{{{Key}}: {{Value}}, ...}}},
   "[ResponseParameters](#cfn-apigateway-method-methodresponse-responseparameters)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apigateway-method-methodresponse-syntax.yaml"></a>
 
-```
+```yaml
   [ResponseModels](#cfn-apigateway-method-methodresponse-responsemodels): {{
     {{Key}}: {{Value}}}}
   [ResponseParameters](#cfn-apigateway-method-methodresponse-responseparameters): {{

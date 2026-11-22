@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-route53profiles-profileresourceassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Route53Profiles::ProfileResourceAssociation",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-route53profiles-profileresourceassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53Profiles::ProfileResourceAssociation
 Properties:
   [Name](#cfn-route53profiles-profileresourceassociation-name): {{String}}

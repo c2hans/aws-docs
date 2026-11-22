@@ -63,7 +63,7 @@ Enables CORS by returning the correct headers.
 #### POST schema
 <a name="backend-appid-storage-request-body-post-example"></a>
 
-```
+```json
 {
   "resourceConfig": {
     "bucketName": "string",
@@ -88,7 +88,7 @@ Enables CORS by returning the correct headers.
 #### BackendStorageRespObj schema
 <a name="backend-appid-storage-response-body-backendstoragerespobj-example"></a>
 
-```
+```json
 {
   "jobId": "string",
   "appId": "string",
@@ -100,7 +100,7 @@ Enables CORS by returning the correct headers.
 #### BadRequestException schema
 <a name="backend-appid-storage-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -109,7 +109,7 @@ Enables CORS by returning the correct headers.
 #### NotFoundException schema
 <a name="backend-appid-storage-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -119,7 +119,7 @@ Enables CORS by returning the correct headers.
 #### LimitExceededException schema
 <a name="backend-appid-storage-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"
@@ -129,7 +129,7 @@ Enables CORS by returning the correct headers.
 #### InternalServiceException schema
 <a name="backend-appid-storage-response-body-internalserviceexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

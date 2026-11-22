@@ -12,7 +12,7 @@ Athena uses the `com.esri.json.hadoop.EnclosedEsriJsonInputFormat` to convert th
 
 The following code example creates a table called `earthquakes`:
 
-```
+```sql
 CREATE external TABLE earthquakes
 (
  earthquake_date string,
@@ -34,7 +34,7 @@ STORED AS TEXTFILE LOCATION 's3://amzn-s3-demo-bucket/my-query-log/csv/';
 
 The following code example creates a table called `counties`:
 
-```
+```sql
 CREATE external TABLE IF NOT EXISTS counties
  (
  Name string,
@@ -48,7 +48,7 @@ LOCATION 's3://amzn-s3-demo-bucket/my-query-log/json/';
 
 The following example query uses the `CROSS JOIN` function on the `counties` and `earthquake` tables. The example uses `ST_CONTAINS` to query for counties whose boundaries include earthquake locations, which are specified with `ST_POINT`. The query groups such counties by name, orders them by count, and returns them in descending order.
 
-```
+```sql
 SELECT counties.name,
         COUNT(*) cnt
 FROM counties

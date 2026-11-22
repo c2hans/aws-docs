@@ -16,7 +16,7 @@ Before you enable Action Logs, verify that your IAM identity has the required pe
 
 Your IAM identity must have the following permissions to enable and manage Action Logs:
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [
@@ -35,7 +35,7 @@ Your IAM identity must have the following permissions to enable and manage Actio
 
 The destination CloudWatch Logs log group must have a resource policy that allows the `delivery.logs.amazonaws.com` service to write logs. Add the following statement to the log group resource policy:
 
-```
+```json
 {
     "Effect": "Allow",
     "Principal": {
@@ -82,7 +82,7 @@ You can enable Action Logs programmatically by using the CloudWatch Logs vended 
 
 1. Register the delivery source by running the following command:
 
-   ```
+   ```bash
    aws logs put-delivery-source \
        --name {{my-ecs-action-logs}} \
        --resource-arn arn:aws:ecs:{{region}}:{{account-id}}:cluster/{{cluster-name}} \
@@ -91,7 +91,7 @@ You can enable Action Logs programmatically by using the CloudWatch Logs vended 
 
 1. Configure the delivery destination by running the following command:
 
-   ```
+   ```bash
    aws logs put-delivery-destination \
        --name {{my-ecs-logs-destination}} \
        --output-format json \
@@ -100,7 +100,7 @@ You can enable Action Logs programmatically by using the CloudWatch Logs vended 
 
 1. Create the delivery to link the source to the destination by running the following command:
 
-   ```
+   ```bash
    aws logs create-delivery \
        --delivery-source-name {{my-ecs-action-logs}} \
        --delivery-destination-arn arn:aws:logs:{{region}}:{{account-id}}:delivery-destination:{{my-ecs-logs-destination}}
@@ -128,7 +128,7 @@ You can delete Action Logs by using the AWS CLI or the Amazon ECS console.
 
 To delete Action Logs, your IAM identity must have the following additional permissions:
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [
@@ -144,21 +144,21 @@ To delete Action Logs, your IAM identity must have the following additional perm
 
 1. Delete the delivery by running the following command:
 
-   ```
+   ```bash
    aws logs delete-delivery \
        --delivery-id {{delivery-id}}
    ```
 
 1. Delete the delivery source by running the following command:
 
-   ```
+   ```bash
    aws logs delete-delivery-source \
        --name {{my-ecs-action-logs}}
    ```
 
 1. Delete the delivery destination by running the following command:
 
-   ```
+   ```bash
    aws logs delete-delivery-destination \
        --name {{my-ecs-logs-destination}}
    ```

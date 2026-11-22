@@ -20,7 +20,7 @@ For instructions on how to configure Amazon S3 Event Notifications, see [Enablin
 
 The following is an example of a message that Amazon S3 sends to publish an `s3:LifecycleExpiration:Delete` event. For more information, see [Event message structure](notification-content-structure.md).
 
-```
+```json
  1. {
  2.    "Records":[
  3.       {

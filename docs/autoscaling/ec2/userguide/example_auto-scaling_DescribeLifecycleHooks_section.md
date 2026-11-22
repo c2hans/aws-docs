@@ -50,7 +50,7 @@ For more information, see [Amazon EC2 Auto Scaling lifecycle hooks](https://docs
 **Tools for PowerShell V4**
 **Example 1: This example describes the specified lifecycle hook.**
 
-```
+```powershell
 Get-ASLifecycleHook -AutoScalingGroupName my-asg -LifecycleHookName myLifecycleHook
 ```
 **Output:**
@@ -68,12 +68,12 @@ RoleARN               : arn:aws:iam::123456789012:role/my-iam-role
 ```
 **Example 2: This example describes all lifecycle hooks for the specified Auto Scaling group.**
 
-```
+```powershell
 Get-ASLifecycleHook -AutoScalingGroupName my-asg
 ```
 **Example 3: This example describes all lifecycle hooks for all your Auto Scaling groups.**
 
-```
+```powershell
 Get-ASLifecycleHook
 ```
 +  For API details, see [DescribeLifecycleHooks](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -81,7 +81,7 @@ Get-ASLifecycleHook
 **Tools for PowerShell V5**
 **Example 1: This example describes the specified lifecycle hook.**
 
-```
+```powershell
 Get-ASLifecycleHook -AutoScalingGroupName my-asg -LifecycleHookName myLifecycleHook
 ```
 **Output:**
@@ -99,12 +99,12 @@ RoleARN               : arn:aws:iam::123456789012:role/my-iam-role
 ```
 **Example 2: This example describes all lifecycle hooks for the specified Auto Scaling group.**
 
-```
+```powershell
 Get-ASLifecycleHook -AutoScalingGroupName my-asg
 ```
 **Example 3: This example describes all lifecycle hooks for all your Auto Scaling groups.**
 
-```
+```powershell
 Get-ASLifecycleHook
 ```
 +  For API details, see [DescribeLifecycleHooks](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

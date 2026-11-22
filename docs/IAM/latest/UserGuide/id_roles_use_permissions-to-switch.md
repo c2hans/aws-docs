@@ -48,7 +48,7 @@ The following example shows a policy that lets the user assume roles in only one
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {

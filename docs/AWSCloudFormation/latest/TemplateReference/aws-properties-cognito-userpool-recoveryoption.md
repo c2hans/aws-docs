@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpool-recoveryoption-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-cognito-userpool-recoveryoption-name)" : {{String}},
   "[Priority](#cfn-cognito-userpool-recoveryoption-priority)" : {{Integer}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpool-recoveryoption-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-cognito-userpool-recoveryoption-name): {{String}}
   [Priority](#cfn-cognito-userpool-recoveryoption-priority): {{Integer}}
 ```

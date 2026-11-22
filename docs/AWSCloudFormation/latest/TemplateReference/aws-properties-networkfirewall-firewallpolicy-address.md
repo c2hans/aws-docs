@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkfirewall-firewallpolicy-address-syntax.json"></a>
 
-```
+```json
 {
   "[AddressDefinition](#cfn-networkfirewall-firewallpolicy-address-addressdefinition)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkfirewall-firewallpolicy-address-syntax.yaml"></a>
 
-```
+```yaml
   [AddressDefinition](#cfn-networkfirewall-firewallpolicy-address-addressdefinition): {{String}}
 ```
 

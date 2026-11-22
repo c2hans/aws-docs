@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityhub-automationrule-relatedfinding-syntax.json"></a>
 
-```
+```json
 {
   "[Id](#cfn-securityhub-automationrule-relatedfinding-id)" : {{String}},
   "[ProductArn](#cfn-securityhub-automationrule-relatedfinding-productarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityhub-automationrule-relatedfinding-syntax.yaml"></a>
 
-```
+```yaml
   [Id](#cfn-securityhub-automationrule-relatedfinding-id): {{String}}
   [ProductArn](#cfn-securityhub-automationrule-relatedfinding-productarn): {{String}}
 ```

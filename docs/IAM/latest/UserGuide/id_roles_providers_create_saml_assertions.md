@@ -35,7 +35,7 @@ For a list of possible {{region-code}} values, see the **Region** column in [AWS
 
 The following excerpt shows an example. Substitute your own values for the marked ones.
 
-```
+```xml
 <Subject>
   <NameID Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent">{{_cbb88bf52c2510eabe00c1642d4643f41430fe25e3}}</NameID>
   <SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
@@ -54,7 +54,7 @@ The `saml:aud` context key comes from the SAML *recipient* attribute because it 
 
 To pass attributes as session tags, include the `AttributeValue` element that specifies the value of the tag. For example, to pass the tag key-value pairs `Project` = `Marketing` and `CostCenter` = `12345`, use the following attribute. Include a separate `Attribute` element for each tag.
 
-```
+```xml
 <Attribute Name="https://aws.amazon.com/SAML/Attributes/PrincipalTag:Project">
   <AttributeValue>Marketing</AttributeValue>
 </Attribute>
@@ -65,7 +65,7 @@ To pass attributes as session tags, include the `AttributeValue` element that sp
 
 To set the tags above as transitive, include another `Attribute` element with the `Name` attribute set to `https://aws.amazon.com/SAML/Attributes/TransitiveTagKeys`. This is an optional multivalued attribute that sets your session tags as transitive. Transitive tags persist when you use the SAML session to assume another role in AWS. This is known as [role chaining](id_roles.md#iam-term-role-chaining). For example, to set both the `Principal` and `CostCenter` tags as transitive, use the following attribute to specify the keys.
 
-```
+```xml
 <Attribute Name="https://aws.amazon.com/SAML/Attributes/TransitiveTagKeys">
   <AttributeValue>Project</AttributeValue>
   <AttributeValue>CostCenter</AttributeValue>
@@ -80,7 +80,7 @@ You can use an `Attribute` element with the `Name` attribute set to `https://aws
 **Important**
 The value of the `Name` attribute in the `Attribute` tag is case-sensitive. It must be set to `https://aws.amazon.com/SAML/Attributes/Role` exactly.
 
-```
+```xml
 <Attribute Name="https://aws.amazon.com/SAML/Attributes/Role">
   <AttributeValue>arn:aws:iam::{{account-number}}:role/{{role-name1}},arn:aws:iam::{{account-number}}:saml-provider/{{provider-name}}</AttributeValue>
   <AttributeValue>arn:aws:iam::{{account-number}}:role/{{role-name2}},arn:aws:iam::{{account-number}}:saml-provider/{{provider-name}}</AttributeValue>
@@ -96,7 +96,7 @@ You can use an `Attribute` element with the `Name` attribute set to `https://aws
 **Important**
 The value of the `Name` attribute in the `Attribute` tag is case-sensitive. It must be set to `https://aws.amazon.com/SAML/Attributes/RoleSessionName` exactly.
 
-```
+```xml
 <Attribute Name="https://aws.amazon.com/SAML/Attributes/RoleSessionName">
   <AttributeValue>{{user-id-name}}</AttributeValue>
 </Attribute>
@@ -116,7 +116,7 @@ When you enable console sessions with an extended duration the risk of compromis
 **Important**
 The value of the `Name` attribute in the `Attribute` tag is case-sensitive. It must be set to `https://aws.amazon.com/SAML/Attributes/SessionDuration` exactly.
 
-```
+```xml
 <Attribute Name="https://aws.amazon.com/SAML/Attributes/SessionDuration">
   <AttributeValue>1800</AttributeValue>
 </Attribute>
@@ -134,7 +134,7 @@ If your SAML assertion is configured to use the [`SourceIdentity`](#saml_sourcei
 
 To pass a source identity attribute, include the `AttributeValue` element that specifies the value of the source identity. For example, to pass the source identity `Diego` use the following attribute.
 
-```
+```xml
 <Attribute Name="https://aws.amazon.com/SAML/Attributes/SourceIdentity">
   <AttributeValue>Diego</AttributeValue>
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-agentregistry-registryrecord-sourceonlydescriptorsourcefromurl-syntax.json"></a>
 
-```
+```json
 {
   "[Url](#cfn-agentregistry-registryrecord-sourceonlydescriptorsourcefromurl-url)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-agentregistry-registryrecord-sourceonlydescriptorsourcefromurl-syntax.yaml"></a>
 
-```
+```yaml
   [Url](#cfn-agentregistry-registryrecord-sourceonlydescriptorsourcefromurl-url): {{String}}
 ```
 

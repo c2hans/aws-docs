@@ -67,7 +67,7 @@ To restore an Amazon EC2 instance, you must launch a new instance.
 
 ****
 
-      ```
+      ```json
       {
         "Version":"2012-10-17",
         "Statement":[

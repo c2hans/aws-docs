@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fms-applicationslist-app-syntax.json"></a>
 
-```
+```json
 {
   "[AppName](#cfn-fms-applicationslist-app-appname)" : {{String}},
   "[Port](#cfn-fms-applicationslist-app-port)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fms-applicationslist-app-syntax.yaml"></a>
 
-```
+```yaml
   [AppName](#cfn-fms-applicationslist-app-appname): {{String}}
   [Port](#cfn-fms-applicationslist-app-port): {{Integer}}
   [Protocol](#cfn-fms-applicationslist-app-protocol): {{String}}

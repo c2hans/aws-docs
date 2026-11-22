@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-fsx-datarepositoryassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::FSx::DataRepositoryAssociation",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-fsx-datarepositoryassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::FSx::DataRepositoryAssociation
 Properties:
   [BatchImportMetaDataOnCreate](#cfn-fsx-datarepositoryassociation-batchimportmetadataoncreate): {{Boolean}}
@@ -149,7 +149,7 @@ The following examples create a data repository association (DRA) that links an 
 #### JSON
 <a name="aws-resource-fsx-datarepositoryassociation--examples--Create_an_Amazon_FSx_for_Lustre_data_repository_association--json"></a>
 
-```
+```json
 {
     "Description": "FSx DRA with all properties.",
     "Parameters": {
@@ -223,7 +223,7 @@ The following examples create a data repository association (DRA) that links an 
 #### YAML
 <a name="aws-resource-fsx-datarepositoryassociation--examples--Create_an_Amazon_FSx_for_Lustre_data_repository_association--yaml"></a>
 
-```
+```yaml
 Description: "FSx DRA with all properties."
 Parameters:
   FSId:

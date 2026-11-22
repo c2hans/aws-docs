@@ -57,7 +57,7 @@ Use one of the following procedures for installing EC2 Instance Connect, dependi
 
    Replace the example values in the following command with your values. Use the SSH key pair that was assigned to your instance when you launched it and the default username of the AMI that you used to launch your instance. For Amazon Linux 2, the default username is `ec2-user`.
 
-   ```
+   ```bash
    $ ssh -i {{my_ec2_private_key}}.pem {{ec2-user}}@{{ec2-a-b-c-d.us-west-2.compute.amazonaws.com}}
    ```
 
@@ -65,13 +65,13 @@ Use one of the following procedures for installing EC2 Instance Connect, dependi
 
 1. Install the EC2 Instance Connect package on your instance.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo yum install ec2-instance-connect
    ```
 
    You should see three new scripts in the `/opt/aws/bin/` folder:
 
-   ```
+   ```bash
    eic_curl_authorized_keys
    eic_parse_authorized_keys
    eic_run_authorized_keys
@@ -79,13 +79,13 @@ Use one of the following procedures for installing EC2 Instance Connect, dependi
 
 1. (Optional) Verify that EC2 Instance Connect was successfully installed on your instance.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo less /etc/ssh/sshd_config
    ```
 
    EC2 Instance Connect was successfully installed if the `AuthorizedKeysCommand` and `AuthorizedKeysCommandUser` lines contain the following values:
 
-   ```
+   ```bash
    AuthorizedKeysCommand /opt/aws/bin/eic_run_authorized_keys %u %f
    AuthorizedKeysCommandUser ec2-instance-connect
    ```
@@ -103,7 +103,7 @@ If you previously configured `AuthorizedKeysCommand` and `AuthorizedKeysCommandU
 
    Replace the example values in the following command with your values. Use the SSH key pair that was assigned to your instance when you launched it and the default username of the AMI that you used to launch your instance. For CentOS, the default username is `centos` or `ec2-user`.
 
-   ```
+   ```bash
    $ ssh -i {{my_ec2_private_key}}.pem {{centos}}@{{ec2-a-b-c-d.us-west-2.compute.amazonaws.com}}
    ```
 
@@ -114,13 +114,13 @@ If you previously configured `AuthorizedKeysCommand` and `AuthorizedKeysCommandU
    If you're not using a proxy, you can skip this step.
    + For an HTTP proxy server, run the following commands:
 
-     ```
+     ```bash
      $ export http_proxy=http://hostname:port
      $ export https_proxy=http://hostname:port
      ```
    + For an HTTPS proxy server, run the following commands:
 
-     ```
+     ```bash
      $ export http_proxy=https://hostname:port
      $ export https_proxy=https://hostname:port
      ```
@@ -134,7 +134,7 @@ If you previously configured `AuthorizedKeysCommand` and `AuthorizedKeysCommandU
 
      Intel/AMD (x86\_64)
 
-     ```
+     ```bash
      [ec2-user ~]$ mkdir /tmp/ec2-instance-connect
      [ec2-user ~]$ curl https://amazon-ec2-instance-connect-us-west-2.s3.us-west-2.amazonaws.com/latest/linux_amd64/ec2-instance-connect-2.0.0-6.rhel9.x86_64.rpm -o /tmp/ec2-instance-connect/ec2-instance-connect.rpm
      [ec2-user ~]$ curl https://amazon-ec2-instance-connect-us-west-2.s3.us-west-2.amazonaws.com/latest/linux_amd64/ec2-instance-connect-selinux-2.0.0-6.noarch.rpm -o /tmp/ec2-instance-connect/ec2-instance-connect-selinux.rpm
@@ -143,7 +143,7 @@ If you previously configured `AuthorizedKeysCommand` and `AuthorizedKeysCommandU
 
      ARM (AArch64)
 
-     ```
+     ```bash
      [ec2-user ~]$ mkdir /tmp/ec2-instance-connect
      [ec2-user ~]$ curl https://amazon-ec2-instance-connect-us-west-2.s3.us-west-2.amazonaws.com/latest/linux_arm64/ec2-instance-connect-2.0.0-6.rhel9.aarch64.rpm -o /tmp/ec2-instance-connect/ec2-instance-connect.rpm
      [ec2-user ~]$ curl https://amazon-ec2-instance-connect-us-west-2.s3.us-west-2.amazonaws.com/latest/linux_arm64/ec2-instance-connect-selinux-2.0.0-6.noarch.rpm -o /tmp/ec2-instance-connect/ec2-instance-connect-selinux.rpm
@@ -153,7 +153,7 @@ If you previously configured `AuthorizedKeysCommand` and `AuthorizedKeysCommandU
 
      Intel/AMD (x86\_64)
 
-     ```
+     ```bash
      [ec2-user ~]$ mkdir /tmp/ec2-instance-connect
      [ec2-user ~]$ curl https://amazon-ec2-instance-connect-us-west-2.s3.us-west-2.amazonaws.com/latest/linux_amd64/ec2-instance-connect-2.0.0-6.rhel10.x86_64.rpm -o /tmp/ec2-instance-connect/ec2-instance-connect.rpm
      [ec2-user ~]$ curl https://amazon-ec2-instance-connect-us-west-2.s3.us-west-2.amazonaws.com/latest/linux_amd64/ec2-instance-connect-selinux-2.0.0-6.noarch.rpm -o /tmp/ec2-instance-connect/ec2-instance-connect-selinux.rpm
@@ -162,7 +162,7 @@ If you previously configured `AuthorizedKeysCommand` and `AuthorizedKeysCommandU
 
      ARM (AArch64)
 
-     ```
+     ```bash
      [ec2-user ~]$ mkdir /tmp/ec2-instance-connect
      [ec2-user ~]$ curl https://amazon-ec2-instance-connect-us-west-2.s3.us-west-2.amazonaws.com/latest/linux_arm64/ec2-instance-connect-2.0.0-6.rhel10.aarch64.rpm -o /tmp/ec2-instance-connect/ec2-instance-connect.rpm
      [ec2-user ~]$ curl https://amazon-ec2-instance-connect-us-west-2.s3.us-west-2.amazonaws.com/latest/linux_arm64/ec2-instance-connect-selinux-2.0.0-6.noarch.rpm -o /tmp/ec2-instance-connect/ec2-instance-connect-selinux.rpm
@@ -171,19 +171,19 @@ If you previously configured `AuthorizedKeysCommand` and `AuthorizedKeysCommandU
 
    You should see the following new script in the `/opt/aws/bin/` folder:
 
-   ```
+   ```bash
    eic_run_authorized_keys
    ```
 
 1. (Optional) Verify that EC2 Instance Connect was successfully installed on your instance.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo less /etc/ssh/sshd_config.d/60-ec2-instance-connect.conf
    ```
 
    EC2 Instance Connect was successfully installed if the `AuthorizedKeysCommand` and `AuthorizedKeysCommandUser` lines contain the following values:
 
-   ```
+   ```bash
    AuthorizedKeysCommand /opt/aws/bin/eic_run_authorized_keys %u %f
    AuthorizedKeysCommandUser ec2-instance-connect
    ```
@@ -201,7 +201,7 @@ If you previously configured `AuthorizedKeysCommand` and `AuthorizedKeysCommandU
 
    Replace the example values in the following command with your values. Use the SSH key pair that was assigned to your instance when you launched it and the default username of the AMI that you used to launch your instance. For macOS instances, the default username is `ec2-user`.
 
-   ```
+   ```bash
    $ ssh -i {{my_ec2_private_key}}.pem {{ec2-user}}@{{ec2-a-b-c-d.us-west-2.compute.amazonaws.com}}
    ```
 
@@ -209,31 +209,31 @@ If you previously configured `AuthorizedKeysCommand` and `AuthorizedKeysCommandU
 
 1. Update Homebrew using the following command. The update will list the software that Homebrew knows about. The EC2 Instance Connect package is provided through Homebrew on macOS instances. For more information, see [Update the operating system and software on Amazon EC2 Mac instances](mac-instance-updates.md).
 
-   ```
+   ```bash
    [ec2-user ~]$ brew update
    ```
 
 1. Install the EC2 Instance Connect package on your instance. This will install the software and configure sshd to use it.
 
-   ```
+   ```bash
    [ec2-user ~]$ brew install ec2-instance-connect
    ```
 
    You should see the following new script in the `/opt/aws/bin/` folder:
 
-   ```
+   ```bash
    eic_run_authorized_keys
    ```
 
 1. (Optional) Verify that EC2 Instance Connect was successfully installed on your instance.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo less /etc/ssh/sshd_config.d/60-ec2-instance-connect.conf
    ```
 
    EC2 Instance Connect was successfully installed if the `AuthorizedKeysCommand` and `AuthorizedKeysCommandUser` lines contain the following values:
 
-   ```
+   ```bash
    AuthorizedKeysCommand /opt/aws/bin/eic_run_authorized_keys %u %f
    AuthorizedKeysCommandUser ec2-instance-connect
    ```
@@ -251,7 +251,7 @@ If you previously configured `AuthorizedKeysCommand` and `AuthorizedKeysCommandU
 
    Replace the example values in the following command with your values. Use the SSH key pair that was assigned to your instance when you launched it and the default username of the AMI that you used to launch your instance. For RHEL, the default username is `ec2-user` or `root`.
 
-   ```
+   ```bash
    $ ssh -i {{my_ec2_private_key}}.pem {{ec2-user}}@{{ec2-a-b-c-d.us-west-2.compute.amazonaws.com}}
    ```
 
@@ -262,13 +262,13 @@ If you previously configured `AuthorizedKeysCommand` and `AuthorizedKeysCommandU
    If you're not using a proxy, you can skip this step.
    + For an HTTP proxy server, run the following commands:
 
-     ```
+     ```bash
      $ export http_proxy=http://hostname:port
      $ export https_proxy=http://hostname:port
      ```
    + For an HTTPS proxy server, run the following commands:
 
-     ```
+     ```bash
      $ export http_proxy=https://hostname:port
      $ export https_proxy=https://hostname:port
      ```
@@ -282,7 +282,7 @@ If you previously configured `AuthorizedKeysCommand` and `AuthorizedKeysCommandU
 
      Intel/AMD (x86\_64)
 
-     ```
+     ```bash
      [ec2-user ~]$ mkdir /tmp/ec2-instance-connect
      [ec2-user ~]$ curl https://amazon-ec2-instance-connect-us-west-2.s3.us-west-2.amazonaws.com/latest/linux_amd64/ec2-instance-connect-2.0.0-6.rhel8.x86_64.rpm -o /tmp/ec2-instance-connect/ec2-instance-connect.rpm
      [ec2-user ~]$ curl https://amazon-ec2-instance-connect-us-west-2.s3.us-west-2.amazonaws.com/latest/linux_amd64/ec2-instance-connect-selinux-2.0.0-6.noarch.rpm -o /tmp/ec2-instance-connect/ec2-instance-connect-selinux.rpm
@@ -291,7 +291,7 @@ If you previously configured `AuthorizedKeysCommand` and `AuthorizedKeysCommandU
 
      ARM (AArch64)
 
-     ```
+     ```bash
      [ec2-user ~]$ mkdir /tmp/ec2-instance-connect
      [ec2-user ~]$ curl https://amazon-ec2-instance-connect-us-west-2.s3.us-west-2.amazonaws.com/latest/linux_arm64/ec2-instance-connect-2.0.0-6.rhel8.aarch64.rpm -o /tmp/ec2-instance-connect/ec2-instance-connect.rpm
      [ec2-user ~]$ curl https://amazon-ec2-instance-connect-us-west-2.s3.us-west-2.amazonaws.com/latest/linux_arm64/ec2-instance-connect-selinux-2.0.0-6.noarch.rpm -o /tmp/ec2-instance-connect/ec2-instance-connect-selinux.rpm
@@ -301,7 +301,7 @@ If you previously configured `AuthorizedKeysCommand` and `AuthorizedKeysCommandU
 
      Intel/AMD (x86\_64)
 
-     ```
+     ```bash
      [ec2-user ~]$ mkdir /tmp/ec2-instance-connect
      [ec2-user ~]$ curl https://amazon-ec2-instance-connect-us-west-2.s3.us-west-2.amazonaws.com/latest/linux_amd64/ec2-instance-connect-2.0.0-6.rhel9.x86_64.rpm -o /tmp/ec2-instance-connect/ec2-instance-connect.rpm
      [ec2-user ~]$ curl https://amazon-ec2-instance-connect-us-west-2.s3.us-west-2.amazonaws.com/latest/linux_amd64/ec2-instance-connect-selinux-2.0.0-6.noarch.rpm -o /tmp/ec2-instance-connect/ec2-instance-connect-selinux.rpm
@@ -310,7 +310,7 @@ If you previously configured `AuthorizedKeysCommand` and `AuthorizedKeysCommandU
 
      ARM (AArch64)
 
-     ```
+     ```bash
      [ec2-user ~]$ mkdir /tmp/ec2-instance-connect
      [ec2-user ~]$ curl https://amazon-ec2-instance-connect-us-west-2.s3.us-west-2.amazonaws.com/latest/linux_arm64/ec2-instance-connect-2.0.0-6.rhel9.aarch64.rpm -o /tmp/ec2-instance-connect/ec2-instance-connect.rpm
      [ec2-user ~]$ curl https://amazon-ec2-instance-connect-us-west-2.s3.us-west-2.amazonaws.com/latest/linux_arm64/ec2-instance-connect-selinux-2.0.0-6.noarch.rpm -o /tmp/ec2-instance-connect/ec2-instance-connect-selinux.rpm
@@ -320,7 +320,7 @@ If you previously configured `AuthorizedKeysCommand` and `AuthorizedKeysCommandU
 
      Intel/AMD (x86\_64)
 
-     ```
+     ```bash
      [ec2-user ~]$ mkdir /tmp/ec2-instance-connect
      [ec2-user ~]$ curl https://amazon-ec2-instance-connect-us-west-2.s3.us-west-2.amazonaws.com/latest/linux_amd64/ec2-instance-connect-2.0.0-6.rhel10.x86_64.rpm -o /tmp/ec2-instance-connect/ec2-instance-connect.rpm
      [ec2-user ~]$ curl https://amazon-ec2-instance-connect-us-west-2.s3.us-west-2.amazonaws.com/latest/linux_amd64/ec2-instance-connect-selinux-2.0.0-6.noarch.rpm -o /tmp/ec2-instance-connect/ec2-instance-connect-selinux.rpm
@@ -329,7 +329,7 @@ If you previously configured `AuthorizedKeysCommand` and `AuthorizedKeysCommandU
 
      ARM (AArch64)
 
-     ```
+     ```bash
      [ec2-user ~]$ mkdir /tmp/ec2-instance-connect
      [ec2-user ~]$ curl https://amazon-ec2-instance-connect-us-west-2.s3.us-west-2.amazonaws.com/latest/linux_arm64/ec2-instance-connect-2.0.0-6.rhel10.aarch64.rpm -o /tmp/ec2-instance-connect/ec2-instance-connect.rpm
      [ec2-user ~]$ curl https://amazon-ec2-instance-connect-us-west-2.s3.us-west-2.amazonaws.com/latest/linux_arm64/ec2-instance-connect-selinux-2.0.0-6.noarch.rpm -o /tmp/ec2-instance-connect/ec2-instance-connect-selinux.rpm
@@ -338,25 +338,25 @@ If you previously configured `AuthorizedKeysCommand` and `AuthorizedKeysCommandU
 
    You should see the following new script in the `/opt/aws/bin/` folder:
 
-   ```
+   ```bash
    eic_run_authorized_keys
    ```
 
 1. (Optional) Verify that EC2 Instance Connect was successfully installed on your instance.
    + For RHEL 8:
 
-     ```
+     ```bash
      [ec2-user ~]$ sudo less /lib/systemd/system/sshd.service.d/ec2-instance-connect.conf
      ```
    + For RHEL 9 and RHEL 10:
 
-     ```
+     ```bash
      [ec2-user ~]$ sudo less /etc/ssh/sshd_config.d/60-ec2-instance-connect.conf
      ```
 
    EC2 Instance Connect was successfully installed if the `AuthorizedKeysCommand` and `AuthorizedKeysCommandUser` lines contain the following values:
 
-   ```
+   ```bash
    AuthorizedKeysCommand /opt/aws/bin/eic_run_authorized_keys %u %f
    AuthorizedKeysCommandUser ec2-instance-connect
    ```
@@ -374,7 +374,7 @@ If you previously configured `AuthorizedKeysCommand` and `AuthorizedKeysCommandU
 
    Replace the example values in the following command with your values. Use the SSH key pair that was assigned to your instance when you launched it and use the default username of the AMI that you used to launch your instance. For an Ubuntu AMI, the username is `ubuntu`.
 
-   ```
+   ```bash
    $ ssh -i {{my_ec2_private_key}}.pem {{ubuntu}}@{{ec2-a-b-c-d.us-west-2.compute.amazonaws.com}}
    ```
 
@@ -384,23 +384,23 @@ If you previously configured `AuthorizedKeysCommand` and `AuthorizedKeysCommandU
 
    Run the following commands to update all the packages on your instance.
 
-   ```
+   ```bash
    ubuntu:~$ sudo apt-get update
    ```
 
-   ```
+   ```bash
    ubuntu:~$ sudo apt-get upgrade
    ```
 
 1. Install the EC2 Instance Connect package on your instance.
 
-   ```
+   ```bash
    ubuntu:~$ sudo apt-get install ec2-instance-connect
    ```
 
    You should see three new scripts in the `/usr/share/ec2-instance-connect/` folder:
 
-   ```
+   ```bash
    eic_curl_authorized_keys
    eic_parse_authorized_keys
    eic_run_authorized_keys
@@ -408,13 +408,13 @@ If you previously configured `AuthorizedKeysCommand` and `AuthorizedKeysCommandU
 
 1. (Optional) Verify that EC2 Instance Connect was successfully installed on your instance.
 
-   ```
+   ```bash
    ubuntu:~$ sudo less /lib/systemd/system/ssh.service.d/ec2-instance-connect.conf
    ```
 
    EC2 Instance Connect was successfully installed if the `AuthorizedKeysCommand` and `AuthorizedKeysCommandUser` lines contain the following values:
 
-   ```
+   ```bash
    AuthorizedKeysCommand /usr/share/ec2-instance-connect/eic_run_authorized_keys %%u %%f
    AuthorizedKeysCommandUser ec2-instance-connect
    ```

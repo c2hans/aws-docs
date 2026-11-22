@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lightsail-instance-autosnapshotaddon-syntax.json"></a>
 
-```
+```json
 {
   "[SnapshotTimeOfDay](#cfn-lightsail-instance-autosnapshotaddon-snapshottimeofday)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lightsail-instance-autosnapshotaddon-syntax.yaml"></a>
 
-```
+```yaml
   [SnapshotTimeOfDay](#cfn-lightsail-instance-autosnapshotaddon-snapshottimeofday): {{String}}
 ```
 

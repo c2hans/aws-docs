@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationsignals-servicelevelobjective-metricstat-syntax.json"></a>
 
-```
+```json
 {
   "[Metric](#cfn-applicationsignals-servicelevelobjective-metricstat-metric)" : {{Metric}},
   "[Period](#cfn-applicationsignals-servicelevelobjective-metricstat-period)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationsignals-servicelevelobjective-metricstat-syntax.yaml"></a>
 
-```
+```yaml
   [Metric](#cfn-applicationsignals-servicelevelobjective-metricstat-metric): {{
     Metric}}
   [Period](#cfn-applicationsignals-servicelevelobjective-metricstat-period): {{Integer}}

@@ -32,7 +32,7 @@ See [Update a resource share](https://docs.aws.amazon.com/ram/latest/userguide/w
 **To unshare a shared Dedicated Host that you own**
 Use the [disassociate-resource-share](https://docs.aws.amazon.com/cli/latest/reference/ram/disassociate-resource-share.html) command.
 
-```
+```bash
 aws ram disassociate-resource-share \
     --resource-share-arn arn:aws:ram:{{us-east-2}}:{{123456789012}}:resource-share/{{7ab63972-b505-7e2a-420d-6f5d3EXAMPLE}} \
 	--resource-arns arn:aws:ec2:{{us-east-2}}:{{123456789012}}:dedicated-host/{{h-07879acf49EXAMPLE}}
@@ -44,7 +44,7 @@ aws ram disassociate-resource-share \
 **To unshare a shared Dedicated Host that you own**
 Use the [Disconnect-RAMResourceShare](https://docs.aws.amazon.com/powershell/latest/reference/items/Disconnect-RAMResourceShare.html) cmdlet.
 
-```
+```powershell
 Disconnect-RAMResourceShare `
     -ResourceShareArn "arn:aws:ram:{{us-east-2}}:{{123456789012}}:resource-share/{{7ab63972-b505-7e2a-420d-6f5d3EXAMPLE}}" `
     -ResourceArn "arn:aws:ec2:{{us-east-2}}:{{123456789012}}:dedicated-host/{{h-07879acf49EXAMPLE}}"

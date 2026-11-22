@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apigatewayv2-domainname-domainnameconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CertificateArn](#cfn-apigatewayv2-domainname-domainnameconfiguration-certificatearn)" : {{String}},
   "[CertificateName](#cfn-apigatewayv2-domainname-domainnameconfiguration-certificatename)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apigatewayv2-domainname-domainnameconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CertificateArn](#cfn-apigatewayv2-domainname-domainnameconfiguration-certificatearn): {{String}}
   [CertificateName](#cfn-apigatewayv2-domainname-domainnameconfiguration-certificatename): {{String}}
   [EndpointType](#cfn-apigatewayv2-domainname-domainnameconfiguration-endpointtype): {{String}}

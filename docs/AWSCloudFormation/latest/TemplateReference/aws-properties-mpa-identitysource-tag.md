@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mpa-identitysource-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-mpa-identitysource-tag-key)" : {{String}},
   "[Value](#cfn-mpa-identitysource-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mpa-identitysource-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-mpa-identitysource-tag-key): {{String}}
   [Value](#cfn-mpa-identitysource-tag-value): {{String}}
 ```

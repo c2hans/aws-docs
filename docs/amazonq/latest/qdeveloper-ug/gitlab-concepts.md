@@ -34,7 +34,7 @@ Alternatively, you can create an inline policy and add the required permissions.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -63,7 +63,7 @@ Alternatively, you can create an inline policy and add the required permissions.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

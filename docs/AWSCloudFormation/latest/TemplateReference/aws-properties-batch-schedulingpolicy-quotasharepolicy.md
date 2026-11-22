@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-schedulingpolicy-quotasharepolicy-syntax.json"></a>
 
-```
+```json
 {
   "[IdleResourceAssignmentStrategy](#cfn-batch-schedulingpolicy-quotasharepolicy-idleresourceassignmentstrategy)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-schedulingpolicy-quotasharepolicy-syntax.yaml"></a>
 
-```
+```yaml
   [IdleResourceAssignmentStrategy](#cfn-batch-schedulingpolicy-quotasharepolicy-idleresourceassignmentstrategy): {{String}}
 ```
 

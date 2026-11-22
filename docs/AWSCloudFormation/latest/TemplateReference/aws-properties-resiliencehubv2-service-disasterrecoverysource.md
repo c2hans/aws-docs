@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-resiliencehubv2-service-disasterrecoverysource-syntax.json"></a>
 
-```
+```json
 {
   "[PolicyName](#cfn-resiliencehubv2-service-disasterrecoverysource-policyname)" : {{String}},
   "[Value](#cfn-resiliencehubv2-service-disasterrecoverysource-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-resiliencehubv2-service-disasterrecoverysource-syntax.yaml"></a>
 
-```
+```yaml
   [PolicyName](#cfn-resiliencehubv2-service-disasterrecoverysource-policyname): {{String}}
   [Value](#cfn-resiliencehubv2-service-disasterrecoverysource-value): {{String}}
 ```

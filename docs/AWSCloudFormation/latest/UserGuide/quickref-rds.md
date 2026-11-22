@@ -20,7 +20,7 @@ This example shows an Amazon RDS DB Instance resource with managed master user p
 ### JSON
 <a name="quickref-rds-example-1.json"></a>
 
-```
+```json
  1. "MyDB" : {
  2.  "Type" : "AWS::RDS::DBInstance",
  3.  "Properties" : {
@@ -42,7 +42,7 @@ This example shows an Amazon RDS DB Instance resource with managed master user p
 ### YAML
 <a name="quickref-rds-example-1.yaml"></a>
 
-```
+```yaml
  1. MyDB:
  2.   Type: AWS::RDS::DBInstance
  3.   Properties:
@@ -67,7 +67,7 @@ This example creates an Oracle Database DB Instance resource with managed master
 ### JSON
 <a name="quickref-rds-example-2.json"></a>
 
-```
+```json
  1. "MyDB" : {
  2.  "Type" : "AWS::RDS::DBInstance",
  3.  "Properties" : {
@@ -90,7 +90,7 @@ This example creates an Oracle Database DB Instance resource with managed master
 ### YAML
 <a name="quickref-rds-example-2.yaml"></a>
 
-```
+```yaml
  1. MyDB:
  2.   Type: AWS::RDS::DBInstance
  3.   Properties:
@@ -116,7 +116,7 @@ This example shows an Amazon RDS `DBSecurityGroup` resource with ingress authori
 ### JSON
 <a name="quickref-rds-example-3.json"></a>
 
-```
+```json
 1. "MyDbSecurityByCIDRIPGroup" : {
 2.  "Type" : "AWS::RDS::DBSecurityGroup",
 3.  "Properties" : {
@@ -131,7 +131,7 @@ This example shows an Amazon RDS `DBSecurityGroup` resource with ingress authori
 ### YAML
 <a name="quickref-rds-example-3.yaml"></a>
 
-```
+```yaml
 1. MyDbSecurityByCIDRIPGroup:
 2.   Type: AWS::RDS::DBSecurityGroup
 3.   Properties:
@@ -150,7 +150,7 @@ To do this, you define an EC2 security group and then use the intrinsic `Ref` fu
 ### JSON
 <a name="quickref-rds-example-4.json"></a>
 
-```
+```json
 "DBInstance" : {
    "Type": "AWS::RDS::DBInstance",
    "Properties": {
@@ -193,7 +193,7 @@ To do this, you define an EC2 security group and then use the intrinsic `Ref` fu
 
 This example is extracted from the following full example: [Drupal\_Single\_Instance\_With\_RDS.template](https://s3.amazonaws.com/cloudformation-templates-us-east-1/Drupal_Single_Instance_With_RDS.template)
 
-```
+```yaml
 DBInstance:
   Type: AWS::RDS::DBInstance
   Properties:
@@ -240,7 +240,7 @@ This example shows an [AWS::RDS::DBSecurityGroup](https://docs.aws.amazon.com/AW
 ### JSON
 <a name="quickref-rds-example-5.json"></a>
 
-```
+```json
 {
    "Resources" : {
       "DBinstance" : {
@@ -278,7 +278,7 @@ This example shows an [AWS::RDS::DBSecurityGroup](https://docs.aws.amazon.com/AW
 ### YAML
 <a name="quickref-rds-example-5.yaml"></a>
 
-```
+```yaml
 Resources:
   DBinstance:
     Type: AWS::RDS::DBInstance
@@ -318,7 +318,7 @@ This example shows an Amazon RDS database instance associated with an Amazon EC2
 ### JSON
 <a name="quickref-rds-example-6.json"></a>
 
-```
+```json
 {
   "DBEC2SecurityGroup": {
     "Type": "AWS::EC2::SecurityGroup",
@@ -351,7 +351,7 @@ This example shows an Amazon RDS database instance associated with an Amazon EC2
 ### YAML
 <a name="quickref-rds-example-6.yaml"></a>
 
-```
+```yaml
 DBEC2SecurityGroup:
   Type: AWS::EC2::SecurityGroup
   Properties:

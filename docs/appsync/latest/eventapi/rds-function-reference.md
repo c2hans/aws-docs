@@ -21,7 +21,7 @@ The `sql` tagged template only supports passing variable values. You can't use a
 
 When building AWS AppSync applications, you often need to filter database queries based on dynamic values. This pattern shows how to safely incorporate run-time values into your SQL queries while maintaining security. In the following example, we create a query that filters based on the value of channel path that is set dynamically at run time. The value can easily be added to the statement using the tag expression.
 
-```
+```velocity
 import { sql, createMySQLStatement as mysql } from '@aws-appsync/utils/rds';
 
     export const onPublish = {

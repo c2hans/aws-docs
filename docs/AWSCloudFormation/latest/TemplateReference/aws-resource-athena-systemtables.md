@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-athena-systemtables-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Athena::SystemTables",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-athena-systemtables-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Athena::SystemTables
 Properties:
   [KmsKeyArn](#cfn-athena-systemtables-kmskeyarn): {{String}}

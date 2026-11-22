@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-mqbrokeraccesscredentials-syntax.json"></a>
 
-```
+```json
 {
   "[BasicAuth](#cfn-pipes-pipe-mqbrokeraccesscredentials-basicauth)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-mqbrokeraccesscredentials-syntax.yaml"></a>
 
-```
+```yaml
   [BasicAuth](#cfn-pipes-pipe-mqbrokeraccesscredentials-basicauth): {{String}}
 ```
 

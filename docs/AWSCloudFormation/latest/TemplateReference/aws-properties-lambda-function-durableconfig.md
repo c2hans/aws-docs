@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-function-durableconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ExecutionTimeout](#cfn-lambda-function-durableconfig-executiontimeout)" : {{Integer}},
   "[KMSKeyArn](#cfn-lambda-function-durableconfig-kmskeyarn)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-function-durableconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ExecutionTimeout](#cfn-lambda-function-durableconfig-executiontimeout): {{Integer}}
   [KMSKeyArn](#cfn-lambda-function-durableconfig-kmskeyarn): {{String}}
   [RetentionPeriodInDays](#cfn-lambda-function-durableconfig-retentionperiodindays): {{Integer}}

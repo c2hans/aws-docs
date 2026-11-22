@@ -42,7 +42,7 @@ Use the [create-placement-group](https://docs.aws.amazon.com/cli/latest/referenc
 **To create a cluster placement group**
 The following example creates a placement group that uses the `cluster` placement strategy, and it applies a tag with a key of `purpose` and a value of `production`.
 
-```
+```bash
 aws ec2 create-placement-group \
     --group-name {{my-cluster}} \
     --strategy cluster \
@@ -52,7 +52,7 @@ aws ec2 create-placement-group \
 **To create a cluster placement group with a precision time placement group parent**
 The following example creates a cluster placement group that specifies a parent precision time placement group using the `--parent-group-id` parameter.
 
-```
+```bash
 aws ec2 create-placement-group \
     --group-name {{my-cluster}} \
     --strategy cluster \
@@ -62,7 +62,7 @@ aws ec2 create-placement-group \
 **To create a partition placement group**
 The following example creates a placement group that uses the `partition` placement strategy, and specifies the five partitions using the `--partition-count` parameter.
 
-```
+```bash
 aws ec2 create-placement-group \
     --group-name {{HDFS-Group-A}} \
     --strategy partition \
@@ -72,7 +72,7 @@ aws ec2 create-placement-group \
 **To create a precision time placement group**
 The following example creates a placement group that uses the `precision-time` placement strategy.
 
-```
+```bash
 aws ec2 create-placement-group \
     --group-name {{my-precision-time-pg}} \
     --strategy precision-time
@@ -86,7 +86,7 @@ Use the [New-EC2PlacementGroup](https://docs.aws.amazon.com/powershell/latest/re
 **To create a cluster placement group**
 The following example creates a cluster placement group.
 
-```
+```powershell
 New-EC2PlacementGroup `
     -GroupName {{my-placement-group}} `
     -Strategy cluster
@@ -95,7 +95,7 @@ New-EC2PlacementGroup `
 **To create a cluster placement group with a precision time placement group parent**
 The following example creates a cluster placement group that specifies a parent precision time placement group using the `-ParentGroupId` parameter.
 
-```
+```powershell
 New-EC2PlacementGroup `
     -GroupName {{my-placement-group}} `
     -Strategy cluster `
@@ -105,7 +105,7 @@ New-EC2PlacementGroup `
 **To create a partition placement group**
 The following example creates a partition placement group.
 
-```
+```powershell
 New-EC2PlacementGroup `
     -GroupName {{my-placement-group}} `
     -Strategy partition `
@@ -115,7 +115,7 @@ New-EC2PlacementGroup `
 **To create a precision time placement group**
 The following example creates a precision time placement group.
 
-```
+```powershell
 New-EC2PlacementGroup `
     -GroupName {{my-precision-time-pg}} `
     -Strategy precision-time

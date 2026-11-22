@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eventsv2-subscriber-messageattributevalue-syntax.json"></a>
 
-```
+```json
 {
   "[BinaryValue](#cfn-eventsv2-subscriber-messageattributevalue-binaryvalue)" : {{String}},
   "[DataType](#cfn-eventsv2-subscriber-messageattributevalue-datatype)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eventsv2-subscriber-messageattributevalue-syntax.yaml"></a>
 
-```
+```yaml
   [BinaryValue](#cfn-eventsv2-subscriber-messageattributevalue-binaryvalue): {{String}}
   [DataType](#cfn-eventsv2-subscriber-messageattributevalue-datatype): {{String}}
   [StringValue](#cfn-eventsv2-subscriber-messageattributevalue-stringvalue): {{

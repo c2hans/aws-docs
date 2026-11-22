@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-groundstation-config-spectrumconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Bandwidth](#cfn-groundstation-config-spectrumconfig-bandwidth)" : {{FrequencyBandwidth}},
   "[CenterFrequency](#cfn-groundstation-config-spectrumconfig-centerfrequency)" : {{Frequency}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-groundstation-config-spectrumconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Bandwidth](#cfn-groundstation-config-spectrumconfig-bandwidth): {{
     FrequencyBandwidth}}
   [CenterFrequency](#cfn-groundstation-config-spectrumconfig-centerfrequency): {{
@@ -71,7 +71,7 @@ The following example creates a Ground Station `SpectrumConfig`
 #### JSON
 <a name="aws-properties-groundstation-config-spectrumconfig--examples--Create_a_SpectrumConfig--json"></a>
 
-```
+```json
 {
   "SpectrumConfig": {
     "Bandwidth": {
@@ -90,7 +90,7 @@ The following example creates a Ground Station `SpectrumConfig`
 #### YAML
 <a name="aws-properties-groundstation-config-spectrumconfig--examples--Create_a_SpectrumConfig--yaml"></a>
 
-```
+```yaml
 SpectrumConfig:
   Bandwidth:
     Value: 30

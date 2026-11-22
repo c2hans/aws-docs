@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-imagebuilder-lifecyclepolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ImageBuilder::LifecyclePolicy",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-imagebuilder-lifecyclepolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ImageBuilder::LifecyclePolicy
 Properties:
   [Description](#cfn-imagebuilder-lifecyclepolicy-description): {{String}}
@@ -147,7 +147,7 @@ The following example creates a lifecycle policy that deletes AMIs older than 90
 #### YAML
 <a name="aws-resource-imagebuilder-lifecyclepolicy--examples--Create_a_lifecycle_policy_that_deletes_AMIs_older_than_90_days--yaml"></a>
 
-```
+```yaml
 Resources:
   LifecyclePolicyExample:
     Type: AWS::ImageBuilder::LifecyclePolicy
@@ -184,7 +184,7 @@ Resources:
 #### JSON
 <a name="aws-resource-imagebuilder-lifecyclepolicy--examples--Create_a_lifecycle_policy_that_deletes_AMIs_older_than_90_days--json"></a>
 
-```
+```json
 {
     "Resources": {
         "LifecyclePolicyExample": {

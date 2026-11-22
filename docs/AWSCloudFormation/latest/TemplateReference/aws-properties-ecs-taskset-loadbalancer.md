@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskset-loadbalancer-syntax.json"></a>
 
-```
+```json
 {
   "[ContainerName](#cfn-ecs-taskset-loadbalancer-containername)" : {{String}},
   "[ContainerPort](#cfn-ecs-taskset-loadbalancer-containerport)" : {{Integer}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskset-loadbalancer-syntax.yaml"></a>
 
-```
+```yaml
   [ContainerName](#cfn-ecs-taskset-loadbalancer-containername): {{String}}
   [ContainerPort](#cfn-ecs-taskset-loadbalancer-containerport): {{Integer}}
   [TargetGroupArn](#cfn-ecs-taskset-loadbalancer-targetgrouparn): {{String}}

@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-eventinvokeconfig-onsuccess-syntax.json"></a>
 
-```
+```json
 {
   "[Destination](#cfn-lambda-eventinvokeconfig-onsuccess-destination)" : {{String}}
 }
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-eventinvokeconfig-onsuccess-syntax.yaml"></a>
 
-```
+```yaml
   [Destination](#cfn-lambda-eventinvokeconfig-onsuccess-destination): {{String}}
 ```
 
@@ -58,7 +58,7 @@ Configure a function to send a record of successful asynchronous invocations to 
 #### YAML
 <a name="aws-properties-lambda-eventinvokeconfig-onsuccess--examples--On-Success_Destination_Configuration--yaml"></a>
 
-```
+```yaml
           OnSuccess:
             Destination: arn:aws:sqs:us-east-2:123456789012:destination
 ```

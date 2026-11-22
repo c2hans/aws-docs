@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-wafregional-regexpatternset-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::WAFRegional::RegexPatternSet",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-wafregional-regexpatternset-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::WAFRegional::RegexPatternSet
 Properties:
   [Name](#cfn-wafregional-regexpatternset-name): {{String}}

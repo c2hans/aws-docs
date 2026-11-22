@@ -246,7 +246,7 @@ Here are example responses showing the differences between modes:
 #### Accessed and throttled keys mode response
 <a name="usecontributorinsights_cli.examples.accessed-throttled"></a>
 
-```
+```json
 {
     "TableName": "Music",
     "ContributorInsightsRuleList": [
@@ -264,7 +264,7 @@ Here are example responses showing the differences between modes:
 #### Throttled keys mode response
 <a name="usecontributorinsights_cli.examples.throttled-only"></a>
 
-```
+```json
 {
     "TableName": "Music",
     "ContributorInsightsRuleList": [

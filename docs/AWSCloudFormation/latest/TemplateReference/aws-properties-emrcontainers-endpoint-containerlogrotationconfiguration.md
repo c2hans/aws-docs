@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrcontainers-endpoint-containerlogrotationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MaxFilesToKeep](#cfn-emrcontainers-endpoint-containerlogrotationconfiguration-maxfilestokeep)" : {{Integer}},
   "[RotationSize](#cfn-emrcontainers-endpoint-containerlogrotationconfiguration-rotationsize)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrcontainers-endpoint-containerlogrotationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MaxFilesToKeep](#cfn-emrcontainers-endpoint-containerlogrotationconfiguration-maxfilestokeep): {{Integer}}
   [RotationSize](#cfn-emrcontainers-endpoint-containerlogrotationconfiguration-rotationsize): {{String}}
 ```

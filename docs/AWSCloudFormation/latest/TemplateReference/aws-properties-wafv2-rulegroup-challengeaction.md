@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-rulegroup-challengeaction-syntax.json"></a>
 
-```
+```json
 {
   "[CustomRequestHandling](#cfn-wafv2-rulegroup-challengeaction-customrequesthandling)" : {{CustomRequestHandling}}
 }
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-rulegroup-challengeaction-syntax.yaml"></a>
 
-```
+```yaml
   [CustomRequestHandling](#cfn-wafv2-rulegroup-challengeaction-customrequesthandling): {{
     CustomRequestHandling}}
 ```

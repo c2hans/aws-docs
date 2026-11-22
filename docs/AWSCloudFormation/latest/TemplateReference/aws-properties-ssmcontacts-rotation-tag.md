@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssmcontacts-rotation-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-ssmcontacts-rotation-tag-key)" : {{String}},
   "[Value](#cfn-ssmcontacts-rotation-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssmcontacts-rotation-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-ssmcontacts-rotation-tag-key): {{String}}
   [Value](#cfn-ssmcontacts-rotation-tag-value): {{String}}
 ```

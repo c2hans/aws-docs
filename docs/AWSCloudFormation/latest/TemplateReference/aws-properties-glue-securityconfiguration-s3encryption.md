@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-securityconfiguration-s3encryption-syntax.json"></a>
 
-```
+```json
 {
   "[KmsKeyArn](#cfn-glue-securityconfiguration-s3encryption-kmskeyarn)" : {{String}},
   "[S3EncryptionMode](#cfn-glue-securityconfiguration-s3encryption-s3encryptionmode)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-securityconfiguration-s3encryption-syntax.yaml"></a>
 
-```
+```yaml
   [KmsKeyArn](#cfn-glue-securityconfiguration-s3encryption-kmskeyarn): {{String}}
   [S3EncryptionMode](#cfn-glue-securityconfiguration-s3encryption-s3encryptionmode): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-globalaccelerator-crossaccountattachment-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-globalaccelerator-crossaccountattachment-tag-key)" : {{String}},
   "[Value](#cfn-globalaccelerator-crossaccountattachment-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-globalaccelerator-crossaccountattachment-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-globalaccelerator-crossaccountattachment-tag-key): {{String}}
   [Value](#cfn-globalaccelerator-crossaccountattachment-tag-value): {{String}}
 ```

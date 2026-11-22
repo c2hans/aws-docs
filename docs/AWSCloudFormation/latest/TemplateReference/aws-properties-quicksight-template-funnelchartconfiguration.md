@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-funnelchartconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CategoryLabelOptions](#cfn-quicksight-template-funnelchartconfiguration-categorylabeloptions)" : {{ChartAxisLabelOptions}},
   "[DataLabelOptions](#cfn-quicksight-template-funnelchartconfiguration-datalabeloptions)" : {{FunnelChartDataLabelOptions}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-funnelchartconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CategoryLabelOptions](#cfn-quicksight-template-funnelchartconfiguration-categorylabeloptions): {{
     ChartAxisLabelOptions}}
   [DataLabelOptions](#cfn-quicksight-template-funnelchartconfiguration-datalabeloptions): {{

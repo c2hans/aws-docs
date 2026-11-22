@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connectcampaignsv2-campaign-telephonychannelsubtypeconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Capacity](#cfn-connectcampaignsv2-campaign-telephonychannelsubtypeconfig-capacity)" : {{Number}},
   "[ConnectQueueId](#cfn-connectcampaignsv2-campaign-telephonychannelsubtypeconfig-connectqueueid)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connectcampaignsv2-campaign-telephonychannelsubtypeconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Capacity](#cfn-connectcampaignsv2-campaign-telephonychannelsubtypeconfig-capacity): {{Number}}
   [ConnectQueueId](#cfn-connectcampaignsv2-campaign-telephonychannelsubtypeconfig-connectqueueid): {{String}}
   [DefaultOutboundConfig](#cfn-connectcampaignsv2-campaign-telephonychannelsubtypeconfig-defaultoutboundconfig): {{

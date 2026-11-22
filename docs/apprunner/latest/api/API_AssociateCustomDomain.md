@@ -137,7 +137,7 @@ This example illustrates how to associate a custom domain name that you control 
 #### Sample Request
 <a name="API_AssociateCustomDomain_Example_1_Request"></a>
 
-```
+```json
 $ aws apprunner associate-custom-domain --cli-input-json "`cat`"
 {
   "ServiceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
@@ -149,7 +149,7 @@ $ aws apprunner associate-custom-domain --cli-input-json "`cat`"
 #### Sample Response
 <a name="API_AssociateCustomDomain_Example_1_Response"></a>
 
-```
+```json
 {
   "DNSTarget": "zgz2t7wmhi.us-east-1.awsapprunner.com",
   "ServiceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",

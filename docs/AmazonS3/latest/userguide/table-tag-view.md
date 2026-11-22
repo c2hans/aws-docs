@@ -57,7 +57,7 @@ The following CLI example shows you how to view tags applied to a table. To use 
 
 **Request:**
 
-```
+```bash
 aws --region {{us-west-2}} \
 s3tables list-tags-for-resource \
 --resource-arn arn:aws::s3tables:{{us-west-2}}:{{111122223333}}:bucket/{{amzn-s3-demo-table-bucket}}/table/{{my_example_table}}

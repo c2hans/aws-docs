@@ -226,7 +226,7 @@ To create a new policy, follow the instructions in [Creating IAM policies](https
    + In **Trust relationships**, select **Edit trust policy** and select **Add new statement** to add the following trust policy, replacing the value for {{account\_id}} with your AWS account ID and {{saml\_provider}} with the {{assigned-iam-idp-name}} you copied from your IAM identity provider ARN you copied:
 ****
 
-     ```
+     ```json
      {
          "Version":"2012-10-17",
          "Statement": [
@@ -304,7 +304,7 @@ To create a new policy, follow the instructions in [Creating IAM policies](https
 1. Then, add the following statement to your existing trust policy, replacing {{account-id}} with your AWS account ID, {{clientId}} with the OIDC client ID you copied, and {{iss}} with the {{issuer}} value from your IAM identity provider ARN:
 ****
 
-   ```
+   ```json
 
    ```
 

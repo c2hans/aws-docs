@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cognito-userpooldomain-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Cognito::UserPoolDomain",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cognito-userpooldomain-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Cognito::UserPoolDomain
 Properties:
   [CustomDomainConfig](#cfn-cognito-userpooldomain-customdomainconfig): {{
@@ -126,7 +126,7 @@ The following example creates a custom domain, "my-test-user-pool-domain", in th
 #### JSON
 <a name="aws-resource-cognito-userpooldomain--examples--Creating_a_new_custom_domain_for_a_user_pool--json"></a>
 
-```
+```json
 {
    "UserPoolDomain":{
       "Type":"AWS::Cognito::UserPoolDomain",
@@ -149,7 +149,7 @@ The following example creates a custom domain, "my-test-user-pool-domain", in th
 #### YAML
 <a name="aws-resource-cognito-userpooldomain--examples--Creating_a_new_custom_domain_for_a_user_pool--yaml"></a>
 
-```
+```yaml
 UserPoolDomain:
   Type: AWS::Cognito::UserPoolDomain
   Properties:
@@ -168,7 +168,7 @@ The following example creates a new default domain, "my-test-user-pool-domain", 
 #### JSON
 <a name="aws-resource-cognito-userpooldomain--examples--Creating_a_new_default_domain_for_a_user_pool--json"></a>
 
-```
+```json
 {
    "UserPoolDomain":{
       "Type":"AWS::Cognito::UserPoolDomain",
@@ -186,7 +186,7 @@ The following example creates a new default domain, "my-test-user-pool-domain", 
 #### YAML
 <a name="aws-resource-cognito-userpooldomain--examples--Creating_a_new_default_domain_for_a_user_pool--yaml"></a>
 
-```
+```yaml
 UserPoolDomain:
   Type: AWS::Cognito::UserPoolDomain
   Properties:

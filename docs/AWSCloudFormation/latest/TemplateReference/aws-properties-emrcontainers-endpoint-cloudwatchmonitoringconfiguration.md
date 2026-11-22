@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrcontainers-endpoint-cloudwatchmonitoringconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[LogGroupName](#cfn-emrcontainers-endpoint-cloudwatchmonitoringconfiguration-loggroupname)" : {{String}},
   "[LogStreamNamePrefix](#cfn-emrcontainers-endpoint-cloudwatchmonitoringconfiguration-logstreamnameprefix)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrcontainers-endpoint-cloudwatchmonitoringconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [LogGroupName](#cfn-emrcontainers-endpoint-cloudwatchmonitoringconfiguration-loggroupname): {{String}}
   [LogStreamNamePrefix](#cfn-emrcontainers-endpoint-cloudwatchmonitoringconfiguration-logstreamnameprefix): {{String}}
 ```

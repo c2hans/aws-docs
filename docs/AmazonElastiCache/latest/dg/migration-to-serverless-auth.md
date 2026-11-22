@@ -26,7 +26,7 @@ The secret's contents depend on how your source authenticates.
 
 If your source authenticates users by name, store a user name and a password in the following JSON format:
 
-```
+```json
 {"username":"migration_user","password":"your-password"}
 ```
 
@@ -36,7 +36,7 @@ Where:
 
 If your source uses a single password with no user names, store the password on its own:
 
-```
+```json
 {"password":"your-password"}
 ```
 
@@ -60,7 +60,7 @@ The following permissions are required.
 
 The following resource policy grants ElastiCache read access to the secret:
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -78,7 +78,7 @@ If the secret is encrypted with a customer managed AWS KMS key, grant that servi
 
 Add the following statement to the key policy of the customer managed key that encrypts the secret:
 
-```
+```json
 {
   "Effect": "Allow",
   "Principal": { "Service": "elasticache.amazonaws.com" },
@@ -104,7 +104,7 @@ If your source uses a single password and no user names, ElastiCache connects wi
 
 If your source authenticates users by name and controls what each one can do, create a user for the migration and grant it the following permissions. Run this valkey-cli command against every node in your source, or use whatever mechanism your source has for applying access control across the cluster:
 
-```
+```bash
 valkey-cli ACL SETUSER migration_user on '>your-password' -@all \
   +ping +info +hello \
   +cluster|nodes +cluster|shards +cluster|slots +cluster|info \
@@ -143,7 +143,7 @@ If your source accepts connections without authentication, keep the default user
 
 Pass the secret ARN in the source authentication configuration:
 
-```
+```bash
 aws elasticache prepare-migration \
     --serverless-cache-name {{my-cache}} \
     --customer-node-endpoint-list "Address='{{192.0.2.10}}',Port={{6379}}" \
@@ -171,7 +171,7 @@ The prepare step validates the certificate value. It fails if the value is not a
 
 ElastiCache verifies that your source's server certificate chains to a CA certificate you provided. It does not check the host name in the certificate, so your source address can be an IP address or a host name that resolves through public DNS.
 
-```
+```bash
 aws elasticache prepare-migration \
     --serverless-cache-name {{my-cache}} \
     --customer-node-endpoint-list "Address='{{192.0.2.10}}',Port={{6379}}" \

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkfirewall-rulegroup-rulevariables-syntax.json"></a>
 
-```
+```json
 {
   "[IPSets](#cfn-networkfirewall-rulegroup-rulevariables-ipsets)" : {{{{{Key}}: {{Value}}, ...}}},
   "[PortSets](#cfn-networkfirewall-rulegroup-rulevariables-portsets)" : {{{{{Key}}: {{Value}}, ...}}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkfirewall-rulegroup-rulevariables-syntax.yaml"></a>
 
-```
+```yaml
   [IPSets](#cfn-networkfirewall-rulegroup-rulevariables-ipsets): {{
     {{Key}}: {{Value}}}}
   [PortSets](#cfn-networkfirewall-rulegroup-rulevariables-portsets): {{

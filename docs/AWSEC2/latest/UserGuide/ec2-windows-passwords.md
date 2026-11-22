@@ -26,7 +26,7 @@ Store the new password in a safe place. You won't be able to retrieve the new pa
 
 1. Run the following command. If your new password includes special characters, enclose the password in double quotes.
 
-   ```
+   ```bash
    net user Administrator "{{new_password}}"
    ```
 

@@ -34,7 +34,7 @@ To use the [IAM API](https://docs.aws.amazon.com/IAM/latest/APIReference/) to up
 
 To use the following example command, replace these file names with your own. Replace {{ExampleCertificate}} with a name for your uploaded certificate. If you want to tag the certificate, replace the {{ExampleKey}} and {{ExampleValue}} tag key-value pair with your own values. Type the command on one continuous line. The following example includes line breaks and extra spaces to make it easier to read.
 
-```
+```bash
 aws iam upload-server-certificate --server-certificate-name {{ExampleCertificate}}
                                     --certificate-body file://{{Certificate.pem}}
                                     --certificate-chain file://{{CertificateChain.pem}}
@@ -67,7 +67,7 @@ You cannot download or retrieve a private key from IAM after you upload it.
 
   To use the following example command, replace the old and new certificate names and the certificate path, and type the command on one continuous line. The following example includes line breaks and extra spaces to make it easier to read.
 
-  ```
+  ```bash
   aws iam update-server-certificate --server-certificate-name {{ExampleCertificate}}
                                       --new-server-certificate-name {{CloudFrontCertificate}}
                                       --new-path {{/cloudfront/}}
@@ -120,34 +120,34 @@ If these items are not in the right format for uploading to IAM, you can use [Op
 **To convert a certificate or certificate chain from DER to PEM**
 Use the [OpenSSL **x509** command](https://openssl.org/docs/manmaster/man1/x509.html), as in the following example. In the following example command, replace `{{Certificate.der}}` with the name of the file that contains your DER-encoded certificate. Replace `{{Certificate.pem}}` with the preferred name of the output file to contain the PEM-encoded certificate.
 
-```
+```bash
 openssl x509 -inform DER -in {{Certificate.der}} -outform PEM -out {{Certificate.pem}}
 ```
 
 **To convert a private key from DER to PEM**
 Use the [OpenSSL **rsa** command](https://openssl.org/docs/manmaster/man1/rsa.html), as in the following example. In the following example command, replace `{{PrivateKey.der}}` with the name of the file that contains your DER-encoded private key. Replace `{{PrivateKey.pem}}` with the preferred name of the output file to contain the PEM-encoded private key.
 
-```
+```bash
 openssl rsa -inform DER -in {{PrivateKey.der}} -outform PEM -out {{PrivateKey.pem}}
 ```
 
 **To decrypt an encrypted private key (remove the password or passphrase)**
 Use the [OpenSSL **rsa** command](https://openssl.org/docs/manmaster/man1/rsa.html), as in the following example. To use the following example command, replace `{{EncryptedPrivateKey.pem}}` with the name of the file that contains your encrypted private key. Replace `{{PrivateKey.pem}}` with the preferred name of the output file to contain the PEM-encoded unencrypted private key.
 
-```
+```bash
 openssl rsa -in {{EncryptedPrivateKey.pem}} -out {{PrivateKey.pem}}
 ```
 
 **To convert a certificate bundle from PKCS\#12 (PFX) to PEM**
 Use the [OpenSSL **pkcs12** command](https://openssl.org/docs/manmaster/man1/pkcs12.html), as in the following example. In the following example command, replace `{{CertificateBundle.p12}}` with the name of the file that contains your PKCS\#12-encoded certificate bundle. Replace `{{CertificateBundle.pem}}` with the preferred name of the output file to contain the PEM-encoded certificate bundle.
 
-```
+```bash
 openssl pkcs12 -in {{CertificateBundle.p12}} -out {{CertificateBundle.pem}} -nodes
 ```
 
 **To convert a certificate bundle from PKCS\#7 to PEM**
 Use the [OpenSSL **pkcs7** command](https://openssl.org/docs/manmaster/man1/pkcs7.html), as in the following example. In the following example command, replace `{{CertificateBundle.p7b}}` with the name of the file that contains your PKCS\#7-encoded certificate bundle. Replace `{{CertificateBundle.pem}}` with the preferred name of the output file to contain the PEM-encoded certificate bundle.
 
-```
+```bash
 openssl pkcs7 -in {{CertificateBundle.p7b}} -print_certs -out {{CertificateBundle.pem}}
 ```

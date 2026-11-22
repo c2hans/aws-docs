@@ -69,7 +69,7 @@ When you link your Quick account in the Amazon Q Business console, you specify a
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

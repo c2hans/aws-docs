@@ -53,7 +53,7 @@ AWS Flow Framework provides a `WorkflowReplayer` class that you can use to repla
 
 For example, the following code snippet can be used to replay a workflow execution:
 
-```
+```java
 String workflowId = "testWorkflow";
 String runId = "<run id>";
 Class<HelloWorldImpl> workflowImplementationType = HelloWorldImpl.class;
@@ -73,7 +73,7 @@ System.out.println("Done workflow replay for " + workflowExecution);
 
  AWS Flow Framework also allows you to get an asynchronous thread dump of your workflow execution. This thread dump gives you the call stacks of all open asynchronous tasks. This information can be useful to determine which tasks in the execution are pending and possibly stuck. For example:
 
-```
+```java
 String workflowId = "testWorkflow";
 String runId = "<run id>";
 Class<HelloWorldImpl> workflowImplementationType = HelloWorldImpl.class;

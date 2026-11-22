@@ -19,7 +19,7 @@ You need permission policies to use Amazon Q Business application environments t
 
 **Example policy to allow the Amazon Q Business APIs for anonymous access**
 
-```
+```json
 {
     "Version": "2012-10-17",		 	 	 ,
     "Statement": [{
@@ -56,7 +56,7 @@ You need permission policies to use Amazon Q Business application environments t
 
 **Example policy to allow the Amazon Q Business web experience for anonymous access**
 
-```
+```json
 {
     "Version": "2012-10-17",		 	 	 ,
     "Statement": [{
@@ -76,7 +76,7 @@ You need permission policies to use Amazon Q Business application environments t
 
 **Example trust policy to allow the Amazon Q Business web experience for anonymous access**
 
-```
+```json
 {
     "Version": "2012-10-17",		 	 	 ,
     "Statement": [
@@ -130,7 +130,7 @@ For the web experience to work properly with AWS CLI commands both policies are 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

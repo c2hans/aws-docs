@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-endpointconfig-clarifytextconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Granularity](#cfn-sagemaker-endpointconfig-clarifytextconfig-granularity)" : {{String}},
   "[Language](#cfn-sagemaker-endpointconfig-clarifytextconfig-language)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-endpointconfig-clarifytextconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Granularity](#cfn-sagemaker-endpointconfig-clarifytextconfig-granularity): {{String}}
   [Language](#cfn-sagemaker-endpointconfig-clarifytextconfig-language): {{String}}
 ```

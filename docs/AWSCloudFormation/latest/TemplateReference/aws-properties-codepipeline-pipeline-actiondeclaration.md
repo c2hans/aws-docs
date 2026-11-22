@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codepipeline-pipeline-actiondeclaration-syntax.json"></a>
 
-```
+```json
 {
   "[ActionTypeId](#cfn-codepipeline-pipeline-actiondeclaration-actiontypeid)" : {{ActionTypeId}},
   "[Commands](#cfn-codepipeline-pipeline-actiondeclaration-commands)" : {{[ String, ... ]}},
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codepipeline-pipeline-actiondeclaration-syntax.yaml"></a>
 
-```
+```yaml
   [ActionTypeId](#cfn-codepipeline-pipeline-actiondeclaration-actiontypeid): {{
     ActionTypeId}}
   [Commands](#cfn-codepipeline-pipeline-actiondeclaration-commands): {{

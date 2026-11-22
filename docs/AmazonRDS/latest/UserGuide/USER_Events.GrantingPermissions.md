@@ -20,7 +20,7 @@ To see a list of resource types and their ARNs, see [Resources Defined by Amazon
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

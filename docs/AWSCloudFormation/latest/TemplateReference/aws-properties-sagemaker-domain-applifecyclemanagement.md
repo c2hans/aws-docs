@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-domain-applifecyclemanagement-syntax.json"></a>
 
-```
+```json
 {
   "[IdleSettings](#cfn-sagemaker-domain-applifecyclemanagement-idlesettings)" : {{IdleSettings}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-domain-applifecyclemanagement-syntax.yaml"></a>
 
-```
+```yaml
   [IdleSettings](#cfn-sagemaker-domain-applifecyclemanagement-idlesettings): {{
     IdleSettings}}
 ```

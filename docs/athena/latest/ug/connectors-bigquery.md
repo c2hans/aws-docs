@@ -106,7 +106,7 @@ The following Athena Google BigQuery connector operators support predicate pushd
 
 For enhanced querying capabilities, combine the pushdown types, as in the following example:
 
-```
+```sql
 SELECT *
 FROM my_table
 WHERE col_a > 10
@@ -123,7 +123,7 @@ The Google BigQuery connector supports [passthrough queries](federated-query-pas
 
 To use passthrough queries with Google BigQuery, you can use the following syntax:
 
-```
+```sql
 SELECT * FROM TABLE(
         system.query(
             query => '{{query string}}'
@@ -132,7 +132,7 @@ SELECT * FROM TABLE(
 
 The following example query pushes down a query to a data source in Google BigQuery. The query selects all columns in the `customer` table, limiting the results to 10.
 
-```
+```sql
 SELECT * FROM TABLE(
         system.query(
             query => 'SELECT * FROM customer LIMIT 10'

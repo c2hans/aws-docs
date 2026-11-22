@@ -199,7 +199,7 @@ To enable Origin Shield with CloudFormation, use the `OriginShield` property in 
 
 The following example shows the syntax, in YAML format, for enabling `OriginShield` in the US West (Oregon) Region (`us-west-2`). For help choosing a Region, see [Choose the AWS Region for Origin Shield](#choose-origin-shield-region). This example shows only the `Origin` property type, not the entire `AWS::CloudFront::Distribution` resource.
 
-```
+```yaml
 Origins:
 - DomainName: 3ae97e9482b0d011.mediapackage.us-west-2.amazonaws.com
   Id: Example-EMP-3ae97e9482b0d011

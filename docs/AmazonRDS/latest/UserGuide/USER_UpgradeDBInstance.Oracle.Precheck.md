@@ -77,7 +77,7 @@ TEXT
 
 To list the files in the BDUMP directory, run the following query.
 
-```
+```sql
 SELECT * FROM table(rdsadmin.rds_file_util.listdir('BDUMP')) order by mtime;
 ```
 

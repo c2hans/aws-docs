@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-evaluationform-evaluationformnumericquestionproperties-syntax.json"></a>
 
-```
+```json
 {
   "[Automation](#cfn-connect-evaluationform-evaluationformnumericquestionproperties-automation)" : {{EvaluationFormNumericQuestionAutomation}},
   "[MaxValue](#cfn-connect-evaluationform-evaluationformnumericquestionproperties-maxvalue)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-evaluationform-evaluationformnumericquestionproperties-syntax.yaml"></a>
 
-```
+```yaml
   [Automation](#cfn-connect-evaluationform-evaluationformnumericquestionproperties-automation): {{
     EvaluationFormNumericQuestionAutomation}}
   [MaxValue](#cfn-connect-evaluationform-evaluationformnumericquestionproperties-maxvalue): {{Integer}}

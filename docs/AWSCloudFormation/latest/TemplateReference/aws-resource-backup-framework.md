@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-backup-framework-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Backup::Framework",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-backup-framework-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Backup::Framework
 Properties:
   [FrameworkControls](#cfn-backup-framework-frameworkcontrols): {{

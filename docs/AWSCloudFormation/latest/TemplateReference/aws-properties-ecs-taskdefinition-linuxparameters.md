@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskdefinition-linuxparameters-syntax.json"></a>
 
-```
+```json
 {
   "[Capabilities](#cfn-ecs-taskdefinition-linuxparameters-capabilities)" : {{KernelCapabilities}},
   "[Devices](#cfn-ecs-taskdefinition-linuxparameters-devices)" : {{[ Device, ... ]}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskdefinition-linuxparameters-syntax.yaml"></a>
 
-```
+```yaml
   [Capabilities](#cfn-ecs-taskdefinition-linuxparameters-capabilities): {{
     KernelCapabilities}}
   [Devices](#cfn-ecs-taskdefinition-linuxparameters-devices): {{

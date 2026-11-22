@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationsignals-servicelevelobjective-rollinginterval-syntax.json"></a>
 
-```
+```json
 {
   "[Duration](#cfn-applicationsignals-servicelevelobjective-rollinginterval-duration)" : {{Integer}},
   "[DurationUnit](#cfn-applicationsignals-servicelevelobjective-rollinginterval-durationunit)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationsignals-servicelevelobjective-rollinginterval-syntax.yaml"></a>
 
-```
+```yaml
   [Duration](#cfn-applicationsignals-servicelevelobjective-rollinginterval-duration): {{Integer}}
   [DurationUnit](#cfn-applicationsignals-servicelevelobjective-rollinginterval-durationunit): {{String}}
 ```

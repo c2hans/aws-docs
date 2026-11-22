@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lightsail-disksnapshot-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lightsail::DiskSnapshot",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lightsail-disksnapshot-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lightsail::DiskSnapshot
 Properties:
   [DiskName](#cfn-lightsail-disksnapshot-diskname): {{String}}

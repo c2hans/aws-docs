@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-onsourceddosprotectionconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ALBLowReputationMode](#cfn-wafv2-webacl-onsourceddosprotectionconfig-alblowreputationmode)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-onsourceddosprotectionconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ALBLowReputationMode](#cfn-wafv2-webacl-onsourceddosprotectionconfig-alblowreputationmode): {{String}}
 ```
 

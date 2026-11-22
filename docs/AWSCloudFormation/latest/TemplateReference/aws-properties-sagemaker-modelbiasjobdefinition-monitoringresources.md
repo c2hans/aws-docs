@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelbiasjobdefinition-monitoringresources-syntax.json"></a>
 
-```
+```json
 {
   "[ClusterConfig](#cfn-sagemaker-modelbiasjobdefinition-monitoringresources-clusterconfig)" : {{ClusterConfig}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelbiasjobdefinition-monitoringresources-syntax.yaml"></a>
 
-```
+```yaml
   [ClusterConfig](#cfn-sagemaker-modelbiasjobdefinition-monitoringresources-clusterconfig): {{
     ClusterConfig}}
 ```

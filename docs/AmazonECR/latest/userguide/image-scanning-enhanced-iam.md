@@ -13,7 +13,7 @@ The following IAM policy grants the required permissions for enabling and using 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

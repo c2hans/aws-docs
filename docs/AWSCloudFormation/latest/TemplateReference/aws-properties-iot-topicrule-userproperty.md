@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicrule-userproperty-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-iot-topicrule-userproperty-key)" : {{String}},
   "[Value](#cfn-iot-topicrule-userproperty-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicrule-userproperty-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-iot-topicrule-userproperty-key): {{String}}
   [Value](#cfn-iot-topicrule-userproperty-value): {{String}}
 ```

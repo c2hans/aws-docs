@@ -17,7 +17,7 @@ This policy does not allow the user to view or edit the permissions of the users
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -50,13 +50,13 @@ If you don't specify any root directory ownership and permissions, and the root 
 
 The following `create-access-point` example command shows how you can use the AWS CLI to create an access point for an S3 file system.
 
-```
+```bash
 aws s3files create-access-point --file-system-id {{file-system-id}} --root-directory {{root-directory}} --posix-user {{posix-user}}
 ```
 
 For example:
 
-```
+```bash
 aws s3files create-access-point --file-system-id fs-abcdef0123456789a --client-token 010102020-3 \
   --root-directory "Path=/s3files/mobileapp/east,CreationInfo={OwnerUid=0,OwnerGid=11,Permissions=775}" \
   --posix-user "Uid=22,Gid=4" \

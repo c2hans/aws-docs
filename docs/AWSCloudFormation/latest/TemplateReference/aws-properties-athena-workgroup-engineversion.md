@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-athena-workgroup-engineversion-syntax.json"></a>
 
-```
+```json
 {
   "[EffectiveEngineVersion](#cfn-athena-workgroup-engineversion-effectiveengineversion)" : {{String}},
   "[SelectedEngineVersion](#cfn-athena-workgroup-engineversion-selectedengineversion)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-athena-workgroup-engineversion-syntax.yaml"></a>
 
-```
+```yaml
   [EffectiveEngineVersion](#cfn-athena-workgroup-engineversion-effectiveengineversion): {{String}}
   [SelectedEngineVersion](#cfn-athena-workgroup-engineversion-selectedengineversion): {{String}}
 ```

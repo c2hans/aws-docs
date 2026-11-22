@@ -8,7 +8,7 @@ The Connect Customer SDK provides an `AgentClient` which serves as an interface 
 
 To create an `AgentClient`, pass it the `provider` that `AmazonConnectApp.init` returns. For details, see [Initialize the Connect Customer SDK in your application for Connect Customer agent workspace](getting-started-initialize-sdk.md). This is the recommended option.
 
-```
+```typescript
 import { AmazonConnectApp } from "@amazon-connect/app";
 import { AgentClient } from "@amazon-connect/contact";
 
@@ -23,7 +23,7 @@ const agentClient = new AgentClient(provider);
 
 The constructor argument has the type `ConnectClientConfig`, which is defined as follows:
 
-```
+```typescript
 type ConnectClientConfig =
   | AmazonConnectProvider
   | { context: ModuleContext; provider?: AmazonConnectProvider }

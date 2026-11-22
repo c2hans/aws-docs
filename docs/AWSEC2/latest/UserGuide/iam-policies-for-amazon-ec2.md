@@ -27,7 +27,7 @@ To get started, you can check whether the AWS managed policies for Amazon EC2 me
 
 An IAM policy is a JSON document that consists of one or more statements. Each statement is structured as follows.
 
-```
+```json
 {
   "Statement":[{
     "Effect":"{{effect}}",
@@ -58,13 +58,13 @@ In an IAM policy statement, you can specify any API action from any service that
 
 To specify multiple actions in a single statement, separate them with commas as follows:
 
-```
+```json
 "Action": ["ec2:action1", "ec2:action2"]
 ```
 
 You can also specify multiple actions using wildcards. For example, you can specify all actions whose name begins with the word "Describe" as follows:
 
-```
+```json
 "Action": "ec2:Describe*"
 ```
 
@@ -73,7 +73,7 @@ Currently, the Amazon EC2 Describe\* API actions do not support resource-level p
 
 To specify all Amazon EC2 API actions, use the \* wildcard as follows:
 
-```
+```json
 "Action": "ec2:*"
 ```
 
@@ -97,7 +97,7 @@ Each IAM policy statement applies to the resources that you specify using their 
 
 An ARN has the following general syntax:
 
-```
+```json
 arn:aws:[service]:[region]:[account-id]:resourceType/resourcePath
 ```
 
@@ -118,31 +118,31 @@ A path that identifies the resource. You can use the \* wildcard in your paths.
 
 For example, you can indicate a specific instance (`i-1234567890abcdef0`) in your statement using its ARN as follows.
 
-```
+```json
 "Resource": "arn:aws:ec2:us-east-1:123456789012:instance/i-1234567890abcdef0"
 ```
 
 You can specify all instances that belong to a specific account by using the \* wildcard as follows.
 
-```
+```json
 "Resource": "arn:aws:ec2:us-east-1:123456789012:instance/*"
 ```
 
 You can also specify all Amazon EC2 resources that belong to a specific account by using the \* wildcard as follows.
 
-```
+```json
 "Resource": "arn:aws:ec2:us-east-1:123456789012:*"
 ```
 
 To specify all resources, or if a specific API action does not support ARNs, use the \* wildcard in the `Resource` element as follows.
 
-```
+```json
 "Resource": "*"
 ```
 
 Many Amazon EC2 API actions involve multiple resources. For example, `AttachVolume` attaches an Amazon EBS volume to an instance, so a user must have permissions to use the volume and the instance. To specify multiple resources in a single statement, separate their ARNs with commas, as follows.
 
-```
+```json
 "Resource": ["arn1", "arn2"]
 ```
 
@@ -164,7 +164,7 @@ To use a condition key in your IAM policy, use the `Condition` statement. For ex
 
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
   "Statement":[{
@@ -213,7 +213,7 @@ For example, the following policy uses the `ec2:Attribute/Description` condition
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -243,7 +243,7 @@ The following example policy uses the `ec2:Attribute` condition key to filter ac
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -273,7 +273,7 @@ When using the following `ec2:{{Resource}}ID` condition keys with the specified 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -316,7 +316,7 @@ To filter access based on specific resource IDs, we recommend that you use the `
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -343,7 +343,7 @@ When you create an IAM policy that grants users permission to use EC2 resources,
 
 For example, you can create a policy that allows users to terminate an instance, but denies the action if the instance has the tag `environment=production`. To do this, you use the `aws:ResourceTag` condition key to allow or deny access to the resource based on the tags that are attached to the resource.
 
-```
+```json
 "StringEquals": { "aws:ResourceTag/environment": "production" }
 ```
 

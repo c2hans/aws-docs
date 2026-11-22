@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-spotfleet-spotfleetmonitoring-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-ec2-spotfleet-spotfleetmonitoring-enabled)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-spotfleet-spotfleetmonitoring-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-ec2-spotfleet-spotfleetmonitoring-enabled): {{Boolean}}
 ```
 

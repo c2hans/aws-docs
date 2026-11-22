@@ -42,7 +42,7 @@ Create an Amazon SNS topic in the same region as your investigation. For more in
 
 To enable CloudWatch investigations to send notifications, you must add an the following access policy to the Amazon SNS topic
 
-```
+```json
 {
     "Sid": "AIOPSChatPublish",
     "Effect": "Allow",

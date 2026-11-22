@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-nodegroup-warmpoolconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-eks-nodegroup-warmpoolconfig-enabled)" : {{Boolean}},
   "[MaxGroupPreparedCapacity](#cfn-eks-nodegroup-warmpoolconfig-maxgrouppreparedcapacity)" : {{Integer}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-nodegroup-warmpoolconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-eks-nodegroup-warmpoolconfig-enabled): {{Boolean}}
   [MaxGroupPreparedCapacity](#cfn-eks-nodegroup-warmpoolconfig-maxgrouppreparedcapacity): {{Integer}}
   [MinSize](#cfn-eks-nodegroup-warmpoolconfig-minsize): {{Integer}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-nluimprovementspecification-syntax.json"></a>
 
-```
+```json
 {
   "[AssistedNluMode](#cfn-lex-bot-nluimprovementspecification-assistednlumode)" : {{String}},
   "[Enabled](#cfn-lex-bot-nluimprovementspecification-enabled)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-nluimprovementspecification-syntax.yaml"></a>
 
-```
+```yaml
   [AssistedNluMode](#cfn-lex-bot-nluimprovementspecification-assistednlumode): {{String}}
   [Enabled](#cfn-lex-bot-nluimprovementspecification-enabled): {{Boolean}}
   [IntentDisambiguationSettings](#cfn-lex-bot-nluimprovementspecification-intentdisambiguationsettings): {{

@@ -15,14 +15,18 @@ When you create the IAM OIDC provider, you specify the following:
 + A list of client IDs (also known as audiences) that identify the application or applications allowed to authenticate using the OIDC provider
 + A list of tags that are attached to the specified IAM OIDC provider
 + A list of thumbprints of one or more server certificates that the IdP uses
++ A trusted identity propagation context provider that defines how the subject is derived and how keys from the provider's token are mapped into trusted context keys. Specifying a context provider enables trusted identity propagation for the provider. For more information, see [ContextProvider](https://docs.aws.amazon.com/IAM/latest/APIReference/API_ContextProvider.html).
++ The ARN of an IAM Identity Center instance to associate with the OIDC provider. If you specify an IAM Identity Center instance, you must also specify a context provider.
 
-You get all of this information from the OIDC IdP you want to use to access AWS.
+You get the URL, client IDs, and thumbprints from the OIDC IdP you want to use to access AWS.
 
 **Note**
  AWS secures communication with OIDC identity providers (IdPs) using our library of trusted root certificate authorities (CAs) to verify the JSON Web Key Set (JWKS) endpoint's TLS certificate. If your OIDC IdP relies on a certificate that is not signed by one of these trusted CAs, only then we secure communication using the thumbprints set in the IdP's configuration.
 
 **Note**
 The trust for the OIDC provider is derived from the IAM provider that this operation creates. Therefore, it is best to limit access to the [CreateOpenIDConnectProvider](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateOpenIDConnectProvider.html) operation to highly privileged users.
+
+To control who can configure trusted identity propagation on an OIDC provider, use the [iam:EnableIdentityPropagation](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_EnableIdentityPropagation), [iam:EnableIdentityCenterAssociation](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_EnableIdentityCenterAssociation), [iam:RequestIdentityProviderIssuers](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_RequestIdentityProviderIssuers), [iam:ResourceIdentityProviderIssuers](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_ResourceIdentityProviderIssuers), [iam:RequestIdentityCenterInstanceArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_RequestIdentityCenterInstanceArn), and [iam:ResourceIdentityCenterInstanceArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_ResourceIdentityCenterInstanceArn) condition keys in IAM policies. The `Request` keys contain the values in the request. The `Resource` keys contain the values stored on the provider.
 
 ## Request Parameters
 <a name="API_CreateOpenIDConnectProvider_RequestParameters"></a>
@@ -35,6 +39,18 @@ You can register multiple client IDs with the same provider. For example, you mi
 There is no defined format for a client ID. The `CreateOpenIDConnectProviderRequest` operation accepts client IDs up to 255 characters long.
 Type: Array of strings
 Length Constraints: Minimum length of 1. Maximum length of 255.
+Required: No
+
+ ** ContextProvider **
+The trusted identity propagation context provider configuration to associate with the OpenID Connect (OIDC) provider. The context provider defines how the subject is derived and how keys from the provider's token are mapped into trusted context keys. Specifying a context provider enables trusted identity propagation for the provider. For more information, see [ContextProvider](https://docs.aws.amazon.com/IAM/latest/APIReference/API_ContextProvider.html).
+Type: [ContextProvider](API_ContextProvider.md) object
+Required: No
+
+ ** IdentityCenterInstanceArn **
+The Amazon Resource Name (ARN) of the IAM Identity Center instance to associate with the OpenID Connect (OIDC) provider. If you specify this parameter, you must also specify `ContextProvider`.
+For the format, see [InstanceMetadata](https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_InstanceMetadata.html) in the *IAM Identity Center API Reference*.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 1224.
 Required: No
 
  **Tags.member.N**
@@ -122,6 +138,11 @@ https://iam.amazonaws.com/?Action=CreateOpenIDConnectProvider
 &ThumbprintList.list.1=c3768084dfb3d2b68b7897bf5f565da8eEXAMPLE
 &ClientIDList.list.1=my-application-ID
 &Url=https://server.example.com
+&ContextProvider.SubjectSourceKey=sub
+&ContextProvider.SubjectTypeValue=user
+&ContextProvider.KeyDefinitionList.member.1.SourceKey=department
+&ContextProvider.KeyDefinitionList.member.1.TargetKey=department
+&IdentityCenterInstanceArn=arn:aws:sso:::instance/ssoins-1234567890abcdef
 &Version=2010-05-08
 &AUTHPARAMS
 ```

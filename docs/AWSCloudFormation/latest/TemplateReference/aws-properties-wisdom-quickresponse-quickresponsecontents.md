@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-quickresponse-quickresponsecontents-syntax.json"></a>
 
-```
+```json
 {
   "[Markdown](#cfn-wisdom-quickresponse-quickresponsecontents-markdown)" : {{QuickResponseContentProvider}},
   "[PlainText](#cfn-wisdom-quickresponse-quickresponsecontents-plaintext)" : {{QuickResponseContentProvider}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-quickresponse-quickresponsecontents-syntax.yaml"></a>
 
-```
+```yaml
   [Markdown](#cfn-wisdom-quickresponse-quickresponsecontents-markdown): {{
     QuickResponseContentProvider}}
   [PlainText](#cfn-wisdom-quickresponse-quickresponsecontents-plaintext): {{

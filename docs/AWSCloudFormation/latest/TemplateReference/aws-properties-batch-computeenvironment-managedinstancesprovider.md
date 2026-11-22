@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-computeenvironment-managedinstancesprovider-syntax.json"></a>
 
-```
+```json
 {
   "[InfrastructureOptimization](#cfn-batch-computeenvironment-managedinstancesprovider-infrastructureoptimization)" : {{InfrastructureOptimization}},
   "[InfrastructureRoleArn](#cfn-batch-computeenvironment-managedinstancesprovider-infrastructurerolearn)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-computeenvironment-managedinstancesprovider-syntax.yaml"></a>
 
-```
+```yaml
   [InfrastructureOptimization](#cfn-batch-computeenvironment-managedinstancesprovider-infrastructureoptimization): {{
     InfrastructureOptimization}}
   [InfrastructureRoleArn](#cfn-batch-computeenvironment-managedinstancesprovider-infrastructurerolearn): {{String}}

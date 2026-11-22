@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-batch-computeenvironment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Batch::ComputeEnvironment",
   "Properties" : {
@@ -66,7 +66,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-batch-computeenvironment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Batch::ComputeEnvironment
 Properties:
   [ComputeEnvironmentName](#cfn-batch-computeenvironment-computeenvironmentname): {{String}}
@@ -220,7 +220,7 @@ The following example creates a managed compute environment called `C4OnDemand` 
 #### JSON
 <a name="aws-resource-batch-computeenvironment--examples--Managed_Compute_Environment--json"></a>
 
-```
+```json
 {
   "ComputeEnvironment": {
     "Type": "AWS::Batch::ComputeEnvironment",
@@ -264,7 +264,7 @@ The following example creates a managed compute environment called `C4OnDemand` 
 #### YAML
 <a name="aws-resource-batch-computeenvironment--examples--Managed_Compute_Environment--yaml"></a>
 
-```
+```yaml
 ComputeEnvironment:
   Type: 'AWS::Batch::ComputeEnvironment'
   Properties:
@@ -304,7 +304,7 @@ The following example creates a managed compute environment that uses Amazon EKS
 #### JSON
 <a name="aws-resource-batch-computeenvironment--examples--EKS_Compute_Environment--json"></a>
 
-```
+```json
 {
   "BatchComputeEnvironment": {
     "Type": "AWS::Batch::ComputeEnvironment",
@@ -347,7 +347,7 @@ The following example creates a managed compute environment that uses Amazon EKS
 #### YAML
 <a name="aws-resource-batch-computeenvironment--examples--EKS_Compute_Environment--yaml"></a>
 
-```
+```yaml
 BatchComputeEnvironment:
   Type: 'AWS::Batch::ComputeEnvironment'
   Properties:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-flowversion-knowledgebaseorchestrationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AdditionalModelRequestFields](#cfn-bedrock-flowversion-knowledgebaseorchestrationconfiguration-additionalmodelrequestfields)" : {{Json}},
   "[InferenceConfig](#cfn-bedrock-flowversion-knowledgebaseorchestrationconfiguration-inferenceconfig)" : {{PromptInferenceConfiguration}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-flowversion-knowledgebaseorchestrationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AdditionalModelRequestFields](#cfn-bedrock-flowversion-knowledgebaseorchestrationconfiguration-additionalmodelrequestfields): {{Json}}
   [InferenceConfig](#cfn-bedrock-flowversion-knowledgebaseorchestrationconfiguration-inferenceconfig): {{
     PromptInferenceConfiguration}}

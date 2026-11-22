@@ -27,7 +27,7 @@ For example, you could set up the following policy to the client. This example a
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

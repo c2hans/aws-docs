@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-datalabeltype-syntax.json"></a>
 
-```
+```json
 {
   "[DataPathLabelType](#cfn-quicksight-dashboard-datalabeltype-datapathlabeltype)" : {{DataPathLabelType}},
   "[FieldLabelType](#cfn-quicksight-dashboard-datalabeltype-fieldlabeltype)" : {{FieldLabelType}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-datalabeltype-syntax.yaml"></a>
 
-```
+```yaml
   [DataPathLabelType](#cfn-quicksight-dashboard-datalabeltype-datapathlabeltype): {{
     DataPathLabelType}}
   [FieldLabelType](#cfn-quicksight-dashboard-datalabeltype-fieldlabeltype): {{

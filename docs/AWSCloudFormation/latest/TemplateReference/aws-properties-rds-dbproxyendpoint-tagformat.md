@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rds-dbproxyendpoint-tagformat-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-rds-dbproxyendpoint-tagformat-key)" : {{String}},
   "[Value](#cfn-rds-dbproxyendpoint-tagformat-value)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rds-dbproxyendpoint-tagformat-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-rds-dbproxyendpoint-tagformat-key): {{String}}
   [Value](#cfn-rds-dbproxyendpoint-tagformat-value): {{String}}
 ```
@@ -63,7 +63,7 @@ The following example specifies a tag for a DB proxy endpoint.
 #### JSON
 <a name="aws-properties-rds-dbproxyendpoint-tagformat--examples----json"></a>
 
-```
+```json
 "Tags" : [
    {
       "Key" : "keyname1",
@@ -79,7 +79,7 @@ The following example specifies a tag for a DB proxy endpoint.
 #### YAML
 <a name="aws-properties-rds-dbproxyendpoint-tagformat--examples----yaml"></a>
 
-```
+```yaml
 Tags:
   - Key: keyname1
     Value: value1

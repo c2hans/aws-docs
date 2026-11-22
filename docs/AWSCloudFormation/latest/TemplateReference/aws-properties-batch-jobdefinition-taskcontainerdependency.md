@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-taskcontainerdependency-syntax.json"></a>
 
-```
+```json
 {
   "[Condition](#cfn-batch-jobdefinition-taskcontainerdependency-condition)" : {{String}},
   "[ContainerName](#cfn-batch-jobdefinition-taskcontainerdependency-containername)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-taskcontainerdependency-syntax.yaml"></a>
 
-```
+```yaml
   [Condition](#cfn-batch-jobdefinition-taskcontainerdependency-condition): {{String}}
   [ContainerName](#cfn-batch-jobdefinition-taskcontainerdependency-containername): {{String}}
 ```

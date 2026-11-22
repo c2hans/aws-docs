@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-acmpca-certificate-edipartyname-syntax.json"></a>
 
-```
+```json
 {
   "[NameAssigner](#cfn-acmpca-certificate-edipartyname-nameassigner)" : {{String}},
   "[PartyName](#cfn-acmpca-certificate-edipartyname-partyname)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-acmpca-certificate-edipartyname-syntax.yaml"></a>
 
-```
+```yaml
   [NameAssigner](#cfn-acmpca-certificate-edipartyname-nameassigner): {{String}}
   [PartyName](#cfn-acmpca-certificate-edipartyname-partyname): {{String}}
 ```

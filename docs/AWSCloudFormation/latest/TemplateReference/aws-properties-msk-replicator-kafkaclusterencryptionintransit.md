@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-replicator-kafkaclusterencryptionintransit-syntax.json"></a>
 
-```
+```json
 {
   "[EncryptionType](#cfn-msk-replicator-kafkaclusterencryptionintransit-encryptiontype)" : {{String}},
   "[RootCaCertificate](#cfn-msk-replicator-kafkaclusterencryptionintransit-rootcacertificate)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-replicator-kafkaclusterencryptionintransit-syntax.yaml"></a>
 
-```
+```yaml
   [EncryptionType](#cfn-msk-replicator-kafkaclusterencryptionintransit-encryptiontype): {{String}}
   [RootCaCertificate](#cfn-msk-replicator-kafkaclusterencryptionintransit-rootcacertificate): {{String}}
 ```

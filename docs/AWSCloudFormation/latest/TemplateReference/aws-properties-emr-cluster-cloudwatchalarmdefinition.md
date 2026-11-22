@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emr-cluster-cloudwatchalarmdefinition-syntax.json"></a>
 
-```
+```json
 {
   "[ComparisonOperator](#cfn-emr-cluster-cloudwatchalarmdefinition-comparisonoperator)" : {{String}},
   "[Dimensions](#cfn-emr-cluster-cloudwatchalarmdefinition-dimensions)" : {{[ MetricDimension, ... ]}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emr-cluster-cloudwatchalarmdefinition-syntax.yaml"></a>
 
-```
+```yaml
   [ComparisonOperator](#cfn-emr-cluster-cloudwatchalarmdefinition-comparisonoperator): {{String}}
   [Dimensions](#cfn-emr-cluster-cloudwatchalarmdefinition-dimensions): {{
     - MetricDimension}}

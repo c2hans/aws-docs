@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-datasource-vectoringestionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ChunkingConfiguration](#cfn-bedrock-datasource-vectoringestionconfiguration-chunkingconfiguration)" : {{ChunkingConfiguration}},
   "[ContextEnrichmentConfiguration](#cfn-bedrock-datasource-vectoringestionconfiguration-contextenrichmentconfiguration)" : {{ContextEnrichmentConfiguration}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-datasource-vectoringestionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ChunkingConfiguration](#cfn-bedrock-datasource-vectoringestionconfiguration-chunkingconfiguration): {{
     ChunkingConfiguration}}
   [ContextEnrichmentConfiguration](#cfn-bedrock-datasource-vectoringestionconfiguration-contextenrichmentconfiguration): {{

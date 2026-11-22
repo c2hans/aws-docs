@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-instance-metadataoptions-syntax.json"></a>
 
-```
+```json
 {
   "[HttpEndpoint](#cfn-ec2-instance-metadataoptions-httpendpoint)" : {{String}},
   "[HttpProtocolIpv6](#cfn-ec2-instance-metadataoptions-httpprotocolipv6)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-instance-metadataoptions-syntax.yaml"></a>
 
-```
+```yaml
   [HttpEndpoint](#cfn-ec2-instance-metadataoptions-httpendpoint): {{String}}
   [HttpProtocolIpv6](#cfn-ec2-instance-metadataoptions-httpprotocolipv6): {{String}}
   [HttpPutResponseHopLimit](#cfn-ec2-instance-metadataoptions-httpputresponsehoplimit): {{Integer}}

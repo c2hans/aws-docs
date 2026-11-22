@@ -128,6 +128,8 @@ Instance types with burstable network performance use a network I/O credit mecha
 ## Current Generation (Valkey)
 <a name="CacheNodes.CurrentGen-Valkey"></a>
 
+The `cache.i8ge.48xlarge` node type is supported for distributed KV caching only. For more information, see [Distributed KV caching](distributed-kv-caching.md).
+
 **General**
 
 | Instance type | Minimum supported Valkey version | Enhanced I/O | TLS Offloading | Enhanced I/O Multiplexing | Baseline bandwidth (Gbps) | Burst bandwidth (Gbps) | Memory (GiB) |
@@ -250,6 +252,12 @@ Instance types with burstable network performance use a network I/O credit mecha
 | cache.c7gn.8xlarge | 7.2 | Yes | Yes | Yes | 100 | N/A | 52.26 |
 | cache.c7gn.12xlarge | 7.2 | Yes | Yes | Yes | 150 | N/A | 78.56 |
 | cache.c7gn.16xlarge | 7.2 | Yes | Yes | Yes | 200 | N/A | 105.81 |
+
+**Storage optimized**
+
+| Instance type | Minimum supported Valkey version | Enhanced I/O | TLS Offloading | Enhanced I/O Multiplexing | Baseline bandwidth (Gbps) | Burst bandwidth (Gbps) | Memory (GiB) | Instance NVMe storage (TB) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| cache.i8ge.48xlarge | 9.1 | Yes | Yes | Yes | 220 | N/A | 1517.52 | 120 |
 
 ## Current Generation (Redis OSS)
 <a name="CacheNodes.CurrentGen-Redis"></a>
@@ -401,6 +409,8 @@ Previous generation node types are no longer available for new cluster creation.
 <a name="CacheNodes.SupportedTypesByRegion"></a>
 
 Supported node types may vary between AWS Regions. For more details, see [Amazon ElastiCache pricing](https://aws.amazon.com/elasticache/pricing/).
+
+The `cache.i8ge.48xlarge` node type is available only in the Regions listed in [Distributed KV caching](distributed-kv-caching.md).
 
 ## Related Information
 <a name="CacheNodes.RelatedInfo"></a>

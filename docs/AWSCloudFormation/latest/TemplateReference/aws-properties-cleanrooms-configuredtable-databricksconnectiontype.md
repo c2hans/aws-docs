@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-configuredtable-databricksconnectiontype-syntax.json"></a>
 
-```
+```json
 {
   "[DeltaSharing](#cfn-cleanrooms-configuredtable-databricksconnectiontype-deltasharing)" : {{DatabricksDeltaSharingConnection}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-configuredtable-databricksconnectiontype-syntax.yaml"></a>
 
-```
+```yaml
   [DeltaSharing](#cfn-cleanrooms-configuredtable-databricksconnectiontype-deltasharing): {{
     DatabricksDeltaSharingConnection}}
 ```

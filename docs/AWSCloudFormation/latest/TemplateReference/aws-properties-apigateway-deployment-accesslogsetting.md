@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apigateway-deployment-accesslogsetting-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationArn](#cfn-apigateway-deployment-accesslogsetting-destinationarn)" : {{String}},
   "[Format](#cfn-apigateway-deployment-accesslogsetting-format)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apigateway-deployment-accesslogsetting-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationArn](#cfn-apigateway-deployment-accesslogsetting-destinationarn): {{String}}
   [Format](#cfn-apigateway-deployment-accesslogsetting-format): {{String}}
 ```

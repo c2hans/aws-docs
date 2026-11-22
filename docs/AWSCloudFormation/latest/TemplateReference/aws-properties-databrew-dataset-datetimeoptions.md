@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-databrew-dataset-datetimeoptions-syntax.json"></a>
 
-```
+```json
 {
   "[Format](#cfn-databrew-dataset-datetimeoptions-format)" : {{String}},
   "[LocaleCode](#cfn-databrew-dataset-datetimeoptions-localecode)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-databrew-dataset-datetimeoptions-syntax.yaml"></a>
 
-```
+```yaml
   [Format](#cfn-databrew-dataset-datetimeoptions-format): {{String}}
   [LocaleCode](#cfn-databrew-dataset-datetimeoptions-localecode): {{String}}
   [TimezoneOffset](#cfn-databrew-dataset-datetimeoptions-timezoneoffset): {{String}}

@@ -26,7 +26,7 @@ This payload contains information about the capacity Amazon EC2 Auto Scaling nee
 
 The following is an example payload:
 
-```
+```json
 {
   "AutoScalingGroupARN": "arn:aws:autoscaling:us-east-1:<account-id>:autoScalingGroup:d4738357-2d40-4038-ae7e-b00ae0227003:autoScalingGroupName/my-asg",
   "AutoScalingGroupName": "my-asg",
@@ -88,7 +88,7 @@ The input data and response data work together to narrow down the list of instan
 
 With the given input, the response from your Lambda function should look like the following example:
 
-```
+```json
 {
   "InstanceIDs": [
     "i-02e1c69383a3ed501",
@@ -104,7 +104,7 @@ Alternatively, you can return a different set of instances that are ready to be 
 
 When no instances are ready to terminate, the response from your Lambda function should look like the following example:
 
-```
+```json
 {
   "InstanceIDs": [ ]
 }

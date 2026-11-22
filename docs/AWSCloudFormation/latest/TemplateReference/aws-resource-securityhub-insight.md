@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-securityhub-insight-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SecurityHub::Insight",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-securityhub-insight-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SecurityHub::Insight
 Properties:
   [Filters](#cfn-securityhub-insight-filters): {{
@@ -99,7 +99,7 @@ The following example creates a custom Security Hub CSPM insight. The insight in
 #### JSON
 <a name="aws-resource-securityhub-insight--examples--Creating_a_insight--json"></a>
 
-```
+```json
 {
     "Description": "Example template to create a Security Hub insight",
     "Resources": {
@@ -179,7 +179,7 @@ The following example creates a custom Security Hub CSPM insight. The insight in
 #### YAML
 <a name="aws-resource-securityhub-insight--examples--Creating_a_insight--yaml"></a>
 
-```
+```yaml
 Description: Example template to create a Security Hub insight
 Resources:
   SecurityHubInsight:

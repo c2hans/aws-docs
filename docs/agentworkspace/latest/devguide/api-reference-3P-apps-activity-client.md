@@ -8,7 +8,7 @@ The Connect Customer SDK provides a `SessionExpirationWarningClient` which serve
 
 The `SessionExpirationWarningClient` constructor requires a `ConnectClientConfig` argument, which is defined as:
 
-```
+```typescript
 export type ConnectClientConfig =
     | AmazonConnectProvider
     | { context: ModuleContext; provider?: AmazonConnectProvider }
@@ -17,7 +17,7 @@ export type ConnectClientConfig =
 
 Pass the `provider` that `AmazonConnectApp.init` returns to the constructor. You must provide this argument.
 
-```
+```typescript
 import { SessionExpirationWarningClient } from "@amazon-connect/activity";
 
 const sessionExpirationWarningClient = new SessionExpirationWarningClient(provider);

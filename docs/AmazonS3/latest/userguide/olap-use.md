@@ -39,13 +39,13 @@ To use an Object Lambda Access Point with the AWS CLI or AWS SDKs, you need to k
 
 1. To retrieve a list of the Object Lambda Access Points that are associated with your AWS account, run the following command. Before running the command, replace the account ID {{`111122223333`}} with your AWS account ID.
 
-   ```
+   ```bash
    aws s3control list-access-points-for-object-lambda --account-id {{111122223333}}
    ```
 
 1. Review the command output to find the Object Lambda Access Point ARN that you want to use. The output of the previous command should look similar to the following example.
 
-   ```
+   ```json
    {
        "ObjectLambdaAccessPointList": [
            {
@@ -98,7 +98,7 @@ When you delete an Object Lambda Access Point, the Object Lambda Access Point al
 
 When you create an Object Lambda Access Point, Amazon S3 automatically generates an Object Lambda Access Point alias name, as shown in the following example command. To run this command, replace the `{{user input placeholders}}` with your own information. For information about how to create an Object Lambda Access Point by using the AWS CLI, see [To create an Object Lambda Access Point by using the AWS CLI](olap-create.md#olap-create-cli-specific).
 
-```
+```bash
 aws s3control create-access-point-for-object-lambda --account-id {{111122223333}} --name {{my-object-lambda-access-point}} --configuration file://{{my-olap-configuration.json}}
 {
     "ObjectLambdaAccessPointArn": "arn:aws:s3:{{region}}:{{111122223333}}:accesspoint/{{my-access-point}}",
@@ -122,7 +122,7 @@ You can use an Object Lambda Access Point alias instead of an Amazon S3 bucket n
 
 The following AWS CLI example for the `get-bucket-location` command uses the bucket's access point alias to return the AWS Region that the bucket is in. To run this command, replace the `{{user input placeholders}}` with your own information.
 
-```
+```xml
 aws s3api get-bucket-location --bucket {{my-object-lambda-acc}}-{{w7i37nq6xuzgax3jw3oqtifiusw2a}}--ol-s3
 
 {

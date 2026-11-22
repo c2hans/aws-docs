@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigatewayv2-apigatewaymanagedoverrides-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGatewayV2::ApiGatewayManagedOverrides",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigatewayv2-apigatewaymanagedoverrides-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGatewayV2::ApiGatewayManagedOverrides
 Properties:
   [ApiId](#cfn-apigatewayv2-apigatewaymanagedoverrides-apiid): {{String}}

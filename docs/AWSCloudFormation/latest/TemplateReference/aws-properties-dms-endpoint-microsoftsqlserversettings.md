@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dms-endpoint-microsoftsqlserversettings-syntax.json"></a>
 
-```
+```json
 {
   "[BcpPacketSize](#cfn-dms-endpoint-microsoftsqlserversettings-bcppacketsize)" : {{Integer}},
   "[ControlTablesFileGroup](#cfn-dms-endpoint-microsoftsqlserversettings-controltablesfilegroup)" : {{String}},
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dms-endpoint-microsoftsqlserversettings-syntax.yaml"></a>
 
-```
+```yaml
   [BcpPacketSize](#cfn-dms-endpoint-microsoftsqlserversettings-bcppacketsize): {{Integer}}
   [ControlTablesFileGroup](#cfn-dms-endpoint-microsoftsqlserversettings-controltablesfilegroup): {{String}}
   [DatabaseName](#cfn-dms-endpoint-microsoftsqlserversettings-databasename): {{String}}

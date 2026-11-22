@@ -55,7 +55,7 @@ Example Corp can use any string value they want for the ExternalId, as long as i
 
 1. You sign in to AWS and create an IAM role that gives Example Corp access to your resources. Like any IAM role, the role has two policies, a permission policy and a trust policy. The role's trust policy specifies who can assume the role. In our sample scenario, the policy specifies the AWS account number of Example Corp as the `Principal`. This allows identities from that account to assume the role. In addition, you add a `[Condition](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html#Condition)` element to the trust policy. This `Condition` tests the `ExternalId` context key to ensure that it matches the unique customer ID from Example Corp. For example:
 
-   ```
+   ```json
        "Principal": {"AWS": "{{Example Corp's AWS account ID}}"},
        "Condition": {"StringEquals": {"sts:ExternalId": "{{Unique ID Assigned by Example Corp}}"}}
    ```

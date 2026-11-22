@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchservice-domain-servicesoftwareoptions-syntax.json"></a>
 
-```
+```json
 {
   "[AutomatedUpdateDate](#cfn-opensearchservice-domain-servicesoftwareoptions-automatedupdatedate)" : {{String}},
   "[Cancellable](#cfn-opensearchservice-domain-servicesoftwareoptions-cancellable)" : {{Boolean}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchservice-domain-servicesoftwareoptions-syntax.yaml"></a>
 
-```
+```yaml
   [AutomatedUpdateDate](#cfn-opensearchservice-domain-servicesoftwareoptions-automatedupdatedate): {{String}}
   [Cancellable](#cfn-opensearchservice-domain-servicesoftwareoptions-cancellable): {{Boolean}}
   [CurrentVersion](#cfn-opensearchservice-domain-servicesoftwareoptions-currentversion): {{String}}

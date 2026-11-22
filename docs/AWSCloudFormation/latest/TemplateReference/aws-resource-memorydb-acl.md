@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-memorydb-acl-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MemoryDB::ACL",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-memorydb-acl-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MemoryDB::ACL
 Properties:
   [ACLName](#cfn-memorydb-acl-aclname): {{String}}

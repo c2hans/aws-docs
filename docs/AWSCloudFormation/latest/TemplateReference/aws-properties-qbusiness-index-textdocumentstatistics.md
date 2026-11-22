@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-qbusiness-index-textdocumentstatistics-syntax.json"></a>
 
-```
+```json
 {
   "[IndexedTextBytes](#cfn-qbusiness-index-textdocumentstatistics-indexedtextbytes)" : {{Number}},
   "[IndexedTextDocumentCount](#cfn-qbusiness-index-textdocumentstatistics-indexedtextdocumentcount)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-qbusiness-index-textdocumentstatistics-syntax.yaml"></a>
 
-```
+```yaml
   [IndexedTextBytes](#cfn-qbusiness-index-textdocumentstatistics-indexedtextbytes): {{Number}}
   [IndexedTextDocumentCount](#cfn-qbusiness-index-textdocumentstatistics-indexedtextdocumentcount): {{Number}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-catalog-catalogproperties-syntax.json"></a>
 
-```
+```json
 {
   "[CustomProperties](#cfn-glue-catalog-catalogproperties-customproperties)" : {{{{{Key}}: {{Value}}, ...}}},
   "[DataLakeAccessProperties](#cfn-glue-catalog-catalogproperties-datalakeaccessproperties)" : {{DataLakeAccessProperties}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-catalog-catalogproperties-syntax.yaml"></a>
 
-```
+```yaml
   [CustomProperties](#cfn-glue-catalog-catalogproperties-customproperties): {{
     {{Key}}: {{Value}}}}
   [DataLakeAccessProperties](#cfn-glue-catalog-catalogproperties-datalakeaccessproperties): {{

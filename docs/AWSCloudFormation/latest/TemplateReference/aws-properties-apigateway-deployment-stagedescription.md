@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apigateway-deployment-stagedescription-syntax.json"></a>
 
-```
+```json
 {
   "[AccessLogSetting](#cfn-apigateway-deployment-stagedescription-accesslogsetting)" : {{AccessLogSetting}},
   "[CacheClusterEnabled](#cfn-apigateway-deployment-stagedescription-cacheclusterenabled)" : {{Boolean}},
@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apigateway-deployment-stagedescription-syntax.yaml"></a>
 
-```
+```yaml
   [AccessLogSetting](#cfn-apigateway-deployment-stagedescription-accesslogsetting): {{
     AccessLogSetting}}
   [CacheClusterEnabled](#cfn-apigateway-deployment-stagedescription-cacheclusterenabled): {{Boolean}}

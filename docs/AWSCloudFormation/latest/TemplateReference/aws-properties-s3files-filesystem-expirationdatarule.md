@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3files-filesystem-expirationdatarule-syntax.json"></a>
 
-```
+```json
 {
   "[DaysAfterLastAccess](#cfn-s3files-filesystem-expirationdatarule-daysafterlastaccess)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3files-filesystem-expirationdatarule-syntax.yaml"></a>
 
-```
+```yaml
   [DaysAfterLastAccess](#cfn-s3files-filesystem-expirationdatarule-daysafterlastaccess): {{Integer}}
 ```
 

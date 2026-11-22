@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-codebuild-sourcecredential-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CodeBuild::SourceCredential",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-codebuild-sourcecredential-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CodeBuild::SourceCredential
 Properties:
   [AuthType](#cfn-codebuild-sourcecredential-authtype): {{String}}
@@ -90,7 +90,7 @@ Properties:
 #### YAML
 <a name="aws-resource-codebuild-sourcecredential--examples--Create_Bitbucket_source_credentials_using--yaml"></a>
 
-```
+```yaml
 CodeBuildSourceCredential:
   Type: 'AWS::CodeBuild::SourceCredential'
   Properties:
@@ -103,7 +103,7 @@ CodeBuildSourceCredential:
 #### JSON
 <a name="aws-resource-codebuild-sourcecredential--examples--Create_Bitbucket_source_credentials_using--json"></a>
 
-```
+```json
 {
    "CodeBuildSourceCredential": {
       "Type": "AWS::CodeBuild::SourceCredential",
@@ -123,7 +123,7 @@ CodeBuildSourceCredential:
 #### YAML
 <a name="aws-resource-codebuild-sourcecredential--examples--Create_GitHub_Enterprise_source_credentials_using--yaml"></a>
 
-```
+```yaml
 Resources:
   CodeBuildSourceCredential:
     Type: 'AWS::CodeBuild::SourceCredential'
@@ -136,7 +136,7 @@ Resources:
 #### JSON
 <a name="aws-resource-codebuild-sourcecredential--examples--Create_GitHub_Enterprise_source_credentials_using--json"></a>
 
-```
+```json
 {
    "Resources": {
       "CodeBuildSourceCredential": {
@@ -157,7 +157,7 @@ Resources:
 #### YAML
 <a name="aws-resource-codebuild-sourcecredential--examples--Create_GitHub_source_credentials_using--yaml"></a>
 
-```
+```yaml
 Resources:
   CodeBuildSourceCredential:
     Type: 'AWS::CodeBuild::SourceCredential'
@@ -170,7 +170,7 @@ Resources:
 #### JSON
 <a name="aws-resource-codebuild-sourcecredential--examples--Create_GitHub_source_credentials_using--json"></a>
 
-```
+```json
 {
    "Resources": {
       "CodeBuildSourceCredential": {
@@ -191,7 +191,7 @@ Resources:
 #### YAML
 <a name="aws-resource-codebuild-sourcecredential--examples--Import_source_credentials_for_Bitbucket--yaml"></a>
 
-```
+```yaml
 Resources:
   MySourceCreds:
     Type: 'AWS::CodeBuild::SourceCredential'
@@ -221,7 +221,7 @@ Resources:
 #### JSON
 <a name="aws-resource-codebuild-sourcecredential--examples--Import_source_credentials_for_Bitbucket--json"></a>
 
-```
+```json
 {
     "Resources": {
         "MySourceCreds": {
@@ -264,7 +264,7 @@ Resources:
 #### YAML
 <a name="aws-resource-codebuild-sourcecredential--examples--Import_source_credentials_for_Github--yaml"></a>
 
-```
+```yaml
 Resources:
   MySourceCreds:
     Type: 'AWS::CodeBuild::SourceCredential'
@@ -293,7 +293,7 @@ Resources:
 #### JSON
 <a name="aws-resource-codebuild-sourcecredential--examples--Import_source_credentials_for_Github--json"></a>
 
-```
+```json
 {
     "Resources": {
         "MySourceCreds": {

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-virtualnode-tlsvalidationcontextfiletrust-syntax.json"></a>
 
-```
+```json
 {
   "[CertificateChain](#cfn-appmesh-virtualnode-tlsvalidationcontextfiletrust-certificatechain)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-virtualnode-tlsvalidationcontextfiletrust-syntax.yaml"></a>
 
-```
+```yaml
   [CertificateChain](#cfn-appmesh-virtualnode-tlsvalidationcontextfiletrust-certificatechain): {{String}}
 ```
 

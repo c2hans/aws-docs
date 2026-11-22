@@ -42,7 +42,7 @@ When you create a table you must provide configuration details. For more informa
 
 **Request:**
 
-```
+```bash
 aws --region {{us-west-2}} \
 s3tables create-table \
 --endpoint {{https://ufwae60e2k.execute-api.us-west-2.amazonaws.com/personal/}} \

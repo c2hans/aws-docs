@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-waf-xssmatchset-xssmatchtuple-syntax.json"></a>
 
-```
+```json
 {
   "[FieldToMatch](#cfn-waf-xssmatchset-xssmatchtuple-fieldtomatch)" : {{FieldToMatch}},
   "[TextTransformation](#cfn-waf-xssmatchset-xssmatchtuple-texttransformation)" : {{String}}
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-waf-xssmatchset-xssmatchtuple-syntax.yaml"></a>
 
-```
+```yaml
   [FieldToMatch](#cfn-waf-xssmatchset-xssmatchtuple-fieldtomatch): {{
     FieldToMatch}}
   [TextTransformation](#cfn-waf-xssmatchset-xssmatchtuple-texttransformation): {{String}}

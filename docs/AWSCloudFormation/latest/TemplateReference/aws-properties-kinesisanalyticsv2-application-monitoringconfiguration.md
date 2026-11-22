@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisanalyticsv2-application-monitoringconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ConfigurationType](#cfn-kinesisanalyticsv2-application-monitoringconfiguration-configurationtype)" : {{String}},
   "[LogLevel](#cfn-kinesisanalyticsv2-application-monitoringconfiguration-loglevel)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisanalyticsv2-application-monitoringconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ConfigurationType](#cfn-kinesisanalyticsv2-application-monitoringconfiguration-configurationtype): {{String}}
   [LogLevel](#cfn-kinesisanalyticsv2-application-monitoringconfiguration-loglevel): {{String}}
   [MetricsLevel](#cfn-kinesisanalyticsv2-application-monitoringconfiguration-metricslevel): {{String}}

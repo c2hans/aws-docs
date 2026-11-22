@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudformation-lambdahook-stacknames-syntax.json"></a>
 
-```
+```json
 {
   "[Exclude](#cfn-cloudformation-lambdahook-stacknames-exclude)" : {{[ String, ... ]}},
   "[Include](#cfn-cloudformation-lambdahook-stacknames-include)" : {{[ String, ... ]}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudformation-lambdahook-stacknames-syntax.yaml"></a>
 
-```
+```yaml
   [Exclude](#cfn-cloudformation-lambdahook-stacknames-exclude): {{
     - String}}
   [Include](#cfn-cloudformation-lambdahook-stacknames-include): {{

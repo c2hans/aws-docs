@@ -50,7 +50,7 @@ The following role trust policy allows your SAML identity provider and the `test
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -89,7 +89,7 @@ Configure your SAML IdP to pass the `cost-center`, `access-project`, and `access
 
 To pass these attributes as session tags, include the following elements in your SAML assertion.
 
-```
+```xml
 <Attribute Name="https://aws.amazon.com/SAML/Attributes/PrincipalTag:cost-center">
   <AttributeValue>987654</AttributeValue>
 </Attribute>

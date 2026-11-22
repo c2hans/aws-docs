@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancing-loadbalancer-listeners-syntax.json"></a>
 
-```
+```json
 {
   "[InstancePort](#cfn-elasticloadbalancing-loadbalancer-listeners-instanceport)" : {{String}},
   "[InstanceProtocol](#cfn-elasticloadbalancing-loadbalancer-listeners-instanceprotocol)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancing-loadbalancer-listeners-syntax.yaml"></a>
 
-```
+```yaml
   [InstancePort](#cfn-elasticloadbalancing-loadbalancer-listeners-instanceport): {{String}}
   [InstanceProtocol](#cfn-elasticloadbalancing-loadbalancer-listeners-instanceprotocol): {{String}}
   [LoadBalancerPort](#cfn-elasticloadbalancing-loadbalancer-listeners-loadbalancerport): {{String}}

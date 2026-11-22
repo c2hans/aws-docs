@@ -66,7 +66,7 @@ Update your SDKs to the latest version, and configure your clients to use an end
 **Example : Use an endpoint URL to access the S3 control API**
 In the following example, replace the Region `{{us-east-1}}` and VPC endpoint URL `{{vpce-1a2b3c4d-5e6f.s3-outposts.us-east-1.vpce.amazonaws.com}}` with appropriate information.
 
-```
+```python
 control_client = session.client(
 service_name='s3control',
 region_name='{{us-east-1}}',
@@ -81,7 +81,7 @@ For more information, see [AWS PrivateLink for Amazon S3](https://boto3.amazonaw
 **Example : Use an endpoint URL to access the S3 control API**
 In the following example, replace the VPC endpoint URL `{{vpce-1a2b3c4d-5e6f.s3-outposts.us-east-1.vpce.amazonaws.com}}` and the Region `{{Region.US_EAST_1}}` with appropriate information.
 
-```
+```java
 // control client
 Region region = {{Region.US_EAST_1}};
 s3ControlClient = S3ControlClient.builder().region(region)
@@ -133,7 +133,7 @@ You can create an endpoint policy that restricts access to specific S3 on Outpos
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "Policy1415115909151",
@@ -165,7 +165,7 @@ The `aws:sourceVpce` condition specifies the endpoint and does not require an Am
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "Policy1415115909152",

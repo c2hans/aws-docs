@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-channel-dashplaylistsettings-syntax.json"></a>
 
-```
+```json
 {
   "[ManifestWindowSeconds](#cfn-mediatailor-channel-dashplaylistsettings-manifestwindowseconds)" : {{Number}},
   "[MinBufferTimeSeconds](#cfn-mediatailor-channel-dashplaylistsettings-minbuffertimeseconds)" : {{Number}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-channel-dashplaylistsettings-syntax.yaml"></a>
 
-```
+```yaml
   [ManifestWindowSeconds](#cfn-mediatailor-channel-dashplaylistsettings-manifestwindowseconds): {{Number}}
   [MinBufferTimeSeconds](#cfn-mediatailor-channel-dashplaylistsettings-minbuffertimeseconds): {{Number}}
   [MinUpdatePeriodSeconds](#cfn-mediatailor-channel-dashplaylistsettings-minupdateperiodseconds): {{Number}}

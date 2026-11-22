@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticache-snapshot-nodesnapshot-syntax.json"></a>
 
-```
+```json
 {
   "[CacheClusterId](#cfn-elasticache-snapshot-nodesnapshot-cacheclusterid)" : {{String}},
   "[CacheNodeCreateTime](#cfn-elasticache-snapshot-nodesnapshot-cachenodecreatetime)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticache-snapshot-nodesnapshot-syntax.yaml"></a>
 
-```
+```yaml
   [CacheClusterId](#cfn-elasticache-snapshot-nodesnapshot-cacheclusterid): {{String}}
   [CacheNodeCreateTime](#cfn-elasticache-snapshot-nodesnapshot-cachenodecreatetime): {{String}}
   [CacheNodeId](#cfn-elasticache-snapshot-nodesnapshot-cachenodeid): {{String}}

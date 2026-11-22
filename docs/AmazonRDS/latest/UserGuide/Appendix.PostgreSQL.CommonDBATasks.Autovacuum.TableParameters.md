@@ -8,7 +8,7 @@ You can set autovacuum-related [storage parameters](https://www.postgresql.org/d
 
 The following query shows which tables currently have table-level options in place.
 
-```
+```sql
 SELECT relname, reloptions
 FROM pg_class
 WHERE reloptions IS NOT null;
@@ -16,7 +16,7 @@ WHERE reloptions IS NOT null;
 
 An example where this might be useful is on tables that are much larger than the rest of your tables. Suppose that you have one 300-GB table and 30 other tables less than 1 GB. In this case, you might set some specific parameters for your large table so you don't alter the behavior of your entire system.
 
-```
+```sql
 ALTER TABLE mytable set (autovacuum_vacuum_cost_delay=0);
 ```
 

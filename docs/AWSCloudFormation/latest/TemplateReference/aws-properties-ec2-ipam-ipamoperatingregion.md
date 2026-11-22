@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-ipam-ipamoperatingregion-syntax.json"></a>
 
-```
+```json
 {
   "[RegionName](#cfn-ec2-ipam-ipamoperatingregion-regionname)" : {{String}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-ipam-ipamoperatingregion-syntax.yaml"></a>
 
-```
+```yaml
   [RegionName](#cfn-ec2-ipam-ipamoperatingregion-regionname): {{String}}
 ```
 

@@ -8,13 +8,13 @@ Subscribes a callback function to-be-invoked whenever a contact turns to Error s
 
  **Signature**
 
-```
+```typescript
 onError(handler: ContactErrorHandler, contactId?: string)
 ```
 
  **Usage**
 
-```
+```typescript
 const handler: ContactErrorHandler = async (data: ContactError) => {
     console.log("Contact Error occurred! " + data.contactId);
 };
@@ -32,6 +32,6 @@ contactClient.onError(handler);
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

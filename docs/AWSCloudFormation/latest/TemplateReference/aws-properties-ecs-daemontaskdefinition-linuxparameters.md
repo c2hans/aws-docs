@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-daemontaskdefinition-linuxparameters-syntax.json"></a>
 
-```
+```json
 {
   "[Capabilities](#cfn-ecs-daemontaskdefinition-linuxparameters-capabilities)" : {{KernelCapabilities}},
   "[Devices](#cfn-ecs-daemontaskdefinition-linuxparameters-devices)" : {{[ Device, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-daemontaskdefinition-linuxparameters-syntax.yaml"></a>
 
-```
+```yaml
   [Capabilities](#cfn-ecs-daemontaskdefinition-linuxparameters-capabilities): {{
     KernelCapabilities}}
   [Devices](#cfn-ecs-daemontaskdefinition-linuxparameters-devices): {{

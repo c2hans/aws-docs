@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-kms-replicakey-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::KMS::ReplicaKey",
   "Properties" : {
@@ -47,7 +47,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-kms-replicakey-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::KMS::ReplicaKey
 Properties:
   [Description](#cfn-kms-replicakey-description): {{String}}
@@ -172,7 +172,7 @@ If the key ARN specified by the `PrimaryKeyArn` property doesn't identify a mult
 #### JSON
 <a name="aws-resource-kms-replicakey--examples--Create_a_multi-Region_replica_key--json"></a>
 
-```
+```json
 "myReplicaKey": {
         "Type": "AWS::KMS::ReplicaKey",
         "Properties": {
@@ -239,7 +239,7 @@ If the key ARN specified by the `PrimaryKeyArn` property doesn't identify a mult
 #### YAML
 <a name="aws-resource-kms-replicakey--examples--Create_a_multi-Region_replica_key--yaml"></a>
 
-```
+```yaml
 myReplicaKey:
   Type: 'AWS::KMS::ReplicaKey'
   Properties:

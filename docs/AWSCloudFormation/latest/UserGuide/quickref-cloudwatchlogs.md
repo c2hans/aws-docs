@@ -25,7 +25,7 @@ Log events from the web server provide metric data for CloudWatch alarms. The tw
 ### JSON
 <a name="quickref-cloudwatchlogs-example.json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Sample template that sets up and configures CloudWatch Logs on Amazon Linux 2023 instance.",
@@ -337,7 +337,7 @@ Log events from the web server provide metric data for CloudWatch alarms. The tw
 ### YAML
 <a name="quickref-cloudwatchlogs-example.yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Sample template that sets up and configures CloudWatch Logs on Amazon Linux 2023 instance.
 Parameters:
@@ -575,7 +575,7 @@ The CloudWatch Logs agent on Windows (SSM agent on Windows 2012R2 and Windows 20
 ### JSON
 <a name="quickref-cloudwatchlogs-example2.json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Sample template that sets up and configures CloudWatch Logs on Windows 2012R2 instance.",
@@ -995,7 +995,7 @@ The CloudWatch Logs agent on Windows (SSM agent on Windows 2012R2 and Windows 20
 ### YAML
 <a name="quickref-cloudwatchlogs-example2.yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: >-
   Sample template that sets up and configures CloudWatch Logs on Windows 2012R2 instance.

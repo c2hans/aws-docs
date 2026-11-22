@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rtbfabric-link-moduleconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DependsOn](#cfn-rtbfabric-link-moduleconfiguration-dependson)" : {{[ String, ... ]}},
   "[ModuleParameters](#cfn-rtbfabric-link-moduleconfiguration-moduleparameters)" : {{ModuleParameters}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rtbfabric-link-moduleconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DependsOn](#cfn-rtbfabric-link-moduleconfiguration-dependson): {{
     - String}}
   [ModuleParameters](#cfn-rtbfabric-link-moduleconfiguration-moduleparameters): {{

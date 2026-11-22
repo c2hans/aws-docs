@@ -35,7 +35,7 @@ Aurora version numbers use the {{major}}.{{minor}}.{{patch}} naming scheme. An A
 
 You can find out the Aurora version number of your Aurora PostgreSQL DB instance with the following SQL query:
 
-```
+```sql
 postgres=> SELECT aurora_version();
 ```
 

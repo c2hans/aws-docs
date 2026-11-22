@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-kafkaconnect-connector-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::KafkaConnect::Connector",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-kafkaconnect-connector-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::KafkaConnect::Connector
 Properties:
   [Capacity](#cfn-kafkaconnect-connector-capacity): {{

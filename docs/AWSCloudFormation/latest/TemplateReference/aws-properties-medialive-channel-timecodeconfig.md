@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-timecodeconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Source](#cfn-medialive-channel-timecodeconfig-source)" : {{String}},
   "[SyncThreshold](#cfn-medialive-channel-timecodeconfig-syncthreshold)" : {{Integer}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-timecodeconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Source](#cfn-medialive-channel-timecodeconfig-source): {{String}}
   [SyncThreshold](#cfn-medialive-channel-timecodeconfig-syncthreshold): {{Integer}}
 ```

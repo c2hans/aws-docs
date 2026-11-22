@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-projectprofile-environmentconfigurationparameter-syntax.json"></a>
 
-```
+```json
 {
   "[IsEditable](#cfn-datazone-projectprofile-environmentconfigurationparameter-iseditable)" : {{Boolean}},
   "[Name](#cfn-datazone-projectprofile-environmentconfigurationparameter-name)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-projectprofile-environmentconfigurationparameter-syntax.yaml"></a>
 
-```
+```yaml
   [IsEditable](#cfn-datazone-projectprofile-environmentconfigurationparameter-iseditable): {{Boolean}}
   [Name](#cfn-datazone-projectprofile-environmentconfigurationparameter-name): {{String}}
   [Value](#cfn-datazone-projectprofile-environmentconfigurationparameter-value): {{String}}

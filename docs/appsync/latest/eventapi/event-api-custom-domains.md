@@ -44,7 +44,7 @@ You must also provide a certificate for the custom domain name. To set up the cu
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

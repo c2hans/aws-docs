@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-acmpca-certificateauthority-customattribute-syntax.json"></a>
 
-```
+```json
 {
   "[ObjectIdentifier](#cfn-acmpca-certificateauthority-customattribute-objectidentifier)" : {{String}},
   "[Value](#cfn-acmpca-certificateauthority-customattribute-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-acmpca-certificateauthority-customattribute-syntax.yaml"></a>
 
-```
+```yaml
   [ObjectIdentifier](#cfn-acmpca-certificateauthority-customattribute-objectidentifier): {{String}}
   [Value](#cfn-acmpca-certificateauthority-customattribute-value): {{String}}
 ```

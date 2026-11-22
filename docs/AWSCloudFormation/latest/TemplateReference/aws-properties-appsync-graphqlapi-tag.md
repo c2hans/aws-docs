@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appsync-graphqlapi-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-appsync-graphqlapi-tag-key)" : {{String}},
   "[Value](#cfn-appsync-graphqlapi-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appsync-graphqlapi-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-appsync-graphqlapi-tag-key): {{String}}
   [Value](#cfn-appsync-graphqlapi-tag-value): {{String}}
 ```

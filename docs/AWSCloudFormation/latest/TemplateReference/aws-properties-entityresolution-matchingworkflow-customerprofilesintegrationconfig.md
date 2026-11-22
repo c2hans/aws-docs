@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-entityresolution-matchingworkflow-customerprofilesintegrationconfig-syntax.json"></a>
 
-```
+```json
 {
   "[DomainArn](#cfn-entityresolution-matchingworkflow-customerprofilesintegrationconfig-domainarn)" : {{String}},
   "[ObjectTypeArn](#cfn-entityresolution-matchingworkflow-customerprofilesintegrationconfig-objecttypearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-entityresolution-matchingworkflow-customerprofilesintegrationconfig-syntax.yaml"></a>
 
-```
+```yaml
   [DomainArn](#cfn-entityresolution-matchingworkflow-customerprofilesintegrationconfig-domainarn): {{String}}
   [ObjectTypeArn](#cfn-entityresolution-matchingworkflow-customerprofilesintegrationconfig-objecttypearn): {{String}}
 ```

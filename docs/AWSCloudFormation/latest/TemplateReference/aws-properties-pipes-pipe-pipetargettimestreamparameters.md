@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-pipetargettimestreamparameters-syntax.json"></a>
 
-```
+```json
 {
   "[DimensionMappings](#cfn-pipes-pipe-pipetargettimestreamparameters-dimensionmappings)" : {{[ DimensionMapping, ... ]}},
   "[EpochTimeUnit](#cfn-pipes-pipe-pipetargettimestreamparameters-epochtimeunit)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-pipetargettimestreamparameters-syntax.yaml"></a>
 
-```
+```yaml
   [DimensionMappings](#cfn-pipes-pipe-pipetargettimestreamparameters-dimensionmappings): {{
     - DimensionMapping}}
   [EpochTimeUnit](#cfn-pipes-pipe-pipetargettimestreamparameters-epochtimeunit): {{String}}

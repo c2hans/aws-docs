@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-refactorspaces-service-urlendpointinput-syntax.json"></a>
 
-```
+```json
 {
   "[HealthUrl](#cfn-refactorspaces-service-urlendpointinput-healthurl)" : {{String}},
   "[Url](#cfn-refactorspaces-service-urlendpointinput-url)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-refactorspaces-service-urlendpointinput-syntax.yaml"></a>
 
-```
+```yaml
   [HealthUrl](#cfn-refactorspaces-service-urlendpointinput-healthurl): {{String}}
   [Url](#cfn-refactorspaces-service-urlendpointinput-url): {{String}}
 ```

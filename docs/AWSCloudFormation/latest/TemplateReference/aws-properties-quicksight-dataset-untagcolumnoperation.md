@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-untagcolumnoperation-syntax.json"></a>
 
-```
+```json
 {
   "[ColumnName](#cfn-quicksight-dataset-untagcolumnoperation-columnname)" : {{String}},
   "[TagNames](#cfn-quicksight-dataset-untagcolumnoperation-tagnames)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-untagcolumnoperation-syntax.yaml"></a>
 
-```
+```yaml
   [ColumnName](#cfn-quicksight-dataset-untagcolumnoperation-columnname): {{String}}
   [TagNames](#cfn-quicksight-dataset-untagcolumnoperation-tagnames): {{
     - String}}

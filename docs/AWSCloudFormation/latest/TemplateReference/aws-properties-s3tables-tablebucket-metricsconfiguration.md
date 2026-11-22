@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3tables-tablebucket-metricsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Status](#cfn-s3tables-tablebucket-metricsconfiguration-status)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3tables-tablebucket-metricsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Status](#cfn-s3tables-tablebucket-metricsconfiguration-status): {{String}}
 ```
 

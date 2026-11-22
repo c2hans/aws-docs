@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-interconnect-connection-provider-syntax.json"></a>
 
-```
+```json
 {
   "[CloudServiceProvider](#cfn-interconnect-connection-provider-cloudserviceprovider)" : {{String}},
   "[LastMileProvider](#cfn-interconnect-connection-provider-lastmileprovider)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-interconnect-connection-provider-syntax.yaml"></a>
 
-```
+```yaml
   [CloudServiceProvider](#cfn-interconnect-connection-provider-cloudserviceprovider): {{String}}
   [LastMileProvider](#cfn-interconnect-connection-provider-lastmileprovider): {{String}}
 ```

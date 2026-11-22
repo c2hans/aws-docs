@@ -12,7 +12,7 @@ The `Sync` request object lets you retrieve all the results from a DynamoDB tabl
 
 The `Sync` request object has the following structure:
 
-```
+```TypeScript
 type DynamoDBSyncRequest = {
   operation: 'Sync';
   basePartitionKey?: string;
@@ -65,7 +65,7 @@ For more information about JavaScript resolvers, see [JavaScript resolvers overv
 
 The results have the following structure:
 
-```
+```TypeScript
 {
     items = [ ... ],
     nextToken = "a pagination token",
@@ -95,7 +95,7 @@ The following example is a function request handler for the GraphQL query: `sync
 
 In this example, if `lastSync` is omitted, all entries in the base table are returned. If `lastSync` is supplied, only the entries in the delta sync table that have changed since `lastSync` are returned.
 
-```
+```TypeScript
 export function request(ctx) {
   const { nextToken, lastSync } = ctx.args;
   return { operation: 'Sync', limit: 100, nextToken, lastSync };

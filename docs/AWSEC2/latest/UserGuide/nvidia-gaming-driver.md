@@ -20,19 +20,19 @@ These drivers are available to AWS customers only. By downloading them, you agre
 
 1. Connect to your instance. Update your package cache and get the package updates for your instance.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo dnf update -y
    ```
 
 1. Install **gcc** and **make**, if they are not already installed.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo dnf install gcc make
    ```
 
 1. Reboot your instance to load the latest kernel version.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo reboot
    ```
 
@@ -40,37 +40,37 @@ These drivers are available to AWS customers only. By downloading them, you agre
 
 1. Install the kernel headers packages.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo dnf install -y kernel-devel kernel-modules-extra kernel-devel-$(uname -r) kernel-headers-$(uname -r) dkms
    ```
 
 1. Download the gaming driver installation utility using the following command:
 
-   ```
+   ```bash
    [ec2-user ~]$ aws s3 cp --recursive s3://nvidia-gaming/linux/latest/ .
    ```
 
    Multiple versions of the gaming driver are stored in this bucket. You can see all of the available versions using the following command:
 
-   ```
+   ```bash
    [ec2-user ~]$ aws s3 ls --recursive s3://nvidia-gaming/linux/
    ```
 
 1. Extract the gaming driver installation utility from the downloaded `.zip` archive.
 
-   ```
+   ```bash
    [ec2-user ~]$ unzip {{latest-driver-name}}.zip -d nvidia-drivers
    ```
 
 1. Add permissions to run the driver installation utility using the following command:
 
-   ```
+   ```bash
    [ec2-user ~]$ chmod +x nvidia-drivers/NVIDIA-Linux-x86_64*-grid.run
    ```
 
 1. Run the installer using the following command:
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo ./nvidia-drivers/NVIDIA-Linux-x86_64*.run
    ```
 
@@ -78,7 +78,7 @@ These drivers are available to AWS customers only. By downloading them, you agre
 
 1. Use the following command to create the required configuration file.
 
-   ```
+   ```bash
    [ec2-user ~]$ cat << EOF | sudo tee -a /etc/nvidia/gridd.conf
    vGamingMarketplace=2
    EOF
@@ -87,49 +87,49 @@ These drivers are available to AWS customers only. By downloading them, you agre
 1. Use the following command to download and rename the certification file.
    + For version 590.48 or later:
 
-     ```
+     ```bash
      [ec2-user ~]$ sudo curl -o /etc/nvidia/GridSwCert.txt "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCert_2026_03_02.cert"
      ```
    + For version 575.64 to 580.105.08:
 
-     ```
+     ```bash
      [ec2-user ~]$ sudo curl -o /etc/nvidia/GridSwCert.txt "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCertLinux_2025_07_01.cert"
      ```
    + For version 460.39 to 575.57:
 
-     ```
+     ```bash
      [ec2-user ~]$ sudo curl -o /etc/nvidia/GridSwCert.txt "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCertLinux_2024_02_22.cert"
      ```
    + For version 440.68 to 445.48:
 
-     ```
+     ```bash
      [ec2-user ~]$ sudo curl -o /etc/nvidia/GridSwCert.txt "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCert-Linux_2020_04.cert"
      ```
    + For earlier versions:
 
-     ```
+     ```bash
      [ec2-user ~]$ sudo curl -o /etc/nvidia/GridSwCert.txt "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCert-Linux_2019_09.cert"
      ```
 
 1. If you are using NVIDIA driver version 510.x or greater on the G4dn, G5, or G5g instances, disable GSP with the following commands. For more information about why this is required, see the [NVIDIA documentation](https://docs.nvidia.com/vgpu/latest/grid-vgpu-user-guide/installing-grid-vgpu-display-drivers.html#disabling-gsp).
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo touch /etc/modprobe.d/nvidia.conf
    ```
 
-   ```
+   ```bash
    [ec2-user ~]$ echo "options nvidia NVreg_EnableGpuFirmware=0" | sudo tee --append /etc/modprobe.d/nvidia.conf
    ```
 
 1. Reboot the instance.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo reboot
    ```
 
 1. Verify the NVIDIA Gaming license using the following command.
 
-   ```
+   ```bash
    [ec2-user ~]$ nvidia-smi.exe -q
    ```
 
@@ -144,19 +144,19 @@ These drivers are available to AWS customers only. By downloading them, you agre
 
 1. Connect to your instance. Update your package cache and get the package updates for your instance.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo yum update -y
    ```
 
 1. Install **gcc** and **make**, if they are not already installed.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo yum install gcc make
    ```
 
 1. Reboot your instance to load the latest kernel version.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo reboot
    ```
 
@@ -164,43 +164,43 @@ These drivers are available to AWS customers only. By downloading them, you agre
 
 1. Install the kernel headers package for the version of the kernel you are currently running.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo yum install -y kernel-devel-$(uname -r)
    ```
 
 1. Download the gaming driver installation utility using the following command:
 
-   ```
+   ```bash
    [ec2-user ~]$ aws s3 cp --recursive s3://nvidia-gaming/linux/latest/ .
    ```
 
    Multiple versions of the gaming driver are stored in this bucket. You can see all of the available versions using the following command:
 
-   ```
+   ```bash
    [ec2-user ~]$ aws s3 ls --recursive s3://nvidia-gaming/linux/
    ```
 
 1. Extract the gaming driver installation utility from the downloaded `.zip` archive.
 
-   ```
+   ```bash
    [ec2-user ~]$ unzip {{latest-driver-name}}.zip -d nvidia-drivers
    ```
 
 1. Add permissions to run the driver installation utility using the following command:
 
-   ```
+   ```bash
    [ec2-user ~]$ chmod +x nvidia-drivers/NVIDIA-Linux-x86_64*-grid.run
    ```
 
 1. Run the installer using the following command:
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo ./nvidia-drivers/NVIDIA-Linux-x86_64*.run
    ```
 
    If you are using Amazon Linux 2 with kernel version 5.10, use the following command to install the NVIDIA gaming drivers.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo CC=/usr/bin/gcc10-cc ./NVIDIA-Linux-x86_64*.run
    ```
 
@@ -208,7 +208,7 @@ These drivers are available to AWS customers only. By downloading them, you agre
 
 1. Use the following command to create the required configuration file.
 
-   ```
+   ```bash
    [ec2-user ~]$ cat << EOF | sudo tee -a /etc/nvidia/gridd.conf
    vGamingMarketplace=2
    EOF
@@ -217,49 +217,49 @@ These drivers are available to AWS customers only. By downloading them, you agre
 1. Use the following command to download and rename the certification file.
    + For version 590.48 or later:
 
-     ```
+     ```bash
      [ec2-user ~]$ sudo curl -o /etc/nvidia/GridSwCert.txt "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCert_2026_03_02.cert"
      ```
    + For version 575.64 to 580.105.08:
 
-     ```
+     ```bash
      [ec2-user ~]$ sudo curl -o /etc/nvidia/GridSwCert.txt "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCertLinux_2025_07_01.cert"
      ```
    + For version 460.39 to 575.57:
 
-     ```
+     ```bash
      [ec2-user ~]$ sudo curl -o /etc/nvidia/GridSwCert.txt "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCertLinux_2024_02_22.cert"
      ```
    + For version 440.68 to 445.48:
 
-     ```
+     ```bash
      [ec2-user ~]$ sudo curl -o /etc/nvidia/GridSwCert.txt "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCert-Linux_2020_04.cert"
      ```
    + For earlier versions:
 
-     ```
+     ```bash
      [ec2-user ~]$ sudo curl -o /etc/nvidia/GridSwCert.txt "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCert-Linux_2019_09.cert"
      ```
 
 1. If you are using NVIDIA driver version 510.x or greater on the G4dn, G5, or G5g instances, disable GSP with the following commands. For more information about why this is required, see the [NVIDIA documentation](https://docs.nvidia.com/vgpu/latest/grid-vgpu-user-guide/installing-grid-vgpu-display-drivers.html#disabling-gsp).
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo touch /etc/modprobe.d/nvidia.conf
    ```
 
-   ```
+   ```bash
    [ec2-user ~]$ echo "options nvidia NVreg_EnableGpuFirmware=0" | sudo tee --append /etc/modprobe.d/nvidia.conf
    ```
 
 1. Reboot the instance.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo reboot
    ```
 
 1. Verify the NVIDIA Gaming license using the following command.
 
-   ```
+   ```bash
    [ec2-user ~]$ nvidia-smi.exe -q
    ```
 
@@ -274,19 +274,19 @@ These drivers are available to AWS customers only. By downloading them, you agre
 
 1. Connect to your Linux instance. Install **gcc** and **make**, if they are not already installed.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo yum install -y gcc make
    ```
 
 1. Update your package cache and get the package updates for your instance.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo yum update -y
    ```
 
 1. Reboot your instance to load the latest kernel version.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo reboot
    ```
 
@@ -294,7 +294,7 @@ These drivers are available to AWS customers only. By downloading them, you agre
 
 1. Install the kernel headers package for the version of the kernel you are currently running.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo yum install -y unzip kernel-devel-$(uname -r)
    ```
 
@@ -302,7 +302,7 @@ These drivers are available to AWS customers only. By downloading them, you agre
 
    1. Add `nouveau` to the `/etc/modprobe.d/blacklist.conf` blacklist file. Copy the following code block and paste it into a terminal.
 
-      ```
+      ```bash
       [ec2-user ~]$ cat << EOF | sudo tee --append /etc/modprobe.d/blacklist.conf
       blacklist vga16fb
       blacklist nouveau
@@ -314,43 +314,43 @@ These drivers are available to AWS customers only. By downloading them, you agre
 
    1. Edit the `/etc/default/grub` file and add the following line:
 
-      ```
+      ```bash
       GRUB_CMDLINE_LINUX="rdblacklist=nouveau"
       ```
 
    1. Rebuild the Grub configuration.
 
-      ```
+      ```bash
       [ec2-user ~]$ sudo grub2-mkconfig -o /boot/grub2/grub.cfg
       ```
 
 1. Download the gaming driver installation utility using the following command:
 
-   ```
+   ```bash
    [ec2-user ~]$ aws s3 cp --recursive s3://nvidia-gaming/linux/latest/ .
    ```
 
    Multiple versions of the gaming driver are stored in this bucket. You can see all of the available versions using the following command:
 
-   ```
+   ```bash
    [ec2-user ~]$ aws s3 ls --recursive s3://nvidia-gaming/linux/
    ```
 
 1. Extract the gaming driver installation utility from the downloaded `.zip` archive.
 
-   ```
+   ```bash
    [ec2-user ~]$ unzip *Gaming-Linux-Guest-Drivers.zip -d nvidia-drivers
    ```
 
 1. Add permissions to run the driver installation utility using the following command:
 
-   ```
+   ```bash
    [ec2-user ~]$ chmod +x nvidia-drivers/NVIDIA-Linux-x86_64*-grid.run
    ```
 
 1. Run the installer using the following command:
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo nvidia-drivers/NVIDIA-Linux-x86_64*.run
    ```
 
@@ -358,7 +358,7 @@ These drivers are available to AWS customers only. By downloading them, you agre
 
 1. Use the following command to create the required configuration file.
 
-   ```
+   ```bash
    [ec2-user ~]$ cat << EOF | sudo tee -a /etc/nvidia/gridd.conf
    vGamingMarketplace=2
    EOF
@@ -367,43 +367,43 @@ These drivers are available to AWS customers only. By downloading them, you agre
 1. Use the following command to download and rename the certification file.
    + For version 590.48 or later:
 
-     ```
+     ```bash
      [ec2-user ~]$ sudo curl -o /etc/nvidia/GridSwCert.txt "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCert_2026_03_02.cert"
      ```
    + For version 575.64 to 580.105.08:
 
-     ```
+     ```bash
      [ec2-user ~]$ sudo curl -o /etc/nvidia/GridSwCert.txt "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCertLinux_2025_07_01.cert"
      ```
    + For version 460.39 to 575.57:
 
-     ```
+     ```bash
      [ec2-user ~]$ sudo curl -o /etc/nvidia/GridSwCert.txt "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCertLinux_2024_02_22.cert"
      ```
    + For version 440.68 to 445.48:
 
-     ```
+     ```bash
      [ec2-user ~]$ sudo curl -o /etc/nvidia/GridSwCert.txt "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCert-Linux_2020_04.cert"
      ```
    + For earlier versions:
 
-     ```
+     ```bash
      [ec2-user ~]$ sudo curl -o /etc/nvidia/GridSwCert.txt "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCert-Linux_2019_09.cert"
      ```
 
 1. If you are using NVIDIA driver version 510.x or greater on the G4dn, G5, or G5g instances, disable GSP with the following commands. For more information about why this is required, see the [NVIDIA documentation](https://docs.nvidia.com/vgpu/latest/grid-vgpu-user-guide/installing-grid-vgpu-display-drivers.html#disabling-gsp).
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo touch /etc/modprobe.d/nvidia.conf
    ```
 
-   ```
+   ```bash
    [ec2-user ~]$ echo "options nvidia NVreg_EnableGpuFirmware=0" | sudo tee --append /etc/modprobe.d/nvidia.conf
    ```
 
 1. Reboot the instance.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo reboot
    ```
 
@@ -416,19 +416,19 @@ These drivers are available to AWS customers only. By downloading them, you agre
 
 1. Connect to your Linux instance. Install **gcc** and **make**, if they are not already installed.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo yum install -y gcc make
    ```
 
 1. Update your package cache and get the package updates for your instance.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo yum update -y
    ```
 
 1. Reboot your instance to load the latest kernel version.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo reboot
    ```
 
@@ -436,37 +436,37 @@ These drivers are available to AWS customers only. By downloading them, you agre
 
 1. Install the kernel headers package for the version of the kernel you are currently running.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo yum install -y unzip kernel-devel-$(uname -r)
    ```
 
 1. Download the gaming driver installation utility using the following command:
 
-   ```
+   ```bash
    [ec2-user ~]$ aws s3 cp --recursive s3://nvidia-gaming/linux/latest/ .
    ```
 
    Multiple versions of the gaming driver are stored in this bucket. You can see all of the available versions using the following command:
 
-   ```
+   ```bash
    [ec2-user ~]$ aws s3 ls --recursive s3://nvidia-gaming/linux/
    ```
 
 1. Extract the gaming driver installation utility from the downloaded `.zip` archive.
 
-   ```
+   ```bash
    [ec2-user ~]$ unzip *Gaming-Linux-Guest-Drivers.zip -d nvidia-drivers
    ```
 
 1. Add permissions to run the driver installation utility using the following command:
 
-   ```
+   ```bash
    [ec2-user ~]$ chmod +x nvidia-drivers/NVIDIA-Linux-x86_64*-grid.run
    ```
 
 1. Run the installer using the following command:
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo nvidia-drivers/NVIDIA-Linux-x86_64*.run
    ```
 
@@ -474,7 +474,7 @@ These drivers are available to AWS customers only. By downloading them, you agre
 
 1. Use the following command to create the required configuration file.
 
-   ```
+   ```bash
    [ec2-user ~]$ cat << EOF | sudo tee -a /etc/nvidia/gridd.conf
    vGamingMarketplace=2
    EOF
@@ -483,43 +483,43 @@ These drivers are available to AWS customers only. By downloading them, you agre
 1. Use the following command to download and rename the certification file.
    + For version 590.48 or later:
 
-     ```
+     ```bash
      [ec2-user ~]$ sudo curl -o /etc/nvidia/GridSwCert.txt "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCert_2026_03_02.cert"
      ```
    + For version 575.64 to 580.105.08:
 
-     ```
+     ```bash
      [ec2-user ~]$ sudo curl -o /etc/nvidia/GridSwCert.txt "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCertLinux_2025_07_01.cert"
      ```
    + For version 460.39 to 575.57:
 
-     ```
+     ```bash
      [ec2-user ~]$ sudo curl -o /etc/nvidia/GridSwCert.txt "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCertLinux_2024_02_22.cert"
      ```
    + For version 440.68 to 445.48:
 
-     ```
+     ```bash
      [ec2-user ~]$ sudo curl -o /etc/nvidia/GridSwCert.txt "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCert-Linux_2020_04.cert"
      ```
    + For earlier versions:
 
-     ```
+     ```bash
      [ec2-user ~]$ sudo curl -o /etc/nvidia/GridSwCert.txt "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCert-Linux_2019_09.cert"
      ```
 
 1. If you are using NVIDIA driver version 510.x or greater on the G4dn, G5, or G5g instances, disable GSP with the following commands. For more information about why this is required, see the [NVIDIA documentation](https://docs.nvidia.com/vgpu/latest/grid-vgpu-user-guide/installing-grid-vgpu-display-drivers.html#disabling-gsp).
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo touch /etc/modprobe.d/nvidia.conf
    ```
 
-   ```
+   ```bash
    [ec2-user ~]$ echo "options nvidia NVreg_EnableGpuFirmware=0" | sudo tee --append /etc/modprobe.d/nvidia.conf
    ```
 
 1. Reboot the instance.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo reboot
    ```
 
@@ -532,19 +532,19 @@ These drivers are available to AWS customers only. By downloading them, you agre
 
 1. Connect to your Linux instance. Install **gcc** and **make**, if they are not already installed.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo yum install -y gcc make
    ```
 
 1. Update your package cache and get the package updates for your instance.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo yum update -y
    ```
 
 1. Reboot your instance to load the latest kernel version.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo reboot
    ```
 
@@ -552,37 +552,37 @@ These drivers are available to AWS customers only. By downloading them, you agre
 
 1. Install the kernel headers package for the version of the kernel you are currently running.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo dnf install -y unzip elfutils-libelf-devel libglvnd-devel kernel-devel-$(uname -r)
    ```
 
 1. Download the gaming driver installation utility using the following command:
 
-   ```
+   ```bash
    [ec2-user ~]$ aws s3 cp --recursive s3://nvidia-gaming/linux/latest/ .
    ```
 
    Multiple versions of the gaming driver are stored in this bucket. You can see all of the available versions using the following command:
 
-   ```
+   ```bash
    [ec2-user ~]$ aws s3 ls --recursive s3://nvidia-gaming/linux/
    ```
 
 1. Extract the gaming driver installation utility from the downloaded `.zip` archive.
 
-   ```
+   ```bash
    [ec2-user ~]$ unzip *Gaming-Linux-Guest-Drivers.zip -d nvidia-drivers
    ```
 
 1. Add permissions to run the driver installation utility using the following command:
 
-   ```
+   ```bash
    [ec2-user ~]$ chmod +x nvidia-drivers/NVIDIA-Linux-x86_64*-grid.run
    ```
 
 1. Run the installer using the following command:
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo nvidia-drivers/NVIDIA-Linux-x86_64*.run
    ```
 
@@ -590,7 +590,7 @@ These drivers are available to AWS customers only. By downloading them, you agre
 
 1. Use the following command to create the required configuration file.
 
-   ```
+   ```bash
    [ec2-user ~]$ cat << EOF | sudo tee -a /etc/nvidia/gridd.conf
    vGamingMarketplace=2
    EOF
@@ -599,43 +599,43 @@ These drivers are available to AWS customers only. By downloading them, you agre
 1. Use the following command to download and rename the certification file.
    + For version 590.48 or later:
 
-     ```
+     ```bash
      [ec2-user ~]$ sudo curl -o /etc/nvidia/GridSwCert.txt "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCert_2026_03_02.cert"
      ```
    + For version 575.64 to 580.105.08:
 
-     ```
+     ```bash
      [ec2-user ~]$ sudo curl -o /etc/nvidia/GridSwCert.txt "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCertLinux_2025_07_01.cert"
      ```
    + For version 460.39 to 575.57:
 
-     ```
+     ```bash
      [ec2-user ~]$ sudo curl -o /etc/nvidia/GridSwCert.txt "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCertLinux_2024_02_22.cert"
      ```
    + For version 440.68 to 445.48:
 
-     ```
+     ```bash
      [ec2-user ~]$ sudo curl -o /etc/nvidia/GridSwCert.txt "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCert-Linux_2020_04.cert"
      ```
    + For earlier versions:
 
-     ```
+     ```bash
      [ec2-user ~]$ sudo curl -o /etc/nvidia/GridSwCert.txt "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCert-Linux_2019_09.cert"
      ```
 
 1. If you are using NVIDIA driver version 510.x or greater on the G4dn, G5, or G5g instances, disable GSP with the following commands. For more information about why this is required, see the [NVIDIA documentation](https://docs.nvidia.com/vgpu/latest/grid-vgpu-user-guide/installing-grid-vgpu-display-drivers.html#disabling-gsp).
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo touch /etc/modprobe.d/nvidia.conf
    ```
 
-   ```
+   ```bash
    [ec2-user ~]$ echo "options nvidia NVreg_EnableGpuFirmware=0" | sudo tee --append /etc/modprobe.d/nvidia.conf
    ```
 
 1. Reboot the instance.
 
-   ```
+   ```bash
    [ec2-user ~]$ sudo reboot
    ```
 
@@ -648,25 +648,25 @@ These drivers are available to AWS customers only. By downloading them, you agre
 
 1. Connect to your Linux instance. Install **gcc** and **make**, if they are not already installed.
 
-   ```
+   ```bash
    $ sudo apt-get install -y gcc make build-essential
    ```
 
 1. Update your package cache and get the package updates for your instance.
 
-   ```
+   ```bash
    $ sudo apt-get update -y
    ```
 
 1. Upgrade the `linux-aws` package to receive the latest version.
 
-   ```
+   ```bash
    $ sudo apt-get upgrade -y linux-aws
    ```
 
 1. Reboot your instance to load the latest kernel version.
 
-   ```
+   ```bash
    $ sudo reboot
    ```
 
@@ -674,7 +674,7 @@ These drivers are available to AWS customers only. By downloading them, you agre
 
 1. Install the kernel headers package for the version of the kernel you are currently running.
 
-   ```
+   ```bash
    $ sudo apt install -y unzip dkms linux-headers-$(uname -r)
    ```
 
@@ -682,7 +682,7 @@ These drivers are available to AWS customers only. By downloading them, you agre
 
    1. Add `nouveau` to the `/etc/modprobe.d/blacklist.conf` blacklist file. Copy the following code block and paste it into a terminal.
 
-      ```
+      ```bash
       $ cat << EOF | sudo tee --append /etc/modprobe.d/blacklist.conf
       blacklist vga16fb
       blacklist nouveau
@@ -694,43 +694,43 @@ These drivers are available to AWS customers only. By downloading them, you agre
 
    1. Edit the `/etc/default/grub` file and add the following line:
 
-      ```
+      ```bash
       GRUB_CMDLINE_LINUX="rdblacklist=nouveau"
       ```
 
    1. Rebuild the Grub configuration.
 
-      ```
+      ```bash
       $ sudo update-grub
       ```
 
 1. Download the gaming driver installation utility using the following command:
 
-   ```
+   ```bash
    $ aws s3 cp --recursive s3://nvidia-gaming/linux/latest/ .
    ```
 
    Multiple versions of the gaming driver are stored in this bucket. You can see all of the available versions using the following command:
 
-   ```
+   ```bash
    $ aws s3 ls --recursive s3://nvidia-gaming/linux/
    ```
 
 1. Extract the gaming driver installation utility from the downloaded `.zip` archive.
 
-   ```
+   ```bash
    $ unzip *Gaming-Linux-Guest-Drivers.zip -d nvidia-drivers
    ```
 
 1. Add permissions to run the driver installation utility using the following command:
 
-   ```
+   ```bash
    $ chmod +x nvidia-drivers/NVIDIA-Linux-x86_64*-grid.run
    ```
 
 1. Run the installer using the following command:
 
-   ```
+   ```bash
    $ sudo nvidia-drivers/NVIDIA-Linux-x86_64*.run
    ```
 
@@ -738,7 +738,7 @@ These drivers are available to AWS customers only. By downloading them, you agre
 
 1. Use the following command to create the required configuration file.
 
-   ```
+   ```bash
    $ cat << EOF | sudo tee -a /etc/nvidia/gridd.conf
    vGamingMarketplace=2
    EOF
@@ -747,43 +747,43 @@ These drivers are available to AWS customers only. By downloading them, you agre
 1. Use the following command to download and rename the certification file.
    + For version 590.48 or later:
 
-     ```
+     ```bash
      $ sudo curl -o /etc/nvidia/GridSwCert.txt "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCert_2026_03_02.cert"
      ```
    + For version 575.64 to 580.105.08:
 
-     ```
+     ```bash
      $ sudo curl -o /etc/nvidia/GridSwCert.txt "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCertLinux_2025_07_01.cert"
      ```
    + For version 460.39 to 575.57:
 
-     ```
+     ```bash
      $ sudo curl -o /etc/nvidia/GridSwCert.txt "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCertLinux_2024_02_22.cert"
      ```
    + For version 440.68 to 445.48:
 
-     ```
+     ```bash
      $ sudo curl -o /etc/nvidia/GridSwCert.txt "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCert-Linux_2020_04.cert"
      ```
    + For earlier versions:
 
-     ```
+     ```bash
      $ sudo curl -o /etc/nvidia/GridSwCert.txt "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCert-Linux_2019_09.cert"
      ```
 
 1. If you are using NVIDIA driver version 510.x or greater on the G4dn, G5, or G5g instances, disable GSP with the following commands. For more information about why this is required, see the [NVIDIA documentation](https://docs.nvidia.com/vgpu/latest/grid-vgpu-user-guide/installing-grid-vgpu-display-drivers.html#disabling-gsp).
 
-   ```
+   ```bash
    $ sudo touch /etc/modprobe.d/nvidia.conf
    ```
 
-   ```
+   ```bash
    $ echo "options nvidia NVreg_EnableGpuFirmware=0" | sudo tee --append /etc/modprobe.d/nvidia.conf
    ```
 
 1. Reboot the instance.
 
-   ```
+   ```bash
    $ sudo reboot
    ```
 
@@ -802,7 +802,7 @@ Before you install an NVIDIA gaming driver on your instance, you must ensure tha
 
 1. Download and install the gaming driver using the following PowerShell commands.
 
-   ```
+   ```powershell
    $Bucket = "nvidia-gaming"
    $KeyPrefix = "windows/latest"
    $LocalPath = "$home\Desktop\NVIDIA"
@@ -838,14 +838,14 @@ Before you install an NVIDIA gaming driver on your instance, you must ensure tha
 **PowerShell**
 Run the following PowerShell command to create this registry value. The AWS Tools for PowerShell in AWS Windows AMIs defaults to the 32-bit version and this command fails. Instead, use the 64-bit version of PowerShell included with the operating system.
 
-   ```
+   ```PowerShell
    New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\nvlddmkm\Global" -Name "vGamingMarketplace" -PropertyType "DWord" -Value "2"
    ```
 
 **Command Prompt**
 Run the following registry command to create this registry value. You can run it using the Command Prompt window or a 64-bit version of PowerShell.
 
-   ```
+   ```batch
    reg add "HKLM\SYSTEM\CurrentControlSet\Services\nvlddmkm\Global" /v vGamingMarketplace /t REG_DWORD /d 2
    ```
 
@@ -865,14 +865,14 @@ Run the following registry command to create this registry value. You can run it
 **PowerShell**
 Run the following PowerShell command to create this registry value. The AWS Tools for PowerShell in AWS Windows AMIs defaults to the 32-bit version and this command fails. Instead, use the 64-bit version of PowerShell included with the operating system.
 
-   ```
+   ```PowerShell
    New-ItemProperty -Path "HKLM:\SOFTWARE\NVIDIA Corporation\Global" -Name "vGamingMarketplace" -PropertyType "DWord" -Value "2"
    ```
 
 **Command Prompt**
 Run the following registry command to create this registry key with the Command Prompt window. You can also use this command in the 64-bit version of PowerShell.
 
-   ```
+   ```batch
    reg add "HKLM\SOFTWARE\NVIDIA Corporation\Global" /v vGamingMarketplace /t REG_DWORD /d 2
    ```
 
@@ -881,33 +881,33 @@ Run the following registry command to create this registry key with the Command 
 1. Run the following command in PowerShell. This downloads the certification file, renames the file `GridSwCert.txt`, and moves the file to the Public Documents folder on your system drive. Typically, the folder path is `C:\Users\Public\Documents`.
    + For version 591.59 or later:
 
-     ```
+     ```PowerShell
      Invoke-WebRequest -Uri "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCert_2026_03_02.cert" -OutFile "$Env:PUBLIC\Documents\GridSwCert.txt"
      ```
    + For version 576.80 to 581.80:
 
-     ```
+     ```PowerShell
      Invoke-WebRequest -Uri "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCertWindows_2025_07_01.cert" -OutFile "$Env:PUBLIC\Documents\GridSwCert.txt"
      ```
    + For version 460.39 to 576.72:
 
-     ```
+     ```PowerShell
      Invoke-WebRequest -Uri "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCertWindows_2024_02_22.cert" -OutFile "$Env:PUBLIC\Documents\GridSwCert.txt"
      ```
    + For version 445.87:
 
-     ```
+     ```PowerShell
      Invoke-WebRequest -Uri "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCert-Windows_2020_04.cert" -OutFile "$Env:PUBLIC\Documents\GridSwCert.txt"
      ```
    + For earlier versions:
 
-     ```
+     ```PowerShell
      Invoke-WebRequest -Uri "https://nvidia-gaming.s3.amazonaws.com/GridSwCert-Archive/GridSwCert-Windows_2019_09.cert" -OutFile "$Env:PUBLIC\Documents\GridSwCert.txt"
      ```
 
    If you receive an error when downloading the file, and you are using Windows Server 2016 or earlier, TLS 1.2 might need to be enabled for your PowerShell terminal. You can enable TLS 1.2 for the current PowerShell session with the following command and then try again:
 
-   ```
+   ```powershell
    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
    ```
 
@@ -915,13 +915,13 @@ Run the following registry command to create this registry key with the Command 
 
 1. Locate the `nvidia-smi.exe` file on the instance.
 
-   ```
+   ```PowerShell
    Get-ChildItem -Path C:\ -Recurse -Filter "nvidia-smi.exe"
    ```
 
    Verify the NVIDIA Gaming license using the following command. Replace {{path}} with the name of the folder in the output from the previous command.
 
-   ```
+   ```bash
    C:\Windows\System32\DriverStore\FileRepository\{{path}}\nvidia-smi.exe -q
    ```
 

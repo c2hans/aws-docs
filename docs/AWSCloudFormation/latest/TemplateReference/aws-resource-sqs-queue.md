@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sqs-queue-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SQS::Queue",
   "Properties" : {
@@ -53,7 +53,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sqs-queue-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SQS::Queue
 Properties:
   [ContentBasedDeduplication](#cfn-sqs-queue-contentbaseddeduplication): {{Boolean}}
@@ -242,7 +242,7 @@ Returns the URLs of the queues from the policy.
 #### JSON
 <a name="aws-resource-sqs-queue--examples--Amazon_SQS_Queue_with_CloudWatch_Alarms--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion" : "2010-09-09",
 
@@ -316,7 +316,7 @@ Returns the URLs of the queues from the policy.
 #### YAML
 <a name="aws-resource-sqs-queue--examples--Amazon_SQS_Queue_with_CloudWatch_Alarms--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Description: "This example template shows how to create an Amazon SQS queue with CloudWatch alarms on queue depth. This template creates an Amazon SQS queue and one or more CloudWatch alarms. You will be billed for the AWS resources used if you create a stack using this template."
 Parameters:
@@ -391,7 +391,7 @@ Because the source queue specifies the dead-letter queue in its redrive policy, 
 #### JSON
 <a name="aws-resource-sqs-queue--examples--Amazon_SQS_Queue_with_a_Dead-Letter_Queue--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion" : "2010-09-09",
 
@@ -434,7 +434,7 @@ Because the source queue specifies the dead-letter queue in its redrive policy, 
 #### YAML
 <a name="aws-resource-sqs-queue--examples--Amazon_SQS_Queue_with_a_Dead-Letter_Queue--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Resources:
   MySourceQueue:

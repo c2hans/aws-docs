@@ -103,7 +103,7 @@ Type: [Owner](API_Owner.md) data type
 
 The following request returns the ACL of the specified bucket.
 
-```
+```HTTP
 GET ?acl HTTP/1.1
 Host: bucket.s3.<Region>.amazonaws.com
 Date: Wed, 28 Oct 2009 22:32:00 GMT
@@ -113,7 +113,7 @@ Authorization: authorization string
 ### Sample Response
 <a name="API_GetBucketAcl_Example_2"></a>
 
-```
+```xml
 HTTP/1.1 200 OK
 x-amz-id-2: eftixk72aD6Ap51TnqcoF8eFidJG9Z/2mkiDFu8yU9AS1ed4OpIszj7UDNEHGran
 x-amz-request-id: 318BC8BC148832E5

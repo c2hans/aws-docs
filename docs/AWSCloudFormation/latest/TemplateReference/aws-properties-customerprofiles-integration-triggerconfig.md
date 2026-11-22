@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-integration-triggerconfig-syntax.json"></a>
 
-```
+```json
 {
   "[TriggerProperties](#cfn-customerprofiles-integration-triggerconfig-triggerproperties)" : {{TriggerProperties}},
   "[TriggerType](#cfn-customerprofiles-integration-triggerconfig-triggertype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-integration-triggerconfig-syntax.yaml"></a>
 
-```
+```yaml
   [TriggerProperties](#cfn-customerprofiles-integration-triggerconfig-triggerproperties): {{
     TriggerProperties}}
   [TriggerType](#cfn-customerprofiles-integration-triggerconfig-triggertype): {{String}}

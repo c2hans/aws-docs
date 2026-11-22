@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-personalize-schema-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Personalize::Schema",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-personalize-schema-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Personalize::Schema
 Properties:
   [Domain](#cfn-personalize-schema-domain): {{String}}
@@ -118,7 +118,7 @@ The following example creates an Amazon Personalize schema for an Interactions d
 #### JSON
 <a name="aws-resource-personalize-schema--examples--Creating_a_schema--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -136,7 +136,7 @@ The following example creates an Amazon Personalize schema for an Interactions d
 #### YAML
 <a name="aws-resource-personalize-schema--examples--Creating_a_schema--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   MySchema:

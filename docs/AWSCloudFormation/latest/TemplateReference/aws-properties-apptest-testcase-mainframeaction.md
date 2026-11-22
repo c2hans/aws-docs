@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apptest-testcase-mainframeaction-syntax.json"></a>
 
-```
+```json
 {
   "[ActionType](#cfn-apptest-testcase-mainframeaction-actiontype)" : {{MainframeActionType}},
   "[Properties](#cfn-apptest-testcase-mainframeaction-properties)" : {{MainframeActionProperties}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apptest-testcase-mainframeaction-syntax.yaml"></a>
 
-```
+```yaml
   [ActionType](#cfn-apptest-testcase-mainframeaction-actiontype): {{
     MainframeActionType}}
   [Properties](#cfn-apptest-testcase-mainframeaction-properties): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-connectiontype-fielddefinition-syntax.json"></a>
 
-```
+```json
 {
   "[FieldDataType](#cfn-glue-connectiontype-fielddefinition-fielddatatype)" : {{String}},
   "[FilterOverrides](#cfn-glue-connectiontype-fielddefinition-filteroverrides)" : {{FilterOverrides}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-connectiontype-fielddefinition-syntax.yaml"></a>
 
-```
+```yaml
   [FieldDataType](#cfn-glue-connectiontype-fielddefinition-fielddatatype): {{String}}
   [FilterOverrides](#cfn-glue-connectiontype-fielddefinition-filteroverrides): {{
     FilterOverrides}}

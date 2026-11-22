@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-alarm-evaluationcriteria-syntax.json"></a>
 
-```
+```json
 {
   "[PromQLCriteria](#cfn-cloudwatch-alarm-evaluationcriteria-promqlcriteria)" : {{AlarmPromQLCriteria}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-alarm-evaluationcriteria-syntax.yaml"></a>
 
-```
+```yaml
   [PromQLCriteria](#cfn-cloudwatch-alarm-evaluationcriteria-promqlcriteria): {{
     AlarmPromQLCriteria}}
 ```

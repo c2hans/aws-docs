@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-aiops-investigationgroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AIOps::InvestigationGroup",
   "Properties" : {
@@ -50,7 +50,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-aiops-investigationgroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AIOps::InvestigationGroup
 Properties:
   [ChatbotNotificationChannels](#cfn-aiops-investigationgroup-chatbotnotificationchannels): {{

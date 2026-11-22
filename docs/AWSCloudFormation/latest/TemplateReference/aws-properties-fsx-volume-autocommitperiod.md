@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-volume-autocommitperiod-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-fsx-volume-autocommitperiod-type)" : {{String}},
   "[Value](#cfn-fsx-volume-autocommitperiod-value)" : {{Integer}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-volume-autocommitperiod-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-fsx-volume-autocommitperiod-type): {{String}}
   [Value](#cfn-fsx-volume-autocommitperiod-value): {{Integer}}
 ```

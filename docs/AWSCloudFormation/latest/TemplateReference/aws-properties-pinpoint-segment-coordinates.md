@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pinpoint-segment-coordinates-syntax.json"></a>
 
-```
+```json
 {
   "[Latitude](#cfn-pinpoint-segment-coordinates-latitude)" : {{Number}},
   "[Longitude](#cfn-pinpoint-segment-coordinates-longitude)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pinpoint-segment-coordinates-syntax.yaml"></a>
 
-```
+```yaml
   [Latitude](#cfn-pinpoint-segment-coordinates-latitude): {{Number}}
   [Longitude](#cfn-pinpoint-segment-coordinates-longitude): {{Number}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-command-commandparameter-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultValue](#cfn-iot-command-commandparameter-defaultvalue)" : {{CommandParameterValue}},
   "[Description](#cfn-iot-command-commandparameter-description)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-command-commandparameter-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultValue](#cfn-iot-command-commandparameter-defaultvalue): {{
     CommandParameterValue}}
   [Description](#cfn-iot-command-commandparameter-description): {{String}}

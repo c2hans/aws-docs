@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fis-experimenttemplate-datasources-syntax.json"></a>
 
-```
+```json
 {
   "[CloudWatchDashboards](#cfn-fis-experimenttemplate-datasources-cloudwatchdashboards)" : {{[ CloudWatchDashboard, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fis-experimenttemplate-datasources-syntax.yaml"></a>
 
-```
+```yaml
   [CloudWatchDashboards](#cfn-fis-experimenttemplate-datasources-cloudwatchdashboards): {{
     - CloudWatchDashboard}}
 ```

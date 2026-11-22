@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-qnaintentconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BedrockModelConfiguration](#cfn-lex-bot-qnaintentconfiguration-bedrockmodelconfiguration)" : {{BedrockModelSpecification}},
   "[DataSourceConfiguration](#cfn-lex-bot-qnaintentconfiguration-datasourceconfiguration)" : {{DataSourceConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-qnaintentconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BedrockModelConfiguration](#cfn-lex-bot-qnaintentconfiguration-bedrockmodelconfiguration): {{
     BedrockModelSpecification}}
   [DataSourceConfiguration](#cfn-lex-bot-qnaintentconfiguration-datasourceconfiguration): {{

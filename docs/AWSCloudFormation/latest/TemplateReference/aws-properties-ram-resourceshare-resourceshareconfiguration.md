@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ram-resourceshare-resourceshareconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ExclusiveAccountAccess](#cfn-ram-resourceshare-resourceshareconfiguration-exclusiveaccountaccess)" : {{Boolean}},
   "[RetainSharingOnAccountLeaveOrganization](#cfn-ram-resourceshare-resourceshareconfiguration-retainsharingonaccountleaveorganization)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ram-resourceshare-resourceshareconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ExclusiveAccountAccess](#cfn-ram-resourceshare-resourceshareconfiguration-exclusiveaccountaccess): {{Boolean}}
   [RetainSharingOnAccountLeaveOrganization](#cfn-ram-resourceshare-resourceshareconfiguration-retainsharingonaccountleaveorganization): {{Boolean}}
 ```

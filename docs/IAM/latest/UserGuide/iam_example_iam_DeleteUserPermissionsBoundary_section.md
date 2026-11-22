@@ -27,7 +27,7 @@ For more information, see [Policies and permissions in IAM](https://docs.aws.ama
 **Tools for PowerShell V4**
 **Example 1: This example shows how to remove the permission boundary attached to an IAM user.**
 
-```
+```powershell
 Remove-IAMUserPermissionsBoundary -UserName joe
 ```
 +  For API details, see [DeleteUserPermissionsBoundary](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -35,7 +35,7 @@ Remove-IAMUserPermissionsBoundary -UserName joe
 **Tools for PowerShell V5**
 **Example 1: This example shows how to remove the permission boundary attached to an IAM user.**
 
-```
+```powershell
 Remove-IAMUserPermissionsBoundary -UserName joe
 ```
 +  For API details, see [DeleteUserPermissionsBoundary](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

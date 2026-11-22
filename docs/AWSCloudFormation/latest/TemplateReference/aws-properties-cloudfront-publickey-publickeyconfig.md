@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-publickey-publickeyconfig-syntax.json"></a>
 
-```
+```json
 {
   "[CallerReference](#cfn-cloudfront-publickey-publickeyconfig-callerreference)" : {{String}},
   "[Comment](#cfn-cloudfront-publickey-publickeyconfig-comment)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-publickey-publickeyconfig-syntax.yaml"></a>
 
-```
+```yaml
   [CallerReference](#cfn-cloudfront-publickey-publickeyconfig-callerreference): {{String}}
   [Comment](#cfn-cloudfront-publickey-publickeyconfig-comment): {{String}}
   [EncodedKey](#cfn-cloudfront-publickey-publickeyconfig-encodedkey): {{String}}

@@ -53,7 +53,7 @@ In the following procedure, make sure to replace the placeholder values, such as
 
    This command returns a response similar to the following example.
 
-   ```
+   ```json
    {
        "Arn": "arn:aws:mq:{{us-west-2}}:{{123456789012}}:configuration:c-fa3390a5-7e01-4559-ae0c-eb15b38b22ca",
        "AuthenticationStrategy": "simple",

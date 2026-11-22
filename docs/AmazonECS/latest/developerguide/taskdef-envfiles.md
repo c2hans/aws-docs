@@ -14,7 +14,7 @@ You can pass environment variables to your containers in the following ways:
 
 The following is a snippet of a task definition showing how to specify individual environment variables.
 
-```
+```JSON
 {
     "family": "",
     "containerDefinitions": [

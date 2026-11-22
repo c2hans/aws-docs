@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-configuredtable-gluetablereference-syntax.json"></a>
 
-```
+```json
 {
   "[DatabaseName](#cfn-cleanrooms-configuredtable-gluetablereference-databasename)" : {{String}},
   "[Region](#cfn-cleanrooms-configuredtable-gluetablereference-region)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-configuredtable-gluetablereference-syntax.yaml"></a>
 
-```
+```yaml
   [DatabaseName](#cfn-cleanrooms-configuredtable-gluetablereference-databasename): {{String}}
   [Region](#cfn-cleanrooms-configuredtable-gluetablereference-region): {{String}}
   [TableName](#cfn-cleanrooms-configuredtable-gluetablereference-tablename): {{String}}

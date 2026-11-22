@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-cascadingcontrolsource-syntax.json"></a>
 
-```
+```json
 {
   "[ColumnToMatch](#cfn-quicksight-analysis-cascadingcontrolsource-columntomatch)" : {{ColumnIdentifier}},
   "[SourceSheetControlId](#cfn-quicksight-analysis-cascadingcontrolsource-sourcesheetcontrolid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-cascadingcontrolsource-syntax.yaml"></a>
 
-```
+```yaml
   [ColumnToMatch](#cfn-quicksight-analysis-cascadingcontrolsource-columntomatch): {{
     ColumnIdentifier}}
   [SourceSheetControlId](#cfn-quicksight-analysis-cascadingcontrolsource-sourcesheetcontrolid): {{String}}

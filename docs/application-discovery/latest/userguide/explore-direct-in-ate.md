@@ -29,7 +29,7 @@ Under **Tables** the following tables represent the datasets grouped by the agen
 
 1. Query the data in the Amazon Athena console by writing and running SQL queries in the Athena Query Editor. For example, you can use the following query to see all of the discovered server IP addresses.
 
-   ```
+   ```sql
    SELECT * FROM network_interface_agent;
    ```
 

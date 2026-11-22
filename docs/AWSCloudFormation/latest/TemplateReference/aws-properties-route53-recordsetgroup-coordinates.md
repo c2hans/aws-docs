@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-route53-recordsetgroup-coordinates-syntax.json"></a>
 
-```
+```json
 {
   "[Latitude](#cfn-route53-recordsetgroup-coordinates-latitude)" : {{String}},
   "[Longitude](#cfn-route53-recordsetgroup-coordinates-longitude)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-route53-recordsetgroup-coordinates-syntax.yaml"></a>
 
-```
+```yaml
   [Latitude](#cfn-route53-recordsetgroup-coordinates-latitude): {{String}}
   [Longitude](#cfn-route53-recordsetgroup-coordinates-longitude): {{String}}
 ```

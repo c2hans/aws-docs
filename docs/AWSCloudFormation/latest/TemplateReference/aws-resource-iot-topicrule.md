@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iot-topicrule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoT::TopicRule",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iot-topicrule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoT::TopicRule
 Properties:
   [RuleName](#cfn-iot-topicrule-rulename): {{String}}
@@ -107,7 +107,7 @@ The following example declares an AWS IoT rule.
 #### JSON
 <a name="aws-resource-iot-topicrule--examples----json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -146,7 +146,7 @@ The following example declares an AWS IoT rule.
 #### YAML
 <a name="aws-resource-iot-topicrule--examples----yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   MyTopicRule:

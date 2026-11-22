@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspacesweb-usersettings-imagemetadata-syntax.json"></a>
 
-```
+```json
 {
   "[FileExtension](#cfn-workspacesweb-usersettings-imagemetadata-fileextension)" : {{String}},
   "[LastUploadTimestamp](#cfn-workspacesweb-usersettings-imagemetadata-lastuploadtimestamp)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspacesweb-usersettings-imagemetadata-syntax.yaml"></a>
 
-```
+```yaml
   [FileExtension](#cfn-workspacesweb-usersettings-imagemetadata-fileextension): {{String}}
   [LastUploadTimestamp](#cfn-workspacesweb-usersettings-imagemetadata-lastuploadtimestamp): {{String}}
   [MimeType](#cfn-workspacesweb-usersettings-imagemetadata-mimetype): {{String}}

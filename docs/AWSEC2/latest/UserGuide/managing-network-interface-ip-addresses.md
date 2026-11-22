@@ -62,7 +62,7 @@ You can manage the following IP addresses for your network interfaces:
 **To manage the IPv4 addresses**
 Use the following [assign-private-ip-addresses](https://docs.aws.amazon.com/cli/latest/reference/ec2/assign-private-ip-addresses.html) command to assign an IPv4 address.
 
-```
+```bash
 aws ec2 assign-private-ip-addresses \
     --network-interface-id {{eni-1234567890abcdef0}} \
     --private-ip-addresses {{10.0.0.82}}
@@ -70,7 +70,7 @@ aws ec2 assign-private-ip-addresses \
 
 Use the following [unassign-private-ip-addresses](https://docs.aws.amazon.com/cli/latest/reference/ec2/unassign-private-ip-addresses.html) command to unassign an IPv4 address.
 
-```
+```bash
 aws ec2 unassign-private-ip-addresses \
     --network-interface-id {{eni-1234567890abcdef0}} \
     --private-ip-addresses {{10.0.0.82}}
@@ -79,7 +79,7 @@ aws ec2 unassign-private-ip-addresses \
 **To manage the IPv6 addresses**
 Use the following [assign-ipv6-addresses](https://docs.aws.amazon.com/cli/latest/reference/ec2/assign-ipv6-addresses.html) command to assign an IPv6 address.
 
-```
+```bash
 aws ec2 assign-ipv6-addresses \
     --network-interface-id {{eni-1234567890abcdef0}} \
     --ipv6-addresses {{2001:db8:1234:1a00:9691:9503:25ad:1761}}
@@ -87,7 +87,7 @@ aws ec2 assign-ipv6-addresses \
 
 Use the following [unassign-ipv6-addresses](https://docs.aws.amazon.com/cli/latest/reference/ec2/unassign-ipv6-addresses.html) command to unassign an IPv6 address.
 
-```
+```bash
 aws ec2 unassign-ipv6-addresses \
     --network-interface-id {{eni-1234567890abcdef0}} \
     --ipv6-addresses {{2001:db8:1234:1a00:9691:9503:25ad:1761}}
@@ -96,7 +96,7 @@ aws ec2 unassign-ipv6-addresses \
 **To manage the Elastic IP address for the primary private IPv4 address**
 Use the following [associate-address](https://docs.aws.amazon.com/cli/latest/reference/ec2/associate-address.html) command to associate an Elastic IP address with the primary private IPv4 address.
 
-```
+```bash
 aws ec2 associate-address \
     --allocation-id {{eipalloc-0b263919b6EXAMPLE}} \
     --network-interface-id {{eni-1234567890abcdef0}}
@@ -104,7 +104,7 @@ aws ec2 associate-address \
 
 Use the following [disassociate-address](https://docs.aws.amazon.com/cli/latest/reference/ec2/disassociate-address.html) command to disassociate an Elastic IP address from the primary private IPv4 address.
 
-```
+```bash
 aws ec2 disassociate-address --association-id {{eipassoc-2bebb745a1EXAMPLE}}
 ```
 
@@ -114,7 +114,7 @@ aws ec2 disassociate-address --association-id {{eipassoc-2bebb745a1EXAMPLE}}
 **To manage the IPv4 addresses**
 Use the [Register-EC2PrivateIpAddress](https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2PrivateIpAddress.html) cmdlet to assign an IPv4 address.
 
-```
+```powershell
 Register-EC2PrivateIpAddress `
     -NetworkInterfaceId {{eni-1234567890abcdef0}} `
     -PrivateIpAddress {{10.0.0.82}}
@@ -122,7 +122,7 @@ Register-EC2PrivateIpAddress `
 
 Use the [Unregister-EC2PrivateIpAddress](https://docs.aws.amazon.com/powershell/latest/reference/items/Unregister-EC2PrivateIpAddress.html) cmdlet to unassign an IPv4 address.
 
-```
+```powershell
 Unregister-EC2PrivateIpAddress `
     -NetworkInterfaceId {{eni-1234567890abcdef0}} `
     -PrivateIpAddress {{10.0.0.82}}
@@ -131,7 +131,7 @@ Unregister-EC2PrivateIpAddress `
 **To manage the IPv6 addresses**
 Use the [Register-EC2Ipv6AddressList](https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2Ipv6AddressList.html) cmdlet to assign an IPv6 address.
 
-```
+```powershell
 Register-EC2Ipv6AddressList `
     -NetworkInterfaceId {{eni-1234567890abcdef0}} `
     -Ipv6Address {{2001:db8:1234:1a00:9691:9503:25ad:1761}}
@@ -139,7 +139,7 @@ Register-EC2Ipv6AddressList `
 
 Use the [Unregister-EC2Ipv6AddressList](https://docs.aws.amazon.com/powershell/latest/reference/items/Unregister-EC2Ipv6AddressList.html) cmdlet to unassign an IPv6 address.
 
-```
+```powershell
 Unregister-EC2Ipv6AddressList `
     -NetworkInterfaceId {{eni-1234567890abcdef0}} `
     -Ipv6Address {{2001:db8:1234:1a00:9691:9503:25ad:1761}}
@@ -148,7 +148,7 @@ Unregister-EC2Ipv6AddressList `
 **To manage the Elastic IP address for the primary private IPv4 address**
 Use the [Register-EC2Address](https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2Address.html) cmdlet to associate an Elastic IP address with the primary private IPv4 address.
 
-```
+```powershell
 Register-EC2Address `
     -NetworkInterfaceId {{eni-1234567890abcdef0}} `
     -AllocationId {{eipalloc-0b263919b6EXAMPLE}}
@@ -156,7 +156,7 @@ Register-EC2Address `
 
 Use the [Unregister-EC2Address](https://docs.aws.amazon.com/powershell/latest/reference/items/Unregister-EC2Address.html) cmdlet to disassociate an Elastic IP address from the primary private IPv4 address.
 
-```
+```powershell
 Unregister-EC2Address -AssociationId {{eipassoc-2bebb745a1EXAMPLE}}
 ```
 

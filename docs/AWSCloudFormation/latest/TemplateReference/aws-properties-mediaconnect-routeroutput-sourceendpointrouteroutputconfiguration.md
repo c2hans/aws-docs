@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-routeroutput-sourceendpointrouteroutputconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationTransitEncryption](#cfn-mediaconnect-routeroutput-sourceendpointrouteroutputconfiguration-destinationtransitencryption)" : {{EndpointEncryptionConfiguration}},
   "[DestinationTransitEncryptionType](#cfn-mediaconnect-routeroutput-sourceendpointrouteroutputconfiguration-destinationtransitencryptiontype)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-routeroutput-sourceendpointrouteroutputconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationTransitEncryption](#cfn-mediaconnect-routeroutput-sourceendpointrouteroutputconfiguration-destinationtransitencryption): {{
     EndpointEncryptionConfiguration}}
   [DestinationTransitEncryptionType](#cfn-mediaconnect-routeroutput-sourceendpointrouteroutputconfiguration-destinationtransitencryptiontype): {{String}}

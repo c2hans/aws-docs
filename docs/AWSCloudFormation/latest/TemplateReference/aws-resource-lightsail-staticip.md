@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lightsail-staticip-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lightsail::StaticIp",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lightsail-staticip-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lightsail::StaticIp
 Properties:
   [AttachedTo](#cfn-lightsail-staticip-attachedto): {{String}}

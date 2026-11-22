@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-otelenrichment-otelenrichmentmetricselector-syntax.json"></a>
 
-```
+```json
 {
   "[MetricNames](#cfn-cloudwatch-otelenrichment-otelenrichmentmetricselector-metricnames)" : {{[ String, ... ]}},
   "[Namespace](#cfn-cloudwatch-otelenrichment-otelenrichmentmetricselector-namespace)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-otelenrichment-otelenrichmentmetricselector-syntax.yaml"></a>
 
-```
+```yaml
   [MetricNames](#cfn-cloudwatch-otelenrichment-otelenrichmentmetricselector-metricnames): {{
     - String}}
   [Namespace](#cfn-cloudwatch-otelenrichment-otelenrichmentmetricselector-namespace): {{String}}

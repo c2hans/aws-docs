@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-lineseriesaxisdisplayoptions-syntax.json"></a>
 
-```
+```json
 {
   "[AxisOptions](#cfn-quicksight-dashboard-lineseriesaxisdisplayoptions-axisoptions)" : {{AxisDisplayOptions}},
   "[MissingDataConfigurations](#cfn-quicksight-dashboard-lineseriesaxisdisplayoptions-missingdataconfigurations)" : {{[ MissingDataConfiguration, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-lineseriesaxisdisplayoptions-syntax.yaml"></a>
 
-```
+```yaml
   [AxisOptions](#cfn-quicksight-dashboard-lineseriesaxisdisplayoptions-axisoptions): {{
     AxisDisplayOptions}}
   [MissingDataConfigurations](#cfn-quicksight-dashboard-lineseriesaxisdisplayoptions-missingdataconfigurations): {{

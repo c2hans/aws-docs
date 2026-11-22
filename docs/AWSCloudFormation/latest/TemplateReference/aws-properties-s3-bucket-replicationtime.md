@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-replicationtime-syntax.json"></a>
 
-```
+```json
 {
   "[Status](#cfn-s3-bucket-replicationtime-status)" : {{String}},
   "[Time](#cfn-s3-bucket-replicationtime-time)" : {{ReplicationTimeValue}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-replicationtime-syntax.yaml"></a>
 
-```
+```yaml
   [Status](#cfn-s3-bucket-replicationtime-status): {{String}}
   [Time](#cfn-s3-bucket-replicationtime-time): {{
     ReplicationTimeValue}}
@@ -59,7 +59,7 @@ The following example creates a replication configuration with S3 Replication Ti
 #### JSON
 <a name="aws-properties-s3-bucket-replicationtime--examples--Enable_S3_Replication_Time_Control--json"></a>
 
-```
+```json
       {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "AWS CloudFormation Template for S3 Bucket Replication",
@@ -116,7 +116,7 @@ The following example creates a replication configuration with S3 Replication Ti
 #### YAML
 <a name="aws-properties-s3-bucket-replicationtime--examples--Enable_S3_Replication_Time_Control--yaml"></a>
 
-```
+```yaml
         AWSTemplateFormatVersion: '2010-09-09'
 Description: 'AWS CloudFormation Template for S3 Bucket Replication'
 

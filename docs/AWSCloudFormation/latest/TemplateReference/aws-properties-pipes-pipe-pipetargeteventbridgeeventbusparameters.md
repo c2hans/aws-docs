@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-pipetargeteventbridgeeventbusparameters-syntax.json"></a>
 
-```
+```json
 {
   "[DetailType](#cfn-pipes-pipe-pipetargeteventbridgeeventbusparameters-detailtype)" : {{String}},
   "[EndpointId](#cfn-pipes-pipe-pipetargeteventbridgeeventbusparameters-endpointid)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-pipetargeteventbridgeeventbusparameters-syntax.yaml"></a>
 
-```
+```yaml
   [DetailType](#cfn-pipes-pipe-pipetargeteventbridgeeventbusparameters-detailtype): {{String}}
   [EndpointId](#cfn-pipes-pipe-pipetargeteventbridgeeventbusparameters-endpointid): {{String}}
   [Resources](#cfn-pipes-pipe-pipetargeteventbridgeeventbusparameters-resources): {{

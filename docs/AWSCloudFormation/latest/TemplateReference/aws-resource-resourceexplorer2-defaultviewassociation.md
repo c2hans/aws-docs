@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-resourceexplorer2-defaultviewassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ResourceExplorer2::DefaultViewAssociation",
   "Properties" : {
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-resourceexplorer2-defaultviewassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ResourceExplorer2::DefaultViewAssociation
 Properties:
   [ViewArn](#cfn-resourceexplorer2-defaultviewassociation-viewarn): {{String}}
@@ -80,7 +80,7 @@ The unique identifier of the principal for which the specified view was made the
 #### JSON
 <a name="aws-resource-resourceexplorer2-defaultviewassociation--examples--Designating_the_default_view_for_the_Region--json"></a>
 
-```
+```json
 {
     "Description": "Sample stack template that designates SampleView as the default for its Region",
     "Resources": {
@@ -99,7 +99,7 @@ The unique identifier of the principal for which the specified view was made the
 #### YAML
 <a name="aws-resource-resourceexplorer2-defaultviewassociation--examples--Designating_the_default_view_for_the_Region--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Description: Sample stack template that creates a resource-based policy for SampleView
   SampleDefaultViewAssociation:

@@ -52,12 +52,12 @@ Uninstalling a service removes the files, the registry subkey, and any shortcuts
 1. Run one of the following commands to delete the launch agent.
    + Run the following command to delete the EC2Launch or EC2Launch v2:
 
-     ```
+     ```bash
      sc delete ec2launch
      ```
    + Run the following command to delete the EC2Config service:
 
-     ```
+     ```bash
      sc delete ec2config
      ```
 

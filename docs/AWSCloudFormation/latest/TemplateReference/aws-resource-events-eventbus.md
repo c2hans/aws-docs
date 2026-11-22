@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-events-eventbus-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Events::EventBus",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-events-eventbus-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Events::EventBus
 Properties:
   [DeadLetterConfig](#cfn-events-eventbus-deadletterconfig): {{
@@ -165,7 +165,7 @@ The following example creates a partner event bus named `aws.partner.repo1`.
 #### JSON
 <a name="aws-resource-events-eventbus--examples--Create_a_partner_event_bus--json"></a>
 
-```
+```json
 "SamplePartnerEventBus": {
     "Type": "AWS::Events::EventBus",
     "Properties": {
@@ -178,7 +178,7 @@ The following example creates a partner event bus named `aws.partner.repo1`.
 #### YAML
 <a name="aws-resource-events-eventbus--examples--Create_a_partner_event_bus--yaml"></a>
 
-```
+```yaml
 SamplePartnerEventBus:
     Type: AWS::Events::EventBus
     Properties:
@@ -194,7 +194,7 @@ The following example creates a custom event bus named `MyCustomEventBus`.
 #### JSON
 <a name="aws-resource-events-eventbus--examples--Create_a_custom_event_bus--json"></a>
 
-```
+```json
 "SampleCustomEventBus": {
     "Type": "AWS::Events::EventBus",
     "Properties": {
@@ -206,7 +206,7 @@ The following example creates a custom event bus named `MyCustomEventBus`.
 #### YAML
 <a name="aws-resource-events-eventbus--examples--Create_a_custom_event_bus--yaml"></a>
 
-```
+```yaml
 SampleCustomEventBus:
     Type: AWS::Events::EventBus
     Properties:

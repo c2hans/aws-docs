@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudformation-stackset-stackinstances-syntax.json"></a>
 
-```
+```json
 {
   "[DeploymentTargets](#cfn-cloudformation-stackset-stackinstances-deploymenttargets)" : {{DeploymentTargets}},
   "[ParameterOverrides](#cfn-cloudformation-stackset-stackinstances-parameteroverrides)" : {{[ Parameter, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudformation-stackset-stackinstances-syntax.yaml"></a>
 
-```
+```yaml
   [DeploymentTargets](#cfn-cloudformation-stackset-stackinstances-deploymenttargets): {{
     DeploymentTargets}}
   [ParameterOverrides](#cfn-cloudformation-stackset-stackinstances-parameteroverrides): {{

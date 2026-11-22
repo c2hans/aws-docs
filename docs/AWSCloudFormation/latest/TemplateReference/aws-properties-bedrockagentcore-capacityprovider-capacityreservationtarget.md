@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-capacityprovider-capacityreservationtarget-syntax.json"></a>
 
-```
+```json
 {
   "[CapacityReservationId](#cfn-bedrockagentcore-capacityprovider-capacityreservationtarget-capacityreservationid)" : {{String}},
   "[CapacityReservationResourceGroupArn](#cfn-bedrockagentcore-capacityprovider-capacityreservationtarget-capacityreservationresourcegrouparn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-capacityprovider-capacityreservationtarget-syntax.yaml"></a>
 
-```
+```yaml
   [CapacityReservationId](#cfn-bedrockagentcore-capacityprovider-capacityreservationtarget-capacityreservationid): {{String}}
   [CapacityReservationResourceGroupArn](#cfn-bedrockagentcore-capacityprovider-capacityreservationtarget-capacityreservationresourcegrouparn): {{String}}
 ```

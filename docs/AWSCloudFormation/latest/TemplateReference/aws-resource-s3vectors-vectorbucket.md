@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-s3vectors-vectorbucket-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::S3Vectors::VectorBucket",
   "Properties" : {
@@ -54,7 +54,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-s3vectors-vectorbucket-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::S3Vectors::VectorBucket
 Properties:
   [EncryptionConfiguration](#cfn-s3vectors-vectorbucket-encryptionconfiguration): {{

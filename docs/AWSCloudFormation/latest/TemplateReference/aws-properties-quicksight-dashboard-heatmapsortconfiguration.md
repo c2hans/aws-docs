@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-heatmapsortconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[HeatMapColumnItemsLimitConfiguration](#cfn-quicksight-dashboard-heatmapsortconfiguration-heatmapcolumnitemslimitconfiguration)" : {{ItemsLimitConfiguration}},
   "[HeatMapColumnSort](#cfn-quicksight-dashboard-heatmapsortconfiguration-heatmapcolumnsort)" : {{[ FieldSortOptions, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-heatmapsortconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [HeatMapColumnItemsLimitConfiguration](#cfn-quicksight-dashboard-heatmapsortconfiguration-heatmapcolumnitemslimitconfiguration): {{
     ItemsLimitConfiguration}}
   [HeatMapColumnSort](#cfn-quicksight-dashboard-heatmapsortconfiguration-heatmapcolumnsort): {{

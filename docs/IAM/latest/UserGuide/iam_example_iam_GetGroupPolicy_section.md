@@ -47,7 +47,7 @@ For more information, see [Managing IAM policies](https://docs.aws.amazon.com/IA
 **Tools for PowerShell V4**
 **Example 1: This example returns details about the embedded inline policy named `PowerUserAccess-Testers` for the group `Testers`. The `PolicyDocument` property is URL encoded. It is decoded in this example with the `UrlDecode` .NET method.**
 
-```
+```powershell
 $results = Get-IAMGroupPolicy -GroupName Testers -PolicyName PowerUserAccess-Testers
 $results
 ```
@@ -80,7 +80,7 @@ Testers       %7B%0A%20%20%22Version%22%3A%20%222012-10-17%22%2C%0A%20... PowerU
 **Tools for PowerShell V5**
 **Example 1: This example returns details about the embedded inline policy named `PowerUserAccess-Testers` for the group `Testers`. The `PolicyDocument` property is URL encoded. It is decoded in this example with the `UrlDecode` .NET method.**
 
-```
+```powershell
 $results = Get-IAMGroupPolicy -GroupName Testers -PolicyName PowerUserAccess-Testers
 $results
 ```

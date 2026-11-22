@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-outputformatconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Serializer](#cfn-kinesisfirehose-deliverystream-outputformatconfiguration-serializer)" : {{Serializer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-outputformatconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Serializer](#cfn-kinesisfirehose-deliverystream-outputformatconfiguration-serializer): {{
     Serializer}}
 ```

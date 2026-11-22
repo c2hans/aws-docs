@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ses-configurationseteventdestination-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SES::ConfigurationSetEventDestination",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ses-configurationseteventdestination-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SES::ConfigurationSetEventDestination
 Properties:
   [ConfigurationSetName](#cfn-ses-configurationseteventdestination-configurationsetname): {{String}}
@@ -71,7 +71,7 @@ Specifies an event destination for a configuration set.
 #### JSON
 <a name="aws-resource-ses-configurationseteventdestination--examples----json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "AWS SES ConfigurationSetEventDestination Sample Template",
@@ -177,7 +177,7 @@ Specifies an event destination for a configuration set.
 #### YAML
 <a name="aws-resource-ses-configurationseteventdestination--examples----yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: AWS SES ConfigurationSetEventDestination Sample Template
 Parameters:

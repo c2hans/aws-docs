@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackagev2-channelgroup-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-mediapackagev2-channelgroup-tag-key)" : {{String}},
   "[Value](#cfn-mediapackagev2-channelgroup-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackagev2-channelgroup-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-mediapackagev2-channelgroup-tag-key): {{String}}
   [Value](#cfn-mediapackagev2-channelgroup-tag-value): {{String}}
 ```

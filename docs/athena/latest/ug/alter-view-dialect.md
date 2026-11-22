@@ -11,11 +11,11 @@ For more information about AWS Glue Data Catalog views, see [Use Data Catalog vi
 ## Syntax
 <a name="alter-view-dialect-syntax"></a>
 
-```
+```sql
 ALTER VIEW {{name}} [ FORCE ] [ ADD|UPDATE ] DIALECT AS query
 ```
 
-```
+```sql
 ALTER VIEW {{name}} [ DROP ] DIALECT
 ```
 
@@ -37,7 +37,7 @@ Introduces an engine-specific SQL query.
 ## Examples
 <a name="alter-view-dialect-syntax-examples"></a>
 
-```
+```sql
 ALTER VIEW orders_by_date FORCE ADD DIALECT
 AS
 SELECT orderdate, sum(totalprice) AS price
@@ -45,7 +45,7 @@ FROM orders
 GROUP BY orderdate
 ```
 
-```
+```sql
 ALTER VIEW orders_by_date FORCE UPDATE DIALECT
 AS
 SELECT orderdate, sum(totalprice) AS price
@@ -53,6 +53,6 @@ FROM orders
 GROUP BY orderdate
 ```
 
-```
+```sql
 ALTER VIEW orders_by_date DROP DIALECT
 ```

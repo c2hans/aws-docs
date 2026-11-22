@@ -16,7 +16,7 @@ The serialization library name for the Open CSV SerDe is `org.apache.hadoop.hive
 
 To use this SerDe, specify its fully qualified class name after `ROW FORMAT SERDE`. Also specify the delimiters inside `SERDEPROPERTIES`, as in the following example.
 
-```
+```sql
 ...
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 WITH SERDEPROPERTIES (
@@ -31,7 +31,7 @@ WITH SERDEPROPERTIES (
 
 To ignore headers in your data when you define a table, you can use the `skip.header.line.count` table property, as in the following example.
 
-```
+```sql
 TBLPROPERTIES ("skip.header.line.count"="1")
 ```
 
@@ -42,7 +42,7 @@ For examples, see the `CREATE TABLE` statements in [Query Amazon VPC flow logs](
 
 To use NULL values for data that fails to deserialize into the column’s defined type, you can use the `use.null.for.invalid.data` table property, as shown in the following example.
 
-```
+```sql
 TBLPROPERTIES ("skip.header.line.count"="1")
 ```
 
@@ -86,7 +86,7 @@ The following example assumes you have CSV data saved in the location `s3://amzn
 ```
 Use a `CREATE TABLE` statement to create an Athena table based on the data. Reference `OpenCSVSerde` (note the "d" in lower case) after `ROW FORMAT SERDE` and specify the character separator, quote character, and escape character in `WITH SERDEPROPERTIES`, as in the following example.
 
-```
+```sql
 CREATE EXTERNAL TABLE myopencsvtable (
    col1 string,
    col2 string,
@@ -104,7 +104,7 @@ LOCATION 's3://amzn-s3-demo-bucket/mycsv/';
 ```
 Query all values in the table:
 
-```
+```sql
 SELECT * FROM myopencsvtable;
 ```
 The query returns the following values:
@@ -125,7 +125,7 @@ Consider the following three columns of comma-separated data. The values in each
 ```
 The following statement creates a table in Athena from the specified Amazon S3 bucket location.
 
-```
+```sql
 CREATE EXTERNAL TABLE IF NOT EXISTS testtimestamp1(
  `profile_id` string,
  `creationdate` date,
@@ -136,7 +136,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS testtimestamp1(
 ```
 Next, run the following query:
 
-```
+```sql
 SELECT * FROM testtimestamp1
 ```
 The query returns the following result, showing the date and time data:
@@ -155,7 +155,7 @@ Consider the following test data:
 ```
 The following statement creates a table in Athena, specifying that `"escapeChar" = "\\"`.
 
-```
+```sql
 CREATE EXTERNAL TABLE test1 (
 f1 string,
 s2 string)

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudtrail-resourcepolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudTrail::ResourcePolicy",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudtrail-resourcepolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudTrail::ResourcePolicy
 Properties:
   [ResourceArn](#cfn-cloudtrail-resourcepolicy-resourcearn): {{String}}
@@ -79,7 +79,7 @@ The following example creates a resource policy that allows AWS account ID `1111
 #### JSON
 <a name="aws-resource-cloudtrail-resourcepolicy--examples--Example--json"></a>
 
-```
+```json
 {
   "Type": "AWS:CloudTrail:ResourcePolicy",
   "Properties": {
@@ -92,7 +92,7 @@ The following example creates a resource policy that allows AWS account ID `1111
 #### YAML
 <a name="aws-resource-cloudtrail-resourcepolicy--examples--Example--yaml"></a>
 
-```
+```yaml
   Type: AWS:CloudTrail:ResourcePolicy
   Properties:
     ResourceArn: "arn:aws:cloudtrail:us-east-1:01234567890:channel/EXAMPLE8-0558-4f7e-a06a-43969EXAMPLE"

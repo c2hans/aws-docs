@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-route53recoveryreadiness-resourceset-dnstargetresource-syntax.json"></a>
 
-```
+```json
 {
   "[DomainName](#cfn-route53recoveryreadiness-resourceset-dnstargetresource-domainname)" : {{String}},
   "[HostedZoneArn](#cfn-route53recoveryreadiness-resourceset-dnstargetresource-hostedzonearn)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-route53recoveryreadiness-resourceset-dnstargetresource-syntax.yaml"></a>
 
-```
+```yaml
   [DomainName](#cfn-route53recoveryreadiness-resourceset-dnstargetresource-domainname): {{String}}
   [HostedZoneArn](#cfn-route53recoveryreadiness-resourceset-dnstargetresource-hostedzonearn): {{String}}
   [RecordSetId](#cfn-route53recoveryreadiness-resourceset-dnstargetresource-recordsetid): {{String}}

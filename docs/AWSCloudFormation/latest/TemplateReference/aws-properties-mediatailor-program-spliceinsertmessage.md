@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-program-spliceinsertmessage-syntax.json"></a>
 
-```
+```json
 {
   "[AvailNum](#cfn-mediatailor-program-spliceinsertmessage-availnum)" : {{Integer}},
   "[AvailsExpected](#cfn-mediatailor-program-spliceinsertmessage-availsexpected)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-program-spliceinsertmessage-syntax.yaml"></a>
 
-```
+```yaml
   [AvailNum](#cfn-mediatailor-program-spliceinsertmessage-availnum): {{Integer}}
   [AvailsExpected](#cfn-mediatailor-program-spliceinsertmessage-availsexpected): {{Integer}}
   [SpliceEventId](#cfn-mediatailor-program-spliceinsertmessage-spliceeventid): {{Integer}}

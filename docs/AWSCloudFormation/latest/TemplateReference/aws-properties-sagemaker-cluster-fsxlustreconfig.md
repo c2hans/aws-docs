@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-cluster-fsxlustreconfig-syntax.json"></a>
 
-```
+```json
 {
   "[PerUnitStorageThroughput](#cfn-sagemaker-cluster-fsxlustreconfig-perunitstoragethroughput)" : {{Integer}},
   "[SizeInGiB](#cfn-sagemaker-cluster-fsxlustreconfig-sizeingib)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-cluster-fsxlustreconfig-syntax.yaml"></a>
 
-```
+```yaml
   [PerUnitStorageThroughput](#cfn-sagemaker-cluster-fsxlustreconfig-perunitstoragethroughput): {{Integer}}
   [SizeInGiB](#cfn-sagemaker-cluster-fsxlustreconfig-sizeingib): {{Integer}}
 ```

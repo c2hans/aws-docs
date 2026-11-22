@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotfleetwise-statetemplate-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-iotfleetwise-statetemplate-tag-key)" : {{String}},
   "[Value](#cfn-iotfleetwise-statetemplate-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotfleetwise-statetemplate-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-iotfleetwise-statetemplate-tag-key): {{String}}
   [Value](#cfn-iotfleetwise-statetemplate-tag-value): {{String}}
 ```

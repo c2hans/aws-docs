@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-cluster-clusterrestrictedinstancegroup-syntax.json"></a>
 
-```
+```json
 {
   "[CurrentCount](#cfn-sagemaker-cluster-clusterrestrictedinstancegroup-currentcount)" : {{Integer}},
   "[EnvironmentConfig](#cfn-sagemaker-cluster-clusterrestrictedinstancegroup-environmentconfig)" : {{EnvironmentConfig}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-cluster-clusterrestrictedinstancegroup-syntax.yaml"></a>
 
-```
+```yaml
   [CurrentCount](#cfn-sagemaker-cluster-clusterrestrictedinstancegroup-currentcount): {{Integer}}
   [EnvironmentConfig](#cfn-sagemaker-cluster-clusterrestrictedinstancegroup-environmentconfig): {{
     EnvironmentConfig}}

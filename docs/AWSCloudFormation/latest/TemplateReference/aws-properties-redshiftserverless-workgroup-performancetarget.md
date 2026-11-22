@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-redshiftserverless-workgroup-performancetarget-syntax.json"></a>
 
-```
+```json
 {
   "[Level](#cfn-redshiftserverless-workgroup-performancetarget-level)" : {{Integer}},
   "[Status](#cfn-redshiftserverless-workgroup-performancetarget-status)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-redshiftserverless-workgroup-performancetarget-syntax.yaml"></a>
 
-```
+```yaml
   [Level](#cfn-redshiftserverless-workgroup-performancetarget-level): {{Integer}}
   [Status](#cfn-redshiftserverless-workgroup-performancetarget-status): {{String}}
 ```

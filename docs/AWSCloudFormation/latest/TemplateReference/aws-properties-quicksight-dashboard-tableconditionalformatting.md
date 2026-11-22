@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-tableconditionalformatting-syntax.json"></a>
 
-```
+```json
 {
   "[ConditionalFormattingOptions](#cfn-quicksight-dashboard-tableconditionalformatting-conditionalformattingoptions)" : {{[ TableConditionalFormattingOption, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-tableconditionalformatting-syntax.yaml"></a>
 
-```
+```yaml
   [ConditionalFormattingOptions](#cfn-quicksight-dashboard-tableconditionalformatting-conditionalformattingoptions): {{
     - TableConditionalFormattingOption}}
 ```

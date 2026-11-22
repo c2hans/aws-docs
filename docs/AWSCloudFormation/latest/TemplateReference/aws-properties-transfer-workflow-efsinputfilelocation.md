@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-transfer-workflow-efsinputfilelocation-syntax.json"></a>
 
-```
+```json
 {
   "[FileSystemId](#cfn-transfer-workflow-efsinputfilelocation-filesystemid)" : {{String}},
   "[Path](#cfn-transfer-workflow-efsinputfilelocation-path)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-transfer-workflow-efsinputfilelocation-syntax.yaml"></a>
 
-```
+```yaml
   [FileSystemId](#cfn-transfer-workflow-efsinputfilelocation-filesystemid): {{String}}
   [Path](#cfn-transfer-workflow-efsinputfilelocation-path): {{String}}
 ```

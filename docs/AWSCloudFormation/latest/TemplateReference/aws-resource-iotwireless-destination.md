@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iotwireless-destination-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoTWireless::Destination",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iotwireless-destination-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoTWireless::Destination
 Properties:
   [Description](#cfn-iotwireless-destination-description): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-filterrelativedatetimecontrol-syntax.json"></a>
 
-```
+```json
 {
   "[CommitMode](#cfn-quicksight-analysis-filterrelativedatetimecontrol-commitmode)" : {{String}},
   "[DisplayOptions](#cfn-quicksight-analysis-filterrelativedatetimecontrol-displayoptions)" : {{RelativeDateTimeControlDisplayOptions}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-filterrelativedatetimecontrol-syntax.yaml"></a>
 
-```
+```yaml
   [CommitMode](#cfn-quicksight-analysis-filterrelativedatetimecontrol-commitmode): {{String}}
   [DisplayOptions](#cfn-quicksight-analysis-filterrelativedatetimecontrol-displayoptions): {{
     RelativeDateTimeControlDisplayOptions}}

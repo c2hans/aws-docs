@@ -23,7 +23,7 @@ This procedure is supported for the following Amazon RDS for Oracle DB engine ve
 
 The following example backs up a control file using the specified values for the parameters.
 
-```
+```sql
 BEGIN
     rdsadmin.rdsadmin_rman_util.backup_current_controlfile(
         p_owner               => '{{SYS}}',

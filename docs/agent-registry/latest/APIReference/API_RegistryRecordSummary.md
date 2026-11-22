@@ -63,13 +63,18 @@ Required: Yes
  ** status **   <a name="agentregistry-Type-RegistryRecordSummary-status"></a>
  The lifecycle status of the registry record. A record is `DRAFT` before it is submitted, `PENDING_APPROVAL` while awaiting curator review, and `APPROVED` once it is approved and discoverable. `REJECTED` and `DEPRECATED` records are not discoverable. The `CREATING`, `UPDATING`, `CREATE_FAILED`, and `UPDATE_FAILED` values reflect the state of an in-progress or failed asynchronous change.
 Type: String
-Valid Values: `DRAFT | PENDING_APPROVAL | APPROVED | REJECTED | DEPRECATED | CREATING | UPDATING | CREATE_FAILED | UPDATE_FAILED`
+Valid Values: `DRAFT | PENDING_APPROVAL | APPROVED | REJECTED | DEPRECATED | CREATING | UPDATING | CREATE_FAILED | UPDATE_FAILED | CREATE_PENDING_AUTH | UPDATE_PENDING_AUTH`
 Required: Yes
 
  ** updatedAt **   <a name="agentregistry-Type-RegistryRecordSummary-updatedAt"></a>
  The timestamp when the registry record was last updated.
 Type: Timestamp
 Required: Yes
+
+ ** artifact **   <a name="agentregistry-Type-RegistryRecordSummary-artifact"></a>
+ The skill package of the record's latest approved revision, as the package's SHA-256 checksum and a download URL that is valid for up to 5 minutes. Only `BatchGetDiscoverableRegistryRecord` returns this member, not `SearchDiscoverableRegistryRecords`. Absent when the record has no skill package.
+Type: [RegistryRecordArtifactDownload](API_RegistryRecordArtifactDownload.md) object
+Required: No
 
  ** customMetadata **   <a name="agentregistry-Type-RegistryRecordSummary-customMetadata"></a>
  The custom metadata attached to this registry record. Values are strings (maximum 128 characters) or booleans. This field is only present if the registry has a custom metadata schema configured.

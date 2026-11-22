@@ -82,7 +82,7 @@ Create a routing rule.
 #### POST schema
 <a name="domainnames-domainname-routingrules-request-body-post-example"></a>
 
-```
+```json
 {
   "conditions": [
     {
@@ -120,7 +120,7 @@ Create a routing rule.
 #### RoutingRules schema
 <a name="domainnames-domainname-routingrules-response-body-routingrules-example"></a>
 
-```
+```json
 {
   "items": [
     {
@@ -162,7 +162,7 @@ Create a routing rule.
 #### RoutingRule schema
 <a name="domainnames-domainname-routingrules-response-body-routingrule-example"></a>
 
-```
+```json
 {
   "routingRuleId": "string",
   "routingRuleArn": "string",
@@ -199,7 +199,7 @@ Create a routing rule.
 #### BadRequestException schema
 <a name="domainnames-domainname-routingrules-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -208,7 +208,7 @@ Create a routing rule.
 #### NotFoundException schema
 <a name="domainnames-domainname-routingrules-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -218,7 +218,7 @@ Create a routing rule.
 #### ConflictException schema
 <a name="domainnames-domainname-routingrules-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -227,7 +227,7 @@ Create a routing rule.
 #### LimitExceededException schema
 <a name="domainnames-domainname-routingrules-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appintegrations-application-applicationconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ContactHandling](#cfn-appintegrations-application-applicationconfig-contacthandling)" : {{ContactHandling}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appintegrations-application-applicationconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ContactHandling](#cfn-appintegrations-application-applicationconfig-contacthandling): {{
     ContactHandling}}
 ```

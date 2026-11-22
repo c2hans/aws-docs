@@ -35,7 +35,7 @@ In this step, you create an IAM policy and then attach that policy to an IAM rol
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -67,7 +67,7 @@ In this step, you create an IAM policy and then attach that policy to an IAM rol
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

@@ -10,13 +10,13 @@ You can set the default edition of an Amazon RDS Oracle DB instance using the Am
 
 The following example sets the default edition for the Amazon RDS Oracle DB instance to `RELEASE_V1`.
 
-```
+```sql
 EXEC rdsadmin.rdsadmin_util.alter_default_edition('RELEASE_V1');
 ```
 
 The following example sets the default edition for the Amazon RDS Oracle DB instance back to the Oracle default.
 
-```
+```sql
 EXEC rdsadmin.rdsadmin_util.alter_default_edition('ORA$BASE');
 ```
 

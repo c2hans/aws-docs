@@ -13,7 +13,7 @@ The following policy statement gives the user permission to call any POST method
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -39,7 +39,7 @@ The following example policy statement gives the user permission to call any met
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

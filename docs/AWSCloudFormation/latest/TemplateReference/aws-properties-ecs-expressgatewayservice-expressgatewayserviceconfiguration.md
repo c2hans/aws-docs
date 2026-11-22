@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-expressgatewayservice-expressgatewayserviceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Cpu](#cfn-ecs-expressgatewayservice-expressgatewayserviceconfiguration-cpu)" : {{String}},
   "[CreatedAt](#cfn-ecs-expressgatewayservice-expressgatewayserviceconfiguration-createdat)" : {{String}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-expressgatewayservice-expressgatewayserviceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Cpu](#cfn-ecs-expressgatewayservice-expressgatewayserviceconfiguration-cpu): {{String}}
   [CreatedAt](#cfn-ecs-expressgatewayservice-expressgatewayserviceconfiguration-createdat): {{String}}
   [ExecutionRoleArn](#cfn-ecs-expressgatewayservice-expressgatewayserviceconfiguration-executionrolearn): {{String}}

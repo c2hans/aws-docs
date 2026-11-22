@@ -48,7 +48,7 @@ As you refactor your stacks, keep the following in mind:
 + You can't refactor resources that refer to pseudo parameters whose values differ between the source and destination stacks, such as `AWS::StackName`.
 + CloudFormation doesn't support empty stacks. If refactoring would leave a stack with no resources, you must first add at least one resource to that stack before you run [create-stack-refactor](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack-refactor.html). This can be a simple resource like `AWS::SNS::Topic` or `AWS::CloudFormation::WaitCondition`. For example:
 
-  ```
+  ```yaml
   Resources:
     MySimpleSNSTopic:
       Type: AWS::SNS::Topic
@@ -164,7 +164,7 @@ Use the following procedure to refactor a stack using the AWS CLI.
 
    The following is an example `resource-mapping.json` file.
 
-   ```
+   ```json
    [
        {
            "Source": {

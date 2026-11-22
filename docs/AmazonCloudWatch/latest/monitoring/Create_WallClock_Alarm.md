@@ -45,7 +45,7 @@ Use the [PutMetricAlarm](https://docs.aws.amazon.com/AmazonCloudWatch/latest/API
 **Example Create an alarm that uses a 1-hour wall clock window**
 This alarm evaluates the most recently completed clock hour in `UTC`. To align to a different time zone, set `Timezone` on the `WallClockWindow`.
 
-```
+```bash
 aws cloudwatch put-metric-alarm \
   --alarm-name HourlyCpuAlarm \
   --metric-name CPUUtilization \
@@ -62,7 +62,7 @@ aws cloudwatch put-metric-alarm \
 **Example Create a daily alarm aligned to a specific time zone**
 This alarm evaluates each calendar day in the `America/New_York` time zone. Daylight saving time transitions are handled automatically.
 
-```
+```bash
 aws cloudwatch put-metric-alarm \
   --alarm-name DailyBackupCheck \
   --metric-name SuccessfulBackups \
@@ -78,7 +78,7 @@ aws cloudwatch put-metric-alarm \
 **Example Create a weekly alarm in UTC**
 This alarm evaluates each calendar week (Monday 00:00 UTC through the following Monday 00:00 UTC).
 
-```
+```bash
 aws cloudwatch put-metric-alarm \
   --alarm-name WeeklyComplianceCheck \
   --metric-name ComplianceFailures \
@@ -94,7 +94,7 @@ aws cloudwatch put-metric-alarm \
 **Example Switch an existing alarm back to a sliding window**
 Set `EvaluationWindow` to `SlidingWindow` to make the change explicit. You can also omit the parameter, which has the same effect.
 
-```
+```bash
 aws cloudwatch put-metric-alarm \
   --alarm-name HourlyCpuAlarm \
   --metric-name CPUUtilization \
@@ -113,7 +113,7 @@ aws cloudwatch put-metric-alarm \
 
 Use the [DescribeAlarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_DescribeAlarms.html) API action to retrieve the evaluation window configuration of an alarm. The `EvaluationWindow` field is included in the response when the alarm uses a wall clock window. If the field is absent, the alarm uses a sliding window.
 
-```
+```bash
 aws cloudwatch describe-alarms \
   --alarm-names HourlyCpuAlarm
 ```

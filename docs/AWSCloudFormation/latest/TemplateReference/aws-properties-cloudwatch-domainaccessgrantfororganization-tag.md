@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-domainaccessgrantfororganization-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-cloudwatch-domainaccessgrantfororganization-tag-key)" : {{String}},
   "[Value](#cfn-cloudwatch-domainaccessgrantfororganization-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-domainaccessgrantfororganization-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-cloudwatch-domainaccessgrantfororganization-tag-key): {{String}}
   [Value](#cfn-cloudwatch-domainaccessgrantfororganization-tag-value): {{String}}
 ```

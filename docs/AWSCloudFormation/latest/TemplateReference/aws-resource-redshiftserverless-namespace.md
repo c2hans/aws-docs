@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-redshiftserverless-namespace-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RedshiftServerless::Namespace",
   "Properties" : {
@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-redshiftserverless-namespace-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RedshiftServerless::Namespace
 Properties:
   [AdminPasswordSecretKmsKeyId](#cfn-redshiftserverless-namespace-adminpasswordsecretkmskeyid): {{String}}

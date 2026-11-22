@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-appconfig-configurationprofile-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppConfig::ConfigurationProfile",
   "Properties" : {
@@ -54,7 +54,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-appconfig-configurationprofile-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppConfig::ConfigurationProfile
 Properties:
   [ApplicationId](#cfn-appconfig-configurationprofile-applicationid): {{String}}
@@ -198,7 +198,7 @@ The following example creates an AWS AppConfig configuration profile of type `Ho
 #### JSON
 <a name="aws-resource-appconfig-configurationprofile--examples--feature_flag--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Transform": "AWS::LanguageExtensions",
@@ -276,7 +276,7 @@ The following example creates an AWS AppConfig configuration profile of type `Ho
 #### YAML
 <a name="aws-resource-appconfig-configurationprofile--examples--feature_flag--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Transform: 'AWS::LanguageExtensions'
 Resources:
@@ -338,7 +338,7 @@ The following examples creates an AWS AppConfig configuration profile named MyTe
 #### JSON
 <a name="aws-resource-appconfig-configurationprofile--examples--configuration_profile_example_---json"></a>
 
-```
+```json
 {
   "Resources": {
     "CodePipelineConfigurationProfile": {
@@ -370,7 +370,7 @@ The following examples creates an AWS AppConfig configuration profile named MyTe
 #### YAML
 <a name="aws-resource-appconfig-configurationprofile--examples--configuration_profile_example_---yaml"></a>
 
-```
+```yaml
 Resources:
   CodePipelineConfigurationProfile:
     Type: AWS::AppConfig::ConfigurationProfile
@@ -395,7 +395,7 @@ The following examples creates an AWS AppConfig configuration profile named MyTe
 #### JSON
 <a name="aws-resource-appconfig-configurationprofile--examples--configuration_profile_example_-_Parameter_Store--json"></a>
 
-```
+```json
 {
   "Type": "AWS::AppConfig::ConfigurationProfile",
   "DependsOn": "MyTestApplication",
@@ -439,7 +439,7 @@ The following examples creates an AWS AppConfig configuration profile named MyTe
 #### YAML
 <a name="aws-resource-appconfig-configurationprofile--examples--configuration_profile_example_-_Parameter_Store--yaml"></a>
 
-```
+```yaml
 Resources:
   BasicConfigurationProfile:
     Type: AWS::AppConfig::ConfigurationProfile

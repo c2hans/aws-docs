@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-gateway-gatewayalbtesttrafficrules-syntax.json"></a>
 
-```
+```json
 {
   "[Header](#cfn-ecs-gateway-gatewayalbtesttrafficrules-header)" : {{GatewayTestTrafficHeader}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-gateway-gatewayalbtesttrafficrules-syntax.yaml"></a>
 
-```
+```yaml
   [Header](#cfn-ecs-gateway-gatewayalbtesttrafficrules-header): {{
     GatewayTestTrafficHeader}}
 ```

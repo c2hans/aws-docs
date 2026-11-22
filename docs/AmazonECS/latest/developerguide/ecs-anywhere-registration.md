@@ -135,13 +135,13 @@ Use the following steps to register an existing external instance with a differe
 
 1. Create an Systems Manager activation pair. This is used for Systems Manager managed instance activation. The output includes an `ActivationId` and `ActivationCode`. You use these in a later step. Make sure that you specify the ECS Anywhere IAM role that you created. For more information, see [Amazon ECS Anywhere IAM role](iam-role-ecsanywhere.md).
 
-   ```
+   ```ps
    aws ssm create-activation --iam-role {{ecsAnywhereRole}} | tee ssm-activation.json
    ```
 
 1. On your on-premises server or virtual machine (VM), download the installation script.
 
-   ```
+   ```ps
    Invoke-RestMethod -URI "https://amazon-ecs-agent.s3.amazonaws.com/ecs-anywhere-install.ps1" -OutFile “ecs-anywhere-install.ps1”
    ```
 
@@ -153,7 +153,7 @@ Use the following steps to register an existing external instance with a differe
 
    The verification should return information similar to the following:
 
-   ```
+   ```ps
    # Verification (PowerShell)
    Get-AuthenticodeSignature -FilePath .\ecs-anywhere-install.ps1
 

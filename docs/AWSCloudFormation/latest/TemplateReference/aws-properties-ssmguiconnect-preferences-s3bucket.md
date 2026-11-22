@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssmguiconnect-preferences-s3bucket-syntax.json"></a>
 
-```
+```json
 {
   "[BucketName](#cfn-ssmguiconnect-preferences-s3bucket-bucketname)" : {{String}},
   "[BucketOwner](#cfn-ssmguiconnect-preferences-s3bucket-bucketowner)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssmguiconnect-preferences-s3bucket-syntax.yaml"></a>
 
-```
+```yaml
   [BucketName](#cfn-ssmguiconnect-preferences-s3bucket-bucketname): {{String}}
   [BucketOwner](#cfn-ssmguiconnect-preferences-s3bucket-bucketowner): {{String}}
 ```

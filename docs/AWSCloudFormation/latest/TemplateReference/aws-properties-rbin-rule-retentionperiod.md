@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rbin-rule-retentionperiod-syntax.json"></a>
 
-```
+```json
 {
   "[RetentionPeriodUnit](#cfn-rbin-rule-retentionperiod-retentionperiodunit)" : {{String}},
   "[RetentionPeriodValue](#cfn-rbin-rule-retentionperiod-retentionperiodvalue)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rbin-rule-retentionperiod-syntax.yaml"></a>
 
-```
+```yaml
   [RetentionPeriodUnit](#cfn-rbin-rule-retentionperiod-retentionperiodunit): {{String}}
   [RetentionPeriodValue](#cfn-rbin-rule-retentionperiod-retentionperiodvalue): {{Integer}}
 ```

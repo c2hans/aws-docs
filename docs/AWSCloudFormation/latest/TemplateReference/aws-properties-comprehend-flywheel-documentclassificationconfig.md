@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-comprehend-flywheel-documentclassificationconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Labels](#cfn-comprehend-flywheel-documentclassificationconfig-labels)" : {{[ String, ... ]}},
   "[Mode](#cfn-comprehend-flywheel-documentclassificationconfig-mode)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-comprehend-flywheel-documentclassificationconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Labels](#cfn-comprehend-flywheel-documentclassificationconfig-labels): {{
     - String}}
   [Mode](#cfn-comprehend-flywheel-documentclassificationconfig-mode): {{String}}

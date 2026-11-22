@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-emr-studio-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EMR::Studio",
   "Properties" : {
@@ -44,7 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-emr-studio-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EMR::Studio
 Properties:
   [AuthMode](#cfn-emr-studio-authmode): {{String}}

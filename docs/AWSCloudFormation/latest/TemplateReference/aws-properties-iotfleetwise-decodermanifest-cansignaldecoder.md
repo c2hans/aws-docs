@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotfleetwise-decodermanifest-cansignaldecoder-syntax.json"></a>
 
-```
+```json
 {
   "[CanSignal](#cfn-iotfleetwise-decodermanifest-cansignaldecoder-cansignal)" : {{CanSignal}},
   "[FullyQualifiedName](#cfn-iotfleetwise-decodermanifest-cansignaldecoder-fullyqualifiedname)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotfleetwise-decodermanifest-cansignaldecoder-syntax.yaml"></a>
 
-```
+```yaml
   [CanSignal](#cfn-iotfleetwise-decodermanifest-cansignaldecoder-cansignal): {{
     CanSignal}}
   [FullyQualifiedName](#cfn-iotfleetwise-decodermanifest-cansignaldecoder-fullyqualifiedname): {{String}}

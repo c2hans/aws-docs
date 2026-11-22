@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-oam-link-linkconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[LogGroupConfiguration](#cfn-oam-link-linkconfiguration-loggroupconfiguration)" : {{LinkFilter}},
   "[MetricConfiguration](#cfn-oam-link-linkconfiguration-metricconfiguration)" : {{LinkFilter}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-oam-link-linkconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [LogGroupConfiguration](#cfn-oam-link-linkconfiguration-loggroupconfiguration): {{
     LinkFilter}}
   [MetricConfiguration](#cfn-oam-link-linkconfiguration-metricconfiguration): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-runtimesettings-syntax.json"></a>
 
-```
+```json
 {
   "[NluImprovementSpecification](#cfn-lex-bot-runtimesettings-nluimprovementspecification)" : {{NluImprovementSpecification}},
   "[SlotResolutionImprovementSpecification](#cfn-lex-bot-runtimesettings-slotresolutionimprovementspecification)" : {{SlotResolutionImprovementSpecification}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-runtimesettings-syntax.yaml"></a>
 
-```
+```yaml
   [NluImprovementSpecification](#cfn-lex-bot-runtimesettings-nluimprovementspecification): {{
     NluImprovementSpecification}}
   [SlotResolutionImprovementSpecification](#cfn-lex-bot-runtimesettings-slotresolutionimprovementspecification): {{

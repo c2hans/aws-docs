@@ -28,7 +28,7 @@ For example, the following Java code defines a `CatalogItem` class that has seve
 
 **Example**
 
-```
+```java
 @DynamoDBTable(tableName="ProductCatalog")
 public class CatalogItem {
 
@@ -90,7 +90,7 @@ The transactionWrite method does not support DynamoDBMapperConfig.SaveBehavior c
 
 **Example**
 
-```
+```java
 DynamoDBMapper mapper = new DynamoDBMapper(client);
 
 // Load a catalog item.

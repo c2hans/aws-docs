@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-workforce-workforcevpcconfigrequest-syntax.json"></a>
 
-```
+```json
 {
   "[SecurityGroupIds](#cfn-sagemaker-workforce-workforcevpcconfigrequest-securitygroupids)" : {{[ String, ... ]}},
   "[Subnets](#cfn-sagemaker-workforce-workforcevpcconfigrequest-subnets)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-workforce-workforcevpcconfigrequest-syntax.yaml"></a>
 
-```
+```yaml
   [SecurityGroupIds](#cfn-sagemaker-workforce-workforcevpcconfigrequest-securitygroupids): {{
     - String}}
   [Subnets](#cfn-sagemaker-workforce-workforcevpcconfigrequest-subnets): {{

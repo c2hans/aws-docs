@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-location-apikey-apikeyrestrictions-syntax.json"></a>
 
-```
+```json
 {
   "[AllowActions](#cfn-location-apikey-apikeyrestrictions-allowactions)" : {{[ String, ... ]}},
   "[AllowAndroidApps](#cfn-location-apikey-apikeyrestrictions-allowandroidapps)" : {{[ AndroidApp, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-location-apikey-apikeyrestrictions-syntax.yaml"></a>
 
-```
+```yaml
   [AllowActions](#cfn-location-apikey-apikeyrestrictions-allowactions): {{
     - String}}
   [AllowAndroidApps](#cfn-location-apikey-apikeyrestrictions-allowandroidapps): {{
@@ -144,7 +144,7 @@ The following example creates an API key that allows all Enhanced Maps, Enhanced
 #### JSON
 <a name="aws-properties-location-apikey-apikeyrestrictions--examples--Allowing_all_Enhanced_actions--json"></a>
 
-```
+```json
 {
   "Resources": {
     "ExampleKey": {
@@ -188,7 +188,7 @@ The following example creates an API key that allows all Enhanced Maps, Enhanced
 #### YAML
 <a name="aws-properties-location-apikey-apikeyrestrictions--examples--Allowing_all_Enhanced_actions--yaml"></a>
 
-```
+```yaml
 Resources:
   ExampleKey:
     Type: "AWS::Location::APIKey"
@@ -223,7 +223,7 @@ The following example creates an API key that allows the Enhanced Maps action `G
 #### JSON
 <a name="aws-properties-location-apikey-apikeyrestrictions--examples--Allowing_the_GetStaticMap_Enhanced_Map_action--json"></a>
 
-```
+```json
 {
   "Resources": {
     "ExampleKey": {
@@ -253,7 +253,7 @@ The following example creates an API key that allows the Enhanced Maps action `G
 #### YAML
 <a name="aws-properties-location-apikey-apikeyrestrictions--examples--Allowing_the_GetStaticMap_Enhanced_Map_action--yaml"></a>
 
-```
+```yaml
 Resources:
   ExampleKey:
     Type: "AWS::Location::APIKey"
@@ -278,7 +278,7 @@ The following example creates an API key that allows the Place action `SearchPla
 #### JSON
 <a name="aws-properties-location-apikey-apikeyrestrictions--examples--Allowing_the_SearchPlaceIndexForText_Place_action--json"></a>
 
-```
+```json
 {
   "Resources": {
     "ExampleKey": {
@@ -311,7 +311,7 @@ The following example creates an API key that allows the Place action `SearchPla
 #### YAML
 <a name="aws-properties-location-apikey-apikeyrestrictions--examples--Allowing_the_SearchPlaceIndexForText_Place_action--yaml"></a>
 
-```
+```yaml
 Resources:
   ExampleKey:
     Type: "AWS::Location::APIKey"

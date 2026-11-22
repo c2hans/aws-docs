@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-smsvoice-pool-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SMSVOICE::Pool",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-smsvoice-pool-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SMSVOICE::Pool
 Properties:
   [DeletionProtectionEnabled](#cfn-smsvoice-pool-deletionprotectionenabled): {{Boolean}}

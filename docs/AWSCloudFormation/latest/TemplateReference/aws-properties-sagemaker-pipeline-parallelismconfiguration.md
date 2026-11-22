@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-pipeline-parallelismconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MaxParallelExecutionSteps](#cfn-sagemaker-pipeline-parallelismconfiguration-maxparallelexecutionsteps)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-pipeline-parallelismconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MaxParallelExecutionSteps](#cfn-sagemaker-pipeline-parallelismconfiguration-maxparallelexecutionsteps): {{Integer}}
 ```
 

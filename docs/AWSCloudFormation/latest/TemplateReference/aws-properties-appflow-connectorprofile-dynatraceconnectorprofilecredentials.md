@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-connectorprofile-dynatraceconnectorprofilecredentials-syntax.json"></a>
 
-```
+```json
 {
   "[ApiToken](#cfn-appflow-connectorprofile-dynatraceconnectorprofilecredentials-apitoken)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-connectorprofile-dynatraceconnectorprofilecredentials-syntax.yaml"></a>
 
-```
+```yaml
   [ApiToken](#cfn-appflow-connectorprofile-dynatraceconnectorprofilecredentials-apitoken): {{String}}
 ```
 

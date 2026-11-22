@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/alter-table
 ## Supported syntax
 <a name="alter-table-supported-syntax"></a>
 
-```
+```sql
 ALTER TABLE [ IF EXISTS ] [ ONLY ] name [ * ]
     action [, ... ]
 ALTER TABLE [ IF EXISTS ] [ ONLY ] name [ * ]

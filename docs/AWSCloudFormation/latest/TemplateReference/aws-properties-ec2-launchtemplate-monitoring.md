@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-launchtemplate-monitoring-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-ec2-launchtemplate-monitoring-enabled)" : {{Boolean}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-launchtemplate-monitoring-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-ec2-launchtemplate-monitoring-enabled): {{Boolean}}
 ```
 

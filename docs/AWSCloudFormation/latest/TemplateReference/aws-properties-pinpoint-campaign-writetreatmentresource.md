@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pinpoint-campaign-writetreatmentresource-syntax.json"></a>
 
-```
+```json
 {
   "[CustomDeliveryConfiguration](#cfn-pinpoint-campaign-writetreatmentresource-customdeliveryconfiguration)" : {{CustomDeliveryConfiguration}},
   "[MessageConfiguration](#cfn-pinpoint-campaign-writetreatmentresource-messageconfiguration)" : {{MessageConfiguration}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pinpoint-campaign-writetreatmentresource-syntax.yaml"></a>
 
-```
+```yaml
   [CustomDeliveryConfiguration](#cfn-pinpoint-campaign-writetreatmentresource-customdeliveryconfiguration): {{
     CustomDeliveryConfiguration}}
   [MessageConfiguration](#cfn-pinpoint-campaign-writetreatmentresource-messageconfiguration): {{

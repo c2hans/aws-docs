@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrserverless-application-prometheusmonitoringconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[RemoteWriteUrl](#cfn-emrserverless-application-prometheusmonitoringconfiguration-remotewriteurl)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrserverless-application-prometheusmonitoringconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [RemoteWriteUrl](#cfn-emrserverless-application-prometheusmonitoringconfiguration-remotewriteurl): {{String}}
 ```
 

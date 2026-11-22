@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-knowledgebase-opensearchserverlessfieldmapping-syntax.json"></a>
 
-```
+```json
 {
   "[MetadataField](#cfn-bedrock-knowledgebase-opensearchserverlessfieldmapping-metadatafield)" : {{String}},
   "[TextField](#cfn-bedrock-knowledgebase-opensearchserverlessfieldmapping-textfield)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-knowledgebase-opensearchserverlessfieldmapping-syntax.yaml"></a>
 
-```
+```yaml
   [MetadataField](#cfn-bedrock-knowledgebase-opensearchserverlessfieldmapping-metadatafield): {{String}}
   [TextField](#cfn-bedrock-knowledgebase-opensearchserverlessfieldmapping-textfield): {{String}}
   [VectorField](#cfn-bedrock-knowledgebase-opensearchserverlessfieldmapping-vectorfield): {{String}}

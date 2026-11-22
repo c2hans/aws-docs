@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-alarm-evaluationwindow-syntax.json"></a>
 
-```
+```json
 {
   "[SlidingWindow](#cfn-cloudwatch-alarm-evaluationwindow-slidingwindow)" : {{Json}},
   "[WallClockWindow](#cfn-cloudwatch-alarm-evaluationwindow-wallclockwindow)" : {{WallClockWindow}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-alarm-evaluationwindow-syntax.yaml"></a>
 
-```
+```yaml
   [SlidingWindow](#cfn-cloudwatch-alarm-evaluationwindow-slidingwindow): {{Json}}
   [WallClockWindow](#cfn-cloudwatch-alarm-evaluationwindow-wallclockwindow): {{
     WallClockWindow}}

@@ -41,7 +41,7 @@ Use the [modify-hosts](https://docs.aws.amazon.com/cli/latest/reference/ec2/modi
 
 The following example modifies a Dedicated Host to support multiple instance types within the `m5` instance family.
 
-```
+```bash
 aws ec2 modify-hosts \
     --instance-family {{m5}} \
     --host-ids {{h-012a3456b7890cdef}}
@@ -49,7 +49,7 @@ aws ec2 modify-hosts \
 
 The following example modifies a Dedicated Host to support `m5.xlarge` instances only.
 
-```
+```bash
 aws ec2 modify-hosts \
     --instance-type {{m5.xlarge}} \
     --instance-family --host-ids {{h-012a3456b7890cdef}}
@@ -63,7 +63,7 @@ Use the [Edit-EC2Host](https://docs.aws.amazon.com/powershell/latest/reference/i
 
 The following example modifies a Dedicated Host to support multiple instance types within the `m5` instance family.
 
-```
+```powershell
 Edit-EC2Host `
     -InstanceFamily {{m5}} `
     -HostId {{h-012a3456b7890cdef}}
@@ -71,7 +71,7 @@ Edit-EC2Host `
 
 The following example modifies a Dedicated Host to support `m5.xlarge` instances only.
 
-```
+```powershell
 Edit-EC2Host `
     -InstanceType {{m5.xlarge}} `
     -HostId {{h-012a3456b7890cdef}}

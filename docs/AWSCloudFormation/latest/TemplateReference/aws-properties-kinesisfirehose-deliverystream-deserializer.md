@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-deserializer-syntax.json"></a>
 
-```
+```json
 {
   "[HiveJsonSerDe](#cfn-kinesisfirehose-deliverystream-deserializer-hivejsonserde)" : {{HiveJsonSerDe}},
   "[OpenXJsonSerDe](#cfn-kinesisfirehose-deliverystream-deserializer-openxjsonserde)" : {{OpenXJsonSerDe}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-deserializer-syntax.yaml"></a>
 
-```
+```yaml
   [HiveJsonSerDe](#cfn-kinesisfirehose-deliverystream-deserializer-hivejsonserde): {{
     HiveJsonSerDe}}
   [OpenXJsonSerDe](#cfn-kinesisfirehose-deliverystream-deserializer-openxjsonserde): {{

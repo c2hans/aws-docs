@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-cluster-kubeschedulerconfig-syntax.json"></a>
 
-```
+```json
 {
   "[NodeResourcesFit](#cfn-eks-cluster-kubeschedulerconfig-noderesourcesfit)" : {{NodeResourcesFitConfig}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-cluster-kubeschedulerconfig-syntax.yaml"></a>
 
-```
+```yaml
   [NodeResourcesFit](#cfn-eks-cluster-kubeschedulerconfig-noderesourcesfit): {{
     NodeResourcesFitConfig}}
 ```

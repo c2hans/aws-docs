@@ -95,7 +95,7 @@ You can minimize pinning by doing the following:
 <a name="rds-proxy-pinning.postgres"></a>
 
  For PostgreSQL, the following interactions also cause pinning:
-+  Using `SET` commands.
++  Using `SET` commands. RDS Proxy does not pin connections when you use `SET LOCAL` inside an explicit transaction block (between `BEGIN` and `COMMIT`). This exemption does not apply to `set_config(name, value, true)`, which does cause pinning.
 +  Using `PREPARE`, `DISCARD`, `DEALLOCATE`, or `EXECUTE` commands to manage prepared statements.
 +  Creating temporary sequences, tables, or views.
 +  Declaring cursors.

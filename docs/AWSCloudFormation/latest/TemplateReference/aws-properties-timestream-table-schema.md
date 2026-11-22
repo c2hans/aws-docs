@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-timestream-table-schema-syntax.json"></a>
 
-```
+```json
 {
   "[CompositePartitionKey](#cfn-timestream-table-schema-compositepartitionkey)" : {{[ PartitionKey, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-timestream-table-schema-syntax.yaml"></a>
 
-```
+```yaml
   [CompositePartitionKey](#cfn-timestream-table-schema-compositepartitionkey): {{
     - PartitionKey}}
 ```

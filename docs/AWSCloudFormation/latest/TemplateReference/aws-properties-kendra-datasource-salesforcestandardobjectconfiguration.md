@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-salesforcestandardobjectconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DocumentDataFieldName](#cfn-kendra-datasource-salesforcestandardobjectconfiguration-documentdatafieldname)" : {{String}},
   "[DocumentTitleFieldName](#cfn-kendra-datasource-salesforcestandardobjectconfiguration-documenttitlefieldname)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-salesforcestandardobjectconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DocumentDataFieldName](#cfn-kendra-datasource-salesforcestandardobjectconfiguration-documentdatafieldname): {{String}}
   [DocumentTitleFieldName](#cfn-kendra-datasource-salesforcestandardobjectconfiguration-documenttitlefieldname): {{String}}
   [FieldMappings](#cfn-kendra-datasource-salesforcestandardobjectconfiguration-fieldmappings): {{

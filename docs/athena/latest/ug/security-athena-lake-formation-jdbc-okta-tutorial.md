@@ -255,7 +255,7 @@ Whenever you use IAM policies, make sure that you follow IAM best practices. For
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": {
@@ -296,7 +296,7 @@ Whenever you use IAM policies, make sure that you follow IAM best practices. For
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

@@ -91,7 +91,7 @@ Updates a `Deployment`.
 #### PATCH schema
 <a name="apis-apiid-deployments-deploymentid-request-body-patch-example"></a>
 
-```
+```json
 {
   "description": "string"
 }
@@ -103,7 +103,7 @@ Updates a `Deployment`.
 #### Deployment schema
 <a name="apis-apiid-deployments-deploymentid-response-body-deployment-example"></a>
 
-```
+```json
 {
   "deploymentId": "string",
   "description": "string",
@@ -117,7 +117,7 @@ Updates a `Deployment`.
 #### BadRequestException schema
 <a name="apis-apiid-deployments-deploymentid-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -126,7 +126,7 @@ Updates a `Deployment`.
 #### NotFoundException schema
 <a name="apis-apiid-deployments-deploymentid-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -136,7 +136,7 @@ Updates a `Deployment`.
 #### ConflictException schema
 <a name="apis-apiid-deployments-deploymentid-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -145,7 +145,7 @@ Updates a `Deployment`.
 #### LimitExceededException schema
 <a name="apis-apiid-deployments-deploymentid-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

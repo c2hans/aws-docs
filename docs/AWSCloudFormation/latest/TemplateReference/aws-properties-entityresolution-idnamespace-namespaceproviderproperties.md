@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-entityresolution-idnamespace-namespaceproviderproperties-syntax.json"></a>
 
-```
+```json
 {
   "[ProviderConfiguration](#cfn-entityresolution-idnamespace-namespaceproviderproperties-providerconfiguration)" : {{{{{Key}}: {{Value}}, ...}}},
   "[ProviderServiceArn](#cfn-entityresolution-idnamespace-namespaceproviderproperties-providerservicearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-entityresolution-idnamespace-namespaceproviderproperties-syntax.yaml"></a>
 
-```
+```yaml
   [ProviderConfiguration](#cfn-entityresolution-idnamespace-namespaceproviderproperties-providerconfiguration): {{
     {{Key}}: {{Value}}}}
   [ProviderServiceArn](#cfn-entityresolution-idnamespace-namespaceproviderproperties-providerservicearn): {{String}}

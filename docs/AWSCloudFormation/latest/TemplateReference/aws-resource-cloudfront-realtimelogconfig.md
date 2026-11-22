@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudfront-realtimelogconfig-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudFront::RealtimeLogConfig",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudfront-realtimelogconfig-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudFront::RealtimeLogConfig
 Properties:
   [EndPoints](#cfn-cloudfront-realtimelogconfig-endpoints): {{

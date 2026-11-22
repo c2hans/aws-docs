@@ -23,7 +23,7 @@ The `ECRTemplateServiceRolePolicy` policy contains the following JSON.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

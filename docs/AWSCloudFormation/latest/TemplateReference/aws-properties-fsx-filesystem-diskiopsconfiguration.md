@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-filesystem-diskiopsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Iops](#cfn-fsx-filesystem-diskiopsconfiguration-iops)" : {{Integer}},
   "[Mode](#cfn-fsx-filesystem-diskiopsconfiguration-mode)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-filesystem-diskiopsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Iops](#cfn-fsx-filesystem-diskiopsconfiguration-iops): {{Integer}}
   [Mode](#cfn-fsx-filesystem-diskiopsconfiguration-mode): {{String}}
 ```

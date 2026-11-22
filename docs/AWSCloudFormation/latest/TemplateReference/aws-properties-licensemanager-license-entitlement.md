@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-licensemanager-license-entitlement-syntax.json"></a>
 
-```
+```json
 {
   "[AllowCheckIn](#cfn-licensemanager-license-entitlement-allowcheckin)" : {{Boolean}},
   "[MaxCount](#cfn-licensemanager-license-entitlement-maxcount)" : {{Integer}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-licensemanager-license-entitlement-syntax.yaml"></a>
 
-```
+```yaml
   [AllowCheckIn](#cfn-licensemanager-license-entitlement-allowcheckin): {{Boolean}}
   [MaxCount](#cfn-licensemanager-license-entitlement-maxcount): {{Integer}}
   [Name](#cfn-licensemanager-license-entitlement-name): {{String}}

@@ -18,6 +18,6 @@ This is the main module needed to integrate your app into the agent workspace an
 
 Install the contact package from NPM by installing ** @amazon-connect/contact**.
 
-```
+```userinput
 % npm install --save @amazon-connect/contact
 ```

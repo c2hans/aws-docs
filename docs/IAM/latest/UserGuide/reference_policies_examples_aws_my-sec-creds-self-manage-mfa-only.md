@@ -31,7 +31,7 @@ Do not add permission to delete an MFA device without MFA authentication. Users 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

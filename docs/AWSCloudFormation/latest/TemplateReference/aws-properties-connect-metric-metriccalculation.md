@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-metric-metriccalculation-syntax.json"></a>
 
-```
+```json
 {
   "[Calculation](#cfn-connect-metric-metriccalculation-calculation)" : {{String}},
   "[CalculationComponents](#cfn-connect-metric-metriccalculation-calculationcomponents)" : {{[ CalculationComponent, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-metric-metriccalculation-syntax.yaml"></a>
 
-```
+```yaml
   [Calculation](#cfn-connect-metric-metriccalculation-calculation): {{String}}
   [CalculationComponents](#cfn-connect-metric-metriccalculation-calculationcomponents): {{
     - CalculationComponent}}

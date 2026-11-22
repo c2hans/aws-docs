@@ -64,7 +64,7 @@ The following CLI example shows you how to create a vector index with tags by us
 
 When you create a vector index you must provide configuration details and use the following naming convention: `example-vector-index`
 
-```
+```bash
 aws s3vectors create-index --vector-bucket-name {{acc-bucket}} --data-type "float32" \
  --index-name {{accounts-index}} --dimension 1024 --distance-metric euclidean \
  --tags {{Department}}={{Accounting}},{{Stage}}={{Prod}}

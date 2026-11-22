@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-inspectorv2-filter-filtercriteria-syntax.json"></a>
 
-```
+```json
 {
   "[AwsAccountId](#cfn-inspectorv2-filter-filtercriteria-awsaccountid)" : {{[ StringFilter, ... ]}},
   "[CodeVulnerabilityDetectorName](#cfn-inspectorv2-filter-filtercriteria-codevulnerabilitydetectorname)" : {{[ StringFilter, ... ]}},
@@ -67,7 +67,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-inspectorv2-filter-filtercriteria-syntax.yaml"></a>
 
-```
+```yaml
   [AwsAccountId](#cfn-inspectorv2-filter-filtercriteria-awsaccountid): {{
     - StringFilter}}
   [CodeVulnerabilityDetectorName](#cfn-inspectorv2-filter-filtercriteria-codevulnerabilitydetectorname): {{

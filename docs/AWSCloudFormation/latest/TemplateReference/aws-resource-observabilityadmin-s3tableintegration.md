@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-observabilityadmin-s3tableintegration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ObservabilityAdmin::S3TableIntegration",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-observabilityadmin-s3tableintegration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ObservabilityAdmin::S3TableIntegration
 Properties:
   [Encryption](#cfn-observabilityadmin-s3tableintegration-encryption): {{

@@ -110,7 +110,7 @@ Amazon ECS Managed Instances supports configuring the size of the Amazon EBS dat
 
  The volume is attached during instance creation. You can specify the size of the volume, in GiB, when you create a Amazon ECS Managed Instances capacity provider by using the `storageConfiguration` parameter.
 
-```
+```json
 {
 ...
 
@@ -161,7 +161,7 @@ When you create a cluster using the AWS Management Console, the default managed 
 
 The following example shows a capacity provider configuration with local storage enabled and instance requirements that specify SSD-based instance store with a minimum of 50 GiB.
 
-```
+```json
 {
 ...
     "managedInstancesProvider": {

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-dynamicpartitioningconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-kinesisfirehose-deliverystream-dynamicpartitioningconfiguration-enabled)" : {{Boolean}},
   "[RetryOptions](#cfn-kinesisfirehose-deliverystream-dynamicpartitioningconfiguration-retryoptions)" : {{RetryOptions}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-dynamicpartitioningconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-kinesisfirehose-deliverystream-dynamicpartitioningconfiguration-enabled): {{Boolean}}
   [RetryOptions](#cfn-kinesisfirehose-deliverystream-dynamicpartitioningconfiguration-retryoptions): {{
     RetryOptions}}

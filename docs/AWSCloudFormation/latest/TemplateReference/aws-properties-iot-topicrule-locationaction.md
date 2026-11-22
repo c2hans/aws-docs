@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicrule-locationaction-syntax.json"></a>
 
-```
+```json
 {
   "[DeviceId](#cfn-iot-topicrule-locationaction-deviceid)" : {{String}},
   "[Latitude](#cfn-iot-topicrule-locationaction-latitude)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicrule-locationaction-syntax.yaml"></a>
 
-```
+```yaml
   [DeviceId](#cfn-iot-topicrule-locationaction-deviceid): {{String}}
   [Latitude](#cfn-iot-topicrule-locationaction-latitude): {{String}}
   [Longitude](#cfn-iot-topicrule-locationaction-longitude): {{String}}

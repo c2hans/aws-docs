@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-knowledgebase-rdsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CredentialsSecretArn](#cfn-bedrock-knowledgebase-rdsconfiguration-credentialssecretarn)" : {{String}},
   "[DatabaseName](#cfn-bedrock-knowledgebase-rdsconfiguration-databasename)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-knowledgebase-rdsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CredentialsSecretArn](#cfn-bedrock-knowledgebase-rdsconfiguration-credentialssecretarn): {{String}}
   [DatabaseName](#cfn-bedrock-knowledgebase-rdsconfiguration-databasename): {{String}}
   [FieldMapping](#cfn-bedrock-knowledgebase-rdsconfiguration-fieldmapping): {{

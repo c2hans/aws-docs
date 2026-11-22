@@ -38,7 +38,7 @@ Follow these steps to create a multi-account global table using the AWS Manageme
 
 ****
 
-   ```
+   ```json
    {
    "Version":"2012-10-17",
    "Statement": [
@@ -99,7 +99,7 @@ Follow these steps to create a multi-account global table using the AWS Manageme
 
    1. In the **Resource-based policy** section, add the following resource policy for the table in this account ({{444455556666}}). Multi-account global table replication is bi-directional, so each replica table must grant the DynamoDB replication service and the other participating account the permissions required to replicate. This mirrors the policy you added in the first account, with the account references reversed:
 
-      ```
+      ```json
       {
           "Version": "2012-10-17",
           "Statement": [
@@ -157,7 +157,7 @@ The following examples show how to create a multi-account global table using the
 
 Use the following AWS CLI commands to create a multi-account global table with cross-account replication.
 
-```
+```bash
 # STEP 1: Setting resource policy for the table in account 111122223333
 
 cat > /tmp/source-resource-policy.json << 'EOF'

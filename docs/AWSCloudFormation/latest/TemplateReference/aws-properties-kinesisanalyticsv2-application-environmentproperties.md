@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisanalyticsv2-application-environmentproperties-syntax.json"></a>
 
-```
+```json
 {
   "[PropertyGroups](#cfn-kinesisanalyticsv2-application-environmentproperties-propertygroups)" : {{[ PropertyGroup, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisanalyticsv2-application-environmentproperties-syntax.yaml"></a>
 
-```
+```yaml
   [PropertyGroups](#cfn-kinesisanalyticsv2-application-environmentproperties-propertygroups): {{
     - PropertyGroup}}
 ```

@@ -89,7 +89,7 @@ We recommend that you also include the account ID of the account where the S3 bu
 
 ****
 
-   ```
+   ```json
 
        {
        "Version":"2012-10-17",
@@ -167,7 +167,7 @@ This procedure is necessary only if you are exporting to an S3 bucket that uses 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -213,7 +213,7 @@ This procedure is necessary only if you are exporting to an S3 bucket that uses 
 
    The following is example output from this command:
 
-   ```
+   ```json
    {
        "KeyMetadata": {
            "AWSAccountId": "{{account_id}}",
@@ -237,7 +237,7 @@ This procedure is necessary only if you are exporting to an S3 bucket that uses 
 
 1. Use a text editor to create a file called `bucketencryption.json` with the following contents.
 
-   ```
+   ```json
    {
      "Rules": [
        {
@@ -335,7 +335,7 @@ The policy that you create depends on whether the destination bucket uses AWS KM
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -357,7 +357,7 @@ If the destination bucket uses AWS KMS encryption, create a policy with the foll
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -386,7 +386,7 @@ If the ACLs are enabled on destination bucket then add s3:PutObjectAcl to s3:Put
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -441,7 +441,7 @@ We recommend that you also include the account ID of the account where the S3 bu
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -532,7 +532,7 @@ This procedure is necessary only if you are exporting to an S3 bucket that uses 
 
 ****
 
-   ```
+   ```json
        {
        "Version":"2012-10-17",
        "Statement": [
@@ -590,7 +590,7 @@ This procedure is necessary only if you are exporting to an S3 bucket that uses 
 
    The following is example output from this command:
 
-   ```
+   ```json
    {
        "KeyMetadata": {
            "AWSAccountId": "{{account_id}}",
@@ -614,7 +614,7 @@ This procedure is necessary only if you are exporting to an S3 bucket that uses 
 
 1. Use a text editor to create a file called `bucketencryption.json` with the following contents.
 
-   ```
+   ```json
    {
      "Rules": [
        {

@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-wafregional-rule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::WAFRegional::Rule",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-wafregional-rule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::WAFRegional::Rule
 Properties:
   [MetricName](#cfn-wafregional-rule-metricname): {{String}}
@@ -98,7 +98,7 @@ The following example associates the `MyIPSetBlacklist``IPSet` object with a web
 #### JSON
 <a name="aws-resource-wafregional-rule--examples--Associate_an_IPSet_with_a_Web_ACL_Rule--json"></a>
 
-```
+```json
 "MyIPSetRule" : {
   "Type": "AWS::WAFRegional::Rule",
   "Properties": {
@@ -118,7 +118,7 @@ The following example associates the `MyIPSetBlacklist``IPSet` object with a web
 #### YAML
 <a name="aws-resource-wafregional-rule--examples--Associate_an_IPSet_with_a_Web_ACL_Rule--yaml"></a>
 
-```
+```yaml
 MyIPSetRule:
   Type: "AWS::WAFRegional::Rule"
   Properties:

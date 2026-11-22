@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-globaltableborderoptions-syntax.json"></a>
 
-```
+```json
 {
   "[SideSpecificBorder](#cfn-quicksight-template-globaltableborderoptions-sidespecificborder)" : {{TableSideBorderOptions}},
   "[UniformBorder](#cfn-quicksight-template-globaltableborderoptions-uniformborder)" : {{TableBorderOptions}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-globaltableborderoptions-syntax.yaml"></a>
 
-```
+```yaml
   [SideSpecificBorder](#cfn-quicksight-template-globaltableborderoptions-sidespecificborder): {{
     TableSideBorderOptions}}
   [UniformBorder](#cfn-quicksight-template-globaltableborderoptions-uniformborder): {{

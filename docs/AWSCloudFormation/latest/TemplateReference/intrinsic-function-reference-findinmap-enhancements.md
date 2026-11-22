@@ -19,13 +19,13 @@ The `DefaultValue` parameter for `Fn::FindInMap` no longer requires the `AWS::La
 ### JSON
 <a name="intrinsic-function-reference-findinmap-enhancements-syntax.json"></a>
 
-```
+```json
 { "Fn::FindInMap" : [ "{{MapName}}", "{{TopLevelKey}}", "{{SecondLevelKey}}"] }
 ```
 
 If you want to specify a fallback value for when a key isn't found in the mapping, include a `DefaultValue`:
 
-```
+```json
 { "Fn::FindInMap" : [ "{{MapName}}", "{{TopLevelKey}}", "{{SecondLevelKey}}", {"DefaultValue": "{{DefaultValue}}"}] }
 ```
 
@@ -34,13 +34,13 @@ If you want to specify a fallback value for when a key isn't found in the mappin
 
 Syntax for the full function name:
 
-```
+```yaml
 Fn::FindInMap: [ {{MapName}}, {{TopLevelKey}}, {{SecondLevelKey}} ]
 ```
 
 Syntax for the short form:
 
-```
+```yaml
 !FindInMap [ {{MapName}}, {{TopLevelKey}}, {{SecondLevelKey}} ]
 ```
 
@@ -48,7 +48,7 @@ If you want to specify a fallback value for when a key isn't found in the mappin
 
 Syntax for the full function name:
 
-```
+```yaml
 Fn::FindInMap:
   - {{MapName}}
   - {{TopLevelKey}}
@@ -58,7 +58,7 @@ Fn::FindInMap:
 
 Syntax for the short form:
 
-```
+```yaml
 !FindInMap
   - {{MapName}}
   - {{TopLevelKey}}
@@ -84,7 +84,7 @@ The following is an example of using a `Fn::FindInMap` function with the `Fn::Se
 #### JSON
 <a name="intrinsic-function-reference-findinmap-enhancement-example.json"></a>
 
-```
+```json
 {
   //...
   "Transform": "AWS::LanguageExtensions",
@@ -111,7 +111,7 @@ The following is an example of using a `Fn::FindInMap` function with the `Fn::Se
 #### YAML
 <a name="intrinsic-function-reference-findinmap-enhance-example.yaml"></a>
 
-```
+```yaml
 Transform: 'AWS::LanguageExtensions'
 #...
     !FindInMap: [MyMap, !Select [0, !Split [|, !Ref InputKeys]], SecondKey]

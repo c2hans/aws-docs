@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-servicecatalog-cloudformationproduct-info-syntax.json"></a>
 
-```
+```json
 {
   "[ImportFromPhysicalId](#cfn-servicecatalog-cloudformationproduct-info-importfromphysicalid)" : {{String}},
   "[LoadTemplateFromURL](#cfn-servicecatalog-cloudformationproduct-info-loadtemplatefromurl)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-servicecatalog-cloudformationproduct-info-syntax.yaml"></a>
 
-```
+```yaml
   [ImportFromPhysicalId](#cfn-servicecatalog-cloudformationproduct-info-importfromphysicalid): {{String}}
   [LoadTemplateFromURL](#cfn-servicecatalog-cloudformationproduct-info-loadtemplatefromurl): {{String}}
 ```

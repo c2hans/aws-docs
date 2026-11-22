@@ -83,7 +83,7 @@ For step-by-step instructions for setting up your replication configuration by u
 
 The following example replication configuration enables and sets the `ReplicationTime` and `EventThreshold` values for a replication rule. Enabling and setting these values enables S3 RTC on the rule.
 
-```
+```json
 {
     "Rules": [
         {
@@ -124,7 +124,7 @@ The following example replication configuration enables and sets the `Replicatio
 
  The following Java example adds replication configuration with S3 Replication Time Control (S3 RTC) enabled.
 
-```
+```java
 import software.amazon.awssdk.auth.credentials.AwsBasicCredentials;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.s3.model.DeleteMarkerReplication;

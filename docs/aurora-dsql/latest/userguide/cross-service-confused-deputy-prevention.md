@@ -21,7 +21,7 @@ The following example shows how you can use the `aws:SourceArn` and `aws:SourceA
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {
@@ -55,7 +55,7 @@ Change data capture (CDC) streams require an IAM service role that Aurora DSQL a
 
 Set `aws:SourceArn` to the stream ARN pattern for the cluster that uses the role. Because Aurora DSQL hasn't assigned the stream identifier when you create the stream, use a wildcard for the stream portion of the ARN:
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [

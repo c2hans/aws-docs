@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationinsights-application-process-syntax.json"></a>
 
-```
+```json
 {
   "[AlarmMetrics](#cfn-applicationinsights-application-process-alarmmetrics)" : {{[ AlarmMetric, ... ]}},
   "[ProcessName](#cfn-applicationinsights-application-process-processname)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationinsights-application-process-syntax.yaml"></a>
 
-```
+```yaml
   [AlarmMetrics](#cfn-applicationinsights-application-process-alarmmetrics): {{
     - AlarmMetric}}
   [ProcessName](#cfn-applicationinsights-application-process-processname): {{String}}

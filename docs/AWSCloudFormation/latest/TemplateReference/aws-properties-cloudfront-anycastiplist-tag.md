@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-anycastiplist-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-cloudfront-anycastiplist-tag-key)" : {{String}},
   "[Value](#cfn-cloudfront-anycastiplist-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-anycastiplist-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-cloudfront-anycastiplist-tag-key): {{String}}
   [Value](#cfn-cloudfront-anycastiplist-tag-value): {{String}}
 ```

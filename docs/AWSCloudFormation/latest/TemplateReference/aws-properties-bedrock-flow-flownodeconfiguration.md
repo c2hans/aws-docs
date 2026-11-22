@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-flow-flownodeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Agent](#cfn-bedrock-flow-flownodeconfiguration-agent)" : {{AgentFlowNodeConfiguration}},
   "[Collector](#cfn-bedrock-flow-flownodeconfiguration-collector)" : {{Json}},
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-flow-flownodeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Agent](#cfn-bedrock-flow-flownodeconfiguration-agent): {{
     AgentFlowNodeConfiguration}}
   [Collector](#cfn-bedrock-flow-flownodeconfiguration-collector): {{Json}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-codepipeline-customactiontype-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CodePipeline::CustomActionType",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-codepipeline-customactiontype-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CodePipeline::CustomActionType
 Properties:
   [Category](#cfn-codepipeline-customactiontype-category): {{String}}
@@ -134,7 +134,7 @@ The following example is a custom build action that requires users to specify on
 #### JSON
 <a name="aws-resource-codepipeline-customactiontype--examples--Custom_Action_Type_Resource_Configuration--json"></a>
 
-```
+```json
 "MyCustomActionType":
 {
     "Type": "AWS::CodePipeline::CustomActionType",
@@ -186,7 +186,7 @@ The following example is a custom build action that requires users to specify on
 #### YAML
 <a name="aws-resource-codepipeline-customactiontype--examples--Custom_Action_Type_Resource_Configuration--yaml"></a>
 
-```
+```yaml
 MyCustomActionType:
 Type: AWS::CodePipeline::CustomActionType
 Properties:

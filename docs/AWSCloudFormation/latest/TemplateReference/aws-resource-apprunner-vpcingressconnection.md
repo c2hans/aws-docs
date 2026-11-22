@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apprunner-vpcingressconnection-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppRunner::VpcIngressConnection",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apprunner-vpcingressconnection-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppRunner::VpcIngressConnection
 Properties:
   [IngressVpcConfiguration](#cfn-apprunner-vpcingressconnection-ingressvpcconfiguration): {{
@@ -117,7 +117,7 @@ This example illustrates creating a VPC Ingress Connection.
 #### JSON
 <a name="aws-resource-apprunner-vpcingressconnection--examples--VPC_Ingress_Connection--json"></a>
 
-```
+```json
 {
   "Type": "AWS::AppRunner::VpcIngressConnection",
   "Properties": {
@@ -134,7 +134,7 @@ This example illustrates creating a VPC Ingress Connection.
 #### YAML
 <a name="aws-resource-apprunner-vpcingressconnection--examples--VPC_Ingress_Connection--yaml"></a>
 
-```
+```yaml
 Type: AWS::AppRunner::VpcIngressConnection
 Properties:
   IngressVpcConfiguration:

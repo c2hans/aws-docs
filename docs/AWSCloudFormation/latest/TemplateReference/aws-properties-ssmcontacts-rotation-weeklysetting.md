@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssmcontacts-rotation-weeklysetting-syntax.json"></a>
 
-```
+```json
 {
   "[DayOfWeek](#cfn-ssmcontacts-rotation-weeklysetting-dayofweek)" : {{String}},
   "[HandOffTime](#cfn-ssmcontacts-rotation-weeklysetting-handofftime)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssmcontacts-rotation-weeklysetting-syntax.yaml"></a>
 
-```
+```yaml
   [DayOfWeek](#cfn-ssmcontacts-rotation-weeklysetting-dayofweek): {{String}}
   [HandOffTime](#cfn-ssmcontacts-rotation-weeklysetting-handofftime): {{String}}
 ```

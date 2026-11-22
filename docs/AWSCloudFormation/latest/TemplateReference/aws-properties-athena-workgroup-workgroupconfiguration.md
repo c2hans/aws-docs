@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-athena-workgroup-workgroupconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AdditionalConfiguration](#cfn-athena-workgroup-workgroupconfiguration-additionalconfiguration)" : {{String}},
   "[BytesScannedCutoffPerQuery](#cfn-athena-workgroup-workgroupconfiguration-bytesscannedcutoffperquery)" : {{Integer}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-athena-workgroup-workgroupconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AdditionalConfiguration](#cfn-athena-workgroup-workgroupconfiguration-additionalconfiguration): {{String}}
   [BytesScannedCutoffPerQuery](#cfn-athena-workgroup-workgroupconfiguration-bytesscannedcutoffperquery): {{Integer}}
   [CustomerContentEncryptionConfiguration](#cfn-athena-workgroup-workgroupconfiguration-customercontentencryptionconfiguration): {{

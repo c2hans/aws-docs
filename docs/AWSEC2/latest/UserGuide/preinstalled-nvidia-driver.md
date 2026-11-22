@@ -16,7 +16,7 @@ To review considerations that are dependent on your operating system (OS) platfo
 
 To update the driver version installed using one of these AMIs, you must uninstall the NVIDIA packages from your instance to avoid version conflicts. Use this command to uninstall the NVIDIA packages:
 
-```
+```bash
 [ec2-user ~]$ sudo yum erase nvidia cuda
 ```
 

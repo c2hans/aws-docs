@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-connectiontype-extractedparameter-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultValue](#cfn-glue-connectiontype-extractedparameter-defaultvalue)" : {{String}},
   "[Key](#cfn-glue-connectiontype-extractedparameter-key)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-connectiontype-extractedparameter-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultValue](#cfn-glue-connectiontype-extractedparameter-defaultvalue): {{String}}
   [Key](#cfn-glue-connectiontype-extractedparameter-key): {{String}}
   [PropertyLocation](#cfn-glue-connectiontype-extractedparameter-propertylocation): {{String}}

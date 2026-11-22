@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-expressgatewayservice-expressgatewayservicenetworkconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[SecurityGroups](#cfn-ecs-expressgatewayservice-expressgatewayservicenetworkconfiguration-securitygroups)" : {{[ String, ... ]}},
   "[Subnets](#cfn-ecs-expressgatewayservice-expressgatewayservicenetworkconfiguration-subnets)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-expressgatewayservice-expressgatewayservicenetworkconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [SecurityGroups](#cfn-ecs-expressgatewayservice-expressgatewayservicenetworkconfiguration-securitygroups): {{
     - String}}
   [Subnets](#cfn-ecs-expressgatewayservice-expressgatewayservicenetworkconfiguration-subnets): {{

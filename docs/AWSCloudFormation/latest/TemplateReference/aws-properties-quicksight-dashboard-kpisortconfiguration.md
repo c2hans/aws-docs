@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-kpisortconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[TrendGroupSort](#cfn-quicksight-dashboard-kpisortconfiguration-trendgroupsort)" : {{[ FieldSortOptions, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-kpisortconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [TrendGroupSort](#cfn-quicksight-dashboard-kpisortconfiguration-trendgroupsort): {{
     - FieldSortOptions}}
 ```

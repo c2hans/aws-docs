@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-osis-pipeline-resourcepolicy-syntax.json"></a>
 
-```
+```json
 {
   "[Policy](#cfn-osis-pipeline-resourcepolicy-policy)" : {{Json}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-osis-pipeline-resourcepolicy-syntax.yaml"></a>
 
-```
+```yaml
   [Policy](#cfn-osis-pipeline-resourcepolicy-policy): {{Json}}
 ```
 

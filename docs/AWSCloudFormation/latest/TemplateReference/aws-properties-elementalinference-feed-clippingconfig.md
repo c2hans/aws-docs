@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elementalinference-feed-clippingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[CallbackMetadata](#cfn-elementalinference-feed-clippingconfig-callbackmetadata)" : {{String}},
   "[DataSourceConfiguration](#cfn-elementalinference-feed-clippingconfig-datasourceconfiguration)" : {{DataSourceConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elementalinference-feed-clippingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [CallbackMetadata](#cfn-elementalinference-feed-clippingconfig-callbackmetadata): {{String}}
   [DataSourceConfiguration](#cfn-elementalinference-feed-clippingconfig-datasourceconfiguration): {{
     DataSourceConfiguration}}

@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-greengrass-coredefinition-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Greengrass::CoreDefinition",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-greengrass-coredefinition-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Greengrass::CoreDefinition
 Properties:
   [InitialVersion](#cfn-greengrass-coredefinition-initialversion): {{
@@ -66,7 +66,7 @@ The name of the core definition.
 Application-specific metadata to attach to the core definition. You can use tags in IAM policies to control access to AWS IoT Greengrass resources. You can also use tags to categorize your resources. For more information, see [Tagging Your AWS IoT Greengrass Resources](https://docs.aws.amazon.com/greengrass/v1/developerguide/tagging.html) in the * AWS IoT Greengrass Version 1 Developer Guide *.
 This `Json` property type is processed as a map of key-value pairs. It uses the following format, which is different from most `Tags` implementations in CloudFormation templates.
 
-```
+```json
 "Tags": {
     "KeyName0": "value",
     "KeyName1": "value",
@@ -124,7 +124,7 @@ For another template example, see the [`AWS::Greengrass::Group`](https://docs.aw
 #### JSON
 <a name="aws-resource-greengrass-coredefinition--examples--Create_a_Core_Definition--json"></a>
 
-```
+```json
 {
     "Description": "Create CoreDefinition with InitialVersion",
     "Parameters": {
@@ -184,7 +184,7 @@ For another template example, see the [`AWS::Greengrass::Group`](https://docs.aw
 #### YAML
 <a name="aws-resource-greengrass-coredefinition--examples--Create_a_Core_Definition--yaml"></a>
 
-```
+```yaml
 Description: Create CoreDefinition with InitialVersion
 Parameters:
   CoreDefinitionName:

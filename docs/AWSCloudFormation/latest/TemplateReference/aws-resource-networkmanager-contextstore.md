@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-networkmanager-contextstore-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::NetworkManager::ContextStore",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-networkmanager-contextstore-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::NetworkManager::ContextStore
 Properties:
   [Description](#cfn-networkmanager-contextstore-description): {{String}}

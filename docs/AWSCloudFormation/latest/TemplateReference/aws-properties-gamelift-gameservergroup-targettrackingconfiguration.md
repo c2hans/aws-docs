@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-gameservergroup-targettrackingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[TargetValue](#cfn-gamelift-gameservergroup-targettrackingconfiguration-targetvalue)" : {{Number}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-gameservergroup-targettrackingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [TargetValue](#cfn-gamelift-gameservergroup-targettrackingconfiguration-targetvalue): {{Number}}
 ```
 

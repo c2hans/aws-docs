@@ -61,7 +61,7 @@ The following example scenario shows how you can use the `AmazonSQSRequester` an
 ### On the client side
 <a name="process-login-request-client-side"></a>
 
-```
+```java
 public class LoginClient {
 
     // Specify the Amazon SQS queue to which to send requests.
@@ -111,7 +111,7 @@ Sending a login request does the following:
 
 The following example assumes that, upon construction, a thread is created to poll the queue and call the `handleLoginRequest()` method for every message. In addition, `doLogin()` is an assumed method.
 
-```
+```java
 public class LoginServer {
 
     // Specify the Amazon SQS queue to poll for login requests.

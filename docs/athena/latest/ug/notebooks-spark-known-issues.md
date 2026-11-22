@@ -93,7 +93,7 @@ Due to a known issue with open source Spark, when you create a table in Athena f
 For example, you might create a table in Athena for Spark in one of the following ways:
 + With the following `USING csv` syntax:
 
-  ```
+  ```sql
   spark.sql('''CREATE EXTERNAL TABLE $tableName (
   $colName1 $colType1,
   $colName2 $colType2,
@@ -104,7 +104,7 @@ For example, you might create a table in Athena for Spark in one of the followin
   ```
 +  With the following [DataFrame](https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/dataframe.html) API syntax:
 
-  ```
+  ```py
   df.write.format('csv').saveAsTable($table_name)
   ```
 

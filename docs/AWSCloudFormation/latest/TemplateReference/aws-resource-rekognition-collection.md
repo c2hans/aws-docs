@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-rekognition-collection-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Rekognition::Collection",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-rekognition-collection-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Rekognition::Collection
 Properties:
   [CollectionId](#cfn-rekognition-collection-collectionid): {{String}}

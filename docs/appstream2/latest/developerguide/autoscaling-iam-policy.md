@@ -13,7 +13,7 @@ In addition to having the permissions defined in the [AmazonAppStreamFullAccess]
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

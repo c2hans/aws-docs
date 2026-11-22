@@ -22,7 +22,7 @@ aws s3control get-storage-lens-configuration --account-id={{222222222222}} --con
 **Example – Retrieve and view an S3 Storage Lens configuration**
 The following example shows you how to retrieve an S3 Storage Lens configuration in SDK for Java so that you can view the configuration details. To use this example, replace the `{{user input placeholders}}` with your own information.
 
-```
+```Java
 package aws.example.s3control;
 
 import com.amazonaws.AmazonServiceException;

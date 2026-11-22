@@ -8,7 +8,7 @@ To use the ARM architecture, specify `ARM64` for the `cpuArchitecture` task defi
 
 In the following example, the ARM architecture is specified in a task definition. It's in JSON format.
 
-```
+```JSON
 {
     "runtimePlatform": {
         "operatingSystemFamily": "LINUX",
@@ -20,7 +20,7 @@ In the following example, the ARM architecture is specified in a task definition
 
 In the following example, a task definition for the ARM architecture displays "hello world."
 
-```
+```json
 {
  "family": "arm64-testapp",
  "networkMode": "awsvpc",

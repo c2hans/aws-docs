@@ -25,7 +25,7 @@ If you no longer need an Elastic IP address, we recommend that you release it. T
 **To release an Elastic IP address**
 Use the [release-address](https://docs.aws.amazon.com/cli/latest/reference/ec2/release-address.html) AWS CLI command.
 
-```
+```bash
 aws ec2 release-address --allocation-id {{eipalloc-64d5890a}}
 ```
 
@@ -35,7 +35,7 @@ aws ec2 release-address --allocation-id {{eipalloc-64d5890a}}
 **To release an Elastic IP address**
 Use the [Remove-EC2Address](https://docs.aws.amazon.com/powershell/latest/reference/items/Remove-EC2Address.html) cmdlet.
 
-```
+```powershell
 Remove-EC2Address -AllocationId {{eipalloc-64d5890a}}
 ```
 
@@ -51,7 +51,7 @@ After you release your Elastic IP address, you might be able to recover. The fol
 **To recover an Elastic IP address**
 Use the [allocate-address](https://docs.aws.amazon.com/cli/latest/reference/ec2/allocate-address.html) command.
 
-```
+```bash
 aws ec2 allocate-address \
     --domain vpc \
     --address {{203.0.113.3}}
@@ -63,7 +63,7 @@ aws ec2 allocate-address \
 **To recover an Elastic IP address**
 Use the [New-EC2Address](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Address.html) cmdlet.
 
-```
+```powershell
 New-EC2Address `
     -Address {{203.0.113.3}} `
     -Domain vpc `

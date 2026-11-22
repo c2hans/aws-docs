@@ -18,7 +18,7 @@ The easiest way to install the Oracle the export and import utilities is to inst
 
    The following command exports the tables named `tab1`, `tab2`, and `tab3`. The dump file is `exp_file.dmp`.
 
-   ```
+   ```sql
    exp cust_dba@ORCL FILE=exp_file.dmp TABLES=(tab1,tab2,tab3) LOG=exp_file.log
    ```
 

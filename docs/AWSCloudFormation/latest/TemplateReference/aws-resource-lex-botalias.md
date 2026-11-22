@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lex-botalias-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lex::BotAlias",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lex-botalias-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lex::BotAlias
 Properties:
   [BotAliasLocaleSettings](#cfn-lex-botalias-botaliaslocalesettings): {{

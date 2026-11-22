@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityhub-automationrule-severityupdate-syntax.json"></a>
 
-```
+```json
 {
   "[Label](#cfn-securityhub-automationrule-severityupdate-label)" : {{String}},
   "[Normalized](#cfn-securityhub-automationrule-severityupdate-normalized)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityhub-automationrule-severityupdate-syntax.yaml"></a>
 
-```
+```yaml
   [Label](#cfn-securityhub-automationrule-severityupdate-label): {{String}}
   [Normalized](#cfn-securityhub-automationrule-severityupdate-normalized): {{Integer}}
   [Product](#cfn-securityhub-automationrule-severityupdate-product): {{Number}}

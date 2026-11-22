@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewayrule-weightedroute-syntax.json"></a>
 
-```
+```json
 {
   "[TrafficSplit](#cfn-bedrockagentcore-gatewayrule-weightedroute-trafficsplit)" : {{[ TargetTrafficSplitEntry, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewayrule-weightedroute-syntax.yaml"></a>
 
-```
+```yaml
   [TrafficSplit](#cfn-bedrockagentcore-gatewayrule-weightedroute-trafficsplit): {{
     - TargetTrafficSplitEntry}}
 ```

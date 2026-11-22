@@ -64,7 +64,7 @@ Backup gateway requires access to the following service endpoints to communicate
 
 The following service endpoints are required by all gateways for control path (`anon-cp`, `client-cp`, `proxy-app`) and data path (`dp-1`) operations.
 
-```
+```sh
 anon-cp.backup-gateway.{{region}}.amazonaws.com:443
 client-cp.backup-gateway.{{region}}.amazonaws.com:443
 proxy-app.backup-gateway.{{region}}.amazonaws.com:443
@@ -75,7 +75,7 @@ dp-1.backup-gateway.{{region}}.amazonaws.com:443
 
 The following dual-stack service endpoints are required by all gateways for control path (activation, controlplane, proxy) and data path (dataplane) operations.
 
-```
+```sh
 activation-backup-gateway.{{region}}.api.aws:443
 controlplane-backup-gateway.{{region}}.api.aws:443
 proxy-backup-gateway.{{region}}.api.aws:443

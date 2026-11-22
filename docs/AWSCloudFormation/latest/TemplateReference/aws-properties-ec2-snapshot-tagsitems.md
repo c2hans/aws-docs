@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-snapshot-tagsitems-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-ec2-snapshot-tagsitems-key)" : {{String}},
   "[Value](#cfn-ec2-snapshot-tagsitems-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-snapshot-tagsitems-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-ec2-snapshot-tagsitems-key): {{String}}
   [Value](#cfn-ec2-snapshot-tagsitems-value): {{String}}
 ```

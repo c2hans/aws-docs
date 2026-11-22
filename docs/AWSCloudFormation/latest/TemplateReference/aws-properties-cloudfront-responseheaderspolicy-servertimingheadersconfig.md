@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-responseheaderspolicy-servertimingheadersconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-cloudfront-responseheaderspolicy-servertimingheadersconfig-enabled)" : {{Boolean}},
   "[SamplingRate](#cfn-cloudfront-responseheaderspolicy-servertimingheadersconfig-samplingrate)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-responseheaderspolicy-servertimingheadersconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-cloudfront-responseheaderspolicy-servertimingheadersconfig-enabled): {{Boolean}}
   [SamplingRate](#cfn-cloudfront-responseheaderspolicy-servertimingheadersconfig-samplingrate): {{Number}}
 ```

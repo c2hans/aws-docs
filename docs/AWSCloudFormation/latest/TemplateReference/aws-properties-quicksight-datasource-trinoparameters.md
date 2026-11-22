@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-datasource-trinoparameters-syntax.json"></a>
 
-```
+```json
 {
   "[Catalog](#cfn-quicksight-datasource-trinoparameters-catalog)" : {{String}},
   "[Host](#cfn-quicksight-datasource-trinoparameters-host)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-datasource-trinoparameters-syntax.yaml"></a>
 
-```
+```yaml
   [Catalog](#cfn-quicksight-datasource-trinoparameters-catalog): {{String}}
   [Host](#cfn-quicksight-datasource-trinoparameters-host): {{String}}
   [Port](#cfn-quicksight-datasource-trinoparameters-port): {{Number}}

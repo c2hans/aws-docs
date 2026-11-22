@@ -94,7 +94,7 @@ Alternatively, select a different AMI for the temporary instance. For example, i
 
 1. Log in to the instance and run the following command from a command prompt to change the `bootstatuspolicy` configuration to `ignoreallfailures`.
 
-   ```
+   ```batch
    bcdedit /store {{Drive Letter}}:\boot\bcd /set {default} bootstatuspolicy ignoreallfailures
    ```
 

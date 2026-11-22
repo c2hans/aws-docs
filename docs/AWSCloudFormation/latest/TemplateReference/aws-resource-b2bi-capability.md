@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-b2bi-capability-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::B2BI::Capability",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-b2bi-capability-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::B2BI::Capability
 Properties:
   [Configuration](#cfn-b2bi-capability-configuration): {{

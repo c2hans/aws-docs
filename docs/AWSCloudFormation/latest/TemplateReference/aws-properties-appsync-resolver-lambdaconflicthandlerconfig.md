@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appsync-resolver-lambdaconflicthandlerconfig-syntax.json"></a>
 
-```
+```json
 {
   "[LambdaConflictHandlerArn](#cfn-appsync-resolver-lambdaconflicthandlerconfig-lambdaconflicthandlerarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appsync-resolver-lambdaconflicthandlerconfig-syntax.yaml"></a>
 
-```
+```yaml
   [LambdaConflictHandlerArn](#cfn-appsync-resolver-lambdaconflicthandlerconfig-lambdaconflicthandlerarn): {{String}}
 ```
 

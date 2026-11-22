@@ -96,7 +96,7 @@ A file in DynamoDB JSON format can consist of multiple Item objects. Each indivi
 **Note**
 New lines are used as item delimiters for a file in DynamoDB JSON format and shouldn't be used within an item object.
 
-```
+```json
 {"Item": {"Authors": {"SS": ["Author1", "Author2"]}, "Dimensions": {"S": "8.5 x 11.0 x 1.5"}, "ISBN": {"S": "333-3333333333"}, "Id": {"N": "103"}, "InPublication": {"BOOL": false}, "PageCount": {"N": "600"}, "Price": {"N": "2000"}, "ProductCategory": {"S": "Book"}, "Title": {"S": "Book 103 Title"}}}
 {"Item": {"Authors": {"SS": ["Author1", "Author2"]}, "Dimensions": {"S": "8.5 x 11.0 x 1.5"}, "ISBN": {"S": "444-444444444"}, "Id": {"N": "104"}, "InPublication": {"BOOL": false}, "PageCount": {"N": "600"}, "Price": {"N": "2000"}, "ProductCategory": {"S": "Book"}, "Title": {"S": "Book 104 Title"}}}
 {"Item": {"Authors": {"SS": ["Author1", "Author2"]}, "Dimensions": {"S": "8.5 x 11.0 x 1.5"}, "ISBN": {"S": "555-5555555555"}, "Id": {"N": "105"}, "InPublication": {"BOOL": false}, "PageCount": {"N": "600"}, "Price": {"N": "2000"}, "ProductCategory": {"S": "Book"}, "Title": {"S": "Book 105 Title"}}}
@@ -125,7 +125,7 @@ Items in an Ion file are delimited by newlines. Each line begins with an Ion ver
 **Note**
 In the following example, we've formatted items from an Ion-formatted file on multiple lines to improve readability.
 
-```
+```ion
 $ion_1_0
 [
   {

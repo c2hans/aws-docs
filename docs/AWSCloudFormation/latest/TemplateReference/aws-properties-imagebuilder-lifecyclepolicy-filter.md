@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-lifecyclepolicy-filter-syntax.json"></a>
 
-```
+```json
 {
   "[RetainAtLeast](#cfn-imagebuilder-lifecyclepolicy-filter-retainatleast)" : {{Integer}},
   "[Type](#cfn-imagebuilder-lifecyclepolicy-filter-type)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-lifecyclepolicy-filter-syntax.yaml"></a>
 
-```
+```yaml
   [RetainAtLeast](#cfn-imagebuilder-lifecyclepolicy-filter-retainatleast): {{Integer}}
   [Type](#cfn-imagebuilder-lifecyclepolicy-filter-type): {{String}}
   [Unit](#cfn-imagebuilder-lifecyclepolicy-filter-unit): {{String}}

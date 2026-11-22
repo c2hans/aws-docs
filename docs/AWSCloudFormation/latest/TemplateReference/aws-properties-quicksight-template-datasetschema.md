@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-datasetschema-syntax.json"></a>
 
-```
+```json
 {
   "[ColumnSchemaList](#cfn-quicksight-template-datasetschema-columnschemalist)" : {{[ ColumnSchema, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-datasetschema-syntax.yaml"></a>
 
-```
+```yaml
   [ColumnSchemaList](#cfn-quicksight-template-datasetschema-columnschemalist): {{
     - ColumnSchema}}
 ```

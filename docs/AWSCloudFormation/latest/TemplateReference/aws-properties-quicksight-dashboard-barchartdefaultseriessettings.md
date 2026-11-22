@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-barchartdefaultseriessettings-syntax.json"></a>
 
-```
+```json
 {
   "[BorderSettings](#cfn-quicksight-dashboard-barchartdefaultseriessettings-bordersettings)" : {{BorderSettings}},
   "[DecalSettings](#cfn-quicksight-dashboard-barchartdefaultseriessettings-decalsettings)" : {{DecalSettings}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-barchartdefaultseriessettings-syntax.yaml"></a>
 
-```
+```yaml
   [BorderSettings](#cfn-quicksight-dashboard-barchartdefaultseriessettings-bordersettings): {{
     BorderSettings}}
   [DecalSettings](#cfn-quicksight-dashboard-barchartdefaultseriessettings-decalsettings): {{

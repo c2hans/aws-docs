@@ -94,7 +94,7 @@ IAM Access Analyzer sends findings to Security Hub CSPM using the [AWS Security 
 
 Here is an example of a typical finding from IAM Access Analyzer for external access findings.
 
-```
+```JSON
 {
     "SchemaVersion": "2018-10-08",
     "Id": "arn:aws:access-analyzer:us-west-2:111122223333:analyzer/my-analyzer/arn:aws:s3:::amzn-s3-demo-bucket",
@@ -137,7 +137,7 @@ Here is an example of a typical finding from IAM Access Analyzer for external ac
 
 Here is an example of a typical finding from IAM Access Analyzer for unused access findings.
 
-```
+```JSON
 {
     "Findings": [
     {

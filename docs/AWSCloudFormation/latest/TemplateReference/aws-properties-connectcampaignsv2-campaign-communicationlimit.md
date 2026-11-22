@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connectcampaignsv2-campaign-communicationlimit-syntax.json"></a>
 
-```
+```json
 {
   "[Frequency](#cfn-connectcampaignsv2-campaign-communicationlimit-frequency)" : {{Integer}},
   "[MaxCountPerRecipient](#cfn-connectcampaignsv2-campaign-communicationlimit-maxcountperrecipient)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connectcampaignsv2-campaign-communicationlimit-syntax.yaml"></a>
 
-```
+```yaml
   [Frequency](#cfn-connectcampaignsv2-campaign-communicationlimit-frequency): {{Integer}}
   [MaxCountPerRecipient](#cfn-connectcampaignsv2-campaign-communicationlimit-maxcountperrecipient): {{Integer}}
   [Unit](#cfn-connectcampaignsv2-campaign-communicationlimit-unit): {{String}}

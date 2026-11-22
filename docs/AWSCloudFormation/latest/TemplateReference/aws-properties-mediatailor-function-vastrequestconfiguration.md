@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-function-vastrequestconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Body](#cfn-mediatailor-function-vastrequestconfiguration-body)" : {{String}},
   "[Cache](#cfn-mediatailor-function-vastrequestconfiguration-cache)" : {{HttpRequestCacheConfiguration}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-function-vastrequestconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Body](#cfn-mediatailor-function-vastrequestconfiguration-body): {{String}}
   [Cache](#cfn-mediatailor-function-vastrequestconfiguration-cache): {{
     HttpRequestCacheConfiguration}}

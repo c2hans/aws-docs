@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-function-snapstart-syntax.json"></a>
 
-```
+```json
 {
   "[ApplyOn](#cfn-lambda-function-snapstart-applyon)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-function-snapstart-syntax.yaml"></a>
 
-```
+```yaml
   [ApplyOn](#cfn-lambda-function-snapstart-applyon): {{String}}
 ```
 

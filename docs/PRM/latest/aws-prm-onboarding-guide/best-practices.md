@@ -4,4 +4,4 @@ source_url: https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/best
 
 # Best practices
 
-Some AWS services require service-specific implementation steps for Partner Revenue Measurement. This section provides best practices for these services.
+Some AWS services require service-specific implementation steps for AWS Revenue Measurement. This section provides best practices for these services.

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codedeploy-deploymentgroup-trafficroute-syntax.json"></a>
 
-```
+```json
 {
   "[ListenerArns](#cfn-codedeploy-deploymentgroup-trafficroute-listenerarns)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codedeploy-deploymentgroup-trafficroute-syntax.yaml"></a>
 
-```
+```yaml
   [ListenerArns](#cfn-codedeploy-deploymentgroup-trafficroute-listenerarns): {{
     - String}}
 ```

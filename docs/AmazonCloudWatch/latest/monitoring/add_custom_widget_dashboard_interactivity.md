@@ -47,7 +47,7 @@ The following is an example of how to use the `<cwdb-action>` tag to create a bu
 
 The next example displays more information in a pop-up.
 
-```
+```lambda
 <a>Click me for more info in popup</a>
 <cwdb-action display="popup">
    <h1>Big title</h1>
@@ -57,7 +57,7 @@ The next example displays more information in a pop-up.
 
 This example is a **Next** button that replaces the content of a widget with a call to a Lambda function.
 
-```
+```lambda
 <a class="btn btn-primary">Next</a>
 <cwdb-action action="call" endpoint="arn:aws:lambda:us-east-1:123456:function:nextPage">
    { "pageNum": 2 }

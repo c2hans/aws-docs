@@ -70,7 +70,7 @@ The following CLI example shows you how to block or unblock SSE-C encryption for
 
 **Request to block SSE-C encryption for a general purpose bucket:**
 
-```
+```bash
 aws s3api put-bucket-encryption \
   --bucket amzn-s3-demo-bucket \
   --server-side-encryption-configuration '{
@@ -84,7 +84,7 @@ aws s3api put-bucket-encryption \
 
 **Request to enable the use of SSE-C encryption on a general purpose bucket:**
 
-```
+```bash
 aws s3api put-bucket-encryption \
   --bucket amzn-s3-demo-bucket \
   --server-side-encryption-configuration '{

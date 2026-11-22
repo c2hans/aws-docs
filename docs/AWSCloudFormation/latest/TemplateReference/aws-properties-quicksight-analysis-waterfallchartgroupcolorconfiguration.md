@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-waterfallchartgroupcolorconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[NegativeBarColor](#cfn-quicksight-analysis-waterfallchartgroupcolorconfiguration-negativebarcolor)" : {{String}},
   "[PositiveBarColor](#cfn-quicksight-analysis-waterfallchartgroupcolorconfiguration-positivebarcolor)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-waterfallchartgroupcolorconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [NegativeBarColor](#cfn-quicksight-analysis-waterfallchartgroupcolorconfiguration-negativebarcolor): {{String}}
   [PositiveBarColor](#cfn-quicksight-analysis-waterfallchartgroupcolorconfiguration-positivebarcolor): {{String}}
   [TotalBarColor](#cfn-quicksight-analysis-waterfallchartgroupcolorconfiguration-totalbarcolor): {{String}}

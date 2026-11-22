@@ -38,7 +38,7 @@ For more information, see [Configuring block public access settings for your S3 
 **Tools for PowerShell V4**
 **Example 1: The command returns the public access block configuration of the given S3 bucket.**
 
-```
+```powershell
 Get-S3PublicAccessBlock -BucketName 'amzn-s3-demo-bucket'
 ```
 +  For API details, see [GetPublicAccessBlock](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -46,7 +46,7 @@ Get-S3PublicAccessBlock -BucketName 'amzn-s3-demo-bucket'
 **Tools for PowerShell V5**
 **Example 1: The command returns the public access block configuration of the given S3 bucket.**
 
-```
+```powershell
 Get-S3PublicAccessBlock -BucketName 'amzn-s3-demo-bucket'
 ```
 +  For API details, see [GetPublicAccessBlock](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

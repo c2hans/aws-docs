@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-docdb-dbcluster-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DocDB::DBCluster",
   "Properties" : {
@@ -57,7 +57,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-docdb-dbcluster-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DocDB::DBCluster
 Properties:
   [AvailabilityZones](#cfn-docdb-dbcluster-availabilityzones): {{
@@ -393,7 +393,7 @@ The version of the Amazon DocumentDB Serverless platform used by the cluster.
 #### JSON
 <a name="aws-resource-docdb-dbcluster--examples----json"></a>
 
-```
+```json
 {
    "AWSTemplateFormatVersion" : "2010-09-09",
    "Resources" : {
@@ -422,7 +422,7 @@ The version of the Amazon DocumentDB Serverless platform used by the cluster.
 #### YAML
 <a name="aws-resource-docdb-dbcluster--examples----yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Resources:
    myDBInstance:

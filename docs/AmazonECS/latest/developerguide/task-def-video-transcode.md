@@ -11,7 +11,7 @@ In the following example, the syntax that's used for a task definition of a Linu
 
 1. Create a text file that's named `vt1-3xlarge-ffmpeg-linux.json` with the following content.
 
-   ```
+   ```JSON
    {
        "family": "vt1-3xlarge-xffmpeg-processor",
        "requiresCompatibilities": ["EC2"],
@@ -85,7 +85,7 @@ In the following example, the syntax that's used for a task definition of a Linu
 
 1. Create a text file that's named `vt1-6xlarge-ffmpeg-linux.json` with the following content.
 
-   ```
+   ```JSON
    {
        "family": "vt1-6xlarge-xffmpeg-processor",
        "requiresCompatibilities": ["EC2"],
@@ -175,7 +175,7 @@ In the following example, the syntax that's used for a task definition of a Linu
 
 1. Create a text file that's named `vt1-24xlarge-ffmpeg-linux.json` with the following content.
 
-   ```
+   ```JSON
    {
        "family": "vt1-24xlarge-xffmpeg-processor",
        "requiresCompatibilities": ["EC2"],

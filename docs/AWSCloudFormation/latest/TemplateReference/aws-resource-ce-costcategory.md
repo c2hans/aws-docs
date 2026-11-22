@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ce-costcategory-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CE::CostCategory",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ce-costcategory-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CE::CostCategory
 Properties:
   [DefaultValue](#cfn-ce-costcategory-defaultvalue): {{String}}
@@ -133,7 +133,7 @@ The following example creates a Cost Category "Department" with two rules.
 #### JSON
 <a name="aws-resource-ce-costcategory--examples--Cost_Category_Department_with_two_rules--json"></a>
 
-```
+```json
 {
   "CostCategoryDepartment": {
     "Type": "AWS::CE::CostCategory",
@@ -168,7 +168,7 @@ The following example creates a Cost Category "Department" with two rules.
 #### YAML
 <a name="aws-resource-ce-costcategory--examples--Cost_Category_Department_with_two_rules--yaml"></a>
 
-```
+```yaml
   CostCategoryDepartment:
     Type: 'AWS::CE::CostCategory'
     Properties:

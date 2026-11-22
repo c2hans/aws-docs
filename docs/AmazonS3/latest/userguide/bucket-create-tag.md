@@ -61,7 +61,7 @@ To create a bucket with tags using the Amazon S3 console:
 
 This example shows you how to create a general purpose bucket with tags by using the AWS SDK for Java 2.x. To use the command replace the {{user input placeholders}} with your own information.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.s3.S3Client;
 import software.amazon.awssdk.services.s3.model.BucketLocationConstraint;
@@ -110,7 +110,7 @@ When you create a bucket, you must provide configuration details and use the fol
 
 **Request:**
 
-```
+```bash
 aws s3api create-bucket \
 --bucket {{mybucket}} \
 --create-bucket-configuration 'LocationConstraint=us-west-2,Tags=[{Key={{MyTagKey}},Value={{MyTagValue}}}]' --region us-west-2"
@@ -118,7 +118,7 @@ aws s3api create-bucket \
 
 **Response:**
 
-```
+```json
 {
   "Location": "http://{{mybucket}}s3.amazonaws.com/"
 }

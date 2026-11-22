@@ -12,7 +12,7 @@ Do not add columns at the beginning or in the middle of the table in CSV and TSV
 
  The following example creates a new table that adds an `o_comment` column in the middle of a table based on JSON data.
 
-```
+```sql
 CREATE EXTERNAL TABLE orders_json_column_addition (
    `o_orderkey` int,
    `o_custkey` int,

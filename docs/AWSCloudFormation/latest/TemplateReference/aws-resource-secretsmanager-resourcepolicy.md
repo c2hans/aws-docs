@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-secretsmanager-resourcepolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SecretsManager::ResourcePolicy",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-secretsmanager-resourcepolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SecretsManager::ResourcePolicy
 Properties:
   [BlockPublicPolicy](#cfn-secretsmanager-resourcepolicy-blockpublicpolicy): {{Boolean}}
@@ -92,7 +92,7 @@ The following example shows how to attach a resource-based policy to a secret. T
 #### JSON
 <a name="aws-resource-secretsmanager-resourcepolicy--examples--Attaching_a_resource-based_policy_to_an_RDS_database_instance_secret--json"></a>
 
-```
+```json
 {
   "MySecret": {
     "Type": "AWS::SecretsManager::Secret",
@@ -130,7 +130,7 @@ The following example shows how to attach a resource-based policy to a secret. T
 #### YAML
 <a name="aws-resource-secretsmanager-resourcepolicy--examples--Attaching_a_resource-based_policy_to_an_RDS_database_instance_secret--yaml"></a>
 
-```
+```yaml
 ---
 MySecret:
   Type: AWS::SecretsManager::Secret

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-geospatiallayerjoindefinition-syntax.json"></a>
 
-```
+```json
 {
   "[ColorField](#cfn-quicksight-template-geospatiallayerjoindefinition-colorfield)" : {{GeospatialLayerColorField}},
   "[DatasetKeyField](#cfn-quicksight-template-geospatiallayerjoindefinition-datasetkeyfield)" : {{UnaggregatedField}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-geospatiallayerjoindefinition-syntax.yaml"></a>
 
-```
+```yaml
   [ColorField](#cfn-quicksight-template-geospatiallayerjoindefinition-colorfield): {{
     GeospatialLayerColorField}}
   [DatasetKeyField](#cfn-quicksight-template-geospatiallayerjoindefinition-datasetkeyfield): {{

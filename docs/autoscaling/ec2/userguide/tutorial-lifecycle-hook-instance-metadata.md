@@ -39,7 +39,7 @@ When you use the AWS CLI or an AWS SDK to send a callback to complete lifecycle 
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -103,7 +103,7 @@ Create a launch template to use with your Auto Scaling group. Include the IAM ro
 
 1. For **User data**, copy and paste the following sample user data script into the field. Replace the sample text for `group_name` with the name of the Auto Scaling group that you want to create and `region` with the AWS Region you want your Auto Scaling group to use.
 
-   ```
+   ```bash
    #!/bin/bash
 
    function token {

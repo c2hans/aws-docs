@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-filtersoperation-syntax.json"></a>
 
-```
+```json
 {
   "[Alias](#cfn-quicksight-dataset-filtersoperation-alias)" : {{String}},
   "[FilterOperations](#cfn-quicksight-dataset-filtersoperation-filteroperations)" : {{[ FilterOperation, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-filtersoperation-syntax.yaml"></a>
 
-```
+```yaml
   [Alias](#cfn-quicksight-dataset-filtersoperation-alias): {{String}}
   [FilterOperations](#cfn-quicksight-dataset-filtersoperation-filteroperations): {{
     - FilterOperation}}

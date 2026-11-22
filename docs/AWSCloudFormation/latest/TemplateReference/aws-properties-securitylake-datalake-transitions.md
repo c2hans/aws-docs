@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securitylake-datalake-transitions-syntax.json"></a>
 
-```
+```json
 {
   "[Days](#cfn-securitylake-datalake-transitions-days)" : {{Integer}},
   "[StorageClass](#cfn-securitylake-datalake-transitions-storageclass)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securitylake-datalake-transitions-syntax.yaml"></a>
 
-```
+```yaml
   [Days](#cfn-securitylake-datalake-transitions-days): {{Integer}}
   [StorageClass](#cfn-securitylake-datalake-transitions-storageclass): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-configuredtable-snowflaketableschemav1-syntax.json"></a>
 
-```
+```json
 {
   "[ColumnName](#cfn-cleanrooms-configuredtable-snowflaketableschemav1-columnname)" : {{String}},
   "[ColumnType](#cfn-cleanrooms-configuredtable-snowflaketableschemav1-columntype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-configuredtable-snowflaketableschemav1-syntax.yaml"></a>
 
-```
+```yaml
   [ColumnName](#cfn-cleanrooms-configuredtable-snowflaketableschemav1-columnname): {{String}}
   [ColumnType](#cfn-cleanrooms-configuredtable-snowflaketableschemav1-columntype): {{String}}
 ```

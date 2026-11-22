@@ -93,7 +93,7 @@ https://autoscaling.amazonaws.com/?Action=DescribeWarmPool
 #### Sample Response
 <a name="API_DescribeWarmPool_Example_1_Response"></a>
 
-```
+```xml
 <DescribeWarmPoolResponse xmlns="https://autoscaling.amazonaws.com/doc/2011-01-01/">
   <DescribeWarmPoolResult>
     <WarmPoolConfiguration>

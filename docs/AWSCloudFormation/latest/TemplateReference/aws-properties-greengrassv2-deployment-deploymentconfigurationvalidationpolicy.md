@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrassv2-deployment-deploymentconfigurationvalidationpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[TimeoutInSeconds](#cfn-greengrassv2-deployment-deploymentconfigurationvalidationpolicy-timeoutinseconds)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrassv2-deployment-deploymentconfigurationvalidationpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [TimeoutInSeconds](#cfn-greengrassv2-deployment-deploymentconfigurationvalidationpolicy-timeoutinseconds): {{Integer}}
 ```
 

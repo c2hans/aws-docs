@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-observabilityadmin-telemetryrule-wafloggingparameters-syntax.json"></a>
 
-```
+```json
 {
   "[LoggingFilter](#cfn-observabilityadmin-telemetryrule-wafloggingparameters-loggingfilter)" : {{LoggingFilter}},
   "[LogType](#cfn-observabilityadmin-telemetryrule-wafloggingparameters-logtype)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-observabilityadmin-telemetryrule-wafloggingparameters-syntax.yaml"></a>
 
-```
+```yaml
   [LoggingFilter](#cfn-observabilityadmin-telemetryrule-wafloggingparameters-loggingfilter): {{
     LoggingFilter}}
   [LogType](#cfn-observabilityadmin-telemetryrule-wafloggingparameters-logtype): {{String}}

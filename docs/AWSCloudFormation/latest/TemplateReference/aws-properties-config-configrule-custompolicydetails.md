@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-config-configrule-custompolicydetails-syntax.json"></a>
 
-```
+```json
 {
   "[EnableDebugLogDelivery](#cfn-config-configrule-custompolicydetails-enabledebuglogdelivery)" : {{Boolean}},
   "[PolicyRuntime](#cfn-config-configrule-custompolicydetails-policyruntime)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-config-configrule-custompolicydetails-syntax.yaml"></a>
 
-```
+```yaml
   [EnableDebugLogDelivery](#cfn-config-configrule-custompolicydetails-enabledebuglogdelivery): {{Boolean}}
   [PolicyRuntime](#cfn-config-configrule-custompolicydetails-policyruntime): {{String}}
   [PolicyText](#cfn-config-configrule-custompolicydetails-policytext): {{String}}

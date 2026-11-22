@@ -48,7 +48,7 @@ getEmailData({ contactId, activeContactId }: { contactId: string; activeContactI
 
  **Usage**
 
-```
+```typescript
 const activeContactId: string = "exampleActiveContactId"; // The contact the agent is actively handling
 const contactId: string = "contactIdToDescribe"; // The email contact id whose metadata should be retrieved
 

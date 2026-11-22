@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-mssmoothgroupsettings-syntax.json"></a>
 
-```
+```json
 {
   "[AcquisitionPointId](#cfn-medialive-channel-mssmoothgroupsettings-acquisitionpointid)" : {{String}},
   "[AudioOnlyTimecodeControl](#cfn-medialive-channel-mssmoothgroupsettings-audioonlytimecodecontrol)" : {{String}},
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-mssmoothgroupsettings-syntax.yaml"></a>
 
-```
+```yaml
   [AcquisitionPointId](#cfn-medialive-channel-mssmoothgroupsettings-acquisitionpointid): {{String}}
   [AudioOnlyTimecodeControl](#cfn-medialive-channel-mssmoothgroupsettings-audioonlytimecodecontrol): {{String}}
   [CertificateMode](#cfn-medialive-channel-mssmoothgroupsettings-certificatemode): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-outputcontext-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-lex-bot-outputcontext-name)" : {{String}},
   "[TimeToLiveInSeconds](#cfn-lex-bot-outputcontext-timetoliveinseconds)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-outputcontext-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-lex-bot-outputcontext-name): {{String}}
   [TimeToLiveInSeconds](#cfn-lex-bot-outputcontext-timetoliveinseconds): {{Integer}}
   [TurnsToLive](#cfn-lex-bot-outputcontext-turnstolive): {{Integer}}

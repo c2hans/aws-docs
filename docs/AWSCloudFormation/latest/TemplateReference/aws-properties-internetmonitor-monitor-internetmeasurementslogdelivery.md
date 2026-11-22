@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-internetmonitor-monitor-internetmeasurementslogdelivery-syntax.json"></a>
 
-```
+```json
 {
   "[S3Config](#cfn-internetmonitor-monitor-internetmeasurementslogdelivery-s3config)" : {{S3Config}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-internetmonitor-monitor-internetmeasurementslogdelivery-syntax.yaml"></a>
 
-```
+```yaml
   [S3Config](#cfn-internetmonitor-monitor-internetmeasurementslogdelivery-s3config): {{
     S3Config}}
 ```

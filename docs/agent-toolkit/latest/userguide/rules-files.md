@@ -41,7 +41,7 @@ The recommended rules file is a starting point. Customize it for your project. F
 
 The following example shows project-specific rules you might add:
 
-```
+```markdown
 # Project-specific AWS rules
 
 - Default region is eu-west-1. Do not create resources in other regions

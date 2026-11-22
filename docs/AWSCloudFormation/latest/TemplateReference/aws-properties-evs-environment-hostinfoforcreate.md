@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-evs-environment-hostinfoforcreate-syntax.json"></a>
 
-```
+```json
 {
   "[DedicatedHostId](#cfn-evs-environment-hostinfoforcreate-dedicatedhostid)" : {{String}},
   "[HostName](#cfn-evs-environment-hostinfoforcreate-hostname)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-evs-environment-hostinfoforcreate-syntax.yaml"></a>
 
-```
+```yaml
   [DedicatedHostId](#cfn-evs-environment-hostinfoforcreate-dedicatedhostid): {{String}}
   [HostName](#cfn-evs-environment-hostinfoforcreate-hostname): {{String}}
   [InstanceType](#cfn-evs-environment-hostinfoforcreate-instancetype): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dynamodb-table-streamspecification-syntax.json"></a>
 
-```
+```json
 {
   "[ResourcePolicy](#cfn-dynamodb-table-streamspecification-resourcepolicy)" : {{ResourcePolicy}},
   "[StreamViewType](#cfn-dynamodb-table-streamspecification-streamviewtype)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dynamodb-table-streamspecification-syntax.yaml"></a>
 
-```
+```yaml
   [ResourcePolicy](#cfn-dynamodb-table-streamspecification-resourcepolicy): {{
     ResourcePolicy}}
   [StreamViewType](#cfn-dynamodb-table-streamspecification-streamviewtype): {{String}}

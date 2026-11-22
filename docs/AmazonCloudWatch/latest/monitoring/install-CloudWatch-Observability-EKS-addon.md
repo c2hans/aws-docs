@@ -110,7 +110,7 @@ aws eks create-addon \
 
 1. Then create the following resource. Replace `{{my-cluster-name}}` with the name of your cluster, replace {{111122223333}} with your account ID, and replace {{my-role}} with the IAM role created in EKS Pod Identity association step. For more information, see [ AWS::EKS::Addon](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-addon.html).
 
-   ```
+   ```JSON
    {
    "Resources": {
        "EKSAddOn": {
@@ -219,7 +219,7 @@ aws eks create-addon --addon-name amazon-cloudwatch-observability --cluster-name
 **To use CloudFormation to install the Amazon CloudWatch Observability EKS add-on**
 Replace `{{my-cluster-name}}` with the name of your cluster. For more information, see [ AWS::EKS::Addon](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-addon.html).
 
-```
+```JSON
 {
 "Resources": {
     "EKSAddOn": {
@@ -389,7 +389,7 @@ As an example, the default Fluent Bit configuration for version 1.7.0 can be fou
 
 We recommend that you provide the `config` as YAML when you supply it using the Amazon EKS add-on's advanced config or when you supply it as value overrides for your Helm installation. Be sure that the YAML conforms to the following structure.
 
-```
+```yaml
 containerLogs:
   fluentBit:
 config:
@@ -408,7 +408,7 @@ config:
 
 The following example `config` changes the global setting for the flush interval to be 45 seconds. Even though the only modification is to the `Flush` field, you must still provide the full `SERVICE` definition for the service sub-section. Because this example didn't specify overrides for the other sub-sections, the defaults are used for them.
 
-```
+```yaml
 containerLogs:
   fluentBit:
 config:
@@ -427,7 +427,7 @@ config:
 
 The following example configuration includes an extra Fluent bit `conf` file. In this example, you are adding a custom `my-service.conf` under `extraFiles` and it will be included in addition to the three default `extraFiles`.
 
-```
+```yaml
 containerLogs:
   fluentBit:
 config:
@@ -454,7 +454,7 @@ config:
 
 The next example removes an existing `conf` file entirely from `extraFiles`. This excludes the `application-log.conf` entirely by overriding it with an empty string. Simply omitting `application-log.conf` from `extraFiles` would instead imply to use the default, which is not what you are trying to achieve in this example. The same applies to removing any custom `conf` file that you might have previously added to `extraFiles`.
 
-```
+```yaml
 containerLogs:
   fluentBit:
 config:
@@ -469,14 +469,14 @@ Starting with version 1.7.0 of the Amazon CloudWatch Observability EKS add-on, t
 
 The default tolerations set by the add-on or the Helm chart are as follows:
 
-```
+```yaml
 tolerations:
 - operator: Exists
 ```
 
 You can override the default tolerations by setting the `tolerations` field at the root level when using the add-on advanced config or when you install or upgrade the Helm chart with value overrides. An example would look like the following:
 
-```
+```yaml
 tolerations:
 - key: "key1"
   operator: "Exists"
@@ -485,7 +485,7 @@ tolerations:
 
 To omit tolerations completely, you can use a config that looks like the following:
 
-```
+```yaml
 tolerations: []
 ```
 
@@ -504,7 +504,7 @@ AWS Elastic Fabric Adapter (EFA) metrics from Linux nodes on Amazon EKS clusters
 
 You can opt out of collecting these metrics by setting the `accelerated_compute_metrics` field in the CloudWatch agent configuration file to `false`. This field is in the `kubernetes` section of the `metrics_collected` section in the CloudWatch configuration file. The following is an example of an opt-out configuration. For more information about how to use custom CloudWatch agent configurations, see the following section, [Use a custom CloudWatch agent configuration](#CloudWatch-Observability-EKS-addon-CustomAgentConfig).
 
-```
+```json
 {
   "logs": {
 "metrics_collected": {
@@ -526,7 +526,7 @@ To collect other metrics, logs or traces using the CloudWatch agent, you can spe
 Any custom configuration that you provide using additional configuration settings overrides the default configuration used by the agent. Be cautious not to unintentionally disable functionality that is enabled by default, such as Container Insights with enhanced observability and CloudWatch Application Signals. In the scenario that you are required to provide a custom agent configuration, we recommend using the following default configuration as a baseline and then modifying it accordingly.
 + For using the Amazon CloudWatch observability EKS add-on
 
-  ```
+  ```json
   --configuration-values '{
     "agent": {
   "config": {
@@ -549,7 +549,7 @@ Any custom configuration that you provide using additional configuration setting
   ```
 + For using the Helm chart
 
-  ```
+  ```json
   --set agent.config='{
     "logs": {
   "metrics_collected": {
@@ -569,7 +569,7 @@ Any custom configuration that you provide using additional configuration setting
 
 The following example shows the default agent configuration for the CloudWatch agent on Windows. The CloudWatch agent on Windows does not support custom configuration.
 
-```
+```json
 {
   "logs": {
 "metrics_collected": {
@@ -628,7 +628,7 @@ If you want to collect Amazon EBS volume IDs in the performance logs, you must a
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -664,7 +664,7 @@ Before you install Kueue in your Amazon EKS cluster, make the following updates 
 
 1. Enable the optional cluster queue resource metrics for Kueue. To do this, modify the in-line `controller_manager_config.yaml` in the `kueue-system` ConfigMap. In the `metrics` section, add or uncomment the line `enableClusterQueueResources: true`.
 
-   ```
+   ```yaml
    apiVersion: v1
    data:
      controller_manager_config.yaml: |
@@ -679,7 +679,7 @@ Before you install Kueue in your Amazon EKS cluster, make the following updates 
 
 1. By default, all `k8s` services are available cluster-wide. Kueue creates a service `kueue-controller-manager-metrics-service` for exposing metrics. To prevent duplicate observations for metrics, modify this service to allow access only to the metrics service from the same node. To do this, add the line `internalTrafficPolicy: Local` to the `kueue-controller-manager-metrics-service` definition.
 
-   ```
+   ```yaml
    apiVersion: v1
    kind: Service
    metadata:
@@ -700,7 +700,7 @@ Before you install Kueue in your Amazon EKS cluster, make the following updates 
 
 1. Lastly, the `kueue-controller-manager` pod creates a `kube-rbac-proxy` container. This container currently has a high level of logging verbosity, which causes the cluster's bearer token to be logged by that container when the metrics scraper accesses the `kueue-controller-manager-metrics-service`. We recommend that you decrease this logging verbosity. The default value in the manifest distributed by Kueue is 10, we recommend to change it to 0.
 
-   ```
+   ```yaml
    apiVersion: apps/v1
    kind: Deployment
    metadata:
@@ -744,7 +744,7 @@ After you have successfully installed the EKS Observability add-on with one of t
 
   The following is an example of the JSON file with the configuration values.
 
-  ```
+  ```json
   {
   "agent": {
       "config": {
@@ -780,7 +780,7 @@ After you have successfully installed the EKS Observability add-on with one of t
 
 1. Find the **Amazon CloudWatch Observability** add-on in the list, and install it. When you do so, choose **Optional configuration** and include the following JSON configuration values.
 
-   ```
+   ```json
    {
    "agent": {
        "config": {
@@ -813,7 +813,7 @@ The CloudWatch agent supports supplemental OpenTelemetry collector configuration
 To prevent merge conflicts with pipelines automatically created by CloudWatch agent, add a custom suffix to each of the components and pipelines in your OpenTelemetry collector configuration. This will prevent clashing and merge conflicts.
 + If you are using the Amazon CloudWatch Observability EKS add-on
 
-  ```
+  ```yaml
   --configuration-values file://values.yaml
   ```
 
@@ -994,7 +994,7 @@ The deployment agent configuration must enable only Container Insights. Don't en
 
 The following example shows an advanced configuration that separates the agent into two installations.
 
-```
+```yaml
 agents:
   - name: cloudwatch-agent
 env:

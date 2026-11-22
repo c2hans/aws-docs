@@ -55,7 +55,7 @@ The message includes the following information:
 
 For example:
 
-```
+```json
 Service: AWS Auto Scaling
 Time: 2016-09-30T19:00:36.414Z
 RequestId: 4e6156f4-a9e2-4bda-a7fd-33f2ae528958
@@ -189,7 +189,7 @@ The Amazon SNS topic you specify might be encrypted with a customer managed key 
 
 In this example, the policy statement gives the service-linked role named **AWSServiceRoleForAutoScaling** permissions to use the customer managed key. To learn more about the Amazon EC2 Auto Scaling service-linked role, see [Service-linked roles for Amazon EC2 Auto Scaling](autoscaling-service-linked-role.md).
 
-```
+```json
 {
   "Sid": "Allow service-linked role use of the customer managed key",
   "Effect": "Allow",

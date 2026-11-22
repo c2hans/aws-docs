@@ -49,7 +49,7 @@ To create an API mapping, you must first create a custom domain name, API, and s
 
 The following [create-api-mapping](https://docs.aws.amazon.com/cli/latest/reference/apigatewayv2/create-api-mapping.html) command creates an API mapping. In this example, API Gateway sends requests to `api.example.com/v1` to the specified API and stage.
 
-```
+```shell
 aws apigatewayv2 create-api-mapping \
     --domain-name api.example.com \
     --api-mapping-key v1 \
@@ -62,7 +62,7 @@ aws apigatewayv2 create-api-mapping \
 
 The following CloudFormation example creates an API mapping.
 
-```
+```shell
 MyApiMapping:
   Type: 'AWS::ApiGatewayV2::ApiMapping'
   Properties:

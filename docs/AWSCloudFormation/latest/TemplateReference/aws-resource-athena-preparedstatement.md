@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-athena-preparedstatement-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Athena::PreparedStatement",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-athena-preparedstatement-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Athena::PreparedStatement
 Properties:
   [Description](#cfn-athena-preparedstatement-description): {{String}}

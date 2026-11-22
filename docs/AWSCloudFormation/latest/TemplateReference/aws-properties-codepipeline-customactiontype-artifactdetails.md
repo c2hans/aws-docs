@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codepipeline-customactiontype-artifactdetails-syntax.json"></a>
 
-```
+```json
 {
   "[MaximumCount](#cfn-codepipeline-customactiontype-artifactdetails-maximumcount)" : {{Integer}},
   "[MinimumCount](#cfn-codepipeline-customactiontype-artifactdetails-minimumcount)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codepipeline-customactiontype-artifactdetails-syntax.yaml"></a>
 
-```
+```yaml
   [MaximumCount](#cfn-codepipeline-customactiontype-artifactdetails-maximumcount): {{Integer}}
   [MinimumCount](#cfn-codepipeline-customactiontype-artifactdetails-minimumcount): {{Integer}}
 ```

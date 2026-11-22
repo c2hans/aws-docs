@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rds-dbcluster-readendpoint-syntax.json"></a>
 
-```
+```json
 {
   "[Address](#cfn-rds-dbcluster-readendpoint-address)" : {{String}}
 }
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rds-dbcluster-readendpoint-syntax.yaml"></a>
 
-```
+```yaml
   [Address](#cfn-rds-dbcluster-readendpoint-address): {{String}}
 ```
 

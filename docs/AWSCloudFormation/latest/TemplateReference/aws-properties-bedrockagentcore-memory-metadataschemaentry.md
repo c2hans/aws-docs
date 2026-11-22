@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-memory-metadataschemaentry-syntax.json"></a>
 
-```
+```json
 {
   "[ExtractionConfig](#cfn-bedrockagentcore-memory-metadataschemaentry-extractionconfig)" : {{ExtractionConfig}},
   "[ExtractionType](#cfn-bedrockagentcore-memory-metadataschemaentry-extractiontype)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-memory-metadataschemaentry-syntax.yaml"></a>
 
-```
+```yaml
   [ExtractionConfig](#cfn-bedrockagentcore-memory-metadataschemaentry-extractionconfig): {{
     ExtractionConfig}}
   [ExtractionType](#cfn-bedrockagentcore-memory-metadataschemaentry-extractiontype): {{String}}

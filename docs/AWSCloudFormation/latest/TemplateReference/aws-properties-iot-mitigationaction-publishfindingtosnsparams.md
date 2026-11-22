@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-mitigationaction-publishfindingtosnsparams-syntax.json"></a>
 
-```
+```json
 {
   "[TopicArn](#cfn-iot-mitigationaction-publishfindingtosnsparams-topicarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-mitigationaction-publishfindingtosnsparams-syntax.yaml"></a>
 
-```
+```yaml
   [TopicArn](#cfn-iot-mitigationaction-publishfindingtosnsparams-topicarn): {{String}}
 ```
 

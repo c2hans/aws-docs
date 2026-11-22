@@ -375,7 +375,7 @@ Any open connections belonging to a user removed from a user group are ended by 
 
 To see a list of user groups, you can call the [describe-user-groups](https://docs.aws.amazon.com/cli/latest/reference/elasticache/describe-user-groups.html) operation.
 
-```
+```json
 aws elasticache describe-user-groups \
   --user-group-id test-group
 ```

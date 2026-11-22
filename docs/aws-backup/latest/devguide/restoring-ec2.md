@@ -13,7 +13,7 @@ The following considerations apply to restoring EC2 instances:
 
   If you use the original instance profile, you must grant AWS Backup the following permissions, where the resource ARN is the ARN of the IAM role associated with the instance profile.
 
-  ```
+  ```json
   {
         "Effect": "Allow",
         "Action": "iam:PassRole",
@@ -58,7 +58,7 @@ In the command line interface, [`start-restore-job`](https://awscli.amazonaws.co
 
 The following list is the accepted metadata you can pass to restore an Amazon EC2 recovery point.
 
-```
+```json
 InstanceType
 KeyName
 SubnetId
@@ -92,7 +92,7 @@ aws:backup:request-id
 
 AWS Backup accepts the following information-only attributes. However, including them will not affect the restore:
 
-```
+```json
 vpcId
 ```
 
@@ -101,7 +101,7 @@ vpcId
 **Note**
 `SnapshotId` and `OutpostArn` are not supported.
 
-```
+```json
 {
   "BlockDeviceMappings": [
     {
@@ -123,7 +123,7 @@ vpcId
 
 For example:
 
-```
+```json
 {
   "BlockDeviceMappings": [
     {

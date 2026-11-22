@@ -8,13 +8,13 @@ Subscribes a callback function to-be-invoked whenever a contact Connected event 
 
  **Signature**
 
-```
+```typescript
 onConnected(handler: ContactConnectedHandler, contactId?: string)
 ```
 
  **Usage**
 
-```
+```typescript
 const handler: ContactConnectedHandler = async (data: ContactConnected) => {
     console.log("Contact Connected occurred! " + data);
 };
@@ -32,6 +32,6 @@ contactClient.onConnected(handler);
 
  **Permissions required:**
 
-```
+```typescript
 Contact.Details.View
 ```

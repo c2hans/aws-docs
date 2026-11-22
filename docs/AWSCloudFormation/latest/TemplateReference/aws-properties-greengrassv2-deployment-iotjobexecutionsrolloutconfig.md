@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrassv2-deployment-iotjobexecutionsrolloutconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ExponentialRate](#cfn-greengrassv2-deployment-iotjobexecutionsrolloutconfig-exponentialrate)" : {{IoTJobExponentialRolloutRate}},
   "[MaximumPerMinute](#cfn-greengrassv2-deployment-iotjobexecutionsrolloutconfig-maximumperminute)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrassv2-deployment-iotjobexecutionsrolloutconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ExponentialRate](#cfn-greengrassv2-deployment-iotjobexecutionsrolloutconfig-exponentialrate): {{
     IoTJobExponentialRolloutRate}}
   [MaximumPerMinute](#cfn-greengrassv2-deployment-iotjobexecutionsrolloutconfig-maximumperminute): {{Integer}}

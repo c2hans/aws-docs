@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eventsv2-subscriber-logconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[IncludePayload](#cfn-eventsv2-subscriber-logconfiguration-includepayload)" : {{String}},
   "[Level](#cfn-eventsv2-subscriber-logconfiguration-level)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eventsv2-subscriber-logconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [IncludePayload](#cfn-eventsv2-subscriber-logconfiguration-includepayload): {{String}}
   [Level](#cfn-eventsv2-subscriber-logconfiguration-level): {{String}}
 ```

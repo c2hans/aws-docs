@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-hoursofoperation-hoursofoperationoverrideconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Day](#cfn-connect-hoursofoperation-hoursofoperationoverrideconfig-day)" : {{String}},
   "[EndTime](#cfn-connect-hoursofoperation-hoursofoperationoverrideconfig-endtime)" : {{OverrideTimeSlice}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-hoursofoperation-hoursofoperationoverrideconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Day](#cfn-connect-hoursofoperation-hoursofoperationoverrideconfig-day): {{String}}
   [EndTime](#cfn-connect-hoursofoperation-hoursofoperationoverrideconfig-endtime): {{
     OverrideTimeSlice}}

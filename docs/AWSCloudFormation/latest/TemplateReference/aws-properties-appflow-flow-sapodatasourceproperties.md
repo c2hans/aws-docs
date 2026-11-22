@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-flow-sapodatasourceproperties-syntax.json"></a>
 
-```
+```json
 {
   "[ObjectPath](#cfn-appflow-flow-sapodatasourceproperties-objectpath)" : {{String}},
   "[paginationConfig](#cfn-appflow-flow-sapodatasourceproperties-paginationconfig)" : {{SAPODataPaginationConfig}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-flow-sapodatasourceproperties-syntax.yaml"></a>
 
-```
+```yaml
   [ObjectPath](#cfn-appflow-flow-sapodatasourceproperties-objectpath): {{String}}
   [paginationConfig](#cfn-appflow-flow-sapodatasourceproperties-paginationconfig): {{
     SAPODataPaginationConfig}}

@@ -65,7 +65,7 @@ When you create a table bucket you must provide configuration details. For more 
 
 **Request:**
 
-```
+```bash
 aws --region {{us-west-2}} \
 s3tables create-table-bucket \
 --tags '{"{{Department}}":"{{Engineering}}"}' \

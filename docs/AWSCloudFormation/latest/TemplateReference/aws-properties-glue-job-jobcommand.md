@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-job-jobcommand-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-glue-job-jobcommand-name)" : {{String}},
   "[PythonVersion](#cfn-glue-job-jobcommand-pythonversion)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-job-jobcommand-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-glue-job-jobcommand-name): {{String}}
   [PythonVersion](#cfn-glue-job-jobcommand-pythonversion): {{String}}
   [Runtime](#cfn-glue-job-jobcommand-runtime): {{String}}

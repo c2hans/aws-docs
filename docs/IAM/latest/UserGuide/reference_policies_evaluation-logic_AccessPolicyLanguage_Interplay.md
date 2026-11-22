@@ -17,7 +17,7 @@ For example, you can create the following policy that includes allowed actions, 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-securityhub-securitycontrol-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SecurityHub::SecurityControl",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-securityhub-securitycontrol-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SecurityHub::SecurityControl
 Properties:
   [LastUpdateReason](#cfn-securityhub-securitycontrol-lastupdatereason): {{String}}
@@ -94,7 +94,7 @@ This example configures a parameter for the control ACM.1.
 #### JSON
 <a name="aws-resource-securityhub-securitycontrol--examples--Configuring_control_parameters--json"></a>
 
-```
+```json
 {
   "Description": "Example template to configure control parameters",
   "Resources": {
@@ -120,7 +120,7 @@ This example configures a parameter for the control ACM.1.
 #### YAML
 <a name="aws-resource-securityhub-securitycontrol--examples--Configuring_control_parameters--yaml"></a>
 
-```
+```yaml
 Description: Example template to configure control parameters
 Resources:
   ExampleSecurityControl:

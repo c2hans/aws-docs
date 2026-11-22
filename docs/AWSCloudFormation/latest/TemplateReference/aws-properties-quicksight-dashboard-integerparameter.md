@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-integerparameter-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-quicksight-dashboard-integerparameter-name)" : {{String}},
   "[Values](#cfn-quicksight-dashboard-integerparameter-values)" : {{[ Number, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-integerparameter-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-quicksight-dashboard-integerparameter-name): {{String}}
   [Values](#cfn-quicksight-dashboard-integerparameter-values): {{
     - Number}}

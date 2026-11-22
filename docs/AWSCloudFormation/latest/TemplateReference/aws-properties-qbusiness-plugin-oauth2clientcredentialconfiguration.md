@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-qbusiness-plugin-oauth2clientcredentialconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AuthorizationUrl](#cfn-qbusiness-plugin-oauth2clientcredentialconfiguration-authorizationurl)" : {{String}},
   "[RoleArn](#cfn-qbusiness-plugin-oauth2clientcredentialconfiguration-rolearn)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-qbusiness-plugin-oauth2clientcredentialconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AuthorizationUrl](#cfn-qbusiness-plugin-oauth2clientcredentialconfiguration-authorizationurl): {{String}}
   [RoleArn](#cfn-qbusiness-plugin-oauth2clientcredentialconfiguration-rolearn): {{String}}
   [SecretArn](#cfn-qbusiness-plugin-oauth2clientcredentialconfiguration-secretarn): {{String}}

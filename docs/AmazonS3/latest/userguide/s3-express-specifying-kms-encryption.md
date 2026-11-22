@@ -105,7 +105,7 @@ When you upload a new object or copy an existing object, you can specify the use
 
 Then, when you upload a new object with the following command, Amazon S3 uses the bucket settings for default encryption to encrypt the object by default.
 
-```
+```bash
 aws s3api put-object --bucket {{{{bucket-base-name}}--{{zone-id}}--x-s3}} --key {{example-object-key}} --body {{filepath}}
 ```
 
@@ -113,7 +113,7 @@ You don't need to add `-\-bucket-key-enabled` explicitly in your Zonal endpoint 
 
 You can copy an object from a source bucket (for example, a general purpose bucket) to a new bucket (for example, a directory bucket) and use SSE-KMS encryption for the destination objects. To do this, use the `put-bucket-encryption` command to set the default encryption configuration of the destination bucket (for example, a directory bucket) as SSE-KMS (`aws:kms`). For an example command, see [Using the AWS CLI](s3-express-bucket-encryption.md#s3-express-default-bucket-encryption-cli). Then, when you copy an object with the following command, Amazon S3 uses the bucket settings for default encryption to encrypt the object by default.
 
-```
+```bash
 aws s3api copy-object --copy-source {{{{amzn-s3-demo-bucket}}}}/{{example-object-key}} --bucket {{{{bucket-base-name}}--{{zone-id}}--x-s3}} --key {{example-object-key}}
 ```
 

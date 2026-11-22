@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanroomsml-trainingdataset-dataset-syntax.json"></a>
 
-```
+```json
 {
   "[InputConfig](#cfn-cleanroomsml-trainingdataset-dataset-inputconfig)" : {{DatasetInputConfig}},
   "[Type](#cfn-cleanroomsml-trainingdataset-dataset-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanroomsml-trainingdataset-dataset-syntax.yaml"></a>
 
-```
+```yaml
   [InputConfig](#cfn-cleanroomsml-trainingdataset-dataset-inputconfig): {{
     DatasetInputConfig}}
   [Type](#cfn-cleanroomsml-trainingdataset-dataset-type): {{String}}

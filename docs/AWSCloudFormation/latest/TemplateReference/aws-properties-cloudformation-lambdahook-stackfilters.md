@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudformation-lambdahook-stackfilters-syntax.json"></a>
 
-```
+```json
 {
   "[FilteringCriteria](#cfn-cloudformation-lambdahook-stackfilters-filteringcriteria)" : {{String}},
   "[StackNames](#cfn-cloudformation-lambdahook-stackfilters-stacknames)" : {{StackNames}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudformation-lambdahook-stackfilters-syntax.yaml"></a>
 
-```
+```yaml
   [FilteringCriteria](#cfn-cloudformation-lambdahook-stackfilters-filteringcriteria): {{String}}
   [StackNames](#cfn-cloudformation-lambdahook-stackfilters-stacknames): {{
     StackNames}}

@@ -65,7 +65,7 @@ Use the [ describe-capacity-block-offerings](https://docs.aws.amazon.com/cli/lat
 
 The following example finds instance Capacity Blocks.
 
-```
+```bash
 aws ec2 describe-capacity-block-offerings \
 --instance-type {{p5.48xlarge}} \
 --instance-count {{16}} \
@@ -77,7 +77,7 @@ aws ec2 describe-capacity-block-offerings \
 
 The following example finds UltraServer Capacity Blocks.
 
-```
+```bash
 aws ec2 describe-capacity-block-offerings \
 --ultraserver-type {{u-p6e-gb200x72}} \
 --ultraserver-count {{1}} \
@@ -89,7 +89,7 @@ aws ec2 describe-capacity-block-offerings \
 **To purchase a Capacity Block**
 Use the [ purchase-capacity-block](https://docs.aws.amazon.com/cli/latest/reference/ec2/purchase-capacity-block.html) command with the offering ID of the Capacity Block from the output of the previous example.
 
-```
+```bash
 aws ec2 purchase-capacity-block \
 --capacity-block-offering-id {{cb-0123456789abcdefg}} \
 --instance-platform {{Linux/UNIX}}
@@ -103,7 +103,7 @@ Use the [Get-EC2CapacityBlockOffering](https://docs.aws.amazon.com/powershell/la
 
 The following example finds instance Capacity Blocks.
 
-```
+```powershell
 Get-EC2CapacityBlockOffering `
 -InstanceType {{p5.48xlarge}} `
 -InstanceCount {{16}} `
@@ -115,7 +115,7 @@ Get-EC2CapacityBlockOffering `
 
 The following example finds UltraServer Capacity Blocks.
 
-```
+```powershell
 Get-EC2CapacityBlockOffering `
 -UltraserverType {{u-p6e-gb200x72}} `
 -UltraserverCount  {{1}} `
@@ -127,7 +127,7 @@ Get-EC2CapacityBlockOffering `
 **To purchase a Capacity Block**
 Use the [New-EC2EC2CapacityBlock](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2EC2CapacityBlock.html) cmdlet with the offering ID of the Capacity Block from the output of the previous example.
 
-```
+```powershell
 New-EC2EC2CapacityBlock `
 -CapacityBlockOfferingId {{cb-0123456789abcdefg}} `
 -InstancePlatform {{Linux/UNIX}}

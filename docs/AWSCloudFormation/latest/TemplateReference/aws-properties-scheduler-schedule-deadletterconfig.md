@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-scheduler-schedule-deadletterconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Arn](#cfn-scheduler-schedule-deadletterconfig-arn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-scheduler-schedule-deadletterconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Arn](#cfn-scheduler-schedule-deadletterconfig-arn): {{String}}
 ```
 

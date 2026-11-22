@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-connect-datalakeassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Connect::DataLakeAssociation",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-connect-datalakeassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Connect::DataLakeAssociation
 Properties:
   [DataSetId](#cfn-connect-datalakeassociation-datasetid): {{String}}

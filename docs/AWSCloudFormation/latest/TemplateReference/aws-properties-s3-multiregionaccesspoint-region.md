@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-multiregionaccesspoint-region-syntax.json"></a>
 
-```
+```json
 {
   "[Bucket](#cfn-s3-multiregionaccesspoint-region-bucket)" : {{String}},
   "[BucketAccountId](#cfn-s3-multiregionaccesspoint-region-bucketaccountid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-multiregionaccesspoint-region-syntax.yaml"></a>
 
-```
+```yaml
   [Bucket](#cfn-s3-multiregionaccesspoint-region-bucket): {{String}}
   [BucketAccountId](#cfn-s3-multiregionaccesspoint-region-bucketaccountid): {{String}}
 ```

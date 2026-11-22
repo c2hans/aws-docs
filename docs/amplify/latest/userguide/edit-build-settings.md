@@ -41,7 +41,7 @@ You can use the examples described in the following topics to update your build 
 
 You can use bash shell scripting to set branch-specific build settings. For example, the following script uses the system environment variable *$AWS\_BRANCH* to run one set of commands if the branch name is *main* and a different set of commands if the branch name is *dev*.
 
-```
+```yaml
 frontend:
   phases:
     build:
@@ -55,7 +55,7 @@ frontend:
 
 For monorepos, users want to be able to `cd` into a folder to run the build. After you run the `cd` command, it applies to all stages of your build so you don’t need to repeat the command in separate phases.
 
-```
+```yaml
 version: 1
 env:
   variables:
@@ -79,7 +79,7 @@ This section applies to Amplify Gen 1 applications only. A Gen 1 backend is crea
 
 The `amplifyPush` command is a helper script that helps you with backend deployments. The build settings below automatically determine the correct backend environment to deploy for the current branch.
 
-```
+```yaml
 version: 1
 env:
   variables:
@@ -96,7 +96,7 @@ backend:
 
 The following build settings set the output directory to the public folder.
 
-```
+```yaml
 frontend:
   phases:
     commands:
@@ -111,7 +111,7 @@ frontend:
 
 You can use the `npm` or `yarn` commands to install packages during the build.
 
-```
+```yaml
 frontend:
   phases:
     build:
@@ -128,7 +128,7 @@ frontend:
 
 You can add references to a private registry in your build settings or add it as an environment variable.
 
-```
+```yaml
 build:
   phases:
     preBuild:
@@ -147,7 +147,7 @@ Amplify's AL2023 image runs your code with a non-privileged user named `amplify`
 
 The following example build section demonstrates the syntax for installing an OS package using the `sudo` command.
 
-```
+```yaml
 build:
   phases:
     preBuild:

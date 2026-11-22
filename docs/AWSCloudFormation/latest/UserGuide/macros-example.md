@@ -17,7 +17,7 @@ The following sample template contains the definition for our example macro. To 
 
 In this example, assume that the stack created from this template is named `JavaMacroFunc`. Because the macro `Name` property is set to the stack name, the resulting macro is named `JavaMacroFunc` as well.
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
   Resources:
     Macro:
@@ -35,7 +35,7 @@ To use our macro, we include it in a template using the `Fn::Transform` intrinsi
 
 When we create a stack using the template below, CloudFormation calls our example macro. The underlying Lambda function replaces one specified string with another specified string. In this case, the result is a blank `AWS::CloudFormation::WaitConditionHandle` is inserted into the processed template.
 
-```
+```yaml
 Parameters:
   ExampleParameter:
     Type: String
@@ -64,7 +64,7 @@ When CloudFormation processes our example template during stack creation, it pas
 + `accountId` : `012345678910`
 + `fragment` :
 
-  ```
+  ```json
   {
     "Type": "$$REPLACEMENT$$"
   }
@@ -72,7 +72,7 @@ When CloudFormation processes our example template during stack creation, it pas
 + `transformId` : `012345678910::JavaMacroFunc`
 + `params` :
 
-  ```
+  ```json
   {
       "replacement": "AWS::CloudFormation::WaitConditionHandle",
       "target": "$$REPLACEMENT$$"
@@ -81,7 +81,7 @@ When CloudFormation processes our example template during stack creation, it pas
 + `requestId` : `5dba79b5-f117-4de0-9ce4-d40363bfb6ab`
 + `templateParameterValues` :
 
-  ```
+  ```json
   {
       "ExampleParameter": "SampleMacro"
   }
@@ -94,7 +94,7 @@ When CloudFormation processes our example template during stack creation, it pas
 
 Following is the actual code for the Lambda function underlying the `JavaMacroFunc` example macro. It iterates over the template fragment included in the response (be it in string, list, or map format), looking for the specified target string. If it finds the specified target string, the Lambda function replaces the target string with the specified replacement string. If not, the function leaves the template fragment unchanged. Then, the function returns a map of the expected properties, discussed in detail below, to CloudFormation.
 
-```
+```java
 package com.macroexample.lambda.demo;
 
 import java.util.List;
@@ -204,7 +204,7 @@ Following is the mapping that the Lambda function returns to CloudFormation for 
 + `status` : `SUCCESS`
 + `fragment` :
 
-  ```
+  ```json
   {
     "Type": "AWS::CloudFormation::WaitConditionHandle"
   }
@@ -219,7 +219,7 @@ After CloudFormation receives a successful response from the Lambda function, it
 
 Below is the resulting processed template for our example. The `Fn::Transform` intrinsic function call that referenced the `JavaMacroFunc` macro is no longer included. The template fragment returned by the Lambda function is included in the appropriate location, with the result that the content `"Type": "$$REPLACEMENT$$"` has been replaced with `"Type": "AWS::CloudFormation::WaitConditionHandle"`.
 
-```
+```json
 {
     "Parameters": {
         "ExampleParameter": {

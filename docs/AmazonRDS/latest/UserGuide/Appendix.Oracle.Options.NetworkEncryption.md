@@ -24,7 +24,7 @@ You can use Native Network Encryption or Secure Sockets Layer, but not both. For
 
 After connecting to your DB instance, query `V$SESSION_CONNECT_INFO` for your session to confirm that native network encryption is active:
 
-```
+```sql
 SELECT NETWORK_SERVICE_BANNER
 FROM V$SESSION_CONNECT_INFO
 WHERE SID = SYS_CONTEXT('USERENV', 'SID');

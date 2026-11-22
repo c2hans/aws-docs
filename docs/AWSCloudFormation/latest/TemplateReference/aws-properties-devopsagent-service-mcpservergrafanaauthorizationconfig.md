@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-service-mcpservergrafanaauthorizationconfig-syntax.json"></a>
 
-```
+```json
 {
   "[BearerToken](#cfn-devopsagent-service-mcpservergrafanaauthorizationconfig-bearertoken)" : {{BearerTokenDetails}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-service-mcpservergrafanaauthorizationconfig-syntax.yaml"></a>
 
-```
+```yaml
   [BearerToken](#cfn-devopsagent-service-mcpservergrafanaauthorizationconfig-bearertoken): {{
     BearerTokenDetails}}
 ```

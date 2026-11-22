@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-paymentcryptography-alias-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::PaymentCryptography::Alias",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-paymentcryptography-alias-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::PaymentCryptography::Alias
 Properties:
   [AliasName](#cfn-paymentcryptography-alias-aliasname): {{String}}

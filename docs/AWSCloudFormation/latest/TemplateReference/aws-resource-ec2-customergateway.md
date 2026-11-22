@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-customergateway-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::CustomerGateway",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-customergateway-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::CustomerGateway
 Properties:
   [BgpAsn](#cfn-ec2-customergateway-bgpasn): {{Integer}}
@@ -133,7 +133,7 @@ The following example creates a customer gateway.
 #### YAML
 <a name="aws-resource-ec2-customergateway--examples--Create_a_customer_gateway--yaml"></a>
 
-```
+```yaml
 myCustomerGateway:
     Type: AWS::EC2::CustomerGateway
     Properties:
@@ -145,7 +145,7 @@ myCustomerGateway:
 #### JSON
 <a name="aws-resource-ec2-customergateway--examples--Create_a_customer_gateway--json"></a>
 
-```
+```json
 {
     "myCustomerGateway" : {
         "Type" : "AWS::EC2::CustomerGateway",

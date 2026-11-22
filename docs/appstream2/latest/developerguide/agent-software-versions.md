@@ -12,7 +12,7 @@ The following table describes the latest updates that are available in released 
 
 | Amazon WorkSpaces Applications agent version | Changes |
 | --- | --- |
-| 10-25-2026 |  +  Improves streaming session reliability <br />+  General bug fixes and improvements   |
+| 10-25-2026 |  +  Adds opt-in support for in-session smart card use on multi-session fleets <br />+  Adds support for WebAuthn redirection <br />+  Improves streaming session reliability <br />+  General bug fixes and improvements   |
 | 10-20-2026 |  +  Adds support for printer preference redirection   |
 | 10-07-2026 |  +  General bug fixes and improvements   |
 | 10-01-2026 |  +  General bug fixes and improvements   |

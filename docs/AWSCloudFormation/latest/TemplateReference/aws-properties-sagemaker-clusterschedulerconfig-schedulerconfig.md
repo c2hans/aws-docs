@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-clusterschedulerconfig-schedulerconfig-syntax.json"></a>
 
-```
+```json
 {
   "[FairShare](#cfn-sagemaker-clusterschedulerconfig-schedulerconfig-fairshare)" : {{String}},
   "[IdleResourceSharing](#cfn-sagemaker-clusterschedulerconfig-schedulerconfig-idleresourcesharing)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-clusterschedulerconfig-schedulerconfig-syntax.yaml"></a>
 
-```
+```yaml
   [FairShare](#cfn-sagemaker-clusterschedulerconfig-schedulerconfig-fairshare): {{String}}
   [IdleResourceSharing](#cfn-sagemaker-clusterschedulerconfig-schedulerconfig-idleresourcesharing): {{String}}
   [PriorityClasses](#cfn-sagemaker-clusterschedulerconfig-schedulerconfig-priorityclasses): {{

@@ -84,3 +84,4 @@ When requests are throttled in ElastiCache Serverless, you should see an increas
 ## Related Topics
 <a name="wwe-troubleshooting.related"></a>
 + [ElastiCache best practices and caching strategies](BestPractices.md)
++ For distributed KV caching errors, see [Troubleshooting distributed KV caching](distributed-kv-caching-troubleshooting.md).

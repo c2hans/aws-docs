@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-otaupdate-awsjobpresignedurlconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ExpiresInSec](#cfn-iot-otaupdate-awsjobpresignedurlconfig-expiresinsec)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-otaupdate-awsjobpresignedurlconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ExpiresInSec](#cfn-iot-otaupdate-awsjobpresignedurlconfig-expiresinsec): {{Integer}}
 ```
 

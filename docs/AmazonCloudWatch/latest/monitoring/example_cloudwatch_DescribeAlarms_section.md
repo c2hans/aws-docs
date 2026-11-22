@@ -16,7 +16,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Describe the current alarms, optionally filtered by state.
     /// </summary>
@@ -97,7 +97,7 @@ For more information, see [Using Amazon CloudWatch alarms](https://docs.aws.amaz
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/cloudwatch#code-examples).
 
-```
+```java
     /**
      * Describes the CloudWatch alarms of the 'METRIC_ALARM' type.
      *
@@ -138,7 +138,7 @@ For more information, see [Using Amazon CloudWatch alarms](https://docs.aws.amaz
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/cloudwatch#code-examples).
 
-```
+```kotlin
 suspend fun desCWAlarms() {
     CloudWatchClient.fromEnvironment { region = "us-east-1" }.use { cwClient ->
         val response = cwClient.describeAlarms(DescribeAlarmsRequest {})
@@ -156,7 +156,7 @@ suspend fun desCWAlarms() {
 **Tools for PowerShell V4**
 **Example 1: Returns all the alarms including Composite and Metric Alarms from CloudWatch.**
 
-```
+```powershell
 Get-CWAlarm -MaxRecords 1
 ```
 **Output:**
@@ -170,7 +170,7 @@ CompositeAlarms MetricAlarms         NextToken
 ```
 **Example 2: Returns only the composite alarms data from CloudWatch after setting -AlarmType parameter to CompositeAlarms.**
 
-```
+```powershell
 Get-CWAlarm -AlarmType 'CompositeAlarms'
 ```
 **Output:**
@@ -190,7 +190,7 @@ CompositeAlarms        MetricAlarms NextToken
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/cloudwatch#code-examples).
 
-```
+```ruby
 require 'aws-sdk-cloudwatch'
 
 # Lists the names of available Amazon CloudWatch alarms.
@@ -220,7 +220,7 @@ end
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cwt#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_cwt->describealarms(                 " oo_result is returned for testing purposes. "
           it_alarmnames = it_alarm_names ).

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iam-samlprovider-samlprivatekey-syntax.json"></a>
 
-```
+```json
 {
   "[KeyId](#cfn-iam-samlprovider-samlprivatekey-keyid)" : {{String}},
   "[Timestamp](#cfn-iam-samlprovider-samlprivatekey-timestamp)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iam-samlprovider-samlprivatekey-syntax.yaml"></a>
 
-```
+```yaml
   [KeyId](#cfn-iam-samlprovider-samlprivatekey-keyid): {{String}}
   [Timestamp](#cfn-iam-samlprovider-samlprivatekey-timestamp): {{String}}
 ```

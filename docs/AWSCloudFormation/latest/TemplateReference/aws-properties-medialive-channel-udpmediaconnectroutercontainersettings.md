@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-udpmediaconnectroutercontainersettings-syntax.json"></a>
 
-```
+```json
 {
   "[M2tsSettings](#cfn-medialive-channel-udpmediaconnectroutercontainersettings-m2tssettings)" : {{M2tsSettings}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-udpmediaconnectroutercontainersettings-syntax.yaml"></a>
 
-```
+```yaml
   [M2tsSettings](#cfn-medialive-channel-udpmediaconnectroutercontainersettings-m2tssettings): {{
     M2tsSettings}}
 ```

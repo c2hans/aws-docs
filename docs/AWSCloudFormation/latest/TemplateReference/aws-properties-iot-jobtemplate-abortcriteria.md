@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-jobtemplate-abortcriteria-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-iot-jobtemplate-abortcriteria-action)" : {{String}},
   "[FailureType](#cfn-iot-jobtemplate-abortcriteria-failuretype)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-jobtemplate-abortcriteria-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-iot-jobtemplate-abortcriteria-action): {{String}}
   [FailureType](#cfn-iot-jobtemplate-abortcriteria-failuretype): {{String}}
   [MinNumberOfExecutedThings](#cfn-iot-jobtemplate-abortcriteria-minnumberofexecutedthings): {{Integer}}

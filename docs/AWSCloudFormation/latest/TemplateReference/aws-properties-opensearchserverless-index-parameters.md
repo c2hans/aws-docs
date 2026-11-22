@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchserverless-index-parameters-syntax.json"></a>
 
-```
+```json
 {
   "[EfConstruction](#cfn-opensearchserverless-index-parameters-efconstruction)" : {{Integer}},
   "[M](#cfn-opensearchserverless-index-parameters-m)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchserverless-index-parameters-syntax.yaml"></a>
 
-```
+```yaml
   [EfConstruction](#cfn-opensearchserverless-index-parameters-efconstruction): {{Integer}}
   [M](#cfn-opensearchserverless-index-parameters-m): {{Integer}}
 ```

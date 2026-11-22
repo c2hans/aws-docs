@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-alert-condition-syntax.json"></a>
 
-```
+```json
 {
   "[Comparator](#cfn-cloudwatch-alert-condition-comparator)" : {{String}},
   "[CriticalThreshold](#cfn-cloudwatch-alert-condition-criticalthreshold)" : {{Number}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-alert-condition-syntax.yaml"></a>
 
-```
+```yaml
   [Comparator](#cfn-cloudwatch-alert-condition-comparator): {{String}}
   [CriticalThreshold](#cfn-cloudwatch-alert-condition-criticalthreshold): {{Number}}
   [ThresholdField](#cfn-cloudwatch-alert-condition-thresholdfield): {{String}}

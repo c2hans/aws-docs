@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-backup-restoretestingselection-keyvalue-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-backup-restoretestingselection-keyvalue-key)" : {{String}},
   "[Value](#cfn-backup-restoretestingselection-keyvalue-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-backup-restoretestingselection-keyvalue-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-backup-restoretestingselection-keyvalue-key): {{String}}
   [Value](#cfn-backup-restoretestingselection-keyvalue-value): {{String}}
 ```

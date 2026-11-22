@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-entityresolution-matchingworkflow-incrementalrunconfig-syntax.json"></a>
 
-```
+```json
 {
   "[IncrementalRunType](#cfn-entityresolution-matchingworkflow-incrementalrunconfig-incrementalruntype)" : {{String}}
 }
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-entityresolution-matchingworkflow-incrementalrunconfig-syntax.yaml"></a>
 
-```
+```yaml
   [IncrementalRunType](#cfn-entityresolution-matchingworkflow-incrementalrunconfig-incrementalruntype): {{String}}
 ```
 

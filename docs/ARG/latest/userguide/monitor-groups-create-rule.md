@@ -21,7 +21,7 @@ The process to create a rule in EventBridge that captures events and sends them 
 Step 1: Create the EventBridge rule to capture the events
 The following AWS CLI `[put-rule](https://docs.aws.amazon.com/cli/latest/reference/events/put-rule.html)` example command creates an EventBridge rule that captures ***all*** Resource Groups lifecycle event changes.
 
-```
+```bash
 $ aws events put-rule \
     --name "CatchAllResourceGroupEvents" \
     --event-pattern '{"source":["aws.resource-groups"]}'
@@ -35,7 +35,7 @@ As parameter strings get more complex, it can be easier and less error prone to 
 The following event pattern restricts the events to only those that are related to the specified group, identified by its ARN. This event pattern is a complex JSON string that is much less readable when compressed into a single-line, properly escaped JSON string. You can store it in a file instead.
 Store the event pattern JSON string in a file. In the following code example, the file is `eventpattern.txt`.
 
-```
+```json
 {
     "source": [ "aws.resource-groups" ],
     "detail": {
@@ -47,7 +47,7 @@ Store the event pattern JSON string in a file. In the following code example, th
 ```
 Then, issue the following command to create the rule, retrieving the custom event pattern from the file.
 
-```
+```bash
 $ aws events put-rule \
     --name "CatchResourceGroupEventsForMyGroup" \
     --event-pattern file://eventpattern.txt
@@ -61,7 +61,7 @@ Step 2: Attach a target that can process the events to the EventBridge rule
 Now that you have a rule that captures the events of interest to you, you can attach one or more targets to do some type of processing on the events.
 The following AWS CLI `[put-targets](https://docs.aws.amazon.com/cli/latest/reference/events/put-targets.html)` command attaches an Amazon Simple Notification Service (Amazon SNS) topic named `my-sns-topic` to the rule you created in the previous example. All subscribers to the topic receive a notification when a change occurs to the group specified in the rule.
 
-```
+```bash
 $ aws events put-targets \
     --rule CatchResourceGroupEventsForMyGroup \
     --targets Id=1,Arn=arn:aws:sns:us-east-1:123456789012:my-sns-topic
@@ -85,7 +85,7 @@ You can create a rule with a custom event pattern that captures only the events 
 
 For example, suppose you want a rule to process only those Resource Groups notifications that indicate the creation of a new resource group. You could use a custom event pattern similar to the following example.
 
-```
+```JSON
 {
     "source": [ "aws.resource-groups" ],
     "detail-type": [ "ResourceGroups Group State Change" ],

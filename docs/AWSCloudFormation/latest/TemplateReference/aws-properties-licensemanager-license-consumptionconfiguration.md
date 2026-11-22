@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-licensemanager-license-consumptionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BorrowConfiguration](#cfn-licensemanager-license-consumptionconfiguration-borrowconfiguration)" : {{BorrowConfiguration}},
   "[ProvisionalConfiguration](#cfn-licensemanager-license-consumptionconfiguration-provisionalconfiguration)" : {{ProvisionalConfiguration}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-licensemanager-license-consumptionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BorrowConfiguration](#cfn-licensemanager-license-consumptionconfiguration-borrowconfiguration): {{
     BorrowConfiguration}}
   [ProvisionalConfiguration](#cfn-licensemanager-license-consumptionconfiguration-provisionalconfiguration): {{

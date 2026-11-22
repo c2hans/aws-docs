@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-datasetusageconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DisableUseAsDirectQuerySource](#cfn-quicksight-dataset-datasetusageconfiguration-disableuseasdirectquerysource)" : {{Boolean}},
   "[DisableUseAsImportedSource](#cfn-quicksight-dataset-datasetusageconfiguration-disableuseasimportedsource)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-datasetusageconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DisableUseAsDirectQuerySource](#cfn-quicksight-dataset-datasetusageconfiguration-disableuseasdirectquerysource): {{Boolean}}
   [DisableUseAsImportedSource](#cfn-quicksight-dataset-datasetusageconfiguration-disableuseasimportedsource): {{Boolean}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-omics-variantstore-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Omics::VariantStore",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-omics-variantstore-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Omics::VariantStore
 Properties:
   [Description](#cfn-omics-variantstore-description): {{String}}

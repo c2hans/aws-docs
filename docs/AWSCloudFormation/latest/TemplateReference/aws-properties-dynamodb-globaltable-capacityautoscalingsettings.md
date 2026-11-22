@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dynamodb-globaltable-capacityautoscalingsettings-syntax.json"></a>
 
-```
+```json
 {
   "[MaxCapacity](#cfn-dynamodb-globaltable-capacityautoscalingsettings-maxcapacity)" : {{Integer}},
   "[MinCapacity](#cfn-dynamodb-globaltable-capacityautoscalingsettings-mincapacity)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dynamodb-globaltable-capacityautoscalingsettings-syntax.yaml"></a>
 
-```
+```yaml
   [MaxCapacity](#cfn-dynamodb-globaltable-capacityautoscalingsettings-maxcapacity): {{Integer}}
   [MinCapacity](#cfn-dynamodb-globaltable-capacityautoscalingsettings-mincapacity): {{Integer}}
   [SeedCapacity](#cfn-dynamodb-globaltable-capacityautoscalingsettings-seedcapacity): {{Integer}}

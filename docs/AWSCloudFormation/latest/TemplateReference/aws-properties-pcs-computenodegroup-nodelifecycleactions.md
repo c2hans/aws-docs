@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcs-computenodegroup-nodelifecycleactions-syntax.json"></a>
 
-```
+```json
 {
   "[ScriptCachingPolicy](#cfn-pcs-computenodegroup-nodelifecycleactions-scriptcachingpolicy)" : {{String}},
   "[Stages](#cfn-pcs-computenodegroup-nodelifecycleactions-stages)" : {{NodeLifecycleStages}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcs-computenodegroup-nodelifecycleactions-syntax.yaml"></a>
 
-```
+```yaml
   [ScriptCachingPolicy](#cfn-pcs-computenodegroup-nodelifecycleactions-scriptcachingpolicy): {{String}}
   [Stages](#cfn-pcs-computenodegroup-nodelifecycleactions-stages): {{
     NodeLifecycleStages}}

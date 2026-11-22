@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-inferencesettings-syntax.json"></a>
 
-```
+```json
 {
   "[AudioFeedInputs](#cfn-medialive-channel-inferencesettings-audiofeedinputs)" : {{[ AudioFeedInput, ... ]}},
   "[EnrichmentMethods](#cfn-medialive-channel-inferencesettings-enrichmentmethods)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-inferencesettings-syntax.yaml"></a>
 
-```
+```yaml
   [AudioFeedInputs](#cfn-medialive-channel-inferencesettings-audiofeedinputs): {{
     - AudioFeedInput}}
   [EnrichmentMethods](#cfn-medialive-channel-inferencesettings-enrichmentmethods): {{

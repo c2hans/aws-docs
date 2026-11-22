@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-appmesh-virtualrouter-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppMesh::VirtualRouter",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-appmesh-virtualrouter-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppMesh::VirtualRouter
 Properties:
   [MeshName](#cfn-appmesh-virtualrouter-meshname): {{String}}
@@ -142,7 +142,7 @@ This example creates a basic virtual router with an HTTP port mapping and two ta
 #### JSON
 <a name="aws-resource-appmesh-virtualrouter--examples--Create_a_Virtual_Router--json"></a>
 
-```
+```json
 {
   "Description": "Basic Test Virtual Router",
   "Resources": {
@@ -218,7 +218,7 @@ This example creates a basic virtual router with an HTTP port mapping and two ta
 #### YAML
 <a name="aws-resource-appmesh-virtualrouter--examples--Create_a_Virtual_Router--yaml"></a>
 
-```
+```yaml
 Description: Basic Test Virtual Router
 Resources:
   BasicVirtualRouter:

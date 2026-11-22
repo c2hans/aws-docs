@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-observabilityadmin-organizationtelemetryrule-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-observabilityadmin-organizationtelemetryrule-tag-key)" : {{String}},
   "[Value](#cfn-observabilityadmin-organizationtelemetryrule-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-observabilityadmin-organizationtelemetryrule-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-observabilityadmin-organizationtelemetryrule-tag-key): {{String}}
   [Value](#cfn-observabilityadmin-organizationtelemetryrule-tag-value): {{String}}
 ```

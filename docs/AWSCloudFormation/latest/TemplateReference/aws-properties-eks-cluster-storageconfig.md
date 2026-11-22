@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-cluster-storageconfig-syntax.json"></a>
 
-```
+```json
 {
   "[BlockStorage](#cfn-eks-cluster-storageconfig-blockstorage)" : {{BlockStorage}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-cluster-storageconfig-syntax.yaml"></a>
 
-```
+```yaml
   [BlockStorage](#cfn-eks-cluster-storageconfig-blockstorage): {{
     BlockStorage}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-algorithm-continuousparameterrangespecification-syntax.json"></a>
 
-```
+```json
 {
   "[MaxValue](#cfn-sagemaker-algorithm-continuousparameterrangespecification-maxvalue)" : {{String}},
   "[MinValue](#cfn-sagemaker-algorithm-continuousparameterrangespecification-minvalue)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-algorithm-continuousparameterrangespecification-syntax.yaml"></a>
 
-```
+```yaml
   [MaxValue](#cfn-sagemaker-algorithm-continuousparameterrangespecification-maxvalue): {{String}}
   [MinValue](#cfn-sagemaker-algorithm-continuousparameterrangespecification-minvalue): {{String}}
 ```

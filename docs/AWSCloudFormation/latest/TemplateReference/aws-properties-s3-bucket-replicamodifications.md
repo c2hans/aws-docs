@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-replicamodifications-syntax.json"></a>
 
-```
+```json
 {
   "[Status](#cfn-s3-bucket-replicamodifications-status)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-replicamodifications-syntax.yaml"></a>
 
-```
+```yaml
   [Status](#cfn-s3-bucket-replicamodifications-status): {{String}}
 ```
 

@@ -23,6 +23,13 @@ Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[\w+=,.@-]+`
 Required: Yes
 
+ ** MaxSigninSessionDuration **
+The maximum duration (in seconds) of an AWS Sign-In session for the user.
+This member is omitted when the setting is unset. In that case, no default value is returned and the existing sign-in session behavior applies.
+Type: Integer
+Valid Range: Minimum value of 3600. Maximum value of 7776000.
+Required: No
+
  ** PasswordResetRequired **
 Specifies whether the user is required to set a new password on next sign-in.
 Type: Boolean

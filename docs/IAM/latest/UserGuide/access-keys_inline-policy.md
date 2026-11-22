@@ -31,7 +31,7 @@ For both these use cases, you can use an inline policy that's attached to the IA
 
 ****
 
-   ```
+   ```json
    {
    "Version":"2012-10-17",
      "Statement": [
@@ -78,7 +78,7 @@ The IP addresses must not be obfuscated by a VPN or a proxy server.
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -119,7 +119,7 @@ You could also apply this policy as a service control policy (SCP) across multip
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

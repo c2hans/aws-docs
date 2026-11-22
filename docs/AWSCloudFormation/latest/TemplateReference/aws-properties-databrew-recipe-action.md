@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-databrew-recipe-action-syntax.json"></a>
 
-```
+```json
 {
   "[Operation](#cfn-databrew-recipe-action-operation)" : {{String}},
   "[Parameters](#cfn-databrew-recipe-action-parameters)" : {{RecipeParameters}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-databrew-recipe-action-syntax.yaml"></a>
 
-```
+```yaml
   [Operation](#cfn-databrew-recipe-action-operation): {{String}}
   [Parameters](#cfn-databrew-recipe-action-parameters): {{
     RecipeParameters}}

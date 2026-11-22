@@ -42,7 +42,7 @@ cwr('recordEvent', {
 
 Given this custom event, you can create a custom metric that counts the number of visits to the `amazonaws.com` URL from Chrome browsers. The following definition creates a metric named `AmazonVisitsCount` in your account, in the `RUM/CustomMetrics/PageVisits` namespace.
 
-```
+```json
 {
     "AppMonitorName":"customer-appMonitor-name",
     "Destination":"CloudWatch",

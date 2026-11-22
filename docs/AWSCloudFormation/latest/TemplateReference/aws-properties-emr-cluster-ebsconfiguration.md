@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emr-cluster-ebsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EbsBlockDeviceConfigs](#cfn-emr-cluster-ebsconfiguration-ebsblockdeviceconfigs)" : {{[ EbsBlockDeviceConfig, ... ]}},
   "[EbsOptimized](#cfn-emr-cluster-ebsconfiguration-ebsoptimized)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emr-cluster-ebsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EbsBlockDeviceConfigs](#cfn-emr-cluster-ebsconfiguration-ebsblockdeviceconfigs): {{
     - EbsBlockDeviceConfig}}
   [EbsOptimized](#cfn-emr-cluster-ebsconfiguration-ebsoptimized): {{Boolean}}

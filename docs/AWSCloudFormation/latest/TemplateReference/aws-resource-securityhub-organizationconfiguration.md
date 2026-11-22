@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-securityhub-organizationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SecurityHub::OrganizationConfiguration",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-securityhub-organizationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SecurityHub::OrganizationConfiguration
 Properties:
   [AutoEnable](#cfn-securityhub-organizationconfiguration-autoenable): {{Boolean}}
@@ -111,7 +111,7 @@ The following example configures organization settings in Security Hub CSPM.
 #### JSON
 <a name="aws-resource-securityhub-organizationconfiguration--examples--Configuring_your_organization_in--json"></a>
 
-```
+```json
 {
 	"Description": "Example template to configure an organization in Security Hub",
 	"Resources": {
@@ -130,7 +130,7 @@ The following example configures organization settings in Security Hub CSPM.
 #### YAML
 <a name="aws-resource-securityhub-organizationconfiguration--examples--Configuring_your_organization_in--yaml"></a>
 
-```
+```yaml
 Description: Example template to configure an organization in Security Hub
 Resources:
   SecurityHubOrganizationConfiguration:

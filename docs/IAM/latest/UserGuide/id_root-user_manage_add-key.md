@@ -46,7 +46,7 @@ To run the following command or API operation as the root user, you must already
 + AWS CLI: [aws iam create-access-key](https://docs.aws.amazon.com/cli/latest/reference/iam/create-access-key.html)
 **Example**
 
-  ```
+  ```bash
   $ aws iam create-access-key
   {
       "AccessKey": {

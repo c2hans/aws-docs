@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationsignals-servicelevelobjective-monitoredrequestcountmetric-syntax.json"></a>
 
-```
+```json
 {
   "[BadCountMetric](#cfn-applicationsignals-servicelevelobjective-monitoredrequestcountmetric-badcountmetric)" : {{[ MetricDataQuery, ... ]}},
   "[GoodCountMetric](#cfn-applicationsignals-servicelevelobjective-monitoredrequestcountmetric-goodcountmetric)" : {{[ MetricDataQuery, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationsignals-servicelevelobjective-monitoredrequestcountmetric-syntax.yaml"></a>
 
-```
+```yaml
   [BadCountMetric](#cfn-applicationsignals-servicelevelobjective-monitoredrequestcountmetric-badcountmetric): {{
     - MetricDataQuery}}
   [GoodCountMetric](#cfn-applicationsignals-servicelevelobjective-monitoredrequestcountmetric-goodcountmetric): {{

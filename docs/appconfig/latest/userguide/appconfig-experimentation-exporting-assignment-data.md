@@ -14,7 +14,7 @@ The entity ID is the key you use to join assignment records to your metric (obse
 
 When you set the destination to `stderr`, the agent emits each assignment as a single-line JSON record. Each record includes a `type` field so you can distinguish assignment records from the agent application logs, which also go to stderr by default.
 
-```
+```json
 {
   "type": "AWS.AppConfig.TreatmentAssignment",
   "timestamp": "2026-01-01T12:00:00Z",
@@ -45,6 +45,6 @@ When you set the destination to a value like `file:{{path}}/`, the agent writes 
 
 Each file contains newline-delimited JSON records:
 
-```
+```json
 {"timestamp":"2026-01-01T12:00:00Z","treatmentKey":"t1","entityId":"user123"}
 ```

@@ -51,7 +51,7 @@ https://autoscaling.amazonaws.com/?Action=DescribeAdjustmentTypes
 #### Sample Response
 <a name="API_DescribeAdjustmentTypes_Example_1_Response"></a>
 
-```
+```xml
 <DescribeAdjustmentTypesResponse xmlns="https://autoscaling.amazonaws.com/doc/201-01-01/">
   <DescribeAdjustmentTypesResult>
     <AdjustmentTypes>

@@ -15,7 +15,7 @@ For more information, see [Document model](https://docs.aws.amazon.com/amazondyn
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/dynamodb/mid-level-api#code-examples).
 Perform CRUD operations using a document model.
 
-```
+```csharp
     /// <summary>
     /// Performs CRUD operations on an Amazon DynamoDB table.
     /// </summary>
@@ -239,7 +239,7 @@ Perform CRUD operations using a document model.
 ```
 Perform batch write operations using a document model.
 
-```
+```csharp
     /// <summary>
     /// Shows how to use mid-level Amazon DynamoDB API calls to perform batch
     /// operations.
@@ -330,7 +330,7 @@ Perform batch write operations using a document model.
 ```
 Scan a table using a document model.
 
-```
+```csharp
     /// <summary>
     /// Shows how to use mid-level Amazon DynamoDB API calls to scan a DynamoDB
     /// table for values.
@@ -437,7 +437,7 @@ Scan a table using a document model.
 ```
 Query and scan a table using a document model.
 
-```
+```csharp
     /// <summary>
     /// Shows how to perform mid-level query procedures on an Amazon DynamoDB
     /// table.

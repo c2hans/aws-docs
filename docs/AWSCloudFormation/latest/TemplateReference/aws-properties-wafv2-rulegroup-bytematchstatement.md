@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-rulegroup-bytematchstatement-syntax.json"></a>
 
-```
+```json
 {
   "[FieldToMatch](#cfn-wafv2-rulegroup-bytematchstatement-fieldtomatch)" : {{FieldToMatch}},
   "[PositionalConstraint](#cfn-wafv2-rulegroup-bytematchstatement-positionalconstraint)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-rulegroup-bytematchstatement-syntax.yaml"></a>
 
-```
+```yaml
   [FieldToMatch](#cfn-wafv2-rulegroup-bytematchstatement-fieldtomatch): {{
     FieldToMatch}}
   [PositionalConstraint](#cfn-wafv2-rulegroup-bytematchstatement-positionalconstraint): {{String}}

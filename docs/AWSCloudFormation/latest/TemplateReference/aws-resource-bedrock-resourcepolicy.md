@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-bedrock-resourcepolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Bedrock::ResourcePolicy",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-bedrock-resourcepolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Bedrock::ResourcePolicy
 Properties:
   [PolicyDocument](#cfn-bedrock-resourcepolicy-policydocument): {{Json}}

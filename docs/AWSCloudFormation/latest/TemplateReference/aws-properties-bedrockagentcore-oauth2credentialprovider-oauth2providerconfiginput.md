@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-syntax.json"></a>
 
-```
+```json
 {
   "[AtlassianOauth2ProviderConfig](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-atlassianoauth2providerconfig)" : {{AtlassianOauth2ProviderConfigInput}},
   "[CustomOauth2ProviderConfig](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-customoauth2providerconfig)" : {{CustomOauth2ProviderConfigInput}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-syntax.yaml"></a>
 
-```
+```yaml
   [AtlassianOauth2ProviderConfig](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-atlassianoauth2providerconfig): {{
     AtlassianOauth2ProviderConfigInput}}
   [CustomOauth2ProviderConfig](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfiginput-customoauth2providerconfig): {{

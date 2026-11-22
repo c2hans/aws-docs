@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-instancestorageconfig-encryptionconfig-syntax.json"></a>
 
-```
+```json
 {
   "[EncryptionType](#cfn-connect-instancestorageconfig-encryptionconfig-encryptiontype)" : {{String}},
   "[KeyId](#cfn-connect-instancestorageconfig-encryptionconfig-keyid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-instancestorageconfig-encryptionconfig-syntax.yaml"></a>
 
-```
+```yaml
   [EncryptionType](#cfn-connect-instancestorageconfig-encryptionconfig-encryptiontype): {{String}}
   [KeyId](#cfn-connect-instancestorageconfig-encryptionconfig-keyid): {{String}}
 ```

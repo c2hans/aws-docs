@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-rulegroup-ratebasedstatementcustomkey-syntax.json"></a>
 
-```
+```json
 {
   "[ASN](#cfn-wafv2-rulegroup-ratebasedstatementcustomkey-asn)" : {{Json}},
   "[Cookie](#cfn-wafv2-rulegroup-ratebasedstatementcustomkey-cookie)" : {{RateLimitCookie}},
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-rulegroup-ratebasedstatementcustomkey-syntax.yaml"></a>
 
-```
+```yaml
   [ASN](#cfn-wafv2-rulegroup-ratebasedstatementcustomkey-asn): {{Json}}
   [Cookie](#cfn-wafv2-rulegroup-ratebasedstatementcustomkey-cookie): {{
     RateLimitCookie}}

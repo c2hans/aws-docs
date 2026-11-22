@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-capacityreservationfleet-instancetypespecification-syntax.json"></a>
 
-```
+```json
 {
   "[AvailabilityZone](#cfn-ec2-capacityreservationfleet-instancetypespecification-availabilityzone)" : {{String}},
   "[AvailabilityZoneId](#cfn-ec2-capacityreservationfleet-instancetypespecification-availabilityzoneid)" : {{String}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-capacityreservationfleet-instancetypespecification-syntax.yaml"></a>
 
-```
+```yaml
   [AvailabilityZone](#cfn-ec2-capacityreservationfleet-instancetypespecification-availabilityzone): {{String}}
   [AvailabilityZoneId](#cfn-ec2-capacityreservationfleet-instancetypespecification-availabilityzoneid): {{String}}
   [EbsOptimized](#cfn-ec2-capacityreservationfleet-instancetypespecification-ebsoptimized): {{Boolean}}

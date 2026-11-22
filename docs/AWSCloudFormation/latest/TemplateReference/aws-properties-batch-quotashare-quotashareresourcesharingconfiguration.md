@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-quotashare-quotashareresourcesharingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BorrowLimit](#cfn-batch-quotashare-quotashareresourcesharingconfiguration-borrowlimit)" : {{Integer}},
   "[Strategy](#cfn-batch-quotashare-quotashareresourcesharingconfiguration-strategy)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-quotashare-quotashareresourcesharingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BorrowLimit](#cfn-batch-quotashare-quotashareresourcesharingconfiguration-borrowlimit): {{Integer}}
   [Strategy](#cfn-batch-quotashare-quotashareresourcesharingconfiguration-strategy): {{String}}
 ```

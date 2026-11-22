@@ -34,7 +34,7 @@ When an error occurs, the header information contains the following:
 
 The body of the response also contains information about the error. The following sample error response shows the structure of response elements common to all REST error responses.
 
-```
+```xml
 1. <?xml version="1.0" encoding="UTF-8"?>
 2. <Error>
 3.   <Code>NoSuchKey</Code>

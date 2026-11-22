@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-autoscaling-autoscalinggroup-metricscollection-syntax.json"></a>
 
-```
+```json
 {
   "[Granularity](#cfn-autoscaling-autoscalinggroup-metricscollection-granularity)" : {{String}},
   "[Metrics](#cfn-autoscaling-autoscalinggroup-metricscollection-metrics)" : {{[ String, ... ]}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-autoscaling-autoscalinggroup-metricscollection-syntax.yaml"></a>
 
-```
+```yaml
   [Granularity](#cfn-autoscaling-autoscalinggroup-metricscollection-granularity): {{String}}
   [Metrics](#cfn-autoscaling-autoscalinggroup-metricscollection-metrics): {{
     - String}}

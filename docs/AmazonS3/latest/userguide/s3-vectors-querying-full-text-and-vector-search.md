@@ -29,7 +29,7 @@ The following example runs a hybrid query over the `documents` index. It combine
 
 **Example: Run a hybrid query**
 
-```
+```python
 response = client.query_vectors(
     vectorBucketName="my-vector-bucket",
     indexName="documents",
@@ -52,7 +52,7 @@ Omit the query vector to run a BM25-only search.
 
 **Example: Run a full-text-only query**
 
-```
+```python
 response = client.query_vectors(
     vectorBucketName="my-vector-bucket",
     indexName="documents",
@@ -71,7 +71,7 @@ You can pass multiple query text and field pairs in one request, up to the per-r
 
 **Example: Search multiple text fields**
 
-```
+```python
 response = client.query_vectors(
     vectorBucketName="my-vector-bucket",
     indexName="documents",
@@ -90,7 +90,7 @@ If you have your own re-ranking or score-normalization step, run a full-text-onl
 
 **Example: Run separate full-text and vector queries for custom fusion**
 
-```
+```python
 # 1. Full-text-only ranking, with BM25 scores
 text_results = client.query_vectors(
     vectorBucketName="my-vector-bucket",

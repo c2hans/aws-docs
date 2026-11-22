@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-aps-scraper-roleconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[SourceRoleArn](#cfn-aps-scraper-roleconfiguration-sourcerolearn)" : {{String}},
   "[TargetRoleArn](#cfn-aps-scraper-roleconfiguration-targetrolearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-aps-scraper-roleconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [SourceRoleArn](#cfn-aps-scraper-roleconfiguration-sourcerolearn): {{String}}
   [TargetRoleArn](#cfn-aps-scraper-roleconfiguration-targetrolearn): {{String}}
 ```

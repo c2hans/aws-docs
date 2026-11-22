@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackagev2-originendpoint-dashdvbfontdownload-syntax.json"></a>
 
-```
+```json
 {
   "[FontFamily](#cfn-mediapackagev2-originendpoint-dashdvbfontdownload-fontfamily)" : {{String}},
   "[MimeType](#cfn-mediapackagev2-originendpoint-dashdvbfontdownload-mimetype)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackagev2-originendpoint-dashdvbfontdownload-syntax.yaml"></a>
 
-```
+```yaml
   [FontFamily](#cfn-mediapackagev2-originendpoint-dashdvbfontdownload-fontfamily): {{String}}
   [MimeType](#cfn-mediapackagev2-originendpoint-dashdvbfontdownload-mimetype): {{String}}
   [Url](#cfn-mediapackagev2-originendpoint-dashdvbfontdownload-url): {{String}}

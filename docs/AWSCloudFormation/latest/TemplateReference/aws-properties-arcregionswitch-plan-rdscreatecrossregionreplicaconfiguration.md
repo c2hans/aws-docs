@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-arcregionswitch-plan-rdscreatecrossregionreplicaconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CrossAccountRole](#cfn-arcregionswitch-plan-rdscreatecrossregionreplicaconfiguration-crossaccountrole)" : {{String}},
   "[DbInstanceArnMap](#cfn-arcregionswitch-plan-rdscreatecrossregionreplicaconfiguration-dbinstancearnmap)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-arcregionswitch-plan-rdscreatecrossregionreplicaconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CrossAccountRole](#cfn-arcregionswitch-plan-rdscreatecrossregionreplicaconfiguration-crossaccountrole): {{String}}
   [DbInstanceArnMap](#cfn-arcregionswitch-plan-rdscreatecrossregionreplicaconfiguration-dbinstancearnmap): {{
     {{Key}}: {{Value}}}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kafkaconnect-connector-capacity-syntax.json"></a>
 
-```
+```json
 {
   "[AutoScaling](#cfn-kafkaconnect-connector-capacity-autoscaling)" : {{AutoScaling}},
   "[ProvisionedCapacity](#cfn-kafkaconnect-connector-capacity-provisionedcapacity)" : {{ProvisionedCapacity}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kafkaconnect-connector-capacity-syntax.yaml"></a>
 
-```
+```yaml
   [AutoScaling](#cfn-kafkaconnect-connector-capacity-autoscaling): {{
     AutoScaling}}
   [ProvisionedCapacity](#cfn-kafkaconnect-connector-capacity-provisionedcapacity): {{

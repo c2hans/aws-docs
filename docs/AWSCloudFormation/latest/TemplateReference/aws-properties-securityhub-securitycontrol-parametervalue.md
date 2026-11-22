@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityhub-securitycontrol-parametervalue-syntax.json"></a>
 
-```
+```json
 {
   "[Boolean](#cfn-securityhub-securitycontrol-parametervalue-boolean)" : {{Boolean}},
   "[Double](#cfn-securityhub-securitycontrol-parametervalue-double)" : {{Number}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityhub-securitycontrol-parametervalue-syntax.yaml"></a>
 
-```
+```yaml
   [Boolean](#cfn-securityhub-securitycontrol-parametervalue-boolean): {{
     Boolean}}
   [Double](#cfn-securityhub-securitycontrol-parametervalue-double): {{Number}}

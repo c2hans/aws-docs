@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-computeoptimizer-automationrule-schedule-syntax.json"></a>
 
-```
+```json
 {
   "[ExecutionWindowInMinutes](#cfn-computeoptimizer-automationrule-schedule-executionwindowinminutes)" : {{Integer}},
   "[ScheduleExpression](#cfn-computeoptimizer-automationrule-schedule-scheduleexpression)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-computeoptimizer-automationrule-schedule-syntax.yaml"></a>
 
-```
+```yaml
   [ExecutionWindowInMinutes](#cfn-computeoptimizer-automationrule-schedule-executionwindowinminutes): {{Integer}}
   [ScheduleExpression](#cfn-computeoptimizer-automationrule-schedule-scheduleexpression): {{String}}
   [ScheduleExpressionTimezone](#cfn-computeoptimizer-automationrule-schedule-scheduleexpressiontimezone): {{String}}

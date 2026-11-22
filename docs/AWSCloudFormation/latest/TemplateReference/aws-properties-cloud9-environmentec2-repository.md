@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloud9-environmentec2-repository-syntax.json"></a>
 
-```
+```json
 {
   "[PathComponent](#cfn-cloud9-environmentec2-repository-pathcomponent)" : {{String}},
   "[RepositoryUrl](#cfn-cloud9-environmentec2-repository-repositoryurl)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloud9-environmentec2-repository-syntax.yaml"></a>
 
-```
+```yaml
   [PathComponent](#cfn-cloud9-environmentec2-repository-pathcomponent): {{String}}
   [RepositoryUrl](#cfn-cloud9-environmentec2-repository-repositoryurl): {{String}}
 ```

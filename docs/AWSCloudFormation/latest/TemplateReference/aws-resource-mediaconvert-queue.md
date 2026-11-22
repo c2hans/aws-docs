@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-mediaconvert-queue-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MediaConvert::Queue",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-mediaconvert-queue-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MediaConvert::Queue
 Properties:
   [ConcurrentJobs](#cfn-mediaconvert-queue-concurrentjobs): {{Integer}}

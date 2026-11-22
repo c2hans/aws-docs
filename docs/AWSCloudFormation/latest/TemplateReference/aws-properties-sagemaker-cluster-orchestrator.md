@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-cluster-orchestrator-syntax.json"></a>
 
-```
+```json
 {
   "[Eks](#cfn-sagemaker-cluster-orchestrator-eks)" : {{ClusterOrchestratorEksConfig}},
   "[Slurm](#cfn-sagemaker-cluster-orchestrator-slurm)" : {{ClusterOrchestratorSlurmConfig}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-cluster-orchestrator-syntax.yaml"></a>
 
-```
+```yaml
   [Eks](#cfn-sagemaker-cluster-orchestrator-eks): {{
     ClusterOrchestratorEksConfig}}
   [Slurm](#cfn-sagemaker-cluster-orchestrator-slurm): {{

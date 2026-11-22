@@ -22,7 +22,7 @@ The following is the Google Drive New CloudFormation template. Copy and save thi
 
 For more information about CloudFormation templates, see [Working with CloudFormation templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-guide.html) in the *CloudFormation User Guide*.
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "Template to connect Google Drive New to Amazon Q Business",

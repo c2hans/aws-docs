@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-esam-syntax.json"></a>
 
-```
+```json
 {
   "[AcquisitionPointId](#cfn-medialive-channel-esam-acquisitionpointid)" : {{String}},
   "[AdAvailOffset](#cfn-medialive-channel-esam-adavailoffset)" : {{Integer}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-esam-syntax.yaml"></a>
 
-```
+```yaml
   [AcquisitionPointId](#cfn-medialive-channel-esam-acquisitionpointid): {{String}}
   [AdAvailOffset](#cfn-medialive-channel-esam-adavailoffset): {{Integer}}
   [PasswordParam](#cfn-medialive-channel-esam-passwordparam): {{String}}

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emr-cluster-jobflowinstancesconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AdditionalMasterSecurityGroups](#cfn-emr-cluster-jobflowinstancesconfig-additionalmastersecuritygroups)" : {{[ String, ... ]}},
   "[AdditionalSlaveSecurityGroups](#cfn-emr-cluster-jobflowinstancesconfig-additionalslavesecuritygroups)" : {{[ String, ... ]}},
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emr-cluster-jobflowinstancesconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AdditionalMasterSecurityGroups](#cfn-emr-cluster-jobflowinstancesconfig-additionalmastersecuritygroups): {{
     - String}}
   [AdditionalSlaveSecurityGroups](#cfn-emr-cluster-jobflowinstancesconfig-additionalslavesecuritygroups): {{

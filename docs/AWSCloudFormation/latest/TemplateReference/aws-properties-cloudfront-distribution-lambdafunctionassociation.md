@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distribution-lambdafunctionassociation-syntax.json"></a>
 
-```
+```json
 {
   "[EventType](#cfn-cloudfront-distribution-lambdafunctionassociation-eventtype)" : {{String}},
   "[IncludeBody](#cfn-cloudfront-distribution-lambdafunctionassociation-includebody)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distribution-lambdafunctionassociation-syntax.yaml"></a>
 
-```
+```yaml
   [EventType](#cfn-cloudfront-distribution-lambdafunctionassociation-eventtype): {{String}}
   [IncludeBody](#cfn-cloudfront-distribution-lambdafunctionassociation-includebody): {{Boolean}}
   [LambdaFunctionARN](#cfn-cloudfront-distribution-lambdafunctionassociation-lambdafunctionarn): {{String}}

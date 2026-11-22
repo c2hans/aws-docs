@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lightsail-loadbalancer-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-lightsail-loadbalancer-tag-key)" : {{String}},
   "[Value](#cfn-lightsail-loadbalancer-tag-value)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lightsail-loadbalancer-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-lightsail-loadbalancer-tag-key): {{String}}
   [Value](#cfn-lightsail-loadbalancer-tag-value): {{String}}
 ```

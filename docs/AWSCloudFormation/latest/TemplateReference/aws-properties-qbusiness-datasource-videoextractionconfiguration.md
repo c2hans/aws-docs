@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-qbusiness-datasource-videoextractionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[VideoExtractionStatus](#cfn-qbusiness-datasource-videoextractionconfiguration-videoextractionstatus)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-qbusiness-datasource-videoextractionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [VideoExtractionStatus](#cfn-qbusiness-datasource-videoextractionconfiguration-videoextractionstatus): {{String}}
 ```
 

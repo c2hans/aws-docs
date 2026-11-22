@@ -35,7 +35,7 @@ A trail is a configuration that enables delivery of events as log files to an Am
 
 The following example shows a CloudTrail log entry that demonstrates the `CreateCacheCluster` action.
 
-```
+```json
 {
     "eventVersion":"1.01",
     "userIdentity":{
@@ -94,7 +94,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Create
 
 The following example shows a CloudTrail log entry that demonstrates the `DescribeCacheCluster` action. Note that for all Amazon ElastiCache Describe calls (`Describe*`), the `ResponseElements` section is removed and appears as `null`.
 
-```
+```json
 {
     "eventVersion":"1.01",
     "userIdentity":{
@@ -123,7 +123,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Descri
 
 The following example shows a CloudTrail log entry that records a `ModifyCacheCluster` action.
 
-```
+```json
 {
     "eventVersion":"1.01",
     "userIdentity":{

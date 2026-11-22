@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rum-appmonitor-javascriptsourcemaps-syntax.json"></a>
 
-```
+```json
 {
   "[S3Uri](#cfn-rum-appmonitor-javascriptsourcemaps-s3uri)" : {{String}},
   "[Status](#cfn-rum-appmonitor-javascriptsourcemaps-status)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rum-appmonitor-javascriptsourcemaps-syntax.yaml"></a>
 
-```
+```yaml
   [S3Uri](#cfn-rum-appmonitor-javascriptsourcemaps-s3uri): {{String}}
   [Status](#cfn-rum-appmonitor-javascriptsourcemaps-status): {{String}}
 ```

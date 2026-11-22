@@ -12,7 +12,7 @@ The DynamoDB `BatchGetItem` limits apply and **no condition expression** can be 
 
 The `BatchGetItem` mapping document has the following structure:
 
-```
+```TypeScript
 {
     "version" : "2018-05-29",
     "operation" : "BatchGetItem",
@@ -88,7 +88,7 @@ Things to remember:
 
 For the following example request mapping template:
 
-```
+```TypeScript
 {
   "version": "2018-05-29",
   "operation": "BatchGetItem",
@@ -116,7 +116,7 @@ For the following example request mapping template:
 
 The invocation result available in `$ctx.result` is as follows:
 
-```
+```TypeScript
 {
    "data": {
      "authors": [null],

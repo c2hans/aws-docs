@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-s3tables-tablebucket-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::S3Tables::TableBucket",
   "Properties" : {
@@ -44,7 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-s3tables-tablebucket-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::S3Tables::TableBucket
 Properties:
   [EncryptionConfiguration](#cfn-s3tables-tablebucket-encryptionconfiguration): {{

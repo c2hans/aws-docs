@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-sourceipconfig-syntax.json"></a>
 
-```
+```json
 {
   "[IpAddressType](#cfn-elasticloadbalancingv2-listenerrule-sourceipconfig-ipaddresstype)" : {{String}},
   "[Values](#cfn-elasticloadbalancingv2-listenerrule-sourceipconfig-values)" : {{[ String, ... ]}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-sourceipconfig-syntax.yaml"></a>
 
-```
+```yaml
   [IpAddressType](#cfn-elasticloadbalancingv2-listenerrule-sourceipconfig-ipaddresstype): {{String}}
   [Values](#cfn-elasticloadbalancingv2-listenerrule-sourceipconfig-values): {{
     - String}}
@@ -63,7 +63,7 @@ The following example creates a listener rule with an action that forwards traff
 #### YAML
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-sourceipconfig--examples----yaml"></a>
 
-```
+```yaml
 myListenerRule:
   Type: 'AWS::ElasticLoadBalancingV2::ListenerRule'
   Properties:
@@ -80,7 +80,7 @@ myListenerRule:
 #### JSON
 <a name="aws-properties-elasticloadbalancingv2-listenerrule-sourceipconfig--examples----json"></a>
 
-```
+```json
 {
     "myListenerRule": {
         "Type": "AWS::ElasticLoadBalancingV2::ListenerRule",

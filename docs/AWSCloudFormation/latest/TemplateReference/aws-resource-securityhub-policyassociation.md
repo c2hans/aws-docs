@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-securityhub-policyassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SecurityHub::PolicyAssociation",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-securityhub-policyassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SecurityHub::PolicyAssociation
 Properties:
   [ConfigurationPolicyId](#cfn-securityhub-policyassociation-configurationpolicyid): {{String}}
@@ -108,7 +108,7 @@ The following example associates the specified Security Hub CSPM configuration p
 #### JSON
 <a name="aws-resource-securityhub-policyassociation--examples--Association_a_configuration_policy_or_self-managed_configuration--json"></a>
 
-```
+```json
 {
 	"Description": "Example template to associate a Security Hub configuration policy or self-managed configuration",
 	"Resources": {
@@ -127,7 +127,7 @@ The following example associates the specified Security Hub CSPM configuration p
 #### YAML
 <a name="aws-resource-securityhub-policyassociation--examples--Association_a_configuration_policy_or_self-managed_configuration--yaml"></a>
 
-```
+```yaml
 Description: Example template to associate a SecurityHub configuration policy or self-managed configuration
 Resources:
   SecurityHubPolicyAssociation:

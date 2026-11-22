@@ -73,7 +73,7 @@ To use the following example, replace the `{{user input placeholders}}` with you
 
 **Example – Update the IAM role of a registered location**
 
-```
+```java
 public void updateAccessGrantsLocation() {
 UpdateAccessGrantsLocationRequest updateRequest = UpdateAccessGrantsLocationRequest.builder()
 .accountId("{{111122223333}}")
@@ -86,7 +86,7 @@ LOGGER.info("UpdateAccessGrantsLocationResponse: " + updateResponse);
 ```
 Response:
 
-```
+```java
 UpdateAccessGrantsLocationResponse(
 CreatedAt={{2023-06-07T04:35:10.027Z}},
 AccessGrantsLocationId={{635f1139-1af2-4e43-8131-a4de006eb999}},

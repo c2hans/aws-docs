@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-calculatedattributedefinition-range-syntax.json"></a>
 
-```
+```json
 {
   "[TimestampFormat](#cfn-customerprofiles-calculatedattributedefinition-range-timestampformat)" : {{String}},
   "[TimestampSource](#cfn-customerprofiles-calculatedattributedefinition-range-timestampsource)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-calculatedattributedefinition-range-syntax.yaml"></a>
 
-```
+```yaml
   [TimestampFormat](#cfn-customerprofiles-calculatedattributedefinition-range-timestampformat): {{String}}
   [TimestampSource](#cfn-customerprofiles-calculatedattributedefinition-range-timestampsource): {{String}}
   [Unit](#cfn-customerprofiles-calculatedattributedefinition-range-unit): {{String}}

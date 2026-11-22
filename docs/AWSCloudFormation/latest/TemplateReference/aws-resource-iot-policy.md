@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iot-policy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoT::Policy",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iot-policy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoT::Policy
 Properties:
   [PolicyDocument](#cfn-iot-policy-policydocument): {{Json}}
@@ -104,7 +104,7 @@ The following example declares an AWS IoT policy. This example grants permission
 #### JSON
 <a name="aws-resource-iot-policy--examples----json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -135,7 +135,7 @@ The following example declares an AWS IoT policy. This example grants permission
 #### YAML
 <a name="aws-resource-iot-policy--examples----yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   MyIoTPolicy:

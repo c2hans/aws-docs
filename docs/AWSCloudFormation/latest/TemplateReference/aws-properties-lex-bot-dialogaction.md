@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-dialogaction-syntax.json"></a>
 
-```
+```json
 {
   "[SlotToElicit](#cfn-lex-bot-dialogaction-slottoelicit)" : {{String}},
   "[SuppressNextMessage](#cfn-lex-bot-dialogaction-suppressnextmessage)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-dialogaction-syntax.yaml"></a>
 
-```
+```yaml
   [SlotToElicit](#cfn-lex-bot-dialogaction-slottoelicit): {{String}}
   [SuppressNextMessage](#cfn-lex-bot-dialogaction-suppressnextmessage): {{Boolean}}
   [Type](#cfn-lex-bot-dialogaction-type): {{String}}

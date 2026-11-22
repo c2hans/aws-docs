@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-externalsourcesetting-syntax.json"></a>
 
-```
+```json
 {
   "[GrammarSlotTypeSetting](#cfn-lex-bot-externalsourcesetting-grammarslottypesetting)" : {{GrammarSlotTypeSetting}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-externalsourcesetting-syntax.yaml"></a>
 
-```
+```yaml
   [GrammarSlotTypeSetting](#cfn-lex-bot-externalsourcesetting-grammarslottypesetting): {{
     GrammarSlotTypeSetting}}
 ```

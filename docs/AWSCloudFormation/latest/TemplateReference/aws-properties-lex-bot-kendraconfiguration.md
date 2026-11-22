@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-kendraconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[KendraIndex](#cfn-lex-bot-kendraconfiguration-kendraindex)" : {{String}},
   "[QueryFilterString](#cfn-lex-bot-kendraconfiguration-queryfilterstring)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-kendraconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [KendraIndex](#cfn-lex-bot-kendraconfiguration-kendraindex): {{String}}
   [QueryFilterString](#cfn-lex-bot-kendraconfiguration-queryfilterstring): {{
     String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-runtime-requestheaderconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[RequestHeaderAllowlist](#cfn-bedrockagentcore-runtime-requestheaderconfiguration-requestheaderallowlist)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-runtime-requestheaderconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [RequestHeaderAllowlist](#cfn-bedrockagentcore-runtime-requestheaderconfiguration-requestheaderallowlist): {{
     - String}}
 ```

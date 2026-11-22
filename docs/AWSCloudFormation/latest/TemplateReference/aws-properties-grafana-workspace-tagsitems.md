@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-grafana-workspace-tagsitems-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-grafana-workspace-tagsitems-key)" : {{String}},
   "[Value](#cfn-grafana-workspace-tagsitems-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-grafana-workspace-tagsitems-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-grafana-workspace-tagsitems-key): {{String}}
   [Value](#cfn-grafana-workspace-tagsitems-value): {{String}}
 ```

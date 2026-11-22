@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-timestream-influxdbinstance-logdeliveryconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[S3Configuration](#cfn-timestream-influxdbinstance-logdeliveryconfiguration-s3configuration)" : {{S3Configuration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-timestream-influxdbinstance-logdeliveryconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [S3Configuration](#cfn-timestream-influxdbinstance-logdeliveryconfiguration-s3configuration): {{
     S3Configuration}}
 ```

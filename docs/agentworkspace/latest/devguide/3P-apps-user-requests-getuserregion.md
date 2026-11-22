@@ -8,18 +8,18 @@ Returns the AWS Region of the user that's currently logged in to the Connect Cus
 
  **Signature**
 
-```
+```typescript
 async getUserRegion(): Promise<string>
 ```
 
  **Usage**
 
-```
+```typescript
 const region: string = await userClient.getUserRegion();
 ```
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

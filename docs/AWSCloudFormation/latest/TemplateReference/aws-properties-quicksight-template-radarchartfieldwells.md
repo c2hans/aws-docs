@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-radarchartfieldwells-syntax.json"></a>
 
-```
+```json
 {
   "[RadarChartAggregatedFieldWells](#cfn-quicksight-template-radarchartfieldwells-radarchartaggregatedfieldwells)" : {{RadarChartAggregatedFieldWells}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-radarchartfieldwells-syntax.yaml"></a>
 
-```
+```yaml
   [RadarChartAggregatedFieldWells](#cfn-quicksight-template-radarchartfieldwells-radarchartaggregatedfieldwells): {{
     RadarChartAggregatedFieldWells}}
 ```

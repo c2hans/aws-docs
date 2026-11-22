@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-quotashare-quotasharecapacitylimit-syntax.json"></a>
 
-```
+```json
 {
   "[CapacityUnit](#cfn-batch-quotashare-quotasharecapacitylimit-capacityunit)" : {{String}},
   "[MaxCapacity](#cfn-batch-quotashare-quotasharecapacitylimit-maxcapacity)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-quotashare-quotasharecapacitylimit-syntax.yaml"></a>
 
-```
+```yaml
   [CapacityUnit](#cfn-batch-quotashare-quotasharecapacitylimit-capacityunit): {{String}}
   [MaxCapacity](#cfn-batch-quotashare-quotasharecapacitylimit-maxcapacity): {{Integer}}
 ```

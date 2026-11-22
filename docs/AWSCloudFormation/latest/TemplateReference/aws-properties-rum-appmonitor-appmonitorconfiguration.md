@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rum-appmonitor-appmonitorconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AllowCookies](#cfn-rum-appmonitor-appmonitorconfiguration-allowcookies)" : {{Boolean}},
   "[EnableXRay](#cfn-rum-appmonitor-appmonitorconfiguration-enablexray)" : {{Boolean}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rum-appmonitor-appmonitorconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AllowCookies](#cfn-rum-appmonitor-appmonitorconfiguration-allowcookies): {{Boolean}}
   [EnableXRay](#cfn-rum-appmonitor-appmonitorconfiguration-enablexray): {{Boolean}}
   [ExcludedPages](#cfn-rum-appmonitor-appmonitorconfiguration-excludedpages): {{

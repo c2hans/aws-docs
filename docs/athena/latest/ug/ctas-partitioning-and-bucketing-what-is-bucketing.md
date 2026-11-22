@@ -51,7 +51,7 @@ To create a table for an existing bucketed dataset, use the `CLUSTERED BY ({{col
 
 In the following `CREATE TABLE` example, the `sales` dataset is bucketed by `customer_id` into 8 buckets using the Spark algorithm. The `CREATE TABLE` statement uses the `CLUSTERED BY` and `TBLPROPERTIES` clauses to set the properties accordingly.
 
-```
+```sql
 CREATE EXTERNAL TABLE sales (...)
 ...
 CLUSTERED BY (`customer_id`) INTO 8 BUCKETS
@@ -66,7 +66,7 @@ TBLPROPERTIES (
 
 To specify bucketing with `CREATE TABLE AS`, use the `bucketed_by` and `bucket_count` parameters, as in the following example.
 
-```
+```sql
 CREATE TABLE sales
 WITH (
   ...
@@ -81,7 +81,7 @@ AS SELECT ...
 
 The following example query looks for the names of products that a specific customer has purchased over the course of a week.
 
-```
+```sql
 SELECT DISTINCT product_name
 FROM sales
 WHERE sales_date BETWEEN '2023-02-27' AND '2023-03-05'

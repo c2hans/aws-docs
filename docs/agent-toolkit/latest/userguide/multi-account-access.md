@@ -35,14 +35,14 @@ Configure multiple profiles using either the CLI flag or the environment variabl
 **CLI flag**
 The first profile is the default. Additional profiles are switchable:
 
-```
+```bash
 mcp-proxy-for-aws-cli https://aws-mcp.us-east-1.api.aws/mcp --profile prod-readonly dev staging
 ```
 
 **Environment variable**
 Same behavior, useful for plugin integration where CLI args cannot be modified:
 
-```
+```bash
 AWS_MCP_PROXY_PROFILES="prod-readonly dev staging"
 ```
 
@@ -51,7 +51,7 @@ AWS_MCP_PROXY_PROFILES="prod-readonly dev staging"
 
 **Example MCP config**
 
-```
+```json
 {
   "mcpServers": {
     "aws-mcp": {

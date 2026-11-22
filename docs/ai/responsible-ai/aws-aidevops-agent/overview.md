@@ -65,7 +65,7 @@ Error types for each use case, ranked in estimated order of negative impact, are
 
 1. Queries that fail to return results or time out
 
-**Limitations:**
+AWS DevOps Agent has the following limitations:
 + AWS DevOps Agent depends on large language models (LLMs) which can produce inaccurate content. Customers should evaluate outputs for accuracy and appropriateness for their use case, including by implementing appropriate human oversight, testing, and other use case-specific safeguards.
 + AWS DevOps Agent is designed for operational incident investigation and prevention in cloud environments. It is not designed for use cases unrelated to DevOps operations, such as general-purpose question answering, content creation, or software development tasks.
 + The agent's effectiveness depends on the completeness and quality of the observability data available. Environments with limited logging, metrics, tracing coverage, code repositories and CI/CD pipeline access may yield less accurate investigations.

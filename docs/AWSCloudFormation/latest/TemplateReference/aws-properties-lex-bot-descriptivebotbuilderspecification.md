@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-descriptivebotbuilderspecification-syntax.json"></a>
 
-```
+```json
 {
   "[BedrockModelSpecification](#cfn-lex-bot-descriptivebotbuilderspecification-bedrockmodelspecification)" : {{BedrockModelSpecification}},
   "[Enabled](#cfn-lex-bot-descriptivebotbuilderspecification-enabled)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-descriptivebotbuilderspecification-syntax.yaml"></a>
 
-```
+```yaml
   [BedrockModelSpecification](#cfn-lex-bot-descriptivebotbuilderspecification-bedrockmodelspecification): {{
     BedrockModelSpecification}}
   [Enabled](#cfn-lex-bot-descriptivebotbuilderspecification-enabled): {{Boolean}}

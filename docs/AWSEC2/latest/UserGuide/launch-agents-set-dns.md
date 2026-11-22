@@ -32,7 +32,7 @@ When you disable devolution or change your devolution settings to a higher level
 **Note**
 To clear the DNS suffix list from the registry, you can run the following command.
 
-```
+```ps
 PS C:\> Invoke-CimMethod -ClassName Win32_NetworkAdapterConfiguration -MethodName "SetDNSSuffixSearchOrder" -Arguments @{ DNSDomainSuffixSearchOrder = $null } | Out-Null
 ```
 

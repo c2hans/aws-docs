@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-endpoint-variantproperty-syntax.json"></a>
 
-```
+```json
 {
   "[VariantPropertyType](#cfn-sagemaker-endpoint-variantproperty-variantpropertytype)" : {{String}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-endpoint-variantproperty-syntax.yaml"></a>
 
-```
+```yaml
   [VariantPropertyType](#cfn-sagemaker-endpoint-variantproperty-variantpropertytype): {{String}}
 ```
 

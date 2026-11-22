@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-licensemanager-licenseassetruleset-matchingrulestatement-syntax.json"></a>
 
-```
+```json
 {
   "[Constraint](#cfn-licensemanager-licenseassetruleset-matchingrulestatement-constraint)" : {{String}},
   "[KeyToMatch](#cfn-licensemanager-licenseassetruleset-matchingrulestatement-keytomatch)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-licensemanager-licenseassetruleset-matchingrulestatement-syntax.yaml"></a>
 
-```
+```yaml
   [Constraint](#cfn-licensemanager-licenseassetruleset-matchingrulestatement-constraint): {{String}}
   [KeyToMatch](#cfn-licensemanager-licenseassetruleset-matchingrulestatement-keytomatch): {{String}}
   [ValueToMatch](#cfn-licensemanager-licenseassetruleset-matchingrulestatement-valuetomatch): {{

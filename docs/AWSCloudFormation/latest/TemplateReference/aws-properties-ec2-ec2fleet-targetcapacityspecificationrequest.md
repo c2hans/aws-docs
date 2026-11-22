@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-ec2fleet-targetcapacityspecificationrequest-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultTargetCapacityType](#cfn-ec2-ec2fleet-targetcapacityspecificationrequest-defaulttargetcapacitytype)" : {{String}},
   "[OnDemandTargetCapacity](#cfn-ec2-ec2fleet-targetcapacityspecificationrequest-ondemandtargetcapacity)" : {{Integer}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-ec2fleet-targetcapacityspecificationrequest-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultTargetCapacityType](#cfn-ec2-ec2fleet-targetcapacityspecificationrequest-defaulttargetcapacitytype): {{String}}
   [OnDemandTargetCapacity](#cfn-ec2-ec2fleet-targetcapacityspecificationrequest-ondemandtargetcapacity): {{Integer}}
   [SpotTargetCapacity](#cfn-ec2-ec2fleet-targetcapacityspecificationrequest-spottargetcapacity): {{Integer}}

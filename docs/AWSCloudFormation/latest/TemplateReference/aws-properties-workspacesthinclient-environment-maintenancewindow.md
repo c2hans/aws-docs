@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspacesthinclient-environment-maintenancewindow-syntax.json"></a>
 
-```
+```json
 {
   "[ApplyTimeOf](#cfn-workspacesthinclient-environment-maintenancewindow-applytimeof)" : {{String}},
   "[DaysOfTheWeek](#cfn-workspacesthinclient-environment-maintenancewindow-daysoftheweek)" : {{[ String, ... ]}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspacesthinclient-environment-maintenancewindow-syntax.yaml"></a>
 
-```
+```yaml
   [ApplyTimeOf](#cfn-workspacesthinclient-environment-maintenancewindow-applytimeof): {{String}}
   [DaysOfTheWeek](#cfn-workspacesthinclient-environment-maintenancewindow-daysoftheweek): {{
     - String}}

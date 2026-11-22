@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-evaluationform-evaluationformscorethreshold-syntax.json"></a>
 
-```
+```json
 {
   "[MaxScorePercentage](#cfn-connect-evaluationform-evaluationformscorethreshold-maxscorepercentage)" : {{Number}},
   "[MinScorePercentage](#cfn-connect-evaluationform-evaluationformscorethreshold-minscorepercentage)" : {{Number}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-evaluationform-evaluationformscorethreshold-syntax.yaml"></a>
 
-```
+```yaml
   [MaxScorePercentage](#cfn-connect-evaluationform-evaluationformscorethreshold-maxscorepercentage): {{Number}}
   [MinScorePercentage](#cfn-connect-evaluationform-evaluationformscorethreshold-minscorepercentage): {{Number}}
   [PerformanceCategory](#cfn-connect-evaluationform-evaluationformscorethreshold-performancecategory): {{String}}

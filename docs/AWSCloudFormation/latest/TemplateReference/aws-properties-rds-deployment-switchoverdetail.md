@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rds-deployment-switchoverdetail-syntax.json"></a>
 
-```
+```json
 {
   "[SourceMember](#cfn-rds-deployment-switchoverdetail-sourcemember)" : {{String}},
   "[SwitchoverDetailStatus](#cfn-rds-deployment-switchoverdetail-switchoverdetailstatus)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rds-deployment-switchoverdetail-syntax.yaml"></a>
 
-```
+```yaml
   [SourceMember](#cfn-rds-deployment-switchoverdetail-sourcemember): {{String}}
   [SwitchoverDetailStatus](#cfn-rds-deployment-switchoverdetail-switchoverdetailstatus): {{String}}
   [TargetMember](#cfn-rds-deployment-switchoverdetail-targetmember): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-extension-extensionnodesummary-syntax.json"></a>
 
-```
+```json
 {
   "[ActiveCount](#cfn-sagemaker-extension-extensionnodesummary-activecount)" : {{Integer}},
   "[TotalCount](#cfn-sagemaker-extension-extensionnodesummary-totalcount)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-extension-extensionnodesummary-syntax.yaml"></a>
 
-```
+```yaml
   [ActiveCount](#cfn-sagemaker-extension-extensionnodesummary-activecount): {{Integer}}
   [TotalCount](#cfn-sagemaker-extension-extensionnodesummary-totalcount): {{Integer}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-consumableresourceproperties-syntax.json"></a>
 
-```
+```json
 {
   "[ConsumableResourceList](#cfn-batch-jobdefinition-consumableresourceproperties-consumableresourcelist)" : {{[ ConsumableResourceRequirement, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-consumableresourceproperties-syntax.yaml"></a>
 
-```
+```yaml
   [ConsumableResourceList](#cfn-batch-jobdefinition-consumableresourceproperties-consumableresourcelist): {{
     - ConsumableResourceRequirement}}
 ```

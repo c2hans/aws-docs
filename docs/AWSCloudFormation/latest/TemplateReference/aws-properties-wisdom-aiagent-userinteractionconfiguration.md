@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-aiagent-userinteractionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[IsUserConfirmationRequired](#cfn-wisdom-aiagent-userinteractionconfiguration-isuserconfirmationrequired)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-aiagent-userinteractionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [IsUserConfirmationRequired](#cfn-wisdom-aiagent-userinteractionconfiguration-isuserconfirmationrequired): {{Boolean}}
 ```
 

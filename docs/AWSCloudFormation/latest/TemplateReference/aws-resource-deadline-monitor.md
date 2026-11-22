@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-deadline-monitor-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Deadline::Monitor",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-deadline-monitor-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Deadline::Monitor
 Properties:
   [DisplayName](#cfn-deadline-monitor-displayname): {{String}}

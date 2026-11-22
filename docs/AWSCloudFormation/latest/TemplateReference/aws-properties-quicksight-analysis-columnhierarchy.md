@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-columnhierarchy-syntax.json"></a>
 
-```
+```json
 {
   "[DateTimeHierarchy](#cfn-quicksight-analysis-columnhierarchy-datetimehierarchy)" : {{DateTimeHierarchy}},
   "[ExplicitHierarchy](#cfn-quicksight-analysis-columnhierarchy-explicithierarchy)" : {{ExplicitHierarchy}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-columnhierarchy-syntax.yaml"></a>
 
-```
+```yaml
   [DateTimeHierarchy](#cfn-quicksight-analysis-columnhierarchy-datetimehierarchy): {{
     DateTimeHierarchy}}
   [ExplicitHierarchy](#cfn-quicksight-analysis-columnhierarchy-explicithierarchy): {{

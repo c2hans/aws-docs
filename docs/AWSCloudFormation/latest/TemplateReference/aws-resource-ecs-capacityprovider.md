@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ecs-capacityprovider-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ECS::CapacityProvider",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ecs-capacityprovider-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ECS::CapacityProvider
 Properties:
   [AutoScalingGroupProvider](#cfn-ecs-capacityprovider-autoscalinggroupprovider): {{
@@ -114,7 +114,7 @@ The following example creates a capacity provider that uses the Auto Scaling gro
 #### JSON
 <a name="aws-resource-ecs-capacityprovider--examples--Creating_an_Amazon_ECS_capacity_provider--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -146,7 +146,7 @@ The following example creates a capacity provider that uses the Auto Scaling gro
 #### YAML
 <a name="aws-resource-ecs-capacityprovider--examples--Creating_an_Amazon_ECS_capacity_provider--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
  MyCapacityProvider:

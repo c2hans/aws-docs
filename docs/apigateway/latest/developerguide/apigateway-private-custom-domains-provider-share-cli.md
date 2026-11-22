@@ -120,7 +120,7 @@ The following example policy is for the `managementPolicy` for the Amazon API Ga
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -148,7 +148,7 @@ The following example policy is the policy for the `policy` for the `execute-api
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3tables-table-storageclassconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[StorageClass](#cfn-s3tables-table-storageclassconfiguration-storageclass)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3tables-table-storageclassconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [StorageClass](#cfn-s3tables-table-storageclassconfiguration-storageclass): {{String}}
 ```
 

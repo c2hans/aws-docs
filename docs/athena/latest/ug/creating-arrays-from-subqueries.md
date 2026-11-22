@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/creating-arrays-from-su
 
 Create an array from a collection of rows.
 
-```
+```sql
 WITH
 dataset AS (
   SELECT ARRAY[1,2,3,4,5] AS items
@@ -28,7 +28,7 @@ This query returns:
 
 To create an array of unique values from a set of rows, use the `distinct` keyword.
 
-```
+```sql
 WITH
 dataset AS (
   SELECT ARRAY [1,2,2,3,3,4,5] AS items

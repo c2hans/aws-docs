@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-flow-veevasourceproperties-syntax.json"></a>
 
-```
+```json
 {
   "[DocumentType](#cfn-appflow-flow-veevasourceproperties-documenttype)" : {{String}},
   "[IncludeAllVersions](#cfn-appflow-flow-veevasourceproperties-includeallversions)" : {{Boolean}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-flow-veevasourceproperties-syntax.yaml"></a>
 
-```
+```yaml
   [DocumentType](#cfn-appflow-flow-veevasourceproperties-documenttype): {{String}}
   [IncludeAllVersions](#cfn-appflow-flow-veevasourceproperties-includeallversions): {{Boolean}}
   [IncludeRenditions](#cfn-appflow-flow-veevasourceproperties-includerenditions): {{Boolean}}

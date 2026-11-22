@@ -10,7 +10,7 @@ The following are examples of Amazon Q Business chat message and feedback logs i
 
 **Chat message**
 
-```
+```json
 {
     "application_id": "{{<ApplicationId>}}",
     "event_timestamp": "{{2024-09-05T19:43:58Z}}",
@@ -29,7 +29,7 @@ The following are examples of Amazon Q Business chat message and feedback logs i
 
 **Amazon Q Business generated chat message (hallucination detected)**
 
-```
+```json
 {
     "hallucinated_message": "{{string}}",
     "application_id": "{{<ApplicationId>}}",
@@ -49,7 +49,7 @@ The following are examples of Amazon Q Business chat message and feedback logs i
 
 **Amazon Q Business generated chat message (no hallucination detected)**
 
-```
+```json
 {
     "hallucinated_message": "NO HALLUCINATION DETECTED",
     "application_id": "{{<ApplicationId>}}",
@@ -75,7 +75,7 @@ For system generated messages that have hallucination, you'll see one of the fol
 
 **Feedback**
 
-```
+```json
 {
     "application_id": "{{<ApplicationId>}}",
     "event_timestamp": "{{2024-09-05T13:13:27Z}}",

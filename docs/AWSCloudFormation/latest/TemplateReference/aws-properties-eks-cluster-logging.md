@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-cluster-logging-syntax.json"></a>
 
-```
+```json
 {
   "[ClusterLogging](#cfn-eks-cluster-logging-clusterlogging)" : {{ClusterLogging}}
 }
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-cluster-logging-syntax.yaml"></a>
 
-```
+```yaml
   [ClusterLogging](#cfn-eks-cluster-logging-clusterlogging): {{
     ClusterLogging}}
 ```

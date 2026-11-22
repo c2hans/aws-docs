@@ -88,7 +88,7 @@ https://autoscaling.amazonaws.com/?Action=DescribeAutoScalingInstances
 #### Sample Response
 <a name="API_DescribeAutoScalingInstances_Example_1_Response"></a>
 
-```
+```xml
 <DescribeAutoScalingInstancesResponse xmlns="https://autoscaling.amazonaws.com/doc/2011-01-01/">
   <DescribeAutoScalingInstancesResult>
     <AutoScalingInstances>

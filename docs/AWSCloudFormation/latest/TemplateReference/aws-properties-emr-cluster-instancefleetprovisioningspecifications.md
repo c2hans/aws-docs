@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emr-cluster-instancefleetprovisioningspecifications-syntax.json"></a>
 
-```
+```json
 {
   "[OnDemandSpecification](#cfn-emr-cluster-instancefleetprovisioningspecifications-ondemandspecification)" : {{OnDemandProvisioningSpecification}},
   "[SpotSpecification](#cfn-emr-cluster-instancefleetprovisioningspecifications-spotspecification)" : {{SpotProvisioningSpecification}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emr-cluster-instancefleetprovisioningspecifications-syntax.yaml"></a>
 
-```
+```yaml
   [OnDemandSpecification](#cfn-emr-cluster-instancefleetprovisioningspecifications-ondemandspecification): {{
     OnDemandProvisioningSpecification}}
   [SpotSpecification](#cfn-emr-cluster-instancefleetprovisioningspecifications-spotspecification): {{

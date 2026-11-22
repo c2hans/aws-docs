@@ -8,7 +8,7 @@ The Connect Customer SDK provides an `AIAgentsClient` which serves as an interfa
 
 The `AIAgentsClient` constructor requires a `ConnectClientConfig` argument, which is defined as:
 
-```
+```typescript
 export type ConnectClientConfig =
     | AmazonConnectProvider
     | { context: ModuleContext; provider?: AmazonConnectProvider }
@@ -17,7 +17,7 @@ export type ConnectClientConfig =
 
 Pass the `provider` that `AmazonConnectApp.init` returns to the constructor. You must provide this argument.
 
-```
+```typescript
 import { AIAgentsClient } from "@amazon-connect/ai-agents";
 
 const aiAgentsClient = new AIAgentsClient(provider);

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-hlsmediastoresettings-syntax.json"></a>
 
-```
+```json
 {
   "[ConnectionRetryInterval](#cfn-medialive-channel-hlsmediastoresettings-connectionretryinterval)" : {{Integer}},
   "[FilecacheDuration](#cfn-medialive-channel-hlsmediastoresettings-filecacheduration)" : {{Integer}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-hlsmediastoresettings-syntax.yaml"></a>
 
-```
+```yaml
   [ConnectionRetryInterval](#cfn-medialive-channel-hlsmediastoresettings-connectionretryinterval): {{Integer}}
   [FilecacheDuration](#cfn-medialive-channel-hlsmediastoresettings-filecacheduration): {{Integer}}
   [MediaStoreStorageClass](#cfn-medialive-channel-hlsmediastoresettings-mediastorestorageclass): {{String}}

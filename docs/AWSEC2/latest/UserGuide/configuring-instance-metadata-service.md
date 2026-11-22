@@ -48,13 +48,13 @@ You can run two separate commands, or combine them.
 
 First, generate a token using the following command.
 
-```
+```bash
 [ec2-user ~]$ TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"`
 ```
 
 Then, use the token to generate top-level metadata items using the following command.
 
-```
+```bash
 [ec2-user ~]$ curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/
 ```
 
@@ -65,31 +65,31 @@ You can store the token and combine the commands. The following example combines
 **Note**
 If there is an error in creating the token, instead of a valid token, an error message is stored in the variable, and the command will not work.
 
-```
+```bash
 [ec2-user ~]$ TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` \
 	&& curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/
 ```
 
 After you've created a token, you can reuse it until it expires. In the following example command, which gets the ID of the AMI used to launch the instance, the token that is stored in `$TOKEN` in the previous example is reused.
 
-```
+```bash
 [ec2-user ~]$ curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/ami-id
 ```
 
 ### Windows example
 <a name="how-imdsv2-works-example-windows"></a>
 
-```
+```PowerShell
 PS C:\> [string]$token = Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token-ttl-seconds" = "21600"} -Method PUT -Uri http://169.254.169.254/latest/api/token
 ```
 
-```
+```PowerShell
 PS C:\> Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token" = $token} -Method GET -Uri http://169.254.169.254/latest/meta-data/
 ```
 
 After you've created a token, you can reuse it until it expires. In the following example command, which gets the ID of the AMI used to launch the instance, the token that is stored in `$token` in the previous example is reused.
 
-```
+```PowerShell
 PS C:\> Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token" = $token} `
 	-Method GET -uri http://169.254.169.254/latest/meta-data/ami-id
 ```
@@ -157,7 +157,7 @@ This example gets the available versions of the instance metadata. Each version 
 ------
 #### [ cURL ]
 
-```
+```bash
 [ec2-user ~]$ TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` \
 && curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/
 1.0
@@ -183,11 +183,11 @@ latest
 ------
 #### [ PowerShell ]
 
-```
+```PowerShell
 PS C:\> [string]$token = Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token-ttl-seconds" = "21600"} -Method PUT -Uri http://169.254.169.254/latest/api/token
 ```
 
-```
+```PowerShell
 PS C:\> Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token" = $token} -Method GET -Uri http://169.254.169.254/
 1.0
 2007-01-19
@@ -221,7 +221,7 @@ Note that tags are included in this output only if you've allowed access. For mo
 ------
 #### [ cURL ]
 
-```
+```bash
 [ec2-user ~]$ TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` \
 && curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/
 ami-id
@@ -254,11 +254,11 @@ tags/
 ------
 #### [ PowerShell ]
 
-```
+```PowerShell
 PS C:\> [string]$token = Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token-ttl-seconds" = "21600"} -Method PUT -Uri http://169.254.169.254/latest/api/token
 ```
 
-```
+```PowerShell
 PS C:\> Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token" = $token} -Method GET -Uri http://169.254.169.254/latest/meta-data/
 ami-id
 ami-launch-index
@@ -296,22 +296,22 @@ These examples get the values of some of the top-level metadata items that were 
 ------
 #### [ cURL ]
 
-```
+```bash
 [ec2-user ~]$ curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/ami-id
 ami-0abcdef1234567890
 ```
 
-```
+```bash
 [ec2-user ~]$ curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/reservation-id
 r-0efghijk987654321
 ```
 
-```
+```bash
 [ec2-user ~]$ curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/local-hostname
 ip-10-251-50-12.ec2.internal
 ```
 
-```
+```bash
 [ec2-user ~]$ curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/public-hostname
 ec2-203-0-113-25.compute-1.amazonaws.com
 ```
@@ -319,22 +319,22 @@ ec2-203-0-113-25.compute-1.amazonaws.com
 ------
 #### [ PowerShell ]
 
-```
+```PowerShell
 PS C:\> Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token" = $token} -Method GET -Uri http://169.254.169.254/latest/meta-data/ami-id
 ami-0abcdef1234567890
 ```
 
-```
+```PowerShell
 PS C:\> Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token" = $token} -Method GET -Uri http://169.254.169.254/latest/meta-data/reservation-id
 r-0efghijk987654321
 ```
 
-```
+```PowerShell
 PS C:\> Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token" = $token} -Method GET -Uri http://169.254.169.254/latest/meta-data/local-hostname
 ip-10-251-50-12.ec2.internal
 ```
 
-```
+```PowerShell
 PS C:\> Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token" = $token} -Method GET -Uri http://169.254.169.254/latest/meta-data/public-hostname
 ec2-203-0-113-25.compute-1.amazonaws.com
 ```
@@ -349,7 +349,7 @@ This example gets the list of available public keys.
 ------
 #### [ cURL ]
 
-```
+```bash
 [ec2-user ~]$ TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` \
 && curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/public-keys/
 0=my-public-key
@@ -358,11 +358,11 @@ This example gets the list of available public keys.
 ------
 #### [ PowerShell ]
 
-```
+```PowerShell
 PS C:\> [string]$token = Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token-ttl-seconds" = "21600"} -Method PUT -Uri http://169.254.169.254/latest/api/token
 ```
 
-```
+```PowerShell
 PS C:\> Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token" = $token} -Method GET -Uri http://169.254.169.254/latest/meta-data/public-keys/
 0=my-public-key
 ```
@@ -377,7 +377,7 @@ This example shows the formats in which public key 0 is available.
 ------
 #### [ cURL ]
 
-```
+```bash
 [ec2-user ~]$ TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` \
 && curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/public-keys/0/
 openssh-key
@@ -386,11 +386,11 @@ openssh-key
 ------
 #### [ PowerShell ]
 
-```
+```PowerShell
 PS C:\> [string]$token = Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token-ttl-seconds" = "21600"} -Method PUT -Uri http://169.254.169.254/latest/api/token
 ```
 
-```
+```PowerShell
 PS C:\> Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token" = $token} -Method GET -Uri http://169.254.169.254/latest/meta-data/public-keys/0/openssh-key
 openssh-key
 ```
@@ -405,7 +405,7 @@ This example gets public key 0 (in the OpenSSH key format).
 ------
 #### [ cURL ]
 
-```
+```bash
 [ec2-user ~]$ TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` \
 && curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/public-keys/0/openssh-key
 ssh-rsa MIICiTCCAfICCQD6m7oRw0uXOjANBgkqhkiG9w0BAQUFADCBiDELMAkGA1UEBhMC
@@ -427,11 +427,11 @@ NYiytVbZPQUQ5Yaxu2jXnimvw3rrszlaEXAMPLE my-public-key
 ------
 #### [ PowerShell ]
 
-```
+```PowerShell
 PS C:\> [string]$token = Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token-ttl-seconds" = "21600"} -Method PUT -Uri http://169.254.169.254/latest/api/token
 ```
 
-```
+```PowerShell
 PS C:\> Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token" = $token} -Method GET -Uri http://169.254.169.254/latest/meta-data/public-keys/0/openssh-key
 ssh-rsa MIICiTCCAfICCQD6m7oRw0uXOjANBgkqhkiG9w0BAQUFADCBiDELMAkGA1UEBhMC
 VVMxCzAJBgNVBAgTAldBMRAwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6
@@ -459,7 +459,7 @@ This example gets the subnet ID for an instance.
 ------
 #### [ cURL ]
 
-```
+```bash
 [ec2-user ~]$ TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` \
 && curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/network/interfaces/macs/02:29:96:8f:6a:2d/subnet-id
 subnet-be9b61d7
@@ -468,11 +468,11 @@ subnet-be9b61d7
 ------
 #### [ PowerShell ]
 
-```
+```PowerShell
 PS C:\> [string]$token = Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token-ttl-seconds" = "21600"} -Method PUT -Uri http://169.254.169.254/latest/api/token
 ```
 
-```
+```PowerShell
 PS C:\> Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token" = $token} -Method GET -Uri http://169.254.169.254/latest/meta-data/network/interfaces/macs/02:29:96:8f:6a:2d/subnet-id
 subnet-be9b61d7
 ```
@@ -509,7 +509,7 @@ This example gets the available versions of the instance metadata. Each version 
 ------
 #### [ cURL ]
 
-```
+```bash
 [ec2-user ~]$ curl http://169.254.169.254/
 1.0
 2007-01-19
@@ -534,7 +534,7 @@ latest
 ------
 #### [ PowerShell ]
 
-```
+```PowerShell
 PS C:\> Invoke-RestMethod -uri http://169.254.169.254/
 1.0
 2007-01-19
@@ -568,7 +568,7 @@ Note that tags are included in this output only if you've allowed access. For mo
 ------
 #### [ cURL ]
 
-```
+```bash
 [ec2-user ~]$ curl http://169.254.169.254/latest/meta-data/
 ami-id
 ami-launch-index
@@ -599,7 +599,7 @@ tags/
 ------
 #### [ PowerShell ]
 
-```
+```PowerShell
 PS C:\> Invoke-RestMethod -uri http://169.254.169.254/latest/meta-data/
 ami-id
 ami-launch-index
@@ -636,22 +636,22 @@ These examples get the values of some of the top-level metadata items that were 
 ------
 #### [ cURL ]
 
-```
+```bash
 [ec2-user ~]$ curl http://169.254.169.254/latest/meta-data/ami-id
 ami-0abcdef1234567890
 ```
 
-```
+```bash
 [ec2-user ~]$ curl http://169.254.169.254/latest/meta-data/reservation-id
 r-0efghijk987654321
 ```
 
-```
+```bash
 [ec2-user ~]$ curl http://169.254.169.254/latest/meta-data/local-hostname
 ip-10-251-50-12.ec2.internal
 ```
 
-```
+```bash
 [ec2-user ~]$ curl http://169.254.169.254/latest/meta-data/public-hostname
 ec2-203-0-113-25.compute-1.amazonaws.com
 ```
@@ -659,22 +659,22 @@ ec2-203-0-113-25.compute-1.amazonaws.com
 ------
 #### [ PowerShell ]
 
-```
+```PowerShell
 PS C:\> Invoke-RestMethod -uri http://169.254.169.254/latest/meta-data/ami-id
 ami-0abcdef1234567890
 ```
 
-```
+```PowerShell
 PS C:\> Invoke-RestMethod -uri http://169.254.169.254/latest/meta-data/reservation-id
 r-0efghijk987654321
 ```
 
-```
+```PowerShell
 PS C:\> Invoke-RestMethod -uri http://169.254.169.254/latest/meta-data/local-hostname
 ip-10-251-50-12.ec2.internal
 ```
 
-```
+```PowerShell
 PS C:\> Invoke-RestMethod -uri http://169.254.169.254/latest/meta-data/public-hostname
 ec2-203-0-113-25.compute-1.amazonaws.com
 ```
@@ -689,7 +689,7 @@ This example gets the list of available public keys.
 ------
 #### [ cURL ]
 
-```
+```bash
 [ec2-user ~]$ curl http://169.254.169.254/latest/meta-data/public-keys/
 0=my-public-key
 ```
@@ -697,7 +697,7 @@ This example gets the list of available public keys.
 ------
 #### [ PowerShell ]
 
-```
+```PowerShell
 PS C:\> Invoke-RestMethod -uri http://169.254.169.254/latest/meta-data/public-keys/ 0=my-public-key
 ```
 
@@ -711,7 +711,7 @@ This example shows the formats in which public key 0 is available.
 ------
 #### [ cURL ]
 
-```
+```bash
 [ec2-user ~]$ curl http://169.254.169.254/latest/meta-data/public-keys/0/
 openssh-key
 ```
@@ -719,7 +719,7 @@ openssh-key
 ------
 #### [ PowerShell ]
 
-```
+```PowerShell
 PS C:\> Invoke-RestMethod -uri http://169.254.169.254/latest/meta-data/public-keys/0/openssh-key
 openssh-key
 ```
@@ -734,7 +734,7 @@ This example gets public key 0 (in the OpenSSH key format).
 ------
 #### [ cURL ]
 
-```
+```bash
 [ec2-user ~]$ curl http://169.254.169.254/latest/meta-data/public-keys/0/openssh-key
 ssh-rsa MIICiTCCAfICCQD6m7oRw0uXOjANBgkqhkiG9w0BAQUFADCBiDELMAkGA1UEBhMC
 VVMxCzAJBgNVBAgTAldBMRAwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6
@@ -755,7 +755,7 @@ NYiytVbZPQUQ5Yaxu2jXnimvw3rrszlaEXAMPLE my-public-key
 ------
 #### [ PowerShell ]
 
-```
+```PowerShell
 PS C:\> Invoke-RestMethod -uri http://169.254.169.254/latest/meta-data/public-keys/0/openssh-key
 ssh-rsa MIICiTCCAfICCQD6m7oRw0uXOjANBgkqhkiG9w0BAQUFADCBiDELMAkGA1UEBhMC
 VVMxCzAJBgNVBAgTAldBMRAwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6
@@ -783,7 +783,7 @@ This example gets the subnet ID for an instance.
 ------
 #### [ cURL ]
 
-```
+```bash
 [ec2-user ~]$ curl http://169.254.169.254/latest/meta-data/network/interfaces/macs/02:29:96:8f:6a:2d/subnet-id
 subnet-be9b61d7
 ```
@@ -791,7 +791,7 @@ subnet-be9b61d7
 ------
 #### [ PowerShell ]
 
-```
+```PowerShell
 PS C:\> Invoke-RestMethod -uri http://169.254.169.254/latest/meta-data/network/interfaces/macs/02:29:96:8f:6a:2d/subnet-id
 subnet-be9b61d7
 ```

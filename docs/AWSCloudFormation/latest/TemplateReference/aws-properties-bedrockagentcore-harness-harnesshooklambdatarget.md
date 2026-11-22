@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-harness-harnesshooklambdatarget-syntax.json"></a>
 
-```
+```json
 {
   "[Arn](#cfn-bedrockagentcore-harness-harnesshooklambdatarget-arn)" : {{String}},
   "[FailureMode](#cfn-bedrockagentcore-harness-harnesshooklambdatarget-failuremode)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-harness-harnesshooklambdatarget-syntax.yaml"></a>
 
-```
+```yaml
   [Arn](#cfn-bedrockagentcore-harness-harnesshooklambdatarget-arn): {{String}}
   [FailureMode](#cfn-bedrockagentcore-harness-harnesshooklambdatarget-failuremode): {{String}}
   [TimeoutSeconds](#cfn-bedrockagentcore-harness-harnesshooklambdatarget-timeoutseconds): {{Integer}}

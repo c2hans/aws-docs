@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-ipamscope-ipamscopeexternalauthorityconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ExternalResourceIdentifier](#cfn-ec2-ipamscope-ipamscopeexternalauthorityconfiguration-externalresourceidentifier)" : {{String}},
   "[IpamScopeExternalAuthorityType](#cfn-ec2-ipamscope-ipamscopeexternalauthorityconfiguration-ipamscopeexternalauthoritytype)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-ipamscope-ipamscopeexternalauthorityconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ExternalResourceIdentifier](#cfn-ec2-ipamscope-ipamscopeexternalauthorityconfiguration-externalresourceidentifier): {{String}}
   [IpamScopeExternalAuthorityType](#cfn-ec2-ipamscope-ipamscopeexternalauthorityconfiguration-ipamscopeexternalauthoritytype): {{String}}
 ```

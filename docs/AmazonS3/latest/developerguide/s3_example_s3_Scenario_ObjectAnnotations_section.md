@@ -20,7 +20,7 @@ The following code example shows how to:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/scenarios/object_annotations#code-examples).
 Run an interactive scenario at a command prompt.
 
-```
+```python
 import logging
 import random
 import string
@@ -306,7 +306,7 @@ if __name__ == "__main__":
 ```
 Create a class that wraps Amazon S3 Object Annotations operations.
 
-```
+```python
 class S3AnnotationsWrapper:
     """Encapsulates Amazon S3 Object Annotations operations."""
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-channel-recordconverter-syntax.json"></a>
 
-```
+```json
 {
   "[ValueConverter](#cfn-msk-channel-recordconverter-valueconverter)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-channel-recordconverter-syntax.yaml"></a>
 
-```
+```yaml
   [ValueConverter](#cfn-msk-channel-recordconverter-valueconverter): {{String}}
 ```
 

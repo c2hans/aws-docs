@@ -61,7 +61,7 @@ The following section outlines the steps to set up your WebSocket stream.
 
 ****
 
-   ```
+   ```json
    {
    "Version":"2012-10-17",
        "Statement": [
@@ -99,7 +99,7 @@ The maximum value for `X-Amz-Expires` is 300 seconds (5 minutes).
 
    1. Create a canonical request. A canonical request is a string that includes information from your request in a standardized format. This ensures that when AWS receives the request, it can calculate the same signature you created for your URL. For more information, see [Create a Canonical Request for Signature Version 4](https://docs.aws.amazon.com/general/latest/gr/sigv4-create-canonical-request.html).
 
-      ```
+      ```http
       # HTTP verb
       method = "GET"
       # Service name
@@ -248,7 +248,7 @@ The maximum value for `X-Amz-Expires` is 300 seconds (5 minutes).
 
    The following is the response from Amazon Q Business. Line breaks have been added for readability.
 
-   ```
+   ```http
    HTTP/1.1 101 WebSocket Protocol Handshake
    Connection: upgrade
    Upgrade: websocket

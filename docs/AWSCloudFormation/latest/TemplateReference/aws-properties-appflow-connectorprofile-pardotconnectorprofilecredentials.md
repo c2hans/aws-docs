@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-connectorprofile-pardotconnectorprofilecredentials-syntax.json"></a>
 
-```
+```json
 {
   "[AccessToken](#cfn-appflow-connectorprofile-pardotconnectorprofilecredentials-accesstoken)" : {{String}},
   "[ClientCredentialsArn](#cfn-appflow-connectorprofile-pardotconnectorprofilecredentials-clientcredentialsarn)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-connectorprofile-pardotconnectorprofilecredentials-syntax.yaml"></a>
 
-```
+```yaml
   [AccessToken](#cfn-appflow-connectorprofile-pardotconnectorprofilecredentials-accesstoken): {{String}}
   [ClientCredentialsArn](#cfn-appflow-connectorprofile-pardotconnectorprofilecredentials-clientcredentialsarn): {{String}}
   [ConnectorOAuthRequest](#cfn-appflow-connectorprofile-pardotconnectorprofilecredentials-connectoroauthrequest): {{

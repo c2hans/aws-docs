@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/start-query-execution.h
 
 The `StartQueryExample` shows how to submit a query to Athena, wait until the results become available, and then process the results.
 
-```
+```java
 package aws.example.athena;
 
 import software.amazon.awssdk.regions.Region;

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-maximumlabeltype-syntax.json"></a>
 
-```
+```json
 {
   "[Visibility](#cfn-quicksight-template-maximumlabeltype-visibility)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-maximumlabeltype-syntax.yaml"></a>
 
-```
+```yaml
   [Visibility](#cfn-quicksight-template-maximumlabeltype-visibility): {{String}}
 ```
 

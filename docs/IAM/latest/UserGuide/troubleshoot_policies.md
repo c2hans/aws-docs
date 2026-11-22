@@ -228,7 +228,7 @@ The policy below defines all `ec2:Describe*` actions and defines a specific reso
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -254,7 +254,7 @@ To fix this policy, you must use `*` in the `Resource` element.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -277,7 +277,7 @@ The policy below defines an Amazon S3 bucket resource but does not include an S3
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -306,7 +306,7 @@ To fix this policy to provide S3 bucket permissions, you must define S3 actions 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -342,7 +342,7 @@ The policy below defines two Amazon S3 actions for all S3 resources, if the S3 p
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -381,7 +381,7 @@ To fix this policy to use S3 object version tagging, you must define an S3 actio
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -419,7 +419,7 @@ To fix this policy, create two statements. The first statement includes the acti
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -504,7 +504,7 @@ An IAM policy must consist of only one JSON object. You denote an object by plac
 
 ****
 
-```
+```json
 {{{}}
       "Version":"2012-10-17",
       "Statement":
@@ -532,7 +532,7 @@ You can, however, meet the intention of the previous example with the use of cor
 
 ****
 
-```
+```json
 {
       "Version":"2012-10-17",
       "Statement": [
@@ -564,7 +564,7 @@ This error might at first appear to be a variation on the previous section. Howe
 
 ****
 
-```
+```json
 {
       "Version":"2012-10-17",
       "{{Statement}}": {
@@ -589,7 +589,7 @@ A value object can be an array of multiple value objects. To solve this problem,
 
 ****
 
-```
+```json
 {
       "Version":"2012-10-17",
       "Statement": [
@@ -621,7 +621,7 @@ On the value side of the `Statement` name/value pair, the object must consist of
 
 ****
 
-```
+```json
 {
       "Version":"2012-10-17",
       "Statement": {
@@ -649,7 +649,7 @@ The policy engine does not allow you to save any policy with syntax errors. Corr
 
 ****
 
-```
+```json
 {
       "Version":"2012-10-17",
       "Statement": {
@@ -669,7 +669,7 @@ However, if the duplicate element is `Action` or `Resource`, then the resolution
 
 ****
 
-```
+```json
 {
       "Version":"2012-10-17",
       "Statement": {
@@ -690,7 +690,7 @@ Each of the required elements in a `Statement` element's value object can be pre
 
 ****
 
-```
+```json
 {
       "Version":"2012-10-17",
       "Statement": {
@@ -717,7 +717,7 @@ The default policy version is "2008-10-17." If you want to use any policy featur
 
 For example, the following policy is incorrect because it uses a policy variable `${...}` in the ARN for a resource. But it fails to specify a policy syntax version that supports policy variables (called out in {{red}}):
 
-```
+```json
 {{{}}
   "Statement":
   {
@@ -735,7 +735,7 @@ Adding a `Version` element at the top of the policy with the value `2012-10-17`,
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement":

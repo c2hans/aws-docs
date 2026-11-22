@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-dimensionfield-syntax.json"></a>
 
-```
+```json
 {
   "[CategoricalDimensionField](#cfn-quicksight-dashboard-dimensionfield-categoricaldimensionfield)" : {{CategoricalDimensionField}},
   "[DateDimensionField](#cfn-quicksight-dashboard-dimensionfield-datedimensionfield)" : {{DateDimensionField}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-dimensionfield-syntax.yaml"></a>
 
-```
+```yaml
   [CategoricalDimensionField](#cfn-quicksight-dashboard-dimensionfield-categoricaldimensionfield): {{
     CategoricalDimensionField}}
   [DateDimensionField](#cfn-quicksight-dashboard-dimensionfield-datedimensionfield): {{

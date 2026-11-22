@@ -7,9 +7,9 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 Creates a single DNS Firewall rule in the specified rule group. The rule can use any one of the following match sources, and the chosen source must be supplied through the matching request field — they are mutually exclusive:
 +  `FirewallDomainListId` — match a customer-managed or AWS-managed domain list.
 +  `DnsThreatProtection` — match a built-in DNS Firewall Advanced threat detector (`DGA`, `DNS_TUNNELING`, or `DICTIONARY_DGA`).
-+  `FirewallRuleType` — match one of the rule-type variants: `FirewallAdvancedContentCategory`, `FirewallAdvancedThreatCategory`, `DnsThreatProtection`, `PartnerThreatProtection`, or `AutoAllowlist`. [ListFirewallRuleTypes](API_route53resolver_ListFirewallRuleTypes.md) returns the first four. The `PartnerThreatProtection` variant requires an active AWS Marketplace subscription to the named partner product.
++  `FirewallRuleType` — match one of the rule-type variants: `FirewallAdvancedContentCategory`, `FirewallAdvancedThreatCategory`, `DnsThreatProtection`, `PartnerThreatProtection`, or `AutoAllowlist`. The `PartnerThreatProtection` variant requires an active AWS Marketplace subscription to the named partner product.
 
-For rules that require asynchronous provisioning (the `PartnerThreatProtection` and `AutoAllowlist` rule types), the rule's `Status` begins at `CREATING` and transitions to `COMPLETE` once the rule is provisioned: for `PartnerThreatProtection`, when the marketplace entitlement is verified, and for `AutoAllowlist`, when DNS Firewall has read the look-back window of every VPC that uses the rule group, which can take hours for a rule group that many VPCs use. If provisioning fails, `Status` becomes `CREATION_FAILED` and `StatusMessage` contains a human-readable reason; the rule is then immutable and must be removed with [DeleteFirewallRule](API_route53resolver_DeleteFirewallRule.md).
+For rules that require asynchronous provisioning (the `PartnerThreatProtection` and `AutoAllowlist` rule types), the rule's `Status` begins at `CREATING` and transitions to `COMPLETE` once the rule is provisioned: for `PartnerThreatProtection`, when the marketplace entitlement is verified, and for `AutoAllowlist`, when DNS Firewall has read the look-back window of every VPC that uses the rule group, which can take days for a rule group that thousands of VPCs use. If provisioning of a `PartnerThreatProtection` rule fails, `Status` becomes `CREATION_FAILED` and `StatusMessage` contains a human-readable reason; the rule is then immutable and must be removed with [DeleteFirewallRule](API_route53resolver_DeleteFirewallRule.md).
 
 ## Request Syntax
 <a name="API_route53resolver_CreateFirewallRule_RequestSyntax"></a>
@@ -151,8 +151,8 @@ The rule type configuration for the firewall rule. This is a tagged union — se
 +  `FirewallAdvancedThreatCategory` — match an AWS-managed advanced threat category (for example, `PHISHING`).
 +  `DnsThreatProtection` — match a built-in DNS Firewall Advanced threat detector (`DGA`, `DNS_TUNNELING`, or `DICTIONARY_DGA`).
 +  `PartnerThreatProtection` — match a third-party threat feed delivered through AWS Marketplace. The selected partner must be an active subscription on the calling account.
-+  `AutoAllowlist` — automatically observe the domains that the VPCs associated with the rule group resolve, and allow the ones that you approve. See [AutoAllowlistConfig](API_route53resolver_AutoAllowlistConfig.md).
-To enumerate the values supported in your account, call [ListFirewallRuleTypes](API_route53resolver_ListFirewallRuleTypes.md). It doesn't return `AutoAllowlist`.
++  `AutoAllowlist` — observe the DNS traffic of the VPCs that use the rule group, through a rule group association or a Route 53 Profile, and allow the domains that you approve. See [AutoAllowlistConfig](API_route53resolver_AutoAllowlistConfig.md).
+To enumerate the values supported in your account, call [ListFirewallRuleTypes](API_route53resolver_ListFirewallRuleTypes.md).
 Type: [FirewallRuleType](API_route53resolver_FirewallRuleType.md) object
 Required: No
 

@@ -24,7 +24,7 @@ Before you begin, make sure that your environment meets the following requiremen
 
    Alternatively, open PowerShell as Administrator and run:
 
-   ```
+   ```powershell
    $langList = Get-WinUserLanguageList
    $langList.Add("zh-Hant-TW")
    Set-WinUserLanguageList $langList -Force
@@ -32,7 +32,7 @@ Before you begin, make sure that your environment meets the following requiremen
 
 1. Verify that the Basic Typing language component is installed:
 
-   ```
+   ```powershell
    Get-WindowsCapability -Online | Where-Object { $_.Name -like "*zh-TW*" -and $_.State -eq "Installed" }
    ```
 
@@ -40,7 +40,7 @@ Before you begin, make sure that your environment meets the following requiremen
 
 1. (Optional) Verify the language is registered with the correct IME:
 
-   ```
+   ```powershell
    Get-WinUserLanguageList
    ```
 
@@ -59,7 +59,7 @@ After this configuration, end users can select **Chinese (Taiwan)** from **Prefe
 
 1. Open PowerShell as Administrator and run:
 
-   ```
+   ```powershell
    $langList = Get-WinUserLanguageList
    $langList.Add("zh-Hans-CN")
    Set-WinUserLanguageList $langList -Force
@@ -67,7 +67,7 @@ After this configuration, end users can select **Chinese (Taiwan)** from **Prefe
 
 1. Verify installation:
 
-   ```
+   ```powershell
    Get-WindowsCapability -Online | Where-Object { $_.Name -like "*zh-CN*" -and $_.State -eq "Installed" }
    ```
 
@@ -82,7 +82,7 @@ After this configuration, end users can select **Chinese (Taiwan)** from **Prefe
 
 1. Open PowerShell as Administrator and run:
 
-   ```
+   ```powershell
    $langList = Get-WinUserLanguageList
    $langList.Add("ko-KR")
    Set-WinUserLanguageList $langList -Force
@@ -90,7 +90,7 @@ After this configuration, end users can select **Chinese (Taiwan)** from **Prefe
 
 1. Verify installation:
 
-   ```
+   ```powershell
    Get-WindowsCapability -Online | Where-Object { $_.Name -like "*ko-KR*" -and $_.State -eq "Installed" }
    ```
 

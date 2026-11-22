@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-arczonalshift-zonalautoshiftconfiguration-practicerunconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BlockedDates](#cfn-arczonalshift-zonalautoshiftconfiguration-practicerunconfiguration-blockeddates)" : {{[ String, ... ]}},
   "[BlockedWindows](#cfn-arczonalshift-zonalautoshiftconfiguration-practicerunconfiguration-blockedwindows)" : {{[ String, ... ]}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-arczonalshift-zonalautoshiftconfiguration-practicerunconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BlockedDates](#cfn-arczonalshift-zonalautoshiftconfiguration-practicerunconfiguration-blockeddates): {{
     - String}}
   [BlockedWindows](#cfn-arczonalshift-zonalautoshiftconfiguration-practicerunconfiguration-blockedwindows): {{

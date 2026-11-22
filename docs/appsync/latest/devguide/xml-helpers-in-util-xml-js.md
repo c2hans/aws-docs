@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/xml-helpers-in-u
 Converts a XML string to a dictionary.
 **Example 1:**
 
-```
+```TypeScript
 Input:
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -37,7 +37,7 @@ Output (object):
 ```
 **Example 2:**
 
-```
+```TypeScript
 Input:
 
 <?xml version="1.0" encoding="UTF-8"?>

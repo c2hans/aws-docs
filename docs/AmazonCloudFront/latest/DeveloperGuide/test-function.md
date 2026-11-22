@@ -100,7 +100,7 @@ You can test a function by using the **aws cloudfront test-function** command.
 
    This example uses the `fileb://` notation to pass in the event object file. It also includes line breaks to make the command more readable.
 
-   ```
+   ```bash
    aws cloudfront test-function \
        --name MaxAge \
        --if-match ETVABCEXAMPLE \
@@ -113,7 +113,7 @@ The stage can be `DEVELOPMENT` or `LIVE`.
 
    When the command is successful, you see output like the following.
 
-   ```
+   ```bash
    TestResult:
      ComputeUtilization: '21'
      FunctionErrorMessage: ''

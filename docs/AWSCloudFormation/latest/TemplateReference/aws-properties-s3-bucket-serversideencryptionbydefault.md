@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-serversideencryptionbydefault-syntax.json"></a>
 
-```
+```json
 {
   "[KMSMasterKeyID](#cfn-s3-bucket-serversideencryptionbydefault-kmsmasterkeyid)" : {{String}},
   "[SSEAlgorithm](#cfn-s3-bucket-serversideencryptionbydefault-ssealgorithm)" : {{String}}
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-serversideencryptionbydefault-syntax.yaml"></a>
 
-```
+```yaml
   [KMSMasterKeyID](#cfn-s3-bucket-serversideencryptionbydefault-kmsmasterkeyid): {{String}}
   [SSEAlgorithm](#cfn-s3-bucket-serversideencryptionbydefault-ssealgorithm): {{String}}
 ```
@@ -74,7 +74,7 @@ The following example creates a bucket with server-side bucket encryption config
 #### JSON
 <a name="aws-properties-s3-bucket-serversideencryptionbydefault--examples--Create_a_bucket_with_default_encryption--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "S3 bucket with default encryption",
@@ -105,7 +105,7 @@ The following example creates a bucket with server-side bucket encryption config
 #### YAML
 <a name="aws-properties-s3-bucket-serversideencryptionbydefault--examples--Create_a_bucket_with_default_encryption--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: S3 bucket with default encryption
 Resources:

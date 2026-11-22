@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-replicator-kafkaclusterclientauthentication-syntax.json"></a>
 
-```
+```json
 {
   "[MTLS](#cfn-msk-replicator-kafkaclusterclientauthentication-mtls)" : {{KafkaClusterMtlsAuthentication}},
   "[SaslOAuthBearer](#cfn-msk-replicator-kafkaclusterclientauthentication-sasloauthbearer)" : {{KafkaClusterSaslOAuthBearerAuthentication}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-replicator-kafkaclusterclientauthentication-syntax.yaml"></a>
 
-```
+```yaml
   [MTLS](#cfn-msk-replicator-kafkaclusterclientauthentication-mtls): {{
     KafkaClusterMtlsAuthentication}}
   [SaslOAuthBearer](#cfn-msk-replicator-kafkaclusterclientauthentication-sasloauthbearer): {{

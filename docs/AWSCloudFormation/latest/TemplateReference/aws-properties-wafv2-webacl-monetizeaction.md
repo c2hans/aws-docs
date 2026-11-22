@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-monetizeaction-syntax.json"></a>
 
-```
+```json
 {
   "[PriceMultiplier](#cfn-wafv2-webacl-monetizeaction-pricemultiplier)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-monetizeaction-syntax.yaml"></a>
 
-```
+```yaml
   [PriceMultiplier](#cfn-wafv2-webacl-monetizeaction-pricemultiplier): {{String}}
 ```
 

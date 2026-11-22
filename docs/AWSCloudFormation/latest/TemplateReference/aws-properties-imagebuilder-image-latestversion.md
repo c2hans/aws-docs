@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-image-latestversion-syntax.json"></a>
 
-```
+```json
 {
   "[Arn](#cfn-imagebuilder-image-latestversion-arn)" : {{String}},
   "[Major](#cfn-imagebuilder-image-latestversion-major)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-image-latestversion-syntax.yaml"></a>
 
-```
+```yaml
   [Arn](#cfn-imagebuilder-image-latestversion-arn): {{String}}
   [Major](#cfn-imagebuilder-image-latestversion-major): {{String}}
   [Minor](#cfn-imagebuilder-image-latestversion-minor): {{String}}

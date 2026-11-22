@@ -63,7 +63,7 @@ The following provides information about important configuration properties requ
 
 The following is the GitHub (Cloud) JSON schema:
 
-```
+```json
 {
   "type": "object",
   "properties": {
@@ -604,7 +604,7 @@ The following is the GitHub (Cloud) JSON schema:
 
 The following is the GitHub (Cloud) JSON schema example:
 
-```
+```json
 {
   "type": "GITHUB",
   "syncMode": "FULL_CRAWL",

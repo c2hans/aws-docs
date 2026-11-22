@@ -15,7 +15,7 @@ After you apply the Bucket owner enforced setting for Object Ownership, ACLs are
 
 The following example `put-object` AWS CLI command includes the `public-read` canned ACL.
 
-```
+```bash
 aws s3api put-object --bucket {{amzn-s3-demo-bucket}} --key {{object-key-name}} --body {{doc-example-body}} --acl public-read
 ```
 
@@ -32,7 +32,7 @@ If you want to apply the Bucket owner enforced setting to disable ACLs, your buc
 For example, if an existing bucket ACL grants public read access, you cannot apply the Bucket owner enforced setting for Object Ownership until you migrate these ACL permissions to a bucket policy and reset your bucket ACL to the default private ACL. For more information, see [Prerequisites for disabling ACLs](object-ownership-migrating-acls-prerequisites.md).
 This example bucket ACL grants public read access:
 
-```
+```json
 {
     "Owner": {
         "ID": "{{852b113e7a2f25102679df27bb0ae12b3f85be6BucketOwnerCanonicalUserID}}"
@@ -57,7 +57,7 @@ This example bucket ACL grants public read access:
 ```
 The following example `put-bucket-ownership-controls` AWS CLI command applies the Bucket owner enforced setting for Object Ownership:
 
-```
+```bash
 aws s3api put-bucket-ownership-controls --bucket {{amzn-s3-demo-bucket}} --ownership-controls Rules=[{ObjectOwnership=BucketOwnerEnforced}]
 ```
 Because the bucket ACL grants public read access, the request fails and returns the following error code:

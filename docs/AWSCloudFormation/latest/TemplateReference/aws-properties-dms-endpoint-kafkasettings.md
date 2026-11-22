@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dms-endpoint-kafkasettings-syntax.json"></a>
 
-```
+```json
 {
   "[Broker](#cfn-dms-endpoint-kafkasettings-broker)" : {{String}},
   "[IncludeControlDetails](#cfn-dms-endpoint-kafkasettings-includecontroldetails)" : {{Boolean}},
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dms-endpoint-kafkasettings-syntax.yaml"></a>
 
-```
+```yaml
   [Broker](#cfn-dms-endpoint-kafkasettings-broker): {{String}}
   [IncludeControlDetails](#cfn-dms-endpoint-kafkasettings-includecontroldetails): {{Boolean}}
   [IncludeNullAndEmpty](#cfn-dms-endpoint-kafkasettings-includenullandempty): {{Boolean}}

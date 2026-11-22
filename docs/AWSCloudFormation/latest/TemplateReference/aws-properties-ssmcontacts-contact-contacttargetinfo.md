@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssmcontacts-contact-contacttargetinfo-syntax.json"></a>
 
-```
+```json
 {
   "[ContactId](#cfn-ssmcontacts-contact-contacttargetinfo-contactid)" : {{String}},
   "[IsEssential](#cfn-ssmcontacts-contact-contacttargetinfo-isessential)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssmcontacts-contact-contacttargetinfo-syntax.yaml"></a>
 
-```
+```yaml
   [ContactId](#cfn-ssmcontacts-contact-contacttargetinfo-contactid): {{String}}
   [IsEssential](#cfn-ssmcontacts-contact-contacttargetinfo-isessential): {{Boolean}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-agentregistry-registryrecord-a2aagentcarddescriptor-syntax.json"></a>
 
-```
+```json
 {
   "[Data](#cfn-agentregistry-registryrecord-a2aagentcarddescriptor-data)" : {{String}},
   "[DataSchemaVersion](#cfn-agentregistry-registryrecord-a2aagentcarddescriptor-dataschemaversion)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-agentregistry-registryrecord-a2aagentcarddescriptor-syntax.yaml"></a>
 
-```
+```yaml
   [Data](#cfn-agentregistry-registryrecord-a2aagentcarddescriptor-data): {{String}}
   [DataSchemaVersion](#cfn-agentregistry-registryrecord-a2aagentcarddescriptor-dataschemaversion): {{String}}
   [Source](#cfn-agentregistry-registryrecord-a2aagentcarddescriptor-source): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-imagebuilder-workflow-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ImageBuilder::Workflow",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-imagebuilder-workflow-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ImageBuilder::Workflow
 Properties:
   [ChangeDescription](#cfn-imagebuilder-workflow-changedescription): {{String}}
@@ -170,7 +170,7 @@ The following example creates a build workflow with inline YAML content. You can
 #### YAML
 <a name="aws-resource-imagebuilder-workflow--examples--Create_a_build_workflow_using_inline_Data--yaml"></a>
 
-```
+```yaml
 Resources:
   BuildWorkflow:
     Type: AWS::ImageBuilder::Workflow
@@ -212,7 +212,7 @@ Resources:
 #### JSON
 <a name="aws-resource-imagebuilder-workflow--examples--Create_a_build_workflow_using_inline_Data--json"></a>
 
-```
+```json
 {
     "Resources": {
         "BuildWorkflow": {

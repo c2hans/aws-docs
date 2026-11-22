@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-allowedinputtypes-syntax.json"></a>
 
-```
+```json
 {
   "[AllowAudioInput](#cfn-lex-bot-allowedinputtypes-allowaudioinput)" : {{Boolean}},
   "[AllowDTMFInput](#cfn-lex-bot-allowedinputtypes-allowdtmfinput)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-allowedinputtypes-syntax.yaml"></a>
 
-```
+```yaml
   [AllowAudioInput](#cfn-lex-bot-allowedinputtypes-allowaudioinput): {{Boolean}}
   [AllowDTMFInput](#cfn-lex-bot-allowedinputtypes-allowdtmfinput): {{Boolean}}
 ```

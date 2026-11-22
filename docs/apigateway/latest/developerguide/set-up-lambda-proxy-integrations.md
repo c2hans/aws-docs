@@ -63,7 +63,7 @@ curl 'https://a1b2c3.execute-api.us-east-1.amazonaws.com/my/path?parameter1=valu
 
 The output looks like the following:
 
-```
+```json
 {
   "resource": "/my/path",
   "path": "/my/path",

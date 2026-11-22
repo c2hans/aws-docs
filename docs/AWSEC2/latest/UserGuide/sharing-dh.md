@@ -43,7 +43,7 @@ See [Create a resource share](https://docs.aws.amazon.com/ram/latest/userguide/w
 **To share a Dedicated Host that you own**
 Use the [create-resource-share](https://docs.aws.amazon.com/cli/latest/reference/ram/create-resource-share.html) command.
 
-```
+```bash
 aws ram create-resource-share \
     --name {{my-resource-share}} \
     --resource-arns arn:aws:ec2:{{us-east-2}}:{{123456789012}}:dedicated-host/{{h-07879acf49EXAMPLE}}
@@ -55,7 +55,7 @@ aws ram create-resource-share \
 **To share a Dedicated Host that you own**
 Use the [New-RAMResourceShare](https://docs.aws.amazon.com/powershell/latest/reference/items/New-RAMResourceShare.html) cmdlet.
 
-```
+```powershell
 New-RAMResourceShare `
     -Name {{my-resource-share}} `
     -ResourceArn arn:aws:ec2:{{us-east-2}}:{{123456789012}}:dedicated-host/{{h-07879acf49EXAMPLE}}

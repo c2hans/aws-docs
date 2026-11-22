@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-speechmodelconfig-syntax.json"></a>
 
-```
+```json
 {
   "[DeepgramConfig](#cfn-lex-bot-speechmodelconfig-deepgramconfig)" : {{DeepgramSpeechModelConfig}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-speechmodelconfig-syntax.yaml"></a>
 
-```
+```yaml
   [DeepgramConfig](#cfn-lex-bot-speechmodelconfig-deepgramconfig): {{
     DeepgramSpeechModelConfig}}
 ```

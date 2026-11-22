@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-snowflakeroleconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-kinesisfirehose-deliverystream-snowflakeroleconfiguration-enabled)" : {{Boolean}},
   "[SnowflakeRole](#cfn-kinesisfirehose-deliverystream-snowflakeroleconfiguration-snowflakerole)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-snowflakeroleconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-kinesisfirehose-deliverystream-snowflakeroleconfiguration-enabled): {{Boolean}}
   [SnowflakeRole](#cfn-kinesisfirehose-deliverystream-snowflakeroleconfiguration-snowflakerole): {{String}}
 ```

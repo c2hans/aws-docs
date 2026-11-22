@@ -38,7 +38,7 @@ In this walkthrough, we assume you're using the following example template, call
 **Note**
 This template is meant as an example only. To use it for your own testing purposes, replace the sample resources with resources from your account.
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Import test",
@@ -146,7 +146,7 @@ The import operation fails if you modify existing parameters that initiate a cre
 
 1. Compose a list of actual resources to import and their unique identifiers in the following JSON string format.
 
-   ```
+   ```text
    [{"ResourceType":"AWS::DynamoDB::Table","LogicalResourceId":"GamesTable","ResourceIdentifier":{"TableName":"Games"}}]
    ```
 
@@ -154,7 +154,7 @@ The import operation fails if you modify existing parameters that initiate a cre
 
    For example, to import `GamesTable` , you might create a {{ResourcesToImport.txt}} file that contains the following configuration.
 
-   ```
+   ```json
    [
      {
          "ResourceType":"AWS::DynamoDB::Table",
@@ -208,7 +208,7 @@ The import operation fails if you modify existing parameters that initiate a cre
 
       If successful, this command returns the following sample output.
 
-      ```
+      ```json
       { "Stack-Drift-Detection-Id" : "624af370-311a-11e8-b6b7-500cexample" }
       ```
 

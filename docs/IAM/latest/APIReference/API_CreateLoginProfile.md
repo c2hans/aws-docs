@@ -15,6 +15,13 @@ For more information about managing passwords, see [Managing passwords](https://
 
  For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
+ ** MaxSigninSessionDuration **
+The maximum duration (in seconds) of an AWS Sign-In session for this IAM user. This setting can have a value from 1 hour (3600 seconds) to 90 days (7776000 seconds), inclusive. If you do not specify a value, the setting remains unset and the existing sign-in session behavior applies.
+This setting is not supported for the root user.
+Type: Integer
+Valid Range: Minimum value of 3600. Maximum value of 7776000.
+Required: No
+
  ** Password **
 The new password for the user.
 This parameter must be omitted when you make the request with an [AssumeRoot](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoot.html) session. It is required in all other cases.

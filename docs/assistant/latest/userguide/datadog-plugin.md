@@ -59,7 +59,7 @@ When you configure the plugin in the AWS Management Console, you have the option
 
 If your secret is encrypted with an AWS managed KMS key, the following IAM service role is required:
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -78,7 +78,7 @@ If your secret is encrypted with an AWS managed KMS key, the following IAM servi
 
 If your secret is encrypted with a customer managed AWS KMS key, the following IAM service role is required:
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -110,7 +110,7 @@ To allow the AWS assistant to assume the service role, the service role needs th
 **Note**
 The `codewhisperer` prefix is a legacy name from a service that merged with Amazon Q Developer. For more information, see [Amazon Q Developer rename - Summary of changes](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/service-rename.html) in the *Amazon Q Developer User Guide*.
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

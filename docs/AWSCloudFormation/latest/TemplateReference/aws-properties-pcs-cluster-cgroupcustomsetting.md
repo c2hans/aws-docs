@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcs-cluster-cgroupcustomsetting-syntax.json"></a>
 
-```
+```json
 {
   "[ParameterName](#cfn-pcs-cluster-cgroupcustomsetting-parametername)" : {{String}},
   "[ParameterValue](#cfn-pcs-cluster-cgroupcustomsetting-parametervalue)" : {{String}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcs-cluster-cgroupcustomsetting-syntax.yaml"></a>
 
-```
+```yaml
   [ParameterName](#cfn-pcs-cluster-cgroupcustomsetting-parametername): {{String}}
   [ParameterValue](#cfn-pcs-cluster-cgroupcustomsetting-parametervalue): {{String}}
 ```

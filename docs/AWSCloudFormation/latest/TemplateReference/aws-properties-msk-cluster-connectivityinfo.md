@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-cluster-connectivityinfo-syntax.json"></a>
 
-```
+```json
 {
   "[NetworkType](#cfn-msk-cluster-connectivityinfo-networktype)" : {{String}},
   "[PublicAccess](#cfn-msk-cluster-connectivityinfo-publicaccess)" : {{PublicAccess}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-cluster-connectivityinfo-syntax.yaml"></a>
 
-```
+```yaml
   [NetworkType](#cfn-msk-cluster-connectivityinfo-networktype): {{String}}
   [PublicAccess](#cfn-msk-cluster-connectivityinfo-publicaccess): {{
     PublicAccess}}

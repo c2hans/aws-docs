@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-knowledgebase-resourcepermission-syntax.json"></a>
 
-```
+```json
 {
   "[Actions](#cfn-quicksight-knowledgebase-resourcepermission-actions)" : {{[ String, ... ]}},
   "[Principal](#cfn-quicksight-knowledgebase-resourcepermission-principal)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-knowledgebase-resourcepermission-syntax.yaml"></a>
 
-```
+```yaml
   [Actions](#cfn-quicksight-knowledgebase-resourcepermission-actions): {{
     - String}}
   [Principal](#cfn-quicksight-knowledgebase-resourcepermission-principal): {{String}}

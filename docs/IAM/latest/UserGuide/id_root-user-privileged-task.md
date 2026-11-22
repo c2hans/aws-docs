@@ -73,7 +73,7 @@ The global endpoint is not supported for `sts:AssumeRoot`. You must send this re
 
     In the following example, the delegated administrator assumes root to delete the root user credentials for the member account ID {{111122223333}}.
 
-   ```
+   ```bash
    aws sts assume-root \
      --target-principal {{111122223333}} \
      --task-policy-arn arn={{arn:aws:iam::aws:policy/root-task/IAMDeleteRootUserCredentials}} \
@@ -127,7 +127,7 @@ The global endpoint is not supported for AssumeRoot. You must send this request 
 
    In the following example, the delegated administrator assumes root to read, edit and delete a misconfigured resource-based policy for an Amazon S3 bucket for the member account ID {{111122223333}}.
 
-   ```
+   ```yaml
    https://sts.us-east-2.amazonaws.com/
      ?Version=2011-06-15
      &Action=AssumeRoot

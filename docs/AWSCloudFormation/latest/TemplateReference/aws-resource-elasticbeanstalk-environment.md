@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-elasticbeanstalk-environment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ElasticBeanstalk::Environment",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-elasticbeanstalk-environment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ElasticBeanstalk::Environment
 Properties:
   [ApplicationName](#cfn-elasticbeanstalk-environment-applicationname): {{String}}
@@ -197,7 +197,7 @@ Example instance IP address:
 #### JSON
 <a name="aws-resource-elasticbeanstalk-environment--examples--Simple_Environment--json"></a>
 
-```
+```json
 {
    "Type" : "AWS::ElasticBeanstalk::Environment",
    "Properties" : {
@@ -213,7 +213,7 @@ Example instance IP address:
 #### YAML
 <a name="aws-resource-elasticbeanstalk-environment--examples--Simple_Environment--yaml"></a>
 
-```
+```yaml
 Type: AWS::ElasticBeanstalk::Environment
 Properties:
   ApplicationName:
@@ -230,7 +230,7 @@ Properties:
 #### JSON
 <a name="aws-resource-elasticbeanstalk-environment--examples--Environment_with_Embedded_Option_Settings--json"></a>
 
-```
+```json
 {
    "Type" : "AWS::ElasticBeanstalk::Environment",
    "Properties" : {
@@ -251,7 +251,7 @@ Properties:
 #### YAML
 <a name="aws-resource-elasticbeanstalk-environment--examples--Environment_with_Embedded_Option_Settings--yaml"></a>
 
-```
+```yaml
 Type: AWS::ElasticBeanstalk::Environment
 Properties:
   ApplicationName:
@@ -276,7 +276,7 @@ The following example contains parameters that enable specifying `PlatformArn` f
 #### JSON
 <a name="aws-resource-elasticbeanstalk-environment--examples--Custom_or_Supported_Platform--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "Elasticbeanstalk test template",
@@ -590,7 +590,7 @@ The following example contains parameters that enable specifying `PlatformArn` f
 #### YAML
 <a name="aws-resource-elasticbeanstalk-environment--examples--Custom_or_Supported_Platform--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Elasticbeanstalk test template
 Parameters:

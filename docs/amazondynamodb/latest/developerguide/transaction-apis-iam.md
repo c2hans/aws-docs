@@ -18,7 +18,7 @@ The following are examples of IAM policies that you can use to configure the Dyn
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -49,7 +49,7 @@ The following are examples of IAM policies that you can use to configure the Dyn
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -88,7 +88,7 @@ The following are examples of IAM policies that you can use to configure the Dyn
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -139,7 +139,7 @@ The following are examples of IAM policies that you can use to configure the Dyn
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

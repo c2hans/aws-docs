@@ -13,7 +13,7 @@ The log group and the destination must be in the same AWS Region.
 
 1. In the recipient account, create an AWS Identity and Access Management (IAM) role named `CWLtoLambdaRole` that CloudWatch Logs assumes to invoke the function. Use the following trust policy, which allows the CloudWatch Logs service principal to assume the role:
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [
@@ -29,7 +29,7 @@ The log group and the destination must be in the same AWS Region.
 
    Attach the following permissions policy to the role, which allows the role to invoke the function:
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [

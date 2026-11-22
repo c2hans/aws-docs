@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-repositorycredentials-syntax.json"></a>
 
-```
+```json
 {
   "[CredentialsParameter](#cfn-batch-jobdefinition-repositorycredentials-credentialsparameter)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-repositorycredentials-syntax.yaml"></a>
 
-```
+```yaml
   [CredentialsParameter](#cfn-batch-jobdefinition-repositorycredentials-credentialsparameter): {{String}}
 ```
 

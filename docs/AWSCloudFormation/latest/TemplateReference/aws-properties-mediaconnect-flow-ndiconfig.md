@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-flow-ndiconfig-syntax.json"></a>
 
-```
+```json
 {
   "[MachineName](#cfn-mediaconnect-flow-ndiconfig-machinename)" : {{String}},
   "[NdiDiscoveryServers](#cfn-mediaconnect-flow-ndiconfig-ndidiscoveryservers)" : {{[ NdiDiscoveryServerConfig, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-flow-ndiconfig-syntax.yaml"></a>
 
-```
+```yaml
   [MachineName](#cfn-mediaconnect-flow-ndiconfig-machinename): {{String}}
   [NdiDiscoveryServers](#cfn-mediaconnect-flow-ndiconfig-ndidiscoveryservers): {{
     - NdiDiscoveryServerConfig}}

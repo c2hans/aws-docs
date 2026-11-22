@@ -88,7 +88,7 @@ CloudFormation property-level change sets does not resolve cross-stack reference
 
    CloudFormation returns a list of change sets, similar to the following:
 
-   ```
+   ```json
    {
        "Summaries": [
            {
@@ -128,7 +128,7 @@ CloudFormation property-level change sets does not resolve cross-stack reference
 
    CloudFormation returns information about the specified change set.
 
-   ```
+   ```json
    {
        "StackId": "arn:aws:cloudformation:us-east-1:123456789012:stack/MyStack/1a2345b6-0000-00a0-a123-00abc0abc000",
        "Status": "CREATE_COMPLETE",
@@ -196,7 +196,7 @@ CloudFormation property-level change sets does not resolve cross-stack reference
 
   The following is example output.
 
-  ```
+  ```json
   "ChangeSetName": "ExampleChangeSet",
       "ChangeSetId": "arn:aws:cloudformation:us-east-1:803642222207:changeSet/ExampleChangeSet/9f7b541b-126b-44f7-998e-932174557841",
       "StackId": "arn:aws:cloudformation:us-east-1:803642222207:stack/ExampleStack/ab664180-f686-11ee-9e29-12cd92393671",

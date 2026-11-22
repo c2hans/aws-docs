@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-synthetics-canary-replica-syntax.json"></a>
 
-```
+```json
 {
   "[CanaryState](#cfn-synthetics-canary-replica-canarystate)" : {{String}},
   "[KmsKeyArn](#cfn-synthetics-canary-replica-kmskeyarn)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-synthetics-canary-replica-syntax.yaml"></a>
 
-```
+```yaml
   [CanaryState](#cfn-synthetics-canary-replica-canarystate): {{String}}
   [KmsKeyArn](#cfn-synthetics-canary-replica-kmskeyarn): {{String}}
   [LastModified](#cfn-synthetics-canary-replica-lastmodified): {{Number}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicrule-putassetpropertyvalueentry-syntax.json"></a>
 
-```
+```json
 {
   "[AssetId](#cfn-iot-topicrule-putassetpropertyvalueentry-assetid)" : {{String}},
   "[EntryId](#cfn-iot-topicrule-putassetpropertyvalueentry-entryid)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicrule-putassetpropertyvalueentry-syntax.yaml"></a>
 
-```
+```yaml
   [AssetId](#cfn-iot-topicrule-putassetpropertyvalueentry-assetid): {{String}}
   [EntryId](#cfn-iot-topicrule-putassetpropertyvalueentry-entryid): {{String}}
   [PropertyAlias](#cfn-iot-topicrule-putassetpropertyvalueentry-propertyalias): {{String}}

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-rule-syntax.json"></a>
 
-```
+```json
 {
   "[AbortIncompleteMultipartUpload](#cfn-s3-bucket-rule-abortincompletemultipartupload)" : {{AbortIncompleteMultipartUpload}},
   "[ExpirationDate](#cfn-s3-bucket-rule-expirationdate)" : {{String}},
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-rule-syntax.yaml"></a>
 
-```
+```yaml
   [AbortIncompleteMultipartUpload](#cfn-s3-bucket-rule-abortincompletemultipartupload): {{
     AbortIncompleteMultipartUpload}}
   [ExpirationDate](#cfn-s3-bucket-rule-expirationdate): {{String}}
@@ -186,7 +186,7 @@ The following example template shows an S3 bucket with a lifecycle configuration
 #### JSON
 <a name="aws-properties-s3-bucket-rule--examples--Manage_the_lifecycle_for_S3_objects--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -227,7 +227,7 @@ The following example template shows an S3 bucket with a lifecycle configuration
 #### YAML
 <a name="aws-properties-s3-bucket-rule--examples--Manage_the_lifecycle_for_S3_objects--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   S3Bucket:

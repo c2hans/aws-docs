@@ -22,7 +22,7 @@ The following examples demonstrate how to list all Amazon S3 Storage Lens groups
 
 The following AWS CLI example lists all of the Storage Lens groups for your account. To use this example command, replace the `{{user input placeholders}}` with your own information.
 
-```
+```bash
 aws s3control list-storage-lens-groups --account-id {{111122223333}} \
 --region {{us-east-1}}
 ```
@@ -32,7 +32,7 @@ aws s3control list-storage-lens-groups --account-id {{111122223333}} \
 
 The following AWS SDK for Java example lists the Storage Lens groups for account `{{111122223333}}`. To use this example, replace the `{{user input placeholders}}` with your own information.
 
-```
+```java
 package aws.example.s3control;
 
 import com.amazonaws.AmazonServiceException;

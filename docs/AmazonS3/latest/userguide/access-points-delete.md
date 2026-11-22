@@ -32,7 +32,7 @@ The following `delete-access-point` example command shows how you can use the AW
 
 The following command deletes the access point {{my-access-point}} for AWS account {{111122223333}}.
 
-```
+```bash
 aws s3control delete-access-point --name {{my-access-point}} --account-id {{111122223333}}
 ```
 

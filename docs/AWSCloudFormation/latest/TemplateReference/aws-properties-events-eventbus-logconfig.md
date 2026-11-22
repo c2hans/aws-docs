@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-events-eventbus-logconfig-syntax.json"></a>
 
-```
+```json
 {
   "[IncludeDetail](#cfn-events-eventbus-logconfig-includedetail)" : {{String}},
   "[Level](#cfn-events-eventbus-logconfig-level)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-events-eventbus-logconfig-syntax.yaml"></a>
 
-```
+```yaml
   [IncludeDetail](#cfn-events-eventbus-logconfig-includedetail): {{String}}
   [Level](#cfn-events-eventbus-logconfig-level): {{String}}
 ```

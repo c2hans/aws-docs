@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-kinesisfirehose-deliverystream-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::KinesisFirehose::DeliveryStream",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-kinesisfirehose-deliverystream-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::KinesisFirehose::DeliveryStream
 Properties:
   [AmazonOpenSearchServerlessDestinationConfiguration](#cfn-kinesisfirehose-deliverystream-amazonopensearchserverlessdestinationconfiguration): {{
@@ -257,7 +257,7 @@ The following example creates a Kinesis Data Firehose delivery stream that deliv
 #### JSON
 <a name="aws-resource-kinesisfirehose-deliverystream--examples--Create_a_Kinesis_Data_Firehose_Delivery_Stream--json"></a>
 
-```
+```json
 "ElasticSearchDeliveryStream": {
    "Type": "AWS::KinesisFirehose::DeliveryStream",
    "Properties": {
@@ -303,7 +303,7 @@ The following example creates a Kinesis Data Firehose delivery stream that deliv
 #### YAML
 <a name="aws-resource-kinesisfirehose-deliverystream--examples--Create_a_Kinesis_Data_Firehose_Delivery_Stream--yaml"></a>
 
-```
+```yaml
 ElasticSearchDeliveryStream:
    Type: AWS::KinesisFirehose::DeliveryStream
    Properties:
@@ -354,7 +354,7 @@ The following example shows record format conversion.
 #### YAML
 <a name="aws-resource-kinesisfirehose-deliverystream--examples--Convert_Record_Format--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Stack for Firehose DeliveryStream S3 Destination.
 Resources:
@@ -538,7 +538,7 @@ The following example uses the `ExtendedS3DestinationConfiguration` property to 
 #### JSON
 <a name="aws-resource-kinesisfirehose-deliverystream--examples--Specify_an_Amazon_S3_Destination_for_the_Delivery_Stream--json"></a>
 
-```
+```json
 {
   "Resources":{
     "Firehose":{
@@ -601,7 +601,7 @@ The following example uses the `ExtendedS3DestinationConfiguration` property to 
 #### YAML
 <a name="aws-resource-kinesisfirehose-deliverystream--examples--Specify_an_Amazon_S3_Destination_for_the_Delivery_Stream--yaml"></a>
 
-```
+```yaml
 ---
 Resources:
   Firehose:
@@ -647,7 +647,7 @@ The following example uses the `KinesisStreamSourceConfiguration` property to sp
 #### JSON
 <a name="aws-resource-kinesisfirehose-deliverystream--examples--Specify_a_Kinesis_Stream_as_the_Source_for_the_Delivery_Stream--json"></a>
 
-```
+```json
 {
     "Parameters": {
         "deliveryRoleArn": {
@@ -705,7 +705,7 @@ The following example uses the `KinesisStreamSourceConfiguration` property to sp
 #### YAML
 <a name="aws-resource-kinesisfirehose-deliverystream--examples--Specify_a_Kinesis_Stream_as_the_Source_for_the_Delivery_Stream--yaml"></a>
 
-```
+```yaml
 Parameters:
     deliveryRoleArn:
         Type: String

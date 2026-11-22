@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cognito-userpool-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Cognito::UserPool",
   "Properties" : {
@@ -63,7 +63,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cognito-userpool-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Cognito::UserPool
 Properties:
   [AccountRecoverySetting](#cfn-cognito-userpool-accountrecoverysetting): {{
@@ -149,7 +149,7 @@ The attributes that you want your user pool to automatically verify. For more in
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DcrConfiguration`  <a name="cfn-cognito-userpool-dcrconfiguration"></a>
-Property description not available.
+The dynamic client registration configuration for the user pool. With dynamic client registration, applications can register their own app clients at runtime through the registration endpoint of your user pool domain. To activate this setting, your user pool must be in the [ Essentials tier](https://docs.aws.amazon.com/cognito/latest/developerguide/feature-plans-features-essentials.html) or higher.
 *Required*: No
 *Type*: [DcrConfiguration](aws-properties-cognito-userpool-dcrconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -405,7 +405,7 @@ The following example creates a user pool with values for all possible parameter
 #### JSON
 <a name="aws-resource-cognito-userpool--examples--Creating_a_new_user_pool--json"></a>
 
-```
+```json
 {
     "UserPool": {
         "Properties": {
@@ -585,7 +585,7 @@ The following example creates a user pool with values for all possible parameter
 #### YAML
 <a name="aws-resource-cognito-userpool--examples--Creating_a_new_user_pool--yaml"></a>
 
-```
+```yaml
 ExampleUserPool:
     Type: AWS::Cognito::UserPool
     Properties:

@@ -78,7 +78,7 @@ The following example policy requires every object that is written to the bucket
 
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
 "Id": "PutObjPolicy",
@@ -109,7 +109,7 @@ The following example policy denies any objects from being written to the bucket
 
 ****
 
-```
+```json
 {
 "Version":"2012-10-17",
 "Id": "PutObjPolicy",
@@ -146,7 +146,7 @@ The `public-read` canned ACL allows anyone in the world to view the objects in y
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -188,7 +188,7 @@ The following example shows how to allow another AWS account to upload objects t
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -221,7 +221,7 @@ The following permissions policy limits a user to only reading objects that have
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -259,7 +259,7 @@ The policy ensures that every tag key specified in the request is an authorized 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
   "Statement": [
@@ -297,7 +297,7 @@ The following example policy grants a user permission to perform the `s3:PutObje
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
   "Statement": [
@@ -332,7 +332,7 @@ The following example policy grants a user permission to perform the `s3:PutObje
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -376,7 +376,7 @@ This example bucket policy grants `s3:PutObject` permissions to only the logging
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -430,7 +430,7 @@ This Allow statement with a condition does not deny access granted through other
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -457,7 +457,7 @@ This Allow statement with a condition does not deny access granted through other
 
 For stronger protection, use a Deny statement with the `aws:PrincipalOrgID` condition. A Deny statement overrides any Allow, regardless of how access is granted. The following example denies all S3 actions to any principal that is not in your organization. This approach provides defense-in-depth even if ACLs or other policies would have inadvertently granted access.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -497,7 +497,7 @@ In the following example, the bucket policy explicitly denies HTTP requests.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -553,7 +553,7 @@ The following example bucket policy grants `{{JohnDoe}}` full console access to 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -622,7 +622,7 @@ In the following example, the bucket policy grants Elastic Load Balancing (ELB) 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -650,7 +650,7 @@ If your AWS Region does not appear in the supported Elastic Load Balancing Regio
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -689,7 +689,7 @@ To use this example:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "PolicyForCloudFrontPrivateContent",
@@ -725,7 +725,7 @@ The following example bucket policy grants Amazon S3 permission to write objects
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -755,7 +755,7 @@ The following example bucket policy grants Amazon S3 permission to write objects
 
 When you're setting up an S3 Storage Lens organization-level metrics export, use the following modification to the previous bucket policy's `Resource` statement.
 
-```
+```json
 1. "Resource": "arn:aws:s3:::{{amzn-s3-demo-destination-bucket}}/{{destination-prefix}}/StorageLens/{{your-organization-id}}/*",
 ```
 
@@ -774,7 +774,7 @@ The following example bucket policy grants Amazon S3 permission to write objects
 
 ****
 
-```
+```json
 {
       "Version":"2012-10-17",
       "Statement": [
@@ -825,7 +825,7 @@ The following example policy grants a user (`{{Ana}}`) permission to create an i
 
 ****
 
-```
+```json
 {
 	"Id": "InventoryConfigPolicy",
 	"Version":"2012-10-17",
@@ -856,7 +856,7 @@ The following example policy grants a user (`{{Ana}}`) permission to create an i
 
 To restrict a user from configuring an S3 Inventory report that includes specific optional metadata fields, add an explicit `Deny` statement to the bucket policy for the source bucket. The following example bucket policy denies the user `{{Ana}}` from creating an inventory configuration in the source bucket `{{{{amzn-s3-demo-source-bucket}}}}` that includes the optional `ObjectAccessControlList` or `ObjectOwner` metadata fields. The user `{{Ana}}` can still create an inventory configuration with other optional metadata fields.
 
-```
+```json
  1. {
  2. 	"Id": "InventoryConfigSomeFields",
  3. 	"Version": "2012-10-17",
@@ -906,7 +906,7 @@ To learn more about the `ForAllValues` and `ForAnyValue` condition set operators
 
 For directory buckets, you use the `s3express:InventoryAccessibleOptionalFields` condition key in an IAM identity-based policy instead of a bucket policy. The following example IAM policy grants a user permission to create an inventory configuration for a directory bucket. The `ForAllValues:StringEquals` condition uses the `s3express:InventoryAccessibleOptionalFields` condition key to specify the allowed optional metadata fields.
 
-```
+```json
  1. {
  2. 	"Version": "2012-10-17",
  3. 	"Statement": [{
@@ -942,7 +942,7 @@ This example policy denies any Amazon S3 operation on the {{`/taxdocuments`}} fo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "123",
@@ -970,7 +970,7 @@ The following bucket policy is an extension of the preceding bucket policy. The 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "123",
@@ -1009,7 +1009,7 @@ For example, the following bucket policy, in addition to requiring MFA authentic
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "123",
@@ -1057,7 +1057,7 @@ In the following policy example, you explicitly deny `DELETE Object` permissions
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

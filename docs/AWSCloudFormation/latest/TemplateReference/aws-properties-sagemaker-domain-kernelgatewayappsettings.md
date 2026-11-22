@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-domain-kernelgatewayappsettings-syntax.json"></a>
 
-```
+```json
 {
   "[CustomImages](#cfn-sagemaker-domain-kernelgatewayappsettings-customimages)" : {{[ CustomImage, ... ]}},
   "[DefaultResourceSpec](#cfn-sagemaker-domain-kernelgatewayappsettings-defaultresourcespec)" : {{ResourceSpec}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-domain-kernelgatewayappsettings-syntax.yaml"></a>
 
-```
+```yaml
   [CustomImages](#cfn-sagemaker-domain-kernelgatewayappsettings-customimages): {{
     - CustomImage}}
   [DefaultResourceSpec](#cfn-sagemaker-domain-kernelgatewayappsettings-defaultresourcespec): {{

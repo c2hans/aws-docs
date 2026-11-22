@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-treemapsortconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[TreeMapGroupItemsLimitConfiguration](#cfn-quicksight-analysis-treemapsortconfiguration-treemapgroupitemslimitconfiguration)" : {{ItemsLimitConfiguration}},
   "[TreeMapSort](#cfn-quicksight-analysis-treemapsortconfiguration-treemapsort)" : {{[ FieldSortOptions, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-treemapsortconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [TreeMapGroupItemsLimitConfiguration](#cfn-quicksight-analysis-treemapsortconfiguration-treemapgroupitemslimitconfiguration): {{
     ItemsLimitConfiguration}}
   [TreeMapSort](#cfn-quicksight-analysis-treemapsortconfiguration-treemapsort): {{

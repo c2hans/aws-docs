@@ -190,7 +190,7 @@ We recommend that you use the `aws:sourceAccount` and `aws:sourceArn` conditions
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement":

@@ -57,7 +57,7 @@ You define your document metadata itself in a JSON file. The file must be a UTF-
 
 The content of the JSON file uses the following template:
 
-```
+```json
 {
     "DocumentId": "{{document ID}}",
     "Attributes": {

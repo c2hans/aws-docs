@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-qnakendraconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ExactResponse](#cfn-lex-bot-qnakendraconfiguration-exactresponse)" : {{Boolean}},
   "[KendraIndex](#cfn-lex-bot-qnakendraconfiguration-kendraindex)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-qnakendraconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ExactResponse](#cfn-lex-bot-qnakendraconfiguration-exactresponse): {{Boolean}}
   [KendraIndex](#cfn-lex-bot-qnakendraconfiguration-kendraindex): {{String}}
   [QueryFilterString](#cfn-lex-bot-qnakendraconfiguration-queryfilterstring): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-microvmimage-cpuconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Architecture](#cfn-lambda-microvmimage-cpuconfiguration-architecture)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-microvmimage-cpuconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Architecture](#cfn-lambda-microvmimage-cpuconfiguration-architecture): {{String}}
 ```
 

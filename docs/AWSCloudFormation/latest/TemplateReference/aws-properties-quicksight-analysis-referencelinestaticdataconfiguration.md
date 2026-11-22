@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-referencelinestaticdataconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Value](#cfn-quicksight-analysis-referencelinestaticdataconfiguration-value)" : {{Number}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-referencelinestaticdataconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Value](#cfn-quicksight-analysis-referencelinestaticdataconfiguration-value): {{Number}}
 ```
 

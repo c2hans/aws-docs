@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-timestream-influxdbbackup-clusterconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DedicatedCompactor](#cfn-timestream-influxdbbackup-clusterconfiguration-dedicatedcompactor)" : {{Boolean}},
   "[IngestQueryInstances](#cfn-timestream-influxdbbackup-clusterconfiguration-ingestqueryinstances)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-timestream-influxdbbackup-clusterconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DedicatedCompactor](#cfn-timestream-influxdbbackup-clusterconfiguration-dedicatedcompactor): {{Boolean}}
   [IngestQueryInstances](#cfn-timestream-influxdbbackup-clusterconfiguration-ingestqueryinstances): {{Integer}}
   [QueryOnlyInstances](#cfn-timestream-influxdbbackup-clusterconfiguration-queryonlyinstances): {{Integer}}

@@ -8,13 +8,13 @@ Retrieves the full content of a knowledge article, including a pre-signed URL fo
 
  **Signature**
 
-```
+```typescript
 getKnowledgeContent(params: GetContentParams): Promise<ContentResult>
 ```
 
  **Usage**
 
-```
+```typescript
 const content = await aiAgentsClient.getKnowledgeContent({
     knowledgeBaseId: "kb-12345",
     contentId: "content-67890"
@@ -42,6 +42,6 @@ console.log("URL:", content.url);
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

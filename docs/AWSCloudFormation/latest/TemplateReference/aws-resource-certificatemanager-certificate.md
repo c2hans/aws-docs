@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-certificatemanager-certificate-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CertificateManager::Certificate",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-certificatemanager-certificate-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CertificateManager::Certificate
 Properties:
   [CertificateAuthorityArn](#cfn-certificatemanager-certificate-certificateauthorityarn): {{String}}
@@ -179,7 +179,7 @@ The following example shows how to declare an `AWS::CertificateManager::Certific
 #### JSON
 <a name="aws-resource-certificatemanager-certificate--examples--Declaring_an_Amazon_Certificate_Manager_Certificate_Resource--json"></a>
 
-```
+```json
 {
    "Resources":{
       "MyCertificate":{
@@ -196,7 +196,7 @@ The following example shows how to declare an `AWS::CertificateManager::Certific
 #### YAML
 <a name="aws-resource-certificatemanager-certificate--examples--Declaring_an_Amazon_Certificate_Manager_Certificate_Resource--yaml"></a>
 
-```
+```yaml
 Resources:
   MyCertificate:
     Type: "AWS::CertificateManager::Certificate"

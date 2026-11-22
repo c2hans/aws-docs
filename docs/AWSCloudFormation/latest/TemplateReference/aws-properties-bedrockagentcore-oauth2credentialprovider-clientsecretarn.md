@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-oauth2credentialprovider-clientsecretarn-syntax.json"></a>
 
-```
+```json
 {
   "[SecretArn](#cfn-bedrockagentcore-oauth2credentialprovider-clientsecretarn-secretarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-oauth2credentialprovider-clientsecretarn-syntax.yaml"></a>
 
-```
+```yaml
   [SecretArn](#cfn-bedrockagentcore-oauth2credentialprovider-clientsecretarn-secretarn): {{String}}
 ```
 

@@ -168,7 +168,7 @@ The following AWS CLI command saves a CloudWatch Metrics Insights query that fin
 #### Sample Request
 <a name="API_PutMetricDataQueryDefinition_Example_1_Request"></a>
 
-```
+```bash
 PROMPT> aws cloudwatch put-metric-data-query-definition \
     --path "ec2/top-cpu-instances" \
     --type SQL \
@@ -178,7 +178,7 @@ PROMPT> aws cloudwatch put-metric-data-query-definition \
 #### Sample Response
 <a name="API_PutMetricDataQueryDefinition_Example_1_Response"></a>
 
-```
+```json
 {
     "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Arn": "arn:aws:cloudwatch:us-east-1:111122223333:metric-query-definition/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
@@ -198,7 +198,7 @@ The following AWS CLI command saves a metric math expression that finds the CPU 
 #### Sample Request
 <a name="API_PutMetricDataQueryDefinition_Example_2_Request"></a>
 
-```
+```bash
 PROMPT> aws cloudwatch put-metric-data-query-definition \
     --path "ec2/cpu-all-instances" \
     --type METRIC_MATH \
@@ -209,7 +209,7 @@ PROMPT> aws cloudwatch put-metric-data-query-definition \
 #### Sample Response
 <a name="API_PutMetricDataQueryDefinition_Example_2_Response"></a>
 
-```
+```json
 {
     "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "Arn": "arn:aws:cloudwatch:us-east-1:111122223333:metric-query-definition/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
@@ -229,7 +229,7 @@ The following AWS CLI command replaces the expression of an existing definition.
 #### Sample Request
 <a name="API_PutMetricDataQueryDefinition_Example_3_Request"></a>
 
-```
+```bash
 PROMPT> aws cloudwatch put-metric-data-query-definition \
     --id a1b2c3d4-5678-90ab-cdef-EXAMPLE11111 \
     --path "ec2/top-cpu-instances" \
@@ -240,7 +240,7 @@ PROMPT> aws cloudwatch put-metric-data-query-definition \
 #### Sample Response
 <a name="API_PutMetricDataQueryDefinition_Example_3_Response"></a>
 
-```
+```json
 {
     "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Arn": "arn:aws:cloudwatch:us-east-1:111122223333:metric-query-definition/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",

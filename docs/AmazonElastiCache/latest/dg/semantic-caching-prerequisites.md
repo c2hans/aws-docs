@@ -12,7 +12,7 @@ To implement semantic caching with ElastiCache for Valkey, you need:
 
 1. An Amazon Elastic Compute Cloud instance inside your Amazon VPC with the following packages installed:
 
-   ```
+   ```bash
    pip install numpy pandas valkey bedrock-agentcore \
                langchain-aws 'langgraph-checkpoint-aws[valkey]'
    ```

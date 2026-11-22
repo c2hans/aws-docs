@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pinpointemail-configurationseteventdestination-eventdestination-syntax.json"></a>
 
-```
+```json
 {
   "[CloudWatchDestination](#cfn-pinpointemail-configurationseteventdestination-eventdestination-cloudwatchdestination)" : {{CloudWatchDestination}},
   "[Enabled](#cfn-pinpointemail-configurationseteventdestination-eventdestination-enabled)" : {{Boolean}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pinpointemail-configurationseteventdestination-eventdestination-syntax.yaml"></a>
 
-```
+```yaml
   [CloudWatchDestination](#cfn-pinpointemail-configurationseteventdestination-eventdestination-cloudwatchdestination): {{
     CloudWatchDestination}}
   [Enabled](#cfn-pinpointemail-configurationseteventdestination-eventdestination-enabled): {{Boolean}}

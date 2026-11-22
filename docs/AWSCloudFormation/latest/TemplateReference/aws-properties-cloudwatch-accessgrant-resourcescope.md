@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-accessgrant-resourcescope-syntax.json"></a>
 
-```
+```json
 {
   "[ResourceArns](#cfn-cloudwatch-accessgrant-resourcescope-resourcearns)" : {{[ String, ... ]}},
   "[ResourceType](#cfn-cloudwatch-accessgrant-resourcescope-resourcetype)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-accessgrant-resourcescope-syntax.yaml"></a>
 
-```
+```yaml
   [ResourceArns](#cfn-cloudwatch-accessgrant-resourcescope-resourcearns): {{
     - String}}
   [ResourceType](#cfn-cloudwatch-accessgrant-resourcescope-resourcetype): {{String}}

@@ -30,7 +30,7 @@ When you query a partitioned table, Athena uses the predicates in the query to f
 
 Suppose you have a table partitioned by `sales_date` and `product_category` and want to know the total revenue over a week in a specific category. You include predicates on the `sales_date` and `product_category` columns to ensure that Athena scans only the minimum amount of data, as in the following example.
 
-```
+```sql
 SELECT SUM(amount) AS total_revenue
 FROM sales
 WHERE sales_date BETWEEN '2023-02-27' AND '2023-03-05'
@@ -43,7 +43,7 @@ With Iceberg tables, you can declare a partition key to have a relationship to a
 
 For example, suppose the `sales` table in the previous example also has a `sold_at` column of the `TIMESTAMP` data type. If you want the revenue only for a specific time range, you would write the query like this:
 
-```
+```sql
 SELECT SUM(amount) AS total_revenue
 FROM sales
 WHERE sales_date = '2023-02-28'

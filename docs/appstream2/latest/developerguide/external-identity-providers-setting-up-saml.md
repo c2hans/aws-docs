@@ -82,7 +82,7 @@ Even though the **https://signin.aws.amazon.com/saml** endpoint is highly availa
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -125,7 +125,7 @@ Next, embed an inline IAM policy for the role that you created. When you embed a
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

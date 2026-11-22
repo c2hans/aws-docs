@@ -52,7 +52,7 @@ The following is an example `package.json` file.
 ### package.json
 <a name="service-source-code-nodejs.config.package-json-example"></a>
 
-```
+```json
 {
   "name": "node-js-getting-started",
   "version": "0.3.0",
@@ -84,7 +84,7 @@ If your `package.json` file defines a **start** command, you can use it as a **r
 **Example**
 package.json
 
-  ```
+  ```json
   {
     "scripts": {
       "start": "node index.js"
@@ -93,7 +93,7 @@ package.json
   ```
 apprunner.yaml
 
-  ```
+  ```yaml
   run:
     command: npm start
   ```
@@ -123,7 +123,7 @@ This example shows a minimal configuration file that you can use with a Node.js 
 
 **Example apprunner.yaml**
 
-```
+```yaml
 version: 1.0
 runtime: nodejs22
 build:
@@ -144,7 +144,7 @@ The runtime version that's used in these examples is {{22.14.0}}. You can replac
 
 **Example apprunner.yaml**
 
-```
+```yaml
 version: 1.0
 runtime: nodejs22
 build:
@@ -182,7 +182,7 @@ The runtime version that's used in these examples is {{22.14.0}}. You can replac
 
 **Example apprunner.yaml**
 
-```
+```yaml
 version: 1.0
 runtime: nodejs22
 build:
@@ -217,7 +217,7 @@ This example shows how to configure a Node.js application that's developed with 
 
 **Example package.json**
 
-```
+```json
 {
   "scripts": {
     "build": "grunt uglify",
@@ -237,7 +237,7 @@ This example shows how to configure a Node.js application that's developed with 
 
 **Example Gruntfile.js**
 
-```
+```javascript
 module.exports = function(grunt) {
 
   // Project configuration.
@@ -266,7 +266,7 @@ module.exports = function(grunt) {
 **Example apprunner.yaml**
 The runtime version that's used in these examples is {{22.14.0}}. You can replace it with a version you want to use. For latest supported Node.js runtime version, see [Node.js runtime release information](service-source-code-nodejs-releases.md).
 
-```
+```yaml
 version: 1.0
 runtime: nodejs22
 build:

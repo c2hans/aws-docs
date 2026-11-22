@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lightsail-bucket-accessrules-syntax.json"></a>
 
-```
+```json
 {
   "[AllowPublicOverrides](#cfn-lightsail-bucket-accessrules-allowpublicoverrides)" : {{Boolean}},
   "[GetObject](#cfn-lightsail-bucket-accessrules-getobject)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lightsail-bucket-accessrules-syntax.yaml"></a>
 
-```
+```yaml
   [AllowPublicOverrides](#cfn-lightsail-bucket-accessrules-allowpublicoverrides): {{Boolean}}
   [GetObject](#cfn-lightsail-bucket-accessrules-getobject): {{String}}
 ```

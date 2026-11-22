@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-datasetparameter-syntax.json"></a>
 
-```
+```json
 {
   "[DateTimeDatasetParameter](#cfn-quicksight-dataset-datasetparameter-datetimedatasetparameter)" : {{DateTimeDatasetParameter}},
   "[DecimalDatasetParameter](#cfn-quicksight-dataset-datasetparameter-decimaldatasetparameter)" : {{DecimalDatasetParameter}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-datasetparameter-syntax.yaml"></a>
 
-```
+```yaml
   [DateTimeDatasetParameter](#cfn-quicksight-dataset-datasetparameter-datetimedatasetparameter): {{
     DateTimeDatasetParameter}}
   [DecimalDatasetParameter](#cfn-quicksight-dataset-datasetparameter-decimaldatasetparameter): {{

@@ -79,7 +79,7 @@ The requirements when using Amazon Data Firehose as the AppFabric for security o
 + You must select **Direct PUT** as the source.
 + Attach **AmazonKinesisFirehoseFullAccess** AWS managed policy to your user, or attach the following permissions to your user:
 
-  ```
+  ```json
   {
       "Sid": "TagFirehoseDeliveryStream",
       "Effect": "Allow",

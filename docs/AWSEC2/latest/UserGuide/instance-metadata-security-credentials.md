@@ -21,7 +21,7 @@ If your workload uses a role to assume itself, you must create a trust policy th
 **Linux**
 Run the following command from your Linux instance to retrieve the security credentials for an IAM role.
 
-```
+```bash
 TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` \
     && curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/iam/security-credentials/{{role-name}}
 ```
@@ -29,13 +29,13 @@ TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metad
 **Windows**
 Run the following cmdlet from your Windows instance to retrieve the security credentials for an IAM role.
 
-```
+```powershell
 [string]$token = Invoke-RestMethod `
     -Headers @{"X-aws-ec2-metadata-token-ttl-seconds" = "21600"} `
     -Method PUT -Uri http://169.254.169.254/latest/api/token
 ```
 
-```
+```powershell
 Invoke-RestMethod `
     -Headers @{"X-aws-ec2-metadata-token" = $token} `
     -Method GET -Uri http://169.254.169.254/latest/meta-data/iam/security-credentials/{{role-name}}
@@ -47,14 +47,14 @@ Invoke-RestMethod `
 **Linux**
 Run the following command from your Linux instance to retrieve the security credentials for an IAM role.
 
-```
+```bash
 curl http://169.254.169.254/latest/meta-data/iam/security-credentials/{{role-name}}
 ```
 
 **Windows**
 Run the following cmdlet from your Windows instance to retrieve the security credentials for an IAM role.
 
-```
+```powershell
 Invoke-RestMethod -uri http://169.254.169.254/latest/meta-data/iam/security-credentials/{{role-name}}
 ```
 
@@ -62,7 +62,7 @@ Invoke-RestMethod -uri http://169.254.169.254/latest/meta-data/iam/security-cred
 
 The following is example output. If you are not able to retrieve the security credentials, see [I can't access the temporary security credentials on my EC2 instance](https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_iam-ec2.html#troubleshoot_iam-ec2_no-keys) in the *IAM User Guide*.
 
-```
+```json
 {
   "Code" : "Success",
   "LastUpdated" : "2012-04-26T16:39:16Z",

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotwireless-wirelessdeviceimporttask-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-iotwireless-wirelessdeviceimporttask-tag-key)" : {{String}},
   "[Value](#cfn-iotwireless-wirelessdeviceimporttask-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotwireless-wirelessdeviceimporttask-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-iotwireless-wirelessdeviceimporttask-tag-key): {{String}}
   [Value](#cfn-iotwireless-wirelessdeviceimporttask-tag-value): {{String}}
 ```

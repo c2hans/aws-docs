@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mpa-approvalteam-approvalstrategy-syntax.json"></a>
 
-```
+```json
 {
   "[MofN](#cfn-mpa-approvalteam-approvalstrategy-mofn)" : {{MofNApprovalStrategy}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mpa-approvalteam-approvalstrategy-syntax.yaml"></a>
 
-```
+```yaml
   [MofN](#cfn-mpa-approvalteam-approvalstrategy-mofn): {{
     MofNApprovalStrategy}}
 ```

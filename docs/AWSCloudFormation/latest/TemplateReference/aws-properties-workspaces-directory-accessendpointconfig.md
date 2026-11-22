@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspaces-directory-accessendpointconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AccessEndpoints](#cfn-workspaces-directory-accessendpointconfig-accessendpoints)" : {{[ AccessEndpoint, ... ]}},
   "[InternetFallbackProtocols](#cfn-workspaces-directory-accessendpointconfig-internetfallbackprotocols)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspaces-directory-accessendpointconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AccessEndpoints](#cfn-workspaces-directory-accessendpointconfig-accessendpoints): {{
     - AccessEndpoint}}
   [InternetFallbackProtocols](#cfn-workspaces-directory-accessendpointconfig-internetfallbackprotocols): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apigateway-usageplan-throttlesettings-syntax.json"></a>
 
-```
+```json
 {
   "[BurstLimit](#cfn-apigateway-usageplan-throttlesettings-burstlimit)" : {{Integer}},
   "[RateLimit](#cfn-apigateway-usageplan-throttlesettings-ratelimit)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apigateway-usageplan-throttlesettings-syntax.yaml"></a>
 
-```
+```yaml
   [BurstLimit](#cfn-apigateway-usageplan-throttlesettings-burstlimit): {{Integer}}
   [RateLimit](#cfn-apigateway-usageplan-throttlesettings-ratelimit): {{Number}}
 ```

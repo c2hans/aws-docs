@@ -14,7 +14,7 @@ The `Scan` request mapping document lets you tell the AWS AppSync DynamoDB resol
 
 The `Scan` mapping document has the following structure:
 
-```
+```TypeScript
 {
     "version" : "2017-02-28",
     "operation" : "Scan",
@@ -88,7 +88,7 @@ For more information about response mapping templates, see [Resolver mapping tem
 
 The results have the following structure:
 
-```
+```TypeScript
 {
     items = [ ... ],
     nextToken = "a pagination token",
@@ -114,7 +114,7 @@ The following example is a mapping template for the GraphQL query: `allPosts`.
 
 In this example, all entries in the table are returned.
 
-```
+```TypeScript
 {
     "version" : "2017-02-28",
     "operation" : "Scan"
@@ -128,7 +128,7 @@ The following example is a mapping template for the GraphQL query: `postsMatchin
 
 In this example, all entries in the table are returned where the title starts with the `title` argument.
 
-```
+```TypeScript
 {
     "version" : "2017-02-28",
     "operation" : "Scan",

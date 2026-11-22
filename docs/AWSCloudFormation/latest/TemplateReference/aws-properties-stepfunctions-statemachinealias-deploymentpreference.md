@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-stepfunctions-statemachinealias-deploymentpreference-syntax.json"></a>
 
-```
+```json
 {
   "[Alarms](#cfn-stepfunctions-statemachinealias-deploymentpreference-alarms)" : {{[ String, ... ]}},
   "[Interval](#cfn-stepfunctions-statemachinealias-deploymentpreference-interval)" : {{Integer}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-stepfunctions-statemachinealias-deploymentpreference-syntax.yaml"></a>
 
-```
+```yaml
   [Alarms](#cfn-stepfunctions-statemachinealias-deploymentpreference-alarms): {{
     - String}}
   [Interval](#cfn-stepfunctions-statemachinealias-deploymentpreference-interval): {{Integer}}

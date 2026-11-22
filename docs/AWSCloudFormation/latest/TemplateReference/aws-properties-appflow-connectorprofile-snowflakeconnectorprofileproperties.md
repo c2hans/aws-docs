@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-connectorprofile-snowflakeconnectorprofileproperties-syntax.json"></a>
 
-```
+```json
 {
   "[AccountName](#cfn-appflow-connectorprofile-snowflakeconnectorprofileproperties-accountname)" : {{String}},
   "[BucketName](#cfn-appflow-connectorprofile-snowflakeconnectorprofileproperties-bucketname)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-connectorprofile-snowflakeconnectorprofileproperties-syntax.yaml"></a>
 
-```
+```yaml
   [AccountName](#cfn-appflow-connectorprofile-snowflakeconnectorprofileproperties-accountname): {{String}}
   [BucketName](#cfn-appflow-connectorprofile-snowflakeconnectorprofileproperties-bucketname): {{String}}
   [BucketPrefix](#cfn-appflow-connectorprofile-snowflakeconnectorprofileproperties-bucketprefix): {{String}}

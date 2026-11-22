@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-routeroutput-fabricconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[RecoveryLatencyMode](#cfn-mediaconnect-routeroutput-fabricconfiguration-recoverylatencymode)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-routeroutput-fabricconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [RecoveryLatencyMode](#cfn-mediaconnect-routeroutput-fabricconfiguration-recoverylatencymode): {{String}}
 ```
 

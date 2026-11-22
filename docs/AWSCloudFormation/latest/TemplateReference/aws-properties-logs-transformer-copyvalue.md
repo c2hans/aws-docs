@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-logs-transformer-copyvalue-syntax.json"></a>
 
-```
+```json
 {
   "[Entries](#cfn-logs-transformer-copyvalue-entries)" : {{[ CopyValueEntry, ... ]}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-logs-transformer-copyvalue-syntax.yaml"></a>
 
-```
+```yaml
   [Entries](#cfn-logs-transformer-copyvalue-entries): {{
     - CopyValueEntry}}
 ```

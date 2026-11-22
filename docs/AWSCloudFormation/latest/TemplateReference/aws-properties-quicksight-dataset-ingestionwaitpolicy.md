@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-ingestionwaitpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[IngestionWaitTimeInHours](#cfn-quicksight-dataset-ingestionwaitpolicy-ingestionwaittimeinhours)" : {{Number}},
   "[WaitForSpiceIngestion](#cfn-quicksight-dataset-ingestionwaitpolicy-waitforspiceingestion)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-ingestionwaitpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [IngestionWaitTimeInHours](#cfn-quicksight-dataset-ingestionwaitpolicy-ingestionwaittimeinhours): {{Number}}
   [WaitForSpiceIngestion](#cfn-quicksight-dataset-ingestionwaitpolicy-waitforspiceingestion): {{Boolean}}
 ```

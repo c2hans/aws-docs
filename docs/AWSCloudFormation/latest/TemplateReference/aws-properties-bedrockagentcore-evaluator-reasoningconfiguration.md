@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-evaluator-reasoningconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Effort](#cfn-bedrockagentcore-evaluator-reasoningconfiguration-effort)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-evaluator-reasoningconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Effort](#cfn-bedrockagentcore-evaluator-reasoningconfiguration-effort): {{String}}
 ```
 

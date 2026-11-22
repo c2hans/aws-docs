@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-awsmanagedrulesatpruleset-syntax.json"></a>
 
-```
+```json
 {
   "[EnableRegexInPath](#cfn-wafv2-webacl-awsmanagedrulesatpruleset-enableregexinpath)" : {{Boolean}},
   "[LoginPath](#cfn-wafv2-webacl-awsmanagedrulesatpruleset-loginpath)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-awsmanagedrulesatpruleset-syntax.yaml"></a>
 
-```
+```yaml
   [EnableRegexInPath](#cfn-wafv2-webacl-awsmanagedrulesatpruleset-enableregexinpath): {{Boolean}}
   [LoginPath](#cfn-wafv2-webacl-awsmanagedrulesatpruleset-loginpath): {{String}}
   [RequestInspection](#cfn-wafv2-webacl-awsmanagedrulesatpruleset-requestinspection): {{

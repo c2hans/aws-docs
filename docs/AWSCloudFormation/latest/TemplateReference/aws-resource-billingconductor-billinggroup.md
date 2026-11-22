@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-billingconductor-billinggroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::BillingConductor::BillingGroup",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-billingconductor-billinggroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::BillingConductor::BillingGroup
 Properties:
   [AccountGrouping](#cfn-billingconductor-billinggroup-accountgrouping): {{
@@ -134,7 +134,7 @@ The following example is a billing group that takes a list of linked account IDs
 #### JSON
 <a name="aws-resource-billingconductor-billinggroup--examples--Create_a_billing_group_with_a_pricing_plan--json"></a>
 
-```
+```json
 {
   "Parameters": {
       "LinkedAccountIds": {
@@ -172,7 +172,7 @@ The following example is a billing group that takes a list of linked account IDs
 #### YAML
 <a name="aws-resource-billingconductor-billinggroup--examples--Create_a_billing_group_with_a_pricing_plan--yaml"></a>
 
-```
+```yaml
 Parameters:
   LinkedAccountIds:
   Type: ListNumber

@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/user
 
 # User Agent String
 
-This guide provides step-by-step instructions for AWS Partners to implement User Agent strings for Partner Revenue Measurement revenue attribution using AWS APIs and SDKs.
+This guide provides step-by-step instructions for AWS Partners to implement User Agent strings for AWS Revenue Measurement revenue attribution using AWS APIs and SDKs.
 
 **Note**
 If you have an AMI product listed on AWS Marketplace that uses services beyond Amazon EC2, or an ML product that uses services beyond Amazon SageMaker AI, AWS recommends integrating a User Agent string to receive additional revenue attribution for your product.

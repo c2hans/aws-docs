@@ -6,12 +6,12 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-u
 
 Returns the language setting for the current user in the Connect Customer agent workspace.
 
-```
+```typescript
 async getLanguage(): Promise<Locale | null>
 ```
 
  **Permissions required:**
 
-```
+```typescript
 User.Configuration.View
 ```

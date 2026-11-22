@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eventsv2-subscriber-eventbusv2systemmetadata-syntax.json"></a>
 
-```
+```json
 {
   "[DeduplicationId](#cfn-eventsv2-subscriber-eventbusv2systemmetadata-deduplicationid)" : {{String}},
   "[EventGroupId](#cfn-eventsv2-subscriber-eventbusv2systemmetadata-eventgroupid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eventsv2-subscriber-eventbusv2systemmetadata-syntax.yaml"></a>
 
-```
+```yaml
   [DeduplicationId](#cfn-eventsv2-subscriber-eventbusv2systemmetadata-deduplicationid): {{String}}
   [EventGroupId](#cfn-eventsv2-subscriber-eventbusv2systemmetadata-eventgroupid): {{String}}
 ```

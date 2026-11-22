@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-flow-metadatacatalogconfig-syntax.json"></a>
 
-```
+```json
 {
   "[GlueDataCatalog](#cfn-appflow-flow-metadatacatalogconfig-gluedatacatalog)" : {{GlueDataCatalog}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-flow-metadatacatalogconfig-syntax.yaml"></a>
 
-```
+```yaml
   [GlueDataCatalog](#cfn-appflow-flow-metadatacatalogconfig-gluedatacatalog): {{
     GlueDataCatalog}}
 ```

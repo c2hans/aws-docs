@@ -34,7 +34,7 @@ Follow the procedure to [launch an instance](ec2-launch-instance-wizard.md), and
 **To assign a public IPv4 address at launch**
 Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command with the `--associate-public-ip-address` option.
 
-```
+```bash
 --associate-public-ip-address
 ```
 
@@ -44,7 +44,7 @@ Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run
 **To assign a public IPv4 address at launch**
 Use the [New-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Instance.html) cmdlet with the `-AssociatePublicIp` parameter.
 
-```
+```powershell
 -AssociatePublicIp $true
 ```
 
@@ -69,7 +69,7 @@ Follow the procedure to [launch an instance](ec2-launch-instance-wizard.md). Whe
 **To assign a private IPv4 address at launch**
 Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command with the `--private-ip-address` option.
 
-```
+```bash
 --private-ip-addresses {{10.251.50.12}}
 ```
 
@@ -81,7 +81,7 @@ To let Amazon EC2 choose the IP address, omit this option.
 **To assign a private IPv4 address at launch**
 Use the [New-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Instance.html) cmdlet with the `-PrivateIpAddress` parameter.
 
-```
+```powershell
 -PrivateIpAddress {{10.251.50.12}}
 ```
 
@@ -115,7 +115,7 @@ The public IPv4 address is displayed as a property of the network interface in t
 **To view the primary IPv4 address for an instance**
 Use the [describe-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html) command.
 
-```
+```bash
 aws ec2 describe-instances \
     --instance-ids {{i-1234567890abcdef0}} \
     --query "Reservations[].Instances[].PrivateIpAddress" \
@@ -124,7 +124,7 @@ aws ec2 describe-instances \
 
 The following is example output.
 
-```
+```bash
 10.251.50.12
 ```
 
@@ -134,14 +134,14 @@ The following is example output.
 **To view the primary IPv4 address for an instance**
 Use the [Get-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html) cmdlet.
 
-```
+```powershell
 (Get-EC2Instance `
     -InstanceId {{i-1234567890abcdef0}}).Instances.PrivateIpAddress
 ```
 
 The following is example output.
 
-```
+```bash
 10.251.50.12
 ```
 
@@ -164,7 +164,7 @@ You can get the IPv4 addresses for your instance by retrieving instance metadata
 **Linux**
 Run the following command from your Linux instance.
 
-   ```
+   ```bash
    TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` \
    && curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/local-ipv4
    ```
@@ -172,12 +172,12 @@ Run the following command from your Linux instance.
 **Windows**
 Run the following command from your Windows instance.
 
-   ```
+   ```powershell
    [string]$token = Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token-ttl-seconds" = "21600"} `
        -Method PUT -Uri http://169.254.169.254/latest/api/token
    ```
 
-   ```
+   ```powershell
    Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token" = $token} `
        -Method GET -Uri http://169.254.169.254/latest/meta-data/local-ipv4
    ```
@@ -188,14 +188,14 @@ Run the following command from your Windows instance.
 **Linux**
 Run the following command from your Linux instance.
 
-   ```
+   ```bash
    curl http://169.254.169.254/latest/meta-data/local-ipv4
    ```
 
 **Windows**
 Run the following command from your Windows instance.
 
-   ```
+   ```powershell
    Invoke-RestMethod http://169.254.169.254/latest/meta-data/local-ipv4
    ```
 
@@ -209,7 +209,7 @@ Run the following command from your Windows instance.
 **Linux**
 Run the following command from your Linux instance.
 
-   ```
+   ```bash
    [ec2-user ~]$ TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` \
    && curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/public-ipv4
    ```
@@ -217,12 +217,12 @@ Run the following command from your Linux instance.
 **Windows**
 Run the following command from your Windows instance.
 
-   ```
+   ```powershell
    [string]$token = Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token-ttl-seconds" = "21600"} `
        -Method PUT -Uri http://169.254.169.254/latest/api/token
    ```
 
-   ```
+   ```powershell
    Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token" = $token} `
        -Method GET -Uri http://169.254.169.254/latest/meta-data/public-ipv4
    ```
@@ -233,14 +233,14 @@ Run the following command from your Windows instance.
 **Linux**
 Run the following command from your Linux instance.
 
-   ```
+   ```bash
    curl http://169.254.169.254/latest/meta-data/public-ipv4
    ```
 
 **Windows**
 Run the following command from your Windows instance.
 
-   ```
+   ```powershell
    Invoke-RestMethod http://169.254.169.254/latest/meta-data/public-ipv4
    ```
 

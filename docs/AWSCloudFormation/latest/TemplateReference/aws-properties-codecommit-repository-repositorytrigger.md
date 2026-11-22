@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codecommit-repository-repositorytrigger-syntax.json"></a>
 
-```
+```json
 {
   "[Branches](#cfn-codecommit-repository-repositorytrigger-branches)" : {{[ String, ... ]}},
   "[CustomData](#cfn-codecommit-repository-repositorytrigger-customdata)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codecommit-repository-repositorytrigger-syntax.yaml"></a>
 
-```
+```yaml
   [Branches](#cfn-codecommit-repository-repositorytrigger-branches): {{
     - String}}
   [CustomData](#cfn-codecommit-repository-repositorytrigger-customdata): {{String}}

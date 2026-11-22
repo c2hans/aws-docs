@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-geospatialmapstate-syntax.json"></a>
 
-```
+```json
 {
   "[Bounds](#cfn-quicksight-template-geospatialmapstate-bounds)" : {{GeospatialCoordinateBounds}},
   "[MapNavigation](#cfn-quicksight-template-geospatialmapstate-mapnavigation)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-geospatialmapstate-syntax.yaml"></a>
 
-```
+```yaml
   [Bounds](#cfn-quicksight-template-geospatialmapstate-bounds): {{
     GeospatialCoordinateBounds}}
   [MapNavigation](#cfn-quicksight-template-geospatialmapstate-mapnavigation): {{String}}

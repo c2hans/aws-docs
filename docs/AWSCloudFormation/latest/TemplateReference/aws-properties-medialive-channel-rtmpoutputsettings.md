@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-rtmpoutputsettings-syntax.json"></a>
 
-```
+```json
 {
   "[CertificateMode](#cfn-medialive-channel-rtmpoutputsettings-certificatemode)" : {{String}},
   "[ConnectionRetryInterval](#cfn-medialive-channel-rtmpoutputsettings-connectionretryinterval)" : {{Integer}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-rtmpoutputsettings-syntax.yaml"></a>
 
-```
+```yaml
   [CertificateMode](#cfn-medialive-channel-rtmpoutputsettings-certificatemode): {{String}}
   [ConnectionRetryInterval](#cfn-medialive-channel-rtmpoutputsettings-connectionretryinterval): {{Integer}}
   [Destination](#cfn-medialive-channel-rtmpoutputsettings-destination): {{

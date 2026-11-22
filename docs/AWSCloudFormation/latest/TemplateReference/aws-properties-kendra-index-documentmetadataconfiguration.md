@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-index-documentmetadataconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-kendra-index-documentmetadataconfiguration-name)" : {{String}},
   "[Relevance](#cfn-kendra-index-documentmetadataconfiguration-relevance)" : {{Relevance}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-index-documentmetadataconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-kendra-index-documentmetadataconfiguration-name): {{String}}
   [Relevance](#cfn-kendra-index-documentmetadataconfiguration-relevance): {{
     Relevance}}

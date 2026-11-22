@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-sourceendpoint-routeroutputsourceendpointassociatedresourcedetails-syntax.json"></a>
 
-```
+```json
 {
   "[MaximumBitrate](#cfn-mediaconnect-sourceendpoint-routeroutputsourceendpointassociatedresourcedetails-maximumbitrate)" : {{Integer}},
   "[Name](#cfn-mediaconnect-sourceendpoint-routeroutputsourceendpointassociatedresourcedetails-name)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-sourceendpoint-routeroutputsourceendpointassociatedresourcedetails-syntax.yaml"></a>
 
-```
+```yaml
   [MaximumBitrate](#cfn-mediaconnect-sourceendpoint-routeroutputsourceendpointassociatedresourcedetails-maximumbitrate): {{Integer}}
   [Name](#cfn-mediaconnect-sourceendpoint-routeroutputsourceendpointassociatedresourcedetails-name): {{String}}
   [State](#cfn-mediaconnect-sourceendpoint-routeroutputsourceendpointassociatedresourcedetails-state): {{String}}

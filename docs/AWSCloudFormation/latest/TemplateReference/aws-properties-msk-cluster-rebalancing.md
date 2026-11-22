@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-cluster-rebalancing-syntax.json"></a>
 
-```
+```json
 {
   "[Status](#cfn-msk-cluster-rebalancing-status)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-cluster-rebalancing-syntax.yaml"></a>
 
-```
+```yaml
   [Status](#cfn-msk-cluster-rebalancing-status): {{String}}
 ```
 

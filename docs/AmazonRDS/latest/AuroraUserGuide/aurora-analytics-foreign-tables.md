@@ -34,7 +34,7 @@ Aurora PostgreSQL supports the following open data formats for foreign tables.
 
 The following is the syntax for creating a foreign table:
 
-```
+```SQL
 CREATE FOREIGN TABLE [ IF NOT EXISTS ] [schema_name.]table_name ( [
     column_name data_type [, ... ]
 ] )
@@ -88,7 +88,7 @@ Optional. (Iceberg only) Query the Iceberg table as of a specific point in time.
 
 The following example creates a foreign table with explicit column definitions for your data stored in Parquet files in Amazon S3:
 
-```
+```SQL
 CREATE FOREIGN TABLE ft_orders (
     order_id INT,
     customer_id INT,
@@ -108,7 +108,7 @@ OPTIONS (
 
 To query the table:
 
-```
+```SQL
 SELECT COUNT(*) FROM ft_orders;
 ```
 
@@ -117,7 +117,7 @@ SELECT COUNT(*) FROM ft_orders;
 
 The following example creates a foreign table that uses schema auto-inference for an Iceberg table registered in the AWS Glue Data Catalog:
 
-```
+```SQL
 CREATE FOREIGN TABLE ft_orders ()
 SERVER aurora_analytics_server
 OPTIONS (
@@ -132,7 +132,7 @@ When you use an AWS Glue ARN or Amazon S3 Tables ARN for the `location`, you can
 
 To query the table:
 
-```
+```SQL
 SELECT COUNT(*) FROM ft_orders;
 ```
 
@@ -141,7 +141,7 @@ SELECT COUNT(*) FROM ft_orders;
 
 To query a specific point-in-time snapshot of an Iceberg table, specify the snapshot version you want to query with the `snapshot` option:
 
-```
+```SQL
 CREATE FOREIGN TABLE ft_orders_snapshot ()
 SERVER aurora_analytics_server
 OPTIONS (
@@ -157,7 +157,7 @@ Replace {{my\_database}} and {{orders}} with the names of your AWS Glue database
 
 To query an Iceberg table as of a specific point in time, specify the `timestamp` option:
 
-```
+```SQL
 CREATE FOREIGN TABLE ft_orders_timetravel ()
 SERVER aurora_analytics_server
 OPTIONS (
@@ -178,7 +178,7 @@ You can't set both `snapshot` and `timestamp` on the same foreign table. Use one
 
 To register multiple tables at once from an AWS Glue database or Amazon S3 Tables namespace, use `IMPORT FOREIGN SCHEMA`:
 
-```
+```SQL
 IMPORT FOREIGN SCHEMA remote_schema
     [ { LIMIT TO | EXCEPT } ( table_name [, ... ] ) ]
     FROM SERVER aurora_analytics_server
@@ -194,7 +194,7 @@ Only catalog-based sources (AWS Glue, Amazon S3 Tables) are supported. Raw Amazo
 
 To import all tables from an AWS Glue database:
 
-```
+```SQL
 IMPORT FOREIGN SCHEMA my_analytics_db
     FROM SERVER aurora_analytics_server
     INTO analytics
@@ -203,7 +203,7 @@ IMPORT FOREIGN SCHEMA my_analytics_db
 
 To import all tables from an Amazon S3 Tables namespace:
 
-```
+```SQL
 IMPORT FOREIGN SCHEMA my_namespace
     FROM SERVER aurora_analytics_server
     INTO sales_data
@@ -212,7 +212,7 @@ IMPORT FOREIGN SCHEMA my_namespace
 
 To import only specific tables:
 
-```
+```SQL
 IMPORT FOREIGN SCHEMA my_analytics_db
     LIMIT TO (orders, customers, products)
     FROM SERVER aurora_analytics_server
@@ -222,7 +222,7 @@ IMPORT FOREIGN SCHEMA my_analytics_db
 
 To exclude specific tables:
 
-```
+```SQL
 IMPORT FOREIGN SCHEMA my_analytics_db
     EXCEPT (staging_temp, debug_logs)
     FROM SERVER aurora_analytics_server
@@ -289,7 +289,7 @@ Foreign tables follow standard PostgreSQL permission controls. Use `GRANT` and `
 ### Querying foreign tables
 <a name="aurora-analytics-foreign-tables-permissions-query"></a>
 
-```
+```SQL
 -- Grant SELECT on a specific foreign table
 GRANT SELECT ON TABLE ft_orders TO analyst_role;
 
@@ -304,7 +304,7 @@ To execute `CREATE FOREIGN TABLE`, a user needs both:
 + `CREATE` privilege on the target schema
 + `USAGE` privilege on the foreign server (`aurora_analytics_server`)
 
-```
+```SQL
 -- Allow a role to create foreign tables
 GRANT CREATE ON SCHEMA analytics TO data_engineer_role;
 GRANT USAGE ON FOREIGN SERVER aurora_analytics_server TO data_engineer_role;
@@ -315,7 +315,7 @@ GRANT USAGE ON FOREIGN SERVER aurora_analytics_server TO data_engineer_role;
 
 Only the table owner can execute `ALTER FOREIGN TABLE` or `DROP FOREIGN TABLE`. However, changing any option requires `USAGE` privilege on `aurora_analytics_server`, because pointing a foreign table at a new data source is functionally equivalent to creating a new one.
 
-```
+```SQL
 -- Table owner with USAGE on server — can change location
 ALTER FOREIGN TABLE ft_orders OPTIONS (SET location 's3://new-bucket/orders/');
 
@@ -326,7 +326,7 @@ ALTER FOREIGN TABLE ft_orders ADD COLUMN new_col TEXT;
 
 To transfer ownership:
 
-```
+```SQL
 ALTER FOREIGN TABLE ft_orders OWNER TO new_owner_role;
 ```
 

@@ -205,7 +205,7 @@ Use the following example if you want an IAM role that has permission to perform
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -233,7 +233,7 @@ Use the following example to restrict access to a specific API and a specific ch
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

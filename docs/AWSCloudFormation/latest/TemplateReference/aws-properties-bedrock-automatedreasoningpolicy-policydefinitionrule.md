@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-automatedreasoningpolicy-policydefinitionrule-syntax.json"></a>
 
-```
+```json
 {
   "[AlternateExpression](#cfn-bedrock-automatedreasoningpolicy-policydefinitionrule-alternateexpression)" : {{String}},
   "[Expression](#cfn-bedrock-automatedreasoningpolicy-policydefinitionrule-expression)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-automatedreasoningpolicy-policydefinitionrule-syntax.yaml"></a>
 
-```
+```yaml
   [AlternateExpression](#cfn-bedrock-automatedreasoningpolicy-policydefinitionrule-alternateexpression): {{String}}
   [Expression](#cfn-bedrock-automatedreasoningpolicy-policydefinitionrule-expression): {{String}}
   [Id](#cfn-bedrock-automatedreasoningpolicy-policydefinitionrule-id): {{String}}

@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudfront-function-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudFront::Function",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudfront-function-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudFront::Function
 Properties:
   [AutoPublish](#cfn-cloudfront-function-autopublish): {{Boolean}}
@@ -130,7 +130,7 @@ The following examples show how to create a basic CloudFront function.
 #### YAML
 <a name="aws-resource-cloudfront-function--examples--Create_a_CloudFront_function--yaml"></a>
 
-```
+```yaml
 Resources:
   CloudFrontFunction:
     Type: AWS::CloudFront::Function
@@ -158,7 +158,7 @@ Resources:
 #### JSON
 <a name="aws-resource-cloudfront-function--examples--Create_a_CloudFront_function--json"></a>
 
-```
+```json
 {
     "Resources": {
         "CloudFrontFunction": {

@@ -33,7 +33,7 @@ For more information, see [Using service-linked roles](https://docs.aws.amazon.c
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -70,7 +70,7 @@ func (wrapper RoleWrapper) DeleteServiceLinkedRole(ctx context.Context, roleName
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
 
-```
+```javascript
 import { DeleteServiceLinkedRoleCommand, IAMClient } from "@aws-sdk/client-iam";
 
 const client = new IAMClient({});
@@ -92,7 +92,7 @@ export const deleteServiceLinkedRole = (roleName) => {
 **Tools for PowerShell V4**
 **Example 1: This example deleted the service linked role. Please note that if the service is still using this role, then this command results in a failure.**
 
-```
+```powershell
 Remove-IAMServiceLinkedRole -RoleName AWSServiceRoleForAutoScaling_RoleNameEndsWithThis
 ```
 +  For API details, see [DeleteServiceLinkedRole](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -100,7 +100,7 @@ Remove-IAMServiceLinkedRole -RoleName AWSServiceRoleForAutoScaling_RoleNameEndsW
 **Tools for PowerShell V5**
 **Example 1: This example deleted the service linked role. Please note that if the service is still using this role, then this command results in a failure.**
 
-```
+```powershell
 Remove-IAMServiceLinkedRole -RoleName AWSServiceRoleForAutoScaling_RoleNameEndsWithThis
 ```
 +  For API details, see [DeleteServiceLinkedRole](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -111,7 +111,7 @@ Remove-IAMServiceLinkedRole -RoleName AWSServiceRoleForAutoScaling_RoleNameEndsW
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
 
-```
+```ruby
   # Deletes a service-linked role.
   #
   # @param role_name [String] The name of the role to delete.
@@ -162,7 +162,7 @@ Remove-IAMServiceLinkedRole -RoleName AWSServiceRoleForAutoScaling_RoleNameEndsW
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
 
-```
+```rust
 pub async fn delete_service_linked_role(
     client: &iamClient,
     role_name: &str,

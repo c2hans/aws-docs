@@ -183,12 +183,12 @@ For information about finding the preceding information, see [Finding the endpoi
 In the following examples, substitute your master user for {{master\_user\_name}}. Also, substitute the endpoint for your DB instance, and then include the port number and the PDB service name. The service name is the name of the PDB that you specified when you created your DB instance, and not the DB instance identifier.
 For Linux, macOS, or Unix:
 
-```
+```sql
 1. sqlplus '{{master_user_name}}@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST={{endpoint}})(PORT={{port}}))(CONNECT_DATA=(SERVICE_NAME={{pdb_name}})))'
 ```
 For Windows:
 
-```
+```sql
 1. sqlplus {{master_user_name}}@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST={{endpoint}})(PORT={{port}}))(CONNECT_DATA=(SERVICE_NAME={{pdb_name}})))
 ```
 You should see output similar to the following.

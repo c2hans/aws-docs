@@ -16,7 +16,7 @@ This template uses the `AWS::CodeDeployBlueGreen` transform and `AWS::CodeDeploy
 
 This is the complete CloudFormation template using CodeDeploy blue/green deployment. For more information, see [Blue/green deployment template example](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/blue-green-template-example.html#blue-green-template-example.json) in the* AWS CloudFormation User Guide*:
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Parameters": {
@@ -350,7 +350,7 @@ You no longer need the following properties:
 
 Modify the `ALBListenerProdTraffic` resource to use a forward action with two target groups:
 
-```
+```json
 {
   "DefaultActions": [
     {
@@ -380,7 +380,7 @@ Update and add the following:
 + Add the `Strategy` property and set it to BLUE\_GREEN.
 + Add the `BakeTimeInMinutes` property.
 
-  ```
+  ```json
   {
     "DeploymentConfiguration": {
       "MaximumPercent": 200,
@@ -396,7 +396,7 @@ Update and add the following:
   ```
 + Add the load balancer configuration to the service:
 
-  ```
+  ```json
   {
     "LoadBalancers": [
       {
@@ -414,7 +414,7 @@ Update and add the following:
   ```
 + Add the task definition reference to the service:
 
-  ```
+  ```json
   {
     "TaskDefinition": {"Ref": "BlueTaskDefinition"}
   }
@@ -446,7 +446,7 @@ Add a new IAM role that allows Amazon ECS to manage load balancer resources. For
 
 This is the complete CloudFormation template using an Amazon ECS blue/green deployment:
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Parameters": {

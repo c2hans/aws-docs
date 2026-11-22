@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-medialive-eventbridgeruletemplate-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MediaLive::EventBridgeRuleTemplate",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-medialive-eventbridgeruletemplate-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MediaLive::EventBridgeRuleTemplate
 Properties:
   [Description](#cfn-medialive-eventbridgeruletemplate-description): {{String}}

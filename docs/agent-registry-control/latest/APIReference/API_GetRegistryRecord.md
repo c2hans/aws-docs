@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 
 # GetRegistryRecord
 
-Retrieves the details of a registry record
+Retrieves the details of a registry record. The response describes the record's latest revision, including a revision that isn't approved yet. For a skill record, the operation also returns the skill package in `artifact` and the source that the registry last synchronized the skill from in `synchronizedSource`.
 
 ## Request Syntax
 <a name="API_GetRegistryRecord_RequestSyntax"></a>
@@ -43,6 +43,10 @@ HTTP/1.1 200
 Content-type: application/json
 
 {
+   "artifact": {
+      "downloadUrl": "string",
+      "sha256": "string"
+   },
    "createdAt": "string",
    "createdBy": "string",
    "createdByAutoDetection": boolean,
@@ -67,6 +71,7 @@ Content-type: application/json
       },
       "agentSkillsDefinition": {
          "additionalData": {
+            "repositoryProvider": "string",
             "skillMd": {
                "data": "string",
                "dataSchemaVersion": "string",
@@ -81,7 +86,21 @@ Content-type: application/json
                      "url": "string"
                   }
                }
-            }
+            },
+            "skillPackage": {
+               "source": {
+                  "fromUrl": {
+                     "credentialProviderConfigurations": [
+                        {
+                           "credentialProvider": { ... },
+                           "credentialProviderType": "string"
+                        }
+                     ],
+                     "url": "string"
+                  }
+               }
+            },
+            "sourceConfiguration": { ... }
          },
          "data": "string",
          "dataSchemaVersion": "string"
@@ -154,6 +173,7 @@ Content-type: application/json
    "registryArn": "string",
    "status": "string",
    "statusReason": "string",
+   "synchronizedSource": { ... },
    "updatedAt": "string"
 }
 ```
@@ -164,6 +184,10 @@ Content-type: application/json
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
+
+ ** [artifact](#API_GetRegistryRecord_ResponseSyntax) **   <a name="agentregistrycontrol-GetRegistryRecord-response-artifact"></a>
+The skill package of the record's latest revision, including a revision in `DRAFT` or `PENDING_APPROVAL` status, as a download URL and a SHA-256 checksum. While an update of the record is in progress or after it fails, this is the last package that passed validation, unless the update switches between an uploaded package and a synchronized one: then it is absent until the update succeeds. Absent while the record is being created or after its creation fails, and when the record has no package, for example when its content is inline or it synchronizes only SKILL.md.
+Type: [RegistryRecordArtifactDownload](API_RegistryRecordArtifactDownload.md) object
 
  ** [createdAt](#API_GetRegistryRecord_ResponseSyntax) **   <a name="agentregistrycontrol-GetRegistryRecord-response-createdAt"></a>
 The timestamp when the registry record was created.
@@ -194,7 +218,7 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 4096.
 
  ** [descriptors](#API_GetRegistryRecord_ResponseSyntax) **   <a name="agentregistrycontrol-GetRegistryRecord-response-descriptors"></a>
-The typed descriptors that define the content of the registry record.
+The typed descriptors that define the content of the registry record. For a skill record with a skill package or a synchronized source, `skillMd.data` contains the SKILL.md that the registry took from the package or the source.
 Type: [Descriptors](API_Descriptors.md) object
 
  ** [displayName](#API_GetRegistryRecord_ResponseSyntax) **   <a name="agentregistrycontrol-GetRegistryRecord-response-displayName"></a>
@@ -245,11 +269,16 @@ Pattern: `arn:aws(-[^:]+)?:agent-registry:[a-z0-9-]+:[0-9]{12}:registry/[a-zA-Z0
  ** [status](#API_GetRegistryRecord_ResponseSyntax) **   <a name="agentregistrycontrol-GetRegistryRecord-response-status"></a>
 The lifecycle status of the registry record.
 Type: String
-Valid Values: `DRAFT | PENDING_APPROVAL | APPROVED | REJECTED | DEPRECATED | CREATING | UPDATING | CREATE_FAILED | UPDATE_FAILED`
+Valid Values: `DRAFT | PENDING_APPROVAL | APPROVED | REJECTED | DEPRECATED | CREATING | UPDATING | CREATE_FAILED | UPDATE_FAILED | CREATE_PENDING_AUTH | UPDATE_PENDING_AUTH`
 
  ** [statusReason](#API_GetRegistryRecord_ResponseSyntax) **   <a name="agentregistrycontrol-GetRegistryRecord-response-statusReason"></a>
 The reason for the current status. Typically populated when the status indicates a failure state.
 Type: String
+
+ ** [synchronizedSource](#API_GetRegistryRecord_ResponseSyntax) **   <a name="agentregistrycontrol-GetRegistryRecord-response-synchronizedSource"></a>
+The source that the registry last synchronized the record's skill content from, including when the registry read the source and which version it read. Absent until the first successful synchronization, and after an update replaces the synchronized content, for example with an uploaded package. A failed synchronization leaves this member unchanged. After you change the source, this member shows the previous source until the registry successfully synchronizes from the new source.
+Type: [RegistryRecordSynchronizedSource](API_RegistryRecordSynchronizedSource.md) object
+ **Note: **This object is a Union. Only one member of this object can be specified or returned.
 
  ** [updatedAt](#API_GetRegistryRecord_ResponseSyntax) **   <a name="agentregistrycontrol-GetRegistryRecord-response-updatedAt"></a>
 The timestamp when the registry record was last updated.

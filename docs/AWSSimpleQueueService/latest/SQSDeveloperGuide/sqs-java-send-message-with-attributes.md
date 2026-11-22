@@ -20,7 +20,7 @@ The AWS SDK for Java automatically calculates the message body and message attri
 
 This example defines a `String` attribute named `Name` with the value `Jane`.
 
-```
+```java
 final Map<String, MessageAttributeValue> messageAttributes = new HashMap<>();
 messageAttributes.put("Name", new MessageAttributeValue()
 .withDataType("String")
@@ -32,7 +32,7 @@ messageAttributes.put("Name", new MessageAttributeValue()
 
 This example defines a `Number` attribute named `AccurateWeight` with the value `230.000000000000000001`.
 
-```
+```java
 final Map<String, MessageAttributeValue> messageAttributes = new HashMap<>();
 messageAttributes.put("AccurateWeight", new MessageAttributeValue()
 .withDataType("Number")
@@ -44,7 +44,7 @@ messageAttributes.put("AccurateWeight", new MessageAttributeValue()
 
 This example defines a `Binary` attribute named `ByteArray` with the value of an uninitialized 10-byte array.
 
-```
+```java
 final Map<String, MessageAttributeValue> messageAttributes = new HashMap<>();
 messageAttributes.put("ByteArray", new MessageAttributeValue()
 .withDataType("Binary")
@@ -56,7 +56,7 @@ messageAttributes.put("ByteArray", new MessageAttributeValue()
 
 This example defines the custom attribute `String.EmployeeId` named `EmployeeId` with the value `ABC123456`.
 
-```
+```java
 final Map<String, MessageAttributeValue> messageAttributes = new HashMap<>();
 messageAttributes.put("EmployeeId", new MessageAttributeValue()
 .withDataType("String.EmployeeId")
@@ -68,7 +68,7 @@ messageAttributes.put("EmployeeId", new MessageAttributeValue()
 
 This example defines the custom attribute `Number.AccountId` named `AccountId` with the value `000123456`.
 
-```
+```java
 final Map<String, MessageAttributeValue> messageAttributes = new HashMap<>();
 messageAttributes.put("AccountId", new MessageAttributeValue()
 .withDataType("Number.AccountId")
@@ -83,7 +83,7 @@ Because the base data type is `Number`, the `[ReceiveMessage](https://docs.aws.a
 
 This example defines the custom attribute `Binary.JPEG` named `ApplicationIcon` with the value of an uninitialized 10-byte array.
 
-```
+```java
 final Map<String, MessageAttributeValue> messageAttributes = new HashMap<>();
 messageAttributes.put("ApplicationIcon", new MessageAttributeValue()
 .withDataType("Binary.JPEG")
@@ -97,7 +97,7 @@ messageAttributes.put("ApplicationIcon", new MessageAttributeValue()
 
 This example adds the attributes to the `SendMessageRequest` before sending the message.
 
-```
+```java
 // Send a message with an attribute.
 final SendMessageRequest sendMessageRequest = new SendMessageRequest();
 sendMessageRequest.withMessageBody("This is my message text.");

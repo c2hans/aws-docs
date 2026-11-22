@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-qbusiness-webexperience-openidconnectproviderconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[SecretsArn](#cfn-qbusiness-webexperience-openidconnectproviderconfiguration-secretsarn)" : {{String}},
   "[SecretsRole](#cfn-qbusiness-webexperience-openidconnectproviderconfiguration-secretsrole)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-qbusiness-webexperience-openidconnectproviderconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [SecretsArn](#cfn-qbusiness-webexperience-openidconnectproviderconfiguration-secretsarn): {{String}}
   [SecretsRole](#cfn-qbusiness-webexperience-openidconnectproviderconfiguration-secretsrole): {{String}}
 ```

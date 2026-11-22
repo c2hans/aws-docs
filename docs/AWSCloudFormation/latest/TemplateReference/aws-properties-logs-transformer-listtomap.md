@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-logs-transformer-listtomap-syntax.json"></a>
 
-```
+```json
 {
   "[Flatten](#cfn-logs-transformer-listtomap-flatten)" : {{Boolean}},
   "[FlattenedElement](#cfn-logs-transformer-listtomap-flattenedelement)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-logs-transformer-listtomap-syntax.yaml"></a>
 
-```
+```yaml
   [Flatten](#cfn-logs-transformer-listtomap-flatten): {{Boolean}}
   [FlattenedElement](#cfn-logs-transformer-listtomap-flattenedelement): {{String}}
   [Key](#cfn-logs-transformer-listtomap-key): {{String}}

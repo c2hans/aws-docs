@@ -160,7 +160,7 @@ Use `[StartRestoreJob](https://docs.aws.amazon.com/aws-backup/latest/devguide/AP
 
 You can specify the following metadata for a virtual machine restore to Amazon EC2 and Amazon EBS:
 
-```
+```json
 RestoreTo
 InstanceType
 VpcId
@@ -190,7 +190,7 @@ AWS Backup supports both partial restores to Amazon EBS and full restores to Ama
 
 You can specify the following metadata for a virtual machine restore to VMware, VMware Cloud on AWS, and VMware cloud on AWS Outpost:
 
-```
+```json
 RestoreTo
 HypervisorArn
 VMName
@@ -205,6 +205,6 @@ AWS Backup supports both partial and full restores to an on-premises virtual mac
 
 This example shows how to conduct a full restore to VMware:
 
-```
+```json
 '{"RestoreTo":"VMware","HypervisorArn":"arn:aws:backup-gateway:us-east-1:209870788375:hypervisor/hype-9B1AB1F1","VMName":"name","VMPath":"/Labster/vm","ComputeResourceName":"Cluster","VMDatastore":"vsanDatastore","DisksToRestore":"[{\"DiskId\":\"2000\",\"Label\":\"Hard disk 1\"}]","vmId":"vm-101"}'
 ```

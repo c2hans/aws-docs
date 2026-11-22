@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrcontainers-securityconfiguration-eksinfo-syntax.json"></a>
 
-```
+```json
 {
   "[Namespace](#cfn-emrcontainers-securityconfiguration-eksinfo-namespace)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrcontainers-securityconfiguration-eksinfo-syntax.yaml"></a>
 
-```
+```yaml
   [Namespace](#cfn-emrcontainers-securityconfiguration-eksinfo-namespace): {{String}}
 ```
 

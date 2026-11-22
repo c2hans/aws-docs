@@ -13,13 +13,13 @@ You can verify the attachment status by using the AWS Command Line Interface (AW
 **To use the AWS CLI to verify the attachment status**
 The following [describe-traffic-sources](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/describe-traffic-sources.html) command returns the attachment status of all traffic sources for the specified Auto Scaling group.
 
-```
+```shell
 aws autoscaling describe-traffic-sources --auto-scaling-group-name {{my-asg}}
 ```
 
 The example returns the ARN of the Elastic Load Balancing target group that's attached to the Auto Scaling group, along with the attachment status of the target group in the `State` element.
 
-```
+```json
 {
     "TrafficSources": [
         {

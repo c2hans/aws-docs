@@ -30,7 +30,7 @@ For more information, see [Delete a step scaling policy for Application Auto Sca
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/appautoscale#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.applicationautoscaling.ApplicationAutoScalingClient;
 import software.amazon.awssdk.services.applicationautoscaling.model.ApplicationAutoScalingException;
@@ -150,7 +150,7 @@ public class DisableDynamoDBAutoscaling {
 **Tools for PowerShell V4**
 **Example 1: This cmdlet deletes the specified scaling policy for an Application Auto Scaling scalable target.**
 
-```
+```powershell
 Remove-AASScalingPolicy -ServiceNamespace AppStream -PolicyName "default-scale-out" -ResourceId fleet/Test -ScalableDimension appstream:fleet:DesiredCapacity
 ```
 +  For API details, see [DeleteScalingPolicy](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -158,7 +158,7 @@ Remove-AASScalingPolicy -ServiceNamespace AppStream -PolicyName "default-scale-o
 **Tools for PowerShell V5**
 **Example 1: This cmdlet deletes the specified scaling policy for an Application Auto Scaling scalable target.**
 
-```
+```powershell
 Remove-AASScalingPolicy -ServiceNamespace AppStream -PolicyName "default-scale-out" -ResourceId fleet/Test -ScalableDimension appstream:fleet:DesiredCapacity
 ```
 +  For API details, see [DeleteScalingPolicy](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

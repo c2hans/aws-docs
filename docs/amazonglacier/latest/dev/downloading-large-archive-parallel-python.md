@@ -43,7 +43,7 @@ Before you begin, make sure you have:
 
 The following Python script demonstrates how to download a large archive from Amazon Glacier using parallel processing:
 
-```
+```python
 import boto3
 import time
 import json

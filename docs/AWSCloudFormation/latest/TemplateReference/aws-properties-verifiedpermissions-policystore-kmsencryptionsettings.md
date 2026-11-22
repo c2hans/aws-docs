@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-verifiedpermissions-policystore-kmsencryptionsettings-syntax.json"></a>
 
-```
+```json
 {
   "[EncryptionContext](#cfn-verifiedpermissions-policystore-kmsencryptionsettings-encryptioncontext)" : {{{{{Key}}: {{Value}}, ...}}},
   "[Key](#cfn-verifiedpermissions-policystore-kmsencryptionsettings-key)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-verifiedpermissions-policystore-kmsencryptionsettings-syntax.yaml"></a>
 
-```
+```yaml
   [EncryptionContext](#cfn-verifiedpermissions-policystore-kmsencryptionsettings-encryptioncontext): {{
     {{Key}}: {{Value}}}}
   [Key](#cfn-verifiedpermissions-policystore-kmsencryptionsettings-key): {{String}}

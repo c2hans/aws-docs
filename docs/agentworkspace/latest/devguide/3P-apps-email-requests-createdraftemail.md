@@ -26,7 +26,7 @@ createDraftEmail(contactCreation: CreateDraftEmailContact): Promise<EmailContact
 
  **Usage for Agent Initiated Outbound**
 
-```
+```typescript
 const contact: EmailContactId = await emailClient.createDraftEmail({
    initiationMethod: "OUTBOUND",
 });
@@ -36,7 +36,7 @@ const { contactId } = contact;
 
  **Usage for Agent Reply**
 
-```
+```typescript
 const acceptedInboundEmailContactId = "exampleContactId";
 
 const contact: EmailContactId = await emailClient.createDraftEmail({
@@ -49,7 +49,7 @@ const { contactId } = contact;
 
  **Usage for Forward Email**
 
-```
+```typescript
 const emailContactIdToBeForwarded = "exampleContactId";
 
 const contact: EmailContactId = await emailClient.createDraftEmail({

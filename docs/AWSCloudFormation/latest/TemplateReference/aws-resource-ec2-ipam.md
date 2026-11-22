@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-ipam-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::IPAM",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-ipam-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::IPAM
 Properties:
   [DefaultResourceDiscoveryOrganizationalUnitExclusions](#cfn-ec2-ipam-defaultresourcediscoveryorganizationalunitexclusions): {{

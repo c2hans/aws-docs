@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-aps-workspace-limitsperlabelset-syntax.json"></a>
 
-```
+```json
 {
   "[LabelSet](#cfn-aps-workspace-limitsperlabelset-labelset)" : {{[ Label, ... ]}},
   "[Limits](#cfn-aps-workspace-limitsperlabelset-limits)" : {{LimitsPerLabelSetEntry}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-aps-workspace-limitsperlabelset-syntax.yaml"></a>
 
-```
+```yaml
   [LabelSet](#cfn-aps-workspace-limitsperlabelset-labelset): {{
     - Label}}
   [Limits](#cfn-aps-workspace-limitsperlabelset-limits): {{

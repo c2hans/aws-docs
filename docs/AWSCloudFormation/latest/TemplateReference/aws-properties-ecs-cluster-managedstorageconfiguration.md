@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-cluster-managedstorageconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[FargateEphemeralStorageKmsKeyId](#cfn-ecs-cluster-managedstorageconfiguration-fargateephemeralstoragekmskeyid)" : {{String}},
   "[KmsKeyId](#cfn-ecs-cluster-managedstorageconfiguration-kmskeyid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-cluster-managedstorageconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [FargateEphemeralStorageKmsKeyId](#cfn-ecs-cluster-managedstorageconfiguration-fargateephemeralstoragekmskeyid): {{String}}
   [KmsKeyId](#cfn-ecs-cluster-managedstorageconfiguration-kmskeyid): {{String}}
 ```

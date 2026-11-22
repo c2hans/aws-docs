@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-rulegroup-blockaction-syntax.json"></a>
 
-```
+```json
 {
   "[CustomResponse](#cfn-wafv2-rulegroup-blockaction-customresponse)" : {{CustomResponse}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-rulegroup-blockaction-syntax.yaml"></a>
 
-```
+```yaml
   [CustomResponse](#cfn-wafv2-rulegroup-blockaction-customresponse): {{
     CustomResponse}}
 ```

@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ses-configurationset-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SES::ConfigurationSet",
   "Properties" : {
@@ -47,7 +47,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ses-configurationset-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SES::ConfigurationSet
 Properties:
   [ArchivingOptions](#cfn-ses-configurationset-archivingoptions): {{
@@ -152,7 +152,7 @@ Specifies a configuration set.
 #### JSON
 <a name="aws-resource-ses-configurationset--examples----json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "AWS SES ConfigurationSet Sample Template",
@@ -177,7 +177,7 @@ Specifies a configuration set.
 #### YAML
 <a name="aws-resource-ses-configurationset--examples----yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: AWS SES ConfigurationSet Sample Template
 Parameters:

@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-config-configurationrecorder-recordinggroup-syntax.json"></a>
 
-```
+```json
 {
   "[AllSupported](#cfn-config-configurationrecorder-recordinggroup-allsupported)" : {{Boolean}},
   "[ExclusionByResourceTypes](#cfn-config-configurationrecorder-recordinggroup-exclusionbyresourcetypes)" : {{ExclusionByResourceTypes}},
@@ -44,7 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-config-configurationrecorder-recordinggroup-syntax.yaml"></a>
 
-```
+```yaml
   [AllSupported](#cfn-config-configurationrecorder-recordinggroup-allsupported): {{Boolean}}
   [ExclusionByResourceTypes](#cfn-config-configurationrecorder-recordinggroup-exclusionbyresourcetypes): {{
     ExclusionByResourceTypes}}
@@ -160,7 +160,7 @@ The recordingGroup file specifies which types of resources AWS Config will recor
 #### JSON
 <a name="aws-properties-config-configurationrecorder-recordinggroup--examples--Record_all_current_and_future_supported_resource_types--json"></a>
 
-```
+```json
 {
     "AllSupported": true,
     "RecordingStrategy": {
@@ -173,7 +173,7 @@ The recordingGroup file specifies which types of resources AWS Config will recor
 #### YAML
 <a name="aws-properties-config-configurationrecorder-recordinggroup--examples--Record_all_current_and_future_supported_resource_types--yaml"></a>
 
-```
+```yaml
 AllSupported: true
 RecordingStrategy:
     UseOnly: ALL_SUPPORTED_RESOURCE_TYPES
@@ -188,7 +188,7 @@ The recordingGroup file specifies which types of resources AWS Config will recor
 #### JSON
 <a name="aws-properties-config-configurationrecorder-recordinggroup--examples--Record_all_current_and_future_supported_resource_types_excluding_the_types_you_specify--json"></a>
 
-```
+```json
 {
     "AllSupported": false,
     "ExclusionByResourceTypes": {
@@ -208,7 +208,7 @@ The recordingGroup file specifies which types of resources AWS Config will recor
 #### YAML
 <a name="aws-properties-config-configurationrecorder-recordinggroup--examples--Record_all_current_and_future_supported_resource_types_excluding_the_types_you_specify--yaml"></a>
 
-```
+```yaml
 AllSupported: false
 ExclusionByResourceTypes:
     ResourceTypes:
@@ -228,7 +228,7 @@ The recordingGroup file specifies which types of resources AWS Config will recor
 #### JSON
 <a name="aws-properties-config-configurationrecorder-recordinggroup--examples--Record_specific_resource_types--json"></a>
 
-```
+```json
 {
     "AllSupported": false,
     "RecordingStrategy": {
@@ -252,7 +252,7 @@ The recordingGroup file specifies which types of resources AWS Config will recor
 #### YAML
 <a name="aws-properties-config-configurationrecorder-recordinggroup--examples--Record_specific_resource_types--yaml"></a>
 
-```
+```yaml
 AllSupported: false
 RecordingStrategy:
     UseOnly: INCLUSION_BY_RESOURCE_TYPES

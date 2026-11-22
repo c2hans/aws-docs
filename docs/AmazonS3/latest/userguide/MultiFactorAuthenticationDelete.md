@@ -27,7 +27,7 @@ You cannot use MFA delete with lifecycle configurations. For more information ab
 
 To enable or disable MFA delete, you use the same API that you use to configure versioning on a bucket. Amazon S3 stores the MFA delete configuration in the same *versioning* subresource that stores the bucket's versioning status.
 
-```
+```xml
 <VersioningConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
   <Status>{{VersioningState}}</Status>
   <MfaDelete>{{MfaDeleteState}}</MfaDelete>

@@ -105,7 +105,7 @@ You can use the Command Line Interface (CLI) to configure your EC2Launch setting
 **Note**
 The EC2Launch v2 CLI executable, `EC2Launch.exe`, resides in `C:\Program Files\Amazon\EC2Launch\`. By default, this directory is not in the Windows PATH. The `ec2launch {{command}}` form shown in the examples in this section is shorthand that a shell does not recognize directly. To run a command, use the full path to the executable, or first change to the installation directory. The following PowerShell example uses the full path with the call operator:
 
-```
+```powershell
 & "C:\Program Files\Amazon\EC2Launch\EC2Launch.exe" status
 ```
 
@@ -128,7 +128,7 @@ Collects log files for EC2Launch, zips the files, and places them in a specified
 
 **Example**
 
-```
+```bash
 ec2launch collect-logs -o C:\Mylogs.zip
 ```
 
@@ -153,7 +153,7 @@ Prints `agent-config.yml` in the format specified (JSON or YAML). If no format i
 
 **Example**
 
-```
+```bash
 ec2launch get-agent-config -f json
 ```
 
@@ -178,7 +178,7 @@ Lists all of the storage volumes attached to the instance, including ephemeral a
 
 **Example**
 
-```
+```bash
 ec2launch list-volumes
 ```
 
@@ -210,7 +210,7 @@ When your detached script issues a **reset** or **sysprep** command, those comma
 
 **Example**
 
-```
+```bash
 ec2launch reset -c
 ```
 
@@ -235,7 +235,7 @@ Runs EC2Launch v2.
 
 **Example**
 
-```
+```bash
 ec2launch run
 ```
 
@@ -266,14 +266,14 @@ Gets the status of the EC2Launch v2 agent. Optionally blocks the process until t
 
 **Example:**
 
-```
+```bash
 ec2launch status -b
 ```
 
 **Note**
 The `status` command writes a short message to the console (for example, `agent ran successfully`). However, the process exit code values listed previously determine the agent state, not that message. To view the exit code in PowerShell, read the `$LASTEXITCODE` automatic variable after you run the command, for example:
 
-```
+```powershell
 & "C:\Program Files\Amazon\EC2Launch\EC2Launch.exe" status; "ExitCode=$LASTEXITCODE"
 ```
 An output of `ExitCode=0` indicates that the agent ran successfully.
@@ -310,7 +310,7 @@ When your detached script issues a **reset** or **sysprep** command, those comma
 
 **Example:**
 
-```
+```bash
 ec2launch sysprep
 ```
 
@@ -339,7 +339,7 @@ Validates the `agent-config` file `C:\ProgramData\Amazon\EC2Launch\config\agent-
 
 **Example**
 
-```
+```bash
 ec2launch validate
 ```
 
@@ -360,7 +360,7 @@ Gets the executable version.
 
 **Example**
 
-```
+```bash
 ec2launch version
 ```
 
@@ -382,7 +382,7 @@ Sets new wallpaper to the wallpaper path that is provided (.jpg file), and displ
 #### Syntax
 <a name="lv2-wallpaper-syntax"></a>
 
-```
+```powershell
 ec2launch wallpaper ^
 --path="C:\ProgramData\Amazon\EC2Launch\wallpaper\Ec2Wallpaper.jpg" ^
 --all-tags ^
@@ -426,7 +426,7 @@ The structure of the `agent-config.yml` file is shown below. Note that a task ca
 
 **JSON**
 
-```
+```JSON
 {
 	"version": "1.1",
 	"config": [
@@ -449,7 +449,7 @@ The structure of the `agent-config.yml` file is shown below. Note that a task ca
 
 **YAML**
 
-```
+```yaml
 version: 1.1
 config:
 - stage: string
@@ -466,7 +466,7 @@ config:
 
 The following example shows settings for the `agent-config.yml` configuration file.
 
-```
+```yaml
 version: 1.1
 config:
 - stage: boot
@@ -515,7 +515,7 @@ A task must only appear once in the user data tasks array.
 
 **JSON**
 
-```
+```JSON
 {
 	"version": "1.1",
 	"tasks": [
@@ -532,7 +532,7 @@ A task must only appear once in the user data tasks array.
 
 **YAML**
 
-```
+```yaml
 version: 1.1
 tasks:
 - task: string
@@ -548,7 +548,7 @@ For more information about user data, see [How Amazon EC2 handles user data for 
 
 The following YAML document example shows a PowerShell script that EC2Launch v2 runs as user data to create a file.
 
-```
+```yaml
 version: 1.1
 tasks:
 - task: executeScript
@@ -568,7 +568,7 @@ You can add optional tags to customize how your script runs. For example, to run
 
 **Example:**
 
-```
+```ps
 <powershell>
   $file = $env:SystemRoot + "\Temp" + (Get-Date).ToString("MM-dd-yy-hh-mm")
   New-Item $file -ItemType file
@@ -580,7 +580,7 @@ You can specify one or more PowerShell arguments with the `<powershellArguments>
 
 **Example:**
 
-```
+```ps
 <powershell>
   $file = $env:SystemRoot + "\Temp" + (Get-Date).ToString("MM-dd-yy-hh-mm")
   New-Item $file -ItemType file
@@ -594,7 +594,7 @@ To run an XML user data script as a detached process, add the following tag to y
 
 **Example:**
 
-```
+```ps
 <powershell>
   $file = $env:SystemRoot + "\Temp" + (Get-Date).ToString("MM-dd-yy-hh-mm")
   New-Item $file -ItemType file

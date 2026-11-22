@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eventsv2-subscriber-batchconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MaxBatchSize](#cfn-eventsv2-subscriber-batchconfiguration-maxbatchsize)" : {{Integer}},
   "[MaxBatchWindowInSeconds](#cfn-eventsv2-subscriber-batchconfiguration-maxbatchwindowinseconds)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eventsv2-subscriber-batchconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MaxBatchSize](#cfn-eventsv2-subscriber-batchconfiguration-maxbatchsize): {{Integer}}
   [MaxBatchWindowInSeconds](#cfn-eventsv2-subscriber-batchconfiguration-maxbatchwindowinseconds): {{Integer}}
 ```

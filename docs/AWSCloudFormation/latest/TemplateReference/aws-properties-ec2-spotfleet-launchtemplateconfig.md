@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-spotfleet-launchtemplateconfig-syntax.json"></a>
 
-```
+```json
 {
   "[LaunchTemplateSpecification](#cfn-ec2-spotfleet-launchtemplateconfig-launchtemplatespecification)" : {{FleetLaunchTemplateSpecification}},
   "[Overrides](#cfn-ec2-spotfleet-launchtemplateconfig-overrides)" : {{[ LaunchTemplateOverrides, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-spotfleet-launchtemplateconfig-syntax.yaml"></a>
 
-```
+```yaml
   [LaunchTemplateSpecification](#cfn-ec2-spotfleet-launchtemplateconfig-launchtemplatespecification): {{
     FleetLaunchTemplateSpecification}}
   [Overrides](#cfn-ec2-spotfleet-launchtemplateconfig-overrides): {{

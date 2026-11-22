@@ -9,14 +9,14 @@ Shows the SQL statement that created the specified Athena or Data Catalog view. 
 ## Synopsis
 <a name="synopsis"></a>
 
-```
+```sql
 SHOW CREATE VIEW {{view_name}}
 ```
 
 ## Examples
 <a name="examples"></a>
 
-```
+```sql
 SHOW CREATE VIEW orders_by_date
 ```
 

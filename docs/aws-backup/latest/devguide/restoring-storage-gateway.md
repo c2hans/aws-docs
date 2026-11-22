@@ -46,7 +46,7 @@ In the command line interface, [`start-restore-job`](https://awscli.amazonaws.co
 
 The following list is the accepted metadata.
 
-```
+```json
 gatewayArn // The Amazon Resource Name (ARN) of the gateway. Use the ListGateways operation to return a list of gateways for your account and AWS Region.
 gatewayType // The type of created gateway. Valid value is BACKUP_VM
 targetName

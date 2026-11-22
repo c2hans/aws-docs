@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-prefetchschedule-availmatchingcriteria-syntax.json"></a>
 
-```
+```json
 {
   "[DynamicVariable](#cfn-mediatailor-prefetchschedule-availmatchingcriteria-dynamicvariable)" : {{String}},
   "[Operator](#cfn-mediatailor-prefetchschedule-availmatchingcriteria-operator)" : {{String}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-prefetchschedule-availmatchingcriteria-syntax.yaml"></a>
 
-```
+```yaml
   [DynamicVariable](#cfn-mediatailor-prefetchschedule-availmatchingcriteria-dynamicvariable): {{String}}
   [Operator](#cfn-mediatailor-prefetchschedule-availmatchingcriteria-operator): {{String}}
 ```

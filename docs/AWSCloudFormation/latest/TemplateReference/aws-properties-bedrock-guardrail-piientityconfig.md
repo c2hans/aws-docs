@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-guardrail-piientityconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-bedrock-guardrail-piientityconfig-action)" : {{String}},
   "[InputAction](#cfn-bedrock-guardrail-piientityconfig-inputaction)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-guardrail-piientityconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-bedrock-guardrail-piientityconfig-action): {{String}}
   [InputAction](#cfn-bedrock-guardrail-piientityconfig-inputaction): {{String}}
   [InputEnabled](#cfn-bedrock-guardrail-piientityconfig-inputenabled): {{Boolean}}

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-dlm-lifecyclepolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DLM::LifecyclePolicy",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-dlm-lifecyclepolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DLM::LifecyclePolicy
 Properties:
   [CopyTags](#cfn-dlm-lifecyclepolicy-copytags): {{Boolean}}
@@ -198,7 +198,7 @@ The following example demonstrates how to create a basic snapshot lifecycle poli
 #### JSON
 <a name="aws-resource-dlm-lifecyclepolicy--examples--Creating_a_Lifecycle_Policy--json"></a>
 
-```
+```json
 {
     "Description": "Basic LifecyclePolicy",
     "Resources": {
@@ -248,7 +248,7 @@ The following example demonstrates how to create a basic snapshot lifecycle poli
 #### YAML
 <a name="aws-resource-dlm-lifecyclepolicy--examples--Creating_a_Lifecycle_Policy--yaml"></a>
 
-```
+```yaml
 Description: Basic LifecyclePolicy
 Resources:
   BasicLifecyclePolicy:

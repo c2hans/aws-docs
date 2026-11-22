@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-pipetargethttpparameters-syntax.json"></a>
 
-```
+```json
 {
   "[HeaderParameters](#cfn-pipes-pipe-pipetargethttpparameters-headerparameters)" : {{{{{Key}}: {{Value}}, ...}}},
   "[PathParameterValues](#cfn-pipes-pipe-pipetargethttpparameters-pathparametervalues)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-pipetargethttpparameters-syntax.yaml"></a>
 
-```
+```yaml
   [HeaderParameters](#cfn-pipes-pipe-pipetargethttpparameters-headerparameters): {{
     {{Key}}: {{Value}}}}
   [PathParameterValues](#cfn-pipes-pipe-pipetargethttpparameters-pathparametervalues): {{

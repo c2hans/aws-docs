@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lambda-runtimeversion-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lambda::RuntimeVersion",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lambda-runtimeversion-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lambda::RuntimeVersion
 Properties:
   [ImageUri](#cfn-lambda-runtimeversion-imageuri): {{String}}
@@ -127,7 +127,7 @@ Publish a container image as version `v1` of the runtime `my-runtime`.
 #### JSON
 <a name="aws-resource-lambda-runtimeversion--examples--Runtime_version--json"></a>
 
-```
+```json
 "MyRuntimeVersion": {
     "Type": "AWS::Lambda::RuntimeVersion",
     "Properties": {
@@ -144,7 +144,7 @@ Publish a container image as version `v1` of the runtime `my-runtime`.
 #### YAML
 <a name="aws-resource-lambda-runtimeversion--examples--Runtime_version--yaml"></a>
 
-```
+```yaml
 MyRuntimeVersion:
   Type: AWS::Lambda::RuntimeVersion
   Properties:

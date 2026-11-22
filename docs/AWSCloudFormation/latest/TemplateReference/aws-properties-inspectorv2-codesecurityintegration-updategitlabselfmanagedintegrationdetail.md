@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-inspectorv2-codesecurityintegration-updategitlabselfmanagedintegrationdetail-syntax.json"></a>
 
-```
+```json
 {
   "[authCode](#cfn-inspectorv2-codesecurityintegration-updategitlabselfmanagedintegrationdetail-authcode)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-inspectorv2-codesecurityintegration-updategitlabselfmanagedintegrationdetail-syntax.yaml"></a>
 
-```
+```yaml
   [authCode](#cfn-inspectorv2-codesecurityintegration-updategitlabselfmanagedintegrationdetail-authcode): {{String}}
 ```
 

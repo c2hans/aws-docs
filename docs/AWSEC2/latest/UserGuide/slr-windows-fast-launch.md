@@ -46,7 +46,7 @@ If the service-linked role is deleted from your account, you can enable EC2 Fast
 
 To enable EC2 Fast Launch for an [encrypted AMI](AMIEncryption.md) that uses a customer managed key for encryption, you must grant the AWSServiceRoleForEC2FastLaunch role permission to use the CMK. To do this, call the [create-grant](https://docs.aws.amazon.com/cli/latest/reference/kms/create-grant.html) command. For `--grantee-principal`, specify the ARN for the AWSServiceRoleForEC2FastLaunch role in your account. For `--operations`, specify `CreateGrant`.
 
-```
+```bash
 aws kms create-grant \
     --key-id arn:aws:kms:{{us-east-1}}:{{111122223333}}:key/{{1234abcd-12ab-34cd-56ef-1234567890ab}} \
     --grantee-principal arn:aws:iam::{{111122223333}}:role/AWSServiceRoleForEC2FastLaunch \

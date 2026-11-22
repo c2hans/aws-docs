@@ -16,7 +16,7 @@ The following code example shows how to manage encryption options for DynamoDB t
 **AWS CLI with Bash script**
 Create a table with default encryption.
 
-```
+```bash
 # Create a table with default encryption (AWS owned key)
 aws dynamodb create-table \
     --table-name CustomerData \
@@ -29,7 +29,7 @@ aws dynamodb create-table \
 ```
 Create a table with a customer managed CMK.
 
-```
+```bash
 # Step 1: Create a customer managed key in KMS
 aws kms create-key \
     --description "Key for DynamoDB table encryption" \
@@ -51,7 +51,7 @@ aws dynamodb create-table \
 ```
 Update table encryption.
 
-```
+```bash
 # Update a table to use a different KMS key
 aws dynamodb update-table \
     --table-name CustomerData \
@@ -59,7 +59,7 @@ aws dynamodb update-table \
 ```
 Describe table encryption.
 
-```
+```bash
 # Describe the table to see encryption settings
 aws dynamodb describe-table \
     --table-name CustomerData \

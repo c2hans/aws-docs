@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-flow-s3sourceproperties-syntax.json"></a>
 
-```
+```json
 {
   "[BucketName](#cfn-appflow-flow-s3sourceproperties-bucketname)" : {{String}},
   "[BucketPrefix](#cfn-appflow-flow-s3sourceproperties-bucketprefix)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-flow-s3sourceproperties-syntax.yaml"></a>
 
-```
+```yaml
   [BucketName](#cfn-appflow-flow-s3sourceproperties-bucketname): {{String}}
   [BucketPrefix](#cfn-appflow-flow-s3sourceproperties-bucketprefix): {{String}}
   [S3InputFormatConfig](#cfn-appflow-flow-s3sourceproperties-s3inputformatconfig): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-accountauditconfiguration-devicecertageauditcheckconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Configuration](#cfn-iot-accountauditconfiguration-devicecertageauditcheckconfiguration-configuration)" : {{CertAgeCheckCustomConfiguration}},
   "[Enabled](#cfn-iot-accountauditconfiguration-devicecertageauditcheckconfiguration-enabled)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-accountauditconfiguration-devicecertageauditcheckconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Configuration](#cfn-iot-accountauditconfiguration-devicecertageauditcheckconfiguration-configuration): {{
     CertAgeCheckCustomConfiguration}}
   [Enabled](#cfn-iot-accountauditconfiguration-devicecertageauditcheckconfiguration-enabled): {{Boolean}}

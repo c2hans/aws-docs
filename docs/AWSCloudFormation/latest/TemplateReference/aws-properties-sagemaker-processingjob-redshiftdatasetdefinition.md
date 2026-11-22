@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-processingjob-redshiftdatasetdefinition-syntax.json"></a>
 
-```
+```json
 {
   "[ClusterId](#cfn-sagemaker-processingjob-redshiftdatasetdefinition-clusterid)" : {{String}},
   "[ClusterRoleArn](#cfn-sagemaker-processingjob-redshiftdatasetdefinition-clusterrolearn)" : {{String}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-processingjob-redshiftdatasetdefinition-syntax.yaml"></a>
 
-```
+```yaml
   [ClusterId](#cfn-sagemaker-processingjob-redshiftdatasetdefinition-clusterid): {{String}}
   [ClusterRoleArn](#cfn-sagemaker-processingjob-redshiftdatasetdefinition-clusterrolearn): {{String}}
   [Database](#cfn-sagemaker-processingjob-redshiftdatasetdefinition-database): {{String}}

@@ -8,13 +8,13 @@ Subscribes to the unified AI Agents message stream. The handler fires for all me
 
  **Signature**
 
-```
+```typescript
 onAIAgentMessageReceived(handler: AIAgentMessageHandler, contactId?: string): void
 ```
 
  **Usage**
 
-```
+```typescript
 const handler: AIAgentMessageHandler = (data: AIAgentMessageEvent) => {
     console.log("Message type:", data.message.type);
     console.log("Content:", data.message.response.value);
@@ -57,6 +57,6 @@ aiAgentsClient.onAIAgentMessageReceived(handler, contactId);
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

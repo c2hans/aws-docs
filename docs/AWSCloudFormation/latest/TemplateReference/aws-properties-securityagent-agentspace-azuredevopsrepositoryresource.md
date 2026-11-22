@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityagent-agentspace-azuredevopsrepositoryresource-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-securityagent-agentspace-azuredevopsrepositoryresource-name)" : {{String}},
   "[Organization](#cfn-securityagent-agentspace-azuredevopsrepositoryresource-organization)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityagent-agentspace-azuredevopsrepositoryresource-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-securityagent-agentspace-azuredevopsrepositoryresource-name): {{String}}
   [Organization](#cfn-securityagent-agentspace-azuredevopsrepositoryresource-organization): {{String}}
   [Project](#cfn-securityagent-agentspace-azuredevopsrepositoryresource-project): {{String}}

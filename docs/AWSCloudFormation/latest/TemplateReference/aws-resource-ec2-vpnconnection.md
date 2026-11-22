@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-vpnconnection-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::VPNConnection",
   "Properties" : {
@@ -51,7 +51,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-vpnconnection-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::VPNConnection
 Properties:
   [CustomerGatewayId](#cfn-ec2-vpnconnection-customergatewayid): {{String}}
@@ -237,7 +237,7 @@ The following example specifies a VPN connection between myVPNGateway and MyCust
 #### JSON
 <a name="aws-resource-ec2-vpnconnection--examples--VPN_connection--json"></a>
 
-```
+```json
 "myVPNConnection" : {
    "Type" : "AWS::EC2::VPNConnection",
    "Properties" : {
@@ -252,7 +252,7 @@ The following example specifies a VPN connection between myVPNGateway and MyCust
 #### YAML
 <a name="aws-resource-ec2-vpnconnection--examples--VPN_connection--yaml"></a>
 
-```
+```yaml
    myVPNConnection:
       Type: AWS::EC2::VPNConnection
       Properties:

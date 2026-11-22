@@ -287,7 +287,7 @@ Required: No
 
  ** InternetAccessGatewayEnabled **
 Indicates whether the DB cluster has internet-based connectivity enabled through an internet access gateway.
-This setting is applicable only for Aurora PostgreSQL clusters created through express configuration.
+Valid for Cluster Type: Aurora PostgreSQL DB clusters only
 Type: Boolean
 Required: No
 
@@ -510,8 +510,8 @@ Valid Values: `first | second | last`
 Required: No
 
  ** VPCNetworkingEnabled **
-Indicates whether the DB cluster uses VPC-based networking.
-This setting is applicable only for Aurora PostgreSQL clusters created through express configuration.
+Indicates whether the DB cluster uses VPC-based networking. The value is `false` only for an Aurora PostgreSQL DB cluster without VPC networking.
+Valid for Cluster Type: Aurora DB clusters and Multi-AZ DB clusters
 Type: Boolean
 Required: No
 

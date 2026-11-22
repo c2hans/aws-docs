@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-vpclattice-rule-pathmatchtype-syntax.json"></a>
 
-```
+```json
 {
   "[Exact](#cfn-vpclattice-rule-pathmatchtype-exact)" : {{String}},
   "[Prefix](#cfn-vpclattice-rule-pathmatchtype-prefix)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-vpclattice-rule-pathmatchtype-syntax.yaml"></a>
 
-```
+```yaml
   [Exact](#cfn-vpclattice-rule-pathmatchtype-exact): {{String}}
   [Prefix](#cfn-vpclattice-rule-pathmatchtype-prefix): {{String}}
 ```

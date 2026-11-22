@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-capacityprovider-launchtemplatesource-syntax.json"></a>
 
-```
+```json
 {
   "[LaunchParameters](#cfn-bedrockagentcore-capacityprovider-launchtemplatesource-launchparameters)" : {{LaunchParameters}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-capacityprovider-launchtemplatesource-syntax.yaml"></a>
 
-```
+```yaml
   [LaunchParameters](#cfn-bedrockagentcore-capacityprovider-launchtemplatesource-launchparameters): {{
     LaunchParameters}}
 ```

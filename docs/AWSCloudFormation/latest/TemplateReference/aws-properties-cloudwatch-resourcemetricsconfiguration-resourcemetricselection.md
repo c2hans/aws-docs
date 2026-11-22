@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-resourcemetricsconfiguration-resourcemetricselection-syntax.json"></a>
 
-```
+```json
 {
   "[IncludeMetrics](#cfn-cloudwatch-resourcemetricsconfiguration-resourcemetricselection-includemetrics)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-resourcemetricsconfiguration-resourcemetricselection-syntax.yaml"></a>
 
-```
+```yaml
   [IncludeMetrics](#cfn-cloudwatch-resourcemetricsconfiguration-resourcemetricselection-includemetrics): {{
     - String}}
 ```

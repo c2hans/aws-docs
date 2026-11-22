@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-sourcelocation-segmentdeliveryconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BaseUrl](#cfn-mediatailor-sourcelocation-segmentdeliveryconfiguration-baseurl)" : {{String}},
   "[Name](#cfn-mediatailor-sourcelocation-segmentdeliveryconfiguration-name)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-sourcelocation-segmentdeliveryconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BaseUrl](#cfn-mediatailor-sourcelocation-segmentdeliveryconfiguration-baseurl): {{String}}
   [Name](#cfn-mediatailor-sourcelocation-segmentdeliveryconfiguration-name): {{String}}
 ```

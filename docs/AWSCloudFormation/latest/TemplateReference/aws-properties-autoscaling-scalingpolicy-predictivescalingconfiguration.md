@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-autoscaling-scalingpolicy-predictivescalingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MaxCapacityBreachBehavior](#cfn-autoscaling-scalingpolicy-predictivescalingconfiguration-maxcapacitybreachbehavior)" : {{String}},
   "[MaxCapacityBuffer](#cfn-autoscaling-scalingpolicy-predictivescalingconfiguration-maxcapacitybuffer)" : {{Integer}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-autoscaling-scalingpolicy-predictivescalingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MaxCapacityBreachBehavior](#cfn-autoscaling-scalingpolicy-predictivescalingconfiguration-maxcapacitybreachbehavior): {{String}}
   [MaxCapacityBuffer](#cfn-autoscaling-scalingpolicy-predictivescalingconfiguration-maxcapacitybuffer): {{Integer}}
   [MetricSpecifications](#cfn-autoscaling-scalingpolicy-predictivescalingconfiguration-metricspecifications): {{

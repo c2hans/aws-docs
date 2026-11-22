@@ -101,7 +101,7 @@ The type of logger and the verbosity are specified during the SDK initialization
 
 The default logger will write to the filesystem and the file is named using the following convention `aws_sdk_YYYY-MM-DD-HH.log`. The logger creates a new file on the hour.
 
-```
+```cpp
 Aws::SDKOptions options;
 options.loggingOptions.logLevel = Aws::Utils::Logging::LogLevel::Debug;
 Aws::InitAPI(options);
@@ -121,7 +121,7 @@ You can configure logging by using SDK for Go. For more information, see [Loggin
 
 You can enable logging for specific requests or responses to catch and return only relevant headers. To do this, import the `com.amazonaws.services.s3.S3ResponseMetadata` class. Afterward, you can store the request in a variable before performing the actual request. To get the logged request or response, call `getCachedResponseMetadata(AmazonWebServiceRequest request).getRequestID()`.
 
-```
+```java
 PutObjectRequest req = new PutObjectRequest(bucketName, key, createSampleFile());
 s3.putObject(req);
 S3ResponseMetadata md = s3.getCachedResponseMetadata(req);
@@ -135,7 +135,7 @@ Alternatively, you can use verbose logging of every Java request and response. F
 
 The AWS SDK for JavaScript has a built-in logger so you can log API calls you make with it. To turn on the logger and print log entries in the console, add the following statement to your code:
 
-```
+```javascript
 AWS.config.logger = console;
 ```
 
@@ -148,7 +148,7 @@ With the AWS SDK for Kotlin, you can specify log mode for wire-level messages us
 
 To opt into additional logging, set the `logMode` property when you construct a service client:
 
-```
+```kotlin
 import aws.smithy.kotlin.runtime.client.LogMode
 
 // ...
@@ -180,7 +180,7 @@ By default, the returned log contains only error information. To get the request
 
 You can get debug information, including the data sent over the wire, by setting the debug option to `true` in a client constructor.
 
-```
+```php
 $s3Client = new Aws\S3\S3Client([
     'region'  => 'us-standard',
     'version' => '2006-03-01',
@@ -195,7 +195,7 @@ For more information, see [How can I see what data is sent over the wire?](https
 
 With the AWS SDK for Python (Boto3), you can log specific responses. You can use this feature to capture only the relevant headers. The following code shows how to log parts of the response to a file:
 
-```
+```python
 import logging
 import boto3
 logging.basicConfig(filename='logfile.txt', level=logging.INFO)
@@ -212,7 +212,7 @@ You can also catch exceptions and log relevant information when an exception is 
 
 Additionally, you can configure Boto3 to output verbose debugging logs by using the following code:
 
-```
+```python
 import logging
 import boto3
 boto3.set_stream_logger('', logging.DEBUG)
@@ -225,7 +225,7 @@ For more information, see [set\_stream\_logger](https://boto3.amazonaws.com/v1/d
 
 You can get your request IDs using the SDK for Ruby Version 3. You can enable HTTP wire logging in your client using the following code:
 
-```
+```ruby
 s3 = Aws::S3::Client.new(http_wire_trace: true)
 ```
 
@@ -234,7 +234,7 @@ Wire logging can include sensitive information, such as your access key ID. Sens
 
 You can also find the request ID of the request context object in the request response or error:
 
-```
+```ruby
 # Finding the request ID from an error:
 begin
   s3.put_object(bucket: 'bucket', key: 'key', body: 'test')
@@ -258,13 +258,13 @@ To enable logging, add the `tracing-subscriber` crate and initialize it in your 
 
 Add the tracing library to your `Cargo.toml` file:
 
-```
+```rust
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 ```
 
 Then, in your Rust code, initialize the logger in the main function before you call any SDK operation:
 
-```
+```rust
 tracing_subscriber::fmt::init();
 ```
 

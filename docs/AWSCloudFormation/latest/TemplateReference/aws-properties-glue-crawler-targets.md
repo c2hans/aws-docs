@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-crawler-targets-syntax.json"></a>
 
-```
+```json
 {
   "[CatalogTargets](#cfn-glue-crawler-targets-catalogtargets)" : {{[ CatalogTarget, ... ]}},
   "[DeltaTargets](#cfn-glue-crawler-targets-deltatargets)" : {{[ DeltaTarget, ... ]}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-crawler-targets-syntax.yaml"></a>
 
-```
+```yaml
   [CatalogTargets](#cfn-glue-crawler-targets-catalogtargets): {{
     - CatalogTarget}}
   [DeltaTargets](#cfn-glue-crawler-targets-deltatargets): {{

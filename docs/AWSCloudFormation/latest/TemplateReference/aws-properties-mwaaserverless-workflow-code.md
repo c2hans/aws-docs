@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mwaaserverless-workflow-code-syntax.json"></a>
 
-```
+```json
 {
   "[S3Location](#cfn-mwaaserverless-workflow-code-s3location)" : {{CodeS3Location}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mwaaserverless-workflow-code-syntax.yaml"></a>
 
-```
+```yaml
   [S3Location](#cfn-mwaaserverless-workflow-code-s3location): {{
     CodeS3Location}}
 ```

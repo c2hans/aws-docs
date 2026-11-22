@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-agentregistry-registry-recordtypeschemaoverride-syntax.json"></a>
 
-```
+```json
 {
   "[RecordType](#cfn-agentregistry-registry-recordtypeschemaoverride-recordtype)" : {{String}},
   "[Schema](#cfn-agentregistry-registry-recordtypeschemaoverride-schema)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-agentregistry-registry-recordtypeschemaoverride-syntax.yaml"></a>
 
-```
+```yaml
   [RecordType](#cfn-agentregistry-registry-recordtypeschemaoverride-recordtype): {{String}}
   [Schema](#cfn-agentregistry-registry-recordtypeschemaoverride-schema): {{String}}
 ```

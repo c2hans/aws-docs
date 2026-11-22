@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elementalinference-feed-templategroup-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-elementalinference-feed-templategroup-name)" : {{String}},
   "[TemplateUris](#cfn-elementalinference-feed-templategroup-templateuris)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elementalinference-feed-templategroup-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-elementalinference-feed-templategroup-name): {{String}}
   [TemplateUris](#cfn-elementalinference-feed-templategroup-templateuris): {{
     - String}}

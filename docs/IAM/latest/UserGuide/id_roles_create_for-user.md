@@ -111,7 +111,7 @@ In this example, include the following trust policy in the first command when yo
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -137,7 +137,7 @@ When you use the second command, you must attach an existing managed policy to t
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

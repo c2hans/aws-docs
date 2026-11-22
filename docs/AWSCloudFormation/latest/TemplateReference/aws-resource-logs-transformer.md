@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-logs-transformer-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Logs::Transformer",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-logs-transformer-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Logs::Transformer
 Properties:
   [LogGroupIdentifier](#cfn-logs-transformer-loggroupidentifier): {{String}}

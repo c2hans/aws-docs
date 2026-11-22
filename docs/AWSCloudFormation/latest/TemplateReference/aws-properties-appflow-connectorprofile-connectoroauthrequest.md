@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-connectorprofile-connectoroauthrequest-syntax.json"></a>
 
-```
+```json
 {
   "[AuthCode](#cfn-appflow-connectorprofile-connectoroauthrequest-authcode)" : {{String}},
   "[RedirectUri](#cfn-appflow-connectorprofile-connectoroauthrequest-redirecturi)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-connectorprofile-connectoroauthrequest-syntax.yaml"></a>
 
-```
+```yaml
   [AuthCode](#cfn-appflow-connectorprofile-connectoroauthrequest-authcode): {{String}}
   [RedirectUri](#cfn-appflow-connectorprofile-connectoroauthrequest-redirecturi): {{String}}
 ```

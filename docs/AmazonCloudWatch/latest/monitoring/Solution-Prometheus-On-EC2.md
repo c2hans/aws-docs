@@ -38,7 +38,7 @@ Install and run each exporter on your instances by following its official docume
 
 After you start an exporter, confirm that it exposes metrics by querying its endpoint from the instance:
 
-```
+```bash
 curl http://localhost:{{port-number}}/metrics
 ```
 
@@ -47,7 +47,7 @@ curl http://localhost:{{port-number}}/metrics
 
 The following example uses `static_configs` with the instance private DNS names to scrape a sample application (port 8080) and Node Exporter (port 9100) on your Amazon EC2 instances. The `relabel_configs` section adds consistent labels to your metrics so that you can query and filter across services. For the full set of supported configuration options, see [Scraper configuration](managed-prometheus-collectors-scraper-configuration.md).
 
-```
+```yaml
 global:
   scrape_interval: 30s
   scrape_timeout: 10s
@@ -89,7 +89,7 @@ You can use [GetDefaultScraperConfiguration](https://docs.aws.amazon.com/prometh
 
 Use the `CreateScraper` API operation to create a scraper with a CloudWatch destination. Replace the subnet, security group, and dataset information with your own values.
 
-```
+```json
 POST /scrapers HTTP/1.1
 
 {
@@ -116,7 +116,7 @@ POST /scrapers HTTP/1.1
 
 Use the `create-scraper` command to create a scraper with a CloudWatch destination. Replace the subnet, security group, and dataset information with your own values.
 
-```
+```bash
 aws amp create-scraper \
   --alias "ec2-payment-service-scraper" \
   --source '{
@@ -142,7 +142,7 @@ When you create a managed collector, Amazon Managed Service for Prometheus autom
 
 Within minutes, metrics begin flowing to your CloudWatch dataset. To confirm that your metrics arrive, run an ad-hoc query in CloudWatch using [Query Studio](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-PromQL-QueryStudio.html). For example, the following query returns the metrics for the `ec2-metrics` job:
 
-```
+```bash
 {job="ec2-metrics"}
 ```
 

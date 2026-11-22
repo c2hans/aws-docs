@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-networksecuritymanager-template-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::NetworkSecurityManager::Template",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-networksecuritymanager-template-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::NetworkSecurityManager::Template
 Properties:
   [AssociatedRuleList](#cfn-networksecuritymanager-template-associatedrulelist): {{
@@ -61,8 +61,9 @@ This property is required when you create a template. You must associate at leas
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `FirewallType`  <a name="cfn-networksecuritymanager-template-firewalltype"></a>
-The type of firewall that the template configures. `WAF` specifies an AWS WAF template. All rules that you associate with the template must use the same firewall type.
+The type of firewall that the template configures. `WAF` specifies an AWS WAF template. `IGW_FIREWALL` specifies a template for AWS Network Firewall automated internet firewall policies. All rules that you associate with the template must use the same firewall type.
 This property is required when you create a template. You can't change the firewall type after you create the template.
+The values `NETWORK_FIREWALL` and `NETWORK_FIREWALL_V2` are reserved and not supported. AWS Network Security Manager rejects a template that specifies either of them.
 *Required*: Conditional
 *Type*: String
 *Allowed values*: `WAF | NETWORK_FIREWALL | NETWORK_FIREWALL_V2 | IGW_FIREWALL`
@@ -79,9 +80,7 @@ For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/la
 A description of the template.
 *Required*: No
 *Type*: String
-*Pattern*: `[a-zA-Z0-9 _.:/=+\-@]*`
-*Minimum*: `0`
-*Maximum*: `256`
+*Pattern*: `^[a-zA-Z0-9 _.:/=+\-@]*$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TemplateName`  <a name="cfn-networksecuritymanager-template-templatename"></a>
@@ -89,9 +88,7 @@ The name of the template.
 You can't change the name of a template after you create it.
 *Required*: Yes
 *Type*: String
-*Pattern*: `[a-zA-Z0-9][a-zA-Z0-9 _.:/=+\-@]*`
-*Minimum*: `1`
-*Maximum*: `128`
+*Pattern*: `^[a-zA-Z0-9][a-zA-Z0-9 _.:/=+\-@]*$`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
@@ -129,7 +126,7 @@ The Amazon Resource Name (ARN) of the template.
 The service-generated id of the template.
 
 `UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
-The time when the resource was last updated. For a snapshot, this is the time when the snapshot was created.
+The date and time when the template was last updated, in ISO 8601 format. For example: `2026-11-19T21:42:56Z`.
 
 `Version`  <a name="Version-fn::getatt"></a>
 The version of the template. AWS Network Security Manager assigns version `1` when it publishes the template and increments the version each time the template is published again, including each time CloudFormation updates it.
@@ -143,7 +140,7 @@ The version of the template. AWS Network Security Manager assigns version `1` wh
 #### YAML
 <a name="aws-resource-networksecuritymanager-template--examples--Group_a_rule_into_a_reusable_template--yaml"></a>
 
-```
+```yaml
                 AWSTemplateFormatVersion: "2010-09-09"
                 Description: Groups Network Security Manager rules into a reusable template.
                 Resources:

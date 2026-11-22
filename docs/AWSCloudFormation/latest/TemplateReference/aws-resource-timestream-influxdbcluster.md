@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-timestream-influxdbcluster-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Timestream::InfluxDBCluster",
   "Properties" : {
@@ -47,7 +47,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-timestream-influxdbcluster-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Timestream::InfluxDBCluster
 Properties:
   [AllocatedStorage](#cfn-timestream-influxdbcluster-allocatedstorage): {{Integer}}

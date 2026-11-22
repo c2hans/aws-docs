@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-rds-dbcluster-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RDS::DBCluster",
   "Properties" : {
@@ -116,7 +116,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-rds-dbcluster-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RDS::DBCluster
 Properties:
   [AllocatedStorage](#cfn-rds-dbcluster-allocatedstorage): {{Integer}}
@@ -922,7 +922,7 @@ The example uses the `time_zone` Aurora MySQL parameter. For Aurora PostgreSQL, 
 #### JSON
 <a name="aws-resource-rds-dbcluster--examples--Creating_an_Amazon_Aurora_DB_cluster_with_two_DB_instances--json"></a>
 
-```
+```json
 {
     "Parameters": {
         "Username": {
@@ -1019,7 +1019,7 @@ The example uses the `time_zone` Aurora MySQL parameter. For Aurora PostgreSQL, 
 #### YAML
 <a name="aws-resource-rds-dbcluster--examples--Creating_an_Amazon_Aurora_DB_cluster_with_two_DB_instances--yaml"></a>
 
-```
+```yaml
 Parameters:
   Username:
     NoEcho: 'true'
@@ -1096,7 +1096,7 @@ The following example creates an Amazon Aurora PostgreSQL DB cluster that export
 #### JSON
 <a name="aws-resource-rds-dbcluster--examples--Creating_an_Amazon_Aurora_DB_cluster_that_exports_logs_to_Amazon_CloudWatch_Logs--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion" : "2010-09-09",
 
@@ -1174,7 +1174,7 @@ The following example creates an Amazon Aurora PostgreSQL DB cluster that export
 #### YAML
 <a name="aws-resource-rds-dbcluster--examples--Creating_an_Amazon_Aurora_DB_cluster_that_exports_logs_to_Amazon_CloudWatch_Logs--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: >-
   AWS CloudFormation Sample Template for sending Aurora DB cluster logs to
@@ -1237,7 +1237,7 @@ The following example creates a Multi-AZ DB cluster. A Multi-AZ DB cluster provi
 #### JSON
 <a name="aws-resource-rds-dbcluster--examples--Creating_a_Multi-AZ_DB_cluster--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "CloudFormation template to create a MySQL Multi-AZ DB cluster with encryption, CloudWatch logs, deletion protection, and allocated storage.",
@@ -1276,7 +1276,7 @@ The following example creates a Multi-AZ DB cluster. A Multi-AZ DB cluster provi
 #### YAML
 <a name="aws-resource-rds-dbcluster--examples--Creating_a_Multi-AZ_DB_cluster--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Description: "CloudFormation template to create a MySQL Multi-AZ DB cluster with encryption, CloudWatch logs, deletion protection, and allocated storage."
 Parameters:
@@ -1317,7 +1317,7 @@ This example creates an Aurora MySQL Serverless v2 DB cluster by setting `Engine
 #### JSON
 <a name="aws-resource-rds-dbcluster--examples--Creating_an_Amazon_Aurora_Serverless_v2_DB_cluster--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "ServerlessV2 Cluster",
@@ -1386,7 +1386,7 @@ This example creates an Aurora MySQL Serverless v2 DB cluster by setting `Engine
 #### YAML
 <a name="aws-resource-rds-dbcluster--examples--Creating_an_Amazon_Aurora_Serverless_v2_DB_cluster--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: ServerlessV2 Cluster
 Parameters:
@@ -1434,7 +1434,7 @@ This example creates an Aurora MySQL Serverless DB cluster by setting `Engine` t
 #### JSON
 <a name="aws-resource-rds-dbcluster--examples--Creating_an_Amazon_Aurora_Serverless_v1_DB_cluster--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion" : "2010-09-09",
 
@@ -1489,7 +1489,7 @@ This example creates an Aurora MySQL Serverless DB cluster by setting `Engine` t
 #### YAML
 <a name="aws-resource-rds-dbcluster--examples--Creating_an_Amazon_Aurora_Serverless_v1_DB_cluster--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: >-
   AWS CloudFormation Sample Template AuroraServerlessDBCluster: Sample template
@@ -1540,7 +1540,7 @@ For more information about managing password with Secrets Manager, see [Password
 #### JSON
 <a name="aws-resource-rds-dbcluster--examples--Create_a_Secrets_Manager_secret_for_a_master_password--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "A sample template",
@@ -1611,7 +1611,7 @@ For more information about managing password with Secrets Manager, see [Password
 #### YAML
 <a name="aws-resource-rds-dbcluster--examples--Create_a_Secrets_Manager_secret_for_a_master_password--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Description: A sample template
 Resources:
@@ -1662,7 +1662,7 @@ The following example restores an Amazon Aurora DB cluster. The example assumes 
 #### JSON
 <a name="aws-resource-rds-dbcluster--examples--Restoring_an_Amazon_Aurora_DB_cluster--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "AWS CloudFormation Sample Template To Restore AuroraDBCluster: Sample template showing how to restore an Amazon Aurora DB cluster. **WARNING** This template creates an Amazon Aurora DB cluster. You will be billed for the AWS resources used if you create a stack from this template.",
@@ -1686,7 +1686,7 @@ The following example restores an Amazon Aurora DB cluster. The example assumes 
 #### YAML
 <a name="aws-resource-rds-dbcluster--examples--Restoring_an_Amazon_Aurora_DB_cluster--yaml"></a>
 
-```
+```yaml
 Description: >-
   AWS CloudFormation Sample Template To Restore AuroraDBCluster: Sample template
   showing how to restore an Amazon Aurora DB cluster. **WARNING** This
@@ -1714,7 +1714,7 @@ With express configuration, Amazon RDS creates a writer DB instance and sets def
 #### JSON
 <a name="aws-resource-rds-dbcluster--examples--Creating_an_Aurora_PostgreSQL_DB_cluster_with_express_configuration--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "CloudFormation Sample Template ExpressCluster: Sample template showing how to create an Amazon Aurora PostgreSQL DB cluster with WithExpressConfiguration set to true. **WARNING** This template creates an Amazon Aurora DB cluster and a DB instance. You will be billed for the resources used if you create a stack from this template.",
@@ -1740,7 +1740,7 @@ With express configuration, Amazon RDS creates a writer DB instance and sets def
 #### YAML
 <a name="aws-resource-rds-dbcluster--examples--Creating_an_Aurora_PostgreSQL_DB_cluster_with_express_configuration--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: >-
   CloudFormation Sample Template ExpressCluster: Sample template

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-fsx-backup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::FSx::Backup",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-fsx-backup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::FSx::Backup
 Properties:
   [FileSystemId](#cfn-fsx-backup-filesystemid): {{String}}

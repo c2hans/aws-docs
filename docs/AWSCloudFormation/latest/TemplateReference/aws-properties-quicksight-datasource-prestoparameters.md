@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-datasource-prestoparameters-syntax.json"></a>
 
-```
+```json
 {
   "[Catalog](#cfn-quicksight-datasource-prestoparameters-catalog)" : {{String}},
   "[Host](#cfn-quicksight-datasource-prestoparameters-host)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-datasource-prestoparameters-syntax.yaml"></a>
 
-```
+```yaml
   [Catalog](#cfn-quicksight-datasource-prestoparameters-catalog): {{String}}
   [Host](#cfn-quicksight-datasource-prestoparameters-host): {{String}}
   [Port](#cfn-quicksight-datasource-prestoparameters-port): {{Number}}

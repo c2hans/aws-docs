@@ -20,7 +20,7 @@ You must enable replica modification sync on both the source and destination buc
 
 In the following example configuration, Amazon S3 replicates metadata changes under the prefix `{{Tax}}` to the bucket `{{amzn-s3-demo-source-bucket}}`, which contains the source objects.
 
-```
+```json
 {
     "Rules": [
         {

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ivs-adconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IVS::AdConfiguration",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ivs-adconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IVS::AdConfiguration
 Properties:
   [MediaTailorPlaybackConfigurations](#cfn-ivs-adconfiguration-mediatailorplaybackconfigurations): {{

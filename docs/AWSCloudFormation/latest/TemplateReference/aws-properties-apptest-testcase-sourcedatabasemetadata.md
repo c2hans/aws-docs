@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apptest-testcase-sourcedatabasemetadata-syntax.json"></a>
 
-```
+```json
 {
   "[CaptureTool](#cfn-apptest-testcase-sourcedatabasemetadata-capturetool)" : {{String}},
   "[Type](#cfn-apptest-testcase-sourcedatabasemetadata-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apptest-testcase-sourcedatabasemetadata-syntax.yaml"></a>
 
-```
+```yaml
   [CaptureTool](#cfn-apptest-testcase-sourcedatabasemetadata-capturetool): {{String}}
   [Type](#cfn-apptest-testcase-sourcedatabasemetadata-type): {{String}}
 ```

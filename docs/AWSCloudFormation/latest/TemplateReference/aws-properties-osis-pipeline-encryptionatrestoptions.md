@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-osis-pipeline-encryptionatrestoptions-syntax.json"></a>
 
-```
+```json
 {
   "[KmsKeyArn](#cfn-osis-pipeline-encryptionatrestoptions-kmskeyarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-osis-pipeline-encryptionatrestoptions-syntax.yaml"></a>
 
-```
+```yaml
   [KmsKeyArn](#cfn-osis-pipeline-encryptionatrestoptions-kmskeyarn): {{String}}
 ```
 

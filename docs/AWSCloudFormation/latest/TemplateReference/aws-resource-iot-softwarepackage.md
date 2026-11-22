@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iot-softwarepackage-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoT::SoftwarePackage",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iot-softwarepackage-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoT::SoftwarePackage
 Properties:
   [Description](#cfn-iot-softwarepackage-description): {{String}}
@@ -125,7 +125,7 @@ The following example declares a software package and the values of its attribut
 #### JSON
 <a name="aws-resource-iot-softwarepackage--examples----json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -149,7 +149,7 @@ The following example declares a software package and the values of its attribut
 #### YAML
 <a name="aws-resource-iot-softwarepackage--examples----yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   MySoftwarePackage:

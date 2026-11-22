@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-vpcendpoint-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::VPCEndpoint",
   "Properties" : {
@@ -47,7 +47,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-vpcendpoint-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::VPCEndpoint
 Properties:
   [DnsOptions](#cfn-ec2-vpcendpoint-dnsoptions): {{
@@ -91,7 +91,7 @@ The supported IP address types.
 An endpoint policy, which controls access to the service from the VPC. The default endpoint policy allows full access to the service. Endpoint policies are supported only for gateway and interface endpoints.
 For CloudFormation templates in YAML, you can provide the policy in JSON or YAML format. For example, if you have a JSON policy, you can convert it to YAML before including it in the YAML template, and AWS CloudFormation converts the policy to JSON format before calling the API actions for AWS PrivateLink. Alternatively, you can include the JSON directly in the YAML, as shown in the following `Properties` section:
 
-```
+```yaml
 Properties:
   VpcEndpointType: 'Interface'
   ServiceName: !Sub 'com.amazonaws.${AWS::Region}.logs'
@@ -236,7 +236,7 @@ You can customize the properties of `myVPC`, `subnetA`, `subnetB`, and `mySecuri
 #### YAML
 <a name="aws-resource-ec2-vpcendpoint--examples--Create_an_interface_endpoint--yaml"></a>
 
-```
+```yaml
 Resources:
   CWLInterfaceEndpoint:
     Type: 'AWS::EC2::VPCEndpoint'
@@ -286,7 +286,7 @@ Resources:
 #### JSON
 <a name="aws-resource-ec2-vpcendpoint--examples--Create_an_interface_endpoint--json"></a>
 
-```
+```json
 {
     "Resources": {
         "CWLInterfaceEndpoint": {
@@ -399,7 +399,7 @@ You can customize the properties of `myVPC`, `mySubnet`, `myRouteTable`, and `my
 #### YAML
 <a name="aws-resource-ec2-vpcendpoint--examples--Create_a_gateway_endpoint--yaml"></a>
 
-```
+```yaml
 Resources:
   S3GatewayEndpoint:
     Type: 'AWS::EC2::VPCEndpoint'
@@ -447,7 +447,7 @@ Resources:
 #### JSON
 <a name="aws-resource-ec2-vpcendpoint--examples--Create_a_gateway_endpoint--json"></a>
 
-```
+```json
 {
     "Resources": {
         "S3GatewayEndpoint": {
@@ -546,7 +546,7 @@ You can customize the properties of `myVPC` and `mySubnet` as needed. Alternativ
 #### YAML
 <a name="aws-resource-ec2-vpcendpoint--examples--Create_a_Gateway_Load_Balancer_endpoint--yaml"></a>
 
-```
+```yaml
 Resources:
   GWLBEndpoint:
     Type: 'AWS::EC2::VPCEndpoint'
@@ -576,7 +576,7 @@ Resources:
 #### JSON
 <a name="aws-resource-ec2-vpcendpoint--examples--Create_a_Gateway_Load_Balancer_endpoint--json"></a>
 
-```
+```json
 {
     "Resources": {
         "GWLBEndpoint": {
@@ -637,7 +637,7 @@ The following example creates a resource endpoint that you can use to access a s
 #### YAML
 <a name="aws-resource-ec2-vpcendpoint--examples--Create_a_resource_endpoint--yaml"></a>
 
-```
+```yaml
 Resources:
   myResourceEndpoint:
     Type: 'AWS::EC2::VPCEndpoint'
@@ -669,7 +669,7 @@ Resources:
 #### JSON
 <a name="aws-resource-ec2-vpcendpoint--examples--Create_a_resource_endpoint--json"></a>
 
-```
+```json
 {
     "Resources": {
         "myResourceEndpoint": {
@@ -733,7 +733,7 @@ The following example creates a service network endpoint that you can use to acc
 #### YAML
 <a name="aws-resource-ec2-vpcendpoint--examples--Create_a_service_network_endpoint--yaml"></a>
 
-```
+```yaml
 Resources:
   myServiceNetworkEndpoint:
     Type: 'AWS::EC2::VPCEndpoint'
@@ -754,7 +754,7 @@ Resources:
 #### JSON
 <a name="aws-resource-ec2-vpcendpoint--examples--Create_a_service_network_endpoint--json"></a>
 
-```
+```json
 {
     "Resources": {
         "myServiceNetworkEndpoint": {

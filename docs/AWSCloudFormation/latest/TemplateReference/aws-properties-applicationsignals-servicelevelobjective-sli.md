@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationsignals-servicelevelobjective-sli-syntax.json"></a>
 
-```
+```json
 {
   "[ComparisonOperator](#cfn-applicationsignals-servicelevelobjective-sli-comparisonoperator)" : {{String}},
   "[MetricThreshold](#cfn-applicationsignals-servicelevelobjective-sli-metricthreshold)" : {{Number}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationsignals-servicelevelobjective-sli-syntax.yaml"></a>
 
-```
+```yaml
   [ComparisonOperator](#cfn-applicationsignals-servicelevelobjective-sli-comparisonoperator): {{String}}
   [MetricThreshold](#cfn-applicationsignals-servicelevelobjective-sli-metricthreshold): {{Number}}
   [SliMetric](#cfn-applicationsignals-servicelevelobjective-sli-slimetric): {{

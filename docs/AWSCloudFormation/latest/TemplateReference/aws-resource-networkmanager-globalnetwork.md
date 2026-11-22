@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-networkmanager-globalnetwork-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::NetworkManager::GlobalNetwork",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-networkmanager-globalnetwork-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::NetworkManager::GlobalNetwork
 Properties:
   [CreatedAt](#cfn-networkmanager-globalnetwork-createdat): {{String}}
@@ -110,7 +110,7 @@ The following example creates a global network.
 #### JSON
 <a name="aws-resource-networkmanager-globalnetwork--examples--Global_Network--json"></a>
 
-```
+```json
 {
     "Type": "AWS::NetworkManager::GlobalNetwork",
     "Properties": {
@@ -128,7 +128,7 @@ The following example creates a global network.
 #### YAML
 <a name="aws-resource-networkmanager-globalnetwork--examples--Global_Network--yaml"></a>
 
-```
+```yaml
 Type: 'AWS::NetworkManager::GlobalNetwork'
 Properties:
   Description: Global network for USA sites

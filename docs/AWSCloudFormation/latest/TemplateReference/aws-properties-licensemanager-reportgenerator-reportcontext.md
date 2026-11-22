@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-licensemanager-reportgenerator-reportcontext-syntax.json"></a>
 
-```
+```json
 {
   "[LicenseAssetGroupArns](#cfn-licensemanager-reportgenerator-reportcontext-licenseassetgrouparns)" : {{[ String, ... ]}},
   "[LicenseConfigurationArns](#cfn-licensemanager-reportgenerator-reportcontext-licenseconfigurationarns)" : {{[ String, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-licensemanager-reportgenerator-reportcontext-syntax.yaml"></a>
 
-```
+```yaml
   [LicenseAssetGroupArns](#cfn-licensemanager-reportgenerator-reportcontext-licenseassetgrouparns): {{
     - String}}
   [LicenseConfigurationArns](#cfn-licensemanager-reportgenerator-reportcontext-licenseconfigurationarns): {{

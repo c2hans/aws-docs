@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 
 The `02-Write-Data.cs` program writes test data to `TryDaxTable`.
 
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-eventsourcemapping-destinationconfig-syntax.json"></a>
 
-```
+```json
 {
   "[OnFailure](#cfn-lambda-eventsourcemapping-destinationconfig-onfailure)" : {{OnFailure}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-eventsourcemapping-destinationconfig-syntax.yaml"></a>
 
-```
+```yaml
   [OnFailure](#cfn-lambda-eventsourcemapping-destinationconfig-onfailure): {{
     OnFailure}}
 ```
@@ -50,7 +50,7 @@ Configure a function to send a record of failed batches to an SQS queue.
 #### YAML
 <a name="aws-properties-lambda-eventsourcemapping-destinationconfig--examples--On-Failure_Destination_Configuration--yaml"></a>
 
-```
+```yaml
       DestinationConfig:
           OnFailure:
             Destination: arn:aws:sqs:us-east-2:123456789012:dlq

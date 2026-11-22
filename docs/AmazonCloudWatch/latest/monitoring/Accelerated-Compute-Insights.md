@@ -48,7 +48,7 @@ You can run a query in any of the following places:
 
 Filter and group your queries by the cluster, namespace, pod, and container that the metric came from. The following example query returns average GPU utilization for each pod in a namespace, which shows you which workloads are using your accelerators. Replace {{namespace}} with your namespace.
 
-```
+```promql
 avg by ("@resource.k8s.pod.name") (
   DCGM_FI_DEV_GPU_UTIL{"@resource.k8s.namespace.name"="{{namespace}}"}
 )

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-postdialogcodehookinvocationspecification-syntax.json"></a>
 
-```
+```json
 {
   "[FailureConditional](#cfn-lex-bot-postdialogcodehookinvocationspecification-failureconditional)" : {{ConditionalSpecification}},
   "[FailureNextStep](#cfn-lex-bot-postdialogcodehookinvocationspecification-failurenextstep)" : {{DialogState}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-postdialogcodehookinvocationspecification-syntax.yaml"></a>
 
-```
+```yaml
   [FailureConditional](#cfn-lex-bot-postdialogcodehookinvocationspecification-failureconditional): {{
     ConditionalSpecification}}
   [FailureNextStep](#cfn-lex-bot-postdialogcodehookinvocationspecification-failurenextstep): {{

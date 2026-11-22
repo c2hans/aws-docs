@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-syntax.json"></a>
 
-```
+```json
 {
   "[AllocationStrategy](#cfn-ec2-spotfleet-spotfleetrequestconfigdata-allocationstrategy)" : {{String}},
   "[Context](#cfn-ec2-spotfleet-spotfleetrequestconfigdata-context)" : {{String}},
@@ -49,7 +49,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-syntax.yaml"></a>
 
-```
+```yaml
   [AllocationStrategy](#cfn-ec2-spotfleet-spotfleetrequestconfigdata-allocationstrategy): {{String}}
   [Context](#cfn-ec2-spotfleet-spotfleetrequestconfigdata-context): {{String}}
   [ExcessCapacityTerminationPolicy](#cfn-ec2-spotfleet-spotfleetrequestconfigdata-excesscapacityterminationpolicy): {{String}}

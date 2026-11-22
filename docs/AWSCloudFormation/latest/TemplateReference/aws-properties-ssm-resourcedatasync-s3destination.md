@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssm-resourcedatasync-s3destination-syntax.json"></a>
 
-```
+```json
 {
   "[BucketName](#cfn-ssm-resourcedatasync-s3destination-bucketname)" : {{String}},
   "[BucketPrefix](#cfn-ssm-resourcedatasync-s3destination-bucketprefix)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssm-resourcedatasync-s3destination-syntax.yaml"></a>
 
-```
+```yaml
   [BucketName](#cfn-ssm-resourcedatasync-s3destination-bucketname): {{String}}
   [BucketPrefix](#cfn-ssm-resourcedatasync-s3destination-bucketprefix): {{String}}
   [BucketRegion](#cfn-ssm-resourcedatasync-s3destination-bucketregion): {{String}}

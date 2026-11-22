@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-clientvpnendpoint-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::ClientVpnEndpoint",
   "Properties" : {
@@ -50,7 +50,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-clientvpnendpoint-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::ClientVpnEndpoint
 Properties:
   [AuthenticationOptions](#cfn-ec2-clientvpnendpoint-authenticationoptions): {{
@@ -269,7 +269,7 @@ The following example creates a Client VPN endpoint that uses Active Directory a
 #### YAML
 <a name="aws-resource-ec2-clientvpnendpoint--examples--Client_VPN_endpoint--yaml"></a>
 
-```
+```yaml
 myClientVpnEndpoint:
   Type: AWS::EC2::ClientVpnEndpoint
   Properties:
@@ -297,7 +297,7 @@ myClientVpnEndpoint:
 #### JSON
 <a name="aws-resource-ec2-clientvpnendpoint--examples--Client_VPN_endpoint--json"></a>
 
-```
+```json
 "myClientVpnEndpoint": {
     "Type": "AWS::EC2::ClientVpnEndpoint",
     "Properties": {

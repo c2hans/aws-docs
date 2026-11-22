@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-gameliftstreams-streamgroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::GameLiftStreams::StreamGroup",
   "Properties" : {
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-gameliftstreams-streamgroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::GameLiftStreams::StreamGroup
 Properties:
   [DefaultApplication](#cfn-gameliftstreams-streamgroup-defaultapplication): {{

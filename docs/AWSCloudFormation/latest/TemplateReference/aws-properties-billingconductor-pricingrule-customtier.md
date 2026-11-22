@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-billingconductor-pricingrule-customtier-syntax.json"></a>
 
-```
+```json
 {
   "[BeginRangeInclusive](#cfn-billingconductor-pricingrule-customtier-beginrangeinclusive)" : {{Number}},
   "[EndRangeExclusive](#cfn-billingconductor-pricingrule-customtier-endrangeexclusive)" : {{Number}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-billingconductor-pricingrule-customtier-syntax.yaml"></a>
 
-```
+```yaml
   [BeginRangeInclusive](#cfn-billingconductor-pricingrule-customtier-beginrangeinclusive): {{Number}}
   [EndRangeExclusive](#cfn-billingconductor-pricingrule-customtier-endrangeexclusive): {{Number}}
   [RateValue](#cfn-billingconductor-pricingrule-customtier-ratevalue): {{Number}}

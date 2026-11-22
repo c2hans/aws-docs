@@ -92,7 +92,7 @@ https://autoscaling.amazonaws.com/?Action=DescribeInstanceRefreshes
 #### Sample Response
 <a name="API_DescribeInstanceRefreshes_Example_1_Response"></a>
 
-```
+```xml
 <DescribeInstanceRefreshesResponse xmlns="https://autoscaling.amazonaws.com/doc/2011-01-01/">
   <DescribeInstanceRefreshesResult>
     <InstanceRefreshes>

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-observabilityadmin-organizationcentralizationrule-loggroupnameconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[LogGroupNamePattern](#cfn-observabilityadmin-organizationcentralizationrule-loggroupnameconfiguration-loggroupnamepattern)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-observabilityadmin-organizationcentralizationrule-loggroupnameconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [LogGroupNamePattern](#cfn-observabilityadmin-organizationcentralizationrule-loggroupnameconfiguration-loggroupnamepattern): {{String}}
 ```
 

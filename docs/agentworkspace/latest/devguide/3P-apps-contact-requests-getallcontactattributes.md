@@ -8,13 +8,13 @@ Returns every attribute of the contact as a map of attribute key to value. The m
 
  **Signature**
 
-```
+```typescript
 getAllContactAttributes(contactId: string): Promise<Record<string, string>>
 ```
 
  **Usage**
 
-```
+```typescript
 const attributes = await contactClient.getAllContactAttributes(contactId);
 // { "accountId": "12345", "priority": "" }
 ```
@@ -31,6 +31,6 @@ Requires an instance that is scoped to the contact that you pass in `contactId`,
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewayrule-fallbacktarget-syntax.json"></a>
 
-```
+```json
 {
   "[FirstByteTimeoutMilliseconds](#cfn-bedrockagentcore-gatewayrule-fallbacktarget-firstbytetimeoutmilliseconds)" : {{Integer}},
   "[Model](#cfn-bedrockagentcore-gatewayrule-fallbacktarget-model)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewayrule-fallbacktarget-syntax.yaml"></a>
 
-```
+```yaml
   [FirstByteTimeoutMilliseconds](#cfn-bedrockagentcore-gatewayrule-fallbacktarget-firstbytetimeoutmilliseconds): {{Integer}}
   [Model](#cfn-bedrockagentcore-gatewayrule-fallbacktarget-model): {{String}}
   [TargetName](#cfn-bedrockagentcore-gatewayrule-fallbacktarget-targetname): {{String}}

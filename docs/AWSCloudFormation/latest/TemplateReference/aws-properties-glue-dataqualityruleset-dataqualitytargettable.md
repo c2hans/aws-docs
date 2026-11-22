@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-dataqualityruleset-dataqualitytargettable-syntax.json"></a>
 
-```
+```json
 {
   "[DatabaseName](#cfn-glue-dataqualityruleset-dataqualitytargettable-databasename)" : {{String}},
   "[TableName](#cfn-glue-dataqualityruleset-dataqualitytargettable-tablename)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-dataqualityruleset-dataqualitytargettable-syntax.yaml"></a>
 
-```
+```yaml
   [DatabaseName](#cfn-glue-dataqualityruleset-dataqualitytargettable-databasename): {{String}}
   [TableName](#cfn-glue-dataqualityruleset-dataqualitytargettable-tablename): {{String}}
 ```

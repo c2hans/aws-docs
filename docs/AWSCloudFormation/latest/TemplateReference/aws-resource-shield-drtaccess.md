@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-shield-drtaccess-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Shield::DRTAccess",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-shield-drtaccess-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Shield::DRTAccess
 Properties:
   [LogBucketList](#cfn-shield-drtaccess-logbucketlist): {{
@@ -113,7 +113,7 @@ The following shows an example configuration to provide access to the Shield res
 #### YAML
 <a name="aws-resource-shield-drtaccess--examples--Configure_access_for_the_Shield_response_team--yaml"></a>
 
-```
+```yaml
 Resources:
   DRTAccess:
     Type: AWS::Shield::DRTAccess
@@ -140,7 +140,7 @@ Resources:
 #### JSON
 <a name="aws-resource-shield-drtaccess--examples--Configure_access_for_the_Shield_response_team--json"></a>
 
-```
+```json
 {
     "Resources": {
         "DRTAccess": {
@@ -190,7 +190,7 @@ The following shows an example configuration to provide access to the Shield res
 #### YAML
 <a name="aws-resource-shield-drtaccess--examples--Configure_access_for_the_Shield_response_team_with_additional_data_access--yaml"></a>
 
-```
+```yaml
 Resources:
   DRTAccess:
     Type: AWS::Shield::DRTAccess
@@ -228,7 +228,7 @@ Resources:
 #### JSON
 <a name="aws-resource-shield-drtaccess--examples--Configure_access_for_the_Shield_response_team_with_additional_data_access--json"></a>
 
-```
+```json
 {
     "Resources": {
         "DRTAccess": {

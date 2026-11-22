@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-vpclattice-targetgroup-healthcheckconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-vpclattice-targetgroup-healthcheckconfig-enabled)" : {{Boolean}},
   "[HealthCheckIntervalSeconds](#cfn-vpclattice-targetgroup-healthcheckconfig-healthcheckintervalseconds)" : {{Integer}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-vpclattice-targetgroup-healthcheckconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-vpclattice-targetgroup-healthcheckconfig-enabled): {{Boolean}}
   [HealthCheckIntervalSeconds](#cfn-vpclattice-targetgroup-healthcheckconfig-healthcheckintervalseconds): {{Integer}}
   [HealthCheckTimeoutSeconds](#cfn-vpclattice-targetgroup-healthcheckconfig-healthchecktimeoutseconds): {{Integer}}

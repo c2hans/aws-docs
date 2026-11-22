@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-datatablerecord-datatablerecord-syntax.json"></a>
 
-```
+```json
 {
   "[PrimaryValues](#cfn-connect-datatablerecord-datatablerecord-primaryvalues)" : {{[ Value, ... ]}},
   "[Values](#cfn-connect-datatablerecord-datatablerecord-values)" : {{[ Value, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-datatablerecord-datatablerecord-syntax.yaml"></a>
 
-```
+```yaml
   [PrimaryValues](#cfn-connect-datatablerecord-datatablerecord-primaryvalues): {{
     - Value}}
   [Values](#cfn-connect-datatablerecord-datatablerecord-values): {{

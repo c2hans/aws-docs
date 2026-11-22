@@ -8,12 +8,12 @@ Unsubscribes the callback function from the contact StartingAcw event in the Con
 
  **Signature**
 
-```
+```typescript
 offStartingAcw(handler: ContactStartingAcwHandler, contactId?: string)
 ```
 
  **Usage**
 
-```
+```typescript
 contactClient.offStartingAcw(handler);
 ```

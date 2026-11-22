@@ -14,7 +14,7 @@ The following example Lambda function can return a binary image from Amazon S3 o
 ------
 #### [ Node.js ]
 
-```
+```javascript
 import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3"
 
 const client = new S3Client({region: '{{us-east-2}}'});
@@ -57,7 +57,7 @@ export const handler = async (event) => {
 ------
 #### [ Python ]
 
-```
+```python
 import base64
 import boto3
 import json

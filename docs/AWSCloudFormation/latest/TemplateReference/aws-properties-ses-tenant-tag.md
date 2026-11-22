@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-tenant-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-ses-tenant-tag-key)" : {{String}},
   "[Value](#cfn-ses-tenant-tag-value)" : {{String}}
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-tenant-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-ses-tenant-tag-key): {{String}}
   [Value](#cfn-ses-tenant-tag-value): {{String}}
 ```

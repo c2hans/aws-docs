@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-channel-firehoselogdestination-syntax.json"></a>
 
-```
+```json
 {
   "[DeliveryStream](#cfn-msk-channel-firehoselogdestination-deliverystream)" : {{String}},
   "[Enabled](#cfn-msk-channel-firehoselogdestination-enabled)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-channel-firehoselogdestination-syntax.yaml"></a>
 
-```
+```yaml
   [DeliveryStream](#cfn-msk-channel-firehoselogdestination-deliverystream): {{String}}
   [Enabled](#cfn-msk-channel-firehoselogdestination-enabled): {{Boolean}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-b2bi-partnership-x12controlnumbers-syntax.json"></a>
 
-```
+```json
 {
   "[StartingFunctionalGroupControlNumber](#cfn-b2bi-partnership-x12controlnumbers-startingfunctionalgroupcontrolnumber)" : {{Number}},
   "[StartingInterchangeControlNumber](#cfn-b2bi-partnership-x12controlnumbers-startinginterchangecontrolnumber)" : {{Number}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-b2bi-partnership-x12controlnumbers-syntax.yaml"></a>
 
-```
+```yaml
   [StartingFunctionalGroupControlNumber](#cfn-b2bi-partnership-x12controlnumbers-startingfunctionalgroupcontrolnumber): {{
     Number}}
   [StartingInterchangeControlNumber](#cfn-b2bi-partnership-x12controlnumbers-startinginterchangecontrolnumber): {{

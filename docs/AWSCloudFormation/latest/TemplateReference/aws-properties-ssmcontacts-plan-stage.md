@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssmcontacts-plan-stage-syntax.json"></a>
 
-```
+```json
 {
   "[DurationInMinutes](#cfn-ssmcontacts-plan-stage-durationinminutes)" : {{Integer}},
   "[Targets](#cfn-ssmcontacts-plan-stage-targets)" : {{[ Targets, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssmcontacts-plan-stage-syntax.yaml"></a>
 
-```
+```yaml
   [DurationInMinutes](#cfn-ssmcontacts-plan-stage-durationinminutes): {{Integer}}
   [Targets](#cfn-ssmcontacts-plan-stage-targets): {{
     - Targets}}

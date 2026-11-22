@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appstream-directoryconfig-serviceaccountcredentials-syntax.json"></a>
 
-```
+```json
 {
   "[AccountName](#cfn-appstream-directoryconfig-serviceaccountcredentials-accountname)" : {{String}},
   "[AccountPassword](#cfn-appstream-directoryconfig-serviceaccountcredentials-accountpassword)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appstream-directoryconfig-serviceaccountcredentials-syntax.yaml"></a>
 
-```
+```yaml
   [AccountName](#cfn-appstream-directoryconfig-serviceaccountcredentials-accountname): {{String}}
   [AccountPassword](#cfn-appstream-directoryconfig-serviceaccountcredentials-accountpassword): {{String}}
 ```

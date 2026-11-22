@@ -20,7 +20,7 @@ To avoid security risks, don't use IAM users for authentication when developing 
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sts#code-examples).
 Create an IAM user, register an MFA device, and create a role that grants permission to let the user list S3 buckets only when MFA credentials are used.
 
-```
+```python
 def setup(iam_resource):
     """
     Creates a new user with no permissions.
@@ -102,7 +102,7 @@ def setup(iam_resource):
 ```
 Get temporary session credentials by passing an MFA token, and use the credentials to list S3 buckets for the account.
 
-```
+```python
 def list_buckets_with_session_token_with_mfa(mfa_serial_number, mfa_totp, sts_client):
     """
     Gets a session token with MFA credentials and uses the temporary session
@@ -136,7 +136,7 @@ def list_buckets_with_session_token_with_mfa(mfa_serial_number, mfa_totp, sts_cl
 ```
 Destroy the resources created for the demo.
 
-```
+```python
 def teardown(user, virtual_mfa_device):
     """
     Removes all resources created during setup.
@@ -158,7 +158,7 @@ def teardown(user, virtual_mfa_device):
 ```
 Run this scenario by using the previously defined functions.
 
-```
+```python
 def usage_demo():
     """Drives the demonstration."""
     print("-" * 88)

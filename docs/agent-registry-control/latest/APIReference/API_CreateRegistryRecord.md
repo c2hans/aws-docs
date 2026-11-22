@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 
 # CreateRegistryRecord
 
-Creates a registry record within a registry. A registry record describes a discoverable resource, such as an MCP server, an agent, an agent skill, or a custom resource. Creation is asynchronous: the record is returned with the CREATING status while it is processed.
+Creates a registry record within a registry. A registry record describes a discoverable resource, such as an MCP server, an agent, an agent skill, or a custom resource. For an agent skill, you can upload a skill package in `artifact`, or synchronize the skill from an Amazon S3 or GitHub source. Creation is asynchronous: the operation returns the record with the `CREATING` status while the registry processes it. If a GitHub user must first authorize access to the source, the operation returns the record with the `CREATE_PENDING_AUTH` status instead.
 
 ## Request Syntax
 <a name="API_CreateRegistryRecord_RequestSyntax"></a>
@@ -14,6 +14,10 @@ POST /registries/{{registryId}}/records HTTP/1.1
 Content-type: application/json
 
 {
+   "artifact": {
+      "content": {{blob}},
+      "sha256": "{{string}}"
+   },
    "clientToken": "{{string}}",
    "customMetadata": {{JSON value}},
    "description": "{{string}}",
@@ -35,6 +39,7 @@ Content-type: application/json
       },
       "agentSkillsDefinition": {
          "additionalData": {
+            "repositoryProvider": "{{string}}",
             "skillMd": {
                "data": "{{string}}",
                "dataSchemaVersion": "{{string}}",
@@ -49,7 +54,21 @@ Content-type: application/json
                      "url": "{{string}}"
                   }
                }
-            }
+            },
+            "skillPackage": {
+               "source": {
+                  "fromUrl": {
+                     "credentialProviderConfigurations": [
+                        {
+                           "credentialProvider": { ... },
+                           "credentialProviderType": "{{string}}"
+                        }
+                     ],
+                     "url": "{{string}}"
+                  }
+               }
+            },
+            "sourceConfiguration": { ... }
          },
          "data": "{{string}}",
          "dataSchemaVersion": "{{string}}"
@@ -139,6 +158,11 @@ Required: Yes
 
 The request accepts the following data in JSON format.
 
+ ** [artifact](#API_CreateRegistryRecord_RequestSyntax) **   <a name="agentregistrycontrol-CreateRegistryRecord-request-artifact"></a>
+The skill package to store with the record, for a record of type `SKILL` with an `agentSkillsDefinition` descriptor. The registry validates the package after the operation returns and sets `skillMd.data` from the package's SKILL.md. A request that uploads a package can't also set a skill source or send new `skillMd.data`.
+Type: [RegistryRecordArtifactUpload](API_RegistryRecordArtifactUpload.md) object
+Required: No
+
  ** [clientToken](#API_CreateRegistryRecord_RequestSyntax) **   <a name="agentregistrycontrol-CreateRegistryRecord-request-clientToken"></a>
 Client token for idempotency
 Type: String
@@ -212,6 +236,7 @@ HTTP/1.1 202
 Content-type: application/json
 
 {
+   "authorizationData": { ... },
    "recordArn": "string",
    "status": "string"
 }
@@ -224,6 +249,11 @@ If the action is successful, the service sends back an HTTP 202 response.
 
 The following data is returned in JSON format by the service.
 
+ ** [authorizationData](#API_CreateRegistryRecord_ResponseSyntax) **   <a name="agentregistrycontrol-CreateRegistryRecord-response-authorizationData"></a>
+The authorization that a GitHub user must complete before the record's synchronization starts. Present only in this response, and only while the status is `CREATE_PENDING_AUTH`. If the status is `CREATE_PENDING_AUTH` but this member is absent, call `UpdateRegistryRecord` with `triggerSynchronization` to get a new authorization link.
+Type: [AuthorizationData](API_AuthorizationData.md) object
+ **Note: **This object is a Union. Only one member of this object can be specified or returned.
+
  ** [recordArn](#API_CreateRegistryRecord_ResponseSyntax) **   <a name="agentregistrycontrol-CreateRegistryRecord-response-recordArn"></a>
 The ARN of the created registry record
 Type: String
@@ -231,9 +261,9 @@ Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `arn:aws(-[^:]+)?:agent-registry:[a-z0-9-]+:[0-9]{12}:registry/[a-zA-Z0-9]{12,16}/record/[a-zA-Z0-9]{12}`
 
  ** [status](#API_CreateRegistryRecord_ResponseSyntax) **   <a name="agentregistrycontrol-CreateRegistryRecord-response-status"></a>
-The status of the registry record, set to CREATING while the asynchronous workflow is in progress
+The status of the registry record. `CREATING` means that the asynchronous workflow is in progress. `CREATE_PENDING_AUTH` means that the record waits for a GitHub user to authorize access before it synchronizes from its GitHub source. For the authorization link, see `authorizationData`.
 Type: String
-Valid Values: `DRAFT | PENDING_APPROVAL | APPROVED | REJECTED | DEPRECATED | CREATING | UPDATING | CREATE_FAILED | UPDATE_FAILED`
+Valid Values: `DRAFT | PENDING_APPROVAL | APPROVED | REJECTED | DEPRECATED | CREATING | UPDATING | CREATE_FAILED | UPDATE_FAILED | CREATE_PENDING_AUTH | UPDATE_PENDING_AUTH`
 
 ## Errors
 <a name="API_CreateRegistryRecord_Errors"></a>

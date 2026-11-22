@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-realtimelogconfig-endpoint-syntax.json"></a>
 
-```
+```json
 {
   "[KinesisStreamConfig](#cfn-cloudfront-realtimelogconfig-endpoint-kinesisstreamconfig)" : {{KinesisStreamConfig}},
   "[StreamType](#cfn-cloudfront-realtimelogconfig-endpoint-streamtype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-realtimelogconfig-endpoint-syntax.yaml"></a>
 
-```
+```yaml
   [KinesisStreamConfig](#cfn-cloudfront-realtimelogconfig-endpoint-kinesisstreamconfig): {{
     KinesisStreamConfig}}
   [StreamType](#cfn-cloudfront-realtimelogconfig-endpoint-streamtype): {{String}}

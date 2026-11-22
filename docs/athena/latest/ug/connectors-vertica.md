@@ -35,7 +35,7 @@ The following diagram shows the workflow of a query that uses the Vertica connec
 
 1. The connector wraps the SQL query with a Vertica `EXPORT` command, as in the following example.
 
-   ```
+   ```sql
    EXPORT TO PARQUET (directory = 's3://amzn-s3-demo-bucket/{{folder_name}},
       Compression='Snappy', fileSizeMB=64) OVER() as
    SELECT
@@ -221,7 +221,7 @@ The Vertica connector supports [passthrough queries](federated-query-passthrough
 
 To use passthrough queries with Vertica, you can use the following syntax:
 
-```
+```sql
 SELECT * FROM TABLE(
         system.query(
             query => '{{query string}}'
@@ -230,7 +230,7 @@ SELECT * FROM TABLE(
 
 The following example query pushes down a query to a data source in Vertica. The query selects all columns in the `customer` table, limiting the results to 10.
 
-```
+```sql
 SELECT * FROM TABLE(
         system.query(
             query => 'SELECT * FROM customer LIMIT 10'

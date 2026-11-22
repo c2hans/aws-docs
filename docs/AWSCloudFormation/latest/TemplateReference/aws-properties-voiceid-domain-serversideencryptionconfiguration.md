@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-voiceid-domain-serversideencryptionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[KmsKeyId](#cfn-voiceid-domain-serversideencryptionconfiguration-kmskeyid)" : {{String}}
 }
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-voiceid-domain-serversideencryptionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [KmsKeyId](#cfn-voiceid-domain-serversideencryptionconfiguration-kmskeyid): {{String}}
 ```
 

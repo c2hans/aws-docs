@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotfleetwise-signalcatalog-branch-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-iotfleetwise-signalcatalog-branch-description)" : {{String}},
   "[FullyQualifiedName](#cfn-iotfleetwise-signalcatalog-branch-fullyqualifiedname)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotfleetwise-signalcatalog-branch-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-iotfleetwise-signalcatalog-branch-description): {{String}}
   [FullyQualifiedName](#cfn-iotfleetwise-signalcatalog-branch-fullyqualifiedname): {{String}}
 ```

@@ -26,7 +26,7 @@ fields jsonParse(@message) as json_message
 
 The log event for this example query could be a JSON string as follows:
 
-```
+```json
 {
    "events": [
         {

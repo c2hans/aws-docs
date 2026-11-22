@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-alias-routingstrategy-syntax.json"></a>
 
-```
+```json
 {
   "[FleetId](#cfn-gamelift-alias-routingstrategy-fleetid)" : {{String}},
   "[Message](#cfn-gamelift-alias-routingstrategy-message)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-alias-routingstrategy-syntax.yaml"></a>
 
-```
+```yaml
   [FleetId](#cfn-gamelift-alias-routingstrategy-fleetid): {{String}}
   [Message](#cfn-gamelift-alias-routingstrategy-message): {{String}}
   [Type](#cfn-gamelift-alias-routingstrategy-type): {{String}}

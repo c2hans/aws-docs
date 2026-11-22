@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticache-globalreplicationgroup-reshardingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[NodeGroupId](#cfn-elasticache-globalreplicationgroup-reshardingconfiguration-nodegroupid)" : {{String}},
   "[PreferredAvailabilityZones](#cfn-elasticache-globalreplicationgroup-reshardingconfiguration-preferredavailabilityzones)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticache-globalreplicationgroup-reshardingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [NodeGroupId](#cfn-elasticache-globalreplicationgroup-reshardingconfiguration-nodegroupid): {{String}}
   [PreferredAvailabilityZones](#cfn-elasticache-globalreplicationgroup-reshardingconfiguration-preferredavailabilityzones): {{
     - String}}

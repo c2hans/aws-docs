@@ -102,7 +102,7 @@ If you wish to make any modifications to the agent configuration, you must apply
 
 Use the following CloudWatch agent configuration on Amazon EC2 instances where your workloads are deployed.
 
-```
+```json
 {
     "agent": {
       "metrics_collection_interval": 60,

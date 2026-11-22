@@ -24,7 +24,7 @@ Because Firehose does not use resource policies, AWS uses IAM roles when setting
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -57,7 +57,7 @@ This service-linked role also has a trust policy that allows the `delivery.logs.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

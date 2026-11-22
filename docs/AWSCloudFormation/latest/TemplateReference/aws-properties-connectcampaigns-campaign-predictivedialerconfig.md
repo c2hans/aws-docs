@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connectcampaigns-campaign-predictivedialerconfig-syntax.json"></a>
 
-```
+```json
 {
   "[BandwidthAllocation](#cfn-connectcampaigns-campaign-predictivedialerconfig-bandwidthallocation)" : {{Number}},
   "[DialingCapacity](#cfn-connectcampaigns-campaign-predictivedialerconfig-dialingcapacity)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connectcampaigns-campaign-predictivedialerconfig-syntax.yaml"></a>
 
-```
+```yaml
   [BandwidthAllocation](#cfn-connectcampaigns-campaign-predictivedialerconfig-bandwidthallocation): {{Number}}
   [DialingCapacity](#cfn-connectcampaigns-campaign-predictivedialerconfig-dialingcapacity): {{Number}}
 ```

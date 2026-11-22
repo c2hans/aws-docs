@@ -34,7 +34,7 @@ If you receive this error, your ACM or PKI administrator has set rules that prev
 
 The following example error occurs when an IAM user tries to use the console to request a certificate using options that are configured with a `DENY` by the organization administrator.
 
-```
+```text
 User: arn:aws:sts::{{account}}::{{ID}}: is not authorized to perform: acm:RequestCertificate
 on resource: arn:aws:acm:{{region}}:{{account}}:certificate/*
 with an explicit deny in a service control policy

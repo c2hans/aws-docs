@@ -32,7 +32,7 @@ To require dual-layer server-side encryption of all objects in a particular Amaz
 
 ****
 
-```
+```json
 {
              "Version":"2012-10-17",
              "Id": "PutObjectPolicy",

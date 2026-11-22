@@ -58,7 +58,7 @@ For an example of the API request, see [CreateDataSource](https://docs.aws.amazo
 
 The following is the SharePoint Server (Subscription Edition) JSON schema:
 
-```
+```json
 {
   "type": "object",
   "properties": {
@@ -620,7 +620,7 @@ The following is the SharePoint Server (Subscription Edition) JSON schema:
 
 The following is the SharePoint Server (Subscription Edition) JSON schema example:
 
-```
+```json
 {
 
   "type": "SHAREPOINTV2",

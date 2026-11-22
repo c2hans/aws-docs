@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskdefinition-mountpoint-syntax.json"></a>
 
-```
+```json
 {
   "[ContainerPath](#cfn-ecs-taskdefinition-mountpoint-containerpath)" : {{String}},
   "[ReadOnly](#cfn-ecs-taskdefinition-mountpoint-readonly)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskdefinition-mountpoint-syntax.yaml"></a>
 
-```
+```yaml
   [ContainerPath](#cfn-ecs-taskdefinition-mountpoint-containerpath): {{String}}
   [ReadOnly](#cfn-ecs-taskdefinition-mountpoint-readonly): {{Boolean}}
   [SourceVolume](#cfn-ecs-taskdefinition-mountpoint-sourcevolume): {{String}}

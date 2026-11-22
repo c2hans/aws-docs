@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-logs-transformer-datetimeconverter-syntax.json"></a>
 
-```
+```json
 {
   "[Locale](#cfn-logs-transformer-datetimeconverter-locale)" : {{String}},
   "[MatchPatterns](#cfn-logs-transformer-datetimeconverter-matchpatterns)" : {{[ String, ... ]}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-logs-transformer-datetimeconverter-syntax.yaml"></a>
 
-```
+```yaml
   [Locale](#cfn-logs-transformer-datetimeconverter-locale): {{String}}
   [MatchPatterns](#cfn-logs-transformer-datetimeconverter-matchpatterns): {{
     - String}}

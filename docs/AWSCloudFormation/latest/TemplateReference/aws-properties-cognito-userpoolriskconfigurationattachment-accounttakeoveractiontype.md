@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpoolriskconfigurationattachment-accounttakeoveractiontype-syntax.json"></a>
 
-```
+```json
 {
   "[EventAction](#cfn-cognito-userpoolriskconfigurationattachment-accounttakeoveractiontype-eventaction)" : {{String}},
   "[Notify](#cfn-cognito-userpoolriskconfigurationattachment-accounttakeoveractiontype-notify)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpoolriskconfigurationattachment-accounttakeoveractiontype-syntax.yaml"></a>
 
-```
+```yaml
   [EventAction](#cfn-cognito-userpoolriskconfigurationattachment-accounttakeoveractiontype-eventaction): {{String}}
   [Notify](#cfn-cognito-userpoolriskconfigurationattachment-accounttakeoveractiontype-notify): {{Boolean}}
 ```

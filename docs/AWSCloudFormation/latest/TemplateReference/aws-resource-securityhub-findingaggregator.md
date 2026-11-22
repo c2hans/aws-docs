@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-securityhub-findingaggregator-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SecurityHub::FindingAggregator",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-securityhub-findingaggregator-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SecurityHub::FindingAggregator
 Properties:
   [RegionLinkingMode](#cfn-securityhub-findingaggregator-regionlinkingmode): {{String}}
@@ -102,7 +102,7 @@ The following example configures cross-Region aggregation. The region in which t
 #### JSON
 <a name="aws-resource-securityhub-findingaggregator--examples--Configuring_cross-Region_aggregation--json"></a>
 
-```
+```json
 {
 	"Description": "Example template to configure Security Hub cross-Region aggregation",
 	"Resources": {
@@ -120,7 +120,7 @@ The following example configures cross-Region aggregation. The region in which t
 #### YAML
 <a name="aws-resource-securityhub-findingaggregator--examples--Configuring_cross-Region_aggregation--yaml"></a>
 
-```
+```yaml
 Description: Example template to configure Security Hub cross-Region aggregation
 Resources:
   SecurityHubFindingAggregator:

@@ -14,7 +14,7 @@ The following AWS SDK and AWS CLI examples show how to use the `HeadObject` and 
 
 **Example**
 
-```
+```JavaV2
 public static void headObject(S3Client s3Client, String bucketName, String objectKey) {
      try {
          HeadObjectRequest headObjectRequest = HeadObjectRequest
@@ -36,7 +36,7 @@ public static void headObject(S3Client s3Client, String bucketName, String objec
 
 The following `head-object` example command shows how you can use the AWS CLI to retrieve metadata from an object. To run this command, replace the `{{user input placeholders}}` with your own information.
 
-```
+```bash
 aws s3api head-object --bucket {{bucket-base-name}}--{{zone-id}}--x-s3 --key {{KEY_NAME}}
 ```
 
@@ -44,7 +44,7 @@ For more information, see [head-object](https://awscli.amazonaws.com/v2/document
 
 The following `get-object-attributes` example command shows how you can use the AWS CLI to retrieve metadata from an object. To run this command, replace the `{{user input placeholders}}` with your own information.
 
-```
+```bash
 aws s3api get-object-attributes --bucket {{bucket-base-name}}--{{zone-id}}--x-s3 --key {{KEY_NAME}} --object-attributes "StorageClass" "ETag" "ObjectSize"
 ```
 

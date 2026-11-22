@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-dataautomationproject-imagestandardgenerativefield-syntax.json"></a>
 
-```
+```json
 {
   "[State](#cfn-bedrock-dataautomationproject-imagestandardgenerativefield-state)" : {{String}},
   "[Types](#cfn-bedrock-dataautomationproject-imagestandardgenerativefield-types)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-dataautomationproject-imagestandardgenerativefield-syntax.yaml"></a>
 
-```
+```yaml
   [State](#cfn-bedrock-dataautomationproject-imagestandardgenerativefield-state): {{String}}
   [Types](#cfn-bedrock-dataautomationproject-imagestandardgenerativefield-types): {{
     - String}}

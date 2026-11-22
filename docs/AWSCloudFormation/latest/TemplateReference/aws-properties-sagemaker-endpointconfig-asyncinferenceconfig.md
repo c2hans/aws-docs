@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-endpointconfig-asyncinferenceconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ClientConfig](#cfn-sagemaker-endpointconfig-asyncinferenceconfig-clientconfig)" : {{AsyncInferenceClientConfig}},
   "[OutputConfig](#cfn-sagemaker-endpointconfig-asyncinferenceconfig-outputconfig)" : {{AsyncInferenceOutputConfig}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-endpointconfig-asyncinferenceconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ClientConfig](#cfn-sagemaker-endpointconfig-asyncinferenceconfig-clientconfig): {{
     AsyncInferenceClientConfig}}
   [OutputConfig](#cfn-sagemaker-endpointconfig-asyncinferenceconfig-outputconfig): {{

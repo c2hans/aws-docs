@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchserverless-index-mappings-syntax.json"></a>
 
-```
+```json
 {
   "[Properties](#cfn-opensearchserverless-index-mappings-properties)" : {{{{{Key}}: {{Value}}, ...}}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchserverless-index-mappings-syntax.yaml"></a>
 
-```
+```yaml
   [Properties](#cfn-opensearchserverless-index-mappings-properties): {{
     {{Key}}: {{Value}}}}
 ```

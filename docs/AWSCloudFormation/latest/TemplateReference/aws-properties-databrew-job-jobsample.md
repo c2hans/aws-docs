@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-databrew-job-jobsample-syntax.json"></a>
 
-```
+```json
 {
   "[Mode](#cfn-databrew-job-jobsample-mode)" : {{String}},
   "[Size](#cfn-databrew-job-jobsample-size)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-databrew-job-jobsample-syntax.yaml"></a>
 
-```
+```yaml
   [Mode](#cfn-databrew-job-jobsample-mode): {{String}}
   [Size](#cfn-databrew-job-jobsample-size): {{Integer}}
 ```

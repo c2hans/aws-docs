@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkfirewall-firewallpolicy-statefulengineoptions-syntax.json"></a>
 
-```
+```json
 {
   "[FlowTimeouts](#cfn-networkfirewall-firewallpolicy-statefulengineoptions-flowtimeouts)" : {{FlowTimeouts}},
   "[RuleOrder](#cfn-networkfirewall-firewallpolicy-statefulengineoptions-ruleorder)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkfirewall-firewallpolicy-statefulengineoptions-syntax.yaml"></a>
 
-```
+```yaml
   [FlowTimeouts](#cfn-networkfirewall-firewallpolicy-statefulengineoptions-flowtimeouts): {{
     FlowTimeouts}}
   [RuleOrder](#cfn-networkfirewall-firewallpolicy-statefulengineoptions-ruleorder): {{String}}

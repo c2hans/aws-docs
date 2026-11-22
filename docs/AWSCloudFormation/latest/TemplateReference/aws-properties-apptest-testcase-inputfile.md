@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apptest-testcase-inputfile-syntax.json"></a>
 
-```
+```json
 {
   "[FileMetadata](#cfn-apptest-testcase-inputfile-filemetadata)" : {{FileMetadata}},
   "[SourceLocation](#cfn-apptest-testcase-inputfile-sourcelocation)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apptest-testcase-inputfile-syntax.yaml"></a>
 
-```
+```yaml
   [FileMetadata](#cfn-apptest-testcase-inputfile-filemetadata): {{
     FileMetadata}}
   [SourceLocation](#cfn-apptest-testcase-inputfile-sourcelocation): {{String}}

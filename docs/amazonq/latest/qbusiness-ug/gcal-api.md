@@ -48,7 +48,7 @@ The following table provides information about configuration properties required
 
 The following is the Google Calendar JSON schema:
 
-```
+```json
 {
 
 {
@@ -246,7 +246,7 @@ The following is the Google Calendar JSON schema:
 
 The following is the Google Calendar JSON schema example:
 
-```
+```json
 {
 
 {

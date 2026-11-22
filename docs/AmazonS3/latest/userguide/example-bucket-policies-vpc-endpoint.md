@@ -36,7 +36,7 @@ This policy disables console access to the specified bucket because console requ
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Id": "Policy1415115909152",
@@ -74,7 +74,7 @@ This policy disables console access to the specified bucket because console requ
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Id": "Policy1415115909153",
@@ -103,7 +103,7 @@ This policy disables console access to the specified bucket because console requ
 
 The following example policy denies all Amazon S3 (`s3:`) actions on the {{amzn-s3-demo-bucket}} bucket and its objects, unless the request originates from the specified VPC endpoint (`vpce-0a1b2c3d4e5f6g`) and the source IP address matches the provided IPv6 CIDR block.
 
-```
+```json
 {
    "Version": "2012-10-17",
    "Id": "Policy1415115909154",

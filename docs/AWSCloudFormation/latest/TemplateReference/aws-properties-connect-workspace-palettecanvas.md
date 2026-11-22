@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-workspace-palettecanvas-syntax.json"></a>
 
-```
+```json
 {
   "[ActiveBackground](#cfn-connect-workspace-palettecanvas-activebackground)" : {{String}},
   "[ContainerBackground](#cfn-connect-workspace-palettecanvas-containerbackground)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-workspace-palettecanvas-syntax.yaml"></a>
 
-```
+```yaml
   [ActiveBackground](#cfn-connect-workspace-palettecanvas-activebackground): {{String}}
   [ContainerBackground](#cfn-connect-workspace-palettecanvas-containerbackground): {{String}}
   [PageBackground](#cfn-connect-workspace-palettecanvas-pagebackground): {{String}}

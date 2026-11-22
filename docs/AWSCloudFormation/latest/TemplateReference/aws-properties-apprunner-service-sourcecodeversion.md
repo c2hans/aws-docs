@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apprunner-service-sourcecodeversion-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-apprunner-service-sourcecodeversion-type)" : {{String}},
   "[Value](#cfn-apprunner-service-sourcecodeversion-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apprunner-service-sourcecodeversion-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-apprunner-service-sourcecodeversion-type): {{String}}
   [Value](#cfn-apprunner-service-sourcecodeversion-value): {{String}}
 ```

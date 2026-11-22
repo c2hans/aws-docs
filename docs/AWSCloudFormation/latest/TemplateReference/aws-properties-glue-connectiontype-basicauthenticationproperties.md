@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-connectiontype-basicauthenticationproperties-syntax.json"></a>
 
-```
+```json
 {
   "[Password](#cfn-glue-connectiontype-basicauthenticationproperties-password)" : {{SecretConnectorProperty}},
   "[Username](#cfn-glue-connectiontype-basicauthenticationproperties-username)" : {{SecretConnectorProperty}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-connectiontype-basicauthenticationproperties-syntax.yaml"></a>
 
-```
+```yaml
   [Password](#cfn-glue-connectiontype-basicauthenticationproperties-password): {{
     SecretConnectorProperty}}
   [Username](#cfn-glue-connectiontype-basicauthenticationproperties-username): {{

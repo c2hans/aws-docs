@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-resiliencehubv2-service-resourceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CfnStackArn](#cfn-resiliencehubv2-service-resourceconfiguration-cfnstackarn)" : {{String}},
   "[DesignFileS3Url](#cfn-resiliencehubv2-service-resourceconfiguration-designfiles3url)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-resiliencehubv2-service-resourceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CfnStackArn](#cfn-resiliencehubv2-service-resourceconfiguration-cfnstackarn): {{String}}
   [DesignFileS3Url](#cfn-resiliencehubv2-service-resourceconfiguration-designfiles3url): {{String}}
   [Eks](#cfn-resiliencehubv2-service-resourceconfiguration-eks): {{

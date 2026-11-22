@@ -10,7 +10,7 @@ When you create your metadata table configuration, your metadata tables are stor
 
 To query metadata tables, you can use the following example policy. To use this policy, replace the `{{user input placeholders}}` with your own information.
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[

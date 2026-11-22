@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-shortformattext-syntax.json"></a>
 
-```
+```json
 {
   "[PlainText](#cfn-quicksight-template-shortformattext-plaintext)" : {{String}},
   "[RichText](#cfn-quicksight-template-shortformattext-richtext)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-shortformattext-syntax.yaml"></a>
 
-```
+```yaml
   [PlainText](#cfn-quicksight-template-shortformattext-plaintext): {{String}}
   [RichText](#cfn-quicksight-template-shortformattext-richtext): {{String}}
 ```

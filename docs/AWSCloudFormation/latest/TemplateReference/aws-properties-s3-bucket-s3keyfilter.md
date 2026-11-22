@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-s3keyfilter-syntax.json"></a>
 
-```
+```json
 {
   "[Rules](#cfn-s3-bucket-s3keyfilter-rules)" : {{[ FilterRule, ... ]}}
 }
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-s3keyfilter-syntax.yaml"></a>
 
-```
+```yaml
   [Rules](#cfn-s3-bucket-s3keyfilter-rules): {{
     - FilterRule}}
 ```

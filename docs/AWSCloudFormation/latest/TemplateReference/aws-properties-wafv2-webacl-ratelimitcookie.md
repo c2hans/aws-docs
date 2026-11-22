@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-ratelimitcookie-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-wafv2-webacl-ratelimitcookie-name)" : {{String}},
   "[TextTransformations](#cfn-wafv2-webacl-ratelimitcookie-texttransformations)" : {{[ TextTransformation, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-ratelimitcookie-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-wafv2-webacl-ratelimitcookie-name): {{String}}
   [TextTransformations](#cfn-wafv2-webacl-ratelimitcookie-texttransformations): {{
     - TextTransformation}}

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-vpnconnectionroute-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::VPNConnectionRoute",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-vpnconnectionroute-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::VPNConnectionRoute
 Properties:
   [DestinationCidrBlock](#cfn-ec2-vpnconnectionroute-destinationcidrblock): {{String}}
@@ -74,7 +74,7 @@ The following example specifies a VPN connection route.
 #### JSON
 <a name="aws-resource-ec2-vpnconnectionroute--examples--VPN_connection_route--json"></a>
 
-```
+```json
 "MyConnectionRoute0" : {
    "Type" : "AWS::EC2::VPNConnectionRoute",
     "Properties" : {
@@ -87,7 +87,7 @@ The following example specifies a VPN connection route.
 #### YAML
 <a name="aws-resource-ec2-vpnconnectionroute--examples--VPN_connection_route--yaml"></a>
 
-```
+```yaml
 MyConnectionRoute0:
   Type: AWS::EC2::VPNConnectionRoute
   Properties:

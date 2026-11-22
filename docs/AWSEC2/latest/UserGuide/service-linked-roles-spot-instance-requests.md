@@ -42,7 +42,7 @@ If you use the AWS CLI or an API to request a Spot Instance, you must first ensu
 **To create **AWSServiceRoleForEC2Spot** using the AWS CLI**
 Use the [create-service-linked-role](https://docs.aws.amazon.com/cli/latest/reference/iam/create-service-linked-role.html) command as follows.
 
-```
+```bash
 aws iam create-service-linked-role --aws-service-name spot.amazonaws.com
 ```
 
@@ -58,7 +58,7 @@ When providing permissions, grants are an alternative to key policies. For more 
 **To grant the **AWSServiceRoleForEC2Spot** role permissions to use the customer managed key**
 + Use the [create-grant](https://docs.aws.amazon.com/cli/latest/reference/kms/create-grant.html) command to add a grant to the customer managed key and to specify the principal (the **AWSServiceRoleForEC2Spot** service-linked role) that is given permission to perform the operations that the grant permits. The customer managed key is specified by the `key-id` parameter and the ARN of the customer managed key. The principal is specified by the `grantee-principal` parameter and the ARN of the **AWSServiceRoleForEC2Spot** service-linked role.
 
-  ```
+  ```bash
   aws kms create-grant \
       --region {{us-east-1}} \
       --key-id arn:aws:kms:{{us-east-1}}:{{444455556666}}:key/{{1234abcd-12ab-34cd-56ef-1234567890ab}} \

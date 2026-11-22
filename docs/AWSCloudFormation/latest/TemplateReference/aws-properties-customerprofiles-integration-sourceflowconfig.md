@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-integration-sourceflowconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ConnectorProfileName](#cfn-customerprofiles-integration-sourceflowconfig-connectorprofilename)" : {{String}},
   "[ConnectorType](#cfn-customerprofiles-integration-sourceflowconfig-connectortype)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-integration-sourceflowconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ConnectorProfileName](#cfn-customerprofiles-integration-sourceflowconfig-connectorprofilename): {{String}}
   [ConnectorType](#cfn-customerprofiles-integration-sourceflowconfig-connectortype): {{String}}
   [IncrementalPullConfig](#cfn-customerprofiles-integration-sourceflowconfig-incrementalpullconfig): {{

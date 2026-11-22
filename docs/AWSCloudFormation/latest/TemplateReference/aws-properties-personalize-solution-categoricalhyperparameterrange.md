@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-personalize-solution-categoricalhyperparameterrange-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-personalize-solution-categoricalhyperparameterrange-name)" : {{String}},
   "[Values](#cfn-personalize-solution-categoricalhyperparameterrange-values)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-personalize-solution-categoricalhyperparameterrange-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-personalize-solution-categoricalhyperparameterrange-name): {{String}}
   [Values](#cfn-personalize-solution-categoricalhyperparameterrange-values): {{
     - String}}

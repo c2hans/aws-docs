@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-resiliencehubv2-service-ekslabelselectorrequirement-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-resiliencehubv2-service-ekslabelselectorrequirement-key)" : {{String}},
   "[Operator](#cfn-resiliencehubv2-service-ekslabelselectorrequirement-operator)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-resiliencehubv2-service-ekslabelselectorrequirement-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-resiliencehubv2-service-ekslabelselectorrequirement-key): {{String}}
   [Operator](#cfn-resiliencehubv2-service-ekslabelselectorrequirement-operator): {{String}}
   [Values](#cfn-resiliencehubv2-service-ekslabelselectorrequirement-values): {{

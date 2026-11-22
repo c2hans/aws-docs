@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-opensearchserverless-index-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::OpenSearchServerless::Index",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-opensearchserverless-index-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::OpenSearchServerless::Index
 Properties:
   [CollectionEndpoint](#cfn-opensearchserverless-index-collectionendpoint): {{String}}
@@ -102,7 +102,7 @@ The following example defines an index whose `Mappings` contain a `keyword` fiel
 #### YAML
 <a name="aws-resource-opensearchserverless-index--examples--Example_-_Define_index_field_mappings--yaml"></a>
 
-```
+```yaml
 Resources:
   TestIndex:
     Type: 'AWS::OpenSearchServerless::Index'

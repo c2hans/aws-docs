@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iot-stream-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoT::Stream",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iot-stream-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoT::Stream
 Properties:
   [Description](#cfn-iot-stream-description): {{String}}

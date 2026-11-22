@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-localgatewayroutetablevpcassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::LocalGatewayRouteTableVPCAssociation",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-localgatewayroutetablevpcassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::LocalGatewayRouteTableVPCAssociation
 Properties:
   [LocalGatewayRouteTableId](#cfn-ec2-localgatewayroutetablevpcassociation-localgatewayroutetableid): {{String}}

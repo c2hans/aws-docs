@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codebuild-reportgroup-reportexportconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ExportConfigType](#cfn-codebuild-reportgroup-reportexportconfig-exportconfigtype)" : {{String}},
   "[S3Destination](#cfn-codebuild-reportgroup-reportexportconfig-s3destination)" : {{S3ReportExportConfig}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codebuild-reportgroup-reportexportconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ExportConfigType](#cfn-codebuild-reportgroup-reportexportconfig-exportconfigtype): {{String}}
   [S3Destination](#cfn-codebuild-reportgroup-reportexportconfig-s3destination): {{
     S3ReportExportConfig}}

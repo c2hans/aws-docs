@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-datasetdatefiltercondition-syntax.json"></a>
 
-```
+```json
 {
   "[ColumnName](#cfn-quicksight-dataset-datasetdatefiltercondition-columnname)" : {{String}},
   "[ComparisonFilterCondition](#cfn-quicksight-dataset-datasetdatefiltercondition-comparisonfiltercondition)" : {{DataSetDateComparisonFilterCondition}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-datasetdatefiltercondition-syntax.yaml"></a>
 
-```
+```yaml
   [ColumnName](#cfn-quicksight-dataset-datasetdatefiltercondition-columnname): {{String}}
   [ComparisonFilterCondition](#cfn-quicksight-dataset-datasetdatefiltercondition-comparisonfiltercondition): {{
     DataSetDateComparisonFilterCondition}}

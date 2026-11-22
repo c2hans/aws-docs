@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-timestream-scheduledquery-snsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[TopicArn](#cfn-timestream-scheduledquery-snsconfiguration-topicarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-timestream-scheduledquery-snsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [TopicArn](#cfn-timestream-scheduledquery-snsconfiguration-topicarn): {{String}}
 ```
 

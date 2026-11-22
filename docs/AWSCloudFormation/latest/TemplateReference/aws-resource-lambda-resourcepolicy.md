@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lambda-resourcepolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lambda::ResourcePolicy",
   "Properties" : {
@@ -46,7 +46,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lambda-resourcepolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lambda::ResourcePolicy
 Properties:
   [PolicyDocument](#cfn-lambda-resourcepolicy-policydocument): {{Json}}
@@ -102,7 +102,7 @@ For more information about example resource-based policies for a variety of use 
 #### JSON
 <a name="aws-resource-lambda-resourcepolicy--examples--Grant_invoke_permission_to_another_account--json"></a>
 
-```
+```json
 "LambdaResourcePolicy": {
     "Type": "AWS::Lambda::ResourcePolicy",
     "Properties": {
@@ -128,7 +128,7 @@ For more information about example resource-based policies for a variety of use 
 #### YAML
 <a name="aws-resource-lambda-resourcepolicy--examples--Grant_invoke_permission_to_another_account--yaml"></a>
 
-```
+```yaml
 LambdaResourcePolicy:
   Type: AWS::Lambda::ResourcePolicy
   Properties:

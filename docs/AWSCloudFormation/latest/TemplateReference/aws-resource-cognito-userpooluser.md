@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cognito-userpooluser-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Cognito::UserPoolUser",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cognito-userpooluser-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Cognito::UserPoolUser
 Properties:
   [ClientMetadata](#cfn-cognito-userpooluser-clientmetadata): {{
@@ -151,7 +151,7 @@ The following example creates a new user with the username testuser.
 #### JSON
 <a name="aws-resource-cognito-userpooluser--examples--Creating_a_new_user_in_a_user_pool--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Provision a new user to an Amazon Cognito user pool\n",
@@ -188,7 +188,7 @@ The following example creates a new user with the username testuser.
 #### YAML
 <a name="aws-resource-cognito-userpooluser--examples--Creating_a_new_user_in_a_user_pool--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 
 Description: |

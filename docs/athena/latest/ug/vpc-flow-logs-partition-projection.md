@@ -8,7 +8,7 @@ Use a `CREATE TABLE` statement like the following to create a table, partition t
 
 The following `CREATE TABLE` statement is for VPC flow logs delivered in non-Hive style partitioning format. The example allows for multi-account aggregation. If you are centralizing VPC Flow logs from multiple accounts into one Amazon S3 bucket, the account ID must be entered in the Amazon S3 path.
 
-```
+```sql
 CREATE EXTERNAL TABLE IF NOT EXISTS test_table_vpclogs (
   version int,
   account_id string,
@@ -65,7 +65,7 @@ The following example queries query the `test_table_vpclogs` created by the prec
 
 To return the first 100 access log entries in chronological order for a specified period of time, run a query like the following.
 
-```
+```sql
 SELECT *
 FROM test_table_vpclogs
 WHERE day >= '2021/02/01' AND day < '2021/02/28'
@@ -75,7 +75,7 @@ LIMIT 100
 
 To view which server receives the top ten number of HTTP packets for a specified period of time, run a query like the following. The query counts the number of packets received on HTTPS port 443, groups them by destination IP address, and returns the top 10 entries from the previous week.
 
-```
+```sql
 SELECT SUM(packets) AS packetcount,
        dstaddr
 FROM test_table_vpclogs
@@ -89,7 +89,7 @@ LIMIT 10
 
 To return the logs that were created during a specified period of time, run a query like the following.
 
-```
+```sql
 SELECT interface_id,
        srcaddr,
        action,
@@ -103,7 +103,7 @@ WHERE DAY >= '2021/04/01'
 
 To return the access logs for a source IP address between specified time periods, run a query like the following.
 
-```
+```sql
 SELECT *
 FROM test_table_vpclogs
 WHERE srcaddr = '10.117.1.22'
@@ -113,7 +113,7 @@ WHERE srcaddr = '10.117.1.22'
 
 To list rejected TCP connections, run a query like the following.
 
-```
+```sql
 SELECT day,
        interface_id,
        srcaddr,
@@ -126,7 +126,7 @@ LIMIT 10
 
 To return the access logs for the IP address range that starts with `10.117`, run a query like the following.
 
-```
+```sql
 SELECT *
 FROM test_table_vpclogs
 WHERE split_part(srcaddr,'.', 1)='10'
@@ -135,7 +135,7 @@ WHERE split_part(srcaddr,'.', 1)='10'
 
 To return the access logs for a destination IP address between a certain time range, run a query like the following.
 
-```
+```sql
 SELECT *
 FROM test_table_vpclogs
 WHERE dstaddr = '10.0.1.14'

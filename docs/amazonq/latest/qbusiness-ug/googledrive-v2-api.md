@@ -55,7 +55,7 @@ The following provides information about important configuration properties requ
 
 The following is the Google Drive New JSON schema:
 
-```
+```json
 {
   "type": "object",
   "properties": {
@@ -225,7 +225,7 @@ The following is the Google Drive New JSON schema:
 
 The following is the GoogleDrive New JSON schema example:
 
-```
+```json
 {
   "type": "GOOGLEDRIVEV3",
   "connectionConfiguration": {
@@ -264,7 +264,7 @@ The following is the GoogleDrive New JSON schema example:
 
 The following is the minimum required configuration for GoogleDrive New:
 
-```
+```json
 {
   "type": "GOOGLEDRIVEV3",
   "connectionConfiguration": {

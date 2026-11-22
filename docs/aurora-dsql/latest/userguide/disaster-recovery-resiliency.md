@@ -20,7 +20,7 @@ Aurora DSQL supports backup and restore with AWS Backup console. You can perform
 
 By design, Aurora DSQL commits all write transactions to a distributed transaction log and synchronously replicates all committed log data to user storage replicas in three AZs. Multi-Region clusters provide full cross-Region replication capabilities between read and write Regions.
 
-A designated witness Region supports transaction log-only writes and doesn't consume storage. Witness Regions don't have an endpoint. This means that witness Regions store only encrypted transaction logs, require no administration or configuration, and aren't accessible by users. If the witness Region becomes impaired, there is no impact to cluster availability. Write transactions might experience a small increase in latency until the witness Region recovers.
+A designated witness Region supports transaction log-only writes and doesn't consume storage. Witness Regions store encrypted transaction log, do not store encryption keys, have no managed endpoints, and do not make data accessible to users. If the witness Region becomes impaired, there is no impact to cluster availability. Write transactions might experience a temporary increase in latency until the witness Region recovers. The size of this increase depends on the geographic distance between the Regions in your cluster.
 
 Aurora DSQL transaction logs and user storage are distributed with all data presented to Aurora DSQL query processors as a single logical volume. Aurora DSQL automatically splits, merges, and replicates data based on database primary key range and access patterns. Aurora DSQL automatically scales read replicas, both up and down, based on read access frequency.
 
@@ -32,6 +32,8 @@ Cluster storage replicas are distributed across a multi-tenant storage fleet. If
 By default, single-Region and multi-Region clusters in Aurora DSQL are active-active, and you don't need to manually provision, configure, or reconfigure any clusters. Aurora DSQL fully automates cluster recovery, which eliminates the need for traditional primary-secondary failover operations. Replication is always synchronous and done in multiple AZs, so there is no risk of data loss due to replication lag or failover to an asynchronous secondary database during failure recovery.
 
 Single-Region clusters provide a Multi-AZ redundant endpoint that automatically enables concurrent access with strong data consistency across three AZs. This means that user storage replicas on any of these three AZs always return the same result to one or more readers and are always available to receive writes. This strong consistency and Multi-AZ resiliency is available across all Regions for Aurora DSQL multi-Region clusters. This means that multi-Region clusters provide two strongly consistent Regional endpoints, so clients can read or write indiscriminately to either Region with zero replication lag on commit.
+
+Aurora DSQL commits writes synchronously across the active Regions of a multi-Region cluster. Write latency depends on the geographic distance between those Regions. When you choose the peer and witness Regions, you balance greater geographic separation against lower write latency. Greater separation increases the isolation of failure domains.
 
 Aurora DSQL provides 99.99% availability for single-Region clusters and 99.999% for multi-Region clusters.
 

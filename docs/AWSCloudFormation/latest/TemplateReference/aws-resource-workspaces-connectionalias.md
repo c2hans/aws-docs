@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-workspaces-connectionalias-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::WorkSpaces::ConnectionAlias",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-workspaces-connectionalias-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::WorkSpaces::ConnectionAlias
 Properties:
   [ConnectionString](#cfn-workspaces-connectionalias-connectionstring): {{

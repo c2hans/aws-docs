@@ -46,7 +46,7 @@ The following procedure summarizes the quickstart steps. For detailed instructio
 
 1. Write a `gateway.yaml` configuration file. The following example shows a minimal configuration that uses Amazon Bedrock as the upstream.
 
-   ```
+   ```yaml
    listen:
      host: 0.0.0.0
      port: 8080
@@ -89,7 +89,7 @@ The following procedure summarizes the quickstart steps. For detailed instructio
 
 To point developer machines to your gateway, distribute the following managed settings keys through mobile device management (MDM) or your configuration management tool.
 
-```
+```json
 {
   "forceLoginMethod": "gateway",
   "forceLoginGatewayUrl": "https://{{claude-gateway.internal.example.com}}"

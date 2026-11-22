@@ -27,7 +27,7 @@ In addition to the IAM action permissions required to read and write DynamoDB ta
 
 The following example IAM identity policy grants an application permissions to connect to a serverless cache for DynamoDB caching and to read and write to the DynamoDB table through DynamoDB caching.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

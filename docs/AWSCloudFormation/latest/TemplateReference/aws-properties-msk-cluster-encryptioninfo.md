@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-cluster-encryptioninfo-syntax.json"></a>
 
-```
+```json
 {
   "[EncryptionAtRest](#cfn-msk-cluster-encryptioninfo-encryptionatrest)" : {{EncryptionAtRest}},
   "[EncryptionInTransit](#cfn-msk-cluster-encryptioninfo-encryptionintransit)" : {{EncryptionInTransit}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-cluster-encryptioninfo-syntax.yaml"></a>
 
-```
+```yaml
   [EncryptionAtRest](#cfn-msk-cluster-encryptioninfo-encryptionatrest): {{
     EncryptionAtRest}}
   [EncryptionInTransit](#cfn-msk-cluster-encryptioninfo-encryptionintransit): {{

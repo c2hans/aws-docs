@@ -27,7 +27,7 @@ For more task definition examples, see [AWS Sample Task Definitions](https://git
 
 The following is an example task definition using the Linux containers on Fargate that sets up a web server:
 
-```
+```JSON
 {
    "containerDefinitions": [
       {
@@ -112,7 +112,7 @@ The following is an example task definition using the Windows containers on Farg
 
 The following snippet demonstrates how to use the `splunk` log driver in a task definition that sends the logs to a remote service. The Splunk token parameter is specified as a secret option because it can be treated as sensitive data. For more information, see [Pass sensitive data to an Amazon ECS container](specifying-sensitive-data.md).
 
-```
+```json
 "containerDefinitions": [{
 		"logConfiguration": {
 			"logDriver": "splunk",
@@ -131,7 +131,7 @@ The following snippet demonstrates how to use the `splunk` log driver in a task 
 
 The following snippet demonstrates how to use the `fluentd` log driver in a task definition that sends the logs to a remote service. The `fluentd-address` value is specified as a secret option as it may be treated as sensitive data. For more information, see [Pass sensitive data to an Amazon ECS container](specifying-sensitive-data.md).
 
-```
+```json
 "containerDefinitions": [{
 	"logConfiguration": {
 		"logDriver": "fluentd",
@@ -162,7 +162,7 @@ The following snippet demonstrates how to use the `fluentd` log driver in a task
 
 The following snippet demonstrates how to use the `gelf` log driver in a task definition that sends the logs to a remote host running Logstash that takes Gelf logs as an input. For more information, see [logConfiguration](task_definition_parameters.md#ContainerDefinition-logConfiguration).
 
-```
+```json
 "containerDefinitions": [{
 	"logConfiguration": {
 		"logDriver": "gelf",
@@ -201,7 +201,7 @@ The following is an example task definition.
 ------
 #### [ Linux ]
 
-```
+```JSON
 {
 	"requiresCompatibilities": [
 		"EXTERNAL"
@@ -226,7 +226,7 @@ The following is an example task definition.
 ------
 #### [ Windows ]
 
-```
+```JSON
 {
 	"requiresCompatibilities": [
 		"EXTERNAL"
@@ -255,7 +255,7 @@ The following is an example task definition.
 
 The following snippet uses an Amazon ECR image called `aws-nodejs-sample` with the `v1` tag from the `123456789012.dkr.ecr.us-west-2.amazonaws.com` registry. The container in this task inherits IAM permissions from the `arn:aws:iam::123456789012:role/AmazonECSTaskS3BucketRole` role. For more information, see [Amazon ECS task IAM role](task-iam-roles.md).
 
-```
+```json
 {
     "containerDefinitions": [
         {
@@ -276,7 +276,7 @@ The following snippet uses an Amazon ECR image called `aws-nodejs-sample` with t
 
 The following snippet demonstrates the syntax for a Docker container that uses an entry point and a command argument. This container pings `example.com` four times and then exits.
 
-```
+```json
 {
     "containerDefinitions": [
         {
@@ -303,7 +303,7 @@ The following snippet demonstrates the syntax for a Docker container that uses a
 
 This snippet demonstrates the syntax for a task definition with multiple containers where container dependency is specified. In the following task definition, the `envoy` container must reach a healthy status, determined by the required container health check parameters, before the `app` container will start. For more information, see [Container dependency](task_definition_parameters.md#container_definition_dependson).
 
-```
+```json
 {
   "family": "{{appmesh-gateway}}",
   "runtimePlatform": {

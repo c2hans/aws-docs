@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-appstream-stackfleetassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppStream::StackFleetAssociation",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-appstream-stackfleetassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppStream::StackFleetAssociation
 Properties:
   [FleetName](#cfn-appstream-stackfleetassociation-fleetname): {{String}}

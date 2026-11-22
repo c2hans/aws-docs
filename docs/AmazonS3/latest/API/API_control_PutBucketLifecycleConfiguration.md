@@ -128,7 +128,7 @@ If the action is successful, the service sends back an HTTP 200 response with an
 
 This request puts a lifecycle configuration on an Outposts bucket named `example-outpost-bucket`.
 
-```
+```HTTP
             PUT /v20180820/bucket/example-outpost-bucket/lifecycleconfiguration HTTP/1.1
             Host:s3-outposts.<Region>.amazonaws.com
             x-amz-account-id: example-account-id

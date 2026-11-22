@@ -30,7 +30,7 @@ If you don't perform this step, the AMI will not be usable.
 
 1. To find the volume ID of the instance, use the [describe-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html) command. You'll create a snapshot of this volume in the next step.
 
-   ```
+   ```bash
    aws ec2 describe-instances \
        --instance-ids {{i-1234567890abcdef0}} \
        --query 'Reservations[].Instances[].BlockDeviceMappings'
@@ -38,7 +38,7 @@ If you don't perform this step, the AMI will not be usable.
 
    The following is example output.
 
-   ```
+   ```JSON
    [
        [
            {
@@ -56,7 +56,7 @@ If you don't perform this step, the AMI will not be usable.
 
 1. To create a snapshot of the volume, use the [create-snapshot](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-snapshot.html) command. Use the volume ID from the previous step.
 
-   ```
+   ```bash
    aws ec2 create-snapshot \
        --volume-id {{vol-01234567890abcdef}} \
        --description "{{my snapshot}}"
@@ -64,7 +64,7 @@ If you don't perform this step, the AMI will not be usable.
 
    The following is example output.
 
-   ```
+   ```JSON
    {
        "Description": "my snapshot",
        "Encrypted": false,
@@ -81,7 +81,7 @@ If you don't perform this step, the AMI will not be usable.
 
 1. Wait until the state of the snapshot is `completed` before you go to the next step. To get the state of the snapshot, use the [describe-snapshots](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-snapshots.html) command with the snapshot ID from the previous step.
 
-   ```
+   ```bash
    aws ec2 describe-snapshots \
        --snapshot-ids {{snap-0abcdef1234567890}} \
        --query 'Snapshots[].State' \
@@ -90,14 +90,14 @@ If you don't perform this step, the AMI will not be usable.
 
    The following is example output.
 
-   ```
+   ```bash
    completed
    ```
 
 1. To create a new AMI, use the [register-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/register-image.html) command. Use the value of `SnapshotId` from the output of **CreateSnapshot**.
    + To set the boot mode to UEFI, add the `--boot-mode` parameter with a value of `uefi`.
 
-     ```
+     ```bash
      aws ec2 register-image \
         --description "{{my image}}" \
         --name "{{my-image}}" \
@@ -109,7 +109,7 @@ If you don't perform this step, the AMI will not be usable.
      ```
    + To set the boot mode to `uefi-preferred`, set the value of `--boot-mode` to `uefi-preferred`
 
-     ```
+     ```bash
      aws ec2 register-image \
         --description "{{my description}}" \
         --name "{{my-image}}" \
@@ -122,7 +122,7 @@ If you don't perform this step, the AMI will not be usable.
 
 1. (Optional) To verify that the newly-created AMI has the boot mode that you specified, use the [describe-images](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command.
 
-   ```
+   ```bash
    aws ec2 describe-images \
        --image-id {{ami-1234567890abcdef0}} \
        --query 'Images[].BootMode' \
@@ -131,7 +131,7 @@ If you don't perform this step, the AMI will not be usable.
 
    The following is example output.
 
-   ```
+   ```bash
    uefi
    ```
 
@@ -143,7 +143,7 @@ If you don't perform this step, the AMI will not be usable.
 
 1. To confirm that the current instance boot mode is UEFI, use the [describe-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html) command.
 
-   ```
+   ```bash
    aws ec2 describe-instances \
        --instance-ids {{i-1234567890abcdef0}} \
        --query 'Reservations[].Instances[].CurrentInstanceBootMode' \
@@ -152,7 +152,7 @@ If you don't perform this step, the AMI will not be usable.
 
    The following is example output.
 
-   ```
+   ```bash
    uefi
    ```
 
@@ -160,7 +160,7 @@ If you don't perform this step, the AMI will not be usable.
 
 1. To create a new AMI, use the [create-image](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-image.html) command with the `--boot-mode-override` parameter set to `uefi`.
 
-   ```
+   ```bash
    aws ec2 create-image \
        --instance-id {{i-1234567890abcdef0}} \
        --name "{{my-image}}" \
@@ -170,7 +170,7 @@ If you don't perform this step, the AMI will not be usable.
 
    The following is example output.
 
-   ```
+   ```JSON
    {
        "ImageId": "ami-0123456789abcdef0"
    }
@@ -178,7 +178,7 @@ If you don't perform this step, the AMI will not be usable.
 
 1. (Optional) To verify that the newly-created AMI has the boot mode that you specified, use the [describe-images](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command.
 
-   ```
+   ```bash
    aws ec2 describe-images \
        --image-id {{ami-1234567890abcdef0}} \
        --query 'Images[].BootMode' \
@@ -187,7 +187,7 @@ If you don't perform this step, the AMI will not be usable.
 
    The following is example output.
 
-   ```
+   ```bash
    uefi
    ```
 
@@ -202,7 +202,7 @@ If you don't perform this step, the AMI will not be usable.
 
 1. To find the volume ID of the instance, use the [Get-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html) cmdlet.
 
-   ```
+   ```powershell
    (Get-EC2Instance `
        -InstanceId {{i-1234567890abcdef0}}).Instances.BlockDeviceMappings.Ebs
    ```
@@ -220,7 +220,7 @@ If you don't perform this step, the AMI will not be usable.
 
 1. To create a snapshot of the volume, use the [New-EC2Snapshot](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Snapshot.html) cmdlet. Use the volume ID from the previous step.
 
-   ```
+   ```powershell
    New-EC2Snapshot `
        -VolumeId {{vol-01234567890abcdef}} `
        -Description "{{my snapshot}}"
@@ -247,21 +247,21 @@ If you don't perform this step, the AMI will not be usable.
 
 1. Wait until the state of the snapshot is `completed` before you go to the next step. To get the state of the snapshot, use the [Get-EC2Snapshot](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Snapshot.html) cmdlet with the snapshot ID from the previous step.
 
-   ```
+   ```powershell
    (Get-EC2Snapshot `
        -SnapshotId {{snap-0abcdef1234567890}}).State.Value
    ```
 
    The following is example output.
 
-   ```
+   ```bash
    completed
    ```
 
 1. To create a new AMI, use the [Register-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2Image.html) cmdlet. Use the value of `SnapshotId` from the output of **New-EC2Snapshot**.
    + To set the boot mode to UEFI, add the `-BootMode` parameter with a value of `uefi`.
 
-     ```
+     ```powershell
      $block = @{SnapshotId=snap-0abcdef1234567890}
      Register-EC2Image `
         -Description "{{my image}}" `
@@ -273,7 +273,7 @@ If you don't perform this step, the AMI will not be usable.
      ```
    + To set the boot mode to `uefi-preferred`, set the value of `-BootMode` to `uefi-preferred`
 
-     ```
+     ```powershell
      $block = @{SnapshotId=snap-0abcdef1234567890}
      Register-EC2Image `
         -Description "{{my image}}" `
@@ -286,14 +286,14 @@ If you don't perform this step, the AMI will not be usable.
 
 1. (Optional) To verify that the newly-created AMI has the boot mode that you specified, use the [Get-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Image.html) cmdlet.
 
-   ```
+   ```powershell
    (Get-EC2Image `
        -ImageId {{ami-1234567890abcdef0}}).BootMode.Value
    ```
 
    The following is example output.
 
-   ```
+   ```bash
    uefi
    ```
 

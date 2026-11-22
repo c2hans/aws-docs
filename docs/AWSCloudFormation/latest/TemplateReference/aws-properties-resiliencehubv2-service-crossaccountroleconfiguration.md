@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-resiliencehubv2-service-crossaccountroleconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CrossAccountRoleArn](#cfn-resiliencehubv2-service-crossaccountroleconfiguration-crossaccountrolearn)" : {{String}},
   "[ExternalId](#cfn-resiliencehubv2-service-crossaccountroleconfiguration-externalid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-resiliencehubv2-service-crossaccountroleconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CrossAccountRoleArn](#cfn-resiliencehubv2-service-crossaccountroleconfiguration-crossaccountrolearn): {{String}}
   [ExternalId](#cfn-resiliencehubv2-service-crossaccountroleconfiguration-externalid): {{String}}
 ```

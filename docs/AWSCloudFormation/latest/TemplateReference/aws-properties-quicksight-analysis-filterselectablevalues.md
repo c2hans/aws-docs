@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-filterselectablevalues-syntax.json"></a>
 
-```
+```json
 {
   "[Values](#cfn-quicksight-analysis-filterselectablevalues-values)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-filterselectablevalues-syntax.yaml"></a>
 
-```
+```yaml
   [Values](#cfn-quicksight-analysis-filterselectablevalues-values): {{
     - String}}
 ```

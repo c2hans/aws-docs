@@ -130,7 +130,7 @@ This example shows how to create a directory bucket by using the AWS SDK for Go.
 
 **Example**
 
-```
+```Go V2
 var bucket = "..."
 
 func runCreateBucket(c *s3.Client) {
@@ -168,7 +168,7 @@ This example shows how to create an directory bucket by using the AWS SDK for Ja
 
 **Example**
 
-```
+```JavaV2
 public static void createBucket(S3Client s3Client, String bucketName) {
 
     //Bucket name format is {base-bucket-name}--{az-id}--x-s3
@@ -204,7 +204,7 @@ This example shows how to create a directory bucket by using the AWS SDK for Jav
 
 **Example**
 
-```
+```Javascript V3
 // file.mjs, run with Node.js v16 or higher
 // To use with the preview build, place this in a folder
 // inside the preview build directory, such as /aws-sdk-js-v3/workspace/
@@ -234,7 +234,7 @@ This example shows how to create a directory bucket by using the SDK for .NET.
 
 **Example**
 
-```
+```.NET
 using (var amazonS3Client = new AmazonS3Client())
 {
     var putBucketResponse = await amazonS3Client.PutBucketAsync(new PutBucketRequest
@@ -257,7 +257,7 @@ This example shows how to create a directory bucket by using the AWS SDK for PHP
 
 **Example**
 
-```
+```PHP
 require 'vendor/autoload.php';
 
 $s3Client = new S3Client([
@@ -280,7 +280,7 @@ This example shows how to create a directory bucket by using the AWS SDK for Pyt
 
 **Example**
 
-```
+```Python
 import logging
 import boto3
 from botocore.exceptions import ClientError
@@ -330,7 +330,7 @@ This example shows how to create an directory bucket by using the AWS SDK for Ru
 
 **Example**
 
-```
+```Ruby
 s3 = Aws::S3::Client.new(region:'{{us-west-2}}')
 s3.create_bucket(
   bucket: "bucket_base_name--az_id--x-s3",
@@ -350,7 +350,7 @@ This example shows how to create a directory bucket by using the AWS CLI. To use
 
 When you create a directory bucket you must provide configuration details and use the following naming convention: `{{bucket-base-name}}--{{zone-id}}--x-s3`
 
-```
+```bash
 aws s3api create-bucket
 --bucket {{bucket-base-name}}--{{zone-id}}--x-s3
 --create-bucket-configuration 'Location={Type=AvailabilityZone,Name={{usw2-az1}}},Bucket={DataRedundancy=SingleAvailabilityZone,Type=Directory}'

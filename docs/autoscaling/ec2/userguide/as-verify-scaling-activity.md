@@ -38,7 +38,7 @@ The following is example output.
 
 Scaling activities are ordered by start time. Activities still in progress are described first.
 
-```
+```json
 {
   "Activities": [
     {

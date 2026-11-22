@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-networkconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AwsvpcConfiguration](#cfn-pipes-pipe-networkconfiguration-awsvpcconfiguration)" : {{AwsVpcConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-networkconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AwsvpcConfiguration](#cfn-pipes-pipe-networkconfiguration-awsvpcconfiguration): {{
     AwsVpcConfiguration}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspaces-workspacespool-capacity-syntax.json"></a>
 
-```
+```json
 {
   "[DesiredUserSessions](#cfn-workspaces-workspacespool-capacity-desiredusersessions)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspaces-workspacespool-capacity-syntax.yaml"></a>
 
-```
+```yaml
   [DesiredUserSessions](#cfn-workspaces-workspacespool-capacity-desiredusersessions): {{Integer}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-capability-argocd-syntax.json"></a>
 
-```
+```json
 {
   "[AwsIdc](#cfn-eks-capability-argocd-awsidc)" : {{AwsIdc}},
   "[EndpointPrefix](#cfn-eks-capability-argocd-endpointprefix)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-capability-argocd-syntax.yaml"></a>
 
-```
+```yaml
   [AwsIdc](#cfn-eks-capability-argocd-awsidc): {{
     AwsIdc}}
   [EndpointPrefix](#cfn-eks-capability-argocd-endpointprefix): {{String}}

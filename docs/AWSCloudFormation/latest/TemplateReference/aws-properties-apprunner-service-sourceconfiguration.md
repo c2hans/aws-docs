@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apprunner-service-sourceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AuthenticationConfiguration](#cfn-apprunner-service-sourceconfiguration-authenticationconfiguration)" : {{AuthenticationConfiguration}},
   "[AutoDeploymentsEnabled](#cfn-apprunner-service-sourceconfiguration-autodeploymentsenabled)" : {{Boolean}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apprunner-service-sourceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AuthenticationConfiguration](#cfn-apprunner-service-sourceconfiguration-authenticationconfiguration): {{
     AuthenticationConfiguration}}
   [AutoDeploymentsEnabled](#cfn-apprunner-service-sourceconfiguration-autodeploymentsenabled): {{Boolean}}

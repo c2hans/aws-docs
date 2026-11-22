@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssm-patchbaseline-rule-syntax.json"></a>
 
-```
+```json
 {
   "[ApproveAfterDays](#cfn-ssm-patchbaseline-rule-approveafterdays)" : {{Integer}},
   "[ApproveUntilDate](#cfn-ssm-patchbaseline-rule-approveuntildate)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssm-patchbaseline-rule-syntax.yaml"></a>
 
-```
+```yaml
   [ApproveAfterDays](#cfn-ssm-patchbaseline-rule-approveafterdays): {{Integer}}
   [ApproveUntilDate](#cfn-ssm-patchbaseline-rule-approveuntildate): {{String}}
   [ComplianceLevel](#cfn-ssm-patchbaseline-rule-compliancelevel): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-anomalydetector-metriccharacteristics-syntax.json"></a>
 
-```
+```json
 {
   "[PeriodicSpikes](#cfn-cloudwatch-anomalydetector-metriccharacteristics-periodicspikes)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-anomalydetector-metriccharacteristics-syntax.yaml"></a>
 
-```
+```yaml
   [PeriodicSpikes](#cfn-cloudwatch-anomalydetector-metriccharacteristics-periodicspikes): {{Boolean}}
 ```
 

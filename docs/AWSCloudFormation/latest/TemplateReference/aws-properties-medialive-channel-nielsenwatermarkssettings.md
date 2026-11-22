@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-nielsenwatermarkssettings-syntax.json"></a>
 
-```
+```json
 {
   "[NielsenCbetSettings](#cfn-medialive-channel-nielsenwatermarkssettings-nielsencbetsettings)" : {{NielsenCBET}},
   "[NielsenDistributionType](#cfn-medialive-channel-nielsenwatermarkssettings-nielsendistributiontype)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-nielsenwatermarkssettings-syntax.yaml"></a>
 
-```
+```yaml
   [NielsenCbetSettings](#cfn-medialive-channel-nielsenwatermarkssettings-nielsencbetsettings): {{
     NielsenCBET}}
   [NielsenDistributionType](#cfn-medialive-channel-nielsenwatermarkssettings-nielsendistributiontype): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-association-mcpserversplunkconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-devopsagent-association-mcpserversplunkconfiguration-description)" : {{String}},
   "[EnableWebhookUpdates](#cfn-devopsagent-association-mcpserversplunkconfiguration-enablewebhookupdates)" : {{Boolean}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-association-mcpserversplunkconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-devopsagent-association-mcpserversplunkconfiguration-description): {{String}}
   [EnableWebhookUpdates](#cfn-devopsagent-association-mcpserversplunkconfiguration-enablewebhookupdates): {{Boolean}}
   [Endpoint](#cfn-devopsagent-association-mcpserversplunkconfiguration-endpoint): {{String}}

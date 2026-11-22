@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-anomalydetector-range-syntax.json"></a>
 
-```
+```json
 {
   "[EndTime](#cfn-cloudwatch-anomalydetector-range-endtime)" : {{String}},
   "[StartTime](#cfn-cloudwatch-anomalydetector-range-starttime)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-anomalydetector-range-syntax.yaml"></a>
 
-```
+```yaml
   [EndTime](#cfn-cloudwatch-anomalydetector-range-endtime): {{String}}
   [StartTime](#cfn-cloudwatch-anomalydetector-range-starttime): {{String}}
 ```

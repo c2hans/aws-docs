@@ -147,7 +147,7 @@ This example shows a sample request for the `RegisterConnector` API and a sample
 #### Sample Request
 <a name="API_RegisterConnector_Example_1_Request"></a>
 
-```
+```json
 {
   "connectorLabel": "Connector_Label_Value",
   "connectorProvisioningType": "LAMBDA",
@@ -164,7 +164,7 @@ This example shows a sample request for the `RegisterConnector` API and a sample
 #### Sample Response
 <a name="API_RegisterConnector_Example_1_Response"></a>
 
-```
+```json
 {
   "connectorArn": "arn:aws:appflow:region:<AccountId>:connector/Connector_Label"
 }

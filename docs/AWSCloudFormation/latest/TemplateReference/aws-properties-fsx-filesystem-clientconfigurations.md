@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-filesystem-clientconfigurations-syntax.json"></a>
 
-```
+```json
 {
   "[Clients](#cfn-fsx-filesystem-clientconfigurations-clients)" : {{String}},
   "[Options](#cfn-fsx-filesystem-clientconfigurations-options)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-filesystem-clientconfigurations-syntax.yaml"></a>
 
-```
+```yaml
   [Clients](#cfn-fsx-filesystem-clientconfigurations-clients): {{String}}
   [Options](#cfn-fsx-filesystem-clientconfigurations-options): {{
     - String}}

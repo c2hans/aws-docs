@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-runtime-capacityprovidervolumeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MountPath](#cfn-bedrockagentcore-runtime-capacityprovidervolumeconfiguration-mountpath)" : {{String}},
   "[VolumeName](#cfn-bedrockagentcore-runtime-capacityprovidervolumeconfiguration-volumename)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-runtime-capacityprovidervolumeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MountPath](#cfn-bedrockagentcore-runtime-capacityprovidervolumeconfiguration-mountpath): {{String}}
   [VolumeName](#cfn-bedrockagentcore-runtime-capacityprovidervolumeconfiguration-volumename): {{String}}
 ```

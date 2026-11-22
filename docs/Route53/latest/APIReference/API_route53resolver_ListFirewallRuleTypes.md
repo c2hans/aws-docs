@@ -8,8 +8,6 @@ Retrieves the rule-type variants that can be used in the `FirewallRuleType` fiel
 
 The supported `RuleType` filter values are `FirewallAdvancedContentCategory`, `FirewallAdvancedThreatCategory`, `DnsThreatProtection`, and `PartnerThreatProtection`. When a returned definition's variant requires an external subscription (currently only `PartnerThreatProtection`), the response also includes a [SubscriptionInfo](API_route53resolver_SubscriptionInfo.md) identifying the AWS Marketplace product that backs it; absence of `SubscriptionInfo` means the variant is fully managed by AWS and requires no separate subscription.
 
-This operation doesn't return the `AutoAllowlist` variant. Configure an AutoAllowlist rule with [AutoAllowlistConfig](API_route53resolver_AutoAllowlistConfig.md).
-
 ## Request Syntax
 <a name="API_route53resolver_ListFirewallRuleTypes_RequestSyntax"></a>
 

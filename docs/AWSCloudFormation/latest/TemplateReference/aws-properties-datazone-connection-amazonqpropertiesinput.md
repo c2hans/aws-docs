@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-connection-amazonqpropertiesinput-syntax.json"></a>
 
-```
+```json
 {
   "[AuthMode](#cfn-datazone-connection-amazonqpropertiesinput-authmode)" : {{String}},
   "[IsEnabled](#cfn-datazone-connection-amazonqpropertiesinput-isenabled)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-connection-amazonqpropertiesinput-syntax.yaml"></a>
 
-```
+```yaml
   [AuthMode](#cfn-datazone-connection-amazonqpropertiesinput-authmode): {{String}}
   [IsEnabled](#cfn-datazone-connection-amazonqpropertiesinput-isenabled): {{Boolean}}
   [ProfileArn](#cfn-datazone-connection-amazonqpropertiesinput-profilearn): {{String}}

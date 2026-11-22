@@ -50,7 +50,7 @@ To use the Remote Query Cache Plugin in your application, you need an ElastiCach
 
 The following example shows how to enable the plugin and cache a query result for 300 seconds (5 minutes) with an ElastiCache for Valkey serverless cache:
 
-```
+```java
 import java.sql.*;
 import java.util.Properties;
 

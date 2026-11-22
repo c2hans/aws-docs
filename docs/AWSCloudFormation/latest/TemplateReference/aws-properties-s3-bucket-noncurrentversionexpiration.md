@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-noncurrentversionexpiration-syntax.json"></a>
 
-```
+```json
 {
   "[NewerNoncurrentVersions](#cfn-s3-bucket-noncurrentversionexpiration-newernoncurrentversions)" : {{Integer}},
   "[NoncurrentDays](#cfn-s3-bucket-noncurrentversionexpiration-noncurrentdays)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-noncurrentversionexpiration-syntax.yaml"></a>
 
-```
+```yaml
   [NewerNoncurrentVersions](#cfn-s3-bucket-noncurrentversionexpiration-newernoncurrentversions): {{Integer}}
   [NoncurrentDays](#cfn-s3-bucket-noncurrentversionexpiration-noncurrentdays): {{Integer}}
 ```

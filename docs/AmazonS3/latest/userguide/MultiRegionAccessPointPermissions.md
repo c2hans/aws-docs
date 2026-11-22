@@ -70,7 +70,7 @@ The following example Multi-Region Access Point policy grants an IAM user access
 
 ****
 
-```
+```json
  {
    "Version":"2012-10-17",
    "Statement":[
@@ -99,7 +99,7 @@ To associate your Multi-Region Access Point policy with the specified Multi-Regi
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws s3control put-multi-region-access-point-policy
 --account-id {{111122223333}}
 --details { "Name": "{{{{amzn-s3-demo-bucket}}-MultiRegionAccessPoint}}", "Policy": "{ \"Version\": \"2012-10-17\", \"Statement\": { \"Effect\": \"Allow\", \"Principal\": { \"AWS\": \"arn:aws:iam::{{111122223333}}:root\" }, \"Action\": [\"s3:ListBucket\", \"s3:GetObject\"], \"Resource\": [ \"arn:aws:s3::{{111122223333}}:accesspoint/{{MultiRegionAccessPoint_alias}}", \"arn:aws:s3::{{111122223333}}:accesspoint/{{MultiRegionAccessPoint_alias}}/object/*\" ] } }" }
@@ -112,7 +112,7 @@ To query your results for the previous operation, use the following command:
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws s3control describe-multi-region-access-point-operation
 --account-id {{111122223333}}
 --request-token-arn {{requestArn}}
@@ -125,7 +125,7 @@ To retrieve your Multi-Region Access Point policy, use the following command:
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws s3control get-multi-region-access-point-policy
 --account-id {{111122223333}}
 --name={{{{amzn-s3-demo-bucket}}}}-{{MultiRegionAccessPoint}}
@@ -175,7 +175,7 @@ Delegating access control for a bucket to a Multi-Region Access Point policy doe
 The following example bucket policy grants full bucket access to a specific Multi-Region Access Point. This means that all access to this bucket is controlled by the policies that are attached to the Multi-Region Access Point. We recommend configuring your buckets this way for all use cases that don't require direct access to the bucket. You can use this bucket policy structure for Multi-Region Access Points in either the same account or in another account.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement" : [
@@ -196,7 +196,7 @@ If there are multiple Multi-Region Access Points that you're granting access to,
 The following Multi-Region Access Point policy allows account `{{123456789012}}` permission to list and read the objects contained in the Multi-Region Access Point defined by the {{`MultiRegionAccessPoint_ARN`}}.
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

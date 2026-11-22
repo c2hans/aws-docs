@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dynamodb-table-inputformatoptions-syntax.json"></a>
 
-```
+```json
 {
   "[Csv](#cfn-dynamodb-table-inputformatoptions-csv)" : {{Csv}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dynamodb-table-inputformatoptions-syntax.yaml"></a>
 
-```
+```yaml
   [Csv](#cfn-dynamodb-table-inputformatoptions-csv): {{
     Csv}}
 ```

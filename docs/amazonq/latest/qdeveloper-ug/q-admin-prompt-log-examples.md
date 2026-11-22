@@ -20,7 +20,7 @@ For more information about prompt logs, see [Logging users' prompts in Amazon Q 
 
 The following example shows a log file that is generated when a user accepts an inline suggestion.
 
-```
+```json
 {
     "records": [
         {
@@ -62,7 +62,7 @@ The following table describes the fields in the log file for inline suggestions.
 
 The following example shows a log file that is generated when a user chats using Amazon Q in their IDE.
 
-```
+```json
 {
     "records": [
         {
@@ -119,7 +119,7 @@ The following example shows a log file that is generated when a user chats using
 
 The following example shows a log file that is generated with a user enters a **/dev** command in the Amazon Q chat in their IDE.
 
-```
+```json
 {
     "records": [
         {

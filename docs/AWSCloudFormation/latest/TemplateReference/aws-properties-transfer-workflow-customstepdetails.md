@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-transfer-workflow-customstepdetails-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-transfer-workflow-customstepdetails-name)" : {{String}},
   "[SourceFileLocation](#cfn-transfer-workflow-customstepdetails-sourcefilelocation)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-transfer-workflow-customstepdetails-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-transfer-workflow-customstepdetails-name): {{String}}
   [SourceFileLocation](#cfn-transfer-workflow-customstepdetails-sourcefilelocation): {{String}}
   [Target](#cfn-transfer-workflow-customstepdetails-target): {{String}}

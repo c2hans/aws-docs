@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-fleet-locationcapacity-syntax.json"></a>
 
-```
+```json
 {
   "[DesiredEC2Instances](#cfn-gamelift-fleet-locationcapacity-desiredec2instances)" : {{Integer}},
   "[ManagedCapacityConfiguration](#cfn-gamelift-fleet-locationcapacity-managedcapacityconfiguration)" : {{ManagedCapacityConfiguration}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-fleet-locationcapacity-syntax.yaml"></a>
 
-```
+```yaml
   [DesiredEC2Instances](#cfn-gamelift-fleet-locationcapacity-desiredec2instances): {{Integer}}
   [ManagedCapacityConfiguration](#cfn-gamelift-fleet-locationcapacity-managedcapacityconfiguration): {{
     ManagedCapacityConfiguration}}

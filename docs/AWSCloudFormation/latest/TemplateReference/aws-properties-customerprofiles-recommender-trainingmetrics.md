@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-recommender-trainingmetrics-syntax.json"></a>
 
-```
+```json
 {
   "[Metrics](#cfn-customerprofiles-recommender-trainingmetrics-metrics)" : {{Metrics}},
   "[Time](#cfn-customerprofiles-recommender-trainingmetrics-time)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-recommender-trainingmetrics-syntax.yaml"></a>
 
-```
+```yaml
   [Metrics](#cfn-customerprofiles-recommender-trainingmetrics-metrics): {{
     Metrics}}
   [Time](#cfn-customerprofiles-recommender-trainingmetrics-time): {{String}}

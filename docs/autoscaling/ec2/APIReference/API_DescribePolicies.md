@@ -106,7 +106,7 @@ https://autoscaling.amazonaws.com/?Action=DescribePolicies
 #### Sample Response
 <a name="API_DescribePolicies_Example_1_Response"></a>
 
-```
+```xml
 <DescribePoliciesResponse xmlns="https://autoscaling.amazonaws.com/doc/2011-01-01/">
   <DescribePoliciesResult>
     <ScalingPolicies>

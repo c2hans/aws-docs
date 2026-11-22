@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codedeploy-deploymentgroup-githublocation-syntax.json"></a>
 
-```
+```json
 {
   "[CommitId](#cfn-codedeploy-deploymentgroup-githublocation-commitid)" : {{String}},
   "[Repository](#cfn-codedeploy-deploymentgroup-githublocation-repository)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codedeploy-deploymentgroup-githublocation-syntax.yaml"></a>
 
-```
+```yaml
   [CommitId](#cfn-codedeploy-deploymentgroup-githublocation-commitid): {{String}}
   [Repository](#cfn-codedeploy-deploymentgroup-githublocation-repository): {{String}}
 ```

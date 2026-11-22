@@ -103,6 +103,8 @@ Each Region is designed to be completely isolated from the other Regions. Within
   <tr><td>Asia Pacific (Osaka) Region<br /><code>ap-northeast-3</code></td><td><code>elasticache.ap-northeast-3.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
   <tr><td>Asia Pacific (Singapore) Region<br /><code>ap-southeast-1</code></td><td><code>elasticache.ap-southeast-1.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
   <tr><td>Asia Pacific (Sydney) Region<br /><code>ap-southeast-2</code></td><td><code>elasticache.ap-southeast-2.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>Asia Pacific (Malaysia) Region<br /><code>ap-southeast-5</code></td><td><code>elasticache.ap-southeast-5.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
+  <tr><td>Asia Pacific (Thailand) Region<br /><code>ap-southeast-7</code></td><td><code>elasticache.ap-southeast-7.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
   <tr><td>Europe (Frankfurt) Region<br /><code>eu-central-1</code></td><td><code>elasticache.eu-central-1.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
   <tr><td>Europe (Zurich) Region<br /><code>eu-central-2</code></td><td><code>elasticache.eu-central-2.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>
   <tr><td>Europe (Stockholm) Region<br /><code>eu-north-1</code></td><td><code>elasticache.eu-north-1.amazonaws.com</code></td><td>HTTPS</td><td></td></tr>

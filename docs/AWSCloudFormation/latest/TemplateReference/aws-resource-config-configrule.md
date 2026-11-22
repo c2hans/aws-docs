@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-config-configrule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Config::ConfigRule",
   "Properties" : {
@@ -52,7 +52,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-config-configrule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Config::ConfigRule
 Properties:
   [Compliance](#cfn-config-configrule-compliance): {{
@@ -175,7 +175,7 @@ The following example uses an AWS managed rule that checks whether EC2 volumes r
 #### JSON
 <a name="aws-resource-config-configrule--examples--Config_Rule--json"></a>
 
-```
+```json
 "ConfigRuleForVolumeTags": {
   "Type": "AWS::Config::ConfigRule",
   "Properties": {
@@ -194,7 +194,7 @@ The following example uses an AWS managed rule that checks whether EC2 volumes r
 #### YAML
 <a name="aws-resource-config-configrule--examples--Config_Rule--yaml"></a>
 
-```
+```yaml
 ConfigRuleForVolumeTags:
   Type: AWS::Config::ConfigRule
   Properties:
@@ -216,7 +216,7 @@ The following example is the AWS Lambda function’s code to check whether an EC
 ####
 <a name="aws-resource-config-configrule--examples--Create_Rule_Using_Lambda_Function--javascript"></a>
 
-```
+```javascript
 import { ConfigServiceClient, PutEvaluationsCommand } from "@aws-sdk/client-config-service";
 import { EC2Client, DescribeVolumeAttributeCommand } from "@aws-sdk/client-ec2"
 

@@ -46,7 +46,7 @@ For security purposes, administrators can [review AWS CloudTrail logs](cloudtrai
 
 1. Create a new profile for the role in the `.aws/config` file in Unix or Linux, or the `C:\Users\USERNAME\.aws\config` file in Windows. The following example creates a profile called `prodaccess` that switches to the role `{{ProductionAccessRole}}` in the `123456789012` account. You get the role ARN from the account administrator who created the role. When this profile is invoked, the AWS CLI uses the credentials of the `source_profile` to request credentials for the role. Because of that, the identity referenced as the `source_profile` must have `sts:AssumeRole` permissions to the role that is specified in the `role_arn`.
 
-   ```
+   ```json
    [profile prodaccess]
        role_arn = arn:aws:iam::{{123456789012}}:role/ProductionAccessRole
        source_profile = default
@@ -76,7 +76,7 @@ Imagine that you are using two AWS accounts, and you want to allow an applicatio
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -124,7 +124,7 @@ Assume that the `efgh` cross-account role allows read-only Amazon S3 tasks on th
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -166,7 +166,7 @@ The `efgh` role must allow the `abcd` instance profile role to assume it. To do 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -191,7 +191,7 @@ For security purposes, you can use AWS CloudTrail to audit the use of roles in t
 
 1. You do not have to configure a default CLI profile. Instead, you can load credentials from the EC2 instance profile metadata. Create a new profile for the role in the `.aws/config` file. The following example creates an `instancecrossaccount` profile that switches to the role `{{efgh}}` in the `222222222222` account. When this profile is invoked, the AWS CLI uses the credentials of the EC2 instance profile metadata to request credentials for the role. Because of that, the EC2 instance profile role must have `sts:AssumeRole` permissions to the role specified in the `role_arn`.
 
-   ```
+   ```json
    [profile instancecrossaccount]
    role_arn = arn:aws:iam::{{222222222222}}:role/efgh
    credential_source = Ec2InstanceMetadata

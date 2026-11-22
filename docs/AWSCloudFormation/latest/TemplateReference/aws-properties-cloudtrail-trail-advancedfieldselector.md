@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudtrail-trail-advancedfieldselector-syntax.json"></a>
 
-```
+```json
 {
   "[EndsWith](#cfn-cloudtrail-trail-advancedfieldselector-endswith)" : {{[ String, ... ]}},
   "[Equals](#cfn-cloudtrail-trail-advancedfieldselector-equals)" : {{[ String, ... ]}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudtrail-trail-advancedfieldselector-syntax.yaml"></a>
 
-```
+```yaml
   [EndsWith](#cfn-cloudtrail-trail-advancedfieldselector-endswith): {{
     - String}}
   [Equals](#cfn-cloudtrail-trail-advancedfieldselector-equals): {{

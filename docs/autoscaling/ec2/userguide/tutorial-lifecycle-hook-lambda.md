@@ -50,7 +50,7 @@ Before you create a Lambda function, you must first create an execution role and
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -114,7 +114,7 @@ Create a Lambda function to serve as the target for events. The sample Lambda fu
 
 1. With your `LogAutoScalingEvent` function still open in the console, under **Code source**, in the editor, paste the following sample code into the file named index.mjs.
 
-   ```
+   ```javascript
    import { AutoScalingClient, CompleteLifecycleActionCommand } from "@aws-sdk/client-auto-scaling";
    export const handler = async(event) => {
      console.log('LogAutoScalingEvent');

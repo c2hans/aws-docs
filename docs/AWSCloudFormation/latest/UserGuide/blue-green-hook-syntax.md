@@ -9,7 +9,7 @@ The following syntax describes the structure of an `AWS::CodeDeploy::BlueGreen` 
 ## Syntax
 <a name="cfn-blue-green-hook-syntax"></a>
 
-```
+```json
 "Hooks": {
   "{{Logical ID}}": {
     "Type": "AWS::CodeDeploy::BlueGreen",

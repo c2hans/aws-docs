@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-acmpca-certificate-keyusage-syntax.json"></a>
 
-```
+```json
 {
   "[CRLSign](#cfn-acmpca-certificate-keyusage-crlsign)" : {{Boolean}},
   "[DataEncipherment](#cfn-acmpca-certificate-keyusage-dataencipherment)" : {{Boolean}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-acmpca-certificate-keyusage-syntax.yaml"></a>
 
-```
+```yaml
   [CRLSign](#cfn-acmpca-certificate-keyusage-crlsign): {{Boolean}}
   [DataEncipherment](#cfn-acmpca-certificate-keyusage-dataencipherment): {{Boolean}}
   [DecipherOnly](#cfn-acmpca-certificate-keyusage-decipheronly): {{Boolean}}

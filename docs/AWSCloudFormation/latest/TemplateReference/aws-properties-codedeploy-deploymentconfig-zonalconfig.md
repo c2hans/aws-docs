@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codedeploy-deploymentconfig-zonalconfig-syntax.json"></a>
 
-```
+```json
 {
   "[FirstZoneMonitorDurationInSeconds](#cfn-codedeploy-deploymentconfig-zonalconfig-firstzonemonitordurationinseconds)" : {{Integer}},
   "[MinimumHealthyHostsPerZone](#cfn-codedeploy-deploymentconfig-zonalconfig-minimumhealthyhostsperzone)" : {{MinimumHealthyHostsPerZone}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codedeploy-deploymentconfig-zonalconfig-syntax.yaml"></a>
 
-```
+```yaml
   [FirstZoneMonitorDurationInSeconds](#cfn-codedeploy-deploymentconfig-zonalconfig-firstzonemonitordurationinseconds): {{Integer}}
   [MinimumHealthyHostsPerZone](#cfn-codedeploy-deploymentconfig-zonalconfig-minimumhealthyhostsperzone): {{
     MinimumHealthyHostsPerZone}}

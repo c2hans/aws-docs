@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-space-encryptionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EncryptionStrategy](#cfn-cloudwatch-space-encryptionconfiguration-encryptionstrategy)" : {{String}},
   "[KmsKeyArn](#cfn-cloudwatch-space-encryptionconfiguration-kmskeyarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-space-encryptionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EncryptionStrategy](#cfn-cloudwatch-space-encryptionconfiguration-encryptionstrategy): {{String}}
   [KmsKeyArn](#cfn-cloudwatch-space-encryptionconfiguration-kmskeyarn): {{String}}
 ```

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-featureactivations-syntax.json"></a>
 
-```
+```json
 {
   "[InputPrepareScheduleActions](#cfn-medialive-channel-featureactivations-inputpreparescheduleactions)" : {{String}},
   "[OutputStaticImageOverlayScheduleActions](#cfn-medialive-channel-featureactivations-outputstaticimageoverlayscheduleactions)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-featureactivations-syntax.yaml"></a>
 
-```
+```yaml
   [InputPrepareScheduleActions](#cfn-medialive-channel-featureactivations-inputpreparescheduleactions): {{String}}
   [OutputStaticImageOverlayScheduleActions](#cfn-medialive-channel-featureactivations-outputstaticimageoverlayscheduleactions): {{String}}
 ```

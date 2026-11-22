@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rds-dbcluster-scalingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AutoPause](#cfn-rds-dbcluster-scalingconfiguration-autopause)" : {{Boolean}},
   "[MaxCapacity](#cfn-rds-dbcluster-scalingconfiguration-maxcapacity)" : {{Integer}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rds-dbcluster-scalingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AutoPause](#cfn-rds-dbcluster-scalingconfiguration-autopause): {{Boolean}}
   [MaxCapacity](#cfn-rds-dbcluster-scalingconfiguration-maxcapacity): {{Integer}}
   [MinCapacity](#cfn-rds-dbcluster-scalingconfiguration-mincapacity): {{Integer}}
@@ -110,7 +110,7 @@ For a sample template that configures an Aurora Serverless DB cluster, see [ Cre
 #### JSON
 <a name="aws-properties-rds-dbcluster-scalingconfiguration--examples--Specifying_a_scaling_configuration--json"></a>
 
-```
+```json
 "ScalingConfiguration":{
    "AutoPause":true,
    "MinCapacity": 4,
@@ -122,7 +122,7 @@ For a sample template that configures an Aurora Serverless DB cluster, see [ Cre
 #### YAML
 <a name="aws-properties-rds-dbcluster-scalingconfiguration--examples--Specifying_a_scaling_configuration--yaml"></a>
 
-```
+```yaml
 ScalingConfiguration:
   AutoPause: true
   MinCapacity: 4

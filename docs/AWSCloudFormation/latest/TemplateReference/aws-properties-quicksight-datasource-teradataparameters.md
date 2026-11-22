@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-datasource-teradataparameters-syntax.json"></a>
 
-```
+```json
 {
   "[Database](#cfn-quicksight-datasource-teradataparameters-database)" : {{String}},
   "[Host](#cfn-quicksight-datasource-teradataparameters-host)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-datasource-teradataparameters-syntax.yaml"></a>
 
-```
+```yaml
   [Database](#cfn-quicksight-datasource-teradataparameters-database): {{String}}
   [Host](#cfn-quicksight-datasource-teradataparameters-host): {{String}}
   [Port](#cfn-quicksight-datasource-teradataparameters-port): {{Number}}

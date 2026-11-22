@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-input-mediaconnectflow-syntax.json"></a>
 
-```
+```json
 {
   "[FlowArn](#cfn-medialive-input-mediaconnectflow-flowarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-input-mediaconnectflow-syntax.yaml"></a>
 
-```
+```yaml
   [FlowArn](#cfn-medialive-input-mediaconnectflow-flowarn): {{String}}
 ```
 

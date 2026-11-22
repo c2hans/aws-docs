@@ -37,7 +37,7 @@ If your users will create or manage a Spot Fleet, be sure to grant them the requ
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -184,7 +184,7 @@ The **EC2 - Spot Fleet** use case will automatically create a policy with the re
 **To create the AWSServiceRoleForEC2SpotFleet role for Spot Fleet using the AWS CLI**
 Use the [create-service-linked-role](https://docs.aws.amazon.com/cli/latest/reference/iam/create-service-linked-role.html) command as follows.
 
-```
+```bash
 aws iam create-service-linked-role --aws-service-name spotfleet.amazonaws.com
 ```
 
@@ -200,7 +200,7 @@ When providing permissions, grants are an alternative to key policies. For more 
 **To grant the AWSServiceRoleForEC2SpotFleet role permissions to use the CMK**
 + Use the [create-grant](https://docs.aws.amazon.com/cli/latest/reference/kms/create-grant.html) command to add a grant to the CMK and to specify the principal (the **AWSServiceRoleForEC2SpotFleet** service-linked role) that is given permission to perform the operations that the grant permits. The CMK is specified by the `key-id` parameter and the ARN of the CMK. The principal is specified by the `grantee-principal` parameter and the ARN of the **AWSServiceRoleForEC2SpotFleet** service-linked role.
 
-  ```
+  ```bash
   aws kms create-grant \
       --region {{us-east-1}} \
       --key-id arn:aws:kms:{{us-east-1}}:{{444455556666}}:key/{{1234abcd-12ab-34cd-56ef-1234567890ab}} \
@@ -258,7 +258,7 @@ The [confused deputy problem](https://docs.aws.amazon.com/IAM/latest/UserGuide/c
 
 1. In the JSON statement, add a `Condition` element containing your `aws:SourceAccount` and `aws:SourceArn` global condition context keys to prevent the [confused deputy problem](https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html), as follows:
 
-   ```
+   ```JSON
    "Condition": {
          "ArnLike": {
            "aws:SourceArn": "arn:aws:ec2:us-east-1:{{111122223333}}:spot-fleet-request/sfr-*"
@@ -277,7 +277,7 @@ If the `aws:SourceArn` value contains the account ID and you use both global con
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": {

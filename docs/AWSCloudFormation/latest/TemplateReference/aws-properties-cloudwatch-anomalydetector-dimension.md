@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-anomalydetector-dimension-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-cloudwatch-anomalydetector-dimension-name)" : {{String}},
   "[Value](#cfn-cloudwatch-anomalydetector-dimension-value)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-anomalydetector-dimension-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-cloudwatch-anomalydetector-dimension-name): {{String}}
   [Value](#cfn-cloudwatch-anomalydetector-dimension-value): {{String}}
 ```

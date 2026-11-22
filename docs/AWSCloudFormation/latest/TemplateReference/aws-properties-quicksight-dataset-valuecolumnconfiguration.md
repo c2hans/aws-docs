@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-valuecolumnconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AggregationFunction](#cfn-quicksight-dataset-valuecolumnconfiguration-aggregationfunction)" : {{DataPrepAggregationFunction}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-valuecolumnconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AggregationFunction](#cfn-quicksight-dataset-valuecolumnconfiguration-aggregationfunction): {{
     DataPrepAggregationFunction}}
 ```

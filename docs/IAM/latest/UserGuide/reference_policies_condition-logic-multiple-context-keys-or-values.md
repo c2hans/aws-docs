@@ -30,7 +30,7 @@ For example, the following S3 bucket policy illustrates how the previous figure 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -94,7 +94,7 @@ For example, the following S3 bucket policy illustrates how the previous figure 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

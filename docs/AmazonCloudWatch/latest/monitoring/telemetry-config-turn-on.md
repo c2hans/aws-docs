@@ -29,7 +29,7 @@ If you are not allowed to perform these actions, turning on telemetry configurat
 
 The following example JSON policy grants the additional permissions required to turn on telemetry configuration for an organization:
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [

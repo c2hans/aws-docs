@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-configuredtable-databrickstablereference-syntax.json"></a>
 
-```
+```json
 {
   "[ConnectionType](#cfn-cleanrooms-configuredtable-databrickstablereference-connectiontype)" : {{DatabricksConnectionType}},
   "[SchemaName](#cfn-cleanrooms-configuredtable-databrickstablereference-schemaname)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-configuredtable-databrickstablereference-syntax.yaml"></a>
 
-```
+```yaml
   [ConnectionType](#cfn-cleanrooms-configuredtable-databrickstablereference-connectiontype): {{
     DatabricksConnectionType}}
   [SchemaName](#cfn-cleanrooms-configuredtable-databrickstablereference-schemaname): {{String}}

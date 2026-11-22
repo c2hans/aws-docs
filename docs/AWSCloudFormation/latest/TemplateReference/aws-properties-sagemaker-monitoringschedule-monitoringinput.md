@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-monitoringschedule-monitoringinput-syntax.json"></a>
 
-```
+```json
 {
   "[BatchTransformInput](#cfn-sagemaker-monitoringschedule-monitoringinput-batchtransforminput)" : {{BatchTransformInput}},
   "[EndpointInput](#cfn-sagemaker-monitoringschedule-monitoringinput-endpointinput)" : {{EndpointInput}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-monitoringschedule-monitoringinput-syntax.yaml"></a>
 
-```
+```yaml
   [BatchTransformInput](#cfn-sagemaker-monitoringschedule-monitoringinput-batchtransforminput): {{
     BatchTransformInput}}
   [EndpointInput](#cfn-sagemaker-monitoringschedule-monitoringinput-endpointinput): {{

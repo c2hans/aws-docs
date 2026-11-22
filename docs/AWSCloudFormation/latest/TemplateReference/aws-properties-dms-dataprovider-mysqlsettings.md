@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dms-dataprovider-mysqlsettings-syntax.json"></a>
 
-```
+```json
 {
   "[CertificateArn](#cfn-dms-dataprovider-mysqlsettings-certificatearn)" : {{String}},
   "[Port](#cfn-dms-dataprovider-mysqlsettings-port)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dms-dataprovider-mysqlsettings-syntax.yaml"></a>
 
-```
+```yaml
   [CertificateArn](#cfn-dms-dataprovider-mysqlsettings-certificatearn): {{String}}
   [Port](#cfn-dms-dataprovider-mysqlsettings-port): {{Integer}}
   [ServerName](#cfn-dms-dataprovider-mysqlsettings-servername): {{String}}

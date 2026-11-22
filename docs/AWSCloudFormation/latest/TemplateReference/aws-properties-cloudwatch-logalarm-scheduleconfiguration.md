@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-logalarm-scheduleconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EndTimeOffset](#cfn-cloudwatch-logalarm-scheduleconfiguration-endtimeoffset)" : {{Integer}},
   "[ScheduleExpression](#cfn-cloudwatch-logalarm-scheduleconfiguration-scheduleexpression)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-logalarm-scheduleconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EndTimeOffset](#cfn-cloudwatch-logalarm-scheduleconfiguration-endtimeoffset): {{Integer}}
   [ScheduleExpression](#cfn-cloudwatch-logalarm-scheduleconfiguration-scheduleexpression): {{String}}
   [StartTimeOffset](#cfn-cloudwatch-logalarm-scheduleconfiguration-starttimeoffset): {{Integer}}

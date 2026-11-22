@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-mltransform-transformparameters-syntax.json"></a>
 
-```
+```json
 {
   "[FindMatchesParameters](#cfn-glue-mltransform-transformparameters-findmatchesparameters)" : {{FindMatchesParameters}},
   "[TransformType](#cfn-glue-mltransform-transformparameters-transformtype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-mltransform-transformparameters-syntax.yaml"></a>
 
-```
+```yaml
   [FindMatchesParameters](#cfn-glue-mltransform-transformparameters-findmatchesparameters): {{
     FindMatchesParameters}}
   [TransformType](#cfn-glue-mltransform-transformparameters-transformtype): {{String}}

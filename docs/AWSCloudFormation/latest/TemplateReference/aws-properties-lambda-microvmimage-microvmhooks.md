@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-microvmimage-microvmhooks-syntax.json"></a>
 
-```
+```json
 {
   "[Resume](#cfn-lambda-microvmimage-microvmhooks-resume)" : {{String}},
   "[ResumeTimeoutInSeconds](#cfn-lambda-microvmimage-microvmhooks-resumetimeoutinseconds)" : {{Integer}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-microvmimage-microvmhooks-syntax.yaml"></a>
 
-```
+```yaml
   [Resume](#cfn-lambda-microvmimage-microvmhooks-resume): {{String}}
   [ResumeTimeoutInSeconds](#cfn-lambda-microvmimage-microvmhooks-resumetimeoutinseconds): {{Integer}}
   [Run](#cfn-lambda-microvmimage-microvmhooks-run): {{String}}

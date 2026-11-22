@@ -15,7 +15,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/AutoScaling#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Enable the collection of metric data for an Auto Scaling group.
     /// </summary>
@@ -47,7 +47,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/autoscaling#code-examples).
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -112,7 +112,7 @@ For more information, see [Monitoring CloudWatch metrics for your Auto Scaling g
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/autoscale#code-examples).
 
-```
+```java
     public static void enableMetricsCollection(AutoScalingClient autoScalingClient, String groupName) {
         try {
             EnableMetricsCollectionRequest collectionRequest = EnableMetricsCollectionRequest.builder()
@@ -138,7 +138,7 @@ For more information, see [Monitoring CloudWatch metrics for your Auto Scaling g
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/autoscale#code-examples).
 
-```
+```kotlin
 suspend fun enableMetricsCollection(groupName: String?) {
     val collectionRequest =
         EnableMetricsCollectionRequest {
@@ -161,7 +161,7 @@ suspend fun enableMetricsCollection(groupName: String?) {
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/auto-scaling#code-examples).
 
-```
+```php
     public function enableMetricsCollection($autoScalingGroupName, $granularity)
     {
         return $this->autoScalingClient->enableMetricsCollection([
@@ -178,12 +178,12 @@ suspend fun enableMetricsCollection(groupName: String?) {
 **Tools for PowerShell V4**
 **Example 1: This example enables monitoring of the specified metrics for the specified Auto Scaling group.**
 
-```
+```powershell
 Enable-ASMetricsCollection  -Metric @("GroupMinSize", "GroupMaxSize") -AutoScalingGroupName my-asg -Granularity 1Minute
 ```
 **Example 2: This example enables monitoring of all metrics for the specified Auto Scaling group.**
 
-```
+```powershell
 Enable-ASMetricsCollection -AutoScalingGroupName my-asg -Granularity 1Minute
 ```
 +  For API details, see [EnableMetricsCollection](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -191,12 +191,12 @@ Enable-ASMetricsCollection -AutoScalingGroupName my-asg -Granularity 1Minute
 **Tools for PowerShell V5**
 **Example 1: This example enables monitoring of the specified metrics for the specified Auto Scaling group.**
 
-```
+```powershell
 Enable-ASMetricsCollection  -Metric @("GroupMinSize", "GroupMaxSize") -AutoScalingGroupName my-asg -Granularity 1Minute
 ```
 **Example 2: This example enables monitoring of all metrics for the specified Auto Scaling group.**
 
-```
+```powershell
 Enable-ASMetricsCollection -AutoScalingGroupName my-asg -Granularity 1Minute
 ```
 +  For API details, see [EnableMetricsCollection](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -207,7 +207,7 @@ Enable-ASMetricsCollection -AutoScalingGroupName my-asg -Granularity 1Minute
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/auto-scaling#code-examples).
 
-```
+```python
 class AutoScalingWrapper:
     """Encapsulates Amazon EC2 Auto Scaling actions."""
 
@@ -262,7 +262,7 @@ class AutoScalingWrapper:
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/auto-scaling#code-examples).
 
-```
+```rust
         let enable_metrics_collection = autoscaling
             .enable_metrics_collection()
             .auto_scaling_group_name(auto_scaling_group_name.as_str())
@@ -285,7 +285,7 @@ class AutoScalingWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/asc#code-examples).
 
-```
+```sap-abap
     " Example: iv_group_name = 'my-auto-scaling-group'
     " Example: it_metrics contains list of metrics like 'GroupMinSize', 'GroupMaxSize', etc.
 

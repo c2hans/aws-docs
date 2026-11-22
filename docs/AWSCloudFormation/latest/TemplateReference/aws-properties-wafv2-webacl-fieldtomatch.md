@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-fieldtomatch-syntax.json"></a>
 
-```
+```json
 {
   "[AllQueryArguments](#cfn-wafv2-webacl-fieldtomatch-allqueryarguments)" : {{Json}},
   "[Body](#cfn-wafv2-webacl-fieldtomatch-body)" : {{Body}},
@@ -51,7 +51,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-fieldtomatch-syntax.yaml"></a>
 
-```
+```yaml
   [AllQueryArguments](#cfn-wafv2-webacl-fieldtomatch-allqueryarguments): {{Json}}
   [Body](#cfn-wafv2-webacl-fieldtomatch-body): {{
     Body}}
@@ -202,7 +202,7 @@ The following shows an example field to match specification for a setting that d
 #### YAML
 <a name="aws-properties-wafv2-webacl-fieldtomatch--examples--Set_the_field_to_match_to_QueryString--yaml"></a>
 
-```
+```yaml
 FieldToMatch:
   QueryString: {}
 ```
@@ -210,7 +210,7 @@ FieldToMatch:
 #### JSON
 <a name="aws-properties-wafv2-webacl-fieldtomatch--examples--Set_the_field_to_match_to_QueryString--json"></a>
 
-```
+```json
 "FieldToMatch":
     {
          "QueryString": {}
@@ -225,7 +225,7 @@ The following shows an example field to match specification for a setting that h
 #### YAML
 <a name="aws-properties-wafv2-webacl-fieldtomatch--examples--Set_the_field_to_match_to_Method--yaml"></a>
 
-```
+```yaml
 FieldToMatch:
   Method:
      Name: DELETE
@@ -234,7 +234,7 @@ FieldToMatch:
 #### JSON
 <a name="aws-properties-wafv2-webacl-fieldtomatch--examples--Set_the_field_to_match_to_Method--json"></a>
 
-```
+```json
 "FieldToMatch":
 {
     "Method":

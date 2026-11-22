@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-virtualgateway-virtualgatewaylistenertlsacmcertificate-syntax.json"></a>
 
-```
+```json
 {
   "[CertificateArn](#cfn-appmesh-virtualgateway-virtualgatewaylistenertlsacmcertificate-certificatearn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-virtualgateway-virtualgatewaylistenertlsacmcertificate-syntax.yaml"></a>
 
-```
+```yaml
   [CertificateArn](#cfn-appmesh-virtualgateway-virtualgatewaylistenertlsacmcertificate-certificatearn): {{String}}
 ```
 

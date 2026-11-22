@@ -13,7 +13,7 @@ The following code example shows how to delete all of the objects in an Amazon S
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 Delete all objects for a given Amazon S3 bucket.
 
-```
+```javascript
 import {
   DeleteObjectsCommand,
   paginateListObjectsV2,

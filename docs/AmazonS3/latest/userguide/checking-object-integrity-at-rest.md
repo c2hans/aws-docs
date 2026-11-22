@@ -101,7 +101,7 @@ Each batch operations job progresses through different [job statuses](https://do
 **Example: Creating a **Compute checksum** job**
 The following example shows you how to create a **Compute checksum** job (as part of a **Create job** request), and how to specify a manifest:
 
-```
+```java
 // Required parameters
 String accountId = "{{111122223333}}";
 String roleArn = "arn:aws:iam::{{111122223333}}:role/BatchOperations";
@@ -195,7 +195,7 @@ You can use the [create-job](https://docs.aws.amazon.com/cli/latest/reference/s3
 
 To use this command, replace the {{user input placeholders}} with your own information:
 
-```
+```bash
 aws s3control create-job \
     --account-id {{111122223333}} \
     --manifest '{"Spec":{"Format":"{{S3BatchOperations_CSV_20180820}}","Fields":["Bucket","Key"]},"Location":{"ObjectArn":"arn:aws:s3:::{{my-manifest-bucket/manifest}}.csv","ETag":"{{e0e8bfc50e0f0c5d5a1a5f0e0e8bfc50}}"}}' \
@@ -245,7 +245,7 @@ To monitor the progress of your **Compute checksum** job, use the [describe-job]
 
 For example:
 
-```
+```bash
 aws s3control describe-job --account-id {{111122223333}} --job-id {{1234567890abcdef0}}
 ```
 

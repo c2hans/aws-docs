@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLS
 
 You can drop a database on an Amazon RDS DB instance running Microsoft SQL Server in a Single-AZ or Multi-AZ deployment. To drop the database, use the following command:
 
-```
+```sql
 --replace {{your-database-name}} with the name of the database you want to drop
 EXECUTE msdb.dbo.rds_drop_database  N'{{your-database-name}}'
 ```
@@ -18,7 +18,7 @@ After you use this procedure to drop the database, Amazon RDS drops all existing
 
 To grant backup and restore allowance to other users, follow this procedure:
 
-```
+```sql
 USE master
 GO
 CREATE LOGIN {{user1}} WITH PASSWORD=N'{{changeThis}}', DEFAULT_DATABASE=master, CHECK_EXPIRATION=OFF, CHECK_POLICY=OFF

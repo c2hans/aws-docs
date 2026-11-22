@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-evs-environment-secret-syntax.json"></a>
 
-```
+```json
 {
   "[SecretArn](#cfn-evs-environment-secret-secretarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-evs-environment-secret-syntax.yaml"></a>
 
-```
+```yaml
   [SecretArn](#cfn-evs-environment-secret-secretarn): {{String}}
 ```
 

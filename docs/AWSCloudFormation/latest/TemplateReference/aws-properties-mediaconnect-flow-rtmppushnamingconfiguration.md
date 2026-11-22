@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-flow-rtmppushnamingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Automatic](#cfn-mediaconnect-flow-rtmppushnamingconfiguration-automatic)" : {{Json}},
   "[Manual](#cfn-mediaconnect-flow-rtmppushnamingconfiguration-manual)" : {{ManualRtmpPushNamingConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-flow-rtmppushnamingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Automatic](#cfn-mediaconnect-flow-rtmppushnamingconfiguration-automatic): {{Json}}
   [Manual](#cfn-mediaconnect-flow-rtmppushnamingconfiguration-manual): {{
     ManualRtmpPushNamingConfiguration}}

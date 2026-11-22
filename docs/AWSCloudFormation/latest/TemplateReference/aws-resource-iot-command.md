@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iot-command-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoT::Command",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iot-command-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoT::Command
 Properties:
   [CommandId](#cfn-iot-command-commandid): {{String}}

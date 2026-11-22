@@ -8,18 +8,18 @@ Returns the Amazon Resource Name (ARN) of the user that's currently logged in to
 
  **Signature**
 
-```
+```typescript
 async getUserArn(): Promise<string>
 ```
 
  **Usage**
 
-```
+```typescript
 const userArn: string = await userClient.getUserArn();
 ```
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

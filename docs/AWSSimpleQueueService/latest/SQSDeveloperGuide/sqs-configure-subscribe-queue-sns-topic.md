@@ -38,7 +38,7 @@ If your Amazon SQS queue and Amazon SNS topic are in different AWS accounts, add
 
 Modify the Amazon SNS topic's access policy to allow the Amazon SQS queue's AWS account to subscribe. Example policy statement:
 
-```
+```json
 {
   "Effect": "Allow",
   "Principal": { "AWS": "arn:aws:iam::111122223333:root" },
@@ -53,7 +53,7 @@ This policy allows account `111122223333` to subscribe to `MyTopic`.
 
 Modify the Amazon SQS queue's access policy to allow the Amazon SNS topic to send messages. Example policy statement:
 
-```
+```json
 {
   "Effect": "Allow",
   "Principal": { "Service": "sns.amazonaws.com" },

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-rulegroup-monetizationconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ConnectedAccountConfigs](#cfn-wafv2-rulegroup-monetizationconfig-connectedaccountconfigs)" : {{[ ConnectedAccountConfig, ... ]}},
   "[CryptoConfig](#cfn-wafv2-rulegroup-monetizationconfig-cryptoconfig)" : {{CryptoConfig}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-rulegroup-monetizationconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ConnectedAccountConfigs](#cfn-wafv2-rulegroup-monetizationconfig-connectedaccountconfigs): {{
     - ConnectedAccountConfig}}
   [CryptoConfig](#cfn-wafv2-rulegroup-monetizationconfig-cryptoconfig): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-events-endpoint-routingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[FailoverConfig](#cfn-events-endpoint-routingconfig-failoverconfig)" : {{FailoverConfig}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-events-endpoint-routingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [FailoverConfig](#cfn-events-endpoint-routingconfig-failoverconfig): {{
     FailoverConfig}}
 ```

@@ -341,7 +341,7 @@ If the encrypted cluster that you plan to share uses the default RDS key, make s
 
 ****
 
-   ```
+   ```json
    {
        "Id": "key-policy-1",
        "Version":"2012-10-17",
@@ -418,7 +418,7 @@ You can create DB instances only after the `restore-db-cluster-to-point-in-time`
 
 ****
 
-   ```
+   ```json
    {
        "Id": "key-policy-1",
        "Version":"2012-10-17",

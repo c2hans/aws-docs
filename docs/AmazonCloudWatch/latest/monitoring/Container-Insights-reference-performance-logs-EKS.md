@@ -8,7 +8,7 @@ The following are examples of the performance log events that Container Insights
 
 **Type: Node**
 
-```
+```JSON
 {
   "AutoScalingGroupName": "eksctl-myCICluster-nodegroup-standard-workers-NodeGroup-1174PV2WHZAYU",
   "CloudWatchMetrics": [
@@ -160,7 +160,7 @@ The following are examples of the performance log events that Container Insights
 
 **Type: NodeFS**
 
-```
+```JSON
 {
   "AutoScalingGroupName": "eksctl-myCICluster-nodegroup-standard-workers-NodeGroup-1174PV2WHZAYU",
   "CloudWatchMetrics": [
@@ -212,7 +212,7 @@ The following are examples of the performance log events that Container Insights
 
 **Type: NodeDiskIO**
 
-```
+```JSON
 {
   "AutoScalingGroupName": "eksctl-myCICluster-nodegroup-standard-workers-NodeGroup-1174PV2WHZAYU",
   "ClusterName": "myCICluster",
@@ -245,7 +245,7 @@ The following are examples of the performance log events that Container Insights
 
 **Type: NodeNet**
 
-```
+```JSON
 {
   "AutoScalingGroupName": "eksctl-myCICluster-nodegroup-standard-workers-NodeGroup-1174PV2WHZAYU",
   "ClusterName": "myCICluster",
@@ -277,7 +277,7 @@ The following are examples of the performance log events that Container Insights
 
 **Type: Pod**
 
-```
+```JSON
 {
   "AutoScalingGroupName": "eksctl-myCICluster-nodegroup-standard-workers-NodeGroup-1174PV2WHZAYU",
   "CloudWatchMetrics": [
@@ -444,7 +444,7 @@ The following are examples of the performance log events that Container Insights
 
 **Type: PodNet**
 
-```
+```JSON
 {
   "AutoScalingGroupName": "eksctl-myCICluster-nodegroup-standard-workers-NodeGroup-1174PV2WHZAYU",
   "ClusterName": "myCICluster",
@@ -493,7 +493,7 @@ The following are examples of the performance log events that Container Insights
 
 **Type: Container**
 
-```
+```JSON
 {
   "AutoScalingGroupName": "eksctl-myCICluster-nodegroup-standard-workers-NodeGroup-sample",
   "ClusterName": "myCICluster",
@@ -560,7 +560,7 @@ The following are examples of the performance log events that Container Insights
 
 **Type: ContainerFS**
 
-```
+```JSON
 {
   "AutoScalingGroupName": "eksctl-myCICluster-nodegroup-standard-workers-NodeGroup-1174PV2WHZAYU",
   "ClusterName": "myCICluster",
@@ -607,7 +607,7 @@ The following are examples of the performance log events that Container Insights
 
 **Type: Cluster**
 
-```
+```JSON
 {
   "CloudWatchMetrics": [
     {
@@ -643,7 +643,7 @@ The following are examples of the performance log events that Container Insights
 
 **Type: ClusterService**
 
-```
+```JSON
 {
   "CloudWatchMetrics": [
     {
@@ -685,7 +685,7 @@ The following are examples of the performance log events that Container Insights
 
 **Type: ClusterNamespace**
 
-```
+```JSON
 {
   "CloudWatchMetrics": [
     {

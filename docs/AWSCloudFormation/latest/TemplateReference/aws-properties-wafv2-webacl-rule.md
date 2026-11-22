@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-rule-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-wafv2-webacl-rule-action)" : {{RuleAction}},
   "[CaptchaConfig](#cfn-wafv2-webacl-rule-captchaconfig)" : {{CaptchaConfig}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-rule-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-wafv2-webacl-rule-action): {{
     RuleAction}}
   [CaptchaConfig](#cfn-wafv2-webacl-rule-captchaconfig): {{

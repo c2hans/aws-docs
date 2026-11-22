@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-shield-proactiveengagement-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Shield::ProactiveEngagement",
   "Properties" : {
@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-shield-proactiveengagement-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Shield::ProactiveEngagement
 Properties:
   [EmergencyContactList](#cfn-shield-proactiveengagement-emergencycontactlist): {{
@@ -111,7 +111,7 @@ The following shows an example proactive engagement configuration with proactive
 #### YAML
 <a name="aws-resource-shield-proactiveengagement--examples--Enable_proactive_engagement_and_define_contacts--yaml"></a>
 
-```
+```yaml
 Resources:
   TestProactiveEngagement:
     DeletionPolicy: Delete
@@ -130,7 +130,7 @@ Resources:
 #### JSON
 <a name="aws-resource-shield-proactiveengagement--examples--Enable_proactive_engagement_and_define_contacts--json"></a>
 
-```
+```json
 {
     "Resources": {
         "TestProactiveEngagement": {

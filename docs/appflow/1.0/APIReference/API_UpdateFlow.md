@@ -479,7 +479,7 @@ This example shows a sample request for the `UpdateFlow` API using Zendesk.
 #### Sample Request
 <a name="API_UpdateFlow_Example_2_Request"></a>
 
-```
+```json
 {
   "useDefaultEncryption": false,
   "flowName": "testFlowZendesk",
@@ -529,7 +529,7 @@ This example shows a sample request for the `UpdateFlow` API using Google Analyt
 #### Sample Request
 <a name="API_UpdateFlow_Example_3_Request"></a>
 
-```
+```json
 {
   "useDefaultEncryption": false,
   "flowName": "testFlowGAnalytics",
@@ -579,7 +579,7 @@ This example shows a sample request for the `UpdateFlow` API using Marketo.
 #### Sample Request
 <a name="API_UpdateFlow_Example_4_Request"></a>
 
-```
+```json
 {
   "flowName": "testMarketo",
   "description": "TestFlow",

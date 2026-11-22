@@ -8,7 +8,7 @@ When you use Athena to read Apache Hudi tables, consider the following points.
 + **Read and write operations** – Athena can read compacted Hudi datasets but not write Hudi data.
 + **Hudi versions** – Athena supports Hudi version 0.14.0 (default) and 0.15.0. Athena cannot guarantee read compatibility with tables that are created with later versions of Hudi. For more information about Hudi features and versioning, see the [Hudi documentation](https://hudi.apache.org/) on the Apache website. Note that version 0.15.0 of the Hudi connector on Athena does not support bootstrapped tables. To use 0.15.0 of the Hudi connector, set the following table property:
 
-  ```
+  ```sql
   ALTER TABLE {{table_name}} SET TBLPROPERTIES ('athena_enable_native_hudi_connector_implementation' = 'true')
   ```
 + **Cross account queries** – Version 0.15.0 of the Hudi connector does not support cross account queries.
@@ -24,7 +24,7 @@ When you use Athena to read Apache Hudi tables, consider the following points.
 
   For example, suppose you issue the following command:
 
-  ```
+  ```sql
   ALTER TABLE {{table_name}} SET TBLPROPERTIES ('read_restored_glacier_objects' = 'false')
   ```
 

@@ -8,13 +8,13 @@ Subscribes a callback function to be invoked whenever the agent's availability s
 
  **Signature**
 
-```
+```typescript
 onAvailabilityStateChanged(handler: AvailabilityStateChangedHandler)
 ```
 
  **Usage**
 
-```
+```typescript
 const handler: AvailabilityStateChangedHandler = async (data: AgentAvailabilityStateChanged) => {
     console.log("Agent availability state changed! " + data.state.name);
 };
@@ -32,6 +32,6 @@ agentClient.onAvailabilityStateChanged(handler);
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

@@ -27,7 +27,7 @@ After `enable_pg_hint` is ON, Babelfish applies the following T-SQL hints.
 
 For example, the following command sequence turns on `pg_hint_plan`.
 
-```
+```SQL
 1> CREATE TABLE t1 (a1 INT PRIMARY KEY, b1 INT);
 2> CREATE TABLE t2 (a2 INT PRIMARY KEY, b2 INT);
 3> GO
@@ -52,7 +52,7 @@ Hash Join (cost=60.85..99.39 rows=2260 width=16)
  -> Seq Scan on t2 (cost=0.00..32.60 rows=2260 width=8)
 ```
 
-```
+```SQL
 1> SELECT * FROM t1 INNER MERGE JOIN t2 ON t1.a1 = t2.a2;
 2> GO
 ```
@@ -69,7 +69,7 @@ Merge Join (cost=0.31..190.01 rows=2260 width=16)
  -> Index Scan using t2_pkey on t2 (cost=0.15..78.06 rows=2260 width=8)
 ```
 
-```
+```SQL
 1> SET BABELFISH_SHOWPLAN_ALL OFF;
 2> GO
 ```

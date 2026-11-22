@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-dataautomationproject-piientitiesconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[PiiEntityTypes](#cfn-bedrock-dataautomationproject-piientitiesconfiguration-piientitytypes)" : {{[ String, ... ]}},
   "[RedactionMaskMode](#cfn-bedrock-dataautomationproject-piientitiesconfiguration-redactionmaskmode)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-dataautomationproject-piientitiesconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [PiiEntityTypes](#cfn-bedrock-dataautomationproject-piientitiesconfiguration-piientitytypes): {{
     - String}}
   [RedactionMaskMode](#cfn-bedrock-dataautomationproject-piientitiesconfiguration-redactionmaskmode): {{String}}

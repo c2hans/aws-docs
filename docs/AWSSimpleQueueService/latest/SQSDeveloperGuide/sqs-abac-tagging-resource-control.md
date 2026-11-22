@@ -11,7 +11,7 @@ The following is an example of using tags for access control in Amazon SQS. The 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

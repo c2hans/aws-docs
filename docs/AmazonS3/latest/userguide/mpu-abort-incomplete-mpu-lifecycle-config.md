@@ -10,7 +10,7 @@ Amazon S3 supports a bucket lifecycle rule that you can use to direct Amazon S3 
 
  The following is an example lifecycle configuration that specifies a rule with the `AbortIncompleteMultipartUpload` action.
 
-```
+```xml
 <LifecycleConfiguration>
     <Rule>
         <ID>sample-rule</ID>
@@ -64,7 +64,7 @@ To automatically manage incomplete multipart uploads, you can use the S3 console
 
 The following `put-bucket-lifecycle-configuration` AWS Command Line Interface (AWS CLI) command adds the lifecycle configuration for the specified bucket. To use this command, replace the `{{user input placeholders}}` with your information.
 
-```
+```bash
 aws s3api put-bucket-lifecycle-configuration  \
         --bucket {{amzn-s3-demo-bucket}}  \
         --lifecycle-configuration {{filename-containing-lifecycle-configuration}}
@@ -80,7 +80,7 @@ To use the CLI commands in this example, replace the `{{user input placeholders}
 
 1. Save the following example lifecycle configuration in a file (for example, {{`lifecycle.json`}}``). This example configuration specifies an empty prefix, and therefore it applies to all objects in the bucket. To restrict the configuration to a subset of objects, you can specify a prefix.
 
-   ```
+   ```json
    {
        "Rules": [
            {
@@ -99,7 +99,7 @@ To use the CLI commands in this example, replace the `{{user input placeholders}
 
 1.  Run the following CLI command to set this lifecycle configuration on your bucket.
 
-   ```
+   ```bash
    aws s3api put-bucket-lifecycle-configuration   \
    --bucket {{amzn-s3-demo-bucket}}  \
    --lifecycle-configuration file://{{lifecycle.json}}
@@ -107,14 +107,14 @@ To use the CLI commands in this example, replace the `{{user input placeholders}
 
 1.  To verify that the lifecycle configuration has been set on your bucket, retrieve the lifecycle configuration by using the following `get-bucket-lifecycle` command.
 
-   ```
+   ```bash
    aws s3api get-bucket-lifecycle  \
    --bucket {{amzn-s3-demo-bucket}}
    ```
 
 1.  To delete the lifecycle configuration, use the following `delete-bucket-lifecycle` command.
 
-   ```
+   ```bash
    aws s3api delete-bucket-lifecycle \
    --bucket {{amzn-s3-demo-bucket}}
    ```

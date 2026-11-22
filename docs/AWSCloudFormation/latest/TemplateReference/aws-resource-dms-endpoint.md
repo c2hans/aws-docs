@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-dms-endpoint-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DMS::Endpoint",
   "Properties" : {
@@ -60,7 +60,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-dms-endpoint-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DMS::Endpoint
 Properties:
   [CertificateArn](#cfn-dms-endpoint-certificatearn): {{String}}
@@ -347,7 +347,7 @@ A value that can be used for cross-account validation.
 #### JSON
 <a name="aws-resource-dms-endpoint--examples----json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -372,7 +372,7 @@ A value that can be used for cross-account validation.
 #### YAML
 <a name="aws-resource-dms-endpoint--examples----yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: "Endpoint test"
 Resources:

@@ -33,7 +33,7 @@ For more information, see [Retaining multiple versions of objects with S3 Versio
 **Tools for PowerShell V4**
 **Example 1: This command returns the status of versioning with respect to the given bucket.**
 
-```
+```powershell
 Get-S3BucketVersioning -BucketName 'amzn-s3-demo-bucket'
 ```
 +  For API details, see [GetBucketVersioning](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -41,7 +41,7 @@ Get-S3BucketVersioning -BucketName 'amzn-s3-demo-bucket'
 **Tools for PowerShell V5**
 **Example 1: This command returns the status of versioning with respect to the given bucket.**
 
-```
+```powershell
 Get-S3BucketVersioning -BucketName 'amzn-s3-demo-bucket'
 ```
 +  For API details, see [GetBucketVersioning](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-paneltitleoptions-syntax.json"></a>
 
-```
+```json
 {
   "[FontConfiguration](#cfn-quicksight-dashboard-paneltitleoptions-fontconfiguration)" : {{FontConfiguration}},
   "[HorizontalTextAlignment](#cfn-quicksight-dashboard-paneltitleoptions-horizontaltextalignment)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-paneltitleoptions-syntax.yaml"></a>
 
-```
+```yaml
   [FontConfiguration](#cfn-quicksight-dashboard-paneltitleoptions-fontconfiguration): {{
     FontConfiguration}}
   [HorizontalTextAlignment](#cfn-quicksight-dashboard-paneltitleoptions-horizontaltextalignment): {{String}}

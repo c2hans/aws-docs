@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-servicediscovery-privatednsnamespace-privatednspropertiesmutable-syntax.json"></a>
 
-```
+```json
 {
   "[SOA](#cfn-servicediscovery-privatednsnamespace-privatednspropertiesmutable-soa)" : {{SOA}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-servicediscovery-privatednsnamespace-privatednspropertiesmutable-syntax.yaml"></a>
 
-```
+```yaml
   [SOA](#cfn-servicediscovery-privatednsnamespace-privatednspropertiesmutable-soa): {{
     SOA}}
 ```

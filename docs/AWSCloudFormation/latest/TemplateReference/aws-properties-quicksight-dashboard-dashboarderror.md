@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-dashboarderror-syntax.json"></a>
 
-```
+```json
 {
   "[Message](#cfn-quicksight-dashboard-dashboarderror-message)" : {{String}},
   "[Type](#cfn-quicksight-dashboard-dashboarderror-type)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-dashboarderror-syntax.yaml"></a>
 
-```
+```yaml
   [Message](#cfn-quicksight-dashboard-dashboarderror-message): {{String}}
   [Type](#cfn-quicksight-dashboard-dashboarderror-type): {{String}}
   [ViolatedEntities](#cfn-quicksight-dashboard-dashboarderror-violatedentities): {{

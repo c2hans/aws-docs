@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-connect-tasktemplate-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Connect::TaskTemplate",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-connect-tasktemplate-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Connect::TaskTemplate
 Properties:
   [ClientToken](#cfn-connect-tasktemplate-clienttoken): {{String}}
@@ -185,7 +185,7 @@ Following is an example of the JSON format for the `Constraints` property.
 #### JSON
 <a name="aws-resource-connect-tasktemplate--examples--JSON_format_for_Constraints--json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Connect::TaskTemplate",
   "Properties" : {

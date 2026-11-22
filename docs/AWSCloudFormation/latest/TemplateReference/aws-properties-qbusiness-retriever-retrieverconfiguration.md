@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-qbusiness-retriever-retrieverconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[KendraIndexConfiguration](#cfn-qbusiness-retriever-retrieverconfiguration-kendraindexconfiguration)" : {{KendraIndexConfiguration}},
   "[NativeIndexConfiguration](#cfn-qbusiness-retriever-retrieverconfiguration-nativeindexconfiguration)" : {{NativeIndexConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-qbusiness-retriever-retrieverconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [KendraIndexConfiguration](#cfn-qbusiness-retriever-retrieverconfiguration-kendraindexconfiguration): {{
     KendraIndexConfiguration}}
   [NativeIndexConfiguration](#cfn-qbusiness-retriever-retrieverconfiguration-nativeindexconfiguration): {{

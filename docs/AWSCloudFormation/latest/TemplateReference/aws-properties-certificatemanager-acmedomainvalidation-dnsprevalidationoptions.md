@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-certificatemanager-acmedomainvalidation-dnsprevalidationoptions-syntax.json"></a>
 
-```
+```json
 {
   "[DomainScope](#cfn-certificatemanager-acmedomainvalidation-dnsprevalidationoptions-domainscope)" : {{DomainScope}},
   "[HostedZoneId](#cfn-certificatemanager-acmedomainvalidation-dnsprevalidationoptions-hostedzoneid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-certificatemanager-acmedomainvalidation-dnsprevalidationoptions-syntax.yaml"></a>
 
-```
+```yaml
   [DomainScope](#cfn-certificatemanager-acmedomainvalidation-dnsprevalidationoptions-domainscope): {{
     DomainScope}}
   [HostedZoneId](#cfn-certificatemanager-acmedomainvalidation-dnsprevalidationoptions-hostedzoneid): {{String}}

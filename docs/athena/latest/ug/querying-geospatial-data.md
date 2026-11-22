@@ -22,7 +22,7 @@ Using geospatial queries in Athena, you can run these and other similar operatio
 
 For example, to obtain a `point` geometry data type from values of type `double` for the geographic coordinates of Mount Rainier in Athena, use the `ST_Point (longitude, latitude)` geospatial function, as in the following example.
 
-```
+```sql
 ST_Point(-121.7602, 46.8527)
 ```
 

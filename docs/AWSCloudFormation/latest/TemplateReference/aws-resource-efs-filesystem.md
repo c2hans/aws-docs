@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-efs-filesystem-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EFS::FileSystem",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-efs-filesystem-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EFS::FileSystem
 Properties:
   [AvailabilityZoneName](#cfn-efs-filesystem-availabilityzonename): {{String}}
@@ -223,7 +223,7 @@ The following example declares an Amazon EFS file system with the following attr
 #### JSON
 <a name="aws-resource-efs-filesystem--examples--Create_an_encrypted_EFS_file_system_using_EFS_Standard_storage_classes--json"></a>
 
-```
+```json
 "{
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -426,7 +426,7 @@ The following example declares an Amazon EFS file system with the following attr
 #### YAML
 <a name="aws-resource-efs-filesystem--examples--Create_an_encrypted_EFS_file_system_using_EFS_Standard_storage_classes--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   MountTargetVPC:
@@ -549,7 +549,7 @@ The following example declares an encrypted One Zone file system in the us-east-
 #### JSON
 <a name="aws-resource-efs-filesystem--examples--Create_a_One_Zone_file_system--json"></a>
 
-```
+```json
 "{
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -694,7 +694,7 @@ The following example declares an encrypted One Zone file system in the us-east-
 #### YAML
 <a name="aws-resource-efs-filesystem--examples--Create_a_One_Zone_file_system--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   MountTargetVPC:

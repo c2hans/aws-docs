@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distribution-s3originconfig-syntax.json"></a>
 
-```
+```json
 {
   "[OriginAccessIdentity](#cfn-cloudfront-distribution-s3originconfig-originaccessidentity)" : {{String}},
   "[OriginReadTimeout](#cfn-cloudfront-distribution-s3originconfig-originreadtimeout)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distribution-s3originconfig-syntax.yaml"></a>
 
-```
+```yaml
   [OriginAccessIdentity](#cfn-cloudfront-distribution-s3originconfig-originaccessidentity): {{String}}
   [OriginReadTimeout](#cfn-cloudfront-distribution-s3originconfig-originreadtimeout): {{Integer}}
 ```

@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-waf-webacl-wafaction-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-waf-webacl-wafaction-type)" : {{String}}
 }
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-waf-webacl-wafaction-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-waf-webacl-wafaction-type): {{String}}
 ```
 

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3express-directorybucket-lifecycleconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Rules](#cfn-s3express-directorybucket-lifecycleconfiguration-rules)" : {{[ Rule, ... ]}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3express-directorybucket-lifecycleconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Rules](#cfn-s3express-directorybucket-lifecycleconfiguration-rules): {{
     - Rule}}
 ```
@@ -52,7 +52,7 @@ The following example template shows an S3 directory bucket with a lifecycle con
 #### JSON
 <a name="aws-properties-s3express-directorybucket-lifecycleconfiguration--examples--Manage_the_lifecycle_for_S3_objects--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -91,7 +91,7 @@ The following example template shows an S3 directory bucket with a lifecycle con
 #### YAML
 <a name="aws-properties-s3express-directorybucket-lifecycleconfiguration--examples--Manage_the_lifecycle_for_S3_objects--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   S3ExpressBucket:

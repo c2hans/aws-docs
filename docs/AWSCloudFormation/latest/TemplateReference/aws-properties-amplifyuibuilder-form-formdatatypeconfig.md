@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amplifyuibuilder-form-formdatatypeconfig-syntax.json"></a>
 
-```
+```json
 {
   "[DataSourceType](#cfn-amplifyuibuilder-form-formdatatypeconfig-datasourcetype)" : {{String}},
   "[DataTypeName](#cfn-amplifyuibuilder-form-formdatatypeconfig-datatypename)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amplifyuibuilder-form-formdatatypeconfig-syntax.yaml"></a>
 
-```
+```yaml
   [DataSourceType](#cfn-amplifyuibuilder-form-formdatatypeconfig-datasourcetype): {{String}}
   [DataTypeName](#cfn-amplifyuibuilder-form-formdatatypeconfig-datatypename): {{String}}
 ```

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 
 The `06-DeleteTable.cs` program deletes `TryDaxTable`. Run this program after you have finished testing.
 
-```
+```csharp
 using System;
 using System.Threading.Tasks;
 using Amazon.DynamoDBv2.Model;

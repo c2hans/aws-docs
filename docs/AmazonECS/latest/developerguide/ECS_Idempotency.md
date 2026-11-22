@@ -112,7 +112,7 @@ aws ecs create-task-set \
 **Example: run-task**
 The following [run-task](https://docs.aws.amazon.com/cli/latest/reference/ecs/run-task.html#examples) command uses idempotency as it includes a client token.
 
-```
+```sh
 aws ecs run-task \
     --cluster MyCluster \
     --task-definition MyTaskDefinition:2 \

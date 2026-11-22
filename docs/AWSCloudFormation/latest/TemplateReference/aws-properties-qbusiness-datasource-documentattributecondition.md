@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-qbusiness-datasource-documentattributecondition-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-qbusiness-datasource-documentattributecondition-key)" : {{String}},
   "[Operator](#cfn-qbusiness-datasource-documentattributecondition-operator)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-qbusiness-datasource-documentattributecondition-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-qbusiness-datasource-documentattributecondition-key): {{String}}
   [Operator](#cfn-qbusiness-datasource-documentattributecondition-operator): {{String}}
   [Value](#cfn-qbusiness-datasource-documentattributecondition-value): {{

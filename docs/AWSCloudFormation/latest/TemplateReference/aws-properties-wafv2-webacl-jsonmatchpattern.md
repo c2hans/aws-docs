@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-jsonmatchpattern-syntax.json"></a>
 
-```
+```json
 {
   "[All](#cfn-wafv2-webacl-jsonmatchpattern-all)" : {{Json}},
   "[IncludedPaths](#cfn-wafv2-webacl-jsonmatchpattern-includedpaths)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-jsonmatchpattern-syntax.yaml"></a>
 
-```
+```yaml
   [All](#cfn-wafv2-webacl-jsonmatchpattern-all): {{Json}}
   [IncludedPaths](#cfn-wafv2-webacl-jsonmatchpattern-includedpaths): {{
     - String}}
@@ -67,7 +67,7 @@ The following shows an example JSON match pattern specification for all paths.
 #### YAML
 <a name="aws-properties-wafv2-webacl-jsonmatchpattern--examples--Set_a_JSON_match_pattern_for_all_paths--yaml"></a>
 
-```
+```yaml
 MatchPattern:
   All: {}
 ```
@@ -75,7 +75,7 @@ MatchPattern:
 #### JSON
 <a name="aws-properties-wafv2-webacl-jsonmatchpattern--examples--Set_a_JSON_match_pattern_for_all_paths--json"></a>
 
-```
+```json
 "MatchPattern": {
   "All": {}
 }
@@ -89,7 +89,7 @@ The following shows an example JSON match pattern specification with included pa
 #### YAML
 <a name="aws-properties-wafv2-webacl-jsonmatchpattern--examples--Set_a_JSON_match_pattern_with_included_paths--yaml"></a>
 
-```
+```yaml
 MatchPattern:
   IncludedPaths:
     - "/dogs/0/name"
@@ -99,7 +99,7 @@ MatchPattern:
 #### JSON
 <a name="aws-properties-wafv2-webacl-jsonmatchpattern--examples--Set_a_JSON_match_pattern_with_included_paths--json"></a>
 
-```
+```json
 "MatchPattern": {
   "IncludedPaths": [
     "/dogs/0/name",

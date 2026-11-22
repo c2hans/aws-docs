@@ -53,7 +53,7 @@ Following this list, complete examples of the Echo widget are shown for each lan
 
 The following is the Echo sample widget in JavaScript.
 
-```
+```javascript
 const DOCS = `
 ## Echo
 A basic echo script. Anything passed in the \`\`\`echo\`\`\` parameter is returned as the content of the custom widget.
@@ -85,7 +85,7 @@ exports.handler = async (event) => {
 
 The following is the Echo sample widget in Python.
 
-```
+```python
 import json
 
 DOCS = """
@@ -118,7 +118,7 @@ def lambda_handler(event, context):
 
 The following is the Echo sample widget in Java.
 
-```
+```java
 package example;
 
 import com.amazonaws.services.lambda.runtime.Context;

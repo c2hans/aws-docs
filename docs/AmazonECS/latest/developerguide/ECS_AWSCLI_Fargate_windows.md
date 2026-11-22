@@ -51,7 +51,7 @@ aws ecs create-cluster --cluster-name {{fargate-cluster}}
 
 Output:
 
-```
+```json
 {
     "cluster": {
         "status": "ACTIVE",
@@ -71,7 +71,7 @@ Output:
 
 Before you can run a Windows task on your Amazon ECS cluster, you must register a task definition. Task definitions are lists of containers grouped together. The following example is a simple task definition that creates a web app. For more information about the available task definition parameters, see [Amazon ECS task definitions](task_definitions.md).
 
-```
+```json
 {
     "containerDefinitions": [
         {
@@ -125,7 +125,7 @@ aws ecs list-task-definitions
 
 Output:
 
-```
+```json
 {
     "taskDefinitionArns": [
         "arn:aws:ecs:{{region}}:{{aws_account_id}}:task-definition/sample-fargate-windows:1"
@@ -163,7 +163,7 @@ aws ecs list-services --cluster {{fargate-cluster}}
 
 Output:
 
-```
+```json
 {
     "serviceArns": [
         "arn:aws:ecs:{{region}}:{{aws_account_id}}:service/fargate-cluster/fargate-service"
@@ -182,7 +182,7 @@ aws ecs describe-services --cluster {{fargate-cluster}} --services {{fargate-ser
 
 If successful, this will return a description of the service failures and services. For example, in services section, you will find information on deployments, such as the status of the tasks as running or pending. You may also find information on the task definition, the network configuration and time-stamped events. In the failures section, you will find information on failures, if any, associated with the call. For troubleshooting, see [Service Event Messages](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-event-messages.html). For more information about the service description, see [Describe Services](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DescribeServices).
 
-```
+```json
 {
     "services": [
         {

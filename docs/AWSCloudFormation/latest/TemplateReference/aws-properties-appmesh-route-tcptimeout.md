@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-route-tcptimeout-syntax.json"></a>
 
-```
+```json
 {
   "[Idle](#cfn-appmesh-route-tcptimeout-idle)" : {{Duration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-route-tcptimeout-syntax.yaml"></a>
 
-```
+```yaml
   [Idle](#cfn-appmesh-route-tcptimeout-idle): {{
     Duration}}
 ```

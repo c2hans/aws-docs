@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-receiptrule-stopaction-syntax.json"></a>
 
-```
+```json
 {
   "[Scope](#cfn-ses-receiptrule-stopaction-scope)" : {{String}},
   "[TopicArn](#cfn-ses-receiptrule-stopaction-topicarn)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-receiptrule-stopaction-syntax.yaml"></a>
 
-```
+```yaml
   [Scope](#cfn-ses-receiptrule-stopaction-scope): {{String}}
   [TopicArn](#cfn-ses-receiptrule-stopaction-topicarn): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rds-dbinstance-processorfeature-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-rds-dbinstance-processorfeature-name)" : {{String}},
   "[Value](#cfn-rds-dbinstance-processorfeature-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rds-dbinstance-processorfeature-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-rds-dbinstance-processorfeature-name): {{String}}
   [Value](#cfn-rds-dbinstance-processorfeature-value): {{String}}
 ```
@@ -58,7 +58,7 @@ The following example specifies processor features of an Oracle DB instance clas
 #### JSON
 <a name="aws-properties-rds-dbinstance-processorfeature--examples--Authentication_details--json"></a>
 
-```
+```json
 "ProcessorFeatures":[
    {
       "Name": "threadsPerCore",
@@ -74,7 +74,7 @@ The following example specifies processor features of an Oracle DB instance clas
 #### YAML
 <a name="aws-properties-rds-dbinstance-processorfeature--examples--Authentication_details--yaml"></a>
 
-```
+```yaml
 ProcessorFeatures:
   - Name: threadsPerCore
     Value: 4

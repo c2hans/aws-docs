@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-image-imageloggingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[LogGroupName](#cfn-imagebuilder-image-imageloggingconfiguration-loggroupname)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-image-imageloggingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [LogGroupName](#cfn-imagebuilder-image-imageloggingconfiguration-loggroupname): {{String}}
 ```
 

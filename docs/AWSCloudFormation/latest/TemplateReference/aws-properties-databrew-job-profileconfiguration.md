@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-databrew-job-profileconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ColumnStatisticsConfigurations](#cfn-databrew-job-profileconfiguration-columnstatisticsconfigurations)" : {{[ ColumnStatisticsConfiguration, ... ]}},
   "[DatasetStatisticsConfiguration](#cfn-databrew-job-profileconfiguration-datasetstatisticsconfiguration)" : {{StatisticsConfiguration}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-databrew-job-profileconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ColumnStatisticsConfigurations](#cfn-databrew-job-profileconfiguration-columnstatisticsconfigurations): {{
     - ColumnStatisticsConfiguration}}
   [DatasetStatisticsConfiguration](#cfn-databrew-job-profileconfiguration-datasetstatisticsconfiguration): {{

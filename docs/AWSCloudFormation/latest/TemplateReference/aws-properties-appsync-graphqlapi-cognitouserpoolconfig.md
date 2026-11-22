@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appsync-graphqlapi-cognitouserpoolconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AppIdClientRegex](#cfn-appsync-graphqlapi-cognitouserpoolconfig-appidclientregex)" : {{String}},
   "[AwsRegion](#cfn-appsync-graphqlapi-cognitouserpoolconfig-awsregion)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appsync-graphqlapi-cognitouserpoolconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AppIdClientRegex](#cfn-appsync-graphqlapi-cognitouserpoolconfig-appidclientregex): {{String}}
   [AwsRegion](#cfn-appsync-graphqlapi-cognitouserpoolconfig-awsregion): {{String}}
   [UserPoolId](#cfn-appsync-graphqlapi-cognitouserpoolconfig-userpoolid): {{String}}

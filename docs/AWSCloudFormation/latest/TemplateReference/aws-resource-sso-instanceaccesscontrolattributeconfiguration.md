@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sso-instanceaccesscontrolattributeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SSO::InstanceAccessControlAttributeConfiguration",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sso-instanceaccesscontrolattributeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SSO::InstanceAccessControlAttributeConfiguration
 Properties:
   [AccessControlAttributes](#cfn-sso-instanceaccesscontrolattributeconfiguration-accesscontrolattributes): {{
@@ -78,7 +78,7 @@ The following example enables ABAC in IAM Identity Center and creates a new attr
 #### JSON
 <a name="aws-resource-sso-instanceaccesscontrolattributeconfiguration--examples--Enabling_and_configuring_attributes_used_for_access_control_in--json"></a>
 
-```
+```json
 {
     "Resources": {
         "ABAC": {
@@ -104,7 +104,7 @@ The following example enables ABAC in IAM Identity Center and creates a new attr
 #### YAML
 <a name="aws-resource-sso-instanceaccesscontrolattributeconfiguration--examples--Enabling_and_configuring_attributes_used_for_access_control_in--yaml"></a>
 
-```
+```yaml
 Resources:
   ABAC:
     Type: 'AWS::SSO::InstanceAccessControlAttributeConfiguration'

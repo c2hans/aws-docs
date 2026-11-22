@@ -29,7 +29,7 @@ You can use [GetDefaultScraperConfiguration](https://docs.aws.amazon.com/prometh
 
 Use the `CreateScraper` API operation to create a scraper with a CloudWatch destination. Replace the subnet, security group, and dataset information with your own values.
 
-```
+```json
 POST /scrapers HTTP/1.1
 
 {
@@ -56,7 +56,7 @@ POST /scrapers HTTP/1.1
 
 Use the `create-scraper` command to create a scraper with a CloudWatch destination. Replace the subnet, security group, and dataset information with your own values.
 
-```
+```bash
 aws amp create-scraper \
   --alias "vpc-metrics-scraper" \
   --source '{
@@ -80,7 +80,7 @@ aws amp create-scraper \
 
 To scrape metrics from Amazon EC2 instances running Prometheus exporters such as DCGM Exporter or Node Exporter, use `static_configs` with the instance private IP addresses:
 
-```
+```yaml
 global:
   scrape_interval: 60s
 
@@ -113,7 +113,7 @@ scrape_configs:
 
 For Amazon ECS tasks that you register with AWS Cloud Map, use DNS service discovery to automatically find and scrape your containers:
 
-```
+```yaml
 global:
   scrape_interval: 60s
 

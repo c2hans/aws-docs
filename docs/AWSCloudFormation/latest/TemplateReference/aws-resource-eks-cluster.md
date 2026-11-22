@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-eks-cluster-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EKS::Cluster",
   "Properties" : {
@@ -67,7 +67,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-eks-cluster-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EKS::Cluster
 Properties:
   [AccessConfig](#cfn-eks-cluster-accessconfig): {{
@@ -349,7 +349,7 @@ The following example creates an Amazon EKS cluster named `Prod`.
 #### JSON
 <a name="aws-resource-eks-cluster--examples--Create_a_cluster--json"></a>
 
-```
+```json
 {
     "EKSCluster": {
        "Type": "AWS::EKS::Cluster",
@@ -397,7 +397,7 @@ The following example creates an Amazon EKS cluster named `Prod`.
 #### YAML
 <a name="aws-resource-eks-cluster--examples--Create_a_cluster--yaml"></a>
 
-```
+```yaml
 EKSCluster:
     Type: AWS::EKS::Cluster
     Properties:

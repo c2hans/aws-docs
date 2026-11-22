@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-domain-idlesettings-syntax.json"></a>
 
-```
+```json
 {
   "[IdleTimeoutInMinutes](#cfn-sagemaker-domain-idlesettings-idletimeoutinminutes)" : {{Integer}},
   "[LifecycleManagement](#cfn-sagemaker-domain-idlesettings-lifecyclemanagement)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-domain-idlesettings-syntax.yaml"></a>
 
-```
+```yaml
   [IdleTimeoutInMinutes](#cfn-sagemaker-domain-idlesettings-idletimeoutinminutes): {{Integer}}
   [LifecycleManagement](#cfn-sagemaker-domain-idlesettings-lifecyclemanagement): {{String}}
   [MaxIdleTimeoutInMinutes](#cfn-sagemaker-domain-idlesettings-maxidletimeoutinminutes): {{Integer}}

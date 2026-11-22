@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudwatch-alarmmuterule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudWatch::AlarmMuteRule",
   "Properties" : {
@@ -48,7 +48,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudwatch-alarmmuterule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudWatch::AlarmMuteRule
 Properties:
   [Description](#cfn-cloudwatch-alarmmuterule-description): {{String}}

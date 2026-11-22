@@ -54,7 +54,7 @@ When creating a customer managed key, use the following key policy to ensure tha
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -83,7 +83,7 @@ To encrypt hosted configuration data with a customer managed key, the identity c
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -105,7 +105,7 @@ If you are using a Secrets Manager secret or any other configuration data encryp
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -127,7 +127,7 @@ When calling the AWS AppConfig [StartDeployment](https://docs.aws.amazon.com/app
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -151,7 +151,7 @@ When calling the AWS AppConfig [GetLatestConfiguration](https://docs.aws.amazon.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -267,7 +267,7 @@ For more information, see [Control access to services using endpoint policies](h
 **Example: VPC endpoint policy for AWS AppConfig actions**
 The following is an example of a custom endpoint policy. When you attach this policy to your interface endpoint, it grants access to the listed AWS AppConfig actions for all principals on all resources.
 
-```
+```json
 {
    "Statement": [
       {

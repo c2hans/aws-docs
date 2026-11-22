@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-sourceendpoint-endpointencryptionsecretconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[SecretArn](#cfn-mediaconnect-sourceendpoint-endpointencryptionsecretconfiguration-secretarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-sourceendpoint-endpointencryptionsecretconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [SecretArn](#cfn-mediaconnect-sourceendpoint-endpointencryptionsecretconfiguration-secretarn): {{String}}
 ```
 

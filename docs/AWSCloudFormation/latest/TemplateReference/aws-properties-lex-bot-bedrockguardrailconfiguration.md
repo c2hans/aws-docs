@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-bedrockguardrailconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BedrockGuardrailIdentifier](#cfn-lex-bot-bedrockguardrailconfiguration-bedrockguardrailidentifier)" : {{String}},
   "[BedrockGuardrailVersion](#cfn-lex-bot-bedrockguardrailconfiguration-bedrockguardrailversion)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-bedrockguardrailconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BedrockGuardrailIdentifier](#cfn-lex-bot-bedrockguardrailconfiguration-bedrockguardrailidentifier): {{String}}
   [BedrockGuardrailVersion](#cfn-lex-bot-bedrockguardrailconfiguration-bedrockguardrailversion): {{String}}
 ```

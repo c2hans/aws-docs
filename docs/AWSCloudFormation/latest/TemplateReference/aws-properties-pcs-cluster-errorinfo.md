@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcs-cluster-errorinfo-syntax.json"></a>
 
-```
+```json
 {
   "[Code](#cfn-pcs-cluster-errorinfo-code)" : {{String}},
   "[Message](#cfn-pcs-cluster-errorinfo-message)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcs-cluster-errorinfo-syntax.yaml"></a>
 
-```
+```yaml
   [Code](#cfn-pcs-cluster-errorinfo-code): {{String}}
   [Message](#cfn-pcs-cluster-errorinfo-message): {{String}}
 ```

@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-mailmanagerruleset-rulecondition-syntax.json"></a>
 
-```
+```json
 {
   "[BooleanExpression](#cfn-ses-mailmanagerruleset-rulecondition-booleanexpression)" : {{RuleBooleanExpression}},
   "[DmarcExpression](#cfn-ses-mailmanagerruleset-rulecondition-dmarcexpression)" : {{RuleDmarcExpression}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-mailmanagerruleset-rulecondition-syntax.yaml"></a>
 
-```
+```yaml
   [BooleanExpression](#cfn-ses-mailmanagerruleset-rulecondition-booleanexpression): {{
     RuleBooleanExpression}}
   [DmarcExpression](#cfn-ses-mailmanagerruleset-rulecondition-dmarcexpression): {{

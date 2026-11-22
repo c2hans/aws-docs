@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-detective-organizationadmin-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Detective::OrganizationAdmin",
   "Properties" : {
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-detective-organizationadmin-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Detective::OrganizationAdmin
 Properties:
   [AccountId](#cfn-detective-organizationadmin-accountid): {{String}}
@@ -78,7 +78,7 @@ This example shows how to declare a new `AWS::Detective::OrganizationAdmin` reso
 #### JSON
 <a name="aws-resource-detective-organizationadmin--examples--Designating_a_administrator_account_for_the_organization_in_the_current_region--json"></a>
 
-```
+```json
 "OrganizationAdmin": {
     "Type": "AWS::Detective::OrganizationAdmin",
     "Properties": {
@@ -90,7 +90,7 @@ This example shows how to declare a new `AWS::Detective::OrganizationAdmin` reso
 #### YAML
 <a name="aws-resource-detective-organizationadmin--examples--Designating_a_administrator_account_for_the_organization_in_the_current_region--yaml"></a>
 
-```
+```yaml
 OrganizationAdmin:
     Type: AWS::Detective::OrganizationAdmin
     Properties:

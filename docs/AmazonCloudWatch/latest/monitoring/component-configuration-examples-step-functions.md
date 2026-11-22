@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/compo
 
 The following example shows a component configurations in JSON format for AWS Step Functions.
 
-```
+```json
 {
   "alarmMetrics": [
     {

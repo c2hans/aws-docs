@@ -85,7 +85,7 @@ To turn on Replay Session, set the following fields in the `AgentAccessConfig` w
 
 The following example creates a stack with Replay Session turned on:
 
-```
+```bash
 aws appstream create-stack \
     --name {{your-stack-name}} \
     --agent-access-config '{

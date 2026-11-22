@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-events-rule-retrypolicy-syntax.json"></a>
 
-```
+```json
 {
   "[MaximumEventAgeInSeconds](#cfn-events-rule-retrypolicy-maximumeventageinseconds)" : {{Integer}},
   "[MaximumRetryAttempts](#cfn-events-rule-retrypolicy-maximumretryattempts)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-events-rule-retrypolicy-syntax.yaml"></a>
 
-```
+```yaml
   [MaximumEventAgeInSeconds](#cfn-events-rule-retrypolicy-maximumeventageinseconds): {{Integer}}
   [MaximumRetryAttempts](#cfn-events-rule-retrypolicy-maximumretryattempts): {{Integer}}
 ```

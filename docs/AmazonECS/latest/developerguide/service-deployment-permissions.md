@@ -25,7 +25,7 @@ Replace the `account`, `cluster-name`, and `service-name` with your values.
 
 ****
 
-```
+```json
 {
 "Statement": [
     {

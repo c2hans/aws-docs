@@ -12,18 +12,18 @@ Compressing your backup files is supported for the following database editions:
 
 To verify the compression option for your backup files, run the following code:
 
-```
+```sql
 1. exec rdsadmin.dbo.rds_show_configuration 'S3 backup compression';
 ```
 
 To turn on compression for your backup files, run the following code:
 
-```
+```sql
 1. exec rdsadmin.dbo.rds_set_configuration 'S3 backup compression', 'true';
 ```
 
 To turn off compression for your backup files, run the following code:
 
-```
+```sql
 1. exec rdsadmin.dbo.rds_set_configuration 'S3 backup compression', 'false';
 ```

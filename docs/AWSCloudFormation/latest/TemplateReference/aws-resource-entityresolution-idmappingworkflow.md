@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-entityresolution-idmappingworkflow-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EntityResolution::IdMappingWorkflow",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-entityresolution-idmappingworkflow-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EntityResolution::IdMappingWorkflow
 Properties:
   [Description](#cfn-entityresolution-idmappingworkflow-description): {{String}}

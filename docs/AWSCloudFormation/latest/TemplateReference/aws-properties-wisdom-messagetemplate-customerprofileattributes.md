@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-messagetemplate-customerprofileattributes-syntax.json"></a>
 
-```
+```json
 {
   "[AccountNumber](#cfn-wisdom-messagetemplate-customerprofileattributes-accountnumber)" : {{String}},
   "[AdditionalInformation](#cfn-wisdom-messagetemplate-customerprofileattributes-additionalinformation)" : {{String}},
@@ -82,7 +82,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-messagetemplate-customerprofileattributes-syntax.yaml"></a>
 
-```
+```yaml
   [AccountNumber](#cfn-wisdom-messagetemplate-customerprofileattributes-accountnumber): {{String}}
   [AdditionalInformation](#cfn-wisdom-messagetemplate-customerprofileattributes-additionalinformation): {{String}}
   [Address1](#cfn-wisdom-messagetemplate-customerprofileattributes-address1): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcs-cluster-endpoint-syntax.json"></a>
 
-```
+```json
 {
   "[Ipv6Address](#cfn-pcs-cluster-endpoint-ipv6address)" : {{String}},
   "[Port](#cfn-pcs-cluster-endpoint-port)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcs-cluster-endpoint-syntax.yaml"></a>
 
-```
+```yaml
   [Ipv6Address](#cfn-pcs-cluster-endpoint-ipv6address): {{String}}
   [Port](#cfn-pcs-cluster-endpoint-port): {{String}}
   [PrivateIpAddress](#cfn-pcs-cluster-endpoint-privateipaddress): {{String}}

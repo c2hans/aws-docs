@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-memory-namespacekeyvalidation-syntax.json"></a>
 
-```
+```json
 {
   "[AllowedValues](#cfn-bedrockagentcore-memory-namespacekeyvalidation-allowedvalues)" : {{[ String, ... ]}},
   "[RegexPattern](#cfn-bedrockagentcore-memory-namespacekeyvalidation-regexpattern)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-memory-namespacekeyvalidation-syntax.yaml"></a>
 
-```
+```yaml
   [AllowedValues](#cfn-bedrockagentcore-memory-namespacekeyvalidation-allowedvalues): {{
     - String}}
   [RegexPattern](#cfn-bedrockagentcore-memory-namespacekeyvalidation-regexpattern): {{String}}

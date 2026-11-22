@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelcard-usercontext-syntax.json"></a>
 
-```
+```json
 {
   "[DomainId](#cfn-sagemaker-modelcard-usercontext-domainid)" : {{String}},
   "[UserProfileArn](#cfn-sagemaker-modelcard-usercontext-userprofilearn)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelcard-usercontext-syntax.yaml"></a>
 
-```
+```yaml
   [DomainId](#cfn-sagemaker-modelcard-usercontext-domainid): {{String}}
   [UserProfileArn](#cfn-sagemaker-modelcard-usercontext-userprofilearn): {{String}}
   [UserProfileName](#cfn-sagemaker-modelcard-usercontext-userprofilename): {{String}}

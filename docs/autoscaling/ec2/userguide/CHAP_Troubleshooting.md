@@ -31,7 +31,7 @@ aws autoscaling describe-scaling-activities --auto-scaling-group-name {{my-asg}}
 
 The following is an example response, where `StatusCode` contains the current status of the activity and `StatusMessage` contains the error message.
 
-```
+```json
 {
     "Activities": [
         {
@@ -63,7 +63,7 @@ aws autoscaling describe-scaling-activities --auto-scaling-group-name {{my-asg}}
 
 The following is an example response, with a scaling activity for a deleted group.
 
-```
+```json
 {
     "Activities": [
         {

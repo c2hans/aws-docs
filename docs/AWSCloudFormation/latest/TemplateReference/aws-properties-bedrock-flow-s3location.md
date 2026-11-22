@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-flow-s3location-syntax.json"></a>
 
-```
+```json
 {
   "[Bucket](#cfn-bedrock-flow-s3location-bucket)" : {{String}},
   "[Key](#cfn-bedrock-flow-s3location-key)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-flow-s3location-syntax.yaml"></a>
 
-```
+```yaml
   [Bucket](#cfn-bedrock-flow-s3location-bucket): {{String}}
   [Key](#cfn-bedrock-flow-s3location-key): {{String}}
   [Version](#cfn-bedrock-flow-s3location-version): {{String}}

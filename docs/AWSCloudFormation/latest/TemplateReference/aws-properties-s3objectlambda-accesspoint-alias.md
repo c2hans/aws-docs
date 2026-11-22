@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3objectlambda-accesspoint-alias-syntax.json"></a>
 
-```
+```json
 {
   "[Status](#cfn-s3objectlambda-accesspoint-alias-status)" : {{String}},
   "[Value](#cfn-s3objectlambda-accesspoint-alias-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3objectlambda-accesspoint-alias-syntax.yaml"></a>
 
-```
+```yaml
   [Status](#cfn-s3objectlambda-accesspoint-alias-status): {{String}}
   [Value](#cfn-s3objectlambda-accesspoint-alias-value): {{String}}
 ```

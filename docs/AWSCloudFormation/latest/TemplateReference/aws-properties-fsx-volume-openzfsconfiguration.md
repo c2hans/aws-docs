@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-volume-openzfsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CopyTagsToSnapshots](#cfn-fsx-volume-openzfsconfiguration-copytagstosnapshots)" : {{Boolean}},
   "[DataCompressionType](#cfn-fsx-volume-openzfsconfiguration-datacompressiontype)" : {{String}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-volume-openzfsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CopyTagsToSnapshots](#cfn-fsx-volume-openzfsconfiguration-copytagstosnapshots): {{Boolean}}
   [DataCompressionType](#cfn-fsx-volume-openzfsconfiguration-datacompressiontype): {{String}}
   [NfsExports](#cfn-fsx-volume-openzfsconfiguration-nfsexports): {{

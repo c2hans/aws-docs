@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-filecache-logconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Destination](#cfn-fsx-filecache-logconfiguration-destination)" : {{String}},
   "[Level](#cfn-fsx-filecache-logconfiguration-level)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-filecache-logconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Destination](#cfn-fsx-filecache-logconfiguration-destination): {{String}}
   [Level](#cfn-fsx-filecache-logconfiguration-level): {{String}}
 ```

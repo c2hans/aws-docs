@@ -52,7 +52,7 @@ You can use either the AWS CLI or AWS Management Console to monitor and identify
 
    The values we're interested in for the auto scaling policies are highlighted below. We want to make sure that the target value is greater than 50% to avoid over-provisioning. You should obtain a result similar to the following:
 
-   ```
+   ```json
    {
        "ScalingPolicies": [
            {
@@ -175,7 +175,7 @@ You can use AWS CLI to execute the following steps to create a scheduled auto sc
 
    You should get a result like this:
 
-   ```
+   ```json
    {
        "ScheduledActions": [
            {

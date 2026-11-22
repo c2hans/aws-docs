@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-memorydb-subnetgroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MemoryDB::SubnetGroup",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-memorydb-subnetgroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MemoryDB::SubnetGroup
 Properties:
   [Description](#cfn-memorydb-subnetgroup-description): {{String}}

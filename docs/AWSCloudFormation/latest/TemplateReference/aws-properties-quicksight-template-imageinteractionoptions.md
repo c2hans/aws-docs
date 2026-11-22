@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-imageinteractionoptions-syntax.json"></a>
 
-```
+```json
 {
   "[ImageMenuOption](#cfn-quicksight-template-imageinteractionoptions-imagemenuoption)" : {{ImageMenuOption}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-imageinteractionoptions-syntax.yaml"></a>
 
-```
+```yaml
   [ImageMenuOption](#cfn-quicksight-template-imageinteractionoptions-imagemenuoption): {{
     ImageMenuOption}}
 ```

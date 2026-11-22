@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancingv2-loadbalancer-loadbalancerattribute-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-elasticloadbalancingv2-loadbalancer-loadbalancerattribute-key)" : {{String}},
   "[Value](#cfn-elasticloadbalancingv2-loadbalancer-loadbalancerattribute-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancingv2-loadbalancer-loadbalancerattribute-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-elasticloadbalancingv2-loadbalancer-loadbalancerattribute-key): {{String}}
   [Value](#cfn-elasticloadbalancingv2-loadbalancer-loadbalancerattribute-value): {{String}}
 ```
@@ -98,7 +98,7 @@ This example enables deletion protection for an Application Load Balancer.
 #### YAML
 <a name="aws-properties-elasticloadbalancingv2-loadbalancer-loadbalancerattribute--examples--Enable_deletion_protection--yaml"></a>
 
-```
+```yaml
 myLoadBalancer:
   Type: 'AWS::ElasticLoadBalancingV2::LoadBalancer'
   Properties:
@@ -118,7 +118,7 @@ myLoadBalancer:
 #### JSON
 <a name="aws-properties-elasticloadbalancingv2-loadbalancer-loadbalancerattribute--examples--Enable_deletion_protection--json"></a>
 
-```
+```json
 {
     "myLoadBalancer": {
         "Type": "AWS::ElasticLoadBalancingV2::LoadBalancer",
@@ -158,7 +158,7 @@ This example configures access logs for a Network Load Balancer.
 #### YAML
 <a name="aws-properties-elasticloadbalancingv2-loadbalancer-loadbalancerattribute--examples--Configure_access_logs--yaml"></a>
 
-```
+```yaml
 myLoadBalancer:
   Type: 'AWS::ElasticLoadBalancingV2::LoadBalancer'
   Properties:
@@ -182,7 +182,7 @@ myLoadBalancer:
 #### JSON
 <a name="aws-properties-elasticloadbalancingv2-loadbalancer-loadbalancerattribute--examples--Configure_access_logs--json"></a>
 
-```
+```json
 {
     "myLoadBalancer": {
         "Type": "AWS::ElasticLoadBalancingV2::LoadBalancer",

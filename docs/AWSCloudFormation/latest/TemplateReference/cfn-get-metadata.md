@@ -15,7 +15,7 @@ You can use the `cfn-get-metadata` helper script to fetch a metadata block from 
 ## Syntax
 <a name="cfn-get-metadata-Syntax"></a>
 
-```
+```sh
 cfn-get-metadata --access-key {{access.key}} \
                  --secret-key {{secret.key}} \
                  --credential-file|f {{credential.file}} \

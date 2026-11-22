@@ -58,7 +58,7 @@ For any Auto Scaling groups with an existing load metric specification, do the f
 
 1. In a JSON file, define a `MetricSpecifications` structure as shown in the following example:
 
-   ```
+   ```json
    {
      "MetricSpecifications":[
        {{{
@@ -75,7 +75,7 @@ For any Auto Scaling groups with an existing load metric specification, do the f
 ------
 #### [ With predefined metrics ]
 
-   ```
+   ```json
    {
      "MetricSpecifications":[
        {{{
@@ -93,7 +93,7 @@ For any Auto Scaling groups with an existing load metric specification, do the f
 ------
 #### [ With custom metrics ]
 
-   ```
+   ```json
    {
      "MetricSpecifications":[
        {{{
@@ -134,7 +134,7 @@ For any Auto Scaling groups with an existing load metric specification, do the f
 ------
 #### [ With predefined metrics ]
 
-   ```
+   ```json
    {
      "MetricSpecifications":[
        {
@@ -156,7 +156,7 @@ For any Auto Scaling groups with an existing load metric specification, do the f
 ------
 #### [ With custom metrics ]
 
-   ```
+   ```json
    {
      "MetricSpecifications":[
        {
@@ -213,7 +213,7 @@ For any Auto Scaling groups with an existing load metric specification, do the f
 
 1. To forecast only, add the property `Mode` with a value of `ForecastOnly`. After you finish migrating predictive scaling and making sure that the forecast is accurate and reliable, you can change the mode to allow scaling. For more information, see [Step 7: Reactivate predictive scaling](#switch-predictive-scaling-to-forecast-and-scale).
 
-   ```
+   ```json
    {
      "MetricSpecifications":[
      {{...}}
@@ -227,7 +227,7 @@ For any Auto Scaling groups with an existing load metric specification, do the f
 
 1. If the `ScheduledActionBufferTime` property is present in your scaling plan, then copy its value to the `SchedulingBufferTime` property in your predictive scaling policy.
 
-   ```
+   ```json
    {
      "MetricSpecifications":[
      {{...}}
@@ -244,7 +244,7 @@ For any Auto Scaling groups with an existing load metric specification, do the f
 **Warning**
 If you set the `MaxCapacityBreachBehavior` property to `IncreaseMaxCapacity`, then more instances could launch than intended unless you monitor and manage the increased maximum capacity. The increased maximum capacity becomes the new normal maximum capacity for the Auto Scaling group until you manually update it. The maximum capacity doesn't automatically decrease back to the original maximum.
 
-   ```
+   ```json
    {
      "MetricSpecifications":[
      {{...}}
@@ -270,7 +270,7 @@ If you set the `MaxCapacityBreachBehavior` property to `IncreaseMaxCapacity`, th
 
    If successful, this command returns the policy's Amazon Resource Name (ARN).
 
-   ```
+   ```json
    {
      "PolicyARN": "arn:aws:autoscaling:region:account-id:scalingPolicy:2f4f5048-d8a8-4d14-b13a-d1905620f345:autoScalingGroupName/my-asg:policyName/my-predictive-scaling-policy",
      "Alarms": []
@@ -423,7 +423,7 @@ When you create a target tracking scaling policy for an Auto Scaling group, you 
 ------
 #### [ With predefined metrics ]
 
-   ```
+   ```json
    {
      "TargetValue": {{50.0}},
      "PredefinedMetricSpecification":
@@ -438,7 +438,7 @@ When you create a target tracking scaling policy for an Auto Scaling group, you 
 ------
 #### [ With custom metrics ]
 
-   ```
+   ```json
    {
      "TargetValue": {{100.0}},
      "CustomizedMetricSpecification": {
@@ -493,7 +493,7 @@ Next, create target tracking scaling policies for other scalable resources by pe
 
    If successful, this command returns the ARN of the scalable target.
 
-   ```
+   ```json
    {
        "ScalableTargetARN": "arn:aws:application-autoscaling:{{region}}:{{account-id}}:scalable-target/1234abcd56ab78cd901ef1234567890ab123"
    }
@@ -506,7 +506,7 @@ Next, create target tracking scaling policies for other scalable resources by pe
 ------
 #### [ With predefined metrics ]
 
-   ```
+   ```json
    {
      "TargetValue": {{70.0}},
      "PredefinedMetricSpecification":
@@ -521,7 +521,7 @@ Next, create target tracking scaling policies for other scalable resources by pe
 ------
 #### [ With custom metrics ]
 
-   ```
+   ```json
    {
      "TargetValue": {{70.0}},
      "CustomizedMetricSpecification": {
@@ -562,7 +562,7 @@ Reactivate predictive scaling by switching predictive scaling to forecast and sc
 
 To make this change, update the JSON files that you created in [Step 2: Create predictive scaling policies](#migrate-predictive-scaling-configurations) and change the value of the `Mode` option to `ForecastAndScale` as in the following example:
 
-```
+```json
 "Mode":"ForecastAndScale"
 ```
 

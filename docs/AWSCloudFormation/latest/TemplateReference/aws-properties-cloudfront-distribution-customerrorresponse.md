@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distribution-customerrorresponse-syntax.json"></a>
 
-```
+```json
 {
   "[ErrorCachingMinTTL](#cfn-cloudfront-distribution-customerrorresponse-errorcachingminttl)" : {{Number}},
   "[ErrorCode](#cfn-cloudfront-distribution-customerrorresponse-errorcode)" : {{Integer}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distribution-customerrorresponse-syntax.yaml"></a>
 
-```
+```yaml
   [ErrorCachingMinTTL](#cfn-cloudfront-distribution-customerrorresponse-errorcachingminttl): {{Number}}
   [ErrorCode](#cfn-cloudfront-distribution-customerrorresponse-errorcode): {{Integer}}
   [ResponseCode](#cfn-cloudfront-distribution-customerrorresponse-responsecode): {{Integer}}

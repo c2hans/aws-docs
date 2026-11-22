@@ -46,7 +46,7 @@ Returns a `VARCHAR` that contains the ARN of the principal (IAM role or Identity
 ### Usage
 <a name="functions-invoker-principal-usage"></a>
 
-```
+```sql
 SELECT invoker_principal()
 ```
 

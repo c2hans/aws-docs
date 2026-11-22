@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelqualityjobdefinition-monitoringoutputconfig-syntax.json"></a>
 
-```
+```json
 {
   "[KmsKeyId](#cfn-sagemaker-modelqualityjobdefinition-monitoringoutputconfig-kmskeyid)" : {{String}},
   "[MonitoringOutputs](#cfn-sagemaker-modelqualityjobdefinition-monitoringoutputconfig-monitoringoutputs)" : {{[ MonitoringOutput, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelqualityjobdefinition-monitoringoutputconfig-syntax.yaml"></a>
 
-```
+```yaml
   [KmsKeyId](#cfn-sagemaker-modelqualityjobdefinition-monitoringoutputconfig-kmskeyid): {{String}}
   [MonitoringOutputs](#cfn-sagemaker-modelqualityjobdefinition-monitoringoutputconfig-monitoringoutputs): {{
     - MonitoringOutput}}

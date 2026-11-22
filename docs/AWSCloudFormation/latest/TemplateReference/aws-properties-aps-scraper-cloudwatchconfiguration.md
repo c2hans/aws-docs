@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-aps-scraper-cloudwatchconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DatasetArn](#cfn-aps-scraper-cloudwatchconfiguration-datasetarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-aps-scraper-cloudwatchconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DatasetArn](#cfn-aps-scraper-cloudwatchconfiguration-datasetarn): {{String}}
 ```
 

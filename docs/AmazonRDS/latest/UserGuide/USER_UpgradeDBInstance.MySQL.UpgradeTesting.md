@@ -12,6 +12,7 @@ Before you perform a major version upgrade on your DB instance, thoroughly test 
    +  [Changes in MySQL 5.7](http://dev.mysql.com/doc/refman/5.7/en/upgrading-from-previous-series.html)
    +  [Changes in MySQL 8.0](http://dev.mysql.com/doc/refman/8.0/en/upgrading-from-previous-series.html)
    + [Changes in MySQL 8.4](http://dev.mysql.com/doc/refman/8.4/en/upgrading-from-previous-series.html)
+   + [Changes in MySQL 9.7](https://dev.mysql.com/doc/refman/9.7/en/upgrading-from-previous-series.html)
 
 1. If your DB instance is a member of a custom DB parameter group, create a new DB parameter group with your existing settings that is compatible with the new major version. Specify the new DB parameter group when you upgrade your test instance, so your upgrade testing ensures that it works correctly. For more information about creating a DB parameter group, see [Parameter groups for Amazon RDS](USER_WorkingWithParamGroups.md).
 

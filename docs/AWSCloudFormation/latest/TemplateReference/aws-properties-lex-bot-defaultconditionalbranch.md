@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-defaultconditionalbranch-syntax.json"></a>
 
-```
+```json
 {
   "[NextStep](#cfn-lex-bot-defaultconditionalbranch-nextstep)" : {{DialogState}},
   "[Response](#cfn-lex-bot-defaultconditionalbranch-response)" : {{ResponseSpecification}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-defaultconditionalbranch-syntax.yaml"></a>
 
-```
+```yaml
   [NextStep](#cfn-lex-bot-defaultconditionalbranch-nextstep): {{
     DialogState}}
   [Response](#cfn-lex-bot-defaultconditionalbranch-response): {{

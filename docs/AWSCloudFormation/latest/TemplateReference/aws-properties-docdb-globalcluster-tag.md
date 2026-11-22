@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-docdb-globalcluster-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-docdb-globalcluster-tag-key)" : {{String}},
   "[Value](#cfn-docdb-globalcluster-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-docdb-globalcluster-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-docdb-globalcluster-tag-key): {{String}}
   [Value](#cfn-docdb-globalcluster-tag-value): {{String}}
 ```

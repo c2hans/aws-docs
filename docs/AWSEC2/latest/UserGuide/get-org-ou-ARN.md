@@ -14,7 +14,7 @@ Before you can get the ARNs, you must have the permission to describe organizati
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -37,20 +37,20 @@ Before you can get the ARNs, you must have the permission to describe organizati
 **To get the ARN of an organization**
 Use the [describe-organization](https://docs.aws.amazon.com/cli/latest/reference/organizations/describe-organization.html) command. Add the `--query` option to return only the organization ARN.
 
-```
+```bash
 aws organizations describe-organization --query 'Organization.Arn'
 ```
 
 The following is example output.
 
-```
+```bash
 "arn:aws:organizations::123456789012:organization/o-1234567abc"
 ```
 
 **To get the ARN of an organizational unit**
 Use the [describe-organizational-unit](https://docs.aws.amazon.com/cli/latest/reference/organizations/describe-organizational-unit.html) command. Use the `--query` parameter to return only the organizational unit ARN.
 
-```
+```bash
 aws organizations describe-organizational-unit \
     --organizational-unit-id {{ou-a123-b4567890}} \
     --query 'OrganizationalUnit.Arn'
@@ -58,7 +58,7 @@ aws organizations describe-organizational-unit \
 
 The following is example output.
 
-```
+```bash
 "arn:aws:organizations::123456789012:ou/o-1234567abc/ou-a123-b4567890"
 ```
 
@@ -68,26 +68,26 @@ The following is example output.
 **To get the ARN of an organization**
 Use the [Get-ORGOrganization](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-ORGOrganization.html) cmdlet.
 
-```
+```powershell
 (Get-ORGOrganization).Arn
 ```
 
 The following is example output.
 
-```
+```bash
 arn:aws:organizations::123456789012:organization/o-1234567abc
 ```
 
 **To get the ARN of an organizational unit**
 Use the [Get-ORGOrganizationalUnit](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-ORGOrganizationalUnit.html) cmdlet.
 
-```
+```powershell
 (Get-ORGOrganizationalUnit -OrganizationalUnitId "ou-a123-b4567890").Arn
 ```
 
 The following is example output.
 
-```
+```bash
 arn:aws:organizations::123456789012:ou/o-1234567abc/ou-a123-b4567890
 ```
 

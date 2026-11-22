@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ecs-o
 
 The collector signs requests to CloudWatch with the credentials of the task's IAM role (`taskRoleArn`), not the task execution role. Add the following policy to the task role.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

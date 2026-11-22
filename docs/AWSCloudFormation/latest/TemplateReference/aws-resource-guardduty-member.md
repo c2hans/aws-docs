@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-guardduty-member-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::GuardDuty::Member",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-guardduty-member-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::GuardDuty::Member
 Properties:
   [DetectorId](#cfn-guardduty-member-detectorid): {{String}}
@@ -104,7 +104,7 @@ The following example shows how to declare a GuardDuty`Member` resource:
 #### JSON
 <a name="aws-resource-guardduty-member--examples--Declare_a_Member_Resource--json"></a>
 
-```
+```json
 "GDmaster": {
     "Type": "AWS::GuardDuty::Member",
     "Properties": {
@@ -121,7 +121,7 @@ The following example shows how to declare a GuardDuty`Member` resource:
 #### YAML
 <a name="aws-resource-guardduty-member--examples--Declare_a_Member_Resource--yaml"></a>
 
-```
+```yaml
       Type: AWS::GuardDuty::Member
       Properties:
             Status: Invited

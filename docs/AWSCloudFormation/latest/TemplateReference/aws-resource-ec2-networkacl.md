@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-networkacl-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::NetworkAcl",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-networkacl-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::NetworkAcl
 Properties:
   [Tags](#cfn-ec2-networkacl-tags): {{
@@ -88,7 +88,7 @@ The following example creates a network ACL.
 #### JSON
 <a name="aws-resource-ec2-networkacl--examples--Network_ACL--json"></a>
 
-```
+```json
 "myNetworkAcl" : {
    "Type" : "AWS::EC2::NetworkAcl",
    "Properties" : {
@@ -101,7 +101,7 @@ The following example creates a network ACL.
 #### YAML
 <a name="aws-resource-ec2-networkacl--examples--Network_ACL--yaml"></a>
 
-```
+```yaml
    myNetworkAcl:
       Type: AWS::EC2::NetworkAcl
       Properties:

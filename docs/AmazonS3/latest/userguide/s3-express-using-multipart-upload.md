@@ -159,7 +159,7 @@ The following examples show how to create a multipart upload.
 
 **Example**
 
-```
+```JavaV2
 /**
  * This method creates a multipart upload request that generates a unique upload ID that is used to track
  * all the upload parts
@@ -194,7 +194,7 @@ The following examples show how to create a multipart upload.
 
 **Example**
 
-```
+```Python
 def create_multipart_upload(s3_client, bucket_name, key_name):
     '''
    Create a multipart upload to a directory bucket
@@ -220,7 +220,7 @@ def create_multipart_upload(s3_client, bucket_name, key_name):
 
 This example shows how to create a multipart upload to a directory bucket by using the AWS CLI. This command starts a multipart upload to the directory bucket {{bucket-base-name}}--{{zone-id}}--x-s3 for the object {{KEY\_NAME}}. To use the command replace the {{user input placeholders}} with your own information.
 
-```
+```bash
 aws s3api create-multipart-upload --bucket {{bucket-base-name}}--{{zone-id}}--x-s3 --key {{KEY_NAME}}
 ```
 
@@ -241,7 +241,7 @@ The following example shows how to break a single object into parts and then upl
 
 **Example**
 
-```
+```JavaV2
 /**
  * This method creates part requests and uploads individual parts to S3 and then returns all the completed parts
  *
@@ -303,7 +303,7 @@ The following example shows how to break a single object into parts and then upl
 
 **Example**
 
-```
+```Python
 def multipart_upload(s3_client, bucket_name, key_name, mpu_id, part_size):
     '''
     Break up a file into multiple parts and upload those parts to a directory bucket
@@ -347,7 +347,7 @@ def multipart_upload(s3_client, bucket_name, key_name, mpu_id, part_size):
 
 This example shows how to break a single object into parts and then upload those parts to a directory bucket by using the AWS CLI. To use the command replace the {{user input placeholders}} with your own information.
 
-```
+```bash
 aws s3api upload-part --bucket {{bucket-base-name}}--{{zone-id}}--x-s3 --key {{KEY_NAME}} --part-number {{1}} --body {{LOCAL_FILE_NAME}} --upload-id "{{AS_mgt9RaQE9GEaifATue15dAAAAAAAAAAEMAAAAAAAAADQwNzI4MDU0MjUyMBYAAAAAAAAAAA0AAAAAAAAAAAH2AfYAAAAAAAAEBSD0WBKMAQAAAABneY9yBVsK89iFkvWdQhRCcXohE8RbYtc9QvBOG8tNpA}}"
 ```
 
@@ -368,7 +368,7 @@ The following examples show how to complete a multipart upload by using the SDK 
 
 **Example**
 
-```
+```JavaV2
 /**
  * This method completes the multipart upload request by collating all the upload parts
  * @param s3
@@ -417,7 +417,7 @@ The following examples show how to complete a multipart upload by using the SDK 
 
 **Example**
 
-```
+```Python
 def complete_multipart_upload(s3_client, bucket_name, key_name, mpu_id, part_list):
     '''
     Completes a multipart upload to a directory bucket
@@ -468,7 +468,7 @@ if __name__ == '__main__':
 
 This example shows how to complete a multipart upload for a directory bucket by using the AWS CLI. To use the command replace the {{user input placeholders}} with your own information.
 
-```
+```bash
 aws s3api complete-multipart-upload --bucket {{bucket-base-name}}--{{zone-id}}--x-s3 --key {{KEY_NAME}} --upload-id "{{AS_mgt9RaQE9GEaifATue15dAAAAAAAAAAEMAAAAAAAAADQwNzI4MDU0MjUyMBYAAAAAAAAAAA0AAAAAAAAAAAH2AfYAAAAAAAAEBSD0WBKMAQAAAABneY9yBVsK89iFkvWdQhRCcXohE8RbYtc9QvBOG8tNpA}}" --multipart-upload {{file://parts.json}}
 ```
 
@@ -505,7 +505,7 @@ The following example shows how to abort a multipart upload by using the SDK for
 
 **Example**
 
-```
+```JavaV2
 public static void abortMultiPartUploads( S3Client s3, String bucketName ) {
 
          try {
@@ -543,7 +543,7 @@ The following example shows how to abort a multipart upload by using the SDK for
 
 **Example**
 
-```
+```JavaV2
 import logging
 import boto3
 from botocore.exceptions import ClientError
@@ -588,7 +588,7 @@ if __name__ == '__main__':
 
 The following example shows how to abort a multipart upload by using the AWS CLI. To use the command replace the {{user input placeholders}} with your own information.
 
-```
+```bash
 aws s3api abort-multipart-upload --bucket {{bucket-base-name}}--{{zone-id}}--x-s3 --key {{KEY_NAME}} --upload-id "{{AS_mgt9RaQE9GEaifATue15dAAAAAAAAAAEMAAAAAAAAADQwNzI4MDU0MjUyMBYAAAAAAAAAAA0AAAAAAAAAAAH2AfYAAAAAAAAEAX5hFw-MAQAAAAB0OxUFeA7LTbWWFS8WYwhrxDxTIDN-pdEEq_agIHqsbg}}"
 ```
 
@@ -613,7 +613,7 @@ The following example shows how to use a multipart upload to programmatically co
 
 **Example**
 
-```
+```JavaV2
 /**
  * This method creates a multipart upload request that generates a unique upload ID that is used to track
  * all the upload parts.
@@ -720,7 +720,7 @@ The following example shows how to use a multipart upload to programmatically co
 
 **Example**
 
-```
+```Python
 import logging
 import boto3
 from botocore.exceptions import ClientError
@@ -855,7 +855,7 @@ if __name__ == '__main__':
 
 The following example shows how to use a multipart upload to programmatically copy an object from one bucket to a directory bucket using the AWS CLI. To use the command replace the {{user input placeholders}} with your own information.
 
-```
+```bash
 aws s3api upload-part-copy --bucket {{bucket-base-name}}--{{zone-id}}--x-s3 --key {{TARGET_KEY_NAME}} --copy-source {{SOURCE_BUCKET_NAME/SOURCE_KEY_NAME}} --part-number {{1}} --upload-id "{{AS_mgt9RaQE9GEaifATue15dAAAAAAAAAAEMAAAAAAAAADQwNzI4MDU0MjUyMBYAAAAAAAAAAA0AAAAAAAAAAAH2AfYAAAAAAAAEBnJ4cxKMAQAAAABiNXpOFVZJ1tZcKWib9YKE1C565_hCkDJ_4AfCap2svg}}"
 ```
 
@@ -876,7 +876,7 @@ The following examples show how to list in-progress (incomplete) multipart uploa
 
 **Example**
 
-```
+```JavaV2
  public static void listMultiPartUploads( S3Client s3, String bucketName) {
         try {
             ListMultipartUploadsRequest listMultipartUploadsRequest = ListMultipartUploadsRequest.builder()
@@ -903,7 +903,7 @@ The following examples show how to list in-progress (incomplete) multipart uploa
 
 **Example**
 
-```
+```Python
 import logging
 import boto3
 from botocore.exceptions import ClientError
@@ -944,7 +944,7 @@ if __name__ == '__main__':
 
 The following examples show how to list in-progress (incomplete) multipart uploads by using the AWS CLI. To use the command replace the {{user input placeholders}} with your own information.
 
-```
+```bash
 aws s3api list-multipart-uploads --bucket {{bucket-base-name}}--{{zone-id}}--x-s3
 ```
 
@@ -963,7 +963,7 @@ The following examples show how to list the parts of a multipart upload to a dir
 
 The following examples show how to list the parts of a multipart upload to a directory bucket by using SDK for Java 2.x.
 
-```
+```JavaV2
 public static void listMultiPartUploadsParts( S3Client s3, String bucketName, String objKey, String uploadID) {
 
          try {
@@ -994,7 +994,7 @@ public static void listMultiPartUploadsParts( S3Client s3, String bucketName, St
 
 The following examples show how to list the parts of a multipart upload to a directory bucket by using SDK for Python (Boto3).
 
-```
+```Python
 import logging
 import boto3
 from botocore.exceptions import ClientError
@@ -1061,7 +1061,7 @@ if __name__ == '__main__':
 
 The following examples show how to list the parts of a multipart upload to a directory bucket by using the AWS CLI. To use the command replace the {{user input placeholders}} with your own information.
 
-```
+```bash
 aws s3api list-parts --bucket {{{{bucket-base-name}}--{{zone-id}}--x-s3}} --key {{KEY_NAME}} --upload-id "{{AS_mgt9RaQE9GEaifATue15dAAAAAAAAAAEMAAAAAAAAADQwNzI4MDU0MjUyMBYAAAAAAAAAAA0AAAAAAAAAAAH2AfYAAAAAAAAEBSD0WBKMAQAAAABneY9yBVsK89iFkvWdQhRCcXohE8RbYtc9QvBOG8tNpA}}"
 ```
 

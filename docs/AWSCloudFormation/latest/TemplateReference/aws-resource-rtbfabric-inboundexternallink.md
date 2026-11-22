@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-rtbfabric-inboundexternallink-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RTBFabric::InboundExternalLink",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-rtbfabric-inboundexternallink-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RTBFabric::InboundExternalLink
 Properties:
   [GatewayId](#cfn-rtbfabric-inboundexternallink-gatewayid): {{String}}

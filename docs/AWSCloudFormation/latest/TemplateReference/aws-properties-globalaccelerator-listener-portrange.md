@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-globalaccelerator-listener-portrange-syntax.json"></a>
 
-```
+```json
 {
   "[FromPort](#cfn-globalaccelerator-listener-portrange-fromport)" : {{Integer}},
   "[ToPort](#cfn-globalaccelerator-listener-portrange-toport)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-globalaccelerator-listener-portrange-syntax.yaml"></a>
 
-```
+```yaml
   [FromPort](#cfn-globalaccelerator-listener-portrange-fromport): {{Integer}}
   [ToPort](#cfn-globalaccelerator-listener-portrange-toport): {{Integer}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-synthetics-canary-code-syntax.json"></a>
 
-```
+```json
 {
   "[BlueprintTypes](#cfn-synthetics-canary-code-blueprinttypes)" : {{[ String, ... ]}},
   "[Dependencies](#cfn-synthetics-canary-code-dependencies)" : {{[ Dependency, ... ]}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-synthetics-canary-code-syntax.yaml"></a>
 
-```
+```yaml
   [BlueprintTypes](#cfn-synthetics-canary-code-blueprinttypes): {{
     - String}}
   [Dependencies](#cfn-synthetics-canary-code-dependencies): {{

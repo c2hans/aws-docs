@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-location-map-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Location::Map",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-location-map-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Location::Map
 Properties:
   [Configuration](#cfn-location-map-configuration): {{

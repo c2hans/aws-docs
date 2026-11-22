@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-flow-performanceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Latency](#cfn-bedrock-flow-performanceconfiguration-latency)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-flow-performanceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Latency](#cfn-bedrock-flow-performanceconfiguration-latency): {{String}}
 ```
 

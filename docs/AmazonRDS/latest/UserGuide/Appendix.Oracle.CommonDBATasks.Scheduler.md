@@ -31,7 +31,7 @@ To modify certain components of Oracle Scheduler, use the Oracle procedure `dbms
 
 When working with Amazon RDS DB instances, prepend the schema name `SYS` to the object name. The following example sets the resource plan attribute for the Monday window object.
 
-```
+```sql
 BEGIN
     DBMS_SCHEDULER.SET_ATTRIBUTE(
         name      => '{{SYS.MONDAY_WINDOW}}',
@@ -176,7 +176,7 @@ This procedure uses the `name` common parameter for Oracle Scheduler tasks. For 
 
 The following example disables the `SYS.CLEANUP_ONLINE_IND_BUILD` Oracle Scheduler job.
 
-```
+```sql
 BEGIN
    rdsadmin.rdsadmin_dbms_scheduler.disable('SYS.CLEANUP_ONLINE_IND_BUILD');
 END;
@@ -192,7 +192,7 @@ This procedure uses the `name` common parameter for Oracle Scheduler tasks. For 
 
 The following example enables the `SYS.CLEANUP_ONLINE_IND_BUILD` Oracle Scheduler job.
 
-```
+```sql
 BEGIN
    rdsadmin.rdsadmin_dbms_scheduler.enable('SYS.CLEANUP_ONLINE_IND_BUILD');
 END;
@@ -213,7 +213,7 @@ For more information, see [Common parameters for Oracle Scheduler procedures](#A
 
 The following example modifies the repeat interval of the `SYS.CLEANUP_ONLINE_IND_BUILD` Oracle Scheduler job.
 
-```
+```sql
 BEGIN
      rdsadmin.rdsadmin_dbms_scheduler.set_attribute(
           name      => 'SYS.CLEANUP_ONLINE_IND_BUILD',
@@ -237,7 +237,7 @@ For more information, see [Common parameters for Oracle Scheduler procedures](#A
 
 The following example modifies the repeat interval of the `SYS.BSLN_MAINTAIN_STATS_JOB` Oracle Scheduler job.
 
-```
+```sql
 BEGIN
      DBMS_SCHEDULER.CREATE_SCHEDULE (
           schedule_name   => 'rds_master_user.new_schedule',
@@ -270,7 +270,7 @@ You can use the procedure `rdsadmin.rdsadmin_dbms_scheduler.set_no_commit_flag` 
 
 The following example turns off autocommit for Oracle Scheduler, creates an Oracle Scheduler job, and then rolls back the transaction. Because autocommit is turned off, the database also rolls back the creation of the Oracle Scheduler job.
 
-```
+```sql
 BEGIN
   rdsadmin.rdsadmin_dbms_scheduler.set_no_commit_flag;
   DBMS_SCHEDULER.CREATE_JOB(job_name   => 'EMPTY_JOB',

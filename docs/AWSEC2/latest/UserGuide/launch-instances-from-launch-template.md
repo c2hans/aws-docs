@@ -50,13 +50,13 @@ Instances that are launched using a launch template are automatically assigned t
 **To launch an instance from a launch template**
 + Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command and specify the `--launch-template` parameter. Optionally specify the launch template version to use. If you don't specify the version, the default version is used.
 
-  ```
+  ```bash
   aws ec2 run-instances \
       --launch-template LaunchTemplateId={{lt-0abcd290751193123}},Version={{1}}
   ```
 + To override a launch template parameter, specify the parameter in the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command. The following example overrides the instance type that's specified in the launch template (if any).
 
-  ```
+  ```bash
   aws ec2 run-instances \
       --launch-template LaunchTemplateId={{lt-0abcd290751193123}} \
       --instance-type {{t2.small}}
@@ -65,7 +65,7 @@ Instances that are launched using a launch template are automatically assigned t
 
   In the following example, the instance is launched with the tag `{{Owner}}={{TeamA}}` as well as any other tags that are specified in the launch template. If the launch template has an existing tag with a key of `{{Owner}}`, the value is replaced with `{{TeamA}}`.
 
-  ```
+  ```bash
   aws ec2 run-instances \
       --launch-template LaunchTemplateId={{lt-0abcd290751193123}} \
       --tag-specifications "ResourceType=instance,Tags=[{Key={{Owner}},Value={{TeamA}}}]"
@@ -73,7 +73,7 @@ Instances that are launched using a launch template are automatically assigned t
 
   In the following example, the instance is launched with a volume with the device name {{`/dev/xvdb`}} as well as any other block device mappings that are specified in the launch template. If the launch template has an existing volume defined for {{`/dev/xvdb`}}, its values are replaced with the specified values.
 
-  ```
+  ```bash
   aws ec2 run-instances \
       --launch-template LaunchTemplateId={{lt-0abcd290751193123}} \
       --block-device-mappings "DeviceName={{/dev/xvdb}},Ebs={VolumeSize={{20}},VolumeType={{gp2}}}"
@@ -87,7 +87,7 @@ If the instance fails to launch or the state immediately goes to `terminated` in
 **To launch an instance from a launch template using the AWS Tools for PowerShell**
 + Use the [New-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/Index.html) command and specify the `-LaunchTemplate` parameter. Optionally specify the launch template version to use. If you don't specify the version, the default version is used.
 
-  ```
+  ```PowerShell
   Import-Module AWS.Tools.EC2
   New-EC2Instance `
       -LaunchTemplate (
@@ -99,7 +99,7 @@ If the instance fails to launch or the state immediately goes to `terminated` in
   ```
 + To override a launch template parameter, specify the parameter in the [New-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/Index.html) command. The following example overrides the instance type that's specified in the launch template (if any).
 
-  ```
+  ```PowerShell
   Import-Module AWS.Tools.EC2
   New-EC2Instance `
       -InstanceType {{t4g.small}} `
@@ -114,7 +114,7 @@ If the instance fails to launch or the state immediately goes to `terminated` in
 
   In the following example, the instance is launched with the tag `{{Owner}}={{TeamA}}` as well as any other tags that are specified in the launch template. If the launch template has an existing tag with a key of `{{Owner}}`, the value is replaced with `{{TeamA}}`.
 
-  ```
+  ```PowerShell
   Import-Module AWS.Tools.EC2
   New-EC2Instance `
       -InstanceType {{t4g.small}}  `
@@ -137,7 +137,7 @@ If the instance fails to launch or the state immediately goes to `terminated` in
 
   In the following example, the instance is launched with a volume with the device name {{`/dev/xvdb`}} as well as any other block device mappings that are specified in the launch template. If the launch template has an existing volume defined for {{`/dev/xvdb`}}, its values are replaced with the specified values.
 
-  ```
+  ```PowerShell
   Import-Module AWS.Tools.EC2
   New-EC2Instance `
       -InstanceType {{t4g.small}}  `

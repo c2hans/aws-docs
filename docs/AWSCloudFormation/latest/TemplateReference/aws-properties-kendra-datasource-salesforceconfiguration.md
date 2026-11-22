@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-salesforceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ChatterFeedConfiguration](#cfn-kendra-datasource-salesforceconfiguration-chatterfeedconfiguration)" : {{SalesforceChatterFeedConfiguration}},
   "[CrawlAttachments](#cfn-kendra-datasource-salesforceconfiguration-crawlattachments)" : {{Boolean}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-salesforceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ChatterFeedConfiguration](#cfn-kendra-datasource-salesforceconfiguration-chatterfeedconfiguration): {{
     SalesforceChatterFeedConfiguration}}
   [CrawlAttachments](#cfn-kendra-datasource-salesforceconfiguration-crawlattachments): {{Boolean}}

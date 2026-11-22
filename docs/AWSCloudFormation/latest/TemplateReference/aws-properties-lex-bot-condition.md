@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-condition-syntax.json"></a>
 
-```
+```json
 {
   "[ExpressionString](#cfn-lex-bot-condition-expressionstring)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-condition-syntax.yaml"></a>
 
-```
+```yaml
   [ExpressionString](#cfn-lex-bot-condition-expressionstring): {{
     String}}
 ```

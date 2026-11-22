@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicrule-iotanalyticsaction-syntax.json"></a>
 
-```
+```json
 {
   "[BatchMode](#cfn-iot-topicrule-iotanalyticsaction-batchmode)" : {{Boolean}},
   "[ChannelName](#cfn-iot-topicrule-iotanalyticsaction-channelname)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicrule-iotanalyticsaction-syntax.yaml"></a>
 
-```
+```yaml
   [BatchMode](#cfn-iot-topicrule-iotanalyticsaction-batchmode): {{Boolean}}
   [ChannelName](#cfn-iot-topicrule-iotanalyticsaction-channelname): {{String}}
   [RoleArn](#cfn-iot-topicrule-iotanalyticsaction-rolearn): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-gateway-gatewayconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[HostSharedAlb](#cfn-ecs-gateway-gatewayconfiguration-hostsharedalb)" : {{HostSharedAlbConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-gateway-gatewayconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [HostSharedAlb](#cfn-ecs-gateway-gatewayconfiguration-hostsharedalb): {{
     HostSharedAlbConfiguration}}
 ```

@@ -60,7 +60,7 @@ Follow these steps to attach the necessary IAM policies to your role:
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

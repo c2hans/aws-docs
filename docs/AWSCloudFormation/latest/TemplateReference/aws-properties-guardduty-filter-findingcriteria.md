@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-guardduty-filter-findingcriteria-syntax.json"></a>
 
-```
+```json
 {
   "[Criterion](#cfn-guardduty-filter-findingcriteria-criterion)" : {{{{{Key}}: {{Value}}, ...}}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-guardduty-filter-findingcriteria-syntax.yaml"></a>
 
-```
+```yaml
   [Criterion](#cfn-guardduty-filter-findingcriteria-criterion): {{
     {{Key}}: {{Value}}}}
 ```

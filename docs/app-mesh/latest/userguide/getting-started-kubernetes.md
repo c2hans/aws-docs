@@ -212,7 +212,7 @@ Once the controller has created an App Mesh resource, we recommend that you only
 
    1. Save the following contents to a file named `namespace.yaml` on your computer.
 
-      ```
+      ```yaml
       apiVersion: v1
       kind: Namespace
       metadata:
@@ -232,7 +232,7 @@ Once the controller has created an App Mesh resource, we recommend that you only
 
    1. Save the following contents to a file named `mesh.yaml` on your computer. The file is used to create a mesh resource named `{{my-mesh}}`. A service mesh is a logical boundary for network traffic between the services that reside within it.
 
-      ```
+      ```yaml
       apiVersion: appmesh.k8s.aws/v1beta2
       kind: Mesh
       metadata:
@@ -297,7 +297,7 @@ Once the controller has created an App Mesh resource, we recommend that you only
 
       Output
 
-      ```
+      ```json
       {
           "mesh": {
               "meshName": "my-mesh",
@@ -322,7 +322,7 @@ Once the controller has created an App Mesh resource, we recommend that you only
 
    1. Save the following contents to a file named `virtual-node.yaml` on your computer. The file is used to create an App Mesh virtual node named `{{my-service-a}}` in the {{`my-apps`}} namespace. The virtual node represents a Kubernetes service that is created in a later step. The value for `hostname` is the fully qualified DNS hostname of the actual service that this virtual node represents.
 
-      ```
+      ```yaml
       apiVersion: appmesh.k8s.aws/v1beta2
       kind: VirtualNode
       metadata:
@@ -412,7 +412,7 @@ Even though the name of the virtual node created in Kubernetes is `{{my-service-
 
       Output
 
-      ```
+      ```json
       {
           "virtualNode": {
               "meshName": "my-mesh",
@@ -453,7 +453,7 @@ Even though the name of the virtual node created in Kubernetes is `{{my-service-
 
    1. Save the following contents to a file named `virtual-router.yaml` on your computer. The file is used to create a virtual router to route traffic to the virtual node named `my-service-a` that was created in the previous step. The controller creates the App Mesh virtual router and route resources. You can specify many more capabilities for your routes and use protocols other than `http`. For more information, see [Virtual routers](virtual_routers.md) and [Routes](routes.md). Notice that the virtual node name referenced is the Kubernetes virtual node name, not the App Mesh virtual node name that was created in App Mesh by the controller.
 
-      ```
+      ```yaml
       apiVersion: appmesh.k8s.aws/v1beta2
       kind: VirtualRouter
       metadata:
@@ -754,7 +754,7 @@ Any pods that you want to use with App Mesh must have the App Mesh sidecar conta
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -801,7 +801,7 @@ Any pods that you want to use with App Mesh must have the App Mesh sidecar conta
 
    1. Save the following contents to a file named `example-service.yaml` on your computer. If you change the namespace name and are using Fargate pods, make sure that the namespace name matches the namespace name that you defined in your Fargate profile.
 
-      ```
+      ```yaml
       apiVersion: v1
       kind: Service
       metadata:

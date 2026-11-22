@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-pluginvisualtablequerysort-syntax.json"></a>
 
-```
+```json
 {
   "[ItemsLimitConfiguration](#cfn-quicksight-dashboard-pluginvisualtablequerysort-itemslimitconfiguration)" : {{PluginVisualItemsLimitConfiguration}},
   "[RowSort](#cfn-quicksight-dashboard-pluginvisualtablequerysort-rowsort)" : {{[ FieldSortOptions, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-pluginvisualtablequerysort-syntax.yaml"></a>
 
-```
+```yaml
   [ItemsLimitConfiguration](#cfn-quicksight-dashboard-pluginvisualtablequerysort-itemslimitconfiguration): {{
     PluginVisualItemsLimitConfiguration}}
   [RowSort](#cfn-quicksight-dashboard-pluginvisualtablequerysort-rowsort): {{

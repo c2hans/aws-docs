@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-flow-sourcemonitoringconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AudioMonitoringSettings](#cfn-mediaconnect-flow-sourcemonitoringconfig-audiomonitoringsettings)" : {{[ AudioMonitoringSetting, ... ]}},
   "[ContentQualityAnalysisState](#cfn-mediaconnect-flow-sourcemonitoringconfig-contentqualityanalysisstate)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-flow-sourcemonitoringconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AudioMonitoringSettings](#cfn-mediaconnect-flow-sourcemonitoringconfig-audiomonitoringsettings): {{
     - AudioMonitoringSetting}}
   [ContentQualityAnalysisState](#cfn-mediaconnect-flow-sourcemonitoringconfig-contentqualityanalysisstate): {{String}}

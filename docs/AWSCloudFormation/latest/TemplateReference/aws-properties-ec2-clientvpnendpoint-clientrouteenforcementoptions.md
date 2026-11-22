@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-clientvpnendpoint-clientrouteenforcementoptions-syntax.json"></a>
 
-```
+```json
 {
   "[Enforced](#cfn-ec2-clientvpnendpoint-clientrouteenforcementoptions-enforced)" : {{Boolean}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-clientvpnendpoint-clientrouteenforcementoptions-syntax.yaml"></a>
 
-```
+```yaml
   [Enforced](#cfn-ec2-clientvpnendpoint-clientrouteenforcementoptions-enforced): {{Boolean}}
 ```
 

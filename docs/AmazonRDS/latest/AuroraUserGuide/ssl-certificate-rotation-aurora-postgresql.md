@@ -29,7 +29,7 @@ Check the DB cluster configuration for the value of the `rds.force_ssl` paramete
 
 If `rds.force_ssl` isn't set to `1` (on), query the `pg_stat_ssl` view to check connections using SSL. For example, the following query returns only SSL connections and information about the clients using SSL.
 
-```
+```sql
 select datname, usename, ssl, client_addr from pg_stat_ssl inner join pg_stat_activity on pg_stat_ssl.pid = pg_stat_activity.pid where ssl is true and usename<>'rdsadmin';
 ```
 

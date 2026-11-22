@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-paymentcryptography-key-replicationstatustype-syntax.json"></a>
 
-```
+```json
 {
   "[KmsEncryptionKeyArn](#cfn-paymentcryptography-key-replicationstatustype-kmsencryptionkeyarn)" : {{String}},
   "[KmsEncryptionKeyId](#cfn-paymentcryptography-key-replicationstatustype-kmsencryptionkeyid)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-paymentcryptography-key-replicationstatustype-syntax.yaml"></a>
 
-```
+```yaml
   [KmsEncryptionKeyArn](#cfn-paymentcryptography-key-replicationstatustype-kmsencryptionkeyarn): {{String}}
   [KmsEncryptionKeyId](#cfn-paymentcryptography-key-replicationstatustype-kmsencryptionkeyid): {{String}}
   [Status](#cfn-paymentcryptography-key-replicationstatustype-status): {{String}}

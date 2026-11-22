@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-linuxparameters-syntax.json"></a>
 
-```
+```json
 {
   "[Devices](#cfn-batch-jobdefinition-linuxparameters-devices)" : {{[ Device, ... ]}},
   "[InitProcessEnabled](#cfn-batch-jobdefinition-linuxparameters-initprocessenabled)" : {{Boolean}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-linuxparameters-syntax.yaml"></a>
 
-```
+```yaml
   [Devices](#cfn-batch-jobdefinition-linuxparameters-devices): {{
     - Device}}
   [InitProcessEnabled](#cfn-batch-jobdefinition-linuxparameters-initprocessenabled): {{Boolean}}

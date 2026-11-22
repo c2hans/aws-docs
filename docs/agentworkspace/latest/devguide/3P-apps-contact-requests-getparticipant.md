@@ -8,13 +8,13 @@ Retrieves information for a specific participant.
 
  **Signature**
 
-```
+```typescript
 getParticipant(participantId: string): Promise<ParticipantData>
 ```
 
  **Usage**
 
-```
+```typescript
 const participant = await contactClient.getParticipant("participant-456");
 console.log(`Participant type: ${participant.type.value}`);
 console.log(`Is initial: ${participant.isInitial}`);
@@ -36,6 +36,6 @@ Requires an instance that is scoped to the contact that the participant belongs 
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

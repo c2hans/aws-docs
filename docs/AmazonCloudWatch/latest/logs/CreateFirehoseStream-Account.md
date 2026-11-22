@@ -35,7 +35,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CreateFireh
 
    1. The output of this command will look similar to the following. Make a note of the role name and the role ARN.
 
-      ```
+      ```json
       {
           "Role": {
               "Path": "/",
@@ -65,7 +65,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CreateFireh
 
    1. First, use a text editor to create the following permissions policy in a file named `~/PermissionsForFirehose.json`. Depending on your use case, you might need to add more permissions to this file.
 
-      ```
+      ```json
       {
           "Statement": [{
               "Effect": "Allow",
@@ -99,7 +99,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CreateFireh
 
    The output should look similar to the following:
 
-   ```
+   ```json
    {
        "DeliveryStreamARN": "arn:aws:firehose:us-east-1:222222222222:deliverystream/my-delivery-stream"
    }

@@ -26,7 +26,7 @@ aws autoscaling describe-auto-scaling-groups --auto-scaling-group-names {{my-asg
 
 The following is an example response that shows you that the health status of the instance is `Unhealthy`, and that the instance is terminating.
 
-```
+```json
 {
     "AutoScalingGroups": [
         {

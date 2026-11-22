@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emr-instancegroupconfig-simplescalingpolicyconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AdjustmentType](#cfn-emr-instancegroupconfig-simplescalingpolicyconfiguration-adjustmenttype)" : {{String}},
   "[CoolDown](#cfn-emr-instancegroupconfig-simplescalingpolicyconfiguration-cooldown)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emr-instancegroupconfig-simplescalingpolicyconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AdjustmentType](#cfn-emr-instancegroupconfig-simplescalingpolicyconfiguration-adjustmenttype): {{String}}
   [CoolDown](#cfn-emr-instancegroupconfig-simplescalingpolicyconfiguration-cooldown): {{Integer}}
   [ScalingAdjustment](#cfn-emr-instancegroupconfig-simplescalingpolicyconfiguration-scalingadjustment): {{Integer}}

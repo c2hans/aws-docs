@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudformation-stackset-managedexecution-syntax.json"></a>
 
-```
+```json
 {
   "[Active](#cfn-cloudformation-stackset-managedexecution-active)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudformation-stackset-managedexecution-syntax.yaml"></a>
 
-```
+```yaml
   [Active](#cfn-cloudformation-stackset-managedexecution-active): {{Boolean}}
 ```
 

@@ -176,7 +176,7 @@ This response returns the following `evidenceFinderEnablement` data:
 #### Sample Response
 <a name="API_UpdateSettings_Example_1_Response"></a>
 
-```
+```json
 {
     "settings": {
         "isAwsOrgEnabled": false,

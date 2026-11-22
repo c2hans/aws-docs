@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-mailmanagerruleset-delivertoqbusinessaction-syntax.json"></a>
 
-```
+```json
 {
   "[ActionFailurePolicy](#cfn-ses-mailmanagerruleset-delivertoqbusinessaction-actionfailurepolicy)" : {{String}},
   "[ApplicationId](#cfn-ses-mailmanagerruleset-delivertoqbusinessaction-applicationid)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-mailmanagerruleset-delivertoqbusinessaction-syntax.yaml"></a>
 
-```
+```yaml
   [ActionFailurePolicy](#cfn-ses-mailmanagerruleset-delivertoqbusinessaction-actionfailurepolicy): {{String}}
   [ApplicationId](#cfn-ses-mailmanagerruleset-delivertoqbusinessaction-applicationid): {{String}}
   [IndexId](#cfn-ses-mailmanagerruleset-delivertoqbusinessaction-indexid): {{String}}

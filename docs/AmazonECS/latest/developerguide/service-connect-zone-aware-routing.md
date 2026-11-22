@@ -28,19 +28,19 @@ On Amazon EC2 container instances that use the Docker runtime, you can inspect E
 
 1. Connect to the container instance with AWS Systems Manager Session Manager. Replace {{instance-id}} with your container instance ID.
 
-   ```
+   ```bash
    aws ssm start-session --target {{instance-id}}
    ```
 
 1. Open a shell in the Service Connect agent container.
 
-   ```
+   ```bash
    sudo docker exec -it $(sudo docker ps --filter "name=ecs-service-connect" -q | head -1) /bin/sh
    ```
 
 1. Query zone routing statistics from the Envoy admin interface.
 
-   ```
+   ```bash
    curl --unix-socket /tmp/envoy_admin.sock http://unix/stats | grep "lb_zone"
    ```
 

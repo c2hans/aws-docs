@@ -57,7 +57,7 @@ To setup IAM authentication:
 ------
 #### [ JSON ]
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [
@@ -84,7 +84,7 @@ Replace `{{my-application-role}}` with the IAM role or user that needs to connec
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -165,7 +165,7 @@ GLIDE 2.2 and later include built-in IAM authentication support. You configure y
 
 **Python**
 
-```
+```python
 from glide import (
     GlideClusterClient, GlideClusterClientConfiguration, NodeAddress,
     ServerCredentials, IamAuthConfig, ServiceType,
@@ -192,7 +192,7 @@ print(result)  # b"value"
 
 **Java**
 
-```
+```java
 import glide.api.GlideClusterClient;
 import glide.api.models.configuration.IamAuthConfig;
 import glide.api.models.configuration.ServiceType;
@@ -236,13 +236,13 @@ System.out.println(result);  // "value"
 
 The Developer Toolkit for ElastiCache (`developer-toolkit-elasticache`) is a standalone Python library and CLI that generates IAM authentication tokens. Use it with a Python Valkey or Redis OSS client library, such as valkey-py.
 
-```
+```bash
 pip install developer-toolkit-elasticache
 ```
 
 **Python with valkey-py**
 
-```
+```python
 import valkey
 from valkey.credentials import CredentialProvider
 from developer_toolkit_elasticache import ElastiCacheIAMAuthTokenProvider
@@ -284,7 +284,7 @@ The Developer Toolkit does not automatically refresh tokens. IAM authentication 
 
 To generate a token from the command line:
 
-```
+```bash
 developer-toolkit-elasticache generate_iam_auth_token \
     --serverless-cache-name my-cache \
     --user-id my-iam-user \
@@ -293,7 +293,7 @@ developer-toolkit-elasticache generate_iam_auth_token \
 
 To connect with valkey-cli or redis-cli, set the authentication environment variable and connect:
 
-```
+```bash
 export VALKEYCLI_AUTH=$(developer-toolkit-elasticache generate_iam_auth_token \
     --serverless-cache-name my-cache \
     --user-id my-iam-user \
@@ -314,7 +314,7 @@ For source code and additional examples, see the [Developer Toolkit for ElastiCa
 
 You first need to generate the short-lived IAM authentication token using an [AWS SigV4 pre-signed request](https://docs.aws.amazon.com/general/latest/gr/sigv4-signed-request-examples.html). After that you provide the IAM authentication token as a password when connecting to a Valkey or Redis OSS cache, as shown in the example below.
 
-```
+```java
 String userId = "{{insert user id}}";
 String cacheName = "{{insert cache name}}";
 boolean isServerless = {{true}};
@@ -344,7 +344,7 @@ client.connect();
 
 Below is the definition for `IAMAuthTokenRequest`.
 
-```
+```java
 public class IAMAuthTokenRequest {
     private static final SdkHttpMethod REQUEST_METHOD = SdkHttpMethod.GET;
     private static final String REQUEST_PROTOCOL = "http://";
@@ -410,7 +410,7 @@ public class IAMAuthTokenRequest {
 
 The code below shows how to authenticate with ElastiCache using the IAM authentication credentials provider.
 
-```
+```java
 String userId = "{{insert user id}}";
 String cacheName = "{{insert cache name}}";
 boolean isServerless = {{true}};
@@ -443,7 +443,7 @@ client.connect();
 
 Below is an example of a Lettuce Redis OSS client that wraps the IAMAuthTokenRequest in a credentials provider to auto-generate temporary credentials when needed.
 
-```
+```java
 public class RedisIAMAuthCredentialsProvider implements RedisCredentialsProvider {
     private static final long TOKEN_EXPIRY_SECONDS = 900;
 

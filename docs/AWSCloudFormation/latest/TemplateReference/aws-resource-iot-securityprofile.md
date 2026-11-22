@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iot-securityprofile-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoT::SecurityProfile",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iot-securityprofile-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoT::SecurityProfile
 Properties:
   [AdditionalMetricsToRetainV2](#cfn-iot-securityprofile-additionalmetricstoretainv2): {{
@@ -142,7 +142,7 @@ The Amazon Resource Name (ARN) of the security profile.
 #### JSON
 <a name="aws-resource-iot-securityprofile--examples----json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "Amazon Web Services IoT SecurityProfile Sample Template",
@@ -220,7 +220,7 @@ The Amazon Resource Name (ARN) of the security profile.
 #### YAML
 <a name="aws-resource-iot-securityprofile--examples----yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Amazon Web Services IoT SecurityProfile Sample Template
 Resources:

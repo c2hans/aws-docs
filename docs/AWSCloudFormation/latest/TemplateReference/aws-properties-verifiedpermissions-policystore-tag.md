@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-verifiedpermissions-policystore-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-verifiedpermissions-policystore-tag-key)" : {{String}},
   "[Value](#cfn-verifiedpermissions-policystore-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-verifiedpermissions-policystore-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-verifiedpermissions-policystore-tag-key): {{String}}
   [Value](#cfn-verifiedpermissions-policystore-tag-value): {{String}}
 ```

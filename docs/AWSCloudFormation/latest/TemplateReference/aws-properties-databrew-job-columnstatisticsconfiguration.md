@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-databrew-job-columnstatisticsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Selectors](#cfn-databrew-job-columnstatisticsconfiguration-selectors)" : {{[ ColumnSelector, ... ]}},
   "[Statistics](#cfn-databrew-job-columnstatisticsconfiguration-statistics)" : {{StatisticsConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-databrew-job-columnstatisticsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Selectors](#cfn-databrew-job-columnstatisticsconfiguration-selectors): {{
     - ColumnSelector}}
   [Statistics](#cfn-databrew-job-columnstatisticsconfiguration-statistics): {{

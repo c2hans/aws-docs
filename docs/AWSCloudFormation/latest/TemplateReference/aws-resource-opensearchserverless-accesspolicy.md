@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-opensearchserverless-accesspolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::OpenSearchServerless::AccessPolicy",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-opensearchserverless-accesspolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::OpenSearchServerless::AccessPolicy
 Properties:
   [Description](#cfn-opensearchserverless-accesspolicy-description): {{String}}
@@ -97,7 +97,7 @@ For a complete sample policy that creates network, encryption, and access polici
 #### JSON
 <a name="aws-resource-opensearchserverless-accesspolicy--examples--Create_an_access_policy_that_allows_access_to_all_collections_and_indexes--json"></a>
 
-```
+```json
 {
    "Description":"OpenSearch Serverless access policy template",
    "Resources":{
@@ -120,7 +120,7 @@ For a complete sample policy that creates network, encryption, and access polici
 #### YAML
 <a name="aws-resource-opensearchserverless-accesspolicy--examples--Create_an_access_policy_that_allows_access_to_all_collections_and_indexes--yaml"></a>
 
-```
+```yaml
 Description: 'OpenSearch Serverless access policy template'
   Resources:
   TestAccessPolicy:

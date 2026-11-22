@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-endpointconfig-instancepool-syntax.json"></a>
 
-```
+```json
 {
   "[InstanceType](#cfn-sagemaker-endpointconfig-instancepool-instancetype)" : {{String}},
   "[ModelNameOverride](#cfn-sagemaker-endpointconfig-instancepool-modelnameoverride)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-endpointconfig-instancepool-syntax.yaml"></a>
 
-```
+```yaml
   [InstanceType](#cfn-sagemaker-endpointconfig-instancepool-instancetype): {{String}}
   [ModelNameOverride](#cfn-sagemaker-endpointconfig-instancepool-modelnameoverride): {{String}}
   [Priority](#cfn-sagemaker-endpointconfig-instancepool-priority): {{Integer}}

@@ -14,7 +14,7 @@ The examples in this section query for blocked requests or addresses.
 **Example – Extract the top 100 IP addresses blocked by a specified rule type**
 The following query extracts and counts the top 100 IP addresses that have been blocked by the `RATE_BASED` terminating rule during the specified date range.
 
-```
+```sql
 SELECT COUNT(httpRequest.clientIp) as count,
 httpRequest.clientIp
 FROM waf_logs
@@ -28,7 +28,7 @@ LIMIT 100
 **Example – Count the number of times a request from a specified country has been blocked**
 The following query counts the number of times the request has arrived from an IP address that belongs to Ireland (IE) and has been blocked by the `RATE_BASED` terminating rule.
 
-```
+```sql
 SELECT
   COUNT(httpRequest.country) as count,
   httpRequest.country
@@ -44,7 +44,7 @@ LIMIT 100;
 **Example – Count the number of times a request has been blocked, grouping by specific attributes**
 The following query counts the number of times the request has been blocked, with results grouped by WebACL, RuleId, ClientIP, and HTTP Request URI.
 
-```
+```sql
 SELECT
   COUNT(*) AS count,
   webaclid,
@@ -61,7 +61,7 @@ LIMIT 100;
 **Example – Count the number of times a specific terminating rule ID has been matched**
 The following query counts the number of times a specific terminating rule ID has been matched (`WHERE terminatingruleid='e9dd190d-7a43-4c06-bcea-409613d9506e'`). The query then groups the results by WebACL, Action, ClientIP, and HTTP Request URI.
 
-```
+```sql
 SELECT
   COUNT(*) AS count,
   webaclid,
@@ -78,7 +78,7 @@ LIMIT 100;
 **Example – Retrieve the top 100 IP addresses blocked during a specified date range**
 The following query extracts the top 100 IP addresses that have been blocked for a specified date range. The query also lists the number of times the IP addresses have been blocked.
 
-```
+```sql
 SELECT "httprequest"."clientip", "count"(*) "ipcount", "httprequest"."country"
 FROM waf_logs
 WHERE "action" = 'BLOCK' and "date" >= '2021/03/01'

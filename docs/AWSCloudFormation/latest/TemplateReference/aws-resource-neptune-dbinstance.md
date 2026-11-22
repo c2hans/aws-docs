@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-neptune-dbinstance-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Neptune::DBInstance",
   "Properties" : {
@@ -58,7 +58,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-neptune-dbinstance-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Neptune::DBInstance
 Properties:
   [AllowMajorVersionUpgrade](#cfn-neptune-dbinstance-allowmajorversionupgrade): {{Boolean}}

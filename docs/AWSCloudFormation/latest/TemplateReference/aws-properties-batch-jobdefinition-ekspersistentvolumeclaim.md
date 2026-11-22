@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-ekspersistentvolumeclaim-syntax.json"></a>
 
-```
+```json
 {
   "[ClaimName](#cfn-batch-jobdefinition-ekspersistentvolumeclaim-claimname)" : {{String}},
   "[ReadOnly](#cfn-batch-jobdefinition-ekspersistentvolumeclaim-readonly)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-ekspersistentvolumeclaim-syntax.yaml"></a>
 
-```
+```yaml
   [ClaimName](#cfn-batch-jobdefinition-ekspersistentvolumeclaim-claimname): {{String}}
   [ReadOnly](#cfn-batch-jobdefinition-ekspersistentvolumeclaim-readonly): {{Boolean}}
 ```

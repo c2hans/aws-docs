@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrcontainers-endpoint-emreksconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Classification](#cfn-emrcontainers-endpoint-emreksconfiguration-classification)" : {{String}},
   "[Configurations](#cfn-emrcontainers-endpoint-emreksconfiguration-configurations)" : {{[ EMREKSConfiguration, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrcontainers-endpoint-emreksconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Classification](#cfn-emrcontainers-endpoint-emreksconfiguration-classification): {{String}}
   [Configurations](#cfn-emrcontainers-endpoint-emreksconfiguration-configurations): {{
     - EMREKSConfiguration}}

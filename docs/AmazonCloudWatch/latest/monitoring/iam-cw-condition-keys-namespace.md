@@ -15,7 +15,7 @@ The following policy limits the user to publishing metrics only in the namespace
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -42,7 +42,7 @@ The following policy allows the user to publish metrics in any namespace except 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -74,7 +74,7 @@ The following policy allows the user to publish metrics using the OTLP API:
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -94,7 +94,7 @@ For disabling dual ingest, that is, only using PutMetricData and deny any OTLP i
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -119,7 +119,7 @@ For enabling dual ingest, that is, to allow both PutMetricData and OTLP ingest, 
 ------
 #### [ JSON ]
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

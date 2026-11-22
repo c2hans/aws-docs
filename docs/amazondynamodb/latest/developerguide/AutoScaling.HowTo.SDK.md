@@ -22,7 +22,7 @@ When you manually remove a table or global table replica, you do not automatical
 ------
 #### [ Java v2 ]
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.applicationautoscaling.ApplicationAutoScalingClient;
 import software.amazon.awssdk.services.applicationautoscaling.model.ApplicationAutoScalingException;
@@ -168,7 +168,7 @@ public class EnableDynamoDBAutoscaling {
 
 The program requires that you provide an Amazon Resource Name (ARN) for a valid Application Auto Scaling service linked role. (For example: `arn:aws:iam::122517410325:role/AWSServiceRoleForApplicationAutoScaling_DynamoDBTable`.) In the following program, replace `SERVICE_ROLE_ARN_GOES_HERE` with the actual ARN.
 
-```
+```java
 package com.amazonaws.codesamples.autoscaling;
 
 import com.amazonaws.services.applicationautoscaling.AWSApplicationAutoScalingClient;
@@ -286,7 +286,7 @@ The following program reverses the previous process. It removes the auto scaling
 ------
 #### [ Java v2 ]
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.applicationautoscaling.ApplicationAutoScalingClient;
 import software.amazon.awssdk.services.applicationautoscaling.model.ApplicationAutoScalingException;
@@ -402,7 +402,7 @@ public class DisableDynamoDBAutoscaling {
 ------
 #### [ Java v1 ]
 
-```
+```java
 package com.amazonaws.codesamples.autoscaling;
 
 import com.amazonaws.services.applicationautoscaling.AWSApplicationAutoScalingClient;

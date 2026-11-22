@@ -49,7 +49,7 @@ A batch request might succeed even though individual messages in the batch faile
 
 Add the `aws-java-sdk-sqs.jar`, `aws-java-sdk-ec2.jar`, and `commons-logging.jar` packages to your Java build class path. The following example shows these dependencies in a Maven project `pom.xml` file.
 
-```
+```xml
 <dependencies>
     <dependency>
         <groupId>com.amazonaws</groupId>
@@ -74,7 +74,7 @@ Add the `aws-java-sdk-sqs.jar`, `aws-java-sdk-ec2.jar`, and `commons-logging.jar
 
 The following Java code example implements a simple producer-consumer pattern. The main thread spawns a number of producer and consumer threads that process 1 KB messages for a specified time. This example includes producers and consumers that make single-operation requests and those that make batch requests.
 
-```
+```java
 /*
  * Copyright 2010-2024 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  *

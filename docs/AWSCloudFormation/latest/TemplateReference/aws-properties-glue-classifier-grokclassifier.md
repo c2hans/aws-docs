@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-classifier-grokclassifier-syntax.json"></a>
 
-```
+```json
 {
   "[Classification](#cfn-glue-classifier-grokclassifier-classification)" : {{String}},
   "[CustomPatterns](#cfn-glue-classifier-grokclassifier-custompatterns)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-classifier-grokclassifier-syntax.yaml"></a>
 
-```
+```yaml
   [Classification](#cfn-glue-classifier-grokclassifier-classification): {{String}}
   [CustomPatterns](#cfn-glue-classifier-grokclassifier-custompatterns): {{String}}
   [GrokPattern](#cfn-glue-classifier-grokclassifier-grokpattern): {{String}}

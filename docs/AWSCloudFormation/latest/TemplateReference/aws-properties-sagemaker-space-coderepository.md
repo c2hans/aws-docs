@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-space-coderepository-syntax.json"></a>
 
-```
+```json
 {
   "[RepositoryUrl](#cfn-sagemaker-space-coderepository-repositoryurl)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-space-coderepository-syntax.yaml"></a>
 
-```
+```yaml
   [RepositoryUrl](#cfn-sagemaker-space-coderepository-repositoryurl): {{String}}
 ```
 

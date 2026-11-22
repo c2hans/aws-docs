@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-datasource-datasourceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ConfluenceConfiguration](#cfn-bedrock-datasource-datasourceconfiguration-confluenceconfiguration)" : {{ConfluenceDataSourceConfiguration}},
   "[ManagedKnowledgeBaseConnectorConfiguration](#cfn-bedrock-datasource-datasourceconfiguration-managedknowledgebaseconnectorconfiguration)" : {{ManagedKnowledgeBaseConnectorConfiguration}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-datasource-datasourceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ConfluenceConfiguration](#cfn-bedrock-datasource-datasourceconfiguration-confluenceconfiguration): {{
     ConfluenceDataSourceConfiguration}}
   [ManagedKnowledgeBaseConnectorConfiguration](#cfn-bedrock-datasource-datasourceconfiguration-managedknowledgebaseconnectorconfiguration): {{

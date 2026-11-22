@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudformation-resourcedefaultversion-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudFormation::ResourceDefaultVersion",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudformation-resourcedefaultversion-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudFormation::ResourceDefaultVersion
 Properties:
   [TypeName](#cfn-cloudformation-resourcedefaultversion-typename): {{String}}
@@ -103,7 +103,7 @@ The following example demonstrates how to specify and new resource version, and 
 #### JSON
 <a name="aws-resource-cloudformation-resourcedefaultversion--examples--Specifying_a_resource_version_and_setting_it_as_the_default_version--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -129,7 +129,7 @@ The following example demonstrates how to specify and new resource version, and 
 #### YAML
 <a name="aws-resource-cloudformation-resourcedefaultversion--examples--Specifying_a_resource_version_and_setting_it_as_the_default_version--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   ResourceVersion:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-observabilityadmin-s3tableintegration-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-observabilityadmin-s3tableintegration-tag-key)" : {{String}},
   "[Value](#cfn-observabilityadmin-s3tableintegration-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-observabilityadmin-s3tableintegration-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-observabilityadmin-s3tableintegration-tag-key): {{String}}
   [Value](#cfn-observabilityadmin-s3tableintegration-tag-value): {{String}}
 ```

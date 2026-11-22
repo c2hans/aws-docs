@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackage-packagingconfiguration-streamselection-syntax.json"></a>
 
-```
+```json
 {
   "[MaxVideoBitsPerSecond](#cfn-mediapackage-packagingconfiguration-streamselection-maxvideobitspersecond)" : {{Integer}},
   "[MinVideoBitsPerSecond](#cfn-mediapackage-packagingconfiguration-streamselection-minvideobitspersecond)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackage-packagingconfiguration-streamselection-syntax.yaml"></a>
 
-```
+```yaml
   [MaxVideoBitsPerSecond](#cfn-mediapackage-packagingconfiguration-streamselection-maxvideobitspersecond): {{Integer}}
   [MinVideoBitsPerSecond](#cfn-mediapackage-packagingconfiguration-streamselection-minvideobitspersecond): {{Integer}}
   [StreamOrder](#cfn-mediapackage-packagingconfiguration-streamselection-streamorder): {{String}}

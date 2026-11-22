@@ -151,7 +151,7 @@ Deprecated internal procedures.
 
 The `aws_sqlserver_ext.sp_send_dbmail` procedure in the extension pack emulates the `msdb.dbo.sp_send_dbmail` procedure. For more information about the source SQL Server Database Mail procedure, see [Microsoft technical documentation](https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-send-dbmail-transact-sql?view=sql-server-ver15).
 
-```
+```sql
 par_profile_name varchar = NULL::character varying,
 par_recipients text = NULL::text,
 par_copy_recipients text = NULL::text,
@@ -181,7 +181,7 @@ out returncode integer
 
 The `aws_sqlserver_ext.sysmail_delete_mailitems_sp` procedure in the extension pack emulates the `msdb.dbo.sysmail_delete_mailitems_sp` procedure. For more information about the source SQL Server Database Mail procedure, see [Microsoft technical documentation](https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sysmail-delete-mailitems-sp-transact-sql?view=sql-server-ver15).
 
-```
+```sql
 par_sent_before timestamp = NULL::timestamp without time zone,
 par_sent_status varchar = NULL::character varying,
 out returncode integer
@@ -189,7 +189,7 @@ out returncode integer
 
 The `aws_sqlserver_ext.sysmail_add_profile_sp` procedure in the extension pack emulates the `msdb.dbo.sysmail_add_profile_sp` procedure. For more information about the source SQL Server Database Mail procedure, see [Microsoft technical documentation](https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sysmail-add-profile-sp-transact-sql?view=sql-server-ver15).
 
-```
+```sql
 par_profile_name varchar,
 par_description varchar = NULL::character varying,
 out par_profile_id integer,
@@ -198,7 +198,7 @@ out returncode integer
 
 The `aws_sqlserver_ext.sysmail_add_account_sp` procedure in the extension pack emulates the `msdb.dbo.sysmail_add_account_sp` procedure. For more information about the source SQL Server Database Mail procedure, see [Microsoft technical documentation](https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sysmail-add-account-sp-transact-sql?view=sql-server-ver15).
 
-```
+```sql
 par_account_name varchar
 par_email_address varchar
 par_display_name varchar = NULL::character varying
@@ -217,7 +217,7 @@ out returncode integer
 
 The `aws_sqlserver_ext.sysmail_add_profileaccount_sp` procedure in the extension pack emulates the `msdb.dbo.sysmail_add_profileaccount_sp` procedure. For more information about the source SQL Server Database Mail procedure, see [Microsoft technical documentation](https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sysmail-add-profileaccount-sp-transact-sql?view=sql-server-ver15).
 
-```
+```sql
 par_profile_id integer = NULL::integer,
 par_profile_name varchar = NULL::character varying,
 par_account_id integer = NULL::integer,
@@ -228,7 +228,7 @@ out returncode integer
 
 The `aws_sqlserver_ext.sysmail_help_profile_sp` procedure in the extension pack emulates the `msdb.dbo.sysmail_help_profile_sp` procedure. For more information about the source SQL Server Database Mail procedure, see [Microsoft technical documentation](https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sysmail-help-profile-sp-transact-sql?view=sql-server-ver15).
 
-```
+```sql
 par_profile_id integer = NULL::integer,
 par_profile_name varchar = NULL::character varying,
 out returncode integer
@@ -236,7 +236,7 @@ out returncode integer
 
 The `aws_sqlserver_ext.sysmail_update_profile_sp` procedure in the extension pack emulates the `msdb.dbo.sysmail_update_profile_sp` procedure. For more information about the source SQL Server Database Mail procedure, see [Microsoft technical documentation](https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sysmail-update-profile-sp-transact-sql?view=sql-server-ver15).
 
-```
+```sql
 par_profile_id integer = NULL::integer,
 par_profile_name varchar = NULL::character varying,
 par_description varchar = NULL::character varying,
@@ -245,7 +245,7 @@ out returncode integer
 
 The `aws_sqlserver_ext.sysmail_delete_profile_sp` procedure in the extension pack emulates the `msdb.dbo.sysmail_delete_profile_sp` procedure. For more information about the source SQL Server Database Mail procedure, see [Microsoft technical documentation](https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sysmail-delete-profile-sp-transact-sql?view=sql-server-ver15).
 
-```
+```sql
 par_profile_id integer = NULL::integer,
 par_profile_name varchar = NULL::character varying,
 par_force_delete smallint = 1,
@@ -254,7 +254,7 @@ out returncode integer
 
 The `aws_sqlserver_ext.sysmail_help_account_sp` procedure in the extension pack emulates the `msdb.dbo.sysmail_help_account_sp` procedure. For more information about the source SQL Server Database Mail procedure, see [Microsoft technical documentation](https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sysmail-help-account-sp-transact-sql?view=sql-server-ver15).
 
-```
+```sql
 par_account_id integer = NULL::integer,
 par_account_name varchar = NULL::character varying,
 out returncode integer
@@ -262,7 +262,7 @@ out returncode integer
 
 The `aws_sqlserver_ext.sysmail_update_account_sp` procedure in the extension pack emulates the `msdb.dbo.sysmail_update_account_sp` procedure. For more information about the source SQL Server Database Mail procedure, see [Microsoft technical documentation](https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sysmail-update-account-sp-transact-sql?view=sql-server-ver15).
 
-```
+```sql
 par_account_id integer = NULL::integer,
 par_account_name varchar = NULL::character varying,
 par_email_address varchar = NULL::character varying,
@@ -283,7 +283,7 @@ out returncode integer
 
 The `aws_sqlserver_ext.sysmail_delete_account_sp` procedure in the extension pack emulates the `msdb.dbo.sysmail_delete_account_sp` procedure. For more information about the source SQL Server Database Mail procedure, see [Microsoft technical documentation](https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sysmail-delete-account-sp-transact-sql?view=sql-server-ver15).
 
-```
+```sql
 par_account_id integer = NULL::integer,
 par_account_name varchar = NULL::character varying,
 out returncode integer
@@ -291,7 +291,7 @@ out returncode integer
 
 The `aws_sqlserver_ext.sysmail_help_profileaccount_sp` procedure in the extension pack emulates the `msdb.dbo.sysmail_help_profileaccount_sp` procedure. For more information about the source SQL Server Database Mail procedure, see [Microsoft technical documentation](https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sysmail-help-profileaccount-sp-transact-sql?view=sql-server-ver15).
 
-```
+```sql
 par_profile_id integer = NULL::integer,
 par_profile_name varchar = NULL::character varying,
 par_account_id integer = NULL::integer,
@@ -301,7 +301,7 @@ out returncode integer
 
 The `aws_sqlserver_ext.sysmail_update_profileaccount_sp` procedure in the extension pack emulates the `msdb.dbo.sysmail_update_profileaccount_sp` procedure. For more information about the source SQL Server Database Mail procedure, see [Microsoft technical documentation](https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sysmail-update-profileaccount-sp-transact-sql?view=sql-server-ver15).
 
-```
+```sql
 par_profile_id integer = NULL::integer,
 par_profile_name varchar = NULL::character varying,
 par_account_id integer = NULL::integer,
@@ -312,7 +312,7 @@ out returncode integer
 
 The `aws_sqlserver_ext.sysmail_delete_profileaccount_sp` procedure in the extension pack emulates the `msdb.dbo.sysmail_delete_profileaccount_sp` procedure. For more information about the source SQL Server Database Mail procedure, see [Microsoft technical documentation](https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sysmail-delete-profileaccount-sp-transact-sql?view=sql-server-ver15).
 
-```
+```sql
 par_profile_id integer = NULL::integer,
 par_profile_name varchar = NULL::character varying,
 par_account_id integer = NULL::integer,
@@ -325,7 +325,7 @@ out returncode integer
 
 To send an email, use the `aws_sqlserver_ext.sp_send_dbmail` procedure as shown following.
 
-```
+```sql
 PERFORM sp_send_dbmail (
     par_profile_name := 'Administrator',
     par_recipients := 'hello@rusgl.info',
@@ -336,7 +336,7 @@ PERFORM sp_send_dbmail (
 
 The following example shows how to send an email with query results.
 
-```
+```sql
 PERFORM sp_send_dbmail (
     par_profile_name := 'Administrator',
     par_recipients := 'hello@rusgl.info',
@@ -347,7 +347,7 @@ PERFORM sp_send_dbmail (
 
 The following example shows how to send an email with HTML code.
 
-```
+```sql
 DECLARE var_tableHTML TEXT;
 SET var_tableHTML := CONCAT(
     '<H1>Work Order Report</H1>',
@@ -367,7 +367,7 @@ PERFORM sp_send_dbmail (
 
 To delete emails, use the `aws_sqlserver_ext.sysmail_delete_mailitems_sp` procedure as shown following.
 
-```
+```sql
 DECLARE var_GETDATE datetime;
 SET var_GETDATE = NOW();
 PERFORM sysmail_delete_mailitems_sp (
@@ -377,7 +377,7 @@ PERFORM sysmail_delete_mailitems_sp (
 
 The following example shows how to delete the oldest emails.
 
-```
+```sql
 PERFORM sysmail_delete_mailitems_sp (
     par_sent_before := '31.12.2015'
 );
@@ -385,7 +385,7 @@ PERFORM sysmail_delete_mailitems_sp (
 
 The following example shows how to delete all emails that can't be sent.
 
-```
+```sql
 PERFORM sysmail_delete_mailitems_sp (
     par_sent_status := 'failed'
 );
@@ -393,7 +393,7 @@ PERFORM sysmail_delete_mailitems_sp (
 
 To create a new user profile, use the `aws_sqlserver_ext.sysmail_add_profile_sp` procedure as shown following.
 
-```
+```sql
 PERFORM sysmail_add_profile_sp (
     profile_name := 'Administrator',
     par_description := 'administrative mail'
@@ -402,7 +402,7 @@ PERFORM sysmail_add_profile_sp (
 
 The following example shows how to create a new profile and save the unique profile identifier in a variable.
 
-```
+```sql
 DECLARE var_profileId INT;
 SELECT par_profile_id
     FROM sysmail_add_profile_sp (
@@ -415,7 +415,7 @@ SELECT var_profileId;
 
 To create a new email account, use the `aws_sqlserver_ext.sysmail_add_account_sp` procedure as shown following.
 
-```
+```sql
 PERFORM sysmail_add_account_sp (
     par_account_name :='Audit Account',
     par_email_address := 'dba@rusgl.info',
@@ -428,7 +428,7 @@ PERFORM sysmail_add_account_sp (
 
 To add an email account to the user profile, use the `aws_sqlserver_ext.sysmail_add_profileaccount_sp` procedure as shown following.
 
-```
+```sql
 PERFORM sysmail_add_profileaccount_sp (
     par_account_name := 'Administrator',
     par_account_name := 'Audit Account',

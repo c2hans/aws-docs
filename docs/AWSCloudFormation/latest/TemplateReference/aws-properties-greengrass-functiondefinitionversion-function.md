@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrass-functiondefinitionversion-function-syntax.json"></a>
 
-```
+```json
 {
   "[FunctionArn](#cfn-greengrass-functiondefinitionversion-function-functionarn)" : {{String}},
   "[FunctionConfiguration](#cfn-greengrass-functiondefinitionversion-function-functionconfiguration)" : {{FunctionConfiguration}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrass-functiondefinitionversion-function-syntax.yaml"></a>
 
-```
+```yaml
   [FunctionArn](#cfn-greengrass-functiondefinitionversion-function-functionarn): {{String}}
   [FunctionConfiguration](#cfn-greengrass-functiondefinitionversion-function-functionconfiguration): {{
     FunctionConfiguration}}

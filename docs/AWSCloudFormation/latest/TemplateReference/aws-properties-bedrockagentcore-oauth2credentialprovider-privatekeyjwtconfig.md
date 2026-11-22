@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-oauth2credentialprovider-privatekeyjwtconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AdditionalHeaderClaims](#cfn-bedrockagentcore-oauth2credentialprovider-privatekeyjwtconfig-additionalheaderclaims)" : {{{{{Key}}: {{Value}}, ...}}},
   "[AdditionalPayloadClaims](#cfn-bedrockagentcore-oauth2credentialprovider-privatekeyjwtconfig-additionalpayloadclaims)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-oauth2credentialprovider-privatekeyjwtconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AdditionalHeaderClaims](#cfn-bedrockagentcore-oauth2credentialprovider-privatekeyjwtconfig-additionalheaderclaims): {{
     {{Key}}: {{Value}}}}
   [AdditionalPayloadClaims](#cfn-bedrockagentcore-oauth2credentialprovider-privatekeyjwtconfig-additionalpayloadclaims): {{

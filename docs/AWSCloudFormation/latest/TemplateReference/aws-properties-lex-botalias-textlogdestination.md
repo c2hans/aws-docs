@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-botalias-textlogdestination-syntax.json"></a>
 
-```
+```json
 {
   "[CloudWatch](#cfn-lex-botalias-textlogdestination-cloudwatch)" : {{CloudWatchLogGroupLogDestination}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-botalias-textlogdestination-syntax.yaml"></a>
 
-```
+```yaml
   [CloudWatch](#cfn-lex-botalias-textlogdestination-cloudwatch): {{
     CloudWatchLogGroupLogDestination}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-pipeline-pipelinedefinition-syntax.json"></a>
 
-```
+```json
 {
   "[PipelineDefinitionBody](#cfn-sagemaker-pipeline-pipelinedefinition-pipelinedefinitionbody)" : {{String}},
   "[PipelineDefinitionS3Location](#cfn-sagemaker-pipeline-pipelinedefinition-pipelinedefinitions3location)" : {{S3Location}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-pipeline-pipelinedefinition-syntax.yaml"></a>
 
-```
+```yaml
   [PipelineDefinitionBody](#cfn-sagemaker-pipeline-pipelinedefinition-pipelinedefinitionbody): {{String}}
   [PipelineDefinitionS3Location](#cfn-sagemaker-pipeline-pipelinedefinition-pipelinedefinitions3location): {{
     S3Location}}

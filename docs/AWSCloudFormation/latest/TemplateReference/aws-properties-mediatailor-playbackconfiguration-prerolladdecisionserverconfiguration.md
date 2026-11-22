@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-playbackconfiguration-prerolladdecisionserverconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[VastResponse](#cfn-mediatailor-playbackconfiguration-prerolladdecisionserverconfiguration-vastresponse)" : {{PreRollVastResponse}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-playbackconfiguration-prerolladdecisionserverconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [VastResponse](#cfn-mediatailor-playbackconfiguration-prerolladdecisionserverconfiguration-vastresponse): {{
     PreRollVastResponse}}
 ```

@@ -47,7 +47,7 @@ This is the full policy showing which resources the above actions apply to:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

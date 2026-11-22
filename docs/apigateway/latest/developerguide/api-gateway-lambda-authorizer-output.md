@@ -13,7 +13,7 @@ The following shows an example of this output.
 
 ****
 
-```
+```json
 {
   "principalId": "{{yyyyyyyy}}",
   "policyDocument": {
@@ -60,7 +60,7 @@ In addition, the Resource ARN, as shown in the policy statement output by the au
 
 ****
 
-```
+```json
 {
   "principalId": "user",
   "policyDocument": {

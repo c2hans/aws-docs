@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-owner-ownergroupproperties-syntax.json"></a>
 
-```
+```json
 {
   "[GroupIdentifier](#cfn-datazone-owner-ownergroupproperties-groupidentifier)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-owner-ownergroupproperties-syntax.yaml"></a>
 
-```
+```yaml
   [GroupIdentifier](#cfn-datazone-owner-ownergroupproperties-groupidentifier): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-securityprofile-flowmodule-syntax.json"></a>
 
-```
+```json
 {
   "[FlowModuleId](#cfn-connect-securityprofile-flowmodule-flowmoduleid)" : {{String}},
   "[Type](#cfn-connect-securityprofile-flowmodule-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-securityprofile-flowmodule-syntax.yaml"></a>
 
-```
+```yaml
   [FlowModuleId](#cfn-connect-securityprofile-flowmodule-flowmoduleid): {{String}}
   [Type](#cfn-connect-securityprofile-flowmodule-type): {{String}}
 ```

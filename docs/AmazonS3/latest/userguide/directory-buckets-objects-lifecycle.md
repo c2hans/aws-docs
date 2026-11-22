@@ -27,7 +27,7 @@ The following bucket policy grants the S3 Lifecycle service principal permission
 
 **Example Bucket policy to allow `CreateSession` with an explicit `ReadWrite` session mode for lifecycle operations**
 
-```
+```JSON
  {
    "Version":"2008-10-17",
    "Statement":[

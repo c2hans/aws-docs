@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-cluster-encryptionconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Provider](#cfn-eks-cluster-encryptionconfig-provider)" : {{Provider}},
   "[Resources](#cfn-eks-cluster-encryptionconfig-resources)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-cluster-encryptionconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Provider](#cfn-eks-cluster-encryptionconfig-provider): {{
     Provider}}
   [Resources](#cfn-eks-cluster-encryptionconfig-resources): {{

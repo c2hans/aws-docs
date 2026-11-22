@@ -169,7 +169,7 @@ For information about how to create and test a working sample, see the [AWS SDK 
 
 **Example**
 
-```
+```cs
 using Amazon;
 using Amazon.S3;
 using Amazon.S3.Model;
@@ -239,7 +239,7 @@ For information about how to create and test a working sample, see the [AWS SDK 
 
 **Example**
 
-```
+```ruby
 require 'aws-sdk-s3'
 
 # Wraps Amazon S3 bucket actions.

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelpackage-modelpackagestatusdetails-syntax.json"></a>
 
-```
+```json
 {
   "[ValidationStatuses](#cfn-sagemaker-modelpackage-modelpackagestatusdetails-validationstatuses)" : {{[ ModelPackageStatusItem, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelpackage-modelpackagestatusdetails-syntax.yaml"></a>
 
-```
+```yaml
   [ValidationStatuses](#cfn-sagemaker-modelpackage-modelpackagestatusdetails-validationstatuses): {{
     - ModelPackageStatusItem}}
 ```

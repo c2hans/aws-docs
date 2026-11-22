@@ -53,7 +53,7 @@ Once again, here is the security policy for *GameRole* that was shown in [Using 
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[

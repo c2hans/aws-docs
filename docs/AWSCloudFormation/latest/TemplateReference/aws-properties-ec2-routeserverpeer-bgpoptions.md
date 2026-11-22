@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-routeserverpeer-bgpoptions-syntax.json"></a>
 
-```
+```json
 {
   "[PeerAsn](#cfn-ec2-routeserverpeer-bgpoptions-peerasn)" : {{Integer}},
   "[PeerLivenessDetection](#cfn-ec2-routeserverpeer-bgpoptions-peerlivenessdetection)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-routeserverpeer-bgpoptions-syntax.yaml"></a>
 
-```
+```yaml
   [PeerAsn](#cfn-ec2-routeserverpeer-bgpoptions-peerasn): {{Integer}}
   [PeerLivenessDetection](#cfn-ec2-routeserverpeer-bgpoptions-peerlivenessdetection): {{String}}
 ```

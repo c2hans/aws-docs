@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-periodoverperiodcomputation-syntax.json"></a>
 
-```
+```json
 {
   "[ComputationId](#cfn-quicksight-template-periodoverperiodcomputation-computationid)" : {{String}},
   "[Name](#cfn-quicksight-template-periodoverperiodcomputation-name)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-periodoverperiodcomputation-syntax.yaml"></a>
 
-```
+```yaml
   [ComputationId](#cfn-quicksight-template-periodoverperiodcomputation-computationid): {{String}}
   [Name](#cfn-quicksight-template-periodoverperiodcomputation-name): {{String}}
   [Time](#cfn-quicksight-template-periodoverperiodcomputation-time): {{

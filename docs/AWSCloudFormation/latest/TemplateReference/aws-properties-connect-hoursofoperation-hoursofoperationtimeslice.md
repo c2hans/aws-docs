@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-hoursofoperation-hoursofoperationtimeslice-syntax.json"></a>
 
-```
+```json
 {
   "[Hours](#cfn-connect-hoursofoperation-hoursofoperationtimeslice-hours)" : {{Integer}},
   "[Minutes](#cfn-connect-hoursofoperation-hoursofoperationtimeslice-minutes)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-hoursofoperation-hoursofoperationtimeslice-syntax.yaml"></a>
 
-```
+```yaml
   [Hours](#cfn-connect-hoursofoperation-hoursofoperationtimeslice-hours): {{Integer}}
   [Minutes](#cfn-connect-hoursofoperation-hoursofoperationtimeslice-minutes): {{Integer}}
 ```

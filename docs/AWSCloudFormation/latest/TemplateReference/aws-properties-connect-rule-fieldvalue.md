@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-rule-fieldvalue-syntax.json"></a>
 
-```
+```json
 {
   "[BooleanValue](#cfn-connect-rule-fieldvalue-booleanvalue)" : {{Boolean}},
   "[DoubleValue](#cfn-connect-rule-fieldvalue-doublevalue)" : {{Number}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-rule-fieldvalue-syntax.yaml"></a>
 
-```
+```yaml
   [BooleanValue](#cfn-connect-rule-fieldvalue-booleanvalue): {{
     Boolean}}
   [DoubleValue](#cfn-connect-rule-fieldvalue-doublevalue): {{Number}}

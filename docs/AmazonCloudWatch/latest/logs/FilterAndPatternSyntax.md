@@ -271,7 +271,7 @@ You can only use up to one wildcard selector in a property selector.
 
 The following code snippet contains examples showing how you can format filter patterns to match JSON terms with numeric values.
 
-```
+```json
 // Filter pattern with greater than symbol
 { $.bandwidth > 75 }
 // Filter pattern with less than symbol
@@ -302,7 +302,7 @@ If you test an example filter pattern with the example JSON log event, you must 
 
 **JSON log event**
 
-```
+```json
 {
       "eventType": "UpdateTrail",
       "sourceIPAddress": "111.111.111.111",
@@ -422,7 +422,7 @@ You can use the logical operators AND ("&&") and OR ("\|\|") in filter patterns 
 
 **JSON object**
 
-```
+```JSON
 {
     "user": {
         "id": 1,

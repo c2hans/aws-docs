@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connectcampaignsv2-campaign-emailoutboundconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ConnectSourceEmailAddress](#cfn-connectcampaignsv2-campaign-emailoutboundconfig-connectsourceemailaddress)" : {{String}},
   "[SourceEmailAddressDisplayName](#cfn-connectcampaignsv2-campaign-emailoutboundconfig-sourceemailaddressdisplayname)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connectcampaignsv2-campaign-emailoutboundconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ConnectSourceEmailAddress](#cfn-connectcampaignsv2-campaign-emailoutboundconfig-connectsourceemailaddress): {{String}}
   [SourceEmailAddressDisplayName](#cfn-connectcampaignsv2-campaign-emailoutboundconfig-sourceemailaddressdisplayname): {{String}}
   [WisdomTemplateArn](#cfn-connectcampaignsv2-campaign-emailoutboundconfig-wisdomtemplatearn): {{String}}

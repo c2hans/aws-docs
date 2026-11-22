@@ -40,7 +40,7 @@ If you launch your container instances using an Amazon EC2 Auto Scaling group, t
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

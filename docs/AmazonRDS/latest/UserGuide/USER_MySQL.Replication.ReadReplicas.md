@@ -25,6 +25,7 @@ You can configure replication using global transaction identifiers (GTIDS) on th
 + RDS for MySQL version 5.7.44 and higher 5.7 versions
 + RDS for MySQL version 8.0.28 and higher 8.0 versions
 + RDS for MySQL version 8.4.3 and higher 8.4 versions
++ All RDS for MySQL 9.7 versions
 
 For more information, see [Using GTID-based replication](mysql-replication-gtid.md).
 

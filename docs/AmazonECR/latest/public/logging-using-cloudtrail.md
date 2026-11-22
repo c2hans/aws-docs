@@ -55,7 +55,7 @@ These examples have been formatted for improved readability. In a CloudTrail log
 
 The following example shows a CloudTrail log entry that demonstrates the `CreateRepository` action.
 
-```
+```JSON
 {
     "eventVersion": "1.08",
     "userIdentity": {
@@ -109,7 +109,7 @@ The following example shows a CloudTrail log entry that demonstrates an image pu
 **Note**
 When pushing an image, you will also see `InitiateLayerUpload`, `UploadLayerPart`, and `CompleteLayerUpload` references in the CloudTrail logs.
 
-```
+```JSON
 {
     "eventVersion": "1.04",
     "userIdentity": {

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-ephemeralstorage-syntax.json"></a>
 
-```
+```json
 {
   "[SizeInGiB](#cfn-batch-jobdefinition-ephemeralstorage-sizeingib)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-ephemeralstorage-syntax.yaml"></a>
 
-```
+```yaml
   [SizeInGiB](#cfn-batch-jobdefinition-ephemeralstorage-sizeingib): {{Integer}}
 ```
 

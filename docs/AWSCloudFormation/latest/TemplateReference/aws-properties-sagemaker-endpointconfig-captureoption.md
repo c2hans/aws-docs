@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-endpointconfig-captureoption-syntax.json"></a>
 
-```
+```json
 {
   "[CaptureMode](#cfn-sagemaker-endpointconfig-captureoption-capturemode)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-endpointconfig-captureoption-syntax.yaml"></a>
 
-```
+```yaml
   [CaptureMode](#cfn-sagemaker-endpointconfig-captureoption-capturemode): {{String}}
 ```
 

@@ -10,13 +10,13 @@ To enforce DN matching, add the DN match property and use the connection string 
 
 Add the property to the client connection to enforce DN matching.
 
-```
+```java
 properties.put("oracle.net.ssl_server_dn_match", "TRUE");
 ```
 
 Use the following connection string to enforce DN matching when using SSL.
 
-```
+```json
 final String connectionString = String.format(
     "jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCPS)(HOST=%s)(PORT=%s))" +
     "(CONNECT_DATA=(SID=%s))" +

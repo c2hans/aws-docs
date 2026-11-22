@@ -37,7 +37,7 @@ The `StatsD` default configuration works for most users. There are optional fiel
 
 The following is an example of the **statsd** section of the agent configuration file, using the default port and custom collection and aggregation intervals.
 
-```
+```json
 {
    "metrics":{
       "metrics_collected":{

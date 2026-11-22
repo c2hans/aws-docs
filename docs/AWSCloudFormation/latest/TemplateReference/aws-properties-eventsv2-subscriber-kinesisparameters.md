@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eventsv2-subscriber-kinesisparameters-syntax.json"></a>
 
-```
+```json
 {
   "[ExplicitHashKey](#cfn-eventsv2-subscriber-kinesisparameters-explicithashkey)" : {{String}},
   "[PartitionKey](#cfn-eventsv2-subscriber-kinesisparameters-partitionkey)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eventsv2-subscriber-kinesisparameters-syntax.yaml"></a>
 
-```
+```yaml
   [ExplicitHashKey](#cfn-eventsv2-subscriber-kinesisparameters-explicithashkey): {{String}}
   [PartitionKey](#cfn-eventsv2-subscriber-kinesisparameters-partitionkey): {{String}}
 ```

@@ -14,5 +14,6 @@ The following actions are supported:
 +  [GetCallerIdentity](API_GetCallerIdentity.md)
 +  [GetDelegatedAccessToken](API_GetDelegatedAccessToken.md)
 +  [GetFederationToken](API_GetFederationToken.md)
++  [GetScopedCredentials](API_GetScopedCredentials.md)
 +  [GetSessionToken](API_GetSessionToken.md)
 +  [GetWebIdentityToken](API_GetWebIdentityToken.md)

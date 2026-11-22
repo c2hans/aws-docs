@@ -18,6 +18,7 @@ The following actions are supported by Amazon S3 Tables:
 +  [DeleteTableBucketReplication](API_s3Buckets_DeleteTableBucketReplication.md)
 +  [DeleteTablePolicy](API_s3Buckets_DeleteTablePolicy.md)
 +  [DeleteTableReplication](API_s3Buckets_DeleteTableReplication.md)
++  [DisassociateTableReplication](API_s3Buckets_DisassociateTableReplication.md)
 +  [GetNamespace](API_s3Buckets_GetNamespace.md)
 +  [GetTable](API_s3Buckets_GetTable.md)
 +  [GetTableBucket](API_s3Buckets_GetTableBucket.md)

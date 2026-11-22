@@ -82,7 +82,7 @@ You can use the following Amazon S3 control plane operations to create and manag
 
 The following example command retrieves your Multi-Region Access Point route configuration so that you can see the current routing statuses for your buckets. To use this example command, replace the `{{user input placeholders}}` with your own information.
 
-```
+```bash
 aws s3control get-multi-region-access-point-routes
 --region {{eu-west-1}}
 --account-id {{111122223333}}
@@ -163,7 +163,7 @@ Here's an example bucket policy that delegates access control to the Multi-Regio
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -196,7 +196,7 @@ Here's an example bucket policy that delegates access control to the Multi-Regio
 
 The following `put-bucket-policy` example command associates the updated S3 bucket policy with your S3 bucket:
 
-```
+```bash
 aws s3api put-bucket-policy
   --bucket {{amzn-s3-demo-bucket}}
   --policy file:{{///tmp/policy.json}}
@@ -219,7 +219,7 @@ In a Multi-Region Access Point routing configuration, you can set buckets to an 
 
 The following example command updates your Multi-Region Access Point routing configuration. In this example, `{{amzn-s3-demo-bucket1}}` is set to active status and `{{amzn-s3-demo-bucket2}}` is set to passive. To use this example command, replace the `{{user input placeholders}}` with your own information.
 
-```
+```bash
 aws s3control submit-multi-region-access-point-routes
 --region {{ap-southeast-2}}
 --account-id {{111122223333}}
@@ -330,7 +330,7 @@ To use this operation, you must have the `s3:PutObject` permission for the Multi
 
 The following example data plane request uploads {{`example.txt`}} to the specified Multi-Region Access Point. To use this example, replace the {{`user input placeholders`}} with your own information.
 
-```
+```bash
 aws s3api put-object --bucket arn:aws:s3::{{123456789012}}:accesspoint/{{abcdef0123456}}.mrap --key {{example.txt}} --body {{example.txt}}
 ```
 
@@ -374,7 +374,7 @@ async function putObjectExample() {
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```python
 import boto3
 
 client = boto3.client('s3')
@@ -400,7 +400,7 @@ To use this API operation, you must have the `s3:GetObject` permission for the M
 
 The following example data plane request retrieves {{`example.txt`}} from the specified Multi-Region Access Point and downloads it as {{`downloaded_example.txt`}}. To use this example, replace the {{`user input placeholders`}} with your own information.
 
-```
+```bash
 aws s3api get-object --bucket arn:aws:s3::{{123456789012}}:accesspoint/{{abcdef0123456}}.mrap --key {{example.txt}} {{downloaded_example.txt}}
 ```
 
@@ -444,7 +444,7 @@ async function getObjectExample() {
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```python
 import boto3
 
 client = boto3.client('s3')
@@ -471,7 +471,7 @@ To use this API operation, you must have the `s3:ListBucket` permission for the 
 
 The following example data plane request lists the objects in the bucket that underlies the Multi-Region Access Point that's specified by the ARN. To use this example, replace the {{`user input placeholders`}} with your own information.
 
-```
+```bash
 aws s3api list-objects-v2 --bucket arn:aws:s3::{{123456789012}}:accesspoint/{{abcdef0123456}}.mrap
 ```
 
@@ -515,7 +515,7 @@ async function listObjectsExample() {
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```python
 import boto3
 
 client = boto3.client('s3')
@@ -540,14 +540,14 @@ The following examples show how you can use Multi-Region Access Points with pres
 ------
 #### [ AWS CLI ]
 
-```
+```bash
 aws s3 presign arn:aws:s3::{{123456789012}}:accesspoint/{{MultiRegionAccessPoint_alias}}/{{example-file.txt}}
 ```
 
 ------
 #### [ SDK for Python (Boto3) ]
 
-```
+```python
 import logging
 import boto3
 from botocore.exceptions import ClientError
@@ -597,7 +597,7 @@ Here's an example of a data plane request to a Multi-Region Access Point that is
 
 To download objects from a Multi-Region Access Point that is connected to a Requester Pays bucket, you must specify `--request-payer requester` as part of your [get-object](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-object.html) request. You must also specify the name of the file in the bucket and the location where the downloaded file should be stored.
 
-```
+```bash
 aws s3api get-object --bucket {{MultiRegionAccessPoint_ARN}} --request-payer requester --key {{example-file-in-bucket}}.txt {{example-location-of-downloaded-file}}.txt
 ```
 

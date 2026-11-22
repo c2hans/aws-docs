@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-aps-workspace-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::APS::Workspace",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-aps-workspace-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::APS::Workspace
 Properties:
   [AlertManagerDefinition](#cfn-aps-workspace-alertmanagerdefinition): {{String}}
@@ -169,7 +169,7 @@ The following example creates an Amazon Managed Service for Prometheus workspace
 #### JSON
 <a name="aws-resource-aps-workspace--examples--Amazon_Managed_Service_for_Prometheus_workspace_example--json"></a>
 
-```
+```json
 { "Resources": { "APSWorkspace": { "Type":
                 "AWS::APS::Workspace", "Properties": { "Alias": "TestWorkspace" "Tags": [ { "Key":
                 "BusinessPurpose", "Value": "LoadTesting" } ] } } } }
@@ -178,7 +178,7 @@ The following example creates an Amazon Managed Service for Prometheus workspace
 #### YAML
 <a name="aws-resource-aps-workspace--examples--Amazon_Managed_Service_for_Prometheus_workspace_example--yaml"></a>
 
-```
+```yaml
 Resources: APSWorkspace: Type: AWS::APS::Workspace Properties:
                 Alias: TestWorkspace Tags: - Key: BusinessPurpose Value: LoadTesting
 ```
@@ -191,7 +191,7 @@ The following example creates a new workspace and sets a new logging configurati
 #### JSON
 <a name="aws-resource-aps-workspace--examples--Amazon_Managed_Service_for_Prometheus_logging_configuration_example--json"></a>
 
-```
+```json
 { "Resources": { "APSWorkspace": { "Type":
                 "AWS::APS::Workspace", "Properties": { "Alias": "TestWorkspace",
                 "LoggingConfiguration": { "LogGroupArn":
@@ -202,7 +202,7 @@ The following example creates a new workspace and sets a new logging configurati
 #### YAML
 <a name="aws-resource-aps-workspace--examples--Amazon_Managed_Service_for_Prometheus_logging_configuration_example--yaml"></a>
 
-```
+```yaml
 Resources: APSWorkspace: Type: AWS::APS::Workspace Properties:
                 Alias: TestWorkspace LoggingConfiguration: LogGroupArn:
                 "arn:aws:logs:{region}:{account}:log-group:test-log-group:*" Tags: - Key:

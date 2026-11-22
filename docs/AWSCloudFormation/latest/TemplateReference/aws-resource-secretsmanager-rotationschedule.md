@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-secretsmanager-rotationschedule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SecretsManager::RotationSchedule",
   "Properties" : {
@@ -50,7 +50,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-secretsmanager-rotationschedule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SecretsManager::RotationSchedule
 Properties:
   [ExternalSecretRotationMetadata](#cfn-secretsmanager-rotationschedule-externalsecretrotationmetadata): {{
@@ -160,7 +160,7 @@ The following example rotates a secret every day between 1:00 AM and 3:00 AM UTC
 #### JSON
 <a name="aws-resource-secretsmanager-rotationschedule--examples--Automatic_rotation_with_a_cron_expression--json"></a>
 
-```
+```json
 "MySecretRotationSchedule": {
   "Type": "AWS::SecretsManager::RotationSchedule",
   "DependsOn": "MyRotationLambda",
@@ -178,7 +178,7 @@ The following example rotates a secret every day between 1:00 AM and 3:00 AM UTC
 #### YAML
 <a name="aws-resource-secretsmanager-rotationschedule--examples--Automatic_rotation_with_a_cron_expression--yaml"></a>
 
-```
+```yaml
 MySecretRotationSchedule:
   Type: AWS::SecretsManager::RotationSchedule
   DependsOn: MyRotationLambda
@@ -198,7 +198,7 @@ The following example rotates a secret between midnight and 6:00 AM UTC every 10
 #### JSON
 <a name="aws-resource-secretsmanager-rotationschedule--examples--Automatic_rotation_with_a_rate_expression--json"></a>
 
-```
+```json
 "MySecretRotationSchedule": {
   "Type": "AWS::SecretsManager::RotationSchedule",
   "DependsOn": "MyRotationLambda",
@@ -216,7 +216,7 @@ The following example rotates a secret between midnight and 6:00 AM UTC every 10
 #### YAML
 <a name="aws-resource-secretsmanager-rotationschedule--examples--Automatic_rotation_with_a_rate_expression--yaml"></a>
 
-```
+```yaml
 MySecretRotationSchedule:
   Type: AWS::SecretsManager::RotationSchedule
   DependsOn: MyRotationLambda
@@ -236,7 +236,7 @@ The following example creates a DocumentDB database instance and a secret with c
 #### JSON
 <a name="aws-resource-secretsmanager-rotationschedule--examples--DocumentDB_secret_rotation_example--json"></a>
 
-```
+```json
 {
    "AWSTemplateFormatVersion":"2010-09-09",
    "Transform":"AWS::SecretsManager-2024-09-16",
@@ -433,7 +433,7 @@ The following example creates a DocumentDB database instance and a secret with c
 #### YAML
 <a name="aws-resource-secretsmanager-rotationschedule--examples--DocumentDB_secret_rotation_example--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::SecretsManager-2024-09-16
 Resources:

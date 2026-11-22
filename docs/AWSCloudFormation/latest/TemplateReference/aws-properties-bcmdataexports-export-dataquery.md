@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bcmdataexports-export-dataquery-syntax.json"></a>
 
-```
+```json
 {
   "[QueryStatement](#cfn-bcmdataexports-export-dataquery-querystatement)" : {{String}},
   "[TableConfigurations](#cfn-bcmdataexports-export-dataquery-tableconfigurations)" : {{{{{Key}}: {{Value}}, ...}}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bcmdataexports-export-dataquery-syntax.yaml"></a>
 
-```
+```yaml
   [QueryStatement](#cfn-bcmdataexports-export-dataquery-querystatement): {{String}}
   [TableConfigurations](#cfn-bcmdataexports-export-dataquery-tableconfigurations): {{
     {{Key}}: {{Value}}}}

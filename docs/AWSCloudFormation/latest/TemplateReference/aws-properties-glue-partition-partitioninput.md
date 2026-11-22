@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-partition-partitioninput-syntax.json"></a>
 
-```
+```json
 {
   "[Parameters](#cfn-glue-partition-partitioninput-parameters)" : {{Json}},
   "[StorageDescriptor](#cfn-glue-partition-partitioninput-storagedescriptor)" : {{StorageDescriptor}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-partition-partitioninput-syntax.yaml"></a>
 
-```
+```yaml
   [Parameters](#cfn-glue-partition-partitioninput-parameters): {{Json}}
   [StorageDescriptor](#cfn-glue-partition-partitioninput-storagedescriptor): {{
     StorageDescriptor}}

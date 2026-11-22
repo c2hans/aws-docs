@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-computation-syntax.json"></a>
 
-```
+```json
 {
   "[Forecast](#cfn-quicksight-dashboard-computation-forecast)" : {{ForecastComputation}},
   "[GrowthRate](#cfn-quicksight-dashboard-computation-growthrate)" : {{GrowthRateComputation}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-computation-syntax.yaml"></a>
 
-```
+```yaml
   [Forecast](#cfn-quicksight-dashboard-computation-forecast): {{
     ForecastComputation}}
   [GrowthRate](#cfn-quicksight-dashboard-computation-growthrate): {{

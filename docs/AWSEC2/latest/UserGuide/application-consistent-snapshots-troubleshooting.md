@@ -49,7 +49,7 @@ To see a command line example, select one of the following tabs.
 
 The following example runs the `AWSEC2-CreateVssSnapshot` Systems Manager document in the AWS CLI:
 
-```
+```sh
 aws ssm send-command \
     --document-name "{{AWSEC2-CreateVssSnapshot}}" \
     --instance-ids "{{i-1234567890abcdef0}}" \
@@ -61,7 +61,7 @@ aws ssm send-command \
 
 The following example runs the `AWSEC2-CreateVssSnapshot` Systems Manager document in PowerShell:
 
-```
+```ps
 Send-SSMCommand `
     -DocumentName "{{AWSEC2-CreateVssSnapshot}}" `
     -InstanceId "{{i-1234567890abcdef0}}" `
@@ -112,7 +112,7 @@ You will encounter this error when the PowerShell language mode is not set to `F
 
 To verify the language mode, run the following command on the instance in a PowerShell console:
 
-```
+```PowerShell
 $ExecutionContext.SessionState.LanguageMode
 ```
 

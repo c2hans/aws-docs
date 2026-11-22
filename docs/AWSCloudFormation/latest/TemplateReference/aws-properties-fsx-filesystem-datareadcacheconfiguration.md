@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-filesystem-datareadcacheconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[SizeGiB](#cfn-fsx-filesystem-datareadcacheconfiguration-sizegib)" : {{Integer}},
   "[SizingMode](#cfn-fsx-filesystem-datareadcacheconfiguration-sizingmode)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-filesystem-datareadcacheconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [SizeGiB](#cfn-fsx-filesystem-datareadcacheconfiguration-sizegib): {{Integer}}
   [SizingMode](#cfn-fsx-filesystem-datareadcacheconfiguration-sizingmode): {{String}}
 ```

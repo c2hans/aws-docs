@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-r53-resolver-l
 
 The following example shows a `CREATE TABLE` statement for Resolver query logs that uses partition projection and is partitioned by vpc and by date. For more information about partition projection, see [Use partition projection with Amazon Athena](partition-projection.md).
 
-```
+```sql
 CREATE EXTERNAL TABLE r53_rlogs (
   version string,
   account_id string,

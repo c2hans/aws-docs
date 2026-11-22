@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigateway-domainnameaccessassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGateway::DomainNameAccessAssociation",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigateway-domainnameaccessassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGateway::DomainNameAccessAssociation
 Properties:
   [AccessAssociationSource](#cfn-apigateway-domainnameaccessassociation-accessassociationsource): {{String}}
@@ -107,7 +107,7 @@ The following example creates a `DomainNameAccessAssociation` resource named `My
 #### JSON
 <a name="aws-resource-apigateway-domainnameaccessassociation--examples--Domain_name_access_association_example--json"></a>
 
-```
+```json
 {
     "MyDomainNameAccessAssociation": {
         "Type": "AWS::ApiGateway::DomainNameAccessAssociation",
@@ -128,7 +128,7 @@ The following example creates a `DomainNameAccessAssociation` resource named `My
 #### YAML
 <a name="aws-resource-apigateway-domainnameaccessassociation--examples--Domain_name_access_association_example--yaml"></a>
 
-```
+```yaml
 MyDomainNameAccessAssociation:
   Type: AWS::ApiGateway::DomainNameAccessAssociation
   Properties:

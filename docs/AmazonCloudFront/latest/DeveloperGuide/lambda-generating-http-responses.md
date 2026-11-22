@@ -58,7 +58,7 @@ This section describes the programming model for using Lambda@Edge to generate H
 
 The response you return as the `result` parameter of the `callback` method should have the following structure (note that only the `status` field is required).
 
-```
+```javascript
 const response = {
     body: 'content',
     bodyEncoding: 'text' | 'base64',

@@ -67,7 +67,7 @@ You can view S3 Files metrics using the CloudWatch console, the AWS CLI, or the 
 
 Use the `get-metric-statistics` command. For example, to view `DataReadBytes`:
 
-```
+```bash
 aws cloudwatch get-metric-statistics \
   --namespace AWS/S3/Files \
   --metric-name DataReadBytes \

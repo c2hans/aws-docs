@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-user-userphoneconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AfterContactWorkTimeLimit](#cfn-connect-user-userphoneconfig-aftercontactworktimelimit)" : {{Integer}},
   "[AutoAccept](#cfn-connect-user-userphoneconfig-autoaccept)" : {{Boolean}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-user-userphoneconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AfterContactWorkTimeLimit](#cfn-connect-user-userphoneconfig-aftercontactworktimelimit): {{Integer}}
   [AutoAccept](#cfn-connect-user-userphoneconfig-autoaccept): {{Boolean}}
   [DeskPhoneNumber](#cfn-connect-user-userphoneconfig-deskphonenumber): {{String}}

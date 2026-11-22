@@ -17,24 +17,24 @@ If you're using the direct PTP connection to the PTP hardware clock, your time d
 1. First get the correct location of the PTP hardware clock device by using one of the following commands. The path in the command is different depending on the AMI used to launch the instance.
    + For Amazon Linux 2:
 
-     ```
+     ```bash
      cat /sys/class/net/eth0/device/uevent | grep PCI_SLOT_NAME
      ```
    + For Amazon Linux 2023:
 
-     ```
+     ```bash
      cat /sys/class/net/ens5/device/uevent | grep PCI_SLOT_NAME
      ```
 
    The output is the PCI slot name, which is the location of the PTP hardware clock device. In this example, the location is `0000:00:03.0`.
 
-   ```
+   ```bash
    PCI_SLOT_NAME={{0000:00:03.0}}
    ```
 
 1. To retrieve the PTP hardware clock error bound, run the following command. Include the PCI slot name from the previous step.
 
-   ```
+   ```bash
    cat /sys/bus/pci/devices/{{0000:00:03.0}}/phc_error_bound
    ```
 

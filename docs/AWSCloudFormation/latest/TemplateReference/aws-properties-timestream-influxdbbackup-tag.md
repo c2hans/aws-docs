@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-timestream-influxdbbackup-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-timestream-influxdbbackup-tag-key)" : {{String}},
   "[Value](#cfn-timestream-influxdbbackup-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-timestream-influxdbbackup-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-timestream-influxdbbackup-tag-key): {{String}}
   [Value](#cfn-timestream-influxdbbackup-tag-value): {{String}}
 ```

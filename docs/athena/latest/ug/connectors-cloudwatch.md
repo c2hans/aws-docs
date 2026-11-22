@@ -69,7 +69,7 @@ Every table mapped by the Athena CloudWatch connector has the following schema. 
 **Examples**
 The following example shows how to perform a `SELECT` query on a specified LogStream.
 
-```
+```sql
 SELECT *
 FROM "lambda:{{cloudwatch_connector_lambda_name}}"."{{log_group_path}}"."{{log_stream_name}}"
 LIMIT 100
@@ -77,7 +77,7 @@ LIMIT 100
 
 The following example shows how to use the `all_log_streams` view to perform a query on all LogStreams in a specified LogGroup.
 
-```
+```sql
 SELECT *
 FROM "lambda:{{cloudwatch_connector_lambda_name}}"."{{log_group_path}}"."all_log_streams"
 LIMIT 100
@@ -108,7 +108,7 @@ The CloudWatch connector supports [passthrough queries](federated-query-passthro
 
 To create passthrough queries with CloudWatch, use the following syntax:
 
-```
+```sql
 SELECT * FROM TABLE(
         system.query(
             STARTTIME => '{{start_time}}',
@@ -121,7 +121,7 @@ SELECT * FROM TABLE(
 
 The following example CloudWatch passthrough query filters for the `duration` field when it does not equal 1000.
 
-```
+```sql
 SELECT * FROM TABLE(
         system.query(
             STARTTIME => '1710918615308',

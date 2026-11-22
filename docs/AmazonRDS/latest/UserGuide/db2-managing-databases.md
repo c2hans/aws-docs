@@ -205,7 +205,7 @@ By default, Amazon RDS activates a database when you create a database on your R
 
 1. Deactivate a database by calling `rdsadmin.deactivate_database`. For more information, see [rdsadmin.deactivate\_database](db2-sp-managing-databases.md#db2-sp-deactivate-database).
 
-   ```
+   ```sql
    db2 "call rdsadmin.deactivate_database(
        ?,
        '{{database_name}}')"
@@ -228,7 +228,7 @@ By default, Amazon RDS activates a database when you create a database on your R
 
 1. Activate a database by calling `rdsadmin.activate_database`. For more information, see [rdsadmin.activate\_database](db2-sp-managing-databases.md#db2-sp-activate-database).
 
-   ```
+   ```sql
    db2 "call rdsadmin.activate_database(
        ?,
        '{{database_name}}')"
@@ -251,7 +251,7 @@ You can also call this stored procedure to reactivate a database on a standalone
 
 1. Reactivate a database by calling `rdsadmin.reactivate_database`. For more information, see [rdsadmin.reactivate\_database](db2-sp-managing-databases.md#db2-sp-reactivate-database).
 
-   ```
+   ```sql
    db2 "call rdsadmin.reactivate_database(
        ?,
        '{{database_name}}')"
@@ -275,7 +275,7 @@ You can drop a database by calling the stored procedure only if certain conditio
 
 1. Drop a database by calling `rdsadmin.drop_database`. For more information, see [rdsadmin.drop\_database](db2-sp-managing-databases.md#db2-sp-drop-database).
 
-   ```
+   ```sql
    db2 "call rdsadmin.drop_database('{{database_name}}')"
    ```
 
@@ -294,13 +294,13 @@ Before you begin, do the following:
 
 1. Connect to the `rdsadmin` database with your master username and master password. In the following command, replace `{{master_username}}` and `{{master_password}}` with your own values.
 
-   ```
+   ```sql
    db2 "connect to rdsadmin user {{master_username}} using {{master_password}}"
    ```
 
 1. In the `rdsadmin` session, rename the database by calling `rdsadmin.rename_database`. In the following command, replace `{{current_database_name}}` and `{{new_database_name}}` with your own values.
 
-   ```
+   ```sql
    db2 "call rdsadmin.rename_database(?, '{{current_database_name}}', '{{new_database_name}}')"
    ```
 
@@ -334,7 +334,7 @@ This stored procedure uses the integration with Amazon S3. Make sure that you ha
 
 1. Back up a database by calling `rdsadmin.backup_database`. For more information, see [rdsadmin.backup\_database](db2-sp-managing-databases.md#db2-sp-backup-database).
 
-   ```
+   ```sql
    db2 "call rdsadmin.backup_database(
        ?,
        '{{database_name}}',

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-waitandcontinuespecification-syntax.json"></a>
 
-```
+```json
 {
   "[ContinueResponse](#cfn-lex-bot-waitandcontinuespecification-continueresponse)" : {{ResponseSpecification}},
   "[IsActive](#cfn-lex-bot-waitandcontinuespecification-isactive)" : {{Boolean}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-waitandcontinuespecification-syntax.yaml"></a>
 
-```
+```yaml
   [ContinueResponse](#cfn-lex-bot-waitandcontinuespecification-continueresponse): {{
     ResponseSpecification}}
   [IsActive](#cfn-lex-bot-waitandcontinuespecification-isactive): {{Boolean}}

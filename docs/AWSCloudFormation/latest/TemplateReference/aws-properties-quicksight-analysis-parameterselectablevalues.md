@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-parameterselectablevalues-syntax.json"></a>
 
-```
+```json
 {
   "[LinkToDataSetColumn](#cfn-quicksight-analysis-parameterselectablevalues-linktodatasetcolumn)" : {{ColumnIdentifier}},
   "[Values](#cfn-quicksight-analysis-parameterselectablevalues-values)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-parameterselectablevalues-syntax.yaml"></a>
 
-```
+```yaml
   [LinkToDataSetColumn](#cfn-quicksight-analysis-parameterselectablevalues-linktodatasetcolumn): {{
     ColumnIdentifier}}
   [Values](#cfn-quicksight-analysis-parameterselectablevalues-values): {{

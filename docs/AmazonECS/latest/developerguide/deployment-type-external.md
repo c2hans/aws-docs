@@ -68,7 +68,7 @@ The placement strategy objects to use for tasks in your service. You can specify
 
    The following is an example service definition for creating a service using an external deployment controller.
 
-   ```
+   ```JSON
    {
        "cluster": "",
        "serviceName": "",
@@ -126,7 +126,7 @@ Platform versions are not specified for tasks using the EC2 launch type.
 A load balancer object representing the load balancer to use with your service. When using an external deployment controller, only Application Load Balancers and Network Load Balancers are supported. If you're using an Application Load Balancer, only one Application Load Balancer target group is allowed per task set.
 The following snippet shows an example `loadBalancer` object to use.
 
-   ```
+   ```JSON
    "loadBalancers": [
            {
                "targetGroupArn": "",
@@ -145,7 +145,7 @@ A floating-point percentage of the desired number of tasks to place and keep run
 
    The following is a JSON example for creating a task set for an external deployment controller.
 
-   ```
+   ```JSON
    {
        "service": "",
        "cluster": "",

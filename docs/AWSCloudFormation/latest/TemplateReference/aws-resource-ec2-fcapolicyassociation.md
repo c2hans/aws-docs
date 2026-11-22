@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-fcapolicyassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::FcaPolicyAssociation",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-fcapolicyassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::FcaPolicyAssociation
 Properties:
   [FcaPolicyId](#cfn-ec2-fcapolicyassociation-fcapolicyid): {{String}}
@@ -111,7 +111,7 @@ The following example associates an FCA policy with a NAT gateway.
 #### YAML
 <a name="aws-resource-ec2-fcapolicyassociation--examples--Associate_an_FCA_policy_with_a_NAT_gateway--yaml"></a>
 
-```
+```yaml
 MyFcaPolicyAssociation:
   Type: AWS::EC2::FcaPolicyAssociation
   Properties:
@@ -122,7 +122,7 @@ MyFcaPolicyAssociation:
 #### JSON
 <a name="aws-resource-ec2-fcapolicyassociation--examples--Associate_an_FCA_policy_with_a_NAT_gateway--json"></a>
 
-```
+```json
 {
     "MyFcaPolicyAssociation": {
         "Type": "AWS::EC2::FcaPolicyAssociation",

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-gatewayroutetableassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::GatewayRouteTableAssociation",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-gatewayroutetableassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::GatewayRouteTableAssociation
 Properties:
   [GatewayId](#cfn-ec2-gatewayroutetableassociation-gatewayid): {{String}}

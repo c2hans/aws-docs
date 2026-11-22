@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-transitgatewayattachmentnatconfiguration-natrule-syntax.json"></a>
 
-```
+```json
 {
   "[MatchSourceCidr](#cfn-ec2-transitgatewayattachmentnatconfiguration-natrule-matchsourcecidr)" : {{String}},
   "[NatCidr](#cfn-ec2-transitgatewayattachmentnatconfiguration-natrule-natcidr)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-transitgatewayattachmentnatconfiguration-natrule-syntax.yaml"></a>
 
-```
+```yaml
   [MatchSourceCidr](#cfn-ec2-transitgatewayattachmentnatconfiguration-natrule-matchsourcecidr): {{String}}
   [NatCidr](#cfn-ec2-transitgatewayattachmentnatconfiguration-natrule-natcidr): {{String}}
   [RuleNumber](#cfn-ec2-transitgatewayattachmentnatconfiguration-natrule-rulenumber): {{Integer}}

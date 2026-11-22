@@ -101,7 +101,7 @@ To detach and attach an instance, use the following example commands. Replace ea
 
    Take note of the ID of the instance that you intend to remove from the group. You need this ID in the next step.
 
-   ```
+   ```json
    {
        "AutoScalingInstances": [
            {
@@ -196,7 +196,7 @@ You can now attach the instance to a different Auto Scaling group.
 
    The following example response shows that the group has two running instances, one of which is the instance you attached.
 
-   ```
+   ```json
    {
        "AutoScalingGroups": [
            {

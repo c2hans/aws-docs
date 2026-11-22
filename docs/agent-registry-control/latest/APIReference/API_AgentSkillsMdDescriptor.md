@@ -22,7 +22,7 @@ Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: No
 
  ** source **   <a name="agentregistrycontrol-Type-AgentSkillsMdDescriptor-source"></a>
-The optional source configuration used to synchronize the agent skills markdown content.
+The optional source of the skill's SKILL.md only. The registry synchronizes the SKILL.md from this source into `data`. Specify an `s3://` URL of a SKILL.md object, or a GitHub folder URL together with `repositoryProvider` set to `GITHUB`. The registry rejects a new `https://` URL without `repositoryProvider`, and you can't set both this source and `skillPackage.source`.
 Type: [DescriptorSource](API_DescriptorSource.md) object
 Required: No
 

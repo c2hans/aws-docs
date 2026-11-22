@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mpa-approvalteam-policy-syntax.json"></a>
 
-```
+```json
 {
   "[PolicyArn](#cfn-mpa-approvalteam-policy-policyarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mpa-approvalteam-policy-syntax.yaml"></a>
 
-```
+```yaml
   [PolicyArn](#cfn-mpa-approvalteam-policy-policyarn): {{String}}
 ```
 

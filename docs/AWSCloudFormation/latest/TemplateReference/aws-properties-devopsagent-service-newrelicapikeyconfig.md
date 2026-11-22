@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-service-newrelicapikeyconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AccountId](#cfn-devopsagent-service-newrelicapikeyconfig-accountid)" : {{String}},
   "[AlertPolicyIds](#cfn-devopsagent-service-newrelicapikeyconfig-alertpolicyids)" : {{[ String, ... ]}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-service-newrelicapikeyconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AccountId](#cfn-devopsagent-service-newrelicapikeyconfig-accountid): {{String}}
   [AlertPolicyIds](#cfn-devopsagent-service-newrelicapikeyconfig-alertpolicyids): {{
     - String}}

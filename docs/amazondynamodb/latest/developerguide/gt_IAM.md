@@ -37,7 +37,7 @@ The following IAM policy grants permissions to allow the `CreateGlobalTable` act
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -64,7 +64,7 @@ The following IAM policy grants permissions to allow the `UpdateGlobalTableSetti
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -94,7 +94,7 @@ The following IAM policy grants permissions to allow the `CreateGlobalTable` act
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

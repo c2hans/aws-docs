@@ -47,7 +47,7 @@ Specify credentials, Region, a log group name, and a log stream namespace. This 
 
 1. In the JSON file, locate the `CloudWatchLogs` section.
 
-   ```
+   ```json
    {
        "Id": "CloudWatchLogs",
        "FullName": "AWS.EC2.Windows.CloudWatch.CloudWatchLogsOutput,AWS.EC2.Windows.CloudWatch",
@@ -82,7 +82,7 @@ You can send event log data, Event Tracing for Windows (ETW) data, and other log
 
 1. In the JSON file, locate the `ApplicationEventLog` section.
 
-   ```
+   ```json
    {
        "Id": "ApplicationEventLog",
        "FullName": "AWS.EC2.Windows.CloudWatch.EventLog.EventLogInputComponent,AWS.EC2.Windows.CloudWatch",
@@ -104,7 +104,7 @@ You can send event log data, Event Tracing for Windows (ETW) data, and other log
 
 1. In the JSON file, locate the `SecurityEventLog` section.
 
-   ```
+   ```json
    {
        "Id": "SecurityEventLog",
        "FullName": "AWS.EC2.Windows.CloudWatch.EventLog.EventLogInputComponent,AWS.EC2.Windows.CloudWatch",
@@ -121,7 +121,7 @@ You can send event log data, Event Tracing for Windows (ETW) data, and other log
 
 1. In the JSON file, locate the `SystemEventLog` section.
 
-   ```
+   ```json
    {
        "Id": "SystemEventLog",
        "FullName": "AWS.EC2.Windows.CloudWatch.EventLog.EventLogInputComponent,AWS.EC2.Windows.CloudWatch",
@@ -143,7 +143,7 @@ You can send event log data, Event Tracing for Windows (ETW) data, and other log
 
 1. In the JSON file, add a new section. Each section must have a unique `Id`.
 
-   ```
+   ```json
    {
        "Id": "{{Id-name}}",
        "FullName": "AWS.EC2.Windows.CloudWatch.EventLog.EventLogInputComponent,AWS.EC2.Windows.CloudWatch",
@@ -177,7 +177,7 @@ ETW (Event Tracing for Windows) provides an efficient and detailed logging mecha
 
 1. In the JSON file, locate the `ETW` section.
 
-   ```
+   ```json
    {
        "Id": "ETW",
        "FullName": "AWS.EC2.Windows.CloudWatch.EventLog.EventLogInputComponent,AWS.EC2.Windows.CloudWatch",
@@ -201,7 +201,7 @@ ETW (Event Tracing for Windows) provides an efficient and detailed logging mecha
 
 1. In the JSON file, locate the `CustomLogs` section.
 
-   ```
+   ```json
    {
        "Id": "CustomLogs",
        "FullName": "AWS.EC2.Windows.CloudWatch.CustomLog.CustomLogInputComponent,AWS.EC2.Windows.CloudWatch",
@@ -241,7 +241,7 @@ The `div`, `div-MV`, `hu`, and `hu-HU` values are not supported.
 
 1. In the JSON file, locate the `IISLog` section.
 
-   ```
+   ```json
    {
        "Id": "IISLogs",
        "FullName": "AWS.EC2.Windows.CloudWatch.CustomLog.CustomLogInputComponent,AWS.EC2.Windows.CloudWatch",
@@ -291,7 +291,7 @@ You can send the same log file to more than one destination. For example, to sen
 
 1. In the `AWS.EC2.Windows.CloudWatch.json` file, locate the `Flows` section.
 
-   ```
+   ```json
    "Flows": {
        "Flows": [
          "PerformanceCounter,CloudWatch",

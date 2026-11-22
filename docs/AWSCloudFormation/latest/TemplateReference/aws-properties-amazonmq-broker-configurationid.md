@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amazonmq-broker-configurationid-syntax.json"></a>
 
-```
+```json
 {
   "[Id](#cfn-amazonmq-broker-configurationid-id)" : {{String}},
   "[Revision](#cfn-amazonmq-broker-configurationid-revision)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amazonmq-broker-configurationid-syntax.yaml"></a>
 
-```
+```yaml
   [Id](#cfn-amazonmq-broker-configurationid-id): {{String}}
   [Revision](#cfn-amazonmq-broker-configurationid-revision): {{Integer}}
 ```

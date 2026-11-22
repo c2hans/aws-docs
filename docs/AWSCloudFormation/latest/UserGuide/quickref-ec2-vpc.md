@@ -20,7 +20,7 @@ For more information about egress-only internet gateways, see [Enable outbound I
 ### JSON
 <a name="quickref-ec2-example-16.json"></a>
 
-```
+```json
 "DefaultIpv6Route": {
     "Type": "AWS::EC2::Route",
     "Properties": {
@@ -60,7 +60,7 @@ For more information about egress-only internet gateways, see [Enable outbound I
 ### YAML
 <a name="quickref-ec2-example-16.yaml"></a>
 
-```
+```yaml
 DefaultIpv6Route:
   Type: AWS::EC2::Route
   Properties:
@@ -102,7 +102,7 @@ For more information about elastic network interfaces, see [Elastic network inte
 #### JSON
 <a name="cfn-template-snippets-eni-example-1.json"></a>
 
-```
+```json
 "Resources": {
     "ControlPortAddress": {
         "Type": "AWS::EC2::EIP",
@@ -285,7 +285,7 @@ For more information about elastic network interfaces, see [Elastic network inte
 #### YAML
 <a name="cfn-template-snippets-eni-example.yaml"></a>
 
-```
+```yaml
 Resources:
   ControlPortAddress:
     Type: AWS::EC2::EIP

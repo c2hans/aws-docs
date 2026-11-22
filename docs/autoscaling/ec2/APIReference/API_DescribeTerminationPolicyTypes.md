@@ -50,7 +50,7 @@ https://autoscaling.amazonaws.com/?Action=DescribeTerminationPolicyTypes
 #### Sample Response
 <a name="API_DescribeTerminationPolicyTypes_Example_1_Response"></a>
 
-```
+```xml
 <DescribeTerminationPolicyTypesResponse xmlns="https://autoscaling.amazonaws.com/doc/2011-01-01/">
   <DescribeTerminationPolicyTypesResult>
     <TerminationPolicyTypes>

@@ -96,7 +96,7 @@ https://autoscaling.amazonaws.com/?Action=DescribeTrafficSources
 #### Sample Response
 <a name="API_DescribeTrafficSources_Example_1_Response"></a>
 
-```
+```xml
 <DescribeTrafficSourcesResponse xmlns="https://autoscaling.amazonaws.com/doc/2011-01-01/">
   <DescribeTrafficSourcesResult>
     <TrafficSources>

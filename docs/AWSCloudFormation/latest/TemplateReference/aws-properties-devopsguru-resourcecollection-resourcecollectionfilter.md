@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsguru-resourcecollection-resourcecollectionfilter-syntax.json"></a>
 
-```
+```json
 {
   "[CloudFormation](#cfn-devopsguru-resourcecollection-resourcecollectionfilter-cloudformation)" : {{CloudFormationCollectionFilter}},
   "[Tags](#cfn-devopsguru-resourcecollection-resourcecollectionfilter-tags)" : {{[ TagCollection, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsguru-resourcecollection-resourcecollectionfilter-syntax.yaml"></a>
 
-```
+```yaml
   [CloudFormation](#cfn-devopsguru-resourcecollection-resourcecollectionfilter-cloudformation): {{
     CloudFormationCollectionFilter}}
   [Tags](#cfn-devopsguru-resourcecollection-resourcecollectionfilter-tags): {{

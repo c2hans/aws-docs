@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-auditmanager-assessmentframework-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AuditManager::AssessmentFramework",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-auditmanager-assessmentframework-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AuditManager::AssessmentFramework
 Properties:
   [ComplianceType](#cfn-auditmanager-assessmentframework-compliancetype): {{String}}

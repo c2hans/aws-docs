@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-databrew-recipe-conditionexpression-syntax.json"></a>
 
-```
+```json
 {
   "[Condition](#cfn-databrew-recipe-conditionexpression-condition)" : {{String}},
   "[TargetColumn](#cfn-databrew-recipe-conditionexpression-targetcolumn)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-databrew-recipe-conditionexpression-syntax.yaml"></a>
 
-```
+```yaml
   [Condition](#cfn-databrew-recipe-conditionexpression-condition): {{String}}
   [TargetColumn](#cfn-databrew-recipe-conditionexpression-targetcolumn): {{String}}
   [Value](#cfn-databrew-recipe-conditionexpression-value): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distributiontenant-customizations-syntax.json"></a>
 
-```
+```json
 {
   "[Certificate](#cfn-cloudfront-distributiontenant-customizations-certificate)" : {{Certificate}},
   "[GeoRestrictions](#cfn-cloudfront-distributiontenant-customizations-georestrictions)" : {{GeoRestrictionCustomization}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distributiontenant-customizations-syntax.yaml"></a>
 
-```
+```yaml
   [Certificate](#cfn-cloudfront-distributiontenant-customizations-certificate): {{
     Certificate}}
   [GeoRestrictions](#cfn-cloudfront-distributiontenant-customizations-georestrictions): {{

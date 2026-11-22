@@ -33,7 +33,7 @@ aws s3control get-access-point --account-id {{123456789012}} --name arn:aws:s3-o
 
 The following SDK for Java example gets an access point for an Outposts bucket.
 
-```
+```Java
 import com.amazonaws.services.s3control.model.*;
 
 public void getAccessPoint(String accessPointArn) {

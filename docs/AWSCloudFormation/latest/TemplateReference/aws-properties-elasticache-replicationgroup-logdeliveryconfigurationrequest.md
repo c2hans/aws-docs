@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticache-replicationgroup-logdeliveryconfigurationrequest-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationDetails](#cfn-elasticache-replicationgroup-logdeliveryconfigurationrequest-destinationdetails)" : {{DestinationDetails}},
   "[DestinationType](#cfn-elasticache-replicationgroup-logdeliveryconfigurationrequest-destinationtype)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticache-replicationgroup-logdeliveryconfigurationrequest-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationDetails](#cfn-elasticache-replicationgroup-logdeliveryconfigurationrequest-destinationdetails): {{
     DestinationDetails}}
   [DestinationType](#cfn-elasticache-replicationgroup-logdeliveryconfigurationrequest-destinationtype): {{String}}

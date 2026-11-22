@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-ebuttddestinationsettings-syntax.json"></a>
 
-```
+```json
 {
   "[CopyrightHolder](#cfn-medialive-channel-ebuttddestinationsettings-copyrightholder)" : {{String}},
   "[DefaultFontSize](#cfn-medialive-channel-ebuttddestinationsettings-defaultfontsize)" : {{Integer}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-ebuttddestinationsettings-syntax.yaml"></a>
 
-```
+```yaml
   [CopyrightHolder](#cfn-medialive-channel-ebuttddestinationsettings-copyrightholder): {{String}}
   [DefaultFontSize](#cfn-medialive-channel-ebuttddestinationsettings-defaultfontsize): {{Integer}}
   [DefaultLineHeight](#cfn-medialive-channel-ebuttddestinationsettings-defaultlineheight): {{Integer}}

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/ResourceGover
 
 Resource Governor statistics are cumulative since the last server restart. If you need to collect statistics starting from a certain time, you can reset statistics using the following Amazon RDS stored procedure:
 
-```
+```sql
 EXEC msdb.dbo.rds_alter_resource_governor_configuration
 @reset_statistics = 1;
 ```
@@ -18,7 +18,7 @@ For each resource pool, resource governor tracks CPU and memory utilization, out
 
 The following query returns a subset of available statistics for all resource pools:
 
-```
+```sql
 SELECT rp.pool_id,
        rp.name AS resource_pool_name,
        wg.workload_group_count,

@@ -325,7 +325,7 @@ The `-y` option installs the updates without asking for confirmation. To examine
 
    For example, the following SQL command shows the current date:
 
-   ```
+   ```sql
    SELECT SYSDATE FROM DUAL;
    ```
 

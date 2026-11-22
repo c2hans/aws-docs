@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eventsv2-eventbus-encryptionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[KmsKeyIdentifier](#cfn-eventsv2-eventbus-encryptionconfiguration-kmskeyidentifier)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eventsv2-eventbus-encryptionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [KmsKeyIdentifier](#cfn-eventsv2-eventbus-encryptionconfiguration-kmskeyidentifier): {{String}}
 ```
 

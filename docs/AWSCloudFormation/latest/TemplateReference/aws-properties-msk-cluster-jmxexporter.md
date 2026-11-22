@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-cluster-jmxexporter-syntax.json"></a>
 
-```
+```json
 {
   "[EnabledInBroker](#cfn-msk-cluster-jmxexporter-enabledinbroker)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-cluster-jmxexporter-syntax.yaml"></a>
 
-```
+```yaml
   [EnabledInBroker](#cfn-msk-cluster-jmxexporter-enabledinbroker): {{Boolean}}
 ```
 

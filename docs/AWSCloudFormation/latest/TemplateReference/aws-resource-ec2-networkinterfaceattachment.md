@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-networkinterfaceattachment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::NetworkInterfaceAttachment",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-networkinterfaceattachment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::NetworkInterfaceAttachment
 Properties:
   [DeleteOnTermination](#cfn-ec2-networkinterfaceattachment-deleteontermination): {{Boolean}}
@@ -118,7 +118,7 @@ The following example attaches `MyNetworkInterface` to `MyInstance`.
 #### JSON
 <a name="aws-resource-ec2-networkinterfaceattachment--examples--Network_interface_attachment--json"></a>
 
-```
+```json
 "NetworkInterfaceAttachment" : {
    "Type" : "AWS::EC2::NetworkInterfaceAttachment",
       "Properties" : {
@@ -132,7 +132,7 @@ The following example attaches `MyNetworkInterface` to `MyInstance`.
 #### YAML
 <a name="aws-resource-ec2-networkinterfaceattachment--examples--Network_interface_attachment--yaml"></a>
 
-```
+```yaml
 NetworkInterfaceAttachment:
    Type: AWS::EC2::NetworkInterfaceAttachment
    Properties:

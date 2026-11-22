@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emr-instancefleetconfig-instancetypeconfig-syntax.json"></a>
 
-```
+```json
 {
   "[BidPrice](#cfn-emr-instancefleetconfig-instancetypeconfig-bidprice)" : {{String}},
   "[BidPriceAsPercentageOfOnDemandPrice](#cfn-emr-instancefleetconfig-instancetypeconfig-bidpriceaspercentageofondemandprice)" : {{Number}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emr-instancefleetconfig-instancetypeconfig-syntax.yaml"></a>
 
-```
+```yaml
   [BidPrice](#cfn-emr-instancefleetconfig-instancetypeconfig-bidprice): {{String}}
   [BidPriceAsPercentageOfOnDemandPrice](#cfn-emr-instancefleetconfig-instancetypeconfig-bidpriceaspercentageofondemandprice): {{Number}}
   [Configurations](#cfn-emr-instancefleetconfig-instancetypeconfig-configurations): {{

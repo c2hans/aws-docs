@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-guardrail-guardrailcrossregionconfig-syntax.json"></a>
 
-```
+```json
 {
   "[GuardrailProfileArn](#cfn-bedrock-guardrail-guardrailcrossregionconfig-guardrailprofilearn)" : {{String}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-guardrail-guardrailcrossregionconfig-syntax.yaml"></a>
 
-```
+```yaml
   [GuardrailProfileArn](#cfn-bedrock-guardrail-guardrailcrossregionconfig-guardrailprofilearn): {{String}}
 ```
 

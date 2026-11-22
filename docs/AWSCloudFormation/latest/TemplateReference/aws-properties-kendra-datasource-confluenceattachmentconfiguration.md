@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-confluenceattachmentconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AttachmentFieldMappings](#cfn-kendra-datasource-confluenceattachmentconfiguration-attachmentfieldmappings)" : {{[ ConfluenceAttachmentToIndexFieldMapping, ... ]}},
   "[CrawlAttachments](#cfn-kendra-datasource-confluenceattachmentconfiguration-crawlattachments)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-confluenceattachmentconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AttachmentFieldMappings](#cfn-kendra-datasource-confluenceattachmentconfiguration-attachmentfieldmappings): {{
     - ConfluenceAttachmentToIndexFieldMapping}}
   [CrawlAttachments](#cfn-kendra-datasource-confluenceattachmentconfiguration-crawlattachments): {{Boolean}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-route53resolver-firewallrulegroup-partnerthreatprotectionconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Partner](#cfn-route53resolver-firewallrulegroup-partnerthreatprotectionconfig-partner)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-route53resolver-firewallrulegroup-partnerthreatprotectionconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Partner](#cfn-route53resolver-firewallrulegroup-partnerthreatprotectionconfig-partner): {{String}}
 ```
 

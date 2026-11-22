@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-program-segmentationdescriptor-syntax.json"></a>
 
-```
+```json
 {
   "[SegmentationEventId](#cfn-mediatailor-program-segmentationdescriptor-segmentationeventid)" : {{Integer}},
   "[SegmentationTypeId](#cfn-mediatailor-program-segmentationdescriptor-segmentationtypeid)" : {{Integer}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-program-segmentationdescriptor-syntax.yaml"></a>
 
-```
+```yaml
   [SegmentationEventId](#cfn-mediatailor-program-segmentationdescriptor-segmentationeventid): {{Integer}}
   [SegmentationTypeId](#cfn-mediatailor-program-segmentationdescriptor-segmentationtypeid): {{Integer}}
   [SegmentationUpid](#cfn-mediatailor-program-segmentationdescriptor-segmentationupid): {{String}}

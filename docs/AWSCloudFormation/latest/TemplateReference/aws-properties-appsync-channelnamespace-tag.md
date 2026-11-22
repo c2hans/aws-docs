@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appsync-channelnamespace-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-appsync-channelnamespace-tag-key)" : {{String}},
   "[Value](#cfn-appsync-channelnamespace-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appsync-channelnamespace-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-appsync-channelnamespace-tag-key): {{String}}
   [Value](#cfn-appsync-channelnamespace-tag-value): {{String}}
 ```

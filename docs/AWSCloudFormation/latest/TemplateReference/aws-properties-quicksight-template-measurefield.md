@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-measurefield-syntax.json"></a>
 
-```
+```json
 {
   "[CalculatedMeasureField](#cfn-quicksight-template-measurefield-calculatedmeasurefield)" : {{CalculatedMeasureField}},
   "[CategoricalMeasureField](#cfn-quicksight-template-measurefield-categoricalmeasurefield)" : {{CategoricalMeasureField}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-measurefield-syntax.yaml"></a>
 
-```
+```yaml
   [CalculatedMeasureField](#cfn-quicksight-template-measurefield-calculatedmeasurefield): {{
     CalculatedMeasureField}}
   [CategoricalMeasureField](#cfn-quicksight-template-measurefield-categoricalmeasurefield): {{

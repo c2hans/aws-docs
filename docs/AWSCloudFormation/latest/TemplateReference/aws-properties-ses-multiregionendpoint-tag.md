@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-multiregionendpoint-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-ses-multiregionendpoint-tag-key)" : {{String}},
   "[Value](#cfn-ses-multiregionendpoint-tag-value)" : {{String}}
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-multiregionendpoint-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-ses-multiregionendpoint-tag-key): {{String}}
   [Value](#cfn-ses-multiregionendpoint-tag-value): {{String}}
 ```

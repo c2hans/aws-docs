@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distribution-definition-syntax.json"></a>
 
-```
+```json
 {
   "[StringSchema](#cfn-cloudfront-distribution-definition-stringschema)" : {{StringSchema}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distribution-definition-syntax.yaml"></a>
 
-```
+```yaml
   [StringSchema](#cfn-cloudfront-distribution-definition-stringschema): {{
     StringSchema}}
 ```

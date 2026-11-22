@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-numericrangefilter-syntax.json"></a>
 
-```
+```json
 {
   "[AggregationFunction](#cfn-quicksight-template-numericrangefilter-aggregationfunction)" : {{AggregationFunction}},
   "[Column](#cfn-quicksight-template-numericrangefilter-column)" : {{ColumnIdentifier}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-numericrangefilter-syntax.yaml"></a>
 
-```
+```yaml
   [AggregationFunction](#cfn-quicksight-template-numericrangefilter-aggregationfunction): {{
     AggregationFunction}}
   [Column](#cfn-quicksight-template-numericrangefilter-column): {{

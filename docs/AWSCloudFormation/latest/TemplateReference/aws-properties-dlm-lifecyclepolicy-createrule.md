@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dlm-lifecyclepolicy-createrule-syntax.json"></a>
 
-```
+```json
 {
   "[CronExpression](#cfn-dlm-lifecyclepolicy-createrule-cronexpression)" : {{String}},
   "[Interval](#cfn-dlm-lifecyclepolicy-createrule-interval)" : {{Integer}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dlm-lifecyclepolicy-createrule-syntax.yaml"></a>
 
-```
+```yaml
   [CronExpression](#cfn-dlm-lifecyclepolicy-createrule-cronexpression): {{String}}
   [Interval](#cfn-dlm-lifecyclepolicy-createrule-interval): {{Integer}}
   [IntervalUnit](#cfn-dlm-lifecyclepolicy-createrule-intervalunit): {{String}}

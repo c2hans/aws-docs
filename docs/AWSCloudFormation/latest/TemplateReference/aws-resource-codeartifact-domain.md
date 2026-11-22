@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-codeartifact-domain-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CodeArtifact::Domain",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-codeartifact-domain-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CodeArtifact::Domain
 Properties:
   [DomainName](#cfn-codeartifact-domain-domainname): {{String}}
@@ -126,7 +126,7 @@ The following example creates a CodeArtifact domain named *my-domain*.
 #### YAML
 <a name="aws-resource-codeartifact-domain--examples--Create_a_domain--yaml"></a>
 
-```
+```yaml
 Resources:
   MyCodeArtifactDomain:
     Type: 'AWS::CodeArtifact::Domain'
@@ -137,7 +137,7 @@ Resources:
 #### JSON
 <a name="aws-resource-codeartifact-domain--examples--Create_a_domain--json"></a>
 
-```
+```json
 {
   "Resources": {
     "MyCodeArtifactDomain": {
@@ -158,7 +158,7 @@ The following example creates a CodeArtifact domain named *my-domain* with an AW
 #### YAML
 <a name="aws-resource-codeartifact-domain--examples--Create_a_domain_with_an_encryption_key_and_IAM_resource-based_policy--yaml"></a>
 
-```
+```yaml
 Resources:
   MyCodeArtifactDomain:
     Type: 'AWS::CodeArtifact::Domain'
@@ -188,7 +188,7 @@ Resources:
 #### JSON
 <a name="aws-resource-codeartifact-domain--examples--Create_a_domain_with_an_encryption_key_and_IAM_resource-based_policy--json"></a>
 
-```
+```json
 {
   "Resources": {
     "MyCodeArtifactDomain": {
@@ -234,7 +234,7 @@ The following example creates a CodeArtifact domain named *my-domain* with two t
 #### YAML
 <a name="aws-resource-codeartifact-domain--examples--Create_a_domain_with_tags--yaml"></a>
 
-```
+```yaml
 Resources:
   MyCodeArtifactDomain:
     Type: 'AWS::CodeArtifact::Domain'
@@ -250,7 +250,7 @@ Resources:
 #### JSON
 <a name="aws-resource-codeartifact-domain--examples--Create_a_domain_with_tags--json"></a>
 
-```
+```json
 {
   "Resources": {
     "MyCodeArtifactDomain": {

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspaces-directory-workspaceaccessproperties-syntax.json"></a>
 
-```
+```json
 {
   "[AccessEndpointConfig](#cfn-workspaces-directory-workspaceaccessproperties-accessendpointconfig)" : {{AccessEndpointConfig}},
   "[DeviceTypeAndroid](#cfn-workspaces-directory-workspaceaccessproperties-devicetypeandroid)" : {{String}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspaces-directory-workspaceaccessproperties-syntax.yaml"></a>
 
-```
+```yaml
   [AccessEndpointConfig](#cfn-workspaces-directory-workspaceaccessproperties-accessendpointconfig): {{
     AccessEndpointConfig}}
   [DeviceTypeAndroid](#cfn-workspaces-directory-workspaceaccessproperties-devicetypeandroid): {{String}}

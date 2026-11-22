@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-databrew-ruleset-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-databrew-ruleset-tag-key)" : {{String}},
   "[Value](#cfn-databrew-ruleset-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-databrew-ruleset-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-databrew-ruleset-tag-key): {{String}}
   [Value](#cfn-databrew-ruleset-tag-value): {{String}}
 ```

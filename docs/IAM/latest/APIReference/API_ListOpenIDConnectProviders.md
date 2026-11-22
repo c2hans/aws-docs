@@ -53,9 +53,11 @@ https://iam.amazonaws.com/?Action=ListOpenIDConnectProviders
     <OpenIDConnectProviderList>
       <member>
         <Arn>arn:aws:iam::123456789012:oidc-provider/server.example.com</Arn>
+        <IsTrustedIdentityPropagationEnabled>true</IsTrustedIdentityPropagationEnabled>
       </member>
       <member>
         <Arn>arn:aws:iam::123456789012:oidc-provider/server.example.org</Arn>
+        <IsTrustedIdentityPropagationEnabled>false</IsTrustedIdentityPropagationEnabled>
       </member>
     </OpenIDConnectProviderList>
   </ListOpenIDConnectProvidersResult>

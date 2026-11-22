@@ -40,7 +40,7 @@ You can access these operations by attaching a new IAM policy to your user by fo
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

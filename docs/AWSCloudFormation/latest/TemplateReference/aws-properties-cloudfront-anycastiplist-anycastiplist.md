@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-anycastiplist-anycastiplist-syntax.json"></a>
 
-```
+```json
 {
   "[AnycastIps](#cfn-cloudfront-anycastiplist-anycastiplist-anycastips)" : {{[ String, ... ]}},
   "[Arn](#cfn-cloudfront-anycastiplist-anycastiplist-arn)" : {{String}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-anycastiplist-anycastiplist-syntax.yaml"></a>
 
-```
+```yaml
   [AnycastIps](#cfn-cloudfront-anycastiplist-anycastiplist-anycastips): {{
     - String}}
   [Arn](#cfn-cloudfront-anycastiplist-anycastiplist-arn): {{String}}

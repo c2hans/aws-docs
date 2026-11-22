@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-directconnect-directconnectgatewayassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DirectConnect::DirectConnectGatewayAssociation",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-directconnect-directconnectgatewayassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DirectConnect::DirectConnectGatewayAssociation
 Properties:
   [AcceptDirectConnectGatewayAssociationProposalRoleArn](#cfn-directconnect-directconnectgatewayassociation-acceptdirectconnectgatewayassociationproposalrolearn): {{String}}
@@ -111,7 +111,7 @@ This example shows a basic Direct Connect gateway association with a virtual pri
 #### JSON
 <a name="aws-resource-directconnect-directconnectgatewayassociation--examples--Direct_Connect_gateway_association_with_a_virtual_private_gateway_in_the_same_account--json"></a>
 
-```
+```json
 {
   "Resources": {
     "myDirectConnectGateway": {
@@ -140,7 +140,7 @@ This example shows a basic Direct Connect gateway association with a virtual pri
 #### YAML
 <a name="aws-resource-directconnect-directconnectgatewayassociation--examples--Direct_Connect_gateway_association_with_a_virtual_private_gateway_in_the_same_account--yaml"></a>
 
-```
+```yaml
 Resources:
   myDirectConnectGateway:
     Type: AWS::DirectConnect::DirectConnectGateway

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-membership-membershippaymentconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[JobCompute](#cfn-cleanrooms-membership-membershippaymentconfiguration-jobcompute)" : {{MembershipJobComputePaymentConfig}},
   "[MachineLearning](#cfn-cleanrooms-membership-membershippaymentconfiguration-machinelearning)" : {{MembershipMLPaymentConfig}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-membership-membershippaymentconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [JobCompute](#cfn-cleanrooms-membership-membershippaymentconfiguration-jobcompute): {{
     MembershipJobComputePaymentConfig}}
   [MachineLearning](#cfn-cleanrooms-membership-membershippaymentconfiguration-machinelearning): {{

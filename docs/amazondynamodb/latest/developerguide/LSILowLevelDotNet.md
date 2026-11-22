@@ -39,7 +39,7 @@ The following are the steps to create a table with a local secondary index, usin
 
 The following C\# code example demonstrates the preceding steps. The code creates a table (`Music`) with a secondary index on the `AlbumTitle` attribute. The table partition key and sort key, plus the index sort key, are the only attributes projected into the index.
 
-```
+```csharp
 AmazonDynamoDBClient client = new AmazonDynamoDBClient();
 string tableName = "Music";
 
@@ -132,7 +132,7 @@ The following C\# code example demonstrates the preceding steps.
 
 **Example**
 
-```
+```csharp
 AmazonDynamoDBClient client = new AmazonDynamoDBClient();
 string tableName = "Music";
 
@@ -187,7 +187,7 @@ The following C\# code example demonstrates the preceding steps.
 
 **Example**
 
-```
+```csharp
 QueryRequest queryRequest = new QueryRequest
 {
     TableName = "Music",

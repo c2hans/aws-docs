@@ -62,6 +62,12 @@ Type: String
 Valid Values: `PENDING_AUTO_RENEWAL | PENDING_VALIDATION | SUCCESS | FAILED`
 Required: No
 
+ ** RootHierarchyType **   <a name="ACM-Type-AcmCertificateMetadataFilter-RootHierarchyType"></a>
+Filter by root hierarchy type. Specify `N2_AMAZON_MANAGED` or `N2_SFG2_AMAZON_MANAGED` to return Amazon N2 certificates.
+Type: String
+Valid Values: `N2_AMAZON_MANAGED | N2_SFG2_AMAZON_MANAGED`
+Required: No
+
  ** Status **   <a name="ACM-Type-AcmCertificateMetadataFilter-Status"></a>
 Filter by certificate status.
 Type: String

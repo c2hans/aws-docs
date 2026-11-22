@@ -20,7 +20,7 @@ You can create an Amazon Q custom data source connector using either the AWS Man
 + You only need to provide a `Name` and optionally a `Description`.
 + Set the `Configuration` parameter as follows:
 
-  ```
+  ```json
   "configuration": {
   "type": "CUSTOM",
   "version": "1.0.0"

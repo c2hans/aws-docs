@@ -11,7 +11,7 @@ Aurora DSQL delivers each audit record as a JSON object that contains details ab
 
 Audit records are delivered to your bucket as gzip-compressed files. Each line of a file is one audit record in JSON format. By default, object keys look like the following example:
 
-```
+```text
 AWSLogs/111122223333/dsql/us-east-1/2026/11/04/18/111122223333_dsql_audit_logs_us-east-1_20261104T18Z_{{unique-id}}.log.gz
 ```
 
@@ -41,7 +41,7 @@ To view the audit records in your bucket, use the Amazon S3 console or the AWS C
 
 The following AWS CLI commands list the audit log files in a bucket, and then print the records of one of the files. Replace {{amzn-s3-demo-destination-bucket}} with the name of your bucket, {{111122223333}} with your AWS account ID, and {{object-key}} with the key of a file:
 
-```
+```bash
 aws s3 ls s3://{{amzn-s3-demo-destination-bucket}}/AWSLogs/{{111122223333}}/dsql/ --recursive
 aws s3 cp s3://{{amzn-s3-demo-destination-bucket}}/{{object-key}} - | gunzip
 ```
@@ -56,7 +56,7 @@ You can also use the AWS SDKs or the Amazon S3 API. For more information, see [D
 **Example – UPDATE statement**
 The following example shows the audit record of an `UPDATE` statement with two bound parameters. The cluster audited the statement with `dsql_audit.log_parameter` and `dsql_audit.log_rows` turned on:
 
-```
+```json
 {
   "resource_arn": "arn:aws:dsql:us-east-1:111122223333:cluster/abcdefghijklmnopqrstuvwxyz",
   "event_timestamp": 1793817600123,
@@ -85,7 +85,7 @@ The following example shows the audit record of an `UPDATE` statement with two b
 **Example – CREATE TABLE statement**
 The following example shows the two audit records of a `CREATE TABLE` statement that defines a primary key. The first record is for the table, and the second record is for the index of the primary key. The cluster audited the statement with `dsql_audit.log_parameter` and `dsql_audit.log_rows` turned on:
 
-```
+```json
 {
   "resource_arn": "arn:aws:dsql:us-east-1:111122223333:cluster/abcdefghijklmnopqrstuvwxyz",
   "event_timestamp": 1793817000456,

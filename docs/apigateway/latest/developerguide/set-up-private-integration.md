@@ -21,7 +21,7 @@ For a tutorial on how to create a private integration see, [Tutorial: Create a R
 
 The following [put-integration](https://docs.aws.amazon.com/cli/latest/reference/latest/api/API_PutIntegration.html) command creates a private integration that connects to a load balancer by using a VPC link V2:
 
-```
+```shell
 aws apigateway put-integration \
     --rest-api-id abcdef123 \
     --resource-id aaa000 \
@@ -36,7 +36,7 @@ aws apigateway put-integration \
 
 Instead of directly providing the connection ID, you can use a stage variable instead. When you deploy your API to a stage, you set the VPC link V2 ID. The following [put-integration](https://docs.aws.amazon.com/cli/latest/reference/latest/api/API_PutIntegration.html) command creates a private integration using a stage variable for the VPC link V2 ID:
 
-```
+```shell
 aws apigateway put-integration \
     --rest-api-id abcdef123 \
     --resource-id aaa000 \

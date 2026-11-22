@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-responseheaderspolicy-customheadersconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Items](#cfn-cloudfront-responseheaderspolicy-customheadersconfig-items)" : {{[ CustomHeader, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-responseheaderspolicy-customheadersconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Items](#cfn-cloudfront-responseheaderspolicy-customheadersconfig-items): {{
     - CustomHeader}}
 ```

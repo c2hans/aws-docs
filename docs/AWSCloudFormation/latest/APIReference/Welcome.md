@@ -19,6 +19,7 @@ Stack events: [DescribeStackEvents](API_DescribeStackEvents.md)
 Stack resources: [DescribeStackResource](API_DescribeStackResource.md) \| [DescribeStackResources](API_DescribeStackResources.md) \| [ListStackResources](API_ListStackResources.md)
 Stack drift: [DescribeStackDriftDetectionStatus](API_DescribeStackDriftDetectionStatus.md) \| [DescribeStackResourceDrifts](API_DescribeStackResourceDrifts.md) \| [DetectStackDrift](API_DetectStackDrift.md) \| [DetectStackResourceDrift](API_DetectStackResourceDrift.md)
 Stack operations: [ListExports](API_ListExports.md) \| [ListImports](API_ListImports.md) \| [SignalResource](API_SignalResource.md) \| [UpdateTerminationProtection](API_UpdateTerminationProtection.md)
+Stack aliases: [SetAlias](API_SetAlias.md) \| [RemoveAlias](API_RemoveAlias.md)
 Stack policies: [GetStackPolicy](API_GetStackPolicy.md) \| [SetStackPolicy](API_SetStackPolicy.md)
 Templates: [GetTemplate](API_GetTemplate.md) \| [GetTemplateSummary](API_GetTemplateSummary.md) \| [ValidateTemplate](API_ValidateTemplate.md)
 
@@ -53,4 +54,4 @@ Monitor results: [GetHookResult](API_GetHookResult.md) \| [ListHookResults](API_
 Register privately: [DescribeTypeRegistration](API_DescribeTypeRegistration.md) \| [DeregisterType](API_DeregisterType.md) \| [ListTypeRegistrations](API_ListTypeRegistrations.md) \| [RegisterType](API_RegisterType.md)
 Publish: [DescribePublisher](API_DescribePublisher.md) \| [PublishType](API_PublishType.md) \| [RegisterPublisher](API_RegisterPublisher.md) \| [TestType](API_TestType.md)
 
-This document was last published on November 18, 2026.
+This document was last published on November 19, 2026.

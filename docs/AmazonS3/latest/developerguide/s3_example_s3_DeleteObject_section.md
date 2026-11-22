@@ -18,7 +18,7 @@ Action examples are code excerpts from larger programs and must be run in contex
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/S3#code-examples).
 Delete an object in a non-versioned S3 bucket.
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.S3;
@@ -80,7 +80,7 @@ Delete an object in a non-versioned S3 bucket.
 ```
 Delete an object in a versioned S3 bucket.
 
-```
+```csharp
     using System;
     using System.Threading.Tasks;
     using Amazon.S3;
@@ -171,7 +171,7 @@ Delete an object in a versioned S3 bucket.
 **AWS CLI with Bash script**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/s3#code-examples).
 
-```
+```bash
 ###############################################################################
 # function errecho
 #
@@ -218,7 +218,7 @@ function delete_item_in_bucket() {
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/s3#code-examples).
 
-```
+```cpp
 bool AwsDoc::S3::deleteObject(const Aws::String &objectKey,
                               const Aws::String &fromBucket,
                               const Aws::S3::S3ClientConfiguration &clientConfig) {
@@ -274,7 +274,7 @@ For more information, see [Deleting a single object](https://docs.aws.amazon.com
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/s3_object_lock#code-examples).
 
-```
+```go
 import (
 	"bytes"
 	"context"
@@ -348,7 +348,7 @@ func (actor S3Actions) DeleteObject(ctx context.Context, bucket string, key stri
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/s3#code-examples).
 
-```
+```java
     /**
      * Deletes an object from an S3 bucket asynchronously.
      *
@@ -383,7 +383,7 @@ func (actor S3Actions) DeleteObject(ctx context.Context, bucket string, key stri
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/s3#code-examples).
 Delete an object.
 
-```
+```javascript
 import {
   DeleteObjectCommand,
   S3Client,
@@ -440,7 +440,7 @@ export const main = async ({ bucketName, key }) => {
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/s3#code-examples).
 
-```
+```php
     public function deleteObject(string $bucketName, string $fileName, array $args = [])
     {
         $parameters = array_merge(['Bucket' => $bucketName, 'Key' => $fileName], $args);
@@ -467,7 +467,7 @@ export const main = async ({ bucketName, key }) => {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/s3/s3_basics#code-examples).
 Delete an object.
 
-```
+```python
 class ObjectWrapper:
     """Encapsulates S3 object actions."""
 
@@ -501,7 +501,7 @@ class ObjectWrapper:
 ```
 Roll an object back to a previous version by deleting later versions of the object.
 
-```
+```python
 def rollback_object(bucket, object_key, version_id):
     """
     Rolls back an object to an earlier version by deleting all versions that
@@ -548,7 +548,7 @@ def rollback_object(bucket, object_key, version_id):
 ```
 Revive a deleted object by removing the object's active delete marker.
 
-```
+```python
 def revive_object(bucket, object_key):
     """
     Revives a versioned object that was deleted by removing the object's active
@@ -594,7 +594,7 @@ def revive_object(bucket, object_key):
 ```
 Create a Lambda handler that removes a delete marker from an S3 object. This handler can be used to efficiently clean up extraneous delete markers in a versioned bucket.
 
-```
+```python
 import logging
 from urllib import parse
 import boto3
@@ -711,7 +711,7 @@ def lambda_handler(event, context):
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/s3#code-examples).
 
-```
+```rust
 /// Delete an object from a bucket.
 pub async fn remove_object(
     client: &aws_sdk_s3::Client,
@@ -738,7 +738,7 @@ pub async fn remove_object(
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/s3#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_s3->deleteobject(
             iv_bucket = iv_bucket_name
@@ -756,7 +756,7 @@ pub async fn remove_object(
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/s3/basics#code-examples).
 
-```
+```swift
 import AWSS3
 
     public func deleteFile(bucket: String, key: String) async throws {

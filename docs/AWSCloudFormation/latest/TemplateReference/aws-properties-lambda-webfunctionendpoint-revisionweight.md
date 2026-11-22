@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-webfunctionendpoint-revisionweight-syntax.json"></a>
 
-```
+```json
 {
   "[RevisionId](#cfn-lambda-webfunctionendpoint-revisionweight-revisionid)" : {{String}},
   "[Weight](#cfn-lambda-webfunctionendpoint-revisionweight-weight)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-webfunctionendpoint-revisionweight-syntax.yaml"></a>
 
-```
+```yaml
   [RevisionId](#cfn-lambda-webfunctionendpoint-revisionweight-revisionid): {{String}}
   [Weight](#cfn-lambda-webfunctionendpoint-revisionweight-weight): {{Integer}}
 ```

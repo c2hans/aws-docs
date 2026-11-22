@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-vpclattice-resourceconfiguration-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-vpclattice-resourceconfiguration-tag-key)" : {{String}},
   "[Value](#cfn-vpclattice-resourceconfiguration-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-vpclattice-resourceconfiguration-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-vpclattice-resourceconfiguration-tag-key): {{String}}
   [Value](#cfn-vpclattice-resourceconfiguration-tag-value): {{String}}
 ```

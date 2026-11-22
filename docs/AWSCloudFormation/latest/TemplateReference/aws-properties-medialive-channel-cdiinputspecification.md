@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-cdiinputspecification-syntax.json"></a>
 
-```
+```json
 {
   "[Resolution](#cfn-medialive-channel-cdiinputspecification-resolution)" : {{String}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-cdiinputspecification-syntax.yaml"></a>
 
-```
+```yaml
   [Resolution](#cfn-medialive-channel-cdiinputspecification-resolution): {{String}}
 ```
 

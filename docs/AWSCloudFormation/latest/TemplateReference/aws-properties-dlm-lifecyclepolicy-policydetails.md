@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dlm-lifecyclepolicy-policydetails-syntax.json"></a>
 
-```
+```json
 {
   "[Actions](#cfn-dlm-lifecyclepolicy-policydetails-actions)" : {{[ Action, ... ]}},
   "[CopyTags](#cfn-dlm-lifecyclepolicy-policydetails-copytags)" : {{Boolean}},
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dlm-lifecyclepolicy-policydetails-syntax.yaml"></a>
 
-```
+```yaml
   [Actions](#cfn-dlm-lifecyclepolicy-policydetails-actions): {{
     - Action}}
   [CopyTags](#cfn-dlm-lifecyclepolicy-policydetails-copytags): {{Boolean}}

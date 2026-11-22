@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-devopsagent-trigger-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DevOpsAgent::Trigger",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-devopsagent-trigger-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DevOpsAgent::Trigger
 Properties:
   [Action](#cfn-devopsagent-trigger-action): {{Json}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-directoryservice-microsoftad-vpcsettings-syntax.json"></a>
 
-```
+```json
 {
   "[SubnetIds](#cfn-directoryservice-microsoftad-vpcsettings-subnetids)" : {{[ String, ... ]}},
   "[VpcId](#cfn-directoryservice-microsoftad-vpcsettings-vpcid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-directoryservice-microsoftad-vpcsettings-syntax.yaml"></a>
 
-```
+```yaml
   [SubnetIds](#cfn-directoryservice-microsoftad-vpcsettings-subnetids): {{
     - String}}
   [VpcId](#cfn-directoryservice-microsoftad-vpcsettings-vpcid): {{String}}

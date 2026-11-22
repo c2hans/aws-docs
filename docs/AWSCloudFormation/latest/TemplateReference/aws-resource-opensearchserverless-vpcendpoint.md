@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-opensearchserverless-vpcendpoint-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::OpenSearchServerless::VpcEndpoint",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-opensearchserverless-vpcendpoint-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::OpenSearchServerless::VpcEndpoint
 Properties:
   [Name](#cfn-opensearchserverless-vpcendpoint-name): {{String}}
@@ -109,7 +109,7 @@ The following example specifies an OpenSearch Serverless-managed interface VPC e
 #### JSON
 <a name="aws-resource-opensearchserverless-vpcendpoint--examples--Create_a_VPC_endpoint--json"></a>
 
-```
+```json
 {
    "Description":"OpenSearch Serverless VPC endpoint template",
    "Resources":{
@@ -133,7 +133,7 @@ The following example specifies an OpenSearch Serverless-managed interface VPC e
 #### YAML
 <a name="aws-resource-opensearchserverless-vpcendpoint--examples--Create_a_VPC_endpoint--yaml"></a>
 
-```
+```yaml
 AAWSTemplateFormatVersion: '2010-09-09'
 Description: OpenSearch Serverless VPC endpoint template
 Resources:

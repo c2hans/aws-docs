@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-transfer-connector-sftpconfig-syntax.json"></a>
 
-```
+```json
 {
   "[MaxConcurrentConnections](#cfn-transfer-connector-sftpconfig-maxconcurrentconnections)" : {{Integer}},
   "[OrderedUserSecretVersionStages](#cfn-transfer-connector-sftpconfig-orderedusersecretversionstages)" : {{[ String, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-transfer-connector-sftpconfig-syntax.yaml"></a>
 
-```
+```yaml
   [MaxConcurrentConnections](#cfn-transfer-connector-sftpconfig-maxconcurrentconnections): {{Integer}}
   [OrderedUserSecretVersionStages](#cfn-transfer-connector-sftpconfig-orderedusersecretversionstages): {{
     - String}}

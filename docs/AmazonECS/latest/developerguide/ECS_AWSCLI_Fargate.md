@@ -53,7 +53,7 @@ aws ecs create-cluster --cluster-name {{fargate-cluster}}
 
 Output:
 
-```
+```json
 {
     "cluster": {
         "status": "ACTIVE",
@@ -82,7 +82,7 @@ Output:
 
 Before you can run a task on your ECS cluster, you must register a task definition. Task definitions are lists of containers grouped together. The following example is a simple task definition that creates a PHP web app using the httpd container image hosted on Docker Hub. For more information about the available task definition parameters, see [Amazon ECS task definitions](task_definitions.md). For this tutorial, the `taskRoleArn` is only needed if you are deploying the task in a private subnet and wish to test the deployment. Replace the `taskRoleArn` with the IAM task role you created to use ECS Exec as mentioned in [Prerequisites](#ECS_AWSCLI_Fargate_prereq).
 
-```
+```json
  {
         "family": "sample-fargate",
         "networkMode": "awsvpc",
@@ -137,7 +137,7 @@ aws ecs list-task-definitions
 
 Output:
 
-```
+```json
 {
     "taskDefinitionArns": [
         "arn:aws:ecs:{{region}}:{{aws_account_id}}:task-definition/sample-fargate:1"
@@ -175,7 +175,7 @@ aws ecs list-services --cluster {{fargate-cluster}}
 
 Output:
 
-```
+```json
 {
     "serviceArns": [
         "arn:aws:ecs:{{region}}:{{aws_account_id}}:service/fargate-cluster/fargate-service"
@@ -300,7 +300,7 @@ aws ecs list-tasks --cluster {{fargate-cluster}} --service {{fargate-service}}
 
 The output contains the task ARN.
 
-```
+```json
 {
     "taskArns": [
         "arn:aws:ecs:us-east-1:123456789012:task/fargate-service/EXAMPLE
@@ -316,7 +316,7 @@ aws ecs describe-tasks --cluster {{fargate-cluster}} --tasks {{arn:aws:ecs:us-ea
 
 The attachment information is listed in the output.
 
-```
+```json
 {
     "tasks": [
         {
@@ -348,7 +348,7 @@ aws ec2 describe-network-interfaces --network-interface-id  {{eni-0fa40520aeEXAM
 
 The public IP address is in the output.
 
-```
+```json
 {
     "NetworkInterfaces": [
         {
@@ -374,7 +374,7 @@ aws ecs describe-tasks --cluster {{fargate-cluster}} --tasks {{arn:aws:ecs:us-ea
 
  The managed agent information is listed in the output.
 
-```
+```json
 {
      "tasks": [
         {

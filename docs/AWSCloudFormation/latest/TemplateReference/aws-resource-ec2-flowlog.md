@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-flowlog-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::FlowLog",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-flowlog-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::FlowLog
 Properties:
   [DeliverCrossAccountRole](#cfn-ec2-flowlog-delivercrossaccountrole): {{String}}
@@ -205,7 +205,7 @@ The following example creates a flow log for the specified VPC, and captures all
 #### JSON
 <a name="aws-resource-ec2-flowlog--examples--Publish_a_flow_log_to_CloudWatch_Logs_to_monitor_all_traffic--json"></a>
 
-```
+```json
 {
   "MyFlowLog": {
     "Type": "AWS::EC2::FlowLog",
@@ -230,7 +230,7 @@ The following example creates a flow log for the specified VPC, and captures all
 #### YAML
 <a name="aws-resource-ec2-flowlog--examples--Publish_a_flow_log_to_CloudWatch_Logs_to_monitor_all_traffic--yaml"></a>
 
-```
+```yaml
 MyFlowLog:
   Type: AWS::EC2::FlowLog
   Properties:
@@ -249,7 +249,7 @@ The following example creates a flow log for the specified subnet and captures R
 #### JSON
 <a name="aws-resource-ec2-flowlog--examples--Publish_a_custom_format_flow_log_to_CloudWatch_Logs_for_REJECT_traffic--json"></a>
 
-```
+```json
 {
   "MyDetailedFlowLogDeliveringToCloudWatchLogs": {
     "Type": "AWS::EC2::FlowLog",
@@ -286,7 +286,7 @@ The following example creates a flow log for the specified subnet and captures R
 #### YAML
 <a name="aws-resource-ec2-flowlog--examples--Publish_a_custom_format_flow_log_to_CloudWatch_Logs_for_REJECT_traffic--yaml"></a>
 
-```
+```yaml
 MyDetailedFlowLogDeliveringToCloudWatchLogs:
   Type: AWS::EC2::FlowLog
   Properties:
@@ -312,7 +312,7 @@ The following example creates a flow log for the specified subnet and captures A
 #### JSON
 <a name="aws-resource-ec2-flowlog--examples--Publish_a_custom_format_flow_log_to_Amazon_S3_for_ACCEPT_traffic--json"></a>
 
-```
+```json
 {
   "MyFlowLogDeliveringToS3": {
     "Type": "AWS::EC2::FlowLog",
@@ -354,7 +354,7 @@ The following example creates a flow log for the specified subnet and captures A
 #### YAML
 <a name="aws-resource-ec2-flowlog--examples--Publish_a_custom_format_flow_log_to_Amazon_S3_for_ACCEPT_traffic--yaml"></a>
 
-```
+```yaml
 MyFlowLogDeliveringToS3:
   Type: AWS::EC2::FlowLog
   Properties:

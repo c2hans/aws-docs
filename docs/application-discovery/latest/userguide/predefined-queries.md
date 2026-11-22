@@ -34,7 +34,7 @@ Choose a title to see information about the query.
 
 This view helper function retrieves IP addresses and hostnames for a given server. You can use this view in other queries. For information about how to create a view, see [CREATE VIEW](https://docs.aws.amazon.com/athena/latest/ug/create-view.html) in the *Amazon Athena User Guide*.
 
-```
+```sql
 CREATE OR REPLACE VIEW hostname_ip_helper AS
 SELECT DISTINCT
   "os"."host_name"
@@ -51,7 +51,7 @@ WHERE ("os"."agent_id" = "nic"."agent_id");
 
 This query can help you perform data validation. If you've deployed agents on a number of servers in your network, you can use this query to understand if there are other servers in your network without agents deployed on them. In this query, we look into the inbound and outbound network traffic, and filter the traffic for private IP addresses only. That is, IP addresses starting with `192`, `10`, or `172`.
 
-```
+```sql
 SELECT DISTINCT "destination_ip" "IP Address" ,
          (CASE
     WHEN (
@@ -92,7 +92,7 @@ WHERE ((("source_ip" LIKE '192.%')
 
 You can use this query to analyze system performance and utilization pattern data for your on-premises servers that have agents installed on them. The query combines the `system_performance_agent` table with the `os_info_agent` table to identify the hostname for each server. This query returns the time series utilization data (in 15 minute intervals) for all the servers where agents are running.
 
-```
+```sql
 SELECT "OS"."os_name" "OS Name" ,
     "OS"."os_version" "OS Version" ,
     "OS"."host_name" "Host Name" ,
@@ -129,7 +129,7 @@ After the `iana_service_ports_import` table is created, create two view helper f
 
 1. Create the `valid_outbound_ips_helper` view, using the following helper function that lists all distinct outbound destination IP addresses.
 
-   ```
+   ```sql
    CREATE OR REPLACE VIEW valid_outbound_ips_helper AS
    SELECT DISTINCT "destination_ip"
    FROM outbound_connection_agent;
@@ -137,7 +137,7 @@ After the `iana_service_ports_import` table is created, create two view helper f
 
 1. Create the `outbound_query_helper` view, using the following helper function that determines the frequency of communication for outbound traffic.
 
-   ```
+   ```sql
    CREATE OR REPLACE VIEW outbound_query_helper AS
    SELECT "agent_id" ,
             "source_ip" ,
@@ -155,7 +155,7 @@ After the `iana_service_ports_import` table is created, create two view helper f
 
 1. After you create the `iana_service_ports_import` table and your two helper functions, you can run the following query to get the details on the outbound traffic for each service, along with the port number and process details.
 
-   ```
+   ```sql
    SELECT hip1.host_name "Source Host Name",
             outbound_connections_results0.source_ip "Source IP Address",
             hip2.host_name "Destination Host Name",
@@ -202,7 +202,7 @@ After the `iana_service_ports_import` table is created, create two view helper f
 
 1. Create the `inbound_query_helper` view, using the following helper function that determines the frequency of communication for inbound traffic.
 
-   ```
+   ```sql
    CREATE OR REPLACE VIEW inbound_query_helper AS
    SELECT "agent_id" ,
             "source_ip" ,
@@ -220,7 +220,7 @@ After the `iana_service_ports_import` table is created, create two view helper f
 
 1. After you create the `iana_service_ports_import` table and your two helper functions, you can run the following query to get the details on the inbound traffic for each service, along with the port number and process details.
 
-   ```
+   ```sql
    SELECT hip1.host_name "Source Host Name",
             inbound_connections_results0.source_ip "Source IP Address",
             hip2.host_name "Destination Host Name",
@@ -253,7 +253,7 @@ Before running this query, if you have not already done so, you must create the 
 
 Run the following query to identify the running software based on port numbers.
 
-```
+```sql
 SELECT o.host_name "Host Name",
        ianap.servicename "Service",
        ianap.description "Description",
@@ -294,7 +294,7 @@ Some of the predefined queries require a table named `iana_service_ports_import`
 
 1. Create a new table in Athena named `iana_service_ports_import`. For instructions, see [Create a Table](https://docs.aws.amazon.com/athena/latest/ug/getting-started.html#step-2-create-a-table) in the *Amazon Athena User Guide*. In the following example, you need to replace `my_bucket_name` with the name of the S3 bucket that you uploaded the CSV file to in the previous step.
 
-   ```
+   ```sql
    CREATE EXTERNAL TABLE IF NOT EXISTS iana_service_ports_import (
             ServiceName STRING,
             PortNumber INT,

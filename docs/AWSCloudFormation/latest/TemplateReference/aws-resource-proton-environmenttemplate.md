@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-proton-environmenttemplate-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Proton::EnvironmentTemplate",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-proton-environmenttemplate-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Proton::EnvironmentTemplate
 Properties:
   [Description](#cfn-proton-environmenttemplate-description): {{String}}

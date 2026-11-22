@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-burnindvbsubdestinationsettings-syntax.json"></a>
 
-```
+```json
 {
   "[Alignment](#cfn-medialive-channel-burnindvbsubdestinationsettings-alignment)" : {{String}},
   "[BackgroundColor](#cfn-medialive-channel-burnindvbsubdestinationsettings-backgroundcolor)" : {{String}},
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-burnindvbsubdestinationsettings-syntax.yaml"></a>
 
-```
+```yaml
   [Alignment](#cfn-medialive-channel-burnindvbsubdestinationsettings-alignment): {{String}}
   [BackgroundColor](#cfn-medialive-channel-burnindvbsubdestinationsettings-backgroundcolor): {{String}}
   [BackgroundOpacity](#cfn-medialive-channel-burnindvbsubdestinationsettings-backgroundopacity): {{Integer}}

@@ -52,7 +52,7 @@ The following C\# example demonstrates the preceding steps. The example uploads 
 
 **Example**
 
-```
+```csharp
 AmazonDynamoDBClient client = new AmazonDynamoDBClient();
 string tableName = "ProductCatalog";
 
@@ -86,7 +86,7 @@ You can also provide optional parameters using the `PutItemRequest` object as sh
 
 **Example**
 
-```
+```csharp
 var request = new PutItemRequest
  {
    TableName = tableName,
@@ -135,7 +135,7 @@ The following are the steps to retrieve an existing item using the low-level AWS
 
 The following C\# example demonstrates the preceding steps. The example retrieves an item from the `ProductCatalog` table.
 
-```
+```csharp
 AmazonDynamoDBClient client = new AmazonDynamoDBClient();
 string tableName = "ProductCatalog";
 
@@ -160,7 +160,7 @@ You can also provide optional parameters using the `GetItemRequest` object, as s
 
 **Example**
 
-```
+```csharp
 AmazonDynamoDBClient client = new AmazonDynamoDBClient();
 string tableName = "ProductCatalog";
 
@@ -210,7 +210,7 @@ The following are the steps to update an existing item using the low-level .NET 
 
 The following C\# code example demonstrates the preceding steps. The example updates a book item in the `ProductCatalog` table. It adds a new author to the `Authors` collection, and deletes the existing `ISBN` attribute. It also reduces the price by one.
 
-```
+```csharp
 AmazonDynamoDBClient client = new AmazonDynamoDBClient();
 string tableName = "ProductCatalog";
 
@@ -251,7 +251,7 @@ You can also provide optional parameters using the `UpdateItemRequest` object, a
 
 **Example**
 
-```
+```csharp
 AmazonDynamoDBClient client = new AmazonDynamoDBClient();
 string tableName = "ProductCatalog";
 
@@ -287,7 +287,7 @@ You can use `updateItem` to implement an atomic counter, where you increment or 
 
 The following example demonstrates this, incrementing the `Quantity` attribute by one.
 
-```
+```csharp
 AmazonDynamoDBClient client = new AmazonDynamoDBClient();
 string tableName = "ProductCatalog";
 
@@ -326,7 +326,7 @@ The following are the steps to delete an item using the low-level .NET SDK API.
 
 **Example**
 
-```
+```csharp
 AmazonDynamoDBClient client = new AmazonDynamoDBClient();
 string tableName = "ProductCatalog";
 
@@ -348,7 +348,7 @@ You can also provide optional parameters using the `DeleteItemRequest` object as
 
 **Example**
 
-```
+```csharp
 var request = new DeleteItemRequest
 {
     TableName = tableName,
@@ -391,7 +391,7 @@ The following C\# code example demonstrates the preceding steps. The example cre
 
 The code runs `BatchWriteItem` to perform a batch operation.
 
-```
+```csharp
 AmazonDynamoDBClient client = new AmazonDynamoDBClient();
 
 string table1Name = "Forum";
@@ -475,7 +475,7 @@ The following are the steps to retrieve multiple items using the low-level AWS S
 
 The following C\# code example demonstrates the preceding steps. The example retrieves items from two tables, `Forum` and `Thread`. The request specifies two items in the `Forum` and three items in the `Thread` table. The response includes items from both of the tables. The code shows how you can process the response.
 
-```
+```csharp
 AmazonDynamoDBClient client = new AmazonDynamoDBClient();
 
 string table1Name = "Forum";
@@ -563,7 +563,7 @@ You can also provide optional parameters using the `BatchGetItemRequest` object 
 
 **Example**
 
-```
+```csharp
 AmazonDynamoDBClient client = new AmazonDynamoDBClient();
 
 string table1Name = "Forum";

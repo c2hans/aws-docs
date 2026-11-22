@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-qbusiness-datasource-hookconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[InvocationCondition](#cfn-qbusiness-datasource-hookconfiguration-invocationcondition)" : {{DocumentAttributeCondition}},
   "[LambdaArn](#cfn-qbusiness-datasource-hookconfiguration-lambdaarn)" : {{String}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-qbusiness-datasource-hookconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [InvocationCondition](#cfn-qbusiness-datasource-hookconfiguration-invocationcondition): {{
     DocumentAttributeCondition}}
   [LambdaArn](#cfn-qbusiness-datasource-hookconfiguration-lambdaarn): {{String}}

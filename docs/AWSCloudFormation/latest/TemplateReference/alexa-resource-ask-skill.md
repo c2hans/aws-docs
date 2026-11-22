@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="alexa-resource-ask-skill-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "Alexa::ASK::Skill",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="alexa-resource-ask-skill-syntax.yaml"></a>
 
-```
+```yaml
 Type: Alexa::ASK::Skill
 Properties:
   [AuthenticationConfiguration](#cfn-ask-skill-authenticationconfiguration): {{
@@ -85,7 +85,7 @@ The following example retrieves the skill package from an S3 bucket and provides
 #### JSON
 <a name="alexa-resource-ask-skill--examples--Alexa_Skill_Resource_Configuration--json"></a>
 
-```
+```json
 "MySkill": {
   "Type": "Alexa::ASK::Skill",
   "Properties": {
@@ -118,7 +118,7 @@ The following example retrieves the skill package from an S3 bucket and provides
 #### YAML
 <a name="alexa-resource-ask-skill--examples--Alexa_Skill_Resource_Configuration--yaml"></a>
 
-```
+```yaml
 MySkill: Type: "Alexa::ASK::Skill"
   Properties:
     SkillPackage:

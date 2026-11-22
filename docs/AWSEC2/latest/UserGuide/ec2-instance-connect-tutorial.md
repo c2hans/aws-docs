@@ -40,7 +40,7 @@ You'll create a policy that is configured as follows:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{

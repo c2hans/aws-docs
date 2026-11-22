@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotsitewise-accesspolicy-portal-syntax.json"></a>
 
-```
+```json
 {
   "[id](#cfn-iotsitewise-accesspolicy-portal-id)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotsitewise-accesspolicy-portal-syntax.yaml"></a>
 
-```
+```yaml
   [id](#cfn-iotsitewise-accesspolicy-portal-id): {{String}}
 ```
 

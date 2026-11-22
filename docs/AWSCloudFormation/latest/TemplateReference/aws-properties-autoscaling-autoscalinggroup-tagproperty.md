@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-autoscaling-autoscalinggroup-tagproperty-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-autoscaling-autoscalinggroup-tagproperty-key)" : {{String}},
   "[PropagateAtLaunch](#cfn-autoscaling-autoscalinggroup-tagproperty-propagateatlaunch)" : {{Boolean}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-autoscaling-autoscalinggroup-tagproperty-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-autoscaling-autoscalinggroup-tagproperty-key): {{String}}
   [PropagateAtLaunch](#cfn-autoscaling-autoscalinggroup-tagproperty-propagateatlaunch): {{Boolean}}
   [Value](#cfn-autoscaling-autoscalinggroup-tagproperty-value): {{String}}

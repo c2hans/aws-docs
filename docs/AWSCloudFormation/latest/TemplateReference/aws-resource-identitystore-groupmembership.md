@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-identitystore-groupmembership-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IdentityStore::GroupMembership",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-identitystore-groupmembership-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IdentityStore::GroupMembership
 Properties:
   [GroupId](#cfn-identitystore-groupmembership-groupid): {{String}}
@@ -98,7 +98,7 @@ The following example shows how to create a Identity Store `Group Membership` re
 #### JSON
 <a name="aws-resource-identitystore-groupmembership--examples--Declare_a_Identity_Store_Resource--json"></a>
 
-```
+```json
 {
   "Type": "AWS::IdentityStore::GroupMembership",
   "Properties": {
@@ -117,7 +117,7 @@ The following example shows how to create a Identity Store `Group Membership` re
 #### YAML
 <a name="aws-resource-identitystore-groupmembership--examples--Declare_a_Identity_Store_Resource--yaml"></a>
 
-```
+```yaml
 Type: AWS::IdentityStore::GroupMembership
     Properties:
       GroupId: "g-1111111111-2222-3333-4444-5555-6666666656"

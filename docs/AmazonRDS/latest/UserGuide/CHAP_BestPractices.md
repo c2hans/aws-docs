@@ -206,7 +206,7 @@ Very large tables (greater than 100 GB in size) can negatively affect performanc
 
 The amount of memory required by MySQL for reads and writes depends on the tables involved in the operations. It is a best practice to have at least enough RAM to the hold the indexes of *actively* used tables. To find the ten largest tables and indexes in a database, use the following query:
 
-```
+```sql
 select table_schema, TABLE_NAME, dat, idx from
 (SELECT table_schema, TABLE_NAME,
        ( data_length ) / 1024 / 1024 as dat,
@@ -255,7 +255,7 @@ Very large tables (greater than 100 GB in size) can negatively affect performanc
 
 The amount of memory required by MariaDB for reads and writes depends on the tables involved in the operations. It is a best practice to have at least enough RAM to the hold the indexes of *actively* used tables. To find the ten largest tables and indexes in a database, use the following query:
 
-```
+```sql
 select table_schema, TABLE_NAME, dat, idx from
 (SELECT table_schema, TABLE_NAME,
        ( data_length ) / 1024 / 1024 as dat,
@@ -336,7 +336,7 @@ The autovacuum parameters determine when and how hard autovacuum works. The`auto
 
  The following query shows the number of "dead" tuples in a table named table1:
 
-```
+```sql
 SELECT relname, n_dead_tup, last_vacuum, last_autovacuum FROM
 pg_catalog.pg_stat_all_tables
 WHERE n_dead_tup > 0 and relname = 'table1';

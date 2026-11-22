@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dynamodb-globaltable-warmthroughput-syntax.json"></a>
 
-```
+```json
 {
   "[ReadUnitsPerSecond](#cfn-dynamodb-globaltable-warmthroughput-readunitspersecond)" : {{Integer}},
   "[WriteUnitsPerSecond](#cfn-dynamodb-globaltable-warmthroughput-writeunitspersecond)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dynamodb-globaltable-warmthroughput-syntax.yaml"></a>
 
-```
+```yaml
   [ReadUnitsPerSecond](#cfn-dynamodb-globaltable-warmthroughput-readunitspersecond): {{Integer}}
   [WriteUnitsPerSecond](#cfn-dynamodb-globaltable-warmthroughput-writeunitspersecond): {{Integer}}
 ```

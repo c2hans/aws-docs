@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-userprofile-usersettings-syntax.json"></a>
 
-```
+```json
 {
   "[AutoMountHomeEFS](#cfn-sagemaker-userprofile-usersettings-automounthomeefs)" : {{String}},
   "[CodeEditorAppSettings](#cfn-sagemaker-userprofile-usersettings-codeeditorappsettings)" : {{CodeEditorAppSettings}},
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-userprofile-usersettings-syntax.yaml"></a>
 
-```
+```yaml
   [AutoMountHomeEFS](#cfn-sagemaker-userprofile-usersettings-automounthomeefs): {{String}}
   [CodeEditorAppSettings](#cfn-sagemaker-userprofile-usersettings-codeeditorappsettings): {{
     CodeEditorAppSettings}}

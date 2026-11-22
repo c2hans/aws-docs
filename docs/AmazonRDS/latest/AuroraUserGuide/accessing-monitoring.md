@@ -61,7 +61,7 @@ aws rds describe-db-clusters --region {{us-east-1}}
 
 The command returns the following output if your AWS CLI is configured for JSON output.
 
-```
+```json
 {
     "DBClusters": [
         {

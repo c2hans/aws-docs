@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-guardduty-detector-cfnfeatureadditionalconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-guardduty-detector-cfnfeatureadditionalconfiguration-name)" : {{String}},
   "[Status](#cfn-guardduty-detector-cfnfeatureadditionalconfiguration-status)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-guardduty-detector-cfnfeatureadditionalconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-guardduty-detector-cfnfeatureadditionalconfiguration-name): {{String}}
   [Status](#cfn-guardduty-detector-cfnfeatureadditionalconfiguration-status): {{String}}
 ```

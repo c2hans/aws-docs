@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewaytarget-apigatewaytooloverride-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-bedrockagentcore-gatewaytarget-apigatewaytooloverride-description)" : {{String}},
   "[Method](#cfn-bedrockagentcore-gatewaytarget-apigatewaytooloverride-method)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewaytarget-apigatewaytooloverride-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-bedrockagentcore-gatewaytarget-apigatewaytooloverride-description): {{String}}
   [Method](#cfn-bedrockagentcore-gatewaytarget-apigatewaytooloverride-method): {{String}}
   [Name](#cfn-bedrockagentcore-gatewaytarget-apigatewaytooloverride-name): {{String}}

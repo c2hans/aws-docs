@@ -89,7 +89,7 @@ For information about the errors that are common to all actions, see [Common Err
 
 The following is an example of a `GetMetricWidgetImage` call. This example displays a graph showing an image of the `Average` statistic for the `CPUUtilization` metric for two Amazon EC2 instances, with both horizontal and vertical annotations.
 
-```
+```json
 {
    "OutputFormat":"png",
    "MetricWidget":"{\"width\":600,\"height\":395,\"metrics\":[[\"AWS/EC2\",\"CPUUtilization\",\"InstanceId\",\"i-1234567890abcdef0\",{\"stat\":\"Average\"}],[\"AWS/EC2\",\"CPUUtilization\",\"InstanceId\",\"i-0987654321abcdef0\",{\"stat\":\"Average\"}]],\"period\":300,\"start\":\"-P30D\",\"end\":\"PT0H\",\"stacked\":false,\"yAxis\":{\"left\":{\"min\":0.1,\"max\":1},\"right\":{\"min\":0}},\"title\":\"CPU for Two Instances\",\"annotations\":{\"horizontal\":[{\"color\":\"#ff6961\",\"label\":\"Trouble threshold start\",\"fill\":\"above\",\"value\":0.5}],\"vertical\":[{\"visible\":true,\"color\":\"#9467bd\",\"label\":\"Bug fix deployed\",\"value\":\"2018-08-28T15:25:26Z\",\"fill\":\"after\"}]}}"

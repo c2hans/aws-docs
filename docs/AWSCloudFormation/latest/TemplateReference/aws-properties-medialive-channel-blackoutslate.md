@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-blackoutslate-syntax.json"></a>
 
-```
+```json
 {
   "[BlackoutSlateImage](#cfn-medialive-channel-blackoutslate-blackoutslateimage)" : {{InputLocation}},
   "[NetworkEndBlackout](#cfn-medialive-channel-blackoutslate-networkendblackout)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-blackoutslate-syntax.yaml"></a>
 
-```
+```yaml
   [BlackoutSlateImage](#cfn-medialive-channel-blackoutslate-blackoutslateimage): {{
     InputLocation}}
   [NetworkEndBlackout](#cfn-medialive-channel-blackoutslate-networkendblackout): {{String}}

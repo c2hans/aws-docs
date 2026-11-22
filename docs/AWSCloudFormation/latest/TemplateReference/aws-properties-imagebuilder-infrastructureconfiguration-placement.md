@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-infrastructureconfiguration-placement-syntax.json"></a>
 
-```
+```json
 {
   "[AvailabilityZone](#cfn-imagebuilder-infrastructureconfiguration-placement-availabilityzone)" : {{String}},
   "[HostId](#cfn-imagebuilder-infrastructureconfiguration-placement-hostid)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-infrastructureconfiguration-placement-syntax.yaml"></a>
 
-```
+```yaml
   [AvailabilityZone](#cfn-imagebuilder-infrastructureconfiguration-placement-availabilityzone): {{String}}
   [HostId](#cfn-imagebuilder-infrastructureconfiguration-placement-hostid): {{String}}
   [HostResourceGroupArn](#cfn-imagebuilder-infrastructureconfiguration-placement-hostresourcegrouparn): {{String}}

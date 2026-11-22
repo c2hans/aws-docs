@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-groundstation-config-kinesisdatastreamdata-syntax.json"></a>
 
-```
+```json
 {
   "[KinesisDataStreamArn](#cfn-groundstation-config-kinesisdatastreamdata-kinesisdatastreamarn)" : {{String}},
   "[KinesisRoleArn](#cfn-groundstation-config-kinesisdatastreamdata-kinesisrolearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-groundstation-config-kinesisdatastreamdata-syntax.yaml"></a>
 
-```
+```yaml
   [KinesisDataStreamArn](#cfn-groundstation-config-kinesisdatastreamdata-kinesisdatastreamarn): {{String}}
   [KinesisRoleArn](#cfn-groundstation-config-kinesisdatastreamdata-kinesisrolearn): {{String}}
 ```
@@ -59,7 +59,7 @@ The following example creates `KinesisDataStreamData` with the required IAM role
 #### JSON
 <a name="aws-properties-groundstation-config-kinesisdatastreamdata--examples--Create_KinesisDataStreamData--json"></a>
 
-```
+```json
 {
   "KinesisDataStreamData": {
     "KinesisDataStreamArn": "arn:aws:kinesis:us-east-2:123456789012:stream/my-telemetry-stream",
@@ -71,7 +71,7 @@ The following example creates `KinesisDataStreamData` with the required IAM role
 #### YAML
 <a name="aws-properties-groundstation-config-kinesisdatastreamdata--examples--Create_KinesisDataStreamData--yaml"></a>
 
-```
+```yaml
 KinesisDataStreamData:
   KinesisDataStreamArn: arn:aws:kinesis:us-east-2:123456789012:stream/my-telemetry-stream
   KinesisRoleArn: arn:aws:iam::123456789012:role/GroundStationKinesisRole

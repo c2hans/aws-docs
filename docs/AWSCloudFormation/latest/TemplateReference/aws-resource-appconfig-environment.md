@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-appconfig-environment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppConfig::Environment",
   "Properties" : {
@@ -47,7 +47,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-appconfig-environment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppConfig::Environment
 Properties:
   [ApplicationId](#cfn-appconfig-environment-applicationid): {{String}}
@@ -139,7 +139,7 @@ The following example creates an AWS AppConfig environment named MyTestEnvironme
 #### JSON
 <a name="aws-resource-appconfig-environment--examples--environment_example--json"></a>
 
-```
+```json
 Resources": {
     "BasicEnvironment": {
       "Type": "AWS::AppConfig::Environment",
@@ -163,7 +163,7 @@ Resources": {
 #### YAML
 <a name="aws-resource-appconfig-environment--examples--environment_example--yaml"></a>
 
-```
+```yaml
 Resources:
   BasicEnvironment:
     Type: AWS::AppConfig::Environment

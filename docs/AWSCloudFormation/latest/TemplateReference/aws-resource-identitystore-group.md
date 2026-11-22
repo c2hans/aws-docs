@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-identitystore-group-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IdentityStore::Group",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-identitystore-group-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IdentityStore::Group
 Properties:
   [Description](#cfn-identitystore-group-description): {{String}}
@@ -101,7 +101,7 @@ The following example shows how to create a Identity Store `Group` resource:
 #### JSON
 <a name="aws-resource-identitystore-group--examples--Declare_a_Identity_Store_Resource--json"></a>
 
-```
+```json
 {
   "Type": "AWS::IdentityStore::Group",
   "Properties": {
@@ -121,7 +121,7 @@ The following example shows how to create a Identity Store `Group` resource:
 #### YAML
 <a name="aws-resource-identitystore-group--examples--Declare_a_Identity_Store_Resource--yaml"></a>
 
-```
+```yaml
 Type: AWS::IdentityStore::Group
     Properties:
        Description: "Group for Developers"

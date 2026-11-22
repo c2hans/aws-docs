@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-neptunegraph-graph-importoptions-syntax.json"></a>
 
-```
+```json
 {
   "[Neptune](#cfn-neptunegraph-graph-importoptions-neptune)" : {{NeptuneImportOptions}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-neptunegraph-graph-importoptions-syntax.yaml"></a>
 
-```
+```yaml
   [Neptune](#cfn-neptunegraph-graph-importoptions-neptune): {{
     NeptuneImportOptions}}
 ```

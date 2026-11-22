@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codebuild-project-s3logsconfig-syntax.json"></a>
 
-```
+```json
 {
   "[EncryptionDisabled](#cfn-codebuild-project-s3logsconfig-encryptiondisabled)" : {{Boolean}},
   "[Location](#cfn-codebuild-project-s3logsconfig-location)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codebuild-project-s3logsconfig-syntax.yaml"></a>
 
-```
+```yaml
   [EncryptionDisabled](#cfn-codebuild-project-s3logsconfig-encryptiondisabled): {{Boolean}}
   [Location](#cfn-codebuild-project-s3logsconfig-location): {{String}}
   [Status](#cfn-codebuild-project-s3logsconfig-status): {{String}}

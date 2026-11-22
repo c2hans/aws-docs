@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sso-applicationassignment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SSO::ApplicationAssignment",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sso-applicationassignment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SSO::ApplicationAssignment
 Properties:
   [ApplicationArn](#cfn-sso-applicationassignment-applicationarn): {{String}}
@@ -87,7 +87,7 @@ The following example grants the user permission to access the example applicati
 #### JSON
 <a name="aws-resource-sso-applicationassignment--examples--Creating_a_new_application_assignment_for--json"></a>
 
-```
+```json
 "ApplicationAssignment": {
     "Type": "AWS::SSO::ApplicationAssignment",
     "Properties": {
@@ -101,7 +101,7 @@ The following example grants the user permission to access the example applicati
 #### YAML
 <a name="aws-resource-sso-applicationassignment--examples--Creating_a_new_application_assignment_for--yaml"></a>
 
-```
+```yaml
 ApplicationAssignment:
     Type: AWS::SSO::ApplicationAssignment
     Properties:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafregional-ratebasedrule-predicate-syntax.json"></a>
 
-```
+```json
 {
   "[DataId](#cfn-wafregional-ratebasedrule-predicate-dataid)" : {{String}},
   "[Negated](#cfn-wafregional-ratebasedrule-predicate-negated)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafregional-ratebasedrule-predicate-syntax.yaml"></a>
 
-```
+```yaml
   [DataId](#cfn-wafregional-ratebasedrule-predicate-dataid): {{String}}
   [Negated](#cfn-wafregional-ratebasedrule-predicate-negated): {{Boolean}}
   [Type](#cfn-wafregional-ratebasedrule-predicate-type): {{String}}

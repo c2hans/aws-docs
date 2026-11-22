@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lakeformation-permissions-columnwildcard-syntax.json"></a>
 
-```
+```json
 {
   "[ExcludedColumnNames](#cfn-lakeformation-permissions-columnwildcard-excludedcolumnnames)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lakeformation-permissions-columnwildcard-syntax.yaml"></a>
 
-```
+```yaml
   [ExcludedColumnNames](#cfn-lakeformation-permissions-columnwildcard-excludedcolumnnames): {{
     - String}}
 ```

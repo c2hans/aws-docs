@@ -22,7 +22,7 @@ An OC001 response can also occur when the schema change has already completed be
 **DDL and DML in the same transaction**
 Transactions in Aurora DSQL can contain only one DDL statement and can't have both DDL and DML statements. This restriction means that you can't create a table and insert data into the same table within the same transaction. For example, Aurora DSQL supports the following sequential transactions.
 
-```
+```sql
 BEGIN;
   CREATE TABLE mytable (ID_col integer);
 COMMIT;
@@ -33,7 +33,7 @@ COMMIT;
 ```
 Aurora DSQL doesn't support the following transaction, which includes both `CREATE` and `INSERT` statements.
 
-```
+```sql
 BEGIN;
   CREATE TABLE FOO (ID_col integer);
   INSERT into FOO VALUES (1);

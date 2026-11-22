@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-topicidentifierdeclaration-syntax.json"></a>
 
-```
+```json
 {
   "[Identifier](#cfn-quicksight-dashboard-topicidentifierdeclaration-identifier)" : {{String}},
   "[TopicArn](#cfn-quicksight-dashboard-topicidentifierdeclaration-topicarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-topicidentifierdeclaration-syntax.yaml"></a>
 
-```
+```yaml
   [Identifier](#cfn-quicksight-dashboard-topicidentifierdeclaration-identifier): {{String}}
   [TopicArn](#cfn-quicksight-dashboard-topicidentifierdeclaration-topicarn): {{String}}
 ```

@@ -92,7 +92,7 @@ Follow the instructions in [Creating a role for an IAM user](https://docs.aws.am
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement" : [
@@ -198,7 +198,7 @@ Follow the instructions in [Granting users permission to switch roles](https://d
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": {

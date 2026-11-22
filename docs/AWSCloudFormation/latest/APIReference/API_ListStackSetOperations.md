@@ -6,6 +6,8 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 
 Returns summary information about operations performed on a StackSet.
 
+Reports role provisioning and stack instances deployment progress in `StatusDetails.Stages`. The breakdown for each AWS Region is available only from [DescribeStackSetOperation](API_DescribeStackSetOperation.md).
+
 **Note**
 This API provides *eventually consistent* reads meaning it may take some time but will eventually return the most up-to-date data.
 
@@ -109,6 +111,26 @@ https://cloudformation.us-east-1.amazonaws.com/
         <Action>UPDATE</Action>
         <EndTimestamp>2017-08-04T18:03:43.672Z</EndTimestamp>
         <Status>SUCCEEDED</Status>
+        <StatusDetails>
+          <Stages>
+            <RoleProvisioning>
+              <Status>NOT_APPLICABLE</Status>
+            </RoleProvisioning>
+            <StackInstancesDeployment>
+              <Status>SUCCEEDED</Status>
+              <SucceededStackInstancesCount>10</SucceededStackInstancesCount>
+              <FailedStackInstancesCount>0</FailedStackInstancesCount>
+              <CompletedStackInstancesCount>10</CompletedStackInstancesCount>
+              <PendingStackInstancesCount>0</PendingStackInstancesCount>
+              <SkippedStackInstancesCount>0</SkippedStackInstancesCount>
+              <CancelledStackInstancesCount>0</CancelledStackInstancesCount>
+              <PercentageCompleted>100.0</PercentageCompleted>
+            </StackInstancesDeployment>
+          </Stages>
+          <TotalAccountsCount>10</TotalAccountsCount>
+          <TotalStackInstancesCount>10</TotalStackInstancesCount>
+          <FailedStackInstancesCount>0</FailedStackInstancesCount>
+        </StatusDetails>
       </member>
       <member>
         <CreationTimestamp>2017-08-04T17:40:05.828Z</CreationTimestamp>

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sns-topic-loggingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[FailureFeedbackRoleArn](#cfn-sns-topic-loggingconfig-failurefeedbackrolearn)" : {{String}},
   "[Protocol](#cfn-sns-topic-loggingconfig-protocol)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sns-topic-loggingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [FailureFeedbackRoleArn](#cfn-sns-topic-loggingconfig-failurefeedbackrolearn): {{String}}
   [Protocol](#cfn-sns-topic-loggingconfig-protocol): {{String}}
   [SuccessFeedbackRoleArn](#cfn-sns-topic-loggingconfig-successfeedbackrolearn): {{String}}

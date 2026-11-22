@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-guardduty-publishingdestination-tagitem-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-guardduty-publishingdestination-tagitem-key)" : {{String}},
   "[Value](#cfn-guardduty-publishingdestination-tagitem-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-guardduty-publishingdestination-tagitem-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-guardduty-publishingdestination-tagitem-key): {{String}}
   [Value](#cfn-guardduty-publishingdestination-tagitem-value): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-groundstation-config-antennauplinkconfig-syntax.json"></a>
 
-```
+```json
 {
   "[SpectrumConfig](#cfn-groundstation-config-antennauplinkconfig-spectrumconfig)" : {{UplinkSpectrumConfig}},
   "[TargetEirp](#cfn-groundstation-config-antennauplinkconfig-targeteirp)" : {{Eirp}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-groundstation-config-antennauplinkconfig-syntax.yaml"></a>
 
-```
+```yaml
   [SpectrumConfig](#cfn-groundstation-config-antennauplinkconfig-spectrumconfig): {{
     UplinkSpectrumConfig}}
   [TargetEirp](#cfn-groundstation-config-antennauplinkconfig-targeteirp): {{
@@ -67,7 +67,7 @@ The following example creates a Ground Station `AntennaUplinkConfig`
 #### JSON
 <a name="aws-properties-groundstation-config-antennauplinkconfig--examples--Create_an_AntennaUplinkConfig--json"></a>
 
-```
+```json
 {
   "AntennaUplinkConfig": {
     "SpectrumConfig": {
@@ -88,7 +88,7 @@ The following example creates a Ground Station `AntennaUplinkConfig`
 #### YAML
 <a name="aws-properties-groundstation-config-antennauplinkconfig--examples--Create_an_AntennaUplinkConfig--yaml"></a>
 
-```
+```yaml
 AntennaUplinkConfig:
   SpectrumConfig:
     CenterFrequency:

@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudtrail-eventdatastore-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudTrail::EventDataStore",
   "Properties" : {
@@ -46,7 +46,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudtrail-eventdatastore-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudTrail::EventDataStore
 Properties:
   [AdvancedEventSelectors](#cfn-cloudtrail-eventdatastore-advancedeventselectors): {{
@@ -256,7 +256,7 @@ In this example, `FederationEnabled` is set to `true` to enable [Lake query fede
 #### JSON
 <a name="aws-resource-cloudtrail-eventdatastore--examples--Example:_Create_an_event_data_store_for_management_events--json"></a>
 
-```
+```json
 {
     "Parameters": {
         "Name": {
@@ -346,7 +346,7 @@ In this example, `FederationEnabled` is set to `true` to enable [Lake query fede
 #### YAML
 <a name="aws-resource-cloudtrail-eventdatastore--examples--Example:_Create_an_event_data_store_for_management_events--yaml"></a>
 
-```
+```yaml
 Parameters:
   Name:
     Type: String
@@ -399,7 +399,7 @@ The following example creates a destination event data store that collects Insig
 #### JSON
 <a name="aws-resource-cloudtrail-eventdatastore--examples--Example:_Create_a_destination_event_data_store_to_collect_Insights_events--json"></a>
 
-```
+```json
 {
     "Parameters": {
         "Name": {
@@ -487,7 +487,7 @@ The following example creates a destination event data store that collects Insig
 #### YAML
 <a name="aws-resource-cloudtrail-eventdatastore--examples--Example:_Create_a_destination_event_data_store_to_collect_Insights_events--yaml"></a>
 
-```
+```yaml
 Parameters:
   Name:
     Type: String
@@ -538,7 +538,7 @@ The following example creates a source event data store that logs management eve
 #### JSON
 <a name="aws-resource-cloudtrail-eventdatastore--examples--Example:_Create_a_source_event_data_store_that_enables_Insights_events--json"></a>
 
-```
+```json
 {
     "Parameters": {
         "Name": {
@@ -635,7 +635,7 @@ The following example creates a source event data store that logs management eve
 #### YAML
 <a name="aws-resource-cloudtrail-eventdatastore--examples--Example:_Create_a_source_event_data_store_that_enables_Insights_events--yaml"></a>
 
-```
+```yaml
 Parameters:
   Name:
     Type: String

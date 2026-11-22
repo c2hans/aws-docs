@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-s3accesspointattachment-openzfsposixfilesystemuser-syntax.json"></a>
 
-```
+```json
 {
   "[Gid](#cfn-fsx-s3accesspointattachment-openzfsposixfilesystemuser-gid)" : {{Number}},
   "[SecondaryGids](#cfn-fsx-s3accesspointattachment-openzfsposixfilesystemuser-secondarygids)" : {{[ FileSystemGID, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-s3accesspointattachment-openzfsposixfilesystemuser-syntax.yaml"></a>
 
-```
+```yaml
   [Gid](#cfn-fsx-s3accesspointattachment-openzfsposixfilesystemuser-gid): {{Number}}
   [SecondaryGids](#cfn-fsx-s3accesspointattachment-openzfsposixfilesystemuser-secondarygids): {{
     - FileSystemGID}}

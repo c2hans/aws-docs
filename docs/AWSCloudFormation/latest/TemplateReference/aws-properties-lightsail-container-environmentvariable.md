@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lightsail-container-environmentvariable-syntax.json"></a>
 
-```
+```json
 {
   "[Value](#cfn-lightsail-container-environmentvariable-value)" : {{String}},
   "[Variable](#cfn-lightsail-container-environmentvariable-variable)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lightsail-container-environmentvariable-syntax.yaml"></a>
 
-```
+```yaml
   [Value](#cfn-lightsail-container-environmentvariable-value): {{String}}
   [Variable](#cfn-lightsail-container-environmentvariable-variable): {{String}}
 ```

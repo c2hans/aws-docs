@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-clustermarkerconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ClusterMarker](#cfn-quicksight-analysis-clustermarkerconfiguration-clustermarker)" : {{ClusterMarker}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-clustermarkerconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ClusterMarker](#cfn-quicksight-analysis-clustermarkerconfiguration-clustermarker): {{
     ClusterMarker}}
 ```

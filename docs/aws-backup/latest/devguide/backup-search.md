@@ -154,7 +154,7 @@ Once a recovery point has an index, you can update its settings.
 
 Example:
 
-```
+```json
 aws backup update-recovery-point-index-settings
 --recovery-point-arn arn:aws:ec2:us-west-2::snapshot/snap-012345678901234567
 --backup-vault-name {{[vaultname]}} //

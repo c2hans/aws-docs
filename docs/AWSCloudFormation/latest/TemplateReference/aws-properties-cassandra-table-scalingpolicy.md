@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cassandra-table-scalingpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[TargetTrackingScalingPolicyConfiguration](#cfn-cassandra-table-scalingpolicy-targettrackingscalingpolicyconfiguration)" : {{TargetTrackingScalingPolicyConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cassandra-table-scalingpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [TargetTrackingScalingPolicyConfiguration](#cfn-cassandra-table-scalingpolicy-targettrackingscalingpolicyconfiguration): {{
     TargetTrackingScalingPolicyConfiguration}}
 ```

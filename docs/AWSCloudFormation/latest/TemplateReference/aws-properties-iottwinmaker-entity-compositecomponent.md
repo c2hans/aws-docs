@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iottwinmaker-entity-compositecomponent-syntax.json"></a>
 
-```
+```json
 {
   "[ComponentName](#cfn-iottwinmaker-entity-compositecomponent-componentname)" : {{String}},
   "[ComponentPath](#cfn-iottwinmaker-entity-compositecomponent-componentpath)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iottwinmaker-entity-compositecomponent-syntax.yaml"></a>
 
-```
+```yaml
   [ComponentName](#cfn-iottwinmaker-entity-compositecomponent-componentname): {{String}}
   [ComponentPath](#cfn-iottwinmaker-entity-compositecomponent-componentpath): {{String}}
   [ComponentTypeId](#cfn-iottwinmaker-entity-compositecomponent-componenttypeid): {{String}}

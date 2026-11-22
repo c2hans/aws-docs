@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotsitewise-assetmodel-tumblingwindow-syntax.json"></a>
 
-```
+```json
 {
   "[Interval](#cfn-iotsitewise-assetmodel-tumblingwindow-interval)" : {{String}},
   "[Offset](#cfn-iotsitewise-assetmodel-tumblingwindow-offset)" : {{String}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotsitewise-assetmodel-tumblingwindow-syntax.yaml"></a>
 
-```
+```yaml
   [Interval](#cfn-iotsitewise-assetmodel-tumblingwindow-interval): {{String}}
   [Offset](#cfn-iotsitewise-assetmodel-tumblingwindow-offset): {{String}}
 ```

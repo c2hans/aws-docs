@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigatewayv2-apimapping-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGatewayV2::ApiMapping",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigatewayv2-apimapping-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGatewayV2::ApiMapping
 Properties:
   [ApiId](#cfn-apigatewayv2-apimapping-apiid): {{String}}
@@ -101,7 +101,7 @@ The following example creates an `ApiMapping` resource called `MyApiMapping`.
 #### JSON
 <a name="aws-resource-apigatewayv2-apimapping--examples--API_mapping_creation_example--json"></a>
 
-```
+```json
 {
     "MyApiMapping": {
         "Type": "AWS::ApiGatewayV2::ApiMapping",
@@ -121,7 +121,7 @@ The following example creates an `ApiMapping` resource called `MyApiMapping`.
 #### YAML
 <a name="aws-resource-apigatewayv2-apimapping--examples--API_mapping_creation_example--yaml"></a>
 
-```
+```yaml
 MyApiMapping:
   Type: 'AWS::ApiGatewayV2::ApiMapping'
   Properties:

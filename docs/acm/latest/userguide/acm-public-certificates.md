@@ -75,7 +75,7 @@ Depending on how you have ordered the list, a certificate you are looking for mi
 
 Use the [request-certificate](https://docs.aws.amazon.com/cli/latest/reference/acm/request-certificate.html) command to request a new public ACM certificate on the command line. Optional values for the validation method are DNS and EMAIL. Optional values for the key algorithm are RSA\_2048 (the default if the parameter is not explicitly provided), EC\_prime256v1, and EC\_secp384r1.
 
-```
+```bash
 aws acm request-certificate \
 --domain-name www.example.com \
 --key-algorithm EC_Prime256v1 \
@@ -85,11 +85,11 @@ aws acm request-certificate \
 ```
 
 **Note**
-The `CertificateTransparencyLoggingPreference` option is deprecated. All public ACM certificates are automatically recorded in certificate transparency logs.
+The `CertificateTransparencyLoggingPreference` option is deprecated. All ACM public certificates are automatically recorded in certificate transparency logs. Amazon N2 certificates are not recorded, and the option has no effect on them.
 
 This command outputs the Amazon Resource Name (ARN) of your new public certificate.
 
-```
+```json
 {
     "CertificateArn": "arn:aws:acm:{{Region}}:{{444455556666}}:certificate/{{certificate_ID}}"
 }

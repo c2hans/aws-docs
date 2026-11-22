@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-microvmimage-cloudwatchlogging-syntax.json"></a>
 
-```
+```json
 {
   "[LogGroup](#cfn-lambda-microvmimage-cloudwatchlogging-loggroup)" : {{String}},
   "[LogStream](#cfn-lambda-microvmimage-cloudwatchlogging-logstream)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-microvmimage-cloudwatchlogging-syntax.yaml"></a>
 
-```
+```yaml
   [LogGroup](#cfn-lambda-microvmimage-cloudwatchlogging-loggroup): {{String}}
   [LogStream](#cfn-lambda-microvmimage-cloudwatchlogging-logstream): {{String}}
 ```

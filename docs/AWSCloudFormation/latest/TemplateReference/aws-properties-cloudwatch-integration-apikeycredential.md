@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-integration-apikeycredential-syntax.json"></a>
 
-```
+```json
 {
   "[ApiKeyValue](#cfn-cloudwatch-integration-apikeycredential-apikeyvalue)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-integration-apikeycredential-syntax.yaml"></a>
 
-```
+```yaml
   [ApiKeyValue](#cfn-cloudwatch-integration-apikeycredential-apikeyvalue): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-globalaccelerator-accelerator-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::GlobalAccelerator::Accelerator",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-globalaccelerator-accelerator-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::GlobalAccelerator::Accelerator
 Properties:
   [Enabled](#cfn-globalaccelerator-accelerator-enabled): {{Boolean}}
@@ -161,7 +161,7 @@ These are examples to specify an accelerator.
 #### JSON
 <a name="aws-resource-globalaccelerator-accelerator--examples--Add_an_accelerator--json"></a>
 
-```
+```json
 "Resources": {
     "Accelerator": {
         "Type": "AWS::GlobalAccelerator::Accelerator",
@@ -187,7 +187,7 @@ These are examples to specify an accelerator.
 #### YAML
 <a name="aws-resource-globalaccelerator-accelerator--examples--Add_an_accelerator--yaml"></a>
 
-```
+```yaml
 Accelerator:
   Type: AWS::GlobalAccelerator::Accelerator
   Properties:

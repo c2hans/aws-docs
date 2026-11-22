@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-space-spaceresource-syntax.json"></a>
 
-```
+```json
 {
   "[ResourceArn](#cfn-quicksight-space-spaceresource-resourcearn)" : {{String}},
   "[ResourceType](#cfn-quicksight-space-spaceresource-resourcetype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-space-spaceresource-syntax.yaml"></a>
 
-```
+```yaml
   [ResourceArn](#cfn-quicksight-space-spaceresource-resourcearn): {{String}}
   [ResourceType](#cfn-quicksight-space-spaceresource-resourcetype): {{String}}
 ```

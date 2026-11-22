@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-inspectorv2-codesecurityscanconfiguration-periodicscanconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[frequency](#cfn-inspectorv2-codesecurityscanconfiguration-periodicscanconfiguration-frequency)" : {{String}},
   "[frequencyExpression](#cfn-inspectorv2-codesecurityscanconfiguration-periodicscanconfiguration-frequencyexpression)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-inspectorv2-codesecurityscanconfiguration-periodicscanconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [frequency](#cfn-inspectorv2-codesecurityscanconfiguration-periodicscanconfiguration-frequency): {{String}}
   [frequencyExpression](#cfn-inspectorv2-codesecurityscanconfiguration-periodicscanconfiguration-frequencyexpression): {{String}}
 ```

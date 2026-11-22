@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-axislabelreferenceoptions-syntax.json"></a>
 
-```
+```json
 {
   "[Column](#cfn-quicksight-template-axislabelreferenceoptions-column)" : {{ColumnIdentifier}},
   "[FieldId](#cfn-quicksight-template-axislabelreferenceoptions-fieldid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-axislabelreferenceoptions-syntax.yaml"></a>
 
-```
+```yaml
   [Column](#cfn-quicksight-template-axislabelreferenceoptions-column): {{
     ColumnIdentifier}}
   [FieldId](#cfn-quicksight-template-axislabelreferenceoptions-fieldid): {{String}}

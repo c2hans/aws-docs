@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-cluster-executecommandlogconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CloudWatchEncryptionEnabled](#cfn-ecs-cluster-executecommandlogconfiguration-cloudwatchencryptionenabled)" : {{Boolean}},
   "[CloudWatchLogGroupName](#cfn-ecs-cluster-executecommandlogconfiguration-cloudwatchloggroupname)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-cluster-executecommandlogconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CloudWatchEncryptionEnabled](#cfn-ecs-cluster-executecommandlogconfiguration-cloudwatchencryptionenabled): {{Boolean}}
   [CloudWatchLogGroupName](#cfn-ecs-cluster-executecommandlogconfiguration-cloudwatchloggroupname): {{String}}
   [S3BucketName](#cfn-ecs-cluster-executecommandlogconfiguration-s3bucketname): {{String}}

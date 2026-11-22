@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-metric-availablefilter-syntax.json"></a>
 
-```
+```json
 {
   "[Id](#cfn-connect-metric-availablefilter-id)" : {{String}},
   "[Type](#cfn-connect-metric-availablefilter-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-metric-availablefilter-syntax.yaml"></a>
 
-```
+```yaml
   [Id](#cfn-connect-metric-availablefilter-id): {{String}}
   [Type](#cfn-connect-metric-availablefilter-type): {{String}}
 ```

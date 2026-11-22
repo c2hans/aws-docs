@@ -15,11 +15,11 @@ This section explores additional reasons that can prevent vacuuming from making 
 
 A logically inconsistent index can prevent autovacuum from making progress. The following errors or similar errors are logged during either the vacuum phase of the index or when the index is accessed by SQL statements.
 
-```
+```sql
 ERROR: right sibling's left-link doesn't match:block 5 links to 10 instead of expected 2 in index ix_name
 ```
 
-```
+```sql
 ERROR: failed to re-find parent key in index "XXXXXXXXXX" for deletion target page XXX
 CONTEXT:  while vacuuming index index_name of relation {{schema.table}}
 ```

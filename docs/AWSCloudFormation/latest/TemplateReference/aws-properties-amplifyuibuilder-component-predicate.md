@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amplifyuibuilder-component-predicate-syntax.json"></a>
 
-```
+```json
 {
   "[And](#cfn-amplifyuibuilder-component-predicate-and)" : {{[ Predicate, ... ]}},
   "[Field](#cfn-amplifyuibuilder-component-predicate-field)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amplifyuibuilder-component-predicate-syntax.yaml"></a>
 
-```
+```yaml
   [And](#cfn-amplifyuibuilder-component-predicate-and): {{
     - Predicate}}
   [Field](#cfn-amplifyuibuilder-component-predicate-field): {{String}}

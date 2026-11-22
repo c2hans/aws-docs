@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-waf-xssmatchset-fieldtomatch-syntax.json"></a>
 
-```
+```json
 {
   "[Data](#cfn-waf-xssmatchset-fieldtomatch-data)" : {{String}},
   "[Type](#cfn-waf-xssmatchset-fieldtomatch-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-waf-xssmatchset-fieldtomatch-syntax.yaml"></a>
 
-```
+```yaml
   [Data](#cfn-waf-xssmatchset-fieldtomatch-data): {{String}}
   [Type](#cfn-waf-xssmatchset-fieldtomatch-type): {{String}}
 ```

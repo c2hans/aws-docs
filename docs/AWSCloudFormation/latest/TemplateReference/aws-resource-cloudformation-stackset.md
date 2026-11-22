@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudformation-stackset-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudFormation::StackSet",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudformation-stackset-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudFormation::StackSet
 Properties:
   [AdministrationRoleARN](#cfn-cloudformation-stackset-administrationrolearn): {{String}}
@@ -239,7 +239,7 @@ The following example creates a StackSet and specifies `ManagedExecution`. With 
 #### JSON
 <a name="aws-resource-cloudformation-stackset--examples--Activate_managed_execution_for_your_StackSet--json"></a>
 
-```
+```json
 {
     "TestStackSet1": {
         "Type": "AWS::CloudFormation::StackSet",
@@ -266,7 +266,7 @@ The following example creates a StackSet and specifies `ManagedExecution`. With 
 #### YAML
 <a name="aws-resource-cloudformation-stackset--examples--Activate_managed_execution_for_your_StackSet--yaml"></a>
 
-```
+```yaml
 TestStackSet1:
   Type: AWS::CloudFormation::StackSet
   DeletionPolicy: Retain
@@ -300,7 +300,7 @@ In the following example, a secrets resolution is avoided at the stack level by 
 #### JSON
 <a name="aws-resource-cloudformation-stackset--examples--Specifying_secrets_in--json"></a>
 
-```
+```json
 {
     "Fn::Join": [
         "",
@@ -319,7 +319,7 @@ In the following example, a secrets resolution is avoided at the stack level by 
 #### YAML
 <a name="aws-resource-cloudformation-stackset--examples--Specifying_secrets_in--yaml"></a>
 
-```
+```yaml
 !Join
 - ''
 - - '{{'

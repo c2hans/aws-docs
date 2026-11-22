@@ -16,7 +16,7 @@ The following code examples show how to perform advanced query operations in Dyn
 **SDK for Java 2.x**
 Query with strongly consistent reads using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
@@ -71,7 +71,7 @@ import java.util.logging.Logger;
 ```
 Query using a Global Secondary Index with AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -171,7 +171,7 @@ import java.util.Map;
 ```
 Query with pagination using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -258,7 +258,7 @@ import java.util.Map;
 ```
 Query with complex filters using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -332,7 +332,7 @@ import java.util.logging.Logger;
 ```
 Query with a dynamically constructed filter expression using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -458,7 +458,7 @@ import java.util.Map;
 ```
 Query with a filter expression and limit using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -535,7 +535,7 @@ import java.util.logging.Logger;
 **SDK for JavaScript (v3)**
 Query with strongly consistent reads using AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient, QueryCommand } = require("@aws-sdk/client-dynamodb");
 
 /**
@@ -583,7 +583,7 @@ async function queryWithConsistentRead(
 ```
 Query using a Global Secondary Index with AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient, QueryCommand } = require("@aws-sdk/client-dynamodb");
 
 /**
@@ -661,7 +661,7 @@ async function queryGSI(
 ```
 Query with pagination using AWS SDK for JavaScript.
 
-```
+```javascript
 /**
  * Example demonstrating how to handle large query result sets in DynamoDB using pagination
  *
@@ -770,7 +770,7 @@ module.exports = { queryWithPagination };
 ```
 Query with complex filters using AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient, QueryCommand } = require("@aws-sdk/client-dynamodb");
 
 /**
@@ -825,7 +825,7 @@ async function queryWithComplexFilter(
 ```
 Query with a dynamically constructed filter expression using AWS SDK for JavaScript.
 
-```
+```javascript
 const { DynamoDBClient, QueryCommand } = require("@aws-sdk/client-dynamodb");
 
 async function queryWithDynamicFilter(
@@ -902,7 +902,7 @@ async function queryWithDynamicFilter(
 **SDK for Python (Boto3)**
 Query with strongly consistent reads using AWS SDK for Python (Boto3).
 
-```
+```python
 import time
 
 import boto3
@@ -947,7 +947,7 @@ def query_with_consistent_read(
 ```
 Query using a Global Secondary Index with AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 from boto3.dynamodb.conditions import Key
 
@@ -998,7 +998,7 @@ def query_gsi(table_name, index_name, partition_key_name, partition_key_value):
 ```
 Query with pagination using AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 from boto3.dynamodb.conditions import Key
 
@@ -1123,7 +1123,7 @@ def query_with_pagination_generator(
 ```
 Query with complex filters using AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 from boto3.dynamodb.conditions import Attr, Key
 
@@ -1277,7 +1277,7 @@ def query_with_complex_filter_and_or(
 ```
 Query with a dynamically constructed filter expression using AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 from boto3.dynamodb.conditions import Attr, Key
 
@@ -1354,7 +1354,7 @@ def query_with_dynamic_filter(
 ```
 Query with a filter expression and limit using AWS SDK for Python (Boto3).
 
-```
+```python
 import boto3
 from boto3.dynamodb.conditions import Attr, Key
 

@@ -43,7 +43,7 @@ To require a different scope on another method, repeat these steps for that meth
 
 The following [put-method](https://docs.aws.amazon.com/cli/latest/reference/apigateway/put-method.html) command attaches a JWT authorizer to a method and requires the `orders:read` scope.
 
-```
+```shell
 aws apigateway put-method \
     --rest-api-id {{api-id}} \
     --resource-id {{resource-id}} \
@@ -55,7 +55,7 @@ aws apigateway put-method \
 
 To require a different scope on another method, run the command again with that method and its scope. The following command requires the `orders:write` scope on the `POST` method of the same resource.
 
-```
+```shell
 aws apigateway put-method \
     --rest-api-id {{api-id}} \
     --resource-id {{resource-id}} \

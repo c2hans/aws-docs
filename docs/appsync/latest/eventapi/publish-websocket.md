@@ -23,7 +23,7 @@ Each specified event in your publish request must be a stringified valid JSON va
 
 The following is an example of a request written in JavaScript that uses an API key for authorization.
 
-```
+```js
 const message = {
   id: '{{uniqueID}}', // Your unique id for this message.
   type: 'publish',
@@ -38,7 +38,7 @@ const message = {
 
 You can use your browser’s WebSocket API to connect and publish the events. The following simplified example uses an API key that sends the message. Notice that you don't need to subscribe to any channel before publishing.
 
-```
+```js
 const HTTP_DOMAIN = '{{your api HTTP domain }}'
 const REALTIME_DOMAIN = '{{api real-time domain}}'
 const API_KEY = '{{your api key}}'

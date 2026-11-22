@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-ratelimitja4fingerprint-syntax.json"></a>
 
-```
+```json
 {
   "[FallbackBehavior](#cfn-wafv2-webacl-ratelimitja4fingerprint-fallbackbehavior)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-ratelimitja4fingerprint-syntax.yaml"></a>
 
-```
+```yaml
   [FallbackBehavior](#cfn-wafv2-webacl-ratelimitja4fingerprint-fallbackbehavior): {{String}}
 ```
 

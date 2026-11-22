@@ -23,6 +23,6 @@ Depending on how you have ordered the list, a certificate you are looking for mi
 
 Use the [delete-certificate](https://docs.aws.amazon.com/cli/latest/reference/acm/delete-certificate.html) command to delete a certificate, as shown in the following command:
 
-```
+```bash
 $ aws acm delete-certificate --certificate-arn arn:aws:acm:{{Region}}:{{444455556666}}:certificate/{{certificate_ID}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-neptunegraph-graphsnapshot-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::NeptuneGraph::GraphSnapshot",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-neptunegraph-graphsnapshot-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::NeptuneGraph::GraphSnapshot
 Properties:
   [GraphIdentifier](#cfn-neptunegraph-graphsnapshot-graphidentifier): {{String}}

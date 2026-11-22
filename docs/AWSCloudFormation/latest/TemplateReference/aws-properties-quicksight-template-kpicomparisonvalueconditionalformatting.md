@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-kpicomparisonvalueconditionalformatting-syntax.json"></a>
 
-```
+```json
 {
   "[Icon](#cfn-quicksight-template-kpicomparisonvalueconditionalformatting-icon)" : {{ConditionalFormattingIcon}},
   "[TextColor](#cfn-quicksight-template-kpicomparisonvalueconditionalformatting-textcolor)" : {{ConditionalFormattingColor}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-kpicomparisonvalueconditionalformatting-syntax.yaml"></a>
 
-```
+```yaml
   [Icon](#cfn-quicksight-template-kpicomparisonvalueconditionalformatting-icon): {{
     ConditionalFormattingIcon}}
   [TextColor](#cfn-quicksight-template-kpicomparisonvalueconditionalformatting-textcolor): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appconfig-experimentdefinition-attributevalue-syntax.json"></a>
 
-```
+```json
 {
   "[BooleanValue](#cfn-appconfig-experimentdefinition-attributevalue-booleanvalue)" : {{Boolean}},
   "[NumberArray](#cfn-appconfig-experimentdefinition-attributevalue-numberarray)" : {{[ Number, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appconfig-experimentdefinition-attributevalue-syntax.yaml"></a>
 
-```
+```yaml
   [BooleanValue](#cfn-appconfig-experimentdefinition-attributevalue-booleanvalue): {{
     Boolean}}
   [NumberArray](#cfn-appconfig-experimentdefinition-attributevalue-numberarray): {{

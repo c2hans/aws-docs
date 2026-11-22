@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apigatewayv2-routingrule-matchheadervalue-syntax.json"></a>
 
-```
+```json
 {
   "[Header](#cfn-apigatewayv2-routingrule-matchheadervalue-header)" : {{String}},
   "[ValueGlob](#cfn-apigatewayv2-routingrule-matchheadervalue-valueglob)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apigatewayv2-routingrule-matchheadervalue-syntax.yaml"></a>
 
-```
+```yaml
   [Header](#cfn-apigatewayv2-routingrule-matchheadervalue-header): {{String}}
   [ValueGlob](#cfn-apigatewayv2-routingrule-matchheadervalue-valueglob): {{String}}
 ```

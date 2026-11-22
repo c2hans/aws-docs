@@ -14,7 +14,7 @@ The `UpdateItem` request enables you to modify existing items in DynamoDB throug
 
 The `UpdateItem` request has the following structure:
 
-```
+```TypeScript
 type DynamoDBUpdateItemRequest = {
   operation: 'UpdateItem';
   key: { [key: string]: any };

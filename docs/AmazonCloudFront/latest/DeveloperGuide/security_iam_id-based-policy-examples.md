@@ -34,7 +34,7 @@ For more information about best practices in IAM, see [Security best practices i
 
 This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -79,7 +79,7 @@ The following shows a permissions policy. The `Sid`, or statement ID, is optiona
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [
@@ -109,7 +109,7 @@ To grant full access to the CloudFront console, you grant the permissions in the
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -226,7 +226,7 @@ The following permissions policy grants the user permissions to view all distrib
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -270,7 +270,7 @@ With the following permissions policy, you can create, update, and delete distri
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -320,7 +320,7 @@ With the following permissions policy, you can create and list invalidations. It
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -368,7 +368,7 @@ The following permission policy grants the user permission to create and list di
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

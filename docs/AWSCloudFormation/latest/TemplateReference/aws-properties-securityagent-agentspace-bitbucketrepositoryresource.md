@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityagent-agentspace-bitbucketrepositoryresource-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-securityagent-agentspace-bitbucketrepositoryresource-name)" : {{String}},
   "[Workspace](#cfn-securityagent-agentspace-bitbucketrepositoryresource-workspace)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityagent-agentspace-bitbucketrepositoryresource-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-securityagent-agentspace-bitbucketrepositoryresource-name): {{String}}
   [Workspace](#cfn-securityagent-agentspace-bitbucketrepositoryresource-workspace): {{String}}
 ```

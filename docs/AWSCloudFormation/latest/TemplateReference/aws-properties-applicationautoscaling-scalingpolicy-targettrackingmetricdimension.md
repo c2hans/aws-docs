@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-applicationautoscaling-scalingpolicy-targettrackingmetricdimension-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-applicationautoscaling-scalingpolicy-targettrackingmetricdimension-name)" : {{String}},
   "[Value](#cfn-applicationautoscaling-scalingpolicy-targettrackingmetricdimension-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-applicationautoscaling-scalingpolicy-targettrackingmetricdimension-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-applicationautoscaling-scalingpolicy-targettrackingmetricdimension-name): {{String}}
   [Value](#cfn-applicationautoscaling-scalingpolicy-targettrackingmetricdimension-value): {{String}}
 ```

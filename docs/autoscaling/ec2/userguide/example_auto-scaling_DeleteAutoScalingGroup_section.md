@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/ResilientService/AutoScalerActions#code-examples).
 Update the minimum size of an Auto Scaling group to zero, terminate all instances in the group, and delete the group.
 
-```
+```csharp
     /// <summary>
     /// Try to terminate an instance by its Id.
     /// </summary>
@@ -113,7 +113,7 @@ Update the minimum size of an Auto Scaling group to zero, terminate all instance
     }
 ```
 
-```
+```csharp
     /// <summary>
     /// Delete an Auto Scaling group.
     /// </summary>
@@ -147,7 +147,7 @@ Update the minimum size of an Auto Scaling group to zero, terminate all instance
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/autoscaling#code-examples).
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -205,7 +205,7 @@ For more information, see [Deleting your Auto Scaling infrastructure](https://do
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/autoscale#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.autoscaling.AutoScalingClient;
 import software.amazon.awssdk.services.autoscaling.model.AutoScalingException;
@@ -269,7 +269,7 @@ public class DeleteAutoScalingGroup {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/autoscale#code-examples).
 
-```
+```kotlin
 suspend fun deleteSpecificAutoScalingGroup(groupName: String) {
     val deleteAutoScalingGroupRequest =
         DeleteAutoScalingGroupRequest {
@@ -291,7 +291,7 @@ suspend fun deleteSpecificAutoScalingGroup(groupName: String) {
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/auto-scaling#code-examples).
 
-```
+```php
     public function deleteAutoScalingGroup($autoScalingGroupName)
     {
         return $this->autoScalingClient->deleteAutoScalingGroup([
@@ -308,7 +308,7 @@ suspend fun deleteSpecificAutoScalingGroup(groupName: String) {
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified Auto Scaling group if it has no running instances. You are prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASAutoScalingGroup -AutoScalingGroupName my-asg
 ```
 **Output:**
@@ -321,12 +321,12 @@ Performing operation "Remove-ASAutoScalingGroup (DeleteAutoScalingGroup)" on Tar
 ```
 **Example 2: If you specify the Force parameter, you are not prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASAutoScalingGroup -AutoScalingGroupName my-asg -Force
 ```
 **Example 3: This example deletes the specified Auto Scaling group and terminates any running instances that it contains.**
 
-```
+```powershell
 Remove-ASAutoScalingGroup -AutoScalingGroupName my-asg -ForceDelete $true -Force
 ```
 +  For API details, see [DeleteAutoScalingGroup](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -334,7 +334,7 @@ Remove-ASAutoScalingGroup -AutoScalingGroupName my-asg -ForceDelete $true -Force
 **Tools for PowerShell V5**
 **Example 1: This example deletes the specified Auto Scaling group if it has no running instances. You are prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASAutoScalingGroup -AutoScalingGroupName my-asg
 ```
 **Output:**
@@ -347,12 +347,12 @@ Performing operation "Remove-ASAutoScalingGroup (DeleteAutoScalingGroup)" on Tar
 ```
 **Example 2: If you specify the Force parameter, you are not prompted for confirmation before the operation proceeds.**
 
-```
+```powershell
 Remove-ASAutoScalingGroup -AutoScalingGroupName my-asg -Force
 ```
 **Example 3: This example deletes the specified Auto Scaling group and terminates any running instances that it contains.**
 
-```
+```powershell
 Remove-ASAutoScalingGroup -AutoScalingGroupName my-asg -ForceDelete $true -Force
 ```
 +  For API details, see [DeleteAutoScalingGroup](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -364,7 +364,7 @@ Remove-ASAutoScalingGroup -AutoScalingGroupName my-asg -ForceDelete $true -Force
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/auto-scaling#code-examples).
 Update the minimum size of an Auto Scaling group to zero, terminate all instances in the group, and delete the group.
 
-```
+```python
 class AutoScalingWrapper:
     """
     Encapsulates Amazon EC2 Auto Scaling and EC2 management actions.
@@ -464,7 +464,7 @@ class AutoScalingWrapper:
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/auto-scaling#code-examples).
 
-```
+```rust
 async fn delete_group(client: &Client, name: &str, force: bool) -> Result<(), Error> {
     client
         .delete_auto_scaling_group()
@@ -486,7 +486,7 @@ async fn delete_group(client: &Client, name: &str, force: bool) -> Result<(), Er
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/asc#code-examples).
 
-```
+```sap-abap
     " Example: iv_group_name = 'my-auto-scaling-group'
 
     TRY.

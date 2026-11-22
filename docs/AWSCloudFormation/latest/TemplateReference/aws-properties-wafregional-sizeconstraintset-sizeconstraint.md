@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafregional-sizeconstraintset-sizeconstraint-syntax.json"></a>
 
-```
+```json
 {
   "[ComparisonOperator](#cfn-wafregional-sizeconstraintset-sizeconstraint-comparisonoperator)" : {{String}},
   "[FieldToMatch](#cfn-wafregional-sizeconstraintset-sizeconstraint-fieldtomatch)" : {{FieldToMatch}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafregional-sizeconstraintset-sizeconstraint-syntax.yaml"></a>
 
-```
+```yaml
   [ComparisonOperator](#cfn-wafregional-sizeconstraintset-sizeconstraint-comparisonoperator): {{String}}
   [FieldToMatch](#cfn-wafregional-sizeconstraintset-sizeconstraint-fieldtomatch): {{
     FieldToMatch}}

@@ -11,14 +11,14 @@ Shows the list of columns for the specified Athena or AWS Glue Data Catalog view
 ## Synopsis
 <a name="synopsis"></a>
 
-```
+```sql
 DESCRIBE [{{db_name}}.]{{view_name}}
 ```
 
 ## Example
 <a name="examples"></a>
 
-```
+```sql
 DESCRIBE orders
 ```
 

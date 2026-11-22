@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-wordcloudchartconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CategoryLabelOptions](#cfn-quicksight-analysis-wordcloudchartconfiguration-categorylabeloptions)" : {{ChartAxisLabelOptions}},
   "[FieldWells](#cfn-quicksight-analysis-wordcloudchartconfiguration-fieldwells)" : {{WordCloudFieldWells}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-wordcloudchartconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CategoryLabelOptions](#cfn-quicksight-analysis-wordcloudchartconfiguration-categorylabeloptions): {{
     ChartAxisLabelOptions}}
   [FieldWells](#cfn-quicksight-analysis-wordcloudchartconfiguration-fieldwells): {{

@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dms-migrationproject-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-dms-migrationproject-tag-key)" : {{String}},
   "[Value](#cfn-dms-migrationproject-tag-value)" : {{String}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dms-migrationproject-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-dms-migrationproject-tag-key): {{String}}
   [Value](#cfn-dms-migrationproject-tag-value): {{String}}
 ```

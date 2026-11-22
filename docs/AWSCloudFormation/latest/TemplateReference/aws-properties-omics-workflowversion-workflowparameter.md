@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-omics-workflowversion-workflowparameter-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-omics-workflowversion-workflowparameter-description)" : {{String}},
   "[Optional](#cfn-omics-workflowversion-workflowparameter-optional)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-omics-workflowversion-workflowparameter-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-omics-workflowversion-workflowparameter-description): {{String}}
   [Optional](#cfn-omics-workflowversion-workflowparameter-optional): {{Boolean}}
 ```

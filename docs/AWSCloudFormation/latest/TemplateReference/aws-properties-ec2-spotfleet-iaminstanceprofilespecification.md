@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-spotfleet-iaminstanceprofilespecification-syntax.json"></a>
 
-```
+```json
 {
   "[Arn](#cfn-ec2-spotfleet-iaminstanceprofilespecification-arn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-spotfleet-iaminstanceprofilespecification-syntax.yaml"></a>
 
-```
+```yaml
   [Arn](#cfn-ec2-spotfleet-iaminstanceprofilespecification-arn): {{String}}
 ```
 

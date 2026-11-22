@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-groundstation-config-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::GroundStation::Config",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-groundstation-config-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::GroundStation::Config
 Properties:
   [ConfigData](#cfn-groundstation-config-configdata): {{

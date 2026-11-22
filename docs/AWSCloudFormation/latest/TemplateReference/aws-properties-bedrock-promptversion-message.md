@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-promptversion-message-syntax.json"></a>
 
-```
+```json
 {
   "[Content](#cfn-bedrock-promptversion-message-content)" : {{[ ContentBlock, ... ]}},
   "[Role](#cfn-bedrock-promptversion-message-role)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-promptversion-message-syntax.yaml"></a>
 
-```
+```yaml
   [Content](#cfn-bedrock-promptversion-message-content): {{
     - ContentBlock}}
   [Role](#cfn-bedrock-promptversion-message-role): {{String}}

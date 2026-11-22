@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-mediaconvert-preset-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MediaConvert::Preset",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-mediaconvert-preset-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MediaConvert::Preset
 Properties:
   [Category](#cfn-mediaconvert-preset-category): {{String}}
@@ -137,7 +137,7 @@ For more information about creating an output preset model in JSON or YAML for t
 #### JSON
 <a name="aws-resource-mediaconvert-preset--examples--Output_Preset_Model_for_SettingsJson--json"></a>
 
-```
+```json
 {
     "AudioDescriptions": [
         {
@@ -232,7 +232,7 @@ For more information about creating an output preset model in JSON or YAML for t
 #### YAML
 <a name="aws-resource-mediaconvert-preset--examples--Output_Preset_Model_for_SettingsJson--yaml"></a>
 
-```
+```yaml
 ---
 AudioDescriptions:
 - AudioType: 0

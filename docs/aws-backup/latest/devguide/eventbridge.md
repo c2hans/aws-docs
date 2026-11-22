@@ -43,7 +43,7 @@ The following are example events.
 ### State: FAILED
 <a name="backup-job-state-change-failed"></a>
 
-```
+```json
 {
   "version": "0",
   "id": "710b0398-d48e-f3c3-afca-cfeb2fdaa656",
@@ -74,7 +74,7 @@ The following are example events.
 ### State: COMPLETED
 <a name="backup-job-state-change-completed"></a>
 
-```
+```json
 {
   "version": "0",
   "id": "dafac799-9b88-0134-26b7-fef4d54a134f",
@@ -108,7 +108,7 @@ The following are example events.
 ### State: RUNNING
 <a name="backup-job-state-change-running"></a>
 
-```
+```json
 {
   "version": "0",
   "id": "44946c39-b519-3505-44e6-ba74afeb2e30",
@@ -145,7 +145,7 @@ The following are example events.
 ### State: ABORTED
 <a name="backup-job-state-change-aborted"></a>
 
-```
+```json
 {
   "version": "0",
   "id": "4c91ceb0-b798-da82-6818-c29b3dce7543",
@@ -176,7 +176,7 @@ The following are example events.
 ### State: EXPIRED
 <a name="backup-job-state-change-expired"></a>
 
-```
+```json
 {
   "version": "0",
   "id": "1d7bbc04-6120-1145-13b9-49b0af465328",
@@ -213,7 +213,7 @@ The following are example events.
 ### State: PENDING
 <a name="backup-job-state-change-pending"></a>
 
-```
+```json
 {
   "version": "0",
   "id": "64dd1897-f863-31a3-9ee5-b05e306d81ff",
@@ -243,7 +243,7 @@ The following are example events.
 ### State: CREATED
 <a name="backup-job-state-change-created"></a>
 
-```
+```json
 {
   "version": "0",
   "id": "29af2bf2-eace-58ab-da3a-8c0bf738d692",
@@ -274,7 +274,7 @@ The following are example events.
 ### State: MODIFIED
 <a name="backup-plan-state-change-modified"></a>
 
-```
+```json
 {
   "version": "0",
   "id": "2895aefb-dd4a-0a23-6071-2652abd92c3f",
@@ -298,7 +298,7 @@ The following are example events.
 ### State: DELETED
 <a name="backup-plan-state-change-deleted"></a>
 
-```
+```json
 {
   "version": "0",
   "id": "33fc5c1d-6db2-b3d9-1e70-1c9a2c23645c",
@@ -322,7 +322,7 @@ The following are example events.
 ### State: CREATED
 <a name="backup-plan-state-change-created"></a>
 
-```
+```json
 {
   "version": "0",
   "id": "b64fb2d0-ae16-ff9a-faf6-0bdd0d4bfdef",
@@ -356,7 +356,7 @@ The following are example events.
 ### State: CREATED
 <a name="backup-vault-state-change-created"></a>
 
-```
+```json
 {
   "version": "0",
   "id": "d415609e-5f35-d9a2-76d1-613683e4e024",
@@ -378,7 +378,7 @@ The following are example events.
 ### State: MODIFIED
 <a name="backup-vault-state-change-modified"></a>
 
-```
+```json
 {
   "version": "0",
   "id": "1a2b3cd4-5e6f-7g8h-9i0j-123456k7l890",
@@ -401,7 +401,7 @@ The following are example events.
 ### State: DELETED
 <a name="backup-vault-state-change-deleted"></a>
 
-```
+```json
 {
   "version": "0",
   "id": "344bccc1-6d2e-da93-3adf-b3f82460294d",
@@ -434,7 +434,7 @@ The following are example events.
 ### State: FAILED
 <a name="copy-job-state-change-failed"></a>
 
-```
+```json
 {
   "version": "0",
   "id": "4660bc92-a44d-c939-4542-cda503f14855",
@@ -466,7 +466,7 @@ The following are example events.
 ### State: RUNNING
 <a name="copy-job-state-change-running"></a>
 
-```
+```json
 {
   "version": "0",
   "id": "d17480ae-7042-edb2-0ff5-8b94822c58e4",
@@ -502,7 +502,7 @@ The following are example events.
 ### State: COMPLETED
 <a name="copy-job-state-change-completed"></a>
 
-```
+```json
 {
   "version": "0",
   "id": "47deb974-6473-aef1-56c2-52c3eaedfceb",
@@ -539,7 +539,7 @@ The following are example events.
 ### State: CREATED
 <a name="copy-job-state-change-created"></a>
 
-```
+```json
 {
   "version": "0",
   "id": "8398a4c4-8fe8-2b49-a4b9-fd4fdcd34a4e",
@@ -577,7 +577,7 @@ The following are the events.
 ### State: COMPLETED
 <a name="recovery-point-state-change-completed"></a>
 
-```
+```json
 {
     "version": "0",
     "id": "ab32977c-378d-2122-e985-fgh4596f0709",
@@ -621,7 +621,7 @@ The following are the events.
 
 The following is an example event.
 
-```
+```json
 {
   "version": "0",
   "id": "e7ed82ba-4955-4de5-10d6-dbafcfb68b4f",
@@ -656,7 +656,7 @@ The following are example events. Note that your use case of a restore job will 
 ### State: FAILED
 <a name="restore-job-state-change-failed"></a>
 
-```
+```json
 {
   "version": "0",
   "id": "ab32977c-378d-2122-e985-fgh4596f0709",
@@ -684,7 +684,7 @@ The following are example events. Note that your use case of a restore job will 
 ### State: RUNNING
 <a name="restore-job-state-change-running"></a>
 
-```
+```json
 {
   "version": "0",
   "id": "ab32977c-378d-2122-e985-fgh4596f0709",
@@ -711,7 +711,7 @@ The following are example events. Note that your use case of a restore job will 
 ### State: COMPLETED
 <a name="restore-job-state-change-completed"></a>
 
-```
+```json
 {
   "version":"0",
   "id":"ab32977c-378d-2122-e985-fgh4596f0709",
@@ -743,7 +743,7 @@ The following are example events. Note that your use case of a restore job will 
 ### State: PENDING
 <a name="restore-job-state-change-pending"></a>
 
-```
+```json
 {
   "version": "0",
   "id": "ab32977c-378d-2122-e985-fgh4596f0709",
@@ -770,7 +770,7 @@ The following are example events. Note that your use case of a restore job will 
 ### State: CREATED
 <a name="restore-job-state-change-created"></a>
 
-```
+```json
 {
   "version": "0",
   "id": "ab32977c-378d-2122-e985-fgh4596f0709",
@@ -803,7 +803,7 @@ The following are example events.
 ### State: ACTIVE
 <a name="recovery-point-indexing-active"></a>
 
-```
+```json
 {
   "version":"0",
   "id":"ab32977c-378d-2122-e985-fgh4596f0709",
@@ -835,7 +835,7 @@ The following are example events.
 ### State: DELETED
 <a name="recovery-point-indexing-deleted"></a>
 
-```
+```json
 {
   "version":"0",
   "id":"ab32977c-378d-2122-e985-fgh4596f0709",
@@ -867,7 +867,7 @@ The following are example events.
 ### State: FAILED
 <a name="recovery-point-indexing-failed"></a>
 
-```
+```json
 {
   "version":"0",
   "id":"ab32977c-378d-2122-e985-fgh4596f0709",
@@ -911,7 +911,7 @@ The following are example events.
 ### State: CREATED
 <a name="malware-scan-job-state-change-created"></a>
 
-```
+```json
 {
     "version": "0",
     "id": "60ce181d-67c7-496b-90fb-69636b42daee",
@@ -951,7 +951,7 @@ The following are example events.
 ### State: RUNNING
 <a name="malware-scan-job-state-change-running"></a>
 
-```
+```json
 {
     "version": "0",
     "id": "60ce181d-67c7-496b-90fb-69636b42daee",
@@ -991,7 +991,7 @@ The following are example events.
 ### State: COMPLETED
 <a name="malware-scan-job-state-change-completed"></a>
 
-```
+```json
 {
     "version": "0",
     "id": "60ce181d-67c7-496b-90fb-69636b42daee",
@@ -1036,7 +1036,7 @@ The following are example events.
 ### State: COMPLETED WITH ISSUES
 <a name="malware-scan-job-state-change-completed-with-issues"></a>
 
-```
+```json
 {
     "version": "0",
     "id": "60ce181d-67c7-496b-90fb-69636b42daee",
@@ -1081,7 +1081,7 @@ The following are example events.
 ### State: FAILED
 <a name="malware-scan-job-state-change-failed"></a>
 
-```
+```json
 {
     "version": "0",
     "id": "60ce181d-67c7-496b-90fb-69636b42daee",
@@ -1123,7 +1123,7 @@ The following are example events.
 ### State: CANCELED
 <a name="malware-scan-job-state-change-canceled"></a>
 
-```
+```json
 {
     "version": "0",
     "id": "60ce181d-67c7-496b-90fb-69636b42daee",
@@ -1177,7 +1177,7 @@ The following are example events.
 ### State: AVAILABLE
 <a name="access-point-state-change-available"></a>
 
-```
+```json
 {
   "version": "0",
   "id": "12345678-1234-1234-1234-123456789012",
@@ -1207,7 +1207,7 @@ The following are example events.
 ### State: FAILED
 <a name="access-point-state-change-failed"></a>
 
-```
+```json
 {
   "version": "0",
   "id": "12345678-1234-1234-1234-123456789012",

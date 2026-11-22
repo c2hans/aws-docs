@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-tasktemplate-contacthooks-syntax.json"></a>
 
-```
+```json
 {
   "[WrapUpFlowArn](#cfn-connect-tasktemplate-contacthooks-wrapupflowarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-tasktemplate-contacthooks-syntax.yaml"></a>
 
-```
+```yaml
   [WrapUpFlowArn](#cfn-connect-tasktemplate-contacthooks-wrapupflowarn): {{String}}
 ```
 

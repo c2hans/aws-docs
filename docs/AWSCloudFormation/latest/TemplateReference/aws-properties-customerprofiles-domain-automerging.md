@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-domain-automerging-syntax.json"></a>
 
-```
+```json
 {
   "[ConflictResolution](#cfn-customerprofiles-domain-automerging-conflictresolution)" : {{ConflictResolution}},
   "[Consolidation](#cfn-customerprofiles-domain-automerging-consolidation)" : {{Consolidation}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-domain-automerging-syntax.yaml"></a>
 
-```
+```yaml
   [ConflictResolution](#cfn-customerprofiles-domain-automerging-conflictresolution): {{
     ConflictResolution}}
   [Consolidation](#cfn-customerprofiles-domain-automerging-consolidation): {{

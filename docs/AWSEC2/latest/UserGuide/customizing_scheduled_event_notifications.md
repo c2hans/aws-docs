@@ -49,7 +49,7 @@ The tags that you choose to include apply to all resources (instances and Dedica
 **To include all tags in event notifications**
 Use the [register-instance-event-notification-attributes](https://docs.aws.amazon.com/cli/latest/reference/ec2/register-instance-event-notification-attributes.html) command and set the `IncludeAllTagsOfInstance` parameter to `true`.
 
-```
+```bash
 aws ec2 register-instance-event-notification-attributes \
     --instance-tag-attribute "IncludeAllTagsOfInstance=true"
 ```
@@ -57,7 +57,7 @@ aws ec2 register-instance-event-notification-attributes \
 **To include specific tags in event notifications**
 Use the [register-instance-event-notification-attributes](https://docs.aws.amazon.com/cli/latest/reference/ec2/register-instance-event-notification-attributes.html) command and specify the tags to include by using the `InstanceTagKeys` parameter.
 
-```
+```bash
 aws ec2 register-instance-event-notification-attributes \
     --instance-tag-attribute 'InstanceTagKeys=["{{tag_key_1}}", "{{tag_key_2}}", "{{tag_key_3}}"]'
 ```
@@ -68,7 +68,7 @@ aws ec2 register-instance-event-notification-attributes \
 **To include all tags in event notifications**
 Use the [Register-EC2InstanceEventNotificationAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2InstanceEventNotificationAttribute.html) cmdlet.
 
-```
+```powershell
 Register-EC2InstanceEventNotificationAttribute `
     -InstanceTagAttribute_IncludeAllTagsOfInstance $true
 ```
@@ -76,7 +76,7 @@ Register-EC2InstanceEventNotificationAttribute `
 **To include specific tags in event notifications**
 Use the [Register-EC2InstanceEventNotificationAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2InstanceEventNotificationAttribute.html) cmdlet.
 
-```
+```powershell
 Register-EC2InstanceEventNotificationAttribute `
     -InstanceTagAttribute_InstanceTagKey {{tag_key_1}}, {{tag_key_2}}, {{tag_key_3}}
 ```
@@ -111,7 +111,7 @@ You can remove tags from event notifications.
 **To remove all tags from event notifications**
 Use the [deregister-instance-event-notification-attributes](https://docs.aws.amazon.com/cli/latest/reference/ec2/deregister-instance-event-notification-attributes.html) command and set the `IncludeAllTagsOfInstance` parameter to `false`.
 
-```
+```bash
 aws ec2 deregister-instance-event-notification-attributes \
     --instance-tag-attribute "IncludeAllTagsOfInstance=false"
 ```
@@ -119,7 +119,7 @@ aws ec2 deregister-instance-event-notification-attributes \
 **To remove a tag from event notifications**
 Use the [deregister-instance-event-notification-attributes](https://docs.aws.amazon.com/cli/latest/reference/ec2/deregister-instance-event-notification-attributes.html) command and specify the tags to remove by using the `InstanceTagKeys` parameter.
 
-```
+```bash
 aws ec2 deregister-instance-event-notification-attributes \
     --instance-tag-attribute 'InstanceTagKeys=["{{tag_key_3}}"]'
 ```
@@ -130,7 +130,7 @@ aws ec2 deregister-instance-event-notification-attributes \
 **To remove all tags from event notifications**
 Use the [Unregister-EC2InstanceEventNotificationAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Unregister-EC2InstanceEventNotificationAttribute.html) cmdlet.
 
-```
+```powershell
 Unregister-EC2InstanceEventNotificationAttribute `
     -InstanceTagAttribute_IncludeAllTagsOfInstance $false
 ```
@@ -138,7 +138,7 @@ Unregister-EC2InstanceEventNotificationAttribute `
 **To remove a tag from event notifications**
 Use the [Unregister-EC2InstanceEventNotificationAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Unregister-EC2InstanceEventNotificationAttribute.html) cmdlet.
 
-```
+```powershell
 Unregister-EC2InstanceEventNotificationAttribute `
     -InstanceTagAttribute_InstanceTagKey {{tag_key_3}}
 ```
@@ -167,7 +167,7 @@ You can view the tags that are to be included in event notifications.
 **To view the tags to be included in event notifications**
 Use the [describe-instance-event-notification-attributes](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-event-notification-attributes.html) command.
 
-```
+```bash
 aws ec2 describe-instance-event-notification-attributes
 ```
 
@@ -177,7 +177,7 @@ aws ec2 describe-instance-event-notification-attributes
 **To view the tags to be included in event notifications**
 Use the [Get-EC2InstanceEventNotificationAttribute](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceEventNotificationAttribute.html) cmdlet.
 
-```
+```powershell
 Get-EC2InstanceEventNotificationAttribute
 ```
 

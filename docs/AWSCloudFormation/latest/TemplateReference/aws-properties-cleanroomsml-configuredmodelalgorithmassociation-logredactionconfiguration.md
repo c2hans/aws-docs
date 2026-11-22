@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-logredactionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CustomEntityConfig](#cfn-cleanroomsml-configuredmodelalgorithmassociation-logredactionconfiguration-customentityconfig)" : {{CustomEntityConfig}},
   "[EntitiesToRedact](#cfn-cleanroomsml-configuredmodelalgorithmassociation-logredactionconfiguration-entitiestoredact)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-logredactionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CustomEntityConfig](#cfn-cleanroomsml-configuredmodelalgorithmassociation-logredactionconfiguration-customentityconfig): {{
     CustomEntityConfig}}
   [EntitiesToRedact](#cfn-cleanroomsml-configuredmodelalgorithmassociation-logredactionconfiguration-entitiestoredact): {{

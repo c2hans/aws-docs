@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-configurationset-sendingoptions-syntax.json"></a>
 
-```
+```json
 {
   "[SendingEnabled](#cfn-ses-configurationset-sendingoptions-sendingenabled)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-configurationset-sendingoptions-syntax.yaml"></a>
 
-```
+```yaml
   [SendingEnabled](#cfn-ses-configurationset-sendingoptions-sendingenabled): {{Boolean}}
 ```
 

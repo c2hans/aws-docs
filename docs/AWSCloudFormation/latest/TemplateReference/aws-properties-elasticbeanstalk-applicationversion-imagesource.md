@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticbeanstalk-applicationversion-imagesource-syntax.json"></a>
 
-```
+```json
 {
   "[Uri](#cfn-elasticbeanstalk-applicationversion-imagesource-uri)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticbeanstalk-applicationversion-imagesource-syntax.yaml"></a>
 
-```
+```yaml
   [Uri](#cfn-elasticbeanstalk-applicationversion-imagesource-uri): {{String}}
 ```
 

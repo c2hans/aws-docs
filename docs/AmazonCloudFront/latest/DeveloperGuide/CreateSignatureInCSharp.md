@@ -26,7 +26,7 @@ After conversion, the RSA private key file is in the following format:
 
 **Example : RSA private key in the XML .NET Framework format**  <a name="RSAPrivateKeyXML.NETFrameworkFormat"></a>
 
-```
+```xml
 <RSAKeyValue>
   <Modulus>
     wO5IvYCP5UcoCKDo1dcspoMehWBZcyfs9QEzGi6Oe5y+ewGr1oW+vB2GPB
@@ -77,7 +77,7 @@ The `keyId` is returned when you upload a public key to CloudFront. For more inf
 
 **Example : Canned policy signing method in C\#**  <a name="ExampleCannedPolicySigningMethod-CSharp"></a>
 
-```
+```cs
 public static string ToUrlSafeBase64String(byte[] bytes)
 {
     return System.Convert.ToBase64String(bytes)
@@ -173,7 +173,7 @@ The `keyId` is returned when you upload a public key to CloudFront. For more inf
 
 **Example : Custom policy signing method in C\#**  <a name="ExampleCustomPolicySigningMethod-CSharp"></a>
 
-```
+```cs
 public static string ToUrlSafeBase64String(byte[] bytes)
 {
     return System.Convert.ToBase64String(bytes)
@@ -256,7 +256,7 @@ The following methods get the policy statement from a file and parse time interv
 
 **Example : Utility methods for signature generation**  <a name="UtilityMethodsForSignatureGeneration"></a>
 
-```
+```cs
 public static string CreatePolicyStatement(string policyStmnt,
    string resourceUrl,
    DateTime startTime,

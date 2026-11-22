@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-userprofile-fsxlustrefilesystemconfig-syntax.json"></a>
 
-```
+```json
 {
   "[FileSystemId](#cfn-sagemaker-userprofile-fsxlustrefilesystemconfig-filesystemid)" : {{String}},
   "[FileSystemPath](#cfn-sagemaker-userprofile-fsxlustrefilesystemconfig-filesystempath)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-userprofile-fsxlustrefilesystemconfig-syntax.yaml"></a>
 
-```
+```yaml
   [FileSystemId](#cfn-sagemaker-userprofile-fsxlustrefilesystemconfig-filesystemid): {{String}}
   [FileSystemPath](#cfn-sagemaker-userprofile-fsxlustrefilesystemconfig-filesystempath): {{String}}
 ```

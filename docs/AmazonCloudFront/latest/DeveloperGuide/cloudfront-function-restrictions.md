@@ -52,7 +52,7 @@ Instead of using a Regional AWS STS endpoint, you can configure the global endpo
 
 **Example: IAM CLI command**
 
-```
+```bash
 aws iam set-security-token-service-preferences --global-endpoint-token-version v2Token
 ```
 We recommend that you use the AWS STS Regional endpoints instead of this option. Regional endpoints provide higher availability and failover scenarios.

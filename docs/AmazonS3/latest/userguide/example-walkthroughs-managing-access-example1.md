@@ -102,7 +102,7 @@ Using the credentials of user `AccountAadmin` in Account A, and the special IAM 
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -146,7 +146,7 @@ Using the credentials of user `AccountAadmin` in Account A, and the special IAM 
 
 ****
 
-      ```
+      ```json
       {
          "Version":"2012-10-17",
          "Statement": [
@@ -188,13 +188,13 @@ Using Dave's credentials, verify that the permissions work. You can use either o
 
    The `--body` parameter in the command identifies the source file to upload. For example, if the file is in the root of the C: drive on a Windows machine, you specify `c:\HappyFace.jpg`. The `--key` parameter provides the key name for the object.
 
-   ```
+   ```bash
    aws s3api put-object --bucket {{awsexamplebucket1}} --key {{HappyFace.jpg}} --body {{HappyFace.jpg}} --profile UserDaveAccountA
    ```
 
    Run the following AWS CLI command to get the object.
 
-   ```
+   ```bash
    aws s3api get-object --bucket awsexamplebucket1 --key {{HappyFace.jpg}} {{OutputFile.jpg}} --profile UserDaveAccountA
    ```
 

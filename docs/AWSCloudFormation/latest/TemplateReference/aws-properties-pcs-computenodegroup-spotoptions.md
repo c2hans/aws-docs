@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcs-computenodegroup-spotoptions-syntax.json"></a>
 
-```
+```json
 {
   "[AllocationStrategy](#cfn-pcs-computenodegroup-spotoptions-allocationstrategy)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcs-computenodegroup-spotoptions-syntax.yaml"></a>
 
-```
+```yaml
   [AllocationStrategy](#cfn-pcs-computenodegroup-spotoptions-allocationstrategy): {{String}}
 ```
 

@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssm-maintenancewindowtask-target-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-ssm-maintenancewindowtask-target-key)" : {{String}},
   "[Values](#cfn-ssm-maintenancewindowtask-target-values)" : {{[ String, ... ]}}
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssm-maintenancewindowtask-target-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-ssm-maintenancewindowtask-target-key): {{String}}
   [Values](#cfn-ssm-maintenancewindowtask-target-values): {{
     - String}}

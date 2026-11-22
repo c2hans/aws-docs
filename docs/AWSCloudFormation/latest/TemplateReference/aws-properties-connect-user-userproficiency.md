@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-user-userproficiency-syntax.json"></a>
 
-```
+```json
 {
   "[AttributeName](#cfn-connect-user-userproficiency-attributename)" : {{String}},
   "[AttributeValue](#cfn-connect-user-userproficiency-attributevalue)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-user-userproficiency-syntax.yaml"></a>
 
-```
+```yaml
   [AttributeName](#cfn-connect-user-userproficiency-attributename): {{String}}
   [AttributeValue](#cfn-connect-user-userproficiency-attributevalue): {{String}}
   [Level](#cfn-connect-user-userproficiency-level): {{Number}}

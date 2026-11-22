@@ -51,7 +51,7 @@ For more information, see [Using instance profiles](https://docs.aws.amazon.com/
 **Tools for PowerShell V4**
 **Example 1: This example returns details of the instance profile associated with the role `ec2instancerole`.**
 
-```
+```powershell
 Get-IAMInstanceProfileForRole -RoleName ec2instancerole
 ```
 **Output:**
@@ -69,7 +69,7 @@ Get-IAMInstanceProfileForRole -RoleName ec2instancerole
 **Tools for PowerShell V5**
 **Example 1: This example returns details of the instance profile associated with the role `ec2instancerole`.**
 
-```
+```powershell
 Get-IAMInstanceProfileForRole -RoleName ec2instancerole
 ```
 **Output:**

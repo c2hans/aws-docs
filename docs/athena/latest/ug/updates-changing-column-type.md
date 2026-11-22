@@ -36,7 +36,7 @@ Whenever possible, use compatible data types. The following table lists data typ
 
 The following example uses the `CREATE TABLE` statement for the original `orders_json` table to create a new table called `orders_json_bigint`. The new table uses `BIGINT` instead of `INT` as the data type for the ``o_shippriority`` column.
 
-```
+```sql
 CREATE EXTERNAL TABLE orders_json_bigint (
    `o_orderkey` int,
    `o_custkey` int,

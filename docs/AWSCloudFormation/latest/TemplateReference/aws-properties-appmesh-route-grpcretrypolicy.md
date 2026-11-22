@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-route-grpcretrypolicy-syntax.json"></a>
 
-```
+```json
 {
   "[GrpcRetryEvents](#cfn-appmesh-route-grpcretrypolicy-grpcretryevents)" : {{[ String, ... ]}},
   "[HttpRetryEvents](#cfn-appmesh-route-grpcretrypolicy-httpretryevents)" : {{[ String, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-route-grpcretrypolicy-syntax.yaml"></a>
 
-```
+```yaml
   [GrpcRetryEvents](#cfn-appmesh-route-grpcretrypolicy-grpcretryevents): {{
     - String}}
   [HttpRetryEvents](#cfn-appmesh-route-grpcretrypolicy-httpretryevents): {{

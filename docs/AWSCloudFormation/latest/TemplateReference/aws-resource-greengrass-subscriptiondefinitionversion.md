@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-greengrass-subscriptiondefinitionversion-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Greengrass::SubscriptionDefinitionVersion",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-greengrass-subscriptiondefinitionversion-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Greengrass::SubscriptionDefinitionVersion
 Properties:
   [SubscriptionDefinitionId](#cfn-greengrass-subscriptiondefinitionversion-subscriptiondefinitionid): {{String}}
@@ -82,7 +82,7 @@ For an example of a complete template, see the [`AWS::Greengrass::Group`](https:
 #### JSON
 <a name="aws-resource-greengrass-subscriptiondefinitionversion--examples--Subscription_Definition_Version_Snippet--json"></a>
 
-```
+```json
 "TestSubscriptionDefinition": {
     "Type": "AWS::Greengrass::SubscriptionDefinition",
     "Properties": {
@@ -126,7 +126,7 @@ For an example of a complete template, see the [`AWS::Greengrass::Group`](https:
 #### YAML
 <a name="aws-resource-greengrass-subscriptiondefinitionversion--examples--Subscription_Definition_Version_Snippet--yaml"></a>
 
-```
+```yaml
 TestSubscriptionDefinition:
   Type: 'AWS::Greengrass::SubscriptionDefinition'
   Properties:

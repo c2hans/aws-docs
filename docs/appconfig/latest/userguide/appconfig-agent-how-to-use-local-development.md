@@ -33,7 +33,7 @@ Use the following procedure to configure AWS AppConfig Agent for local developme
 
    Here is an example:
 
-   ```
+   ```json
    Mobile:Development:EnableMobilePaymentsFeatureFlagConfiguration
    ```
 **Note**

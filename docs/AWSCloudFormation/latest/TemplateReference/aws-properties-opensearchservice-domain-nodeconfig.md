@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchservice-domain-nodeconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Count](#cfn-opensearchservice-domain-nodeconfig-count)" : {{Integer}},
   "[Enabled](#cfn-opensearchservice-domain-nodeconfig-enabled)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchservice-domain-nodeconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Count](#cfn-opensearchservice-domain-nodeconfig-count): {{Integer}}
   [Enabled](#cfn-opensearchservice-domain-nodeconfig-enabled): {{Boolean}}
   [Type](#cfn-opensearchservice-domain-nodeconfig-type): {{String}}

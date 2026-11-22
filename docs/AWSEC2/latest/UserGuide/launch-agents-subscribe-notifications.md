@@ -21,12 +21,12 @@ Amazon SNS can notify you when new versions of the EC2 launch agents are release
    1. For **Topic ARN**, use the following Amazon Resource Name (ARN) that matches the agent you want to receive notifications for:
       + **EC2Launch v2**:
 
-        ```
+        ```bash
         arn:aws:sns:us-east-1:309726204594:amazon-ec2launch-v2
         ```
       + **EC2Launch or EC2Config**:
 
-        ```
+        ```bash
         arn:aws:sns:us-east-1:801119661308:ec2-windows-ec2config
         ```
 

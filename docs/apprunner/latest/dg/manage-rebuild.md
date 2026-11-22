@@ -64,7 +64,7 @@ To rebuild a failed service:
 In the following example the source configuration of an image-based service is being updated. The value of the `Port` is changed to `80`.
 Updating the `input.json` file for image-based App Runner service
 
-```
+```json
 {
   "ServiceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
   "SourceConfiguration": {
@@ -78,7 +78,7 @@ Updating the `input.json` file for image-based App Runner service
 ```
 Calling the `UpdateService` API action.
 
-```
+```sh
 aws apprunner update-service
 --cli-input-json file:{{//input.json}}
 ```

@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-appconfig-deploymentstrategy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppConfig::DeploymentStrategy",
   "Properties" : {
@@ -49,7 +49,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-appconfig-deploymentstrategy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppConfig::DeploymentStrategy
 Properties:
   [DeploymentDurationInMinutes](#cfn-appconfig-deploymentstrategy-deploymentdurationinminutes): {{Number}}
@@ -159,7 +159,7 @@ The following example creates an AWS AppConfig deployment strategy called MyTest
 #### JSON
 <a name="aws-resource-appconfig-deploymentstrategy--examples--deployment_strategy_example--json"></a>
 
-```
+```json
 Resources": {
     "BasicDeploymentStrategy": {
       "Type": "AWS::AppConfig::DeploymentStrategy",
@@ -186,7 +186,7 @@ Resources": {
 #### YAML
 <a name="aws-resource-appconfig-deploymentstrategy--examples--deployment_strategy_example--yaml"></a>
 
-```
+```yaml
 Resources:
   BasicDeploymentStrategy:
     Type: AWS::AppConfig::DeploymentStrategy

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-infrastructureconfiguration-instancemetadataoptions-syntax.json"></a>
 
-```
+```json
 {
   "[HttpPutResponseHopLimit](#cfn-imagebuilder-infrastructureconfiguration-instancemetadataoptions-httpputresponsehoplimit)" : {{Integer}},
   "[HttpTokens](#cfn-imagebuilder-infrastructureconfiguration-instancemetadataoptions-httptokens)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-infrastructureconfiguration-instancemetadataoptions-syntax.yaml"></a>
 
-```
+```yaml
   [HttpPutResponseHopLimit](#cfn-imagebuilder-infrastructureconfiguration-instancemetadataoptions-httpputresponsehoplimit): {{Integer}}
   [HttpTokens](#cfn-imagebuilder-infrastructureconfiguration-instancemetadataoptions-httptokens): {{String}}
 ```

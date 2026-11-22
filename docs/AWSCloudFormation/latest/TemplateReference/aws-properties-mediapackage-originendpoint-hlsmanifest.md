@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackage-originendpoint-hlsmanifest-syntax.json"></a>
 
-```
+```json
 {
   "[AdMarkers](#cfn-mediapackage-originendpoint-hlsmanifest-admarkers)" : {{String}},
   "[AdsOnDeliveryRestrictions](#cfn-mediapackage-originendpoint-hlsmanifest-adsondeliveryrestrictions)" : {{String}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackage-originendpoint-hlsmanifest-syntax.yaml"></a>
 
-```
+```yaml
   [AdMarkers](#cfn-mediapackage-originendpoint-hlsmanifest-admarkers): {{String}}
   [AdsOnDeliveryRestrictions](#cfn-mediapackage-originendpoint-hlsmanifest-adsondeliveryrestrictions): {{String}}
   [AdTriggers](#cfn-mediapackage-originendpoint-hlsmanifest-adtriggers): {{

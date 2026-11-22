@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-bedrock-agent-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Bedrock::Agent",
   "Properties" : {
@@ -54,7 +54,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-bedrock-agent-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Bedrock::Agent
 Properties:
   [ActionGroups](#cfn-bedrock-agent-actiongroups): {{
@@ -304,7 +304,7 @@ The following example creates an agent that orchestrates on the Anthropic Claude
 #### YAML
 <a name="aws-resource-bedrock-agent--examples--Create_an_agent--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: "CFN stack for creating an agent"
 Resources:
@@ -336,7 +336,7 @@ Resources:
 #### JSON
 <a name="aws-resource-bedrock-agent--examples--Create_an_agent--json"></a>
 
-```
+```json
 {
    "AWSTemplateFormatVersion": "2010-09-09",
    "Description": "CFN stack for creating an agent",

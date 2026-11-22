@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-kinesis-channel-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Kinesis::Channel",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-kinesis-channel-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Kinesis::Channel
 Properties:
   [ChannelName](#cfn-kinesis-channel-channelname): {{String}}

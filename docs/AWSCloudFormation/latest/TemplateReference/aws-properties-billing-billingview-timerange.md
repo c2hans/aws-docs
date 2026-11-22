@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-billing-billingview-timerange-syntax.json"></a>
 
-```
+```json
 {
   "[BeginDateInclusive](#cfn-billing-billingview-timerange-begindateinclusive)" : {{String}},
   "[EndDateInclusive](#cfn-billing-billingview-timerange-enddateinclusive)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-billing-billingview-timerange-syntax.yaml"></a>
 
-```
+```yaml
   [BeginDateInclusive](#cfn-billing-billingview-timerange-begindateinclusive): {{String}}
   [EndDateInclusive](#cfn-billing-billingview-timerange-enddateinclusive): {{String}}
 ```

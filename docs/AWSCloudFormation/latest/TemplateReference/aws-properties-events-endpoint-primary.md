@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-events-endpoint-primary-syntax.json"></a>
 
-```
+```json
 {
   "[HealthCheck](#cfn-events-endpoint-primary-healthcheck)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-events-endpoint-primary-syntax.yaml"></a>
 
-```
+```yaml
   [HealthCheck](#cfn-events-endpoint-primary-healthcheck): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-directconnect-transitvirtualinterface-bgppeer-syntax.json"></a>
 
-```
+```json
 {
   "[AddressFamily](#cfn-directconnect-transitvirtualinterface-bgppeer-addressfamily)" : {{String}},
   "[AmazonAddress](#cfn-directconnect-transitvirtualinterface-bgppeer-amazonaddress)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-directconnect-transitvirtualinterface-bgppeer-syntax.yaml"></a>
 
-```
+```yaml
   [AddressFamily](#cfn-directconnect-transitvirtualinterface-bgppeer-addressfamily): {{String}}
   [AmazonAddress](#cfn-directconnect-transitvirtualinterface-bgppeer-amazonaddress): {{String}}
   [Asn](#cfn-directconnect-transitvirtualinterface-bgppeer-asn): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-entityresolution-matchingworkflow-inputsource-syntax.json"></a>
 
-```
+```json
 {
   "[ApplyNormalization](#cfn-entityresolution-matchingworkflow-inputsource-applynormalization)" : {{Boolean}},
   "[InputSourceARN](#cfn-entityresolution-matchingworkflow-inputsource-inputsourcearn)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-entityresolution-matchingworkflow-inputsource-syntax.yaml"></a>
 
-```
+```yaml
   [ApplyNormalization](#cfn-entityresolution-matchingworkflow-inputsource-applynormalization): {{Boolean}}
   [InputSourceARN](#cfn-entityresolution-matchingworkflow-inputsource-inputsourcearn): {{String}}
   [SchemaArn](#cfn-entityresolution-matchingworkflow-inputsource-schemaarn): {{String}}

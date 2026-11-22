@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-deadline-fleet-acceleratortotalmemorymibrange-syntax.json"></a>
 
-```
+```json
 {
   "[Max](#cfn-deadline-fleet-acceleratortotalmemorymibrange-max)" : {{Integer}},
   "[Min](#cfn-deadline-fleet-acceleratortotalmemorymibrange-min)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-deadline-fleet-acceleratortotalmemorymibrange-syntax.yaml"></a>
 
-```
+```yaml
   [Max](#cfn-deadline-fleet-acceleratortotalmemorymibrange-max): {{Integer}}
   [Min](#cfn-deadline-fleet-acceleratortotalmemorymibrange-min): {{Integer}}
 ```

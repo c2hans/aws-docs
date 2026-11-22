@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-gameservergroup-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-gamelift-gameservergroup-tag-key)" : {{String}},
   "[Value](#cfn-gamelift-gameservergroup-tag-value)" : {{String}}
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-gameservergroup-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-gamelift-gameservergroup-tag-key): {{String}}
   [Value](#cfn-gamelift-gameservergroup-tag-value): {{String}}
 ```

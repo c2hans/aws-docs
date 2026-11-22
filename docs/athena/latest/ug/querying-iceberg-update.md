@@ -8,6 +8,6 @@ Athena Iceberg `UPDATE` writes Iceberg position delete files and newly updated r
 
 The following example updates the specified values in the table `iceberg_table`.
 
-```
+```sql
 UPDATE iceberg_table SET category='c2' WHERE category='c1'
 ```

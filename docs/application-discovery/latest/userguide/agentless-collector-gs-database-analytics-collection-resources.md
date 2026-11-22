@@ -33,7 +33,7 @@ Before you create an AWS DMS data collector, create an IAM role that your AWS DM
 
 ****
 
-   ```
+   ```json
    {
    	"Version":"2012-10-17",
    	"Statement": [{

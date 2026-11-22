@@ -62,10 +62,11 @@ Capacity Block sizes of 64 instances are not supported for all instance types in
 ### UltraServer Capacity Blocks
 <a name="capacity-blocks-ultraserver-prerequisites"></a>
 
-| Instance type | US East (Ohio) us-east-2 | US East (Dallas) us-east-1-dfw-2a |
-| --- | --- | --- |
-| Trn2 | ✓ |  |
-| P6e-GB200 |  | ✓ |
+| Instance type | US East (Ohio) us-east-2 | US East (Dallas) us-east-1-dfw-2a | US East (South Bend) us-east-2-sbn-1a |
+| --- | --- | --- | --- |
+| Trn2 | ✓ |  |  |
+| Trn3 | ✓ |  | ✓ |
+| P6e-GB200 |  | ✓ |  |
 
 ## Supported platforms
 <a name="capacity-blocks-platforms"></a>

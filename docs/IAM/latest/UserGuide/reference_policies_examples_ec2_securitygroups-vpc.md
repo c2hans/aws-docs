@@ -11,7 +11,7 @@ This example shows how you might create an identity-based policy that grants use
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [{

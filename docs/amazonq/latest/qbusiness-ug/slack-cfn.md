@@ -68,7 +68,7 @@ The following is the Slack JSON schema and examples for the configuration proper
 
 The following is the Slack JSON schema for the configuration property for CloudFormation
 
-```
+```json
 {
   "type": "object",
   "properties": {
@@ -299,7 +299,7 @@ The following is the Slack JSON schema for the configuration property for CloudF
 
 The following is the Slack JSON schema example for the configuration property for CloudFormation
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Description": "CloudFormation SLACK Data Source Template",
@@ -373,7 +373,7 @@ The following is the Slack YAML schema and examples for the configuration proper
 
 The following is the Slack YAML schema for the configuration property for CloudFormation.
 
-```
+```yaml
 type: object
 properties:
   type:
@@ -535,7 +535,7 @@ required:
 
 The following is the Slack YAML example for the Configuration property for CloudFormation:
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Description: CloudFormation SLACK Data Source Template
 Resources:

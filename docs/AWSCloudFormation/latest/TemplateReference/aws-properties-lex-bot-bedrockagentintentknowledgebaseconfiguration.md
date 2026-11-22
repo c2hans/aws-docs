@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-bedrockagentintentknowledgebaseconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BedrockKnowledgeBaseArn](#cfn-lex-bot-bedrockagentintentknowledgebaseconfiguration-bedrockknowledgebasearn)" : {{String}},
   "[BedrockModelConfiguration](#cfn-lex-bot-bedrockagentintentknowledgebaseconfiguration-bedrockmodelconfiguration)" : {{BedrockModelSpecification}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-bedrockagentintentknowledgebaseconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BedrockKnowledgeBaseArn](#cfn-lex-bot-bedrockagentintentknowledgebaseconfiguration-bedrockknowledgebasearn): {{String}}
   [BedrockModelConfiguration](#cfn-lex-bot-bedrockagentintentknowledgebaseconfiguration-bedrockmodelconfiguration): {{
     BedrockModelSpecification}}

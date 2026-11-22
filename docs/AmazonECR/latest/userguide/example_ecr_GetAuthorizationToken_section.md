@@ -41,7 +41,7 @@ For more information, see [Private registry authentication in Amazon ECR](https:
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ecr#code-examples).
 
-```
+```java
     /**
      * Retrieves the authorization token for Amazon Elastic Container Registry (ECR).
      * This method makes an asynchronous call to the ECR client to retrieve the authorization token.
@@ -80,7 +80,7 @@ For more information, see [Private registry authentication in Amazon ECR](https:
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/ecr#code-examples).
 
-```
+```kotlin
     /**
      * Retrieves the authorization token for Amazon Elastic Container Registry (ECR).
      *
@@ -105,7 +105,7 @@ For more information, see [Private registry authentication in Amazon ECR](https:
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ecr#code-examples).
 
-```
+```python
 class ECRWrapper:
     def __init__(self, ecr_client: client):
         self.ecr_client = ecr_client
@@ -144,7 +144,7 @@ class ECRWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ecr#code-examples).
 
-```
+```sap-abap
     TRY.
         oo_result = lo_ecr->getauthorizationtoken( ).
         DATA(lt_auth_data) = oo_result->get_authorizationdata( ).

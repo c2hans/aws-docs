@@ -51,7 +51,7 @@ Review the **Last drift check time** for the stack resource and confirm that it'
 
   Output:
 
-  ```
+  ```json
   {
       "StackResourceDrift": {
           "StackId": "arn:aws:cloudformation:us-east-1:099908667365:stack/my-stack-with-resource-drift/489e5570-df85-11e7-a7d9-50example",

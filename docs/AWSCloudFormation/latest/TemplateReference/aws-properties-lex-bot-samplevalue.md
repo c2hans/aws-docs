@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-samplevalue-syntax.json"></a>
 
-```
+```json
 {
   "[Value](#cfn-lex-bot-samplevalue-value)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-samplevalue-syntax.yaml"></a>
 
-```
+```yaml
   [Value](#cfn-lex-bot-samplevalue-value): {{String}}
 ```
 

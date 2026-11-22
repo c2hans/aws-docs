@@ -49,13 +49,13 @@ Single instance brokers are offline while being rebooted. For cluster brokers, o
    +  `--broker-id` – The unique ID that Amazon MQ generates for the broker.
    +  `--host-instance-type` – The broker instance type to upgrade to (for example, `mq.m5.large`).
 
-   ```
+   ```sh
    aws mq update-broker --broker-id {{broker-id}} --host-instance-type {{instance-type}}
    ```
 
 1.  (Optional) Use the [reboot-broker](https://docs.aws.amazon.com/cli/latest/reference/mq/reboot-broker.html) CLI command to reboot your broker if, you want to upgrade the instance type immediately.
 
-   ```
+   ```sh
    aws mq reboot-broker --broker-id {{broker-id}}
    ```
 
@@ -70,7 +70,7 @@ Single instance brokers are offline while being rebooted. For cluster brokers, o
 
 1.  Use the [UpdateBroker](https://docs.aws.amazon.com/amazon-mq/latest/api-reference/brokers-broker-id.html#UpdateBroker) API operation. Specify `broker-id` as a path parameter. The following examples assumes a broker in the `us-west-2` region. For more information about available Amazon MQ endpoints, see [Amazon MQ endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/amazon-mq.html#amazon-mq_region) in the *AWS General Reference*.
 
-   ```
+   ```http
    PUT /v1/brokers/{{broker-id}} HTTP/1.1
    Host: mq.us-west-2.amazonaws.com
    Date: Mon, 7 June 2021 12:00:00 GMT
@@ -80,7 +80,7 @@ Single instance brokers are offline while being rebooted. For cluster brokers, o
 
    Use `host-instance-type` in the request payload to specify the instance type for the broker to upgrade to.
 
-   ```
+   ```json
    {
        "host-instance-type": "{{host-instance-type}}"
    }
@@ -88,7 +88,7 @@ Single instance brokers are offline while being rebooted. For cluster brokers, o
 
 1.  (Optional) Use the [RebootBroker](https://docs.aws.amazon.com/amazon-mq/latest/api-reference/brokers-broker-id-reboot.html#RebootBroker) API operation to reboot your broker, if you want to upgrade the engine version immediately. `broker-id` is specified as a path parameter.
 
-   ```
+   ```http
    POST /v1/brokers/{{broker-id}}/reboot-broker HTTP/1.1
    Host: mq.us-west-2.amazonaws.com
    Date: Mon, 7 June 2021 12:00:00 GMT

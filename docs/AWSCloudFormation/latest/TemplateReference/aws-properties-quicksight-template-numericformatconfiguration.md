@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-numericformatconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CurrencyDisplayFormatConfiguration](#cfn-quicksight-template-numericformatconfiguration-currencydisplayformatconfiguration)" : {{CurrencyDisplayFormatConfiguration}},
   "[NumberDisplayFormatConfiguration](#cfn-quicksight-template-numericformatconfiguration-numberdisplayformatconfiguration)" : {{NumberDisplayFormatConfiguration}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-numericformatconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CurrencyDisplayFormatConfiguration](#cfn-quicksight-template-numericformatconfiguration-currencydisplayformatconfiguration): {{
     CurrencyDisplayFormatConfiguration}}
   [NumberDisplayFormatConfiguration](#cfn-quicksight-template-numericformatconfiguration-numberdisplayformatconfiguration): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-geospatiallayeritem-syntax.json"></a>
 
-```
+```json
 {
   "[Actions](#cfn-quicksight-analysis-geospatiallayeritem-actions)" : {{[ LayerCustomAction, ... ]}},
   "[DataSource](#cfn-quicksight-analysis-geospatiallayeritem-datasource)" : {{GeospatialDataSourceItem}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-geospatiallayeritem-syntax.yaml"></a>
 
-```
+```yaml
   [Actions](#cfn-quicksight-analysis-geospatiallayeritem-actions): {{
     - LayerCustomAction}}
   [DataSource](#cfn-quicksight-analysis-geospatiallayeritem-datasource): {{

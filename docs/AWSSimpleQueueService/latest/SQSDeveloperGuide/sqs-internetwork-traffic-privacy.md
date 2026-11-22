@@ -34,7 +34,7 @@ For more information, see [Controlling Access to Services with VPC Endpoints](ht
 
 The following example VPC endpoint policy specifies that the user `MyUser` is allowed to send messages to the Amazon SQS queue `MyQueue`.
 
-```
+```json
 {
    "Statement": [{
       "Action": ["sqs:SendMessage"],

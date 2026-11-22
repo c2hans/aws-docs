@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-signalmap-mediaresourceneighbor-syntax.json"></a>
 
-```
+```json
 {
   "[Arn](#cfn-medialive-signalmap-mediaresourceneighbor-arn)" : {{String}},
   "[Name](#cfn-medialive-signalmap-mediaresourceneighbor-name)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-signalmap-mediaresourceneighbor-syntax.yaml"></a>
 
-```
+```yaml
   [Arn](#cfn-medialive-signalmap-mediaresourceneighbor-arn): {{String}}
   [Name](#cfn-medialive-signalmap-mediaresourceneighbor-name): {{String}}
 ```

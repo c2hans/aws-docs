@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-memory-streamdeliveryresources-syntax.json"></a>
 
-```
+```json
 {
   "[Resources](#cfn-bedrockagentcore-memory-streamdeliveryresources-resources)" : {{[ StreamDeliveryResource, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-memory-streamdeliveryresources-syntax.yaml"></a>
 
-```
+```yaml
   [Resources](#cfn-bedrockagentcore-memory-streamdeliveryresources-resources): {{
     - StreamDeliveryResource}}
 ```

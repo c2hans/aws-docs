@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-chartaxislabeloptions-syntax.json"></a>
 
-```
+```json
 {
   "[AxisLabelOptions](#cfn-quicksight-analysis-chartaxislabeloptions-axislabeloptions)" : {{[ AxisLabelOptions, ... ]}},
   "[SortIconVisibility](#cfn-quicksight-analysis-chartaxislabeloptions-sorticonvisibility)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-chartaxislabeloptions-syntax.yaml"></a>
 
-```
+```yaml
   [AxisLabelOptions](#cfn-quicksight-analysis-chartaxislabeloptions-axislabeloptions): {{
     - AxisLabelOptions}}
   [SortIconVisibility](#cfn-quicksight-analysis-chartaxislabeloptions-sorticonvisibility): {{String}}

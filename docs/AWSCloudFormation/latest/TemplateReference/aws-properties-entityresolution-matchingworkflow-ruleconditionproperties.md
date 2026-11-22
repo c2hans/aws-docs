@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-entityresolution-matchingworkflow-ruleconditionproperties-syntax.json"></a>
 
-```
+```json
 {
   "[MatchingConfig](#cfn-entityresolution-matchingworkflow-ruleconditionproperties-matchingconfig)" : {{MatchingConfig}},
   "[Rules](#cfn-entityresolution-matchingworkflow-ruleconditionproperties-rules)" : {{[ RuleCondition, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-entityresolution-matchingworkflow-ruleconditionproperties-syntax.yaml"></a>
 
-```
+```yaml
   [MatchingConfig](#cfn-entityresolution-matchingworkflow-ruleconditionproperties-matchingconfig): {{
     MatchingConfig}}
   [Rules](#cfn-entityresolution-matchingworkflow-ruleconditionproperties-rules): {{

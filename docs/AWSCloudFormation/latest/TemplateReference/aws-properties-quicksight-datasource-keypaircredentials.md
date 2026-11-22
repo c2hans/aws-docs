@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-datasource-keypaircredentials-syntax.json"></a>
 
-```
+```json
 {
   "[KeyPairUsername](#cfn-quicksight-datasource-keypaircredentials-keypairusername)" : {{String}},
   "[PrivateKey](#cfn-quicksight-datasource-keypaircredentials-privatekey)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-datasource-keypaircredentials-syntax.yaml"></a>
 
-```
+```yaml
   [KeyPairUsername](#cfn-quicksight-datasource-keypaircredentials-keypairusername): {{String}}
   [PrivateKey](#cfn-quicksight-datasource-keypaircredentials-privatekey): {{String}}
   [PrivateKeyPassphrase](#cfn-quicksight-datasource-keypaircredentials-privatekeypassphrase): {{String}}

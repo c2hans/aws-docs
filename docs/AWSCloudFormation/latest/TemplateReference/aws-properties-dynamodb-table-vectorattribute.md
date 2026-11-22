@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dynamodb-table-vectorattribute-syntax.json"></a>
 
-```
+```json
 {
   "[AttributeName](#cfn-dynamodb-table-vectorattribute-attributename)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dynamodb-table-vectorattribute-syntax.yaml"></a>
 
-```
+```yaml
   [AttributeName](#cfn-dynamodb-table-vectorattribute-attributename): {{String}}
 ```
 

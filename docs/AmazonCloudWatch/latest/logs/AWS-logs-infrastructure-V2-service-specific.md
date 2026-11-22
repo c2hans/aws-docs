@@ -11,7 +11,7 @@ In addition to the destination-specific permissions listed in the previous secti
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

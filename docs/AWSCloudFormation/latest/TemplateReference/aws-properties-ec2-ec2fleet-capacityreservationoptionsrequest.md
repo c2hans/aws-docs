@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-ec2fleet-capacityreservationoptionsrequest-syntax.json"></a>
 
-```
+```json
 {
   "[UsageStrategy](#cfn-ec2-ec2fleet-capacityreservationoptionsrequest-usagestrategy)" : {{String}}
 }
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-ec2fleet-capacityreservationoptionsrequest-syntax.yaml"></a>
 
-```
+```yaml
   [UsageStrategy](#cfn-ec2-ec2fleet-capacityreservationoptionsrequest-usagestrategy): {{String}}
 ```
 

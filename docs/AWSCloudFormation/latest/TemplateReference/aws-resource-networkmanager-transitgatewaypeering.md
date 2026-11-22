@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-networkmanager-transitgatewaypeering-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::NetworkManager::TransitGatewayPeering",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-networkmanager-transitgatewaypeering-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::NetworkManager::TransitGatewayPeering
 Properties:
   [CoreNetworkId](#cfn-networkmanager-transitgatewaypeering-corenetworkid): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-config-connector-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-config-connector-tag-key)" : {{String}},
   "[Value](#cfn-config-connector-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-config-connector-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-config-connector-tag-key): {{String}}
   [Value](#cfn-config-connector-tag-value): {{String}}
 ```

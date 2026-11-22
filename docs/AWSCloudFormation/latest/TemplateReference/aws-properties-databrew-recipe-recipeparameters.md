@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-databrew-recipe-recipeparameters-syntax.json"></a>
 
-```
+```json
 {
   "[AggregateFunction](#cfn-databrew-recipe-recipeparameters-aggregatefunction)" : {{String}},
   "[Base](#cfn-databrew-recipe-recipeparameters-base)" : {{String}},
@@ -125,7 +125,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-databrew-recipe-recipeparameters-syntax.yaml"></a>
 
-```
+```yaml
   [AggregateFunction](#cfn-databrew-recipe-recipeparameters-aggregatefunction): {{String}}
   [Base](#cfn-databrew-recipe-recipeparameters-base): {{String}}
   [CaseStatement](#cfn-databrew-recipe-recipeparameters-casestatement): {{String}}

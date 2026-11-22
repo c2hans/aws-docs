@@ -21,7 +21,7 @@ The following policy adds the permissions that might be required by Aurora to ac
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

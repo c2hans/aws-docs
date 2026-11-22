@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sagemaker-partnerapp-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SageMaker::PartnerApp",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sagemaker-partnerapp-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SageMaker::PartnerApp
 Properties:
   [ApplicationConfig](#cfn-sagemaker-partnerapp-applicationconfig): {{

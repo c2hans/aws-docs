@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-transfer-server-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Transfer::Server",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-transfer-server-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Transfer::Server
 Properties:
   [Certificate](#cfn-transfer-server-certificate): {{String}}

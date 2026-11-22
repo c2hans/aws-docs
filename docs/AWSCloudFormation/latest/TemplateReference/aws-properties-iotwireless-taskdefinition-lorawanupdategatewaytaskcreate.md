@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotwireless-taskdefinition-lorawanupdategatewaytaskcreate-syntax.json"></a>
 
-```
+```json
 {
   "[CurrentVersion](#cfn-iotwireless-taskdefinition-lorawanupdategatewaytaskcreate-currentversion)" : {{LoRaWANGatewayVersion}},
   "[SigKeyCrc](#cfn-iotwireless-taskdefinition-lorawanupdategatewaytaskcreate-sigkeycrc)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotwireless-taskdefinition-lorawanupdategatewaytaskcreate-syntax.yaml"></a>
 
-```
+```yaml
   [CurrentVersion](#cfn-iotwireless-taskdefinition-lorawanupdategatewaytaskcreate-currentversion): {{
     LoRaWANGatewayVersion}}
   [SigKeyCrc](#cfn-iotwireless-taskdefinition-lorawanupdategatewaytaskcreate-sigkeycrc): {{Integer}}

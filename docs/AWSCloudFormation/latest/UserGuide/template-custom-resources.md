@@ -51,7 +51,7 @@ The following summarizes the flow for creating a stack from the template:
 
    The following sample data shows what CloudFormation includes in a `Create` request. In this example, `ResourceProperties` allows CloudFormation to create a custom payload to send to the Lambda function.
 
-   ```
+   ```json
    {
       "RequestType" : "Create",
       "RequestId" : "unique id for this create request",
@@ -77,7 +77,7 @@ For more information about using `NoEcho` to mask sensitive information, see the
 
    The following sample data shows what a custom resource might include in a response:
 
-   ```
+   ```json
    {
       "Status" : "SUCCESS",
       "RequestId" : "unique id for this create request",

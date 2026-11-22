@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-comprehend-entityrecognizer-entityrecognizerinputdataconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Annotations](#cfn-comprehend-entityrecognizer-entityrecognizerinputdataconfig-annotations)" : {{EntityRecognizerAnnotations}},
   "[AugmentedManifests](#cfn-comprehend-entityrecognizer-entityrecognizerinputdataconfig-augmentedmanifests)" : {{[ AugmentedManifestsListItem, ... ]}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-comprehend-entityrecognizer-entityrecognizerinputdataconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Annotations](#cfn-comprehend-entityrecognizer-entityrecognizerinputdataconfig-annotations): {{
     EntityRecognizerAnnotations}}
   [AugmentedManifests](#cfn-comprehend-entityrecognizer-entityrecognizerinputdataconfig-augmentedmanifests): {{

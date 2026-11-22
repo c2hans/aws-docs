@@ -35,7 +35,7 @@ After it is configured, you can analyze the DynamoDB data in Amazon Redshift usi
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -97,7 +97,7 @@ After it is configured, you can analyze the DynamoDB data in Amazon Redshift usi
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [
@@ -161,7 +161,7 @@ After it is configured, you can analyze the DynamoDB data in Amazon Redshift usi
 
 ****
 
-      ```
+      ```json
       {
           "Version":"2012-10-17",
           "Statement": [

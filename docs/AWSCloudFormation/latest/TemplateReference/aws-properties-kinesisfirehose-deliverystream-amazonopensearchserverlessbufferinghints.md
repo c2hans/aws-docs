@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-amazonopensearchserverlessbufferinghints-syntax.json"></a>
 
-```
+```json
 {
   "[IntervalInSeconds](#cfn-kinesisfirehose-deliverystream-amazonopensearchserverlessbufferinghints-intervalinseconds)" : {{Integer}},
   "[SizeInMBs](#cfn-kinesisfirehose-deliverystream-amazonopensearchserverlessbufferinghints-sizeinmbs)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-amazonopensearchserverlessbufferinghints-syntax.yaml"></a>
 
-```
+```yaml
   [IntervalInSeconds](#cfn-kinesisfirehose-deliverystream-amazonopensearchserverlessbufferinghints-intervalinseconds): {{Integer}}
   [SizeInMBs](#cfn-kinesisfirehose-deliverystream-amazonopensearchserverlessbufferinghints-sizeinmbs): {{Integer}}
 ```

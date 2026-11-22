@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssm-document-attachmentssource-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-ssm-document-attachmentssource-key)" : {{String}},
   "[Name](#cfn-ssm-document-attachmentssource-name)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssm-document-attachmentssource-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-ssm-document-attachmentssource-key): {{String}}
   [Name](#cfn-ssm-document-attachmentssource-name): {{String}}
   [Values](#cfn-ssm-document-attachmentssource-values): {{

@@ -127,7 +127,7 @@ The `resourceModifiers` restore metadata key is optional. If you omit it, the re
 ### Resource modifiers file schema
 <a name="eks-restore-customizations-schema"></a>
 
-```
+```yaml
 version: v1
 resourceModifierRules:
   - conditions:
@@ -209,7 +209,7 @@ AWS Backup reports these events once per object. For more information, see [ Not
 
 The following resource modifiers file is used when restoring from account `111122223333` in `us-east-1` to account `444455556666` in `us-west-2`. It updates the container image and database endpoint of the `payment` Deployment in the `production` namespace, and adds an annotation recording the backup it was restored from. The Deployment must already have an `annotations` map for the third patch to apply.
 
-```
+```yaml
 version: v1
 resourceModifierRules:
   - conditions:
@@ -241,7 +241,7 @@ These excerpts show only the fields that the three patches change.
 
 **In the recovery point**
 
-```
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -264,7 +264,7 @@ spec:
 
 **Restored to the cluster**
 
-```
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -381,7 +381,7 @@ Use StartRestoreJob. You can specify the following metadata during Amazon EKS re
 
 **Restore to existing cluster**
 
-```
+```bash
 aws backup start-restore-job \
     --recovery-point-arn "arn:aws:backup:us-west-2:123456789012:recovery-point:composite:eks/my-cluster-20240115" \
     --iam-role-arn "arn:aws:iam::123456789012:role/AWSBackupDefaultServiceRole" \
@@ -391,7 +391,7 @@ aws backup start-restore-job \
 
 **Restore specific namespaces to an existing cluster:**
 
-```
+```bash
 aws backup start-restore-job \
     --recovery-point-arn "arn:aws:backup:us-west-2:123456789012:recovery-point:composite:eks/my-cluster-20240115" \
     --iam-role-arn "arn:aws:iam::123456789012:role/AWSBackupDefaultServiceRole" \
@@ -401,7 +401,7 @@ aws backup start-restore-job \
 
 **Restore nested persistent volumes to an existing cluster:**
 
-```
+```bash
 aws backup start-restore-job \
     --recovery-point-arn "arn:aws:backup:us-west-2:123456789012:recovery-point:composite:eks/my-cluster-20240115" \
     --iam-role-arn "arn:aws:iam::123456789012:role/AWSBackupDefaultServiceRole" \

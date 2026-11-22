@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devicefarm-vpceconfiguration-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-devicefarm-vpceconfiguration-tag-key)" : {{String}},
   "[Value](#cfn-devicefarm-vpceconfiguration-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devicefarm-vpceconfiguration-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-devicefarm-vpceconfiguration-tag-key): {{String}}
   [Value](#cfn-devicefarm-vpceconfiguration-tag-value): {{String}}
 ```

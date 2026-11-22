@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-transfer-webapp-identityproviderdetails-syntax.json"></a>
 
-```
+```json
 {
   "[ApplicationArn](#cfn-transfer-webapp-identityproviderdetails-applicationarn)" : {{String}},
   "[InstanceArn](#cfn-transfer-webapp-identityproviderdetails-instancearn)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-transfer-webapp-identityproviderdetails-syntax.yaml"></a>
 
-```
+```yaml
   [ApplicationArn](#cfn-transfer-webapp-identityproviderdetails-applicationarn): {{String}}
   [InstanceArn](#cfn-transfer-webapp-identityproviderdetails-instancearn): {{String}}
   [Role](#cfn-transfer-webapp-identityproviderdetails-role): {{String}}

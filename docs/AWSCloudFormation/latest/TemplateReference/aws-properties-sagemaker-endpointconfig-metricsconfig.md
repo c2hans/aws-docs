@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-endpointconfig-metricsconfig-syntax.json"></a>
 
-```
+```json
 {
   "[EnableDetailedObservability](#cfn-sagemaker-endpointconfig-metricsconfig-enabledetailedobservability)" : {{Boolean}},
   "[EnableEnhancedMetrics](#cfn-sagemaker-endpointconfig-metricsconfig-enableenhancedmetrics)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-endpointconfig-metricsconfig-syntax.yaml"></a>
 
-```
+```yaml
   [EnableDetailedObservability](#cfn-sagemaker-endpointconfig-metricsconfig-enabledetailedobservability): {{Boolean}}
   [EnableEnhancedMetrics](#cfn-sagemaker-endpointconfig-metricsconfig-enableenhancedmetrics): {{Boolean}}
   [MetricPublishFrequencyInSeconds](#cfn-sagemaker-endpointconfig-metricsconfig-metricpublishfrequencyinseconds): {{Integer}}

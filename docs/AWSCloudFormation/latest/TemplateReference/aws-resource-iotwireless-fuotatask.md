@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iotwireless-fuotatask-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoTWireless::FuotaTask",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iotwireless-fuotatask-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoTWireless::FuotaTask
 Properties:
   [AssociateMulticastGroup](#cfn-iotwireless-fuotatask-associatemulticastgroup): {{String}}

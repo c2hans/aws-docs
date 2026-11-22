@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-confluencespaceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CrawlArchivedSpaces](#cfn-kendra-datasource-confluencespaceconfiguration-crawlarchivedspaces)" : {{Boolean}},
   "[CrawlPersonalSpaces](#cfn-kendra-datasource-confluencespaceconfiguration-crawlpersonalspaces)" : {{Boolean}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-confluencespaceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CrawlArchivedSpaces](#cfn-kendra-datasource-confluencespaceconfiguration-crawlarchivedspaces): {{Boolean}}
   [CrawlPersonalSpaces](#cfn-kendra-datasource-confluencespaceconfiguration-crawlpersonalspaces): {{Boolean}}
   [ExcludeSpaces](#cfn-kendra-datasource-confluencespaceconfiguration-excludespaces): {{

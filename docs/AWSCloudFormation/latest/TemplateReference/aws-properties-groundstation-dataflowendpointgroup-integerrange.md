@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-groundstation-dataflowendpointgroup-integerrange-syntax.json"></a>
 
-```
+```json
 {
   "[Maximum](#cfn-groundstation-dataflowendpointgroup-integerrange-maximum)" : {{Integer}},
   "[Minimum](#cfn-groundstation-dataflowendpointgroup-integerrange-minimum)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-groundstation-dataflowendpointgroup-integerrange-syntax.yaml"></a>
 
-```
+```yaml
   [Maximum](#cfn-groundstation-dataflowendpointgroup-integerrange-maximum): {{Integer}}
   [Minimum](#cfn-groundstation-dataflowendpointgroup-integerrange-minimum): {{Integer}}
 ```

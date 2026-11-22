@@ -109,7 +109,7 @@ You can use the `EvaluateCode` API command to remotely test your code with mocke
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

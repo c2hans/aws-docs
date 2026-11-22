@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecr-replicationconfiguration-replicationrule-syntax.json"></a>
 
-```
+```json
 {
   "[DeleteReplication](#cfn-ecr-replicationconfiguration-replicationrule-deletereplication)" : {{DeleteReplication}},
   "[Destinations](#cfn-ecr-replicationconfiguration-replicationrule-destinations)" : {{[ ReplicationDestination, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecr-replicationconfiguration-replicationrule-syntax.yaml"></a>
 
-```
+```yaml
   [DeleteReplication](#cfn-ecr-replicationconfiguration-replicationrule-deletereplication): {{
     DeleteReplication}}
   [Destinations](#cfn-ecr-replicationconfiguration-replicationrule-destinations): {{

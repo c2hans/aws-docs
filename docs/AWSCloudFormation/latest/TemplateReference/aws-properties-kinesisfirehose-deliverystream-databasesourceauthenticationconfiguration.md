@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-databasesourceauthenticationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[SecretsManagerConfiguration](#cfn-kinesisfirehose-deliverystream-databasesourceauthenticationconfiguration-secretsmanagerconfiguration)" : {{SecretsManagerConfiguration}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-databasesourceauthenticationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [SecretsManagerConfiguration](#cfn-kinesisfirehose-deliverystream-databasesourceauthenticationconfiguration-secretsmanagerconfiguration): {{
     SecretsManagerConfiguration}}
 ```

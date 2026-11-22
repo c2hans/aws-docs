@@ -33,13 +33,13 @@ Your IAM identity must have the following permissions to complete this tutorial:
    + `erofs-utils`
    + `aws-nitro-tpm-tools`
 
-   ```
+   ```bash
    sudo dnf install -y kiwi-cli python3-kiwi kiwi-systemdeps-core python3-poetry-core qemu-img veritysetup erofs-utils git cargo aws-nitro-tpm-tools
    ```
 
 1. Install the `coldsnap` utility. This utility enables you to create Amazon EBS snapshots from raw image data. You'll use this utility to create an EBS snapshot from the raw disk image file created by KIWI NG.
 
-   ```
+   ```bash
    git clone https://github.com/awslabs/coldsnap.git
    cd coldsnap
    cargo install --locked coldsnap
@@ -48,7 +48,7 @@ Your IAM identity must have the following permissions to complete this tutorial:
 
 1. Get the sample image description files.
 
-   ```
+   ```bash
    sudo dnf install kiwi-image-descriptions-examples
    ```
 
@@ -56,7 +56,7 @@ Your IAM identity must have the following permissions to complete this tutorial:
 
 1. Build the sample image description using the KIWI NG `system build` command. The following command creates a raw disk image file in the `./image` directory.
 
-   ```
+   ```bash
    sudo kiwi-ng \
    --color-output \
    --loglevel 0 \
@@ -71,7 +71,7 @@ Your IAM identity must have the following permissions to complete this tutorial:
 
    The measurements are provided in the following JSON format:
 
-   ```
+   ```JSON
    {
      "Measurements": {
        "HashAlgorithm": "SHA384 { ... }",
@@ -84,7 +84,7 @@ Your IAM identity must have the following permissions to complete this tutorial:
 
 1. Use the `coldsnap` utility to upload the raw disk image created by KIWI NG to an EBS snapshot. The command returns the snapshot ID. Make a note of the ID, you'll need it for the next step.
 
-   ```
+   ```bash
    SNAPSHOT=$(.cargo/bin/coldsnap upload ./image/al2023*.raw)
    echo "Created snapshot: $SNAPSHOT"
    ```
@@ -93,7 +93,7 @@ Your IAM identity must have the following permissions to complete this tutorial:
 
 1. Register a TPM 2.0-enabled AMI with UEFI boot mode using the snapshot from the previous step. For `--architecture`, specify `x86_64` for Intel, or `arm64` for Graviton.
 
-   ```
+   ```bash
    aws ec2 register-image \
    --name "attestable_isolated_al2023_ami" \
    --virtualization-type hvm \

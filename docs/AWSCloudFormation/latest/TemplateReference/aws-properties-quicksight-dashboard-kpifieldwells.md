@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-kpifieldwells-syntax.json"></a>
 
-```
+```json
 {
   "[TargetValues](#cfn-quicksight-dashboard-kpifieldwells-targetvalues)" : {{[ MeasureField, ... ]}},
   "[TrendGroups](#cfn-quicksight-dashboard-kpifieldwells-trendgroups)" : {{[ DimensionField, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-kpifieldwells-syntax.yaml"></a>
 
-```
+```yaml
   [TargetValues](#cfn-quicksight-dashboard-kpifieldwells-targetvalues): {{
     - MeasureField}}
   [TrendGroups](#cfn-quicksight-dashboard-kpifieldwells-trendgroups): {{

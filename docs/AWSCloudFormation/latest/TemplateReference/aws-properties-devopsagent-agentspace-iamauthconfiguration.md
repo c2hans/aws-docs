@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-agentspace-iamauthconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CreatedAt](#cfn-devopsagent-agentspace-iamauthconfiguration-createdat)" : {{String}},
   "[OperatorAppRoleArn](#cfn-devopsagent-agentspace-iamauthconfiguration-operatorapprolearn)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-agentspace-iamauthconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CreatedAt](#cfn-devopsagent-agentspace-iamauthconfiguration-createdat): {{String}}
   [OperatorAppRoleArn](#cfn-devopsagent-agentspace-iamauthconfiguration-operatorapprolearn): {{String}}
   [UpdatedAt](#cfn-devopsagent-agentspace-iamauthconfiguration-updatedat): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-distribution-truststoreconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AdvertiseTrustStoreCaNames](#cfn-cloudfront-distribution-truststoreconfig-advertisetruststorecanames)" : {{Boolean}},
   "[IgnoreCertificateExpiry](#cfn-cloudfront-distribution-truststoreconfig-ignorecertificateexpiry)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-distribution-truststoreconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AdvertiseTrustStoreCaNames](#cfn-cloudfront-distribution-truststoreconfig-advertisetruststorecanames): {{Boolean}}
   [IgnoreCertificateExpiry](#cfn-cloudfront-distribution-truststoreconfig-ignorecertificateexpiry): {{Boolean}}
   [TrustStoreId](#cfn-cloudfront-distribution-truststoreconfig-truststoreid): {{String}}

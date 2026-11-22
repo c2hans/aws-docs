@@ -45,7 +45,7 @@ CloudTrail log files contain one or more log entries. CloudTrail log files are n
 
 The following example shows a CloudTrail log entry that demonstrates the `CreateDBInstance` action.
 
-```
+```json
 {
     "eventVersion": "1.04",
     "userIdentity": {

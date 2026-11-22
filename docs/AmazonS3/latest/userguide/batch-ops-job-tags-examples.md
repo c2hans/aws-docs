@@ -53,7 +53,7 @@ The policy in this example includes three policy statements:
 
 ****
 
-```
+```json
 {
       "Version":"2012-10-17",
       "Statement": [
@@ -117,7 +117,7 @@ This policy introduces two new restrictions on S3 Batch Operations job creation 
 + It allows users to create or update jobs in their department with a new condition that requires the job to include the tag `stage=QA`.
 + It allows users to create or update a job’s priority up to a new maximum priority of 100.
 
-```
+```json
 {
         "Version": "2012-10-17",
         "Statement": [
@@ -197,7 +197,7 @@ This policy does the following:
 
 ****
 
-```
+```json
 {
       "Version":"2012-10-17",
       "Statement": [

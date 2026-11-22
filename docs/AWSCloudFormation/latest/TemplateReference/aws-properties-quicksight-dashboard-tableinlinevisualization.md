@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-tableinlinevisualization-syntax.json"></a>
 
-```
+```json
 {
   "[DataBars](#cfn-quicksight-dashboard-tableinlinevisualization-databars)" : {{DataBarsOptions}},
   "[Sparklines](#cfn-quicksight-dashboard-tableinlinevisualization-sparklines)" : {{SparklinesOptions}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-tableinlinevisualization-syntax.yaml"></a>
 
-```
+```yaml
   [DataBars](#cfn-quicksight-dashboard-tableinlinevisualization-databars): {{
     DataBarsOptions}}
   [Sparklines](#cfn-quicksight-dashboard-tableinlinevisualization-sparklines): {{

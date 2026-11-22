@@ -36,7 +36,7 @@ You must sign in as the AWS account root user, which requires no additional AWS 
 + AWS CLI: [aws iam delete-access-key](https://docs.aws.amazon.com/cli/latest/reference/iam/delete-access-key.html)
 **Example**
 
-  ```
+  ```bash
   $ aws iam delete-access-key \
       --access-key-id AKIAIOSFODNN7EXAMPLE
   ```

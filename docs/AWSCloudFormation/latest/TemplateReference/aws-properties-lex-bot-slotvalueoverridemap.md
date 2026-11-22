@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-slotvalueoverridemap-syntax.json"></a>
 
-```
+```json
 {
   "[SlotName](#cfn-lex-bot-slotvalueoverridemap-slotname)" : {{String}},
   "[SlotValueOverride](#cfn-lex-bot-slotvalueoverridemap-slotvalueoverride)" : {{SlotValueOverride}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-slotvalueoverridemap-syntax.yaml"></a>
 
-```
+```yaml
   [SlotName](#cfn-lex-bot-slotvalueoverridemap-slotname): {{String}}
   [SlotValueOverride](#cfn-lex-bot-slotvalueoverridemap-slotvalueoverride): {{
     SlotValueOverride}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-endpoint-rollingupdatepolicy-syntax.json"></a>
 
-```
+```json
 {
   "[MaximumBatchSize](#cfn-sagemaker-endpoint-rollingupdatepolicy-maximumbatchsize)" : {{CapacitySize}},
   "[MaximumExecutionTimeoutInSeconds](#cfn-sagemaker-endpoint-rollingupdatepolicy-maximumexecutiontimeoutinseconds)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-endpoint-rollingupdatepolicy-syntax.yaml"></a>
 
-```
+```yaml
   [MaximumBatchSize](#cfn-sagemaker-endpoint-rollingupdatepolicy-maximumbatchsize): {{
     CapacitySize}}
   [MaximumExecutionTimeoutInSeconds](#cfn-sagemaker-endpoint-rollingupdatepolicy-maximumexecutiontimeoutinseconds): {{Integer}}

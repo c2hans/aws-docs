@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-applicationsignals-groupingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApplicationSignals::GroupingConfiguration",
   "Properties" : {
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-applicationsignals-groupingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApplicationSignals::GroupingConfiguration
 Properties:
   [GroupingAttributeDefinitions](#cfn-applicationsignals-groupingconfiguration-groupingattributedefinitions): {{

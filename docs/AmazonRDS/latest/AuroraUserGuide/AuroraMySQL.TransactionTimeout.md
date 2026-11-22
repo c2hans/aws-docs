@@ -50,7 +50,7 @@ The following examples show when the timer starts for different transaction scen
 ### Explicit transaction
 <a name="AuroraMySQL.TransactionTimeout.examples.explicit"></a>
 
-```
+```sql
 BEGIN;                    -- Does NOT start InnoDB transaction. No timer.
 SELECT * FROM t1;         -- Starts InnoDB transaction. Timer starts HERE (at statement 2).
 ```
@@ -60,7 +60,7 @@ The timer starts at statement 2 (the first InnoDB statement).
 ### autocommit=0
 <a name="AuroraMySQL.TransactionTimeout.examples.autocommit"></a>
 
-```
+```sql
 SET SESSION autocommit=0;  -- No transaction yet
 SELECT * FROM t1;          -- Starts InnoDB transaction. Timer starts HERE.
 INSERT INTO t1 ...;        -- Same transaction, timer still running from step 2.
@@ -73,7 +73,7 @@ The timer starts at statement 2 (the first InnoDB statement after autocommit is 
 
 A stored procedure runs within the caller's transaction context. If the caller already has an active InnoDB transaction, the timer was already started before the procedure call. If the procedure is the first thing to touch InnoDB, the timer starts at the first InnoDB statement inside the procedure.
 
-```
+```sql
 BEGIN;
 CALL my_proc();  -- If my_proc() does SELECT/INSERT, timer starts at that first InnoDB statement inside the proc
 ```
@@ -113,7 +113,7 @@ This log message is for diagnostic purposes only. Rely on the client response as
 
 Use the `Aurora_transaction_timeouts` status variable to track how many transactions have timed out since the DB instance restarted.
 
-```
+```sql
 SHOW GLOBAL STATUS LIKE 'Aurora_transaction_timeouts';
 ```
 

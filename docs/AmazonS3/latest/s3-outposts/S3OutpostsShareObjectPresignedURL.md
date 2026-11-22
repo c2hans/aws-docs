@@ -36,7 +36,7 @@ When you use the AWS SDKs to generate a presigned URL, the maximum expiration ti
 **Example**
 The following example generates a presigned URL that you can give to others so that they can retrieve an object from an S3 on Outposts bucket. For more information, see [Using presigned URLs for S3 on Outposts](S3OutpostsPresignedURL.md). To use this example, replace the {{`user input placeholders`}} with your own information.
 
-```
+```java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.HttpMethod;
 import com.amazonaws.SdkClientException;
@@ -97,7 +97,7 @@ public class GeneratePresignedURL {
 **Example**
 The following example generates a presigned URL that you can give to others so that they can retrieve an object from an S3 on Outposts bucket. For more information, see [Using presigned URLs for S3 on Outposts](S3OutpostsPresignedURL.md). To use this example, replace the {{`user input placeholders`}} with your own information.
 
-```
+```cs
 using Amazon;
 using Amazon.S3;
 using Amazon.S3.Model;
@@ -152,7 +152,7 @@ namespace Amazon.DocSamples.S3
 
 The following example generates a presigned URL to share an object by using the SDK for Python (Boto3). For example, use a Boto3 client and the `generate_presigned_url` function to generate a presigned URL that allows you to `GET` an object.
 
-```
+```Python
 import boto3
     url = boto3.client('s3').generate_presigned_url(
     ClientMethod='get_object',

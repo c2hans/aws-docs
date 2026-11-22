@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-resiliencehubv2-service-ekssource-syntax.json"></a>
 
-```
+```json
 {
   "[ClusterArn](#cfn-resiliencehubv2-service-ekssource-clusterarn)" : {{String}},
   "[LabelSelector](#cfn-resiliencehubv2-service-ekssource-labelselector)" : {{EksLabelSelector}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-resiliencehubv2-service-ekssource-syntax.yaml"></a>
 
-```
+```yaml
   [ClusterArn](#cfn-resiliencehubv2-service-ekssource-clusterarn): {{String}}
   [LabelSelector](#cfn-resiliencehubv2-service-ekssource-labelselector): {{
     EksLabelSelector}}

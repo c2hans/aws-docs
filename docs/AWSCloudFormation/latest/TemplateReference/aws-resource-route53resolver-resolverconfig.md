@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-route53resolver-resolverconfig-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Route53Resolver::ResolverConfig",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-route53resolver-resolverconfig-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Route53Resolver::ResolverConfig
 Properties:
   [AutodefinedReverseFlag](#cfn-route53resolver-resolverconfig-autodefinedreverseflag): {{String}}

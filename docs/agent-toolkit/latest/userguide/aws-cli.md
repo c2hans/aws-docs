@@ -27,7 +27,7 @@ The CLI provides two command groups:
 
 The `aws configure agent-toolkit` command runs an interactive setup wizard. It detects installed AI coding agents, installs default AWS skills, and configures the AWS MCP Server connection.
 
-```
+```bash
 aws configure agent-toolkit
 ```
 
@@ -61,7 +61,7 @@ The `add-skill` command downloads and installs an AWS skill to detected AI codin
 
 The following `add-skill` example downloads and installs the `aws-serverless` skill to all detected AI coding agents.
 
-```
+```bash
 aws agent-toolkit add-skill \
     --skill-name aws-serverless
 ```
@@ -70,7 +70,7 @@ aws agent-toolkit add-skill \
 
 The following `add-skill` example installs the `aws-cdk` skill only to Kiro.
 
-```
+```bash
 aws agent-toolkit add-skill \
     --skill-name aws-cdk \
     --agent kiro
@@ -80,7 +80,7 @@ aws agent-toolkit add-skill \
 
 The following `add-skill` example installs version `v1` of the `aws-serverless` skill.
 
-```
+```bash
 aws agent-toolkit add-skill \
     --skill-name aws-serverless \
     --skill-version v1
@@ -95,7 +95,7 @@ The `update-skill` command updates an installed AWS skill to the latest version.
 
 The following `update-skill` example updates the `aws-serverless` skill to the latest version across all agents.
 
-```
+```bash
 aws agent-toolkit update-skill \
     --skill-name aws-serverless
 ```
@@ -104,7 +104,7 @@ aws agent-toolkit update-skill \
 
 The following `update-skill` example updates the `aws-serverless` skill only for Kiro.
 
-```
+```bash
 aws agent-toolkit update-skill \
     --skill-name aws-serverless \
     --agent kiro
@@ -119,7 +119,7 @@ The `remove-skill` command removes a previously installed AWS skill from detecte
 
 The following `remove-skill` example removes the `aws-serverless` skill from all detected agents.
 
-```
+```bash
 aws agent-toolkit remove-skill \
     --skill-name aws-serverless
 ```
@@ -128,7 +128,7 @@ aws agent-toolkit remove-skill \
 
 The following `remove-skill` example removes the `aws-cdk` skill only from Kiro.
 
-```
+```bash
 aws agent-toolkit remove-skill \
     --skill-name aws-cdk \
     --agent kiro
@@ -143,7 +143,7 @@ The `list-installed-skills` command lists AWS skills that you previously install
 
 The following `list-installed-skills` example lists all AWS skills installed on detected agents.
 
-```
+```bash
 aws agent-toolkit list-installed-skills
 ```
 
@@ -151,7 +151,7 @@ aws agent-toolkit list-installed-skills
 
 The following `list-installed-skills` example lists skills installed only in Kiro.
 
-```
+```bash
 aws agent-toolkit list-installed-skills \
     --agent kiro
 ```
@@ -165,7 +165,7 @@ The `list-available-skills` command lists skills available in the remote catalog
 
 The following `list-available-skills` example lists all skills available in the remote catalog.
 
-```
+```bash
 aws agent-toolkit list-available-skills
 ```
 
@@ -173,7 +173,7 @@ aws agent-toolkit list-available-skills
 
 The following `list-available-skills` example lists only skills in the `aws-core` category.
 
-```
+```bash
 aws agent-toolkit list-available-skills \
     --category-filter aws-core
 ```
@@ -187,7 +187,7 @@ The `search-skills` command searches the remote catalog for skills matching a qu
 
 The following `search-skills` example searches for skills related to serverless development.
 
-```
+```bash
 aws agent-toolkit search-skills \
     --search-query serverless
 ```
@@ -201,7 +201,7 @@ The `get-skill-metadata` command retrieves metadata for a skill. This includes t
 
 The following `get-skill-metadata` example retrieves metadata for the `aws-serverless` skill.
 
-```
+```bash
 aws agent-toolkit get-skill-metadata \
     --skill-name aws-serverless
 ```
@@ -210,7 +210,7 @@ aws agent-toolkit get-skill-metadata \
 
 The following `get-skill-metadata` example retrieves metadata for version `v1` of the `aws-serverless` skill.
 
-```
+```bash
 aws agent-toolkit get-skill-metadata \
     --skill-name aws-serverless \
     --skill-version v1
@@ -225,7 +225,7 @@ The `get-skill-file` command retrieves the contents of a single file from a skil
 
 The following `get-skill-file` example retrieves the `SKILL.md` file from the `aws-serverless` skill.
 
-```
+```bash
 aws agent-toolkit get-skill-file \
     --skill-name aws-serverless \
     --file-path SKILL.md
@@ -235,7 +235,7 @@ aws agent-toolkit get-skill-file \
 
 The following `get-skill-file` example retrieves a reference file from a specific version of the `aws-serverless` skill.
 
-```
+```bash
 aws agent-toolkit get-skill-file \
     --skill-name aws-serverless \
     --file-path references/architecture.md \

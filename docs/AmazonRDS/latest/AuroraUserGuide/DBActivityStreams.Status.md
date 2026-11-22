@@ -37,7 +37,7 @@ The following example shows a JSON response. The following fields are shown:
 
 These fields are the same for Aurora PostgreSQL and Aurora MySQL, except that `ActivityStreamMode` is always `async` for Aurora MySQL, while for Aurora PostgreSQL it might be `sync` or `async`.
 
-```
+```json
 {
     "DBClusters": [
         {

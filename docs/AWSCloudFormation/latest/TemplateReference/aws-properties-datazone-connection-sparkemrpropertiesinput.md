@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-connection-sparkemrpropertiesinput-syntax.json"></a>
 
-```
+```json
 {
   "[ComputeArn](#cfn-datazone-connection-sparkemrpropertiesinput-computearn)" : {{String}},
   "[InstanceProfileArn](#cfn-datazone-connection-sparkemrpropertiesinput-instanceprofilearn)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-connection-sparkemrpropertiesinput-syntax.yaml"></a>
 
-```
+```yaml
   [ComputeArn](#cfn-datazone-connection-sparkemrpropertiesinput-computearn): {{String}}
   [InstanceProfileArn](#cfn-datazone-connection-sparkemrpropertiesinput-instanceprofilearn): {{String}}
   [JavaVirtualEnv](#cfn-datazone-connection-sparkemrpropertiesinput-javavirtualenv): {{String}}

@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-cluster-clustersettings-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-ecs-cluster-clustersettings-name)" : {{String}},
   "[Value](#cfn-ecs-cluster-clustersettings-value)" : {{String}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-cluster-clustersettings-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-ecs-cluster-clustersettings-name): {{String}}
   [Value](#cfn-ecs-cluster-clustersettings-value): {{String}}
 ```

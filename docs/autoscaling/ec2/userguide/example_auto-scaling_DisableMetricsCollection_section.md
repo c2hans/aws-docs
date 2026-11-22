@@ -15,7 +15,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/AutoScaling#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Disable the collection of metric data for an Amazon EC2 Auto Scaling
     /// group.
@@ -42,7 +42,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/autoscaling#code-examples).
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -89,7 +89,7 @@ For more information, see [Monitor CloudWatch metrics for your Auto Scaling grou
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/autoscale#code-examples).
 
-```
+```java
     public static void disableMetricsCollection(AutoScalingClient autoScalingClient, String groupName) {
         try {
             DisableMetricsCollectionRequest disableMetricsCollectionRequest = DisableMetricsCollectionRequest.builder()
@@ -114,7 +114,7 @@ For more information, see [Monitor CloudWatch metrics for your Auto Scaling grou
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/autoscale#code-examples).
 
-```
+```kotlin
 suspend fun disableMetricsCollection(groupName: String) {
     val disableMetricsCollectionRequest =
         DisableMetricsCollectionRequest {
@@ -136,7 +136,7 @@ suspend fun disableMetricsCollection(groupName: String) {
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/auto-scaling#code-examples).
 
-```
+```php
     public function disableMetricsCollection($autoScalingGroupName)
     {
         return $this->autoScalingClient->disableMetricsCollection([
@@ -152,12 +152,12 @@ suspend fun disableMetricsCollection(groupName: String) {
 **Tools for PowerShell V4**
 **Example 1: This example disables monitoring of the specified metrics for the specified Auto Scaling group.**
 
-```
+```powershell
 Disable-ASMetricsCollection -AutoScalingGroupName my-asg -Metric @("GroupMinSize", "GroupMaxSize")
 ```
 **Example 2: This example disables monitoring of all metrics for the specified Auto Scaling group.**
 
-```
+```powershell
 Disable-ASMetricsCollection -AutoScalingGroupName my-asg
 ```
 +  For API details, see [DisableMetricsCollection](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -165,12 +165,12 @@ Disable-ASMetricsCollection -AutoScalingGroupName my-asg
 **Tools for PowerShell V5**
 **Example 1: This example disables monitoring of the specified metrics for the specified Auto Scaling group.**
 
-```
+```powershell
 Disable-ASMetricsCollection -AutoScalingGroupName my-asg -Metric @("GroupMinSize", "GroupMaxSize")
 ```
 **Example 2: This example disables monitoring of all metrics for the specified Auto Scaling group.**
 
-```
+```powershell
 Disable-ASMetricsCollection -AutoScalingGroupName my-asg
 ```
 +  For API details, see [DisableMetricsCollection](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -181,7 +181,7 @@ Disable-ASMetricsCollection -AutoScalingGroupName my-asg
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/auto-scaling#code-examples).
 
-```
+```python
 class AutoScalingWrapper:
     """Encapsulates Amazon EC2 Auto Scaling actions."""
 
@@ -228,7 +228,7 @@ class AutoScalingWrapper:
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/auto-scaling#code-examples).
 
-```
+```rust
         // If this fails it's fine, just means there are extra cloudwatch metrics events for the scale-down.
         let _ = self
             .autoscaling
@@ -245,7 +245,7 @@ class AutoScalingWrapper:
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/asc#code-examples).
 
-```
+```sap-abap
     " Example: iv_group_name = 'my-auto-scaling-group'
 
     TRY.

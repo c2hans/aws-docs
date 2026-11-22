@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-controltower-enabledcontrol-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ControlTower::EnabledControl",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-controltower-enabledcontrol-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ControlTower::EnabledControl
 Properties:
   [ControlIdentifier](#cfn-controltower-enabledcontrol-controlidentifier): {{String}}
@@ -102,7 +102,7 @@ The following example creates an enabled control named *MyExampleControl* for an
 #### JSON
 <a name="aws-resource-controltower-enabledcontrol--examples--Example--json"></a>
 
-```
+```json
 {
     "Resources": {
         "MyExampleControl": {
@@ -119,7 +119,7 @@ The following example creates an enabled control named *MyExampleControl* for an
 #### YAML
 <a name="aws-resource-controltower-enabledcontrol--examples--Example--yaml"></a>
 
-```
+```yaml
 Resources:
   MyExampleControl:
     Properties:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-eventsourcemapping-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-lambda-eventsourcemapping-tag-key)" : {{String}},
   "[Value](#cfn-lambda-eventsourcemapping-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-eventsourcemapping-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-lambda-eventsourcemapping-tag-key): {{String}}
   [Value](#cfn-lambda-eventsourcemapping-tag-value): {{String}}
 ```

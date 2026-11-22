@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-ec2fleet-instancemetadataoptionsrequest-syntax.json"></a>
 
-```
+```json
 {
   "[HttpEndpoint](#cfn-ec2-ec2fleet-instancemetadataoptionsrequest-httpendpoint)" : {{String}},
   "[HttpPutResponseHopLimit](#cfn-ec2-ec2fleet-instancemetadataoptionsrequest-httpputresponsehoplimit)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-ec2fleet-instancemetadataoptionsrequest-syntax.yaml"></a>
 
-```
+```yaml
   [HttpEndpoint](#cfn-ec2-ec2fleet-instancemetadataoptionsrequest-httpendpoint): {{String}}
   [HttpPutResponseHopLimit](#cfn-ec2-ec2fleet-instancemetadataoptionsrequest-httpputresponsehoplimit): {{Integer}}
   [HttpTokens](#cfn-ec2-ec2fleet-instancemetadataoptionsrequest-httptokens): {{String}}

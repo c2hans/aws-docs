@@ -11,7 +11,7 @@ The following permissions policy grants permissions for the `GetItem`, `BatchGet
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

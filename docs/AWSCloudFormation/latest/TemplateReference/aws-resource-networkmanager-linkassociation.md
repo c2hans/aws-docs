@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-networkmanager-linkassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::NetworkManager::LinkAssociation",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-networkmanager-linkassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::NetworkManager::LinkAssociation
 Properties:
   [DeviceId](#cfn-networkmanager-linkassociation-deviceid): {{String}}
@@ -89,7 +89,7 @@ The following example template creates a global network, site, link, and device.
 #### JSON
 <a name="aws-resource-networkmanager-linkassociation--examples--Link_Association--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Create global network and link association",
@@ -185,7 +185,7 @@ The following example template creates a global network, site, link, and device.
 #### YAML
 <a name="aws-resource-networkmanager-linkassociation--examples--Link_Association--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: 'Create global network and link association'
 Resources:

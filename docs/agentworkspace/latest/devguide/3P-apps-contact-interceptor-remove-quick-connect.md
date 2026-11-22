@@ -8,7 +8,7 @@ Unregisters an interceptor that you registered with `addOpenQuickConnectIntercep
 
 **Signature**
 
-```
+```typescript
 removeOpenQuickConnectInterceptor(
   interceptor: Interceptor<ContactInterceptorContext>,
   contactId?: string
@@ -17,7 +17,7 @@ removeOpenQuickConnectInterceptor(
 
 **Usage**
 
-```
+```typescript
 await service.removeOpenQuickConnectInterceptor(myInterceptor);
 
 // If scoped to a contact, pass the same contactId

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emr-instancefleetconfig-spotresizingspecification-syntax.json"></a>
 
-```
+```json
 {
   "[AllocationStrategy](#cfn-emr-instancefleetconfig-spotresizingspecification-allocationstrategy)" : {{String}},
   "[TimeoutDurationMinutes](#cfn-emr-instancefleetconfig-spotresizingspecification-timeoutdurationminutes)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emr-instancefleetconfig-spotresizingspecification-syntax.yaml"></a>
 
-```
+```yaml
   [AllocationStrategy](#cfn-emr-instancefleetconfig-spotresizingspecification-allocationstrategy): {{String}}
   [TimeoutDurationMinutes](#cfn-emr-instancefleetconfig-spotresizingspecification-timeoutdurationminutes): {{Integer}}
 ```

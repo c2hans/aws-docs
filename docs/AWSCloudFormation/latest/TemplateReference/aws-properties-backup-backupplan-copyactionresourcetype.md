@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-backup-backupplan-copyactionresourcetype-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationBackupVaultArn](#cfn-backup-backupplan-copyactionresourcetype-destinationbackupvaultarn)" : {{String}},
   "[Lifecycle](#cfn-backup-backupplan-copyactionresourcetype-lifecycle)" : {{LifecycleResourceType}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-backup-backupplan-copyactionresourcetype-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationBackupVaultArn](#cfn-backup-backupplan-copyactionresourcetype-destinationbackupvaultarn): {{String}}
   [Lifecycle](#cfn-backup-backupplan-copyactionresourcetype-lifecycle): {{
     LifecycleResourceType}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-provisioningtemplate-provisioninghook-syntax.json"></a>
 
-```
+```json
 {
   "[PayloadVersion](#cfn-iot-provisioningtemplate-provisioninghook-payloadversion)" : {{String}},
   "[TargetArn](#cfn-iot-provisioningtemplate-provisioninghook-targetarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-provisioningtemplate-provisioninghook-syntax.yaml"></a>
 
-```
+```yaml
   [PayloadVersion](#cfn-iot-provisioningtemplate-provisioninghook-payloadversion): {{String}}
   [TargetArn](#cfn-iot-provisioningtemplate-provisioninghook-targetarn): {{String}}
 ```

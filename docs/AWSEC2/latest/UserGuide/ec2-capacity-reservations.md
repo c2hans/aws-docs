@@ -118,7 +118,7 @@ To ensure that an instance runs in a specific Capacity Reservation, the platform
 **To check the AMI platform**
 Use the [describe-images](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html) command and check the value of `PlatformDetails`.
 
-```
+```bash
 aws ec2 describe-images \
     --image-ids {{ami-0abcdef1234567890}} \
     --query Images[*].PlatformDetails
@@ -126,7 +126,7 @@ aws ec2 describe-images \
 
 The following is example output.
 
-```
+```json
 [
     "Linux/UNIX"
 ]
@@ -138,13 +138,13 @@ The following is example output.
 **To check the AMI platform**
 Use the [Get-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Image.html) cmdlet and check the value of `PlatformDetails`.
 
-```
+```powershell
 (Get-EC2Image -ImageId {{ami-0abcdef1234567890}}).PlatformDetails
 ```
 
 The following is example output.
 
-```
+```bash
 Linux/UNIX
 ```
 

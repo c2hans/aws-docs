@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-groundstation-config-antennadownlinkdemoddecodeconfig-syntax.json"></a>
 
-```
+```json
 {
   "[DecodeConfig](#cfn-groundstation-config-antennadownlinkdemoddecodeconfig-decodeconfig)" : {{DecodeConfig}},
   "[DemodulationConfig](#cfn-groundstation-config-antennadownlinkdemoddecodeconfig-demodulationconfig)" : {{DemodulationConfig}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-groundstation-config-antennadownlinkdemoddecodeconfig-syntax.yaml"></a>
 
-```
+```yaml
   [DecodeConfig](#cfn-groundstation-config-antennadownlinkdemoddecodeconfig-decodeconfig): {{
     DecodeConfig}}
   [DemodulationConfig](#cfn-groundstation-config-antennadownlinkdemoddecodeconfig-demodulationconfig): {{
@@ -68,7 +68,7 @@ The following example creates a Ground Station `AntennaDownlinkDemodDecodeConfig
 #### JSON
 <a name="aws-properties-groundstation-config-antennadownlinkdemoddecodeconfig--examples--Create_an_AntennaDownlinkDemodDecodeConfig--json"></a>
 
-```
+```json
 {
   "AntennaDownlinkDemodDecodeConfig": {
     "SpectrumConfig": {
@@ -95,7 +95,7 @@ The following example creates a Ground Station `AntennaDownlinkDemodDecodeConfig
 #### YAML
 <a name="aws-properties-groundstation-config-antennadownlinkdemoddecodeconfig--examples--Create_an_AntennaDownlinkDemodDecodeConfig--yaml"></a>
 
-```
+```yaml
 AntennaDownlinkDemodDecodeConfig:
   SpectrumConfig:
     CenterFrequency:

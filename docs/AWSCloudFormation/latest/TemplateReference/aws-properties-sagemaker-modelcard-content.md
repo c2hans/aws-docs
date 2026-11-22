@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelcard-content-syntax.json"></a>
 
-```
+```json
 {
   "[AdditionalInformation](#cfn-sagemaker-modelcard-content-additionalinformation)" : {{AdditionalInformation}},
   "[BusinessDetails](#cfn-sagemaker-modelcard-content-businessdetails)" : {{BusinessDetails}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelcard-content-syntax.yaml"></a>
 
-```
+```yaml
   [AdditionalInformation](#cfn-sagemaker-modelcard-content-additionalinformation): {{
     AdditionalInformation}}
   [BusinessDetails](#cfn-sagemaker-modelcard-content-businessdetails): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-accessanalyzer-archiverule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AccessAnalyzer::ArchiveRule",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-accessanalyzer-archiverule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AccessAnalyzer::ArchiveRule
 Properties:
   [AnalyzerName](#cfn-accessanalyzer-archiverule-analyzername): {{String}}

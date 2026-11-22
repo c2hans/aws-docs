@@ -15,7 +15,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Route53#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get a list of suggestions for a given domain.
     /// </summary>
@@ -105,7 +105,7 @@ For more information, see [Registering a new domain](https://docs.aws.amazon.com
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/route53#code-examples).
 
-```
+```java
     public static void listDomainSuggestions(Route53DomainsClient route53DomainsClient, String domainSuggestion) {
         try {
             GetDomainSuggestionsRequest suggestionsRequest = GetDomainSuggestionsRequest.builder()
@@ -136,7 +136,7 @@ For more information, see [Registering a new domain](https://docs.aws.amazon.com
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/route53#code-examples).
 
-```
+```kotlin
 suspend fun listDomainSuggestions(domainSuggestion: String?) {
     val suggestionsRequest =
         GetDomainSuggestionsRequest {

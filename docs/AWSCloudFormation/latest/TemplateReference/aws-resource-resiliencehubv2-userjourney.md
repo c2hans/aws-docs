@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-resiliencehubv2-userjourney-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ResilienceHubV2::UserJourney",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-resiliencehubv2-userjourney-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ResilienceHubV2::UserJourney
 Properties:
   [Description](#cfn-resiliencehubv2-userjourney-description): {{String}}

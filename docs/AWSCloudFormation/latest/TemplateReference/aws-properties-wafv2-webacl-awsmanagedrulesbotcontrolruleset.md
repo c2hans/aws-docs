@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-awsmanagedrulesbotcontrolruleset-syntax.json"></a>
 
-```
+```json
 {
   "[EnableMachineLearning](#cfn-wafv2-webacl-awsmanagedrulesbotcontrolruleset-enablemachinelearning)" : {{Boolean}},
   "[InspectionLevel](#cfn-wafv2-webacl-awsmanagedrulesbotcontrolruleset-inspectionlevel)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-awsmanagedrulesbotcontrolruleset-syntax.yaml"></a>
 
-```
+```yaml
   [EnableMachineLearning](#cfn-wafv2-webacl-awsmanagedrulesbotcontrolruleset-enablemachinelearning): {{Boolean}}
   [InspectionLevel](#cfn-wafv2-webacl-awsmanagedrulesbotcontrolruleset-inspectionlevel): {{String}}
 ```

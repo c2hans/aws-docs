@@ -214,7 +214,7 @@ The following are the `principal` role ARNs for the supported ISVs:
 + `action` — Only `qbusiness:SearchRelevantContent` is supported now
 + `filterConfiguration`: Specifies the data source id of the Amazon Q application environment. The ISV will only have access to the data from the specified data source id. If there is no data source id specified, the ISV will have access to all the data sources.
 
-```
+```json
 # CreateDataAccessor actionConfigurations example
 [
    {
@@ -238,7 +238,7 @@ The following are the `principal` role ARNs for the supported ISVs:
 
 The following CLI example shows how to create a data accessor and associate the necessary permissions with all end users enabled for this data accessor:
 
-```
+```bash
 aws qbusiness create-data-accessor \
  --application-id ${qbusiness_application_id} \
  --principal ${isv_data_accessor_role_arn} \
@@ -261,7 +261,7 @@ aws sso-admin put-application-assignment-configuration \
 
 The following CLI example shows how to add authentication details in your request:
 
-```
+```bash
 # For tti based dataaccessor
 "authenticationDetail": {
     "authenticationType": "AWS_IAM_IDC_TTI",

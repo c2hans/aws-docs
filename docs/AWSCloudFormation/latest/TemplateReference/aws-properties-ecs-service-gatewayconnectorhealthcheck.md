@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-gatewayconnectorhealthcheck-syntax.json"></a>
 
-```
+```json
 {
   "[HealthCheckIntervalSeconds](#cfn-ecs-service-gatewayconnectorhealthcheck-healthcheckintervalseconds)" : {{Integer}},
   "[HealthCheckPath](#cfn-ecs-service-gatewayconnectorhealthcheck-healthcheckpath)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-gatewayconnectorhealthcheck-syntax.yaml"></a>
 
-```
+```yaml
   [HealthCheckIntervalSeconds](#cfn-ecs-service-gatewayconnectorhealthcheck-healthcheckintervalseconds): {{Integer}}
   [HealthCheckPath](#cfn-ecs-service-gatewayconnectorhealthcheck-healthcheckpath): {{String}}
   [HealthCheckPort](#cfn-ecs-service-gatewayconnectorhealthcheck-healthcheckport): {{Integer}}

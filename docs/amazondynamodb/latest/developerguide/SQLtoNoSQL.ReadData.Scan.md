@@ -64,7 +64,7 @@ The `Scan` operation also provides a `FilterExpression` parameter, which you can
 
 With PartiQL, you perform a scan by using the `ExecuteStatement` operation to return all the contents for a table using the `Select` statement.
 
-```
+```sql
 SELECT AlbumTitle, Year, Price
 FROM Music
 ```

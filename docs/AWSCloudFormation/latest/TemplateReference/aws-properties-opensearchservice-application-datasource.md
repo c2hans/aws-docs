@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchservice-application-datasource-syntax.json"></a>
 
-```
+```json
 {
   "[DataSourceArn](#cfn-opensearchservice-application-datasource-datasourcearn)" : {{String}},
   "[DataSourceDescription](#cfn-opensearchservice-application-datasource-datasourcedescription)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchservice-application-datasource-syntax.yaml"></a>
 
-```
+```yaml
   [DataSourceArn](#cfn-opensearchservice-application-datasource-datasourcearn): {{String}}
   [DataSourceDescription](#cfn-opensearchservice-application-datasource-datasourcedescription): {{String}}
 ```

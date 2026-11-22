@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-datazone-domain-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DataZone::Domain",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-datazone-domain-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DataZone::Domain
 Properties:
   [Description](#cfn-datazone-domain-description): {{String}}

@@ -29,6 +29,6 @@ cat /var/log/ecs/audit.log.{{2016-07-13-16}}
 
 Output:
 
-```
+```JSON
 2016-07-13T16:11:53Z 200 172.17.0.5:52444 "/v1/credentials" "python-requests/2.7.0 CPython/2.7.6 Linux/4.4.14-24.50.amzn1.x86_64" {{TASK_ARN}} GetCredentials 1 {{CLUSTER_NAME}} {{CONTAINER_INSTANCE_ARN}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-b2bi-transformer-sampledocuments-syntax.json"></a>
 
-```
+```json
 {
   "[BucketName](#cfn-b2bi-transformer-sampledocuments-bucketname)" : {{String}},
   "[Keys](#cfn-b2bi-transformer-sampledocuments-keys)" : {{[ SampleDocumentKeys, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-b2bi-transformer-sampledocuments-syntax.yaml"></a>
 
-```
+```yaml
   [BucketName](#cfn-b2bi-transformer-sampledocuments-bucketname): {{String}}
   [Keys](#cfn-b2bi-transformer-sampledocuments-keys): {{
     - SampleDocumentKeys}}

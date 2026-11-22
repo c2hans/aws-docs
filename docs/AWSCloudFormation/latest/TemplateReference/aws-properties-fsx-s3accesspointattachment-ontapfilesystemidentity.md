@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-s3accesspointattachment-ontapfilesystemidentity-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-fsx-s3accesspointattachment-ontapfilesystemidentity-type)" : {{String}},
   "[UnixUser](#cfn-fsx-s3accesspointattachment-ontapfilesystemidentity-unixuser)" : {{OntapUnixFileSystemUser}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-s3accesspointattachment-ontapfilesystemidentity-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-fsx-s3accesspointattachment-ontapfilesystemidentity-type): {{String}}
   [UnixUser](#cfn-fsx-s3accesspointattachment-ontapfilesystemidentity-unixuser): {{
     OntapUnixFileSystemUser}}

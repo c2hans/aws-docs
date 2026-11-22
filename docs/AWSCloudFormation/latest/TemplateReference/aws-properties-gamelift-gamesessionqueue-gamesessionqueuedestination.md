@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-gamesessionqueue-gamesessionqueuedestination-syntax.json"></a>
 
-```
+```json
 {
   "[DestinationArn](#cfn-gamelift-gamesessionqueue-gamesessionqueuedestination-destinationarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-gamesessionqueue-gamesessionqueuedestination-syntax.yaml"></a>
 
-```
+```yaml
   [DestinationArn](#cfn-gamelift-gamesessionqueue-gamesessionqueuedestination-destinationarn): {{String}}
 ```
 

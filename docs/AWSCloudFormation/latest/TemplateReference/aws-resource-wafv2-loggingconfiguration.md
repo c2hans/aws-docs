@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-wafv2-loggingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::WAFv2::LoggingConfiguration",
   "Properties" : {
@@ -50,7 +50,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-wafv2-loggingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::WAFv2::LoggingConfiguration
 Properties:
   [LogDestinationConfigs](#cfn-wafv2-loggingconfiguration-logdestinationconfigs): {{
@@ -139,7 +139,7 @@ The following shows an example logging configuration with redacted fields.
 #### YAML
 <a name="aws-resource-wafv2-loggingconfiguration--examples--Create_a_logging_configuration_with_redacted_fields--yaml"></a>
 
-```
+```yaml
   LoggingConfiguration:
     Type: AWS::WAFv2::LoggingConfiguration
     Properties:
@@ -157,7 +157,7 @@ The following shows an example logging configuration with redacted fields.
 #### JSON
 <a name="aws-resource-wafv2-loggingconfiguration--examples--Create_a_logging_configuration_with_redacted_fields--json"></a>
 
-```
+```json
   "LoggingConfiguration": {
     "Type": "AWS::WAFv2::LoggingConfiguration",
     "Properties": {
@@ -192,7 +192,7 @@ The following shows an example logging configuration with a logging filter.
 #### YAML
 <a name="aws-resource-wafv2-loggingconfiguration--examples--Create_a_logging_configuration_with_a_filter--yaml"></a>
 
-```
+```yaml
   LoggingConfiguration:
     Type: AWS::WAFv2::LoggingConfiguration
     Properties:
@@ -220,7 +220,7 @@ The following shows an example logging configuration with a logging filter.
 #### JSON
 <a name="aws-resource-wafv2-loggingconfiguration--examples--Create_a_logging_configuration_with_a_filter--json"></a>
 
-```
+```json
   "LoggingConfiguration": {
       "Type": "AWS::WAFv2::LoggingConfiguration",
       "Properties": {

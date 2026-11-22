@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dlm-lifecyclepolicy-script-syntax.json"></a>
 
-```
+```json
 {
   "[ExecuteOperationOnScriptFailure](#cfn-dlm-lifecyclepolicy-script-executeoperationonscriptfailure)" : {{Boolean}},
   "[ExecutionHandler](#cfn-dlm-lifecyclepolicy-script-executionhandler)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dlm-lifecyclepolicy-script-syntax.yaml"></a>
 
-```
+```yaml
   [ExecuteOperationOnScriptFailure](#cfn-dlm-lifecyclepolicy-script-executeoperationonscriptfailure): {{Boolean}}
   [ExecutionHandler](#cfn-dlm-lifecyclepolicy-script-executionhandler): {{String}}
   [ExecutionHandlerService](#cfn-dlm-lifecyclepolicy-script-executionhandlerservice): {{String}}

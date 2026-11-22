@@ -55,7 +55,7 @@ IAM policies that filter IP addresses use [IP address condition operators](https
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

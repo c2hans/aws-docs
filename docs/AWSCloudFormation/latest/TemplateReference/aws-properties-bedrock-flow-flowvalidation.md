@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-flow-flowvalidation-syntax.json"></a>
 
-```
+```json
 {
   "[Message](#cfn-bedrock-flow-flowvalidation-message)" : {{String}}
 }
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-flow-flowvalidation-syntax.yaml"></a>
 
-```
+```yaml
   [Message](#cfn-bedrock-flow-flowvalidation-message): {{String}}
 ```
 

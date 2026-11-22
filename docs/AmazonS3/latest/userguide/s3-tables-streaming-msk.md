@@ -31,7 +31,7 @@ With a streaming table, you can't do the following:
 
 Read access to a streaming table works the same as for any other Amazon S3 table. You grant it with IAM policies, table bucket policies, and AWS Lake Formation. The following example policy allows you to query a streaming table. If the table is encrypted with an AWS AWS KMS key, the second statement grants the `kms:Decrypt` permission on that key.
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[

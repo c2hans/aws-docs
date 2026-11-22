@@ -23,7 +23,7 @@ If object replicas don't appear in the destination bucket after you configure re
 **Note**
 To run `HeadObject`, you must have read access to the object that you're requesting. A `HEAD` request has the same options as a `GET` request, without performing a `GET` operation. For example, to run a `HeadObject` request by using the AWS Command Line Interface (AWS CLI), you can run the following command. Replace the `{{user input placeholders}}` with your own information.
 
-  ```
+  ```bash
   aws s3api head-object --bucket {{amzn-s3-demo-source-bucket}} --key {{index.html}}
   ```
 + If `HeadObject` returns objects with a `FAILED` replication status, you can use S3 Batch Replication to replicate those failed objects. For more information, see [Replicating existing objects with Batch Replication](s3-batch-replication-batch.md). Alternatively, you can re-upload the failed objects to the source bucket, which will initiate replication for the new objects.
@@ -36,7 +36,7 @@ If your replication rule uses the change object ownership to the destination buc
 + Verify that versioning hasn't been suspended on any bucket in the replication configuration. Both the source and destination buckets must have versioning enabled.
 + If a replication rule is set to **Change object ownership to the destination bucket owner**, then the AWS Identity and Access Management (IAM) role that's used for replication must have the `s3:ObjectOwnerOverrideToBucketOwner` permission. This permission is granted on the resource (in this case, the destination bucket). For example, the following `Resource` statement shows how to grant this permission on the destination bucket:
 
-  ```
+  ```json
   {
     "Effect":"Allow",
     "Action":[
@@ -52,7 +52,7 @@ If your replication rule uses the change object ownership to the destination buc
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Id": "Policy1644945280205",
@@ -84,7 +84,7 @@ If the destination bucket is in a different account, specify an AWS KMS customer
 
   To use an AWS KMS key that belongs to the destination account to encrypt the destination objects, the destination account must grant the `kms:GenerateDataKey` and `kms:Encrypt` permissions to the replication role in the KMS key policy. To use the following example statement in your KMS key policy, replace the `{{user input placeholders}}` with your own information:
 
-  ```
+  ```json
   {
       "Sid": "AllowS3ReplicationSourceRoleToUseTheKey",
       "Effect": "Allow",
@@ -115,7 +115,7 @@ KMS key policies that restrict access to specific CIDR ranges, virtual private c
 
   In addition to the permissions granted by the KMS key policy, the source account must add the following minimum permissions to the replication role's IAM policy:
 
-  ```
+  ```json
   {
       "Effect": "Allow",
       "Action": [
@@ -148,7 +148,7 @@ If you use S3 Batch Replication to replicate datasets cross region and your obje
 
     Source bucket:
 
-    ```
+    ```json
     1.            "s3:GetReplicationConfiguration",
     2.            "s3:ListBucket",
     3.            "s3:GetObjectVersionForReplication",
@@ -158,7 +158,7 @@ If you use S3 Batch Replication to replicate datasets cross region and your obje
 
     Destination buckets:
 
-    ```
+    ```json
     1.            "s3:ReplicateObject",
     2.            "s3:ReplicateDelete",
     3.            "s3:ReplicateTags"

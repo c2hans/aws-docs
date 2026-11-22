@@ -15,7 +15,7 @@ Then, you use the `configuration` parameter to provide a JSON schema with all ot
 
 The following is the PostgreSQL JSON schema:
 
-```
+```json
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",

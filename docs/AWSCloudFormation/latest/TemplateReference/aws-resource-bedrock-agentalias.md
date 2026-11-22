@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-bedrock-agentalias-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Bedrock::AgentAlias",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-bedrock-agentalias-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Bedrock::AgentAlias
 Properties:
   [AgentAliasName](#cfn-bedrock-agentalias-agentaliasname): {{String}}
@@ -149,7 +149,7 @@ The following example creates an alias that points to version 1 of an agent.
 #### YAML
 <a name="aws-resource-bedrock-agentalias--examples--Create_an_alias_for_an_agent--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: "CFN stack for creating an AgentAlias"
 Resources:
@@ -166,7 +166,7 @@ Resources:
 #### JSON
 <a name="aws-resource-bedrock-agentalias--examples--Create_an_alias_for_an_agent--json"></a>
 
-```
+```json
 {
    "AWSTemplateFormatVersion": "2010-09-09",
    "Description": "CFN stack for creating an AgentAlias",

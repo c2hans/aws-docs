@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkmanager-link-bandwidth-syntax.json"></a>
 
-```
+```json
 {
   "[DownloadSpeed](#cfn-networkmanager-link-bandwidth-downloadspeed)" : {{Integer}},
   "[UploadSpeed](#cfn-networkmanager-link-bandwidth-uploadspeed)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkmanager-link-bandwidth-syntax.yaml"></a>
 
-```
+```yaml
   [DownloadSpeed](#cfn-networkmanager-link-bandwidth-downloadspeed): {{Integer}}
   [UploadSpeed](#cfn-networkmanager-link-bandwidth-uploadspeed): {{Integer}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-assetoptions-syntax.json"></a>
 
-```
+```json
 {
   "[CustomActionDefaults](#cfn-quicksight-template-assetoptions-customactiondefaults)" : {{VisualCustomActionDefaults}},
   "[Timezone](#cfn-quicksight-template-assetoptions-timezone)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-assetoptions-syntax.yaml"></a>
 
-```
+```yaml
   [CustomActionDefaults](#cfn-quicksight-template-assetoptions-customactiondefaults): {{
     VisualCustomActionDefaults}}
   [Timezone](#cfn-quicksight-template-assetoptions-timezone): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codebuild-project-environment-syntax.json"></a>
 
-```
+```json
 {
   "[Certificate](#cfn-codebuild-project-environment-certificate)" : {{String}},
   "[ComputeType](#cfn-codebuild-project-environment-computetype)" : {{String}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codebuild-project-environment-syntax.yaml"></a>
 
-```
+```yaml
   [Certificate](#cfn-codebuild-project-environment-certificate): {{String}}
   [ComputeType](#cfn-codebuild-project-environment-computetype): {{String}}
   [DockerServer](#cfn-codebuild-project-environment-dockerserver): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-knowledgebase-sourceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AppIntegrations](#cfn-wisdom-knowledgebase-sourceconfiguration-appintegrations)" : {{AppIntegrationsConfiguration}},
   "[ManagedSourceConfiguration](#cfn-wisdom-knowledgebase-sourceconfiguration-managedsourceconfiguration)" : {{ManagedSourceConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-knowledgebase-sourceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AppIntegrations](#cfn-wisdom-knowledgebase-sourceconfiguration-appintegrations): {{
     AppIntegrationsConfiguration}}
   [ManagedSourceConfiguration](#cfn-wisdom-knowledgebase-sourceconfiguration-managedsourceconfiguration): {{

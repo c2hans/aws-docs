@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-scte27dvbsubsourcesettings-syntax.json"></a>
 
-```
+```json
 {
   "[OcrLanguage](#cfn-medialive-channel-scte27dvbsubsourcesettings-ocrlanguage)" : {{String}},
   "[Pid](#cfn-medialive-channel-scte27dvbsubsourcesettings-pid)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-scte27dvbsubsourcesettings-syntax.yaml"></a>
 
-```
+```yaml
   [OcrLanguage](#cfn-medialive-channel-scte27dvbsubsourcesettings-ocrlanguage): {{String}}
   [Pid](#cfn-medialive-channel-scte27dvbsubsourcesettings-pid): {{Integer}}
 ```

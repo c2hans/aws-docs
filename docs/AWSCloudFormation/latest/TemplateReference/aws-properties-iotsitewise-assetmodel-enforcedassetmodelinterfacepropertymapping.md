@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotsitewise-assetmodel-enforcedassetmodelinterfacepropertymapping-syntax.json"></a>
 
-```
+```json
 {
   "[AssetModelPropertyExternalId](#cfn-iotsitewise-assetmodel-enforcedassetmodelinterfacepropertymapping-assetmodelpropertyexternalid)" : {{String}},
   "[AssetModelPropertyLogicalId](#cfn-iotsitewise-assetmodel-enforcedassetmodelinterfacepropertymapping-assetmodelpropertylogicalid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotsitewise-assetmodel-enforcedassetmodelinterfacepropertymapping-syntax.yaml"></a>
 
-```
+```yaml
   [AssetModelPropertyExternalId](#cfn-iotsitewise-assetmodel-enforcedassetmodelinterfacepropertymapping-assetmodelpropertyexternalid): {{String}}
   [AssetModelPropertyLogicalId](#cfn-iotsitewise-assetmodel-enforcedassetmodelinterfacepropertymapping-assetmodelpropertylogicalid): {{String}}
   [InterfaceAssetModelPropertyExternalId](#cfn-iotsitewise-assetmodel-enforcedassetmodelinterfacepropertymapping-interfaceassetmodelpropertyexternalid): {{String}}

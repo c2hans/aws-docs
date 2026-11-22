@@ -69,7 +69,7 @@ The `Condition` section in this example limits the use of the AWS KMS key to the
 
 ****
 
-```
+```json
     {
     "Version":"2012-10-17",
     "Id": "key-default-1",

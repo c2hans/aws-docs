@@ -44,7 +44,7 @@ You can list backups programmatically using the `ListRecoveryPoint` API operatio
 
 For example, the following AWS Command Line Interface (AWS CLI) command lists all your backups with the `EXPIRED` status:
 
-```
+```sh
 aws backup list-recovery-points-by-backup-vault \
   --backup-vault-name {{sample-vault}} \
   --query 'RecoveryPoints[?Status == `EXPIRED`]'

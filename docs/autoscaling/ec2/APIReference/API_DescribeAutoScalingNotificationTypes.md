@@ -48,7 +48,7 @@ https://autoscaling.amazonaws.com/?Version=2011-01-01&Action=DescribeAutoScaling
 #### Sample Response
 <a name="API_DescribeAutoScalingNotificationTypes_Example_1_Response"></a>
 
-```
+```xml
 <DescribeAutoScalingNotificationTypesResponse xmlns="https://autoscaling.amazonaws.com/doc/2011-01-01/">
   <DescribeAutoScalingNotificationTypesResult>
     <AutoScalingNotificationTypes>

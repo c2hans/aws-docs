@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-amplify-webhook-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Amplify::Webhook",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-amplify-webhook-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Amplify::Webhook
 Properties:
   [AppId](#cfn-amplify-webhook-appid): {{String}}

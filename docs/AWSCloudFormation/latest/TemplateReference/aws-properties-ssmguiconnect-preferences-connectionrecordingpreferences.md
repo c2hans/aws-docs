@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssmguiconnect-preferences-connectionrecordingpreferences-syntax.json"></a>
 
-```
+```json
 {
   "[KMSKeyArn](#cfn-ssmguiconnect-preferences-connectionrecordingpreferences-kmskeyarn)" : {{String}},
   "[RecordingDestinations](#cfn-ssmguiconnect-preferences-connectionrecordingpreferences-recordingdestinations)" : {{RecordingDestinations}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssmguiconnect-preferences-connectionrecordingpreferences-syntax.yaml"></a>
 
-```
+```yaml
   [KMSKeyArn](#cfn-ssmguiconnect-preferences-connectionrecordingpreferences-kmskeyarn): {{String}}
   [RecordingDestinations](#cfn-ssmguiconnect-preferences-connectionrecordingpreferences-recordingdestinations): {{
     RecordingDestinations}}

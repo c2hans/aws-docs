@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspaces-directory-selfservicepermissions-syntax.json"></a>
 
-```
+```json
 {
   "[ChangeComputeType](#cfn-workspaces-directory-selfservicepermissions-changecomputetype)" : {{String}},
   "[IncreaseVolumeSize](#cfn-workspaces-directory-selfservicepermissions-increasevolumesize)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspaces-directory-selfservicepermissions-syntax.yaml"></a>
 
-```
+```yaml
   [ChangeComputeType](#cfn-workspaces-directory-selfservicepermissions-changecomputetype): {{String}}
   [IncreaseVolumeSize](#cfn-workspaces-directory-selfservicepermissions-increasevolumesize): {{String}}
   [RebuildWorkspace](#cfn-workspaces-directory-selfservicepermissions-rebuildworkspace): {{String}}

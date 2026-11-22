@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-osis-pipeline-vpcattachmentoptions-syntax.json"></a>
 
-```
+```json
 {
   "[AttachToVpc](#cfn-osis-pipeline-vpcattachmentoptions-attachtovpc)" : {{Boolean}},
   "[CidrBlock](#cfn-osis-pipeline-vpcattachmentoptions-cidrblock)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-osis-pipeline-vpcattachmentoptions-syntax.yaml"></a>
 
-```
+```yaml
   [AttachToVpc](#cfn-osis-pipeline-vpcattachmentoptions-attachtovpc): {{Boolean}}
   [CidrBlock](#cfn-osis-pipeline-vpcattachmentoptions-cidrblock): {{String}}
 ```

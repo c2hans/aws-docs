@@ -8,7 +8,7 @@ You can use the Spark `EXPLAIN` statement with Spark SQL to troubleshoot your Sp
 
 **Example – Spark SELECT statement**
 
-```
+```sql
 spark.sql("select * from select_taxi_table").explain(True)
 ```
 **Output**
@@ -47,7 +47,7 @@ ReadSchema: struct<VendorID:bigint,passenger_count:bigint,count:bigint>
 **Example – Spark data frame**
 The following example shows how to use `EXPLAIN` with a Spark data frame.
 
-```
+```sql
 taxi1_df=taxi_df.groupBy("VendorID", "passenger_count").count()
 taxi1_df.explain("extended")
 ```

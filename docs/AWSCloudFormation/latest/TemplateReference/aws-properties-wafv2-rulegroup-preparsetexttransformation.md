@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-rulegroup-preparsetexttransformation-syntax.json"></a>
 
-```
+```json
 {
   "[Priority](#cfn-wafv2-rulegroup-preparsetexttransformation-priority)" : {{Integer}},
   "[Type](#cfn-wafv2-rulegroup-preparsetexttransformation-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-rulegroup-preparsetexttransformation-syntax.yaml"></a>
 
-```
+```yaml
   [Priority](#cfn-wafv2-rulegroup-preparsetexttransformation-priority): {{Integer}}
   [Type](#cfn-wafv2-rulegroup-preparsetexttransformation-type): {{String}}
 ```

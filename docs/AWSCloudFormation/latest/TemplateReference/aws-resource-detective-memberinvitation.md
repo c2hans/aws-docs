@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-detective-memberinvitation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Detective::MemberInvitation",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-detective-memberinvitation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Detective::MemberInvitation
 Properties:
   [DisableEmailNotification](#cfn-detective-memberinvitation-disableemailnotification): {{Boolean}}
@@ -105,7 +105,7 @@ This example shows how to declare a new `AWS:Detective:MemberInvitation` resourc
 #### JSON
 <a name="aws-resource-detective-memberinvitation--examples--Sending_a_behavior_graph_invitation_to_a_member_account--json"></a>
 
-```
+```json
 "MemberInvitation": {
     "Type": "AWS::Detective::MemberInvitation",
     "Properties": {
@@ -120,7 +120,7 @@ This example shows how to declare a new `AWS:Detective:MemberInvitation` resourc
 #### YAML
 <a name="aws-resource-detective-memberinvitation--examples--Sending_a_behavior_graph_invitation_to_a_member_account--yaml"></a>
 
-```
+```yaml
 MemberInvitation:
     Type: AWS::Detective::MemberInvitation
     Properties:
@@ -138,7 +138,7 @@ This example shows how to declare a new `AWS:Detective:MemberInvitation` resourc
 #### JSON
 <a name="aws-resource-detective-memberinvitation--examples--Blocking_the_email_notification_of_an_invitation_to_a_member_account--json"></a>
 
-```
+```json
 "MemberInvitation": {
     "Type": "AWS::Detective::MemberInvitation",
     "Properties": {
@@ -153,7 +153,7 @@ This example shows how to declare a new `AWS:Detective:MemberInvitation` resourc
 #### YAML
 <a name="aws-resource-detective-memberinvitation--examples--Blocking_the_email_notification_of_an_invitation_to_a_member_account--yaml"></a>
 
-```
+```yaml
 MemberInvitation:
     Type: AWS::Detective::MemberInvitation
     Properties:

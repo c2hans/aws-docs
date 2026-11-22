@@ -43,6 +43,12 @@ Indicates whether mapping of AWS Identity and Access Management (IAM) accounts t
 Type: Boolean
 Required: No
 
+ ** InternetAccessGatewayEnabled **
+Indicates whether the DB cluster will use an internet access gateway after a pending networking change completes.
+Valid for Cluster Type: Aurora PostgreSQL DB clusters only
+Type: Boolean
+Required: No
+
  ** Iops **
 The Provisioned IOPS (I/O operations per second) value. This setting is only for non-Aurora Multi-AZ DB clusters.
 Type: Integer
@@ -66,6 +72,12 @@ Required: No
  ** StorageType **
 The storage type for the DB cluster.
 Type: String
+Required: No
+
+ ** VPCNetworkingEnabled **
+Indicates whether the DB cluster will use VPC networking after a pending networking change completes. For a pending move to a different DB subnet group, the value is `true`.
+Valid for Cluster Type: Aurora DB clusters only
+Type: Boolean
 Required: No
 
 ## See Also

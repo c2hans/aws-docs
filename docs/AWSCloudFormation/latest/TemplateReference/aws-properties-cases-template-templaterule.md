@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cases-template-templaterule-syntax.json"></a>
 
-```
+```json
 {
   "[CaseRuleId](#cfn-cases-template-templaterule-caseruleid)" : {{String}},
   "[FieldId](#cfn-cases-template-templaterule-fieldid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cases-template-templaterule-syntax.yaml"></a>
 
-```
+```yaml
   [CaseRuleId](#cfn-cases-template-templaterule-caseruleid): {{String}}
   [FieldId](#cfn-cases-template-templaterule-fieldid): {{String}}
 ```

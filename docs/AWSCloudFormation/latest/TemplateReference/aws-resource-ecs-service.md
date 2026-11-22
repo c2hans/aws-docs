@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ecs-service-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ECS::Service",
   "Properties" : {
@@ -81,7 +81,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ecs-service-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ECS::Service
 Properties:
   [AvailabilityZoneRebalancing](#cfn-ecs-service-availabilityzonerebalancing): {{String}}
@@ -393,7 +393,7 @@ The following example template creates a service, a cluster, and a task definiti
 #### JSON
 <a name="aws-resource-ecs-service--examples--Create_a_service_that_uses_a_task_definition--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -480,7 +480,7 @@ The following example template creates a service, a cluster, and a task definiti
 #### YAML
 <a name="aws-resource-ecs-service--examples--Create_a_service_that_uses_a_task_definition--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   ECSCluster:
@@ -550,7 +550,7 @@ The following example template creates a service that utilizes a pre-existing ta
 #### JSON
 <a name="aws-resource-ecs-service--examples--Create_a_service_with_a_volume_configuration--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "The template used to create an ECS Service that includes a volume configuration.",
@@ -645,7 +645,7 @@ The following example template creates a service that utilizes a pre-existing ta
 #### YAML
 <a name="aws-resource-ecs-service--examples--Create_a_service_with_a_volume_configuration--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: The template used to create an ECS Service that includes a volume configuration.
 Parameters:
@@ -720,7 +720,7 @@ The Amazon ECS service requires an explicit dependency on the Application Load B
 #### JSON
 <a name="aws-resource-ecs-service--examples--Associate_an_Application_Load_Balancer_with_a_service--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "The template used to create an ECS Service associated with an Application Load Balancer.",
@@ -890,7 +890,7 @@ The Amazon ECS service requires an explicit dependency on the Application Load B
 #### YAML
 <a name="aws-resource-ecs-service--examples--Associate_an_Application_Load_Balancer_with_a_service--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: The template used to create an ECS Service associated with an
   Application Load Balancer.

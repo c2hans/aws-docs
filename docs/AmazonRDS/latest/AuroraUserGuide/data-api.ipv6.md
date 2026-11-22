@@ -82,7 +82,7 @@ Configure AWS SDKs to use dual-stack endpoints:
 ------
 #### [ Python ]
 
-```
+```python
 import boto3
 
 	# Create RDS Data API client with IPv6 dual-stack endpoint
@@ -105,7 +105,7 @@ import boto3
 ------
 #### [ Java ]
 
-```
+```java
 import software.amazon.awssdk.services.rdsdata.RdsDataClient;
 	import software.amazon.awssdk.services.rdsdata.model.ExecuteStatementRequest;
 	import software.amazon.awssdk.services.rdsdata.model.ExecuteStatementResponse;
@@ -131,7 +131,7 @@ import software.amazon.awssdk.services.rdsdata.RdsDataClient;
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 const { RDSDataClient, ExecuteStatementCommand } = require("@aws-sdk/client-rds-data");
 
 	// Create RDS Data API client with IPv6 dual-stack endpoint

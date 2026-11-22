@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssmquicksetup-configurationmanager-statussummary-syntax.json"></a>
 
-```
+```json
 {
   "[LastUpdatedAt](#cfn-ssmquicksetup-configurationmanager-statussummary-lastupdatedat)" : {{String}},
   "[Status](#cfn-ssmquicksetup-configurationmanager-statussummary-status)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssmquicksetup-configurationmanager-statussummary-syntax.yaml"></a>
 
-```
+```yaml
   [LastUpdatedAt](#cfn-ssmquicksetup-configurationmanager-statussummary-lastupdatedat): {{String}}
   [Status](#cfn-ssmquicksetup-configurationmanager-statussummary-status): {{String}}
   [StatusDetails](#cfn-ssmquicksetup-configurationmanager-statussummary-statusdetails): {{

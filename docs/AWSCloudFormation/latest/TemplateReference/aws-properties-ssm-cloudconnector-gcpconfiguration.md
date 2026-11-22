@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssm-cloudconnector-gcpconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[OrganizationId](#cfn-ssm-cloudconnector-gcpconfiguration-organizationid)" : {{String}},
   "[ServiceAccountEmail](#cfn-ssm-cloudconnector-gcpconfiguration-serviceaccountemail)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssm-cloudconnector-gcpconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [OrganizationId](#cfn-ssm-cloudconnector-gcpconfiguration-organizationid): {{String}}
   [ServiceAccountEmail](#cfn-ssm-cloudconnector-gcpconfiguration-serviceaccountemail): {{String}}
   [Targets](#cfn-ssm-cloudconnector-gcpconfiguration-targets): {{

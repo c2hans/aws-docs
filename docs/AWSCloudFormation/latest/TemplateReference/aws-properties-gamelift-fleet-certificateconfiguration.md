@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-fleet-certificateconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CertificateType](#cfn-gamelift-fleet-certificateconfiguration-certificatetype)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-fleet-certificateconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CertificateType](#cfn-gamelift-fleet-certificateconfiguration-certificatetype): {{String}}
 ```
 

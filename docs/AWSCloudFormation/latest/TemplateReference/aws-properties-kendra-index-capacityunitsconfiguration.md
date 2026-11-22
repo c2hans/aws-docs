@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-index-capacityunitsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[QueryCapacityUnits](#cfn-kendra-index-capacityunitsconfiguration-querycapacityunits)" : {{Integer}},
   "[StorageCapacityUnits](#cfn-kendra-index-capacityunitsconfiguration-storagecapacityunits)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-index-capacityunitsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [QueryCapacityUnits](#cfn-kendra-index-capacityunitsconfiguration-querycapacityunits): {{Integer}}
   [StorageCapacityUnits](#cfn-kendra-index-capacityunitsconfiguration-storagecapacityunits): {{Integer}}
 ```

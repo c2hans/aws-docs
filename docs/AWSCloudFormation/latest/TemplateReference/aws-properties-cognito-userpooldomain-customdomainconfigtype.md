@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpooldomain-customdomainconfigtype-syntax.json"></a>
 
-```
+```json
 {
   "[CertificateArn](#cfn-cognito-userpooldomain-customdomainconfigtype-certificatearn)" : {{String}},
   "[SecurityPolicy](#cfn-cognito-userpooldomain-customdomainconfigtype-securitypolicy)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpooldomain-customdomainconfigtype-syntax.yaml"></a>
 
-```
+```yaml
   [CertificateArn](#cfn-cognito-userpooldomain-customdomainconfigtype-certificatearn): {{String}}
   [SecurityPolicy](#cfn-cognito-userpooldomain-customdomainconfigtype-securitypolicy): {{String}}
 ```

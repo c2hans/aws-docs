@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-captiondestinationsettings-syntax.json"></a>
 
-```
+```json
 {
   "[AribDestinationSettings](#cfn-medialive-channel-captiondestinationsettings-aribdestinationsettings)" : {{Json}},
   "[BurnInDestinationSettings](#cfn-medialive-channel-captiondestinationsettings-burnindestinationsettings)" : {{BurnInDvbSubDestinationSettings}},
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-captiondestinationsettings-syntax.yaml"></a>
 
-```
+```yaml
   [AribDestinationSettings](#cfn-medialive-channel-captiondestinationsettings-aribdestinationsettings): {{Json}}
   [BurnInDestinationSettings](#cfn-medialive-channel-captiondestinationsettings-burnindestinationsettings): {{
     BurnInDvbSubDestinationSettings}}

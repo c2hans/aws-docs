@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-decimalplacesconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DecimalPlaces](#cfn-quicksight-analysis-decimalplacesconfiguration-decimalplaces)" : {{Number}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-decimalplacesconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DecimalPlaces](#cfn-quicksight-analysis-decimalplacesconfiguration-decimalplaces): {{Number}}
 ```
 

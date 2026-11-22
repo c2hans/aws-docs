@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-auditmanager-assessment-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-auditmanager-assessment-tag-key)" : {{String}},
   "[Value](#cfn-auditmanager-assessment-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-auditmanager-assessment-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-auditmanager-assessment-tag-key): {{String}}
   [Value](#cfn-auditmanager-assessment-tag-value): {{String}}
 ```

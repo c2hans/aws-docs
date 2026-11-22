@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iottwinmaker-componenttype-status-syntax.json"></a>
 
-```
+```json
 {
   "[Error](#cfn-iottwinmaker-componenttype-status-error)" : {{Error}},
   "[State](#cfn-iottwinmaker-componenttype-status-state)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iottwinmaker-componenttype-status-syntax.yaml"></a>
 
-```
+```yaml
   [Error](#cfn-iottwinmaker-componenttype-status-error): {{
     Error}}
   [State](#cfn-iottwinmaker-componenttype-status-state): {{String}}

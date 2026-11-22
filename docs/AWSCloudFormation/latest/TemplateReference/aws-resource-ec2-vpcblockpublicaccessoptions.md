@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-vpcblockpublicaccessoptions-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::VPCBlockPublicAccessOptions",
   "Properties" : {
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-vpcblockpublicaccessoptions-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::VPCBlockPublicAccessOptions
 Properties:
   [InternetGatewayBlockMode](#cfn-ec2-vpcblockpublicaccessoptions-internetgatewayblockmode): {{String}}

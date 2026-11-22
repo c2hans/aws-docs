@@ -12,7 +12,7 @@ The following code example shows how to create a table with global secondary ind
 **SDK for Java 2.x**
 Create DynamoDB table with Global Secondary Index using AWS SDK for Java 2.x.
 
-```
+```java
 import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
 import software.amazon.awssdk.core.waiters.WaiterResponse;
 import software.amazon.awssdk.regions.Region;

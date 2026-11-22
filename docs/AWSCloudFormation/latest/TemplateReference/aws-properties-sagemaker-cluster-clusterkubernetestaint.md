@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-cluster-clusterkubernetestaint-syntax.json"></a>
 
-```
+```json
 {
   "[Effect](#cfn-sagemaker-cluster-clusterkubernetestaint-effect)" : {{String}},
   "[Key](#cfn-sagemaker-cluster-clusterkubernetestaint-key)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-cluster-clusterkubernetestaint-syntax.yaml"></a>
 
-```
+```yaml
   [Effect](#cfn-sagemaker-cluster-clusterkubernetestaint-effect): {{String}}
   [Key](#cfn-sagemaker-cluster-clusterkubernetestaint-key): {{String}}
   [Value](#cfn-sagemaker-cluster-clusterkubernetestaint-value): {{String}}

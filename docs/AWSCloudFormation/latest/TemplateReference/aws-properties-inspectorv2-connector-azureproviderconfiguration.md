@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-inspectorv2-connector-azureproviderconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AutoInstallVMScanner](#cfn-inspectorv2-connector-azureproviderconfiguration-autoinstallvmscanner)" : {{Boolean}},
   "[AwsConfigConnectorArn](#cfn-inspectorv2-connector-azureproviderconfiguration-awsconfigconnectorarn)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-inspectorv2-connector-azureproviderconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AutoInstallVMScanner](#cfn-inspectorv2-connector-azureproviderconfiguration-autoinstallvmscanner): {{Boolean}}
   [AwsConfigConnectorArn](#cfn-inspectorv2-connector-azureproviderconfiguration-awsconfigconnectorarn): {{String}}
   [AzureRegions](#cfn-inspectorv2-connector-azureproviderconfiguration-azureregions): {{
@@ -50,7 +50,7 @@ Property description not available.
 Property description not available.
 *Required*: Yes
 *Type*: String
-*Pattern*: `arn:([^:]+):config:([^:]+):([^:]+):connector/([^/]+)/([^/]+)/([^/:\s]+)`
+*Pattern*: `^arn:([^:]+):config:([^:]+):([^:]+):connector/([^/]+)/([^/]+)/([^/:\s]+)$`
 *Minimum*: `1`
 *Maximum*: `512`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

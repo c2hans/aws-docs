@@ -21,7 +21,7 @@ The following considerations might impact how you share portal resources:
 
   The updated resource policy will look like the following:
 
-  ```
+  ```json
   {
       "Version": "2012-10-17",
       "Statement": [

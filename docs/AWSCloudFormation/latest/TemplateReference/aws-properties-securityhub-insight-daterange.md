@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityhub-insight-daterange-syntax.json"></a>
 
-```
+```json
 {
   "[Unit](#cfn-securityhub-insight-daterange-unit)" : {{String}},
   "[Value](#cfn-securityhub-insight-daterange-value)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityhub-insight-daterange-syntax.yaml"></a>
 
-```
+```yaml
   [Unit](#cfn-securityhub-insight-daterange-unit): {{String}}
   [Value](#cfn-securityhub-insight-daterange-value): {{Number}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-algorithm-hyperparametertuningjobobjective-syntax.json"></a>
 
-```
+```json
 {
   "[MetricName](#cfn-sagemaker-algorithm-hyperparametertuningjobobjective-metricname)" : {{String}},
   "[Type](#cfn-sagemaker-algorithm-hyperparametertuningjobobjective-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-algorithm-hyperparametertuningjobobjective-syntax.yaml"></a>
 
-```
+```yaml
   [MetricName](#cfn-sagemaker-algorithm-hyperparametertuningjobobjective-metricname): {{String}}
   [Type](#cfn-sagemaker-algorithm-hyperparametertuningjobobjective-type): {{String}}
 ```

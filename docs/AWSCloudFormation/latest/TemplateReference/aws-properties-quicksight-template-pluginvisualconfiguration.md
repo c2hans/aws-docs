@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-pluginvisualconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[FieldWells](#cfn-quicksight-template-pluginvisualconfiguration-fieldwells)" : {{[ PluginVisualFieldWell, ... ]}},
   "[SortConfiguration](#cfn-quicksight-template-pluginvisualconfiguration-sortconfiguration)" : {{PluginVisualSortConfiguration}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-pluginvisualconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [FieldWells](#cfn-quicksight-template-pluginvisualconfiguration-fieldwells): {{
     - PluginVisualFieldWell}}
   [SortConfiguration](#cfn-quicksight-template-pluginvisualconfiguration-sortconfiguration): {{

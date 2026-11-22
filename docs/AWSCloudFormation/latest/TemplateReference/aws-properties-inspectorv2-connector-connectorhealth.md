@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-inspectorv2-connector-connectorhealth-syntax.json"></a>
 
-```
+```json
 {
   "[ConnectorStatus](#cfn-inspectorv2-connector-connectorhealth-connectorstatus)" : {{String}},
   "[LastCheckedAt](#cfn-inspectorv2-connector-connectorhealth-lastcheckedat)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-inspectorv2-connector-connectorhealth-syntax.yaml"></a>
 
-```
+```yaml
   [ConnectorStatus](#cfn-inspectorv2-connector-connectorhealth-connectorstatus): {{String}}
   [LastCheckedAt](#cfn-inspectorv2-connector-connectorhealth-lastcheckedat): {{String}}
   [Message](#cfn-inspectorv2-connector-connectorhealth-message): {{String}}

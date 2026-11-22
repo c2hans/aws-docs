@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-licensemanager-licenseassetruleset-rulestatement-syntax.json"></a>
 
-```
+```json
 {
   "[InstanceRuleStatement](#cfn-licensemanager-licenseassetruleset-rulestatement-instancerulestatement)" : {{InstanceRuleStatement}},
   "[LicenseConfigurationRuleStatement](#cfn-licensemanager-licenseassetruleset-rulestatement-licenseconfigurationrulestatement)" : {{LicenseConfigurationRuleStatement}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-licensemanager-licenseassetruleset-rulestatement-syntax.yaml"></a>
 
-```
+```yaml
   [InstanceRuleStatement](#cfn-licensemanager-licenseassetruleset-rulestatement-instancerulestatement): {{
     InstanceRuleStatement}}
   [LicenseConfigurationRuleStatement](#cfn-licensemanager-licenseassetruleset-rulestatement-licenseconfigurationrulestatement): {{

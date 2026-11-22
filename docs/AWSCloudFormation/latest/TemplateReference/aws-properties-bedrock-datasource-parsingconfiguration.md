@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-datasource-parsingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BedrockDataAutomationConfiguration](#cfn-bedrock-datasource-parsingconfiguration-bedrockdataautomationconfiguration)" : {{BedrockDataAutomationConfiguration}},
   "[BedrockFoundationModelConfiguration](#cfn-bedrock-datasource-parsingconfiguration-bedrockfoundationmodelconfiguration)" : {{BedrockFoundationModelConfiguration}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-datasource-parsingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BedrockDataAutomationConfiguration](#cfn-bedrock-datasource-parsingconfiguration-bedrockdataautomationconfiguration): {{
     BedrockDataAutomationConfiguration}}
   [BedrockFoundationModelConfiguration](#cfn-bedrock-datasource-parsingconfiguration-bedrockfoundationmodelconfiguration): {{

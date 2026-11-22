@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-vpclattice-rule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::VpcLattice::Rule",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-vpclattice-rule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::VpcLattice::Rule
 Properties:
   [Action](#cfn-vpclattice-rule-action): {{

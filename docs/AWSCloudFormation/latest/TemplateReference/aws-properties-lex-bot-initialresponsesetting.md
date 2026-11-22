@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-bot-initialresponsesetting-syntax.json"></a>
 
-```
+```json
 {
   "[CodeHook](#cfn-lex-bot-initialresponsesetting-codehook)" : {{DialogCodeHookInvocationSetting}},
   "[Conditional](#cfn-lex-bot-initialresponsesetting-conditional)" : {{ConditionalSpecification}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-bot-initialresponsesetting-syntax.yaml"></a>
 
-```
+```yaml
   [CodeHook](#cfn-lex-bot-initialresponsesetting-codehook): {{
     DialogCodeHookInvocationSetting}}
   [Conditional](#cfn-lex-bot-initialresponsesetting-conditional): {{

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lightsail-container-privateregistryaccess-syntax.json"></a>
 
-```
+```json
 {
   "[EcrImagePullerRole](#cfn-lightsail-container-privateregistryaccess-ecrimagepullerrole)" : {{EcrImagePullerRole}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lightsail-container-privateregistryaccess-syntax.yaml"></a>
 
-```
+```yaml
   [EcrImagePullerRole](#cfn-lightsail-container-privateregistryaccess-ecrimagepullerrole): {{
     EcrImagePullerRole}}
 ```

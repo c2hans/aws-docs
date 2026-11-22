@@ -38,7 +38,7 @@ An event represents a single request from any source and includes information ab
 
 The following log file record shows that a user terminated an instance.
 
-```
+```json
 {
    "Records":[
       {
@@ -113,7 +113,7 @@ You can use AWS CloudTrail to audit the users that connect to your instances usi
 
 1. To display the full event information in JSON format, choose **View event**. The **requestParameters** field contains the destination instance ID, OS username, and public key that were used to make the SSH connection.
 
-   ```
+   ```JSON
    {
        "eventVersion": "1.05",
        "userIdentity": {

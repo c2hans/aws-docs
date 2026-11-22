@@ -76,7 +76,7 @@ Verify that the rule is working by running a task that exits shortly after it st
 
 1. In the JSON editor box, edit your JSON file, copy the following into the editor.
 
-   ```
+   ```JSON
    {
       "containerDefinitions":[
          {

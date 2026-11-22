@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-aiworkloadconfig-aiworkloaddatasource-syntax.json"></a>
 
-```
+```json
 {
   "[S3DataSource](#cfn-sagemaker-aiworkloadconfig-aiworkloaddatasource-s3datasource)" : {{AIWorkloadS3DataSource}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-aiworkloadconfig-aiworkloaddatasource-syntax.yaml"></a>
 
-```
+```yaml
   [S3DataSource](#cfn-sagemaker-aiworkloadconfig-aiworkloaddatasource-s3datasource): {{
     AIWorkloadS3DataSource}}
 ```

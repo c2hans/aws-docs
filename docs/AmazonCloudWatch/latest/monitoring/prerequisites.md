@@ -126,7 +126,7 @@ You can configure the CloudWatch agent to set the retention policy for log group
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -164,7 +164,7 @@ You can configure the CloudWatch agent to set the retention policy for log group
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

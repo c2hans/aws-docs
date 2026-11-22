@@ -231,7 +231,7 @@ Create a log alarm that runs a CloudWatch Logs Insights query every 5 minutes co
 #### Sample Request
 <a name="API_PutLogAlarm_Example_1_Request"></a>
 
-```
+```bash
 aws cloudwatch put-log-alarm \
     --alarm-name "HighErrorRateAlarm" \
     --alarm-description "Alarm when error count exceeds threshold" \
@@ -256,7 +256,7 @@ aws cloudwatch put-log-alarm \
 #### Sample Response
 <a name="API_PutLogAlarm_Example_1_Response"></a>
 
-```
+```json
 {
     "AlarmArn": "arn:aws:cloudwatch:us-east-1:111122223333:alarm:HighErrorRateAlarm"
 }

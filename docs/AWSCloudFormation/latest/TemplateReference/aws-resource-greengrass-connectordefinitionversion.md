@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-greengrass-connectordefinitionversion-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Greengrass::ConnectorDefinitionVersion",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-greengrass-connectordefinitionversion-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Greengrass::ConnectorDefinitionVersion
 Properties:
   [ConnectorDefinitionId](#cfn-greengrass-connectordefinitionversion-connectordefinitionid): {{String}}
@@ -82,7 +82,7 @@ For an example of a complete template, see the [`AWS::Greengrass::Group`](https:
 #### JSON
 <a name="aws-resource-greengrass-connectordefinitionversion--examples--Connector_Definition_Version_Snippet--json"></a>
 
-```
+```json
 "TestConnectorDefinition": {
     "Type": "AWS::Greengrass::ConnectorDefinition",
     "Properties": {
@@ -136,7 +136,7 @@ For an example of a complete template, see the [`AWS::Greengrass::Group`](https:
 #### YAML
 <a name="aws-resource-greengrass-connectordefinitionversion--examples--Connector_Definition_Version_Snippet--yaml"></a>
 
-```
+```yaml
 TestConnectorDefinition:
   Type: 'AWS::Greengrass::ConnectorDefinition'
   Properties:

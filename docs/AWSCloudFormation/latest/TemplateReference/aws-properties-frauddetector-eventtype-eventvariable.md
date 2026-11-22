@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-frauddetector-eventtype-eventvariable-syntax.json"></a>
 
-```
+```json
 {
   "[Arn](#cfn-frauddetector-eventtype-eventvariable-arn)" : {{String}},
   "[CreatedTime](#cfn-frauddetector-eventtype-eventvariable-createdtime)" : {{String}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-frauddetector-eventtype-eventvariable-syntax.yaml"></a>
 
-```
+```yaml
   [Arn](#cfn-frauddetector-eventtype-eventvariable-arn): {{String}}
   [CreatedTime](#cfn-frauddetector-eventtype-eventvariable-createdtime): {{String}}
   [DataSource](#cfn-frauddetector-eventtype-eventvariable-datasource): {{String}}

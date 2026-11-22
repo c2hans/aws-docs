@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-agentregistry-registry-claimmatchvaluetype-syntax.json"></a>
 
-```
+```json
 {
   "[MatchValueString](#cfn-agentregistry-registry-claimmatchvaluetype-matchvaluestring)" : {{String}},
   "[MatchValueStringList](#cfn-agentregistry-registry-claimmatchvaluetype-matchvaluestringlist)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-agentregistry-registry-claimmatchvaluetype-syntax.yaml"></a>
 
-```
+```yaml
   [MatchValueString](#cfn-agentregistry-registry-claimmatchvaluetype-matchvaluestring): {{
     String}}
   [MatchValueStringList](#cfn-agentregistry-registry-claimmatchvaluetype-matchvaluestringlist): {{

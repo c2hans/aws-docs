@@ -112,7 +112,7 @@ When using [multivalued context keys](https://docs.aws.amazon.com/IAM/latest/Use
 **Example : Public bucket policies**
 Under these rules, the following example policies are considered public.
 
-```
+```json
 {
 		"Principal": "*",
 		"Resource": "*",
@@ -121,7 +121,7 @@ Under these rules, the following example policies are considered public.
 	}
 ```
 
-```
+```json
 {
 		"Principal": "*",
 		"Resource": "*",
@@ -132,7 +132,7 @@ Under these rules, the following example policies are considered public.
 ```
 You can make these policies non-public by including any of the condition keys listed previously, using a fixed value. For example, you can make the last policy preceding non-public by setting `aws:SourceVpc` to a fixed value, like the following.
 
-```
+```json
 {
 		"Principal": "*",
 		"Resource": "*",

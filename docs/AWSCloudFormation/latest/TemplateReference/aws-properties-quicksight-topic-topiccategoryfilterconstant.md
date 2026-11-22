@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-topic-topiccategoryfilterconstant-syntax.json"></a>
 
-```
+```json
 {
   "[CollectiveConstant](#cfn-quicksight-topic-topiccategoryfilterconstant-collectiveconstant)" : {{CollectiveConstant}},
   "[ConstantType](#cfn-quicksight-topic-topiccategoryfilterconstant-constanttype)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-topic-topiccategoryfilterconstant-syntax.yaml"></a>
 
-```
+```yaml
   [CollectiveConstant](#cfn-quicksight-topic-topiccategoryfilterconstant-collectiveconstant): {{
     CollectiveConstant}}
   [ConstantType](#cfn-quicksight-topic-topiccategoryfilterconstant-constanttype): {{String}}

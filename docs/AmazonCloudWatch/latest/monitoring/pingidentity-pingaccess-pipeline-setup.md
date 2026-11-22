@@ -8,7 +8,7 @@ The Ping Identity PingAccess setup on AWS reads log data from Amazon S3 buckets 
 
 Configure the S3 source with the following parameters:
 
-```
+```yaml
 source:
   s3:
     aws:

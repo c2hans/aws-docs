@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-databrew-job-outputformatoptions-syntax.json"></a>
 
-```
+```json
 {
   "[Csv](#cfn-databrew-job-outputformatoptions-csv)" : {{CsvOutputOptions}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-databrew-job-outputformatoptions-syntax.yaml"></a>
 
-```
+```yaml
   [Csv](#cfn-databrew-job-outputformatoptions-csv): {{
     CsvOutputOptions}}
 ```

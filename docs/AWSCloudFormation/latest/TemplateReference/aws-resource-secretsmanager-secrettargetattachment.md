@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-secretsmanager-secrettargetattachment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SecretsManager::SecretTargetAttachment",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-secretsmanager-secrettargetattachment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SecretsManager::SecretTargetAttachment
 Properties:
   [SecretId](#cfn-secretsmanager-secrettargetattachment-secretid): {{String}}

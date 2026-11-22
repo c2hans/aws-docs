@@ -17,7 +17,7 @@ For flat-rate plans, the `eventSource` is `pricingplanmanager.amazonaws.com`.
 
 The following example shows a CloudTrail log entry that demonstrates the action.
 
-```
+```json
 {
     "eventVersion": "1.09",
     "userIdentity": {

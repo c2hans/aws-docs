@@ -30,7 +30,7 @@ Below are the detail fields for Alert status event detail .
 
 The `source` and `detail-type` fields are included because they contain specific values for Route 53 events.
 
-```
+```json
 {...,
  "detail-type": "DNS Firewall Alert",
   "source": "aws.route53resolver",
@@ -101,7 +101,7 @@ Additional details about the resource.
 **Example DNS Firewall alert event**  <a name="dns-firewall-alert.example"></a>
 The following is an example alert event.
 
-```
+```json
 {
  "version": "1.0",
  "id": "8e5622f9-d81c-4d81-612a-9319e7ee2506",
@@ -149,7 +149,7 @@ Below are the detail fields for {{event name}}.
 
 The `source` and `detail-type` fields are included because they contain specific values for Route 53 events.
 
-```
+```json
 {...,
  "detail-type": "DNS Firewall Block",
   "source": "aws.route53resolver",
@@ -220,7 +220,7 @@ Additional details about the resource.
 **Example event**  <a name="dns-firewall-block.example"></a>
 The following is an example block event.
 
-```
+```json
 {
  "version": "1.0",
  "id": "8e5622f9-d81c-4d81-612a-9319e7ee2506",

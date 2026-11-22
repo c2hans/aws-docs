@@ -116,7 +116,7 @@ Currently, Fast DDL has the following limitations:
 ### Fast DDL syntax
 <a name="AuroraMySQL.FastDDL.Syntax"></a>
 
-```
+```sql
 ALTER TABLE {{tbl_name}} ADD COLUMN {{col_name}} {{column_definition}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elementalinference-feed-subtitlingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AspectRatio](#cfn-elementalinference-feed-subtitlingconfig-aspectratio)" : {{AspectRatio}},
   "[Dictionary](#cfn-elementalinference-feed-subtitlingconfig-dictionary)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elementalinference-feed-subtitlingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AspectRatio](#cfn-elementalinference-feed-subtitlingconfig-aspectratio): {{
     AspectRatio}}
   [Dictionary](#cfn-elementalinference-feed-subtitlingconfig-dictionary): {{String}}

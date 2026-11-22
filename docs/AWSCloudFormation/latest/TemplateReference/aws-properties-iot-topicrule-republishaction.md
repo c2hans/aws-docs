@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicrule-republishaction-syntax.json"></a>
 
-```
+```json
 {
   "[Headers](#cfn-iot-topicrule-republishaction-headers)" : {{RepublishActionHeaders}},
   "[Qos](#cfn-iot-topicrule-republishaction-qos)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicrule-republishaction-syntax.yaml"></a>
 
-```
+```yaml
   [Headers](#cfn-iot-topicrule-republishaction-headers): {{
     RepublishActionHeaders}}
   [Qos](#cfn-iot-topicrule-republishaction-qos): {{Integer}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-evaluator-derivedevaluatorconfig-syntax.json"></a>
 
-```
+```json
 {
   "[BaseEvaluatorId](#cfn-bedrockagentcore-evaluator-derivedevaluatorconfig-baseevaluatorid)" : {{String}},
   "[ModelConfig](#cfn-bedrockagentcore-evaluator-derivedevaluatorconfig-modelconfig)" : {{EvaluatorModelConfig}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-evaluator-derivedevaluatorconfig-syntax.yaml"></a>
 
-```
+```yaml
   [BaseEvaluatorId](#cfn-bedrockagentcore-evaluator-derivedevaluatorconfig-baseevaluatorid): {{String}}
   [ModelConfig](#cfn-bedrockagentcore-evaluator-derivedevaluatorconfig-modelconfig): {{
     EvaluatorModelConfig}}

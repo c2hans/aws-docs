@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudwatch-domain-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudWatch::Domain",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudwatch-domain-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudWatch::Domain
 Properties:
   [IdentityProviderConfiguration](#cfn-cloudwatch-domain-identityproviderconfiguration): {{

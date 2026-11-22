@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apigatewayv2-authorizer-jwtconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Audience](#cfn-apigatewayv2-authorizer-jwtconfiguration-audience)" : {{[ String, ... ]}},
   "[Issuer](#cfn-apigatewayv2-authorizer-jwtconfiguration-issuer)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apigatewayv2-authorizer-jwtconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Audience](#cfn-apigatewayv2-authorizer-jwtconfiguration-audience): {{
     - String}}
   [Issuer](#cfn-apigatewayv2-authorizer-jwtconfiguration-issuer): {{String}}

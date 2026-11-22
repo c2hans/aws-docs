@@ -11,7 +11,7 @@ You can use the [Connect Customer SDK's](https://github.com/amazon-connect/Amazo
 
 If your app uses the [Connect Customer SDK](https://github.com/amazon-connect/AmazonConnectSDK) to subscribe to an event that it does not have permission for, the agent workspace will throw an error with a message formatted like below.
 
-```
+```typescript
 App attempted to subscribe to topic without permission - Topic {"key":
 <event_name>,"namespace":"aws.connect.contact"}`
 ```
@@ -21,6 +21,6 @@ App attempted to subscribe to topic without permission - Topic {"key":
 
 If your app uses the [Connect Customer SDK](https://github.com/amazon-connect/AmazonConnectSDK) to make a request that it does not have permission for, the agent workspace will throw an error with a message formatted like below.
 
-```
+```typescript
 App does not have permission for this request
 ```

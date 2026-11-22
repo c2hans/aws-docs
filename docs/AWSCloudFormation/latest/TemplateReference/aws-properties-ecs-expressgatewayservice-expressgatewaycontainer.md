@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-expressgatewayservice-expressgatewaycontainer-syntax.json"></a>
 
-```
+```json
 {
   "[AwsLogsConfiguration](#cfn-ecs-expressgatewayservice-expressgatewaycontainer-awslogsconfiguration)" : {{ExpressGatewayServiceAwsLogsConfiguration}},
   "[Command](#cfn-ecs-expressgatewayservice-expressgatewaycontainer-command)" : {{[ String, ... ]}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-expressgatewayservice-expressgatewaycontainer-syntax.yaml"></a>
 
-```
+```yaml
   [AwsLogsConfiguration](#cfn-ecs-expressgatewayservice-expressgatewaycontainer-awslogsconfiguration): {{
     ExpressGatewayServiceAwsLogsConfiguration}}
   [Command](#cfn-ecs-expressgatewayservice-expressgatewaycontainer-command): {{

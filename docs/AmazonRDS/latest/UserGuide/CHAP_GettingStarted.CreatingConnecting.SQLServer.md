@@ -305,7 +305,7 @@ You can explore your sample DB instance by using Microsoft SQL Server Management
 
    1. Enter the following SQL query:
 
-      ```
+      ```sql
       select @@VERSION
       ```
 

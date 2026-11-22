@@ -10,7 +10,7 @@ To require SSL/TLS connections for specific users' accounts, use one of the foll
 
 To do so, use the following statement.
 
-```
+```sql
 ALTER USER 'encrypted_user'@'%' REQUIRE SSL;
 ```
 

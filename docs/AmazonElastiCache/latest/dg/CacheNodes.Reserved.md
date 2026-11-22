@@ -82,6 +82,7 @@ You can compare usage for different reserved node sizes by using normalized unit
 | 12xlarge | 96 | 76.8 |
 | 16xlarge | 128 | 102.4 |
 | 24xlarge | 192 | 153.6 |
+| 48xlarge | 384 | 307.2 |
 
 For example, you purchase a cache.r6gd.xlarge reserved node, and you have two running cache.r6gd.large reserved nodes in your account in the same AWS Region. In this case, the billing benefit is applied in full to both nodes.
 
@@ -170,7 +171,7 @@ To get pricing and other information about available reserved node offerings for
 
 This operation produces output similar to the following (JSON format):
 
-```
+```json
  {
             "ReservedCacheNodesOfferingId": "0xxxxxxxx-xxeb-44ex-xx3c-xxxxxxxx072",
             "CacheNodeType": "cache.xxx.large",
@@ -220,7 +221,7 @@ This operation produces output similar to the following (JSON format):
 
 To get pricing and other information about available reserved node offerings for Memcached, type the following command at a command prompt:
 
-```
+```json
  {
             "ReservedCacheNodesOfferingId": "0xxxxxxxx-xxeb-44ex-xx3c-xxxxxxxx072",
             "CacheNodeType": "cache.xxx.large",
@@ -430,7 +431,7 @@ aws elasticache describe-reserved-cache-nodes
 
 This operation produces output similar to the following (JSON format):
 
-```
+```json
 {
     "ReservedCacheNodeId": "myreservationid",
     "ReservedCacheNodesOfferingId": "649fd0c8-cf6d-47a0-bfa6-060f8e75e95f",

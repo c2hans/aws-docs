@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-requestinspection-syntax.json"></a>
 
-```
+```json
 {
   "[PasswordField](#cfn-wafv2-webacl-requestinspection-passwordfield)" : {{FieldIdentifier}},
   "[PayloadType](#cfn-wafv2-webacl-requestinspection-payloadtype)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-requestinspection-syntax.yaml"></a>
 
-```
+```yaml
   [PasswordField](#cfn-wafv2-webacl-requestinspection-passwordfield): {{
     FieldIdentifier}}
   [PayloadType](#cfn-wafv2-webacl-requestinspection-payloadtype): {{String}}
@@ -90,7 +90,7 @@ The following shows an example `RequestInspection` for a JSON payload type.
 #### YAML
 <a name="aws-properties-wafv2-webacl-requestinspection--examples--Configure_the_request_inspection_fields_for_a_JSON_payload--yaml"></a>
 
-```
+```yaml
 RequestInspection:
   PayloadType: JSON
   UsernameField:
@@ -102,7 +102,7 @@ RequestInspection:
 #### JSON
 <a name="aws-properties-wafv2-webacl-requestinspection--examples--Configure_the_request_inspection_fields_for_a_JSON_payload--json"></a>
 
-```
+```json
 "RequestInspection": {
       "PayloadType": "JSON",
       "UsernameField": {
@@ -122,7 +122,7 @@ The following shows an example `RequestInspection` for a form encoded payload ty
 #### YAML
 <a name="aws-properties-wafv2-webacl-requestinspection--examples--Configure_the_request_inspection_fields_for_a_form_encoded_payload--yaml"></a>
 
-```
+```yaml
 RequestInspection:
   PayloadType: FORM_ENCODED
   UsernameField:
@@ -134,7 +134,7 @@ RequestInspection:
 #### JSON
 <a name="aws-properties-wafv2-webacl-requestinspection--examples--Configure_the_request_inspection_fields_for_a_form_encoded_payload--json"></a>
 
-```
+```json
 "RequestInspection": {
       "PayloadType": "FORM_ENCODED",
       "UsernameField": {

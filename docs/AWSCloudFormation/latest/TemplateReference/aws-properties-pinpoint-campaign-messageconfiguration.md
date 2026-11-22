@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pinpoint-campaign-messageconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ADMMessage](#cfn-pinpoint-campaign-messageconfiguration-admmessage)" : {{Message}},
   "[APNSMessage](#cfn-pinpoint-campaign-messageconfiguration-apnsmessage)" : {{Message}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pinpoint-campaign-messageconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ADMMessage](#cfn-pinpoint-campaign-messageconfiguration-admmessage): {{
     Message}}
   [APNSMessage](#cfn-pinpoint-campaign-messageconfiguration-apnsmessage): {{

@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-supportapp-slackworkspaceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SupportApp::SlackWorkspaceConfiguration",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-supportapp-slackworkspaceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SupportApp::SlackWorkspaceConfiguration
 Properties:
   [TeamId](#cfn-supportapp-slackworkspaceconfiguration-teamid): {{String}}
@@ -88,7 +88,7 @@ Use this template to create a Slack workspace configuration for your account or 
 #### JSON
 <a name="aws-resource-supportapp-slackworkspaceconfiguration--examples--Example--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Example stack to create a Slack workspace configuration",
@@ -107,7 +107,7 @@ Use this template to create a Slack workspace configuration for your account or 
 #### YAML
 <a name="aws-resource-supportapp-slackworkspaceconfiguration--examples--Example--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Example stack to create a Slack workspace configuration
 Resources:

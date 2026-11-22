@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lightsail-instance-state-syntax.json"></a>
 
-```
+```json
 {
   "[Code](#cfn-lightsail-instance-state-code)" : {{Integer}},
   "[Name](#cfn-lightsail-instance-state-name)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lightsail-instance-state-syntax.yaml"></a>
 
-```
+```yaml
   [Code](#cfn-lightsail-instance-state-code): {{Integer}}
   [Name](#cfn-lightsail-instance-state-name): {{String}}
 ```

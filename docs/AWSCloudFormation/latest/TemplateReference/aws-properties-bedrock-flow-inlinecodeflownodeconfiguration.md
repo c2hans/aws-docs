@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-flow-inlinecodeflownodeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Code](#cfn-bedrock-flow-inlinecodeflownodeconfiguration-code)" : {{String}},
   "[Language](#cfn-bedrock-flow-inlinecodeflownodeconfiguration-language)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-flow-inlinecodeflownodeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Code](#cfn-bedrock-flow-inlinecodeflownodeconfiguration-code): {{String}}
   [Language](#cfn-bedrock-flow-inlinecodeflownodeconfiguration-language): {{String}}
 ```

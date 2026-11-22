@@ -30,7 +30,7 @@ The **AmazonAppStreamServiceAccess** trust relationship policy must include the 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -91,7 +91,7 @@ Before you begin, make sure that the following are true:
 
 1. Verify that the following policy is listed in the output.
 
-   ```
+   ```json
    {
        "AttachedPolicies": [
            {
@@ -126,7 +126,7 @@ If you receive an `AccessDenied` error, verify that your IAM principal has the `
 
 1. Confirm that the output matches the following format.
 
-   ```
+   ```json
    {
        "Version": "2012-10-17",
        "Statement": [
@@ -158,7 +158,7 @@ Before you begin, make sure that the following are true:
 **Creating the trust policy document (AWS CLI)**
 + To grant the WorkSpaces Applications service permission to assume the role, create a file named `trust-policy.json` with the following content.
 
-  ```
+  ```json
   {
       "Version": "2012-10-17",
       "Statement": [

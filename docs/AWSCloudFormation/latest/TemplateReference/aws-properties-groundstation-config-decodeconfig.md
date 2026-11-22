@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-groundstation-config-decodeconfig-syntax.json"></a>
 
-```
+```json
 {
   "[UnvalidatedJSON](#cfn-groundstation-config-decodeconfig-unvalidatedjson)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-groundstation-config-decodeconfig-syntax.yaml"></a>
 
-```
+```yaml
   [UnvalidatedJSON](#cfn-groundstation-config-decodeconfig-unvalidatedjson): {{String}}
 ```
 
@@ -50,7 +50,7 @@ The following example creates a Ground Station `DecodeConfig`
 #### JSON
 <a name="aws-properties-groundstation-config-decodeconfig--examples--Create_a_DecodeConfig--json"></a>
 
-```
+```json
 {
   "DecodeConfig": {
     "UnvalidatedJSON": "{ \"edges\":[ { \"from\":\"I-Ingress\", \"to\":\"IQ-Recombiner\" }, { \"from\":\"Q-Ingress\", \"to\":\"IQ-Recombiner\" }, { \"from\":\"IQ-Recombiner\", \"to\":\"CcsdsViterbiDecoder\" }, { \"from\":\"CcsdsViterbiDecoder\", \"to\":\"NrzmDecoder\" }, { \"from\":\"NrzmDecoder\", \"to\":\"UncodedFramesEgress\" } ], \"nodeConfigs\":{ \"I-Ingress\":{ \"type\":\"CODED_SYMBOLS_INGRESS\", \"codedSymbolsIngress\":{ \"source\":\"I\" } }, \"Q-Ingress\":{ \"type\":\"CODED_SYMBOLS_INGRESS\", \"codedSymbolsIngress\":{ \"source\":\"Q\" } }, \"IQ-Recombiner\":{ \"type\":\"IQ_RECOMBINER\" }, \"CcsdsViterbiDecoder\":{ \"type\":\"CCSDS_171_133_VITERBI_DECODER\", \"ccsds171133ViterbiDecoder\":{ \"codeRate\":\"ONE_HALF\" } }, \"NrzmDecoder\":{ \"type\":\"NRZ_M_DECODER\" }, \"UncodedFramesEgress\":{ \"type\":\"UNCODED_FRAMES_EGRESS\" } } }"
@@ -61,7 +61,7 @@ The following example creates a Ground Station `DecodeConfig`
 #### YAML
 <a name="aws-properties-groundstation-config-decodeconfig--examples--Create_a_DecodeConfig--yaml"></a>
 
-```
+```yaml
 DecodeConfig:
   UnvalidatedJSON: '{
     "edges":[

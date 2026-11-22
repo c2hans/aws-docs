@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-pinpoint-app-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Pinpoint::App",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-pinpoint-app-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Pinpoint::App
 Properties:
   [Name](#cfn-pinpoint-app-name): {{String}}

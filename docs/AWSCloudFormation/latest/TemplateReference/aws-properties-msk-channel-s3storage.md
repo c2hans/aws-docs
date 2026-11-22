@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-channel-s3storage-syntax.json"></a>
 
-```
+```json
 {
   "[BucketArn](#cfn-msk-channel-s3storage-bucketarn)" : {{String}},
   "[CompressionType](#cfn-msk-channel-s3storage-compressiontype)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-channel-s3storage-syntax.yaml"></a>
 
-```
+```yaml
   [BucketArn](#cfn-msk-channel-s3storage-bucketarn): {{String}}
   [CompressionType](#cfn-msk-channel-s3storage-compressiontype): {{String}}
   [ExpectedBucketOwner](#cfn-msk-channel-s3storage-expectedbucketowner): {{String}}

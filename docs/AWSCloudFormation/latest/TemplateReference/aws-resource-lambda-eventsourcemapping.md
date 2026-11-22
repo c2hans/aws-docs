@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lambda-eventsourcemapping-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lambda::EventSourceMapping",
   "Properties" : {
@@ -64,7 +64,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lambda-eventsourcemapping-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lambda::EventSourceMapping
 Properties:
   [AmazonManagedKafkaEventSourceConfig](#cfn-lambda-eventsourcemapping-amazonmanagedkafkaeventsourceconfig): {{
@@ -382,7 +382,7 @@ Create an event source mapping that reads events from Amazon Kinesis and invokes
 #### JSON
 <a name="aws-resource-lambda-eventsourcemapping--examples--Event_Source_Mapping--json"></a>
 
-```
+```json
 "EventSourceMapping": {
     "Type": "AWS::Lambda::EventSourceMapping",
     "Properties": {
@@ -419,7 +419,7 @@ Create an event source mapping that reads events from Amazon Kinesis and invokes
 #### YAML
 <a name="aws-resource-lambda-eventsourcemapping--examples--Event_Source_Mapping--yaml"></a>
 
-```
+```yaml
 MyEventSourceMapping:
   Type: AWS::Lambda::EventSourceMapping
   Properties:

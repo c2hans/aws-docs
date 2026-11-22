@@ -54,7 +54,7 @@ aws autoscaling rollback-instance-refresh --auto-scaling-group-name {{my-asg}}
 
 Example output:
 
-```
+```json
 {
     "InstanceRefreshId": "08b91cf7-8fa6-48af-b6a6-d227f40f1b9b"
 }
@@ -113,7 +113,7 @@ aws autoscaling start-instance-refresh --cli-input-json file://config.json
 
 Contents of `config.json`.
 
-```
+```json
 {
     "AutoScalingGroupName": "{{my-asg}}",
     "DesiredConfiguration": {
@@ -130,7 +130,7 @@ Contents of `config.json`.
 
 Alternatively, to automatically roll back when the instance refresh fails or when a specified CloudWatch alarm is in the `ALARM` state, specify the `AlarmSpecification` option in the `Preferences` and provide the alarm name, as in the following example. Replace the {{`italicized`}} parameter values with your own.
 
-```
+```json
 {
     "AutoScalingGroupName": "{{my-asg}}",
     "DesiredConfiguration": {
@@ -148,7 +148,7 @@ Alternatively, to automatically roll back when the instance refresh fails or whe
 
 If successful, the command returns output similar to the following.
 
-```
+```json
 {
   "InstanceRefreshId": "08b91cf7-8fa6-48af-b6a6-d227f40f1b9b"
 }

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codebuild-fleet-scalingconfigurationinput-syntax.json"></a>
 
-```
+```json
 {
   "[MaxCapacity](#cfn-codebuild-fleet-scalingconfigurationinput-maxcapacity)" : {{Integer}},
   "[ScalingType](#cfn-codebuild-fleet-scalingconfigurationinput-scalingtype)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codebuild-fleet-scalingconfigurationinput-syntax.yaml"></a>
 
-```
+```yaml
   [MaxCapacity](#cfn-codebuild-fleet-scalingconfigurationinput-maxcapacity): {{Integer}}
   [ScalingType](#cfn-codebuild-fleet-scalingconfigurationinput-scalingtype): {{String}}
   [TargetTrackingScalingConfigs](#cfn-codebuild-fleet-scalingconfigurationinput-targettrackingscalingconfigs): {{

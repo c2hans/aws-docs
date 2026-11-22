@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-efs-mounttarget-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EFS::MountTarget",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-efs-mounttarget-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EFS::MountTarget
 Properties:
   [FileSystemId](#cfn-efs-mounttarget-filesystemid): {{String}}
@@ -140,7 +140,7 @@ The following example declares a mount target that is associated with a file sys
 #### JSON
 <a name="aws-resource-efs-mounttarget--examples--Declare_a_Mount_Target_for_an_EFS_File_System--json"></a>
 
-```
+```json
 "MountTarget": {
   "Type": "AWS::EFS::MountTarget",
   "Properties": {
@@ -154,7 +154,7 @@ The following example declares a mount target that is associated with a file sys
 #### YAML
 <a name="aws-resource-efs-mounttarget--examples--Declare_a_Mount_Target_for_an_EFS_File_System--yaml"></a>
 
-```
+```yaml
 MountTarget:
   Type: AWS::EFS::MountTarget
   Properties:

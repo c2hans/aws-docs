@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-datasource-filterexpression-syntax.json"></a>
 
-```
+```json
 {
   "[Expression](#cfn-datazone-datasource-filterexpression-expression)" : {{String}},
   "[Type](#cfn-datazone-datasource-filterexpression-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-datasource-filterexpression-syntax.yaml"></a>
 
-```
+```yaml
   [Expression](#cfn-datazone-datasource-filterexpression-expression): {{String}}
   [Type](#cfn-datazone-datasource-filterexpression-type): {{String}}
 ```

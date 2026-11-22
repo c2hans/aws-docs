@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-connectorprofile-oauth2properties-syntax.json"></a>
 
-```
+```json
 {
   "[OAuth2GrantType](#cfn-appflow-connectorprofile-oauth2properties-oauth2granttype)" : {{String}},
   "[TokenUrl](#cfn-appflow-connectorprofile-oauth2properties-tokenurl)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-connectorprofile-oauth2properties-syntax.yaml"></a>
 
-```
+```yaml
   [OAuth2GrantType](#cfn-appflow-connectorprofile-oauth2properties-oauth2granttype): {{String}}
   [TokenUrl](#cfn-appflow-connectorprofile-oauth2properties-tokenurl): {{String}}
   [TokenUrlCustomProperties](#cfn-appflow-connectorprofile-oauth2properties-tokenurlcustomproperties): {{

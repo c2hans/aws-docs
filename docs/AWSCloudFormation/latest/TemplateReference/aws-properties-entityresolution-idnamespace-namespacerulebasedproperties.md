@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-entityresolution-idnamespace-namespacerulebasedproperties-syntax.json"></a>
 
-```
+```json
 {
   "[AttributeMatchingModel](#cfn-entityresolution-idnamespace-namespacerulebasedproperties-attributematchingmodel)" : {{String}},
   "[RecordMatchingModels](#cfn-entityresolution-idnamespace-namespacerulebasedproperties-recordmatchingmodels)" : {{[ String, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-entityresolution-idnamespace-namespacerulebasedproperties-syntax.yaml"></a>
 
-```
+```yaml
   [AttributeMatchingModel](#cfn-entityresolution-idnamespace-namespacerulebasedproperties-attributematchingmodel): {{String}}
   [RecordMatchingModels](#cfn-entityresolution-idnamespace-namespacerulebasedproperties-recordmatchingmodels): {{
     - String}}

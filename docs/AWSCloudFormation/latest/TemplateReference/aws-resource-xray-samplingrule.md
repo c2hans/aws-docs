@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-xray-samplingrule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::XRay::SamplingRule",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-xray-samplingrule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::XRay::SamplingRule
 Properties:
   [SamplingRule](#cfn-xray-samplingrule-samplingrule): {{
@@ -96,7 +96,7 @@ This example creates a new sampling rule called MySamplingRule.
 #### JSON
 <a name="aws-resource-xray-samplingrule--examples--Create_sampling_rule--json"></a>
 
-```
+```json
 {
    "AWSTemplateFormatVersion": "2010-09-09T00:00:00.000Z",
    "Resources": {
@@ -125,7 +125,7 @@ This example creates a new sampling rule called MySamplingRule.
 #### YAML
 <a name="aws-resource-xray-samplingrule--examples--Create_sampling_rule--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
    MySamplingRuleResource:
@@ -153,7 +153,7 @@ This example updates an existing sampling rule called MySamplingRule.
 #### JSON
 <a name="aws-resource-xray-samplingrule--examples--Update_sampling_rule--json"></a>
 
-```
+```json
 {
    "AWSTemplateFormatVersion": "2010-09-09T00:00:00.000Z",
    "Resources": {
@@ -181,7 +181,7 @@ This example updates an existing sampling rule called MySamplingRule.
 #### YAML
 <a name="aws-resource-xray-samplingrule--examples--Update_sampling_rule--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
    MySamplingRuleResource:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-snowflakevpcconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[PrivateLinkVpceId](#cfn-kinesisfirehose-deliverystream-snowflakevpcconfiguration-privatelinkvpceid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-snowflakevpcconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [PrivateLinkVpceId](#cfn-kinesisfirehose-deliverystream-snowflakevpcconfiguration-privatelinkvpceid): {{String}}
 ```
 

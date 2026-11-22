@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-accessgrant-accessgrantslocationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[S3SubPrefix](#cfn-s3-accessgrant-accessgrantslocationconfiguration-s3subprefix)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-accessgrant-accessgrantslocationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [S3SubPrefix](#cfn-s3-accessgrant-accessgrantslocationconfiguration-s3subprefix): {{String}}
 ```
 

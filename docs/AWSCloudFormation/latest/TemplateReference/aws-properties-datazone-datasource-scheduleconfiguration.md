@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-datasource-scheduleconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Schedule](#cfn-datazone-datasource-scheduleconfiguration-schedule)" : {{String}},
   "[Timezone](#cfn-datazone-datasource-scheduleconfiguration-timezone)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-datasource-scheduleconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Schedule](#cfn-datazone-datasource-scheduleconfiguration-schedule): {{String}}
   [Timezone](#cfn-datazone-datasource-scheduleconfiguration-timezone): {{String}}
 ```

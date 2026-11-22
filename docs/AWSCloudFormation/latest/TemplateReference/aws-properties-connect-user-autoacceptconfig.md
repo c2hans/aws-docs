@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-user-autoacceptconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AgentFirstCallbackAutoAccept](#cfn-connect-user-autoacceptconfig-agentfirstcallbackautoaccept)" : {{Boolean}},
   "[AutoAccept](#cfn-connect-user-autoacceptconfig-autoaccept)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-user-autoacceptconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AgentFirstCallbackAutoAccept](#cfn-connect-user-autoacceptconfig-agentfirstcallbackautoaccept): {{Boolean}}
   [AutoAccept](#cfn-connect-user-autoacceptconfig-autoaccept): {{Boolean}}
   [Channel](#cfn-connect-user-autoacceptconfig-channel): {{String}}

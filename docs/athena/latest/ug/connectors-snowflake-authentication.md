@@ -30,17 +30,17 @@ This process involves generating an RSA key-pair, configuring your Snowflake acc
    Generate a private and public key pair using OpenSSL.
    + To generate an unencrypted version, use the following command in your local command line application.
 
-     ```
+     ```bash
      openssl genrsa 2048 | openssl pkcs8 -topk8 -inform PEM -out rsa_key.p8 -nocrypt
      ```
    + To generate an encrypted version, use the following command, which omits `-nocrypt`.
 
-     ```
+     ```bash
      openssl genrsa 2048 | openssl pkcs8 -topk8 -v2 des3 -inform PEM -out rsa_key.p8
      ```
    + To generate a public key from a private key.
 
-     ```
+     ```bash
      openssl rsa -in rsa_key.p8 -pubout -out rsa_key.pub
      # Set appropriate permissions (Unix/Linux)
      chmod 600 rsa_key.p8
@@ -51,7 +51,7 @@ Do not share your private key. The private key should only be accessible to the 
 
 1. **Extract public key content without delimiters for Snowflake**
 
-   ```
+   ```bash
    # Extract public key content (remove BEGIN/END lines and newlines)
    cat rsa_key.pub | grep -v "BEGIN\|END" | tr -d '\n'
    ```
@@ -64,7 +64,7 @@ Do not share your private key. The private key should only be accessible to the 
 
    1. Create a dedicated user for the Athena connector if it doesn't already exists.
 
-      ```
+      ```sql
       -- Create user for Athena connector
       CREATE USER {{athena_connector_user}};
 
@@ -80,19 +80,19 @@ Do not share your private key. The private key should only be accessible to the 
 
       Grant the necessary privileges to assign public keys with the following command.
 
-      ```
+      ```sql
       GRANT MODIFY PROGRAMMATIC AUTHENTICATION METHODS ON USER {{athena_connector_user}} TO ROLE {{your_admin_role}};
       ```
 
    1. Assign the public key to the Snowflake user with the following command.
 
-      ```
+      ```sql
       ALTER USER {{athena_connector_user}} SET RSA_PUBLIC_KEY='{{RSAkey}}';
       ```
 
       Verify that the public key is successfully assigned to the user with the following command.
 
-      ```
+      ```sql
       DESC USER {{athena_connector_user}};
       ```
 
@@ -100,14 +100,14 @@ Do not share your private key. The private key should only be accessible to the 
 
    1. Convert your private key to the format required by the connector.
 
-      ```
+      ```bash
       # Read private key content
       cat rsa_key.p8
       ```
 
    1. Create a secret in AWS Secrets Manager with the following structure.
 
-      ```
+      ```json
       {
         "sfUser": "{{your_snowflake_user}}",
         "pem_private_key": "-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----",
@@ -127,7 +127,7 @@ This authentication method enables secure, token-based access to Snowflake with 
 
    Execute the following SQL command in Snowflake to create a Snowflake OAuth security integration.
 
-   ```
+   ```sql
    CREATE SECURITY INTEGRATION {{my_snowflake_oauth_integration_a}}
      TYPE = OAUTH
      ENABLED = TRUE
@@ -151,19 +151,19 @@ This authentication method enables secure, token-based access to Snowflake with 
 
    1. Run the following SQL command to get the client credentials.
 
-      ```
+      ```sql
       DESC SECURITY INTEGRATION '{{MY_SNOWFLAKE_OAUTH_INTEGRATION_A}}';
       ```
 
    1. Retrieve the OAuth client secrets.
 
-      ```
+      ```sql
       SELECT SYSTEM$SHOW_OAUTH_CLIENT_SECRETS('{{MY_SNOWFLAKE_OAUTH_INTEGRATION_A}}');
       ```
 
       **Example response**
 
-      ```
+      ```json
       {
         "OAUTH_CLIENT_SECRET_2": "{{wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY}}",
         "OAUTH_CLIENT_SECRET": "{{je7MtGbClwBF/2Zp9Utk/h3yCo8nvbEXAMPLEKEY}},
@@ -199,7 +199,7 @@ The authorization code is valid for a limited time and can only be used once.
 
    Create a secret in AWS Secrets Manager with the following structure.
 
-   ```
+   ```json
    {
      "redirect_uri": "https://localhost:8080/oauth/callback",
      "client_secret": "{{je7MtGbClwBF/2Zp9Utk/h3yCo8nvbEXAMPLEKEY}}",

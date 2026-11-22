@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-h264colorspacesettings-syntax.json"></a>
 
-```
+```json
 {
   "[ColorSpacePassthroughSettings](#cfn-medialive-channel-h264colorspacesettings-colorspacepassthroughsettings)" : {{Json}},
   "[Rec601Settings](#cfn-medialive-channel-h264colorspacesettings-rec601settings)" : {{Json}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-h264colorspacesettings-syntax.yaml"></a>
 
-```
+```yaml
   [ColorSpacePassthroughSettings](#cfn-medialive-channel-h264colorspacesettings-colorspacepassthroughsettings): {{Json}}
   [Rec601Settings](#cfn-medialive-channel-h264colorspacesettings-rec601settings): {{Json}}
   [Rec709Settings](#cfn-medialive-channel-h264colorspacesettings-rec709settings): {{Json}}

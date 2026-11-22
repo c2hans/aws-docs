@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-ekssecret-syntax.json"></a>
 
-```
+```json
 {
   "[Optional](#cfn-batch-jobdefinition-ekssecret-optional)" : {{Boolean}},
   "[SecretName](#cfn-batch-jobdefinition-ekssecret-secretname)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-ekssecret-syntax.yaml"></a>
 
-```
+```yaml
   [Optional](#cfn-batch-jobdefinition-ekssecret-optional): {{Boolean}}
   [SecretName](#cfn-batch-jobdefinition-ekssecret-secretname): {{String}}
 ```

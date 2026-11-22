@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codedeploy-deploymentgroup-deploymentstyle-syntax.json"></a>
 
-```
+```json
 {
   "[DeploymentOption](#cfn-codedeploy-deploymentgroup-deploymentstyle-deploymentoption)" : {{String}},
   "[DeploymentType](#cfn-codedeploy-deploymentgroup-deploymentstyle-deploymenttype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codedeploy-deploymentgroup-deploymentstyle-syntax.yaml"></a>
 
-```
+```yaml
   [DeploymentOption](#cfn-codedeploy-deploymentgroup-deploymentstyle-deploymentoption): {{String}}
   [DeploymentType](#cfn-codedeploy-deploymentgroup-deploymentstyle-deploymenttype): {{String}}
 ```

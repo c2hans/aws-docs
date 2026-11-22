@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-flowversion-loopflownodeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Definition](#cfn-bedrock-flowversion-loopflownodeconfiguration-definition)" : {{FlowDefinition}}
 }
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-flowversion-loopflownodeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Definition](#cfn-bedrock-flowversion-loopflownodeconfiguration-definition): {{
     FlowDefinition}}
 ```

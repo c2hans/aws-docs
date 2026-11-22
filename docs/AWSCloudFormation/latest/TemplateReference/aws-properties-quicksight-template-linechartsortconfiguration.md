@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-linechartsortconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CategoryItemsLimitConfiguration](#cfn-quicksight-template-linechartsortconfiguration-categoryitemslimitconfiguration)" : {{ItemsLimitConfiguration}},
   "[CategorySort](#cfn-quicksight-template-linechartsortconfiguration-categorysort)" : {{[ FieldSortOptions, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-linechartsortconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CategoryItemsLimitConfiguration](#cfn-quicksight-template-linechartsortconfiguration-categoryitemslimitconfiguration): {{
     ItemsLimitConfiguration}}
   [CategorySort](#cfn-quicksight-template-linechartsortconfiguration-categorysort): {{

@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-config-configurationrecorder-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Config::ConfigurationRecorder",
   "Properties" : {
@@ -44,7 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-config-configurationrecorder-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Config::ConfigurationRecorder
 Properties:
   [Name](#cfn-config-configurationrecorder-name): {{String}}
@@ -134,7 +134,7 @@ The following example creates a configuration recorder for EC2 volumes.
 #### JSON
 <a name="aws-resource-config-configurationrecorder--examples--Configuration_Recorder--json"></a>
 
-```
+```json
 "ConfigRecorder": {
   "Type": "AWS::Config::ConfigurationRecorder",
   "Properties": {
@@ -150,7 +150,7 @@ The following example creates a configuration recorder for EC2 volumes.
 #### YAML
 <a name="aws-resource-config-configurationrecorder--examples--Configuration_Recorder--yaml"></a>
 
-```
+```yaml
 ConfigRecorder:
   Type: AWS::Config::ConfigurationRecorder
   Properties:

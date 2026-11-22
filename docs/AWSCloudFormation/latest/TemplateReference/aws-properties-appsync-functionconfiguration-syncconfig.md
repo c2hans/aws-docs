@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appsync-functionconfiguration-syncconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ConflictDetection](#cfn-appsync-functionconfiguration-syncconfig-conflictdetection)" : {{String}},
   "[ConflictHandler](#cfn-appsync-functionconfiguration-syncconfig-conflicthandler)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appsync-functionconfiguration-syncconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ConflictDetection](#cfn-appsync-functionconfiguration-syncconfig-conflictdetection): {{String}}
   [ConflictHandler](#cfn-appsync-functionconfiguration-syncconfig-conflicthandler): {{String}}
   [LambdaConflictHandlerConfig](#cfn-appsync-functionconfiguration-syncconfig-lambdaconflicthandlerconfig): {{

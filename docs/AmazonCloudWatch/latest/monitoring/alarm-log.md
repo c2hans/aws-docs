@@ -169,7 +169,7 @@ When a Log Alarm transitions state, the action notification includes the followi
 
 The following example shows an Amazon SNS email notification for a single-value Log Alarm (without a `BY` clause):
 
-```
+```JSON
 {
     "AlarmName": "HighErrorCount",
     "NewStateValue": "ALARM",
@@ -198,7 +198,7 @@ The following example shows an Amazon SNS email notification for a single-value 
 
 The following example shows an Amazon SNS email notification for a multi-contributor Log Alarm (with a `BY` clause). Each breaching contributor generates a separate notification:
 
-```
+```JSON
 {
     "AlarmName": "EndpointLatency",
     "NewStateValue": "ALARM",

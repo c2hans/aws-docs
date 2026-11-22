@@ -80,7 +80,7 @@ aws license-manager create-license-configuration --cli-input-json file://rds-ora
 ```
 The following is the sample `rds-oracle-ee.json` file used in the example.
 
-```
+```json
 {
     "Name": "rds-oracle-ee",
     "Description": "RDS Oracle Enterprise Edition",

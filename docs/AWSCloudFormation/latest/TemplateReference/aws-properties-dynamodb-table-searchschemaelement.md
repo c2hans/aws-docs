@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dynamodb-table-searchschemaelement-syntax.json"></a>
 
-```
+```json
 {
   "[AttributeName](#cfn-dynamodb-table-searchschemaelement-attributename)" : {{String}},
   "[SearchSchemaElementType](#cfn-dynamodb-table-searchschemaelement-searchschemaelementtype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dynamodb-table-searchschemaelement-syntax.yaml"></a>
 
-```
+```yaml
   [AttributeName](#cfn-dynamodb-table-searchschemaelement-attributename): {{String}}
   [SearchSchemaElementType](#cfn-dynamodb-table-searchschemaelement-searchschemaelementtype): {{String}}
 ```

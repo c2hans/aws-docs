@@ -18,7 +18,7 @@ Action examples are code excerpts from larger programs and must be run in contex
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/TopicsAndQueues#code-examples).
 Delete a queue by using its URL.
 
-```
+```csharp
     /// <summary>
     /// Delete a queue by its URL.
     /// </summary>
@@ -42,7 +42,7 @@ Delete a queue by using its URL.
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/sqs#code-examples).
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -94,7 +94,7 @@ For more information, see [Deleting an Amazon SQS queue](https://docs.aws.amazon
 **SDK for Go V2**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/workflows/topics_and_queues#code-examples).
 
-```
+```go
 import (
 	"context"
 	"encoding/json"
@@ -130,7 +130,7 @@ func (actor SqsActions) DeleteQueue(ctx context.Context, queueUrl string) error 
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/sqs#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sqs.SqsClient;
 import software.amazon.awssdk.services.sqs.model.GetQueueUrlRequest;
@@ -199,7 +199,7 @@ public class DeleteQueue {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sqs#code-examples).
 Delete an Amazon SQS queue.
 
-```
+```javascript
 import { DeleteQueueCommand, SQSClient } from "@aws-sdk/client-sqs";
 
 const client = new SQSClient({});
@@ -220,7 +220,7 @@ export const main = async (queueUrl = SQS_QUEUE_URL) => {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascript/example_code/sqs#code-examples).
 Delete an Amazon SQS queue.
 
-```
+```javascript
 // Load the AWS SDK for Node.js
 var AWS = require("aws-sdk");
 // Set the region
@@ -250,7 +250,7 @@ sqs.deleteQueue(params, function (err, data) {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/sqs#code-examples).
 
-```
+```kotlin
 suspend fun deleteMessages(queueUrlVal: String) {
     println("Delete Messages from $queueUrlVal")
 
@@ -285,7 +285,7 @@ suspend fun deleteQueue(queueUrlVal: String) {
 **Tools for PowerShell V4**
 **Example 1: This example deletes the specified queue.**
 
-```
+```powershell
 Remove-SQSQueue -QueueUrl https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyQueue
 ```
 +  For API details, see [DeleteQueue](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -293,7 +293,7 @@ Remove-SQSQueue -QueueUrl https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyQue
 **Tools for PowerShell V5**
 **Example 1: This example deletes the specified queue.**
 
-```
+```powershell
 Remove-SQSQueue -QueueUrl https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyQueue
 ```
 +  For API details, see [DeleteQueue](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
@@ -304,7 +304,7 @@ Remove-SQSQueue -QueueUrl https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyQue
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sqs#code-examples).
 
-```
+```python
 def remove_queue(queue):
     """
     Removes an SQS queue. When run against an AWS account, it can take up to
@@ -321,7 +321,7 @@ def remove_queue(queue):
         raise error
 ```
 
-```
+```python
 class SqsWrapper:
     """Wrapper class for managing Amazon SQS operations."""
 
@@ -375,7 +375,7 @@ class SqsWrapper:
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/sqs#code-examples).
 
-```
+```ruby
 require 'aws-sdk-sqs' # v2: require 'aws-sdk'
 # Replace us-west-2 with the AWS Region you're using for Amazon SQS.
 sqs = Aws::SQS::Client.new(region: 'us-west-2')
@@ -390,7 +390,7 @@ sqs.delete_queue(queue_url: URL)
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/sqs#code-examples).
 
-```
+```sap-abap
     TRY.
         lo_sqs->deletequeue( iv_queueurl = iv_queue_url ).
         MESSAGE 'SQS queue deleted' TYPE 'I'.
@@ -404,7 +404,7 @@ sqs.delete_queue(queue_url: URL)
 **SDK for Swift**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/sqs#code-examples).
 
-```
+```swift
 import AWSSQS
 
         let config = try await SQSClient.SQSClientConfig(region: region)

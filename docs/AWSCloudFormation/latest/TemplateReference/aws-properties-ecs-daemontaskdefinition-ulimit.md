@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-daemontaskdefinition-ulimit-syntax.json"></a>
 
-```
+```json
 {
   "[HardLimit](#cfn-ecs-daemontaskdefinition-ulimit-hardlimit)" : {{Integer}},
   "[Name](#cfn-ecs-daemontaskdefinition-ulimit-name)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-daemontaskdefinition-ulimit-syntax.yaml"></a>
 
-```
+```yaml
   [HardLimit](#cfn-ecs-daemontaskdefinition-ulimit-hardlimit): {{Integer}}
   [Name](#cfn-ecs-daemontaskdefinition-ulimit-name): {{String}}
   [SoftLimit](#cfn-ecs-daemontaskdefinition-ulimit-softlimit): {{Integer}}

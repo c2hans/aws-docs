@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-rds-dbclusterparametergroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RDS::DBClusterParameterGroup",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-rds-dbclusterparametergroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RDS::DBClusterParameterGroup
 Properties:
   [DBClusterParameterGroupName](#cfn-rds-dbclusterparametergroup-dbclusterparametergroupname): {{String}}
@@ -127,7 +127,7 @@ The following example creates a DB cluster parameter group for an Aurora MySQL D
 #### JSON
 <a name="aws-resource-rds-dbclusterparametergroup--examples--Create_a_parameter_group_for_an_Aurora_MySQL_DB_cluster--json"></a>
 
-```
+```json
 "RDSDBClusterParameterGroup": {
         "Type": "AWS::RDS::DBClusterParameterGroup",
         "Properties": {
@@ -144,7 +144,7 @@ The following example creates a DB cluster parameter group for an Aurora MySQL D
 #### YAML
 <a name="aws-resource-rds-dbclusterparametergroup--examples--Create_a_parameter_group_for_an_Aurora_MySQL_DB_cluster--yaml"></a>
 
-```
+```yaml
 RDSDBClusterParameterGroup:
   Type: 'AWS::RDS::DBClusterParameterGroup'
   Properties:

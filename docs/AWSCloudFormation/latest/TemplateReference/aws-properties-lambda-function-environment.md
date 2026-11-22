@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-function-environment-syntax.json"></a>
 
-```
+```json
 {
   "[Variables](#cfn-lambda-function-environment-variables)" : {{{{{Key}}: {{Value}}, ...}}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-function-environment-syntax.yaml"></a>
 
-```
+```yaml
   [Variables](#cfn-lambda-function-environment-variables): {{
     {{Key}}: {{Value}}}}
 ```
@@ -52,7 +52,7 @@ Add environment variables to a function. Each variable is a key-value pair. This
 #### YAML
 <a name="aws-properties-lambda-function-environment--examples--Environment_Variables--yaml"></a>
 
-```
+```yaml
       Environment:
         Variables:
           databaseName: lambdadb

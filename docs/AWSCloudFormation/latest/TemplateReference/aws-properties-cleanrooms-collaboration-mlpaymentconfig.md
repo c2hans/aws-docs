@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-collaboration-mlpaymentconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ModelInference](#cfn-cleanrooms-collaboration-mlpaymentconfig-modelinference)" : {{ModelInferencePaymentConfig}},
   "[ModelTraining](#cfn-cleanrooms-collaboration-mlpaymentconfig-modeltraining)" : {{ModelTrainingPaymentConfig}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-collaboration-mlpaymentconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ModelInference](#cfn-cleanrooms-collaboration-mlpaymentconfig-modelinference): {{
     ModelInferencePaymentConfig}}
   [ModelTraining](#cfn-cleanrooms-collaboration-mlpaymentconfig-modeltraining): {{

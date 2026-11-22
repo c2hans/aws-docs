@@ -38,7 +38,7 @@ The following data definition language (DDL) statements are supported for creati
 
 You can use the `SPATIAL INDEX` keywords in a `CREATE TABLE` statement to add a spatial index to a column in a new table. Following is an example.
 
-```
+```sql
 CREATE TABLE test (shape POLYGON NOT NULL, SPATIAL INDEX(shape));
 ```
 
@@ -47,7 +47,7 @@ CREATE TABLE test (shape POLYGON NOT NULL, SPATIAL INDEX(shape));
 
 You can use the `SPATIAL INDEX` keywords in an `ALTER TABLE` statement to add a spatial index to a column in an existing table. Following is an example.
 
-```
+```sql
 ALTER TABLE test ADD SPATIAL INDEX(shape);
 ```
 
@@ -56,6 +56,6 @@ ALTER TABLE test ADD SPATIAL INDEX(shape);
 
 You can use the `SPATIAL` keyword in a `CREATE INDEX` statement to add a spatial index to a column in an existing table. Following is an example.
 
-```
+```sql
 CREATE SPATIAL INDEX shape_index ON test (shape);
 ```

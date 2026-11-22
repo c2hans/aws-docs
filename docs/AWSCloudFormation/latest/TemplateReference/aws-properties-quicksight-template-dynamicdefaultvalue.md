@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-dynamicdefaultvalue-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultValueColumn](#cfn-quicksight-template-dynamicdefaultvalue-defaultvaluecolumn)" : {{ColumnIdentifier}},
   "[GroupNameColumn](#cfn-quicksight-template-dynamicdefaultvalue-groupnamecolumn)" : {{ColumnIdentifier}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-dynamicdefaultvalue-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultValueColumn](#cfn-quicksight-template-dynamicdefaultvalue-defaultvaluecolumn): {{
     ColumnIdentifier}}
   [GroupNameColumn](#cfn-quicksight-template-dynamicdefaultvalue-groupnamecolumn): {{

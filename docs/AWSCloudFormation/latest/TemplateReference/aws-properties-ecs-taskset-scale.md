@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskset-scale-syntax.json"></a>
 
-```
+```json
 {
   "[Unit](#cfn-ecs-taskset-scale-unit)" : {{String}},
   "[Value](#cfn-ecs-taskset-scale-value)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskset-scale-syntax.yaml"></a>
 
-```
+```yaml
   [Unit](#cfn-ecs-taskset-scale-unit): {{String}}
   [Value](#cfn-ecs-taskset-scale-value): {{Number}}
 ```

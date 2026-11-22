@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-devopsguru-notificationchannel-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DevOpsGuru::NotificationChannel",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-devopsguru-notificationchannel-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DevOpsGuru::NotificationChannel
 Properties:
   [Config](#cfn-devopsguru-notificationchannel-config): {{
@@ -83,7 +83,7 @@ The ID of the notification channel.
 #### JSON
 <a name="aws-resource-devopsguru-notificationchannel--examples--Create_one_notification_channel_with_filters--json"></a>
 
-```
+```json
 {
   "Resources": {
     "MyNotificationChannel": {
@@ -107,7 +107,7 @@ The ID of the notification channel.
 #### YAML
 <a name="aws-resource-devopsguru-notificationchannel--examples--Create_one_notification_channel_with_filters--yaml"></a>
 
-```
+```yaml
 Resources:
   MyNotificationChannel:
     Type: AWS::DevOpsGuru::NotificationChannel
@@ -131,7 +131,7 @@ Resources:
 #### JSON
 <a name="aws-resource-devopsguru-notificationchannel--examples--Create_two_notification_channels--json"></a>
 
-```
+```json
 {
   "Resources": {
     "MyNotificationChannel1": {
@@ -161,7 +161,7 @@ Resources:
 #### YAML
 <a name="aws-resource-devopsguru-notificationchannel--examples--Create_two_notification_channels--yaml"></a>
 
-```
+```yaml
 Resources:
   MyNotificationChannel1:
     Type: AWS::DevOpsGuru::NotificationChannel

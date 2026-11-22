@@ -8,13 +8,13 @@ Unsubscribes from participant disconnected events.
 
  **Signature**
 
-```
+```typescript
 offParticipantDisconnected(handler: ParticipantDisconnectedHandler, contactId?: string): void
 ```
 
  **Usage**
 
-```
+```typescript
 contactClient.offParticipantDisconnected(handleParticipantDisconnected);
 ```
 

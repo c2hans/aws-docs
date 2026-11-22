@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apigatewayv2-stage-routesettings-syntax.json"></a>
 
-```
+```json
 {
   "[DataTraceEnabled](#cfn-apigatewayv2-stage-routesettings-datatraceenabled)" : {{Boolean}},
   "[DetailedMetricsEnabled](#cfn-apigatewayv2-stage-routesettings-detailedmetricsenabled)" : {{Boolean}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apigatewayv2-stage-routesettings-syntax.yaml"></a>
 
-```
+```yaml
   [DataTraceEnabled](#cfn-apigatewayv2-stage-routesettings-datatraceenabled): {{Boolean}}
   [DetailedMetricsEnabled](#cfn-apigatewayv2-stage-routesettings-detailedmetricsenabled): {{Boolean}}
   [LoggingLevel](#cfn-apigatewayv2-stage-routesettings-logginglevel): {{String}}

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-pinpointemail-configurationseteventdestination-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::PinpointEmail::ConfigurationSetEventDestination",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-pinpointemail-configurationseteventdestination-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::PinpointEmail::ConfigurationSetEventDestination
 Properties:
   [ConfigurationSetName](#cfn-pinpointemail-configurationseteventdestination-configurationsetname): {{String}}

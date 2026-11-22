@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-nielsennaesiinwonlysettings-syntax.json"></a>
 
-```
+```json
 {
   "[CheckDigitString](#cfn-medialive-channel-nielsennaesiinwonlysettings-checkdigitstring)" : {{String}},
   "[Sid](#cfn-medialive-channel-nielsennaesiinwonlysettings-sid)" : {{Number}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-nielsennaesiinwonlysettings-syntax.yaml"></a>
 
-```
+```yaml
   [CheckDigitString](#cfn-medialive-channel-nielsennaesiinwonlysettings-checkdigitstring): {{
     String}}
   [Sid](#cfn-medialive-channel-nielsennaesiinwonlysettings-sid): {{Number}}

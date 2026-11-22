@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-mskaccesscredentials-syntax.json"></a>
 
-```
+```json
 {
   "[ClientCertificateTlsAuth](#cfn-pipes-pipe-mskaccesscredentials-clientcertificatetlsauth)" : {{String}},
   "[SaslScram512Auth](#cfn-pipes-pipe-mskaccesscredentials-saslscram512auth)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-mskaccesscredentials-syntax.yaml"></a>
 
-```
+```yaml
   [ClientCertificateTlsAuth](#cfn-pipes-pipe-mskaccesscredentials-clientcertificatetlsauth): {{String}}
   [SaslScram512Auth](#cfn-pipes-pipe-mskaccesscredentials-saslscram512auth): {{String}}
 ```

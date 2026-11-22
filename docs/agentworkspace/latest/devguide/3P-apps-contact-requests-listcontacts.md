@@ -8,13 +8,13 @@ Lists all contacts for the current agent.
 
  **Signature**
 
-```
+```typescript
 listContacts(): Promise<ListContactsResult>
 ```
 
  **Usage**
 
-```
+```typescript
 const contacts = await contactClient.listContacts();
 console.log(`Active contacts: ${contacts.length}`);
 contacts.forEach((contact) => {
@@ -32,6 +32,6 @@ You can call this operation only from an application instance that is running wi
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

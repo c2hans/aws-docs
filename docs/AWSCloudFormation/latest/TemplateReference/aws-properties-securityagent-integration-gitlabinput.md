@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityagent-integration-gitlabinput-syntax.json"></a>
 
-```
+```json
 {
   "[AccessToken](#cfn-securityagent-integration-gitlabinput-accesstoken)" : {{String}},
   "[GroupId](#cfn-securityagent-integration-gitlabinput-groupid)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityagent-integration-gitlabinput-syntax.yaml"></a>
 
-```
+```yaml
   [AccessToken](#cfn-securityagent-integration-gitlabinput-accesstoken): {{String}}
   [GroupId](#cfn-securityagent-integration-gitlabinput-groupid): {{String}}
   [TargetUrl](#cfn-securityagent-integration-gitlabinput-targeturl): {{String}}

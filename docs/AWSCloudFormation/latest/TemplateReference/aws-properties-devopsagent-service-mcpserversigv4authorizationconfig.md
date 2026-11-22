@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-service-mcpserversigv4authorizationconfig-syntax.json"></a>
 
-```
+```json
 {
   "[CustomHeaders](#cfn-devopsagent-service-mcpserversigv4authorizationconfig-customheaders)" : {{{{{Key}}: {{Value}}, ...}}},
   "[McpRoleArn](#cfn-devopsagent-service-mcpserversigv4authorizationconfig-mcprolearn)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-service-mcpserversigv4authorizationconfig-syntax.yaml"></a>
 
-```
+```yaml
   [CustomHeaders](#cfn-devopsagent-service-mcpserversigv4authorizationconfig-customheaders): {{
     {{Key}}: {{Value}}}}
   [McpRoleArn](#cfn-devopsagent-service-mcpserversigv4authorizationconfig-mcprolearn): {{String}}

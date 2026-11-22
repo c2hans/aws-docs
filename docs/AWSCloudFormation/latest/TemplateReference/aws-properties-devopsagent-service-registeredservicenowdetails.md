@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-service-registeredservicenowdetails-syntax.json"></a>
 
-```
+```json
 {
   "[InstanceUrl](#cfn-devopsagent-service-registeredservicenowdetails-instanceurl)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-service-registeredservicenowdetails-syntax.yaml"></a>
 
-```
+```yaml
   [InstanceUrl](#cfn-devopsagent-service-registeredservicenowdetails-instanceurl): {{String}}
 ```
 

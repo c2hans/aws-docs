@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-budgets-budgetsaction-scpactiondefinition-syntax.json"></a>
 
-```
+```json
 {
   "[PolicyId](#cfn-budgets-budgetsaction-scpactiondefinition-policyid)" : {{String}},
   "[TargetIds](#cfn-budgets-budgetsaction-scpactiondefinition-targetids)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-budgets-budgetsaction-scpactiondefinition-syntax.yaml"></a>
 
-```
+```yaml
   [PolicyId](#cfn-budgets-budgetsaction-scpactiondefinition-policyid): {{String}}
   [TargetIds](#cfn-budgets-budgetsaction-scpactiondefinition-targetids): {{
     - String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connectcampaignsv2-campaign-answermachinedetectionconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AwaitAnswerMachinePrompt](#cfn-connectcampaignsv2-campaign-answermachinedetectionconfig-awaitanswermachineprompt)" : {{Boolean}},
   "[EnableAnswerMachineDetection](#cfn-connectcampaignsv2-campaign-answermachinedetectionconfig-enableanswermachinedetection)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connectcampaignsv2-campaign-answermachinedetectionconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AwaitAnswerMachinePrompt](#cfn-connectcampaignsv2-campaign-answermachinedetectionconfig-awaitanswermachineprompt): {{Boolean}}
   [EnableAnswerMachineDetection](#cfn-connectcampaignsv2-campaign-answermachinedetectionconfig-enableanswermachinedetection): {{Boolean}}
 ```

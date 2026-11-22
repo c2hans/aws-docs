@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-thousandseparatoroptions-syntax.json"></a>
 
-```
+```json
 {
   "[GroupingStyle](#cfn-quicksight-template-thousandseparatoroptions-groupingstyle)" : {{String}},
   "[Symbol](#cfn-quicksight-template-thousandseparatoroptions-symbol)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-thousandseparatoroptions-syntax.yaml"></a>
 
-```
+```yaml
   [GroupingStyle](#cfn-quicksight-template-thousandseparatoroptions-groupingstyle): {{String}}
   [Symbol](#cfn-quicksight-template-thousandseparatoroptions-symbol): {{String}}
   [Visibility](#cfn-quicksight-template-thousandseparatoroptions-visibility): {{String}}

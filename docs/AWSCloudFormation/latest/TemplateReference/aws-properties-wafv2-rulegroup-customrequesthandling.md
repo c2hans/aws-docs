@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-rulegroup-customrequesthandling-syntax.json"></a>
 
-```
+```json
 {
   "[InsertHeaders](#cfn-wafv2-rulegroup-customrequesthandling-insertheaders)" : {{[ CustomHTTPHeader, ... ]}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-rulegroup-customrequesthandling-syntax.yaml"></a>
 
-```
+```yaml
   [InsertHeaders](#cfn-wafv2-rulegroup-customrequesthandling-insertheaders): {{
     - CustomHTTPHeader}}
 ```

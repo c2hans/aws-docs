@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-odb-cloudautonomousvmcluster-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-odb-cloudautonomousvmcluster-tag-key)" : {{String}},
   "[Value](#cfn-odb-cloudautonomousvmcluster-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-odb-cloudautonomousvmcluster-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-odb-cloudautonomousvmcluster-tag-key): {{String}}
   [Value](#cfn-odb-cloudautonomousvmcluster-tag-value): {{String}}
 ```

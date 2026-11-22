@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-personalize-solution-automlconfig-syntax.json"></a>
 
-```
+```json
 {
   "[MetricName](#cfn-personalize-solution-automlconfig-metricname)" : {{String}},
   "[RecipeList](#cfn-personalize-solution-automlconfig-recipelist)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-personalize-solution-automlconfig-syntax.yaml"></a>
 
-```
+```yaml
   [MetricName](#cfn-personalize-solution-automlconfig-metricname): {{String}}
   [RecipeList](#cfn-personalize-solution-automlconfig-recipelist): {{
     - String}}

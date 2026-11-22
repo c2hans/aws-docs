@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-entityresolution-matchingworkflow-intermediatesourceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[IntermediateS3Path](#cfn-entityresolution-matchingworkflow-intermediatesourceconfiguration-intermediates3path)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-entityresolution-matchingworkflow-intermediatesourceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [IntermediateS3Path](#cfn-entityresolution-matchingworkflow-intermediatesourceconfiguration-intermediates3path): {{String}}
 ```
 

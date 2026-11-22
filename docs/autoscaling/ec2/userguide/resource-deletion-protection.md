@@ -148,7 +148,7 @@ IAM policies are particularly useful when you want to:
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [{
@@ -171,7 +171,7 @@ IAM policies are particularly useful when you want to:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [{
@@ -198,7 +198,7 @@ IAM policies are particularly useful when you want to:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -215,7 +215,7 @@ IAM policies are particularly useful when you want to:
 
  You can also specify multiple ARNs by enclosing them in a list. Including the UUID ensures that access is granted to the specific Auto Scaling group. The UUID for a new group is different from the UUID for a deleted group with the same name.
 
-```
+```json
 "Resource": [
     "arn:aws:autoscaling:{{region}}:{{account-id}}:autoScalingGroup:{{uuid}}:autoScalingGroupName/{{devteam-1}}",
     "arn:aws:autoscaling:{{region}}:{{account-id}}:autoScalingGroup:{{uuid}}:autoScalingGroupName/{{devteam-2}}",

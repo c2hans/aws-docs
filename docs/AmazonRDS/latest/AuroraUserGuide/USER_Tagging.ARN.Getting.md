@@ -56,7 +56,7 @@ aws rds describe-db-instances ^
 ```
 The output of that command is like the following:
 
-```
+```json
 [
     {
         "DBInstanceArn": "arn:aws:rds:us-west-2:{{account_id}}:db:{{instance_id}}",

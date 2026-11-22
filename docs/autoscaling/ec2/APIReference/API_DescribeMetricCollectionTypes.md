@@ -50,7 +50,7 @@ https://autoscaling.amazonaws.com/?Version=2011-01-01&Action=DescribeMetricColle
 #### Sample Response
 <a name="API_DescribeMetricCollectionTypes_Example_1_Response"></a>
 
-```
+```xml
 <DescribeMetricCollectionTypesResponse xmlns="https://autoscaling.amazonaws.com/doc/2011-01-01/">
   <DescribeMetricCollectionTypesResult>
     <Granularities>

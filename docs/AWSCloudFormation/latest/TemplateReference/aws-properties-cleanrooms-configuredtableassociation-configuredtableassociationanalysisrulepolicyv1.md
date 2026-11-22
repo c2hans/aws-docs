@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanrooms-configuredtableassociation-configuredtableassociationanalysisrulepolicyv1-syntax.json"></a>
 
-```
+```json
 {
   "[Aggregation](#cfn-cleanrooms-configuredtableassociation-configuredtableassociationanalysisrulepolicyv1-aggregation)" : {{ConfiguredTableAssociationAnalysisRuleAggregation}},
   "[Custom](#cfn-cleanrooms-configuredtableassociation-configuredtableassociationanalysisrulepolicyv1-custom)" : {{ConfiguredTableAssociationAnalysisRuleCustom}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanrooms-configuredtableassociation-configuredtableassociationanalysisrulepolicyv1-syntax.yaml"></a>
 
-```
+```yaml
   [Aggregation](#cfn-cleanrooms-configuredtableassociation-configuredtableassociationanalysisrulepolicyv1-aggregation): {{
     ConfiguredTableAssociationAnalysisRuleAggregation}}
   [Custom](#cfn-cleanrooms-configuredtableassociation-configuredtableassociationanalysisrulepolicyv1-custom): {{

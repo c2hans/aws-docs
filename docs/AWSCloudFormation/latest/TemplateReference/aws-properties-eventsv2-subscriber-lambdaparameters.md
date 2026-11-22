@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eventsv2-subscriber-lambdaparameters-syntax.json"></a>
 
-```
+```json
 {
   "[DurableExecutionName](#cfn-eventsv2-subscriber-lambdaparameters-durableexecutionname)" : {{String}},
   "[InvocationTimeoutSeconds](#cfn-eventsv2-subscriber-lambdaparameters-invocationtimeoutseconds)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eventsv2-subscriber-lambdaparameters-syntax.yaml"></a>
 
-```
+```yaml
   [DurableExecutionName](#cfn-eventsv2-subscriber-lambdaparameters-durableexecutionname): {{String}}
   [InvocationTimeoutSeconds](#cfn-eventsv2-subscriber-lambdaparameters-invocationtimeoutseconds): {{String}}
   [InvocationType](#cfn-eventsv2-subscriber-lambdaparameters-invocationtype): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networksecuritymanager-deployment-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-networksecuritymanager-deployment-tag-key)" : {{String}},
   "[Value](#cfn-networksecuritymanager-deployment-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networksecuritymanager-deployment-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-networksecuritymanager-deployment-tag-key): {{String}}
   [Value](#cfn-networksecuritymanager-deployment-tag-value): {{String}}
 ```

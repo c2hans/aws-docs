@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-mesh-meshspec-syntax.json"></a>
 
-```
+```json
 {
   "[EgressFilter](#cfn-appmesh-mesh-meshspec-egressfilter)" : {{EgressFilter}},
   "[ServiceDiscovery](#cfn-appmesh-mesh-meshspec-servicediscovery)" : {{MeshServiceDiscovery}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-mesh-meshspec-syntax.yaml"></a>
 
-```
+```yaml
   [EgressFilter](#cfn-appmesh-mesh-meshspec-egressfilter): {{
     EgressFilter}}
   [ServiceDiscovery](#cfn-appmesh-mesh-meshspec-servicediscovery): {{

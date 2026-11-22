@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityhub-automationrule-automationrulesaction-syntax.json"></a>
 
-```
+```json
 {
   "[FindingFieldsUpdate](#cfn-securityhub-automationrule-automationrulesaction-findingfieldsupdate)" : {{AutomationRulesFindingFieldsUpdate}},
   "[Type](#cfn-securityhub-automationrule-automationrulesaction-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityhub-automationrule-automationrulesaction-syntax.yaml"></a>
 
-```
+```yaml
   [FindingFieldsUpdate](#cfn-securityhub-automationrule-automationrulesaction-findingfieldsupdate): {{
     AutomationRulesFindingFieldsUpdate}}
   [Type](#cfn-securityhub-automationrule-automationrulesaction-type): {{String}}

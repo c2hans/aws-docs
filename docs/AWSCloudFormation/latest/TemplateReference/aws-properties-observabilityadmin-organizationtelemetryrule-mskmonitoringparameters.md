@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-observabilityadmin-organizationtelemetryrule-mskmonitoringparameters-syntax.json"></a>
 
-```
+```json
 {
   "[EnhancedMonitoring](#cfn-observabilityadmin-organizationtelemetryrule-mskmonitoringparameters-enhancedmonitoring)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-observabilityadmin-organizationtelemetryrule-mskmonitoringparameters-syntax.yaml"></a>
 
-```
+```yaml
   [EnhancedMonitoring](#cfn-observabilityadmin-organizationtelemetryrule-mskmonitoringparameters-enhancedmonitoring): {{String}}
 ```
 

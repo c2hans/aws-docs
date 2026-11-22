@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-sectionbasedlayoutpapercanvassizeoptions-syntax.json"></a>
 
-```
+```json
 {
   "[PaperMargin](#cfn-quicksight-analysis-sectionbasedlayoutpapercanvassizeoptions-papermargin)" : {{Spacing}},
   "[PaperOrientation](#cfn-quicksight-analysis-sectionbasedlayoutpapercanvassizeoptions-paperorientation)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-sectionbasedlayoutpapercanvassizeoptions-syntax.yaml"></a>
 
-```
+```yaml
   [PaperMargin](#cfn-quicksight-analysis-sectionbasedlayoutpapercanvassizeoptions-papermargin): {{
     Spacing}}
   [PaperOrientation](#cfn-quicksight-analysis-sectionbasedlayoutpapercanvassizeoptions-paperorientation): {{String}}

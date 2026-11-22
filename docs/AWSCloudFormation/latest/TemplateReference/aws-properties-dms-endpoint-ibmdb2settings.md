@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dms-endpoint-ibmdb2settings-syntax.json"></a>
 
-```
+```json
 {
   "[CurrentLsn](#cfn-dms-endpoint-ibmdb2settings-currentlsn)" : {{String}},
   "[KeepCsvFiles](#cfn-dms-endpoint-ibmdb2settings-keepcsvfiles)" : {{Boolean}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dms-endpoint-ibmdb2settings-syntax.yaml"></a>
 
-```
+```yaml
   [CurrentLsn](#cfn-dms-endpoint-ibmdb2settings-currentlsn): {{String}}
   [KeepCsvFiles](#cfn-dms-endpoint-ibmdb2settings-keepcsvfiles): {{Boolean}}
   [LoadTimeout](#cfn-dms-endpoint-ibmdb2settings-loadtimeout): {{Integer}}

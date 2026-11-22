@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fis-experimenttemplate-experimenttemplateexperimentoptions-syntax.json"></a>
 
-```
+```json
 {
   "[AccountTargeting](#cfn-fis-experimenttemplate-experimenttemplateexperimentoptions-accounttargeting)" : {{String}},
   "[EmptyTargetResolutionMode](#cfn-fis-experimenttemplate-experimenttemplateexperimentoptions-emptytargetresolutionmode)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fis-experimenttemplate-experimenttemplateexperimentoptions-syntax.yaml"></a>
 
-```
+```yaml
   [AccountTargeting](#cfn-fis-experimenttemplate-experimenttemplateexperimentoptions-accounttargeting): {{String}}
   [EmptyTargetResolutionMode](#cfn-fis-experimenttemplate-experimenttemplateexperimentoptions-emptytargetresolutionmode): {{String}}
 ```

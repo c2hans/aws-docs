@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-workspacesweb-networksettings-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::WorkSpacesWeb::NetworkSettings",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-workspacesweb-networksettings-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::WorkSpacesWeb::NetworkSettings
 Properties:
   [SecurityGroupIds](#cfn-workspacesweb-networksettings-securitygroupids): {{

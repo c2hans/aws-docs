@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskdefinition-firelensconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Options](#cfn-ecs-taskdefinition-firelensconfiguration-options)" : {{{{{Key}}: {{Value}}, ...}}},
   "[Type](#cfn-ecs-taskdefinition-firelensconfiguration-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskdefinition-firelensconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Options](#cfn-ecs-taskdefinition-firelensconfiguration-options): {{
     {{Key}}: {{Value}}}}
   [Type](#cfn-ecs-taskdefinition-firelensconfiguration-type): {{String}}

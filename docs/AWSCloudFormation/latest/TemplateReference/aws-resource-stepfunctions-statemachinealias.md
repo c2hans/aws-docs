@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-stepfunctions-statemachinealias-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::StepFunctions::StateMachineAlias",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-stepfunctions-statemachinealias-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::StepFunctions::StateMachineAlias
 Properties:
   [DeploymentPreference](#cfn-stepfunctions-statemachinealias-deploymentpreference): {{
@@ -107,7 +107,7 @@ Property description not available.
 
 When you provide the logical ID of this resource to the `Ref` intrinsic function, `Ref` returns the ARN of the created state machine alias. For example,
 
-```
+```json
 { "Ref": "PROD" }
 ```
 
@@ -148,7 +148,7 @@ The following example shows an alias named `PROD` that shifts 20 percent of traf
 #### YAML
 <a name="aws-resource-stepfunctions-statemachinealias--examples--Shifting_traffic_to_a_new_version_with_an_alias--yaml"></a>
 
-```
+```yaml
 PROD:
   Type: AWS::StepFunctions::Alias
   Properties:
@@ -173,7 +173,7 @@ The following example publishes multiple versions of the same state machine with
 #### YAML
 <a name="aws-resource-stepfunctions-statemachinealias--examples--Complete_example_to_publish_and_deploy_a_new_version_with_an_alias--yaml"></a>
 
-```
+```yaml
 MyStateMachine:
   Type: AWS::StepFunctions::StateMachine
   Properties:
@@ -223,7 +223,7 @@ The following example demonstrates the use of [`StateMachineRevisionId`](https:/
 #### YAML
 <a name="aws-resource-stepfunctions-statemachinealias--examples--Publish_and_deploy_a_version_that_always_points_to_the_most_recent_state_machine_revision--yaml"></a>
 
-```
+```yaml
 MyStateMachine:
   Type: AWS::StepFunctions::StateMachine
   Properties:

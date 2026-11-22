@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-gatewayroute-httpgatewayroutepathrewrite-syntax.json"></a>
 
-```
+```json
 {
   "[Exact](#cfn-appmesh-gatewayroute-httpgatewayroutepathrewrite-exact)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-gatewayroute-httpgatewayroutepathrewrite-syntax.yaml"></a>
 
-```
+```yaml
   [Exact](#cfn-appmesh-gatewayroute-httpgatewayroutepathrewrite-exact): {{String}}
 ```
 

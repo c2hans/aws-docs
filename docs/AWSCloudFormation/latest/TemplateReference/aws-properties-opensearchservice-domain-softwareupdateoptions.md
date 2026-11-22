@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchservice-domain-softwareupdateoptions-syntax.json"></a>
 
-```
+```json
 {
   "[AutoSoftwareUpdateEnabled](#cfn-opensearchservice-domain-softwareupdateoptions-autosoftwareupdateenabled)" : {{Boolean}},
   "[UseLatestServiceSoftwareForBlueGreen](#cfn-opensearchservice-domain-softwareupdateoptions-uselatestservicesoftwareforbluegreen)" : {{Boolean}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchservice-domain-softwareupdateoptions-syntax.yaml"></a>
 
-```
+```yaml
   [AutoSoftwareUpdateEnabled](#cfn-opensearchservice-domain-softwareupdateoptions-autosoftwareupdateenabled): {{Boolean}}
   [UseLatestServiceSoftwareForBlueGreen](#cfn-opensearchservice-domain-softwareupdateoptions-uselatestservicesoftwareforbluegreen): {{Boolean}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-launchwizard-deployment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::LaunchWizard::Deployment",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-launchwizard-deployment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::LaunchWizard::Deployment
 Properties:
   [DeploymentPatternName](#cfn-launchwizard-deployment-deploymentpatternname): {{String}}

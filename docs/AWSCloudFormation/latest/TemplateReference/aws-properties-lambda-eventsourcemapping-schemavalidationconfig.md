@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-eventsourcemapping-schemavalidationconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Attribute](#cfn-lambda-eventsourcemapping-schemavalidationconfig-attribute)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-eventsourcemapping-schemavalidationconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Attribute](#cfn-lambda-eventsourcemapping-schemavalidationconfig-attribute): {{String}}
 ```
 

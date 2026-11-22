@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bcmdataexports-export-refreshcadence-syntax.json"></a>
 
-```
+```json
 {
   "[Frequency](#cfn-bcmdataexports-export-refreshcadence-frequency)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bcmdataexports-export-refreshcadence-syntax.yaml"></a>
 
-```
+```yaml
   [Frequency](#cfn-bcmdataexports-export-refreshcadence-frequency): {{String}}
 ```
 

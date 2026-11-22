@@ -194,7 +194,7 @@ The following example creates a metric stream that streams all the metrics from 
 #### Sample Request
 <a name="API_PutMetricStream_Example_1_Request"></a>
 
-```
+```json
 {
   "Name": "MyMetricStream",
   "FirehoseArn": "arn:aws:firehose:us-east-1:123456789098:stream/MyFirehose",
@@ -219,7 +219,7 @@ The following example creates a metric stream that streams all the metrics from 
 #### Sample Request
 <a name="API_PutMetricStream_Example_2_Request"></a>
 
-```
+```json
 {
   "Name": "MyMetricStream",
   "FirehoseArn": "arn:aws:firehose:us-east-1:123456789098:stream/MyFirehose",
@@ -245,7 +245,7 @@ The following example creates a metric stream that streams all metrics from the 
 #### Sample Request
 <a name="API_PutMetricStream_Example_3_Request"></a>
 
-```
+```json
 {
     "Name": "MyMetricStream",
     "FirehoseArn": "arn:aws:firehose:us-east-1:123456789098:stream/MyFirehose",

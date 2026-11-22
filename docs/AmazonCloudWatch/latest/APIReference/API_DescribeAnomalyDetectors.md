@@ -211,7 +211,7 @@ The following example lists all the anomaly detectors for metrics with the name 
 #### Sample Request
 <a name="API_DescribeAnomalyDetectors_Example_1_Request"></a>
 
-```
+```json
 {
     "MetricName:": "CPUUtilization"
 }
@@ -220,7 +220,7 @@ The following example lists all the anomaly detectors for metrics with the name 
 #### Sample Response
 <a name="API_DescribeAnomalyDetectors_Example_1_Response"></a>
 
-```
+```json
 {
     "AnomalyDetectors": [
         {

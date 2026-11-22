@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-datasource-databricksparameters-syntax.json"></a>
 
-```
+```json
 {
   "[AuthenticationType](#cfn-quicksight-datasource-databricksparameters-authenticationtype)" : {{String}},
   "[Host](#cfn-quicksight-datasource-databricksparameters-host)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-datasource-databricksparameters-syntax.yaml"></a>
 
-```
+```yaml
   [AuthenticationType](#cfn-quicksight-datasource-databricksparameters-authenticationtype): {{String}}
   [Host](#cfn-quicksight-datasource-databricksparameters-host): {{String}}
   [OAuthParameters](#cfn-quicksight-datasource-databricksparameters-oauthparameters): {{

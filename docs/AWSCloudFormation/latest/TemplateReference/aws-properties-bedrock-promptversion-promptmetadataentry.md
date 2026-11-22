@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-promptversion-promptmetadataentry-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-bedrock-promptversion-promptmetadataentry-key)" : {{String}},
   "[Value](#cfn-bedrock-promptversion-promptmetadataentry-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-promptversion-promptmetadataentry-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-bedrock-promptversion-promptmetadataentry-key): {{String}}
   [Value](#cfn-bedrock-promptversion-promptmetadataentry-value): {{String}}
 ```

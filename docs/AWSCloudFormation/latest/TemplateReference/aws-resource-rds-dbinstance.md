@@ -49,7 +49,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-rds-dbinstance-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::RDS::DBInstance",
   "Properties" : {
@@ -141,7 +141,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-rds-dbinstance-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::RDS::DBInstance
 Properties:
   [AdditionalStorageVolumes](#cfn-rds-dbinstance-additionalstoragevolumes): {{
@@ -1346,7 +1346,7 @@ The following example creates an Amazon RDS MySQL DB instance with Enhanced Moni
 #### JSON
 <a name="aws-resource-rds-dbinstance--examples--Creating_a_DB_instance_with_Enhanced_Monitoring_enabled--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "AWS CloudFormation Sample Template for creating an Amazon RDS DB instance: Sample template showing how to create a DB instance with Enhanced Monitoring enabled. **WARNING** This template creates an RDS DB instance. You will be billed for the AWS resources used if you create a stack from this template.",
@@ -1437,7 +1437,7 @@ The following example creates an Amazon RDS MySQL DB instance with Enhanced Moni
 #### YAML
 <a name="aws-resource-rds-dbinstance--examples--Creating_a_DB_instance_with_Enhanced_Monitoring_enabled--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: >-
   Description": "AWS CloudFormation Sample Template for creating an Amazon RDS DB instance:
@@ -1515,7 +1515,7 @@ The following example creates an encrypted read replica from a cross-region sour
 #### JSON
 <a name="aws-resource-rds-dbinstance--examples--Creating_a_cross-region_encrypted_read_replica--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "RDS Storage Encrypted",
@@ -1594,7 +1594,7 @@ The following example creates an encrypted read replica from a cross-region sour
 #### YAML
 <a name="aws-resource-rds-dbinstance--examples--Creating_a_cross-region_encrypted_read_replica--yaml"></a>
 
-```
+```yaml
 ---
 AWSTemplateFormatVersion: 2010-09-09
 Description: RDS Storage Encrypted
@@ -1644,7 +1644,7 @@ The following example defines the destination region for automated backup replic
 #### JSON
 <a name="aws-resource-rds-dbinstance--examples--Setting_a_region_for_the_backup_replication_of_a_DB_instance--json"></a>
 
-```
+```json
 {
     "Resources": {
         "RDSDBInstance": {
@@ -1668,7 +1668,7 @@ The following example defines the destination region for automated backup replic
 #### YAML
 <a name="aws-resource-rds-dbinstance--examples--Setting_a_region_for_the_backup_replication_of_a_DB_instance--yaml"></a>
 
-```
+```yaml
 Resources:
   RDSDBInstance:
     Type: 'AWS::RDS::DBInstance'
@@ -1692,7 +1692,7 @@ This example creates an Amazon RDS Custom DB instance. Amazon RDS Custom allows 
 #### JSON
 <a name="aws-resource-rds-dbinstance--examples--Creating_an_Amazon_RDS_Custom_DB_instance--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Parameters": {
@@ -1778,7 +1778,7 @@ This example creates an Amazon RDS Custom DB instance. Amazon RDS Custom allows 
 #### YAML
 <a name="aws-resource-rds-dbinstance--examples--Creating_an_Amazon_RDS_Custom_DB_instance--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:
   AllocatedStorage:
@@ -1831,7 +1831,7 @@ These examples deploy RDS Custom for Oracle with single and multi-AZ support. Th
 #### JSON
 <a name="aws-resource-rds-dbinstance--examples--Deploying_RDS_Custom_for_Oracle_with_single_and_multiple_Availability_Zones--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "CloudFormation Template for the Pre-reqs of RDS Custom for Oracle",
@@ -2822,7 +2822,7 @@ These examples deploy RDS Custom for Oracle with single and multi-AZ support. Th
 #### YAML
 <a name="aws-resource-rds-dbinstance--examples--Deploying_RDS_Custom_for_Oracle_with_single_and_multiple_Availability_Zones--yaml"></a>
 
-```
+```yaml
 # AWSTemplateFormatVersion: 2010-09-09
 # RDS Custom for AWS RDS Oracle
 # 06/15/2025  created by Sharath Chandra Kampili
@@ -3347,7 +3347,7 @@ Resources:
 #### JSON
 <a name="aws-resource-rds-dbinstance--examples--Deploying_RDS_Custom_for_Oracle_with_single_and_multiple_Availability_Zones--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "CloudFormation Template for the RDS Custom for Oracle",
@@ -3859,7 +3859,7 @@ Resources:
 #### YAML
 <a name="aws-resource-rds-dbinstance--examples--Deploying_RDS_Custom_for_Oracle_with_single_and_multiple_Availability_Zones--yaml"></a>
 
-```
+```yaml
 # AWSTemplateFormatVersion: 2010-09-09
 # RDS Custom for AWS RDS Oracle
 # 06/15/2025 created by Sharath Chandra Kampili
@@ -4127,7 +4127,7 @@ For more information about managing passwords with Secrets Manager, see [Passwor
 #### JSON
 <a name="aws-resource-rds-dbinstance--examples--Creating_a_Secrets_Manager_secret_for_a_master_password--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "A sample template",
@@ -4190,7 +4190,7 @@ For more information about managing passwords with Secrets Manager, see [Passwor
 #### YAML
 <a name="aws-resource-rds-dbinstance--examples--Creating_a_Secrets_Manager_secret_for_a_master_password--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Description: A sample template
 Resources:
@@ -4237,7 +4237,7 @@ The following example creates a AWS CloudFormation stack with the AWS::RDS::DBIn
 #### JSON
 <a name="aws-resource-rds-dbinstance--examples--Creating_a_DB_instance_with_self-managed_Active_Directory_domain--json"></a>
 
-```
+```json
 {
     "Resources":
     {
@@ -4272,7 +4272,7 @@ The following example creates a AWS CloudFormation stack with the AWS::RDS::DBIn
 #### YAML
 <a name="aws-resource-rds-dbinstance--examples--Creating_a_DB_instance_with_self-managed_Active_Directory_domain--yaml"></a>
 
-```
+```yaml
 Resources:
   RDSDBInstance:
     Type: 'AWS::RDS::DBInstance'

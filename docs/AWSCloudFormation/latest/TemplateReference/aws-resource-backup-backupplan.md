@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-backup-backupplan-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Backup::BackupPlan",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-backup-backupplan-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Backup::BackupPlan
 Properties:
   [BackupPlan](#cfn-backup-backupplan-backupplan): {{

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emr-cluster-placementgroupconfig-syntax.json"></a>
 
-```
+```json
 {
   "[InstanceRole](#cfn-emr-cluster-placementgroupconfig-instancerole)" : {{String}},
   "[PlacementStrategy](#cfn-emr-cluster-placementgroupconfig-placementstrategy)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emr-cluster-placementgroupconfig-syntax.yaml"></a>
 
-```
+```yaml
   [InstanceRole](#cfn-emr-cluster-placementgroupconfig-instancerole): {{String}}
   [PlacementStrategy](#cfn-emr-cluster-placementgroupconfig-placementstrategy): {{String}}
 ```

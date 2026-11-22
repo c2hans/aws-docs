@@ -21,7 +21,7 @@ You can set the task priority for a workflow when you register it or start it. T
 
 To register a workflow type with a default task priority, set the *defaultTaskPriority* option in [WorkflowRegistrationOptions](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/simpleworkflow/flow/annotations/WorkflowRegistrationOptions.html) when declaring it:
 
-```
+```java
 @Workflow
 @WorkflowRegistrationOptions(
     defaultTaskPriority = 10,
@@ -35,7 +35,7 @@ public interface PriorityWorkflow
 
 You can also set the *taskPriority* for a workflow when you start it, overriding the registered (default) task priority.
 
-```
+```java
 StartWorkflowOptions priorityWorkflowOptions
     = new StartWorkflowOptions().withTaskPriority(10);
 
@@ -57,7 +57,7 @@ You can set the task priority for an activity either when registering it or when
 
 To register an activity type with a default task priority, set the *defaultTaskPriority* option in [ActivityRegistrationOptions](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/simpleworkflow/flow/annotations/ActivityRegistrationOptions.html) when declaring it:
 
-```
+```java
 @Activities(version = "1.0")
 @ActivityRegistrationOptions(
     defaultTaskPriority = 10,
@@ -69,7 +69,7 @@ public interface ImportantActivities {
 
 You can also set the *taskPriority* for an activity when you schedule it, overriding the registered (default) task priority.
 
-```
+```java
 ActivitySchedulingOptions activityOptions = new ActivitySchedulingOptions.withTaskPriority(10);
 
 ImportantActivitiesClient activityClient = new ImportantActivitiesClientImpl();

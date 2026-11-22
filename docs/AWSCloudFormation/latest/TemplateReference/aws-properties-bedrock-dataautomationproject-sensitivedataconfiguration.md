@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-dataautomationproject-sensitivedataconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DetectionMode](#cfn-bedrock-dataautomationproject-sensitivedataconfiguration-detectionmode)" : {{String}},
   "[DetectionScope](#cfn-bedrock-dataautomationproject-sensitivedataconfiguration-detectionscope)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-dataautomationproject-sensitivedataconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DetectionMode](#cfn-bedrock-dataautomationproject-sensitivedataconfiguration-detectionmode): {{String}}
   [DetectionScope](#cfn-bedrock-dataautomationproject-sensitivedataconfiguration-detectionscope): {{
     - String}}

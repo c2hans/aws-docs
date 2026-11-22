@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-identitystore-user-addressesitems-syntax.json"></a>
 
-```
+```json
 {
   "[Country](#cfn-identitystore-user-addressesitems-country)" : {{String}},
   "[Formatted](#cfn-identitystore-user-addressesitems-formatted)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-identitystore-user-addressesitems-syntax.yaml"></a>
 
-```
+```yaml
   [Country](#cfn-identitystore-user-addressesitems-country): {{String}}
   [Formatted](#cfn-identitystore-user-addressesitems-formatted): {{String}}
   [Locality](#cfn-identitystore-user-addressesitems-locality): {{String}}

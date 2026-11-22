@@ -108,6 +108,7 @@ The following data types are supported:
 +  [PerformanceInsightsMetricDimensionGroup](API_PerformanceInsightsMetricDimensionGroup.md)
 +  [PerformanceInsightsMetricQuery](API_PerformanceInsightsMetricQuery.md)
 +  [PerformanceIssueDetails](API_PerformanceIssueDetails.md)
++  [PrimaryEndpoint](API_PrimaryEndpoint.md)
 +  [ProcessorFeature](API_ProcessorFeature.md)
 +  [Range](API_Range.md)
 +  [RdsCustomClusterConfiguration](API_RdsCustomClusterConfiguration.md)

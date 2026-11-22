@@ -111,7 +111,7 @@ You may also include `aws:backup:request-id`.
 
 One Zone restores can be performed by including parameters:
 
-```
+```JSON
 "singleAzFilesystem": "true"
 "availabilityZoneName": "{{ap-northeast-3}}"
 ```

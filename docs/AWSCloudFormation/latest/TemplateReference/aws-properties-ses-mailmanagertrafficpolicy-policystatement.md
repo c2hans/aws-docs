@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-mailmanagertrafficpolicy-policystatement-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-ses-mailmanagertrafficpolicy-policystatement-action)" : {{String}},
   "[Conditions](#cfn-ses-mailmanagertrafficpolicy-policystatement-conditions)" : {{[ PolicyCondition, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-mailmanagertrafficpolicy-policystatement-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-ses-mailmanagertrafficpolicy-policystatement-action): {{String}}
   [Conditions](#cfn-ses-mailmanagertrafficpolicy-policystatement-conditions): {{
     - PolicyCondition}}

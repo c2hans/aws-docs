@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityhub-hubv2-networkscanning-syntax.json"></a>
 
-```
+```json
 {
   "[Status](#cfn-securityhub-hubv2-networkscanning-status)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityhub-hubv2-networkscanning-syntax.yaml"></a>
 
-```
+```yaml
   [Status](#cfn-securityhub-hubv2-networkscanning-status): {{String}}
 ```
 

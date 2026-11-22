@@ -51,7 +51,7 @@ aws rds describe-db-instances ^
 
 This command produces output similar to the following example. The `Address` line in the output contains the DNS name.
 
-```
+```json
 [
     {
         "DBInstanceIdentifier": "database-1",

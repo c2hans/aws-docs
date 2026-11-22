@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-pipetargetbatchjobparameters-syntax.json"></a>
 
-```
+```json
 {
   "[ArrayProperties](#cfn-pipes-pipe-pipetargetbatchjobparameters-arrayproperties)" : {{BatchArrayProperties}},
   "[ContainerOverrides](#cfn-pipes-pipe-pipetargetbatchjobparameters-containeroverrides)" : {{BatchContainerOverrides}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-pipetargetbatchjobparameters-syntax.yaml"></a>
 
-```
+```yaml
   [ArrayProperties](#cfn-pipes-pipe-pipetargetbatchjobparameters-arrayproperties): {{
     BatchArrayProperties}}
   [ContainerOverrides](#cfn-pipes-pipe-pipetargetbatchjobparameters-containeroverrides): {{

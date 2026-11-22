@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcs-computenodegroup-scalingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MaxInstanceCount](#cfn-pcs-computenodegroup-scalingconfiguration-maxinstancecount)" : {{Integer}},
   "[MinInstanceCount](#cfn-pcs-computenodegroup-scalingconfiguration-mininstancecount)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcs-computenodegroup-scalingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MaxInstanceCount](#cfn-pcs-computenodegroup-scalingconfiguration-maxinstancecount): {{Integer}}
   [MinInstanceCount](#cfn-pcs-computenodegroup-scalingconfiguration-mininstancecount): {{Integer}}
 ```

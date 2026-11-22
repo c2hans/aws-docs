@@ -92,7 +92,7 @@ Key policies control access to your customer managed key. Every customer managed
 
 The following are policy statement examples you can add for Amazon Q Business
 
-```
+```json
  "Statement": [{
          "Sid": "Allow access to principals authorized to use Amazon Q",
          "Effect": "Allow",
@@ -166,7 +166,7 @@ When you use an AWS KMS customer managed key to encrypt your application environ
 
 The following example event records the `CreateGrant` operation:
 
-```
+```json
 {
         "eventVersion": "1.08",
         "userIdentity": {
@@ -240,7 +240,7 @@ When you use an AWS KMS customer managed key for your application environment, A
 
 The following example event records the `GenerateDataKey` operation:
 
-```
+```json
 {
         "eventVersion": "1.08",
         "userIdentity": {
@@ -283,7 +283,7 @@ When you access an encrypted application environment, Amazon Q Business calls th
 
 The following example event records the `Decrypt` operation.
 
-```
+```json
 {
         "eventVersion": "1.08",
         "userIdentity": {
@@ -326,7 +326,7 @@ Amazon Q Business uses the `DescribeKey` operation to verify if the AWS KMS cust
 
 The following example event records `DescribeKey` operation:
 
-```
+```json
     {
         "eventVersion": "1.08",
         "userIdentity": {

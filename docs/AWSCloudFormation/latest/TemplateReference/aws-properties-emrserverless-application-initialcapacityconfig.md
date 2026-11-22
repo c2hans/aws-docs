@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrserverless-application-initialcapacityconfig-syntax.json"></a>
 
-```
+```json
 {
   "[WorkerConfiguration](#cfn-emrserverless-application-initialcapacityconfig-workerconfiguration)" : {{WorkerConfiguration}},
   "[WorkerCount](#cfn-emrserverless-application-initialcapacityconfig-workercount)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrserverless-application-initialcapacityconfig-syntax.yaml"></a>
 
-```
+```yaml
   [WorkerConfiguration](#cfn-emrserverless-application-initialcapacityconfig-workerconfiguration): {{
     WorkerConfiguration}}
   [WorkerCount](#cfn-emrserverless-application-initialcapacityconfig-workercount): {{Integer}}

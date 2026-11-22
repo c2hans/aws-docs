@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lightsail-instance-networking-syntax.json"></a>
 
-```
+```json
 {
   "[MonthlyTransfer](#cfn-lightsail-instance-networking-monthlytransfer)" : {{MonthlyTransfer}},
   "[Ports](#cfn-lightsail-instance-networking-ports)" : {{[ Port, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lightsail-instance-networking-syntax.yaml"></a>
 
-```
+```yaml
   [MonthlyTransfer](#cfn-lightsail-instance-networking-monthlytransfer): {{
     MonthlyTransfer}}
   [Ports](#cfn-lightsail-instance-networking-ports): {{

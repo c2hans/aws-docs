@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcaconnectorad-template-templatev3-syntax.json"></a>
 
-```
+```json
 {
   "[CertificateValidity](#cfn-pcaconnectorad-template-templatev3-certificatevalidity)" : {{CertificateValidity}},
   "[EnrollmentFlags](#cfn-pcaconnectorad-template-templatev3-enrollmentflags)" : {{EnrollmentFlagsV3}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcaconnectorad-template-templatev3-syntax.yaml"></a>
 
-```
+```yaml
   [CertificateValidity](#cfn-pcaconnectorad-template-templatev3-certificatevalidity): {{
     CertificateValidity}}
   [EnrollmentFlags](#cfn-pcaconnectorad-template-templatev3-enrollmentflags): {{

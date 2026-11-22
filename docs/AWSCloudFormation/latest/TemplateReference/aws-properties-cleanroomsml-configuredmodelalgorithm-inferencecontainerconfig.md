@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanroomsml-configuredmodelalgorithm-inferencecontainerconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ImageUri](#cfn-cleanroomsml-configuredmodelalgorithm-inferencecontainerconfig-imageuri)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanroomsml-configuredmodelalgorithm-inferencecontainerconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ImageUri](#cfn-cleanroomsml-configuredmodelalgorithm-inferencecontainerconfig-imageuri): {{String}}
 ```
 

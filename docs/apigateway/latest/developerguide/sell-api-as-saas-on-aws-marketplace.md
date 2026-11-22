@@ -37,7 +37,7 @@ Create an IAM role named `ApiGatewayMarketplaceMeteringRole` with the following 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -63,7 +63,7 @@ Create an IAM role named `ApiGatewayMarketplaceMeteringRole` with the following 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

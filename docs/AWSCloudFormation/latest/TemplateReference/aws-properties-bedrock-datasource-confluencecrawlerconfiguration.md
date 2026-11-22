@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-datasource-confluencecrawlerconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[FilterConfiguration](#cfn-bedrock-datasource-confluencecrawlerconfiguration-filterconfiguration)" : {{CrawlFilterConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-datasource-confluencecrawlerconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [FilterConfiguration](#cfn-bedrock-datasource-confluencecrawlerconfiguration-filterconfiguration): {{
     CrawlFilterConfiguration}}
 ```

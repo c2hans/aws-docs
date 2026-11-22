@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cassandra-table-cdcspecification-syntax.json"></a>
 
-```
+```json
 {
   "[Status](#cfn-cassandra-table-cdcspecification-status)" : {{String}},
   "[Tags](#cfn-cassandra-table-cdcspecification-tags)" : {{[ Tag, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cassandra-table-cdcspecification-syntax.yaml"></a>
 
-```
+```yaml
   [Status](#cfn-cassandra-table-cdcspecification-status): {{String}}
   [Tags](#cfn-cassandra-table-cdcspecification-tags): {{
     - Tag}}

@@ -20,7 +20,7 @@ To connect your data source connector to Amazon Q, you must give Amazon Q an IAM
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -104,7 +104,7 @@ To connect your data source connector to Amazon Q, you must give Amazon Q an IAM
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

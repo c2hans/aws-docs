@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-waf-bytematchset-bytematchtuple-syntax.json"></a>
 
-```
+```json
 {
   "[FieldToMatch](#cfn-waf-bytematchset-bytematchtuple-fieldtomatch)" : {{FieldToMatch}},
   "[PositionalConstraint](#cfn-waf-bytematchset-bytematchtuple-positionalconstraint)" : {{String}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-waf-bytematchset-bytematchtuple-syntax.yaml"></a>
 
-```
+```yaml
   [FieldToMatch](#cfn-waf-bytematchset-bytematchtuple-fieldtomatch): {{
     FieldToMatch}}
   [PositionalConstraint](#cfn-waf-bytematchset-bytematchtuple-positionalconstraint): {{String}}

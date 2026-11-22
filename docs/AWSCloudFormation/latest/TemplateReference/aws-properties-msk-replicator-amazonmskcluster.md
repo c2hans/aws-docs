@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-replicator-amazonmskcluster-syntax.json"></a>
 
-```
+```json
 {
   "[MskClusterArn](#cfn-msk-replicator-amazonmskcluster-mskclusterarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-replicator-amazonmskcluster-syntax.yaml"></a>
 
-```
+```yaml
   [MskClusterArn](#cfn-msk-replicator-amazonmskcluster-mskclusterarn): {{String}}
 ```
 

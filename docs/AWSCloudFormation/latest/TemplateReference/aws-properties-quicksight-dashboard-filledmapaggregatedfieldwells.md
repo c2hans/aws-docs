@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-filledmapaggregatedfieldwells-syntax.json"></a>
 
-```
+```json
 {
   "[Geospatial](#cfn-quicksight-dashboard-filledmapaggregatedfieldwells-geospatial)" : {{[ DimensionField, ... ]}},
   "[Values](#cfn-quicksight-dashboard-filledmapaggregatedfieldwells-values)" : {{[ MeasureField, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-filledmapaggregatedfieldwells-syntax.yaml"></a>
 
-```
+```yaml
   [Geospatial](#cfn-quicksight-dashboard-filledmapaggregatedfieldwells-geospatial): {{
     - DimensionField}}
   [Values](#cfn-quicksight-dashboard-filledmapaggregatedfieldwells-values): {{

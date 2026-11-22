@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3tables-table-icebergmetadata-syntax.json"></a>
 
-```
+```json
 {
   "[IcebergPartitionSpec](#cfn-s3tables-table-icebergmetadata-icebergpartitionspec)" : {{IcebergPartitionSpec}},
   "[IcebergSchema](#cfn-s3tables-table-icebergmetadata-icebergschema)" : {{IcebergSchema}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3tables-table-icebergmetadata-syntax.yaml"></a>
 
-```
+```yaml
   [IcebergPartitionSpec](#cfn-s3tables-table-icebergmetadata-icebergpartitionspec): {{
     IcebergPartitionSpec}}
   [IcebergSchema](#cfn-s3tables-table-icebergmetadata-icebergschema): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-limitsprofile-profilelimitvalue-syntax.json"></a>
 
-```
+```json
 {
   "[MaxValue](#cfn-quicksight-limitsprofile-profilelimitvalue-maxvalue)" : {{Number}},
   "[Unit](#cfn-quicksight-limitsprofile-profilelimitvalue-unit)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-limitsprofile-profilelimitvalue-syntax.yaml"></a>
 
-```
+```yaml
   [MaxValue](#cfn-quicksight-limitsprofile-profilelimitvalue-maxvalue): {{Number}}
   [Unit](#cfn-quicksight-limitsprofile-profilelimitvalue-unit): {{String}}
 ```

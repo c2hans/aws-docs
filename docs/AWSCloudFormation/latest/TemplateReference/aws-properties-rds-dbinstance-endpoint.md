@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rds-dbinstance-endpoint-syntax.json"></a>
 
-```
+```json
 {
   "[Address](#cfn-rds-dbinstance-endpoint-address)" : {{String}},
   "[HostedZoneId](#cfn-rds-dbinstance-endpoint-hostedzoneid)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rds-dbinstance-endpoint-syntax.yaml"></a>
 
-```
+```yaml
   [Address](#cfn-rds-dbinstance-endpoint-address): {{String}}
   [HostedZoneId](#cfn-rds-dbinstance-endpoint-hostedzoneid): {{String}}
   [Port](#cfn-rds-dbinstance-endpoint-port): {{String}}

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/stop-query-execution.ht
 
 The `StopQueryExecutionExample` runs an example query, immediately stops the query, and checks the status of the query to ensure that it was canceled.
 
-```
+```java
 package aws.example.athena;
 
 import software.amazon.awssdk.regions.Region;

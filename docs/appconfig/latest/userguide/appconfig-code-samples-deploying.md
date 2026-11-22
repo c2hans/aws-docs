@@ -15,7 +15,7 @@ Each of the following samples includes comments about the actions performed by t
 ------
 #### [ Java ]
 
-```
+```java
 private void createDeployment() throws InterruptedException {
         AppConfigClient appconfig = AppConfigClient.create();
 
@@ -78,7 +78,7 @@ private void createDeployment() throws InterruptedException {
 ------
 #### [ Python ]
 
-```
+```python
 import boto3
 
 appconfig = boto3.client('appconfig')
@@ -117,7 +117,7 @@ deployment = appconfig.start_deployment(
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 import {
   AppConfigClient,
   CreateApplicationCommand,

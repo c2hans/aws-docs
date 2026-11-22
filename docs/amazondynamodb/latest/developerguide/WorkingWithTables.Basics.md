@@ -42,7 +42,7 @@ aws dynamodb create-table \
 
 The `CreateTable` operation returns metadata for the table, as shown following.
 
-```
+```json
 {
     "TableDescription": {
         "TableArn": "arn:aws:dynamodb:us-east-1:123456789012:table/Music",
@@ -107,7 +107,7 @@ aws dynamodb create-table \
 
 The `CreateTable` operation returns metadata for the table, as shown following.
 
-```
+```json
 {
     "TableDescription": {
         "TableArn": "arn:aws:dynamodb:us-east-1:123456789012:table/Music",
@@ -169,7 +169,7 @@ aws dynamodb create-table \
 
 The `CreateTable` operation returns metadata for the table, as shown following.
 
-```
+```json
 {
     "TableDescription": {
         "TableArn": "arn:aws:dynamodb:us-east-1:123456789012:table/Music",

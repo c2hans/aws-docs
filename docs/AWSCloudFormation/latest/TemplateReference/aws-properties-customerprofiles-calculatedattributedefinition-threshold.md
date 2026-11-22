@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-calculatedattributedefinition-threshold-syntax.json"></a>
 
-```
+```json
 {
   "[Operator](#cfn-customerprofiles-calculatedattributedefinition-threshold-operator)" : {{String}},
   "[Value](#cfn-customerprofiles-calculatedattributedefinition-threshold-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-calculatedattributedefinition-threshold-syntax.yaml"></a>
 
-```
+```yaml
   [Operator](#cfn-customerprofiles-calculatedattributedefinition-threshold-operator): {{String}}
   [Value](#cfn-customerprofiles-calculatedattributedefinition-threshold-value): {{String}}
 ```

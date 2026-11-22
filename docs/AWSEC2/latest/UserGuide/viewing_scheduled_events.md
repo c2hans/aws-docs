@@ -25,7 +25,7 @@ In addition to receiving notification of scheduled events in email, you can chec
 **To view scheduled events for your instances**
 Use the [describe-instance-status](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-status.html) command.
 
-```
+```bash
 aws ec2 describe-instance-status \
     --instance-ids {{i-1234567890abcdef0}} \
     --query "InstanceStatuses[].Events"
@@ -33,7 +33,7 @@ aws ec2 describe-instance-status \
 
 The following example output shows a reboot event.
 
-```
+```json
 [
     "Events": [
         {
@@ -51,7 +51,7 @@ The following example output shows a reboot event.
 
 The following example output shows an instance retirement event.
 
-```
+```json
 [
     "Events": [
         {
@@ -70,7 +70,7 @@ The following example output shows an instance retirement event.
 **To view scheduled events for your instances**
 Use the following [Get-EC2InstanceStatus](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceStatus.html) command.
 
-```
+```PowerShell
 (Get-EC2InstanceStatus -InstanceId {{i-1234567890abcdef0}}).Events
 ```
 
@@ -90,20 +90,20 @@ You can retrieve information about active maintenance events for your instances 
 
 **IMDSv2**
 
-```
+```bash
 [ec2-user ~]$ TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` \
 && curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/events/maintenance/scheduled
 ```
 
 **IMDSv1**
 
-```
+```bash
 [ec2-user ~]$ curl http://169.254.169.254/latest/meta-data/events/maintenance/scheduled
 ```
 
 The following is example output with information about a scheduled system reboot event, in JSON format.
 
-```
+```json
 [
   {
     "NotBefore" : "21 Jan 2019 09:00:43 GMT",
@@ -121,20 +121,20 @@ You can retrieve information about completed or canceled events for your instanc
 
 **IMDSv2**
 
-```
+```bash
 [ec2-user ~]$ TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` \
 && curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/events/maintenance/history
 ```
 
 **IMDSv1**
 
-```
+```bash
 [ec2-user ~]$ curl http://169.254.169.254/latest/meta-data/events/maintenance/history
 ```
 
 The following is example output with information about a system reboot event that was canceled, and a system reboot event that was completed, in JSON format.
 
-```
+```json
 [
   {
     "NotBefore" : "21 Jan 2019 09:00:43 GMT",

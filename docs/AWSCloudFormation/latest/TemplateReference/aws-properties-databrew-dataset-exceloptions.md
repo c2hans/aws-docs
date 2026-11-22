@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-databrew-dataset-exceloptions-syntax.json"></a>
 
-```
+```json
 {
   "[HeaderRow](#cfn-databrew-dataset-exceloptions-headerrow)" : {{Boolean}},
   "[SheetIndexes](#cfn-databrew-dataset-exceloptions-sheetindexes)" : {{[ Integer, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-databrew-dataset-exceloptions-syntax.yaml"></a>
 
-```
+```yaml
   [HeaderRow](#cfn-databrew-dataset-exceloptions-headerrow): {{Boolean}}
   [SheetIndexes](#cfn-databrew-dataset-exceloptions-sheetindexes): {{
     - Integer}}

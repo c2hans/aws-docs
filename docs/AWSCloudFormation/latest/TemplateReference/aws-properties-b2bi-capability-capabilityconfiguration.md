@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-b2bi-capability-capabilityconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Edi](#cfn-b2bi-capability-capabilityconfiguration-edi)" : {{EdiConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-b2bi-capability-capabilityconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Edi](#cfn-b2bi-capability-capabilityconfiguration-edi): {{
     EdiConfiguration}}
 ```

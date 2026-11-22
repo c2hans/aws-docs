@@ -20,7 +20,7 @@ Audit Manager replaces the {{placeholder text}} with your account and resource i
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

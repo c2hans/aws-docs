@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-deploymentlifecyclehook-syntax.json"></a>
 
-```
+```json
 {
   "[HookDetails](#cfn-ecs-service-deploymentlifecyclehook-hookdetails)" : {{Json}},
   "[HookTargetArn](#cfn-ecs-service-deploymentlifecyclehook-hooktargetarn)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-deploymentlifecyclehook-syntax.yaml"></a>
 
-```
+```yaml
   [HookDetails](#cfn-ecs-service-deploymentlifecyclehook-hookdetails): {{Json}}
   [HookTargetArn](#cfn-ecs-service-deploymentlifecyclehook-hooktargetarn): {{String}}
   [LifecycleStages](#cfn-ecs-service-deploymentlifecyclehook-lifecyclestages): {{

@@ -197,7 +197,7 @@ The following code example illustrates how applications can decrypt data at your
 ### Sample code
 <a name="field-level-encryption-decrypt-sample"></a>
 
-```
+```java
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.security.KeyFactory;

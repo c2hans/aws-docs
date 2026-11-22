@@ -34,7 +34,7 @@ The **AmazonAppStreamPCAAccess** trust relationship policy must include prod.euc
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

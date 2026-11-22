@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-automaticinputfailoversettings-syntax.json"></a>
 
-```
+```json
 {
   "[ErrorClearTimeMsec](#cfn-medialive-channel-automaticinputfailoversettings-errorcleartimemsec)" : {{Integer}},
   "[FailoverConditions](#cfn-medialive-channel-automaticinputfailoversettings-failoverconditions)" : {{[ FailoverCondition, ... ]}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-automaticinputfailoversettings-syntax.yaml"></a>
 
-```
+```yaml
   [ErrorClearTimeMsec](#cfn-medialive-channel-automaticinputfailoversettings-errorcleartimemsec): {{Integer}}
   [FailoverConditions](#cfn-medialive-channel-automaticinputfailoversettings-failoverconditions): {{
     - FailoverCondition}}

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/integrate
 
 To integrate your application with agent data from the Connect Customer agent workspace, instantiate the agent client as follows:
 
-```
+```typescript
 import { AgentClient } from "@amazon-connect/contact";
 
 const agentClient = new AgentClient({ provider });
@@ -24,7 +24,7 @@ Once the agent client is instantiated, you can use it to subscribe to events and
 
 The following code sample subscribes a callback to the availability state change event. Whenever the agent’s state is modified, the agent workspace will invoke your provided callback, passing in the event data payload for your function to operate on. In this example, it logs the event data to the console.
 
-```
+```typescript
 import { AgentAvailabilityStateChanged } from "@amazon-connect/contact";
 
 // A simple callback that logs the availability state change event data
@@ -42,7 +42,7 @@ agentClient.onAvailabilityStateChanged(handler);
 
 The following code sample submits a `getARN` request and then logs the returned data to the console.
 
-```
+```typescript
 const arn = await agentClient.getARN();
 
 console.log(`Got the arn value: ${arn}`);

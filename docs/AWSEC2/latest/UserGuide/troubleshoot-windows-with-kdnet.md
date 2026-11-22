@@ -40,7 +40,7 @@ The debug target instance must run one of these Windows versions (or later):
 The KDNET extensibility module for ENA is distributed as part of Windows and can only be updated through Windows monthly cumulative updates. We recommend keeping the latest Windows KB installed on the debug target to ensure you have the most recent version of it.
 To verify that the module is present on the debug target, run the following command in an elevated PowerShell session:
 
-```
+```powershell
 Test-Path C:\Windows\system32\kd_02_1d0f.dll
 ```
 If the command returns `True`, the module is available.
@@ -50,7 +50,7 @@ If the command returns `True`, the module is available.
 
 Install the Windows Debugging Tools on the debug host instance by running the following command in a PowerShell session:
 
-```
+```powershell
 winget install microsoft.windbg
 ```
 
@@ -58,7 +58,7 @@ For detailed installation instructions, see [Install the Windows Debugger](https
 
 After installation, verify that the debugger is working by running the following command in a PowerShell session:
 
-```
+```powershell
 windbgx
 ```
 
@@ -74,7 +74,7 @@ On the debug target, open an elevated PowerShell session and configure kernel de
 
 Run the following command to list the bus, device, and function number of the ENA adapter attached to the instance:
 
-```
+```powershell
 Get-NetAdapter -Physical |
     Where-Object -Property PnPDeviceID -Match -Value '^PCI\\VEN_1D0F&DEV_EC2[01]&' |
     Get-NetAdapterHardwareInfo |
@@ -87,7 +87,7 @@ Get-NetAdapter -Physical |
 
 If multiple ENA adapters are attached to the instance, use the following command to map each physical adapter to its private IP address. You can cross-reference these details in the AWS Management Console under **EC2 → Instances → [Instance ID] → Networking → Network interfaces**. This helps you correlate specific Network Interface IDs, private IPs, and security groups with the OS-level adapter for targeted debugging.
 
-```
+```powershell
 Get-NetAdapter -Physical |
     Where-Object PnPDeviceID -Match '^PCI\\VEN_1D0F&DEV_EC2[01]&' |
     ForEach-Object {
@@ -108,7 +108,7 @@ Note the `BusNumber`, `DeviceNumber`, and `FunctionNumber` values of the ENA ada
 
 Run the following commands to configure kernel debugging. Replace the placeholder values with your specific configuration:
 
-```
+```powershell
 bcdedit /debug on
 bcdedit /set loadoptions FORCEHVTONOTSHAREDEBUGDEVICE
 bcdedit /dbgsettings net hostip:{{host-private-ip}} port:{{port-number}} key:{{encryption-key}} busparams:{{b.d.f}}
@@ -117,7 +117,7 @@ bcdedit /dbgsettings net hostip:{{host-private-ip}} port:{{port-number}} key:{{e
 **Note**
 Check for existing `loadoptions` by running the following command. If a value is returned, copy that string and append `;FORCEHVTONOTSHAREDEBUGDEVICE` to it.
 
-```
+```powershell
 (bcdedit /enum) -match "loadoptions"
 ```
 
@@ -130,7 +130,7 @@ Where:
 **Tip**
 To debug the Windows boot process, also run the following command:
 
-```
+```powershell
 bcdedit /bootdebug on
 ```
 
@@ -142,7 +142,7 @@ To allow debugging traffic on the host, you can create a firewall rule for eithe
 **Option 1: Allow the WinDbg application**
 Run the following commands to authorize the WinDbg executable:
 
-```
+```powershell
 $WinDbgxPath = "$env:LocalAppData\Microsoft\WindowsApps\WinDbgX.exe"
 New-NetFirewallRule -DisplayName "Allow Inbound KDNET Connection" -Action Allow -Program $WinDbgxPath
 ```
@@ -150,7 +150,7 @@ New-NetFirewallRule -DisplayName "Allow Inbound KDNET Connection" -Action Allow 
 **Option 2: Allow a specific UDP port**
 Alternatively, you can allow inbound UDP traffic to the port configured for kernel debugging. Replace {{port-number}} with your chosen KDNET port:
 
-```
+```powershell
 $DebugPort = {{port-number}}
 New-NetFirewallRule -DisplayName "Allow Inbound KDNET Connection" -Direction Inbound -LocalPort $DebugPort -Protocol UDP -Action Allow
 ```
@@ -160,7 +160,7 @@ Firewall configurations may be restricted by Domain Group Policy (GPO) or requir
 
 Start WinDbg with the port and key that match the debug target configuration. You can specify additional kernel debugging options documented in the [Microsoft WinDbg command line reference](https://learn.microsoft.com/en-us/windows-hardware/drivers/debuggercmds/windbg-command-line-preview#kernel-options) to suit your use case.
 
-```
+```powershell
 windbgx -k net:port={{port-number}},key={{encryption-key}}
 ```
 
@@ -171,7 +171,7 @@ WinDbg opens and waits for the debug target to connect.
 
 On the debug target, restart the instance to initiate the debugging connection:
 
-```
+```powershell
 shutdown -r -t 0
 ```
 
@@ -183,7 +183,7 @@ After the debug target restarts, WinDbg on the debug host connects to the target
 **On the debug target**
 After you finish debugging, remove the kernel debugging configuration from the debug target to restore normal boot behavior. On the debug target, open an elevated PowerShell session and run the following commands:
 
-```
+```powershell
 bcdedit /debug off
 bcdedit /dbgsettings LOCAL
 bcdedit /deletevalue loadoptions
@@ -193,7 +193,7 @@ If you have existing `loadoptions` other than `FORCEHVTONOTSHAREDEBUGDEVICE`, yo
 
 If you enabled boot debugging, also run:
 
-```
+```powershell
 bcdedit /bootdebug off
 ```
 
@@ -202,7 +202,7 @@ Restart the instance for the changes to take effect.
 **On the debug host**
 Remove the firewall rule by running:
 
-```
+```powershell
 Remove-NetFirewallRule -DisplayName "Allow Inbound KDNET Connection"
 ```
 

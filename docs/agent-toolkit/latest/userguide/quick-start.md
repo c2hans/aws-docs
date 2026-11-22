@@ -33,7 +33,7 @@ To set up multiple agents with a single command, you can instead run the `aws co
 
 In Claude Code:
 
-```
+```bash
 /plugin install aws-core@claude-plugins-official
 /reload-plugins
 ```
@@ -42,7 +42,7 @@ In Claude Code:
 
 In your terminal:
 
-```
+```bash
 codex plugin marketplace add aws/agent-toolkit-for-aws
 ```
 
@@ -52,7 +52,7 @@ Then launch Codex and run `/plugins` to browse and install the **aws-core** plug
 
 In your terminal:
 
-```
+```bash
 devin plugins install aws/agent-toolkit-for-aws#plugins/aws-core
 ```
 
@@ -62,7 +62,7 @@ You must be signed in to Devin (`devin auth login`) to install plugins. In the D
 
 Add the following to your MCP configuration file (for example, `~/.kiro/settings/mcp.json`):
 
-```
+```json
 {
   "mcpServers": {
     "aws-mcp": {
@@ -81,7 +81,7 @@ Add the following to your MCP configuration file (for example, `~/.kiro/settings
 
 Then install skills:
 
-```
+```bash
 npx skills add aws/agent-toolkit-for-aws/skills
 ```
 
@@ -91,7 +91,7 @@ If your agent supports MCP, you can configure the AWS MCP Server directly. See [
 
 Then install skills:
 
-```
+```bash
 npx skills add aws/agent-toolkit-for-aws/skills
 ```
 
@@ -99,7 +99,7 @@ npx skills add aws/agent-toolkit-for-aws/skills
 
 If you have the AWS CLI installed (version `2.35.0` or later), you can run an interactive setup wizard that detects your installed AI coding agents, installs default AWS skills, and configures the AWS MCP Server connection in a single command:
 
-```
+```bash
 aws configure agent-toolkit
 ```
 

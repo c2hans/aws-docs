@@ -72,7 +72,7 @@ The following parameters are optional:
 
   You can look for the last full backup or snapshot using the following example SQL query:
 
-  ```
+  ```sql
   select top 1
   database_name
   , 	backup_start_date
@@ -304,20 +304,20 @@ exec msdb.dbo.rds_restore_database
 **Example of full database restore with RECOVERY**
 The following three examples perform the same task, full restore with RECOVERY.
 
-```
+```sql
 exec msdb.dbo.rds_restore_database
 @restore_db_name='mydatabase',
 @s3_arn_to_restore_from='arn:aws:s3:::mybucket/backup1.bak';
 ```
 
-```
+```sql
 exec msdb.dbo.rds_restore_database
 @restore_db_name='mydatabase',
 @s3_arn_to_restore_from='arn:aws:s3:::mybucket/backup1.bak',
 [@type='{{DIFFERENTIAL|FULL}}'];
 ```
 
-```
+```sql
 exec msdb.dbo.rds_restore_database
 @restore_db_name='mydatabase',
 @s3_arn_to_restore_from='arn:aws:s3:::mybucket/backup1.bak',
@@ -327,7 +327,7 @@ exec msdb.dbo.rds_restore_database
 
 **Example of full database restore with encryption**
 
-```
+```sql
 exec msdb.dbo.rds_restore_database
 @restore_db_name='mydatabase',
 @s3_arn_to_restore_from='arn:aws:s3:::mybucket/backup1.bak',
@@ -355,7 +355,7 @@ exec msdb.dbo.rds_restore_database
 
 **Example of full database restore with NORECOVERY**
 
-```
+```sql
 exec msdb.dbo.rds_restore_database
 @restore_db_name='mydatabase',
 @s3_arn_to_restore_from='arn:aws:s3:::mybucket/backup1.bak',
@@ -365,7 +365,7 @@ exec msdb.dbo.rds_restore_database
 
 **Example of differential restore with NORECOVERY**
 
-```
+```sql
 exec msdb.dbo.rds_restore_database
 @restore_db_name='mydatabase',
 @s3_arn_to_restore_from='arn:aws:s3:::mybucket/backup1.bak',
@@ -375,7 +375,7 @@ exec msdb.dbo.rds_restore_database
 
 **Example of differential restore with RECOVERY**
 
-```
+```sql
 exec msdb.dbo.rds_restore_database
 @restore_db_name='mydatabase',
 @s3_arn_to_restore_from='arn:aws:s3:::mybucket/backup1.bak',
@@ -385,7 +385,7 @@ exec msdb.dbo.rds_restore_database
 
 **Example of full database restore with RECOVERY using an access point**
 
-```
+```sql
 exec msdb.dbo.rds_restore_database
 @restore_db_name='mydatabase',
 @s3_arn_to_backup_to='arn:aws:s3:{{us-east-1}}:{{111122223333}}:{{accesspoint/my-access-point/object/backup1.bak}}',
@@ -394,7 +394,7 @@ exec msdb.dbo.rds_restore_database
 
 **Example of full database restore with KEEP\_CDC**
 
-```
+```sql
 exec msdb.dbo.rds_restore_database
 @restore_db_name='mydatabase',
 @s3_arn_to_restore_from='arn:aws:s3:::mybucket/backup1.bak',
@@ -451,7 +451,7 @@ You can't submit a log restore task on a database that already has a pending res
 
 **Example of log restore**
 
-```
+```sql
 exec msdb.dbo.rds_restore_log
 @restore_db_name='mydatabase',
 @s3_arn_to_restore_from='arn:aws:s3:::mybucket/mylog.trn';
@@ -459,7 +459,7 @@ exec msdb.dbo.rds_restore_log
 
 **Example of log restore with encryption**
 
-```
+```sql
 exec msdb.dbo.rds_restore_log
 @restore_db_name='mydatabase',
 @s3_arn_to_restore_from='arn:aws:s3:::mybucket/mylog.trn',
@@ -469,14 +469,14 @@ exec msdb.dbo.rds_restore_log
 **Example of log restore with NORECOVERY**
 The following two examples perform the same task, log restore with NORECOVERY.
 
-```
+```sql
 exec msdb.dbo.rds_restore_log
 @restore_db_name='mydatabase',
 @s3_arn_to_restore_from='arn:aws:s3:::mybucket/mylog.trn',
 @with_norecovery=1;
 ```
 
-```
+```sql
 exec msdb.dbo.rds_restore_log
 @restore_db_name='mydatabase',
 @s3_arn_to_restore_from='arn:aws:s3:::mybucket/mylog.trn';
@@ -493,7 +493,7 @@ exec msdb.dbo.rds_restore_log
 
 **Example of log restore with RECOVERY**
 
-```
+```sql
 exec msdb.dbo.rds_restore_log
 @restore_db_name='mydatabase',
 @s3_arn_to_restore_from='arn:aws:s3:::mybucket/mylog.trn',
@@ -502,7 +502,7 @@ exec msdb.dbo.rds_restore_log
 
 **Example of log restore with STOPAT clause**
 
-```
+```sql
 exec msdb.dbo.rds_restore_log
 @restore_db_name='mydatabase',
 @s3_arn_to_restore_from='arn:aws:s3:::mybucket/mylog.trn',
@@ -512,7 +512,7 @@ exec msdb.dbo.rds_restore_log
 
 **Example of log restore with KEEP\_CDC**
 
-```
+```sql
 exec msdb.dbo.rds_restore_log
 @restore_db_name='mydatabase',
 @s3_arn_to_restore_from='arn:aws:s3:::mybucket/backup1.bak',
@@ -567,7 +567,7 @@ You can't cancel a FINISH\_RESTORE task.
 ### Usage
 <a name="SQLServer.Procedural.Importing.Native.Cancel.Syntax"></a>
 
-```
+```sql
 exec msdb.dbo.rds_cancel_task @task_id={{ID_number}};
 ```
 
@@ -582,7 +582,7 @@ To track the status of your backup and restore tasks, call the `rds_task_status`
 ### Usage
 <a name="SQLServer.Procedural.Importing.Native.Tracking.Syntax"></a>
 
-```
+```sql
 exec msdb.dbo.rds_task_status
 	[@db_name='{{database_name}}'],
 	[@task_id={{ID_number}}];
@@ -597,13 +597,13 @@ The following parameters are optional:
 
 **Example of listing the status for a specific task**
 
-```
+```sql
 exec msdb.dbo.rds_task_status @task_id=5;
 ```
 
 **Example of listing the status for a specific database and task**
 
-```
+```sql
 exec msdb.dbo.rds_task_status
 @db_name='my_database',
 @task_id=5;
@@ -611,13 +611,13 @@ exec msdb.dbo.rds_task_status
 
 **Example of listing all tasks and their statuses on a specific database**
 
-```
+```sql
 exec msdb.dbo.rds_task_status @db_name='my_database';
 ```
 
 **Example of listing all tasks and their statuses on the current instance**
 
-```
+```sql
 exec msdb.dbo.rds_task_status;
 ```
 

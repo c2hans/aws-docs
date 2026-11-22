@@ -11,7 +11,7 @@ Hudi creates two tables in the metastore for MoR: a table for snapshot queries, 
 
 The following example creates a nonpartitioned MoR table in Athena for read optimized queries. Note that read optimized queries use the input format `HoodieParquetInputFormat`.
 
-```
+```sql
 CREATE EXTERNAL TABLE `nonpartition_mor`(
   `_hoodie_commit_time` string,
   `_hoodie_commit_seqno` string,
@@ -35,7 +35,7 @@ LOCATION
 
 The following example creates a nonpartitioned MoR table in Athena for snapshot queries. For snapshot queries, use the input format `HoodieParquetRealtimeInputFormat`.
 
-```
+```sql
 CREATE EXTERNAL TABLE `nonpartition_mor_rt`(
   `_hoodie_commit_time` string,
   `_hoodie_commit_seqno` string,
@@ -62,7 +62,7 @@ LOCATION
 
 The following example creates a partitioned MoR table in Athena for read optimized queries.
 
-```
+```sql
 CREATE EXTERNAL TABLE `partition_mor`(
   `_hoodie_commit_time` string,
   `_hoodie_commit_seqno` string,
@@ -87,7 +87,7 @@ LOCATION
 
 The following `ALTER TABLE ADD PARTITION` example adds two partitions to the example `partition_mor` table.
 
-```
+```sql
 ALTER TABLE partition_mor ADD
   PARTITION (event_type = 'one') LOCATION 's3://amzn-s3-demo-bucket/{{folder}}/partition_mor/one/'
   PARTITION (event_type = 'two') LOCATION 's3://amzn-s3-demo-bucket/{{folder}}/partition_mor/two/'
@@ -95,7 +95,7 @@ ALTER TABLE partition_mor ADD
 
 The following example creates a partitioned MoR table in Athena for snapshot queries.
 
-```
+```sql
 CREATE EXTERNAL TABLE `partition_mor_rt`(
   `_hoodie_commit_time` string,
   `_hoodie_commit_seqno` string,
@@ -120,7 +120,7 @@ LOCATION
 
 Similarly, the following `ALTER TABLE ADD PARTITION` example adds two partitions to the example `partition_mor_rt` table.
 
-```
+```sql
 ALTER TABLE partition_mor_rt ADD
   PARTITION (event_type = 'one') LOCATION 's3://amzn-s3-demo-bucket/{{folder}}/partition_mor/one/'
   PARTITION (event_type = 'two') LOCATION 's3://amzn-s3-demo-bucket/{{folder}}/partition_mor/two/'

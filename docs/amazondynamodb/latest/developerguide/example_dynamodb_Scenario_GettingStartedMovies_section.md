@@ -18,7 +18,7 @@ The following code examples show how to:
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/DynamoDB#code-examples).
 
-```
+```csharp
 /// <summary>
 /// This example application performs the following basic Amazon DynamoDB
 /// functions:
@@ -240,7 +240,7 @@ public class DynamoDbBasics
 ```
 Use the injected client for table operations.
 
-```
+```csharp
 using System.Text.Json;
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
@@ -267,7 +267,7 @@ public class DynamoDbWrapper
 ```
 Creates a table to contain movie data.
 
-```
+```csharp
     /// <summary>
     /// Creates a new Amazon DynamoDB table and then waits for the new
     /// table to become active.
@@ -354,7 +354,7 @@ Creates a table to contain movie data.
 ```
 Adds a single movie to the table.
 
-```
+```csharp
     /// <summary>
     /// Adds a new item to the table.
     /// </summary>
@@ -400,7 +400,7 @@ Adds a single movie to the table.
 ```
 Updates a single item in a table.
 
-```
+```csharp
     /// <summary>
     /// Updates an existing item in the movies table.
     /// </summary>
@@ -466,7 +466,7 @@ Updates a single item in a table.
 ```
 Retrieves a single item from the movie table.
 
-```
+```csharp
     /// <summary>
     /// Gets information about an existing movie from the table.
     /// </summary>
@@ -513,7 +513,7 @@ Retrieves a single item from the movie table.
 ```
 Writes a batch of items to the movie table.
 
-```
+```csharp
     /// <summary>
     /// Loads the contents of a JSON file into a list of movies to be
     /// added to the DynamoDB table.
@@ -601,7 +601,7 @@ Writes a batch of items to the movie table.
 ```
 Deletes a single item from the table.
 
-```
+```csharp
     /// <summary>
     /// Deletes a single item from a DynamoDB table.
     /// </summary>
@@ -647,7 +647,7 @@ Deletes a single item from the table.
 ```
 Queries the table for movies released in a particular year.
 
-```
+```csharp
     /// <summary>
     /// Queries the table for movies released in a particular year and
     /// then displays the information for the movies returned.
@@ -720,7 +720,7 @@ Queries the table for movies released in a particular year.
 ```
 Scans the table for movies released in a range of years.
 
-```
+```csharp
     /// <summary>
     /// Scans the table for movies released between the specified years.
     /// </summary>
@@ -785,7 +785,7 @@ Scans the table for movies released in a range of years.
 ```
 Deletes the movie table.
 
-```
+```csharp
     /// <summary>
     /// Deletes a DynamoDB table.
     /// </summary>
@@ -842,7 +842,7 @@ Deletes the movie table.
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/aws-cli/bash-linux/dynamodb#code-examples).
 The DynamoDB getting started scenario.
 
-```
+```bash
 ###############################################################################
 # function dynamodb_getting_started_movies
 #
@@ -1106,7 +1106,7 @@ function dynamodb_getting_started_movies() {
 ```
 The DynamoDB functions used in this scenario.
 
-```
+```bash
 ###############################################################################
 # function dynamodb_create_table
 #
@@ -1967,7 +1967,7 @@ function dynamodb_delete_table() {
 ```
 The utility functions used in this scenario.
 
-```
+```bash
 ###############################################################################
 # function iecho
 #
@@ -2043,7 +2043,7 @@ function aws_cli_error_log() {
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/dynamodb#code-examples).
 
-```
+```cpp
     {
         Aws::Client::ClientConfiguration clientConfig;
         //  1. Create a table with partition: year (N) and sort: title (S). (CreateTable)
@@ -2577,7 +2577,7 @@ bool AwsDoc::DynamoDB::waitTableActive(const Aws::String &tableName,
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/dynamodb#code-examples).
 Run an interactive scenario to create the table and perform actions on it.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -2777,7 +2777,7 @@ func RunMovieScenario(
 ```
 Define a Movie struct that is used in this example.
 
-```
+```go
 import (
 	"archive/zip"
 	"bytes"
@@ -2822,7 +2822,7 @@ func (movie Movie) String() string {
 ```
 Create a struct and methods that call DynamoDB actions.
 
-```
+```go
 import (
 	"context"
 	"errors"
@@ -3146,7 +3146,7 @@ func (basics TableBasics) DeleteTable(ctx context.Context) error {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/dynamodb#code-examples).
 Create a DynamoDB table.
 
-```
+```java
     // Create a table with a Sort key.
     public static void createTable(DynamoDbClient ddb, String tableName) {
         DynamoDbWaiter dbWaiter = ddb.waiter();
@@ -3205,7 +3205,7 @@ Create a DynamoDB table.
 ```
 Create a helper function to download and extract the sample JSON file.
 
-```
+```java
     // Load data into the table.
     public static void loadData(DynamoDbClient ddb, String tableName, String fileName) throws IOException {
         DynamoDbEnhancedClient enhancedClient = DynamoDbEnhancedClient.builder()
@@ -3241,7 +3241,7 @@ Create a helper function to download and extract the sample JSON file.
 ```
 Get an item from a table.
 
-```
+```java
     public static void getItem(DynamoDbClient ddb) {
 
         HashMap<String, AttributeValue> keyToGet = new HashMap<>();
@@ -3280,7 +3280,7 @@ Get an item from a table.
 ```
 Full example.
 
-```
+```java
 /**
  * Before running this Java V2 code example, set up your development
  * environment, including your credentials.
@@ -3625,7 +3625,7 @@ public class Scenario {
 **SDK for JavaScript (v3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/dynamodb#code-examples).
 
-```
+```javascript
 import { readFileSync } from "node:fs";
 import {
   BillingMode,
@@ -3907,7 +3907,7 @@ export const main = async () => {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/dynamodb#code-examples).
 Create a DynamoDB table.
 
-```
+```kotlin
 suspend fun createScenarioTable(
     tableNameVal: String,
     key: String,
@@ -3956,7 +3956,7 @@ suspend fun createScenarioTable(
 ```
 Create a helper function to download and extract the sample JSON file.
 
-```
+```kotlin
 // Load data into the table.
 suspend fun loadData(
     tableName: String,
@@ -4009,7 +4009,7 @@ suspend fun putMovie(
 ```
 Get an item from a table.
 
-```
+```kotlin
 suspend fun getMovie(
     tableNameVal: String,
     keyName: String,
@@ -4037,7 +4037,7 @@ suspend fun getMovie(
 ```
 Full example.
 
-```
+```kotlin
 suspend fun main() {
     val tableName = "Movies"
     val fileName = "../../../resources/sample_files/movies.json"
@@ -4248,7 +4248,7 @@ suspend fun scanMovies(tableNameVal: String) {
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/dynamodb#code-examples).
 Because this example uses supporting files, be sure to [read the guidance](https://github.com/awsdocs/aws-doc-sdk-examples/blob/main/php/README.md#prerequisites) in the PHP examples README.md file.
 
-```
+```php
 namespace DynamoDb\Basics;
 
 use Aws\DynamoDb\Marshaler;
@@ -4424,7 +4424,7 @@ class GettingStartedWithDynamoDB
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/dynamodb#code-examples).
 Create a class that encapsulates a DynamoDB table.
 
-```
+```python
 from decimal import Decimal
 from io import BytesIO
 import json
@@ -4749,7 +4749,7 @@ class Movies:
 ```
 Create a helper function to download and extract the sample JSON file.
 
-```
+```python
 def get_sample_movie_data(movie_file_name):
     """
     Gets sample movie data, either from a local file or by first downloading it from
@@ -4781,7 +4781,7 @@ def get_sample_movie_data(movie_file_name):
 ```
 Run an interactive scenario to create the table and perform actions on it.
 
-```
+```python
 def run_scenario(table_name, movie_file_name, dyn_resource):
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
@@ -4937,7 +4937,7 @@ if __name__ == "__main__":
 ```
 This scenario uses the following helper class to ask questions at a command prompt.
 
-```
+```python
 class Question:
     """
     A helper class to ask questions at a command prompt and validate and convert
@@ -5079,7 +5079,7 @@ class Question:
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/dynamodb#code-examples).
 Create a class that encapsulates a DynamoDB table.
 
-```
+```ruby
   # Creates an Amazon DynamoDB table that can be used to store movie data.
   # The table uses the release year of the movie as the partition key and the
   # title as the sort key.
@@ -5108,7 +5108,7 @@ Create a class that encapsulates a DynamoDB table.
 ```
 Create a helper function to download and extract the sample JSON file.
 
-```
+```ruby
   # Gets sample movie data, either from a local file or by first downloading it from
   # the Amazon DynamoDB Developer Guide.
   #
@@ -5139,7 +5139,7 @@ Create a helper function to download and extract the sample JSON file.
 ```
 Run an interactive scenario to create the table and perform actions on it.
 
-```
+```ruby
   table_name = "doc-example-table-movies-#{rand(10**4)}"
   scaffold = Scaffold.new(table_name)
   dynamodb_wrapper = DynamoDBBasics.new(table_name)
@@ -5262,7 +5262,7 @@ end
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/dyn#code-examples).
 
-```
+```sap-abap
     " Create an Amazon Dynamo DB table.
 
     TRY.
@@ -5470,7 +5470,7 @@ end
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/dynamodb#code-examples).
 A Swift class that handles DynamoDB calls to the SDK for Swift.
 
-```
+```swift
 import AWSDynamoDB
 import Foundation
 
@@ -5998,7 +5998,7 @@ public class MovieTable {
 ```
 The structures used by the MovieTable class to represent movies.
 
-```
+```swift
 import Foundation
 import AWSDynamoDB
 
@@ -6144,7 +6144,7 @@ public struct Movie: Codable {
 ```
 A program that uses the MovieTable class to access a DynamoDB database.
 
-```
+```swift
 import ArgumentParser
 import ClientRuntime
 import Foundation

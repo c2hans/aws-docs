@@ -10,7 +10,7 @@ You can enable binary log annotations globally by creating a custom parameter gr
 
 The following is an example of a row-based transaction in MariaDB. The use of row-based logging is triggered by setting the transaction isolation level to read-committed.
 
-```
+```sql
 CREATE DATABASE IF NOT EXISTS test;
 USE test;
 CREATE TABLE square(x INT PRIMARY KEY, y INT NOT NULL) ENGINE = InnoDB;
@@ -40,7 +40,7 @@ COMMIT/*!*/;
 
 The following statement enables session-level annotations for this same transaction, and disables them after committing the transaction:
 
-```
+```sql
 CREATE DATABASE IF NOT EXISTS test;
 USE test;
 CREATE TABLE square(x INT PRIMARY KEY, y INT NOT NULL) ENGINE = InnoDB;

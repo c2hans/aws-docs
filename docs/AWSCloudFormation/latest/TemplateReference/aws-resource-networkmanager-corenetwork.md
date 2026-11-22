@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-networkmanager-corenetwork-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::NetworkManager::CoreNetwork",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-networkmanager-corenetwork-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::NetworkManager::CoreNetwork
 Properties:
   [Description](#cfn-networkmanager-corenetwork-description): {{String}}

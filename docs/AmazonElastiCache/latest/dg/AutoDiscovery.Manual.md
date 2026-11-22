@@ -11,7 +11,7 @@ You can obtain a list of cache node hostnames and port numbers from the [AWS Man
 **Example**
 The following Java code snippet shows how to connect to all of the nodes in a four-node cluster:
 
-```
+```java
 ...
 
 ArrayList<String> cacheNodes = new ArrayList<String>(

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kafkaconnect-connector-kafkaclusterencryptionintransit-syntax.json"></a>
 
-```
+```json
 {
   "[EncryptionType](#cfn-kafkaconnect-connector-kafkaclusterencryptionintransit-encryptiontype)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kafkaconnect-connector-kafkaclusterencryptionintransit-syntax.yaml"></a>
 
-```
+```yaml
   [EncryptionType](#cfn-kafkaconnect-connector-kafkaclusterencryptionintransit-encryptiontype): {{String}}
 ```
 

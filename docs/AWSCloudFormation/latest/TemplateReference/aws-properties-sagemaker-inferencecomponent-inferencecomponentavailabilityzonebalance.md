@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentavailabilityzonebalance-syntax.json"></a>
 
-```
+```json
 {
   "[EnforcementMode](#cfn-sagemaker-inferencecomponent-inferencecomponentavailabilityzonebalance-enforcementmode)" : {{String}},
   "[MaxImbalance](#cfn-sagemaker-inferencecomponent-inferencecomponentavailabilityzonebalance-maximbalance)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentavailabilityzonebalance-syntax.yaml"></a>
 
-```
+```yaml
   [EnforcementMode](#cfn-sagemaker-inferencecomponent-inferencecomponentavailabilityzonebalance-enforcementmode): {{String}}
   [MaxImbalance](#cfn-sagemaker-inferencecomponent-inferencecomponentavailabilityzonebalance-maximbalance): {{Integer}}
 ```

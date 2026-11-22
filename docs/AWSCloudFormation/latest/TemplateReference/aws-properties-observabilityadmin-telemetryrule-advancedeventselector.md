@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-observabilityadmin-telemetryrule-advancedeventselector-syntax.json"></a>
 
-```
+```json
 {
   "[FieldSelectors](#cfn-observabilityadmin-telemetryrule-advancedeventselector-fieldselectors)" : {{[ AdvancedFieldSelector, ... ]}},
   "[Name](#cfn-observabilityadmin-telemetryrule-advancedeventselector-name)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-observabilityadmin-telemetryrule-advancedeventselector-syntax.yaml"></a>
 
-```
+```yaml
   [FieldSelectors](#cfn-observabilityadmin-telemetryrule-advancedeventselector-fieldselectors): {{
     - AdvancedFieldSelector}}
   [Name](#cfn-observabilityadmin-telemetryrule-advancedeventselector-name): {{String}}

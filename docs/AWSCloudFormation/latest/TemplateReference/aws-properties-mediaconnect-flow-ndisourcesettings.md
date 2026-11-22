@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-flow-ndisourcesettings-syntax.json"></a>
 
-```
+```json
 {
   "[AudioReferenceLevel](#cfn-mediaconnect-flow-ndisourcesettings-audioreferencelevel)" : {{Integer}},
   "[SourceName](#cfn-mediaconnect-flow-ndisourcesettings-sourcename)" : {{String}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-flow-ndisourcesettings-syntax.yaml"></a>
 
-```
+```yaml
   [AudioReferenceLevel](#cfn-mediaconnect-flow-ndisourcesettings-audioreferencelevel): {{Integer}}
   [SourceName](#cfn-mediaconnect-flow-ndisourcesettings-sourcename): {{String}}
 ```

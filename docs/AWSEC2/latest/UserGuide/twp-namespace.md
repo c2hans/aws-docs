@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/twp-namespace.ht
 
 To confirm whether your instance and volume supports torn write prevention, and to view the NVMe namespace vendor-specific data that contains torn write prevention information, use the following command.
 
-```
+```bash
 $ sudo nvme id-ns -v {{device_name}}
 ```
 
@@ -15,7 +15,7 @@ The command returns the vendor-specific information in hex with ASCII interpreta
 
 For example, the following command returns the NVMe namespace vendor-specific data that contains torn write prevention information for `/dev/nvme1n1`.
 
-```
+```bash
 $ sudo nvme id-ns -v /dev/nvme1n1
 ```
 

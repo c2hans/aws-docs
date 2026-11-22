@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-connect-approvedorigin-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Connect::ApprovedOrigin",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-connect-approvedorigin-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Connect::ApprovedOrigin
 Properties:
   [InstanceId](#cfn-connect-approvedorigin-instanceid): {{String}}
@@ -75,7 +75,7 @@ The following example specifies an Approved Origin for an Connect Customer insta
 #### YAML
 <a name="aws-resource-connect-approvedorigin--examples--Specify_an_Approved_Origin_for_an_Amazon_Connect_instance--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Specifies an Approved Origin for an Amazon Connect instance
 Resources:

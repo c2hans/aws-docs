@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-bedrock-enforcedguardrailconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Bedrock::EnforcedGuardrailConfiguration",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-bedrock-enforcedguardrailconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Bedrock::EnforcedGuardrailConfiguration
 Properties:
   [GuardrailIdentifier](#cfn-bedrock-enforcedguardrailconfiguration-guardrailidentifier): {{String}}

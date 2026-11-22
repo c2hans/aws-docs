@@ -41,7 +41,7 @@ Custom fonts — `font/ttf`, `font/otf`, `font/woff`, and `font/woff2`.
 
 ****
 
-       ```
+       ```json
        {
            "Version":"2012-10-17",
            "Statement": [{
@@ -67,7 +67,7 @@ Custom fonts — `font/ttf`, `font/otf`, `font/woff`, and `font/woff2`.
 
 ****
 
-     ```
+     ```json
      {
           "Version":"2012-10-17",
           "Statement": [

@@ -20,7 +20,7 @@ The following policy allows users to view reserved capacity purchases and offeri
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

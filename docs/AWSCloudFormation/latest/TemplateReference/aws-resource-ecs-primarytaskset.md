@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ecs-primarytaskset-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ECS::PrimaryTaskSet",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ecs-primarytaskset-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ECS::PrimaryTaskSet
 Properties:
   [Cluster](#cfn-ecs-primarytaskset-cluster): {{String}}

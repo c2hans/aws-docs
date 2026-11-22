@@ -53,7 +53,7 @@ To view your tables metrics through the AWS Command Line Interface, you can use 
 
    The following result shows a table receiving read traffic in the evaluated period:
 
-   ```
+   ```json
            {
                "Timestamp": "2022-08-25T19:40:00Z",
                "Sum": 36023355.0,
@@ -68,7 +68,7 @@ To view your tables metrics through the AWS Command Line Interface, you can use 
 
    The following result shows a table not receiving read traffic in the evaluated period:
 
-   ```
+   ```json
            {
                "Timestamp": "2022-08-01T19:50:00Z",
                "Sum": 0.0,
@@ -96,7 +96,7 @@ To view your tables metrics through the AWS Command Line Interface, you can use 
 
    The following result shows a table receiving write traffic in the evaluated period:
 
-   ```
+   ```json
            {
                "Timestamp": "2022-08-19T20:15:00Z",
                "Sum": 41014457.0,
@@ -111,7 +111,7 @@ To view your tables metrics through the AWS Command Line Interface, you can use 
 
    The following result shows a table not receiving write traffic in the evaluated period:
 
-   ```
+   ```json
            {
                "Timestamp": "2022-07-31T20:15:00Z",
                "Sum": 0.0,
@@ -205,7 +205,7 @@ In the returned data, any Sum above 0 indicates that the table you are evaluatin
 
 The following result shows a GSI receiving read traffic in the evaluated period:
 
-```
+```json
         {
           "Timestamp": "2022-08-17T21:20:00Z",
           "Sum": 36319167.0,
@@ -220,7 +220,7 @@ The following result shows a GSI receiving read traffic in the evaluated period:
 
 The following result shows a GSI receiving minimal read traffic in the evaluated period:
 
-```
+```json
         {
           "Timestamp": "2022-08-28T21:20:00Z",
           "Sum": 0.0,
@@ -235,7 +235,7 @@ The following result shows a GSI receiving minimal read traffic in the evaluated
 
 The following result shows a GSI receiving no read traffic in the evaluated period:
 
-```
+```json
         {
           "Timestamp": "2022-08-17T21:20:00Z",
           "Sum": 0.0,

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sagemaker-modelqualityjobdefinition-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SageMaker::ModelQualityJobDefinition",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sagemaker-modelqualityjobdefinition-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SageMaker::ModelQualityJobDefinition
 Properties:
   [EndpointName](#cfn-sagemaker-modelqualityjobdefinition-endpointname): {{String}}
@@ -177,7 +177,7 @@ The following example creates a Model Quality monitoring job defintion.
 #### JSON
 <a name="aws-resource-sagemaker-modelqualityjobdefinition--examples--SageMaker_ModelQualityJobDefinition_Example--json"></a>
 
-```
+```json
 {
    "AWSTemplateFormatVersion": "2010-09-09",
    "Description": "Basic SageMaker Hosting entities to create a model quality job definition",
@@ -389,7 +389,7 @@ The following example creates a Model Quality monitoring job defintion.
 #### YAML
 <a name="aws-resource-sagemaker-modelqualityjobdefinition--examples--SageMaker_ModelQualityJobDefinition_Example--yaml"></a>
 
-```
+```yaml
 ---
 
 AWSTemplateFormatVersion: '2010-09-09'

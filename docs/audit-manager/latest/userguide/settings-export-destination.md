@@ -38,7 +38,7 @@ Using a cross-account S3 bucket as your export destination isn't supported in th
 
 ****
 
-  ```
+  ```json
   {
       "Version":"2012-10-17",
       "Statement": [

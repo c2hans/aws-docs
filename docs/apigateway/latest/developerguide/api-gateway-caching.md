@@ -294,7 +294,7 @@ Cross-account cache invalidation is not supported.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

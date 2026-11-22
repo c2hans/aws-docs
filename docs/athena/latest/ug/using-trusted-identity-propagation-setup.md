@@ -39,7 +39,7 @@ Copy the Application Resource Name (ARN) for AWS IAM Identity provider. For more
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -81,7 +81,7 @@ Copy the Application Resource Name (ARN) for AWS IAM Identity provider. For more
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

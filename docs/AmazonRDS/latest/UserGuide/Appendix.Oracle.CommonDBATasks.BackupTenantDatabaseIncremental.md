@@ -36,7 +36,7 @@ This procedure also uses the following additional parameter.
 
 The following example performs an incremental backup of the current tenant database using the specified values for the parameters.
 
-```
+```sql
 BEGIN
     rdsadmin.rdsadmin_rman_util.backup_tenant_incremental(
         p_owner               => '{{SYS}}',

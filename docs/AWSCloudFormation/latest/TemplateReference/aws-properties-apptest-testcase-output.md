@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apptest-testcase-output-syntax.json"></a>
 
-```
+```json
 {
   "[File](#cfn-apptest-testcase-output-file)" : {{OutputFile}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apptest-testcase-output-syntax.yaml"></a>
 
-```
+```yaml
   [File](#cfn-apptest-testcase-output-file): {{
     OutputFile}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lex-botalias-conversationlogsettings-syntax.json"></a>
 
-```
+```json
 {
   "[AudioLogSettings](#cfn-lex-botalias-conversationlogsettings-audiologsettings)" : {{[ AudioLogSetting, ... ]}},
   "[TextLogSettings](#cfn-lex-botalias-conversationlogsettings-textlogsettings)" : {{[ TextLogSetting, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lex-botalias-conversationlogsettings-syntax.yaml"></a>
 
-```
+```yaml
   [AudioLogSettings](#cfn-lex-botalias-conversationlogsettings-audiologsettings): {{
     - AudioLogSetting}}
   [TextLogSettings](#cfn-lex-botalias-conversationlogsettings-textlogsettings): {{

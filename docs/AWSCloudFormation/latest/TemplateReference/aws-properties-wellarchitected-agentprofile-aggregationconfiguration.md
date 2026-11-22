@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wellarchitected-agentprofile-aggregationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AccessRoleArn](#cfn-wellarchitected-agentprofile-aggregationconfiguration-accessrolearn)" : {{String}},
   "[AccountId](#cfn-wellarchitected-agentprofile-aggregationconfiguration-accountid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wellarchitected-agentprofile-aggregationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AccessRoleArn](#cfn-wellarchitected-agentprofile-aggregationconfiguration-accessrolearn): {{String}}
   [AccountId](#cfn-wellarchitected-agentprofile-aggregationconfiguration-accountid): {{String}}
   [Regions](#cfn-wellarchitected-agentprofile-aggregationconfiguration-regions): {{

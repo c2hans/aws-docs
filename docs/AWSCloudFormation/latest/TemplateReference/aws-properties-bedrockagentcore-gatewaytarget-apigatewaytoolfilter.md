@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gatewaytarget-apigatewaytoolfilter-syntax.json"></a>
 
-```
+```json
 {
   "[FilterPath](#cfn-bedrockagentcore-gatewaytarget-apigatewaytoolfilter-filterpath)" : {{String}},
   "[Methods](#cfn-bedrockagentcore-gatewaytarget-apigatewaytoolfilter-methods)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gatewaytarget-apigatewaytoolfilter-syntax.yaml"></a>
 
-```
+```yaml
   [FilterPath](#cfn-bedrockagentcore-gatewaytarget-apigatewaytoolfilter-filterpath): {{String}}
   [Methods](#cfn-bedrockagentcore-gatewaytarget-apigatewaytoolfilter-methods): {{
     - String}}

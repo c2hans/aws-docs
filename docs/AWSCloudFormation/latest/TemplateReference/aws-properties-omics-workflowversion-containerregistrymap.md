@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-omics-workflowversion-containerregistrymap-syntax.json"></a>
 
-```
+```json
 {
   "[ImageMappings](#cfn-omics-workflowversion-containerregistrymap-imagemappings)" : {{[ ImageMapping, ... ]}},
   "[RegistryMappings](#cfn-omics-workflowversion-containerregistrymap-registrymappings)" : {{[ RegistryMapping, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-omics-workflowversion-containerregistrymap-syntax.yaml"></a>
 
-```
+```yaml
   [ImageMappings](#cfn-omics-workflowversion-containerregistrymap-imagemappings): {{
     - ImageMapping}}
   [RegistryMappings](#cfn-omics-workflowversion-containerregistrymap-registrymappings): {{

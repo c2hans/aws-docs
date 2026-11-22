@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-deploymentcircuitbreaker-syntax.json"></a>
 
-```
+```json
 {
   "[Enable](#cfn-ecs-service-deploymentcircuitbreaker-enable)" : {{Boolean}},
   "[ResetOnHealthyTask](#cfn-ecs-service-deploymentcircuitbreaker-resetonhealthytask)" : {{Boolean}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-deploymentcircuitbreaker-syntax.yaml"></a>
 
-```
+```yaml
   [Enable](#cfn-ecs-service-deploymentcircuitbreaker-enable): {{Boolean}}
   [ResetOnHealthyTask](#cfn-ecs-service-deploymentcircuitbreaker-resetonhealthytask): {{Boolean}}
   [Rollback](#cfn-ecs-service-deploymentcircuitbreaker-rollback): {{Boolean}}

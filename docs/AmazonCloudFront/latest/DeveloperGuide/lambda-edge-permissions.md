@@ -43,7 +43,7 @@ For more information about creating an IAM role manually, see [Creating roles an
 You can add this role under the **Trust Relationship** tab in the IAM console. Don't add this policy under the **Permissions** tab.
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [

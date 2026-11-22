@@ -69,7 +69,7 @@ Make sure that you resolve any security warnings, errors, or suggestions before 
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

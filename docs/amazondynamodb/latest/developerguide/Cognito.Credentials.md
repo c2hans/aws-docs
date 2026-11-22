@@ -31,7 +31,7 @@ The recommended way to obtain AWS credentials for your web and mobile applicatio
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

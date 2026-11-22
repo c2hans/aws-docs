@@ -44,7 +44,7 @@ You can associate rule group to a Profile by running a AWS CLI command like the 
 
 The following is an example output after you run the command:
 
-```
+```json
 {
     "ProfileResourceAssociation": {
         "CreationTime": 1710851216.613,

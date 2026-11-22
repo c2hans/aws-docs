@@ -9,7 +9,7 @@ Drops one or more specified partitions for the named table.
 ## Synopsis
 <a name="synopsis"></a>
 
-```
+```sql
 ALTER TABLE table_name DROP [IF EXISTS] PARTITION (partition_spec) [, PARTITION (partition_spec)]
 ```
 
@@ -25,12 +25,12 @@ Each `partition_spec` specifies a column name/value combination in the form `par
 ## Examples
 <a name="alter-table-drop-partition-examples"></a>
 
-```
+```sql
 ALTER TABLE orders
 DROP PARTITION (dt = '2014-05-14', country = 'IN');
 ```
 
-```
+```sql
 ALTER TABLE orders
 DROP PARTITION (dt = '2014-05-14', country = 'IN'), PARTITION (dt = '2014-05-15', country = 'IN');
 ```

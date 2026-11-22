@@ -10,18 +10,18 @@ You can optionally verify the EFA tarball (`.tar.gz` file) using an MD5 or SHA25
 Use the **md5sum** utility for the MD5 checksum, or the **sha256sum** utility for the SHA256 checksum, and specify the tarball filename. You must run the command from the directory in which you saved the tarball file.
 + MD5
 
-  ```
+  ```bash
   $  md5sum {{tarball_filename.tar.gz}}
   ```
 + SHA256
 
-  ```
+  ```bash
   $  sha256sum {{tarball_filename.tar.gz}}
   ```
 
 The commands should return a checksum value in the following format.
 
-```
+```bash
 {{checksum_value}} {{tarball_filename.tar.gz}}
 ```
 
@@ -29,13 +29,13 @@ Compare the checksum value returned by the command with the checksum value provi
 
 For example, the following command verifies the EFA 1.9.4 tarball using the SHA256 checksum.
 
-```
+```bash
 $  sha256sum aws-efa-installer-1.9.4.tar.gz
 ```
 
 Example output:
 
-```
+```bash
 1009b5182693490d908ef0ed2c1dd4f813cc310a5d2062ce9619c4c12b5a7f14 aws-efa-installer-1.9.4.tar.gz
 ```
 

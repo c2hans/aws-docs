@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisanalyticsv2-application-catalogconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[GlueDataCatalogConfiguration](#cfn-kinesisanalyticsv2-application-catalogconfiguration-gluedatacatalogconfiguration)" : {{GlueDataCatalogConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisanalyticsv2-application-catalogconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [GlueDataCatalogConfiguration](#cfn-kinesisanalyticsv2-application-catalogconfiguration-gluedatacatalogconfiguration): {{
     GlueDataCatalogConfiguration}}
 ```

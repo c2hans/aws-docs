@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-workspaces-directory-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::WorkSpaces::Directory",
   "Properties" : {
@@ -46,7 +46,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-workspaces-directory-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::WorkSpaces::Directory
 Properties:
   [ActiveDirectoryConfig](#cfn-workspaces-directory-activedirectoryconfig): {{

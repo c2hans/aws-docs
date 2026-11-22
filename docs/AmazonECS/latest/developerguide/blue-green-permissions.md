@@ -16,7 +16,7 @@ For the trust policy, you need to allow the service to assume this role:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

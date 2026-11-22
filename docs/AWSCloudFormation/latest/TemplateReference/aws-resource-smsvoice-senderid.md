@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-smsvoice-senderid-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SMSVOICE::SenderId",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-smsvoice-senderid-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SMSVOICE::SenderId
 Properties:
   [DeletionProtectionEnabled](#cfn-smsvoice-senderid-deletionprotectionenabled): {{Boolean}}

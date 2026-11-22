@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-connection-authorizationcodeproperties-syntax.json"></a>
 
-```
+```json
 {
   "[AuthorizationCode](#cfn-datazone-connection-authorizationcodeproperties-authorizationcode)" : {{String}},
   "[RedirectUri](#cfn-datazone-connection-authorizationcodeproperties-redirecturi)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-connection-authorizationcodeproperties-syntax.yaml"></a>
 
-```
+```yaml
   [AuthorizationCode](#cfn-datazone-connection-authorizationcodeproperties-authorizationcode): {{String}}
   [RedirectUri](#cfn-datazone-connection-authorizationcodeproperties-redirecturi): {{String}}
 ```

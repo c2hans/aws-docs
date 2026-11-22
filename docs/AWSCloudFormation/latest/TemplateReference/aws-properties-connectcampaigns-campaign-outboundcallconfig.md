@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connectcampaigns-campaign-outboundcallconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AnswerMachineDetectionConfig](#cfn-connectcampaigns-campaign-outboundcallconfig-answermachinedetectionconfig)" : {{AnswerMachineDetectionConfig}},
   "[ConnectContactFlowArn](#cfn-connectcampaigns-campaign-outboundcallconfig-connectcontactflowarn)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connectcampaigns-campaign-outboundcallconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AnswerMachineDetectionConfig](#cfn-connectcampaigns-campaign-outboundcallconfig-answermachinedetectionconfig): {{
     AnswerMachineDetectionConfig}}
   [ConnectContactFlowArn](#cfn-connectcampaigns-campaign-outboundcallconfig-connectcontactflowarn): {{String}}

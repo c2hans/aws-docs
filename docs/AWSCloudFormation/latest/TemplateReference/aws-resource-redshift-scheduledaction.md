@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-redshift-scheduledaction-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Redshift::ScheduledAction",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-redshift-scheduledaction-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Redshift::ScheduledAction
 Properties:
   [Enable](#cfn-redshift-scheduledaction-enable): {{Boolean}}

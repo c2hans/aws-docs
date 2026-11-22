@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-segmentdefinition-sortattribute-syntax.json"></a>
 
-```
+```json
 {
   "[DataType](#cfn-customerprofiles-segmentdefinition-sortattribute-datatype)" : {{String}},
   "[Name](#cfn-customerprofiles-segmentdefinition-sortattribute-name)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-segmentdefinition-sortattribute-syntax.yaml"></a>
 
-```
+```yaml
   [DataType](#cfn-customerprofiles-segmentdefinition-sortattribute-datatype): {{String}}
   [Name](#cfn-customerprofiles-segmentdefinition-sortattribute-name): {{String}}
   [Order](#cfn-customerprofiles-segmentdefinition-sortattribute-order): {{String}}

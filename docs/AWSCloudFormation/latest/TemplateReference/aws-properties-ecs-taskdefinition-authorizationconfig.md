@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskdefinition-authorizationconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AccessPointId](#cfn-ecs-taskdefinition-authorizationconfig-accesspointid)" : {{String}},
   "[IAM](#cfn-ecs-taskdefinition-authorizationconfig-iam)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskdefinition-authorizationconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AccessPointId](#cfn-ecs-taskdefinition-authorizationconfig-accesspointid): {{String}}
   [IAM](#cfn-ecs-taskdefinition-authorizationconfig-iam): {{String}}
 ```

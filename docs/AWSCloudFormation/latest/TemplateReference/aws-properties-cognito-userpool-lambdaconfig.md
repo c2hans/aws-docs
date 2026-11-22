@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-userpool-lambdaconfig-syntax.json"></a>
 
-```
+```json
 {
   "[CreateAuthChallenge](#cfn-cognito-userpool-lambdaconfig-createauthchallenge)" : {{String}},
   "[CustomEmailSender](#cfn-cognito-userpool-lambdaconfig-customemailsender)" : {{CustomEmailSender}},
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-userpool-lambdaconfig-syntax.yaml"></a>
 
-```
+```yaml
   [CreateAuthChallenge](#cfn-cognito-userpool-lambdaconfig-createauthchallenge): {{String}}
   [CustomEmailSender](#cfn-cognito-userpool-lambdaconfig-customemailsender): {{
     CustomEmailSender}}

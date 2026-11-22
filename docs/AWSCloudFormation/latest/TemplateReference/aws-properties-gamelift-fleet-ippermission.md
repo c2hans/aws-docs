@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-gamelift-fleet-ippermission-syntax.json"></a>
 
-```
+```json
 {
   "[FromPort](#cfn-gamelift-fleet-ippermission-fromport)" : {{Integer}},
   "[IpRange](#cfn-gamelift-fleet-ippermission-iprange)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-gamelift-fleet-ippermission-syntax.yaml"></a>
 
-```
+```yaml
   [FromPort](#cfn-gamelift-fleet-ippermission-fromport): {{Integer}}
   [IpRange](#cfn-gamelift-fleet-ippermission-iprange): {{String}}
   [Protocol](#cfn-gamelift-fleet-ippermission-protocol): {{String}}

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-launchtemplate-ebs-syntax.json"></a>
 
-```
+```json
 {
   "[DeleteOnTermination](#cfn-ec2-launchtemplate-ebs-deleteontermination)" : {{Boolean}},
   "[EbsCardIndex](#cfn-ec2-launchtemplate-ebs-ebscardindex)" : {{Integer}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-launchtemplate-ebs-syntax.yaml"></a>
 
-```
+```yaml
   [DeleteOnTermination](#cfn-ec2-launchtemplate-ebs-deleteontermination): {{Boolean}}
   [EbsCardIndex](#cfn-ec2-launchtemplate-ebs-ebscardindex): {{Integer}}
   [Encrypted](#cfn-ec2-launchtemplate-ebs-encrypted): {{Boolean}}

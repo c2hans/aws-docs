@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-bedrockagentcore-gatewaytarget-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::BedrockAgentCore::GatewayTarget",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-bedrockagentcore-gatewaytarget-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::BedrockAgentCore::GatewayTarget
 Properties:
   [CertificateConfigurations](#cfn-bedrockagentcore-gatewaytarget-certificateconfigurations): {{

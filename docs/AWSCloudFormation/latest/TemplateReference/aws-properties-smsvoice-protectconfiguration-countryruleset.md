@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-smsvoice-protectconfiguration-countryruleset-syntax.json"></a>
 
-```
+```json
 {
   "[MMS](#cfn-smsvoice-protectconfiguration-countryruleset-mms)" : {{[ CountryRule, ... ]}},
   "[SMS](#cfn-smsvoice-protectconfiguration-countryruleset-sms)" : {{[ CountryRule, ... ]}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-smsvoice-protectconfiguration-countryruleset-syntax.yaml"></a>
 
-```
+```yaml
   [MMS](#cfn-smsvoice-protectconfiguration-countryruleset-mms): {{
     - CountryRule}}
   [SMS](#cfn-smsvoice-protectconfiguration-countryruleset-sms): {{

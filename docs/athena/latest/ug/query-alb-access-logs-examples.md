@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/query-alb-access-logs-e
 
 The following query counts the number of HTTP GET requests received by the load balancer grouped by the client IP address:
 
-```
+```sql
 SELECT COUNT(request_verb) AS
  count,
  request_verb,
@@ -18,7 +18,7 @@ LIMIT 100;
 
 Another query shows the URLs visited by Safari browser users:
 
-```
+```sql
 SELECT request_url
 FROM alb_access_logs
 WHERE user_agent LIKE '%Safari%'
@@ -27,7 +27,7 @@ LIMIT 10;
 
 The following query shows records that have ELB status code values greater than or equal to 500.
 
-```
+```sql
 SELECT * FROM alb_access_logs
 WHERE elb_status_code >= 500
 ```
@@ -45,7 +45,7 @@ GROUP BY client_ip;
 
 The following query queries the table that uses partition projection for all ALB access logs from the specified day.
 
-```
+```sql
 SELECT *
 FROM alb_access_logs
 WHERE day = '2022/02/12'

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emr-cluster-instancegroupconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AutoScalingPolicy](#cfn-emr-cluster-instancegroupconfig-autoscalingpolicy)" : {{AutoScalingPolicy}},
   "[BidPrice](#cfn-emr-cluster-instancegroupconfig-bidprice)" : {{String}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emr-cluster-instancegroupconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AutoScalingPolicy](#cfn-emr-cluster-instancegroupconfig-autoscalingpolicy): {{
     AutoScalingPolicy}}
   [BidPrice](#cfn-emr-cluster-instancegroupconfig-bidprice): {{String}}

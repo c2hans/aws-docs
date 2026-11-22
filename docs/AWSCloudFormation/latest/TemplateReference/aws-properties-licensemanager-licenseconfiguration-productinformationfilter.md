@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-licensemanager-licenseconfiguration-productinformationfilter-syntax.json"></a>
 
-```
+```json
 {
   "[ProductInformationFilterComparator](#cfn-licensemanager-licenseconfiguration-productinformationfilter-productinformationfiltercomparator)" : {{String}},
   "[ProductInformationFilterName](#cfn-licensemanager-licenseconfiguration-productinformationfilter-productinformationfiltername)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-licensemanager-licenseconfiguration-productinformationfilter-syntax.yaml"></a>
 
-```
+```yaml
   [ProductInformationFilterComparator](#cfn-licensemanager-licenseconfiguration-productinformationfilter-productinformationfiltercomparator): {{String}}
   [ProductInformationFilterName](#cfn-licensemanager-licenseconfiguration-productinformationfilter-productinformationfiltername): {{String}}
   [ProductInformationFilterValue](#cfn-licensemanager-licenseconfiguration-productinformationfilter-productinformationfiltervalue): {{

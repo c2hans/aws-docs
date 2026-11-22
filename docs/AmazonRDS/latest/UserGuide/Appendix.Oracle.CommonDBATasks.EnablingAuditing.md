@@ -19,13 +19,13 @@ The `audit_all_sys_aud_table` procedure has the following parameters.
 
 The following query returns the current audit configuration for `SYS.AUD$` for a database.
 
-```
+```sql
 SELECT * FROM DBA_OBJ_AUDIT_OPTS WHERE OWNER='SYS' AND OBJECT_NAME='AUD$';
 ```
 
 The following commands enable audit of `ALL` on `SYS.AUD$` `BY ACCESS`.
 
-```
+```sql
 EXEC rdsadmin.rdsadmin_master_util.audit_all_sys_aud_table;
 
 EXEC rdsadmin.rdsadmin_master_util.audit_all_sys_aud_table(p_by_access => true);
@@ -33,7 +33,7 @@ EXEC rdsadmin.rdsadmin_master_util.audit_all_sys_aud_table(p_by_access => true);
 
 The following command enables audit of `ALL` on `SYS.AUD$` `BY SESSION`.
 
-```
+```sql
 EXEC rdsadmin.rdsadmin_master_util.audit_all_sys_aud_table(p_by_access => false);
 ```
 

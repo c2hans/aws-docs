@@ -76,7 +76,7 @@ Type: String
 
 The following request returns the access point of the specified Amazon S3 on Outposts.
 
-```
+```HTTP
            GET /v20180820/accesspoint/example-access-point/policy  HTTP/1.1
            Host: s3-outposts.<Region>.amazonaws.com
            Date: Wed, 28 Oct 2020 22:32:00 GMT

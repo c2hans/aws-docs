@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-coderepository-gitconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Branch](#cfn-sagemaker-coderepository-gitconfig-branch)" : {{String}},
   "[RepositoryUrl](#cfn-sagemaker-coderepository-gitconfig-repositoryurl)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-coderepository-gitconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Branch](#cfn-sagemaker-coderepository-gitconfig-branch): {{String}}
   [RepositoryUrl](#cfn-sagemaker-coderepository-gitconfig-repositoryurl): {{String}}
   [SecretArn](#cfn-sagemaker-coderepository-gitconfig-secretarn): {{String}}

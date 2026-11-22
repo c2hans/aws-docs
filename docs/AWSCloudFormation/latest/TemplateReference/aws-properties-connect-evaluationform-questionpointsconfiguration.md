@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-evaluationform-questionpointsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[IsBonus](#cfn-connect-evaluationform-questionpointsconfiguration-isbonus)" : {{Boolean}},
   "[MaxPointValue](#cfn-connect-evaluationform-questionpointsconfiguration-maxpointvalue)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-evaluationform-questionpointsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [IsBonus](#cfn-connect-evaluationform-questionpointsconfiguration-isbonus): {{Boolean}}
   [MaxPointValue](#cfn-connect-evaluationform-questionpointsconfiguration-maxpointvalue): {{Integer}}
   [MinPointValue](#cfn-connect-evaluationform-questionpointsconfiguration-minpointvalue): {{Integer}}

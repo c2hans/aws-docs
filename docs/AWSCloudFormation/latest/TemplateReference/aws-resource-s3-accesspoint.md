@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-s3-accesspoint-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::S3::AccessPoint",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-s3-accesspoint-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::S3::AccessPoint
 Properties:
   [Bucket](#cfn-s3-accesspoint-bucket): {{String}}
@@ -147,7 +147,7 @@ For more information, see [Configuring IAM policies for using access points](htt
 #### JSON
 <a name="aws-resource-s3-accesspoint--examples--Create_an_S3_Access_Point--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -261,7 +261,7 @@ For more information, see [Configuring IAM policies for using access points](htt
 #### YAML
 <a name="aws-resource-s3-accesspoint--examples--Create_an_S3_Access_Point--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   S3Bucket:
@@ -335,7 +335,7 @@ The following example creates an Amazon S3 access point restricted to a virtual 
 #### JSON
 <a name="aws-resource-s3-accesspoint--examples--Create_an_S3_Access_Point_restricted_to_a_VPC--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
@@ -432,7 +432,7 @@ The following example creates an Amazon S3 access point restricted to a virtual 
 #### YAML
 <a name="aws-resource-s3-accesspoint--examples--Create_an_S3_Access_Point_restricted_to_a_VPC--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   S3Bucket:

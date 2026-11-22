@@ -30,7 +30,7 @@ When set up Quick for the first time in your account, AWS creates a service role
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [
@@ -52,7 +52,7 @@ When set up Quick for the first time in your account, AWS creates a service role
 
 1. Run the following AWS CLI command to find the ARN of your Quick admin user.
 
-   ```
+   ```bash
    aws quicksight list-users --aws-account-id {{111122223333}} --namespace {{default}} --region {{region}}
    ```
 

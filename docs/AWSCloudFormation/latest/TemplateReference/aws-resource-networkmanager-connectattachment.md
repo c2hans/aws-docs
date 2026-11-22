@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-networkmanager-connectattachment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::NetworkManager::ConnectAttachment",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-networkmanager-connectattachment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::NetworkManager::ConnectAttachment
 Properties:
   [CoreNetworkId](#cfn-networkmanager-connectattachment-corenetworkid): {{String}}

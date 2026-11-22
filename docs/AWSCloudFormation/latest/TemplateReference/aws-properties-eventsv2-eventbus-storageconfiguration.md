@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eventsv2-eventbus-storageconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[RetentionPeriodInDays](#cfn-eventsv2-eventbus-storageconfiguration-retentionperiodindays)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eventsv2-eventbus-storageconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [RetentionPeriodInDays](#cfn-eventsv2-eventbus-storageconfiguration-retentionperiodindays): {{Integer}}
 ```
 

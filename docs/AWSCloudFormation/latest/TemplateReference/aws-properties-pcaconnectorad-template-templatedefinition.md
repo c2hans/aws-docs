@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcaconnectorad-template-templatedefinition-syntax.json"></a>
 
-```
+```json
 {
   "[TemplateV2](#cfn-pcaconnectorad-template-templatedefinition-templatev2)" : {{TemplateV2}},
   "[TemplateV3](#cfn-pcaconnectorad-template-templatedefinition-templatev3)" : {{TemplateV3}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcaconnectorad-template-templatedefinition-syntax.yaml"></a>
 
-```
+```yaml
   [TemplateV2](#cfn-pcaconnectorad-template-templatedefinition-templatev2): {{
     TemplateV2}}
   [TemplateV3](#cfn-pcaconnectorad-template-templatedefinition-templatev3): {{

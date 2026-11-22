@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-documentattributevalue-syntax.json"></a>
 
-```
+```json
 {
   "[DateValue](#cfn-kendra-datasource-documentattributevalue-datevalue)" : {{String}},
   "[LongValue](#cfn-kendra-datasource-documentattributevalue-longvalue)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-documentattributevalue-syntax.yaml"></a>
 
-```
+```yaml
   [DateValue](#cfn-kendra-datasource-documentattributevalue-datevalue): {{String}}
   [LongValue](#cfn-kendra-datasource-documentattributevalue-longvalue): {{Integer}}
   [StringListValue](#cfn-kendra-datasource-documentattributevalue-stringlistvalue): {{

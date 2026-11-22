@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-guardduty-detector-cfndatasourceconfigurations-syntax.json"></a>
 
-```
+```json
 {
   "[Kubernetes](#cfn-guardduty-detector-cfndatasourceconfigurations-kubernetes)" : {{CFNKubernetesConfiguration}},
   "[MalwareProtection](#cfn-guardduty-detector-cfndatasourceconfigurations-malwareprotection)" : {{CFNMalwareProtectionConfiguration}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-guardduty-detector-cfndatasourceconfigurations-syntax.yaml"></a>
 
-```
+```yaml
   [Kubernetes](#cfn-guardduty-detector-cfndatasourceconfigurations-kubernetes): {{
     CFNKubernetesConfiguration}}
   [MalwareProtection](#cfn-guardduty-detector-cfndatasourceconfigurations-malwareprotection): {{

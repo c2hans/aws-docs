@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dms-dataprovider-oraclesettings-syntax.json"></a>
 
-```
+```json
 {
   "[AsmServer](#cfn-dms-dataprovider-oraclesettings-asmserver)" : {{String}},
   "[CertificateArn](#cfn-dms-dataprovider-oraclesettings-certificatearn)" : {{String}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dms-dataprovider-oraclesettings-syntax.yaml"></a>
 
-```
+```yaml
   [AsmServer](#cfn-dms-dataprovider-oraclesettings-asmserver): {{String}}
   [CertificateArn](#cfn-dms-dataprovider-oraclesettings-certificatearn): {{String}}
   [DatabaseName](#cfn-dms-dataprovider-oraclesettings-databasename): {{String}}

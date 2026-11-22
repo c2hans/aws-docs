@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networksecuritymanager-policy-associatedtemplateandrule-syntax.json"></a>
 
-```
+```json
 {
   "[RuleArn](#cfn-networksecuritymanager-policy-associatedtemplateandrule-rulearn)" : {{String}},
   "[TemplateArn](#cfn-networksecuritymanager-policy-associatedtemplateandrule-templatearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networksecuritymanager-policy-associatedtemplateandrule-syntax.yaml"></a>
 
-```
+```yaml
   [RuleArn](#cfn-networksecuritymanager-policy-associatedtemplateandrule-rulearn): {{String}}
   [TemplateArn](#cfn-networksecuritymanager-policy-associatedtemplateandrule-templatearn): {{String}}
 ```

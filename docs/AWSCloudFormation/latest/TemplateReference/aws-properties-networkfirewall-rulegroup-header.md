@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networkfirewall-rulegroup-header-syntax.json"></a>
 
-```
+```json
 {
   "[Destination](#cfn-networkfirewall-rulegroup-header-destination)" : {{String}},
   "[DestinationPort](#cfn-networkfirewall-rulegroup-header-destinationport)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networkfirewall-rulegroup-header-syntax.yaml"></a>
 
-```
+```yaml
   [Destination](#cfn-networkfirewall-rulegroup-header-destination): {{String}}
   [DestinationPort](#cfn-networkfirewall-rulegroup-header-destinationport): {{String}}
   [Direction](#cfn-networkfirewall-rulegroup-header-direction): {{String}}

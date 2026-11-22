@@ -8,7 +8,7 @@ Collects identity and access management audit logs from Entrust IDaaS using OAut
 
 Configure the Entrust IDaaS source with the following parameters:
 
-```
+```yaml
 source:
   entrust_idaas:
     hostname: "<hostname>"

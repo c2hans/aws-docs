@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apigatewayv2-apigatewaymanagedoverrides-stageoverrides-syntax.json"></a>
 
-```
+```json
 {
   "[AccessLogSettings](#cfn-apigatewayv2-apigatewaymanagedoverrides-stageoverrides-accesslogsettings)" : {{AccessLogSettings}},
   "[AutoDeploy](#cfn-apigatewayv2-apigatewaymanagedoverrides-stageoverrides-autodeploy)" : {{Boolean}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apigatewayv2-apigatewaymanagedoverrides-stageoverrides-syntax.yaml"></a>
 
-```
+```yaml
   [AccessLogSettings](#cfn-apigatewayv2-apigatewaymanagedoverrides-stageoverrides-accesslogsettings): {{
     AccessLogSettings}}
   [AutoDeploy](#cfn-apigatewayv2-apigatewaymanagedoverrides-stageoverrides-autodeploy): {{Boolean}}

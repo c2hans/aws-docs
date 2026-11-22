@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotwireless-taskdefinition-lorawangatewayversion-syntax.json"></a>
 
-```
+```json
 {
   "[Model](#cfn-iotwireless-taskdefinition-lorawangatewayversion-model)" : {{String}},
   "[PackageVersion](#cfn-iotwireless-taskdefinition-lorawangatewayversion-packageversion)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotwireless-taskdefinition-lorawangatewayversion-syntax.yaml"></a>
 
-```
+```yaml
   [Model](#cfn-iotwireless-taskdefinition-lorawangatewayversion-model): {{String}}
   [PackageVersion](#cfn-iotwireless-taskdefinition-lorawangatewayversion-packageversion): {{String}}
   [Station](#cfn-iotwireless-taskdefinition-lorawangatewayversion-station): {{String}}

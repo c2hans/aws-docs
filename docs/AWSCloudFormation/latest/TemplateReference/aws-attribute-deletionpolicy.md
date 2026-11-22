@@ -25,7 +25,7 @@ The following snippet contains an Amazon S3 bucket resource with a `Retain` dele
 ## JSON
 <a name="aws-attribute-deletionpolicy-example.json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion" : "2010-09-09",
   "Resources" : {
@@ -40,7 +40,7 @@ The following snippet contains an Amazon S3 bucket resource with a `Retain` dele
 ## YAML
 <a name="aws-attribute-deletionpolicy-example.yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   MyBucket:

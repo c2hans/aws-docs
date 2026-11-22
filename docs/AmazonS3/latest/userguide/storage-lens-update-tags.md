@@ -46,7 +46,7 @@ The following AWS SDK for Java example updates the AWS resource tags on an exist
 
 **Example – Update tags on an existing Storage Lens dashboard configuration**
 
-```
+```Java
 package aws.example.s3control;
 
 import com.amazonaws.AmazonServiceException;

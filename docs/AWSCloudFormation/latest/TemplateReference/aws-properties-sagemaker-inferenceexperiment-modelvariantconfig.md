@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-inferenceexperiment-modelvariantconfig-syntax.json"></a>
 
-```
+```json
 {
   "[InfrastructureConfig](#cfn-sagemaker-inferenceexperiment-modelvariantconfig-infrastructureconfig)" : {{ModelInfrastructureConfig}},
   "[ModelName](#cfn-sagemaker-inferenceexperiment-modelvariantconfig-modelname)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-inferenceexperiment-modelvariantconfig-syntax.yaml"></a>
 
-```
+```yaml
   [InfrastructureConfig](#cfn-sagemaker-inferenceexperiment-modelvariantconfig-infrastructureconfig): {{
     ModelInfrastructureConfig}}
   [ModelName](#cfn-sagemaker-inferenceexperiment-modelvariantconfig-modelname): {{String}}

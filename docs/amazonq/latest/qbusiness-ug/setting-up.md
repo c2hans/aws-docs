@@ -65,7 +65,7 @@ If you don't have pip included in your Python Scripts directory, you can downloa
 
 To install Python, complete the following steps:
 
-```
+```python
 # Install the latest Boto3 release via pip
 pip install boto3
 
@@ -103,7 +103,7 @@ To use Amazon Q Business as an IAM user on the AWS CLI, or AWS SDK, you must att
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -121,26 +121,26 @@ To use Amazon Q Business as an IAM user on the AWS CLI, or AWS SDK, you must att
 
 If you're using Q Apps, add the following permissions:
 
-```
+```json
 "qapps:*"
 ```
 
 If you're using Q Apps, add the following permissions:
 
-```
+```json
 "quicksight:*"
 ```
 
 If you're using a customer managed key, add the following permissions:
 
-```
+```json
 "kms:DescribeKey"
 "kms:CreateGrant"
 ```
 
 If you're using IAM Identity Center, add the following permissions:
 
-```
+```json
 "sso:CreateApplication",
 "sso:PutApplicationAuthenticationMethod",
 "sso:PutApplicationAccessScope",
@@ -162,7 +162,7 @@ To assign user subscriptions to applications, you must include permissions to ca
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -224,7 +224,7 @@ This feature is only available for use with the following connectors: ServiceNow
 The following is an example policy showing how to use `qbusiness:DisableAclOnDataSource`
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

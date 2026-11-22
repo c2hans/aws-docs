@@ -109,7 +109,7 @@ To assess your IMDSv2 migration scope, identify instances that are configured to
 
    Use the [describe-instances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-instance-metadata-options.html) command and filter by `metadata-options.http-tokens = optional`, as follows:
 
-   ```
+   ```bash
    aws ec2 describe-instances --filters "Name=metadata-options.http-tokens,Values=optional" --query "Reservations[*].Instances[*].[InstanceId]" --output text
    ```
 

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-autoscaling-launchconfiguration-metadataoptions-syntax.json"></a>
 
-```
+```json
 {
   "[HttpEndpoint](#cfn-autoscaling-launchconfiguration-metadataoptions-httpendpoint)" : {{String}},
   "[HttpPutResponseHopLimit](#cfn-autoscaling-launchconfiguration-metadataoptions-httpputresponsehoplimit)" : {{Integer}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-autoscaling-launchconfiguration-metadataoptions-syntax.yaml"></a>
 
-```
+```yaml
   [HttpEndpoint](#cfn-autoscaling-launchconfiguration-metadataoptions-httpendpoint): {{String}}
   [HttpPutResponseHopLimit](#cfn-autoscaling-launchconfiguration-metadataoptions-httpputresponsehoplimit): {{Integer}}
   [HttpTokens](#cfn-autoscaling-launchconfiguration-metadataoptions-httptokens): {{String}}

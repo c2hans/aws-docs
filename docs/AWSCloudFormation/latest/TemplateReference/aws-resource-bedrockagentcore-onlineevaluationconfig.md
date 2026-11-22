@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-bedrockagentcore-onlineevaluationconfig-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::BedrockAgentCore::OnlineEvaluationConfig",
   "Properties" : {
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-bedrockagentcore-onlineevaluationconfig-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::BedrockAgentCore::OnlineEvaluationConfig
 Properties:
   [ClusteringConfig](#cfn-bedrockagentcore-onlineevaluationconfig-clusteringconfig): {{

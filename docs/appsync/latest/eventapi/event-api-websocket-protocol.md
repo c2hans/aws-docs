@@ -66,7 +66,7 @@ function getAuthProtocol(authorization) {
 
 The following example uses bash to create a header, and then uses wscat to connect. You must specify `aws-appsync-event-ws` as one of the subprotocols.
 
-```
+```bash
 $ REALTIME_DOMAIN='example1234567890000.appsync-realtime-api.us-west-2.amazonaws.com'
 $ HTTP_DOMAIN='example1234567890000.appsync-api.us-east-1.amazonaws.com'
 $ API_KEY='da2-12345678901234567890123456'
@@ -115,7 +115,7 @@ Use the following sections to learn how to format the authorization subprotocol 
 
 **Example**
 
-```
+```json
 {
   "host":"example1234567890000.appsync-api.us-east-1.amazonaws.com",
   "x-api-key":"da2-12345678901234567890123456"
@@ -131,7 +131,7 @@ Use the following sections to learn how to format the authorization subprotocol 
 
 **Example**
 
-```
+```json
 {
   "Authorization":"eyEXAMPLEiJjbG5xb3A5eW5MK09QYXIrMTJHWEFLSXBieU5WNHhsQjEXAMPLEnM2WldvPSIsImFsZyI6IlEXAMPLEn0.eyEXAMPLEiJhNmNmMjcwNy0xNjgxLTQ1NDItOWYxOC1lNjY0MTg2NjlkMzYiLCJldmVudF9pZCI6ImVkMzM5MmNkLWNjYTMtNGM2OC1hNDYyLTJlZGI3ZTNmY2FjZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE1Njk0NTc3MTgsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5hcC1zb3V0aGVhc3QtMi5hbWF6b25hd3MuY29tXC9hcC1zb3V0aGVhc3QtMl83OHY0SVZibVAiLCJleHAiOjE1Njk0NjEzMjAsImlhdCI6MTU2OTQ1NzcyMCwianRpIjoiNTgzZjhmYmMtMzk2MS00YzA4LWJhZTAtYzQyY2IxMTM5NDY5IiwiY2xpZW50X2lkIjoiM3FlajVlMXZmMzd1N3RoZWw0dG91dDJkMWwiLCJ1c2VybmFtZSI6ImVsb3EXAMPLEn0.B4EXAMPLEFNpJ6ikVp7e6DRee95V6Qi-zEE2DJH7sHOl2zxYi7f-SmEGoh2AD8emxQRYajByz-rE4Jh0QOymN2Ys-ZIkMpVBTPgu-TMWDyOHhDUmUj2OP82yeZ3wlZAtr_gM4LzjXUXmI_K2yGjuXfXTaa1mvQEBG0mQfVd7SfwXB-jcv4RYVi6j25qgow9Ew52ufurPqaK-3WAKG32KpV8J4-Wejq8t0c-yA7sb8EnB551b7TU93uKRiVVK3E55Nk5ADPoam_WYE45i3s5qVAP_-InW75NUoOCGTsS8YWMfb6ecHYJ-1j-bzA27zaT9VjctXn9byNFZmEXAMPLExw",
   "host":"example1234567890000.appsync-api.us-east-1.amazonaws.com"
@@ -147,7 +147,7 @@ Use the following sections to learn how to format the authorization subprotocol 
 
 **Example**
 
-```
+```json
 {
   "Authorization":"M0UzQzM1MkQtMkI0Ni00OTZCLUI1NkQtMUM0MTQ0QjVBRTczCkI1REEzRTIxLTk5NzItNDJENi1BQjMwLTFCNjRFNzQ2NzlCNQo=",
   "host":"example1234567890000.appsync-api.us-east-1.amazonaws.com"
@@ -170,7 +170,7 @@ The SigV4 signing HTTP request includes a canonical URL, which is the AWS AppSyn
 
 The HTTP request to sign to connect is the following.
 
-```
+```json
 {
   url: "https://example1234567890000.appsync-api.us-east-1.amazonaws.com/event",
   data: "{}",
@@ -186,7 +186,7 @@ The HTTP request to sign to connect is the following.
 
 The following is the request to sign when sending a subscribe message. The channel name is specified in the request.
 
-```
+```json
 {
   url: "https://example1234567890000.appsync-api.us-east-1.amazonaws.com/event",
   body: "{\"channel\":\"/your/channel/*\"}",
@@ -202,7 +202,7 @@ The following is the request to sign when sending a subscribe message. The chann
 
 The following is the request to sign when publishing over WebSocket. The channel name and event payload are specified in the request.
 
-```
+```json
 {
   url: "https://example1234567890000.appsync-api.us-east-1.amazonaws.com/event",
   body: "{\"channel\":\"/your/channel/*\",\"events\":[{\"event_1\":\"data_1\"},{\"event_2\":\"data_2\"}]}",
@@ -218,7 +218,7 @@ The following is the request to sign when publishing over WebSocket. The channel
 
 **Authorization header example**
 
-```
+```json
 {
   "accept": "application/json, text/javascript",
   "content-encoding": "amz-1.0",
@@ -261,7 +261,7 @@ This section provides information about the syntax to use to configure the detai
 
 (Optional) After the client has established the WebSocket connection, the client sends an init message to initiate the connection session.
 
-```
+```json
 { "type": "connection_init" }
 ```
 
@@ -269,7 +269,7 @@ This section provides information about the syntax to use to configure the detai
 
 AWS AppSync responds with an “ack” message that contains a connection timeout value. If the client doesn’t receive a keep-alive message within the connection timeout period, the client should close the connection. The connection timeout period is 5 minutes.
 
-```
+```json
 {
     "type": "connection_ack",
     "connectionTimeoutMs": 300000
@@ -291,7 +291,7 @@ After receiving a `connection_ack` message, the client can send a subscription r
 + “channel” is the channel to which the subscribed client is listening. Any messages published to this channel will be delivered to the subscribed client.
 + “authorization” is an object containing the fields required for authorization. The authorization object follows the same rules as the headers for connecting to the WebSocket.
 
-```
+```json
 {
   "type": "subscribe",
   "id": "ee849ef0-cf23-4cb8-9fcb-152ae4fd1e69",
@@ -307,7 +307,7 @@ After receiving a `connection_ack` message, the client can send a subscription r
 
 AWS AppSync acknowledges with a success message. “id” is the ID of the corresponding subscribe operation that succeeded.
 
-```
+```json
 {
   "type": "subscribe_success",
   "id": "ee849ef0-cf23-4cb8-9fcb-152ae4fd1e69"
@@ -316,7 +316,7 @@ AWS AppSync acknowledges with a success message. “id” is the ID of the corre
 
 In case of an error, AWS AppSync sends a `subscribe_error` response.
 
-```
+```json
 {
   "type": "subscribe_error",
   "id": "ee849ef0-cf23-4cb8-9fcb-152ae4fd1e69",
@@ -333,7 +333,7 @@ In case of an error, AWS AppSync sends a `subscribe_error` response.
 
 When an event is published to a channel the client is subscribed to, the event is broadcast and delivered in a data message. “id” is the ID of the corresponding subscription for the channel to which the message was published.
 
-```
+```json
 {
   "type": "data",
   "id": "ee849ef0-cf23-4cb8-9fcb-152ae4fd1e69",
@@ -343,7 +343,7 @@ When an event is published to a channel the client is subscribed to, the event i
 
 In case of an error, such as a broadcasting error, an error can be received at the client:
 
-```
+```json
 {
   "type": "broadcast_error",
   "id": "ee849ef0-cf23-4cb8-9fcb-152ae4fd1e69",
@@ -360,7 +360,7 @@ In case of an error, such as a broadcasting error, an error can be received at t
 
 When the client wants to stop listening to a subscribed channel, the client sends a message to unregister the subscription. “id” is the ID of the corresponding subscription to which the client wants to unregister.
 
-```
+```json
 {
   "type": "unsubscribe",
   "id": "ee849ef0-cf23-4cb8-9fcb-152ae4fd1e69"
@@ -369,7 +369,7 @@ When the client wants to stop listening to a subscribed channel, the client send
 
 AWS AppSync acknowledges with a success message. “id” is the ID of the corresponding subscribe operation that succeeded.
 
-```
+```json
 {
   "type": "unsubscribe_success",
   "id": "ee849ef0-cf23-4cb8-9fcb-152ae4fd1e69"
@@ -378,7 +378,7 @@ AWS AppSync acknowledges with a success message. “id” is the ID of the corre
 
 If an error occurs, an error message is sent back to the client
 
-```
+```json
 {
   "type": "unsubscribe_error",
   "id": "ee849ef0-cf23-4cb8-9fcb-152ae4fd1e69",
@@ -395,7 +395,7 @@ If an error occurs, an error message is sent back to the client
 
 Once connected, the client can start publishing messages to channels. `“id”` is the ID of the publish operation. `“channel”` is the channel to which the events are published. The events will be delivered to all clients subscribed to the channel. `“authorization”` is an object containing the fields required for authorization. The authorization object follows the same rules as the headers for subscribing to the channel.
 
-```
+```json
 {
   "type": "publish",
   "id": "ee849ef0-cf23-4cb8-9fcb-152ae4fd1e69",
@@ -411,7 +411,7 @@ Once connected, the client can start publishing messages to channels. `“id”`
 
 The server acknowledges with a success message. `“id”` is the ID of the corresponding publish operation that succeeded. `“failed”` is the list of events which were marked in error while executing the publish handler.
 
-```
+```json
 {
   "id": "ee849ef0-cf23-4cb8-9fcb-152ae4fd1e69",
   "type": "publish_success",
@@ -427,7 +427,7 @@ The server acknowledges with a success message. `“id”` is the ID of the corr
 
  If an error occurs, an error message is sent back to the client.
 
-```
+```json
 {
     "id": "ee849ef0-cf23-4cb8-9fcb-152ae4fd1e69",
     "type": "publish_error",

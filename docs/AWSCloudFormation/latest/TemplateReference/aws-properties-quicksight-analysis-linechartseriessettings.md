@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-linechartseriessettings-syntax.json"></a>
 
-```
+```json
 {
   "[DecalSettings](#cfn-quicksight-analysis-linechartseriessettings-decalsettings)" : {{DecalSettings}},
   "[LineStyleSettings](#cfn-quicksight-analysis-linechartseriessettings-linestylesettings)" : {{LineChartLineStyleSettings}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-linechartseriessettings-syntax.yaml"></a>
 
-```
+```yaml
   [DecalSettings](#cfn-quicksight-analysis-linechartseriessettings-decalsettings): {{
     DecalSettings}}
   [LineStyleSettings](#cfn-quicksight-analysis-linechartseriessettings-linestylesettings): {{

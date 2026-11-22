@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticsearch-domain-encryptionatrestoptions-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-elasticsearch-domain-encryptionatrestoptions-enabled)" : {{Boolean}},
   "[KmsKeyId](#cfn-elasticsearch-domain-encryptionatrestoptions-kmskeyid)" : {{String}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticsearch-domain-encryptionatrestoptions-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-elasticsearch-domain-encryptionatrestoptions-enabled): {{Boolean}}
   [KmsKeyId](#cfn-elasticsearch-domain-encryptionatrestoptions-kmskeyid): {{String}}
 ```

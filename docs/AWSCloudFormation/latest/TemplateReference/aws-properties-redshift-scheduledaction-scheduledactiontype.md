@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-redshift-scheduledaction-scheduledactiontype-syntax.json"></a>
 
-```
+```json
 {
   "[PauseCluster](#cfn-redshift-scheduledaction-scheduledactiontype-pausecluster)" : {{PauseClusterMessage}},
   "[ResizeCluster](#cfn-redshift-scheduledaction-scheduledactiontype-resizecluster)" : {{ResizeClusterMessage}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-redshift-scheduledaction-scheduledactiontype-syntax.yaml"></a>
 
-```
+```yaml
   [PauseCluster](#cfn-redshift-scheduledaction-scheduledactiontype-pausecluster): {{
     PauseClusterMessage}}
   [ResizeCluster](#cfn-redshift-scheduledaction-scheduledactiontype-resizecluster): {{

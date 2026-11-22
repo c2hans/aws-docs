@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-user-aftercontactworkconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AfterContactWorkMode](#cfn-connect-user-aftercontactworkconfig-aftercontactworkmode)" : {{String}},
   "[AfterContactWorkTimeLimit](#cfn-connect-user-aftercontactworkconfig-aftercontactworktimelimit)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-user-aftercontactworkconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AfterContactWorkMode](#cfn-connect-user-aftercontactworkconfig-aftercontactworkmode): {{String}}
   [AfterContactWorkTimeLimit](#cfn-connect-user-aftercontactworkconfig-aftercontactworktimelimit): {{Integer}}
 ```

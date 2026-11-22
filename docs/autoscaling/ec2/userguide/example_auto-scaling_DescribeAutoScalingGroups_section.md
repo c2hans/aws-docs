@@ -16,7 +16,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/AutoScaling#code-examples).
 
-```
+```csharp
     /// <summary>
     /// Get data about the instances in an Amazon EC2 Auto Scaling group.
     /// </summary>
@@ -67,7 +67,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 **SDK for C\+\+**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/autoscaling#code-examples).
 
-```
+```cpp
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
@@ -509,7 +509,7 @@ For more information, see [Filter AWS CLI output](https://docs.aws.amazon.com/cl
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/autoscale#code-examples).
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.autoscaling.AutoScalingClient;
 import software.amazon.awssdk.services.autoscaling.model.AutoScalingException;
@@ -589,7 +589,7 @@ public class DescribeAutoScalingInstances {
 **SDK for Kotlin**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/autoscale#code-examples).
 
-```
+```kotlin
 suspend fun getAutoScalingGroups(groupName: String) {
     val scalingGroupsRequest =
         DescribeAutoScalingGroupsRequest {
@@ -617,7 +617,7 @@ suspend fun getAutoScalingGroups(groupName: String) {
 **SDK for PHP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/auto-scaling#code-examples).
 
-```
+```php
     public function describeAutoScalingGroups($autoScalingGroupNames)
     {
         return $this->autoScalingClient->describeAutoScalingGroups([
@@ -633,7 +633,7 @@ suspend fun getAutoScalingGroups(groupName: String) {
 **Tools for PowerShell V4**
 **Example 1: This example lists the names of your Auto Scaling groups.**
 
-```
+```powershell
 Get-ASAutoScalingGroup | format-table -property AutoScalingGroupName
 ```
 **Output:**
@@ -650,7 +650,7 @@ my-asg-6
 ```
 **Example 2: This example describes the specified Auto Scaling group.**
 
-```
+```powershell
 Get-ASAutoScalingGroup -AutoScalingGroupName my-asg-1
 ```
 **Output:**
@@ -680,22 +680,22 @@ VPCZoneIdentifier       : subnet-e4f33493,subnet-5264e837
 ```
 **Example 3: This example describes the specified two Auto Scaling groups.**
 
-```
+```powershell
 Get-ASAutoScalingGroup -AutoScalingGroupName @("my-asg-1", "my-asg-2")
 ```
 **Example 4: This example describes the Auto Scaling instances for the specified Auto Scaling group.**
 
-```
+```powershell
 (Get-ASAutoScalingGroup -AutoScalingGroupName my-asg-1).Instances
 ```
 **Example 5: This example describes all your Auto Scaling groups.**
 
-```
+```powershell
 Get-ASAutoScalingGroup
 ```
 **Example 6: This example describes LaunchTemplate for the specified Auto Scaling group. This example assumes that the "Instance purchase options" is set to "Adhere to launch template". In case this option is set to "Combine purchase options and instance types", LaunchTemplate could be accessed using "MixedInstancesPolicy.LaunchTemplate" property.**
 
-```
+```powershell
 (Get-ASAutoScalingGroup -AutoScalingGroupName my-ag-1).LaunchTemplate
 ```
 **Output:**
@@ -710,7 +710,7 @@ lt-06095fd619cb40371 test-launch-template $Default
 **Tools for PowerShell V5**
 **Example 1: This example lists the names of your Auto Scaling groups.**
 
-```
+```powershell
 Get-ASAutoScalingGroup | format-table -property AutoScalingGroupName
 ```
 **Output:**
@@ -727,7 +727,7 @@ my-asg-6
 ```
 **Example 2: This example describes the specified Auto Scaling group.**
 
-```
+```powershell
 Get-ASAutoScalingGroup -AutoScalingGroupName my-asg-1
 ```
 **Output:**
@@ -757,22 +757,22 @@ VPCZoneIdentifier       : subnet-e4f33493,subnet-5264e837
 ```
 **Example 3: This example describes the specified two Auto Scaling groups.**
 
-```
+```powershell
 Get-ASAutoScalingGroup -AutoScalingGroupName @("my-asg-1", "my-asg-2")
 ```
 **Example 4: This example describes the Auto Scaling instances for the specified Auto Scaling group.**
 
-```
+```powershell
 (Get-ASAutoScalingGroup -AutoScalingGroupName my-asg-1).Instances
 ```
 **Example 5: This example describes all your Auto Scaling groups.**
 
-```
+```powershell
 Get-ASAutoScalingGroup
 ```
 **Example 6: This example describes LaunchTemplate for the specified Auto Scaling group. This example assumes that the "Instance purchase options" is set to "Adhere to launch template". In case this option is set to "Combine purchase options and instance types", LaunchTemplate could be accessed using "MixedInstancesPolicy.LaunchTemplate" property.**
 
-```
+```powershell
 (Get-ASAutoScalingGroup -AutoScalingGroupName my-ag-1).LaunchTemplate
 ```
 **Output:**
@@ -790,7 +790,7 @@ lt-06095fd619cb40371 test-launch-template $Default
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/auto-scaling#code-examples).
 
-```
+```python
 class AutoScalingWrapper:
     """Encapsulates Amazon EC2 Auto Scaling actions."""
 
@@ -842,7 +842,7 @@ class AutoScalingWrapper:
 **SDK for Rust**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/auto-scaling#code-examples).
 
-```
+```rust
 async fn list_groups(client: &Client) -> Result<(), Error> {
     let resp = client.describe_auto_scaling_groups().send().await?;
 
@@ -876,7 +876,7 @@ async fn list_groups(client: &Client) -> Result<(), Error> {
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/asc#code-examples).
 
-```
+```sap-abap
     DATA lt_group_names TYPE /aws1/cl_ascautoscgroupnames_w=>tt_autoscalinggroupnames.
     DATA lo_group_name TYPE REF TO /aws1/cl_ascautoscgroupnames_w.
 

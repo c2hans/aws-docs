@@ -17,7 +17,7 @@ You can reference top-level claims only. For example, `$context.authorizer.claim
 
 The examples on this page use a token with the following claims:
 
-```
+```json
 {
   "name": "Doe, \"Jane\"",
   "iat": 1516239022,
@@ -42,7 +42,7 @@ The token produces the following values.
 
 A Lambda proxy integration receives the claims in the `requestContext.authorizer.claims` object of the input event. Each claim keeps its JSON type. The event omits other fields. For the example token, the event contains the following:
 
-```
+```json
 {
   "requestContext": {
     "authorizer": {
@@ -72,7 +72,7 @@ A mapping template can reference a claim directly. Because each value is already
 
 For the example token, the integration receives the following body:
 
-```
+```json
 {
   "version": "42",
   "roles": ["user","editor"]

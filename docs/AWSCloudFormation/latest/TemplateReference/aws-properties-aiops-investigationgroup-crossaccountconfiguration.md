@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-aiops-investigationgroup-crossaccountconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[SourceRoleArn](#cfn-aiops-investigationgroup-crossaccountconfiguration-sourcerolearn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-aiops-investigationgroup-crossaccountconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [SourceRoleArn](#cfn-aiops-investigationgroup-crossaccountconfiguration-sourcerolearn): {{String}}
 ```
 

@@ -65,7 +65,7 @@ Enables CORS by returning the correct headers.
 #### POST schema
 <a name="backend-appid-api-backendenvironmentname-remove-request-body-post-example"></a>
 
-```
+```json
 {
   "resourceConfig": {
     "apiName": "string",
@@ -113,7 +113,7 @@ Enables CORS by returning the correct headers.
 #### BackendAPIRespObj schema
 <a name="backend-appid-api-backendenvironmentname-remove-response-body-backendapirespobj-example"></a>
 
-```
+```json
 {
   "jobId": "string",
   "appId": "string",
@@ -127,7 +127,7 @@ Enables CORS by returning the correct headers.
 #### BadRequestException schema
 <a name="backend-appid-api-backendenvironmentname-remove-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -136,7 +136,7 @@ Enables CORS by returning the correct headers.
 #### NotFoundException schema
 <a name="backend-appid-api-backendenvironmentname-remove-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -146,7 +146,7 @@ Enables CORS by returning the correct headers.
 #### LimitExceededException schema
 <a name="backend-appid-api-backendenvironmentname-remove-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"
@@ -156,7 +156,7 @@ Enables CORS by returning the correct headers.
 #### InternalServiceException schema
 <a name="backend-appid-api-backendenvironmentname-remove-response-body-internalserviceexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }

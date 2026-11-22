@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-evaluationform-evaluationformmultiselectquestionautomation-syntax.json"></a>
 
-```
+```json
 {
   "[AnswerSource](#cfn-connect-evaluationform-evaluationformmultiselectquestionautomation-answersource)" : {{EvaluationFormQuestionAutomationAnswerSource}},
   "[DefaultOptionRefIds](#cfn-connect-evaluationform-evaluationformmultiselectquestionautomation-defaultoptionrefids)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-evaluationform-evaluationformmultiselectquestionautomation-syntax.yaml"></a>
 
-```
+```yaml
   [AnswerSource](#cfn-connect-evaluationform-evaluationformmultiselectquestionautomation-answersource): {{
     EvaluationFormQuestionAutomationAnswerSource}}
   [DefaultOptionRefIds](#cfn-connect-evaluationform-evaluationformmultiselectquestionautomation-defaultoptionrefids): {{

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-inlinecustomdocumentenrichmentconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Condition](#cfn-kendra-datasource-inlinecustomdocumentenrichmentconfiguration-condition)" : {{DocumentAttributeCondition}},
   "[DocumentContentDeletion](#cfn-kendra-datasource-inlinecustomdocumentenrichmentconfiguration-documentcontentdeletion)" : {{Boolean}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-inlinecustomdocumentenrichmentconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Condition](#cfn-kendra-datasource-inlinecustomdocumentenrichmentconfiguration-condition): {{
     DocumentAttributeCondition}}
   [DocumentContentDeletion](#cfn-kendra-datasource-inlinecustomdocumentenrichmentconfiguration-documentcontentdeletion): {{Boolean}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-capability-awsidc-syntax.json"></a>
 
-```
+```json
 {
   "[IdcInstanceArn](#cfn-eks-capability-awsidc-idcinstancearn)" : {{String}},
   "[IdcManagedApplicationArn](#cfn-eks-capability-awsidc-idcmanagedapplicationarn)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-capability-awsidc-syntax.yaml"></a>
 
-```
+```yaml
   [IdcInstanceArn](#cfn-eks-capability-awsidc-idcinstancearn): {{String}}
   [IdcManagedApplicationArn](#cfn-eks-capability-awsidc-idcmanagedapplicationarn): {{String}}
   [IdcRegion](#cfn-eks-capability-awsidc-idcregion): {{String}}

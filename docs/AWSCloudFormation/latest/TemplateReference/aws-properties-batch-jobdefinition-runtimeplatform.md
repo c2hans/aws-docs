@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-runtimeplatform-syntax.json"></a>
 
-```
+```json
 {
   "[CpuArchitecture](#cfn-batch-jobdefinition-runtimeplatform-cpuarchitecture)" : {{String}},
   "[OperatingSystemFamily](#cfn-batch-jobdefinition-runtimeplatform-operatingsystemfamily)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-runtimeplatform-syntax.yaml"></a>
 
-```
+```yaml
   [CpuArchitecture](#cfn-batch-jobdefinition-runtimeplatform-cpuarchitecture): {{String}}
   [OperatingSystemFamily](#cfn-batch-jobdefinition-runtimeplatform-operatingsystemfamily): {{String}}
 ```

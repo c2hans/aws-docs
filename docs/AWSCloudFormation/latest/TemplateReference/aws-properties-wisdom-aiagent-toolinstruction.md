@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-aiagent-toolinstruction-syntax.json"></a>
 
-```
+```json
 {
   "[Examples](#cfn-wisdom-aiagent-toolinstruction-examples)" : {{[ String, ... ]}},
   "[Instruction](#cfn-wisdom-aiagent-toolinstruction-instruction)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-aiagent-toolinstruction-syntax.yaml"></a>
 
-```
+```yaml
   [Examples](#cfn-wisdom-aiagent-toolinstruction-examples): {{
     - String}}
   [Instruction](#cfn-wisdom-aiagent-toolinstruction-instruction): {{String}}

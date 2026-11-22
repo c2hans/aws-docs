@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-elasticbeanstalk-applicationversion-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ElasticBeanstalk::ApplicationVersion",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-elasticbeanstalk-applicationversion-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ElasticBeanstalk::ApplicationVersion
 Properties:
   [ApplicationName](#cfn-elasticbeanstalk-applicationversion-applicationname): {{String}}
@@ -127,7 +127,7 @@ For more information about using the `Ref` function, see [`Ref`](https://docs.aw
 #### JSON
 <a name="aws-resource-elasticbeanstalk-applicationversion--examples----json"></a>
 
-```
+```json
 "myAppVersion": {
   "Type" : "AWS::ElasticBeanstalk::ApplicationVersion",
   "Properties" : {
@@ -145,7 +145,7 @@ For more information about using the `Ref` function, see [`Ref`](https://docs.aw
 #### YAML
 <a name="aws-resource-elasticbeanstalk-applicationversion--examples----yaml"></a>
 
-```
+```yaml
 myAppVersion:
   Type: AWS::ElasticBeanstalk::ApplicationVersion
   Properties:
@@ -168,7 +168,7 @@ myAppVersion:
 #### JSON
 <a name="aws-resource-elasticbeanstalk-applicationversion--examples--Application_Version_from_a_Container_Image--json"></a>
 
-```
+```json
 "myImageAppVersion": {
   "Type" : "AWS::ElasticBeanstalk::ApplicationVersion",
   "Properties" : {
@@ -186,7 +186,7 @@ myAppVersion:
 #### YAML
 <a name="aws-resource-elasticbeanstalk-applicationversion--examples--Application_Version_from_a_Container_Image--yaml"></a>
 
-```
+```yaml
 myImageAppVersion:
   Type: AWS::ElasticBeanstalk::ApplicationVersion
   Properties:

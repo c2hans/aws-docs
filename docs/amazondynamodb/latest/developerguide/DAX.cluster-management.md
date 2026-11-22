@@ -36,7 +36,7 @@ To illustrate, consider the following IAM policy document.
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -74,7 +74,7 @@ The following example policy shows this approach. Note how the `DAXDataAPIs` sta
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

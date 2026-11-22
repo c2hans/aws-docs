@@ -33,7 +33,7 @@ Use the [create-launch-template](https://docs.aws.amazon.com/cli/latest/referenc
 
 Example launch template configuration:
 
-```
+```JSON
 {
     "LaunchTemplateName": "{{interruptible-cr-launch-template}}",
     "LaunchTemplateData": {
@@ -53,7 +53,7 @@ Example launch template configuration:
 
 Example output
 
-```
+```JSON
 {
     "LaunchTemplate": {
         "LaunchTemplateId": "lt-0123456789example",
@@ -77,7 +77,7 @@ You must specify `ReservedCapacityOptions` with `ReservationType` set to `interr
 
 Create a file named `config.json` with the following content:
 
-```
+```JSON
 {
     "LaunchTemplateConfigs": [
         {
@@ -117,7 +117,7 @@ Key configuration parameters:
 
 Use the [create-fleet](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-fleet.html) command to create the fleet:
 
-```
+```bash
 aws ec2 create-fleet \
     --cli-input-json file://config.json
 ```
@@ -129,7 +129,7 @@ If the fleet cannot fulfill the full target capacity, the response includes the 
 
 Example output
 
-```
+```JSON
 {
     "FleetId": "fleet-12345678-1234-1234-1234-123456789012",
     "Instances": [

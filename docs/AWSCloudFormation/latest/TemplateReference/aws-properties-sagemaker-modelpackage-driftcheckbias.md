@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelpackage-driftcheckbias-syntax.json"></a>
 
-```
+```json
 {
   "[ConfigFile](#cfn-sagemaker-modelpackage-driftcheckbias-configfile)" : {{FileSource}},
   "[PostTrainingConstraints](#cfn-sagemaker-modelpackage-driftcheckbias-posttrainingconstraints)" : {{MetricsSource}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelpackage-driftcheckbias-syntax.yaml"></a>
 
-```
+```yaml
   [ConfigFile](#cfn-sagemaker-modelpackage-driftcheckbias-configfile): {{
     FileSource}}
   [PostTrainingConstraints](#cfn-sagemaker-modelpackage-driftcheckbias-posttrainingconstraints): {{

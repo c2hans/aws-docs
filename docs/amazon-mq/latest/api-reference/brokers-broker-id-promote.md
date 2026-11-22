@@ -59,7 +59,7 @@ Promotes a data replication replica broker to a primary.
 #### POST schema
 <a name="brokers-broker-id-promote-request-body-post-example"></a>
 
-```
+```json
 {
   "mode": enum
 }
@@ -71,7 +71,7 @@ Promotes a data replication replica broker to a primary.
 #### PromoteOutput schema
 <a name="brokers-broker-id-promote-response-body-promoteoutput-example"></a>
 
-```
+```json
 {
   "brokerId": "string"
 }
@@ -80,7 +80,7 @@ Promotes a data replication replica broker to a primary.
 #### Error schema
 <a name="brokers-broker-id-promote-response-body-error-example"></a>
 
-```
+```json
 {
   "errorAttribute": "string",
   "message": "string"

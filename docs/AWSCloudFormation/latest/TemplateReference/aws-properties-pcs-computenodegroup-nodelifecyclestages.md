@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcs-computenodegroup-nodelifecyclestages-syntax.json"></a>
 
-```
+```json
 {
   "[NodeBootstrapped](#cfn-pcs-computenodegroup-nodelifecyclestages-nodebootstrapped)" : {{[ NodeLifecycleScript, ... ]}},
   "[NodeReady](#cfn-pcs-computenodegroup-nodelifecyclestages-nodeready)" : {{[ NodeLifecycleScript, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcs-computenodegroup-nodelifecyclestages-syntax.yaml"></a>
 
-```
+```yaml
   [NodeBootstrapped](#cfn-pcs-computenodegroup-nodelifecyclestages-nodebootstrapped): {{
     - NodeLifecycleScript}}
   [NodeReady](#cfn-pcs-computenodegroup-nodelifecyclestages-nodeready): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-decalsettingsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CustomDecalSettings](#cfn-quicksight-analysis-decalsettingsconfiguration-customdecalsettings)" : {{[ DecalSettings, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-decalsettingsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CustomDecalSettings](#cfn-quicksight-analysis-decalsettingsconfiguration-customdecalsettings): {{
     - DecalSettings}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisanalyticsv2-snapshot-snapshotencryptionconfigurationdescription-syntax.json"></a>
 
-```
+```json
 {
   "[KeyId](#cfn-kinesisanalyticsv2-snapshot-snapshotencryptionconfigurationdescription-keyid)" : {{String}},
   "[KeyType](#cfn-kinesisanalyticsv2-snapshot-snapshotencryptionconfigurationdescription-keytype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisanalyticsv2-snapshot-snapshotencryptionconfigurationdescription-syntax.yaml"></a>
 
-```
+```yaml
   [KeyId](#cfn-kinesisanalyticsv2-snapshot-snapshotencryptionconfigurationdescription-keyid): {{String}}
   [KeyType](#cfn-kinesisanalyticsv2-snapshot-snapshotencryptionconfigurationdescription-keytype): {{String}}
 ```

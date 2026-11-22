@@ -43,7 +43,7 @@ The Principal ID ARN to use in the policy is based on the AWS region the Amazon 
 
 **Example IAM policy for Amazon S3 bucket**
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -74,7 +74,7 @@ The Principal ID ARN to use in the policy is based on the AWS region the Amazon 
 
 **Example IAM policy for Amazon SQS queue**
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Id": "PolicyForS3SendMessage",

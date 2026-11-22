@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-egressonlyinternetgateway-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::EgressOnlyInternetGateway",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-egressonlyinternetgateway-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::EgressOnlyInternetGateway
 Properties:
   [Tags](#cfn-ec2-egressonlyinternetgateway-tags): {{
@@ -88,7 +88,7 @@ The following example creates an egress-only internet gateway for the specified 
 #### YAML
 <a name="aws-resource-ec2-egressonlyinternetgateway--examples--Create_an_egress-only_internet_gateway--yaml"></a>
 
-```
+```yaml
 myEgressOnlyInternetGateway:
     Type: AWS::EC2::EgressOnlyInternetGateway
     Properties:
@@ -98,7 +98,7 @@ myEgressOnlyInternetGateway:
 #### JSON
 <a name="aws-resource-ec2-egressonlyinternetgateway--examples--Create_an_egress-only_internet_gateway--json"></a>
 
-```
+```json
 {
     "myEgressOnlyInternetGateway" : {
         "Type" : "AWS::EC2::EgressOnlyInternetGateway",

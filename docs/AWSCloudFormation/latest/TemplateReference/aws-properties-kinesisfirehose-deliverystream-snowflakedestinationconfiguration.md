@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-snowflakedestinationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AccountUrl](#cfn-kinesisfirehose-deliverystream-snowflakedestinationconfiguration-accounturl)" : {{String}},
   "[BufferingHints](#cfn-kinesisfirehose-deliverystream-snowflakedestinationconfiguration-bufferinghints)" : {{SnowflakeBufferingHints}},
@@ -44,7 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-snowflakedestinationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AccountUrl](#cfn-kinesisfirehose-deliverystream-snowflakedestinationconfiguration-accounturl): {{String}}
   [BufferingHints](#cfn-kinesisfirehose-deliverystream-snowflakedestinationconfiguration-bufferinghints): {{
     SnowflakeBufferingHints}}

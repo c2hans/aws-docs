@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchservice-domain-samloptions-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-opensearchservice-domain-samloptions-enabled)" : {{Boolean}},
   "[Idp](#cfn-opensearchservice-domain-samloptions-idp)" : {{Idp}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchservice-domain-samloptions-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-opensearchservice-domain-samloptions-enabled): {{Boolean}}
   [Idp](#cfn-opensearchservice-domain-samloptions-idp): {{
     Idp}}

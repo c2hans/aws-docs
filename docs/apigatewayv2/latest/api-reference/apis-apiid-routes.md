@@ -75,7 +75,7 @@ Creates a `Route` for an API.
 #### POST schema
 <a name="apis-apiid-routes-request-body-post-example"></a>
 
-```
+```json
 {
   "routeKey": "string",
   "authorizationType": enum,
@@ -101,7 +101,7 @@ Creates a `Route` for an API.
 #### Routes schema
 <a name="apis-apiid-routes-response-body-routes-example"></a>
 
-```
+```json
 {
   "items": [
     {
@@ -131,7 +131,7 @@ Creates a `Route` for an API.
 #### Route schema
 <a name="apis-apiid-routes-response-body-route-example"></a>
 
-```
+```json
 {
   "routeId": "string",
   "routeKey": "string",
@@ -156,7 +156,7 @@ Creates a `Route` for an API.
 #### BadRequestException schema
 <a name="apis-apiid-routes-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -165,7 +165,7 @@ Creates a `Route` for an API.
 #### NotFoundException schema
 <a name="apis-apiid-routes-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -175,7 +175,7 @@ Creates a `Route` for an API.
 #### ConflictException schema
 <a name="apis-apiid-routes-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -184,7 +184,7 @@ Creates a `Route` for an API.
 #### LimitExceededException schema
 <a name="apis-apiid-routes-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

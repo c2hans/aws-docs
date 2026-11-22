@@ -144,7 +144,7 @@ The call returns an `AutoScalingConfiguration` object with the other settings se
 #### Sample Request
 <a name="API_CreateAutoScalingConfiguration_Example_1_Request"></a>
 
-```
+```json
 $ aws apprunner create-auto-scaling-configuration --cli-input-json "`cat`"
 {
   "AutoScalingConfigurationName": "high-availability",
@@ -155,7 +155,7 @@ $ aws apprunner create-auto-scaling-configuration --cli-input-json "`cat`"
 #### Sample Response
 <a name="API_CreateAutoScalingConfiguration_Example_1_Response"></a>
 
-```
+```json
 {
   "AutoScalingConfiguration": {
     "AutoScalingConfigurationArn": "arn:aws:apprunner:us-east-1:123456789012:autoscalingconfiguration/high-availability/1/2f50e7656d7819fead0f59672e68042e",

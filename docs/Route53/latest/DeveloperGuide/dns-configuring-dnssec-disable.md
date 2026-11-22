@@ -85,7 +85,7 @@ The following incremental steps allow you to monitor the effectiveness of the in
 
    For example:
 
-   ```
+   ```json
    aws --region us-east-1 route53 disable-hosted-zone-dnssec \
                --hosted-zone-id $hostedzone_id
 
@@ -135,7 +135,7 @@ The following incremental steps allow you to monitor the effectiveness of the in
 
    For example:
 
-   ```
+   ```json
    aws --region us-east-1 route53 activate-key-signing-key \
                --hosted-zone-id $hostedzone_id --name $ksk_name
 

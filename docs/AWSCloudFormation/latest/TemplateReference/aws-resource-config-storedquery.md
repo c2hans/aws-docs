@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-config-storedquery-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Config::StoredQuery",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-config-storedquery-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Config::StoredQuery
 Properties:
   [QueryDescription](#cfn-config-storedquery-querydescription): {{String}}

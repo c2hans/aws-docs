@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-flow-permission-syntax.json"></a>
 
-```
+```json
 {
   "[Actions](#cfn-quicksight-flow-permission-actions)" : {{[ String, ... ]}},
   "[Principal](#cfn-quicksight-flow-permission-principal)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-flow-permission-syntax.yaml"></a>
 
-```
+```yaml
   [Actions](#cfn-quicksight-flow-permission-actions): {{
     - String}}
   [Principal](#cfn-quicksight-flow-permission-principal): {{String}}

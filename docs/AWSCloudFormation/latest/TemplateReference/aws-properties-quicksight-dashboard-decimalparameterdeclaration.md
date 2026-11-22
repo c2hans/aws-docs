@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-decimalparameterdeclaration-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultValues](#cfn-quicksight-dashboard-decimalparameterdeclaration-defaultvalues)" : {{DecimalDefaultValues}},
   "[MappedDataSetParameters](#cfn-quicksight-dashboard-decimalparameterdeclaration-mappeddatasetparameters)" : {{[ MappedDataSetParameter, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-decimalparameterdeclaration-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultValues](#cfn-quicksight-dashboard-decimalparameterdeclaration-defaultvalues): {{
     DecimalDefaultValues}}
   [MappedDataSetParameters](#cfn-quicksight-dashboard-decimalparameterdeclaration-mappeddatasetparameters): {{

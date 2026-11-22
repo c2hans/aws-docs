@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ecs-o
 
 Add the following container definition to each task definition that you want to monitor. Replace {{region}} with your Region, and set the `OTEL_CONFIG` value to the configuration from step 2.
 
-```
+```json
 {
   "name": "otel-collector",
   "image": "otel/opentelemetry-collector-contrib:0.165.0",

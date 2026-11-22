@@ -45,7 +45,7 @@ The *Amazon EC2 Instance Types Guide* provides the quantity, size, type, and per
 **To retrieve instance store volume information**
 Use the [describe-instance-types](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-types.html) command. The following example displays the total size of the instance storage for each instance type in the R8i instance families with instance store volumes.
 
-```
+```bash
 aws ec2 describe-instance-types \
     --filters "Name=instance-type,Values=r8i*" "Name=instance-storage-supported,Values=true" \
     --query 'sort_by(InstanceTypes, &InstanceStorageInfo.TotalSizeInGB)[].{InstanceType:InstanceType,TotalSizeInGB:InstanceStorageInfo.TotalSizeInGB}' \
@@ -54,7 +54,7 @@ aws ec2 describe-instance-types \
 
 The following is example output.
 
-```
+```bash
 --------------------------------------
 |        DescribeInstanceTypes       |
 +------------------+-----------------+
@@ -79,7 +79,7 @@ The following is example output.
 **To get complete instance storage details for an instance type**
 Use the [describe-instance-types](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-types.html) command.
 
-```
+```bash
 aws ec2 describe-instance-types \
     --filters "Name=instance-type,Values={{r8id.32xlarge}}" \
     --query 'InstanceTypes[0].InstanceStorageInfo' \
@@ -88,7 +88,7 @@ aws ec2 describe-instance-types \
 
 The example output shows that this instance type has two 3800 GB NVMe SSD volumes, for a total of 7600 GB of instance storage.
 
-```
+```json
 {
     "TotalSizeInGB": 7600,
     "Disks": [
@@ -109,7 +109,7 @@ The example output shows that this instance type has two 3800 GB NVMe SSD volume
 **To retrieve instance store volume information**
 Use the [Get-EC2InstanceType](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceType.html) cmdlet. The following example displays the total size of the instance storage for each instance type in the R8i instance families with instance store volumes.
 
-```
+```powershell
 (Get-EC2InstanceType -Filter `
     @{Name="instance-type"; Values="r8i*"},
     @{Name="instance-storage-supported"; Values="true"}) |
@@ -122,7 +122,7 @@ Use the [Get-EC2InstanceType](https://docs.aws.amazon.com/powershell/latest/refe
 
 The following is example output.
 
-```
+```bash
 InstanceType    Disks.SizeInGB Disks.Count TotalSizeInGB
 ------------    -------------- ----------- -------------
 r8id.large                 118           1           118
@@ -143,7 +143,7 @@ r8id.metal-96xl           3800           6         22800
 **To get complete instance storage details for an instance type**
 Use the [Get-EC2InstanceType](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceType.html) cmdlet.
 
-```
+```powershell
 (Get-EC2InstanceType `
     -Filter @{Name="instance-type"; Values="{{r8id.32xlarge}}"}).InstanceStorageInfo |
     Format-List *,

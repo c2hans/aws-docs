@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-budgets-budget-costtypes-syntax.json"></a>
 
-```
+```json
 {
   "[IncludeCredit](#cfn-budgets-budget-costtypes-includecredit)" : {{Boolean}},
   "[IncludeDiscount](#cfn-budgets-budget-costtypes-includediscount)" : {{Boolean}},
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-budgets-budget-costtypes-syntax.yaml"></a>
 
-```
+```yaml
   [IncludeCredit](#cfn-budgets-budget-costtypes-includecredit): {{Boolean}}
   [IncludeDiscount](#cfn-budgets-budget-costtypes-includediscount): {{Boolean}}
   [IncludeOtherSubscription](#cfn-budgets-budget-costtypes-includeothersubscription): {{Boolean}}

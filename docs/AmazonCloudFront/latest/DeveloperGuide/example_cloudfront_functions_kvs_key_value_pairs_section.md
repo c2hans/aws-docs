@@ -12,7 +12,7 @@ The following code example shows how to use key-value pairs in a CloudFront Func
 **JavaScript runtime 2.0 for CloudFront Functions**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [CloudFront Functions examples](https://github.com/aws-samples/amazon-cloudfront-functions/tree/main/kvs-key-value-pairs) repository.
 
-```
+```javascript
 import cf from 'cloudfront';
 
 // This fails if there is no key value store associated with the function

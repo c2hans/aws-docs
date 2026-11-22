@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspacesweb-browsersettings-webcontentfilteringpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[AllowedUrls](#cfn-workspacesweb-browsersettings-webcontentfilteringpolicy-allowedurls)" : {{[ String, ... ]}},
   "[BlockedCategories](#cfn-workspacesweb-browsersettings-webcontentfilteringpolicy-blockedcategories)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspacesweb-browsersettings-webcontentfilteringpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [AllowedUrls](#cfn-workspacesweb-browsersettings-webcontentfilteringpolicy-allowedurls): {{
     - String}}
   [BlockedCategories](#cfn-workspacesweb-browsersettings-webcontentfilteringpolicy-blockedcategories): {{

@@ -34,7 +34,7 @@ SQL Workbench/J uses JDBC to connect to your DB instance. You also need the JDBC
 
 1. In the query pane, enter the following SQL query.
 
-   ```
+   ```sql
    select @@VERSION
    ```
 

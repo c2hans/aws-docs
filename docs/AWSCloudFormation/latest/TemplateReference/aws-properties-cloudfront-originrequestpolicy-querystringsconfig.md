@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-originrequestpolicy-querystringsconfig-syntax.json"></a>
 
-```
+```json
 {
   "[QueryStringBehavior](#cfn-cloudfront-originrequestpolicy-querystringsconfig-querystringbehavior)" : {{String}},
   "[QueryStrings](#cfn-cloudfront-originrequestpolicy-querystringsconfig-querystrings)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-originrequestpolicy-querystringsconfig-syntax.yaml"></a>
 
-```
+```yaml
   [QueryStringBehavior](#cfn-cloudfront-originrequestpolicy-querystringsconfig-querystringbehavior): {{
     String}}
   [QueryStrings](#cfn-cloudfront-originrequestpolicy-querystringsconfig-querystrings): {{

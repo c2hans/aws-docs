@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspacesweb-ipaccesssettings-iprule-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-workspacesweb-ipaccesssettings-iprule-description)" : {{String}},
   "[IpRange](#cfn-workspacesweb-ipaccesssettings-iprule-iprange)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspacesweb-ipaccesssettings-iprule-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-workspacesweb-ipaccesssettings-iprule-description): {{String}}
   [IpRange](#cfn-workspacesweb-ipaccesssettings-iprule-iprange): {{String}}
 ```

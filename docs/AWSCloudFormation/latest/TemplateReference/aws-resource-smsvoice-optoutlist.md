@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-smsvoice-optoutlist-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SMSVOICE::OptOutList",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-smsvoice-optoutlist-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SMSVOICE::OptOutList
 Properties:
   [OptOutListName](#cfn-smsvoice-optoutlist-optoutlistname): {{String}}

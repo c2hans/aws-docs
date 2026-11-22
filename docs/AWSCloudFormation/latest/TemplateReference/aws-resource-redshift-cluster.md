@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-redshift-cluster-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Redshift::Cluster",
   "Properties" : {
@@ -81,7 +81,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-redshift-cluster-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Redshift::Cluster
 Properties:
   [AllowVersionUpgrade](#cfn-redshift-cluster-allowversionupgrade): {{Boolean}}
@@ -610,7 +610,7 @@ The following example describes a single-node Redshift cluster. The master user 
 #### JSON
 <a name="aws-resource-redshift-cluster--examples--Single-Node_Cluster--json"></a>
 
-```
+```json
 {
 "myCluster": {
   "Type": "AWS::Redshift::Cluster",
@@ -632,7 +632,7 @@ The following example describes a single-node Redshift cluster. The master user 
 #### YAML
 <a name="aws-resource-redshift-cluster--examples--Single-Node_Cluster--yaml"></a>
 
-```
+```yaml
 myCluster:
   Type: "AWS::Redshift::Cluster"
   Properties:

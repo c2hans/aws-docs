@@ -62,7 +62,7 @@ Because we will probably reuse the **validateEmail** function in other resolvers
 
 **BEFORE** mapping template:
 
-```
+```velocity
 ## store email input field into a generic email key
 $util.qr($ctx.stash.put("email", $ctx.args.input.email))
 {}
@@ -70,7 +70,7 @@ $util.qr($ctx.stash.put("email", $ctx.args.input.email))
 
 The console provides a default passthrough **AFTER** mapping template that will we use:
 
-```
+```velocity
 $util.toJson($ctx.result)
 ```
 
@@ -83,7 +83,7 @@ From the pipeline resolver page, in the **Functions** section, click on **Add fu
 
 On the new function page, choose **Actions**, then **Update runtime**. Choose `VTL`, then **Update**. Make sure you have created a data source of the **NONE** type. Choose this data source in the **Data source name** list. For **function name**, enter in `validateEmail`. In the **function code** area, overwrite everything with this snippet:
 
-```
+```velocity
 #set($valid = $util.matches("^[a-zA-Z0-9_.+-]+@(?:(?:[a-zA-Z0-9-]+\.)?[a-zA-Z]+\.)?(myvaliddomain)\.com", $ctx.stash.email))
 #if (!$valid)
     $util.error("$ctx.stash.email is not a valid email.")
@@ -95,7 +95,7 @@ On the new function page, choose **Actions**, then **Update runtime**. Choose `V
 
 Paste this into the response mapping template:
 
-```
+```velocity
 $util.toJson($ctx.result)
 ```
 
@@ -103,7 +103,7 @@ Review your changes, then choose **Create**. We just created our **validateEmail
 
 Request mapping template:
 
-```
+```velocity
 ## $ctx.prev.result contains the signup input values. We could have also
 ## used $ctx.args.input.
 {
@@ -113,7 +113,7 @@ Request mapping template:
 
 Response mapping template:
 
-```
+```velocity
 ## an id is required so let's add a unique random identifier to the output
 $util.qr($ctx.result.put("id", $util.autoId()))
 $util.toJson($ctx.result)
@@ -131,7 +131,7 @@ Our functions should have been added automatically to the pipeline resolver we j
 
 In the AWS AppSync console, go to the **Queries** page. In the explorer, ensure that you're using your mutation. If you aren't, choose `Mutation` in the drop-down list, then choose `+`. Enter the following query:
 
-```
+```graphql
 mutation {
   signUp(input: {
     email: "nadia@myvaliddomain.com"
@@ -145,7 +145,7 @@ mutation {
 
 This should return something like:
 
-```
+```graphql
 {
   "data": {
     "signUp": {

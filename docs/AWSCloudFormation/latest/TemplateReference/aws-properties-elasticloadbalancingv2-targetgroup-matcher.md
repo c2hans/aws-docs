@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancingv2-targetgroup-matcher-syntax.json"></a>
 
-```
+```json
 {
   "[GrpcCode](#cfn-elasticloadbalancingv2-targetgroup-matcher-grpccode)" : {{String}},
   "[HttpCode](#cfn-elasticloadbalancingv2-targetgroup-matcher-httpcode)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancingv2-targetgroup-matcher-syntax.yaml"></a>
 
-```
+```yaml
   [GrpcCode](#cfn-elasticloadbalancingv2-targetgroup-matcher-grpccode): {{String}}
   [HttpCode](#cfn-elasticloadbalancingv2-targetgroup-matcher-httpcode): {{String}}
 ```

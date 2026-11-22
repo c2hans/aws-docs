@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-predefinedattribute-values-syntax.json"></a>
 
-```
+```json
 {
   "[StringList](#cfn-connect-predefinedattribute-values-stringlist)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-predefinedattribute-values-syntax.yaml"></a>
 
-```
+```yaml
   [StringList](#cfn-connect-predefinedattribute-values-stringlist): {{
     - String}}
 ```

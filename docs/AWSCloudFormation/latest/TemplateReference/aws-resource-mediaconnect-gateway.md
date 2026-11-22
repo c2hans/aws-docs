@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-mediaconnect-gateway-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MediaConnect::Gateway",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-mediaconnect-gateway-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MediaConnect::Gateway
 Properties:
   [EgressCidrBlocks](#cfn-mediaconnect-gateway-egresscidrblocks): {{

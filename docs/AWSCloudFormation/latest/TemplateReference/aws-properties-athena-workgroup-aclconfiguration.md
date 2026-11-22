@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-athena-workgroup-aclconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[S3AclOption](#cfn-athena-workgroup-aclconfiguration-s3acloption)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-athena-workgroup-aclconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [S3AclOption](#cfn-athena-workgroup-aclconfiguration-s3acloption): {{String}}
 ```
 

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lambda-runtimealias-compatibility-syntax.json"></a>
 
-```
+```json
 {
   "[Architectures](#cfn-lambda-runtimealias-compatibility-architectures)" : {{[ String, ... ]}},
   "[IntegrationModels](#cfn-lambda-runtimealias-compatibility-integrationmodels)" : {{[ String, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lambda-runtimealias-compatibility-syntax.yaml"></a>
 
-```
+```yaml
   [Architectures](#cfn-lambda-runtimealias-compatibility-architectures): {{
     - String}}
   [IntegrationModels](#cfn-lambda-runtimealias-compatibility-integrationmodels): {{

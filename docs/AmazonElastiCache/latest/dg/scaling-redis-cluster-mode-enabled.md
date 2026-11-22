@@ -6,6 +6,9 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/scaling-redi
 
 As demand on your clusters changes, you might decide to improve performance or reduce costs by changing the number of shards in your Valkey or Redis OSS (cluster mode enabled) cluster. We recommend using online horizontal scaling to do so, because it allows your cluster to continue serving requests during the scaling process.
 
+**Note**
+Horizontal, vertical, and offline scaling are not available for distributed KV caching clusters (`cache.i8ge.48xlarge`). To change capacity, create a new cluster and reload the data. For more information, see [Sizing and scaling](distributed-kv-caching-limits.md#distributed-kv-caching-limits.scaling).
+
 Conditions under which you might decide to rescale your cluster include the following:
 + **Memory pressure:**
 
@@ -70,6 +73,7 @@ The main advantage you get from offline shard reconfiguration is that you can do
 
 **Note**
 Offline resharding is not supported on Valkey or Redis OSS clusters with data tiering enabled. For more information, see [Data tiering in ElastiCache](data-tiering.md).
+Offline resharding is not supported on distributed KV caching clusters (`cache.i8ge.48xlarge`). For more information, see [Sizing and scaling](distributed-kv-caching-limits.md#distributed-kv-caching-limits.scaling).
 + Change the node type of your replication group.
 + Specify the Availability Zone for each node in the replication group.
 + Upgrade to a newer engine version.
@@ -112,6 +116,7 @@ Currently, the following limitations apply to ElastiCache online resharding and 
 + When scaling out, the number of nodes in any new shards equals the number of nodes in the smallest existing shard.
 + When scaling out, any tags that are common to all existing shards are copied to the new shards.
 + When scaling out a Global Data Store cluster, ElastiCache will not automatically replicate Functions from one of the existing nodes to the new node(s). We recommend loading your Functions in the new shard(s) after scaling out your cluster so that every shards have the same functions.
++ You can't add or remove shards, rebalance slots, or use auto scaling on distributed KV caching clusters. For more information, see [Requirements and limits for distributed KV caching](distributed-kv-caching-limits.md).
 
 **Note**
 In ElastiCache for Valkey 7.2 and above, and ElastiCache for Redis OSS version 7 and above: When scaling out your cluster, ElastiCache will automatically replicate the Functions loaded in one of the existing nodes (selected at random) to the new node(s). If your application uses [Functions](https://valkey.io/topics/functions-intro/), we recommend loading all of your functions to all the shards before scaling out so that your cluster does not end up with different function definitions on different shards.

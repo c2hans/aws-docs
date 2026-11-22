@@ -48,7 +48,7 @@ Amplify considers all provided cache paths to be relative to your project root. 
 
 The following example of a build specification demonstrates the basic YAML syntax.
 
-```
+```yaml
 version: 1
 env:
   variables:

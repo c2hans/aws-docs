@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-b2bi-transformer-x12splitoptions-syntax.json"></a>
 
-```
+```json
 {
   "[SplitBy](#cfn-b2bi-transformer-x12splitoptions-splitby)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-b2bi-transformer-x12splitoptions-syntax.yaml"></a>
 
-```
+```yaml
   [SplitBy](#cfn-b2bi-transformer-x12splitoptions-splitby): {{String}}
 ```
 

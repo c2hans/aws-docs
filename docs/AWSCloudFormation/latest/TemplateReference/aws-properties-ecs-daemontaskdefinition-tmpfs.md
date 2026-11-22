@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-daemontaskdefinition-tmpfs-syntax.json"></a>
 
-```
+```json
 {
   "[ContainerPath](#cfn-ecs-daemontaskdefinition-tmpfs-containerpath)" : {{String}},
   "[MountOptions](#cfn-ecs-daemontaskdefinition-tmpfs-mountoptions)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-daemontaskdefinition-tmpfs-syntax.yaml"></a>
 
-```
+```yaml
   [ContainerPath](#cfn-ecs-daemontaskdefinition-tmpfs-containerpath): {{String}}
   [MountOptions](#cfn-ecs-daemontaskdefinition-tmpfs-mountoptions): {{
     - String}}

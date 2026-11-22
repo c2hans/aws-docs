@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-mediaconnect-flowsource-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MediaConnect::FlowSource",
   "Properties" : {
@@ -44,7 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-mediaconnect-flowsource-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MediaConnect::FlowSource
 Properties:
   [Decryption](#cfn-mediaconnect-flowsource-decryption): {{

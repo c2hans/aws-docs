@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrcontainers-securityconfiguration-authorizationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[LakeFormationConfiguration](#cfn-emrcontainers-securityconfiguration-authorizationconfiguration-lakeformationconfiguration)" : {{LakeFormationConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrcontainers-securityconfiguration-authorizationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [LakeFormationConfiguration](#cfn-emrcontainers-securityconfiguration-authorizationconfiguration-lakeformationconfiguration): {{
     LakeFormationConfiguration}}
 ```

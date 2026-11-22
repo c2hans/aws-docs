@@ -32,7 +32,7 @@ aws s3api get-object --bucket arn:aws:s3-outposts:{{region}}:{{123456789012}}:ou
 
 The following S3 on Outposts example gets an object by using the SDK for Java. To use this example, replace each `{{user input placeholder}}` with your own information. For more information, see [GetObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html) in the *Amazon Simple Storage Service API Reference*.
 
-```
+```Java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.SdkClientException;
 import com.amazonaws.services.s3.AmazonS3;

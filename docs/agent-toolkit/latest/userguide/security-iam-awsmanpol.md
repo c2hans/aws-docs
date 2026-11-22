@@ -21,7 +21,7 @@ This policy includes the following permissions:
 
 The policy allows these actions only on the AWS MCP Server service principal resource. The following policy document shows this restriction.
 
-```
+```json
 {
   "Version" : "2012-10-17",
   "Statement" : [

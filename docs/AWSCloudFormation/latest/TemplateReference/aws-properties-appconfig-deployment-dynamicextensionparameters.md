@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appconfig-deployment-dynamicextensionparameters-syntax.json"></a>
 
-```
+```json
 {
   "[ExtensionReference](#cfn-appconfig-deployment-dynamicextensionparameters-extensionreference)" : {{String}},
   "[ParameterName](#cfn-appconfig-deployment-dynamicextensionparameters-parametername)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appconfig-deployment-dynamicextensionparameters-syntax.yaml"></a>
 
-```
+```yaml
   [ExtensionReference](#cfn-appconfig-deployment-dynamicextensionparameters-extensionreference): {{String}}
   [ParameterName](#cfn-appconfig-deployment-dynamicextensionparameters-parametername): {{String}}
   [ParameterValue](#cfn-appconfig-deployment-dynamicextensionparameters-parametervalue): {{String}}

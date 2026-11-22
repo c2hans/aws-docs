@@ -51,13 +51,13 @@ If you have not yet onboarded to AWS Config, it might be faster to onboard using
 
 1. Type the following command to determine if you already enabled your AWS Config recorder.
 
-   ```
+   ```sh
    $ aws configservice describe-configuration-recorders
    ```
 
    1. If your `ConfigurationRecorders` list is empty like this:
 
-      ```
+      ```json
       {
         "ConfigurationRecorders": []
       }
@@ -67,7 +67,7 @@ If you have not yet onboarded to AWS Config, it might be faster to onboard using
 
    1. If you already enabled recording for all resources, your `ConfigurationRecorders` output will look like this:
 
-      ```
+      ```JSON
       {
         "ConfigurationRecorders":[
           {
@@ -89,7 +89,7 @@ If you have not yet onboarded to AWS Config, it might be faster to onboard using
 
 1. Create a AWS Config recorder with the AWS Backup Audit Manager resource types
 
-   ```
+   ```sh
    $ aws configservice put-configuration-recorder --configuration-recorder name={{default}}, \
    roleARN=arn:aws:iam::{{accountId}}:role/aws-service-role/config.amazonaws.com/AWSServiceRoleForConfig \
    --recording-group resourceTypes="['AWS::Backup::BackupPlan','AWS::Backup::BackupSelection', \
@@ -98,13 +98,13 @@ If you have not yet onboarded to AWS Config, it might be faster to onboard using
 
 1. Describe your AWS Config recorder.
 
-   ```
+   ```sh
    $ aws configservice describe-configuration-recorders
    ```
 
    Verify that it has the AWS Backup Audit Manager resource types by comparing your output with the following expected output.
 
-   ```
+   ```json
    {
      "ConfigurationRecorders":[
        {
@@ -127,13 +127,13 @@ If you have not yet onboarded to AWS Config, it might be faster to onboard using
 
 1. Create an Amazon S3 bucket as the destination to store the AWS Config configuration files.
 
-   ```
+   ```sh
    $ aws s3api create-bucket --bucket {{amzn-s3-demo-bucket}} —region {{us-east-1}}
    ```
 
 1. Use {{policy.json}} to grant AWS Config permission to access your bucket. See the following sample {{policy.json}}.
 
-   ```
+   ```sh
    $ aws s3api put-bucket-policy --bucket {{amzn-s3-demo-bucket}} --policy {{file://policy.json}}
    ```
 
@@ -142,7 +142,7 @@ If you have not yet onboarded to AWS Config, it might be faster to onboard using
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement":[
@@ -196,23 +196,23 @@ If you have not yet onboarded to AWS Config, it might be faster to onboard using
 
 1. Configure your bucket as an AWS Config delivery channel
 
-   ```
+   ```sh
    $ aws configservice put-delivery-channel --delivery-channel name={{default}},s3BucketName={{amzn-s3-demo-bucket}}
    ```
 
 1. Enable AWS Config recording
 
-   ```
+   ```sh
    $ aws configservice start-configuration-recorder --configuration-recorder-name {{default}}
    ```
 
 1. Verify that `"FrameworkStatus":"ACTIVE"` in the last line of your `DescribeFramework` output as follows.
 
-   ```
+   ```sh
    $ aws backup describe-framework --framework-name {{test}} --region {{us-east-1}}
    ```
 
-   ```
+   ```json
    {
      "FrameworkName":"test",
     "FrameworkArn":"arn:aws:backup:us-east-1:{{accountId}}:framework:{{test-f0001b0a-0000-1111-ad3d-4444f5cc6666}}",

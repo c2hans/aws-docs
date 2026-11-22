@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-networkinterface-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-ec2-networkinterface-tag-key)" : {{String}},
   "[Value](#cfn-ec2-networkinterface-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-networkinterface-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-ec2-networkinterface-tag-key): {{String}}
   [Value](#cfn-ec2-networkinterface-tag-value): {{String}}
 ```
@@ -57,7 +57,7 @@ This example specifies two tags for the network interface.
 #### JSON
 <a name="aws-properties-ec2-networkinterface-tag--examples----json"></a>
 
-```
+```json
 "Tags" : [
    {
       "Key" : "key1",
@@ -73,7 +73,7 @@ This example specifies two tags for the network interface.
 #### YAML
 <a name="aws-properties-ec2-networkinterface-tag--examples----yaml"></a>
 
-```
+```yaml
 Tags:
   - Key: "key1"
     Value: "value1"

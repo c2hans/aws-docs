@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-mwaaserverless-workflow-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MWAAServerless::Workflow",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-mwaaserverless-workflow-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MWAAServerless::Workflow
 Properties:
   [Code](#cfn-mwaaserverless-workflow-code): {{

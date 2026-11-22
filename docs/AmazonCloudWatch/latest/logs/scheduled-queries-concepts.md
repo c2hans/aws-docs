@@ -24,7 +24,7 @@ Allows CloudWatch Logs to run CloudWatch Logs Insights queries on your behalf. T
 **Trust relationship requirement:** The query execution role must include a trust policy that allows the CloudWatch Logs service (`logs.amazonaws.com`) to assume the role. Without this trust relationship, scheduled queries will fail with permission errors.
 Example trust policy for the query execution role:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -40,7 +40,7 @@ Example trust policy for the query execution role:
 ```
 Example permissions policy for the query execution role:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -63,7 +63,7 @@ Allows CloudWatch Logs to deliver query results to your chosen destination. This
 **Trust relationship requirement:** The destination delivery role must also include a trust policy that allows the CloudWatch Logs service (`logs.amazonaws.com`) to assume the role.
 Example permissions policy for S3 destination delivery role:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -79,7 +79,7 @@ Example permissions policy for S3 destination delivery role:
 ```
 Example permissions policy for a lookup table destination delivery role:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -195,7 +195,7 @@ EventBridge destinations receive query metadata, including the query statistics,
 
 The following example shows the event that CloudWatch Logs publishes to EventBridge when a scheduled query completes.
 
-```
+```json
 {
     "version": "0",
     "id": "be72061b-eca2-e068-a7e1-83e01d6fe807",
@@ -271,7 +271,7 @@ filter @message like /ERROR/
 
 If the query reads 1,500,000 log events, 24,318 of them contain `ERROR`, and those matching log events come from 12 log streams, then the query completes with the following statistics.
 
-```
+```json
 "statistics": {
     "recordsMatched": 24318,
     "recordsScanned": 1500000,

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-capacityprovider-managedinstancesprovider-syntax.json"></a>
 
-```
+```json
 {
   "[AutoRepairConfiguration](#cfn-ecs-capacityprovider-managedinstancesprovider-autorepairconfiguration)" : {{AutoRepairConfiguration}},
   "[InfrastructureOptimization](#cfn-ecs-capacityprovider-managedinstancesprovider-infrastructureoptimization)" : {{InfrastructureOptimization}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-capacityprovider-managedinstancesprovider-syntax.yaml"></a>
 
-```
+```yaml
   [AutoRepairConfiguration](#cfn-ecs-capacityprovider-managedinstancesprovider-autorepairconfiguration): {{
     AutoRepairConfiguration}}
   [InfrastructureOptimization](#cfn-ecs-capacityprovider-managedinstancesprovider-infrastructureoptimization): {{

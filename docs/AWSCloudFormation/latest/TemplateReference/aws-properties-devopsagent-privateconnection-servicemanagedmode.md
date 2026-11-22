@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-privateconnection-servicemanagedmode-syntax.json"></a>
 
-```
+```json
 {
   "[DnsResolution](#cfn-devopsagent-privateconnection-servicemanagedmode-dnsresolution)" : {{String}},
   "[HostAddress](#cfn-devopsagent-privateconnection-servicemanagedmode-hostaddress)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-privateconnection-servicemanagedmode-syntax.yaml"></a>
 
-```
+```yaml
   [DnsResolution](#cfn-devopsagent-privateconnection-servicemanagedmode-dnsresolution): {{String}}
   [HostAddress](#cfn-devopsagent-privateconnection-servicemanagedmode-hostaddress): {{String}}
   [IpAddressType](#cfn-devopsagent-privateconnection-servicemanagedmode-ipaddresstype): {{String}}

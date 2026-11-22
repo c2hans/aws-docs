@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-qbusiness-datasource-documentattributevalue-syntax.json"></a>
 
-```
+```json
 {
   "[DateValue](#cfn-qbusiness-datasource-documentattributevalue-datevalue)" : {{String}},
   "[LongValue](#cfn-qbusiness-datasource-documentattributevalue-longvalue)" : {{Number}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-qbusiness-datasource-documentattributevalue-syntax.yaml"></a>
 
-```
+```yaml
   [DateValue](#cfn-qbusiness-datasource-documentattributevalue-datevalue): {{String}}
   [LongValue](#cfn-qbusiness-datasource-documentattributevalue-longvalue): {{Number}}
   [StringListValue](#cfn-qbusiness-datasource-documentattributevalue-stringlistvalue): {{

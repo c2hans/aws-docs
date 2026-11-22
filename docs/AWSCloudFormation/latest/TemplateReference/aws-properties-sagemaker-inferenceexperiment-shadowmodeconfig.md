@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-inferenceexperiment-shadowmodeconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ShadowModelVariants](#cfn-sagemaker-inferenceexperiment-shadowmodeconfig-shadowmodelvariants)" : {{[ ShadowModelVariantConfig, ... ]}},
   "[SourceModelVariantName](#cfn-sagemaker-inferenceexperiment-shadowmodeconfig-sourcemodelvariantname)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-inferenceexperiment-shadowmodeconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ShadowModelVariants](#cfn-sagemaker-inferenceexperiment-shadowmodeconfig-shadowmodelvariants): {{
     - ShadowModelVariantConfig}}
   [SourceModelVariantName](#cfn-sagemaker-inferenceexperiment-shadowmodeconfig-sourcemodelvariantname): {{String}}

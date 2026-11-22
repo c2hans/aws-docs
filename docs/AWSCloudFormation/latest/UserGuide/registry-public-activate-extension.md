@@ -40,7 +40,7 @@ Follow the steps in this section to use the console to:
 
 1. For **Logging config**, specify logging configuration information for an extension, if desired. For example:
 
-   ```
+   ```json
    {
        "logRoleArn": "arn:aws:iam::{{account}}:role/{{rolename}}",
        "logGroupName": "{{log-group-name}}"
@@ -125,7 +125,7 @@ By activating Hooks in your account, you are authorizing a Hook to use defined p
 
   This command returns an ARN of the activated extension.
 
-  ```
+  ```json
   {
       "Arn": "arn:aws:cloudformation:us-west-2:123456789012:type/resource/My-Resource-Example"
   }

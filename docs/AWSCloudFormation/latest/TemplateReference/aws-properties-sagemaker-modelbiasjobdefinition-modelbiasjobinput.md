@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelbiasjobdefinition-modelbiasjobinput-syntax.json"></a>
 
-```
+```json
 {
   "[BatchTransformInput](#cfn-sagemaker-modelbiasjobdefinition-modelbiasjobinput-batchtransforminput)" : {{BatchTransformInput}},
   "[EndpointInput](#cfn-sagemaker-modelbiasjobdefinition-modelbiasjobinput-endpointinput)" : {{EndpointInput}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelbiasjobdefinition-modelbiasjobinput-syntax.yaml"></a>
 
-```
+```yaml
   [BatchTransformInput](#cfn-sagemaker-modelbiasjobdefinition-modelbiasjobinput-batchtransforminput): {{
     BatchTransformInput}}
   [EndpointInput](#cfn-sagemaker-modelbiasjobdefinition-modelbiasjobinput-endpointinput): {{

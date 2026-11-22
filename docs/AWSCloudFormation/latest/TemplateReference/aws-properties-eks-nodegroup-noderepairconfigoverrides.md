@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-nodegroup-noderepairconfigoverrides-syntax.json"></a>
 
-```
+```json
 {
   "[MinRepairWaitTimeMins](#cfn-eks-nodegroup-noderepairconfigoverrides-minrepairwaittimemins)" : {{Integer}},
   "[NodeMonitoringCondition](#cfn-eks-nodegroup-noderepairconfigoverrides-nodemonitoringcondition)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-nodegroup-noderepairconfigoverrides-syntax.yaml"></a>
 
-```
+```yaml
   [MinRepairWaitTimeMins](#cfn-eks-nodegroup-noderepairconfigoverrides-minrepairwaittimemins): {{Integer}}
   [NodeMonitoringCondition](#cfn-eks-nodegroup-noderepairconfigoverrides-nodemonitoringcondition): {{String}}
   [NodeUnhealthyReason](#cfn-eks-nodegroup-noderepairconfigoverrides-nodeunhealthyreason): {{String}}

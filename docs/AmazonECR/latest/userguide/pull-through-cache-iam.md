@@ -49,7 +49,7 @@ Use the following AWS CLI command to specify the private registry permissions us
 
 ****
 
-   ```
+   ```json
    {
      "Version":"2012-10-17",
      "Statement": [

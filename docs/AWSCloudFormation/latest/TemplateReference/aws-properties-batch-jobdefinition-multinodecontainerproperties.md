@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-jobdefinition-multinodecontainerproperties-syntax.json"></a>
 
-```
+```json
 {
   "[Command](#cfn-batch-jobdefinition-multinodecontainerproperties-command)" : {{[ String, ... ]}},
   "[EnableExecuteCommand](#cfn-batch-jobdefinition-multinodecontainerproperties-enableexecutecommand)" : {{Boolean}},
@@ -46,7 +46,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-jobdefinition-multinodecontainerproperties-syntax.yaml"></a>
 
-```
+```yaml
   [Command](#cfn-batch-jobdefinition-multinodecontainerproperties-command): {{
     - String}}
   [EnableExecuteCommand](#cfn-batch-jobdefinition-multinodecontainerproperties-enableexecutecommand): {{Boolean}}

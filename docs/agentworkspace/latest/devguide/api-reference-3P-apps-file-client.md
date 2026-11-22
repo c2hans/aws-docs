@@ -8,7 +8,7 @@ The Connect Customer SDK provides a `FileClient` which serves as an interface th
 
 The `FileClient` constructor accepts a `ConnectClientConfig` argument, which is defined as:
 
-```
+```typescript
 export type ConnectClientConfig =
     | AmazonConnectProvider
     | { context: ModuleContext; provider?: AmazonConnectProvider }
@@ -17,7 +17,7 @@ export type ConnectClientConfig =
 
 Pass the `provider` that `AmazonConnectApp.init` returns directly to the constructor:
 
-```
+```typescript
 import { FileClient } from "@amazon-connect/file";
 
 const fileClient = new FileClient(provider);

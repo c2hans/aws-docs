@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-datasource-hierarchicalchunkingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[LevelConfigurations](#cfn-bedrock-datasource-hierarchicalchunkingconfiguration-levelconfigurations)" : {{[ HierarchicalChunkingLevelConfiguration, ... ]}},
   "[OverlapTokens](#cfn-bedrock-datasource-hierarchicalchunkingconfiguration-overlaptokens)" : {{Integer}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-datasource-hierarchicalchunkingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [LevelConfigurations](#cfn-bedrock-datasource-hierarchicalchunkingconfiguration-levelconfigurations): {{
     - HierarchicalChunkingLevelConfiguration}}
   [OverlapTokens](#cfn-bedrock-datasource-hierarchicalchunkingconfiguration-overlaptokens): {{Integer}}

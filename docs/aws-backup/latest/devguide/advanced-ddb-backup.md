@@ -86,7 +86,7 @@ You can also enable AWS Backup advanced features for DynamoDB backups using the 
 
 1. Check if you already enabled AWS Backup advanced features for DynamoDB using the following command:
 
-   ```
+   ```sh
    $ aws backup describe-region-settings
    ```
 
@@ -94,7 +94,7 @@ You can also enable AWS Backup advanced features for DynamoDB backups using the 
 
    If, like the following output, you have at least one instance of `"DynamoDB":false`, you have not yet enabled advanced DynamoDB backup, proceed to the next step.
 
-   ```
+   ```JSON
    {
      "ResourceTypeManagementPreference":{
        "DynamoDB":false,
@@ -117,7 +117,7 @@ You can also enable AWS Backup advanced features for DynamoDB backups using the 
 
 1. Use the following [`UpdateRegionSettings`](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_UpdateRegionSettings.html) operation to set both `"ResourceTypeManagementPreference"` and `"ResourceTypeOptInPreference"` to `"DynamoDB":true`:
 
-   ```
+   ```sh
    aws backup update-region-settings \
                  --resource-type-opt-in-preference DynamoDB=true \
                  --resource-type-management-preference DynamoDB=true

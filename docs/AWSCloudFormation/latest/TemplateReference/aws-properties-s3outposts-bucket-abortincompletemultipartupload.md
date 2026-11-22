@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3outposts-bucket-abortincompletemultipartupload-syntax.json"></a>
 
-```
+```json
 {
   "[DaysAfterInitiation](#cfn-s3outposts-bucket-abortincompletemultipartupload-daysafterinitiation)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3outposts-bucket-abortincompletemultipartupload-syntax.yaml"></a>
 
-```
+```yaml
   [DaysAfterInitiation](#cfn-s3outposts-bucket-abortincompletemultipartupload-daysafterinitiation): {{Integer}}
 ```
 

@@ -36,7 +36,7 @@ This adds a DNS suffix lookup for the following domain and configures other stan
 
 1. Update the following settings as needed and save your changes. Provide a password in `adminPassword` only if `adminPasswordtype` is `Specify`.
 
-   ```
+   ```json
    {
    	"setComputerName": false,
    	"setMonitorAlwaysOn": true,
@@ -59,7 +59,7 @@ EC2Launch uses the password you specify in the `unattend.xml` file. If you don't
 
 1. In Windows PowerShell, run the following command to schedule the script to run as a Windows Scheduled Task. The script runs one time during the next boot and then disables these tasks from running again.
 
-   ```
+   ```powershell
    C:\ProgramData\Amazon\EC2-Windows\Launch\Scripts\InitializeInstance.ps1 -Schedule
    ```
 
@@ -72,13 +72,13 @@ To enable EC2Launch to run on every boot:
 
 1. Open Windows PowerShell and run the following command:
 
-   ```
+   ```powershell
    C:\ProgramData\Amazon\EC2-Windows\Launch\Scripts\InitializeInstance.ps1 -SchedulePerBoot
    ```
 
 1. Or, run the executable with the following command:
 
-   ```
+   ```powershell
    C:\ProgramData\Amazon\EC2-Windows\Launch\Settings\Ec2LaunchSettings.exe
    ```
 
@@ -100,7 +100,7 @@ Specify settings in the `DriveLetterMappingConfig.json` file to map drive letter
 
 1. Specify the following volume settings and save your changes:
 
-   ```
+   ```json
    {
    	"driveLetterMapping": [
    		{
@@ -113,13 +113,13 @@ Specify settings in the `DriveLetterMappingConfig.json` file to map drive letter
 
 1. Open Windows PowerShell and use the following command to run the EC2Launch script that initializes the disks:
 
-   ```
+   ```powershell
    C:\ProgramData\Amazon\EC2-Windows\Launch\Scripts\InitializeDisks.ps1
    ```
 
    To initialize the disks each time the instance boots, add the `-Schedule` flag as follows:
 
-   ```
+   ```powershell
    C:\ProgramData\Amazon\EC2-Windows\Launch\Scripts\InitializeDisks.ps1 -Schedule
    ```
 
@@ -134,7 +134,7 @@ Specify settings in the `EventLogConfig.json` file to send Windows Event logs to
 
 1. Configure the following log settings and save your changes:
 
-   ```
+   ```json
    {
    	"events": [
    		{
@@ -149,7 +149,7 @@ Specify settings in the `EventLogConfig.json` file to send Windows Event logs to
 
 1. In Windows PowerShell, run the following command so that the system schedules the script to run as a Windows Scheduled Task each time the instance boots.
 
-   ```
+   ```powershell
    C:\ProgramData\Amazon\EC2-Windows\Launch\Scripts\SendEventLogs.ps1 -Schedule
    ```
 
@@ -160,6 +160,6 @@ Specify settings in the `EventLogConfig.json` file to send Windows Event logs to
 
 The EC2Config service sent the "Windows is ready" message to the EC2 console after every boot. EC2Launch sends this message only after the initial boot. For backwards compatibility with the EC2Config service, you can schedule EC2Launch to send this message after every boot. On the instance, open Windows PowerShell and run the following command. The system schedules the script to run as a Windows Scheduled Task.
 
-```
+```powershell
 C:\ProgramData\Amazon\EC2-Windows\Launch\Scripts\SendWindowsIsReady.ps1 -Schedule
 ```

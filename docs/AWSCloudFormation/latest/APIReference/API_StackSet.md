@@ -92,6 +92,11 @@ The name that's associated with the StackSet.
 Type: String
 Required: No
 
+ ** StackSetOutputBucketPath **
+The Amazon S3 bucket path where CloudFormation stores the execution role stack template body. CloudFormation uses this bucket only when you specify a custom execution role template.
+Type: String
+Required: No
+
  ** Status **
 The status of the StackSet.
 Type: String

@@ -46,6 +46,12 @@ Type: String
 Valid Values: `AWS_MANAGED | ACME | CUSTOMER_PROVIDED`
 Required: No
 
+ ** CertificateUsage **   <a name="ACM-Type-CertificateDetail-CertificateUsage"></a>
+The Extended Key Usage profile of the certificate. This value exists only for Amazon N2 certificates. If `CertificateUsage` was omitted from the request, this value is `CLIENT_AND_SERVER_AUTH`.
+Type: String
+Valid Values: `CLIENT_AND_SERVER_AUTH | CLIENT_AUTH_ONLY`
+Required: No
+
  ** CreatedAt **   <a name="ACM-Type-CertificateDetail-CreatedAt"></a>
 The time at which the certificate was requested.
 Type: Timestamp
@@ -123,7 +129,7 @@ Type: Timestamp
 Required: No
 
  ** Options **   <a name="ACM-Type-CertificateDetail-Options"></a>
-Contains the certificate options. Certificate transparency logging opt-out is no longer available. All public certificates are recorded in a certificate transparency log.
+Contains the certificate options. Certificate transparency logging opt-out is no longer available. ACM records all public certificates other than Amazon N2 certificates in a certificate transparency log.
 Type: [CertificateOptions](API_CertificateOptions.md) object
 Required: No
 
@@ -147,6 +153,12 @@ Required: No
  ** RevokedAt **   <a name="ACM-Type-CertificateDetail-RevokedAt"></a>
 The time at which the certificate was revoked. This value exists only when the certificate status is `REVOKED`.
 Type: Timestamp
+Required: No
+
+ ** RootHierarchyType **   <a name="ACM-Type-CertificateDetail-RootHierarchyType"></a>
+The root hierarchy from which the certificate was issued. This value exists only for Amazon N2 certificates, which have a `Type` of `AMAZON_ISSUED`.
+Type: String
+Valid Values: `N2_AMAZON_MANAGED | N2_SFG2_AMAZON_MANAGED`
 Required: No
 
  ** Serial **   <a name="ACM-Type-CertificateDetail-Serial"></a>

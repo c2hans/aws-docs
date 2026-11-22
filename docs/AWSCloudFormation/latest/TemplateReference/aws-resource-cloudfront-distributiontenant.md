@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudfront-distributiontenant-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudFront::DistributionTenant",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudfront-distributiontenant-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudFront::DistributionTenant
 Properties:
   [ConnectionGroupId](#cfn-cloudfront-distributiontenant-connectiongroupid): {{String}}
@@ -162,7 +162,7 @@ The following example specifies a distribution tenant that inherits its certific
 #### JSON
 <a name="aws-resource-cloudfront-distributiontenant--examples--Create_a_distribution_tenant_that_inherits_its_certificate--json"></a>
 
-```
+```json
 {
   "Resources": {
     "MyMultiTenantDistribution": {
@@ -281,7 +281,7 @@ The following example specifies a distribution tenant that inherits its certific
 #### YAML
 <a name="aws-resource-cloudfront-distributiontenant--examples--Create_a_distribution_tenant_that_inherits_its_certificate--yaml"></a>
 
-```
+```yaml
 Resources:
   MyMultiTenantDistribution:
     Type: AWS::CloudFront::Distribution
@@ -365,7 +365,7 @@ The following example specifies a distribution tenant with its own certificate.
 #### JSON
 <a name="aws-resource-cloudfront-distributiontenant--examples--Create_a_distribution_tenant_with_its_own_certificate--json"></a>
 
-```
+```json
 {
   "Resources": {
     "MyMultiTenantDistribution": {
@@ -484,7 +484,7 @@ The following example specifies a distribution tenant with its own certificate.
 #### YAML
 <a name="aws-resource-cloudfront-distributiontenant--examples--Create_a_distribution_tenant_with_its_own_certificate--yaml"></a>
 
-```
+```yaml
 Resources:
   MyMultiTenantDistribution:
     Type: AWS::CloudFront::Distribution
@@ -568,7 +568,7 @@ The following example specifies a CloudFront hosted distribution tenant.
 #### JSON
 <a name="aws-resource-cloudfront-distributiontenant--examples--Create_a_hosted_distribution_tenant--json"></a>
 
-```
+```json
 {
   "Resources": {
     "MyMultiTenantDistribution": {
@@ -705,7 +705,7 @@ The following example specifies a CloudFront hosted distribution tenant.
 #### YAML
 <a name="aws-resource-cloudfront-distributiontenant--examples--Create_a_hosted_distribution_tenant--yaml"></a>
 
-```
+```yaml
 Resources:
   MyMultiTenantDistribution:
     Type: AWS::CloudFront::Distribution
@@ -807,7 +807,7 @@ You must set up token validation for the distribution tenant when using this opt
 #### JSON
 <a name="aws-resource-cloudfront-distributiontenant--examples--Create_a_self_hosted_distribution_tenant--json"></a>
 
-```
+```json
 {
   "Resources": {
     "MyMultiTenantDistribution": {
@@ -945,7 +945,7 @@ You must set up token validation for the distribution tenant when using this opt
 #### YAML
 <a name="aws-resource-cloudfront-distributiontenant--examples--Create_a_self_hosted_distribution_tenant--yaml"></a>
 
-```
+```yaml
 Resources:
   MyMultiTenantDistribution:
     Type: AWS::CloudFront::Distribution

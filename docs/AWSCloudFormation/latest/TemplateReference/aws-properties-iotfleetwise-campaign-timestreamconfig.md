@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotfleetwise-campaign-timestreamconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ExecutionRoleArn](#cfn-iotfleetwise-campaign-timestreamconfig-executionrolearn)" : {{String}},
   "[TimestreamTableArn](#cfn-iotfleetwise-campaign-timestreamconfig-timestreamtablearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotfleetwise-campaign-timestreamconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ExecutionRoleArn](#cfn-iotfleetwise-campaign-timestreamconfig-executionrolearn): {{String}}
   [TimestreamTableArn](#cfn-iotfleetwise-campaign-timestreamconfig-timestreamtablearn): {{String}}
 ```

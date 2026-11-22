@@ -18,7 +18,7 @@ You declare parameters in a template's `Parameters` section, which uses the foll
 ### JSON
 <a name="parameters-section-structure-syntax.json"></a>
 
-```
+```json
 "Parameters" : {
   "{{ParameterLogicalID}}" : {
     "{{Description}}": "{{Information about the parameter}}",
@@ -32,7 +32,7 @@ You declare parameters in a template's `Parameters` section, which uses the foll
 ### YAML
 <a name="parameters-section-structure-syntax.yaml"></a>
 
-```
+```yaml
 Parameters:
   {{ParameterLogicalID}}:
     {{Description}}: {{Information about the parameter}}
@@ -163,7 +163,7 @@ The following example declares a parameter named `InstanceTypeParameter` of type
 #### JSON
 <a name="parameters-section-structure-example-1.json"></a>
 
-```
+```json
 "Parameters" : {
   "InstanceTypeParameter" : {
     "Description" : "Enter t2.micro, m1.small, or m1.large. Default is t2.micro.",
@@ -177,7 +177,7 @@ The following example declares a parameter named `InstanceTypeParameter` of type
 #### YAML
 <a name="parameters-section-structure-example-1.yaml"></a>
 
-```
+```yaml
 Parameters:
   InstanceTypeParameter:
     Description: Enter t2.micro, m1.small, or m1.large. Default is t2.micro.
@@ -197,7 +197,7 @@ The following example declares a parameter named `DBPwd` of type `String` with n
 #### JSON
 <a name="parameters-section-structure-example-2.json"></a>
 
-```
+```json
 "Parameters" : {
   "DBPwd" : {
     "NoEcho" : "true",
@@ -213,7 +213,7 @@ The following example declares a parameter named `DBPwd` of type `String` with n
 #### YAML
 <a name="parameters-section-structure-example-2.yaml"></a>
 
-```
+```yaml
 Parameters:
   DBPwd:
     NoEcho: true
@@ -234,7 +234,7 @@ In the following example, the `InstanceType` property of the EC2 instance resour
 #### JSON
 <a name="parameters-section-structure-example-3.json"></a>
 
-```
+```json
 "Ec2Instance" : {
   "Type" : "AWS::EC2::Instance",
   "Properties" : {
@@ -247,7 +247,7 @@ In the following example, the `InstanceType` property of the EC2 instance resour
 #### YAML
 <a name="parameters-section-structure-example-3.yaml"></a>
 
-```
+```yaml
 Ec2Instance:
   Type: AWS::EC2::Instance
   Properties:
@@ -264,7 +264,7 @@ The `CommaDelimitedList` parameter type can be useful when you need to provide m
 #### JSON
 <a name="parameters-section-structure-example-4.json"></a>
 
-```
+```json
 "Parameters" : {
   "DbSubnetIpBlocks": {
     "Description": "Comma-delimited list of three CIDR blocks",
@@ -277,7 +277,7 @@ The `CommaDelimitedList` parameter type can be useful when you need to provide m
 #### YAML
 <a name="parameters-section-structure-example-4.yaml"></a>
 
-```
+```yaml
 Parameters:
   DbSubnetIpBlocks:
     Description: "Comma-delimited list of three CIDR blocks"
@@ -293,7 +293,7 @@ To refer to a specific value in a parameter's comma-delimited list, use the `Fn:
 #### JSON
 <a name="parameters-section-structure-example-5.json"></a>
 
-```
+```json
 {
     "Parameters": {
         "VPC": {
@@ -393,7 +393,7 @@ To refer to a specific value in a parameter's comma-delimited list, use the `Fn:
 #### YAML
 <a name="parameters-section-structure-example-5.yaml"></a>
 
-```
+```yaml
 Parameters:
   VPC:
     Type: String

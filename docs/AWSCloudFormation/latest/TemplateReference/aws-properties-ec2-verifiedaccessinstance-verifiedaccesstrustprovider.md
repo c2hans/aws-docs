@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-verifiedaccessinstance-verifiedaccesstrustprovider-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-ec2-verifiedaccessinstance-verifiedaccesstrustprovider-description)" : {{String}},
   "[DeviceTrustProviderType](#cfn-ec2-verifiedaccessinstance-verifiedaccesstrustprovider-devicetrustprovidertype)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-verifiedaccessinstance-verifiedaccesstrustprovider-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-ec2-verifiedaccessinstance-verifiedaccesstrustprovider-description): {{String}}
   [DeviceTrustProviderType](#cfn-ec2-verifiedaccessinstance-verifiedaccesstrustprovider-devicetrustprovidertype): {{String}}
   [TrustProviderType](#cfn-ec2-verifiedaccessinstance-verifiedaccesstrustprovider-trustprovidertype): {{String}}

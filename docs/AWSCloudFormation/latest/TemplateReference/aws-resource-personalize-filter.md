@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-personalize-filter-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Personalize::Filter",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-personalize-filter-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Personalize::Filter
 Properties:
   [DatasetGroupArn](#cfn-personalize-filter-datasetgrouparn): {{String}}

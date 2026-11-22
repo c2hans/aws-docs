@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-sourceendpoint-standardsourceendpointconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-mediaconnect-sourceendpoint-standardsourceendpointconfiguration-name)" : {{String}},
   "[Protocol](#cfn-mediaconnect-sourceendpoint-standardsourceendpointconfiguration-protocol)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-sourceendpoint-standardsourceendpointconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-mediaconnect-sourceendpoint-standardsourceendpointconfiguration-name): {{String}}
   [Protocol](#cfn-mediaconnect-sourceendpoint-standardsourceendpointconfiguration-protocol): {{String}}
   [ProtocolConfiguration](#cfn-mediaconnect-sourceendpoint-standardsourceendpointconfiguration-protocolconfiguration): {{

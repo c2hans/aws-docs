@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3objectlambda-accesspoint-awslambda-syntax.json"></a>
 
-```
+```json
 {
   "[FunctionArn](#cfn-s3objectlambda-accesspoint-awslambda-functionarn)" : {{String}},
   "[FunctionPayload](#cfn-s3objectlambda-accesspoint-awslambda-functionpayload)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3objectlambda-accesspoint-awslambda-syntax.yaml"></a>
 
-```
+```yaml
   [FunctionArn](#cfn-s3objectlambda-accesspoint-awslambda-functionarn): {{String}}
   [FunctionPayload](#cfn-s3objectlambda-accesspoint-awslambda-functionpayload): {{String}}
 ```

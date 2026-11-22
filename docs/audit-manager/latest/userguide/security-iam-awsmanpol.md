@@ -46,7 +46,7 @@ This policy includes the following permissions:
 
 ****
 
-```
+```json
 
 ```
 
@@ -337,7 +337,7 @@ For more information about the API calls that Audit Manager uses to collect evid
 
 ****
 
-```
+```json
 
 ```
 

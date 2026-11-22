@@ -18,13 +18,13 @@ The manifest information includes the following properties:
 
 Manifest destination path example:
 
-```
+```xml
 {{user-defined-prefix}}/StorageLens/{{111122223333}}/{{example-dashboard-configuration-id}}/V_1/manifests/dt=2025-03-18/manifest.json
 ```
 
 The following example shows a `manifest.json` file for a CSV-formatted Storage Lens default metrics report:
 
-```
+```json
 {
    "sourceAccountId": "111122223333",
    "configId": "example-dashboard-configuration-id",
@@ -45,7 +45,7 @@ The following example shows a `manifest.json` file for a CSV-formatted Storage L
 
 The following example shows a `manifest.json` file for a CSV-formatted Storage Lens expanded prefixes metrics report:
 
-```
+```json
 {
    "sourceAccountId": "111122223333",
    "configId": "example-dashboard-configuration-id",
@@ -66,7 +66,7 @@ The following example shows a `manifest.json` file for a CSV-formatted Storage L
 
 The following example shows a `manifest.json` file for a Parquet-formatted Storage Lens default metrics report:
 
-```
+```json
 {
    "sourceAccountId": "111122223333",
    "configId": "example-dashboard-configuration-id",
@@ -87,7 +87,7 @@ The following example shows a `manifest.json` file for a Parquet-formatted Stora
 
 The following example shows a `manifest.json` file for a Parquet-formatted Storage Lens expanded prefixes metrics report:
 
-```
+```json
 {
    "sourceAccountId": "111122223333",
    "configId": "example-dashboard-configuration-id",

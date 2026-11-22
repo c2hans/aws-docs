@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-virtualnode-outlierdetection-syntax.json"></a>
 
-```
+```json
 {
   "[BaseEjectionDuration](#cfn-appmesh-virtualnode-outlierdetection-baseejectionduration)" : {{Duration}},
   "[Interval](#cfn-appmesh-virtualnode-outlierdetection-interval)" : {{Duration}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-virtualnode-outlierdetection-syntax.yaml"></a>
 
-```
+```yaml
   [BaseEjectionDuration](#cfn-appmesh-virtualnode-outlierdetection-baseejectionduration): {{
     Duration}}
   [Interval](#cfn-appmesh-virtualnode-outlierdetection-interval): {{

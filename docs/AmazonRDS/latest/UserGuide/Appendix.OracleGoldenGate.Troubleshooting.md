@@ -42,7 +42,7 @@ For pre-existing tables, you must specify the SCN that Oracle GoldenGate works f
 
 1. Using the `ggsci` command line, set up the start SCN for the `EXTRACT` process. The following example sets the SCN to 223274 for the `EXTRACT`.
 
-   ```
+   ```sql
    ALTER EXTRACT EABC SCN 223274
    start EABC
    ```

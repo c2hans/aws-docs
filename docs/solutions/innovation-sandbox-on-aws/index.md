@@ -6,15 +6,15 @@ source_url: https://docs.aws.amazon.com//solutions/innovation-sandbox-on-aws//in
 title: 'Innovation Sandbox on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/innovation-sandbox-on-aws/
 source: aws-documentation
-generated_on: 2026-11-18
+generated_on: 2026-11-19
 ---
 
 # Innovation Sandbox on AWS
 
 Accelerate cloud innovation with automated, secure, and cost-controlled sandbox environments
 
-- **Version**: 1.3.6
-- **Release**: 10/2026
+- **Version**: 1.3.7
+- **Release**: 11/2026
 - **Author**: AWS
 - **Est. deployment time**: 60 mins
 - **Estimated cost**: [See details](/solutions/latest/innovation-sandbox-on-aws/cost.html)

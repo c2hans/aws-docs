@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-channel-schemaevolution-syntax.json"></a>
 
-```
+```json
 {
   "[EnableSchemaEvolution](#cfn-msk-channel-schemaevolution-enableschemaevolution)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-channel-schemaevolution-syntax.yaml"></a>
 
-```
+```yaml
   [EnableSchemaEvolution](#cfn-msk-channel-schemaevolution-enableschemaevolution): {{Boolean}}
 ```
 

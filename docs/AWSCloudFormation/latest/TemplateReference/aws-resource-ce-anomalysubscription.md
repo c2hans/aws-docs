@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ce-anomalysubscription-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CE::AnomalySubscription",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ce-anomalysubscription-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CE::AnomalySubscription
 Properties:
   [Frequency](#cfn-ce-anomalysubscription-frequency): {{String}}
@@ -157,7 +157,7 @@ The following example shows two monitors attached to a subscription.
 #### JSON
 <a name="aws-resource-ce-anomalysubscription--examples--Attaching_subscriptions_to_monitors--json"></a>
 
-```
+```json
 {
   "Resources": {
     "CustomAnomalyMonitorWithLinkedAccount": {
@@ -201,7 +201,7 @@ The following example shows two monitors attached to a subscription.
 #### YAML
 <a name="aws-resource-ce-anomalysubscription--examples--Attaching_subscriptions_to_monitors--yaml"></a>
 
-```
+```yaml
 Resources:
    CustomAnomalyMonitorWithLinkedAccount:
     Type: 'AWS::CE::AnomalyMonitor'
@@ -249,7 +249,7 @@ The following example creates a subscription using a percentage-based threshold.
 #### JSON
 <a name="aws-resource-ce-anomalysubscription--examples--Using_a_percentage-based_threshold--json"></a>
 
-```
+```json
 {
   "Resources": {
     "AnomalySubscription": {
@@ -274,7 +274,7 @@ The following example creates a subscription using a percentage-based threshold.
 #### YAML
 <a name="aws-resource-ce-anomalysubscription--examples--Using_a_percentage-based_threshold--yaml"></a>
 
-```
+```yaml
 Resources:
    AnomalySubscription:
     Type: 'AWS::CE::AnomalySubscription'
@@ -305,7 +305,7 @@ The following example creates a subscription using a percentage-based threshold 
 #### JSON
 <a name="aws-resource-ce-anomalysubscription--examples--Using_a_percentage-based_threshold_and_absolute_threshold_combined_with_AND--json"></a>
 
-```
+```json
 {
   "Resources": {
     "AnomalySubscription": {
@@ -330,7 +330,7 @@ The following example creates a subscription using a percentage-based threshold 
 #### YAML
 <a name="aws-resource-ce-anomalysubscription--examples--Using_a_percentage-based_threshold_and_absolute_threshold_combined_with_AND--yaml"></a>
 
-```
+```yaml
 Resources:
   AnomalySubscription:
     Type: 'AWS::CE::AnomalySubscription'
@@ -372,7 +372,7 @@ The following example creates a subscription using a percentage-based threshold 
 #### JSON
 <a name="aws-resource-ce-anomalysubscription--examples--Using_a_percentage-based_threshold_and_absolute_threshold_combined_with_OR--json"></a>
 
-```
+```json
 {
   "Resources": {
     "AnomalySubscription": {
@@ -397,7 +397,7 @@ The following example creates a subscription using a percentage-based threshold 
 #### YAML
 <a name="aws-resource-ce-anomalysubscription--examples--Using_a_percentage-based_threshold_and_absolute_threshold_combined_with_OR--yaml"></a>
 
-```
+```yaml
 Resources:
   AnomalySubscription:
     Type: 'AWS::CE::AnomalySubscription'

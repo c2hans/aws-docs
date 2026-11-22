@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-accessanalyzer-analyzer-analyzerconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[InternalAccessConfiguration](#cfn-accessanalyzer-analyzer-analyzerconfiguration-internalaccessconfiguration)" : {{InternalAccessConfiguration}},
   "[UnusedAccessConfiguration](#cfn-accessanalyzer-analyzer-analyzerconfiguration-unusedaccessconfiguration)" : {{UnusedAccessConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-accessanalyzer-analyzer-analyzerconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [InternalAccessConfiguration](#cfn-accessanalyzer-analyzer-analyzerconfiguration-internalaccessconfiguration): {{
     InternalAccessConfiguration}}
   [UnusedAccessConfiguration](#cfn-accessanalyzer-analyzer-analyzerconfiguration-unusedaccessconfiguration): {{
@@ -59,7 +59,7 @@ The following example shows how to declare a IAM Access Analyzer `AnalyzerConfig
 #### JSON
 <a name="aws-properties-accessanalyzer-analyzer-analyzerconfiguration--examples--Declare_an_AnalyzerConfiguration_Resource--json"></a>
 
-```
+```json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Resources": {
@@ -132,7 +132,7 @@ The following example shows how to declare a IAM Access Analyzer `AnalyzerConfig
 #### YAML
 <a name="aws-properties-accessanalyzer-analyzer-analyzerconfiguration--examples--Declare_an_AnalyzerConfiguration_Resource--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   Analyzer:

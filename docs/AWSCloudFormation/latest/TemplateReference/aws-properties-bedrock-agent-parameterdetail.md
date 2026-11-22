@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-agent-parameterdetail-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-bedrock-agent-parameterdetail-description)" : {{String}},
   "[Required](#cfn-bedrock-agent-parameterdetail-required)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-agent-parameterdetail-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-bedrock-agent-parameterdetail-description): {{String}}
   [Required](#cfn-bedrock-agent-parameterdetail-required): {{Boolean}}
   [Type](#cfn-bedrock-agent-parameterdetail-type): {{String}}

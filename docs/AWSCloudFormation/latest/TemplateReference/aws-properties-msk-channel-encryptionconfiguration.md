@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-channel-encryptionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[KmsKeyArn](#cfn-msk-channel-encryptionconfiguration-kmskeyarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-channel-encryptionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [KmsKeyArn](#cfn-msk-channel-encryptionconfiguration-kmskeyarn): {{String}}
 ```
 

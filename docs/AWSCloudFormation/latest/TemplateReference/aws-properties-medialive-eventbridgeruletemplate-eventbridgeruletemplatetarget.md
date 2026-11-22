@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-eventbridgeruletemplate-eventbridgeruletemplatetarget-syntax.json"></a>
 
-```
+```json
 {
   "[Arn](#cfn-medialive-eventbridgeruletemplate-eventbridgeruletemplatetarget-arn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-eventbridgeruletemplate-eventbridgeruletemplatetarget-syntax.yaml"></a>
 
-```
+```yaml
   [Arn](#cfn-medialive-eventbridgeruletemplate-eventbridgeruletemplatetarget-arn): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-legendoptions-syntax.json"></a>
 
-```
+```json
 {
   "[Height](#cfn-quicksight-template-legendoptions-height)" : {{String}},
   "[Position](#cfn-quicksight-template-legendoptions-position)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-legendoptions-syntax.yaml"></a>
 
-```
+```yaml
   [Height](#cfn-quicksight-template-legendoptions-height): {{String}}
   [Position](#cfn-quicksight-template-legendoptions-position): {{String}}
   [Title](#cfn-quicksight-template-legendoptions-title): {{

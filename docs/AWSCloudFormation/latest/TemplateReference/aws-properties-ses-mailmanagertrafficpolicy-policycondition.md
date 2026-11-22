@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-mailmanagertrafficpolicy-policycondition-syntax.json"></a>
 
-```
+```json
 {
   "[BooleanExpression](#cfn-ses-mailmanagertrafficpolicy-policycondition-booleanexpression)" : {{IngressBooleanExpression}},
   "[IpExpression](#cfn-ses-mailmanagertrafficpolicy-policycondition-ipexpression)" : {{IngressIpv4Expression}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-mailmanagertrafficpolicy-policycondition-syntax.yaml"></a>
 
-```
+```yaml
   [BooleanExpression](#cfn-ses-mailmanagertrafficpolicy-policycondition-booleanexpression): {{
     IngressBooleanExpression}}
   [IpExpression](#cfn-ses-mailmanagertrafficpolicy-policycondition-ipexpression): {{

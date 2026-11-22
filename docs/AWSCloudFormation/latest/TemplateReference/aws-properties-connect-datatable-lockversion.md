@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-datatable-lockversion-syntax.json"></a>
 
-```
+```json
 {
   "[DataTable](#cfn-connect-datatable-lockversion-datatable)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-datatable-lockversion-syntax.yaml"></a>
 
-```
+```yaml
   [DataTable](#cfn-connect-datatable-lockversion-datatable): {{String}}
 ```
 

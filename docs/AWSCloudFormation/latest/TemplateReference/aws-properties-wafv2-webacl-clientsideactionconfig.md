@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-clientsideactionconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Challenge](#cfn-wafv2-webacl-clientsideactionconfig-challenge)" : {{ClientSideAction}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-clientsideactionconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Challenge](#cfn-wafv2-webacl-clientsideactionconfig-challenge): {{
     ClientSideAction}}
 ```

@@ -103,7 +103,7 @@ Use the [register-task-definition](https://docs.aws.amazon.com/cli/latest/refere
 
 First, create a file named `fargate-task.json` with the following contents. Ensure that you use the ARN for your task execution role. For more information, see [Amazon ECS task execution IAM role](task_execution_IAM_role.md).
 
-```
+```JSON
 {
     "family": "sample-fargate",
     "networkMode": "awsvpc",

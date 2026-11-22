@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-alarmmuterule-schedule-syntax.json"></a>
 
-```
+```json
 {
   "[Duration](#cfn-cloudwatch-alarmmuterule-schedule-duration)" : {{String}},
   "[Expression](#cfn-cloudwatch-alarmmuterule-schedule-expression)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-alarmmuterule-schedule-syntax.yaml"></a>
 
-```
+```yaml
   [Duration](#cfn-cloudwatch-alarmmuterule-schedule-duration): {{String}}
   [Expression](#cfn-cloudwatch-alarmmuterule-schedule-expression): {{String}}
   [Timezone](#cfn-cloudwatch-alarmmuterule-schedule-timezone): {{String}}

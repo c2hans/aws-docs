@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-dimensionmapping-syntax.json"></a>
 
-```
+```json
 {
   "[DimensionName](#cfn-pipes-pipe-dimensionmapping-dimensionname)" : {{String}},
   "[DimensionValue](#cfn-pipes-pipe-dimensionmapping-dimensionvalue)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-dimensionmapping-syntax.yaml"></a>
 
-```
+```yaml
   [DimensionName](#cfn-pipes-pipe-dimensionmapping-dimensionname): {{String}}
   [DimensionValue](#cfn-pipes-pipe-dimensionmapping-dimensionvalue): {{String}}
   [DimensionValueType](#cfn-pipes-pipe-dimensionmapping-dimensionvaluetype): {{String}}

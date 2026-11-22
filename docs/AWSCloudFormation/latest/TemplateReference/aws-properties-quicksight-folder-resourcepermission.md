@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-folder-resourcepermission-syntax.json"></a>
 
-```
+```json
 {
   "[Actions](#cfn-quicksight-folder-resourcepermission-actions)" : {{[ String, ... ]}},
   "[Principal](#cfn-quicksight-folder-resourcepermission-principal)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-folder-resourcepermission-syntax.yaml"></a>
 
-```
+```yaml
   [Actions](#cfn-quicksight-folder-resourcepermission-actions): {{
     - String}}
   [Principal](#cfn-quicksight-folder-resourcepermission-principal): {{String}}

@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-rbin-rule-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Rbin::Rule",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-rbin-rule-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Rbin::Rule
 Properties:
   [Description](#cfn-rbin-rule-description): {{String}}
@@ -162,7 +162,7 @@ This example creates a retention rule that retains EBS snapshots for 7 days afte
 #### JSON
 <a name="aws-resource-rbin-rule--examples--Create_a_retention_rule--json"></a>
 
-```
+```json
 "MyRule" : {
   "Type": "AWS::Rbin::Rule",
   "Properties": {
@@ -192,7 +192,7 @@ This example creates a retention rule that retains EBS snapshots for 7 days afte
 #### YAML
 <a name="aws-resource-rbin-rule--examples--Create_a_retention_rule--yaml"></a>
 
-```
+```yaml
 MyRule:
   Type: AWS::Rbin::Rule
   Properties:

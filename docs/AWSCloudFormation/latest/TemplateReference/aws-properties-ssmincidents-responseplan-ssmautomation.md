@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ssmincidents-responseplan-ssmautomation-syntax.json"></a>
 
-```
+```json
 {
   "[DocumentName](#cfn-ssmincidents-responseplan-ssmautomation-documentname)" : {{String}},
   "[DocumentVersion](#cfn-ssmincidents-responseplan-ssmautomation-documentversion)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ssmincidents-responseplan-ssmautomation-syntax.yaml"></a>
 
-```
+```yaml
   [DocumentName](#cfn-ssmincidents-responseplan-ssmautomation-documentname): {{String}}
   [DocumentVersion](#cfn-ssmincidents-responseplan-ssmautomation-documentversion): {{String}}
   [DynamicParameters](#cfn-ssmincidents-responseplan-ssmautomation-dynamicparameters): {{

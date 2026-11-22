@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotsitewise-dashboard-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-iotsitewise-dashboard-tag-key)" : {{String}},
   "[Value](#cfn-iotsitewise-dashboard-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotsitewise-dashboard-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-iotsitewise-dashboard-tag-key): {{String}}
   [Value](#cfn-iotsitewise-dashboard-tag-value): {{String}}
 ```

@@ -11,7 +11,7 @@ The following code examples show how to create an item with TTL.
 
 **SDK for Java 2.x**
 
-```
+```java
 package com.amazon.samplelib.ttl;
 
 import com.amazon.samplelib.CodeSampleUtils;
@@ -169,7 +169,7 @@ public class CreateTTL {
 
 **SDK for JavaScript (v3)**
 
-```
+```javascript
 import { DynamoDBClient, PutItemCommand } from "@aws-sdk/client-dynamodb";
 
 export function createDynamoDBItem(table_name, region, partition_key, sort_key) {
@@ -222,7 +222,7 @@ export function createDynamoDBItem(table_name, region, partition_key, sort_key) 
 
 **SDK for Python (Boto3)**
 
-```
+```python
 from datetime import datetime, timedelta
 
 import boto3

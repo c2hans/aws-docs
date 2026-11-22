@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotwireless-wirelessdevice-sessionkeysabpv11-syntax.json"></a>
 
-```
+```json
 {
   "[AppSKey](#cfn-iotwireless-wirelessdevice-sessionkeysabpv11-appskey)" : {{String}},
   "[FNwkSIntKey](#cfn-iotwireless-wirelessdevice-sessionkeysabpv11-fnwksintkey)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotwireless-wirelessdevice-sessionkeysabpv11-syntax.yaml"></a>
 
-```
+```yaml
   [AppSKey](#cfn-iotwireless-wirelessdevice-sessionkeysabpv11-appskey): {{String}}
   [FNwkSIntKey](#cfn-iotwireless-wirelessdevice-sessionkeysabpv11-fnwksintkey): {{String}}
   [NwkSEncKey](#cfn-iotwireless-wirelessdevice-sessionkeysabpv11-nwksenckey): {{String}}

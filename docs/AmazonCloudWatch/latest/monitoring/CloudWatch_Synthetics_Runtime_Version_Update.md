@@ -19,7 +19,7 @@ If you upgrade a canary and it fails, see [Troubleshooting a failed canary](Clou
 
 To upgrade a canary script to a supported runtime version, use the following script.
 
-```
+```nodejs
 const AWS = require('aws-sdk');
 
 // You need to configure your AWS credentials and Region.

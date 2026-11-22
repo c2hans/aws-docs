@@ -42,7 +42,7 @@ When creating your task IAM role, we recommend that you use the `aws:SourceAccou
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement":[
@@ -125,7 +125,7 @@ Replace all {{user input}} with your own values.
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement":[
@@ -189,7 +189,7 @@ Use the following procedure to create the service role.
 
 ****
 
-   ```
+   ```json
    {
       "Version":"2012-10-17",
       "Statement":[
@@ -264,7 +264,7 @@ Use the following policy for your task IAM role to add the required Amazon ECR p
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -295,7 +295,7 @@ Use the following policy for your task IAM role to add the required SSM permissi
 
 ****
 
-```
+```json
 {
    "Version":"2012-10-17",
    "Statement": [

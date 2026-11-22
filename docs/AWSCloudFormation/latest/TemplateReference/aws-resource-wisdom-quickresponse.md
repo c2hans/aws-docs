@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-wisdom-quickresponse-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Wisdom::QuickResponse",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-wisdom-quickresponse-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Wisdom::QuickResponse
 Properties:
   [Channels](#cfn-wisdom-quickresponse-channels): {{

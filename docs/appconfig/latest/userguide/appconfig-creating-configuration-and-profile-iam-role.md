@@ -13,7 +13,7 @@ You can create the IAM role that provides access to the configuration data by us
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -39,7 +39,7 @@ You can create the IAM role that provides access to the configuration data by us
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -65,7 +65,7 @@ You can create the IAM role that provides access to the configuration data by us
 
 ****
 
-```
+```json
 {
 
     "Version":"2012-10-17",
@@ -92,7 +92,7 @@ If you create the role by using AWS AppConfig, the system also creates the follo
 
 ****
 
-```
+```json
 {
 
   "Version":"2012-10-17",

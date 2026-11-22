@@ -97,7 +97,7 @@ To change a Db2 replica from read-only mode to standby mode, set `ReplicaMode=mo
 
 The following is an example API call to change the replica mode from read-only to standby:
 
-```
+```json
 {
     "DBInstanceIdentifier": "my_db2_replica",
     "ReplicaMode": "mounted",
@@ -107,7 +107,7 @@ The following is an example API call to change the replica mode from read-only t
 
 The following is an example API call to change the replica mode from standby to read-only:
 
-```
+```json
 {
     "DBInstanceIdentifier": "my_db2_replica",
     "ReplicaMode": "open-read-only",

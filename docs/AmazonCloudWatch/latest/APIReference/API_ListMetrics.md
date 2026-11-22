@@ -156,7 +156,7 @@ The following example lists metrics in the `AWS/EC2` namespace from the monitori
 #### Sample Request
 <a name="API_ListMetrics_Example_1_Request"></a>
 
-```
+```json
 {
   "IncludeLinkedAccounts": true,
   "Namespace" : "AWS/EC2"
@@ -171,7 +171,7 @@ The following example lists metrics in the `AWS/EC2` namespace from only the sou
 #### Sample Request
 <a name="API_ListMetrics_Example_2_Request"></a>
 
-```
+```json
 {
   "IncludeLinkedAccounts": "true",
   "OwningAccount" : "111111111111",

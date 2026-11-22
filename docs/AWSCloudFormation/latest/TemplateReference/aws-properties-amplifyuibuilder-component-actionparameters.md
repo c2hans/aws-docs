@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-amplifyuibuilder-component-actionparameters-syntax.json"></a>
 
-```
+```json
 {
   "[Anchor](#cfn-amplifyuibuilder-component-actionparameters-anchor)" : {{ComponentProperty}},
   "[Fields](#cfn-amplifyuibuilder-component-actionparameters-fields)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-amplifyuibuilder-component-actionparameters-syntax.yaml"></a>
 
-```
+```yaml
   [Anchor](#cfn-amplifyuibuilder-component-actionparameters-anchor): {{
     ComponentProperty}}
   [Fields](#cfn-amplifyuibuilder-component-actionparameters-fields): {{

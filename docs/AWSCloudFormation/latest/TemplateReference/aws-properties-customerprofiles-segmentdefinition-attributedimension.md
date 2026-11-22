@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-segmentdefinition-attributedimension-syntax.json"></a>
 
-```
+```json
 {
   "[DimensionType](#cfn-customerprofiles-segmentdefinition-attributedimension-dimensiontype)" : {{String}},
   "[Values](#cfn-customerprofiles-segmentdefinition-attributedimension-values)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-segmentdefinition-attributedimension-syntax.yaml"></a>
 
-```
+```yaml
   [DimensionType](#cfn-customerprofiles-segmentdefinition-attributedimension-dimensiontype): {{String}}
   [Values](#cfn-customerprofiles-segmentdefinition-attributedimension-values): {{
     - String}}

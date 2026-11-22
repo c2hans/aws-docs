@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-appimageconfig-kernelspec-syntax.json"></a>
 
-```
+```json
 {
   "[DisplayName](#cfn-sagemaker-appimageconfig-kernelspec-displayname)" : {{String}},
   "[Name](#cfn-sagemaker-appimageconfig-kernelspec-name)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-appimageconfig-kernelspec-syntax.yaml"></a>
 
-```
+```yaml
   [DisplayName](#cfn-sagemaker-appimageconfig-kernelspec-displayname): {{String}}
   [Name](#cfn-sagemaker-appimageconfig-kernelspec-name): {{String}}
 ```

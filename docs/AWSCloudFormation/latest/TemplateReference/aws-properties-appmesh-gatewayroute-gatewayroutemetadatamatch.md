@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-gatewayroute-gatewayroutemetadatamatch-syntax.json"></a>
 
-```
+```json
 {
   "[Exact](#cfn-appmesh-gatewayroute-gatewayroutemetadatamatch-exact)" : {{String}},
   "[Prefix](#cfn-appmesh-gatewayroute-gatewayroutemetadatamatch-prefix)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-gatewayroute-gatewayroutemetadatamatch-syntax.yaml"></a>
 
-```
+```yaml
   [Exact](#cfn-appmesh-gatewayroute-gatewayroutemetadatamatch-exact): {{String}}
   [Prefix](#cfn-appmesh-gatewayroute-gatewayroutemetadatamatch-prefix): {{String}}
   [Range](#cfn-appmesh-gatewayroute-gatewayroutemetadatamatch-range): {{

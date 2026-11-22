@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-emr-securityconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EMR::SecurityConfiguration",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-emr-securityconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EMR::SecurityConfiguration
 Properties:
   [Name](#cfn-emr-securityconfiguration-name): {{String}}

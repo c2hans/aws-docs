@@ -16,7 +16,7 @@ The `aws:SourceIp` condition key denies access to an AWS service, such as AWS Cl
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

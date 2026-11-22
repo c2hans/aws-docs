@@ -199,7 +199,7 @@ If role manager is enabled in your account, AWS Backup selects the default servi
 
 To restore Amazon FSx using the API or CLI, use `[StartRestoreJob](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_StartRestoreJob.html)`. You can specify the following metadata during an Amazon FSx restore:
 
-```
+```java
 StorageCapacity
 StorageType
 VpcId
@@ -264,12 +264,12 @@ For complete details about all available parameters in `OpenZFSConfiguration`, p
 
 Example CLI restore command:
 
-```
+```sh
 aws backup start-restore-job --recovery-point-arn "arn:aws:fsx:us-west-2:1234:backup/backup-1234" --iam-role-arn "arn:aws:iam::1234:role/Role" --resource-type "FSx" --region us-west-2 --metadata 'SubnetIds="[\"subnet-1234\",\"subnet-5678\"]",StorageType=HDD,SecurityGroupIds="[\"sg-bb5efdc4\",\"sg-0faa52\"]",WindowsConfiguration="{\"DeploymentType\": \"MULTI_AZ_1\",\"PreferredSubnetId\": \"subnet-1234\",\"ThroughputCapacity\": \"32\"}"'
 ```
 
 Example restore metadata:
 
-```
+```json
 "restoreMetadata":  "{\"StorageType\":\"SSD\",\"KmsKeyId\":\"arn:aws:kms:us-east-1:{{123456789012}}:key/{{123456a-123b-123c-defg-1h2i2345678}}\",\"StorageCapacity\":\"1200\",\"VpcId\":\"vpc-0ab0979fa431ad326\",\"FileSystemType\":\"LUSTRE\",\"LustreConfiguration\":\"{\\\"WeeklyMaintenanceStartTime\\\":\\\"4:10:30\\\",\\\"DeploymentType\\\":\\\"PERSISTENT_1\\\",\\\"PerUnitStorageThroughput\\\":50,\\\"CopyTagsToBackups\\\":true}\",\"FileSystemId\":\"fs-0ca11fb3d218a35c2\",\"SubnetIds\":\"[\\\"subnet-0e66e94eb43235351\\\"]\"}"
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emr-cluster-simplescalingpolicyconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AdjustmentType](#cfn-emr-cluster-simplescalingpolicyconfiguration-adjustmenttype)" : {{String}},
   "[CoolDown](#cfn-emr-cluster-simplescalingpolicyconfiguration-cooldown)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emr-cluster-simplescalingpolicyconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AdjustmentType](#cfn-emr-cluster-simplescalingpolicyconfiguration-adjustmenttype): {{String}}
   [CoolDown](#cfn-emr-cluster-simplescalingpolicyconfiguration-cooldown): {{Integer}}
   [ScalingAdjustment](#cfn-emr-cluster-simplescalingpolicyconfiguration-scalingadjustment): {{Integer}}

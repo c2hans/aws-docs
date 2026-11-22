@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dynamodb-table-pointintimerecoveryspecification-syntax.json"></a>
 
-```
+```json
 {
   "[PointInTimeRecoveryEnabled](#cfn-dynamodb-table-pointintimerecoveryspecification-pointintimerecoveryenabled)" : {{Boolean}},
   "[RecoveryPeriodInDays](#cfn-dynamodb-table-pointintimerecoveryspecification-recoveryperiodindays)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dynamodb-table-pointintimerecoveryspecification-syntax.yaml"></a>
 
-```
+```yaml
   [PointInTimeRecoveryEnabled](#cfn-dynamodb-table-pointintimerecoveryspecification-pointintimerecoveryenabled): {{Boolean}}
   [RecoveryPeriodInDays](#cfn-dynamodb-table-pointintimerecoveryspecification-recoveryperiodindays): {{Integer}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-kpiconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[FieldWells](#cfn-quicksight-analysis-kpiconfiguration-fieldwells)" : {{KPIFieldWells}},
   "[Interactions](#cfn-quicksight-analysis-kpiconfiguration-interactions)" : {{VisualInteractionOptions}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-kpiconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [FieldWells](#cfn-quicksight-analysis-kpiconfiguration-fieldwells): {{
     KPIFieldWells}}
   [Interactions](#cfn-quicksight-analysis-kpiconfiguration-interactions): {{

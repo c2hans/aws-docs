@@ -29,7 +29,7 @@ aws s3vectors list-vectors \
 
 Example response:
 
-```
+```JSON
 {
     "vectors": [
         {
@@ -50,7 +50,7 @@ Example response:
 
 Example request:
 
-```
+```bash,sh,zsh
 aws s3vectors list-vectors \
   --vector-bucket-name "{{amzn-s3-demo-vector-bucket}}" \
   --index-name "{{idx}}" \
@@ -63,7 +63,7 @@ aws s3vectors list-vectors \
 
 Example response:
 
-```
+```JSON
 {
     "vectors": [
         {
@@ -88,7 +88,7 @@ Example response:
 
 Example: List vectors in a vector index
 
-```
+```python
 import boto3
 
 # Create a S3 Vectors client in the AWS Region of your choice.
@@ -111,7 +111,7 @@ print(vectors)
 
 Example: List all vectors in a vector index in parallel
 
-```
+```python
 import boto3
 
 # Create a S3 Vectors client in the AWS Region of your choice.

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicrule-httpauthorization-syntax.json"></a>
 
-```
+```json
 {
   "[Sigv4](#cfn-iot-topicrule-httpauthorization-sigv4)" : {{SigV4Authorization}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicrule-httpauthorization-syntax.yaml"></a>
 
-```
+```yaml
   [Sigv4](#cfn-iot-topicrule-httpauthorization-sigv4): {{
     SigV4Authorization}}
 ```

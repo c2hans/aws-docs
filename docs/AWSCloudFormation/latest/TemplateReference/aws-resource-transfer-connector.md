@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-transfer-connector-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Transfer::Connector",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-transfer-connector-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Transfer::Connector
 Properties:
   [AccessRole](#cfn-transfer-connector-accessrole): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-knowledgebase-fixedsizechunkingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MaxTokens](#cfn-wisdom-knowledgebase-fixedsizechunkingconfiguration-maxtokens)" : {{Number}},
   "[OverlapPercentage](#cfn-wisdom-knowledgebase-fixedsizechunkingconfiguration-overlappercentage)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-knowledgebase-fixedsizechunkingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MaxTokens](#cfn-wisdom-knowledgebase-fixedsizechunkingconfiguration-maxtokens): {{Number}}
   [OverlapPercentage](#cfn-wisdom-knowledgebase-fixedsizechunkingconfiguration-overlappercentage): {{Number}}
 ```

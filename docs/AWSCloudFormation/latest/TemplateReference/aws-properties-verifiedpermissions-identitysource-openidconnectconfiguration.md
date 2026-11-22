@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-verifiedpermissions-identitysource-openidconnectconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EntityIdPrefix](#cfn-verifiedpermissions-identitysource-openidconnectconfiguration-entityidprefix)" : {{String}},
   "[GroupConfiguration](#cfn-verifiedpermissions-identitysource-openidconnectconfiguration-groupconfiguration)" : {{OpenIdConnectGroupConfiguration}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-verifiedpermissions-identitysource-openidconnectconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EntityIdPrefix](#cfn-verifiedpermissions-identitysource-openidconnectconfiguration-entityidprefix): {{String}}
   [GroupConfiguration](#cfn-verifiedpermissions-identitysource-openidconnectconfiguration-groupconfiguration): {{
     OpenIdConnectGroupConfiguration}}

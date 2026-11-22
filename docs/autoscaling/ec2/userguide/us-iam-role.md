@@ -55,7 +55,7 @@ The following example policy grants permissions to pass only IAM roles whose nam
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

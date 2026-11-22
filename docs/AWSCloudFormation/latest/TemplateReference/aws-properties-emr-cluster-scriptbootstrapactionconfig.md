@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emr-cluster-scriptbootstrapactionconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Args](#cfn-emr-cluster-scriptbootstrapactionconfig-args)" : {{[ String, ... ]}},
   "[Path](#cfn-emr-cluster-scriptbootstrapactionconfig-path)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emr-cluster-scriptbootstrapactionconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Args](#cfn-emr-cluster-scriptbootstrapactionconfig-args): {{
     - String}}
   [Path](#cfn-emr-cluster-scriptbootstrapactionconfig-path): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-jobtemplate-jobexecutionsretryconfig-syntax.json"></a>
 
-```
+```json
 {
   "[RetryCriteriaList](#cfn-iot-jobtemplate-jobexecutionsretryconfig-retrycriterialist)" : {{[ RetryCriteria, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-jobtemplate-jobexecutionsretryconfig-syntax.yaml"></a>
 
-```
+```yaml
   [RetryCriteriaList](#cfn-iot-jobtemplate-jobexecutionsretryconfig-retrycriterialist): {{
     - RetryCriteria}}
 ```

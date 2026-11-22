@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connect-tasktemplate-invisiblefieldinfo-syntax.json"></a>
 
-```
+```json
 {
   "[Id](#cfn-connect-tasktemplate-invisiblefieldinfo-id)" : {{FieldIdentifier}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connect-tasktemplate-invisiblefieldinfo-syntax.yaml"></a>
 
-```
+```yaml
   [Id](#cfn-connect-tasktemplate-invisiblefieldinfo-id): {{
     FieldIdentifier}}
 ```

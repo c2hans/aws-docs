@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-frauddetector-list-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::FraudDetector::List",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-frauddetector-list-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::FraudDetector::List
 Properties:
   [Description](#cfn-frauddetector-list-description): {{String}}

@@ -148,7 +148,7 @@ For each of the account in your scope, create a role, **NetworkFlowMonitorAccoun
 
 If you want to view Amazon EKS cluster resources from other accounts in the console, you must also add the following permissions to the **NetworkFlowMonitorAccountResourceAccess** role:
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [

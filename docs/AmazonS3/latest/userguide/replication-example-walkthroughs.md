@@ -36,7 +36,7 @@ When you configure replication on a bucket, Amazon S3 replicates annotations aut
 
 The following example shows the source bucket statement in the IAM role permissions policy with the annotation replication permission included:
 
-```
+```json
 {
    "Effect": "Allow",
    "Action": [

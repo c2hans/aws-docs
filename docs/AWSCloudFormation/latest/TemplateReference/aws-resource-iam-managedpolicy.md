@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iam-managedpolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IAM::ManagedPolicy",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iam-managedpolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IAM::ManagedPolicy
 Properties:
   [Description](#cfn-iam-managedpolicy-description): {{String}}
@@ -197,7 +197,7 @@ The following example creates a managed policy and associates it with the `TestD
 #### JSON
 <a name="aws-resource-iam-managedpolicy--examples--Create_managed_policy--json"></a>
 
-```
+```json
 {
     "CreateTestDBPolicy": {
         "Type": "AWS::IAM::ManagedPolicy",
@@ -270,7 +270,7 @@ The following example creates a managed policy and associates it with the `TestD
 #### YAML
 <a name="aws-resource-iam-managedpolicy--examples--Create_managed_policy--yaml"></a>
 
-```
+```yaml
 CreateTestDBPolicy:
   Type: 'AWS::IAM::ManagedPolicy'
   Properties:

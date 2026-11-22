@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-queueconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Event](#cfn-s3-bucket-queueconfiguration-event)" : {{String}},
   "[Filter](#cfn-s3-bucket-queueconfiguration-filter)" : {{NotificationFilter}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-queueconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Event](#cfn-s3-bucket-queueconfiguration-event): {{String}}
   [Filter](#cfn-s3-bucket-queueconfiguration-filter): {{
     NotificationFilter}}

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/delete-a-named-query.ht
 
 The `DeleteNamedQueryExample` shows how to delete a named query by using the named query ID.
 
-```
+```java
 package aws.example.athena;
 
 import software.amazon.awssdk.regions.Region;

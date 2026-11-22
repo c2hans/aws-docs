@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BufferingHints](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-bufferinghints)" : {{AmazonopensearchserviceBufferingHints}},
   "[CloudWatchLoggingOptions](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-cloudwatchloggingoptions)" : {{CloudWatchLoggingOptions}},
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BufferingHints](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-bufferinghints): {{
     AmazonopensearchserviceBufferingHints}}
   [CloudWatchLoggingOptions](#cfn-kinesisfirehose-deliverystream-amazonopensearchservicedestinationconfiguration-cloudwatchloggingoptions): {{

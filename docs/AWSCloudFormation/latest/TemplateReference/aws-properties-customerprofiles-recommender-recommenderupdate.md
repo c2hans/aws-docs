@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-customerprofiles-recommender-recommenderupdate-syntax.json"></a>
 
-```
+```json
 {
   "[CreationDateTime](#cfn-customerprofiles-recommender-recommenderupdate-creationdatetime)" : {{String}},
   "[FailureReason](#cfn-customerprofiles-recommender-recommenderupdate-failurereason)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-customerprofiles-recommender-recommenderupdate-syntax.yaml"></a>
 
-```
+```yaml
   [CreationDateTime](#cfn-customerprofiles-recommender-recommenderupdate-creationdatetime): {{String}}
   [FailureReason](#cfn-customerprofiles-recommender-recommenderupdate-failurereason): {{String}}
   [LastUpdatedDateTime](#cfn-customerprofiles-recommender-recommenderupdate-lastupdateddatetime): {{String}}

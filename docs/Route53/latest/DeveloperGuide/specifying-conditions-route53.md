@@ -117,7 +117,7 @@ The following permissions policy grants permissions that allow `ChangeResourceRe
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -146,7 +146,7 @@ To implement the permission that matches names with certain suffixes, you can us
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -177,7 +177,7 @@ The following permissions policy grants permissions that allow `ChangeResourceRe
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -207,7 +207,7 @@ The following permissions policy grants permissions that allow `ChangeResourceRe
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -237,7 +237,7 @@ The following permissions policy grants permissions that allow `ChangeResourceRe
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -268,7 +268,7 @@ The condition value must be in the format of `VPCId=<vpc-id>,VPCRegion=<region>`
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -307,7 +307,7 @@ The `route53profiles` condition keys are available in all AWS Regions where Rout
 **Grant permissions that limit resource association to specific resource types in Route 53 Profiles**
 The following permissions policy grants permissions that allow `AssociateResourceToProfile` and `DisassociateResourceFromProfile` actions only when the resource type is a hosted zone. It uses the `route53profiles:ResourceTypes` condition key to restrict the resource types that can be associated with a profile.
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [
@@ -326,7 +326,7 @@ The following permissions policy grants permissions that allow `AssociateResourc
 **Grant permissions that limit resource association to specific resource ARNs in Route 53 Profiles**
 The following permissions policy grants permissions that allow `AssociateResourceToProfile` and `DisassociateResourceFromProfile` actions only for the specified resource ARN. It uses the `route53profiles:ResourceArns` condition key to restrict which resources can be associated with a profile.
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [
@@ -345,7 +345,7 @@ The following permissions policy grants permissions that allow `AssociateResourc
 **Grant permissions that limit resource association to specific hosted zone domains in Route 53 Profiles**
 The following permissions policy grants permissions that allow `AssociateResourceToProfile`, `DisassociateResourceFromProfile`, and `UpdateProfileResourceAssociation` actions only when the hosted zone domain matches the specified value. It uses the `route53profiles:HostedZoneDomains` condition key to restrict which hosted zone domains can be associated with a profile.
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [
@@ -365,7 +365,7 @@ The following permissions policy grants permissions that allow `AssociateResourc
 **Grant permissions that limit resource association to specific Resolver Rule domains in Route 53 Profiles**
 The following permissions policy grants permissions that allow `AssociateResourceToProfile`, `DisassociateResourceFromProfile`, and `UpdateProfileResourceAssociation` actions only when the Resolver Rule domain matches the specified value. It uses the `route53profiles:ResolverRuleDomains` condition key to restrict which Resolver Rule domains can be associated with a profile.
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [
@@ -385,7 +385,7 @@ The following permissions policy grants permissions that allow `AssociateResourc
 **Grant permissions that limit Firewall Rule Group association to a specific priority range in Route 53 Profiles**
 The following permissions policy grants permissions that allow `AssociateResourceToProfile`, `DisassociateResourceFromProfile`, and `UpdateProfileResourceAssociation` actions only when the Firewall Rule Group priority is within the specified range. It uses the `route53profiles:FirewallRuleGroupPriority` condition key to restrict the priority values that can be used.
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [
@@ -405,7 +405,7 @@ The following permissions policy grants permissions that allow `AssociateResourc
 **Grant permissions that limit profile association to specific VPCs in Route 53 Profiles**
 The following permissions policy grants permissions that allow `AssociateProfile` and `DisassociateProfile` actions only for the specified VPC. It uses the `route53profiles:ResourceIds` condition key to restrict which VPCs a profile can be associated with.
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [

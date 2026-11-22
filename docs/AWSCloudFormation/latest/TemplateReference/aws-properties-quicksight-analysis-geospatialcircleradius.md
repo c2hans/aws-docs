@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-geospatialcircleradius-syntax.json"></a>
 
-```
+```json
 {
   "[Radius](#cfn-quicksight-analysis-geospatialcircleradius-radius)" : {{Number}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-geospatialcircleradius-syntax.yaml"></a>
 
-```
+```yaml
   [Radius](#cfn-quicksight-analysis-geospatialcircleradius-radius): {{Number}}
 ```
 

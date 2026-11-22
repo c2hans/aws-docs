@@ -111,7 +111,7 @@ Deletes a routing rule.
 #### PUT schema
 <a name="domainnames-domainname-routingrules-routingruleid-request-body-put-example"></a>
 
-```
+```json
 {
   "conditions": [
     {
@@ -149,7 +149,7 @@ Deletes a routing rule.
 #### RoutingRule schema
 <a name="domainnames-domainname-routingrules-routingruleid-response-body-routingrule-example"></a>
 
-```
+```json
 {
   "routingRuleId": "string",
   "routingRuleArn": "string",
@@ -186,7 +186,7 @@ Deletes a routing rule.
 #### BadRequestException schema
 <a name="domainnames-domainname-routingrules-routingruleid-response-body-badrequestexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -195,7 +195,7 @@ Deletes a routing rule.
 #### NotFoundException schema
 <a name="domainnames-domainname-routingrules-routingruleid-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -205,7 +205,7 @@ Deletes a routing rule.
 #### ConflictException schema
 <a name="domainnames-domainname-routingrules-routingruleid-response-body-conflictexception-example"></a>
 
-```
+```json
 {
   "message": "string"
 }
@@ -214,7 +214,7 @@ Deletes a routing rule.
 #### LimitExceededException schema
 <a name="domainnames-domainname-routingrules-routingruleid-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

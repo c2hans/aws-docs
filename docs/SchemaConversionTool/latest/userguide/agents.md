@@ -76,7 +76,7 @@ To migrate data into your target Amazon Redshift database, the AWS SCT data extr
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sagemaker-imageversion-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SageMaker::ImageVersion",
   "Properties" : {
@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sagemaker-imageversion-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SageMaker::ImageVersion
 Properties:
   [Alias](#cfn-sagemaker-imageversion-alias): {{String}}

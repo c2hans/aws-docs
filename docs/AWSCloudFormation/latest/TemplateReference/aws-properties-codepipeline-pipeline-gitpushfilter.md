@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-codepipeline-pipeline-gitpushfilter-syntax.json"></a>
 
-```
+```json
 {
   "[Branches](#cfn-codepipeline-pipeline-gitpushfilter-branches)" : {{GitBranchFilterCriteria}},
   "[FilePaths](#cfn-codepipeline-pipeline-gitpushfilter-filepaths)" : {{GitFilePathFilterCriteria}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-codepipeline-pipeline-gitpushfilter-syntax.yaml"></a>
 
-```
+```yaml
   [Branches](#cfn-codepipeline-pipeline-gitpushfilter-branches): {{
     GitBranchFilterCriteria}}
   [FilePaths](#cfn-codepipeline-pipeline-gitpushfilter-filepaths): {{

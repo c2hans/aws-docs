@@ -14,7 +14,7 @@ The following C\# code example defines a `Book` class with object persistence at
 
 **Example**
 
-```
+```csharp
 [DynamoDBTable("ProductCatalog")]
   public class Book
   {
@@ -39,7 +39,7 @@ Optimistic locking has the following impact on `DynamoDBContext` operations:
 + The `Delete` method provides overloads that can take either a primary key value or an object as parameter, as shown in the following C\# code example.
 **Example**
 
-  ```
+  ```csharp
   DynamoDBContext context = new DynamoDBContext(client);
   ...
   // Load a book.
@@ -65,7 +65,7 @@ Instead of setting the property at the context level, you can disable optimistic
 
 **Example**
 
-```
+```csharp
 DynamoDBContext context = new DynamoDBContext(client);
 // Load a book.
 Book book = context.Load<ProductCatalog>(111);

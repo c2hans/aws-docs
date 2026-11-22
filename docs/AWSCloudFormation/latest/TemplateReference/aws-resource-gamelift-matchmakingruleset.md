@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-gamelift-matchmakingruleset-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::GameLift::MatchmakingRuleSet",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-gamelift-matchmakingruleset-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::GameLift::MatchmakingRuleSet
 Properties:
   [Name](#cfn-gamelift-matchmakingruleset-name): {{String}}
@@ -115,7 +115,7 @@ The following example creates a matchmaking rule set for GameLift FlexMatch name
 #### JSON
 <a name="aws-resource-gamelift-matchmakingruleset--examples--Create_a_Matchmaking_Rule_Set--json"></a>
 
-```
+```json
 {
   "Resources": {
     "MatchmakingRuleSet": {
@@ -134,7 +134,7 @@ The following example creates a matchmaking rule set for GameLift FlexMatch name
 #### YAML
 <a name="aws-resource-gamelift-matchmakingruleset--examples--Create_a_Matchmaking_Rule_Set--yaml"></a>
 
-```
+```yaml
 Resources:
   MatchmakingRuleSet:
     Type: "AWS::GameLift::MatchmakingRuleSet"

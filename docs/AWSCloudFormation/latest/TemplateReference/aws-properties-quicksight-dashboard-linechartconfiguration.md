@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-linechartconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ContributionAnalysisDefaults](#cfn-quicksight-dashboard-linechartconfiguration-contributionanalysisdefaults)" : {{[ ContributionAnalysisDefault, ... ]}},
   "[DataLabels](#cfn-quicksight-dashboard-linechartconfiguration-datalabels)" : {{DataLabelOptions}},
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-linechartconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ContributionAnalysisDefaults](#cfn-quicksight-dashboard-linechartconfiguration-contributionanalysisdefaults): {{
     - ContributionAnalysisDefault}}
   [DataLabels](#cfn-quicksight-dashboard-linechartconfiguration-datalabels): {{

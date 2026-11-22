@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudformation-typeactivation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudFormation::TypeActivation",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudformation-typeactivation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudFormation::TypeActivation
 Properties:
   [AutoUpdate](#cfn-cloudformation-typeactivation-autoupdate): {{Boolean}}

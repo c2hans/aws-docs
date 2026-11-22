@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackagev2-channel-outputheaderconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[PublishMQCS](#cfn-mediapackagev2-channel-outputheaderconfiguration-publishmqcs)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackagev2-channel-outputheaderconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [PublishMQCS](#cfn-mediapackagev2-channel-outputheaderconfiguration-publishmqcs): {{Boolean}}
 ```
 

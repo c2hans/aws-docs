@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-proton-environmentaccountconnection-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Proton::EnvironmentAccountConnection",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-proton-environmentaccountconnection-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Proton::EnvironmentAccountConnection
 Properties:
   [CodebuildRoleArn](#cfn-proton-environmentaccountconnection-codebuildrolearn): {{String}}

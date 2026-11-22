@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicrule-kafkaaction-syntax.json"></a>
 
-```
+```json
 {
   "[ClientProperties](#cfn-iot-topicrule-kafkaaction-clientproperties)" : {{{{{Key}}: {{Value}}, ...}}},
   "[DestinationArn](#cfn-iot-topicrule-kafkaaction-destinationarn)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicrule-kafkaaction-syntax.yaml"></a>
 
-```
+```yaml
   [ClientProperties](#cfn-iot-topicrule-kafkaaction-clientproperties): {{
     {{Key}}: {{Value}}}}
   [DestinationArn](#cfn-iot-topicrule-kafkaaction-destinationarn): {{String}}

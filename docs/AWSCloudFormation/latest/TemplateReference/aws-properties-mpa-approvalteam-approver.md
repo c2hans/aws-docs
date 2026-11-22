@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mpa-approvalteam-approver-syntax.json"></a>
 
-```
+```json
 {
   "[ApproverId](#cfn-mpa-approvalteam-approver-approverid)" : {{String}},
   "[PrimaryIdentityId](#cfn-mpa-approvalteam-approver-primaryidentityid)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mpa-approvalteam-approver-syntax.yaml"></a>
 
-```
+```yaml
   [ApproverId](#cfn-mpa-approvalteam-approver-approverid): {{String}}
   [PrimaryIdentityId](#cfn-mpa-approvalteam-approver-primaryidentityid): {{String}}
   [PrimaryIdentitySourceArn](#cfn-mpa-approvalteam-approver-primaryidentitysourcearn): {{String}}

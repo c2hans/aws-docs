@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-directconnect-lag-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DirectConnect::Lag",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-directconnect-lag-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DirectConnect::Lag
 Properties:
   [ConnectionsBandwidth](#cfn-directconnect-lag-connectionsbandwidth): {{String}}
@@ -156,7 +156,7 @@ This example shows a basic LAG which has one connection created on it. The bandw
 #### JSON
 <a name="aws-resource-directconnect-lag--examples--Create_LAG_with_one_connection--json"></a>
 
-```
+```json
 {
   "Resources": {
     "myLag": {
@@ -191,7 +191,7 @@ This example shows a basic LAG which has one connection created on it. The bandw
 #### YAML
 <a name="aws-resource-directconnect-lag--examples--Create_LAG_with_one_connection--yaml"></a>
 
-```
+```yaml
 Resources:
   myLag:
     Type: AWS::DirectConnect::Lag

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-columnconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ColorsConfiguration](#cfn-quicksight-analysis-columnconfiguration-colorsconfiguration)" : {{ColorsConfiguration}},
   "[Column](#cfn-quicksight-analysis-columnconfiguration-column)" : {{ColumnIdentifier}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-columnconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ColorsConfiguration](#cfn-quicksight-analysis-columnconfiguration-colorsconfiguration): {{
     ColorsConfiguration}}
   [Column](#cfn-quicksight-analysis-columnconfiguration-column): {{

@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrass-coredefinition-coredefinitionversion-syntax.json"></a>
 
-```
+```json
 {
   "[Cores](#cfn-greengrass-coredefinition-coredefinitionversion-cores)" : {{[ Core, ... ]}}
 }
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrass-coredefinition-coredefinitionversion-syntax.yaml"></a>
 
-```
+```yaml
   [Cores](#cfn-greengrass-coredefinition-coredefinitionversion-cores): {{
     - Core}}
 ```

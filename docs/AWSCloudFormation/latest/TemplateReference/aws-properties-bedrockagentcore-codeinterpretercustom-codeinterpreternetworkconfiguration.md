@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-codeinterpretercustom-codeinterpreternetworkconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[NetworkMode](#cfn-bedrockagentcore-codeinterpretercustom-codeinterpreternetworkconfiguration-networkmode)" : {{String}},
   "[VpcConfig](#cfn-bedrockagentcore-codeinterpretercustom-codeinterpreternetworkconfiguration-vpcconfig)" : {{VpcConfig}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-codeinterpretercustom-codeinterpreternetworkconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [NetworkMode](#cfn-bedrockagentcore-codeinterpretercustom-codeinterpreternetworkconfiguration-networkmode): {{String}}
   [VpcConfig](#cfn-bedrockagentcore-codeinterpretercustom-codeinterpreternetworkconfiguration-vpcconfig): {{
     VpcConfig}}

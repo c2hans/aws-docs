@@ -28,12 +28,12 @@ For more information, see [Set up a custom health check for your Auto Scaling gr
 **Tools for PowerShell V4**
 **Example 1: This example sets the status of the specified instance to 'Unhealthy', taking it out of service. Auto Scaling terminates and replaces the instance.**
 
-```
+```powershell
 Set-ASInstanceHealth -HealthStatus Unhealthy -InstanceId i-93633f9b
 ```
 **Example 2: This example sets the status of the specified instance to 'Healthy', keeping it in service. Any health check grace period for the Auto Scaling group is not honored.**
 
-```
+```powershell
 Set-ASInstanceHealth -HealthStatus Healthy -InstanceId i-93633f9b -ShouldRespectGracePeriod $false
 ```
 +  For API details, see [SetInstanceHealth](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -41,12 +41,12 @@ Set-ASInstanceHealth -HealthStatus Healthy -InstanceId i-93633f9b -ShouldRespect
 **Tools for PowerShell V5**
 **Example 1: This example sets the status of the specified instance to 'Unhealthy', taking it out of service. Auto Scaling terminates and replaces the instance.**
 
-```
+```powershell
 Set-ASInstanceHealth -HealthStatus Unhealthy -InstanceId i-93633f9b
 ```
 **Example 2: This example sets the status of the specified instance to 'Healthy', keeping it in service. Any health check grace period for the Auto Scaling group is not honored.**
 
-```
+```powershell
 Set-ASInstanceHealth -HealthStatus Healthy -InstanceId i-93633f9b -ShouldRespectGracePeriod $false
 ```
 +  For API details, see [SetInstanceHealth](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

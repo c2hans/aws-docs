@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-get.html
 
 The following example shows how to use the [GetCertificate](https://docs.aws.amazon.com/acm/latest/APIReference/API_GetCertificate.html) function.
 
-```
+```java
 package com.amazonaws.samples;
 
 import com.amazonaws.regions.Regions;

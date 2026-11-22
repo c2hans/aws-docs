@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ses-emailidentitycertificate-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SES::EmailIdentityCertificate",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ses-emailidentitycertificate-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SES::EmailIdentityCertificate
 Properties:
   [CertificateArn](#cfn-ses-emailidentitycertificate-certificatearn): {{String}}

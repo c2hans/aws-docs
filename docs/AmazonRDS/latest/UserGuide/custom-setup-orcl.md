@@ -496,7 +496,7 @@ To create CEVs or RDS Custom for Oracle DB instances, your IAM principal needs t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -548,7 +548,7 @@ The following sample JSON policy grants the additional permissions necessary to 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -600,7 +600,7 @@ The following sample JSON policy grants the permissions necessary to validate an
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

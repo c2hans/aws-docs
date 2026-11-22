@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-virtualrouter-virtualrouterlistener-syntax.json"></a>
 
-```
+```json
 {
   "[PortMapping](#cfn-appmesh-virtualrouter-virtualrouterlistener-portmapping)" : {{PortMapping}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-virtualrouter-virtualrouterlistener-syntax.yaml"></a>
 
-```
+```yaml
   [PortMapping](#cfn-appmesh-virtualrouter-virtualrouterlistener-portmapping): {{
     PortMapping}}
 ```

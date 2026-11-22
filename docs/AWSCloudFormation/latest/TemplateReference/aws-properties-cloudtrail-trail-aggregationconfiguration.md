@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudtrail-trail-aggregationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EventCategory](#cfn-cloudtrail-trail-aggregationconfiguration-eventcategory)" : {{String}},
   "[Templates](#cfn-cloudtrail-trail-aggregationconfiguration-templates)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudtrail-trail-aggregationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EventCategory](#cfn-cloudtrail-trail-aggregationconfiguration-eventcategory): {{String}}
   [Templates](#cfn-cloudtrail-trail-aggregationconfiguration-templates): {{
     - String}}

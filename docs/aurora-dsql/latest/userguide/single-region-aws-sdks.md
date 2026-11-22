@@ -16,7 +16,7 @@ The following examples show how to create a single-Region cluster using differen
 
 To create a cluster in a single AWS Region, use the following example.
 
-```
+```python
 import boto3
 
 def create_cluster(region):
@@ -54,7 +54,7 @@ if __name__ == "__main__":
 
 The following example lets you create a cluster in a single AWS Region.
 
-```
+```cpp
 #include <aws/core/Aws.h>
 #include <aws/core/utils/Outcome.h>
 #include <aws/dsql/DSQLClient.h>
@@ -128,7 +128,7 @@ int main() {
 
 To create a cluster in a single AWS Region, use the following example.
 
-```
+```JavaScript
 import { DSQLClient, CreateClusterCommand, waitUntilClusterActive } from "@aws-sdk/client-dsql";
 
 async function createCluster(region) {
@@ -176,7 +176,7 @@ main();
 
 Use the following example to create a cluster in a single AWS Region.
 
-```
+```java
 package org.example;
 
 import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
@@ -229,7 +229,7 @@ public class CreateCluster {
 
 To create a cluster in a single AWS Region, use the following example.
 
-```
+```rust
 use aws_config::{BehaviorVersion, Region, load_defaults};
 use aws_sdk_dsql::client::Waiters;
 use aws_sdk_dsql::operation::get_cluster::GetClusterOutput;
@@ -298,7 +298,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
 To create a cluster in a single AWS Region, use the following example.
 
-```
+```ruby
 require "aws-sdk-dsql"
 require "pp"
 
@@ -343,7 +343,7 @@ main if $PROGRAM_NAME == __FILE__
 
 To create a cluster in a single AWS Region, use the following example.
 
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -414,7 +414,7 @@ namespace DSQLExamples.examples
 
 To create a cluster in a single AWS Region, use the following example.
 
-```
+```go
 package main
 
 import (
@@ -500,7 +500,7 @@ The following examples show how to get information about a single-Region cluster
 
 To get information about a single-Region cluster, use the following example.
 
-```
+```python
 import boto3
 from datetime import datetime
 import json
@@ -529,7 +529,7 @@ if __name__ == "__main__":
 
 Use the following example to get information about a single-Region cluster.
 
-```
+```C++
 #include <aws/core/Aws.h>
 #include <aws/core/utils/Outcome.h>
 #include <aws/dsql/DSQLClient.h>
@@ -630,7 +630,7 @@ main();
 
 The following example lets you get information about a single-Region cluster.
 
-```
+```java
 package org.example;
 
 import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
@@ -665,7 +665,7 @@ public class GetCluster {
 
 The following example lets you get information about a single-Region cluster.
 
-```
+```rust
 use aws_config::load_defaults;
 use aws_sdk_dsql::operation::get_cluster::GetClusterOutput;
 use aws_sdk_dsql::{
@@ -718,7 +718,7 @@ pub async fn main() -> anyhow::Result<()> {
 
 The following example lets you get information about a single-Region cluster.
 
-```
+```ruby
 require "aws-sdk-dsql"
 require "pp"
 
@@ -744,7 +744,7 @@ main if $PROGRAM_NAME == __FILE__
 
 The following example lets you get information about a single-Region cluster.
 
-```
+```dotnet
 using System;
 using System.Threading.Tasks;
 using Amazon;
@@ -802,7 +802,7 @@ namespace DSQLExamples.examples
 
 The following example lets you get information about a single-Region cluster.
 
-```
+```go
 package main
 
 import (
@@ -866,7 +866,7 @@ The following examples show how to update a single-Region cluster using differen
 
 To update a single-Region cluster, use the following example.
 
-```
+```python
 import boto3
 
 def update_cluster(region, cluster_id, deletion_protection_enabled):
@@ -893,7 +893,7 @@ if __name__ == "__main__":
 
 Use the following example to update a single-Region cluster.
 
-```
+```C++
 #include <aws/core/Aws.h>
 #include <aws/core/utils/Outcome.h>
 #include <aws/dsql/DSQLClient.h>
@@ -972,7 +972,7 @@ int main() {
 
 To update a single-Region cluster, use the following example.
 
-```
+```JavaScript
 import { DSQLClient, UpdateClusterCommand } from "@aws-sdk/client-dsql";
 
 export async function updateCluster(region, clusterId, deletionProtectionEnabled) {
@@ -1009,7 +1009,7 @@ main();
 
 Use the following example to update a single-Region cluster.
 
-```
+```java
 package org.example;
 
 import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
@@ -1046,7 +1046,7 @@ public class UpdateCluster {
 
 Use the following example to update a single-Region cluster.
 
-```
+```rust
 use aws_config::load_defaults;
 use aws_sdk_dsql::operation::update_cluster::UpdateClusterOutput;
 use aws_sdk_dsql::{
@@ -1103,7 +1103,7 @@ pub async fn main() -> anyhow::Result<()> {
 
 Use the following example to update a single-Region cluster.
 
-```
+```ruby
 require "aws-sdk-dsql"
 
 def update_cluster(region, update_params)
@@ -1131,7 +1131,7 @@ main if $PROGRAM_NAME == __FILE__
 
 Use the following example to update a single-Region cluster.
 
-```
+```dotnet
 using System;
 using System.Threading.Tasks;
 using Amazon;
@@ -1192,7 +1192,7 @@ namespace DSQLExamples.examples
 
 Use the following example to update a single-Region cluster.
 
-```
+```go
 package main
 
 import (
@@ -1257,7 +1257,7 @@ The following examples show how to delete a single-Region cluster using differen
 
 To delete a cluster in a single AWS Region, use the following example.
 
-```
+```python
 import boto3
 
 def delete_cluster(region, identifier):
@@ -1293,7 +1293,7 @@ if __name__ == "__main__":
 
 To delete a cluster in a single AWS Region, use the following example.
 
-```
+```C++
 #include <aws/core/Aws.h>
 #include <aws/core/utils/Outcome.h>
 #include <aws/dsql/DSQLClient.h>
@@ -1359,7 +1359,7 @@ int main() {
 
 To delete a cluster in a single AWS Region, use the following example.
 
-```
+```bash,sh,zsh
 import { DSQLClient, DeleteClusterCommand, waitUntilClusterNotExists } from "@aws-sdk/client-dsql";
 
 async function deleteCluster(region, clusterId) {
@@ -1410,7 +1410,7 @@ main();
 
 To delete a cluster in a single AWS Region, use the following example.
 
-```
+```java
 package org.example;
 
 import software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider;
@@ -1458,7 +1458,7 @@ public class DeleteCluster {
 
 To delete a cluster in a single AWS Region, use the following example.
 
-```
+```rust
 use aws_config::load_defaults;
 use aws_sdk_dsql::client::Waiters;
 use aws_sdk_dsql::{
@@ -1521,7 +1521,7 @@ pub async fn main() -> anyhow::Result<()> {
 
 To delete a cluster in a single AWS Region, use the following example.
 
-```
+```ruby
 require "aws-sdk-dsql"
 
 def delete_cluster(region, identifier)
@@ -1555,7 +1555,7 @@ main if $PROGRAM_NAME == __FILE__
 
 To delete a cluster in a single AWS Region, use the following example.
 
-```
+```dotnet
 using System;
 using System.Threading.Tasks;
 using Amazon;
@@ -1613,7 +1613,7 @@ namespace DSQLExamples.examples
 
 To delete a cluster in a single AWS Region, use the following example.
 
-```
+```go
 package main
 
 import (

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appflow-connectorprofile-servicenowconnectorprofilecredentials-syntax.json"></a>
 
-```
+```json
 {
   "[OAuth2Credentials](#cfn-appflow-connectorprofile-servicenowconnectorprofilecredentials-oauth2credentials)" : {{OAuth2Credentials}},
   "[Password](#cfn-appflow-connectorprofile-servicenowconnectorprofilecredentials-password)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appflow-connectorprofile-servicenowconnectorprofilecredentials-syntax.yaml"></a>
 
-```
+```yaml
   [OAuth2Credentials](#cfn-appflow-connectorprofile-servicenowconnectorprofilecredentials-oauth2credentials): {{
     OAuth2Credentials}}
   [Password](#cfn-appflow-connectorprofile-servicenowconnectorprofilecredentials-password): {{String}}

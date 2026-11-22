@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudwatch-otelenrichment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudWatch::OTelEnrichment",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudwatch-otelenrichment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudWatch::OTelEnrichment
 Properties:
   [ExcludeFilters](#cfn-cloudwatch-otelenrichment-excludefilters): {{

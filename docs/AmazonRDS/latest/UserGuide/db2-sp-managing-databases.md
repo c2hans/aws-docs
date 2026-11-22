@@ -393,7 +393,7 @@ The `rdsadmin.rename_database` stored procedure renames a database on your Amazo
 
 Before you call `rdsadmin.rename_database`, connect to the `rdsadmin` database with your master username and master password. In the following command, replace {{master\_username}} and {{master\_password}} with your own values.
 
-```
+```sql
 db2 connect to rdsadmin user {{master_username}} using {{master_password}}
 ```
 
@@ -402,7 +402,7 @@ db2 connect to rdsadmin user {{master_username}} using {{master_password}}
 
 Use this syntax:
 
-```
+```sql
 db2 "call rdsadmin.rename_database(
     ?,
     '{{current_database_name}}',
@@ -466,7 +466,7 @@ For instructions on resolving the errors that `rdsadmin.rename_database` returns
 
 While a rename runs, other stored procedures that use either name don't run. Most of them return one of the following messages:
 
-```
+```text
 A rename involving this database is in progress. Try again later.
 A rename involving database {{database_name}} is in progress. Try again later.
 ```
@@ -483,7 +483,7 @@ For information about checking the status of a rename, see [rdsadmin.get\_task\_
 After the rename finishes, do the following:
 + If you have scripts or jobs that read archive logs from Amazon Simple Storage Service (Amazon S3), then update them. The database name in the Amazon S3 prefix changes, but the unique ID stays the same, as the following prefixes show:
 
-  ```
+  ```text
   Before: {{old_database_name}}-{{database_unique_id}}/
   After:  {{new_database_name}}-{{database_unique_id}}/
   ```
@@ -502,7 +502,7 @@ A point-in-time restore uses the last snapshot before the restore time. If the r
 
 The following `db2` command renames `TESTDB` to `PRODDB`:
 
-```
+```sql
 db2 "call rdsadmin.rename_database(?, 'TESTDB', 'PRODDB')"
 ```
 

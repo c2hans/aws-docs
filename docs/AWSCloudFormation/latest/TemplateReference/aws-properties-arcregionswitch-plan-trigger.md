@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-arcregionswitch-plan-trigger-syntax.json"></a>
 
-```
+```json
 {
   "[Action](#cfn-arcregionswitch-plan-trigger-action)" : {{String}},
   "[Conditions](#cfn-arcregionswitch-plan-trigger-conditions)" : {{[ TriggerCondition, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-arcregionswitch-plan-trigger-syntax.yaml"></a>
 
-```
+```yaml
   [Action](#cfn-arcregionswitch-plan-trigger-action): {{String}}
   [Conditions](#cfn-arcregionswitch-plan-trigger-conditions): {{
     - TriggerCondition}}

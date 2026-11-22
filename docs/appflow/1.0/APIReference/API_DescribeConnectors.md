@@ -265,13 +265,13 @@ This example shows a sample request and response for the `DescribeConnectors` AP
 #### Sample Request
 <a name="API_DescribeConnectors_Example_1_Request"></a>
 
-```
+```json
 {
   "connectorTypes": ["Marketo","Salesforce"]
 }
 ```
 
-```
+```json
 {
   "connectorTypes": ["Marketo","Salesforce"],
   "nextToken": "nextToken_value"
@@ -281,7 +281,7 @@ This example shows a sample request and response for the `DescribeConnectors` AP
 #### Sample Response
 <a name="API_DescribeConnectors_Example_1_Response"></a>
 
-```
+```json
 {
   "connectorConfigurations": {
     "Marketo": {

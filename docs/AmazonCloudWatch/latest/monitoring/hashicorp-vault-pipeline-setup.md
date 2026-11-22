@@ -8,7 +8,7 @@ The HashiCorp Vault setup on AWS reads log data from Amazon S3 buckets using Ama
 
 Configure the S3 source with the following parameters:
 
-```
+```yaml
 source:
   s3:
     aws:

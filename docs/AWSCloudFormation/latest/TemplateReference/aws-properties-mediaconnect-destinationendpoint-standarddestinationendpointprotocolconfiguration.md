@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediaconnect-destinationendpoint-standarddestinationendpointprotocolconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Rist](#cfn-mediaconnect-destinationendpoint-standarddestinationendpointprotocolconfiguration-rist)" : {{RistStandardDestinationEndpointConfiguration}},
   "[Rtp](#cfn-mediaconnect-destinationendpoint-standarddestinationendpointprotocolconfiguration-rtp)" : {{RtpStandardDestinationEndpointConfiguration}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediaconnect-destinationendpoint-standarddestinationendpointprotocolconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Rist](#cfn-mediaconnect-destinationendpoint-standarddestinationendpointprotocolconfiguration-rist): {{
     RistStandardDestinationEndpointConfiguration}}
   [Rtp](#cfn-mediaconnect-destinationendpoint-standarddestinationendpointprotocolconfiguration-rtp): {{

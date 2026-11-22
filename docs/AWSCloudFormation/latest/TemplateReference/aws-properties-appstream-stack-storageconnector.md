@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appstream-stack-storageconnector-syntax.json"></a>
 
-```
+```json
 {
   "[ConnectorType](#cfn-appstream-stack-storageconnector-connectortype)" : {{String}},
   "[Domains](#cfn-appstream-stack-storageconnector-domains)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appstream-stack-storageconnector-syntax.yaml"></a>
 
-```
+```yaml
   [ConnectorType](#cfn-appstream-stack-storageconnector-connectortype): {{String}}
   [Domains](#cfn-appstream-stack-storageconnector-domains): {{
     - String}}

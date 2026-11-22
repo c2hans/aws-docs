@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-s3accesspointattachment-filesystemgid-syntax.json"></a>
 
-```
+```json
 {
   "[Gid](#cfn-fsx-s3accesspointattachment-filesystemgid-gid)" : {{Number}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-s3accesspointattachment-filesystemgid-syntax.yaml"></a>
 
-```
+```yaml
   [Gid](#cfn-fsx-s3accesspointattachment-filesystemgid-gid): {{Number}}
 ```
 

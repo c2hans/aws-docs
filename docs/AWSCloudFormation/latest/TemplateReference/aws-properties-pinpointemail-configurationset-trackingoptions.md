@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pinpointemail-configurationset-trackingoptions-syntax.json"></a>
 
-```
+```json
 {
   "[CustomRedirectDomain](#cfn-pinpointemail-configurationset-trackingoptions-customredirectdomain)" : {{String}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pinpointemail-configurationset-trackingoptions-syntax.yaml"></a>
 
-```
+```yaml
   [CustomRedirectDomain](#cfn-pinpointemail-configurationset-trackingoptions-customredirectdomain): {{String}}
 ```
 

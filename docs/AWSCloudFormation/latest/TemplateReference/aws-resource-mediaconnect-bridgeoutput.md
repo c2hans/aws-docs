@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-mediaconnect-bridgeoutput-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MediaConnect::BridgeOutput",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-mediaconnect-bridgeoutput-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MediaConnect::BridgeOutput
 Properties:
   [BridgeArn](#cfn-mediaconnect-bridgeoutput-bridgearn): {{String}}

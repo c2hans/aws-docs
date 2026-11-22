@@ -123,7 +123,7 @@ For SQL Server Management Studio, use the following procedure. For more informat
 
 1. Confirm that your connection is encrypted by running the following query. Verify that the query returns `true` for `encrypt_option`.
 
-   ```
+   ```sql
    select ENCRYPT_OPTION from SYS.DM_EXEC_CONNECTIONS where SESSION_ID = @@SPID
    ```
 
@@ -137,6 +137,6 @@ To enable SSL encryption for clients that connect using JDBC, you might need to 
 
 1. Confirm that your connection is encrypted by running the following query. Verify that the query returns `true` for `encrypt_option`.
 
-   ```
+   ```sql
    select ENCRYPT_OPTION from SYS.DM_EXEC_CONNECTIONS where SESSION_ID = @@SPID
    ```

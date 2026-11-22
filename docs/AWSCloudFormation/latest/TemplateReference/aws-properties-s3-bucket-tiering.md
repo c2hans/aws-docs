@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-tiering-syntax.json"></a>
 
-```
+```json
 {
   "[AccessTier](#cfn-s3-bucket-tiering-accesstier)" : {{String}},
   "[Days](#cfn-s3-bucket-tiering-days)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-tiering-syntax.yaml"></a>
 
-```
+```yaml
   [AccessTier](#cfn-s3-bucket-tiering-accesstier): {{String}}
   [Days](#cfn-s3-bucket-tiering-days): {{Integer}}
 ```

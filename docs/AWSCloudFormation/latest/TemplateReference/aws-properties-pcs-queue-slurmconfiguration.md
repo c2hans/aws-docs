@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcs-queue-slurmconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[SlurmCustomSettings](#cfn-pcs-queue-slurmconfiguration-slurmcustomsettings)" : {{[ SlurmCustomSetting, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcs-queue-slurmconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [SlurmCustomSettings](#cfn-pcs-queue-slurmconfiguration-slurmcustomsettings): {{
     - SlurmCustomSetting}}
 ```

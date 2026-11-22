@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-verifiedpermissions-policy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::VerifiedPermissions::Policy",
   "Properties" : {
@@ -46,7 +46,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-verifiedpermissions-policy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::VerifiedPermissions::Policy
 Properties:
   [Definition](#cfn-verifiedpermissions-policy-definition): {{
@@ -131,7 +131,7 @@ The following example creates a static policy in the specified policy store with
 #### JSON
 <a name="aws-resource-verifiedpermissions-policy--examples--Creating_a_static_policy--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "AWS CloudFormation sample template for creating a static policy for Verified Permissions",
@@ -182,7 +182,7 @@ The following example creates a static policy in the specified policy store with
 #### YAML
 <a name="aws-resource-verifiedpermissions-policy--examples--Creating_a_static_policy--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: >-
   Description": "AWS CloudFormation sample template for creating a static policy for Verified Permissions."
@@ -215,7 +215,7 @@ The following example creates a policy that is linked to the specified policy te
 #### JSON
 <a name="aws-resource-verifiedpermissions-policy--examples--Creating_a_template-linked_policy--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "AWS CloudFormation sample template for creating a template-linked policy for Verified Permissions.",
@@ -288,7 +288,7 @@ The following example creates a policy that is linked to the specified policy te
 #### YAML
 <a name="aws-resource-verifiedpermissions-policy--examples--Creating_a_template-linked_policy--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: >-
   Description": "AWS CloudFormation sample template for creating a template-linked policy for Verified Permissions."

@@ -17,7 +17,7 @@ The `codewhisperer` prefix is a legacy name from a service that merged with Amaz
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

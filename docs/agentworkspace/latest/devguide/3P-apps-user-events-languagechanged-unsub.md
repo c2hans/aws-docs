@@ -8,12 +8,12 @@ Unsubscribes the callback function from LanguageChanged event in the Connect Cus
 
  **Signature**
 
-```
+```typescript
 offLanguageChanged(handler: UserLanguageChangedHandler)
 ```
 
  **Usage**
 
-```
+```typescript
 settingsClient.offLanguageChanged(handler);
 ```

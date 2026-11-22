@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-knowledgebase-crawlerlimits-syntax.json"></a>
 
-```
+```json
 {
   "[RateLimit](#cfn-wisdom-knowledgebase-crawlerlimits-ratelimit)" : {{Number}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-knowledgebase-crawlerlimits-syntax.yaml"></a>
 
-```
+```yaml
   [RateLimit](#cfn-wisdom-knowledgebase-crawlerlimits-ratelimit): {{Number}}
 ```
 

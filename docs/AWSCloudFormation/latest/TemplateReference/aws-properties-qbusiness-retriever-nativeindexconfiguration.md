@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-qbusiness-retriever-nativeindexconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[IndexId](#cfn-qbusiness-retriever-nativeindexconfiguration-indexid)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-qbusiness-retriever-nativeindexconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [IndexId](#cfn-qbusiness-retriever-nativeindexconfiguration-indexid): {{String}}
 ```
 

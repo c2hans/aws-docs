@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-eks-capability-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EKS::Capability",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-eks-capability-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EKS::Capability
 Properties:
   [CapabilityName](#cfn-eks-capability-capabilityname): {{String}}

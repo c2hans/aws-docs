@@ -101,17 +101,17 @@ cdk deploy --express
 
 To use express mode with the AWS SAM CLI, add the `--express` flag to your deploy or sync commands:
 
-```
+```bash
 sam deploy --express
 ```
 
-```
+```bash
 sam sync --express
 ```
 
 To persist the setting in your project configuration, use `--save-params`:
 
-```
+```bash
 sam deploy --express --save-params
 ```
 

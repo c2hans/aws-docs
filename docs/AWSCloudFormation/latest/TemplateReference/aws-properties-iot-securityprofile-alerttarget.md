@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-securityprofile-alerttarget-syntax.json"></a>
 
-```
+```json
 {
   "[AlertTargetArn](#cfn-iot-securityprofile-alerttarget-alerttargetarn)" : {{String}},
   "[RoleArn](#cfn-iot-securityprofile-alerttarget-rolearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-securityprofile-alerttarget-syntax.yaml"></a>
 
-```
+```yaml
   [AlertTargetArn](#cfn-iot-securityprofile-alerttarget-alerttargetarn): {{String}}
   [RoleArn](#cfn-iot-securityprofile-alerttarget-rolearn): {{String}}
 ```

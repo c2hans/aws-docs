@@ -77,7 +77,7 @@ SNS topics cannot be in opt-in AWS Regions. Your SNS topic must be in an AWS Reg
 
 To receive delegation request notifications, you must configure your SNS topic to grant IAM permissions to publish messages to it. Add the following policy statement to your SNS topic policy:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -153,7 +153,7 @@ IAM publishes standard SNS notifications. The delegation request information is 
 
 *StateChange Notification*
 
-```
+```json
 {
   "Type": "Notification",
   "MessageId": "61ee8ad4-6eec-56b5-8f3d-eba57556aa13",
@@ -169,7 +169,7 @@ IAM publishes standard SNS notifications. The delegation request information is 
 
 *ExchangeToken Notification*
 
-```
+```json
 {
   "Type": "Notification",
   "MessageId": "e44e5435-c72c-5333-aba3-354406782f5b",

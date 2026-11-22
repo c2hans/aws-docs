@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appconfig-experimentrun-treatmentoverrides-syntax.json"></a>
 
-```
+```json
 {
   "[Inline](#cfn-appconfig-experimentrun-treatmentoverrides-inline)" : {{{{{Key}}: {{Value}}, ...}}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appconfig-experimentrun-treatmentoverrides-syntax.yaml"></a>
 
-```
+```yaml
   [Inline](#cfn-appconfig-experimentrun-treatmentoverrides-inline): {{
     {{Key}}: {{Value}}}}
 ```

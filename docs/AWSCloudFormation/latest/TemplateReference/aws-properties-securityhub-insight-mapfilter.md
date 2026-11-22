@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityhub-insight-mapfilter-syntax.json"></a>
 
-```
+```json
 {
   "[Comparison](#cfn-securityhub-insight-mapfilter-comparison)" : {{String}},
   "[Key](#cfn-securityhub-insight-mapfilter-key)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityhub-insight-mapfilter-syntax.yaml"></a>
 
-```
+```yaml
   [Comparison](#cfn-securityhub-insight-mapfilter-comparison): {{String}}
   [Key](#cfn-securityhub-insight-mapfilter-key): {{String}}
   [Value](#cfn-securityhub-insight-mapfilter-value): {{String}}

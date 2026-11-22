@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iottwinmaker-componenttype-datatype-syntax.json"></a>
 
-```
+```json
 {
   "[AllowedValues](#cfn-iottwinmaker-componenttype-datatype-allowedvalues)" : {{[ DataValue, ... ]}},
   "[NestedType](#cfn-iottwinmaker-componenttype-datatype-nestedtype)" : {{DataType}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iottwinmaker-componenttype-datatype-syntax.yaml"></a>
 
-```
+```yaml
   [AllowedValues](#cfn-iottwinmaker-componenttype-datatype-allowedvalues): {{
     - DataValue}}
   [NestedType](#cfn-iottwinmaker-componenttype-datatype-nestedtype): {{

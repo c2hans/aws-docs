@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-datasource-googledriveconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ExcludeMimeTypes](#cfn-kendra-datasource-googledriveconfiguration-excludemimetypes)" : {{[ String, ... ]}},
   "[ExcludeSharedDrives](#cfn-kendra-datasource-googledriveconfiguration-excludeshareddrives)" : {{[ String, ... ]}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-datasource-googledriveconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ExcludeMimeTypes](#cfn-kendra-datasource-googledriveconfiguration-excludemimetypes): {{
     - String}}
   [ExcludeSharedDrives](#cfn-kendra-datasource-googledriveconfiguration-excludeshareddrives): {{

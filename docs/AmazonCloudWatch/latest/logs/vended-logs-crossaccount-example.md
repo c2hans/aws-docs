@@ -15,7 +15,7 @@ For this example, account A needs the following permissions:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -69,7 +69,7 @@ Account B wants to receive the logs into their S3 bucket with the ARN arn:aws:s3
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -95,7 +95,7 @@ The bucket will need the following permissions in its bucket policy:
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -136,7 +136,7 @@ If the bucket is encrypted with SSE-KMS, ensure the AWS KMS key policy has the a
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -182,7 +182,7 @@ Next, Account B creates a delivery destination policy on their newly created del
 
 ****
 
-```
+```json
     {
     "Version":"2012-10-17",
     "Statement": [
@@ -229,7 +229,7 @@ In this example, Account B wants to receive logs into their Firehose stream. The
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -279,7 +279,7 @@ Next, Account B creates a delivery destination policy on their newly created del
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

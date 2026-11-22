@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-databrew-job-validationconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[RulesetArn](#cfn-databrew-job-validationconfiguration-rulesetarn)" : {{String}},
   "[ValidationMode](#cfn-databrew-job-validationconfiguration-validationmode)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-databrew-job-validationconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [RulesetArn](#cfn-databrew-job-validationconfiguration-rulesetarn): {{String}}
   [ValidationMode](#cfn-databrew-job-validationconfiguration-validationmode): {{String}}
 ```

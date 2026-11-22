@@ -10,13 +10,13 @@ A tag name can be up to 32 characters long. It must start with a letter or under
 
 Before you start, enable binary logging, set `gtid_mode` and `enforce_gtid_consistency` to `ON` in your DB cluster parameter group. Your database user also needs the `TRANSACTION_GTID_TAG` privilege. To grant it, connect as your administrative user and run the following:
 
-```
+```sql
 GRANT TRANSACTION_GTID_TAG ON *.* TO '{{user}}'@'{{host}}';
 ```
 
 To tag transactions, set `gtid_next` to `AUTOMATIC:` followed by your tag name. For example, the following tags a transaction with `tag1` and then turns off tagging:
 
-```
+```sql
 SET @@SESSION.gtid_next = 'AUTOMATIC:tag1';
 
 START TRANSACTION;
@@ -30,7 +30,7 @@ The tag applies to every transaction in the session until you set `gtid_next` ba
 
 To view your tagged transactions, query `gtid_executed`:
 
-```
+```sql
 SELECT @@GLOBAL.gtid_executed;
 ```
 

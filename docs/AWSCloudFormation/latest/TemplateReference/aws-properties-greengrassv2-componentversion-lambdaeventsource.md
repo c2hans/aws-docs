@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-greengrassv2-componentversion-lambdaeventsource-syntax.json"></a>
 
-```
+```json
 {
   "[Topic](#cfn-greengrassv2-componentversion-lambdaeventsource-topic)" : {{String}},
   "[Type](#cfn-greengrassv2-componentversion-lambdaeventsource-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-greengrassv2-componentversion-lambdaeventsource-syntax.yaml"></a>
 
-```
+```yaml
   [Topic](#cfn-greengrassv2-componentversion-lambdaeventsource-topic): {{String}}
   [Type](#cfn-greengrassv2-componentversion-lambdaeventsource-type): {{String}}
 ```

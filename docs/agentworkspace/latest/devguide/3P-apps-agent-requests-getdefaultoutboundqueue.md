@@ -6,12 +6,12 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-a
 
 Returns the default outbound queue for the agent currently logged in to the Connect Customer agent workspace. This is the queue used for outbound contacts the agent originates when no other queue is specified. The returned `Queue` contains `name`, `queueARN`, and `queueId`.
 
-```
+```typescript
 async getDefaultOutboundQueue(): Promise<Queue>
 ```
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

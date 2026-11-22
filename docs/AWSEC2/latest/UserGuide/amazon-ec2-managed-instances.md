@@ -63,7 +63,7 @@ Use the following procedures to identify managed instances.
 **To identify a managed instance**
 Use the [describe-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html) command and specify the instance ID.
 
-```
+```bash
 aws ec2 describe-instances \
     --instance-ids {{i-1234567890abcdef0}} \
     --query Reservations[].Instances[].Operator
@@ -71,7 +71,7 @@ aws ec2 describe-instances \
 
 The following is example output. If `Managed` is `true`, the instance is a managed instance and a `Principal` is included. The principal is the service provider that manages the instance. For example, a value of `eks.amazonaws.com` identifies Amazon EKS as the service provider.
 
-```
+```json
 [
     {
         "Managed": true,
@@ -83,7 +83,7 @@ The following is example output. If `Managed` is `true`, the instance is a manag
 **To find your managed instances**
 Use the [describe-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html) command and specify the `operator.managed` filter with a value of `true`. The `--query` option displays only the IDs of the managed instances.
 
-```
+```bash
 aws ec2 describe-instances \
     --filters "Name=operator.managed,Values=true" \
     --query Reservations[*].Instances[].InstanceId
@@ -95,7 +95,7 @@ aws ec2 describe-instances \
 **To identify a managed instance**
 Use the [Get-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html) cmdlet.
 
-```
+```powershell
 (Get-EC2Instance -InstanceId {{i-1234567890abcdef0}}).Instances.Operator
 ```
 
@@ -110,7 +110,7 @@ True    eks.amazonaws.com
 **To find your managed instances**
 Use the [Get-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html) cmdlet. This example displays only the IDs of the managed instances.
 
-```
+```powershell
 (Get-EC2Instance -Filter @{Name="operator.managed"; Values="true"}).Instances.InstanceId
 ```
 
@@ -180,13 +180,13 @@ You can configure the visibility of managed resources by using the Amazon EC2 co
 **Get current visibility settings**
 Use the [get-managed-resource-visibility](https://docs.aws.amazon.com/cli/latest/reference/ec2/get-managed-resource-visibility.html) command to retrieve the current visibility configuration:
 
-```
+```bash
 aws ec2 get-managed-resource-visibility
 ```
 
 Example response:
 
-```
+```json
 {
     "visibility": {
         "defaultVisibility": "hidden"
@@ -197,7 +197,7 @@ Example response:
 **Hide all managed resources**
 Use the [modify-managed-resource-visibility](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-managed-resource-visibility.html) command to hide all managed resources regardless of operator:
 
-```
+```bash
 aws ec2 modify-managed-resource-visibility \
     --default-visibility "hidden"
 ```

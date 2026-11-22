@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-appconfig-extension-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppConfig::Extension",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-appconfig-extension-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppConfig::Extension
 Properties:
   [Actions](#cfn-appconfig-extension-actions): {{
@@ -135,7 +135,7 @@ An extension augments your ability to inject logic or behavior at different poin
 #### JSON
 <a name="aws-resource-appconfig-extension--examples--create_extension_example--json"></a>
 
-```
+```json
 {
   "Resources": {
     "BasicExtension": {
@@ -175,7 +175,7 @@ An extension augments your ability to inject logic or behavior at different poin
 #### YAML
 <a name="aws-resource-appconfig-extension--examples--create_extension_example--yaml"></a>
 
-```
+```yaml
 Resources:
   BasicExtension:
     Type: AWS::AppConfig::Extension

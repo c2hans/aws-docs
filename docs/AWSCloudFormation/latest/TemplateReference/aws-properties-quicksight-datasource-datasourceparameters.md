@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-datasource-datasourceparameters-syntax.json"></a>
 
-```
+```json
 {
   "[AmazonElasticsearchParameters](#cfn-quicksight-datasource-datasourceparameters-amazonelasticsearchparameters)" : {{AmazonElasticsearchParameters}},
   "[AmazonOpenSearchParameters](#cfn-quicksight-datasource-datasourceparameters-amazonopensearchparameters)" : {{AmazonOpenSearchParameters}},
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-datasource-datasourceparameters-syntax.yaml"></a>
 
-```
+```yaml
   [AmazonElasticsearchParameters](#cfn-quicksight-datasource-datasourceparameters-amazonelasticsearchparameters): {{
     AmazonElasticsearchParameters}}
   [AmazonOpenSearchParameters](#cfn-quicksight-datasource-datasourceparameters-amazonopensearchparameters): {{

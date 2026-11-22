@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-headerfootersectionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Layout](#cfn-quicksight-dashboard-headerfootersectionconfiguration-layout)" : {{SectionLayoutConfiguration}},
   "[SectionId](#cfn-quicksight-dashboard-headerfootersectionconfiguration-sectionid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-headerfootersectionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Layout](#cfn-quicksight-dashboard-headerfootersectionconfiguration-layout): {{
     SectionLayoutConfiguration}}
   [SectionId](#cfn-quicksight-dashboard-headerfootersectionconfiguration-sectionid): {{String}}

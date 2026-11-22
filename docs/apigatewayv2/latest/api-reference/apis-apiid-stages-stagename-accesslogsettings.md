@@ -45,7 +45,7 @@ Deletes the `AccessLogSettings` for a `Stage`. To disable access logging for a `
 #### NotFoundException schema
 <a name="apis-apiid-stages-stagename-accesslogsettings-response-body-notfoundexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "resourceType": "string"
@@ -55,7 +55,7 @@ Deletes the `AccessLogSettings` for a `Stage`. To disable access logging for a `
 #### LimitExceededException schema
 <a name="apis-apiid-stages-stagename-accesslogsettings-response-body-limitexceededexception-example"></a>
 
-```
+```json
 {
   "message": "string",
   "limitType": "string"

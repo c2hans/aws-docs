@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-groundstation-dataflowendpointgroupv2-downlinkconnectiondetails-syntax.json"></a>
 
-```
+```json
 {
   "[AgentIpAndPortAddress](#cfn-groundstation-dataflowendpointgroupv2-downlinkconnectiondetails-agentipandportaddress)" : {{RangedConnectionDetails}},
   "[EgressAddressAndPort](#cfn-groundstation-dataflowendpointgroupv2-downlinkconnectiondetails-egressaddressandport)" : {{ConnectionDetails}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-groundstation-dataflowendpointgroupv2-downlinkconnectiondetails-syntax.yaml"></a>
 
-```
+```yaml
   [AgentIpAndPortAddress](#cfn-groundstation-dataflowendpointgroupv2-downlinkconnectiondetails-agentipandportaddress): {{
     RangedConnectionDetails}}
   [EgressAddressAndPort](#cfn-groundstation-dataflowendpointgroupv2-downlinkconnectiondetails-egressaddressandport): {{

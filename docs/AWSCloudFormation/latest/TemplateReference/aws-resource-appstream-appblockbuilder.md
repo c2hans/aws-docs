@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-appstream-appblockbuilder-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppStream::AppBlockBuilder",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-appstream-appblockbuilder-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppStream::AppBlockBuilder
 Properties:
   [AccessEndpoints](#cfn-appstream-appblockbuilder-accessendpoints): {{

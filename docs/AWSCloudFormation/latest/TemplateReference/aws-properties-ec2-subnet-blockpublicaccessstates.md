@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-subnet-blockpublicaccessstates-syntax.json"></a>
 
-```
+```json
 {
   "[InternetGatewayBlockMode](#cfn-ec2-subnet-blockpublicaccessstates-internetgatewayblockmode)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-subnet-blockpublicaccessstates-syntax.yaml"></a>
 
-```
+```yaml
   [InternetGatewayBlockMode](#cfn-ec2-subnet-blockpublicaccessstates-internetgatewayblockmode): {{String}}
 ```
 

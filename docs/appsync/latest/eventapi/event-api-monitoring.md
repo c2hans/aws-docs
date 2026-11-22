@@ -63,7 +63,7 @@ In the [IAM console](https://console.aws.amazon.com/iam), create a new policy wi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -89,7 +89,7 @@ Next, create a new role with the name **AWSAppSyncPushToCloudWatchLogsRole**, an
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

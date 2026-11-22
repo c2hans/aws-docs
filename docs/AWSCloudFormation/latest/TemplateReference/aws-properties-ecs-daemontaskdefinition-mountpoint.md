@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-daemontaskdefinition-mountpoint-syntax.json"></a>
 
-```
+```json
 {
   "[ContainerPath](#cfn-ecs-daemontaskdefinition-mountpoint-containerpath)" : {{String}},
   "[ReadOnly](#cfn-ecs-daemontaskdefinition-mountpoint-readonly)" : {{Boolean}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-daemontaskdefinition-mountpoint-syntax.yaml"></a>
 
-```
+```yaml
   [ContainerPath](#cfn-ecs-daemontaskdefinition-mountpoint-containerpath): {{String}}
   [ReadOnly](#cfn-ecs-daemontaskdefinition-mountpoint-readonly): {{Boolean}}
   [SourceVolume](#cfn-ecs-daemontaskdefinition-mountpoint-sourcevolume): {{String}}

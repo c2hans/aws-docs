@@ -307,7 +307,7 @@ This example illustrates how to create an App Runner service based on a Python s
 #### Sample Request
 <a name="API_CreateService_Example_1_Request"></a>
 
-```
+```json
 $ aws apprunner create-service --cli-input-json "`cat`"
 {
   "ServiceName": "python-app",
@@ -348,7 +348,7 @@ $ aws apprunner create-service --cli-input-json "`cat`"
 #### Sample Response
 <a name="API_CreateService_Example_1_Response"></a>
 
-```
+```json
 {
   "OperationId": "17fe9f55-7e91-4097-b243-fcabbb69a4cf",
   "Service": {
@@ -414,7 +414,7 @@ This example illustrates how to create an App Runner service based on an image s
 #### Sample Request
 <a name="API_CreateService_Example_2_Request"></a>
 
-```
+```json
 $ aws apprunner create-service --cli-input-json "`cat`"
 {
   "ServiceName": "golang-container-app",
@@ -446,7 +446,7 @@ $ aws apprunner create-service --cli-input-json "`cat`"
 #### Sample Response
 <a name="API_CreateService_Example_2_Response"></a>
 
-```
+```json
 {
   "OperationId": "17fe9f55-7e91-4097-b243-fcabbb69a4cf",
   "Service": {

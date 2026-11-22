@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-spacing-syntax.json"></a>
 
-```
+```json
 {
   "[Bottom](#cfn-quicksight-dashboard-spacing-bottom)" : {{String}},
   "[Left](#cfn-quicksight-dashboard-spacing-left)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-spacing-syntax.yaml"></a>
 
-```
+```yaml
   [Bottom](#cfn-quicksight-dashboard-spacing-bottom): {{String}}
   [Left](#cfn-quicksight-dashboard-spacing-left): {{String}}
   [Right](#cfn-quicksight-dashboard-spacing-right): {{String}}

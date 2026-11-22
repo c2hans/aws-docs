@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-invoicing-procurementportalpreference-testenvpreference-syntax.json"></a>
 
-```
+```json
 {
   "[BuyerDomain](#cfn-invoicing-procurementportalpreference-testenvpreference-buyerdomain)" : {{String}},
   "[BuyerIdentifier](#cfn-invoicing-procurementportalpreference-testenvpreference-buyeridentifier)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-invoicing-procurementportalpreference-testenvpreference-syntax.yaml"></a>
 
-```
+```yaml
   [BuyerDomain](#cfn-invoicing-procurementportalpreference-testenvpreference-buyerdomain): {{String}}
   [BuyerIdentifier](#cfn-invoicing-procurementportalpreference-testenvpreference-buyeridentifier): {{String}}
   [ProcurementPortalInstanceEndpoint](#cfn-invoicing-procurementportalpreference-testenvpreference-procurementportalinstanceendpoint): {{String}}

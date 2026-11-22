@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-topic-defaultformatting-syntax.json"></a>
 
-```
+```json
 {
   "[DisplayFormat](#cfn-quicksight-topic-defaultformatting-displayformat)" : {{String}},
   "[DisplayFormatOptions](#cfn-quicksight-topic-defaultformatting-displayformatoptions)" : {{DisplayFormatOptions}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-topic-defaultformatting-syntax.yaml"></a>
 
-```
+```yaml
   [DisplayFormat](#cfn-quicksight-topic-defaultformatting-displayformat): {{String}}
   [DisplayFormatOptions](#cfn-quicksight-topic-defaultformatting-displayformatoptions): {{
     DisplayFormatOptions}}

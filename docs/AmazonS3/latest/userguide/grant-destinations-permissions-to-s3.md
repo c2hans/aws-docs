@@ -40,7 +40,7 @@ The following is an example of an AWS Identity and Access Management (IAM) polic
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "example-ID",
@@ -82,7 +82,7 @@ To use this policy, you must update the Amazon SQS queue ARN, bucket name, and b
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "example-ID",
@@ -134,7 +134,7 @@ If the SQS queue or SNS topics are encrypted with an AWS Key Management Service 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Id": "example-ID",

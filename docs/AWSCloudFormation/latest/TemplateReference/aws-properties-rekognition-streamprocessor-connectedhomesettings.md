@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rekognition-streamprocessor-connectedhomesettings-syntax.json"></a>
 
-```
+```json
 {
   "[Labels](#cfn-rekognition-streamprocessor-connectedhomesettings-labels)" : {{[ String, ... ]}},
   "[MinConfidence](#cfn-rekognition-streamprocessor-connectedhomesettings-minconfidence)" : {{Number}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rekognition-streamprocessor-connectedhomesettings-syntax.yaml"></a>
 
-```
+```yaml
   [Labels](#cfn-rekognition-streamprocessor-connectedhomesettings-labels): {{
     - String}}
   [MinConfidence](#cfn-rekognition-streamprocessor-connectedhomesettings-minconfidence): {{Number}}

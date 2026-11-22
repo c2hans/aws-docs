@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigateway-apikey-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGateway::ApiKey",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigateway-apikey-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGateway::ApiKey
 Properties:
   [CustomerId](#cfn-apigateway-apikey-customerid): {{String}}
@@ -136,7 +136,7 @@ The following example creates an API key and associates it with the `Test` stage
 #### JSON
 <a name="aws-resource-apigateway-apikey--examples--API_Key--json"></a>
 
-```
+```json
 {
     "ApiKey": {
         "Type": "AWS::ApiGateway::ApiKey",
@@ -164,7 +164,7 @@ The following example creates an API key and associates it with the `Test` stage
 #### YAML
 <a name="aws-resource-apigateway-apikey--examples--API_Key--yaml"></a>
 
-```
+```yaml
 ApiKey:
   Type: 'AWS::ApiGateway::ApiKey'
   DependsOn:

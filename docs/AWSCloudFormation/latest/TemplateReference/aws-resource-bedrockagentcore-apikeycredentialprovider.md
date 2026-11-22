@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-bedrockagentcore-apikeycredentialprovider-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::BedrockAgentCore::ApiKeyCredentialProvider",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-bedrockagentcore-apikeycredentialprovider-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::BedrockAgentCore::ApiKeyCredentialProvider
 Properties:
   [ApiKey](#cfn-bedrockagentcore-apikeycredentialprovider-apikey): {{String}}

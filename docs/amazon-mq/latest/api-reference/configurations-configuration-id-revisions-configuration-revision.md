@@ -66,7 +66,7 @@ Returns the specified configuration revision for the specified configuration.
 #### DescribeConfigurationRevisionOutput schema
 <a name="configurations-configuration-id-revisions-configuration-revision-response-body-describeconfigurationrevisionoutput-example"></a>
 
-```
+```json
 {
   "data": "string",
   "created": "string",
@@ -78,7 +78,7 @@ Returns the specified configuration revision for the specified configuration.
 #### Error schema
 <a name="configurations-configuration-id-revisions-configuration-revision-response-body-error-example"></a>
 
-```
+```json
 {
   "errorAttribute": "string",
   "message": "string"

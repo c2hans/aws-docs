@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ssm-document-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SSM::Document",
   "Properties" : {
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ssm-document-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SSM::Document
 Properties:
   [Attachments](#cfn-ssm-document-attachments): {{
@@ -171,7 +171,7 @@ The following runbook runs the commands you specify on your target Amazon EC2 Li
 #### YAML
 <a name="aws-resource-ssm-document--examples--Create_an_Automation_runbook_that_runs_commands_on_an_EC2_Linux_instance--yaml"></a>
 
-```
+```yaml
 document:
     Type: AWS::SSM::Document
     Properties:
@@ -209,7 +209,7 @@ document:
 #### JSON
 <a name="aws-resource-ssm-document--examples--Create_an_Automation_runbook_that_runs_commands_on_an_EC2_Linux_instance--json"></a>
 
-```
+```json
 "document": {
          "Type": "AWS::SSM::Document",
          "Properties": {
@@ -265,7 +265,7 @@ The following SSM document runs the commands you specify on your target Amazon E
 #### YAML
 <a name="aws-resource-ssm-document--examples--Create_a_document_that_runs_commands_on_an_EC2_Linux_instance--yaml"></a>
 
-```
+```yaml
 document:
   Type: AWS::SSM::Document
   Properties:
@@ -293,7 +293,7 @@ document:
 #### JSON
 <a name="aws-resource-ssm-document--examples--Create_a_document_that_runs_commands_on_an_EC2_Linux_instance--json"></a>
 
-```
+```json
 "document": {
   "Type": "AWS::SSM::Document",
   "Properties": {
@@ -334,7 +334,7 @@ The following SSM document joins instances to a directory in AWS Directory Servi
 #### YAML
 <a name="aws-resource-ssm-document--examples--Join_a_managed_instance_to_a_directory_in--yaml"></a>
 
-```
+```yaml
 document:
   Type: AWS::SSM::Document
   Properties:
@@ -365,7 +365,7 @@ document:
 #### JSON
 <a name="aws-resource-ssm-document--examples--Join_a_managed_instance_to_a_directory_in--json"></a>
 
-```
+```json
 "document" : {
     "Type": "AWS::SSM::Document",
     "Properties": {
@@ -410,7 +410,7 @@ The following example shows how to associate an SSM document with an instance. T
 #### YAML
 <a name="aws-resource-ssm-document--examples--Associate_an_SSM_document_with_an_instance--yaml"></a>
 
-```
+```yaml
 myEC2:
   Type: AWS::EC2::Instance
   Properties:
@@ -446,7 +446,7 @@ myEC2:
 #### JSON
 <a name="aws-resource-ssm-document--examples--Associate_an_SSM_document_with_an_instance--json"></a>
 
-```
+```json
 "myEC2" : {
     "Type": "AWS::EC2::Instance",
     "Properties": {
@@ -513,7 +513,7 @@ The following example creates a Systems Manager`Session` type document for Sessi
 #### JSON
 <a name="aws-resource-ssm-document--examples--Create_a_document_for_Session_Manager_preferences--json"></a>
 
-```
+```json
 {
    "Resources":{
       "SessionPreferencesDocument":{
@@ -557,7 +557,7 @@ The following example creates a Systems Manager`Session` type document for Sessi
 #### YAML
 <a name="aws-resource-ssm-document--examples--Create_a_document_for_Session_Manager_preferences--yaml"></a>
 
-```
+```yaml
 Resources:
   SessionPreferencesDocument:
     Type: AWS::SSM::Document
@@ -597,7 +597,7 @@ The following example creates a new Systems Manager command document with JSON c
 #### JSON
 <a name="aws-resource-ssm-document--examples--Create_a_document_with_JSON_content--json"></a>
 
-```
+```json
 {
    "Type":"AWS::SSM::Document",
    "Properties":{
@@ -611,7 +611,7 @@ The following example creates a new Systems Manager command document with JSON c
 #### YAML
 <a name="aws-resource-ssm-document--examples--Create_a_document_with_JSON_content--yaml"></a>
 
-```
+```yaml
 ---
 Type: "AWS::SSM::Document"
 Properties:
@@ -628,7 +628,7 @@ The following example creates a new Systems Manager Distributor package.
 #### JSON
 <a name="aws-resource-ssm-document--examples--Create_a_Distributor_package--json"></a>
 
-```
+```json
 {
         "Resources": {
         "ExamplePackageDocument": {
@@ -653,7 +653,7 @@ The following example creates a new Systems Manager Distributor package.
 #### YAML
 <a name="aws-resource-ssm-document--examples--Create_a_Distributor_package--yaml"></a>
 
-```
+```yaml
 Resources:
   ExamplePackageDocument:
     Type: AWS::SSM::Document
@@ -678,7 +678,7 @@ The following example creates a new Systems Manager Change Calendar document.
 #### JSON
 <a name="aws-resource-ssm-document--examples--Create_a_Change_Calendar_document--json"></a>
 
-```
+```json
 {
    "Resources":{
       "ExampleChangeCalendarDocument":{
@@ -696,7 +696,7 @@ The following example creates a new Systems Manager Change Calendar document.
 #### YAML
 <a name="aws-resource-ssm-document--examples--Create_a_Change_Calendar_document--yaml"></a>
 
-```
+```yaml
 Resources:
   ExampleChangeCalendarDocument:
     Type: 'AWS::SSM::Document'

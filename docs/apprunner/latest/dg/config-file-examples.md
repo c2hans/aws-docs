@@ -24,7 +24,7 @@ With a minimal configuration file, App Runner makes the following assumptions:
 
 **Example apprunner.yaml**
 
-```
+```yaml
 version: 1.0
 runtime: python3
 build:
@@ -43,7 +43,7 @@ This example shows the use of all configuration keys in the `apprunner.yaml` ori
 
 **Example apprunner.yaml**
 
-```
+```yaml
 version: 1.0
 runtime: python3
 build:
@@ -90,7 +90,7 @@ Since this examples is for Python 3.11, we use the `pip3` and `python3` commands
 
 **Example apprunner.yaml**
 
-```
+```yaml
 version: 1.0
 runtime: python311
 build:

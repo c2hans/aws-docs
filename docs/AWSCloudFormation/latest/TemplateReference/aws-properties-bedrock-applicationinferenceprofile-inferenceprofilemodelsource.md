@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-applicationinferenceprofile-inferenceprofilemodelsource-syntax.json"></a>
 
-```
+```json
 {
   "[CopyFrom](#cfn-bedrock-applicationinferenceprofile-inferenceprofilemodelsource-copyfrom)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-applicationinferenceprofile-inferenceprofilemodelsource-syntax.yaml"></a>
 
-```
+```yaml
   [CopyFrom](#cfn-bedrock-applicationinferenceprofile-inferenceprofilemodelsource-copyfrom): {{String}}
 ```
 

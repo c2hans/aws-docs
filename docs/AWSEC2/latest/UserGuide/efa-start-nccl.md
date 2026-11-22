@@ -132,7 +132,7 @@ You must provision an additional 10 to 20 GiB of storage for the NVIDIA CUDA Too
 
 1. To ensure that all of your software packages are up to date, perform a quick software update on your instance.
 
-   ```
+   ```bash
    $ sudo dnf upgrade -y && sudo reboot
    ```
 
@@ -140,7 +140,7 @@ You must provision an additional 10 to 20 GiB of storage for the NVIDIA CUDA Too
 
 1. Install the utilities that are needed to install the NVIDIA GPU drivers and the NVIDIA CUDA Toolkit.
 
-   ```
+   ```bash
    $ sudo dnf groupinstall 'Development Tools' -y && sudo dnf install -y dkms kernel-devel-$(uname -r) kernel-headers-$(uname -r)
    ```
 
@@ -148,13 +148,13 @@ You must provision an additional 10 to 20 GiB of storage for the NVIDIA CUDA Too
 
    1. Install the required utilities and the kernel headers package for the version of the kernel that you are currently running.
 
-      ```
+      ```bash
       $ sudo yum install -y wget kernel-devel-$(uname -r) kernel-headers-$(uname -r)
       ```
 
    1. Add `nouveau` to the `/etc/modprobe.d/blacklist.conf` deny list file.
 
-      ```
+      ```bash
       $ cat << EOF | sudo tee --append /etc/modprobe.d/blacklist.conf
       blacklist vga16fb
       blacklist nouveau
@@ -166,7 +166,7 @@ You must provision an additional 10 to 20 GiB of storage for the NVIDIA CUDA Too
 
    1. Append `GRUB_CMDLINE_LINUX="rdblacklist=nouveau"` to the `grub` file and rebuild the GRUB configuration.
 
-      ```
+      ```bash
       $ echo 'GRUB_CMDLINE_LINUX="rdblacklist=nouveau"' | sudo tee -a /etc/default/grub \
       && sudo grub2-mkconfig -o /boot/grub2/grub.cfg
       ```
@@ -175,20 +175,20 @@ You must provision an additional 10 to 20 GiB of storage for the NVIDIA CUDA Too
 
 1. Add the CUDA network repository.
 
-   ```
+   ```bash
    $ sudo yum-config-manager --add-repo https://developer.download.nvidia.com/compute/cuda/repos/rhel8/x86_64/cuda-rhel8.repo
    ```
 
 1. Download and install the NVIDIA GPU driver.
 
-   ```
+   ```bash
    $ wget https://us.download.nvidia.com/tesla/580.167.08/NVIDIA-Linux-x86_64-580.167.08.run \
    && sudo sh NVIDIA-Linux-x86_64-580.167.08.run -m kernel-open --no-drm --disable-nouveau --dkms --silent
    ```
 
 1. Install the NVIDIA CUDA Toolkit and cuDNN.
 
-   ```
+   ```bash
    $ sudo dnf install -y cuda-toolkit-13-0 libcudnn9-cuda-13 libcudnn9-devel-cuda-13
    ```
 
@@ -196,7 +196,7 @@ You must provision an additional 10 to 20 GiB of storage for the NVIDIA CUDA Too
 
 1. (Instances with NVSwitch, such as P-series multi-GPU instances) Install and start the NVIDIA Fabric Manager. G-series instances do not use NVSwitch and do not require Fabric Manager.
 
-   ```
+   ```bash
    $ sudo dnf install -y https://developer.download.nvidia.com/compute/cuda/repos/rhel8/x86_64/nvidia-fabricmanager-580.167.08-1.el8.x86_64.rpm \
    && sudo systemctl enable nvidia-fabricmanager && sudo systemctl start nvidia-fabricmanager
    ```
@@ -204,20 +204,20 @@ You must provision an additional 10 to 20 GiB of storage for the NVIDIA CUDA Too
 1. Ensure that the CUDA paths are set each time that the instance starts.
    + For *bash* shells, add the following statements to `/home/{{username}}/.bashrc` and `/home/{{username}}/.bash_profile`.
 
-     ```
+     ```bash
      export PATH=/usr/local/cuda/bin:$PATH
      export LD_LIBRARY_PATH=/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
      ```
    + For *tcsh* shells, add the following statements to `/home/{{username}}/.cshrc`.
 
-     ```
+     ```bash
      setenv PATH=/usr/local/cuda/bin:$PATH
      setenv LD_LIBRARY_PATH=/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
      ```
 
 1. To confirm that the NVIDIA GPU drivers are functional, run the following command.
 
-   ```
+   ```bash
    $ nvidia-smi -q | head
    ```
 
@@ -230,13 +230,13 @@ You must provision an additional 10 to 20 GiB of storage for the NVIDIA CUDA Too
 
 1. To ensure that all of your software packages are up to date, perform a quick software update on your instance.
 
-   ```
+   ```bash
    $ sudo apt-get update && sudo apt-get upgrade -y
    ```
 
 1. Install the utilities that are needed to install the NVIDIA GPU drivers and the NVIDIA CUDA Toolkit.
 
-   ```
+   ```bash
    $ sudo apt-get update && sudo apt-get install build-essential -y
    ```
 
@@ -244,13 +244,13 @@ You must provision an additional 10 to 20 GiB of storage for the NVIDIA CUDA Too
 
    1. Install the required utilities and the kernel headers package for the version of the kernel that you are currently running.
 
-      ```
+      ```bash
       $ sudo apt-get install -y gcc make linux-headers-$(uname -r)
       ```
 
    1. Add `nouveau` to the `/etc/modprobe.d/blacklist.conf` deny list file.
 
-      ```
+      ```bash
       $ cat << EOF | sudo tee --append /etc/modprobe.d/blacklist.conf
       blacklist vga16fb
       blacklist nouveau
@@ -262,13 +262,13 @@ You must provision an additional 10 to 20 GiB of storage for the NVIDIA CUDA Too
 
    1. Open `/etc/default/grub` using your preferred text editor and add the following.
 
-      ```
+      ```bash
       GRUB_CMDLINE_LINUX="rdblacklist=nouveau"
       ```
 
    1. Rebuild the GRUB configuration.
 
-      ```
+      ```bash
       $ sudo update-grub
       ```
 
@@ -277,38 +277,38 @@ You must provision an additional 10 to 20 GiB of storage for the NVIDIA CUDA Too
 1. Add the CUDA repository and install the NVIDIA GPU drivers, NVIDIA CUDA Toolkit, and cuDNN.
    + Ubuntu 26.04
 
-     ```
+     ```bash
      $ wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2604/x86_64/cuda-keyring_1.1-1_all.deb \
      && sudo dpkg -i cuda-keyring_1.1-1_all.deb \
      && sudo add-apt-repository -y 'deb [trusted=yes] https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2604/x86_64 /' \
      && sudo apt-get update
      ```
 
-     ```
+     ```bash
      $ sudo apt-get install -y nvidia-open cuda-toolkit-13-3 libcudnn9-cuda-13 libcudnn9-dev-cuda-13
      ```
    + Ubuntu 24.04
 
-     ```
+     ```bash
      $ wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64/cuda-keyring_1.1-1_all.deb \
      && sudo dpkg -i cuda-keyring_1.1-1_all.deb \
      && sudo add-apt-repository -y 'deb [trusted=yes] https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64 /' \
      && sudo apt-get update
      ```
 
-     ```
+     ```bash
      $ sudo apt-get install -y nvidia-open-580 cuda-toolkit-13-0 libcudnn9-cuda-13 libcudnn9-dev-cuda-13
      ```
    + Ubuntu 22.04
 
-     ```
+     ```bash
      $ wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.1-1_all.deb \
      && sudo dpkg -i cuda-keyring_1.1-1_all.deb \
      && sudo DEBIAN_FRONTEND=noninteractive add-apt-repository -y "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/ /" \
      && sudo apt-get update
      ```
 
-     ```
+     ```bash
      $ sudo apt-get install -y nvidia-open-580 cuda-toolkit-13-0 libcudnn9-cuda-13 libcudnn9-dev-cuda-13
      ```
 
@@ -317,13 +317,13 @@ You must provision an additional 10 to 20 GiB of storage for the NVIDIA CUDA Too
 1. (Instances with NVSwitch, such as P-series multi-GPU instances) Install and start the NVIDIA Fabric Manager. G-series instances do not use NVSwitch and do not require Fabric Manager.
    + Ubuntu 26.04
 
-     ```
+     ```bash
      $ sudo apt-get install -y nvidia-fabricmanager \
      && sudo systemctl enable nvidia-fabricmanager && sudo systemctl start nvidia-fabricmanager
      ```
    + Ubuntu 24.04 and Ubuntu 22.04
 
-     ```
+     ```bash
      $ sudo apt-get install -y nvidia-fabricmanager-580 \
      && sudo systemctl enable nvidia-fabricmanager && sudo systemctl start nvidia-fabricmanager
      ```
@@ -331,20 +331,20 @@ You must provision an additional 10 to 20 GiB of storage for the NVIDIA CUDA Too
 1. Ensure that the CUDA paths are set each time that the instance starts.
    + For *bash* shells, add the following statements to `/home/{{username}}/.bashrc` and `/home/{{username}}/.bash_profile`.
 
-     ```
+     ```bash
      export PATH=/usr/local/cuda/bin:$PATH
      export LD_LIBRARY_PATH=/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
      ```
    + For *tcsh* shells, add the following statements to `/home/{{username}}/.cshrc`.
 
-     ```
+     ```bash
      setenv PATH=/usr/local/cuda/bin:$PATH
      setenv LD_LIBRARY_PATH=/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
      ```
 
 1. To confirm that the NVIDIA GPU drivers are functional, run the following command.
 
-   ```
+   ```bash
    $ nvidia-smi -q | head
    ```
 
@@ -357,13 +357,13 @@ You must provision an additional 10 to 20 GiB of storage for the NVIDIA CUDA Too
 
 1. Install the utilities that are needed to install the NVIDIA GPU drivers and the NVIDIA CUDA Toolkit.
 
-   ```
+   ```bash
    $ sudo apt-get install -y build-essential gcc make linux-headers-$(uname -r) dkms
    ```
 
 1. Disable the `nouveau` open source drivers.
 
-   ```
+   ```bash
    $ sudo sed -i 's/GRUB_CMDLINE_LINUX=""/GRUB_CMDLINE_LINUX="rdblacklist=nouveau"/' /etc/default/grub && sudo update-grub
    ```
 
@@ -372,31 +372,31 @@ You must provision an additional 10 to 20 GiB of storage for the NVIDIA CUDA Too
 1. Add the CUDA repository and install the NVIDIA GPU drivers, NVIDIA CUDA Toolkit, and cuDNN:
    + Debian 12
 
-     ```
+     ```bash
      $ wget https://developer.download.nvidia.com/compute/cuda/repos/debian12/x86_64/cuda-keyring_1.1-1_all.deb \
      && sudo dpkg -i cuda-keyring_1.1-1_all.deb \
      && sudo DEBIAN_FRONTEND=noninteractive add-apt-repository -y "deb https://developer.download.nvidia.com/compute/cuda/repos/debian12/x86_64/ /" \
      && sudo apt-get update
      ```
 
-     ```
+     ```bash
      $ sudo apt-get install -y nvidia-open cuda-toolkit-13-0 libcudnn9-cuda-13 libcudnn9-dev-cuda-13
      ```
    + Debian 13
 
-     ```
+     ```bash
      $ wget https://developer.download.nvidia.com/compute/cuda/repos/debian13/x86_64/cuda-keyring_1.1-1_all.deb \
      && sudo dpkg -i cuda-keyring_1.1-1_all.deb \
      && sudo apt-get update
      ```
 
-     ```
+     ```bash
      $ sudo apt-get install -y nvidia-open cuda-toolkit-13-3 libcudnn9-cuda-13 libcudnn9-dev-cuda-13
      ```
 
 1. Configure the NVIDIA UVM kernel module.
 
-   ```
+   ```bash
    $ uvm_ko=$(find /lib/modules/$(uname -r) -name 'nvidia*uvm*.ko*' 2>/dev/null | head -1) && if [ -n "$uvm_ko" ]; then real=$(basename "$uvm_ko"); real=${real%.ko*}; echo "$real" | sudo tee /etc/modules-load.d/nvidia-uvm.conf; if [ "$real" != "nvidia-uvm" ]; then echo "alias nvidia-uvm $real" | sudo tee /etc/modprobe.d/nvidia-uvm.conf; fi; sudo modprobe "$real" || true; fi && sudo modprobe nvidia
    ```
 
@@ -406,7 +406,7 @@ You must provision an additional 10 to 20 GiB of storage for the NVIDIA CUDA Too
 
    1. Determine the version of the NVIDIA kernel module.
 
-      ```
+      ```bash
       $ cat /proc/driver/nvidia/version | grep "Kernel Module"
       ```
 
@@ -421,13 +421,13 @@ You must provision an additional 10 to 20 GiB of storage for the NVIDIA CUDA Too
    1. Install the NVIDIA Fabric Manager:
       + Debian 12: Install the package that matches the major version identified in the previous step.
 
-        ```
+        ```bash
         $ sudo apt-get install -y nvidia-fabricmanager-{{major_version_number}} \
         && sudo systemctl enable nvidia-fabricmanager && sudo systemctl start nvidia-fabricmanager
         ```
       + Debian 13: Install the `nvidia-fabricmanager` package.
 
-        ```
+        ```bash
         $ sudo apt-get install -y nvidia-fabricmanager \
         && sudo systemctl enable nvidia-fabricmanager && sudo systemctl start nvidia-fabricmanager
         ```
@@ -435,20 +435,20 @@ You must provision an additional 10 to 20 GiB of storage for the NVIDIA CUDA Too
 1. Ensure that the CUDA paths are set each time that the instance starts.
    + For *bash* shells, add the following statements to `/home/{{username}}/.bashrc` and `/home/{{username}}/.bash_profile`.
 
-     ```
+     ```bash
      export PATH=/usr/local/cuda/bin:$PATH
      export LD_LIBRARY_PATH=/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
      ```
    + For *tcsh* shells, add the following statements to `/home/{{username}}/.cshrc`.
 
-     ```
+     ```bash
      setenv PATH=/usr/local/cuda/bin:$PATH
      setenv LD_LIBRARY_PATH=/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
      ```
 
 1. To confirm that the NVIDIA GPU drivers are functional, run the following command.
 
-   ```
+   ```bash
    $ nvidia-smi -q | head
    ```
 
@@ -461,7 +461,7 @@ You must provision an additional 10 to 20 GiB of storage for the NVIDIA CUDA Too
 
 1. To ensure that all of your software packages are up to date, perform a quick software update on your instance.
 
-   ```
+   ```bash
    $ sudo dnf upgrade -y && sudo reboot
    ```
 
@@ -469,7 +469,7 @@ You must provision an additional 10 to 20 GiB of storage for the NVIDIA CUDA Too
 
 1. Install the utilities that are needed to install the NVIDIA GPU drivers and the NVIDIA CUDA Toolkit.
 
-   ```
+   ```bash
    $ sudo dnf groupinstall 'Development Tools' -y \
    && sudo dnf install -y dkms kernel-devel-$(uname -r) \
    && sudo dnf install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-10.noarch.rpm
@@ -479,7 +479,7 @@ You must provision an additional 10 to 20 GiB of storage for the NVIDIA CUDA Too
 
    1. Add `nouveau` to the `/etc/modprobe.d/blacklist.conf` deny list file.
 
-      ```
+      ```bash
       $ cat << EOF | sudo tee --append /etc/modprobe.d/blacklist.conf
       blacklist vga16fb
       blacklist nouveau
@@ -491,7 +491,7 @@ You must provision an additional 10 to 20 GiB of storage for the NVIDIA CUDA Too
 
    1. Append `GRUB_CMDLINE_LINUX="rdblacklist=nouveau"` to the `grub` file and rebuild the GRUB configuration.
 
-      ```
+      ```bash
       $ echo 'GRUB_CMDLINE_LINUX="rdblacklist=nouveau"' | sudo tee -a /etc/default/grub \
       && sudo grub2-mkconfig -o /boot/grub2/grub.cfg
       ```
@@ -500,7 +500,7 @@ You must provision an additional 10 to 20 GiB of storage for the NVIDIA CUDA Too
 
 1. Add the CUDA repository and install the NVIDIA GPU drivers, NVIDIA CUDA Toolkit, and cuDNN.
 
-   ```
+   ```bash
    $ sudo yum-config-manager --add-repo https://developer.download.nvidia.com/compute/cuda/repos/rhel10/x86_64/cuda-rhel10.repo \
    && sudo dnf install -y nvidia-open-580.167.08 cuda-toolkit-13-0 libcudnn9-cuda-13 libcudnn9-devel-cuda-13
    ```
@@ -509,7 +509,7 @@ You must provision an additional 10 to 20 GiB of storage for the NVIDIA CUDA Too
 
 1. (Instances with NVSwitch, such as P-series multi-GPU instances) Install and start the NVIDIA Fabric Manager. G-series instances do not use NVSwitch and do not require Fabric Manager.
 
-   ```
+   ```bash
    $ sudo dnf install -y https://developer.download.nvidia.com/compute/cuda/repos/rhel10/x86_64/nvidia-fabricmanager-580.167.08-1.x86_64.rpm \
    && sudo systemctl enable nvidia-fabricmanager && sudo systemctl start nvidia-fabricmanager
    ```
@@ -517,20 +517,20 @@ You must provision an additional 10 to 20 GiB of storage for the NVIDIA CUDA Too
 1. Ensure that the CUDA paths are set each time that the instance starts.
    + For *bash* shells, add the following statements to `/home/{{username}}/.bashrc` and `/home/{{username}}/.bash_profile`.
 
-     ```
+     ```bash
      export PATH=/usr/local/cuda/bin:$PATH
      export LD_LIBRARY_PATH=/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
      ```
    + For *tcsh* shells, add the following statements to `/home/{{username}}/.cshrc`.
 
-     ```
+     ```bash
      setenv PATH=/usr/local/cuda/bin:$PATH
      setenv LD_LIBRARY_PATH=/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
      ```
 
 1. To confirm that the NVIDIA GPU drivers are functional, run the following command.
 
-   ```
+   ```bash
    $ nvidia-smi -q | head
    ```
 
@@ -550,26 +550,26 @@ Install GDRCopy to improve the performance of Libfabric. For more information ab
 
 1. Install the required dependencies.
 
-   ```
+   ```bash
    $ sudo yum -y install dkms rpm-build make check check-devel
    ```
 
 1. Download and extract the GDRCopy package.
 
-   ```
+   ```bash
    $ wget https://github.com/NVIDIA/gdrcopy/archive/refs/tags/v2.5.2.tar.gz \
    && tar xf v2.5.2.tar.gz && cd gdrcopy-2.5.2/packages
    ```
 
 1. Build the GDRCopy RPM packages.
 
-   ```
+   ```bash
    $ CUDA=/usr/local/cuda ./build-rpm-packages.sh
    ```
 
 1. Install the GDRCopy RPM packages.
 
-   ```
+   ```bash
    $ sudo rpm -Uvh gdrcopy-kmod-2.5.2*dkms*.rpm \
    && sudo rpm -Uvh gdrcopy-2.5.2*.rpm \
    && sudo rpm -Uvh gdrcopy-devel-2.5.2*.rpm
@@ -582,19 +582,19 @@ Install GDRCopy to improve the performance of Libfabric. For more information ab
 
 1. Install the required dependencies.
 
-   ```
+   ```bash
    $ sudo apt-get install -y build-essential devscripts debhelper fakeroot pkg-config dkms
    ```
 **Note**
 On Ubuntu 22.04, also install the following additional dependencies:
 
-   ```
+   ```bash
    $ sudo apt-get install -y check libsubunit-dev
    ```
 
 1. Download and extract the GDRCopy package, and build the packages.
 
-   ```
+   ```bash
    $ wget https://github.com/NVIDIA/gdrcopy/archive/refs/tags/v2.5.2.tar.gz \
    && tar xf v2.5.2.tar.gz \
    && cd gdrcopy-2.5.2/packages \
@@ -603,7 +603,7 @@ On Ubuntu 22.04, also install the following additional dependencies:
 
 1. Install the GDRCopy DEB packages.
 
-   ```
+   ```bash
    $ sudo dpkg -i gdrdrv-dkms_2.5.2-1_amd64.*.deb \
    && sudo dpkg -i libgdrapi_2.5.2-1_amd64.*.deb \
    && sudo dpkg -i gdrcopy-tests_2.5.2-1_amd64.*.deb \
@@ -617,20 +617,20 @@ On Ubuntu 22.04, also install the following additional dependencies:
 
 1. Install the required dependencies.
 
-   ```
+   ```bash
    $ sudo apt-get install -y build-essential devscripts debhelper fakeroot pkg-config dkms
    ```
 
 1. Download and extract the GDRCopy package.
 
-   ```
+   ```bash
    $ wget https://github.com/NVIDIA/gdrcopy/archive/refs/tags/v2.5.2.tar.gz \
    && tar xf v2.5.2.tar.gz && cd gdrcopy-2.5.2/packages
    ```
 
 1. Apply Debian version patches and build the packages.
 
-   ```
+   ```bash
    $ sed -i 's/(2.5.2)/(2.5.2-1)/g' debian-lib/changelog \
    && sed -i 's/(2.5.2)/(2.5.2-1)/g' debian-tests/changelog \
    && sed -i 's/(2.5.2)/(2.5.2-1)/g' dkms/debian/changelog \
@@ -638,13 +638,13 @@ On Ubuntu 22.04, also install the following additional dependencies:
    && sed -i 's/FULL_VERSION="${VERSION}"/FULL_VERSION="${VERSION}-${DEBIAN_VERSION}"/g' build-deb-packages.sh
    ```
 
-   ```
+   ```bash
    $ CUDA=/usr/local/cuda ./build-deb-packages.sh
    ```
 
 1. Install the GDRCopy DEB packages.
 
-   ```
+   ```bash
    $ sudo dpkg -i gdrdrv-dkms_2.5.2*.deb \
    && sudo dpkg -i libgdrapi_2.5.2*.deb \
    && sudo dpkg -i gdrcopy-tests_2.5.2*.deb \
@@ -658,26 +658,26 @@ On Ubuntu 22.04, also install the following additional dependencies:
 
 1. Install the required dependencies.
 
-   ```
+   ```bash
    $ sudo yum -y install dkms rpm-build make check check-devel
    ```
 
 1. Download and extract the GDRCopy package.
 
-   ```
+   ```bash
    $ wget https://github.com/NVIDIA/gdrcopy/archive/refs/tags/v2.5.2.tar.gz \
    && tar xf v2.5.2.tar.gz && cd gdrcopy-2.5.2/packages
    ```
 
 1. Build the GDRCopy RPM packages.
 
-   ```
+   ```bash
    $ CUDA=/usr/local/cuda ./build-rpm-packages.sh
    ```
 
 1. Install the GDRCopy RPM packages.
 
-   ```
+   ```bash
    $ sudo rpm -Uvh gdrcopy-kmod-2.5.2*dkms*.rpm \
    && sudo rpm -Uvh gdrcopy-2.5.2*.rpm \
    && sudo rpm -Uvh gdrcopy-devel-2.5.2*.rpm
@@ -696,7 +696,7 @@ Install the EFA-enabled kernel, EFA drivers, Libfabric, aws-ofi-nccl plugin, and
 
 1. Download the EFA software installation files. The software installation files come as a compressed tarball (`.tar.gz`) file. To download the latest *stable* version, use the following command.
 
-   ```
+   ```bash
    $ curl -O https://efa-installer.amazonaws.com/aws-efa-installer-1.51.0.tar.gz
    ```
 
@@ -744,7 +744,7 @@ Alternatively, if you prefer to verify the tarball file by using an MD5 or SHA25
 
 1. Extract the files from the compressed `.tar.gz` file and navigate into the extracted directory.
 
-   ```
+   ```bash
    $ tar -xf aws-efa-installer-1.51.0.tar.gz && cd aws-efa-installer
    ```
 
@@ -754,13 +754,13 @@ Alternatively, if you prefer to verify the tarball file by using an MD5 or SHA25
 
    1. Download the GPG public key.
 
-      ```
+      ```bash
       $ wget https://efa-installer.amazonaws.com/aws-efa-installer.key
       ```
 
    1. Export the key path. Then, in the next step, append `--check-signatures` to the installation command and use `sudo -E` instead of `sudo` to preserve the environment variable.
 
-      ```
+      ```bash
       $ export EFA_INSTALLER_KEY=$(pwd)/aws-efa-installer.key
       ```
 
@@ -774,7 +774,7 @@ If you completed the previous optional step to set up package signature verifica
 **Note**
 From EFA 1.30.0, both Open MPI 4.1 and Open MPI 5 are installed by default. Unless you need Open MPI 4.1, install only Open MPI 5. The following command installs Open MPI 5 only. If you want to install Open MPI 4.1 and Open MPI 5, remove `--mpi=openmpi5`.
 
-   ```
+   ```bash
    $ sudo ./efa_installer.sh -y --mpi=openmpi5
    ```
 
@@ -784,7 +784,7 @@ From EFA 1.30.0, both Open MPI 4.1 and Open MPI 5 are installed by default. Unle
 
 1. Confirm that the EFA software installed successfully.
 
-   ```
+   ```bash
    $ fi_info -p efa -t FI_EP_RDM
    ```
 
@@ -799,19 +799,19 @@ Install NCCL. For more information about NCCL, see the [NCCL repository](https:/
 
 1. Navigate to the `/opt` directory.
 
-   ```
+   ```bash
    $ cd /opt
    ```
 
 1. Clone the official NCCL repository to the instance and navigate into the local cloned repository.
 
-   ```
+   ```bash
    $ sudo git clone https://github.com/NVIDIA/nccl.git -b v2.30.4-1 && cd nccl
    ```
 
 1. Build and install NCCL and specify the CUDA installation directory.
 
-   ```
+   ```bash
    $ sudo make -j src.build CUDA_HOME=/usr/local/cuda-13
    ```
 
@@ -824,36 +824,36 @@ Install the NCCL tests. The NCCL tests enable you to confirm that NCCL is proper
 
 1. Navigate to your home directory.
 
-   ```
+   ```bash
    $ cd $HOME
    ```
 
 1. Clone the official nccl-tests repository to the instance and navigate into the local cloned repository.
 
-   ```
+   ```bash
    $ git clone https://github.com/NVIDIA/nccl-tests.git && cd nccl-tests
    ```
 
 1. Add the Libfabric directory to the `LD_LIBRARY_PATH` variable.
    + Amazon Linux 2023
 
-     ```
+     ```bash
      $ export LD_LIBRARY_PATH={{/opt/amazon/efa/lib64}}:$LD_LIBRARY_PATH
      ```
    + Ubuntu and Debian
 
-     ```
+     ```bash
      $ export LD_LIBRARY_PATH={{/opt/amazon/efa/lib}}:$LD_LIBRARY_PATH
      ```
    + RHEL 10
 
-     ```
+     ```bash
      $ export LD_LIBRARY_PATH={{/opt/amazon/efa/lib64}}:$LD_LIBRARY_PATH
      ```
 
 1. Install the NCCL tests and specify the MPI, NCCL, and CUDA installation directories.
 
-   ```
+   ```bash
    $ make MPI=1 MPI_HOME={{/opt/amazon/openmpi}} NCCL_HOME={{/opt/nccl/build}} CUDA_HOME={{/usr/local/cuda-13}}
    ```
 
@@ -885,7 +885,7 @@ Run a test to ensure that your temporary instance is properly configured for EFA
 
 1. Run the NCCL test. The following command assumes that you have 8 GPUs per instance. Adjust the `-n` and `-N` values based on your instance type.
 
-   ```
+   ```bash
    $ /opt/amazon/openmpi/bin/mpirun \
    -x FI_EFA_USE_DEVICE_RDMA=1 \
    -x LD_LIBRARY_PATH=/opt/nccl/build/lib:/usr/local/cuda/lib64:/opt/amazon/efa/lib:/opt/amazon/openmpi/lib:/opt/amazon/ofi-nccl/lib:$LD_LIBRARY_PATH \

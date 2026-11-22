@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-imagerecipe-systemsmanageragent-syntax.json"></a>
 
-```
+```json
 {
   "[UninstallAfterBuild](#cfn-imagebuilder-imagerecipe-systemsmanageragent-uninstallafterbuild)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-imagerecipe-systemsmanageragent-syntax.yaml"></a>
 
-```
+```yaml
   [UninstallAfterBuild](#cfn-imagebuilder-imagerecipe-systemsmanageragent-uninstallafterbuild): {{Boolean}}
 ```
 

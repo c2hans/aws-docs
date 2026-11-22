@@ -12,7 +12,7 @@ Each of the following samples includes comments about the actions performed by t
 ------
 #### [ Java ]
 
-```
+```java
 public CreateHostedConfigurationVersionResponse createHostedConfigVersion() {
         AppConfigClient appconfig = AppConfigClient.create();
 
@@ -40,7 +40,7 @@ public CreateHostedConfigurationVersionResponse createHostedConfigVersion() {
 ------
 #### [ Python ]
 
-```
+```python
 import boto3
 
 appconfig = boto3.client('appconfig')
@@ -66,7 +66,7 @@ hcv = appconfig.create_hosted_configuration_version(
 ------
 #### [ JavaScript ]
 
-```
+```javascript
 import {
   AppConfigClient,
   CreateApplicationCommand,

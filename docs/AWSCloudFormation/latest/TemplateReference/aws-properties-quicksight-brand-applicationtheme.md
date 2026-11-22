@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-brand-applicationtheme-syntax.json"></a>
 
-```
+```json
 {
   "[BrandColorPalette](#cfn-quicksight-brand-applicationtheme-brandcolorpalette)" : {{BrandColorPalette}},
   "[BrandElementStyle](#cfn-quicksight-brand-applicationtheme-brandelementstyle)" : {{BrandElementStyle}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-brand-applicationtheme-syntax.yaml"></a>
 
-```
+```yaml
   [BrandColorPalette](#cfn-quicksight-brand-applicationtheme-brandcolorpalette): {{
     BrandColorPalette}}
   [BrandElementStyle](#cfn-quicksight-brand-applicationtheme-brandelementstyle): {{

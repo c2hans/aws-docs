@@ -25,7 +25,7 @@ In your bucket policy, the `aws:SourceArn` must be a URL-encoded (percent-encodi
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

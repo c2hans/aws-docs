@@ -45,21 +45,21 @@ Use the [describe-images](https://docs.aws.amazon.com/cli/latest/reference/ec2/d
 **To list all public AMIs**
 The following command lists all public AMIs, including any public AMIs that you own.
 
-```
+```bash
 aws ec2 describe-images --executable-users all
 ```
 
 **To list AMIs with explicit launch permissions**
 The following command lists the AMIs for which you have explicit launch permissions. This list does not include any AMIs that you own.
 
-```
+```bash
 aws ec2 describe-images --executable-users self
 ```
 
 **To list AMIs owned by verified providers**
 The following command lists the AMIs owned by [verified providers](sharing-amis.md#verified-ami-provider). Public AMIs owned by verified providers (either Amazon or verified partners) have an aliased owner, which appears as `amazon`, `aws-backup-vault`, or `aws-marketplace` in the account field. This helps you to easily find AMIs from verified providers. Other users can't alias their AMIs.
 
-```
+```bash
 aws ec2 describe-images \
     --owners amazon aws-marketplace \
     --query 'Images[*].[ImageId]' \
@@ -69,14 +69,14 @@ aws ec2 describe-images \
 **To list AMIs owned by an account**
 The following command lists the AMIs owned by the specified AWS account.
 
-```
+```bash
 aws ec2 describe-images --owners {{123456789012}}
 ```
 
 **To scope AMIs using a filter**
 To reduce the number of displayed AMIs, use a filter to list only the types of AMIs that interest you. For example, use the following filter to display only EBS-backed AMIs.
 
-```
+```bash
 --filters "Name=root-device-type,Values=ebs"
 ```
 
@@ -88,35 +88,35 @@ Use the [Get-EC2Image](https://docs.aws.amazon.com/powershell/latest/reference/i
 **To list all public AMIs**
 The following command lists all public AMIs, including any public AMIs that you own.
 
-```
+```powershell
 Get-EC2Image -ExecutableUser all
 ```
 
 **To list AMIs with explicit launch permissions**
 The following command lists the AMIs for which you have explicit launch permissions. This list does not include any AMIs that you own.
 
-```
+```powershell
 Get-EC2Image -ExecutableUser self
 ```
 
 **To list AMIs owned by verified providers**
 The following command lists the AMIs owned by [verified providers](sharing-amis.md#verified-ami-provider). Public AMIs owned by verified providers (either Amazon or verified partners) have an aliased owner, which appears as `amazon`, `aws-backup-vault`, or `aws-marketplace` in the account field. This helps you to easily find AMIs from verified providers. Other users can't alias their AMIs.
 
-```
+```powershell
 Get-EC2Image -Owner amazon aws-marketplace
 ```
 
 **To list AMIs owned by an account**
 The following command lists the AMIs owned by the specified AWS account.
 
-```
+```PowerShell
 Get-EC2Image -Owner {{123456789012}}
 ```
 
 **To scope AMIs using a filter**
 To reduce the number of displayed AMIs, use a filter to list only the types of AMIs that interest you. For example, use the following filter to display only EBS-backed AMIs.
 
-```
+```powershell
 -Filter @{Name="root-device-type"; Values="ebs"}
 ```
 

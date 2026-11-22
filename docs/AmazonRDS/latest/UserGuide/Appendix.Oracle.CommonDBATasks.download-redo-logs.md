@@ -47,13 +47,13 @@ To download a single archived redo log to the `/rdsdbdata/log/arch` directory, u
 
 To find valid archived redo log sequence numbers, run the following query:
 
-```
+```sql
 SELECT SEQUENCE#, FIRST_TIME, NEXT_TIME FROM V$ARCHIVED_LOG WHERE DEST_ID = 1 ORDER BY SEQUENCE# DESC FETCH FIRST 20 ROWS ONLY;
 ```
 
 The following example downloads the log with sequence number 20.
 
-```
+```sql
 SELECT rdsadmin.rdsadmin_archive_log_download.download_log_with_seqnum(seqnum => 20)
        AS TASK_ID
 FROM   DUAL;
@@ -71,7 +71,7 @@ To download a series of archived redo logs to the `/rdsdbdata/log/arch` director
 
 The following example downloads the logs from sequence 50 to 100.
 
-```
+```sql
 SELECT rdsadmin.rdsadmin_archive_log_download.download_logs_in_seqnum_range(start_seq => 50, end_seq => 100)
        AS TASK_ID
 FROM   DUAL;

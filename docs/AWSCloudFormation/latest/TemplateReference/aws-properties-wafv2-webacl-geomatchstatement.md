@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-geomatchstatement-syntax.json"></a>
 
-```
+```json
 {
   "[CountryCodes](#cfn-wafv2-webacl-geomatchstatement-countrycodes)" : {{[ String, ... ]}},
   "[ForwardedIPConfig](#cfn-wafv2-webacl-geomatchstatement-forwardedipconfig)" : {{ForwardedIPConfiguration}}
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-geomatchstatement-syntax.yaml"></a>
 
-```
+```yaml
   [CountryCodes](#cfn-wafv2-webacl-geomatchstatement-countrycodes): {{
     - String}}
   [ForwardedIPConfig](#cfn-wafv2-webacl-geomatchstatement-forwardedipconfig): {{

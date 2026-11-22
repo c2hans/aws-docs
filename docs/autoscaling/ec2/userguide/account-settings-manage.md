@@ -22,13 +22,13 @@ You can view all the available account settings for your account, or a specified
 **To view all the account settings for your account (AWS CLI)**
 Use the [describe-account-settings](https://docs.aws.amazon.com/cli/latest/reference/autoscaling/describe-account-settings.html) command. Omit the `--name` parameter to return all account settings.
 
-```
+```bash
 aws autoscaling describe-account-settings
 ```
 
 The following is example output.
 
-```
+```json
 {
     "Settings": [
 
@@ -44,7 +44,7 @@ The following is example output.
 **To view the specified account setting for your account (AWS CLI)**
 Include the `--name` parameter to return the specified account setting.
 
-```
+```bash
 aws autoscaling describe-account-settings \
     --name launchBeforeTerminate
 ```
@@ -69,7 +69,7 @@ You can change an account setting at any time.
 **To enable or disable a feature (AWS CLI)**
 Use the [put-account-setting](https://docs.aws.amazon.com/cli/latest/reference/autoscaling/put-account-setting.html) command. Set the `--value` parameter to `enabled` or `disabled`.
 
-```
+```bash
 aws autoscaling put-account-setting \
     --name launchBeforeTerminate \
     --value enabled

@@ -55,7 +55,7 @@ The following example policy grants access to only two specific APIs via the VPC
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -86,7 +86,7 @@ The following example policy grants users access to `GET` methods for a specific
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -118,7 +118,7 @@ In this case, because the policy restricts access to specific IAM principals, yo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -152,7 +152,7 @@ The following example policy grants users access to a specific custom domain nam
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -187,7 +187,7 @@ The following example policy grants users access to specific APIs and domain res
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -229,7 +229,7 @@ The following example policy grants access to principals and resources that belo
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

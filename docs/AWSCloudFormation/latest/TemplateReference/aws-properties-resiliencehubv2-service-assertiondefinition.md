@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-resiliencehubv2-service-assertiondefinition-syntax.json"></a>
 
-```
+```json
 {
   "[Text](#cfn-resiliencehubv2-service-assertiondefinition-text)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-resiliencehubv2-service-assertiondefinition-syntax.yaml"></a>
 
-```
+```yaml
   [Text](#cfn-resiliencehubv2-service-assertiondefinition-text): {{String}}
 ```
 

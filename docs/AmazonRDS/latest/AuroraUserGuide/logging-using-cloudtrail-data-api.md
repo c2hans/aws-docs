@@ -79,7 +79,7 @@ A *trail* is a configuration that enables delivery of events as log files to an 
 
 The following example shows a CloudTrail log entry that demonstrates the `ExecuteStatement` operation for Aurora PostgreSQL Aurora serverless and provisioned databases. For these databases, all Data API events are data events where the event source is **rdsdataapi.amazonaws.com** and the event type is **Rds Data Service**.
 
-```
+```json
 {
     "eventVersion": "1.05",
     "userIdentity": {

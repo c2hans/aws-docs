@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-rulegroup-ruleaction-syntax.json"></a>
 
-```
+```json
 {
   "[Allow](#cfn-wafv2-rulegroup-ruleaction-allow)" : {{AllowAction}},
   "[Block](#cfn-wafv2-rulegroup-ruleaction-block)" : {{BlockAction}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-rulegroup-ruleaction-syntax.yaml"></a>
 
-```
+```yaml
   [Allow](#cfn-wafv2-rulegroup-ruleaction-allow): {{
     AllowAction}}
   [Block](#cfn-wafv2-rulegroup-ruleaction-block): {{
@@ -108,7 +108,7 @@ The following shows an example allow action specification.
 #### YAML
 <a name="aws-properties-wafv2-rulegroup-ruleaction--examples--Set_an_allow_action--yaml"></a>
 
-```
+```yaml
 Action:
   Allow: {}
 ```
@@ -116,7 +116,7 @@ Action:
 #### JSON
 <a name="aws-properties-wafv2-rulegroup-ruleaction--examples--Set_an_allow_action--json"></a>
 
-```
+```json
 "Action": {
   "Allow": {}
 }
@@ -130,7 +130,7 @@ The following shows an example allow action specification with custom request ha
 #### YAML
 <a name="aws-properties-wafv2-rulegroup-ruleaction--examples--Set_an_allow_action_with_a_custom_request_setting--yaml"></a>
 
-```
+```yaml
 Action:
   Allow:
     CustomRequestHandling:
@@ -144,7 +144,7 @@ Action:
 #### JSON
 <a name="aws-properties-wafv2-rulegroup-ruleaction--examples--Set_an_allow_action_with_a_custom_request_setting--json"></a>
 
-```
+```json
 "Action": {
   "Allow": {
     "CustomRequestHandling": {

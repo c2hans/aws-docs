@@ -17,7 +17,7 @@ The condition keys are used as follows:
 
 To give an organization (including the OUs and accounts that belong to it) permission to use a KMS key, add the following statement to the key policy.
 
-```
+```JSON
 {
     "Sid": "Allow access for organization root",
     "Effect": "Allow",
@@ -43,7 +43,7 @@ To give an organization (including the OUs and accounts that belong to it) permi
 
 To give specific OUs (and the accounts that belong to it) permission to use a KMS key, you can use a policy similar to the following example.
 
-```
+```JSON
 {
         "Sid": "Allow access for specific OUs and their descendants",
         "Effect": "Allow",

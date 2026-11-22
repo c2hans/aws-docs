@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityhub-automationrulev2-automationrulesfindingfieldsupdatev2-syntax.json"></a>
 
-```
+```json
 {
   "[Comment](#cfn-securityhub-automationrulev2-automationrulesfindingfieldsupdatev2-comment)" : {{String}},
   "[SeverityId](#cfn-securityhub-automationrulev2-automationrulesfindingfieldsupdatev2-severityid)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityhub-automationrulev2-automationrulesfindingfieldsupdatev2-syntax.yaml"></a>
 
-```
+```yaml
   [Comment](#cfn-securityhub-automationrulev2-automationrulesfindingfieldsupdatev2-comment): {{String}}
   [SeverityId](#cfn-securityhub-automationrulev2-automationrulesfindingfieldsupdatev2-severityid): {{Integer}}
   [StatusId](#cfn-securityhub-automationrulev2-automationrulesfindingfieldsupdatev2-statusid): {{Integer}}

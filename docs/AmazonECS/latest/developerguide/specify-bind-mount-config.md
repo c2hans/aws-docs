@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specify-
 
 For Amazon ECS tasks that are hosted on either Fargate or Amazon EC2 instances, the following task definition JSON snippet shows the syntax for the `volumes`, `mountPoints`, and `ephemeralStorage` objects for a task definition.
 
-```
+```JSON
 {
    "family": "",
    ...
@@ -35,7 +35,7 @@ For Amazon ECS tasks that are hosted on either Fargate or Amazon EC2 instances, 
 
 For Amazon ECS tasks that are hosted on Amazon EC2 instances, you can use the optional `host` parameter and a `sourcePath` when specifying the task volume details. When it's specified, it ties the bind mount to the lifecycle of the task rather than the container.
 
-```
+```JSON
 "volumes" : [
     {
         "host" : {

@@ -37,7 +37,7 @@ With the Amazon SQS Extended Client Library for Python, you can:
 
  The following example creates an Amazon S3 bucket with a random name. It then creates an Amazon SQS queue named `MyQueue` and sends a message that is stored in an S3 bucket and is more than 256 KB to the queue. Finally, the code retrieves the message, returns information about it, and then deletes the message, the queue, and the bucket.
 
-```
+```python
 import boto3
 import sqs_extended_client
 

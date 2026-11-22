@@ -19,7 +19,7 @@ Since the `innodb_file_per_table` parameter resides in a parameter group, you ca
 
 You can move an InnoDB table's metadata from its own tablespace to the shared tablespace, which will rebuild the table metadata according to the `innodb_file_per_table` parameter setting. First connect to your MySQL DB instance, then issue the appropriate commands as shown following. For more information, see [Connecting to your MySQL DB instance](USER_ConnectToInstance.md).
 
-```
+```sql
 ALTER TABLE {{table_name}} ENGINE = InnoDB, ALGORITHM=COPY;
 ```
 
@@ -27,7 +27,7 @@ For example, the following query returns an `ALTER TABLE` statement for every In
 
 **For MySQL 5.7 DB instances:**
 
-```
+```sql
 SELECT CONCAT('ALTER TABLE `',
 REPLACE(LEFT(NAME , INSTR((NAME), '/') - 1), '`', '``'), '`.`',
 REPLACE(SUBSTR(NAME FROM INSTR(NAME, '/') + 1), '`', '``'), '` ENGINE=InnoDB, ALGORITHM=COPY;') AS Query
@@ -35,9 +35,9 @@ FROM INFORMATION_SCHEMA.INNODB_SYS_TABLES
 WHERE SPACE <> 0 AND LEFT(NAME, INSTR((NAME), '/') - 1) NOT IN ('mysql','');
 ```
 
-**For MySQL 8.4 and 8.0 DB instances:**
+**For MySQL 9.7, 8.4, and 8.0 DB instances:**
 
-```
+```sql
 SELECT CONCAT('ALTER TABLE `',
 REPLACE(LEFT(NAME , INSTR((NAME), '/') - 1), '`', '``'), '`.`',
 REPLACE(SUBSTR(NAME FROM INSTR(NAME, '/') + 1), '`', '``'), '` ENGINE=InnoDB, ALGORITHM=COPY;') AS Query
@@ -59,7 +59,7 @@ To create a read replica and rebuild InnoDB tables to use the shared tablespace,
 
 1. Issue the following SQL statement for all tables that you want migrated on the replica:
 
-   ```
+   ```sql
    ALTER TABLE {{name}} ENGINE = InnoDB
    ```
 

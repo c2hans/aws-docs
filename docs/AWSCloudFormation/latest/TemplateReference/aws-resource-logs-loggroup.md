@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-logs-loggroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Logs::LogGroup",
   "Properties" : {
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-logs-loggroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Logs::LogGroup
 Properties:
   [BearerTokenAuthenticationEnabled](#cfn-logs-loggroup-bearertokenauthenticationenabled): {{Boolean}}
@@ -179,7 +179,7 @@ The following example creates a log group that retains events for seven days.
 #### JSON
 <a name="aws-resource-logs-loggroup--examples--Create_a_log_group--json"></a>
 
-```
+```json
 "myLogGroup": {
     "Type": "AWS::Logs::LogGroup",
     "Properties": {
@@ -191,7 +191,7 @@ The following example creates a log group that retains events for seven days.
 #### YAML
 <a name="aws-resource-logs-loggroup--examples--Create_a_log_group--yaml"></a>
 
-```
+```yaml
 myLogGroup:
   Type: AWS::Logs::LogGroup
   Properties:
@@ -206,7 +206,7 @@ The following example creates a log group that uses a data protection policy to 
 #### JSON
 <a name="aws-resource-logs-loggroup--examples--Create_a_log_group_with_a_data_protection_policy--json"></a>
 
-```
+```json
 "TestLogGroupDescription": {
   "Type": "AWS::Logs::LogGroup",
   "Properties": {
@@ -258,7 +258,7 @@ The following example creates a log group that uses a data protection policy to 
 #### YAML
 <a name="aws-resource-logs-loggroup--examples--Create_a_log_group_with_a_data_protection_policy--yaml"></a>
 
-```
+```yaml
 TestLogGroupDescription:
   Type: AWS::Logs::LogGroup
   Properties:
@@ -298,7 +298,7 @@ The following example creates a log group that uses a field index policy to inde
 #### JSON
 <a name="aws-resource-logs-loggroup--examples--Create_a_log_group_with_a_field_index_policy--json"></a>
 
-```
+```json
 "TestFieldIndexingLogGroup": {
     "Type": "AWS::Logs::LogGroup",
     "Properties": {
@@ -316,7 +316,7 @@ The following example creates a log group that uses a field index policy to inde
 #### YAML
 <a name="aws-resource-logs-loggroup--examples--Create_a_log_group_with_a_field_index_policy--yaml"></a>
 
-```
+```yaml
 TestFieldIndexingLogGroup:
   Type: AWS::Logs::LogGroup
   Properties:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pinpoint-segment-segmentgroups-syntax.json"></a>
 
-```
+```json
 {
   "[Groups](#cfn-pinpoint-segment-segmentgroups-groups)" : {{[ Groups, ... ]}},
   "[Include](#cfn-pinpoint-segment-segmentgroups-include)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pinpoint-segment-segmentgroups-syntax.yaml"></a>
 
-```
+```yaml
   [Groups](#cfn-pinpoint-segment-segmentgroups-groups): {{
     - Groups}}
   [Include](#cfn-pinpoint-segment-segmentgroups-include): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelpackage-modelinput-syntax.json"></a>
 
-```
+```json
 {
   "[DataInputConfig](#cfn-sagemaker-modelpackage-modelinput-datainputconfig)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelpackage-modelinput-syntax.yaml"></a>
 
-```
+```yaml
   [DataInputConfig](#cfn-sagemaker-modelpackage-modelinput-datainputconfig): {{String}}
 ```
 

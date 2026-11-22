@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-ecsinferenceacceleratoroverride-syntax.json"></a>
 
-```
+```json
 {
   "[DeviceName](#cfn-pipes-pipe-ecsinferenceacceleratoroverride-devicename)" : {{String}},
   "[DeviceType](#cfn-pipes-pipe-ecsinferenceacceleratoroverride-devicetype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-ecsinferenceacceleratoroverride-syntax.yaml"></a>
 
-```
+```yaml
   [DeviceName](#cfn-pipes-pipe-ecsinferenceacceleratoroverride-devicename): {{String}}
   [DeviceType](#cfn-pipes-pipe-ecsinferenceacceleratoroverride-devicetype): {{String}}
 ```

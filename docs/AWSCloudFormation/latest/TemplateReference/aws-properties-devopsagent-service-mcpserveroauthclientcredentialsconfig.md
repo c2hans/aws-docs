@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-devopsagent-service-mcpserveroauthclientcredentialsconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ClientId](#cfn-devopsagent-service-mcpserveroauthclientcredentialsconfig-clientid)" : {{String}},
   "[ClientName](#cfn-devopsagent-service-mcpserveroauthclientcredentialsconfig-clientname)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-devopsagent-service-mcpserveroauthclientcredentialsconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ClientId](#cfn-devopsagent-service-mcpserveroauthclientcredentialsconfig-clientid): {{String}}
   [ClientName](#cfn-devopsagent-service-mcpserveroauthclientcredentialsconfig-clientname): {{String}}
   [ClientSecret](#cfn-devopsagent-service-mcpserveroauthclientcredentialsconfig-clientsecret): {{String}}

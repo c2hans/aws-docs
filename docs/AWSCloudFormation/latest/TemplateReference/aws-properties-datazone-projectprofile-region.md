@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-projectprofile-region-syntax.json"></a>
 
-```
+```json
 {
   "[RegionName](#cfn-datazone-projectprofile-region-regionname)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-projectprofile-region-syntax.yaml"></a>
 
-```
+```yaml
   [RegionName](#cfn-datazone-projectprofile-region-regionname): {{String}}
 ```
 

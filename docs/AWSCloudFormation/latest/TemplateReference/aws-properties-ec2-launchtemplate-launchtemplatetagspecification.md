@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-launchtemplate-launchtemplatetagspecification-syntax.json"></a>
 
-```
+```json
 {
   "[ResourceType](#cfn-ec2-launchtemplate-launchtemplatetagspecification-resourcetype)" : {{String}},
   "[Tags](#cfn-ec2-launchtemplate-launchtemplatetagspecification-tags)" : {{[ Tag, ... ]}}
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-launchtemplate-launchtemplatetagspecification-syntax.yaml"></a>
 
-```
+```yaml
   [ResourceType](#cfn-ec2-launchtemplate-launchtemplatetagspecification-resourcetype): {{String}}
   [Tags](#cfn-ec2-launchtemplate-launchtemplatetagspecification-tags): {{
     - Tag}}
@@ -62,7 +62,7 @@ The following example adds the tag `Stack=Production` to the launch template.
 #### YAML
 <a name="aws-properties-ec2-launchtemplate-launchtemplatetagspecification--examples----yaml"></a>
 
-```
+```yaml
 TagSpecifications:
   - ResourceType: "launch-template"
     Tags:
@@ -73,7 +73,7 @@ TagSpecifications:
 #### JSON
 <a name="aws-properties-ec2-launchtemplate-launchtemplatetagspecification--examples----json"></a>
 
-```
+```json
 "TagSpecifications": [
     {
         "ResourceType": "launch-template",

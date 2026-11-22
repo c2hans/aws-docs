@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudwatch-omnidashboard-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudWatch::OmniDashboard",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudwatch-omnidashboard-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudWatch::OmniDashboard
 Properties:
   [Body](#cfn-cloudwatch-omnidashboard-body): {{String}}

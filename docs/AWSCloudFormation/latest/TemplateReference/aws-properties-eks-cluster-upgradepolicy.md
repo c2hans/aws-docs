@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-cluster-upgradepolicy-syntax.json"></a>
 
-```
+```json
 {
   "[SupportType](#cfn-eks-cluster-upgradepolicy-supporttype)" : {{String}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-cluster-upgradepolicy-syntax.yaml"></a>
 
-```
+```yaml
   [SupportType](#cfn-eks-cluster-upgradepolicy-supporttype): {{String}}
 ```
 

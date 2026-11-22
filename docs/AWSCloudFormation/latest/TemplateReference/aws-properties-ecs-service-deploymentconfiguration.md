@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-service-deploymentconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Alarms](#cfn-ecs-service-deploymentconfiguration-alarms)" : {{DeploymentAlarms}},
   "[BakeTimeInMinutes](#cfn-ecs-service-deploymentconfiguration-baketimeinminutes)" : {{Integer}},
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-service-deploymentconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Alarms](#cfn-ecs-service-deploymentconfiguration-alarms): {{
     DeploymentAlarms}}
   [BakeTimeInMinutes](#cfn-ecs-service-deploymentconfiguration-baketimeinminutes): {{Integer}}

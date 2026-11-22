@@ -48,7 +48,7 @@ When using bind mounts, consider the following.
 
   To view a full list of writable paths, you can run a task on a Amazon ECS Managed Instance and use to inspect the instance's mount table. Create a task definition with the following settings to access the host filesystem:
 
-  ```
+  ```JSON
   {
       "pidMode": "host",
       "containerDefinitions": [{

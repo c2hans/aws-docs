@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-auditmanager-assessmentframework-controlset-syntax.json"></a>
 
-```
+```json
 {
   "[Controls](#cfn-auditmanager-assessmentframework-controlset-controls)" : {{[ ControlSetControl, ... ]}},
   "[Name](#cfn-auditmanager-assessmentframework-controlset-name)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-auditmanager-assessmentframework-controlset-syntax.yaml"></a>
 
-```
+```yaml
   [Controls](#cfn-auditmanager-assessmentframework-controlset-controls): {{
     - ControlSetControl}}
   [Name](#cfn-auditmanager-assessmentframework-controlset-name): {{String}}

@@ -98,7 +98,7 @@ Use the following steps to configure minimum permissions for a dead-letter queue
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -175,7 +175,7 @@ Follow these steps to configure the minimum permissions required for handling a 
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -235,7 +235,7 @@ Follow these steps to configure the minimum permissions required for handling a 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Id": "SQSRedriveWithVpcRestriction",
@@ -286,7 +286,7 @@ Follow these steps to configure the minimum permissions required for handling a 
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Id": "SQSRedriveWithVpcRestriction",

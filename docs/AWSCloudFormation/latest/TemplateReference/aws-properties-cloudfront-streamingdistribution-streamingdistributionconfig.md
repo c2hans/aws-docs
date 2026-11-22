@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudfront-streamingdistribution-streamingdistributionconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Aliases](#cfn-cloudfront-streamingdistribution-streamingdistributionconfig-aliases)" : {{[ String, ... ]}},
   "[Comment](#cfn-cloudfront-streamingdistribution-streamingdistributionconfig-comment)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudfront-streamingdistribution-streamingdistributionconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Aliases](#cfn-cloudfront-streamingdistribution-streamingdistributionconfig-aliases): {{
     - String}}
   [Comment](#cfn-cloudfront-streamingdistribution-streamingdistributionconfig-comment): {{String}}

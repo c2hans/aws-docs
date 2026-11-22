@@ -18,7 +18,7 @@ You can also use `Fn::Transform` to call the [`AWS::Include` transform](transfor
 
 Syntax for the full function name:
 
-```
+```json
 {
     "Fn::Transform": {
         "Name": "{{macro name}}",
@@ -31,7 +31,7 @@ Syntax for the full function name:
 
 Syntax for the short form:
 
-```
+```json
 {
     "Transform": {
         "Name": "{{macro name}}",
@@ -47,7 +47,7 @@ Syntax for the short form:
 
 Syntax for the full function name:
 
-```
+```yaml
 Fn::Transform:
   Name : {{macro name}}
   Parameters :
@@ -56,7 +56,7 @@ Fn::Transform:
 
 Syntax for the short form:
 
-```
+```yaml
 !Transform
   Name: {{macro name}}
   Parameters:
@@ -85,7 +85,7 @@ The following example calls the `AWS::Include` transform, specifying that the lo
 ### JSON
 <a name="intrinsic-function-reference-transform-example-1.json"></a>
 
-```
+```json
 {
     "Fn::Transform": {
         "Name": "AWS::Include",
@@ -101,7 +101,7 @@ The following example calls the `AWS::Include` transform, specifying that the lo
 ### YAML
 <a name="intrinsic-function-reference-transform-example-1.yaml"></a>
 
-```
+```yaml
 Fn::Transform:
   Name: AWS::Include
   Parameters:

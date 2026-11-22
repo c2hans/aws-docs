@@ -23,7 +23,7 @@ The following example shows you how to copy an object in an S3 on Outposts bucke
 
 The following S3 on Outposts example copies an object into a new object in the same bucket by using the SDK for Java. To use this example, replace the `{{user input placeholders}}` with your own information.
 
-```
+```Java
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.SdkClientException;
 import com.amazonaws.services.s3.AmazonS3;

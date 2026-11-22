@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-memory-semanticmemorystrategy-syntax.json"></a>
 
-```
+```json
 {
   "[CreatedAt](#cfn-bedrockagentcore-memory-semanticmemorystrategy-createdat)" : {{String}},
   "[Description](#cfn-bedrockagentcore-memory-semanticmemorystrategy-description)" : {{String}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-memory-semanticmemorystrategy-syntax.yaml"></a>
 
-```
+```yaml
   [CreatedAt](#cfn-bedrockagentcore-memory-semanticmemorystrategy-createdat): {{String}}
   [Description](#cfn-bedrockagentcore-memory-semanticmemorystrategy-description): {{String}}
   [MemoryRecordSchema](#cfn-bedrockagentcore-memory-semanticmemorystrategy-memoryrecordschema): {{

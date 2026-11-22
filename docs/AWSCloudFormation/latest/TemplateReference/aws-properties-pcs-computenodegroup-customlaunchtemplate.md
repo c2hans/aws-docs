@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcs-computenodegroup-customlaunchtemplate-syntax.json"></a>
 
-```
+```json
 {
   "[TemplateId](#cfn-pcs-computenodegroup-customlaunchtemplate-templateid)" : {{String}},
   "[Version](#cfn-pcs-computenodegroup-customlaunchtemplate-version)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcs-computenodegroup-customlaunchtemplate-syntax.yaml"></a>
 
-```
+```yaml
   [TemplateId](#cfn-pcs-computenodegroup-customlaunchtemplate-templateid): {{String}}
   [Version](#cfn-pcs-computenodegroup-customlaunchtemplate-version): {{String}}
 ```

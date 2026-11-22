@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-neptune-dbcluster-serverlessscalingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MaxCapacity](#cfn-neptune-dbcluster-serverlessscalingconfiguration-maxcapacity)" : {{Number}},
   "[MinCapacity](#cfn-neptune-dbcluster-serverlessscalingconfiguration-mincapacity)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-neptune-dbcluster-serverlessscalingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MaxCapacity](#cfn-neptune-dbcluster-serverlessscalingconfiguration-maxcapacity): {{Number}}
   [MinCapacity](#cfn-neptune-dbcluster-serverlessscalingconfiguration-mincapacity): {{Number}}
 ```

@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-chatbot-microsoftteamschannelconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Chatbot::MicrosoftTeamsChannelConfiguration",
   "Properties" : {
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-chatbot-microsoftteamschannelconfiguration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Chatbot::MicrosoftTeamsChannelConfiguration
 Properties:
   [ConfigurationName](#cfn-chatbot-microsoftteamschannelconfiguration-configurationname): {{String}}

@@ -25,7 +25,7 @@ When you add lifecycle hooks to your Auto Scaling group, Amazon EC2 Auto Scaling
 
 The following example event shows that Amazon EC2 Auto Scaling moved an instance to a `Pending:Wait` state due to a launch lifecycle hook.
 
-```
+```json
 {
   "version": "0",
   "id": "{{12345678}}-{{1234}}-{{1234}}-{{1234}}-{{123456789012}}",
@@ -58,7 +58,7 @@ The following example event shows that Amazon EC2 Auto Scaling moved an instance
 **Important**
 When an Auto Scaling group returns instances to a warm pool on scale in, returning instances to the warm pool can also generate `EC2 Instance-terminate Lifecycle Action` events. Events that are delivered when an instance moves to the wait state on scale in have `WarmPool` as the value for `Destination`. For more information, see [Instance reuse policy](ec2-auto-scaling-warm-pools.md#instance-reuse-policy).
 
-```
+```json
 {
   "version": "0",
   "id": "{{12345678}}-{{1234}}-{{1234}}-{{1234}}-{{123456789012}}",
@@ -97,7 +97,7 @@ The following examples show the event types for successful scaling events. Event
 
 The following example event shows that Amazon EC2 Auto Scaling successfully launched an instance.
 
-```
+```json
 {
   "version": "0",
   "id": "{{12345678}}-{{1234}}-{{1234}}-{{1234}}-{{123456789012}}",
@@ -139,7 +139,7 @@ The following example event shows that Amazon EC2 Auto Scaling successfully term
 **Important**
 When an Auto Scaling group returns instances to a warm pool on scale in, returning instances to the warm pool can also generate `EC2 Instance Terminate Successful` events. Events that are delivered when an instance successfully returns to the warm pool have `WarmPool` as the value for `Destination`. For more information, see [Instance reuse policy](ec2-auto-scaling-warm-pools.md#instance-reuse-policy).
 
-```
+```json
 {
   "version": "0",
   "id": "{{12345678}}-{{1234}}-{{1234}}-{{1234}}-{{123456789012}}",
@@ -187,7 +187,7 @@ The following examples show the event types for unsuccessful scaling events. Eve
 
 The following example event shows that Amazon EC2 Auto Scaling failed to launch an instance.
 
-```
+```json
 {
   "version": "0",
   "id": "{{12345678}}-{{1234}}-{{1234}}-{{1234}}-{{123456789012}}",
@@ -228,7 +228,7 @@ The following example event shows that Amazon EC2 Auto Scaling failed to termina
 **Important**
 When an Auto Scaling group returns instances to a warm pool on scale in, failing to return instances to the warm pool can also generate `EC2 Instance Terminate Unsuccessful` events. Events that are delivered when an instance fails to return to the warm pool have `WarmPool` as the value for `Destination`. For more information, see [Instance reuse policy](ec2-auto-scaling-warm-pools.md#instance-reuse-policy).
 
-```
+```json
 {
   "version": "0",
   "id": "{{12345678}}-{{1234}}-{{1234}}-{{1234}}-{{123456789012}}",

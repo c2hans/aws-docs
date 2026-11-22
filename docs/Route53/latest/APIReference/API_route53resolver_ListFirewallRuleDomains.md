@@ -37,7 +37,7 @@ For information about the parameters that are common to all actions, see [Common
 The request accepts the following data in JSON format.
 
  ** [FirewallDomainListId](#API_route53resolver_ListFirewallRuleDomains_RequestSyntax) **   <a name="Route53Resolver-route53resolver_ListFirewallRuleDomains-request-FirewallDomainListId"></a>
-The ID of the AutoAllowlist rule's managed domain list. Provide this to list the domains that the rule currently allows.
+The ID of the AutoAllowlist rule's managed domain list. Provide this to list the domains that the rule currently allows. Only the AutoAllowlist rule's managed domain list is accepted. In this mode, each returned domain includes only `DomainName`, which ends with a trailing period (for example, `example.com.`), and you can't specify `QueryOptions`. Specify either `FirewallThreatProtectionId` or `FirewallDomainListId`, but not both.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: No
@@ -49,7 +49,7 @@ Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: Yes
 
  ** [FirewallThreatProtectionId](#API_route53resolver_ListFirewallRuleDomains_RequestSyntax) **   <a name="Route53Resolver-route53resolver_ListFirewallRuleDomains-request-FirewallThreatProtectionId"></a>
-The threat protection ID that identifies an AutoAllowlist rule. Provide this to list an AutoAllowlist rule's domains.
+The threat protection ID that identifies an AutoAllowlist rule. Provide this to list an AutoAllowlist rule's domains. Specify either `FirewallThreatProtectionId` or `FirewallDomainListId`, but not both.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: No
@@ -66,7 +66,7 @@ Type: String
 Required: No
 
  ** [QueryOptions](#API_route53resolver_ListFirewallRuleDomains_RequestSyntax) **   <a name="Route53Resolver-route53resolver_ListFirewallRuleDomains-request-QueryOptions"></a>
-Optional filters and sort order for the returned domains. If you don't specify this, the operation returns the `OBSERVED` domains sorted by `TIME_ADDED` in descending order. See [ListFirewallRuleDomainsQueryOptions](API_route53resolver_ListFirewallRuleDomainsQueryOptions.md).
+Optional filters and sort order for the returned domains. If you don't specify this, the operation returns the `OBSERVED` domains sorted by `TIME_ADDED` in descending order. Valid only with `FirewallThreatProtectionId`. See [ListFirewallRuleDomainsQueryOptions](API_route53resolver_ListFirewallRuleDomainsQueryOptions.md).
 Type: [ListFirewallRuleDomainsQueryOptions](API_route53resolver_ListFirewallRuleDomainsQueryOptions.md) object
 Required: No
 
@@ -144,13 +144,21 @@ This example illustrates one usage of ListFirewallRuleDomains.
 
 ```
 POST / HTTP/1.1
-Host: route53resolver.us-east-2.amazonaws.com
+Host: route53resolver.us-east-1.amazonaws.com
+Accept-Encoding: identity
+Content-Length: 236
 X-Amz-Target: Route53Resolver.ListFirewallRuleDomains
+X-Amz-Date: 20261117T120000Z
+User-Agent: aws-cli/2.15.0 Python/3.11.6
 Content-Type: application/x-amz-json-1.1
+Authorization: AWS4-HMAC-SHA256
+               Credential=AKIAJJ2SONIPEXAMPLE/20261117/us-east-1/route53resolver/aws4_request,
+               SignedHeaders=content-type;host;x-amz-date;x-amz-target,
+               Signature=[calculated-signature]
 
 {
-    "FirewallRuleGroupId": "rslvr-frg-abc123",
-    "FirewallThreatProtectionId": "rslvr-ftp-def456",
+    "FirewallRuleGroupId": "rslvr-frg-47f93271fexample",
+    "FirewallThreatProtectionId": "rslvr-ftp-5c2b8e1d0example",
     "QueryOptions": {
         "DomainStatus": "OBSERVED",
         "SortBy": "TIME_ADDED",
@@ -166,7 +174,11 @@ Content-Type: application/x-amz-json-1.1
 
 ```
 HTTP/1.1 200 OK
+Date: Tue, 17 Nov 2026 12:00:01 GMT
 Content-Type: application/x-amz-json-1.1
+Content-Length: 196
+x-amzn-RequestId: 3b4c5d6e-7f8a-9b0c-1d2e-3f4a5example
+Connection: keep-alive
 
 {
     "Domains": [
@@ -175,7 +187,7 @@ Content-Type: application/x-amz-json-1.1
             "DomainStatus": "OBSERVED",
             "Last24HourRequests": 2000,
             "TotalRequests": 48000,
-            "AddedTime": "2026-06-09T14:00:00Z"
+            "AddedTime": "2026-11-17T09:00:00Z"
         }
     ]
 }

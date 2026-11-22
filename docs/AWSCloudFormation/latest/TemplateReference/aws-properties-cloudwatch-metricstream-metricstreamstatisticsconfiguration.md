@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-metricstream-metricstreamstatisticsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AdditionalStatistics](#cfn-cloudwatch-metricstream-metricstreamstatisticsconfiguration-additionalstatistics)" : {{[ String, ... ]}},
   "[IncludeMetrics](#cfn-cloudwatch-metricstream-metricstreamstatisticsconfiguration-includemetrics)" : {{[ MetricStreamStatisticsMetric, ... ]}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-metricstream-metricstreamstatisticsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AdditionalStatistics](#cfn-cloudwatch-metricstream-metricstreamstatisticsconfiguration-additionalstatistics): {{
     - String}}
   [IncludeMetrics](#cfn-cloudwatch-metricstream-metricstreamstatisticsconfiguration-includemetrics): {{

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudwatch-domainfororganization-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudWatch::DomainForOrganization",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudwatch-domainfororganization-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudWatch::DomainForOrganization
 Properties:
   [DomainAccessRoleArn](#cfn-cloudwatch-domainfororganization-domainaccessrolearn): {{String}}

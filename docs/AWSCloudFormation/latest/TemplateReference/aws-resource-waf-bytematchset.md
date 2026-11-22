@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-waf-bytematchset-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::WAF::ByteMatchSet",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-waf-bytematchset-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::WAF::ByteMatchSet
 Properties:
   [ByteMatchTuples](#cfn-waf-bytematchset-bytematchtuples): {{
@@ -88,7 +88,7 @@ The following example defines a set of HTTP referers to match.
 #### JSON
 <a name="aws-resource-waf-bytematchset--examples--HTTP_Referers--json"></a>
 
-```
+```json
 "BadReferers": {
   "Type": "AWS::WAF::ByteMatchSet",
   "Properties": {
@@ -120,7 +120,7 @@ The following example defines a set of HTTP referers to match.
 #### YAML
 <a name="aws-resource-waf-bytematchset--examples--HTTP_Referers--yaml"></a>
 
-```
+```yaml
 BadReferers:
   Type: "AWS::WAF::ByteMatchSet"
   Properties:
@@ -150,7 +150,7 @@ The following example associates the `BadReferers` byte match set with a web acc
 #### JSON
 <a name="aws-resource-waf-bytematchset--examples--Associate_a_ByteMatchSet_with_a_Web_ACL_Rule--json"></a>
 
-```
+```json
 "BadReferersRule" : {
   "Type": "AWS::WAF::Rule",
   "Properties": {
@@ -170,7 +170,7 @@ The following example associates the `BadReferers` byte match set with a web acc
 #### YAML
 <a name="aws-resource-waf-bytematchset--examples--Associate_a_ByteMatchSet_with_a_Web_ACL_Rule--yaml"></a>
 
-```
+```yaml
 BadReferersRule:
   Type: "AWS::WAF::Rule"
   Properties:
@@ -192,7 +192,7 @@ The following example associates the `BadReferersRule` rule with a web ACL. The 
 #### JSON
 <a name="aws-resource-waf-bytematchset--examples--Create_a_Web_ACL--json"></a>
 
-```
+```json
 "MyWebACL": {
   "Type": "AWS::WAF::WebACL",
   "Properties": {
@@ -217,7 +217,7 @@ The following example associates the `BadReferersRule` rule with a web ACL. The 
 #### YAML
 <a name="aws-resource-waf-bytematchset--examples--Create_a_Web_ACL--yaml"></a>
 
-```
+```yaml
 MyWebACL:
   Type: "AWS::WAF::WebACL"
   Properties:

@@ -73,7 +73,7 @@ Remember to replace the {{italicized}} text with your resource-specific informat
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-smsvoice-rcsagent-testingagentinformation-syntax.json"></a>
 
-```
+```json
 {
   "[RegistrationId](#cfn-smsvoice-rcsagent-testingagentinformation-registrationid)" : {{String}},
   "[TestingAgentId](#cfn-smsvoice-rcsagent-testingagentinformation-testingagentid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-smsvoice-rcsagent-testingagentinformation-syntax.yaml"></a>
 
-```
+```yaml
   [RegistrationId](#cfn-smsvoice-rcsagent-testingagentinformation-registrationid): {{String}}
   [TestingAgentId](#cfn-smsvoice-rcsagent-testingagentinformation-testingagentid): {{String}}
   [TestingAgentStatus](#cfn-smsvoice-rcsagent-testingagentinformation-testingagentstatus): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-instance-state-syntax.json"></a>
 
-```
+```json
 {
   "[Code](#cfn-ec2-instance-state-code)" : {{String}},
   "[Name](#cfn-ec2-instance-state-name)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-instance-state-syntax.yaml"></a>
 
-```
+```yaml
   [Code](#cfn-ec2-instance-state-code): {{String}}
   [Name](#cfn-ec2-instance-state-name): {{String}}
 ```

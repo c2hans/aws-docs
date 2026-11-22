@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-athena-capacityreservation-capacityassignmentconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CapacityAssignments](#cfn-athena-capacityreservation-capacityassignmentconfiguration-capacityassignments)" : {{[ CapacityAssignment, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-athena-capacityreservation-capacityassignmentconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CapacityAssignments](#cfn-athena-capacityreservation-capacityassignmentconfiguration-capacityassignments): {{
     - CapacityAssignment}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotsitewise-dataset-kendrasourcedetail-syntax.json"></a>
 
-```
+```json
 {
   "[KnowledgeBaseArn](#cfn-iotsitewise-dataset-kendrasourcedetail-knowledgebasearn)" : {{String}},
   "[RoleArn](#cfn-iotsitewise-dataset-kendrasourcedetail-rolearn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotsitewise-dataset-kendrasourcedetail-syntax.yaml"></a>
 
-```
+```yaml
   [KnowledgeBaseArn](#cfn-iotsitewise-dataset-kendrasourcedetail-knowledgebasearn): {{String}}
   [RoleArn](#cfn-iotsitewise-dataset-kendrasourcedetail-rolearn): {{String}}
 ```

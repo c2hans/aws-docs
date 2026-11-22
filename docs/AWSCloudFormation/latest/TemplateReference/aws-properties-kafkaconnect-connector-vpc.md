@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kafkaconnect-connector-vpc-syntax.json"></a>
 
-```
+```json
 {
   "[SecurityGroups](#cfn-kafkaconnect-connector-vpc-securitygroups)" : {{[ String, ... ]}},
   "[Subnets](#cfn-kafkaconnect-connector-vpc-subnets)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kafkaconnect-connector-vpc-syntax.yaml"></a>
 
-```
+```yaml
   [SecurityGroups](#cfn-kafkaconnect-connector-vpc-securitygroups): {{
     - String}}
   [Subnets](#cfn-kafkaconnect-connector-vpc-subnets): {{

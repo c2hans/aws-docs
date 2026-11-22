@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lightsail-distribution-cookieobject-syntax.json"></a>
 
-```
+```json
 {
   "[CookiesAllowList](#cfn-lightsail-distribution-cookieobject-cookiesallowlist)" : {{[ String, ... ]}},
   "[Option](#cfn-lightsail-distribution-cookieobject-option)" : {{String}}
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lightsail-distribution-cookieobject-syntax.yaml"></a>
 
-```
+```yaml
   [CookiesAllowList](#cfn-lightsail-distribution-cookieobject-cookiesallowlist): {{
     - String}}
   [Option](#cfn-lightsail-distribution-cookieobject-option): {{String}}

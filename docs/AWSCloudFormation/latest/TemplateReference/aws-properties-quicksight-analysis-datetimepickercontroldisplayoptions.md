@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-analysis-datetimepickercontroldisplayoptions-syntax.json"></a>
 
-```
+```json
 {
   "[DateIconVisibility](#cfn-quicksight-analysis-datetimepickercontroldisplayoptions-dateiconvisibility)" : {{String}},
   "[DateTimeFormat](#cfn-quicksight-analysis-datetimepickercontroldisplayoptions-datetimeformat)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-analysis-datetimepickercontroldisplayoptions-syntax.yaml"></a>
 
-```
+```yaml
   [DateIconVisibility](#cfn-quicksight-analysis-datetimepickercontroldisplayoptions-dateiconvisibility): {{String}}
   [DateTimeFormat](#cfn-quicksight-analysis-datetimepickercontroldisplayoptions-datetimeformat): {{String}}
   [HelperTextVisibility](#cfn-quicksight-analysis-datetimepickercontroldisplayoptions-helpertextvisibility): {{String}}

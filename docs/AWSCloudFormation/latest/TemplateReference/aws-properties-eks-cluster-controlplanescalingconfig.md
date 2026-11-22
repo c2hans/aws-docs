@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eks-cluster-controlplanescalingconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Tier](#cfn-eks-cluster-controlplanescalingconfig-tier)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eks-cluster-controlplanescalingconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Tier](#cfn-eks-cluster-controlplanescalingconfig-tier): {{String}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-noncurrentversiontransition-syntax.json"></a>
 
-```
+```json
 {
   "[NewerNoncurrentVersions](#cfn-s3-bucket-noncurrentversiontransition-newernoncurrentversions)" : {{Integer}},
   "[StorageClass](#cfn-s3-bucket-noncurrentversiontransition-storageclass)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-noncurrentversiontransition-syntax.yaml"></a>
 
-```
+```yaml
   [NewerNoncurrentVersions](#cfn-s3-bucket-noncurrentversiontransition-newernoncurrentversions): {{Integer}}
   [StorageClass](#cfn-s3-bucket-noncurrentversiontransition-storageclass): {{String}}
   [TransitionInDays](#cfn-s3-bucket-noncurrentversiontransition-transitionindays): {{Integer}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-securityprofile-metricvalue-syntax.json"></a>
 
-```
+```json
 {
   "[Cidrs](#cfn-iot-securityprofile-metricvalue-cidrs)" : {{[ String, ... ]}},
   "[Count](#cfn-iot-securityprofile-metricvalue-count)" : {{String}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-securityprofile-metricvalue-syntax.yaml"></a>
 
-```
+```yaml
   [Cidrs](#cfn-iot-securityprofile-metricvalue-cidrs): {{
     - String}}
   [Count](#cfn-iot-securityprofile-metricvalue-count): {{String}}

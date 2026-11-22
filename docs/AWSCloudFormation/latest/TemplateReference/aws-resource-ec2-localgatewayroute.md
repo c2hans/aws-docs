@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-localgatewayroute-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::LocalGatewayRoute",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-localgatewayroute-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::LocalGatewayRoute
 Properties:
   [DestinationCidrBlock](#cfn-ec2-localgatewayroute-destinationcidrblock): {{String}}

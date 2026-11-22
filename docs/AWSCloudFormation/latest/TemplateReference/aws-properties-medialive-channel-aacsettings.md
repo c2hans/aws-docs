@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-aacsettings-syntax.json"></a>
 
-```
+```json
 {
   "[Bitrate](#cfn-medialive-channel-aacsettings-bitrate)" : {{Number}},
   "[CodingMode](#cfn-medialive-channel-aacsettings-codingmode)" : {{String}},
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-aacsettings-syntax.yaml"></a>
 
-```
+```yaml
   [Bitrate](#cfn-medialive-channel-aacsettings-bitrate): {{Number}}
   [CodingMode](#cfn-medialive-channel-aacsettings-codingmode): {{String}}
   [InputType](#cfn-medialive-channel-aacsettings-inputtype): {{String}}

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-eks-identityproviderconfig-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EKS::IdentityProviderConfig",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-eks-identityproviderconfig-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EKS::IdentityProviderConfig
 Properties:
   [ClusterName](#cfn-eks-identityproviderconfig-clustername): {{String}}
@@ -125,7 +125,7 @@ The following example creates a an identity provider config. If you're not creat
 #### JSON
 <a name="aws-resource-eks-identityproviderconfig--examples--Create_an_identity_provider_config--json"></a>
 
-```
+```json
 {
   "EKSIdpConfig": {
     "DependsOn": "EKSFargateProfile",
@@ -145,7 +145,7 @@ The following example creates a an identity provider config. If you're not creat
 #### YAML
 <a name="aws-resource-eks-identityproviderconfig--examples--Create_an_identity_provider_config--yaml"></a>
 
-```
+```yaml
 Resources:
   EKSIdpConfig:
     DependsOn: EKSFargateProfile

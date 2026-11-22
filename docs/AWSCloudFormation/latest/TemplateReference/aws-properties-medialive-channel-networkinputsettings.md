@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-channel-networkinputsettings-syntax.json"></a>
 
-```
+```json
 {
   "[HlsInputSettings](#cfn-medialive-channel-networkinputsettings-hlsinputsettings)" : {{HlsInputSettings}},
   "[MulticastInputSettings](#cfn-medialive-channel-networkinputsettings-multicastinputsettings)" : {{MulticastInputSettings}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-channel-networkinputsettings-syntax.yaml"></a>
 
-```
+```yaml
   [HlsInputSettings](#cfn-medialive-channel-networkinputsettings-hlsinputsettings): {{
     HlsInputSettings}}
   [MulticastInputSettings](#cfn-medialive-channel-networkinputsettings-multicastinputsettings): {{

@@ -15,7 +15,7 @@ You can't delete the default dashboard. However, you can disable it. Before dele
 **Example – Delete an Amazon S3 Storage Lens dashboard configuration**
 The following example shows you how to delete an S3 Storage Lens configuration using SDK for Java:
 
-```
+```Java
 package aws.example.s3control;
 
 import com.amazonaws.AmazonServiceException;

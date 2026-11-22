@@ -27,7 +27,7 @@ You can't delete a network interface that is in use. First, you must [detach the
 **To delete a network interface**
 Use the following [delete-network-interface](https://docs.aws.amazon.com/cli/latest/reference/ec2/delete-network-interface.html) command.
 
-```
+```bash
 aws ec2 delete-network-interface --network-interface-id {{eni-1234567890abcdef0}}
 ```
 
@@ -37,7 +37,7 @@ aws ec2 delete-network-interface --network-interface-id {{eni-1234567890abcdef0}
 **To delete a network interface**
 Use the [Remove-EC2NetworkInterface](https://docs.aws.amazon.com/powershell/latest/reference/items/Remove-EC2NetworkInterface.html) cmdlet.
 
-```
+```powershell
 Remove-EC2NetworkInterface -NetworkInterfaceId {{eni-1234567890abcdef0}}
 ```
 

@@ -70,13 +70,13 @@ Update your Go module dependencies to use the latest version of the Amazon S3 En
 
 **Update Go modules:**
 
-```
+```bash
 go get github.com/aws/amazon-s3-encryption-client-go/v3@latest
 ```
 
 **Update your go.mod file if needed:**
 
-```
+```go
 module your-application
 
 go 1.24
@@ -95,14 +95,14 @@ After updating your dependencies, rebuild and deploy your applications:
 
 1. **Clean and rebuild:**
 
-   ```
+   ```bash
    go mod tidy
    go build ./...
    ```
 
 1. **Run your tests:**
 
-   ```
+   ```bash
    go test ./...
    ```
 
@@ -120,7 +120,7 @@ The following examples show how to migrate from 3.*x* to 4.*x* clients using dif
 
 **Pre-migration (3.*x* Client)**
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -186,13 +186,13 @@ Update your Go module dependencies to use the latest version of the Amazon S3 En
 
 **Upgrade Go modules:**
 
-```
+```bash
 go get github.com/aws/amazon-s3-encryption-client-go/v4@latest
 ```
 
 **Update your go.mod file if needed:**
 
-```
+```go
 module your-application
 
 go 1.24
@@ -206,7 +206,7 @@ require (
 
 After updating your dependencies, make code changes as described below. This should result in no functional changes to your application.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -278,7 +278,7 @@ func V4ForbidAllowExample() error {
 
 After deploying the FORBID\_ENCRYPT\_ALLOW\_DECRYPT changes, make code changes as described below. This will cause your application to start writing objects encrypted with key committing algorithms.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -371,7 +371,7 @@ func V4RequireAllowExample() error {
 
 After deploying the REQUIRE\_ENCRYPT\_ALLOW\_DECRYPT changes, make code changes as described below. This will cause your application to stop reading objects encrypted without key committing algorithms. Before deploying this change, ensure all existing objects are now encrypted with key commiting algorithms.
 
-```
+```go
 import (
 	"context"
 	"fmt"
@@ -463,7 +463,7 @@ The following examples demonstrate specific 4.*x* configuration scenarios for di
 
 During migration, you may need to read objects encrypted with legacy algorithms. Configure your 4.*x* client to support backward compatibility:
 
-```
+```go
 import (
 	"context"
 	"fmt"

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-cluster-clusterlifecycleconfig-syntax.json"></a>
 
-```
+```json
 {
   "[OnCreate](#cfn-sagemaker-cluster-clusterlifecycleconfig-oncreate)" : {{String}},
   "[OnInitComplete](#cfn-sagemaker-cluster-clusterlifecycleconfig-oninitcomplete)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-cluster-clusterlifecycleconfig-syntax.yaml"></a>
 
-```
+```yaml
   [OnCreate](#cfn-sagemaker-cluster-clusterlifecycleconfig-oncreate): {{String}}
   [OnInitComplete](#cfn-sagemaker-cluster-clusterlifecycleconfig-oninitcomplete): {{String}}
   [SourceS3Uri](#cfn-sagemaker-cluster-clusterlifecycleconfig-sources3uri): {{String}}

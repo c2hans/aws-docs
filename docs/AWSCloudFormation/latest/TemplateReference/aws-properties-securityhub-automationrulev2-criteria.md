@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-securityhub-automationrulev2-criteria-syntax.json"></a>
 
-```
+```json
 {
   "[OcsfFindingCriteria](#cfn-securityhub-automationrulev2-criteria-ocsffindingcriteria)" : {{OcsfFindingFilters}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-securityhub-automationrulev2-criteria-syntax.yaml"></a>
 
-```
+```yaml
   [OcsfFindingCriteria](#cfn-securityhub-automationrulev2-criteria-ocsffindingcriteria): {{
     OcsfFindingFilters}}
 ```

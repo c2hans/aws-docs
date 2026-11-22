@@ -11,7 +11,7 @@ The following example bucket policy allows AWS account ID `{{111122223333}}` to 
 **Example – Bucket policy to allow `CreateSession` calls**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -36,7 +36,7 @@ The following example bucket policy allows AWS account ID `{{111122223333}}` to 
 The following example bucket policy allows AWS account ID `{{111122223333}}` to use the `CreateSession` API operation. This policy uses the `s3express:SessionMode` condition key with the `ReadOnly` value to set a read-only session.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -62,7 +62,7 @@ The following example bucket policy allows AWS account ID `{{111122223333}}` to 
 The following example bucket policy allows AWS account ID `{{111122223333}}` to use the `CreateSession` API operation for the specified directory bucket that's owned by AWS account ID {{`444455556666`}}.
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

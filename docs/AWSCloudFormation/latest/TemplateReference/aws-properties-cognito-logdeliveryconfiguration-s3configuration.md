@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cognito-logdeliveryconfiguration-s3configuration-syntax.json"></a>
 
-```
+```json
 {
   "[BucketArn](#cfn-cognito-logdeliveryconfiguration-s3configuration-bucketarn)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cognito-logdeliveryconfiguration-s3configuration-syntax.yaml"></a>
 
-```
+```yaml
   [BucketArn](#cfn-cognito-logdeliveryconfiguration-s3configuration-bucketarn): {{String}}
 ```
 

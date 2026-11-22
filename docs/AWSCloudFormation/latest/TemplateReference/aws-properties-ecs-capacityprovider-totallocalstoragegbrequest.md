@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-capacityprovider-totallocalstoragegbrequest-syntax.json"></a>
 
-```
+```json
 {
   "[Max](#cfn-ecs-capacityprovider-totallocalstoragegbrequest-max)" : {{Number}},
   "[Min](#cfn-ecs-capacityprovider-totallocalstoragegbrequest-min)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-capacityprovider-totallocalstoragegbrequest-syntax.yaml"></a>
 
-```
+```yaml
   [Max](#cfn-ecs-capacityprovider-totallocalstoragegbrequest-max): {{Number}}
   [Min](#cfn-ecs-capacityprovider-totallocalstoragegbrequest-min): {{Number}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-computeenvironment-managedinstancesstorageconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[StorageSizeGiB](#cfn-batch-computeenvironment-managedinstancesstorageconfiguration-storagesizegib)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-computeenvironment-managedinstancesstorageconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [StorageSizeGiB](#cfn-batch-computeenvironment-managedinstancesstorageconfiguration-storagesizegib): {{Integer}}
 ```
 

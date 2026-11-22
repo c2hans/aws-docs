@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-smsvoice-registration-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SMSVOICE::Registration",
   "Properties" : {
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-smsvoice-registration-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SMSVOICE::Registration
 Properties:
   [RegistrationType](#cfn-smsvoice-registration-registrationtype): {{String}}

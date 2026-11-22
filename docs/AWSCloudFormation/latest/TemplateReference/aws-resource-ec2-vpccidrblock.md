@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-vpccidrblock-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::VPCCidrBlock",
   "Properties" : {
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-vpccidrblock-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::VPCCidrBlock
 Properties:
   [AmazonProvidedIpv6CidrBlock](#cfn-ec2-vpccidrblock-amazonprovidedipv6cidrblock): {{Boolean}}
@@ -159,7 +159,7 @@ The following example associates an Amazon-provided IPv6 CIDR block (with a pref
 #### JSON
 <a name="aws-resource-ec2-vpccidrblock--examples--Associate_an_Amazon-provided_IPv6_CIDR_block--json"></a>
 
-```
+```json
 "Ipv6VPCCidrBlock": {
    "Type": "AWS::EC2::VPCCidrBlock",
    "Properties": {
@@ -172,7 +172,7 @@ The following example associates an Amazon-provided IPv6 CIDR block (with a pref
 #### YAML
 <a name="aws-resource-ec2-vpccidrblock--examples--Associate_an_Amazon-provided_IPv6_CIDR_block--yaml"></a>
 
-```
+```yaml
 Ipv6VPCCidrBlock:
    Type: AWS::EC2::VPCCidrBlock
    Properties:
@@ -188,7 +188,7 @@ The following example associates an IPv4 CIDR block and an Amazon-provided IPv6 
 #### JSON
 <a name="aws-resource-ec2-vpccidrblock--examples--Associate_an_IPv4_CIDR_block_and_an_Amazon-provided_IPv6_CIDR_block--json"></a>
 
-```
+```json
 {
     "Resources": {
         "VPC": {
@@ -263,7 +263,7 @@ The following example associates an IPv4 CIDR block and an Amazon-provided IPv6 
 #### YAML
 <a name="aws-resource-ec2-vpccidrblock--examples--Associate_an_IPv4_CIDR_block_and_an_Amazon-provided_IPv6_CIDR_block--yaml"></a>
 
-```
+```yaml
 Resources:
   VPC:
     Type: AWS::EC2::VPC

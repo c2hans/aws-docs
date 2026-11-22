@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-prefetchschedule-recurringretrieval-syntax.json"></a>
 
-```
+```json
 {
   "[DelayAfterAvailEndSeconds](#cfn-mediatailor-prefetchschedule-recurringretrieval-delayafteravailendseconds)" : {{Integer}},
   "[DynamicVariables](#cfn-mediatailor-prefetchschedule-recurringretrieval-dynamicvariables)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-prefetchschedule-recurringretrieval-syntax.yaml"></a>
 
-```
+```yaml
   [DelayAfterAvailEndSeconds](#cfn-mediatailor-prefetchschedule-recurringretrieval-delayafteravailendseconds): {{Integer}}
   [DynamicVariables](#cfn-mediatailor-prefetchschedule-recurringretrieval-dynamicvariables): {{
     {{Key}}: {{Value}}}}

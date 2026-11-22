@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-replicator-kafkaclusteroauthiamjwtbearer-syntax.json"></a>
 
-```
+```json
 {
   "[Audience](#cfn-msk-replicator-kafkaclusteroauthiamjwtbearer-audience)" : {{String}},
   "[SigningAlgorithm](#cfn-msk-replicator-kafkaclusteroauthiamjwtbearer-signingalgorithm)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-replicator-kafkaclusteroauthiamjwtbearer-syntax.yaml"></a>
 
-```
+```yaml
   [Audience](#cfn-msk-replicator-kafkaclusteroauthiamjwtbearer-audience): {{String}}
   [SigningAlgorithm](#cfn-msk-replicator-kafkaclusteroauthiamjwtbearer-signingalgorithm): {{String}}
   [TokenRequestSecretArn](#cfn-msk-replicator-kafkaclusteroauthiamjwtbearer-tokenrequestsecretarn): {{String}}

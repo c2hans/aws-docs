@@ -87,7 +87,7 @@ Each tool in MCP has:
 
 To see what tools are available in your Q CLI session:
 
-```
+```bash
 /tools
 ```
 
@@ -117,7 +117,7 @@ MCP servers can provide predefined prompts that help guide Q in specific tasks:
 
 Example of using a prompt with arguments:
 
-```
+```bash
 @fetch https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/command-line-mcp-configuration.html
 ```
 

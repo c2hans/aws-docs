@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-vpclattice-resourceconfiguration-dnsresource-syntax.json"></a>
 
-```
+```json
 {
   "[DomainName](#cfn-vpclattice-resourceconfiguration-dnsresource-domainname)" : {{String}},
   "[IpAddressType](#cfn-vpclattice-resourceconfiguration-dnsresource-ipaddresstype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-vpclattice-resourceconfiguration-dnsresource-syntax.yaml"></a>
 
-```
+```yaml
   [DomainName](#cfn-vpclattice-resourceconfiguration-dnsresource-domainname): {{String}}
   [IpAddressType](#cfn-vpclattice-resourceconfiguration-dnsresource-ipaddresstype): {{String}}
 ```

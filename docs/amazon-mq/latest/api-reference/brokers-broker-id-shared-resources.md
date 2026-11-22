@@ -68,7 +68,7 @@ Returns the resources shared to a broker.
 #### DescribeSharedResourcesOutput schema
 <a name="brokers-broker-id-shared-resources-response-body-describesharedresourcesoutput-example"></a>
 
-```
+```json
 {
   "nextToken": "string",
   "sharedResources": [
@@ -94,7 +94,7 @@ Returns the resources shared to a broker.
 #### Error schema
 <a name="brokers-broker-id-shared-resources-response-body-error-example"></a>
 
-```
+```json
 {
   "errorAttribute": "string",
   "message": "string"

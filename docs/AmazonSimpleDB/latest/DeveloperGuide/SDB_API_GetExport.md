@@ -48,7 +48,7 @@ The `exportDataCutoffTime` represents when domain processing begins, not when th
 **Note**
 The new Export APIs don't support sending requests using `query parameters`. This is shown in the following code example.
 
-```
+```java
 import software.amazon.awssdk.services.simpledbv2.SimpleDbV2Client;
 import software.amazon.awssdk.services.simpledbv2.model.GetExportRequest;
 import software.amazon.awssdk.services.simpledbv2.model.GetExportResponse;

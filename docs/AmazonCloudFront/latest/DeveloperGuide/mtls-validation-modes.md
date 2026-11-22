@@ -45,7 +45,7 @@ In optional mode, Connection Functions are still invoked even when clients don't
 
 The following example shows how to configure optional mode:
 
-```
+```json
 "ViewerMtlsConfig": {
     "Mode": "optional",
     ...other settings
@@ -109,7 +109,7 @@ In passthrough mode, Connection Functions are still invoked even when clients do
 
 Make sure all cache behaviors reference the managed `CachingDisabled` policy, then update the distribution configuration:
 
-```
+```json
 {
   "ViewerMtlsConfig": {
     "Mode": "passthrough"

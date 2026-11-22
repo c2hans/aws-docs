@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apigateway-method-integration-syntax.json"></a>
 
-```
+```json
 {
   "[CacheKeyParameters](#cfn-apigateway-method-integration-cachekeyparameters)" : {{[ String, ... ]}},
   "[CacheNamespace](#cfn-apigateway-method-integration-cachenamespace)" : {{String}},
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apigateway-method-integration-syntax.yaml"></a>
 
-```
+```yaml
   [CacheKeyParameters](#cfn-apigateway-method-integration-cachekeyparameters): {{
     - String}}
   [CacheNamespace](#cfn-apigateway-method-integration-cachenamespace): {{String}}

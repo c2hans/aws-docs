@@ -16,7 +16,7 @@ completeAttachedFileUpload(attachment: Attachment): Promise<void>
 
  **Usage**
 
-```
+```typescript
 /* Logic with startAttachedFileUplaod and uploading attachment to pre-signed URL */
 
 /* ... */

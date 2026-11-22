@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-resourceexplorer2-view-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ResourceExplorer2::View",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-resourceexplorer2-view-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ResourceExplorer2::View
 Properties:
   [Filters](#cfn-resourceexplorer2-view-filters): {{
@@ -117,7 +117,7 @@ The ARN of the new view. For example:
 #### JSON
 <a name="aws-resource-resourceexplorer2-view--examples--Creating_a_view_for_users_to_search_an_index--json"></a>
 
-```
+```json
 {
     "Description": "Sample stack template that creates a Resource Explorer view for the SampleIndex",
     "Resources": {
@@ -143,7 +143,7 @@ The ARN of the new view. For example:
 #### YAML
 <a name="aws-resource-resourceexplorer2-view--examples--Creating_a_view_for_users_to_search_an_index--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: "2010-09-09"
 Description: A sample template that creates a Resource Explorer view for the SampleIndex
   SampleView:

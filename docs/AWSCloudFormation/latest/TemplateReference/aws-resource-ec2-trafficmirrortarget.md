@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-trafficmirrortarget-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::TrafficMirrorTarget",
   "Properties" : {
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-trafficmirrortarget-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::TrafficMirrorTarget
 Properties:
   [Description](#cfn-ec2-trafficmirrortarget-description): {{String}}
@@ -107,7 +107,7 @@ This is a traffic mirror target associated with a Network Load Balancer.
 #### JSON
 <a name="aws-resource-ec2-trafficmirrortarget--examples--Create_a_traffic_mirror_target_associated_with_a_Network_Load_Balancer--json"></a>
 
-```
+```json
 {
   "SampleNLBTrafficMirrorTarget": {
     "Type": "AWS::EC2::TrafficMirrorTarget",
@@ -128,7 +128,7 @@ This is a traffic mirror target associated with a Network Load Balancer.
 #### YAML
 <a name="aws-resource-ec2-trafficmirrortarget--examples--Create_a_traffic_mirror_target_associated_with_a_Network_Load_Balancer--yaml"></a>
 
-```
+```yaml
 SampleNLBTrafficMirrorTarget:
   Type: "AWS::EC2::TrafficMirrorTarget"
   Properties:
@@ -147,7 +147,7 @@ This is a traffic mirror target associated with a network interface.
 #### JSON
 <a name="aws-resource-ec2-trafficmirrortarget--examples--Create_a_traffic_mirror_target_associated_with_a_network_interface--json"></a>
 
-```
+```json
 {
   "SampleNetworkInterfaceTarget": {
     "Type": "AWS::EC2::TrafficMirrorTarget",
@@ -168,7 +168,7 @@ This is a traffic mirror target associated with a network interface.
 #### YAML
 <a name="aws-resource-ec2-trafficmirrortarget--examples--Create_a_traffic_mirror_target_associated_with_a_network_interface--yaml"></a>
 
-```
+```yaml
 SampleNetworkInterfaceTarget:
   Type: "AWS::EC2::TrafficMirrorTarget"
   Properties:

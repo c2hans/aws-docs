@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-anomalydetector-metricdataquery-syntax.json"></a>
 
-```
+```json
 {
   "[AccountId](#cfn-cloudwatch-anomalydetector-metricdataquery-accountid)" : {{String}},
   "[Expression](#cfn-cloudwatch-anomalydetector-metricdataquery-expression)" : {{String}},
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-anomalydetector-metricdataquery-syntax.yaml"></a>
 
-```
+```yaml
   [AccountId](#cfn-cloudwatch-anomalydetector-metricdataquery-accountid): {{String}}
   [Expression](#cfn-cloudwatch-anomalydetector-metricdataquery-expression): {{String}}
   [Id](#cfn-cloudwatch-anomalydetector-metricdataquery-id): {{String}}

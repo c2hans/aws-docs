@@ -91,7 +91,7 @@ To use this extension pack, create an AWS Identity and Access Management (IAM) r
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -140,7 +140,7 @@ To apply the extension pack, AWS SCT requires an IAM role with the following per
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

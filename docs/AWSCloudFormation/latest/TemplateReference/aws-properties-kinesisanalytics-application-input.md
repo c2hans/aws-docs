@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesisanalytics-application-input-syntax.json"></a>
 
-```
+```json
 {
   "[InputParallelism](#cfn-kinesisanalytics-application-input-inputparallelism)" : {{InputParallelism}},
   "[InputProcessingConfiguration](#cfn-kinesisanalytics-application-input-inputprocessingconfiguration)" : {{InputProcessingConfiguration}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesisanalytics-application-input-syntax.yaml"></a>
 
-```
+```yaml
   [InputParallelism](#cfn-kinesisanalytics-application-input-inputparallelism): {{
     InputParallelism}}
   [InputProcessingConfiguration](#cfn-kinesisanalytics-application-input-inputprocessingconfiguration): {{

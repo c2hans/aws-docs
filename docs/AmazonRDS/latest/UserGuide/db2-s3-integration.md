@@ -32,7 +32,7 @@ The IAM policy that you create should contain the following information. Replace
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -108,7 +108,7 @@ You can create an IAM policy by using the AWS Management Console or the AWS Comm
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -257,7 +257,7 @@ You can create an IAM role for your DB instance by using the AWS Management Cons
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [

@@ -324,7 +324,7 @@ You can view and change the properties of the OLEDB provider. Only the `master` 
 
 To change the OLEDB provider properties
 
-```
+```SQL
 
 USE [master]
 GO
@@ -353,7 +353,7 @@ You can view and change the properties of the OLEDB driver when creating a linke
 
 Example: To create a linked server and change the OLEDB driver `FetchSize` property
 
-```
+```SQL
 
 EXEC master.dbo.sp_addlinkedserver
 @server = N{{'Oracle_link2'}},
@@ -364,7 +364,7 @@ EXEC master.dbo.sp_addlinkedserver
 GO
 ```
 
-```
+```SQL
 
 EXEC master.dbo.sp_addlinkedsrvlogin
 @rmtsrvname=N{{'Oracle_link2'}},

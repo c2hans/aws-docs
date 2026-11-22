@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancingv2-targetgroup-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-elasticloadbalancingv2-targetgroup-tag-key)" : {{String}},
   "[Value](#cfn-elasticloadbalancingv2-targetgroup-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancingv2-targetgroup-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-elasticloadbalancingv2-targetgroup-tag-key): {{String}}
   [Value](#cfn-elasticloadbalancingv2-targetgroup-tag-value): {{String}}
 ```
@@ -63,7 +63,7 @@ The following example creates a target group with two tags.
 #### YAML
 <a name="aws-properties-elasticloadbalancingv2-targetgroup-tag--examples----yaml"></a>
 
-```
+```yaml
 myTargetGroup:
     Type: 'AWS::ElasticLoadBalancingV2::TargetGroup'
     Properties:
@@ -82,7 +82,7 @@ myTargetGroup:
 #### JSON
 <a name="aws-properties-elasticloadbalancingv2-targetgroup-tag--examples----json"></a>
 
-```
+```json
 {
     "myTargetGroup": {
         "Type": "AWS::ElasticLoadBalancingV2::TargetGroup",

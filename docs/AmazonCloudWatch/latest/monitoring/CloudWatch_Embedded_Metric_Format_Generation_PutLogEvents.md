@@ -12,7 +12,7 @@ x-amzn-logs-format: json/emf
 
  The following is a full example using the AWS SDK for Java 2.x:
 
-```
+```java
 package org.example.basicapp;
 
 import software.amazon.awssdk.regions.Region;

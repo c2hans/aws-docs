@@ -50,7 +50,7 @@ The following example displays part of the CloudWatch agent configuration file. 
 
 For more information about the CloudWatch agent configuration file, see [Manually create or edit the CloudWatch agent configuration file](CloudWatch-Agent-Configuration-File-Details.md).
 
-```
+```json
 {
 "metrics": {
     "append_dimensions": {
@@ -81,7 +81,7 @@ On Windows servers, the network performance metrics are available through Window
 
 The following is a sample configuration file to collect network performance metrics from Windows. For more information about editing the CloudWatch agent configuration file, see [Manually create or edit the CloudWatch agent configuration file](CloudWatch-Agent-Configuration-File-Details.md).
 
-```
+```json
 {
     "metrics": {
         "append_dimensions": {

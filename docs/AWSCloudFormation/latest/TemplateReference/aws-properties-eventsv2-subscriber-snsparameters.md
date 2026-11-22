@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-eventsv2-subscriber-snsparameters-syntax.json"></a>
 
-```
+```json
 {
   "[MessageAttributes](#cfn-eventsv2-subscriber-snsparameters-messageattributes)" : {{{{{Key}}: {{Value}}, ...}}},
   "[MessageDeduplicationId](#cfn-eventsv2-subscriber-snsparameters-messagededuplicationid)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-eventsv2-subscriber-snsparameters-syntax.yaml"></a>
 
-```
+```yaml
   [MessageAttributes](#cfn-eventsv2-subscriber-snsparameters-messageattributes): {{
     {{Key}}: {{Value}}}}
   [MessageDeduplicationId](#cfn-eventsv2-subscriber-snsparameters-messagededuplicationid): {{String}}

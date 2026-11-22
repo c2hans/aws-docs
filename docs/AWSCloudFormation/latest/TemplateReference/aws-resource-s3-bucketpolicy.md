@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-s3-bucketpolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::S3::BucketPolicy",
   "Properties" : {
@@ -47,7 +47,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-s3-bucketpolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::S3::BucketPolicy
 Properties:
   [Bucket](#cfn-s3-bucketpolicy-bucket): {{String}}
@@ -83,7 +83,7 @@ This key should be used carefully. It is dangerous to include a publicly known r
 #### JSON
 <a name="aws-resource-s3-bucketpolicy--examples--Bucket_policy_that_allows_GET_requests_from_specific_referers--json"></a>
 
-```
+```json
 {
     "SampleBucketPolicy": {
         "Type": "AWS::S3::BucketPolicy",
@@ -131,7 +131,7 @@ This key should be used carefully. It is dangerous to include a publicly known r
 #### YAML
 <a name="aws-resource-s3-bucketpolicy--examples--Bucket_policy_that_allows_GET_requests_from_specific_referers--yaml"></a>
 
-```
+```yaml
 SampleBucketPolicy:
   Type: AWS::S3::BucketPolicy
   Properties:

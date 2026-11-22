@@ -72,7 +72,7 @@ You can obtain a copy of the current state of the workflow execution history by 
 
 Below is a section of an example workflow execution history in JSON format.
 
-```
+```json
 [  {
       "eventId": 11,
       "eventTimestamp": 1326671603.102,

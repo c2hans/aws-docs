@@ -126,7 +126,7 @@ This example illustrates how to create a VPC Ingress Connection.
 #### Sample Request
 <a name="API_CreateVpcIngressConnection_Example_1_Request"></a>
 
-```
+```json
 $ aws apprunner create-vpc-ingress-connection --cli-input-json "`cat`"
 {
     "IngressVpcConfiguration": {
@@ -141,7 +141,7 @@ $ aws apprunner create-vpc-ingress-connection --cli-input-json "`cat`"
 #### Sample Response
 <a name="API_CreateVpcIngressConnection_Example_1_Response"></a>
 
-```
+```json
 {
     "AccountId": "123456789012",
     "CreatedAt": "2022-09-18T23:36:45.374Z",

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/list-query-executions.h
 
 The `ListQueryExecutionsExample` shows how to obtain a list of query execution IDs.
 
-```
+```java
 package aws.example.athena;
 
 import software.amazon.awssdk.regions.Region;

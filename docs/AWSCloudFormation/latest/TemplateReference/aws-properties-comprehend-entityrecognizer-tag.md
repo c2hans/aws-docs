@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-comprehend-entityrecognizer-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-comprehend-entityrecognizer-tag-key)" : {{String}},
   "[Value](#cfn-comprehend-entityrecognizer-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-comprehend-entityrecognizer-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-comprehend-entityrecognizer-tag-key): {{String}}
   [Value](#cfn-comprehend-entityrecognizer-tag-value): {{String}}
 ```

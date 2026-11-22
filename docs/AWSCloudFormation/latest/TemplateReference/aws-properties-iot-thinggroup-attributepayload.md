@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-thinggroup-attributepayload-syntax.json"></a>
 
-```
+```json
 {
   "[Attributes](#cfn-iot-thinggroup-attributepayload-attributes)" : {{{{{Key}}: {{Value}}, ...}}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-thinggroup-attributepayload-syntax.yaml"></a>
 
-```
+```yaml
   [Attributes](#cfn-iot-thinggroup-attributepayload-attributes): {{
     {{Key}}: {{Value}}}}
 ```

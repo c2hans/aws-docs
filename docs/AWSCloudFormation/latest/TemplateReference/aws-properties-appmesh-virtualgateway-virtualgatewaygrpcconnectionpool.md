@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-virtualgateway-virtualgatewaygrpcconnectionpool-syntax.json"></a>
 
-```
+```json
 {
   "[MaxRequests](#cfn-appmesh-virtualgateway-virtualgatewaygrpcconnectionpool-maxrequests)" : {{Integer}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-virtualgateway-virtualgatewaygrpcconnectionpool-syntax.yaml"></a>
 
-```
+```yaml
   [MaxRequests](#cfn-appmesh-virtualgateway-virtualgatewaygrpcconnectionpool-maxrequests): {{Integer}}
 ```
 

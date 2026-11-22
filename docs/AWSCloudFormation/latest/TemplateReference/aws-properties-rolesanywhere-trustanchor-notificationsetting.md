@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-rolesanywhere-trustanchor-notificationsetting-syntax.json"></a>
 
-```
+```json
 {
   "[Channel](#cfn-rolesanywhere-trustanchor-notificationsetting-channel)" : {{String}},
   "[Enabled](#cfn-rolesanywhere-trustanchor-notificationsetting-enabled)" : {{Boolean}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-rolesanywhere-trustanchor-notificationsetting-syntax.yaml"></a>
 
-```
+```yaml
   [Channel](#cfn-rolesanywhere-trustanchor-notificationsetting-channel): {{String}}
   [Enabled](#cfn-rolesanywhere-trustanchor-notificationsetting-enabled): {{Boolean}}
   [Event](#cfn-rolesanywhere-trustanchor-notificationsetting-event): {{String}}

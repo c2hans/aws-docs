@@ -43,7 +43,7 @@ The ACME issuance flow (account registration, order placement, authorization, fi
 **Example Amazon VPC endpoint policy for ACME certificate issuance on a specific endpoint**  <a name="acm-acme-privatelink-policy-example"></a>
 The following policy restricts all ACME operations to a single endpoint. The first statement covers account registration, order placement, authorization, and download. Because those operations have no named IAM action for a policy to match, `"Action": "*"` is required. The second statement covers finalize and revocation.
 
-```
+```json
 {
    "Version": "2012-10-17",
    "Statement": [

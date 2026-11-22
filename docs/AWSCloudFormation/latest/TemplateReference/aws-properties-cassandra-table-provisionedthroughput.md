@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cassandra-table-provisionedthroughput-syntax.json"></a>
 
-```
+```json
 {
   "[ReadCapacityUnits](#cfn-cassandra-table-provisionedthroughput-readcapacityunits)" : {{Integer}},
   "[WriteCapacityUnits](#cfn-cassandra-table-provisionedthroughput-writecapacityunits)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cassandra-table-provisionedthroughput-syntax.yaml"></a>
 
-```
+```yaml
   [ReadCapacityUnits](#cfn-cassandra-table-provisionedthroughput-readcapacityunits): {{Integer}}
   [WriteCapacityUnits](#cfn-cassandra-table-provisionedthroughput-writecapacityunits): {{Integer}}
 ```

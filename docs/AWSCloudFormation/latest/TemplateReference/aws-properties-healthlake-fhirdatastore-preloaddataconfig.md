@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-healthlake-fhirdatastore-preloaddataconfig-syntax.json"></a>
 
-```
+```json
 {
   "[PreloadDataType](#cfn-healthlake-fhirdatastore-preloaddataconfig-preloaddatatype)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-healthlake-fhirdatastore-preloaddataconfig-syntax.yaml"></a>
 
-```
+```yaml
   [PreloadDataType](#cfn-healthlake-fhirdatastore-preloaddataconfig-preloaddatatype): {{String}}
 ```
 

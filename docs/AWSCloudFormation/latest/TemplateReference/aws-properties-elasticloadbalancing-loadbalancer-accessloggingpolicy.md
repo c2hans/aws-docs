@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticloadbalancing-loadbalancer-accessloggingpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[EmitInterval](#cfn-elasticloadbalancing-loadbalancer-accessloggingpolicy-emitinterval)" : {{Integer}},
   "[Enabled](#cfn-elasticloadbalancing-loadbalancer-accessloggingpolicy-enabled)" : {{Boolean}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticloadbalancing-loadbalancer-accessloggingpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [EmitInterval](#cfn-elasticloadbalancing-loadbalancer-accessloggingpolicy-emitinterval): {{Integer}}
   [Enabled](#cfn-elasticloadbalancing-loadbalancer-accessloggingpolicy-enabled): {{Boolean}}
   [S3BucketName](#cfn-elasticloadbalancing-loadbalancer-accessloggingpolicy-s3bucketname): {{String}}

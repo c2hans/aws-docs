@@ -20,7 +20,7 @@ Timeout values are always declared in seconds, and can be set to any number of s
 
 You can set timeout values for your Workflow and Decision tasks when registering the workflow type. For example:
 
-```
+```json
 https://swf.us-east-1.amazonaws.com
 RegisterWorkflowType
 {
@@ -46,7 +46,7 @@ You can override the value set for `defaultExecutionStartToCloseTimeout` by spec
 
 You can set timeout values for your activity tasks when registering the activity type. For example:
 
-```
+```json
 https://swf.us-east-1.amazonaws.com
 RegisterActivityType
 {

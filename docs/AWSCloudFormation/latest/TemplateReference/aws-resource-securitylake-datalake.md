@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-securitylake-datalake-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SecurityLake::DataLake",
   "Properties" : {
@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-securitylake-datalake-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SecurityLake::DataLake
 Properties:
   [EncryptionConfiguration](#cfn-securitylake-datalake-encryptionconfiguration): {{
@@ -126,7 +126,7 @@ The Amazon Resource Name (ARN) of the Amazon S3 bucket.
 #### JSON
 <a name="aws-resource-securitylake-datalake--examples--Enable_in_two_accounts_for_three_log_sources--json"></a>
 
-```
+```json
 {
 "AWSTemplateFormatVersion": "2010-09-09",
 "Transform": "AWS::Serverless-2016-10-31",
@@ -256,7 +256,7 @@ The Amazon Resource Name (ARN) of the Amazon S3 bucket.
 #### YAML
 <a name="aws-resource-securitylake-datalake--examples--Enable_in_two_accounts_for_three_log_sources--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description:  Creates Security Lake with NO KMS and two sources, this can be used as a rollup region.
@@ -348,7 +348,7 @@ Resources:
 #### JSON
 <a name="aws-resource-securitylake-datalake--examples--Enable_in_all_accounts_for_three_log_sources--json"></a>
 
-```
+```json
 {
 "AWSTemplateFormatVersion": "2010-09-09",
 "Transform": "AWS::Serverless-2016-10-31",
@@ -444,7 +444,7 @@ Resources:
 #### YAML
 <a name="aws-resource-securitylake-datalake--examples--Enable_in_all_accounts_for_three_log_sources--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description:  Creates Security Lake with NO KMS on three sources and all accounts. This can be used as a centralized Region.
@@ -521,7 +521,7 @@ Resources:
 #### JSON
 <a name="aws-resource-securitylake-datalake--examples--Deploys_a_contributing_Security_Lake_Region--json"></a>
 
-```
+```json
 {
 "AWSTemplateFormatVersion": "2010-09-09",
 "Transform": "AWS::Serverless-2016-10-31",
@@ -643,7 +643,7 @@ Resources:
 #### YAML
 <a name="aws-resource-securitylake-datalake--examples--Deploys_a_contributing_Security_Lake_Region--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: Creates Security Lake with NO KMS and two sources, replicates to one region.
@@ -732,7 +732,7 @@ For each Region add the encryption configuration parameter and assign respective
 #### JSON
 <a name="aws-resource-securitylake-datalake--examples--Configure_with_KMS--json"></a>
 
-```
+```json
 {
     "SecurityLakeEnablement": {
         "Type": "AWS::SecurityLake::DataLake",
@@ -756,7 +756,7 @@ For each Region add the encryption configuration parameter and assign respective
 #### YAML
 <a name="aws-resource-securitylake-datalake--examples--Configure_with_KMS--yaml"></a>
 
-```
+```yaml
 SecurityLakeEnablement:
     Type: AWS::SecurityLake::DataLake
     Properties:

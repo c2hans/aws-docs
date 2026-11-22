@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticbeanstalk-applicationversion-buildconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ArtifactName](#cfn-elasticbeanstalk-applicationversion-buildconfiguration-artifactname)" : {{String}},
   "[CodeBuildServiceRole](#cfn-elasticbeanstalk-applicationversion-buildconfiguration-codebuildservicerole)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticbeanstalk-applicationversion-buildconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ArtifactName](#cfn-elasticbeanstalk-applicationversion-buildconfiguration-artifactname): {{String}}
   [CodeBuildServiceRole](#cfn-elasticbeanstalk-applicationversion-buildconfiguration-codebuildservicerole): {{String}}
   [ComputeType](#cfn-elasticbeanstalk-applicationversion-buildconfiguration-computetype): {{String}}

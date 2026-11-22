@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-transfer-server-endpointdetails-syntax.json"></a>
 
-```
+```json
 {
   "[AddressAllocationIds](#cfn-transfer-server-endpointdetails-addressallocationids)" : {{[ String, ... ]}},
   "[SecurityGroupIds](#cfn-transfer-server-endpointdetails-securitygroupids)" : {{[ String, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-transfer-server-endpointdetails-syntax.yaml"></a>
 
-```
+```yaml
   [AddressAllocationIds](#cfn-transfer-server-endpointdetails-addressallocationids): {{
     - String}}
   [SecurityGroupIds](#cfn-transfer-server-endpointdetails-securitygroupids): {{

@@ -20,7 +20,7 @@ To begin this tutorial, first you need to follow the steps below to provision AW
 
 1. Provision AWS resources using the following AWS CloudFormation template in the CLI:
 
-   ```
+   ```sh
    aws cloudformation create-stack \
        --stack-name AWSAppSyncTutorialForAmazonDynamoDB \
        --template-url https://s3.us-west-2.amazonaws.com/awsappsync/resources/dynamodb/AmazonDynamoDBCFTemplate.yaml \
@@ -37,13 +37,13 @@ To begin this tutorial, first you need to follow the steps below to provision AW
 
 1. To see more details about the stack and the created resources, run the following CLI command:
 
-   ```
+   ```sh
    aws cloudformation describe-stacks --stack-name AWSAppSyncTutorialForAmazonDynamoDB
    ```
 
 1. To delete the resources later, you can run the following:
 
-   ```
+   ```sh
    aws cloudformation delete-stack --stack-name AWSAppSyncTutorialForAmazonDynamoDB
    ```
 
@@ -147,7 +147,7 @@ First, AWS AppSync needs to be aware of your tables. You do this by setting up a
 
 ****
 
-      ```
+      ```json
       {
            "Version":"2012-10-17",
            "Statement": [
@@ -205,7 +205,7 @@ To set up the resolver:
 
 ****
 
-      ```
+      ```json
       {
            "Version":"2012-10-17",
            "Statement": [
@@ -2107,7 +2107,7 @@ To clean up, you can delete the AppSync GraphQL API from the console.
 
 To delete the DynamoDB table and the IAM role you created for this tutorial, you can run the following to delete the `AWSAppSyncTutorialForAmazonDynamoDB` stack, or visit the CloudFormation console and delete the stack:
 
-```
+```sh
 aws cloudformation delete-stack \
     --stack-name AWSAppSyncTutorialForAmazonDynamoDB
 ```

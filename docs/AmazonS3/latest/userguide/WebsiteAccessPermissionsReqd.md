@@ -104,7 +104,7 @@ If your general purpose bucket uses the Bucket owner enforced setting for S3 Obj
 
 To make an object publicly readable using an ACL, grant READ permission to the `AllUsers` group, as shown in the following grant element. Add this grant element to the object ACL. For information about managing ACLs, see [Access control list (ACL) overview](acl-overview.md).
 
-```
+```xml
 1. <Grant>
 2.   <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 3.           xsi:type="Group">

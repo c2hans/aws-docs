@@ -14,7 +14,7 @@ CREATE EXTENSION rds_tools;
 
 You can find out the RDS version number of your RDS for MariaDB database with the following SQL query:
 
-```
+```sql
 mysql> select mysql.rds_version();
 ```
 

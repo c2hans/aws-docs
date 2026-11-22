@@ -31,6 +31,12 @@ Type: String
 Valid Values: `AWS_MANAGED | ACME | CUSTOMER_PROVIDED`
 Required: No
 
+ ** CertificateUsage **   <a name="ACM-Type-AcmCertificateMetadata-CertificateUsage"></a>
+The Extended Key Usage profile of the certificate. This value exists only for Amazon N2 certificates. If `CertificateUsage` was omitted from the request, this value is `CLIENT_AND_SERVER_AUTH`.
+Type: String
+Valid Values: `CLIENT_AND_SERVER_AUTH | CLIENT_AUTH_ONLY`
+Required: No
+
  ** CreatedAt **   <a name="ACM-Type-AcmCertificateMetadata-CreatedAt"></a>
 The time at which the certificate was requested.
 Type: Timestamp
@@ -83,6 +89,12 @@ Required: No
  ** RevokedAt **   <a name="ACM-Type-AcmCertificateMetadata-RevokedAt"></a>
 The time at which the certificate was revoked. This value exists only when the certificate status is `REVOKED`.
 Type: Timestamp
+Required: No
+
+ ** RootHierarchyType **   <a name="ACM-Type-AcmCertificateMetadata-RootHierarchyType"></a>
+The root hierarchy from which the certificate was issued. This value exists only for Amazon N2 certificates, which have a `Type` of `AMAZON_ISSUED`.
+Type: String
+Valid Values: `N2_AMAZON_MANAGED | N2_SFG2_AMAZON_MANAGED`
 Required: No
 
  ** Status **   <a name="ACM-Type-AcmCertificateMetadata-Status"></a>

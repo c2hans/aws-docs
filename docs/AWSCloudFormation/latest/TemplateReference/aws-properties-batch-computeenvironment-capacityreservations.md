@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-computeenvironment-capacityreservations-syntax.json"></a>
 
-```
+```json
 {
   "[ReservationGroupArn](#cfn-batch-computeenvironment-capacityreservations-reservationgrouparn)" : {{String}},
   "[ReservationPreference](#cfn-batch-computeenvironment-capacityreservations-reservationpreference)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-computeenvironment-capacityreservations-syntax.yaml"></a>
 
-```
+```yaml
   [ReservationGroupArn](#cfn-batch-computeenvironment-capacityreservations-reservationgrouparn): {{String}}
   [ReservationPreference](#cfn-batch-computeenvironment-capacityreservations-reservationpreference): {{String}}
 ```

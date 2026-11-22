@@ -38,7 +38,7 @@ To access tables through AWS Glue endpoints, you need to create an IAM role with
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -84,7 +84,7 @@ To access tables through AWS Glue endpoints, you need to create an IAM role with
 
 ****
 
-   ```
+   ```json
    {
        "Version":"2012-10-17",
        "Statement": [
@@ -130,7 +130,7 @@ Next, grant Lake Formation permissions to the IAM role you created for your Iceb
 
 After you have setup the IAM role with the permissions required for table access you can use it to run Iceberg clients from your local machine by configuring the AWS CLI with your role, using the following command:
 
-```
+```bash
 aws sts assume-role --role-arn "arn:aws:iam::{{<accountid>}}:role/{{<glue-irc-role>}}" --role-session-name {{<glue-irc-role>}}
 ```
 

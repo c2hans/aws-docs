@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-index-valueimportanceitem-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-kendra-index-valueimportanceitem-key)" : {{String}},
   "[Value](#cfn-kendra-index-valueimportanceitem-value)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-index-valueimportanceitem-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-kendra-index-valueimportanceitem-key): {{String}}
   [Value](#cfn-kendra-index-valueimportanceitem-value): {{Integer}}
 ```

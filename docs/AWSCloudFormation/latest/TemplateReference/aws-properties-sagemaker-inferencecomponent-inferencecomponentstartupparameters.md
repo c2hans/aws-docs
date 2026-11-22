@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentstartupparameters-syntax.json"></a>
 
-```
+```json
 {
   "[ContainerStartupHealthCheckTimeoutInSeconds](#cfn-sagemaker-inferencecomponent-inferencecomponentstartupparameters-containerstartuphealthchecktimeoutinseconds)" : {{Integer}},
   "[ModelDataDownloadTimeoutInSeconds](#cfn-sagemaker-inferencecomponent-inferencecomponentstartupparameters-modeldatadownloadtimeoutinseconds)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-inferencecomponent-inferencecomponentstartupparameters-syntax.yaml"></a>
 
-```
+```yaml
   [ContainerStartupHealthCheckTimeoutInSeconds](#cfn-sagemaker-inferencecomponent-inferencecomponentstartupparameters-containerstartuphealthchecktimeoutinseconds): {{Integer}}
   [ModelDataDownloadTimeoutInSeconds](#cfn-sagemaker-inferencecomponent-inferencecomponentstartupparameters-modeldatadownloadtimeoutinseconds): {{Integer}}
 ```

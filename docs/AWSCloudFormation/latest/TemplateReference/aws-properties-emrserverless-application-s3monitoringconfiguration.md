@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-emrserverless-application-s3monitoringconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EncryptionKeyArn](#cfn-emrserverless-application-s3monitoringconfiguration-encryptionkeyarn)" : {{String}},
   "[LogUri](#cfn-emrserverless-application-s3monitoringconfiguration-loguri)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-emrserverless-application-s3monitoringconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EncryptionKeyArn](#cfn-emrserverless-application-s3monitoringconfiguration-encryptionkeyarn): {{String}}
   [LogUri](#cfn-emrserverless-application-s3monitoringconfiguration-loguri): {{String}}
 ```

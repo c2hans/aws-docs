@@ -24,7 +24,7 @@ When you use an Amazon S3 bucket as a data source, you must provide a role that 
 
 **To allow Amazon Q to use an Amazon S3 bucket as a data source, use the following role policy:**
 
-```
+```json
 {
   "Version": "2012-10-17",		 	 	 ,
   "Statement": [
@@ -104,7 +104,7 @@ When you use an Amazon S3 bucket as a data source, you must provide a role that 
 
 **If the documents in the Amazon S3 bucket are encrypted, you must provide the following permissions to use the AWS KMS key to decrypt the documents:**
 
-```
+```json
 {
       "Sid": "AllowsAmazonQToDecryptSecret",
       "Effect": "Allow",
@@ -126,7 +126,7 @@ When you use an Amazon S3 bucket as a data source, you must provide a role that 
 
 **To allow Amazon Q to assume a role, use the following trust policy:**
 
-```
+```json
 {
   "Version": "2012-10-17",		 	 	 ,
   "Statement": [

@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-instance-elasticinferenceaccelerator-syntax.json"></a>
 
-```
+```json
 {
   "[Count](#cfn-ec2-instance-elasticinferenceaccelerator-count)" : {{Integer}},
   "[Type](#cfn-ec2-instance-elasticinferenceaccelerator-type)" : {{String}}
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-instance-elasticinferenceaccelerator-syntax.yaml"></a>
 
-```
+```yaml
   [Count](#cfn-ec2-instance-elasticinferenceaccelerator-count): {{Integer}}
   [Type](#cfn-ec2-instance-elasticinferenceaccelerator-type): {{String}}
 ```

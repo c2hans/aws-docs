@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-connectcampaignsv2-campaign-communicationlimits-syntax.json"></a>
 
-```
+```json
 {
   "[CommunicationLimitList](#cfn-connectcampaignsv2-campaign-communicationlimits-communicationlimitlist)" : {{[ CommunicationLimit, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-connectcampaignsv2-campaign-communicationlimits-syntax.yaml"></a>
 
-```
+```yaml
   [CommunicationLimitList](#cfn-connectcampaignsv2-campaign-communicationlimits-communicationlimitlist): {{
     - CommunicationLimit}}
 ```

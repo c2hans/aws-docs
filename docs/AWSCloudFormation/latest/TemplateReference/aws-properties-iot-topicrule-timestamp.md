@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iot-topicrule-timestamp-syntax.json"></a>
 
-```
+```json
 {
   "[Unit](#cfn-iot-topicrule-timestamp-unit)" : {{String}},
   "[Value](#cfn-iot-topicrule-timestamp-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iot-topicrule-timestamp-syntax.yaml"></a>
 
-```
+```yaml
   [Unit](#cfn-iot-topicrule-timestamp-unit): {{String}}
   [Value](#cfn-iot-topicrule-timestamp-value): {{String}}
 ```

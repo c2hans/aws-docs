@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanroomsml-configuredmodelalgorithm-containerconfig-syntax.json"></a>
 
-```
+```json
 {
   "[Arguments](#cfn-cleanroomsml-configuredmodelalgorithm-containerconfig-arguments)" : {{[ String, ... ]}},
   "[Entrypoint](#cfn-cleanroomsml-configuredmodelalgorithm-containerconfig-entrypoint)" : {{[ String, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanroomsml-configuredmodelalgorithm-containerconfig-syntax.yaml"></a>
 
-```
+```yaml
   [Arguments](#cfn-cleanroomsml-configuredmodelalgorithm-containerconfig-arguments): {{
     - String}}
   [Entrypoint](#cfn-cleanroomsml-configuredmodelalgorithm-containerconfig-entrypoint): {{

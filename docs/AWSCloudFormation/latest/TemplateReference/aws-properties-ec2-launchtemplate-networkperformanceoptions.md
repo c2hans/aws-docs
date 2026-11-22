@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-launchtemplate-networkperformanceoptions-syntax.json"></a>
 
-```
+```json
 {
   "[BandwidthWeighting](#cfn-ec2-launchtemplate-networkperformanceoptions-bandwidthweighting)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-launchtemplate-networkperformanceoptions-syntax.yaml"></a>
 
-```
+```yaml
   [BandwidthWeighting](#cfn-ec2-launchtemplate-networkperformanceoptions-bandwidthweighting): {{String}}
 ```
 

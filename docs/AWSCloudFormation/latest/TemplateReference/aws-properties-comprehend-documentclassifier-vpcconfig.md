@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-comprehend-documentclassifier-vpcconfig-syntax.json"></a>
 
-```
+```json
 {
   "[SecurityGroupIds](#cfn-comprehend-documentclassifier-vpcconfig-securitygroupids)" : {{[ String, ... ]}},
   "[Subnets](#cfn-comprehend-documentclassifier-vpcconfig-subnets)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-comprehend-documentclassifier-vpcconfig-syntax.yaml"></a>
 
-```
+```yaml
   [SecurityGroupIds](#cfn-comprehend-documentclassifier-vpcconfig-securitygroupids): {{
     - String}}
   [Subnets](#cfn-comprehend-documentclassifier-vpcconfig-subnets): {{

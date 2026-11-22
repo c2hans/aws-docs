@@ -15,7 +15,7 @@ To search this dataset for sites with a specific keyword, we use `regexp_like` i
 **Example 1: Using `regexp_like`**
 The query in this example uses the `regexp_like` function to search for terms `'politics|bigdata'`, found in values within arrays:
 
-```
+```sql
 WITH dataset AS (
   SELECT ARRAY[
     CAST(
@@ -71,7 +71,7 @@ This query returns two sites:
 **Example 2: Using `regexp_like`**
 The query in the following example adds up the total popularity scores for the sites matching your search terms with the `regexp_like` function, and then orders them from highest to lowest.
 
-```
+```sql
 WITH dataset AS (
   SELECT ARRAY[
     CAST(

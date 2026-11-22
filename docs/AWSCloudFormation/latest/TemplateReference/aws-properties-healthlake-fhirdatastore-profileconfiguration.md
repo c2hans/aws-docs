@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-healthlake-fhirdatastore-profileconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[DefaultProfiles](#cfn-healthlake-fhirdatastore-profileconfiguration-defaultprofiles)" : {{[ String, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-healthlake-fhirdatastore-profileconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [DefaultProfiles](#cfn-healthlake-fhirdatastore-profileconfiguration-defaultprofiles): {{
     - String}}
 ```

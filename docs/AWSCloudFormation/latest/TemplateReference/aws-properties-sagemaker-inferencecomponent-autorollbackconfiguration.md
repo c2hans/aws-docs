@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-inferencecomponent-autorollbackconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Alarms](#cfn-sagemaker-inferencecomponent-autorollbackconfiguration-alarms)" : {{[ Alarm, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-inferencecomponent-autorollbackconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Alarms](#cfn-sagemaker-inferencecomponent-autorollbackconfiguration-alarms): {{
     - Alarm}}
 ```

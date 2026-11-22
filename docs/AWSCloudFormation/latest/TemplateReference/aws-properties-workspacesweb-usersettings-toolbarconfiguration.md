@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspacesweb-usersettings-toolbarconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[HiddenToolbarItems](#cfn-workspacesweb-usersettings-toolbarconfiguration-hiddentoolbaritems)" : {{[ String, ... ]}},
   "[MaxDisplayResolution](#cfn-workspacesweb-usersettings-toolbarconfiguration-maxdisplayresolution)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspacesweb-usersettings-toolbarconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [HiddenToolbarItems](#cfn-workspacesweb-usersettings-toolbarconfiguration-hiddentoolbaritems): {{
     - String}}
   [MaxDisplayResolution](#cfn-workspacesweb-usersettings-toolbarconfiguration-maxdisplayresolution): {{String}}

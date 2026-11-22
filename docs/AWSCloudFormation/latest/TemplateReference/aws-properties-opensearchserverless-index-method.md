@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchserverless-index-method-syntax.json"></a>
 
-```
+```json
 {
   "[Engine](#cfn-opensearchserverless-index-method-engine)" : {{String}},
   "[Name](#cfn-opensearchserverless-index-method-name)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchserverless-index-method-syntax.yaml"></a>
 
-```
+```yaml
   [Engine](#cfn-opensearchserverless-index-method-engine): {{String}}
   [Name](#cfn-opensearchserverless-index-method-name): {{String}}
   [Parameters](#cfn-opensearchserverless-index-method-parameters): {{

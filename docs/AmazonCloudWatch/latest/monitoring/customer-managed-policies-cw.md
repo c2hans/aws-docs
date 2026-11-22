@@ -26,7 +26,7 @@ The following policy allows a user read-only access to CloudWatch and view Amazo
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -66,7 +66,7 @@ The following policy allows an CloudWatch alarm action to stop or terminate an E
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

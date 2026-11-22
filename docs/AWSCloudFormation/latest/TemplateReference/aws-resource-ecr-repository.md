@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ecr-repository-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ECR::Repository",
   "Properties" : {
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ecr-repository-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ECR::Repository
 Properties:
   [EmptyOnDelete](#cfn-ecr-repository-emptyondelete): {{Boolean}}
@@ -166,7 +166,7 @@ The following example specifies a repository named `test-repository`. Its policy
 #### JSON
 <a name="aws-resource-ecr-repository--examples--Specify_a_repository--json"></a>
 
-```
+```json
 "MyRepository": {
   "Type": "AWS::ECR::Repository",
   "Properties": {
@@ -202,7 +202,7 @@ The following example specifies a repository named `test-repository`. Its policy
 #### YAML
 <a name="aws-resource-ecr-repository--examples--Specify_a_repository--yaml"></a>
 
-```
+```yaml
 MyRepository:
   Type: AWS::ECR::Repository
   Properties:
@@ -235,7 +235,7 @@ The following example creates a repository named `test-repository` with image sc
 #### JSON
 <a name="aws-resource-ecr-repository--examples--Specify_a_repository_with_an_image_scanning_configuration--json"></a>
 
-```
+```json
 "MyRepository": {
   "Type": "AWS::ECR::Repository",
   "Properties": {
@@ -250,7 +250,7 @@ The following example creates a repository named `test-repository` with image sc
 #### YAML
 <a name="aws-resource-ecr-repository--examples--Specify_a_repository_with_an_image_scanning_configuration--yaml"></a>
 
-```
+```yaml
 MyRepository:
   Type: AWS::ECR::Repository
   Properties:
@@ -267,7 +267,7 @@ The following example creates a repository with a lifecycle policy.
 #### JSON
 <a name="aws-resource-ecr-repository--examples--Specify_a_repository_with_a_lifecycle_policy--json"></a>
 
-```
+```json
 {
   "Parameters": {
     "lifecyclePolicyText": {
@@ -314,7 +314,7 @@ The following example creates a repository with a lifecycle policy.
 #### YAML
 <a name="aws-resource-ecr-repository--examples--Specify_a_repository_with_a_lifecycle_policy--yaml"></a>
 
-```
+```yaml
 Parameters:
   lifecyclePolicyText:
     Type: String

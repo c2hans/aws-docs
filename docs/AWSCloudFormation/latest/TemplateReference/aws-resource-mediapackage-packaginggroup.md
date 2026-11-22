@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-mediapackage-packaginggroup-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::MediaPackage::PackagingGroup",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-mediapackage-packaginggroup-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::MediaPackage::PackagingGroup
 Properties:
   [Authorization](#cfn-mediapackage-packaginggroup-authorization): {{

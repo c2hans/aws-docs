@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cleanrooms-idmappingtable-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CleanRooms::IdMappingTable",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cleanrooms-idmappingtable-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CleanRooms::IdMappingTable
 Properties:
   [Description](#cfn-cleanrooms-idmappingtable-description): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-storagelensgroup-matchobjectsize-syntax.json"></a>
 
-```
+```json
 {
   "[BytesGreaterThan](#cfn-s3-storagelensgroup-matchobjectsize-bytesgreaterthan)" : {{Integer}},
   "[BytesLessThan](#cfn-s3-storagelensgroup-matchobjectsize-byteslessthan)" : {{Integer}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-storagelensgroup-matchobjectsize-syntax.yaml"></a>
 
-```
+```yaml
   [BytesGreaterThan](#cfn-s3-storagelensgroup-matchobjectsize-bytesgreaterthan): {{Integer}}
   [BytesLessThan](#cfn-s3-storagelensgroup-matchobjectsize-byteslessthan): {{Integer}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-appstream-stackuserassociation-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppStream::StackUserAssociation",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-appstream-stackuserassociation-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppStream::StackUserAssociation
 Properties:
   [AuthenticationType](#cfn-appstream-stackuserassociation-authenticationtype): {{String}}

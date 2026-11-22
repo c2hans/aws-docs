@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-config-deliverychannel-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Config::DeliveryChannel",
   "Properties" : {
@@ -47,7 +47,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-config-deliverychannel-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Config::DeliveryChannel
 Properties:
   [ConfigSnapshotDeliveryProperties](#cfn-config-deliverychannel-configsnapshotdeliveryproperties): {{
@@ -124,7 +124,7 @@ The following example creates a delivery channel that sends notifications to the
 #### JSON
 <a name="aws-resource-config-deliverychannel--examples--Delivery_Channel--json"></a>
 
-```
+```json
 "DeliveryChannel": {
   "Type": "AWS::Config::DeliveryChannel",
   "Properties": {
@@ -140,7 +140,7 @@ The following example creates a delivery channel that sends notifications to the
 #### YAML
 <a name="aws-resource-config-deliverychannel--examples--Delivery_Channel--yaml"></a>
 
-```
+```yaml
 DeliveryChannel:
   Type: AWS::Config::DeliveryChannel
   Properties:

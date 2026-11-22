@@ -76,7 +76,7 @@ DynamoDB scales well for these reasons:
 
 Queries against the data store become much simpler, often in the following form:
 
-```
+```sql
 SELECT * FROM Table_X WHERE Attribute_Y = "somevalue"
 ```
 

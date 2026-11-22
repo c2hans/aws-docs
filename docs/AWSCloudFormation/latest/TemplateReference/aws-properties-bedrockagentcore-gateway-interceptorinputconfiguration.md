@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-gateway-interceptorinputconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[PassRequestHeaders](#cfn-bedrockagentcore-gateway-interceptorinputconfiguration-passrequestheaders)" : {{Boolean}},
   "[PayloadFilter](#cfn-bedrockagentcore-gateway-interceptorinputconfiguration-payloadfilter)" : {{InterceptorPayloadFilter}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-gateway-interceptorinputconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [PassRequestHeaders](#cfn-bedrockagentcore-gateway-interceptorinputconfiguration-passrequestheaders): {{Boolean}}
   [PayloadFilter](#cfn-bedrockagentcore-gateway-interceptorinputconfiguration-payloadfilter): {{
     InterceptorPayloadFilter}}

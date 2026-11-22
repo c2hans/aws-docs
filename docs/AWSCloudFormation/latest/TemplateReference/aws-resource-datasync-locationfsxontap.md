@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-datasync-locationfsxontap-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DataSync::LocationFSxONTAP",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-datasync-locationfsxontap-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DataSync::LocationFSxONTAP
 Properties:
   [Protocol](#cfn-datasync-locationfsxontap-protocol): {{
@@ -140,7 +140,7 @@ The following example creates a location for an FSx for ONTAP file system that D
 #### JSON
 <a name="aws-resource-datasync-locationfsxontap--examples--Creating_an_FSx_for_ONTAP_location_with_NFS_access--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Specifies a location for an Amazon FSx for ONTAP file system that DataSync can access using NFS.",
@@ -169,7 +169,7 @@ The following example creates a location for an FSx for ONTAP file system that D
 #### YAML
 <a name="aws-resource-datasync-locationfsxontap--examples--Creating_an_FSx_for_ONTAP_location_with_NFS_access--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Specifies a location for an Amazon FSx for ONTAP file system that DataSync can access using NFS.
 Resources:
@@ -194,7 +194,7 @@ The following example creates a location for an FSx for ONTAP file system that D
 #### JSON
 <a name="aws-resource-datasync-locationfsxontap--examples--Creating_an_FSx_for_ONTAP_location_with_SMB_access--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Specifies a location for an Amazon FSx for ONTAP file system that DataSync can access using SMB.",
@@ -226,7 +226,7 @@ The following example creates a location for an FSx for ONTAP file system that D
 #### YAML
 <a name="aws-resource-datasync-locationfsxontap--examples--Creating_an_FSx_for_ONTAP_location_with_SMB_access--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Specifies a location for an Amazon FSx for ONTAP file system that DataSync can access using SMB.
 Resources:

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-aps-workspace-workspaceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[LimitsPerLabelSets](#cfn-aps-workspace-workspaceconfiguration-limitsperlabelsets)" : {{[ LimitsPerLabelSet, ... ]}},
   "[OutOfOrderTimeWindowInSeconds](#cfn-aps-workspace-workspaceconfiguration-outofordertimewindowinseconds)" : {{Integer}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-aps-workspace-workspaceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [LimitsPerLabelSets](#cfn-aps-workspace-workspaceconfiguration-limitsperlabelsets): {{
     - LimitsPerLabelSet}}
   [OutOfOrderTimeWindowInSeconds](#cfn-aps-workspace-workspaceconfiguration-outofordertimewindowinseconds): {{Integer}}

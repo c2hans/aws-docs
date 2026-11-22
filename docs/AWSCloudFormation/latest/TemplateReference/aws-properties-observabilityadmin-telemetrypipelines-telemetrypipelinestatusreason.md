@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-observabilityadmin-telemetrypipelines-telemetrypipelinestatusreason-syntax.json"></a>
 
-```
+```json
 {
   "[Description](#cfn-observabilityadmin-telemetrypipelines-telemetrypipelinestatusreason-description)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-observabilityadmin-telemetrypipelines-telemetrypipelinestatusreason-syntax.yaml"></a>
 
-```
+```yaml
   [Description](#cfn-observabilityadmin-telemetrypipelines-telemetrypipelinestatusreason-description): {{String}}
 ```
 

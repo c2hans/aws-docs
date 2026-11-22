@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-piechartfieldwells-syntax.json"></a>
 
-```
+```json
 {
   "[PieChartAggregatedFieldWells](#cfn-quicksight-dashboard-piechartfieldwells-piechartaggregatedfieldwells)" : {{PieChartAggregatedFieldWells}}
 }
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-piechartfieldwells-syntax.yaml"></a>
 
-```
+```yaml
   [PieChartAggregatedFieldWells](#cfn-quicksight-dashboard-piechartfieldwells-piechartaggregatedfieldwells): {{
     PieChartAggregatedFieldWells}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-refactorspaces-route-defaultrouteinput-syntax.json"></a>
 
-```
+```json
 {
   "[ActivationState](#cfn-refactorspaces-route-defaultrouteinput-activationstate)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-refactorspaces-route-defaultrouteinput-syntax.yaml"></a>
 
-```
+```yaml
   [ActivationState](#cfn-refactorspaces-route-defaultrouteinput-activationstate): {{String}}
 ```
 

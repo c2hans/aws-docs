@@ -24,7 +24,7 @@ The following code examples show how to create an item with TTL.
 
 **SDK for Java 2.x**
 
-```
+```java
 package com.amazon.samplelib.ttl;
 
 import com.amazon.samplelib.CodeSampleUtils;
@@ -182,7 +182,7 @@ public class CreateTTL {
 
 **SDK for JavaScript (v3)**
 
-```
+```javascript
 import { DynamoDBClient, PutItemCommand } from "@aws-sdk/client-dynamodb";
 
 export function createDynamoDBItem(table_name, region, partition_key, sort_key) {
@@ -235,7 +235,7 @@ export function createDynamoDBItem(table_name, region, partition_key, sort_key) 
 
 **SDK for Python (Boto3)**
 
-```
+```python
 from datetime import datetime, timedelta
 
 import boto3
@@ -296,7 +296,7 @@ The following code examples show how to update an item's TTL.
 **SDK for Java 2.x**
 Update TTL on an existing DynamoDB item in a table.
 
-```
+```java
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
@@ -356,7 +356,7 @@ import java.util.Optional;
 
 **SDK for JavaScript (v3)**
 
-```
+```javascript
 import { DynamoDBClient, UpdateItemCommand } from "@aws-sdk/client-dynamodb";
 import { marshall, unmarshall } from "@aws-sdk/util-dynamodb";
 
@@ -403,7 +403,7 @@ export const updateItem = async (tableName, partitionKey, sortKey, region = 'us-
 
 **SDK for Python (Boto3)**
 
-```
+```python
 from datetime import datetime, timedelta
 
 import boto3

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appsync-datasource-dynamodbconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AwsRegion](#cfn-appsync-datasource-dynamodbconfig-awsregion)" : {{String}},
   "[DeltaSyncConfig](#cfn-appsync-datasource-dynamodbconfig-deltasyncconfig)" : {{DeltaSyncConfig}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appsync-datasource-dynamodbconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AwsRegion](#cfn-appsync-datasource-dynamodbconfig-awsregion): {{String}}
   [DeltaSyncConfig](#cfn-appsync-datasource-dynamodbconfig-deltasyncconfig): {{
     DeltaSyncConfig}}

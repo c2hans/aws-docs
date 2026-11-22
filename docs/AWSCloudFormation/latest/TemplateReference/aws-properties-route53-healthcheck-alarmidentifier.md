@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-route53-healthcheck-alarmidentifier-syntax.json"></a>
 
-```
+```json
 {
   "[Name](#cfn-route53-healthcheck-alarmidentifier-name)" : {{String}},
   "[Region](#cfn-route53-healthcheck-alarmidentifier-region)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-route53-healthcheck-alarmidentifier-syntax.yaml"></a>
 
-```
+```yaml
   [Name](#cfn-route53-healthcheck-alarmidentifier-name): {{String}}
   [Region](#cfn-route53-healthcheck-alarmidentifier-region): {{String}}
 ```

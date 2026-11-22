@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-observabilityadmin-telemetryrule-fieldtomatch-syntax.json"></a>
 
-```
+```json
 {
   "[Method](#cfn-observabilityadmin-telemetryrule-fieldtomatch-method)" : {{String}},
   "[QueryString](#cfn-observabilityadmin-telemetryrule-fieldtomatch-querystring)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-observabilityadmin-telemetryrule-fieldtomatch-syntax.yaml"></a>
 
-```
+```yaml
   [Method](#cfn-observabilityadmin-telemetryrule-fieldtomatch-method): {{String}}
   [QueryString](#cfn-observabilityadmin-telemetryrule-fieldtomatch-querystring): {{
     String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dataset-columnsemantictype-syntax.json"></a>
 
-```
+```json
 {
   "[GeographicalRole](#cfn-quicksight-dataset-columnsemantictype-geographicalrole)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dataset-columnsemantictype-syntax.yaml"></a>
 
-```
+```yaml
   [GeographicalRole](#cfn-quicksight-dataset-columnsemantictype-geographicalrole): {{String}}
 ```
 

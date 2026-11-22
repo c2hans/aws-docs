@@ -10,7 +10,7 @@ You can optionally set the configuration to roll back a failed deployment to the
 
 The following `create-service` AWS CLI example shows how to create a Linux service when the deployment alarms are used with the rollback option.
 
-```
+```JSON
 aws ecs create-service \
      --service-name {{MyService}} \
      --deployment-controller type={{ECS}} \

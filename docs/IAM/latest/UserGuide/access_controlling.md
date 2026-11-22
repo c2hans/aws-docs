@@ -41,7 +41,7 @@ You can use a permissions boundary on Zhang to make sure that he is never given 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -178,7 +178,7 @@ Consider the following example policy. It allows a user to create, update (that 
 **Example policy that allows creating, updating, deleting, listing, getting, and setting the default version for all policies**
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": {
@@ -208,7 +208,7 @@ For more information about using paths in the names of customer managed policies
 **Example policy that allows deleting policy versions and setting the default version for only specific policies**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -242,7 +242,7 @@ The following example policy allows a user to attach managed policies to only th
 **Example policy that allows attaching managed policies to only specific user groups or roles**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -268,7 +268,7 @@ In the following example, the condition ensures that the `AttachGroupPolicy` and
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -296,7 +296,7 @@ This policy uses the `ArnLike` condition operator, but you can also use the `Arn
 
 For example, you can limit the use of actions to involve only the managed policies that you specify. You do this by specifying the policy ARN in the `Condition` element of the policy that grants these permissions. For example, to specify the ARN of a customer managed policy:
 
-```
+```json
 "Condition": {"ArnEquals":
   {"iam:PolicyARN": "arn:aws:iam::{{123456789012}}:policy/{{POLICY-NAME}}"}
 }
@@ -304,7 +304,7 @@ For example, you can limit the use of actions to involve only the managed polici
 
 You can also specify the ARN of an AWS managed policy in a policy's `Condition` element. The ARN of an AWS managed policy uses the special alias `aws` in the policy ARN instead of an account ID, as in this example:
 
-```
+```json
 "Condition": {"ArnEquals":
   {"iam:PolicyARN": "arn:aws:iam::aws:policy/AmazonEC2FullAccess"}
 }

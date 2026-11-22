@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-workspacesweb-usersettings-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::WorkSpacesWeb::UserSettings",
   "Properties" : {
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-workspacesweb-usersettings-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::WorkSpacesWeb::UserSettings
 Properties:
   [AdditionalEncryptionContext](#cfn-workspacesweb-usersettings-additionalencryptioncontext): {{

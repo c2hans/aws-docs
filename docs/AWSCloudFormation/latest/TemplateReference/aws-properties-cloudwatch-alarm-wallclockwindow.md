@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudwatch-alarm-wallclockwindow-syntax.json"></a>
 
-```
+```json
 {
   "[Timezone](#cfn-cloudwatch-alarm-wallclockwindow-timezone)" : {{String}}
 }
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudwatch-alarm-wallclockwindow-syntax.yaml"></a>
 
-```
+```yaml
   [Timezone](#cfn-cloudwatch-alarm-wallclockwindow-timezone): {{String}}
 ```
 

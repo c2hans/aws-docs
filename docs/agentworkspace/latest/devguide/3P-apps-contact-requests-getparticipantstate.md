@@ -8,13 +8,13 @@ Retrieves the current state of a specific participant.
 
  **Signature**
 
-```
+```typescript
 getParticipantState(participantId: string): Promise<ParticipantState>
 ```
 
  **Usage**
 
-```
+```typescript
 const state = await contactClient.getParticipantState("participant-456");
 if (state.value === "connected") {
     console.log("Participant is connected");
@@ -41,6 +41,6 @@ Requires an instance that is scoped to the contact that the participant belongs 
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

@@ -12,43 +12,43 @@ You specify a value using a service namespace as an action prefix (`iam`, `ec2`,
 
 **Amazon SQS action**
 
-```
+```json
 "Action": "sqs:SendMessage"
 ```
 
 **Amazon EC2 action**
 
-```
+```json
 "Action": "ec2:StartInstances"
 ```
 
 **IAM action**
 
-```
+```json
 "Action": "iam:ChangePassword"
 ```
 
 **Amazon S3 action**
 
-```
+```json
 "Action": "s3:GetObject"
 ```
 
 You can specify multiple values for the `Action` element.
 
-```
+```json
 "Action": [ "sqs:SendMessage", "sqs:ReceiveMessage", "ec2:StartInstances", "iam:ChangePassword", "s3:GetObject" ]
 ```
 
 You can use multi-character match wildcards (`*`) and single-character match wildcards (`?`) to give access to all the actions the specific AWS product offers. For example, the following `Action` element applies to all S3 actions.
 
-```
+```json
 "Action": "s3:*"
 ```
 
 You can also use wildcards (`*` or `?`) as part of the action name. For example, the following `Action` element applies to all IAM actions that include the string `AccessKey`, including `CreateAccessKey`, `DeleteAccessKey`, `ListAccessKeys`, and `UpdateAccessKey`.
 
-```
+```json
 "Action": "iam:*AccessKey*"
 ```
 

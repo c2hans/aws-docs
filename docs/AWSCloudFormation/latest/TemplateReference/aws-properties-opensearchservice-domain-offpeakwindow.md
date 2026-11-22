@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchservice-domain-offpeakwindow-syntax.json"></a>
 
-```
+```json
 {
   "[WindowStartTime](#cfn-opensearchservice-domain-offpeakwindow-windowstarttime)" : {{WindowStartTime}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchservice-domain-offpeakwindow-syntax.yaml"></a>
 
-```
+```yaml
   [WindowStartTime](#cfn-opensearchservice-domain-offpeakwindow-windowstarttime): {{
     WindowStartTime}}
 ```

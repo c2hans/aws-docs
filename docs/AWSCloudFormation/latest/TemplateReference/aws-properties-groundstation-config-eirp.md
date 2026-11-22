@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-groundstation-config-eirp-syntax.json"></a>
 
-```
+```json
 {
   "[Units](#cfn-groundstation-config-eirp-units)" : {{String}},
   "[Value](#cfn-groundstation-config-eirp-value)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-groundstation-config-eirp-syntax.yaml"></a>
 
-```
+```yaml
   [Units](#cfn-groundstation-config-eirp-units): {{String}}
   [Value](#cfn-groundstation-config-eirp-value): {{Number}}
 ```
@@ -58,7 +58,7 @@ The following example creates a Ground Station `EIRP`
 #### JSON
 <a name="aws-properties-groundstation-config-eirp--examples--Create_an_EIRP--json"></a>
 
-```
+```json
 {
   "TargetEirp": {
     "Value": 20,
@@ -70,7 +70,7 @@ The following example creates a Ground Station `EIRP`
 #### YAML
 <a name="aws-properties-groundstation-config-eirp--examples--Create_an_EIRP--yaml"></a>
 
-```
+```yaml
 TargetEirp:
   Value: 20.0
   Units: dBW

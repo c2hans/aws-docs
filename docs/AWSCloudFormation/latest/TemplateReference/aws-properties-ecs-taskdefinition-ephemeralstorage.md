@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ecs-taskdefinition-ephemeralstorage-syntax.json"></a>
 
-```
+```json
 {
   "[SizeInGiB](#cfn-ecs-taskdefinition-ephemeralstorage-sizeingib)" : {{Integer}}
 }
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ecs-taskdefinition-ephemeralstorage-syntax.yaml"></a>
 
-```
+```yaml
   [SizeInGiB](#cfn-ecs-taskdefinition-ephemeralstorage-sizeingib): {{Integer}}
 ```
 

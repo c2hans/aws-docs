@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wafv2-webacl-managedrulegroupstatement-syntax.json"></a>
 
-```
+```json
 {
   "[ExcludedRules](#cfn-wafv2-webacl-managedrulegroupstatement-excludedrules)" : {{[ ExcludedRule, ... ]}},
   "[ManagedRuleGroupConfigs](#cfn-wafv2-webacl-managedrulegroupstatement-managedrulegroupconfigs)" : {{[ ManagedRuleGroupConfig, ... ]}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wafv2-webacl-managedrulegroupstatement-syntax.yaml"></a>
 
-```
+```yaml
   [ExcludedRules](#cfn-wafv2-webacl-managedrulegroupstatement-excludedrules): {{
     - ExcludedRule}}
   [ManagedRuleGroupConfigs](#cfn-wafv2-webacl-managedrulegroupstatement-managedrulegroupconfigs): {{
@@ -127,7 +127,7 @@ The following shows an example `ManagedRuleGroupStatement` for the AWS WAF ATP m
 #### YAML
 <a name="aws-properties-wafv2-webacl-managedrulegroupstatement--examples--Configure_the_managed_rule_group_statement_for_AWSManagedRulesATPRuleSet--yaml"></a>
 
-```
+```yaml
 ManagedRuleGroupStatement:
   VendorName: AWS
   Name: AWSManagedRulesATPRuleSet
@@ -143,7 +143,7 @@ ManagedRuleGroupStatement:
 #### JSON
 <a name="aws-properties-wafv2-webacl-managedrulegroupstatement--examples--Configure_the_managed_rule_group_statement_for_AWSManagedRulesATPRuleSet--json"></a>
 
-```
+```json
 {
   "ManagedRuleGroupStatement": {
     "VendorName": "AWS",
@@ -178,7 +178,7 @@ The following shows an example `ManagedRuleGroupStatement` for a managed rule gr
 #### YAML
 <a name="aws-properties-wafv2-webacl-managedrulegroupstatement--examples--Configure_a_standard_managed_rule_group_statement--yaml"></a>
 
-```
+```yaml
 ManagedRuleGroupStatement:
   VendorName: AWS
   Name: AWSManagedRulesCommonRuleSet
@@ -187,7 +187,7 @@ ManagedRuleGroupStatement:
 #### JSON
 <a name="aws-properties-wafv2-webacl-managedrulegroupstatement--examples--Configure_a_standard_managed_rule_group_statement--json"></a>
 
-```
+```json
 {
   "ManagedRuleGroupStatement": {
     "VendorName": "AWS",

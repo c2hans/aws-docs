@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotfleetwise-campaign-conditionbasedsignalfetchconfig-syntax.json"></a>
 
-```
+```json
 {
   "[ConditionExpression](#cfn-iotfleetwise-campaign-conditionbasedsignalfetchconfig-conditionexpression)" : {{String}},
   "[TriggerMode](#cfn-iotfleetwise-campaign-conditionbasedsignalfetchconfig-triggermode)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotfleetwise-campaign-conditionbasedsignalfetchconfig-syntax.yaml"></a>
 
-```
+```yaml
   [ConditionExpression](#cfn-iotfleetwise-campaign-conditionbasedsignalfetchconfig-conditionexpression): {{String}}
   [TriggerMode](#cfn-iotfleetwise-campaign-conditionbasedsignalfetchconfig-triggermode): {{String}}
 ```

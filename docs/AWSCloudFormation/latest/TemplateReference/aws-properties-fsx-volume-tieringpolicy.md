@@ -22,7 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-fsx-volume-tieringpolicy-syntax.json"></a>
 
-```
+```json
 {
   "[CoolingPeriod](#cfn-fsx-volume-tieringpolicy-coolingperiod)" : {{Integer}},
   "[Name](#cfn-fsx-volume-tieringpolicy-name)" : {{String}}
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-fsx-volume-tieringpolicy-syntax.yaml"></a>
 
-```
+```yaml
   [CoolingPeriod](#cfn-fsx-volume-tieringpolicy-coolingperiod): {{Integer}}
   [Name](#cfn-fsx-volume-tieringpolicy-name): {{String}}
 ```

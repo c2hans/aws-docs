@@ -98,7 +98,7 @@ Create a virtual node named `serviceB`, since one of the virtual nodes represent
 
 1. Create a file named `create-virtual-node-serviceb.json` with the following contents:
 
-   ```
+   ```json
    {
        "meshName": "apps",
        "spec": {
@@ -161,7 +161,7 @@ Create the following resources:
 
    1. Create a file named `create-virtual-router.json` with the following contents:
 
-      ```
+      ```json
       {
           "meshName": "apps",
           "spec": {
@@ -188,7 +188,7 @@ Create the following resources:
 
    1. Create a file named `create-route.json` with the following contents:
 
-      ```
+      ```json
       {
           "meshName" : "apps",
           "routeName" : "serviceB",
@@ -319,7 +319,7 @@ To complete the scenario, you need to:
 
    1. Create a file named `create-virtual-node-servicebv2.json` with the following contents:
 
-      ```
+      ```json
       {
           "meshName": "apps",
           "spec": {
@@ -351,7 +351,7 @@ To complete the scenario, you need to:
 
    1. Create a file named `create-virtual-node-servicea.json` with the following contents:
 
-      ```
+      ```json
       {
          "meshName" : "apps",
          "spec" : {
@@ -390,7 +390,7 @@ To complete the scenario, you need to:
 
    1. Create a file named `update-virtual-service.json` with the following contents:
 
-      ```
+      ```json
       {
          "meshName" : "apps",
          "spec" : {
@@ -414,7 +414,7 @@ To complete the scenario, you need to:
 
    1. Create a file named `update-route.json` with the following contents:
 
-      ```
+      ```json
       {
          "meshName" : "apps",
          "routeName" : "serviceB",
@@ -451,7 +451,7 @@ To complete the scenario, you need to:
 
    1. Create a file named `create-virtual-servicea.json` with the following contents:
 
-      ```
+      ```json
       {
          "meshName" : "apps",
          "spec" : {
@@ -522,7 +522,7 @@ Envoy doesn't proxy traffic to these IP addresses. Set this value to `169.254.17
 You can add a comma separated list of ports. Envoy doesn't proxy traffic to these ports. Even if you list no ports, port 22 is ignored.
 The maximum number of outbound ports that can be ignored is 15.
 
-```
+```JSON
 "proxyConfiguration": {
 	"type": "APPMESH",
 	"containerName": "envoy",
@@ -557,7 +557,7 @@ The maximum number of outbound ports that can be ignored is 15.
 **Application container Envoy dependency**
 The application containers in your task definitions must wait for the Envoy proxy to bootstrap and start before they can start. To make sure this happens, you set a `dependsOn` section in each application container definition to wait for the Envoy container to report as `HEALTHY`. The following code shows an application container definition example with this dependency. All of the properties in the following example are required. Some of the property values are also required, but some are {{replaceable}}.
 
-```
+```JSON
 {
 	"name": "{{appName}}",
 	"image": "{{appImage}}",
@@ -661,7 +661,7 @@ By default, App Mesh uses the name of the resource you specified in `APPMESH_RES
 
 The following code shows an Envoy container definition example.
 
-```
+```JSON
 {
 	"name": "envoy",
 	"image": "{{840364872350}}.dkr.ecr.{{us-west-2}}.amazonaws.com/aws-appmesh-envoy:v1.40.2.1-prod",
@@ -694,7 +694,7 @@ Fargate must use a port value greater than 1024.
 
 **Example JSON for Amazon ECS task definition - Fargate on Linux containers**
 
-```
+```json
 {
 
    "family" : "{{taskB}}",
@@ -782,7 +782,7 @@ Fargate must use a port value greater than 1024.
 **Example JSON for Amazon ECS task definition with AWS X-Ray - Fargate on Linux containers**
 X-Ray allows you to collect data about requests that an application serves and provides tools that you can use to visualize traffic flow. Using the X-Ray driver for Envoy enables Envoy to report tracing information to X-Ray. You can enable X-Ray tracing using the [Envoy configuration](https://docs.aws.amazon.com/app-mesh/latest/userguide/envoy.html). Based on the configuration, Envoy sends tracing data to the X-Ray daemon running as a [sidecar](https://docs.aws.amazon.com/xray/latest/devguide/xray-daemon-ecs.html) container and the daemon forwards the traces to the X-Ray service. Once the traces are published to X-Ray, you can use the X-Ray console to visualize the service call graph and request trace details. The following JSON represents a task definition to enable X-Ray integration.
 
-```
+```json
 {
 
    "family" : "{{taskB}}",
@@ -888,7 +888,7 @@ X-Ray allows you to collect data about requests that an application serves and p
 
 **Example JSON for Amazon ECS task definition - EC2 launch type**
 
-```
+```json
 {
   "family": "{{taskB}}",
   "memory": "{{256}}",
@@ -973,7 +973,7 @@ X-Ray allows you to collect data about requests that an application serves and p
 
 **Example JSON for Amazon ECS task definition with AWS X-Ray - EC2 launch type**
 
-```
+```json
 {
   "family": "{{taskB}}",
   "memory": "{{256}}",

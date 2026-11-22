@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-panelconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BackgroundColor](#cfn-quicksight-dashboard-panelconfiguration-backgroundcolor)" : {{String}},
   "[BackgroundVisibility](#cfn-quicksight-dashboard-panelconfiguration-backgroundvisibility)" : {{String}},
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-panelconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BackgroundColor](#cfn-quicksight-dashboard-panelconfiguration-backgroundcolor): {{String}}
   [BackgroundVisibility](#cfn-quicksight-dashboard-panelconfiguration-backgroundvisibility): {{String}}
   [BorderColor](#cfn-quicksight-dashboard-panelconfiguration-bordercolor): {{String}}

@@ -37,7 +37,7 @@ aws s3control get-bucket-policy --account-id {{123456789012}} --bucket arn:aws:s
 
 The following SDK for Java example gets a policy for an Outposts bucket.
 
-```
+```Java
 import com.amazonaws.services.s3control.model.*;
 
 public void getBucketPolicy(String bucketArn) {

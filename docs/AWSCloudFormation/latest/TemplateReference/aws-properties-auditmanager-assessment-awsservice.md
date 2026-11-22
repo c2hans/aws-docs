@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-auditmanager-assessment-awsservice-syntax.json"></a>
 
-```
+```json
 {
   "[ServiceName](#cfn-auditmanager-assessment-awsservice-servicename)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-auditmanager-assessment-awsservice-syntax.yaml"></a>
 
-```
+```yaml
   [ServiceName](#cfn-auditmanager-assessment-awsservice-servicename): {{String}}
 ```
 

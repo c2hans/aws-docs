@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-location-map-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-location-map-tag-key)" : {{String}},
   "[Value](#cfn-location-map-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-location-map-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-location-map-tag-key): {{String}}
   [Value](#cfn-location-map-tag-value): {{String}}
 ```

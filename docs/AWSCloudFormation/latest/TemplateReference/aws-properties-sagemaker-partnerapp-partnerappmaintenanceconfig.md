@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-partnerapp-partnerappmaintenanceconfig-syntax.json"></a>
 
-```
+```json
 {
   "[MaintenanceWindowStart](#cfn-sagemaker-partnerapp-partnerappmaintenanceconfig-maintenancewindowstart)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-partnerapp-partnerappmaintenanceconfig-syntax.yaml"></a>
 
-```
+```yaml
   [MaintenanceWindowStart](#cfn-sagemaker-partnerapp-partnerappmaintenanceconfig-maintenancewindowstart): {{String}}
 ```
 

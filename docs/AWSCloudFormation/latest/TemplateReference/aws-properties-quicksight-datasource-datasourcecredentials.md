@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-datasource-datasourcecredentials-syntax.json"></a>
 
-```
+```json
 {
   "[CopySourceArn](#cfn-quicksight-datasource-datasourcecredentials-copysourcearn)" : {{String}},
   "[CredentialPair](#cfn-quicksight-datasource-datasourcecredentials-credentialpair)" : {{CredentialPair}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-datasource-datasourcecredentials-syntax.yaml"></a>
 
-```
+```yaml
   [CopySourceArn](#cfn-quicksight-datasource-datasourcecredentials-copysourcearn): {{String}}
   [CredentialPair](#cfn-quicksight-datasource-datasourcecredentials-credentialpair): {{
     CredentialPair}}

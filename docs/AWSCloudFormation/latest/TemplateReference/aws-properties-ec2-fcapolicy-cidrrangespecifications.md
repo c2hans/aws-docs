@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-fcapolicy-cidrrangespecifications-syntax.json"></a>
 
-```
+```json
 {
   "[Prefixes](#cfn-ec2-fcapolicy-cidrrangespecifications-prefixes)" : {{[ CidrMapping, ... ]}},
   "[PrefixesType](#cfn-ec2-fcapolicy-cidrrangespecifications-prefixestype)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-fcapolicy-cidrrangespecifications-syntax.yaml"></a>
 
-```
+```yaml
   [Prefixes](#cfn-ec2-fcapolicy-cidrrangespecifications-prefixes): {{
     - CidrMapping}}
   [PrefixesType](#cfn-ec2-fcapolicy-cidrrangespecifications-prefixestype): {{String}}

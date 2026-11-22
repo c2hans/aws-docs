@@ -44,7 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cloudtrail-trail-dataresource-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-cloudtrail-trail-dataresource-type)" : {{String}},
   "[Values](#cfn-cloudtrail-trail-dataresource-values)" : {{[ String, ... ]}}
@@ -54,7 +54,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cloudtrail-trail-dataresource-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-cloudtrail-trail-dataresource-type): {{String}}
   [Values](#cfn-cloudtrail-trail-dataresource-values): {{
     - String}}

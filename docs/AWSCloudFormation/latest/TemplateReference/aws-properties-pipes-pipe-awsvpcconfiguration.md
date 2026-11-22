@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pipes-pipe-awsvpcconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[AssignPublicIp](#cfn-pipes-pipe-awsvpcconfiguration-assignpublicip)" : {{String}},
   "[SecurityGroups](#cfn-pipes-pipe-awsvpcconfiguration-securitygroups)" : {{[ String, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pipes-pipe-awsvpcconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [AssignPublicIp](#cfn-pipes-pipe-awsvpcconfiguration-assignpublicip): {{String}}
   [SecurityGroups](#cfn-pipes-pipe-awsvpcconfiguration-securitygroups): {{
     - String}}

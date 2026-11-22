@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-observabilityadmin-organizationcentralizationrule-sourcemetricsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[MetricsSelectionCriteria](#cfn-observabilityadmin-organizationcentralizationrule-sourcemetricsconfiguration-metricsselectioncriteria)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-observabilityadmin-organizationcentralizationrule-sourcemetricsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [MetricsSelectionCriteria](#cfn-observabilityadmin-organizationcentralizationrule-sourcemetricsconfiguration-metricsselectioncriteria): {{String}}
 ```
 

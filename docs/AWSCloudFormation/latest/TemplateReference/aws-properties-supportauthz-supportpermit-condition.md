@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-supportauthz-supportpermit-condition-syntax.json"></a>
 
-```
+```json
 {
   "[AllowAfter](#cfn-supportauthz-supportpermit-condition-allowafter)" : {{String}},
   "[AllowBefore](#cfn-supportauthz-supportpermit-condition-allowbefore)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-supportauthz-supportpermit-condition-syntax.yaml"></a>
 
-```
+```yaml
   [AllowAfter](#cfn-supportauthz-supportpermit-condition-allowafter): {{String}}
   [AllowBefore](#cfn-supportauthz-supportpermit-condition-allowbefore): {{String}}
 ```

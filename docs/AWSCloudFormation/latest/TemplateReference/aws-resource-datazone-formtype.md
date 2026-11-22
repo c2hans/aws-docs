@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-datazone-formtype-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DataZone::FormType",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-datazone-formtype-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DataZone::FormType
 Properties:
   [Description](#cfn-datazone-formtype-description): {{String}}

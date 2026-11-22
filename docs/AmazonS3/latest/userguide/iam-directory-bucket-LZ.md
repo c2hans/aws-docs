@@ -45,7 +45,7 @@ The condition key `s3express:AllAccessRestrictedToLocalZoneGroup` doesn't suppor
 
 **Example – SCP policy**
 
-```
+```JSON
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -71,7 +71,7 @@ The condition key `s3express:AllAccessRestrictedToLocalZoneGroup` doesn't suppor
 **Example – IAM identity-based policy (attached to IAM role)**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": {
@@ -92,7 +92,7 @@ The condition key `s3express:AllAccessRestrictedToLocalZoneGroup` doesn't suppor
 **Example – VPC endpoint policy**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -117,7 +117,7 @@ The condition key `s3express:AllAccessRestrictedToLocalZoneGroup` doesn't suppor
 **Example – bucket policy**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-apigateway-requestvalidator-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::ApiGateway::RequestValidator",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-apigateway-requestvalidator-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::ApiGateway::RequestValidator
 Properties:
   [Name](#cfn-apigateway-requestvalidator-name): {{String}}
@@ -101,7 +101,7 @@ The following example creates an API Gateway API with an associated request vali
 #### JSON
 <a name="aws-resource-apigateway-requestvalidator--examples--Create_request_validator--json"></a>
 
-```
+```json
 {
     "Parameters": {
         "apiName": {
@@ -150,7 +150,7 @@ The following example creates an API Gateway API with an associated request vali
 #### YAML
 <a name="aws-resource-apigateway-requestvalidator--examples--Create_request_validator--yaml"></a>
 
-```
+```yaml
 Parameters:
   apiName:
     Type: String

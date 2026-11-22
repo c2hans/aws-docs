@@ -51,7 +51,7 @@ Misconfigured network settings or incorrect authentication credentials are commo
      Replace `subnet-id` with the ID of the subnet for your DB instance.
 
 1. Validate configuration details. Authentication errors can occur due to incorrect credentials or improper IAM configuration.
-   + **Reset the master password**. If the master password is incorrect or you forgot it, reset it using the following [moidfy-db-instance](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html) command:
+   + **Reset the master password**. If the master password is incorrect or you forgot it, reset it using the following [modify-db-instance](https://docs.aws.amazon.com/cli/latest/reference/rds/modify-db-instance.html) command:
 
      ```
      aws rds modify-db-instance \

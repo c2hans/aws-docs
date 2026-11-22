@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotfleetwise-campaign-s3config-syntax.json"></a>
 
-```
+```json
 {
   "[BucketArn](#cfn-iotfleetwise-campaign-s3config-bucketarn)" : {{String}},
   "[DataFormat](#cfn-iotfleetwise-campaign-s3config-dataformat)" : {{String}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotfleetwise-campaign-s3config-syntax.yaml"></a>
 
-```
+```yaml
   [BucketArn](#cfn-iotfleetwise-campaign-s3config-bucketarn): {{String}}
   [DataFormat](#cfn-iotfleetwise-campaign-s3config-dataformat): {{String}}
   [Prefix](#cfn-iotfleetwise-campaign-s3config-prefix): {{String}}

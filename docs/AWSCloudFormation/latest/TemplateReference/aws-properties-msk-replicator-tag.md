@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-msk-replicator-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-msk-replicator-tag-key)" : {{String}},
   "[Value](#cfn-msk-replicator-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-msk-replicator-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-msk-replicator-tag-key): {{String}}
   [Value](#cfn-msk-replicator-tag-value): {{String}}
 ```

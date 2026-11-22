@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-pivottableaggregatedfieldwells-syntax.json"></a>
 
-```
+```json
 {
   "[Columns](#cfn-quicksight-dashboard-pivottableaggregatedfieldwells-columns)" : {{[ DimensionField, ... ]}},
   "[Rows](#cfn-quicksight-dashboard-pivottableaggregatedfieldwells-rows)" : {{[ DimensionField, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-pivottableaggregatedfieldwells-syntax.yaml"></a>
 
-```
+```yaml
   [Columns](#cfn-quicksight-dashboard-pivottableaggregatedfieldwells-columns): {{
     - DimensionField}}
   [Rows](#cfn-quicksight-dashboard-pivottableaggregatedfieldwells-rows): {{

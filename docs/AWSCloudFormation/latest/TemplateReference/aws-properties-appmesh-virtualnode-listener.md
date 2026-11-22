@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appmesh-virtualnode-listener-syntax.json"></a>
 
-```
+```json
 {
   "[ConnectionPool](#cfn-appmesh-virtualnode-listener-connectionpool)" : {{VirtualNodeConnectionPool}},
   "[HealthCheck](#cfn-appmesh-virtualnode-listener-healthcheck)" : {{HealthCheck}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appmesh-virtualnode-listener-syntax.yaml"></a>
 
-```
+```yaml
   [ConnectionPool](#cfn-appmesh-virtualnode-listener-connectionpool): {{
     VirtualNodeConnectionPool}}
   [HealthCheck](#cfn-appmesh-virtualnode-listener-healthcheck): {{

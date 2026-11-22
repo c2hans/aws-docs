@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-pcs-cluster-scheduler-syntax.json"></a>
 
-```
+```json
 {
   "[Type](#cfn-pcs-cluster-scheduler-type)" : {{String}},
   "[Version](#cfn-pcs-cluster-scheduler-version)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-pcs-cluster-scheduler-syntax.yaml"></a>
 
-```
+```yaml
   [Type](#cfn-pcs-cluster-scheduler-type): {{String}}
   [Version](#cfn-pcs-cluster-scheduler-version): {{String}}
 ```

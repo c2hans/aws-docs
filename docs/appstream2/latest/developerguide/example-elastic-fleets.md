@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/example
 
 **Example `aws:SourceAccount` Conditional:**
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -32,7 +32,7 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/example
 **Example `aws:SourceArn` Conditional:**
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

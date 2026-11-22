@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesis-channel-cloudwatchlogsconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-kinesis-channel-cloudwatchlogsconfiguration-enabled)" : {{Boolean}},
   "[LogGroupName](#cfn-kinesis-channel-cloudwatchlogsconfiguration-loggroupname)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesis-channel-cloudwatchlogsconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-kinesis-channel-cloudwatchlogsconfiguration-enabled): {{Boolean}}
   [LogGroupName](#cfn-kinesis-channel-cloudwatchlogsconfiguration-loggroupname): {{String}}
   [LogStreamName](#cfn-kinesis-channel-cloudwatchlogsconfiguration-logstreamname): {{String}}

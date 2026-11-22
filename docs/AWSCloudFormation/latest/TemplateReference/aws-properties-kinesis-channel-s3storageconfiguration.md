@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kinesis-channel-s3storageconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[BucketARN](#cfn-kinesis-channel-s3storageconfiguration-bucketarn)" : {{String}},
   "[CompressionType](#cfn-kinesis-channel-s3storageconfiguration-compressiontype)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kinesis-channel-s3storageconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [BucketARN](#cfn-kinesis-channel-s3storageconfiguration-bucketarn): {{String}}
   [CompressionType](#cfn-kinesis-channel-s3storageconfiguration-compressiontype): {{String}}
   [ExpectedBucketOwner](#cfn-kinesis-channel-s3storageconfiguration-expectedbucketowner): {{String}}

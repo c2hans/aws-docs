@@ -18,7 +18,7 @@ If you are using bearer token authentication, complete the setup steps in [Setti
 ## Example request
 <a name="CWL_OTLP_Example"></a>
 
-```
+```bash
 curl -X POST "https://logs.<region>.amazonaws.com/v1/logs" \
   -H "Authorization: Bearer ACWL<token>" \
   -H "Content-Type: application/json" \
@@ -76,7 +76,7 @@ HTTP 200 OK
 
 **Partial success (some events rejected):**
 
-```
+```JSON
 {
   "partialSuccess": {
     "rejectedLogRecords": 5,

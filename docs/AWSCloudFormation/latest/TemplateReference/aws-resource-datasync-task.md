@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-datasync-task-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::DataSync::Task",
   "Properties" : {
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-datasync-task-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::DataSync::Task
 Properties:
   [CloudWatchLogGroupArn](#cfn-datasync-task-cloudwatchloggrouparn): {{String}}
@@ -205,7 +205,7 @@ The following examples create an Enhanced mode task. For more information, see [
 #### JSON
 <a name="aws-resource-datasync-task--examples--Creating_an_Enhanced_mode_task--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Creates a DataSync task that uses Enhanced mode",
@@ -232,7 +232,7 @@ The following examples create an Enhanced mode task. For more information, see [
 #### YAML
 <a name="aws-resource-datasync-task--examples--Creating_an_Enhanced_mode_task--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Creates a DataSync task that uses Enhanced mode
 Resources:
@@ -258,7 +258,7 @@ The following examples create a Basic mode task. For more information, see [Choo
 #### JSON
 <a name="aws-resource-datasync-task--examples--Creating_a_Basic_mode_task--json"></a>
 
-```
+```json
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Description": "Creates a DataSync task that uses Basic mode",
@@ -285,7 +285,7 @@ The following examples create a Basic mode task. For more information, see [Choo
 #### YAML
 <a name="aws-resource-datasync-task--examples--Creating_a_Basic_mode_task--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Creates a DataSync task that uses Basic mode
 Resources:

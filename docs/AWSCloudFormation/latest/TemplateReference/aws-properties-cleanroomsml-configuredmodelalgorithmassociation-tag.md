@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-cleanroomsml-configuredmodelalgorithmassociation-tag-key)" : {{String}},
   "[Value](#cfn-cleanroomsml-configuredmodelalgorithmassociation-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-cleanroomsml-configuredmodelalgorithmassociation-tag-key): {{String}}
   [Value](#cfn-cleanroomsml-configuredmodelalgorithmassociation-tag-value): {{String}}
 ```

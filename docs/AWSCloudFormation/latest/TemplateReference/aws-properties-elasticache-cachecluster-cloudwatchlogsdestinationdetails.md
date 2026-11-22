@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticache-cachecluster-cloudwatchlogsdestinationdetails-syntax.json"></a>
 
-```
+```json
 {
   "[LogGroup](#cfn-elasticache-cachecluster-cloudwatchlogsdestinationdetails-loggroup)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticache-cachecluster-cloudwatchlogsdestinationdetails-syntax.yaml"></a>
 
-```
+```yaml
   [LogGroup](#cfn-elasticache-cachecluster-cloudwatchlogsdestinationdetails-loggroup): {{String}}
 ```
 

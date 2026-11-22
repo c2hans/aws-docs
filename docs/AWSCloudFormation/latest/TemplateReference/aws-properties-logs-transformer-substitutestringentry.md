@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-logs-transformer-substitutestringentry-syntax.json"></a>
 
-```
+```json
 {
   "[From](#cfn-logs-transformer-substitutestringentry-from)" : {{String}},
   "[Source](#cfn-logs-transformer-substitutestringentry-source)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-logs-transformer-substitutestringentry-syntax.yaml"></a>
 
-```
+```yaml
   [From](#cfn-logs-transformer-substitutestringentry-from): {{String}}
   [Source](#cfn-logs-transformer-substitutestringentry-source): {{String}}
   [To](#cfn-logs-transformer-substitutestringentry-to): {{String}}

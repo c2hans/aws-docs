@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-medialive-node-sdisourcemapping-syntax.json"></a>
 
-```
+```json
 {
   "[CardNumber](#cfn-medialive-node-sdisourcemapping-cardnumber)" : {{Integer}},
   "[ChannelNumber](#cfn-medialive-node-sdisourcemapping-channelnumber)" : {{Integer}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-medialive-node-sdisourcemapping-syntax.yaml"></a>
 
-```
+```yaml
   [CardNumber](#cfn-medialive-node-sdisourcemapping-cardnumber): {{Integer}}
   [ChannelNumber](#cfn-medialive-node-sdisourcemapping-channelnumber): {{Integer}}
   [SdiSource](#cfn-medialive-node-sdisourcemapping-sdisource): {{String}}

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 
 The `05-Scan-Test.cs` program performs `Scan` operations on `TryDaxTable`.
 
-```
+```csharp
 using System;
 using System.Threading.Tasks;
 using Amazon.Runtime;

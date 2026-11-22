@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-batch-computeenvironment-managedinstanceslocalstorageconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[UseLocalStorage](#cfn-batch-computeenvironment-managedinstanceslocalstorageconfiguration-uselocalstorage)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-batch-computeenvironment-managedinstanceslocalstorageconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [UseLocalStorage](#cfn-batch-computeenvironment-managedinstanceslocalstorageconfiguration-uselocalstorage): {{Boolean}}
 ```
 

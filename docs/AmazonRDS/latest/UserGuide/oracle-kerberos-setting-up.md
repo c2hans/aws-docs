@@ -119,7 +119,7 @@ The following example shows how you can use the `aws:SourceArn` and `aws:SourceA
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -155,7 +155,7 @@ For opt-in Regions, you must also include a service principal for that Region in
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [
@@ -192,7 +192,7 @@ The role must also have the following IAM policy.
 
 ****
 
-```
+```json
 {
   "Version":"2012-10-17",
   "Statement": [

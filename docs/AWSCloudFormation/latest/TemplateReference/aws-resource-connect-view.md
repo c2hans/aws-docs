@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-connect-view-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Connect::View",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-connect-view-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Connect::View
 Properties:
   [Actions](#cfn-connect-view-actions): {{

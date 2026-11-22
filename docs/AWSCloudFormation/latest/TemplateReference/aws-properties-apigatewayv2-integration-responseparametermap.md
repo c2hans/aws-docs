@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-apigatewayv2-integration-responseparametermap-syntax.json"></a>
 
-```
+```json
 {
   "[ResponseParameters](#cfn-apigatewayv2-integration-responseparametermap-responseparameters)" : {{[ ResponseParameter, ... ]}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-apigatewayv2-integration-responseparametermap-syntax.yaml"></a>
 
-```
+```yaml
   [ResponseParameters](#cfn-apigatewayv2-integration-responseparametermap-responseparameters): {{
     - ResponseParameter}}
 ```

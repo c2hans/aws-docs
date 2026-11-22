@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-kendra-index-jsontokentypeconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[GroupAttributeField](#cfn-kendra-index-jsontokentypeconfiguration-groupattributefield)" : {{String}},
   "[UserNameAttributeField](#cfn-kendra-index-jsontokentypeconfiguration-usernameattributefield)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-kendra-index-jsontokentypeconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [GroupAttributeField](#cfn-kendra-index-jsontokentypeconfiguration-groupattributefield): {{String}}
   [UserNameAttributeField](#cfn-kendra-index-jsontokentypeconfiguration-usernameattributefield): {{String}}
 ```

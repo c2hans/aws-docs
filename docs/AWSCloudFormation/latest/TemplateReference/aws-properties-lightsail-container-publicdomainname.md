@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-lightsail-container-publicdomainname-syntax.json"></a>
 
-```
+```json
 {
   "[CertificateName](#cfn-lightsail-container-publicdomainname-certificatename)" : {{String}},
   "[DomainNames](#cfn-lightsail-container-publicdomainname-domainnames)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-lightsail-container-publicdomainname-syntax.yaml"></a>
 
-```
+```yaml
   [CertificateName](#cfn-lightsail-container-publicdomainname-certificatename): {{String}}
   [DomainNames](#cfn-lightsail-container-publicdomainname-domainnames): {{
     - String}}

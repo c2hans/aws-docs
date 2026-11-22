@@ -22,7 +22,7 @@ Batch operations in AWS AppSync have two key differences from non-batched operat
 
 To get started, let’s create a new GraphQL API. In the AWS AppSync console, choose **Create API**, **GraphQL APIs**, and **Design from scratch**. Name your API `BatchTutorial API`, choose **Next**, and on the **Specify GraphQL resources** step, choose **Create GraphQL resources later** and click **Next**. Review your details and create the API. Go to the **Schema** page and paste the following schema, noting that for the query, we’ll pass in a list of IDs:
 
-```
+```SDL
 type Post {
     id: ID!
     title: String
@@ -50,7 +50,7 @@ Save your schema and choose **Create Resources** at the top of the page. Choose 
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -83,7 +83,7 @@ Choose **Next**, then **Save changes**. Your policy should allow batch processin
 
 Back in the AWS AppSync console, go to the **Schema** page and select **Attach** next to the `Mutation.batchAdd` field. Create your resolver using the `Posts` table as the data source. In the code editor, replace the handlers with the snippet below. This snippet automatically takes each item in the GraphQL `input PostInput` type and builds a map, which is needed for the `BatchPutItem` operation:
 
-```
+```TypeScript
 import { util } from "@aws-appsync/utils";
 
 export function request(ctx) {
@@ -105,7 +105,7 @@ export function response(ctx) {
 
 Navigate to the **Queries** page of the AWS AppSync console and run the following `batchAdd` mutation:
 
-```
+```TypeScript
 mutation add {
     batchAdd(posts:[{
             id: 1 title: "Running in the Park"},{
@@ -121,7 +121,7 @@ You should see the results printed on the screen; this can be validated by revie
 
 Next, repeat the process of attaching a resolver but for the `Query.batchGet` field using the `Posts` table as the data source. Replace the handlers with the code below. This automatically takes each item in the GraphQL `ids:[]` type and builds a map that is needed for the `BatchGetItem` operation:
 
-```
+```TypeScript
 import { util } from "@aws-appsync/utils";
 
 export function request(ctx) {
@@ -146,7 +146,7 @@ export function response(ctx) {
 
 Now, go back to the **Queries** page of the AWS AppSync console and run the following `batchGet` query:
 
-```
+```TypeScript
 query get {
     batchGet(ids:[1,2,3]){
         id
@@ -159,7 +159,7 @@ This should return the results for the two `id` values that you added earlier. N
 
 Finally, attach one more resolver to the `Mutation.batchDelete` field using the `Posts` table as the data source. Replace the handlers with the code below. This automatically takes each item in the GraphQL `ids:[]` type and builds a map that is needed for the `BatchGetItem` operation:
 
-```
+```TypeScript
 import { util } from "@aws-appsync/utils";
 
 export function request(ctx) {
@@ -181,7 +181,7 @@ export function response(ctx) {
 
 Now, go back to the **Queries** page of the AWS AppSync console and run the following `batchDelete` mutation:
 
-```
+```TypeScript
 mutation delete {
     batchDelete(ids:[1,2]){ id }
 }
@@ -272,7 +272,7 @@ In the AWS AppSync console's **Schema** page, select **Attach** next to the `Mut
 
 After creating your resolver, replace the handlers with the following code in the editor. This `BatchPutItem` operation allows us to specify multiple tables:
 
-```
+```TypeScript
 import { util } from '@aws-appsync/utils'
 
 export function request(ctx) {
@@ -306,7 +306,7 @@ Save the resolver and navigate to the **Queries** page in the AWS AppSync consol
 
 Execute the following mutation:
 
-```
+```TypeScript
 mutation sendReadings {
   recordReadings(
     tempReadings: [
@@ -347,7 +347,7 @@ Similarly, we would also need to be able to delete batches of sensor readings. L
 
 After creating your resolver, replace the handlers in the code editor with the snippet below. In this resolver, we use a helper function mapper that extracts the `sensorId` and the `timestamp` from the provided inputs.
 
-```
+```TypeScript
 import { util } from '@aws-appsync/utils'
 
 export function request(ctx) {
@@ -375,7 +375,7 @@ Save the resolver and navigate to the **Queries** page in the AWS AppSync consol
 
 Execute the following mutation:
 
-```
+```TypeScript
 mutation deleteReadings {
   # Let's delete the first two readings we recorded
   deleteReadings(
@@ -408,7 +408,7 @@ Another common operation for our app would be to retrieve the readings for a sen
 
 Let’s use the following code:
 
-```
+```TypeScript
 import { util } from '@aws-appsync/utils'
 
 export function request(ctx) {
@@ -440,7 +440,7 @@ Save the resolver and navigate to the **Queries** page in the AWS AppSync consol
 
 Execute the following query:
 
-```
+```TypeScript
 query getReadingsForSensorAndTime {
   # Let's retrieve the very first two readings
   getReadings(sensorId: 1, timestamp: "2018-02-01T17:21:06.000+08:00") {
@@ -481,7 +481,7 @@ We will implement error handling using the `Query.getReadings` field configurati
 
 The following JSON represents the serialized context after the DynamoDB batch invocation but before the response handler was called:
 
-```
+```json
 {
   "arguments": {
     "sensorId": "1",
@@ -539,7 +539,7 @@ The code we write is familiar and only focuses on the result data.
 
 **Response handler**
 
-```
+```TypeScript
 export function response(ctx) {
   return ctx.result.data
 }
@@ -547,7 +547,7 @@ export function response(ctx) {
 
 **GraphQL response**
 
-```
+```json
 {
   "data": {
     "getReadings": [
@@ -576,7 +576,7 @@ When partial failures should be treated as complete failures from the client’s
 
 **Response handler code**
 
-```
+```TypeScript
 export function response(ctx) {
   if (ctx.error) {
     util.error(ctx.error.message, ctx.error.type, null, ctx.result.data.unprocessedKeys);
@@ -587,7 +587,7 @@ export function response(ctx) {
 
 **GraphQL response**
 
-```
+```json
 {
   "data": {
     "getReadings": null
@@ -629,7 +629,7 @@ In certain cases, to provide a better user experience, applications can return p
 
 **Response handler code**
 
-```
+```TypeScript
 export function response(ctx) {
   if (ctx.error) {
     util.appendError(ctx.error.message, ctx.error.type, null, ctx.result.data.unprocessedKeys);
@@ -642,7 +642,7 @@ We forwarded both the invocation error and `unprocessedKeys` element inside the 
 
 **GraphQL response**
 
-```
+```json
 {
   "data": {
     "getReadings": [

@@ -8,7 +8,7 @@ When you create an IAM policy that grants users permission to use Amazon ECS res
 
 For example, you can create a policy that allows users to delete a cluster, but denies the action if the cluster has the tag `environment=production`. To do this, you use the `aws:ResourceTag` condition key to allow or deny access to the resource based on the tags that are attached to the resource.
 
-```
+```json
 "StringEquals": { "aws:ResourceTag/environment": "production" }
 ```
 

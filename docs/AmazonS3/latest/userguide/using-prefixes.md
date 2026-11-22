@@ -39,7 +39,7 @@ The sample bucket has only the `sample.jpg` object at the root level. To list on
 
 **Example**
 
-```
+```xml
  1. <ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
  2.   <Name>{{amzn-s3-demo-bucket}}</Name>
  3.   <Prefix></Prefix>

@@ -78,7 +78,7 @@ After you create a response headers policy, you can attach it to a cache behavio
 
 To create a response headers policy with CloudFormation, use the `AWS::CloudFront::ResponseHeadersPolicy` resource type. The following example shows the CloudFormation template syntax, in YAML format, for creating a response headers policy.
 
-```
+```yaml
 Type: AWS::CloudFront::ResponseHeadersPolicy
 Properties:
   ResponseHeadersPolicyConfig:

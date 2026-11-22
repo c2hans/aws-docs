@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ses-emailidentity-mailfromattributes-syntax.json"></a>
 
-```
+```json
 {
   "[BehaviorOnMxFailure](#cfn-ses-emailidentity-mailfromattributes-behavioronmxfailure)" : {{String}},
   "[MailFromDomain](#cfn-ses-emailidentity-mailfromattributes-mailfromdomain)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ses-emailidentity-mailfromattributes-syntax.yaml"></a>
 
-```
+```yaml
   [BehaviorOnMxFailure](#cfn-ses-emailidentity-mailfromattributes-behavioronmxfailure): {{String}}
   [MailFromDomain](#cfn-ses-emailidentity-mailfromattributes-mailfromdomain): {{String}}
 ```

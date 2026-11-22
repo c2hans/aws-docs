@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-fms-policy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::FMS::Policy",
   "Properties" : {
@@ -59,7 +59,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-fms-policy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::FMS::Policy
 Properties:
   [DeleteAllPolicyResources](#cfn-fms-policy-deleteallpolicyresources): {{Boolean}}
@@ -347,7 +347,7 @@ The following shows an example Firewall Manager WAF policy for the latest versio
 #### YAML
 <a name="aws-resource-fms-policy--examples--Create_a_policy--yaml"></a>
 
-```
+```yaml
 PolicyWAFv2:
     Type: AWS::FMS::Policy
     Properties:
@@ -369,7 +369,7 @@ PolicyWAFv2:
 #### JSON
 <a name="aws-resource-fms-policy--examples--Create_a_policy--json"></a>
 
-```
+```json
 "PolicyWAFv2": {
     "Type": "AWS::FMS::Policy",
     "Properties": {
@@ -395,7 +395,7 @@ The following shows an example Firewall ManagerAWS WAF Classic policy.
 #### YAML
 <a name="aws-resource-fms-policy--examples--Create_a_Classic_policy--yaml"></a>
 
-```
+```yaml
 PolicyWAF:
     Type: AWS::FMS::Policy
     Properties:
@@ -419,7 +419,7 @@ PolicyWAF:
 #### JSON
 <a name="aws-resource-fms-policy--examples--Create_a_Classic_policy--json"></a>
 
-```
+```json
 "PolicyWAF": {
     "Type": "AWS::FMS::Policy",
     "Properties": {
@@ -445,7 +445,7 @@ The following shows an example Firewall Manager Shield Advanced policy. This exa
 #### YAML
 <a name="aws-resource-fms-policy--examples--Create_a_Firewall_Manager_Shield_Advanced_policy--yaml"></a>
 
-```
+```yaml
 Policy:
     Type: AWS::FMS::Policy
     Properties:
@@ -477,7 +477,7 @@ Policy:
 #### JSON
 <a name="aws-resource-fms-policy--examples--Create_a_Firewall_Manager_Shield_Advanced_policy--json"></a>
 
-```
+```json
 "Policy": {
     "Type": "AWS::FMS::Policy",
     "Properties": {
@@ -531,7 +531,7 @@ The following shows an example Firewall Manager common security group policy.
 #### YAML
 <a name="aws-resource-fms-policy--examples--Create_a_Firewall_Manager_common_security_group_policy--yaml"></a>
 
-```
+```yaml
 Policy:
     Type: AWS::FMS::Policy
     Properties:
@@ -549,7 +549,7 @@ Policy:
 #### JSON
 <a name="aws-resource-fms-policy--examples--Create_a_Firewall_Manager_common_security_group_policy--json"></a>
 
-```
+```json
 "Policy": {
     "Type": "AWS::FMS::Policy",
     "Properties": {
@@ -575,7 +575,7 @@ The following shows an example Firewall Manager usage audit security group polic
 #### YAML
 <a name="aws-resource-fms-policy--examples--Create_a_Firewall_Manager_content_audit_security_group_policy--yaml"></a>
 
-```
+```yaml
 PolicySGContentAudit:
     Type: AWS::FMS::Policy
     Properties:
@@ -595,7 +595,7 @@ PolicySGContentAudit:
 #### JSON
 <a name="aws-resource-fms-policy--examples--Create_a_Firewall_Manager_content_audit_security_group_policy--json"></a>
 
-```
+```json
 "PolicySGContentAudit": {
     "Type": "AWS::FMS::Policy",
     "Properties": {
@@ -621,7 +621,7 @@ The following shows an example Firewall Manager usage audit security group polic
 #### YAML
 <a name="aws-resource-fms-policy--examples--Create_a_Firewall_Manager_usage_audit_security_group_policy--yaml"></a>
 
-```
+```yaml
 PolicySGUsageAudit:
     Type: AWS::FMS::Policy
     Properties:
@@ -640,7 +640,7 @@ PolicySGUsageAudit:
 #### JSON
 <a name="aws-resource-fms-policy--examples--Create_a_Firewall_Manager_usage_audit_security_group_policy--json"></a>
 
-```
+```json
 "PolicySGUsageAudit": {
     "Type": "AWS::FMS::Policy",
     "Properties": {
@@ -666,7 +666,7 @@ The following shows an example Firewall Manager network ACL policy.
 #### YAML
 <a name="aws-resource-fms-policy--examples--Create_a_network_ACL_policy--yaml"></a>
 
-```
+```yaml
 PolicyNetworkAcl:
   Type: AWS::FMS::Policy
   Properties:
@@ -719,7 +719,7 @@ PolicyNetworkAcl:
 #### JSON
 <a name="aws-resource-fms-policy--examples--Create_a_network_ACL_policy--json"></a>
 
-```
+```json
 "PolicyNetworkAcl": {
     "Type": "AWS::FMS::Policy",
     "Properties": {
@@ -797,7 +797,7 @@ The following shows an example Firewall Manager Network Firewall policy.
 #### YAML
 <a name="aws-resource-fms-policy--examples--Create_a_Firewall_Manager_Network_Firewall_policy--yaml"></a>
 
-```
+```yaml
 PolicyNetworkFirewall:
     Type: AWS::FMS::Policy
     Properties:
@@ -854,7 +854,7 @@ PolicyNetworkFirewall:
 #### JSON
 <a name="aws-resource-fms-policy--examples--Create_a_Firewall_Manager_Network_Firewall_policy--json"></a>
 
-```
+```json
 "PolicyNetworkFirewall": {
     "Type": "AWS::FMS::Policy",
     "Properties": {
@@ -879,7 +879,7 @@ The following shows an example Firewall Manager DNS Firewall policy.
 #### YAML
 <a name="aws-resource-fms-policy--examples--Create_a_Firewall_Manager_DNS_Firewall_policy--yaml"></a>
 
-```
+```yaml
 Policy:
     Type: AWS::FMS::Policy
     Properties:
@@ -897,7 +897,7 @@ Policy:
 #### JSON
 <a name="aws-resource-fms-policy--examples--Create_a_Firewall_Manager_DNS_Firewall_policy--json"></a>
 
-```
+```json
 "Policy": {
     "Type": "AWS::FMS::Policy",
     "Properties": {

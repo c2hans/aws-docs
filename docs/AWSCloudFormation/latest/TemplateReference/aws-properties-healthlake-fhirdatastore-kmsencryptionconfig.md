@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-healthlake-fhirdatastore-kmsencryptionconfig-syntax.json"></a>
 
-```
+```json
 {
   "[CmkType](#cfn-healthlake-fhirdatastore-kmsencryptionconfig-cmktype)" : {{String}},
   "[KmsKeyId](#cfn-healthlake-fhirdatastore-kmsencryptionconfig-kmskeyid)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-healthlake-fhirdatastore-kmsencryptionconfig-syntax.yaml"></a>
 
-```
+```yaml
   [CmkType](#cfn-healthlake-fhirdatastore-kmsencryptionconfig-cmktype): {{String}}
   [KmsKeyId](#cfn-healthlake-fhirdatastore-kmsencryptionconfig-kmskeyid): {{String}}
 ```

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-efs-accesspoint-rootdirectory-syntax.json"></a>
 
-```
+```json
 {
   "[CreationInfo](#cfn-efs-accesspoint-rootdirectory-creationinfo)" : {{CreationInfo}},
   "[Path](#cfn-efs-accesspoint-rootdirectory-path)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-efs-accesspoint-rootdirectory-syntax.yaml"></a>
 
-```
+```yaml
   [CreationInfo](#cfn-efs-accesspoint-rootdirectory-creationinfo): {{
     CreationInfo}}
   [Path](#cfn-efs-accesspoint-rootdirectory-path): {{String}}

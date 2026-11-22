@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-systemsmanagersap-application-componentinfo-syntax.json"></a>
 
-```
+```json
 {
   "[ComponentType](#cfn-systemsmanagersap-application-componentinfo-componenttype)" : {{String}},
   "[Ec2InstanceId](#cfn-systemsmanagersap-application-componentinfo-ec2instanceid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-systemsmanagersap-application-componentinfo-syntax.yaml"></a>
 
-```
+```yaml
   [ComponentType](#cfn-systemsmanagersap-application-componentinfo-componenttype): {{String}}
   [Ec2InstanceId](#cfn-systemsmanagersap-application-componentinfo-ec2instanceid): {{String}}
   [Sid](#cfn-systemsmanagersap-application-componentinfo-sid): {{String}}

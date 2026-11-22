@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-dlm-lifecyclepolicy-retainrule-syntax.json"></a>
 
-```
+```json
 {
   "[Count](#cfn-dlm-lifecyclepolicy-retainrule-count)" : {{Integer}},
   "[Interval](#cfn-dlm-lifecyclepolicy-retainrule-interval)" : {{Integer}},
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-dlm-lifecyclepolicy-retainrule-syntax.yaml"></a>
 
-```
+```yaml
   [Count](#cfn-dlm-lifecyclepolicy-retainrule-count): {{Integer}}
   [Interval](#cfn-dlm-lifecyclepolicy-retainrule-interval): {{Integer}}
   [IntervalUnit](#cfn-dlm-lifecyclepolicy-retainrule-intervalunit): {{String}}

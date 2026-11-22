@@ -40,7 +40,7 @@ For more information, see [Amazon S3 Event Notifications](https://docs.aws.amazo
 **Tools for PowerShell V4**
 **Example 1: This example retrieves notification configuration of the given bucket**
 
-```
+```powershell
 Get-S3BucketNotification -BucketName amzn-s3-demo-bucket | select -ExpandProperty TopicConfigurations
 ```
 **Output:**
@@ -55,7 +55,7 @@ mimo arn:aws:sns:eu-west-1:123456789012:topic-1
 **Tools for PowerShell V5**
 **Example 1: This example retrieves notification configuration of the given bucket**
 
-```
+```powershell
 Get-S3BucketNotification -BucketName amzn-s3-demo-bucket | select -ExpandProperty TopicConfigurations
 ```
 **Output:**

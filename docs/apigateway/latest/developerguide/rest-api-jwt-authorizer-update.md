@@ -16,7 +16,7 @@ To change one part of the configuration, read the current configuration, edit it
 
 1. Send the whole file back as the value of a `replace` operation on the `/jwtConfiguration` path.
 
-   ```
+   ```shell
    aws apigateway update-authorizer \
        --rest-api-id {{api-id}} \
        --authorizer-id {{authorizer-id}} \

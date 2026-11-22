@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-securityhub-aggregatorv2-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SecurityHub::AggregatorV2",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-securityhub-aggregatorv2-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SecurityHub::AggregatorV2
 Properties:
   [LinkedRegions](#cfn-securityhub-aggregatorv2-linkedregions): {{

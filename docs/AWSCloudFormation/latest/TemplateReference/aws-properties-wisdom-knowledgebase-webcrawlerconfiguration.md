@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-wisdom-knowledgebase-webcrawlerconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CrawlerLimits](#cfn-wisdom-knowledgebase-webcrawlerconfiguration-crawlerlimits)" : {{CrawlerLimits}},
   "[ExclusionFilters](#cfn-wisdom-knowledgebase-webcrawlerconfiguration-exclusionfilters)" : {{[ String, ... ]}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-wisdom-knowledgebase-webcrawlerconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CrawlerLimits](#cfn-wisdom-knowledgebase-webcrawlerconfiguration-crawlerlimits): {{
     CrawlerLimits}}
   [ExclusionFilters](#cfn-wisdom-knowledgebase-webcrawlerconfiguration-exclusionfilters): {{

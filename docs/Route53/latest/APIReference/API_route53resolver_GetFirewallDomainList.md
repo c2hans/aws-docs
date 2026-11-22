@@ -69,7 +69,7 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 
  ** [FirewallThreatProtectionId](#API_route53resolver_GetFirewallDomainList_ResponseSyntax) **   <a name="Route53Resolver-route53resolver_GetFirewallDomainList-response-FirewallThreatProtectionId"></a>
-For an AutoAllowlist domain list, the threat protection ID of the auto-allowlist rule that owns this domain list. Provide it to [ListFirewallRuleDomains](API_route53resolver_ListFirewallRuleDomains.md) to review the observed, allowed, and denied domains. Present only when `ManagedListType` is `AUTOALLOWLIST`.
+For an AutoAllowlist domain list, the threat protection ID of the AutoAllowlist rule that owns this domain list. Provide it to [ListFirewallRuleDomains](API_route53resolver_ListFirewallRuleDomains.md) to review the observed, allowed, and denied domains. Present only when `ManagedListType` is `AUTOALLOWLIST`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 

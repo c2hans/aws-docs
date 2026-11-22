@@ -37,7 +37,7 @@ Use the instructions from the previous topic, but modify the `QBusinessConversat
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -58,7 +58,7 @@ Use the instructions from the previous topic, but modify the `QBusinessConversat
 
 When configuring access scopes for your Amazon Q Businessapplication environment, add the following using the AWS CLI to enable calling the `SearchRelevantContent` API:
 
-```
+```bash
     aws sso-admin put-application-access-scope \
     --application-arn identity-center-custom-application-arn \
     --scope "qbusiness:conversations:access"
@@ -70,7 +70,7 @@ When configuring access scopes for your Amazon Q Businessapplication environment
 
 The following AWS CLI example shows how to call this `SearchRelevantContent` API operation after you have these credentials.
 
-```
+```bash
     aws qbusiness search-relevant-content \
       --application-id ${qbusiness_application_id} \
       --query-text "What is Amazon Q?" \
@@ -89,7 +89,7 @@ Use the instructions in the previous topic, but modify the `trustpolicyforfedera
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [
@@ -108,7 +108,7 @@ Use the instructions in the previous topic, but modify the `trustpolicyforfedera
 
 The following AWS CLI; example shows how to call this `SearchRelevantContent` API operation after you have these credentials.
 
-```
+```bash
     aws qbusiness search-relevant-content \
       --application-id ${qbusiness_application_id} \
       --query-text "What is Amazon Q?" \

@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-appconfig-deployment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::AppConfig::Deployment",
   "Properties" : {
@@ -52,7 +52,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-appconfig-deployment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::AppConfig::Deployment
 Properties:
   [ApplicationId](#cfn-appconfig-deployment-applicationid): {{String}}
@@ -169,7 +169,7 @@ AWS AppConfig monitors the distribution to all hosts and reports status. If a di
 #### JSON
 <a name="aws-resource-appconfig-deployment--examples--deployment_example--json"></a>
 
-```
+```json
 Resources": {
     "BasicDeployment": {
       "Type": "AWS::AppConfig::Deployment",
@@ -201,7 +201,7 @@ Resources": {
 #### YAML
 <a name="aws-resource-appconfig-deployment--examples--deployment_example--yaml"></a>
 
-```
+```yaml
 Resources:
   BasicDeployment:
     Type: AWS::AppConfig::Deployment

@@ -47,7 +47,7 @@ To create a stack from this template, you must specify an existing VPC ID, subne
 ### JSON
 <a name="cloudformation-supplied-parameter-types-example.json"></a>
 
-```
+```json
 {
     "Parameters": {
         "VpcId": {
@@ -111,7 +111,7 @@ To create a stack from this template, you must specify an existing VPC ID, subne
 ### YAML
 <a name="cloudformation-supplied-parameter-types-example.yaml"></a>
 
-```
+```yaml
 Parameters:
   VpcId:
     Description: ID of an existing Virtual Private Cloud (VPC).

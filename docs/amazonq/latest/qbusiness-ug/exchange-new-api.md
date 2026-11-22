@@ -17,7 +17,7 @@ For an example of the API request, see [CreateDataSource](https://docs.aws.amazo
 
 The following shows the Microsoft Exchange new connector JSON schema:
 
-```
+```json
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
@@ -103,7 +103,7 @@ The following table provides information about important JSON keys to configure 
 
 The following is a sample configuration for the new Microsoft Exchange connector:
 
-```
+```json
 {
     "displayName": "mail-0910-sample",
     "configuration": {

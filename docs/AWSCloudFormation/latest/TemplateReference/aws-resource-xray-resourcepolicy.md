@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-xray-resourcepolicy-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::XRay::ResourcePolicy",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-xray-resourcepolicy-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::XRay::ResourcePolicy
 Properties:
   [BypassPolicyLockoutCheck](#cfn-xray-resourcepolicy-bypasspolicylockoutcheck): {{Boolean}}
@@ -85,7 +85,7 @@ This example creates a resource-based policy called MySnsActiveTracingPolicy, wh
 #### JSON
 <a name="aws-resource-xray-resourcepolicy--examples--Create_resource-based_policy--json"></a>
 
-```
+```json
 {
    "AWSTemplateFormatVersion": "2010-09-09",
    "Resources": {
@@ -130,7 +130,7 @@ This example creates a resource-based policy called MySnsActiveTracingPolicy, wh
 #### YAML
 <a name="aws-resource-xray-resourcepolicy--examples--Create_resource-based_policy--yaml"></a>
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
   MyResourcePolicy:

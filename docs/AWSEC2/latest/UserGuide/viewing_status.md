@@ -36,25 +36,25 @@ Use the [describe-instance-status](https://docs.aws.amazon.com/cli/latest/refere
 
 **Example**: Get the status of all running instances
 
-```
+```bash
 aws ec2 describe-instance-status
 ```
 
 **Example**: Get the status of all instances
 
-```
+```bash
 aws ec2 describe-instance-status --include-all-instances
 ```
 
 **Example**: Get the status of a single running instance
 
-```
+```bash
 aws ec2 describe-instance-status --instance-ids {{i-1234567890abcdef0}}
 ```
 
 **Example**: Get all instances with a status of `impaired`
 
-```
+```bash
 aws ec2 describe-instance-status \
 --filters Name=instance-status.status,Values=impaired
 ```
@@ -67,25 +67,25 @@ Use the [Get-EC2InstanceStatus](https://docs.aws.amazon.com/powershell/latest/re
 
 **Example**: Get the status of all running instances
 
-```
+```powershell
 Get-EC2InstanceStatus
 ```
 
 **Example**: Get the status of all instances
 
-```
+```powershell
 Get-EC2InstanceStatus -IncludeAllInstance $true
 ```
 
 **Example**: Get the status of a single running instance
 
-```
+```powershell
 Get-EC2InstanceStatus -InstanceId {{i-1234567890abcdef0}}
 ```
 
 **Example**: Get all instances with a status of `impaired`
 
-```
+```powershell
 Get-EC2InstanceStatus \
 -Filter @{Name="instance-status.status"; Values="impaired"}
 ```

@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-cloudfront-publickey-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::CloudFront::PublicKey",
   "Properties" : {
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-cloudfront-publickey-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::CloudFront::PublicKey
 Properties:
   [PublicKeyConfig](#cfn-cloudfront-publickey-publickeyconfig): {{

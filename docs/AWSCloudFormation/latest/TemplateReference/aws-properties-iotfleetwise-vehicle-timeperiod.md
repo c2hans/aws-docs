@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotfleetwise-vehicle-timeperiod-syntax.json"></a>
 
-```
+```json
 {
   "[Unit](#cfn-iotfleetwise-vehicle-timeperiod-unit)" : {{String}},
   "[Value](#cfn-iotfleetwise-vehicle-timeperiod-value)" : {{Number}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotfleetwise-vehicle-timeperiod-syntax.yaml"></a>
 
-```
+```yaml
   [Unit](#cfn-iotfleetwise-vehicle-timeperiod-unit): {{String}}
   [Value](#cfn-iotfleetwise-vehicle-timeperiod-value): {{Number}}
 ```

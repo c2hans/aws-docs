@@ -10,7 +10,7 @@ Stream resources do not inherit tags from their parent table, and you can manage
 
 You can use the [aws:ResourceTag](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag) condition key to allow or deny access to a stream based on the tags that are attached to that stream. For example, the following policy allows the `GetRecords` action on any stream that includes the tag key `environment` with the value `production`.
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [

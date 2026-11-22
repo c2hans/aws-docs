@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-ec2-clientvpnendpoint-deviceposturetrustprovider-syntax.json"></a>
 
-```
+```json
 {
   "[PublicSigningKeyUrl](#cfn-ec2-clientvpnendpoint-deviceposturetrustprovider-publicsigningkeyurl)" : {{String}},
   "[TenantId](#cfn-ec2-clientvpnendpoint-deviceposturetrustprovider-tenantid)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-ec2-clientvpnendpoint-deviceposturetrustprovider-syntax.yaml"></a>
 
-```
+```yaml
   [PublicSigningKeyUrl](#cfn-ec2-clientvpnendpoint-deviceposturetrustprovider-publicsigningkeyurl): {{String}}
   [TenantId](#cfn-ec2-clientvpnendpoint-deviceposturetrustprovider-tenantid): {{String}}
   [TrustProviderType](#cfn-ec2-clientvpnendpoint-deviceposturetrustprovider-trustprovidertype): {{String}}

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datazone-connection-redshiftlineagesyncconfigurationinput-syntax.json"></a>
 
-```
+```json
 {
   "[Enabled](#cfn-datazone-connection-redshiftlineagesyncconfigurationinput-enabled)" : {{Boolean}},
   "[Schedule](#cfn-datazone-connection-redshiftlineagesyncconfigurationinput-schedule)" : {{LineageSyncSchedule}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datazone-connection-redshiftlineagesyncconfigurationinput-syntax.yaml"></a>
 
-```
+```yaml
   [Enabled](#cfn-datazone-connection-redshiftlineagesyncconfigurationinput-enabled): {{Boolean}}
   [Schedule](#cfn-datazone-connection-redshiftlineagesyncconfigurationinput-schedule): {{
     LineageSyncSchedule}}

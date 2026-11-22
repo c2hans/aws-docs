@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ec2-route-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::EC2::Route",
   "Properties" : {
@@ -47,7 +47,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ec2-route-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::EC2::Route
 Properties:
   [CarrierGatewayId](#cfn-ec2-route-carriergatewayid): {{String}}
@@ -206,7 +206,7 @@ The following example adds a route that is added to an internet gateway.
 #### JSON
 <a name="aws-resource-ec2-route--examples--Create_a_route_to_a_gateway--json"></a>
 
-```
+```json
 "myRoute" : {
    "Type" : "AWS::EC2::Route",
    "DependsOn" : "GatewayToInternet",
@@ -221,7 +221,7 @@ The following example adds a route that is added to an internet gateway.
 #### YAML
 <a name="aws-resource-ec2-route--examples--Create_a_route_to_a_gateway--yaml"></a>
 
-```
+```yaml
   myRoute:
     Type: AWS::EC2::Route
     DependsOn: GatewayToInternet
@@ -241,7 +241,7 @@ The following example creates a route to a carrier gateway.
 #### JSON
 <a name="aws-resource-ec2-route--examples--Create_a_route_to_a_carrier_gateway--json"></a>
 
-```
+```json
 "myCarrierRoute" : {
    "Type" : "AWS::EC2::Route",
    "DependsOn" : "GatewayToInternetAndCarrierNetwork",
@@ -256,7 +256,7 @@ The following example creates a route to a carrier gateway.
 #### YAML
 <a name="aws-resource-ec2-route--examples--Create_a_route_to_a_carrier_gateway--yaml"></a>
 
-```
+```yaml
  myCarrierRoute:
     Type: AWS::EC2::Route
     DependsOn: GatewayToInternetAndCarrierNetwork

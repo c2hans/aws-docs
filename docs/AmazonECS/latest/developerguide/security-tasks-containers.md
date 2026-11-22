@@ -17,7 +17,7 @@ Alternatively, you can use **distroless** images that only include your applicat
 
 Docker has a mechanism for creating images from a reserved, minimal image known as **scratch**. For more information, see [Creating a simple parent image using **scratch**](https://docs.docker.com/develop/develop-images/baseimages/#create-a-simple-parent-image-using-scratch) in the Docker documentation. With languages like Go, you can create a static linked binary and reference it in your Dockerfile. The following example shows how you can accomplish this.
 
-```
+```dockerfile
 ############################
 # STEP 1 build executable binary
 ############################

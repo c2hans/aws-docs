@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-workspacesweb-dataprotectionsettings-inlineredactionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[GlobalConfidenceLevel](#cfn-workspacesweb-dataprotectionsettings-inlineredactionconfiguration-globalconfidencelevel)" : {{Number}},
   "[GlobalEnforcedUrls](#cfn-workspacesweb-dataprotectionsettings-inlineredactionconfiguration-globalenforcedurls)" : {{[ String, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-workspacesweb-dataprotectionsettings-inlineredactionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [GlobalConfidenceLevel](#cfn-workspacesweb-dataprotectionsettings-inlineredactionconfiguration-globalconfidencelevel): {{Number}}
   [GlobalEnforcedUrls](#cfn-workspacesweb-dataprotectionsettings-inlineredactionconfiguration-globalenforcedurls): {{
     - String}}

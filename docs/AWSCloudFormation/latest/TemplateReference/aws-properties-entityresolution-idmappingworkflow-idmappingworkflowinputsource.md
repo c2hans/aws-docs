@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-entityresolution-idmappingworkflow-idmappingworkflowinputsource-syntax.json"></a>
 
-```
+```json
 {
   "[InputSourceARN](#cfn-entityresolution-idmappingworkflow-idmappingworkflowinputsource-inputsourcearn)" : {{String}},
   "[SchemaArn](#cfn-entityresolution-idmappingworkflow-idmappingworkflowinputsource-schemaarn)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-entityresolution-idmappingworkflow-idmappingworkflowinputsource-syntax.yaml"></a>
 
-```
+```yaml
   [InputSourceARN](#cfn-entityresolution-idmappingworkflow-idmappingworkflowinputsource-inputsourcearn): {{String}}
   [SchemaArn](#cfn-entityresolution-idmappingworkflow-idmappingworkflowinputsource-schemaarn): {{String}}
   [Type](#cfn-entityresolution-idmappingworkflow-idmappingworkflowinputsource-type): {{String}}

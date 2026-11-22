@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-datasync-task-options-syntax.json"></a>
 
-```
+```json
 {
   "[Atime](#cfn-datasync-task-options-atime)" : {{String}},
   "[BytesPerSecond](#cfn-datasync-task-options-bytespersecond)" : {{Integer}},
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-datasync-task-options-syntax.yaml"></a>
 
-```
+```yaml
   [Atime](#cfn-datasync-task-options-atime): {{String}}
   [BytesPerSecond](#cfn-datasync-task-options-bytespersecond): {{Integer}}
   [Gid](#cfn-datasync-task-options-gid): {{String}}

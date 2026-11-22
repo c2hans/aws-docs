@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-voiceid-domain-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::VoiceID::Domain",
   "Properties" : {
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-voiceid-domain-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::VoiceID::Domain
 Properties:
   [Description](#cfn-voiceid-domain-description): {{String}}

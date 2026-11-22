@@ -69,7 +69,7 @@ The following example shows how to use the AWS SDK for .NET to manage website co
 
 The following C\# code example adds a website configuration to the specified bucket. The configuration specifies both the index document and the error document names. For information about setting up and running the code examples, see [Getting Started with the AWS SDK for .NET](https://docs.aws.amazon.com/sdk-for-net/latest/developer-guide/net-dg-setup.html) in the *AWS SDK for .NET Developer Guide*.
 
-```
+```cs
 using Amazon;
 using Amazon.S3;
 using Amazon.S3.Model;
@@ -139,7 +139,7 @@ The following PHP example adds a website configuration to the specified bucket. 
 
 For more information about the AWS SDK for Ruby API, go to [AWS SDK for Ruby - Version 2](https://docs.aws.amazon.com/sdkforruby/api/index.html).
 
-```
+```PHP
  require 'vendor/autoload.php';
 
 use Aws\S3\S3Client;

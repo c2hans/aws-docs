@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-opensearchserverless-collection-encryptionconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AWSOwnedKey](#cfn-opensearchserverless-collection-encryptionconfig-awsownedkey)" : {{Boolean}},
   "[KmsKeyArn](#cfn-opensearchserverless-collection-encryptionconfig-kmskeyarn)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-opensearchserverless-collection-encryptionconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AWSOwnedKey](#cfn-opensearchserverless-collection-encryptionconfig-awsownedkey): {{Boolean}}
   [KmsKeyArn](#cfn-opensearchserverless-collection-encryptionconfig-kmskeyarn): {{String}}
 ```

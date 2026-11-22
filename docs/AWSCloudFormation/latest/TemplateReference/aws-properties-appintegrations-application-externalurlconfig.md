@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appintegrations-application-externalurlconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AccessUrl](#cfn-appintegrations-application-externalurlconfig-accessurl)" : {{String}},
   "[ApprovedOrigins](#cfn-appintegrations-application-externalurlconfig-approvedorigins)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appintegrations-application-externalurlconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AccessUrl](#cfn-appintegrations-application-externalurlconfig-accessurl): {{String}}
   [ApprovedOrigins](#cfn-appintegrations-application-externalurlconfig-approvedorigins): {{
     - String}}

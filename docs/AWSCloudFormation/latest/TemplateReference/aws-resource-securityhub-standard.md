@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-securityhub-standard-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SecurityHub::Standard",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-securityhub-standard-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SecurityHub::Standard
 Properties:
   [DisabledStandardsControls](#cfn-securityhub-standard-disabledstandardscontrols): {{
@@ -100,7 +100,7 @@ The following example enables the AWS Foundational Security Best Practices (FSBP
 #### JSON
 <a name="aws-resource-securityhub-standard--examples--Enabling_a_standard_with_all_controls_enabled--json"></a>
 
-```
+```json
 {
     "Description": "Example template to enable a standard",
     "Resources": {
@@ -126,7 +126,7 @@ The following example enables the AWS Foundational Security Best Practices (FSBP
 #### YAML
 <a name="aws-resource-securityhub-standard--examples--Enabling_a_standard_with_all_controls_enabled--yaml"></a>
 
-```
+```yaml
 Description: Example template to enable a standard
 Resources:
   ExampleStandard:
@@ -146,7 +146,7 @@ The following example enables the FSBP standard. The controls specified in the e
 #### JSON
 <a name="aws-resource-securityhub-standard--examples--Enabling_a_standard_with_some_controls_disabled--json"></a>
 
-```
+```json
 {
     "Description": "Example template to enable a standard",
     "Resources": {
@@ -186,7 +186,7 @@ The following example enables the FSBP standard. The controls specified in the e
 #### YAML
 <a name="aws-resource-securityhub-standard--examples--Enabling_a_standard_with_some_controls_disabled--yaml"></a>
 
-```
+```yaml
 Description: Example template to enable a standard
 Resources:
   ExampleStandardWithDisabledControls:

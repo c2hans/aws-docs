@@ -36,7 +36,7 @@ To associate a Profile to a VPC, use the [associate-profile](https://docs.aws.am
 
 The following is an example output after you run the command:
 
-```
+```json
 {
     "ProfileAssociation": {
         "CreationTime": 1709338817.148,

@@ -17,7 +17,7 @@ To create a predictive scaling policy with custom load and scaling metrics with 
 
 You start adding custom metrics by replacing the replaceable values in the following example with those of your metrics and your target utilization.
 
-```
+```json
 {
   "MetricSpecifications": [
     {
@@ -84,7 +84,7 @@ aws autoscaling put-scaling-policy --policy-name {{my-predictive-scaling-policy}
 
 If successful, this command returns the policy's Amazon Resource Name (ARN).
 
-```
+```json
 {
   "PolicyARN": "arn:aws:autoscaling:region:account-id:scalingPolicy:2f4f5048-d8a8-4d14-b13a-d1905620f345:autoScalingGroupName/my-asg:policyName/my-predictive-scaling-policy",
   "Alarms": []

@@ -28,12 +28,12 @@ For more information, see [Suspending and resuming scaling processes](https://do
 **Tools for PowerShell V4**
 **Example 1: This example suspends the specified Auto Scaling process for the specified Auto Scaling group.**
 
-```
+```powershell
 Suspend-ASProcess -AutoScalingGroupName my-asg -ScalingProcess "AlarmNotification"
 ```
 **Example 2: This example suspends all Auto Scaling processes for the specified Auto Scaling group.**
 
-```
+```powershell
 Suspend-ASProcess -AutoScalingGroupName my-asg
 ```
 +  For API details, see [SuspendProcesses](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
@@ -41,12 +41,12 @@ Suspend-ASProcess -AutoScalingGroupName my-asg
 **Tools for PowerShell V5**
 **Example 1: This example suspends the specified Auto Scaling process for the specified Auto Scaling group.**
 
-```
+```powershell
 Suspend-ASProcess -AutoScalingGroupName my-asg -ScalingProcess "AlarmNotification"
 ```
 **Example 2: This example suspends all Auto Scaling processes for the specified Auto Scaling group.**
 
-```
+```powershell
 Suspend-ASProcess -AutoScalingGroupName my-asg
 ```
 +  For API details, see [SuspendProcesses](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.

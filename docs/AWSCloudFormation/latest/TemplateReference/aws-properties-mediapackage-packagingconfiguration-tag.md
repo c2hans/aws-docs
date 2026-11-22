@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediapackage-packagingconfiguration-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-mediapackage-packagingconfiguration-tag-key)" : {{String}},
   "[Value](#cfn-mediapackage-packagingconfiguration-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediapackage-packagingconfiguration-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-mediapackage-packagingconfiguration-tag-key): {{String}}
   [Value](#cfn-mediapackage-packagingconfiguration-tag-value): {{String}}
 ```

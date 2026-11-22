@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/notebooks-spark-table-f
 
 To use Delta Lake tables in Athena for Spark, configure the following Spark properties. These properties are configured for you by default in the Athena for Spark console when you choose Delta Lake as the table format. For steps, see [Step 4: Edit session details](notebooks-spark-getting-started.md#notebooks-spark-getting-started-editing-session-details) or [Step 7: Create your own notebook](notebooks-spark-getting-started.md#notebooks-spark-getting-started-creating-your-own-notebook).
 
-```
+```py
 "spark.sql.catalog.spark_catalog" : "org.apache.spark.sql.delta.catalog.DeltaCatalog",
 "spark.sql.extensions" : "io.delta.sql.DeltaSparkSessionExtension"
 ```
@@ -19,7 +19,7 @@ The following procedure shows you how to use a Delta Lake table in an Athena for
 
 1. Define the constants to use in the notebook.
 
-   ```
+   ```py
    DB_NAME = "{{NEW_DB_NAME}}"
    TABLE_NAME = "{{NEW_TABLE_NAME}}"
    TABLE_S3_LOCATION = "s3://amzn-s3-demo-bucket"
@@ -27,7 +27,7 @@ The following procedure shows you how to use a Delta Lake table in an Athena for
 
 1. Create an Apache Spark [DataFrame](https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/dataframe.html).
 
-   ```
+   ```py
    columns = ["language","users_count"]
    data = [("Golang", 3000)]
    df = spark.createDataFrame(data, columns)
@@ -35,13 +35,13 @@ The following procedure shows you how to use a Delta Lake table in an Athena for
 
 1. Create a database.
 
-   ```
+   ```py
    spark.sql("CREATE DATABASE {} LOCATION '{}'".format({{DB_NAME}}, {{TABLE_S3_LOCATION}}))
    ```
 
 1. Create an empty Delta Lake table.
 
-   ```
+   ```py
    spark.sql("""
    CREATE TABLE {}.{} (
      language string,
@@ -52,12 +52,12 @@ The following procedure shows you how to use a Delta Lake table in an Athena for
 
 1. Insert a row of data into the table.
 
-   ```
+   ```py
    spark.sql("""INSERT INTO {}.{} VALUES ('Golang', 3000)""".format({{DB_NAME}}, {{TABLE_NAME}}))
    ```
 
 1. Confirm that you can query the new table.
 
-   ```
+   ```py
    spark.sql("SELECT * FROM {}.{}".format({{DB_NAME, TABLE_NAME}})).show()
    ```

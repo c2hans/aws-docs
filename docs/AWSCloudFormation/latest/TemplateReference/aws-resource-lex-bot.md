@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-lex-bot-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Lex::Bot",
   "Properties" : {
@@ -47,7 +47,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-lex-bot-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Lex::Bot
 Properties:
   [AutoBuildBotLocales](#cfn-lex-bot-autobuildbotlocales): {{Boolean}}
@@ -218,7 +218,7 @@ The example creates a bot to order flowers. It is the same as the example bot th
 #### YAML
 <a name="aws-resource-lex-bot--examples--Order_flowers_example_bot--yaml"></a>
 
-```
+```yaml
 # The OrderFlower bot consists of the following:
 # 1. IAM role that is used by the bot at runtime
 # 2. Inline Bot
@@ -386,7 +386,7 @@ The example creates a bot to book hotel rooms and rental cars. It is the same as
 #### YAML
 <a name="aws-resource-lex-bot--examples--Book_trip_example_bot--yaml"></a>
 
-```
+```yaml
 # The BookTrip bot consists of the following:
 # 1. IAM role that is used by the bot at runtime
 # 2. Inline Bot

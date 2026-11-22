@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-playbackconfiguration-beaconingconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[ClientSide](#cfn-mediatailor-playbackconfiguration-beaconingconfiguration-clientside)" : {{ClientSideBeaconingConfiguration}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-playbackconfiguration-beaconingconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [ClientSide](#cfn-mediatailor-playbackconfiguration-beaconingconfiguration-clientside): {{
     ClientSideBeaconingConfiguration}}
 ```

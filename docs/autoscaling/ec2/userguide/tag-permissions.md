@@ -13,7 +13,7 @@ The following example IAM policy gives the principal permission to remove only t
 
 ****
 
-```
+```json
 {
     "Version":"2012-10-17",
     "Statement": [

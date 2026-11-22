@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-dataautomationproject-audioextractioncategory-syntax.json"></a>
 
-```
+```json
 {
   "[State](#cfn-bedrock-dataautomationproject-audioextractioncategory-state)" : {{String}},
   "[TypeConfiguration](#cfn-bedrock-dataautomationproject-audioextractioncategory-typeconfiguration)" : {{AudioExtractionCategoryTypeConfiguration}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-dataautomationproject-audioextractioncategory-syntax.yaml"></a>
 
-```
+```yaml
   [State](#cfn-bedrock-dataautomationproject-audioextractioncategory-state): {{String}}
   [TypeConfiguration](#cfn-bedrock-dataautomationproject-audioextractioncategory-typeconfiguration): {{
     AudioExtractionCategoryTypeConfiguration}}

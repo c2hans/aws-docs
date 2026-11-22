@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-imagebuilder-distributionconfiguration-launchpermissionconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[OrganizationalUnitArns](#cfn-imagebuilder-distributionconfiguration-launchpermissionconfiguration-organizationalunitarns)" : {{[ String, ... ]}},
   "[OrganizationArns](#cfn-imagebuilder-distributionconfiguration-launchpermissionconfiguration-organizationarns)" : {{[ String, ... ]}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-imagebuilder-distributionconfiguration-launchpermissionconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [OrganizationalUnitArns](#cfn-imagebuilder-distributionconfiguration-launchpermissionconfiguration-organizationalunitarns): {{
     - String}}
   [OrganizationArns](#cfn-imagebuilder-distributionconfiguration-launchpermissionconfiguration-organizationarns): {{

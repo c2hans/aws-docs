@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrockagentcore-runtime-code-syntax.json"></a>
 
-```
+```json
 {
   "[S3](#cfn-bedrockagentcore-runtime-code-s3)" : {{S3Location}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrockagentcore-runtime-code-syntax.yaml"></a>
 
-```
+```yaml
   [S3](#cfn-bedrockagentcore-runtime-code-s3): {{
     S3Location}}
 ```

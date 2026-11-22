@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-modelcard-intendeduses-syntax.json"></a>
 
-```
+```json
 {
   "[ExplanationsForRiskRating](#cfn-sagemaker-modelcard-intendeduses-explanationsforriskrating)" : {{String}},
   "[FactorsAffectingModelEfficiency](#cfn-sagemaker-modelcard-intendeduses-factorsaffectingmodelefficiency)" : {{String}},
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-modelcard-intendeduses-syntax.yaml"></a>
 
-```
+```yaml
   [ExplanationsForRiskRating](#cfn-sagemaker-modelcard-intendeduses-explanationsforriskrating): {{String}}
   [FactorsAffectingModelEfficiency](#cfn-sagemaker-modelcard-intendeduses-factorsaffectingmodelefficiency): {{String}}
   [IntendedUses](#cfn-sagemaker-modelcard-intendeduses-intendeduses): {{String}}

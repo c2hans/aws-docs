@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-datasource-athenaparameters-syntax.json"></a>
 
-```
+```json
 {
   "[ConsumerAccountRoleArn](#cfn-quicksight-datasource-athenaparameters-consumeraccountrolearn)" : {{String}},
   "[IdentityCenterConfiguration](#cfn-quicksight-datasource-athenaparameters-identitycenterconfiguration)" : {{IdentityCenterConfiguration}},
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-datasource-athenaparameters-syntax.yaml"></a>
 
-```
+```yaml
   [ConsumerAccountRoleArn](#cfn-quicksight-datasource-athenaparameters-consumeraccountrolearn): {{String}}
   [IdentityCenterConfiguration](#cfn-quicksight-datasource-athenaparameters-identitycenterconfiguration): {{
     IdentityCenterConfiguration}}

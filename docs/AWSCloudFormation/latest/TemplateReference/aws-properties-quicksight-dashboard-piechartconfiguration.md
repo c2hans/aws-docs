@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-dashboard-piechartconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CategoryLabelOptions](#cfn-quicksight-dashboard-piechartconfiguration-categorylabeloptions)" : {{ChartAxisLabelOptions}},
   "[ContributionAnalysisDefaults](#cfn-quicksight-dashboard-piechartconfiguration-contributionanalysisdefaults)" : {{[ ContributionAnalysisDefault, ... ]}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-dashboard-piechartconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CategoryLabelOptions](#cfn-quicksight-dashboard-piechartconfiguration-categorylabeloptions): {{
     ChartAxisLabelOptions}}
   [ContributionAnalysisDefaults](#cfn-quicksight-dashboard-piechartconfiguration-contributionanalysisdefaults): {{

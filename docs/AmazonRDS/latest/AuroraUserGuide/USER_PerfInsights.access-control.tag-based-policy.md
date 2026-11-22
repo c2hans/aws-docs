@@ -24,7 +24,7 @@ To control access to Database Insights operations, use the `aws:ResourceTag` con
 **Example**
 This policy prevents access to Database Insights metrics for production databases. The policy denies the `pi:GetResourceMetrics` operation in Database Insights for any database resource tagged with `env:prod`.
 
-```
+```json
  {
     "Version": "2012-10-17",
     "Statement": [

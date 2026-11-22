@@ -19,7 +19,7 @@ Currently, Capacity Reservation Fleets support the `open` instance matching crit
 **To create a Capacity Reservation Fleet**
 Use the [create-capacity-reservation-fleet](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-capacity-reservation-fleet.html) command.
 
-```
+```bash
 aws ec2 create-capacity-reservation-fleet \
     --total-target-capacity {{24}} \
     --allocation-strategy prioritized \
@@ -31,7 +31,7 @@ aws ec2 create-capacity-reservation-fleet \
 
 The following are the contents of `instanceTypeSpecification.json`.
 
-```
+```json
 [
   {
     "InstanceType": "{{m5.xlarge}}",
@@ -46,7 +46,7 @@ The following are the contents of `instanceTypeSpecification.json`.
 
 The following is example output.
 
-```
+```json
 {
     "Status": "submitted",
     "TotalFulfilledCapacity": 0.0,
@@ -61,7 +61,7 @@ The following is example output.
 **To create a Capacity Reservation Fleet**
 Use the [New-EC2CapacityReservationFleet](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2CapacityReservationFleet.html) cmdlet.
 
-```
+```powershell
 New-EC2CapacityReservationFleet `
     -TotalTargetCapacity {{24}} `
     -AllocationStrategy "prioritized" `
@@ -73,7 +73,7 @@ New-EC2CapacityReservationFleet `
 
 The specification is defined as follows.
 
-```
+```powershell
 $specification = New-Object Amazon.EC2.Model.ReservationFleetInstanceSpecification
 $specification.InstanceType = "{{m5.xlarge}}"
 $specification.InstancePlatform = "{{Linux/UNIX}}"

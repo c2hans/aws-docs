@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-datasource-salesforcedatasourceconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[CrawlerConfiguration](#cfn-bedrock-datasource-salesforcedatasourceconfiguration-crawlerconfiguration)" : {{SalesforceCrawlerConfiguration}},
   "[SourceConfiguration](#cfn-bedrock-datasource-salesforcedatasourceconfiguration-sourceconfiguration)" : {{SalesforceSourceConfiguration}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-datasource-salesforcedatasourceconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [CrawlerConfiguration](#cfn-bedrock-datasource-salesforcedatasourceconfiguration-crawlerconfiguration): {{
     SalesforceCrawlerConfiguration}}
   [SourceConfiguration](#cfn-bedrock-datasource-salesforcedatasourceconfiguration-sourceconfiguration): {{

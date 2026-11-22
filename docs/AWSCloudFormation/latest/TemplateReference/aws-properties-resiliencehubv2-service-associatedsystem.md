@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-resiliencehubv2-service-associatedsystem-syntax.json"></a>
 
-```
+```json
 {
   "[SystemArn](#cfn-resiliencehubv2-service-associatedsystem-systemarn)" : {{String}},
   "[UserJourneyIds](#cfn-resiliencehubv2-service-associatedsystem-userjourneyids)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-resiliencehubv2-service-associatedsystem-syntax.yaml"></a>
 
-```
+```yaml
   [SystemArn](#cfn-resiliencehubv2-service-associatedsystem-systemarn): {{String}}
   [UserJourneyIds](#cfn-resiliencehubv2-service-associatedsystem-userjourneyids): {{
     - String}}

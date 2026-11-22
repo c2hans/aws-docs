@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-theme-visualsubtitlefontconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[FontConfiguration](#cfn-quicksight-theme-visualsubtitlefontconfiguration-fontconfiguration)" : {{FontConfiguration}},
   "[TextAlignment](#cfn-quicksight-theme-visualsubtitlefontconfiguration-textalignment)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-theme-visualsubtitlefontconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [FontConfiguration](#cfn-quicksight-theme-visualsubtitlefontconfiguration-fontconfiguration): {{
     FontConfiguration}}
   [TextAlignment](#cfn-quicksight-theme-visualsubtitlefontconfiguration-textalignment): {{String}}

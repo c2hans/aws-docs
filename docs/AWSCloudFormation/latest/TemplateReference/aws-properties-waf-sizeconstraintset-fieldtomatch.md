@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-waf-sizeconstraintset-fieldtomatch-syntax.json"></a>
 
-```
+```json
 {
   "[Data](#cfn-waf-sizeconstraintset-fieldtomatch-data)" : {{String}},
   "[Type](#cfn-waf-sizeconstraintset-fieldtomatch-type)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-waf-sizeconstraintset-fieldtomatch-syntax.yaml"></a>
 
-```
+```yaml
   [Data](#cfn-waf-sizeconstraintset-fieldtomatch-data): {{String}}
   [Type](#cfn-waf-sizeconstraintset-fieldtomatch-type): {{String}}
 ```

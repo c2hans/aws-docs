@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-accountaccess-entitlement-principalroleentitlement-syntax.json"></a>
 
-```
+```json
 {
   "[Account](#cfn-accountaccess-entitlement-principalroleentitlement-account)" : {{String}},
   "[Principal](#cfn-accountaccess-entitlement-principalroleentitlement-principal)" : {{Principal}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-accountaccess-entitlement-principalroleentitlement-syntax.yaml"></a>
 
-```
+```yaml
   [Account](#cfn-accountaccess-entitlement-principalroleentitlement-account): {{String}}
   [Principal](#cfn-accountaccess-entitlement-principalroleentitlement-principal): {{
     Principal}}

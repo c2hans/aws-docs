@@ -27,7 +27,7 @@ This code example does the following:
 
 1. Next, the `url_safe_base64_encode` function creates a URL-safe version of the signature.
 
-   ```
+   ```php
    function rsa_sha1_sign($policy, $private_key_filename) {
        $signature = "";
        $fp = fopen($private_key_filename, "r");
@@ -50,7 +50,7 @@ This code example does the following:
 
    The following function uses SHA-256 instead of SHA-1:
 
-   ```
+   ```php
    function rsa_sha256_sign($policy, $private_key_filename) {
        $signature = "";
        $fp = fopen($private_key_filename, "r");
@@ -70,7 +70,7 @@ This code example does the following:
 
 The following code constructs a creates the signed cookies, using the following cookie attributes: `CloudFront-Expires`, `CloudFront-Signature`, `CloudFront-Key-Pair-Id` and `CloudFront-Hash-Algorithm`. The code uses a custom policy.
 
-```
+```php
 function create_signed_cookies($resource, $private_key_filename, $key_pair_id, $expires, $client_ip = null, $hash_algorithm = 'SHA1') {
     $policy = array(
         'Statement' => array(
@@ -119,7 +119,7 @@ The following example code provides a complete demonstration of creating CloudFr
 
 In the following example, you can modify the `$policy Condition` element to allow both IPv4 and IPv6 address ranges. For an example, see [Using IPv6 addresses in IAM policies](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ipv6-access.html#ipv6-access-iam) in the *Amazon Simple Storage Service User Guide*.
 
-```
+```php
 <?php
 
 function rsa_sha1_sign($policy, $private_key_filename) {

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-bedrock-prompt-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::Bedrock::Prompt",
   "Properties" : {
@@ -33,7 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-bedrock-prompt-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::Bedrock::Prompt
 Properties:
   [CustomerEncryptionKeyArn](#cfn-bedrock-prompt-customerencryptionkeyarn): {{String}}

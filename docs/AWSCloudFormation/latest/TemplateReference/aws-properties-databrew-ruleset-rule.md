@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-databrew-ruleset-rule-syntax.json"></a>
 
-```
+```json
 {
   "[CheckExpression](#cfn-databrew-ruleset-rule-checkexpression)" : {{String}},
   "[ColumnSelectors](#cfn-databrew-ruleset-rule-columnselectors)" : {{[ ColumnSelector, ... ]}},
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-databrew-ruleset-rule-syntax.yaml"></a>
 
-```
+```yaml
   [CheckExpression](#cfn-databrew-ruleset-rule-checkexpression): {{String}}
   [ColumnSelectors](#cfn-databrew-ruleset-rule-columnselectors): {{
     - ColumnSelector}}

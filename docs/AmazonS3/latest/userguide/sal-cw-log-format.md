@@ -53,7 +53,7 @@ The following table describes the fields in each server access log record delive
 
 The following is an example of a server access log record as it appears in CloudWatch Logs.
 
-```
+```json
 {
   "schema_version_id": "V_1_0",
   "bucket_arn": "arn:aws:s3:::my-data-bucket",

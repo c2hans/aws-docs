@@ -18,7 +18,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-appsync-datasource-rdshttpendpointconfig-syntax.json"></a>
 
-```
+```json
 {
   "[AwsRegion](#cfn-appsync-datasource-rdshttpendpointconfig-awsregion)" : {{String}},
   "[AwsSecretStoreArn](#cfn-appsync-datasource-rdshttpendpointconfig-awssecretstorearn)" : {{String}},
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-appsync-datasource-rdshttpendpointconfig-syntax.yaml"></a>
 
-```
+```yaml
   [AwsRegion](#cfn-appsync-datasource-rdshttpendpointconfig-awsregion): {{String}}
   [AwsSecretStoreArn](#cfn-appsync-datasource-rdshttpendpointconfig-awssecretstorearn): {{String}}
   [DatabaseName](#cfn-appsync-datasource-rdshttpendpointconfig-databasename): {{String}}

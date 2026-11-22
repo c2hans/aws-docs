@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-bedrock-dataautomationproject-imagestandardextraction-syntax.json"></a>
 
-```
+```json
 {
   "[BoundingBox](#cfn-bedrock-dataautomationproject-imagestandardextraction-boundingbox)" : {{ImageBoundingBox}},
   "[Category](#cfn-bedrock-dataautomationproject-imagestandardextraction-category)" : {{ImageExtractionCategory}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-bedrock-dataautomationproject-imagestandardextraction-syntax.yaml"></a>
 
-```
+```yaml
   [BoundingBox](#cfn-bedrock-dataautomationproject-imagestandardextraction-boundingbox): {{
     ImageBoundingBox}}
   [Category](#cfn-bedrock-dataautomationproject-imagestandardextraction-category): {{

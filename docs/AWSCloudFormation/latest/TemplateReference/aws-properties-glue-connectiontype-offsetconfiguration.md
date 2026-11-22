@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-glue-connectiontype-offsetconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[LimitParameter](#cfn-glue-connectiontype-offsetconfiguration-limitparameter)" : {{ExtractedParameter}},
   "[OffsetParameter](#cfn-glue-connectiontype-offsetconfiguration-offsetparameter)" : {{ExtractedParameter}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-glue-connectiontype-offsetconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [LimitParameter](#cfn-glue-connectiontype-offsetconfiguration-limitparameter): {{
     ExtractedParameter}}
   [OffsetParameter](#cfn-glue-connectiontype-offsetconfiguration-offsetparameter): {{

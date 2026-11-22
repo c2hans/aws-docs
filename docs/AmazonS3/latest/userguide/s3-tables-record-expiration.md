@@ -84,7 +84,7 @@ To configure and manage record expiration settings for an S3 table by using the 
 
 You can start by creating a JSON file that contains the record expiration settings to apply to the table. The following example shows the contents of a JSON file that enables record expiration for a table. It also specifies a retention period of 30 days for records in the table. In other words, it specifies that table records should expire after 30 days.
 
-```
+```json
 {
     "status": "{{enabled}}",
         "settings": {
@@ -100,7 +100,7 @@ As you determine the appropriate retention period for records in the table, note
 
 To disable record expiration for a table, specify `disabled` for the `status` field and omit the `settings` object from the file. For example:
 
-```
+```json
 {
     "status": "{{disabled}}"
 }
@@ -110,7 +110,7 @@ After you create a JSON file with the settings to apply, run the `put-table-reco
 
 For example, the following command updates the record expiration settings for a table. The settings are specified in a file named {{`record-expiration-config.json`}}.
 
-```
+```bash
 aws s3tables put-table-record-expiration-configuration \
     --table-arn arn:aws:s3tables:{{us-east-1}}:{{123456789012}}:bucket/{{amzn-s3-demo-table-bucket}}/table/{{amzn-s3-demo-table}} \
     --value {{file://./record-expiration-config.json}}

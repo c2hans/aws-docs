@@ -47,7 +47,7 @@ When you create an App Runner service, you can use an image stored in an Amazon 
 
 ****
 
-  ```
+  ```json
   {
     "Version":"2012-10-17",
     "Statement": [

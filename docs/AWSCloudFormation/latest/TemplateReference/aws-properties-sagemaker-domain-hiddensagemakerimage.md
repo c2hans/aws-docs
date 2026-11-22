@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-domain-hiddensagemakerimage-syntax.json"></a>
 
-```
+```json
 {
   "[SageMakerImageName](#cfn-sagemaker-domain-hiddensagemakerimage-sagemakerimagename)" : {{String}},
   "[VersionAliases](#cfn-sagemaker-domain-hiddensagemakerimage-versionaliases)" : {{[ String, ... ]}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-domain-hiddensagemakerimage-syntax.yaml"></a>
 
-```
+```yaml
   [SageMakerImageName](#cfn-sagemaker-domain-hiddensagemakerimage-sagemakerimagename): {{String}}
   [VersionAliases](#cfn-sagemaker-domain-hiddensagemakerimage-versionaliases): {{
     - String}}

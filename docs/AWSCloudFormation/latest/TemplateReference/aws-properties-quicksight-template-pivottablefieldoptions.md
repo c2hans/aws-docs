@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-quicksight-template-pivottablefieldoptions-syntax.json"></a>
 
-```
+```json
 {
   "[CollapseStateOptions](#cfn-quicksight-template-pivottablefieldoptions-collapsestateoptions)" : {{[ PivotTableFieldCollapseStateOption, ... ]}},
   "[DataPathOptions](#cfn-quicksight-template-pivottablefieldoptions-datapathoptions)" : {{[ PivotTableDataPathOption, ... ]}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-quicksight-template-pivottablefieldoptions-syntax.yaml"></a>
 
-```
+```yaml
   [CollapseStateOptions](#cfn-quicksight-template-pivottablefieldoptions-collapsestateoptions): {{
     - PivotTableFieldCollapseStateOption}}
   [DataPathOptions](#cfn-quicksight-template-pivottablefieldoptions-datapathoptions): {{

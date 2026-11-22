@@ -6,7 +6,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 # AWS::ObservabilityAdmin::TelemetryRule Tag
 
- Lists all tags attached to the specified resource. Supports telemetry rule resources and telemetry pipeline resources.
+ Lists all tags attached to the specified resource. Supports telemetry rule resources, telemetry pipeline resources, and third-party telemetry enrichment resources.
 
 ## Syntax
 <a name="aws-properties-observabilityadmin-telemetryrule-tag-syntax"></a>
@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-observabilityadmin-telemetryrule-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-observabilityadmin-telemetryrule-tag-key)" : {{String}},
   "[Value](#cfn-observabilityadmin-telemetryrule-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-observabilityadmin-telemetryrule-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-observabilityadmin-telemetryrule-tag-key): {{String}}
   [Value](#cfn-observabilityadmin-telemetryrule-tag-value): {{String}}
 ```

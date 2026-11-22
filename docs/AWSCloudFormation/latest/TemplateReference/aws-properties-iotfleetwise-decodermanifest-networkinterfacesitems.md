@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-iotfleetwise-decodermanifest-networkinterfacesitems-syntax.json"></a>
 
-```
+```json
 {
   "[CanNetworkInterface](#cfn-iotfleetwise-decodermanifest-networkinterfacesitems-cannetworkinterface)" : {{CanNetworkInterface}},
   "[CustomDecodingNetworkInterface](#cfn-iotfleetwise-decodermanifest-networkinterfacesitems-customdecodingnetworkinterface)" : {{CustomDecodingNetworkInterface}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-iotfleetwise-decodermanifest-networkinterfacesitems-syntax.yaml"></a>
 
-```
+```yaml
   [CanNetworkInterface](#cfn-iotfleetwise-decodermanifest-networkinterfacesitems-cannetworkinterface): {{
     CanNetworkInterface}}
   [CustomDecodingNetworkInterface](#cfn-iotfleetwise-decodermanifest-networkinterfacesitems-customdecodingnetworkinterface): {{

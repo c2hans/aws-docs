@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-sagemaker-experiment-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SageMaker::Experiment",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-sagemaker-experiment-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SageMaker::Experiment
 Properties:
   [Description](#cfn-sagemaker-experiment-description): {{String}}

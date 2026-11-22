@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-networksecuritymanager-deployment-deploymentconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[EnableCrossAccountVisibility](#cfn-networksecuritymanager-deployment-deploymentconfiguration-enablecrossaccountvisibility)" : {{Boolean}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-networksecuritymanager-deployment-deploymentconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [EnableCrossAccountVisibility](#cfn-networksecuritymanager-deployment-deploymentconfiguration-enablecrossaccountvisibility): {{Boolean}}
 ```
 

@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-s3-bucket-accesscontroltranslation-syntax.json"></a>
 
-```
+```json
 {
   "[Owner](#cfn-s3-bucket-accesscontroltranslation-owner)" : {{String}}
 }
@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-s3-bucket-accesscontroltranslation-syntax.yaml"></a>
 
-```
+```yaml
   [Owner](#cfn-s3-bucket-accesscontroltranslation-owner): {{String}}
 ```
 

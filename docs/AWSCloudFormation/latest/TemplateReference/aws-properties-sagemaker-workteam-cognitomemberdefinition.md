@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-workteam-cognitomemberdefinition-syntax.json"></a>
 
-```
+```json
 {
   "[CognitoClientId](#cfn-sagemaker-workteam-cognitomemberdefinition-cognitoclientid)" : {{String}},
   "[CognitoUserGroup](#cfn-sagemaker-workteam-cognitomemberdefinition-cognitousergroup)" : {{String}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-workteam-cognitomemberdefinition-syntax.yaml"></a>
 
-```
+```yaml
   [CognitoClientId](#cfn-sagemaker-workteam-cognitomemberdefinition-cognitoclientid): {{String}}
   [CognitoUserGroup](#cfn-sagemaker-workteam-cognitomemberdefinition-cognitousergroup): {{String}}
   [CognitoUserPool](#cfn-sagemaker-workteam-cognitomemberdefinition-cognitouserpool): {{String}}

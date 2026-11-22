@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-mediatailor-program-keyvaluepair-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-mediatailor-program-keyvaluepair-key)" : {{String}},
   "[Value](#cfn-mediatailor-program-keyvaluepair-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-mediatailor-program-keyvaluepair-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-mediatailor-program-keyvaluepair-key): {{String}}
   [Value](#cfn-mediatailor-program-keyvaluepair-value): {{String}}
 ```

@@ -35,7 +35,7 @@ In this step, you'll create the VPC and role in the *accepter account*.
 1. Open a text editor on your local machine and add one of the following templates. Save the file and return to the console to select it as the template file.
 **Example JSON**
 
-   ```
+   ```json
    {
      "AWSTemplateFormatVersion": "2010-09-09",
      "Description": "Create a VPC and an assumable role for cross account VPC peering.",
@@ -110,7 +110,7 @@ In this step, you'll create the VPC and role in the *accepter account*.
    ```
 **Example YAML**
 
-   ```
+   ```yaml
    AWSTemplateFormatVersion: 2010-09-09
    Description: Create a VPC and an assumable role for cross account VPC peering.
    Parameters:
@@ -176,7 +176,7 @@ Now that you've created the VPC and cross-account role, you can peer with the VP
 1. Open a text editor on your local machine and add one of the following templates. Save the file and return to the console to select it as the template file.
 **Example JSON**
 
-   ```
+   ```json
    {
      "AWSTemplateFormatVersion": "2010-09-09",
      "Description": "Create a VPC and a VPC Peering connection using the PeerRole to accept.",
@@ -235,7 +235,7 @@ Now that you've created the VPC and cross-account role, you can peer with the VP
    ```
 **Example YAML**
 
-   ```
+   ```yaml
    AWSTemplateFormatVersion: 2010-09-09
    Description: Create a VPC and a VPC Peering connection using the PeerRole to accept.
    Parameters:
@@ -284,7 +284,7 @@ The following example template shows how to change the VPC peer owner template (
 
 **Example JSON**
 
-```
+```json
 {
   "AWSTemplateFormatVersion":"2010-09-09",
   "Description":"Create a VPC and an assumable role for cross account VPC peering.",
@@ -376,7 +376,7 @@ The following example template shows how to change the VPC peer owner template (
 
 **Example YAML**
 
-```
+```yaml
 AWSTemplateFormatVersion: 2010-09-09
 Description: Create a VPC and an assumable role for cross account VPC peering.
 Parameters:

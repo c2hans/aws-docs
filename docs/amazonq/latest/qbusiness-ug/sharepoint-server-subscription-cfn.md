@@ -67,7 +67,7 @@ The following is the SharePoint Server (Subscription Edition) JSON schema and ex
 
 The following is the SharePoint Server (Subscription Edition) JSON schema for the configuration property for CloudFormation
 
-```
+```json
 {
   "type": "object",
   "properties": {
@@ -629,7 +629,7 @@ The following is the SharePoint Server (Subscription Edition) JSON schema for th
 
 The following is the SharePoint Server (Subscription Edition) JSON schema example for the configuration property for CloudFormation
 
-```
+```json
 {
 
   "AWSTemplateFormatVersion": "2010-09-09",
@@ -936,7 +936,7 @@ The following is the SharePoint Server (Subscription Edition) YAML schema and ex
 
 The following is the SharePoint Server (Subscription Edition) YAML schema for the configuration property for CloudFormation.
 
-```
+```YAML
 type: object
 properties:
   type:
@@ -1360,7 +1360,7 @@ required:
 
 The following is the SharePoint Server (Subscription Edition) YAML example for the Configuration property for CloudFormation:
 
-```
+```yaml
 {
 
   "type": "SHAREPOINTV2",

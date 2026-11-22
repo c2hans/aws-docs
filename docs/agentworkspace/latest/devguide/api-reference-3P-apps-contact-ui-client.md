@@ -8,7 +8,7 @@ With the Connect Customer SDK, your app in the Connect Customer agent workspace 
 
 You can instantiate the contact interceptor service as follows:
 
-```
+```typescript
 import { ContactInterceptorService } from '@amazon-connect/contact-ui';
 
 const service = new ContactInterceptorService(provider);

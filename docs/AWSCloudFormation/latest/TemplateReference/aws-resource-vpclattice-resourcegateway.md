@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-vpclattice-resourcegateway-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::VpcLattice::ResourceGateway",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-vpclattice-resourcegateway-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::VpcLattice::ResourceGateway
 Properties:
   [IpAddressType](#cfn-vpclattice-resourcegateway-ipaddresstype): {{String}}

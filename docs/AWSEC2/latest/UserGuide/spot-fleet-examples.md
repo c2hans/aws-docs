@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-fleet-examp
 
 You can define your Spot Fleet configuration in a JSON file, and then reference that file using the [request-spot-fleet](https://docs.aws.amazon.com/cli/latest/reference/ec2/request-spot-fleet.html) AWS CLI command to create your fleet, as follows:
 
-```
+```bash
 aws ec2 request-spot-fleet --spot-fleet-request-config file://{{file_name.json}}
 ```
 
@@ -34,7 +34,7 @@ For Spot Fleet, you can't specify a network interface ID in a launch template or
 
 The following example specifies a single launch specification without an Availability Zone or subnet. The Spot Fleet launches the instances in the lowest-priced Availability Zone that has a default subnet. The price you pay does not exceed the On-Demand price.
 
-```
+```json
 {
   "TargetCapacity": 20,
   "IamFleetRole": "arn:aws:iam::123456789012:role/aws-ec2-spot-fleet-tagging-role",
@@ -65,7 +65,7 @@ The following examples specify two launch specifications with different Availabi
 
 The Spot Fleet launches the instances in the default subnet of the lowest-priced Availability Zone that you specified.
 
-```
+```json
 {
   "TargetCapacity": 20,
   "IamFleetRole": "arn:aws:iam::123456789012:role/aws-ec2-spot-fleet-tagging-role",
@@ -96,7 +96,7 @@ You can specify default subnets or nondefault subnets, and the nondefault subnet
 
 You can't specify different subnets from the same Availability Zone in a Spot Fleet request.
 
-```
+```json
 {
   "TargetCapacity": 20,
   "IamFleetRole": "arn:aws:iam::123456789012:role/aws-ec2-spot-fleet-tagging-role",
@@ -121,7 +121,7 @@ You can't specify different subnets from the same Availability Zone in a Spot Fl
 
 If the instances are launched in a default VPC, they receive a public IPv4 address by default. If the instances are launched in a nondefault VPC, they do not receive a public IPv4 address by default. Use a network interface in the launch specification to assign a public IPv4 address to instances launched in a nondefault VPC. When you specify a network interface, you must include the subnet ID and security group ID using the network interface.
 
-```
+```json
   ...
       {
           "ImageId": "ami-1a2b3c4d",
@@ -149,7 +149,7 @@ The following examples specify two launch configurations with different instance
 
 **Availability Zone**
 
-```
+```json
 {
   "TargetCapacity": 20,
   "IamFleetRole": "arn:aws:iam::123456789012:role/aws-ec2-spot-fleet-tagging-role",
@@ -184,7 +184,7 @@ The following examples specify two launch configurations with different instance
 
 **Subnet**
 
-```
+```json
 {
   "TargetCapacity": 20,
   "IamFleetRole": "arn:aws:iam::123456789012:role/aws-ec2-spot-fleet-tagging-role",
@@ -222,7 +222,7 @@ The following examples specify a maximum price for the fleet request and maximum
 
 **Availability Zone**
 
-```
+```json
 {
   "SpotPrice": "{{1.00}}",
   "TargetCapacity": 30,
@@ -257,7 +257,7 @@ The following examples specify a maximum price for the fleet request and maximum
 
 **Subnet**
 
-```
+```json
 {
   "SpotPrice": "{{1.00}}",
   "TargetCapacity": 30,
@@ -291,7 +291,7 @@ The following example uses the `diversified` allocation strategy. The launch spe
 
 **Availability Zone**
 
-```
+```json
 {
   "SpotPrice": "0.70",
   "TargetCapacity": 30,
@@ -325,7 +325,7 @@ The following example uses the `diversified` allocation strategy. The launch spe
 
 **Subnet**
 
-```
+```json
 {
     "SpotPrice": "0.70",
     "TargetCapacity": 30,
@@ -355,7 +355,7 @@ A best practice to increase the chance that a spot request can be fulfilled by E
 
 **Availability Zone**
 
-```
+```json
 {
   "SpotPrice": "0.70",
   "TargetCapacity": 30,
@@ -389,7 +389,7 @@ A best practice to increase the chance that a spot request can be fulfilled by E
 
 **Subnet**
 
-```
+```json
 {
     "SpotPrice": "0.70",
     "TargetCapacity": 30,
@@ -428,7 +428,7 @@ For more information, see [Use instance weighting to manage cost and performance
 
 **Availability Zone**
 
-```
+```json
 {
   "SpotPrice": "0.70",
   "TargetCapacity": 20,
@@ -456,7 +456,7 @@ For more information, see [Use instance weighting to manage cost and performance
 
 **Subnet**
 
-```
+```json
 {
   "SpotPrice": "0.70",
   "TargetCapacity": 20,
@@ -485,7 +485,7 @@ To ensure that you always have instance capacity, you can include a request for 
 
 The following example specifies the desired target capacity as 10, of which 5 must be On-Demand capacity. Spot capacity is not specified; it is implied in the balance of the target capacity minus the On-Demand capacity. Amazon EC2 launches 5 capacity units as On-Demand, and 5 capacity units (10-5=5) as Spot if there is available Amazon EC2 capacity and availability.
 
-```
+```json
 {
   "IamFleetRole": "arn:aws:iam::123456789012:role/aws-ec2-spot-fleet-tagging-role",
   "AllocationStrategy": "lowestPrice",
@@ -525,7 +525,7 @@ We recommend using `launch-before-terminate` only if you can predict how long yo
 
 The effectiveness of the Capacity Rebalancing strategy depends on the number of Spot capacity pools specified in the Spot Fleet request. We recommend that you configure the fleet with a diversified set of instance types and Availability Zones, and for `AllocationStrategy`, specify `capacityOptimized`. For more information about what you should consider when configuring a Spot Fleet for Capacity Rebalancing, see [Use Capacity Rebalancing in EC2 Fleet and Spot Fleet to replace at-risk Spot Instances](ec2-fleet-capacity-rebalance.md).
 
-```
+```json
 {
     "SpotFleetRequestConfig": {
         "AllocationStrategy": "capacityOptimized",
@@ -579,7 +579,7 @@ The following example demonstrates how to configure a Spot Fleet with a Spot all
 
 In the following example, the three launch specifications specify three Spot capacity pools. The target capacity is 50 Spot Instances. The Spot Fleet attempts to launch 50 Spot Instances into the Spot capacity pool with optimal capacity for the number of instances that are launching.
 
-```
+```json
 {
     "TargetCapacity": "50",
     "SpotFleetRequestConfig": {
@@ -621,7 +621,7 @@ To prioritize Spot capacity pools, you must set `AllocationStrategy` to `capacit
 
 In the following example, the three launch specifications specify three Spot capacity pools. Each pool is prioritized, where the lower the number the higher priority. The target capacity is 50 Spot Instances. The Spot Fleet attempts to launch 50 Spot Instances into the Spot capacity pool with the highest priority on a best-effort basis, but optimizes for capacity first.
 
-```
+```json
 {
     "TargetCapacity": "50",
     "SpotFleetRequestConfig": {
@@ -662,7 +662,7 @@ The following example demonstrates how to configure a Spot Fleet with a Spot all
 
 In the following example, the three launch specifications specify three Spot capacity pools. The target capacity is 50 Spot Instances. The Spot Fleet attempts to launch 50 Spot Instances into the Spot capacity pool with optimal capacity for the number of instances that are launching while also choosing the pool that is the lowest priced.
 
-```
+```json
 {
     "SpotFleetRequestConfig": {
         "AllocationStrategy": "priceCapacityOptimized",
@@ -710,7 +710,7 @@ Any instance types that have 2 or more vCPUs and 4 MiB or more of memory will be
 
 For a list and descriptions of all the possible attributes that you can specify, see [InstanceRequirements](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceRequirements.html) in the *Amazon EC2 API Reference*.
 
-```
+```json
 {
 	"AllocationStrategy": "{{priceCapacityOptimized}}",
 	"TargetCapacity": {{20}},

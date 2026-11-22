@@ -24,7 +24,7 @@ Here's a simple example showing how template substitution works.
 
 Policy Template:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -42,7 +42,7 @@ Policy Template:
 
 Parameters Provided in Delegation Request:
 
-```
+```json
 {
     "Name": "bucketName",
     "Values": ["customer-data-bucket"],
@@ -52,7 +52,7 @@ Parameters Provided in Delegation Request:
 
 Final rendered policy (what customers see):
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -85,13 +85,13 @@ A single value that is substituted directly into the template.
 
 Template:
 
-```
+```json
 "Resource": "arn:aws:s3:::@{bucketName}/*"
 ```
 
 Parameters:
 
-```
+```json
 {
     "Name": "bucketName",
     "Values": ["my-bucket"],
@@ -101,7 +101,7 @@ Parameters:
 
 Rendered result:
 
-```
+```json
 "Resource": "arn:aws:s3:::my-bucket/*"
 ```
 
@@ -112,13 +112,13 @@ Multiple values that generate multiple resource entries. When a StringList param
 
 Template:
 
-```
+```json
 "Resource": "arn:aws:s3:::@{bucketNames}/*"
 ```
 
 Parameters:
 
-```
+```json
 {
     "Name": "bucketNames",
     "Values": ["bucket-1", "bucket-2"],
@@ -128,7 +128,7 @@ Parameters:
 
 Rendered result:
 
-```
+```json
 "Resource": [
     "arn:aws:s3:::bucket-1/*",
     "arn:aws:s3:::bucket-2/*"
@@ -142,13 +142,13 @@ When multiple parameters are used in the same resource ARN, StringList parameter
 
 Template:
 
-```
+```json
 "Resource": "arn:aws:s3:::@{bucketNames}/@{prefix}/*"
 ```
 
 Parameters:
 
-```
+```json
 [
     {
         "Name": "bucketNames",
@@ -165,7 +165,7 @@ Parameters:
 
 Rendered result:
 
-```
+```json
 "Resource": [
     "arn:aws:s3:::bucket-1/data/*",
     "arn:aws:s3:::bucket-2/data/*"
@@ -183,7 +183,7 @@ Syntax:
 
 Template:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -204,7 +204,7 @@ Template:
 
 Parameters (when ENABLE\_S3\_WRITE is "True"):
 
-```
+```json
 [
     {
         "Name": "bucketName",
@@ -221,7 +221,7 @@ Parameters (when ENABLE\_S3\_WRITE is "True"):
 
 Rendered result:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -241,7 +241,7 @@ Rendered result:
 
 Parameters (when ENABLE\_S3\_WRITE is "False"):
 
-```
+```json
 [
     {
         "Name": "bucketName",
@@ -258,7 +258,7 @@ Parameters (when ENABLE\_S3\_WRITE is "False"):
 
 Rendered result:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -283,7 +283,7 @@ The following examples demonstrate common patterns for using policy templates in
 
 The following permission boundary is submitted as "SQSAccessorBoundary" for "partner.com":
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [
@@ -307,7 +307,7 @@ Since this is the first version of this policy, its ARN is arn:aws:iam::partner:
 
 The following policy template is submitted for temporary access permissions:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -341,7 +341,7 @@ The following policy template is submitted for temporary access permissions:
 
 The permission boundary can specify a resource ARN prefix to limit access:
 
-```
+```json
 "Resource": "arn:aws:sqs:*:@{AccountId}:PartnerPrefix*"
 ```
 
@@ -354,7 +354,7 @@ You can tag resources during temporary delegated access and rely on those tags f
 
 Permission boundary allowing access to tagged resources:
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [
@@ -376,7 +376,7 @@ Permission boundary allowing access to tagged resources:
 
 Policy template to tag new queues on creation:
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [
@@ -394,7 +394,7 @@ Policy template to tag new queues on creation:
 
 Policy template to tag pre-existing queues and create the role:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -437,7 +437,7 @@ To update a permission boundary, register a new version with a new date suffix a
 
 Updated permission boundary with additional permission:
 
-```
+```json
 {
     "Effect": "Allow",
     "Action": [
@@ -459,7 +459,7 @@ As the second version, this policy has the ARN: arn:aws:iam::partner:policy/perm
 
 Policy template to update the permission boundary on the existing role:
 
-```
+```json
 {
     "Version": "2012-10-17",
     "Statement": [

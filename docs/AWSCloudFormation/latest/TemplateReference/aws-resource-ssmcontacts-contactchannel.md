@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-ssmcontacts-contactchannel-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::SSMContacts::ContactChannel",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-ssmcontacts-contactchannel-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::SSMContacts::ContactChannel
 Properties:
   [ChannelAddress](#cfn-ssmcontacts-contactchannel-channeladdress): {{String}}

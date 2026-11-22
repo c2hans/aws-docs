@@ -8,13 +8,13 @@ Subscribes to status lifecycle transitions for AI Agent messages. Use this to tr
 
  **Signature**
 
-```
+```typescript
 onAIAgentMessageStatusChanged(handler: AIAgentMessageStatusHandler, contactId?: string): void
 ```
 
  **Usage**
 
-```
+```typescript
 const handler: AIAgentMessageStatusHandler = (data: AIAgentMessageStatusEvent) => {
     console.log("Input ID:", data.inputId);
     console.log("Status:", data.status);
@@ -32,6 +32,6 @@ aiAgentsClient.onAIAgentMessageStatusChanged(handler, contactId);
 
  **Permissions required:**
 
-```
+```typescript
 *
 ```

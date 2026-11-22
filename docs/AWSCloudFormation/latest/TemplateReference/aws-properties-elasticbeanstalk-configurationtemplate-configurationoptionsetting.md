@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-elasticbeanstalk-configurationtemplate-configurationoptionsetting-syntax.json"></a>
 
-```
+```json
 {
   "[Namespace](#cfn-elasticbeanstalk-configurationtemplate-configurationoptionsetting-namespace)" : {{String}},
   "[OptionName](#cfn-elasticbeanstalk-configurationtemplate-configurationoptionsetting-optionname)" : {{String}},
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-elasticbeanstalk-configurationtemplate-configurationoptionsetting-syntax.yaml"></a>
 
-```
+```yaml
   [Namespace](#cfn-elasticbeanstalk-configurationtemplate-configurationoptionsetting-namespace): {{String}}
   [OptionName](#cfn-elasticbeanstalk-configurationtemplate-configurationoptionsetting-optionname): {{String}}
   [ResourceName](#cfn-elasticbeanstalk-configurationtemplate-configurationoptionsetting-resourcename): {{String}}

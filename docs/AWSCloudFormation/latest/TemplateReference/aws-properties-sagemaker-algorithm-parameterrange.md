@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-sagemaker-algorithm-parameterrange-syntax.json"></a>
 
-```
+```json
 {
   "[CategoricalParameterRangeSpecification](#cfn-sagemaker-algorithm-parameterrange-categoricalparameterrangespecification)" : {{CategoricalParameterRangeSpecification}},
   "[ContinuousParameterRangeSpecification](#cfn-sagemaker-algorithm-parameterrange-continuousparameterrangespecification)" : {{ContinuousParameterRangeSpecification}},
@@ -27,7 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-sagemaker-algorithm-parameterrange-syntax.yaml"></a>
 
-```
+```yaml
   [CategoricalParameterRangeSpecification](#cfn-sagemaker-algorithm-parameterrange-categoricalparameterrangespecification): {{
     CategoricalParameterRangeSpecification}}
   [ContinuousParameterRangeSpecification](#cfn-sagemaker-algorithm-parameterrange-continuousparameterrangespecification): {{

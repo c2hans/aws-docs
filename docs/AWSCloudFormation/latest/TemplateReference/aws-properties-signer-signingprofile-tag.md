@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-signer-signingprofile-tag-syntax.json"></a>
 
-```
+```json
 {
   "[Key](#cfn-signer-signingprofile-tag-key)" : {{String}},
   "[Value](#cfn-signer-signingprofile-tag-value)" : {{String}}
@@ -26,7 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-signer-signingprofile-tag-syntax.yaml"></a>
 
-```
+```yaml
   [Key](#cfn-signer-signingprofile-tag-key): {{String}}
   [Value](#cfn-signer-signingprofile-tag-value): {{String}}
 ```

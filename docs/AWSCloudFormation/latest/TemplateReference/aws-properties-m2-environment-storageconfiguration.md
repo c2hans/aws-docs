@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-m2-environment-storageconfiguration-syntax.json"></a>
 
-```
+```json
 {
   "[Efs](#cfn-m2-environment-storageconfiguration-efs)" : {{EfsStorageConfiguration}},
   "[Fsx](#cfn-m2-environment-storageconfiguration-fsx)" : {{FsxStorageConfiguration}}
@@ -29,7 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-m2-environment-storageconfiguration-syntax.yaml"></a>
 
-```
+```yaml
   [Efs](#cfn-m2-environment-storageconfiguration-efs): {{
     EfsStorageConfiguration}}
   [Fsx](#cfn-m2-environment-storageconfiguration-fsx): {{

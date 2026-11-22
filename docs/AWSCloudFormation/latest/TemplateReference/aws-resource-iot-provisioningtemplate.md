@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iot-provisioningtemplate-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoT::ProvisioningTemplate",
   "Properties" : {
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iot-provisioningtemplate-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoT::ProvisioningTemplate
 Properties:
   [Description](#cfn-iot-provisioningtemplate-description): {{String}}

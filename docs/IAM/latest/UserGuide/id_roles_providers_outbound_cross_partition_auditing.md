@@ -17,7 +17,7 @@ Use these fields together to trace a destination role assumption back to the sou
 
 The following example shows a `GetWebIdentityToken` event in the source account.
 
-```
+```json
 {
   "eventVersion": "1.11",
   "userIdentity": {
@@ -82,7 +82,7 @@ The following example shows a `GetWebIdentityToken` event in the source account.
 
 The following example shows the corresponding `AssumeRoleWithWebIdentity` event. Its `requestParameters.webIdentityTokenId` value matches the token identifier in the source event.
 
-```
+```json
 {
   "eventVersion": "1.11",
   "userIdentity": {

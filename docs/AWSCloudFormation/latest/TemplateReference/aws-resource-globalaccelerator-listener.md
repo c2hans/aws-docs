@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-globalaccelerator-listener-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::GlobalAccelerator::Listener",
   "Properties" : {
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-globalaccelerator-listener-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::GlobalAccelerator::Listener
 Properties:
   [AcceleratorArn](#cfn-globalaccelerator-listener-acceleratorarn): {{String}}
@@ -110,7 +110,7 @@ These are examples to specify a listener.
 #### JSON
 <a name="aws-resource-globalaccelerator-listener--examples--Add_a_listener--json"></a>
 
-```
+```json
 "Resources": {
     "Listener": {
         "Type": "AWS::GlobalAccelerator::Listener",
@@ -133,7 +133,7 @@ These are examples to specify a listener.
 #### YAML
 <a name="aws-resource-globalaccelerator-listener--examples--Add_a_listener--yaml"></a>
 
-```
+```yaml
 Listener:
   Type: AWS::GlobalAccelerator::Listener
   Properties:

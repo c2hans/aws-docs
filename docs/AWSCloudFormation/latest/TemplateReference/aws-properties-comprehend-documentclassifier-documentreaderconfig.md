@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-properties-comprehend-documentclassifier-documentreaderconfig-syntax.json"></a>
 
-```
+```json
 {
   "[DocumentReadAction](#cfn-comprehend-documentclassifier-documentreaderconfig-documentreadaction)" : {{String}},
   "[DocumentReadMode](#cfn-comprehend-documentclassifier-documentreaderconfig-documentreadmode)" : {{String}},
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-properties-comprehend-documentclassifier-documentreaderconfig-syntax.yaml"></a>
 
-```
+```yaml
   [DocumentReadAction](#cfn-comprehend-documentclassifier-documentreaderconfig-documentreadaction): {{String}}
   [DocumentReadMode](#cfn-comprehend-documentclassifier-documentreaderconfig-documentreadmode): {{String}}
   [FeatureTypes](#cfn-comprehend-documentclassifier-documentreaderconfig-featuretypes): {{

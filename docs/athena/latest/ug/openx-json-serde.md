@@ -32,7 +32,7 @@ Optional. The default is `FALSE`. When set to `TRUE`, allows the SerDe to replac
 Optional. The default is `TRUE`. When set to `TRUE`, the SerDe converts all uppercase columns to lowercase.
 To use case-sensitive key names in your data, use `WITH SERDEPROPERTIES ("case.insensitive"= FALSE;)`. Then, for every key that is not already all lowercase, provide a mapping from the column name to the property name using the following syntax:
 
-```
+```sql
 ROW FORMAT SERDE 'org.openx.data.jsonserde.JsonSerDe'
 WITH SERDEPROPERTIES ("case.insensitive" = "FALSE", "mapping.userid" = "userId")
 ```
@@ -40,7 +40,7 @@ If you have two keys like `URL` and `Url` that are the same when they are in low
 `HIVE_CURSOR_ERROR: Row is not a valid JSON Object - JSONException: Duplicate key "url"`
 To resolve this, set the `case.insensitive` property to `FALSE` and map the keys to different names, as in the following example:
 
-```
+```sql
 ROW FORMAT SERDE 'org.openx.data.jsonserde.JsonSerDe'
 WITH SERDEPROPERTIES ("case.insensitive" = "FALSE", "mapping.url1" = "URL", "mapping.url2" = "Url")
 ```
@@ -48,19 +48,19 @@ WITH SERDEPROPERTIES ("case.insensitive" = "FALSE", "mapping.url1" = "URL", "map
 **mapping**
 Optional. Maps column names to JSON keys that aren't identical to the column names. The `mapping` parameter is useful when the JSON data contains keys that are [keywords](reserved-words.md). For example, if you have a JSON key named `timestamp`, use the following syntax to map the key to a column named `ts`:
 
-```
+```sql
 ROW FORMAT SERDE 'org.openx.data.jsonserde.JsonSerDe'
 WITH SERDEPROPERTIES ("mapping.ts" = "timestamp")
 ```
 **Mapping nested field names with colons to Hive-compatible names**
 If you have a field name with colons inside a `struct`, you can use the `mapping` property to map the field to a Hive-compatible name. For example, if your column type definitions contain `my:struct:field:string`, you can map the definition to `my_struct_field:string` by including the following entry in `WITH SERDEPROPERTIES`:
 
-```
+```sql
 ("mapping.my_struct_field" = "my:struct:field")
 ```
 The following example shows the corresponding `CREATE TABLE` statement.
 
-```
+```sql
 CREATE EXTERNAL TABLE colon_nested_field (
 item struct<my_struct_field:string>)
 ROW FORMAT SERDE 'org.openx.data.jsonserde.JsonSerDe'
@@ -72,7 +72,7 @@ WITH SERDEPROPERTIES ("mapping.my_struct_field" = "my:struct:field")
 
 The following example DDL statement uses the OpenX JSON SerDe to create a table based on the same sample online advertising data used in the example for the Hive JSON SerDe. In the `LOCATION` clause, replace {{myregion}} with the region identifier where you run Athena.
 
-```
+```sql
 CREATE EXTERNAL TABLE impressions (
     requestbegintime string,
     adid string,
@@ -103,7 +103,7 @@ You can use the JSON SerDes to parse more complex JSON-encoded data. This requir
 
 The following example creates an Athena table from JSON data that has nested structures. The example has the following structure:
 
-```
+```json
 {
 "DocId": "AWS",
 "User": {
@@ -138,7 +138,7 @@ Remember that the OpenX SerDe expects each JSON record to be on a single line of
 
 The following `CREATE TABLE` statement uses the [Openx-JsonSerDe](https://github.com/rcongiu/Hive-JSON-Serde) with the `struct` and `array` collection data types to establish groups of objects for the example data.
 
-```
+```sql
 CREATE external TABLE complex_json (
    docid string,
    `user` struct<
@@ -165,7 +165,7 @@ LOCATION 's3://amzn-s3-demo-bucket/{{myjsondata}}/';
 
 To query the table, use a `SELECT` statement like the following.
 
-```
+```sql
 SELECT
  user.name as Name,
  user.shippingaddress.address1 as Address,

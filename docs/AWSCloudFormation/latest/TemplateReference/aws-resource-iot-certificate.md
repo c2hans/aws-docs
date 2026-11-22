@@ -16,7 +16,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### JSON
 <a name="aws-resource-iot-certificate-syntax.json"></a>
 
-```
+```json
 {
   "Type" : "AWS::IoT::Certificate",
   "Properties" : {
@@ -32,7 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ### YAML
 <a name="aws-resource-iot-certificate-syntax.yaml"></a>
 
-```
+```yaml
 Type: AWS::IoT::Certificate
 Properties:
   [CACertificatePem](#cfn-iot-certificate-cacertificatepem): {{String}}
